@@ -1,0 +1,94 @@
+---
+layout: page
+title: "Q160455: WD97: Can't Use CRTL+ALT+F8 on Programmable Keyboard"
+permalink: kb/160/Q160455/
+---
+
+## Q160455: WD97: Can't Use CRTL+ALT+F8 on Programmable Keyboard
+
+	Article: Q160455
+	Product(s): Word 97 for Windows
+	Version(s): WINDOWS:97
+	Operating System(s): 
+	Keyword(s): kbualink97
+	Last Modified: 14-NOV-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	You cannot use the CTRL+ALT+F8 key combination in the Customize Keyboard dialog
+	box. (To locate this dialog box, on the Tools menu, click Customize.)
+	
+	CAUSE
+	=====
+	
+	The key combination CRTL+ALT+F8 is reserved for initiating keyboard programming
+	on programmable keyboards, such as the Gateway 2000 programmable keyboard.
+	
+	
+	WORKAROUND
+	==========
+	
+	To work around this problem, use the appropriate method:
+	
+	Method 1: Use a different key combination.
+	
+	Method 2: Use a non-programmable keyboard.
+	
+	MORE INFORMATION
+	================
+	
+	You can assign a shortcut key to a command, macro, font, AutoText entry, style,
+	or special character. To create a shortcut key assignment, use the following
+	steps:
+	
+	1. On the Tools menu, click Customize.
+	
+	2. Click Keyboard.
+	
+	3. In the Save Changes In list, click the template in which you want to save the
+	  shortcut key assignment.
+	
+	4. In the Categories list box, click the appropriate category.
+	
+	5. In the Commands list box, click the command (or item) you want to use.
+	
+	  Word displays the current keyboard assignments in the Current Keys list box.
+	
+	6. In the Press New Shortcut Key box, type the shortcut key you want to use.
+	
+	7. Click Assign.
+	
+	8. Click Close.
+	
+	The Gateway 2000 programmable keyboard is manufactured by Gateway 2000, a vendor
+	independent of Microsoft; we make no warranty, implied or otherwise, regarding
+	this product's performance or reliability.
+	
+	For information about how to contact Gateway 2000, query in the Knowledge Base
+	for one of the following articles:
+	
+	  Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+	
+	  Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+	
+	  Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+	
+	
+	Additional query words: 8.0 word8 word97 alt ctrl f8 short cut
+	
+	======================================================================
+	Keywords          : kbualink97 
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : WINDOWS:97
+	Issue type        : kbbug
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

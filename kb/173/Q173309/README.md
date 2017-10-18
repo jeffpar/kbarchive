@@ -1,0 +1,171 @@
+---
+layout: page
+title: "Q173309: Blue Screen STOP Message C0000135 Appears at Startup"
+permalink: kb/173/Q173309/
+---
+
+## Q173309: Blue Screen STOP Message C0000135 Appears at Startup
+
+	Article: Q173309
+	Product(s): Microsoft Windows NT
+	Version(s): winnt:3.51,4.0
+	Operating System(s): 
+	Keyword(s): kberrmsg
+	Last Modified: 09-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation versions 3.51, 4.0 
+	- Microsoft Windows NT Server versions 3.51, 4.0 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about editing the registry.
+	Before you edit the registry, make sure you understand how to restore it if
+	a problem occurs. For information on how to do this, view the "Restoring
+	the Registry" online Help topic in Regedit.exe or the "Restoring a Registry
+	Key" online Help topic in Regedt32.exe.
+	
+	SYMPTOMS
+	========
+	
+	When you start Windows NT 4.0, the system stops and displays the following
+	message:
+	
+	  Stop: c0000135 {Unable to Locate DLL}
+	  The dynamic link library FILE_NAME could not be found in the specified path
+	  Default Load Path.
+	
+	CAUSE
+	=====
+	
+	This error can occur for any of the following reasons:
+	
+	- File_name.dll is missing from the %SystemRoot%\system32 directory.
+	
+	- Your computer is loading the Sermouse.sys file.
+	
+	- If File_Name.dll exists, the software hive may be corrupted and, therefore,
+	  cannot load.
+	
+	RESOLUTION
+	==========
+	
+	The method for checking whether File_name.dll exists varies, depending on the
+	file system in use.
+	
+	For NTFS file systems, install a parallel copy of Windows NT into an unused
+	directory, and then verify that File_name.dll exists in the
+	%SystemRoot%\System32 directory.
+	
+	For FAT File Systems, an MS-DOS installation disk can be used.
+	
+	If the file exists, it is possible that the registry software hive has been
+	corrupted. Check the integrity of the software hive by using the following
+	procedure:
+	
+	WARNING: Using Registry Editor incorrectly can cause serious problems that may
+	require you to reinstall your operating system. Microsoft cannot guarantee that
+	problems resulting from the incorrect use of Registry Editor can be solved. Use
+	Registry Editor at your own risk.
+	
+	For information about how to edit the registry, view the "Changing Keys And
+	Values" online Help topic in Registry Editor (Regedit.exe) or the "Add and
+	Delete Information in the Registry" and "Edit Registry Data" online Help topics
+	in Regedt32.exe. Note that you should back up the registry before you edit it.
+	
+	NOTE: In every case tested in which the software hive could not be loaded, the
+	File_name was Winsrv.dll.
+	
+	1. From a parallel installation of Windows NT, click Start, and then click Run.
+	
+	2. In the dialog box, type Regedt32.
+	
+	3. On the toolbar for Registry Editor, click Window, and then click the window
+	  with the following name:
+	
+	  HKEY_LOCAL_MACHINE ON LOCAL MACHINE
+	
+	4. Select the HKEY_LOCAL_MACHINE key in the left pane of the window.
+	
+	5. On the menu bar, click Registry, and then click Load Hive.
+	
+	6. Browse to %SystemRoot%\System32\config, where %SystemRoot% is the correct
+	  installation of Windows NT that you want to check.
+	
+	7. Click the file named Software. In Windows NT 4.0, this will be the file named
+	  Software that does not have an extension, and has a generic Windows icon next
+	  to it, not the file with the Notepad icon. In Windows 3.51, the file name is
+	  System, has no extension, and has a generic Windows icon.
+	
+	8. The system will prompt for a key-name to use in loading the hive. You can
+	  type whatever you prefer in the dialogue box; Work would be a good choice.
+	
+	9. The hive is corrupted if you receive the following error message:
+	
+	  Registry Editor could not load the key. The file is not a valid Registry
+	  file.
+	
+	After you have determined the problem, there are several ways to resolve it. The
+	software hive can be restored by making a parallel installation from backup
+	files. It can also be restored from the latest emergency repair disk (ERD),
+	using the procedure outlined below.
+	
+	NOTE: Windows NT 4.0 requires the Setupdd.sys file to be copied to disk 2 of the
+	Windows NT Setup disks to perform this repair without a CD-ROM. This file can be
+	found in Service Pack 2 or later. For additional information, please see the
+	following article in the Microsoft Knowledge Base:
+	
+	ARTICLE-ID: Q150497
+	TITLE : How to Repair Windows NT System Files Without a CD-ROM Attached
+	
+	1. Start the system with the Windows NT Setup disks.
+	
+	2. At the first screen, press R for repair.
+	
+	3. Use the arrow keys to move the cursor to Inspect Registry Files, and then
+	  press ENTER to select that option. Next, move the cursor to Continue (Perform
+	  Selected Tasks) and press ENTER.
+	
+	4. Let Windows NT perform the mass storage detection. When prompted, select S to
+	  specify additional drivers if your computer requires OEM drivers.
+	
+	5. When prompted to do so, insert the emergency repair disk that was originally
+	  created for this computer, or press ESC to let Windows NT search for repair
+	  information for version 3.51 or version 4.0.
+	
+	6. Setup will then ask which registry files should be replaced. Using the arrow
+	  keys, move the cursor to Software (Software Information) and press ENTER.
+	  Next, move the cursor to Continue (Perform Selected Tasks) and press ENTER.
+	
+	7. When finished, restart your computer when Setup prompts you to do so.
+	
+	For additional information to assist in repairing your Windows NT installation,
+	please see the following articles in the Microsoft Knowledge Base:
+	
+	ARTICLE-ID: Q146887
+	TITLE : Repairing Windows NT After the Application of Service Pack 3
+	
+	ARTICLE-ID: Q129037
+	TITLE : Windows NT 3.5x and 4.0 Emergency Repair Process Screens
+	
+	ARTICLE-ID: Q148262
+	TITLE : Removing Windows NT 3.51 SP4 or SP5 May Cause Logon Failures
+	
+	ARTICLE-ID: Q103280
+	TITLE : Using an Emergency Repair Disk Created by Windows NT
+	
+	ARTICLE-ID: Q150497
+	TITLE : How to Repair Windows NT System Files Without a CD-ROM Attached
+	
+	
+	Additional query words: 0xc0000135 winsrv.dll
+	
+	======================================================================
+	Keywords          : kberrmsg 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+	Version           : winnt:3.51,4.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

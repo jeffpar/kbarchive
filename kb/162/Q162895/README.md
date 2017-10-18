@@ -1,0 +1,150 @@
+---
+layout: page
+title: "Q162895: WD97: How to Use the ListNum Field in Word"
+permalink: kb/162/Q162895/
+---
+
+## Q162895: WD97: How to Use the ListNum Field in Word
+
+	Article: Q162895
+	Product(s): Word 97 for Windows
+	Version(s): WINDOWS:97
+	Operating System(s): 
+	Keyword(s): kbualink97 kbfield kbnumbering
+	Last Modified: 14-NOV-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	
+	SUMMARY
+	=======
+	
+	This article describes how to use the ListNum field anywhere in a Word
+	paragraph. ListNum fields can be incorporated into numbering from a simple or
+	outline-numbered list.
+	
+	MORE INFORMATION
+	================
+	
+	Microsoft Word 97 for Windows provides a new field for numbering items in a
+	paragraph or for using multiple numbers on the same line of text.
+	
+	Syntax
+	------
+	
+	The syntax of the ListNum field is
+	
+	  ListNum "Name" [Switches]
+	
+	where "Name" lets you associate ListNum with a specific multilevel list.
+	
+	Switches:
+	
+	  \L  specifies the level in the list.
+	  \s  specifies the start-at value for the list.
+	
+	NOTE: There is no way to change the format of the number (or letter) inserted by
+	the field directly. However you can use the CHARFORMAT switch to change the
+	format. For more information about Charformat, click Contents And Index on the
+	Help menu, click the Find tab in Word Help, type the following text:
+	
+	  Charformat
+	
+	and then click the Display button. If you are unable to find the information you
+	need, ask the Office Assistant.
+	
+	There are three built-in list definitions: NumberDefault, OutlineDefault, and
+	LegalDefault. Each of these lists has a format automatically applied to each
+	level. The following table lists the default formats for each list type.
+	
+	     Level   NumberDefault      OutlineDefault     LegalDefault
+	---------------------------------------------------------------------
+	
+	       1         1)                I.                 1.
+	       2         a)                A.                 1.1.
+	       3         i)                1.                 1.1.1.
+	       4        (1)                a)                 1.1.1.1.
+	       5        (a)               (1)                 1.1.1.1.1.
+	       6        (i)               (a)                 1.1.1.1.1.1.
+	       7         1.               (i)                 1.1.1.1.1.1.1.
+	       8         a.               (a)                 1.1.1.1.1.1.1.1.
+	       9         i.               (i)                 1.1.1.1.1.1.1.1.1.
+	
+	If you don't specify a built-in list, Word 97 either links ListNum to the last
+	list in the document or defaults to the NumberDefault list.
+	
+	Changing the Value of the ListNum Result
+	----------------------------------------
+	
+	To change the value of the ListNum result, you change the list level. There are
+	two methods you can use to accomplish this.
+	
+	Method 1: Use the Increase Indent Button:
+	
+	After inserting the ListNum field, select the result and click the Increase
+	Indent or Decrease Indent button to toggle through the list of choices. This
+	will change the level specified by the \L switch, and will apply the appropriate
+	format.
+	
+	Method 2: Edit the ListNum Field:
+	
+	After you insert the ListNum field, press ALT+F9 to display the field codes.
+	Change the ListNum field to reflect the desired numbering style.
+	
+	For example, if you want a number list to have the format of
+	
+	  (a)
+	  (b)
+	  (c)
+	
+	then each ListNum field in the list would resemble the following:
+	
+	  {ListNum "NumberDefault" \L 5}
+	
+	Inserting a ListNum Field
+	-------------------------
+	
+	1. On the Insert menu, click Field.
+	
+	2. In the Field dialog box, under Field Names, select ListNum. To add options
+	  (switches) to the ListNum field, click the Options button and use the "Add to
+	  Field" button to add the appropriate options to the ListNum field.
+	
+	NOTE: A ListNum field that occurs within a paragraph, but not at the start of the
+	paragraph, is assumed to be one level deeper than the number at the start of the
+	paragraph.
+	
+	For more information about the ListNum field, click Contents And Index on the
+	Help menu, click the Index tab in Help Topics: Microsoft Word, type the
+	following text
+	
+	  ListNum
+	
+	and then double-click the selected text to go to the "LISTNUM field" topic. If
+	you are unable to find the information you need, ask the Office Assistant.
+	
+	For additional information about the ListNum field, please see the following
+	articles in the Microsoft Knowledge Base:
+	
+	  Q155961 WD97: ListNum Field Not Converted Saving to Word 6.0/95
+	
+	  Q159943 WD97: General Information about Bullets and Numbering
+	
+	  Q160977 WD97: Error: ListNum Field In Table Causes Invalid Page Fault
+	
+	  Q157868 WD97: Custom Style Based on List Number Style Drops Numbering
+	
+	Additional query words: Multiple bullets same paragraph
+	
+	======================================================================
+	Keywords          : kbualink97 kbfield kbnumbering 
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : WINDOWS:97
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

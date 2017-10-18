@@ -1,0 +1,110 @@
+---
+layout: page
+title: "Q269367: Synciwam Utility Does Not Function and Generates Error 80110414"
+permalink: kb/269/Q269367/
+---
+
+## Q269367: Synciwam Utility Does Not Function and Generates Error 80110414
+
+	Article: Q269367
+	Product(s): Internet Information Server
+	Version(s): 2000
+	Operating System(s): 
+	Keyword(s): kberrmsg kbtool
+	Last Modified: 14-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 2000 Server 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you run the Synciwam utility (Synciwam.vbs) to synchronize Internet
+	Information Services (IIS) out-of-process applications, it may not function,
+	"Error 80110414" is generated, and you see the following output in Verbose
+	mode:
+	
+	  Updating Applications:
+	  Name: IIS Out-Of-Process Pooled Applications Key:
+	  {3D14228D-FBE1-11D0-995D-00C04FD919C1}
+	  Error: 80110414
+	
+	CAUSE
+	=====
+	
+	This behavior may occur because the password for the IWAM_<computer>
+	account is mismatched between the Windows Active Directory and the IIS metabase,
+	so Synciwam.vbs cannot synchronize the processes to the IWAM_<computer>
+	account as needed. It may also occur if the IWAM_<computer> account is
+	locked out or disabled.
+	
+	RESOLUTION
+	==========
+	
+	Match the password that is used by the IWAM_<computer> account in the IIS
+	metabase with the password that is used by the IWAM_<computer> account in
+	Active Directory. You can do this manually, as outlined in the following steps:
+	
+	1. Use a get command to find out which account is being used for the Web
+	  Application Manager (WAM) in the IIS metabase. For example, for
+	  http://<name>, you would use the following syntax:
+	
+	  c:\Inetpub\AdminScripts> adsutil GET w3svc/WAMUserName
+	
+	  WAMUserName: (String) "IWAM_<name>"
+	
+	2. Expand the Component Services folder, expand Computers, and then expand My
+	  Computer to locate the COM+ Applications folder. Right-click "IIS
+	  Out-Of-Process Pooled Applications". Make sure the "Disable changes" box on
+	  the Advanced tab is cleared to ensure that any changes made to the
+	  IWAM_<computer> account in Active Directory take effect.
+	
+	3. On a domain controller, open the Active Directory Users and Computers
+	  snap-in. On a member server, right-click My Computer, click Manage, expand
+	  System Tools, expand Local Users and Groups, and then click the Users folder.
+	
+	4. In the right pane, locate the account that was returned in step 1.
+	  Right-click the account, and then click Set Password to reset the password.
+	  For this example, the password is "Password." Also verify that the Account is
+	  disabled and Account is locked out check boxes are not selected.
+	
+	5. Set the new password in the IIS metabase. From a command prompt, type the
+	  following command:
+	
+	  c:\Inetpub\AdminScripts> adsutil SET w3svc/WAMUserPass Password
+	
+	  WAMUserPass: (String) "Password"
+	
+	6. Stop, and then start the IIS Admin service. You can do this from the Services
+	  snap-in. You can also use the net stop iisadmin /y, and the net start w3svc
+	  commands.
+	
+	Now you can run Synciwam.vbs successfully.
+	
+	MORE INFORMATION
+	================
+	
+	For additional information, click the article numbers below to view the articles
+	in the Microsoft Knowledge Base:
+	
+	  Q269001 XADM: Conferencing Server Not Starting w/ Event 36, W3SVC
+	
+	  Q195956 Cannot Set AppRoot OutProc, MTS Package Identity Set to 'Y'
+	
+	  Q255770 PRB: ASP Generates Logon Failure: Unknown User or Bad Password
+	
+	
+	Additional query words: Synchiwam.vbs Synchiwam
+	
+	======================================================================
+	Keywords          : kberrmsg kbtool 
+	Component         : WebClient
+	Technology        : kbwin2000Serv kbwin2000ServSearch kbwin2000Search
+	Version           : :2000
+	Issue type        : kbprb
+	
+	=============================================================================
+	

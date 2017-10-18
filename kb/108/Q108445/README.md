@@ -1,0 +1,110 @@
+---
+layout: page
+title: "Q108445: Writer/Artist 1: Can't Find Files Saved in Control Room"
+permalink: kb/108/Q108445/
+---
+
+## Q108445: Writer/Artist 1: Can't Find Files Saved in Control Room
+
+	Article: Q108445
+	Product(s): Microsoft Home Kids Products
+	Version(s): MACINTOSH:1.0,1.1,1.1a; WINDOWS:1.0,1.1,1.1a
+	Operating System(s): 
+	Keyword(s): kbbuglist
+	Last Modified: 27-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Creative Writer for Windows, versions 1.0, 1.1, 1.1a 
+	- Microsoft Creative Writer for the Macintosh, versions 1.0, 1.1, 1.1a 
+	- Microsoft Fine Artist for Windows, versions 1.0, 1.1, 1.1a 
+	- Microsoft Fine Artist for the Macintosh, versions 1.0, 1.1, 1.1a 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If you save and name a document in the Control Room without having named it
+	first in the program, it may seem that the file has not been saved at all.
+	
+	When you return to normal mode, the document name is still "A New Document"
+	(without the quotation marks). Creative Writer and Fine Artist don't show the
+	name you gave the document in the Control Room Save As section.
+	
+	If you close the document and then try to find it again, it doesn't appear in the
+	portfolio. It also isn't listed as the document you worked on most recently.
+	
+	RESOLUTION
+	==========
+	
+	Use the following steps to locate a file you named only in the Control Room.
+	
+	In Windows 95
+	-------------
+	
+	1. Exit Creative Writer or Fine Artist.
+	
+	2. Click Start, point to Programs, and then click Windows Explorer.
+	
+	3. Locate the document you saved in the MSKIDS directory. Or, on the Tool menu,
+	  choose Find and type in the filename.
+	
+	4. Double-click the file name.
+	
+	The program starts, with the selected document open.
+	
+	In Windows 3.x
+	--------------
+	
+	1. Exit Creative Writer or Fine Artist.
+	
+	2. Start File Manager (usually located in the Main Program Group).
+	
+	3. Search the MSKIDS directory for the name you gave the document when you saved
+	  it in the Control Room.
+	
+	4. When you find the file, double-click the filename.
+	
+	The program starts with the selected document open.
+	
+	On the Macintosh
+	----------------
+	
+	1. Exit Creative Writer or Fine Artist.
+	
+	2. In Finder, open the MSKids folder (or the folder to which you saved the
+	  document).
+	
+	3. Locate the document and double-click it.
+	
+	The program starts, with the selected document open.
+	
+	MORE INFORMATION
+	================
+	
+	Microsoft has confirmed this to be a problem in the programs listed at the top
+	of this article. We are researching this problem and will post new information
+	here in the Microsoft Knowledge Base.
+	
+	The Control Room can be used to save files under specific MS-DOS filenames and/or
+	to specific locations. By default, unless you specify another drive or
+	directory, documents saved in the Control Room are saved to the MSKIDS directory
+	or folder. If you save a document from inside Creative Writer or Fine Artist,
+	however, it is given a 32-character name and is saved by default into your own
+	subdirectory.
+	
+	NOTE: To enter the Control Room in Windows, press and hold down the CTRL key and
+	the SHIFT key while you press the A key (CTRL+SHIFT+A). To enter the Control
+	Room in Macintosh versions, press and hold down the COMMAND key and the SHIFT
+	key while you press the A key (COMMAND+SHIFT+A).
+	
+	Additional query words: 1.00 missing gone emergency lost disappear not saved named find 8.3 naming convention eight three kids win mac mskids 1.10 adult mode mczee wm_artist 1.10a
+	
+	======================================================================
+	Keywords          :  kbbuglist
+	Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbPTProdChange kbZNotKeyword2 kbCreativeWriter100 kbCreativeWriter110 kbCreativeWriter110a kbCreativeWriter110Mac kbCreativeWriter110aMac kbCreativeWriter100Mac kbFineArtist100 kbFineArtist110 kbFineArtist110a kbFineArtist110Mac kbFineArtist110aMac kbFineArtist100Mac
+	Version           : MACINTOSH:1.0,1.1,1.1a; WINDOWS:1.0,1.1,1.1a
+	
+	=============================================================================
+	

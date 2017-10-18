@@ -1,0 +1,275 @@
+---
+layout: page
+title: "Q265441: XADM: Some Questions and Answers About the Exmerge Utility"
+permalink: kb/265/Q265441/
+---
+
+## Q265441: XADM: Some Questions and Answers About the Exmerge Utility
+
+	Article: Q265441
+	Product(s): Microsoft Exchange
+	Version(s): 4.0,5.0,5.5
+	Operating System(s): 
+	Keyword(s): exc4 exc5 exc55
+	Last Modified: 08-NOV-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article contains information about some questions that you may need to ask
+	when you run the Exmerge utility (the Exchange Server Mailbox Merge utility) on
+	Microsoft Windows NT Server 4.0 or Microsoft Windows 2000 Server. The following
+	questions are addressed:
+	
+	- What are the conditions I need to meet to run Exmerge successfully?
+	
+	- What are the possible uses of Exmerge?
+	
+	- What is Exmerge able to do and what is Exmerge unable to do?
+	
+	- How do I extract all the mail from a damaged private information store and
+	  create a new private information store with the extracted mail?
+	
+	- What is the advantage of being able to extract only specific mail from a
+	  private information store, either by date, subject, or attachment name?
+	
+	- How do I extract only specific mail from a private information store?
+	
+	- Where can I obtain additional information about running Exmerge?
+	
+	MORE INFORMATION
+	================
+	
+	What Are the Conditions I Need to Meet to Run Exmerge Successfully?
+	-------------------------------------------------------------------
+	
+	- You can run the Exmerge utility against a remote Exchange Server computer.
+	  However, you must have Exchange Server or at least the Exchange Server
+	  Administrator program installed on the computer that you run Exmerge on.
+	
+	- The account that you use to log on must have Service Account Administrator
+	  permissions at the organization, site, and configuration levels of the
+	  Administrator program.
+	
+	- You need enough disk space on the drive that contains the Priv.edb database
+	  for the Priv.edb database to possibly double in size. This growth occurs
+	  because you lose single-instance storage, which is the ability to store a
+	  mail item that is addressed to several recipients as one mail item with
+	  pointers to each recipient instead of as a mail item for each recipient.
+	
+	- You also need enough disk space for the personal folders (.pst) files that
+	  Exmerge creates. By default, the .pst files are created on the drive that you
+	  run Exmerge from, but you can specify that the .pst files be created on
+	  another drive if necessary.
+	
+	- You must have the correct version of Exmerge. With Exchange Server 4.0 and
+	  5.0, use Exmerge version 2.0. With Exchange Server 5.5, as of June 2000, use
+	  Exmerge 3.71.
+	
+	- Allot enough time for Exmerge to run. Depending on hardware and other
+	  considerations, the average time for Exmerge step 1 is from 45 minutes to 1
+	  hour for each gigabyte (GB). For Exmerge step 2, the average time is from 1
+	  to 2 hours for each GB.
+	
+	What Are the Possible Uses of Exmerge?
+	--------------------------------------
+	
+	- You can use Exmerge to extract mail from a damaged private information store.
+	  Exmerge puts this mail into .pst files that you can import back into an
+	  undamaged private information store.
+	
+	- You can use Exmerge to locate and remove a specific e-mail message from the
+	  private information store (for example, virus mail).
+	
+	- You can use Exmerge to migrate users between different organizations and
+	  sites by copying the users' mail to .pst files that you can then import into
+	  the new organization or site.
+	
+	- You can use Exmerge to extract folder rules.
+	
+	- In some situations, you can even use Exmerge as a brick-level backup agent,
+	  although Exmerge does not have the ability to write the data to a backup
+	  tape.
+	
+	What Is Exmerge Able to Do and What Is Exmerge Unable to Do?
+	------------------------------------------------------------
+	
+	- Exmerge merges server-based rules on Exchange Server 5.0 or later, but
+	  clients must re-enable the rules after the merge. To re-enable the rules
+	  after the merge, click to select the check box for each rule in the Rules
+	  Wizard (on the Tools menu).
+	
+	- Exmerge 3.71 does support the Microsoft Outlook Calendar, Contacts, Journal,
+	  Notes, and Tasks. Exmerge 3.71 also supports folder rules and views in
+	  Exchange Server 5.0 and later. (Earlier versions of Exmerge may not support
+	  all these items.)
+	
+	- Exmerge 3.71 does not support Microsoft Schedule+ data.
+	
+	How Do I Extract All the Mail From a Damaged Private Information Store and Create a New Private Information Store with the Extracted Mail?
+	------------------------------------------------------------------------------------------------------------------------------------------
+	
+	1. Create a folder called Exmerge on your Exchange Server computer desktop.
+	
+	2. Copy or unzip the following files into the Exmerge folder: Exmerge.exe,
+	  Exmerge.ini, and Mfc42.dll.
+	
+	3. Double-click Exmerge.exe.
+	
+	4. Click "Two step merge".
+	
+	5. Click "Step 1: Copy Data to Personal Folders".
+	
+	6. Type the name of the Exchange Server computer.
+	
+	7. Click Options.
+	
+	8. Click the Data tab, and then click to select the User Messages and Folders,
+	  Associated Folder Messages, and Folder Permissions check boxes. (Clicking to
+	  select the Dumpster Items check box is optional.)
+	
+	9. On the rest of the tabs, leave the default settings. Click Apply, and then
+	  click OK.
+	
+	10. Click All Mailboxes, and then click Next.
+	
+	11. Note the number of mailboxes that are selected, the free disk space
+	  available, and the disk space required, and then click Next.
+	
+	12. It is recommended that you leave the default folder as C:\Exmergedata;
+	  however, you can change the location if necessary. Click Next.
+	
+	13. Exmerge merges mailboxes to .pst files.
+	
+	  NOTE: If Exmerge stops responding (hangs) on a mailbox, the mailbox is too
+	  corrupted to merge to a .pst file. Click the next mailbox and continue the
+	  process.
+	
+	14. Stop the information store.
+	
+	15. Remove the Priv.edb database from the X:\Exchsrvr\Mdbdata folder, and then
+	  place the Priv.edb database in a backup folder. Also remove all .log and
+	  .chk files from the Mdbdata folders on all drives, and then move those .log
+	  and .chk files to a backup folder.
+	
+	  IMPORTANT: Do not remove the Pub.edb database.
+	
+	16. Start the information store to create a new Priv.edb database.
+	
+	17. Send a test message to all server recipients or to the global address list.
+	
+	18. Double-click Exmerge.exe.
+	
+	19. Click "Two step merge".
+	
+	20. Click "Step 2: Merge Data from Personal Folders".
+	
+	21. Type your Exchange Server computer name, and then click Options.
+	
+	22. Click the Data tab, and then click to select the "User messages and
+	  Folders", Associated Folder Messages, and Folder Permissions check boxes.
+	  (Clicking to select the Dumpster Items check box is optional.)
+	
+	23. On the rest of the tabs, leave the default settings. Click Apply, and then
+	  click OK.
+	
+	24. Click All Mailboxes, and then click Next.
+	
+	25. Leave the default folder as C:\Exmergedata, and then click Next.
+	
+	26. Proceed with the merge.
+	
+	NOTE: Offline folder (.ost) file users must convert their .ost file to a .pst
+	file before those users can connect to the new private information store. The
+	.ost files are profile-specific and can only be used with a single profile. When
+	the location of the mailbox that the profile points to changes as a result of
+	creating a new Priv.edb, the user can never gain access to that mail again.
+	
+	What Is the Advantage of Being Able to Extract Only Specific Mail From a Private Information Store, Either by Date, Subject, or Attachment Name?
+	------------------------------------------------------------------------------------------------------------------------------------------------
+	
+	- You can use this process to remove sensitive data from the private
+	  information store that was accidentally distributed by an Exchange Server
+	  user.
+	
+	- You can use this process to remove e-mail messages or file attachments that
+	  are infected with a virus from the private information store.
+	
+	How Do I Extract Only Specific Mail From a Private Information Store?
+	---------------------------------------------------------------------
+	
+	1. Log on by using the Exchange Server service account.
+	
+	2. Create a folder called Exmerge on your Exchange Server computer desktop.
+	
+	3. Copy or unzip the following files into the Exmerge folder: Exmerge.exe,
+	  Exmerge.ini, and Mfc42.dll.
+	
+	4. Double-click Exmerge.exe.
+	
+	5. Click "Two step merge".
+	
+	6. Click "Step 1: Copy Data to Personal Folders".
+	
+	7. Type your Exchange Server computer name, and then click Options.
+	
+	8. Click the Data tab, and then click "User messages".
+	
+	9. Click the Import Procedure tab, and then click "Archive data to target store"
+	  (this copies the selected data to .pst files and then deletes the data from
+	  the Exchange Server mailbox).
+	
+	10. Click the Message Details tab, enter the subject of the message or the name
+	  of the attachment that you want to remove, and then click Add. Click Apply,
+	  and then click OK.
+	
+	11. On the Dates tab, you can also select a specific date or range of dates or
+	  times to narrow your search.
+	
+	  NOTE: All dates and times are selected by default.
+	
+	12. Click All Mailboxes or select the affected mailboxes if you can identify
+	  them, and click Next.
+	
+	13. If possible, leave the default folder as C:\Exmergedata, and then click
+	  Next.
+	
+	  NOTE: It is not recommended that you change the default folder, but you may
+	  need to change the default folder because of free disk space limitations.
+	
+	14. Exmerge moves the specified messages to a .pst file.
+	
+	15. When the merge is finished, open a few mailboxes to make sure that the
+	  messages have been removed.
+	
+	NOTE: The selected messages are not removed from the system attendant mailbox as
+	a safety measure. You must manually delete these messages.
+	
+	Where Can I Obtain Additional Information About Running Exmerge?
+	----------------------------------------------------------------
+	
+	For additional information about running Exmerge, click the article numbers below
+	to view the articles in the Microsoft Knowledge Base:
+	
+	  Q260037 XADM: How to Remove a Message from Exchange by Using the ExMerge
+	  Utility
+	
+	  Q174197 XADM: Microsoft Exchange Mailbox Merge Program (Exmerge.exe)
+	  Information
+	
+	Additional query words: GAL
+	
+	======================================================================
+	Keywords          : exc4 exc5 exc55 
+	Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+	Version           : :4.0,5.0,5.5
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

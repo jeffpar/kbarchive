@@ -1,0 +1,125 @@
+---
+layout: page
+title: "Q258662: Availability of FAT32 Support in Windows 95"
+permalink: kb/258/Q258662/
+---
+
+## Q258662: Availability of FAT32 Support in Windows 95
+
+	Article: Q258662
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:95
+	Operating System(s): 
+	Keyword(s): kbenv osr2 win95
+	Last Modified: 29-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 95 
+	- Microsoft Windows 95 OEM Service Release, versions 1.0, 2.0, 2.1, 2.5 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes the availability of FAT32 file system support in Windows
+	95.
+	
+	MORE INFORMATION
+	================
+	
+	FAT32 file system support for Windows 95 is available in Original Equipment
+	Manufacturer (OEM) versions of Windows 95. If you purchased Windows 95 box
+	product (the full or upgrade version) from a retail store, you have a retail
+	version of Windows 95. Retail versions of Windows 95 cannot be upgraded to OEM
+	versions, and there is no separate download to enable FAT32 support in retail
+	versions of Windows 95. If you have an OEM version of Windows 95 that does not
+	have FAT32 support, contact your OEM.
+	
+	To determine the version of Windows 95 you are running:
+	
+	1. Click Start, point to Settings, click Control Panel, and then double-click
+	  System.
+	
+	2. Click the General tab.
+	
+	3. Locate the version number under the System heading, and then see the
+	  following table.
+	
+	+---------------------------------------------------------------------------------------------------------------------------+
+	| Release                 | Version                    | File dates       | FAT32 support | Is FAT32 support downloadable?* | 
+	+---------------------------------------------------------------------------------------------------------------------------+
+	| Windows 95 retail       | 4.00.950                   | 7/11/95          | no            | no                              | 
+	+---------------------------------------------------------------------------------------------------------------------------+
+	| Windows 95 retail SP1   | 4.00.950A                  | 7/11/95          | no            | no                              | 
+	+---------------------------------------------------------------------------------------------------------------------------+
+	| OEM Service Release 1   | 4.00.950A                  | 7/11/95          | no            | no                              | 
+	+---------------------------------------------------------------------------------------------------------------------------+
+	| OEM Service Release 2   | 4.00.1111 (4.00.950B)      | 8/24/96          | no            | no                              | 
+	+---------------------------------------------------------------------------------------------------------------------------+
+	| OEM Service Release 2.1 | 4.03.1212-1214 (4.00.950B) | 8/24/96-8/27/97  | yes           | n/a                             | 
+	+---------------------------------------------------------------------------------------------------------------------------+
+	| OEM Service Release 2.5 | 4.03.1214 (4.00.950C)      | 8/24/96-11/18/97 | yes           | n/a                             | 
+	+---------------------------------------------------------------------------------------------------------------------------+
+	
+	*If you have a version of Windows 95 that does not have FAT32 support, and you
+	want FAT32, Microsoft recommends that you upgrade to Windows 98 Second Edition.
+	
+	
+	If you are running an OEM version of Windows 95, the Product ID number under the
+	Registered To heading typically contains 20 digits. If digits 6, 7, and 8
+	contain the letters "OEM," your version of Windows 95 is an OEM version. For
+	example, the following sample Product ID number indicates an OEM installation:
+	
+	  12345-OEM-6789098-76543
+	
+	OEM Version Identification
+	--------------------------
+	
+	Windows 95 may have been preinstalled on your computer. These installations are
+	referred to as OEM installations. An OEM Service Release (for example, OSR2) is
+	an updated version of a product for PC manufacturers (OEMs) to preinstall on new
+	PCs. This allows OEMs to install an integrated Windows 95 product that contains
+	the latest available individual updates and supports recent advances in hardware
+	that require core operating system support.
+	
+	Additional OEM Information
+	--------------------------
+	
+	- In Windows 95 OEM Service Release 2 (OSR2), 2.1 (OSR2.1), and 2.5 (OSR2.5),
+	  not all files have the version stamp that is listed in the table. In OSR2.1
+	  and OSR2.5, only files that were updated to provide support for the Win32
+	  Driver Model (WDM) and Universal Serial Bus (USB) may have this version
+	  stamp. The other files have the same version stamps as the corresponding OSR2
+	  files.
+	
+	  You can view file version information by right-clicking a file in Windows
+	  Explorer, clicking Properties, and then clicking the Version tab. If there is
+	  no Version tab, there is no version information available for that file.
+	
+	- Updates to Windows 95 OSR2 generally have a version number of 4.00.1112 or
+	  later.
+	
+	Additional Information
+	----------------------
+	
+	All versions of Microsoft Windows 98 include FAT32 support.
+	
+	For additional information about FAT32, click the article numbers below to view
+	the articles in the Microsoft Knowledge Base:
+	
+	  Q154997 Description of the FAT32 File System
+	
+	  Q253774 Common Questions About the FAT32 File System
+	
+	Additional query words: osr1 osr fat 32
+	
+	======================================================================
+	Keywords          : kbenv osr2 win95 
+	Technology        : kbWin95search kbOPKSearch kbZNotKeyword3 kbWin95OPKOSR25 kbWin95OPKOSR210
+	Version           : WINDOWS:95
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

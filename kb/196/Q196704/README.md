@@ -1,0 +1,221 @@
+---
+layout: page
+title: "Q196704: INFO: Files Installed in WINNT&#92;SYSTEM32 Folder for IE4"
+permalink: kb/196/Q196704/
+---
+
+## Q196704: INFO: Files Installed in WINNT&#92;SYSTEM32 Folder for IE4
+
+	Article: Q196704
+	Product(s): Microsoft FoxPro
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbsetup kbOSWinNT kbvfp600
+	Last Modified: 12-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 6.0, on platform(s):
+	   - the operating system: Microsoft Windows NT 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	NOTE: This article is part of a series of Knowledge Base (KB) articles that
+	provide a list of files that are installed by Visual FoxPro version 6.0 into a
+	fresh installation of Windows NT 4.0 Workstation.
+	
+	This is the third article in the series and lists the files in the Windows NT 4.0
+	Workstation \WINNT\SYSTEM32 (default) folder after this step in the Visual
+	FoxPro 6.0 installation, which installs Microsoft Internet Explorer version
+	4.01.
+	
+	MORE INFORMATION
+	================
+	
+	Directory of \WINNT\SYSTEM32 (after installing Microsoft Internet Explorer
+	version 4.01):
+	
+	  892 File(s)       80,062,453 bytes
+	
+	Files in \WINNT\SYSTEM32 folder that were added or modified by installation of
+	Internet Explorer version 4.01:
+	
+	  File Name            File Size  File Date   File Time   File Version
+	  --------------------------------------------------------------------
+	
+	  Actmovie.exe             42256  07/21/1998  17:14:28    5.01.18.1024
+	  Actpmnt.ocx             651712  03/06/1998  11:35:48
+	  Actxprxy.dll             57616  05/08/1998   0:00:00    4.72.3110.0
+	  Advpack.dll              80864  05/08/1998  18:04:32    4.72.3110.0
+	  Amovie.ocx              167696  07/21/1998  17:14:28    5.01.18.1024
+	  Amstream.dll             65808  07/21/1998  17:14:28    5.01.18.1024
+	  Asctrls.ocx              91024  05/08/1998   0:00:00    4.72.3110.6
+	  Bindfile.dll             20272  05/08/1998   0:00:00    4.72.3110.0
+	  Cabinet.dll              67072  05/08/1998   0:00:00    1.00.601.4
+	  Cdfview.dll             306448  05/08/1998   0:00:00    4.72.3110.1
+	  Ckcnv.exe                11184  05/08/1998   0:00:00
+	  Comcat.dll               22288  05/08/1998   0:00:00    4.71
+	  Cryptdlg.dll             79120  05/08/1998   0:00:00    5.00.1532.1
+	  C_28595.nls              66082  05/08/1998   0:00:00
+	  Dacui.dll               103184  05/08/1998   0:00:00    5.101.1743.1
+	  Danim.dll              1473808  07/21/1998  17:14:24    5.01.15.1106
+	  Daxctle.ocx             150528  07/21/1998  17:14:26    Version: 2.0.0.
+	  Ddexinst.exe             41424  09/17/1997  20:34:10    4.83.0311.0
+	  Ddrawex.dll              40192  09/17/1997  20:34:10    4.71.1112.0
+	  Devenum.dll              48400  07/21/1998  17:14:28    5.01.18.1024
+	  Dispex.dll               48912  05/08/1998   0:00:00    3,1,0,2124
+	  Dscvr.dll                48088  03/06/1998  11:35:48
+	  Dssbase.dll              90896  05/08/1998   0:00:00    5.00.1614.1
+	  Dsssig.exe               24928  05/08/1998   0:00:00    5.00.1541.70
+	  Dx3j.dll                313856  06/02/1998  12:56:34    4.79.2725
+	  Fdectsp.dll              53248  07/21/1998  17:14:32
+	  Hhctrl.ocx              346624  05/08/1998   0:00:00    4.72.7290
+	  Hlink.dll                73488  05/08/1998   0:00:00    1.0.4328
+	  Homepage.inf              1595  05/11/1998  16:05:52
+	  Icfgnt.dll               22816  08/19/1997  14:18:32    4.71.465.5
+	  Icmfilter.dll            40960  05/08/1998   0:00:00    1, 0, 0, 1
+	  Icwdial.dll              63136  08/19/1997  14:18:42    4.71.465.5
+	  Icwphbk.dll              54336  08/19/1997  14:18:42    4.71.465.5
+	  Ie4files.inf              2084  07/21/1998  17:13:16
+	  Ie4tour.dll             486000  05/08/1998   0:00:00    4.72.3110.1
+	  Ie4uinit.exe             26880  05/08/1998   0:00:00    4.72.3110.6
+	  Ie4uinit.inf             17590  05/08/1998   0:00:00
+	  Iedkcs32.dll             49248  05/08/1998   0:00:00    4.72.3110.0
+	  Iejava.cab               24217  05/12/1998  17:06:32
+	  Ielabel.ocx             129264  05/08/1998   0:00:00    4.72.3110.0
+	  Iemenu.ocx               73472  05/08/1998   0:00:00    4.72.3110.0
+	  Iernonce.dll             26656  05/08/1998   0:00:00    4.72.3110.0
+	  Iesetreg.exe             32016  05/08/1998   0:00:00    5.101.1696.1
+	  Ietimer.ocx              77728  05/08/1998   0:00:00    4.72.3110.0
+	  Imgutil.dll              38080  05/08/1998   0:00:00    4.72.3110.7
+	  Imrt1625.dll             11280  07/21/1998  17:14:32    2, 5, 1, 265
+	  Imrt25.dll               15360  07/21/1998  17:14:32    2, 5, 1, 265
+	  Imrt3225.dll             27136  07/21/1998  17:14:32    2, 5, 1, 265
+	  Imusic25.dll            128512  07/21/1998  17:14:32    2, 5, 1, 265
+	  Inetcfg.dll             137328  09/09/1997  16:06:46    4.71.465.6
+	  Inetcomm.dll            352016  04/08/1998  21:32:48    4.72.3110.3
+	  Initpki.dll              68368  05/08/1998   0:00:00    5.101.1696.1
+	  Inloader.dll             78848  05/08/1998   0:00:00    1.0.96072601
+	  Inseng.dll               59056  05/08/1998  18:04:32    4.72.3110.6
+	  Isign32.dll              73488  08/19/1997  14:18:46    4.71.465.5
+	  Itircl.dll              138000  05/08/1998   0:00:00    4.72.7276.0
+	  Itss.dll                127760  05/08/1998   0:00:00    4.72.7287.0
+	  Javacypt.dll            209168  06/02/1998  14:10:22    5.00.2752
+	  Javaee.dll              135168  06/02/1998  13:29:04    5.00.2752
+	  Javaperm.hlp             11403  06/02/1998  12:46:38
+	  Javaprxy.dll             32528  06/02/1998  14:10:24    5.00.2752
+	  Javart.dll              361744  06/02/1998  15:46:06    5.00.2752
+	  Javasec.hlp              21444  06/02/1998  12:46:38
+	  Javasup.vxd               7356  06/02/1998  13:28:22
+	  Jcb.dll                  49616  03/06/1998  11:35:48
+	  Jdbgmgr.exe              14848  06/02/1998  13:29:16    5.00.2752
+	  Jgaw400.dll              44544  05/08/1998   0:00:00    036
+	  Jgdw400.dll             165888  05/08/1998   0:00:00    064
+	  Jgmd400.dll              35840  05/08/1998   0:00:00    032
+	  Jgpl400.dll              42496  05/08/1998   0:00:00    042
+	  Jgsd400.dll              45568  05/08/1998   0:00:00    017
+	  Jgsh400.dll              65536  05/08/1998   0:00:00    021
+	  Jit.dll                 140048  06/02/1998  15:45:58    5.00.2752
+	  Jobexec.dll              47392  05/11/1998  16:05:52    4.72.3110.7
+	  Jscript.dll             482576  05/08/1998   0:00:00    3.1.0.2124
+	  Jsproxy.dll              16432  05/08/1998   0:00:00    4.72.3110.0
+	  Licmgr10.dll             50896  05/08/1998   0:00:00    4.72.3110.0
+	  Lmrt.dll                147728  07/21/1998  17:14:26    5.01.15.1106
+	  Loadwc.exe               17104  05/08/1998   0:00:00    4.72.3110.1
+	  Marquee.ocx              75520  05/08/1998   0:00:00    4.72.3110.0
+	  Mciqtz.drv               11776  07/21/1998  17:14:28    4.00.96.0729
+	  Mciqtz32.dll             42256  07/21/1998  17:14:28    5.01.18.1024
+	  Mlang.dll                96528  05/08/1998   0:00:00    4.72.3110.1
+	  Mmefxe.ocx              156160  07/21/1998  17:14:26    Version: 2.0.0.
+	  Mmutilse.dll            122880  07/21/1998  17:14:26    Version: 2.0.0.
+	  Msaahtml.dll            163840  05/08/1998   0:00:00    4.72.2210.0
+	  Msapsspc.dll             67840  05/08/1998   0:00:00    5.00.7729
+	  Msawt.dll               155920  06/02/1998  15:46:12    5.00.2752
+	  Mscat32.dll              81168  05/08/1998   0:00:00    5.101.1701.1
+	  Msctl.dll                13072  05/08/1998   0:00:00    5.101.1696.1
+	  Msdatsrc.tlb              2492  07/23/1997  10:12:44
+	  Msencode.dll             94208  05/08/1998   0:00:00    97052700
+	  Mshtml.dll             2402064  05/08/1998   0:00:00    4.72.3110.7
+	  Mshtmlwb.dll             52080  05/08/1998   0:00:00    4.72.3110.7
+	  Msidle.dll                9200  05/08/1998   0:00:00    4.72.3110.1
+	  Msjava.dll              843024  06/02/1998  15:45:44    5.00.2752
+	  Msjdbc10.dll             73728  06/02/1998  12:56:34    1.0.2813.0
+	  Msmusctl.dll             67072  07/21/1998  17:14:32    2, 5, 1, 482
+	  Msoeacct.dll            213264  04/14/1998  12:43:50    4.72.3110.1
+	  Msoemapi.dll            105232  04/14/1998  12:43:50    6.0.2024.0
+	  Msoert.dll               61600  04/14/1998  12:43:50    4.72.3110.1
+	  Msr2c.dll                69632  08/01/1997  10:55:24    1.00.4211.0
+	  Msr2cenu.dll              7168  08/01/1997  10:55:24    1.00.4211.0
+	  Msrating.dll             82992  05/08/1998   0:00:00    4.72.3110.1
+	  Mssip32.dll              51472  05/08/1998   0:00:00    5.101.1701.1
+	  Msxml.dll               101136  05/08/1998   0:00:00    4.72.3110.0
+	  Npsmlvdo.dll             37376  07/21/1998  17:14:32    1, 0, 0, 1
+	  Occache.dll              91328  05/08/1998   0:00:00    4.72.3110.1
+	  Ochlp30e.dll             37888  07/21/1998  17:14:32    3.00.463
+	  Plugin.ocx               83776  05/08/1998   0:00:00    4.72.3110.0
+	  Pngfilt.dll              48720  05/08/1998   0:00:00    4.72.3110.7
+	  Proctexe.ocx             70144  07/21/1998  17:14:26    Version: 2.0.0.
+	  Psbase.dll               68880  05/08/1998   0:00:00    5.00.1620.80
+	  Pstorec.dll              55056  05/08/1998   0:00:00    5.00.1598.2
+	  Pstorerc.dll             46352  05/08/1998   0:00:00    5.00.1630.5
+	  Pstores.exe              78608  05/08/1998   0:00:00    5.00.1630.5
+	  Quartz.dll              731920  07/21/1998  17:14:28    5.01.18.1024
+	  Quartz.vxd                5672  07/21/1998  17:14:28
+	  Regsvr32.exe             37136  05/08/1998   0:00:00    5.00.1586.1
+	  Rsaci.rat                 3186  05/08/1998   0:00:00
+	  Sendmail.dll             20864  05/08/1998   0:00:00    4.72.3110.1
+	  Setupwbv.dll             47824  05/08/1998   0:00:00    4.72.3110.0
+	  Shdocvw.dll            2168592  05/08/1998   0:00:00    4.72.3110.3
+	  Shlwapi.dll             131856  05/08/1998   0:00:00    4.72.3110.0
+	  Sigres.exe               24928  05/08/1998   0:00:00    5.00.1620.82
+	  Softboot.exe             27328  05/08/1998   0:00:00    4.72.3110.0
+	  Softboot.inf              2571  05/08/1998   0:00:00
+	  T2embed.dll             209408  05/08/1998   0:00:00    0, 2, 0, 50
+	  Tdc.ocx                  73120  02/03/1998   9:08:40    1, 2, 0, 0031
+	  Thumbvw.dll              97664  05/08/1998   0:00:00    4.72.3110.1
+	  Unam4ie.exe              63488  07/21/1998  17:14:28    5.01.18.1024
+	  Unaxa.exe                47104  07/21/1998  17:14:26    5.01.18.1106
+	  Urlmon.dll              487184  05/08/1998   0:00:00    4.72.3110.6
+	  Vbscript.dll            328976  05/08/1998   0:00:00    3.1.0.2124
+	  Vdoliv32.exe            244736  07/21/1998  17:14:32    2, 0,2, 0
+	  Vdoplstr.dll             45056  07/21/1998  17:14:32
+	  Vidx16.dll               10240  07/21/1998  17:14:28
+	  Vmhelper.dll            207872  06/02/1998  13:43:08    5.00.2752
+	  Vsrevoke.dll             57616  05/08/1998   0:00:00    5.101.1696.1
+	  Webcheck.dll            343824  05/08/1998   0:00:00    4.72.3110.1
+	  Wininet.dll             369424  05/08/1998   0:00:00    4.72.3110.0
+	  Wldap32.dll              90384  04/14/1998  12:43:50    5.00.1578
+	  Wltunins.exe             29696  08/18/1997  16:51:24
+	  Wsock32n.dll             26160  05/08/1998   0:00:00    5.2.0.2
+	  Xenroll.dll              69328  05/08/1998   0:00:00    5.102.1680.101
+	  Zonedoff.reg               113  06/02/1998  13:05:24
+	  Zonedon.reg                113  06/02/1998  13:05:24
+	
+	  147 File(s)
+	
+	REFERENCES
+	==========
+	
+	For additional information on files installed in the \WINDOWS\SYSTEM folder,
+	please see the following article in the Microsoft Knowledge Base:
+	
+	  ARTICLE-ID: <LINK TYPE="ARTICLE" VALUE="Q196699">Q196699</LINK>
+	
+	  TITLE     : INFO: Files Installed in WINNT\SYSTEM32 Folder Before VFP6
+	
+	(c) Microsoft Corporation 1998, All Rights Reserved. Contributions by Perry
+	Newton, Microsoft Corporation.
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbsetup kbOSWinNT kbvfp600 
+	Technology        : kbVFPsearch kbAudDeveloper
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

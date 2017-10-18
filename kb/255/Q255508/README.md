@@ -1,0 +1,155 @@
+---
+layout: page
+title: "Q255508: XCLN: Readme.txt File for Outlook for Macintosh Version 8.2.1"
+permalink: kb/255/Q255508/
+---
+
+## Q255508: XCLN: Readme.txt File for Outlook for Macintosh Version 8.2.1
+
+	Article: Q255508
+	Product(s): Microsoft Exchange
+	Version(s): MACINTOSH:8.2.1
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 06-MAR-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Outlook for Macintosh, Exchange Server Edition, version 8.2.1 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article contains a copy of the information in the Readme.txt file that
+	accompanies Microsoft Outlook for Macintosh, Exchange Server Edition, version
+	8.2.1 on the Microsoft anonymous FTP site on the Internet.
+	
+	MORE INFORMATION
+	================
+	
+	Microsoft Outlook 8.2.1 for Macintosh - Release Information
+	August 1999
+	
+	<A9> 1999 Microsoft Corporation. All rights reserved. Microsoft and
+	Outlook are registered trademarks of Microsoft Corporation in the
+	United States of America and other countries.  Apple, Macintosh,
+	and Power Macintosh are registered trademarks of Apple Computer, Inc.
+	StuffIt Expander is a trademark of Aladdin Systems, Inc.
+	
+	Your rights to use this software are governed by the terms,
+	conditions, and restrictions of either the Server License for
+	Microsoft Server Products or the Client Access License for Microsoft
+	Server Products, as appropriate.
+	
+	---------------------------------------------------------------------
+	Downloading and Installing Microsoft Outlook 8.2.1 for Macintosh
+	---------------------------------------------------------------------
+	If you have version 8.1 or earlier of Outlook on your computer, if
+	you have a 68K-based Macintosh, or if you have no version of Outlook
+	installed:
+	
+	1. Download the file "Mac-Outlook-8.2.1.hqx" or the file
+	  "Mac-Outlook-8.2.1.bin".
+	  (If you don't know which file to choose, download the file
+	  "Mac-Outlook-8.2.1.hqx".)
+	
+	2. Use a utility to decode and unstuff the downloaded file as
+	  necessary.  You might need to download Aladdin StuffIt Expander
+	  version 5.0 or later to decompress this file.  This free download
+	  can be found at http://www.aladdinsys.com/expander/index.html.
+	
+	3. Open the folder "Microsoft Outlook 8.2.1" that was created on the
+	  desktop.
+	
+	4. Double-click "Microsoft Outlook Setup" to begin the installation.
+	
+	If you have version 8.2 installed and you have a PowerPC-based
+	Macintosh, you can just download the 8.2 to 8.2.1 updater:
+	
+	1. Download the file "Outlook-8.2.1-Updater-PPC.bin".
+	
+	2. Use a utility to decode and unstuff the downloaded file as
+	  necessary.  You might need to download Aladdin StuffIt Expander
+	  version 5.0 or later to decompress this file.  This free download
+	  can be found at http://www.aladdinsys.com/expander/index.html.
+	
+	3. Double-click "Microsoft Outlook 8.2.1 Update" to begin the update.
+	  This program will search for an installed version of Outlook 8.2
+	  on your computer to update.  The only file that will be changed is
+	  the file "Microsoft Outlook" or "Microsoft Outlook(E-mail only)",
+	  depending on the version of Outlook 8.2 you installed.
+	
+	4. After the updater is finished, the version of Outlook on your
+	  computer will be 8.2.1.  No reboot is necessary.
+	
+	---------------------------------------------------------------------
+	System Requirements
+	---------------------------------------------------------------------
+	Minimum: Apple Macintosh with a 68030 or faster processor, System
+	7.5.5 or later and at least 16 megabytes (MB) of RAM.
+	
+	Recommended: Apple Power Macintosh with Mac OS 8.0 or later and at
+	least 16 MB of RAM. In addition, Outlook will run faster if virtual
+	memory is enabled and set to a minimum of 1 MB above the installed
+	physical memory.
+	
+	---------------------------------------------------------------------
+	Issues Fixed in Version 8.2.1
+	---------------------------------------------------------------------
+	The following issues were fixed in version 8.2.1:
+	
+	*  Messages with a blank subject could not be dragged from Outlook to
+	  the desktop.  Instead, the following error message appeared: "The
+	  drag and drop operation could not be completed. An error occurred
+	  while writing to the disk. The disk might be full or
+	  write-protected.?
+	
+	*  On a computer without security enabled, messages occasionally
+	  would not send the first time.  Instead, the ?Send? toolbar button
+	  remained in the depressed state.
+	
+	*  When copying or cutting text that contained an URL and then
+	  closing the message, a message always appeared asking you if you
+	  would like to keep the large amount of text on the clipboard.
+	
+	*  Holding down the CTRL key while double-clicking a hyperlink in a
+	  mail message multiple times caused Outlook to freeze.
+	
+	*  Sometimes Outlook launched the web browser to display the target
+	  of a hyperlink in a message, even if that hyperlink was not
+	  directly clicked on.
+	
+	*  Japanese characters received over the Internet were sometimes
+	  displayed incorrectly using the Japanese version of Outlook.
+	
+	*  Messages with multiple attachments forwarded from an Outlook Web
+	  Access client to Outlook 8.2 displayed only the first attachment.
+	
+	*  Web Forms were not being rendered in Outlook Web Access, even
+	  if the Web Services information was correctly entered.
+	
+	*  Outlook was unable to use Web Services with an SSL-secured
+	  (https://) web server.
+	
+	*  On a 68K-based Macintosh, dragging attachments from a message
+	  into an Exchange folder sometimes caused a Type 2 error.
+	
+	---------------------------------------------------------------------
+	For More Information
+	---------------------------------------------------------------------
+	For more information about Microsoft Outlook 8.2.1 for Macintosh,
+	including information about new features, read the Release Notes from
+	your Microsoft Outlook 8.2.1 installation folder.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbHWMAC kbOSMAC kbExchangeSearch kbOutlookMacSearch kbOutlook821Mac
+	Version           : MACINTOSH:8.2.1
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

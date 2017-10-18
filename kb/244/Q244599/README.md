@@ -1,0 +1,204 @@
+---
+layout: page
+title: "Q244599: Fixes Required in TCSEC C2 Security Evaluation Configuration"
+permalink: kb/244/Q244599/
+---
+
+## Q244599: Fixes Required in TCSEC C2 Security Evaluation Configuration
+
+	Article: Q244599
+	Product(s): Microsoft Windows NT
+	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6a
+	Operating System(s): 
+	Keyword(s): kbWinNT400PreSP7Fix kbgraphxlinkcriticalkbfixlist
+	Last Modified: 08-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4, 4.0 SP5, 4.0 SP6a 
+	- Microsoft Windows NT Server, Enterprise Edition versions 4.0, 4.0 SP4, 4.0 SP5, 4.0 SP6a 
+	- Microsoft Windows NT Workstation versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4, 4.0 SP5, 4.0 SP6a 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The "Administrator's and User's Security Guide for Windows NT 4.0" is the
+	official document that specifies the exact procedures to configure Windows NT
+	4.0 as a Trusted Computer System Evaluation Criteria (TCSEC) C2 compliant
+	system. This guide is available from the following Microsoft Web site:
+	
+	  Administrator's and User's Security Guide for Windows NT 4.0
+	  (http://www.microsoft.com/security/issues/C2Evaluation.asp)
+	
+	These procedures include the installation of Windows NT 4.0 Service Pack 6a and a
+	Post-SP6a hotfix called the "C2 Update."
+	
+	MORE INFORMATION
+	================
+	
+	The C2 Update corrects the following problems in Windows NT 4.0:
+	
+	- NetBT disallows unprivileged user mode programs from sharing TCP and UDP
+	  ports that are opened by NetBT. For additional information, click the article
+	  number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q241041 Enabling NetBT to Open TCP and UDP Ports Exclusively
+	
+	- Device drivers create their corresponding DeviceObject with
+	  FILE_DEVICE_SECURE_OPEN DeviceCharacteristics. For additional information,
+	  click the article number below to view the article in the Microsoft Knowledge
+	  Base:
+	
+	  Q243405 Device Drivers Create Their Corresponding DeviceObject with
+	  FILE_DEVICE_SECURE_OPEN DeviceCharacteristics
+	
+	- Jet500 creates events and semaphores objects with non-NULL ACLs. For
+	  additional information, click the article number below to view the article in
+	  the Microsoft Knowledge Base:
+	
+	  Q243404 ACLs Associated with Events and Semaphores Created by JET500.DLL
+	
+	The following files are available for download from the Microsoft Download
+	Center:
+	
+	English (US) (x86):
+	DownloadDownload Q244599i.exe now
+	
+	English (US) (Alpha):
+	DownloadDownload Q244599a.exe now
+	
+	Chinese (Simplified) (x86):
+	DownloadDownload Q244599i.exe now
+	
+	Chinese (Simplified) (Alpha):
+	DownloadDownload Q244599a.exe now
+	
+	Chinese (Traditional) (x86):
+	DownloadDownload Q244599i.exe now
+	
+	Chinese (Traditional) (Alpha):
+	DownloadDownload Q244599a.exe now
+	
+	Danish (Alpha):
+	DownloadDownload Q244599a.exe now
+	
+	Danish (x86):
+	DownloadDownload Q244599i.exe now
+	
+	Danish (Alpha):
+	DownloadDownload Q244599a.exe now
+	
+	Dutch (x86):
+	DownloadDownload Q244599i.exe now
+	
+	Dutch (Alpha):
+	DownloadDownload Q244599a.exe now
+	
+	Finnish (x86):
+	DownloadDownload Q244599i.exe now
+	
+	Finnish (Alpha):
+	DownloadDownload Q244599a.exe now
+	
+	French (x86):
+	DownloadDownload Q244599i.exe now
+	
+	French (Alpha):
+	DownloadDownload Q244599a.exe now
+	
+	German (x86):
+	DownloadDownload Q244599i.exe now
+	
+	German (Alpha):
+	DownloadDownload Q244599a.exe now
+	
+	Hungarian (x86):
+	DownloadDownload Q244599i.exe now
+	
+	Hungarian (Alpha):
+	DownloadDownload Q244599a.exe now
+	
+	Italian (x86):
+	DownloadDownload Q244599i.exe now
+	
+	Italian (Alpha):
+	DownloadDownload Q244599a.exe now
+	
+	Japanese (x86):
+	DownloadDownload Q244599i.exe now
+	
+	Japanese (Alpha):
+	DownloadDownload Q244599a.exe now
+	
+	Japanese (NEC):
+	DownloadDownload Q244599n.exe now
+	
+	Korean (x86):
+	DownloadDownload Q244599i.exe now
+	
+	Korean (Alpha):
+	DownloadDownload Q244599a.exe now
+	
+	Norwegian (x86):
+	DownloadDownload Q244599i.exe now
+	
+	Norwegian (Alpha):
+	DownloadDownload Q244599a.exe now
+	
+	Polish (x86):
+	DownloadDownload Q244599i.exe now
+	
+	Polish (Alpha):
+	DownloadDownload Q244599a.exe now
+	
+	Portuguese (Brazil) (x86):
+	DownloadDownload Q244599i.exe now
+	
+	Portuguese (Brazil) (Alpha):
+	DownloadDownload Q244599a.exe now
+	
+	Russian (x86):
+	DownloadDownload Q244599i.exe now
+	
+	Russian (Alpha):
+	DownloadDownload Q244599a.exe now
+	
+	Spanish (x86):
+	DownloadDownload Q244599i.exe now
+	
+	Spanish (Alpha):
+	DownloadDownload Q244599a.exe now
+	
+	Swedish (x86):
+	DownloadDownload Q244599i.exe now
+	
+	Swedish (Alpha):
+	DownloadDownload Q244599a.exe now
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. After it is posted, the file is housed on
+	secure servers that prevent any unauthorized changes to the file.
+	
+	NOTE: The C2 Update also includes the binary files required in the Spooler-fix
+	described in the following article in the Microsoft Knowledge Base:
+	
+	  Q243649 Unchecked Print Spooler Buffer May Expose System Vulnerability
+	
+	Additional query words: c2 security_patch
+	
+	======================================================================
+	Keywords          : kbWinNT400PreSP7Fix kbgraphxlinkcritical kbfixlist
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTW400sp5 kbWinNTW400sp4 kbWinNTW400sp3 kbWinNTW400sp2 kbWinNTW400sp1 kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400sp5 kbWinNTSEnt400sp4 kbWinNTSEnt400 kbWinNTS400sp6 kbWinNTS400sp5 kbWinNTS400sp4 kbWinNTS400sp3 kbWinNTS400sp2 kbWinNTS400sp1 kbWinNTS400search kbWinNTS400 kbWinNTSEnt400SP6a kbWinNTW400SP6a
+	Version           : :4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6a
+	Hardware          : ALPHA x86
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

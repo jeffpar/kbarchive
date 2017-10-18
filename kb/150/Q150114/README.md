@@ -1,0 +1,102 @@
+---
+layout: page
+title: "Q150114: XFOR: IMC Doesn't Appear to Use All Mail Exchangers"
+permalink: kb/150/Q150114/
+---
+
+## Q150114: XFOR: IMC Doesn't Appear to Use All Mail Exchangers
+
+	Article: Q150114
+	Product(s): Microsoft Exchange
+	Version(s): winnt:4.0
+	Operating System(s): 
+	Keyword(s): kbtool kbusage
+	Last Modified: 23-MAR-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	When you compare the results between Nslookup.exe and Restest.exe, it may appear
+	that the Microsoft Exchange Internet Mail Connector (IMC) is not resolving all
+	mail exchangers for a given domain.
+	
+	MORE INFORMATION
+	================
+	
+	For example, you may notice a discrepancy between the number of mail exchangers
+	listed by Restest.exe and Nslookup.exe on the following query.
+	
+	Below is a sample run of Restest.exe:
+	
+	C:\my documents>e:restest -debug aol.com
+	
+	  ***   Matches Microsoft Exchange Server build 4.0.0736   ***
+	
+	host[0] = '198.81.11.33'
+	host[1] = '198.81.11.14'
+	host[2] = '198.81.11.37'
+	host[3] = '198.81.11.15'
+	host[4] = '198.81.11.52'
+	
+	Notice that Restest.exe displays 6 mail exchangers for AOL.COM. Nslookup.exe
+	appears to show more mail exchangers.
+	
+	Below is a sample run of Nslookup.exe:
+	
+	> server hp81.prod.aol.net
+	Default Server:  hp81.prod.aol.net
+	Address:  192.203.190.18
+	
+	> set type=MX
+	> aol.com.
+	Server:  hp81.prod.aol.net
+	Address:  192.203.190.18
+	
+	aol.com preference = 15, mail exchanger = e.mx.aol.com
+	aol.com preference = 15, mail exchanger = f.mx.aol.com
+	aol.com preference = 15, mail exchanger = a.mx.aol.com
+	aol.com preference = 15, mail exchanger = b.mx.aol.com
+	aol.com preference = 15, mail exchanger = c.mx.aol.com
+	aol.com preference = 15, mail exchanger = d.mx.aol.com
+	aol.com nameserver = ops01.ops.aol.com
+	aol.com nameserver = dns-aol.ans.net
+	aol.com nameserver = hp81.prod.aol.net
+	e.mx.aol.com    internet address = 198.81.11.18
+	e.mx.aol.com    internet address = 198.81.11.20
+	e.mx.aol.com    internet address = 198.81.11.12
+	e.mx.aol.com    internet address = 198.81.11.15
+	f.mx.aol.com    internet address = 198.81.11.51
+	f.mx.aol.com    internet address = 198.81.11.52
+	f.mx.aol.com    internet address = 198.81.11.53
+	f.mx.aol.com    internet address = 198.81.11.54
+	f.mx.aol.com    internet address = 198.81.11.50
+	a.mx.aol.com    internet address = 198.81.11.28
+	a.mx.aol.com    internet address = 198.81.11.29
+	a.mx.aol.com    internet address = 198.81.11.30
+	a.mx.aol.com    internet address = 198.81.11.11
+	b.mx.aol.com    internet address = 198.81.11.32
+	b.mx.aol.com    internet address = 198.81.11.33
+	b.mx.aol.com    internet address = 198.81.11.13
+	b.mx.aol.com    internet address = 198.81.11.31
+	
+	Although Nslookup.exe shows many more IP addresses listed for aol.com, there are
+	still only 6 mail exchangers (a.mx.aol.com .. f.mx.aol.com). AOL has multiple,
+	redundant hosts listed for each mail exchanger.
+	
+	Microsoft Exchange, and Restest.exe, are working correctly.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbtool kbusage 
+	Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+	Version           : winnt:4.0
+	
+	=============================================================================
+	

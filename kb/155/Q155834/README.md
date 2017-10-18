@@ -1,0 +1,90 @@
+---
+layout: page
+title: "Q155834: INFO: ODBC Drivers Installed with Visual FoxPro 5.0"
+permalink: kb/155/Q155834/
+---
+
+## Q155834: INFO: ODBC Drivers Installed with Visual FoxPro 5.0
+
+	Article: Q155834
+	Product(s): Microsoft FoxPro
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbinterop kbAutomation kbvfp500 kbvfp600
+	Last Modified: 03-AUG-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article discusses the ODBC drivers that are included with Microsoft Visual
+	FoxPro for Windows and covers issues that might arise in the installation and
+	configuration of these drivers.
+	
+	MORE INFORMATION
+	================
+	
+	Microsoft Visual FoxPro for Windows includes the following ODBC drivers:
+	
+	- Microsoft Access
+	- Microsoft Excel
+	- Microsoft SQL Server
+	- Microsoft Visual FoxPro
+	- Microsoft FoxPro 2.6 and dBASE
+	- Oracle
+	- Paradox
+	- Text files
+	
+	These drivers are installed in your Windows System directory along with the
+	32-bit ODBC Administrator. Once installed they cannot be removed by an uninstall
+	of Visual FoxPro, allowing other applications that require them to function
+	properly.
+	
+	In addition to installing the drivers and the ODBC Administrator, default data
+	sources are created for the types of files listed below. You may use these to
+	access data files on your machine without having to create a new data source:
+	
+	- dBASE Files (*.dbf)
+	- Excel Files (*.xls)
+	- FoxPro Files (*.dbf)
+	- Microsoft Access 7.0 Databases (*.mdb)
+	- Paradox Files (*.db)
+	- Text Files (*.txt, *.csv)
+	- Visual FoxPro Databases (*.dbc)
+	- Visual FoxPro Tables (*.dbf)
+	
+	Default data sources are not created for the Microsoft SQL Server and Oracle
+	drivers. You must use the 32-bit ODBC Administrator to create them. (See the
+	note about the Oracle ODBC Driver below).
+	
+	Notes on the Microsoft Visual FoxPro driver
+	-------------------------------------------
+	
+	If you chose not to install the Visual FoxPro driver when you initially installed
+	Microsoft Visual FoxPro (either by selecting a Laptop Installation or by
+	unchecking it from the Custom Install) and you later re- run the setup program
+	to add the Microsoft Visual FoxPro driver, only the default data source for
+	Visual FoxPro tables are created. You may use the 32-bit ODBC Administrator to
+	create a default data source for Visual FoxPro databases.
+	
+	Notes on the Oracle ODBC driver
+	-------------------------------
+	
+	If you do not already have access to the Oracle database using Oracle's tools,
+	you cannot create a data source using the Oracle driver. Contact your Oracle
+	representative to get the necessary files to enable this access.
+	
+	Additional query words: ODBC Oracle
+	
+	======================================================================
+	Keywords          : kbinterop kbAutomation kbvfp500 kbvfp600 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

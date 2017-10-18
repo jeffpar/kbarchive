@@ -1,0 +1,112 @@
+---
+layout: page
+title: "Q241035: Mastering MS Visual Basic 6.0 Development Comments &amp; Corrections"
+permalink: kb/241/Q241035/
+---
+
+## Q241035: Mastering MS Visual Basic 6.0 Development Comments &amp; Corrections
+
+	Article: Q241035
+	Product(s): Microsoft Press
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbdocfix kbdocerr
+	Last Modified: 20-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- MSPRESS Mastering Microsoft Visual Basic 6.0 Development ISBN 0-7356-0900-4 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article contains comments, corrections, and information about known errors
+	relating to the Microsoft Press book Mastering Microsoft Visual Basic 6.0
+	Development, ISBN 0-7356-0900-4.
+	
+	The following topics are covered:
+	
+	- Chapter 4: Correction To Running Heads
+	
+	- Pages 157 & 159: Correction To Lab 4.2 Running Heads
+	
+	- Page 158: SQL Statement Correction
+	
+	- CD-ROM: Typo In Default.htm
+	
+	MORE INFORMATION
+	================
+	
+	Chapter 4: Correction To Running Heads
+	--------------------------------------
+	
+	Change the Chapter 4 running heads from:
+	"Chapter 4: Data-Binding an ActiveX Control"
+	
+	To:
+	"Chapter 4: Building ActiveX Controls"
+	
+	
+	Pages 157 & 159: Correction To Lab 4.2 Running Heads
+	----------------------------------------------------
+	
+	Change the Lab 4.2 running heads from:
+	"Lab 4.2: Building an ActiveX Control"
+	
+	To:
+	"Lab 4.2: Data-Binding an ActiveX Control"
+	
+	
+	Page 158: SQL Statement Correction
+	----------------------------------
+	
+	On page 158, Chapter 4, Lab 4.2, there is an error in the SQL statement. Note,
+	however, that the solution provided on the accompanying CD-ROM has the correct
+	SQL statement.
+	
+	Change:
+	SELECT Enrollment.StudentID, Classes.Title AS ClassName, Books.Title AS BookName,
+	Books.Price FROM Enrollment
+	INNER JOIN Students ON Enrollment.StudentID = Students.StudentID
+	INNER JOIN Books ON Classes.BookID = Books.BookID
+	INNER JOIN Classes ON Enrollment.ClassID = Classes.ClassID
+	WHERE (Enrollment.StudentID = ?)
+	
+	To:
+	SELECT Enrollment.StudentID, Classes.Title AS ClassName, Books.Title AS BookName,
+	Books.Price FROM Enrollment
+	INNER JOIN Students ON Enrollment.StudentID = Students.StudentID
+	INNER JOIN Classes ON Enrollment.ClassID = Classes.ClassID
+	INNER JOIN Books ON Classes.BookID = Books.BookID
+	WHERE (Enrollment.StudentID = ?)
+	
+	
+	CD-ROM: Typo In Default.htm
+	---------------------------
+	
+	First sentence under the Welcome subheading:
+	
+	Change:
+	"This CD-ROM contains contains lab files..."
+	
+	To:
+	"This CD-ROM contains lab files..."
+	
+	
+	Microsoft Press is committed to providing informative and accurate books. All
+	comments and corrections listed above are ready for inclusion in future
+	printings of this book. If you have a later printing of this book, it may
+	already contain most or all of the above corrections.
+	
+	Additional query words: 0-7356-0900-4 DEVBOOK VB60
+	
+	======================================================================
+	Keywords          : kbdocfix kbdocerr 
+	Technology        : kbMSPressSearch kbZNotKeyword2
+	Version           : :
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

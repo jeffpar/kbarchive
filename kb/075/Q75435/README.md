@@ -1,0 +1,132 @@
+---
+layout: page
+title: "Q75435: INFO: Windows, Code Pages, and Character Sets"
+permalink: kb/075/Q75435/
+---
+
+## Q75435: INFO: Windows, Code Pages, and Character Sets
+
+	Article: Q75435
+	Product(s): Microsoft Windows Software Development Kit
+	Version(s): WINDOWS:3.1
+	Operating System(s): 
+	Keyword(s): kb16bitonly kbSDKWin16
+	Last Modified: 26-JUN-1999
+	
+	3.00
+	WINDOWS
+	kbprg
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows Software Development Kit (SDK) 3.1 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The ASCII (American Standard Code for Information Interchange) character set
+	defines a mapping of the letters, numerals, and specified punctuation and
+	control characters to the numbers from zero to 127. The term "code page" is used
+	to refer to extensions of the ASCII character set that also map specified
+	symbols to the numbers from 128 through 255.
+	
+	This article discusses how Windows deals with code pages and warns against some
+	of the pitfalls that applications can encounter.
+	
+	MORE INFORMATION
+	================
+	
+	The ANSI (American National Standards Institute) character set maps the letters
+	and numerals in the same manner as ASCII. However, ANSI does not support control
+	characters and it maps many symbols, including accented letters, that are not
+	mapped in standard ASCII. All Windows fonts are defined in the ANSI character
+	set.
+	
+	An Original Equipment Manufacturer (OEM) code page is built into the computer
+	hardware. There are a number of OEM code pages, each defined for a particular
+	language. These code pages are referred to by a number; for example, code page
+	437 is installed in the original IBM PC computer.
+	
+	MS-DOS uses code pages to change the available character set, depending on user
+	preference. A code page change is implemented by programming a new character set
+	into the video display hardware. By changing to the code page for a particular
+	language, the accented characters appropriate to that language are made
+	available. Each code page is limited to 256 symbols.
+	
+	For each code page, MS-DOS maintains a mapping table to map lowercase characters
+	to and from uppercase. Because all string parameters to MS-DOS (filenames) are
+	implicitly coded in the current code page, when the table is changed, filenames
+	that were accessible under one case mapping may not be available under another.
+	However, the common code pages were designed to combat this problem.
+	
+	Windows runs as an extension to MS-DOS. There is a mapping layer that translates
+	between the ANSI character set and an OEM character set. When Windows is
+	installed, the Setup program determines the installed character set and installs
+	the corresponding ANSI-OEM translation tables and Windows OEM fonts.
+	
+	If the user changes the current MS-DOS code page, Windows does not change its
+	ANSI-OEM mapping tables automatically. It is necessary to run the Windows Setup
+	program to modify these tables and to load the corresponding fonts.
+	
+	Windows-based applications must use the Windows functions AnsiToOem() and
+	OemToAnsi() when transferring information to and from MS-DOS. In addition,
+	applications must use the correct character set when creating filenames.
+	
+	There is no one-to-one mapping between the ANSI and OEM character sets. Applying
+	the AnsiToOem() function followed by the OemToAnsi() function to a given string
+	will not always result in the original string. A file that has been named with
+	one of these strings cannot be accessed by any Windows-based application. The
+	filename must be changed by the user from outside of Windows.
+	
+	The following two scenarios may have differing results.
+	
+	SCENARIO 1
+	----------
+	
+	A lowercase ANSI string is passed to the AnsiToOem() function. The result is
+	passed to MS-DOS, which maps the string to uppercase.
+	
+	SCENARIO 2
+	----------
+	
+	An uppercase ANSI string is passed to the AnsiToOem() function. The string is
+	passed to MS-DOS.
+	
+	This is caused by the fact that the MS-DOS lowercase to uppercase conversion
+	mapping and the Windows ANSI case conversion do not match. To avoid this
+	problem, use the AnsiUpper() function to convert the ANSI string to uppercase
+	before passing it to the AnsiToOem() function. Also note, this is only a problem
+	with extended characters. These problems are often overlooked until your
+	customers call to complain.
+	
+	Keep in mind that both ANSI and OEM are 8-bit character sets. In applications,
+	always use the "unsigned char" type instead of "signed char" for character
+	variables. Problems that result from using "signed char" are very hard to
+	track.
+	
+	The SYSTEM.ini file contains entries that relate to code pages. In the [boot]
+	section, the OEMFONTS.fon line specifies the file that contains the OEM stock
+	font. In the [keyboard] section, the OEMANSI.bin line specifies the ANSI-OEM
+	translation table. If this line is blank, Windows uses the default table built
+	into the keyboard driver. In the [enh] section, the *WOA.fon lines specify the
+	fonts used in an MS-DOS window at various resolutions.
+	
+	Windows does not provide any mechanism for an application to work with data that
+	is not in the current MS-DOS code page, nor does Windows recognize changing the
+	OEM code page in an MS-DOS window. However, an application is free to provide
+	its own translation tables and provide a data format that includes the code
+	page.
+	
+	
+	Additional query words: 3.00
+	
+	======================================================================
+	Keywords          : kb16bitonly kbSDKWin16 
+	Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+	Version           : WINDOWS:3.1
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

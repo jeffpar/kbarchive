@@ -1,0 +1,113 @@
+---
+layout: page
+title: "Q158311: SMS: Audit32 May Fail on Workstations Running Windows NT"
+permalink: kb/158/Q158311/
+---
+
+## Q158311: SMS: Audit32 May Fail on Workstations Running Windows NT
+
+	Article: Q158311
+	Product(s): Microsoft Systems Management Server
+	Version(s): winnt:1.2
+	Operating System(s): 
+	Keyword(s): kbsms200 kbsms200bug kbsms120 kbsms120bug kbAudit kbInventory
+	Last Modified: 11-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server version 1.2 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+	
+	  Q256986 Description of the Microsoft Windows Registry
+	
+	SYMPTOMS
+	========
+	
+	The Systems Management Server Software Audit may fail on workstations running
+	Windows NT if they receive the audit package from a Systems Management Server
+	1.2 site. The following error will be recorded in the Audit32.log file:
+	
+	  An error has occurred while trying to read the Sms.ini file.
+	
+	CAUSE
+	=====
+	
+	This problem occurs under certain conditions when the Systems Management Server
+	Client Inventory service (Inv32cli.exe) does not write the [logonhistory]
+	section (specifically, the LastLoggedUser entry, or in the [Local] section the
+	NetCardID or SystemRole or SystemType required by Audit32) in the Sms.ini file.
+	
+	WORKAROUND
+	==========
+	
+	To work around this problem: From the client that is experiencing the problem,
+	connect to the SMS_SHR share of a Systems Management Server (SMS) logon server,
+	change to the appropriate platform binary subfolder (for example, X86.bin), and
+	then run the following command:
+	
+	  invwin32.exe /E /F
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Systems Management Server
+	version 1.2. This problem has been corrected in the latest U.S. service pack for
+	Systems Management Server version 1.2. For information on obtaining the service
+	pack, query on the following word in the Microsoft Knowledge Base (without the
+	spaces):
+	
+	  S E R V P A C K
+	
+	MORE INFORMATION
+	================
+	
+	Note that the LastLoggedUser entry may be blank if there is a policy in force to
+	Hide Last Logged Username in the Logon dialog box. For additional information,
+	please see the following article in the Microsoft Knowledge Base:
+	
+	  Q114463 Hiding the Last Logged On Username in the Logon Dialog
+	
+	To resolve this issue change the registry value.
+	
+	WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+	that may require you to reinstall your operating system. Microsoft cannot
+	guarantee that you can solve problems that result from using Registry Editor
+	incorrectly. Use Registry Editor at your own risk.
+	
+	Open the Registry Editor and go to the following registry key:
+	
+	  HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon
+	
+	The value of interest is:
+	
+	  DontDisplayLastUserName    REG_SZ
+	
+	Range: 0 or 1; 1 enables this feature.
+	
+	The Last Username Display can also be hidden without editing the registry
+	directly if the you have the Windows NT Resource Kit:
+	
+	1. On the Start menu, point to Programs, and click Resource Kit 4.0.
+	
+	2. Click Configuration\C2 Configuration.
+	
+	3. Double-click the line that reads Last Username Display.
+	
+	4. Click to place a check in Hide The Last Username To Login checkbox.
+	
+	5. Click Secure, then click OK.
+	
+	Additional query words: prodsms
+	
+	======================================================================
+	Keywords          : kbsms200 kbsms200bug kbsms120 kbsms120bug kbAudit kbInventory 
+	Technology        : kbSMSSearch kbSMS120
+	Version           : winnt:1.2
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

@@ -1,0 +1,444 @@
+---
+layout: page
+title: "Q290625: HOWTO: Configure SSL in a Windows 2000 IIS 5.0 Test Environment"
+permalink: kb/290/Q290625/
+---
+
+## Q290625: HOWTO: Configure SSL in a Windows 2000 IIS 5.0 Test Environment
+
+	Article: Q290625
+	Product(s): Internet Information Server
+	Version(s): 2.0,5.0
+	Operating System(s): 
+	Keyword(s): kbDSupport
+	Last Modified: 24-JUL-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Services version 5.0 
+	- Microsoft Certificate Services, version 2.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article demonstrates how to quickly set up Secure Sockets Layer (SSL) in a
+	Windows 2000 Internet Information Services (IIS) 5.0 development lab
+	environment. Microsoft Certificate Server 2.0 can create many different
+	certificates; this article only covers creation of a standard Web certificate.
+	
+	This article is divided into four sections:
+	
+	- Creating a certificate request
+	
+	- Submitting a certificate request
+	
+	- Issuing and downloading a certificate
+	
+	- Installing the certificate and setting up an SSL Web site
+	
+	MORE INFORMATION
+	================
+	
+	Creating a Certificate Request
+	------------------------------
+	
+	To create a Web server certificate, follow these steps:
+	
+	1. Open the Internet Service Manager Microsoft Management Console (MMC). To do
+	  this, click Start, point to Programs, point to Administrative Tools, and
+	  click Internet Service Manager.
+	
+	2. Double-click the server name so that you see all of the Web sites.
+	
+	3. Right-click the Web site where you want to install the certificate, and then
+	  click Properties.
+	
+	4. Click the Directory Security tab.
+	
+	  You see three security methods. The one you will use to create a certificate
+	  request is Secure Communications.
+	
+	5. Click Server Certificate. A Certificate Wizard starts. Click Next to
+	  continue.
+	
+	6. Select Create a new certificate, and then click Next.
+	
+	7. Select Prepare the request now, but send it later and click Next.
+	
+	8. Type a name for your certificate, and choose a bit length. Unless it is
+	  needed for your lab, do not select the SGC Certificate check box. (For more
+	  information on SGC certificates, see the note at the end of this section.)
+	  Click Next to continue.
+	
+	9. Type your organization name and the organizational unit (for example, company
+	  name and development department). Click Next.
+	
+	10. Type either the fully qualified domain name (FQDN) or the server name as the
+	  Common Name. If you are creating a certificate that will be used over the
+	  Internet, it is preferable to use a FQDN. Click Next.
+	
+	11. Enter your location information, and then click Next.
+	
+	12. Type the path and file name to save the certificate information to.
+	
+	  NOTE: If you enter anything other than the default location and file name, be
+	  sure to note the name and location you choose, because you will have to
+	  access this file in later steps.
+	
+	  Click Next to continue.
+	
+	13. Verify the information that you have entered, and then click Next to
+	  complete the process and create the certificate request.
+	
+	NOTES: Server Gated Cryptography (SGC) certificates are used most often by
+	financial institutions that require high-encryption connections even when
+	connecting with international users or browsers that are limited to 40-bit
+	encryption. When connecting to an international browser (40-bit), an SGC
+	certificate creates a 128-bit tunnel to allow 128-bit encryption strength. When
+	the secured connection or session ends, the intermediate certificate tunnel is
+	closed.
+	
+	Another attribute of the SGC certificate is that it is strictly domain-specific.
+	Ordinarily, if the domain name of a certificate does not match the domain of the
+	Web site, you receive a warning stating this fact and you can choose to continue
+	or not. A SGC certificate does not give you a warning or offer choices. The
+	connection fails without explanation.
+	
+	Submitting a Certificate Request
+	--------------------------------
+	
+	To submit a certificate request, follow these steps:
+	
+	1. Open a browser and go to http://YourWebServerName/certsrv/.
+	
+	2. Select Request a Certificate, and then click Next.
+	
+	3. Select Advanced Request, and then click Next.
+	
+	4. Select the center option, Submit a Certificate Request using a Base64, and
+	  click Next.
+	
+	5. Open the request document that you created in the first procedure section,
+	  "Creating a Certificate Request," in Microsoft Notepad.
+	
+	6. Select and copy the contents of the document.
+	
+	  The contents should resemble the content that is displayed in the document
+	  below.
+	
+	  -----BEGIN NEW CERTIFICATE REQUEST-----
+	  MIICcjCCAhwCAQAwYjETMBEGA1UEAxMKcm9ic3NlcnZlcjELMAkGA1UECxMCTVMx
+	  CzAJBgNVBAoTAk1TMREwDwYDVQQHEwhCZWxsZXZ1ZTERMA8GA1UECBMIV2FzaGl0
+	  b24xCzAJBgNVBAYTAlVTMFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBALYK4sYDNQ7h
+	  LmSfL0qpIvUfY7Ddw7fNCvDp3rM7z4QqoLhA2c8TkyamqWTBsV0WRHIidf/J6mU4
+	  wN4wrUzJTLUCAwEAAaCCAVMwGgYKKwYBBAGCNw0CAzEMFgo1LjAuMjE5NS4yMDUG
+	  CisGAQQBgjcCAQ4xJzAlMA4GA1UdDwEB/wQEAwIE8DATBgNVHSUEDDAKBggrBgEF
+	  BQcDATCB/QYKKwYBBAGCNw0CAjGB7jCB6wIBAR5aAE0AaQBjAHIAbwBzAG8AZgB0
+	  ACAAUgBTAEEAIABTAEMAaABhAG4AbgBlAGwAIABDAHIAeQBwAHQAbwBnAHIAYQBw
+	  AGgAaQBjACAAUAByAG8AdgBpAGQAZQByA4GJAGKa0jzBn8fkxScrWsdnU2eUJOMU
+	  K5Ms87Q+fjP1/pWN3PJnH7x8MBc5isFCjww6YnIjD8c3OfYfjkmWc048ZuGoH7Zo
+	  D6YNfv/SfAvQmr90eGmKOFFiTD+hl1hM08gu2oxFU7mCvfTQ/2IbXP7KYFGEqaJ6
+	  wn0Z5yLOByPqblQZAAAAAAAAAAAwDQYJKoZIhvcNAQEFBQADQQCgRCWkaXlY2nVa
+	  tbn6p5miPwWfrbViYo0B62wkuH0f7J0nSGcxMnn/6Q/iLEIsgHqFhox5PWCzIV0J
+	  tXKPWrBL
+	  -----END NEW CERTIFICATE REQUEST-------
+	
+	  NOTE: If you save the document with the default name and location it is
+	  located at C:\Certreq.txt.
+	
+	  NOTE: Be sure to select and copy all the content just as shown above.
+	
+	7. Paste the contents of the document into the Web form's Base64 Encoded
+	  Certificate Request text box.
+	
+	8. Under Certificate Template, select Web Server, and then click Submit.
+	
+	9. If Certificate Server is set to Always Issue the Certificate, you can access
+	  the certificate immediately. To do so, follow these steps:
+	
+	  a. Click the top link, Download CA Certificate (do not click Download CA
+	     Certificate path).
+	
+	  b. When prompted, select Save this file to disk and save the certificate to
+	     your desktop or another location that you will remember.
+	
+	  c. Now, go straight to the fourth procedure in this section, "Installing the
+	     Certificate and Setting Up an SSL Web Site".
+	
+	  If Certificate Server is set to Set the certificate request status to pending,
+	  you will receive a "Certificate Pending" message. To continue, move on to the
+	  third section, "Issuing and Downloading a Certificate".
+	
+	NOTE: For more information on configuring certificate issuing policies, see
+	Appendix A.
+	
+	Issuing and Downloading a Certificate
+	-------------------------------------
+	
+	To issue (that is, authorize) a certificate in Certificate Server, follow these
+	steps:
+	
+	1. Open the Certificate Authority (CA) Microsoft Management Console (MMC)
+	  snap-in. To do this, click Start, point to Programs, point to Administrative
+	  Tools, and then click Certificate Authority.
+	
+	2. Expand Certificate Authority.
+	
+	3. Click the Pending Requests folder. Your pending certificate requests appear
+	  in the right pane.
+	
+	4. Right-click the pending certificate request (submitted in the third procedure
+	  described in this article), select All Tasks, and then click Issue.
+	
+	  NOTE: After you select Issue, the certificate is no longer displayed in this
+	  window and folder. It now resides in the Issued Certificate folder.
+	
+	NOTE: For more information on configuring certificate issuing policies, see
+	Appendix A.
+	
+	5. After you have issued (and authorized) the certificate, you can return to the
+	  Certificate Servers Web interface to select and download the certificate. To
+	  do this, follow these steps:
+	
+	  a. Go to http://YourWebServerName/certsrv/.
+	
+	NOTE: You must use lower-case letters when you type "certsrv" (without the
+	quotation marks). If you do not, you cannot see pending requests.
+	
+	  b. On the default page, select Check on a pending certificate, and then click
+	     Next.
+	
+	  c. Select your pending certificate, then click Next to go to the download
+	     page.
+	
+	  d. On the download page, click the top hyperlink, Download CA Certificate (do
+	     not click Download CA Certificate path).
+	
+	  e. When prompted, select Save this file to disk and save the certificate to
+	     your desktop or another location that you will remember.
+	
+	You have issued and downloaded your certificate.
+	
+	The next step is installing the certificate and setting up an SSL-encrypted Web
+	site.
+	
+	Installing the Certificate and Setting Up an SSL Web Site
+	---------------------------------------------------------
+	
+	There are several ways to install and set up an SSL certificate: for example, you
+	can double-click the certificate and use the Certificate Installation Wizard to
+	preinstall the certificate, then bind it to the site. This article desmonstrates
+	how to install the certificate by using the Internet Service Manager MMC through
+	the Web Server Certificate Wizard.
+	
+	To install a certificate in Certificate Server, follow these steps:
+	
+	1. Open the Internet Services Manager and expand the server name so that you can
+	  view the Web sites.
+	
+	2. Right-click the Web site that you created the certificate request for, and
+	  click Properties.
+	
+	3. Click the Directory Security tab. Under Secure Communications, click Server
+	  Certificate.
+	
+	  This opens the Certificate Installation Wizard. Click Next to continue.
+	
+	4. Select Process the pending request and install the certificate and click
+	  Next.
+	
+	5. Type the location of the certificate that you downloaded earlier in section
+	  three, "Issuing and Downloading a Certificate", then click Next.
+	
+	  The Wizard displays the Certificate Summary. Verify that the information is
+	  correct, then click Next to continue.
+	
+	6. Click Finish to complete the process.
+	
+	To configure and test the certificate, following these steps:
+	
+	1. On the Directory Security tab, under Secure Communications, note that there
+	  are now three available options. To set the Web site to require secure
+	  connections, click Edit. The Secure Communications dialog box appears.
+	
+	2. Select Require Secure Channel (SSL), and then click OK.
+	
+	3. Click Apply and then OK to close the property sheet.
+	
+	4. Browse to the site and verify that it works:
+	
+	  a. Access the site through http by typing "http://localhost/Postinfo.html"
+	     (without the quotation marks) in the browser. You receive an error message
+	     that resembles the following:
+	
+	  HTTP 403.4 - Forbidden: SSL required.
+	
+	  b. Try to browse to the same Web page using a secured connection (https) by
+	     typing "https://localhost/postinfo.html" (without the quotation marks) in
+	     the browser.
+	
+	  c. You may receive a security alert that states that the certificate is not
+	     from a trusted root CA. Click Yes to continue to the Web page.
+	
+	     The page should appear.
+	
+	     NOTE: To learn how to add your root CA to the Trusted Root CA list in your
+	     browser, see Appendix B.
+	
+	If you can view the page, you have successfully installed your certificate.
+	
+	NOTE: The Postinfo.html page is a standard HTML page that is found in the root of
+	the default Web site.
+	
+	REFERENCES
+	==========
+	
+	Appendix A: How to Change Certificate Issuing Policies:
+	
+	You can select whether you want to issue a certificate upon request (no
+	authorization) or whether you want all requests to be submitted for
+	pre-authorization through the Certificate Authority MMC snap-in. To do this,
+	follow these steps:
+	
+	1. Open the Certificate Authority tool. To do this, click Start, point to
+	  Programs, point to Administrative Tools, and then click Certificate
+	  Authority.
+	
+	2. Right-click your certificate authority name and click Properties.
+	
+	3. In the Properties sheet, click the Policy Module tab and then click
+	  Configure.
+	
+	4. In the Default Action tab, select either of the following:
+	
+	   - Set the certificate request status to pending: The administrator must
+	     explicitly issue the certificate.
+	
+	   - Always issue the certificate: This issues the certificate immediately,
+	     with no authorization required.
+	
+	NOTE: If a certificate is recognized on the network, you should select the second
+	option.
+	
+	Appendix B: Installing a Root CA Certificate into the Trusted Root CA List in Internet Explorer 5:
+	
+	There are several ways to get the root CA certificate to the Web site users. One
+	way is to e-mail it and have the users install it from the e-mail. Another way
+	is to include a download page on your Web site with a link to the certificate. A
+	corporate-wide solution is to use Internet Explorer Administration Kit (IEAK) to
+	push a customer Internet Explorer browser with the root CA certificate already
+	installed into the Trusted Root CA list. However you choose to make the
+	certificate available, one thing stays the same: the way you install the
+	certificate into the Trusted Root CA list in Internet Explorer, as this appendix
+	demonstrates.
+	
+	NOTE: The certificate must be installed in order for Internet Explorer to trust
+	that your site certificate is not the certificate that you just created but
+	rather the root CA certificate, which was created when you installed Certificate
+	Server.
+	
+	For the purposes of this document, download the certificate by using the
+	Certificate Servers Web interface, which is located at
+	http://<YourServerName>/certsrv/. After you have arrived at the Welcome
+	page, select Retrieve the CA certificate or certificate revocation list, and
+	then click Next.
+	
+	You now have two choices:
+	
+	- Install this CA certification path. If you are installing the root CA
+	  certificate into the browser you are currently connected with, click the
+	  Install this CA certification path link, and it automatically installs the
+	  root CA certificate into the Trusted Root CA list in your Internet Explorer
+	  browser.
+	
+	  After the installation is complete, you receive a confirmation page.
+	
+	-or-
+	
+	- Download CA certificate. If you need to install the root CA certificate in
+	  any other Internet Explorer browser's root CA list, you can download it and
+	  install it as follows:
+	
+	  1. Click Download CA certificate.
+	
+	  2. Select Save the file to disk.
+	
+	  3. Go to the location where you saved the root CA certificate, and
+	     double-click the certificate to open the Properties sheet for that
+	     certificate.
+	
+	  4. Click Install Certificate to start the Certificate Import Wizard. Click
+	     Next to continue.
+	
+	  5. Select Place all certificates in the following store.
+	
+	  6. Click Browse and select Trusted Root Certification Authorities. Click
+	     Next.
+	
+	  7. Verify the settings and then click Finish.
+	
+	     You receive the following message:
+	
+	  The import was successful.
+	
+	  8. Click OK to dismiss this message, and then click OK to close the
+	     Properties sheet.
+	
+	To check if you get the trusted root CA warning again, close and reopen your
+	browser, and then go to the following Web site:
+	
+	  https://<MySecureWebsite>/Postinfo.html
+	
+	You have successfully added your root CA to the Trusted Root CA list in your
+	Internet Explorer browser.
+	
+	NOTE: The Postinfo.html page is a standard HTML page that is found in the root of
+	the default Web site.
+	
+	Appendix C: Additional Information on Using Certificates with IIS 5.0:
+	
+	  Q232136 HOW TO: Back Up a Server Certificate in Internet Information Services
+	  5.0
+	
+	Summary: When you use Internet Information Services (IIS) 5.0, you may want to
+	back up your server certificates. Windows 2000 makes this process easy using the
+	new Certificates snap-in.
+	
+	  Q232137 How to Import a Server Certificate for Use in Internet Information
+	  Services 5.0
+	
+	Summary: When you use Internet Information Services (IIS) version 5.0, you may
+	want to restore a server certificate, for example, if you are migrating one Web
+	site to another server in a Web farm. This task is very easy to do using the Web
+	Site Certificate Wizard and the Certificate Manager Import Wizard provided to
+	you by Windows 2000 and IIS 5.0.
+	
+	  Q248107 Creating Server Certificates Using Certificate Services Web
+	
+	Summary: When you enable secure communications (SSL and Transport Layer Security
+	(TLS)) on an Internet Information Services 5.0 computer, you must first obtain a
+	server certificate. With the integration of certificates in Windows 2000 and the
+	new additions to IIS 5.0, there are several ways to obtain a server
+	certificate.
+	
+	  Q227888 Importing a Key Backup File to Use in Internet Information Services
+	  5.0
+	
+	Summary: After you install Internet Information Services 5.0, you may want to
+	import a backup key file from an older version of Internet Information Server.
+	This allows you to use the SSL capabilities on your new server (and replace the
+	old one).
+	
+	
+	Additional query words: iis5 iis 5 setup developer lab
+	
+	======================================================================
+	Keywords          : kbDSupport 
+	Technology        : kbiisSearch kbiis500 kbCertServSearch kbZNotKeyword3 kbCertServ200
+	Version           : :2.0,5.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

@@ -1,0 +1,94 @@
+---
+layout: page
+title: "Q244831: XCLN: How to Make Exchange Designer Forms Run on Term Serv"
+permalink: kb/244/Q244831/
+---
+
+## Q244831: XCLN: How to Make Exchange Designer Forms Run on Term Serv
+
+	Article: Q244831
+	Product(s): Microsoft Exchange
+	Version(s): WINDOWS:5.0; winnt:4.0
+	Operating System(s): 
+	Keyword(s): kbsysreq
+	Last Modified: 18-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- the operating system: Microsoft Windows NT 4.0 
+	- Microsoft Exchange Windows NT client, version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	When you try to open a form created with the Microsoft Exchange Client Forms
+	Designer or the Outlook Forms Designer on a computer running Micorosft Windows
+	NT 4.0, Terminal Server Edition, the form does not start. The message
+	"installing form" appears, but then Outlook stops responding.
+	
+	MORE INFORMATION
+	================
+	
+	You must have supporting .dll files for the forms to work on Terminal Server.
+	
+	There are two methods that you can use to install the supporting .dll files
+	without having to keep the client Forms Designer installed on Terminal Server.
+	
+	The first method is to run the client Forms Designer Setup program on the server,
+	re-run Setup, and click Remove All. This removes the client Forms Designer,
+	however, the supporting .dll files are not removed because they are considered
+	shared components.
+	
+	NOTE: You can install the client Forms Designer from the Microsoft Exchange
+	Windows NT client, version 5.0, compact disk. The program is in the following
+	folder:
+	
+	  Clients\Retail\Eng\Efdsetup
+	
+	The second method is to manually copy the needed files from a computer that has
+	the Exchange Client Forms Designer installed on it. The necessary files are:
+	
+	  Dao2516.dll
+	  Msajt200.dll
+	  Vaen21.olb
+	  Msjeterr.dll
+	  Vbajet.dll
+	  Msjetint.dll
+	  Vbdb16.dll
+	
+	Copy these seven files into the %SystemRoot%\System32 folder on the Terminal
+	Server computer.
+	
+	You then need to run the Regsvr.exe executable file, to register the 16-bit
+	Microsoft Jet DAO Library. Use the following parameters:
+	
+	  Regsvr.exe Da02516.dll
+	
+	NOTE: In some cases, the registration of the 16-bit Microsoft Jet DAO Library has
+	to be performed each time a user logs on to the Terminal Server session. This
+	can be done through a system logon script.
+	
+	By default, users have write access to all portions of the Windows registry on
+	the Terminal Server computer. However, if you have any custom Outlook forms
+	installed on the computer, and you have configured the Windows registry on the
+	Terminal Server computer to restrict user access, then users must have write
+	access to the following registry key:
+	
+	  HKEY_CLASSES_ROOT\CLSID
+	
+	NOTE: In addition to setting the permissions for all users to have write access,
+	you may also have to set the permissions to "Interactive" if the default
+	permissions have been changed.
+	
+	Additional query words: EFD
+	
+	======================================================================
+	Keywords          : kbsysreq 
+	Technology        : kbWinNTsearch kbWinNTSsearch kbNTTermServSearch kbExchangeSearch kbExchange400 kbExchangeClientSearch kbZNotKeyword2 kbZNotKeyword3 kbGraph500
+	Version           : WINDOWS:5.0; winnt:4.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

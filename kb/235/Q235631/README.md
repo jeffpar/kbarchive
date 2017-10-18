@@ -1,0 +1,80 @@
+---
+layout: page
+title: "Q235631: Crtpkgw.exe Hangs While Trying to Create Packages in DB2 When Co"
+permalink: kb/235/Q235631/
+---
+
+## Q235631: Crtpkgw.exe Hangs While Trying to Create Packages in DB2 When Co
+
+	Article: Q235631
+	Product(s): Microsoft SNA Server
+	Version(s): WINDOWS:4.0 SP2
+	Operating System(s): 
+	Keyword(s): kbsna400sp3fix
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft OLE DB Provider for DB2, version 4.0 SP2 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If the DB2 user doesn't have appropriate authority to create packages in a DB2
+	collection or if an invalid collection is specified for the Package Collection
+	property and the Crtpkgw.exe utility is used to connect to DB2 (Mainframe) over
+	TCP/IP and create the packages, the utility stops responding (hangs) or causes
+	an access violation.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, obtain the latest service pack for SNA Server version
+	4.0. For additional information, click the following article number to view the
+	article in the Microsoft Knowledge Base:
+	
+	  Q215838 How to Obtain the Latest SNA Server Version 4.0 Service Pack
+	
+	
+	WORKAROUND
+	==========
+	
+	Make sure the user has the proper authority to create packages or specify a
+	valid collection name for the Package Collection property. For additional
+	information on creating packages, please refer to the following article in the
+	Microsoft Knowledge Base:
+	
+	  Q216810 Creating Packages for use with ODBC Driver for DB2 and OLE DB
+	  Provider for DB2
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed that this is a problem in Microsoft SNA Server version
+	4.0 Service Pack 2 . This problem was first corrected in SNA Server version 4.0
+	Service Pack 3.
+	
+	MORE INFORMATION
+	================
+	
+	With service pack 3, if the user doesn't have the authority to create package,
+	the following error message is returned when Crtpkgw.exe is used to create the
+	packages:
+	
+	  SQL Error: Code=-567, State=42501, Error Text= AUTHORIZATION ERROR USING
+	  <auth-id> AUTHORITY PACKAGE = <package-name> PRIVILEGE =
+	  <privilege>
+	
+	Additional query words: MVS OS/390 UDB DB2OLEDB MSDB2OLE
+	
+	======================================================================
+	Keywords          : kbsna400sp3fix 
+	Technology        : kbAudDeveloper kbOLEDBSearch kbOLEDBProvDB2400SP2 kbOLEDBProvSearch
+	Version           : WINDOWS:4.0 SP2
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

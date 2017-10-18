@@ -1,0 +1,73 @@
+---
+layout: page
+title: "Q92433: Handling Callbacks with C++ Member Functions"
+permalink: kb/092/Q92433/
+---
+
+## Q92433: Handling Callbacks with C++ Member Functions
+
+	Article: Q92433
+	Product(s): Microsoft Windows Software Development Kit
+	Version(s): WINDOWS:3.1
+	Operating System(s): 
+	Keyword(s): kbfile kbsample kb16bitonly kbOSWin310
+	Last Modified: 04-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows Software Development Kit (SDK) 3.1 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The CALLB application demonstrates how to handle callbacks with C++ member
+	functions. It is a companion application for the technical article on the MSDN,
+	"Calling All Members: Member Functions as Callbacks."
+	
+	MORE INFORMATION
+	================
+	
+	The following files are available for download from the Microsoft Download
+	Center:
+	
+	Callb.exe
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. Once posted, the file is housed on secure
+	servers that prevent any unauthorized changes to the file.
+	
+	
+	Microsoft Windows version 3.1 has over 30 callback functions that applications
+	can use to enumerate objects, hook into the hardware, and perform a variety of
+	other activities. The article explains why normal member functions cannot be
+	used as callback functions and gives several techniques for handling callbacks.
+	The article and source code are targeted toward Microsoft C/C++ version 7.0, but
+	the ideas presented apply to all C++ compilers, including those by Borland and
+	Zortech.
+	
+	CALLB contains eight makefiles that create six executables: MAKE1 creates CPROG1;
+	MAKE2 generates a compile-time error and does not create an executable; MAKE3,
+	MAKE4, MAKE5, and MAKE6 create CPROG3, CPROG4, CPROG5, and CPROG6, respectively;
+	and TMAKE creates CTIMER. Please refer to "Calling All Members: Member Functions
+	as Callbacks" for more information.
+	
+	NOTE: Running CPROG1 generates a general protection (GP) fault by design.
+	
+	CALLB was built and tested under Microsoft Windows version 3.1.
+	
+	Additional query words: EnumObjects EnumObjectsProc softlib CALLB.EXE kbtoolkit kbfile
+	
+	======================================================================
+	Keywords          : kbfile kbsample kb16bitonly kbOSWin310 
+	Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+	Version           : WINDOWS:3.1
+	
+	=============================================================================
+	

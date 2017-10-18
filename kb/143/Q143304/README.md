@@ -1,0 +1,553 @@
+---
+layout: page
+title: "Q143304: Content of the README.HLP That Ships with Visual FoxPro 3.0b"
+permalink: kb/143/Q143304/
+---
+
+## Q143304: Content of the README.HLP That Ships with Visual FoxPro 3.0b
+
+	Article: Q143304
+	Product(s): Microsoft FoxPro
+	Version(s): 3.0b
+	Operating System(s): 
+	Keyword(s): kbvfp300
+	Last Modified: 06-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 3.0b 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article contains the content of the Visual FoxPro Readme.hlp file located
+	in the main Visual FoxPro directory.
+	
+	These release notes contain supplemental information that is not in the Visual
+	FoxPro Help file or in the printed documentation. For additional information,
+	check the Microsoft Visual FoxPro Web site at:
+	
+	  http://www.microsoft.com/vFoxPro
+	
+	The content includes these main topics:
+	
+	  Installing Visual FoxPro
+	  New 3.0b Features
+	  Upgrading and Configuring Visual FoxPro
+	  Using Visual FoxPro
+	  Using ODBC and OLE in Visual FoxPro
+	  Professional Features
+	
+	MORE INFORMATION
+	================
+	
+	INSTALLING VISUAL FOXPRO
+	------------------------
+	
+	Visual FoxPro and Window NT Installing Visual FoxPro from 3.5-inch Disks Removing
+	Visual FoxPro from a Hard Disk Running Network Versions of Visual FoxPro Changes
+	to Documentation Sample Visual FoxPro Files Developer Roadmap
+	
+	Visual FoxPro and Windows NT:
+	
+	If you are running Windows NT, Visual FoxPro 3.0b requires version 3.51. For
+	Windows NT 3.51 upgrade information, contact Microsoft.
+	
+	Installing Visual FoxPro from 3.5-inch Disks:
+	
+	You cannot install Visual FoxPro by copying the floppy disk files to your hard
+	disk. With the exception of the Setup disk (Disk 1), Visual FoxPro disks use a
+	format called DMF (Distribution Media Format). DMF increases the capacity of a
+	3.5-inch disk, reducing the number of disks needed to install your application,
+	thus speeding the installation process. Because DMF is a new format, many
+	existing utilities such as Norton Disk Doctor, Microsoft ScanDisk, MS-DOS
+	DiskCopy, and Microsoft Windows Copy Disk don't recognize DMF.
+	
+	CAUTION: Do not use disk utilities to examine a DMF-formatted disk. These
+	utilities can corrupt the DMF disk. You cannot copy DMF-formatted disks using
+	MS-DOS DiskCopy or Microsoft Windows Copy Disk.
+	
+	To copy the Visual FoxPro disks onto a network server or other permanent storage
+	drive, use the copy switch (/C) with the EXTRACT.EXE utility on Disk 1.
+	
+	- To copy the Visual FoxPro disks:
+	
+	1. Create a directory on the target drive.
+	
+	2. Copy all the files from Disk 1 to the target directory. Disk 1 does not use
+	  DMF, so you can use the standard MS-DOS COPY command, as in this example:
+	
+	       COPY A:\*.* C:\DISKS
+	
+	3. Copy the remaining disks to the directory by using the standard MS-DOS FOR
+	  command and the Extract.exe utility with the /C switch as shown in this
+	  example, issued at the A: prompt:
+	
+	       FOR %I IN (*.*) DO C:\DISKS\EXTRACT /C A:\%I C:\DISKS\%I
+	
+	  DMF formatting stores many files in a single cabinet (.cab) file. If you need
+	  only a single file that is contained in one of the cabinet files, you can
+	  search for the file with Extract.exe using the /D switch. Once you find the
+	  file, you can use Extract.exe again to copy the file to the desired location.
+	  You can also type EXTRACT /? to get help on the EXTRACT command options.
+	
+	- To list all files in a cabinet file:
+	
+	Use EXTRACT.EXE with the /D switch as in this example:
+	
+	       EXTRACT /D A:\vfp1.cab
+	
+	- To list a set of files in a cabinet file:
+	
+	Use EXTRACT.EXE with the /D switch and wildcards. This example displays all .EXE
+	files:
+	
+	       EXTRACT /D A:\vfp1.cab *.EXE
+	
+	- To extract a file to the current directory:
+	
+	Use EXTRACT.EXE without any switches as in this example:
+	
+	       EXTRACT A:\vfp1.cab ANY.EXE
+	
+	- To extract a file to a specific directory:
+	
+	Use EXTRACT.EXE with the /L switch as follows:
+	
+	       EXTRACT A:\vfp1.cab /L C:\VFP ANY.EXE
+	
+	Removing Visual FoxPro from a Hard Disk:
+	
+	To remove Visual FoxPro from a hard disk in Windows for Workgroups or Windows NT,
+	double-click the Setup icon in the Visual FoxPro program group, and then choose
+	Remove All from the Visual FoxPro Setup dialog box. This process does not remove
+	user files.
+	
+	CAUTION: Though the removal procedure offers several opportunities to keep files
+	or shared components, it offers no final warning before it starts to delete all
+	Visual FoxPro files. Press ESC to stop the removal process.
+	
+	- To remove Visual FoxPro from a hard disk in Windows 95:
+	
+	1. Open the Control Panel and double-click Add/Remove Programs. The Add/Remove
+	  Programs Properties dialog box appears.
+	
+	2. Click the Install/Uninstall tab.
+	
+	3. Select Visual FoxPro from the list.
+	
+	4. Click Add/Remove.
+	
+	The Visual FoxPro Setup dialog box is displayed. Choose Remove All to remove
+	Visual FoxPro from your hard disk. This process does not remove user files.
+	
+	Running Network Versions of Visual FoxPro:
+	
+	Do not run Visual FoxPro from the directory created when you choose the Visual
+	FoxPro Network Administrative installation option (SETUP /A). Because the
+	Network Administrative installation option does not register Visual FoxPro on
+	the computer containing the central Visual FoxPro directory; Visual FoxPro
+	should not be run from this directory. The Network Administrative installation
+	option creates a central Visual FoxPro directory on a server. From this central
+	directory you can install Visual FoxPro on network workstations.
+	
+	Changes to Documentation:
+	
+	Language Reference, RIGHTC( ) Function Remove the first paragraph in the Remarks
+	section.
+	
+	Developer's Guide, Chapter 2: Overview of the Language Page 41 Add the following
+	sentence to the end of the third bulleted item:
+	
+	Field names in database tables are limited to 128 characters.
+	
+	Sample Visual FoxPro Files:
+	
+	To find more information about Visual FoxPro sample files that demonstrate the
+	new and extended capabilities of Visual FoxPro, choose the Samples button in
+	Help. If you want to rebuild the main sample program, Tasmanian Traders, first
+	set the default directory to the Samples\Mainsamp subdirectory of the Visual
+	FoxPro directory. Otherwise, Visual FoxPro will not find the necessary Include
+	subdirectory and files.
+	
+	Developer Roadmap:
+	
+	If you have Visual FoxPro on CD-ROM compact disc, you can gain access to the
+	Microsoft Roadmap to Developer Products and Services. The Roadmap has
+	information about Microsoft developer strategies, development tools, databases,
+	operating system standards and specifications, and developer programs and
+	services. It also includes the latest information and demonstrations of
+	Microsoft Developer products, including specific information about Visual FoxPro
+	version 3.0b for Windows.
+	
+	New 3.0b Features
+	-----------------
+	
+	Enhanced OLE Control Support
+	DBCS Overview
+	New DBCS Functions
+	New Collation Sequences
+	New 3.0b Functions, Properties, and Methods
+	New Files Installed in 3.0b
+	Files Updated in 3.0b
+	Files No Longer Installed in 3.0b
+	
+	Enhanced OLE Control Support:
+	
+	Visual FoxPro 3.0b now includes support for all functionality required of a
+	container in the OLE Controls and Control Containers Guidelines version 1.0.
+	This functionally includes support for the following:
+	
+	- Embedded objects from in-process servers
+	- In-place activation
+	- Inside-out activation
+	- OLEMISC_ACTIVATEWHENVISIBLE
+	- All interfaces listed under Required Interfaces
+	- All status bits listed under Misc and Status Bits Support
+	- All functionality required under Keyboard Handling
+	- IPersistStorage
+	- All properties listed under Ambient Properties
+	- The Align extender property
+	
+	Note that Visual FoxPro 3.0b does not support IPersistStream, message reflection,
+	or automatic clipping, nor does it expose an extender control.
+	
+	DBCS Overview:
+	
+	Visual FoxPro 3.0b features new support for DBCS (double-byte character sets),
+	character sets that require more than one byte to represent a character. Some
+	examples of languages that require a double-byte character set are Simplified
+	Chinese, Traditional Chinese, Japanese, and Korean. Visual FoxPro DBCS support
+	allows you to create international applications. For example, you can create a
+	Japanese application with a U.S. version of Visual FoxPro 3.0b if you are
+	running the Japanese version of Windows. The Visual FoxPro DBCS functions
+	operate properly on the Japanese character set, and the Japanese collation
+	sequence is supported. Visual FoxPro 3.0b includes new functions for
+	manipulating character expressions containing any combination of single-byte or
+	double-byte characters. For more information about the new functions in Visual
+	FoxPro 3.0b, see New DBCS Functions. Note that system capacities have not been
+	increased in Visual FoxPro 3.0b to accommodate double-byte characters. The use
+	of double-byte characters in field names, index expressions, memory variable
+	names, window names, and so on reduces their length. For example, a field name
+	can be up to 10 bytes long in a free table, so a field name can consist of ten
+	single- byte characters, but only five double-byte characters. For additional
+	information about Visual FoxPro system capacities, search for "system
+	capacities" in Help.
+	
+	New DBCS Functions:
+	
+	Visual FoxPro 3.0b includes the following new DBCS functions. For more
+	information, see Visual FoxPro Help.
+	
+	AT_C( ) Function          ATCC( ) Function
+	CHRTRANC( ) Function      IMESTATUS( ) Function
+	ISLEADBYTE( ) Function    LEFTC( ) Function
+	LENC( ) Function          LIKEC( ) Function
+	RATC( ) Function          RIGHTC( ) Function
+	STRCONV( ) Function       STUFFC( ) Function
+	SUBSTRC( ) Function
+	
+	CAUTION: The Visual FoxPro 3.0b DBCS functions are not supported in Visual FoxPro
+	3.0 and might cause unpredictable results. If you use any DBCS functions in your
+	application, use VERSION(1) to verify that the Visual FoxPro version is greater
+	than 3.0.
+	
+	Note that Visual FoxPro 3.0b applications (such as the wizards and the sample
+	applications) contain DBCS functions and cannot be run in Visual FoxPro 3.0.
+	Though the Visual FoxPro 3.0b version of Genmenu.prg contains DBCS functions, it
+	has been modified so it can be run in Visual FoxPro 3.0 if necessary. For
+	information, see Running GENMENU in Visual FoxPro 3.0.
+	
+	New Collation Sequences:
+	
+	Visual FoxPro supports new collation sequences for Simplified Chinese,
+	Traditional Chinese, Japanese, and Korean. Collation sequences allow you to
+	properly order character fields in tables for each language. For more
+	information about specifying collation sequences, search for SET COLLATE in
+	Help. The following table lists the new Visual FoxPro 3.0b collation sequence
+	options and the corresponding language.
+	
+	Option      Language
+	JAPANESE    Japanese
+	KOREAN      Korean
+	PINYIN      Simplified Chinese
+	STROKE      Simplified and Traditional Chinese
+	
+	New 3.0b Functions, Properties, and Methods:
+	
+	The following functions, properties, and methods have been added in Visual FoxPro
+	3.0b. For more information, see Visual FoxPro Help.
+	
+	Align Property                        DefOLELCID Property
+	GETPEM( ) Function                    OLELCID Property
+	PEMSTATUS( ) Function                 ResetToDefault Method
+	SYS(1269) - Property Information      SYS(1270) - Object Location
+	SYS(1271) - Object's .SCX File        SYS(1272) - Object Hierarchy
+	
+	The following properties have been added in Visual FoxPro 3.0b and are reserved
+	for future use. For more information, see Visual FoxPro Help.
+	
+	FontCondense, FontExtend Properties   MacDesktop Property
+	SizeBox Property                      ZoomBox Property
+	
+	UPGRADING AND CONFIGURING VISUAL FOXPRO
+	---------------------------------------
+	
+	Upgrading FoxPro 2.6 Files
+	Using dBASE Files in Visual FoxPro
+	Upgrading to Windows 95
+	Improving Network Performance
+	Troubleshooting Printing Problems with the HPPCL5E Printer Driver
+	Running GENMENU in Visual FoxPro 3.0
+	Controlling Warning Messages in Views
+	
+	Upgrading FoxPro 2.6 Files:
+	
+	When you convert FoxPro 2.6 files to Visual FoxPro, make sure that the files are
+	not read-only. For more information on upgrading your FoxPro 2.6 files to Visual
+	FoxPro, search for "upgrading" in Help.
+	
+	Using dBASE Files in Visual FoxPro:
+	
+	To find information about using your dBASE files in Visual FoxPro, search for
+	"Switching from dBASE" in Help.
+	
+	Upgrading to Windows 95:
+	
+	If you install Visual FoxPro on your current Window 3.1 or Windows for Workgroups
+	platform and then want to upgrade to Windows 95, remove Visual FoxPro from your
+	hard disk, upgrade to Windows 95, and then reinstall Visual FoxPro to insure
+	that the maintenance mode of Setup works properly. Two additional OLE controls,
+	Msmapi32.ocx and Mscomm32.ocx, available only in Windows 95, will also be
+	installed. When you open Visual FoxPro Help for the first time in Windows 95,
+	there is a delay while the Help index is generated. This index enables full-text
+	search and is generated only the first time you open Help.
+	
+	Improving Network Performance:
+	
+	Increasing the size of the network packet for a connection can greatly improve
+	performance on a network, especially on a slow or busy network. The size of the
+	network packet for a connection can be set with DBSETPROP( ) and SQLSETPROP( ).
+	Note that the network packet size may be limited by the network and the ODBC
+	driver. For more information, see the Visual FoxPro help file.
+	
+	Troubleshooting Printing Problems with the HPPCL5E Printer Driver:
+	
+	If you use the Hewlett Packard HPPCL5E version 1.2 printer driver and receive
+	"Printer not ready" errors when attempting to print from within Visual FoxPro,
+	you should upgrade to the latest version of this driver. The latest version of
+	the HPPCL5E printer driver is included in Windows 95 and Windows NT.
+	
+	Running GENMENU in Visual FoxPro 3.0:
+	
+	The latest version of Genmenu.prg, included in Visual FoxPro 3.0b, contains DBCS
+	functions. However, the 3.0b version of Genmenu.prg can be run in Visual FoxPro
+	3.0.
+	
+	To run the 3.0b version of Genmenu.prg in Visual FoxPro 3.0:
+	
+	1. Open the 3.0b version of Genmenu.prg.
+	
+	2. Search for the line containing the text "VFP 3.0" and follow the instructions
+	  on that line.
+	
+	3. Save the program, and recompile it in Visual FoxPro 3.0.
+	
+	Controlling Warning Messages in Views:
+	
+	You can control the display of warning messages when you use local and remote
+	views.
+	
+	To control the display of warning messages in views, use SET NOTIFY ON and SET
+	NOTIFY OFF.
+	
+	USING VISUAL FOXPRO
+	-------------------
+	
+	Accessing the Visual FoxPro Command window
+	Using Small Icons with Visual FoxPro
+	Using Delimiters in Views
+	Identifying Tables on a Network
+	Using TABLEUPDATE( ) with Views
+	Navigating Appended Records in Table Buffers
+	Creating Remote Views Using a Visual FoxPro Data Source
+	Using Novell Drivers to Connect to SQL Server
+	Using Windows Named "SCREEN"
+	Using CLEAR READ with READ DEACTIVATE
+	Printing MS-DOS Reports and Labels from Visual FoxPro
+	Window Access in Localized Versions of Visual FoxPro
+	Localized Return Values for SYS( ) Functions
+	Using SEEK with SET COLLATE
+	
+	Accessing the Visual FoxPro Command window:
+	
+	If the Command window is hidden when you start Visual FoxPro, you can still gain
+	access to it. When you start Visual FoxPro, a Project Manager window appears by
+	default. If the Project Manager window fills most of your screen (typical on
+	smaller monitors), it might be covering the Command window. To gain access to
+	the Command window, choose Command window from the Window menu.
+	
+	Using Small Icons with Visual FoxPro:
+	
+	Windows 95 can display small icons in the Explorer and the Start menu. You can
+	use ImagEdit to create small icons for your Visual FoxPro applications running
+	under Windows 95. ImagEdit is included in the Professional Edition of Visual
+	FoxPro. Small icons are created by specifying the Small Icon 16-color 16x16
+	option when creating a new icon in ImagEdit. If this option is not available
+	when you create a new icon, add the following lines to the IMAGEDIT.INI file
+	located in your Windows directory:
+	
+	  [ImagEdit.Icon]
+	  Small Icon=16,16,16
+	
+	Using Delimiters in Views:
+	
+	Visual FoxPro accepts ', ", and [ ] as delimiters. You can include spaces in
+	delimited identifiers for table names in local views, but not for column names.
+	Delimited and undelimited identifiers are not equivalent.
+	
+	Identifying Tables on a Network:
+	
+	To specify the location of data, you can use a logical drive path. To insure
+	consistent access to data on a network, use the same syntax when creating and
+	accessing databases and tables.
+	
+	Using TABLEUPDATE( ) with Views:
+	
+	If you use TABLEUPDATE( ) with a blank appended record in a view (a record
+	created using the APPEND BLANK command), the update will fail. For a valid
+	update in a view, you must enter data in at least one of the fields marked as
+	updatable before you issue the TABLEUPDATE( ) command.
+	
+	Navigating Appended Records in Table Buffers:
+	
+	To move the record pointer to appended records in a table buffer, use the GO
+	command with a negative value. The RECNO( ) function returns sequential
+	ascending negative numbers on records appended in a table buffer. For more
+	information, search in Help for "records, deleting," then choose "Appending and
+	Deleting Records in Table Buffers."
+	
+	Creating Remote Views Using a Visual FoxPro Data Source:
+	
+	When you create a remote view using Visual FoxPro as the data source, the current
+	ODBC driver recognizes only files from FoxPro version 2.6 and earlier.
+	
+	Using Novell Drivers to Connect to SQL Server:
+	
+	To connect to SQL Server using Novell real-mode drivers, include the following
+	command before establishing the connection:
+	
+	  =SQLSETPROP(0, 'PacketSize', 512)
+	
+	Using Windows Named "SCREEN":
+	
+	In Visual FoxPro, window functions can return ambiguous values for windows whose
+	name contains SCREEN. For best results, avoid using SCREEN as part of a window
+	name. The following functions are affected by this behavior:
+	
+	WBORDER( )    WLAST( )      WONTOP( )
+	WCHILD( )     WLCOL( )      WROWS( )
+	WCOLS( )      WLROW( )      WTITLE( )
+	WEXIST( )     WMAXIMUM( )   WVISIBLE( )
+	WFONT( )      WMINIMUM( )
+	
+	Using CLEAR READ with READ DEACTIVATE:
+	
+	If you use CLEAR READ within a READ DEACTIVATE clause, Visual FoxPro, unlike
+	FoxPro 2.6, invokes a READ VALID event. You can restore FoxPro 2.6 behavior by
+	removing CLEAR READ and returning true (.T.).
+	
+	Printing MS-DOS Reports and Labels from Visual FoxPro:
+	
+	Printing character-based reports or labels (created in FoxPro for MS-DOS) in
+	Visual FoxPro can produce unexpected results. This method writes directly to the
+	printer and is not recommended on the Windows platform. If you use the PDSETUP
+	clause with REPORT and LABEL commands, you will have more reliable results on
+	the Windows platform by converting to Visual FoxPro format. For more information
+	about the effects of the PDSETUP clause, see _PDSETUP in Help.
+	
+	Window Access in Localized Versions of Visual FoxPro:
+	
+	In localized versions of Visual FoxPro, specify Visual FoxPro windows, such as
+	the Command window, Debug window, Trace window, or View window by their English
+	names; specify toolbars by their localized names (the name that appears in the
+	title bar of the toolbar window).
+	
+	Localized Return Values for SYS( ) Functions:
+	
+	In localized versions of Visual FoxPro, the SYS( ) functions SYS(2006) and
+	SYS(2011) return localized values.
+	
+	Using SEEK with SET COLLATE:
+	
+	If you perform a SEEK when SET COLLATE is not set to MACHINE, the seek fails if
+	the index key contains a trailing blank. Trailing blanks are valid only if SET
+	COLLATE is set to MACHINE.
+	
+	USING ODBC AND OLE IN VISUAL FOXPRO
+	-----------------------------------
+	
+	Using ODBC Desktop Drivers Avoiding ODBC Errors in the Remote View Wizard MS Draw
+	1.0 Objects as Visual FoxPro OLE Objects
+	
+	Using ODBC Desktop Drivers:
+	
+	The ODBC drivers and driver manager installed in Visual FoxPro 3.0b are the most
+	current versions. Some of the files installed may conflict with ODBC 2.5
+	components installed by other software. Avoid using DECLARE - DLL, FoxTools, or
+	an .fll file to gain access to ODBC drivers. Doing so can generate errors; use
+	SQLCONNECT( ), SQLEXEC( ), or other Visual FoxPro functions to connect to ODBC.
+	
+	Avoiding ODBC Errors in the Remote View Wizard:
+	
+	If you use the Remote View Wizard with backend servers that assign table
+	ownership, such as SQL Server, you must select tables that you own or that have
+	a public owner. To access data from any other table, use the View Designer.
+	
+	MS Draw 1.0 Objects as Visual FoxPro OLE Objects:
+	
+	If you are running Visual FoxPro under Windows 3.1 or Windows for Workgroups,
+	Microsoft Draw 1.0 objects are not supported as Visual FoxPro OLE objects.
+	
+	PROFESSIONAL FEATURES
+	---------------------
+	
+	RESERVED.FLL
+	OLE Custom Controls
+	Additional API Routines
+	
+	Reserved.fll:
+	
+	Do not open Reserved.fll as a library file. Reserved.fll is an internal Visual
+	FoxPro file that is used by the Spell Checker.
+	
+	OLE Custom Controls:
+	
+	Visual FoxPro 3.0b includes new versions of the MAPI, PictClip, Outline, and Comm
+	OLE Custom Controls. These controls require the following files: Olepro32.dll
+	Msvcrt40.dll
+	Msc40.dll
+	Different versions of Mscvrt40.dll are installed on 16- and 32-bit systems.
+	Mfc30.dll is no longer required or installed.
+	
+	Additional API Routines:
+	
+	The Professional Edition of Visual FoxPro contains the following additional API
+	routines. For more information, see Visual FoxPro Help.
+	
+	_FreeObject( )               _GetObjectProperty( )
+	_ObjectCmp( )                _ObjectReference( )
+	_ObjectRelease( )            _SetObjectProperty( )
+	_WGetObjectClientWindow( )   _WGetObjectWindow( )
+	
+	Additional query words: read.me readme.txt
+	
+	======================================================================
+	Keywords          : kbvfp300 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP300b
+	Version           : :3.0b
+	
+	=============================================================================
+	

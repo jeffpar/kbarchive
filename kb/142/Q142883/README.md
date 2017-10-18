@@ -1,0 +1,165 @@
+---
+layout: page
+title: "Q142883: HOWTO: Troubleshooting Btrieve Connections in Visual FoxPro"
+permalink: kb/142/Q142883/
+---
+
+## Q142883: HOWTO: Troubleshooting Btrieve Connections in Visual FoxPro
+
+	Article: Q142883
+	Product(s): Microsoft FoxPro
+	Version(s): 3.0b
+	Operating System(s): 
+	Keyword(s): kbvfp kbvfp300b kbvfp600
+	Last Modified: 11-AUG-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0b, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article lists troubleshooting techniques you can use if you receive
+	connectivity errors attempting to connect to a Btrieve data source.
+	
+	NOTE: Some products mentioned in this article are manufactured by vendors
+	independent of Microsoft; we make no warranty, implied or otherwise, regarding
+	these products' performance or reliability.
+	
+	MORE INFORMATION
+	================
+	
+	Use the steps given in this article to resolve the following error message and
+	other similar messages:
+	
+	  "Connectivity error: [Microsoft][ODBC Btrieve Driver] Errors encountered
+	  while using the Btrieve DLL"
+	
+	Steps to Troubleshoot Error Message
+	-----------------------------------
+	
+	1. Check the current Btrieve driver version being used in the ODBC Icon. In the
+	  Main group in Program Manager, double-click the Control Panel icon:
+	
+	  a. In the Control Panel window, double-click the ODBC icon. The Data Sources
+	     dialog box appears.
+	
+	  b. In the Data Sources dialog box, choose the Drivers button. The Drivers
+	     dialog box appears.
+	
+	  c. In the Drivers dialog box, highlight the Btrieve driver and choose the
+	     About button. The following driver information is displayed:
+	
+	     driver, file name, description, company, version, language, creation date,
+	     and size.
+	
+	2. Make sure the Wbtrcall.dll file is in the Windows\System directory. If the
+	  .dll file is missing, you can obtain it from Btrieve. This file is part of
+	  the Btrieve for Windows product. The Wbtrcall.dll must be installed and
+	  accessible on the system.
+	
+	3. Check the size of the Wbtrcall.dll file. There are two versions; one is 13K
+	  and the other is 51K. The 13K Wbtrcall.dll lacks full functionality and will
+	  cause an error. Be sure the 51K version is being used.
+	
+	4. Check the version of the Btrieve data file being used. When you use a Btrieve
+	  5.1 data file, the 51K Wbtrcall.dll file is needed. However, use the Btrieve
+	  client software when connecting to a Btrieve 6x file.
+	
+	5. Check the Operating System. Presently, Microsoft ships the 16-Bit Btrieve
+	  driver. If the operating system is Windows NT or Windows 95, you must get the
+	  32-bit ODBC driver. To do this, contact Btrieve directly at 1-800-287-4383
+	  and choosing option 3.
+	
+	6. Be sure the File.ddf and Field.ddf files are located in the same directory as
+	  the .dat files. The paths to the Btrieve data files are hard-coded in the
+	  .ddf files. The Btrieve driver uses the .ddf files when connecting to a
+	  Btrieve datasource. If the .ddf files are missing, then the Btrieve driver
+	  will not be able to connect. The .ddf files can be created using a third
+	  party .ddf builder such as Xtrieve, DDF Builder, or Btrieve Scalable SQL.
+	  Xtrieve and Btreive Scalable SQL are sold by Btrieve technologies, a vendor
+	  independent of Microsoft.
+	
+	7. Make sure that you have the Btrieve 2.0 ODBC driver (this comes with Visual
+	  FoxPro Professional). You need this driver to connect to a Btrieve 6x file.
+	  The Microsoft ODBC Desktop Driver Kit 1.0 comes with a Btrieve ODBC driver
+	  that can connect to Btrieve 5.1 (16-bit driver). The Microsoft ODBC desktop
+	  Driver Kit 2.0 comes with Btrieve ODBC driver, which can be used to connect
+	  to Btrieve 5.1 or Btrieve 6x.
+	
+	8. Make sure there are no non-alphanumeric characters in the table name. This
+	  will usually cause "Syntax Errors" when retrieving data. File naming
+	  conventions call for standard alphanumeric characters in table names.
+	
+	9. Make sure Btrieve data sources are added correctly, by following the
+	  instructions outlined here. In the Main group in the Program Manager window,
+	  double-click the Control Panel icon. In the Control Panel window,
+	  double-click the ODBC icon.
+	
+	  a. In the Data Sources dialog box, choose the Add button. The Add Data Source
+	     dialog box appears.
+	
+	  b. In the Installed ODBC Drivers list, select the Btrieve driver and choose
+	     the OK button. The ODBC Driver dialog box appears.
+	
+	  c. In the Btrieve ODBC Driver dialog box, enter the Data Source Name and the
+	     Connect String information, which should be made available by the Network
+	     Administrator. The Description can be set to whatever you want. For more
+	     information about these options, press the Help button in the dialog box.
+	
+	10. Make sure the correct data source name is used in the ODBC Btrieve Setup
+	  dialog box. It should be a directory name or the current directory as
+	  indicated in the Setup dialog box.
+	
+	11. Make sure the Btrieve table names don't begin with SQL keywords such as
+	  Update, In, Select, Create, Drop, Alter, or any other keyword.
+	
+	12. Make sure the Btrieve.trn file exists and has not been renamed.
+	
+	13. Check the Win.ini file for a [Btrieve] initialization option section. The
+	  Btrieve 5.x format should contain an Options statement similar to the one in
+	  the following example:
+	
+	      [BTRIEVE]
+	      Options=/M:64/P:4096 /b:16 /f:20/l:40/n:12/t:Btrieve.Trn
+	
+	14. If the Btrieve version is Btrieve.nlm (server-based version), check the
+	  Win.ini file (for Btrieve version 5.1x) or the Novdb.ini file (for Btrieve
+	  version 6.x), and include the following command example:
+	
+	      [BREQUESTDPMI]
+	      datalength=4096
+	      tasks=10
+	      local=no
+	      Chkparms=no
+	
+	These troubleshooting steps should resolve the majority of connection errors, in
+	the event none of these solutions correct the problem, please contact Microsoft
+	Product Support for further assistance.
+	
+	REFERENCES
+	==========
+	
+	These sample configurations will depend on your installation requirements and
+	setup. For additional details, parameters, and options, please see your Btrieve
+	documentation.
+	
+	For more information about accessing a Btrieve database, please see the following
+	article in the Microsoft Knowledge Base.
+	
+	  Q115837 Using the Connectivity Kit to Access a Btrieve Database
+	
+	
+	Additional query words: ODBC Btrieve SQL Server Tshoot
+	
+	======================================================================
+	Keywords          : kbvfp kbvfp300b kbvfp600 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP300b kbVFP600
+	Version           : 3.0b
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

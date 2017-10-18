@@ -1,0 +1,68 @@
+---
+layout: page
+title: "Q177557: XFOR: Recipients Ignored on Mail Sent to Two or More CMS Nodes"
+permalink: kb/177/Q177557/
+---
+
+## Q177557: XFOR: Recipients Ignored on Mail Sent to Two or More CMS Nodes
+
+	Article: Q177557
+	Product(s): Microsoft Exchange
+	Version(s): 4.0 5.0 5.5
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 19-MAR-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+	- LinkAge Message Exchange, version 3.2 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	When sending mail using the Linkage Exchange-OfficeVision/VM Connector from
+	Exchange to recipients on two or more different CMS nodes, the message may not
+	be delivered to all of the intended recipients.
+	
+	CAUSE
+	=====
+	
+	The logic used to break apart the recipient list when multiple CMS nodes are
+	encountered was incorrect and caused some recipients to be ignored.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Linkage Message Exchange,
+	version 3.2.
+	
+	
+	A supported fix is now available, but has not been fully regression-tested and
+	should be applied only to systems experiencing this specific problem. Unless you
+	are severely impacted by this specific problem, Microsoft recommends that you
+	wait for the next Service Pack that contains this fix. Contact Microsoft
+	Technical Support for more information.
+	
+	
+	Microsoft has confirmed this to be a problem in Microsoft Exchange Server version
+	5.5. This problem has been corrected in the latest U.S. Service Pack for
+	Microsoft Exchange Server version 5.5. For information on obtaining the Service
+	Pack, query on the following word in the Microsoft Knowledge Base (without the
+	spaces):
+	
+	  S E R V P A C K
+	
+	Additional query words: HOST IBM SENDMAIL PROFS
+	======================================================================
+	Keywords          :  
+	Technology        : kbZNotKeyword6 kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2 kbLinkAgeSearch kbLinkAge320
+	Version           : 4.0 5.0 5.5
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

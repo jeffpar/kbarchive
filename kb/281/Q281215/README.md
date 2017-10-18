@@ -1,0 +1,262 @@
+---
+layout: page
+title: "Q281215: CFS: Cannot Join or Host Multiplayer Game on the Zone"
+permalink: kb/281/Q281215/
+---
+
+## Q281215: CFS: Cannot Join or Host Multiplayer Game on the Zone
+
+	Article: Q281215
+	Product(s): Microsoft Home Games
+	Version(s): 1.0
+	Operating System(s): 
+	Keyword(s): kbenv kbimu
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Combat Flight Simulator: WWII Europe Series, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	You may not be able to join or host a Microsoft Combat Flight Simulator
+	multiplayer game on Zone.com.
+	
+	Other Microsoft multiplayer programs may continue to function on the Zone.
+	
+	CAUSE
+	=====
+	
+	This behavior can occur when you install Microsoft Windows Millennium Edition
+	(Me).
+	
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, use the following methods in the order in which they are
+	presented.
+	
+	Uninstall Combat Flight Simulator
+	---------------------------------
+	
+	To uninstall Combat Flight Simulator:
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click Add/Remove Programs.
+	
+	3. Click Microsoft Combat Flight Simulator.
+	
+	4. Click Add/Remove.
+	
+	5. Follow the instructions on the screen to uninstall Combat Flight Simulator.
+	
+	Delete the Combat Flight Simulator Folder
+	-----------------------------------------
+	
+	If the Combat Flight Simulator folder was not deleted when you uninstalled the
+	game, delete the folder:
+	
+	1. Double-click My Computer.
+	
+	2. Double-click the C: drive.
+	
+	3. Double-click the Program Files folder, and then double-click the Microsoft
+	  Games folder.
+	
+	4. Note if the Combat Flight Simulator folder exists.
+	
+	  If the Combat Flight Simulator folder exists, right-click the folder, and then
+	  click Delete.
+	
+	  If the Combat Flight Simulator folder does not exist, proceed to the next
+	  method.
+	
+	5. Close all the windows on the desktop.
+	
+	Empty the Recycle Bin
+	---------------------
+	
+	To empty the Recycle Bin:
+	
+	1. On the desktop, double-click the Recycle Bin.
+	
+	2. On the File menu, click Empty Recycle Bin.
+	
+	3. Close the Recycle Bin.
+	
+	Delete the Windows\Temp Folder
+	------------------------------
+	
+	To delete the Windows\Temp folder:
+	
+	1. Click Start, and then click Run.
+	
+	2. On the Open line, type "command" (without the quotation marks), and then
+	  click OK.
+	
+	3. At the command prompt, type the following line, and then press ENTER.
+	
+	  cd %winbootdir%\temp
+	
+	4. Note the folder on the command prompt.
+	
+	  If the prompt has been changed to a Temp folder similar to the following
+	  folder, continue to the next step:
+	
+	  C:\WINDOWS\TEMP
+	
+	  If there is no Temp folder, proceed to the next method.
+	
+	5. Type the following line, and then press ENTER:
+	
+	  deltree %winbootdir%\temp
+	
+	6. To confirm the deletion, press Y, and then press ENTER.
+	
+	7. Type exit , and then press ENTER.
+	
+	Download the Latest Version of DirectX
+	--------------------------------------
+	
+	To download the latest version of DirectX:
+	
+	1. Visit the following Microsoft Web site:
+	
+	  http://www.microsoft.com/directx/homeuser/downloads/default.asp
+	
+	2. Click the link for your version of Microsoft Windows.
+	
+	3. In the File Download dialog box, click "Save this program to disk", and then
+	  click OK.
+	
+	4. In the "Save in" box, click Desktop, and then click Save.
+	
+	5. When the download is complete, click Close.
+	
+	Restart Your Computer in Safe Mode
+	----------------------------------
+	
+	To restart your computer in Safe Mode:
+	
+	1. Click Start, and then click Shut Down.
+	
+	2. Click Restart The Computer, and then click Yes.
+	
+	3. If you are running Microsoft Windows 95, press F5 when you see the message
+	  "Starting Windows 95".
+	
+	  If you are running Microsoft Windows 98 or Microsoft Windows Me, press and
+	  hold the SHIFT key as soon as the POST (Power on Self Test) is completed.
+	
+	4. Close the message about Safe Mode.
+	
+	Delete Direct X Registry Keys
+	-----------------------------
+	
+	WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+	that may require you to reinstall your operating system. Microsoft cannot
+	guarantee that you can solve problems that result from using Registry Editor
+	incorrectly. Use Registry Editor at your own risk.
+	
+	To delete the DirectX registry keys:
+	
+	1. Click Start, and then click Run.
+	
+	2. In the Open box, type "regedit" (without the quotation marks), and then click
+	  OK.
+	
+	3. Click the following registry key:
+	
+	  HKEY_LOCAL_MACHINE\Software\Microsoft\DirectPlay
+	
+	4. On the Registry menu, click Export Registry File.
+	
+	5. In the "File name" box, type "DPlay.reg" (without the quotation marks).
+	
+	6. Click Save.
+	
+	7. Right-click the DirectX registry key, and then click Delete.
+	
+	8. Click Yes, to confirm the deletion.
+	
+	9. Click the following registry key:
+	
+	  HKEY_LOCAL_MACHINE\Software\Microsoft\DirectX
+	
+	10. On the Registry menu, click Export Registry File.
+	
+	11. In the "File name" box, type "DX.reg" (without the quotation marks).
+	
+	12. Click Save.
+	
+	13. Right-click the DirectPlay registry key, and then click Delete.
+	
+	14. Click Yes, to confirm the deletion.
+	
+	15. Quit Registry Editor.
+	
+	16. Restart your computer in Safe Mode.
+	
+	Reinstall DirectX in Safe Mode
+	------------------------------
+	
+	To reinstall DirectX in Safe Mode:
+	
+	1. In Safe Mode, double-click the DirectX file that you downloaded from the
+	  DirectX Web site.
+	
+	2. Follow the instructions on the screen to install DirectX.
+	
+	3. Restart your computer in normal mode.
+	
+	Reinstall Combat Flight Simulator in a New Folder
+	-------------------------------------------------
+	
+	To reinstall Combat Flight Simulator in a new folder:
+	
+	1. Insert the Combat Flight Simulator CD-ROM into the CD-ROM or DVD-ROM drive.
+	
+	  If the Setup program does not start automatically, follow these steps:
+	
+	  a. Click Start, and then click Run.
+	
+	  b. In the Open box, type "<cdrom>:\setup.exe" (without the quotation
+	     marks) where <cdrom> is the drive letter of the CD-ROM or DVD-ROM
+	     drive.
+	
+	  c. Click OK.
+	
+	2. Follow the instructions on the screen to complete the installation of Combat
+	  Flight Simulator.
+	
+	  NOTE: When you are prompted for the installation location, type "c:\CFS"
+	  (without the quotation marks).
+	
+	Try to Play the Game on the Zone
+	--------------------------------
+	
+	To play the game on the Zone:
+	
+	1. Connect to the following Zone Web site:
+	
+	  http://www.zone.com
+	
+	2. Go to the Combat Flight Simulator game rooms.
+	
+	3. Try to join a session.
+	
+	Additional query words: msgame play multi-player zone.com www.zone.com gaming hang freeze
+	
+	======================================================================
+	Keywords          : kbenv kbimu 
+	Technology        : _IKkbbogus kbGamesSearch kbCombatFlightSim kbCombatFlightSimSearch kbSimSearch
+	Version           : :1.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

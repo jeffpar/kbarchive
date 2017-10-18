@@ -1,0 +1,108 @@
+---
+layout: page
+title: "Q165432: PRB: DBGrid Does Not Insert Record If Field Name Contains Dash"
+permalink: kb/165/Q165432/
+---
+
+## Q165432: PRB: DBGrid Does Not Insert Record If Field Name Contains Dash
+
+	Article: Q165432
+	Product(s): Microsoft C Compiler
+	Version(s): 5.0
+	Operating System(s): 
+	Keyword(s): kbprb
+	Last Modified: 04-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+	- Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you try to add a row to an SQL Server table using DBGrid bound to a Remote
+	Data Control, you receive the following error message if one of the table's
+	field names contains a "-":
+	
+	  ODBC error: 37000 [Microsoft][SQL Server Driver]Line2: Incorrect syntax
+	  near '-'
+	
+	CAUSE
+	=====
+	
+	This problem occurs because the Remote Data Objects code is creating a SQL
+	INSERT statement that doesn't put quotation marks around field names. The INSERT
+	statement would resemble the following:
+	
+	     INSERT INTO x (id, e-mail)
+	     VALUES (1, 'Eric')
+	
+	If RDO generated an INSERT statement that used double quotes around the field
+	name, then the INSERT would work. The following syntax would work:
+	
+	     INSERT INTO x (id, "e-mail")
+	     VALUES (1, 'Eric')
+	
+	RESOLUTION
+	==========
+	
+	Either rename the field so that it doesn't contain a hyphen or do the updates
+	manually (where the developer creates the proper SQL syntax).
+	
+	STATUS
+	======
+	
+	This is by design. SQL Server does not support the use of dashes in its
+	identifiers, including server names, database names, tables, views, columns,
+	indexes, triggers, procedures, defaults, and rules.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. In an SQL Server database, create a table with a field that has a dash in it.
+	  For example, use the following script with MSQuery:
+	
+	        CREATE TABLE x
+	        (id INTEGER,
+	        "e-mail" VARCHAR(10))
+	        // Note the double quotes to avoid the error with the dash.
+	
+	2. Create a Data Source that points to the correct database.
+	
+	3. Make an MFC Dialog application.
+	
+	4. Add the Microsoft Remote Data Control (MSRDC) to the dialog box that is being
+	  created. Set the following properties of the MSRDC control:
+	
+	  DataSourceName    to your data source
+	  CursorDriver      1-ODBC cursor
+	  LockType          3-Optimistic concurrency
+	  ResultType        1-Create a Keyset cursor
+	  SQL               SELECT * FROM x
+	
+	5. Add a DBGrid to the dialog box and set the following properties:
+	
+	  AllowAddNew       True
+	  AllowUpdates      True
+	  DataSource        the name of the MSRDC
+	
+	6. Build and run the application. While running the application, try to insert a
+	  record in the grid, that is (1, Eric). Move off the record and the error
+	  message occurs.
+	
+	Additional query words: RDO DBGrid kbvc500 kbmfc kbdatabase kbodbc kbdao
+	
+	======================================================================
+	Keywords          : kbprb 
+	Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC32bitSearch kbVC500Search
+	Version           : 5.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

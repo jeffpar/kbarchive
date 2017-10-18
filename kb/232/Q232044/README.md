@@ -1,0 +1,90 @@
+---
+layout: page
+title: "Q232044: The Stats Frame in a Network Monitor Capture"
+permalink: kb/232/Q232044/
+---
+
+## Q232044: The Stats Frame in a Network Monitor Capture
+
+	Article: Q232044
+	Product(s): Microsoft Windows NT
+	Version(s): WINDOWS:3.11,95,98; winnt:3.51,4.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 10-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server versions 3.51, 4.0 
+	- Microsoft Windows NT Workstation versions 3.51, 4.0 
+	- Microsoft Windows 3.11 
+	- Microsoft Windows 95 
+	- Microsoft Windows 98 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes the relevance and some possible uses for the information
+	in the Stats frame of a Network Monitor capture.
+	
+	MORE INFORMATION
+	================
+	
+	When you view a capture using Network Monitor, it is helpful to have additional
+	statistics concerning the data that is captured. In Network Monitor, a Stats
+	frame is added at the end of each capture. This frame contains relevant
+	information concerning the capture. Although the overall contents can change
+	depending on topology, one section that is consistently included is the Stats
+	section.
+	
+	The following example shows a Stats section of a Network Monitor capture:
+	
+	  STATS: Number of Frames Captured = 917
+	  STATS: Bytes Left = 80 (0x50)
+	  STATS: Version = 0 (0x0)
+	  STATS: Elapsed Time = 4 Seconds  316 Milliseconds
+	  STATS: Total Frames Captured = 917 (0x395)
+	  STATS: Total Bytes Captured = 186342 (0x2D7E6)
+	  STATS: Total Frames Filtered While Capturing = 917 (0x395)
+	  STATS: Total Bytes Filtered While Capturing = 179006 (0x2BB3E)
+	  STATS: Total Frames Seen During Capture = 917 (0x395)
+	  STATS: Total Bytes Seen During Capture = 179006 (0x2BB3E)
+	  STATS: Total MultiCasts Received = 49 (0x31)
+	  STATS: Total BroadCasts Received = 847 (0x34F)
+	  STATS: Total Frames Dropped From Capture = 0 (0x0)
+	  STATS: Total Frames Dropped From Buffer = 0 (0x0)
+	  STATS: MAC Frames Received = 827
+	  STATS: MAC CRC Errors = 0
+	  STATS: MAC Bytes Received = 1662
+	  STATS: MAC Frames Dropped due to No Buffers = 0
+	  STATS: MAC Frames Dropped due to HardWare Errors = 0
+	  STATS: MAC MultiCasts Received = 39
+	  STATS: MAC BroadCasts Received = 776
+	
+	Some of the more useful pieces of information include:
+	
+	- Number of Frames Captured
+	  This value is helpful in determining if you are viewing a filtered capture. If
+	  this number does not match the number in the capture, the frames are
+	  filtered.
+	
+	- Elapsed Time
+	  If this value is small and the Total Bytes Captured value is large, there may
+	  be possible throughput saturation on the network.
+	
+	- Total Frames Seen During Capture and Total Bytes Seen During Capture
+	  If a capture filter is used, these values should indicate how much data is not
+	  included in the capture.
+	
+	Additional query words: nm netmon bloodhound bh sniff sniffer
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search kbWin3xSearch kbWin95search kbWin98search kbZNotKeyword3 kbWin311 kbWin98
+	Version           : WINDOWS:3.11,95,98; winnt:3.51,4.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

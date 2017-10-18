@@ -1,0 +1,387 @@
+---
+layout: page
+title: "Q244515: FS 2000: Troubleshooting Joystick Problems (Part 2)"
+permalink: kb/244/Q244515/
+---
+
+## Q244515: FS 2000: Troubleshooting Joystick Problems (Part 2)
+
+	Article: Q244515
+	Product(s): Microsoft Home Games
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbenv kbhw kbtshoot fsim kbimu msgame kbHardware
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Flight Simulator 2000 
+	- Microsoft Flight Simulator 2000 Professional Edition 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article is part 2 of the "Flight Simulator 2000: Troubleshooting Joystick
+	Problems (Part 1)" article in the Microsoft Knowledge Base. To view part 1 of
+	this article, click the article number below:
+	
+	  Q243981 Flight Simulator 2000: Troubleshooting Joystick Problems (Part 1)
+	
+	MORE INFORMATION
+	================
+	
+	Manually Assign Actions
+	-----------------------
+	
+	To manually assign an action to a button or axis on your game controller:
+	
+	1. Start a new flight in Flight Simulator 2000.
+	
+	2. On the Options menu, point to Controls, and then click Assignments.
+	
+	3. To assign events to the buttons on your game controller, click the
+	  Buttons/Keys tab.
+	
+	  To assign events to the axes on your game controller, click the "Joystick
+	  axes" tab.
+	
+	4. In the "Joystick type" box, click the game controller you want to use.
+	
+	5. Under the Event column, click to select the line for an event you want to
+	  assign to a button or an axis on your game controller, and then click "Change
+	  assignment."
+	
+	6. On the game controller, press the button or move the axis you want to use for
+	  the selected action.
+	
+	  If you receive a warning message that a different action is already assigned
+	  to the game controller button or axis, click the green check mark to accept
+	  the new assignment, or click Clear to select a different button.
+	
+	7. When you finish manually assigning events to the buttons and axes on your
+	  game controller, click the green check mark.
+	
+	If the issue continues to occur, proceed to the next method.
+	
+	Calibrate as a Different Device
+	-------------------------------
+	
+	Use the Game Controllers tool in Control Panel to configure your game controller
+	as a different device.
+	
+	NOTE: You cannot configure any Microsoft SideWinder gaming device except the
+	SideWinder Standard or the SideWinder 3D Pro as a different device.
+	
+	For example, to configure a SideWinder 3D Pro joystick as a 3-axis 4-button
+	joystick with Rudder/Pedals:
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click Game Controllers, and then click Microsoft SideWinder 3D Pro.
+	
+	3. Click Remove, and then click Yes.
+	
+	4. Click Add, click 3-Axis, 4-Button Joystick, and then click OK.
+	
+	5. Click Properties.
+	
+	6. On the Settings tab, click to select the Rudder/Pedals check box.
+	
+	7. Click Calibrate, and then follow the instructions on the screen to calibrate
+	  the game controller.
+	
+	  NOTE: Axis 3 is the throttle control, and axis 4 is the rudder control.
+	
+	8. Click Test to verify that the game controller functions properly.
+	
+	9. When you finish calibrating and testing the game controller, click OK, and
+	  then click OK again.
+	
+	If the issue continues to occur, proceed to the next method.
+	
+	Reduce Sound Playback Quality
+	-----------------------------
+	
+	If your sound card is unable to properly process game port signals and high
+	quality game sounds at the same time, you may be able to work around the issue
+	by reducing the sound playback quality in the game. To do this:
+	
+	1. Click Start, point to Find, and then click "Files or Folders."
+	
+	2. In the Named box, type "fs2000.cfg" (without the quotation marks).
+	
+	3. In the "Look in" box, click My Computer, and then click Find Now.
+	
+	4. In the list of found files, double-click the Fs2000.cfg file.
+	
+	5. If you are prompted to select the program you want to use to open the file,
+	  click Notepad in the "Choose the program you want to use" box, and then click
+	  OK.
+	
+	6. Scroll to the end of the file, press ENTER twice, and then type the following
+	  lines, pressing ENTER after you type each line:
+	
+	  [SOUND]
+	  Channels=1
+	  SamplesPerSec=11025
+	
+	7. On the File menu, click Exit. When you are prompted to save the changes,
+	  click Yes.
+	
+	If the issue continues to occur, proceed to the next method.
+	
+	Remove and Reinstall Flight Simulator 2000
+	------------------------------------------
+	
+	To remove and reinstall Flight Simulator 2000:
+	
+	1. Insert the Flight Simulator 2000 Disc 1 CD-ROM into the CD-ROM drive. Press
+	  and hold down SHIFT when you insert the CD-ROM to prevent the program from
+	  starting automatically.
+	
+	2. Click Start, point to Settings, and then click Control Panel.
+	
+	3. Double-click Add/Remove Programs.
+	
+	4. On the Install/Uninstall tab, click Microsoft Flight Simulator 2000, and then
+	  click Add/Remove.
+	
+	5. Click to select the "Remove saved Flight and flight videos" check box.
+	
+	6. Click Uninstall.
+	
+	7. When you are prompted to confirm the deletion of Flight Simulator 2000, click
+	  Yes.
+	
+	8. Delete the Flight Simulator folder. By default, Flight Simulator 2000 is
+	  installed in the following folder:
+	
+	  <drive>:\Program Files\Microsoft Games\FS2000
+	
+	  where <drive> is the drive letter of the hard disk on which Flight
+	  Simulator 2000 is installed.
+	
+	9. Quit all unnecessary programs that are running on your computer. To do this,
+	  use the appropriate method for your version of Microsoft Windows.
+	
+	Microsoft Windows 95, Microsoft Windows 98, or Microsoft Windows
+	  Millennium Edition (Me):
+	
+	  a. Press CTRL+ALT+DELETE.
+	
+	  b. In the Close Program dialog box, click any program except Explorer or
+	     Systray (which are components of Microsoft Windows), and then click End
+	     Task.
+	
+	     If you receive a message stating that the program is busy or not
+	     responding, click End Task again.
+	
+	  c. Repeat steps 1 and 2 to quit all unnecessary programs that are running on
+	     your computer.
+	
+	Microsoft Windows 2000:
+	
+	  1. Press CTRL+SHIFT+ESC to open Windows Task Manager.
+	
+	  2. On the Applications tab, click any program, and then click End Task.
+	
+	     Repeat this step to quit all unnecessary programs that are running on your
+	     computer.
+	
+	  3. Quit Windows Task Manager.
+	
+	10. Click Start, and then click Run.
+	
+	11. In the Open box, type the following line, and then click OK
+	
+	  <cd-rom>:\setup.exe
+	
+	  where <cd-rom> is the drive letter of the CD-ROM drive.
+	
+	12. Follow the instructions on the screen to install the program.
+	
+	If the issue continues to occur, proceed to the next method.
+	
+	Obtain and Install Updated Device Drivers
+	-----------------------------------------
+	
+	If you are using version 1.0 of the SideWinder Game Device Software, download and
+	install the latest version of the SideWinder Game Controller software from the
+	following Microsoft Web site:
+	
+	  http://www.microsoft.com/sidewinder
+	
+	To determine the version of the SideWinder Game Device or SideWinder Game
+	Controller software installed in your computer:
+	
+	1. Click Start, point to Find, and then click "Files or Folders."
+	
+	2. In the Named box, type "sw3dpro.vxd" (without the quotation marks).
+	
+	3. In the "Look in" box, click My Computer, and then click Find Now.
+	
+	4. In the list of found files, right-click the Sw3dpro.vxd file, and then click
+	  Properties.
+	
+	  NOTE: If the Sw3dpro.vxd file is not in the list of found files, the
+	  SideWinder software is not installed.
+	
+	5. On the Version tab, note the value on the File Version line, and then click
+	  OK.
+	
+	6. Close the Find: Files Named Sw3dpro.vxd window.
+	
+	In addition, if your game controller is connected to the game port in your sound
+	card, contact the manufacturer of your sound card to inquire about how to obtain
+	and install the latest version of the sound driver for your sound card.
+	
+	For information about how to contact the manufacturer of your sound card, click
+	the appropriate article number in the following list to view the article in the
+	Microsoft Knowledge Base:
+	
+	  Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+	
+	  Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+	
+	  Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+	
+	If the issue continues to occur, proceed to the next method.
+	
+	Configure the Sound Card to Use Only One DMA Channel
+	----------------------------------------------------
+	
+	If your game controller is connected to the game port in your sound card, your
+	game controller may perform better if you configure the sound card to use only
+	one DMA channel.
+	
+	NOTE: Some programs are unable to run with only one DMA channel. If you
+	experience this issue, restore your original sound card settings.
+	
+	To configure a legacy sound card driver on a Microsoft Windows 95/98-based
+	computer or a native sound card driver on a Microsoft Windows NT 4.0-based
+	computer to use single-mode DMA:
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click Multimedia.
+	
+	3. On the Devices or Advanced tab, click the PLUS SIGN (+) next to Audio Devices
+	  to expand the branch.
+	
+	4. Click the sound card, and then click Properties.
+	
+	5. Click Settings.
+	
+	6. To configure the sound card to use single-mode DMA, see your sound card
+	  documentation, or use one of the following procedures:
+	
+	   - Click to select the Use Single-Mode DMA check box, click OK until you
+	     return to Control Panel, and then restart the computer.
+	
+	   - In the DMA Channel (16-bit) box, click Disable, click OK until you return
+	     to Control Panel, and then restart the computer.
+	
+	   - In the High DMA box, click Use DMA, click OK until you return to Control
+	     Panel, and then restart the computer.
+	
+	  If you cannot use the sound card driver to configure single-mode DMA, click
+	  Cancel until you return to Control Panel, and then proceed to the "Disable
+	  Force-Feedback Effects" method in this article.
+	
+	To configure a native sound card driver on a Windows 95/98-based computer to use
+	single-mode DMA:
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click System.
+	
+	3. Click the Device Manager tab.
+	
+	4. Click the PLUS SIGN (+) next to "Sound, video and game controllers" to expand
+	  the branch.
+	
+	5. Click the sound card, and then click Properties.
+	
+	6. Click the Resources tab.
+	
+	7. Under Resource Type, locate the Direct Memory Access (DMA) lines. If you see
+	  more than one Direct Memory Access (DMA) line, configure the sound card for
+	  single-mode DMA. To do this:
+	
+	  a. Click to clear the Use Automatic Settings check box.
+	
+	  b. In the Settings Based On box, click a Basic Configuration that uses only
+	     one DMA channel setting.
+	
+	     If you see a conflict message in the Conflicting Device List box, repeat
+	     this step to select another basic configuration that uses only one DMA
+	     channel and does not conflict with any other devices.
+	
+	     If you do not see a conflict message in the Conflicting Device List box,
+	     click OK, and then click Yes.
+	
+	  c. Click Close, and then restart the computer.
+	
+	  If you see only one Direct Memory Access (DMA) line, or if you cannot find a
+	  basic configuration that uses only one DMA channel, click Cancel, click
+	  Cancel again, and then proceed to the next method.
+	
+	Disable Force-Feedback Effects
+	------------------------------
+	
+	If you use a SideWinder Force Feedback Pro joystick or SideWinder Force Feedback
+	Wheel, disable the force-feedback effects. To do this:
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click Game Controllers.
+	
+	3. Click to select Microsoft SideWinder Force Feedback Pro or Microsoft
+	  SideWinder Force Feedback Wheel.
+	
+	4. Click Properties.
+	
+	5. On the Settings tab, drag the Force Feedback slider to the Off position.
+	
+	6. Click OK, and then click OK again.
+	
+	If this resolves the issue, you may need to call Microsoft SideWinder Force
+	Feedback Technical Support at (425) 635-7040 for additional assistance with
+	troubleshooting your SideWinder Force Feedback game controller.
+	
+	For additional information about how to troubleshoot issues with your SideWinder
+	force feedback game controller, click the article numbers below to view the
+	articles in the Microsoft Knowledge Base:
+	
+	  Q175184 SideWinder Force Feedback Pro: No Forces Felt on Test Forces Tab
+	
+	  Q175701 No Force Feedback Effects Testing SideWinder Force Feedback Pro
+	
+	  Q175233 SideWinder Force Feedback Pro Test Is Slow or Does Not Respond
+	
+	  Q174436 Game Port Resource Settings for SideWinder Force Feedback
+	
+	  Q174432 Game Port Requirements for SideWinder Force Feedback Pro
+	
+	  Q173689 SideWinder Force Feedback Joystick Behaves Erratically
+	
+	  Q175158 Force Feedback Err Msg: Your Gaming Device is Not Connected
+	
+	  Q175054 SideWinder Not Compatible with Game Port-MIDI Adapter Cable
+	
+	  Q174437 Joystick Does Not Work or You Cannot Feel Force Feedback Effects
+	
+	  Q174433 Connecting SideWinder Force Feedback Pro for Best Performance
+	
+	Additional query words: fsim2k fsim2000 fs2k fs2000 flightsim yoke pedals t-shoot tshoot
+	
+	======================================================================
+	Keywords          : kbenv kbhw kbtshoot fsim kbimu msgame kbHardware 
+	Technology        : kbGamesSearch kbFlightSimSearch kbFlightSim2000 kbSimSearch
+	Version           : :
+	Issue type        : kbprb
+	
+	=============================================================================
+	

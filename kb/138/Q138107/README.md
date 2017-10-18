@@ -1,0 +1,98 @@
+---
+layout: page
+title: "Q138107: PRB: Standard Toolbar Visible in .Exe"
+permalink: kb/138/Q138107/
+---
+
+## Q138107: PRB: Standard Toolbar Visible in .Exe
+
+	Article: Q138107
+	Product(s): Microsoft FoxPro
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 26-AUG-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 3.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If a Foxuser resource file is saved in the same directory as an executable and
+	this Foxuser file has been created with any toolbars visible, when the
+	executable is first run, the toolbars will appear. The toolbars, however, will
+	be inactive and if closed, will not reappear upon restarting the executable.
+	
+	CAUSE
+	=====
+	
+	This is caused by having the Foxuser resource file in the same directory as the
+	executable. The Foxuser file is a resource file that records the state of the
+	development environment when last used. It retains such settings as window
+	placement and the toolbars that were left visible when Visual FoxPro was closed.
+	If a Foxuser resource file is not in the same directory as the executable when
+	this behavior occurs, it could be because there is a PATH= system variable set
+	to a directory that contains a Foxuser resource file. This may or may not be the
+	Foxuser resource file that is maintained in the Vfp directory. Other Foxuser
+	files may exist that are being referenced by the executable via the PATH= system
+	variable.
+	
+	RESOLUTION
+	==========
+	
+	Include in the directory with the executable a Foxuser resource file that has
+	been created with the toolbars inactive or not visible.
+	
+	STATUS
+	======
+	
+	This behavior is by design.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Create a new project in a different directory from Visual FoxPro.
+	
+	2. Make a new form, and place a command button on it. In the button's Click
+	  event, place this line of code:
+	
+	     CLEAR EVENTS
+	
+	3. In the activate event of the form, place this line of code:
+	
+	     READ EVENTS
+	
+	4. Build the project into an executable in the directory created in step 1.
+	
+	5. Close the project.
+	
+	6. Before quitting Visual FoxPro, on the View menu, click Toolbars, and then
+	  select a couple of the check boxes of the toolbars. Click OK.
+	
+	7. Quit Visual FoxPro.
+	
+	8. Copy the Foxuser and Foxuser.fpt files from the Vfp directory to the same
+	  directory in which you built the executable.
+	
+	9. Double-click the executable. The toolbars left open when you closed Visual
+	  FoxPro appear. The toolbars are not of any use and if undocked can be closed
+	  by clicking the close box in the upper-right of the title bar.
+	
+	10. Click the button to exit the program. Restart the program to see that the
+	  toolbars are no longer visible.
+	
+	Additional query words: VFoxWin hiding visible
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+	
+	=============================================================================
+	

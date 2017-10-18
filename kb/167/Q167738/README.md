@@ -1,0 +1,678 @@
+---
+layout: page
+title: "Q167738: WD97: General Information about Floating Objects"
+permalink: kb/167/Q167738/
+---
+
+## Q167738: WD97: General Information about Floating Objects
+
+	Article: Q167738
+	Product(s): Word 97 for Windows
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): word97 kbframe kblayoutkbfaq
+	Last Modified: 20-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	In versions of Word earlier than Word 97, all objects except for drawing objects
+	are inserted as inline objects by default. To make text wrap around an object,
+	you generally insert the object (inline) and then apply a frame to it. In Word
+	97, however, floating objects are more flexible and powerful than frames.
+	Therefore, in Word 97, objects are inserted as floating objects by default.
+	
+	This change in the default behavior, of inline to floating, between the different
+	versions of Word may be a source of confusion at first. This article discusses
+	various problems and points of confusion you may experience when working with
+	objects formatted with the Float Over Text option turned on. This article covers
+	the following topics:
+	
+	NOTE: This behavior does not occur in Microsoft Word 97 for Windows, Service
+	Release 1 (SR-1). In Service Release 1, this feature behaves similar to the way
+	it did in Word versions 7.0 and earlier. That is, the default behavior when
+	inserting objects was changed back to inline.
+	
+	For more information about the change in the default behavior, please see the
+	following article in the Microsoft Knowledge Base:
+	
+	  Q170564 WD97: Pictures and Objects Inserted as Inline by Default in SR-1
+	
+	Overview
+	--------
+	
+	- What Are Objects?
+	
+	- Description of the Layers of a Document
+	
+	- How Objects Are Handled in Versions of Word Earlier Than Word 6.0
+	
+	- How Objects Are Handled in Versions of Word 6.0 and Later
+	
+	Choosing the Appropriate Type of Object:
+	
+	- Floating Objects
+	   - When to Use a Floating Object
+	
+	   - Limitations of Floating Objects
+	
+	- Inline objects
+	
+	- Frames
+	
+	Changing One Type of Object to Another:
+	
+	- Floating Objects
+	   - To Convert a Floating Object to an Inline Object
+	
+	   - To Convert a Floating Object to a Framed Object
+	
+	- Inline Objects
+	   - To Convert an Inline Object to a Floating Object
+	
+	   - To Convert an Inline Object to a Framed Object
+	
+	- Framed Objects
+	   - To Convert a Framed Picture to an Inline Picture
+	
+	   - To Convert Framed Text to Inline Text
+	
+	   - To Convert a Framed Object to a Floating Object
+	
+	 Troubleshooting Problems with Floating Objects:
+	
+	- Objects Move Around on the Screen, Are Not Inserted or Pasted Correctly, or
+	  Move to the Next Page
+	
+	- Objects Disappear When You Insert or Paste Them
+	
+	- You Cannot See Objects in Some Views
+	
+	- Objects Cannot Be Inserted or Pasted into a Table or the Table Is Split
+	
+	- You Cannot See Field Codes for Inserted or Pasted Objects
+	
+	- Fields in the Drawing Layer Don't Work or Return Incorrect Values
+	
+	MORE INFORMATION
+	================
+	
+	OVERVIEW
+	--------
+	
+	What Are Objects?:
+	
+	"Object" is a generic term used to describe something you insert or paste into a
+	document. Text is usually not considered an object (it is considered text).
+	Examples of objects include the following:
+	
+	  ClipArt pictures
+	  Drawing objects (text boxes, lines, AutoShapes, and so on)
+	  Equation Editor objects
+	  Graphics
+	  Microsoft Graph objects
+	  PowerPoint slides
+	  WordArt objects
+	
+	In Word 97, there are three basic types of objects. These types and a description
+	of the layers in which they can appear in Word are listed in the following
+	table. For information about the layers in a document, see the "Description of
+	the Layers of a Document" section of this article.
+	
+	  This type of object           Exists in this layer of Word
+	  ------------------------------------------------------------
+	  inline                   Only in the text layer and acts as a
+	                           single, large character. Text does
+	                           not wrap around it.
+	
+	  framed                   Only in the text layer. Text always
+	                           wraps around it.
+	
+	  floating                 Only in the drawing layer. Text may
+	                           or may not wrap around it.
+	
+	Description of the Layers of a Document:
+	
+	  -----------------
+	  |               |   In this layer you can place objects. Only "floating"
+	  |               |   objects can exist in this layer. If an object is in
+	  |               |   this layer, it appears behind the text of the
+	  |               |   document (in most cases).
+	  |               |
+	  |               |
+	  |               |
+	  |               |
+	  |               |
+	  -----------------
+	  Layer 1--Below the text
+	
+	  -----------------
+	  | This is the   | Generally, this layer contains the text
+	  |  text of      | of your document. You can, however, place objects in
+	  | the document  | this layer just as you can in the earlier versions
+	  |               | of Word. You can put the following types of objects in
+	  |               | this layer:
+	  |               |
+	  |               | text--all text and formatting for the document
+	  |               |
+	  |               | inline objects - objects that act as a single, large
+	  |               | character
+	  |               |
+	  |               | framed objects--objects that text will flow around
+	  -----------------
+	  Layer 2--The text layer
+	
+	  -----------------
+	  |               | In this layer you can place objects. Only "floating"
+	  |               | objects can exist in this layer. If an object is in
+	  |               | this layer, it appears in front of the text of the
+	  |               | document (in most cases).
+	  |               |
+	  |               |
+	  |               |
+	  |               |
+	  |               |
+	  -----------------
+	  Layer 3--Above the text
+	
+	Word has other layers that behave in the same way as the three layers mentioned
+	here. Other layers include the header/footer layers and the footnote/endnote
+	layers.
+	
+	How Objects Are Handled in Versions of Word Earlier Than Word 6.0:
+	
+	In versions of Word earlier than version 6.0 for Windows, all objects exist in
+	the same layer as the text of the document. You can insert objects "inline" so
+	that they act as a single, large, text character, or you can use a frame. When
+	you "frame" an object you can move the object around in the document by dragging
+	it, and you can get text to flow around the object. Placing a graphic on top of
+	text is virtually impossible in these earlier versions of Word.
+	
+	A line of text with an "inline" object resembles the following (with the box
+	being the object):
+	
+	  text text text text text text text
+	
+	                 |---|
+	                 |   |
+	  text text text |---| text text text text
+	  text text text text text text text text
+	
+	A line of text with a "framed" object will resemble the following (with the box
+	being the object). The text is said to "wrap" or "flow" around the object:
+	
+	  text text text text text text text
+	  text text text |---| text text text
+	  text text text |   | text text text
+	  text text text |---| text text text text
+	  text text text text text text text text
+	
+	How Objects Are Handled in Versions of Word 6.0 and Later:
+	
+	Word versions 6.0 and later include a "drawing layer." A drawing layer can be
+	thought of as a clear sheet of paper on top of, and underneath, the text of the
+	document. This gives you the ability to place objects on separate layers above
+	and below the text of the document, in addition to the traditional methods of
+	placing objects in the text layer of the document. You can also stack one object
+	on top of another object in each drawing layer. Objects in either the layer
+	above the text layer or below the text layer are called "floating objects." By
+	default, objects inserted in Word 97 are formatted as floating objects.
+	
+	CHOOSING THE APPROPRIATE TYPE OF OBJECT
+	---------------------------------------
+	
+	Floating Objects:
+	
+	Floating objects are powerful and flexible enough that you can get them to
+	emulate almost all of the behaviors of inline objects and framed objects. In
+	Word 97, most of the time, you should use a floating object rather an inline or
+	framed object.
+	
+	When to Use a Floating Object:
+	
+	Use a floating object when:
+	
+	- You want text to wrap around the object (although a floating object can be
+	  formatted to not allow text wrapping). Floating objects can have text wrap
+	  around them in ways that a framed object cannot. Wrapping styles include
+	  Square, Tight, Through, Top And Bottom, and None. Wrapping locations include
+	  wrapping to the left side, the right side, the largest side, or both sides of
+	  the object
+	
+	- You want to be able to position the object by dragging it in the document
+	  using your mouse.
+	
+	- You want to be able to position the object in front of or behind the text
+	  layer. This is commonly done when creating a watermark.
+	
+	- You want to use other drawing features with the object.
+	
+	Limitations of Floating Objects:
+	
+	Certain features do not work well with floating objects. Generally speaking,
+	fields in the text layer do not recognize fields in the drawing layer. If you
+	need to be able to access information from a field, use a frame. For example,
+	use a frame when the object includes a field that captures any of the following
+	types of information:
+	
+	  Cross-references
+	  Captions
+	  Table of Contents entries
+	  Index entries
+	  Table of Figures entries
+	  Table of Authorities entries
+	
+	NOTE: If you want to be able to view the field codes, you should use a frame
+	rather than a floating object. Note also that you should use a frame if you want
+	to be able to use the Find And Replace feature to locate the object by object
+	type. For example, you should use a frame if the object is a picture and you
+	want to be able to find it by searching for "Graphic" using the Special search
+	criteria in the Find And Replace dialog box.
+	
+	For more information about these limitations and for possible workarounds, please
+	see the following articles in the Microsoft Knowledge Base:
+	
+	  
+	
+	  Q158918 WD97: How to Insert a Caption Next to an Equation or Object
+	
+	  Q157531 WD97: Table of Figures (TOF) Missing Captions from Text Boxes
+	
+	  Q155802 WD97: Word Doesn't Find 'Float Over Text' Objects
+	
+	  Q155156 WD: Entries in Text Box or Callout Missing from Table of Contents
+	
+	  Q167282 WD97: Equation Object Not Inserted/Pasted at Insertion Point
+	
+	  Q161692 WD97: Problems with Float Over Text Objects
+	
+	Inline Objects:
+	
+	Use an inline object when:
+	
+	- You do not want text to wrap around the object.
+	
+	- You want to format the object as a character, using tabs, indents, paragraph
+	  formatting, character formatting, and so on.
+	
+	- You want to position the object in a table cell.
+	
+	Frames:
+	
+	Use a frame when you need an object to behave like a floating object, and you
+	need to use special features with it. For more information, see the "Limitations
+	of Floating Objects" section earlier in this article.
+	
+	CHANGING ONE TYPE OF OBJECT TO ANOTHER
+	--------------------------------------
+	
+	From time to time, it may be necessary to convert one type of object to another.
+	
+	Floating Objects:
+	
+	To Convert a Floating Object to an Inline Object:
+	
+	To convert a floating object to an inline object, use either of the following
+	methods.
+	
+	NOTE: For Office Art objects, the Float Over Text check box mentioned in the
+	"Method 1" solution is selected and unavailable. You cannot turn off this
+	option. For these objects, use the Method 2 solution.
+	
+	Method 1: Clear the Float Over Text Check Box:
+	
+	1. Right-click the floating object.
+	
+	2. On the shortcut menu, click Format <object>.
+	
+	3. Click the Position tab.
+	
+	4. Clear the Float Over Text check box.
+	
+	Method 2: Use a Macro:
+	
+	1. Click the object. On the Edit menu, click Cut.
+	
+	2. Run the macro described in the following article:
+	
+	  
+	
+	  Q163808 WD97: Picture Is Pasted as Float Over Text Not as Inline
+	
+	To Convert a Floating Object to a Framed Object:
+	
+	There may be times when you need your objects to act like floating objects, but
+	you need certain features that are only available when using framed objects. In
+	these few cases, it may be necessary to convert a floating object to a framed
+	object. For more information about when to use a framed versus a floating
+	object, see the "Limitations of Floating Objects" section earlier in this
+	article.
+	
+	To convert a floating object to a framed object, use either of the following
+	methods.
+	
+	Method 1: Use an Inline Object:
+	
+	With this method, you first convert the floating object to an inline object, and
+	then you convert that inline object to a framed object. To do this, use the
+	following steps:
+	
+	1. Right-click the floating object.
+	
+	2. On the shortcut menu, click Format <object>.
+	
+	3. Click the Position tab.
+	
+	4. Clear the Float Over Text check box.
+	
+	Use the following steps to convert the inline object to a framed object:
+	
+	1. Click the object to select it.
+	
+	2. On the Tools menu, point to Macro, and then click Macros.
+	
+	3. In the Macros in box, click Word Commands.
+	
+	4. For the Macro Name, type "InsertFrame" (without the quotation marks), and
+	  click the Run button.
+	
+	Method 2: Use the Convert to Frame Option:
+	
+	Text boxes and callouts have a special Convert to Frame option available that is
+	not available for other shapes. To use this feature, follow these steps:
+	
+	1. Right-click the text box or callout object.
+	
+	2. On the shortcut menu, click Format <object>.
+	
+	3. Click the Text box tab.
+	
+	4. Click the Convert to frame button.
+	
+	The text box or callout is now a frame in the text layer of the document.
+	
+	Inline Objects:
+	
+	To Convert an Inline Object to a Floating Object:
+	
+	1. Right-click the inline object.
+	
+	2. On the shortcut menu, click Format <object>.
+	
+	3. Click the Position tab.
+	
+	4. Click to select the Float Over Text check box.
+	
+	To Convert an Inline Object to a Framed Object:
+	
+	1. Click the object to select it.
+	
+	2. On the Tools menu, point to Macro, and then click Macros.
+	
+	3. In the Macros in box, click Word Commands.
+	
+	4. For the Macro Name, type "InsertFrame" (without the quotation marks) and
+	  click the Run button.
+	
+	  NOTE: The first time you run this command, the following message will be
+	  displayed:
+	
+	  You inserted a frame but Insert Frame is not on any menu. Press the button
+	  below to add Frame to the Insert menu so you can quickly and easily insert
+	  frames.
+	
+	  Clicking Yes adds the command to the Insert menu.
+	
+	Once the command is added, you can click Frame on the Insert menu (you no longer
+	need to use the InsertFrame macro command).
+	
+	The object is now in a frame and you can move it around in the document by
+	dragging it.
+	
+	Framed Objects:
+	
+	To Convert a Framed Picture to an Inline Picture:
+	
+	1. Right-click the picture.
+	
+	2. Click Format Picture on the shortcut menu.
+	
+	3. Click the Position tab.
+	
+	4. Click to clear the Float Over Text check box.
+	
+	The picture is now an inline picture.
+	
+	To Convert Framed Text to Inline Text:
+	
+	1. Right-click the frame.
+	
+	2. On the shortcut menu, click Format Frame.
+	
+	3. Click the Remove Frame button.
+	
+	The framed text is converted to inline text (standard text in the text layer of
+	the document).
+	
+	To Convert a Framed Object to a Floating Object:
+	
+	Convert the framed object to an inline object. Use the following steps to convert
+	the inline object to a floating object:
+	
+	1. Right-click the inline object.
+	
+	2. On the shortcut menu, click Format <object>.
+	
+	3. Click the Position tab.
+	
+	4. Click to select the Float Over Text check box.
+	
+	TROUBLESHOOTING PROBLEMS WITH FLOATING OBJECTS
+	----------------------------------------------
+	
+	Objects Move Around on the Screen, Are Not Inserted
+	or Pasted Correctly, or Move to the Next Page:
+	
+	This is a side effect of the object being inserted or pasted as a floating
+	object. The solution is to do either of the following.
+	
+	Method 1:
+	
+	Paste or insert the object, find it, and then drag it to the location you want,
+	or convert it to an inline object.
+	
+	For more information, please see the following article in the Microsoft Knowledge
+	Base:
+	
+	  
+	
+	  Q155804 WD97: Inserted Picture or Drawing Object Moves Down Page
+	
+	Method 2:
+	
+	Use the information in one of the following Microsoft Knowledge Base articles to
+	change the default behavior of the Insert or Paste command:
+	
+	  
+	
+	  Q163808 WD97: Picture Is Pasted as Float Over Text Not as Inline
+	
+	  Q157773 WD97: Macro to Disable Float Over Text in Insert Picture Dialog Box
+	
+	Objects Disappear When You Insert or Paste Them:
+	
+	The object you inserted or pasted may have landed on top of another object. Click
+	the object you just inserted or pasted, and drag it using the mouse. You may see
+	another object underneath it. From here, you can position each object in the
+	location you want by dragging it.
+	
+	The object you inserted or pasted may have landed on another page or on a
+	different part of the current page. Scroll around in the document until you
+	locate it. Then, you can drag it back to the location you want.
+	
+	You Cannot See Objects in Some Views:
+	
+	Floating objects cannot be seen in normal, outline, or master document view.
+	Switch to online layout or page layout view in order to see the object.
+	
+	There is also a view setting that needs to be enabled in order to see floating
+	objects. To turn this setting on, follow these steps:
+	
+	1. On the Tools menu, click Options.
+	
+	2. Click the View tab.
+	
+	3. Click to select the Drawing Objects check box.
+	
+	Objects Cannot Be Inserted or Pasted into a Table or the Table Is Split:
+	
+	If you are unable to insert or paste an object, or if the table splits into two
+	tables when you insert or paste an object, you must convert the object from a
+	floating to an inline object. To do this, use either of the following methods.
+	
+	Method 1:
+	
+	Paste or insert the object, find it, convert it to an inline object, and then cut
+	and paste it into the table cell.
+	
+	Method 2:
+	
+	Use the information in one of the following Microsoft Knowledge Base articles to
+	change the default behavior of the Insert or Paste command:
+	
+	  
+	
+	  Q163808 WD97: Picture Is Pasted as Float Over Text Not as Inline
+	
+	  Q157773 WD97: Macro to Disable Float Over Text in Insert Picture Dialog Box
+	
+	You Cannot See Field Codes for Inserted or Pasted Objects:
+	
+	The ability (or inability) to view the field code does not change the
+	functionality of the field code. Therefore, there really isn't a need to make
+	the field code visible. If, however, you want to be able to view the field code,
+	you need to convert the floating object to an inline object or a framed object.
+	
+	For more information about floating objects and field codes, please see the
+	following article in the Microsoft Knowledge Base:
+	
+	  
+	
+	  Q157465 WD97: Can't See Field Codes for Some Objects
+	
+	Fields in the Drawing Layer Don't Work or Return Incorrect Values:
+	
+	Many fields do not work in the drawing layer. These fields include REF, SEQ, TA,
+	TC, XE, TOA, TOC, AUTONUM, and MERGEFIELD. To use these fields, you must convert
+	the floating object to a framed object.
+	
+	REFERENCES
+	==========
+	
+	Microsoft Knowledge Base:
+	
+	For more information about floating objects, please see the following articles in
+	the Microsoft Knowledge Base:
+	
+	  
+	
+	  Q167282 WD97: Equation Object Not Inserted/Pasted at Insertion Point
+	
+	  Q157667 WD97: Float Over Text Objects Cutoff in Online Layout View
+	
+	  Q161692 WD97: Problems with Float Over Text Objects
+	
+	  Q157119 WD97: Pictures Visible Even When Picture Placeholders Check Box
+	  Selected
+	
+	Online Help:
+	
+	For more information about floating objects, click the Office Assistant, type
+	"floating objects," click Search, and then click "Label a graphic or insert text
+	in a shape."
+	
+	For more information about positioning objects, click the Office Assistant, type
+	"float over text," click Search, and then click one of the following topics:
+	
+	- About positioning text and graphics
+	
+	- Type over existing text
+	
+	- Select text and graphics
+	
+	- Change a floating picture to an inline picture and vice-versa
+	
+	For more information about frames, click the Office Assistant, type "frames,"
+	click Search, and then click one of the following topics:
+	
+	- Select a frame
+	
+	- Position text that contains notes, comments, or certain fields
+	
+	- The difference between a text box and a frame
+	
+	- Position a frame
+	
+	- Convert a text box to a frame
+	
+	- Resize a frame
+	
+	- Remove a frame
+	
+	For more information about wrapping text around objects, click the Office
+	Assistant, type "wrapping text around objects," click Search, and then click one
+	of the following topics:
+	
+	- Arrange text and graphics on a page
+	
+	- Troubleshoot text in drawing objects
+	
+	- Label a graphic or insert text in a shape
+	
+	For more information about wrapping text around objects, click the Office
+	Assistant, type "text wrapping," click Search, and then click "About positioning
+	text and graphics."
+	
+	For more information about AutoShapes, click the Office Assistant, type
+	"AutoShapes," click Search, and then click "Add or change an AutoShape."
+	
+	For more information about watermarks, click the Office Assistant, type
+	"watermark," click Search, and then click of the following topics:
+	
+	- Create a watermark
+	
+	- Ways to arrange drawing objects
+	
+	For more information about special drawing effects, click the Office Assistant,
+	type "wordart," click Search, and then click one of the following topics:
+	
+	- Ways to enhance drawing objects
+	
+	- Add or edit a special text effect
+	
+	- What's new with the drawing tools?
+	
+	NOTE: If the Assistant is hidden, click the Office Assistant button on the
+	Standard toolbar. If Word Help is not installed on your computer, please see the
+	following article in the Microsoft Knowledge Base:
+	
+	  
+	
+	  Q120802 Office: How to Add/Remove a Single Office Program or Component
+	
+	Additional query words: anchor anchored manipulating layer layers
+	
+	======================================================================
+	Keywords          : word97 kbframe kblayout kbfaq
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : :
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

@@ -1,0 +1,51 @@
+---
+layout: page
+title: "Q164179: Writer: Black Splotches when Printing to Canon BJC 600/620"
+permalink: kb/164/Q164179/
+---
+
+## Q164179: Writer: Black Splotches when Printing to Canon BJC 600/620
+
+	Article: Q164179
+	Product(s): Microsoft Home Kids Products
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kb3rdparty kbprint
+	Last Modified: 07-SEP-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Creative Writer for Windows, versions 1.0, 1.1, 1.1a, 1.1b, 2.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If you use a Canon BJC600 or BJC620 to print from Creative Writer, your graphics
+	may print out as black silhouettes, or they may print out partially in color and
+	partially in grayscale.
+	
+	MORE INFORMATION
+	================
+	
+	With some Canon Bubble Jet printers, the emulation printer drivers (e.g. Epson
+	LQ 2550) will allow you to workaround this type of problem.
+	
+	
+	For more information on Canon BJC printer driver updates, contact Canon at (800)
+	423-2366.
+	
+	Microsoft has confirmed this to be a problem in Creative Writer. We are
+	researching this problem and will post new information here in the Microsoft
+	Knowledge Base as it becomes available.
+	
+	Additional query words: kids kbmm mskids writer cw2 cw2.0 dark printout print-out pictures clipart clip art work bubblejet grey greyscale bubble-jet
+	
+	======================================================================
+	Keywords          : kb3rdparty kbprint 
+	Technology        : kbHomeProdSearch kbCreativeWriter100 kbCreativeWriter200 kbCreativeWriter110 kbCreativeWriter110a kbCreativeWriter110b
+	Issue type        : kbprb
+	
+	=============================================================================
+	

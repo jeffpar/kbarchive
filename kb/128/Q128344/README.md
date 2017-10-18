@@ -1,0 +1,154 @@
+---
+layout: page
+title: "Q128344: FIX: Error C2593: 'operator +' Is Ambiguous"
+permalink: kb/128/Q128344/
+---
+
+## Q128344: FIX: Error C2593: 'operator +' Is Ambiguous
+
+	Article: Q128344
+	Product(s): Microsoft C Compiler
+	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,4.0,4.1,4.2
+	Operating System(s): 
+	Keyword(s): kbcode kbtool kbCompiler kbCPPonly kbVC kbVC500fix
+	Last Modified: 29-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft C/C++ Compiler (CL.EXE), included with:
+	   - Microsoft C/C++ for MS-DOS, version 7.0 
+	   - Microsoft Visual C++, versions 1.0, 1.5, 1.51, 1.52 
+	   - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, versions 1.0, 2.0, 2.1, 4.0, 4.1, 4.2 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When enumerated types are used in some (+-*/|&^%) operator overloads, the
+	Microsoft compilers listed above may generate the following message:
+	
+	  Error C2593: 'operator +' is ambiguous
+	
+	In Visual C++, 32-bit edition, version 2.1, the following warnings are also
+	displayed:
+	
+	  Warning C4387: 'enum Test __cdecl operator+(enum Test, enum Test)': was
+	  considered
+	
+	  Warning C4388: and built-in global operator was considered
+	
+	The "Sample Code" section in this article demonstrates this problem.
+	
+	CAUSE
+	=====
+	
+	Without determining that there is an exact operator overload match, the compiler
+	is considering the enumerator types promoted to int type. This causes the C2593
+	ambiguous error.
+	
+	RESOLUTION
+	==========
+	
+	Use one of the following three workarounds:
+	
+	- With Visual C++ 32-bit Edition, versions 2.x and 4.x, you can work around the
+	  problem by using a class template. See the "Sample Code to Work Around
+	  Problem" section in this article. This workaround provides a class template
+	  that can be used for any enum type. One of the parameters for the overloaded
+	  operator needs to be of the class template type and the enums need to be
+	  declared as the class type.
+	
+	-or-
+	
+	- You can call the overloaded operator using normal function call syntax. For
+	  example:
+	
+	     eTest = operator+( eTest1, eTest2 );
+	
+	-or-
+	
+	- You can just use the built-in global operator, and then convert the result
+	  back to enum type. For example:
+	
+	     eTest = Test( (int)eTest1 + eTest2 );
+	
+	  where eTest, eTest1 and eTest2 are of type enum Test{}.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article. This bug was corrected in Visual C++ version 5.0.
+	
+	MORE INFORMATION
+	================
+	
+	Sample Code to Reproduce Problem
+	--------------------------------
+	
+	     /* Compiler options needed: None.
+	     */ 
+	
+	     enum Test { ONE, TWO, THREE };
+	
+	     Test operator+(Test eTest, Test eTest2)
+	     {
+	        Test   eRet = Test(int(eTest) + int(eTest2));
+	        return eRet;
+	     }
+	
+	     void main()
+	     {
+	        Test    eTest=ONE, eTest2=TWO;
+	        eTest = eTest + eTest2;     // C2593 error
+	     }
+	
+	Sample Code to Work Around Problem
+	----------------------------------
+	
+	     /* Compiler options needed: None.
+	     */ 
+	
+	     enum Test { ONE=1, TWO, THREE };
+	
+	     template<class T> class CFix
+	     {
+	        T m_fix;
+	
+	      public:
+	
+	        CFix(T eFix) { m_fix = eFix; }
+	
+	        operator T() { return  m_fix; }
+	     };
+	
+	     Test operator+(CFix<Test> eTest, Test eTest2)
+	     {
+	        Test   eRet = Test(int(eTest) + int(eTest2));
+	        return eRet;
+	     }
+	
+	     void main()
+	     {
+	        CFix<Test>  eTest=ONE, eTest2=TWO;
+	        eTest = eTest + eTest2;
+	     }
+	
+	REFERENCES
+	==========
+	
+	More information about operator overloading can be found in "The Annotated C++
+	Reference Manual (Jan '94)" section 13.4.
+	
+	Additional query words: kbVC400bug cpp 9.00 8.00 8.00c 10.00 10.10 10.20
+	
+	======================================================================
+	Keywords          : kbcode kbtool kbCompiler kbCPPonly kbVC kbVC500fix 
+	Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+	Version           : :1.0,1.5,1.51,1.52,2.0,2.1,4.0,4.1,4.2
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

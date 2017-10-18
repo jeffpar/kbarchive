@@ -1,0 +1,102 @@
+---
+layout: page
+title: "Q214442: FIX: Incorrect Prototype in ClassWizard CRecordset::Move()"
+permalink: kb/214/Q214442/
+---
+
+## Q214442: FIX: Incorrect Prototype in ClassWizard CRecordset::Move()
+
+	Article: Q214442
+	Product(s): Microsoft C Compiler
+	Version(s): 6.0
+	Operating System(s): 
+	Keyword(s): kbwizard kbDatabase kbVC600bug kbNoUpdate
+	Last Modified: 11-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+	- Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+	- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you use the ClassWizard to generate an override for the Move() virtual
+	method in a CRecordset derived class, the prototype provided is incorrect.
+	
+	This produces a new virtual function, not an override for the Move() method
+	specified in the base class. As a result, whenever the Move() function is called
+	through a pointer to the base class (CRecordset) the generated Move() function
+	that the developer expects to override the base class Move()) is ignored, and
+	the base class Move() is called instead.
+	
+	RESOLUTION
+	==========
+	
+	Manually edit the generated text or do not use the ClassWizard.
+	
+	The generated text is:
+	
+	  class CMyRecordset : public CRecordset
+	  {  // [...]
+	     //{ {AFX_VIRTUAL(CMyRecordset)
+	     public:
+	     // [...]
+	     virtual void Move(long lRows);
+	     //} }AFX_VIRTUAL
+	     // [...]
+	  };
+	
+	Edit as follows:
+	
+	  class CMyRecordset : public CRecordset
+	  {  // [...]
+	     //{ {AFX_VIRTUAL(CMyRecordset)
+	     public:
+	     // [...]
+	     virtual void Move(long lRows, WORD wFetchType = SQL_FETCH_RELATIVE);
+	     //} }AFX_VIRTUAL
+	     // [...]
+	  };
+	
+	You need to make similar changes in the implementation file for
+	CMyRecordset::Move().
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article.
+	
+	This problem was corrected in Microsoft Visual C++ .NET.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Create a new MFC project with any level of database support.
+	
+	2. Use ClassWizard to add a new class, CMyRecordset derived from CRecordset.
+	
+	3. Right-click on the new class in ClassView and click Add virtual function.
+	  Click Move.
+	
+	RESULT: Look in the header file and the implementation file for the generated
+	class. The prototype used for Move() is not correct.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbwizard kbDatabase kbVC600bug kbNoUpdate 
+	Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch
+	Version           : :6.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

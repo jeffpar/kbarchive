@@ -1,0 +1,170 @@
+---
+layout: page
+title: "Q192188: BUG: TreeView Problems with CheckBoxes"
+permalink: kb/192/Q192188/
+---
+
+## Q192188: BUG: TreeView Problems with CheckBoxes
+
+	Article: Q192188
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): WINDOWS:6.0
+	Operating System(s): 
+	Keyword(s): kbCmnCtrls kbCtrl kbTreeView kbVBp kbVBp600bug kbGrpDSVB
+	Last Modified: 12-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	After setting the Treeview control's Checkbox's property to True, selecting the
+	CheckBox on a child node can return the incorrect state of the CheckBox. The
+	value returned is inconsistent depending upon whether the CheckBox is selected
+	or the label is selected. Also, clicking the CheckBox does not fire the
+	NodeClick event; it only fires the Click event of the TreeView.
+	
+	RESOLUTION
+	==========
+	
+	Use Win32 API calls instead of setting the Checkboxes property to True. See the
+	MORE INFORMATION section below for more details.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article.
+	
+	MORE INFORMATION
+	================
+	
+	The Checkboxes property has been added to the Treeview control that is shipped
+	with Visual Basic 6.0.
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Start a new Standard EXE project in Visual Basic. Form1 is created by
+	  default.
+	
+	2. From the Project menu, choose Components, and select "Microsoft Windows
+	  Common Controls 6.0."
+	
+	3. Place a TreeView control on Form1.
+	
+	4. Add the following to the code window of Form1:
+	
+	        Private Sub Form_Load()
+	           Const TVS_CHECKBOXES = &H100
+	           Const GWL_STYLE = (-16)
+	
+	           Dim CurStyle As Long
+	           Dim Result As Long
+	
+	           Dim nodX As Node
+	           Set nodX = TreeView1.Nodes.Add(, , "R", "Root")
+	           Set nodX = TreeView1.Nodes.Add("R", tvwChild, "C1", "Child 1")
+	           Set nodX = TreeView1.Nodes.Add("R", tvwChild, "C2", "Child 2")
+	           Set nodX = TreeView1.Nodes.Add("R", tvwChild, "C3", "Child 3")
+	           Set nodX = TreeView1.Nodes.Add("R", tvwChild, "C4", "Child 4")
+	           nodX.EnsureVisible
+	           TreeView1.Checkboxes = True
+	
+	           TreeView1.Style = tvwTreelinesText   ' Style 4.
+	           TreeView1.BorderStyle = vbFixedSingle
+	        End Sub
+	
+	        Private Sub TreeView1_NodeClick(ByVal Node As MSComctlLib.Node)
+	           ' This code never gets executed
+	           Debug.Print "NodeClick: "; TreeView1.SelectedItem.Checked
+	        End Sub
+	
+	        Private Sub TreeView1_Click()
+	           Debug.Print "Click: "; TreeView1.SelectedItem.Checked
+	        End Sub
+	
+	5. Save the project and run it.
+	
+	6. Click one of the child node CheckBoxes and look at the checked state in the
+	  immediate window. Note that the checked state is False even though the
+	  CheckBox is selected.
+	
+	  NOTE: The checked property should be consistent with the state of the CheckBox
+	  of the node. This should also be available to the NodeClick event.
+	
+	7. Click the label of one of the child nodes and note that the checked state is
+	  displayed properly.
+	
+	8. To work around this bug, use the Win32 API call SetWindowLong to manually set
+	  the CheckBox style of the TreeView. In order for this to function properly,
+	  set the LabelEdit property to tvwManual. Following these steps allows the
+	  NodeClick event to fire and the checked property will be consistent with the
+	  state of the CheckBox of the node.
+	
+	9. Return to the design environment and modify the code in the Form1 module to
+	  match the following (you can also delete the existing code and add this):
+	
+	        Private Declare Function GetWindowLong Lib "user32" Alias _
+	         "GetWindowLongA" (ByVal hwnd As Long, ByVal nIndex As Long) As Long
+	
+	        Private Declare Function SetWindowLong Lib "user32" Alias _
+	         "SetWindowLongA" (ByVal hwnd As Long, ByVal nIndex As Long, _
+	         ByVal dwNewLong As Long) As Long
+	
+	        Private Sub Form_Load()
+	           Const TVS_CHECKBOXES = &H100
+	           Const GWL_STYLE = (-16)
+	
+	           Dim CurStyle As Long
+	           Dim Result As Long
+	
+	           Dim nodX As Node
+	           Set nodX = TreeView1.Nodes.Add(, , "R", "Root")
+	           Set nodX = TreeView1.Nodes.Add("R", tvwChild, "C1", "Child 1")
+	           Set nodX = TreeView1.Nodes.Add("R", tvwChild, "C2", "Child 2")
+	           Set nodX = TreeView1.Nodes.Add("R", tvwChild, "C3", "Child 3")
+	           Set nodX = TreeView1.Nodes.Add("R", tvwChild, "C4", "Child 4")
+	           nodX.EnsureVisible
+	
+	           TreeView1.LabelEdit = tvwManual
+	           TreeView1.Style = tvwTreelinesText   ' Style 4.
+	           TreeView1.BorderStyle = vbFixedSingle
+	           CurStyle = GetWindowLong(TreeView1.hwnd, GWL_STYLE)
+	           Result = SetWindowLong(TreeView1.hwnd, GWL_STYLE, _
+	                    CurStyle Or TVS_CHECKBOXES)
+	        End Sub
+	
+	        Private Sub TreeView1_NodeClick(ByVal Node As MSComctlLib.Node)
+	           Debug.Print TreeView1.SelectedItem.Checked
+	        End Sub
+	
+	10. Save and run the project again. Repeat steps 6 - 7 and observe that the
+	  incorrect behavior no longer occurs. NOTE: The LabelEdit property needs to
+	  be set to tvwManual or the workaround will not be effective.
+	
+	REFERENCES
+	==========
+	
+	For additional information, click the article number below to view the article
+	in the Microsoft Knowledge Base:
+	
+	  Q224181 BUG: GDI Resource Leak Using Checkboxes in ListView Control
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbCmnCtrls kbCtrl kbTreeView kbVBp kbVBp600bug kbGrpDSVB 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600
+	Version           : WINDOWS:6.0
+	Issue type        : kbbug
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

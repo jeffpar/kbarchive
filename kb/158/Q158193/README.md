@@ -1,0 +1,541 @@
+---
+layout: page
+title: "Q158193: Windows 95 OEM Service Release 2 CD-ROM Directory (5 of 6)"
+permalink: kb/158/Q158193/
+---
+
+## Q158193: Windows 95 OEM Service Release 2 CD-ROM Directory (5 of 6)
+
+	Article: Q158193
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:95
+	Operating System(s): 
+	Keyword(s): win95
+	Last Modified: 13-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 95 OEM Service Release, version 2.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article lists the directory contents of the Windows 95 OEM Service Release
+	2 (OSR2) CD-ROM (part 5 of 6).
+	
+	NOTE: The directory listing in this article corresponds to the contents of the
+	original CD-ROM shipped to OEMs. Because OEMs can customize the CD-ROM they ship
+	to customers, the contents of a customer's CD-ROM may vary from this article.
+	
+	MORE INFORMATION
+	================
+	
+	Contents of the Win95_18.cab File
+	---------------------------------
+	
+	LZ32     DLL         5,632  08-24-96 11:11a
+	USER32   DLL        44,544  08-24-96 11:11a
+	WOW32    DLL         4,096  08-24-96 11:11a
+	LOGOS    SYS       129,078  08-24-96 11:11a
+	LOGOW    SYS       129,078  08-24-96 11:11a
+	VDHCP    386        27,973  08-24-96 11:11a
+	VIP      386        62,614  08-24-96 11:11a
+	VNBT     386        95,481  08-24-96 11:11a
+	VTCP     386        47,377  08-24-96 11:11a
+	VTDI     386         5,687  08-24-96 11:11a
+	WSOCK32  DLL        66,560  08-24-96 11:11a
+	_PWMOVE  BAT           576  08-24-96 11:11a
+	DCAMAC   BIN        40,742  08-24-96 11:11a
+	EAGLECAF BIN        26,880  08-24-96 11:11a
+	EAGLEMAC BIN        26,880  08-24-96 11:11a
+	MDGMPORT BIN        51,350  08-24-96 11:11a
+	NE3200   BIN         4,096  08-24-96 11:11a
+	NETFLX   BIN       110,720  08-24-96 11:11a
+	WINPOPUP CNT           403  08-24-96 11:11a
+	NETCPL   CPL         5,312  08-24-96 11:11a
+	PASSWORD CPL        37,376  08-24-96 11:11a
+	CHOOSUSR DLL        22,016  08-24-96 11:11a
+	ICMP     DLL         6,496  08-24-96 11:11a
+	INETMIB1 DLL        52,032  08-24-96 11:11a
+	MPR      DLL        40,448  08-24-96 11:11a
+	MPRSERV  DLL       119,296  08-24-96 11:11a
+	MSAB32   DLL        61,952  08-24-96 11:11a
+	MSNET32  DLL        60,416  08-24-96 11:11a
+	MSNP32   DLL        67,584  08-24-96 11:11a
+	MSPP32   DLL        17,920  08-24-96 11:11a
+	MSPWL32  DLL        21,504  08-24-96 11:11a
+	MSSHRUI  DLL        76,288  08-24-96 11:11a
+	NDDEAPI  DLL        14,032  08-24-96 11:11a
+	NDDENB   DLL        10,768  08-24-96 11:11a
+	NETAPI32 DLL         4,096  08-24-96 11:11a
+	NETBIOS  DLL         6,656  08-24-96 11:11a
+	NW16     DLL         6,528  08-24-96 11:11a
+	NWAB32   DLL        25,600  08-24-96 11:11a
+	NWNET32  DLL        21,504  08-24-96 11:11a
+	NWNP32   DLL        77,312  08-24-96 11:11a
+	NWPP32   DLL        43,008  08-24-96 11:11a
+	PMSPL    DLL        26,608  08-24-96 11:11a
+	RPCLTC1  DLL         8,192  08-24-96 11:11a
+	RPCLTC3  DLL         7,584  08-24-96 11:11a
+	RPCLTC5  DLL         9,200  08-24-96 11:11a
+	RPCLTC6  DLL         8,128  08-24-96 11:11a
+	RPCLTS3  DLL         9,168  08-24-96 11:11a
+	RPCLTS5  DLL        10,736  08-24-96 11:11a
+	RPCLTS6  DLL         9,696  08-24-96 11:11a
+	RPCNS4   DLL        30,832  08-24-96 11:11a
+	RPCRT4   DLL       202,240  08-24-96 11:11a
+	SAPNSP   DLL         9,216  08-24-96 11:11a
+	SECUR32  DLL        25,088  08-24-96 11:11a
+	SVRAPI   DLL        13,312  08-24-96 11:11a
+	WINNET16 DLL         2,000  08-24-96 11:11a
+	WINSOCK  DLL        42,368  08-24-96 11:11a
+	WNPP32   DLL        13,824  08-24-96 11:11a
+	AM2100   DOS        11,105  08-24-96 11:11a
+	CPQNDIS  DOS        16,955  08-24-96 11:11a
+	DC21X4   DOS        46,573  08-24-96 11:11a
+	DEPCA    DOS        15,593  08-24-96 11:11a
+	DNCRWL02 DOS        35,647  08-24-96 11:11a
+	E100     DOS        22,192  08-24-96 11:11a
+	E20ND    DOS        16,332  08-24-96 11:11a
+	E21ND    DOS         8,832  08-24-96 11:11a
+	E22ND    DOS        10,512  08-24-96 11:11a
+	E30ND    DOS        16,002  08-24-96 11:11a
+	E31ND    DOS         8,031  08-24-96 11:11a
+	EL59X    DOS        17,430  08-24-96 11:11a
+	ELNK16   DOS         9,792  08-24-96 11:11a
+	ELNK3    DOS        15,519  08-24-96 11:11a
+	ELNKII   DOS        11,322  08-24-96 11:11a
+	ELNKMC   DOS         9,542  08-24-96 11:11a
+	ELNKPL   DOS        17,116  08-24-96 11:11a
+	EPNDIS   DOS        19,230  08-24-96 11:11a
+	EPRO     DOS        16,995  08-24-96 11:11a
+	ES3210   DOS        14,544  08-24-96 11:11a
+	EVX16    DOS        11,299  08-24-96 11:11a
+	EXP16    DOS        10,478  08-24-96 11:11a
+	HPFEND   DOS        14,299  08-24-96 11:11a
+	HPLAN    DOS        15,470  08-24-96 11:11a
+	HPLANB   DOS        11,744  08-24-96 11:11a
+	HPLANE   DOS        17,936  08-24-96 11:11a
+	HPLANP   DOS        12,640  08-24-96 11:11a
+	I82593   DOS        10,279  08-24-96 11:11a
+	IBMTOK   DOS        10,112  08-24-96 11:11a
+	IRMATR   DOS        59,448  08-24-96 11:11a
+	NCC16    DOS        42,802  08-24-96 11:11a
+	NDIS39XR DOS        34,880  08-24-96 11:11a
+	NDIS89XR DOS        35,160  08-24-96 11:11a
+	NDIS99XR DOS        38,251  08-24-96 11:11a
+	NE1000   DOS        14,020  08-24-96 11:11a
+	NE2000   DOS        13,964  08-24-96 11:11a
+	NE3200   DOS        33,582  08-24-96 11:11a
+	NETFLX   DOS        78,996  08-24-96 11:11a
+	NI5210   DOS        10,472  08-24-96 11:11a
+	NI6510   DOS        11,070  08-24-96 11:11a
+	OLITOK16 DOS        55,710  08-24-96 11:11a
+	PCNTND   DOS        50,400  08-24-96 11:11a
+	PE2NDIS  DOS        30,721  08-24-96 11:11a
+	PENDIS   DOS        22,266  08-24-96 11:11a
+	PRO4     DOS        29,090  08-24-96 11:11a
+	PRO4AT   DOS        33,770  08-24-96 11:11a
+	SLAN     DOS        13,578  08-24-96 11:11a
+	SMARTND  DOS        88,809  08-24-96 11:11a
+	SMC_ARC  DOS        20,327  08-24-96 11:11a
+	SMC3000  DOS        12,271  08-24-96 11:11a
+	SMC8000  DOS        35,584  08-24-96 11:11a
+	SMC8100  DOS        62,496  08-24-96 11:11a
+	SMC8232  DOS        31,232  08-24-96 11:11a
+	SMC9000  DOS        17,184  08-24-96 11:11a
+	STRN     DOS        41,946  08-24-96 11:11a
+	T20ND    DOS        37,939  08-24-96 11:11a
+	T30ND    DOS        45,388  08-24-96 11:11a
+	TCCARC   DOS        19,972  08-24-96 11:11a
+	TCCTOK   DOS        24,954  08-24-96 11:11a
+	TLNK     DOS        12,426  08-24-96 11:11a
+	TLNK3    DOS        10,896  08-24-96 11:11a
+	UBNEI    DOS        24,930  08-24-96 11:11a
+	UBNEPS   DOS        20,257  08-24-96 11:11a
+	MSNET    DRV         7,072  08-24-96 11:11a
+	PRORAPM  DWN        24,734  08-24-96 11:11a
+	ARP      EXE        19,536  08-24-96 11:11a
+	FTP      EXE        37,520  08-24-96 11:11a
+	LMSCRIPT EXE         4,785  08-24-96 11:11a
+	LOGIN    EXE        12,135  08-24-96 11:11a
+	MPREXE   EXE        12,800  08-24-96 11:11a
+	MSDLC    EXE        31,284  08-24-96 11:11a
+	NBTSTAT  EXE        33,371  08-24-96 11:11a
+	NETDDE   EXE        54,992  08-24-96 11:11a
+	NETSTAT  EXE        23,776  08-24-96 11:11a
+	NWLSCON  EXE        13,824  08-24-96 11:11a
+	NWLSPROC EXE        71,680  08-24-96 11:11a
+	ODIHLP   EXE         4,197  08-24-96 11:11a
+	PE3NDIS  EXE        23,506  08-24-96 11:11a
+	PING     EXE        12,128  08-24-96 11:11a
+	ROUTE    EXE        23,696  08-24-96 11:11a
+	RPCSS    EXE        81,644  08-24-96 11:11a
+	TELNET   EXE        66,672  08-24-96 11:11a
+	TRACERT  EXE         9,056  08-24-96 11:11a
+	WINIPCFG EXE        38,912  08-24-96 11:11a
+	WINPOPUP EXE        27,600  08-24-96 11:11a
+	WSASRV   EXE         6,960  08-24-96 11:11a
+	TELNET   HLP        24,099  08-24-96 11:11a
+	WINPOPUP HLP        11,591  08-24-96 11:11a
+	WINPOPUP INF         1,932  08-24-96 11:11a
+	NETWARE  MS          1,632  08-24-96 11:11a
+	LMSCRIPT PIF           995  08-24-96 11:11a
+	HOSTS    SAM           728  08-24-96 11:11a
+	LMHOSTS  SAM         3,691  08-24-96 11:11a
+	DC21X4   SYS        61,056  08-24-96 11:11a
+	E100     SYS        39,424  08-24-96 11:11a
+	E20N3    SYS        14,256  08-24-96 11:11a
+	E21N3    SYS        15,328  08-24-96 11:11a
+	E22N3    SYS        31,744  08-24-96 11:11a
+	EE16     SYS        16,752  08-24-96 11:11a
+	IFSHLP   SYS         3,708  08-24-96 11:11a
+	MDGMPORT SYS        41,616  08-24-96 11:11a
+	NE1000   SYS        16,832  08-24-96 11:11a
+	NE2000   SYS        17,168  08-24-96 11:11a
+	NE3200   SYS        17,056  08-24-96 11:11a
+	NETFLX   SYS        37,312  08-24-96 11:11a
+	OCTK16   SYS        79,872  08-24-96 11:11a
+	
+	Contents of the Win95_19.cab File
+	---------------------------------
+	
+	TDKCD02  SYS        24,224  08-24-96 11:11a
+	AFVXD    VXD        25,402  08-24-96 11:11a
+	AM1500T  VXD        22,631  08-24-96 11:11a
+	CENDIS   VXD        22,617  08-24-96 11:11a
+	CPQNDIS3 VXD        31,837  08-24-96 11:11a
+	DECLAN   VXD        27,213  08-24-96 11:11a
+	E30N3    VXD        31,636  08-24-96 11:11a
+	E31N3    VXD        31,636  08-24-96 11:11a
+	EE16     VXD        23,129  08-24-96 11:11a
+	EL59X    VXD        48,710  08-24-96 11:11a
+	ELNK16   VXD        29,379  08-24-96 11:11a
+	ELNK3    VXD        30,773  08-24-96 11:11a
+	ELNKII   VXD        31,325  08-24-96 11:11a
+	ELNKMC   VXD        28,787  08-24-96 11:11a
+	ELPC3    VXD        29,785  08-24-96 11:11a
+	EPRO     VXD        25,152  08-24-96 11:11a
+	FILESEC  VXD        23,025  08-24-96 11:11a
+	HPEISA   VXD        35,629  08-24-96 11:11a
+	HPFEND   VXD        39,494  08-24-96 11:11a
+	HPISA    VXD        43,588  08-24-96 11:11a
+	HPMCA    VXD        43,588  08-24-96 11:11a
+	IBMTOK   VXD        39,250  08-24-96 11:11a
+	IBMTOK4  VXD        35,086  08-24-96 11:11a
+	IRMATRAC VXD        41,075  08-24-96 11:11a
+	MSODISUP VXD        23,897  08-24-96 11:11a
+	MSSP     VXD        21,657  08-24-96 11:11a
+	NDIS     VXD       116,301  08-24-96 11:11a
+	NDIS2SUP VXD        23,744  08-24-96 11:11a
+	NETBEUI  VXD        45,752  08-24-96 11:11a
+	NICE     VXD        22,609  08-24-96 11:11a
+	NSCL     VXD        23,606  08-24-96 11:11a
+	NWLINK   VXD        50,998  08-24-96 11:11a
+	NWNBLINK VXD        46,653  08-24-96 11:11a
+	NWSERVER VXD       130,620  08-24-96 11:11a
+	NWSP     VXD        14,438  08-24-96 11:11a
+	OCTK32   VXD        72,655  08-24-96 11:11a
+	OTCETH   VXD        39,827  08-24-96 11:11a
+	PCNTN3   VXD        35,461  08-24-96 11:11a
+	PE3NDIS  VXD        30,811  08-24-96 11:11a
+	PERF     VXD        22,583  08-24-96 11:11a
+	PROTEON  VXD        38,995  08-24-96 11:11a
+	SETP3    VXD        31,838  08-24-96 11:11a
+	SMC8000W VXD        36,959  08-24-96 11:11a
+	SMC80PC  VXD        28,765  08-24-96 11:11a
+	SMC8100W VXD        71,773  08-24-96 11:11a
+	SMC8232W VXD        28,767  08-24-96 11:11a
+	SMC9000  VXD        29,433  08-24-96 11:11a
+	SNIP     VXD        27,217  08-24-96 11:11a
+	SOCKET   VXD        27,217  08-24-96 11:11a
+	SPENDIS  VXD        17,996  08-24-96 11:11a
+	T20N3    VXD        63,935  08-24-96 11:11a
+	T30N3    VXD        64,027  08-24-96 11:11a
+	TCTOKCH  VXD        37,616  08-24-96 11:11a
+	TLNK3    VXD        52,627  08-24-96 11:11a
+	UBNEI    VXD        31,311  08-24-96 11:11a
+	VNETBIOS VXD        27,221  08-24-96 11:11a
+	VNETSUP  VXD        19,129  08-24-96 11:11a
+	VREDIR   VXD       156,749  08-24-96 11:11a
+	VSERVER  VXD       112,880  08-24-96 11:11a
+	WSHTCP   VXD         5,816  08-24-96 11:11a
+	WSIPX    VXD        14,521  08-24-96 11:11a
+	WSOCK    VXD        15,523  08-24-96 11:11a
+	PROTMAN  DOS        22,810  08-24-96 11:11a
+	NET      EXE       375,930  08-24-96 11:11a
+	PROTMAN  EXE        14,952  08-24-96 11:11a
+	NET      MSG       109,229  08-24-96 11:11a
+	NETH     MSG        73,275  08-24-96 11:11a
+	NDISHLP  SYS         6,140  08-24-96 11:11a
+	UNICODE  BIN         3,279  08-24-96 11:11a
+	AMOVIE   CNT           202  08-24-96 11:11a
+	IEXPLORE CNT         2,621  08-24-96 11:11a
+	INT-MAIL CNT         1,289  08-24-96 11:11a
+	MAILNEWS CNT         6,675  08-24-96 11:11a
+	MSNAUTH  CNT           173  08-24-96 11:11a
+	UPDATE   CNT            97  08-24-96 11:11a
+	W_IR     CNT         1,517  08-24-96 11:11a
+	WAB      CNT           309  08-24-96 11:11a
+	EGA      CPI        58,870  08-24-96 11:11a
+	ISO      CPI        49,754  08-24-96 11:11a
+	INETCPL  CPL       110,304  08-24-96 11:11a
+	INFRARED CPL         7,168  08-24-96 11:11a
+	MSWEBCPL CPL        28,160  08-24-96 11:11a
+	CACHEVU  DLL        29,008  08-24-96 11:11a
+	COMCAT   DLL        21,264  08-24-96 11:11a
+	COUNTER  DLL         5,632  08-24-96 11:11a
+	DIGSIG   DLL       204,288  08-24-96 11:11a
+	FTPMIB   DLL         7,648  08-24-96 11:11a
+	FTPSAPI2 DLL         8,192  08-24-96 11:11a
+	FTPSVC2  DLL        54,784  08-24-96 11:11a
+	GAPIA32  DLL        83,552  08-24-96 11:11a
+	HLINK    DLL        61,200  08-24-96 11:11a
+	HLINKPRX DLL        14,160  08-24-96 11:11a
+	HTMLA    DLL        50,688  08-24-96 11:11a
+	HTMLEDIT DLL       228,624  08-24-96 11:11a
+	HTTPMIB  DLL         7,664  08-24-96 11:11a
+	HTTPODBC DLL        34,816  08-24-96 11:11a
+	IMAGEHLP DLL        99,376  08-24-96 11:11a
+	INET16   DLL         5,856  08-24-96 11:11a
+	INETAB32 DLL        20,992  08-24-96 11:11a
+	INETCFG  DLL        96,256  08-24-96 11:11a
+	INFOADMN DLL        29,184  08-24-96 11:11a
+	INFOCOMM DLL       112,640  08-24-96 11:11a
+	INFRARED DLL        28,416  08-24-96 11:11a
+	INLOADER DLL        78,848  08-24-96 11:11a
+	INST16   DLL         2,352  08-24-96 11:11a
+	INST32   DLL         4,608  08-24-96 11:11a
+	JSCRIPT  DLL       247,808  08-24-96 11:11a
+	MINET32  DLL       226,672  08-24-96 11:11a
+	
+	Contents of the Win95_20.cab File
+	---------------------------------
+	
+	MSHTML   DLL       847,632  08-24-96 11:11a
+	MSRATING DLL        82,112  08-24-96 11:11a
+	MSWEBAB  DLL        24,576  08-24-96 11:11a
+	MSWEBAPI DLL        18,432  08-24-96 11:11a
+	NPRA32   DLL        38,400  08-24-96 11:11a
+	RA32     DLL       186,368  08-24-96 11:11a
+	RA3228_8 DLL        71,168  08-24-96 11:11a
+	RAGUI32  DLL       226,304  08-24-96 11:11a
+	RSABASE  DLL        71,440  08-24-96 11:11a
+	SCHANNEL DLL       109,200  08-24-96 11:11a
+	SHDOCVW  DLL       449,296  08-24-96 11:11a
+	SHLWAPI  DLL        36,864  08-24-96 11:11a
+	URLMON   DLL       182,752  08-24-96 11:11a
+	VBSCRIPT DLL       206,848  08-24-96 11:11a
+	W3SVAPI  DLL         8,192  08-24-96 11:11a
+	W3SVC    DLL       108,544  08-24-96 11:11a
+	WININET  DLL       289,552  08-24-96 11:11a
+	WINTRUST DLL       130,048  08-24-96 11:11a
+	WSADMIN  DLL        23,040  08-24-96 11:11a
+	TAMAUDIO DRV        12,336  08-24-96 11:11a
+	ACTMOVIE EXE        39,280  08-24-96 11:11a
+	AOLSETUP EXE        49,664  08-24-96 11:11a
+	CSSETUP  EXE       113,664  08-24-96 11:11a
+	DIALMON  EXE        25,600  08-24-96 11:11a
+	DRWATSON EXE        38,351  08-24-96 11:11a
+	IEXPLORE EXE        38,400  08-24-96 11:11a
+	INETSW95 EXE        15,872  08-24-96 11:11a
+	INETWIZ  EXE        18,432  08-24-96 11:11a
+	INFINST  EXE        69,120  08-24-96 11:11a
+	IRMON    EXE       116,736  08-24-96 11:11a
+	IRMONHLP EXE         3,717  08-24-96 11:11a
+	MSWEBNDI EXE         7,184  08-24-96 11:11a
+	RAPLAYER EXE        75,264  08-24-96 11:11a
+	REGEXP   EXE        20,992  08-24-96 11:11a
+	REGSVR32 EXE        24,064  08-24-96 11:11a
+	SETUP25I EXE     1,450,308  08-24-96 11:11a
+	
+	Contents of the Win95_21.cab File
+	---------------------------------
+	
+	SETUP32  EXE     2,155,269  08-24-96 11:11a
+	
+	Contents of the Win95_22.cab File
+	---------------------------------
+	
+	SETUPSLT EXE     1,067,520  08-24-96 11:11a
+	
+	Contents of the Win95_23.cab File
+	---------------------------------
+	
+	SIGRES   EXE        15,104  08-24-96 11:11a
+	SVCTRL   EXE         7,680  08-24-96 11:11a
+	WABMIG   EXE        18,944  08-24-96 11:11a
+	ACCESBTN GIF         3,996  08-24-96 11:11a
+	ADV0     GIF           245  08-24-96 11:11a
+	ADV1     GIF           285  08-24-96 11:11a
+	ATTLOGO  GIF         1,295  08-24-96 11:11a
+	BLGLOBE  GIF         4,082  08-24-96 11:11a
+	BOLT     GIF         1,052  08-24-96 11:11a
+	CF       GIF           884  08-24-96 11:11a
+	CUSTCARE GIF         3,115  08-24-96 11:11a
+	DENY     GIF           173  08-24-96 11:11a
+	DIR0     GIF           247  08-24-96 11:11a
+	DIR1     GIF           285  08-24-96 11:11a
+	EARTH    GIF         6,288  08-24-96 11:11a
+	EASYBTN  GIF         2,471  08-24-96 11:11a
+	F        GIF           131  08-24-96 11:11a
+	FD       GIF           882  08-24-96 11:11a
+	FTP      GIF           139  08-24-96 11:11a
+	G        GIF           145  08-24-96 11:11a
+	GOPHER   GIF           153  08-24-96 11:11a
+	GRANT    GIF           153  08-24-96 11:11a
+	GROUPS0  GIF           184  08-24-96 11:11a
+	GROUPS1  GIF           210  08-24-96 11:11a
+	GRPCOMP  GIF           163  08-24-96 11:11a
+	HAND     GIF           103  08-24-96 11:11a
+	HD       GIF           883  08-24-96 11:11a
+	HOUSE_T  GIF           952  08-24-96 11:11a
+	IIS_T    GIF         2,408  08-24-96 11:11a
+	IIS2_T   GIF         2,408  08-24-96 11:11a
+	JUMPER   GIF         2,501  08-24-96 11:11a
+	LIN      GIF           159  08-24-96 11:11a
+	LOG0     GIF           235  08-24-96 11:11a
+	LOG1     GIF           264  08-24-96 11:11a
+	MGRMAP   GIF        27,076  08-24-96 11:11a
+	MSG0     GIF           245  08-24-96 11:11a
+	MSG1     GIF           280  08-24-96 11:11a
+	ND       GIF           886  08-24-96 11:11a
+	OF       GIF           891  08-24-96 11:11a
+	OK       GIF           244  08-24-96 11:11a
+	ONLINEBT GIF         3,177  08-24-96 11:11a
+	POWRBYBO GIF         2,456  08-24-96 11:11a
+	RELIABTN GIF         2,715  08-24-96 11:11a
+	ROADPAGE GIF        84,954  08-24-96 11:11a
+	SERV0    GIF           221  08-24-96 11:11a
+	SERV1    GIF           247  08-24-96 11:11a
+	SHOPBTN  GIF         2,644  08-24-96 11:11a
+	SIGNBTN  GIF         2,629  08-24-96 11:11a
+	SIGNUP_B GIF         1,676  08-24-96 11:11a
+	SNGCOMP  GIF           166  08-24-96 11:11a
+	SPEC1    GIF         2,433  08-24-96 11:11a
+	SPEC2    GIF         6,270  08-24-96 11:11a
+	TITLE2   GIF         5,541  08-24-96 11:11a
+	UNIVCARD GIF        19,216  08-24-96 11:11a
+	USERS0   GIF           172  08-24-96 11:11a
+	USERS1   GIF           196  08-24-96 11:11a
+	USRGRP0  GIF           205  08-24-96 11:11a
+	USRGRP1  GIF           224  08-24-96 11:11a
+	WORLD_T  GIF         1,101  08-24-96 11:11a
+	WORLDBTN GIF         3,111  08-24-96 11:11a
+	WWW      GIF           165  08-24-96 11:11a
+	AMOVIE   HLP        12,351  08-24-96 11:11a
+	IEXPLORE HLP        87,822  08-24-96 11:11a
+	INFRARED HLP        36,002  08-24-96 11:11a
+	INTERWIZ HLP        25,827  08-24-96 11:11a
+	INT-MAIL HLP        39,147  08-24-96 11:11a
+	MAILNEWS HLP       129,243  08-24-96 11:11a
+	MSNAUTH  HLP        10,556  08-24-96 11:11a
+	MSWEBCPL HLP        10,613  08-24-96 11:11a
+	RAPLAYER HLP        82,684  08-24-96 11:11a
+	RATINGS  HLP        16,530  08-24-96 11:11a
+	ADMIN    HTM         8,442  08-24-96 11:11a
+	ATTWNS1  HTM           425  08-24-96 11:11a
+	BLANK    HTM            93  08-24-96 11:11a
+	DEF_PF   HTM            77  08-24-96 11:11a
+	DEFAULT  HTM         1,154  08-24-96 11:11a
+	FTPSERV  HTM         3,187  08-24-96 11:11a
+	GETSTART HTM         4,715  08-24-96 11:11a
+	HEADLINE HTM           473  08-24-96 11:11a
+	HTMLA    HTM         3,435  08-24-96 11:11a
+	WEBSERV  HTM           674  08-24-96 11:11a
+	WNMENU   HTM         1,173  08-24-96 11:11a
+	WNTEXT   HTM         6,010  08-24-96 11:11a
+	ADV      HTR         4,431  08-24-96 11:11a
+	ADVADDD  HTR         1,460  08-24-96 11:11a
+	ADVADDDU HTR           788  08-24-96 11:11a
+	ADVADDG  HTR         1,460  08-24-96 11:11a
+	ADVADDGU HTR           789  08-24-96 11:11a
+	ADVDED   HTR           603  08-24-96 11:11a
+	ADVDEG   HTR           603  08-24-96 11:11a
+	ADVDENY  HTR         1,184  08-24-96 11:11a
+	ADVDENY2 HTR           239  08-24-96 11:11a
+	ADVEDD   HTR         1,503  08-24-96 11:11a
+	ADVEDDU  HTR           797  08-24-96 11:11a
+	ADVEDG   HTR         1,516  08-24-96 11:11a
+	ADVEDGU  HTR           798  08-24-96 11:11a
+	ADVGRANT HTR           240  08-24-96 11:11a
+	ADVU     HTR           390  08-24-96 11:11a
+	BDIR     HTR         1,910  08-24-96 11:11a
+	BDIRU    HTR         1,021  08-24-96 11:11a
+	CONN     HTR         1,398  08-24-96 11:11a
+	DIR      HTR         4,275  08-24-96 11:11a
+	DIRADD   HTR         4,576  08-24-96 11:11a
+	DIRADDU  HTR         2,281  08-24-96 11:11a
+	DIRDEL   HTR           568  08-24-96 11:11a
+	DIREDT   HTR         4,490  08-24-96 11:11a
+	DIREDTU  HTR         2,216  08-24-96 11:11a
+	DIRU     HTR           449  08-24-96 11:11a
+	DIRV     HTR            76  08-24-96 11:11a
+	DISC     HTR           226  08-24-96 11:11a
+	DISCA    HTR           216  08-24-96 11:11a
+	HTMLA    HTR         3,682  08-24-96 11:11a
+	LOG      HTR         3,399  08-24-96 11:11a
+	LOGU     HTR         2,060  08-24-96 11:11a
+	MSG      HTR         1,947  08-24-96 11:11a
+	MSGU     HTR           353  08-24-96 11:11a
+	SERV     HTR         4,682  08-24-96 11:11a
+	SERVU    HTR         1,114  08-24-96 11:11a
+	ATTWNS   ICO         1,078  08-24-96 11:11a
+	HTMLA    INF        12,822  08-24-96 11:11a
+	HTMLA2   INF        12,340  08-24-96 11:11a
+	TAMWRAP  INF         1,701  08-24-96 11:11a
+	CANCEL   INS            23  08-24-96 11:11a
+	ATTWNSVC ISP           623  08-24-96 11:11a
+	BALLOON  JPG        11,747  08-24-96 11:11a
+	FTP      MIB         6,136  08-24-96 11:11a
+	HTTP     MIB         8,477  08-24-96 11:11a
+	INETSRV  MIB           690  08-24-96 11:11a
+	MARQUEE  OCX        77,888  08-24-96 11:11a
+	RSACI    RAT         3,186  08-24-96 11:11a
+	IRDALAN  SYS        17,808  08-24-96 11:11a
+	STDOLE2  TLB        16,896  08-24-96 11:11a
+	ISO88591 TRN           601  08-24-96 11:11a
+	NORWEG   TRN           601  08-24-96 11:11a
+	SWEDISH  TRN           601  08-24-96 11:11a
+	USASCII  TRN           601  08-24-96 11:11a
+	ARIBLK   TTF       103,992  08-24-96 11:11a
+	COMICBD  TTF        55,892  08-24-96 11:11a
+	IMPACT   TTF       126,056  08-24-96 11:11a
+	VERDANA  TTF        52,720  08-24-96 11:11a
+	VERDANAB TTF        53,816  08-24-96 11:11a
+	VERDANAI TTF        57,012  08-24-96 11:11a
+	VERDANAZ TTF        59,636  08-24-96 11:11a
+	INET     TXT        11,794  08-24-96 11:11a
+	INFRARED TXT        39,795  08-24-96 11:11a
+	MAILNEWS TXT        11,799  08-24-96 11:11a
+	NETMEET  TXT        22,617  08-24-96 11:11a
+	PWS      TXT         4,513  08-24-96 11:11a
+	RALICENS TXT         4,766  08-24-96 11:11a
+	GETISDN  URL            66  08-24-96 11:11a
+	MSFT     URL            49  08-24-96 11:11a
+	MSN      URL            43  08-24-96 11:11a
+	PSS      URL            59  08-24-96 11:11a
+	ACT200L  VXD         7,195  08-24-96 11:11a
+	ACT220L  VXD         6,175  08-24-96 11:11a
+	ADAPTEC  VXD         7,195  08-24-96 11:11a
+	CRYSTAL  VXD         7,195  08-24-96 11:11a
+	ESI      VXD         6,151  08-24-96 11:11a
+	IRCOMM   VXD        32,362  08-24-96 11:11a
+	IRENUM   VXD        24,712  08-24-96 11:11a
+	IRLAMP   VXD        71,706  08-24-96 11:11a
+	IRLAPFRM VXD        14,928  08-24-96 11:11a
+	MSWEBSP  VXD        14,469  08-24-96 11:11a
+	PARALLAX VXD         6,181  08-24-96 11:11a
+	IR_BEGIN WAV        15,906  08-24-96 11:11a
+	
+	Additional query words: 95 dirwin dirwin95 osr2
+	
+	======================================================================
+	Keywords          : win95 
+	Technology        : kbWin95search kbOPKSearch
+	Version           : WINDOWS:95
+	
+	=============================================================================
+	

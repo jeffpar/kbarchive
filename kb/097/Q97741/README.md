@@ -1,0 +1,322 @@
+---
+layout: page
+title: "Q97741: Optimizing DoubleSpace on Your Computer"
+permalink: kb/097/Q97741/
+---
+
+## Q97741: Optimizing DoubleSpace on Your Computer
+
+	Article: Q97741
+	Product(s): Microsoft Disk Operating System
+	Version(s): MS-DOS:6.0,6.2,6.22; WINDOWS:95
+	Operating System(s): 
+	Keyword(s): msdos win95kbfaq
+	Last Modified: 17-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft MS-DOS operating system versions 6.0, 6.2, 6.22 
+	- Microsoft Windows 95 
+	- Microsoft Plus! for Windows 95 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	
+	NOTE: This information applies to both Microsoft DoubleSpace and Microsoft
+	DriveSpace. For MS-DOS 6.22, Windows 95, and Microsoft Plus!, use DRVSPACE in
+	place of DBLSPACE in all commands and file names.
+	
+	After you use DoubleSpace to compress your hard disk, you may experience one or
+	more of the following symptoms:
+	
+	- You may have less free conventional memory. As a result, you may be unable to
+	  run one or more MS-DOS-based programs. If you are running Windows 95 or
+	  Microsoft Plus! DriveSpace, the problem may occur only when you restart your
+	  computer in MS-DOS mode or boot to a Windows 95 command prompt.
+	
+	- You may experience a slight performance degradation.
+	
+	CAUSE
+	=====
+	
+	To provide access to compressed drives, DoubleSpace loads a real-mode device
+	driver that requires a considerable amount of memory. If your computer is not
+	configured to provide access to the upper memory area (UMA), the DoubleSpace
+	driver must load in conventional memory.
+	
+	Windows 95 and Microsoft Plus! include both real-mode and protected-mode
+	DriveSpace drivers. The real-mode DriveSpace driver is used to provide access to
+	compressed drives before Windows 95 starts and when you restart your computer in
+	MS-DOS mode or boot to a Windows 95 command prompt. The protected-mode
+	DriveSpace driver is used after Windows 95 starts to provide protected-mode
+	access to compressed drives.
+	
+	Because the protected-mode DriveSpace driver replaces the real-mode driver in
+	memory after Windows 95 starts, the amount of conventional memory used by the
+	real-mode driver is normally not a concern when you are running MS- DOS-based
+	programs in Windows 95. However, if you frequently run MS-DOS- based programs
+	after restarting the computer in MS-DOS mode or after booting to a Windows 95
+	command prompt, you may find that programs requiring large amounts of
+	conventional memory are unable to run.
+	
+	The primary reason for performance degradation while running compression software
+	such as DoubleSpace is that each time a read or write is made from or to the
+	hard disk, data must be decompressed or compressed. This decompression or
+	compression of data places additional demand on the processor in your computer.
+	Computers with faster processors most likely will not experience performance
+	degradation after compression software is installed.
+	
+	RESOLUTION
+	==========
+	
+	To resolve the problem, refer to the appropriate section below.
+	
+	MS-DOS 6.0, 6.2, or 6.22
+	------------------------
+	
+	To work around this problem when you are running MS-DOS 6.0, 6.2, or 6.22
+	DoubleSpace or DriveSpace, follow these steps:
+	
+	1. If you are using Microsoft Windows, set the TEMP environment variable to the
+	  host drive. To do so, follow these steps:
+	
+	  a. Type "dblspace /list" (without the quotation marks) at a command prompt
+	     and then press ENTER to determine which drive is the host drive.
+	
+	  b. Use the DIR command to determine if you have at least two megabytes (MB)
+	     of free disk space on the host drive. If you do not, see the section
+	     titled "Using DoubleSpace to Manage Compressed Drives" in the "User's
+	     Guide" for instructions on decreasing the size of the compressed volume
+	     file (CVF). If you receive the message "Drive X is too fragmented to
+	     resize," see section 7.14 in the Readme.txt file.
+	
+	  c. Change to the host drive and create a TEMP directory. For example, if your
+	     host drive is drive H, type the following lines at a command prompt,
+	     pressing ENTER after each line:
+	
+	  " h:
+	  md \temp" (without the quotation marks)
+	
+	  d. Using a text editor such as MS-DOS Editor, edit the Autoexec.bat file and
+	     change the SET TEMP statement to point to the TEMP directory on the host
+	     drive. For example:
+	
+	        set temp=h:\temp
+	
+	2. If your computer contains an 80386 or higher processor, run MemMaker after
+	  you run DoubleSpace to ensure you are freeing as much convention- al memory
+	  as possible. If you have a VGA display adapter, run MemMaker in custom mode
+	  and choose Yes when you are prompted to use the mono- chrome region to obtain
+	  an additional 32K of upper memory block (UMB) space. If you have a Super VGA
+	  video display adapter, you can use the monochrome region, but you need to
+	  load the Monoumb.386 file if you use Microsoft Windows. For specific
+	  instructions, see section 2.3 of the Readme.txt file.
+	
+	3. If your computer contains an 80286 processor and is low on conventional
+	  memory, consider purchasing a third-party memory manager to load device
+	  drivers, terminate-and-stay-resident (TSR) programs, and the Double- Space
+	  component (Dblspace.bin) in the upper memory area (UMA).
+	
+	4. If your computer contains an 80286 or higher processor and has more than 1 MB
+	  of memory, ensure you are loading SMARTDrive.
+	
+	5. If you are unable to run a particular program (such as an MS-DOS-based game)
+	  due to insufficient memory, you may want to move that software to the host
+	  drive and create a startup disk for drive A that does not contain the
+	  DoubleSpace component. To do so, follow these steps:
+	
+	  a. Type "dblspace /list" (without the quotation marks) at a command prompt
+	     and then press ENTER to determine which drives are uncompressed or host
+	     drives.
+	
+	  b. Use the XCOPY command to copy the program's directory to the host drive.
+	     For example, if drive H is your host drive, type "xcopy c:\dir\*.*
+	     h:\dir\*.* /s" (without the quotation marks) at a command prompt and then
+	     press ENTER.
+	
+	  c. Create a bootable floppy disk in drive A with the SYS command. For
+	     example, type "sys c: a:" (without the quotation marks) at a command
+	     prompt and then press ENTER.
+	
+	  d. Type "deltree a:\dblspace.bin" (without the quotation marks) at a command
+	     prompt and then press ENTER to remove the DoubleSpace component.
+	
+	  e. Confirm that all the files were copied to the host drive.
+	
+	  f. Using a text editor such as MS-DOS Editor, create Config.sys and
+	     Autoexec.bat files on drive A and include any TSRs or device drivers
+	     required by the program. You should also add a PATH statement to include
+	     the program's directory.
+	
+	     NOTE: If you are using a host drive, remember that the drive letter is
+	     different when you start the computer without the DoubleSpace component.
+	
+	  g. Restart the computer with the new startup disk in drive A and run the
+	     program to ensure you have configured the system correctly.
+	
+	     NOTE: Your compressed drive will not be accessible when you restart your
+	     computer from this floppy disk. However, the data on your drive is not
+	     lost. It will be accessible when you restart your computer from the hard
+	     disk.
+	
+	  h. If everything is functioning correctly, restart your computer from the
+	     hard disk and delete the program's directory from the compressed drive.
+	     For example, type "deltree /y c:\dir" (without the quotation marks) at a
+	     command prompt and then press ENTER.
+	
+	6. Some programs either implicitly (such as Microsoft Mail version 3.0) or
+	  explicitly (such as Paradox) encrypt data files. This encryption removes any
+	  patterns in the data, rendering it incompressible. Storing these files on a
+	  DoubleSpace drive does not save any disk space and increases file write time
+	  because DoubleSpace does the work of trying to compress the file, but cannot.
+	  These types of files, if updated often, should be stored on a uncompressed or
+	  host drive.
+	
+	Windows 95 or Microsoft Plus!
+	-----------------------------
+	
+	Optimizing Performance with Windows 95 or Microsoft Plus! DriveSpace:
+	
+	To optimize your computer's performance while running Windows 95 or Microsoft
+	Plus! DriveSpace, follow these steps:
+	
+	1. Verify that the protected-mode DriveSpace driver is being used in Windows 95.
+	  To do so, double-click the System icon in Control Panel, and then click the
+	  Performance tab. If the Disk Compression line indicates that compressed
+	  drives are using MS-DOS Compatibility mode, the protected-mode DriveSpace
+	  driver is not being used.
+	
+	  To cause the protected-mode DriveSpace driver to load when Windows 95 starts,
+	  follow these steps:
+	
+	  a. Make sure that the Drvspacx.vxd file is present in the Windows\
+	     System\Iosubsys folder. If the file is not present, extract it to that
+	     folder from the Win95_09.cab cabinet file on the original Windows 95
+	     CD-ROM or disk 9, or from the Plus_1.cab cabinet file on the original
+	     Microsoft Plus! CD-ROM or disk 1.
+	
+	     For information about using the Extract tool, type "extract" (without the
+	     quotation marks) at a command prompt, or see the following article in the
+	     Microsoft Knowledge Base:
+	
+	  Q129605 How to Extract Original Compressed Windows Files
+	
+	  b. Copy the Drvspace.bin file from the Windows\Command folder to the root
+	     folder of the boot drive as both Drvspace.bin and Dblspace.bin. To do so,
+	     type the following lines at a command prompt, pressing ENTER after each
+	     command
+	
+	  " copy c:\windows\command\drvspace.bin <drive>:\drvspace.bin /y
+	  copy c:\windows\command\dblspace.bin <drive>:\dblspace.bin /y" (without
+	  the quotation marks)
+	
+	     where <drive> is the physical boot drive. If drive C is compressed,
+	     copy the Drvspace.bin file to the root folder of the host drive for drive
+	     C instead of the root folder of drive C.
+	
+	     NOTE: The /Y switch causes the COPY command to replace existing files
+	     without prompting you for confirmation.
+	
+	  After performing these steps, restart your computer and check to see if the
+	  problem has been resolved. If it has not, perform the following additional
+	  step:
+	
+	  c. If you did not extract the Drvspacx.vxd file in step A because it already
+	     exists in the Windows\System\Iosubsys folder, extract it now. In addition,
+	     extract the Drvspace.bin file from disk 1 or the CD-ROM to the
+	     Windows\Command folder. After extracting this file, repeat step B.
+	
+	2. Verify that the hard disks are not badly fragmented. Badly fragmented hard
+	  disks can affect the performance of DriveSpace 3, as well as the performance
+	  of other Windows 95 components. To ensure that your hard disks are not badly
+	  fragmented, run Disk Defragmenter to defragment them. To run Disk
+	  Defragmenter, click the Start button, point to Programs, point to
+	  Accessories, point to System Tools, and then click Disk Defragmenter.
+	
+	3. Verify that the drive containing your Windows folder and the Windows swap
+	  file contains sufficient free disk space. For information about creating
+	  additional free disk space, view the "Disk Space Trouble- shooter" topic in
+	  Windows 95 Help.
+	
+	Optimizing Conventional Memory for MS-DOS-Based Programs:
+	
+	If you are unable to run an MS-DOS-based program when you restart your computer
+	in MS-DOS mode or boot to a Windows 95 command prompt after running Windows 95
+	or Microsoft Plus! DriveSpace, reconfigure Windows 95 so that more conventional
+	memory is available. To do so, use one of the following methods:
+	
+	- If you are running an MS-DOS-based program after restarting your computer in
+	  MS-DOS mode, modify the Config.sys and Autoexec.bat files that are used when
+	  the computer restarts in MS-DOS mode so that more conventional memory is
+	  available. You should modify the Config.sys and Autoexec.bat files that are
+	  specified in the properties for the program you are running in MS-DOS mode,
+	  the properties for the shortcut that starts the program you are running in
+	  MS-DOS mode, or the properties for the "Exit to Dos.pif" file that is used to
+	  start Windows 95 in MS-DOS mode.
+	
+	  Use the following steps to modify the Config.sys and Autoexec.bat files that
+	  are used when the computer restarts in MS-DOS mode so that more conventional
+	  memory is available. After performing each step, check to see if you are able
+	  to run the MS-DOS-based program.
+	
+	  a. Make sure that the Config.sys file that is used when the computer restarts
+	     contains lines similar to the following (in the following order):
+	
+	        DEVICE=C:\WINDOWS\HIMEM.SYS
+	        DEVICE=C:\WINDOWS\EMM386.EXE NOEMS
+	        DOS=HIGH,UMB
+	        DEVICEHIGH=C:\WINDOWS\COMMAND\DRVSPACE.SYS /MOVE
+	
+	     These lines make it possible for the real-mode DriveSpace driver to load
+	     into upper memory, which can free more conventional memory for
+	     MS-DOS-based programs.
+	
+	     NOTE: If your MS-DOS-based program requires expanded memory, please see the
+	     program's documentation for information about how to configure Emm386.exe
+	     to provide expanded memory.
+	
+	  b. Try loading device drivers in the Config.sys file using the DEVICEHIGH
+	     command instead of the DEVICE command. In addition, try loading
+	     memory-resident programs in the Autoexec.bat file using the LOADHIGH
+	     command.
+	
+	  c. Remove any unnecessary drivers and memory-resident programs from the
+	     Config.sys and Autoexec.bat files that are used when you restart your
+	     computer in MS-DOS mode.
+	
+	- Use the Microsoft Startup Disk Wizard (Nocomp.exe) that is included with
+	  Microsoft Plus! to create a bootable floppy disk that does not load the
+	  real-mode DriveSpace driver. To run an MS-DOS-based program after booting
+	  from the floppy disk created by the Microsoft Startup Disk Wizard, the
+	  program must be installed on an uncompressed drive.
+	
+	MORE INFORMATION
+	================
+	
+	The DriveSpace compression drivers included with Windows 95 contain
+	processor-specific code designed for optimal performance on 80386 and 80486
+	processors. In addition, the DriveSpace 3 compression drivers included with
+	Microsoft Plus! contain code designed for optimal performance on Pentium
+	processors. The compression drivers included with Windows 95 and Microsoft Plus!
+	detect the type of processor that a computer is using and then use the
+	appropriate code.
+	
+	Microsoft Plus! includes DriveSpace 3, which is an enhanced version of DriveSpace
+	that supports the ability to fine-tune compression for maximum disk space,
+	maximum system speed, or a balance between disk space and system speed. If
+	system performance is your primary concern, DriveSpace 3 can be configured
+	accordingly, but doing so will cause your files to take up considerably more
+	disk space.
+	
+	Additional query words: 6.00 6.20 6.22 slow Ultima 6 Commander Keen Serpent Great Battles of the NorthWest
+	
+	======================================================================
+	Keywords          : msdos win95 kbfaq
+	Technology        : kbWin95search kbGamesSearch kbPlusSearch kbZNotKeyword3 kbPlus95 kbMSDOSSearch kbMSDOS622 kbMSDOS620 kbMSDOS600
+	Version           : MS-DOS:6.0,6.2,6.22; WINDOWS:95
+	
+	=============================================================================
+	

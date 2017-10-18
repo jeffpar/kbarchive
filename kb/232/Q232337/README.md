@@ -1,0 +1,89 @@
+---
+layout: page
+title: "Q232337: PRB: MFC Wizards Fail with &quot;Unrecognized Database Format&quot;"
+permalink: kb/232/Q232337/
+---
+
+## Q232337: PRB: MFC Wizards Fail with &quot;Unrecognized Database Format&quot;
+
+	Article: Q232337
+	Product(s): Microsoft C Compiler
+	Version(s): winnt:6.0
+	Operating System(s): 
+	Keyword(s): kbwizard kbDatabase kbGrpDSVCDB kbDSupport kbDAO360
+	Last Modified: 07-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+	- Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+	- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Using the MFC AppWizard or ClassWizard with a DAO data source and an Access 2000
+	.mdb file causes a failure with the following error message:
+	
+	  Unrecognized Database Format
+	
+	CAUSE
+	=====
+	
+	The Wizards use DAO version 3.5, which cannot read Access 2000 .mdb files.
+	
+	RESOLUTION
+	==========
+	
+	Convert the .mdb file to a previous version to use it with MFC AppWizard or
+	ClassWizard.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem with the Microsoft products listed
+	at the beginning of this article.
+	
+	MORE INFORMATION
+	================
+	
+	To convert the Access 2000 .mdb file to Access 97 format complete the following
+	steps:
+	
+	1. From the Access 2000 main menu, click Tools.
+	
+	2. Select Database Utilities.
+	
+	3. Click Convert Database.
+	
+	4. Select To Prior Access Database Version.
+	
+	NOTE: The .mdb file can also be converted programmatically by using the DAO
+	DBEngine CompactDatabase method.
+	MFC version 6.0 will by default use DAO 3.5. In order for your application to use
+	DAO 3.6 and work with Access 2000 the .mdb files, you need to define the
+	following in your application:
+	
+	  AfxGetModuleState()->m_dwVersion = 0x0601;
+	
+	REFERENCES
+	==========
+	
+	For additional information, click the article numbers below
+	
+	  Q230485 HOWTO: Create an Access 2000 database with MFC DAO
+	
+	  Q236991 PRB: Unrecognized Database Format Error with Access 2000 Database
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbwizard kbDatabase kbGrpDSVCDB kbDSupport kbDAO360 
+	Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch
+	Version           : winnt:6.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

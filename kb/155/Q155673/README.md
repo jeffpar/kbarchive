@@ -1,0 +1,225 @@
+---
+layout: page
+title: "Q155673: DBWEB: How to Create a Dynamic Combo Box in a dbWeb Custom DBX"
+permalink: kb/155/Q155673/
+---
+
+## Q155673: DBWEB: How to Create a Dynamic Combo Box in a dbWeb Custom DBX
+
+	Article: Q155673
+	Product(s): Microsoft Access Distribution Kit
+	Version(s): 1.0,1.1
+	Operating System(s): 
+	Keyword(s): kbusage
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft dbWeb, versions 1.0, 1.1 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes a technique that will dynamically populate an HTML combo
+	box in a Microsoft dbWeb custom DBX.
+	
+	MORE INFORMATION
+	================
+	
+	In order to dynamically populate a combo box in an HTML QBE form using the dbWeb
+	Administrator, you must set the data value property for the appropriate field in
+	the QBE tab to #autofill# (or #autofill+# if you want the first value displayed
+	in the combo box to be blank). However, you may want to use a custom DBX to
+	create your HTML form so you can use HTML tags that dbWeb doesn't generate
+	automatically. In order to fill a combo box with values in a custom DBX, you
+	must create two schemas. The first schema contains a custom DBX that uses dbWeb
+	banding tags to populate the combo box; then it uses the POST method to send the
+	value you select in the combo box to the getresults or getxresults method for
+	the second schema. Follow the steps below to create a sample custom DBX with a
+	dynamically populated combo box.
+	
+	The following example shows you how to create an ODBC data source and two dbWeb
+	schemas to dynamically fill a combo box with customer ID numbers. The example
+	uses the sample database Northwind.mdb from Microsoft Access for Windows 95 as
+	the data source. It assumes that you are using the default paths for Microsoft
+	Internet Information Server. If you are using other web server software, adjust
+	these paths accordingly.
+	
+	Creating the ODBC Data Source
+	-----------------------------
+	
+	1. Start the dbWeb Administrator.
+	
+	2. On the Utilities menu, click ODBC Manager.
+	
+	3. In the Data Sources dialog box, click System DSN, and then click Add.
+	
+	4. Click Microsoft Access Driver, and then click OK.
+	
+	5. In the Data Source Name box, type Acc95.
+	
+	6. Under Database, click the Select button.
+	
+	7. In the Select Database dialog box, locate the sample database Northwind.mdb,
+	  and then click OK.
+	
+	8. In the ODBC Microsoft Access 7.0 Setup dialog box, click OK.
+	
+	9. Close the ODBC Manager.
+	
+	Creating the First dbWeb Schema
+	-------------------------------
+	
+	1. In the Data Sources window of the dbWeb Administrator, click Data Sources And
+	  Schemas, and then click New Datasource.
+	
+	2. In the Data Source Name box, type Acc95, and then click OK.
+	
+	3. Click the Acc95 Data Source, and then click New Schema.
+	
+	4. In the New Schema dialog box, click the New Schema button.
+	
+	5. Under Schema name, type Dynabox1.
+	
+	6. Click the Tables tab.
+	
+	7. Click the Customers table, and then click Add.
+	
+	8. Click the Tabular tab.
+	
+	9. In the "Data columns in selected tables" box, double-click Customers.
+	
+	10. Click CustomerID, and then click Add.
+	
+	11. Click the DBX tab.
+	
+	12. Click the Editor button next to "Multi record result output custom format
+	  file."
+	
+	13. Type the following HTML code in the right pane of the Editor, depending on
+	  your version of dbWeb.
+	
+	  Microsoft dbWeb version 1.0:
+	
+	  <HTML>
+	         <TITLE>Customer List</TITLE>
+	         <BODY>
+	         <FORM METHOD="POST"
+	         ACTION="/scripts/dbweb/$dbwebc.exe/Dynabox2?getresults">
+	         Please select a Customer ID from the list.<BR>
+	         <!--BUILD THE FORM-->
+	         <!--Orders is the second argument of NAME-->
+	         <!--because the result will be used-->
+	         <!--to filter the Orders table-->
+	         <SELECT NAME="4,Orders,CustomerID">
+	         <!--Start of banding to fill the combo box-->
+	         \tbon\t
+	         <OPTION>\tobj\tCustomers\tcol\tCustomerID\t
+	         \tboff\t
+	         <!--End of banding-->
+	         </SELECT><BR>
+	
+	         <INPUT TYPE="checkbox" NAME="8,all,rows"> Use full-screen output
+	         even if more than one row is returned.<BR>
+	         Return no more than <INPUT VALUE="100" SIZE="4" NAME="9,9,9">
+	         rows (maximum 100).<BR>
+	         <INPUT TYPE="SUBMIT" VALUE="Submit Query">
+	         </FORM>
+	         </BODY>
+	         </HTML>
+	
+	  Microsoft dbWeb version 1.1:
+	
+	  <HTML>
+	         <TITLE>Customer List</TITLE>
+	         <BODY>
+	         <FORM METHOD="POST"
+	         ACTION="/scripts/dbweb/dbwebc.dll/Dynabox2?getresults">
+	         Please select a Customer ID from the list.<BR>
+	         <!--BUILD THE FORM-->
+	         <!--Orders is the second argument of NAME-->
+	         <!--because the result will be used-->
+	         <!--to filter the Orders table-->
+	         <SELECT NAME="4,Orders,CustomerID">
+	         <!--Start of banding to fill the combo box-->
+	         \tbon\t
+	         <OPTION>\tobj\tCustomers\tcol\tCustomerID\t
+	         \tboff\t
+	         <!--End of banding-->
+	         </SELECT><BR>
+	         <INPUT TYPE="checkbox" NAME="8,all,rows"> Use full-screen output
+	         even if more than one row is returned.<BR>
+	         Return no more than <INPUT VALUE="100" SIZE="4" NAME="9,9,9">
+	         rows (maximum 100).<BR>
+	         <INPUT TYPE="SUBMIT" VALUE="Submit Query">
+	         </FORM>
+	         </BODY>
+	         </HTML>
+	
+	
+	14. Save the file as Dynabox.htm and close the DBX Editor.
+	
+	15. Click the Browse button next to "Multi record output custom format file,"
+	  select Dynabox.htm, and then click OK.
+	
+	16. In the Dynabox1 [Acc95] dialog box, click OK.
+	
+	Creating the Second dbWeb Schema
+	--------------------------------
+	
+	1. Click the Acc95 Data Source, and then click New Schema.
+	
+	2. In the New Schema dialog box, click the New Schema button.
+	
+	3. Under Schema name, type Dynabox2.
+	
+	4. Click the Tables tab.
+	
+	5. Click the Orders table, and then click Add.
+	
+	6. Click the Tabular tab.
+	
+	7. In the "Data columns in selected tables" box, double-click Orders.
+	
+	8. Click OrderID, and then click Add.
+	
+	9. Click the Freeform tab.
+	
+	10. In the "Data columns in selected tables" box, double-click Orders.
+	
+	11. Click OrderID, and then click Add. Click CustomerID, and then click Add.
+	
+	12. In the Dynabox2 [Acc95] dialog box, click OK.
+	
+	Testing the Results
+	-------------------
+	
+	1. Type the following URL into the Address line of a browser, depending on your
+	  version of dbWeb.
+	
+	  Microsoft dbWeb version 1.0:
+	
+	  http://<hostname>/scripts/dbweb/$dbwebc.exe/Dynabox1?getxresults
+	
+	  Microsoft dbWeb version 1.1:
+	
+	  http://<hostname>/scripts/dbweb/dbwebc.dll/Dynabox1?getxresults
+	
+	2. Select a CustomerID from the combo box, and then click Submit Query.
+	
+	3. Note that the results display only the order numbers for the customer you
+	  selected.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbusage 
+	Technology        : kbAudDeveloper kbdbWebSearch kbdbWeb100 kbdbWeb110
+	Version           : :1.0,1.1
+	Hardware          : x86
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

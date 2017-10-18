@@ -1,0 +1,96 @@
+---
+layout: page
+title: "Q188054: SMS: Description and Usage of Smgenie.exe (Event Generator)"
+permalink: kb/188/Q188054/
+---
+
+## Q188054: SMS: Description and Usage of Smgenie.exe (Event Generator)
+
+	Article: Q188054
+	Product(s): Microsoft Systems Management Server
+	Version(s): winnt:1.2
+	Operating System(s): 
+	Keyword(s): kbsmsUtil smsutil
+	Last Modified: 31-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server version 1.2 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Smgenie.exe, available in the Microsoft BackOffice Resource Kit, generates
+	events that simulate actual system and application events. The purpose of
+	SMGENIE is to test the SNMP Event to Trap Translator, which converts specified
+	events to SNMP traps when the events are written to the Windows NT Event log.
+	
+	After SMGENIE (which runs on computers with either Alpha or Intel-based
+	processors) is started, the SMGENIE window appears on your screen.
+	
+	MORE INFORMATION
+	================
+	
+	After Systems Management Server is installed and the SNMP components are set up,
+	you can configure the SNMP Event to Trap Translator with the events to
+	translate. For detailed information about the configuration process, see the SMS
+	1.2 Administrator's Guide. Then, use SMGENIE to generate events to the Windows
+	NT Event log. Events that have been set in the SNMP Event to Trap Translator
+	will be translated into traps and sent to the site server.
+	
+	To Generate Events with SMGENIE
+	-------------------------------
+	
+	1. Select an event log from the Event Logs box.
+	
+	2. Select an event source from the Event Sources box.
+	
+	  The events for the selected event source are displayed in the list at the top
+	  of the window. The number of events available in the event source are
+	  displayed in the Event Count box. You can use the Auto search box to locate
+	  an event source among all the Event logs. In the Auto search box, type the
+	  name of a source.
+	
+	3. Select events by scrolling through the list and clicking on them.
+	
+	  You can use SHIFT + CLICK and CTRL + CLICK combinations to select ranges and
+	  multiple events. The number of selected events is shown in the lower-right
+	  status bar of the window.
+	
+	4. You can change the default substring value. The default is TEST-STRING.
+	
+	  The substring is placed into each event wherever there is a percent sign (%)
+	  followed by a number. (In actual Windows NT event generation, subsequent
+	  numbers denote different strings. In SMGENIE, the substring is used
+	  regardless of the number following the percent sign.)
+	
+	5. Generate events in either of the following two ways:
+	
+	   - Click Generate Events.
+	
+	   - In the Auto generate box, specify integers for Multiples and Interval In
+	     Seconds, then select Auto Generate. Multiples specifies how many events to
+	     generate for each selected event, and Interval In Seconds specifies the
+	     time to elapse between each event, repeating until Auto Generate is no
+	     longer selected.
+	
+	     For example, if Winlogon is the event source, events 1001 and 1002 are
+	     selected, and the default settings are used, selecting Auto Generate
+	     generates one of each event every five seconds. Two events are logged in
+	     the Windows NT event log every five seconds -- one for event 1001 and one
+	     for event 1002.
+	
+	     The number of events generated is shown in the lower-left status bar.
+	
+	Additional query words: prodsms x86
+	
+	======================================================================
+	Keywords          : kbsmsUtil smsutil 
+	Technology        : kbSMSSearch kbSMS120
+	Version           : winnt:1.2
+	Issue type        : kbhowto kbinfo
+	
+	=============================================================================
+	

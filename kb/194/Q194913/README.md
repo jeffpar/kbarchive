@@ -1,0 +1,258 @@
+---
+layout: page
+title: "Q194913: BUG: VB/VBA Do Not Understand MIDL IUnknown&#42;&#42; Data Type"
+permalink: kb/194/Q194913/
+---
+
+## Q194913: BUG: VB/VBA Do Not Understand MIDL IUnknown&#42;&#42; Data Type
+
+	Article: Q194913
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbAutomation kbCOMt KbVBA kbVBp kbVBp500 kbVBp600 kbGrpDSVB kbDSupport
+	Last Modified: 07-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic for Applications (VBA) Software Development Kit (SDK), versions 5.0, 6.0 
+	- Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If you build a Component Object Model (COM) component in C/C++ that takes or
+	returns an IUnknown** data type and uses an Interface Definition Language (IDL)
+	file and the Microsoft Interface Definition Language (MIDL) compiler to generate
+	the type library, you find that neither Visual Basic nor Visual Basic for
+	Applications (VBA) display the type correctly in the Visual Basic Object
+	Browser, and indicate that the type is UNKNOWN.
+	
+	When you call the C/C++ component from Visual Basic, you may see the following
+	run-time error:
+	
+	  Run-time error: 458
+	  Variable uses a type not supported in Visual Basic
+	
+	This error message can occur during cross-apartment calls to the interface. At
+	other times, the method call succeeds even though Visual Basic is unsure of the
+	data type.
+	
+	In addition, if you use the Implements keyword to implement the C/C++ interface
+	in a Visual Basic class, you receive the following compile-time error message:
+	
+	  Bad interface for Implements: method uses type that is not supported by
+	  Visual Basic.
+	
+	You cannot implement an interface with an UNKNOWN type.
+	
+	However, a similarly written Visual Basic component that uses the hidden IUnknown
+	data type (which equates to an IUnknown** in C/C++) displays correctly in the
+	Object Browser and can be called by another Visual Basic class or used by Visual
+	Basic Implements without error.
+	
+	CAUSE
+	=====
+	
+	MIDL-generated type libraries represent an IUnknown** parameter as a VT_UNKNOWN
+	in the TYPEDESC for the ELEMDESC struct that describes the parameter. Although
+	Visual Basic can work with VARIANTs of type VT_UNKNOWN, it does not expect this
+	type for a parameter description in a type library. Consequently, it treats the
+	parameter as UNKNOWN, and displays one of the error messages in the "Symptoms"
+	section of this article.
+	
+	Visual Basic and VBA both use the CreateTypeLib2 API function (not MIDL) to
+	generate the type library when they build their own COM components, and they can
+	define a parameter as being the type IUnknown** by using a reference to an
+	external type library (stdole2.tlb) and a ITypeInfo to describe the data type.
+	The reference points to the actual description of IUnknown instead of relying on
+	the VT_UNKNOWN VARTYPE.
+	
+	RESOLUTION
+	==========
+	
+	Because programmers are not allowed to use an IUnknown** data type natively in
+	Visual Basic and VBA, components that are designed to work in these programming
+	environments should avoid using this type when possible. Two common reasons why
+	you might have chosen to use IUnknown in your component description (but you
+	don't actually need to) are:
+	
+	1. When you want to implement a polymorphic property or method that can take any
+	  object. Because Visual Basic cannot use an IUnknown pointer natively, it is
+	  better to use IDispatch and return only dual (or dispinterface) objects.
+	  These objects appear as Object in Visual Basic and can be treated
+	  polymorphically, which accomplishes the same effect in a more Visual
+	  Basic-oriented fashion.
+	
+	  If you need to pass a custom interface that is not dual, a common, shared
+	  interface type can be defined and inherited by this interface (and all other
+	  objects that are passed) and define the method or property as taking this
+	  shared base interface (rather than IUnknown). As long as the new base
+	  interface is described in the type library, Visual Basic and VBA can use it
+	  without a problem.
+	
+	2. When you want to pass a generic collection item; for example, the Visual
+	  Basic-style _NewEnum property that returns an IUnknown**, or a standard OLE
+	  interface that is not dual. In this case, you should use the actual interface
+	  type that is being passed rather than the more generic IUnknown. For example,
+	  the _NewEnum property should return an IEnumVARIANT*, because this is, in
+	  fact, the interface that Visual Basic needs and expects. When it is compiled
+	  with MIDL, this interface type is cross-referenced to its definition in
+	  stdole2.tlb, and you do not receive an error message.
+	
+	If you are not faced with either of the previous situations, or if you must have
+	an IUnknown** declaration, Visual Basic can accept this type, but it must be
+	fully qualified with the stdole library (that is, stdole.IUnknown**). This
+	cannot be done in IDL and compiled with MIDL.
+	
+	While you can qualify data types in MIDL, the MIDL compiler automatically
+	converts any qualified reference to IUnknown back to a VT_UNKNOWN VARTYPE in the
+	type library description. This simplifies the library for remote procedure calls
+	(RPC) and DCOM, but it prevents you from using MIDL to generate libraries that
+	use a Visual Basic- or Visual Basic for Applications-compatible IUnknown** type.
+	Instead, you need to use MkTypLib and an ODL file to build the type library, or
+	create the library programmatically with the CreateTypeLib2 API. See the "More
+	Information" section for details.
+	
+	STATUS
+	======
+	
+	This problem is a compatibility issue between Microsoft Visual Basic and the
+	Microsoft MIDL compiler.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Open Visual C++ and, on the File menu, click New. On the Projects tab, select
+	  Win32 Dynamic-Link Library, and name the project MyUnknown. Keep the defaults
+	  in any dialog boxes that may appear.
+	
+	2. On the File menu, click New, and then select Text File on the Files tab. Name
+	  the file MyUnknown.odl, and then click OK.
+	
+	3. Add the following code to MyUnknown.odl:
+	
+	  [
+	     uuid(1A4C3A6A-50AE-11D1-BB71-00C04FAD8B08),
+	     version(1.1)
+	  ]
+	  library MyUnknown
+	  {
+	     importlib("StdOle2.tlb");
+	
+	     [
+	        odl,
+	        uuid(1A4C3A68-50AE-11D1-BB71-00C04FAD8B08),
+	        hidden
+	     ]
+	     interface _CTUnknown : IUnknown {
+	        HRESULT GetIUnknown([out, retval] IUnknown** iu);
+	        HRESULT SetIUnknown([in, out] IUnknown** iu);
+	     };
+	
+	     [
+	        uuid(1A4C3A69-50AE-11D1-BB71-00C04FAD8B08)
+	     ]
+	     coclass CTUnknown {
+	        [default] interface _CTUnknown;
+	     };
+	
+	  };
+	
+	4. Press the CTRL+F7 keys or select Compile MyUnknown.odl from the Build menu to
+	  build the type library.
+	
+	5. Open Visual Basic and select a new Standard EXE project. On the Project menu,
+	  choose References, and then click Browse. Find your compiled type library
+	  (MyUnknown.tlb) in the debug directory of your Visual C++ project and click
+	  OK. Make sure that the library is checked in the References dialog box, and
+	  then click OK to close the References dialog box.
+	
+	6. Open the Visual Basic Object Browser by pressing F2. Select MyUnknown from
+	  the drop-down list box on the upper-left portion of the Object Browser. View
+	  the SetIUnknown and GetIUnknown functions of the MyUnknown.CTUnknown class,
+	  and note that Visual Basic identifies the IUnknown** parameters as type
+	  "Unknown," and cannot read them.
+	
+	7. Close your Visual Basic project. Do not save changes.
+	
+	8. To correct the problem, return to Visual C++ and modify the MyUnknown.odl
+	  file by changing the GetIUnknown and SetIUnknown functions to read:
+	
+	  HRESULT GetIUnknown([out, retval] stdole.IUnknown** iu);
+	  HRESULT SetIUnknown([in, out] stdole.IUnknown** iu);
+	
+	9. In the project workspace, click the File View tab. Double-click MyUnknown
+	  Files to expand the file tree. Right-click the MyUnknown.odl file, and then
+	  select Settings on the Context menu.
+	
+	10. On the Project Settings dialog box, choose the General Tab, and then check
+	  the Always use custom build step option. Choose the Custom Build tab, and
+	  then add the following to the Build command(s) line:
+	
+	  mktyplib MyUnknown.odl /tlb "Debug\MyUnknown.tlb"
+	
+	  Add the following to the Output file(s) line, and then click OK:
+	
+	  Debug\MyUnknown.tlb
+	
+	11. Rebuild your type library by pressing CTRL+F7 or selecting Compile
+	  MyUnknown.odl on the Build menu.
+	
+	12. Repeat steps 5 and 6 to verify that Visual Basic can now recognize the
+	  IUnknown** data types.
+	
+	Problems with the Use of MkTypLib
+	---------------------------------
+	
+	Microsoft has standardized on the MIDL compiler for all new COM and COM+
+	applications, and encourages developers to use MIDL whenever possible.
+	
+	Developers who do use MkTypLib to work around this issue should be aware that
+	MkTypLib does not allow you to compile an interface with the qualified
+	stdole.IUnknown** type if the interface is marked "oleautomation compatible."
+	You need to remove the oleautomation attribute to compile the type library.
+	However, if you remove oleautomation, you are not able to use the universal
+	marshaller (typelib marshalling) to remote the interface across contexts. So, in
+	addition to using an MkTypLib library for your type information, you need to
+	build a proxy DLL (or custom marshal with IMarshal) to handle any remoting of
+	the interface.
+	
+	Furthermore, MkTypLib offers only a limited set of functionality in defining your
+	interfaces. If your project requires IDL-specific definitions (such as
+	wire_marshal, iid_is, asynch, and so forth) or the __int64 data type, you cannot
+	use MkTypLib. You need to restructure the interface description as outlined in
+	the "Resolution" section of this article, or build your own library with the
+	CreateTypeLib2 API.
+	
+	REFERENCES
+	==========
+	
+	For more information on using MIDL or MkTypLib, see the "Automation" section in
+	the MSDN library on the following Microsoft Web site at:
+	
+	  http://msdn.microsoft.com/library/psdk/automat/autoportal_7l45.htm
+	
+	(c) Microsoft Corporation 2000, All Rights Reserved.
+	Contributions by Richard R. Taylor, Microsoft Corporation
+	
+	
+	Additional query words: 458
+	
+	======================================================================
+	Keywords          : kbAutomation kbCOMt KbVBA kbVBp kbVBp500 kbVBp600 kbGrpDSVB kbDSupport 
+	Technology        : kbVCsearch kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600 kbSDKSearch kbVBASearch kbZNotKeyword3 kbVC500 kbVC600 kbVC32bitSearch kbSDKVBA500 kbSDKVBA600 kbVC500Search
+	Version           : :5.0,6.0
+	Issue type        : kbprb
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

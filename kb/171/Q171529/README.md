@@ -1,0 +1,99 @@
+---
+layout: page
+title: "Q171529: FIX: Can't Open a Project Group from the Root Directory"
+permalink: kb/171/Q171529/
+---
+
+## Q171529: FIX: Can't Open a Project Group from the Root Directory
+
+	Article: Q171529
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 5.0
+	Operating System(s): 
+	Keyword(s): kbVBp500 kbVS97sp2fix kbGrpDSVB kbvbp500sp2fix
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+	- Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+	- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Visual Basic reports an error loading the <project>.vbp files when loading
+	a project group from the root directory of the drive where Visual Basic is
+	installed.
+	
+	CAUSE
+	=====
+	
+	Visual Basic is looking in the default directory (where VB5.exe was launched).
+	It should look in the same directory as the .VBG file when no path info is
+	stored in the .VBG file, but it does not.
+	
+	RESOLUTION
+	==========
+	
+	Install Visual Studio 97 Service Pack 2 (SP2) or save the project to any
+	location except the root directory of the drive where Visual Basic 5.0 is
+	installed.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article. This bug has been fixed in Visual Studio 97 Service
+	Pack 2.
+	
+	For more information on the Visual Studio 97 Service Pack 2, please see the
+	following article in the Microsoft Knowledge Base:
+	
+	  Q170365 INFO: Visual Studio 97 Service Packs - What, Where,and Why
+	
+	For a list of the Visual Basic 5.0 bugs that were fixed in the Visual Studio 97
+	Service Pack 2, please see the following article in the Microsoft Knowledge
+	Base:
+	
+	  Q171554 INFO: Visual Basic 5.0 Fixes in Visual Studio 97 Service Pack 2
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Start a New Standard EXE project in Visual Basic 5.0.
+	
+	2. Select Add Project from the File menu.
+	
+	3. Select a new ActiveX Control Project.
+	
+	4. Select Save Project Group As from the File menu.
+	
+	5. Save all Files to the Root directory of the drive where Visual Basic 5.0 is
+	  installed.
+	
+	6. Select Open Project from the File menu.
+	
+	7. Select the group1.vbg that you just saved in step 5.
+	
+	  At this time Visual Basic will give a "File not found" error stating that it
+	  cannot find the project <VBpath>\project1.vbp and
+	  <VBpath>\project2.vbp.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbVBp500 kbVS97sp2fix kbGrpDSVB kbvbp500sp2fix 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500Search kbVBA500 kbVB500 kbZNotKeyword3
+	Version           : 5.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

@@ -1,0 +1,99 @@
+---
+layout: page
+title: "Q155593: SMS: No Network Found When Changing Client Redirector"
+permalink: kb/155/Q155593/
+---
+
+## Q155593: SMS: No Network Found When Changing Client Redirector
+
+	Article: Q155593
+	Product(s): Microsoft Systems Management Server
+	Version(s): winnt:1.0,1.1,1.2
+	Operating System(s): 
+	Keyword(s): kbnetwork kbsetup smssetup
+	Last Modified: 27-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	This symptom occurs with a Systems Management Server (SMS) client that has the
+	SMS client software installed and is using a NetWare redirector. The SMS client
+	does not report its inventory to a Windows NT server when the client's
+	redirector is switched to MS Networking.
+	
+	MORE INFORMATION
+	================
+	
+	When an SMS client's redirector has been changed in this fashion, the following
+	error message appears when Invdos.exe is executed from the login script:
+	
+	  No network found.
+	
+	This problem potentially applies to any client operating system SMS supports that
+	can also support more than one of the following network types:
+	
+	  2 = Windows NT 3.x or higher
+	  3 = LAN Manager 1.x
+	  4 = LAN Manager 2.x (includes WFWNET)
+	  5 = NetWare 2.x
+	  6 = NetWare 3.x or higher
+	
+	After the network type has been changed, the client will not be moved to the new
+	SMS domain until it has run the SMS login script or Runsms.bat three times. The
+	client will receive the message
+	
+	  Different site/domain combination
+	
+	until the move to the new domain is completed.
+	
+	CAUSE
+	=====
+	
+	After the SMS client software has been successfully installed on a client, the
+	type of networking used by the client is not reevaluated if the client switches
+	to a different redirector.
+	
+	WORKAROUND
+	==========
+	
+	It is possible to avoid having to deinstall and reinstall the SMS client
+	components by manually editing the Sms.ini file on the client.
+	
+	1. Locate the NetworkType value in the [SMS] section of the Sms.ini file.
+	
+	2. Change its value to match the type of networking the client now uses to gain
+	  access to the SMS logon server.
+	
+	  For example, if the client was originally using NetWare VLMs and then later
+	  switched to MS Networking and logging in to Windows NT servers, change from
+	  "NetworkType=6" to "NetworkType=2." This will allow the client to properly
+	  report to the new Domain.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Systems Management Server
+	version 1.2. This problem has been corrected in the latest U.S. Service Pack for
+	Microsoft Systems Management Server version 1.2. For information on obtaining
+	the Service Pack, query on the following word in the Microsoft Knowledge Base
+	(without the spaces):
+	
+	  S E R V P A C K
+	
+	
+	Additional query words: prodsms Novell smsls runsms netx vlm setup
+	
+	======================================================================
+	Keywords          : kbnetwork kbsetup smssetup 
+	Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+	Version           : winnt:1.0,1.1,1.2
+	
+	=============================================================================
+	

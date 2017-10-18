@@ -1,0 +1,140 @@
+---
+layout: page
+title: "Q178076: HOWTO: Use a PictureBox to Control Orientation Printing a Form"
+permalink: kb/178/Q178076/
+---
+
+## Q178076: HOWTO: Use a PictureBox to Control Orientation Printing a Form
+
+	Article: Q178076
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): WINDOWS:5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbVBp kbVBp500 kbVBp600 kbGrpDSVB kbDSupport
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	When using the PrintForm method to print a Form, you have no control over the
+	orientation. This article describes a way to use a PictureBox to print the
+	client area of a Form in either orientation.
+	
+	MORE INFORMATION
+	================
+	
+	The PrintForm method creates its own Device Context and therefore ignores any
+	Printer object settings. It will just use the default orientation of the current
+	default printer. Because you cannot change how PrintForm behaves, you must print
+	another way. You could change printer settings with APIs, print the Form, then
+	change them back, but a simpler approach is to print from a PictureBox. The
+	drawback to this method of using PictureBoxes is that you are printing a Bitmap
+	graphic, so the quality is less than the PrintForm methods. The process
+	described here uses two PictureBoxes, each one covering the Form. The second
+	PictureBox is to avoid a shadowing effect caused by a small offset of the redraw
+	on a single PictureBox. This same technique can be used to print any group of
+	controls or to print the client area of a Form that is larger than the screen.
+	It also allows you to print text or other images onto the same page as the
+	form's (PictureBox's) image.
+	
+	Example of Using a PictureBox to Print a Form in Any Orientation
+	----------------------------------------------------------------
+	
+	1. Create a new Standard EXE Project. Form1 is created by default.
+	
+	2. Add two PictureBoxes to Form1 so that each nearly covers the Form.
+	
+	  NOTE: Avoid drawing the second PictureBox within the first. Doing so makes the
+	  second PictureBox a member of the first. A simple way to avoid the problem is
+	  to place the origin point of the second PictureBox to the left of the origin
+	  point of the first PictureBox. Once the second box is drawn, you can resize
+	  it so that it is the same size as the first PictureBox.
+	
+	3. Right-mouse click on Picture2 and choose "Send to Back."
+	
+	4. Place Picture1 on top of Picture2, covering Picture2.
+	
+	5. Add a CommandButton and some other controls to Picture1, leaving Picture2
+	  empty.
+	
+	6. Place this code in the Declarations Section of the module of the Form:
+	
+	        Private Declare Function SendMessage Lib "user32" Alias _
+	           "SendMessageA" (ByVal hwnd As Long, ByVal wMsg As Long, _
+	           ByVal wParam As Long, ByVal lParam As Long) As Long
+	
+	        Private Const WM_PAINT = &HF
+	        Private Const WM_PRINT = &H317
+	        Private Const PRF_CLIENT = &H4&    ' Draw the window's client area
+	        Private Const PRF_CHILDREN = &H10& ' Draw all visible child windows
+	        Private Const PRF_OWNED = &H20&    ' Draw all owned windows
+	
+	        Private Sub Command1_Click()
+	         Dim rv As Long
+	         Picture1.SetFocus  ' So that the button doesn't look pressed
+	         Picture2.AutoRedraw = True
+	         rv = SendMessage(Picture1.hwnd, WM_PAINT, Picture2.hDC, 0)
+	         rv = SendMessage(Picture1.hwnd, WM_PRINT, Picture2.hDC, _
+	            PRF_CHILDREN + PRF_CLIENT + PRF_OWNED)
+	         Picture2.Picture = Picture2.Image
+	         Picture2.AutoRedraw = False
+	         Printer.Orientation = vbPRORLandscape   ' 2
+	         Printer.Print ""
+	         Printer.PaintPicture Picture2.Picture, 0, 0
+	         Printer.CurrentY = Picture2.Height + 200   ' get below image
+	         Printer.Print "Text on the same page as the image!"
+	         Printer.EndDoc
+	
+	         Command1.SetFocus  ' Return Focus
+	        End Sub
+	
+	        Private Sub Form_Load()
+	         Me.Show
+	         Command1.Caption = "Print Form"
+	        End Sub
+	
+	7. Run the Project and click on the "Print Form" button. Note that when you
+	  click on Command1, "Print Form", it will print the PictureBox and the
+	  controls it contains in Landscape orientation.
+	
+	REFERENCES
+	==========
+	
+	If you need to print more than just the client area of a Form or if you need to
+	scale the printout, please see the following article in the Microsoft Knowledge
+	Base:
+	
+	  Q161299 HOWTO: Capture and Print the Screen, a Form, or Any Window
+	
+	For more information, please see the following articles in the Microsoft
+	Knowledge Base:
+	
+	  Q230502 HOWTO: Print a Form That is Too Large for the Screen or Page
+	
+	  Q194580 HOWTO: Print a Composite Image From a RichTextBox
+	
+	  Q146022 HOWTO: Set Up the RichTextBox Control for WYSIWYG Printing
+	
+	  Q242483 BUG: Error 486 or 482 Occurs When Using PrintForm
+	
+	  Q198901 SAMPLE: PageSet.exe Programmatically Changes Default Printer
+	  Orientation
+	
+	Additional query words: portrait KBPRINTING
+	
+	======================================================================
+	Keywords          : kbVBp kbVBp500 kbVBp600 kbGrpDSVB kbDSupport 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+	Version           : WINDOWS:5.0,6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

@@ -1,0 +1,181 @@
+---
+layout: page
+title: "Q142619: Unattended Setup of Network Cards from Drvlib"
+permalink: kb/142/Q142619/
+---
+
+## Q142619: Unattended Setup of Network Cards from Drvlib
+
+	Article: Q142619
+	Product(s): Microsoft Windows NT
+	Version(s): 3.51
+	Operating System(s): 
+	Keyword(s): kbnetwork kbsetup
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 3.51 
+	- Microsoft Windows NT Server version 3.51 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Unattended setup of network cards from the Drvlib directory of the Windows NT
+	compact discs requires that you copy the network adapter setup files to a
+	separate directory and specify the path to Oemsetup.inf in the unattended setup
+	answer file.
+	
+	This article describes a method for including network cards from the Drvlib
+	directory in the Windows NT distribution files on a network share so that they
+	are part of the default available network adapters at setup time.
+	
+	WORKAROUND
+	==========
+	
+	WARNING: Modification of Setup files can cause serious, system-wide problems
+	before and after Setup and may require you to reinstall Windows NT to correct
+	them. Microsoft cannot guarantee that any problems resulting from the
+	modification of the Setup files can be solved. Make Setup file modifications at
+	your own risk.
+	
+	In the following procedure, assume that drive D is the CD-ROM drive and drive X
+	is a network share from which you run unattended installations:
+	
+	1. At a command prompt, type the following to copy the Windows NT distribution
+	  files to a network share:
+	
+	  "copy d:\i386\*.* x:\ " (without the quotation marks)
+	
+	2. At a command prompt, type the following commands to copy the network adapter
+	  related files:
+	
+	  " d:
+	  cd \drvlib\netcard\x86\<nicname>
+	  copy *.* x:\
+	  x:
+	  cd \
+	  rename oemsetup.inf oemnadxx.inf " (without the quotation marks)
+	
+	  Note that <nicname> is the name of the subdirectory of the Drvlib
+	  directory that matches the network adapter.
+	
+	  Because all network adapter setup script files are called Oemnad*.inf, you
+	  need to choose a name Oemnadxx.inf that does not already exist in the Windows
+	  NT compact disc distribution files (for example, Oemnad3c.inf for a 3Com
+	  adapter).
+	
+	  Oemnadxx.inf will refer to this file and xx.sys will refer to the driver file
+	  name.
+	
+	3. During the first phase of unattended setup, all system files are temporarily
+	  copied to C:\$Win_nt$.~LS and C:\$Win_nt$.~BT. Dosnet.inf describes the files
+	  that have to be copied. You must modify Dosnet.inf so that all the necessary
+	  files are included.
+	
+	  Edit X:\Dosnet.inf at the end of the [Files] section, and add one line for the
+	  INF file and one line per existing file under
+	  Drvlib\netcard\x86\<nicname>
+	
+	     d1,OEMNADxx.INF
+	     d1,<nicdrv>.SYS        <replace with the proper file name>
+	     d1,file1
+	
+	  and so on for all other existing files under the subdirectory described above.
+	
+	4. Txtsetup.sif is used during the text mode phase of the unattended setup. It
+	  tells the setup process which files have to be copied to the hard disk. You
+	  must modify the Txtsetup.sif file: at the end of the [Files] section, add the
+	  following line for the setup information file:
+	
+	  Oemnadxx.inf = dx,d7,,2,0,0
+	
+	  Add a line for the network adapter driver so that it will be copied to
+	  System32\drivers directory:
+	
+	  xxDRV.sys = dx,d19,,4,1
+	
+	  For all other files xx.xxx in the Drvlib\Netcard\x86\<nicname>
+	  directory, add a line:
+	
+	  xx.xxx = dx,d4,,2,0,0
+	
+	  These files will be copied to the System32 directory.
+	
+	5. Oemnadzz.inf is a global setup script file that includes the definition of
+	  all network adapters from Drvlib directory. Because you want to use the
+	  OemnadXX.inf file that was copied on the flat distribution files, not the
+	  Oemsetup.inf file from Drvlib\netcard directory, the matching option in
+	  Oemnadzz.inf must be disabled. To do this, run the following batch commands
+	  at the command prompt:
+	
+	  x:
+	  cd \
+	  attrib -r oemnadzz.in_
+	  expand -r oemnadzz.in_
+	  del oemnadzz.in_
+	
+	  Edit Oemnadzz.inf and comment out all lines including a network adapter option
+	  defined in the Oemsetup.inf [Options] section. To comment a line, place a
+	  semicolon (;) in front of it.
+	
+	  For example, 3C595 and 3C590 are the options to disable for the 3Com PCI
+	  adapter defined in the Drvlib\Netcard\x86\el59x directory.
+	
+	6. The Oemsetup.inf setup script files in the Drvlib directory do not support
+	  the unattended setup mode. During an unattended setup, the global variable
+	  !STF_GUI_UNATTENDED is set to yes and setup script files test its value to
+	  determine whether the network adapter information has to be retrieved from
+	  Unattend.txt.
+	
+	  To prevent user interaction during Setup, modify the OemnadXX.inf file. For
+	  additional information, please see the following article in the Microsoft
+	  Knowledge Base:
+	
+	  ARTICLE-ID: Q143134
+	  TITLE : OEMSETUP.INF Modifications for Automated Windows NT Setup
+	
+	7. The unattended setup answer file (Unattend.txt) includes a line to refer to
+	  the right network adapter option:
+	
+	  [NetworkAdapterData]
+	  !AutoNetOption = "<OEMNIC>"
+	
+	  You can also use the [AdapterParameters] section if you follow the
+	  instructions provided in the Knowledge Base article referenced in step 6.
+	
+	  You are now able to run X:\Winnt32 /U:X:\Unattend.txt.
+	
+	MORE INFORMATION
+	================
+	
+	The unattended setup answer file (Unattend.txt) includes a section for the
+	network adapter information. (Please refer to the default Unattend.txt file for
+	more details.)
+	
+	To install a network adapter from the Drvlib directory, you must copy all the
+	related network adapter files from the Drvlib directory to a directory C:\Oem.
+	Then Unattend.txt includes a section similar to the following:
+	
+	  [NetworkAdapterData]
+	  !AutoNetOption = "<OEMNIC>"
+	  !OEMNetOption = YES
+	  !OEMNetDrive = C:\OEM\
+	  !OEMNetInfFile = C:\OEM\oemsetup.inf
+	
+	For additional information, please see the following article(s) in the Microsoft
+	Knowledge Base:
+	
+	  ARTICLE-ID: Q141519
+	  TITLE : Unattended and Computer Profile Setup Fails to Install OEM NIC
+	
+	Additional query words: prodnt
+	======================================================================
+	Keywords          : kbnetwork kbsetup 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+	Version           : 3.51
+	
+	=============================================================================
+	

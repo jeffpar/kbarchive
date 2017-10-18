@@ -1,0 +1,65 @@
+---
+layout: page
+title: "Q102119: Mac Form: Creating a Custom Form with Pre-Addressed Recipient"
+permalink: kb/102/Q102119/
+---
+
+## Q102119: Mac Form: Creating a Custom Form with Pre-Addressed Recipient
+
+	Article: Q102119
+	Product(s): Microsoft Mail For Appletalk Networks
+	Version(s): WINDOWS:2.0,3.0,3.1
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 10-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Mail for AppleTalk Networks, versions 2.0, 3.0, 3.1 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	When you are using the Form Designer, you can create a custom form with a
+	default recipient, similar to the Inquiry form. The Inquiry form is shipped with
+	the Mail server and always gets sent to the Network Manager.
+	
+	The following are the steps to create a custom form with a default recipient:
+	
+	1. Choose the Field tool and double-click the User List field.
+	
+	2. Make sure the Lock Text check box is clear (not selected) and choose OK.
+	
+	3. Choose the Browse tool and type the default recipient's name into the User
+	  List. If there are multiple users with that name (for example, Network
+	  Manager or Jane Smith), use the recipient name and the server name, as in the
+	  following:
+	
+	  " Network Manager@Accounting Server " (without the quotation marks)
+	
+	4. Repeat steps 1 and 2, this time making sure the Lock Text check box is
+	  selected.
+	
+	5. Recompile and install.
+	
+	TIP: If you want to hide the User List, bring up the message box (COMMAND+M) and
+	type the following:
+	
+	  " hide card field "user list" " (without the quotation marks)
+	
+	If the field is not locked, or if the name is not unique, the Send button will be
+	unavailable (gray) after the form is installed until a valid address is added to
+	the recipient list. The Inquiry stack is not a good example for this because it
+	uses a different method to pre-addressing messages.
+	
+	Additional query words: 2.00 3.00 3.10 grey dim
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMailSearch kbZNotKeyword3 kbMailATN300 kbMailATN310 kbMailATN200
+	Version           : WINDOWS:2.0,3.0,3.1
+	
+	=============================================================================
+	

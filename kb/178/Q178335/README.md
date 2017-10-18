@@ -1,0 +1,273 @@
+---
+layout: page
+title: "Q178335: INFO: Summary List: Bugs Fixed by Visual C++ Version 5.0"
+permalink: kb/178/Q178335/
+---
+
+## Q178335: INFO: Summary List: Bugs Fixed by Visual C++ Version 5.0
+
+	Article: Q178335
+	Product(s): Microsoft C Compiler
+	Version(s): winnt:5.0
+	Operating System(s): 
+	Keyword(s): kbList kbVC500fixkbfixlist
+	Last Modified: 07-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+	- Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article lists the titles and Q numbers of those Microsoft Visual C++
+	Knowledge Base articles that describe bugs that were fixed starting with Visual
+	C++ version 5.0.
+	
+	MORE INFORMATION
+	================
+	
+	Fixlist for Visual C++ 5.0
+	--------------------------
+	
+	Q66778 FIX: Error Messages May Say "short" or "int" Instead of "enum"
+	
+	Q170979 FIX: Pragma Pack(pop) Missing from afxdocob.h Header File
+	
+	Q165789 DOC: Tab Text is too Small to Read
+	
+	Q164949 FIX: Visual C++ Debugger Crashes on Very Long Symbols
+	
+	Q164668 FIX: Small Portion of Win32 Documentation Missing From VCEE 4.2
+	
+	Q164380 FIX: Custom Build Rules are Lost with Multiple Selections
+	
+	Q164150 DOC: C4237 Online Help Contains Wrong Information on "bool"
+	
+	Q164000 FIX: C1001 Compiler File MAIN.C Line 413
+	
+	Q163995 FIX: C2989 Declaring Template Class in a Namespace
+	
+	Q163364 FIX: Class-local typedef Causes C1001 in msc1.cpp, Line 1089
+	
+	Q161874 FIX: Displaying CPropertySheet in COleControl Causes Assert
+	
+	Q160075 FIX: Problems Debugging in Case-sensitive Database
+	
+	Q160074 FIX: SetFieldNull Asserts or Crashes When Called for Parameter
+	
+	Q160073 FIX: RFX_Binary Updates Unchanged CByteArray Data
+	
+	Q160017 FIX: Access Violation Using deque class
+	
+	Q159956 FIX: Dirty Flag Not Cleared During Edit() or Update()
+	
+	Q159576 FIX: Cannot Open Stored Procedure from Call Stack Context
+	
+	Q157903 FIX: Changes Lost When Changing Variable During Debugging
+	
+	Q157876 FIX: SetFieldNull() Asserts in DBCORE.CPP Line 4055 or 4062
+	
+	Q156257 FIX: SQL Server May Crash When sp_who2 Is Debugged
+	
+	Q156190 FIX: LNK1170 Building Project's Makefile from Command Line
+	
+	Q156143 FIX: Execute SQL Button Does Not Show Change to Stop Execute
+	
+	Q156137 FIX: Cannot Set Breakpoint at EXECUTE Statement
+	
+	Q156136 FIX: F1 Help Not Hooked to Some New Dialog Boxes
+	
+	Q156135 FIX: CRecordset::m_lCurrentRecord Gives Inaccurate Values
+	
+	Q156134 FIX: CLongBinary Causes "Invalid String or Buffer Length"
+	
+	Q156067 FIX: Setting Tooltip Text in OnToolHitTest Causes Assertion
+	
+	Q156005 FIX: Incorrect Warning About Procedure/ Trigger Name Length
+	
+	Q155622 FIX: IDE Debugger Truncates Floating Point Numbers
+	
+	Q155436 DOC: CImageList Returned from CreateDragImage Needs Delete
+	
+	Q155386 FIX: C1001 in Compiler File MSC1.CPP at Line 1089
+	
+	Q155211 FIX: C2373 on getwchar/putwchar When Using UNICODE & __stdcall
+	
+	Q155160 FIX: Debugger Sees Only One Variable of Two with Same Name
+	
+	Q155142 FIX: ClassWizard | Member Variables Loses Member Variables
+	
+	
+	Q154895 FIX: CInternet::File ReadString() Loses Data
+	
+	Q154648 FIX: Toolbars Broken in ENROLL Tutorial Samples
+	
+	Q154591 FIX: Wrong Version of MSVCRT40.DLL(Forwarder DLL) in Windows 95
+	
+	Q154482 FIX: Undocumented Functions in Type Safe Collection Classes
+	
+	Q154112 FIX: Classview Cannot Find Template Member Function Definition
+	
+	Q153897 FIX: MFC DAO or ODBC App Crashes on Exit
+	
+	Q153425 FIX: IDE Crashes Undoing Sizing in Dialog Editor
+	
+	Q153398 FIX: Namespace and Typedef Cause C1001:'msc1.cpp',line 1090
+	
+	Q152603 FIX: Masked Edit Tab Order Incorrect If Visible Property FALSE
+	
+	Q152131 FIX: C1001: Extern in Function Call or Bad Type in Prototype
+	
+	Q152055 FIX: No Error and Constructor Not Called if Prototype Missing
+	
+	Q152041 FIX: C1001 Error in 'msc1.cpp' on Template Function Parameter
+	
+	Q152016 FIX: Errors C2065/C2064 When Function L is Called with Macro
+	
+	Q151897 FIX: CListCtrl::InsertColumn() Causes Column Data to Shift
+	
+	Q151675 FIX: Re-throwing Exception Causes Abnormal Program Termination
+	
+	Q151673 FIX: Compiler Allocates Struct with Nested Struct Incorrectly
+	
+	Q150576 FIX: C2682 Using dynamic_cast to Cast to a Const Pointer Type
+	
+	Q150573 FIX: C2084 When Template Class Constructor Has No Body
+	
+	Q150378 FIX: C1001 if No Template Types in Template Func Arg List
+	
+	Q150351 FIX: Absolute Pathnames for Source Files Placed in Makefile
+	
+	Q150292 FIX: Access Violation When Copying Src File Between Projects
+	
+	Q150287 FIX: Custom Build Commands Fail When Built from Command Line
+	
+	Q150003 FIX: __vfptr Elements Are Not Properly Displayed in Debugger
+	
+	Q150000 FIX: Minimal Rebuild Fails on Access Specifier Change for Enum
+	
+	Q149965 FIX: C2668 in Overloaded Function When enum Is Promoted to int
+	
+	Q149496 FIX: Custom Build Generates LNK1104 for Project Build from IDE
+	
+	Q149285 FIX: C1001 When Initialize Array of Type Class with #include
+	
+	Q148789 FIX: No Error Given for Non-static Callback Member Function
+	
+	Q148704 FIX: Template Keyword Can't Be Used Inside Class Declarations
+	
+	Q148688 FIX: C2243 on Friend Overload o
+	
+	Q148504 FIX: C2371: Cast to Struct Ptr in Default Arg of Class Member
+	
+	Q148318 FIX: Using #define NOGDI Results in Compilation Syntax Errors
+	
+	Q148139 FIX: Default OLE Container w/ Splitters Faults on View Closure
+	
+	Q147892 FIX: Custom AppWizard Doesn't Support Multiple Languages
+	
+	Q147630 FIX: Remote Monitor Quits When TCP/IP Isn't Loaded
+	
+	Q147315 FIX: Access Violation After Unloading Extension DLL
+	
+	Q147130 FIX: Building an .OCX Always Runs Regsvr32
+	
+	Q146444 FIX: Working Directory Setting with Trailing Backslash Fails
+	
+	Q145863 FIX: Clear All Guides in Dialog Editor Causes Access Violation
+	
+	Q145574 FIX: IDE Appears to Hang If Browse Key (F11 or F12) Is Pressed
+	
+	Q143430 FIX: Pointer to Member Function Is Not Shown as Reference
+	
+	Q143352 FIX: C2988 on Conversion Operator Between Two Template Classes
+	
+	Q143083 FIX: C2664 When Array Is Passed as a Parameter to a Function
+	
+	Q142787 FIX: C1001 on Template Class of Type Pointer to Function
+	
+	Q141865 FIX: Can't Get to Hidden Workspace After Enabling Docking View
+	
+	Q141478 FIX: Floating Toolbars Disappear in Developer Studio
+	
+	Q141477 FIX: Exception Specification Syntax Handled Incorrectly
+	
+	Q141413 FIX: MSDEV Does Not Prompt for Executable for Debug Session
+	
+	Q140597 FIX: Fatal Error LNK1561: Entry Point Must Be Defined
+	
+	Q140450 FIX: "Failed to (or don't know how to) build" Warning
+	
+	Q140444 FIX: UNC File Names Cause Remote Debugging to Fail
+	
+	Q140439 FIX: Namespace Scoped Classes Don't Show Up in ClassView
+	
+	Q140356 FIX: NMAKE Fails If Paths & File Names Have Special Characters
+	
+	Q140024 FIX: Tools Won't Run If There's a Space in the Path
+	
+	Q139871 FIX: Error C2371 on Struct Typedef that Does Not Have a Tag
+	
+	Q139637 FIX: Developer Studio Ignores /nologo Linker Setting
+	
+	Q139477 FIX: Insufficient Disk Space Causes Visual C++ to Fail
+	
+	Q139458 FIX: Ambiguous C2966 Error with Nested Template Classes
+	
+	Q139422 FIX: Advanced Options for SDI Application in Appwizard
+	
+	Q139301 FIX: C2664 Error w/Property Sheet Component Added to CDocument
+	
+	Q139295 FIX: Local File Is Not Saved with Save All
+	
+	Q139294 FIX: Replace "Beginning of Line" Skips Blank Lines
+	
+	Q139271 FIX: Changing Keyboard Compatibility Fails to Update Some Keys
+	
+	Q138947 FIX: Comma Acts Like CR/LF in Custom Build Options
+	
+	Q138752 FIX: C4114 Warning When Using Templates and Const Keyword
+	
+	Q138412 FIX: AppWiz Samples Fail to Build from Command Line
+	
+	Q137333 DOC: How to Use the PX_Blob Function
+	
+	Q135666 FIX: Assertion Failure in CFieldExchange::GetColumnType()
+	
+	Q133249 FIX: Fatal Error U1052: File 'win32.mak' Not Found
+	
+	Q133071 FIX: Exception Specification in Template causes C2961 Error
+	
+	Q132116 FIX: CheckAutoCenter May Return TRUE with DS_ABSALIGN
+	
+	Q131945 DOC: OnFileNameOK Returns 0 if Valid or 1 if Not Valid
+	
+	Q131102 FIX: Enumerating Connection Points Causes GP Fault
+	
+	Q131044 FIX: ClassWizard Incorrectly Reads LPDISPATCH Params from .TLB
+	
+	Q128344 FIX: Error C2593: 'operator +' Is Ambiguous
+	
+	Q122789 FIX: Error C2579 When Using Function Templates
+	
+	Q121216 FIX: Vector Delete Calls Exported Destructor Only Once
+	
+	Q119457 FIX: Visual C++ Setup Program Prompts "Insert dis
+	
+	Q115521 FIX: Private Copy Constructor Called Without Proper Access
+	
+	Additional query words: noupdate
+	
+	======================================================================
+	Keywords          : kbList kbVC500fix kbfixlist
+	Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC32bitSearch kbVC500Search
+	Version           : winnt:5.0
+	Issue type        : kbinfo
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

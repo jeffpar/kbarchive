@@ -1,0 +1,296 @@
+---
+layout: page
+title: "Q219077: INF: Configuring Data Sources for the Microsoft OLE DB Provider"
+permalink: kb/219/Q219077/
+---
+
+## Q219077: INF: Configuring Data Sources for the Microsoft OLE DB Provider
+
+	Article: Q219077
+	Product(s): Microsoft SNA Server
+	Version(s): WINDOWS:4.0 SP2
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 19-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft OLE DB Provider for AS/400 and VSAM, version 4.0 SP2 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article provides information on the following topics:
+	
+	  Overview of the Microsoft OLE DB Provider for AS/400 and VSAM
+	  OLE DB Data Links
+	  Adding or Configuring a Data Link
+	  Browsing OLE DB Data Sources
+	  Configuring Data Links
+	
+	MORE INFORMATION
+	================
+	
+	Overview of the Microsoft OLE DB Provider for AS/400 and VSAM
+	-------------------------------------------------------------
+	
+	To use Microsoft OLE DB Provider for AS/400 and VSAM with an OLE DB consumer
+	application, you must either:
+	
+	- Create a Microsoft data link file (.UDL) and call this from your
+	  application.
+	
+	  -or-
+	
+	- Call the provider using a connection string that includes the provider name.
+	
+	Microsoft Data Access Components (MDAC) 2.0 and later include Data Links, a
+	generic method for managing and loading connections to OLE DB data sources. Data
+	Links also support finding and persisting connections to OLE DB data sources.
+	
+	If you are accessing VSAM data sets, then after configuring a Data Link, you must
+	configure host data descriptions using the SNA Data Descriptions Utility. See
+	the online Help accessible through the utility for additional information on
+	configuring data descriptions and creating host column description (HCD) files.
+	For additional information on using UDLs, as well as a list of supported OLE DB
+	initialization properties and ADO connection string arguments, see "Using the
+	OLE DB Provider for AS/400 and VSAM" in the SNA Server SDK online documentation
+	or the SNA Data Descriptions Utility online Help under the topic: "Configuring a
+	data source for OLE DB Provider for AS/400 and VSAM."
+	
+	OLE DB Data Links
+	-----------------
+	
+	You must configure data source information for each AS/400 or mainframe system
+	data source object that is to be accessed using OLE DB Provider for AS/400 and
+	VSAM. The default parameters for OLE DB Provider for AS/400 and VSAM are used
+	only when these parameters are not configured for each data source.
+	
+	Microsoft Data Links provides a uniform method for creating file-persistent OLE
+	DB data source object definitions in the form of Universal Data Link (UDL)
+	files. Applications, such as the RowsetViewer sample included with the SNA
+	Server SDK, can open created UDL files and pass the stored initialization string
+	to OLE DB Provider for AS/400 and VSAM at run time.
+	
+	Adding or Configuring a Data Link
+	---------------------------------
+	
+	You must create a Data Link to configure parameters for your OLE DB data source.
+	You can create a new Data Link by clicking the shortcut in the SNA Server
+	program folder. The properties of a Data Links file can be edited by opening the
+	file from Windows Explorer. To edit the Data Links file:
+	
+	For Windows NT:
+	
+	1. From the Start menu, select the Microsoft SNA Server program group.
+	
+	2. Select the Data Access program group.
+	
+	3. Select New OLE DB Data Source. The Data Link Properties page appears.
+	
+	4. Configure the data source information for the selected provider. Click Help
+	  for more information.
+	
+	5. Click OK to save the Data Link.
+	
+	For Windows 95/98:
+	
+	1. From the Start menu, select the Microsoft SNA Server program group.
+	
+	2. Select the Data Access program group.
+	
+	3. Select New OLE DB Data Source. The Data Link Properties page appears.
+	
+	4. Configure the data source information for the selected provider. Click Help
+	  for more information.
+	
+	5. Click OK to save the Data Link.
+	
+	By default, Data Links are created in the Program Files\Common Files\System\OLE
+	DB\Data Links folder. However, you can create a Data Link in any location by
+	opening the target folder, selecting New Microsoft Data Link from the File menu,
+	and configuring the Data Link Properties page.
+	
+	Browsing OLE DB Data Sources
+	----------------------------
+	
+	By default, Data Links are created in the Program Files\Common Files\System\OLE
+	DB\Data Links folder. A shortcut is provided in the Microsoft SNA Server program
+	group. To browse the data sources:
+	
+	1. From the Start menu, select the Microsoft SNA Server program group.
+	
+	2. Select the Data Access program group.
+	
+	3. Select Browse OLE DB Data Source. The list of Data Links saved in the default
+	  location is displayed.
+	
+	Configuring Data Links
+	----------------------
+	
+	The Provider tab allows you to select the OLE DB provider (the provider name
+	string) to be used in this UDL file from a list of possible OLE DB providers.
+	Choose Microsoft OLE DB Provider for AS/400 and VSAM.
+	
+	The Connection tab allows you to configure the basic properties required to
+	connect to a data source. For OLE DB Provider for AS/400 and VSAM, the
+	connection properties include the following values:
+	
+	  Data Source: The data source is an optional parameter that can be used to
+	  describe the data source. When the Data Links configuration program is loaded
+	  from the SNA Server program folder, the Data Source field is required. This
+	  field is used to name the UDL file, which is stored in the Program
+	  Files\Common Files\System\OLE DB\Data directory.
+	
+	  Location: The remote database name required for connecting to OS/400 systems.
+	  This parameter is not used when connecting to a mainframe system. In OS/400,
+	  this property is referred to as RDBNAM. The RDBNAM value can be determined by
+	  invoking the WRKRDBDIRE command from the console to the OS/400 system. If
+	  there is no RDBNAM value, then one can be created using the Add option.
+	
+	  User name: A valid user name is normally required to access data sources on a
+	  host computer.
+	
+	  Password: A valid password is normally required to access data sources on a
+	  host computer. Optionally, you can choose to save the password in the UDL
+	  file by selecting the "Allow saving password" check box.
+	
+	  WARNING: This option persists the authentication information in plain text
+	  within the UDL file.
+	
+	The Connection tab also includes a Test Connection button that can be used to
+	test the connection parameters. The connection can only be tested after all of
+	the required parameters are entered. When you click this button, a session is
+	established to the host computer using OLE DB Provider for AS/400 and VSAM.
+	
+	The Advanced tab exposes OLE DB standard properties. For OLE DB Provider for
+	AS/400 and VSAM, the advanced properties include the following values:
+	
+	  Access permissions: The mode property is used to set the access permissions
+	  on the data source object. As implemented by the OLE DB Provider for AS/400
+	  and VSAM, the mode applies to host file locks; it does not apply to record
+	  locks. The default mode for the OLE DB Provider for AS/400 and VSAM is
+	  ReadWrite.
+	
+	  Connection Timeout: The amount of time (in seconds) to wait for initialization
+	  to complete. This parameter is not currently supported by the OLE DB Provider
+	  and defaults to 0.
+	
+	  Impersonation Level: The level of impersonation that the server is allowed to
+	  use when impersonating the client. The provider default value is
+	  Impersonate.
+	
+	  Protection Level: The OLE DB Provider for AS/400 and VSAM does not support
+	  this value.
+	
+	The All tab allows you to configure additional properties used to connect to a
+	data source. Some of the properties in the All tab are required. These
+	properties can be edited by selecting a property from the displayed list, and
+	clicking Edit Value. For Microsoft OLE DB Provider for AS/400 and VSAM, these
+	properties include the following values:
+	
+	  APPC Local LU Alias: The name of the local LU alias configured in the SNA
+	  server.
+	
+	  APPC Mode Name:The APPC mode that must be set to a value that matches the host
+	  configuration and SNA server configuration. Legal values for the APPC mode
+	  include QPCSUPP (common system default), #INTER (interactive), #INTERSC
+	  (interactive with minimal routing security), #BATCH (batch), #BATCHSC (batch
+	  with minimal routing security), and custom modes. The following modes that
+	  support bi-directional LZ89 compression are also legal: #INTERC
+	  (interactive), INTERCS (interactive), BATCHC (batch), and BATCHCS (batch).
+	
+	  APPC Remote LU Alias: The name of the remote LU alias configured in the SNA
+	  server.
+	
+	  Cache Authentication: The provider's data source object or enumerator is
+	  allowed to cache sensitive authentication information such as a password in
+	  an internal cache. The default for this property is False.
+	
+	  Default Library: The default AS/400 library to be accessed. This parameter is
+	  not required for mainframe access and is optional when connecting to AS/400
+	  files.
+	
+	  Encrypt Password: The OLE DB Provider for AS/400 and VSAM does not support
+	  this value.
+	
+	  Extended Properties: A method to specify additional provider-specific
+	  properties. Properties passed using this parameter should be delimited by
+	  semicolons and will be interpreted by the provider's underlying network
+	  client.
+	
+	  Host CCSID: The character code set identifier (CCSID) matching the data as
+	  represented on the host computer. This parameter defaults to U.S./Canada
+	  (37). The CCSID property is required when processing binary data as character
+	  data. Unless the Process Binary as Character value is set, character data is
+	  converted based on the host column CCSID and default ANSI code page.
+	
+	  Host Column Description File: The fully qualified file name of the DDM host
+	  column description (HCD) file, for example: C:\Program
+	  Files\SNA\System\Sample.hcd. This parameter can be a UNC string up to 256
+	  characters. This property is required when connecting to a mainframe system
+	  and is optional when connecting to OS/400.
+	
+	  Impersonation Level: The level of impersonation that the server is allowed to
+	  use when impersonating the client. The provider default value is
+	  Impersonate.
+	
+	  Integrated Security: The OLE DB Provider for AS/400 and VSAM does not support
+	  this value.
+	
+	  Locale Identifier: The OLE DB Provider for AS/400 and VSAM does not use this
+	  value.
+	
+	  Mask Password: The OLE DB Provider for AS/400 and VSAM does not support this
+	  value.
+	
+	  Network Address: This property is used to locate the target host computer,
+	  specifically the TCP/IP address or TCP/IP host name/alias associated with the
+	  DDM port. The network address is required when connecting using TCP/IP.
+	  Network Port: This property is used to locate the target DDM service access
+	  port when connecting using TCP/IP. The default is the well-known DDM port
+	  address of 446.
+	
+	  Network Transport Library: The network transport dynamic link library property
+	  designates whether the provider connects with SNA LU6.2 or TCP/IP. The
+	  default value is SNA. If TCP/IP is selected, then values for Network Address
+	  and Network Port are required. If the default SNA is selected, then values
+	  for APPC Local LU Alias, APPC Mode Name, and APPC Remote LU Alias are
+	  required. TCP/IP connectivity to the mainframe is not supported.
+	
+	  PC Code Page: This property is required when processing binary data as
+	  character data. Unless the Process Binary as Character value is set,
+	  character data is converted based on the default ANSI code page configured in
+	  Windows. This parameter defaults to Latin 1 (1252).
+	
+	  Persist Security Info: Optionally, you can choose to save the password in the
+	  UDL file by selecting the Allow saving password check box.
+	
+	  WARNING: This option persists the authentication information in plain text
+	  within the UDL file.
+	
+	  Process Binary as Character: This option treats binary (CCSID 65535) data type
+	  fields as character data type fields on a per-data source basis. The Host
+	  CCSID and PC Code Page values are required input and output parameters.
+	
+	  Protection Level: The OLE DB Provider for AS/400 and VSAM does not support
+	  this value.
+	
+	  Repair Host Keys: This property provides for repair of invalid key offsets
+	  received from OS/400 when keys have been defined using the DDS "RENAME"
+	  clause. The default value is False.
+	
+	  Strict Validation: The default value is False.
+	
+	Additional query words: MVS OS/390 OS/400
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbOLEDBSearch kbOLEDBProvAS400VSAM400SP2 kbOLEDBProvSearch
+	Version           : WINDOWS:4.0 SP2
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

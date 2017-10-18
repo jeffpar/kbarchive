@@ -1,0 +1,91 @@
+---
+layout: page
+title: "Q97759: Starting Heap Walker Results in a GP Fault"
+permalink: kb/097/Q97759/
+---
+
+## Q97759: Starting Heap Walker Results in a GP Fault
+
+	Article: Q97759
+	Product(s): Microsoft Windows Software Development Kit
+	Version(s): 3.0,3.1
+	Operating System(s): 
+	Keyword(s): kbfile
+	Last Modified: 23-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	When the Microsoft Windows Heap Walker application (HEAPWALK.EXE) that is
+	shipped with the Microsoft Windows versions 3.0 and 3.1 SDK is started or if
+	another application is started after Heap Walker is running, a general
+	protection (GP) fault may occur with the following message:
+	
+	  HEAPWALK caused a general Protection Fault in module HEAPWALK.EXE at
+	  xxxx.xxxx.
+	
+	If Dr. Watson is running, it reports the fault as:
+	
+	  'Exceed Segment Bounds (Write)' fault at HEAPWALK xxxx:xxxx
+	
+	There is a bug in the Heap Walker application that results in a GP fault when
+	there are too many objects in the global heap. This problem happens more often
+	when many applications are running in the system. The problem can also happen,
+	however, when only a few applications are running in the system but some of them
+	are allocating a number of global memory blocks. Do one of the following to
+	resolve this problem:
+	
+	- Do not run the Heap Walker application when many applications are running in
+	  the system. If the GP fault occurs, exit and restart Windows, and run Heap
+	  Walker only when a few applications are running.
+	
+	-or-
+	
+	- Use the updated version of the Heap Walker application available in the
+	  Microsoft Download Center. The updated version, called Newheap.exe, corrects
+	  the GP fault problem.
+	
+	MORE INFORMATION
+	================
+	
+	The following file is available for download from the Microsoft Download
+	Center:
+	
+	  Newheap.exe
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. Once posted, the file is housed on secure
+	servers that prevent any unauthorized changes to the file.
+	
+	When the Heap Walker application is started, it tries to list all the objects in
+	the global heap in its main window. It uses the Toolhelp Library to walk the
+	global heap, and it keeps track of all these objects in a linked list. If there
+	are a large number of objects in the global heap, the linked list would grow
+	beyond a 64K segment. Any global object that grows larger than a 64K segment
+	must be accessed using huge pointers, otherwise an error will occur. In the Heap
+	Walker application, the linked list is being accessed using far pointers instead
+	of huge pointers. This results in a GP fault.
+	
+	The updated version of Heap Walker corrects this problem by using huge pointers
+	instead of far pointers to access the linked list.
+	
+	Additional query words: crash gpf gp-fault heapwalker
+	
+	======================================================================
+	Keywords          : kbfile 
+	Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+	Version           : :3.0,3.1
+	
+	=============================================================================
+	

@@ -1,0 +1,176 @@
+---
+layout: page
+title: "Q164458: WD97: &quot;This Document May Be Corrupt&quot; Editing Master Document"
+permalink: kb/164/Q164458/
+---
+
+## Q164458: WD97: &quot;This Document May Be Corrupt&quot; Editing Master Document
+
+	Article: Q164458
+	Product(s): Word 97 for Windows
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbusage kbdta word97kbfaq
+	Last Modified: 11-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+	
+	  Q256986 Description of the Microsoft Windows Registry
+	
+	SYMPTOMS
+	========
+	
+	In Word 97, if you open a Word 95 master document that contains several
+	subdocuments with bullet or numbering formatting and you make some changes to
+	the document, the following error message appears:
+	
+	  This document may be corrupt. To preserve the contents:
+	
+	  - Choose Select All from the Edit menu, then choose Copy from the Edit menu.
+	
+	  - Create a new document, then choose Paste from the Edit menu.
+	
+	CAUSE
+	=====
+	
+	When the subdocuments are expanded, information about the subdocuments is copied
+	to the master document. This eventually prevents Word from being able to keep
+	track of the information.
+	
+	RESOLUTION
+	==========
+	
+	To correct this problem, you must obtain and install the fix listed in step 1
+	and then modify the Windows registry as described in step 2.
+	
+	NOTE: Before installing the fix and modifying the Windows registry, quit all
+	Windows programs.
+	
+	Step 1: Obtain and Install the Latest Word 97 Fix:
+	
+	To resolve the problem described in this article, obtain and install the latest
+	Microsoft Word 97 update from the following Microsoft Web site:
+	
+	  http://office.microsoft.com/downloads/9798/Wd97mcrs.aspx
+	
+	IMPORTANT NOTE: Microsoft Word 97 post-service release fixes are cumulative. The
+	latest update contains all of the fixes since Service Release 2. If you install
+	the latest update for Word 97, you do not need to install any other updates
+	after Service Release 2.
+	
+	For additional information about the fixes included in the latest update for Word
+	97, click the article number below to view the article in the Microsoft
+	Knowledge Base:
+	
+	  Q265374 WD97: Post Service Release Fixes for Word 97
+	
+	Step 2: Modify the Windows Registry:
+	
+	WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+	that may require you to reinstall your operating system. Microsoft cannot
+	guarantee that you can solve problems that result from using Registry Editor
+	incorrectly. Use Registry Editor at your own risk.
+	
+	IMPORTANT NOTE: This is a Windows registry-activated fix, and you must modify the
+	Windows registry. To do this, follow these steps:
+	
+	1. On the Windows Start menu, click Run.
+	
+	2. In the Open box, type "regedit" (without the quotation marks) and then click
+	  OK.
+	
+	3. Select the following key in the Windows registry:
+	
+	  HKEY_CURRENT_USER\Software\Microsoft\Office\8.0\Word\Options
+	
+	4. On the Edit menu, point to New, and click String Value. Then add the
+	  following registry value:
+	
+	  Value Name: LTOverflowRecovery
+	
+	  Value: 1
+	
+	5. On the Registry menu, click Exit.
+	
+	
+	
+	WORKAROUND
+	==========
+	
+	To manually recover the master document and subdocuments, follow these steps:
+	
+	1. Open the first subdocument in Word 97.
+	
+	2. Remove and then reapply the bullet or numbering formatting.
+	
+	3. On the Edit menu, click Select All.
+	
+	4. On the Edit menu, click Copy.
+	
+	5. On the File menu, click New, and then click the General tab.
+	
+	6. Click the Blank Document template, and then click OK.
+	
+	7. On the Edit menu, click Paste.
+	
+	8. On the File menu, click Save.
+	
+	9. In the File Name box, type the file name you want, and then click Save.
+	
+	10. On the File menu, click Close.
+	
+	11. Repeat steps 1 through 10 for each subdocument.
+	
+	12. Open the master document.
+	
+	13. Click the subdocument icon on the left side of the screen, and then press
+	  the DELETE key.
+	
+	14. Repeat step 13 for each subdocument icon.
+	
+	15. Delete any unwanted section breaks from the master document.
+	
+	16. On the Edit menu, click Select All.
+	
+	17. On the Edit menu, click Copy.
+	
+	18. On the File menu, click New, and then click the General tab.
+	
+	19. Click the Blank Document template, and then click OK.
+	
+	20. On the Edit menu, click Paste.
+	
+	21. Insert each subdocument into the new master document.
+	
+	22. On the File menu, click Save.
+	
+	23. In the File Name box, type the file name you want, and then click Save.
+	
+	24. On the File menu, click Close.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products that are
+	listed at the beginning of this article. The fix for this problem is included in
+	the latest Microsoft Word 97 for Windows patch. Please see the "Resolution"
+	section of this article for more information.
+	
+	Additional query words: 8.0 8.00 subdocs masterdocument sub damaged
+	
+	======================================================================
+	Keywords          : kbusage kbdta word97 kbfaq
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : :
+	Hardware          : x86
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

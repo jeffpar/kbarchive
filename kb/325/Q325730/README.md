@@ -1,0 +1,176 @@
+---
+layout: page
+title: "Q325730: Games: &quot;Stop&quot; Error Message That References Nv4_disp.dll"
+permalink: kb/325/Q325730/
+---
+
+## Q325730: Games: &quot;Stop&quot; Error Message That References Nv4_disp.dll
+
+	Article: Q325730
+	Product(s): Microsoft Home Games
+	Version(s): 1.0
+	Operating System(s): 
+	Keyword(s): kberrmsg kbimu
+	Last Modified: 26-JUL-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Flight Simulator 2002 
+	- Microsoft Flight Simulator 2002 Professional Edition 
+	- Microsoft Flight Simulator 2000 
+	- Microsoft Flight Simulator 2000 Professional Edition 
+	- Microsoft Midtown Madness, version 1.0 
+	- Microsoft Train Simulator, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you try to run any of the programs that are listed at the beginning of this
+	article, you may receive an error message similar to the following:
+	
+	  STOP: 0x0000008E (0XC0000005, 0XBFA6EEE4, 0XBA8151374, 0X00000000)
+	  Nv4_disp.dll - Address BFA6EEE4, base at BF9B8000, Datestamp 3b8f4298
+	
+	
+	CAUSE
+	=====
+	
+	This issue may occur when the following conditions are both true:
+	
+	- Your computer has a video adapter that is based on an NVIDIA chip set.
+	
+	- Your video adapter drivers are corrupted or outdated.
+	
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, use the following methods in the order in which they are
+	presented.
+	
+	NOTE: Because there are several versions of Microsoft Windows, the following
+	steps may be different on your computer. If they are, see your product
+	documentation to complete these steps.
+	
+	Identify Your Video Adapter:
+	
+	To identify the manufacturer and model of your video adapter, follow these
+	steps:
+	
+	1. If you are using Microsoft Windows 98, click Start, point to Settings, and
+	  then click Control Panel.
+	
+	  If you are using Microsoft Windows XP, click Start, and then click Control
+	  Panel.
+	
+	2. Double-click System.
+	
+	3. If you are using Windows 98, click the Device Manager tab.
+	
+	  If you are using Windows XP, click the Hardware tab, and then click Device
+	  Manager.
+	
+	4. Expand Display Adapters.
+	
+	5. Under Display Adapters, note the manufacturer and model of your video
+	  adapter, and then click OK.
+	
+	6. Close all open windows.
+	
+	Identify Your Video Adapter Driver Version:
+	
+	For additional information about how to identify the driver version of your video
+	adapter, click the article number below to view the article in the Microsoft
+	Knowledge Base:
+	
+	  Q159487 Games: How to Determine the Version of Installed Video Driver
+	
+	Download and Install the Updated Retail Video Drivers:
+	
+	For information about how to download and install the latest drivers for your
+	video adapter, contact the manufacturer.
+	
+	Microsoft provides third-party contact information to help you find technical
+	support. This contact information may change without notice. Microsoft does not
+	guarantee the accuracy of this third-party contact information.
+	
+	The third-party products that are discussed in this article are manufactured by
+	companies that are independent of Microsoft. Microsoft makes no warranty,
+	implied or otherwise, regarding the performance or reliability of these
+	products.
+	
+	For information about how to contact NVIDIA, click the appropriate article number
+	in the following list to view the article in the Microsoft Knowledge Base:
+	
+	  Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+	
+	  Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+	
+	  Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+	
+	After you download the correct drivers, start your computer in Safe mode before
+	you install the drivers. To do this, follow these steps:
+	
+	1. Restart your computer. Press the F8 key repeatedly while the computer is
+	  restarting. On a computer that is configured for multiple operating systems,
+	  you can press the F8 key when you see the boot menu.
+	
+	2. In the Windows Advanced Options menu, select Safe Mode, and then press
+	  ENTER.
+	
+	  Press ENTER again to select your operating system if your computer has
+	  multiple operating systems.
+	
+	3. Log on as Administrator.
+	
+	  NOTE: The words Safe Mode appear in all four corners of the screen. If the
+	  words do not appear, repeat steps 1 through 3.
+	
+	4. Install the NVIDIA drivers.
+	
+	For additional information about Safe mode options in Windows XP, click the
+	article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q315222 A Description of the Safe Boot Mode Options in Windows XP
+	
+	Install the Updated Reference Driver:
+	
+	If you install the most recent retail drivers for your video adapter, but
+	continue to experience the symptoms described in this article, download and
+	install the latest NVIDIA reference driver for your video adapter that is based
+	on the NVIDIA chip set.
+	
+	Download and install the latest NVIDIA reference drivers from the following
+	NVIDIA Web site.
+	
+	  http://www.NVIDIA.com
+	
+	NOTE: NVIDIA releases reference drivers for their chip sets. These reference
+	drivers may not be appropriate for all video adapters that are based on those
+	chip sets.
+	
+	Update the VIA 4-in-1 driver:
+	
+	NOTE: Follow this step only if you have a VIA Technologies chip set motherboard.
+	Install the latest VIA 4-in-1 driver from the following VIA Technologies Web
+	site:
+	
+	  http://www.viatech.com
+	
+	IMPORTANT: Contact your hardware manufacturer before you install the latest VIA
+	4-in-1 driver on your computer or make any modifications to your computer's BIOS
+	settings.
+	
+	
+	Additional query words: msgame
+	
+	======================================================================
+	Keywords          : kberrmsg kbimu 
+	Technology        : kbHomeProdSearch _IKkbbogus kbGamesSearch kbFlightSimSearch _IK kbMidtownMadSearch kbMidtownMadness kbFlightSim2000 kbTrainSim kbFlightSim2002 kbFlightSim2002Pro kbSimSearch
+	Version           : :1.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

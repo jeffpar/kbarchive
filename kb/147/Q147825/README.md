@@ -1,0 +1,82 @@
+---
+layout: page
+title: "Q147825: RAS Server Does Not Autodisconnect If NetBIOS Gateway Disabled"
+permalink: kb/147/Q147825/
+---
+
+## Q147825: RAS Server Does Not Autodisconnect If NetBIOS Gateway Disabled
+
+	Article: Q147825
+	Product(s): Microsoft Windows NT
+	Version(s): 3.51
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation versions 3.5, 3.51 
+	- Microsoft Windows NT Server versions 3.5, 3.51 
+	-------------------------------------------------------------------------------
+	
+	
+	
+	SYMPTOMS
+	========
+	
+	Your Windows NT 3.5 or 3.51 Remote Access (RAS) server does not disconnect
+	inactive RAS clients that dial in using the NetBEUI protocol. This problem
+	occurs even though you have configured the AutoDisconnect parameter in the
+	registry under the HKEY_LOCAL_MACHINE subtree under the following subkey:
+	
+	\SYSTEM\CurrentControlSet\Services\RemoteAccess\Parameters
+	
+	If you dial into your Windows NT RAS server without the NetBEUI protocol,
+	inactive RAS clients are disconnected properly.
+	
+	CAUSE
+	=====
+	
+	The AutoDisconnect parameter for RAS does not function properly if the RAS
+	NetBIOS Gateway is disabled.
+	
+	RESOLUTION
+	==========
+	
+	To enable the RAS NetBIOS Gateway, perform the following steps:
+	
+	1. Run the Network applet in Control Panel.
+	
+	2. Select Remote Access Service from the list of installed network software.
+	
+	3. Choose the Configure button.
+	
+	4. Choose the Network button.
+	
+	5. In the Server Settings section, choose NetBEUI and then choose Configure for
+	  NetBEUI.
+	
+	6. Enable the Entire Network radio button and choose OK twice.
+	
+	7. Choose Continue and follow the prompts that appear for installing NetBEUI.
+	  (This prompt occurs only if NetBEUI is not already installed.)
+	
+	8. Choose OK in the Network Settings dialog box and shut down Windows NT when
+	  prompted and reboot.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Windows NT version 3.51. We are
+	researching this problem and will post new information here in the Microsoft
+	Knowledge Base as it becomes available.
+	
+	Additional query words: prodnt
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+	Version           : 3.51
+	
+	=============================================================================
+	

@@ -1,0 +1,176 @@
+---
+layout: page
+title: "Q130407: How to Customize Icons &amp; Mouse Pointers in Forms Designer"
+permalink: kb/130/Q130407/
+---
+
+## Q130407: How to Customize Icons &amp; Mouse Pointers in Forms Designer
+
+	Article: Q130407
+	Product(s): Microsoft FoxPro
+	Version(s): 3.00
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 19-AUG-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 3.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	A Visual FoxPro form contains several properties that make it easy to customize
+	icons and mouse pointers displayed when a form is running.
+	
+	MORE INFORMATION
+	================
+	
+	NOTE: For backward compatibility, Visual FoxPro still supports FOXTOOLS.FLL
+	(included in earlier FoxPro versions), the Visual FoxPro API library that allows
+	calls to 16-bit .DLL functions. However, in Visual FoxPro, the DECLARE command
+	is the preferred method for calling .DLL functions.
+	
+	For more information about using the DECLARE command, search the online Help.
+	
+	Mouse Pointers
+	--------------
+	
+	There are two properties (DragIcon and MousePointer) that control mouse
+	pointers:
+	
+	  Property         Value
+	  ---------------------------------------------------------------------
+	  DragIcon         <cFilename> - the name of any .CUR file created with
+	                   a cursor editing program such as IMAGEDIT
+	
+	  MousePointer     0 - Default
+	                   1 - Arrow
+	                   2 - Cross
+	                   3 - I-Beam
+	                   4 - Icon
+	                   5 - Size
+	                   6 - Size NE SW
+	                   7 - Size NS
+	                   8 - Size NW SE
+	                   9 - Size WE
+	                  10 - Up Arrow
+	                  11 - Hourglass
+	                  12 - No Drop
+	
+	The DragIcon property controls the shape of the mouse pointer while an object is
+	being dragged to a new location. The MousePointer property controls the shape of
+	an object while the mouse is located over that object. These two properties may
+	be set in tandem to achieve a desired effect.
+	
+	For example, in an object that may be dragged, set the following properties
+	through the Forms Designer Properties Sheet:
+	
+	1. Set the DragIcon property to:
+	
+	  " \VFP\SAMPLES\GRAPHICS\DRAGMOVE " (without the quotation marks)
+	
+	2. Place the following code in the Drag event to have all controls, except
+	  EditBoxes, display a No Drop pointer:
+	
+	     ThisForm.setall("MousePointer",12)
+	     ThisForm.setall("MousePointer", 0, "EditBox")
+	
+	3. Place the following code in the DragDrop event to reset the mouse pointer for
+	  all controls back to the default:
+	
+	     Thisform.Setall("MousePointer",0)
+	
+	This example allows the mouse pointer to remain at the default until a drag and
+	drop operation is performed. Once the drag starts, the mouse pointer for every
+	control on the form is set to a "No Drop" icon. Then all the edit boxes are set
+	back to the default icon for edit boxes.
+	
+	After the object is dropped, all controls on the form are set back to the
+	default.
+	
+	Icons
+	-----
+	
+	There are two properties (Icon and Picture) that control icons:
+	
+	  Property      Value
+	  ----------------------------------------------------------------------
+	  Icon          The name of any valid .ICO file
+	
+	  Picture       The name of any valid .BMP or .ICO file, or the name of a
+	                general field which contains a .BMP or .ICO.
+	
+	The Icon property controls the icon displayed when a form is minimized. The
+	Picture property controls the icon displayed for the following controls
+	contained within a formset: check box, CommandButton, Form, Image, OptionButton,
+	and Page.
+	
+	The Form.Picture property acts as a wallpaper behind all the controls placed on a
+	form. The Form.PageFrame.Page.Picture property creates a wallpaper effect for a
+	specific page within a pageframe.
+	
+	
+	Version 2.x Compatibility
+	-------------------------
+	
+	The following compares the version 3.0 property functionality with the
+	functionality available in FoxPro version 2.x commands.
+	
+	Version 3.0 Property        Version 2.x Commands
+	-------------------------------------------------------------------------
+	DragIcon                    No drag and drop functionality was available
+	
+	MousePointer                SET LIBRARY TO FOXTOOLS
+	                           Use REGFN and CALLFN to access the Windows
+	                           LoadCursor API call
+	
+	Form.Picture                DEFINE WINDOW ... FILL <bmp file name>
+	
+	Page.Picture                No page frame functionality was available
+	
+	Check box.Picture           Specify the picture as part of an @ GET
+	CommandButton.Picture       command, or use the SHOW GET PROMPT command
+	OptionButton.Picture        to change the picture associated with an
+	                           existing control
+	
+	Image.Picture               Specify the picture as part of an @ SAY
+	                           BITMAP command.
+	
+	Form.Icon                   MODIFY WINDOW ... ICON <icon file name> or
+	                           specify the filename in the Window Style dialog
+	                           from the Screen, Screen Layout menu.
+	
+	Advantages of Version 3.0 Functionality
+	---------------------------------------
+	
+	Visual FoxPro offers the advantage of built-in mouse pointer functionality. You
+	can easily change the shape of the mouse pointer without using Windows API calls
+	or loading the FOXTOOLS.FLL file with its memory overhead.
+	
+	In version 2.x, the developer had to be familar with a number of different
+	commands to control the image displayed. In Visual FoxPro, these capabilities
+	are consistently under the control of the picture property.
+	
+	In some cases in version 2.x, bitmaps were not refreshed if the image was changed
+	in Paintbrush during an application session. An undocumented sys function was
+	used to reorganize memory and cause the bitmap to be reread from disk. The
+	image.picture property eliminates this problem in Visual FoxPro version 3.0.
+	
+	Sample Files
+	------------
+	
+	Visual FoxPro version 3.0 offers a large number of sample cursor (.CUR), bitmap
+	(.BMP), and icon (.ICO) files in \VFP\SAMPLES\GRAPHICS.
+	
+	Additional query words: VFoxWin
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+	Version           : 3.00
+	
+	=============================================================================
+	

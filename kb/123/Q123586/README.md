@@ -1,0 +1,115 @@
+---
+layout: page
+title: "Q123586: ADT2: Setup Wizard Cannot Create Compact and Repair Icons"
+permalink: kb/123/Q123586/
+---
+
+## Q123586: ADT2: Setup Wizard Cannot Create Compact and Repair Icons
+
+	Article: Q123586
+	Product(s): Microsoft Access Distribution Kit
+	Version(s): WINDOWS:2.0
+	Operating System(s): 
+	Keyword(s): kbsetup
+	Last Modified: 05-JUL-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Access Developer's Toolkit, version 2.0 
+	-------------------------------------------------------------------------------
+	
+	Moderate: Requires basic macro, coding, and interoperability skills.
+	
+	SUMMARY
+	=======
+	
+	The Setup Wizard included with the Microsoft Access Developer's Toolkit (ADT)
+	version 2.0 does not enable you to create Compact and Repair icons for a custom
+	application. This article describes two methods you can use to create Compact
+	and Repair icons for a custom application.
+	
+	MORE INFORMATION
+	================
+	
+	The Setup Wizard allows only one set of parameters for a custom application. In
+	almost all cases, the parameters are used to launch the custom application, and
+	therefore cannot be used for a Compact or Repair icon. If you add the /compact
+	and /repair parameters, the Setup Wizard ignores them.
+	
+	The following two methods describe how to work around this behavior.
+	
+	Method 1
+	--------
+	
+	NOTE: Method 1 is the only method in this article that is supported by Microsoft
+	Product Support Services.
+	
+	For information about how to create additional program groups and items with the
+	Setup Wizard, please see the following article in the Microsoft Knowledge Base:
+	
+	  ARTICLE-ID: Q119724
+	  TITLE : ADT2: Creating Additional ADT Application Programs Groups, Items
+	
+	Method 2
+	--------
+	
+	WARNING: ANY USE BY YOU OF METHOD 2 IS AT YOUR OWN RISK. Microsoft provides this
+	information "as is" without warranty of any kind, either express or implied,
+	including but not limited to the implied warranties of merchantability and/or
+	fitness for a particular purpose.
+	
+	Edit the SETUP.STF file on Disk 1 of the installation disks created by the Setup
+	Wizard to create Compact and Repair icons. Follow these steps to use this
+	method:
+	
+	1. Make a backup copy of the SETUP.STF file on Disk 1 of the installation disks
+	  created by the Setup Wizard.
+	
+	2. Open the SETUP.STF file in a spreadsheet application, such as Microsoft
+	  Excel.
+	
+	3. Near the bottom of the file, locate the text "AddProgManItem" in column E.
+	
+	4. Create a new line by increasing the Object ID counter in column A by one.
+	  Leave column B blank.
+	
+	5. In column C, add the label "USER_UserPM_x" (without the quotation marks)
+	  where x is one greater than any other USER_UserPM_y label above. Leave column
+	  D blank.
+	
+	6. In column E, enter the text "AddProgManItem" (without the quotation marks).
+	
+	7. In column F, add the /compact and /repair parameters. The second entry is the
+	  icon description, and must be changed to something other than the original
+	  entry (you cannot have two icons with the same description). The third entry
+	  is the command-line parameter for the icon (this is where you add the
+	  /compact and /repair parameters). The following line is an example of a valid
+	  line in column F.
+	
+	  NOTE: In the following sample line, an underscore (_) at the end of a line is
+	  used as a line-continuation character. Remove the underscore from the end of
+	  the line when re-creating this line.
+	
+	  "My Application Group", "MyApp Maintenance", "%26\msarn200.exe _
+	        %321\myapp.mdb /ini %323\myapp.ini /compact /repair", _
+	        "%322\myapp.ico"
+	
+	8. Find the label "---- User ProgMan Items ----" in column C. In that row, in
+	  column F, add the Object ID number for the new line you created to the end of
+	  the list of Object ID numbers.
+	
+	9. In cell B16, increase the Maximum Object ID variable by one. Save and then
+	  close the SETUP.STF file.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbsetup 
+	Technology        : kbAudDeveloper kbAccessSearch kbAccessDevTK200 kbZNotKeyword3
+	Version           : WINDOWS:2.0
+	Hardware          : x86
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

@@ -1,0 +1,99 @@
+---
+layout: page
+title: "Q267911: XWEB: Error Message &quot;Internal Server Error&quot; When Using OWA"
+permalink: kb/267/Q267911/
+---
+
+## Q267911: XWEB: Error Message &quot;Internal Server Error&quot; When Using OWA
+
+	Article: Q267911
+	Product(s): Microsoft Exchange
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kberrmsg
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange 2000 Server 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you attempt to access a mailbox in Exchange 2000 Server by using Outlook
+	Web Access (OWA) with Internet Explorer 5.0 or later on Microsoft Windows 2000,
+	the top pane and the left pane are displayed correctly, but the following error
+	message is displayed in the right pane:
+	
+	  Loading...
+	
+	  Unable to display folder. An internal server error occurred.
+	
+	When you access OWA from a client computer that is not running Windows 2000, or
+	from a client computer that is on the same Local Area Network (LAN) as the
+	server that is running Exchange 2000, the text in the panes is displayed
+	correctly.
+	
+	CAUSE
+	=====
+	
+	When Windows Integrated authentication is enabled on the virtual directories for
+	Exchange 2000 content, Kerberos requires that the client and server times are
+	within 5 minutes (MaxClockSkew=5 minutes). This setting is based on the
+	Universal Time Coordinate (UTC). When this setting is used, different time zones
+	are accounted for.
+	
+	Computers that are running on a LAN often do not experience this issue because
+	Windows Time Service is synchronized with the domain controller time. Windows
+	Time Service is controlled by using the net time command. When you join a
+	domain, Windows Time Service is enabled, and it automatically starts when the
+	computer starts.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, synchronize the time on the client computer with the
+	domain controller of the Exchange 2000 domain so that they are within five
+	minutes of each other.
+	
+	Restart Windows Time Service on the client computer for the changes to the
+	system's date and time to take effect.
+	
+	WORKAROUND
+	==========
+	
+	When you receive this error message, click any folder in the Folder list view in
+	the left pane to view the contents. However, when you click Refresh on your
+	browser, the error message may still be displayed.
+	
+	MORE INFORMATION
+	================
+	
+	The net time command can be used to synchronize a client computer with a time
+	server. An example of a command that you can use is:
+	
+	  net time \\<servername> /set /y
+	
+	For more information about the net time command, run the following command: net
+	time /?
+	
+	For additional information, click the article number below to view the article in
+	the Microsoft Knowledge Base:
+	
+	  Q266080 Answers to Frequently Asked Kerberos Questions
+	
+	  Q253615 Browsers Earlier Than Internet Explorer 5.01 for OWA
+	
+	Additional query words: exch2kp2w
+	
+	======================================================================
+	Keywords          : kberrmsg 
+	Component         : WebClient
+	Technology        : kbExchangeSearch kbExchange2000Search kbExchange2000Serv
+	Version           : :
+	Issue type        : kbprb
+	
+	=============================================================================
+	

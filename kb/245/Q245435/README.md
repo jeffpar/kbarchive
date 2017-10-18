@@ -1,0 +1,89 @@
+---
+layout: page
+title: "Q245435: XCLN: Attendees Deleted from Recurring Calendar Items"
+permalink: kb/245/Q245435/
+---
+
+## Q245435: XCLN: Attendees Deleted from Recurring Calendar Items
+
+	Article: Q245435
+	Product(s): Microsoft Exchange
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 01-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Outlook 97 
+	- Microsoft Outlook 98 
+	- Microsoft Outlook 2000 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	After you synchronize a Microsoft Outlook Calendar with a 3Com Palm Connected
+	Organizer, one or more of the following issues may occur:
+	
+	- Attendees are deleted from recurring appointments.
+	
+	- Recurring items are changed to nonrecurring items.
+	
+	CAUSE
+	=====
+	
+	These issues may occur when you use Chapura PocketMirror version 2.5 or earlier
+	to synchronize Microsoft Outlook Calendar items (appointments, tasks, meeting
+	requests, and so on) with a 3Com Palm Connected Organizer.
+	
+	RESOLUTION
+	==========
+	
+	Chapura has confirmed this to be an issue in the PocketMirror software version
+	2.5 or earlier. This problem was corrected in PocketMirror, version 3.0.
+	
+	MORE INFORMATION
+	================
+	
+	When a recurring item has one or more exceptions and the item contains
+	attendees, the attendees may be deleted and may not appear in the Attendee
+	Availability tab of the Calendar item.
+	
+	In addition, recurring appointments may be divided into individual single-day
+	appointments because of a limitation in the way that Chapura PocketMirror
+	software handles exceptions in a recurring item. An exception of this issue is
+	an instance of a recurring item that you have modified from the original item.
+	
+	According to Chapura, there is no workaround for exceptions that are generated
+	from the handheld device by using the Chapura software. You must apply changes
+	to meetings (for example, appointments with attendees) in Outlook only. If you
+	apply changes on the handheld device, attendees may not be notified of the
+	change. In addition, the attendee list for the meeting may be lost during
+	synchronization if it is a recurring meeting.
+	
+	For more information about Chapura Pocket Mirror and this specific issue, refer
+	to FAQ# PM012 at the following Chapura Web site:
+	
+	  http://www.chapura.com
+	
+	The third-party contact information included in this article is provided to help
+	you find the technical support you need. This contact information is subject to
+	change without notice. Microsoft in no way guarantees the accuracy of this
+	third-party contact information.
+	
+	The third-party products discussed in this article are manufactured by vendors
+	independent of Microsoft; we make no warranty, implied or otherwise, regarding
+	these products' performance or reliability.
+	
+	Additional query words: appt ol97 ol98 ol20 multi-day missing 8.0 8.01 8.02 8.03 8.04 8.5 9.0
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbOutlookSearch kbOutlook2000Search kbOutlook97Search kbOutlook98Search kbZNotKeyword3
+	Version           : :
+	Issue type        : kbprb
+	
+	=============================================================================
+	

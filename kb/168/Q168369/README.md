@@ -1,0 +1,85 @@
+---
+layout: page
+title: "Q168369: Kids Plus: No Sound After Installing Microsoft Plus! For Kids"
+permalink: kb/168/Q168369/
+---
+
+## Q168369: Kids Plus: No Sound After Installing Microsoft Plus! For Kids
+
+	Article: Q168369
+	Product(s): Microsoft Home Kids Products
+	Version(s): WINDOWS:1.0
+	Operating System(s): 
+	Keyword(s): kb3rdparty kbsound
+	Last Modified: 08-NOV-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Plus! for Kids, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	After you install Microsoft Plus! For Kids, you no longer have sound on your
+	computer.
+	
+	CAUSE
+	=====
+	
+	This problem occurs because of a conflict with the audio codecs installed in
+	Windows 95/98. If the "Netscape ACM wrapper for VOXWARE RT24 speech" audio codec
+	is installed on your computer, you may experience this kind of conflict.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, disable or remove any audio codecs not listed below:
+	
+	  Microsoft CCITT G.711 A-Law and U-Law CODEC
+	  Microsoft IMA ADPCM CODEC
+	  Microsoft ADPCM CODEC
+	  Microsoft GSM 6.10 Audio CODEC
+	  DSP Group TrueSpeech (TM) Software CODEC
+	
+	  Microsoft PCM Converter
+	
+	To disable an audio codec, do the following:
+	
+	1. Click the Start button and point to Settings.
+	
+	2. Click Control Panel.
+	
+	3. Double-click Multimedia.
+	
+	4. On the Advanced (Devices in Windows 98) tab, click the plus (+) sign next to
+	  Audio Compression Codecs to display a listing of installed audio codecs.
+	
+	5. Select the audio codecs you wish to disable, and then click the Properties
+	  button.
+	
+	6. Select the Do Not Use This Audio Codec option and click OK.
+	
+	7. If you want to disable more audio codecs, repeat steps 5 and 6 above.
+	
+	8. When you are finished, click OK to close the Multimedia Properties window.
+	
+	You should be able to hear sound now.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft Plus! For Kids version
+	1.0.
+	
+	Additional query words: Compression
+	
+	======================================================================
+	Keywords          : kb3rdparty kbsound 
+	Technology        : _IKkbbogus kbGamesSearch kbPlusKids kbPlusSearch
+	Version           : WINDOWS:1.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

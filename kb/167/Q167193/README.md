@@ -1,0 +1,160 @@
+---
+layout: page
+title: "Q167193: FIX: Buffering Lost when txtbtns Exit Clicked"
+permalink: kb/167/Q167193/
+---
+
+## Q167193: FIX: Buffering Lost when txtbtns Exit Clicked
+
+	Article: Q167193
+	Product(s): Microsoft FoxPro
+	Version(s): 3.0b 5.0 5.0a
+	Operating System(s): 
+	Keyword(s): kbprogramming kbtool kbvfp kbvfp300 kbvfp500 kbvfp500a kbvfp600fix
+	Last Modified: 24-MAR-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0b, 5.0, 5.0a 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When an application has more than one form, and buffer mode is other than 1
+	(unbuffered), the buffering will be lost under certain circumstances. This
+	happens when one or more of the forms uses the DataEnvironment, uses the txtbtns
+	class of the Wizstyle.vcx class library, and the Exit button is clicked.
+	
+	In Visual FoxPro for Windows versions 3.0 and 3.0b an error message appears when
+	the Revert button is clicked on the surviving form. The message says "Function
+	Requires Row or Table Buffering Mode."
+	
+	In Visual FoxPro for Windows versions 5.0 and 5.0a there is no message, but the
+	"Revert" button becomes inoperative--a sign that there is nothing in the buffer
+	to revert.
+	
+	CAUSE
+	=====
+	
+	Code in the DESTROY method of the txtbtns class resets buffermode to '1' when
+	the Exit button is clicked. This code is by design to prevent OLE servers from
+	updating general field data during the destroy event. The form is to be
+	released, so no more data changes should be posted to tables involved with that
+	form.
+	
+	RESOLUTION
+	==========
+	
+	If the application does not have tables with general fields that are subject to
+	updating whenever the table is open, the line in the DESTROY method of the
+	txtbtns class that sets buffering to '1' may be commented out.
+	
+	The line is approximately 30 lines into the txtbtns.DESTROY method. It is as
+	follows:
+	
+	     = CursorSetProp("Buffering",1,.ALIAS)  &&optimistic table buffering
+	
+	The comment on that line is incorrect.
+	
+	This change is not supported by Microsoft, and the results of any modification to
+	any of the code in the Wizstyle.vcx library are uncertain because of the
+	numerous dependencies between functions, values, and event methods within the
+	code of those classes. The user makes such modifications at her or his own risk.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article. This has been corrected in Visual FoxPro 6.0.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Start a new project called Onetwo.pjx. Add a new form named 'one' to the
+	  project. Set the name property to "one" (without the quotes).
+	
+	2. Set the Buffermode property of form one to "2 - optimistic."
+	
+	3. Open the DataEnvironment for form one and add the Customer table from
+	  \Samples\Data.
+	
+	4. Drag the cust_id, company, and contact fields to the form.
+	
+	5. Add the Wizstyle.vcx class library from the VFP\Wizards folder to the Forms
+	  Designer's toolbar.
+	
+	6. From the Wizstyle toolbar select txtbtns and add it to the bottom of form
+	  one.
+	
+	7. Add a single command button captioned "Form Two" to form one. In its Click
+	  method place the command:
+	
+	        DO FORM two NAME two LINKED
+	
+	8. In the LOAD method of form 'one' add the declaration:
+	
+	        PUBLIC two
+	
+	  to declare a variable named "two."
+	
+	9. Save the definition of form one into the VFP root directory.
+	
+	10. Add a second form to the project. Name this form "two." Set its Name
+	  property to "two" (without the quotes).
+	
+	11. Set the Buffermode property of form two to "2 - optimistic."
+	
+	12. Open the DataEnvironment of form two. Add the customer and the orders table
+	  to the DataEnvironment. A parent-child relationship should appear between
+	  the two tables.
+	
+	13. Drag the Cust_ID and Company fields to the form. Add the child (orders)
+	  table to the form as a grid. In Visual FoxPro version 5.0 the default
+	  Control Source for the grid columns are mapped from the fields of the table.
+	  In Visual FoxPro version 3.x, you need to set a columncount, and map the
+	  control source of each column.
+	
+	14. Add the txtbtns class to the bottom of form two.
+	
+	15. Save form two as Two.scx in the Visual FoxPro root directory.
+	
+	16. In the debugger (for Visual FoxPro 5.0) or the Debug window (for Visual
+	  FoxPro 3.0), add a watch on 'Cursorgetprop("Buffering")' and set a
+	  breakpoint on that value (it will break when the value changes). To set the
+	  breakpoint double-click on the gray rectangle at the left of the 'Name'
+	  value in the Visual FoxPro 5 Watch window, or on the gray bar between the
+	  left and right panes of the Visual FoxPro 3 Debug window.
+	
+	17. Run form one. Click the Edit button, then click the Form Two command button.
+	  Form two appears.
+	
+	18. Click the Exit button on form two.
+	
+	In the Debugger the running code will BREAK, when the value of
+	Cursorgetprop("Buffering") changes from 3 to 1. In the Trace window the code
+	shows an arrow at the ENDIF statement just after the offending command:
+	
+	     =cursorsetprop("buffering",1,.ALIAS)  &&optimistic table buffering
+	
+	Visual FoxPro 5.0 and 5.0a disable the Revert button in form one, although the
+	Caption is enabled until it is clicked.
+	
+	Visual FoxPro 3.0 and 3.0b show the error message "Function Requires Row or Table
+	Buffering Mode" when 'Revert' is clicked on form one.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbprogramming kbtool kbvfp kbvfp300 kbvfp500 kbvfp500a kbvfp600fix 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP300b kbVFP500 kbVFP500a
+	Version           : 3.0b 5.0 5.0a
+	Issue type        : kbbug kbprb
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

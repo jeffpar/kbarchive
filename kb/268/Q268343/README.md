@@ -1,0 +1,558 @@
+---
+layout: page
+title: "Q268343: Umdhtools.exe: How to Use Umdh.exe to Find Memory Leaks"
+permalink: kb/268/Q268343/
+---
+
+## Q268343: Umdhtools.exe: How to Use Umdh.exe to Find Memory Leaks
+
+	Article: Q268343
+	Product(s): Microsoft Windows NT
+	Version(s): 2000,4.0
+	Operating System(s): 
+	Keyword(s): kbfile kbSample kbOSWin2000 kbGrpDSVCDB kbDSupport kbgraphxlinkcritical
+	Last Modified: 09-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 2000 Advanced Server 
+	- Microsoft Windows 2000 Server 
+	- Microsoft Windows 2000 Professional 
+	- Microsoft Windows NT Server version 4.0 
+	- Microsoft Windows NT Workstation version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The user-mode dump heap (UMDH) utility works with the operating system to
+	analyze Windows heap allocations for a specific process. This utility, and the
+	other tools associated with it, are primarily targeted for Windows 2000.
+	However, a Umdh_nt4.exe application, and the Dbghelp.dll which is not available
+	on Windows NT, have been supplied for use under Windows NT version 4.0 Service
+	Pack 6 (SP6). This article discusses how you can use UMDH to help locate memory
+	leak problems. A self-extracting executable is included that contains the
+	following tools:
+	
+	- Umdh.exe- This utility is used to dump the heap allocation information for a
+	  process.
+	
+	- Umdh_nt4.exe and Dbghelp.dll - This is the Windows NT 4.0 SP6 version of the
+	  UMDH tool.
+	
+	- Gflags.exe- This utility sets the appropriate registry entries for the
+	  application that will be analyzed. The operating system looks at the registry
+	  entries to determine if an application's heap allocations will be tracked.
+	
+	- Tlist.exe - This application lists all of the processes running on a machine
+	  and all of their related process IDs.
+	
+	- Dhcmp.exe - This tool is used to compare two UMDH dumps to determine where a
+	  possible memory leak is occurring.
+	
+	- Dhcmpgui.zip - This tool also compares two UMDH logs but has a user interface
+	  to make it easier to retrieve information. The .zip file contains the
+	  Dhcmpgui.exe file and its source code.
+	
+	MORE INFORMATION
+	================
+	
+	The following file is available for download from the Microsoft Download
+	Center:
+	
+	  Umdhtools.exe
+	  (http://download.microsoft.com/download/win2000platform/Utility/1/NT5/EN-US/UMDHTOOLS.exe)
+	
+	Release Date: Feb. 5, 2001
+	
+	For additional information about how to download Microsoft Support files, click
+	the following article number to view the article in the Microsoft Knowledge
+	Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft scanned this file for viruses. Microsoft used the most current
+	virus-detection software that was available on the date that the file was
+	posted. The file is stored on secure servers that prevent any unauthorized
+	changes to the file.
+	
+	Before Using UMDH
+	-----------------
+	
+	If you think you are experiencing a memory leak, please be aware that memory
+	leaks may not be what they appear to be. You may discover that a memory leak is
+	really not a memory leak but a performance enhancement. For example, the
+	Microsoft Jet database engine can consume large amounts of memory (up to 128 MB
+	on a 256-MB computer) for its data retrieval and writing caches. The cache
+	allows the Jet engine to achieve fast read-ahead and write-ahead buffering.
+	
+	To determine whether or not a process is experiencing memory leaks, use Windows
+	Performance Monitor (Perfmon.exe) and monitor "Private Bytes" under the Process
+	category for your application. Privates Bytes is the total amount of memory the
+	process has allocated but is not sharing with other processes. Note that this is
+	different from "Virtual Bytes," which is also interesting to monitor. Virtual
+	Bytes is the current size in bytes of the virtual address space the process is
+	using. An application can leak virtual memory but not see a difference in the
+	amount of private bytes allocated. If you don't see memory rising when
+	monitoring private bytes but suspect that you are still running out of memory,
+	you should monitor virtual bytes to see if you are exhausting virtual memory.
+	
+	Review the following MSDN article titled "Finding Leaks and Bottlenecks with a
+	Windows NT PerfMon COM Object" for more information about detecting memory
+	leaks:
+	
+	  http://msdn.microsoft.com/library/techart/perfmon.htm
+	
+	To be certain your application is leaking memory, you should place the suspect
+	code in a loop with many iterations, and monitor private and virtual bytes for
+	any increases of memory. Watch to make certain that the number of private bytes
+	and virtual bytes doesn't eventually stay the same and stops rising. If there is
+	a point at which the memory stops rising, that is, it does not continue to climb
+	indefinitely, you are not seeing a memory leak but are probably seeing some
+	cache that is growing to its maximum size.
+	
+	Capturing Heap Dumps with UMDH
+	------------------------------
+	
+	UMDH (or Umdh_nt4.exe if you are using Windows NT 4.0 SP6) is a tool that dumps
+	information about a process's heap allocations. This information includes the
+	callstack for each allocation, the number of allocations made through that
+	callstack, and the number of bytes consumed through that callstack. For
+	example:
+	
+	    00005320 bytes in 0x14 allocations (@ 0x00000428) by: BackTrace00053
+	          ntdll!RtlDebugAllocateHeap+0x000000FD
+	          ntdll!RtlAllocateHeapSlowly+0x0000005A
+	          ntdll!RtlAllocateHeap+0x00000808
+	          MyApp!_heap_alloc_base+0x00000069
+	          MyApp!_heap_alloc_dbg+0x000001A2
+	          MyApp!_nh_malloc_dbg+0x00000023
+	          MyApp!_nh_malloc+0x00000016
+	          MyApp!operator new+0x0000000E
+	          MyApp!LeakyFunc+0x0000001E
+	          MyApp!main+0x0000002C
+	          MyApp!mainCRTStartup+0x000000FC
+	          KERNEL32!BaseProcessStart+0x0000003D
+	
+	This UMDH output shows that there were 21280 (0x5320) bytes allocated total from
+	the callstack. The 21280 bytes were allocated from 20 (0x14) separate
+	allocations of 1064 bytes (0x428). The callstack is given a identifier of
+	BackTrace00053.
+	
+	To produce a dump of the heap allocations, you must first let the operating
+	system know that you would like the kernel to track the allocations. This is
+	done by using the Gflags.exe utility.
+	
+	Let's assume that you want to dump the heap contents for Notepad.exe. By the way,
+	most processes have more than one heap active and the UMDH log will contain all
+	of them. First you need to enable stack trace acquisition for the application
+	you want to test. This feature is not enabled by default. The command to enable
+	it is:
+	
+	  "gflags -i notepad.exe +ust" (without the quotation marks)
+	
+	The command does not enable stack tracing for processes that are already running,
+	but all future executions of Notepad.exe will have it enabled. Alternatively,
+	you can set the flag through the GFLAGS user interface (run Gflags.exe without
+	any arguments to get the user interface).
+	
+	
+	Before using UMDH, you also need to install the correct debug symbols for the
+	components of your application as well as the operating system. Typically, the
+	operating system symbols are installed in the SYMBOLS folder on the WINNT
+	folder. UMDH attempts to find the symbol files by using the _NT_SYMBOL_PATH. The
+	command for setting the path from a command prompt is:
+	
+	  "set _NT_SYMBOL_PATH=%windir%\symbols" (without the quotation marks)
+	
+	For more information about setting up symbolic debugging information, see the
+	"Debug Symbols" section later in this article.
+	
+	With the image flags set and the symbols installed, you are ready to start
+	Notepad. After the program is started, you need to determine the Process ID
+	(PID) of the Notepad process just started. The command for this is:
+	
+	  "tlist" (without the quotation marks)
+	
+	You can find the PID from the output of the TLIST application. The PID
+	information can also be obtained from Task Manager. Let's assume the PID for the
+	Notepad process you just started is 124. You can use UMDH to get a heap dump by
+	using the following command:
+	
+	  "umdh -p:124 -f:notepad124.log" (without the quotation marks)
+	
+	Results: You've got a complete heap dump of the Notepad process in the
+	Notepad124.log file.
+	
+	Using Dhcmp.exe to Compare UMDH Logs
+	------------------------------------
+	
+	While the UMDH log file contains valuable information about the current state of
+	the heaps for a process, if you are concerned with finding a memory leak, it may
+	be more valuable to compare the outputs of two logs and find out what callstack
+	has seen the largest growth between the two dumps. The Dhcmp.exe utility helps
+	compare two UMDH logs to provide an analysis of the difference between them.
+	Once you have two logs captured at different intervals, you can then use the
+	following command:
+	
+	  "DHCMP dh1.log dh2.log > cmp12.txt" (without the quotation marks)
+	
+	The .txt files will compare the effect on memory of running the suspect memory
+	hog application. The output of the file generated by DHCMP resembles the
+	following:
+	
+	  +    5320 (  f110 -  9df0)     3a allocs	BackTrace00053
+	  Total increase == 5320
+	
+	For each BackTrace in the UMDH log files, there is a comparison made between the
+	two logs files. This case shows that the last log file specified in the DHCMP
+	command line had F110 bytes allocated while the first log in the DHCMP command
+	line had 9DF0 bytes allocated for the same BackTrace (callstack). The 5320 is
+	the difference in the number of bytes allocated. In this case, there were 5320
+	more bytes allocated between the time the two logs were captured. The bytes came
+	from the callstack identified by BackTrace00053.
+	
+	The next step is to find out what's in that backtrace. If you open the second DH
+	log file and search for "BackTrace00053" you might find something that resembles
+	the following:
+	
+	  00005320 bytes in 0x14 allocations (@ 0x00000428) by: BackTrace00053
+	          ntdll!RtlDebugAllocateHeap+0x000000FD
+	          ntdll!RtlAllocateHeapSlowly+0x0000005A
+	          ntdll!RtlAllocateHeap+0x00000808
+	          MyApp!_heap_alloc_base+0x00000069
+	          MyApp!_heap_alloc_dbg+0x000001A2
+	          MyApp!_nh_malloc_dbg+0x00000023
+	          MyApp!_nh_malloc+0x00000016
+	          MyApp!operator new+0x0000000E
+	          MyApp!LeakyFunc+0x0000001E
+	          MyApp!main+0x0000002C
+	          MyApp!mainCRTStartup+0x000000FC
+	          KERNEL32!BaseProcessStart+0x0000003D
+	
+	By looking at the callstack, you can see that the LeakyFunc function is
+	allocating memory by way of the Visual C++ run-time library. If you find that
+	the number of allocations grows as you took more dumps, you might be able to
+	conclude that memory is not being freed.
+	
+	Enabling Stack Traces
+	---------------------
+	
+	The most important information in UMDH logs is the stack traces of the heap
+	allocations. By analyzing them it can be understood whether a process leaks heap
+	memory. These stack traces are not acquired by default. The feature can be
+	enabled per-process or system-wide. Use the following command to enable stack
+	tracing system-wide:
+	
+	  "gflags -r +ust" (without the quotation marks)
+	
+	Restart the computer after this command.
+	
+	For per-process enabling, the command is
+	
+	  "gflags -i APPNAME +ust" (without the quotation marks)
+	
+	Where APPNAME is the file name of the executable including the extension
+	(Services.exe, lsass.exe, and so on). The command will not enable stack tracing
+	for a process that is already running. For this reason, in the case of processes
+	that can't be restarted (services, lsass, winlogon), the test compute must be
+	restarted.
+	
+	Use the following commands to verify what settings have been set system-wide or
+	for a specific process:
+	
+	System-wide:
+	
+	  "gflags -r" (without the quotation marks)
+	
+	Specific process:
+	
+	  "gflags -i APP-NAME" (without the quotation marks)
+	
+	By default, the maximum stack trace depth is 16. If you want to see deeper
+	callstacks, you can increase this by running GFLAGS. Click to select System
+	Registry and type a new depth in the Max. Stack Trace Capture Depth edit
+	control. Click Apply, and then restart the computer.
+	
+	IMPORTANT: If you are using Windows NT 4.0 Service Pack 6, you must use
+	Umdh_nt4.exe, rather than Umdh.exe, and you must use the above command to set
+	system-wide stack tracing. Be certain to reboot. Umdh_nt4 stack tracing does not
+	work on a per process basis on Windows NT version 4. It must be set for the
+	entire system.
+	
+	
+	Debug Symbols
+	-------------
+	
+	UMDH uses the IMAGEHLP library for symbol manipulation. This is the standard tool
+	for such tasks and it is also used by Microsoft debuggers. One of the most
+	important steps to using UMDH is to ensure that you have good symbol files (.dbg
+	or .pdb file) to get a good stack trace. The debug symbol files can be installed
+	from the Windows NT CD, or in the case of Microsoft Windows 2000, from the
+	Windows 2000 Support Tools CD. At a minimum, you need the Kernel32.dbg and
+	Ntdll.dbg symbol files. You can always acquire additional debugging symbols as
+	needed as you find out more about which components are leaking the memory.
+	
+	For additional information about how to get debug symbol files for Microsoft
+	components, click the article number below to view the article in the Microsoft
+	Knowledge Base:
+	
+	  Q311503 INFO: Use the Microsoft Symbol Server to Acquire Debug Symbol Files
+	
+	For additional information about how to use the Microsoft Symbol Server and how
+	to obtain Windows symbol packages, please visit the following Microsoft Web
+	site:
+	
+	  http://www.microsoft.com/ddk/debugging/symbols.asp
+	
+	When building components with Visual C++, it is important that you not have
+	Program Database for Edit and Continue selected for the C++ compiler options.
+	Instead, select Program Database.
+	
+	To set the symbol path, initialize the _NT_SYMBOL_PATH environment variable to
+	the path to be used. This can be done once when the test computer is set up by
+	using the System application in Control Panel (Advanced, Environment Variables)
+	or inside a command window before UMDH is run. Usually the symbols are copied to
+	the test machine in the %windir%\Symbols folder. In this case, use the following
+	command to set the variable:
+	
+	  "set _NT_SYMBOL_PATH=%windir%\symbols" (without the quotation marks)
+	
+	NOTE: Include the path to the PDBs for your application's components as well.
+	
+	Invoking UMDH
+	-------------
+	
+	The only required command-line parameter for UMDH is the -p option, which
+	specifies the PID of the process from which a heap dump will be obtained. The
+	PID can be obtained by using Task Manager or the Tlist.exe program. For a
+	command similar to the following, the log will be dumped to the standard
+	output:
+	
+	  "umdh -p:PID" (without the quotation marks)
+	
+	UMDH also displays various informational messages to standard error, and
+	therefore if not redirected it will be mixed with the real log. To gather the
+	UMDH informational messages in a file, use the following command:
+	
+	  "umdh -p:PID 2>umdh.msg" (without the quotation marks)
+	
+	If you want to gather the log dumped by UMDH in a file, use one of the following
+	commands:
+	
+	  "umdh -p:PID >umdh.log" (without the quotation marks)
+	
+	  -or-
+	
+	  "umdh -p:PID -f:umdh.log" (without the quotation marks)
+	
+	The commands are completely equivalent.
+	
+	The default log obtained by UMDH contains an enumeration of heap consumers sorted
+	by allocation count. If, for debugging purposes, you also need a dump of all
+	allocated blocks with their corresponding stack traces, the -d option must be
+	used:
+	
+	  "umdh -p:PID -d" (without the quotation marks)
+	
+	If the log contains too much information, it can be limited only to big users
+	that have the allocation count above a certain threshold. Use the following
+	command:
+	
+	  "umdh -p:PID -t:THRESHOLD" (without the quotation marks)
+	
+	All the command-line options (-p, -f, -t, -d) can be specified simultaneously in
+	any order. Following is a complicated command-line example:
+	
+	  "umdh -p:123 -t:1000 -f:umdh.log -d" (without the quotation marks)
+	
+	This command dumps the heaps for the process with PID 123 into the Umdh.log file.
+	It dumps only stack traces that account for more than 1000 allocations and it
+	also dumps the addresses of the heap blocks allocated through each stack trace.
+	
+	UMDH Output Explained
+	---------------------
+	
+	If you redirected the log to a file ("umdh -p:PID -f:umdh.log" (without the
+	quotation marks)), the contents will resemble the following, which was obtained
+	from a running Notepad process:
+	
+	  UMDH: Logtime 2000-06-28 10:54 - Machine=MYMachine - PID=704
+	  *********** Heap 00270000 Information ********************
+	      Flags: 58000062
+	      Number Of Entries: 87
+	      Number Of Tags: <unknown>
+	      Bytes Allocated: 00008DF0
+	      Bytes Committed: 0000A000
+	      Total FreeSpace: 00001210
+	      Number of Virtual Address chunks used: 1
+	      Address Space Used: <unknown>
+	      Entry Overhead: 8
+	      Creator:  (Backtrace00007)
+	          ntdll!RtlDebugCreateHeap+0x00000196
+	          ntdll!RtlCreateHeap+0x0000023F
+	          ntdll!LdrpInitializeProcess+0x00000369
+	          ntdll!LdrpInitialize+0x0000028D
+	          ntdll!KiUserApcDispatcher+0x00000007
+	  *********** Heap 00270000 Hogs ********************
+	  000001A0 bytes in 0x4 allocations (@ 0x00000068) by: BackTrace00031
+	          ntdll!RtlDebugAllocateHeap+0x000000FB
+	          ntdll!RtlAllocateHeapSlowly+0x0000005B
+	          ntdll!RtlAllocateHeap+0x00000D81
+	          ntdll!LdrpAllocateDataTableEntry+0x00000039
+	          ntdll!LdrpMapDll+0x000002A4
+	          ntdll!LdrpLoadImportModule+0x0000010D
+	          ntdll!LdrpWalkImportDescriptor+0x0000008B
+	          ntdll!LdrpLoadImportModule+0x0000011D
+	          ntdll!LdrpWalkImportDescriptor+0x0000008B
+	          ntdll!LdrpLoadImportModule+0x0000011D
+	          ntdll!LdrpWalkImportDescriptor+0x0000008B
+	          ntdll!LdrpInitializeProcess+0x000009DC
+	          ntdll!LdrpInitialize+0x0000028D
+	          ntdll!KiUserApcDispatcher+0x00000007
+	
+	  000001A0 bytes in 0x4 allocations (@ 0x00000068) by: BackTrace00034
+	          ntdll!RtlDebugAllocateHeap+0x000000FB
+	          ntdll!RtlAllocateHeapSlowly+0x0000005B
+	          ntdll!RtlAllocateHeap+0x00000D81
+	          ntdll!LdrpAllocateDataTableEntry+0x00000039
+	          ntdll!LdrpMapDll+0x000002A4
+	          ntdll!LdrpLoadImportModule+0x0000010D
+	          ntdll!LdrpWalkImportDescriptor+0x0000008B
+	          ntdll!LdrpLoadImportModule+0x0000011D
+	          ntdll!LdrpWalkImportDescriptor+0x0000008B
+	          ntdll!LdrpLoadImportModule+0x0000011D
+	          ntdll!LdrpWalkImportDescriptor+0x0000008B
+	          ntdll!LdrpLoadImportModule+0x0000011D
+	          ntdll!LdrpWalkImportDescriptor+0x0000008B
+	          ntdll!LdrpInitializeProcess+0x000009DC
+	          ntdll!LdrpInitialize+0x0000028D
+	          ntdll!KiUserApcDispatcher+0x00000007
+	
+	The log contains a dump of every heap in the process. In this example, the log
+	starts with a heap at address 270000. After a few global counters for the heap,
+	the log contains a dump in decreasing sorted order of stack traces that are
+	responsible for the most allocations. By comparing the dynamics of memory used
+	at different moments you can deduce what happened in the process and if any heap
+	use looks like a leak.
+	
+	Problems That Can Be Encountered When Using UMDH
+	------------------------------------------------
+	
+	The most common errors when using UMDH are not having stack tracing enabled.
+	Incorrect symbols for Ntdll.dll prevent UMDH from running. For the other symbols
+	files, UMDH will run but the log file will contain stack traces that do not have
+	function names but instead have relative addresses inside modules. A distant
+	third error is specifying a wrong PID. The following error message results when
+	you attempt to run UMDH for a process that does not have stack tracing enabled:
+	
+	  C:\>umdh -p:1140
+	  UMDH: Logtime 2000-06-28 12:43 - Machine=MyMachine - PID=1140
+	  Connecting.....Module enumeration complete.
+	  SymGetSymFromName(process, ntdll!RtlpStackTraceDataBase, xxx) failed,
+	  LastError = 126
+	  UmdhGetAddrFromName couldn't find Stack Trace DB pointer
+	  (ntdll!RtlpStackTraceDataBase).
+	  ntdll.dll symbols are incorrect; we must be able to see non-import symbols.
+	
+	Use the following command to double-check the settings for the process you are
+	investigating:
+	
+	  "gflags -i APPNAME" (without the quotation marks)
+	
+	Use the following command in the case where you are relying on system-wide stack
+	tracing:
+	
+	  "gflags -r" (without the quotation marks)
+	
+	These commands show the list of flags set for the application. Note that in the
+	case of system-wide stack tracing, the feature might appear as active but if you
+	did not restart the computer after running the gflags -r +ust command, it is not
+	actually activated. If you want to know every application that has stack tracing
+	enabled, you can look at the USTEnabled key under the following registry key:
+	
+	  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File
+	  Execution Options
+	
+	If you run UMDH on a process that has stack tracing enabled but have not
+	restarted the application since setting the flags, you may get the following
+	message in your logs:
+	
+	  A stack trace was not saved for this allocation (Index == 0)
+	
+	If you run UMDH without setting the correct symbol path or the symbols are
+	incorrect, you may get an error message in the log. However, you may just get
+	incorrect or misleading callstacks. To verify whether you have the correct
+	symbols, launch the NTSD system debugger for a process, for example:
+	
+	  "ntsd notepad" (without the quotation marks)
+	
+	Then, from the debugger console, run the LD command to load the symbol
+	information for the module and the LM command to list what modules have their
+	symbols loaded. If the output of the LM command shows export symbols loaded, the
+	symbols are not good. If you have PDB symbols loaded, the symbols are good. You
+	may get the following error message if you specified the wrong PID:
+	
+	  C:\>umdh -p:1000
+	  UMDH: Logtime 2000-06-28 09:45 - Machine=MyMachine - PID=1000
+	  Connecting...
+	  OpenProcess failed, LastError = 0x57
+	
+	Additional Tools
+	----------------
+	
+	Using DHCMPGUI:
+	
+	The Dhcmpgui.exe tool can be used to compare two UMDH logs. This tool is located
+	in the Dhcmpgui.zip file. It calls out to Dhcmp.exe (make certain that you have
+	this in your PATH). Click File 1 and File 2 to specify the two UMDH logs to
+	compare.
+	
+	After selecting the two files to compare, you will see a list of the differences.
+	The columns listed are the number of bytes allocated, number of allocations, and
+	the BackTraceID, respectively. You can sort by any one of those columns by
+	clicking the appropriate button, and then clicking Sort. To see the BackTrace
+	(callstack) for any line, just double-click it. This provides an easy way to
+	compare two logs and to quickly get to the callstack for the callstack that is
+	leaking memory.
+	
+	The source code has been provided for Dhcmpgui.exe in case you want to make any
+	modifications. The project requires Visual C++ version 6.0.
+	
+	Calling UMDH from Visual Basic:
+	
+	There may be times when it is useful to dump a number of logs over time because
+	the leak may not be very noticeable at first. For example, suppose you suspect
+	that your ASP application is leaking memory. It may be helpful to write a COM
+	component in Visual Basic that shells out to UMDH. You can then call that
+	component from your ASP page.
+	
+	Following is some Visual Basic code that invokes UMDH and creates a log file
+	based on the current time:
+	
+	     Private Declare Function GetCurrentProcessId Lib "kernel32" () As Long
+	     Public Function GetProcessID()
+	     GetProcessID = GetCurrentProcessId()
+	     End Function  
+	  .
+	  .
+	  .
+	     Dim strTime As String
+	
+	     Dim sProcID As String
+	     sProcID = GetProcessID()
+	     strTime = "MYLOG_" & Format(Now(), "hhmm")
+	    
+	     Shell ("C:\UMDH\umdh -p:" & sProcID & " -f:d:\logs\" & strTime & ".txt")
+	
+	Additional query words: DH umDHtools dumpheap displayheap DSDebugTools
+	
+	======================================================================
+	Keywords          : kbfile kbSample kbOSWin2000 kbGrpDSVCDB kbDSupport kbgraphxlinkcritical 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWinAdvServSearch
+	Version           : :2000,4.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

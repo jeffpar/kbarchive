@@ -1,0 +1,156 @@
+---
+layout: page
+title: "Q169188: Mac Cinemania 97: How to Manually Install Program"
+permalink: kb/169/Q169188/
+---
+
+## Q169188: Mac Cinemania 97: How to Manually Install Program
+
+	Article: Q169188
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): 1997 edition
+	Operating System(s): 
+	Keyword(s): kb3rdparty kbmm kbsetup kbusage
+	Last Modified: 18-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Cinemania for the Macintosh 1997 edition 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes how to manually install Microsoft Cinemania 97 for the
+	Macintosh.
+	
+	MORE INFORMATION
+	================
+	
+	The installation instructions are separated into three parts. To manually
+	install Cinemania, work through the steps in the appropriate section:
+	
+	- Installing Cinemania
+	
+	- Installing Internet Config 1.2 (this is required for accessing links to the
+	  Internet from within the product
+	
+	- Installing Microsoft Internet Explorer 2.0.1
+	
+	Installing Cinemania
+	--------------------
+	
+	Use the following instructions to install Cinemania to your hard drive.
+	
+	1. Create new folder and call it "Cinemania 97"
+	
+	2. Insert the Cinemania 97 compact disc into the drive and make the CD-ROM
+	  window larger so you can see the following four items toward bottom of
+	  window:
+	   - Install Cinemania
+	   - Installer Files
+	   - Data
+	   - MediaMan
+	
+	3. Drag MediaMan into the Cinemania 97 folder.
+	
+	4. From the Installer Files folder, do the following:
+	  a. Drag the font files, Arial and MS Reference, to System folder icon. You
+	     are presented with a dialog box:
+	
+	  Fonts need to be stored in the Fonts folder in order to be available to the
+	  Macintosh. Put these fonts into the Fonts folder?
+	
+	     Click OK.
+	
+	  b. Drag the following items from the System Files folder and drop them on the
+	     System Folder icon (do NOT place these items into the open System Folder
+	     window):
+	      - Sound
+	      - QuickTime
+	      - QuickTime PowerPlug (if you have a Power Macintosh)
+	      - Sound Manager
+	
+	5. Open the System Folder, then open Preferences. Create a new folder in the
+	  Preferences folder called, "Cinemania Folder" (without the quotation marks).
+	
+	6. Drag the following items in the List folder on CD to the new Cinemania Folder
+	  you created in step 5:
+	   - Cool
+	   - Ebert
+	   - Ebert95
+	   - Film
+	   - Maltin
+	   - Own
+	   - Rent
+	
+	7. Restart your computer
+	
+	Installing Internet Config 1.2
+	------------------------------
+	
+	To access the World Wide Web links from within Cinemania, you must install
+	Internet Config. To install Internet Config, do the following:
+	
+	1. Drag the folder on the Cinemania 97 CD, Internet Config 1.2, to your hard
+	  drive.
+	
+	2. Open the folder and double-click the Internet Config application icon to
+	  run/install the program.
+	
+	  You will receive a message about installing Internet Config. If the Utility
+	  has not been installed on your computer, click Install.
+	
+	Installing Microsoft Internet Explorer 2.0.1
+	--------------------------------------------
+	
+	If you would like to use Internet Explorer as your Web browser, install the
+	browser to your hard drive.
+	
+	NOTE: The version of Internet Explorer included on the Cinemania 97 CD-ROM is not
+	the most current version. To obtain the most recent version, please go to the
+	following location on the internet:
+	
+	  http://www.microsoft.com/ie/default.asp
+	
+	NOTE: You must have an Internet Service Provider (ISP) in order to utilize the
+	Internet.
+	
+	To install the browser, do the following:
+	
+	1. Drag the Internet Explorer 2.0 folder to your hard drive.
+	
+	2. Double-click the application icon, "Internet Explorer 2.0 (PPC)" or "Internet
+	  Explorer 2.0 (68K)", depending on the type of computer you have.
+	
+	  NOTE: To conserve disk space, you may throw away the version of the Internet
+	  Explorer application that you are not using (i.e., Internet Explorer 2.0
+	  (68K).
+	
+	  You can obtain the latest version of Internet Explorer from:
+	
+	  http://www.microsoft.com/ie/default.asp
+	
+	For information about configuring Internet Config for use with specific Web
+	Browsers when accessing Web links from within a Microsoft product, please see
+	the following articles in the Microsoft Knowledge Base:
+	
+	  Q163513 Mac Multimedia: Internet Config Error Messages and Solution
+	
+	  Q158599 Mac Encarta 97: Readme.txt: Getting Connected
+	
+	  Q151036 Mac Bookshelf/Cinemania: Configuring HTTP Helper Application
+	
+	Internet Config 1.2 is a public domain utility that enables you to specify what
+	Internet programs you use to connect to your Internet Service Provider.
+	
+	Additional query words: setup 97 '97 macmm internetconfig cd disc c-d installing
+	
+	======================================================================
+	Keywords          : kb3rdparty kbmm kbsetup kbusage 
+	Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbHomeMMsearch kbCineManiaSearch kbCinemania1997Mac
+	Version           : :1997 edition
+	
+	=============================================================================
+	

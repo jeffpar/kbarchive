@@ -1,0 +1,133 @@
+---
+layout: page
+title: "Q159195: XCON: MTA Terminates Unexpectedly with Event ID 9405"
+permalink: kb/159/Q159195/
+---
+
+## Q159195: XCON: MTA Terminates Unexpectedly with Event ID 9405
+
+	Article: Q159195
+	Product(s): Microsoft Exchange
+	Version(s): winnt:4.0
+	Operating System(s): 
+	Keyword(s): kbusage
+	Last Modified: 10-APR-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The Microsoft Exchange message transfer agent (MTA) terminates unexpectedly with
+	an event similar to the following (as viewed in the Application Event Log):
+	
+	  Event Id: 9405
+	  Source: MSExchangeMTA
+	  Type:Error
+	  Category: Field Engineering
+	  Description:
+	  An unexpected error has occurred which may cause the MTA to terminate. Error:
+	  Exception c0000005 occurred at Address 0x02086698. (16)
+	
+	
+	CAUSE
+	=====
+	
+	An attempt is made to use an MTA Queue Object in a thread of the MTA. In a
+	different thread of the MTA, the same Queue Object was deleted. When the first
+	thread attempts to access this deleted object, it results in an MTA failure.
+	
+	STATUS
+	======
+	
+	The MTA has been modified to attempt to lock the MTA Queue Object before
+	attempting to access it. This lock prevents other threads from deleting the
+	object before the first thread is done using it.
+	
+	Microsoft has confirmed this to be a problem in Microsoft Exchange Server version
+	4.0. This problem was corrected in the latest Microsoft Exchange 4.0 U.S.
+	Service Pack. For information on obtaining the service pack, query on the
+	following word in the Microsoft Knowledge Base (without the spaces):
+	
+	  S E R V P A C K
+	
+	
+	MORE INFORMATION
+	================
+	
+	The Drwtsn32.log file may show a failure such as this (pay particular attention
+	to the function names listed on the stack back trace):
+	
+	Application exception occurred:
+	       App: emsmta.DBG (pid=171)
+	       Exception number: c0000005 (access violation)
+	
+	State Dump for Thread Id 0xe6
+	
+	eax=01620a64 ebx=00000000 ecx=00000000 edx=0000003b esi=01485f60
+	edi=00000000
+	eip=02086698 esp=004cfc04 ebp=004cfc54 iopl=0         nv up ei pl zr na po
+	nc
+	cs=001b  ss=0023  ds=0023  es=0023  fs=0038  gs=0000
+	efl=00000246
+	
+	function: odplfarb
+	       0208667a 8b4dd0           mov     ecx,[ebp-0x30]
+	ss:009fe576=????????
+	       0208667d 837c080900      cmp dword ptr [eax+ecx+0x9],0x0
+	ds:0052e923=????????
+	       02086682 74ca             jz      0208664e
+	       02086684 0fbf45dc         movsx   eax,word ptr [ebp-0x24]
+	ss:009fe577=????
+	       02086688 8bc8             mov     ecx,eax
+	       0208668a c1e004           shl     eax,0x4
+	       0208668d 03c1             add     eax,ecx
+	       0208668f 8b4dd0           mov     ecx,[ebp-0x30]
+	ss:009fe576=????????
+	       02086692 8b440809         mov     eax,[eax+ecx+0x9]
+	ds:0052e923=????????
+	       02086696 33c9             xor     ecx,ecx
+	FAULT ->02086698 8a4805           mov     cl,[eax+0x5]
+	ds:01b4f386=??
+	       0208669b c1e110           shl     ecx,0x10
+	       0208669e 0fbf45dc         movsx   eax,word ptr [ebp-0x24]
+	ss:009fe577=????
+	
+	*----> Stack Back Trace <----*
+	
+	FramePtr ReturnAd Param#1  Param#2  Param#3  Param#4  Function Name
+	004cfc54 0208411f 004cfddc 00000001 00000001 0148609d EMSMTA!odplfarb
+	[omap]
+	004cfdf4 0211f763 01485f60 022f00fc 022f57d0 0149345c EMSMTA!odpdqgnx
+	[omap]
+	004cfe10 020915c9 00000003 022f57d0 022f0003 0149345c EMSMTA!oxpufsdb
+	[omap]
+	004cfe30 0212659c f8000001 004cfeb7 022f5823 022f57d0 EMSMTA!oxpuclos
+	[omap]
+	004cfe48 020ad389 f8000001 022e0006 022e0006 00000002 EMSMTA!oxpnlloc
+	[omap]
+	004cfec4 02001da4 00000002 00000000 022e0006 022e0035 EMSMTA!oxpgsyst
+	[omap]
+	004cfef8 02003528 77f5c0ee 77f42119 00145ab8 4f464e49 EMSMTA!sbpwrcv+0xb7
+	[omap]
+	004cff94 02018406 77fac8a0 00145ab8 000000ec 004cffec EMSMTA!sbpwinit+0xd51
+	[omap]
+	004cffa8 77e3167a 00000001 00145ac0 77e50000 77f46c2e EMSMTA!sbpisvep+0xa6
+	[omap]
+	
+	
+	Additional query words: failure crash lock mutually exclusive mutex
+	
+	======================================================================
+	Keywords          : kbusage 
+	Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+	Version           : winnt:4.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

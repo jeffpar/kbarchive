@@ -1,0 +1,193 @@
+---
+layout: page
+title: "Q167192: HOWTO: Create a Progress Indicator Using Threed Panel Control"
+permalink: kb/167/Q167192/
+---
+
+## Q167192: HOWTO: Create a Progress Indicator Using Threed Panel Control
+
+	Article: Q167192
+	Product(s): Microsoft FoxPro
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbinterop kbole kbOOP kbvfp500 kbvfp600
+	Last Modified: 11-AUG-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes how to create a progress/status indicator using the
+	Threed Panel ActiveX control in Visual FoxPro.
+	
+	MORE INFORMATION
+	================
+	
+	You can use the Threed Panel ActiveX control to display plain or three-
+	dimensional text on a three-dimensional background. It can also present
+	progress/status information in a dynamically colored circle or bar with or
+	without showing percent.
+	
+	Here is a listing of properties required to create a progress/status indicator:
+	
+	- FloodPercent: returns the percentage of the painted area inside the Threed
+	  Panel when the panel is used as a status or progress indicator. This property
+	  is not available at design time. The FloodPercent property can be set to an
+	  integer value between 0 and 100.
+	
+	- FloodType: Determines if and how the panel is used as a status or progress
+	  indicator. Here is a listing of all the available setting for FloodType
+	  property:
+	
+	     0 (Default) None - Panel has no status bar capability and the
+	                        caption (if any) is displayed.
+	     1 - Left to right.
+	     2 - Right to left.
+	     3 - Top to bottom.
+	     4 - Bottom to top.
+	     5 - From the center outward in a widening circle.
+	
+	  Threed Panel will be painted in a color base on the above setting, which is
+	  specified by the FloodColor property, as the FloodPercent property increases.
+	
+	- FloodShowPct: Determines whether the current setting of the FloodPercent
+	  property will be displayed in the center of the panel when the panel is used
+	  as a status or progress indicator. The FloodType property setting has to be
+	  other than None in order to work. The FloodShowPct property can either set it
+	  to TRUE to show or FALSE to hide the FloodPercent property.
+	
+	- FloodColor: returns the color used to paint the area when the Threed Panel is
+	  used as a status or progress indicator. The FloodType property setting has to
+	  be other than None in order to work.
+	
+	The following example using a Timer control to simulate the progress/status
+	indicator:
+	
+	NOTE: Before you run the example below, making sure you have the Threed Panel
+	ActiveX control installed(Windows\System\Threed32.ocx).
+	
+	1. Create a .prg file and cut and paste the following code into the .prg:
+	
+	        PUBLIC x
+	        x=CREATEOBJECT("progress")
+	        x.SHOW
+	
+	        **************************************************
+	        *-- Class:        progress
+	        *-- ParentClass:  form
+	        *-- BaseClass:    form
+	        *
+	        DEFINE CLASS progress AS form
+	
+	           Top = 0
+	           Left = 0
+	           Height = 198
+	           Width = 378
+	           DoCreate = .T.
+	           Caption = "Form1"
+	           Name = "Form1"
+	
+	           ADD OBJECT timer1 AS Timer WITH ;
+	             Top = 9, ;
+	             Left = 18, ;
+	             Height = 23, ;
+	             Width = 23, ;
+	             Enabled = .F., ;
+	             Interval = 100, ;
+	             Name = "Timer1"
+	
+	           ADD OBJECT command1 AS CommandButton WITH ;
+	             Top = 121, ;
+	             Left = 71, ;
+	             Height = 27, ;
+	             Width = 247, ;
+	             Caption = "Click Me to Begin Task", ;
+	             Name = "Command1"
+	
+	           ADD OBJECT sspanel1 AS sspanel WITH ;
+	             Top = 27, ;
+	             Left = 28, ;
+	             Height = 72, ;
+	             Width = 328, ;
+	             Name = "sspanel1"
+	
+	           ADD OBJECT command2 AS CommandButton WITH ;
+	             Top = 159, ;
+	             Left = 70, ;
+	             Height = 26, ;
+	             Width = 247, ;
+	             Caption = "Reset", ;
+	             Name = "Command2"
+	
+	           PROCEDURE Init
+	             * Set the FloodType from Left to Right
+	             THISFORM.sspanel1.FloodType = 1
+	             * Initialize the FloodPercent to 0
+	             THISFORM.sspanel1.FloodPercent = 0
+	             THISFORM.sspanel1.FloodShowPct = .T. && Show the percent sign
+	           ENDPROC
+	
+	           PROCEDURE timer1.Timer
+	             IF THISFORM.sspanel1.FloodPercent < 100
+	                THISFORM.sspanel1.FloodPercent = ;
+	                   THISFORM.sspanel1.FloodPercent + 1
+	             ELSE
+	                THISFORM.timer1.Enabled = .F.
+	                THISFORM.command1.Caption = "Click Me to Begin Task"
+	                WAIT WINDOW "Task Completed"
+	                THISFORM.sspanel1.FloodPercent = 0
+	             ENDIF
+	           ENDPROC
+	
+	           PROCEDURE command1.Click
+	             IF THIS.Caption = "Click Me to Begin Task"
+	                THIS.Caption = "Click Me to Stop Task"
+	                THISFORM.timer1.Enabled = .T.
+	             ELSE
+	                THIS.Caption = "Click Me to Begin Task"
+	                THISFORM.timer1.Enabled = .F.
+	             ENDIF
+	           ENDPROC
+	
+	           PROCEDURE command2.Click
+	             THISFORM.Timer1.Enabled = .F.
+	             THISFORM.sspanel1.FloodPercent = 0
+	             THISFORM.Command1.Caption = "Click Me to Begin Task"
+	           ENDPROC
+	
+	        ENDDEFINE
+	
+	        DEFINE CLASS sspanel AS OLECONTROL
+	
+	            OLEClass = "Threed.SSPanel"
+	
+	        ENDDEFINE
+	        *
+	        *-- EndDefine: progress
+	        **************************************************
+	
+	2. Run the .prg file and click the "Click Me to Begin Task" button, and the
+	  progress/status indicator appears in the Threed panel ActiveX control as
+	  FloodPercent property increases.
+	
+	REFERENCES
+	==========
+	
+	Custom Control Reference Help File (Ctrlref.hlp in the Windows\System or
+	WinNT\System32 folder if using Windows NT). This file may also appear in the
+	Visual FoxPro folder.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbinterop kbole kbOOP kbvfp500 kbvfp600 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

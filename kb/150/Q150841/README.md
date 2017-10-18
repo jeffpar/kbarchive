@@ -1,0 +1,272 @@
+---
+layout: page
+title: "Q150841: INFO: Troubleshooting Common APPC Error Codes"
+permalink: kb/150/Q150841/
+---
+
+## Q150841: INFO: Troubleshooting Common APPC Error Codes
+
+	Article: Q150841
+	Product(s): Microsoft SNA Server
+	Version(s): WINDOWS:2.0,2.1,2.11,3.0,4.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 13-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 2.0, 2.1, 2.11, 3.0, 4.0, on platform(s):
+	   - the operating system: Microsoft Windows NT 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Applications that use the SNA Server APPC API interface, such as AS/400
+	connectivity products (5250 emulators, ODBC drivers, etc), may display native
+	APPC error codes if an APPC error is encountered. An APPC error is composed of a
+	4 digit primary return code followed by an 8 digit secondary return code. These
+	APPC error codes are documented in Appendix A of the SNA Server 2.1/2.11 APPC
+	"Programmer's Guide" included in soft-copy form on the SNA Server compact disc:
+	
+	  <cdrom>\docs\help\appc.hlp: Windows help file format
+	  <cdrom>\docs\sdk\appc\doc\appcapa.doc: Word for Windows document
+	
+	To simplify troubleshooting of these errors, this article lists common APPC
+	errors along with suggested actions to take.
+	
+	MORE INFORMATION
+	================
+	
+	The following is a list of common APPC error codes along with an explanation for
+	each.
+	
+	---------------------------------------------------------------------
+	
+	Primary Return Code =   0001  (AP_PARAMETER_CHECK)
+	Secondary Return Code = 00000002  (AP_BAD_CONV_ID)
+	
+	The APPC program referenced a conversation ID that is not valid. For example, if
+	the remote transaction program deallocated the conversation, and the local
+	transaction program then issued an APPC [MC_]DEALLOCATE call, the DEALLOCATE
+	will return this error, because the conversation ID is no longer valid.
+	
+	---------------------------------------------------------------------
+	
+	Primary Return Code =   0001  (AP_PARAMETER_CHECK)
+	Secondary Return Code = 00000003  (AP_BAD_LU_ALIAS)
+	
+	The APPC program tried to initiate a conversation using a Local LU alias which is
+	not configured in SNA Server.
+	
+	Check the Local LU alias specified by the APPC program. If no Local LU alias is
+	being specified, check the SNA Server configuration to see if default Local APPC
+	LU is configured properly in the user/group record in SNA Admin, or that the
+	Member of Default Outgoing Local APPC LUs checkbox is selected for the Local LU,
+	and that the Local LU is partnered with the Remote APPC LU and APPC mode being
+	requested.
+	
+	---------------------------------------------------------------------
+	
+	Primary Return Code =   0001  (AP_PARAMETER_CHECK)
+	Secondary Return Code = 00000018  (AP_UNKNOWN_PARTNER_MODE)
+	
+	The APPC mode name specified by the application does not exist in the SNA Server
+	configuration. This should not occur with 5250 emulation programs which are
+	typically hard-coded to use a mode name of QPCSUPP.
+	
+	---------------------------------------------------------------------
+	
+	Primary Return Code =   0001  (AP_PARAMETER_CHECK)
+	Secondary Return Code = 0000015B  (AP_BAD_PARTNER_LU_ALIAS)
+	
+	The APPC program tried to initiate a conversation using a Remote LU alias that is
+	not configured in SNA Server, or the program specified a Local LU alias that is
+	not partnered with the Remote LU alias.
+	
+	Check the Remote LU alias specified by the APPC program. If no Remote LU alias is
+	being specified, check the SNA Server configuration to see if default Remote
+	APPC LU is configured properly in the user/group record in SNA Admin, or that
+	the Remote APPC LU is partnered with the Local APPC LU alias and mode being
+	requested.
+	
+	----------------------------------------------------------------------
+	
+	Primary Return Code =   0003  (AP_ALLOCATION_ERROR)
+	Secondary Return Code = 00000004  (AP_ALLOCATION_FAILURE_NO_RETRY)
+	
+	The APPC program requested a conversation over an LU6.2 session between an APPC
+	Local LU alias, Remote LU alias and APPC mode name. However, an LU6.2 session
+	over this LU/LU/mode pair could not be activated.
+	
+	This error can occur if the connection is activating, though the LU session could
+	not be established, normally due to a configuration mismatch between SNA Server
+	and the remote system. This may also occur if the connection is defined for
+	activation By Administrator, or the connection was manually deactivated, though
+	has not been manually activated.
+	
+	For session related errors, check the Windows NT application event log for one of
+	the following events to help track down the cause of this problem:
+	
+	 Event 17: APPC session activation failure: BIND negative response sent
+	
+	           The remote system attempted to activate an LU6.2 session by
+	           sending a BIND to SNA Server, but SNA Server rejected the
+	           BIND request. Provide your SNA Server configuration file and
+	           your Windows NT application event log to SNA Server support
+	           personnel.
+	
+	 Event 18: APPC session activation failure: BIND negative response or
+	           UNBIND request received.
+	
+	           SNA Server attempted to activate an LU6.2 session by sending
+	           a BIND to the remote system, but the remote system rejected
+	           the BIND request. Provide your SNA Server configuration file
+	           and your Windows NT application event log to SNA Server support
+	           personnel.
+	
+	 Event 14: APPC session activation failure: INITSELF negative response
+	           received.
+	
+	           This event can occur if a dependent LU6.2 session is being
+	           used and a configuration mismatch exists.
+	
+	----------------------------------------------------------------------
+	
+	Primary Return Code =   0003  (AP_ALLOCATION_ERROR)
+	Secondary Return Code = 00000005  (AP_ALLOCATION_FAILURE_RETRY)
+	
+	The APPC program requested a conversation over an LU6.2 session between an APPC
+	Local LU alias, Remote LU alias and APPC mode name. However, the SNA Server
+	connection supporting this LU pair is not active or could not be activated.
+	
+	This can occur if the SNA Server connection is in a Pending status. Check the
+	Windows NT application event log for an event related to the connection
+	problem.
+	
+	- Check for any Event 23 errors which indicate a connection failure.
+	
+	- For 802.2 connections, check for Event 230
+	
+	----------------------------------------------------------------------
+	
+	Primary Return Code =   0003  (AP_ALLOCATION_ERROR)
+	Secondary Return Code = 080F6051  (AP_SECURITY_NOT_VALID)
+	
+	The APPC program requested a conversation to a remote transaction program, but
+	the remote system is configured with conversation level security and the APPC
+	program did not provide a valid user ID or password in the [MC_]ALLOCATE
+	request.
+	
+	Check that the user ID and password that is being provided to the APPC program
+	matches the user ID and password configured on the remote system.
+	
+	----------------------------------------------------------------------
+	
+	Primary Return Code =   0003  (AP_ALLOCATION_ERROR)
+	Secondary Return Code = 084B6031  (AP_TRANS_PGM_NOT_AVAIL_RETRY)
+	
+	The APPC program requested a conversation to a remote transaction program, but
+	the remote transaction program is not available. For example, if using 5250
+	emulation to connect to an AS/400, no AS/400 subsystem is currently accepting
+	pass through display sessions.
+	
+	----------------------------------------------------------------------
+	
+	Primary Return Code =   0003  (AP_ALLOCATION_ERROR)
+	Secondary Return Code = 084C0000  (AP_TRANS_PGM_NOT_AVAIL_NO_RETRY)
+	
+	The APPC program requested a conversation to a remote transaction program, but
+	the remote LU rejected the allocation request because it was unable to start the
+	requested partner transaction program. The reason for the error may be logged by
+	the remote system.
+	
+	----------------------------------------------------------------------
+	
+	Primary Return Code =   0003  (AP_ALLOCATION_ERROR)
+	Secondary Return Code = 10086021  (AP_TP_NAME_NOT_RECOGNIZED)
+	
+	The APPC program requested a conversation to a remote transaction program, but
+	the remote LU did not recognize the transaction program name specified in the
+	allocate request. Check the configuration of the remote system to determine the
+	correct name for the transaction program.
+	
+	----------------------------------------------------------------------
+	
+	Primary Return Code =   F002  (AP_TP_BUSY)
+	Secondary Return Code = 00000000 (no applicable subcode)
+	
+	The APPC program issued an APPC call while the APPC interface was processing
+	another call from the same TP. If this is a Windows 16-bit APPC program, see
+	Q137246 for another possible cause of this error.
+	
+	----------------------------------------------------------------------
+	
+	Primary Return Code = F003  (AP_COMM_SUBSYSTEM_ABENDED)
+	Secondary Return Code = 00000000 (no applicable subcode)
+	
+	One of the following conditions may cause this error to occur:
+	
+	- the LAN connection between the SNA Server client and server has been broken.
+	  A Network General sniffer(TM) trace or Microsoft Network Monitor trace may be
+	  required to debug the cause of the LAN session failure. Check the Windows NT
+	  application event log for Event 38 qualifier 0005.
+	
+	- The SNA Server service has failed abnormally. Check the Windows NT
+	  application event log for Event 624, or serious error which may have caused
+	  SNA Server service to terminate.
+	
+	- The SNA client SnaBase or WNAP process running on the same machine as the
+	  APPC application program may have failed abnormally.
+	
+	-----------------------------------------------------------------------
+	
+	Primary Return Code =   F004  (AP_COMM_SUBSYSTEM_NOT_LOADED)
+	Secondary Return Code = 010000F0 (SNA Server specific error code)
+	
+	This error occurs when the SNA Server client does not find any active SNA Servers
+	running in the SNA Server domain or subdomain. If there are SNA Servers running,
+	then this can also indicate that the SNA client is unable to receive a "sponsor"
+	connection to an SNA Server in the domain.
+	
+	See Q148359 for specific causes of this error.
+	
+	-----------------------------------------------------------------------
+	
+	Primary Return Code =   F004  (AP_COMM_SUBSYSTEM_NOT_LOADED)
+	Secondary Return Code = 020000F0 (SNA Server specific error code)
+	
+	This error occurs if the APPC application does not specify a Local LU alias in
+	the TP_Started APPC verb, and there is no defaulted Local LU alias in the SNA
+	Server configuration.
+	
+	See Q148359 for specific causes of this error.
+	
+	-----------------------------------------------------------------------
+	
+	Primary Return Code =   F011  (AP_UNEXPECTED_DOS_ERROR)
+	Secondary Return Code = <xxxxxxxx> (operating system or internal error)
+	
+	The underlying operating system, network operating system, or an internal SNA
+	Server error was returned to the APPC interface while processing an APPC call
+	from the application. The error is returned through the secondary return code
+	(xxxxxxxx above) and appears in Intel byte-swapped order. For example, if
+	08000000 is returned, the byte-swapped value is actually 00000008, which means
+	"out of memory". If this secondary return code is occurring on a Windows 3.x or
+	WFW client machine, see KB article Q126432 for client memory tuning
+	suggestions.
+	
+	Otherwise, an internal SNA client application trace and APPC API trace should be
+	provided to SNA Server support personnel.
+	
+	Additional query words: snafaqtop
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbSNAServSearch
+	Version           : WINDOWS:2.0,2.1,2.11,3.0,4.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

@@ -1,0 +1,153 @@
+---
+layout: page
+title: "Q199515: SwSplit.exe Switches Splitter Pane Views in SDI App"
+permalink: kb/199/Q199515/
+---
+
+## Q199515: SwSplit.exe Switches Splitter Pane Views in SDI App
+
+	Article: Q199515
+	Product(s): Microsoft C Compiler
+	Version(s): 4.2,5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbfile kbSample kbDocView kbMFC KbUIDesign kbVC420 kbVC500 kbVC600 kbGrpDSMFCATL
+	Last Modified: 10-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+	- Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+	- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+	- Microsoft Visual C++.NET (2002) 
+	-------------------------------------------------------------------------------
+	
+	NOTE: Microsoft Visual C++ NET (2002) supported both the managed code model that is provided by the .NET Framework and the unmanaged native Windows code model. The information in this article applies to unmanaged Visual C++ code only.
+	
+	SUMMARY
+	=======
+	
+	SwSplit.exe is a sample that uses MFC to demonstrate switching between different
+	views in an SDI application. This sample allows the user to select a single view
+	or multiple views. Multiple views are displayed in the panes of a splitter
+	window. The sample demonstrates how you can show different views (some in a
+	nested splitter window) based on the selection in a tree view.
+	
+	MORE INFORMATION
+	================
+	
+	The following files are available for download from the Microsoft Download
+	Center:
+	
+	SwSplit.exe
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. After it is posted, the file is housed on
+	secure servers that prevent any unauthorized changes to the file.
+	
+	The MFC AppWizard can create two basic frameworks for applications that have
+	document/view architecture support: single document interface (SDI) and multiple
+	document interface (MDI). SDI and MDI are starting points for you to build an
+	application that can look different from AppWizard-produced applications.
+	
+	Microsoft Outlook 98 is an example of a popular user-interface (UI) structure.
+	The Outlook 98 UI structure has a multi-pane splitter window, where different
+	views can appear in different panes. The particular views displayed can depend
+	on which items are selected in other UI objects (for example, a tree view).
+	Certain selections can bring up a splitter window within an existing splitter
+	window.
+	
+	This type of application UI design is not really MDI because it only has one
+	frame window. MDI applications have multiple child frame windows within the main
+	frame window. However, the Outlook 98 design can display one or more different
+	types of views. It is not usually clear how to achieve this type of interface
+	with the SDI framework. The SwSplit.exe sample shows you how to create this type
+	of a UI design using MFC and the SDI framework produced by the MFC AppWizard.
+	NOTE: Outlook 98 does not use MFC.
+	
+	SwSplit.exe uses static splitter windows. A static splitter window has a fixed
+	number of panes. This differs from a dynamic splitter window where you can
+	change the number of panes. If a user wants to change the number or the
+	orientation of the panes in SwSplit.exe, the splitter window is destroyed and a
+	new splitter window with the desired pane structure is created in its place. In
+	this process, the original views are also destroyed and new views are created to
+	fill the new splitter panes.
+	
+	SwSplit.exe uses a list view, edit view, tree view and three different form
+	views. The code that switches the views makes it easy to switch to other types
+	of views. Here is an example of part of the code that creates a splitter view,
+	its panes, and the views that fill those panes. CSplitterView has a member
+	object of the CSplitterWnd-derived class, represented by the variable
+	m_wndSplitter. Two views are created to fill a window that is split by a
+	vertical splitter bar. These views are based on the run-time classes passed into
+	the CreateView function. The left pane gets a view based on CMyTreeView, and the
+	right pane gets a view based on CFormView1.
+	
+	  int CSplitterView::OnCreate(LPCREATESTRUCT lpCreateStruct)
+	  {
+	     if (CView::OnCreate(lpCreateStruct) == -1)
+	        return -1;
+	     m_wndSplitter.CreateStatic(this, 1, 2);
+	     CCreateContext* pContext = (CCreateContext*)lpCreateStruct->lpCreateParams:
+	     m_wndSplitter.CreateView(0, 0, RUNTIME_CLASS(CMyTreeView), CSize(0,0), pContext);
+	     m_wndSplitter.CreateView(0, 1, RUNTIME_CLASS(CFormView1), CSize(0,0), pContext);
+	
+	     return 0;
+	  }
+	
+	SwSplit.exe demonstrates how to create, persist, and display data in this type of
+	a multi-view SDI application. A file is opened and the data is saved on a
+	transaction basis. This is similar to the CHKBOOK MDI sample that comes with
+	Visual C++. In addition to showing transaction-based saving of data in an SDI
+	application, SwSplit.exe automatically loads the most recently-used file at
+	start up. SwSplit.exe reads the application's registry entries for the most
+	recently-used files. Although some users may need to save the data on a
+	transaction basis, it complicates things. It is much easier to let the MFC
+	framework persist the data in the standard way. The standard way involves saving
+	the data all at once when the user chooses to save it or when closing the
+	document. You can use the standard way by implementing the document class'
+	Serialize function. When you can, it is best to let MFC do the work for you. You
+	get a more robust and maintainable solution that way.
+	
+	This sample demonstrates how to alter the menu and toolbar to suit the active
+	view. The only view-specific items that are altered for a particular view are
+	the toolbar buttons and menu items that show and remove FormView3. All other
+	menu items and toolbar buttons are displayed for all views. The framework's
+	command UI updating takes care of enabling or disabling them. For example, the
+	menu items and toolbar buttons that pertain to the editview in this sample (that
+	is, undo, cut, copy, paste, and print) are displayed for all views. This is the
+	typical way to handle it. The menu items and toolbar buttons are unavailable
+	when the appropriate view is not displayed or does not have the focus. NOTE: The
+	same could have been done for the toolbar buttons and menu items that show and
+	remove FormView3.
+	
+	SwSplit.exe also demonstrates how to display non-standard background colors in
+	views and certain controls. You need to be careful when using this feature in
+	your own application. Some users might not like your colors. By changing the
+	background colors you restrict the users ability to apply a personal color
+	scheme by changing these settings in the Control Panel. In addition, playing
+	with colors might affect the accessibility of your application. For example,
+	some users might be color blind.
+	
+	The VIEWEX and COLLECT samples might also be helpful. Both samples come with
+	Visual C++. VIEWEX uses the MDI architecture, and shows you how to use different
+	types of static splitter windows in separate child frame windows. The COLLECT
+	sample illustrates the MFC collection classes, and it demonstrates how to
+	display different views in an SDI application. However, none of the views in
+	COLLECT involve splitter windows.
+	
+	Additional query words: CTreeView OnCmdMsg m_dwDefaultStyle CCmdUI ON_UPDATE_COMMAND_UI CreateView
+	
+	======================================================================
+	Keywords          : kbfile kbSample kbDocView kbMFC KbUIDesign kbVC420 kbVC500 kbVC600 kbGrpDSMFCATL 
+	Technology        : kbVCsearch kbAudDeveloper kbVC420 kbVC500 kbVC600 kbVC32bitSearch kbVCNET kbVC500Search
+	Version           : :4.2,5.0,6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

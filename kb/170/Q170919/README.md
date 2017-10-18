@@ -1,0 +1,123 @@
+---
+layout: page
+title: "Q170919: PRB: Error &quot;Record is not Locked&quot; with ComboBox in Grid"
+permalink: kb/170/Q170919/
+---
+
+## Q170919: PRB: Error &quot;Record is not Locked&quot; with ComboBox in Grid
+
+	Article: Q170919
+	Product(s): Microsoft FoxPro
+	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b
+	Operating System(s): 
+	Keyword(s): kbHWMAC kbvfp
+	Last Modified: 24-AUG-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a 
+	- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you place a combobox in a grid, the following error might occur when you
+	choose an item from the combobox:
+	
+	  Record is not locked
+	
+	If the RowSourceType is set to 6-Fields and the RowSource of the combobox is set
+	to a field in the same table that the grid is bound to, then the error will
+	occur.
+	
+	RESOLUTION
+	==========
+	
+	Add the records of the field that the combobox is based on to an array and then
+	basing the RowSource of the combobox on the array to prevent the error from
+	occurring. You can also use a RowSourceType of 3-SQL Statement as another
+	option.
+	
+	To modify the form created in the Steps to Reproduce Behavior section below, make
+	these changes to the form:
+	
+	1. From the Form menu, choose New Property. Type in "testarray[1,1]" (without
+	  quotes) as the name of the new property. Click Add.
+	
+	2. In the Load method of the form, place the following code to populate the
+	  array:
+	
+	        SELECT company FROM customer INTO ARRAY Thisform.testarray ORDER BY 1
+	
+	  A modified version of the above SELECT statement can be used if the
+	  RowSourceType of the combobox is 3-SQL Statement. The modified statement
+	  below would be put in for the RowSource property:
+	
+	        SELECT company FROM customer INTO CURSOR test ORDER BY 1
+	
+	Note that using a RowSourceType of either 3-SQL Statement or 5-Array will change
+	the value in the customer field of the table. This happens because the control
+	source property of the column is set to that field by default when the grid is
+	created. With the RowSourceType of 6-Fields, the customer field is not changed.
+	The combobox acts as a navigation control in this case. This would be redundant
+	since the grid itself can be used as a navigation control.
+	
+	STATUS
+	======
+	
+	Microsoft is researching this problem and will post new information here in the
+	Microsoft Knowledge Base as it becomes available.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Type the following commands in the Visual FoxPro Command window to set the
+	  default folder and create a new form:
+	
+	        SET DEFAULT TO HOME()+"Samples\Data"
+	        CREATE FORM test
+	
+	2. Right-click on the form, and select Data Environment. Right-click in the Data
+	  Environment window, and select Add. Add the Customer table.
+	
+	3. Click on the heading of the table in the Data environment, drag it to the
+	  form, and release the button. After you release the mouse button, a grid
+	  appears on the form.
+	
+	4. Change the ColumnCount property of the grid to 3 or more.
+	
+	5. Right-click the grid, and click Edit.
+	
+	6. Click the combobox tool of the Forms Control toolbar and place it in the
+	  second column of the grid.
+	
+	7. Make the CurrentControl property of the second column equal to the combobox
+	  and also set the Sparse property of the column to false (.F.).
+	
+	8. Select the combobox and set the RowSourceType to 6-Fields and set the
+	  RowSource property to Customer.company, the second field in the table.
+	
+	9. Run the form, click the combobox, and select an item other than the current
+	  item.
+	
+	The error "Record is not locked" will occur. If you click OK, the current record
+	in the grid changes to the record for the item chosen in the combobox. If the
+	fields are saved into an array and the combobox's RecordSourceType property is
+	set to "Array" and the RecordSource is set to the array name, then the error
+	will not occur nor will the record pointer move.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbHWMAC kbvfp 
+	Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac kbVFP300 kbVFP300b kbVFP500 kbVFP500a
+	Version           : MACINTOSH:3.0b; WINDOWS:3.0,3.0b
+	Issue type        : kbprb
+	
+	=============================================================================
+	

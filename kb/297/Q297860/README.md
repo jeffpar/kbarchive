@@ -1,0 +1,375 @@
+---
+layout: page
+title: "Q297860: MS01-044: IIS 5.0 Security and Post-Windows NT 4.0 SP5 IIS 4.0 P"
+permalink: kb/297/Q297860/
+---
+
+## Q297860: MS01-044: IIS 5.0 Security and Post-Windows NT 4.0 SP5 IIS 4.0 P
+
+	Article: Q297860
+	Product(s): Internet Information Server
+	Version(s): 4.0,5.0
+	Operating System(s): 
+	Keyword(s): kbSecurity kbWin2000PreSP3Fix kbgraphxlinkcritical KbSECVulnerability KbSECBulletin KbS
+	Last Modified: 26-APR-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Services version 5.0 
+	- Microsoft Internet Information Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Microsoft has released a rollup package for Internet Information Services (IIS)
+	5.0 and Internet Information Server (IIS) 4.0 that includes the functionality
+	from all security patches released to date for IIS 5.0, and all patches released
+	for IIS 4.0 since Windows NT 4.0 Service Pack 5.
+	
+	This article provides a timeline and the fixes included with each release.
+	
+	MORE INFORMATION
+	================
+	
+	NOTE: These patches do not include fixes for vulnerabilities involving non-IIS
+	products, such as the Front Page Server Extensions and Index Server, even though
+	these products are closely associated with IIS and typically installed on IIS
+	servers. There is, however, one exception for the August 15, 2001 release. The
+	fix for the vulnerability affecting Index Server which is discussed in Microsoft
+	Security Bulletin MS01-033
+	(http://www.microsoft.com/technet/security/bulletin/MS01-033.asp) is included in
+	this patch because of the seriousness of the issue for IIS servers. At the time
+	this article was written, the Microsoft Security Bulletins that discuss these
+	vulnerabilities are as follows:
+	
+	  Microsoft Security Bulletin MS01-043
+	  (http://www.microsoft.com/technet/security/bulletin/MS01-043.asp)
+	
+	  Microsoft Security Bulletin MS01-025
+	  (http://www.microsoft.com/technet/security/bulletin/ms01-025.asp)
+	
+	  Microsoft Security Bulletin MS00-084
+	  (http://www.microsoft.com/technet/security/bulletin/ms00-084.asp)
+	
+	  Microsoft Security Bulletin MS00-006
+	  (http://www.microsoft.com/technet/security/bulletin/ms00-006.asp)
+	
+	NOTE: The fixes for the following vulnerabilities that affect IIS 4.0 are not
+	included in the patch because they require administrative action instead of a
+	software change. Administrators should ensure that in addition to applying this
+	patch, they also take the administrative action discussed in the following
+	bulletins:
+	
+	  Microsoft Security Bulletin MS00-028
+	  (http://www.microsoft.com/technet/security/bulletin/ms00-028.asp)
+	
+	  Microsoft Security Bulletin MS00-025
+	  (http://www.microsoft.com/technet/security/bulletin/ms00-025.asp)
+	
+	  Microsoft Security Bulletin MS99-025
+	  (http://www.microsoft.com/technet/security/bulletin/ms99-025.asp) (which
+	  discusses the same issue as Microsoft Security Bulletin MS98-004)
+	  (http://www.microsoft.com/technet/security/bulletin/ms98-004.asp)
+	
+	  Microsoft Security Bulletin MS99-013
+	  (http://www.microsoft.com/technet/security/bulletin/ms99-013.asp)
+	
+	January 30, 2002
+	----------------
+	
+	Internet Information Services 5.0:
+	
+	To resolve this problem, either obtain the hotfix referenced in this section or
+	Windows 2000 Security Rollup Package 1 (SRP1). For additional information about
+	SRP1, click the article number below to view the article in the Microsoft
+	Knowledge Base:
+	
+	  Q311401 Windows 2000 Security Rollup Package 1 (SRP1), January 2002
+	
+	August 15, 2001
+	---------------
+	
+	For more information on this release, see the following Microsoft Security
+	Bulletin:
+	
+	  http://www.microsoft.com/technet/security/bulletin/ms01-044.asp
+	
+	NOTE: These patches supersede those provided in the following security
+	bulletins:
+	
+	  Microsoft Security Bulletin MS01-033
+	  (http://www.microsoft.com/technet/security/bulletin/MS01-033.asp)
+	
+	  Microsoft Security Bulletin MS01-026
+	  (http://www.microsoft.com/technet/security/bulletin/MS01-026.asp) (May 14,
+	  2001 release of the IIS security rollup package)
+	
+	Internet Information Services 5.0:
+	
+	The following file is available for download from the Microsoft Download Center:
+	
+	  DownloadDownload Q301625_W2K_SP3_x86_en.exe now
+	  (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=32011)
+	
+	NOTE: This patch can be installed on systems running Windows 2000 Service Pack 1
+	or Windows 2000 Service Pack 2. You must reapply the security rollup patch after
+	you install a Windows 2000 Service Pack.
+	
+	Release Date: August 15, 2001
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. After it is posted, the file is housed on
+	secure servers that prevent any unauthorized changes to the file.
+	
+	In addition to the "superceded patches" listed above, this cumulative package
+	contains the fixes discussed in the following Microsoft Knowledge Base
+	articles:
+	
+	  Q294774 IIS loads ISAPI Extension In-process Even When Application is Marked
+	  for High Isolation
+	
+	  Q298340 Patch Available for WebDAV Denial of Service
+	
+	  Q301625 Patch Available for SSI Privilege Elevation Vulnerability
+	
+	  Q304867 Patch Available for MIME Header Denial of Service Vulnerability
+	
+	Internet Information Server 4.0:
+	
+	The following file is available for download from the Microsoft Download Center:
+	
+	  DownloadDownload Q301625i.exe now
+	  (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=32061)
+	
+	  NOTE: Q301625is.exe contains the Symbols files.
+	
+	NOTE: This patch can be installed on systems running Windows NT 4.0 Service Pack
+	5 or Windows NT 4.0 Service Pack 6a. IIS is not intended for use on Windows NT
+	Server 4.0, Terminal Server Edition, and is not supported. Microsoft recommends
+	that customers running IIS 4.0 on Windows NT Server 4.0, Terminal Server
+	Edition, protect their systems by uninstalling IIS 4.0.
+	
+	Release Date: August 15, 2001
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. After it is posted, the file is housed on
+	secure servers that prevent any unauthorized changes to the file.
+	
+	In addition to the "superceded patches" listed above, this cumulative package
+	contains the fixes discussed in the following Microsoft Knowledge Base
+	articles:
+	
+	  Q301625 Patch Available for SSI Privilege Elevation Vulnerability
+	
+	  Q305359 Incorrect Content Length May Cause Web Services to Fail
+	
+	May 14, 2001
+	------------
+	
+	For more information on this release, see the following Microsoft Security
+	Bulletin:
+	
+	  http://www.microsoft.com/technet/security/bulletin/ms01-026.asp
+	
+	Internet Information Services 5.0:
+	
+	To resolve this problem, either obtain the hotfix referenced in this section or
+	the Windows 2000 Post-Service Pack 2 Security Rollup Package 1 (SRP1). For
+	additional information about SRP1, click the article number below to view the
+	article in the Microsoft Knowledge Base:
+	
+	  Q311401 Windows 2000 Post-Service Pack 2 Security Rollup Package 1 (SRP1),
+	  January 2002
+	
+	The following file is available for download from the Microsoft Download Center:
+	
+	  DownloadDownload Q293826_W2K_SP3_x86_en.exe now
+	  (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=29764)
+	
+	NOTE: This patch can be installed on systems running Windows 2000 Gold, Windows
+	2000 Service Pack 1, or Windows 2000 Service Pack 2. You must reapply the
+	security rollup patch after you install a Windows 2000 Service Pack.
+	
+	Release Date: May 14, 2001
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. After it is posted, the file is housed on
+	secure servers that prevent any unauthorized changes to the file.
+	
+	This cumulative package contains the following fixes:
+	
+	  Microsoft Security Bulletin MS01-023
+	  (http://www.microsoft.com/technet/security/bulletin/ms01-023.asp)
+	
+	  Microsoft Security Bulletin MS01-016
+	  (http://www.microsoft.com/technet/security/bulletin/ms01-016.asp)
+	
+	  Microsoft Security Bulletin MS01-014
+	  (http://www.microsoft.com/technet/security/bulletin/ms01-014.asp)
+	
+	  Microsoft Security Bulletin MS01-004
+	  (http://www.microsoft.com/technet/security/bulletin/ms01-004.asp)
+	
+	  Microsoft Security Bulletin MS00-100
+	  (http://www.microsoft.com/technet/security/bulletin/ms00-100.asp)
+	
+	  Microsoft Security Bulletin MS00-086
+	  (http://www.microsoft.com/technet/security/bulletin/ms00-086.asp)
+	
+	  Microsoft Security Bulletin MS00-080
+	  (http://www.microsoft.com/technet/security/bulletin/ms00-080.asp)
+	
+	  Microsoft Security Bulletin MS00-078
+	  (http://www.microsoft.com/technet/security/bulletin/ms00-078.asp)
+	
+	  Microsoft Security Bulletin MS00-060
+	  (http://www.microsoft.com/technet/security/bulletin/ms00-060.asp)
+	
+	  Microsoft Security Bulletin MS00-058
+	  (http://www.microsoft.com/technet/security/bulletin/ms00-058.asp)
+	
+	  Microsoft Security Bulletin MS00-057
+	  (http://www.microsoft.com/technet/security/bulletin/ms00-057.asp)
+	
+	  Microsoft Security Bulletin MS00-044
+	  (http://www.microsoft.com/technet/security/bulletin/ms00-044.asp)
+	
+	  Microsoft Security Bulletin MS00-031
+	  (http://www.microsoft.com/technet/security/bulletin/ms00-031.asp)
+	
+	  Microsoft Security Bulletin MS00-030
+	  (http://www.microsoft.com/technet/security/bulletin/ms00-030.asp)
+	
+	  Microsoft Security Bulletin MS00-023
+	  (http://www.microsoft.com/technet/security/bulletin/ms00-023.asp)
+	
+	  Microsoft Security Bulletin MS00-019
+	  (http://www.microsoft.com/technet/security/bulletin/ms00-019.asp)
+	
+	Internet Information Server 4.0:
+	
+	The following file is available for download from the Microsoft Download Center:
+	
+	  DownloadDownload Q295534i.exe now
+	  (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=29787)
+	
+	  NOTE: Q295534is.exe contains the Symbols files.
+	
+	These fixes are also installed if you apply the Windows NT 4.0 Security Rollup
+	Package (SRP). For additional information on the SRP, click the article number
+	below to view the article in the Microsoft Knowledge Base:
+	
+	  Q299444 Post-Windows NT 4.0 Service Pack 6a Security Rollup Package (SRP)
+	
+	NOTE: This patch can be installed on systems running Windows NT 4.0 Service Pack
+	5 or Windows NT 4.0 Service Pack 6a. IIS is not intended for use on Windows NT
+	Server 4.0, Terminal Server Edition, and is not supported. Microsoft recommends
+	that customers running IIS 4.0 on Windows NT Server 4.0, Terminal Server
+	Edition, protect their systems by uninstalling IIS 4.0.
+	
+	Release Date: May 14, 2001
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. After it is posted, the file is housed on
+	secure servers that prevent any unauthorized changes to the file.
+	
+	This cumulative package contains the following fixes:
+	
+	  Microsoft Security Bulletin MS01-004
+	  (http://www.microsoft.com/technet/security/bulletin/ms01-004.asp)
+	
+	  Microsoft Security Bulletin MS00-100
+	  (http://www.microsoft.com/technet/security/bulletin/ms00-100.asp)
+	
+	  Microsoft Security Bulletin MS00-086
+	  (http://www.microsoft.com/technet/security/bulletin/ms00-086.asp)
+	
+	  Microsoft Security Bulletin MS00-080
+	  (http://www.microsoft.com/technet/security/bulletin/ms00-080.asp)
+	
+	  Microsoft Security Bulletin MS00-078
+	  (http://www.microsoft.com/technet/security/bulletin/ms00-078.asp)
+	
+	  Microsoft Security Bulletin MS00-063
+	  (http://www.microsoft.com/technet/security/bulletin/ms00-063.asp)
+	
+	  Microsoft Security Bulletin MS00-060
+	  (http://www.microsoft.com/technet/security/bulletin/ms00-060.asp)
+	
+	  Microsoft Security Bulletin MS00-057
+	  (http://www.microsoft.com/technet/security/bulletin/ms00-057.asp)
+	
+	  Microsoft Security Bulletin MS00-044
+	  (http://www.microsoft.com/technet/security/bulletin/ms00-044.asp)
+	
+	  Microsoft Security Bulletin MS00-031
+	  (http://www.microsoft.com/technet/security/bulletin/ms00-031.asp)
+	
+	  Microsoft Security Bulletin MS00-030
+	  (http://www.microsoft.com/technet/security/bulletin/ms00-030.asp)
+	
+	  Microsoft Security Bulletin MS00-023
+	  (http://www.microsoft.com/technet/security/bulletin/ms00-023.asp)
+	
+	  Microsoft Security Bulletin MS00-019
+	  (http://www.microsoft.com/technet/security/bulletin/ms00-019.asp)
+	
+	  Microsoft Security Bulletin MS00-018
+	  (http://www.microsoft.com/technet/security/bulletin/ms00-018.asp)
+	
+	  Microsoft Security Bulletin MS99-061
+	  (http://www.microsoft.com/technet/security/bulletin/ms99-061.asp)
+	
+	  Microsoft Security Bulletin MS99-058
+	  (http://www.microsoft.com/technet/security/bulletin/ms99-058.asp)
+	
+	  Microsoft Security Bulletin MS99-053
+	  (http://www.microsoft.com/technet/security/bulletin/ms99-053.asp)
+	
+	  Microsoft Security Bulletin MS99-039
+	  (http://www.microsoft.com/technet/security/bulletin/ms99-039.asp)
+	
+	  Microsoft Security Bulletin MS99-029
+	  (http://www.microsoft.com/technet/security/bulletin/ms99-029.asp)
+	
+	  Microsoft Security Bulletin MS99-022
+	  (http://www.microsoft.com/technet/security/bulletin/ms99-022.asp)
+	
+	  Microsoft Security Bulletin MS99-019
+	  (http://www.microsoft.com/technet/security/bulletin/ms99-019.asp)
+	
+	  Microsoft Security Bulletin MS99-003
+	  (http://www.microsoft.com/technet/security/bulletin/ms99-003.asp)
+	
+	Additional query words: security_patch iissrp kbWin2000srp1
+	
+	======================================================================
+	Keywords          : kbSecurity kbWin2000PreSP3Fix kbgraphxlinkcritical KbSECVulnerability KbSECBulletin KbSECHack 
+	Technology        : kbiisSearch kbiis500 kbiis400
+	Version           : :4.0,5.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

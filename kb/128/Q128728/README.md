@@ -1,0 +1,84 @@
+---
+layout: page
+title: "Q128728: How Visual FoxPro Organizes and Accesses Wizards"
+permalink: kb/128/Q128728/
+---
+
+## Q128728: How Visual FoxPro Organizes and Accesses Wizards
+
+	Article: Q128728
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:3.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 12-FEB-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 3.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes how Visual FoxPro knows that a Wizards exists and when to
+	use it.
+	
+	MORE INFORMATION
+	================
+	
+	When you install Visual FoxPro, the _Wizard system memory variable is
+	initialized to point to the application that will function as the main
+	controller for all the wizards. By default, the variable contains WIZARD.APP,
+	installed in the main Visual FoxPro directory. This application is activated
+	each time you choose to run a wizard.
+	
+	WIZARD.APP uses a registration table named WIZARD.DBF to store Information
+	regarding the various wizards and to determine which Wizard to run. This table
+	has the following structure:
+	
+	Field    Field Name    Type        Width  Dec  Index  Collate  Nulls
+	--------------------------------------------------------------------
+	   1    NAME          Character      45                          No
+	   2    DESCRIPT      Memo            4                          No
+	   3    BITMAP        Memo            4                          No
+	   4    TYPE          Character      20                          No
+	   5    PROGRAM       Memo            4                          No
+	   6    CLASSLIB      Memo            4                          No
+	   7    CLASSNAME     Memo            4                          No
+	   8    PARMS         Memo            4                          No
+	** Total **                           90
+	
+	Each record in WIZARD.DBF represents a wizard. The contents of the Name field is
+	used as the text for the Wizard Selection dialog.
+	
+	The Type field determines the Visual FoxPro File Type that the Wizard is
+	associated with. For example, if the Type is REPORT, then that Wizard will be
+	opened whenever you choose to create a new Report. If two or more wizards are of
+	the same Type, the Wizard Selection dialog is displayed when you choose to run a
+	wizard. The dialog lists the various wizards for the specific file type.
+	
+	The contents of the Description field are displayed in the Description box of the
+	Wizard Selection dialog.
+	
+	When the user runs a certain wizard, WIZARD.APP runs the program specified in the
+	Program field of the wizard. If the program is not in the Wizards directory, you
+	must specify the path. If the Program field is blank, an instance of the class,
+	as specified by the Classlib and Classname fields, is created.
+	
+	The Parms field can be used to specify parameters sent to the Wizard when it is
+	executed. For example, WZREPORT.APP contains the Report, One-To-Many Report, and
+	Group/total Report Wizards. Therefore, depending on which wizard you select, the
+	Parms field is used to pass REPORT, 1MANY, or the GROUP parameters respectively
+	to WZREPORT.APP to determine which specific Report Wizard is to be activated.
+	
+	Additional query words: VFoxWin
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+	Version           : WINDOWS:3.0
+	
+	=============================================================================
+	

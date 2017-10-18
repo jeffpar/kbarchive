@@ -1,0 +1,77 @@
+---
+layout: page
+title: "Q196606: APPC DLL Has A Hardcoded Limit of 4 KB GDS Data Size"
+permalink: kb/196/Q196606/
+---
+
+## Q196606: APPC DLL Has A Hardcoded Limit of 4 KB GDS Data Size
+
+	Article: Q196606
+	Product(s): Microsoft SNA Server
+	Version(s): WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 13-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 2.11, 2.11 SP1, 2.11 SP2, 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 4.0, 4.0 SP1 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The IBM host will reject General Data Stream (GDS) data that is larger than the
+	4 KB increments hardcoded in the Appc.dll file.
+	
+	MORE INFORMATION
+	================
+	
+	The application writes the data message and indicates the length of the data,
+	but the APPC .dll file formats the message into LU 6.2 data format. The data
+	flow should be similar to the following:
+	
+	- The CPIC application calls CMSEND, passes a pointer to the data, and sets the
+	  send length to 8872.
+	
+	- The CPIC .dll file calls the MC_SEND_DATA function, passes a pointer to the
+	  data, and sets the send length to 8872.
+	
+	- The APPC .dll file formats the RU with the Logical Length size and GDS header
+	  information (to indicate LU 6.2 application data) and includes the
+	  application data (following IBM LU 6.2 data formatting specifications):
+	
+	  9000 12FF <first 4 KB of data>
+	  9000 <next 4 KB of data>
+	  02B0 <last 688 bytes of data>
+	
+	The Logical Length fields (9000, 9000, 02B0) and GDS ID (12FF) account for 8
+	additional bytes, making the full data sent equal to 8880 bytes.
+	
+	The data is split into the RU size, and segmented within the maximum frame size
+	(265 bytes on this Synchronous Data Link Control (SDLC) connection).
+	
+	The host stack does not recognize the continuation bit, therefore, any data
+	larger than 4 KB that is sent, is rejected.
+	
+	The APPC .dll file is hardcoded to send application GDS data sizes of 4 KB.
+	
+	
+	REFERENCES
+	==========
+	
+	IBM SNA Format and Protocol Reference Manual: Architectural Logic for LU Type
+	6.2 (IBM #SC30-3269), Chapter 2: GDS Variables.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ211 kbSNAServ400 kbSNAServ211SP1 kbSNAServ211SP2 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ300SP2
+	Version           : WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
+	Issue type        : kbinfo
+	Solution Type     : kbnofix
+	
+	=============================================================================
+	

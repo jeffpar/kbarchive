@@ -1,0 +1,217 @@
+---
+layout: page
+title: "Q258402: Baseball 2001: Black Screen When Starting Game Second Time"
+permalink: kb/258/Q258402/
+---
+
+## Q258402: Baseball 2001: Black Screen When Starting Game Second Time
+
+	Article: Q258402
+	Product(s): Microsoft Home Games
+	Version(s): 1.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 12-NOV-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Baseball 2001, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you start Microsoft Baseball 2001 version 1.0, quit the program, and then
+	try to start the program again, you may receive a black screen.
+	
+	CAUSE
+	=====
+	
+	This behavior can occur if any of the following conditions is true:
+	
+	- Your primary video adapter has 2 megabytes (MB) or less of video memory
+	  installed.
+	
+	- Your video driver is outdated.
+	
+	- Your video adapter does not support Microsoft DirectDraw.
+	
+	- The Hardware Acceleration setting on your computer is not set to Full.
+	
+	- An incorrect or duplicate monitor is installed on your computer.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, use the following methods in the order in which they are
+	presented.
+	
+	Upgrade Your Video Adapter
+	--------------------------
+	
+	To run Baseball 2001, your computer must have a video adapter with at least 2 MB
+	of video memory installed. If your video adapter does not have 2 MB of video
+	memory, install additional video memory, or upgrade to a video adapter that has
+	at least 2 MB of video memory.
+	
+	To estimate the approximate amount of video memory that is installed on your
+	computer:
+	
+	1. Click Start, and then click Run.
+	
+	2. In the Open box, type "dxdiag" (without the quotation marks).
+	
+	3. Click OK.
+	
+	4. Click the Display tab.
+	
+	5. Under Device, verify the amount of memory that is listed next to "Approx.
+	  Total Memory".
+	
+	  NOTE: If a video accelerator card is installed on your computer, a Display 1
+	  and a Display 2 tab are available. Click either tab to verify the approximate
+	  total memory.
+	
+	6. Click Exit.
+	
+	If the approximate total memory is more than 2 MB, and the behavior continues to
+	occur, contact the manufacturer of your video adapter to determine how to
+	resolve this issue.
+	
+	Obtain and Install an Updated Video Driver
+	------------------------------------------
+	
+	Contact your hardware manufacturer about how to obtain and install the latest
+	version of the video driver for your video adapter.
+	
+	For information about how to contact your video card manufacturer, click the
+	appropriate article number in the following list to view the article in the
+	Microsoft Knowledge Base:
+	
+	  Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+	
+	  Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+	
+	  Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+	
+	Increase the Hardware Acceleration Setting to Full
+	--------------------------------------------------
+	
+	To increase the Hardware Acceleration setting to Full:
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click System.
+	
+	3. On the Performance tab, click Graphics.
+	
+	4. Move the Hardware Acceleration slider all the way to the right (the Full
+	  acceleration setting).
+	
+	5. Click OK, and then click Close.
+	
+	6. When you are prompted to restart your computer, click Yes.
+	
+	Make Sure That the Correct Monitor Is Installed
+	-----------------------------------------------
+	
+	To make sure that the correct monitor is installed on your computer:
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click Display.
+	
+	3. On the Settings tab, click Change Display Type.
+	
+	  NOTE: If you are using Microsoft Windows 95 OEM Service Release 2 (OSR2),
+	  click Advanced Properties. If you are using Microsoft Windows 98, click
+	  Advanced.
+	
+	4. Under Monitor, click Change.
+	
+	  NOTE: If you are using OSR2 or Windows 98, click the Monitor tab, and then
+	  click Change.
+	
+	5. In the Manufacturers box, click the manufacturer of your monitor.
+	
+	6. In the Models box, click the model of your monitor.
+	
+	7. Click OK, click Close, and then click OK.
+	
+	8. If you are prompted to restart the computer, click Yes.
+	
+	Remove Duplicate Monitors
+	-------------------------
+	
+	Remove any duplicate monitors that are installed by Windows:
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click System.
+	
+	3. On the Device Manager tab, click "View devices by type".
+	
+	4. Click the plus sign (+) next to Monitors to expand the branch.
+	
+	5. Note the properties for each device that is listed in the branch. To do this:
+	
+	  a. Click a device, and then click Properties.
+	
+	  b. Click each tab in the Device Properties dialog box, and then record the
+	     device information and settings.
+	
+	  c. Click OK.
+	
+	6. Click OK, and then close Control Panel.
+	
+	7. Restart Windows in Safe mode. To do this, use the appropriate method for your
+	  version of Microsoft Windows.
+	
+	  Microsoft Windows 98 and Microsoft Windows Millennium Edition (Me):
+	
+	  Restart your computer, press and hold down CTRL when your computer completes
+	  the Power On Self Test (POST), and then select Safe Mode on the Startup
+	  menu.
+	
+	  Microsoft Windows 95:
+	
+	  Restart the computer. When you see the "Starting Windows 95" message, press
+	  F8, and then select Safe Mode on the Startup menu.
+	
+	8. When Windows starts in Safe mode, click OK.
+	
+	9. Click Start, point to Settings, and then click Control Panel.
+	
+	10. Double-click System.
+	
+	11. On the Device Manager tab, click "View devices by type".
+	
+	12. Click the plus sign (+) next to Monitors to expand the branch.
+	
+	13. Verify that there are no changes in the list of devices in the branch. If
+	  you see a device that is not in the list of devices that you noted in step
+	  5, click the new device, and then click Remove. Repeat this step for each
+	  device in the branch that is not in the list of devices that you noted in
+	  step 5.
+	
+	  NOTE: If you see new copies of a device that is in the list of devices you
+	  noted in step 5, verify the properties of each copy of the device. If the
+	  properties for the device match the properties that you recorded, keep the
+	  device. If the properties for the device do not match the properties that
+	  you recorded, remove the device.
+	
+	14. Click OK.
+	
+	15. When you are prompted to restart the computer, do so.
+	
+	Additional query words: kbimu homegame msgame baseball 2001 black screen bb2001 game 2nd
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbHomeProdSearch _IKkbbogus kbGamesSearch kbBaseballSearch kbBaseBall2001
+	Version           : :1.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

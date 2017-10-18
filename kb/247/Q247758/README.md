@@ -1,0 +1,68 @@
+---
+layout: page
+title: "Q247758: INFO: No Padding of Parameters Done by SQL Driver Prior Ver 3.7x"
+permalink: kb/247/Q247758/
+---
+
+## Q247758: INFO: No Padding of Parameters Done by SQL Driver Prior Ver 3.7x
+
+	Article: Q247758
+	Product(s): Open Database Connectivity (ODBC)
+	Version(s): 2.5,2.6,3.7
+	Operating System(s): 
+	Keyword(s): kbODBC kbGrpDSVCDB kbGrpDSMDAC kbDSupport kbMDAC250 kbMDAC260 kbmdac270
+	Last Modified: 23-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft ODBC Driver for SQL Server, version 3.7 
+	- Microsoft Data Access Components versions 2.5, 2.6, 2.7 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	SQLBindParameter() in the SQL Server ODBC driver version 3.7x behave differently
+	from previous releases of the driver. With SQL Server ODBC drivers prior to
+	version 3.7x, parameter values specified with SQLBindParameter() are not padded
+	with spaces even when the SQL data type is SQL_CHAR.
+	
+	MORE INFORMATION
+	================
+	
+	Behavior of SQL Server ODBC driver version 3.7.x
+	------------------------------------------------
+	
+	SQLBindParameter() with SQL data type of "SQL_CHAR":
+	
+	When you bind a parameter with SQLBindParameter() and the column size specified
+	is greater than the actual length of the parameter value, the value is padded
+	with spaces if the SQL data type is SQL_CHAR.
+	
+	This causes a query like "select * from table1 where field1 like 'F%' " to return
+	"No Data Found" even though there are matching values in the table. This is
+	because the LIKE clause value is padded with as many spaces to match the column
+	size specified.
+	
+	SQLBindParameter() with SQL data type of "SQL_VARCHAR":
+	
+	No padding is done as expected and correct results are obtained.
+	
+	Behavior of older drivers (prior to 3.7x)
+	-----------------------------------------
+	
+	No padding is done in either case (SQL_CHAR or SQL_VARCHAR). So, the earlier
+	query example gives the matching results irrespective of SQL data type being
+	SQL_CHAR or SQL_VARCHAR with SQL Server ODBC driver version 3.6x and lower.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbODBC kbGrpDSVCDB kbGrpDSMDAC kbDSupport kbMDAC250 kbMDAC260 kbmdac270 
+	Technology        : kbSQLServSearch kbAudDeveloper kbODBCSearch kbMDACSearch kbMDAC250 kbMDAC260 kbODBCSQLServ370 kbMDAC270
+	Version           : :2.5,2.6,3.7
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

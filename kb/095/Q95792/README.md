@@ -1,0 +1,183 @@
+---
+layout: page
+title: "Q95792: Services for Macintosh 1.0a Fix List"
+permalink: kb/095/Q95792/
+---
+
+## Q95792: Services for Macintosh 1.0a Fix List
+
+	Article: Q95792
+	Product(s): Microsoft LAN Manager
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 30-JUL-2001
+	
+	SUMMARY
+	=======
+	
+	This article contains the Microsoft LAN Manager Services for Macintosh (SFM)
+	1.0a fixed bug list. This is not a comprehensive list; it contains bugs fixed
+	between LAN Manager SFM versions 1.0 and 1.0a. Note that some bugs have
+	associated changes in software design (CSDs).
+	
+	MORE INFORMATION
+	================
+	
+	BUG #: lm2_1:0198
+	-----------------
+	
+	CSD #: CSD00.003
+	
+	Bug Description: Macfile/macprint servers sometimes drop out of zones and can't
+	get back in unless the server is rebooted.
+	
+	Fix Description: The logic was modified to be more persistent on rejoining
+	zones.
+	
+	Component affected: ATALK2.OS2
+	
+	BUG #: lm2_1:0415, lm2_1:0767, lm2_1:1175 and lm2_1:1636
+	--------------------------------------------------------
+	
+	CSD #: CSD00.004
+	
+	Bug Description: Servers experience various memory allocation problems (ATK0501
+	and AFP0294), including running out of selectors.
+	
+	Components affected: AFP.EXE, ATALK1.OS2, and ATALK2.OS2
+	
+	BUG #: lm2_1:0672
+	-----------------
+	
+	CSD #: CSD00.006
+	
+	Bug Description: From lmsfm client, you get an access denied error when
+	attempting to copy a file from a RO volume to a write-permit volume, even though
+	you can read the file correctly.
+	
+	Fix Description: The permissions checking on the appropriate "containers" was
+	fixed when doing this kind of operation.
+	
+	Component affected: AFP.EXE
+	
+	BUG #: lm2_1:0695
+	-----------------
+	
+	CSD #: CSD00.010
+	
+	Bug Description: Spooled print jobs get deleted from queue or stuck in queue if
+	printer is unplugged from network or powered down.
+	
+	Fix Description: The architecture of the despooler thread was reworked, with
+	improved error handling and recovery.
+	
+	Component affected: MACDS.EXE
+	
+	BUG #: lm2_1:0733
+	-----------------
+	
+	CSD #: CSD00.005
+	
+	Bug Description: The burned-in network address is ALWAYS used, ignoring any
+	overriding address if specified.
+	
+	Fix Description: The "effective" address is now used, not the permanent address.
+	
+	Component affected: ATALK1.OS2 AND ATALK2.OS2
+	
+	BUG #: lm2_1:0822
+	-----------------
+	
+	CSD #: N/A
+	
+	Bug Description: The Mac setup requires at least one card be bound to appletalk
+	prior to exiting. This causes reconfiguration problems down the road because the
+	user never really has an opportunity to unbind.
+	
+	Fix Description: Mac setup no longer requires the network card to be bound to
+	Appletalk when exiting, but simply produces a warning message to the user.
+	
+	Component affected: Mac SETUP.EXE and SETUP.MSG
+	
+	BUG #: lm2_1:0997
+	-----------------
+	
+	CSD #:CSD00.007
+	
+	Bug Description: Incorrect ACLs get attached to a file that has been moved by an
+	afp client.
+	
+	Component affected: AFP.EXE
+	
+	BUG #: lm2_1:1601 and lm2_1:2691
+	--------------------------------
+	
+	CSD #: CSD00.012
+	
+	Bug Description: Spooler files are not getting deleted after printing.
+	
+	Fix Description: The file handle processing was improved by forcing null file
+	handles closed (if necessary) when jobs are removed.
+	
+	Component affected: MACDS.EXE
+	
+	BUG #: lm2_1:2141
+	-----------------
+	
+	CSD #: CSD00.008
+	
+	Bug Description: Source routing frames are rejected, preventing any appletalk
+	client from connecting to a server that is using ReceiveChain() in its NDIS TR
+	driver.
+	
+	Component affected: ATALK2.OS2
+	
+	BUG #: lm2_1:2189
+	-----------------
+	
+	CSD #: N/A
+	
+	Bug Description: Incorrect error codes are returned for two OpenFile cases.
+	
+	Fix Description: The error codes were corrected to return -54 and -45 instead of
+	-5000 as appropriate.
+	
+	Component affected: AFP.EXE
+	
+	BUG #: lm2_1:2254 and lm2_1:2259
+	--------------------------------
+	
+	CSD #: N/A
+	
+	Bug Description: If a file that has a reserved word (nul, LPT1, LPT2, con, etc)
+	as it's name gets created in a directory on the server that is also a Mac
+	volume, all the files in that volume become invisible to the Macintosh after
+	approximately 20 seconds. The Mac can copy files into the volume but they will
+	eventually disappear. If you attempt to copy a file of the same name as one
+	already on the volume, an error is returned stating that the file already
+	exists.
+	
+	Fix Description: Files with reserved word names are now filtered out.
+	
+	Component affected: AFP.EXE
+	
+	BUG #: lm2_1:2563
+	-----------------
+	
+	CSD #: N/A
+	
+	Bug Description: Mac print jobs are submitted with a blank "Notify field" in
+	prjinfo, causing popup to appear at local server, although it's a remote job.
+	This results in very undesirable situations, particularly for headless or
+	physically secure servers.
+	
+	Component affected: MACPS.EXE
+	
+	Additional query words: 2.20 SFM1.0a fixedlist
+	
+	======================================================================
+	Keywords          :  
+	
+	=============================================================================
+	

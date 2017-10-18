@@ -1,0 +1,174 @@
+---
+layout: page
+title: "Q166957: WD97: Problems with Mail Merge Main Documents Saved as RTF"
+permalink: kb/166/Q166957/
+---
+
+## Q166957: WD97: Problems with Mail Merge Main Documents Saved as RTF
+
+	Article: Q166957
+	Product(s): Word 97 for Windows
+	Version(s): WINDOWS:97
+	Operating System(s): 
+	Keyword(s): kbinterop winword word97 kbmerge
+	Last Modified: 14-NOV-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	After a mail merge main document has been saved in Rich Text Format (RTF) or
+	Word 6.0/95 format, you may experience one or both of the following problems.
+	
+	Case 1: Error Message Opening the File
+	--------------------------------------
+	
+	When opening the file, you may receive the following message:
+	
+	  <file name>.rtf is a mail merge main document. Word cannot find its
+	  data source.
+	
+	This message may be followed by:
+	
+	  <file name>.rtf is a mail merge main document. Word cannot find its
+	  header source.
+	
+	NOTE: These error messages seem to occur most often when opening a mailing label
+	main merge document in Microsoft Word 6.x for the Macintosh or Microsoft Word
+	for Windows 95, version 7.x. But they may occur at other times.
+	
+	Case 2: Merge Type Changed
+	--------------------------
+	
+	Once the file is opened, the merge type of the main document is changed to "Form
+	Letters."
+	
+	NOTE: This problem occurs regardless of which merge type the mail merge main
+	document is set to initially.
+	
+	WORKAROUND
+	==========
+	
+	To work around this problem, use the appropriate method for your situation.
+	
+	Method 1: If You Receive the Error Message When You Open the File
+	-----------------------------------------------------------------
+	
+	To find the data source, follow these steps:
+	
+	1. Click Find Data Source.
+	
+	2. Select the data file associated with the mail merge main document.
+	
+	3. Click Open.
+	
+	4. If the following message appears:
+	
+	  <file name>.rtf is a mail merge main document. Word cannot find its
+	  header source.
+	
+	  click Options.
+	
+	5. In the next dialog box, click Remove Data/Header Source.
+	
+	Method 2: If the Merge Type Is Changed
+	--------------------------------------
+	
+	Use the appropriate method for your situation.
+	
+	Form Letters or Catalogs:
+	
+	For form letters or catalog merge types, follow these steps:
+	
+	1. On the Tools menu, click Mail Merge.
+	
+	2. In the Mail Merge Helper, click Create, and then click either Form Letters or
+	  Catalog.
+	
+	  You receive the following message:
+	
+	  You can change <file name>.rtf from form letters to <merge type>
+	  or you can create a new main document.
+	
+	3. Click "Change Document Type."
+	
+	  The document "Merge Type" is now shown correctly in the Mail Merge Helper.
+	
+	Envelopes or Mailing Labels:
+	
+	For Envelopes or Mailing Labels merge types, follow these steps:
+	
+	1. On the Tools menu, click Mail Merge.
+	
+	2. In the Mail Merge Helper, click Create, and then click either Envelopes or
+	  Mailing Labels.
+	
+	  You receive the following message:
+	
+	  You can change <file name>.rtf from form letters to mailing labels or
+	  you can create a new main document.
+	
+	3. Click "Change Document Type."
+	
+	  This may activate the Setup button (in step 1 Main Document) which disables
+	  the Merge button (in step 3 "Merge the Data with the document"). To perform a
+	  mail merge if the Merge Button is disabled, use either of the following
+	  methods.
+	
+	  Use the Mail Merge Toolbar
+	  --------------------------
+	
+	  a. Click Close to close the Mail Merge Helper.
+	
+	  b. Click the "Merge to New Document" icon on the Mail Merge Toolbar.
+	
+	  Use the Mail Merge Helper
+	  -------------------------
+	
+	  a. Click Setup.
+	
+	  b. Select the Product Number and click OK.
+	
+	  c. Insert your merge fields and click OK.
+	
+	     You receive the following message:
+	
+	  This mail merge main document is not empty. Continuing will replace all text
+	  in this document with new text.
+	
+	  d. Click OK.
+	
+	  NOTE: You may want to save your mail merge main document in Word format to
+	  prevent this problem from reoccurring.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the versions of Microsoft Word
+	listed at the beginning of this article.
+	
+	MORE INFORMATION
+	================
+	
+	For additional information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q161978 WD97: RTF Format Given to File Send in Word 6.0/95
+	
+	  Q162602 WD: Questions About Saving in the Word 6.0/95 File Format
+	
+	Additional query words: 8.0 8.00
+	
+	======================================================================
+	Keywords          : kbinterop winword word97 kbmerge 
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : WINDOWS:97
+	Issue type        : kbbug
+	
+	=============================================================================
+	

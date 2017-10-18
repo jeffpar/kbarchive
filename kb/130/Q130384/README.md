@@ -1,0 +1,175 @@
+---
+layout: page
+title: "Q130384: Critical System Files Installed with Visual FoxPro 3.0 Setup"
+permalink: kb/130/Q130384/
+---
+
+## Q130384: Critical System Files Installed with Visual FoxPro 3.0 Setup
+
+	Article: Q130384
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:3.0
+	Operating System(s): 
+	Keyword(s): kbsetup kbvfp300
+	Last Modified: 04-AUG-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 3.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article lists the critical system files, including their sizes and
+	versions, that are installed during the Visual FoxPro Setup on each platform.
+	
+	MORE INFORMATION
+	================
+	
+	NOTE: The file names on the setup disks do not exactly match the file names
+	listed below that are installed onto the hard disk.
+	
+	The Visual FoxPro Setup installs only the newer versions of files except where no
+	version stamp exists for a file. If no version stamp exists the Setup program
+	looks at the date to determine if the file should be installed. If the current
+	file has no version, and the Visual FoxPro file does, the Visual FoxPro file is
+	installed.
+	
+	There are two versions of the MSVCRT2<x>.DLL and CTL3D32.DLL files.
+	
+	The version of MSVCRT2<x>.DLL for Window for Workgroups is named
+	MSVCRT21.DLL, and has a file size of 244,726 bytes. The Windows NT version is
+	named MSCVRT20.DLL, and has a file size of 250,368 bytes.
+	
+	A Professional Version installation will also have copies of all these files in
+	several subdirectories of Visual FoxPro. The Setup Wizard uses them to create
+	distribution disks.
+	
+	Windows for Workgroups
+	----------------------
+	
+	File Name      Directory                 Filesize   Version
+	
+	COMPOBJ.DLL    \WINDOWS\SYSTEM\            109056   2.3.125.142
+	CTL3D32.DLL    \WINDOWS\SYSTEM\             28672   2.0.5.0
+	CTL3DV2.DLL    \WINDOWS\SYSTEM\             21648   2.0.5.0
+	MFCANS32.DLL   \WINDOWS\SYSTEM\            149504   3.2.0.0
+	MSVCRT10.DLL   \WINDOWS\SYSTEM\            210944
+	MSVCRT20.DLL   \WINDOWS\SYSTEM\            244736   2.10.0.0
+	ODBCCP32.DLL   \WINDOWS\SYSTEM\              5632
+	OLE2.DLL       \WINDOWS\SYSTEM\            304640   2.3.125.142
+	OLE2.REG       \WINDOWS\SYSTEM\             27397
+	OLE2CONV.DLL   \WINDOWS\SYSTEM\             57328   2.1.0.1
+	OLE2DISP.DLL   \WINDOWS\SYSTEM\            163408   2.3.3019.1
+	OLE2NLS.DLL    \WINDOWS\SYSTEM\            124512   2.3.3019.1
+	OLE2PROX.DLL   \WINDOWS\SYSTEM\             51712   2.3.125.142
+	OLECLI.DLL     \WINDOWS\SYSTEM\             82944   1.32.0.0
+	STDOLE.TLB     \WINDOWS\SYSTEM\              5472   2.3.3019.1
+	STORAGE.DLL    \WINDOWS\SYSTEM\            157696   2.3.125.140
+	TYPELIB.DLL    \WINDOWS\SYSTEM\            177744   2.3.3019.1
+	VSHARE.386     \WINDOWS\SYSTEM\             14933
+	W32SYS.DLL     \WINDOWS\SYSTEM\             12064   1.25.142.0
+	WIN32S16.DLL   \WINDOWS\SYSTEM\            161792   1.25.142.0
+	WINMM16.DLL    \WINDOWS\SYSTEM\             29184   1.25.139.0
+	BIG5.NLS       \WINDOWS\SYSTEM\WIN32S\      66736
+	COMDLG32.DLL   \WINDOWS\SYSTEM\WIN32S\       5120   1.25.142.0
+	CRTDLL.DLL     \WINDOWS\SYSTEM\WIN32S\     209152   3.50.807.139
+	CTYPE.NLS      \WINDOWS\SYSTEM\WIN32S\       6768
+	KSC.NLS        \WINDOWS\SYSTEM\WIN32S\      30256
+	L_INTL.NLS     \WINDOWS\SYSTEM\WIN32S\       7142
+	LOCALE.NLS     \WINDOWS\SYSTEM\WIN32S\      54694
+	LZ32.DLL       \WINDOWS\SYSTEM\WIN32S\       5120   1.25.142.0
+	NETAPI32.DLL   \WINDOWS\SYSTEM\WIN32S\      11776   1.25.142.0
+	NTMSG.DLL      \WINDOWS\SYSTEM\WIN32S\     106496   3.50.795.1
+	OLE2THK.DLL    \WINDOWS\SYSTEM\WIN32S\      25088   2.3.125.142
+	OLE32.DLL      \WINDOWS\SYSTEM\WIN32S\     366592   2.3.125.142
+	OLEAUT32.DLL   \WINDOWS\SYSTEM\WIN32S\     229648   2.10.3019.1
+	OLECLI32.DLL   \WINDOWS\SYSTEM\WIN32S\      19968   1.25.139.0
+	OLESVR32.DLL   \WINDOWS\SYSTEM\WIN32S\      10752   1.25.139.0
+	P_037.NLS      \WINDOWS\SYSTEM\WIN32S\       2082
+	P_10000.NLS    \WINDOWS\SYSTEM\WIN32S\       3874
+	P_10001.NLS    \WINDOWS\SYSTEM\WIN32S\      87586
+	P_10006.NLS    \WINDOWS\SYSTEM\WIN32S\       3106
+	P_10007.NLS    \WINDOWS\SYSTEM\WIN32S\       3106
+	P_10029.NLS    \WINDOWS\SYSTEM\WIN32S\       3362
+	P_10079.NLS    \WINDOWS\SYSTEM\WIN32S\       3618
+	P_10081.NLS    \WINDOWS\SYSTEM\WIN32S\       4130
+	P_1026.NLS     \WINDOWS\SYSTEM\WIN32S\       2082
+	P_1250.NLS     \WINDOWS\SYSTEM\WIN32S\       5410
+	P_1251.NLS     \WINDOWS\SYSTEM\WIN32S\       3874
+	P_1252.NLS     \WINDOWS\SYSTEM\WIN32S\       5410
+	P_1253.NLS     \WINDOWS\SYSTEM\WIN32S\       4130
+	P_1254.NLS     \WINDOWS\SYSTEM\WIN32S\       5410
+	P_1255.NLS     \WINDOWS\SYSTEM\WIN32S\       3106
+	P_1256.NLS     \WINDOWS\SYSTEM\WIN32S\       3106
+	P_1257.NLS     \WINDOWS\SYSTEM\WIN32S\       2850
+	P_437.NLS      \WINDOWS\SYSTEM\WIN32S\       5922
+	P_500.NLS      \WINDOWS\SYSTEM\WIN32S\       2082
+	P_737.NLS      \WINDOWS\SYSTEM\WIN32S\       4130
+	P_775.NLS      \WINDOWS\SYSTEM\WIN32S\       5922
+	P_850.NLS      \WINDOWS\SYSTEM\WIN32S\       5922
+	P_852.NLS      \WINDOWS\SYSTEM\WIN32S\       5922
+	P_855.NLS      \WINDOWS\SYSTEM\WIN32S\       4386
+	P_857.NLS      \WINDOWS\SYSTEM\WIN32S\       5922
+	P_860.NLS      \WINDOWS\SYSTEM\WIN32S\       5922
+	P_861.NLS      \WINDOWS\SYSTEM\WIN32S\       5922
+	P_862.NLS      \WINDOWS\SYSTEM\WIN32S\       5922
+	P_863.NLS      \WINDOWS\SYSTEM\WIN32S\       5922
+	P_864.NLS      \WINDOWS\SYSTEM\WIN32S\       4642
+	P_865.NLS      \WINDOWS\SYSTEM\WIN32S\       5922
+	P_866.NLS      \WINDOWS\SYSTEM\WIN32S\       4386
+	P_869.NLS      \WINDOWS\SYSTEM\WIN32S\       4386
+	P_875.NLS      \WINDOWS\SYSTEM\WIN32S\       2338
+	P_932.NLS      \WINDOWS\SYSTEM\WIN32S\      87586
+	P_936.NLS      \WINDOWS\SYSTEM\WIN32S\     103970
+	P_949.NLS      \WINDOWS\SYSTEM\WIN32S\     108578
+	P_950.NLS      \WINDOWS\SYSTEM\WIN32S\     130594
+	PRC.NLS        \WINDOWS\SYSTEM\WIN32S\      28052
+	PRCP.NLS       \WINDOWS\SYSTEM\WIN32S\      28052
+	SCK16THK.DLL   \WINDOWS\SYSTEM\WIN32S\       9216   1.25.142.0
+	SHELL32.DLL    \WINDOWS\SYSTEM\WIN32S\       7168   1.25.142.0
+	SORTKEY.NLS    \WINDOWS\SYSTEM\WIN32S\     262148
+	SORTTBLS.NLS   \WINDOWS\SYSTEM\WIN32S\       3514
+	STDOLE32.TLB   \WINDOWS\SYSTEM\WIN32S\       7168   2.10.3018.1
+	UNICODE.NLS    \WINDOWS\SYSTEM\WIN32S\      34016
+	VERSION.DLL    \WINDOWS\SYSTEM\WIN32S\       4608   1.25.142.0
+	W32S.386       \WINDOWS\SYSTEM\WIN32S\      36583
+	W32SCOMB.DLL   \WINDOWS\SYSTEM\WIN32S\     223232   1.25.142.0
+	W32SKRNL.DLL   \WINDOWS\SYSTEM\WIN32S\      84480   1.25.142.0
+	WIN32S.EXE     \WINDOWS\SYSTEM\WIN32S\        880   1.25.142.0
+	WINMM.DLL      \WINDOWS\SYSTEM\WIN32S\      69724   3.50.807.139
+	WINSPOOL.DRV   \WINDOWS\SYSTEM\WIN32S\       7680   1.25.139.0
+	WSOCK32.DLL    \WINDOWS\SYSTEM\WIN32S\      13824   1.25.142.0
+	XJIS.NLS       \WINDOWS\SYSTEM\WIN32S\      28284
+	
+	Windows NT
+	----------
+	
+	File Name      Directory                 Filesize   Version
+	
+	CTL3D32.DLL    \WINNT35\SYSTEM32\           26624   2.26.0.0
+	CTL3DV2.DLL    \WINNT35\SYSTEM\             21648   2.0.5.0
+	MFCANS32.DLL   \WINNT35\SYSTEM32\          149504   3.2.0.0
+	MSVCRT10.DLL   \WINNT35\SYSTEM32\          210944
+	MSVCRT20.DLL   \WINNT35\SYSTEM32\          250368   2.10.0.0
+	
+	Windows 95
+	----------
+	
+	File Name      Directory                 Filesize   Version
+	
+	CTL3DV2.DLL    \WINDOWS\SYSTEM\             21648   2.0.5.0
+	MFCANS32.DLL   \WINDOWS\SYSTEM\            149504   3.2.0.0
+	MSVCRT20.DLL   \WINDOWS\SYSTEM\            250368   2.10.0.0
+	
+	Additional query words: VFoxWin Kbfest kblist
+	
+	======================================================================
+	Keywords          : kbsetup kbvfp300 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+	Version           : WINDOWS:3.0
+	
+	=============================================================================
+	

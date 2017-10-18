@@ -1,0 +1,183 @@
+---
+layout: page
+title: "Q151725: FP: How to Import Web Content from a Server w/o FP Extensions"
+permalink: kb/151/Q151725/
+---
+
+## Q151725: FP: How to Import Web Content from a Server w/o FP Extensions
+
+	Article: Q151725
+	Product(s): Word Front Page
+	Version(s): windows:1.0,1.1,97
+	Operating System(s): 
+	Keyword(s): kbusage kbdta
+	Last Modified: 10-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft FrontPage for Windows, versions 1.0, 1.1 
+	- Microsoft FrontPage 97 for Windows with Bonus Pack 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	In FrontPage, you can take HyperText Markup Language (HTML) pages that exist on
+	a server without FrontPage Server Extensions and convert them into a FrontPage
+	Web. Because FrontPage requires special files for every HTML page that exists in
+	a Web, the non-FrontPage Web needs to be converted so that it includes these
+	additional FrontPage files.
+	
+	The simplest way to make this conversion is to install the FrontPage Server
+	Extensions on the Web server. In some situations you may be unable to install
+	the extensions on the server. This article describes several ways you can
+	convert the content to a FrontPage Web.
+	
+	MORE INFORMATION
+	================
+	
+	Method 1: Importing Local Files (FrontPage 97)
+	----------------------------------------------
+	
+	If your content is stored on the hard disk of your computer or if it is
+	accessible from a network share, follow these steps:
+	
+	1. Install the FrontPage Server Extensions on one of the Web servers that is
+	  included with FrontPage 97.
+	
+	2. Start FrontPage Explorer.
+	
+	3. On the File menu, point to New, and click FrontPage Web.
+	
+	4. Select Import Web Wizard in the Web Templates and Wizards list and click OK.
+	
+	5. Type a name for your Web in the "Web Server or File Location" box.
+	
+	  Typically, the default name that appears in the "Web Server or File Location"
+	  box is the name of the Web server you opened when you started FrontPage
+	  Explorer. Use the default server.
+	
+	6. Type a name for the new Web in the "Name of New FrontPage Web" box.
+	
+	  If you want your existing content to be the root Web, leave the "Name of New
+	  FrontPage Web" box blank.
+	
+	7. Click OK.
+	
+	  If you are prompted to type in an administrator's password, use the password
+	  that you specified when you installed the FrontPage Server Extensions.
+	
+	8. In the Source Directory box on the Import Web Wizard - Choose Directory
+	  panel, type the path to your files. If you are unsure of the path, click
+	  Browse, locate the folder that contains your content, and click OK. Click
+	  Next.
+	
+	9. In the Files list on the Import Web Wizard - Edit File List panel, select the
+	  files that you want to exclude. Use the CTRL or SHIFT key and click to select
+	  non-contiguous or contiguous files. Click Exclude.
+	
+	10. Click Next.
+	
+	11. Click Finish.
+	
+	  NOTE: The import process makes a copy of the original files and places them
+	  in your Web content folder. You may either delete the files from the
+	  original folder or keep them as backup copies.
+	
+	Method 2: Importing Non-Local Files (FrontPage 97)
+	--------------------------------------------------
+	
+	If your content is not stored on your computer or accessible from a network
+	share, copy the files to your computer using the File Transfer Protocol (FTP) or
+	other media (such as a floppy disk) and then follow the steps in the "Method 1:
+	Importing Local Files (FrontPage 97)" section.
+	
+	Method 3: Importing Non-Local Files
+	-----------------------------------
+	
+	If you cannot import your files as described in the "Method 2: Importing
+	Non-Local Files (FrontPage 97)" section, do the following:
+	
+	1. Start FrontPage Explorer, and create a new Web, by following these steps:
+	
+	  a. On the File menu, point to New, and click FrontPage Web.
+	
+	  b. Select Normal Web and click OK.
+	
+	  c. Type the name of your Web server in the "Web Server or File Location" box,
+	     or select it from the list.
+	
+	     Typically, the default name that appears in the "Web Server or File
+	     Location" box is the name of the Web server you opened when you started
+	     FrontPage Explorer. Use the default server.
+	
+	  d. Type a name for the new Web in the "Name of New FrontPage Web" box.
+	
+	     If you want your existing content to be the root Web, leave the "Name of
+	     New FrontPage Web" box blank.
+	
+	  e. Click OK.
+	
+	2. On the Tools menu, click Show FrontPage Editor.
+	
+	3. On the File menu, click Open, and then click the Other Location tab.
+	
+	4. Select the From Location option and type the Uniform Resource Locator (URL)
+	  for the page you want to import.
+	
+	5. On the File menu, click Save.
+	
+	6. Type a title for your page in the Page Title box, type a file name in the
+	  "File Path within your FrontPage Web" box, and click OK.
+	
+	  NOTE: Use the original file name or you may break existing hyperlinks.
+	
+	7. When prompted to save linked files, confirm the URL and then save the file.
+	
+	8. Repeat steps 4 through 8 for each page you want to import.
+	
+	Method 4: Importing Files with Limited Access to the Server
+	-----------------------------------------------------------
+	
+	To import files from a server where you have limited access, follow these steps:
+	
+	1. To store the existing files, create a new folder in your server's Content
+	  directory.
+	
+	  NOTE: The location of the server's Content directory is listed in the
+	  FrontPage Server Administrator.
+	
+	2. Use the name of the existing Web (the Web you want to import) to name the new
+	  folder. For example, if the existing Web is called "MyWeb," name the new
+	  folder "MyWeb" (without the quotation marks).
+	
+	3. Transfer the existing Web files to the new folder.
+	
+	  To do this, use FTP over an Internet connection or, if the files are on a
+	  local area network (LAN), use the file, copy, or move commands for your
+	  network operating system.
+	
+	4. Start FrontPage Explorer.
+	
+	5. On the File Menu, click New Web.
+	
+	6. Select Empty Web, and click OK.
+	
+	7. Enter the name of your FrontPage-compliant Web server and the existing Web
+	  name and then click OK.
+	
+	The FrontPage Explorer will create the necessary files and the Web will function
+	as if it had been created using FrontPage.
+	
+	Additional query words: enabled extended move publish copy transport
+	
+	======================================================================
+	Keywords          : kbusage kbdta 
+	Technology        : kbFrontPageSearch kbFrontPage1xSearch kbFrontPage97Search kbZNotKeyword3 kbFrontPage100 kbFrontPage110
+	Version           : windows:1.0,1.1,97
+	Hardware          : x86
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

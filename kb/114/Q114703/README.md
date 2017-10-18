@@ -1,0 +1,82 @@
+---
+layout: page
+title: "Q114703: DEL &#42;.&#42; Through Gateway Services for NetWare Leaves Files"
+permalink: kb/114/Q114703/
+---
+
+## Q114703: DEL &#42;.&#42; Through Gateway Services for NetWare Leaves Files
+
+	Article: Q114703
+	Product(s): Microsoft Windows NT
+	Version(s): 3.1
+	Operating System(s): 
+	Keyword(s): kbnetwork
+	Last Modified: 06-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 3.1 
+	- Microsoft Windows NT Workstation version 3.1 
+	- Microsoft Windows NT Advanced Server, version 3.1 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you connect from an OS/2 LAN Manager 2.2 workstation to a Windows NT share
+	that is redirected to a Novell NetWare 4.0 server resource, where the Windows NT
+	server is running Microsoft Gateway Service for NetWare and you attempt to
+	delete all the files in a directory with the command:
+	
+	  DEL *.*
+	
+	the files are not deleted. This does not happen from a Windows NT client.
+	
+	STEPS TO REPRODUCE
+	------------------
+	
+	1. From a Windows NT computer, NET USE to NetWare 4.0 server shared resource
+	
+	2. From the Windows NT computer, NET SHARE the redirected drive
+	
+	3. From an OS/2 LAN Manager 2.2 Workstation or Server (OS/2 v1.3), NET USE to
+	  the shared resource on the Windows NT computer
+	
+	4. From the OS/2 computer, type "COPY C:\OS2\*.* F:\TEST" (without the quotation
+	  marks and where F: is the drive mapped to Windows NT redirected share)
+	
+	5. From the OS/2 machine, type "MKDIR F:\TEST\TEMP"
+	
+	6. From the OS/2 machine, type "COPY F:\TEST\*.* F:\TEST\TEMP"
+	
+	7. From the OS/2 machine, type "CD \TEST\TEMP"
+	
+	8. From the OS/2 machine, type "DEL *.*"
+	
+	9. From the OS/2 machine, type "DIR" and you will still see files.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Windows NT and Windows NT
+	Advanced Server version 3.1. This problem has been corrected in the latest U.S.
+	Service Pack for Windows NT and Windows NT Advanced Server version 3.1. For
+	information on obtaining the Service Pack, query on the following word in the
+	Microsoft Knowledge Base (without the spaces):
+	
+	  S E R V P A C K
+	
+	NetWare is manufactured by Novell, a vendor independent of Microsoft; we make no
+	warranty, implied or otherwise, regarding this product's performance or
+	reliability.
+	
+	Additional query words: prodnt NWCS NCC-NT csnw
+	
+	======================================================================
+	Keywords          : kbnetwork 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW310 kbWinNTSsearch kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+	Version           : :3.1
+	
+	=============================================================================
+	

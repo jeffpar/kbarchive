@@ -1,0 +1,107 @@
+---
+layout: page
+title: "Q248720: PRB: Performance Hit in SCSI Miniport with Multiple Requests"
+permalink: kb/248/Q248720/
+---
+
+## Q248720: PRB: Performance Hit in SCSI Miniport with Multiple Requests
+
+	Article: Q248720
+	Product(s): Microsoft Windows NT
+	Version(s): 2000
+	Operating System(s): 
+	Keyword(s): kbDDK kbOSWin2000bug kbOSWin2000fix kbStorageDev kbDSupport kbGrpDSNTDDK kbWin2000sp3fi
+	Last Modified: 15-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 2000 Advanced Server 
+	- Microsoft Windows 2000 Server 
+	- Microsoft Windows 2000 Professional 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Windows 2000 SCSI miniport that sets the MultipleRequestPerLu member of the
+	PORT_CONFIGURATION_INFORMATION structure to TRUE, experiences performance hit.
+	
+	CAUSE
+	=====
+	
+	A SCSI Miniport that queues multiple requests per logical unit sets the
+	MultipleRequestPerLu member of the PORT_CONFIGURATION_INFORMATION structure to
+	TRUE. But this functionality has been disabled due the recent changes that were
+	made to the SCSIPORT driver. The code to implement this functionality was
+	affecting the drivers that did not request the multiple request functionality.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, obtain the latest service pack for Windows 2000. For
+	additional information, click the following article number to view the article
+	in the Microsoft Knowledge Base:
+	
+	  Q260910 How to Obtain the Latest Windows 2000 Service Pack
+	
+	For additional information about how to download the fix for this problem, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q276253 Back-to-Back Queue Full Problem in Scsiport.sys
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	  Date          Time    Version         Size     File name
+	  -----------------------------------------------------------
+	  29-Nov-2001   15:11   5.0.2195.4702   73,296   Scsiport.sys
+	
+	To work around this problem, you can claim that the miniport supports Tagged
+	Queuing. To do this, set the TaggedQueuing member of the
+	PORT_CONFIGURATION_INFORMATION structure for the controller.
+	
+	If the driver is simulating a SCSI interface (as many RAID adapters do), it
+	should also set the CommandQueue bit in the Inquiry data that it generates. The
+	driver requires the Miniport to call ScsiPortNotification with the NextLuRequest
+	notification type at appropriate times. A genuine SCSI miniport should not
+	change the Inquiry data reported by the target devices.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed that this is a problem in Windows 2000. This problem was
+	first corrected in Windows 2000 Service Pack 3.
+	
+	MORE INFORMATION
+	================
+	
+	The Miniport developer can set the MultipleRequestPerLu member to whatever value
+	they want it to be, but it will be ignored by the current version of SCSIPORT
+	driver. However, this value will be taken by the new version that fixes this
+	problem.
+	
+	The SCSIPORT driver always sets the MultipleRequestPerLu and TaggedQueuing member
+	to the value passed in the HW_INITIALIZATION_DATA structure when the miniport
+	driver calls ScsiPortInitialize.
+	
+	REFERENCES
+	==========
+	
+	Please refer the Windows 2000 DDK documentation for more information about
+	calling ScsiPortNotification and the other structures mentioned in this
+	article.
+	
+	
+	Additional query words: kbBaseOS SCSI scsiport miniport
+	
+	======================================================================
+	Keywords          : kbDDK kbOSWin2000bug kbOSWin2000fix kbStorageDev kbDSupport kbGrpDSNTDDK kbWin2000sp3fix 
+	Component         : DDK Drivers,SCSI
+	Technology        : kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWinAdvServSearch
+	Version           : :2000
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

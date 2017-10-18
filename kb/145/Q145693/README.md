@@ -1,0 +1,174 @@
+---
+layout: page
+title: "Q145693: PRB: _ED Functions in Toolbar Causes Fatal Error"
+permalink: kb/145/Q145693/
+---
+
+## Q145693: PRB: _ED Functions in Toolbar Causes Fatal Error
+
+	Article: Q145693
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:3.0,3.0b
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 05-FEB-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you use the _ED* editor functions to achieve cut, copy, and paste
+	functionality in an application and the editor functions are part of a toolbar,
+	use of the commands will cause Visual FoxPro to quit abnormally.
+	
+	STATUS
+	======
+	
+	Microsoft is researching this behavior and will post new information here in the
+	Microsoft Knowledge Base as it becomes available.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Create a new form, and place a single text box on it.
+	
+	2. Enter some text into the Caption property of the text box.
+	
+	3. Copy and paste the code listed in the "Sample Code" section into a .prg file,
+	  and then run the program.
+	
+	4. Run the form.
+	
+	5. Highlight the text in the text box, and choose Copy from the toolbar.
+	
+	6. Delete the text from the text box, and choose the Paste from the toolbar.
+	  Visual FoxPro will quit.
+	
+	Sample Code
+	-----------
+	
+	  **---------------------------------------------------------------**
+	  ** Begin code sample                                             **
+	  **---------------------------------------------------------------**
+	  PUBLIC oEditBar
+	
+	     oEditBar=CreateObject('editbar')
+	     oEditBar.Visible=.t.
+	
+	     DEFINE CLASS editbar AS toolbar
+	
+	         Caption = "Edit Controls"
+	         Height = 30
+	         Left = 0
+	         Top = 0
+	         Width = 132
+	         Name = "editbar"
+	
+	         ADD OBJECT cmdcut AS commandbutton WITH ;
+	             Top = 4, ;
+	             Left = 6, ;
+	             Height = 23, ;
+	             Width = 24, ;
+	             Picture = "cut.bmp", ;
+	             Caption = "", ;
+	             Default = .F., ;
+	             ToolTipText = "Cut", ;
+	             Name = "cmdCut"
+	
+	         ADD OBJECT cmdcopy AS commandbutton WITH ;
+	             Top = 4, ;
+	             Left = 29, ;
+	             Height = 23, ;
+	             Width = 24, ;
+	             Picture = "copy.bmp", ;
+	             Caption = "", ;
+	             Default = .F., ;
+	             ToolTipText = "Copy", ;
+	             Name = "cmdCopy"
+	
+	         ADD OBJECT cmdpaste AS commandbutton WITH ;
+	             Top = 4, ;
+	             Left = 52, ;
+	             Height = 23, ;
+	             Width = 24, ;
+	             Picture = "paste.bmp", ;
+	             Caption = "", ;
+	             Default = .F., ;
+	             ToolTipText = "Paste", ;
+	             Name = "cmdPaste"
+	
+	         ADD OBJECT separator1 AS separator WITH ;
+	             Top = 4, ;
+	             Left = 81, ;
+	             Height = 0, ;
+	             Width = 0, ;
+	             Name = "Separator1"
+	
+	         ADD OBJECT cmdundo AS commandbutton WITH ;
+	             Top = 4, ;
+	             Left = 81, ;
+	             Height = 23, ;
+	             Width = 24, ;
+	             Picture = "undo.bmp", ;
+	             Caption = "", ;
+	             Default = .F., ;
+	             ToolTipText = "Undo", ;
+	             Name = "cmdUndo"
+	
+	         ADD OBJECT cmdredo AS commandbutton WITH ;
+	             Top = 4, ;
+	             Left = 104, ;
+	             Height = 23, ;
+	             Width = 24, ;
+	             Picture = "redo.bmp", ;
+	             Caption = "", ;
+	             Default = .F., ;
+	             ToolTipText = "Redo", ;
+	             Name = "cmdRedo"
+	
+	         PROCEDURE Init
+	             SET LIBRARY TO SYS(2004)+"FOXTOOLS.FLL"
+	         ENDPROC
+	
+	         PROCEDURE cmdcut.Click
+	             =_EdCut(_WOnTop())
+	         ENDPROC
+	
+	         PROCEDURE cmdcopy.Click
+	             =_EdCopy(_WOnTop())
+	         ENDPROC
+	
+	         PROCEDURE cmdpaste.Click
+	             =_EdPaste(_WOnTop())
+	         ENDPROC
+	
+	         PROCEDURE cmdundo.Click
+	             =_EdUndo(_WOnTop())
+	         ENDPROC
+	
+	         PROCEDURE cmdredo.Click
+	             =_EdRedo(_WOnTop())
+	         ENDPROC
+	
+	     ENDDEFINE
+	  **---------------------------------------------------------------**
+	  ** End code sample                                               **
+	  **---------------------------------------------------------------**
+	
+	Additional query words: VFoxWin gpf fatal error
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+	Version           : WINDOWS:3.0,3.0b
+	
+	=============================================================================
+	

@@ -1,0 +1,178 @@
+---
+layout: page
+title: "Q99470: Troubleshooting CD Audio Problems in Windows 3.1"
+permalink: kb/099/Q99470/
+---
+
+## Q99470: Troubleshooting CD Audio Problems in Windows 3.1
+
+	Article: Q99470
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): 1.0,2.0,2.0a,3.1
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 09-NOV-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 3.1 
+	- Microsoft Multimedia Viewer, versions 1.0, 2.0, 2.0a 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	There are three types of sound that can be played in Microsoft multimedia
+	applications: waveform, MIDI, and CD Audio. Products such as Encarta, Dinosaurs,
+	and Bookshelf only play waveform and MIDI. Beethoven, Stravinsky, Mozart, and
+	Schubert all play CD Audio and MIDI.
+	
+	The following article discusses reasons for compact disc (CD) audio failure in
+	Windows and the troubleshooting techniques you can apply to solve the problem.
+	
+	MORE INFORMATION
+	================
+	
+	CD Audio Does Not Play
+	----------------------
+	
+	1. Test whether the Media Player in Windows can play audio CDs or not:
+	
+	  a. From the Device menu, choose CD Audio. If this option does not appear,
+	     refer to step 3. If you receive the error message, "There is an
+	     undetectable problem in loading the specified device driver," query in the
+	     Microsoft Knowledge Base for this error message (to obtain more
+	     information about the error).
+	
+	  b. Choose Play on the Media Player.
+	
+	     If the thumb moves, but it produces no sound from the external speakers,
+	     plug the speakers into the front panel connections on the CD-ROM drive. If
+	     CD audio plays from the front of the CD-ROM unit but not through the sound
+	     card, then the CDA transfer cable is not connected or is loose. The CDA
+	     transfer cable is a short length of heavily shielded cable that terminates
+	     on each end with a four-pin connector. It is used to transfer CD audio
+	     signals from the CD-ROM player to the sound device, usually a sound card.
+	     (See Step 10.)
+	
+	     If you receive the error message, "There is a problem with your media
+	     device," query in the Microsoft Knowledge Base for this error message (to
+	     obtain more information about the error).
+	
+	  c. Search for multiple MPLAYER.INI files. Delete all MPLAYER.INI files and
+	     try steps a and b again.
+	
+	  d. Use a different CD audio disc and try steps a and b again.
+	
+	2. Verify that the MSCDEX.EXE file is version 2.2 or later, and the device
+	  dependent driver in CONFIG.SYS file is the most current.
+	
+	3. Verify that the [MCI] CD Audio driver is loaded in the Drivers section of the
+	  Windows Control Panel.
+	
+	4. Verify the CD audio volume control setting in the mixer control panel is
+	  turned up enough to be audible.
+	
+	5. Run Windows in standard mode and perform parts a and b in step 1 again.
+	
+	6. If standard mode is successful, try the following debug mode to check for
+	  problems with the 386 enhanced device drivers (especially non-Microsoft
+	  VDMAD.386) in the SYSTEM.INI file
+	
+	      win /d:xvfs
+	
+	  where x excludes all of the adapter area from the range of memory that Windows
+	  scans to find unused space; v specifies that the ROM routine handles
+	  interrupts from the hard drive controller; f Turns off 32-bit disk access;
+	  and s specifies that Windows should not use ROM address space between
+	  F000:0000 and 1 MB for a break point.
+	
+	  If starting Windows in the above debug mode corrects the problem, try using
+	  each parameter individually to narrow the testing scope (for instance, win
+	  /d:x). Add the following lines to the SYSTEM.INI file depending on which
+	  parameter worked correctly:
+	
+	      [386enh]
+	
+	    - If x worked: emmexclude=A000-FFFF
+	    - If v worked: VirtualHDIRQ=off
+	    - If s worked: SystemROMBreakpoint=off
+	    - If f worked: 32BitDiskAccess=FALSE
+	
+	  NOTE: x is a temporary fix. Check the hardware documentation to narrow the
+	  addressing.
+	
+	7. Re-expand the MPLAYER.EXE and the MCICDA.DRV files from the Windows disks.
+	
+	  Locations of MPLAYER.EXE:
+	
+	      Windows version 3.1 Disk 7 (3.5 inch, 720K)
+	      Windows version 3.1 Disk 3 (3.5 inch, 1.44 MB)
+	      Windows version 3.1 Disk 5 (5.25 inch, 1.2 MB)
+	      Windows version 3.11 Disk 4 (3.5 inch, 1.44 MB)
+	      Windows version 3.11 Disk 5 (5.25 inch, 1.2 MB)
+	      Windows & MS-DOS 5 Upgrade Disk 7 (5.25 inch, 1.2 MB)
+	      Windows & MS-DOS 5 for IBM PS/2 Disk 5 (3.5 inch, 1.44 MB)
+	      Windows for Workgroups 3.1 Disk 7 (5.25 inch, 1.2 MB)
+	      Windows for Workgroups 3.1 Disk 6 (3.5 inch, 1.44 MB)
+	      Windows for Workgroups 3.11 Disk 3 (3.5 inch, 1.44 MB)
+	      Windows for Workgroups 3.11 Disk 3 (5.25 inch, 1.44 MB)
+	      Windows for Workgroups 3.11 Upgrade Disk 3 (3.5 inch, 1.44 MB)
+	      Windows for Workgroups 3.11 Upgrade Disk 3 (5.25 inch, 1.44 MB)
+	
+	  Locations of the MCI[CD Audio] driver (MCICDA.DRV):
+	
+	      Windows version 3.1 disk 4 (3.5 inch)
+	      Windows Version 3.1 Disk 10 (3.5 inch, 720K)
+	      Windows Version 3.1 Disk 5 (5.25 inch)
+	      Windows & MS-DOS 5 Upgrade Disk 7 (5.25 inch)
+	      Windows & MS-DOS 5 Upgrade Disk 6 (3.5 inch)
+	      Windows for Workgroups Version 3.1 Disk 8 (5.25 inch)
+	      Windows for Workgroups Version 3.1 Disk 6 (3.5 inch)
+	      Windows for Workgroups 3.11 Disk 8 (5.25 inch, 1.2 MB)
+	      Windows for Workgroups 3.11 Disk 6 (3.5 inch, 1.44 MB)
+	      Windows for Workgroups Upgrade 3.11 Disk 6 (3.5 inch, 1.44 MB)
+	      Windows for Workgroups Upgrade 3.11 Disk 8 (5.25 inch, 1.2 MB)
+	
+	8. Install Windows into a test directory with the sound card's drivers and the
+	  [MCI] CD-Audio driver. Then repeat steps; 1, 3 and 4 again.
+	
+	9. Make sure the CD-ROM drive is capable of reading CD audio information
+	  (MPC-compatible CD-ROM drives should). Also, contact the manufacturer to
+	  ensure you are using the correct and most current device dependent driver.
+	
+	10. Remove the CDA transfer cable and:
+	
+	  a. Test for audio from the front jack on the CD player.
+	
+	  b. Test by routing from the jack on front of the CD player to the external
+	     audio input jack on the back of the sound card. This will determine if
+	     there is a possible short in the CDA transfer cable.
+	
+	11. Exit Windows and run the MS-DOS utility that came with the CD-ROM for
+	  playing audio CDs. Also, make sure you can change to the drive that contains
+	  a data CD and get a directory of files.
+	
+	CD Audio Skips
+	--------------
+	
+	For information about the CD Audio skipping, query on the following words in the
+	Microsoft Knowledge Base
+	
+	  skips and cd
+	
+	or query on:
+	
+	  cd and audio and play* and driver
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbHomeProdSearch kbWin3xSearch kbHomeMMsearch kbZNotKeyword3 kbWin310 kbMMViewer100 kbMMViewer200 kbMMViewer200a
+	Version           : :1.0,2.0,2.0a,3.1
+	
+	=============================================================================
+	

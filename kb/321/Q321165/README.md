@@ -1,0 +1,85 @@
+---
+layout: page
+title: "Q321165: XADM: 0xc00206fc Error When Viewing Permissions in Admin Program"
+permalink: kb/321/Q321165/
+---
+
+## Q321165: XADM: 0xc00206fc Error When Viewing Permissions in Admin Program
+
+	Article: Q321165
+	Product(s): Microsoft Exchange
+	Version(s): 5.5
+	Operating System(s): 
+	Keyword(s): kberrmsg
+	Last Modified: 11-JUL-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you view any kind of permissions by using the Microsoft Exchange Server
+	Administrator program that is installed on a server or workstation that is
+	running either Microsoft Windows 2000 or Microsoft Windows XP, you may receive
+	the following error message:
+	
+	  The trust relationship between the primary domain and the trusted domain
+	  failed. Microsoft Windows NT ID: 0xc00206fc
+	
+	CAUSE
+	=====
+	
+	This issue may occur if certain accounts in the Access Control Lists (ACLs) have
+	been deleted or if the display names of the accounts do not resolve from their
+	security IDs (SIDs). The accounts may not resolve if you remove the primary
+	domain controller (PDC) server from a domain after you add the accounts to the
+	permissions on a resource. In the situation that causes the error message that
+	is described in the "Symptoms" section of this article, the domain that is the
+	home to the accounts is unreachable; the domain cannot contact the domain
+	controller to resolve the SID.
+	
+	WORKAROUND
+	==========
+	
+	To work around this issue, you must use a Microsoft Windows NT 4.0-based server
+	that has the Administrator program installed to view permissions:
+	
+	1. Log on to the Windows NT 4.0-based server, and then connect to a server that
+	  is running Windows 2000.
+	
+	2. Use the Administrator program to check all levels of permissions, including
+	  Organization, Site, Configuration, and other levels.
+	
+	3. Remove all unresolved accounts (SIDs).
+	
+	After you remove the unresolved accounts, the error message typically no longer
+	occurs.
+	
+	MORE INFORMATION
+	================
+	
+	This issue can occur if you are using a configuration that includes two domains,
+	a Windows 2000-based domain and a Windows NT 4.0 domain, which also include two
+	different Exchange Server 5.5 sites. In this configuration, the Exchange Server
+	5.5 service account is located in the Windows NT 4.0-based domain. The error
+	message only appears when you try to view permissions by using the Administrator
+	program that is installed on a computer that is running Windows 2000.
+	
+	You may also want to verify the domain trusts in both directions. You can use the
+	Nltest tool, the net use command, or the Active Directory Sites and Services
+	Microsoft Management Console (MMC) to verify the domain trusts.
+	
+	Additional query words: admin
+	
+	======================================================================
+	Keywords          : kberrmsg 
+	Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+	Version           : :5.5
+	Issue type        : kbprb
+	
+	=============================================================================
+	

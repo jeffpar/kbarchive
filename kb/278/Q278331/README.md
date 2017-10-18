@@ -1,0 +1,74 @@
+---
+layout: page
+title: "Q278331: COMTI: Deallocate Issued to Host for Every COMTI Transaction"
+permalink: kb/278/Q278331/
+---
+
+## Q278331: COMTI: Deallocate Issued to Host for Every COMTI Transaction
+
+	Article: Q278331
+	Product(s): Microsoft SNA Server
+	Version(s): 1.0,1.0 SP1,4.0,4.0 SP1,4.0 SP2,4.0 SP3
+	Operating System(s): 
+	Keyword(s): kbDSupport sna4 kbsna400sp1 kbsna400sp2 kbsna400sp3 kbSNA400sp4fix kbSNA400PreSP4fix
+	Last Modified: 12-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3 
+	- Microsoft COM Transaction Integrator for CICS and IMS, versions 1.0, 1.0 SP1, 4.0 SP2, 4.0 SP3 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	COM Transaction Integrator (COMTI) issues an Advanced Program-to-Program
+	Communications (APPC) deallocate, even if no transaction call is made to the
+	host program due to invalid data passed into COMTI from the client program. When
+	the host receives this deallocate, an error log entry is created on the host;
+	this has caused resource problems in some host environments.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, obtain the latest service pack for SNA Server 4.0. For
+	additional information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q215838 How to Obtain the Latest SNA Server Version 4.0 Service Pack
+	
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft SNA Server version 4.0
+	SP1, 4.0 SP2, 4.0 SP3; and Microsoft COM Transaction Integrator for CICS and IMS
+	versions 1.0, 1.0 SP1, 4.0 SP2, 4.0 SP3.
+	
+	This problem was first corrected in SNA Server 4.0 Service Pack 4.
+	
+	MORE INFORMATION
+	================
+	
+	COMTI always checks the input that is coming in from the client to make certain
+	that the datatypes are valid for the parameters that are being passed up to the
+	host. If there is a problem with the data, COMTI posts an event, raises an error
+	to the client, and then cleans up the APPC session. In cleaning up the APPC
+	session, COMTI also issues a deallocate to the host. The hotfix changes the
+	behavior of COMTI so that it does not issue the deallocate if the host
+	transaction program is not called.
+	
+	
+	Additional query words: Tranlu62 sp1 sp2 sp3 service pack pak sp 1 2 3
+	
+	======================================================================
+	Keywords          : kbDSupport sna4 kbsna400sp1 kbsna400sp2 kbsna400sp3 kbSNA400sp4fix kbSNA400PreSP4fix 
+	Technology        : kbAudDeveloper kbSNAServSearch kbCOMTISearch kbCOMTI100 kbCOMTI100SP1 kbCOMTI400SP2 kbCOMTI400SP3 kbSNAServ400 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3
+	Version           : :1.0,1.0 SP1,4.0,4.0 SP1,4.0 SP2,4.0 SP3
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

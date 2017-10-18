@@ -1,0 +1,126 @@
+---
+layout: page
+title: "Q154796: Close Combat: Playing Modem to Network"
+permalink: kb/154/Q154796/
+---
+
+## Q154796: Close Combat: Playing Modem to Network
+
+	Article: Q154796
+	Product(s): Microsoft Home Games
+	Version(s): 1.0
+	Operating System(s): 
+	Keyword(s): kbhw kbmm kbusage kbHardwarekbfaq
+	Last Modified: 18-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Close Combat for Windows 1.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article discusses playing Close Combat over a modem connected to a network
+	(LAN or WAN).
+	
+	CONFIGURATION OF THE NETWORK COMPUTER
+	-------------------------------------
+	
+	The network computer running Close Combat should be configured as follows:
+	
+	1. Check to make sure TCP/IP is loaded as a protocol for the Network adapter
+	  card, as follows:
+	
+	  a. Click Start, point to Settings, and click Control Panel.
+	
+	  b. Click Network.
+	
+	  c. Click the Configuration tab. If TCP/IP is not listed, click Add and follow
+	     the dialog boxes.
+	
+	2. Disable the TCP/IP - Dial-Up Adapter protocol, as follows:
+	
+	  a. Click Start, point to Settings, then click Control Panel.
+	
+	  b. Double click System, and choose the Device Manager tab.
+	
+	  c. Click Network Adapters.
+	
+	  d. Click Dial-Up Adapter, and click Properties.
+	
+	  e. Under Device Usage, clear the Original Configuration box.
+	
+	     (Dial-Up Networking is dynamic, so re-starting Windows is not necessary.)
+	
+	CONFIGURATION FOR THE MODEM USER
+	--------------------------------
+	
+	The computer that is connecting to the network with a modem should be configured
+	as follows:
+	
+	1. Disable any network cards in the configuration.
+	
+	2. Connect to the LAN or WAN network using Dial-Up Adapter.
+	
+	3. Obtain your IP Address.(See the "OBTAINING YOUR IP ADDRESS" section of this
+	  article.)
+	
+	OBTAINING YOUR IP ADDRESS
+	-------------------------
+	
+	Player 1 must make a list of his/her IP Address and his/her opponent's address.
+	To determine your IP address, start the game and press the 2 Player option. Your
+	IP address should be listed. You can also determine your IP Address by starting
+	MS-DOS. (Press the Start button, point to Programs, and click MS-DOS Prompt.
+	Type "winipcfg", without the quotation marks.)
+	
+	STARTING THE GAME
+	-----------------
+	
+	1. Both players start Close Combat, and press the 2 Player option button on the
+	  Command screen.
+	
+	2. Player 1 (the player who has a list of both IP Addresses), clicks Initiate
+	  Connection, enters the opponent's IP Address in the space provided, and
+	  presses OK.
+	
+	3. Player 2 clicks Wait For Connection and presses OK.
+	
+	Once both players hear the Artificial Entity announce "Connection Established,"
+	both can click Begin to start the game.
+	
+	MORE INFORMATION
+	================
+	
+	Dial-Up Networking binds to the TCP/IP protocol last and therefore is the
+	default. For the player who chooses Wait For Connection, Close Combat looks to
+	the Dial-Up Networking protocol, if present, regardless of the chosen IP
+	Address.
+	
+	To play a game on a network, see the following article in the Microsoft Knowledge
+	Base:
+	
+	  Q154728 Close Combat: Playing Over a Network
+	
+	To play a game with an opponent by connecting modem to modem, see the following
+	article in the Microsoft Knowledge Base:
+	
+	  Q154729 Close Combat: Modem Play Using Dial-Up Networking
+	
+	To play a game with an opponent by connecting to the Internet, see the following
+	article in the Microsoft Knowledge Base:
+	
+	  Q154727 Close Combat: Playing Over the Internet
+	
+	Additional query words: 154796 close combat network connection modem game play
+	
+	======================================================================
+	Keywords          : kbhw kbmm kbusage kbHardware kbfaq
+	Technology        : kbHomeProdSearch kbGamesSearch kbZNotKeyword kbCloseCombatSearch kbCloseCombat
+	Version           : :1.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

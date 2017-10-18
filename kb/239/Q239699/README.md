@@ -1,0 +1,81 @@
+---
+layout: page
+title: "Q239699: Err Msg: Internet Explorer Cannot Open the Internet Site URL..."
+permalink: kb/239/Q239699/
+---
+
+## Q239699: Err Msg: Internet Explorer Cannot Open the Internet Site URL...
+
+	Article: Q239699
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:5,95
+	Operating System(s): 
+	Keyword(s): kberrmsg win95 msiew95
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 95 
+	- Microsoft Internet Explorer version 5 for Windows 95 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about modifying the registry. Before you 
+	modify the registry, make sure to back it up and make sure that you understand how to restore 
+	the registry if a problem occurs. For information about how to back up, restore, and edit the 
+	registry, click the following article number to view the article in the Microsoft Knowledge Base:
+	
+	  Q256986 Description of the Microsoft Windows Registry
+	
+	SYMPTOMS
+	========
+	
+	When you view a Web site, after you install the Dial-Up Networking 1.3, or
+	Winsock 2 update to Windows 95, Internet Explorer may intermittently return the
+	following error message:
+	
+	  Internet Explorer cannot open the internet site URL:<web address> the
+	  connection to the server was reset.
+	
+	CAUSE
+	=====
+	
+	This issue can occur because Dial-Up Networking and Winsock 2 include RFC 1323
+	implementations of Time Stamp and Window sizing information in the TCP/IP
+	header. If the Web Server that you are connecting to or a router that your
+	requests pass though do not recognize RFC 1323 options, it may reset the
+	connection.
+	
+	RESOLUTION
+	==========
+	
+	WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+	that may require you to reinstall your operating system. Microsoft cannot
+	guarantee that you can solve problems that result from using Registry Editor
+	incorrectly. Use Registry Editor at your own risk.
+	
+	To resolve this issue, add an MSTCP registry key to the following registry key
+	(if the MSTCP key does not already exist):
+	
+	  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services
+	
+	Then, add a DWORD value named TCP1323Opts with a data value of 0 (zero) to the
+	following registry key:
+	
+	  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSTCP
+	
+	MORE INFORMATION
+	================
+	
+	This option is disabled by default in Windows 98.
+	
+	Additional query words: ws2, slow, dun13.
+	
+	======================================================================
+	Keywords          : kberrmsg win95 msiew95 
+	Technology        : kbIEsearch kbWin95search kbIE95Search kbIE500Search kbZNotKeyword3 kbIE500Win95
+	Version           : WINDOWS:5,95
+	Issue type        : kbprb
+	
+	=============================================================================
+	

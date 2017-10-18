@@ -1,0 +1,97 @@
+---
+layout: page
+title: "Q140566: FIX: Click Event Of Straight Line Not Firing"
+permalink: kb/140/Q140566/
+---
+
+## Q140566: FIX: Click Event Of Straight Line Not Firing
+
+	Article: Q140566
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:3.0
+	Operating System(s): 
+	Keyword(s): kbvfp kbvfp500fixkbbuglist kbfixlist
+	Last Modified: 24-MAR-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 3.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When a horizontal or vertical line object is on a form and there is code in the
+	Click event of the line, the code will not execute if the line Width property of
+	a vertical line or Height property of a horizontal line is set to 0.
+	
+	WORKAROUND
+	==========
+	
+	For a verticle line, set the line object's Width property to at least 1 and the
+	BorderWidth property to at least 2. If the BorderWidth property is less than 2,
+	the vertical line will not be displayed correctly. For a horizontal line, set
+	the Height property to at least 1 and the BorderWidth property to at least 1
+	(the default).
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products listed at
+	the beginning of this article. This problem has been fixed in Visual FoxPro 5.0
+	for Windows.
+	
+	MORE INFORMATION
+	================
+	
+	The problem (the vertical line has to have a BorderWidth value of at least 2 to
+	display correctly), does not appear for diagonal lines. This is why setting the
+	line width or height corrects the problem. The line is actually being angled
+	slightly. This angling is not visibly apparent even in large displays or form
+	sizes. However because the borderwidth has been increased a hairline thickness
+	is not possible. This characteristic is more noticable with vertical rather than
+	horizontal lines because of the way the monitor displays graphics.
+	
+	Steps to Reproduce Problem
+	--------------------------
+	
+	1. Create a form.
+	
+	2. Put a vertical line object control on the form.
+	
+	3. Put a horizontal line object control on the form.
+	
+	4. In the Click events of the line objects, place this code:
+	
+	     wait window "click"
+	
+	5. Run the form.
+	
+	6. Click the lines. You will notice that the wait window does not appear for
+	  either line.
+	
+	Steps to Work Around the Problem
+	--------------------------------
+	
+	1. Change the Width property of the vertical line control to 1 and the
+	  BorderWidth property to 2.
+	
+	2. Change the Width property of the horizontal line to 1.
+	
+	3. Run the form.
+	
+	4. Click the lines. Notice that the wait window appears for each line. The click
+	  events of the lines are firing.
+	
+	Additional query words: line click
+	
+	======================================================================
+	Keywords          : kbvfp kbvfp500fix kbbuglist kbfixlist
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+	Version           : WINDOWS:3.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

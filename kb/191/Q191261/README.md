@@ -1,0 +1,78 @@
+---
+layout: page
+title: "Q191261: XFOR: All Outbound IMC Mail NDRs: &quot;We Do Not Relay&quot;"
+permalink: kb/191/Q191261/
+---
+
+## Q191261: XFOR: All Outbound IMC Mail NDRs: &quot;We Do Not Relay&quot;
+
+	Article: Q191261
+	Product(s): Microsoft Exchange
+	Version(s): winnt:4.0,5.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 06-APR-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 4.0, 5.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Users and administrators of Microsoft Exchange may notice an non-delivery report
+	(NDR) returned to them from the Internet Mail Connector that reads:
+	
+	  Your message did not reach some or all the intended recipients
+	     The following recipient could not be reached.
+	     The recipient name is not recognized.
+	        Microsoft Exchange:IMS:Nwggsc.org:nwggsc.org
+	        nt4_NWggsc(0000B0981)  751 twili => We do not relay
+	
+	CAUSE
+	=====
+	
+	This problem may be caused routing changes made by the Internet service provider
+	to which Exchange Server is forwarding mail. The new host is not accepting the
+	mail and returns the error message, "We do not relay."
+	
+	WORKAROUND
+	==========
+	
+	To work around this problem follow these steps:
+	
+	1. Confirm that the IP address of the Internet service provider (ISP) correctly
+	  corresponds to the mail exchanger server to which you are forwarding mail.
+	
+	2. Make sure that the configuration of the Internet Mail Service (Internet Mail
+	  Connector in version 4.0) is forwarding all messages to the host, and use the
+	  IP address to avoid complications with Domain Name Service (DNS).
+	
+	3. Confirm that a ping of the ISP's IP address is successful.
+	
+	  NOTE: In one case, pinging the old IP address of an ISP was still successful.
+	  This caused some confusion in the troubleshooting process.
+	
+	4. Check the domain name of the ISP using the NSLookup utility.
+	
+	MORE INFORMATION
+	================
+	
+	This problem was encountered when using a Microsoft Developer Network (MSDN)
+	connection to an ISP. It can happen, however, with any connection to an ISP.
+	This problem may happen in a new installation of Internet Mail Service, but it
+	can also happen with an Internet Mail Service that has worked for months, after
+	a change in the domain name of the ISP.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbZNotKeyword2
+	Version           : winnt:4.0,5.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

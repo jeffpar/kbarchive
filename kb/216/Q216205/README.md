@@ -1,0 +1,124 @@
+---
+layout: page
+title: "Q216205: PRB: &quot;Error 481: Invalid Picture&quot; Error Viewing BMP File"
+permalink: kb/216/Q216205/
+---
+
+## Q216205: PRB: &quot;Error 481: Invalid Picture&quot; Error Viewing BMP File
+
+	Article: Q216205
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): WINDOWS:4.0,5.0,6.0
+	Operating System(s): 
+	Keyword(s): kb3rdparty kbBitmap kbVBp kbVBp400 kbVBp500 kbVBp600 kbOSWin98 kbGrpDSVB
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Bitmaps created using Win98 Imaging components, such as Imaging for Windows
+	(Win98) or IMGEDIT.OCX, create a BMP that cannot be read in Windows 95, Windows
+	NT 4.0, or Windows 2000 using MSPAINT.EXE or the Visual Basic PictureBox
+	control.
+	
+	You would receive the folling error message:
+	
+	  Error 481: Invalid Picture When Viewing BMP Created Using Kodak Imaging in
+	  Win98
+	
+	CAUSE
+	=====
+	
+	The Win98 Imaging components save out the bitmaps using the v5.0
+	BITMAPINFOHEADER structure.
+	
+	Following is the VC++ BITMAPINFOHEADER v5.0 structure:
+	
+	  typedef struct {
+	     DWORD        bV5Size;
+	     LONG         bV5Width;
+	     LONG         bV5Height;
+	     WORD         bV5Planes;
+	     WORD         bV5BitCount;
+	     DWORD        bV5Compression;
+	     DWORD        bV5SizeImage;
+	     LONG         bV5XPelsPerMeter;
+	     LONG         bV5YPelsPerMeter;
+	     DWORD        bV5ClrUsed;
+	     DWORD        bV5ClrImportant;
+	     DWORD        bV5RedMask;
+	     DWORD        bV5GreenMask;
+	     DWORD        bV5BlueMask;
+	     DWORD        bV5AlphaMask;
+	     DWORD        bV5CSType;
+	     CIEXYZTRIPLE bV5Endpoints;
+	     DWORD        bV5GammaRed;
+	     DWORD        bV5GammaGreen;
+	     DWORD        bV5GammaBlue;
+	     DWORD        bV5Intent;
+	     DWORD        bV5ProfileData;
+	     DWORD        bV5ProfileSize;
+	     DWORD        bV5Reserved;
+	  } BITMAPV5HEADER, FAR *LPBITMAPV5HEADER, *PBITMAPV5HEADER;
+	
+	The members of this structure, starting with bV5Size through bV5ClrImportant, are
+	the same as those found in a normal BITMAPINFOHEADER structure, which is
+	readable in Windows 95, Windows NT, and Windows 2000. The remainder of the
+	BITMAPINFOHEADER structure contains new members where older applications would
+	expect to find the start of the Color Table.
+	
+	RESOLUTION
+	==========
+	
+	There are three workarounds for this problem:
+	
+	- Open the resultant BMP using the 'Imaging for Windows' application on either
+	  Windows 95, Windows NT, or Windows 2000, and save it again. This saves the
+	  bitmap in the standard BMP format.
+	
+	- Open the resultant BMP using the IMGEDIT control in Windows 95, Windows NT,
+	  or Windows 2000 and do a SaveAs on the image to again save it out as a BMP.
+	  This saves the bitmap in the standard BMP format.
+	
+	- Create a routine that reads the BMP file and converts it back to the original
+	  BITMAPINFOHEADER structure.
+	
+	STATUS
+	======
+	
+	This problem has been reported as a bug to Eastman Kodak, makers of the Imaging
+	controls.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Using the Win98 ImgEdit control, save a BMP image to a file.
+	
+	2. Take that file to a Windows 95, Windows NT, or Windows 2000 system. Attempt
+	  to load it into either MSPAINT.EXE or the Picture Property of a Visual Basic
+	  PictureBox control.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kb3rdparty kbBitmap kbVBp kbVBp400 kbVBp500 kbVBp600 kbOSWin98 kbGrpDSVB 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400
+	Version           : WINDOWS:4.0,5.0,6.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

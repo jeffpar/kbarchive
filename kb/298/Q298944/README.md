@@ -1,0 +1,108 @@
+---
+layout: page
+title: "Q298944: Err Msg: There Was a Problem Logging onto Your Mail Server..."
+permalink: kb/298/Q298944/
+---
+
+## Q298944: Err Msg: There Was a Problem Logging onto Your Mail Server...
+
+	Article: Q298944
+	Product(s): Microsoft Exchange
+	Version(s): 5.5
+	Operating System(s): 
+	Keyword(s): kberrmsg kbExchange550
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you attempt to connect to Exchange Server by using Outlook Express or
+	another Post Office Protocol (POP3) client, you may receive the following error
+	message:
+	
+	  There was a problem logging onto your mail server. Your Password was
+	  rejected. Account: '<alias> on <Server>', Server:
+	  '<server>', Protocol: POP3, Server Response: '-ERR Logon failure:
+	  unknown user name or bad password.', Port 110, Secure(SSL): No, Server Error:
+	  0x800CCC90, Error Number: 0x800CCC92
+	
+	Also, Event Viewer may report the following events:
+	
+	  Event Type: Error
+	  Event Source: MSExchange Pop3 Interface
+	  Event Category: Configuration
+	  Event ID: 11508
+	  Description:
+	  Accept clients on POP3 interface failed in function HrRegisterProtocol with
+	  error 0x2740.
+	
+	  Event Type: Error
+	  Event Source: MSExchangeIS
+	  Event Category: General
+	  Event ID: 1194
+	  Description:
+	  Accept clients on external interface POP3 failed with error 0x80004005.
+	
+	CAUSE
+	=====
+	
+	This issue can be caused by third-party antivirus software services that are
+	currently active.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, stop or turn off all antivirus services that are
+	currently active on the system.
+	
+	MORE INFORMATION
+	================
+	
+	In some cases, simply turning off the antivirus software does not resolve this
+	issue. You may need to completely remove the antivirus software, restart the
+	computer, and then reinstall the antivirus software.
+	
+	The antivirus program may be taking ownership of the POP3 port so that when
+	Exchange Server attempts to gain access to the port, the port is already in use
+	by the antivirus program. Some antivirus programs have an option that you can
+	deselect to keep the antivirus program from taking control of the POP3 port, so
+	that POP3 mail can be downloaded.
+	
+	The computer may also display a Dr. Watson error message in PoProxy.exe when
+	Exchange Server starts. This issue can occur if Norton AntiVirus is installed on
+	the computer and the Norton e-mail protection program process, PoProxy.exe, is
+	running. PoProxy.exe is a client component. If PoProxy.exe is installed on an
+	Exchange Server computer, you must completely remove it. Simply disabling
+	PoProxy.exe does not resolve the issue.
+	
+	For more information about PoProxy.exe, see the following article in the
+	Microsoft Knowledge Base:
+	
+	  Q292522 XCCC: Port 110 Is Not Responding on Exchange 2000 Server
+	
+	For more information about Event ID 11508 and error 0x2740, see the following
+	article in the Microsoft Knowledge Base:
+	
+	  Q271275 XADM: Event IDs 11506 or 11508 with error 0x2740 Are Logged
+	
+	For more information about Event ID 11508 and antivirus software, see the
+	following article in the Microsoft Knowledge Base:
+	
+	  Q250926 XFOR: GroupShield Interferes with POP3/IMAP with SSL Enabled
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kberrmsg kbExchange550 
+	Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+	Version           : :5.5
+	Issue type        : kbprb
+	
+	=============================================================================
+	

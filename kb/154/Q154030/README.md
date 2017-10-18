@@ -1,0 +1,68 @@
+---
+layout: page
+title: "Q154030: INFO: Configuring SNA Server for Use w/ an Attachmate Twinax Ada"
+permalink: kb/154/Q154030/
+---
+
+## Q154030: INFO: Configuring SNA Server for Use w/ an Attachmate Twinax Ada
+
+	Article: Q154030
+	Product(s): Microsoft SNA Server
+	Version(s): WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1,4.0 SP2
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 13-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 2.11, 2.11 SP1, 2.11 SP2, 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 4.0, 4.0 SP1, 4.0 SP2, on platform(s):
+	   - the operating system: Microsoft Windows NT 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes how to configure the Attachmate Advanced Twinax adapter
+	for use with SNA Server.
+	
+	MORE INFORMATION
+	================
+	
+	The Attachmate Advanced Twinax Adapter needs to be configured as an IBM Twinax
+	adapter because it is register compatible with the IBM 5250 Enhanced Emulation
+	Adapter. SNA Server needs to be configured to use the IBM Twinax Link Service
+	when the Attachmate Advanced Twinax Adapter is used. SNA Server's IBM Twinax
+	Link Service requires that the following parameters match those that are
+	configured on the Twinax adapter:
+	
+	- Interrupt
+	
+	- I/O Address
+	
+	- Page Address
+	
+	The IBM Twinax Link Service supports I/O addresses of 2xxA, where xx is a value
+	from 40 to 7F. The Attachmate Advanced Twinax Adapter has valid I/O addresses
+	that range from 2418-241F to 27F8-27FF. The valid I/O addresses for the
+	Attachmate Twinax adapter do not appear to match the valid I/O addresses for the
+	IBM Twinax Link Service because they do not end with a hexadecimal 'A', so it is
+	not apparent how to configure the I/O addresses.
+	
+	When you configure the IBM Twinax Link Service for use with the Attachmate Twinax
+	adapter, select an I/O Address that matches the first three hexadecimal values
+	of the I/O Address configured on the Twinax adapter. For example, select an I/O
+	address of x'241A' in the IBM Twinax Link Service configuration if the
+	Attachmate Twinax adapter is configured to use an I/O address range of x'2418' -
+	x'241F'.
+	
+	Additional query words: IO atm
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbSNAServSearch
+	Version           : WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1,4.0 SP2
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

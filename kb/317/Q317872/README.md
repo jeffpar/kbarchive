@@ -1,0 +1,261 @@
+---
+layout: page
+title: "Q317872: SMS: Troubleshooting SMS Administrator Console Connectivity"
+permalink: kb/317/Q317872/
+---
+
+## Q317872: SMS: Troubleshooting SMS Administrator Console Connectivity
+
+	Article: Q317872
+	Product(s): Microsoft Systems Management Server
+	Version(s): 2.0
+	Operating System(s): 
+	Keyword(s): kbsms200
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server version 2.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	If you are using Systems Management Server (SMS) and you try to connect to the
+	site server, you may receive a "Connection Failed" message, or the nodes may not
+	be displayed after you are connected. This article describes how to troubleshoot
+	a new or an existing SMS Administrator console to determine why it cannot
+	connect to the site server.
+	
+	MORE INFORMATION
+	================
+	
+	The following procedure describes how to grant additional users access to the
+	SMS Administrator console:
+	
+	1. Create a global group for the domain that contains users who require specific
+	  access to the SMS Administrator console.
+	
+	2. Add this global group (or the explicit domain user account) to the local SMS
+	  Admins group.
+	
+	3. Configure the SMS permissions for the global group that you created.
+	
+	  NOTE: To complete this step you must be an administrator with full permissions
+	  on the site.
+	
+	  The permissions that you grant depend on the functionality that you want the
+	  members of this global group to perform. To grant permissions, right-click
+	  the Security rights node in the SMS Administrator console, point to All
+	  tasks, and then click Manage SMS Users to start the Security Wizard.
+	
+	4. Use the wizard to add, remove, or modify the security settings of users and
+	  groups.
+	
+	NOTE: For SMS Service Pack 3 (SP3) hierarchies in Microsoft Windows 2000 domains,
+	you may have to obtain the hotfix that is described in the following Microsoft
+	Knowledge Base article:
+	
+	  Q266712 SMS: Security Based on Global Groups Fails in Windows 2000 Domains
+	
+	For additional information about how to grant additional users access to the SMS
+	Administrator console, click the article number below to view the article in the
+	Microsoft Knowledge Base:
+	
+	  Q252674 SMS: How to Set Up a Help Desk Administrator
+	
+	  Q201126 SMS: Troubleshooting Connectivity to the SMS Site Database
+	
+	  Q200670 SMS: Customizing the Systems Management Server Administrator Console
+	
+	Troubleshooting SMS Administrator Console Connectivity
+	------------------------------------------------------
+	
+	To troubleshoot SMS Administrator console connectivity, consider the following
+	issues:
+	
+	- Is the user a member of a global group that is a member in the SMS Admins
+	  group, or is the user explicitly defined in the SMS Admins Group?
+	
+	  The SMS Admins group is created during the SMS site installation. If your site
+	  was installed on a member server, the SMS Admins group is a local group in
+	  the local Security Accounts Manager (SAM). If your site server is a domain
+	  controller, the SMS Admins group is a local group in the domain. The user
+	  must be part of the SMS Admins group because it is granted the necessary
+	  permissions to the SMS and SMS_site code namespace in the Windows Management
+	  Instrumentation (WMI) repository when the SMS site is built.
+	
+	- Has this server had a previous installation of SMS?
+	
+	  If so, there may be multiple site codes in the SMS_ProviderLocation class that
+	  is located in the site server's SMS namespace. Delete any site code that no
+	  longer exists on the site server. You can use the WBEMtest tool (as described
+	  in the following procedure) to view the SMS_ProverLocation class.
+	
+	For additional information about WBEMtest, click the article number below to view
+	the article in the Microsoft Knowledge Base:
+	
+	  Q239899 Administrator Console Cannot Connect After Reinstallation
+	
+	- On the site server, view the properties that are defined in Dcomcnfg.exe
+	  utility.
+	
+	  To do so, click the Default properties tab, and then confirm the following
+	  settings:
+	
+	   - The "Enable Distributed COM on this computer" check box is selected.
+	
+	   - The Default Authentication level is set Connect.
+	
+	   - The Default Impersonation level is set to Identify.
+	
+	- If you are testing a remote SMS Administrator console, make sure that the
+	  latest SMS service pack has been applied to this console.
+	
+	  Run Setup from the service pack source to determine if the SMS Administrator
+	  console is the only component that must to be upgraded.
+	
+	After you consider these issues, complete the troubleshooting procedures that are
+	described in the following sections.
+	
+	Troubleshooting SMS Namespace Connectivity:
+	
+	Make sure that the user can connect to the SMS namespace and the SMS_'sitecode'
+	namespaces:
+	
+	1. Click Start, click Run, and then type "wbemtest" (without the quotation
+	  marks).
+	
+	2. Click Connect, type "\\siteserver\root\sms" (without the quotation marks),
+	  and then click Login.
+	
+	3. Click Enum Classes, click Recursive, and then click OK.
+	
+	4. In the Query Result list, double-click SMS_ProviderLocation.
+	
+	5. Click Instances, and then double-click the line that contains the target site
+	  code (for example, SMS_ProviderLocation.SiteCode="<xxx>").
+	
+	6. In the Properties section, locate the NamespacePath line (you may have to
+	  double-click this line to see the whole line).
+	
+	7. Copy this value to the clipboard (for example, copy the following value:
+	  \\<server_name>\root\sms\site_<xxx>).
+	
+	If you successfully complete this procedure, you can connect to the site server
+	and enumerate the SMS namespace.
+	
+	Troubleshooting Server Connectivity:
+	
+	Next, determine if you can connect to the server that the provider is located on.
+	The server is defined in the NamespacePath value that you determined in the
+	"Troubleshooting SMS Namespace Connectivity" section. Typically, this server is
+	the same server.
+	
+	1. Close any WBEMtest windows that may be open (you must see only the main
+	  window).
+	
+	2. Click Connect, paste the path that you copied in step 7 of the procedure
+	  described earlier, and then click Login.
+	
+	3. Click Enum Classes, click Recursive, and then click OK
+	
+	4. In the Query Result list, double-click SMS_Site.
+	
+	If you receive an "access denied" error message when you perform this procedure,
+	the account that is used does not have the appropriate permissions to the
+	namespace of the provider. To modify or verify the permissions, follow these
+	steps.
+	
+	NOTE: The following procedure is for Microsoft WMI 1.5, which is included in
+	Microsoft Windows 2000.
+	
+	1. On the server on which you enumerated the SMS site, click Start, click Run,
+	  type "wmimgmt.msc" (without the quotation marks), and then click OK.
+	
+	2. Right-click WMI Control, and then click Properties.
+	
+	3. On the Security tab, expand Root, and then click SMS.
+	
+	4. Click Security in the right pane to see the permissions.
+	
+	5. Click Advanced, click SMS Admins, and then click View-edit.
+	
+	  For the SMS namespace, the SMS Admins group must have the following
+	  permissions:
+	
+	   - Enable account
+	
+	   - Remote enable
+	
+	6. Repeat steps 1 to 5 to check the SMS Admins group for the SMS_<xxx>
+	  namespace (where <xxx> is the site code). The SMS Admins group must
+	  have the following permissions:
+	
+	   - Execute Methods
+	
+	   - Provider Write
+	
+	   - Enable Account
+	
+	   - Remote Enable
+	
+	Additional Connectivity Tests
+	-----------------------------
+	
+	Start the WMI Control on the site server (not the provider server if this server
+	is different), click the Logging tab, and then set the logging level to Verbose
+	to increase the logging to the
+	<Windows_folder>\System32\Wbem\Logs\Wbemcore.log file.
+	
+	Analyze this log on the site server. You see all of the WMI traffic that is
+	generated. Look for the query for SMS_Providerlocation that occurred when an SMS
+	Administrator console tried to connect. If this query is present, you can
+	confirm that there is communication between the console and the site server.
+	Test connectivity from the site server back to the requesting SMS Administrator
+	console.
+	
+	If WBEMtest connectivity testing determines that the remote procedure call (RPC)
+	server is unavailable, see the following Microsoft Knowledge Base article:
+	
+	  Q229091 SMS: Remote Administrator Gets a 'Connection Failed' Error When
+	  Connecting to Site Server
+	
+	The error message that is described in this article may also occur if name
+	resolution is not completed correctly. To determine if you are experiencing a
+	name resolution issue, use the WBEMtest tool and try to connect to the site
+	server by using the IP address (for example, \\111.222.333.444\root\default). If
+	you can connect when you use the IP address, but you cannot connect when you use
+	the netBIOS name of the site server, you are experiencing a name resolution
+	issue. To resolve this issue, confirm either the WINS or the DNS
+	configurations.
+	
+	NOTE: If you can connect to the database but if the nodes are not enumerated (for
+	example, the collections node, the packages node, and other nodes), check the
+	SMS permissions that are granted to the global group (or a specific user) in the
+	Security node of the SMS Administrator console.
+	
+	REFERENCES
+	==========
+	
+	  Q295292 HOW TO: Set WMI Namespace Security in Windows XP
+	
+	  Q216738 SMS: WMI Terms and Concepts
+	
+	  Q314169 SMS: 'Connection Failed' Error Message When You Run Administrator
+	  Console on Windows 2000 (Q314169)
+	
+	  Q272937 SMS: Administrator Console Does Not Connect to Windows NT 4.0 Site
+	  Server
+	
+	Additional query words: prodsms admin console failed connection permission fail connect
+	
+	======================================================================
+	Keywords          : kbsms200 
+	Technology        : kbSMSSearch kbSMS200
+	Version           : :2.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

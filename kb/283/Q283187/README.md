@@ -1,0 +1,103 @@
+---
+layout: page
+title: "Q283187: RASEnumConnection() Function Doesn't List Multiple RAS Connects"
+permalink: kb/283/Q283187/
+---
+
+## Q283187: RASEnumConnection() Function Doesn't List Multiple RAS Connects
+
+	Article: Q283187
+	Product(s): Microsoft Windows NT
+	Version(s): 4.0
+	Operating System(s): 
+	Keyword(s): kbenv kbtool kbWinNT400PreSP7Fix kbWinNTsearch
+	Last Modified: 08-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 4.0 
+	- Microsoft Windows NT Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The RasEnumConnections function does not return properly formatted information
+	when you have multiple connections to a Remote Access Server (RAS). The
+	RasEnumConnections function returns data on the first connection, but does not
+	return data on subsequent RAS connections. This problem occurs when you use a
+	unicode version of the RasEnumConnections function (the RasEnumConnectionsW
+	function and the RASCONNW structure).
+	
+	CAUSE
+	=====
+	
+	This problem occurs because there is a problem in the unicode conversion in the
+	RasEnumConnectionsW function.
+	
+	
+	RESOLUTION
+	==========
+	
+	A supported fix is now available from Microsoft, but it is only intended to
+	correct the problem described in this article and should be applied only to
+	systems experiencing this specific problem. This fix may receive additional
+	testing at a later time, to further ensure product quality. Therefore, if you
+	are not severely affected by this problem, Microsoft recommends that you wait
+	for the next Windows NT 4.0 service pack that contains this fix.
+	
+	To resolve this problem immediately, contact Microsoft Product Support Services
+	to obtain the fix. For a complete list of Microsoft Product Support Services
+	phone numbers and information about support costs, please go to the following
+	address on the World Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	NOTE: In special cases, charges that are normally incurred for support calls may
+	be canceled, if a Microsoft Support Professional determines that a specific
+	update will resolve your problem. Normal support costs will apply to additional
+	support questions and issues that do not qualify for the specific update in
+	question.
+	
+	The English-language version of this fix should have the following file
+	attributes or later:
+	
+	  Date        Time    Version        Size     File name     Platform
+	  ------------------------------------------------------------------
+	  01/10/2001  05:09p  4.0.1381.7001  127,760  Rasapi32.dll  Intel
+	
+	
+	
+	WORKAROUND
+	==========
+	
+	To work around this problem, you can use the ASCII version of this the
+	RasEnumConnectionsW function, RasEnumConnectionsA.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products that are
+	listed at the beginning of this article.
+	
+	MORE INFORMATION
+	================
+	
+	Note that Windows NT 4.0 and Microsoft Windows 2000 use a different naming
+	convention for the RASCONN.DeviceType field that is returned by the
+	RASEnumConnecionts function. Windows 2000 uses RASDT_VPN, and Windows NT 4.0
+	uses virtual private network (VPN).
+	
+	Additional query words: dial up settings
+	
+	======================================================================
+	Keywords          : kbenv kbtool kbWinNT400PreSP7Fix kbWinNTsearch 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+	Version           : :4.0
+	Hardware          : ALPHA x86
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

@@ -1,0 +1,62 @@
+---
+layout: page
+title: "Q155779: WD97: Copies Not Reset to One After Selecting Different Printer"
+permalink: kb/155/Q155779/
+---
+
+## Q155779: WD97: Copies Not Reset to One After Selecting Different Printer
+
+	Article: Q155779
+	Product(s): Word 97 for Windows
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbualink97
+	Last Modified: 07-FEB-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	When you open the Print dialog box and select a different printer, the Copies
+	option is not reset to 1. This problem occurs when all of the following are
+	true:
+	
+	- You have at least two printers installed. One printer has the Copies property
+	  set to a number greater than one; the other printer has the Copies property
+	  set to one.
+	
+	- You print first to the printer that has the Copies property set to a number
+	  greater than one.
+	
+	- You then print to the printer which has the Copies property set to one.
+	
+	CAUSE
+	=====
+	
+	The File Print dialog box is not updated properly when you select the second
+	printer from the list box. For example, if you first print to a printer set up
+	to print three copies and then switch to a second printer that is set up to
+	print one copy, the Copies option shows three copies instead of one copy.
+	
+	
+	WORKAROUND
+	==========
+	
+	To work around this problem, change the Copies option to one after you select
+	the second printer.
+	
+	Additional query words: 8.0 word8 word97 printing many more multiple
+	
+	======================================================================
+	Keywords          : kbualink97 
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : :
+	
+	=============================================================================
+	

@@ -1,0 +1,147 @@
+---
+layout: page
+title: "Q85478: INFO: Error C2593 When Archiving an Enumerated Type"
+permalink: kb/085/Q85478/
+---
+
+## Q85478: INFO: Error C2593 When Archiving an Enumerated Type
+
+	Article: Q85478
+	Product(s): Microsoft C Compiler
+	Version(s): winnt:
+	Operating System(s): 
+	Keyword(s): kbcode kberrmsg kbCompiler kbCPPonly kbVC
+	Last Modified: 22-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The C/C++ Compiler (CL.EXE), included with:
+	   - Microsoft C/C++ for MS-DOS, version 7.0 
+	   - Microsoft Visual C++, versions 1.0, 1.5, 1.51, 1.52 
+	   - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, versions 1.0, 2.0, 2.1, 4.0 
+	   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+	   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	In ANSI C, enumerated types are synonyms for "int"; however, in C++, enumerated
+	types are distinct integral types but are not integers themselves. Therefore, if
+	e is an enumerated type and archive is of type CArchive, compiling these
+	statements
+	
+	     archive << e;
+	     archive >> e;
+	
+	results in the following error messages from Microsoft C/C++ versions 7.0 and
+	8.0:
+	
+	  error C2593: 'operator <<' is ambiguous
+	
+	  error C2593: 'operator >>' is ambiguous
+	
+	The compiler cannot choose which operator to use, because the enumerated type
+	could be promoted to match any integral type. The programmer must specify which
+	integral type the operator should use.
+	
+	MORE INFORMATION
+	================
+	
+	The following are the prototypes taken from AFX.H. These are the functions that
+	the compiler chooses from when it compiles the statement "archive << e;"
+	
+	    CArchive& operator<<( BYTE by );
+	     CArchive& operator<<( WORD w );
+	     CArchive& operator<<( LONG l );
+	     CArchive& operator<<( DWORD dw );
+	
+	where BYTE, WORD, LONG, and DWORD are defined in AFX.H as follows:
+	
+	     typedef unsigned char    BYTE;   // 8-bit unsigned entity
+	     typedef unsigned short   WORD;   // 16-bit unsigned number
+	     typedef long             LONG;   // 32-bit signed number
+	     typedef unsigned long    DWORD;  // 32-bit unsigned number
+	
+	Therefore, the following statements compile without error:
+	
+	     archive << (WORD) e;
+	     archive >> (WORD&) e;
+	
+	-or-
+	
+	     archive << (unsigned short) e;
+	     archive >> (unsigned short&) e;
+	
+	NOTE: The following statements do not compile because they are also ambiguous:
+	
+	     archive << (int) e;
+	     archive >> (int&) e;
+	
+	In these cases, the compiler cannot choose which operator to use, because the int
+	could be promoted to match any integral type. Again, the programmer must specify
+	which integral type the compiler should use.
+	
+	The following is a complete example demonstrating how to store and load an
+	enumerated type:
+	
+	Sample Code
+	-----------
+	
+	     /* Compile options needed: none
+	     */ 
+	
+	     #define _DOS
+	     #include <afx.h>
+	
+	     enum DAY
+	     {
+	        sunday, monday, tuesday, wednesday, thursday, friday, saturday
+	     };
+	
+	     void main( void );
+	
+	     void main( )
+	     {
+	        CFile myFile;
+	
+	     // Open the file for writing and associate an archive object with it.
+	
+	        myFile.Open( "testfile", CFile::modeWrite, NULL );
+	        CArchive archiveOut( &myFile, CArchive::store );
+	
+	        enum DAY today = tuesday;
+	
+	     // Use the insertion operator to store the enumerated value
+	     //    archiveOut << today;
+	     // will generate an error
+	
+	        archiveOut << (WORD) today;
+	
+	        archiveOut.Close();
+	        myFile.Close();
+	
+	     // Open the file for reading and associate an archive object with it.
+	
+	        myFile.Open( "testfile", CFile::modeRead, NULL );
+	        CArchive archiveIn( &myFile, CArchive::load );
+	
+	     // Use the extraction operator to load the enumerated value
+	     // "archiveIn >> today;" would generate an error
+	
+	        archiveIn >> (WORD&) today;
+	
+	        archiveIn.Close();
+	     }
+	
+	Additional query words: 8.00 8.00c 9.00 9.10
+	
+	======================================================================
+	Keywords          : kbcode kberrmsg kbCompiler kbCPPonly kbVC 
+	Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+	Version           : winnt:
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

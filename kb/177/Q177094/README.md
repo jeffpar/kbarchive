@@ -1,0 +1,99 @@
+---
+layout: page
+title: "Q177094: PRB: ActiveX Control Cannot Assign Run-Time Read-Only Property"
+permalink: kb/177/Q177094/
+---
+
+## Q177094: PRB: ActiveX Control Cannot Assign Run-Time Read-Only Property
+
+	Article: Q177094
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbGrpDSVB
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When your Usercontrol attempts to expose a run-time read-only property of a
+	constituent control, you get the following error:
+	
+	  Compile Error:
+	  Can't Assign to Read-Only Property
+	
+	CAUSE
+	=====
+	
+	The run-time read-only properties of constituent controls cannot be exposed.
+	
+	Because properties of the UserControl object and constituent controls are exposed
+	by delegation, you cannot expose design-time-only properties such as Appearance
+	and ClipControls. The settings you choose for such properties will be fixed for
+	your ActiveX control.
+	
+	STATUS
+	======
+	
+	This behavior is by design.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Start a new ActiveX Control project in Visual Basic. UserControl1 is created
+	  by default.
+	
+	2. Add a text box to UserControl1.
+	
+	3. Copy the following code to the Code window of UserControl1:
+	
+	        Option Explicit
+	        Property Let Multiline(b As Boolean)
+	           Text1.Multiline = b
+	        End Property
+	
+	        Property Get Multiline() As Boolean
+	           Multiline = Text1.Multiline
+	        End Property
+	
+	4. Close UserControl1.
+	
+	5. Add a Standard EXE project to the project group by completing the following
+	  steps:
+	
+	  1. From the File Menu, click Add Project. The Add Project dialog box
+	     displays.
+	
+	  2. Click Standard EXE and click Open to close the Add Project dialog box and
+	     open the Form1 form of the second project.
+	
+	6. Add Usercontrol1 to Form1.
+	
+	7. In the Properties window for the Usercontrol, attempt to set the MultiLine
+	  property to True and note that you receive the compile error described above.
+	
+	REFERENCES
+	==========
+	
+	"Exposing Properties of Constituent Controls", Books Online
+	
+	Additional query words: kbVBp500 kbVBp600 kbVBp kbdsd kbDSupport KBCONTROL KBCTRLCREATE
+	
+	======================================================================
+	Keywords          : kbGrpDSVB 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+	Issue type        : kbprb
+	
+	=============================================================================
+	

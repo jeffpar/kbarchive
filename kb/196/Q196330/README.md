@@ -1,0 +1,108 @@
+---
+layout: page
+title: "Q196330: STOP 0x0000001E May Occur in Win32k.sys Under Stress"
+permalink: kb/196/Q196330/
+---
+
+## Q196330: STOP 0x0000001E May Occur in Win32k.sys Under Stress
+
+	Article: Q196330
+	Product(s): Microsoft Windows NT
+	Version(s): 4.0
+	Operating System(s): 
+	Keyword(s): kbWinNT400sp5fix
+	Last Modified: 16-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 4.0 
+	- Microsoft Windows NT Server version 4.0 
+	- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+	- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Under stress, a computer running Windows NT Server or Workstation may display a
+	STOP 0x0000001E error message on a blue screen. The first parameter is C0000005.
+	This can occur without user activity in the foreground.
+	
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, obtain the latest service pack for Windows NT 4.0 or
+	the individual software update. For information on obtaining the latest service
+	pack, please go to:
+	
+	- http://www.microsoft.com/Windows/ServicePacks/
+	
+	-or-
+	
+	- Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+	
+	For information on obtaining the individual software update, contact Microsoft
+	Product Support Services. For a complete list of Microsoft Product Support
+	Services phone numbers and information on support costs, please go to the
+	following address on the World Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	
+	Windows NT 4.0, Terminal Server Edition
+	---------------------------------------
+	
+	A supported fix is now available from Microsoft, but it is only intended to
+	correct the problem described in this article and should be applied only to
+	systems experiencing this specific problem. This fix may receive additional
+	testing at a later time, to further ensure product quality. Therefore, if you
+	are not severely affected by this problem, Microsoft recommends that you wait
+	for the next service pack that contains this fix.
+	
+	To resolve this problem immediately, contact Microsoft Product Support Services
+	to obtain the fix. For a complete list of Microsoft Product Support Services
+	phone numbers and information about support costs, please go to the following
+	address on the World Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	NOTE: In special cases, charges that are normally incurred for support calls may
+	be canceled, if a Microsoft Support Professional determines that a specific
+	update will resolve your problem. Normal support costs will apply to additional
+	support questions and issues that do not qualify for the specific update in
+	question.
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	  
+	
+	 Date       Time      Size       File Name 
+	 ---------------------------------------------
+	03/27/2001  10:20a    170,256    Gdi32.dll
+	07/11/2000  03:44p    331,536    User32.dll
+	09/07/2001  08:46a  1,279,920    Win32k.sys
+	08/03/2001  11:38a    195,856    Winsrv.dll
+	
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Windows NT version 4.0. This
+	problem was first corrected in Windows NT version 4.0 Service Pack 5.
+	
+	Additional query words: 4.00
+	
+	======================================================================
+	Keywords          : kbWinNT400sp5fix 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch
+	Version           : :4.0
+	Hardware          : ALPHA x86
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

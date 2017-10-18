@@ -1,0 +1,121 @@
+---
+layout: page
+title: "Q68950: Windows Err Msg: Insufficient Memory to Run Setup for..."
+permalink: kb/068/Q68950/
+---
+
+## Q68950: Windows Err Msg: Insufficient Memory to Run Setup for...
+
+	Article: Q68950
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:3.0,3.0a
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 06-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows versions 3.0, 3.0a 
+	-------------------------------------------------------------------------------
+	
+	
+	SUMMARY
+	=======
+	
+	When attempting to set up or configure a printer driver from the Microsoft
+	Windows Supplemental Driver Library (SDL), the following error message may
+	appear
+	
+	  Insufficient memory to run Setup for <printer> driver
+	
+	where <printer> is the name of the printer driver file.
+	
+	This error can be caused by one of the following conditions:
+	
+	- There is not enough memory to run the printer setup.
+	
+	-or-
+	
+	- The generic driver support files, GENDRV.EXE and GENLIB.DLL, are missing,
+	  corrupted, or did not get copied into the Windows \SYSTEM subdirectory during
+	  printer installation.
+	
+	MORE INFORMATION
+	================
+	
+	If there is not enough memory to run Printer Setup, try to increase available
+	memory by closing all other open applications.
+	
+	There are several SDL printer drivers (listed below) that are actually "printer
+	definition files" and not complete drivers. They require the following two
+	generic driver support files to be present in the \WINDOWS\SYSTEM subdirectory.
+	
+	Filename     Size     Date       Location
+	----------   ------   ------     ---------
+	
+	GENDRV.EXE  71808    9-20-90     (5.25-inch disk 2)
+	GENDRV.EXE  71808    9-20-90     (3.5-inch disk 7)
+	
+	GENLIB.DLL  65792    9-20-90     (5.25-inch disk 4)
+	GENLIB.DLL  65792    9-20-90     (3.5-inch disk 4)
+	
+	These files is normally copied as part of the setup for the printer driver from
+	the SDL disk. Some printers require some additional support files to function
+	correctly. These additional files are also included on the SDL.
+	
+	The following printer drivers are supplied on the SDL and require the generic
+	driver support files GENDRV.EXE and GENLIB.DLL:
+	
+	Printer                 Filename
+	--------                -----------
+	Bitstream Flex          FLEX.DRV
+	Brother M-1809-Epson    BROTH9.DRV
+	Brother M-1909-Epson    BROTH9.DRV
+	Brother M-1824L         BROTH24.DRV
+	Brother M-1924L         BROTH24.DRV
+	Canon BJ-130e           CANON130.DRV
+	Canon BJ-10e            CANON10E.DRV
+	Canon LBP-4             LBPIII.DRV
+	Canon LBP-8 III         LBPIII.DRV
+	Canon LBP-8 III-D       LBPIII.DRV
+	IBM Quickwriter 5204    IBM5204.DRV
+	JDL 850                 JDL850.DRV
+	JDL 950                 JDL850.DRV
+	Kodak Diconix 150       DCNX150.DRV
+	Kodak Diconix 150 Plus  DCNX150P.DRV
+	Okidata OL-820          OL820.DRV
+	Olivetti DM-309         DM309.DRV
+	Seiko CH-5504           CH5500.DRV
+	Seiko CH-5514           CH5500.DRV
+	Star XB-2410            STARM24.DRV
+	Star XB-2415            STARM24.DRV
+	Star NX-1000 II         STARM9.DRV
+	
+	If the GENDRV.EXE and GENLIB.DLL generic driver support files did not get copied
+	into the \WINDOWS\SYSTEM subdirectory, you may copy these files from the SDL
+	disks manually. If they are missing or corrupt, you should contact Microsoft
+	Product Support at (425) 454-2030.
+	
+	To acquire the Microsoft Windows Supplemental Driver Library (SDL), please
+	contact Microsoft Sales and Service at (800) 426-9400.
+	
+	REFERENCES
+	==========
+	
+	"Microsoft Windows User's Guide." Version 3.00, "Installing a Printer" section,
+	page 158.
+	
+	"Microsoft Windows User's Guide." Version 3.00, "Configuring a Printer," page
+	164.
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+	Version           : WINDOWS:3.0,3.0a
+	
+	=============================================================================
+	

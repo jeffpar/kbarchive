@@ -1,0 +1,366 @@
+---
+layout: page
+title: "Q95555: Overview of Memory-Management Functionality in MS-DOS"
+permalink: kb/095/Q95555/
+---
+
+## Q95555: Overview of Memory-Management Functionality in MS-DOS
+
+	Article: Q95555
+	Product(s): Microsoft Disk Operating System
+	Version(s): 3.1,3.2,3.21,3.3,3.3a,4.0,4.01,5.0,5.0a,6.0,6.2,6.21,6.22
+	Operating System(s): 
+	Keyword(s): kbfile msdos
+	Last Modified: 06-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft MS-DOS operating system versions 3.1, 3.2, 3.21, 3.3, 3.3a, 4.0, 4.01, 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article contains an overview of how expanded memory that conforms to the
+	Expanded Memory Specification (EMS) and extended memory that conforms to the
+	Extended Memory Specification (XMS) is created and managed in MS- DOS versions
+	5.0 and later by the device drivers HIMEM.SYS and EMM386.EXE. How MS-DOS is
+	loaded into the high memory area (HMA) and manages upper memory blocks (UMBs)
+	are also discussed.
+	
+	NOTE: Before reading this article, you may want to review the sections about
+	memory management, HIMEM.SYS, and EMM386.EXE in your printed MS-DOS
+	documentation. If you are using MS-DOS 6.0, 6.2, 6.21, or 6.22, refer to the
+	online help. For example, type "help emm386.exe" (without the quotation marks)
+	at the MS-DOS command prompt.
+	
+	Information in this article is organized as follows:
+	
+	- Old Extended Memory Allocation Methods: Interrupt 15h and VDisk Headers
+	
+	- HIMEM.SYS Creates XMS Memory
+	
+	- A20 and the HMA
+	
+	- DOS=HIGH Asks MS-DOS to Run in the HMA
+	
+	- EMM386.EXE [RAM | NOEMS] Uses XMS to Create EMS and/or UMBs
+	
+	- DOS=UMB Asks MS-DOS to Manage UMBs
+	
+	- DEVICEHIGH=[<drive>:][\<path>\]<filename>
+	
+	- LH (LOADHIGH)
+	
+	- DEVICEHIGH AND LOADHIGH WITH /L: AND /S
+	
+	- MEM Reports on Memory MS-DOS Is Managing
+	
+	- How MS-DOS Uses Extended or Expanded Memory
+	
+	- Available References
+	
+	NOTE: Only the section "How MS-DOS Uses Extended or Expanded Memory" applies to
+	MS-DOS versions 3.x and 4.x.
+	
+	MORE INFORMATION
+	================
+	
+	Old Extended-Memory Allocation Methods: Interrupt 15h & VDisk Headers
+	---------------------------------------------------------------------
+	
+	In the past, there were two ways for programs to allocate extended memory:
+	top-down (using Interrupt 15) and bottom-up (using VDisk headers).
+	
+	Interrupt 15h is a ROM BIOS service that includes several extensions to the
+	original PC ROM BIOS, including the means to find out how much RAM (conventional
+	plus extended) is on the system. A program uses this service to find out how
+	much extended memory there is, then "hooks" Interrupt 15h and reports to any
+	other programs that there is <n>K less memory available, effectively
+	slicing <n>K of extended memory off the top. By doing this, the program
+	has allocated its own extended memory from the top of the memory pool.
+	
+	Bottom-up memory allocation works by checking for a header at the start of
+	extended memory stating that <n>K of RAM is in use. If a header is there,
+	the program checks <n>K further for another header. If no header exists,
+	the program puts in its own header. These headers are called VDisk headers
+	because the original IBM DOS RAM drive utility (VDISK.SYS) uses this method.
+	
+	A drawback to these methods is that after memory has been allocated to a program,
+	deallocating it is usually not possible. The XMS was designed to make allocating
+	and deallocating extended memory easier for all involved.
+	
+	HIMEM.SYS Creates XMS Memory
+	----------------------------
+	
+	HIMEM.SYS implements all of the XMS except the optional UMB portion. HIMEM.SYS
+	versions earlier than 3.0 are XMS 2.0 compliant and recognize up to 16 MB of
+	RAM; versions 3.0 and later (first included with Windows 3.10 and MS-DOS 6.0)
+	are XMS 3.0 compliant and recognize up to 4 GB.
+	
+	On loading, HIMEM.SYS determines the amount of extended memory available. Unless
+	it was loaded with the /INT15= option, HIMEM.SYS sets out to allocate all
+	available extended memory for use as XMS memory (note the actual allocation of
+	all the available extended memory does not occur until a program makes an XMS
+	function call). HIMEM.SYS reserves the HMA with a VDisk header and hooks
+	Interrupt 15h. Programs that want to use extended memory (other than the HMA)
+	without using XMS can do so until a program actually requests XMS.
+	
+	After a program actually asks for XMS memory, HIMEM.SYS uses its Interrupt 15h
+	hook to notify programs that only the amount of extended memory specified by
+	/INT15=xxxx, minus the HMA (64K), is available for use. Memory available through
+	/INT15=xxxx is physically located above the HMA; XMS- managed RAM is physically
+	located above any /INT15=xxxx RAM.
+	
+	A20 and the HMA
+	---------------
+	
+	The HMA is defined as FFFF:0010-FFFF:FFFF on 80286 and higher systems that have
+	physical addressable RAM at these addresses. This area can be addressed in real
+	mode (8086 emulation) on 80286 and higher systems if the 21st address line (A20)
+	is enabled, which produces 64K-16 bytes of additional usable RAM. On an 8086 or
+	an 80x86 with the A20 line disabled, FFFF:0010 "wraps around" and is the same as
+	0000:0000.
+	
+	Turning this line on and off is accomplished using the keyboard port and is
+	hardware dependent. HIMEM.SYS includes a number of "A20 handlers" for different
+	machines. The XMS allocates and deallocates the HMA as one block, that is, only
+	one program can use it at a time. MS-DOS 5.0 and later can run in the HMA if
+	DOS=HIGH is in the CONFIG.SYS file.
+	
+	DOS=HIGH Asks MS-DOS to Run in the HMA
+	--------------------------------------
+	
+	If DOS=LOW or no DOS= command is in the CONFIG.SYS file, MS-DOS and its data are
+	initialized and loaded into their final place in low memory before the DEVICE=
+	and DEVICEHIGH= commands are processed.
+	
+	If the DOS=HIGH command is in the CONFIG.SYS file, MS-DOS data (which must remain
+	low for compatibility) is loaded into its final place in conventional memory.
+	After each device driver is initialized, a check is made to determine if an XMS
+	driver has been installed. If so, and if the HMA is available, MS-DOS is moved
+	into the HMA. If not, MS-DOS keeps checking after each DEVICE[HIGH]= command,
+	and then begins processing the INSTALL= commands.
+	
+	If a DOS=HIGH command exists but MS-DOS hasn't loaded high (if no XMS driver was
+	loaded or the HMA wasn't available), MS-DOS reports "HMA not available/loading
+	DOS low" and loads itself into conventional memory above all the installable
+	device drivers and/or terminate-and-stay-resident (TSR) programs loaded with
+	INSTALL=.
+	
+	The transient portion of COMMAND.COM remains in conventional memory whether
+	MS-DOS is loaded high or low. Most of the COMMAND.COM resident portion, any
+	software code pages, and the disk buffers (usually) also load high if DOS=HIGH
+	is in the CONFIG.SYS file.
+	
+	EMM386.EXE [RAM | NOEMS] Uses XMS to Create EMS and/or UMBs
+	-----------------------------------------------------------
+	
+	EMM386.EXE is a device driver for 80386 and higher systems with XMS memory.
+	EMM386.EXE uses XMS memory to create and manage EMS memory and/or XMS upper
+	memory blocks (UMBs). EMS is available to programs through the EMS 4.0
+	interface; UMBs are available through the XMS interface. When providing UMBs,
+	EMM386.EXE answers only requests to allocate or deallocate UMBs; all other XMS
+	memory is managed by HIMEM.SYS.
+	
+	On loading, EMM386.EXE shows a report of its activity. Among other things, this
+	report includes:
+	
+	- Whether EMS memory is being provided, and, if so:
+	
+	   - Amount of EMS available
+	
+	   - Address of EMS page frame segment
+	
+	- If UMBs are being provided, the following is also shown:
+	
+	   - Amount of UMBs available through the XMS
+	
+	   - Largest UMB available through the XMS
+	
+	   - Address of upper memory starting segment
+	
+	This report is also available at the MS-DOS command prompt by running
+	EMM386.EXE.
+	
+	NOTE: EMM386.EXE versions 4.45 and later do not display this information at
+	startup UNLESS the /VERBOSE switch is used.
+	
+	DOS=UMB Asks MS-DOS to Manage UMBs
+	----------------------------------
+	
+	The DOS=UMB command asks MS-DOS to allocate any UMBs available through the XMS to
+	itself. MS-DOS then makes UMBs available through its own memory- management
+	services in Interrupt 21h, including:
+	
+	  Function        Description                     Version
+	  -------------------------------------------------------
+	  48h             Allocate memory                 2.0
+	  49h             Free allocated memory           2.0
+	  4Ah             Set memory block size           2.0
+	  5800h           Get allocation strategy         2.0
+	  5801h           Set allocation strategy         2.0
+	  5802h           Get upper-memory link status    5.0
+	  5803h           Set upper-memory link status    5.0
+	
+	If DOS=UMB is in the CONFIG.SYS file, EMM386.EXE reports that 0 (zero) UMBs are
+	available from the MS-DOS command prompt, and any program that attempts to use
+	UMBs through the XMS services is unable to find them.
+	
+	Users can determine whether MS-DOS has any UMBs available by using the MEM /C
+	command. Programs can use Interrupt 21h, Function 5803h to determine if UMBs
+	exist.
+	
+	DEVICEHIGH=[<drive>:][\<path>\]<filename>
+	-----------------------------------------
+	
+	The DEVICEHIGH= command asks that the device driver file be loaded into an MS-DOS
+	UMB if there is one available that is big enough. If there isn't, the driver is
+	loaded into conventional memory and executed; no error is displayed by MS-DOS.
+	
+	LH (LOADHIGH)
+	-------------
+	
+	The LH (or LOADHIGH) command tells MS-DOS to load the program file into an MS-DOS
+	UMB if there is one available that is big enough. If there is not, the program
+	is loaded into conventional memory and executed; no error is displayed by
+	MS-DOS.
+	
+	DEVICEHIGH AND LOADHIGH WITH /L: AND /S
+	---------------------------------------
+	
+	If you are using MS-DOS version 6.0, 6.2, 6.21, or 6.22, you can use the /L and
+	/S switches to control the memory regions into which a device driver or program
+	is loaded.
+	
+	  DEVICEHIGH [[/L:region1[,minsize1][;region2[,minssize2] [/S]]=
+	
+	The /L: switch specifies the memory region(s) a program can be loaded into. If
+	the /L: switch is not specified, MS-DOS loads the program into the largest free
+	UMB and all other UMB regions are available to the program. Use the MEM /F
+	command to view the available memory regions. (Region 0 is conventional
+	memory.)
+	
+	The /S switch shrinks the UMB to the minimum size (minsize) while the program is
+	loading. This switch can only be used in conjunction with the /L: switch and
+	affects only UMBs for which a minimum size was specified.
+	
+	The following is an example:
+	
+	 LOADHIGH /L:1,12194;2,34213 /S C:\PROGDIR\PROGRAM.EXE
+	
+	This command loads PROGRAM.EXE and restricts it to load into memory regions 1 and
+	2. The program has access to only 12,194 bytes in region 1 and only 34,213 bytes
+	in region 2.
+	
+	NOTE: Rather than attempting to manually configure the memory regions programs
+	load into, MS-DOS 6.0, 6.2, 6.21, and 6.22 users are encouraged to run the
+	MemMaker memory optimization program. To run MemMaker, type "memmaker" (without
+	the quotation marks) at the MS-DOS command prompt.
+	
+	MEM Reports on Memory MS-DOS Is Managing
+	----------------------------------------
+	
+	If MS-DOS is managing UMBs (DOS=UMB), MEM /C or MEM /D includes the UMA in its
+	report. Any areas not being managed by MS-DOS are labeled "SYSTEM" in this
+	report. For UMB information, type "mem /c | more" (without the quotation marks)
+	at the MS-DOS command prompt. (Note that if you are using MS-DOS 6.0 or later,
+	you can type "mem /c /p" (without the quotation marks) to view the memory report
+	one screen at a time.)
+	
+	If MS-DOS is not managing the UMBs, MEM does not report on the UMA. Other UMB
+	managers typically have some means to determine what is loading high. Check the
+	documentation for your UMB manager for details.
+	
+	MEM also includes information about extended memory (determined using the
+	Interrupt 15/VDisk header interface), the XMS (reported through the XMS 2.0 or
+	3.0 interface), and the EMS (reported through the EMS 3.2 or 4.0 interface) for
+	your convenience.
+	
+	How MS-DOS Uses Extended or Expanded Memory
+	-------------------------------------------
+	
+	As a whole, MS-DOS does not use extended or expanded memory for general usage or
+	for loading applications.
+	
+	However, some MS-DOS utilities and drivers use extended or expanded memory for
+	data areas. In addition, MS-DOS versions 5.0 and later load most of the MS-DOS
+	kernel, command interpreter, code pages (if used), and disk buffers into the
+	HMA, which is the first 64K of extended memory.
+	
+	The table below outlines which MS-DOS utilities use extended memory without an
+	extended memory driver, extended memory through an XMS driver, or expanded
+	memory through a Lotus-Intel-Microsoft (LIM) EMS driver.
+	
+	These utilities load into conventional memory but use nonconventional memory for
+	data areas. Because different versions of many utilities that ship with MS-DOS
+	also ship with Microsoft Windows, the Windows versions are included in this
+	table. Microsoft recommends that you do not mix versions of these drivers that
+	are included with different products.
+	
+	                              Non-XMS
+	                       Conv.  Extended   XMS      LIM 3.2/4.0 EMS
+	                       ------------------------------------------
+	RAMDRIVE.SYS  3.3      Yes    Yes        No        Yes
+	RAMDRIVE.SYS  4.x      Yes    Yes        No        Yes
+	RAMDRIVE.SYS  Win30    Yes    No         Yes       Yes
+	RAMDRIVE.SYS  5.x      Yes    No         Yes       Yes
+	RAMDRIVE.SYS  Win31    Yes    No         Yes       Yes
+	RAMDRIVE.SYS  6.0-6.22 Yes    No         Yes       Yes
+	
+	SMARTDRV.SYS  4.x      No     Yes        No        Yes
+	SMARTDRV.SYS  Win30    No     No         Yes       Yes
+	SMARTDRV.SYS  5.x      No     No         Yes       Yes
+	SMARTDRV.EXE  All      No     No         Yes       No
+	
+	HIMEM.SYS (1) All      No     Yes        Provider  No
+	
+	EMM386.SYS(2) 4.x      No     Yes        No        Provider
+	EMM386.SYS(3) Win30    No     No         Yes       Provider
+	EMM386.EXE(3) All      No     No         Yes(4)    Provider
+	
+	  (1) Uses extended memory to provide XMS memory
+	  (2) Uses extended memory to provide EMS memory
+	  (3) Uses XMS memory to emulate EMS memory
+	  (4) MS-DOS 5.0 and later EMM386.EXE can also be configured to
+	      provide UMBs according to the XMS. This causes EMM386.EXE
+	      to be a provider of the UMB portion of the XMS.
+	
+	In MS-DOS versions 4.x, you can place the disk buffers in expanded memory by
+	using the /X switch; however, this is not recommended because of problems that
+	may arise. SMARTDRV can provide much of the same performance enhancements and is
+	preferable to using BUFFERS /X. For more information about BUFFERS /X, query in
+	the Microsoft Knowledge Base on the following words:
+	
+	  buffers and ems and /x
+	
+	Loading the disk buffers in EMS memory is not supported in MS-DOS versions 5.0
+	and later. These versions support loading the MS-DOS kernel and, if there is
+	room, the disk buffers into the HMA. MS-DOS accesses the HMA through the XMS
+	protocol.
+	
+	Available References
+	--------------------
+	
+	The official LIM EMS specification, "Lotus/Intel/Microsoft Expanded Memory
+	Specification Version 4.0," is available from Intel by calling (800) 538- 3373.
+	
+	The official XMS specification, "Extended Memory Specification Version 3.0," is
+	available free from Microsoft. To obtain the specification, see the
+	"Instructions for Downloading" section below.
+	
+	The official MS-DOS program interface documentation, "Microsoft MS-DOS
+	Programmer's Reference," is available from Microsoft Press (by calling [800]
+	677-7377), or internationally through Penguin Books.
+	
+	
+	Additional query words: 3.20 3.30 3.30a 4.00 4.01 4.01a 5.00 6.00 6.20
+	
+	======================================================================
+	Keywords          : kbfile msdos 
+	Technology        : kbMSDOSSearch kbMSDOS321 kbMSDOS400 kbMSDOS320 kbMSDOS330a kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS310 kbMSDOS500 kbMSDOS330 kbMSDOS401 kbMSDOS500a
+	Version           : :3.1,3.2,3.21,3.3,3.3a,4.0,4.01,5.0,5.0a,6.0,6.2,6.21,6.22
+	
+	=============================================================================
+	

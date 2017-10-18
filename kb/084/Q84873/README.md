@@ -1,0 +1,74 @@
+---
+layout: page
+title: "Q84873: COMxFIFO Does Not Properly Understand True and False"
+permalink: kb/084/Q84873/
+---
+
+## Q84873: COMxFIFO Does Not Properly Understand True and False
+
+	Article: Q84873
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:3.1,3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 05-OCT-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows versions 3.1, 3.11 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The SYSTEM.INI [386Enh] setting COMxFIFO= does not correctly understand
+	True/False, On/Off, or Yes/No. Using any non-numerical value sets the switch to
+	"0" and therefore disables the FIFO.
+	
+	CAUSE
+	=====
+	
+	The COMxFIFO= setting is not fully Boolean aware.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Windows version 3.1. We are
+	researching this problem and will post new information here in the Microsoft
+	Knowledge Base as it becomes available.
+	
+	WORKAROUND
+	==========
+	
+	Use the following settings: COMxFIFO=1 (On)
+	
+	  -or-
+	
+	COMxFIFO=0 (Off)
+	
+	MORE INFORMATION
+	================
+	
+	This switch is used to enable or disable Windows 3.1 support for Windows-based
+	applications using a COM port with a 16550 Universal Asynchronous Receiver
+	Transmitter (UART). The 16550 has a 16-byte character FIFO buffer, or first-in,
+	first-out buffer.
+	
+	The SYSINI.WRI file from the Microsoft Windows Resource Kit (WRK) for version 3.1
+	incorrectly identifies TRUE/FALSE as functioning with this switch. Page 196 of
+	the WRK guide incorrectly identifies On/Off as functioning with this switch.
+	
+	For more information on this setting, query on:
+	
+	  COMMQ&A and windows 3.1
+	
+	Additional query words: 3.10 3.11 crc xmodem documentation error doc err
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+	Version           : WINDOWS:3.1,3.11
+	
+	=============================================================================
+	

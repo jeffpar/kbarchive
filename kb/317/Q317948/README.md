@@ -1,0 +1,102 @@
+---
+layout: page
+title: "Q317948: IIS 5.1 Application Mappings OK Button Unavailable"
+permalink: kb/317/Q317948/
+---
+
+## Q317948: IIS 5.1 Application Mappings OK Button Unavailable
+
+	Article: Q317948
+	Product(s): Internet Information Server
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 19-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Services version 5.1, used with:
+	   - the operating system: Microsoft Windows XP 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you add application mappings in Internet Information Services (IIS) on a
+	computer that is running Windows XP Professional Edition, the OK button is
+	unavailable after you type or browse to the path of the .exe file or the .dll
+	file and type the file name extension.
+	
+	WORKAROUND
+	==========
+	
+	To work around this problem, follow these steps:
+	
+	1. Right-click the individual Web site or the Web Sites folder, and then click
+	  Properties.
+	
+	2. On the Home Directory tab, click Configuration.
+	
+	3. Under Application Configuration, click Add, and then click the Mappings tab.
+	
+	4. With the Add/Edit Application Extension Mapping dialog box open, click Browse
+	  to select the .exe file or the .dll file from the local path on the Web
+	  server.
+	
+	  NOTE: You must type the path to a valid file in the Executable text box or the
+	  OK button remains unavailable. The easiest way to make sure that you enter a
+	  valid path is to select the file by using the Browse button.
+	
+	5. After the path appears in the Executable text box, click in the Executable
+	  text box to initialize the path.
+	
+	6. Click in the Extension space, and then type the file name extension.
+	
+	  NOTE: You must enter the period (.) in front of the extension in the Extension
+	  text box, or the OK button remains unavailable.
+	
+	7. When the OK button becomes active, click OK to continue.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce the Behavior
+	-------------------------------
+	
+	1. Right-click the individual Web site or the Web Sites folder, and then click
+	  Properties.
+	
+	2. On the Home Directory tab, click Configuration.
+	
+	3. Under Application Configuration, click Add, and then click the Mappings tab.
+	
+	4. With the Add/Edit Application Extension Mapping dialog box open, click Browse
+	  to select the .exe file or the .dll file from the local path on the Web
+	  server.
+	
+	  NOTE: In order for the problem to occur, the path must contain more than 30
+	  characters.
+	
+	5. Click in the Extension space, and then type the file name extension. Note
+	  that the OK button remains unavailable, and you cannot click OK to continue.
+	
+	REFERENCES
+	----------
+	
+	For additional information, click the article number below to view the article in
+	the Microsoft Knowledge Base:
+	
+	  Q318393 IIS: OK Button Is Disabled in Application Mappings Dialog Box
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbiisSearch kbiis510
+	Version           : :
+	Issue type        : kbprb
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

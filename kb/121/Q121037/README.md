@@ -1,0 +1,341 @@
+---
+layout: page
+title: "Q121037: MAC Encarta 1994: README Contents"
+permalink: kb/121/Q121037/
+---
+
+## Q121037: MAC Encarta 1994: README Contents
+
+	Article: Q121037
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): 1994 edition
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 26-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Encarta 1994 The Complete Multimedia Encyclopedia 
+	-------------------------------------------------------------------------------
+	
+	The following is the contents of Encarta 1994 README file contained
+	on the Encarta 1994 for the Macintosh CD:
+	
+	Microsoft Encarta 1994 for Macintosh README File
+	------------------------------------------------
+	
+	This README file contains information on the following topics:
+	
+	1.  SYSTEM REQUIREMENTS FOR RUNNING ENCARTA 1994
+	    - What you need to run Encarta
+	2.  MEMORY USE
+	    - Encarta memory usage
+	3.  PERFORMANCE
+	    - Tips on what to do if Encarta runs slowly
+	4.  COLOR CONFIGURATION AND SCREEN SIZES
+	    - What makes Encarta look best
+	5.  SOUND PROBLEMS
+	    - Common problems playing sounds and how to fix them
+	6.  WHERE ENCARTA PUTS FILES
+	    - What folders are created and files copied by the Installer
+	7.  MANUAL AND CUSTOM INSTALLATION
+	    - Other options for installing Encarta
+	8.  KNOWN PROBLEMS
+	    - Known problems and suggestions to help you work around them
+	
+	-------------------------------------------------
+	1. SYSTEM REQUIREMENTS FOR RUNNING ENCARTA 1994
+	-------------------------------------------------
+	
+	To install and run Encarta 1994 you need a minimum of the following:
+	
+	-  Any Apple Macintosh Computer that supports a 12-inch or larger
+	  monitor (512 x 384 display area or larger) running 256 or more
+	  colors
+	-  System 7.0 or later
+	-  4 MB of random-access memory (RAM) with 2.5 MB available
+	-  5 MB of available hard disk space
+	-  CD-ROM drive
+	
+	Note:
+	It is highly recommended you run Encarta 1994 on a Macintosh with a
+	13-inch screen and 6 to 8 MB of RAM.
+	
+	In order to use Encarta 1994, you must install it on your hard disk.
+	The Installer program on the CD-ROM installs the Encarta program to a
+	new folder and adds any necessary files and resources to your System
+	Folder on your hard disk.
+	
+	[ NOTE: The installation process may require more than 5 MB hard disk
+	space on machines running System 7.0 or 7.0.1. This space is required
+	only during installation: after you restart, Encarta 1994 will take
+	only 5 MB on your hard disk. Under System 7 or 7.0.1, the installation
+	program must make a copy of your System file in order to install the
+	fonts required for Encarta 1994. The extra copy of the System file is
+	removed when you restart your computer. If you encounter this problem,
+	see section 7, MANUAL AND CUSTOM INSTALLATION.]
+	
+	-------------
+	2. MEMORY USE
+	-------------
+	Encarta 1994 needs a relatively large amount of your computer's system
+	memory (RAM) to display pictures and play sounds. It should run on
+	systems with 4 MB (4,096K) of RAM and at least 2.5 MB (2,560K)
+	available. Most users will not have problems, but if you have only 4 MB
+	of RAM and your system software uses a large portion of your RAM, you
+	may need to adjust memory usage to make Encarta 1994 run properly.
+	Refer to the "Encarta & Memory Read Me" document for advice about
+	memory usage.
+	
+	---------------
+	3. PERFORMANCE
+	---------------
+	If Encarta 1994 seems to run slowly or gives you interrupted sounds or
+	film clips, here are the main things to check.
+	
+	- If you are running on a Macintosh with low memory you may experience
+	performance problems, check the previous section 2, MEMORY USE, and the
+	document "Encarta Memory Issues" for advice about memory usage.
+	
+	- If your Macintosh is using Virtual Memory, you may find that Encarta
+	1994 runs slowly. For best performance, turn off Virtual Memory. To do
+	this, open the Memory control panel, choose the Virtual Memory Off
+	option, and then restart your computer.
+	
+	- If you are using a slow CD-ROM drive, it may be not be able to supply
+	information to the Macintosh at the speed required by the software.
+	There is no workaround for this problem. If you suspect a problem with
+	your CD drive, ensure that it is properly terminated and that its
+	software is properly installed. For more information on SCSI
+	termination, read your Macintosh or CD-ROM drive documentation, or ask
+	your Apple dealer.
+	
+	----------------------------------------
+	4. COLOR CONFIGURATION AND SCREEN SIZES
+	----------------------------------------
+	Encarta 1994 requires that your monitor can display 16 colors or more.
+	If you have only 16 colors, you may prefer to run Encarta in Grayscale
+	mode. To do this, use the Monitors control panel to switch to grays.
+	
+	Encarta 1994 will run in 16-bit mode (thousands of colors) and 32-bit
+	mode (millions of colors). These video modes improve the appearance of
+	Encarta's photos and film clips; however, using 16-bit or 32-bit video
+	may slow Encarta's performance or reduce the amount of memory available
+	to Encarta. If you see low memory messages, you can increase the memory
+	available to Encarta. Refer to the "Encarta & Memory Read Me" document
+	for more details.
+	
+	------------------
+	5. SOUND PROBLEMS
+	------------------
+	If there is no sound at all, first make sure that the sound level on
+	your Macintosh is set correctly. To set the sound level, use the Sound
+	control panel and experiment with the speaker volume setting until you
+	get a comfortable sound level. If you set the sound level to maximum,
+	you may hear sound distortion.
+	
+	If your Macintosh is using Virtual Memory, you may find that sounds are
+	interrupted. When Virtual Memory is turned on, sounds are sometimes
+	placed on the hard disk rather than in RAM. For best performance, turn
+	off Virtual Memory. To do this, open the Memory control panel, choose
+	the Virtual Memory Off option, and then restart the computer.
+	
+	The sounds used in Encarta 1994 are stored on the CD-ROM in a
+	compressed format. In order to be played, the sound must be read from
+	disk and decompressed. Older or slower Macintoshes (such as the
+	Macintosh II and Macintosh LC) may experience interruptions in audio
+	playback
+	.
+	
+	On some older Macintoshes, the slider on the audio controller may not
+	reach the end of the bar by the time the sound actually finishes.
+	
+	Macintosh computers have built-in speakers. These speakers vary in
+	quality and loudness depending on which Macintosh you have. The quality
+	has generally improved in later models.
+	
+	-----------------------------
+	6. WHERE ENCARTA INSTALLER PUTS FILES
+	-----------------------------
+	The Encarta Installer program creates folders and copies files to
+	several locations. When you install Encarta 1994, the Installer program:
+	
+	- Creates a folder called "Encarta 1994" and copies the following:
+	    "Microsoft Encarta 1994" - the main Encarta application.
+	    "Encarta 1994 Read Me" - the document you are reading now.
+	    "Encarta & Memory" - a Read Me document explaining memory issues
+	      and troubleshooting.
+	    "Animation Launcher" - used to run animations in low memory
+	      situations.
+	    "Encarta Projector" - Macromedia application that plays Director
+	      movies.
+	    "Encarta Spelling" - spelling database for Encarta topic titles.
+	    "MindMaze" - an alias to the Encarta MindMaze game on the CD.
+	    "Multimedia Catalog" - a catalog of other Microsoft Home titles.
+	
+	- Creates a folder called "Encarta 1994 Preferences" in your
+	 System:Preferences folder and copies the following:
+	    "EncartaTitleCache" - (optional) to improve performance, this
+	      file containing topic titles needed frequently by Encarta is
+	      copied from the CD to the Encarta 1994 Preferences folder.
+	    "EncartaFileLocations" - a text file containing the locations of
+	      the important folders and files on the hard disk or CD.
+	
+	- Copies QuickTime 1.6.2 and SoundManager 3.0 to the System:Extensions
+	 folder (if needed)
+	
+	- Copies SoundManager 3.0 sound control panel to the System:Control
+	 Panels folder (if needed)
+	
+	- Copies V Lucida Sans fonts to System folder
+	  - the location is different for System 7.0 and 7.1
+	
+	-----------------------------
+	7. MANUAL AND CUSTOM INSTALLATION
+	-----------------------------
+	For the majority of users, using the Easy Install provided in the
+	Installer program is the best way to install Encarta 1994.
+	
+	You may wish to perform a manual or custom installation when the
+	following has occurred:
+	
+	 - You are running System 7.0 or 7.0.1 and don't have the extra hard
+	   disk space needed for installation. (See Section 1 for details.)
+	
+	 - You want to install or re-install only a portion of the files,
+	   such as QuickTime or Sound Manager.
+	
+	To perform a manual installation of Encarta 1994:
+	
+	 - Create a new folder on your hard disk titled "Encarta 1994."
+	
+	 - From the Encarta 1994 CD-ROM, open the "Installer Files" folder.
+	   (You may need to scroll down or click the zoom box in the title
+	   bar to find it.)
+	
+	 - Copy all the files from "Installer Files" into the "Encarta 1994"
+	   folder you have created on your hard disk.
+	
+	 - Open the "Encarta 1994" folder on your hard disk. Open the "System
+	   Files" folder. Move all the files from that folder to the System
+	   Folder on your hard disk. Click OK when asked if you want to put
+	   the files in the appropriate places in the System Folder.
+	
+	[Note: If you have previously installed Sound Manager 3.0 with a
+	version of QuickTime later than 1.6.2 and are told that you cannot copy
+	QuickTime over because it is in use, then do the following: (1) Move
+	the old version of QuickTime from your Extensions folder to the Trash,
+	(2) Restart your machine, (3) Copy the new version of QuickTime from
+	the "System Files" folder to your Extensions Folder on your hard disk.]
+	
+	 - Restart your Macintosh
+	
+	To perform a custom installation of Encarta 1994:
+	
+	 - Double-click the "Install Encarta" icon on the Encarta 1994 CD-
+	   ROM.
+	
+	 - Click the Customize button in the Installer dialog box.
+	
+	 - Click the files you want installed.
+	
+	[To run Encarta 1994, you must install or have previously installed the
+	Encarta 1994 application, Sound Manager 3.0 and QuickTime 1.6.2, and
+	either System 7.0 fonts or System 7.1 fonts, depending on your system.
+	To find out what system you are running, from your Apple menu go to the
+	Finder and select "About this Macintosh...".]
+	
+	-------------------
+	8. KNOWN PROBLEMS
+	-------------------
+	
+	- Animations on Power Macs turn pink
+	 Encarta animations require switching the display into 16 color mode.
+	 The Power Mac does not have a 16 color mode, so if you are in 256
+	 color mode and run an animation, some of the animation colors appear
+	 pink. In Thousands color mode, the animation colors are correct, but
+	 the controller buttons below the animations will be pink.
+	
+	- Virus protection software issues warnings during Encarta
+	 installation. Some virus protection software may confuse the
+	 Installer program's necessary actions with behaviors associated with
+	 a virus, possibly disrupting the installation process. It is
+	 recommended that you disable any virus protection software before
+	 installing Encarta, then re-enable it after the installation.
+	
+	- Non-Encarta discs don't eject
+	 On some systems, when you launch Encarta 1994 with a non-Encarta
+	 1994 disc in the CD-ROM drive, the drive will not eject that disc.
+	 To get around this problem: (1) Eject the disc from the Finder by
+	 dragging it to the Trash, (2) Insert the Encarta 1994 disc into the
+	 CD-ROM drive.
+	
+	- Restarting from the Installer program may hang on some Macintosh
+	 Performa models. This is a known problem with System 7.1P5 and
+	 earlier. Apple recommends upgrading to 7.1P6 or later. To work
+	 around this problem: (1) Turn your computer off by its power switch
+	 and wait 10 to 15 seconds, (2) Restart your computer.
+	
+	- Dialog box warns you have an incorrect version of QuickTime or Sound
+	 Manager installed. During installation, the Installer program checks
+	 the versions of QuickTime and Sound Manager present on your machine
+	 and, if necessary, replaces them with newer versions. However, the
+	 Installer cannot remove older versions if you have renamed them. For
+	 example, if you renamed an older version of QuickTime "My
+	 QuickTime," the Encarta Installer would install a newer version of
+	 QuickTime, but would fail to remove the older version. To fix this
+	 problem, manually remove the renamed version(s) of these system
+	 components and restart your Macintosh.
+	
+	- V-series Lucida Sans fonts appears in font menus
+	 If you use an application with a font menu, such as Microsoft Word
+	 or Microsoft Works, you may notice the addition of V-series Lucida
+	 Sans fonts in those menus after installing Encarta. These fonts are
+	 used by Encarta 1994, and it is necessary to have them installed for
+	 Encarta 1994 to run. If you choose to delete these fonts when
+	 Encarta 1994 is not in use, you can easily install them again by re-
+	 running the Installer program from the Encarta 1994 disc.
+	
+	- Special or international characters are copied incorrectly to the
+	 Clipboard. As a custom bitmap font, the V-series Lucida Sans fonts
+	 do not map special or international characters correctly to the
+	 Macintosh character set. These characters appear as inappropriate or
+	 non-printing characters when copied to an application such as
+	 TeachText. [Note: Special characters appear and print correctly in
+	 V-series Lucida fonts when printed from Encarta.]
+	
+	- PopChar control panel feature conflicts while running Encarta 1994
+	 There is a conflict between Gunther Blaschek's PopChar control panel
+	 (versions 2.3 through 2.6.2) and Encarta 1994 that can lead to the
+	 machine crashing when you select characters in the "More..." feature
+	 of PopChar while Encarta is running. We recommend you avoid this
+	 feature of PopChar while using Encarta.
+	
+	- QuicKeys conflicts while running Encarta 1994
+	 In situations where intensive keystroking is performed, there can
+	 be conflict between Encarta 1994 and QuicKeys. If this becomes a
+	 problem for you, we recommend running Encarta 1994 without QuicKeys
+	 installed.
+	
+	- The NexusFX accelerator card for the Macintosh IIfx is incompatible
+	 with Sound Manager 3.0. Any sound made in a system running the
+	 NexusFX accelerator card and Sound Manager 3.0 will conclude with a
+	 choppy, reverberating echo. Since Encarta requires Sound Manager
+	 3.0, sound on these systems will be of poor quality. The rest of
+	 the application will run as expected.
+	
+	- Dictionary, Orbit, MindMaze, and animations crash using CacheOut
+	 control panel. In these mini-applications, using the CacheOut
+	 control panel will result in a system crash when running or
+	 quitting. We recommend you disable or remove the CacheOut.
+	
+	Additional query words: 1994multi media multimedia multi-media
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbHomeProdSearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1994
+	Version           : :1994 edition
+	
+	=============================================================================
+	

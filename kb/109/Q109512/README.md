@@ -1,0 +1,458 @@
+---
+layout: page
+title: "Q109512: SETUP.TXT from Windows for Workgroups 3.11 (Part 3 of 3)"
+permalink: kb/109/Q109512/
+---
+
+## Q109512: SETUP.TXT from Windows for Workgroups 3.11 (Part 3 of 3)
+
+	Article: Q109512
+	Product(s): Microsoft Windows 3.x Retail Product
+	Version(s): WINDOWS:3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 29-SEP-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows for Workgroups version 3.11 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The following information was taken from the Microsoft Windows for Workgroups
+	version 3.11 SETUP.TXT file.
+	
+	MORE INFORMATION
+	================
+	
+	JOIN (MS-DOS)
+	-------------
+	
+	Do not add or remove "joined" drives while you are running Windows for
+	Workgroups. If you use the JOIN command before starting Windows for
+	Workgroups and do not change the state of the joined drives from MS-DOS
+	Prompt within Windows, Windows for Workgroups will work properly. It is
+	recommended that you do not use joined drives at all if you plan to run
+	Windows.
+	
+	KEYB.COM (MS-DOS)
+	-----------------
+	
+	If you use command-line options to load KEYB.COM, it is recommended that
+	you load it before starting Windows for Workgroups. After it is loaded, you
+	can change the keyboard configuration from MS-DOS Prompt within Windows at
+	any time. If you do not load KEYB.COM before starting Windows, you may
+	encounter problems when using a KEYB command that includes an option in an
+	MS-DOS Prompt. However, you can use the KEYB command without options at any
+	time to display code-page information.
+	
+	LANSight(TM) Version 2.0
+	------------------------
+	
+	LANSight is a utility that you can use to control and monitor other
+	workstations attached to a Novell network. In some cases, version 2.0 of
+	LANSight may cause the workstation running Windows for Workgroups to fail.
+	
+	Lasertool Control Panel Version 2.2
+	-----------------------------------
+	
+	If you load version 2.2 of the Lasertool Control Panel program
+	(PCPANEL.EXE) from Windows for Workgroups, your system may fail. This
+	program works properly if you load it before you start Windows for
+	Workgroups.
+	
+	Le Menu Version 1.0
+	-------------------
+	
+	When you are using Le Menu version 1.0 with Windows for Workgroups,
+	environment information such as PATH, PROMPT, and WINDIR may be lost if you
+	start MS-DOS Prompt from within Windows. If you want to start Windows for
+	Workgroups by using a Le Menu menu command, it is recommended that you set
+	up Windows for Workgroups as a Batch-File menu command so that COMMAND.COM
+	will load before starting Windows for Workgroups. For more information, see
+	your Le Menu documentation.
+	
+	LOCKIT Version 3.3 (PC Vault, Secure It)
+	----------------------------------------
+	
+	Version 3.3 of these programs strips out spaces from the load= command line
+	in the WIN.INI file. Later versions may correct this problem.
+	
+	Logitech(TM) Mouse Software Version 5.0/6.0 (CLICK, LOGIMENU)
+	------------------------------------------------------------
+	
+	If you want to use CLICK and LOGIMENU from MS-DOS Prompt within Windows,
+	you must load the TSRs from that MS-DOS Prompt, even if you loaded the TSRs
+	before starting Windows for Workgroups. When you quit Windows for
+	Workgroups, you must reload the TSRs for them to work properly from the
+	command prompt outside of Windows, even if you loaded them from MS-DOS
+	Prompt within Windows.
+	
+	Mace Disk-Cache Utility (MCACHE.SYS)
+	------------------------------------
+	
+	This disk-cache utility will not work properly with SMARTDrive. It is
+	recommended that you use SMARTDrive, provided with Windows for Workgroups,
+	and remove all references to other disk-cache utilities from your
+	CONFIG.SYS and AUTOEXEC.BAT files. (If Mace is detected, Setup removes it
+	from your CONFIG.SYS file for you.)
+	
+	Maximizer Memory Manager (MAXIMIZE.COM)
+	---------------------------------------
+	
+	If you are using the Maximizer memory manager, you may not be able to set
+	up or start Windows for Workgroups. Make sure that you are using only one
+	memory manager with Windows for Workgroups. It is recommended that you use
+	HIMEM.SYS and EMM386.EXE, which are provided with Windows for Workgroups,
+	to manage memory instead.
+	
+	Mirror (MS-DOS)
+	---------------
+	
+	If you run Mirror from Windows for Workgroups by using the Run command or
+	from a command line within an MS-DOS box, it creates an inaccurate
+	MIRROR.FIL file. You should run Mirror only before you run Windows.
+	
+	If you run Mirror with the /t option and then start Windows, you cannot
+	remove it from memory by using the MIRROR /u command until you exit
+	Windows. This will cause an error message to appear.
+	
+	NDOSEDIT.COM
+	------------
+	
+	You may have problems loading this command-line editor. Also, it may cause
+	unexpected results when running with Windows for Workgroups.
+	
+	NetRoom Memory Manager (RM386.SYS)
+	----------------------------------
+	
+	With some older versions of NetRoom, you may encounter problems setting up
+	Windows for Workgroups. In this case, contact Helix Software for the most
+	current version of NetRoom.
+	
+	NetWare(R) NetBIOS
+	------------------
+	
+	The NetWare NetBIOS TSR is incompatible with Windows for Workgroups in many
+	configurations. In most cases, Setup will detect NetWare NetBIOS and remove
+	the startup command from your system. However, if you have NetWare NetBIOS
+	set up to start from a location other than your AUTOEXEC.BAT file (for
+	example, from a batch file), Setup cannot detect it. In this case, you need
+	to remove NetWare NetBIOS manually. Windows for Workgroups 3.11 includes an
+	IPX/SPX compatible protocol that you can use instead of NetBIOS. For
+	information about configuring Windows for Workgroups to work with it, see
+	the NETWORKS.WRI online document.
+	
+	Newspace Version 1.07
+	---------------------
+	
+	This disk-compression utility is incompatible with Windows for Workgroups
+	and may cause several problems.
+	
+	Norton Anti-Virus(R) Version 1.0
+	--------------------------------
+	
+	If you load version 1.0 of Anti-Virus before you set up Windows for
+	Workgroups, Setup may fail. It is recommended that you contact Symantec for
+	the most current version of this program.
+	
+	Norton Desktop for Windows (EP.EXE)
+	-----------------------------------
+	
+	If the data-recovery program Erase Protect (EP.EXE) is loaded from your
+	AUTOEXEC.BAT file, you need to disable it when you are setting up Windows
+	for Workgroups, especially if you are upgrading over a previous version of
+	Windows. Erase Protect tries to save copies of all deleted files, which can
+	cause you to run out of disk space while running Setup.
+	
+	It is recommended that you run Erase Protect with a permanent swap file. If
+	you are using a temporary swap file, you need to exclude files that have a
+	.TMP or .SWP extension from erase protection.
+	
+	Norton Utilities(R) Version 5.0 (DISKREET, NCACHE)
+	--------------------------------------------------
+	
+	This program is incompatible with Windows for Workgroups and may cause your
+	system to fail. It is recommended that you upgrade to the most recent
+	version of Norton Utilities to correct problems.
+	
+	Norton Utilities Version. 6.01 (NCACHE)
+	---------------------------------------
+	
+	Some versions of NCACHE may prevent you from setting up or starting Windows
+	for Workgroups. This is more likely to happen if NCACHE is set up as an EMS
+	cache. Setting up NCACHE as an XMS cache instead may solve the problem.
+	
+	You may also encounter additional problems using NCACHE. New versions
+	may correct these problems. For an updated version of NCACHE, contact
+	Symantec Corporation. In the meantime, you can use SMARTDrive, which
+	is provided with Windows for Workgroups.
+	
+	Norton Utilities Version 6.01 (DISKMON)
+	---------------------------------------
+	
+	It is recommended that you do not use DISKMON version 6.01 with Windows for
+	Workgroups.
+	
+	PCED Version 2.00
+	-----------------
+	
+	Do not load the PCED command-line editor HIGH. Loading it HIGH may cause
+	unexpected results, such as system failures, when Windows for Workgroups is
+	running.
+	
+	PCKEY.EXE (MultiSoft Keyboard Enhancer and Command-Line Stack)
+	------------------------------------------------------------
+	
+	PCKEY.EXE may not work properly with Windows for Workgroups when you are
+	running more than one MS-DOS--based application at a time. It is
+	recommended that you unload PCKEY.EXE before starting Windows for
+	Workgroups.
+	
+	PC-Kwik Disk Accelerator
+	------------------------
+	
+	If you use PC-Kwik with Windows for Workgroups, make sure that you are
+	using version 3.55 or later and that PC-Kwik is in extended memory, not
+	expanded memory. To get an upgraded version of PC-Kwik, contact MultiSoft.
+	
+	PC-Kwik Disk-Cache Utility (PC-KWIK.EXE)
+	----------------------------------------
+	
+	Do not use this disk-cache utility simultaneously with SMARTDrive. There is
+	no reason to use two disk-cache utilities with Windows for Workgroups. It
+	is recommended that you use SMARTDrive, provided with Windows for
+	Workgroups, instead.
+	
+	PC-Kwik Version. 1.59 (PCK.EXE, PSKSCRN.EXE, PCKEY.COM)
+	-------------------------------------------------------
+	
+	If version 1.59 of PC-KWIK is loaded before setting up Windows for
+	Workgroups, Setup may fail. PC-KWIK Version 2.0 may correct this problem.
+	
+	PCSXMAEM.SYS Utility
+	--------------------
+	
+	This utility is incompatible with Windows for Workgroups. You should remove
+	all references to it from your CONFIG.SYS and AUTOEXEC.BAT files before
+	setting up or starting Windows for Workgroups. PCSXMAEM.SYS is similar to
+	XMAEM.SYS. It has been renamed and slightly modified. It is provided with
+	current versions of the IBM PC/3270 emulator.
+	
+	PCSX2EMS.SYS
+	------------
+	
+	Windows for Workgroups will run correctly with PCSX2EMS.SYS if it is loaded
+	on a computer that has an XMA board installed. Otherwise, this program is
+	incompatible with Windows for Workgroups. PCSX2EMS.SYS is provided with the
+	IBM PC/3270 emulator.
+	
+	PC Tools Deluxe(TM) Version 7.1 (DATAMON)
+	-----------------------------------------
+	
+	If you load PC Tools DATAMON using the \SENTRY+ option, Setup may fail if
+	you are low on disk space. Do not use the \SENTRY+ option when loading
+	DATAMON.
+	
+	Do not load DATAMON after loading SMARTDrive. If DATAMON is loaded after
+	SMARTDrive, your system may fail. See the PC Tools documentation for
+	information about how to unload DATAMON.
+	
+	PC Tools Deluxe Version 6.0 (DESKTOP)
+	-------------------------------------
+	
+	If you try to start PC Tools from a MS-DOS Prompt within Windows for
+	Workgroups, your system may fail or restart itself. These problems also
+	occur if you use MS-DOS commands from a MS-DOS Prompt within Windows.
+	
+	Version 7.0 of PC Tools may correct these problems. However, do not load
+	DESKTOP from a MS-DOS Prompt if it was loaded before starting Windows for
+	Workgroups. If you do, your system may fail when you quit Windows for
+	Workgroups. It is recommended that you run DESKTOP from its PIF, provided
+	with Windows for Workgroups.
+	
+	PC Tools Deluxe Version 7.1 (VDEFEND)
+	-------------------------------------
+	
+	Setup may not work properly if VDEFEND is loaded before running Setup. You
+	may load VDEFEND after setting up Windows for Workgroups.
+	
+	PC Tools(TM) Disk-Cache Utility (PC-CACHE.COM)
+	----------------------------------------------
+	
+	Do not use this disk-cache utility simultaneously with SMARTDrive. There is
+	no reason to use two disk-cache utilities with Windows. It is recommended
+	that you use SMARTDrive, provided with Windows for Workgroups, instead.
+	
+	PRINT (MS-DOS)
+	--------------
+	
+	If you are printing several large documents on a network printer and run
+	Setup from the network, your system may fail while Setup is creating
+	Program Manager groups.
+	
+	PYRO! Version 1.0
+	-----------------
+	
+	If this screen saver is loaded before starting Windows for Workgroups, you
+	may not be able to restore the Windows for Workgroups screen after this
+	screen saver appears.
+	
+	QMAPS Memory Manager Version 5.16
+	---------------------------------
+	
+	If you are using the QMAPS memory manager, you may not be able to set up or
+	start Windows for Workgroups. New versions may correct these problems. For
+	an updated version of QMAPS, contact Quadtel. In the meantime, you can use
+	HIMEM.SYS and EMM386.EXE, provided with Windows for Workgroups, to manage
+	memory instead.
+	
+	RAMTYPE.SYS - AST RAMpage!(R) Boards
+	------------------------------------
+	
+	The RAMTYPE.SYS driver is incompatible with Windows for Workgroups. It is
+	recommended that you remove this driver before setting up Windows for
+	Workgroups. If you load the driver from your CONFIG.SYS file, comment out
+	the command line for the driver as follows:
+	
+	  rem RAMTYPE.SYS
+	
+	Windows for Workgroups will run correctly without RAMTYPE.SYS. However,
+	other drivers that rely on RAMTYPE.SYS will not load and applications will
+	not be able to use the expanded memory on your system.
+	
+	After you set up Windows for Workgroups, you can use version 1.2 and later
+	of RAMTYPE.SYS with Windows for Workgroups. If you are using an earlier
+	version on an IBM PS/2 or Micro Channel Architecture computer and your
+	RAMpage! board is configured for expanded and extended memory, you need to
+	upgrade your AST RAMTYPE.SYS driver after you set up Windows for
+	Workgroups. You will also need to remove the "rem" command from your
+	CONFIG.SYS file so that RAMTYPE.SYS will load properly.
+	
+	Secretdisk II Disk-Cache Utility (FAST512.SYS)
+	----------------------------------------------
+	
+	This disk-cache utility will not work properly with SMARTDrive. It is
+	recommended that you use SMARTDrive, provided with Windows for Workgroups,
+	and remove all references to other disk-cache utilities from your
+	CONFIG.SYS and AUTOEXEC.BAT files. (If this utility is detected, Setup
+	removes it from your CONFIG.SYS file for you).
+	
+	SideKick(R) Versions 1.0 and 2.0 and SideKick Plus
+	--------------------------------------------------
+	
+	Miscellaneous problems may occur when you run SideKick as a TSR with
+	Windows for Workgroups. It is recommended that you use a PIF to run
+	SideKick as an MS-DOS--based application instead of loading it as a TSR.
+	
+	SoftIce Debugger
+	----------------
+	
+	If SoftIce is loaded, Setup will fail when starting the Windows portion of
+	the program. It is recommended that you unload SoftIce before you set up
+	Windows for Workgroups.
+	
+	SpeedFXR
+	--------
+	
+	This program is incompatible with Windows for Workgroups when running as a
+	TSR. It tries to increase the speed of the floppy disk drives, but slows
+	them instead. To get the best results, use the -X option when loading
+	SpeedFXR. This will prevent SpeedFXR from remaining in memory and affecting
+	the speed of the floppy disk drives.
+	
+	SUBST (MS-DOS)
+	--------------
+	
+	Do not add or remove "substituted" drives while you are running Windows for
+	Workgroups. If you use the SUBST command before starting Windows for
+	Workgroups and do not change the state of the substituted drives from an MS-
+	DOS Prompt within Windows, Windows for Workgroups will work properly.
+	
+	Super PC-Kwik Disk-Cache Utility (SUPERPCK.EXE)
+	-----------------------------------------------
+	
+	Do not use this disk-cache utility simultaneously with SMARTDrive. There is
+	no reason to use two disk-cache utilities with Windows. It is recommended
+	that you use SMARTDrive, provided with Windows for Workgroups, instead.
+	
+	Trantor T100 Host Adapter Driver (TSCSI.SYS)
+	--------------------------------------------
+	
+	(For SCSI hard disk drives) - If you use the Trantor T100 driver
+	(TSCSI.SYS), you must use version 4.33d or higher. Earlier versions
+	identify the SCSI hard disk drive as a removable drive. This may cause
+	problems when you are using File Manager--for example, your system could
+	fail while you format a drive, or you could get unexpected results when you
+	delete files. To get an updated driver, contact Trantor Systems, Ltd.
+	
+	UMB PRO Version 1.07
+	--------------------
+	
+	If you are running UMB PRO, you may experience problems running Windows for
+	Workgroups. In some cases, your system may fail. Make sure that you are
+	using only one memory manager with Windows for Workgroups. It is
+	recommended that you use HIMEM.SYS and EMM386.EXE, which are provided with
+	Windows for Workgroups, to manage memory instead.
+	
+	Vaccine
+	-------
+	
+	If Vaccine is loaded, Setup fails when trying to modify your CONFIG.SYS and
+	AUTOEXEC.BAT files. You should unload Vaccine before you set up Windows for
+	Workgroups. You may also encounter problems, such as beeping, while running
+	Windows for Workgroups when Vaccine is loaded.
+	
+	VIREX-PC Version 1.11
+	---------------------
+	
+	If VIREXPC.COM is loaded, Setup and Windows for Workgroups will fail when
+	KRNL386.EXE performs a write operation. Also, the first time Windows for
+	Workgroups is loaded, you may be returned to the MS-DOS prompt.
+	
+	Virus Prevention Plus Version 5.0
+	---------------------------------
+	
+	If Virus Prevention Plus is loaded, you may not be able to set up Windows
+	for Workgroups successfully. You may also encounter problems when you run
+	Windows for Workgroups. The Keyboard Lock program may cause Windows for
+	Workgroups to fail.
+	
+	Virusafe Version 4.0
+	--------------------
+	
+	If this program is loaded as a TSR, Setup may fail while you are setting up
+	Windows for Workgroups. It is recommended that you load Virusafe by using
+	the /C- option. This option turns off the memory-change detection provided
+	with Virusafe. Version 4.5 may correct this problem. For more information,
+	see your Virusafe documentation.
+	
+	XMAEM.SYS
+	---------
+	
+	XMAEM.SYS is a device that causes extended memory to act like XMA. This
+	utility is incompatible with Windows for Workgroups. It is recommended that
+	you remove all references to it from your CONFIG.SYS and AUTOEXEC.BAT files
+	before you set up or run Windows for Workgroups. XMAEM.SYS is provided with
+	IBM DOS version 4.0.
+	
+	XMA2EMS.SYS
+	-----------
+	
+	Windows for Workgroups will run correctly with XMA2EMS.SYS if it is loaded
+	on a computer that has an XMA board installed. Otherwise, this program is
+	incompatible with Windows for Workgroups. XMA2EMS.SYS is provided with IBM
+	DOS version 4.0.
+	
+	Additional query words: ndw wfw wfwg 3.11
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+	Version           : WINDOWS:3.11
+	
+	=============================================================================
+	

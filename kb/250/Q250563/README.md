@@ -1,0 +1,108 @@
+---
+layout: page
+title: "Q250563: PRB: First Chance Exception Debugging in Windows System DLLs"
+permalink: kb/250/Q250563/
+---
+
+## Q250563: PRB: First Chance Exception Debugging in Windows System DLLs
+
+	Article: Q250563
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): Win2000:95,98,98 Second Edition; winnt:6.0
+	Operating System(s): 
+	Keyword(s): kb3rdparty kbDebug kbOSWin95 kbOSWin98 kbDSupport kbGrpDSMFCATL
+	Last Modified: 11-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 95 
+	- Microsoft Windows 98 
+	- Microsoft Windows 98 Second Edition 
+	- Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+	- Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+	- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+	
+	  Q256986 Description of the Microsoft Windows Registry
+	
+	SYMPTOMS
+	========
+	
+	When you debug a default Microsoft Foundation Class Library (MFC)
+	AppWizard-generated program, the output window may display the following error
+	message:
+	
+	  First-chance exception in <SomeApp>.exe (KERNEL32.DLL): 0xC0000005:
+	  Access Violation.
+	
+	CAUSE
+	=====
+	
+	The Encompass Monitor or EncMonitor service is preinstalled on some systems.
+	This service starts Monitor.exe and is loaded before the user logs on to the
+	system. Monitor.exe performs the same function as the performance monitor Alert
+	and Logging facility. With this utility, you can generate alerts and log data.
+	This service causes the first-chance exception that is displayed in the output
+	window.
+	
+	IMPORTANT: The third-party products discussed in this article are manufactured by
+	vendors independent of Microsoft; we make no warranty, implied or otherwise,
+	regarding these products' performance or reliability.
+	
+	RESOLUTION
+	==========
+	
+	WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+	that may require you to reinstall your operating system. Microsoft cannot
+	guarantee that you can solve problems that result from using Registry Editor
+	incorrectly. Use Registry Editor at your own risk.
+	
+	To work around the problem, use any of the following three alternatives:
+	
+	1. You can ignore the first chance exception message, this message is harmless.
+	  This message is seen only when you debug programs, and not seen in Release
+	  versions.
+	
+	2. You can remove the service and run it manually, whenever needed, to alleviate
+	  the problem.
+	
+	3. You can use RegEdit and remove the values "Encompass Monitor" and
+	  "EncMonitor" from the following Registry keys (do not delete the keys):
+	
+	Encompass Monitor:
+	
+	  HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run
+	
+	EncMonitor:
+	
+	  HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunServices
+	
+	Before making any modification to the registry, back up the Registry or export
+	these keys to the Desktop before making any edits.
+	
+	REFERENCES
+	==========
+	
+	For additional information about RunServices, click the article number below to
+	view the article in the Microsoft Knowledge Base:
+	
+	  Q179365 INFO: Run, RunOnce, RunServices, RunServicesOnce and Startup
+	
+	(c) Microsoft Corporation 2000, All Rights Reserved.
+	Contributions by Vidyanand Rajpathak, Microsoft Corporation
+	
+	
+	Additional query words: EncMonitor, 0xC0000005
+	
+	======================================================================
+	Keywords          : kb3rdparty kbDebug kbOSWin95 kbOSWin98 kbDSupport kbGrpDSMFCATL 
+	Technology        : kbVCsearch kbAudDeveloper kbWin95search kbWin98search kbWin98SEsearch kbZNotKeyword3 kbWin98 kbWin98SE kbVC600 kbVC32bitSearch
+	Version           : Win2000:95,98,98 Second Edition; winnt:6.0
+	Issue type        : kbprb
+	Solution Type     : kbnofix
+	
+	=============================================================================
+	

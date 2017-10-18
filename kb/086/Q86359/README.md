@@ -1,0 +1,733 @@
+---
+layout: page
+title: "Q86359: README.WRI: Microsoft Windows &amp; MS-DOS 5 Upgrade (Part A)"
+permalink: kb/086/Q86359/
+---
+
+## Q86359: README.WRI: Microsoft Windows &amp; MS-DOS 5 Upgrade (Part A)
+
+	Article: Q86359
+	Product(s): Microsoft Windows 3.x Retail Product
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 17-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 3.1 
+	- Microsoft MS-DOS operating system version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The following information was taken from the Windows & MS-DOS 5 Upgrade
+	README.WRI file. This article contains sections 1.0 through 8.8.
+	
+	MORE INFORMATION
+	================
+	
+	MICROSOFT WINDOWS & MS-DOS 5 UPGRADE
+	
+	README.WRI
+	--------------------------------------------------------------------
+	
+	This file provides important information not included in the"Microsoft
+	Getting Started" manual, the "Microsoft MS-DOS User's Guide and
+	Reference," the "Windows User's Guide" or in online Help.
+	
+	For information about other files and documentation, see the "Other
+	Online Documents" at the end of this document.
+	
+	Within this document, "Windows Setup" refers to the Windows part of
+	the Windows and MS-DOS Setup program.  You can execute the Windows
+	only part of this program by following the instructions below:
+	
+	When this file instructs you to run Windows Setup, do the following:
+	
+	--If this file instructs you to run Setup from the Main Group, carry
+	out the procedure.
+	
+	--If you have not installed Microsoft Windows and MS-DOS, carry out
+	the procedure described in
+	Getting Started.
+	
+	--If you have installed Microsoft Windows and MS-DOS, and this file
+	does not instruct you to run Setup from the Main Group, carry out the
+	following procedure to run Setup for Windows only:
+	
+	 1. Make drive C your current drive.
+	 2. Insert Setup Disk #1 into drive A.
+	 3. Type the following at the command prompt:
+	       a:setup /w
+	
+	Note: If you plan on using a terminate-and-stay-resident (TSR) program
+	with Windows, please read the SETUP.TXT online document first. It
+	contains important information about running TSR programs with Windows
+	version 3.1 and the Windows and MS-DOS Setup program.
+	
+	Using Write to View This Document
+	
+	If you enlarge the Write Window to its maximum size, this document
+	will be easier to read. To do so, click the Maximize button in the
+	upper-right corner of the window. Or open the Control menu in the
+	upper-left corner of the Write window (press ALT+SPACEBAR), and then
+	choose the Maximize command.
+	
+	To move through the document, press PAGE UP or PAGE DOWN or click the
+	arrows at the top and bottom of the scroll bar along the right side of
+	the Write window.
+	
+	To print the document, choose the Print command from the File menu.
+	
+	For Help on using Write, press F1.
+	
+	To read other online documents, choose the Open command from the File
+	menu.
+	
+	Contents
+	
+	This document contains additional information on the following topics:
+	
+	1.0 Running Windows with an Operating System Other Than MS- DOS
+	
+	2.0  Preventing Stack Overflow
+	
+	3.0  Using 32-Bit Disk Access
+	
+	4.0  Using Memory Managers
+	4.1    Solving Memory Conflicts by Using MONOUMB.386 or MONOUMB2.386
+	4.2    Solving Memory Conflicts by Excluding an Address Range
+	4.3    Using 386MAX
+	
+	5.0  Using Advanced Power Management (APM)
+	
+	6.0  Using SMARTDrive Version 4.0
+	6.1    Accessing Floppy Disk Drives on Older COMPAQ DESKPROS
+	6.2    Using SMARTDrive with Double Buffering
+	6.3    Using SMARTDrive with Norton Utilities Version 6.0 Disk Monitor
+	6.4    Using SMARTDrive with SuperStor Disk-Compression Utility
+	6.5    Using SMARTDrive with Copy-Protected Games Applications
+	
+	7.0  Using Multimedia Extensions with Windows Version 3.1
+	7.1    Upgrading to Windows Version 3.1
+	7.2    Configuring MIDI Setups
+	7.3    Configuring Your Display
+	7.4    Sample MIDI Files
+	7.5    Using HyperGuide
+	7.6    Using Music Box
+	7.7    Using Alarm Clock
+	
+	8.0  Running Specific Non-Windows Applications
+	8.1    Communications Applications
+	8.2    Creative Labs JukeBox
+	8.3    Game or Timing-Sensitive Applications
+	8.4    Third-Party Expanded-Memory Emulators with MS-DOS Version 5.0
+	8.5    PC Tools Applications
+	8.6    WordPerfect Version 5.1
+	8.7    3270-Emulation Applications
+	8.8    AutoCad
+	
+	9.0  Using Specific Displays with Windows Version 3.1
+	9.1     Installing Display Adapters by Following the Manufacturer's
+	Instructions
+	9.2     Upgrading Display Drivers When Using Soft-Font Packages
+	9.3     Using Self-Configuring Display Adapters
+	9.4     Hercules Graphics Station
+	9.5     LCD
+	9.6     SuperVGA
+	9.7     Third-Party Display Drivers: Running Non-Windows Applications
+	9.8     TIGA
+	9.9     VGA-Compatible
+	9.10    Video Seven: Using 256-Color Support
+	9.11    WinSpeed
+	9.12    IBM XGA: Configuring Color and Resolution
+	9.13    IBM XGA: Using EMM386
+	9.14    Video Seven: VEGA Deluxe card
+	
+	10.0  Using Specific Mice with Windows Version 3.1
+	10.1    Microsoft Mouse
+	10.2    Genius Mouse
+	10.3    Logitech Mouse
+	10.4    Logitech Cordless Mouse
+	10.5    Logitech or Microsoft Ballpoint Mouse on a Toshiba T2200SX
+	10.6    Mouse Systems Mouse on PS/2 Ports
+	10.7    Mouse Systems optical mouse
+	
+	11.0  Using Additional Hardware Configurations with Windows Version
+	3.1
+	11.1    CD-ROM Drives
+	11.2    EISA Systems with More Than 16 Megabytes of Extended Memory
+	11.3    Epson Screen Savers
+	11.4    Everex 386/25 with EMM386
+	11.5    NCR 925 with EMM386
+	11.6    Non-US Keyboard Layouts: Using Application Shortcut Keys
+	11.7    Plus Hardcard
+	11.8    SCSI Hard Disk Using DMA
+	11.9    Columbia Data Products SCSI Hard-Disk Controller
+	11.10  Serial Ports on 286-Based Computers: Improving   Performance
+	11.11  Sound Blaster Audio Card
+	11.12  Tandy 2500XL with MS-DOS in ROM
+	11.13  Wyse Computers
+	11.14  Memory Cards: Parity Errors
+	
+	12.0  Other Online Documents
+	
+	--------------------------------------------------------------------
+	
+	1.0  Running Windows with an Operating System Other Than MS-DOS
+	---------------------------------------------------------------
+	
+	Microsoft Windows and MS-DOS work together as an integrated system.
+	They were designed together and extensively tested together on a wide
+	variety of computers and hardware configurations. Running Windows
+	version 3.1 on an operating system other than MS-DOS could cause
+	unexpected results or poor performance.
+	
+	2.0  Preventing Stack Overflow
+	------------------------------
+	
+	Stacks are temporary data structures that MS-DOS and applications use
+	for processing hardware events. If, while setting up Windows, Setup
+	detects hardware or software that require a certain stack size, Setup
+	will place the following command line in your CONFIG.SYS file:
+	
+	stacks=9,256
+	
+	This should be sufficient most of the time. However, if you receive
+	the Internal Stack Overflow message when running Windows in 386
+	enhanced mode, or if your system fails for no apparent reason when
+	running Windows in standard mode (especially if you are setting up or
+	moving the mouse), first try increasing the second number on the
+	stacks= command line (for example, 256)  If that doesn't work, try
+	increasing the first number (for example, 9). For more information
+	about the stacks setting and modifying the CONFIG.SYS file, see your
+	MS-DOS documentation.
+	
+	3.0  Using 32-Bit Disk Access
+	-----------------------------
+	
+	By default, 32-bit disk access is turned off to prevent disk errors on
+	some battery-powered portable computers. However, 32-bit disk access
+	may run correctly with some battery-powered portable computers, such
+	as the Zenith MasterSport SL. If you want to try using 32-bit disk
+	access, select the 32-bit disk access check box in the Virtual Memory
+	dialog box (choose the 386 Enhanced option in Control Panel). For more
+	information, see Chapter 14, "Optimizing Windows," in the Microsoft
+	Windows User's Guide.
+	
+	Caution: Before using 32-bit disk access on a battery-powered portable
+	computer, it is highly recommended that you back up your hard disk.
+	Because 32-bit Disk Access has not been fully tested on all battery-
+	powered systems, you may receive disk errors while using it.
+	
+	4.0  Using Memory Managers
+	--------------------------
+	
+	This section describes problems you may encounter using memory
+	managers with Windows
+	version 3.1.
+	
+	4.1  Solving Memory Conflicts by Using MONOUMB.386 or MONOUMB2.386
+	------------------------------------------------------------------
+	
+	If you encounter the following message when starting Windows in 386
+	enhanced mode, your display driver may be accessing the monochrome
+	address range (B000-B7FF), which prevents the memory manager from
+	using this range for upper memory blocks:
+	
+	"Windows cannot set up an upper memory block at segment B000. Exclude
+	this address space by using the syntax of your memory manager. For
+	more information, see the README.WRI file. Type WIN /S to start
+	Windows in standard mode and choose the Read Me icon,"
+	
+	To solve this problem, try installing MONOUMB2.386 on your system.
+	MONOUMB2.386 is a device driver provided with Windows that allows
+	certain memory managers to use the monochrome address range for upper
+	memory blocks, even if your display driver is accessing this range.
+	
+	To install MONOUMB2.386:
+	
+	1.  Copy and expand the MONOUMB2.38_ file that is on your Windows disk
+	to your Windows SYSTEM directory by typing the following at the MS-DOS
+	prompt:
+	
+	  expand a:monoumb2.38_ c:\windows\system\monoumb2.386
+	
+	2.  Add the following setting to the [386Enh] section in the
+	SYSTEM.INI file:
+	
+	  device=monoumb2.386
+	
+	3.  Start Windows.
+	
+	Note: MONOUMB2.386 may not work with some memory managers, such as
+	EMM386.EXE. In this case, you can try using MONOUMB.386, provided with
+	the Windows Driver Library. To obtain a copy of the Windows Driver
+	Library, contact Microsoft.
+	
+	You can also exclude the address region B000-B7FF, which specifies
+	that the memory manager should not try to use this address range for
+	upper memory blocks.  For information about excluding specific address
+	ranges, see the following topic.
+	
+	4.2  Solving Memory Conflicts by Excluding an Address Range
+	-----------------------------------------------------------
+	
+	If you encounter the following message when starting Windows in 386
+	enhanced mode, and the address specified is not B000, you must exclude
+	the address range.
+	
+	"Windows cannot set up an upper memory block at segment xxxx. Exclude
+	this address space by using the syntax of your memory manager. For
+	more information, see the README.WRI file. Type WIN /S to start
+	Windows in standard mode and choose the Read Me icon."
+	
+	If the address specified is B000, you can try using MONOUMB2.386 or
+	MONOUMB.386, as described in the preceding topic.
+	
+	The method you use to exclude an address range depends on the memory
+	manager you are using. For example, if you are using EMM386.EXE, you
+	need to remove the I=xxxxx option from the device=emm386.exe command
+	line in your CONFIG.SYS file, where xxxxx is the address range
+	starting at the address specified in the error message.
+	
+	If you are using QEMM, you need to include the X= option on the
+	device=qemm386.sys command line in your CONFIG.SYS file. For example,
+	to exclude the address range C000-C7FF, you would specify the
+	following:
+	
+	  device=qemm386.sys X=C000-C7FF
+	
+	For more information about modifying your CONFIG.SYS file, see your
+	MS-DOS documentation. For more information about installing and
+	configuring EMM386.EXE, see Chapter 14, "Optimizing Windows," in the
+	Microsoft Windows User's Guide. For information about installing and
+	configuring other memory managers, see the documentation provided with
+	your memory manager.
+	
+	4.3  Using 386MAX
+	-----------------
+	
+	If you are running 386MAX with Windows version 3.1, note the
+	following:
+	
+	- Do not use options that limit the EMS swap region in the upper
+	 memory area. If you include exclude= options on the 386max or
+	 bluemax command line or in the .PRO file (usually called
+	 386MAX.PRO), make sure that the address range specified does not
+	 extend beyond A000.
+	
+	 For example, exclude=1800-A000 is acceptable, but exclude=1800-B800
+	 is not. If the address range specified by using the exclude= option
+	 extends beyond A000, Windows may not run properly in 386 enhanced
+	 mode. If you must exclude an address range above A000, use the RAM=
+	 option instead. For more information about this and other options,
+	 see your 386MAX documentation.
+	
+	- Do not load SMARTDrive when QCache is running.
+	
+	 Note: The 386MAX setup program does not detect SMARTDrive version
+	 4.0 and may recommend that you install QCache.
+	
+	- If you update an earlier version of 386MAX to version 6.0, the
+	 386MAX version 6.0 setup program may not remove the LOAD=WINDOWS.LOD
+	 line from your .PRO file. You can remove this line manually. It is
+	 not needed and removing it will free up a small amount of memory.
+	
+	5.0  Using Advanced Power Management (APM)
+	------------------------------------------
+	
+	Windows version 3.1 includes support for Advanced Power Management
+	(APM). This enables Windows to extend battery life, display power-
+	status information, and work together with the suspend features of
+	battery-powered personal computers. To find out if your computer
+	supports APM, contact your computer manufacturer.
+	
+	If your computer supports APM, do the following to install it on your
+	system:
+	
+	1. Quit Windows.
+	
+	2. Run Windows Setup and select one of the following system types:
+	
+	  MS-DOS System with APM
+	  Intel 386SL Based System with APM
+	
+	Select "Intel 386SL Based System with APM" if your computer has an
+	Intel 386SL processor and supports the SL Enhanced Options for APM.
+	Otherwise, select "MS-DOS System with APM."
+	
+	3.  Restart Windows.
+	
+	    A Power icon appears in the Control Panel window.
+	
+	4.  Choose the Power icon to configure power-management settings.
+	
+	For more information about the settings, press F1 or choose the Help
+	button while using the Power Management dialog box.
+	
+	6.0  Using SMARTDrive Version 4.0
+	---------------------------------
+	This section describes some solutions to problems that you might
+	encounter when using SMARTDrive version 4.0 (provided with Windows
+	version 3.1) together with specific applications or hardware.
+	
+	6.1  Accessing Floppy Disk Drives on Older COMPAQ DESKPROS
+	----------------------------------------------------------
+	
+	On some COMPAQ DESKPRO 386/16 and 386/20 computers, you might
+	experience problems accessing floppy disks when SMARTDrive version 4.0
+	is installed. To work around the problem, you can try one of the
+	following solutions:
+	
+	- Place the SMARTDrive buffer into low memory by adding the following
+	 option to the smartdrv command line in the AUTOEXEC.BAT file:
+	
+	  smartdrv /L
+	
+	- Disable the caching on floppy disk drives by adding the following
+	 options to the smartdrv command line in the AUTOEXEC.BAT file:
+	
+	  smartdrv A- B-
+	
+	For more information about these options, see Chapter 14, "Optimizing
+	Windows," in the Microsoft Windows User's Guide.
+	
+	6.2  Using SMARTDrive with Double Buffering
+	-------------------------------------------
+	
+	Most expanded-memory emulators attempt to optimize SMARTDrive by
+	configuring it to load into upper memory blocks (UMBs). This will
+	cause problems if you are running Windows in 386 enhanced mode with
+	double buffering. If you need to use double buffering with SMARTDrive,
+	make sure that SMARTDrive is configured in the CONFIG.SYS file to load
+	into low memory. The command line should look like this:
+	
+	  device=smartdrv.exe /double_buffer
+	
+	This problem applies only to the smartdrv command line in the
+	CONFIG.SYS file. It does not apply to the references to SMARTDrive in
+	the AUTOEXEC.BAT file. For more information about using double
+	buffering with SMARTDrive, see Chapter 14, "Optimizing Windows," in
+	the Microsoft Windows User's Guide.
+	
+	6.3  Using SMARTDrive with Norton Utilities Version 6.0 Disk Monitor
+	--------------------------------------------------------------------
+	
+	Do not use the Disk Protect feature in Norton Utilities Version 6.0
+	Disk Monitor with
+	SMARTDrive version 4.0. If you try to write to the protected drive,
+	you will encounter an error
+	and your system will fail. If you want to write to and cache a
+	protected drive, add the drive letter to
+	the smartdrv command line in your AUTOEXEC.BAT file. For example, if
+	drive D is a protected
+	drive, you would add the following:
+	
+	       smartdrv d
+	
+	Or you can use the Norton cache program instead when using Disk
+	Monitor.
+	
+	6.4  Using SMARTDrive with SuperStor Disk-Compression Utility
+	-------------------------------------------------------------
+	
+	- Do not use the Create Mountable Drive, Mount, and Dismount features
+	 of SuperStor after SMARTDrive is loaded. You must configure your
+	 SuperStor partitions before loading SMARTDrive. Windows Setup places
+	 the smartdrv command line first in your AUTOEXEC.BAT file. If your
+	 AUTOEXEC.BAT file includes "mount" configuration commands, make sure
+	 that the smartdrv command line follows the SuperStor configuration
+	 command lines.
+	
+	- Also, you will receive read-write errors if you use SMARTDrive to
+	 cache a SuperStor compressed drive. To prevent SMARTDrive from
+	 caching the compressed drive, you must include the drive letter-
+	 option on the smartdrv command line.
+	
+	 For example, if drive C is the uncompressed drive, and drives E and
+	 F are the compressed SuperStor drives, you would include the
+	 following command line in your AUTOEXEC.BAT file:
+	
+	    smartdrv e- f-
+	
+	6.5  Using SMARTDrive with Copy-Protected Games and Applications
+	----------------------------------------------------------------
+	
+	When using SMARTDrive, you may encounter problems starting a copy-
+	protected application that requires you to place the master disk in
+	the floppy disk drive. To solve this problem, you need to disable
+	caching on the floppy disk drive by using the drive letter - option
+	when you load SMARTDrive. For example, if you load SMARTDrive from
+	your AUTOEXEC.BAT file and are using drive A, you need to include the
+	following command line in your AUTOEXEC.BAT file:
+	
+	  smartdrv a-
+	
+	7.0  Using Multimedia Extensions Version 1.0 with Windows Version 3.1
+	---------------------------------------------------------------------
+	
+	This section covers information that is specific to using the
+	Multimedia Extensions version 1.0 with Windows version 3.1. It also
+	covers additional tasks you need to perform to configure your system
+	properly for use with the multimedia extensions.
+	
+	7.1  Upgrading to Windows Version 3.1
+	-------------------------------------
+	
+	To use the multimedia extensions with Windows version 3.1, first set
+	up Windows with Multimedia version 1.0, and then upgrade to Windows
+	version 3.1 by installing it into the same directory. If you set up
+	Windows version 3.1 before setting up Windows with Multimedia, not all
+	the files will be properly installed.
+	
+	7.2  Configuring MIDI Setups
+	----------------------------
+	When you set up Windows version 3.1, Setup copies the multimedia
+	extensions MIDI-setup file MIDIMAP.CFG to MIDIMAP.OLD, and then
+	replaces it with an updated version. This version contains several new
+	MIDI setups that support playing MIDI information authored according
+	to General MIDI guidelines. If you want to use a setup in the new
+	MIDIMAP.CFG file and are using sound drivers that are not provided by
+	Windows, you will need to change the port settings to match the ports
+	used by your sound device. To do this, use the MIDI Mapper option in
+	Control Panel.
+	
+	You can also use the original MIDIMAP.CFG file (renamed by Setup to
+	MIDIMAP.OLD). You might want to do this if the original file contains
+	custom MIDI setups that you created yourself or that were provided by
+	your sound-device manufacturer. To use the original file, rename
+	MIDIMAP.CFG to MIDIMAP.WIN, and then rename MIDIMAP.OLD to
+	MIDIMAP.CFG. If the port settings in your original setups refer to the
+	Ad Lib or Sound Blaster ports and you are using different drivers,
+	then you will need to change the port settings to match the output
+	ports used by your sound device.
+	
+	For more information about using MIDI Mapper to modify MIDI setups,
+	see Chapter 5, "Control Panel," in the Microsoft Windows User's Guide.
+	
+	7.3  Configuring Your Display
+	-----------------------------
+	
+	The multimedia extensions Display icon in Control Panel is not
+	available when you upgrade from Windows with Multimedia version 1.0 to
+	Windows version 3.1. If you need to change options for your display,
+	use the Windows Setup application in the Main group in Program Manager
+	to make these changes.
+	
+	7.4  Sample MIDI File
+	---------------------
+	
+	The sample MIDI file CANYON.MID included with Windows version 3.1 that
+	you can play with Windows Media Player is provided by Passport
+	Designs, Inc.
+	
+	7.5  Using HyperGuide
+	---------------------
+	
+	The information in HyperGuide refers to Windows version 3.0, not
+	Windows version 3.1. If you need to use Windows documentation, see the
+	Microsoft Windows User's Guide that comes with Windows version 3.1.
+	
+	7.6  Using Music Box
+	--------------------
+	
+	Music Box is not fully compatible with Windows version 3.1. Although
+	your compact discs will play correctly, you will encounter problems
+	using the Save Info button in the Program dialog box to save disc-
+	title and track-title information. If you want to modify this
+	information, you must do so manually by editing the MUSICBOX.INI file.
+	To add a new disc to the file, you can determine the disc ID number by
+	viewing the information in the About dialog box.
+	
+	7.7  Using Alarm Clock
+	----------------------
+	
+	The Alarm Clock in the Multimedia Extensions version 1.0 is not fully
+	compatible with Windows version 3.1. If you are using the digital
+	display, the time may appear slanted or a system error may occur,
+	depending on the size of the Alarm Clock window.
+	
+	8.0  Running Specific Non-Windows Applications
+	----------------------------------------------
+	
+	This section provides general information about running applications
+	in Windows version 3.1. It also describes problems you might encounter
+	while running specific non-Windows applications with Windows version
+	3.1.
+	
+	8.1  Communications Applications
+	--------------------------------
+	
+	For best results when running a non-Windows communications application
+	in the background, run it as an icon instead of in a window. Also,
+	create a PIF (program information file) for the non-Windows
+	communications application (if one does not already exist) and do the
+	following:
+	
+	- Select the Execute: Background check box.
+	
+	- If you encounter errors during file transfers while running the
+	 application in the background, increase the Background Priority
+	 option in the Advanced Options dialog box.
+	
+	- If you use a permanent swap file with 32-bit disk access, select the
+	 Lock Application Memory check box in the Advanced Options dialog
+	 box.
+	
+	For information about using and creating PIFs, see Chapter 8, "PIF
+	Editor," in the Microsoft Windows User's Guide.
+	
+	8.2  Creative Labs JukeBox
+	--------------------------
+	
+	If you are using a Sound Blaster sound card, do not set up or use the
+	JukeBox application included in your Sound Blaster package with
+	Windows version 3.1.  JukeBox interferes with the Windows version 3.1
+	driver for the Ad Lib synthesizer and causes errors when you try to
+	install the drivers for the Sound Blaster card.
+	
+	8.3  Game or Timing-Sensitive Applications
+	------------------------------------------
+	
+	Some game applications or applications that rely on the computer's
+	timer may perform poorly in Windows version 3.1. You can try
+	increasing the performance by turning off the TrapTimerPorts setting
+	in the [386Enh] section of the SYSTEM.INI file, as follows:
+	
+	  TrapTimerPorts=Off
+	
+	Note: The TrapTimerPorts setting is on by default. Turning it off may
+	cause errors or a loss of data when transferring files by using a
+	communications application. It is recommended that you leave this
+	setting turned on when using a communications application.
+	
+	8.4  Third-Party Expanded-Memory Emulators with MS-DOS Version 5.0
+	------------------------------------------------------------------
+	
+	Many expanded-memory emulators will cause problems if you use them to
+	provide upper memory blocks (UMBs) for the MS-DOS version 5.0 loadhigh
+	and devicehigh commands. If you want to use these MS-DOS commands to
+	load drivers or applications high, then use the Windows EMM386.EXE
+	expanded-memory emulator to provide UMBs instead. If you must use a
+	third-party expanded-memory emulator, then use the load high feature
+	provided with the emulator, instead of the MS-DOS commands.
+	
+	8.5  PC Tools Applications
+	--------------------------
+	
+	If you run a PC Tools non-Windows application in a window, or if you
+	switch to it while Windows is running in standard mode, the display
+	might be garbled, because PC Tools applications use a graphics font
+	that is not displayed correctly (this problem does not occur if you
+	run the application in a full screen when Windows is running in 386
+	enhanced mode).
+	
+	To correct the problem, start your PC Tools non-Windows applications
+	by using the /NF option. If your PC Tools non-Windows applications are
+	included in a Program Manager group, use the Properties command to add
+	the /NF option to the command line for the application. For more
+	information about changing application properties, see Chapter 3,
+	"Program Manager," in the Microsoft Windows User's Guide.
+	
+	You can also include the /NF option in the application's program
+	information file (PIF) by typing it in the Optional Parameters text
+	box in PIF Editor, or you can use the PC Tools PC Config program to
+	specify that PC Tools applications should use the Text Font to display
+	information. For more information about changing an application's PIF,
+	see Chapter 8, "PIF Editor," in the Microsoft Windows User's Guide.
+	
+	8.6  WordPerfect Version 5.1
+	
+	When running WordPerfect version 5.1 in a window, the Windows mouse
+	pointer and the WordPerfect mouse pointer will not appear in the same
+	place. To fix this problem, do the following:
+	
+	1.  In WordPerfect, press SHIFT+F1.
+	
+	2.  Select M for Mouse and A for Acceleration Factor.
+	
+	3.  Set the Acceleration Factor to 1.
+	
+	4.  Press ENTER three times to return to your document.
+	
+	5.  Enlarge the WordPerfect window to fill the entire screen.
+	
+	6.  Move the Windows mouse pointer into the WordPerfect window, and
+	   then move it to the far-right edge of the window.
+	
+	7.  Move the mouse pointer to the far-left edge of the window.
+	
+	8.  Move the pointer back to the center of the window, and then move
+	   it down to the bottom edge.
+	
+	9.  Finally, move the pointer up to the upper-left corner of the
+	   window.
+	
+	The Windows mouse pointer and the WordPerfect mouse pointer should now
+	be in the samelocation.
+	
+	8.7   3270-Emulation Applications
+	---------------------------------
+	
+	You may encounter problems using certain 3270-emulation applications
+	with Windows version 3.1. If you are using one of these applications,
+	it is recommended that you purchase the Windows Resource Kit for the
+	Microsoft Windows Operating System Version 3.1. This kit provides
+	troubleshooting information about using 3270-emulation applications,
+	in addition to complete technical information about Windows version
+	3.1 for the support professional. It includes a technical reference
+	manual and a disk containing helpful utilities, system resource
+	viewers, drivers, and accessories. To order the Windows Resource Kit
+	within the United States, dial:
+	
+	  1-800-642-7676
+	
+	To order outside of the United States, dial the phone number for your
+	area. You can find this number on the International Subsidiary card.
+	
+	8.8    AutoCad
+	--------------
+	
+	When running AutoCad 386 under Windows 3.1, note the following:
+	
+	- AutoCad 386 runs in standard mode only if no LIMulator is installed.
+	 To run in 386 enhanced mode, you must upgrade to AutoCad for
+	 Windows.
+	
+	- The PIF setting for AutoCad 386 are set for a minimum configuration.
+	 Using these setting results in poor performance. To improve
+	 performance, you can modify the PIF settings, as described below.
+	
+	 PIF Settings
+	 ------------
+	
+	 To improve the performance of AutoCad 386, make the following
+	 changes to the standard mode PIF:
+	
+	   XMS MEMORY REQUIRED should be set to 1. This forces XMS memory to
+	   be provided to an application. Unless a required amount is listed,
+	   no XMS memory is provided.
+	
+	   XMS MEMORY DESIRED should be set from 1024 to 4096. 1024
+	   significantly improves performance. The manufacturer recommends
+	   4096 for best performance.
+	
+	   OTHER REQUIREMENTS: For these settings to work, you must have
+	   adequate XMS memory available. If there is not enough, no adverse
+	   effects are apparent, but performance is only improved by the real
+	   amount of XMS provided. You must also have an equivalent amount of
+	   disk space free for a swap file.
+	
+	Additional query words: 3.1 3.10 5 5.0 5.00
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbMSDOSSearch kbMSDOS500
+	Version           : :
+	
+	=============================================================================
+	

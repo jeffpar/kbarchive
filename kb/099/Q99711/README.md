@@ -1,0 +1,105 @@
+---
+layout: page
+title: "Q99711: MIDI Sounds Do Not Play or Sounds Distorted with Sound Blaster"
+permalink: kb/099/Q99711/
+---
+
+## Q99711: MIDI Sounds Do Not Play or Sounds Distorted with Sound Blaster
+
+	Article: Q99711
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 17-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Bookshelf for Windows, 1991, 1992, 1993, 1994, 1995 editions, versions 1991, 1992, 1993, 1994 
+	- Microsoft Encarta 1994 The Complete Multimedia Encyclopedia 
+	- Microsoft Multimedia Beethoven for Windows, version 1.0 
+	- Scholastic's Magic School Bus series: Explores the Human Body for Windows 
+	- Scholastic's Magic School Bus series: Explores the Solar System for Windows 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	If MIDI files do not play or the sound is distorted from the Sound Blaster Pro,
+	the incorrect Creative Sound Blaster Pro MIDI Synthesizer driver may be
+	installed.
+	
+	MORE INFORMATION
+	================
+	
+	Creative Labs produces two versions of the Sound Blaster Pro card, the CT1330
+	and the CT1600. The two cards use a different MIDI chip set and require
+	different driver versions.
+	
+	To verify which version of the card is being used, look for the numbers "1330" or
+	"1600" stenciled on the Sound Blaster Pro card.
+	
+	To verify which version of the driver is being used, check the [Drivers] section
+	of the SYSTEM.INI file.
+	
+	If the MIDI= line reads
+	
+	  MIDI=SBPFM.DRV
+	
+	the driver for the CT1330 is installed.
+	
+	If the MIDI= line reads
+	
+	  MIDI=SBP2FM.DRV
+	
+	the driver for the CT1600 is installed.
+	
+	Both drivers will indicate "Creative Sound Blaster Pro MIDI Synthesizer" in the
+	Drivers section in Control Panel.
+	
+	Workaround
+	----------
+	
+	If the wrong driver is in use, obtain the correct driver from Creative Labs and
+	install it as follows:
+	
+	1. From the Drivers section of Control Panel, select the driver called Creative
+	  Sound Blaster Pro MIDI Synthesizer and choose Remove.
+	
+	2. When prompted, choose Restart Windows.
+	
+	3. From the Drivers section of Control Panel, choose Add.
+	
+	4. From the list of drivers, choose Unlisted or Updated Driver.
+	
+	5. When prompted, supply the path to the new driver file.
+	
+	6. Choose Creative Sound Blaster Pro MIDI Synthesizer from the list of drivers.
+	
+	7. When prompted, supply the appropriate port settings.
+	
+	8. When prompted, choose Restart Windows.
+	
+	The products included here are manufactured by vendors independent of Microsoft;
+	we make no warranty, implied or otherwise, regarding these products' performance
+	or reliability.
+	
+	REFERENCES
+	==========
+	
+	For more information, contact Creative Labs:
+	
+	- Technical support (405) 742-6655
+	
+	- Recorded frequently asked questions (405) 742-6622
+	
+	
+	Additional query words: KBPRIORITY1 2.00 multimedia multi media 2.0 multi-media kbmm sbp soundblaster national anthem static fuzzy SoundBlaster viewer kbmm mmtitles usage
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbKidsSearch kbBookshelfSearch kbEncartaEncycSearch kbMMBeethoven100 kbEncartaEnCyc1994 kbMSBSearch
+	
+	=============================================================================
+	

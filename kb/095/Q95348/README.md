@@ -1,0 +1,111 @@
+---
+layout: page
+title: "Q95348: Converting Stacker-Compressed Removable Disks"
+permalink: kb/095/Q95348/
+---
+
+## Q95348: Converting Stacker-Compressed Removable Disks
+
+	Article: Q95348
+	Product(s): Microsoft Disk Operating System
+	Version(s): MS-DOS:6.0,6.2
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 23-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft MS-DOS operating system versions 6.0, 6.2 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	To convert a Stacker version 2.x or 3.0 compressed floppy disk to a
+	DoubleSpace-compressed disk using the Conversion Disk for Users of Stacker, you
+	must have approximately 900 kilobytes (K) of free disk space on the floppy disk.
+	To convert a Stacker-compressed removable media disk (such as Bernoulli disks
+	and removable optical disks), you must have approximately 1 megabyte (MB) of
+	free disk space on the removable disk. The free disk space can be either at the
+	end of the Stacker volume file (SVF) or on the uncompressed portion of the
+	disk.
+	
+	If you do not have enough free disk space to compress a removable disk and you
+	cannot remove any files to create more free disk space (or the disk capacity is
+	less than 900K [360K or 720K]), use the procedure below, which was taken from
+	the README.TXT file.
+	
+	MORE INFORMATION
+	================
+	
+	DoubleSpace requires 900K free disk space so that it can create a 512K
+	DoubleSpace compressed volume file (CVF). DoubleSpace also requires 400K- 500K
+	free disk space so that it can internally defragment a highly fragmented SVF.
+	
+	If DoubleSpace cannot convert a Stacker-compressed volume file due to disk space
+	limitations, do the following:
+	
+	1. Insert the floppy disk in drive A or B.
+	
+	2. Copy the STACVOL.DSK file to the host drive on your hard disk. If you don't
+	  know which drive is your host drive, type "dblspace /list" (without the
+	  quotation marks) at the MS-DOS command prompt and then press ENTER.
+	
+	  When you copy the file, change its extension to .001. For example, if the
+	  floppy disk is in drive A, and your host drive is drive D, type the following
+	  at the MS-DOS command prompt and press ENTER:
+	
+	  " copy a:\stacvol.dsk d:\stacvol.001 " (without the quotation marks)
+	
+	  If you have insufficient disk space, start DoubleSpace by typing "dblspace"
+	  (without the quotation marks) at the MS-DOS command prompt, and choose Change
+	  Size from the Drive menu. Make the size of the uncompressed drive large
+	  enough to contain the SVF.
+	
+	3. Covert the compressed volume file to DoubleSpace format, as in the following
+	  example:
+	
+	  dblspace /convstac=d:\stacvol.001
+	
+	  After DoubleSpace converts the file, it mounts the file.
+	
+	4. If are using Stacker version 2.0, delete the STACKER.DRV file on the floppy
+	  disk. If you are using Stacker version 3.0, delete the STACKER.EXE and
+	  README.STC files.
+	
+	5. Delete the STACVOL.DSK file on the floppy disk.
+	
+	6. Make sure your floppy disk is in drive A or B and then compress it by
+	  choosing Existing Drive from the Compress menu in DoubleSpace. Follow the
+	  instructions on your screen.
+	
+	  DoubleSpace mounts the floppy drive after it finishes compressing the floppy
+	  disk.
+	
+	7. Quit DoubleSpace.
+	
+	8. Use the XCOPY command to copy all the files on the new compressed drive on
+	  your hard disk to the compressed floppy disk. For example, if the compressed
+	  drive is J, and the floppy disk is in drive A, type the following at the
+	  MS-DOS command prompt and then press ENTER:
+	
+	  " xcopy j:\*.* a: /s " (without the quotation marks)
+	
+	9. Delete the compressed drive on your hard disk. For example, if your
+	  compressed drive is J, type the following at the MS-DOS command prompt and
+	  press ENTER:
+	
+	  " dblspace /delete j: " (without the quotation marks)
+	
+	  To confirm the deletion, type "Y" (without the quotation marks).
+	
+	Additional query words: 6.00 6.20 svf cvf syquest floppy disk drive removable media
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMSDOSSearch kbMSDOS620 kbMSDOS600
+	Version           : MS-DOS:6.0,6.2
+	
+	=============================================================================
+	

@@ -1,0 +1,63 @@
+---
+layout: page
+title: "Q116109: Problems Using 1.0 Version of NDIS 2.0 Network Card Driver"
+permalink: kb/116/Q116109/
+---
+
+## Q116109: Problems Using 1.0 Version of NDIS 2.0 Network Card Driver
+
+	Article: Q116109
+	Product(s): Microsoft Windows 3.x Retail Product
+	Version(s): WINDOWS:3.1,3.11; :2.2
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 04-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows for Workgroups versions 3.1, 3.11 
+	- Microsoft LAN Manager, version 2.2 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Microsoft has reproduced the following problems with the 1.0 version of the NDIS
+	2.0 network card adapter driver, which ships with the Xircom Creditcard Ethernet
+	adapter:
+	
+	- Periodic disconnection from the network (this causes the failure of file
+	  copying operations)
+	
+	- Slow operation
+	
+	- Failure to recognize servers on the network
+	
+	These problems occur if you are running LAN Manager version 2.2 or Windows for
+	Workgroups version 3.1 or 3.11.
+	
+	WORKAROUND
+	==========
+	
+	Xircom Technical Support recommends that you use the ODI network card adapter as
+	a workaround. However, this solution alone does not resolve all the problems.
+	
+	Microsoft recommends that you upgrade to the Xircom version 2.13 Flash BIOS for
+	the Creditcard Ethernet adapter and use version 2.00 of the updated Xircom NDIS
+	2.0 driver.
+	
+	To obtain these upgrades, contact Xircom at (800) 874-4428, or download the
+	drivers from the Xircom bulletin board service (BBS) at (818) 878-7618.
+	
+	
+	
+	Additional query words: wfw wfwg w4wnetwork w4whardware
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbLanManSearch kbWFWSearch kbWFW310 kbWFW311 kbLanMan220
+	Version           : WINDOWS:3.1,3.11; :2.2
+	
+	=============================================================================
+	

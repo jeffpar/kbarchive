@@ -1,0 +1,104 @@
+---
+layout: page
+title: "Q128607: Macintosh Chooser Cannot See SFM Servers Using Compaq PCI NIC"
+permalink: kb/128/Q128607/
+---
+
+## Q128607: Macintosh Chooser Cannot See SFM Servers Using Compaq PCI NIC
+
+	Article: Q128607
+	Product(s): Microsoft Windows NT
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 3.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The installation of Services for Macintosh in Windows NT Server version 3.5
+	displays the AppleTalk zones and allows you to enable AppleTalk routing (or seed
+	an AppleTalk network). If you select an AppleTalk zone from a computer using a
+	Compaq Integrated PCI NetFlex network interface card (NIC), the server does not
+	appear in Chooser on the Macintosh client computer. If no zones are defined on
+	the network, the server does appear in Chooser on the Macintosh client computer.
+	
+	CAUSE
+	=====
+	
+	The Compaq driver for the integrated PCI NetFlex controller, PCNTN3.SYS, does
+	not transmit the server's default zone information out to the network.
+	
+	WORKAROUND
+	==========
+	
+	The older driver (version 1.99) from the Windows NT Server CD-ROM works
+	correctly. To see what driver you are using:
+	
+	1. Open File Manager
+	
+	2. Select the PCNTN3.SYS file in the \\%systemroot%\System32\Drivers directory
+	
+	3. Choose Properties... from the File menu.
+	
+	If the version number is 1.99, it is the older driver and should work.
+	
+	If it is version number 2.00 or greater, the driver is from the Compaq SSD. If
+	so, follow these steps to install the older driver:
+	
+	1. Rename the driver to PCNTN3.OLD
+	
+	2. Open the Network component in Control Panel
+	
+	3. Remove Services for the Macintosh
+	
+	4. Remove the network card driver
+	
+	5. Accept the change and reboot your computer
+	
+	6. Open the Network component in Control Panel
+	
+	7. Choose Add Adapter...
+	
+	8. Select the AMD PCNET Family Ethernet Adapter and choose Continue
+	
+	9. When prompted, type the full path to the PCNTN3.SYS driver on the Windows NT
+	  Server CD-ROM. For example:
+	
+	  D:\DRVLIB\NETCARD\X86\PCNET\PCNTN3.SYS
+	
+	  assuming "D" is your CD-ROM drive letter.
+	
+	10. Accept the changes and reboot your computer again
+	
+	11. Open the Network component in Control Panel
+	
+	12. Re-install Services for Macintosh
+	
+	13. Accept the changes and reboot your computer again.
+	
+	The server should now be visible from the Macintosh Chooser.
+	
+	STATUS
+	======
+	
+	For more information, contact Compaq Technical Support at (800) 652-6672.
+	
+	The Compaq products discussed here are manufactured by Compaq Computer
+	Corporation, a vendor independent of Microsoft; we make no warranty, implied or
+	otherwise, regarding these products' performance or reliability.
+	
+	Additional query words: mac prodnt
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNT350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+	
+	=============================================================================
+	

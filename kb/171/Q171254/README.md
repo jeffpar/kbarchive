@@ -1,0 +1,62 @@
+---
+layout: page
+title: "Q171254: Information about Uninstalling TAPI 2.1 In Windows NT 4.0"
+permalink: kb/171/Q171254/
+---
+
+## Q171254: Information about Uninstalling TAPI 2.1 In Windows NT 4.0
+
+	Article: Q171254
+	Product(s): Microsoft Windows NT
+	Version(s): WinNT:4.0
+	Operating System(s): 
+	Keyword(s): kbsetup
+	Last Modified: 09-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 4.0 
+	- Microsoft Windows NT Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	If you uninstall the Telephony application programming interface (TAPI) version
+	2.1 driver set or the TAPI 2.1 Software Developer Kit (SDK), some files may not
+	be replaced with the original versions.
+	
+	MORE INFORMATION
+	================
+	
+	TAPI 2.1, in Microsoft Windows NT version 4.0, requires Service Pack 3 or later.
+	If you uninstall TAPI 2.1, you need to reapply the service pack before
+	restarting. Failure to reapply the service pack may result in mismatched
+	versions of TAPI-related files and could lead to other problems.
+	
+	NOTE: When you apply Service Pack 3, the update program indicates that the
+	service pack needs to be reapplied if you change or add any components.
+	
+	The recommended uninstall procedure for TAPI 2.1 is as follows:
+	
+	1. Locate the Remtapin.inf file for Windows NT. More information about this file
+	  may be found in the Readme.txt file that came with TAPI 2.1.
+	
+	2. Right-click the file, then click Install.
+	
+	3. Follow the directions given during the uninstall process. This procedure will
+	  reinstall the original TAPI system from the Microsoft Windows NT 4.0 CD.
+	
+	4. Reapply Service Pack 3 for Microsoft Windows NT version 4.0 before
+	  restarting.
+	
+	Additional query words: tapi uninstall sp3
+	======================================================================
+	Keywords          : kbsetup 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+	Version           : WinNT:4.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

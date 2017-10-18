@@ -1,0 +1,109 @@
+---
+layout: page
+title: "Q290766: &quot;Page Cannot be Displayed&quot; Error When You Browse to Http://Local"
+permalink: kb/290/Q290766/
+---
+
+## Q290766: &quot;Page Cannot be Displayed&quot; Error When You Browse to Http://Local
+
+	Article: Q290766
+	Product(s): Internet Information Server
+	Version(s): 5.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 02-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Services version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you try to browse to http://localhost, Microsoft Internet Explorer may
+	prompt you to "Work Offline" or "Try Again." If you click Work Offline, you may
+	receive an "Web page unavailable offline" message, and if you click Try Again,
+	you may receive a "Page cannot be displayed" message.
+	
+	CAUSE
+	=====
+	
+	Internet Explorer searches for an Internet connection before it attempts to
+	serve local Web pages. This behavior is by design.
+	
+	WORKAROUND
+	==========
+	
+	Install a valid Network Adapter and Network Connection.
+	
+	MORE INFORMATION
+	================
+	
+	If a Network Adapter is not available, you can use Microsoft Loopback adapter.
+	For additional information, click the article number below to view the article
+	in the Microsoft Knowledge Base:
+	
+	  Q236869 How to Install Microsoft Loopback Adapter in Windows 2000
+	
+	To create a Network Connection for use with Microsoft Loopback Adapter, do the
+	following:
+	
+	1. Right click My Network Places, and then click Properties.
+	
+	2. Double-click Make New Connection, click Connect to Private Network through
+	  the Internet, and then click Next
+	
+	3. For the Host name or IP address, type "HTTP://Localhost" (without the
+	  quotation marks).
+	
+	4. Make the connection for Yourself or Everyone, and then click Next.
+	
+	5. Name the connection (for example, "Test VPN").
+	
+	6. Click Finish, and then click Cancel.
+	
+	If your computer is running Microsoft Windows 2000 Professional Edition, you also
+	need to follow these steps:
+	
+	1. On the desktop, right-click My Network Places, click Properties, and then
+	  double-click Make New Connection.
+	
+	2. Select Connect to Private Network through the Internet and click Next.
+	
+	3. Select Automatically dial this initial connection and click Next.
+	
+	4. For Host name or IP address, type "HTTP://Localhost" (without the quotation
+	  marks).
+	
+	5. For Create this connection, select either For all users or Only for myself
+	  and click Next.
+	
+	6. Name the connection Test VPN and click Finish.
+	
+	7. (In the Connect Test VPN dialog box)Click Cancel.
+	
+	8. Right-click Internet Explorer, click Properties, and then click Connections.
+	
+	9. Select Test VPN.
+	
+	10. Select Dial whenever a network connection is not present.
+	
+	11. Click Set default and click OK.
+	
+	12. Click OK.
+	
+	13. Start Internet Explorer and browse to http:\\localhost.
+	
+	Additional query words: iis 5 iis5 ie5
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbiisSearch kbiis500
+	Version           : :5.0
+	Issue type        : kbprb
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

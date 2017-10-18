@@ -1,0 +1,73 @@
+---
+layout: page
+title: "Q197072: Encarta Virtual Globe 99: Minimum System Requirements"
+permalink: kb/197/Q197072/
+---
+
+## Q197072: Encarta Virtual Globe 99: Minimum System Requirements
+
+	Article: Q197072
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): WINDOWS:1.0
+	Operating System(s): 
+	Keyword(s): kbenv kbsetup kbref kbimu
+	Last Modified: 13-AUG-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Encarta Virtual Globe 99, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article lists the minimum system requirements needed to use Microsoft
+	Encarta Virtual Globe 99, version 1.0.
+	
+	MORE INFORMATION
+	================
+	
+	To use Microsoft Encarta Virtual Globe 99, you need:
+	
+	- A Multimedia PC with a Pentium 60 or faster processor.
+	
+	- Microsoft Windows 95 operating system or later, or Windows NT Workstation
+	  operating system version 4.0 or later with Service Pack 3.
+	
+	- 16 megabytes (MB) of RAM for Windows 95 or later (24 MB recommended); 32 MB
+	  of RAM for Windows NT Workstation 4.0 (48 MB recommended).
+	
+	- 60 MB of available hard-disk space (100 MB needed during installation).
+	
+	- An MPC-compliant CD-ROM drive, double-speed or faster.
+	
+	- A Super VGA, 256-color monitor or better supporting 640 x 480 or higher
+	  resolution (800 x 600 recommended).
+	
+	- A Microsoft Mouse, Microsoft IntelliMouse, or compatible pointing device.
+	
+	- A 16-bit sound card or better (speakers or headphones recommended).
+	
+	- Microsoft Internet Explorer 4.01 or later (you can maintain other default
+	  browsers after installation).
+	
+	To use Microsoft Encarta Web Links, you need:
+	
+	- A 9,600 bits per second (bps) or faster modem.
+	
+	- An Internet service provider (ISP) and access to the Internet.
+	
+	  NOTE: Internet access may require payment of a separate fee to an Internet
+	  service provider. Connect time charges may apply.
+	
+	Additional query words: multi-media world atlas evg sysreqs requires
+	
+	======================================================================
+	Keywords          : kbenv kbsetup kbref kbimu 
+	Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaVirtGlobe99
+	Version           : WINDOWS:1.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

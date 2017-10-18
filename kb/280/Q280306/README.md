@@ -1,0 +1,78 @@
+---
+layout: page
+title: "Q280306: XADM: Client Stops Responding If You Open Another User's Folder"
+permalink: kb/280/Q280306/
+---
+
+## Q280306: XADM: Client Stops Responding If You Open Another User's Folder
+
+	Article: Q280306
+	Product(s): Microsoft Exchange
+	Version(s): 5.5
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 29-APR-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When an Exchange Server 5.5 client computer user tries to open another user's
+	folder, the client computer may appear to stop responding, or it may require
+	more time than you expect to open the folder.
+	
+	CAUSE
+	=====
+	
+	This behavior can occur when distribution lists are used on folder permissions
+	to access another user's folder. Additionally, this behavior may occur after you
+	remove a server from a site where this server was specified as the distribution
+	list expansion server for this distribution list.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this behavior, change the distribution lists to expand on any server
+	in the site or specify a valid server to expand the distribution list. To change
+	the expansion server for a distribution list:
+	
+	1. In the Microsoft Exchange Administrator program, expand the site name, and
+	  then select the Recipients container that contains the distribution lists.
+	
+	2. Select a distribution list that you want to modify, and then click the
+	  Properties button on the toolbar.
+	
+	3. On the General tab, select the Expansion Server drop-down box, and then
+	  select a valid server in the site or change the setting to "Any Server in the
+	  site".
+	
+	4. Click OK.
+	
+	MORE INFORMATION
+	================
+	
+	For additional information about distribution list expansion, click the article
+	number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q185194 XCON: Distribution List (DL) Expansion
+	
+	For additional information about other behaviors that you can experience, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q154537 XCON: Congestion in Message Transfer Service, Sending to DL
+	
+	Additional query words: dl distribution list expansion slow removing server
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+	Version           : :5.5
+	Issue type        : kbprb
+	
+	=============================================================================
+	

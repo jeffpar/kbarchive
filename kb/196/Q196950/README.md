@@ -1,0 +1,724 @@
+---
+layout: page
+title: "Q196950: WD97: How Bin Selection Works on the HP LaserJet 4"
+permalink: kb/196/Q196950/
+---
+
+## Q196950: WD97: How Bin Selection Works on the HP LaserJet 4
+
+	Article: Q196950
+	Product(s): Word 97 for Windows
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): word97
+	Last Modified: 01-MAR-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	
+	SUMMARY
+	=======
+	
+	This article explains how bin selection is handled when using the Hewlett-
+	Packard (HP) LaserJet 4 with Word for Windows. If the bins of the printer are
+	not correctly configured using the front control panel on the printer, several
+	problems may occur, including the following:
+	
+	- Each time you print an envelope to the manual feed bin, rather than
+	  automatically pulling the envelope from the manual feed bin, the printer goes
+	  offline, and you must press the Continue button on the printer to force it to
+	  pull the envelope.
+	
+	- When you print an envelope, the printer pulls the envelope from a different
+	  tray than you want it to.
+	
+	- When you print a custom paper size, the printer pulls paper from the letter
+	  cassette rather than the manual feed bin.
+	
+	- When you print a custom paper size, rather than automatically pulling the
+	  paper from the manual feed bin, the printer goes offline, and you must press
+	  the Continue button on the front panel of the printer to continue.
+	
+	- When you print legal size paper, the printer either goes offline or pulls
+	  paper from a different tray than you want it to.
+	
+	MORE INFORMATION
+	================
+	
+	BIN TERMINOLOGY
+	---------------
+	
+	Paper Cassette:
+	
+	The LaserJet 4 has a slot for a paper tray near the base of the front of the
+	printer. You can insert a letter tray that holds letter-size paper, or you can
+	insert a legal tray that holds legal-size paper. There is also an optional
+	universal tray, which uses an adjusting knob to set the paper size available.
+	Because the physical size of these trays differs, the printer has internal
+	sensors that can detect what type of tray it is (letter or legal) and therefore
+	know what type of paper is being loaded into this slot. With the optional
+	universal tray, the paper size is detected through the position of the
+	paper-size adjusting knob. This is called "auto- detecting" the paper size.
+	
+	The Multipurpose (or MP) Tray:
+	
+	The MP tray is a door that drops down on the front of the printer above the paper
+	cassette. The door can drop down a level and has sliders so that you can put
+	different sizes of paper in it. It looks like a manual-feed tray; however,
+	unlike a manual-feed tray, with the MP tray, you can load a small stack of paper
+	(100 sheets) instead of only one sheet at a time.
+	
+	Because you can load 100 sheets of paper, you can use the MP tray as a second
+	paper source. This is why HP calls it a multipurpose tray rather than a
+	manual-feed tray.
+	
+	NOTE: Because you can put any size paper in the MP tray, you must configure it to
+	correctly match the paper you are using. (This is done on the control panel on
+	the printer.)
+	
+	Optional Envelope Feeder:
+	
+	This is an optional box that is hooked into the front of the printer. It holds
+	envelopes only.
+	
+	NOTE: Many people think they have an envelope feeder, when, in fact, they are
+	using an MP tray. Finding out whether you have a true envelope feeder or are
+	using the MP tray to load envelopes is very important--this determines whether
+	you have two or three possible paper sources.
+	
+	The printer can detect when an optional envelope feeder is installed because this
+	device hooks into a special spot on the front of the printer.
+	
+	Although the printer can tell an envelope feeder is installed, it cannot tell
+	what size envelope is loaded in the feeder. The envelope size also must be
+	configured using the front control panel of the printer.
+	
+	Once the feeder is installed, you have 15 seconds to change the envelope size;
+	otherwise, the printer selects the default value (COM 10).
+	
+	Optional Lower Cassette:
+	
+	This is an optional tray that the printer sits on top of. It holds up to 500
+	sheets of paper. There are two types of lower cassettes available: standard,
+	which supports letter, A4, and executive; and universal, which supports letter,
+	legal, A4, and executive.
+	
+	HOW DOES THE HP LASERJET 4 DETERMINE WHICH BIN TO PRINT FROM?
+	-------------------------------------------------------------
+	
+	This section explains how the HP LaserJet 4 determines which bin to use when you
+	print from Word under a variety of configurations and scenarios.
+	
+	Configuration: No Optional Envelope Feeder or Lower Cassette Installed:
+	
+	If your printer does not have an optional envelope feeder or lower cassette
+	installed, the two possible paper sources are the MP tray and the paper
+	cassette:
+	
+	  MP Tray              You tell the printer what size paper is loaded
+	                       using the Paper Size button on the control panel on
+	                       the front of the printer.
+	
+	  Paper Cassette       Tells the printer what size paper it contains
+	                       (letter or legal).
+	
+	Scenario 1: Print Envelope from Word:
+	
+	Printer Configuration: Printer contains letter paper cassette, and the MP tray is
+	configured for legal size paper.
+	
+	Problem:
+	
+	When you print a COM 10 size envelope from Word, the printer displays the
+	following message: [MP LOAD COM 10]. This error occurs because the printer does
+	not contain a COM 10 paper source. The printer cannot pull from the paper
+	cassette because it tells the printer it contains letter size paper. Further, it
+	cannot pull from the MP tray because you configured that tray for legal size
+	paper. The printer goes offline and requests the correct size paper.
+	
+	Resolution:
+	
+	Load up to ten envelopes in the MP tray and press the Continue button to begin
+	printing. If you want to print more than ten envelopes without pressing the
+	Continue button, reconfigure the MP tray for envelopes. This resolves the
+	conflict between the requested and available paper sizes.
+	
+	Scenario 2: Print Envelope from Word:
+	
+	Printer Configuration: Printer contains the letter cassette and the MP tray is
+	configured for COM 10 size envelopes.
+	
+	NOTE: With this configuration, when you send a COM 10 envelope from Word, the
+	printer pulls an envelope from the MP tray without going offline or displaying
+	any error message. In other words, everything works correctly.
+	
+	Problem:
+	
+	If you print a legal size page from Word and select MP Tray for the Paper Source
+	setting, the printer goes offline and displays the [MP FEED LEGAL] error. The
+	printer assumes the MP tray contains envelopes, so it prompts you to remove the
+	envelopes and add legal paper to the tray. Similarly, if you print a legal size
+	page from Word and select Upper Cassette, Lower Cassette, or Auto Select for the
+	Paper Source setting, the printer goes offline and displays the [PC LOAD LEGAL]
+	error. The printer assumes you want to print from the legal paper cassette, so
+	it prompts you to remove the letter paper cassette and insert the legal paper
+	cassette.
+	
+	Resolution:
+	
+	Either place a legal size sheet in the MP tray or switch to the legal paper
+	cassette and then press the Continue button. To avoid the error message
+	altogether, either configure the MP tray for legal size paper or insert the
+	legal cassette before you print.
+	
+	Configuration: Envelope Feeder Installed, No Lower Cassette Installed:
+	
+	The three possible paper sources are the MP tray, paper cassette, and the
+	optional envelope feeder:
+	
+	  MP Tray              You tell the printer what size paper is loaded
+	                       using the Paper Size button on the control panel on
+	                       the front of the printer.
+	
+	  Paper Cassette       Tells the printer what size paper it contains
+	                       (letter or legal).
+	
+	  Envelope Feeder      You tell the printer what size envelopes are
+	                       loaded using the Paper Size button on the
+	                       printer.
+	
+	Scenario 1: Print Legal Paper:
+	
+	Printer Configuration: Printer contains the letter paper cassette, the MP tray is
+	configured for legal size paper, and the envelope feeder is configured for COM
+	10 size envelopes.
+	
+	NOTE: With this configuration, when you print a COM 10 envelope to the envelope
+	feeder, the printer pulls an envelope from the envelope feeder without going
+	offline or displaying any error message. In other words, everything works
+	correctly.
+	
+	Problem:
+	
+	If you print a COM 10 envelope with the Paper Source set to Manual Feed, the
+	printer goes offline and displays the [ME FEED COM 10] error, even though the
+	envelope feeder contains the correct size envelope. To continue, remove the
+	legal paper from the MP tray, place a COM 10 envelope in the MP tray, and press
+	the Online button to print.
+	
+	Similarly, if you print a Monarch size envelope from Word with the Paper Source
+	set to Envelope Feeder, the printer goes offline and displays the [EE LOAD
+	MONARCH] error to prompt you to put a Monarch size envelope in the envelope
+	feeder. Word does not pull an envelope from the envelope feeder because it is
+	set for COM 10 size envelopes, not Monarch. If you place a Monarch envelope in
+	the feeder, the printer resumes printing automatically. (You do not have to
+	press the Continue button.)
+	
+	Resolution:
+	
+	You can either put a Monarch size envelope in the feeder, or you can put the
+	envelope in the MP tray and press the Continue button on the printer. If you
+	want to avoid the error message, reconfigure your envelope feeder for Monarch
+	size envelopes.
+	
+	BIN SELECTION FLOWCHART
+	-----------------------
+	
+	Below is a flow chart that provides a visual representation of the bin selection
+	process on the HP LaserJet 4. Remember that when you select Paper Source and
+	Paper settings in Word, the printer complies with that request only if you
+	configured the printer for the requested paper size and source as well. In other
+	words, the printer configuration must match the Word settings to print without
+	displaying an error. This behavior is consistent with the bin-selection
+	functionality of all HP multibin printers.
+	
+	IMPORTANT: If you change the MP Tray setting from CASS to FIRST using the menu on
+	the control panel of the printer, the printer first checks the MP tray for the
+	correct paper size instead of first checking the lower trays.
+	
+	                      Word Sends a
+	                      Paper Size to
+	                      the Printer.
+	                             |
+	                             |
+	                             |
+	                      Does Print Job
+	                      Paper Size Equal
+	                      Size Set for the
+	                        Lower Trays?
+	
+	                            /                             /              
+	
+	         NO  /     \  YES
+	                         /                                /              
+	
+	                /                                  /                      
+	           /                                 Does Print        Print Job
+	                 Job Paper           to the
+	                 Size Equal        Lower Trays.
+	                 Size in MP
+	                   Tray?
+	
+	                    /                     /                  NO  /     \ 
+	YES
+	                 /                        /                         /    
+	
+	                   /                        Go Offline      Print Job to
+	          and Ask for      MP Tray.
+	          Paper Size.
+	
+	GLOSSARY OF PRINTER PANEL [FEED...] MESSAGES
+	--------------------------------------------
+	
+	The errors on the printer usually display the paper size it is trying to print
+	and the bin it is trying to print from. Below is a list of the printer error
+	messages, along with the causes and troubleshooting methods you can use for
+	each.
+	
+	EE LOAD <Envelope Size>:
+	
+	Meaning:
+	
+	The printer received a request for an envelope that is not loaded in the optional
+	envelope feeder.
+	
+	Troubleshooting Tips:
+	
+	The printer has an envelope feeder, but it is configured for an envelope size
+	that does not match the Paper Size setting in Word.
+	
+	Resolution:
+	
+	Place the envelope in the MP tray and press the Continue button or reconfigure
+	the envelope feeder to match the envelope size you want to print.
+	
+	MF FEED <Paper Size>:
+	
+	NOTE: Possible <paper size> settings are Letter, Legal, Exec, and A4.
+	
+	Meaning: Word requested manual feed bin as the paper source.
+	
+	Troubleshooting Tips:
+	
+	- If the error occurs even though the MP tray contains the correct size paper,
+	  you need to change the Paper Source setting in Word from Manual Feed to MP
+	  Tray (this assumes your MP tray is configured for the requested paper size).
+	  Alternatively, you can place the paper in the MP tray and press the Online
+	  button (in other words, feed the paper manually).
+	
+	- If you are using a standard Page Size setting and then adjusting the margin
+	  settings to print on a custom paper size, you need to configure your MP tray
+	  for the requested paper size. In addition, make sure the Page Size setting in
+	  Word matches the MP tray paper size setting.
+	
+	ME FEED <Envelope Size>:
+	
+	NOTE: Possible <envelope size> settings are COM 10, Monarch, DL, C5, and
+	B5.
+	
+	Meaning:
+	
+	The printer prompts you to place an envelope in the MP tray, even though the
+	envelope feeder contains the correct size envelope.
+	
+	Troubleshooting Tip:
+	
+	The Paper Source setting in Word is Manual Feed, so the printer does not
+	automatically pull the correct size envelope from the envelope feeder.
+	
+	Resolutions:
+	
+	- Place the envelope in the MP tray and press the Online button.
+	
+	  -or-
+	
+	- Change the Paper Source setting in Word to MP Tray and configure the MP tray
+	  for the correct envelope size.
+	
+	  -or-
+	
+	- Change the Paper Source setting in Word to Envelope Feeder and configure the
+	  envelope feeder for the correct envelope size. To use this method in Word
+	  2.x, you must also select the Envelope Feeder Has Been Installed option under
+	  the Print category in the Options dialog box. (To access this dialog box,
+	  choose Options from the Tools menu.)
+	
+	<xx> LOAD <Envelope or Paper Size>:
+	
+	NOTE: The following are the possible settings for the variables in the above
+	error message:
+	
+	- <xx> can be MP (multipurpose tray), PC (paper cassette), or LC
+	  (optional lower cassette)
+	
+	- <Paper size> can be Letter, Legal, Exec, or A4
+	
+	- <Envelope size> can be COM 10, Monarch, DL, C5, or B5
+	
+	Meaning:
+	
+	The printer received a request for a paper or envelope size that is not available
+	in the printer.
+	
+	Troubleshooting Tip:
+	
+	The error message indicates the paper size and source Word requested. This size
+	should match the page size of your document, except when you are creating a
+	custom page size using a standard Page Size setting and adjusted margins. If the
+	printer tray contains the correct paper size, that tray is probably not
+	correctly configured.
+	
+	Resolution:
+	
+	Load the correct paper into the MP tray and press the Continue button, or
+	configure the MP tray for the paper size it contains.
+	
+	HOW TO CONFIGURE THE MP TRAY
+	----------------------------
+	
+	NOTE: This procedure also appears on page 3-25 of the "LaserJet 4 User's Guide."
+	
+	1. On the front panel of the printer, press the Online button to switch the
+	  printer offline.
+	
+	2. Press the Menu button five times so [CONFIG MENU] appears in the LCD display.
+	
+	3. Press the Item button once so [MP TRAY= ] appears in the LCD display.
+	
+	4. Press the +/- button until [MP TRAY=CASS] appears.
+	
+	5. Press the Enter button so [MP TRAY = CASS*] appears. This enters your choice.
+	
+	6. Press the Online button to switch the printer online.
+	
+	7. Press the Online button to reset the printer and switch it offline.
+	
+	8. Press the Shift+Reset buttons to reset the printer to factory default
+	  settings.
+	
+	9. Press Online to switch the printer online.
+	
+	10. Press the Paper Size button. [MP TRAY = ...] appears in the LCD display.
+	
+	11. Press the +/- button until the paper size you have loaded in the MP tray
+	  appears.
+	
+	12. Press the Enter button to lock your choice.
+	
+	13. Press the Online button to switch the printer online.
+	
+	HOW TO CONFIGURE THE OPTIONAL ENVELOPE FEEDER
+	---------------------------------------------
+	
+	When the optional envelope feeder is installed, the printer briefly displays [EE
+	TRAY = COM 10] when you turn on the printer. After about 15 seconds, the display
+	changes to [00 READY]. To reconfigure the envelope feeder, you must make the
+	changes before the display changes to [00 READY]. If the display changes to [00
+	READY] before you reconfigure the envelope feeder, turn off the printer then
+	turn it on again (or remove the envelopes from the feeder and then replace them)
+	to display the [EE TRAY = COM 10] message again.
+	
+	1. Make sure the envelope feeder is properly installed.
+	
+	2. Restart the printer by turning it off and then on.
+	
+	  -or-
+	
+	  Reset the envelope feeder by removing the envelopes from the envelope feeder
+	  and then putting them back.
+	
+	  The printer displays [EE TRAY = COM10] (or another envelope size).
+	
+	3. On the front panel of the printer, press the +/- button until your envelope
+	  size displays. The possible choices are COM 10, Monarch, C5, DL, and B5.
+	
+	4. When your envelope size is displayed, press the Enter key to lock your
+	  choice.
+	
+	5. Press the Online button.
+	
+	SAMPLE PRINTING SCENARIOS
+	-------------------------
+	
+	This section describes the results of a wide variety of printing configurations.
+	All the scenarios use version 1.27 of the HP LaserJet 4/4M driver and Word 6.0
+	for Windows. In all cases, a COM 10 size envelope is printed from the Envelopes
+	And Labels dialog box. (To open this dialog box, choose Envelopes And Labels
+	from the Tools menu.) All modifications to Paper Source settings are done by
+	choosing the Options button in the Envelopes And Labels dialog box and then
+	selecting the Printing Options tab.
+	
+	No Optional Envelope Feeder Installed:
+	
+	Scenario 1:
+	
+	Configuration:
+	
+	- Letter tray is installed
+	
+	- MP tray paper size is configured for COM 10 size envelopes
+	
+	- Printer driver Paper Source is set for Auto Select
+	
+	a. Printing an envelope with the Paper Source set to Manual Feed
+	
+	  Results:
+	
+	   - Printer goes offline and displays [ME FEED COM 10] error.
+	
+	  1. Load an envelope in the MP tray.
+	
+	  2. Press online to print the envelope from the MP tray.
+	
+	b. Printing an envelope with the Paper Source set to Paper Cassette
+	
+	  Results:
+	
+	  (With the MP tray empty)
+	
+	   - Printer goes offline and displays [MP LOAD COM 10] error.
+	
+	  1. Load an envelope in the MP tray.
+	
+	  2. Printer automatically pulls envelope from the MP tray.
+	
+	  (With an envelope loaded in the MP tray) - Printer automatically pulls
+	  envelope from the MP tray without going offline.
+	
+	c. Printing an envelope with the Paper Source set to Lower Cassette
+	
+	  Results: Same as Paper Cassette (Scenario 1B above)
+	
+	d. Printing an envelope with the Paper Source set to MP Tray
+	
+	  Results: Same as Paper Cassette (Scenario 1B above)
+	
+	e. Printing an envelope with the Paper Source set to Envelope Feeder
+	
+	  Results: Same as Paper Cassette (Scenario 1B above)
+	
+	f. Printing an envelope with the Paper Source set to Auto Select
+	
+	  Results: Same as Paper Cassette (Scenario 1B above)
+	
+	g. Printing an envelope with the Paper Source set to Default Tray
+	
+	  Results: Same as Paper Cassette (Scenario 1B above)
+	
+	Scenario 2:
+	
+	Configuration:
+	
+	- Letter tray is installed
+	
+	- MP tray is configured for letter size paper
+	
+	- Printer driver Paper Source set to Auto Select
+	
+	a. Printing an envelope with the Paper Source set to Manual
+	
+	  Results:
+	
+	   - Printer goes offline and displays [ME FEED COM 10] error.
+	
+	  1. Load an envelope in the MP tray.
+	
+	  2. Press online to print the envelope from the MP tray.
+	
+	b. Printing an envelope with the Paper Source set to Paper Cassette
+	
+	  Results:
+	
+	   - Printer goes offline and displays [MP LOAD COM 10] error.
+	
+	  1. Load an envelope in the MP tray.
+	
+	  2. Press the Shift+Continue buttons to print the envelope from the MP tray.
+	
+	c. Printing an envelope with the Paper Source set to Lower Cassette
+	
+	  Results: Same as Paper Cassette (Scenario 2B above)
+	
+	d. Printing an envelope with the Paper Source set to MP Tray
+	
+	  Results: Same as Paper Cassette (Scenario 2B above)
+	
+	e. Printing an envelope with the Paper Source set to Envelope Feeder
+	
+	  Results: Same as Paper Cassette (Scenario 2B above)
+	
+	f. Printing an envelope with the Paper Source set to Auto Select
+	
+	  Results: Same as Paper Cassette (Scenario 2B above)
+	
+	g. Printing an envelope with the Paper Source set to Default Tray Results: Same
+	  as Paper Cassette (Scenario 2B above)
+	
+	Optional Envelope Feeder Installed:
+	
+	Scenario 1:
+	
+	Configuration:
+	
+	- Envelope feeder is configured for COM 10 size envelopes
+	
+	- Letter tray is installed
+	
+	- MP tray is configured for letter size paper
+	
+	- Printer driver Paper Source set to Auto Select
+	
+	a. Printing an envelope with the Paper Source set to Manual
+	
+	  Results:
+	
+	   - Printer goes offline and displays [ME FEED COM 10] error.
+	
+	  1. Load an envelope in the MP tray.
+	
+	  2. Press online to print the envelope from the MP tray.
+	
+	b. Printing an envelope with the Paper Source set to Paper Cassette
+	
+	  Result: Envelope automatically prints from the envelope feeder
+	
+	c. Printing an envelope with the Paper Source set to Lower Cassette
+	
+	  Result: Envelope automatically prints from the envelope feeder
+	
+	d. Printing an envelope with the Paper Source set to MP Tray
+	
+	  Result: Envelope automatically prints from the envelope feeder
+	
+	e. Printing an envelope with the Paper Source set to Envelope Feeder
+	
+	  Result: Envelope automatically prints from the envelope feeder
+	
+	f. Printing an envelope with the Paper Source set to AutoSelect
+	
+	  Result: Envelope automatically prints from the envelope feeder
+	
+	g. Printing an envelope with the Paper Source set to Default Tray Result:
+	  Envelope automatically prints from the envelope feeder
+	
+	Scenario 2:
+	
+	Configuration:
+	
+	- Envelope feeder is configured for COM 10 size envelopes
+	
+	- Letter tray is installed
+	
+	- MP Tray is configured for COM 10 size envelopes
+	
+	- Printer driver Paper Source is set to Auto Select
+	
+	a. Printing an envelope with the Paper Source set to Manual
+	
+	  Results:
+	
+	   - Printer goes offline and displays [ME FEED COM 10] error.
+	
+	  1. Load an envelope in the MP tray.
+	
+	  2. Press online to print the envelope from the MP tray.
+	
+	b. Printing an envelope with the Paper Source set to Paper Cassette
+	
+	  Result: Envelope automatically prints from the envelope feeder
+	
+	c. Printing an envelope with the Paper Source set to Lower Cassette
+	
+	  Result: Envelope automatically prints from the envelope feeder
+	
+	d. Printing an envelope with the Paper Source set to MP Tray Results:
+	
+	   - Envelope automatically prints from the MP tray if it contains paper.
+	
+	   - Envelope automatically prints from the envelope feeder if the MP tray is
+	     empty.
+	
+	e. Printing an envelope with the Paper Source set to Envelope Feeder
+	
+	  Result: Envelope automatically prints from the envelope feeder
+	
+	f. Printing an envelope with the Paper Source set to Auto Select
+	
+	  Result: Envelope automatically prints from the envelope feeder
+	
+	g. Printing an envelope with the Paper Source set to Default Tray
+	
+	  Result: Envelope automatically prints from the envelope feeder
+	
+	PRINTING CUSTOM PAPER SIZES
+	---------------------------
+	
+	Word generally creates custom paper sizes by internally selecting the closest
+	paper size supported by the printer and increasing the margins so that the text
+	prints in the correct location on the supported paper size.
+	
+	The following steps describe what usually happens when you print a custom paper
+	size from Word:
+	
+	1. Word formats the document for letter size paper and increases the margin
+	  settings to create the correct print area on the custom size paper.
+	
+	  The printer does not know that you want to print on custom size paper; it
+	  knows only that Word requested letter size paper.
+	
+	2. The printer looks for letter size paper.
+	
+	3. If the MP tray is configured for letter size paper, the printer automatically
+	  prints from the MP tray. (Frequently, your MP tray already contains letter
+	  size paper, so the document prints correctly and no printer error occurs.)
+	
+	  On the other hand, if your MP tray is configured for a different size paper,
+	  the printer searches the other paper sources and prints from there if it
+	  finds the correct size paper. This usually prints the document in the wrong
+	  position on the page.
+	
+	Resolution: Configure your MP tray for letter size paper.
+	
+	HINTS FOR TROUBLESHOOTING BIN SELECTION PROBLEMS
+	------------------------------------------------
+	
+	1. Make sure the printer is reset by pressing the SHIFT+MENU buttons on the
+	  printer.
+	
+	2. Make sure the Paper Source setting in the printer driver is set to Auto
+	  Select.
+	
+	3. For envelopes, make sure Paper Source setting is correct; for example, do not
+	  select Envelope Feeder if your printer does not have an optional envelope
+	  feeder.
+	
+	4. Whenever you want to print from the MP tray, make sure the MP tray is
+	  configured to match the paper size you want to print.
+	
+	5. Note the error message on the printer. This usually indicates the paper size
+	  Word is requesting for the print job. Configure the MP tray for this paper
+	  size.
+	
+	6. Make sure you have a current version of your printer driver.
+	
+	REFERENCES
+	==========
+	
+	"LaserJet 4 User's Guide," page 3-25
+	
+	"LaserJet 4 Envelope Feeder User's Guide"
+	
+	Additional query words: lj4 ljiv hplj4 hpljiv hp4 iv
+	
+	======================================================================
+	Keywords          : word97 
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : :
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

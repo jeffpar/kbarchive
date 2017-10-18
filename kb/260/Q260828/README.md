@@ -1,0 +1,87 @@
+---
+layout: page
+title: "Q260828: SMS: Installations Using Automatic Logon Fail in SMS"
+permalink: kb/260/Q260828/
+---
+
+## Q260828: SMS: Installations Using Automatic Logon Fail in SMS
+
+	Article: Q260828
+	Product(s): Microsoft Systems Management Server
+	Version(s): 2.0,2.0 SP1
+	Operating System(s): 
+	Keyword(s): kbsms200 kbsms200bug kbsms200preSP2fix
+	Last Modified: 18-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server versions 2.0, 2.0 SP1 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Software installations requiring an automated logon process fail when run under
+	Systems Management Server version 2.0. Applications such as Microsoft Office
+	2000 SR1, deployed with Windows Installer MSI files that use automatic logon,
+	cannot be deployed by Systems Management Server.
+	
+	CAUSE
+	=====
+	
+	Automatic logon is a feature in Microsoft Windows NT, and Microsoft Windows 2000
+	that allows the automated logon of a specified user ID and password, when the
+	currently-logged on user is logged off or the system is restarted. This can be
+	executed at kiosk workstations where the workstation is "locked down" to prevent
+	unauthorized access.
+	
+	Systems Management Server version 2.0 has an option for software distribution,
+	allowing a Systems Management Server program to restart a computer at the end of
+	an installation. This is done by going to the Program properties, and then, on
+	the General tab, selecting the Restarts Computer option for a package in the
+	After Running: drop-down box.
+	
+	When deploying software with System Management Server with Windows Installer MSI
+	file for applications such as Office 2000 SR1, Setup performs its pre-restart
+	actions and writes entries to the run-once key for the post-restart processing.
+	
+	During the software installation process, Systems Management Server logs off the
+	currently-logged-on user. The automatic logon feature allows a logon to occur
+	immediately thereafter. This initiates the run-once process of the application.
+	At the same time, Systems Management Server executes the Restart Computer
+	command, which restarts the system and terminates the run-once processing. After
+	restarting, the application is left in an unknown state.
+	
+	WORKAROUND
+	==========
+	
+	Do not use the automatic logon feature for software installations where Systems
+	Management Server is used to restart the computer after the installation.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Systems Management Server
+	version 2.0.
+	
+	MORE INFORMATION
+	================
+	
+	For additional information about how to enable the automatic logon feature,
+	click the article number below to view the article in the Microsoft Knowledge
+	Base:
+	
+	  Q97597 How to Enable Automatic Logon in Windows
+	
+	Additional query words: prodsms
+	
+	======================================================================
+	Keywords          : kbsms200 kbsms200bug kbsms200preSP2fix 
+	Technology        : kbSMSSearch kbSMS200 kbSMS200SP1
+	Version           : :2.0,2.0 SP1
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

@@ -1,0 +1,120 @@
+---
+layout: page
+title: "Q74663: FIX: ALIGN Following DUP Operator or Structure May Fail"
+permalink: kb/074/Q74663/
+---
+
+## Q74663: FIX: ALIGN Following DUP Operator or Structure May Fail
+
+	Article: Q74663
+	Product(s): Microsoft Macro Assembler
+	Version(s): MS-DOS:6.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 04-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Macro Assembler (MASM), version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The Microsoft Macro Assembler (MASM) version 6.0 may generate an incorrect
+	alignment for the ALIGN or EVEN directives if a statement containing the DUP
+	operator or a structure definition is placed before the directive. For the
+	problem to occur, the DUP operator or structure definition can be placed
+	anywhere before the directive but within the segment.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in MASM version 6.0. This problem
+	was corrected in MASM version 6.0a.
+	
+	MORE INFORMATION
+	================
+	
+	The sample programs below demonstrate the problem with the ALIGN directive. In
+	Sample Code 1, a statement with the DUP operator is used before the ALIGN
+	statement. The assembly listing shows:
+	
+	     0000                _DATA segment dword
+	     0000 0005 [         buffer BYTE 5 dup (?)
+	               00
+	               ]
+	     0005 00             byte ?
+	                         ALIGN 4
+	     0007 00             nextvar BYTE ?
+	     0008                _DATA ends
+	
+	It can be seen in the assembly listing that the offset for the variable "nextvar"
+	is incorrectly set to 7 rather than 8.
+	
+	In Sample Code 2, a structure definition is placed before the ALIGN statement.
+	The assembly listing below shows the results:
+	
+	     0005                structdecl struct
+	     0000 00             byte ?
+	     0001 00             byte ?
+	     0002 00             byte ?
+	     0003 00             byte ?
+	     0004 00             byte ?
+	                         structdecl ends
+	
+	     0000                _DATA segment dword
+	     0000 00 00 00 00 00 mystruct structdecl <>
+	     0005 00             byte ?
+	                         ALIGN 4
+	     0009 00             nextvar BYTE ?
+	     000A                _DATA ends
+	
+	Note that "nextvar" is incorrectly assigned offset 9 rather than 8.
+	
+	Sample Code 1
+	-------------
+	
+	  ; Assemble options needed: none
+	
+	  _DATA segment dword
+	    buffer BYTE 5 dup (?)
+	    byte ?
+	    ALIGN 4
+	    nextvar BYTE ?
+	  _DATA ends
+	
+	  end
+	
+	Sample Code 2
+	-------------
+	
+	  ; Assemble options needed: none
+	
+	  structdecl struct
+	     byte ?
+	     byte ?
+	     byte ?
+	     byte ?
+	     byte ?
+	  structdecl ends
+	
+	  _DATA segment dword
+	     mystruct structdecl <>
+	     byte ?
+	     ALIGN 4
+	     nextvar BYTE ?
+	  _DATA ends
+	  END
+	
+	Additional query words: 6.00 buglist6.00 fixlist6.00a
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMASMsearch kbAudDeveloper kbMASM600
+	Version           : MS-DOS:6.0
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

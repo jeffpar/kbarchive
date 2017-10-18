@@ -1,0 +1,121 @@
+---
+layout: page
+title: "Q310673: &quot;Cannot Open&quot; Err Msg Opening File on Shared Folders Gateway"
+permalink: kb/310/Q310673/
+---
+
+## Q310673: &quot;Cannot Open&quot; Err Msg Opening File on Shared Folders Gateway
+
+	Article: Q310673
+	Product(s): Microsoft SNA Server
+	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+	Operating System(s): 
+	Keyword(s): kberrmsg kbDSupport sna4 kbsna400sp1 kbsna400sp2 kbsna400sp3
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	On a Microsoft Windows 2000-based system, you may experience errors when you
+	attempt to open files that reside on a file share that was created by the
+	Microsoft SNA Server Shared Folders Gateway.
+	
+	For example, if you use Notepad to access a text (.txt) file by using the
+	Universal Naming Convention (UNC) as follows
+	
+	  \\<server name\share name\path\file name>.txt
+	
+	you may receive the following error message:
+	
+	  "Cannot open the \\<server name\share name>\test.txt file. Make sure a
+	  disk is in the drive you specified."
+	
+	CAUSE
+	=====
+	
+	In certain situations, Windows 2000 generates a FileInternalInformation request
+	when programs access files, and this request is then sent to the file server.
+	
+	The Shared Folders Gateway in Microsoft SNA Server does not support the
+	FileInternalInformation information request type and returns an Invalid
+	Parameter response to the client system.
+	
+	RESOLUTION
+	==========
+	
+	A supported fix is now available from Microsoft, but it is only intended to
+	correct the problem that is described in this article. Only apply it to systems
+	that are experiencing this specific problem. This fix may receive additional
+	testing. Therefore, if you are not severely affected by this problem, Microsoft
+	recommends that you wait for the next Microsoft SNA Server version 4.0 service
+	pack that contains this fix.
+	
+	To resolve this problem immediately, contact Microsoft Product Support Services
+	to obtain the fix. For a complete list of Microsoft Product Support Services
+	phone numbers and information about support costs, visit the following Microsoft
+	Web site:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	NOTE: In special cases, charges that are ordinarily incurred for support calls
+	may be canceled if a Microsoft Support Professional determines that a specific
+	update will resolve your problem. The usual support costs will apply to
+	additional support questions and issues that do not qualify for the specific
+	update in question.
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	+---------------------------------+
+	| File name  | Date       | Time  | 
+	+---------------------------------+
+	| Sfgw.exe   | 10/26/2001 | 12:10 | 
+	+---------------------------------+
+	| Sfcapi.dll | 10/26/2001 | 12:09 | 
+	+---------------------------------+
+	| Sffsd.sys  | 10/26/2001 | 12:09 | 
+	+---------------------------------+
+	
+	NOTE: Because of file dependencies, the most recent fix that contains the above
+	files may also contain additional files.
+	
+	
+	
+	NOTE: If this product was already installed on your computer when you purchased
+	it from the Original Equipment Manufacturer (OEM) and you need this fix, please
+	call the Pay Per Incident number listed on the above Web site. If you contact
+	Microsoft to obtain this fix, and if it is determined that you only require the
+	fix you requested, no fee will be charged. However, if you request additional
+	technical support, and if your no-charge technical support period has expired,
+	or if you are not eligible for standard no-charge technical support, you may be
+	charged a non-refundable fee.
+	
+	For more information about eligibility for no-charge technical support, see the
+	following article in the Microsoft Knowledge Base:
+	
+	  Q154871 Determining If You Are Eligible for No-Charge Technical Support
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed that this is a problem in Microsoft SNA Server version
+	4.0.
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kberrmsg kbDSupport sna4 kbsna400sp1 kbsna400sp2 kbsna400sp3 
+	Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3 kbSNAServ400SP4
+	Version           : :4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

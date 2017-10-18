@@ -1,0 +1,110 @@
+---
+layout: page
+title: "Q161195: OtherServers Parameter Fails on SNA Server 2.11 SP1 Clients"
+permalink: kb/161/Q161195/
+---
+
+## Q161195: OtherServers Parameter Fails on SNA Server 2.11 SP1 Clients
+
+	Article: Q161195
+	Product(s): Microsoft SNA Server
+	Version(s): WINDOWS:2.11 SP1
+	Operating System(s): 
+	Keyword(s): kbnetwork
+	Last Modified: 13-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, version 2.11 SP1 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	SNA Server 2.11 Service Pack 1 clients cannot connect to SNA Servers outside of
+	their SNA subdomain, even though the OtherServers parameter is configured.
+	
+	The SNA Server 3270 applet returns the following error message when this problems
+	occurs:
+	
+	  No SNA Server found in domain.
+	
+	The SNA Server 5250 applet returns the following error message when this problem
+	occurs:
+	
+	  SNA Server has not been started. Contact System Administrator.
+	
+	  Primary Return Code = F004
+	  Secondary Return Code = 010000F0
+	
+	NOTE: This problem does not occur with the SNA Server 2.1 or 2.11 clients.
+	
+	CAUSE
+	=====
+	
+	SNA Server 2.11 Service Pack 1 improved the resource location algorithm that SNA
+	Server clients use to locate an available LU/Pool for both APPC and EIS/3270
+	applications. The changes made to the resource location algorithm caused a
+	problem in which SNA Server 2.11 Service Pack 1 clients do not attempt to
+	connect to SNA Servers configured with the OtherServers parameter. SNA Server
+	Service Pack 1 clients only try to connect to the computer running SNA Server in
+	the client's SNA subdomain that are returned by the Sponsor server in the Get
+	Server List RPC response.
+	
+	NOTE: This problem only occurs if the LU/Pool that is trying to be accessed by
+	the client is explicitly configured in the emulator/application. For 3270
+	emulators, the LU/Pool always has to be specified, so the problem occurs
+	consistently. For 5250/APPC applications, the problem does not occur if the
+	Local LU Alias is left blank.
+	
+	RESOLUTION
+	==========
+	
+	Microsoft has updated the following files to correct this problem:
+	
+	  Windows 3.x Client: <winroot>\system\wdmod.dll
+	  Windows 95 Client: <snaroot>\system\snadmod.dll
+	  Windows NT Client: <snaroot>\system\snadmod.dll
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in SNA Server version 2.11 Service
+	Pack 1. This problem was corrected in the latest Microsoft SNA Server 2.11 U.S.
+	Service Pack. For information on obtaining the service pack, query on the
+	following word in the Microsoft Knowledge Base (without the spaces):
+	
+	  S E R V P A C K
+	
+	
+	MORE INFORMATION
+	================
+	
+	Please see one of the following references for more details on the OtherServers
+	parameter:
+	
+	- Appendix C of the SNA Server Reference Guide
+	
+	- The Microsoft Knowledge Base
+	
+	  Q128244 SNA Server Load Balancing and Hot Backup
+	
+	Please refer to the following article in the Microsoft Knowledge Base for more
+	details on the resource location algorithm used by SNA Server 2.11 Service Pack1
+	clients:
+	
+	  Q138834 Improvements for EIS/3270 and APPC Resource Location
+	
+	Additional query words: sp1 prodsna
+	
+	======================================================================
+	Keywords          : kbnetwork 
+	Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ211SP1
+	Version           : WINDOWS:2.11 SP1
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

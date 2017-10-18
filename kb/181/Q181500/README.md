@@ -1,0 +1,215 @@
+---
+layout: page
+title: "Q181500: XFOR: DXM Access Violation Processing NAMEM Macro"
+permalink: kb/181/Q181500/
+---
+
+## Q181500: XFOR: DXM Access Violation Processing NAMEM Macro
+
+	Article: Q181500
+	Product(s): Microsoft Exchange
+	Version(s): winnt:4.0,5.0,5.5
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 03-APR-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+	- LinkAge Message Exchange, version 3.2 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The Linkage Directory Exchange Manager version 3.2 may access violate when the
+	NAMEM macro is used in a mapping rule. If Windows NT and Linkage 3.2 symbols are
+	installed and functioning correctly, the resulting stack frame will look similar
+	to the following:
+	
+	FramePtr  RetAddr   Param1   Param2   Param3   Function Name
+	0012b7ac  10004776  0012d43c 0012f078 0012b854 LSMMDAPI!fnNameM+0x185
+	0012b820  10004064  0012d43c 0012f078 00000001
+	LSMMDAPI!MFCallFunction+0x76
+	0012dc40  100038ec  0012f900 0012f078 0012e478
+	LSMMDAPI!evaluateFunction+0x24b({...})
+	0012f888  100036ab  006b8752 0012f900 006bb7af
+	LSMMDAPI!getNextToken+0x1c0({...})
+	0012f8bc  1000348b  006b8752 0012f900 006bb7af
+	LSMMDAPI!parseRule+0x45({...})
+	0012f914  1000325d  006a342f 006b86c7 006bb7af LSMMDAPI!mapOneAttr+0x10e
+	0012f950  10002b57  006bb7af 00000000 006b7b07 LSMMDAPI!mapAttributes+0x13d
+	0012f98c  10001fc3  006bb7af 00000007 00000010 LSMMDAPI!mapTransaction+0xb4
+	0012f9b0  100014b7  006bb7af 00000007 00000010 LSMMDAPI!DXMMapUpdate+0x47
+	0012f9ec  0040650b  006bb7af 00000000 00000010 LSMMDAPI!MMDWrite+0x153
+	0012faa8  004053e2  00000003 0012fca4 0012fbf8
+	LSDXM!processTransaction+0x40
+	0012fc74  00404c9f  006ba24f 006ba76f 0012fca4 LSDXM!processMessage+0x6c2
+	0012fd14  00404891  006ba24f 006ba76f 0012fd48 LSDXM!processItem+0x105
+	0012fe70  0040457b  00000010 00b53578 00b53450
+	LSDXM!processInbound+0x25c(...)
+	0012fe90  00403926  00000010 00b53578 00b53450
+	LSDXM!DXMProcessInbound+0x76(...)
+	0012fec0  00266d12  00b53578 0012ff44 00020005 LSDXM!process+0x183
+	0012fee4  00401f75  00b53578 00020005 00000000
+	LSCPS!?process@EventManager@@UAEGPAVEvent@@@Z+0x242
+	0012ff44  00401065  00020005 00000000 7ffdf000 LSDXM!runApp+0x7bf(...)
+	0012ff64  0040a1e3  00000004 00b51d58 00b50d70 LSDXM!main+0x35
+	0012ffc0  77f1b304  00020005 00000000 7ffdf000
+	LSDXM!mainCRTStartup+0x113(...)
+	0012fff0  00000000  0040a0d0 00000000 00000000
+	KERNEL32!BaseProcessStart+0x40
+	
+	Entries in the Linkage event log file will look similar to the following (Note:
+	This is starting with a Full Reload request from the DXM to the Exchange
+	Agent):
+	
+	1998/02/03 07:37:55-                     DXM(01a2) 3 62501:Starting DX work
+	item 327 for agent LINKAGE(DXAMEX): RequestDXAUpdates Full
+	>> dxmpo(417)
+	1998/02/03 07:37:55-                     DXM(01a2) 3 60277:Opening the MIF
+	read queue dxm.in
+	>> mif(362)
+	1998/02/03 07:37:55-                     DXM(01a2) 3 60277:Opening the MIF
+	write queue router.in
+	>> mif(362)
+	*********************SOME ENTRIES REMOVED*********************************
+	>> pcta(4048)
+	1998/02/03 07:38:21-                  DXAMEX(00a9) 4 67130:Completed
+	Outbound processing cycle
+	>> msxdxapo(677)
+	1998/02/03 07:38:21-                  DXAMEX(00a9) 4 04107:Queue DXAMEX.IN
+	has been opened (physical location is q\DXAMEX.IN)
+	>> qm(1884)
+	1998/02/03 07:38:21-                  DXAMEX(00a9) 4 04108:Queue DXAMEX.IN
+	has been closed
+	>> qm(2003)
+	1998/02/03 07:38:21-                  DXAMEX(00a9) 2 67037:Completed
+	Inbound Processing
+	>> msxdxapi(364)
+	1998/02/03 07:38:25-                     DXM(01a2) 3 60277:Opening the MIF
+	read queue dxm.in
+	>> mif(362)
+	1998/02/03 07:38:25-                     DXM(01a2) 3 60277:Opening the MIF
+	write queue router.in
+	>> mif(362)
+	1998/02/03 07:38:25-                     DXM(01a2) 3 62309:Begin Inbound
+	processing
+	>> dxmpi(572)
+	1998/02/03 07:38:25-                     DXM(01a2) 4 04107:Queue dxm.in has
+	been opened (physical location is q\dxm.in)
+	>> qm(1884)
+	1998/02/03 07:38:25-                     DXM(01a2) 4 04113:Queue item
+	q\dxm.in\50000017.rdy has been opened in queue dxm.in
+	>> qm(3480)
+	1998/02/03 07:38:25-                     DXM(01a2) 4 60331:Closing MIF file
+	'c:\linkage\q\archive\a41296e2.mif', type 'read'
+	>> mif(1048)
+	1998/02/03 07:38:25-                     DXM(01a2) 3 60335:Copying
+	c:\linkage\q\archive\a41296e2.mif to the MIF archive directory
+	>> mifppars(1000)
+	1998/02/03 07:38:25-                     DXM(01a2) 3 60248:Searching
+	directory c:\linkage\q\archive\ for MIF partition block files
+	>> mifmpb(1648)
+	1998/02/03 07:38:26-                     DXM(01a2) 3 60289:Opening MIF
+	partition block: message type L, sequence 13, partition 1
+	>> mifmpb(275)
+	1998/02/03 07:38:26-                     DXM(01a2) 3 60313:Complete
+	processing of an inbound partition
+	>> mifparse(3065)
+	1998/02/03 07:38:26-                     DXM(01a2) 4 04114:Queue item
+	q\dxm.in\50000017.rdy has been dequeued from queue dxm.in
+	>> qm(3731)
+	1998/02/03 07:38:26-                     DXM(01a2) 4 04108:Queue dxm.in has
+	been closed
+	>> qm(2003)
+	1998/02/03 07:38:26-                     DXM(01a2) 4 04107:Queue dxm.in has
+	been opened (physical location is q\dxm.in)
+	>> qm(1884)
+	1998/02/03 07:38:26-                     DXM(01a2) 3 60308:Reading the next
+	MIF partition
+	>> mifparse(925)
+	1998/02/03 07:38:26-                     DXM(01a2) 3 62321: This is a MIF
+	Update message
+	>> dxmpi(798)
+	1998/02/03 07:38:26-                     DXM(01a2) 3 62314: MIF Header
+	Information :
+	>> dxmpi(2309)
+	1998/02/03 07:38:26-                     DXM(01a2) 3 62315: > Sender:
+	LINKAGE(DXAMEX)
+	>> dxmpi(2310)
+	1998/02/03 07:38:26-                     DXM(01a2) 3 62316: > Recipient:
+	LINKAGE(DXM)
+	>> dxmpi(2313)
+	1998/02/03 07:38:26-                     DXM(01a2) 3 62312: > Sequence
+	Number: 13: 1998/2/3 7:37:56.13
+	>> dxmpi(2317)
+	1998/02/03 07:38:26-                     DXM(01a2) 3 62325: > 5
+	transaction(s) in this message
+	>> dxmpi(2328)
+	1998/02/03 07:38:26-                     DXM(01a2) 3 60316:Create an
+	acknowledgement for agent 1, sequence 13, partition 1
+	>> mifpbld(476)
+	1998/02/03 07:38:26-                     DXM(01a2) 3 60330:New
+	acknowledgement is being created for agent 1
+	>> mifbuild(217)
+	1998/02/03 07:38:26-                     DXM(01a2) 4 04107:Queue router.in
+	has been opened (physical location is q\router.in)
+	>> qm(1884)
+	1998/02/03 07:38:26-                     DXM(01a2) 3 60326:Creating a new
+	partition in the queue c:\linkage\q\archive\ 
+	>> mifbuild(591)
+	1998/02/03 07:38:26-                     DXM(01a2) 3 60284:Writing header
+	with sequence 13, part 1
+	>> mifbuild(1006)
+	1998/02/03 07:38:26-                     DXM(01a2) 3 60248:Searching
+	directory c:\linkage\q\archive\ for MIF partition block files
+	>> mifmpb(1648)
+	1998/02/03 07:38:54-                     LDE(018e) 4 10153:Subtask
+	DXM(lsdxm.exe) has ended with return code 0
+	
+	In the Linkage Administrator Process Manager window, the Directory Exchange
+	Manager (DXM) process will be halted (red stop sign).
+	
+	CAUSE
+	=====
+	
+	The NAMEM macro is used to extract the Middle Name of the Fullname attribute,
+	also known as the Display Name. If the NAMEM macro encounters a Display name in
+	the format: Last, First, Middle, and the First name is blank, the NAMEM macro
+	will cause an Access Violation.
+	
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, obtain the following fix or wait for the next Linkage
+	Directory Exchange service pack. The Linkage Directory Exchange Manager NAMEM
+	macro has been corrected to handle a null First Name value in an Exchange
+	Display name using the format: Last, First, Middle.
+	
+	This fix should have the following time stamp:
+	
+	  02/12/98  08:40p               24,576 LSMMDAPI.DLL (Intel)
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Linkage Directory Exchange
+	version 3.2. A supported fix is now available, but has not been fully
+	regression-tested and should be applied only to systems experiencing this
+	specific problem. Unless you are severely impacted by this specific problem,
+	Microsoft recommends that you wait for the next Service Pack that contains this
+	fix. Contact Microsoft Technical Support for more information.
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbZNotKeyword6 kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2 kbLinkAgeSearch kbLinkAge320
+	Version           : winnt:4.0,5.0,5.5
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

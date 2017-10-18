@@ -1,0 +1,224 @@
+---
+layout: page
+title: "Q170160: INFO: VB 6.0 Readme Part 5: Samples Issues"
+permalink: kb/170/Q170160/
+---
+
+## Q170160: INFO: VB 6.0 Readme Part 5: Samples Issues
+
+	Article: Q170160
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbreadme kbVBp kbVBp600
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The information below includes the documentation and workarounds for Visual
+	Basic 6.0. This information can also be found in the README.htm file that ships
+	with Visual Basic 6.0 on the Visual Basic 6.0 CD-ROM. Please see the REFERENCES
+	section of this article for a list of the Microsoft Knowledge Base articles
+	relating to the Visual Basic 6.0 readme.
+	
+	Following is a list of all parts of the readme file:
+	
+	Part 1.  Important Issues - Please Read First!
+	Part 2.  Data Access Issues and DataBinding Tips
+	Part 3.  Control Issues
+	Part 4.  Language Issues
+	Part 5.  Samples Issues
+	Part 6.  Wizard Issues
+	Part 7.  Error Message Issues
+	Part 8.  WebClass Designer Issues
+	Part 9.  DHTML Page Designer Issues
+	Part 10. Extensibility issues
+	Part 11. Miscellaneous Issues
+	Part 12. Microsoft Transaction Server (MTS) Issues
+	Part 13. Dictionary Object
+	Part 14. Visual Component Manager
+	Part 15. Application Performance Manager
+	
+	MORE INFORMATION
+	================
+	
+	Sample File Locations
+	---------------------
+	
+	If you choose to include Visual Basic samples in your MSDN setup, they are
+	installed to the directory:
+	
+	  C:\Program Files\Microsoft Visual
+	  Studio\MSDN98\98VS\1033\Samples\VB98.
+	
+	If you choose not to include the Visual Basic samples in your MSDN setup, you can
+	find the Visual Basic samples on the MSDN CD at:
+	
+	  D:\Samples\Vb98
+	
+	NOTE: The drive letters mentioned above may vary on your system.
+	
+	Visual Basic Sample: Biblio and Mouse Samples Omitted
+	-----------------------------------------------------
+	
+	The Biblio sample program, found in the Visual Basic documentation table of
+	contents, is no longer included with the Visual Basic product. The Mouse sample,
+	mentioned in "Responding to Mouse and Keyboard Events" is also no longer
+	included with the product.
+	
+	Visual Basic Samples: ChrtSamp Description
+	------------------------------------------
+	
+	ChrtSamp is a new sample program included with Visual Basic that demonstrates the
+	major features of the MSChart control. If you have installed the Visual Basic
+	samples, the sample can be found in the following location on your hard disk:
+	
+	  \\Program Files\Microsoft Visual
+	  Studio\Msdn98\98vs\1033\Samples\Vb98\ChrtSamp
+	
+	If you have not installed the Visual Basic samples on your hard disk, the sample
+	can be found on the MSDN CD at the following location:
+	
+	  Samples\Vb98\ChrtSamp
+	
+	The sample uses an Excel spreadsheet to supply data for a chart. The sample also
+	allows you to display multi-series charts by clicking various buttons. Finally,
+	the sample demonstrates 3D features of the control by setting the ChartType
+	property to an appropriate value.
+	
+	    File              Description
+	    ---------------------------------------------------------
+	    Chrtsamp.vbp    The project file for the sample.
+	
+	    Frmchart.frm    The main form for the sample.
+	
+	    Frmchart.frx    Binary data for the form.
+	
+	    Gas.xls         The Excel worksheet containing the data.
+	
+	    Modchart.bas    Code module containing functions and procedures
+	                    for the sample.
+	
+	To Run
+	------
+	
+	Press F5 to run the sample. After all data has loaded, click on the "Chart Type"
+	to change the type. To see the three-dimensional features of the sample, click
+	the Chart Type combo box and select a 3-D chart type, such as 3dArea. While
+	holding down the CTRL key, right-click the chart, and use the cursor to change
+	the aspect of the chart.
+	
+	Visual Basic Samples: CtlsAdd Sample: Controls.mdb Must Be Read/Write
+	
+	Enabled on Hard Disk
+	--------------------
+	
+	If you attempt to run the CtlsAdd samples from the MSDN CD, an error will occur
+	if you attempt to use the controls.mdb database found on the CD. Because
+	CtlCfg.vbp sample uses an Access database (controls.mdb) to store license key
+	information about controls, the database must be installed on a hard disk. Copy
+	the controls.mdb file to the hard disk and make it writable.
+	
+	DHSHOWME.VBP Sample: You May Need to Reset the SourceFile Property For This
+	
+	Sample to Work Correctly in Design Mode
+	---------------------------------------
+	
+	If your Page Designer samples appear blank when you open them in design mode,
+	please reset the SourceFile property to reflect the location on your computer to
+	which the project's HTML files were installed. You must reset this property for
+	each designer in the project. Your sample should then work correctly.
+	
+	To reset the SourceFile property for a designer, either type a path directly into
+	the SourceFile property in the Properties window, or select the Project
+	Properties icon from the toolbox, click Save as an External File, then click
+	Open and navigate to the correct .htm file.
+	
+	PROPBAG.VBP Sample: Possible Error on Loading the Module for this Sample
+	------------------------------------------------------------------------
+	
+	Propbag.vbp references a module (Module1.bas) that is located in the default
+	installation directory for MSDN samples. If you move this sample to another
+	directory, you will receive an error when you open the project that the module
+	path is incorrect. To fix this, load the project without the module, then re-add
+	the module from the directory to which you installed your samples.
+	
+	Running the IObjSafe Sample Application
+	---------------------------------------
+	
+	Due to some late-breaking changes, the IObjSafe sample application (IObjSafe.vbp)
+	will not run properly unless you first make the following modifications:
+	
+	Load the IObjSafe.vbp project file into the development environment.
+	
+	Choose ucObjSafety Properties from the Project menu. On the Debugging tab, delete
+	the path and file name from the Start program text box.
+	
+	Type the actual path and file name for IObjSafe.htm in the Start browser with URL
+	text box. The actual path may vary depending on your installation.
+	
+	Choose Options from the Tools menu. On the General tab, choose the Break on
+	Unhandled Errors option button.
+	
+	The application should now run properly.
+	
+	An updated version of the IObjSafe sample application is available online at the
+	Microsoft Visual Basic samples page.
+	
+	Obtaining Updated Versions of Sample Applications
+	-------------------------------------------------
+	
+	Updated versions of many of the Visual Basic sample applications, as well as
+	additional samples not included on the CD, are available online at the Microsoft
+	Visual Basic samples page.
+	
+	REFERENCES
+	==========
+	
+	For additional information, please see the following articles in the Microsoft
+	Knowledge Base:
+	
+	  Q170164 : INFO: VB 6.0 Readme Part 1: Important Issues - Read First
+	
+	  Q170163 : INFO: VB 6.0 Readme Part 2: Data Access/Databinding Issues
+	
+	  Q170162 : INFO: VB 6.0 Readme Part 3: Control Issues
+	
+	  Q170161 : INFO: VB 6.0 Readme Part 4: Language Issues
+	
+	  Q190046 : INFO: VB 6.0 Readme Part 6: Wizard Issues
+	
+	  Q170158 : INFO: VB 6.0 Readme Part 7: Error Message Issues
+	
+	  Q189539 : INFO: VB 6.0 Readme Part 8: WebClass Designer Issues
+	
+	  Q190249 : INFO: VB 6.0 Readme Part 9: DHTML Page Designer Issues
+	
+	  Q170154 : INFO: VB 6.0 Readme Part 10: Extensibility Issues
+	
+	  Q170157 : INFO: VB 6.0 Readme Part 11: Miscellaneous Issues
+	
+	  Q170156 : INFO: VB 6.0 Readme Part 12: Transaction Server (MTS) Issues
+	
+	  Q191792 : INFO: VB 6.0 Readme Part 13: Dictionary Object
+	
+	  Q191791 : INFO: VB 6.0 Readme Part 14: Visual Component Manager
+	
+	  Q191790 : INFO: VB 6.0 Readme Part 15: Application Performance Explorer
+	
+	======================================================================
+	Keywords          : kbreadme kbVBp kbVBp600 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

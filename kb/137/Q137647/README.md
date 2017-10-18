@@ -1,0 +1,430 @@
+---
+layout: page
+title: "Q137647: Microsoft Plus! DMF Floppy Disk Directory Listing (2 of 2)"
+permalink: kb/137/Q137647/
+---
+
+## Q137647: Microsoft Plus! DMF Floppy Disk Directory Listing (2 of 2)
+
+	Article: Q137647
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): 95
+	Operating System(s): 
+	Keyword(s): win95
+	Last Modified: 10-JUL-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Plus! for Windows 95 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article lists the directory contents of the Microsoft Plus! for Windows 95
+	DMF-format 3.5-inch disks 4-6 and the contents of the cabinet files on the
+	disks.
+	
+	MORE INFORMATION
+	================
+	
+	Disk 4
+	------
+	
+	Contents of the Plus_4.cab File:
+	
+	dangerou.dll: Starts in cabinet plus_3.cab on disk 'Microsoft Plus! Disk 3'
+	da_astrx.wa8: Starts in cabinet plus_3.cab on disk 'Microsoft Plus! Disk 3'
+	da_beep.wa8: Starts in cabinet plus_3.cab on disk 'Microsoft Plus! Disk 3'
+	da_defau.wa8: Starts in cabinet plus_3.cab on disk 'Microsoft Plus! Disk 3'
+	da_empty.wa8: Starts in cabinet plus_3.cab on disk 'Microsoft Plus! Disk 3'
+	da_error.wa8: Starts in cabinet plus_3.cab on disk 'Microsoft Plus! Disk 3'
+	da_excla.wa8         3,740  07-14-1995  4:40:00a
+	da_max.wa8           2,624  07-14-1995  4:40:00a
+	da_menu.wa8          1,874  07-14-1995  4:40:00a
+	da_menuc.wa8         4,460  07-14-1995  4:40:00a
+	da_min.wa8           3,202  07-14-1995  4:40:00a
+	da_quest.wa8         6,596  07-14-1995  4:40:00a
+	da_start.wa8        45,662  07-14-1995  4:40:00a
+	da_stop.wa8          4,456  07-14-1995  4:40:00a
+	davinci.thm          5,370  07-14-1995  4:40:00a
+	dv_wall.jpg         91,336  07-14-1995  4:40:00a
+	dv_wall.pal          1,048  07-14-1995  4:40:00a
+	dv_comp.ico          2,734  07-14-1995  4:40:00a
+	dv_net.ico           2,734  07-14-1995  4:40:00a
+	dv_recye.ico         2,734  07-14-1995  4:40:00a
+	dv_recyf.ico         2,734  07-14-1995  4:40:00a
+	dv_busy.ani          7,908  07-14-1995  4:40:00a
+	dv_wait.ani         10,268  07-14-1995  4:40:00a
+	dv_arrow.cur           766  07-14-1995  4:40:00a
+	dv_beam.cur            766  07-14-1995  4:40:00a
+	dv_busy.cur            766  07-14-1995  4:40:00a
+	dv_cross.cur           766  07-14-1995  4:40:00a
+	dv_help.cur            766  07-14-1995  4:40:00a
+	dv_move.cur            766  07-14-1995  4:40:00a
+	dv_nesw.cur            766  07-14-1995  4:40:00a
+	dv_no.cur              766  07-14-1995  4:40:00a
+	dv_ns.cur              766  07-14-1995  4:40:00a
+	dv_nwse.cur            766  07-14-1995  4:40:00a
+	dv_pen.cur             766  07-14-1995  4:40:00a
+	dv_up.cur              766  07-14-1995  4:40:00a
+	dv_wait.cur            766  07-14-1995  4:40:00a
+	dv_we.cur              766  07-14-1995  4:40:00a
+	davinci.dll        910,336  07-14-1995  4:40:00a
+	bkant.ttf           65,976  07-14-1995  4:40:00a
+	dv_astrx.wa8        16,492  07-14-1995  4:40:00a
+	dv_beep.wa8         13,514  07-14-1995  4:40:00a
+	dv_defau.wa8         5,004  07-14-1995  4:40:00a
+	dv_empty.wa8        18,636  07-14-1995  4:40:00a
+	dv_error.wa8         9,790  07-14-1995  4:40:00a
+	dv_excla.wa8         8,386  07-14-1995  4:40:00a
+	dv_max.wa8           7,038  07-14-1995  4:40:00a
+	dv_menu.wa8          4,280  07-14-1995  4:40:00a
+	dv_menuc.wa8         8,662  07-14-1995  4:40:00a
+	dv_min.wa8           6,916  07-14-1995  4:40:00a
+	dv_quest.wa8         7,124  07-14-1995  4:40:00a
+	dv_restd.wa8         4,040  07-14-1995  4:40:00a
+	dv_restu.wa8         4,120  07-14-1995  4:40:00a
+	dv_start.wa8        14,702  07-14-1995  4:40:00a
+	dv_stop.wa8          9,726  07-14-1995  4:40:00a
+	moderne.thm          5,254  07-14-1995  4:40:00a
+	mo_wall.jpg         45,220  07-14-1995  4:40:00a
+	mo_wall.pal          1,048  07-14-1995  4:40:00a
+	mo_comp.ico         10,134  07-14-1995  4:40:00a
+	mo_net.ico          10,134  07-14-1995  4:40:00a
+	mo_recye.ico        10,134  07-14-1995  4:40:00a
+	mo_recyf.ico        10,134  07-14-1995  4:40:00a
+	mo_busy.ani         41,540  07-14-1995  4:40:00a
+	mo_wait.ani         37,054  07-14-1995  4:40:00a
+	mo_arrow.cur         2,238  07-14-1995  4:40:00a
+	mo_beam.cur          2,238  07-14-1995  4:40:00a
+	mo_cross.cur         2,238  07-14-1995  4:40:00a
+	mo_help.cur          2,238  07-14-1995  4:40:00a
+	mo_move.cur          2,238  07-14-1995  4:40:00a
+	mo_nesw.cur          2,238  07-14-1995  4:40:00a
+	mo_no.cur            2,238  07-14-1995  4:40:00a
+	mo_ns.cur            2,238  07-14-1995  4:40:00a
+	mo_nwse.cur          2,238  07-14-1995  4:40:00a
+	mo_pen.cur           2,238  07-14-1995  4:40:00a
+	mo_up.cur            2,238  07-14-1995  4:40:00a
+	mo_we.cur            2,238  07-14-1995  4:40:00a
+	moderne.dll        225,280  07-14-1995  4:40:00a
+	gothic.ttf          61,280  07-14-1995  4:40:00a
+	gothicb.ttf         53,524  07-14-1995  4:40:00a
+	gothicbi.ttf        56,352  07-14-1995  4:40:00a
+	gothici.ttf         61,156  07-14-1995  4:40:00a
+	mo_astrx.wa8         6,596  07-14-1995  4:40:00a
+	mo_beep.wa8         10,788  07-14-1995  4:40:00a
+	mo_defau.wa8         9,224  07-14-1995  4:40:00a
+	mo_empty.wa8         8,620  07-14-1995  4:40:00a
+	mo_error.wa8        12,128  07-14-1995  4:40:00a
+	mo_excla.wa8         7,332  07-14-1995  4:40:00a
+	mo_exit.wa8         20,770  07-14-1995  4:40:00a
+	mo_max.wa8           3,930  07-14-1995  4:40:00a
+	mo_menu.wa8          3,658  07-14-1995  4:40:00a
+	mo_menuc.wa8         5,594  07-14-1995  4:40:00a
+	mo_min.wa8           4,528  07-14-1995  4:40:00a
+	mo_quest.wa8        16,614  07-14-1995  4:40:00a
+	mo_start.wa8        14,658  07-14-1995  4:40:00a
+	mo_stop.wa8         13,654  07-14-1995  4:40:00a
+	sports.thm           4,966  07-14-1995  4:40:00a
+	sp_wall.jpg         90,714  07-14-1995  4:40:00a
+	sp_wall.pal          1,048  07-14-1995  4:40:00a
+	sp_comp.ico          2,734  07-14-1995  4:40:00a
+	sp_net.ico           2,734  07-14-1995  4:40:00a
+	sp_recye.ico         2,734  07-14-1995  4:40:00a
+	sp_recyf.ico         2,734  07-14-1995  4:40:00a
+	sp_busy.ani         10,266  07-14-1995  4:40:00a
+	96 files, 2,236,070 bytes
+	
+	Disk 5
+	------
+	
+	Contents of the Plus_5.cab File:
+	
+	sp_wall.jpg: Starts in cabinet plus_4.cab on disk 'Microsoft Plus! Disk 4'
+	sp_wall.pal: Starts in cabinet plus_4.cab on disk 'Microsoft Plus! Disk 4'
+	sp_comp.ico: Starts in cabinet plus_4.cab on disk 'Microsoft Plus! Disk 4'
+	sp_net.ico: Starts in cabinet plus_4.cab on disk 'Microsoft Plus! Disk 4'
+	sp_recye.ico: Starts in cabinet plus_4.cab on disk 'Microsoft Plus! Disk 4'
+	sp_recyf.ico: Starts in cabinet plus_4.cab on disk 'Microsoft Plus! Disk 4'
+	sp_busy.ani: Starts in cabinet plus_4.cab on disk 'Microsoft Plus! Disk 4'
+	sp_wait.ani          8,684  07-14-1995  4:40:00a
+	sp_arrow.cur           766  07-14-1995  4:40:00a
+	sp_beam.cur            766  07-14-1995  4:40:00a
+	sp_cross.cur           766  07-14-1995  4:40:00a
+	sp_help.cur            766  07-14-1995  4:40:00a
+	sp_move.cur            766  07-14-1995  4:40:00a
+	sp_nesw.cur            766  07-14-1995  4:40:00a
+	sp_no.cur              766  07-14-1995  4:40:00a
+	sp_ns.cur              766  07-14-1995  4:40:00a
+	sp_nwse.cur            766  07-14-1995  4:40:00a
+	sp_pen.cur             766  07-14-1995  4:40:00a
+	sp_up.cur              766  07-14-1995  4:40:00a
+	sp_we.cur              766  07-14-1995  4:40:00a
+	sports.dll         182,272  07-14-1995  4:40:00a
+	ocraext.ttf         47,996  07-14-1995  4:40:00a
+	sp_astrx.wa8        15,120  07-14-1995  4:40:00a
+	sp_beep.wa8          4,774  07-14-1995  4:40:00a
+	sp_defau.wa8         6,526  07-14-1995  4:40:00a
+	sp_empty.wa8        23,298  07-14-1995  4:40:00a
+	sp_error.wa8         6,590  07-14-1995  4:40:00a
+	sp_excla.wa8        22,438  07-14-1995  4:40:00a
+	sp_exit.wa8         17,070  07-14-1995  4:40:00a
+	sp_max.wa8           8,832  07-14-1995  4:40:00a
+	sp_menu.wa8          4,660  07-14-1995  4:40:00a
+	sp_menuc.wa8         5,110  07-14-1995  4:40:00a
+	sp_min.wa8          12,000  07-14-1995  4:40:00a
+	sp_quest.wa8        11,156  07-14-1995  4:40:00a
+	sp_start.wa8        28,506  07-14-1995  4:40:00a
+	sp_stop.wa8         11,608  07-14-1995  4:40:00a
+	mystery.thm          5,009  07-14-1995  4:40:00a
+	my_wall.jpg         80,213  07-14-1995  4:40:00a
+	my_wall.pal          1,048  07-14-1995  4:40:00a
+	my_comp.ico         10,134  07-14-1995  4:40:00a
+	my_net.ico          10,134  07-14-1995  4:40:00a
+	my_recye.ico        10,134  07-14-1995  4:40:00a
+	my_recyf.ico        10,134  07-14-1995  4:40:00a
+	my_busy.ani         13,640  07-14-1995  4:40:00a
+	my_wait.ani         22,574  07-14-1995  4:40:00a
+	my_arrow.cur         2,238  07-14-1995  4:40:00a
+	my_beam.cur          2,238  07-14-1995  4:40:00a
+	my_cross.cur         2,238  07-14-1995  4:40:00a
+	my_help.cur          2,238  07-14-1995  4:40:00a
+	my_move.cur          2,238  07-14-1995  4:40:00a
+	my_nesw.cur          2,238  07-14-1995  4:40:00a
+	my_no.cur            2,238  07-14-1995  4:40:00a
+	my_ns.cur            2,238  07-14-1995  4:40:00a
+	my_nwse.cur          2,238  07-14-1995  4:40:00a
+	my_pen.cur           2,238  07-14-1995  4:40:00a
+	my_up.cur            2,238  07-14-1995  4:40:00a
+	my_we.cur            2,238  07-14-1995  4:40:00a
+	mystery.dll        473,088  07-14-1995  4:40:00a
+	calist.ttf          70,828  07-14-1995  4:40:00a
+	my_astrx.wa8        15,736  07-14-1995  4:40:00a
+	my_beep.wa8          6,458  07-14-1995  4:40:00a
+	my_defau.wa8        14,488  07-14-1995  4:40:00a
+	my_empty.wa8         8,426  07-14-1995  4:40:00a
+	my_error.wa8        11,958  07-14-1995  4:40:00a
+	my_excla.wa8        19,992  07-14-1995  4:40:00a
+	my_exit.wa8         18,074  07-14-1995  4:40:00a
+	my_max.wa8           8,906  07-14-1995  4:40:00a
+	my_menu.wa8          4,720  07-14-1995  4:40:00a
+	my_menuc.wa8         7,848  07-14-1995  4:40:00a
+	my_min.wa8           7,920  07-14-1995  4:40:00a
+	my_quest.wa8         8,172  07-14-1995  4:40:00a
+	my_start.wa8        33,418  07-14-1995  4:40:00a
+	my_stop.wa8          9,874  07-14-1995  4:40:00a
+	pcinside.thm         5,519  07-14-1995  4:40:00a
+	pc_wall.jpg         76,769  07-14-1995  4:40:00a
+	pc_wall.pal          1,048  07-14-1995  4:40:00a
+	pc_comp.ico         10,134  07-14-1995  4:40:00a
+	pc_net.ico          10,134  07-14-1995  4:40:00a
+	pc_recye.ico        10,134  07-14-1995  4:40:00a
+	pc_recyf.ico        10,134  07-14-1995  4:40:00a
+	pc_busy.ani         20,282  07-14-1995  4:40:00a
+	pc_wait.ani         18,086  07-14-1995  4:40:00a
+	pc_arrow.cur         2,238  07-14-1995  4:40:00a
+	pc_beam.cur          2,238  07-14-1995  4:40:00a
+	pc_cross.cur         2,238  07-14-1995  4:40:00a
+	pc_help.cur          2,238  07-14-1995  4:40:00a
+	pc_move.cur          2,238  07-14-1995  4:40:00a
+	pc_nesw.cur          2,238  07-14-1995  4:40:00a
+	pc_no.cur            2,238  07-14-1995  4:40:00a
+	pc_ns.cur            2,238  07-14-1995  4:40:00a
+	pc_nwse.cur          2,238  07-14-1995  4:40:00a
+	pc_pen.cur           2,238  07-14-1995  4:40:00a
+	pc_up.cur            2,238  07-14-1995  4:40:00a
+	pc_we.cur            2,238  07-14-1995  4:40:00a
+	pcinside.dll       191,488  07-14-1995  4:40:00a
+	abalc.ttf           65,572  07-14-1995  4:40:00a
+	pc_astrx.wa8         5,694  07-14-1995  4:40:00a
+	pc_beep.wa8          4,400  07-14-1995  4:40:00a
+	pc_defau.wa8         4,772  07-14-1995  4:40:00a
+	pc_empty.wa8        13,350  07-14-1995  4:40:00a
+	pc_error.wa8        10,374  07-14-1995  4:40:00a
+	pc_excla.wa8         8,622  07-14-1995  4:40:00a
+	pc_exit.wa8         15,082  07-14-1995  4:40:00a
+	pc_max.wa8           6,954  07-14-1995  4:40:00a
+	pc_menu.wa8          3,638  07-14-1995  4:40:00a
+	pc_menuc.wa8         3,278  07-14-1995  4:40:00a
+	pc_min.wa8           6,964  07-14-1995  4:40:00a
+	pc_quest.wa8        10,344  07-14-1995  4:40:00a
+	pc_restd.wa8         6,100  07-14-1995  4:40:00a
+	pc_restu.wa8         6,242  07-14-1995  4:40:00a
+	pc_start.wa8        26,272  07-14-1995  4:40:00a
+	pc_stop.wa8          7,676  07-14-1995  4:40:00a
+	nature.thm           4,995  07-14-1995  4:40:00a
+	na_wall.jpg         57,803  07-14-1995  4:40:00a
+	na_wall.pal          1,048  07-14-1995  4:40:00a
+	na_comp.ico         10,134  07-14-1995  4:40:00a
+	na_net.ico          10,134  07-14-1995  4:40:00a
+	na_recye.ico        10,134  07-14-1995  4:40:00a
+	na_recyf.ico        10,134  07-14-1995  4:40:00a
+	na_busy.ani         11,298  07-14-1995  4:40:00a
+	na_wait.ani         15,842  07-14-1995  4:40:00a
+	na_arrow.cur           766  07-14-1995  4:40:00a
+	na_beam.cur            766  07-14-1995  4:40:00a
+	na_busy.cur          2,238  07-14-1995  4:40:00a
+	na_cross.cur         2,238  07-14-1995  4:40:00a
+	na_help.cur          2,238  07-14-1995  4:40:00a
+	na_move.cur          2,238  07-14-1995  4:40:00a
+	na_nesw.cur          2,238  07-14-1995  4:40:00a
+	na_no.cur            2,238  07-14-1995  4:40:00a
+	na_ns.cur            2,238  07-14-1995  4:40:00a
+	na_nwse.cur          2,238  07-14-1995  4:40:00a
+	na_pen.cur           2,238  07-14-1995  4:40:00a
+	na_up.cur            2,238  07-14-1995  4:40:00a
+	na_wait.cur          2,238  07-14-1995  4:40:00a
+	na_we.cur            2,238  07-14-1995  4:40:00a
+	nature.dll         281,088  07-14-1995  4:40:00a
+	coprgtb.ttf         56,096  07-14-1995  4:40:00a
+	coprgtl. ttf        57,224  07-14-1995  4:40:00a
+	na_astrx.wa8         6,744  07-14-1995  4:40:00a
+	na_beep.wa8         10,480  07-14-1995  4:40:00a
+	na_defau.wa8         6,442  07-14-1995  4:40:00a
+	na_empty.wa8        22,930  07-14-1995  4:40:00a
+	na_error.wa8        25,848  07-14-1995  4:40:00a
+	na_excla.wa8         9,064  07-14-1995  4:40:00a
+	na_exit.wa8         25,580  07-14-1995  4:40:00a
+	na_max.wa8           4,654  07-14-1995  4:40:00a
+	na_menu.wa8          3,512  07-14-1995  4:40:00a
+	140 files, 2,591,104 bytes
+	
+	Disk 6
+	------
+	
+	Contents of the Plus_6.cab File:
+	
+	na_excla.wa8: Starts in cabinet plus_5.cab on disk 'Microsoft Plus! Disk 5'
+	na_exit.wa8: Starts in cabinet plus_5.cab on disk 'Microsoft Plus! Disk 5'
+	na_max.wa8: Starts in cabinet plus_5.cab on disk 'Microsoft Plus! Disk 5'
+	na_menu.wa8: Starts in cabinet plus_5.cab on disk 'Microsoft Plus! Disk 5'
+	na_menuc.wa8         6,096  07-14-1995  4:40:00a
+	na_min.wa8           5,086  07-14-1995  4:40:00a
+	na_quest.wa8         8,716  07-14-1995  4:40:00a
+	na_restd.wa8         4,890  07-14-1995  4:40:00a
+	na_restu.wa8         5,112  07-14-1995  4:40:00a
+	na_start.wa8        38,508  07-14-1995  4:40:00a
+	na_stop.wa8          8,960  07-14-1995  4:40:00a
+	travel.thm           4,991  07-14-1995  4:40:00a
+	tr_wall.jpg         48,791  07-14-1995  4:40:00a
+	tr_wall.pal            728  07-14-1995  4:40:00a
+	tr_comp.ico         10,506  07-14-1995  4:40:00a
+	tr_net.ico          10,134  07-14-1995  4:40:00a
+	tr_recye.ico        10,134  07-14-1995  4:40:00a
+	tr_recyf.ico        10,134  07-14-1995  4:40:00a
+	tr_busy.ani         20,788  07-14-1995  4:40:00a
+	tr_wait.ani         22,576  07-14-1995  4:40:00a
+	tr_arrow.cur         2,238  07-14-1995  4:40:00a
+	tr_beam.cur          2,238  07-14-1995  4:40:00a
+	tr_cross.cur         2,238  07-14-1995  4:40:00a
+	tr_help.cur          2,238  07-14-1995  4:40:00a
+	tr_move.cur          2,238  07-14-1995  4:40:00a
+	tr_nesw.cur          2,238  07-14-1995  4:40:00a
+	tr_no.cur            2,238  07-14-1995  4:40:00a
+	tr_ns.cur            2,238  07-14-1995  4:40:00a
+	tr_nwse.cur          2,238  07-14-1995  4:40:00a
+	tr_pen.cur           2,238  07-14-1995  4:40:00a
+	tr_up.cur            2,238  07-14-1995  4:40:00a
+	tr_we.cur            2,238  07-14-1995  4:40:00a
+	travel.dll          81,408  07-14-1995  4:40:00a
+	comic.ttf           62,152  07-14-1995  4:40:00a
+	tr_astrx.wa8        17,570  07-14-1995  4:40:00a
+	tr_beep.wa8          9,598  07-14-1995  4:40:00a
+	tr_defau.wa8         7,540  07-14-1995  4:40:00a
+	tr_empty.wa8        37,260  07-14-1995  4:40:00a
+	tr_error.wa8        11,406  07-14-1995  4:40:00a
+	tr_excla.wa8         9,114  07-14-1995  4:40:00a
+	tr_exit.wa8         16,138  07-14-1995  4:40:00a
+	tr_max.wa8           8,670  07-14-1995  4:40:00a
+	tr_menu.wa8          3,336  07-14-1995  4:40:00a
+	tr_menuc.wa8         4,820  07-14-1995  4:40:00a
+	tr_min.wa8           8,584  07-14-1995  4:40:00a
+	tr_quest.wa8         9,366  07-14-1995  4:40:00a
+	tr_restd.wa8         6,720  07-14-1995  4:40:00a
+	tr_restu.wa8         8,146  07-14-1995  4:40:00a
+	tr_start.wa8        13,092  07-14-1995  4:40:00a
+	tr_stop.wa8         11,528  07-14-1995  4:40:00a
+	win95hc.thm          5,185  07-14-1995  4:40:00a
+	wh_wall.jpg         32,034  07-14-1995  4:40:00a
+	wh_wall.pal          1,048  07-14-1995  4:40:00a
+	wh_comp.ico         10,134  07-14-1995  4:40:00a
+	wh_net.ico          10,134  07-14-1995  4:40:00a
+	wh_recye.ico        10,134  07-14-1995  4:40:00a
+	wh_recyf.ico        10,134  07-14-1995  4:40:00a
+	wh_busy.ani         38,292  07-14-1995  4:40:00a
+	wh_wait.ani         38,298  07-14-1995  4:40:00a
+	wh_arrow.cur         2,238  07-14-1995  4:40:00a
+	wh_beam.cur          2,238  07-14-1995  4:40:00a
+	wh_cross.cur         1,758  07-14-1995  4:40:00a
+	wh_help.cur          2,238  07-14-1995  4:40:00a
+	wh_move.cur          2,238  07-14-1995  4:40:00a
+	wh_nesw.cur          2,238  07-14-1995  4:40:00a
+	wh_no.cur            2,238  07-14-1995  4:40:00a
+	wh_ns.cur            2,238  07-14-1995  4:40:00a
+	wh_nwse.cur          2,238  07-14-1995  4:40:00a
+	wh_pen.cur           2,238  07-14-1995  4:40:00a
+	wh_up.cur            2,238  07-14-1995  4:40:00a
+	wh_we.cur            2,238  07-14-1995  4:40:00a
+	iexplore.exe       610,816  07-14-1995  4:40:00a
+	iexplore.hlp        68,489  07-14-1995  4:40:00a
+	iexplore.cnt         1,229  07-14-1995  4:40:00a
+	internet.txt        10,020  07-14-1995  4:40:00a
+	secbasic.dll        23,552  07-14-1995  4:40:00a
+	url.dll            107,520  07-14-1995  4:40:00a
+	inetwiz.exe         13,824  07-14-1995  4:40:00a
+	inetcpl.cpl         17,408  07-14-1995  4:40:00a
+	dialmon.exe         19,968  07-14-1995  4:40:00a
+	inetcfg.dll         90,112  07-14-1995  4:40:00a
+	inet16.dll           6,016  07-14-1995  4:40:00a
+	interwiz.hlp        14,546  07-14-1995  4:40:00a
+	pnclient.exe         7,344  07-14-1995  4:40:00a
+	pnfront.exe        183,984  07-14-1995  4:40:00a
+	ra.dll             122,592  07-14-1995  4:40:00a
+	raplayer.hlp        13,439  07-14-1995  4:40:00a
+	scripter.exe        20,480  07-14-1995  4:40:00a
+	script.doc          38,400  07-14-1995  4:40:00a
+	slip.scp             2,375  07-14-1995  4:40:00a
+	cis.scp                733  07-14-1995  4:40:00a
+	pppmenu.scp          2,815  07-14-1995  4:40:00a
+	slipmenu.scp         2,813  07-14-1995  4:40:00a
+	smmscrpt.dll        47,616  07-14-1995  4:40:00a
+	smmsetup.dll         5,632  07-14-1995  4:40:00a
+	scripter.hlp        13,054  07-14-1995  4:40:00a
+	rnaplus.inf          7,017  07-14-1995  4:40:00a
+	inetmail.inf         1,073  07-14-1995  4:40:00a
+	inetab32.dll        20,992  07-14-1995  4:40:00a
+	minet32.dll        289,792  07-14-1995  4:40:00a
+	iso88591.trn           601  07-14-1995  4:40:00a
+	norweg.trn             601  07-14-1995  4:40:00a
+	swedish.trn            601  07-14-1995  4:40:00a
+	usascii.trn            601  07-14-1995  4:40:00a
+	int-mail.hlp        36,041  07-14-1995  4:40:00a
+	int-mail.cnt         1,255  07-14-1995  4:40:00a
+	mos105.inf           4,490  07-14-1995  4:40:00a
+	rbilladd.dll        82,432  07-14-1995  4:40:00a
+	rccapi.dll          30,208  07-14-1995  4:40:00a
+	rengct.exe          72,704  07-14-1995  4:40:00a
+	rguide.exe         116,224  07-14-1995  4:40:00a
+	rmcm.dll           113,664  07-14-1995  4:40:00a
+	rmpccl.dll          88,064  07-14-1995  4:40:00a
+	rmsn.cnt            14,250  07-14-1995  4:40:00a
+	rmsnint.hlp         53,899  07-14-1995  4:40:00a
+	rmsnpss.hlp         36,098  07-14-1995  4:40:00a
+	rmsnver.txt              4  07-14-1995  4:40:00a
+	rphone.pbk          44,818  07-14-1995  4:40:00a
+	rsignup.exe        166,912  07-14-1995  4:40:00a
+	rsuutil.dll         19,456  07-14-1995  4:40:00a
+	117 files, 3,397,797 bytes
+	
+	Additional query words: extract dirwin dirwin95 dmf 1.44
+	
+	======================================================================
+	Keywords          : win95 
+	Technology        : kbGamesSearch kbPlusSearch kbPlus95
+	Version           : 95
+	
+	=============================================================================
+	

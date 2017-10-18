@@ -1,0 +1,84 @@
+---
+layout: page
+title: "Q160980: Event ID 23, Qualifier 11 While Using Andrew or IBM Twinax Link"
+permalink: kb/160/Q160980/
+---
+
+## Q160980: Event ID 23, Qualifier 11 While Using Andrew or IBM Twinax Link
+
+	Article: Q160980
+	Product(s): Microsoft SNA Server
+	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
+	Operating System(s): 
+	Keyword(s): kbnetworkkbbuglist
+	Last Modified: 12-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 2.0, 2.1, 2.11, 2.11 SP1 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	An SNA Server Twinax connection, after being active, will go into a "Pending"
+	status in the SNA Server Administrator program. When this occurs, Event ID 23,
+	Qualifier 11, is logged to the Application Event log. This can occur with both
+	the Andrew and IBM Twinax Link services.
+	
+	CAUSE
+	=====
+	
+	The problem is associated with a block of data inbound to the AS/400, which has
+	a length of 1025 decimal. The Twinax line protocol has a maximum read/write
+	length of 1024. This means the AS/400 asks for a block of 1024 characters and
+	then a block of one character. It does the one-character block by setting the
+	Address Counter Register and the Reference Counter Register to the same location
+	and then performing a Read Between Limits Command. This should result in a
+	one-character block being sent out on the Twinax line.
+	
+	However, there is an incorrect register, which results in the Twinax Link service
+	returning an error to the AS/400 of "Invalid Register Value." This causes the
+	AS/400 to reset the Twinax line, which causes the outage.
+	
+	This error occurs in both the Andrew and the IBM driver supplied with SNA Server.
+	
+	RESOLUTION
+	==========
+	
+	Apply the fix referenced below. The fix is made to a routine called
+	"DTPDCmdReadBetwLimits," which does the correct math locally to send the
+	one-byte message instead of the invalid register value.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in SNA Server versions 2.0, 2.1,
+	2.11, and 2.11 SP1. This problem was corrected in the latest Microsoft SNA
+	Server 2.11 U.S. Service Pack. For information on obtaining the service pack,
+	query on the following word in the Microsoft Knowledge Base (without the
+	spaces):
+	
+	  S E R V P A C K
+	
+	
+	MORE INFORMATION
+	================
+	
+	The third-party products discussed here are manufactured by vendors independent
+	of Microsoft; we make no warranty, implied or otherwise, regarding these
+	products' performance or reliability.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbnetwork kbbuglist
+	Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ200 kbSNAServ211 kbSNAServ210 kbSNAServ211SP1
+	Version           : WINDOWS:2.0,2.1,2.11,2.11 SP1
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

@@ -1,0 +1,137 @@
+---
+layout: page
+title: "Q223306: XCLN: 5.5 SP1 ODK Installs Outlook 98 w/128-bit Encryption"
+permalink: kb/223/Q223306/
+---
+
+## Q223306: XCLN: 5.5 SP1 ODK Installs Outlook 98 w/128-bit Encryption
+
+	Article: Q223306
+	Product(s): Microsoft Exchange
+	Version(s): WINDOWS:98
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 22-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Outlook 98 Deployment Kit 
+	- Microsoft Exchange Server, version 5.5 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Outlook 98 packages built with the Outlook Development Kit (ODK) from the
+	Exchange Server 5.5 Service Pack 1 CD installs Outlook 98 with 128-bit
+	encryption.
+	
+	The CD labeled 0998 Part No. X03-91035 contains the following disclaimer:
+	
+	  Unlawful to export from the United States or Canada without an approved
+	  Department of Commerce export license.
+	
+	The License.txt file found on the CD in the following location, En\Odk\En,
+	contains the following additional information concerning the Export
+	Restrictions.
+	
+	  IF YOU ACQUIRED MICROSOFT OUTLOOK 98 AS COMPONENT OF MICROSOFT EXCHANGE
+	  SERVER VERSION 5.0 OR 5.5, THE FOLLOWING TERMS APPLY TO YOU:
+	
+	  NOTE: If you do not have a valid license for Microsoft Exchange Server version
+	  5.0 or 5.5, you are not authorized to install, copy or use Microsoft Outlook
+	  98 as a component to such Microsoft Exchange Server.
+	
+	  You are authorized to use Microsoft Outlook 98 (the "SOFTWARE") under the
+	  terms and conditions of the End User License Agreement applicable to
+	  Microsoft Exchange Server version 5.0 or 5.5, except as set forth below.
+	  EXPORT RESTRICTIONS. The SOFTWARE is intended for distribution only in the
+	  United States and Canada. Export of the SOFTWARE from the United States is
+	  regulated under "EI controls" of the Export Administration Regulations (EAR,
+	  15 CFR 730-744) of the U.S. Commerce Department, Bureau of Export
+	  Administration (BXA). A license is required to export the SOFTWARE outside
+	  the United States or Canada. You agree that you will not directly or
+	  indirectly, export or re-export the SOFTWARE (or portions thereof) to any
+	  country, other than Canada, or to any person, entity or end user subject to
+	  U.S. export restrictions without first obtaining a Commerce Department export
+	  license. You warrant and represent that neither the BXA nor any other U.S.
+	  federal agency has suspended, revoked or denied your export privileges.
+	
+	If you need a 40-bit version of Outlook 98 built with the ODK, you should install
+	and use an ODK other than the 128-bit version.
+	
+	For more information on the availability of the Outlook Deployment Kit please
+	refer to the following Knowledge Base article:
+	
+	  Q184550 XCLN: Outlook Deployment Kit (ODK) Availability
+	
+	MORE INFORMATION
+	================
+	
+	The Active Setup.log indicates Outdom.exe is installed as the last component of
+	the installation:
+	
+	****** Install for component - Outlook98_128Update****** 
+	
+	Dependency check - Outlook98_acmeeng
+	
+	Dependency check - Outlook98_core
+	
+	Dependency check - MINIE40_WIN
+	
+	OnStartComponent:
+	
+	  ID: Outlook98_128Update
+	
+	  Download: 0 KB
+	
+	  Install 500 KB
+	
+	Space remaining on windows drive: 3083008
+	
+	CheckTrust: C:\WINNT\msdownld.tmp\ASE001.tmp\outdom.exe, Result: 0 (OK)
+	
+	Launching exe: command: "C:\WINNT\msdownld.tmp\ASE001.tmp\outdom.exe" /Q /R:N
+	
+	Timing rates: Download: 0, Install 3185244
+	
+	OnStopComponent:
+	
+	  ID: Outlook98_128Update
+	
+	  HRESULT: 0 (OK)
+	
+	  Phase: 8
+	
+	  Status: 1
+	
+	OnStopInstall:
+	
+	  HRESULT: 0 (OK)
+	
+	  Status: 1
+	
+	SETUP: InstallJob return hr:0: status:1
+	
+	Install Engine - object destroyed
+	
+	Run setup command. File:C:\TEMP\IXP000.TMP\OutSetup.inf: 
+	Section:IE4Setup.Success:
+	
+	RunSetupCommand returned :0:
+	
+	Date:3/22/1999 (M/D/Y) Time:15:13:36
+	
+	SETUP: End of Logging.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbOutlookSearch kbOutlookDeployKitSearch kbOutlook98DeployKit
+	Version           : WINDOWS:98
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

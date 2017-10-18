@@ -1,0 +1,138 @@
+---
+layout: page
+title: "Q184234: PRB: printf() and _fcvt() Might Produce Incorrect Rounding"
+permalink: kb/184/Q184234/
+---
+
+## Q184234: PRB: printf() and _fcvt() Might Produce Incorrect Rounding
+
+	Article: Q184234
+	Product(s): Microsoft C Compiler
+	Version(s): 2.0,2.1,2.2,4.0,4.1,4.2,5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbcode kbCompiler kbVC200 kbVC210 kbVC220 kbVC400 kbVC410 kbVC420 kbVC500 kbVC600
+	Last Modified: 13-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual C++, versions 2.0, 2.1, 2.2, 4.0, 4.1 
+	- Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+	- Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+	- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+	- Microsoft Visual C++.NET (2002) 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	You might get incorrect rounding results when you use the printf() and _fcvt()
+	functions.
+	
+	CAUSE
+	=====
+	
+	In the 16-bit compiler, the floating-point representation for a double data type
+	is in 80 bits. The 32-bit compiler uses the Institute of Electrical and
+	Electronics Engineers, Inc. (IEEE) floating-point specification of 64 bits.
+	Because you cannot always get an exact representation of decimal floating-point
+	numbers in binary form, the reduction in the number of bits affects the rounding
+	result for some numbers.
+	
+	RESOLUTION
+	==========
+	
+	The following code demonstrates this behavior. The results are shown for both
+	Visual C++ 5.0, Visual C++ 6.0, and Visual C++ .NET (32-bit compiler) and Visual
+	C++ 1.52 (16-bit compiler).
+	
+	Sample Code
+	-----------
+	
+	  #include <stdio.h>
+	  #include <stdlib.h>
+	
+	  void main( void )
+	
+	  {
+	  double Value;
+	     int    Decimal;
+	     int    Sign;
+	
+	  Value = 6.6975;
+	  (void) printf( "1)  %.7f  -->  %.3f  -->  %s\n", Value, Value,
+	  _fcvt( Value, 3, &Decimal, &Sign ) );
+	  Value = 6.06975;
+	  (void) printf( "2)  %.7f  -->  %.4f  -->  %s\n", Value, Value,
+	  _fcvt( Value, 4, &Decimal, &Sign ) );
+	  Value = 6.006975;
+	  (void) printf( "3)  %.7f  -->  %.5f  -->  %s\n", Value, Value,
+	  _fcvt( Value, 5, &Decimal, &Sign ) );
+	  Value = 1.2345;
+	  (void) printf( "4)  %.7f  -->  %.3f  -->  %s\n", Value, Value,
+	  _fcvt( Value, 3, &Decimal, &Sign ) );
+	  Value = 1.02345;
+	  (void) printf( "5)  %.7f  -->  %.4f  -->  %s\n", Value, Value,
+	  _fcvt( Value, 4, &Decimal, &Sign ) );
+	  Value = 1.002345;
+	  (void) printf( "6)  %.7f  -->  %.5f  -->  %s\n", Value, Value,
+	  _fcvt( Value, 5, &Decimal, &Sign ) );
+	  }
+	
+	VC++ 1.52c (16-bit compiler) results:
+	
+	  1)    6.6975000  -->  6.698  -->  6698
+	  2)    6.0697500  -->  6.0698  -->  60698
+	  3)    6.0069750  -->  6.00698  -->  600698
+	  4)    1.2345000  -->  1.235  -->  1235
+	  5)    1.0234500  -->  1.0235  -->  10235
+	  6)    1.0023450  -->  1.00235  -->  100235
+	
+	VC++ 5.0 (32-bit compiler) results:
+	
+	  1)    6.6975000  -->  6.697  -->  6697
+	  2)    6.0697500  -->  6.0698  -->  60698
+	  3)    6.0069750  -->  6.00697  -->  600697
+	  4)    1.2345000  -->  1.234  -->  1234
+	  5)    1.0234500  -->  1.0235  -->  10235
+	  6)    1.0023450  -->  1.00235  -->  100235
+	
+	With Visual C++ 5.0, test cases 2, 5, and 6 are correct, while 1, 3, and 4 do not
+	round as expected.
+	
+	To work around this behavior, add a very small number to the variable used. In
+	the example above, add 1e-10 to Value. Modify each assignment, as shown in the
+	following example:
+	
+	  Value = 6.06975+1e-10;
+	
+	STATUS
+	======
+	
+	This behavior is by design.
+	
+	MORE INFORMATION
+	================
+	
+	By adding the small number, you offset the rounding error that is caused by
+	inexact representation of some decimal floating-point numbers in binary. You can
+	make this number even smaller, such as equal to or greater than 1e- 15.
+	
+	REFERENCES
+	==========
+	
+	For more information on using floating-point numbers, please see the following
+	article in the Microsoft Knowledge Base:
+	
+	  Q145889 INFO: Why Floating Point Numbers May Lose Precision
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbcode kbCompiler kbVC200 kbVC210 kbVC220 kbVC400 kbVC410 kbVC420 kbVC500 kbVC600 
+	Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC220 kbVC410 kbVC420 kbVC500 kbVC600 kbVC200 kbVC210 kbVC32bitSearch kbVCNET kbVC500Search
+	Version           : :2.0,2.1,2.2,4.0,4.1,4.2,5.0,6.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

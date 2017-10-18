@@ -1,0 +1,80 @@
+---
+layout: page
+title: "Q168557: XFOR: Recipient Name Not Recognized / Recipient Not Found"
+permalink: kb/168/Q168557/
+---
+
+## Q168557: XFOR: Recipient Name Not Recognized / Recipient Not Found
+
+	Article: Q168557
+	Product(s): Microsoft Exchange
+	Version(s): 4.0,5.0,5.5
+	Operating System(s): 
+	Keyword(s): kbusage exc4 exc5 exc55
+	Last Modified: 26-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 5.5, 4.0, 5.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	There is a difference between non-delivery-reports (NDRs) on messages to
+	Internet users with an incorrect domain name and NDRs on messages to Internet
+	users with a correct domain name, but incorrect user name.
+	
+	MORE INFORMATION
+	================
+	
+	The NDR on a message with an incorrect domain name looks like the following:
+	
+	   Your message did not reach some or all of the intended recipients.
+	
+	  Subject:hello there
+	     Sent: 3/27/97 11:18 AM
+	
+	  The following recipient(s) could not be reached:
+	
+	     'TEST@JUNK.TEST.CA' on 3/27/97 11:18 AM
+	           The recipient name is not recognized
+	           MSEXCH:IMC:SERVER:SITE:ORG 3902 Host Unknown
+	
+	This is a common error; it is most likely due to a sender's addressing error. You
+	receive this message back from the System Administrator when you have sent
+	e-mail to a domain name (for example, JUNK.TEST.CA) that does not exist on the
+	Internet. The Internet has "Global" Domain Name Servers that resolve Domain
+	Names to systems. If this domain name is not found, it cannot be routed any
+	further.
+	
+	An NDR from an Exchange 5.5 server on a message with the correct domain name but
+	the incorrect user name looks like the following:
+	
+	  Your message did not reach some or all of the intended recipients.
+	
+	     To: 'hello@microsoft.com'
+	     Subject: test
+	     Sent: 3/27/97 11:21:30 AM
+	
+	  The following recipient(s) could not be reached:
+	
+	     hello@microsoft.com on 3/27/97 11:21:30 AM
+	           Recipient Not Found
+	           MSEXCH:IMC:REMOTESERVER:REMOTESITE:REMOTEORG
+	
+	This error is a "Recipient Not Found" error. The mail got to the other system,
+	but the username (Hello, in this example) did not exist. This error is again
+	most likely due to a sender's addressing error. Check the address again, and
+	resend.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbusage exc4 exc5 exc55 
+	Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+	Version           : :4.0,5.0,5.5
+	
+	=============================================================================
+	

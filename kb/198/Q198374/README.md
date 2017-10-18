@@ -1,0 +1,189 @@
+---
+layout: page
+title: "Q198374: WD97: Error Message: &quot;This Document Cannot Be Registered&quot;"
+permalink: kb/198/Q198374/
+---
+
+## Q198374: WD97: Error Message: &quot;This Document Cannot Be Registered&quot;
+
+	Article: Q198374
+	Product(s): Word 97 for Windows
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbdta word97kbfaq
+	Last Modified: 11-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	
+	IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+	
+	  Q256986 Description of the Microsoft Windows Registry
+	
+	SYMPTOMS
+	========
+	
+	When you open a Microsoft Word document, one of the following error messages
+	appears:
+	
+	  This document cannot be registered.
+	
+	  -or-
+	
+	  This document cannot be registered. It will not be possible to create links
+	  from this document to other documents.
+	
+	CAUSE
+	=====
+	
+	This problem may occur for the following reasons:
+	
+	Case 1
+	------
+	
+	The Windows Object Linking and Embedding (OLE) files have been damaged or
+	incorrectly updated and are incompatible.
+	
+	Case 2
+	------
+	
+	The Windows registry has been damaged.
+	
+	RESOLUTION
+	==========
+	
+	Use one or more of the following methods to resolve this problem.
+	
+	Method 1: Run Setup with the /y Switch to Correct the Registry:
+	
+	Setup /y is a switch used by Office Setup and Office program Setup files. It
+	allows a reinstallation of Office without performing file checks or actually
+	reinstalling the files. Setup /y re-registers all Office components and returns
+	the settings to their default values in the registry.
+	
+	To resolve this problem, try running Setup /y for Word or Office to repair
+	registry corruption.
+	
+	To run Setup with the /y switch, follow these steps:
+	
+	1. Insert the Word or Office CD into the CD drive. If you installed Word or
+	  Office from floppy disks, insert the Setup Disk 1 in your computer's floppy
+	  disk drive.
+	
+	2. Click Start and then click Run.
+	
+	3. In the Open box, type the following:
+	
+	  drive:\setup /Y
+	
+	  where drive is the letter of the drive that contains the CD or Setup Disk 1.
+	
+	4. Click OK.
+	
+	5. Click Reinstall.
+	
+	This re-registers Word (and all Office programs, if you run Office Setup).
+	
+	If this procedure does not work, you may need to remove Word, run OffClean from
+	the Microsoft Office CD within the ValuPack folder, and then reinstall Word.
+	
+	For additional information about the OffClean utility, click the article number
+	below to view the article in the Microsoft Knowledge Base:
+	
+	  Q158098 OFF97: Setup May Remove Older Components
+	
+	
+	Method 2: Use the Eraser Utility and Reinstall:
+	
+	To use the Eraser utility and reinstall Word, follow these steps:
+	
+	1. Run Setup for Word or Office and use the Remove All option.
+	
+	2. Run the Eraser 97 utility to remove all remaining Office/Word files and to
+	  delete corresponding registry entries.
+	
+	For additional information about the Office 97 File and Registry Eraser utility,
+	click the article number below to view the article in the Microsoft Knowledge
+	Base:
+	
+	  Q176823 OFF97: Utility to Completely Remove Remaining Office 97 Files
+	
+	3. Re-install either Word 97 or Office 97 for Windows.
+	
+	Method 3: Rename Winword8.srg and Modify the Registry:
+	
+	WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+	that may require you to reinstall your operating system. Microsoft cannot
+	guarantee that you can solve problems that result from using Registry Editor
+	incorrectly. Use Registry Editor at your own risk.
+	
+	To rename the Winword8.srg file and delete the Word CLSID registry entries in the
+	Windows registry, follow these steps:
+	
+	1. Quit Word and all Windows programs.
+	
+	2. Rename the Winword8.srg file to Winword8.old.
+	
+	  NOTE: The Winword8.srg file is located in the following folder by default:
+	
+	  drive:\Program Files\Microsoft Office\Office
+	
+	3. Click Start, and then click Run.
+	
+	4. In the Open box, type "Regedit" (without the quotation marks), and then click
+	  OK:
+	
+	5. In the Registry Editor, open the following registry subkey:
+	
+	  HKEY_CLASSES_ROOT\Word.Document.8\CLSID
+	
+	6. On the right side of the Registry Editor, click to select the default string.
+	
+	7. On the Edit menu, click Modify.
+	
+	8. In the Edit String dialog box, select the contents of the Value data box, and
+	  then press CTRL+C to copy the value to the Windows Clipboard. Click Cancel to
+	  close the Edit String dialog box.
+	
+	  NOTE: The Value data for the Word.Document.8 CLSID should appear as follows:
+	
+	  {00020906-0000-0000-C000-000000000046}
+	
+	9. Move to the top of the registry and select My Computer.
+	
+	10. On the Edit menu, click Find.
+	
+	11. In the Find What box, press CTRL+V to paste the value from step 8, and then
+	  click Find Next.
+	
+	12. Delete the string or key for each occurrence of the value.
+	
+	  NOTE: Many of the value occurrences will be set as the Default string. Delete
+	  the value for the Default string; do not delete the Default string. To
+	  delete the value for the Default string, click to select Default. On the
+	  Edit menu, click Modify. Select the value in the Value data box, and then
+	  press DELETE. Click OK to close the Edit String dialog box.
+	
+	13. Press F3 to continue to find and delete all occurrences of the
+	  Word.Document.8 CLSID.
+	
+	14. When you finish searching the registry, click Exit on the Registry menu.
+	
+	15. Re-install either Word 97 or Office 97 for Windows.
+	
+	
+	
+	Additional query words: corrupted corrupt corruption
+	
+	======================================================================
+	Keywords          : kbdta word97 kbfaq
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : :
+	Issue type        : kbprb
+	
+	=============================================================================
+	

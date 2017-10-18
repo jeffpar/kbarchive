@@ -1,0 +1,154 @@
+---
+layout: page
+title: "Q271834: Cannot Display Some Hong Kong Supplementary Characters"
+permalink: kb/271/Q271834/
+---
+
+## Q271834: Cannot Display Some Hong Kong Supplementary Characters
+
+	Article: Q271834
+	Product(s): Microsoft Windows NT
+	Version(s): 2000,2000 SP1,4.0
+	Operating System(s): 
+	Keyword(s): kbWinNT400PreSP7Fix kbWin2000PreSP2Fix
+	Last Modified: 08-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows versions 2000, 2000 SP1 Professional 
+	- Microsoft Windows versions 2000, 2000 SP1 Server 
+	- Microsoft Windows versions 2000, 2000 SP1 Advanced Server 
+	- Microsoft Windows NT Server version 4.0 
+	- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+	- Microsoft Windows NT Workstation version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Hong Kong Supplementary Character Set (HKSCS) is a package that was developed
+	for the Hong Kong government that contains about 4,768 characters in addition to
+	the Traditional Chinese characters.
+	
+	Some characters in HKSCS cannot be displayed in Windows NT 4.0. This issue could
+	also affect other fonts in Windows NT 4.0 or Windows 2000.
+	
+	CAUSE
+	=====
+	
+	When you try to display a character that is not in the original font but is in a
+	linked font, the character should be displayed from the linked font. However,
+	Graphics Device Interface (GDI) assumes that the original font has the glyph for
+	that character. The linked font is not used, and a space is displayed for the
+	character.
+	
+	RESOLUTION
+	==========
+	
+	Windows NT 4.0
+	--------------
+	
+	A supported fix is now available from Microsoft, but it is only intended to
+	correct the problem described in this article and should be applied only to
+	systems experiencing this specific problem. This fix may receive additional
+	testing at a later time, to further ensure product quality. Therefore, if you
+	are not severely affected by this problem, Microsoft recommends that you wait
+	for the next Windows NT 4.0 service pack that contains this fix.
+	
+	To resolve this problem immediately, contact Microsoft Product Support Services
+	to obtain the fix. For a complete list of Microsoft Product Support Services
+	phone numbers and information about support costs, please go to the following
+	address on the World Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	NOTE: In special cases, charges that are normally incurred for support calls may
+	be canceled, if a Microsoft Support Professional determines that a specific
+	update will resolve your problem. Normal support costs will apply to additional
+	support questions and issues that do not qualify for the specific update in
+	question.
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	  Date        Time    Size       File name   Platform
+	  ---------------------------------------------------
+	  08/17/2000  05:43p    166,160  Gdi32.dll   Intel
+	  08/17/2000  05:44p    326,416  User32.dll  Intel
+	  08/21/2000  07:20p  1,254,544  Win32k.sys  Intel 
+	  08/17/2000  05:44p    175,376  Winsrv.dll  Intel
+	
+	
+	
+	Windows 2000
+	------------
+	
+	A supported fix is now available from Microsoft, but it is only intended to
+	correct the problem described in this article and should be applied only to
+	systems experiencing this specific problem. This fix may receive additional
+	testing at a later time, to further ensure product quality. Therefore, if you
+	are not severely affected by this problem, Microsoft recommends that you wait
+	for the next Windows 2000 service pack that contains this fix.
+	
+	To resolve this problem immediately, contact Microsoft Product Support Services
+	to obtain the fix. For a complete list of Microsoft Product Support Services
+	phone numbers and information about support costs, please go to the following
+	address on the World Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	NOTE: In special cases, charges that are normally incurred for support calls may
+	be canceled, if a Microsoft Support Professional determines that a specific
+	update will resolve your problem. Normal support costs will apply to additional
+	support questions and issues that do not qualify for the specific update in
+	question.
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	  Date        Time    Version        Size       File name
+	  --------------------------------------------------------
+	  08/21/2000  08:53a  5.0.2195.2103    221,968  Gdi32.dll
+	  08/21/2000  08:53a  5.0.2195.2103    379,152  User32.dll
+	  08/21/2000  04:15p  5.0.2195.2103  1,639,664  Win32k.sys
+	  08/21/2000  08:56a  5.0.2195.2103    242,960  Winsrv.dll
+	
+	
+	
+	STATUS
+	======
+	
+	Windows NT 4.0
+	--------------
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products that are
+	listed at the beginning of this article.
+	
+	Windows 2000
+	------------
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products that are
+	listed at the beginning of this article.
+	
+	MORE INFORMATION
+	================
+	
+	For additional information about how to install Windows 2000 and Windows 2000
+	hotfixes at the same time, click the article number below to view the article in
+	the Microsoft Knowledge Base:
+	
+	  Q249149 Installing Microsoft Windows 2000 and Windows 2000 Hotfixes
+	
+	Additional query words: blank
+	
+	======================================================================
+	Keywords          : kbWinNT400PreSP7Fix kbWin2000PreSP2Fix 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbNTTermServ400 kbNTTermServSearch kbWinAdvServSearch kbWin2000AdvServSP1 kbWin2000ProSP1 kbwin2000ServSP1
+	Version           : :2000,2000 SP1,4.0
+	Hardware          : ALPHA x86
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

@@ -1,0 +1,169 @@
+---
+layout: page
+title: "Q175288: Extra Modem Settings D-H for Connecting to MSN"
+permalink: kb/175/Q175288/
+---
+
+## Q175288: Extra Modem Settings D-H for Connecting to MSN
+
+	Article: Q175288
+	Product(s): The Microsoft Network
+	Version(s): WINDOWS:1.3,2.0,2.5
+	Operating System(s): 
+	Keyword(s): kbfaq
+	Last Modified: 08-OCT-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The Microsoft Network versions 1.3, 2.0, 2.5 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	You may be unable to connect, or have difficulty remaining connected to MSN, The
+	Microsoft Network. Some modems may require extra settings or specific
+	configurations to connect to MSN.
+	
+	The following table lists extra modem settings and configurations that may help
+	specific modems connect or maintain a connection to MSN.
+	
+	NOTE: Rockwell settings may work for any modem that uses the Rockwell chipset,
+	including Boca, Zoltrix, and Zoom 14.4 modems.
+	
+	MORE INFORMATION
+	================
+	
+	Manufacturer/Model           Extra Settings   Status       Configuration
+	--------------------------------------------------------------------------
+	
+	Delrina 14.4 PCMCIA          &Q6&K3           CONFIRMED    None.
+	
+	Diamond Multimedia           AT&F             UNCONFIRMED  Error Control
+	Telecommander 3500                                         on. Compress
+	                                                          Data off.
+	                                                          Maximum speed
+	                                                          setting 38400.
+	
+	Diamond Multimedia           AT&F             CONFIRMED    Error Control
+	TeleCommander 2500                                         on. Compress
+	14.4 data/fax                                              Data off.
+	
+	Diamond Multimedia           \N3%C0           UNCONFIRMED  Error Control
+	TeleCommander 2500                                         off.
+	14.4 data/fax
+	
+	Diamond Multimedia           AT&F             CONFIRMED    Error Control
+	TeleCommander 3500                                         on. Compress
+	28.8 data/fax                                              Data off.
+	                                                          Maximum speed
+	                                                          setting 38400.
+	
+	Digicom 14.4 SoftModem       \N0&K4           CONFIRMED    None.
+	
+	Digicom 14.4                 &Q6&K3           CONFIRMED    None.
+	
+	Digicom Connection 14.4+     &K3%C0           CONFIRMED    Error control
+	                                                          off. (This is
+	                                                          with the
+	                                                          Digicom
+	                                                          SoftModem
+	                                                          drivers
+	                                                          installed.)
+	
+	DigiCom 14.4 SoftModem TEST  \N0&K4           UNCONFIRMED  None.
+	
+	DigiCom Scout 28.8 TEST      AT&F1            UNCONFIRMED  None.
+	
+	DigiCom Connection 144+      &K3%C0           UNCONFIRMED  Error Control
+	(with SoftModem drivers                                    off.
+	installed)
+	
+	Digital DS144F Internal      AT&FW2&C1&D2&K3& UNCONFIRMED  Complete
+	Systems Modem                Q5S7=60S36=7S46=              initialization
+	                            138S48=7S95=47                strings do not
+	                                                          always work.
+	                                                          Contact the
+	                                                          manufacturer.
+	
+	Digitan Digital 14.4         AT&F             UNCONFIRMED  Let Windows
+	Data/Fax                                                   detect modem as
+	                                                          a 14.4
+	                                                          Data/Fax.
+	                                                          (ATI4 or
+	                                                          ATI6=RCV144DPI)
+	
+	Digitan 28.8 V.34            AT&F1            UNCONFIRMED  Error Control
+	(in HP Pavilion)                                           off.
+	
+	GateWay Telepath 14.4        s11+50           CONFIRMED    Install as
+	                                                          Telepath 14.4
+	                                                          or if drivers
+	                                                          unavailable,
+	                                                          install as a
+	                                                          Standard 14.4.
+	
+	GateWay Telepath 28.8        AT&F1&K3         CONFIRMED    Error Control
+	                                                          off.
+	
+	GateWay Telepath 28.8 V6.0   AT&F1&K3         CONFIRMED    Error Control
+	                                                          off.
+	
+	GateWay Telepath 33.6        S32=16           CONFIRMED    Error Control
+	                                                          off.
+	
+	GateWay Telepath II 28.8     Unknown          UNCONFIRMED  Error Control
+	PCMCIA                                                     off.
+	
+	GateWay Telepath II 33.6     AT&H1&K0&R2      UNCONFIRMED  (ATI4= Gateway
+	                            S72=90 S9=2                   Telepath II
+	                            S10=100                       33.6 voice/data)
+	                                                          Works with USR
+	                                                          Sportster 28.8
+	                                                          driver.
+	
+	GateWay Telepath II 33.6     S32=16           UNCONFIRMED  Works with USR
+	                                                          Sportster
+	                                                          33.6Vi driver.
+	
+	GVC F1114 VR6                Unknown          UNCONFIRMED  Install as a
+	                                                          Standard 14.4.
+	
+	Hewlett-Packard Pavilion     AT&F             UNCONFIRMED  Error Control
+	5030/Prometheus 14.4                                       off. Set Flow
+	                                                          Control to
+	                                                          Hardware.
+	
+	Hewlett-Packard Pavilion     S7=90S10=80      UNCONFIRMED  This is used
+	7130 28.8 PnP                                              for dropped
+	                                                          connection
+	                                                          issues.
+	
+	To add an extra setting or to change the Use Error Control or Compress Data
+	options, use the following steps:
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click Modems.
+	
+	3. Click the modem you are using, and then click Properties.
+	
+	4. On the Connection tab, click Advanced.
+	
+	5. In the Extra Settings box, type the appropriate extra settings.
+	
+	6. Enable or disable the Use Error Control and Compress Data options as
+	  appropriate.
+	
+	7. Click OK or Close until you return to Control Panel.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  kbfaq
+	Technology        : kbMSNSearch kbMSN200 kbMSN130 kbMSN250
+	Version           : WINDOWS:1.3,2.0,2.5
+	
+	=============================================================================
+	

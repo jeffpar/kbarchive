@@ -1,0 +1,209 @@
+---
+layout: page
+title: "Q159940: WD97: General Information About Hyperlinks in Word"
+permalink: kb/159/Q159940/
+---
+
+## Q159940: WD97: General Information About Hyperlinks in Word
+
+	Article: Q159940
+	Product(s): Word 97 for Windows
+	Version(s): 97
+	Operating System(s): 
+	Keyword(s): kbualink97 kbdta kbweb kbwdinternet
+	Last Modified: 14-NOV-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article answers the most frequently asked questions about creating and
+	using hyperlinks in Microsoft Word 97.
+	
+	MORE INFORMATION
+	================
+	
+	1. When I type a file address with spaces in it, Word replaces the address with
+	  a hyperlink after I press the SPACEBAR. How can I finish typing an address
+	  that includes spaces before Word converts it to a hyperlink?
+	
+	  Answer:
+	
+	  To ensure that Word will recognize an address that includes spaces as a
+	  single hyperlink, enclose the address in quotation marks. If the address is
+	  not enclosed in quotation marks, Word creates the hyperlink when you press
+	  the SPACEBAR.
+	
+	2. How do I turn off automatic hyperlinks?
+	
+	  Answer:
+	
+	  To turn off automatic hyperlinks, do the following:
+	
+	  a. On the Tools menu, click AutoCorrect, and then click the AutoFormat tab.
+	
+	  b. Click to clear the "Internet and network paths with hyperlinks" check box.
+	
+	  c. Click OK.
+	
+	3. How do I change the display text or image of a hyperlink once it has been
+	  created?
+	
+	  Answer:
+	
+	  You can change the display text or image for a hyperlink the same way you
+	  edit any text or image in your document. To avoid linking to or opening the
+	  file represented by the hyperlink, use the keyboard to select the hyperlink
+	  before you edit it. To do this, follow these steps:
+	
+	  a. Click in front of the text or image.
+	
+	  b. Press SHIFT+RIGHT ARROW to select the display text or image.
+	
+	     NOTE: Press CONTROL+SHIFT+RIGHT ARROW to select whole words.
+	
+	  You can now edit the image or type new text.
+	
+	  For additional information, click the article number below to view the article
+	  in the Microsoft Knowledge Base:
+	
+	  Q155773 WD97: Changing Hypertext Display Text Doesn't Change URL
+	
+	4. How do I remove a hyperlink without losing the display text or image?
+	
+	  Answer:
+	
+	  To remove a hyperlink without losing the display text or image, follow these
+	  steps:
+	
+	  a. Right-click the hyperlink text or image, point to Hyperlink, and then
+	     click Edit Hyperlink.
+	
+	  b. In the Edit Hyperlink dialog box, click Remove Link.
+	
+	5. How do I change the underlying Uniform Resource Locator (URL) for a
+	  hyperlink?
+	
+	  Answer:
+	
+	  To change the underlying URL for a hyperlink, follow these steps:
+	
+	  a. Right-click the hyperlink text or image, point to Hyperlink, and then
+	     click Edit Hyperlink.
+	
+	  b. In the Edit Hyperlink dialog box, type or select a URL from the "Link to
+	     file or URL" list box.
+	
+	     NOTE: By default, the "Link to file or URL" box limits the total length of
+	     a hyperlink to 248 characters.
+	
+	  c. Click OK.
+	
+	6. How do I create hyperlinks to locations within the same document?
+	
+	  Answer:
+	
+	  To create a hyperlink to a location within the same document, use either of
+	  the following methods:
+	
+	  Method 1: Use drag-and-drop functionality. To create the hyperlink by
+	  dragging, follow these steps:
+	
+	  a. Save the document.
+	
+	  b. Select the word, phrase, or image you want to use as the destination for
+	     the hyperlink.
+	
+	  c. Click and hold the right mouse button, drag the selection to the new
+	     location, and then release the mouse button.
+	
+	  d. Click Create Hyperlink Here.
+	
+	  Method 2: Create a bookmark and then create a link to the bookmark. To create
+	  the hyperlink this way, follow these steps:
+	
+	  a. Save the document.
+	
+	  b. Select the text or image you want to use as the destination for the
+	     hyperlink.
+	
+	  c. On the Insert menu, click Bookmark.
+	
+	  d. In the "Bookmark name" box, type a unique name for the bookmark, and then
+	     click Add.
+	
+	  e. Move the insertion point to the location in the document where you want to
+	     create the hyperlink.
+	
+	  f. On the Insert menu, click Hyperlink.
+	
+	  g. In the "Named location in file (optional)" box, type the bookmark name.
+	     Or, click Browse, select the bookmark you want to use, and then click OK.
+	
+	  h. Click OK.
+	
+	7. What is the difference between a relative and an absolute hyperlink?
+	
+	  Answer:
+	
+	  An absolute hyperlink jumps to the destination document using its full
+	  address; a relative hyperlink uses the address relative to the containing
+	  document's address, also known as the hyperlink base. For example, suppose
+	  that a document whose address is "c:\My Documents\1996 report.doc" has
+	  absolute and relative hyperlinks to a document whose full address (and
+	  absolute hyperlink) is "c:\My Documents\April\Sales.doc." The relative
+	  hyperlink will only contain the relative address to Sales.doc, which is
+	  "April\Sales.doc." Use a relative link if you want to move or copy your files
+	  to another location, such as a Web server.
+	
+	8. When I click a hyperlink in Word, I receive a message indicating that no
+	  program is registered to open the file. What do I do to open the file?
+	
+	  Answer:
+	
+	  You receive this message when Windows is unable to find the program
+	  associated with the type of document specified in the hyperlink path. This
+	  information is encoded in the extension of the hyperlink address. To view the
+	  hyperlink, turn on ScreenTips, and then position the mouse pointer over the
+	  hyperlink. (To locate this option, on the Tools menu, click Options, and then
+	  click the View tab.)
+	
+	  To correct this problem, install the program associated with the document type
+	  specified in the hyperlink.
+	
+	  The file name extension is the group of characters following the last period
+	  in the address. The table below lists some of the Office document types and
+	  their extensions.
+	
+	  
+	  +-----------------------------------------------+
+	  | Document type                     | Extension | 
+	  +-----------------------------------------------+
+	  | Microsoft Access Database         | .mdb      | 
+	  +-----------------------------------------------+
+	  | Microsoft Excel Spreadsheet       | .xls      | 
+	  +-----------------------------------------------+
+	  | Microsoft PowerPoint Presentation | .pot      | 
+	  +-----------------------------------------------+
+	  | Microsoft Project Schedule        | .prj      | 
+	  +-----------------------------------------------+
+	  | Microsoft Publisher Document      | .pub      | 
+	  +-----------------------------------------------+
+	  | Microsoft Word Document           | .doc      | 
+	  +-----------------------------------------------+
+	
+	Additional query words: hyperlink field hypertext hyper link html space
+	
+	======================================================================
+	Keywords          : kbualink97 kbdta kbweb kbwdinternet 
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : :97
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

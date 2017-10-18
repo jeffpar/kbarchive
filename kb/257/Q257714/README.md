@@ -1,0 +1,203 @@
+---
+layout: page
+title: "Q257714: FIX: ADODC and DataEnvironment Events Only Work with ADO 2.0"
+permalink: kb/257/Q257714/
+---
+
+## Q257714: FIX: ADODC and DataEnvironment Events Only Work with ADO 2.0
+
+	Article: Q257714
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): WINDOWS:2.0,2.01,2.1,2.1 SP1,2.1 SP2,2.5,6.0
+	Operating System(s): 
+	Keyword(s): kbCtrl kbDatabase kbDataBinding kbDesigner kbMDAC kbVBp600bug kbDataEnv kbGrpDSVBDB kbG
+	Last Modified: 23-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+	- ActiveX Data Objects (ADO), versions 2.0, 2.01, 2.1, 2.1 SP1, 2.1 SP2, 2.5, 2.5 SP2, 2.7 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you attempt to use the events of an ADO Data Control or the DataEnvironment
+	with a reference to a version of the Microsoft ActiveX Data Objects (ADO) later
+	than version 2.0, you receive the following error message:
+	
+	  Compile error:
+	  Procedure declaration does not match description of event or procedure having
+	  the same name.
+	
+	CAUSE
+	=====
+	
+	The ADO Data Control and the Data Environment were compiled using Microsoft Data
+	Access Components version 2.0.
+	
+	RESOLUTION
+	==========
+	
+	This problem no longer occurs with the ADO Data Control and the Data Environment
+	that ship with Microsoft Visual Studio Service Pack 4 and later.
+	
+	However, you must now use a reference to the Microsoft ActiveX Data Objects 2.5
+	Library or later if you are using ADO Data Control and Data Environment events.
+	The ADO Data Control and the Data Environment have been recompiled using
+	Microsoft Data Access Components 2.5. That is, you now see the preceding error
+	message when using the ADO Data Control or the Data Environment with a reference
+	to a version of Microsoft Data Access Components prior 2.5.
+	
+	In short, when using the events of the ADO Data Control or the Data Environment
+	in Microsoft Visual Basic 6.0 Service Pack 4, be sure to do the following:
+	
+	1. From the Project menu, clink to select References.
+	
+	2. From the list of available References, deselect references to Microsoft
+	  ActiveX Data Objects prior to version 2.5.
+	
+	3. From the list of available References, select Microsoft ActiveX Data Objects
+	  2.5 or later.
+	
+	For versions of Visual Studio prior to service pack 4, the workaround is to add
+	"20" to the ADODB.Recordset Parameter declaration, as described in the articles
+	listed in the "References" section of this article. IMPORTANT: The workaround as
+	described in Q222145 does not work with Visual Studio 6.0 Service Pack 4. The
+	code needs to be changed to use the original declarations for each of the events
+	(20 needs to be removed from the Recordset Parameter declaration).
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed that this is a bug in the Microsoft products that are
+	listed at the beginning of this article. This bug was corrected in the latest
+	service pack for Visual Studio 6.0.
+	
+	For additional information about Visual Studio service packs, click the following
+	article numbers to view the articles in the Microsoft Knowledge Base:
+	
+	  Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+	
+	  Q194295 HOWTO: Tell That a Visual Studio Service Pack Is Installed
+	
+	To download the latest Visual Studio service pack, visit the following Microsoft
+	Web site:
+	
+	  http://msdn.microsoft.com/vstudio/downloads/updates.asp
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior Using ADO Data Control
+	--------------------------------------------------
+	
+	This sample uses an ODBC Datasource named Nwind that connects to the Nwind
+	database that comes with Visual Studio.
+	
+	1. In Visual Basic, create a new Standard EXE project. Project1 is created by
+	  default. Form1 is added by default.
+	
+	2. From the Project menu, click to select Components. From the list of available
+	  Components, select Microsoft ADO Data Control (OLEDB).
+	
+	3. Place an ADO Data Control and a TextBox onto Form1. ADODC1 and Text1 are
+	  created by default.
+	
+	4. Set the following properties of ADODC1:
+	
+	   - ConnectionString: DSN=NWind
+	
+	   - RecordSource: Select * from Employees
+	
+	5. Set the following properties of Text1:
+	
+	   - DataSource: ADODC1
+	
+	   - DataField: FirstName
+	
+	6. From the Project menu, click to select References. From the list of
+	  References, deselect Microsoft ActiveX Data Objects 2.0 Library. From the
+	  list of available References, click to select Microsoft ActiveX Data Objects
+	  2.1 Library or later.
+	
+	7. Paste the following code into Form1's code window:
+	
+	  Private Sub Adodc1_WillMove(ByVal adReason As ADODB.EventReasonEnum,
+	  adStatus As ADODB.EventStatusEnum, ByVal pRecordset As ADODB.Recordset)
+	    MsgBox "Hello"
+	  End Sub
+	
+	8. Run the program and note that you see the error message from the "Symptoms"
+	  section in the WillMove event.
+	
+	Steps to Reproduce Behavior, Using DataEnvironment
+	--------------------------------------------------
+	
+	This sample uses an ODBC Datasource named Nwind that connects to the Nwind
+	database that comes with Visual Studio.
+	
+	1. In Visual Basic, create a new Standard EXE project. Project1 is created by
+	  default. Form1 is added by default.
+	
+	2. From the Project menu, click to select Add Data Environment. DataEnvironment1
+	  is added by default. The DataLink Properties window is opened by default.
+	
+	  a. On the Provider tab, select Microsoft OLE DB Provider for ODBC Drivers.
+	     Click Next.
+	
+	  b. On the Connection tab, select Use data source name. From the list of
+	     available ODBC data source names, select Nwind. Click Test Connection.
+	     Click OK, and then click OK again.
+	
+	3. In the DataEnvironment1 (DataEnvironment) window, right-click on Connection1.
+	  From the pop-up menu, select Add Command.
+	
+	  a. Change the Database Object from Stored Procedure to Table.
+	
+	  b. From the Object Name list, select Customers.
+	
+	  c. Click OK. Command1 is created by default.
+	
+	4. Drag Command1's icon from the DataEnvironment window onto Form1 and release.
+	  Note that Labels and Textboxes representing the fields of the Command object
+	  are placed on the form. You do not need to further modify the placement or
+	  properties of the Labels and Textboxes.
+	
+	5. From the Project menu, click to select References. From the list of
+	  References, deselect Microsoft ActiveX Data Objects 2.0 Library. From the
+	  list of available References, click to select Microsoft ActiveX Data Objects
+	  2.1 Library or later.
+	
+	6. In the DataEnvironment window, double-click on DataEnvironment1 to open its
+	  Code window. Paste the following code into DataEnvironment1's Code window:
+	
+	  Private Sub rsCommand1_WillMove(ByVal adReason As ADODB.EventReasonEnum,
+	  adStatus As ADODB.EventStatusEnum, ByVal pRecordset As ADODB.Recordset)
+	    MsgBox "Hello"
+	  End Sub
+	
+	7. Run the project, and note that the error message in the "Symptoms" section
+	  appear in the WillMove event.
+	
+	REFERENCES
+	==========
+	
+	  Q222145 PRB:ADO Data Control Events May Generate a Compilation Error
+	
+	  Q193326 BUG:Data Form Wizard via Application Wizard Omits ADO Reference
+	
+	Additional query words: sp4
+	
+	======================================================================
+	Keywords          : kbCtrl kbDatabase kbDataBinding kbDesigner kbMDAC kbVBp600bug kbDataEnv kbGrpDSVBDB kbGrpDSMDAC kbDSupport kbVS600sp4fix kbVS600sp5fix kbATM kbmdac270 kbado270 
+	Technology        : kbVBSearch kbAudDeveloper kbADOsearch kbADO210 kbADO201 kbADO200 kbADO210sp1 kbADO210sp2 kbADO250 kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600 kbADO270
+	Version           : WINDOWS:2.0,2.01,2.1,2.1 SP1,2.1 SP2,2.5,6.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

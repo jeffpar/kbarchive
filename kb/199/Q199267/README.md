@@ -1,0 +1,100 @@
+---
+layout: page
+title: "Q199267: SMS: SMS 1.2 and SMS 2.0 Logon Scripts Coexistence"
+permalink: kb/199/Q199267/
+---
+
+## Q199267: SMS: SMS 1.2 and SMS 2.0 Logon Scripts Coexistence
+
+	Article: Q199267
+	Product(s): Microsoft Systems Management Server
+	Version(s): 2.0
+	Operating System(s): 
+	Keyword(s): kbsms200
+	Last Modified: 02-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server version 2.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This articles lists a few issues to be aware of to support Systems Management
+	Server 1.2 and Systems Management Server 2.0 scripts on the same logon server.
+	
+	MORE INFORMATION
+	================
+	
+	1. In your Systems Management Server 1.2 site, modify the logon scripts
+	  manually. Do not use the Automatically Configure Workstation Logon Scripts
+	  option. When you enable the Automatically Configure Workstation Logon Scripts
+	  option, Systems Management Server 1.2 periodically overwrites the script
+	  files with its own version of the files.
+	
+	2. On your Systems Management Server 2.0 site server, go to the
+	  SMS\Data\NT_Logon directory.
+	
+	  a. Rename NT_Logon.pcf to NT_Logon.old
+	
+	  b. Copy the NT_Logon_Interop.pcf and rename the copy to NT_Logon.pcf.
+	
+	  Systems Management Server reads the NT_Logon.pcf file and copies the files
+	  listed there to the logon points in the site. NT_Logon_Interop.pcf lists the
+	  files required when Systems Management Server 1.2 clients and Systems
+	  Management Server 2.0 clients use the same logon script. The original
+	  NT_Logon.pcf in the same directory lists the files required when there are no
+	  Systems Management Server 1.2 clients using the logon script.
+	
+	3. Login scripts are the most often used ways of managing a Systems Management
+	  Server version 1.2 client because you can usually depend on them to reliably
+	  execute in the user's context, and they can be customized easily for unique
+	  customer needs. Because the Systems Management Server version 2.0 client
+	  layout had not been envisioned at the time Systems Management Server 1.2 was
+	  released, a retrofit included in Systems Management Server 1.2 Service Pack 4
+	  contains new functionality used to detect a Systems Management Server 2.0
+	  footprint. Several new lines of script were added to make use of the new
+	  Check20.exe utility program. This utility supports both an "aware" mode and
+	  an "interop" mode from the command line. Systems Management Server 1.2
+	  Service Pack 4 implements the "interop" mode and will cause the script to
+	  bypass a client computer that has been installed and assigned to one or more
+	  Systems Management Server 2.0 sites. If the computer has only been discovered
+	  but not yet assigned, then it will be taken into the Systems Management
+	  Server 1.2 site. Later, when the computer is assigned to a Systems Management
+	  Server 2.0 site, it will be upgraded, and the script will bypass the
+	  computer.
+	
+	4. When a Systems Management Server 1.2 site attempts to manage a domain or a
+	  list of servers, it will add the SMS_INVENTORY_AGENT_NT and
+	  SMS_PACKAGE_COMMAND_MANAGER_NT services to the server and provide the machine
+	  Systems Management Server client functionality to generate inventory and run
+	  packages. The Systems Management Server 2.0 site also delivers similar
+	  functionality, so there must be a way to peacefully share certain server
+	  resources. For this reason, Systems Management Server 1.2 Service Pack 4 has
+	  been changed to permit the SMS_SITE_CONFIG_MANAGER service to detect the
+	  presence of the Systems Management Server 2.0 client (SMS Client Service) and
+	  if found, Systems Management Server 1.2 will bypass the installation of the
+	  SMS_INVENTORY_AGENT_NT and SMS_PACKAGE_COMMAND_MANAGER_NT. "Ownership" of the
+	  client functionality will be effectively passed to the Systems Management
+	  Server 2.0 site, although the Systems Management Server 1.2 server shares
+	  (SMS_SHR) and data files (such as .ins and .cfg files) will continue to be
+	  maintained by the Systems Management Server 1.2 site.
+	
+	For more information on how to avoid contention between sites, regarding Systems
+	Management Server 1.2, clients visiting Systems Management Server 2.0 sites and
+	Systems Management Server 2.0 clients visiting Systems Management Server 1.2
+	sites, refer to Chapter 5 "Upgrading from SMS 1.2 to SMS 2.0" in the Systems
+	Management Server 2.0 Administrator's Guide.
+	
+	Additional query words: prodsms smsinterop
+	
+	======================================================================
+	Keywords          : kbsms200 
+	Technology        : kbSMSSearch kbSMS200
+	Version           : :2.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

@@ -1,0 +1,100 @@
+---
+layout: page
+title: "Q278747: ELL Error Message: Invalid Page Fault in Module Kernel32.dll"
+permalink: kb/278/Q278747/
+---
+
+## Q278747: ELL Error Message: Invalid Page Fault in Module Kernel32.dll
+
+	Article: Q278747
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbenv kberrmsg kbimu
+	Last Modified: 02-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Encarta Language Learning French 
+	- Microsoft Encarta Language Learning Spanish 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you attempt to start Microsoft Encarta Language Learning, you may receive
+	the following error message:
+	
+	  ELL caused an invalid page fault in module Kernel32.dll.
+	
+	CAUSE
+	=====
+	
+	This behavior can occur if the video driver for your video adapter is outdated.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, contact your hardware manufacturer to inquire about how
+	to obtain and install the latest video driver for your video adapter.
+	
+	For information about how to contact your hardware manufacturer, click the
+	appropriate article number below to view the article in the Microsoft Knowledge
+	Base:
+	
+	  Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+	
+	  Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+	
+	  Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+	
+	If you install the latest video driver for your video adapter, and the issue
+	continues to occur, reduce graphics hardware acceleration:
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click System.
+	
+	3. Click the Performance tab, and then click Graphics.
+	
+	4. Move the Hardware Acceleration slider until it is one notch to the right of
+	  None (the Basic acceleration setting).
+	
+	5. Click OK, and then click Close.
+	
+	6. When you are prompted to restart the computer, click Yes.
+	
+	NOTE: If you encounter any problems after you reduce graphics hardware
+	acceleration, follow these steps to restore graphics hardware acceleration to
+	the original setting:
+	
+	  a. Restart Windows in Safe mode. To do this, follow the appropriate steps for
+	     your operating system.
+	
+	     Microsoft Windows 98 or Microsoft Windows Millennium Edition:
+	
+	     Restart your computer, press and hold down the CTRL key when your computer
+	     completes the Power On Self Test (POST), and then select Safe Mode from
+	     the Startup menu.
+	
+	     Microsoft Windows 95:
+	
+	     Restart the computer. When you see the "Starting Windows 95" message, press
+	     the F8 key, and then select Safe Mode from the Startup menu.
+	
+	  b. When Windows starts in Safe mode, click OK.
+	
+	  c. Repeat steps 1 through 6, but in step 4 move the Hardware Acceleration
+	     slider back to its original position.
+	
+	Additional query words: multi multi-media media mm ellf ells gpf ipf Kernel32 dll
+	
+	======================================================================
+	Keywords          : kbenv kberrmsg kbimu 
+	Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbHLangSpanish kbHLangFrench
+	Version           : :
+	Issue type        : kbprb
+	
+	=============================================================================
+	

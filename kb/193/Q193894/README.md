@@ -1,0 +1,154 @@
+---
+layout: page
+title: "Q193894: XCON: MTA Stops Processing Messages and Generates 9156 Events"
+permalink: kb/193/Q193894/
+---
+
+## Q193894: XCON: MTA Stops Processing Messages and Generates 9156 Events
+
+	Article: Q193894
+	Product(s): Microsoft Exchange
+	Version(s): WinNT:5.0,5.5
+	Operating System(s): 
+	Keyword(s): exc55sp2fix
+	Last Modified: 20-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 5.0, 5.5 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	When a network connection goes down and the message transfer agent (MTA) is
+	unable to send mail over an X.400 connector, the MTA leaks 1 CB if the number of
+	connection attempts issued is more than 1. Eventually, the MTA will report 9156
+	errors in the application event log and a backlog of messages will begin to
+	build.
+	
+	CAUSE
+	=====
+	
+	This problem is caused by a bug in the MTA Winsock code.
+	
+	RESOLUTION
+	==========
+	
+	Exchange Server 5.0
+	-------------------
+	
+	A supported fix that corrects this problem is now available from Microsoft, but
+	has not been fully regression tested and should be applied only to systems
+	experiencing this specific problem. If you are not severely affected by this
+	specific problem, Microsoft recommends that you wait for the next Microsoft
+	Exchange Server version 5.0 service pack that contains this fix.
+	
+	To resolve this problem immediately, contact Microsoft Product Support Services
+	to obtain the fix. For a complete list of Microsoft Product Support Services
+	phone numbers and information on support costs, please go to the following
+	address on the World Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	  Component: Message Transfer Agent (MTA)
+	
+	  File Name      Version
+	  --------------------------
+	  Address.dll    5.0.1461.66
+	  Dbserver.sch   5.0.1461.66
+	  Dcprods.cat    5.0.1461.66
+	  Ems_rid.dll    5.0.1461.66
+	  Emsmta.exe     5.0.1461.66
+	  Infoplog.cfg   5.0.1461.66
+	  Infotlog.cfg   5.0.1461.66
+	  Infoxlog.cfg   5.0.1461.66
+	  Mmiext.dll     5.0.1461.66
+	  Mtacheck.exe   5.0.1461.66
+	  Mtamsg.dll     5.0.1461.66
+	  P2.xv2         5.0.1461.66
+	  P3.tpl         5.0.1461.66
+	  P772.tpl       5.0.1461.66
+	  X400om.dll     5.0.1461.66
+	  X400omv1.dll   5.0.1461.66
+	
+	
+	Exchange Server 5.5
+	-------------------
+	
+	To resolve this problem, obtain the latest service pack for Exchange Server
+	version 5.5. For more information, please see the following article in the
+	Microsoft Knowledge Base:
+	
+	  Q191014 XGEN: How to Obtain the Latest Exchange Server 5.5 Service Pack
+	
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	  Component: Message Transfer Agent (MTA)
+	
+	  File Name     Version
+	  -----------------------
+	  Dbserver.sch   5.5.2410.0
+	  Dcprods.cat    5.5.2410.0
+	  Ems_rid.dll    5.5.2410.0
+	  Emsmta.exe     5.5.2410.0
+	  Info4log.cfg   5.5.2410.0
+	  Infodlog.cfg   5.5.2410.0
+	  Infollog.cfg   5.5.2410.0
+	  Infotlog.cfg   5.5.2410.0
+	  Mtacheck.exe   5.5.2410.0
+	  Mtamsg.dll     5.5.2410.0
+	  P2.xv2         5.5.2410.0
+	  X400om.dll     5.5.2410.0
+	  X400omv1.dll   5.5.2410.0
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+	versions 5.0 and 5.5.
+	
+	WORKAROUND
+	==========
+	
+	If you are not able to install the latest hotfix or service pack, perform the
+	following steps on the bridgehead servers logging the 9156 events, and on the
+	remote X.400 bridgehead servers.:
+	
+	1. Increase the TCP/IP control blocks in the registry located in the following
+	  key:
+	
+	  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSExchangeMTA\ 
+	  Parameters
+	 
+	
+	  NOTE: The above is one path; it has been wrapped for readability.
+	
+	  To do so, use the following equation:
+	
+	  ((X400 connectors * 10) + 10)
+	
+	  The results should be placed in the key as decimal.
+	
+	2. On the Override property page of every X.400 connector, in the Associations
+	  section, increase the Disconnect value. The default is 120; increase the
+	  value to at least 360. This value can be increased or decreased as necessary
+	  to work around the problem.
+	
+	======================================================================
+	Keywords          : exc55sp2fix 
+	Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+	Version           : WinNT:5.0,5.5
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

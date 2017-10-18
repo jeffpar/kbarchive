@@ -1,0 +1,107 @@
+---
+layout: page
+title: "Q137556: HOWTO: Determine Font Size Setting"
+permalink: kb/137/Q137556/
+---
+
+## Q137556: HOWTO: Determine Font Size Setting
+
+	Article: Q137556
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:2.5,2.5a,2.5b,2.6,2.6a
+	Operating System(s): 
+	Keyword(s): kbFont kbGrpDSFox
+	Last Modified: 03-JUL-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft FoxPro for Windows, versions 2.5, 2.5a, 2.5b, 2.6, 2.6a 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The code in this article demonstrates how to use the Foxtools.fll library
+	commands to call Microsoft Windows application programming interface (API)
+	functions to determine if the current session of Windows is using Small or Large
+	Fonts. The following API functions are used:
+	
+	  GetDC()
+	  GetDeviceCaps()
+	  ReleaseDC()
+	
+	MORE INFORMATION
+	================
+	
+	The program first loads the Foxtools.fll library that is supplied with FoxPro
+	for Windows. Then it initializes some variables and retrieves the handle for the
+	display device. Next, it calls the GetDeviceCaps function, requesting the number
+	of pixels per logical inch along the display width and height. If the number of
+	pixels is equal to 96, Windows is running with Small Fonts. If the number of
+	pixels is equal to 120, Windows is running with Large Fonts. The program then
+	releases the handle to the display device and the library.
+	
+	  SET LIBRARY TO SYS(2004) + "FOXTOOLS.FLL" ADDITIVE
+	
+	  * create variables to pass index to GetDeviceCaps()
+	  * this value cane be found in the WINGDI.H file
+	
+	  LOGPIXELSX = 88
+	  LOGPIXELSY = 90
+	
+	  * get the handle to the device context
+	
+	  lnGetDC = RegFN("GetDC","I","I")
+	  lnHDC = CallFN(lnGetDC,0)
+	
+	  * get the number of pixels per logical inch
+	
+	  lnGetLogPix = RegFN("GetDeviceCaps","II","I")
+	  lnLogPixX = CallFN(lnGetLogPix,lnHDC,LOGPIXELSX)
+	  lnLogPixY = CallFN(lnGetLogPix,lnHDC,LOGPIXELSY)
+	
+	  * determine if small or large fonts, either lnLogPixX or
+	  * lnLogPixY may be used to test for the values 96 or 120
+	
+	  IF lnLogPixX < 96
+	    WAIT WINDOW "Windows is using smaller than Small Fonts"   
+	  ELSE IF InLogPixX = 96
+	    WAIT WINDOW "Windows is using Small Fonts"   
+	  ELSE IF InLogPixX < 120
+	    WAIT WINDOW "Windows is using between Small Fonts and Large Fonts"
+	  ELSE IF IF lnLogPixX = 120
+	    WAIT WINDOW "Windows is using Large Fonts"
+	  ELSE
+	    WAIT WINDOW "Windows is using larger than Large Fonts"
+	  ENDIF
+	
+	  * release the handle to the device context
+	
+	  lnRelease = RegFN("ReleaseDC","II","I")
+	  = CallFN(lnRelease,0,lnHDC)
+	
+	  * release the FOXTOOLS.FLL library
+	
+	  RELEASE LIBRARY SYS(2004) + "FOXTOOLS.FLL"
+	
+	REFERENCES
+	==========
+	
+	Microsoft Windows Software Development Kit, "Programmer's Reference, Volume 2:
+	Functions," pages 350-354, 785.
+	
+	Foxtools.wri located in the C:\Fpw26\Goodies\Foxtools directory.
+	
+	Wingdi.h located in the C:\C700\Include directory
+	
+	Additional query words: 2.50 2.60 FoxWin
+	
+	======================================================================
+	Keywords          : kbFont kbGrpDSFox 
+	Technology        : kbAudDeveloper kbFoxproSearch kbFoxPro260 kbFoxPro250 kbFoxPro250a kbFoxPro250b kbFoxPro260a
+	Version           : WINDOWS:2.5,2.5a,2.5b,2.6,2.6a
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

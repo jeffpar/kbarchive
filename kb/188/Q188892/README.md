@@ -1,0 +1,150 @@
+---
+layout: page
+title: "Q188892: How to Use EVTSCAN with Netmon Tracing to Capture Event 23s"
+permalink: kb/188/Q188892/
+---
+
+## Q188892: How to Use EVTSCAN with Netmon Tracing to Capture Event 23s
+
+	Article: Q188892
+	Product(s): Microsoft SNA Server
+	Version(s): WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 19-SEP-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 2.11, 2.11 SP1, 2.11 SP2, 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	One of the more difficult tasks when you are attempting to find the root cause
+	of Event 23 "00AF" (link lost) or other network outage errors posted in
+	Application Event logs, is knowing when to stop a Netmon trace after a failure
+	has occurred. Frequently, because of high network traffic, the network incident
+	that spawned the Event 23 or other network outage has been overwritten by the
+	time network personnel have been notified to stop the Netmon trace.
+	
+	You can use Evtscan.exe to send a pop-up message containing a predefined message
+	within seconds of an Event 23 error to any designated computer(s). The utility
+	can send a message for any event and within a configurable length of time after
+	the event transpires. In addition, a predefined e-mail message can be sent to
+	specific users notifying them to stop the Netmon capture. Because the e-mail
+	message is sent containing known specific strings, other actions can be taken on
+	receipt of that specific text string (for example, paging a particular pager
+	number, forwarding the message, and so forth).
+	
+	Evtscan.exe is a utility that ships with the Back Office Resource Kit (Part 1)
+	(in the Exchange\Tools\Evtlog directory), and has also shipped with the May 1998
+	Tech Net CD, on a supplemental CD entitled "BackOffice Resource Kit Utilities,
+	Second Edition" (in the Exchange/Winnt/I386/Admin/Evtlog directory). Evtscan.exe
+	ships as an Exchange utility, but has been recently used in the SNA arena,
+	helping to report network outages (Event 23s) as soon as they are recorded in
+	the Event logs.
+	
+	MORE INFORMATION
+	================
+	
+	Frequently, when troubleshooting link lost and other intermittent LAN errors, it
+	becomes essential to capture network traces (using Netmon). As the outages are
+	intermittent, prompt identification and notification of the network outage will
+	enable support personnel to stop the network tracing device while the LAN error
+	is still in the trace buffer, and not overwritten.
+	
+	The EVTSCAN utility can be used to track any event ID that is generated in the
+	event logs on specific computers running Windows NT Server. For the purposes of
+	this article, we will be using Event 23 as an example.
+	
+	To use EVTSCAN, perform the following steps:
+	
+	1. Copy the files Evtscan.exe and Evt.cfg to the Winnt\System32\Config directory
+	  on the monitoring computer running Windows NT Server or Windows NT
+	  Workstation.
+	
+	  The Evt.cfg file contains the instructions EVTSCAN will use when monitoring
+	  the event logs. The format of the Evt.cfg file is:
+	
+	  Event ID; Source Service; Action to take; Screen pop up list; email list;
+	  Message to be sent
+	
+	  The Evtscan utility will monitor the Application log for:
+	   - An Event 23,
+	
+	   - Taking no action, (that is not stopping or restarting the service)
+	
+	   - Sending a screen pop-up message to the machine "SNA Monitor"
+	
+	   - Sending e-mail to the SNA-Admin alias
+	
+	   - With the following message " Event 23 has occurred- stop netmon trace
+	     immediately"
+	
+	  The evt.cfg file would be modified to contain only the following string:
+	
+	  23; SNA Server; ; SNA Monitor; SNA-Admin; Event 23 has occurred- stop netmon
+	  trace immediately
+	
+	2. Ensure that the client is Mapi32-compliant so the mail message function works
+	  correctly. The simplest way to ensure the mail message will be sent is to
+	  install an Exchange client on the monitoring computer, then start Exchange,
+	  and then minimize it.
+	
+	3. Go to an MS-DOS command prompt and change directories to the
+	  \Winnt\system32\config directory. Then start EVTSCAN by typing the following
+	  commands:
+	
+	  evtscan -f <Evt.cfg (in this case)> -u <the Exchange profile to be
+	  used(if necessary)> -p <password for the Exchange profile> -t
+	  <how many seconds between scans> <Target server to be scanned #1>
+	  <Target server to be scanned #2>, and so forth.
+	
+	  For example, if you have logged into the monitoring computer with your user
+	  name and password and have started and minimized Exchange, use the following
+	  command string:
+	
+	  "evtscan -f evt.cfg -t 15 SNAServer#1,SNAServer#2,SNAServer#3" (without the
+	  quotation marks)
+	
+	  This will bring about the following results:
+	   - Scanning SNAServer#1, SNAServer#2, and SNAServer#3
+	
+	   - Every 15 seconds
+	
+	   - For Event 23s
+	
+	   - We will send screen pop-up messages to SNA Monitor
+	
+	   - We will send e-mail to SNA-Admin
+	
+	  You can then minimize the MS-DOS window under which EVTSCAN is running.
+	
+	4. After notifications have been sent, and there is no further need to run
+	  EVTSCAN, you can exit EVTSCAN by typing the following command:
+	
+	  "^C (Ctrl+C)" (without the quotation marks)
+	
+	For more information, please see the following Microsoft Knowledge Base
+	articles:
+	
+	  Q155886 How to Make a Network Trace With Network Monitor
+	
+	  Q158744 How to Automate Network Captures With Network Monitor
+	
+	
+	  Q148942 How to Capture Network Traffic With Network Monitor
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ211 kbSNAServ400 kbSNAServ211SP1 kbSNAServ211SP2 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ300SP2
+	Version           : WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0
+	Issue type        : kbhowto kbinfo
+	
+	=============================================================================
+	

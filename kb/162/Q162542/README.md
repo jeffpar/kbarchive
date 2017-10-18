@@ -1,0 +1,82 @@
+---
+layout: page
+title: "Q162542: New Ping Tool Prevents Hanging Other TCP/IP Stacks"
+permalink: kb/162/Q162542/
+---
+
+## Q162542: New Ping Tool Prevents Hanging Other TCP/IP Stacks
+
+	Article: Q162542
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): 1,2,2.1
+	Operating System(s): 
+	Keyword(s): kbfile kbnetwork kbtool osr2 win95 kbgraphxlinkcritical
+	Last Modified: 13-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 95 
+	- Microsoft Windows 95 OEM Service Release, versions 1, 2, 2.1 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you use the Ping tool (Ping.exe) to test IP communication to a network
+	resource, the networked computer or other device may stop responding (hang), or
+	other errors may occur.
+	
+	CAUSE
+	=====
+	
+	Under some conditions, it is possible for the version of Ping.exe included with
+	Windows 95 to send an IP packet that would be considered an invalid IP datagram.
+	This may cause some systems to hang or encounter other errors.
+	
+	RESOLUTION
+	==========
+	
+	This issue is resolved by the following updated files for Windows 95:
+	
+	  PING.EXE version 4.00.1381.3 (dated 12/14/96) and later
+	  MSVCRT.DLL version 4.20.6164 (dated 6/17/96) and later
+	
+	These files are included in the self-extracting PINGUPD.EXE file.
+	
+	The following file is available for download from the Microsoft Download Center:
+	
+	  Download Pingupd.exe now
+	  (http://download.microsoft.com/download/win95upg/utility/1/w95/en-us/pingupd.exe)
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. Once posted, the file is housed on secure
+	servers that prevent any unauthorized changes to the file.
+	
+	STATUS
+	======
+	
+	This issue is resolved in Microsoft Windows 98.
+	
+	MORE INFORMATION
+	================
+	
+	A computer running Windows NT or Windows 95 does not experience the symptoms
+	described above, but these symptoms may occur on other systems such as Unix
+	hosts, Macintosh computers, or network printers.
+	
+	
+	Additional query words: crash crashing
+	
+	======================================================================
+	Keywords          : kbfile kbnetwork kbtool osr2 win95 kbgraphxlinkcritical 
+	Technology        : kbWin95search kbOPKSearch kbWin95 kbWin95OPKOSR2 kbWin95OPKOSR1 kbWin95OPKOSR210
+	Version           : :1,2,2.1
+	
+	=============================================================================
+	

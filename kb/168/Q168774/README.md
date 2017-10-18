@@ -1,0 +1,171 @@
+---
+layout: page
+title: "Q168774: IBM PC/3270 for NT v4.1 TN3270 May Fail with XPROG750"
+permalink: kb/168/Q168774/
+---
+
+## Q168774: IBM PC/3270 for NT v4.1 TN3270 May Fail with XPROG750
+
+	Article: Q168774
+	Product(s): Microsoft SNA Server
+	Version(s): 2.11,3.0,4.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 20-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 2.11, 3.0, 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	When using IBM Personal Communications 3270 (PC/3270) for Windows NT v4.1
+	TN3270E emulator through the SNA Server TN3270 Server, the IBM TN3270 emulator
+	session may fail unexpectedly with XPROG750, which may coincide with the
+	following Windows NT application event logged by the SNA Server TN3270 Server:
+	
+	  Event ID: 306
+	  Source: TN3270 Server
+	  Description:
+	  Input from the client <ip addr> (port) using LU <LU name> was
+	  ignored.
+	
+	This problem does not occur when configuring the SNA Server TN3270 Server to use
+	"TN3270 Mode only". In addition, other TN3270E emulators do not exhibit this
+	problem. For more information about the Event 306 error, see the TROUBLESHOOTING
+	EVENT 306 ERRORS section below.
+	
+	This problem exists with Windows 95 and Windows NT versions of IBM PC/3270 v4.1.
+	A fix for this problem is available from IBM PC/3270 technical support under the
+	following IBM APAR numbers:
+	
+	  Windows 95 version of IBM PC/3270 v4.1: IC17449
+	  Windows NT version of IBM PC/3270 v4.1: IC18202
+	
+	
+	MORE INFORMATION
+	================
+	
+	The IBM PC/3270 TN3270E emulator was not properly handling a NULL RU arriving on
+	an LU-LU session from a host application. The following annotated SNA Server
+	TN3270 internal trace illustrates the problem.
+	
+	1. Host sends Request Definite Response (RQD) message with null RU:
+	
+	  >04/16 12:56:10.333 (+150 msecs)  Event=TEV_DataFromSNAAsync
+	   Thread = 0x00000139  Session = 0x0018F248  Socket = 0x000005D8
+	   VCB address=0x0018F41C
+	   verb_length=0x0044  verb=0x0052 (RUI)  opcode=0x8003 (READ)
+	   sid=0x00010003  correlator=0x0018F248  post_handle=0x000005C0
+	   prim_rc=LUA_OK  sec_rc=LUA_SEC_RC_OK
+	   lu_norm    lua_data_length=0x00000000
+	   lua_message_type=0x01 (LUA_MESSAGE_TYPE_LU_DATA)
+	   TH Only    efi=0  oadi=0  daf=FE  oaf=01  snf=0003
+	   RH  REQ FMD fi=0   sdi=0  bci=1  eci=1  (Only)
+	   03 80 80    dr1=1  dr2=0  ri=0   qri=0  pi=0
+	               bbi=1  ebi=0  cdi=0  csi=0  edi=0  pdi=0
+	
+	2. SNA Server TN3270E server sends this message to the TN3270E client. Note the
+	  TN3270E header:
+	
+	  data type       = 00 (3270 data request)
+	  request flag    = 00
+	  response flag   = 02 (always response)
+	  sequence number = 0001
+	  IAC EOR = ff ef
+	
+	  >04/16 12:56:10.333 (+ smidgen )  Event=TEV_TCPSendIssued
+	   Thread = 0x00000139  Session = 0x0018F248  Socket = 0x000005D8
+	   Number of bytes = 7
+	     TN3270E message = 0000 0200 02ff ef 
+	
+	3. At this point, the IBM PC/3270 emulator displays "XPROG750". If the user
+	  enters <3270 Reset> and attempts to send a new request on the session,
+	  the request is received by the TN3270E server:
+	
+	  >04/16 12:57:06.594 (+ smidgen )  Event=TEV_DataFromClient
+	   Thread = 0x00000139  Session = 0x0018F248  Socket = 0x000005D8
+	   000000  0000 0000 037d 405a 5c5c 8183 98a4 8999  |.....' !..acquir|
+	   000010  854b 6b86 9683 f9f8 f3f0 f56b 9996 a4a3  |e.,foc98305,rout|
+	   000020  8599 ffef                                |er..            |
+	
+	4. However, since the previous Definite Response request was never acknowledged
+	  by the IBM PC/3270 emulator, this new user request is ignored by the SNA
+	  Server TN3270E Server (as indicated by the "Ignore" below):
+	
+	  >04/16 12:57:06.594 (+ smidgen )  Event=TEV_CRTFirstInboundByte
+	   Thread = 0x00000139  Session = 0x0018F248  Socket = 0x000005D8
+	   Ignore
+	   State = OPER        InputState = IDLE        OutputState = SNARESP
+	   Toggle = LU-LU       LU State = RCV         CanQueue = YES
+	   Bracket = INB         DTActive
+	
+	By configuring the SNA Server TN3270E Server to use "TN3270 mode only", this
+	forces the negotiation of the TN3270 protocol when communicating with the IBM
+	PC/3270 TN3270 emulator, rather than TN3270E. The problem does not occur with
+	the IBM PC/3270 emulator when using TN3270 protocol.
+	
+	Contact IBM PC/3270 technical support for a fix to IBM PC/3270, referring to the
+	APAR numbers mentioned in the SUMMARY section above.
+	
+	TROUBLESHOOTING EVENT 306 ERRORS
+	--------------------------------
+	
+	The TN3270 Server Event 306 message indicates that the TN3270 Server "ignored" a
+	request from a TN3270/TN3270E client emulator. This can occur if:
+	
+	1. The TN3270E client has not acknowledged a previously sent request.
+	
+	  -or-
+	
+	2. The host has direction to send on the SNA session, so a new TN3270 user
+	  request cannot be issued.
+	
+	To track down the exact cause of the Event 306 error, an SNA Server TN3270
+	Internal trace should be captured. This can be captured as follows:
+	
+	If SNA Server 2.11 is being used:
+	
+	1. Start the TN3270 Service Admin program on the server.
+	
+	2. Choose the <Trace> option.
+	
+	3. Select the "Active" checkbox, and then <OK>.
+	
+	4. Capture the problem.
+	
+	5. Once captured, disable tracing by deselecting the "Active" checkbox and
+	  choosing <OK>.
+	
+	6. The traces can be found in the \TN3270\TRACES directory, called TN3_00.TRC
+	  (and increment through TN3_09.TRC).
+	
+	If SNA Server 3.0 is being used:
+	
+	1. Start the SNATRACE program on the server.
+	
+	2. From the Trace Items folder, double-click on the "TN3270" server.
+	
+	3. Focus on the "TN3270 Internal Trace" folder and choose the checkbox for
+	  "TN3270 Internal Trace", and then the <Apply> option.
+	
+	4. Capture the problem.
+	
+	5. Once captured, disable tracing by selecting the "Clear All Traces" option
+	  from the Trace Items folder.
+	
+	6. The traces can be found in the \SNA\TRACES directory, called TN3_00.TRC (and
+	  increment through TN3_09.TRC).
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ211 kbSNAServ400
+	Version           : :2.11,3.0,4.0
+	
+	=============================================================================
+	

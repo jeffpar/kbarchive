@@ -1,0 +1,271 @@
+---
+layout: page
+title: "Q134314: Container Classes Versus Control Classes"
+permalink: kb/134/Q134314/
+---
+
+## Q134314: Container Classes Versus Control Classes
+
+	Article: Q134314
+	Product(s): Microsoft FoxPro
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 13-AUG-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 3.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	There are two main Visual FoxPro base classes, the Control class and the
+	Container class. This article compares and contrasts them.
+	
+	MORE INFORMATION
+	================
+	
+	Built-in Control Classes
+	------------------------
+	
+	  CheckBox
+	  ComboBox
+	  CommandButton
+	  Control
+	  Custom
+	  EditBox
+	  Header
+	  Image
+	  Label
+	  Line
+	  ListBox
+	  OLEBoundControl
+	  OLEControl
+	  OptionButton
+	  Shape
+	  Spinner
+	  TextBox
+	  Timer
+	
+	Built-in Container Classes
+	--------------------------
+	
+	  Column
+	  CommandGroup
+	  Container
+	  Form
+	  Formset
+	  Grid
+	  OptionGroup
+	  Page
+	  PageFrame
+	  Toolbar
+	
+	Differences Between the Two Base Classes
+	----------------------------------------
+	
+	These two base classes are different when it comes to how objects within each
+	class can be referenced and manipulated. Member objects within Control classes
+	can only be manipulated at the design time of the class. These objects cannot be
+	referenced from outside the class at run time. In contrast, objects within
+	Container classes can be manipulated individually at design time or run time,
+	and they can be referenced from outside the class by calling methods or setting
+	properties (this applies to members and methods not defined as PROTECTED).
+	
+	How Subclassing Works for Container and Control Classes
+	-------------------------------------------------------
+	
+	If a Container is subclassed and child member objects are added to it (Command
+	Buttons, for example), then when an object is instantiated from this container
+	subclass, all methods and properties of any of the child member objects as well
+	those of the parent (the Container subclass) may be accessed as long as they are
+	not protected.
+	
+	If a Control is subclassed and member objects are added to it, then when this
+	Control is instantiated, only methods and properties of the Control class itself
+	may be accessed, and then only if they are not protected. The methods and
+	properties of child member objects contained in the control cannot be accessed
+	from outside the control. These child members can only be accessed from within
+	the control (a method in the control can set a property or call a method in a
+	child member of the control). All methods and properties of child members of
+	controls are automatically protected.
+	
+	Member objects must be added to Controls at design time with the ADD OBJECT
+	clause of the DEFINE CLASS command. Member objects may be added to containers
+	either at design time (with the ADD OBJECT clause) or at run time (with the
+	.AddObject() method).
+	
+	Code Sample
+	-----------
+	
+	  *****************************************************************
+	  * Start of CNTVSCTL.PRG
+	  * This program contrasts Container and Control classes
+	  *****************************************************************
+	
+	  ON ERROR DO errhand ;
+	     WITH ERROR( ), MESSAGE( )  && Traps unknown member error
+	
+	  oForm1 = CREATEOBJECT( 'frmform1', 'Form with Container', 'cntContainer' )
+	
+	  oForm1.VISIBLE = .T.
+	
+	  oForm2 = CREATEOBJECT( 'frmform1', 'Form with Control', 'ctlControl' )
+	  oForm2.LEFT = 310
+	  oForm2.VISIBLE = .T.
+	  READ EVENTS
+	
+	  ON ERROR
+	
+	  DEFINE CLASS frmForm1 AS FORM
+	
+	     WIDTH = 300
+	     SCALEMODE = 3
+	
+	     PROCEDURE INIT
+	        PARAMETERS cformcaption cobj2add
+	        THIS.CAPTION = cformcaption
+	        THIS.ADDOBJECT( 'oAddedobject', cobj2add )
+	        THIS.ADDOBJECT( 'oFormbutton', 'cmdbutton2' )
+	        THIS.oformbutton.VISIBLE = .T.
+	        THIS.oAddedobject.VISIBLE = .T.
+	     ENDPROC
+	
+	     PROCEDURE DESTROY
+	        CLEAR EVENTS
+	     ENDPROC
+	
+	  ENDDEFINE
+	
+	  DEFINE CLASS cntContainer AS CONTAINER
+	
+	     ADD OBJECT oCenter AS center_it
+	     CAPTION = 'Container'
+	     HEIGHT = 120
+	
+	     PROCEDURE INIT
+	        THIS.ADDOBJECT( 'ocmdButton', 'cmdbutton', 'Container Button' )
+	        THIS.ocmdButton.VISIBLE = .T.
+	        THIS.TOP = THIS.oCenter.T_B_center( THISFORM.HEIGHT, THIS.HEIGHT )
+	        THIS.LEFT = THIS.oCenter.L_R_center( THISFORM.WIDTH, THIS.WIDTH )
+	     ENDPROC
+	
+	     PROCEDURE Call_click
+	        PARAMETERS cClickText
+	        THIS.ocmdButton.CLICK( cClickText )
+	     ENDPROC
+	
+	  ENDDEFINE
+	
+	  DEFINE CLASS ctlControl AS CONTROL
+	
+	     ADD OBJECT oCenter AS center_it
+	     ADD OBJECT 'ocmdButton' AS 'cmdButton' NOINIT
+	
+	     * Cannot do ADDOBJECT() in INIT PROCEDURE (at run time) in Control.
+	     * Must add with ADD OBJECT clause of DEFINE CLASS command.
+	
+	     CAPTION = 'Control'
+	     HEIGHT = 120
+	
+	     PROCEDURE INIT
+	
+	        * The following command calls the ocmdButton INIT and passes
+	        * the desired button caption to the INIT
+	        THIS.ocmdButton.INIT( 'Control Button' )
+	
+	        THIS.TOP = THIS.oCenter.T_B_center( THISFORM.HEIGHT, THIS.HEIGHT )
+	        THIS.LEFT = THIS.oCenter.L_R_center( THISFORM.WIDTH, THIS.WIDTH )
+	     ENDPROC
+	
+	     PROCEDURE Call_click
+	        PARAMETERS cClickText
+	        THIS.ocmdButton.CLICK( cClickText )
+	     ENDPROC
+	
+	  ENDDEFINE
+	
+	  DEFINE CLASS cmdbutton AS COMMANDBUTTON
+	
+	     PROCEDURE INIT
+	        PARAMETERS cButtonCaption
+	        THIS.WIDTH = 125
+	        THIS.TOP = THIS.PARENT.oCenter.T_B_center ;
+	           ( THIS.PARENT.HEIGHT, THIS.HEIGHT )
+	        THIS.LEFT = THIS.PARENT.oCenter.L_R_center ;
+	           ( THIS.PARENT.WIDTH, THIS.WIDTH )
+	        THIS.CAPTION = cButtonCaption
+	     ENDPROC
+	
+	     PROCEDURE CLICK
+	        PARAMETERS cClickText
+	        WAIT WINDOW IIF(TYPE('cClickText') = 'C', cClickText ;
+	           ,THIS.PARENT.CAPTION+' Button'+' Click in '+ '"' ;
+	           +THIS.PARENT.CAPTION+'"') TIMEOUT 5
+	     ENDPROC
+	
+	  ENDDEFINE
+	
+	  DEFINE CLASS cmdbutton2 AS COMMANDBUTTON
+	
+	     TOP = 215
+	     CAPTION = 'Form Button'
+	
+	     PROCEDURE INIT
+	        THIS.LEFT =  (THIS.PARENT.WIDTH-THIS.WIDTH)/2
+	     ENDPROC
+	
+	     PROCEDURE CLICK   && Passes wait window message to display
+	        * The following line causes an error when calling Click event
+	        * of ocmdbutton in Control, but works properly when called
+	        * in Container.
+	        THIS.PARENT.oAddedobject.ocmdButton.CLICK('Click Event for ';
+	           +'"'+THIS.PARENT.oAddedobject.CAPTION+' Button"'+' in ' ;
+	           +'"'+THIS.PARENT.oAddedobject.CAPTION+'"'+' Called from '+'"' ;
+	           +THIS.CAPTION+'"'+' Click')
+	        THIS.PARENT.oAddedobject.Call_click( 'Click Event for ';
+	           +'"'+THIS.PARENT.oAddedobject.CAPTION+' Button"' ;
+	           +' Called Through Call_Click Procedure in '+'"' ;
+	           +THISFORM.oAddedobject.CAPTION+'"')
+	     ENDPROC
+	
+	  ENDDEFINE
+	
+	  * Define a class to center buttons, containers, & controls:
+	  DEFINE CLASS center_it AS CUSTOM  && s
+	
+	     FUNCTION T_B_center
+	        PARAMETERS ncontheight nobjheight
+	        RETURN (ncontheight-nobjheight)/2
+	     ENDFUNC
+	
+	     FUNCTION L_R_center
+	        PARAMETERS ncontwidth nobjwidth
+	        RETURN (ncontwidth-nobjwidth)/2
+	     ENDFUNC
+	
+	  ENDDEFINE
+	
+	  PROCEDURE errhand
+	     PARAMETERS nError, cMess
+	     DO CASE
+	        CASE nerror = 1925
+	            = MESSAGEBOX('Error # '+ALLTRIM(STR(nError))+ '. '+cMess;
+	                 +CHR(13)+CHR(13) ;
+	                 +'Member ocmdButton is unknown outside of Control!',48)
+	        OTHERWISE
+	            = MESSAGEBOX('Error # '+ALLTRIM(STR(nerror))+'. '+cMess)
+	     ENDCASE
+	  ENDPROC
+	
+	Additional query words: VFoxWin
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+	
+	=============================================================================
+	

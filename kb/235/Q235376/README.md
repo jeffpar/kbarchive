@@ -1,0 +1,88 @@
+---
+layout: page
+title: "Q235376: Disabling Autochk Causes Incorrect Volume Set Size"
+permalink: kb/235/Q235376/
+---
+
+## Q235376: Disabling Autochk Causes Incorrect Volume Set Size
+
+	Article: Q235376
+	Product(s): Microsoft Windows NT
+	Version(s): 4.0
+	Operating System(s): 
+	Keyword(s): kbenv kbtool diskmem kbDiskMemory
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 4.0 
+	- Microsoft Windows NT Workstation version 4.0 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about modifying the registry. Before you 
+	modify the registry, make sure to back it up and make sure that you understand how to restore 
+	the registry if a problem occurs. For information about how to back up, restore, and edit the 
+	registry, click the following article number to view the article in the Microsoft Knowledge Base:
+	
+	  Q256986 Description of the Microsoft Windows Registry
+	
+	SUMMARY
+	=======
+	
+	Although you can disable the automatic disk checking tool (Autochk.exe) that
+	runs at Windows NT startup, Microsoft does not recommend that you do so.
+	Disabling Autochk during the extension of a volume set can result in damage to
+	the volume set, loss of data, or an inability to use the space added to the
+	set.
+	
+	
+	MORE INFORMATION
+	================
+	
+	WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+	that may require you to reinstall your operating system. Microsoft cannot
+	guarantee that you can solve problems that result from using Registry Editor
+	incorrectly. Use Registry Editor at your own risk.
+	
+	When you extend a volume set, Disk Administrator updates the BootExecute value
+	under the following registry key, appending the command "autochk /x
+	<drive_letter>":
+	
+	  HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager
+	
+	This causes the NTFS indices to be rebuilt and the additional capacity to be
+	added to the volume set.
+	
+	If this step is not performed, Disk Administrator may report the new disk to be a
+	part of the volume set, even though File Manager or the command prompt still
+	shows the previous capacity. Another possibility is corruption of the entire
+	volume set. Your only option may be to delete and re-create the volume set, and
+	then restore from backup.
+	
+	If an incorrect capacity is reported, you may be able to resolve the situation by
+	adding a command to run Autochk to the BootExecute value in the registry key
+	listed above. You can try adding the following data value for the BootExecute
+	value:
+	
+	  autocheck autochk *
+	  autochk /x <drive>:
+	
+	Note that you must press ENTER after "autocheck autochk *".
+	
+	Then, shut down and restart the computer. When the computer restarts, Chkdsk runs
+	and the volume set is verified. This process may take a long time, but you must
+	allow it to continue. If the process is successful, the volume set reports the
+	correct size.
+	
+	
+	Additional query words: autocheck autocheck.exe autochk.exe
+	
+	======================================================================
+	Keywords          : kbenv kbtool diskmem kbDiskMemory 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+	Version           : :4.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

@@ -1,0 +1,151 @@
+---
+layout: page
+title: "Q259881: XADM: EventID 2078 Occurs When Client Has Multiple Transport"
+permalink: kb/259/Q259881/
+---
+
+## Q259881: XADM: EventID 2078 Occurs When Client Has Multiple Transport
+
+	Article: Q259881
+	Product(s): Microsoft Exchange
+	Version(s): winnt:5.5 SP3
+	Operating System(s): 
+	Keyword(s): exc55sp3 kbExchange550preSP4fix kbExchange550sp4Fix kbgraphxlinkcritical
+	Last Modified: 01-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.5 SP3 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	When you send an Internet e-mail message under the following conditions
+	
+	- Exchange Server 5.5 Service Pack 3 is installed on the server.
+	
+	- Either Microsoft Exchange Client or Microsoft Outlook has the two following
+	  transport providers on the client:
+	
+	   - The Microsoft Exchange Transport provider.
+	
+	   - The Internet Mail Service provider.
+	
+	- The Internet Mail Service is set first in the order of transports.
+	
+	- The Exchange Server recipient is set in the To or Cc box of the e-mail
+	  message and the Internet recipient is set in the Bcc box of the e-mail
+	  message.
+	
+	  -or-
+	
+	  The Exchange Server recipient is set in the Bcc field of the e-mail message
+	  and the Internet recipient is set in the To or Cc box of the e-mail message.
+	
+	the following event is logged in the application event log:
+	
+	  Event ID: 2078
+	  Source: MSExchangeIS Private
+	  Type: Error
+	  Category: Transport Sending
+	
+	  Unable to submit, send, or transfer out a message.
+	  Check PR_RESPONSIBILITY.
+	
+	Nevertheless, the message is sent without any issues.
+	
+	CAUSE
+	=====
+	
+	This issue is caused by the Information Store service in Exchange Server 5.5
+	Service Pack 3.
+	
+	PR_RESPONSIBILITY, as described in the error message event in the "Symptoms"
+	section of this article, is a property of the recipient and is set to True by
+	default. After the e-mail message is sent by each provider, the
+	PR_RESPONSIBILITY property of the recipients who have been transmitted is set to
+	False by each transport provider.
+	
+	The Event ID 2078 error message indicates that all PR_RESPONSIBILITY properties
+	of recipients are set to False, so no recipient exists to send a message.
+	
+	When the Exchange Transport provider delivers the message to the Information
+	Store service after it sends to the SMTP recipient by using the Internet Mail
+	Service provider, the PR_RESPONSIBILITY property of the SMTP recipient is set to
+	False. Therefore, the Exchange Server service provider delivers one message with
+	the following conditions:
+	
+	- The PR_RESPONSIBILITY property of the SMTP recipient in the To or Cc box is
+	  set False.
+	
+	- The PR_RESPONSIBILITY property of the Exchange Server recipient in the Bcc
+	  box is set True.
+	
+	In Exchange Server 5.5 Service Pack 3, the fix described in the following article
+	separates the Bcc and To or Cc box transports:
+	
+	  Q235455 XCON: Modification in X.400 Blind Copy Implementation
+	
+	Event ID 2078 occurs when the Exchange Server recipient is not included in either
+	the To or Cc recipients or the Bcc recipients.
+	
+	But in this case, the Internet Mail Service provider sends the SMTP recipient in
+	the To or Cc box with no issue.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, obtain the latest service pack for Exchange Server 5.5.
+	For additional information, click the following article number to view the
+	article in the Microsoft Knowledge Base:
+	
+	  Q191914 XGEN: How to Obtain the Latest Exchange Server 5.5 Service Pack
+	
+	
+	The following files are available for download from the Microsoft Download
+	Center:
+	
+	  x86: DownloadDownload Q248838engi.exe now
+	  (http://www.microsoft.com/downloads/release.asp?ReleaseID=25443)
+	  Alpha: DownloadDownload Q248838enga.exe now
+	  (http://www.microsoft.com/downloads/release.asp?ReleaseID=25444)
+	
+	For additional information about how to download Microsoft Support files, click
+	the following article number to view the article in the Microsoft Knowledge
+	Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft scanned this file for viruses. Microsoft used the most current
+	virus-detection software that was available on the date that the file was
+	posted. The file is stored on secure servers that prevent any unauthorized
+	changes to the file.
+	
+	
+	WORKAROUND
+	==========
+	
+	It is safe to ignore this Event when the conditions in the "Symptoms" section of
+	this article exist.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed that this is a problem in Microsoft Exchange Server
+	version 5.5 Service Pack 3. This problem was first corrected in Exchange Server
+	5.5 Service Pack 4.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : exc55sp3 kbExchange550preSP4fix kbExchange550sp4Fix kbgraphxlinkcritical 
+	Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange550SP3
+	Version           : winnt:5.5 SP3
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

@@ -1,0 +1,262 @@
+---
+layout: page
+title: "Q173070: WD97: Unwanted Tab Stop Inserted in Outline Numbered Sequence"
+permalink: kb/173/Q173070/
+---
+
+## Q173070: WD97: Unwanted Tab Stop Inserted in Outline Numbered Sequence
+
+	Article: Q173070
+	Product(s): Word 97 for Windows
+	Version(s): WINDOWS:97
+	Operating System(s): 
+	Keyword(s): kbdta word8 word97 kbnumbering
+	Last Modified: 13-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you customize an Outline Numbered format in your Word document, an unwanted
+	tab stop may appear as in the following cases.
+	
+	Case 1
+	------
+	
+	After you customize an outline numbered scheme, promoting or demoting a numbered
+	paragraph may insert an unwanted tab stop between the number and the beginning
+	of the paragraph text. Attempting to use default tab stop settings (on the
+	Format menu, click Tabs) by clearing all custom tab stops results in the custom
+	tab stops being cleared only temporarily.
+	
+	NOTE: To promote or demote a numbered paragraph, use the Increase Indent or
+	Decrease Indent buttons.
+	
+	When you do this, the tab space between the number and the beginning of the
+	paragraph text will be different from the way they were formatted in the
+	customized Outline Numbered scheme.
+	
+	
+	Case 2
+	------
+	
+	If you create a new style with a customized Outline Numbered format (on the
+	Format menu, click "Bullets and Numbering"), Word may include an extra tab
+	setting with the style when you add the style to the template.
+	
+	NOTE: To view the description of your custom style, click Style on the Format
+	menu, click to select your custom style in the Style dialog box and then view
+	the Description.
+	
+	For additional information about a similar problem when you create a custom style
+	that contains a Bulleted or Numbered format, click the article number below to
+	view the article in the Microsoft Knowledge Base:
+	
+	  Q206596 WD97: Bulleted/Numbered Style Added to Template Shows Additional Tab
+	  Stop
+	
+	
+	CAUSE
+	=====
+	
+	This functionality is by design of Microsoft Word. Word may add an additional
+	0.25" default value to the tab following the number of the outline numbered
+	style that you customize.
+	
+	WORKAROUND
+	==========
+	
+	To work around this problem, use one of the following methods appropriate for
+	your situation.
+	
+	Case 1 Workarounds
+	------------------
+	
+	Method 1: Clear All Tabs BEFORE Applying the Numbering:
+	
+	To do this, follow these steps:
+	
+	1. On the Format menu, click Tabs.
+	
+	2. Click Clear All, and then click OK.
+	
+	3. Apply the numbering.
+	
+	Method 2: Clear All Tabs AFTER Applying the Numbering:
+	
+	To do this, follow these steps:
+	
+	1. Select the Outline Numbered list.
+	
+	2. On the Format menu, click Tabs.
+	
+	3. Click Clear All, and then click OK.
+	
+	NOTE: This is not a permanent resolution. If you make additional changes to
+	promote or demote paragraphs, Word inserts the unwanted tab stops again.
+	
+	Method 3: Use a Macro:
+	
+	Microsoft provides programming examples for illustration only, without warranty
+	either expressed or implied, including, but not limited to, the implied
+	warranties of merchantability and/or fitness for a particular purpose. This
+	article assumes that you are familiar with the programming language being
+	demonstrated and the tools used to create and debug procedures. Microsoft
+	support professionals can help explain the functionality of a particular
+	procedure, but they will not modify these examples to provide added
+	functionality or construct procedures to meet your specific needs. If you have
+	limited programming experience, you may want to contact a Microsoft Certified
+	Partner or the Microsoft fee-based consulting line at (800) 936-5200. For more
+	information about Microsoft Certified Partners, please visit the following
+	Microsoft Web site:
+	
+	  http://www.microsoft.com/partner/referral/
+	
+	For more information about the support options that are available and about how
+	to contact Microsoft, visit the following Microsoft Web site:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	For more information about how to use the sample code in this article, click the
+	article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q173707 OFF97: How to Run Sample Code from Knowledge Base Articles
+	
+	You can use the following Microsoft Visual Basic for Applications sample code to
+	demote or promote levels, and to clear the unwanted tab stops.
+	
+	  Sub ListOutdent()
+	     Selection.Range.ListFormat.ListOutdent
+	     Selection.ParagraphFormat.TabStops.ClearAll
+	     ActiveDocument.DefaultTabStop = InchesToPoints(0.5)
+	  End Sub
+	
+	  Sub ListIndent()
+	     Selection.Range.ListFormat.ListIndent
+	     Selection.ParagraphFormat.TabStops.ClearAll
+	     ActiveDocument.DefaultTabStop = InchesToPoints(0.5)
+	  End Sub
+	
+	Case 2 Workarounds
+	------------------
+	
+	Method 1: Use the Organizer:
+	
+	Copy the new custom style to your template by using the Organizer. To do this,
+	follow these steps:
+	
+	1. On the Format menu, click Style.
+	
+	2. In the Style dialog box, click Organizer.
+	
+	3. On one side of the Styles tab, open your document that contains your custom
+	  style, and on the other side, open the template that you want to copy the
+	  style to.
+	
+	4. On the document side, click to select the style that you want to copy and
+	  click Copy.
+	
+	  Word copies your new custom style to the template that you specified.
+	
+	5. Click Close to close the Organizer dialog box.
+	
+	Method 2: Create the Style in Your Custom Template:
+	
+	Instead of creating your custom style in a Word document and selecting the "Add
+	to template" check box, open your template and create the custom style directly
+	in the template, the same way that you would in a Word document. For more
+	information about how to create a custom style, please see the "More
+	Information" section of this article.
+	
+	Method 3: Set the "Follow number with" Box To Nothing:
+	
+	To prevent the additional tab from being added to your custom Outline Numbered
+	style, set the "Follow number with" box to Nothing. To do this, follow these
+	steps:
+	
+	1. Open your document containing your custom Outline Numbered style.
+	
+	2. On the Format menu, click "Bullets and Numbering".
+	
+	3. In the Style dialog box, click to select your custom style and then click
+	  Modify.
+	
+	4. In the Modify Style dialog box, click Format and then click Numbering.
+	
+	5. On the Outline Numbered tab, your customized outline numbered style should be
+	  selected. Click Customize.
+	
+	6. In the Customize Outline Numbered List dialog box, click to select each
+	  outline level (levels 1 - 9), and click to change the "Follow number with"
+	  box for each level to Nothing.
+	
+	7. Repeat step 6 for each level of your customized outline numbered scheme.
+	
+	8. Click OK to close the Customize Outline Numbered List dialog box.
+	
+	9. In the Modify Style dialog box, click to select the "Add to template" check
+	  box.
+	
+	  NOTE: You do not need to select the "Add to template" check box if you are
+	  changing your customized outline numbered style directly in your custom
+	  template.
+	
+	10. Click OK to close the Modify Style dialog box.
+	
+	11. Click Close to close the Style dialog box.
+	
+	MORE INFORMATION
+	================
+	
+	To create a new custom style containing an Outline Numbered format, follow these
+	steps:
+	
+	1. On the Format menu, click Style.
+	
+	2. In the Style dialog box, click New.
+	
+	3. In the New Style dialog box, type a name for your new style in the Name box.
+	
+	4. Click Format and then click Numbering.
+	
+	5. In the "Bullets and Numbering" dialog box, click to select the Outline
+	  Numbered tab.
+	
+	6. Click to select the type of outline numbering format that you want to use,
+	  and then click Customize.
+	
+	7. In the Customize dialog box, change the format of the outline numbering to
+	  what you want to use and click OK.
+	
+	8. In the New Style dialog box, click Format and then click Tabs.
+	
+	9. In the Tabs dialog box, click Clear All and then click OK.
+	
+	10. Click Format and make any additional formatting changes that you want in
+	  your new custom style.
+	
+	11. In the New Style dialog box, click to select the "Add to template" check box
+	  and then click OK. Selecting the "Add to template" option saves your new
+	  style to your attached template.
+	
+	  NOTE: If you are creating your new custom style directly in your custom
+	  template, you do not need to select the "Add to template" check box.
+	
+	12. Click Close to close the Style dialog box.
+	
+	Additional query words: 8.0 8.00 list multilevel
+	
+	======================================================================
+	Keywords          : kbdta word8 word97 kbnumbering 
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : WINDOWS:97
+	Issue type        : kbprb
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

@@ -1,0 +1,147 @@
+---
+layout: page
+title: "Q185492: Golf 98/99: &quot;Invalid Page Fault&quot; Err Msg or Hang Starting Game"
+permalink: kb/185/Q185492/
+---
+
+## Q185492: Golf 98/99: &quot;Invalid Page Fault&quot; Err Msg or Hang Starting Game
+
+	Article: Q185492
+	Product(s): Microsoft Home Games
+	Version(s): WINDOWS:1.0
+	Operating System(s): 
+	Keyword(s): kbenv kberrmsg kburl kbtlc kbimu msgame golf98kbfaq
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Golf 1998 Edition, version 1.0 
+	- Microsoft Golf 1999 Edition, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you start Microsoft Golf, you may experience one of the following
+	symptoms:
+	
+	- You receive an error message similar to one of the following:
+	
+	  - Golf9<x> caused an invalid page fault in module Findstuff.dll.
+	
+	  - Golf9<x> caused an invalid page fault in module Dibeng.dll.
+	
+	- The program quits unexpectedly.
+	
+	- The program stops responding (hangs) at the startup screen.
+	
+	CAUSE
+	=====
+	
+	This behavior can occur for any of the following reasons:
+	
+	- The display resolution setting is incorrect.
+	
+	- The Color Palette display setting is incorrect.
+	
+	- The monitor setting is incorrect.
+	
+	- One of more of the DirectX files is missing or damaged.
+	
+	- Multiple instances of a device are loaded when you start Windows.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, follow these steps:
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click Display.
+	
+	3. Click the Settings tab.
+	
+	4. In the Color Palette or Colors box, click High Color (16 bit).
+	
+	5. Move the Desktop Area or Screen Area slider to the 800 x 600 setting.
+	
+	6. Click OK. If you are prompted to restart the computer, do so.
+	
+	  NOTE: If you are unable to change the resolution setting to 800 x 600, verify
+	  that the correct monitor is selected and that the monitor supports a
+	  resolution setting of 800 x 600.
+	
+	If the display resolution is 800 x 600 or higher and the color palette is already
+	set to High Color (16-bit) or greater, reinstall the necessary DirectX files. To
+	do this, follow these steps:
+	
+	1. Insert the Golf CD-ROM into the CD-ROM drive. Press and hold down the SHIFT
+	  key when you insert the Golf CD-ROM to prevent Golf from starting
+	  automatically.
+	
+	2. Click Start, and then click Run.
+	
+	3. In the Open box, type the following line and then click OK
+	
+	  <drive>:\
+	
+	  where <drive> is the drive letter of the CD-ROM drive.
+	
+	4. Right-click the DirectX folder, and then click Copy.
+	
+	5. Close the CD-ROM drive window.
+	
+	6. Right-click on the desktop, and then click Paste.
+	
+	7. Restart the computer in Safe mode. To do this, use the appropriate method for
+	  your version of Microsoft Windows:
+	
+	  Microsoft Windows 95
+	  --------------------
+	
+	  Restart the computer. When you see the "Starting Windows 95" message, press
+	  the F8 key, and then choose Safe Mode from the Startup menu.
+	
+	  Microsoft Windows 98
+	  --------------------
+	
+	  Restart the computer, press and hold down the CTRL key after the computer
+	  completes the Power On Self Test (POST), and then choose Safe Mode from the
+	  Startup menu.
+	
+	8. When Windows starts in Safe mode, click OK, and then double-click the DirectX
+	  folder on the desktop.
+	
+	9. Double-click the Dxsetup.exe file, and then follow the instructions on the
+	  screen to reinstall DirectX.
+	
+	10. When you are prompted to restart the computer, click Yes.
+	
+	If the problem continues, download and install the latest version of DirectX from
+	the following Microsoft Web site:
+	
+	  http://www.microsoft.com/directx
+	
+	For more information about how to obtain the latest version of DirectX, please
+	see the following article in the Microsoft Knowledge Base:
+	
+	  Q179113 How to Download and Install DirectX
+	
+	If you continue to receive the error message, verify that no duplicate devices
+	are loaded when you start Windows. For information about how to check for and
+	disable multiple devices, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q187916 Game Stops Responding or Quits Unexpectedly
+	
+	Additional query words: golf98 msgame ghosted dx dx6 direct-x
+	
+	======================================================================
+	Keywords          : kbenv kberrmsg kburl kbtlc kbimu msgame golf98 kbfaq
+	Technology        : kbHomeProdSearch kbGamesSearch kbGolf98 kbGolf99 kbGolfSearch
+	Version           : WINDOWS:1.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

@@ -1,0 +1,276 @@
+---
+layout: page
+title: "Q184686: HOWTO: Disable the Close Option on Control Menu of a VB Form"
+permalink: kb/184/Q184686/
+---
+
+## Q184686: HOWTO: Disable the Close Option on Control Menu of a VB Form
+
+	Article: Q184686
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbGrpDSVB
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	To modify an item in the Visual Basic Control menu (also known as the System
+	menu), you need to use the SetMenuItemInfo API function. This article describes
+	how to enable/disable or check/uncheck the Close menu item in the Control menu.
+	
+	MORE INFORMATION
+	================
+	
+	If you do not want the user to close a window via the Control menu or the Close
+	box on your Form's title bar, you can disable the Close menu item on the Control
+	menu. This method also disables double-clicking the Control box and disables the
+	Close button on the Form's title bar.
+	
+	The following code sample enables/disables and checks/unchecks the Close command
+	in the Visual Basic Control menu.
+	
+	Example
+	-------
+	
+	1. Start a new standard EXE project. Form1 is added by default.
+	
+	2. Add three CommandButtons to Form1.
+	
+	3. Add the following code to Form1:
+	
+	        Option Explicit
+	
+	        'Menu item constants.
+	        Private Const SC_CLOSE       As Long = &HF060&
+	
+	        'SetMenuItemInfo fMask constants.
+	        Private Const MIIM_STATE     As Long = &H1&
+	        Private Const MIIM_ID        As Long = &H2&
+	
+	        'SetMenuItemInfo fState constants.
+	        Private Const MFS_GRAYED     As Long = &H3&
+	        Private Const MFS_CHECKED    As Long = &H8&
+	
+	        'SendMessage constants.
+	        Private Const WM_NCACTIVATE  As Long = &H86
+	
+	        'User-defined Types.
+	        Private Type MENUITEMINFO
+	            cbSize        As Long
+	            fMask         As Long
+	            fType         As Long
+	            fState        As Long
+	            wID           As Long
+	            hSubMenu      As Long
+	            hbmpChecked   As Long
+	            hbmpUnchecked As Long
+	            dwItemData    As Long
+	            dwTypeData    As String
+	            cch           As Long
+	        End Type
+	
+	        'Declarations.
+	        Private Declare Function GetSystemMenu Lib "user32" ( _
+	            ByVal hwnd As Long, ByVal bRevert As Long) As Long
+	
+	        Private Declare Function GetMenuItemInfo Lib "user32" Alias _
+	            "GetMenuItemInfoA" (ByVal hMenu As Long, ByVal un As Long, _
+	            ByVal b As Boolean, lpMenuItemInfo As MENUITEMINFO) As Long
+	
+	        Private Declare Function SetMenuItemInfo Lib "user32" Alias _
+	            "SetMenuItemInfoA" (ByVal hMenu As Long, ByVal un As Long, _
+	            ByVal bool As Boolean, lpcMenuItemInfo As MENUITEMINFO) As Long
+	
+	        Private Declare Function SendMessage Lib "user32" Alias _
+	            "SendMessageA" (ByVal hwnd As Long, ByVal wMsg As Long, _
+	            ByVal wParam As Long, lParam As Any) As Long
+	
+	        'Application-specific constants and variables.
+	        Private Const xSC_CLOSE  As Long = -10
+	        Private Const SwapID     As Long = 1
+	        Private Const ResetID    As Long = 2
+	
+	        Private hMenu  As Long
+	        Private MII    As MENUITEMINFO
+	
+	        Private Sub Command1_Click()
+	            Dim Ret As Long
+	
+	            Ret = SetId(SwapID)
+	            If Ret <> 0 Then
+	
+	                If MII.fState = (MII.fState Or MFS_GRAYED) Then
+	                    MII.fState = MII.fState - MFS_GRAYED
+	                Else
+	                    MII.fState = (MII.fState Or MFS_GRAYED)
+	                End If
+	
+	                MII.fMask = MIIM_STATE
+	                Ret = SetMenuItemInfo(hMenu, MII.wID, False, MII)
+	                If Ret = 0 Then
+	                    Ret = SetId(ResetID)
+	                End If
+	
+	                Ret = SendMessage(Me.hwnd, WM_NCACTIVATE, True, 0)
+	                SetButtons
+	            End If
+	        End Sub
+	
+	        Private Sub Command2_Click()
+	            Dim Ret As Long
+	
+	            If MII.fState = (MII.fState Or MFS_CHECKED) Then
+	                MII.fState = MII.fState - MFS_CHECKED
+	            Else
+	                MII.fState = (MII.fState Or MFS_CHECKED)
+	            End If
+	
+	            MII.fMask = MIIM_STATE
+	            Ret = SetMenuItemInfo(hMenu, MII.wID, False, MII)
+	            SetButtons
+	        End Sub
+	
+	        Private Sub Command3_Click()
+	            Unload Me
+	        End Sub
+	
+	        Private Function SetId(Action As Long) As Long
+	            Dim MenuID As Long
+	            Dim Ret As Long
+	
+	            MenuID = MII.wID
+	            If MII.fState = (MII.fState Or MFS_GRAYED) Then
+	                If Action = SwapID Then
+	                    MII.wID = SC_CLOSE
+	                Else
+	                    MII.wID = xSC_CLOSE
+	                End If
+	            Else
+	                If Action = SwapID Then
+	                    MII.wID = xSC_CLOSE
+	                Else
+	                    MII.wID = SC_CLOSE
+	                End If
+	            End If
+	
+	            MII.fMask = MIIM_ID
+	            Ret = SetMenuItemInfo(hMenu, MenuID, False, MII)
+	            If Ret = 0 Then
+	                MII.wID = MenuID
+	            End If
+	            SetId = Ret
+	        End Function
+	
+	        Private Sub SetButtons()
+	            If MII.fState = (MII.fState Or MFS_GRAYED) Then
+	                Command1.Caption = "Enable"
+	            Else
+	                Command1.Caption = "Disable"
+	            End If
+	            If MII.fState = (MII.fState Or MFS_CHECKED) Then
+	                Command2.Caption = "Uncheck"
+	            Else
+	                Command2.Caption = "Check"
+	            End If
+	        End Sub
+	
+	        Private Sub Form_Load()
+	            Dim Ret As Long
+	
+	            hMenu = GetSystemMenu(Me.hwnd, 0)
+	            MII.cbSize = Len(MII)
+	            MII.dwTypeData = String(80, 0)
+	            MII.cch = Len(MII.dwTypeData)
+	            MII.fMask = MIIM_STATE
+	            MII.wID = SC_CLOSE
+	            Ret = GetMenuItemInfo(hMenu, MII.wID, False, MII)
+	            SetButtons
+	            Command3.Caption = "Exit"
+	        End Sub
+	
+	4. Press the F5 key to run the program.
+	
+	Additional Notes
+	----------------
+	
+	Visual Basic handles enabling and disabling the standard Control menu items,
+	including Restore, Size, Move, Minimize, and Maximize (the Close menu is always
+	enabled). Generally, Visual Basic enables/disables the menu items depending on
+	the window's state (minimized, maximized, or normal) by referencing these menu
+	items by their menu item IDs.
+	
+	As a result, if we merely add or remove MFS_GRAYED from a menu's fState, Visual
+	Basic immediately resets it. The workaround is to change the menu item's ID
+	(which also renders the item inoperable).
+	
+	Using this workaround, we can effectively disable a menu item that Visual Basic
+	intends to be enabled, but we cannot enable a menu item Visual Basic intends to
+	be disabled (the menu item must have its regular ID to be operable).
+	
+	Enabling a menu item that Visual Basic intends to be disabled requires removing
+	the item and replacing it with a menu item of our own (this is not covered in
+	this article).
+	
+	When the Close menu item is enabled or disabled, the Close box on the title bar
+	should also be normal or grayed, respectively. Sending the message WM_NCACTIVATE
+	(nonclient activate) notifies the window to refresh its title bar so the Close
+	box is updated to appear normal or grayed.
+	
+	Additional Constants
+	--------------------
+	
+	     'Menu item constants
+	         Const SC_SIZE         As Long = &HF000&
+	         Const SC_SEPARATOR    As Long = &HF00F&
+	         Const SC_MOVE         As Long = &HF010&
+	         Const SC_MINIMIZE     As Long = &HF020&
+	         Const SC_MAXIMIZE     As Long = &HF030&
+	         Const SC_CLOSE        As Long = &HF060&
+	         Const SC_RESTORE      As Long = &HF120&
+	
+	     'SetMenuItemInfo fMask Constants
+	         Const MIIM_STATE      As Long = &H1&
+	         Const MIIM_ID         As Long = &H2&
+	         Const MIIM_SUBMENU    As Long = &H4&
+	         Const MIIM_CHECKMARKS As Long = &H8&
+	         Const MIIM_TYPE       As Long = &H10&
+	         Const MIIM_DATA       As Long = &H20&
+	
+	
+	Related APIs
+	------------
+	
+	  SetMenuDefaultItem -- You must disable Close to use this in Visual Basic
+	  HiliteMenuItem
+	
+	REFERENCES
+	==========
+	
+	For the 16-bit equivalent, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q82876 : How to Disable Close Command in VB Control Menu (System Menu)
+	
+	Additional query words: kbVBp500 kbVBp400 kbSDKWin32 kbAPI kbMenu kbVBp kbDSupport kbDSD 
+	kbVBp600
+	
+	======================================================================
+	Keywords          : kbGrpDSVB 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

@@ -1,0 +1,125 @@
+---
+layout: page
+title: "Q322603: HOW TO: Enable ASPX Compression in IIS"
+permalink: kb/322/Q322603/
+---
+
+## Q322603: HOW TO: Enable ASPX Compression in IIS
+
+	Article: Q322603
+	Product(s): Internet Information Server
+	Version(s): 5.0
+	Operating System(s): 
+	Keyword(s): kbHOWTOmaster
+	Last Modified: 21-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Services version 5.0 
+	- Microsoft ASP.NET (included with the.NET Framework) 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about editing the metabase. Before you edit the metabase, verify that you have a backup copy that can be restored if a problem occurs. For information about how to do this, view the "Configuration Backup/Restore" Help topic in Microsoft Management Console (MMC).
+	
+	IN THIS TASK
+	------------
+	
+	- SUMMARY
+	
+	   - HTTP Compression
+	- Edit the Metabase
+	
+	- REFERENCES
+	
+	SUMMARY
+	=======
+	
+	This step-by-step article describes how to configure Internet Information
+	Services (IIS) 5.0 to compress .aspx pages. To use .aspx pages, you must have
+	the ASP.NET page framework installed. You add the compression functionality for
+	.aspx files by editing the IIS metabase.
+	
+	HTTP Compression
+	----------------
+	
+	HTTP compression provides faster transmission time between compression-enabled
+	browsers (Microsoft Internet Explorer 5.0 or later) and IIS. You can either
+	compress static files alone, or both static files and applications. If your
+	network bandwidth is restricted, consider HTTP compression, at least for static
+	files, unless your processor utilization is already extremely high.
+	
+	When IIS receives a request, it checks to see if the browser is
+	compression-enabled. IIS then checks the file name extension to see if the
+	requested file is a static file or contains dynamic content. If the file
+	contains static content, IIS checks to see if the file has previously been
+	requested and is already stored in a compressed format in the temporary
+	compression directory. If the file is not stored in a compressed format, IIS
+	sends the uncompressed file to the browser, and adds a compressed copy of the
+	file to the temporary compression directory. If the file is stored in a
+	compressed format, IIS sends the compressed file to the browser. No files are
+	compressed until they have been requested one time by a browser.
+	
+	If the file contains dynamic content, IIS compresses the file as it is generated
+	and sends the compressed file to the browser. No copy of the file is stored.
+	
+	The cost of compressing a static file is modest and is typically incurred only
+	one time, because the file is then stored in the temporary compression
+	directory. The cost of compressing dynamically generated files is a little
+	higher, because they are not stored and must be regenerated with each request.
+	The cost of expanding the file at the browser is minimal. Compressed files
+	download faster, so are particularly beneficial to the performance of any
+	browser that uses a network connection with restricted bandwidth (a modem, for
+	example).
+	
+	Edit the Metabase
+	-----------------
+	
+	WARNING: Editing the metabase incorrectly can cause serious problems that may
+	require you to reinstall any product that uses the metabase. Microsoft cannot
+	guarantee that problems resulting from incorrectly editing the metabase can be
+	solved. Edit the metabase at your own risk.
+	
+	NOTE: You should always back up the metabase before you edit it.
+	
+	To enable IIS 5.0 to compress .aspx pages, follow these steps:
+	
+	1. Open a command prompt.
+	
+	2. Type net stop iisadmin, and then press ENTER.
+	
+	3. Type cd C:\InetPub\adminscripts, and then press ENTER.
+	
+	4. Type the following, and then press ENTER:
+	
+	  CSCRIPT.EXE ADSUTIL.VBS SET
+	  W3Svc/Filters/Compression/GZIP/HcScriptFileExtensions "asp" "dll" "exe"
+	  "aspx"
+	
+	5. Type the following, and then press ENTER:
+	
+	  CSCRIPT.EXE ADSUTIL.VBS SET
+	  W3Svc/Filters/Compression/DEFLATE/HcScriptFileExtensions "asp" "dll" "exe"
+	  "aspx"
+	
+	6. Type net start w3svc, and then press ENTER.
+	
+	REFERENCES
+	==========
+	
+	For more information about compression, see the IIS 5.0 online documentation at
+	the following Microsoft Web site:
+	
+	  http://www.microsoft.com/windows2000/en/server/iis/
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbHOWTOmaster 
+	Technology        : kbiisSearch kbAudDeveloper kbASPsearch kbiis500 kbASPNet
+	Version           : :5.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

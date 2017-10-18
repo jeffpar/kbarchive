@@ -1,0 +1,155 @@
+---
+layout: page
+title: "Q155140: Encarta 96: Contents of the March 1996 Yearbook Update"
+permalink: kb/155/Q155140/
+---
+
+## Q155140: Encarta 96: Contents of the March 1996 Yearbook Update
+
+	Article: Q155140
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): WINDOWS:; :1996 edition
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 24-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Encarta 96 Encyclopedia for Windows 
+	- Microsoft Encarta 96 Encyclopedia for Macintosh 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article lists the features and articles that are included in the March 1996
+	yearbook update for the Encarta Encyclopedia.
+	
+	MORE INFORMATION
+	================
+	
+	The following articles are added to the Encarta Encyclopedia when you integrate
+	the March 1996 yearbook update file:
+	
+	Feature: The American Jury System: Standing in the Way of Justice?
+	
+	Feature: The United States Reveals Its Plutonium Stockpile
+	
+	Academy Awards: Jane Austen Film Adaptation Garners Seven Oscar Nominations
+	
+	Apple Computer Ousts Top Executives
+	
+	Archaeologists Claim to Find Buddha's Birthplace
+	
+	Archaeologists Discover Early Wind-driven Smelters
+	
+	Auto Racing: Jarrett Nips Earnhardt to Win the Daytona 500
+	
+	Bahrain: Unrest Builds as Opposition Presses for Reform
+	
+	Bangladeshi Opposition Groups Boycott General Election
+	
+	Basketball: Bulls Charging Toward New Record
+	
+	Biological Clock Can Be Reset by Indoor Lighting, Study Finds
+	
+	Bosnia: Rome Summit Averts Breakdown of Peace Accord
+	
+	Boxing: Tommy Morrison Suspended After Positive HIV Test
+	
+	Canada: Provincial Elections in Newfoundland and British Columbia
+	
+	Cancer: Low-Fat Diet Does Not Reduce Breast Cancer Risk, Report Finds
+	
+	Cape Verde President Reelected
+	
+	Chess: After Early Stumble, Kasparov Shuts Down Supercomputer
+	
+	Colombian Prosecutor Recommends Charges Against President
+	
+	Corsica: Bombing Breaks Moratorium on Terrorism
+	
+	Cuban-American Activists Shot Down
+	
+	Dancer and Choreographer Gene Kelly Dies
+	
+	Egypt to Open Pyramids at Dahshur After 40 Years
+	
+	Equatorial Guinea: Incumbent President Reelected
+	
+	February Disasters
+	
+	Fish Evolution: Fossil Scales May Identify Oldest Sharklike Fish
+	
+	Football: Pro Franchises in the United States and Canada Play Musical Chairs
+	
+	France: Chirac Announces Plans to Overhaul the French Military
+	
+	France: Parliament Approves Constitutional Budget Amendments
+	
+	Germany's Unemployment Rate Hits Postwar High
+	
+	Great Britain: Government Wins Critical Vote
+	
+	Great Britain: Princess Diana Agrees to Divorce Charles, Prince of Wales
+	
+	Hockey: Wayne Gretzky Traded to St. Louis Blues
+	
+	Iraq: Returning Defectors Killed by Relatives
+	
+	Israel: Suicide Bombings Kill 59 People
+	
+	Italy: Elections Set for April 21
+	
+	Lead Exposure Linked to Delinquent Behavior in Boys
+	
+	Lithuania: Parliament Approves New Prime Minister
+	
+	Louis Farrakhan's World Tour Stirs Concern
+	
+	Mexico Signs First Accord with Zapatista Rebels
+	
+	Nicotine Gum Approved for Over-The-Counter Sales
+	
+	Northern Ireland: Anglo-Irish Summit Sets Start Date for Peace Talks
+	
+	Obesity: No Magic Pill for Losing Weight?
+	
+	Oil Spill Called Great Britain's Worst
+	
+	Oregon Chooses Democratic Senator in Close Mail-In Election
+	
+	Popular Music: Women Artists Honored at Grammy Awards
+	
+	Religion: French Bishops' Report on AIDS Backs Condom Use
+	
+	Religion: Rift Develops in Orthodox Church
+	
+	Republican Presidential Primaries Led by Senate Majority Leader Robert Dole
+	
+	Russia: Yeltsin Announces He Will Seek Reelection
+	
+	South Africa: Courts Rule on First Challenge to Full Integration
+	
+	Spain: Nearly One Million March Against Terrorism
+	
+	Tajikistan's Premier Resigns After Rebels Force Ouster of Top Officials
+	
+	Telecommunications Bill Brings Deregulation, Sweeping Change to Industry
+	
+	United Nations Announces Plans to Cut Staff
+	
+	United States Bureau of Mines Closed
+	
+	Zoology: New Mammal Species Discovered in Philippines
+	
+	Additional query words: 1996 multi media multimedia multi-media mmtitles kbmm yearbook builder
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1996 kbEncartaEnCyc1996Mac
+	Version           : WINDOWS:; :1996 edition
+	
+	=============================================================================
+	

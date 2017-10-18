@@ -1,0 +1,116 @@
+---
+layout: page
+title: "Q241087: SNA Server Stops Responding with Compaq Insight Manager 4.22"
+permalink: kb/241/Q241087/
+---
+
+## Q241087: SNA Server Stops Responding with Compaq Insight Manager 4.22
+
+	Article: Q241087
+	Product(s): Microsoft SNA Server
+	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 12-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 2.0, 2.1, 2.11, 2.11 SP1, 2.11 SP2, 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 3.0 SP4, 4.0, 4.0 SP1, 4.0 SP2 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	After successfully running for a period of time, the SNA Server computer may
+	stop responding. All active sessions may lock up and new sessions may not
+	activate. The response to mouse movements, keyboard entry, and video updates may
+	be slow. This problem is specific to Compaq systems running Compaq Insight
+	Manager 4.22.
+	
+	CAUSE
+	=====
+	
+	The Compaq Insight Manager CQMGHOST service exhibits a memory leak in version
+	4.22.
+	
+	RESOLUTION
+	==========
+	
+	Upgrade to Compaq Insight Manager version 4.23 or later. At this time, 4.30 is
+	the current version.
+	
+	WORKAROUND
+	==========
+	
+	Disable the Compaq Insight Manager Host Agent.
+	
+	To disable the Host Agent component, do the following:
+	
+	1. In Control Panel, click Services, and then choose Insight Agents.
+	
+	2. From the Active Agents list, click to highlight the Host Remote Alerter and
+	  the Host Information components, and then click Remove.
+	
+	3. If you are pointed to "Restart the agents because they have been modified,"
+	  click Yes.
+	
+	STATUS
+	======
+	
+	The third-party products discussed in this article are manufactured by vendors
+	independent of Microsoft; we make no warranty, implied or otherwise, regarding
+	these products' performance or reliability.
+	
+	MORE INFORMATION
+	================
+	
+	Although this issue was observed with Microsoft SNA Server, other applications
+	may be affected as well.
+	
+	This issue is caused by the CQMGHOST service leaking private bytes and handles in
+	Compaq Insight Agent, Host Agent version 4.22.
+	
+	The steps to troubleshoot include the following:
+	
+	1. Start Performance Monitor Log and let the log run for two to three days, long
+	  enough to capture a trend. For additional information, please see the
+	  following article in the Microsoft Knowledge Base:
+	
+	  Q150934 How to Create a Performance Monitor Log for NT Troubleshooting
+	
+	2. When the log has been saved, open Performance Monitor, choose Data From on
+	  the Options menu, and then select the created log.
+	
+	3. Choose Edit , and then select Add to Chart.
+	
+	4. Select the Process Object, all counters, and all instances except idle. The
+	  window will be quite cluttered; however, you can press the Backspace key and
+	  the active counter will be displayed in white.
+	
+	5. Take note to see if one or more lines are trending upwards and never down, or
+	  down and never up.
+	
+	6. Delete counters from the top of the list, moving down until you locate the
+	  counter(s) noted in step 5.
+	
+	In this issue, CQMGHOST climbs rapidly and never goes down, amounting to a 3-MB
+	leak of memory per day.
+	
+	REFERENCES
+	==========
+	
+	- Windows NT Workstation Resource Kit, Chapter 12, Detecting Memory Bottlenecks
+	
+	- Compaq article SP10572
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ200 kbSNAServ211 kbSNAServ400 kbSNAServ210 kbSNAServ211SP1 kbSNAServ211SP2 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ300SP2 kbSNAServ300SP4
+	Version           : WINDOWS:2.0,2.1,2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2
+	Issue type        : kbprb
+	
+	=============================================================================
+	

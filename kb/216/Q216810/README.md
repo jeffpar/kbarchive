@@ -1,0 +1,129 @@
+---
+layout: page
+title: "Q216810: Creating Packages for ODBC Driver for DB2 &amp; OLE DB Provider"
+permalink: kb/216/Q216810/
+---
+
+## Q216810: Creating Packages for ODBC Driver for DB2 &amp; OLE DB Provider
+
+	Article: Q216810
+	Product(s): Microsoft SNA Server
+	Version(s): WINDOWS:4.0 SP2
+	Operating System(s): 
+	Keyword(s): kbinterop
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft OLE DB Provider for DB2, version 4.0 SP2 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The Microsoft ODBC Driver for DB2 and the Microsoft OLE DB Provider for DB2,
+	which are implemented as an IBM Distributed Relational Database Architecture
+	(DRDA) Application Requester, use packages to issue dynamic SQL statements.
+	
+	The driver and the provider will create packages dynamically in the location to
+	which the user points using the Package Collection attribute. If either the user
+	doesn't have the appropriate authority to create packages in designated
+	"location" or the designated location does not exist, the provider or the driver
+	might report the following error:
+	
+	  A SQL error has occurred. Please consult the documentation for your specific
+	  DB2 version for a description of the associated Native Error and SQL State.
+	  SQLSTATE: 51002, SQLCODE: -805.
+	
+	By default, the provider will automatically create one package in the target
+	collection, if one does not exist, at the time the user issues the first SQL
+	statement. The package is created with GRANT EXECUTE authority to a single
+	<AUTH_ID> only, where AUTH_ID is based on the User ID value configured in
+	the data source. The package is created for use by SQL statements issued under
+	the same isolation level based on the Isolation Level value configured in the
+	data source.
+	
+	Some users might specify a Package Collection value that represents a DB2
+	collection used by multiple users. This can be a problem if two or more users
+	with different User IDs try to access a single collection of packages. The first
+	user will have access to the packages, but the second user likely will not. The
+	provider includes a command line utility for the administrator to create
+	packages, called Crtpkg.exe (command line) as well as a graphical user interface
+	version, Crtpkgw.exe (Windows GUI). These utilities can be run using a
+	privileged User ID to create packages in collections accessed by multiple users.
+	These utilities will create five sets of packages and grant EXECUTE privilege to
+	PUBLIC for all:
+	
+	- AUTOCOMMIT package (SNANC001)
+	
+	- READ_UNCOMMITTED package (SNACH001)
+	
+	- REPEATABLE_READ package (SNARR001)
+	
+	- READ_COMMITTED package (SNACS001)
+	
+	- SERIALIZABLE or REPEATABLE_READ package (SNAAL001)
+	
+	The driver/provider binds the right package according to the Default Isolation
+	Level selected: NC, UR, RS, CS, or RR. After they are created, the packages will
+	be listed in the DB2 (Mainframe) SYSIBM.SYSPACKAGE and DB2/400 QSYS.SYSPACKAGE.
+	
+	The following is a successful run of Crtpkg.exe from the command line:
+	
+	  C:\>crtpkg
+	  SNA or IP connection?SNA
+	  SNA configuration
+	  Local LU Alias?LOCAL
+	  Remote LU Name?OLYMPIA
+	  Mode Name?QPCSUPP
+	  User ID? <user_id>
+	  Password?
+	  RDB Name? OLYMPIA
+	  Package Collection? WNWBASE
+	  Default Schema? WNWBASE
+	  Replace existing packages? [Y/N(default)]y
+	  Connecting to the host...
+	  Connection established.
+	  Start package creation process...
+	  Creating AUTOCOMMITTED package...
+	  AUTOCOMMIT package created.
+	  Package creation succeeded.
+	  EXECUTE privilege on SNANC001           granted to PUBLIC
+	  Creating READ_UNCOMMITTED package...
+	  READ_UNCOMMITTED package created.
+	  Package creation succeeded.
+	  EXECUTE privilege on SNACH001           granted to PUBLIC
+	  Creating REPEATABLE_READ package...
+	  REPEATABLE_READ package created.
+	  Package creation succeeded.
+	  EXECUTE privilege on SNARR001           granted to PUBLIC
+	  Creating READ_COMMITTED package...
+	  READ_COMMITTED package created.
+	  Package creation succeeded.
+	  EXECUTE privilege on SNACS001           granted to PUBLIC
+	  Package creation succeeded.
+	  Creating SERIALIZABLE package...
+	  REPEATABLE_READ package created.
+	  Package creation succeeded.
+	  EXECUTE privilege on SNAAL001           granted to PUBLIC
+	  Free statement handles...
+	  Disconnect...
+	  ...complete.
+	  End of package creation.
+	
+	The GUI-based tool, Crtpkgw.exe, will read a Microsoft Data Link (UDL) file for
+	connection configuration information. After selecting the appropriate Data Link
+	file, select Create Package from the menu to create the five packages and grant
+	rights to PUBLIC.
+	
+	Additional query words: AS/400 OS/390 MVS
+	
+	======================================================================
+	Keywords          : kbinterop 
+	Technology        : kbAudDeveloper kbOLEDBSearch kbOLEDBProvDB2400SP2 kbOLEDBProvSearch
+	Version           : WINDOWS:4.0 SP2
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

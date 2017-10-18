@@ -1,0 +1,74 @@
+---
+layout: page
+title: "Q72706: DOCERR: Encoding for LTR Instruction Is Incorrect"
+permalink: kb/072/Q72706/
+---
+
+## Q72706: DOCERR: Encoding for LTR Instruction Is Incorrect
+
+	Article: Q72706
+	Product(s): Microsoft Macro Assembler
+	Version(s): 5.1,5.1a,6.0,6.0a,6.0b
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 06-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Macro Assembler (MASM), versions 5.1, 5.1a, 6.0, 6.0a, 6.0b 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The LTR (load task register) instruction is documented incorrectly in the
+	printed documentation for the Microsoft Macro Assembler (MASM) versions 5.1, and
+	5.1a and the online help for MASM versions 6.0, 6.0a, and 6.0b. The following is
+	the documented encoding:
+	
+	  00001111 00000000 mod,001,r/m
+	
+	However, this is the actual encoding for LTR:
+	
+	  00001111 00000000 mod,011,r/m
+	
+	MORE INFORMATION
+	================
+	
+	If the sample code below is assembled and a source listing is generated, the
+	following encoding is listed:
+	
+	  0000  0F 00 DB              ltr BX
+	  0003  0F 00 1D 00000000 R   ltr task
+	
+	0DBh evaluates to 11011011y, 1Dh evaluates to 00011101y.
+	
+	Sample Code
+	-----------
+	
+	  ; Assemble Options Needed: /c /Fl
+	
+	  .386p
+	  .MODEL small
+	  .STACK 4096
+	
+	  .DATA
+	  task dw ?
+	
+	  .CODE
+	  main PROC
+	     ltr BX
+	     ltr task
+	  main ENDP
+	  END
+	
+	Additional query words: 5.10 5.10a 6.00 6.00a 6.00b
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMASMsearch kbAudDeveloper kbMASM510 kbMASM600 kbMASM600a kbMASM510a kbMASM600b
+	Version           : :5.1,5.1a,6.0,6.0a,6.0b
+	
+	=============================================================================
+	

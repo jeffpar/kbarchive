@@ -1,0 +1,80 @@
+---
+layout: page
+title: "Q273606: SMS Is Slow Enumerating Large Numbers of Packages"
+permalink: kb/273/Q273606/
+---
+
+## Q273606: SMS Is Slow Enumerating Large Numbers of Packages
+
+	Article: Q273606
+	Product(s): Microsoft Systems Management Server
+	Version(s): 2.0
+	Operating System(s): 
+	Keyword(s): kbsms200 kbsms200bug kbsms200fix kbsms200preSP3 kbsms200preSP4fix
+	Last Modified: 24-JUL-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server version 2.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you logged on to a network, created some packages, and then expanded the
+	Packages node in the Microsoft Systems Management Server (SMS) 2.0 Administrator
+	console, your computer system may take an excessive amount of time to return the
+	results.
+	
+	CAUSE
+	=====
+	
+	This behavior can occur if a user with security rights creates many packages.
+	When this user creates a package, a security instance for the package is also
+	created. The addition of this extra instance can cause the user's computer
+	system to decrease the speed at which it can enumerate the packages.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, obtain the latest service pack for Systems Management
+	Server version 2.0. For additional information, click the following article
+	number to view the article in the Microsoft Knowledge Base:
+	
+	  Q288239 SMS: How to Obtain the Latest Systems Management Server 2.0 Service
+	  Pack
+	
+	
+	WORKAROUND
+	==========
+	
+	To work around this behavior, open the Security Rights node in the Administrator
+	console and remove all specific Package Instances for the user who created them.
+	Do not remove the Package (All Instances) Instance for the user, as it can make
+	packages unavailable to the user.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed that this is a problem in the Microsoft products that
+	are listed at the beginning of this article. This problem was first corrected in
+	Systems Management Server 2.0 Service Pack 4.
+	
+	MORE INFORMATION
+	================
+	
+	This behavior may only occur when you are logged on to the same domain where the
+	packages were created.
+	
+	Additional query words: prodsms
+	
+	======================================================================
+	Keywords          : kbsms200 kbsms200bug kbsms200fix kbsms200preSP3 kbsms200preSP4fix 
+	Technology        : kbSMSSearch kbSMS200
+	Version           : :2.0
+	Issue type        : kbbug
+	Solution Type     : kbnofix
+	
+	=============================================================================
+	

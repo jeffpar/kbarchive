@@ -1,0 +1,116 @@
+---
+layout: page
+title: "Q118766: Users Who Belong to More Than 95 Groups Cannot Log On"
+permalink: kb/118/Q118766/
+---
+
+## Q118766: Users Who Belong to More Than 95 Groups Cannot Log On
+
+	Article: Q118766
+	Product(s): Microsoft Windows NT
+	Version(s): 3.1,3.5
+	Operating System(s): 
+	Keyword(s): kbnetwork
+	Last Modified: 06-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server versions 3.1, 3.5 
+	- Microsoft Windows NT Workstation versions 3.1, 3.5 
+	- Microsoft Windows NT Advanced Server, version 3.1 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Any user in a Windows NT domain who is a member of more than 95 global or local
+	groups will experience problems during or after logging on.
+	
+	If such a user attempts to log on from a Windows NT, Windows NT Advanced Server,
+	or Windows for Workgroups machine, the logon attempt will fail.
+	
+	If such a user attempts to log from other types of clients, unusual and
+	misleading errors will be reported while logging on, but the logon attempt will
+	succeed. However, after logging on, misleading errors will be reported when
+	trying to access network resources on Windows NT machines in the domain.
+	
+	MORE INFORMATION
+	================
+	
+	When such a user attempts to log on from a Windows NT machine, the logon will
+	fail, and the following dialog box will be displayed :
+	
+	                  Logon Message
+	    The system cannot log you on (C000015A). Please
+	    try again or consult your system administrator.
+	                      [ OK ]
+	
+	When such a user attempts to log on from Windows for Workgroups 3.11, the logon
+	will fail, and the following dialog box will be displayed :
+	
+	              Windows for Workgroups
+	    The password you specified is incorrect or your
+	    account is inactive. See your network administrator
+	    for the password or to activate your account.
+	                     [ OK ]
+	
+	When such a user attempts to log on from OS/2 or MS-DOS LAN Manager 2.2b clients
+	the log on may succeed, but errors may be reported both during logon and later,
+	when attempts are made to access network resources on Windows NT machines. These
+	errors may include the following :
+	
+	  General Failure Writing Device LPT<x> General Failure Reading Drive
+	  <x>: Cannot reconnect x: to \\<server>\<share> (error 31)
+	  SYS0031 : A device attached to the system is not functioning.
+	
+	CAUSE
+	=====
+	
+	Currently, a Windows NT access token can contain at most 100 Security
+	Identifiers (SIDs). This restriction was imposed to place an upper limit on
+	memory requirements and search times associated with access tokens.
+	
+	Windows NT Security requires an access token to be created for every user who
+	logs on to a Windows NT machine (either locally, by entering a username and
+	password, or remotely, by connecting to a shared resource).
+	
+	Adding a user to 95 or more local or global groups results in more than 100 SIDs
+	being associated with that user, once hidden built-in groups are taken into
+	consideration.
+	
+	Any logon attempt by such a user fails, because the creation of the user's access
+	token fails with error C000015A - the number of SIDs associated with the user
+	exceeds the limit for an access token.
+	
+	
+	WORKAROUND
+	==========
+	
+	To work around this restriction, remove affected users from a number of global
+	or local groups, until they are members of fewer than 95 groups when viewed in
+	User Manager. They will then be able to log on as usual.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Windows NT and Windows NT
+	Advanced Server version 3.1 and Windows NT Workstation and Windows NT Server
+	version 3.5. We are researching this problem and will post new information here
+	in the Microsoft Knowledge Base as it becomes available.
+	
+	
+	REFERENCES
+	==========
+	
+	"Inside Windows NT" by Helen Custer, Section 3.3.1, "Access Tokens"
+	
+	Additional query words: wfw wfwg prodnt winlogon
+	
+	======================================================================
+	Keywords          : kbnetwork 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW310 kbWinNTSsearch kbWinNTS350 kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS350search kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+	Version           : :3.1,3.5
+	
+	=============================================================================
+	

@@ -1,0 +1,90 @@
+---
+layout: page
+title: "Q76199: Using Quarterdeck's BUFFERS.COM With MS-DOS 4.0 and Later"
+permalink: kb/076/Q76199/
+---
+
+## Q76199: Using Quarterdeck's BUFFERS.COM With MS-DOS 4.0 and Later
+
+	Article: Q76199
+	Product(s): Microsoft Disk Operating System
+	Version(s): MS-DOS:4.0,4.01,4.01a,5.0,5.0a
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 23-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft MS-DOS operating system versions 4.0, 4.01, 4.01a, 5.0, 5.0a 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Using the BUFFERS.COM utility from any version Quarterdeck expanded memory
+	manager 386 (QEMM386) before 6.0 with MS-DOS version 4.0 or later will trigger
+	the following error message:
+	
+	  BUFFERS requires DOS version 2 or 3 to run
+	
+	Support for MS-DOS version 5.0 was added in the 6.0 release of QEMM386.
+	BUFFERS.COM continues to be incompatible with MS-DOS versions 4.00, 4.01 and
+	4.01a.
+	
+	MORE INFORMATION
+	================
+	
+	Look-ahead buffers, introduced in MS-DOS 4.0, allow multiple sector processing
+	when sequential data is read from or written to a disk. Quarterdeck BUFFERS.COM
+	does not support this format.
+	
+	BUFFERS.COM, prior to QEMM version 6.0, is designed to allow users with QEMM and
+	MS-DOS versions earlier than 4.0 to load system buffers out of conventional
+	memory with the following line in the AUTOEXEC.BAT file:
+	
+	     loadhi buffers=##
+	
+	This loads the disk buffers into High RAM, also known as Upper Memory Blocks.
+	Buffers created with BUFFERS.COM are in addition to buffers allocated via the
+	BUFFERS= statement in CONFIG.SYS.
+	
+	With the 6.0 release of QEMM, support for MS-DOS 5.0 was added to BUFFERS.COM and
+	buffers can be loaded high through the AUTOEXEC.BAT in the manner listed above.
+	However, there is less need to use BUFFERS.COM with MS-DOS 5.0 as up to 48 disk
+	buffers can be loaded into the high memory area (HMA) when MS-DOS is loaded
+	high. For example, the following lines in the CONFIG.SYS file will allocate 20
+	buffers which load with MS-DOS into the HMA:
+	
+	     device=c:\qemm\qemm386.sys
+	     dos=high
+	     buffers=20
+	
+	If more than 48 buffers are in specified using BUFFERS=, all of the buffers
+	allocated by BUFFERS= will be loaded into conventional memory.
+	
+	Although all versions of BUFFERS.COM continue to be incompatible with MS-DOS
+	versions 4.0, 4.01, and 4.01a, buffers can be loaded into expanded memory (when
+	present) by adding /X to the end of the buffers line in the CONFIG.SYS file. For
+	example, the line below loads 20 disk buffers into expanded memory:
+	
+	     buffers=20 /x
+	
+	The product included here is manufactured by vendors independent of Microsoft; we
+	make no warranty, implied or otherwise, regarding this product's performance or
+	reliability.
+	
+	Reference(s):
+	
+	"Quarterdeck expanded memory manager 386," version 5.0 pages 43-44. "Quarterdeck
+	expanded memory manager 386," version 6.0 page 67.
+	
+	Additional query words: 4.00 4.01 4.01a 5.00 5.00a
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMSDOSSearch kbMSDOS400 kbMSDOS500 kbMSDOS401 kbMSDOS500a
+	Version           : MS-DOS:4.0,4.01,4.01a,5.0,5.0a
+	
+	=============================================================================
+	

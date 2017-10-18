@@ -1,0 +1,363 @@
+---
+layout: page
+title: "Q150445: Windows 95 Service Pack 1 Floppy Disk Directory Listing"
+permalink: kb/150/Q150445/
+---
+
+## Q150445: Windows 95 Service Pack 1 Floppy Disk Directory Listing
+
+	Article: Q150445
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): 95
+	Operating System(s): 
+	Keyword(s): win95
+	Last Modified: 17-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 95 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article lists the directory contents of the Microsoft Windows 95 Service
+	Pack 1 floppy disks and the contents of the compressed files on the disks.
+	
+	MORE INFORMATION
+	================
+	
+	Disk 1
+	------
+	
+	LICENSE  TXT        12,922  12-31-95 9:50a license.txt
+	README   TXT        11,228  12-31-95 9:50a Readme.txt
+	SERVPACK DOC        26,624  12-31-95 9:50a servpack.doc
+	SETUP    EXE     1,264,640  12-31-95 9:50a setup.exe
+	        4 file(s)      1,315,414 bytes
+	
+	Disk 2
+	------
+	
+	ADMIN          <DIR>        02-15-96  8:59a ADMIN
+	INTERNET       <DIR>        02-15-96  8:59a INTERNET
+	        0 file(s)              0 bytes
+	
+	Contents of the Admin Folder:
+	
+	ADMIN    DOC        84,992  12-31-95 9:50a admin.doc
+	        1 file(s)         84,992 bytes
+	
+	Contents of the Internet Folder
+	
+	MSIE20   EXE     1,194,496  12-31-95 9:50a msie20.exe
+	        1 file(s)      1,194,496 bytes
+	
+	Disk 3
+	------
+	
+	ADMIN    BAT         5,817  12-31-95 9:50a admin.bat
+	DISK3    EXE     1,282,257  12-31-95 9:50a DISK3.EXE
+	        2 file(s)      1,288,074 bytes
+	
+	Contents of the Disk3.exe File:
+	
+	SCRIPT   EXE       156,672  12-31-95  9:50a SCRIPT.EXE
+	CIS      SCP           733  12-31-95  9:50a CIS.SCP
+	PPPMENU  SCP         2,815  12-31-95  9:50a PPPMENU.SCP
+	RNAPLUS  INF         7,442  12-31-95  9:50a RNAPLUS.INF
+	SCRIPT   DOC        30,208  12-31-95  9:50a SCRIPT.DOC
+	SCRIPTER EXE        20,480  12-31-95  9:50a SCRIPTER.EXE
+	SCRIPTER HLP        13,054  12-31-95  9:50a SCRIPTER.HLP
+	SLIP     SCP         2,375  12-31-95  9:50a SLIP.SCP
+	SLIPMENU SCP         2,813  12-31-95  9:50a SLIPMENU.SCP
+	SMMSCRPT DLL        47,616  12-31-95  9:50a SMMSCRPT.DLL
+	SMMSETUP DLL         5,632  12-31-95  9:50a SMMSETUP.DLL
+	ACT200L  VXD         7,195  12-31-95  9:50a ACT200L.VXD
+	ACT220L  VXD         6,175  12-31-95  9:50a ACT220L.VXD
+	ADAPTEC  VXD         7,195  12-31-95  9:50a ADAPTEC.VXD
+	CRYSTAL  VXD         7,195  12-31-95  9:50a CRYSTAL.VXD
+	ESI      VXD         6,151  12-31-95  9:50a ESI.VXD
+	INFRARED CNT         1,823  12-31-95  9:50a INFRARED.CNT
+	INFRARED CPL         7,168  12-31-95  9:50a INFRARED.CPL
+	INFRARED DLL        27,344  12-31-95  9:50a INFRARED.DLL
+	INFRARED HLP        36,184  12-31-95  9:50a INFRARED.HLP
+	INFRARED INF         7,447  12-31-95  9:50a INFRARED.INF
+	IRCOMM   VXD        32,387  12-31-95  9:50a IRCOMM.VXD
+	IRENUM   VXD        22,689  12-31-95  9:50a IRENUM.VXD
+	IRLAMP   VXD        67,607  12-31-95  9:50a IRLAMP.VXD
+	IRLAPFRM VXD        14,413  12-31-95  9:50a IRLAPFRM.VXD
+	IRMON    EXE       115,712  12-31-95  9:50a IRMON.EXE
+	IRMONHLP EXE         3,717  12-31-95  9:50a IRMONHLP.EXE
+	IR_BEGIN WAV        15,906  12-31-95  9:50a IR_BEGIN.WAV
+	IR_END   WAV        42,728  12-31-95  9:50a IR_END.WAV
+	IR_INTER WAV        75,508  12-31-95  9:50a IR_INTER.WAV
+	LICENSE  TXT        15,230  12-31-95  9:50a LICENSE.TXT
+	MSPORTS  INF         9,520  12-31-95  9:50a MSPORTS.INF
+	PARALLAX VXD         6,181  12-31-95  9:50a PARALLAX.VXD
+	RELNOTES DOC        56,320  12-31-95  9:50a RELNOTES.DOC
+	SETUP    EXE         4,259  12-31-95  9:50a SETUP.EXE
+	W_IR     CNT         1,611  12-31-95  9:50a W_IR.CNT
+	DLC      VXD       241,542  12-31-95  9:50a DLC.VXD
+	DLC32    CNT         1,413  12-31-95  9:50a DLC32.CNT
+	DLC32    HLP        34,182  12-31-95  9:50a DLC32.HLP
+	DLCAPI   DLL        83,840  12-31-95  9:50a DLCAPI.DLL
+	DLCHLP   EXE           797  12-31-95  9:50a DLCHLP.EXE
+	DLCNDI   DLL         2,474  12-31-95  9:50a DLCNDI.DLL
+	NETDLC32 INF        12,645  12-31-95  9:50a NETDLC32.INF
+	NETDLC32 SBS        12,422  12-31-95  9:50a NETDLC32.SBS
+	README   DOC        13,312  12-31-95  9:50a README.DOC
+	TRCDLC   EXE        92,284  12-31-95  9:50a TRCDLC.EXE
+	IFSMGR   VXD       165,057  12-31-95  9:50a IFSMGR.VXD
+	MAPLE    ADM         4,222  12-31-95  9:50a MAPLE.ADM
+	MSNDS    CNT         1,188  12-31-95  9:50a MSNDS.CNT
+	MSNDS    HLP        45,001  12-31-95  9:50a MSNDS.HLP
+	NDSBATCH TXT         1,630  12-31-95  9:50a NDSBATCH.TXT
+	NDSCLI   INF        12,137  12-31-95  9:50a NDSCLI.INF
+	NDSCLI   SBS        12,349  12-31-95  9:50a NDSCLI.SBS
+	NDSNP    HLP        17,357  12-31-95  9:50a NDSNP.HLP
+	NDSPP    NW4        41,984  12-31-95  9:50a NDSPP.NW4
+	NETWARE  NW4         3,216  12-31-95  9:50a NETWARE.NW4
+	NWAPI32  NW4        31,744  12-31-95  9:50a NWAPI32.NW4
+	NWLSPROC NW4        84,480  12-31-95  9:50a NWLSPROC.NW4
+	NWNDS    DLL         7,424  12-31-95  9:50a NWNDS.DLL
+	NWNP32   NW4       138,752  12-31-95  9:50a NWNP32.NW4
+	NWREDIR  NW4       174,594  12-31-95  9:50a NWREDIR.NW4
+	README   TXT         8,014  12-31-95  9:50a README.TXT
+	_NWNDS   BAT           366  12-31-95  9:50a _NWNDS.BAT
+	COMDLG32 DLL        92,672  12-31-95  9:50a COMDLG32.DLL
+	EXCHNG32 EXE        20,240  12-31-95  9:50a EXCHNG32.EXE
+	LPT      VXD        35,487  12-31-95  9:50a LPT.VXD
+	MAPI     DLL       441,536  12-31-95  9:50a MAPI.DLL
+	QFECHECK EXE        36,352  12-31-95  9:50a QFECHECK.EXE
+	       68 file(s)      2,758,218 bytes
+	
+	Disk 4
+	------
+	
+	ADMIN    BAT         5,817  12-31-95 9:50a admin.bat
+	DISK4    EXE     1,230,384  12-31-95 9:50a DISK4.EXE
+	        2 file(s)      1,236,201 bytes
+	
+	Contents of the Disk4.exe File:
+	
+	MSFS32   DLL       463,360  12-31-95  9:50a MSFS32.DLL
+	MSPWL32  DLL        21,504  12-31-95  9:50a MSPWL32.DLL
+	NWSERVER VXD       130,620  12-31-95  9:50a NWSERVER.VXD
+	OLE32    DLL       558,704  12-31-95  9:50a OLE32.DLL
+	SAGE     DLL        69,120  12-31-95  9:50a SAGE.DLL
+	SCLNTUPD EXE       279,552  12-31-95  9:50a SCLNTUPD.EXE
+	UPDATES1 INF         5,292  12-31-95  9:50a UPDATES1.INF
+	VREDIR   VXD       140,367  12-31-95  9:50a VREDIR.VXD
+	VSERVER  VXD       108,288  12-31-95  9:50a VSERVER.VXD
+	WGPOADMN DLL        81,168  12-31-95  9:50a WGPOADMN.DLL
+	NET      EXE       375,930  12-31-95  9:50a NET.EXE
+	QFECHECK HLP         8,042  12-31-95  9:50a QFECHECK.HLP
+	INSTALL  TXT         5,262  12-31-95  9:50a INSTALL.TXT
+	LICENSE  TXT         5,044  12-31-95  9:50a LICENSE.TXT
+	MAPISVC  INF         5,266  12-31-95  9:50a MAPISVC.INF
+	INFINST  EXE        50,496  12-31-95  9:50a INFINST.EXE
+	INFINST  TXT         1,130  12-31-95  9:50a INFINST.TXT
+	       17 file(s)      2,309,145 bytes
+	
+	Disk 5
+	------
+	
+	ADMIN    BAT         5,817  12-31-95 9:50a admin.bat
+	DISK5    EXE     1,140,379  12-31-95 9:50a DISK5.EXE
+	        2 file(s)      1,146,196 bytes
+	
+	Contents of the Disk5.exe File:
+	
+	VIEWER71 1       1,124,864  12-31-95  9:50a VIEWER71.1
+	        1 file(s)      1,124,864 bytes
+	
+	Disk 6
+	------
+	
+	ADMIN    BAT         5,817  12-31-95 9:50a admin.bat
+	DISK6    EXE     1,359,895  12-31-95 9:50a DISK6.EXE
+	        2 file(s)      1,365,712 bytes
+	
+	Contents of the Disk6.exe File:
+	
+	WMSUI32  DLL       862,480  12-31-95  9:50a WMSUI32.DLL
+	FLOPPY71 INF         2,640  12-31-95  9:50a FLOPPY71.INF
+	APPNOTE  TXT         6,177  12-31-95  9:50a APPNOTE.TXT
+	ASSIST   CN_         9,406  12-31-95  9:50a ASSIST.CN_
+	ASSIST   HL_       569,300  12-31-95  9:50a ASSIST.HL_
+	ASSIST   IC_           411  12-31-95  9:50a ASSIST.IC_
+	HCL95    HL_       283,636  12-31-95  9:50a HCL95.HL_
+	README   TX_         1,067  12-31-95  9:50a README.TX_
+	SETUP    LST            42  12-31-95  9:50a SETUP.LST
+	SETUP1   EX_        17,563  12-31-95  9:50a SETUP1.EX_
+	SETUPKIT DL_         3,657  12-31-95  9:50a SETUPKIT.DL_
+	BATCH    EX_       107,607  12-31-95  9:50a BATCH.EX_
+	       12 file(s)      1,863,986 bytes
+	
+	Disk 7
+	------
+	
+	ADMIN    BAT         5,817  12-31-95 9:50a admin.bat
+	DISK7    EXE     1,325,553  12-31-95 9:50a DISK7.EXE
+	        2 file(s)      1,331,370 bytes
+	
+	Contents of the Disk7.exe File:
+	
+	SETUP    EXE        19,056  12-31-95  9:50a SETUP.EXE
+	VBRUN300 DL_       276,684  12-31-95  9:50a VBRUN300.DL_
+	VER      DL_         9,696  12-31-95  9:50a VER.DL_
+	WIN95APP HL_       204,720  12-31-95  9:50a WIN95APP.HL_
+	BATCH    HL_        38,068  12-31-95  9:50a BATCH.HL_
+	COMCTL32 OC_       164,534  12-31-95  9:50a COMCTL32.OC_
+	TABCTL32 OC_        70,316  12-31-95  9:50a TABCTL32.OC_
+	CTL3D32  DL_        15,385  12-31-95  9:50a CTL3D32.DL_
+	MFC40    DL_       546,469  12-31-95  9:50a MFC40.DL_
+	README   TXT         3,340  12-31-95  9:50a README.TXT
+	       10 file(s)      1,348,268 bytes
+	
+	Disk 8
+	------
+	
+	ADMIN    BAT         5,817  12-31-95 9:50a admin.bat
+	DISK8    EXE     1,348,892  12-31-95 9:50a DISK8.EXE
+	        2 file(s)      1,354,709 bytes
+	
+	Contents of the Disk8.exe File:
+	
+	EXCHUPD  EXE     1,324,032  12-31-95  9:50a EXCHUPD.EXE
+	ST4UNST  EX_        32,997  12-31-95  9:50a ST4UNST.EX_
+	COMDLG32 OC_        47,239  12-31-95  9:50a COMDLG32.OC_
+	        3 file(s)      1,404,268 bytes
+	
+	Disk 9
+	------
+	
+	ADMIN    BAT         5,817  12-31-95 9:50a admin.bat
+	DISK9    EXE     1,326,051  12-31-95 9:50a DISK9.EXE
+	        2 file(s)      1,331,868 bytes
+	
+	Contents of the Disk9.exe File:
+	
+	SETUP    EXE     1,264,640  12-31-95  9:50a SETUP.EXE
+	OLEPRO32 DL_        45,487  12-31-95  9:50a OLEPRO32.DL_
+	OPTIONAL IN_           981  12-31-95  9:50a OPTIONAL.IN_
+	README   TX_         1,780  12-31-95  9:50a README.TX_
+	SETUP    LST         7,267  12-31-95  9:50a SETUP.LST
+	STKIT432 DL_        12,439  12-31-95  9:50a STKIT432.DL_
+	SYSINFO  OC_        14,668  12-31-95  9:50a SYSINFO.OC_
+	VEN2232  OL_        23,635  12-31-95  9:50a VEN2232.OL_
+	INFGNDOC DOC        51,200  12-31-95  9:50a INFGNDOC.DOC
+	        9 file(s)      1,422,097 bytes
+	
+	Disk 10
+	-------
+	
+	ADMIN    BAT         5,817  12-31-95 9:50a admin.bat
+	DISK10   EXE     1,244,125  12-31-95 9:50a DISK10.EXE
+	        2 file(s)      1,249,942 bytes
+	
+	Contents of the Disk10.exe File:
+	
+	SP1UPD   EXE     1,264,128  12-31-95  9:50a SP1UPD.EXE
+	OPTIONS  DAT         1,524  12-31-95  9:50a OPTIONS.DAT
+	README   TXT           522  12-31-95  9:50a README.TXT
+	USER     INF            33  12-31-95  9:50a USER.INF
+	APPS     INI           230  12-31-95  9:50a APPS.INI
+	CLEANUP  INF         1,616  12-31-95  9:50a CLEANUP.INF
+	DEL_MAIL INF           359  12-31-95  9:50a DEL_MAIL.INF
+	DEL_MSN  INF           237  12-31-95  9:50a DEL_MSN.INF
+	NETUI0   DLL        63,488  12-31-95  9:50a NETUI0.DLL
+	        9 file(s)      1,332,137 bytes
+	
+	Disk 11
+	-------
+	
+	ADMIN    BAT         5,817  12-31-95 9:50a admin.bat
+	DISK11   EXE     1,358,393  12-31-95 9:50a DISK11.EXE
+	        2 file(s)      1,364,210 bytes
+	
+	Contents of the Disk11.exe File:
+	
+	MSIE20   EXE     1,194,496  12-31-95  9:50a MSIE20.EXE
+	RADMIN32 DLL       462,848  12-31-95  9:50a RADMIN32.DLL
+	PRTQ32   DLL         8,704  12-31-95  9:50a PRTQ32.DLL
+	RLOCAL32 DLL         9,728  12-31-95  9:50a RLOCAL32.DLL
+	RSHX32   DLL        14,848  12-31-95  9:50a RSHX32.DLL
+	        5 file(s)      1,690,624 bytes
+	
+	Disk 12
+	-------
+	
+	ADMIN    BAT         5,817  12-31-95 9:50a admin.bat
+	DISK12   EXE     1,096,025  12-31-95 9:50a DISK12.EXE
+	        2 file(s)      1,101,842 bytes
+	
+	Contents of the Disk12.exe File:
+	
+	NETUI2   DLL       293,888  12-31-95  9:50a NETUI2.DLL
+	NTLANUI  DLL        46,592  12-31-95  9:50a NTLANUI.DLL
+	SRVMGR   EXE       194,560  12-31-95  9:50a SRVMGR.EXE
+	SRVMGR   HLP       123,592  12-31-95  9:50a SRVMGR.HLP
+	USRMGR   HLP       130,912  12-31-95  9:50a USRMGR.HLP
+	README   TXT           788  12-31-95  9:50a README.TXT
+	WIN95SP1 PDF         1,001  12-31-95  9:50a WIN95SP1.PDF
+	SHELL32  DLL       817,664  12-31-95  9:50a SHELL32.DLL
+	MAPI32   DLL       602,320  12-31-95  9:50a MAPI32.DLL
+	INFGEN2  EXE        55,344  12-31-95  9:50a INFGEN2.EXE
+	SETUP    INI           149  12-31-95  9:50a SETUP.INI
+	SETUP    LST         1,136  12-31-95  9:50a SETUP.LST
+	SETUP    TDF            84  12-31-95  9:50a SETUP.TDF
+	       13 file(s)      2,268,030 bytes
+	
+	Disk 13
+	-------
+	
+	ADMIN    BAT         5,817  12-31-95 9:50a admin.bat
+	DISK13   EXE     1,341,181  12-31-95 9:50a DISK13.EXE
+	        2 file(s)      1,346,998 bytes
+	
+	Contents of the Disk13.exe File:
+	
+	ACLEDIT  DLL       118,272  12-31-95  9:50a ACLEDIT.DLL
+	INFGEN   EXE        93,184  12-31-95  9:50a INFGEN.EXE
+	SETUP132 EX_        68,972  12-31-95  9:50a SETUP132.EX_
+	SETUP    EXE        58,880  12-31-95  9:50a SETUP.EXE
+	MSVCRT40 DL_       184,511  12-31-95  9:50a MSVCRT40.DL_
+	MSVCRT20 DL_       154,564  12-31-95  9:50a MSVCRT20.DL_
+	VB40032  DL_       471,576  12-31-95  9:50a VB40032.DL_
+	NETUI1   DLL       226,816  12-31-95  9:50a NETUI1.DLL
+	NETMSG   DLL        77,824  12-31-95  9:50a NETMSG.DLL
+	EVENTVWR EXE       110,592  12-31-95  9:50a EVENTVWR.EXE
+	EVENTVWR HLP        38,953  12-31-95  9:50a EVENTVWR.HLP
+	PRTMAN   HLP        43,277  12-31-95  9:50a PRTMAN.HLP
+	ACLEDT32 HLP        67,804  12-31-95  9:50a ACLEDT32.HLP
+	USRMGR   EXE       258,560  12-31-95  9:50a USRMGR.EXE
+	SRVTOOLS INF         5,649  12-31-95  9:50a SRVTOOLS.INF
+	SRVTOOLS TXT         8,093  12-31-95  9:50a SRVTOOLS.TXT
+	SRVTOOLS HLP         6,067  12-31-95  9:50a SRVTOOLS.HLP
+	SRVTOOLS CNT           526  12-31-95  9:50a SRVTOOLS.CNT
+	       18 file(s)      1,994,120 bytes
+	
+	Disk 14
+	-------
+	
+	ADMIN    BAT         5,817  12-31-95 9:50a admin.bat
+	DISK14   EXE       996,580  12-31-95 9:50a DISK14.EXE
+	        2 file(s)      1,002,397 bytes
+	
+	Contents of the Disk14.exe File:
+	
+	VIEWER71 2         981,065  12-31-95  9:50a VIEWER71.2
+	        1 file(s)        981,065 bytes
+	
+	Additional query words: dirwin dirwin95
+	
+	======================================================================
+	Keywords          : win95 
+	Technology        : kbWin95search kbZNotKeyword3
+	Version           : 95
+	
+	=============================================================================
+	

@@ -1,0 +1,251 @@
+---
+layout: page
+title: "Q183684: Directory Service Manager for NetWare (DSMN) - An Overview"
+permalink: kb/183/Q183684/
+---
+
+## Q183684: Directory Service Manager for NetWare (DSMN) - An Overview
+
+	Article: Q183684
+	Product(s): Microsoft Windows NT
+	Version(s): winnt:3.51,4.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 09-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server versions 3.51, 4.0 
+	- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article discusses how to use the Microsoft Directory Service Manager for
+	NetWare (DSMN) to synchronize user accounts between your Windows NT server and
+	one or more Novell NetWare servers.
+	
+	With NetWare 2.x and 3.x servers, any changes made to user and/or group accounts
+	must be made at each individual server. If there are multiple NetWare servers,
+	changes must be made manually for each of these servers. DSMN allows changes
+	made to domain user accounts to be replicated automatically to all NetWare
+	servers being managed by your Windows NT server.
+	
+	MORE INFORMATION
+	================
+	
+	DSMN extends the Windows NT Server directory service features for user and group
+	account management to NetWare servers. With DSMN, you may centrally manage user
+	and group accounts that have access to servers running Windows NT Server and
+	Novell NetWare servers. Each user has a single password to access multiple
+	servers running either Novell or Windows NT. This password stays synchronized
+	for all servers.
+	
+	With DSMN, you can add NetWare servers to be managed with Windows NT Server
+	domains. A domain is a group of several serves that share a single set of user
+	and group accounts.
+	
+	NOTE: DSMN does not require you to install any new software on your NetWare
+	servers or NetWare clients.
+	
+	Adding a NetWare Server for Management
+	--------------------------------------
+	
+	To add a NetWare server to be managed, use these steps:
+	
+	1. Click Start, point to Programs, point to Administrative Tools, and then click
+	  Directory Service Manager for NetWare.
+	
+	2. Select NetWare Server from the list at the top of the dialog box, and then
+	  select Add Server to Manage from the dropdown menu.
+	
+	  NOTE: The Select NetWare Server dialog box will then appear containing a list
+	  of all NetWare servers available.
+	
+	3. Select a NetWare server to add to the domain.
+	
+	  NOTE: You must provide a username and password that has NetWare Supervisor or
+	  Supervisor Equivalency to log on to the NetWare server.
+	
+	4. Select the user and group accounts for the domain to manage. Any or all user
+	  and group accounts may be selected.
+	
+	NOTE: When a NetWare server is added to a domain for management, the NetWare user
+	and group accounts are moved to the Windows NT domain.
+	
+	If only some of the users and groups are moved to the domain, choose whether to
+	delete or retain the remaining users and groups on the NetWare server. If these
+	accounts are retained, you will need to administer these accounts using NetWare
+	administrative tools. Do not use NetWare administrative tools, such as Syscon,
+	on accounts managed by DSMN to prevent those accounts from becoming
+	unsynchronized with the accounts in the domain.
+	
+	You may propagate up to 2,000 accounts to the NetWare server. It is suggested
+	that you choose only the group containing users that actually need access to the
+	NetWare server. Groups containing users who only use Windows NT server do not
+	need to be copied. You may modify the list of groups that the Windows NT server
+	domain propagates to the NetWare server any time after adding the NetWare server
+	to the domain.
+	
+	The next time the primary domain controller (PDC) updates its backup domain
+	controller (BDC), the accounts of all the users and groups copied to the domain
+	from the NetWare server are replicated to the BDC.
+	
+	Administering NetWare Servers as Part of a Domain
+	-------------------------------------------------
+	
+	After the NetWare server(s) are added for management with a domain and you have
+	specified NetWare accounts to be maintained by the domain, use User Manager for
+	Domains to administer those accounts. Changes you make are copied automatically
+	to the NetWare server(s).
+	
+	If the NetWare tools are used to modify one of those accounts directly on the
+	NetWare server, the account will become unsynchronized with the Windows NT
+	domain. To make the account identical to the version on the PDC, always use User
+	Manager for Domains to modify the domain account, causing it to be propagated to
+	the NetWare server(s).
+	
+	Similarly, to add a new user account to access the NetWare server(s), add it
+	directly to the domain using User Manager for Domains. You must be certain that
+	the account is NetWare-enabled. A NetWare-enabled account is an account that can
+	be propagated from the Windows NT domain to the NetWare server(s) and can log on
+	from the NetWare client computers. To make an account NetWare-enabled, select
+	the Maintain NetWare Compatible Login checkbox in the user account properties.
+	After an account is propagated to the NetWare server, all subsequent changes to
+	the account are automatically copied to the NetWare server(s).
+	
+	A NetWare client user must use the Chgpass.exe utility included with DSMN to
+	change his/her password. The Chgpass.exe utility implements the new password on
+	all NetWare servers to which the account is propagated, as well as on all
+	Windows NT domains. Using a NetWare utility to change a password changes it only
+	on the NetWare servers to which the user is currently attached and the password
+	becomes unsynchronized with the user's password on the other server(s).
+	
+	To add NetWare server(s) to domains, specify which Windows NT server group to
+	propagate to NetWare server(s), and perform all other tasks to administer the
+	association of NetWare server(s) and Windows NT domains, use the DSMN
+	Synchronization Manager tool.
+	
+	NOTE: After adding a NetWare server to a domain, you still use NetWare
+	administrative tools to manage functions on the NetWare server other than user
+	account management. This is to include shared volumes, file permissions, trustee
+	rights, accounting, and printing.
+	
+	A NetWare server can participate in only one Windows NT domain. Once a NetWare
+	server has been added for management with a domain, you cannot add it to another
+	domain without removing it from the first domain.
+	
+	Adding Multiple NetWare Servers to a Domain
+	-------------------------------------------
+	
+	Multiple NetWare servers can be added to a single Windows NT domain. To ensure
+	good performance, it is recommended that no more than 32 NetWare server be added
+	to any one Windows NT domain. For performance reasons, if you have more than 32
+	NetWare servers to add to domains, divide the NetWare servers into smaller
+	groups and add each group to a different domain.
+	
+	When dividing NetWare servers into groups, consider what servers need to be used
+	by the same people. It is best if all the servers used by a particular group of
+	users are in the same domain. Then you can put that group of servers and users
+	into a single domain.
+	
+	When each NetWare server is added, you specify which NetWare users and groups to
+	transfer from that server to the domain. The security accounts manager (SAM) for
+	the domain then contains a sum of all the users and groups that you copied from
+	each NetWare server, plus the users and groups created directly in the Windows
+	NT domain.
+	
+	The list of users and groups being propagated may differ for each NetWare server
+	participating in the domain. If a NetWare user needs access only to a specific
+	NetWare server(s), then you can propagate the user's account to only those
+	server(s). This enables you to minimize network traffic, making DSMN more
+	efficient.
+	
+	For example, suppose that members of the ACCNT group need access to NetWare
+	servers NW1 and NW3, while members of SALES need access only to NW1. When you
+	specify which group to propagate to NW1, you select both ACCNT and SALES. When
+	you specify the users to propagate to NW3, you select only ACCNT.
+	
+	How to Handle Identical User Names
+	----------------------------------
+	
+	If you add multiple NetWare servers to be managed by the same domain, and each of
+	those servers has a user or group account with identical names, the accounts are
+	basically merged into the same account in the domain.
+	
+	For example, suppose that there is a JOHND account on both the NetWare servers
+	NW1 and NW3. When NW1 is added for management with the domain, a JOHNC account
+	is created in the Windows NT domain. Further, that Windows NT account is given
+	all rights and permissions on NW1 that the JOHNC NetWare account had. Then, when
+	NW3 is added to the domain, DSMN recognizes that JOHNC already has an account in
+	the domain, and gives the account the rights and permissions of the NW3 JOHND
+	account. The domain's JOHND account then has all rights and permissions that
+	were previously assigned to both the NW1 and NW3 JOHND accounts.
+	
+	DSMN can also merge user accounts on multiple NetWare servers into a single
+	account in the domain, with all the rights previously held by both accounts. For
+	example, if JOHND also has an account on another server with a user name of
+	JOHNDOE, you can merge this account into the domain's JOHND account, which would
+	then have all rights previously held by both JOHND and JOHNDOE.
+	
+	NOTE: If there is an account on a NetWare server that has the same name as an
+	account already existing in the Windows NT domain, the rights and permissions of
+	the NetWare account are given to the existing Windows NT server account. If the
+	existing Windows NT server account is NetWare- enabled, the account is given a
+	new password to enable it to be propagated to NetWare servers.
+	
+	How NetWare Servers are Kept Synchronized
+	-----------------------------------------
+	
+	When DSMN is installed in a domain, an account synchronization database is
+	created on the PDC. This information stores the following pieces of
+	information:
+	
+	- The users and groups being propagated to each NetWare server in the domain.
+	
+	- The update status of all user and group accounts on each NetWare server.
+	
+	The update status of an account states which account modifications made to the
+	account have been copied to the appropriate NetWare server(s). If the account is
+	copied to more than one server, the update status may be different on each
+	server.
+	
+	Whenever an account on the Windows NT domain is modified, DSMN detects the
+	change, updates the account synchronized database, and attempts to send the
+	change to all NetWare servers to which this account is propagated. This attempt
+	will succeed for all NetWare servers that are currently running.
+	
+	If a NetWare server is not running, it will be updated later. The account
+	synchronization database keeps track of what account updates are still needed at
+	each NetWare server. When the account is updated on a NetWare server, only the
+	changed information is sent over the network to minimize network traffic.
+	
+	Using DSMN in an Enterprise
+	---------------------------
+	
+	If you have a trusted domain structure using the master domain model and you have
+	32 or fewer NetWare servers to add to domains, consider adding all servers to
+	the master domain. The accounts from the NetWare servers will be in the same
+	domain as your other accounts, simplifying account management.
+	
+	DSMN does not operate across domains. A user can be propagated only to NetWare
+	serves that have been added to the domain that contains the user's account.
+	
+	For additional information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  ARTICLE-ID: Q145589
+	  TITLE : How to Add NetWare 4.x Servers to Windows NT Domain
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNT351search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+	Version           : winnt:3.51,4.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

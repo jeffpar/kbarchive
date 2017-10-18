@@ -1,0 +1,118 @@
+---
+layout: page
+title: "Q132535: PRB: Releasing Object Variable Does Not Close Microsoft Excel"
+permalink: kb/132/Q132535/
+---
+
+## Q132535: PRB: Releasing Object Variable Does Not Close Microsoft Excel
+
+	Article: Q132535
+	Product(s): Microsoft FoxPro
+	Version(s): 3.0,5.0,5.0a,6.0
+	Operating System(s): 
+	Keyword(s): kbvfp300 kbvfp500 kbvfp600
+	Last Modified: 24-OCT-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 5.0a, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The CREATEOBJECT function can be used to create a reference to an instance of
+	Microsoft Excel and assign that reference to a variable. However, releasing that
+	variable does not cause the instance of Excel to quit.
+	
+	Inadvertently creating multiple instances of Excel can cause a variety of error
+	messages, depending on the machine configuration and Windows version. These
+	error messages include:
+	
+	  "Insufficient Memory"
+	  "Not enough memory"
+	  "Page Fault"
+	
+	RESOLUTION
+	==========
+	
+	If you are running Microsoft Excel 5.0, use the following code to close all
+	instances of Microsoft Excel:
+	
+	     PROCEDURE xlquit
+	     local llFlag
+	     ON ERROR  llFlag = .F. && Exit loop
+	     llFlag = .T.
+	     DO  WHILE  llFlag
+	        y=GETOBJECT (,"Excel.Application")
+	        y.QUIT
+	     ENDDO
+	     ON ERROR   && Set back to default
+	
+	If you are using Microsoft Excel 7.0, use the following code:
+	
+	     PROCEDURE xlquit
+	     DECLARE LONG FindWindowA IN USER32 AS FindA STRING,STRING
+	     DECLARE LONG SendMessageA IN USER32 AS SendA LONG, LONG, LONG, LONG
+	     WM_USER = 1024
+	     hwnd = FindA("XLMAIN", 0)
+	       DO  WHILE  hwnd > 0
+	         WhatD= SendA(hwnd, WM_USER + 18, 0, 0)
+	         y=GETOBJECT (,"Excel.Application")
+	         y.QUIT
+	         hwnd = FindA("XLMAIN", 0)
+	       ENDDO
+	
+	The code is different because Microsoft Excel 95 contains a bug that was
+	corrected in later versions.
+	
+	For additional information, click the article number below to view the article in
+	the Microsoft Knowledge Base:
+	
+	  Q153025 FIX: Microsoft Excel 95 Doesn't Respond Correctly to GetObject
+	
+	NOTE: The DECLARE statements in the above example are case-sensitive and the
+	functions must be called just as in the example.
+	
+	STATUS
+	======
+	
+	This behavior is by design.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	Run the following code to create five instances of Microsoft Excel, none of which
+	are visible:
+	
+	     FOR i = 1 to 5
+	       x = CREATEOBJECT("Excel.Application")
+	       RELEASE x
+	     ENDFOR
+	
+	Releasing the variable x does not terminate the instance of Microsoft Excel. To
+	ensure that each instance is terminated, add the following command immediately
+	before the RELEASE x command:
+	
+	     x.Quit
+	
+	To test if an instance of Microsoft Excel exists use this function:
+	
+	     x=GETOBJECT(,"Excel.Application")  && The first argument is empty
+	
+	This returns an OLE error if no instance of Microsoft Excel is in memory.
+	
+	Additional query words: VFoxWin
+	
+	======================================================================
+	Keywords          : kbvfp300 kbvfp500 kbvfp600 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP500 kbVFP600 kbVFP500a
+	Version           : :3.0,5.0,5.0a,6.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

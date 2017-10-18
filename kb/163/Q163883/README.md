@@ -1,0 +1,65 @@
+---
+layout: page
+title: "Q163883: NetBT (tag=Nbt8) Corrupts Pool with WinNT 4.0 SP2 Installed"
+permalink: kb/163/Q163883/
+---
+
+## Q163883: NetBT (tag=Nbt8) Corrupts Pool with WinNT 4.0 SP2 Installed
+
+	Article: Q163883
+	Product(s): Microsoft Windows NT
+	Version(s): winnt:4.0
+	Operating System(s): 
+	Keyword(s): kbnetworkkbbuglist
+	Last Modified: 09-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 4.0 
+	- Microsoft Windows NT Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	A computer running Windows NT 4.0 Service Pack 2 installed, will crash if the
+	NetBT component receives six or more IP addresses from the WINS Server during
+	the name resolution process.
+	
+	The following STOP error message appears on the computer that is running Windows
+	NT:
+	
+	  STOP 0x0000000A (0x00000000,0x00000002,0x00000000,0x8010a607)
+	
+	NOTE: The first and fourth parameters may vary depending on you system
+	configuration.
+	
+	CAUSE
+	=====
+	
+	NetBT doesn't allocate enough memory to hold all the IP address that the WINS
+	Server is returning.
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Windows NT version 4.0. This
+	problem was corrected in the latest Microsoft Windows NT 4.0 U.S. Service Pack.
+	For information on obtaining the service pack, query on the following word in
+	the Microsoft Knowledge Base (without the spaces):
+	
+	  S E R V P A C K
+	
+	
+	Additional query words: 0xa netbt tcp
+	
+	======================================================================
+	Keywords          : kbnetwork kbbuglist
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+	Version           : winnt:4.0
+	Issue type        : kbbug
+	
+	=============================================================================
+	

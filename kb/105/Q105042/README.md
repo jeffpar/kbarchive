@@ -1,0 +1,128 @@
+---
+layout: page
+title: "Q105042: HOWTO: Add/Remove Network Connections in FoxPro"
+permalink: kb/105/Q105042/
+---
+
+## Q105042: HOWTO: Add/Remove Network Connections in FoxPro
+
+	Article: Q105042
+	Product(s): Microsoft FoxPro
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbcode kbnetwork kbvfp300 kbvfp500
+	Last Modified: 11-AUG-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 5.0 
+	- Microsoft FoxPro for Windows, versions 2.5x, 2.6x 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	You can add and remove network connections from within a FoxPro for Windows
+	application by using the Windows application programming interface (API) through
+	FOXTOOLS.FLL, a library file included with FoxPro. To do this, see below.
+	
+	NOTE: For backward compatibility, Visual FoxPro still supports FOXTOOLS.FLL
+	(included in earlier FoxPro versions), the Visual FoxPro API library that allows
+	calls to 16-bit .DLL functions. However, in Visual FoxPro, the DECLARE command
+	is the preferred method for calling .DLL functions.
+	
+	MORE INFORMATION
+	================
+	
+	1. In a program, you must open the FOXTOOLS.FLL external library first. To do
+	  this, use the SET LIBRARY TO command as follows to ensure that the program
+	  finds the FOXTOOLS.FLL library in the FoxPro directory:
+	
+	        SET LIBRARY TO SYS(2004)+'FOXTOOLS.FLL' ADDITIVE
+	
+	2. Register the Windows API functions that you would like to call. In this case,
+	  use WNetAddConnection() and WNetCancelConnection().
+	
+	        addconn=RegFn('WNetAddConnection','CCC','I')
+	        delconn=RegFn('WNetCancelConnection','CI','I')
+	
+	3. To make a connection to a network device, issue the following command:
+	
+	        =CallFn(addconn,"\\SERVER\SHARE","password","<drive>:")
+	
+	4. To disconnect a network connection, issue the following command:
+	
+	        =CallFn(delconn,"<drive>:",0)
+	
+	WNetAddConnection()
+	-------------------
+	
+	The WNetAddConnection() function redirects the specified local device (either a
+	disk drive or a printer port) to the given shared device or remote server. It
+	takes the following parameters:
+	
+	  Parameter         Description
+	  -------------------------------------------------------------------
+	
+	  lpszNetPathName   A pointer to a null-terminated string specifying
+	                    the shared device or remote server, such as
+	                    \\SERVER\SHARE.
+	
+	NOTE: Novell users should not use the double-colon syntax to reference a server
+	and directory, as they may be accustomed to doing. For example, do not try
+	referencing a directory using the following syntax:
+	
+	  \\server\volume::\mydirectory
+	
+	Instead use this syntax: \\server\volume\mydirectory
+	
+	  lpszPassword      A pointer to a null-terminated string specifying
+	                    the network password for the given device or
+	                    server. If there is no password, you must still
+	                    include a placeholder, as follows:
+	
+	                       =CallFn(addconn,"\\SERVER\SHARE","","<drive>:")
+	
+	  lpszLocalName     A pointer to a null-terminated string specifying
+	                    the local drive or device to be redirected. All
+	                    lpszLocalName strings (such as LPT1) are
+	                    case-independent. Only the drive names A through
+	                    Z and the device names LPT1 through LPT3 are
+	                    used.
+	
+	WNetCancelConnection()
+	----------------------
+	
+	The WNetCancelConnection() function cancels a network connection. It takes the
+	following parameters:
+	
+	  Parameter         Description
+	  -------------------------------------------------------------------
+	
+	  lpszName          A pointer to the name of the redirected local
+	                    device (such as LPT1: or D:).
+	
+	  fForce            A Boolean value that specifies whether any open
+	                    files or open print jobs on the device should be
+	                    closed before the connection is canceled.
+	
+	REFERENCES
+	==========
+	
+	For more information about WNetAddConnection() and WNetCancelConnection(), see
+	the Microsoft Windows Software Development Kit (SDK) "Programmer's Reference,
+	Volume 2: Functions," which contains more information about the functions'
+	return values and their meanings.
+	
+	NOTE: These return values will not be interpreted by FoxPro for Windows.
+	
+	Additional query words: change net connection
+	
+	======================================================================
+	Keywords          : kbcode kbnetwork kbvfp300 kbvfp500 
+	Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbVFP300 kbVFP500
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

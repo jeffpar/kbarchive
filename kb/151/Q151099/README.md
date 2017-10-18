@@ -1,0 +1,376 @@
+---
+layout: page
+title: "Q151099: Content of Readme.hlp File Shipped w/FoxPro for Macintosh"
+permalink: kb/151/Q151099/
+---
+
+## Q151099: Content of Readme.hlp File Shipped w/FoxPro for Macintosh
+
+	Article: Q151099
+	Product(s): Microsoft FoxPro
+	Version(s): MACINTOSH:3.0b
+	Operating System(s): 
+	Keyword(s): kbreadme kbhelpfile kbHWMAC kbvfp
+	Last Modified: 15-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Following is the content of the Readme.hlp file located in the Visual FoxPro
+	folder.
+	
+	These release notes contain supplemental information that is not in the Visual
+	FoxPro Help file or in the printed documentation. For additional information,
+	check the Microsoft Visual FoxPro Web site at:
+	
+	  http://www.microsoft.com/vfoxpro
+	
+	The content includes these main topics:
+	
+	  Conflict Between Visual FoxPro and FaxModem Software
+	  Printing Reports in QuickDraw GX
+	  Save As Class Dialog
+	  Macintosh-specific Key Combinations
+	  Multiple Configuration Files
+	  File Names in Cross-platform Applications
+	  Using QuickTime in Visual FoxPro Tables
+	  Performance Management
+	  roadhouse Property
+	  SET DATASESSION Command
+	  Visual FoxPro Converter
+	  Customizing Toolbars
+	  Creating Pivot Tables in Forms
+	  SET HELP Command
+	  Starting and Quitting Visual FoxPro
+	  FoxTools Functions Update
+	  SET SKIP OF Command
+	  Setup Wizard: Changing the Creator Type
+	  No Icelandic code page support for the Macintosh
+	
+	MORE INFORMATION
+	================
+	
+	Conflict Between Visual FoxPro and FaxModem Software
+	----------------------------------------------------
+	
+	Some communication software may conflict with Visual FoxPro and lock your system.
+	If you have Faxmodem software installed, disable the background or auto-receive
+	functionality to avoid conflicts with Visual FoxPro.
+	
+	Printing Reports in QuickDraw GX
+	--------------------------------
+	
+	- To create a text file from a report without QuickDraw GX loaded, use the
+	  REPORT command with the TO FILE clause, as in the following example:
+	
+	        REPORT FORM cReportFile.FRX TO FILE
+	
+	- To create a text file from a report with QuickDraw GX loaded, use the REPORT
+	  command with the TO FILE and ASCII clauses, as in the following example:
+	
+	        REPORT FORM cReportFile.FRX TO FILE cTextReport ASCII
+	
+	  then print the text file cTextReport.
+	
+	- To print an existing report with QuickDraw GX loaded, use the REPORT command
+	  with the TO PRINT and PROMPT clauses, as in the following example:
+	
+	        Report FORM cReportFile.FRX TO PRINT PROMPT
+	
+	  then use the GX Print dialog and select the PostScript destination.
+	
+	- To print a query with QuickDraw GX loaded:
+	
+	  1. From the Query menu in the Query Designer, choose Query Destination.
+	
+	  2. Choose Screen, Report, or Label as an Output Destination. Use the Report
+	     Wizard button to create a report if one does not exist.
+	
+	  3. Specify a text file name as the Secondary Output of the Query Wizard.
+	
+	  4. Complete and run the Query.
+	
+	  After the Query Wizard runs, use the GX Print dialog to select the PostScript
+	  destination to print the text file.
+	
+	Save As Class Dialog
+	--------------------
+	
+	In the scrolling list of the Save Class dialog, you can access folders only; file
+	names are grayed. To specify the file into which you want to add a class, you
+	must type the .VCX file name in the Save As Class edit box.
+	
+	Macintosh-specific Key Combinations
+	-----------------------------------
+	
+	Use the following Macintosh-specific key combinations in Visual FoxPro for
+	Macintosh:
+	
+	  Key combination                Applies to
+	  -----------------------------------------------------------------------
+	
+	  Command key+alphanumeric       Activates main menu keyboard navigation.
+	  keypad 0 F10.
+	
+	  Control+numeric keypad 0       Enters null value into null-enabled table
+	                                 fields.
+	
+	  Command key+SHIFT+1, 2, or 3   Macintosh system defaults.
+	
+	For more information, see Keyboard Shortcuts in Visual FoxPro Help.
+	
+	Multiple Configuration Files
+	----------------------------
+	
+	In order to use multiple configuration files, first remove the default CONFIG.FPM
+	from the root Visual FoxPro folder, and then perform the following steps to
+	create and use alternate configuration files:
+	
+	- Use Visual FoxPro or any text editor to create a configuration file.
+	
+	- Add alternate configuration files to your folder.
+	
+	- Use the SetConfig form in the Tools folder to specify the appropriate File
+	  Type and Creator for your new configuration file.
+	
+	To use the new configuration file, double-click its icon or drag it to the Visual
+	FoxPro icon.
+	
+	File Names in Cross-platform Applications
+	-----------------------------------------
+	
+	In cross-platform applications, you should ensure that the length of file names
+	conforms to the maximum limits of the most restrictive objects among the
+	different platforms. For instance, long table names in Visual FoxPro for
+	Macintosh may not resolve to valid names in Visual FoxPro for Windows.
+	
+	Using QuickTime in Visual FoxPro Tables
+	---------------------------------------
+	
+	To add QuickTime movies to Visual FoxPro tables, use the Microsoft Movie option
+	of the OLE dialog box, as in the following procedure:
+	
+	1. Open a General field. From the Edit menu, choose Insert Object.
+	
+	2. From the OLE dialog box, select Create New.
+	
+	3. From the Object Type list, choose Microsoft Movie, and then click OK.
+	
+	4. Locate and open a QuickTime movie. The server opens the movie with a control
+	  bar and menu. You can choose the frame that displays as a poster, specify
+	  looping style, or copy and paste between objects.
+	
+	5. Locate and open a QuickTime movie.
+	
+	6. From the File menu, choose Update, then Quit. The Microsoft Movie server
+	  returns you to the table.
+	
+	The following tables show commands you can use to control a QuickTime movie:
+	
+	  File Menu:
+	
+	  Command             Action
+	  -----------------------------------------------------------------------
+	  Open                Opens a QuickTime movie.
+	  Update              Commits changes to the table file.
+	  Quit                Closes the server.
+	
+	  Edit Menu:
+	
+	  Command             Action
+	  -----------------------------------------------------------------------
+	  Cut                 Removes individual frames from movie.
+	  Copy                Copies movie frame to Clipboard.
+	  Paste               Places Clipboard frame in current movie.
+	
+	  Movie Menu:
+	
+	  Command             Action
+	  -----------------------------------------------------------------------
+	  Loop                Enables movie to run continuously.
+	  Loop                Back and Forth Enables movie clip to run forward
+	                      and backward continuously.
+	  Play Selection      Only Plays the portion of QuickTime movie selected
+	                      by using SHIFT+DRAG on the control bar.
+	  Go To Poster Frame  Moves to the frame selected as the poster.
+	  Set Poster Frame    Selects the current movie frame as poster.
+	
+	Performance Management
+	----------------------
+	
+	You can reduce print and report times by avoiding printing to the screen whenever
+	you can. Use the NOCONSOLE clause in REPORT and DISPLAY commands and avoid using
+	the ? command. For more information on optimizing performance, see Chapter 4,
+	"Optimizing Your System," in the Installation Guide.
+	
+	roadhouse Property
+	------------------
+	
+	In the Remarks section of the roadhouse Property topic in Help, the text that
+	reads "Available at design time and run time," should read "Available at design
+	time; read-only at run time."
+	
+	SET DATASESSION Command
+	-----------------------
+	
+	In the Remarks section of the SET DATASESSION Command topic in Help, the text
+	reads, "If a Form's DataSession property is set to true (.T.), the Form has its
+	own data session, otherwise, a data session is not created for the Form."
+	
+	The text should read: "If a Form's DataSession property is set to 2 (private
+	DataSession), the Form has its own data session, otherwise, a data session is
+	not created for the Form."
+	
+	Visual FoxPro Converter
+	-----------------------
+	
+	Visual FoxPro for Power Macintosh includes the latest version of the Visual
+	FoxPro Converter. To ensure successful conversion of Visual FoxPro for Power
+	Macintosh programs to Visual FoxPro for Windows, copy the Visual FoxPro for
+	Power Macintosh CONVERT.APP file to the Visual FoxPro for Windows home( )
+	directory.
+	
+	Customizing Toolbars
+	--------------------
+	
+	You can customize Visual FoxPro toolbars by dragging buttons from a selected
+	toolbar while pressing the OPTION+CONTROL keys. Drag one button on top of
+	another to create a single bar that contains several buttons. For more
+	information, see "Customizing Visual FoxPro Toolbars" in Help.
+	
+	Creating Pivot Tables in Forms
+	------------------------------
+	
+	When you use the PivotTable Wizard to create a pivot table in a form, you must
+	install MS Query and then set up an external data source. Without an available
+	data source, Microsoft Excel is unable to complete the pivot table. To install
+	MS Query, use the custom install option of Microsoft Excel Setup. To setup an
+	external data source:
+	
+	1. From the Data menu in Microsoft Excel, choose External Data Sources.
+	
+	2. In the Select Data Source dialog box, click Other.
+	
+	3. In the ODBC Data Source dialog box, click New.
+	
+	4. Select Q+E/Microsoft FoxPro Driver, and click OK.
+	
+	5. Type "FoxPro" (without the quotation marks) as the Data Source Name, and
+	  click OK.
+	
+	6. In the ODBC Data Sources dialog box, click OK.
+	
+	7. In the Select Data Source dialog box, click Cancel.
+	
+	8. Quit MS Query, and then Quit Microsoft Excel.
+	
+	SET HELP Command
+	----------------
+	
+	Graphical Help has been renamed from "FOXHELP.HLP" to "Visual FoxPro Help."
+	
+	Starting and Quitting Visual FoxPro
+	-----------------------------------
+	
+	In the Help topic "Starting and Quitting Visual FoxPro", and in Chapter 1,
+	"Installing and Running Visual FoxPro," of the Installation Guide, remove the
+	following text:
+	
+	To start Visual FoxPro and bypass the current settings, press SHIFT while
+	double-clicking the Visual FoxPro icon.
+	
+	FoxTools Functions Update
+	-------------------------
+	
+	Change your FoxTools documentation with the following information:
+	
+	  FxGetRes( )
+	  -----------
+	  Syntax
+	
+	  FxGetRes(cFilename, cResourceType, nResourceID |
+	   cResourceName, @cResourceValue)
+	  ...
+	
+	  nResourceID
+	
+	  Specifies the numeric resource ID of the resource to get. You can
+	  specify the resource either by ID or by name.
+	
+	  cResourceName
+	
+	  Specifies the resource name of the resource to get.
+	
+	  You can specify either nResourceID, or nResourceName for the third
+	  parameter.
+	
+	  FxSetRes( )
+	  -----------
+	  Syntax
+	
+	  FxSetResource(cFilename, cResourceType, nResourceId |
+	   cResourceName, cResourceValue)
+	  ...
+	
+	  nResourceID
+	
+	  Specifies the numeric resource ID of the resource to set. You can
+	  specify the resource either by ID or by name.
+	
+	  cResourceName
+	
+	  Specifies the resource name of the resource to set.
+	
+	  You can specify either nResourceID, or nResourceName for the third
+	  parameter.
+	
+	SET SKIP OF Command
+	-------------------
+	
+	In the Remarks section of the SET SKIP OF Command topic in Help, the text reads,
+	"If the logical expression lExpression evaluates to true (.T.), the menu, menu
+	bar, menu name, or menu item included in SET SKIP OF is disabled, appears
+	dimmed, and can't be selected. If lExpression evaluates to false(.F.), the menu,
+	menu bar, menu name, or menu item is enabled and can be selected."
+	
+	The following text should be added to the above paragraph:
+	
+	"On the Macintosh, disabled menu items will be functionally disabled but will not
+	show as dimmed."
+	
+	Setup Wizard: Changing the Creator Type
+	---------------------------------------
+	
+	\In step 2 of the Setup Wizard, if you have checked both 68K Macintosh and Power
+	Macintosh environments, both will be installed on the machine on which you are
+	installing your application.
+	
+	You may experience the following problem on a 68K Macintosh:
+	
+	Double-clicking on the .EXE file causes the Visual FoxPro Support Library PPC to
+	attempt to launch and an error message appears. To resolve this error, you need
+	to delete the Visual FoxPro Support Library PPC file after installing on your
+	68K machine.
+	
+	No Icelandic Code Page Support for the Macintosh
+	------------------------------------------------
+	
+	There is no Icelandic code page support for the Macintosh operating system. This
+	means that you are not able to use your Windows collation sequence for the
+	Icelandic platform when porting your applications to the Macintosh.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbreadme kbhelpfile kbHWMAC kbvfp 
+	Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac
+	Version           : MACINTOSH:3.0b
+	
+	=============================================================================
+	

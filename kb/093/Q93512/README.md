@@ -1,0 +1,141 @@
+---
+layout: page
+title: "Q93512: Reading LOGSHOW Information"
+permalink: kb/093/Q93512/
+---
+
+## Q93512: Reading LOGSHOW Information
+
+	Article: Q93512
+	Product(s): Microsoft LAN Manager
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 30-JUL-2001
+	
+	SUMMARY
+	=======
+	
+	LOGSHOW is a utility that displays information about disk adapters, disk drives,
+	CD-ROM drives, and tape drives installed on the system. LOGSHOW resides in the
+	C:\OS2\SUPPORT directory.
+	
+	MORE INFORMATION
+	================
+	
+	The general format of an error log entry displayed by LOGSHOW is as follows:
+	
+	  devnam cccc mm/dd/yy hh:mm:ss - meaning of code
+	         additional information
+	
+	The following are the standard error log entry displays:
+	
+	devnam 000a mm/dd/yy hh:mm:ss-Informational:Real ESDI inquiry data follows:
+	           00 00 00 00 00 00 00 00 GENERIC ESDI DISK TYPEnn
+	
+	        Where       Is
+	        ------      --
+	
+	        devnam      Normally DEVINQ, which is the temporary device name
+	                    used while the device is being configured
+	
+	        mm          The disk type code specified during setup of the PC
+	
+	devnam ffff mm/dd/yy hh:mm:ss - Informational: configure physical disk AOK
+	
+	      Apparent Geometry: ggggg hhhhhhhhh iiiiii jjjj kkkk llll
+	        Actual Geometry: ggggg hhhhhhhhh iiiiii jjjj kkkk mmmmm
+	              Media BPB: ggggg nnn ppppp qqq rrrrr sssss tt uuuuu
+	                         vvvvv wwwww xxxxxxxxx yyyyyyyyy
+	           Recommnd BPB: ggggg nnn ppppp qqq rrrrr sssss tt uuuuu
+	                         vvvvv wwwww xxxxxxxxx yyyyyyyyy
+	
+	        Where       Is
+	        -----       --
+	
+	        devnam      The name of the physical disk drive that has just
+	                    been configured
+	
+	        ggggg       Sector size in bytes
+	
+	        hhhhhhhhh   The number of sectors on the physical volume
+	
+	        iiiiii      The number of cylinders in the physical volume
+	
+	        jjjj        The number of data heads accessing the physical
+	                    volume
+	
+	        kkkk        The number of sectors per track
+	
+	        llll        Flags, in hex, that show how the geometry data was
+	                    generated:
+	
+	           0x8000      Apparent geometry was already set by the time that
+	                       the TSD first gained control.
+	
+	           0x4000      Actual geometry was already set by the time that
+	                       the TSD first gained control
+	
+	           0x2000      Actual geometry was set from the apparent geometry
+	                       by the TSD because the actual geometry was null
+	
+	           0x1000      Apparent geometry was set from the ROM data (INT 13
+	                       function 8) by the TSD
+	
+	           0x0800      Apparent geometry was set from the BPB in the
+	                       primary partition boot record by the TSD
+	
+	           0x0400      Media BPB was initialized by the TSD
+	
+	           0x0200      Recommended BPB was initialized by the TSD
+	
+	           0x0100      Recommended BPB was set from the BPB in the primary
+	                       partition boot record by the TSD
+	
+	           0x0080      Geometry set from ROM by BID
+	
+	           0x0040      Geometry set from internal disk characteristics
+	                       table by BID
+	
+	           0x0020      Geometry set using values determined through auto-
+	                       configuration by BID
+	
+	           0x0010      Geometry set using values from INT 41 or INT 46 by
+	                       BID
+	
+	           0x0008      Apparent and actual geometry set by BID
+	
+	        mmmmm       The cylinder number from which write precompensation
+	                    is to be used
+	
+	        nnn         The cluster size
+	
+	        ppppp       The number of reserved sectors
+	
+	        qqq         The number of FATs
+	
+	        rrrrr       The number of directory entries
+	
+	        sssss       The number of sectors in the partition, if less than
+	                    65,536 sectors
+	
+	        tt          The media descriptor, in hex
+	
+	        uuuuu       The number of sectors used by each FAT
+	
+	        vvvvv       The number of sectors per track
+	
+	        wwwww       The number of heads
+	
+	        xxxxxxxxx   The number of hidden sectors
+	
+	        yyyyyyyyy   The number of sectors in the partition, if more than
+	                    65,535 sectors
+	
+	Additional query words: 2.10
+	
+	======================================================================
+	Keywords          :  
+	
+	=============================================================================
+	

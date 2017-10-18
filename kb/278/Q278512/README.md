@@ -1,0 +1,224 @@
+---
+layout: page
+title: "Q278512: BUG: Visual FoxPro May Ignore DDE Messages"
+permalink: kb/278/Q278512/
+---
+
+## Q278512: BUG: Visual FoxPro May Ignore DDE Messages
+
+	Article: Q278512
+	Product(s): Microsoft FoxPro
+	Version(s): 5.0,5.0a,6.0
+	Operating System(s): 
+	Keyword(s): kbvfp300 kbvfp300b kbvfp300BUG kbvfp500 kbvfp500a kbvfp500aBUG kbvfp500bug kbvfp600 kbG
+	Last Modified: 04-APR-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	You are using DDEAdvise to receive messages. Under a variety of system loads,
+	Visual FoxPro (VFP) may ignore these DDEAdvise messages. The behavior does not
+	produce an error that warns the user that the message was dropped.
+	
+	CAUSE
+	=====
+	
+	Dynamic data exchange (DDE) is an older method for inter-application
+	communication, which has been supplanted by newer technologies.
+	
+	RESOLUTION
+	==========
+	
+	If possible, use a different technology than DDE, such as COM.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Create a directory to hold the files that you will create in the steps that
+	  follow.
+	
+	2. Paste the following code in a file named DDEForm.prg:
+	
+	  PUBLIC loForm
+	
+	  loForm = CREATEOBJECT("DDEForm")
+	  loForm.Visible = .T.
+	
+	  DEFINE CLASS DDEForm AS form
+	
+	     Caption = "DDE Server"
+	     Name = "DDEForm"
+	     lDone = .F.
+	     nChannel = 0
+	     cItem = ""
+	
+	     ADD OBJECT cmdStartConn AS commandbutton WITH ;
+	        AutoSize = .T., ;
+	        Top = 24, ;
+	        Left = 24, ;
+	        Height = 27, ;
+	        Width = 109, ;
+	        Caption = "Start Connection", ;
+	        Name = "cmdStartConn"
+	
+	     ADD OBJECT cmdEndConn AS commandbutton WITH ;
+	        AutoSize = .T., ;
+	        Top = 108, ;
+	        Left = 24, ;
+	        Height = 27, ;
+	        Width = 106, ;
+	        Caption = "End Connection", ;
+	        Name = "cmdEndConn"
+	
+	     ADD OBJECT cmdStartData AS commandbutton WITH ;
+	        Top = 24, ;
+	        Left = 156, ;
+	        Height = 27, ;
+	        Width = 84, ;
+	        Caption = "Start Data", ;
+	        Name = "cmdStartData"
+	
+	     ADD OBJECT cmdEndData AS commandbutton WITH ;
+	        Top = 108, ;
+	        Left = 156, ;
+	        Height = 27, ;
+	        Width = 84, ;
+	        Caption = "End Data", ;
+	        Name = "cmdEndData"
+	
+	     PROCEDURE QueryUnload
+	        This.ReleaseConn()
+	     ENDPROC
+	
+	     PROCEDURE ReleaseConn
+	        =DDESetService("VFPServer", "release")
+	     ENDPROC
+	     
+	     PROCEDURE FastDoEvents
+	        *!* From Q268771 BUG: DOEVENTS Command Runs Slowly
+	        LOCAL lnRow, lnCol, lcWindow
+	
+	        lcWindow = WONTOP()
+	
+	        lnRow = MROW(lcWindow)
+	        lnCol = MCOL(lcWindow)
+	
+	        IF ( lnRow > 0 ) AND ( lnCol > 0 )
+	           IF NOT EMPTY(lcWindow)
+	              MOUSE AT lnRow, lnCol WINDOW (lcWindow)
+	           ELSE
+	              MOUSE AT lnRow, lnCol 
+	           ENDif
+	        ELSE
+	           KEYBOARD " "
+	           =INKEY()
+	        ENDif
+	
+	        DOEVENTS
+	     ENDPROC
+	     
+	     PROCEDURE cmdStartConn.Click
+	        =DDESetService("VFPServer", "define")
+	        =DDESetService("VFPServer", "advise", .T.)
+	
+	        =DDESetTopic("VFPServer", "TestSequence", "cbSequence")
+	     ENDPROC
+	
+	     PROCEDURE cmdEndConn.Click
+	        ThisForm.ReleaseConn()
+	     ENDPROC
+	
+	     PROCEDURE cmdStartData.Click
+	        LOCAL i
+	
+	        i = 0
+	
+	        DO WHILE NOT ThisForm.lDone
+	           lnChannel = ThisForm.nChannel
+	           lcItem = ThisForm.cItem
+	           lcData = "Item " + LTRIM(STR(i, 10, 0))
+	           
+	           =DDEPoke(lnChannel, lcItem, lcData)
+	           
+	           i = i + 1
+	
+	           ThisForm.FastDoEvents()  && To allow cmdEndData to be clicked
+	        ENDdo
+	     ENDPROC
+	
+	     PROCEDURE cmdEndData.Click
+	        ThisForm.lDone = .T.
+	     ENDPROC
+	
+	  ENDDEFINE
+	
+	3. Paste the following code in a file named cbSequence.prg:
+	
+	  LPARAMETERS tnChannel, tcAction, tcItem, tcData, tcFormat, tnStatus
+	
+	  WAIT WINDOW "Advising" NOWAIT
+	  _SCREEN.ActiveForm.nChannel = tnChannel
+	  _SCREEN.ActiveForm.cItem = tcItem
+	
+	4. Create a table to log the results using the following code:
+	
+	  CREATE TABLE SaveVal (cData C(10))
+	
+	5. Paste the following code in a file named cbSaveIt.prg:
+	
+	  LPARAMETERS tnChannel, tcAction, tcItem, tcData, tcFormat, tnStatus
+	
+	  IF NOT USED("SaveVal")
+	  	USE SaveVal IN 0 SHARED
+	  ENDif
+	
+	  INSERT INTO saveVal VALUES (tcData)
+	
+	6. Run DDEForm.prg, and click Start Connection.
+	
+	7. Start another instance of VFP, and SET DEFAULT TO the directory where the
+	  files are stored.
+	
+	8. Type the following lines in the Command window:
+	
+	  lnChannel = DDEInitiate("VFPServer", "TestSequence")
+	  ? DDEAdvise(lnChannel, "TestSequence", "cbSaveIt", 2)
+	
+	9. Switch to the first instance, and click the Start Data button.
+	
+	10. Switch to the second instance, and type the following code in the Command
+	  window:
+	
+	  SET REFRESH TO 5,5
+	  BROWSE 
+	
+	After a while, you should observe that during times of system load, numbers in
+	the sequence may be dropped without notice. If the load is heavier, more
+	messages will be dropped.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbvfp300 kbvfp300b kbvfp300BUG kbvfp500 kbvfp500a kbvfp500aBUG kbvfp500bug kbvfp600 kbGrpDSFox kbDSupport 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+	Version           : :5.0,5.0a,6.0
+	Issue type        : kbbug
+	Solution Type     : kbnofix
+	
+	=============================================================================
+	

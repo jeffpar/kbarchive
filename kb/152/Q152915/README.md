@@ -1,0 +1,70 @@
+---
+layout: page
+title: "Q152915: XFOR: Messages Inbound from IMC Include Body as Attachment"
+permalink: kb/152/Q152915/
+---
+
+## Q152915: XFOR: Messages Inbound from IMC Include Body as Attachment
+
+	Article: Q152915
+	Product(s): Microsoft Exchange
+	Version(s): winnt:4.0
+	Operating System(s): 
+	Keyword(s): kbusage
+	Last Modified: 15-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange, version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	After you apply Microsoft Exchange Service Pack 2 to a Microsoft Exchange Server
+	running the Microsoft Exchange Internet Mail Connector (IMC), the message body
+	of an incoming message might appear as an attachment.
+	
+	CAUSE
+	=====
+	
+	When MIME encoded messages are received by the IMC with a Content-Type of
+	Text/Plain and a parameter of Name= following it, the message body text is
+	converted to an attachment with the name given in the Name= parameter.
+	
+	For example:
+	
+	  Date: 8 Aug 1996 12:56:10 -0400
+	  From: "User One" <User1@your.domain.name.here.edu>
+	  Subject: Mail test from QM
+	  To: "My Friend" <myfriend@his.domain.name.here.com>
+	  Mime-Version: 1.0
+	  Content-Type: text/plain; charset="ISO-8859-1"; Name="Message Body"
+	  Content-Transfer-Encoding: quoted-printable
+	  Subject:Mail test
+	
+	  mail test from QM
+	
+	When you open the message, the actual message body is in an attachment called
+	Message Body.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+	version 4.0. This problem was corrected in the latest Microsoft Exchange Service
+	Pack. For information on obtaining the Service Pack, query on the following word
+	in the Microsoft Knowledge Base (without the spaces):
+	
+	  S E R V P A C K
+	
+	Additional query words: message body.txt bdy.txt
+	
+	======================================================================
+	Keywords          : kbusage 
+	Technology        : kbZNotKeyword6 kbExchangeSearch kbExchange400 kbExchangeClientSearch kbZNotKeyword2
+	Version           : winnt:4.0
+	
+	=============================================================================
+	

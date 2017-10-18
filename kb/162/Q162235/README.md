@@ -1,0 +1,146 @@
+---
+layout: page
+title: "Q162235: WD97: How to Add a Portrait Page Number to a Landscape Page"
+permalink: kb/162/Q162235/
+---
+
+## Q162235: WD97: How to Add a Portrait Page Number to a Landscape Page
+
+	Article: Q162235
+	Product(s): Word 97 for Windows
+	Version(s): WINDOWS:97
+	Operating System(s): 
+	Keyword(s): kbualink97 kbfield kbtable
+	Last Modified: 14-NOV-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	
+	SUMMARY
+	=======
+	
+	If a page of your document is formatted with landscape orientation, the header
+	and footer of the page will also be formatted with landscape orientation.
+	
+	This article describes how to use rotated text in a text box or table to add a
+	page number in portrait orientation to the header or footer layer of a
+	landscape-oriented page.
+	
+	MORE INFORMATION
+	================
+	
+	To create a portrait-oriented page number on a landscape-oriented page, use the
+	following steps:
+	
+	1. Open your document, and set up the different sections to accommodate the
+	  landscape page (or section). With the insertion point in the landscape
+	  section, activate the Header/Footer dialog box, and click Same As Previous to
+	  make the header and footer for this page separate from the previous one.
+	  Repeat this procedure for the section following the landscape formatted
+	  section.
+	
+	  For more information about the "Same as previous" feature, click the Office
+	  Assistant, type "How do I create different headers and footers?", click
+	  Search, click to view "Create headers and footers," and then click to view
+	  the "Create a different header or footer for part of a document" topic.
+	
+	  For more information about creating a landscape page, click the Office
+	  Assistant, type "How do I create a landscape page?", and click Search. Click
+	  the "Troubleshoot margins and page orientation" topic, and then click "Can I
+	  have portrait and landscape pages in the same document?"
+	
+	  NOTE: If the Assistant is hidden, click the Office Assistant button on the
+	  Standard toolbar. If Word Help is not installed on your computer, please see
+	  the following article in the Microsoft Knowledge Base:
+	
+	  Q120802 Office: How to Add/Remove a Single Office Program or Component
+	
+	2. Position the insertion point in the landscape oriented section, click Header
+	  And Footer on the View menu, and use either of the following methods to
+	  create the header or footer:
+	
+	Text Box Method
+	---------------
+	
+	  a. On the File menu, click Page Setup.
+	
+	  b. Click the Margins tab, and increase the right margin to a value that will
+	     give you room for the page number (text). For example, change the right
+	     margin from the default 1 inch to 1.5 inches. Change the other margins as
+	     needed. Then click OK.
+	
+	  c. On the Insert menu, click Text Box.
+	
+	  d. Using your mouse, draw a text box in the right margin area of the
+	     landscape page. Once the text box is drawn, it will remain selected.
+	
+	  e. On the Format menu, click Text Box. On the Color and Lines tab, under
+	     Line, change Color to No Line, and then click OK.
+	
+	  f. Click in the text box. On the Text Box toolbar, click the Change Text
+	     Direction button to change the text to the desired direction
+	     (orientation).
+	
+	  g. Type the desired header or footer text into the text box. To add the page
+	     number, type the word "Page," press the SPACEBAR, and on the Header And
+	     Footer toolbar, click the Page Number button.
+	
+	  h. Make any other desired formatting changes. On the Header and Footer
+	     toolbar, click Close.
+	
+	Table Method
+	------------
+	
+	  a. On the File menu, click Page Setup.
+	
+	  b. Click the Margins tab, change the Top Margin to a negative value. For
+	     example, if your top margin is 1.25 inches, change the Top Margin value to
+	     -1.25 inches (Note the minus sign).
+	
+	  c. On the Table menu, click Draw Table. You will now have a Tables and
+	     Borders toolbar.
+	
+	     Using your mouse, draw a table on the right side of the header that extends
+	     down the page. You will draw one large table cell that is in the expanded
+	     margin area. Then draw any additional cells by drawing lines to divide the
+	     large cell into smaller cells.
+	
+	  d. Click in a table cell. On the Table menu, click Select Table.
+	
+	  e. On the Format menu, click Borders and Shading. On the Borders tab, under
+	     Settings, click None, and then click OK.
+	
+	  f. Click the cell where you want your page number to appear. Type the word
+	     "Page" and then press the SPACEBAR once. On the Header and Footer toolbar,
+	     click the "Insert Page Number" button.
+	
+	  g. To rotate the text, on the Tables And Borders toolbar, click the "Change
+	     Text Direction" button until the text is in the desired direction. Then,
+	     on the Formatting toolbar, click the "Align Bottom" button.
+	
+	     NOTE: A table is affected by the bottom margin of a page. It is possible
+	     for text to be cut off (cropped) if the table is drawn in the bottom
+	     margin area. To correct this problem, either resize your table so it does
+	     not flow into the bottom margin, or change the bottom margin of the page.
+	
+	     For more information about tables, click the Office Assistant in Word, type
+	     "How do I use a table?", and click Search. Click the "About working with
+	     tables" topic.
+	
+	  h. Make any other formatting changes as desired to the text box or table. On
+	     the Header and Footer toolbar, click Close.
+	
+	Additional query words: 8.0 word8 word97 secondary header footer
+	
+	======================================================================
+	Keywords          : kbualink97 kbfield kbtable 
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : WINDOWS:97
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

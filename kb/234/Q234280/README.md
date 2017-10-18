@@ -1,0 +1,103 @@
+---
+layout: page
+title: "Q234280: XCON: Increasing MTA Ability to Pass Mail over Slow Connections"
+permalink: kb/234/Q234280/
+---
+
+## Q234280: XCON: Increasing MTA Ability to Pass Mail over Slow Connections
+
+	Article: Q234280
+	Product(s): Microsoft Exchange
+	Version(s): 5.5
+	Operating System(s): 
+	Keyword(s): exc55
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.5 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about modifying the registry. Before you 
+	modify the registry, make sure to back it up and make sure that you understand how to restore 
+	the registry if a problem occurs. For information about how to back up, restore, and edit the 
+	registry, click the following article number to view the article in the Microsoft Knowledge Base:
+	
+	  Q256986 Description of the Microsoft Windows Registry
+	
+	SUMMARY
+	=======
+	
+	Mail may process slowly or sporadically to other servers in the site across a
+	site connector or over an X.400 Connector. You can view this mail in the
+	Exchange Server Administrator program by opening the Properties of the Server
+	object's Message Transfer Agent (MTA), and then clicking the Queues tab. You can
+	also view this mail in Performance Monitor by viewing the following counters:
+	
+	  Object: MSExchangeMTA Connections
+	  Counter: Queue Length
+	  Instances: <queues>
+	
+	MTA processor usage may be quite low, despite mail sitting in the queue.
+	
+	MORE INFORMATION
+	================
+	
+	WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+	that may require you to reinstall your operating system. Microsoft cannot
+	guarantee that you can solve problems that result from using Registry Editor
+	incorrectly. Use Registry Editor at your own risk.
+	
+	There are certain MTA registry parameters that you can tune to increase the
+	ability of the MTA to process mail over high latency or slow network
+	connections. These registry locations are found in the registry by default. Run
+	Registry Editor (Regedt32.exe) and go to the following key:
+	
+	  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSExchangeMTA\Parameters
+	
+	The following values can be set from their default threads values of 1 to 3 to a
+	higher value, such as 6 or 8. You must restart the MTA service for these changes
+	to take effect.
+	
+	- Dispatcher threads: The number of MTA dispatcher threads. This is multiplied
+	  by three for the three subtypes (Router, Fanout, and Result) of dispatcher
+	  threads. Be aware that a change in this number actually increases the thread
+	  count by three, one for each of the Dispatch functions mentioned below.
+	
+	   - Router - Routes messages.
+	
+	   - Fanout - Sends message to the right place. For example, if a message has
+	     10 recipients with 5 remote and 5 local, the fanout thread sends one copy
+	     to the information store and another copy to another MTA.
+	
+	   - Result - Thread handles for notifications. For example, non-delivery
+	     reports (NDRs).
+	
+	- Kernel threads: These are Open Systems Interconnection (OSI) stack thread
+	  calls. You can alleviate bottlenecks caused by low bandwidth or high latency
+	  site local area network (LAN) connectors by increasing the Kernel threads
+	  value. A better solution, if it is possible, is to get a faster LAN within a
+	  site, or use TCP/IP connections such as X.400 Connectors between sites. The
+	  Kernel threads value represents the number of platform threads handling the
+	  Presentation and Session level of the OSI stack.
+	
+	- RTS (Reliable Transfer Service) threads: Number of platform threads handling
+	  the Reliable Transfer Service Element (RTSE) level of the OSI stack. The OSI
+	  stack is the stack that X.400 Connectors use.
+	
+	- Transfer threads: This is the equivalent of the Submit/Deliver threads value
+	  (which relates to MTA and information store message transfer) but for
+	  gateways and MTAs. This value is multiplied by two for the two subtypes
+	  (Transfer In, Transfer Out) of Transfer threads.
+	
+	Additional query words: latency, RPC
+	
+	======================================================================
+	Keywords          : exc55 
+	Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+	Version           : :5.5
+	Issue type        : kbhowto kbprb
+	
+	=============================================================================
+	

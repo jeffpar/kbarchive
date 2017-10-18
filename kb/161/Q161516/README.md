@@ -1,0 +1,194 @@
+---
+layout: page
+title: "Q161516: Troubleshooting Modem Problems Under Windows NT 4.0"
+permalink: kb/161/Q161516/
+---
+
+## Q161516: Troubleshooting Modem Problems Under Windows NT 4.0
+
+	Article: Q161516
+	Product(s): Microsoft Windows NT
+	Version(s): winnt:4.0
+	Operating System(s): 
+	Keyword(s): kbhw kbHardwarekbfaq
+	Last Modified: 09-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 4.0 
+	- Microsoft Windows NT Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	
+	SUMMARY
+	=======
+	
+	This article describes procedures to help you diagnose and fix problems when you
+	are unable to dial out using your modem in Windows NT 4.0 with Dial-Up
+	Networking (DUN).
+	
+	MORE INFORMATION
+	================
+	
+	Installing Your Modem
+	---------------------
+	
+	If your modem is not on the Windows NT 4.0 Hardware Compatibility List (HCL) or
+	is not detected by Windows NT, use one of the following procedures to install
+	it:
+	
+	- Obtain from the modem manufacturer an .inf file designed for Windows NT 4.0.
+	  Follow the manufacturer's instructions for installing the modem in Windows NT
+	  4.0. Contact the modem manufacturer for assistance with this procedure.
+	
+	- If your modem has an .inf file for Windows 95, you may be able to use that
+	  file under Windows NT. When you are adding the modem through Control Panel,
+	  Modems, check the box labeled, "Don't detect my modem; I will select it from
+	  a list." Choose the "Have Disk" option and insert the disk containing the
+	  Windows 95 .inf file. Please be aware that not all Windows 95 .inf files will
+	  work correctly in Windows NT 4.0.
+	
+	- Install your modem as a standard modem using the following steps:
+	
+	  1. In Control Panel, double-click Modems. The Install New Modem Wizard starts
+	     automatically if you have not installed a modem before. If the wizard does
+	     not start automatically, you have installed a modem previously and you
+	     should click Add to start the wizard.
+	
+	  2. Check the box labeled "Don't detect my modem; I will select it from a
+	     list," and then click Next.
+	
+	  3. In the Manufacturers box, click Standard Modem Types. In the Models box,
+	     click a model that corresponds to the speed of your modem, and then follow
+	     the instructions in the Install New Modem Wizard.
+	
+	Verify Your COM Port(s)
+	-----------------------
+	
+	Verify that Windows NT recognizes your COM port(s) by double-clicking the Ports
+	icon in Control Panel to see if the COM port that the modem is connected to is
+	listed. If it is, Windows NT recognizes the COM port.
+	
+	If the COM port is not recognized in the Control Panel Ports applet, there is
+	most likely a hardware problem or a configuration problem. Use the following
+	steps to troubleshoot the problem.
+	
+	External Modems
+	
+	1. If the COM port is on the motherboard or is provided by a serial card, make
+	  sure the port is not disabled in the BIOS (also called the CMOS) setup of the
+	  computer. Refer to the documentation for your computer to obtain information
+	  about configuring options in the BIOS setup.
+	
+	2. Make sure there are no other adapters or devices that are configured for the
+	  same Base I/O Address or IRQ as the COM port to which the modem is attached.
+	
+	3. Verify that the serial port is not defective. If the modem and any other
+	  serial devices fail on the COM port but work on other COM ports, and you have
+	  verified the two steps above, the serial port may be defective.
+	
+	4. Verify the serial cable is not defective by using a new standard serial
+	  cable.
+	
+	Internal Modems
+	
+	1. If the COM port is defined by an internal modem, make sure the jumpers on the
+	  modem are configured properly. Internal modems will almost always have a
+	  jumper on the adapter that configures the modem as a particular COM port.
+	  There may or may not be jumpers that allow you to set the Base I/O Address
+	  and IRQ to be used by the modem as well.
+	
+	2. If the modem is configured for a COM port number that is assigned to a COM
+	  port on the motherboard or a serial card (physical port), you must either set
+	  the modem to use a different COM port, or use the BIOS setup to disable the
+	  COM port with the same number as the internal modem. For example, if both the
+	  internal modem and the physical COM port are set to COM1, you must either set
+	  the internal modem to a different, unused COM port, or the physical COM1 port
+	  must be disabled in the BIOS setup.
+	
+	3. Make sure there are no other adapters or devices that are configured for the
+	  same Base I/O Address or IRQ as the internal modem. Usually COM3, using an
+	  IRQ (or interrupt) of 5, is a good choice for an internal modem. However, if
+	  you have a sound card, you may need to choose a different IRQ than 5 since
+	  many sound cards use that interrupt.
+	
+	4. In the Ports component of Control Panel, verify that the IRQ settings and the
+	  I/O addresses are correct. Check the System log with the Event Viewer for I/O
+	  or IRQ conflict errors.
+	
+	  When possible, use standard settings for COM ports, which are as follows:
+	
+	        SERIAL 1   COM1:  I/O Address = 3F8h   IRQ = 4
+	        SERIAL 2   COM2:  I/O Address = 2F8h   IRQ = 3
+	        SERIAL 3   COM3:  I/O Address = 3E8h,  IRQ = 4
+	        SERIAL 4   COM4:  I/O Address = 2E8h,  IRQ = 3
+	
+	5. You do NOT need to add a new port in the Control Panel Ports applet to add
+	  support for an internal modem. NTDETECT will detect the internal modem and
+	  the COM port it is configured to use. If a duplicate port was added using the
+	  Add button in the Control Panel Ports applet, use the Delete button to remove
+	  the duplicate port.
+	
+	6. Verify that the internal modem is not defective. Also, it is often a good
+	  idea to check with the vendor of your modem to see if there is a flash
+	  upgrade available for your modem.
+	
+	Troubleshoot with HyperTerminal
+	-------------------------------
+	
+	Verify that Windows NT recognizes your modem and that you can dial out using the
+	HyperTerminal program. To do so, follow these steps:
+	
+	NOTE: Before attempting to use HyperTerminal, verify that the Remote Access
+	Server service is not running. Double-click the Services icon in Control Panel
+	and verify that the Status column next to Remote Access Server is blank. If it
+	displays "Started," click the Stop button to disable the Remote Access Server
+	service before continuing.
+	
+	1. Click Start, point to Programs, point to Accessories, point to HyperTerminal,
+	  and then click HyperTerminal.
+	
+	2. When the New Connection Wizard is displayed, click Cancel.
+	
+	3. On the File menu, click Properties, and then click the modem you want to test
+	  to select it in the Connect Using list.
+	
+	4. Click Configure, verify that your modem is set to use the correct port, and
+	  then click OK.
+	
+	5. Type "AT" (without quotation marks) in the HyperTerminal window, and then
+	  press ENTER.
+	
+	6. If "AT" (without quotation marks) is displayed in the HyperTerminal window as
+	  you type it and "OK" (without quotation marks) is displayed after you press
+	  ENTER, HyperTerminal recognizes the modem properly. If "AT" is not displayed
+	  as you type it or if "OK" is not displayed after you press ENTER, review the
+	  previous steps in this article to verify that your modem is installed
+	  properly in Windows NT.
+	
+	7. Verify that your modem can dial out using HyperTerminal. On the File menu,
+	  click New Connection, and then follow the instructions on your screen.
+	
+	8. Click Dial. If the modem's speaker is enabled, you should hear a dial tone
+	  and the sound of the modem dialing the phone number.
+	
+	For additional information, please see the following article(s) in the Microsoft
+	Knowledge Base:
+	
+	  ARTICLE-ID: Q131868
+	  TITLE : Troubleshooting PCMCIA Modems in Windows NT 3.51
+	
+	  ARTICLE-ID: Q150808
+	  TITLE : Disabling Remote Access Support for Unimodem Modems
+	
+	
+	Additional query words: connecting ras dialin tshoot
+	
+	======================================================================
+	Keywords          : kbhw kbHardware kbfaq
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+	Version           : winnt:4.0
+	
+	=============================================================================
+	

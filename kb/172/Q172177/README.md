@@ -1,0 +1,91 @@
+---
+layout: page
+title: "Q172177: PRB: Alpha Platform Not Available When Adding Configurations"
+permalink: kb/172/Q172177/
+---
+
+## Q172177: PRB: Alpha Platform Not Available When Adding Configurations
+
+	Article: Q172177
+	Product(s): Microsoft C Compiler
+	Version(s): 5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbdocerr kbide kbVC kbVC500 kbVC600 kbGrpDSTools
+	Last Modified: 11-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If you move a project from the Intel platform to the Alpha RISC platform and
+	attempt to add a new Alpha configuration (for example, by selecting
+	Build|Configurations...|Add... from the Developer Studio menu) Developer Studio
+	does not provide an option to choose "Win32(Alpha)" in the platform combo box.
+	
+	CAUSE
+	=====
+	
+	Visual C++ RISC Edition is not a cross-development environment, but rather a
+	native-development environment and is, therefore, not presented as a unique
+	configuration platform. Additional platforms are only available in the Platforms
+	combo box if they produce code that runs on a platform other than the native
+	environment. Examples of this are the Visual C++ development environments for
+	Apple Macintosh and Windows CE. These platform types must be built on the Intel
+	platform, but they produce code that only runs on their respective platform
+	architectures.
+	
+	RESOLUTION
+	==========
+	
+	In native Visual C++ development environments, simply add a "Win32" platform and
+	use the configuration name to identify the platform. For example, you might use
+	the names "AlphaRelease" and "AlphaDebug" on the Alpha platform.
+	
+	MORE INFORMATION
+	================
+	
+	Under Visual C++ version 4.0 RISC Edition, the Win32 platform name is displayed
+	as "Win32 (platform)". For example, "Win32 (MIPS)", "Win32 (ALPHA)", etc.
+	
+	The Visual C++ 5.0 documentation incorrectly implies that the platforms will be
+	presented in a similar manner.
+	
+	An existing 4.x project that contains the Win32 (platform) form of the
+	configuration name will retain this name when migrated to Visual C++ version
+	5.0.
+	
+	REFERENCES
+	==========
+	
+	The following section is located in the Visual C++ Professional RISC Edition
+	online documentation:
+	
+	  Port Visual C++ Applications Between Intel-Based and RISC Platforms (Alpha or
+	  PowerPC)
+	
+	  InfoViewer Location (Visual C++, version 5.0):
+	
+	  mk:@ivt:vccore/F3/D6/S4D143.HTM
+	
+	  HTML Help Location (Visual C++, version 6.0):
+	
+	  mk:@MSITStore:[Enter Full Path to vccore.chm Here]::/
+	  html/_core_port_visual_c.2b2b_.applications_between_
+	  intel.2d.based_and_risc_platforms.htm
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbdocerr kbide kbVC kbVC500 kbVC600 kbGrpDSTools 
+	Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+	Version           : :5.0,6.0
+	Hardware          : ALPHA
+	Issue type        : kbprb
+	
+	=============================================================================
+	

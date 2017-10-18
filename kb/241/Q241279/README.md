@@ -1,0 +1,146 @@
+---
+layout: page
+title: "Q241279: SMS: Client Appears as Not Installed in Administrator Console"
+permalink: kb/241/Q241279/
+---
+
+## Q241279: SMS: Client Appears as Not Installed in Administrator Console
+
+	Article: Q241279
+	Product(s): Microsoft Systems Management Server
+	Version(s): winnt:2.0
+	Operating System(s): 
+	Keyword(s): kbClient kbMMC kbsms200 kbsms200bug kbDiscovery kbsms200sp2fix
+	Last Modified: 29-JUN-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server version 2.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Systems Management Server clients may appear as 'not installed' in the
+	Administrator console, which may contradict their SMS client-based components
+	actual status. This status is displayed by clicking the Components tab in the
+	Systems Management Server tool in Control Panel.
+	
+	Clients who were formally listed as 'installed' in the Administrator console may
+	revert to 'not installed' and their status may fluctuate.
+	
+	CAUSE
+	=====
+	
+	This behavior occurs because the client computer has been turned off for more
+	than 24 hours before starting up and discovery may occur before the Client
+	Configuration Installation Manager has updated its heartbeat time.
+	
+	Discovery determines whether the client is installed by checking if CCIM has
+	updated its heartbeat time within the last 24 hours.
+	
+	If the client computer has been turned off for more than 24 hours, when it starts
+	up, Logon Discovery or CCIM itself may do discovery before the CCIM has updated
+	its heartbeat time. This causes discovery to report the client as not installed
+	(client = 0) in the Data Discovery Record (DDR). The DDR is then transferred to
+	the site server and added to the database.
+	
+	In general, if the computer remains turned on, this incorrect value is corrected
+	the next time either logon discovery takes place or the next time CCIM writes a
+	heartbeat DDR to the Client Access point.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, obtain the latest service pack for Systems Management
+	Server version 2.0. For additional information, please see the following article
+	in the Microsoft Knowledge Base:
+	
+	  Q236325 How to Obtain the Latest Systems Management Server 2.0 Service Pack
+	
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Systems Management Server
+	version 2.0. This problem was first corrected in Systems Management Server
+	version 2.0 Service Pack 2.
+	
+	MORE INFORMATION
+	================
+	
+	To install the hotfix, use one of the following methods on the SMS site server.
+	
+	Method 1: Using the Hotfix Installer
+	------------------------------------
+	
+	NOTE: This method is only for I386-based computers.
+	
+	1. Copy the hotfix folder structure to a share on your network. Q241279.exe is a
+	  Microsoft Windows Installer file that updates specific files on your site
+	  server.
+	
+	2. Log on to your site server using an account with administrative privileges.
+	
+	3. On the site server, close the SMS Administrator console.
+	
+	4. Run the Q241279.exe file and follow the directions in the wizard. The file
+	  can be run in Quiet mode using the /s switch.
+	
+	Method 2: Manual installation
+	-----------------------------
+	
+	1. Stop the SMS_EXECUTIVE and the SMS_SITE_COMPONENT_MANAGER services.
+	
+	2. Replace the Clicore.exe file in the
+	  <Sms_root>\Inboxes\Clicomp.src\Base\<Platform> folder with the
+	  version obtained from the hotfix.
+	
+	3. Replace the Compver.ini file in the <Sms_root>\Inboxes\Clicomp.src\Base
+	  folder with the version obtained from the hotfix.
+	
+	4. Replace the Abnwcli.dll file in the <Sms_root>\Bin\<Platform>
+	  folder with the version obtained from the hotfix.
+	
+	5. Replace the BindClin.dll file in the <Sms_root>\Bin\<Platform>
+	  folder with the version obtained from the hotfix.
+	
+	6. Replace the NdsClin.dll file in the <SMS_root>\Bin\<Platform>
+	  folder with the version obtained from the hotfix.
+	
+	7. Replace the Falclin.dll file in the <SMS_root>\Bin\<Platform>
+	  folder with the version obtained from the hotfix.
+	
+	8. Replace the Mslmclin.dll file in the <SMS_root>\Bin\<Platform>
+	  folder with the version obtained from the hotfix.
+	
+	9. Replace the Ccim32.dll file in the <SMS_root>\Bin\<Platform>
+	  folder with the version obtained from the hotfix.
+	
+	10. Restart the SMS_EXECUTIVE and the SMS_SITE_COMPONENT_MANAGER services. Allow
+	  the updated Compver.ini, Clicore.exe, and Ccmcore.exe files to be propagated
+	  to all Logon points and Client Access Points in the site.
+	
+	NOTE: The default Client Configuration Installation Manager (CCIM) polling
+	interval is 23 hours. Therefore, it may take up to 23 hours for the hotfixed
+	files to be propagated to the clients. To speed up this process, you can stop
+	and restart the SMS Client Service on each client. You can also create a
+	software distribution for one of the Resource Kit tools Setevnt.exe or
+	Cliutils.exe along with the appropriate parameter(s) to start a CCIM work cycle.
+	For information on the proper syntax to use with these tools, see the Resource
+	Kit documentation.
+	
+	
+	Additional query words: prodsms client=no
+	
+	======================================================================
+	Keywords          : kbClient kbMMC kbsms200 kbsms200bug kbDiscovery kbsms200sp2fix 
+	Technology        : kbSMSSearch kbSMS200
+	Version           : winnt:2.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

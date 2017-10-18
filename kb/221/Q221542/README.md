@@ -1,0 +1,379 @@
+---
+layout: page
+title: "Q221542: HOWTO: Change Time Zone Information Using Visual Basic"
+permalink: kb/221/Q221542/
+---
+
+## Q221542: HOWTO: Change Time Zone Information Using Visual Basic
+
+	Article: Q221542
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbAPI kbSDKWin32 kbVBp kbVBp500 kbVBp600 kbGrpDSVB
+	Last Modified: 25-APR-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	It is sometimes necessary to programmatically change the time zone for the
+	system where the application is running. This article demonstrates this
+	technique.
+	
+	MORE INFORMATION
+	================
+	
+	The way to implement this effect is as follows:
+	
+	1. Determine which time zone you would like to change to.
+	
+	2. Find the key in the registry that contains the information needed to fill the
+	  TIME_ZONE_INFORMATION structure.
+	
+	3. Read in that information and load the values into a variable of type
+	  TIME_ZONE_INFORMATION.
+	
+	4. Call the SetTimeZoneInformation API, passing it the TIME_ZONE_INFORMATION
+	  struct variable.
+	
+	The location in the registry that contains time zone information differs between
+	Windows 9x and Windows NT/Windows 2000.
+	
+	For Windows NT and Windows 2000, it is located at:
+	
+	  HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Time Zones
+	
+	For Windows 9x, it is located at:
+	
+	  HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Time Zones
+	
+	The Time Zone key names differ between Windows NT, Windows 2000, and Windows 9x
+	as well because Windows NT and Windows 2000 append the string "Standard Time" to
+	the different keys whereas Windows 9x does not.
+	
+	For example:
+	
+	In Windows NT and Windows 2000, you would see this key:
+	
+	  Pacific Standard Time
+	
+	while in Windows 9x, you would see this key:
+	
+	  Pacific
+	
+	The registry location where the current Date/Time settings can be found is:
+	
+	  HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation
+	
+	Step-by-Step Example
+	--------------------
+	
+	The code sample below requires a form with a listbox. The listbox is loaded with
+	the possible time zone values that the user can select with a double-click to
+	change the time zone. It will show a messagebox that, once dismissed, will
+	change the system settings back to their original values.
+	
+	1. Create a new Standard EXE project. Form1 is created by default.
+	
+	2. Add a Listbox control to Form1.
+	
+	3. Add the following code to the General Declarations section of Form1:
+	
+	  Option Explicit
+	
+	  ' Operating System version information declares
+	
+	  Private Const VER_PLATFORM_WIN32_NT = 2
+	  Private Const VER_PLATFORM_WIN32_WINDOWS = 1
+	
+	  Private Type OSVERSIONINFO
+	          dwOSVersionInfoSize As Long
+	          dwMajorVersion As Long
+	          dwMinorVersion As Long
+	          dwBuildNumber As Long
+	          dwPlatformId As Long
+	          szCSDVersion As String * 128 ' Maintenance string
+	  End Type
+	
+	  Private Declare Function GetVersionEx Lib "kernel32" _
+	  Alias "GetVersionExA" (lpVersionInformation As OSVERSIONINFO) As Long
+	
+	  ' Time Zone information declares
+	
+	  Private Type SYSTEMTIME
+	     wYear As Integer
+	     wMonth As Integer
+	     wDayOfWeek As Integer
+	     wDay As Integer
+	     wHour As Integer
+	     wMinute As Integer
+	     wSecond As Integer
+	     wMilliseconds As Integer
+	  End Type
+	
+	  Private Type REGTIMEZONEINFORMATION
+	     Bias As Long
+	     StandardBias As Long
+	     DaylightBias As Long
+	     StandardDate As SYSTEMTIME
+	     DaylightDate As SYSTEMTIME
+	  End Type
+	
+	  Private Type TIME_ZONE_INFORMATION
+	     Bias As Long
+	     StandardName(0 To 63) As Byte ' used to accommodate Unicode strings
+	     StandardDate As SYSTEMTIME
+	     StandardBias As Long
+	     DaylightName(0 To 63) As Byte ' used to accommodate Unicode strings
+	     DaylightDate As SYSTEMTIME
+	     DaylightBias As Long
+	  End Type
+	
+	  Private Const TIME_ZONE_ID_INVALID = &HFFFFFFFF
+	  Private Const TIME_ZONE_ID_UNKNOWN = 0
+	  Private Const TIME_ZONE_ID_STANDARD = 1
+	  Private Const TIME_ZONE_ID_DAYLIGHT = 2
+	
+	  Private Declare Function GetTimeZoneInformation Lib "kernel32" _
+	  (lpTimeZoneInformation As TIME_ZONE_INFORMATION) As Long
+	
+	  Private Declare Function SetTimeZoneInformation Lib "kernel32" _
+	  (lpTimeZoneInformation As TIME_ZONE_INFORMATION) As Long
+	
+	  ' Registry information declares
+	  Private Const REG_SZ As Long = 1
+	  Private Const REG_BINARY = 3
+	  Private Const REG_DWORD As Long = 4
+	
+	  Private Const HKEY_CLASSES_ROOT = &H80000000
+	  Private Const HKEY_CURRENT_USER = &H80000001
+	  Private Const HKEY_LOCAL_MACHINE = &H80000002
+	  Private Const HKEY_USERS = &H80000003
+	
+	  Private Const ERROR_SUCCESS = 0
+	  Private Const ERROR_BADDB = 1
+	  Private Const ERROR_BADKEY = 2
+	  Private Const ERROR_CANTOPEN = 3
+	  Private Const ERROR_CANTREAD = 4
+	  Private Const ERROR_CANTWRITE = 5
+	  Private Const ERROR_OUTOFMEMORY = 6
+	  Private Const ERROR_ARENA_TRASHED = 7
+	  Private Const ERROR_ACCESS_DENIED = 8
+	  Private Const ERROR_INVALID_PARAMETERS = 87
+	  Private Const ERROR_NO_MORE_ITEMS = 259
+	
+	  Private Const KEY_ALL_ACCESS = &H3F
+	
+	  Private Const REG_OPTION_NON_VOLATILE = 0
+	
+	  Private Declare Function RegOpenKeyEx Lib "advapi32.dll" _
+	     Alias "RegOpenKeyExA" ( _
+	     ByVal hKey As Long, _
+	     ByVal lpSubKey As String, _
+	     ByVal ulOptions As Long, _
+	     ByVal samDesired As Long, _
+	     phkResult As Long) _
+	  As Long
+	
+	  Private Declare Function RegQueryValueEx Lib "advapi32.dll" _
+	     Alias "RegQueryValueExA" ( _
+	     ByVal hKey As Long, _
+	     ByVal lpszValueName As String, _
+	     ByVal lpdwReserved As Long, _
+	     lpdwType As Long, _
+	     lpData As Any, _
+	     lpcbData As Long) _
+	  As Long
+	
+	  Private Declare Function RegQueryValueExString Lib "advapi32.dll" _
+	     Alias "RegQueryValueExA" ( _
+	     ByVal hKey As Long, _
+	     ByVal lpValueName As String, _
+	     ByVal lpReserved As Long, _
+	     lpType As Long, _
+	     ByVal lpData As String, _
+	     lpcbData As Long) _
+	  As Long
+	
+	  Private Declare Function RegEnumKey Lib "advapi32.dll" _
+	     Alias "RegEnumKeyA" ( _
+	     ByVal hKey As Long, _
+	     ByVal dwIndex As Long, _
+	     ByVal lpName As String, _
+	     ByVal cbName As Long) _
+	  As Long
+	
+	  Private Declare Function RegCloseKey Lib "advapi32.dll" ( _
+	     ByVal hKey As Long) _
+	  As Long
+	
+	  ' Registry Constants
+	  Const SKEY_NT = "SOFTWARE\Microsoft\Windows NT\CurrentVersion\Time Zones"
+	  Const SKEY_9X = "SOFTWARE\Microsoft\Windows\CurrentVersion\Time Zones"
+	
+	  ' The following declaration is different from the one in the API viewer.
+	  ' To disable implicit ANSI<->Unicode conversion, it changes the 
+	  ' variable types of lpMultiByteStr and lpWideCharStr to Any.
+	  '
+	  Private Declare Function MultiByteToWideChar Lib "kernel32" ( _
+	      ByVal CodePage As Long, _
+	      ByVal dwFlags As Long, _
+	      lpMultiByteStr As Any, _
+	      ByVal cchMultiByte As Long, _
+	      lpWideCharStr As Any, _
+	      ByVal cchWideChar As Long) As Long
+	      
+	  ' The above Declare and the following Constants are used to make
+	  ' this sample compatible with Double Byte Character Systems (DBCS).
+	  Private Const CP_ACP = 0
+	  Private Const MB_PRECOMPOSED = &H1
+	
+	  Dim SubKey As String
+	
+	  Private Sub Form_Load()
+	     Dim lRetVal As Long, lResult As Long, lCurIdx As Long
+	     Dim lDataLen As Long, lValueLen As Long, hKeyResult As Long
+	     Dim strvalue As String
+	     Dim osV As OSVERSIONINFO
+	
+	  ' Win9x and WinNT have a slightly different registry structure. Determine
+	  ' the operating system and set a module variable to the correct subkey.
+	
+	     osV.dwOSVersionInfoSize = Len(osV)
+	     Call GetVersionEx(osV)
+	     If osV.dwPlatformId = VER_PLATFORM_WIN32_NT Then
+	        SubKey = SKEY_NT
+	     Else
+	        SubKey = SKEY_9X
+	     End If
+	
+	     lRetVal = RegOpenKeyEx(HKEY_LOCAL_MACHINE, SubKey, 0, _
+	                            KEY_ALL_ACCESS, hKeyResult)
+	
+	     If lRetVal = ERROR_SUCCESS Then
+	
+	        lCurIdx = 0
+	        lDataLen = 32
+	        lValueLen = 32
+	
+	        Do
+	           strvalue = String(lValueLen, 0)
+	           lResult = RegEnumKey(hKeyResult, lCurIdx, strvalue, lDataLen)
+	
+	           If lResult = ERROR_SUCCESS Then
+	              List1.AddItem Left(strvalue, lValueLen)
+	           End If
+	
+	           lCurIdx = lCurIdx + 1
+	
+	        Loop While lResult = ERROR_SUCCESS
+	
+	        RegCloseKey hKeyResult
+	     Else
+	        List1.AddItem "Could not open registry key"
+	     End If
+	  End Sub
+	
+	  Private Sub List1_DblClick()
+	     Dim TZ As TIME_ZONE_INFORMATION, oldTZ As TIME_ZONE_INFORMATION
+	     Dim rTZI As REGTIMEZONEINFORMATION
+	     Dim bytDLTName(32) As Byte, bytSTDName(32) As Byte
+	     Dim cbStr As Long, dwType As Long
+	     Dim lRetVal As Long, hKeyResult As Long, lngData As Long
+	
+	     lRetVal = RegOpenKeyEx(HKEY_LOCAL_MACHINE, SubKey & "\" & List1.Text, _
+	                             0, KEY_ALL_ACCESS, hKeyResult)
+	
+	     If lRetVal = ERROR_SUCCESS Then
+	        lRetVal = RegQueryValueEx(hKeyResult, "TZI", 0&, ByVal 0&, _
+	                                    rTZI, Len(rTZI))
+	
+	        If lRetVal = ERROR_SUCCESS Then
+	           TZ.Bias = rTZI.Bias
+	           TZ.StandardBias = rTZI.StandardBias
+	           TZ.DaylightBias = rTZI.DaylightBias
+	           TZ.StandardDate = rTZI.StandardDate
+	           TZ.DaylightDate = rTZI.DaylightDate
+	
+	           cbStr = 32
+	           dwType = REG_SZ
+	
+	           lRetVal = RegQueryValueEx(hKeyResult, "Std", _
+	                       0&, dwType, bytSTDName(0), cbStr)
+	
+	           If lRetVal = ERROR_SUCCESS Then
+	              Call MultiByteToWideChar(CP_ACP, MB_PRECOMPOSED, _
+	                 bytSTDName(0), cbStr, TZ.StandardName(0), 32)
+	           Else
+	              RegCloseKey hKeyResult
+	              Exit Sub
+	           End If
+	
+	           cbStr = 32
+	           dwType = REG_SZ
+	
+	           lRetVal = RegQueryValueEx(hKeyResult, "Dlt", _
+	                       0&, dwType, bytDLTName(0), cbStr)
+	
+	           If lRetVal = ERROR_SUCCESS Then
+	              Call MultiByteToWideChar(CP_ACP, MB_PRECOMPOSED, _
+	                 bytDLTName(0), cbStr, TZ.DaylightName(0), 32)
+	           Else
+	              RegCloseKey hKeyResult
+	              Exit Sub
+	           End If
+	
+	           lRetVal = GetTimeZoneInformation(oldTZ)
+	
+	           If lRetVal = TIME_ZONE_ID_INVALID Then
+	              MsgBox "Error getting original TimeZone Info"
+	              RegCloseKey hKeyResult
+	              Exit Sub
+	           Else
+	              lRetVal = SetTimeZoneInformation(TZ)
+	              MsgBox "Time Zone Changed, Click OK to restore"
+	              lRetVal = SetTimeZoneInformation(oldTZ)
+	           End If
+	        End If
+	
+	        RegCloseKey hKeyResult
+	     End If
+	  End Sub
+	
+	4. Run the program, and note that the listbox displays all of the available time
+	  zones.
+	
+	5. Select a time zone and double-click on it. Your system locale is changed to
+	  the selected zone. A message box containing the following message is
+	  displayed:
+	
+	  
+	
+	  Time Zone Changed, Click OK to restore
+	
+	6. Open the control panel and double-click the Date/Time icon. You can also
+	  reach this dialog by double-clicking on the clock in the system tray. Click
+	  on the Time Zone tab and observe that the time zone has been changed.
+	
+	7. Close the Date/Time Properties dialog box and click OK on the message box
+	  displayed by your application. Repeat the previous step to confirm that the
+	  time zone information has been restored.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbAPI kbSDKWin32 kbVBp kbVBp500 kbVBp600 kbGrpDSVB 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+	Version           : :5.0,6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

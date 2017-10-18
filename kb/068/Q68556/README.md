@@ -1,0 +1,187 @@
+---
+layout: page
+title: "Q68556: DlgMain.exe Uses a Dialog Box as the Main Window"
+permalink: kb/068/Q68556/
+---
+
+## Q68556: DlgMain.exe Uses a Dialog Box as the Main Window
+
+	Article: Q68556
+	Product(s): Microsoft Windows Software Development Kit
+	Version(s): WINDOWS:3.0,3.1
+	Operating System(s): 
+	Keyword(s): _IK kbfile kbsample kb16bitonly kbDlg kbGrpDSUser kbOSWin310 kbOSWin300
+	Last Modified: 05-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	DlgMain.exe is a sample file that demonstrates how to create a modeless dialog
+	box that can act as the main window of a Windows-based application. Two
+	advantages of this approach are:
+	
+	- The main window of the application can be created in the Dialog Editor.
+	
+	- Focus control is managed by Windows as it is for a dialog box.
+	
+	MORE INFORMATION
+	================
+	
+	The following files are available for download from the Microsoft Download
+	Center:
+	
+	DlgMain.exe
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. Once posted, the file is housed on secure
+	servers that prevent any unauthorized changes to the file.
+	
+	
+	The information below outlines the necessary modifications to the code in
+	GENERIC, a sample application provided with the Windows Software Development Kit
+	(SDK) version 3.0, that will result in a Windows-based application that uses a
+	modeless dialog box as its main window.
+	
+	To GENERIC.C, make the following changes:
+	
+	     //  1. Create a global variable to hold the window handle of the
+	     //     dialog box.
+	
+	        HWND hDlgMain;
+	
+	     //  2. In the WinMain() procedure, declare a FARPROC variable. This
+	     //     variable holds the procedure-instance address for the dialog
+	     //     procedure.
+	
+	        FARPROC lpfn;
+	
+	     //  3. Modify the CreateWindow() call in InitInstance() to specify 0
+	     //     (zero) for nWidth and nHeight when the main window is created.
+	     //     Do this so that the main window is not shown until the size of
+	     //     the dialog box is known.
+	
+	        hWnd = CreateWindow("GenericWClass", "Dialog as Main Window",
+	                  WS_OVERLAPPED | WS_CAPTION | WS_MINIMIZEBOX | WS_SYSMENU,
+	                  CW_USEDEFAULT, 0, 0, 0, NULL, NULL, hInstance, NULL);
+	
+	     //  4. In WinMain(), create a procedure-instance for the dialog
+	     //     procedure.
+	
+	        lpfn = MakeProcInstance(Dialog1, hInst);
+	
+	     //  5. In WinMain, create the dialog box using CreateDialog().
+	
+	        hDlgMain = CreateDialog(hInst, "DIA1", hWnd, lpfn);
+	
+	     //  6. Add code to WinMain() to show the dialog box.
+	
+	        ShowWindow(hDlgMain, SW_SHOW);
+	
+	     //  7. Windows sends messages to the modeless dialog box through the
+	     //     program's main message queue. To process messages intended for
+	     //     the dialog box, modify message queue processing in WinMain() as
+	     //     follows:
+	
+	        while (GetMessage(&msg,   // Message structure
+	                          NULL,   // Handle of window receiving message
+	                          NULL,   // Lowest message to handle
+	                          NULL))  // Highest message to handle
+	        {
+	           if (hDlgMain == NULL || !IsDialogMessage(hDlgMain, &msg))
+	           {
+	           TranslateMessage(&msg); // Translate virtual key codes
+	           DispatchMessage(&msg);  // Dispatches message to window
+	           }
+	        }
+	        return msg.wParam;     /* Returns the value from PostQuitMessage */ 
+	
+	     //  8. When the application receives a WM_SETFOCUS message, it must
+	     //     set the input focus to the control that acts as the
+	     //     application's main window. Adding the following code to
+	     //     MainWndProc() processes the WM_SETFOCUS message as required:
+	
+	        case WM_SETFOCUS:
+	           SetFocus(hDlgMain);
+	           break;
+	
+	In the dialog function, make the remaining changes:
+	
+	     //  9. In the dialog function, declare a variable of type RECT to
+	     //     store the bounding rectangle of the modeless dialog box.
+	
+	        RECT rect;
+	
+	     // 10. Retrieve the dimensions of the dialog box. This information
+	     //     will be used to calculate the size of the parent window.
+	
+	        case WM_INITDIALOG:
+	           GetWindowRect(hDlg, &rect);
+	
+	     // 11. Size the parent window to be the same size as the dialog box.
+	
+	        SetWindowPos(GetParent(hDlg), // Get the window handle of the
+	                                      // parent of the dialog box.
+	
+	          NULL,                       // Identifies a window that in the
+	                                      // window-manager's list will
+	                                      // precede the positioned window.
+	                                      // This is not used for this example.
+	
+	          0,                          // Specify the x-coordinate of the
+	                                      // window's upper-left corner.
+	
+	          0,                          // Specify the x-coordinate of the
+	                                      // window's upper-left corner.
+	
+	          rect.right - rect.left,     // Based on the values returned by
+	                                      // GetWindowRect, calculate the new
+	                                      // width of the main window.
+	
+	          rect.bottom - rect.top + GetSystemMetrics(SM_CYCAPTION)
+	                                 + GetSystemMetrics(SM_CYMENU),
+	                                      // Based on the values returned by
+	                                      // GetWindowRect, the height of the
+	                                      // caption bar, and the height of
+	                                      // the menu bar, calculate the new
+	                                      // height of the main window.
+	
+	          SWP_NOMOVE | SWP_NOZORDER);
+	                                      // Retain current position and
+	                                      // ordering.
+	
+	     // 12. When the application receives a WM_CLOSE message, close the
+	     //     modeless dialog box and post a WM_CLOSE message to the main
+	     //     window.
+	
+	        case WM_CLOSE:
+	           DestroyWindow(hDlg);  // Close the modeless dialog box using
+	                                 // DestroyWindow.
+	           hDlgMain = NULL;      // Set the handle of the modeless dialog
+	                                 // box to null.
+	           PostMessage(GetParent(hDlg), WM_CLOSE, NULL, NULL);
+	           break;
+	
+	Make one change to GENERIC.RC: Modify the dialog box template to specify the
+	additional style WS_CHILD. Doing so will ensure that the dialog box moves with
+	the parent window as the parent is moved.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : _IK kbfile kbsample kb16bitonly kbDlg kbGrpDSUser kbOSWin310 kbOSWin300 
+	Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+	Version           : WINDOWS:3.0,3.1
+	
+	=============================================================================
+	

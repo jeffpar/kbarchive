@@ -1,0 +1,252 @@
+---
+layout: page
+title: "Q179156: Updated TCP/IP Printing Options for Windows NT 4.0 SP3 and Later"
+permalink: kb/179/Q179156/
+---
+
+## Q179156: Updated TCP/IP Printing Options for Windows NT 4.0 SP3 and Later
+
+	Article: Q179156
+	Product(s): Microsoft Windows NT
+	Version(s): 2000,4.0
+	Operating System(s): 
+	Keyword(s): kbprint kbWinNT400sp4fix
+	Last Modified: 11-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 4.0 
+	- Microsoft Windows NT Server version 4.0 
+	- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+	- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+	- Microsoft Windows 2000 Advanced Server 
+	- Microsoft Windows 2000 Server 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+	
+	  Q256986 Description of the Microsoft Windows Registry
+	
+	SUMMARY
+	=======
+	
+	This article describes the updated TCP/IP printing components that are available
+	in Windows NT 4.0 Service Pack 3 (SP3). There are two new registry entries that
+	allow line printer remote (LPR) to use any available port higher than 1,023.
+	With these entries, LPR is no longer restricted to only using the 11 TCP Ports
+	(721 through 731) and will not conflict with reserved ports, even on very busy
+	print servers.
+	
+	MORE INFORMATION
+	================
+	
+	TCP/IP printing (LPR) in Windows NT 4.0 Service Pack 2 (SP2) and earlier
+	defaults to using TCP ports 512-1,023. In Windows NT 4.0 Service Pack 3, LPR
+	defaults to using TCP ports 721-731, as described in RFC 1179 (Windows NT 3.51
+	Service Pack 4 and earlier versions). In addition, LPR in Service Pack 3 is now
+	configurable through two registry entries, that enable the use of TCP ports
+	1,024 and greater.
+	
+	For information on setting LPR printers to be RFC compliant, please see the
+	following Microsoft Knowledge Base article:
+	
+	  Q141708 Printing to LPD Printer Is Slow or Fails with Windows NT
+	
+	Method 1
+	--------
+	
+	WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+	that may require you to reinstall your operating system. Microsoft cannot
+	guarantee that you can solve problems that result from using Registry Editor
+	incorrectly. Use Registry Editor at your own risk.
+	
+	In Service Pack 3, a new registry entry is automatically generated when a new LPR
+	port is created. This setting is defined on a per printer port basis and
+	defaults to 0, which is RFC compliant. To enable individual IP address ports to
+	use TCP ports 1024 and higher, apply Service Pack 3 and then use the following
+	steps:
+	
+	1. Start Registry Editor (Regedt32.exe) and go to the following key:
+	
+	  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\LPDSVC\lpr
+	
+	2. If the following value exists, double-click the entry. If the value does not
+	  already exist, on the Edit menu, click Add Value, and then type the following
+	  information:
+	
+	  Value Name: <IP address of LPR printer port>
+	  Data Type : REG_DWORD
+	  Value : 0 or 1
+	  Value Type: Binary
+	  0 = uses ports 721-731 (default)
+	  1 = uses any port >1024
+	
+	3. Restart the Spooler service for the changes to take affect. At an MS-DOS
+	  command prompt type "net stop spooler" (without the quotation marks). To
+	  restart the Spooler service, at an MS-DOS command prompt type "net start
+	  spooler" (without the quotation marks).
+	
+	Method 2
+	--------
+	
+	Windows NT 4.0 Service Pack 4 (SP4) and later enables a new registry value,
+	UseNonRFCSourcePorts, to configure LPR printers to use TCP ports higher than
+	1,024 with one registry entry that will incorporate a global change. Use this
+	method on print servers that have a large number of LPR ports.
+	
+	NOTE: If all LPR ports were created prior to applying SP4 or later, an individual
+	port entry exists in the registry for all LPR ports. These individual ports take
+	precedence over the global entry, UseNonRFCSourcePorts, so these individual
+	ports must be deleted from the registry before the UseNonRFCSourcePorts global
+	setting will work for all LPR ports. The step-by-step instructions below will go
+	through removing these individual entries and adding the new entry.
+	
+	Obtain and apply SP4 or later, and then use the following steps to enable this
+	new registry key:
+	
+	1. Start Registry Editor (Regedt32.exe) and go to the following key:
+	
+	  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\LPDSVC\lpr
+	
+	2. On the Registry menu, click Save Key and type a filename.
+	
+	3. Delete the Lpr key to remove all of the individual IP address entries.
+	
+	4. Select the LPDSVC key.
+	
+	5. On the Edit menu, click Add Key, and then in the Key Name box, type "lpr"
+	  (without the quotation marks).
+	
+	6. Select the newly created Lpr key.
+	
+	7. On the Edit menu, click Add Value, and then type the following information:
+	
+	  Value Name: UseNonRFCSourcePorts
+	  Data Type: REG_DWORD
+	  Value: 0 or 1
+	  Value Type: Binary
+	  0 = uses ports 721-731 (default)
+	  1 = uses any port >1024
+	
+	NOTE: SP4 or later must be applied prior to restarting the Spooler in step 8. If
+	you do not apply SP4 or later before you restart the Spooler, the individual
+	port entries are automatically recreated.
+	
+	1. Restart the Spooler service for the changes to take affect. At an MS-DOS
+	  command prompt type "net stop spooler" (without the quotation marks). To
+	  restart the Spooler service, at an MS-DOS command prompt type "net start
+	  spooler" (without the quotation marks), and then press ENTER.
+	
+	In addition, you can use UseNonRFCSourcePorts in conjunction with the individual
+	port keys to specify an exception scenario where a specific LPR port needs to be
+	RFC compliant. After adding the UseNonRFCSourcePorts entry, create an individual
+	IP address port using method 1, setting the default for that port back to 0.
+	
+	If you create or have LPR ports and start the spooler service with SP3, a
+	registry entry is created for each LPR port with a default value of 0. This is
+	"RFC 1179" compliant. Changing this value to 1 makes it non "RFC 1179" compliant
+	and allows for port usage 1024 or above.
+	
+	If you then apply SP4 or later, the registry values have already been created and
+	need to be reviewed in the case that you delete them and use server-wide
+	settings. Adding new ports after SP4 or later does not automatically create
+	port-specific entries.
+	
+	With SP4 or later installed, UseNonRFCSourcePorts sets the RFC 1179 compliance to
+	0 (721-731) and off to 1(>1023). However, entries for individual printers are
+	exceptions to this rule.
+	
+	Windows 2000:
+	
+	Windows 2000 includes an improved port monitor that accomplishes the same results
+	as making the registry changes noted above. The Microsoft Standard Port Monitor
+	(SPM) allows for more dynamic IP printing. SPM uses port 9100 by default, but
+	uses non-RFC source port LPR (ports greater than 1024) as a fallback.
+	
+	If you have upgraded to Windows 2000 from an earlier version of Windows NT, you
+	can convert your existing LPR ports to the SPM by running the Portconv.vbs tool
+	located in the Windows 2000 Resource Kit. Note that the supporting documentation
+	for this is located in the Prnadmin.doc file.
+	
+	For additional information about SPM please see Windows 2000 Help, click the
+	article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q246868 TCP/IP Printing Options in Windows 2000 Standard Port Monitor
+	
+	LPR:
+	LPR Ports can be configured on a Windows 2000 Server after Print Services for
+	Unix has been installed in the Other Network File and Print Services section of
+	the Add/Remove Windows Components wizard in Add/Remove Programs. If you are
+	configuring a LPR port (not a Standard TCP/IP Port), this port will default to
+	the LPR RFC Source and Destination ports (TCP:721-731, TCP:515). Both of the
+	registry keys discussed in this article work in Windows 2000 and can be used
+	seperately or together to set LPR ports to use RFC or non-RFC source ports for
+	the whole spooler or just individual LPR ports.
+	
+	Standard TCP/IP Port: Windows 2000 includes an improved port monitor that
+	communicates with a print server device like a JetDirect card over Source Ports
+	>1024 and the destination port 9100. The Microsoft Standard Port Monitor
+	(SPM) allows for more dynamic IP printing. Though SPM uses Destination Port 9100
+	by default it will change down to Destionation Port 515 if configured to do so,
+	or if the target device will not support Destination Port 9100.
+	
+	If you have upgraded to Windows 2000 from an earlier version of Windows NT, you
+	can convert your existing LPR ports to the SPM by running the Portconv.vbs tool
+	located in the Windows 2000 Resource Kit. Note that the supporting documentation
+	for this is located in the Prnadmin.doc file.
+	
+	For additional information about SPM, click the article number below to view the
+	article in the Microsoft Knowledge Base:
+	
+	  Q246868 TCP/IP Printing Options in Windows 2000 Standard Port Monitor
+	
+	NOTE: AIX may randomly stop printing to Windows 2000 Line Printer Daemon (LPD).
+	This issue occurs because AIX 4.3.3 patch level 8 is not RFC1179-compliant. For
+	AIX to print to Windows 2000 LPD, create the following registry value:
+	
+	  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\LPDSVC\lpr
+	
+	  Value name: UseNonRFCSourcePorts
+	  Value Data: 1
+	
+	For additional information about AIX printing to Windows 2000 over a Wide Area
+	Network (WAN), click the article number below to view the article in the
+	Microsoft Knowledge Base:
+	
+	  Q280344 Large LPD Jobs Time Out After 60 Seconds
+	
+	  Q283014 Windows 2000 Lprmon Does Not Restart Job If It Receives a Nack
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, obtain the latest service pack for Windows NT 4.0 or
+	Windows NT Server 4.0, Terminal Server Edition. For additional information,
+	please see the following article in the Microsoft Knowledge Base:
+	
+	  Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Windows NT 4.0 and Windows NT
+	Server 4.0, Terminal Server Edition. This problem was first corrected in Windows
+	NT 4.0 Service Pack 4.0 and Windows NT Server 4.0, Terminal Server Edition
+	Service Pack 4.
+	
+	
+	
+	Additional query words: lpdsvc lprmon ntfaqmax tcpip mscs JetDirect 2004 busy error
+	
+	======================================================================
+	Keywords          : kbprint kbWinNT400sp4fix 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400 kbwin2000ServSearch kbwin2000Search kbNTTermServ400 kbNTTermServSearch kbWinAdvServSearch
+	Version           : :2000,4.0
+	Hardware          : ALPHA x86
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

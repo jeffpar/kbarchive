@@ -1,0 +1,153 @@
+---
+layout: page
+title: "Q156064: WD97: Saved File Name Does Not Appear on Document Title Bar"
+permalink: kb/156/Q156064/
+---
+
+## Q156064: WD97: Saved File Name Does Not Appear on Document Title Bar
+
+	Article: Q156064
+	Product(s): Word 97 for Windows
+	Version(s): MACINTOSH:98; WINDOWS:97
+	Operating System(s): 
+	Keyword(s): kbusage kbdta
+	Last Modified: 13-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	- Microsoft Word 98 Macintosh Edition 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The file name of the document does not appear on the document title bar after
+	you save the document.
+	
+	WORKAROUND
+	==========
+	
+	Use one of the following workarounds:
+	
+	- After the Word document has been saved, close and reopen the document. The
+	  file name now appears on the document title bar.
+	
+	  NOTE: The caption does not appear on the document title bar when the file is
+	  re-opened. The caption is only present when you create a new document from
+	  any of the templates that ship with Word.
+	
+	-or-
+	
+	- Using the Visual Basic Editor, you can remark out the line in the macro code
+	  that is causing the file name to not appear on the document title bar. To
+	  remark out this line, follow these steps:
+	
+	  Microsoft provides programming examples for illustration only, without
+	  warranty either expressed or implied, including, but not limited to, the
+	  implied warranties of merchantability and/or fitness for a particular
+	  purpose. This article assumes that you are familiar with the programming
+	  language being demonstrated and the tools used to create and debug
+	  procedures. Microsoft support professionals can help explain the
+	  functionality of a particular procedure, but they will not modify these
+	  examples to provide added functionality or construct procedures to meet your
+	  specific needs. If you have limited programming experience, you may want to
+	  contact a Microsoft Certified Partner or the Microsoft fee-based consulting
+	  line at (800) 936-5200. For more information about Microsoft Certified
+	  Partners, please visit the following Microsoft Web site:
+	
+	  http://www.microsoft.com/partner/referral/
+	
+	  For more information about the support options that are available and about
+	  how to contact Microsoft, visit the following Microsoft Web site:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	  NOTE: Microsoft does not support the modification of wizards and templates.
+	  Modifications done by the user are at the user's risk and constitute no
+	  obligations or warranties, either expressed or implied, by Microsoft.
+	
+	  1. Open the template that is experiencing the problem.
+	
+	  2. Press ALT+F11 to start the Visual Basic Editor.
+	
+	  3. Expand the TemplateProject for the template you have opened by clicking on
+	     the plus sign next to TemplateProject(templatename).
+	
+	  4. Expand Microsoft Word Objects by clicking on the plus sign next to
+	     Microsoft Word Objects.
+	
+	  5. Double-click ThisDocument to open the code window.
+	
+	  6. Type an apostrophe in front of the line of code that reads as follows:
+	
+	  ActiveDocument.ActiveWindow.Caption = ActiveDocument.ActiveWindow.Caption &" - Report"
+	
+	     The apostrophe comments out the line so that it is not read in the code.
+	
+	  7. Quit the Visual Basic Editor.
+	
+	  8. Save the template you have opened.
+	
+	  The file name should now appear on the document title bar when you save a
+	  document that has been opened based on one of these templates.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the products listed at the
+	beginning of this article.
+	
+	MORE INFORMATION
+	================
+	
+	Microsoft Word uses a new feature that inserts a caption on the Word document
+	title bar. The caption feature helps you remember what type of template the
+	document is based on. This caption appears whenever a document is created using
+	any of the Word shipped templates.
+	
+	The file name is not updated on the title bar of the document window when the
+	file is saved. Word saves the document correctly; the title bar is not updated
+	with the correct file name.
+	
+	The following templates exhibit this problem:
+	
+	- Contemporary Fax.dot
+	
+	- Contemporary Memo.dot
+	
+	- Contemporary Report.dot
+	
+	- Elegant Fax.dot
+	
+	- Elegant Memo.dot
+	
+	- Elegant Report.dot
+	
+	- Fax Wizard.wiz
+	
+	- Memo Wizard.wiz
+	
+	- Newsletter Wizard.wiz
+	
+	- Pleading Wizard.wiz
+	
+	- Professional Fax.dot
+	
+	- Professional Memo.dot
+	
+	- Professional Report.dot
+	
+	- Resume Wizard.wiz
+	
+	Additional query words: wd98 macintosh
+	
+	======================================================================
+	Keywords          : kbusage kbdta 
+	Technology        : kbHWMAC kbOSMAC kbWordSearch kbWordMacSearch kbWord98Search kbWord97 kbWord97Search kbZNotKeyword2 kbZNotKeyword3 kbWord98
+	Version           : MACINTOSH:98; WINDOWS:97
+	Issue type        : kbbug
+	
+	=============================================================================
+	

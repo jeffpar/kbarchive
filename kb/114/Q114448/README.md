@@ -1,0 +1,69 @@
+---
+layout: page
+title: "Q114448: Windows 3.11 Directory Listing for Disk 1 (3.5 Inch 1.44 MB)"
+permalink: kb/114/Q114448/
+---
+
+## Q114448: Windows 3.11 Directory Listing for Disk 1 (3.5 Inch 1.44 MB)
+
+	Article: Q114448
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 02-OCT-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 3.11 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article contains the directory listing for Disk 1 of the Microsoft Windows
+	version 3.11 3.5-inch 1.44-megabyte disk set.
+	
+	MORE INFORMATION
+	================
+	
+	Disk 1
+	------
+	
+	  Volume in drive A is MSWIN3111
+	  Volume Serial Number is 4119-0A0F
+	  Directory of A:\
+	
+	CONTROL  HL_        84,257 12-31-93   3:11a
+	CPWIN386 CP_        42,613 12-31-93   3:11a
+	DISK1                    8 12-31-93   3:11a
+	EGAFIX   FO_         2,247 12-31-93   3:11a
+	GDI      EX_       148,271 12-31-93   3:11a
+	NW40     DR_        91,437 12-31-93   3:11a
+	NWCALLS  DL_        67,153 12-31-93   3:11a
+	NWNET    DL_        93,075 12-31-93   3:11a
+	SETUP    EXE       436,560 12-31-93   3:11a
+	SETUP    HL_        29,518 12-31-93   3:11a
+	SETUP    INF        60,594 12-31-93   3:11a
+	SETUP    SHH         6,525 12-31-93   3:11a
+	SETUP    TXT        41,754 12-31-93   3:11a
+	SYSTEM   SR_           575 12-31-93   3:11a
+	USER     EX_       174,020 12-31-93   3:11a
+	VIPX40   38_        10,462 12-31-93   3:11a
+	WIN      SR_         1,346 12-31-93   3:11a
+	WINHELP  EX_       147,927 12-31-93   3:11a
+	XMSMMGR  EXE        14,144 12-31-93   3:11a
+	
+	      19 file(s)      1,452,486 bytes
+	                            512 bytes free
+	
+	Additional query words: win 3.11 file listing dirwin disk win31 diskdir noupd
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWin3xSearch kbZNotKeyword3 kbWin311
+	Version           : WINDOWS:3.11
+	
+	=============================================================================
+	

@@ -1,0 +1,68 @@
+---
+layout: page
+title: "Q183342: WD97: TableToOrFromText Button Is Blank on Customized Toolbar"
+permalink: kb/183/Q183342/
+---
+
+## Q183342: WD97: TableToOrFromText Button Is Blank on Customized Toolbar
+
+	Article: Q183342
+	Product(s): Word 97 for Windows
+	Version(s): WINDOWS:97
+	Operating System(s): 
+	Keyword(s): kbdta kbtable
+	Last Modified: 14-NOV-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	In Microsoft Word 97 for Windows, if a custom toolbar is created and the
+	TableToOrFromText command is added to a button, the button image is not
+	displayed on the toolbar after it is customized. The toolbar shows a blank
+	button instead.
+	
+	NOTE: The button still works as expected.
+	
+	WORKAROUND
+	==========
+	
+	To work around this problem, show the image with the button text. To do this,
+	follow these steps:
+	
+	1. On the Tools menu, click Customize.
+	
+	2. In the Customize dialog box, click the Commands tab.
+	
+	3. Click the blank button on the custom toolbar you created.
+	
+	4. In the Customize dialog box, click the drop-down arrow for Modify Selection,
+	  and then click Image And Text.
+	
+	Or, add the command to a default toolbar like the Standard toolbar, instead of
+	the custom toolbar.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products listed at
+	the beginning of this article.
+	
+	
+	Additional query words: 8.0 table to text table-to-text
+	
+	======================================================================
+	Keywords          : kbdta kbtable 
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : WINDOWS:97
+	Issue type        : kbbug
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

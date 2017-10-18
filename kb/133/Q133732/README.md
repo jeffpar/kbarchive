@@ -1,0 +1,157 @@
+---
+layout: page
+title: "Q133732: Missing TrueType Fonts in Fonts Folder or Programs"
+permalink: kb/133/Q133732/
+---
+
+## Q133732: Missing TrueType Fonts in Fonts Folder or Programs
+
+	Article: Q133732
+	Product(s): Windows for Workgroups and Windows NT Networking Issues
+	Version(s): 4.0
+	Operating System(s): 
+	Keyword(s): kberrmsg kbprint win95 win98 kbPrinting win98se
+	Last Modified: 07-SEP-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 95 
+	- Microsoft Windows 98 
+	- Microsoft Windows NT Server version 4.0 
+	- Microsoft Windows NT Workstation version 4.0 
+	- Microsoft Windows 98 Second Edition 
+	- Microsoft Windows Millennium Edition 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about editing the registry.
+	Before you edit the registry, you should first make a backup copy of the
+	registry files (System.dat and User.dat). Both are hidden files in the
+	Windows folder.
+	
+	SYMPTOMS
+	========
+	
+	You may notice one or more of the following symptoms:
+	
+	- TrueType fonts may not be present in the Fonts folder.
+	
+	- You may receive the following error message if you try to add a TrueType
+	  font:
+	
+	  The <fontname> TrueType font is already installed. To install a new
+	  version, first remove the old version.
+	
+	- TrueType fonts are not listed in any program.
+	
+	- Previously created documents are printed differently or the formatting is
+	  changed when you view the document.
+	
+	- When you print a document, the text may appear smaller than expected.
+	
+	- Custom desktop settings have changed fonts.
+	
+	CAUSE
+	=====
+	
+	The registry key that lists TrueType fonts may be damaged or missing.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, use the appropriate method:
+	
+	Use the Fontreg Tool
+	--------------------
+	
+	Running Fontreg.exe adds a registry key that allows the installation of TrueType
+	fonts. To run Fontreg.exe and install the fonts, follow these steps:
+	
+	NOTE: The Fontreg tool (Fontreg.exe) is not included with Windows NT 4.0. To use
+	this tool in Windows NT 4.0, copy the Fontreg.exe file from a Windows
+	95/98-based computer.
+	
+	1. Click the Start button, and then click Run.
+	
+	2. Type "fontreg" (without the quotation marks) in the Open box, and then click
+	  OK.
+	
+	3. In Control Panel, double-click Fonts.
+	
+	4. On the File menu, click Install New Font.
+	
+	5. In the Folders box, select the folder that contains the TrueType fonts
+	  (usually Windows\Fonts).
+	
+	6. Click Select All, and then click OK.
+	
+	7. If your documents are not printed as you expect, remove and reinstall the
+	  appropriate printer driver.
+	
+	Edit the Fonts Registry Key
+	---------------------------
+	
+	WARNING: Using Registry Editor incorrectly can cause serious problems that may
+	require you to reinstall Windows 95/98 or Windows NT. Microsoft cannot guarantee
+	that problems resulting from the incorrect use of Registry Editor can be solved.
+	Use Registry Editor at your own risk.
+	
+	NOTE: For information about how to edit the registry, view the Changing Keys And
+	Values online Help topic in Registry Editor (Regedit.exe). Note that you should
+	make a backup copy of the registry files (System.dat and User.dat) before you
+	edit the registry.
+	
+	To replace a missing or damaged Fonts key in the registry, follow these steps:
+	
+	1. Move the contents of the Fonts folder to an empty folder.
+	
+	2. If the Fonts key exists in the following registry setting, delete the Fonts
+	  key and then add it again:
+	
+	  Windows 95/98:
+	  --------------
+	
+	  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion
+	
+	  Windows NT:
+	  -----------
+	
+	  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion
+	
+	  If the Fonts key does not exist in the registry setting listed above, add the
+	  following key:
+	
+	  Fonts
+	
+	3. In Control Panel, double-click Fonts.
+	
+	4. On the Fonts menu, click Install New Font.
+	
+	5. In the Folders box, select the folder you moved the fonts to in step 1.
+	
+	6. Click Select All, and then click OK.
+	
+	7. If your documents are not printing as expected, remove and reinstall the
+	  appropriate printer driver.
+	
+	MORE INFORMATION
+	================
+	
+	Note that Windows 95/98 has a limit of approximately 1000 fonts.
+	
+	For additional information about this font limitation, see the following article
+	in the Microsoft Knowledge Base:
+	
+	  ARTICLE-ID: Q131943
+	  TITLE : TrueType Font Limits in Windows 95
+	
+	Additional query words: 98 ttf winnt
+	
+	======================================================================
+	Keywords          : kberrmsg kbprint win95 win98 kbPrinting win98se 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinMEsearch kbWin95search kbWin98search kbWin98SEsearch kbZNotKeyword3 kbWin98 kbWinME kbWin98SE
+	Version           : :4.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

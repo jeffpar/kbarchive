@@ -1,0 +1,106 @@
+---
+layout: page
+title: "Q139625: HOWTO: Use and Call the GetUserName API"
+permalink: kb/139/Q139625/
+---
+
+## Q139625: HOWTO: Use and Call the GetUserName API
+
+	Article: Q139625
+	Product(s): Microsoft FoxPro
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbvfp300 kbvfp500 kbvfp600
+	Last Modified: 28-JUL-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Windows NT and Windows 95 may require that users log on to a computer or
+	network. On occasion, you may want to use the login user id for your
+	application. By using the GetUserName API call, you can discover the name of the
+	user who is currently logged on to the system. This article shows by example how
+	to use and call the Win32 GetUserName API.
+	
+	MORE INFORMATION
+	================
+	
+	Having the user id of the currently logged in user can be helpful in multiuser
+	programming for situations such as updating a table field with the user id of a
+	user who has a record locked.
+	
+	The GetUserName API call is specific to Windows 95 and Windows NT and cannot be
+	used in Windows or Windows for WorkGroups.
+	
+	The return value held in the variable lpUserIDBuffer is null terminated, so to
+	get just the user ID, the following sample code trims the actual return value by
+	using the LEFT, LEN, and ALLTRIM functions.
+	
+	Sample Code
+	-----------
+	
+	     **--------------------------------------------------------**
+	     ** Program: Getuser.prg                                   **
+	     ** Purpose: Demonstrates how to use and call the Win32    **
+	     ** GetUserName API.                                       **
+	     **--------------------------------------------------------**
+	     PUBLIC  lpUserIDBuffer, ;
+	             nBufferSize, ;
+	             RetVal
+	
+	     RetVal         = 0
+	     lpUserIDBuffer = SPACE(25) && Return buffer for user ID string
+	     nBufferSize    = 25        && Size of user ID return buffer
+	
+	     DECLARE INTEGER GetUserName IN Win32API AS GetName ;
+	             STRING  @lpUserIDBuffer, ;
+	             INTEGER @nBufferSize
+	
+	     RetVal=GetName(@lpUserIDBuffer, @nBufferSize)
+	
+	     DEFINE WINDOW ShowInfo FROM 0,0 TO 5,70 ;
+	             FLOAT CLOSE ;
+	             TITLES "User ID Information" ;
+	             FONT "Courier",10
+	
+	     ACTIVATE WINDOW ShowInfo
+	     MOVE WINDOW ShowInfo CENTER
+	
+	     @ 0,1 SAY "User ID  : " + ;
+	       LEFT(lpUserIDBuffer,nbuffersize-1)
+	
+	General Information
+	-------------------
+	
+	For an alternative to this method that will work on any of the platforms,
+	including Windows 3.1 and Windows for Workgroups, please see the following
+	article in the Microsoft Knowledge Base:
+	
+	  Q99921 HOWTO: Obtain Network User IDs from Within FoxPro
+	
+	REFERENCES
+	==========
+	
+	For additional information on this API function, please refer to the online
+	Win32API help file under the "GetUserName" topic. Note that this help file is
+	available only on the compact disc version of Visual FoxPro. It is not shipped
+	with the floppy disk version.
+	
+	For more information about the DECLARE DLL command, please refer to the Visual
+	FoxPro online Help file.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbvfp300 kbvfp500 kbvfp600 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP500 kbVFP600
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

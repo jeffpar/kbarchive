@@ -1,0 +1,112 @@
+---
+layout: page
+title: "Q190446: Restricting Access to TN3270 LUs"
+permalink: kb/190/Q190446/
+---
+
+## Q190446: Restricting Access to TN3270 LUs
+
+	Article: Q190446
+	Product(s): Microsoft SNA Server
+	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 24-SEP-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 4.0, 4.0 SP1 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	To restrict access to TN3270 LUs configured for SNA Server, add the IP addresses
+	or names of the workstations to which you want to grant access in the IP Address
+	List of the LU properties in SNA Server Manager. Depending on the information
+	(name, IP address, subnet mask) that is entered in the IP Address List, you can
+	restrict the LU to one specific IP address or a range of addresses on the
+	network.
+	
+	NOTE: If no IP address or name restriction is configured for a TN3270 LU, then
+	the LU is implicitly made available for use by any TN3270 client who attempts to
+	connect to the server.
+	
+	MORE INFORMATION
+	================
+	
+	Restricting Access by IP Address
+	--------------------------------
+	
+	When an IP address and subnet mask is added to the IP Address List, the LU can be
+	restricted to the workstation with that specific IP address, or to any
+	workstation on the same network. SNA Server will logically "AND" the IP address
+	with the subnet mask, to determine what workstation IP addresses are allowed
+	access to the LU. The process of ANDing involves converting the IP address and
+	subnet mask to binary numbers and adding the two together. The examples below
+	illustrate this concept:
+	
+	1. 
+	
+	  IP Address = 010.100.004.022  Subnet Mask = 255.255.000.000
+	
+	  IP Address   00001010  01100100  00000100  00010110
+	  Subnet Mask  11111111  11111111  00000000  00000000
+	               --------------------------------------
+	  Result       00001010  01100100  00000000  00000000
+	
+	  The AND result in decimal is 010.100.000.000 Therefore, addresses
+	  010.100.000.001 - 010.100.255.254 have access to the LU.
+	
+	2. 
+	
+	  IP Address = 010.100.004.022  Subnet Mask = 255.255.255.255
+	
+	  IP Address   00001010  01100100  00000100  00010110
+	  Subnet Mask  11111111  11111111  11111111  11111111
+	               --------------------------------------
+	  Result       00001010  01100100  00000100  00010110
+	
+	  The AND result in decimal is 010.100.004.022. Therefore, this is the only
+	  address that has access to the LU.
+	
+	3. 
+	
+	  IP Address = 131.107.100.001  Subnet Mask = 255.255.240.0
+	
+	  IP Address   10000011  01101011  01100100  00000001
+	  Subnet Mask  11111111  11111111  11110000  00000000
+	               --------------------------------------
+	  Result       10000011  01101011  01100000  00000000
+	
+	  The AND result in decimal is 131.107.096.000. Therefore, addresses
+	  131.107.096.001 - 131.107.111.254 have access to the LU.
+	
+	Restricting Access by Name
+	--------------------------
+	
+	If a name is entered in the IP Address List for the TN3270 LU, SNA Server will
+	resolve the name to the workstation using NetBios name resolution. There is no
+	option to add a subnet mask. To use this feature, the TN3270 server must be
+	configured with the Use Name Resolution checkbox, and the TCP/IP name resolution
+	method (for example, DNS, WINS, and so on) must be able to support ?IP address
+	to name? lookups. If not, the TN3270 client computer must be able to respond to
+	a NETBIOS ?node status query? request. To find the TN3270 client's name, the
+	TN3270 server uses the GetHostByAddr() sockets function.
+	
+	For additional information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q138086 Windows NT 3.51: Reverse Name Resolution for WINS Clients
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ400 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ300SP2
+	Version           : WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

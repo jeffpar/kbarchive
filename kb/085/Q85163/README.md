@@ -1,0 +1,60 @@
+---
+layout: page
+title: "Q85163: Default CONFIG.SYS and AUTOEXEC.BAT Files"
+permalink: kb/085/Q85163/
+---
+
+## Q85163: Default CONFIG.SYS and AUTOEXEC.BAT Files
+
+	Article: Q85163
+	Product(s): Microsoft Windows 3.x Retail Product
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 17-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 3.1 
+	- Microsoft MS-DOS operating system version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The following are the default CONFIG.SYS and AUTOEXEC.BAT files created by the
+	Windows & MS-DOS 5 for PS/2 Setup program.
+	
+	Default AUTOEXEC.BAT
+	--------------------
+	
+	  C:\WINDOWS\SMARTDRV.EXE
+	  @ECHO OFF
+	  PROMPT $p$g
+	  PATH C:\WINDOWS;C:\DOS
+	  SET TEMP=C:\DOS
+	
+	Default CONFIG.SYS
+	------------------
+	
+	  DEVICE=C:\DOS\SETVER.EXE
+	  DEVICE=C:\WINDOWS\HIMEM.SYS
+	  DOS=HIGH
+	  FILES=30
+	  DEVICE=C:\WINDOWS\SMARTDRV.EXE /DOUBLE_BUFFER
+	  STACKS=9,256
+	
+	Some IBM PS/2 machines may be configured with other hard drive types, such as IDE
+	or ESDI, in which case the double buffering portion of SMARTDrive may not appear
+	in the CONFIG.SYS file.
+	
+	Additional query words: 3.10 5.00a
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbMSDOSSearch kbMSDOS500
+	Version           : :
+	
+	=============================================================================
+	

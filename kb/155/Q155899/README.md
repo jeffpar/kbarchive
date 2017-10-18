@@ -1,0 +1,116 @@
+---
+layout: page
+title: "Q155899: WD97: Merged Document Based on Elegant Template Includes Header"
+permalink: kb/155/Q155899/
+---
+
+## Q155899: WD97: Merged Document Based on Elegant Template Includes Header
+
+	Article: Q155899
+	Product(s): Word 97 for Windows
+	Version(s): WINDOWS:97
+	Operating System(s): 
+	Keyword(s): kbtemplate kbmerge
+	Last Modified: 14-NOV-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you create a mail merge main document using the Elegant, Professional, or
+	Contemporary Templates, attach an envelope to the main document, and then merge
+	the document, the envelopes for the second and subsequent merged documents may
+	include headers and footers.
+	
+	CAUSE
+	=====
+	
+	During the mail merge process, Word uses the header and footer information from
+	the main document in the merged document. This information is in the original
+	template on which you based the document (Elegant, Professional or Contemporary
+	Template).
+	
+	The Contemporary and Elegant Templates include a different first page header and
+	footer, and a header for the second and subsequent pages. The Professional
+	Template includes a different first page header, and a header for the second and
+	subsequent pages. During the mail merge process, Word retains the Same as
+	Previous property in the header and footer, and as a result, each new section
+	places headers and footers into the envelopes.
+	
+	NOTE: This problem occurs with other Microsoft or third-party templates that have
+	a different header for the first page versus the remaining pages in the
+	document.
+	
+	WORKAROUND
+	==========
+	
+	To work around this problem, open the mail merge main document and use either of
+	the following methods.
+	
+	Method 1: Removing the Header and Footer
+	----------------------------------------
+	
+	NOTE: If you use this method, you cannot place and headers or footers into your
+	document.
+	
+	1. On the File menu, click Page Setup, and then click the Layout tab.
+	
+	  NOTE: If you are unable to click Page Setup, click the first page of your
+	  document (not the envelope page).
+	
+	2. Under Headers and Footers, click to clear the Different First Page check box,
+	  and then click OK.
+	
+	3. On the View menu, click Header and Footer.
+	
+	4. Click the Show Next button in the Header And Footer toolbar, until the header
+	  for section 2 is shown.
+	
+	5. Select the text in the header, and then click Clear on the Edit menu.
+	
+	6. Click the "Switch Between Header and Footer" button on the Header and Footer
+	  toolbar. If the footer for section 2 is not shown, click the Show Previous or
+	  Show Next button until the footer for section 2 is shown.
+	
+	7. Select the text in the footer, and then click Clear on the Edit menu.
+	
+	8. Click Close on the Header and Footer toolbar.
+	
+	Method 2: Retaining the Header and Footer
+	-----------------------------------------
+	
+	NOTE: This method only works with documents that are based on the Elegant or
+	Professional Templates. It does not work with documents based on the
+	Contemporary Template, because this template contains graphics.
+	
+	1. Place the insertion point into the upper left part of the envelope within the
+	  mail merge main document. The Style should be Envelope Return.
+	
+	2. On the File menu, click Page Setup, and then click the Layout tab.
+	
+	3. Under Headers and Footers, click to select the Different First Page check
+	  box, and then click OK.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft Word 97 for Windows.
+	We are researching this problem and will post new information here in the
+	Microsoft Knowledge Base as it becomes available.
+	
+	
+	Additional query words: 8.0 8.00 word8 word97
+	
+	======================================================================
+	Keywords          : kbtemplate kbmerge 
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : WINDOWS:97
+	Issue type        : kbbug
+	
+	=============================================================================
+	

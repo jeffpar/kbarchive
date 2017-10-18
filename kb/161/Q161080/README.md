@@ -1,0 +1,67 @@
+---
+layout: page
+title: "Q161080: Windows 95 Clients Connected to NT Server over NWLink May Fail"
+permalink: kb/161/Q161080/
+---
+
+## Q161080: Windows 95 Clients Connected to NT Server over NWLink May Fail
+
+	Article: Q161080
+	Product(s): Microsoft Windows NT
+	Version(s): 3.11 3.5 3.51 4.0
+	Operating System(s): 
+	Keyword(s): kbnetwork
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+	- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+	- Microsoft Windows for Workgroups version 3.11 
+	- Microsoft Windows 95 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Applications on Windows 95 or Windows for Workgroups 3.11 may fail while writing
+	data to a computer running Microsoft Windows NT server over the NWLink protocol.
+	The problem occurs only when direct hosting over NWLink is used. Direct hosting
+	is a method of bypassing the NetBIOS layer and sending client/server message
+	blocks (SMBs) directly over the NWLink protocol.
+	
+	When the problem occurs, the application on the client computer may display the
+	following message:
+	
+	  Error 55: The specified network resource or device is no longer available.
+	
+	
+	
+	WORKAROUND
+	==========
+	
+	The workaround involves disabling direct hosting. To turn off direct hosting,
+	disable the NWLink IPX/SPX binding in Windows NT Server service. After this is
+	done, enable NWLink with NetBIOS on the client computer.
+	
+	For more information, query on the following words here in the Microsoft
+	Knowledge Base:
+	
+	  direct and hosting
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Windows NT version 3.5x and 4.0.
+	We are researching this problem and will post new information here in the
+	Microsoft Knowledge Base as it becomes available.
+	
+	======================================================================
+	Keywords          : kbnetwork 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search kbAudDeveloper kbWin95search kbWFWSearch kbZNotKeyword3 kbWFW311
+	Version           : 3.11 3.5 3.51 4.0
+	Issue type        : kbbug
+	
+	=============================================================================
+	

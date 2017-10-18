@@ -1,0 +1,196 @@
+---
+layout: page
+title: "Q152562: How to Use Windows 95 to Connect Computers on a Network"
+permalink: kb/152/Q152562/
+---
+
+## Q152562: How to Use Windows 95 to Connect Computers on a Network
+
+	Article: Q152562
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:95
+	Operating System(s): 
+	Keyword(s): kbnetwork 3rdpartynet msnets win95 win98 kb3rdPartyNetClientkbfaq
+	Last Modified: 28-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 95 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article is a general overview of how to connect two or more computers
+	running Windows 95 to form a network.
+	
+	MORE INFORMATION
+	================
+	
+	You can connect two or more computers running Windows 95 using the following
+	methods:
+	
+	- Using a network adapter in each computer.
+	
+	  NOTE: If you connect computers using network adapters and twisted-pair cable,
+	  please note that you need a 10Base-T hub to connect the computers. If you
+	  connect computers using network adapters and Thinnet (BNC/COAX) cable, you
+	  must connect the cable to each network adapter using a T-connector with a
+	  terminator at each end of the cable.
+	
+	- Using your modem as a dial-up adapter to dial into a Dial-Up Networking
+	  Server (a component of Microsoft Plus! for Windows 95) or other remote
+	  server.
+	
+	- Using Direct Cable Connection (DCC).
+	
+	  NOTE: A maximum of 2 computers can be connected at a time using DCC.
+	
+	Connecting with Network Adapters
+	--------------------------------
+	
+	NOTE: This section assumes that each computer has a network adapter installed and
+	that your computers are connected together properly using network cable. For
+	information about how to configure your network adapters and physically connect
+	your computers, consult the documentation included with your network adapters or
+	contact the manufacturer(s) of your network adapters.
+	
+	After the physical connections are made, use the Add New Hardware tool in Control
+	Panel to detect your network adapter. Once the network adapter is set up, follow
+	these steps to make sure the correct network components are installed:
+	
+	1. Use the right mouse button to click Network Neighborhood, and then click
+	  Properties on the menu that appears.
+	
+	2. On the Configuration tab, make sure that at least the following network
+	  components are installed:
+	
+	   - Client: Client for Microsoft Networks (if you do not have a Novell
+	     NetWare server, you do not need to install the Client for NetWare
+	     networks).
+	
+	   - Adapter: This should be the network adapter detected by the Add New
+	     Hardware Wizard.
+	
+	   - Protocol: Choose at least one of the following:
+	
+	      - NetBEUI                       Best for small networks
+	                                      where routing does not
+	                                      take place
+	
+	      - IPX/SPX-compatible Protocol   Used by Novell NetWare
+	                                      networks; best for small
+	                                      to large networks where
+	                                      routing takes place
+	
+	      - TCP/IP                        The default protocol used by
+	                                      the World Wide Web; best for
+	                                      any size network where routing
+	                                      takes place.
+	
+	   - Service: File and Printer Sharing for Microsoft Networks
+	
+	3. Click File And Print Sharing, click the appropriate check boxes to select
+	  them, and then click OK.
+	
+	4. On the Identification tab, enter a name for your computer and your workgroup,
+	  and then click OK.
+	
+	  NOTE: The computer name must be unique for each computer on the network and
+	  should be no more than 15 characters in length. In small networks, the
+	  workgroup name should normally be the same for each computer so that all
+	  computers are visible in the same workgroup when browsing. Avoid using spaces
+	  and the following characters in computer and workgroup names:
+	
+	     / \ * , . " @
+	
+	5. Restart your computer when you are prompted to do so.
+	
+	To share network resources, follow these steps:
+	
+	1. Double-click My Computer.
+	
+	2. Use the right mouse button to click the drive, folder, or printer you want to
+	  share with members of your network, and then click Sharing on the menu that
+	  appears.
+	
+	3. On the Sharing tab, click Shared As, and then type a name for the share in
+	  the Share Name box.
+	
+	4. Click the access type you want for this shared resource. For a description of
+	  an access type, use the right mouse button to click the access type, and then
+	  click What's This? on the menu that appears.
+	
+	5. Type a password for the shared resource.
+	
+	  NOTE: You do not have to assign a password to a shared resource. A password
+	  simply gives you additional security.
+	
+	6. Click OK.
+	
+	To connect to a shared resource, use one of the following methods:
+	
+	- Double-click Network Neighborhood, double-click a listed computer to see the
+	  resources shared by that computer, and then double-click a shared resource to
+	  view its contents.
+	
+	- Use the right mouse button to click Network Neighborhood or My Computer,
+	  click Map Network Drive on the menu that appears, and then enter the
+	  following line in the Path dialog box:
+	
+	     \\<ComputerName>\<ShareName>
+	
+	  where <ComputerName> is the name of the computer you are connecting to,
+	  and <ShareName> is the name of the shared resource.
+	
+	- Click Start, click Run, and then enter the following line in the Open box:
+	
+	     \\<ComputerName>\<ShareName>
+	
+	  where <ComputerName> is the name of the computer you are connecting to,
+	  and <ShareName> is the name of the shared resource.
+	
+	- Click Start, point to Find, click Computer, and then type the name of the
+	  computer that you want to locate. When the computer is found, double-click
+	  the computer name to show the resources shared by that computer.
+	
+	Connecting with Dial-Up Adapters
+	--------------------------------
+	
+	Dial-Up Networking lets you use your modem to connect to a network through a
+	remote server.
+	
+	For information about connecting to a remote server using Dial-Up Networking,
+	please see the following article in the Microsoft Knowledge Base:
+	
+	  Q145843 How to Connect to a Remote Server
+	
+	Connecting with Direct Cable Connection
+	---------------------------------------
+	
+	You can use Direct Cable Connection to establish a direct serial or parallel
+	cable connection between two computers. For information about using Direct Cable
+	Connection, see the "Direct Cable Connection, setting up a direct cable
+	connection" online Help topic in Windows 95.
+	
+	Resource Materials
+	------------------
+	
+	The Microsoft Windows 95 Resource Kit contains additional detailed information
+	about many networking topics. For information about the Windows 95 Resource Kit
+	and other helpful resources, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q141193: Training and Source Materials for Windows 95
+	
+	Additional query words: peer to direct cable connection dcc tcp/ip
+	
+	======================================================================
+	Keywords          : kbnetwork 3rdpartynet msnets win95 win98 kb3rdPartyNetClient kbfaq
+	Technology        : kbWin95search kbZNotKeyword3
+	Version           : WINDOWS:95
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

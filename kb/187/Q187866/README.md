@@ -1,0 +1,129 @@
+---
+layout: page
+title: "Q187866: XADM: Store Produces Dr. Watson When Converting File Name"
+permalink: kb/187/Q187866/
+---
+
+## Q187866: XADM: Store Produces Dr. Watson When Converting File Name
+
+	Article: Q187866
+	Product(s): Microsoft Exchange
+	Version(s): WINDOWS:5.0,5.5
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 29-APR-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 5.0, 5.5 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	Store.exe produces a Dr. Watson error when certain Internet Mail messages are
+	received by the information store.
+	
+	CAUSE
+	=====
+	
+	This behavior is caused when the information store is attempting to convert a
+	message containing a UNICODE file name without an extension. As a result, a NULL
+	pointer is referenced, which causes Store.exe to fault.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+	version 5.0.
+	
+	
+	A supported fix is now available, but has not been fully regression-tested and
+	should be applied only to systems experiencing this specific problem. Unless you
+	are severely impacted by this specific problem, Microsoft recommends that you
+	wait for the next service pack that contains this fix. Contact Microsoft
+	Technical Support for more information.
+	
+	This fix has been posted to the following Internet location:
+	
+	  ftp://ftp.microsoft.com/bussys/exchange/exchange-public/fixes/Eng/Exchg5.0/Post-SP2-STORE/
+	
+	
+	
+	
+	Microsoft has confirmed this to be a problem in Microsoft Exchange Server version
+	5.5. This problem has been corrected in the latest U.S. service pack for
+	Microsoft Exchange Server version 5.5. For information on obtaining the service
+	pack, query on the following word in the Microsoft Knowledge Base (without the
+	spaces):
+	
+	  S E R V P A C K
+	
+	
+	
+	MORE INFORMATION
+	================
+	
+	There is no way of preventing messages of this type from entering the
+	information store for conversion; therefore, the fix allows the store to better
+	handle messages that reference NULL pointers.
+	
+	 FramePtr  RetAddr   Param1   Param2   Param3   Function Name
+	 0f2bf5b0  0081515e  000004e4 00000000 0f4e5b2e
+	 STORE!CmnContent::cbGetFileNamePart+0x2d [ mnode.cpp @ 984 ]
+	 0f2bf604  0081538c  000004e4 00000000 00000000
+	 STORE!CmnContent::ConvertToShortFileNameW+0x35e [ mnode.cpp @ 1292 ]
+	 0f2bf638  0082a5c4  018a697c 00000000 00000000
+	 STORE!CmnContent::hrResolveFileName+0x13c [ mnode.cpp @ 1384 ]
+	 0f2bf66c  0080564e  018a20d4 0f4c8964 018a5654
+	 STORE!CmcvtrBptRFCMIME::hrExtract+0x134 [ mcvtrbdy.cpp @ 3980 ]
+	 0f2bf6a8  0083d7d5  0f527520 00004000 0f2bf6cc
+	 STORE!CINETextr::hrExtract+0x1ee [ mdrvr.cpp @ 1023 ]
+	 0f2bf6ec  005ae105  018a374c 0f527520 00004000
+	 STORE!CConvertStream::Write+0x115 [ cvtstrm.cpp @ 708 ]
+	 0f2bf710  005a75e5  0f527520 00004000 0f2bf784
+	 STORE!CSTREAM::HrWrite+0xc5 [ cstream.cxx @ 189 ]
+	 0f2bf758  0045c582  00004000 0f527520 0f2bf784
+	 STORE!EcWriteStreamOp+0x125 [ rpcintf.cxx @ 7735 ]
+	 0f2bf788  0044eed9  00000000 00000012 00000000 STORE!EcWriteStream+0xc2
+	 [ mapidisp.cxx @ 9114 ]
+	 0f2bf894  004664cd  0f2bf90c 00004200 0f2bf92c STORE!EcRpc+0x1e79 [
+	 mapidisp.cxx @ 1193 ]
+	 0f2bf928  77df1681  048b0ba8 0f527324 048dca0c STORE!EcDoRpc+0xdd [
+	 rpc.c @ 1001 ]
+	 0f2bf948  77e3226c  004663f0 0f2bfb3c 00000004
+	 RPCRT4!NdrpPointerUnmarshall+0x13b(UKNOWN FPO TYPE)
+	 0f2bf964  77e3223d  004663f0 0f2bfb3c 00000004
+	 RPCRT4!?__MIDL_TypeFormatString@@3U_MIDL_TYPE_FORMAT_STRING@@B+0x33c
+	 0f2bfc28  77e31fa5  00000000 00000000 0f2bfe08
+	 RPCRT4!?__MIDL_TypeFormatString@@3U_MIDL_TYPE_FORMAT_STRING@@B+0x30d
+	 0f2bfc7c  77df138d  008bff9a 0f2bfe08 0f2bfdc4
+	 RPCRT4!?__MIDL_TypeFormatString@@3U_MIDL_TYPE_FORMAT_STRING@@B+0x75
+	 0f2bfcd0  77df125c  0f2bfe08 00000000 0f2bfdc4
+	
+	 RPCRT4!?DispatchToStubWorker@RPC_INTERFACE@@AAEJPAU_RPC_MESSAGE@@IPAJ@
+	  Z+0 xb(UKNOWN FPO TYPE)
+	 0f2bfcf0  77df1d2c  0f2bfe08 00000000 0f2bfdc4
+	 RPCRT4!DispatchToStubInC+0x37(UKNOWN FPO TYPE)
+	 0f2bfdc8  77df2b2a  00144508 0f2bfe68 0f2bfe08
+	 RPCRT4!NdrServerInitializeNew+0x17 (FPO: [3,0,3])
+	 0f2bfe40  77df6365  00144508 0f2bfe68 00000000
+	 RPCRT4!?TransReceive@TRANS_ADDRESS@@UAEJPAPAVOSF_SCONNECTION@@PAPAXPAI
+	  @Z+ 0xdc(UKNOWN FPO TYPE)
+	 0f2bff90  77df6656  77df5396 048a6998 0f2bffec 0x77df6365(UKNOWN FPO
+	 TYPE)
+	 00003a98  00000000  00000000 00000000 00000000
+	 PCRT4!?ActuallyAllocateCCall@WMSG_CASSOCIATION@@QAEJPAPAVWMSG_CCALL
+	  @@PAV WMSG_BINDING@@@Z+0x6(UKNOWN FPO TYPE)
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+	Version           : WINDOWS:5.0,5.5
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

@@ -1,0 +1,74 @@
+---
+layout: page
+title: "Q119060: Writer/Artist: Starts in Black and White"
+permalink: kb/119/Q119060/
+---
+
+## Q119060: Writer/Artist: Starts in Black and White
+
+	Article: Q119060
+	Product(s): Microsoft Home Kids Products
+	Version(s): MACINTOSH:1.0,1.1,1.1a
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 27-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Creative Writer for the Macintosh, versions 1.0, 1.1, 1.1a 
+	- Microsoft Fine Artist for the Macintosh, versions 1.0, 1.1, 1.1a 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Creative Writer and/or Fine Artist may start in black and white on a color
+	Macintosh monitor.
+	
+	CAUSE
+	=====
+	
+	This will occur if the memory allocation to the application is less than 1536K.
+	
+	MORE INFORMATION
+	================
+	
+	Setup checks for available memory on the Macintosh before it allocates a
+	specific amount of memory to Creative Writer or Fine Artist. It is likely that
+	when Setup was run, it perceived that there was not a lot of memory available on
+	the Macintosh, and allocated 1536K or less to the application.
+	
+	The following are the default memory allocations on a Macintosh with adequate
+	available memory:
+	
+	  Suggested: 4096K
+	  Minimum: 1024K
+	  Preferred: 4096K
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, follow these steps:
+	
+	1. From the Apple menu, choose About This Macintosh to see how much total memory
+	  exists on the computer, and to determine the largest unused block. (On System
+	  6.x Macintoshes, choose About the Finder.)
+	
+	2. If there is enough memory available, allocate more memory to the application.
+	  Do not allocate more than the largest unused block.
+	
+	  If there is not enough memory available, see the "Apple Macintosh User's
+	  Guide" for information about memory management on the Macintosh.
+	
+	After following these steps, the application(s) should run in color.
+	
+	Additional query words: 1.00 mskids mac colors grey gray grayscale 1.10 kids mczee screen display wm_artist 1.10a
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbPTProdChange kbCreativeWriter110Mac kbCreativeWriter110aMac kbCreativeWriter100Mac kbFineArtist110Mac kbFineArtist110aMac kbFineArtist100Mac
+	Version           : MACINTOSH:1.0,1.1,1.1a
+	
+	=============================================================================
+	

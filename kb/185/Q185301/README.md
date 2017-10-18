@@ -1,0 +1,109 @@
+---
+layout: page
+title: "Q185301: &quot;None of the Above&quot; Hardware Profile Resets Device Configuration"
+permalink: kb/185/Q185301/
+---
+
+## Q185301: &quot;None of the Above&quot; Hardware Profile Resets Device Configuration
+
+	Article: Q185301
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): 1.0,2.0,2.1,2.5
+	Operating System(s): 
+	Keyword(s): kbenv kbhw osr1 osr2 win95 kbHardwarekbfixlist
+	Last Modified: 11-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 95 
+	- Microsoft Windows 95 OEM Service Release, versions 1.0, 2.0, 2.1, 2.5 
+	- Microsoft Windows 98 
+	- Microsoft Windows 98 Second Edition 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+	
+	  Q256986 Description of the Microsoft Windows Registry
+	
+	SYMPTOMS
+	========
+	
+	If you have multiple hardware profiles configured, an option labeled "None of
+	the Above" is included in the list of hardware profiles when you start your
+	computer. If you select "None of the Above," Plug and Play enumeration occurs,
+	and some devices may be reset to configurations that the drivers configured in
+	the hardware profiles cannot support. When this occurs, you may have to manually
+	reload the original device drivers.
+	
+	RESOLUTION
+	==========
+	
+	This issue is resolved by the following updated file:
+	
+	Windows 95 version 4.00.950 (retail release) and 4.00.950 A (Service Pack 1):
+	
+	  Io.sys dated 12/22/97 5:53pm   223,230 bytes
+	
+	Windows 95 version 4.00.950 B (OEM Service Release 2 and 2.1) and 4.00.950 C (OEM
+	Service Release 2.5):
+	
+	  Io.sys dated 12/22/97 6:10pm   214,918 bytes
+	
+	Windows 98 version 4.10.1998 (retail release):
+	
+	  Io.sys dated 05/21/99  05:13p    222,456 bytes
+	
+	Refer to the following article for information on an update for Windows 98 Second
+	Edition that fixes the problem described in this article:
+	
+	  Q239697 ACPI-Enabled Laptop Prompts Twice for a Hardware Profile
+	
+	MORE INFORMATION
+	================
+	
+	WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+	that may require you to reinstall your operating system. Microsoft cannot
+	guarantee that you can solve problems that result from using Registry Editor
+	incorrectly. Use Registry Editor at your own risk.
+	
+	This update replaces the hidden system file named Io.sys in the root folder of
+	the boot drive and allows you to remove the "None of the Above" option from the
+	list of hardware profiles presented when you start your computer. The update
+	adds the following registry key:
+	
+	Key:        HKEY_LOCAL_MACHINE\System\CurrentControlSet\control\IDConfigDB
+	Value:      HideNoneOfAbove
+	Type:       Binary
+	Data Value: 01 00 00 00
+	
+	To hide the "None of the Above" option, set the value as shown above. To display
+	the "None of the Above" option, remove the value or set it to "00 00 00 00."
+	
+	The update described in this article is available for Windows 98 and Windows 98
+	Second Edition, as described in the following Microsoft Knowledge Base article:
+	
+	  Q239697 ACPI-Enabled Laptop Prompts Twice for a Hardware Profile
+	
+	For additional information about Windows 98 and Windows 98 Second Edition
+	hotfixes, click the article number below to view the article in the Microsoft
+	Knowledge Base:
+	
+	  Q206071 General Information About Windows 98 and Windows 98 Second Edition
+	  Hotfixes
+	
+	For additional information about Windows 95 hotfixes, click the article number
+	below to view the article in the Microsoft Knowledge Base:
+	
+	  Q161020 Implementing Windows 95 Updates
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbenv kbhw osr1 osr2 win95 kbHardware kbfixlist
+	Technology        : kbWin95search kbWin98search kbWin98SEsearch kbOPKSearch kbZNotKeyword3 kbWin98 kbWin98SE kbWin95OPKOSR25 kbWin95OPKOSR210
+	Version           : :1.0,2.0,2.1,2.5
+	Issue type        : kbprb
+	
+	=============================================================================
+	

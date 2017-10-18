@@ -1,0 +1,99 @@
+---
+layout: page
+title: "Q142018: BUG: Shutdown.exe Disables Windows NT ScreenSaver"
+permalink: kb/142/Q142018/
+---
+
+## Q142018: BUG: Shutdown.exe Disables Windows NT ScreenSaver
+
+	Article: Q142018
+	Product(s): Microsoft Windows NT
+	Version(s): 3.5,3.51
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 3.51 
+	- Microsoft Windows NT Server version 3.51 
+	- MSPRESS Microsoft Windows NT Resource Kit, versions 3.5, 3.51 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	When you use the Windows NT Resource Kit tool Shutdown.exe to shut down a REMOTE
+	computer running a Windows NT screensaver, the screensaver does not reactivate
+	on the REMOTE computer if the shutdown process is ended by using the following
+	command:
+	
+	  shutdown \\<remote_Windows_NT_computer> /a
+	
+	CAUSE
+	=====
+	
+	Shutdown.exe temporarily disabled the Windows NT screensaver.
+	
+	RESOLUTION
+	==========
+	
+	To reactivate the screensaver settings on the REMOTE computer, restart Windows
+	NT.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Windows NT version 3.51. We are
+	researching this problem and will post new information here in the Microsoft
+	Knowledge Base as it becomes available.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Problem
+	--------------------------
+	
+	1. On the REMOTE computer running Windows NT, select screensaver in Control
+	  Panel Desktop.
+	
+	2. Allow the screensaver to kick in on the REMOTE computer.
+	
+	3. On the LOCAL computer running Windows NT, type the following in a command
+	  prompt:
+	
+	  "shutdown \\<remote_Windows_NT_computer> /t:<time in number of
+	  seconds>" (without the quotation marks)
+	
+	  On the REMOTE computer, a System Shutdown window will pop up while the
+	  screensaver still runs in the background.
+	
+	4. On the LOCAL computer, type the following in a command prompt before the
+	  REMOTE computer shuts down:
+	
+	  "shutdown \\<remote_Windows_NT_computer> /a" (without the quotation
+	  marks)
+	
+	  This command will stop the shutdown process on the REMOTE computer, and the
+	  display will revert to the selected screensaver.
+	
+	5. On the REMOTE computer, stop the screensaver by moving the mouse. A blank
+	  screen or a bit-map screen will appear on the REMOTE computer.
+	
+	6. On the REMOTE computer, press the CTRL+ALT+DEL keys simultaneously. A Windows
+	  NT Security window will appear on the REMOTE computer. At this point,
+	  selecting either the Task List or Cancel option on the REMOTE computer will
+	  return control to Program Manager. At this point, the screensaver for the
+	  REMOTE computer, does not kick back in after the specified time expires.
+	
+	Additional query words: prodnt 3.50 screen saver ntui ntutil nt32ap
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbMSPressSearch kbWinNTS351search kbZNotKeyword6 kbZNotKeyword2 kbZNotKeyword5
+	Version           : :3.5,3.51
+	
+	=============================================================================
+	

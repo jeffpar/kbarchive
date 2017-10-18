@@ -1,0 +1,114 @@
+---
+layout: page
+title: "Q225056: SMS: PCMSVC32 Runs a Job After Expired Date"
+permalink: kb/225/Q225056/
+---
+
+## Q225056: SMS: PCMSVC32 Runs a Job After Expired Date
+
+	Article: Q225056
+	Product(s): Microsoft Systems Management Server
+	Version(s): winnt:1.2
+	Operating System(s): 
+	Keyword(s): kbsms120 kbsms120bug kbPCM
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server version 1.2 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The Package Command Manager service (PCMSVC32) may run a job even after the
+	expired date has passed.
+	
+	RESOLUTION
+	==========
+	
+	A supported fix is now available from Microsoft, but it is only intended to
+	correct the problem that is described in this article. Only apply it to systems
+	that are experiencing this specific problem. This fix may receive additional
+	testing. Therefore, if you are not severely affected by this problem, Microsoft
+	recommends that you wait for the next Systems Management Server service pack
+	that contains this fix.
+	
+	To resolve this problem immediately, contact Microsoft Product Support Services
+	to obtain the fix. For a complete list of Microsoft Product Support Services
+	phone numbers and information about support costs, visit the following Microsoft
+	Web site:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	NOTE: In special cases, charges that are ordinarily incurred for support calls
+	may be canceled if a Microsoft Support Professional determines that a specific
+	update will resolve your problem. The usual support costs will apply to
+	additional support questions and issues that do not qualify for the specific
+	update in question.
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	  Date      Time            Size    File name      Platform
+	  ----------------------------------------------------------------
+	  
+	  1/28/99   3:31pm        453,904   Pcmwin16.exe   x86
+	  1/28/99   3:30pm        468,912   Pcmwin32.exe   x86
+	  1/28/99   3:30pm        269,280   Pcmsvc32.exe   x86
+	  1/28/99   3:31pm      1,173,264   Pcmwin32.exe   Alpha
+	  1/28/99   3:33pm        798,480   Pcmsvc32.exe   Alpha
+	
+	NOTE: Due to file dependencies, the most recent hotfix or feature that contains
+	the above files may also contain additional files.
+	
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Systems Management Server
+	version 1.2.
+	
+	MORE INFORMATION
+	================
+	
+	
+	To install the hotfix, perform the following steps on the Systems Management
+	Server site server:
+	
+	1. Replace the Pcmsvc32.exe file in the
+	  <SMS_root>\Site.srv\<Platform>.bin directory with the hotfixed
+	  version.
+	
+	2. Reset the site. This is required for the updated file to be copied to all
+	  servers managed by the Site Configuration Manager. Windows NT Workstation
+	  computers running PCMSVC32 can be updated using RSERVICE.
+	
+	3. Replace the Pcmwin16.exe file in the
+	  <SMS_root>\Site.srv\Maincfg.box\Client.src\<Platform>.bin
+	  directory with the hotfixed version.
+	
+	4. Replace the Pcmwin32.exe file in the
+	  <SMS_root>\Site.srv\Maincfg.box\Client.src\<Platform>.bin
+	  directory with the hotfixed version.
+	
+	5. Maintenance Manager will replicate the updated file to the Systems Management
+	  Server logon servers on its next work cycle. To update the clients running
+	  PCMWIN, either manually run Upgrade.bat on each client or follow the
+	  instructions in the following article in the Microsoft Knowledge Base:
+	
+	  Q166771 SMS: How to Force Site-Wide Client Updates
+	
+	Additional query words: prodsms pcmsvc pcm win svc
+	
+	======================================================================
+	Keywords          : kbsms120 kbsms120bug kbPCM 
+	Technology        : kbSMSSearch kbSMS120
+	Version           : winnt:1.2
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

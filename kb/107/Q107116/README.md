@@ -1,0 +1,173 @@
+---
+layout: page
+title: "Q107116: 5250 Applet Keyboard Functions"
+permalink: kb/107/Q107116/
+---
+
+## Q107116: 5250 Applet Keyboard Functions
+
+	Article: Q107116
+	Product(s): Microsoft SNA Server
+	Version(s): WINDOWS:2.0,2.11,3.0,4.0
+	Operating System(s): 
+	Keyword(s): kbtool sna4
+	Last Modified: 12-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 2.0, 2.11, 3.0, 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The following is a list of 5250 keyboard functions of the 5250 Applet shipped
+	with SNA Server:
+	
+	NOTE: The SNA Server 3.0 5250 applet does support limited keyboard remapping. The
+	limited keyboard mapping support is not available in SNA Server 2.x versions of
+	the 5250 applet.
+	
+	5250 keyboard           Enhanced 101 keyboard
+	------------------------------------------------------
+	(Cent sign)             SHIFT + 6
+	|                       SHIFT + \ 
+	+                       SHIFT = =
+	(90-degree right angle) [
+	-                       - (MINUS SIGN)
+	F1                      F1
+	F2                      F2
+	F3                      F3
+	F4                      F4
+	F5                      F5
+	F6                      F6
+	F7                      F7
+	F8                      F8
+	F9                      F9
+	F10                     F10
+	F11                     F11
+	F12                     F12
+	F13                     SHIFT + F1
+	F14                     SHIFT + F2
+	F15                     SHIFT + F3
+	F16                     SHIFT + F4
+	F17                     SHIFT + F5
+	F18                     SHIFT + F6
+	F19                     SHIFT + F7
+	F20                     SHIFT + F8
+	F21                     SHIFT + F9
+	F22                     SHIFT + F10
+	F23                     SHIFT + F11
+	F24                     SHIFT + F12
+	Alternate Cursor        ALT + F9
+	Attention               ESCAPE
+	Backspace               BACKSPACE
+	                       SHIFT + BACKSPACE
+	BACKTAB                 SHIFT + TAB
+	CLEAR                   PAUSE
+	                       SHIFT + PAUSE
+	Cmd                     SHIFT + ALT (left)
+	                       SHIFT + ALT (right)
+	CURSOR UP               UP ARROW
+	                       8 (num pad)
+	                       SHIFT + UP
+	CURSOR DOWN             DOWN ARROW
+	                       2 (num pad)
+	                       SHIFT + DOWN
+	CURSOR LEFT             LEFT ARROW
+	                       4 (num pad)
+	                       SHIFT + LEFT
+	CURSOR RIGHT            RIGHT ARROW
+	                       6 (num pad)
+	                       SHIFT + RIGHT
+	DELETE                  DELETE
+	                       . (num pad)
+	DUP                     SHIFT + INSERT
+	END                     END
+	                       1 (num pad)
+	                       SHIFT + END
+	ENTER                   ENTER
+	ERASE EOF
+	ERASE EOL               ALT + HOME
+	ERASE INPUT             ALT + END
+	FAST CURSOR LEFT        ALT + LEFT
+	FAST CURSOR RIGHT       ALT + RIGHT
+	FIELD EXIT              CTRL (right)
+	FIELD MARK
+	FIELD -                 - (num pad)
+	                       SHIFT + - (num pad)
+	FIELD +                 + (num pad)
+	HOME                    HOME
+	                       7 (num pad)
+	                       SHIFT + HOME
+	HELP                    SCROLL LOCK
+	                       SHIFT + SCROLL LOCK
+	HEX                     ALT + F7
+	INSERT                  INSERT
+	                       0 (num pad)
+	LOCAL HELP              CTRL + SHIFT + H
+	LOCAL HELP CURSOR       CTRL + H
+	LOCAL PRINT             CTRL + P
+	NEWLINE                 SHIFT + ENTER
+	PAGE UP                 PAGE UP
+	                       9 (num pad)
+	                       SHIFT + PAGE UP
+	PAGE DOWN               PAGE DOWN
+	                       3 (num pad)
+	                       SHIFT + PAGE DOWN
+	PA1
+	PA2
+	PA3
+	PRINT                   PRINT SCREEN
+	RESET                   CTRL (left)
+	                       SHIFT + CTRL (left)
+	                       ALT + SCROLL LOCK
+	SYSTEM REQUEST          CTRL + S
+	                       ALT + NUM (*)
+	TAB                     TAB
+	                       SHIFT + NUM (+)
+	TEST REQUEST            ALT + PAUSE
+	WP BEGIN BOLD           ALT + B
+	WP BEGIN UNDERLINE      ALT + U
+	WP BEGINNING OF LINE    ALT + 4 (num pad)
+	WP BOTTOM OF PAGE       ALT + 2 (num pad)
+	WP CARRIER RETURN       ALT + ENTER
+	                       ALT + (num pad)
+	                       ALT - (num pad)
+	WP CENTER               ALT + C
+	WP END BOLD/UNDERLINE   ALT + J
+	WP END OF LINE          ALT + 6 (num pad)
+	WP HALF INDEX DOWN      ALT + H
+	WP HALF INDEX UP        ALT + Y
+	WP INSERT SYMBOLS       ALT + N
+	WP NEXT STOP CODE       ALT + N
+	WP NEXT TEXT COLUMN     ALT + D
+	WP PAGE END             ALT + P
+	WP REQUIRED BACKSPACE   ALT + BACKSPACE
+	WP REQUIRED PAGE        ALT + R
+	WP REQUIRED SPACE       ALT + SPACE
+	WP REQUIRED TAB         ALT + TAB
+	WP STOP CODE            ALT + S
+	WP TOP OF PAGE          ALT + 8 (num pad)
+	WP WORD UNDERLINE       ALT + W
+	
+	REFERENCES
+	==========
+	
+	For more information about supported limited keyboard remapping of the 5250
+	applet, see the following Microsoft Knowledge Base article:
+	
+	  Q159453 SNA Server 3.0 5250 Applet Numeric Pad Function Keys Don't Work
+	
+	Microsoft SNA Server "3270/5250 Applet User's Guide," Appendix
+	
+	Additional query words: prodsna
+	
+	======================================================================
+	Keywords          : kbtool sna4 
+	Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ200 kbSNAServ211 kbSNAServ400
+	Version           : WINDOWS:2.0,2.11,3.0,4.0
+	
+	=============================================================================
+	

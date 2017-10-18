@@ -1,0 +1,129 @@
+---
+layout: page
+title: "Q104604: SST WD7000 FAAST SCSI Cards and Windows NT"
+permalink: kb/104/Q104604/
+---
+
+## Q104604: SST WD7000 FAAST SCSI Cards and Windows NT
+
+	Article: Q104604
+	Product(s): Microsoft Windows NT
+	Version(s): 3.1
+	Operating System(s): 
+	Keyword(s): kbhw kbHardware
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 3.1 
+	- Microsoft Windows NT Workstation version 3.1 
+	- Microsoft Windows NT Advanced Server, version 3.1 
+	-------------------------------------------------------------------------------
+	
+	Windows NT does not provide drivers for the Columbia Data Products SST
+	WD7000-FAAST and WD7000-FAAST2 ultra high-speed SCSI controller cards.
+	However, Columbia Data has made available an upgraded BIOS called SST
+	IV version 1.0 which has support for Windows NT and OS/2 2.x. This is
+	an $85.00 upgrade and is only available through Columbia Data
+	Products.
+	
+	If the BIOS on the card is 3.36 or greater, another alternative is to
+	use the beta driver available for these cards found on Columbia Data's
+	technical support BBS.
+	
+	The Columbia Data Products products included here are manufactured by
+	a vendor independent of Microsoft; we make no warranty, implied or
+	otherwise, regarding these products' performance or reliability, nor
+	does Microsoft support any of these drivers or cards at this time.
+	
+	Columbia Data Products can be reached at the following:
+	
+	  Columbia Data Products, Inc.
+	  1070B Ranier Dr.
+	  Altamonte Springs, FL 32714-2584
+	
+	  Technical Support      (407)869-6700  10:00 A.M. - 6:00 P.M. EST, M-F
+	  Technical Support BBS  (407)862-4724
+	  Fax                    (407)862-4725
+	
+	Features of the 7000FAST2 Card
+	------------------------------
+	
+	- Supports up to seven devices on a single controller card--up to fourteen on
+	  two controllers
+	
+	- Intelligent Z-80 CPU channel control
+	
+	- Built-in floppy controller
+	
+	- WD33C93A SBIC for SCSI interface
+	
+	- First-party high-speed bus-mastering DMA data transfers
+	
+	- Up to 16-megabyte (MB) block-size transfers
+	
+	- 16-byte FIFO on AT bus for sustained data rate performance
+	
+	- Up to 4.0 MB per second SCSI synchronous data transfer rate
+	
+	- Up to 2.0 MB per second SCSI asynchronous data transfer rate
+	
+	- Up to 5.3 MB per second host transfer rate
+	
+	- Bus arbitration including disconnect and reconnect
+	
+	- Standard and extended SCSI commands
+	
+	- Supports full SCSI command set (SCSI I & II)
+	
+	- Single +5V power supply
+	
+	- On-board controller diagnostics
+	
+	- AT card form factor
+	
+	- Supports up to 64 logical devices
+	
+	- Linked SCSI commands
+	
+	Host Interface
+	--------------
+	
+	- 16 bit, bidirectional AT bus
+	
+	- 62-pin card edge connector
+	
+	- 38-pin card edge connector
+	
+	SCSI Interface
+	--------------
+	
+	- 9-bit, bidirectional SCSI bus
+	
+	- 50-pin SCSI controller
+	
+	- Internal -50 pin header
+	
+	- External -50 pin D style
+	
+	- 20 foot maximum (6 meters) drive cable
+	
+	Default Addressing
+	------------------
+	
+	DRQ Address      -   6
+	DACK Address     -   6
+	IRQ Address      -  15
+	I/O Port Address - 350h
+	IOS ROM Address - Variable (C800h - DC00h)
+	
+	Additional query words: prodnt FAST
+	
+	======================================================================
+	Keywords          : kbhw kbHardware 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW310 kbWinNTSsearch kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+	Version           : 3.1
+	
+	=============================================================================
+	

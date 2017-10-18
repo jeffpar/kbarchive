@@ -1,0 +1,59 @@
+---
+layout: page
+title: "Q87323: Windows Err Msg: NW IPX and SPX Not Loaded..."
+permalink: kb/087/Q87323/
+---
+
+## Q87323: Windows Err Msg: NW IPX and SPX Not Loaded...
+
+	Article: Q87323
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:3.1,3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 30-OCT-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows versions 3.1, 3.11 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When starting Terminal in Microsoft Windows operating system version 3.1, the
+	following error may appear:
+	
+	  NW IPX and SPX not loaded. Transport initialization error.
+	
+	RESOLUTION
+	==========
+	
+	You need to upgrade your version of IPX and NetX for Windows 3.1.
+	
+	Exit Windows and perform the following steps to upgrade versions of IPX and
+	NetX:
+	
+	1. Replace your current NetWare shell with the most current version. (Windows
+	  3.1 provides NETX.COM version 3.26.) You can use later versions of the
+	  NETX.COM even if your servers are running earlier versions of NetWare (as
+	  early as NetWare 2.1).
+	
+	2. If you are running Novell IPX.COM, have the system administrator generate a
+	  new version using the IPX.OBJ file provided with Windows 3.1.
+	
+	REFERENCES
+	==========
+	
+	NETWORKS.WRI located in your Windows directory
+	
+	Additional query words: 3.10 3.11 novell err msg 3rdparty
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+	Version           : WINDOWS:3.1,3.11
+	
+	=============================================================================
+	

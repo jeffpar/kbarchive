@@ -1,0 +1,148 @@
+---
+layout: page
+title: "Q326224: FIX: SNA Applications That Use SSO May Stop Responding"
+permalink: kb/326/Q326224/
+---
+
+## Q326224: FIX: SNA Applications That Use SSO May Stop Responding
+
+	Article: Q326224
+	Product(s): Microsoft SNA Server
+	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+	Operating System(s): 
+	Keyword(s): sna4 kbsna400sp1 kbsna400sp2 kbsna400sp3 kbhis2000 kbhis2000bug kbsna400sp4
+	Last Modified: 30-JUL-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4 
+	- Microsoft Host Integration Server 2000 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	An SNA application, such as a 3270 or 5250 emulator, that is configured to use
+	Single Sign-On (SSO), may stop responding (hang) when the application tries to
+	connect to a host session. When this problem occurs, the 3270 or 5250 emulator
+	typically shows a blank display window after the connection to the host session
+	is initiated.
+	
+	SNA applications that have existing host sessions are not affected when this
+	problem occurs.
+	
+	CAUSE
+	=====
+	
+	If a Host Account Cache (HAC) database that is being used by the SNA Server
+	service for SSO account lookups becomes unavailable, a deadlock can occur that
+	prevents the SNA Server service from locating another HAC database.
+	
+	SNA applications that use SSO stop responding while the SNA Server service is in
+	this deadlock state because the account lookups cannot be completed.
+	
+	RESOLUTION
+	==========
+	
+	SNA Server 4.0:
+	
+	A supported fix is now available from Microsoft, but it is only intended to
+	correct the problem that is described in this article. Only apply it to systems
+	that are experiencing this specific problem. This fix may receive additional
+	testing. Therefore, if you are not severely affected by this problem, Microsoft
+	recommends that you wait for the next Microsoft SNA Server version 4.0 service
+	pack that contains this fix.
+	
+	To resolve this problem immediately, contact Microsoft Product Support Services
+	to obtain the fix. For a complete list of Microsoft Product Support Services
+	phone numbers and information about support costs, visit the following Microsoft
+	Web site:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	NOTE: In special cases, charges that are ordinarily incurred for support calls
+	may be canceled if a Microsoft Support Professional determines that a specific
+	update will resolve your problem. The usual support costs will apply to
+	additional support questions and issues that do not qualify for the specific
+	update in question.
+	
+	The English version of this fix has the file attributes (or later) that are
+	listed in the following table. The dates and times for these files are listed in
+	coordinated universal time (UTC). When you view the file information, it is
+	converted to local time. To find the difference between UTC and local time, use
+	the Time Zone tab in the Date and Time tool in Control Panel.
+	
+	  Date         Time   Version     Size      File name
+	  ---------------------------------------------------------
+	  15-Jul-2002  12:32  4.0.0.606   138,848   Snarpc.dll       
+	
+	NOTE: Because of file dependencies, the most recent fix that contains the above
+	files may also contain additional files.
+	
+	
+	
+	Host Integration Server 2000:
+	
+	No fix is available for this problem in Host Integration Server 2000 at this
+	time.
+	
+	
+	WORKAROUND
+	==========
+	
+	To resolve this problem, restart the SNA Server service on the SNA Server or
+	Host Integration Server 2000 through which the SNA application is trying to
+	connect.
+	
+	STATUS
+	======
+	
+	SNA Server 4.0:
+	
+	Microsoft has confirmed that this is a problem in Microsoft SNA Server version
+	4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4.
+	
+	Host Integration Server 2000:
+	
+	Microsoft has confirmed that this is a problem in Microsoft Host Integration
+	Server 2000.
+	
+	
+	
+	MORE INFORMATION
+	================
+	
+	For additional information about how the SNA Server service locates a Host
+	Account Cache database to use for account lookups, click the article number
+	below to view the article in the Microsoft Knowledge Base:
+	
+	  Q248479 Host Account Database Location for Single Sign-On
+	
+	If the HAC database that is being used for account lookups becomes unavailable,
+	the SNA Server service detects this, and then contacts the master HAC database
+	to locate another HAC database to use for account lookups.
+	
+	
+	For additional information about other issues related to SNA applications and SSO
+	problems, click the article numbers below to view the articles in the Microsoft
+	Knowledge Base:
+	
+	  Q321245 3270 Emulators and LUA Applications Stop Responding When They Use the
+	  Single Sign-On Feature
+	
+	  Q319419 Unable to Log On to Host Computer When You Use 3270 Single Sign-On
+	
+	  Q313202 SSO Fails If Attach Message Does Not Contain LUWID or Other Subfield
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : sna4 kbsna400sp1 kbsna400sp2 kbsna400sp3 kbhis2000 kbhis2000bug kbsna400sp4 
+	Technology        : kbAudDeveloper kbSNAServSearch kbHostIntegServ2000 kbSNAServ400 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3 kbSNAServ400SP4
+	Version           : :4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

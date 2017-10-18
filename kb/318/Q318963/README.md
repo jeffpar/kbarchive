@@ -1,0 +1,78 @@
+---
+layout: page
+title: "Q318963: How To Access The Apple System Profiler"
+permalink: kb/318/Q318963/
+---
+
+## Q318963: How To Access The Apple System Profiler
+
+	Article: Q318963
+	Product(s): The Microsoft Network
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 12-APR-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- MSN Internet Access for Macintosh, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes how to access the Apple System Profiler to verify the
+	following:
+	
+	- Macintosh Operating System version
+	
+	- RAM
+	
+	- TCP/IP info
+	
+	- Model type
+	
+	The information in this article applies to:
+	
+	- Macintosh Operating System 8.6
+	
+	- Macintosh Operating System 9.x
+	
+	- Macintosh Operating System X
+	
+	MORE INFORMATION
+	================
+	
+	To access the Apple System Profiler in Macintosh Operating System 8.6 or
+	greater
+	- On the Apple menu, select Apple System Profiler.
+	
+	To verify the Macintosh OS version from Apple System Profiler
+	- Click the arrow next to Software overview.
+	  The Macintosh Operating System version appears to the right of Finder.
+	
+	To obtain the Machine ID and Model name from the Apple System Profiler
+	- Click the arrow next to Hardware overview.
+	  The Machine ID and Model name appear directly below Hardware Overview.
+	
+	To verify the Network overview from the Apple System Profiler
+	
+	1. Click the arrow next to Network Overview.
+	  If applicable, the Ethernet Adapter will appear at the top of the list. The
+	  Modem Name and Protocol appear to the right of Modem.
+	
+	2. Click the arrow next to TCP/IP.
+	
+	3. The Netmask, IP Address, Default gateway address, and Domain Name Server
+	  address appear below TCP/IP.
+	
+	Additional query words: kbimu MSN Mac Macintosh OSX OS X ten connect IE internet
+	
+	======================================================================
+	Keywords          :  
+	Version           : :
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

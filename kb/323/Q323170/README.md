@@ -1,0 +1,172 @@
+---
+layout: page
+title: "Q323170: HOW TO: Backup, Edit, and Restore the Registry in Windows NT 4.0"
+permalink: kb/323/Q323170/
+---
+
+## Q323170: HOW TO: Backup, Edit, and Restore the Registry in Windows NT 4.0
+
+	Article: Q323170
+	Product(s): Microsoft Windows NT
+	Version(s): 4.0
+	Operating System(s): 
+	Keyword(s): kbAudITPro kbHOWTOmaster
+	Last Modified: 12-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 4.0 
+	- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+	- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+	- Microsoft Windows NT Workstation version 4.0 
+	-------------------------------------------------------------------------------
+	
+	
+	For a Microsoft Windows XP version of this article, see Q322756.
+	
+	For a Microsoft Windows 2000 version of this article, see Q322755.
+	
+	For a Microsoft Windows 95, Windows 98, and Windows Me version of this article, see Q322754.
+	
+	IN THIS TASK
+	------------
+	
+	- SUMMARY
+	
+	   - How to Back Up the Registry
+	
+	   - How to Export Registry Keys
+	- How to Back Up the Whole Registry
+	
+	- How to Edit the Registry
+	- How to Restore the Registry
+	
+	   - How to Restore Registry Keys
+	- How to Restore the Whole Registry
+	
+	- REFERENCES
+	
+	SUMMARY
+	=======
+	
+	This step-by-step article describes how to back up, edit, and restore the
+	registry in Windows NT 4.0. Microsoft recommends that before you edit the
+	registry, you back up the registry and understand how to restore it if a problem
+	occurs.
+	
+	How to Back Up the Registry
+	---------------------------
+	
+	Before you edit the registry, export the keys in the registry that you plan to
+	edit, or back up the whole registry. If a problem occurs, you can then follow
+	the steps in the How to Restore the Registry section of this article to restore
+	the registry to its previous state.
+	
+	How to Export Registry Keys:
+	
+	You can follow these steps to export a registry key before you edit it.
+	
+	NOTE: Do not follow these steps to export a whole registry hive (for example, the
+	HKEY_CURRENT_USER hive). If you must back up whole registry hives, back up the
+	whole registry instead.
+	
+	1. Click Start, and then click Run.
+	
+	2. In the Open box, type "regedt32" (without the quotation marks), and then
+	  click OK.
+	
+	3. Locate and then click the key that contains the values that you plan to edit.
+	
+	4. On the Registry menu, click Save Key.
+	
+	5. In the "Save in" box, select a location in which to save the .reg file, type
+	  a file name in the "File name" box, and then click Save.
+	
+	How to Back Up the Whole Registry:
+	
+	To back up the whole registry, use the Windows NT Backup tool (Ntbackup.exe) and
+	use the option to back up the registry. Or, run the "rdisk /s" command. For
+	additional information about using the Rdisk tool to update your repair
+	information, click the article number below to view the article in the Microsoft
+	Knowledge Base:
+	
+	  Q156328 Description of Windows NT Emergency Repair Disk
+	
+	NOTE: You must have a supported tape drive to use Windows NT Backup to back up
+	the registry. If you do not have a supported tape drive, use Rdisk. When you run
+	the "rdisk /s" command to update your repair information, compressed copies of
+	the registry files are placed in the %SystemRoot%\Repair folder. If you cannot
+	start Windows NT after you edit the registry, you can manually replace the
+	registry files by expanding the copies in the %SystemRoot%\Repair folder.
+	
+	How to Edit the Registry
+	------------------------
+	
+	To edit the registry, Microsoft recommends that you follow the steps in the
+	Microsoft documentation only. If possible, use the Windows user interface
+	instead of directly editing the registry.
+	
+	Using Registry Editor incorrectly can cause serious problems that may require
+	that you reinstall your operating system. Microsoft cannot guarantee that
+	problems that result from incorrectly using Registry Editor can be solved. Use
+	Registry Editor at your own risk.
+	
+	For more information about editing the registry, follow these steps in Registry
+	Editor (Regedt32.exe):
+	
+	1. On the Help menu, click Contents.
+	
+	2. Click the Contents tab.
+	
+	3. Double-click the topic that you want to read.
+	
+	How to Restore the Registry
+	---------------------------
+	
+	How to Restore Registry Keys:
+	
+	1. Click Start, and then click Run.
+	
+	2. Type "regedt32" (without the quotation marks), and then click OK.
+	
+	3. On the Registry menu, click Restore.
+	
+	4. Select the .reg file that you saved in the How to Backup the Registry section
+	  of this article, and then click Open.
+	
+	5. Click Yes to continue.
+	
+	How to Restore the Whole Registry:
+	
+	To restore the whole registry, restore a registry backup by using the Windows NT
+	Backup utility.
+	
+	NOTE: If you ran the "rdisk /s" command to update the repair information,
+	updated, compressed copies of the registry files are located in the
+	%SystemRoot%\Repair folder. If you cannot start Windows NT after you edit the
+	registry, you can manually replace the registry files in the
+	%SystemRoot%\System32\Config folder by expanding the compressed copies in the
+	%SystemRoot%\Repair folder. You must start MS-DOS (if the drive uses the FAT
+	file system) or perform a parallel installation of Windows NT (if the drive uses
+	the NTFS file system) to do this.
+	
+	
+	REFERENCES
+	==========
+	
+	  Q265422 How RDISK.EXE Updates Repair Information
+	
+	  Q122857 RDISK /S and RDISK /S- Options in Windows NT
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbAudITPro kbHOWTOmaster 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch
+	Version           : :4.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

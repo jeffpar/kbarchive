@@ -1,0 +1,105 @@
+---
+layout: page
+title: "Q173220: WD97: How to Scroll Smoothly When Dragging Vertical Scroll Bar"
+permalink: kb/173/Q173220/
+---
+
+## Q173220: WD97: How to Scroll Smoothly When Dragging Vertical Scroll Bar
+
+	Article: Q173220
+	Product(s): Word 97 for Windows
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): winword word97
+	Last Modified: 09-MAR-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows, used with:
+	   - the operating system: Microsoft Windows NT 
+	   - the operating system: Microsoft Windows 95 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about editing the registry.
+	Before you edit the registry, you should first make a backup copy of the
+	registry files (System.dat and User.dat). Both are hidden files in the
+	Windows folder.
+	
+	SUMMARY
+	=======
+	
+	This article describes how to set Word to scroll smoothly through your document
+	when you drag the vertical scroll bar.
+	
+	NOTE: In large documents, you may not be able to scroll as smoothly through your
+	document when using this Registry option.
+	
+	
+	MORE INFORMATION
+	================
+	
+	Microsoft Word 97 has an undocumented Registry setting that will allow you to
+	actively scroll through your document when you drag the vertical scroll bar.
+	
+	WARNING: Using Registry Editor incorrectly can cause serious problems that may
+	require you to reinstall Windows 95. Microsoft cannot guarantee that problems
+	resulting from the incorrect use of Registry Editor can be solved. Use Registry
+	Editor at your own risk.
+	
+	For information about how to edit the registry, view the Changing Keys And Values
+	online Help topic in Registry Editor (Regedit.exe). Note that you should make a
+	backup copy of the registry files (System.dat and User.dat) before you edit the
+	registry.
+	
+	1. Quit Word.
+	
+	2. On the Windows Start menu, click Run.
+	
+	3. In the Open box, type RegEdit, and then click OK.
+	
+	4. In the registry, step down to the following key:
+	
+	      HKEY_CURRENT_USER\Software\Microsoft\Office\8.0\Word\Options
+	
+	5. Click to select the Options key.
+	
+	6. On the Edit menu, point to New, and then click String Value.
+	
+	7. Type "LiveScrolling" (without the quotation marks) for the new string value
+	  name, and press ENTER.
+	
+	8. Click to select your new "LiveScrolling" string value, if it is not already
+	  selected.
+	
+	9. On the Edit menu, click Modify.
+	
+	10. In the Value data box, type "1" (without the quotation marks), and then
+	  click OK.
+	
+	11. On the Registry menu, click Exit.
+	
+	NOTE: There isn't a user interface through the menus or through the RegOptions
+	macro to add this undocumented setting in Word. You must manually edit the
+	Windows Registry.
+	
+	For more information about the RegOptions macro, click the Office Assistant, type
+	"What is the RegOptions macro?," click Search, click "Supplied Macros," and then
+	click to view "Support8.dot."
+	
+	NOTE: If the Assistant is hidden, click the Office Assistant button on the
+	Standard toolbar. If Microsoft Help is not installed on your computer, please
+	see the following article in the Microsoft Knowledge Base:
+	
+	  Q120802 Office: How to Add/Remove a Single Office Program or Component
+	
+	Additional query words: 8.0 8.00
+	
+	======================================================================
+	Keywords          : winword word97 
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : :
+	Issue type        : kbhowto kbinfo
+	
+	=============================================================================
+	

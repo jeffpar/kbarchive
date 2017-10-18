@@ -1,0 +1,235 @@
+---
+layout: page
+title: "Q193235: SAMPLE: VBCECOMM.EXE Uses the MSCEComm Control in Emulation"
+permalink: kb/193/Q193235/
+---
+
+## Q193235: SAMPLE: VBCECOMM.EXE Uses the MSCEComm Control in Emulation
+
+	Article: Q193235
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 1.0,2.0
+	Operating System(s): 
+	Keyword(s): kbfile kbSample kbAddIn kbToolkit kbVBp500 kbVBp600 kbOSWinCEsearch kbOSWinCE100 kbGrpD
+	Last Modified: 16-NOV-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows CE Toolkit for Visual Basic 6.0, version 1.0, used with:
+	   - Microsoft Windows CE version 2.0 for the Handheld PC 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	VBCEComm.exe is a sample that illustrates the basics of the MSCEComm control and
+	demonstrates how to access the serial ports through the emulator.
+	
+	MORE INFORMATION
+	================
+	
+	The following file is available for download from the Microsoft Download
+	Center:
+	
+	  VBCEComm.exe
+	  (http://download.microsoft.com/download/WinCEToolkitVB60/Sample2/2/Win98/EN-US/VBCEComm.exe)
+	
+	Release Date: August 14, 2000
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. Once posted, the file is housed on secure
+	servers that prevent any unauthorized changes to the file.
+	
+	WARNING: ANY USE BY YOU OF THE CODE PROVIDED IS AT YOUR OWN RISK. Microsoft
+	provides this code "as is" without warranty of any kind, either express or
+	implied, including but not limited to the implied warranties of merchantability
+	and/or fitness for a particular purpose.
+	
+	VBCECOMM.EXE Readme
+	-------------------
+	
+	What's Required?:
+	
+	1. To allow the MSCEComm control to access the serial ports on the desktop under
+	  emulation, the DDK needs to be installed during the Handheld PC 2.0 Platform
+	  SDK installation. To install, run the setup program and use the Custom
+	  install option. Select Device Driver Development Kit. This will install the
+	  wceemuld device necessary to make the MSCEComm control work in emulation.
+	  Restart the computer after the wceemuld device is installed.
+	
+	2. The mobile device connection must be disabled after launching the project.
+	  This is required due to the fact that the sample program uses the same serial
+	  port for communications.
+	
+	3. Windows 2000 or Windows NT 4.0 with Service Pack 3 or later must be installed
+	  on the desktop.
+	
+	Scenarios:
+	
+	The VBCEComm.vbp sample was tested with the following scenarios:
+	
+	1. Serial communication between emulation on the desktop and the remote device
+	  (connected to the same desktop).
+	
+	2. Serial communication between emulation and emulation with the two desktops
+	  connected using a null modem cable.
+	
+	3. Serial communication between emulation and the desktop running the Visual
+	  Basic sample serial application (VBTerm.exe). VBTerm.exe is also included in
+	  the self-extracting VBCEComm.exe file. The two desktops are connected using a
+	  null modem cable.
+	
+	Step-By-Step Instructions
+	-------------------------
+	
+	Scenario 1 (emulation to remote device):
+	
+	1. Connect the Handheld PC device to the desktop.
+	
+	2. Open the VBCEComm.vbp project in Visual Basic.
+	
+	3. Select VBCEComm Properties from the Project menu and change the Run on Target
+	  option to Remote Device.
+	
+	4. Press F5 to run the project. A copy of VBCEComm will be running on the remote
+	  device.
+	
+	5. On the desktop computer running emulation, close the emulation window if it
+	  is open. All applications running in emulation must be stopped and all
+	  emulation windows and debug windows must be closed in order to start up the
+	  wceemuld device.
+	
+	6. Click Start, point to Programs, point to "Microsoft Windows CE Services", and
+	  then click Mobile Devices. On the File menu, clear the Enable Serial
+	  Communication check box.
+	
+	7. In the Control Panel, double-click Devices.
+	
+	8. Select the Serial device driver, and then click Stop.
+	
+	9. Select the wceemuld device driver, and then click Start.
+	
+	10. In the VBCEComm project, select VBCEComm Properties from the Project menu,
+	  and then change the Run on Target option to Emulator.
+	
+	11. Press F5 to run the project in emulation.
+	
+	12. Click COMM Start on both ends. Leave the default settings unchanged, and
+	  then click OK. If you want to change the settings, make sure the settings on
+	  both ends match.
+	
+	13. Type in some text in the Write (Outgoing) Text box, and then click Send Text
+	  on one end. The text should appear in the Read (Incoming) Text box on the
+	  other end.
+	
+	  NOTE: The desktop system may need to be shut down, powered off and then
+	  turned back on in order for the text to be successfully sent. This will
+	  require steps 7-9 to be repeated.
+	
+	Scenario 2 (emulation to emulation):
+	
+	1. Click Start, point to Programs, point to "Microsoft Windows CE Services", and
+	  then click Mobile Devices. On the File menu, clear the "Enable Serial
+	  Communication" check box.
+	
+	2. In the Control Panel, double-click Devices.
+	
+	3. Select the Serial device driver, and then click Stop.
+	
+	4. Select the wceemuld device driver, and then click Start.
+	
+	5. Use a null modem cable to connect the two desktop copmuters.
+	
+	6. Open VBCEComm.vbp with the toolkit on both desktops.
+	
+	7. In the VBCEComm project, select VBCEComm Properties from the Project menu,
+	  and then change the Run on Target option to Emulator.
+	
+	8. On both desktops, press F5 to run the project in emulation.
+	
+	9. Click COMM Start on both ends. Leave the default settings unchanged, and then
+	  click OK. If you want to change the settings, make sure the settings on both
+	  ends match.
+	
+	10. Type in some text in the Write (Outgoing) text box, and then click Send Text
+	  on one end. The text should appear in the Read (Incoming) Text box on the
+	  other end.
+	
+	  NOTE: The desktop systems may need to be shut down, powered off and then
+	  turned back on in order for the text to be successfully sent. This will
+	  require steps 2-4 to be repeated.
+	
+	Scenario 3 (emulation to VBTerm application):
+	
+	1. Click Start, point to Programs, point to "Microsoft Windows CE Services", and
+	  then click Mobile Devices. On the File menu, clear the "Enable Serial
+	  Communication" check box.
+	
+	2. In the Control Panel, double-click Devices.
+	
+	3. Select the Serial device driver, and then click Stop.
+	
+	4. Select the wceemuld device driver, and then click Start.
+	
+	5. Use a null modem cable to connect the two desktop computers.
+	
+	6. Open VBCEComm.vbp with the toolkit on one desktop.
+	
+	7. In the VBCEComm project, select VBCEComm Properties from the Project menu,
+	  and then change the Run on Target option to Emulator.
+	
+	8. Press F5 to run the project in emulation.
+	
+	9. Run VBTerm.exe on the other desktop.
+	
+	10. In the VBTerm application, select Open Port from the CommPort menu.
+	
+	11. In the VBCEComm project, click COMM Start. Leave the default settings
+	  unchanged, and then click OK.
+	
+	12. Type in some text in the Write (Outgoing) text box, and then click Send Text
+	  on one end. The text should appear in the VBTerm application running on the
+	  other end.
+	
+	Troubleshooting Tips
+	--------------------
+	
+	1. If the following error message appears when running on either emulation or on
+	  the remote device:
+	
+	  Unable to Load Startup Form
+	
+	  Select Control Manager fromthe Windows CE menu in the Visual Basic design
+	  environment and ensure that the MSCEComm control is registered for use in
+	  each.
+	
+	2. The DTREnable property of the MSCEComm control must be set to TRUE.
+	
+	3. If communication fails, shut down the desktop computer and turn off the
+	  power. Wait for a few seconds and turn it back on again.
+	
+	4. If wceemuld device fails to start, check to see if the emulation window is
+	  closed already. If not, close the emulator, restart the computer and start
+	  the wceemuld device again after stopping the serial device, which starts up
+	  automatically by default.
+	
+	5. If the serial device fails to stop, check to see if the mobile device
+	  connection is disabled. The machine may need to be rebooted in order to be
+	  able to stop the serial device again.
+	
+	Additional query words: wince vbce vbce6
+	
+	======================================================================
+	Keywords          : kbfile kbSample kbAddIn kbToolkit kbVBp500 kbVBp600 kbOSWinCEsearch kbOSWinCE100 kbGrpDSVB kbGrpDSVBDB 
+	Technology        : kbVBSearch kbAudDeveloper kbWinCETKVBSearch kbWinCESearch
+	Version           : :1.0,2.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

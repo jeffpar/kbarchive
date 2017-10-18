@@ -1,0 +1,85 @@
+---
+layout: page
+title: "Q177202: Installing WinNT SPs with Compaq's SSD and Insight Mgr"
+permalink: kb/177/Q177202/
+---
+
+## Q177202: Installing WinNT SPs with Compaq's SSD and Insight Mgr
+
+	Article: Q177202
+	Product(s): Microsoft Windows NT
+	Version(s): WINDOWS:2000; winnt:3.5,3.51,4.0
+	Operating System(s): 
+	Keyword(s): kb3rdparty kbOSWin2000
+	Last Modified: 09-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+	- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+	- Microsoft Windows 2000 Advanced Server 
+	- Microsoft Windows 2000 Datacenter Server 
+	- Microsoft Windows 2000 Server 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Conflicts may exist with certain files between Microsoft Windows NT service
+	packs, Compaq's Insight Manager and Compaq's Support Software Diskettes (SSD).
+	This article discusses the recommended method for installing these updates.
+	
+	MORE INFORMATION
+	================
+	
+	NOTE: Before you use the following steps, you should read the Compaq Customer
+	Advisory at the following Compaq Web site:
+	
+	  http://www.compaq.com/support/techpubs/customer_advisories/EM981202_CW02_6.html
+	
+	The third-party contact information included in this article is provided to help
+	you find the technical support you need. This contact information is subject to
+	change without notice. Microsoft in no way guarantees the accuracy of this
+	third-party contact information.
+	
+	You should also refer to the following article in the Microsoft Knowledge Base:
+	
+	  Q244984 Event ID 7026 after Installing Compaq SSD Version 2.1x
+	
+	Use the following installation order when working with a computer that is using
+	Insight Manager:
+	
+	1. Install all required services before installing Insight Manager or a Windows
+	  NT service pack.
+	
+	2. Before restarting the computer, apply the latest Windows NT Service Pack. (To
+	  run a service pack and prevent the computer from rebooting automatically, run
+	  Update.exe and use the -z switch (for example, "update.exe -z" (without the
+	  quotation marks).)
+	
+	3. Before restarting the computer, apply the appropriate SSD from Compaq.
+	
+	4. Restart the computer.
+	
+	5. Install Insight Manager from Compaq.
+	
+	In cases where new services need to be added that were not installed initially,
+	repeat steps 2-5 to ensure the server has the latest files. See the service pack
+	Readme file for more information about specific issues that relate to installing
+	Windows NT service packs.
+	
+	The Compaq Insight Manager is manufactured by Compaq, a vendor independent of
+	Microsoft; we make no warranty, implied or otherwise, regarding this products'
+	performance or reliability.
+	
+	Additional query words: snmp
+	
+	======================================================================
+	Keywords          : kb3rdparty kbOSWin2000 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000DataServ kbwin2000DataServSearch kbwin2000Serv kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbwin2000ServSearch kbwin2000Search kbWinNTS351search kbWinNTS350search kbWinAdvServSearch kbWinDataServSearch
+	Version           : WINDOWS:2000; winnt:3.5,3.51,4.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

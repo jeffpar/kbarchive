@@ -1,0 +1,74 @@
+---
+layout: page
+title: "Q91664: MS-DOS Backup Err Msg: Unable to Open Component File"
+permalink: kb/091/Q91664/
+---
+
+## Q91664: MS-DOS Backup Err Msg: Unable to Open Component File
+
+	Article: Q91664
+	Product(s): Microsoft Disk Operating System
+	Version(s): MS-DOS:6.0,6.2,6.21,6.22
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 26-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft MS-DOS operating system versions 6.0, 6.2, 6.21, 6.22 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If you back up to a network drive, and someone moves your files, you cannot
+	restore them until they are moved back. When you try to restore your files, you
+	receive the following error message:
+	
+	  Unable to open component file
+	  <drive:path:filename>
+	
+	CAUSE
+	=====
+	
+	If you back up to a fixed (not floppy) drive, Microsoft Backup creates a .001
+	file in a .FUL directory. For example, if you back up to F:\TEMP on your fixed
+	drive or a network drive, Backup creates
+	
+	  f:\TEMP\DEFAULT\xxxxxxxx.FUL\xxxxxxxx.001
+	
+	where xxxxxxxx are numbers and letters generated from the date. Moving the .001
+	file causes the restore option in Backup to fail and generates the error
+	message.
+	
+	WORKAROUND
+	==========
+	
+	To work around this problem, re-create your original directory structure and
+	move the .001 file back to its original location. If you cannot remember the
+	original directory structure, attempt to restore your files again. The error
+	message displayed by Backup tells you the directory and filename for which it is
+	looking.
+	
+	How the Backup Filename in Generated
+	------------------------------------
+	
+	The backup file for DEFAULT\CCYMMDDA.FUL is calculated as follows:
+	
+	  default = name of backup set
+	  y = last number of year
+	  mm = month of backup
+	  dd = day of backup
+	  a = A - Z, depending on the number backups that day
+	
+	
+	Additional query words: 6.22 6.0 msbackup 6.20
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600
+	Version           : MS-DOS:6.0,6.2,6.21,6.22
+	
+	=============================================================================
+	

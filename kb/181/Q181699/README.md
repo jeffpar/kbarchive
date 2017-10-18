@@ -1,0 +1,144 @@
+---
+layout: page
+title: "Q181699: WD97: Index Updates Incorrectly with Modified Page Numbering"
+permalink: kb/181/Q181699/
+---
+
+## Q181699: WD97: Index Updates Incorrectly with Modified Page Numbering
+
+	Article: Q181699
+	Product(s): Word 97 for Windows
+	Version(s): WINDOWS:97
+	Operating System(s): 
+	Keyword(s): kbfield winword word97
+	Last Modified: 14-NOV-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If you use the Insert menu to insert both page numbers and an index into your
+	document, you may see odd behavior when you change the page number to start at
+	anything other than 1. The page numbers and index numbers will not display the
+	same number. The index numbers will be correct, but the page numbers will start
+	at 1 instead of the number you specified.
+	
+	CAUSE
+	=====
+	
+	This behavior is caused by the section breaks that Microsoft Word inserts into a
+	document automatically when you use the Insert menu method.
+	
+	WORKAROUND
+	==========
+	
+	To avoid this type of behavior, insert all of the fields manually instead of
+	allowing Microsoft Word to generate them for you. The following instructions
+	identify the fields used in manually creating page numbers and indexes.
+	
+	Inserting an Index Field
+	------------------------
+	
+	To insert an Index field, follow these steps:
+	
+	1. On the Insert menu, click Field.
+	
+	2. Under Categories, select Index And Tables. Then, under Field Names, select
+	  Index.
+	
+	3. Under Field Codes, click next to the field name and add any switches you
+	  need. To do this, follow these steps:
+	  a. Click Options.
+	
+	  b. Under Switches, select the appropriate switch.
+	
+	  c. Click OK.
+	
+	4. Click OK.
+	
+	Inserting a Page Field
+	----------------------
+	
+	To insert a Page field, follow these steps:
+	
+	1. On the Insert menu, click Field.
+	
+	2. Under Categories, select Numbering. Then, under Field names, select Page.
+	
+	3. Click beside the field name under Field Codes and add any switches you need.
+	  To do this, follow these steps:
+	  a. Click Options.
+	
+	  b. Under Switches, select the appropriate switch.
+	
+	  c. Click OK.
+	
+	4. Click OK.
+	
+	Inserting an XE Field
+	---------------------
+	
+	To insert an XE field, follow these steps:
+	
+	1. On the Insert menu, click Field.
+	
+	2. Under Categories, select Index and Tables. Then, under Field names, select
+	  XE.
+	
+	3. Click beside the field name under Field Codes and add any switches you need.
+	  To do this, follow these steps:
+	  a. Click Options.
+	
+	  b. Under Switches, select the appropriate switch.
+	
+	  c. Click OK.
+	
+	4. Click OK.
+	
+	MORE INFORMATION
+	================
+	
+	For more information about page numbers and field codes, click Contents And
+	Index on the Help menu, click the Index tab in Word Help, type the following
+	text:
+	
+	  Index
+	
+	-or-
+	
+	  Page
+	
+	-or-
+	
+	  XE
+	
+	and then double-click the selected text to go to the topic you want. If you are
+	unable to find the information you need, ask the Office Assistant.
+	
+	REFERENCES
+	==========
+	
+	For additional information, please see the following articles in the Microsoft
+	Knowledge Base:
+	
+	  
+	
+	  Q125937 WD97: Creating a Table of Contents and Index with Field Codes
+	
+	  Q167620 WD97: TOC Styles Don't Have Tab Stop When Applied Manually
+	
+	Additional query words: wrong updated ran strange modified changed
+	
+	======================================================================
+	Keywords          : kbfield winword word97 
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : WINDOWS:97
+	Issue type        : kbprb
+	
+	=============================================================================
+	

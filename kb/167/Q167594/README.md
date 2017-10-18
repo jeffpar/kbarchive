@@ -1,0 +1,213 @@
+---
+layout: page
+title: "Q167594: FP: How to Redirect a Browser from a List Box Choice"
+permalink: kb/167/Q167594/
+---
+
+## Q167594: FP: How to Redirect a Browser from a List Box Choice
+
+	Article: Q167594
+	Product(s): Word Front Page
+	Version(s): windows:1.1,97, macintosh:1.0
+	Operating System(s): 
+	Keyword(s): kbProgramming kbdta
+	Last Modified: 20-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft FrontPage 97 for Windows with Bonus Pack 
+	- Microsoft FrontPage for Windows 1.1 
+	- Microsoft FrontPage for the Macintosh, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	For a Microsoft FrontPage 2000 version of this article, see Q197959.
+	
+	For a Microsoft FrontPage 98 version of this article, see Q194091.
+	
+	SUMMARY
+	=======
+	
+	This article provides four examples of how to use Microsoft Visual Basic
+	Scripting Edition (VBScript) or JavaScript to create a drop-down control that
+	opens a specific Uniform Resource Locator (URL) based on the choice you make
+	from a list.
+	
+	MORE INFORMATION
+	================
+	
+	Microsoft provides programming examples for illustration only, without warranty
+	either expressed or implied, including, but not limited to, the implied
+	warranties of merchantability and/or fitness for a particular purpose. This
+	article assumes that you are familiar with the programming language being
+	demonstrated and the tools used to create and debug procedures. Microsoft
+	support professionals can help explain the functionality of a particular
+	procedure, but they will not modify these examples to provide added
+	functionality or construct procedures to meet your specific needs. If you have
+	limited programming experience, you may want to contact a Microsoft Certified
+	Partner or the Microsoft fee-based consulting line at (800) 936-5200. For more
+	information about Microsoft Certified Partners, please visit the following
+	Microsoft Web site:
+	
+	  http://www.microsoft.com/partner/referral/
+	
+	For more information about the support options that are available and about how
+	to contact Microsoft, visit the following Microsoft Web site:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	  Example 1
+	  ---------
+	
+	    <p>A drop down scripted URL list</p>
+	
+	    <form method="POST" name="SendMe">
+	    <p><select name="DropIt" size="1">
+	      <option> http://www.microsoft.com </option>
+	      <option> http://www.msn.com </option>
+	      <option> http://www.microsoft.com/frontpage </option>
+	      <option> http://www.microsoft.com/support/frontpage </option>
+	    </select> <input type="button" name="B1" value="Go">
+	     <SCRIPT FOR="B1" EVENT="onClick" LANGUAGE="VBScript">
+	     select case document.sendme.dropit.selectedindex
+	       case 0
+	        navigate("http://www.microsoft.com")
+	       case 1
+	        navigate("http://www.msn.com")
+	       case 2
+	        navigate("http://www.microsoft.com/frontpage")
+	       case 3
+	        navigate("http://www.microsoft.com/support/frontpage")
+	     end select
+	     </SCRIPT>
+	    </form>
+	
+	  Example 2
+	  ---------
+	
+	    <form method="POST" name="SendMe2">
+	    <p>
+	    <select name="Cleaner" size="1">
+	     <option value="http://www.microsoft.com">
+	    http://www.microsoft.com </option>
+	     <option value="http://www.msn.com"> http://www.msn.com </option>
+	     <option value="http://www.microsoft.com/frontpage">
+	    http://www.microsoft.com/frontpage </option>
+	     <option value="http://www.microsoft.com/support/frontpage">
+	    http://www.microsoft.com/support/frontpage </option>
+	    </select> <input type="button" name="B2" value="Go">
+	
+	    <SCRIPT FOR="B2" EVENT="onClick" LANGUAGE="VBScript">
+	    dim choice
+	    choice = document.SendMe2.Cleaner.selectedindex
+	    navigate document.SendMe2.Cleaner.options(choice).value
+	    </SCRIPT>
+	    </form>
+	
+	  Example 3
+	  ---------
+	
+	    <form name="menuform">
+	    <div align="center"><center><table border="0">
+	      <tr>
+	        <td align="center"><font size="4">Where Do You Want
+	         to Go Today?</font></td>
+	      </tr>
+	      <tr>
+	        <td>&nbsp;</td>
+	      </tr>
+	      <tr>
+	        <td><select name="section" size="1" width="200"
+	        language="javascript" onchange="goto_page();">
+	          <option selected>Where do you want to go
+	    today?</option>
+	          <option> - - - - - - - - - - - - - - - - - </option>
+	          <option>Microsoft.com</option>
+	          <option>FrontPage Home Page</option>
+	          <option>FrontPage Support Page</option>
+	          <option>Microsoft Office Home Page</option>
+	          <option>Microsoft Windows 95 Home Page</option>
+	          <option>Microsoft Windows NT Home Page</option>
+	          <option>Microsoft IIS Home Page</option>
+	        </select></td>
+	      </tr>
+	    </table>
+	    </center></div>
+	    </form>
+	
+	    <p><script language="JavaScript"><!--
+	    function goto_page() {
+	      if (document.menuform.elements[0].selectedIndex == 0)
+	    window.parent.self.status=" Goes Nowhere";
+	      else if (document.menuform.elements[0].selectedIndex == 1)
+	    window.parent.self.status=" Goes Nowhere";
+	      else if (document.menuform.elements[0].selectedIndex == 2)
+	    window.open("http://www.microsoft.com", target="_top")
+	      else if (document.menuform.elements[0].selectedIndex == 3)
+	    window.open("http://www.microsoft.com/frontpage", target="_top");
+	      else if (document.menuform.elements[0].selectedIndex == 4)
+	    window.open("http://www.microsoft.com/support/frontpage",
+	    target="_top");
+	      else if (document.menuform.elements[0].selectedIndex == 5)
+	    window.open("http://www.microsoft.com/Office", target="_top");
+	      else if (document.menuform.elements[0].selectedIndex == 6)
+	    window.open("http://www.microsoft.com/Windows95", target="_top");
+	      else if (document.menuform.elements[0].selectedIndex == 7)
+	    window.open("http://www.microsoft.com/WindowsNT", target="_top");
+	      else if (document.menuform.elements[0].selectedIndex == 8)
+	    window.open("http://www.microsoft.com/IIS", target="_top");
+	    }
+	    // --></script>
+	
+	  Example 4
+	  ---------
+	
+	    <SCRIPT language="JavaScript">
+	    <!--
+	    function setaction(jumpto)
+	    {
+	      if (jumpto == 0) window.location = "example1.htm";
+	    else if (jumpto == 1) window.location = "example2.htm";
+	    else if (jumpto == 2) window.location = "example3.htm";
+	    else if (jumpto == 3) window.location = "example4.htm";
+	    else if (jumpto == 4) window.location = "example5.htm";
+	    else if (jumpto == 5) window.location = "example6.htm";
+	    else if (jumpto == 6) window.location = "example7.htm";
+	    else if (jumpto == 7) window.location = "example8.htm";
+	    else if (jumpto == 8) window.location = "example9.htm";
+	    else if (jumpto == 9) window.location = "http://www.example.com";
+	    else window.location = "http://www.example.com/donotuse.htm";
+	    }
+	    // --></Script>
+	    <form method="POST">
+	    <div align="center"><center>
+	    <pre><select name="dest" size="1">
+	    <option>Example One</option>
+	    <option>Example Two</option>
+	    <option>Example Three</option>
+	    <option>Example Four</option>
+	    <option>Example Five</option>
+	    <option>Example Six</option>
+	    <option>Example Seven</option>
+	    <option>Example Eight</option>
+	    <option>Example Nine</option>
+	    <option>ExampleHome Page (Do Not Use)</option>
+	    <option>Really, Do Not Use This!</option>
+	    </select>
+	    <INPUT TYPE=BUTTON VALUE="Submit Example"
+	    ONCLICK=setaction(form.dest.selectedIndex)></pre>
+	    </center>
+	    </div>
+	    </form>
+	
+	Additional query words: 97 kbusage kbhowto kbprg kbnetwork drop down menu dropdown hyper link hyperlink kbcode kbmacro fphtml fpscript listbox list box
+	
+	======================================================================
+	Keywords          : kbProgramming kbdta 
+	Technology        : kbHWMAC kbOSMAC kbFrontPageSearch kbZNotKeyword kbFrontPage1xSearch kbFrontPage97Search kbFrontPageMac kbZNotKeyword3 kbFrontPage110 kbFrontPageMacSearch
+	Version           : windows:1.1,97, macintosh:1.0
+	Hardware          : MAC x86
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

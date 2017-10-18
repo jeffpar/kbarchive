@@ -1,0 +1,108 @@
+---
+layout: page
+title: "Q137266: Problems Reinstalling Microsoft Plus!"
+permalink: kb/137/Q137266/
+---
+
+## Q137266: Problems Reinstalling Microsoft Plus!
+
+	Article: Q137266
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): 95
+	Operating System(s): 
+	Keyword(s): win95
+	Last Modified: 09-JUN-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Plus! for Windows 95 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you reinstall Microsoft Plus!, you may receive one of the following error
+	messages:
+	
+	  Setup could not open the file <file name>.
+	
+	  Insert the disk labeled 'Microsoft Plus! CD-ROM' into drive A: Some disks may
+	  not be required for the selected installation options.
+	
+	  Object 2157
+	
+	  Your Setup files may be damaged. Try restarting the Setup program.
+	
+	  NOTE: This error message may be repeated many times before you can quit the
+	  Setup program.
+	
+	  Custom Action Error. The system cannot find the file specified.
+	
+	CAUSE
+	=====
+	
+	These error messages can occur for any of the following reasons:
+	
+	- If you originally installed Microsoft Plus! from a CD-ROM and you later try
+	  to install the floppy disk version.
+	
+	- If you originally installed Microsoft Plus! from floppy disks and you later
+	  try to install the CD-ROM version.
+	
+	- If the path for the Microsoft Plus! files (as specified in the Setup.stf
+	  file) is incorrect. You may experience this behavior if the drive letter for
+	  a CD-ROM drive has changed.
+	
+	RESOLUTION
+	==========
+	
+	To resolve the issue and install Microsoft Plus!, use one of the following
+	methods:
+	
+	- Uninstall Microsoft Plus! and then reinstall it using the new media type
+	  (floppy disks or CD-ROM).
+	
+	- Rename the Setup.stf file in the Program Files\Plus!\Setup folder to
+	  Setup.old, and then run Microsoft Plus! Setup again.
+	
+	- Edit the Setup.stf file to reflect the correct path to the Microsoft Plus!
+	  source files and then run Setup again. To do so, follow these steps:
+	
+	  1. Use any text editor, such as WordPad, to open the Setup.stf file in the
+	     Program Files\Plus!\Setup folder.
+	
+	     NOTE: If you installed Microsoft Plus! in a folder other than the Program
+	     Files\Plus! folder, open the Setup.stf file in the Setup folder in the
+	     folder in which you installed Microsoft Plus!.
+	
+	  2. Change the "Source Directory" line to reflect the current path to the
+	     Microsoft Plus! source files.
+	
+	     NOTE: If you inadvertently remove any spaces from the end of the path in
+	     the "Source Directory" line, you receive the following error message when
+	     you run Microsoft Plus! Setup in Maintenance mode:
+	
+	  Setup Error 946
+	
+	  Check Modules Object
+	
+	  Your Setup files may be damaged. Try restarting the Setup program.
+	
+	     If this occurs, rename or delete the Setup.stf file and run Setup again
+	     from the Microsoft Plus! disks or CD-ROM.
+	
+	  3. Save the Setup.stf file and then quit the editor.
+	
+	  4. Run Microsoft Plus! Setup.
+	
+	Additional query words: 824 error
+	
+	======================================================================
+	Keywords          : win95 
+	Technology        : kbGamesSearch kbPlusSearch kbPlus95
+	Version           : 95
+	Issue type        : kbprb
+	
+	=============================================================================
+	

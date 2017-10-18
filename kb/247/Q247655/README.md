@@ -1,0 +1,108 @@
+---
+layout: page
+title: "Q247655: FS2000 Err Msg: Flight Simulator Has Detected That..."
+permalink: kb/247/Q247655/
+---
+
+## Q247655: FS2000 Err Msg: Flight Simulator Has Detected That...
+
+	Article: Q247655
+	Product(s): Microsoft Home Games
+	Version(s): WINDOWS:
+	Operating System(s): 
+	Keyword(s): kbdisplay kberrmsg kbimu msgame
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Flight Simulator 2000 
+	- Microsoft Flight Simulator 2000 Professional Edition 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you start Microsoft Flight Simulator 2000, you may receive the following
+	error message
+	
+	  Flight Simulator has detected that the following video card/driver
+	  combination may cause your computer to stop responding:
+	
+	  <VideoAdapter>
+	
+	  You should contact your video card manufacturer for a driver update, or see
+	  the configuration issues section of the readme.txt file for further
+	  information.
+	
+	  You can still use Flight Simulator with software rendering by choosing Yes, or
+	  by choosing No you may continue to run with your hardware accelerator at your
+	  own risk. Do you want to revert to software rendering?
+	
+	where <VideoAdapter> is the manufacturer and model of your video adapter.
+	
+	You may receive this error message even if 3D hardware acceleration is disabled
+	in the game.
+	
+	CAUSE
+	=====
+	
+	This behavior can occur if your video adapter and driver are listed in the
+	Badcfg.cfg file located in the FS2000 folder.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, contact your hardware manufacturer to inquire about how
+	to obtain and install the latest version of the video driver for your primary
+	video adapter.
+	
+	For information about how to contact your hardware manufacturer, click the
+	appropriate article number in the following list to view the article in the
+	Microsoft Knowledge Base:
+	
+	  Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+	
+	  Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+	
+	  Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+	
+	If no updated video driver is available for your primary video adapter, you can
+	work around this issue by disabling 3D hardware acceleration in Flight Simulator
+	2000, and then renaming the Badcfg.cfg file. To do this:
+	
+	1. Start a new flight in Flight Simulator 2000.
+	
+	2. On the Options menu, point to Settings, and then click Display.
+	
+	3. Click to clear the "Enable hardware acceleration" check box, and then click
+	  the green CHECK MARK.
+	
+	4. Quit Flight Simulator 2000.
+	
+	5. Click Start, point to Find, then click "Files or Folders."
+	
+	6. In the Named box, type "badcfg.cfg" (without the quotation marks).
+	
+	7. Click to select the "Include subfolders" check box.
+	
+	8. In the "Look in" box, click the hard disk on which Flight Simulator 2000 is
+	  installed, and then click Find Now.
+	
+	9. In the list of found files, right-click the Badcfg.cfg file, and then click
+	  Rename.
+	
+	10. Type "badcfg.old" (without the quotation marks), and then press ENTER.
+	
+	11. Close the Find: Files Named Badcfg.cfg window.
+	
+	Additional query words: flightsim fsim fs fs2000 fs2k msgame errmsg
+	
+	======================================================================
+	Keywords          : kbdisplay kberrmsg kbimu msgame 
+	Technology        : kbGamesSearch kbFlightSimSearch kbFlightSim2000 kbSimSearch
+	Version           : WINDOWS:
+	Issue type        : kbprb
+	
+	=============================================================================
+	

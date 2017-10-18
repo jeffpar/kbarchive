@@ -1,0 +1,124 @@
+---
+layout: page
+title: "Q156508: PRB: SQL Server Table Bit Field Requires Value of 0 or 1"
+permalink: kb/156/Q156508/
+---
+
+## Q156508: PRB: SQL Server Table Bit Field Requires Value of 0 or 1
+
+	Article: Q156508
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:2.5,3.0,3.0b,5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbvfp300 kbvfp300b kbvfp500 kbvfp600 kbMDAC250
+	Last Modified: 23-FEB-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 6.0 
+	- Microsoft Data Access Components version 2.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	You may receive the following error running a Remote View after setting a filter
+	condition for a bit field from a SQL Server table:
+	
+	  Connectivity error: [Microsoft][ODBC SQL Server Driver][SQL Server]
+	  Line 1: Incorrect syntax near '.'.
+	
+	  -or-
+	
+	  [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid column name '<T or
+	  F>'.
+	
+	CAUSE
+	=====
+	
+	You have used .T., .F., T, or F in the Remote View Designer as a Filter Example
+	for a field of bit data type in a SQL Server table. The SQL Server ODBC driver
+	requires a 0 or 1 for Filter Example for fields of bit data type.
+	
+	RESOLUTION
+	==========
+	
+	Use a 0 or 1 rather than .T., .F., T, or F.
+	
+	STATUS
+	======
+	
+	This behavior is by design.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	The following steps apply to Visual FoxPro 5.0:
+	
+	1. Set up an ODBC data source to the Pubs database in SQL Server if you do not
+	  have one already. Use the following steps:
+	
+	  a. Open the 32-bit ODBC or ODBC program item icon in the Control Panel (These
+	     apply to Windows 95 and Windows NT, respectively).
+	
+	  b. In the Data Sources dialog box, click Add.
+	
+	  c. In the Add Data Sources dialog box, select SQL Server from the Installed
+	     ODBC Drivers list, then click OK.
+	
+	  d. In the ODBC SQL Server Setup dialog box. Add a Data Source Name. Note the
+	     name you assign it, as you will need it later. Type in or select your
+	     server name in the Server combo box. Select the Options button, and under
+	     Database Name, type in 'pubs' (without the quotes). Click OK to save the
+	     settings.
+	
+	  e. Click Close from the Data Sources dialog box.
+	
+	2. Create a database in Visual FoxPro. Open this database in the Database
+	  Designer.
+	
+	3. Create a new Remote View by right-clicking in the Database Designer and
+	  selecting New Remote View from the context menu. Select the New View button.
+	
+	4. In the Select Connection or Data Sources dialog box, select the "Available
+	  data sources" option button. Select the Data Source Name (from step 1d) from
+	  the "Available data sources" list, then click OK.
+	
+	5. The SQL Server Login dialog box appears. Enter the correct Login ID and
+	  Password for your server, and click OK.
+	
+	6. The Open dialog box appears. Select the Authors table, click the Add button,
+	  and then the Close button.
+	
+	7. In the Remote View Designer, select the Add All button on the Fields tab.
+	
+	8. Right-click in the View Designer, and select Run Query. Look at the contents
+	  of the Contract field--it contains T or F, indicating this is a field of bit
+	  data type.
+	
+	9. Select the Filter tab, and click in the Field Name box. Select
+	  Authors.contract from the drop-down list. In the Example box, type .T., then
+	  right-click in the Remote View Designer, and select Run Query. The following
+	  error occurs:
+	
+	  Connectivity error: [Microsoft][ODBC SQL Server Driver]
+	  [SQL Server]Line 1: Incorrect syntax near '.'.
+	
+	10. Change the Example from .T. to 1, and right-click in the Remote View
+	  Designer, and select Run Query. The browse displays records with
+	  Authors.contract containing T.
+	
+	Additional query words: kbdse VFoxWin
+	
+	======================================================================
+	Keywords          : kbvfp300 kbvfp300b kbvfp500 kbvfp600 kbMDAC250 
+	Technology        : kbVFPsearch kbAudDeveloper kbMDACSearch kbMDAC250 kbVFP300 kbVFP300b kbVFP500 kbVFP600
+	Version           : WINDOWS:2.5,3.0,3.0b,5.0,6.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

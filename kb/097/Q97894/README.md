@@ -1,0 +1,117 @@
+---
+layout: page
+title: "Q97894: PC WRmt: Remote Mail Password Dialogs"
+permalink: kb/097/Q97894/
+---
+
+## Q97894: PC WRmt: Remote Mail Password Dialogs
+
+	Article: Q97894
+	Product(s): Microsoft Mail For PC Networks
+	Version(s): WINDOWS:3.2
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 29-OCT-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Mail Remote for Windows, version 3.2 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	There is more than one dialog box to change your password in version 3.2 of
+	Microsoft Mail Remote for Windows.
+	
+	These change different passwords. They are not for the same use, although the
+	actual password can be the same.
+	
+	In some cases, you might have to change both your password and driver to access
+	all of your different mail systems.
+	
+	MORE INFORMATION
+	================
+	
+	Mail Remote for Windows Driver
+	------------------------------
+	
+	With the Mail Remote driver loaded in Mail Remote for Windows, there are two
+	passwords. One for local Sign-In (access to your mail) and the other for dialing
+	in to your postoffice.
+	
+	The first option changes your local password, allowing you security over your
+	local message store file. By default, this file's name is MSMAIL.MMF and is
+	located in your Windows directory. When the Change Password dialog box is
+	activated from the Mail menu, its title is Change Password.
+	
+	If you select Dialin Password from the Mail, Communications dialog box, the
+	dialog is titled Dialin Password. The password referred to in the option Dialin
+	Password contains the password needed by modem users to access their postoffice.
+	This password is set by your Mail Administrator. If you change it without being
+	told to by the Mail Administrator, you will no longer be able to connect to your
+	postoffice.
+	
+	AT&T Mail Driver
+	----------------
+	
+	With the AT&T Mail driver loaded in Mail Remote for Windows, there are also
+	multiple passwords. There are references to both a password and a secondary
+	password when you choose the Change Password option on the Mail menu in the
+	Sign-In screen when you start Mail.
+	
+	The reference to password provides two functions: local access to mail (password
+	to your MS_ATT.MMF message store) and it is the primary password for dialing in
+	to your AT&T Mail host system. A secondary password is optional with
+	AT&T mail -- it is not required for either local (.MMF) access or for host
+	(dial-in) access.
+	
+	Because your local (primary) password must be used for both local and host
+	access, you should not change the password without notice from AT&T mail. If
+	you change your local password, you will not get access to AT&T mail hosts
+	through your modem. You must get this password only from AT&T. As such, do
+	not change your primary password unless you get confirmation first from
+	AT&T. AT&T will give you your password -- you cannot choose your own
+	password.
+	
+	If you choose to use a secondary password, you can change this yourself. Use the
+	Terminal option on the Mail menu to dial in to the AT&T host directly and
+	change your secondary password on the host first. Then use your Mail, Change
+	Password option to change the password as it is stored in Mail Remote for
+	Windows.
+	
+	NOTE: This is in the Help file for AT&T and the Microsoft Mail Product
+	Support Help file installed by Setup when you setup Mail Remote for Windows.
+	
+	When you load the Microsoft Mail for PC Networks driver with Mail Remote for
+	Windows, the Sign-In password is first checked against the password assigned to
+	your account on your postoffice by your Mail Administrator. This password must
+	match the password for your .MMF file if you have a local file already created.
+	
+	If you have a local .MMF with a different password than your Network
+	Administrator has assigned you, using the Network Mail driver will not allow you
+	access to that .MMF. The easiest option is to have your Administrator change
+	your Network-Access password, or Sign-In to your own account with the Microsoft
+	Mail for MS-DOS client and change your password to match the password you use
+	for your local .MMF file.
+	
+	If that is not an option, switch back to a driver that will allow you access to
+	your local .MMF and change your Local-Access password to match the password
+	assigned by your Mail Administrator. Then load the Network Mail driver and start
+	Mail.
+	
+	Another option is to rename your local .MMF file so it is not MSMAIL.MMF. Once
+	you start Mail Remote for Windows and it does not find your local file (because
+	you renamed it), Mail will prompt you to create a new .MMF file. This file will
+	have the password assigned by your Mail Administrator for Network Mail Access.
+	
+	Additional query words: 3.20
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMailSearch kbZNotKeyword3 kbMailRemote320
+	Version           : WINDOWS:3.2
+	
+	=============================================================================
+	

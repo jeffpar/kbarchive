@@ -1,0 +1,176 @@
+---
+layout: page
+title: "Q175698: XCLN: Exchange Client Top Support Issues and KB Articles"
+permalink: kb/175/Q175698/
+---
+
+## Q175698: XCLN: Exchange Client Top Support Issues and KB Articles
+
+	Article: Q175698
+	Product(s): Microsoft Exchange
+	Version(s): 3.1,3.11,4.0,5.0,5.5,8.0,8.01,8.02,8.03
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 02-FEB-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Active Server Components, version 5.0 
+	- Microsoft Exchange Macintosh client, versions 4.0, 5.0 
+	- Microsoft Exchange MS-DOS client, versions 4.0, 5.0 
+	- Microsoft Exchange Windows 3.x client, versions 4.0, 5.0 
+	- Microsoft Exchange Windows 95/98 client, versions 4.0, 5.0 
+	- Microsoft Exchange Windows NT client, versions 4.0, 5.0 
+	- Microsoft Outlook for Macintosh, Exchange Server Edition, version 8.0 
+	- Microsoft Outlook, Exchange Server Edition, version 8.0, used with:
+	   - the operating system: Microsoft Windows versions 3.1, 3.11 
+	- Microsoft Outlook Web Access, version 5.5 
+	- Microsoft Outlook Web Access, version 5.5 Service Pack 1 
+	- Microsoft Outlook 97, versions 8.0, 8.01, 8.02, 8.03 
+	- Microsoft Outlook 98 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Listed below are the top issues for the Microsoft Exchange Client Support Team
+	and troubleshooting information relevant to resolving the issues as of May 1999.
+	
+	MORE INFORMATION
+	================
+	
+	Outlook Web Access (OWA) client keeps prompting with the Logon.asp when I try to open messages in the OWA client.
+	-----------------------------------------------------------------------------------------------------------------
+	
+	  Q216998 XWEB: OWA Logon Screen Displays Again When Opening a Mail Message
+	
+	My Outlook/Exchange Client cannot connect to the Exchange Server computer.
+	--------------------------------------------------------------------------
+	
+	  Q155048 XCLN: Troubleshooting Startup of Windows Client Using TCP/IP
+	
+	  Q162544 Troubleshooting Remote Function of Exchange and Schedule+
+	
+	  Q174701 XCLN: Troubleshooting RPC Problems for Exchange Clients
+	
+	Getting synchronization errors 80070005-508-0-324 or 80070005-508-0-322 when trying to synchronize an OST file.
+	---------------------------------------------------------------------------------------------------------------
+	
+	
+	  Q221238 XADM: OST Sync Fails with 80070005-508-00-324
+	
+	OWA "ASP0115" errors in the browser.
+	------------------------------------
+	
+	NOTE: For this problem, it is best to install Exchange Server 5.5 Service Pack 2
+	(SP2). All of the hotfixes listed in the following articles are included in
+	SP2.
+	
+	
+	  Q184841 XWEB: OWA Add-in Component for IIS May Cause Heap Corruption
+	
+	  Q196670 XWEB: OWA Causes an Access Violation in MAPI
+	
+	  Q193557 BUG: Outlook Web Access Stops on Corrupt Calendar Data
+	
+	  Q193260 XADM: OWA Stops when Replying to Message with Inline Image
+	
+	  Q193675 XWEB: Bad Error Handling in CfolderRender::put_DataSource Causes OWA
+	  to Crash
+	
+	OWA troubleshooter on the Microsoft Web site:
+	
+	  http://support.microsoft.com/support/exchange/content/whitepapers/owa_tshoot.asp
+	
+	Opening items or folders in OWA keeps giving me "Unable to Render View."
+	------------------------------------------------------------------------
+	
+	  Q184304 XWEB: Outlook Web Access Error Message: Unable to Render View
+	
+	  Q178154 XWEB: Err Msg: Unable to Render This view424Object Required
+	
+	OWA troubleshooter on the Microsoft Web site:
+	
+	  http://support.microsoft.com/support/exchange/content/whitepapers/owa_tshoot.asp
+	
+	How can I prevent the Internet Explorer icons from showing up on the desktop with my ODK package?
+	-------------------------------------------------------------------------------------------------
+	
+	  Q189729 OL98: ODK: How to Remove the Outlook Express Icon Using ODK
+	
+	  ftp://ftp.microsoft.com/softlib/mslfiles/ol98qfe2.exe
+	
+	ODK documentation:
+	
+	  http://www.microsoft.com/outlook/outlook98/documents/odk/98ch00w.asp
+	
+	Remote Procedure Call (RPC) connectivity to Exchange Server issues: starting the Outlook/Exchange Client is slow or does not connect successfully.
+	--------------------------------------------------------------------------------------------------------------------------------------------------
+	
+	  Q162544 Troubleshooting Remote Function of Exchange and Schedule+
+	
+	  Q174701 XCLN: Troubleshooting RPC Problems for Exchange Clients
+	
+	  Q163576 XGEN: Changing the RPC Binding Order
+	
+	  Q155048 XCLN: Troubleshooting Startup of Windows Client Using TCP/IP
+	
+	  Q167260 XCLN: How to Use RPCPing to Test RPC Communication
+	
+	  Q152344 XCLN: Winsock Application Starts When Exchange Client Starts
+	
+	  Q149596 XCLN: Configuring Mac Client for TCP/IP
+	
+	  Q166665 XCLN: Troubleshooting AppleTalk Connection
+	
+	Calendaring issues: resource accounts not booking meetings; calendars not displaying/updating any Free/Busy information for a user; and problems importing calendar data.
+	-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	
+	  Q180424 OL98: (CW) Direct Booking of Resource Without a Delegate Account
+	
+	  Q180179 OL98: New Calendar Has Bold Days with No Appointments
+	
+	  Q182112 OL98: Additional Command-Line Switches
+	
+	  Q180441 OL98: Error Importing Schedule+ 1.0 (.cal) Files to Outlook
+	
+	  Q181405 OL98: Converting Schedule+ Files
+	
+	  Q162990 OL97: Troubleshooting Schedule+ Import Problems
+	
+	Remote connectivity issues: connecting to the Exchange Server over a firewall; using PPTP; or getting errors when trying to use Outlook/Exchange Client over RAS.
+	-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+	
+	  Q155831 XADM: Setting TCP/IP Ports for Exchange and Outlook Client
+	  Connections Through a Firewall
+	
+	  Q148732 XADM: Setting TCP/IP Port Numbers for Internet Firewalls
+	
+	  Q189595 PPTP Performance and Security Upgrade for WinNT 4.0 Release Notes
+	
+	  Q189594 RRAS Upgrade for WinNT Server 4.0 Hotfix Pack 3.0 Release Notes
+	
+	  Q180979 OL97: Using Outlook with a PPTP Connection
+	
+	  Q163330 XCLN: Using Open Transport 1.1.2 and MacPPP for the Mac Client
+	
+	Using OWA through Proxy Server.
+	-------------------------------
+	
+	  Q207655 XWEB: Setting Up Web Publishing and OWA Access Through a Proxy
+	
+	  Q198509 XWEB: 'Unable to get your inbox' Using OWA via Proxy Server
+	
+	  Q187650 Error: 'Server Returned Invalid or Unrecognized Response'
+	
+	Additional query words: query Kb hot topics hits faq exclnfaqold 8.5
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbHWMAC kbOSMAC kbOutlookSearch kbPTNotAssigned kbExchangeSearch kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbOutlookMacSearch
+	Version           : :3.1,3.11,4.0,5.0,5.5,8.0,8.01,8.02,8.03
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

@@ -1,0 +1,122 @@
+---
+layout: page
+title: "Q202013: IIS 5.0 Command-Line Syntax for Iisreset.exe"
+permalink: kb/202/Q202013/
+---
+
+## Q202013: IIS 5.0 Command-Line Syntax for Iisreset.exe
+
+	Article: Q202013
+	Product(s): Internet Information Server
+	Version(s): winnt:5.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 04-FEB-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Services version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Microsoft Internet Information Services (IIS) version 5.0 adds a new
+	command-line utility, Iisreset.exe, which can be used to restart IIS or schedule
+	restarting your computer.
+	
+	MORE INFORMATION
+	================
+	
+	Iisreset.exe is designed to easily allow Web administrators to take a server
+	offline or recycle services through the command line, the Task Scheduler, or
+	batch commands that perform additional tasks.
+	
+	In the example shown below, an administrator could write a batch file that stops
+	the Web services to flush the IIS logs, and then copy the logs to another server
+	or perform other housekeeping tasks, and then restart the services.
+	
+	The syntax for using Iisreset.exe is as follows:
+	
+	  IISRESET [computer name] [/option] [/option] [(and so on)]
+	
+	The default behavior if no options are specified is to stop and restart the Web
+	services on the local computer.
+	
+	Iisreset.exe supports the following command-line parameters:
+	
+	  /RESTART
+	  This option stops, and then restarts all running Internet services.
+	
+	  /START
+	  This will start all Internet services that are set to autostart.
+	
+	  /STOP
+	  This will stop all running Internet services.
+	
+	  /REBOOT
+	  This parameter will restart the computer.
+	
+	  /REBOOTONERROR
+	  This restarts the computer only when an error occurs when trying to start,
+	  stop, or restart the Internet services.
+	
+	  /NOFORCE
+	  Do not shut down Internet services on failure to stop them gracefully.
+	
+	  /TIMEOUT:val
+	  This allows you to specify the timeout value in seconds waiting for a
+	  successful stop of Internet services. On expiration of this timeout, the
+	  computer can be restarted if the /REBOOTONERROR parameter is specified. The
+	  default value is 20 seconds for restart, 60 seconds for stop.
+	
+	  /STATUS
+	  This displays the status of all Internet services.
+	
+	  /ENABLE
+	  This enables the Restart API for Internet services.
+	
+	  /DISABLE
+	  This will disable the Restart API for Internet services.
+	
+	Examples:
+	
+	The following command will attempt to restart all running Web services and reboot
+	the computer if the command is not successful for any reason:
+	
+	  IISRESET /RESTART /REBOOTONERROR
+	
+	This following will attempt to restart all running Web services, yet if either
+	the stop or restart commands are not successful within two minutes, the computer
+	will restart:
+	
+	  IISRESET /RESTART /TIMEOUT:120 /REBOOTONERROR
+	
+	The purpose of the following commands, when saved to a batch file, is to stop all
+	running Web services, copy the log files for the default Web server to a backup
+	directory on the D: drive, and then start all Web services. However, if the stop
+	command fails for some reason, it will not shut down the services, but simply
+	exit the batch file:
+	
+	  @echo off
+	  IISRESET /STOP /NOFORCE
+	  if errorlevel == 1 goto EXIT
+	  copy %systemroot%\system32\LogFiles\W3SVC1 d:\backup\W3SVC1
+	  IISRESET /START
+	  :EXIT
+	
+	Any of the preceding examples can be scheduled to run during non-peak hours for
+	your server using Task Scheduler. For more information on how to accomplish
+	this, search for Task Scheduler in Windows Help.
+	
+	Additional query words: iis
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbiisSearch kbiis500
+	Version           : winnt:5.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

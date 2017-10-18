@@ -1,0 +1,83 @@
+---
+layout: page
+title: "Q83458: Windows Versions Supported with Various MS-DOS Versions"
+permalink: kb/083/Q83458/
+---
+
+## Q83458: Windows Versions Supported with Various MS-DOS Versions
+
+	Article: Q83458
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:2.x,3.0,3.0a,3.1,3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 18-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows versions 2.03, 2.1, 2.11, 3.0, 3.0a, 3.1, 3.11 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The chart below shows which versions of MS-DOS can be run with Windows.
+	
+	If the error "Unsupported DOS version" occurs, check the Windows version and the
+	MS-DOS version against the chart below. It is also important to verify that the
+	MS-DOS version being used is the one recommended by the hardware manufacturer
+	and not an OEM version from another hardware vendor (for example, IBM PC-DOS on
+	a clone machine).
+	
+	MS-DOS version 3.0 or later is required to run any version of Windows 2.03
+	through 2.11. MS-DOS version 3.1 or later is required to run Windows versions
+	3.0 and 3.1.
+	
+	MORE INFORMATION
+	================
+	
+	  -------------------------MS-DOS Version--------------------------
+	                      3.0x  3.1x  3.2x  3.3x  4.00, 4.01(a)  5.00
+	  -----------------------------------------------------------------
+	  Windows/286 2.03,    Y  |  Y  |  Y  |  Y  |  Y           |  (c)
+	     2.10, and 2.11       |     |     |     |              |
+	  ------------------------|-----|-----|-----|--------------|-------
+	  Windows/386 2.03     Y  |  Y  |  Y  |  Y  |  N           |  N
+	  ------------------------|-----|-----|-----|--------------|-------
+	  Windows/386 2.1      N  |  Y  |  Y  |  Y  |  (b)         | (b)(c)
+	  ------------------------|-----|-----|-----|--------------|-------
+	  Windows/386 2.11     N  |  Y  |  Y  |  Y  |  Y           |  (c)
+	  ------------------------|-----|-----|-----|--------------|-------
+	  Windows 3.0          N  |  Y  |  Y  |  Y  |  Y           |  Y
+	  ------------------------|-----|-----|-----|--------------|-------
+	  Windows 3.1          N  |  Y  |  Y  |  Y  |  Y           |  Y
+	  -----------------------------------------------------------------
+	
+	  Notes
+	  -----
+	
+	  (a)  MS-DOS 4.0 or 4.01 or IBM PC-DOS 4.01 -- Windows
+	       does not work correctly with IBM PC-DOS 4.0
+	
+	  (b)  If dated 9/7/88 or later, Yes; if not, No
+	
+	  (c)  Must have SETVER.EXE loaded in the CONFIG.SYS file
+	       to work correctly with MS-DOS 5.0
+	
+	"Windows/286" in the table above includes Windows/286 and all Microsoft run-time
+	versions sent out with Microsoft products (Excel, Word for Windows, and so on).
+	
+	This data is based on MS-DOS version numbers. An OEM DOS product with the same
+	version number may not work correctly. (In these cases, an OEM DOS upgrade may
+	be required to work with Windows).
+	
+	Additional query words: 2.10 3.00 3.00a 3.10 Excel win386 Incorrect DOS version Winword
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWin3xSearch kbZNotKeyword3 kbWin203 kbWin210 kbWin211 kbWin300 kbWin300a kbWin310 kbWin311
+	Version           : WINDOWS:2.x,3.0,3.0a,3.1,3.11
+	
+	=============================================================================
+	

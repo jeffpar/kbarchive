@@ -1,0 +1,472 @@
+---
+layout: page
+title: "Q80903: Compatibility Test For Windows 3.1 Checklist"
+permalink: kb/080/Q80903/
+---
+
+## Q80903: Compatibility Test For Windows 3.1 Checklist
+
+	Article: Q80903
+	Product(s): Microsoft Windows Software Development Kit
+	Version(s): 3.1
+	Operating System(s): 
+	Keyword(s): kb16bitonly
+	Last Modified: 05-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows Software Development Kit (SDK) 3.1 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This document provides the checklist that corresponds to the seven articles
+	titled "Windows 3.1 Application Compatibility." When you follow the steps to
+	test your application, load this document into a word processor and complete the
+	information requested. When testing is complete, print this document and mail
+	it, along with the printing tests requested, to the address listed at the bottom
+	of this document.
+	
+	To find the "Windows 3.1 Application Compatibility" articles, search this
+	knowledge base on the words:
+	
+	  prod(winsdk) and 31compattest
+	
+	Please be candid in your responses. We value your feedback.
+	
+	The names of up to three people involved in testing the application for
+	compatibility can be entered into the Windows 3.1 Compatibility Sweepstakes.
+	
+	  Application Name:
+	  Version:
+	  Shipment Date:
+	  Company Name:
+	  Address:
+	  Representative: *
+	  Phone:
+	  Fax:
+	
+	* Please name the person that Microsoft should contact with information regarding
+	the test results or problems.
+	
+	General Instructions
+	--------------------
+	
+	Try each operation listed in each section (if it applies to your application).
+	Please include a description of the operations you tried in the Comments
+	section. Also include information about why you didn't try an operation if this
+	is the case.
+	
+	Application Installation Programs
+	---------------------------------
+	
+	___Pass ___Fail Run your installation program from the MS-DOS prompt.
+	
+	___Pass ___Fail Run your installation program from the MS-DOS prompt
+	               under Windows.
+	
+	___Pass ___Fail Run your installation program from the Run command in
+	               the File menu of Program Manager.
+	
+	Comments:
+	
+	Windows Setup
+	-------------
+	
+	___Pass ___Fail Install Microsoft Windows version 3.1 on a computer
+	               with Windows version 3.0a and your application already
+	               installed. Be sure to preserve your application's
+	               WIN.INI and Program Manager settings.
+	
+	Comments:
+	
+	Shell Application
+	-----------------
+	
+	___Pass ___Fail Run your application as the shell. Exit Windows and be
+	               sure that Windows terminates correctly.
+	
+	Comments:
+	
+	Windows Shell Applications
+	--------------------------
+	
+	___Pass ___Fail Start your application from File Manager.
+	
+	___Pass ___Fail Start your application from Program Manager.
+	
+	___Pass ___Fail Start your application from the Startup group (copy
+	               your application's icon to the group and restart
+	               Windows).
+	
+	___Pass ___Fail Start your application without the network installed.
+	
+	___Pass ___Fail Start your application with the network installed.
+	
+	___Pass ___Fail Drag a file from File Manager to your application.
+	
+	___Pass ___Fail Drag a file associated with your application to Print
+	               Manager.
+	
+	___Pass ___Fail Check colors in your application when the system has
+	               default colors.
+	
+	___Pass ___Fail Check colors in your application when the system has
+	               nondefault colors (for example, Arizona).
+	
+	___Pass ___Fail Check colors in your application when the system
+	               colors are customized.
+	
+	___Pass ___Fail Use Windows version 3.1 Cardfile and Write to open and
+	               view files that your application created.
+	
+	___Pass ___Fail Use your application to open and read files that
+	               Windows version 3.1 Cardfile and Write created and
+	               that contain OLE objects.
+	
+	Comments:
+	
+	Multimedia and Sound
+	--------------------
+	
+	___Pass ___Fail Check all of your application's sound capabilities
+	               when running in a virtual machine.
+	
+	___Pass ___Fail Exit Windows and check all of your application's sound
+	               capabilities when running under MS-DOS.
+	
+	___Pass ___Fail Check all of your application's sound capabilities.
+	
+	___Pass ___Fail Check all of your application's capabilities that
+	               unusual drivers supply.
+	
+	Comments:
+	
+	Window Management
+	-----------------
+	
+	___Pass ___Fail Start your application in its default state. Maximize
+	               and minimize it, making sure it paints correctly after
+	               each operation.
+	
+	___Pass ___Fail Move your application as far right and left as you can
+	               in small increments, watching for repaint problems
+	               each time you stop moving.
+	
+	___Pass ___Fail Resize your application using the mouse to drag the
+	               border.
+	
+	___Pass ___Fail Minimize your application, starting another
+	               application. Restore your application. Be sure it
+	               paints correctly.
+	
+	___Pass ___Fail Start your application with another Windows
+	               application, such as one of the accessories. Bring the
+	               accessory to the foreground, covering your
+	               application. Switch back to your application. Be sure
+	               it painted correctly.
+	
+	___Pass ___Fail Start several applications. Use ALT+TAB to move
+	               through them. Be sure your application repaints
+	               correctly.
+	
+	___Pass ___Fail Check all of your application's scrolling capabilities.
+	
+	___Pass ___Fail Use the Program Manager to check memory and resource
+	               usage before and after running your application. Be
+	               sure available memory and resources are not lost.
+	
+	___Pass ___Fail Examine your application code, and be sure there are
+	               no dependencies on client area visibility when your
+	               application is active.
+	
+	___Pass ___Fail Start the clock and set it to be the topmost window.
+	               Run your application and several others. Use ALT+TAB
+	               to switch between applications, and be sure your
+	               application repaints correctly.
+	
+	Comments:
+	
+	TrueType
+	--------
+	
+	___Pass ___Fail Examine your application code and be sure there are no
+	               dependencies on the font names Helv and Tms Rmn.
+	
+	___Pass ___Fail Enable the "Show Only TrueType Fonts in Applications"
+	               option in Control Panel. Check the font dialogs in
+	               your application. They should list all TrueType fonts
+	               and no non-TrueType fonts.
+	
+	___Pass ___Fail Check fonts in dialog boxes, tool bars, and sample
+	
+	               files for your application. Be sure they are readable.
+	
+	___Pass ___Fail Check the application code and be sure there are no
+	               dependencies on GetTextFace and EnumFonts matching.
+	
+	___Pass ___Fail Create a document in your application that contains
+	               characters close to the edge of the screen and the
+	               printable margins. Scroll the document, checking for
+	               characters (or pieces of characters) left behind.
+	
+	___Pass ___Fail Highlight text. Be sure the highlight encompasses all
+	               characters and that no part of any character
+	               (especially the first and last characters) is left
+	               out.
+	
+	___Pass ___Fail Print the document. Be sure no characters are clipped
+	               at the edges of the printable region.
+	
+	___Pass ___Fail Create a document under Windows version 3.0a using
+	               type-manager (such as ATM), bitmap, and device fonts.
+	               Look at the document under Windows version 3.1; be
+	               sure the screen appears the same.
+	
+	___Pass ___Fail Print the document under Windows versions 3.0a and
+	               3.1; be sure the output appears the same.
+	
+	___Pass ___Fail If your application assumed that scalable fonts could
+	
+	               not print on nonscalable devices, such as a PCL
+	               printer, it will have problems in enumerating fonts.
+	               Check the font dialog box and sizes listed for TrueType
+	               fonts. The font dialog box should list many sizes for each
+	               TrueType font.
+	
+	___Pass ___Fail TrueType fonts are shipped in regular, bold, italic,
+	               and bold italic. This can cause problems for
+	               applications that assumed styles were always
+	               simulated. Check the font dialog box to ensure that each
+	               font is listed only once.
+	
+	___Pass ___Fail TrueType fonts appear for both printer and screen.
+	               This causes problems for applications that assume
+	               printer and screen fonts are always different. Select
+	               a nonraster printer (for example, PCL) and check the
+	               font dialog box to ensure that each font is listed only
+	               once.
+	
+	___Pass ___Fail Create a document with a nonscalable printer
+	               installed, using two fonts, a device font, and a
+	               TrueType font. Both fonts must have the same name.
+	               Print the document.
+	
+	___Pass ___Fail Use a TrueType font to create a document using the
+	               desktop publishing and international characters. Be
+	               sure the characters appear correctly on the screen.
+	
+	___Pass ___Fail Change to a bitmap font, and then change back to a
+	               TrueType font. Be sure the characters still appear
+	               correctly.
+	
+	___Pass ___Fail Print the document. Be sure the printout is correct.
+	
+	___Pass ___Fail Using the Char Map application in the accessories
+	               group of Program Manager, use a TrueType font to copy
+	               the desktop publishing characters to the clipboard and
+	               paste them into your application. Be sure the
+	               characters appear correctly.
+	
+	Comments:
+	
+	Enhanced-Mode Windows
+	---------------------
+	
+	___Pass ___Fail Check COMM.DRV by sending and receiving data in your
+	               application at various baud rates.
+	
+	___Pass ___Fail Check the new VDMAD as a replacement for your custom
+	               VDMAD by thoroughly testing your application with the
+	               new VDMAD.
+	
+	___Pass ___Fail Check your application's installation program to
+	               ensure that it does not overwrite the "device=*VDMAD"
+	               setting in the SYSTEM.INI file.
+	
+	___Pass ___Fail Check the VTD by starting several other non-Windows
+	               applications and then starting your non-Windows
+	               application. Check for timer problems. If there are
+	               problems, set the SYSTEM.INI setting TrapTimerPorts
+	               and try the tests again.
+	___Pass ___Fail Check the VDD by starting your application or TSR in
+	               one or more virtual machines and then switch between
+	               virtual machines watching for problems with the
+	               display.
+	
+	___Pass ___Fail Check Fastdisk by running it while testing your
+	               application.
+	
+	Comments:
+	
+	Printing
+	--------
+	
+	___Pass ___Fail Print using the PostScript driver.
+	
+	___Pass ___Fail Print using the LaserJet II driver.
+	
+	___Pass ___Fail Print using the LaserJet III driver.
+	
+	___Pass ___Fail Print using the dot-matrix driver.
+	
+	___Pass ___Fail Bring a document created under Windows version 3.0a
+	               with your application to version 3.1 and print it. Be
+	               sure there are no error messages and that it prints
+	               correctly.
+	
+	___Pass ___Fail Check you application code for the GETTEXTENTTABLE
+	               escape.
+	<BR/><BR/>
+	Please include the documents you printed when returning this form to
+	Microsoft.
+	
+	Comments:
+	
+	SmartDrive 4
+	------------
+	
+	___Pass ___Fail Read files from disk.
+	
+	___Pass ___Fail Write files to disk.
+	
+	___Pass ___Fail If your application uses the floppy drive or can read
+	               and write files to the floppy drive, try those
+	               operations with caching enabled on the floppy.
+	
+	Comments:
+	
+	Local CTRL+ALT+DEL
+	------------------
+	
+	___Pass ___Fail Press CTRL+ALT+DEL while your application is running.
+	               Be sure Windows continues to function after your
+	               application terminates.
+	
+	Comments:
+	
+	Checklist of Problem Areas Not Specific to Windows 3.1 Changes:
+	
+	Following are some areas that you should check, but that were not changes for
+	Windows version 3.1. We have seen several applications with problems in these
+	areas.
+	
+	Setup
+	-----
+	
+	___Pass ___Fail Try your setup program with SHARE enabled and not
+	               enabled. Be sure your setup program runs correctly in
+	               both cases.
+	
+	___Pass ___Fail Install Windows version 3.1 over Windows version 3.0,
+	               but in a directory other than the one containing
+	               Windows version 3.0. Be sure your application runs
+	               under Windows version 3.1 without being reinstalled.
+	
+	___Pass ___Fail Try your setup program with a path that is at the
+	               maximum length. Be sure your setup program recognizes
+	               that it cannot add to the path.
+	
+	___Pass ___Fail Try your setup program with an AUTOEXEC.BAT file
+	               containing more than one path statement, or by calling
+	               batch files that set the path. Be sure your setup
+	               program recognizes the correct path statement to which
+	               to add information.
+	
+	___Pass ___Fail Try your setup program with a screen saver running.
+	
+	___Pass ___Fail Install your application on a hardcard drive and on a
+	               compressed drive. Be sure the application installs and
+	               runs correctly.
+	
+	___Pass ___Fail Install your application on a hard drive with a drive
+	               letter greater than E:. Be sure your application
+	               installs and runs correctly.
+	
+	___Pass ___Fail If your application can be installed on a network,
+	               install it on as many networks as possible.
+	
+	Comments:
+	
+	General Operations
+	------------------
+	
+	___Pass ___Fail Load a large file, and resize the application window
+	               so that scrolling is necessary horizontally and
+	               vertically. Scroll and ensure that repainting is
+	               correct.
+	
+	___Pass ___Fail Exit Windows while your application is still running
+	               but has unsaved files. Be sure you are prompted to
+	               save the unsaved files before Windows exits.
+	
+	___Pass ___Fail Run your application with SHARE enabled and not
+	               enabled. Be sure it runs correctly.
+	
+	___Pass ___Fail If your application adds anything to AUTOEXEC.BAT that
+	               uses environment space, be sure the application works
+	               or dies gracefully if the machine is out of
+	               environment space.
+	
+	___Pass ___Fail Have the default printer in the Control Panel
+	
+	               different from the printer selected in your
+	               application, and print a document. Be sure your
+	               application prints correctly or that it warns the user
+	               of the condition.
+	
+	___Pass ___Fail Create a directory using character ASCII 129
+	
+	               (ALT+129). Using your application's File Open or File
+	               Save commands, change to this directory.
+	
+	Comments:
+	
+	Please enter the names of three people who have performed the testing and want to
+	be eligible for the Windows 3.1 Compatibility Sweepstakes:
+	
+	-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+	
+	Name:
+	Address for possible delivery:
+	
+	Phone:
+	Title:
+	
+	-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+	
+	Name:
+	Address for possible delivery:
+	
+	Phone:
+	Title:
+	
+	-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+	
+	Name:
+	Address for possible delivery:
+	
+	Phone:
+	Title:
+	
+	-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+	
+	RETURN YOUR COMPLETED TEST TO:
+	
+	  Windows Compatibility Test
+	  Microsoft Corporation
+	  One Microsoft Way
+	  Building 4
+	  Redmond, WA  98052-6399
+	
+	Additional query words: 3.10
+	
+	======================================================================
+	Keywords          : kb16bitonly 
+	Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+	Version           : :3.1
+	
+	=============================================================================
+	

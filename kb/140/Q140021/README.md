@@ -1,0 +1,826 @@
+---
+layout: page
+title: "Q140021: FILE: DBGRIDUB.EXE Uses DBGRID in an Unbound Mode"
+permalink: kb/140/Q140021/
+---
+
+## Q140021: FILE: DBGRIDUB.EXE Uses DBGRID in an Unbound Mode
+
+	Article: Q140021
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 4.0
+	Operating System(s): 
+	Keyword(s): kbfile kbVBp400
+	Last Modified: 13-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Visual Basic version 4.0 for Windows ships with a full-featured grid that allows
+	in-place editing of items in a table. This grid, the Data Bound Grid (DBGRID),
+	was designed to be used to edit and display records in a database table. This
+	article includes a document that was written by Apex Software Corporation, the
+	designers of the control, that discusses how to use this control in an unbound
+	mode.
+	
+	The Microsoft Knowledge Base article Q113902 also contains the text of the
+	document.
+	
+	MORE INFORMATION
+	================
+	
+	The following file is available for download from the Microsoft Download
+	Center:
+	
+	  Dbgridub.exe
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. Once posted, the file is housed on secure
+	servers that prevent any unauthorized changes to the file.
+	
+	THE DOCUMENT
+	------------
+	
+	Introduction to True DBGrid Unbound Mode:
+	
+	When used in "Unbound Mode" (DataMode property set to 1), the grid is not
+	connected to a database file. Instead, data in the grid must be supplied and
+	maintained by you, the programmer, while the grid handles all user interaction
+	and data display. Should a user cover the grid with another window, for example,
+	and later uncover it, the grid will be completely responsible for controlling
+	the details of repainting the grid. The programmer, meanwhile, does not need to
+	deal with any of the user interaction or display requirements. With the grid
+	controlling all other facets, you need to concentrate solely on maintaining your
+	data. When the grid needs to display data on the screen, you will be prompted
+	for it, by way of the UnboundReadData event. Once the user has made changes to
+	the data in the grid, you will be notified again - this time in reference to the
+	changes, by way of the UnboundAddData, UnboundWriteData and UnboundDeleteRow
+	events - and prompted to update the data to reflect these changes. If the data
+	is changed internally, rather than by user interaction with the grid, you will
+	need to instruct the grid to repaint itself, by using the RefreshRow,
+	RefreshColumn, or Refresh method.
+	
+	In short, True DBGrid in unbound mode provides a useful tool for dealing with
+	dynamic data. Since it has no inherent storage capability, the grid handles
+	frequently changing data fluidly and easily. Make use of other True DBGrid
+	events and techniques, and you should be able to create efficient and friendly
+	applications.
+	
+	Unbound Mode Bookmarks:
+	
+	Before we discuss the use of Unbound Mode, we must answer the question: What is a
+	"bookmark" when referring to the Unbound mode? Simply put: Bookmarks are
+	variants used by the unbound grid as a means of uniquely identifying a row
+	within the data to be displayed. How, then, are bookmarks created, stored and
+	used? Well, since you provide, store and maintain the data in the unbound grid,
+	you must deal similarly with the bookmarks. The bookmarks, themselves, must be
+	supplied by the UnboundReadData and UnboundAddData (see next section) events,
+	and are passed to and from the grid in the form of Variant data type variables.
+	As variants, you are free to use whatever you choose for the purposes of
+	identifying a row, albeit with some restrictions. To better understand these
+	restrictions, we must first take a look at how VB and True DBGrid treat
+	bookmarks, and the importance of these differences.
+	
+	The Grid:
+	
+	The grid treats bookmarks as packets of binary information which cannot be
+	interpreted. To the grid, a bookmark is a piece of data containing a specific
+	number of bytes (ASCII codes) in a specific order. Thus, pieces of different
+	lengths, or pieces with different bytes, are considered different bookmarks. For
+	example, if the grid were to compare the String bookmarks: "1", " 1" and "01",
+	it would consider each bookmark different from the other, though they could,
+	numerically, be considered the same. Similarly, a 2-byte Integer and a 4-byte
+	Long would also be considered different, even if both contained the same numeric
+	value.
+	
+	Visual Basic:
+	
+	Visual Basic, on the other hand, treats bookmarks as true variants. That is, they
+	are quantities that can be converted from one form to another without loss of
+	equality, unless they are both in the form of a String. In addition, bookmarks
+	are often passed by Visual Basic(tm) as Byte Arrays, both by the grid and by
+	data controls. Thus, two bookmarks should be compared in Visual Basic(tm) for
+	equality, unless those bookmarks are converted to Strings. This rule remains
+	true whether the bookmark comes from a grid (bound or unbound) or from a data
+	control.
+	
+	To avoid difficulties, it is usually best to use Strings universally for
+	bookmarks with an Unbound grid.
+	
+	NOTE: Even though bookmarks passed to the grid may be strings, comparison of
+	bookmarks obtained from the grid (via Bookmark type properties) should always be
+	explicitly converted to strings before comparison. The conversion can be done by
+	simply defining a string variable and assigning the bookmark to that variable.
+	Another important consideration regarding bookmarks is their length. We advise
+	that all bookmarks in your application be created the same way. For example, the
+	Visual Basic(tm) functions Format$(), CStr() and Str$() do not generate the same
+	string, even if they are passed the same numerical value. The Str$() function
+	always generates a character for the sign of the numerical value, while
+	Format$() and CStr() do not (eg. Str$(1) generates " 1", with a leading blank
+	character, while Format$() and CStr() generate "1"). Remember that since these
+	strings are of different length, they will constitute different bookmarks.
+	
+	To avoid difficulties of this nature, we suggest writing a single Visual Basic
+	for Applications function, like MakeBookmark(), and use it consistently whenever
+	a bookmark must be generated. Due to the way the grid handles bookmarks
+	internally, this function should, ideally, generate strings of at least 2
+	characters. Thus, if possible, use the Str$() function.
+	
+	Creating an Unbound Mode Application:
+	
+	Listed below are the basic steps for creating a True DBGrid application, using
+	the Unbound Mode.
+	
+	Determine Data Storage Method:
+	
+	You, as the programmer, are responsible for maintaining and storing the data
+	which will be displayed on the grid. One of the most common ways to store this
+	data is the Visual Basic(tm) array. If your grid is very large (1,000,000 rows x
+	5,000 columns), however, there may not be sufficient system memory to store the
+	arrays. In such a case, you will need to store the data in files, or in other
+	storage media (Generally, in such a case, databases are used to store the data
+	and it will be easier to use the Database mode of the grid.). Another use the
+	grid unbound would be to use a function/sub to return the values to display (The
+	values are usually dependent on row and column numbers). If using a function,
+	you can define it in the UnboundReadData event. Bookmarks will be generated by
+	the same function/sub. This technique is most appropriate when using another
+	DBMS such as Q+E Library, Choreo or Rocket.
+	
+	Initialize the Data and the Grid:
+	
+	Because the grid will start requesting data as soon as it is loaded, it is best
+	to initialize the data before the grid is ready. This can be done in Sub Main
+	(if you start your project with Main) or the Form_Load event (of the Form
+	containing the grid). That done, you must now initialize a few grid properties.
+	Some of these properties can be initialized at design time using either the
+	properties window or the True DBGrid property pages. (See Chapter 3 -
+	Configuring True DBGrid at Design Time.) We will now illustrate how to
+	initialize some properties at runtime.
+	
+	With a 3 row by 2 column table entry, where the data is stored using a two-
+	dimensional array, the following code initializes the data and grid properties:
+	
+	     ' Declare grid data as global array in some global module
+	     Global GridArray(0 to 1, 0 to 2) As String
+	     ' Initialize array data in Main() or Form_Load()
+	     For i% = 0 To 1
+	        For j% = 0 To 2
+	           GridArray(i%, j%) = "Row " & Str$(j%) & ", Col " &  Str$(i%)
+	        Next j%
+	     Next i%
+	
+	The following code is not necessary for configuring the grid at design time.
+	However, it does increase the efficiency of the code.
+	
+	     ' For the sake of efficiency, we use Column objects to reference
+	     ' column properties, instead of repeatedly going through the
+	     ' grid's Columns collection object.
+	     Dim Col0, Col1 as Column
+	     ' Assuming the control name of the grid is DBGrid1, initialize
+	     ' grid properties in Form_Load():
+	     ' Assign the Column objects
+	     Set Col0 = DBGrid1.Columns(0)
+	     Set Col1 = DBGrid1.Columns(1)
+	     ' Define column heading text.  This can be done in code at
+	     ' runtime or in the Columns property page during design time.
+	     Col0.Caption = "Column 0"
+	     Col1.Caption = "Column 1"
+	     ' Columns display widths (in container units).
+	     Col0.Width = 1500
+	     Col1.Width = 1500
+	     ' Column alignment.  Specify left, center, or right justified.
+	     Col0.Alignment = 0      ' Left
+	     Col1.Alignment = 1      ' Right
+	     ' Column Locking.  Specifies if a column is read-only
+	     ' (i.e., user cannot edit that column).
+	     Col0.Locked = False
+	     Col1.Locked = True
+	     ' Initialize current cell position to upper left corner:
+	     DBGrid1.Row = 0
+	     DBGrid1.Col = 0
+	
+	Note that the grid defaults to two columns, unless the number of columns has been
+	modified in the Columns property page. In the above sample code, we have simply
+	changed the properties of the existing default columns. If a different number of
+	columns is required, you must use the Columns() collection Add and Remove
+	methods.
+	
+	Here, we provide sample code that deals with multiple columns and their
+	manipulation.
+	
+	     ' Assume 5 columns are desired, and we wish to remove the
+	     ' existing columns since we do not know the property settings
+	     ' or even how many columns exist
+	     Dim oldcnt, newcnt as Integer
+	
+	     ' Save how many columns initially exist in the grid, so we can
+	     ' remove them later. Also initialize the new column counter.
+	     oldcnt = DBGrid1.Columns.Count
+	     newcnt = 0
+	     ' Now add the new columns.  New columns are inserted before (and
+	     ' to the left of) the existing column number passed to the
+	     ' Columns collection Add method.
+	     For i% = 0 To 4
+	        DBGrid1.Columns.Add newcnt
+	        DBGrid1.Columns(newcnt).Caption = "Col " & newcnt
+	        DBGrid1.Columns(newcnt).Visible = True
+	        newcnt = newcnt + 1
+	     Next i%
+	     ' Now remove the original existing columns.  As grid columns are
+	     ' removed from the collection, columns with higher indexes just
+	     ' move down, so we just keep removing the same column the
+	     ' appropriate number of times.
+	     While oldcnt > 0
+	        DBGrid1.Columns.Remove newcnt
+	        oldcnt = oldcnt - 1
+	     Wend
+	     Define the UnboundReadData Event
+	
+	Once the grid is loaded, you will be asked for data to display. The
+	UnboundReadData event is used to provide that data. Before describing the event
+	itself, however, we will briefly discuss the event's arguments: (see Chapter 10
+	- Command Reference for more information)
+	
+	     Sub DBGrid1_UnboundReadData (ByVal RowBuf As RowBuffer, StartLocation
+	     As Variant, ByVal ReadPriorRows as Boolean)
+	
+	RowBuffer - the RowBuffer is an OLE Object defined by the grid and used to
+	exchange row data between the grid and the Unbound data events. It has the
+	following properties and methods, and can be viewed using the Visual Basic(tm)
+	Object Browser, or Apex's Visual Basic for Applications Companion(tm) Object
+	Browser
+	
+	RowBuf.RowCount Long - number of rows which the Unbound event expects to be
+	processed during the event. If fewer rows can be processed than requested, this
+	property should be changed in the event to reflect the actual number of rows
+	available.
+	
+	RowBuf.ColumnCount Integer - number of columns which the Unbound event expects to
+	be processed during the event. This property is read-only, and no attempt should
+	be made to change it. The Unbound event should process all columns requested.
+	
+	RowBuf.ColumnName(Col) String - name of the grid column indicated by the Col
+	parameter. This property is read-only.
+	
+	     ' ColumnName (ByVal Col As Integer) As String
+	
+	RowBuf.Bookmark Variant - specifies Unbound row bookmarks when the RowBuffer is
+	used to fetch data during the UnboundReadData event. The RowBuffer row is passed
+	as an argument.
+	
+	RowBuf.Value(Row, Col) Variant - used to specify the data value associated with a
+	RowBuffer row and column. The Value property takes the RowBuffer row and column
+	as arguments.
+	
+	     ' Value (ByVal Row As Long, ByVal Col As Integer) As Variant
+	
+	In the UnboundReadData event, the RowBuffer object is created by the grid with
+	Values and Bookmarks set to Null. RowBuf is passed to the event with the
+	expectation that the event will set the necessary values and bookmarks.
+	
+	In the UnboundAddData and UnboundWriteData events, data the user has changed is
+	held in the RowBuf.Value(0,Col). Any column with unchanged data will have
+	RowBuf.Value(0,Col) = Null. The programmer saves the changed (not Null) values
+	to the data source (the array in most cases). Note: Only non- Null values of the
+	RowBuffer indicate data changes.
+	
+	StartLocation Variant - specifies the row "before" the desired data. We set
+	"before" apart in quotation marks because its meaning is dependent on the value
+	of the third argument: ReadPriorRows (described below). StartLocation will
+	contain a bookmark as a specification of the row.
+	
+	ReadPriorRows Boolean - indicates the direction in which the grid is requesting
+	the data. For example, if the grid specifies a StartLocation indicating the 46th
+	row, a RowCount of 5 and if the ReadPriorRows property is True, then the
+	UnboundReadData event should return the following information in the RowBuffer:
+	
+	     RowBuf.Value(0, col) = data for 45th row
+	     RowBuf.Value(1, col) = data for 44th row
+	     RowBuf.Value(2, col) = data for 43rd row
+	     RowBuf.Value(3, col) = data for 42nd row
+	     RowBuf.Value(4, col) = data for 41st row
+	
+	On the other hand, if the value of ReadPriorRows in the above case were False,
+	the event would return the following information in the RowBuffer:
+	
+	     RowBuf.Value(0, col) = data for 47th row
+	     RowBuf.Value(1, col) = data for 48th row
+	     RowBuf.Value(2, col) = data for 49th row
+	     RowBuf.Value(3, col) = data for 50th row
+	     RowBuf.Value(4, col) = data for 51st row
+	
+	NOTE: Regardless of the value of ReadPriorRows, the nearer a row is to the
+	StartLocation bookmark, the lower its row index in the RowBuffer. In addition,
+	data for the row indicated by the StartLocation bookmark is not returned.
+	
+	At first glance, the RowBuffer object may seem complicated and difficult to use.
+	A closer look, however, reveals that its use is only slightly different from
+	that of a two-dimensional array. StartLocation and ReadPriorRows may seem
+	unnecessarily cumbersome as well. However, they are the simplest means of
+	communicating the row boundaries of the data to the grid. They increase the
+	speed and performance of the grid. The grid only caches a portion of the data,
+	and it is with these two properties that you and the user can navigate from one
+	bookmark to the next.
+	
+	Example: Suppose there are 100 rows of data, the current row is 75, and the grid
+	is asked to move to the 3rd row of data using a previous obtained bookmark. The
+	following sequence demonstrates what might happen in this situation:
+	
+	- The grid receives a bookmark for the 3rd row. Because the third row data is
+	  not in the grid cache, the grid requests the data using the UnboundReadData
+	  event.
+	
+	- The UnboundReadData event is called with:
+	
+	        RowBuf.RowCount = 10
+	        RowBuf.ColumnCount = number of columns.
+	        StartLocation = bookmark for the 3rd Row.
+	        ReadPriorRows = False
+	
+	- The event code responds as follows:
+	
+	        RowBuf.Value(0,col) = data for the 4th row
+	        RowBuf.Value(1,col) = data for the 5th row
+	            ...
+	        RowBuf.Value(9,col) = data for the 13th row
+	
+	        RowBuf.RowCount is set = 10, since all 10 rows could be processed.
+	
+	- The UnboundReadData event is called again, this time with:
+	
+	        RowBuf.RowCount = 10
+	        RowBuf.ColumnCount = number of columns.
+	        StartLocation = bookmark for the 4th Row.
+	        ReadPriorRows = True
+	
+	- The event code responds as follows:
+	
+	        RowBuf.Value(0,col) = data for the 3rd row
+	        RowBuf.Value(1,col) = data for the 2nd row
+	        RowBuf.Value(2,col) = data for the 1st row
+	        RowBuf.Value(3,col) = data for the 0th row
+	
+	- At this point, the event code stops setting RowBuf values, because there is
+	  no more data available in the indicated direction from the StartLocation.
+	
+	- RowBuf.RowCount is set = 4, since only 4 rows could be processed before BOF
+	  is encountered (i.e. - the beginning of the data).
+	
+	- Additional UnboundReadData events may be called to obtain the data to
+	  complete the display.
+	
+	In the above case, we see that by using the same event interface, we can handle
+	the special cases of row boundaries (i.e. BOF and EOF). When one of these
+	special cases is encountered, we simply exit the loop used to fill the RowBuffer
+	and report the number of rows actually processed.
+	
+	There is another situation of which you should be aware, in the UnboundReadData
+	event. This instance occurs when the grid needs data for the first or last row
+	of the grid. In this case, StartLocation is passed as a Null variant. Whether a
+	Null StartLocation indicates BOF or EOF depends upon the value of ReadPriorRows.
+	Example:
+	
+	     If IsNull(StartLocation) Then
+	        If ReadPriorRows Then
+	           ' StartLocation indicates EOF, because the grid is
+	           ' requesting data in rows prior, and prior rows only
+	           ' exist for EOF.
+	        Else
+	           ' StartLocation indicates BOF, because the grid is
+	           ' requesting data in rows after, and rows after only
+	           ' exist for BOF.
+	        Endif
+	     Else
+	        ' StartLocation is an actual bookmark passed to the grid
+	        ' in the RowBuffer, an event argument (UnboundAddData) or
+	        ' the setting of a grid bookmark. It is up to the VB
+	        ' programmer to ensure the bookmark is valid, and to take
+	        ' the appropriate action if it is not.
+	     End If
+	
+	A final note: The programmer cannot make any assumption as to when the grid will
+	request data, or how many times it will request the same data. In short, it is
+	the grid's responsibility to display the data properly, while the task of
+	storing and maintaining the data falls to you. This system will allow you not to
+	worry about when and how to display data in the grid.
+	
+	Define the UnboundWriteData Event:
+	
+	If the grid is up-datable, and if the user has edited data in the row cells, then
+	moving to another row will trigger an update. The grid will then fire the
+	UnboundWriteData event, which allows you to record the changes, and which uses
+	the values passed via a RowBuffer to update the data you are responsible for
+	storing and maintaining.
+	
+	     Private Sub DBGrid1_UnboundWriteData(ByVal RowBuf As RowBuffer,
+	     WriteLocation As Variant)
+	
+	RowBuffer in this event has the same properties that are used in the
+	UnboundReadData event described above, though it is used differently.
+	
+	In this case, the RowBuffer contains values passed by the grid, indicating which
+	columns have been edited as well as the modified values. The RowCount is always
+	1 for this event, but should be changed to 0 if, for some reason, the update
+	cannot be completed. Setting the RowCount to 0 will trigger a trappable grid
+	error event. To minimize the overhead associated with the update, only RowBuffer
+	values that have actually been edited require updating (are Non-Null).
+	
+	WriteLocation Variant - specifies a bookmark for the current row, if it has just
+	been edited.
+	
+	     ' Assume that a Visual Basic for Applications function
+	     ' StoreUserData(bookm, col, value)
+	     ' takes a row bookmark, a column index, and a variant with
+	     ' the appropriate data to be stored in an array or database. The
+	     ' StoreUserData() function returns True if the data is acceptable and
+	     ' can be stored, False otherwise.
+	     '
+	     ' Loop over all the columns of the row, storing non-Null values
+	     For i% = 0 To RowBuf.ColumnCount - 1
+	        If Not IsNull(RowBuf.Value(0, i%)) Then
+	           If Not StoreUserData(WriteLocation, i%,
+	     RowBuf.Value(0, i%)) Then
+	              ' storage of the data has failed. Fail the update
+	              RowBuf.RowCount = 0   ' tell the grid the
+	                                    ' update failed
+	              Exit Sub              ' it failed, so exit the event
+	
+	           End If
+	        End If
+	     Next i%
+	
+	Define the UnboundAddData Event:
+	
+	If the AllowAddNew property is True, and if the grid is updatable, you must
+	define the UnboundAddData event. Much like in the UnboundWriteData event, data
+	is taken from the RowBuffer and stored. Once again, the RowCount is used as an
+	indicator of the success or failure of the AddNew.
+	
+	     Private Sub DBGrid1_UnboundAddData(ByVal RowBuf As RowBuffer,
+	     NewRowBookmark As Variant)
+	
+	For added rows, the second argument, NewRowBookmark, must be set, returning a
+	bookmark for the added row.
+	
+	     ' Assume that a Visual Basic for Applications function
+	     ' StoreUserData(bookm, col, value)
+	     ' takes a row bookmark, a column index, and a variant with the
+	     ' appropriate data to be stored in an array or database. The
+	     ' StoreUserData() function returns True if the data is acceptable and
+	     ' can be stored, False otherwise.
+	
+	     ' First, get a bookmark for the new row. Do this with a Visual Basic for
+	     ' Applications function GetNewBookmark(), which allocates a new row of
+	     ' data in the storage media (array or database), and returns a
+	     ' variant containing a bookmark for that added row.
+	     NewRowBookmark = GetNewBookmark()
+	
+	     ' Loop over all the columns of the row, storing non-Null values
+	     Dim newval as Variant
+	
+	     For i% = 0 To RowBuf.ColumnCount - 1
+	        If Not IsNull(RowBuf.Value(0, i%)) Then
+	           ' A value is specified in the RowBuffer, so use it.
+	           newval = RowBuf.Value(0, i%)
+	        Else
+	           ' the RowBuf does not contain a value for this column.
+	           ' A default value should be set. A convenient value
+	           ' is the default value for the column.
+	           newval = DBGrid1.Column(i%).DefaultValue
+	        End If
+	
+	        ' Now store the new value.
+	
+	     If Not StoreUserData(NewRowBookmark, i%, newval) Then
+	           ' storage of the data has failed. Delete the added row
+	           ' using a Visual Basic for Applications subroutine DeleteRow,
+	           ' which takes a bookmark as and argument. Also, fail the
+	           ' update by clearing the RowCount.
+	           DeleteRow NewRowBookmark
+	           RowBuf.RowCount = 0   ' tell the grid the update failed
+	           Exit Sub         ' it failed, so exit the event
+	        End If
+	     Next i%
+	
+	Define the UnboundDeleteRow Event:
+	
+	If the AllowDelete property is True, and if the grid is updatable, the
+	UnboundDeleteRow event should be defined.
+	
+	     Private Sub DBGrid1_UnboundDeleteRow(bookMark As Variant)
+	
+	This is the simplest of all the unbound grid events, though a vital one if rows
+	are to be deleted from the grid. This event should delete the row indicated by
+	the bookmark passed from internal storage. If the deletion fails, the bookMark
+	argument should be set to Null to indicate the failure. Note that following the
+	UnboundDeleteRow event, the grid is automatically refreshed.
+	
+	Changing values in code - Refresh the Grid:
+	
+	In order to change the value of a cell in code, change the value of the
+	underlying data then refresh the grid. The Columns().Value property is read
+	only.
+	
+	     ' changes current cell value in code
+	     DataVal(DBGrid1.Row, DBGrid1.Col) = NewValue$
+	     ' Using the Refresh method to repaint the entire grid
+	     DBGrid1.Refresh
+	
+	Putting It Together in Unbound Mode:
+	
+	Following is code for a sample application, using the concepts discussed above.
+	This example should be viewed as a starting point, intended to show the logical
+	function of the aspects of Unbound Mode. Example:
+	
+	     Dim MaxCol As Integer           'Number of columns
+	     Dim MaxRow As Long              'Number of rows
+	
+	     Dim GridArray() As Variant      'Place to store the data
+	
+	     Private Sub Form_Load()
+	         ' Declare grid data as global array in some global module
+	         ' Initialize array data in Main() or Form_Load()
+	         MaxCol = 2
+	         MaxRow = 3
+	         ReDim GridArray(0 To MaxCol - 1, 0 To MaxRow - 1)
+	
+	         For i% = 0 To MaxCol - 1
+	             For j% = 0 To MaxRow - 1
+	                 GridArray(i%, j%) = "Row" + Str$(j%) + ", Col" + Str$(i%)
+	             Next j%
+	         Next i%
+	
+	         ' For the sake of efficiency, we use Column objects to
+	         ' reference column properties, instead of repeatedly going
+	         ' through the grid's Columns collection object.
+	         Dim Col0, Col1 As Column
+	
+	         ' Assuming the control name of the grid is DBGrid1, initialize
+	         ' grid properties in Form_Load():
+	         ' Assign the Column objects
+	         Set Col0 = DBGrid1.Columns(0)
+	         Set Col1 = DBGrid1.Columns(1)
+	
+	         ' Define column heading text. This can be done in code at
+	         ' runtime or in the Columns property page at design time.
+	         Col0.Caption = "Column 0"
+	         Col1.Caption = "Column 1"
+	
+	         ' Columns display widths (in container units)
+	         Col0.Width = 1500
+	         Col1.Width = 1500
+	
+	         ' Column alignment  Specify left, center, or right justified.
+	         Col0.Alignment = 0      'Left
+	         Col1.Alignment = 1      'Right
+	
+	         ' Column Locking - specifies if a column is read-only (i.e.,
+	         ' user cannot edit that column).
+	         Col0.Locked = False         'Column 0 is editable
+	         Col1.Locked = True          'Column 1 is read-only
+	
+	         ' Initialize current cell position to upper left corner:
+	         DBGrid1.Row = 0
+	         DBGrid1.Col = 0
+	     End Sub
+	
+	     '
+	     ' Visual Basic for Applications support functions
+	     '
+	     '   The first two functions below, MakeBookmark() and
+	     '   IndexFromBookmark are used by the remaining support
+	     '   functions only.
+	     '
+	     '   The latter four Visual Basic for Applications support functions
+	     '   are used directly by the Unbound event procedures.
+	     '
+	     Private Function MakeBookmark(index As Long) As Variant
+	         MakeBookmark = Str$(index)
+	     End Function
+	
+	     Private Function IndexFromBookmark(bookm As Variant, ReadPriorRows As
+	     Boolean) As Long
+	         If IsNull(bookm) Then
+	             If ReadPriorRows Then
+	                 IndexFromBookmark = MaxRow
+	             Else
+	                 IndexFromBookmark = -1
+	             End If
+	         Else
+	             Dim index As Long
+	             index = Val(bookm)
+	             If index < 0 Or index >= MaxRow Then index = -2000
+	             IndexFromBookmark = index
+	         End If
+	     End Function
+	
+	     Private Function GetUserData(bookm As Variant, colm As Integer)_
+	         As Variant
+	         Dim index As Long
+	         index = IndexFromBookmark(bookm, False)
+	         If index < 0 Or index >= MaxRow Or colm < 0 Or colm >= MaxCol _
+	         Then
+	             GetUserData = Null
+	         Else
+	             GetUserData = GridArray(colm, index)
+	         End If
+	     End Function
+	
+	     Private Function StoreUserData(bookm As Variant, colm As _ Integer,
+	     userval As Variant) As Boolean
+	        Dim index As Long
+	            index = IndexFromBookmark(bookm, False)
+	            If index < 0 Or index >= MaxRow Or colm < 0 Or colm >= MaxCol _
+	            Then
+	                StoreUserData = False
+	            Else
+	                StoreUserData = True
+	                GridArray(colm, index) = userval
+	            End If
+	     End Function
+	
+	     Private Function GetRelativeBookmark(bookm As Variant, relpos As
+	     Integer) As Variant
+	         Dim index As Long
+	         index = IndexFromBookmark(bookm, False) + relpos
+	         If index < 0 Or index >= MaxRow Then
+	             GetRelativeBookmark = Null
+	         Else
+	             GetRelativeBookmark = MakeBookmark(index)
+	         End If
+	     End Function
+	
+	     Private Function GetNewBookmark() As Variant
+	         ReDim Preserve GridArray(0 To MaxCol - 1, 0 To MaxRow)
+	         GetNewBookmark = MakeBookmark(MaxRow)
+	         MaxRow = MaxRow + 1
+	     End Function
+	
+	     Private Function DeleteRow(bookm As Variant) As Boolean
+	         Dim index As Long
+	         index = IndexFromBookmark(bookm, False)
+	         If index < 0 Or index >= MaxRow Then
+	             DeleteRow = False
+	             Exit Function
+	         End If
+	
+	         MaxRow = MaxRow - 1
+	
+	         'Shift the data in the array
+	         For i% = index To MaxRow - 1
+	             For j% = 0 To MaxCol - 1
+	                 GridArray(j%, i%) = GridArray(j%, i% + 1)
+	             Next j%
+	         Next i%
+	
+	         ReDim Preserve GridArray(0 To MaxCol - 1, 0 To MaxRow - 1)
+	
+	         DeleteRow = True
+	     End Function
+	
+	     '
+	     ' The Unbound Grid Events
+	     '
+	     '    These events make calls to GetUserData(), StoreUserData(),
+	     '    GetRelativeBookmark, GetNewBookmark() and DeleteRow(),
+	     '    all of which are defined above. By replacing those routines
+	     '    with appropriate code, any Unbound grid application could
+	     '    be supported by the following Unbound event procedures.
+	     '
+	     Private Sub DBGrid1_UnboundReadData(ByVal RowBuf As RowBuffer, _
+	                 StartLocation As Variant, ByVal ReadPriorRows As Boolean)
+	
+	         Dim bookm As Variant
+	         bookm = StartLocation
+	
+	         Dim relpos As Integer
+	         If ReadPriorRows Then
+	             ' the grid is requesting data in rows prior to
+	          ' StartLocation
+	             relpos = -1
+	         Else
+	             ' the grid is requesting data in rows after to
+	          ' StartLocation
+	             relpos = 1
+	         End If
+	
+	         Dim rowsFetched As Integer
+	         rowsFetched = 0
+	
+	         For i% = 0 To RowBuf.RowCount - 1
+	             ' Get the bookmark of the next available row
+	             bookm = GetRelativeBookmark(bookm, relpos)
+	
+	             ' If the next is BOF or EOF, then done
+	             If IsNull(bookm) Then Exit For
+	
+	             For j% = 0 To RowBuf.ColumnCount - 1
+	                 RowBuf.Value(i%, j%) = GetUserData(bookm, j%)
+	             Next j%
+	
+	             ' Set the bookmark for the row
+	             RowBuf.Bookmark(i%) = bookm
+	
+	             ' Increment the count of fetched rows
+	             rowsFetched = rowsFetched + 1
+	         Next i%
+	
+	         ' tell the grid how many rows were fetched
+	         RowBuf.RowCount = rowsFetched
+	     End Sub
+	
+	     Private Sub DBGrid1_UnboundWriteData(ByVal RowBuf As RowBuffer,
+	     WriteLocation As Variant)
+	         ' Assume that a Visual Basic for Applications function
+	         ' StoreUserData(bookm, col, value)
+	         ' takes a row bookmark, a column index, and a variant with the
+	         ' appropriate data to be stored in an array or database. The
+	         ' returns True if the data is acceptable and can be stored,
+	         ' False otherwise.
+	
+	         ' Loop over all the columns of the row, storing non-Null
+	         ' values
+	         For i% = 0 To RowBuf.ColumnCount - 1
+	             If Not IsNull(RowBuf.Value(0, i%)) Then
+	                 If Not StoreUserData(WriteLocation, i%, RowBuf.Value(0, i%))
+	     Then
+	
+	                     ' storage of the data has failed. Fail the update
+	                     RowBuf.RowCount = 0 ' tell the grid the update
+	                         failed
+	                     Exit Sub            ' it failed, so exit the event
+	                 End If
+	             End If
+	         Next i%
+	     End Sub
+	
+	     Private Sub DBGrid1_UnboundAddData(ByVal RowBuf As RowBuffer,
+	     NewRowBookmark As Variant)
+	         ' Assume that a Visual Basic for Applications function
+	         ' StoreUserData(bookm, col, value) takes a row bookmark,
+	         ' a column index, and a variant with the appropriate data to be
+	         ' stored in an array or database. The StoreUserData()function
+	         ' returns True if the data is acceptable and can be stored ,
+	         ' False otherwise.
+	
+	         ' First, get a bookmark for the new row. Do this with a VB
+	         ' for Applications function GetNewBookmark(), which allocates
+	         ' a new row of data in the storage media (array or database),
+	         ' and returns a variant containing a bookmark for that added row.
+	         NewRowBookmark = GetNewBookmark()
+	
+	         ' Loop over all the columns of the row, storing non-Null
+	         ' values
+	         Dim newval As Variant
+	         For i% = 0 To RowBuf.ColumnCount - 1
+	             newval = RowBuf.Value(0, i%)
+	             If IsNull(newval) Then
+	                 ' the RowBuf does not contain a value for this column.
+	                 ' A default value should be set. A convenient value
+	                 ' is the default value for the column.
+	                 newval = DBGrid1.Columns(i%).DefaultValue
+	             End If
+	
+	             ' Now store the new values.
+	             If Not StoreUserData(NewRowBookmark, i%, newval) Then
+	                 ' storage of the data has failed. Delete the added
+	                 ' row using a Visual Basic for Applications function
+	                 'DeleteRow, which takes a bookmark as an argument.
+	                 ' Also, fail the update by clearing the RowCount.
+	
+	                 DeleteRow NewRowBookmark
+	                 RowBuf.RowCount = 0 ' tell the grid the update failed
+	                 Exit Sub            ' it failed, so exit the event
+	             End If
+	         Next i%
+	     End Sub
+	
+	     Private Sub DBGrid1_UnboundDeleteRow(Bookmark As Variant)
+	         If Not DeleteRow(Bookmark) Then Bookmark = Null
+	     End Sub
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbfile kbVBp400 
+	Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+	Version           : :4.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

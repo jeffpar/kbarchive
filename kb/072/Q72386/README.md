@@ -1,0 +1,97 @@
+---
+layout: page
+title: "Q72386: INFO: Background, Foreground, and System Palette Management"
+permalink: kb/072/Q72386/
+---
+
+## Q72386: INFO: Background, Foreground, and System Palette Management
+
+	Article: Q72386
+	Product(s): Microsoft Windows Software Development Kit
+	Version(s): WINDOWS:3.1,95; winnt:3.5,3.51,4.0
+	Operating System(s): 
+	Keyword(s): kbOSWinNT350 kbOSWinNT351 kbOSWinNT400 kbOSWin95 kbSDKWin16
+	Last Modified: 11-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows Software Development Kit (SDK) 3.1 
+	- Microsoft Win32 Application Programming Interface (API), used with:
+	   - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+	   - Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	On a device that supports the Microsoft Windows palette management APIs, an
+	application can create a logical palette, select the palette into a Device
+	Context (DC), and realize the palette. Realizing a logical palette maps its
+	colors to the system (hardware) color palette. The GetDeviceCaps() API is
+	available to inform an application whether the device is capable of supporting
+	palette management functions and, if so, the size of its system palette. This
+	article discusses the different types of logical palettes and the effect of each
+	on the system palette when a logical palette is realized.
+	
+	MORE INFORMATION
+	================
+	
+	When a logical palette is selected into a DC, it can be selected as either a
+	foreground or a background palette. Setting the bForceBackground parameter of
+	the SelectPalette() API to TRUE selects the palette as a background palette. If
+	this parameter is FALSE, the palette can be selected as a foreground palette. A
+	palette will be selected as a foreground palette only if the DC into which the
+	palette is selected is one of the five cached DCs managed by the GetDC() API and
+	the DC is retrieved on behalf of the active window. If the DC is returned by
+	CreateDC() or CreateCompatibleDC() or if the window is not the active window,
+	the palette will be forced into the background.
+	
+	The status as a foreground or a background palette affects how the colors in the
+	logical palette are mapped into the system palette when the logical palette is
+	realized.
+	
+	When a foreground palette is realized, every entry in the system palette that can
+	be modified by an application is accessible to the logical palette. Logical
+	palette entries are mapped into the system palette starting at the first
+	available entry. Because a logical palette entry that exactly matches a reserved
+	system palette entry is mapped to that system entry, it does not consume a
+	separate palette slot. If the logical palette has more entries than available
+	slots in the system palette, the available slots are filled, in order, from the
+	logical palette. The remaining logical palette entries are mapped to the closest
+	colors already present in the system palette. There is one exception to this
+	rule: if a logical palette entry is marked with the PC_RESERVED flag, no colors
+	will be mapped to that entry. If all available system palette entries are
+	reserved, additional colors will not be mapped to any entry and will be
+	displayed as black on the screen.
+	
+	A palette entry marked as PC_NOCOLLAPSE will always take a separate slot if
+	available, just as for PC_RESERVED. Unlike a PC_RESERVED color, if no slots are
+	available, it will map to the nearest color, and other colors may map onto it.
+	
+	The first available entry in the system palette is the first palette entry not
+	marked as used. For example, assume a device with 256 palette entries, 20 of
+	which are reserved for the system. An application realizes a palette of 36
+	colors on this device; therefore, the first 36 entries are marked used. Another
+	application realizes a 100-entry palette; therefore, the next 100 entries are
+	marked used. If a third application receives the input focus and realizes a
+	foreground palette with 236 entries, Windows maps the first 100 colors into the
+	remainder of the system palette. Each of the remaining 136 colors of the logical
+	palette is mapped into the closest color available in the system palette.
+	
+	When a background palette is realized, any empty positions in the system palette
+	are filled. Any colors that remain are mapped to the closest color in the system
+	palette. A background palette entry cannot overlay a foreground entry in the
+	system palette; however, a foreground palette entry can overlay a background
+	entry in the system palette.
+	
+	Additional query words: 3.00 3.10 3.50 4.00 win16sdk
+	
+	======================================================================
+	Keywords          : kbOSWinNT350 kbOSWinNT351 kbOSWinNT400 kbOSWin95 kbSDKWin16 
+	Technology        : kbAudDeveloper kbSDKSearch kbWin32sSearch kbWin32API kbWinSDKSearch
+	Version           : WINDOWS:3.1,95; winnt:3.5,3.51,4.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

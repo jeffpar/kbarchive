@@ -1,0 +1,84 @@
+---
+layout: page
+title: "Q161145: BUG: Group Header on Report with Columns Prints on Detail Band"
+permalink: kb/161/Q161145/
+---
+
+## Q161145: BUG: Group Header on Report with Columns Prints on Detail Band
+
+	Article: Q161145
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:3.0,3.0b,5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbprint kbvfp kbvfp300BUG kbvfp500bug kbvfp600bug
+	Last Modified: 07-SEP-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When a grouped report is designed with multiple columns, where the data from
+	each record occupies a column, and records spread from the left-most column to
+	the right and wrap around to the next row after the right-most column is used,
+	the group header data prints as the first entry in the left- most column for
+	each group.
+	
+	This is different from the report behavior for previous versions of FoxPro. In
+	prior versions the group header information appears on the line above the first
+	entry in the detail band for each group.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products listed at
+	the beginning of this article.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Open the OrdItems table from Samples\data.
+	
+	2. Create a new report by clicking New on the File menu and choosing Report.
+	
+	3. Build a Quick Report by selecting Quick Report from the Report menu. Specify
+	  "Fields" by checking the appropriate box. Select the Order_ID and Line_No
+	  fields, click OK and OK.
+	
+	4. Select Page Layout from the File menu. Make the column count = 3, and click
+	  the large button (on the right) that pictures printing from left to right so
+	  that a line contains detail items arranged from column 1 to column 2 to
+	  column 3, and so forth.
+	
+	5. Select Data Grouping from the Report menu pad, and specify grouping on
+	  Order_ID.
+	
+	6. Pull down the "Group Header" bar just far enough to allow you to drag the
+	  Order_ID field from the detail band to the group header band. Drag the
+	  Order_ID field accordingly.
+	
+	7. Drag the line_no field left to the edge of the detail band.
+	
+	8. (Optional) make the font for the Order_ID field BOLD and ITALIC so that you
+	  can distinguish it from the Line_no field in the report preview.
+	
+	9. Preview the report. Note that the group header information prints on the same
+	  line as the detail information.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbprint kbvfp kbvfp300BUG kbvfp500bug kbvfp600bug 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600
+	Version           : WINDOWS:3.0,3.0b,5.0,6.0
+	Issue type        : kbbug
+	
+	=============================================================================
+	

@@ -1,0 +1,95 @@
+---
+layout: page
+title: "Q182150: PRB: Visual Basic 5.0 Setup Error: DAO350.DLL File In Use"
+permalink: kb/182/Q182150/
+---
+
+## Q182150: PRB: Visual Basic 5.0 Setup Error: DAO350.DLL File In Use
+
+	Article: Q182150
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): WINDOWS:5.0
+	Operating System(s): 
+	Keyword(s): kberrmsg kbGrpDSVB
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+	- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Setup of Visual Basic 5.0 fails with the following error:
+	
+	  Setup cannot register DAO350.DLL because an older version is in use.
+	
+	CAUSE
+	=====
+	
+	The computer has a network installation of Office 97 with the shared files
+	(including DAO350.DLL) on the network server in a read-only folder.
+	
+	RESOLUTION
+	==========
+	
+	IMPORTANT: This article contains information about editing the registry. Before
+	you edit the registry, make sure you understand how to restore it if a problem
+	occurs. For information about how to do this, view the "Restoring the Registry"
+	Help topic in Regedit.exe or the "Restoring a Registry Key" Help topic in
+	Regedt32.exe.
+	
+	There are two primary solutions to this error:
+	
+	1. Search the registry for the following key, and export a copy of it for
+	  safekeeping. Delete the key from the registry, then run the Visual Basic 5.0
+	  setup. After the setup is finished, import the saved registry key to ensure
+	  that the Office applications are not affected.
+	
+	  HKEY_LOCAL_MACHINE\Software\Microsoft\Shared Tools\DAO350
+	
+	2. Perform the Visual Basic 5.0 installation only when all users are off the
+	  server and with update permissions on the server. Network administrative
+	  policies may not allow this option.
+	
+	STATUS
+	======
+	
+	Microsoft is researching this problem and will post new information here in the
+	Microsoft Knowledge Base as it becomes available.
+	
+	MORE INFORMATION
+	================
+	
+	The Visual Basic 5.0 setup process checks the registry for existing entries to
+	DAO files and attempts to update them. If located on the local drive, DAO files
+	would be placed in following location:
+	
+	  Program Files\Common Files\Microsoft Shared\DAO\
+	
+	If Office is installed with shared files residing on the network, the folder with
+	DAO350.DLL file is read-only, and the user may not have permissions to write to
+	that server directory. In this case, updates cannot not be made and the setup
+	process fails.
+	
+	Microsoft Office97 installs DAO350.dll v3.50.3428 dated 11/17/96. Microsoft
+	Visual Basic 5.0 installs v3.50.3602 dated 12/5/96.
+	
+	The registry key for the shared location of DAO 3.5 files is:
+	
+	  HKEY_LOCAL_MACHINE\Software\Microsoft\Shared Tools\DAO350
+	
+	Additional query words: kbVB500 kbNetwork kbSetup kbDAO kbDSupport kbdss
+	
+	======================================================================
+	Keywords          : kberrmsg kbGrpDSVB 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500 kbVB500
+	Version           : WINDOWS:5.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

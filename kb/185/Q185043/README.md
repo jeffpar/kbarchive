@@ -1,0 +1,186 @@
+---
+layout: page
+title: "Q185043: XADM: How to Re-home Public Folders Using 5.5 Admin Program"
+permalink: kb/185/Q185043/
+---
+
+## Q185043: XADM: How to Re-home Public Folders Using 5.5 Admin Program
+
+	Article: Q185043
+	Product(s): Microsoft Exchange
+	Version(s): winnt:5.5
+	Operating System(s): 
+	Keyword(s): exc55
+	Last Modified: 06-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.5 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article explains how to re-home public folders to a particular Exchange
+	Server computer, using the Microsoft Exchange Server 5.5 Administrator program.
+	
+	In some situations, public folders may be accidentally re-homed to another site,
+	and this article should help in recovering from such a situation.
+	
+	MORE INFORMATION
+	================
+	
+	Microsoft Exchange Server 5.5 has a number of new features designed to help with
+	public folder re-homing situations. The Microsoft Exchange 5.5 Administrator
+	program can re-home individual public folders to any server that contains a
+	replica of the public folder. All subfolders of the public folder can then be
+	automatically re-homed as well.
+	
+	In order to re-home public folders using the Administrator program, you must be
+	running the Exchange 5.5 Administrator program against an Exchange Server 5.5
+	computer. Also, this procedure assumes that you want the entire public folder
+	sub-tree re-homed to the Exchange Server 5.5 computer.
+	
+	The steps below assume that all the public folders were initially homed in the
+	site ORIGINAL_SITE and have been accidentally re-homed to the site NEW_SITE. The
+	name of the Exchange Server 5.5 computer in ORIGINAL_SITE is SRVPF55. All
+	folders under a folder called "NorthAmerica" need to be re- homed back to
+	ORIGINAL_SITE, and it's okay to have a replica of these folders on server
+	SRVPF55.
+	
+	1. If an Exchange Server 5.5 computer does not exist in site ORIGINAL_SITE, add
+	  a new 5.5 server to the site, or upgrade an existing Exchange Server 4.0 or
+	  5.0 computer to version 5.5. Assume this 5.5 server is called SRVPF55.
+	
+	2. Run the version 5.5 Microsoft Exchange Administrator program against server
+	  SRVPF55.
+	
+	3. Get properties of the Public Information Store object. The Public Information
+	  Store object is found under <Site>\Configurations\Servers\<Server
+	  Name>
+	
+	4. Go to the Instances property page of the Public Information Store properties.
+	
+	5. Search for the NorthAmerica folder in the list labeled Public Folders. You
+	  may need to select the site NEW_SITE in the Site list. Use the Folder path to
+	  make sure that you have found the correct public folder.
+	
+	6. After you have found the NorthAmerica folder, select it and click the Add
+	  button. This moves the folder to the list labeled "Folders on this
+	  Information Store".
+	
+	7. Click OK to close the property sheet.
+	
+	8. Press the F5 key to refresh the Administrator program.
+	
+	9. In the Administrator program, under the organization object, click the
+	  Folders object to expand it. Then click Public Folder. You should see the
+	  Public Folder hierarchy. Traverse the hierarchy until you reach the
+	  NorthAmerica folder.
+	
+	10. Select the NorthAmerica folder. On the File menu, select Properties. This
+	  brings up the properties of the folder.
+	
+	11. Go to the Advanced property page of the folder properties.
+	
+	12. From the "Home server" list, select SRVPF55.
+	
+	13. Click OK to close the property sheet. This re-homes the NorthAmerica folder
+	  to the server SRVPF55.
+	
+	14. Wait for about a minute.
+	
+	15. Press F5 in the Administrator program to refresh the data displayed.
+	
+	16. In the public folder hierarchy, select the NorthAmerica folder. On the File
+	  menu, select Properties to bring up the properties of the folder.
+	
+	17. Go to the Replicas page of the folder properties.
+	
+	18. Check the list on the right labeled "Replicate folders to". This list should
+	  include SRVPF55. Remove from this list any servers that you do not want all
+	  of the subfolders of the NorthAmerica folder replicated to.
+	
+	19. After you have verified the replica list, go to the General page of the
+	  folder properties.
+	
+	20. Select the setting labeled "Propagate these properties to all subfolders".
+	  (If this setting is not visible, either you are not using an Exchange 5.5
+	  Administrator program, or the folder whose properties you have obtained does
+	  not have any subfolders.)
+	
+	21. Click OK. This brings up a dialog box titled "Subfolder Properties". Clear
+	  all options except Replicas.
+	
+	22. After selecting only the Replicas option, click OK. This starts a process to
+	  automatically modify the replica list of all subfolders of the NorthAmerica
+	  folder, with the replica list of the NorthAmerica folder. This results in a
+	  replica of all subfolders being added to the SRVPF55 server. This process
+	  may take up to several hours, depending on the number of subfolders. After
+	  this process is completed, all the data in the public folders whose replicas
+	  were added will start being replicated to the SRVPF55 server. This is an
+	  important point if the only other replicas of the public folders are on
+	  servers across slow links. This process may cause very high network
+	  utilization on these slow links.
+	
+	23. After the process has completed, refresh the Administrator program by
+	  pressing the F5 key.
+	
+	24. Get permissions of the NorthAmerica folder again.
+	
+	25. On the General page, select the setting labeled "Propagate these properties
+	  to all subfolders".
+	
+	26. Click OK. This brings up the Subfolder Properties dialog box. Clear all
+	  options except Home Server.
+	
+	27. Click OK. This starts a process to re-home all the subfolders of the
+	  NorthAmerica folder to the SRVPF55 server.
+	
+	After this process has completed, all the subfolders will be re-homed to server
+	SRVPF55. If the public folder permissions were lost during the accidental
+	re-homing, this process does not restore the permissions.
+	
+	NOTE: The contents of all the subfolders will be replicated to the server
+	SRVPF55. This may affect network utilization.
+	
+	NOTE: In order for you to perform the above steps, both the Administrator program
+	and the server against which the Administrator program is running must be
+	version 5.5.
+	
+	The server on which the public folders have been accidentally re-homed does NOT
+	have to be running version 5.5.
+	
+	Advantages of using an Exchange Server 5.5 computer to re-home folders
+	----------------------------------------------------------------------
+	
+	Using the Exchange 5.5 Administrator program in conjunction with an Exchange
+	Server 5.5 computer has the following advantages over other methods, such as
+	using PFADMIN.EXE, to re-home public folders:
+	
+	- The amount of work needed to re-home entire public folder trees is greatly
+	  reduced.
+	
+	- All the work is done on the original site and there is no need to access the
+	  server on which the folders were accidentally re-homed. This may be useful if
+	  the server where the folders are re-homed is across a slow WAN link.
+	
+	- There is no need to add replicas of all folders to the server where the
+	  folders are re-homed. This eliminates the replication of the contents of all
+	  the public folders across a possibly slow network link.
+	
+	Considering these advantages--if an Exchange Server 5.5 computer is not available
+	in the original site, it may be useful to install one in the site if you need to
+	re-home public folders.
+	
+	Additional query words: rehome exfaqold
+	
+	======================================================================
+	Keywords          : exc55 
+	Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+	Version           : winnt:5.5
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

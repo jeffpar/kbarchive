@@ -1,0 +1,103 @@
+---
+layout: page
+title: "Q74505: Setting Default Margins, Font, and Point Size in Write"
+permalink: kb/074/Q74505/
+---
+
+## Q74505: Setting Default Margins, Font, and Point Size in Write
+
+	Article: Q74505
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 12-OCT-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	There is no built-in setting within Microsoft Write to set the default font and
+	point size, or to set the default margins. However, it is possible to create a
+	blank file with the font and point sizes and margins in it.
+	
+	MORE INFORMATION
+	================
+	
+	The following are the steps to set up Write with a default font and point size
+	and default margins. If you have different printers connected that have
+	different font capabilities, you may want to have multiple Write icons, each
+	starting with a font that is compatible with the desired printer.
+	
+	NOTE: The listed fonts within Write are not necessarily compatible with all
+	printers. Write will update its configuration (within WIN.INI) with fonts that
+	are addressable through the printer's driver. These fonts are not changed when
+	using a different printer. Therefore, printing to a different printer with a
+	font that is not built into that printer results in the printer using its
+	default font.
+	
+	Step to Set Up Default Font Only (Windows 3.0 or 3.0a)
+	------------------------------------------------------
+	
+	Edit the [MSWrite] section in the WIN.INI file to default to the desired font
+	with the Font1 entry. For example:
+	
+	     [MSWrite]
+	     Font1=Script,48,255
+	     Font2=Courier,48,0
+	     Font3=LinePrinter,48,0
+	
+	Steps to Set Up the Default Font and Point Size for Write
+	---------------------------------------------------------
+	
+	1. Run Write.
+	
+	2. From the Document menu, choose Page Layout.
+	
+	3. Select the margins desired.
+	
+	4. From the Character menu, choose Fonts.
+	
+	5. Select the font and point size desired.
+	
+	6. Type a few spaces for the changes to take effect.
+	
+	7. Save the file as a filename such as WRITEFON.WRI, and exit Write.
+	
+	8. Highlight the Write icon in Program Manager.
+	
+	9. From the File menu, choose Properties.
+	
+	10. Change the command line from
+	
+	  WRITE.EXE
+	
+	  to:
+	
+	  WRITE.EXE WRITEFON.WRI
+	
+	  and choose OK.
+	
+	Every time you select the Write icon, it loads WRITEFON.WRI, which contains the
+	font and point size and margin settings. If you are creating multiple Write
+	icons for multiple printers, you need to have a unique filename for each one.
+	For example WRITEFON1.WRI for printer 1 and WRITEFON2.WRI for printer 2. To
+	ensure that the file is not accidentally overwritten, start Windows File Manager
+	and change the file attributes to "read only". When you try to save a document
+	write will inform you that the file is read only and prompt you to save the file
+	under a different name.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+	Version           : WINDOWS:3.0,3.0a,3.1,3.11
+	
+	=============================================================================
+	

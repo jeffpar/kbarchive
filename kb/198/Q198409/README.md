@@ -1,0 +1,452 @@
+---
+layout: page
+title: "Q198409: Microsoft DNS Server Registry Parameters, Part 2 of 3"
+permalink: kb/198/Q198409/
+---
+
+## Q198409: Microsoft DNS Server Registry Parameters, Part 2 of 3
+
+	Article: Q198409
+	Product(s): Microsoft Windows NT
+	Version(s): winnt:4.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 10-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about editing the registry.
+	Before you edit the registry, make sure you understand how to restore it if
+	a problem occurs. For information about how to do this, view the "Restoring
+	the Registry" Help topic in Regedit.exe or the "Restoring a Registry Key"
+	Help topic in Regedt32.exe.
+	
+	SUMMARY
+	=======
+	
+	This article consists of 3 parts and describes settings for the Microsoft Domain
+	Name Service (DNS) server. You can modify most settings using the DNSADMIN tool,
+	although some settings can only be altered using Registry Editor.
+	
+	For additional information, please see the following articles in the Microsoft
+	Knowledge Base:
+	
+	  Q198408 Microsoft DNS Server Registry Parameters, Part 1 of 3
+	
+	  Q198410 Microsoft DNS Server Registry Parameters, Part 3 of 3
+	
+	MORE INFORMATION
+	================
+	
+	WARNING: Using Registry Editor incorrectly can cause serious problems that may
+	require you to reinstall your operating system. Microsoft cannot guarantee that
+	problems resulting from the incorrect use of Registry Editor can be solved. Use
+	Registry Editor at your own risk.
+	
+	For information about how to edit the registry, view the "Changing Keys And
+	Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+	Information in the Registry" and "Edit Registry Data" Help topics in
+	Regedt32.exe. Note that you should back up the registry before you edit it.
+	
+	To change these parameters, use the following procedure:
+	
+	1. Start Registry Editor (Regedt32.exe).
+	
+	2. From the HKEY_LOCAL_MACHINE subtree, go to the following key:
+	
+	    \SYSTEM\CurrentControlSet\Services
+	
+	3. From the Edit menu, click Add Value and add a value to the key described in
+	  the appropriate entry below. Type in the value, and use the "Data Type" check
+	  box to set the value type.
+	
+	4. Click OK.
+	
+	5. Quit Registry Editor.
+	
+	6. Restart the DNS Server for the above changes to take affect.
+	
+	Server Parameters
+	-----------------
+	
+	Several registry parameters determine behavior of the entire server. Each of
+	these is a registry value under
+	
+	  HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DNS\Parameters
+	
+	NOTE: These registry keys are read only at startup. Some may be reset and, in
+	some cases, the server behavior dynamically changed, through the DNS
+	Administrator. But if manually reset, the DNS server must be restarted to pick
+	up the new value.
+	
+	All of the DNS parameters are registry values located under subkeys of:
+	
+	  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DNS\ 
+	
+	SecureResponses
+	---------------
+	
+	  Value:    SecureResponses
+	  Added:    SP4 (April 1998)
+	  Type:     DWORD (Boolean)
+	  Default:  NoKey = OFF (Non-secure data is kept)
+	  Function: Determines whether server attempts to clean up 
+	            responses to avoid cache pollution.
+	
+	With the Service Pack 4 (April, 1998) release, the SecureResponses flag is off.
+	Create the SecureResponses value and set it to 1 to enable it. Responses from
+	other DNS servers may contain records whose validity are open to question.
+	
+	Examples: DNS server makes MX query for domain.samples.microsoft.com to
+	samples.microsoft.com's DNS server. The samples.microsoft.com DNS server
+	responds but includes A record for A.ROOT-SERVERS.NET giving its own address.
+	The rogue DNS server has then gotten itself set up as a root server in your DNS
+	server's cache. Less malicious, but more common, are referral responses (or
+	direct responses from BIND, see WriteAuthorityNs for discussion) that contain
+	records for the DNS of an ISP: Authority section:
+	
+	  new.samples.microsoft.com NS ns.new.samples.microsoft.com.
+	  new.samples.microsoft.com NS ns.isp.samples.microsoft.com.
+	
+	Additional section:
+	
+	  ns.new.samples.microsoft.com. A 1.1.1.1
+	  ns.isp.samples.microsoft.com. A 2.2.2.2
+	
+	NOTE: The address record for the ISP happens to be old\stale. If SecureResponses
+	is on, records that are not in a subtree of the zone queried are eliminated. For
+	example, in the example above, the samples.microsoft.com. DNS server was
+	queried, so the all the samples.microsoft.com records are secure, but the
+	ns.isp.microsoft.com. A record is not in the sample .microsoft.com. subtree, and
+	is not cached or returned by the DNS server.
+	
+	
+	RecursionRetry
+	--------------
+	
+	  Value:      RecursionRetry
+	  Added:    Windows NT 4.0
+	  Type:     DWORD
+	  Default:  NoKey  (Retry is three seconds)
+	  Function: Set the interval before retrying a recursive lookup.
+	
+	To resolve recursive client queries, the DNS server queries remote DNS servers.
+	When no response comes back, the server must retry (to the same and/or other DNS
+	servers). This key allows override of default retry timeout. If the
+	RecursionRetry key does not exist or is zero, retries are made after three
+	seconds. If the RecursionRetry key is nonzero, its value (in seconds) sets the
+	retry interval. Users should not alter this key.
+	
+	
+	RecursionTimeout
+	----------------
+	
+	  Value:      RecursionTimeout
+	  Added:    Windows NT 4.0
+	  Type:     DWORD
+	  Default:  NoKey (Timeout is 15 seconds)
+	  Function: Set the timeout before DNS server gives up recursive query.
+	
+	To resolve recursive client queries, the DNS server queries remote DNS servers.
+	When no response comes back, the server from any of the remote servers
+	contacted, the DNS server must eventually give up on the query and report to the
+	client that it was unable to answer it (response code is SERVER_FAILURE). This
+	key allows override of default retry timeout. If the RecursionTimeout key does
+	not exist or is zero, the DNS gives up after 15 seconds. If the RecursionTimeout
+	key is nonzero, its value (in seconds) sets the retry timeout. In general the
+	15-second timeout allows any outstanding response from anywhere to get back to
+	the DNS server. Users are discouraged from altering this key.
+	
+	
+	RoundRobin
+	----------
+	
+	  Value:      RoundRobin
+	  Added:    SP4
+	  Type:     DWORD (Boolean)
+	  Default:  NoKey (Round robin A records)
+	  Function: Determine whether server round robins multiple A records.
+	
+	By default, the Microsoft DNS server round robins A records when multiple A
+	records exists for a name. This is a primitive load balancing mechanism.
+	
+	If the RoundRobin key does not exist or is nonzero, the DNS server round robins A
+	records. If the RoundRobin key is zero, the DNS server returns A records in a
+	fixed (file load) order.
+	
+	
+	LocalNetPriority
+	----------------
+	
+	  Value:      LocalNetPriority
+	  Added:    SP4
+	  Type:     DWORD (Boolean)
+	  Default:  NoKey (Give local net records priority)
+	  Function: Determine the priority of multiple A records given in
+	            response.
+	
+	By default, the Microsoft DNS server gives priority to the "closest" A record to
+	the client's IP address when there are multiple A records for a name. This is
+	designed so that the client application will attempt to connect to the closest
+	(and fastest) IP available.
+	
+	Example: www.samples.microsoft.com has three A records: 198.27.1.1, 20.23.25.1,
+	and 131.21.31.7. Client at 131.21.198.25 queries DNS server for
+	www.samples.microsoft.com. Instead of returning in database order or round
+	robin, the DNS server notices that the client's 131.21 address matches the
+	network (class B) portion of the 131.21.31.7 address. The DNS server then
+	reorders the addresses in the response:
+	
+	  131.21.31.7
+	  198.27.1.1
+	  20.23.25.1
+	
+	If the client query comes from 12.123.248.12, then none of addresses matches in
+	the network portion of the address and NO local net priority reordering is
+	done.
+	
+	If more than one address matches in the network portion, then the matching
+	addresses are ordered with the closest match first so that the result is most
+	likely to be correct regardless of any subnetting.
+	
+	Example: www.samples.microsoft.com has four A records: 198.27.1.1, 20.23.25.1,
+	131.21.31.7, and 131.21.196.8. Client at 131.21.198.25 queries DNS server for
+	www.samples.microsoft.com. Now both 131.21 addresses are returned at the top,
+	but the 131.21.196 address is first because it matches the client's IP address
+	down through the 131.21.192 subnet (that is, it would match even if subnetting
+	down to a 255.255.248 mask). So the response is ordered:
+	
+	  131.21.196.8
+	  131.21.31.7
+	  198.27.1.1
+	  20.23.25.1
+	
+	NOTE: Having LocalNetPriority supersedes round robining. However, if RoundRobin
+	is on, the records continue to be round-robined, and are returned in the current
+	round-robin order when no LocalNetPriority match can be made.
+	
+	AddressAnswerLimit
+	------------------
+	
+	  Value:      AddressAnswerLimit
+	  Added:    SP3
+	  Type:     DWORD
+	  Default:  NoKey (No limit)
+	  Function: Limits number of A records put in answer to query.
+	
+	The AddressAnswerLimit registry key puts a limit on the number of A records that
+	are actually written to the answer section in a response to an A record query.
+	This has two benefits:
+	
+	1. Allows Windows 95 clients to operate correctly, even when a DNS name is
+	  configured with more than 28 A records.
+	
+	2. Keeps remote DNS servers resolving a name from retrying with TCP when they
+	  receive a truncated response. (In general, client resolvers will not retry
+	  with TCP, whether the truncation bit is set or not.)
+	
+	If the AddressAnswerLimit registry key is nonzero, it specifies a limit on the
+	number of A records written into an answer for a name. The limit itself is
+	bounded 5 < x < 28. So an AddressAnswerLimit value greater than 28, will
+	result in a limit of 28, and a value 0 < x < 5, will result in a limit of
+	five. (The bottom limit of 5 is there so that, if multiple addresses are
+	available, at least enough is given back so that one computer is likely to be
+	found.) In addition, when AddressAnswerLimit is set, the truncation bit is not
+	set on a response, even if the packet space is exhausted before the limit for
+	writing A records is reached (see benefit 2 above).
+	
+	NOTE: These restrictions are only for simple A record queries to the name. They
+	do not affect other query types.
+	
+	If the AddressAnswerLimit registry key does not exist or is zero, A record
+	responses are not limited. All A records for a name are written to the packet.
+	If all the records do not fit in a UDP DNS packet, the truncation bit it set.
+	
+	
+	LooseWildcarding
+	----------------
+	
+	  Value:      LooseWildcarding
+	  Added:    SP4
+	  Type:     DWORD (Boolean)
+	  Default:  NoKey  (prior to SP4 loose; after SP4 RFC wildcarding)
+	  Function: Set server to do wildcarding loosely.
+	
+	Example:
+	
+	  Zone sample.microsoft.com.
+	
+	  Zone file fragment:
+	
+	     *.sample.microsoft.com.    MX   10 mailserver1.sample.microsoft.com.
+	     sample.microsoft.com.      MX   10 mailserver2.sample.microsoft.com.
+	     host.sample.microsoft.com.   A   1.1.1.1
+	
+	  Query:
+	
+	     Host.sample.microsoft.com, type MX
+	
+	According to RFC, the host.samples.microsoft.com.com query is looked up and no MX
+	record is found at host.samples.microsoft.com, but an A record does exist.
+	Hence, no wildcard matching is done. The query responds with an authoritative
+	empty response (no error and no records). Smart mail programs would then requery
+	for an A record for host.samples.microsoft.com and use the A record to send mail
+	directly to host.samples.microsoft.com.
+	
+	Before Service Pack 4 (SP4), the Microsoft DNS server finds no MX record at
+	host.samples.microsoft.com, notes that MX is a wildcard type, and notes that
+	samples.microsoft.com is the parent of a wildcard name. It checks that wildcard
+	name *.samples.microsoft.com for MX records, finds a match and returns it. The
+	mail program would then send mail to mailserver1.samples.microsoft.com.
+	
+	The advantages of each approach should be apparent. The RFC approach is easier if
+	your hosts are capable of receiving mail directly. However, if you advertise
+	hosts that are not mail servers, you also need to explicitly add MX records at
+	each host. The Microsoft DNS approach allows you to set up just two MX records
+	and cover queries to the entire zone. However, if you have individual hosts that
+	should receive there own mail, you need to put MX records at each of these
+	hosts.
+	
+	If the LooseWildcarding key does not exist or is zero, the server (after SP4)
+	will follow the RFC specified wildcarding behavior. The administrator is advised
+	to put MX records in for all hosts that are not capable of receiving mail.
+	
+	If the LooseWildcarding key is nonzero, the server aggressively seek out the
+	closest wildcard node (equivalent to shipped Windows NT 4.0 behavior). The
+	administrator should put MX records at both the zone root and in a wildcard node
+	(*) directly below the zone root. The administrator should also put
+	self-referent MX records on hosts that are to receive their own mail.
+	
+	
+	BindSecondaries
+	---------------
+	
+	  Value:      BindSecondaries
+	  Added:    Windows NT 4.0
+	  Type:     DWORD (Boolean)
+	  Default:  NoKey (Send uncompressed transfers to non-MS secondaries)
+	  In Admin: No.
+	  Function: Determine AXFR message format when sending to non-MS DNS
+	            secondary.
+	
+	BIND did not implement the RFC specified zone transfer protocol. Specifically,
+	BIND sends one zone record in every DNS message. This adds the unnecessary
+	overhead of a message header with every record; it also eliminates any
+	possibility of name compression. BIND servers prior to 4.9.4 will refuse zone
+	transfer messages that properly buffer multiple records in each DNS message, and
+	some implementations may fault. More recent BIND versions (4.9.4 and later) will
+	both accept and send the faster compressed format, but may be configured with a
+	list of servers that must receive the old format.
+	
+	The Microsoft DNS server can send (and receive) messages in either format. To
+	allow Microsoft to Microsoft transfers to use the faster format, a Microsoft DNS
+	secondary appends two characters (MS) to its AXFR request packet. When a
+	Microsoft master receives a request with this signal, it then sends the transfer
+	using the fast compressed format. If the request does not contain this signal,
+	the transfer is sent using the slower one record per message format, to avoid
+	causing problems if the secondary is an old BIND implementation.
+	
+	If the BindSecondaries registry key does not exist or is nonzero, the server uses
+	the paradigm described above and will always send transfers to non-Microsoft DNS
+	secondaries in the uncompressed BIND compatible format. If the BindSecondaries
+	registry key is zero, the server will send all transfers in the fast format.
+	Note that the default behavior is adequate to transfer to any DNS server. The
+	only reason to use the BindSecondaries key is when you have NEW BIND servers (or
+	non-BIND, non-Microsoft servers) that are secondaries to an Microsoft DNS server
+	and you want to get the fastest possible transfer performance.
+	
+	As the fixed BIND servers replace older versions, the defaults to this key may be
+	altered so that the efficient transfer is the default even to non- Microsoft
+	servers.
+	
+	WriteAuthorityNs
+	----------------
+	
+	  Value:      WriteAuthorityNs
+	  Added:    SP3
+	  Type:     DWORD (Boolean)
+	  Default:  NoKey (Do not write unnecessary NS records)
+	  Function: Write NS records to authority section on successful response.
+	
+	By default, Microsoft DNS server uses the authority section only as outlined by
+	RFC1034:
+	
+	- For NS records when making a referral.
+	
+	- For an SOA record to allow caching of a NAME_ERROR response. (In compliance
+	  with dnsind clarify draft.)
+	
+	If the WriteAuthorityNs registry key is nonzero, the server will write NS records
+	for the zone into the Authority section when making a successful authoritative
+	response. If the WriteAuthorityNs registry key does not exist or is zero, the
+	server use the default RFC compliant behavior and only write to the Authority
+	section in the two cases noted above.
+	
+	NOTE: This key exists only for those who need Authority data for some
+	programmatic reason.
+	
+	
+	WriteAuthoritySoa
+	-----------------
+	
+	  Value:      WriteAuthoritySoa
+	  Added:    SP3
+	  Removed:  SP4
+	  Type:     DWORD (Boolean)
+	  Default:  NoKey (Do not write unnecessary SOA record)
+	  Function: Write NS records to authority section on successful response.
+	
+	The use of this key is deprecated. Use WriteAuthorityNs (see above) if mimicking
+	of BIND authority section behavior is desired.
+	
+	ListenAddresses
+	---------------
+	
+	  Value:      ListenAddresses
+	  Added:    Windows NT 4.0
+	  Type:     BINARY
+	  Default:  NoKey  (Use all IP interfaces)
+	  Function: Determines IP addresses bound to DNS server.
+	
+	Some DNS resolvers (including Windows 95) require that the IP source address of a
+	DNS response be the same as the IP address they sent the query to, or they
+	reject the response. Accommodating these resolvers means that the DNS server
+	must explictly bind sockets to IP addresses on the computer.
+	
+	The ListenAddresses key is a list of IP addresses for the DNS server to listen
+	on. The list is not dotted IP strings, but a counted array of raw addresses in
+	net byte order. It should be configured through the Server Properties,
+	Interfaces dialog box in the Administrator tool. Editing the registry key is
+	discouraged. If the ListenAddresses key does not exist, the DNS server attempts
+	to bind to every IP address on the computer. This is, in general, desirable
+	behavior.
+	
+	However, there are a few reason why using the listen address key may be
+	desirable:
+	
+	- For administrative reasons, you do not want to use some interfaces.
+	
+	- Computer contains lots of IP interfaces, binding to all of them is expensive.
+	
+	- If greater than 35 IP interfaces, the DNS server will not detect and bind to
+	  all IP interfaces properly. Because of limitations in Winsock's
+	  GetAddressByName(), only the first 35 interfaces are returned to the DNS
+	  server. If your DNS should be bound to any addresses beyond the first 35,
+	  whether all the addresses on the computer or some subset, ListenAddresses is
+	  required to get the correct binding.
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+	Version           : winnt:4.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

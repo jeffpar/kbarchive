@@ -1,0 +1,153 @@
+---
+layout: page
+title: "Q173120: SMS: Windows NT Remote Control May Fail in Routed Environment"
+permalink: kb/173/Q173120/
+---
+
+## Q173120: SMS: Windows NT Remote Control May Fail in Routed Environment
+
+	Article: Q173120
+	Product(s): Microsoft Systems Management Server
+	Version(s): winnt:1.2
+	Operating System(s): 
+	Keyword(s): kbtshoot smsremtshoot kbRemoteProg
+	Last Modified: 31-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server version 1.2 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about editing the registry.
+	Before you edit the registry, make sure you understand how to restore it if
+	a problem occurs. For information about how to do this, view the "Restoring
+	the Registry" Help topic in Regedit.exe or the "Restoring a Registry Key"
+	Help topic in Regedt32.exe.
+	
+	SYMPTOMS
+	========
+	
+	When using Systems Management Server to remote control a Windows NT client
+	computer in a routed environment, the remote control session may fail if the
+	router(s) drop too many of the packets.
+	
+	Therefore, the stability of a remote control session is directly related to the
+	stability and performance of the network environment in which it is being used.
+	
+	MORE INFORMATION
+	================
+	
+	Systems Management Server remote control uses IP Sockets as the default
+	transport method for Windows NT client computers. More specifically, the remote
+	control session relies on a stream of UDP frames (packets) between the client
+	and administrator console.
+	
+	Because UDP frames are not guaranteed delivery (which is inherent to the TCP/IP
+	protocol suite), a busy router may drop UDP frames in favor of higher priority
+	traffic such as TCP frames. You can use Network Monitor to see ICMP frames from
+	the router indicating that the router is too busy to process the packet (for
+	example, ICMP Source Quench messages or ICMP Redirect messages and so forth). If
+	the router is a black hole router, (no notification that it is dropping packets)
+	you will not see any ICMP messages returned.
+	
+	If too many frames in a remote control session are lost, the session will
+	terminate without warning.
+	
+	WORKAROUND
+	==========
+	
+	Use a NetBIOS session for remote control rather than using IP sockets to work
+	around this problem. Even though it is much more reliable, it may prove to be
+	slower in some environments.
+	
+	To test a remote control session over a NetBIOS session or Lana such as NetBT,
+	(NetBIOS encapsulated in TCP/IP) perform the following steps:
+	
+	I. View the Lana numbers defined on the client computer running Windows NT.
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click the Network icon.
+	
+	3. On the Services tab, select NetBIOS Interface, and then click Properties.
+	
+	  From the list of defined Lana numbers, you may see something like "NetBT ->
+	  El90x -> El90x1" defined for Lana 0. This can be interpreted as NetBIOS
+	  encapsulated in TCP/IP over the Ethernet adapter. This is normally the most
+	  desirable choice for a remote control session. As long as a name resolution
+	  method (such as WINS) is being used in the network environment, this is a
+	  reliable choice.
+	
+	        NetBT   = NetBIOS encapsulated in TCP/IP
+	        NwlnkNB = NetBIOS encapsulated in IPX
+	        NBF     = NetBIOS encapsulated in NetBEUI
+	
+	  For systems that use a dial-up connection as well, you may see other Lana
+	  numbers similar to "NetBT -> NdisWan4".
+	
+	WARNING: Using Registry Editor incorrectly can cause serious problems that may
+	require you to reinstall your operating system. Microsoft cannot guarantee that
+	problems resulting from the incorrect use of Registry Editor can be solved. Use
+	Registry Editor at your own risk.
+	
+	For information about how to edit the registry, view the "Changing Keys And
+	Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+	Information in the Registry" and "Edit Registry Data" Help topics in
+	Regedt32.exe. Note that you should back up the registry before you edit it.
+	
+	II. Configure the Remote Control agent to listen on a specific Lana number.
+	
+	1. Start Registry Editor (Regedt32.exe) and find the following registry key:
+	
+	        HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SMS\Client Services
+	        \Remote Control\Parameters
+	
+	2. Change the "CommandLine" value from "-IP" (IP Sockets) to "-L0" (Lana 0). To
+	  permanently override the site-wide setting, set the "Override Site
+	  CommandLine" value under the Remote Control key to a value of "1" as well.
+	  This ensures that the CommandLine value is not overwritten if the Systems
+	  Management Server client components are ever upgraded.
+	
+	If NetBT proves to be a reliable and functional alternative to IP sockets in your
+	environment, the site-wide setting for Windows NT Server Remote Control can be
+	changed via the Systems Management Server Administrator utility. To change the
+	setting, start the Administrator utility and use the following steps:
+	
+	1. In the Site Properties window, click Clients, and then select Proposed
+	  Properties.
+	
+	2. Click Options.
+	
+	3. Click the "NetBIOS Lana Number" option button and enter the Lana number you
+	  want. This will most often be a zero.
+	
+	4. Click OK until you have closed the Site Properties window.
+	
+	After the site property changes have taken effect, each Systems Management Server
+	client running Windows NT will need to run Upgrade.bat from the SMS_SHR share of
+	a Systems Management Server logon server to be configured to use the new remote
+	control setting.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Systems Management Server
+	version 1.2. This problem was corrected in the latest Microsoft Systems
+	Management Server 1.2 U.S. Service Pack. For information on obtaining the
+	service pack, query on the following word in the Microsoft Knowledge Base
+	(without the spaces):
+	
+	  S E R V P A C K
+	
+	
+	Additional query words: prodsms
+	
+	======================================================================
+	Keywords          : kbtshoot smsremtshoot kbRemoteProg 
+	Technology        : kbSMSSearch kbSMS120
+	Version           : winnt:1.2
+	Issue type        : kbbug
+	
+	=============================================================================
+	

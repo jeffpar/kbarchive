@@ -1,0 +1,189 @@
+---
+layout: page
+title: "Q189119: UserEnv Returns Corrupted Profile for All Failures"
+permalink: kb/189/Q189119/
+---
+
+## Q189119: UserEnv Returns Corrupted Profile for All Failures
+
+	Article: Q189119
+	Product(s): Microsoft Windows NT
+	Version(s): 2000,4.0
+	Operating System(s): 
+	Keyword(s): kbWinNT400sp4fix
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 4.0 
+	- Microsoft Windows NT Server version 4.0 
+	- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+	- Microsoft Windows 2000 Professional 
+	- Microsoft Windows 2000 Server 
+	- Microsoft Windows 2000 Advanced Server 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	When you log on to a Windows NT 4.0 computer, you may receive the following
+	error in the User Environment dialog box:
+	
+	  The operating system was unable to load the locally stored profile. A
+	  new local profile will be created (1009).
+	
+	The following message may be displayed as well:
+	
+	  Your profile was not successfully loaded, but you have been logged on
+	  with the default system profile. Please correct the problem and log off
+	  (18).
+	
+	Your profile settings (desktop icons, application settings, and so on) are reset
+	to the default. If you look in the %SystemRoot%\Profiles folder, you should see
+	your profile directory has been renamed to %SystemRoot%\Profiles\Username.bak,
+	and a new default profile has been stored in %SystemRoot%\Profiles\Username.
+	This is done to allow a user to log on successfully if the profile has been
+	corrupted or does not load for some other reason.
+	
+	If the registry size limit has been exceeded, a system pop-up message indicating
+	this will be presented to the user during the first logon attempt when this
+	occurs. The following message will be displayed:
+	
+	  System Process - Low on Registry Quota: Your system is running low on
+	  registry quota. Start the System option in the Control Panel and choose
+	  the Virtual Memory button to increase the registry quota.
+	
+	During subsequent logon attempts, profile load errors will occur and the
+	following application events will be logged:
+	
+	  Event ID 1000 userenv RegLoadKey failed with error 1009 for
+	  C:\WINNT\Profiles\username\ntuser.dat
+	
+	  Event ID 1000 userenv The operating system was unable to load the
+	  locally stored profile.  A new local profile will be created. (1009)
+	
+	NOTE: If a user commonly locks the workstation instead of logging off, the
+	original Registry Size Limit error may have been forgotten or lost from the
+	event log by the time a subsequent logon attempt occurs and the profile fails to
+	load.
+	
+	
+	CAUSE
+	=====
+	
+	Although the user profile registry keys may fail to load for a number of
+	reasons, one status code is always returned indicating that the profile is
+	corrupted. The Registry Size Limit (RSL) may have been exceeded. The RSL is a
+	user-defined quota that places a maximum upper limit on how large the registry
+	can grow. When this limit is approached, a message stating this in the
+	Application Popup dialog box will be presented to the user. Because the loading
+	of a user profile (stored in Ntuser.dat) consumes Registry Quota, this may
+	contribute to the exhaustion of this resource.
+	
+	RESOLUTION
+	==========
+	
+	A User Profile does not load if the RSL has been exceeded. This is by design. To
+	work around this problem, the RSL can be increased to avoid the restriction. To
+	do this, follow these steps:
+	
+	1. In Control Panel, double-click System.
+	
+	2. On the Performance tab, click Change in the Virtual Memory section.
+	
+	3. In the Virtual Memory dialog box, in the Registry Size section, the current
+	  registry size and the maximum registry size are displayed. Modify the current
+	  RSL in this section.
+	
+	Microsoft recommends increasing the RSL only enough to accommodate the current
+	Registry and a small amount of growth. For additional information, please see
+	the following article in the Microsoft Knowledge Base:
+	
+	  Q176083
+	  System Is Running Low on Registry Quota
+	
+	In Windows NT 4.0, Terminal Server Edition, the RSL is based on paged pool. The
+	maximum size of paged pool is 192 MB. RSL can consume a maximum of 80 percent of
+	paged pool, for a maximum of 153.6 MB. For additional information, click the
+	article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q124594 Understanding and Configuring Registry Size Limit (RSL)
+	
+	Windows NT 4.0
+	--------------
+	
+	If the profile has been renamed to Username.bak as a result of the RSL being
+	exceeded, it is possible to restore the original profile settings.
+	
+	1. Log on to the computer as Administrator.
+	
+	2. Rename or delete the %SystemRoot%\Profiles\<Username> profile folder.
+	
+	3. Rename the %SystemRoot%\Profiles\<Username>.bak profile folder to
+	  <Username>.
+	
+	4. Log off as Administrator and log on as <Username>.
+	
+	Windows 2000
+	------------
+	
+	Windows 2000 includes a UserEnv enhancement so that the user profile is not
+	deleted if or when the profile is not corrupt. A pop-up message is provided
+	indicating insufficient resources. The user is then logged off if the user does
+	not have local administrative priviledges or the user is logged on when
+	administrative priviledges are identified. The administrator can then increase
+	the registry size limit and log on again. The user profile used prior to the
+	problem is still being saved on the local computer unless it has just been
+	copied.
+	
+	
+	To resolve this problem, obtain the latest service pack for Windows NT 4.0 or
+	Windows NT Server 4.0, Terminal Server Edition. For additional information,
+	click the following article number to view the article in the Microsoft
+	Knowledge Base:
+	
+	  Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed that this is a problem in Windows NT 4.0 and Windows NT
+	Server 4.0, Terminal Server Edition. This problem was first corrected in Windows
+	NT 4.0 Service Pack 4.0 and Windows NT Server 4.0, Terminal Server Edition
+	Service Pack 4.
+	
+	
+	MORE INFORMATION
+	================
+	
+	Error code 1009 is always returned as the NtStatus code for the Windows API
+	MyRegLoadkey. This code maps to the configuration registry database as
+	corrupted: ERROR_BADDB or STATUS_REGISTRY_CORRUPT. This is misleading if the
+	loading of the registry hive failed because of other causes. If the RSL is
+	exceeded, the correct NtStatus code is 1450, insufficient system resources exist
+	to complete the requested: ERROR_NO_SYSTEM_RESOURCES or
+	STATUS_INSUFFICIENT_RESOURCES.
+	
+	For additional information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  ARTICLE-ID: Q185198
+	  TITLE : Error 1000 and User Profiles
+	
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbWinNT400sp4fix 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbNTTermServ400 kbNTTermServSearch kbWinAdvServSearch
+	Version           : :2000,4.0
+	Hardware          : ALPHA x86
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

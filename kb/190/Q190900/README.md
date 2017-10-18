@@ -1,0 +1,186 @@
+---
+layout: page
+title: "Q190900: DirectX: Description of the DirectX Diagnostic Tool"
+permalink: kb/190/Q190900/
+---
+
+## Q190900: DirectX: Description of the DirectX Diagnostic Tool
+
+	Article: Q190900
+	Product(s): Microsoft Home Games
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbtool kbui kbimu msgame
+	Last Modified: 04-DEC-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- the operating system: Microsoft Windows 98 
+	- the operating system: Microsoft Windows Millennium Edition 
+	- the operating system: Microsoft Windows 2000 
+	- the operating system: Microsoft Windows XP 
+	-------------------------------------------------------------------------------
+	
+	If this article does not describe your hardware-related issue, please see the following Microsoft Web site to view more articles about hardware: 
+	
+	  http://support.microsoft.com/support/windows/topics/hardware/hwddresctr.asp
+	
+	SUMMARY
+	=======
+	
+	This article describes the DirectX Diagnostic Tool (Dxdiag.exe) included with
+	Microsoft DirectX version 8.1.
+	
+	MORE INFORMATION
+	================
+	
+	The DirectX Diagnostic Tool is designed to help you troubleshoot DirectX-related
+	issues.
+	
+	The default installation folder for Dxdiag.exe is:
+	
+	  C:\Windows\System
+	
+	To start the DirectX Diagnostic Tool:
+	
+	1. Click Start, and then click Run.
+	
+	2. In the Open box, type "dxdiag" (without the quotation marks), and then click
+	  OK.
+	
+	The following list contains a description of each tab in the DirectX Diagnostic
+	Tool dialog box:
+	
+	System
+	------
+	
+	The System tab provides system information about your computer and specifies the
+	version of DirectX installed on your computer.
+	
+	DirectX Files
+	-------------
+	
+	The DirectX Files tab lists the filename and version number for each DirectX file
+	installed on your computer, as well as, the filename and version number of many
+	common files used by games running under DirectX.
+	
+	If the DirectX Diagnostic Tool detects a problem with a DirectX file, a warning
+	message is displayed in the Notes box.
+	
+	Display'N'
+	----------
+	
+	('N' is the number of the physical display device.)
+	
+	The Display tab lists your current display settings, and allows you to disable
+	DirectDraw, Direct3D, and AGP Texture Acceleration. This tab also allows testing
+	of DirectDraw and Direct3D. Passing these tests indicates that the DirectX
+	Graphics runtime files are installed and operating correctly. It is not a
+	comprehensive test of your computer's display hardware.
+	
+	The Display tab also lists your device's available memory and can tell you if
+	your video driver is "Signed", which indicates that it has passed Microsoft's
+	Windows Hardware Quality Labs testing regimen.
+	
+	NOTE: Dxdiag.exe cannot report memory that is in use at the time it is launched.
+	Therefore, it is not uncommon to see less memory reported than your video card
+	actually has.
+	
+	If the DirectX Diagnostic Tool detects a problem with your display settings, a
+	warning message is displayed in the Notes box.
+	
+	Sound
+	-----
+	
+	The Sound tab displays your current sound settings, and enables you to test
+	DirectSound. The Sound tab can tell you if your audio driver is "Signed" - which
+	indicates that it has passed Microsoft's Windows Hardware Quality Labs testing
+	regimen.
+	
+	The Hardware Sound Acceleration Level slider is used to correct audio glitches
+	that might be caused by some audio drivers. Reducing the acceleration by one
+	notch and re-testing the application is the best way to troubleshoot DirectSound
+	audio problems. Lowering the Hardware Sound Acceleration Level from the default
+	setting of "full acceleration" may disable advanced audio processing techniques,
+	such as 3D spatialization from functioning.
+	
+	If the DirectX Diagnostic Tool detects a problem with your sound settings, a
+	warning message is displayed in the Notes box.
+	
+	Music
+	-----
+	
+	The Music tab displays your current MIDI settings, and enables you to test the
+	DirectMusic component of DirectX.
+	
+	If the DirectX Diagnostic Tool detects a problem with DirectMusic, a warning
+	message is displayed in the Notes box.
+	
+	NOTE: DirectMusic is a new component included in DirectX 6.1.
+	
+	Input
+	-----
+	
+	The Input tab lists the input devices connected to your computer and the input
+	drivers installed on your computer.
+	
+	If the DirectX Diagnostic Tool detects a problem with an input device or an input
+	device driver, a warning message is displayed in the Notes box.
+	
+	Network
+	-------
+	
+	The Network tab lists the registered DirectPlay Service Providers. These are the
+	connection methods that DirectPlay will operate across. A registry problem here
+	can normally be resolved by reinstalling DirectX.
+	
+	The Registered Lobyable DirectPlay Applications section lists all applications
+	which have informed DirectX that they will use DirectPlay for their network
+	communication needs. A registry error here can normally be resolved by removing
+	and reinstalling that application.
+	
+	The DirectPlay test opens a chat window over DirectPlay using the settings you
+	specify. Systems that cannot successfully chat with one another here will almost
+	certainly be unable to establish a network connection within games.
+	
+	If the DirectX Diagnostic Tool detects a problem with a DirectPlay Service
+	Provider or Application, a warning message is displayed in the Notes box.
+	
+	More Help
+	---------
+	
+	If you are unable to resolve your DirectX issue using the previous
+	troubleshooting tabs, you can use the More Help tab to continue troubleshooting
+	the issue.
+	
+	The following list contains a description of the functionality of each button on
+	the More Help tab:
+	
+	- Troubleshoot
+	  The Troubleshoot button starts a DirectX troubleshooter.
+	
+	- Sound
+	  The Sound button starts a sound troubleshooter.
+	
+	- MSInfo
+	  The MSInfo button starts Msinfo32.exe, a utility that gathers system
+	  information about your computer. The file created by Msinfo32.exe can be sent
+	  to Microsoft Technical Support to help resolve persistent issues.
+	
+	- Override
+	  The Override button changes the DirectDraw refresh rate.
+	
+	NOTE: Microsoft does not recommend changing the DirectDraw refresh rate as a
+	general troubleshooting step.
+	
+	Additional query words: direct-x dx8.1 dx81 update tshoot
+	
+	======================================================================
+	Keywords          : kbtool kbui kbimu msgame 
+	Technology        : kbOSWin2000 kbOSWin98 kbOSWin95 kbOSWinME kbOSWinSearch
+	Version           : :
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

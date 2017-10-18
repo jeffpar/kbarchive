@@ -1,0 +1,172 @@
+---
+layout: page
+title: "Q138980: How to Update Datetime Field from Date &amp; Time Grid Cell Values"
+permalink: kb/138/Q138980/
+---
+
+## Q138980: How to Update Datetime Field from Date &amp; Time Grid Cell Values
+
+	Article: Q138980
+	Product(s): Microsoft FoxPro
+	Version(s): 3.00
+	Operating System(s): 
+	Keyword(s): kbcode
+	Last Modified: 24-AUG-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 3.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	You can create editable Date and Time text box controls in a grid that, when
+	edited, change the value in a single Datetime field in a table. This can be
+	accomplished by creating a local view from the table that contains the Datetime
+	field. The local view will include the Datetime field, a date field derived from
+	the Datetime field, and a character field derived from the time portion of the
+	Datetime field. These can be placed in the grid and their values passed back to
+	the Datetime field upon modification.
+	
+	MORE INFORMATION
+	================
+	
+	Step-by-Step Example
+	--------------------
+	
+	Following is an example demonstrating how to have editable Date and Time controls
+	in a grid update a single Datetime field:
+	
+	1. Create a database container called Dt_dbc containing a table called Dt_tab
+	  and a view called Dt_view by running the following code in a program:
+	
+	     * Begin Mktables.prg
+	     *
+	     CREATE DATABASE Dt_dbc
+	
+	     CREATE TABLE Dt_tab (key1 C(5) PRIMARY KEY, date_time T)
+	     FOR nI=1 TO 5
+	        INSERT INTO dt_tab (key1, date_time) VALUES ;
+	           (PADL(ALLTRIM(STR(nI)),5,'0'), DTOT(DATE()-5+nI))
+	     NEXT
+	
+	     CREATE SQL VIEW Dt_view AS SELECT Dt_tab.key1, date_time, ;
+	        TTOD(date_time) as datefield,;
+	        SUBSTR(TTOC(date_time),10,2)+SUBSTR(TTOC(date_time),13,2)+ ;
+	        SUBSTR(TTOC(date_time),16,2)+SUBSTR(TTOC(date_time),19,1) ;
+	        as timefield FROM dt_dbc!dt_tab
+	
+	     * Datefield is a date field created from the date portion of date_time
+	     * with  the TTOD() function
+	     *
+	     * Timefield is a character field created from the time portion of
+	     * date_time with concatenated SUBSTR()'s of the TTOC function with a
+	     * format of HHMMSS(A or P).
+	
+	     =DBSETPROP('dt_view','view','SendUpdates',.T.)
+	                           && Allows updates to be sent to table
+	
+	     * End Mktables.prg
+	
+	2. Create a form called Dt_form.
+	
+	3. Add Dt_view to the Data Environment.
+	
+	4. Drag Dt_view from the Data Environment by its title bar to the form to create
+	  a grid (Grid1).
+	
+	5. Set Grid1's ColumnCount property to 4. Each column of the grid will by
+	  default use each of the first four fields of the view as a control source. If
+	  you want to use the columns in a different order than the fields in the view,
+	  specify the ControlSource property individually for each column. In this
+	  example, the Datetime field is displayed in Column2 of the grid, but it is
+	  not necessary for the Datetime field to display in the grid for the changes
+	  to be passed back to the Date_time field in the view.
+	
+	6. Set the following properties:
+	
+	     Property                         Value        Comment
+	     ------------------------------------------------------------------------
+	     Form1.Width                      400
+	     Form1.Grid1.Width                370
+	     Grid1.Column1.ReadOnly           .T.
+	     Grid1.Column2.ReadOnly           .T.          Edited thru Columns 3 & 4
+	     Grid1.Column1.Width              50
+	     Grid1.Column2.Width              140
+	     Grid1.Column3.Width              60
+	     Grid1.Column4.Width              80
+	     Grid1.Column4.Sparse             .F.          Shows mask in all rows
+	     Grid1.Column4.Text1.Format       R!           R = Input Mask, ! = Upper
+	
+	     Grid1.Column4.Text1.InputMask    99:99:99 XM  Displays like 10:25:15 AM
+	
+	     Grid1.Column4.Text1.Margin       2            Text jumps if left at 0
+	     Grid1.Column1.Header1.Caption    Key1
+	     Grid1.Column2.Header1.Caption    Date_time
+	     Grid1.Column3.Header1.Caption    Datefield
+	     Grid1.Column4.Header1.Caption    Timefield
+	
+	7. Add the following code to the Valid event of Grid1.Column3.Text1:
+	
+	     * This goes into the Valid for the text box that displays the date.
+	     *
+	     * This takes the date from the Datefield in Column3 and converts it
+	     * to a string, concatenates it with time portion of the Date_time
+	     * field, and converts the entire string back to a Datetime data type.
+	     * Then it replaces the current value of the Date_time field with the new
+	     * value.
+	
+	     REPLACE date_time WITH CTOT(DTOC(This.Value)+ ;
+	        " "+SUBSTR(ALLTRIM(TTOC(date_time)),9))
+	
+	8. Add the following code to the Valid event of Grid1.Column4.Text1:
+	
+	     * This goes into the Valid for the Text Box that displays the time.
+	     *
+	     IF !(SUBSTR(This.Value,7,1) $ "AP")     && A or P must be entered for
+	                                             && the character before M
+	        =MESSAGEBOX('Enter an "A" or "P"',0)
+	        RETURN 0
+	     ENDIF
+	
+	     * This takes the date from the Date_time field and converts it to a
+	     * string, concatenates it with the Timefield character string in
+	     * Column4, and converts the entire string back to a Datetime data
+	     * type. Then it replaces the current value of the Date_time field with
+	     * the new value.
+	
+	     REPLACE date_time WITH CTOT(SUBSTR(ALLTRIM(TTOC(date_time)),1,8)+ ;
+	        " "+ SUBSTR(This.Value,1,2)+":"+SUBSTR(This.Value,3,2) + ;
+	        ":"+ SUBSTR(This.Value,5,2)+SUBSTR(This.Value,7,1)+'m')
+	
+	9. Run the form. Edit the Datefield and Timefield. When the insertion point
+	  moves off the edited column, the updates are sent to the Date_time field.
+	
+	Additional Notes
+	----------------
+	
+	- All views are buffered. Optimistic Row Buffering is the default, so the
+	  information will not be written to the Dt_tab table until a different row in
+	  the grid becomes active. The TABLEUPDATE() and TABLEREVERT() functions can be
+	  used to send or cancel updates to the table.
+	
+	- If you want to use Optimistic Table Buffering, set the property in the Data
+	  Environment of the form for the cursor that uses the view. Again,
+	  TABLEUPDATE() and TABLEREVERT() can be used to send or cancel updates.
+	
+	- If changes are made directly to the Date_time field in the Dt_tab table,
+	  these changes will not be reflected in the the Datefield and Timefield fields
+	  in the Dt_view view unless the REQUERY() function is called to update the
+	  view.
+	
+	Additional query words: VFoxWin
+	
+	======================================================================
+	Keywords          : kbcode 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+	Version           : 3.00
+	
+	=============================================================================
+	

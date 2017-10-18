@@ -1,0 +1,313 @@
+---
+layout: page
+title: "Q118787: FFAPI: Command Line Options for Application FFAPI"
+permalink: kb/118/Q118787/
+---
+
+## Q118787: FFAPI: Command Line Options for Application FFAPI
+
+	Article: Q118787
+	Product(s): Microsoft Mail For PC Networks
+	Version(s): MS-DOS:3.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 30-OCT-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Mail Software Development Kit: FFAPI for Gateways and Applications, version 3.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article lists the Application FFAPI programs and all the command line
+	options for each program. There are three programs:
+	
+	- Application Get
+	
+	- Application Put
+	
+	- Application Directory
+	
+	Each comes in small model, large model and the OS/2 version. The large model
+	version name starts with an L and the OS/2 version name starts with an O.
+	
+	Article Q104280 details Remote FFAPI programs.
+	
+	MORE INFORMATION
+	================
+	
+	Program: APPLICATION GET
+	------------------------
+	
+	Syntax: APPGET [-imailbox:password output-filename [-ddrive]
+	
+	  [-f0|1|2] [-h] [-k] [-ms] [-nvalue] [-pvalue]
+	  [-wydirectory|-wndirectory log-filename]
+	  [-yyy|-yyn|-yny|ynn]
+	  [-zey|-zeny|-zeyn|zdmsgid|zrmsgid]]|-ver
+	
+	Options:
+	
+	-imailbox:password
+	
+	Use the -i option to specify the user mailbox and password for the application.
+	This identification is assigned by the administrator. Example: -ijjones:star
+	
+	output-filename
+	
+	Use this to specify the file to contain the messages exported from Mail. Example:
+	c:mail\data\out
+	
+	-ddrive
+	
+	Use the -d option to specify the drive that contains the Mail data files. If you
+	not specify a drive, FFAPI searches for the files on drive m. Example: -dl
+	
+	-f0|1|2
+	
+	Use the -f option to specify the new-line sequence to be used in the MMFF output
+	file:
+	
+	0 = carriage return
+	1 = line feed
+	2 = carriage return, line feed
+	
+	If you do not specify the new-line sequence, carriage return is used. Example:
+	-f2
+	
+	-h
+	
+	Use the -h option to generate messages in the extended message format. Example:
+	-h
+	
+	-k
+	
+	Use the -k option to keep messages in the postoffice mailbag. This includes the
+	MMFF input file, and all data files that make up the message. Example: -k
+	
+	-ms
+	
+	Use the -ms option to generate a log of messages sent. This is put in the file:
+	\log\sent.log located on the drive specified for the Mail data files (-d
+	option). If the file already exists, the new messages are appended to it.
+	Example: -ms
+	
+	-nvalue
+	
+	Use -n to specify the number of messages to get from the Mail data file and place
+	in the MMFF output file. The number must be greater than zero and not more than
+	50. If you do not specify a number, up to 50 messages are retrieved. Example:
+	-n20
+	
+	-pvalue
+	
+	Use -p to extract messages with a priority equal to or higher than the one you
+	specify. The ASCII character set determines the order of priority. Priorities 1
+	to 5 and R, C, F, and T are reserved for Mail. If you don't specify a priority,
+	all messages are extracted.
+	
+	Values: 1 - 9 or any letter. Example: -p3
+	
+	-wydirectory|-wndirectory
+	
+	Use -w to automatically save files sent to the user using file transfer. Use this
+	option to indicate what to do with duplicate file names and to specify the
+	directory to contain the files.
+	
+	Use -wy to overwrite an existing file if the file received has the same name.
+	
+	Use -wn to automatically change the name of the file received if an existing file
+	has the same name.
+	
+	Save all files received in the directory you specify. Example: -wnc:\inbox
+	
+	log-filename
+	
+	Use this option to specify the path and filename to contain the audit of files
+	received. Example: c:\mail\receive.log
+	
+	-yyy|-yyn|-yny|-ynn
+	
+	Use a -y option to create external files for the message body, attachments, or
+	both.
+	
+	Use -yyy to create external files for the attachments and the message body. Yy
+	means create the files for the message body; the last y means create files for
+	the attachments.
+	
+	Use -yyn to create external files for the message body. Yy means generate the
+	files for the message body; n means do not generate files for the attachment.
+	
+	Use -yny to create external files for the attachments. Yn means do not generate
+	files for the message body; the second y means generate files for the
+	attachments.
+	
+	If you specify -ynn, the messages along with any associated attachment files are
+	put in the MMFF output file. If you do not specify this option, AppGet uses -ynn
+	. Example: -yny
+	
+	-zeyy|-zeny|-zeyn|-zdmsgid|-zrmsgid
+	
+	Use a -z option to manipulate individual message headings in the mailbag. You can
+	read message headings, get a message or delete a message. To enumerate the
+	headings of the messages in the mailbag, specify -zeyy. The first y means
+	extract headings of unread messages; the second y means extract headings of
+	messages that have been read.
+	
+	To extract only headings of messages that have been read, specify -zeny. N means
+	do not extract the headings of unread messages; y means extract headings of
+	messages that have been read.
+	
+	To extract only headings of unread messages, specify -zeyn. Y means extract the
+	headings of unread messages; n means do not extract headings of messages that
+	have been read.
+	
+	To get a message and place it in the output file, specify -zrmsgid, where the
+	message identification is the mail identifier.
+	
+	To delete a message in the mailbag, specify -zdmsgid, where the message
+	identification is the mail identifier. Example: -zd0000008a
+	
+	-ver
+	
+	Use -ver to display the version of this FFAPI program. The version number appears
+	on the screen, unless you direct it to another location. Example: -ver
+	
+	Program: APPLICATION PUT
+	------------------------
+	
+	Syntax: APPPUT [-imailbox:password input-file [-bffilename]
+	
+	  [-ddrive] [-f0|1|2] [-j] [-k] [-mr] [-wuser-address
+	  [,user-address] physical-filename [ physical-filename]
+	  |-wuser-address [,user-address] physical-filename,
+	  logical-filename [ physical-filename,
+	  logical-filename] ] [-x] ]|-ver
+	
+	Options:
+	
+	-imailbox:password
+	
+	Use -i to specify the user mailbox and password for this application. This
+	identification is assigned by the administrator. Example: -ijjones:star
+	
+	input-filename
+	
+	Use this to specify the file that contains the messages to be imported into Mail.
+	Example: c:\mail\data.in
+	
+	-bffilename
+	
+	Use -bf to log all error messages in a file you specify. If you omit the file,
+	errors are directed to standard output. Example: -bfc:\errors\err.log
+	
+	-ddrive
+	
+	Use -d to specify the drive that contains the Mail data files. If you do not
+	specify a drive, FFAPI searches for the files on drive m. Example: -dl
+	
+	-f0|1|2
+	
+	Use -f to specify the new-line sequence used in the MMFF input file: 0 = carriage
+	return
+	1 = line feed
+	2 = carriage return, line feed
+	
+	If you do not specify the new line sequence, carriage return is used. Example:
+	-f2
+	
+	-k
+	
+	Use -k to keep message in the postoffice mailbag. This includes the MMFF input
+	file, and all data files that make up the message. Example: -k
+	
+	-mr
+	
+	Use -mr to generate a log of messages received. This log is placed in the file:
+	\LOG\RECV.LOG located on the drive specified for the Mail data files (-d
+	option). If the file already exists, the new messages are appended to it.
+	Example: -mr
+	
+	-wuser-address [,user-address] physical-filename [ physical-filename]
+	|-wuser-address [,user-address] physical-filename,logical-filename [
+	physical-filename,logical-filename]
+	
+	Use -w to specify what files are to be sent to whom, the user address, and the
+	file to be sent. Specify the name of a file by its physical filename followed by
+	a comma (,) and its logical filename, or simply the physical filename. If you
+	are specifying more than one file, you can specify one file by its physical
+	filename, and the next file by its physical and logical filenames.
+	
+	To send more than one file to a user, precede each filename with a space.
+	Example: -wny4/po1/jbrown c:\doc\list1.txt c:\doc\list2.txt
+	
+	To send files to more than one user, separate addresses with a comma. Example:
+	
+	  -wny4/po1/jbrown c:\doc\list1.txt,lanet/sales/margb a:list2.txt
+	
+	You can also repeat the -w option for each additional user. Example:
+	
+	  -wny4/po1/jbrown c:\doc\list1.txt -wlanet/sales/margb a:list2.txt
+	
+	-x
+	
+	Use -x to activate NetBIOS to notify Mail users about the arrival of new mail.
+	Example: -x
+	
+	-ver
+	
+	Use the -ver option to display the version of this FFAPI program. The version
+	number appears on the screen, unless you direct it to another location. Example:
+	-ver
+	
+	Program: APPLICATION DIRECTORY
+	------------------------------
+	
+	Syntax: APPDIR [-imailbox:password input-file [-bffilename]
+	
+	  [-ddrive] [-lenetwork/postoffice filename]]|-ver
+	
+	Options:
+	
+	-imailbox:password
+	
+	Use the -i option to specify the mailbox and the password for the application.
+	This is assigned to the application by the administrator. Example:
+	-ijjones:star
+	
+	-bffilename
+	
+	Use the -bf option to log all error messages in a file you specify. If you omit
+	this option, the error messages are directed to standard output. Example:
+	-bfc:\errors\error.lst
+	
+	-ddrive
+	
+	Use the -d option to specify the drive that contains the Mail data files. If you
+	do not specify a drive, FFAPI searches for the files on drive m. Example: -dl
+	
+	-lenetwork/postoffice filename
+	
+	Use the -le option to get the postoffice address list and place it in the file
+	you specify. Use this option to specify the network and postoffice, and the path
+	and name of the file. If the file already exists, the list is directed to
+	standard output. Example: -lenet4/po1 polist.adr
+	
+	-ver
+	
+	Use the -ver option to display the version of this FFAPI program. The version
+	number will appear on the screen, unless you direct it to another location.
+	Example: -ver
+	
+	Additional query words: 3.00
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbMailSearch kbSDKSearch
+	Version           : MS-DOS:3.0
+	
+	=============================================================================
+	

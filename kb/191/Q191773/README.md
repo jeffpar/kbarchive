@@ -1,0 +1,164 @@
+---
+layout: page
+title: "Q191773: XFOR: Correlation Table Cleanup Fails; Ct2.dat &amp; Ct2.idx Grow"
+permalink: kb/191/Q191773/
+---
+
+## Q191773: XFOR: Correlation Table Cleanup Fails; Ct2.dat &amp; Ct2.idx Grow
+
+	Article: Q191773
+	Product(s): Microsoft Exchange
+	Version(s): 3.2,5.5
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 05-MAR-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- LinkAge Message Exchange, version 3.2 
+	- Microsoft Exchange Server, version 5.5 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	The Linkage 3.2 Directory Exchange (LDE) (or Exchange 5.5 Connector for PROFS or
+	SNADS) correlation table (CT) maintenance routine, CTCLEANUP, may fail to purge
+	the CT files of expired entries. The \linkage\tables\Ct2.dat and Ct2.idx files
+	may continue to grow to a large size. Additionally, the following may be logged
+	in the Linkage Administrator Log browser:
+	
+	  1998/07/22 16:53:22-      LME-PROFS-MEXDIA(006f) 3
+	   00504:LME-PROFS-MEXDIA started >> stdmain(878)
+	  1998/07/22 16:55:00-      LME-PROFS-MEXDIA(006f) 3 40740:Removing
+	   correlation table records older than 7 day(s)  >> ct2(1768)
+	  1998/07/22 16:55:00-      LME-PROFS-DIAMEX(01cf) 3 40740:Removing
+	   correlation table records older than 7 day(s)  >> ct2(1768)
+	
+	  **** Next 2 entries significant ****
+	  1998/07/22 16:55:00-      LME-PROFS-DIAMEX(01cf) 1 40720:Error
+	   {CT:160()} finding correlation table record  >> ct2(1078)
+	  1998/07/22 16:55:00-      LME-PROFS-DIAMEX(01cf) 1 40750:Error {I/O
+	   error has occurred} scanning correlation table records  >> ct2(1874)
+	
+	  1998/07/22 16:55:00-      LME-PROFS-DIAMEX(01cf) 3 40741:Correlation
+	   table cleanup is complete: {Successful}  >> ct2(1792)
+	  1998/07/22 16:55:00-      LME-PROFS(021d) 3 10100:Scheduled event
+	   CTCLEANUP is starting (running time: 0 minutes, restart delay: 0
+	   minutes) >> control(760)
+	  1998/07/22 16:55:00-      CONTROL-SERVICE(022b) 3 10100:Scheduled event
+	   CTCLEANUP is starting (running time: 0 minutes, restart delay: 0
+	   minutes) >> control(760)
+	  1998/07/22 16:55:00-      LME-PROFS-MEXDIA(006f) 1 40720:Error
+	   {CT:160()} finding correlation table record  >> ct2(1078)
+	  1998/07/22 16:55:00-      LME-PROFS-MEXDIA(006f) 1 40750:Error {I/O
+	   error has occurred} scanning correlation table records  >> ct2(1874)
+	  1998/07/22 16:55:00-      LME-PROFS-MEXDIA(006f) 3 40741:Correlation
+	   table cleanup is complete: {Successful}  >> ct2(1792)
+	  1998/07/22 16:55:00-      LDE(014a) 3 10100:Scheduled event CTCLEANUP
+	   is starting (running time: 0 minutes, restart delay: 0 minutes) >>
+	   control(760)
+	
+	NOTE: This may also be an issue for the Linkage 3.2 Exchange SNADS Connector,
+	because CTCLEANUP is a routine common to that connector.
+	
+	CAUSE
+	=====
+	
+	Two circumstances result in this problem:
+	
+	- When the Ct2.dat file is large, a time-out on index node locking can result
+	  in index corruption (Ct2.idx) and return an error.
+	
+	- The CTCLEANUP routine aborts processing if any error is encountered during
+	  cleanup (above error), resulting in old entries remaining in the CT and file
+	  size growth during normal message processing.
+	
+	These errors do not prevent new entries from being added to the tables; thus the
+	CT2 files continue to grow.
+	
+	WORKAROUND
+	==========
+	
+	Obtain the hotfix mentioned below. After obtaining the hotfix, perform the
+	following steps:
+	
+	1. While the Linkage services are stopped, delete the file:
+	  \linkage\tables\Ct2.idx.
+	
+	
+	2. Replace the Ctreestd.dll and Lscms.dll components with the hotfix versions in
+	  the Exchsrvr\Bin directory. You may find some older versions in the
+	  Exchsrvr\Connect\Exchconn directory. Rename those older versions.
+	
+	3. Restart the Linkage LDE services.
+	
+	4. Reschedule the CTCLEANUP execution time, or wait for the next regularly
+	  scheduled time.
+	
+	For information about rescheduling the CTCLEANUP routine, please review the
+	online "Linkage Message Exchange Help". The Help file's index includes the topic
+	"Change Schedule for Cleanup Process" under "Correlation Tables".
+	
+	NOTE: The Ct2.idx file will be rebuilt at startup, but entries may not be purged
+	until 24 or more hours have elapsed. See MORE INFORMATION below. Also, after the
+	fix is applied, the CTCLEANUP routine will attempt to rebuild the index if an
+	error is detected during runtime, thus handling the corruption condition in the
+	future.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Linkage Message Exchange version
+	3.2.
+	
+	
+	A supported fix is now available, but has not been fully regression-tested and
+	should be applied only to systems experiencing this specific problem. Unless you
+	are severely impacted by this specific problem, Microsoft recommends that you
+	wait for the next service pack that contains this fix. Contact Microsoft Product
+	Support Services for more information.
+	
+	
+	
+	
+	Microsoft has confirmed this to be a problem in Microsoft Exchange Server version
+	5.5.
+	
+	
+	A supported fix is now available, but has not been fully regression-tested and
+	should be applied only to systems experiencing this specific problem. Unless you
+	are severely impacted by this specific problem, Microsoft recommends that you
+	wait for the next service pack that contains this fix. Contact Microsoft Product
+	Support Services for more information.
+	
+	
+	
+	
+	MORE INFORMATION
+	================
+	
+	The correlation table is a mechanism used to track message acknowledgments from
+	OV/VM and SNADS. By default, the CT holds entries for seven days. If an entry is
+	older than seven days, CTCLEANUP purges the entry from the table. All data for
+	the CT is stored in the Ct2.dat file, and its index is Ct2.idx.
+	
+	Connector message flow stops while CTCLEANUP is running; thus the CTCLEANUP
+	routine is only scheduled to run once a day by default. Even if CTCLEANUP's
+	schedule is modified to run more than once a day, the purge routine within
+	CTCLEANUP will not run if the timestamp of the zero byte file \table\CT2 (no
+	extension) is the current day.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbZNotKeyword6 kbExchangeSearch kbExchange550 kbZNotKeyword2 kbLinkAgeSearch kbLinkAge320
+	Version           : :3.2,5.5
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

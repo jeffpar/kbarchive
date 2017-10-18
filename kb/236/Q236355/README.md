@@ -1,0 +1,78 @@
+---
+layout: page
+title: "Q236355: DLC Link Service Adapter List Empty if 11+ Adapters Configured"
+permalink: kb/236/Q236355/
+---
+
+## Q236355: DLC Link Service Adapter List Empty if 11+ Adapters Configured
+
+	Article: Q236355
+	Product(s): Microsoft SNA Server
+	Version(s): 3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2
+	Operating System(s): 
+	Keyword(s): kbsna400sp3fix kbsna300sp1 kbsna300sp2 kbsna300sp3 kbsna300sp4 sna4 kbsna400sp1 kbsna40
+	Last Modified: 11-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 3.0 SP4, 4.0, 4.0 SP1, 4.0 SP2 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	If there are more than 11 network adapters configured in Windows NT, with the
+	DLC protocol bound to them, the Adapter dropdown list in the 802.2 DLC Link
+	Service properties within SNA Manager is blank.
+	
+	CAUSE
+	=====
+	
+	The 802.2 DLC link configuration uses a small buffer size to hold the list of
+	adapter names. The drop-down list is being incorrectly blanked out because there
+	are too many adapter names to fit in the buffer.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, obtain the latest service pack for SNA Server version
+	4.0. For additional information, please see the following article in the
+	Microsoft Knowledge Base:
+	
+	  Q215838 How to Obtain the Latest SNA Server Version 4.0 Service Pack
+	
+	
+	WORKAROUND
+	==========
+	
+	In the Control Panel, double-click Network, click the Bindings tab, and unbind
+	the DLC protocol from some of the network adapters until there are 11 or fewer
+	bound with DLC. The remaining network adapters that do have DLC bound to them
+	now appear in the Adapter dropdown list in the 802.2 Link Service properties.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft SNA Server versions
+	3.0, 3.0Sp1, 3.0SP2, 3.0SP3, 3.0SP4, 4.0, 4.0SP1, and 4.0SP2. This problem was
+	first corrected in SNA Server version 4.0 Service Pack 3.
+	
+	MORE INFORMATION
+	================
+	
+	The buffer size has been increased from 256 to 4096 to prevent this problem from
+	occurring.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbsna400sp3fix kbsna300sp1 kbsna300sp2 kbsna300sp3 kbsna300sp4 sna4 kbsna400sp1 kbsna400sp2 
+	Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ400 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ300SP2 kbSNAServ300SP4
+	Version           : :3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

@@ -1,0 +1,69 @@
+---
+layout: page
+title: "Q140537: HOWTO: Change the Data Directory Location for Integration Apps"
+permalink: kb/140/Q140537/
+---
+
+## Q140537: HOWTO: Change the Data Directory Location for Integration Apps
+
+	Article: Q140537
+	Product(s): Microsoft SourceSafe
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbSSafe400 kbSSafe500
+	Last Modified: 01-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual SourceSafe for Windows, versions 4.0, 5.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article explains how to separate the Visual SourceSafe data directory from
+	the server installation location for both standalone and integration
+	applications of Visual SourceSafe.
+	
+	As an alternative, if you have a stand-alone application, you can use the
+	technique described in the following article in the Microsoft Knowledge Base:
+	
+	  Q123471 How to Change the Data Directory Location
+	
+	MORE INFORMATION
+	================
+	
+	This solution doesn't work if a client machine has already run the client setup
+	program for integration. To overcome this, you may need to run Setup with the
+	Remove All option.
+	
+	The simplest way to do this is with a Custom installation to the desired server.
+	Select only "Create Sourcesafe database" from the installation options. The
+	Srcsafe.ini on the original server installation should be modified to a single
+	line as follows :
+	
+	        #include \\mycomputer\myshare\SRCSAFE.INI
+	           ;where \\mycomputer\myshare is the desired new location for
+	           ;the DATA.
+	
+	If you have existing Visual SourceSafe 4.0 Data, your files may be safely moved
+	to the new locations using the drag and drop or copy functions. This move should
+	include the Data directories, the user directories, the temp directory, and the
+	Users.txt file.
+	
+	With this modification, all installations pointing to the original installation
+	will be properly routed to the new data location.
+	
+	NOTE: The Srcsafe.ini string of #includes is not limited to two, as in this
+	example, but using a long series of #include should be discouraged.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbSSafe400 kbSSafe500 
+	Technology        : kbSSafeSearch kbAudDeveloper kbSSafe400 kbSSafe500
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

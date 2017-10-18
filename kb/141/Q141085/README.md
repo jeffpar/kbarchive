@@ -1,0 +1,423 @@
+---
+layout: page
+title: "Q141085: HARDCORE VISUAL BASIC: Corrections and Comments"
+permalink: kb/141/Q141085/
+---
+
+## Q141085: HARDCORE VISUAL BASIC: Corrections and Comments
+
+	Article: Q141085
+	Product(s): Microsoft Press
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbdocfix kbdocerr
+	Last Modified: 16-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- MSPRESS Hardcore Visual Basic ISBN 1-55615-667-7 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article contains comments, corrections, and information about known errors
+	relating to the Microsoft Press book Hardcore Visual Basic, ISBN 1-55615-667-7.
+	These errors have been corrected in the second edition of the book.
+	
+	For information about known errors and corrections in the second edition of
+	"Hardcore Visual Basic", please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q173840 Hardcore Visual Basic 2nd Ed. Comments and Corrections
+	
+	The following topics are covered:
+	
+	- CD-ROM: Various installation issues
+	
+	- WIN32.TLB: Type library errors cause sample function to fail
+	
+	- Page 4: DoCommon should be DoUncommon
+	
+	- Page 87: VBUTIL16.DLL doesn't have type library
+	
+	- Pages 89-119: Miscellaneous minor corrections
+	
+	- Page 128: Performance bug in sorting algorithm
+	
+	- Page 246, 249: Corrections to Callback server information
+	
+	- Page 246, 464: Book title reference updated
+	
+	- Page 302: Bad description of events on a hidden pictureBox
+	
+	- Page 424, 425: You can remove item from collection by key
+	
+	- Page 545: Wrong interface for Quick View
+	
+	- Page 577: ItemDblClick unnecessarily complicated
+	
+	Installation for the "Hardcore Visual Basic" CD-ROM can be confusing because
+	there are three different setup files in the root directory of the CD-ROM:
+	Setup.exe, Setup16.exe, and Setup32.exe. Setup.exe automatically detects and
+	executes the proper setup program for the target computer.
+	
+	To properly install the files in Windows 95 or Windows NT:
+	
+	1. Click the Start button, then click Run.
+	
+	2. Type "d:\setup" (without the quotation marks) into the Run input box. Replace
+	  d: with the drive letter of your CD-ROM drive if necessary.
+	
+	To properly install the files in Windows 3.1:
+	
+	1. In the Program Manager, click File, then click Run.
+	
+	2. Type "d:\setup" (without the quotation marks) into the Run input box. Replace
+	  d: with the drive
+	
+	letter of your CD-ROM drive if necessary.
+	NOTE: You must have Visual Basic 4.0 installed on your computer before attempting
+	to install the files from the "Hardcore Visual Basic" CD-ROM. Otherwise errors
+	will occur.
+	
+	WIN32.TLB: Type library errors cause sample function to fail
+	------------------------------------------------------------
+	
+	Some of the constants in the 32-bit Windows type library (WIN32.TLB) are wrong.
+	As a result, a function on page 240 (Chapter 5) of the book fails, usually with
+	a very rude error. The function is LookupItem, which is supposed to find the
+	index number of a ListBox entry.
+	
+	  Function LookupItem(ctl As Control, sItem As String) As Long
+	       LookupItem = SendMessageAsStr(ctl.hWnd, LB_FINDSTRING, -1, sItem)
+	  End Function
+	
+	How could such a serious bug find its way in a one-line function? Easy. Just
+	define the constant LB_FINDSTRING with the wrong value in the Windows type
+	library. This function actually sends the LB_GETSELCOUNT message, which does
+	weird things when you pass it real arguments instead of zeros.
+	
+	The easiest way to fix the problem is to simply add a local constant with the
+	correct value to the function:
+	
+	  #If Win32 Then
+	  Const LB_FINDSTRING = &H18F
+	  #EndIf
+	
+	Of course, this doesn't help with the rest of the LB_ constants, which are also
+	off by one. Here are the correct values. As a temporary fix, paste these into
+	the WINTOOL.BAS file and make sure you include it in any project that sends
+	ListBox messages. The correct Basic constants will override the incorrect ones
+	in the type library.
+	
+	     ' Temporary fix overrides incorrect values in Windows type library
+	     #If Win32 Then
+	     Public Const LB_ADDSTRING = &H180
+	     Public Const LB_INSERTSTRING = &H181
+	     Public Const LB_DELETESTRING = &H182
+	     Public Const LB_SELITEMRANGEEX = &H183
+	     Public Const LB_RESETCONTENT = &H184
+	     Public Const LB_SETSEL = &H185
+	     Public Const LB_SETCURSEL = &H186
+	     Public Const LB_GETSEL = &H187
+	     Public Const LB_GETCURSEL = &H188
+	     Public Const LB_GETTEXT = &H189
+	     Public Const LB_GETTEXTLEN = &H18A
+	     Public Const LB_GETCOUNT = &H18B
+	     Public Const LB_SELECTSTRING = &H18C
+	     Public Const LB_DIR = &H18D
+	     Public Const LB_GETTOPINDEX = &H18E
+	     Public Const LB_FINDSTRING = &H18F
+	     Public Const LB_GETSELCOUNT = &H190
+	     Public Const LB_GETSELITEMS = &H191
+	     Public Const LB_SETTABSTOPS = &H192
+	     Public Const LB_GETHORIZONTALEXTENT = &H193
+	     Public Const LB_SETHORIZONTALEXTENT = &H194
+	     Public Const LB_SETCOLUMNWIDTH = &H195
+	     Public Const LB_ADDFILE = &H196
+	     Public Const LB_SETTOPINDEX = &H197
+	     Public Const LB_GETITEMRECT = &H198
+	     Public Const LB_GETITEMDATA = &H199
+	     Public Const LB_SETITEMDATA = &H19A
+	     Public Const LB_SELITEMRANGE = &H19B
+	     Public Const LB_SETANCHORINDEX = &H19C
+	     Public Const LB_GETANCHORINDEX = &H19D
+	     Public Const LB_SETCARETINDEX = &H19E
+	     Public Const LB_GETCARETINDEX = &H19F
+	     Public Const LB_SETITEMHEIGHT = &H1A0
+	     Public Const LB_GETITEMHEIGHT = &H1A1
+	     Public Const LB_FINDSTRINGEXACT = &H1A2
+	     Public Const LB_SETLOCALE = &H1A5
+	     Public Const LB_GETLOCALE = &H1A6
+	     Public Const LB_SETCOUNT = &H1A7
+	     Public Const LB_INITSTORAGE = &H1A8
+	     Public Const LB_ITEMFROMPOINT = &H1A9
+	     #End If
+	
+	An updated version of the Windows API type library with fixes for this and other
+	problems is being created and will be described in a separate entry when it is
+	finished.
+	
+	Page 4: DoCommon should be DoUncommon
+	-------------------------------------
+	
+	Page 4, second code block line 3 and third code block line 3: Change DoCommon to
+	DoUncommon
+	
+	Page 87:  VBUTIL16.DLL doesn't have type library
+	------------------------------------------------
+	
+	The text of the book states that Vbutil16.dll has an embedded type library.
+	Actually, Visual Basic has a bug that prevents it from recognizing type
+	libraries for 16-bit DLLs. As a result, the Declare statements for the DLL
+	functions are located in Utility.bas. This is noted in the Readme.txt file on
+	the compact disc included with the book.
+	
+	Pages 89-119:  Miscellaneous minor corrections
+	----------------------------------------------
+	
+	Page 89, Second paragraph of Inside Declarations sidebar, third sentence. It
+	states that Basic must save the return value for functions, but actually Basic
+	saves the return value type. Sentence should read "Basic must also save the type
+	of each argument, the return value type (for functions), and a pointer (empty at
+	this point) for the address of the procedure.
+	
+	Page 93, Archaeologist's Note near the bottom of the page. The note states that:
+	"REMLINE went on to become the most widely distributed program in the history of
+	the planet." It should say that REMLINE is the most widely distributed source
+	code program in the history of the planet.
+	
+	Page 103, last paragraph, second sentence. The 16-bit declarations for VBUTIL are
+	in UTILITY.BAS, not VBUTIL16.TLB. Sentence should read: "The declarations are in
+	UTILITY.BAS for 16-bit and in the VBUTIL32.TLB file for 32-bit."
+	
+	Page 119, first paragraph, second sentence. The text incorrectly refers to the
+	ShiftRWord function rather than RShiftWord. Sentence should read: "If you ever
+	need to divide by 256 in a very tight loop, you might want to try RShiftWord(i,
+	8) rather than i / 256."
+	
+	Page 128:  Performance bug in sorting algorithm
+	-----------------------------------------------
+	
+	There is a serious performance bug in the QuickSort algorithm that has been used
+	in many Microsoft language demos over the year and which found its way into
+	Hardcore Visual Basic. The book uses variations of the algorithm to sort arrays,
+	collections, and list boxes. The code works fine, but it runs about four times
+	slower than necessary. The offending code is included at the end of this
+	message, but the heart of the error is this:
+	
+	              SortSwap aTarget(iLast), aTarget(iRand)
+	              vSplit = aTarget(iLast)
+	  #If Bozo Then
+	              Do
+	
+	                  ' Move in from both sides toward pivot element
+	                  i = iFirst: j = iLast
+	  #Else
+	              ' Move in from both sides toward pivot element
+	              i = iFirst: j = iLast
+	              Do
+	  #End If
+	                  ... ' And so on
+	
+	The problem is one of the oldest and dumbest of programming mistakes--
+	initializing variables inside a loop instead of outside. Thanks to reader David
+	Wilmer for pointing this out. The only excuse for this bug is that the code
+	wasn't originally written for the book. It comes from the old SortDemo program
+	written many years ago for QuickBasic. It was such a cool demo that other
+	Microsoft languages reused it. In a previous job, the author of this book
+	personally translated the code to C and supervised others who translated it to
+	Pascal and FORTRAN. It eventually even appeared in Cobol and in C++ with MFC.
+	The orignal C version has the same stupid bug. The Pascal and FORTRAN versions
+	are OK.
+	
+	The moral of the story is, don't trust anyone else's code. Here's full code with
+	corrections. The small fix makes a surprisingly big performance difference. Try
+	it both ways in the TimeIt program supplied with the book. Remember that this
+	bug appears exactly the same in five different places on the CD. Check sorting
+	arrays and collections in SORT.BAS, sorting arrays and collections
+	polymorphically in SORTPOLY.BAS, and sorting list boxes in SLISTBOX.CLS. The
+	code is quoted on page 129 and referenced but not shown on pages 427 and 452.
+	
+	  ' QuickSort algorithm
+	  Sub SortArray(aTarget() As Variant, _
+	                iFirst As Integer, iLast As Integer)
+	      Dim vSplit As Variant
+	
+	      If iFirst < iLast Then
+	
+	          ' Only two elements in this subdivision; exchange if
+	          ' they are out of order, and end recursive calls
+	          If iLast - iFirst = 1 Then
+	              ''@B CallSortCompare
+	              If SortCompare(aTarget(iFirst), aTarget(iLast)) > 0 Then
+	                  SortSwap aTarget(iFirst), aTarget(iLast)
+	              End If
+	              ''@E CallSortCompare
+	          Else
+	
+	              Dim i As Integer, j As Integer, iRand As Integer
+	
+	              ' Pick pivot element at random and move to end
+	              ' (consider calling Randomize before sorting)
+	              iRand = GetRandom(iFirst, iLast)
+	              SortSwap aTarget(iLast), aTarget(iRand)
+	              vSplit = aTarget(iLast)
+	  #If Bozo Then
+	              Do
+	
+	                  ' Move in from both sides toward pivot element
+	                  i = iFirst: j = iLast
+	  #Else
+	              ' Move in from both sides toward pivot element
+	              i = iFirst: j = iLast
+	              Do
+	  #End If
+	                  Do While (i < j) And _
+	                           SortCompare(aTarget(i), vSplit) <= 0
+	                      i = i + 1
+	                  Loop
+	                  Do While (j > i) And _
+	                           SortCompare(aTarget(j), vSplit) >= 0
+	                      j = j - 1
+	                  Loop
+	
+	                  ' If you haven't reached pivot element, it means
+	                  ' that the two elements on either side are out of
+	                  ' order, so swap them
+	                  If i < j Then
+	                      SortSwap aTarget(i), aTarget(j)
+	                  End If
+	              Loop While i < j
+	
+	              ' Move pivot element back to its proper place
+	              SortSwap aTarget(i), aTarget(iLast)
+	
+	              ' Recursively call SortArray (pass smaller
+	              ' subdivision first to use less stack space)
+	              If (i - iFirst) < (iLast - i) Then
+	                  SortArray aTarget(), iFirst, i - 1
+	                  SortArray aTarget(), i + 1, iLast
+	              Else
+	                  SortArray aTarget(), i + 1, iLast
+	                  SortArray aTarget(), iFirst, i - 1
+	              End If
+	          End If
+	      End If
+	
+	  End Sub
+	
+	Page 246, 249:  Corrections to Callback server information
+	----------------------------------------------------------
+	
+	Page 246, second bulleted item, should be replaced with the following text:
+	
+	  " The break mode DLL (VBBRK16.DLL or VBBRK32.DLL) isn't likely to work with
+	  the next version of Visual Basic. This DLL uses undocumented techniques, but
+	  it only affects debugging under the IDE. If you have working code that uses
+	  the Callback server, it should continue to work if recompiled under future
+	  versions." (without the quotation marks)
+	
+	Page 249, comment in code near the top of page 249 should read: "Required to
+	prevent painting problems in break mode." (without the quotation marks) The
+	current text incorrectly says that the DebugProc property prevents crashes.
+	
+	Page 246, 464: Book title reference updated
+	-------------------------------------------
+	
+	Change "Microsoft Guide to Object Programming with Visual Basic 4 and Microsoft
+	Office for Windows 95"
+	To "Object Programming with Visual Basic 4" (without the quotation marks)
+	
+	Page 302:  Bad description of events on a hidden pictureBox
+	-----------------------------------------------------------
+	
+	The section titled "CPictureGlass Events" on page 302 talks about why the
+	internal PictureBox encapsulated by the CPictureGlass class moves around even
+	though it is invisible. The book claims that by moving the PictureBox around,
+	you could get the mouse events that the PictureBox receives. This claim wasn't
+	tested. A reader who tried to take advantage of these events reported that they
+	never occurred. This has been verified. If a PictureBox is invisible, it doesn't
+	generate mouse events. The CPictureGlass class works in samples in the book, but
+	it may be unnecessarily complicated and inefficient. This class will be
+	redesigned for the next edition.
+	
+	Page 424,425:  You can remove item from collection by key
+	---------------------------------------------------------
+	
+	The book claims that you can't remove an item from a collection by its key. This
+	appears in the table on page 424, row 11, column 3. The operation as described
+	in column 1 is Remove item "Pig". Column 3 claims that you can't do this, but
+	should say: n.Remove "Pig". The error is repeated on page 425 in the bulleted
+	list. The first sentence in the fourth bulleted item starts out "List boxes and
+	collections require you...", but this statement actually only applies to List
+	boxes. It should read "List boxes require you...".
+	
+	Page 545:  Wrong interface for Quick View
+	-----------------------------------------
+	
+	Page 545, first paragraph under the heading Faking Quick View, fifth sentence.
+	This paragraph is confusing because it starts talking about Quick View, but then
+	uses shell extensions as an example of OLE interfaces. It should instead discuss
+	the IFileViewer interface. The sentence should read: "Second, file viewers must
+	implement OLE interfaces--IFileViewer and IPersistFile."
+	
+	Page 577:  ItemDblClick unnecessarily complicated
+	-------------------------------------------------
+	
+	The description of a workaround for the lack of an ItemDblClick event on the
+	ListView control is unnecessarily complicated. Page 577 notes that the ListView
+	control doesn't have an ItemDblClick event. Any app that tries to emulate the
+	Windows Explorer needs to identify items that were double clicked, but the
+	DblClick event doesn't tell you the item. The book describes a complicated hack
+	for getting around this limitation. Save the x and y coordinates as Private
+	variables in the Mouse_Down event. In the DblClick event, use the coordinates
+	with the HitTest method to identify which item was double-clicked. In fact,
+	there is a much easier way to identify the item. Use the SelectedItem method:
+	
+	  Private Sub lvwFiles_DblClick()
+	      Dim item As Object
+	  #Const fHard = 1
+	  #If fHard Then
+	      Set item = lvwFiles.HitTest(xList, yList) ' x and y saved in Mouse_Down
+	  #Else
+	      Set item = lvwFiles.SelectedItem
+	  #End If
+	      If item Is Nothing Then
+	          Debug.Print "Double clicked column: ?"
+	      Else
+	          Debug.Print "Double clicked item: " & item.Text
+	      End If
+	  End Sub
+	
+	The code works as described in the book and as used in the Columbus application
+	in the book, but code based on the technique shown above is simpler.
+	
+	Microsoft Press is committed to providing informative and accurate books. All
+	comments and corrections listed above are ready for inclusion in future
+	printings of this book. If you have a later printing of this book, it may
+	already contain most or all of the above corrections.
+	
+	MORE INFORMATION
+	================
+	
+	In addition to a description of the book's problems, this document might also
+	include sections labeled "Correction" and "Comments." Please note that the
+	"Correction" section is worded for correcting the book and does not necessarily
+	address the problem introduced by the book error. The "Comments" section
+	contains specific information for working around problems.
+	
+	CD-ROM: Various installation issues-----------------------------------
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbdocfix kbdocerr 
+	Technology        : kbMSPressSearch
+	Version           : :
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

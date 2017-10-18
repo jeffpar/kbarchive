@@ -1,0 +1,96 @@
+---
+layout: page
+title: "Q190259: Wd97vba.exe Contains Header File w/ Word VBA Constants"
+permalink: kb/190/Q190259/
+---
+
+## Q190259: Wd97vba.exe Contains Header File w/ Word VBA Constants
+
+	Article: Q190259
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:5.0a
+	Operating System(s): 
+	Keyword(s): kbfile kbvfp kbvfp500 kbDSupport
+	Last Modified: 15-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 5.0a 
+	- Microsoft Word for Windows 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Wd97vba.exe contains a header file, Wordvba.h. The Wordvba.h header file
+	contains the preprocessor directives used by Microsoft Word 97 SR-1 in Visual
+	Basic for Applications (VBA) code.
+	
+	MORE INFORMATION
+	================
+	
+	The following files are available for download from the Microsoft Download
+	Center:
+	
+	  WD97VBA.exe
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. Once posted, the file is housed on secure
+	servers that prevent any unauthorized changes to the file.
+	
+	Microsoft Word 97 uses the MSword8.olb type library to obtain the values of
+	preprocessor directives used in Word VBA code. Visual FoxPro can not take
+	advantage of the type library. Using the values of these preprocessor directives
+	requires you to reference the constants in the Word Visual Basic Applications
+	Object Browser, or some other tool that can read information from the type
+	library.
+	
+	The header file, Wordvba.h, can be included in FoxPro code. You can then use the
+	Word VBA constants as they are used in other VBA applications. A second way to
+	use this file is as a reference for Word 97 VBA constants without having to open
+	the Object Browser in Word. To use the file in Visual FoxPro for Windows, issue
+	the following command in your Visual FoxPro for Windows code:
+	
+	     #INCLUDE WordVBA.H
+	
+	Sample code for using the Word VBA header file instead of having to find the
+	values of the preprocessor directives follows.
+	
+	Sample Code
+	-----------
+	
+	     #INCLUDE WordVBA.H
+	     oword=CREATEOBJECT("Word.Application")
+	     WITH oword
+	        .Documents.ADD
+	        .Visible=.T.
+	
+	        *-- Change the view type based upon the view type
+	        *-- used when Word was last used.
+	        IF .Activewindow.View.Splitspecial = wdpanenone      && wdpanenone=0
+	           .Activewindow.Activepane.View.Type = wdpageview   && wdpageview=3
+	        ELSE
+	           .Activewindow.View.Type = wdPrintPreview      && wdPrintPreview=4
+	        ENDIF
+	     ENDWITH
+	
+	(c) Microsoft Corporation 1998, All Rights Reserved. Contributions by Dean
+	Christopher, Microsoft Corporation
+	
+	
+	Additional query words: WD97VBA kbDSupport kbDSE vfoxwin kbOLE
+	
+	======================================================================
+	Keywords          : kbfile kbvfp kbvfp500 kbDSupport 
+	Technology        : kbWordSearch kbVFPsearch kbAudDeveloper kbZNotKeyword2 kbVFP500a
+	Version           : WINDOWS:5.0a
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

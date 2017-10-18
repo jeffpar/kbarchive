@@ -1,0 +1,122 @@
+---
+layout: page
+title: "Q154341: MSB Dinosaurs: How to Play the Games"
+permalink: kb/154/Q154341/
+---
+
+## Q154341: MSB Dinosaurs: How to Play the Games
+
+	Article: Q154341
+	Product(s): Microsoft Home Kids Products
+	Version(s): 1.0
+	Operating System(s): 
+	Keyword(s): kbusage kbtlckbfaq
+	Last Modified: 18-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Scholastic's Magic School Bus series: Explores in the Age of Dinosaurs for Windows, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article discusses how to play the games included with Magic School Bus
+	Explores in the Age of Dinosaurs (MSB Dinosaurs).
+	
+	GAME DESCRIPTIONS
+	-----------------
+	
+	Meteor Meltdown - Jurassic COLORADO:
+	
+	The object of the game is to eat as many plants on the face of the volcano as
+	possible while avoiding the rising and falling floodwater and the falling
+	meteors. You use the arrow keys to move your dinosaur from side to side and up
+	and down. You can choose to be one of two players: Stegosaurus or Hypsilophodon.
+	You receive PaleoCards for completing levels. There is a high score table
+	presented at the conclusion of the game.
+	
+	Nest Watch Game - Cretaceous MONGOLIA:
+	
+	The goal of this arcade-style game is to protect a dinosaur nest from
+	egg-stealing predators. Click on the oncoming predators with the cursor, and the
+	mother dinosaur will prevent the predators from reaching the young dinosaurs and
+	the nest. You win PaleoCards as you successfully progress through the levels and
+	protect the nest. A high score table is displayed at the end of the game.
+	
+	Marathon - Jurassic TANZANIA:
+	
+	This is an arcade-style game in which the player controls a running dinosaur that
+	is being chased by a Tyrannosaurus Rex. The goal is to avoid the various
+	obstacles using the arrow keys and keep running until you reach the finish line.
+	You complete a level by crossing the finish line without stumbling too many
+	times and being caught by the hungry Tyrannosaurus Rex. As you advance to each
+	new level, you must run farther to reach the finish line.
+	
+	Dino Madness - Triassic ARGENTINA:
+	
+	This is a board game. The object of this game is to make it to the end of the
+	trail before your opponent. You progress along the trail by solving the
+	challenges along the way. Play begins by clicking on the dice in the center of
+	the screen. You move ahead the number of spaces indicated on the dice by
+	correctly answering the question you are presented with. You can choose to play
+	a single player game, in which case you compete against Liz, or you can choose a
+	two-player game and compete against another person.
+	
+	Skeleton Puzzle - Triassic ARGENTINA:
+	
+	In this game, you are given the silhouette of a dinosaur and several puzzle
+	pieces. The puzzle pieces consist of bones and sections of the skeleton. You
+	must put them in their correct places. When the skeleton is completed properly,
+	it is colored-in so that you can see a picture of the dinosaur. After completing
+	each puzzle, you are presented with another skeleton that needs to be assembled.
+	The order of the puzzles goes from Triassic dinosaurs to Cretaceous dinosaurs.
+	You win a PaleoCard each time you successfully complete a puzzle.
+	
+	Foot Print Puzzle - Jurassic TANZANIA:
+	
+	The object of this game is to assemble the pieces of a puzzle so that they form a
+	picture of prehistoric ground with various dinosaur footprints on it. Click on
+	the arrow keys at the bottom of the screen to scroll through the various pieces
+	of the puzzle. When the puzzle is assembled correctly, dinosaurs walk across the
+	screen, stepping in the footprints, and you receive a PaleoCard.
+	
+	Name Game - Cretaceous MONGOLIA:
+	
+	The object of this game is to arrange colored stones, each of which has a
+	distinctive sound associated with it, so that the stones form the pronunciation
+	of the dinosaur at the top of the screen. You must place each one of the colored
+	stones in a different depression. Once you have placed the stones, you click on
+	the button that has a mouth on it. The sounds of the stones are pronounced in
+	the order in which they are arranged in the depressions. You must rearrange the
+	stones until the pronunciation of the name of the dinosaur is correct. After the
+	name is correctly pronounced, you are told the meaning of the dinosaur name
+	while a small animation of the dinosaur is played.
+	
+	Dino-Sizer - Triassic ARIZONA:
+	
+	The object of this game is to match the size of certain dinosaurs with ordinary
+	objects. A picture of an object is placed on the screen, and you are asked to
+	click on the dinosaur that is the same size as the object. When you click on the
+	correct dinosaur, the dinosaur walks up to the object to demonstrate that it was
+	nearly the same size or height.
+	
+	MORE INFORMATION
+	================
+	
+	You can run the games from the different geographic locations within the game,
+	or run them from the back of the bus. You can cycle through the games by
+	clicking the red slot machine handle that is attached to the device on the far
+	left wall of the back of the bus.
+	
+	Additional query words: 1.00 msb frizz kbmm multimedia frizzle msbdinos multi-media multi media how-to kbhowto dino
+	
+	======================================================================
+	Keywords          : kbusage kbtlc kbfaq
+	Technology        : kbHomeProdSearch kbZNotKeyword kbKidsSearch kbScholasticDinosaurs kbMSBSearch
+	Version           : :1.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

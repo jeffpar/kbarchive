@@ -1,0 +1,219 @@
+---
+layout: page
+title: "Q148686: FIX: IOMANIPdeclare Macro Causes C2758 Error with References"
+permalink: kb/148/Q148686/
+---
+
+## Q148686: FIX: IOMANIPdeclare Macro Causes C2758 Error with References
+
+	Article: Q148686
+	Product(s): Microsoft C Compiler
+	Version(s): 1.52,2.2,4.0,4.1,4.2,5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbCompiler kbCPPonly kbGenInfo kbVC152bug kbVC200bug kbVC400bug kbVC410bug kbVC420bug k
+	Last Modified: 11-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual C++, versions 1.52, 2.2, 4.0, 4.1 
+	- Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+	- Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+	- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When a IOMANIPdeclare() macro is used with a reference type, the compiler
+	generates the following error message:
+	
+	  error C2758: '_tp' : must be initialized in constructor base/member
+	  initializer list
+	
+	CAUSE
+	=====
+	
+	The IOMANIPdeclare() macro is expanded into a number of classes containing data
+	members of the type passed into the IOMANIPdeclare() macro. The constructors for
+	these classes are written such that the data members are initialized in the body
+	of each class constructor. This is not allowed for reference type data members.
+	Reference type data members should be initialized in a member initialization
+	list for the class constructor.
+	
+	RESOLUTION
+	==========
+	
+	Modify the IOMANIPdeclare() macro (defined in Iomanip.h) so that the class data
+	members are initialized in a member initialization list instead of in the body
+	of the constructor.
+	
+	For example, the following line is defined in the IOMANIPdeclare() macro
+	definition:
+	
+	SMANIP(T)(ios& (*f)(ios&,T), T t) { _fp = f; _tp = t; }
+	
+	The inline constructor body where the class data members are initialized can be
+	modifed so that the constructor uses a member initialization list as follows:
+	
+	SMANIP(T)(ios& (*f)(ios&,T), T t) : _fp(f), _tp(t) {}
+	
+	This change must be made for each class constructor that initializes the _fp and
+	_tp data members. These declarations are:
+	
+	SMANIP(T)(ios& (*f)(ios&,T), T t) { _fp = f; _tp = t; }
+	IMANIP(T)(istream& (*f)(istream&,T), T t) { _fp = f; _tp = t; }
+	OMANIP(T)(ostream& (*f)(ostream&,T), T t) { _fp = f; _tp = t; }
+	IOMANIP(T)(iostream& (*f)(iostream&,T), T t) { _fp = f; _tp = t; }
+	
+	After making this change, you can use reference data types in the
+	IOMANIPdeclare() macro.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article.
+	
+	This problem was corrected in Microsoft Visual C++ .NET.
+	
+	MORE INFORMATION
+	================
+	
+	Sample Code
+	-----------
+	
+	  /*
+	  The following sample code demonstrates both the error, and the
+	  workaround.
+	
+	  Compile options needed: none
+	                          /DWORKAROUND to enable the workaround macro
+	  */ 
+	
+	  #include <iostream.h>
+	  #include <iomanip.h>
+	
+	  // --------------------------------------------------------
+	  // following is the workaround macro
+	
+	  #ifdef WORKAROUND
+	
+	  #ifdef IOMANIPdeclare
+	  #undef IOMANIPdeclare
+	
+	  #define IOMANIPdeclare(T)  \ 
+	  class SMANIP(T) { \ 
+	  public: \ 
+	    SMANIP(T)(ios& (*f)(ios&,T), T t) : _tp(t), _fp(f) {} \ 
+	    friend istream& operator>>(istream& s, const SMANIP(T) & sm) { \ 
+	      (*(sm._fp))(s,sm._tp); return s; \ 
+	    } \ 
+	    friend ostream& operator<<(ostream& s, const SMANIP(T) & sm) { \ 
+	      (*(sm._fp))(s,sm._tp); return s; \ 
+	    } \ 
+	  private: \ 
+	    ios& (* _fp)(ios&,T); \ 
+	    T _tp; \ 
+	  }; \ 
+	  class SAPP(T) { \ 
+	  public: \ 
+	    SAPP(T)( ios& (*f)(ios&,T)) { _fp = f; } \ 
+	    SMANIP(T) operator()(T t) { return SMANIP(T)(_fp,t); } \ 
+	  private: \ 
+	    ios& (* _fp)(ios&,T); \ 
+	  }; \ 
+	  class IMANIP(T) { \ 
+	  public: \ 
+	    IMANIP(T)(istream& (*f)(istream&,T), T t) : _tp(t), _fp(f) {} \ 
+	    friend istream& operator>>(istream& s, IMANIP(T) & sm) { \ 
+	      (*sm._fp)(s,sm._tp); return s; \ 
+	    } \ 
+	  private: \ 
+	    istream& (* _fp)(istream&,T); \ 
+	    T _tp; \ 
+	  }; \ 
+	  class IAPP(T) { \ 
+	  public: \ 
+	    IAPP(T)( istream& (*f)(istream&,T)) { _fp = f; } \ 
+	    IMANIP(T) operator()(T t) { return IMANIP(T)(_fp,t); } \ 
+	  private: \ 
+	    istream& (* _fp)(istream&,T); \ 
+	  }; \ 
+	  class OMANIP(T) { \ 
+	  public: \ 
+	    OMANIP(T)(ostream& (*f)(ostream&,T), T t) : _tp(t), _fp(f) {} \ 
+	    friend ostream& operator<<(ostream& s, OMANIP(T) & sm) { \ 
+	      (*sm._fp)(s,sm._tp); return s; \ 
+	    } \ 
+	  private: \ 
+	    ostream& (* _fp)(ostream&,T); \ 
+	    T _tp; \ 
+	  }; \ 
+	  class OAPP(T) { \ 
+	  public: \ 
+	    OAPP(T)(ostream& (*f)(ostream&,T)) { _fp = f; } \ 
+	    OMANIP(T) operator()(T t) { return OMANIP(T)(_fp,t); } \ 
+	  private: \ 
+	    ostream& (* _fp)(ostream&,T); \ 
+	  }; \ 
+	  class IOMANIP(T) { \ 
+	  public: \ 
+	    IOMANIP(T)(iostream& (*f)(iostream&,T), T t) : _tp(t), _fp(f) {} \ 
+	    friend istream& operator>>(iostream& s, IOMANIP(T) & sm) { \ 
+	      (*sm._fp)(s,sm._tp); return s; \ 
+	    } \ 
+	    friend ostream& operator<<(iostream& s, IOMANIP(T) & sm) { \ 
+	      (*sm._fp)(s,sm._tp); return s; \ 
+	    } \ 
+	  private: \ 
+	    iostream& (* _fp)(iostream&,T); T _tp; \ 
+	  }; \ 
+	  class IOAPP(T) { \ 
+	  public: \ 
+	    IOAPP(T)( iostream& (*f)(iostream&,T)) { _fp = f; } \ 
+	    IOMANIP(T) operator()(T t) { return IOMANIP(T)(_fp,t); } \ 
+	  private: \ 
+	    iostream& (* _fp)(iostream&,T); \ 
+	  };
+	  #endif  //IOMANIPdeclare
+	
+	  #endif  //WORKAROUND
+	
+	  // This is the end of the workaround macro
+	  // --------------------------------------------------------
+	
+	  typedef  int& fillpair;
+	
+	  IOMANIPdeclare( fillpair );
+	
+	  ostream& fp( ostream& os, fillpair pair ) {
+	    for ( int c = 0; c < 10; c++ ) {
+	      os << pair;
+	    }
+	    return os;
+	  }
+	
+	  OMANIP(fillpair) fill( fillpair var ) {
+	    return OMANIP(fillpair)( fp, var);
+	  }
+	
+	  void main() {
+	    int test=0;
+	    fillpair var=test;
+	
+	    cout << "10 things coming " << fill( var ) << " done " << endl;
+	  }
+	  // ***** End of code sample ******
+	
+	Additional query words: kbVC400bug 1.50 1.51 1.52b 1.52c 8.00c 9.10 10.00 10.10 10.20 iostream io library
+	
+	======================================================================
+	Keywords          : kbCompiler kbCPPonly kbGenInfo kbVC152bug kbVC200bug kbVC400bug kbVC410bug kbVC420bug kbVC500bug kbVC600bug kbNoUpdate kbArtTypeINF 
+	Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC220 kbVC410 kbVC420 kbVC500 kbVC600 kbVC32bitSearch kbVC152 kbVC500Search
+	Version           : :1.52,2.2,4.0,4.1,4.2,5.0,6.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

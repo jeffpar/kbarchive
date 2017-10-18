@@ -1,0 +1,93 @@
+---
+layout: page
+title: "Q108164: PRB: RQBE Not Generating FROM Clause When .QPR Table Missing"
+permalink: kb/108/Q108164/
+---
+
+## Q108164: PRB: RQBE Not Generating FROM Clause When .QPR Table Missing
+
+	Article: Q108164
+	Product(s): Microsoft FoxPro
+	Version(s): MS-DOS:2.5,2.5a,2.5b; WINDOWS:2.5,2.5a,2.5b,3.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 05-FEB-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 3.0 
+	- Microsoft FoxPro for Windows, versions 2.5, 2.5a, 2.5b 
+	- Microsoft FoxPro for MS-DOS, versions 2.5, 2.5a, 2.5b 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When a table in a query (.QPR) file cannot be found, the Relational Query By
+	Example (RQBE) tool loads the remaining (found) tables in the query, but doesn't
+	generate the FROM clause unless the table set is modified (using ADD or CLEAR).
+	
+	STATUS
+	======
+	
+	This behavior is by design.
+	
+	MORE INFORMATION
+	================
+	
+	The following code demonstrates this behavior. It creates two tables (databases)
+	and creates a query based on them. It then deletes one of the tables and reopens
+	the query. This second time, the FROM list will have been removed from the SQL
+	statement.
+	
+	     ERASE TBLTEST.QPR
+	     CLOSE ALL
+	     SET SAFETY OFF
+	
+	     CREATE TABLE tbl1 (keyfield c(3))
+	     INSERT INTO tbl1 (keyfield) VALUES ("AAA")
+	     INSERT INTO tbl1 (keyfield) VALUES ("BBB")
+	     INSERT INTO tbl1 (keyfield) VALUES ("CCC")
+	
+	     SELECT 0
+	
+	     CREATE TABLE tbl2 (keyfield c(3))
+	     INSERT INTO tbl2 (keyfield) VALUES ("BBB")
+	     INSERT INTO tbl2 (keyfield) VALUES ("BBB")
+	     INSERT INTO tbl2 (keyfield) VALUES ("BBB")
+	     INSERT INTO tbl2 (keyfield) VALUES ("CCC")
+	     INSERT INTO tbl2 (keyfield) VALUES ("CCC")
+	     INSERT INTO tbl2 (keyfield) VALUES ("AAA")
+	
+	     SELECT tbl1
+	
+	     WAIT WINDOW "This will now create the query.  Please add TBL2 to the"
+	     WAIT WINDOW "query as well as the field TBL2.KEYFIELD.  View the SQL"
+	     WAIT WINDOW "(noticing the FROM line), RUN it and then save"
+	     WAIT WINDOW "and close it."
+	
+	     CREATE QUERY tbltest
+	
+	     SELECT tbl2
+	     USE
+	     DELETE FILE tbl2.dbf
+	     SELECT tbl1
+	
+	     WAIT WINDOW "I've now deleted the table.  When the RQBE Window "
+	     WAIT WINDOW "attempts to open again, press Cancel when prompted to"
+	     WAIT WINDOW "find the TBL2 file.  Add TBL1.KEYFIELD back to the"
+	     WAIT WINDOW "fields list, and look under View SQL.  Notice that the"
+	     WAIT WINDOW "list of tables and fields is no longer in the SELECT"
+	     WAIT WINDOW "Statement."
+	     MODIFY QUERY tbltest
+	
+	Additional query words: VFoxWin FoxDos FoxWin
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro250DOS kbFoxPro250aDOS kbFoxPro250bDOS kbFoxPro250 kbFoxPro250a kbFoxPro250b kbVFP300
+	Version           : MS-DOS:2.5,2.5a,2.5b; WINDOWS:2.5,2.5a,2.5b,3.0
+	
+	=============================================================================
+	

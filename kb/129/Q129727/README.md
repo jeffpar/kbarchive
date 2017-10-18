@@ -1,0 +1,364 @@
+---
+layout: page
+title: "Q129727: Wine Guide: Manual Installation Instructions"
+permalink: kb/129/Q129727/
+---
+
+## Q129727: Wine Guide: Manual Installation Instructions
+
+	Article: Q129727
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): WINDOWS:1.0
+	Operating System(s): 
+	Keyword(s): win31
+	Last Modified: 11-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Wine Guide for Windows, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article provides instructions to manually install Microsoft Wine Guide for
+	Windows, version 1.0.
+	
+	NOTE: Wine Guide 1.0 and 1.0a use different program filenames, directory
+	structures, and setup procedures. This article applies to version 1.0 only.
+	
+	MORE INFORMATION
+	================
+	
+	The steps below assume:
+	
+	- Your destination folder is C:\Mswine
+	
+	- Windows is in C:\Windows
+	
+	- Your hard drive is drive C
+	
+	- Your CD-ROM drive is drive D
+	
+	If your hard drive, destination folder, Windows folder, or CD-ROM drive letters
+	are different, replace the drive letters and folder names throughout this
+	article with the drive letters and folder names on your computer.
+	
+	NOTE: The following instructions discuss copying, editing, and modifying folders
+	(directories) and files. For more information about accomplishing these tasks in
+	Windows, see your Windows printed documentation or online Help.
+	
+	Steps For Windows 95 or Windows NT 3.51
+	---------------------------------------
+	
+	1. Create a folder named Mswine on drive C. For example, from the MS-DOS command
+	  prompt on drive C, type the following
+	
+	  "md c:\mswine" (without the quotation marks)
+	
+	  and press ENTER.
+	
+	2. Copy the following files from the D:\Afiles\Msstp folder on your Wine Guide
+	  CD-ROM to the C:\Mswine folder on your hard disk.
+	
+	  Cdtest.txt
+	  Pidholdr.dll
+	
+	  For example, type the following at the MS-DOS command prompt
+	
+	  "copy d:\afiles\msstp\cdtest.txt c:\mswine" (without the quotation marks)
+	
+	  and press ENTER.
+	
+	3. Copy the following file from D:\ to C:\Mswine:
+	
+	  Readme.txt
+	
+	4. Copy the following file D:\Afiles\App to C:\Mswine:
+	
+	  Winegde.exe
+	
+	5. Copy the following files from D:\Afiles\Codec32 to C:\Windows\System
+	  (System32 in Windows NT):
+	
+	  Imaadp32.acm
+	  Msadp32.acm
+	
+	  Msg711.acm
+	  Msgsm32.acm
+	  Tssoft32.acm
+	  Iccvid.dll
+	  Ir32_32.dll
+	  Msrle32.dll
+	  Msvidc32.dll
+	
+	6. Create the folder C:\Windows\Msapps\Msinfo if it does not exist. Copy
+	  D:\Afiles\Msinfo\Msinfo.Exe to C:\Windows\Msapps\Msinfo.
+	
+	7. Use a text editor, such as Microsoft Notepad, to make the following changes
+	  to the Mswine.ini file, which is located in the Windows folder. If the
+	  Mswine.ini file does not already exist, create one in the Windows folder with
+	  these entries:
+	
+	        [Engine Params]
+	        CD=E:\ 
+	        DataDir=MSWDATA
+	        TimeDir=MSWPTIME
+	        Timeout=0
+	        ButtonSounds=Yes
+	
+	8. Use a text editor to make the following changes to the Windows initialization
+	  files, which are located in the Windows folder:
+	
+	  Control.ini File Changes
+	  ------------------------
+	
+	        [drivers.desc]
+	        msacm.drv=Microsoft Sound Mapper V2.00
+	        msadpcm.acm=Microsoft ADPCM Codec V2.00
+	        imaadpcm.acm=Microsoft IMA ADPCM Codec V2.00
+	
+	  Win.ini File Changes
+	  --------------------
+	
+	        [mci extensions]
+	        wav=waveaudio
+	        avi=AVIVideo
+	
+	        [MSAPPS]
+	        MSINFO=C:\WINDOWS\MSAPPS\MSINFO
+	
+	        [Microsoft System Info]
+	        MSINFO=C:\WINDOWS\MSAPPS\MSINFO\MSINFO.EXE
+	
+	  Changes to the System.ini File
+	  ------------------------------
+	
+	        [386Enh]
+	        DEVICE=DVA.386
+	
+	        [mci]
+	        AVIVideo=mciavi.drv
+	
+	        [drivers32]
+	        VIDC.IV32=ir32_32.dll
+	        VIDC.IV31=ir32_32.dll
+	        VIDC.CVID=iccvid.drv
+	        VIDC.MSVC=msvidc.drv
+	        VIDC.MRLE=msrle.drv
+	        MSACM.msadpcm=msadp32.acm
+	        MSACM.imaadpcm=imaadp32.acm
+	        MSACM.msgsm711=msgsm711.acm
+	        MSACM.msgsm610=msgsm32.acm
+	
+	        [msacm.msgsm610]
+	        MaxRTDecodeSamplesPerSec=22050
+	
+	9. Create the Wine Guide shortcuts or icons using the appropriate section below
+	  as a guide.
+	
+	10. Shut down and then Restart Windows.
+	
+	Steps for Windows or Windows for Workgroups, Versions 3.x
+	---------------------------------------------------------
+	
+	1. Create a folder named Mswine on drive C.
+	
+	2. Copy the following files from the D:\Afiles\Msstp folder on your Wine Guide
+	  CD-ROM to the C:\Mswine folder on your hard disk.
+	
+	  Cdtest.txt
+	  Pidholdr.dll
+	
+	3. Copy the following file from D:\ to C:\Mswine:
+	
+	  Readme.txt
+	
+	4. Copy the following file D:\Afiles\App to C:\Mswine:
+	
+	  Winegde.exe
+	
+	5. Copy the following files from D:\Afiles\System to C:\Windows\System:
+	
+	  Compobj.dll    Ole2conv.dll    Ole2.dll       Ole2disp.dll
+	  Ole2prox.dll   Storage.dll     Ole2nls.dll    Dva.386
+	  Typelib.dll    Stdole.tlb      Dispdib.dll    Map_Win.hlp
+	  Avicap.dll     Avifile.dll     Msvideo.dll    Vshare.386
+	  Acmcmprs.dll   Mciavi.drv      Msacm.dll      Msacm.drv
+	
+	6. Copy the following audio codec files from D:\Afiles\Codec16 to
+	  C:\Windows\System:
+	
+	  Imaadpcm.acm
+	  Msadpcm.acm
+	  Ir32.dll
+	  Iccvid.drv
+	  Msrle.drv
+	  Msvidc.drv
+	
+	7. Copy the following files from D:\Afiles\System to C:\Windows:
+	
+	  Mplayer.exe
+	  Mplayer.hlp
+	
+	8. From Program Manager, on the File menu click Run, then type the following
+	  command, then click OK:
+	
+	  "d:\afiles\system\mplayer.reg" (without the quotation marks)
+	
+	9. Repeat step 8 for the following command lines:
+	
+	  d:\afiles\system\ole2.reg
+	  d:\afiles\system\cleanup.reg
+	
+	10. Create the folder C:\Windows\Msapps\Msinfo if it does not exist. Copy
+	  D:\Afiles\Msinfo\Msinfo.Exe to C:\Windows\Msapps\Msinfo.
+	
+	11. Use a text editor, such as Microsoft Notepad, to make the following changes
+	  to the Mswine.ini file, which is located in the Windows folder. If the
+	  Mswine.ini file does not already exist, create one in the Windows folder
+	  with these entries:
+	
+	      [Engine Params]
+	      CD=E:\ 
+	      DataDir=MSWDATA
+	      TimeDir=MSWPTIME
+	      Timeout=0
+	      ButtonSounds=Yes
+	
+	12. Use a text editor to make the following changes to the Windows
+	  initialization files, which are located in the Windows folder:
+	
+	  Changes to the Control.ini File
+	  -------------------------------
+	
+	      [drivers.desc]
+	      msacm.drv=Microsoft Sound Mapper V2.00
+	      msadpcm.acm=Microsoft ADPCM Codec V2.00
+	      imaadpcm.acm=Microsoft IMA ADPCM Codec V2.00
+	
+	  Changes to the Win.ini File
+	  ---------------------------
+	
+	      [mci extensions]
+	      wav=waveaudio
+	      avi=AVIVideo
+	
+	      [MSAPPS]
+	      MSINFO=C:\WINDOWS\MSAPPS\MSINFO
+	
+	      [Microsoft System Info]
+	      MSINFO=C:\WINDOWS\MSAPPS\MSINFO\MSINFO.EXE
+	
+	  Changes to the System.ini File
+	  ------------------------------
+	
+	      [386Enh]
+	      DEVICE=VSHARE.386
+	      DEVICE=DVA.386
+	
+	      [mci]
+	      AVIVideo=mciavi.drv
+	
+	      [drivers]
+	      WaveMapper=msacm.drv
+	      MSACM.msadpcm=msadpcm.acm
+	      MSACM.imaadpcm=imaadpcm.acm
+	      MSACM.msgsm610=msgsm610.acm
+	      VIDC.IV31=ir32.dll
+	      VIDC.IV32=ir32.dll
+	      VIDC.CVID=iccvid.drv
+	      VIDC.MSVC=msvidc.drv
+	      VIDC.MRLE=msrle.drv
+	
+	      [msacm.msgsm610]
+	      MaxRTDecodeSamplesPerSec=22050
+	
+	13. Add the program icons using the appropriate section below as a guide.
+	
+	14. Restart Windows.
+	
+	Creating Start Menu Shortcuts
+	-----------------------------
+	
+	If you are using Windows 95, do the following to add Wine Guide to the Start
+	Menu:
+	
+	1. Click the Start button, point to Settings, and then click Taskbar.
+	
+	2. Click the Start Menu Programs tab.
+	
+	3. Click Add.
+	
+	4. Type the following in the Command Line box, and then click Next:
+	
+	  "c:\mswine\winegde.exe" (without the quotation marks)
+	
+	5. In the Select Program Folder dialog box, click the Microsoft Multimedia
+	  folder to select it, and then click Next.
+	
+	  NOTE: If the Microsoft Multimedia folder is not listed, create it using the
+	  following steps:
+	  a. Click New Folder
+	
+	  b. Type the following, and then click Next:
+	
+	  "Microsoft Multimedia" (without the quotation marks)
+	
+	6. In the Select A Title For The Program dialog box, type the following, and
+	  then click Finish:
+	
+	  "Microsoft Wine Guide" (without the quotation marks)
+	
+	7. Repeat steps 3 through 6 to create shortcuts for the following items:
+	
+	  Command Line: d:\mmcat\catppi.exe
+	  Select A Title For The Program: Microsoft Multimedia Catalog
+	
+	  Command Line: c:\windows\notepad.exe c:\mswine\readme.txt
+	  Select A Title For The Program: Readme
+	
+	Creating Program Manager Icons
+	------------------------------
+	
+	If you are using Program Manager, create the Wine Guide icons using the following
+	instructions:
+	
+	1. Open the Microsoft Multimedia group. If this group does not already exist,
+	  create it as follows:
+	  a. On the File menu, click New.
+	
+	  b. Click Program Group, and then click OK.
+	
+	  c. In the Description box, type the following, and then click OK:
+	
+	  "Microsoft Multimedia" (without the quotation marks)
+	
+	2. On the File menu, click New.
+	
+	3. Click Program Item, and then click OK.
+	
+	4. Type the Description and Command Line information as listed below, and then
+	  click OK:
+	
+	     Description:       Microsoft Wine Guide
+	     Command Line:      c:\mswine\winegde.exe
+	
+	5. Repeat steps 2 through 4 for the following items:
+	
+	     Description:       Microsoft Multimedia Catalog
+	     Command Line:      d:\mmcat\catppi.exe
+	
+	     Description:       Readme
+	     Command Line:      c:\windows\notepad.exe c:\mswine\readme.txt
+	
+	Additional query words: kbhowto mmtitles wineguide vino manual default setting-up set up
+	
+	======================================================================
+	Keywords          : win31 
+	Technology        : kbHomeProdSearch kbWine100
+	Version           : WINDOWS:1.0
+	
+	=============================================================================
+	

@@ -1,0 +1,96 @@
+---
+layout: page
+title: "Q84418: Bookshelf: Low-Memory Situation; Unable to Display Picture"
+permalink: kb/084/Q84418/
+---
+
+## Q84418: Bookshelf: Low-Memory Situation; Unable to Display Picture
+
+	Article: Q84418
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): 1992 edition; WINDOWS:3.1x
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 13-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Bookshelf for Windows 1992 edition 
+	- the operating system: Microsoft Windows versions 3.1, 3.11 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	If a low-memory situation exists when running Microsoft Bookshelf for Windows,
+	you will receive an "Unable to display picture" box in the Bookshelf window.
+	
+	MORE INFORMATION
+	================
+	
+	The Bookshelf for Windows manual lists the minimum hardware requirements to
+	display text and graphics in Bookshelf. The requirements are as follows.
+	
+	1. A personal computer with a 286 or higher processor. Shortly after Bookshelf
+	  for Windows shipped, the MPC marketing council changed the minimum
+	  specification for the processor to a 386sx. Bookshelf should be able to
+	  display pictures on either processor.
+	
+	2. Microsoft Windows operating system version 3.0 or later
+	
+	3. MS-DOS or PC-DOS operating system version 3.1 or later
+	
+	4. Microsoft CD-ROM Extensions (MSCDEX) version 2.2 or later
+	
+	5. 1 MB RAM, a CD-ROM drive, and a hard disk (Microsoft Mouse or compatible
+	  mouse recommended)
+	
+	6. An EGA, VGA, 8514/A, or compatible video graphics adapter and monitor (VGA or
+	  VGA+ recommended)
+	
+	To determine if the "Unable to display picture" message is generated from a
+	low-memory situation, rename the CONFIG.SYS and AUTOEXEC.BAT files and create
+	the following two files with the following information:
+	
+	CONFIG.SYS
+	----------
+	
+	DEVICE=C:\HIMEM.SYS
+	DEVICE=C:\DOS\SETVER.EXE
+	DEVICE=CD DEVICE DRIVER w/ appropriate parameters (e.g. /d:cdrom01...)
+	DOS=HIGH
+	
+	AUTOEXEC.BAT
+	------------
+	
+	PATH=C:\;C:\DOS;C:\WINDOWS
+	PROMPT $P$G
+	SET TEMP = C:\WINDOWS\TEMP
+	MSCDEX.EXE with appropriate parameters (e.g. /d:cdrom01 /m:8 /l:f /v)
+	
+	Steps to Reproduce Problem
+	--------------------------
+	
+	1. Load SMARTDrive on the system and set the minimum and maximum cache size to
+	  consume most of the system memory. For example, if the machine contains 8 MB,
+	  then increase SMARTDrive to approximately 7 MB.
+	
+	2. Restart the system and start Windows.
+	
+	3. Start a Bookshelf application such as The Concise Columbia Encyclopedia. An
+	  "Unable to display picture" box appears in the upper-right corner where the
+	  bitmap and push buttons should be.
+	
+	Note: RAMDRIVE, EMM386.EXE, and other utilities that can access extended memory
+	can be used in place of SMARTDrive.
+	
+	Additional query words: 1.00 1.00a low memory multi media usage multimedia multi-media smartdrv.exe smartdrv smart drive ram viewer
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbOSWinSearch kbHomeMMsearch kbZNotKeyword6 kbBookshelfSearch kbBookShelf1992 kbOSWin310 kbOSWin311
+	Version           : :1992 edition; WINDOWS:3.1x
+	
+	=============================================================================
+	

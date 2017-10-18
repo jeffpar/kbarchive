@@ -1,0 +1,206 @@
+---
+layout: page
+title: "Q108778: HP LaserJet 4 Version 3.1.26 Features and Corrections"
+permalink: kb/108/Q108778/
+---
+
+## Q108778: HP LaserJet 4 Version 3.1.26 Features and Corrections
+
+	Article: Q108778
+	Product(s): Microsoft Windows Printing Issues
+	Version(s): WINDOWS:3.1,3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 06-JUL-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows versions 3.1, 3.11 
+	-------------------------------------------------------------------------------
+	
+	
+	SUMMARY
+	=======
+	
+	This article contains text from the README.HP file on the Hewlett-Packard (HP)
+	LaserJet 4 series printer driver disk version 3.1.26.
+	
+	MORE INFORMATION
+	================
+	
+	***************************************************
+	Features of the HP LaserJet 4 Family Printer Driver
+	
+	The Hewlett-Packard LASERJET 4 FAMILY PRINTING SYSTEM version
+	31.V1.26 includes support for the HP LaserJet 4/4M, 4L, 4ML,
+	4Si/4Si MX, & 4P/4MP printers and the following features:
+	
+	Support for Graphics Quality
+	----------------------------
+	
+	  For the LaserJet 4/4M, 4Si/4Si MX, and 4P/4MP at 600 dpi mode
+	  the driver supports 600, 300, and 150 dpi. For the LaserJet 4/4M,
+	  4L, 4ML, 4Si/4Si MX, and 4P/4MP, at 300 dpi mode the driver supports
+	  300, 150, and 75 dpi. The actual graphics resolution settings are
+	  denoted by the descriptive terms of High, Medium, and Low rather
+	  than the actual dpi.
+	
+	Support for the Internal Intellifont Typefaces
+	----------------------------------------------
+	
+	  All the internal Intellifont typefaces in the HP LaserJet 4/4M,
+	  4L, 4ML, 4Si/4Si MX, 4P/4MP printers are supported in the 19U symbol
+	  set.
+	
+	Support for HP-GL/2
+	-------------------
+	
+	  Support for HP-GL/2 is in the HPPCL5E PRINTER DRIVER. Under the
+	  Options Dialog in the Printer Setup, an option of "Graphics Mode" is
+	  available. Two options are present: HP-GL/2 or Raster. The first
+	  choice enables HP-GL/2 and raster printing which optimizes print
+	  performance. The second choice uses raster only. The default graphics
+	  mode is set to raster for the HP LaserJet 4L. The default mode is set
+	  to HP-GL/2 for the HP LaserJet 4/4M, 4ML, 4Si/4Si MX, and 4P/MP. Default
+	  settings for "Graphics Mode" optimize print speed for the given printer.
+	
+	  If you encounter print difficulties in HP-GL/2 Graphics Mode, it is
+	  recommended that you change the mode to Raster and try your print job
+	  again. Additional information on this topic may be found in the help
+	  files that accompany this driver. Choose Help from the driver dialog
+	  screens or the HP font installer screens to access the HELP information.
+	
+	Support for EconoMode (Supported by the LaserJet 4L, 4ML, and 4P/4MP)
+	---------------------------------------------------------------------
+	
+	  Support for EconoMode is in version V1.20 or later within the
+	  Options Dialog. There are two options available, on or off. With
+	  EconoMode enabled the output will resemble draft mode, using fewer
+	  dots in order to conserve toner.
+	
+	Support for Print Density
+	-------------------------
+	
+	  (Supported by the LaserJet 4L, 4ML, and 4P/4MP)
+	
+	  Print density support is provided in the Options Dialog. Adjust
+	  the density of the printer according to the desired density. The
+	  density range is one (lightest) to five (darkest). Dialog Support for
+	  REt. Another feature added to the Option Dialog is the REt (Resolution
+	  Enhancement technology) box. The options here are: Light, Medium, Dark,
+	  and Off for the HP LaserJet 4L, 4ML, and 4P/4MP. Printer Default,
+	  Light, Medium, Dark, and Off for the HP LaserJet 4/4M. Printer Default,
+	  ON, and OFF for the LaserJet 4Si/4Si MX. Dialog Support for Resource
+	  Saving (Supported only by LaserJet 4Si/4Si MX)   This feature, added
+	  to the main setup dialog box, allows the user to tell the printer
+	  driver how much memory is set aside for each printer personality
+	  (PCL and PostScript). This memory is used for saving printer resources
+	  between printer language switching. The range is 0KB to 99900KB.
+	
+	Version Information Resources
+	-----------------------------
+	
+	  This feature in version 31.V1.20 and later, added to the printer
+	  driver and its dynamic link libraries, helps eliminate a possible
+	  mismatch of driver and driver resource files when installing previous
+	  drivers. If a potential mismatch is detected during driver
+	  installation, a dialog box that contains a warning is displayed.
+	
+	Custom Media Size
+	-----------------
+	
+	  Custom Media is also supported by this driver for the HP LaserJet
+	  4ML and 4P/4MP. The size of the custom media in most cases must be set
+	  in both the application's page setup and the driver setup. For more
+	  information about minimum and maximum page size, see your users manual.
+	
+	***************************************************************
+	User Hints
+	----------
+	
+	On-line help files are included for the HPPCL5E PRINTER DRIVER and the
+	HP font installer screens. Choose Help from these screens to access the
+	HELP information.
+	
+	***************************************************************
+	System Update Information (Changes to Version 31.V1.26)
+	
+	Cartridge Support
+	-----------------
+	
+	  This driver does not have built-in support for HP font cartridges.
+	  Font cartridge support is still available by installing the fonts for
+	  the font cartridge from the autofont support disk shipped with the font
+	  cartridge,  by contacting Hewlett-Packard's Driver Distribution Center
+	  by calling 303-339-7009, Monday through Saturday, 24 hours a day. Fax:
+	  303-330-7655,  or by downloading the PCM (printer cartridge metric)
+	  files from the HP Peripherals Forum library on CompuServe. The filename
+	  for the PCM files is L4PCM.EXE. After extracting the files,  the PCM
+	  files can be installed from the HP Font Installer which is accessed
+	  from the Control Panel,  Printers,  Setup,  Fonts,  Add Fonts option in
+	  Windows. Detailed installation instructions are included with the PCM
+	  files.
+	
+	300 DPI Compatibility
+	---------------------
+	
+	  Additional compatibility has been added to this driver to insure
+	  compatibility between documents printed with this driver and documents
+	  printed with the LaserJet III Family drivers. This compatibility is
+	  automatically enabled when a document is printed with the resolution
+	  field set to 300 DPI.
+	
+	Driver Supports Microsoft Draw Image Imported in Word in Monochrome
+	-------------------------------------------------------------------
+	
+	  Graphics can be imported as both black and white or as monochrome.
+	  Monochrome is actually purple and white. The driver has been modified
+	  to accepted monochrome as well.
+	
+	***************************************************************
+	How to Obtain Addition Help
+	---------------------------
+	
+	SOFTWARE DRIVERS AND TECHNICAL INFORMATION
+	
+	CompuServe's HP Peripherals Forum provides low-cost, around-the-clock
+	access to drivers and technical support information. You can call
+	CompuServe at 800-848-8199. (Users type: GO HPPER)
+	
+	Hewlett-Packard's Driver Distribution Center provides HP drivers for
+	several popular software packages. You can order drivers by calling
+	303-339-7009, Monday through Saturday, 24 hours a day. Fax: 303-330-7655.
+	
+	SOFTWARE APPLICATION SUPPORT
+	
+	Call the phone number listed in your software vendor's manual.
+	
+	PERIPHERAL TECHNICAL SUPPORT AND ASSISTANCE
+	(For US and CANADA only)
+	
+	To resolve problems you may encounter, we suggest using the following
+	resources:
+	
+	Your company may have an internal support professional, department, or
+	help desk. Your local authorized reseller is also qualified to provide
+	you with support.
+	
+	HP FIRST (HP's Fax Information Retrieval Support Technology)
+	provides technical information by fax. HP Audio Tips provides
+	pre-recorded answers to commonly asked questions about HP
+	peripheral products. Both of these free services are available
+	around-the-clock by calling 800-333-1917.
+	
+	The HP Customer Care Support provides technical assistance
+	for peripherals by calling 208-323-2551.
+	
+	Additional query words: win31 laser jet 3.10 3.11
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+	Version           : WINDOWS:3.1,3.11
+	
+	=============================================================================
+	

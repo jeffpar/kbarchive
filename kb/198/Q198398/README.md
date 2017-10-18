@@ -1,0 +1,180 @@
+---
+layout: page
+title: "Q198398: Access Violation in Snalink.exe Activating Numerous Connections"
+permalink: kb/198/Q198398/
+---
+
+## Q198398: Access Violation in Snalink.exe Activating Numerous Connections
+
+	Article: Q198398
+	Product(s): Microsoft SNA Server
+	Version(s): WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1
+	Operating System(s): 
+	Keyword(s): kbsna300sp4fix kbsna400sp3fix
+	Last Modified: 11-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 4.0, 4.0 SP1 
+	-------------------------------------------------------------------------------
+	
+	
+	IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+	
+	  Q256986 Description of the Microsoft Windows Registry
+	
+	SYMPTOMS
+	========
+	
+	An access violation in Snalink.exe may occur if numerous 802.2 Data Link Control
+	(DLC) connections are activated concurrently in SNA Server Manager. The number
+	of connections that have to be activated for this problem to occur varies,
+	however it is more likely to occur when activating 50 or more 802.2 DLC
+	connections concurrently. If Drwtsn32.exe is configured as the default debugger
+	on the SNA Server system, the Drwtsn32.log file will be generated that contains
+	entries similar to the following when this access violation occurs:
+	
+	Application exception occurred: App: exe\snalink.dbg (pid=<process ID>)
+	When: <date> @ <time> Exception number: c0000005 (access violation)
+	
+	[...]
+	
+	function: DlcGetDlcApiBuffer
+	
+	[...]
+	
+	6338a427 75fb jnz DlcGetDlcApiBuffer+0x54 (6338a424) FAULT ->6338a429 8b08 mov
+	ecx,[eax] ds:00000000=???????? 6338a42b 898a18020000 mov [edx+0x218],ecx
+	ds:000abe08=00000000
+	
+	*----> Stack Back Trace <----*
+	
+	FramePtr ReturnAd Param#1 Param#2 Param#3 Param#4 Function Name 0104fef0 6338a1aa
+	00090013 00000001 0104ff28 00000027 snadlc!DlcGetDlcApiBuffer (FPO: [3,0,3])
+	
+	-or-
+	
+	Application exception occurred: App: exe\snalink.dbg (pid=<process ID>)
+	When: <date> @ <time> Exception number: c0000005 (access violation)
+	
+	[...]
+	
+	function: CopyMessageToDlcBuffers
+	
+	[...]
+	
+	6338a20d 8b4c2424 mov ecx,[esp+0x24] ss:01f5e90b=???????? FAULT ->6338a211
+	66894104 mov [ecx+0x4],ax ds:00f15a07=???? 6338a215 8b542424 mov edx,[esp+0x24]
+	ss:01f5e90b=????????
+	
+	*----> Stack Back Trace <----*
+	
+	FramePtr ReturnAd Param#1 Param#2 Param#3 Param#4 Function Name 01ad7bdc 0072000a
+	60000400 38313062 806b0035 13003100 snadlc!CopyMessageToDlcBuffers (FPO: [EBP
+	0x00000000] [3,3,4])
+	
+	CAUSE
+	=====
+	
+	The SNA DLC Link service (Snadlc.dll) does not correctly handle errors that it
+	receives when the link service internal Logical Link Control (LLC) buffer pool
+	is exhausted. The failure to correctly handle these errors causes the access
+	violation in Snalink.exe.
+	
+	RESOLUTION
+	==========
+	
+	SNA Server 4.0
+	--------------
+	
+	To resolve this problem, obtain the latest service pack for SNA Server version
+	4.0. For additional information, please see the following article in the
+	Microsoft Knowledge Base:
+	
+	  Q215838 How to Obtain the Latest SNA Server Version 4.0 Service Pack
+	
+	
+	SNA Server 3.0
+	--------------
+	
+	To resolve this problem, obtain the latest service pack for SNA Server version
+	3.0. For additional information, please see the following article in the
+	Microsoft Knowledge Base:
+	
+	  Q184307 How to Obtain the Latest SNA Server Version 3.0 Service Pack
+	
+	
+	WORKAROUND
+	==========
+	
+	Instead of activating all of the configured 802.2 DLC connections concurrently,
+	activate them individually or in smaller groups.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in SNA Server versions 3.0 and 4.0.
+	This problem was first corrected in SNA Server version 3.0 Service Pack 4 and
+	SNA Server version 4.0 Service Pack 3.
+	
+	MORE INFORMATION
+	================
+	
+	After you apply the update, the 802.2 DLC Link service will not generate an
+	access violation when activating numerous connections. However, some of the
+	connections may not activate (they will be in an Inactive state) or some of the
+	LUs (Logical Units) defined on the connections may stay in an Inactive state.
+	This can occur when the LLC buffer pool is exhausted. If it appears that the LLC
+	buffer pool is too small, it can be increased by setting the following registry
+	entry:
+	
+	WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+	that may require you to reinstall your operating system. Microsoft cannot
+	guarantee that you can solve problems that result from using Registry Editor
+	incorrectly. Use Registry Editor at your own risk.
+	
+	1. Start Registry Editor (Regedt32.exe).
+	
+	2. Locate the following key in the registry:
+	  HKEY_LOCAL_MACHINE/SYSTEM/CurrentControlSet/Services/<snadlcX>
+	  /Parameters/ExtraParameters/ where <snadlcX> is the link service name
+	  (that is, SnaDlc1, SnaDlc2, and so forth). NOTE: The above registry key is
+	  one path; it has been wrapped for readability.
+	
+	3. On the Edit menu, click Add Value, and then add the following registry
+	  value:
+	
+	     Value Name: LlcBufferPoolSize
+	     Data Type:  REG_DWORD
+	     Value:      <pool size in bytes>
+	
+	  The default pool size is 1024000. If the buffer pool is being exhausted,
+	  a value of 4096000 will allow a larger pool that should allow more
+	  connections to be started concurrently.
+	
+	4. Quit Registry Editor.
+	
+	The SnaDlcX link service must be stopped and started for this change to take
+	effect. This can be accomplished by stopping and starting the SNA Server
+	service. However, if SnaDlcX has been distributed for use with the SNA
+	distributed link service, the SnaDlcX service must be manually stopped and
+	started.
+	
+	For more information about eligibility for no-charge technical support, see the
+	following article in the Microsoft Knowledge Base:
+	
+	  Q216047 Activating Numerous DLC Connections Results in Inactive LUs
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbsna300sp4fix kbsna400sp3fix 
+	Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ400 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ300SP2
+	Version           : WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

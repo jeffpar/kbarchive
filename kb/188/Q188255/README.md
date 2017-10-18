@@ -1,0 +1,195 @@
+---
+layout: page
+title: "Q188255: ArrayCom.exe Passing Array To COM DLL by Reference"
+permalink: kb/188/Q188255/
+---
+
+## Q188255: ArrayCom.exe Passing Array To COM DLL by Reference
+
+	Article: Q188255
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:6.0
+	Operating System(s): 
+	Keyword(s): kbfile kbvfp600 kbDSupport
+	Last Modified: 11-NOV-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	ArrayCom.exe is a sample file containing a project which includes files that
+	illustrate the key concepts involved in passing an array by reference from a
+	Visual FoxPro form to a COM DLL and returning the data that the COM DLL places
+	into the array. To use the files, extract them into a new directory and follow
+	the instructions in the enclosed Readme.txt file.
+	
+	MORE INFORMATION
+	================
+	
+	The following file is available for download from the Microsoft Download
+	Center:
+	
+	  ArrayCom.exe
+	  (http://download.microsoft.com/download/vfox60/sample7/1/WIN98/EN-US/ArrayCom.exe)
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. Once posted, the file is housed on secure
+	servers that prevent any unauthorized changes to the file.
+	
+	How to Use the Sample Files
+	---------------------------
+	
+	After extracting the files contained in ArrayCom.exe into a new directory, follow
+	the steps below to use the sample files.
+	
+	1. Set the default directory to the new directory in which you extract the
+	  files, and then open the PassArray.pjx project in Visual FoxPro.
+	
+	2. From the Project menu, choose Build.
+	
+	3. In the Build Options dialog box, select "Build COM DLL". In addition, select
+	  "Recompile All Files" and "Display Errors". There should be no errors.
+	
+	4. Click OK to build the COM DLL. Use the default name PassArray.dll for the DLL
+	  file.
+	
+	5. In the Project Manager dialog box, click the Documents tab, select and then
+	  run the PassArray.scx form. Note that the project excludes this form so that
+	  it is not built into the COM DLL. The project lists the form for convenience
+	  only.
+	
+	6. When you run the form, it should appear with a scrollable list populated by
+	  the Company field of the sample Customer table from the Testdata.dbc. A
+	  stripped down version of Testdata.dbc containing only the Customer table is
+	  included in ArrayCom.exe.
+	
+	Behind the Scenes
+	-----------------
+	
+	The following is an explanation of the form and the COM DLL and how the two work
+	together.
+	
+	The form, PassArray.scx, contains a scrollable list and a Quit command button.
+	The RowSourceType property of the list is "5 [ASCII 150] Array". The RowSource
+	property is Thisform.listitems, which is a custom property of the form defined
+	to be an array. This array property is filled in the Load event of the form.
+	
+	Before examining the code in the Load event of the form, it will be useful to
+	examine the relevant methods and properties of the COM DLL, Passarray.dll.
+	
+	There are two custom methods and one custom property in the Passarray class that
+	the form uses. They are xgetdata(), xtransdata() and xtally.
+	
+	The first method to be called is xgetdata(). The code from xgetdata() is below:
+	
+	     SELECT company FROM customer INTO CURSOR junk
+	     This.xtally=_tally
+	     SELECT junk
+	     RETURN FCOUNT()
+	
+	This method selects the company names from the Customer table. It then sets the
+	custom property, xtally, of the Passarray class to the number of records
+	returned by the SELECT statement by setting it equal to the _tally system memory
+	variable. The _tally system memory variable contains the number of records
+	processed by the most recently executed table command. Finally, the number of
+	fields selected is returned by the xgetdata() method by returning the FCOUNT()
+	function. This is not of much use in this example since only one field is
+	selected and that is all we are expecting in the form for the list box.
+	
+	The next method the form calls is xtransdata() to transfer the data selected in
+	the xgetdata() method to the array passed in from the form by reference. The
+	code in the xtransdata() method follows:
+	
+	     LPARAMETERS xx
+	     EXTERNAL ARRAY xx
+	     SELECT junk
+	     COPY TO ARRAY xx
+	
+	This method just declares that the array passed in as a parameter, xx, is
+	external. Note that the name of the array that the form passes is temparr (see
+	sample code below). The name of the array in the form and the array declared in
+	the LPARAMETERS statement do not need to be the same. The cursor created by the
+	SELECT statement in xgetdata() is then selected and the COPY TO ARRAY command is
+	used to copy the records from the cursor into the array, xx.
+	
+	That is all there is to the COM DLL.
+	
+	The Load event of the form contains the following code:
+	
+	     LOCAL lo, lflds
+	     lo=CREATEOBJECT("passarray.passarray")
+	     =COMARRAY(lo,11)
+	     lflds=lo.xgetdata
+	     DIMENSION temparr(lo.xTally,lflds)
+	     lo.xtransdata(@temparr)
+	     =ACOPY(temparr,Thisform.listitems)
+	     RELEASE lo
+	
+	The code above illustrates the important concepts of passing an array to the COM
+	DLL by reference.
+	
+	The first thing to happen is that the COM DLL is loaded and an object reference
+	to it is stored in the variable named lo.
+	
+	The COMARRAY() function is then issued to tell Visual FoxPro how to pass arrays
+	to the COM object whose reference is stored in the variable lo. The second
+	argument of COMARRAY() can tell Visual FoxPro to pass arrays by reference or by
+	value and whether the array is zero or one based. In this case, the value of 11
+	tells Visual FoxPro to pass the variable as a one- based array by reference.
+	Please see the documentation for the COMARRAY() function for other values to
+	use.
+	
+	Next, you call the xgetdata() method of the COM DLL. The xgetdata() method is
+	explained in the [ASCII 147]Behind the Scenes[ASCII 148] section.
+	
+	The number of fields in the cursor created by the SELECT statement is returned to
+	the lflds variable. Also, remember that the xtally property of the COM DLL is
+	set to the number of records returned by the SELECT statement.
+	
+	After the number of records and number of fields is known, an array variable is
+	dimensioned to the correct size using the xtally property of the COM DLL and the
+	value returned by the xgetdata() method. There are a couple of things to note
+	here. First, you dimension an array variable. Eventually, the data returned from
+	the COM DLL needs to be stored into an array property of the form. You cannot
+	pass the array property of the form by reference to the COM DLL, so the array
+	variable is used. Later the ACOPY() function will be used to copy the items from
+	the array variable to the array property of the form. Secondly, you dimension
+	the array variable to be the same size as the return data. The size of the array
+	variable is not adjusted automatically when it is passed to the COM DLL so this
+	is necessary to do before passing the variable.
+	
+	Finally, the xtransdata() method of the COM DLL is called with the newly
+	dimensioned array being passed by reference. The @ symbol is necessary before
+	the array name to accomplish this even though the COMARRAY() function was used
+	to tell Visual FoxPro how to pass arrays to the COM DLL. After the data is
+	transferred into the array in the COM DLL, the ACOPY() function is used to
+	transfer the data into the array property of the form.
+	
+	REFERENCES
+	==========
+	
+	For more information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q189911 PRB: REDIMENSION an Array Passed by Reference in DLL Fails
+	
+	Additional query words: ArrayCom kbVFp600
+	
+	======================================================================
+	Keywords          : kbfile kbvfp600 kbDSupport 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+	Version           : WINDOWS:6.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

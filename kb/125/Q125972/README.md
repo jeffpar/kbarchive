@@ -1,0 +1,126 @@
+---
+layout: page
+title: "Q125972: MS WIN 3.1 STEP BY STEP: Corrections and Comments"
+permalink: kb/125/Q125972/
+---
+
+## Q125972: MS WIN 3.1 STEP BY STEP: Corrections and Comments
+
+	Article: Q125972
+	Product(s): Microsoft Press
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbother kbdocerr
+	Last Modified: 25-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- MSPRESS Microsoft Windows 3.1 Step by Step ISBN 1-55615-501-8 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article contains information on known errors, corrections, and comments
+	relating to the Microsoft Press book "Microsoft Windows 3.1 Step by Step."
+	
+	The following topics are covered:
+	
+	- How to Install Practice Files to Hard Disk Drives Other Than Drive C
+	
+	- Step by Step Disk Doesn't Provide Icon or Executable Program
+	
+	MORE INFORMATION
+	================
+	
+	In addition to a description of the book's problems, this document might also
+	include sections labeled "Correction" and "Comments." Please note that the
+	"Correction" section is worded for correcting the book and does not necessarily
+	address the problem introduced by the book error. The "Comments" section
+	contains specific information for working around problems.
+	
+	How to Install Practice Files to Hard Disk Drives Other Than Drive C
+	--------------------------------------------------------------------
+	
+	The installation for "Windows 3.1 Step by Step" is not designed to look for
+	drives or directories other than C:\WINDOWS.
+	
+	Comments:
+	
+	To change the destination drive or directory, perform the following steps:
+	
+	1. To exit Windows, switch to Program Manager, and from the File menu, choose
+	  Exit.
+	
+	2. Insert the original practice disk in your floppy disk drive.
+	
+	3. At the MS-DOS prompt, type the following and press ENTER:
+	
+	  " edit <drive>:\install.ini " (without the quotation marks)
+	
+	  where <drive> is the floppy disk drive containing the original practice
+	  disk.
+	
+	  The MS-DOS Editor appears. Normally, 3 lines of text will be displayed.
+	
+	4. Move the cursor to the first line of text.
+	
+	5. Change the first line to alter the default installation destination.
+	
+	  For example, to make the practice files install to a WINDOWS directory located
+	  on the D drive, modify the first line as follows:
+	
+	  " D:\WINDOWS " (without the quotation marks)
+	
+	6. After you make your changes, choose Exit from the File menu and then choose
+	  Yes to save changes.
+	
+	  This will return you to the MS-DOS prompt.
+	
+	7. Type "WIN" (without the quotation marks) to return to Windows, and follow the
+	  instructions in the book to install the practice files.
+	
+	Step by Step Disk Doesn't Provide Icon or Executable Program
+	------------------------------------------------------------
+	
+	The instructions for installing the practice disk are clear. However, after the
+	disk is installed, you return to Windows Program Manager, where you are given no
+	further messages or directions as to what to do next.
+	
+	Correction:
+	
+	In the last paragraph on page xii, the following sentence should be inserted
+	between the third and final sentences:
+	
+	  These practice files will be used and referred to in many of the later
+	  lessons (beginning with Lesson 8). You will need only Microsoft Windows for
+	  the first lessons, so don't be concerned that there are no additional icons
+	  in Windows for this book.
+	
+	Comments:
+	
+	The installation program copies the practice files to your hard disk. To access
+	these files, you need to start the appropriate Microsoft Windows applications
+	and use the appropriate commands to open a file. The lessons in this book will
+	provide the exact steps necessary to open these files.
+	
+	The intent of the practice files disk is for you to use the files as you work
+	through the lessons in the book. Lessons 1 through 7 teach the fundamentals of
+	using Windows and its many features. These first lessons do not require practice
+	files. Beginning with Lesson 8, you will need to use the practice files.
+	
+	Microsoft Press is committed to providing informative and accurate books. All
+	comments and corrections listed above are ready for inclusion in future
+	printings of this book. Later printings may already contain most or all of the
+	above corrections.
+	
+	Additional query words: mspress ms_press press bookbug sbs
+	
+	======================================================================
+	Keywords          : kbother kbdocerr 
+	Technology        : kbMSPressSearch
+	Version           : :
+	
+	=============================================================================
+	

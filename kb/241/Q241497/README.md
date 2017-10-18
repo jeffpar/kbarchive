@@ -1,0 +1,106 @@
+---
+layout: page
+title: "Q241497: BackOffice Server Intranet Publishing Kit Does Not Install Corre"
+permalink: kb/241/Q241497/
+---
+
+## Q241497: BackOffice Server Intranet Publishing Kit Does Not Install Corre
+
+	Article: Q241497
+	Product(s): Microsoft Windows NT
+	Version(s): winnt:4.5
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 24-SEP-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft BackOffice Server 4.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you try to install the Windows NT Option Pack during the installation of
+	Microsoft BackOffice Server, the installation of Windows NT Option Pack may not
+	work and one or more of the following error messages may be displayed:
+	
+	  
+	  ExAir Config Error(SetApplication - ExAir)
+	  An error occurred setting ExAir Web Applications details while creating app.
+	  The error is 1AD Activex component can't create object.
+	
+	  ExAir Config Error (SetApplication - ExAir/Catalog)
+	  An error occurred setting ExAir Web Applications details while creating app.
+	  The error is 80110028 automation error.
+	
+	  ExAir Config Error (SetApplication - ExAir/Benefits)
+	  An error occurred setting ExAir Web Applications details while creating app.
+	  The error is 80110501 automation error.
+	
+	  ExAir Error
+	  An error occurred while installing package 'ExAir'. The error is
+	  mteErrObjectErrors - see ErrorInfo collection
+	
+	  ExAir Error
+	  An error occurred while installing package 'Benefit'. The error is
+	  mteErrObjectErrors - see ErrorInfo collection
+	
+	  ExAir Error
+	  An error occurred while installing package 'Flight'. The error is
+	  mteErrObjectErrors - see ErrorInfo collection
+	
+	  ExAir Error
+	  An error occurred while installing package 'TakeANumber'. The error is
+	  mteErrObjectErrors - see ErrorInfo collection
+	
+	During the installation of Site Server, several error message dialog boxes may
+	appear with no text and just an OK command button.
+	In addition to the Option Pack and Site Server problems, the Intranet Publishing
+	Kit may also not install correctly.
+	
+	CAUSE
+	=====
+	
+	This problem occurs because the Intranet Publishing Kit depends on Site Server,
+	which in turn depends on the Windows NT Option Pack. Windows NT Option Pack does
+	not install correctly if the account specified for the Microsoft Transaction
+	Server is not in the Administrators group.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem:
+	
+	To prevent the above-mentioned problems from occurring, make sure the account
+	specified for the Microsoft Transaction Server is in the Administrators group.
+	
+	1. Uninstall Site Server by running Site Server Setup from the Start menu. When
+	  you are prompted for the Site Server files, insert BackOffice CD #5.
+	
+	2. Uninstall Windows NT Option Pack by running Setup.exe from the root folder on
+	  BackOffice CD #3.
+	
+	3. Add the account that Transaction Server will use to the Administrators group
+	  using User Manager for Domains.
+	
+	4. Run BackOffice Setup again and allow it to install Windows NT Option Pack,
+	  Site Server, and the Intranet Publishing Kit.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft BackOffice Server
+	version 4.5.
+	
+	Additional query words: bos ipk
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbBackOfficeSearch kbBackOfficeServ450
+	Version           : winnt:4.5
+	Issue type        : kbprb
+	
+	=============================================================================
+	

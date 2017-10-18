@@ -1,0 +1,110 @@
+---
+layout: page
+title: "Q145997: PRB: Resource Language Must Match the Current System Language"
+permalink: kb/145/Q145997/
+---
+
+## Q145997: PRB: Resource Language Must Match the Current System Language
+
+	Article: Q145997
+	Product(s): Microsoft C Compiler
+	Version(s): winnt:4.0
+	Operating System(s): 
+	Keyword(s): kbusage kbwizard kbMFC kbVC400 kbLocalization kbClassWizard kbGrpDSTools
+	Last Modified: 06-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The ClassWizard, included with:
+	   - Microsoft Visual C++, 32-bit Editions, version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Under some circumstances, ClassWizard does not show the control IDs for a dialog
+	resource in the Control IDs listbox under Member Variable Tab.
+	
+	CAUSE
+	=====
+	
+	This is by design. If the language settings of the resource are not the same as
+	the language settings of the operating system, you will see this behavior. For
+	example, if you are using US English settings for the operating system and the
+	dialog resource is in some other language, you will see this problem.
+	
+	RESOLUTION
+	==========
+	
+	By design, the language setting for the resources must be identical to the
+	language setting for the operating system. There are two ways to synchronize
+	your resources language:
+	
+	Method One: Reset the Language for an Existing Resource
+	-------------------------------------------------------
+	
+	1. From the Resource View, highlight the resource in question, and then
+	  right-click it.
+	
+	2. Select Properties.
+	
+	3. Choose the language that matches that of your operating system.
+	
+	Method Two: Copy an Existing Resource to One that Matches Your Language
+	-----------------------------------------------------------------------
+	
+	1. Right-click the dialog's name in Resource View, and then click Insert Copy.
+	
+	2. In Insert Resource Copy window, select the language that exactly matches the
+	  language setting of the operating system.
+	
+	STATUS
+	======
+	
+	This behavior is by design.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Generate a dialog-based application by using MFC AppWizard.
+	
+	2. Change to Resource View.
+	
+	3. Open the main window dialog.
+	
+	4. Add an edit control.
+	
+	5. Right-click the dialog's name in Resource View, and click Properties. In the
+	  Dialog properties window, change Language Settings to some language other
+	  than the current system language.
+	
+	6. Start ClassWizard.
+	
+	7. Click the Member Variables tab. The ID for the edit control does not show up
+	  in the Control IDs list.
+	
+	8. Change the Language Settings property to match the current system language.
+	  Now, ClassWizard will show the IDs in Member Variables tab.
+	
+	For more information about using the resource editor and localizing your
+	application please see:
+	
+	- "Using the Resource Editors" in the Help file's "Visual C++ User's Guide," in
+	  the "Working with Resources" section.
+	
+	- Tech note 57 (TN057), "Localization of MFC Components."
+	
+	Additional query words: ClassWizard International ID resource
+	
+	======================================================================
+	Keywords          : kbusage kbwizard kbMFC kbVC400 kbLocalization kbClassWizard kbGrpDSTools 
+	Technology        : kbVCsearch kbAudDeveloper kbClassWizard
+	Version           : winnt:4.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

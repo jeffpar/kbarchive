@@ -1,0 +1,118 @@
+---
+layout: page
+title: "Q257979: XCON: How to Configure TURN Client for Exchange Server 5.5"
+permalink: kb/257/Q257979/
+---
+
+## Q257979: XCON: How to Configure TURN Client for Exchange Server 5.5
+
+	Article: Q257979
+	Product(s): Microsoft Exchange
+	Version(s): 5.5
+	Operating System(s): 
+	Keyword(s): kbenv kbsetup exc55sp3
+	Last Modified: 17-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.5 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about modifying the registry. Before you 
+	modify the registry, make sure to back it up and make sure that you understand how to restore 
+	the registry if a problem occurs. For information about how to back up, restore, and edit the 
+	registry, click the following article number to view the article in the Microsoft Knowledge Base:
+	
+	  Q256986 Description of the Microsoft Windows Registry
+	
+	SUMMARY
+	=======
+	
+	Exchange Server 5.5 can automatically dequeue e-mail messages from a provider's
+	server. This option is used in environments where the Exchange Server computer
+	does not have a continuous connection to the Internet, and a provider "hosts"
+	the domain the Exchange Server computer uses. Typically, Exchange Server 5.5
+	issues the ETRN command to the server to initiate this transfer.
+	
+	MORE INFORMATION
+	================
+	
+	Some providers do not support ETRN or cannot provide a static Internet Protocol
+	(IP) address for hosted customers, and instead support the issuing of the TURN
+	or ATRN command. You can configure Exchange Server 5.5 to issue this command
+	sequence rather than ETRN if necessary. This option is also useful when a proxy
+	server, Routing and Remote Access Service (RRAS) server, or a demand-dial router
+	performs the dial-up connection to the Internet and is assigned a dynamic IP
+	address. The TURN client functionality enables servers that receive a dynamic IP
+	address assignment from an Internet service provider (ISP) to retrieve e-mail
+	messages from an Internet-based e-mail server that queues e-mail messages for
+	TURN.
+	
+	To configure the Exchange Server computer to issue the TURN command rather than
+	the ETRN command sequence, use the following steps.
+	
+	WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+	that may require you to reinstall your operating system. Microsoft cannot
+	guarantee that you can solve problems that result from using Registry Editor
+	incorrectly. Use Registry Editor at your own risk.
+	
+	1. Start Registry Editor.
+	
+	2. Locate the following registry key:
+	
+	  HKEY_LOCAL_MACHINE\System\CurrentControlSet\Service\MSExchangeIMC\Parameters
+	
+	3. Add a DWORD value named AlwaysUseTURN, and then set the value to 0x1.
+	
+	4. Using the Exchange Administrator program, go to Internet Mail Service in the
+	  Connections Container, and then double-click the object to view its
+	  properties.
+	
+	5. On the Security tab, click the Edit button for the domain.
+	
+	6. Click "SASL/SSL security".
+	
+	7. Click SASL/AUTH, and then click Change.
+	
+	8. Type the authorization credentials (user name and password) necessary to log
+	  on to the remote computer.
+	
+	  NOTE: If you are connecting to a Microsoft Windows domain, be sure to include
+	  the domain (for example, domain\user_account).
+	
+	9. Stop and restart Internet Mail Service for the changes to take effect.
+	
+	You can use the following sample script with the Windows Script Host that will
+	make the registry change.
+	
+	  L_Welcome_MsgBox_Message_Text   = "This script adds the AlwaysUseTURN value to the Internet Mail Service that enables LAN based TURN."
+	  L_Welcome_MsgBox_Title_Text     = "Enabling TURN"
+	  Call Welcome()
+	
+	  Dim WSHShell
+	  Set WSHShell = WScript.CreateObject("WScript.Shell")
+	  WSHShell.Popup "Set value  HKLM\System\CurrentControlSet\Services\MSExchangeIMC\Parameters\AlwaysUseTURN to  REG_DWORD 1"
+	  WSHShell.RegWrite  "HKLM\System\CurrentControlSet\Services\MSExchangeIMC\Parameters\AlwaysUseTURN" , 1,  "REG_DWORD"
+	
+	  Sub Welcome()
+	      Dim intDoIt
+	
+	      intDoIt =  MsgBox(L_Welcome_MsgBox_Message_Text,    _   
+	                        vbOKCancel + vbInformation,       _
+	                        L_Welcome_MsgBox_Title_Text )
+	      If intDoIt = vbCancel Then
+	          WScript.Quit
+	      End If
+	  End Sub
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbenv kbsetup exc55sp3 
+	Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+	Version           : :5.5
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

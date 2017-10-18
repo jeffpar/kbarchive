@@ -1,0 +1,272 @@
+---
+layout: page
+title: "Q137333: DOC: How to Use the PX_Blob Function"
+permalink: kb/137/Q137333/
+---
+
+## Q137333: DOC: How to Use the PX_Blob Function
+
+	Article: Q137333
+	Product(s): Microsoft C Compiler
+	Version(s): 1.0,4.0,4.1
+	Operating System(s): 
+	Keyword(s): kbcode kbole kbdocfix kbdocerr kbCtrl kbVC500fix
+	Last Modified: 30-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The Microsoft Foundation Classes (MFC), included with:
+	   - Microsoft ActiveX SDK, version 1.0 
+	   - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The PX_Blob function can be used to load or save an OLE control's property that
+	stores Binary Large Object (BLOB) data. The CDK documentation incorrectly lists
+	the prototype for the PX_Blob function as:
+	
+	     BOOL PX_Blob( CPropExchange* pPX, LPCTSTR pszPropName,
+	        HGLOBAL*& hBlob, HGLOBAL hBlobDefault = NULL );
+	
+	The third parameter is incorrectly shown as being of type HGLOBAL*&. The
+	correct function prototype is:
+	
+	     BOOL PX_Blob( CPropExchange* pPX, LPCTSTR pszPropName,
+	        HGLOBAL& hBlob, HGLOBAL hBlobDefault = NULL );
+	
+	
+	The documentation states that PX_Blob will cause the property's value to be read
+	from or written to the variable referenced by hBlob, as appropriate. However,
+	the documentation is unclear about what hBlob should be referencing. In order to
+	use PX_Blob, it is necessary that the first four bytes of information that hBlob
+	references be a ULONG containing the number of bytes of data that make up the
+	properties value following the ULONG.
+	
+	This documentation error was corrected in Visual C++ version 5.0.
+	
+	MORE INFORMATION
+	================
+	
+	The following steps show how to use PX_Blob to serialize BLOB data:
+	
+	1. Declare a structure that contains a ULONG and the property data in the header
+	  file for the control. Because the first four bytes of a BLOB need to be a
+	  ULONG, creating a structure that contains a ULONG and the property data can
+	  simplify using PX_Blob.
+	
+	2. Declare an HGLOBAL member in the control's class declaration. The HGLOBAL
+	  will be used to reference the BLOB containing the property data.
+	
+	3. Initialize the HGLOBAL member to NULL in the control's constructor.
+	
+	4. In the control's DoPropExchange method, check to see if the control's
+	  properties are being saved or loaded. If properties are being saved, do the
+	  following:
+	
+	  1. GlobalAlloc the required number of bytes for the data that represents the
+	     property value and add four additional bytes for the ULONG that contains
+	     the size of the data. The structure declared in Step 1 can be used when
+	     doing this.
+	
+	  2. GlobalLock the handle returned from the GlobalAlloc call to get a pointer
+	     of your structure type to that memory.
+	
+	  3. Fill in the first part of your structure with the sizeof (your property
+	     data).
+	
+	  4. Fill in the second part of your structure with the actual data that
+	     represents the control's property value.
+	
+	  5. Call PX_Blob, unlock and free the global memory.
+	
+	5. If the control's properties are being loaded, do the following:
+	
+	  1. Call PX_Blob to get the handle to memory containing the property data.
+	
+	  2. Lock the handle to get a pointer to the actual property data.
+	
+	  3. Set the value of the property, and then unlock and free the global memory.
+	
+	  4. If the preceding call to PX_Blob in didn't return a handle to memory
+	     containing a BLOB containing the property value, initialize the property
+	     to a default value.
+	
+	The essential point in the steps is to make sure the first four bytes of
+	information referenced by the hBlob passed to PX_Blob is a ULONG representing
+	the number of bytes of data to follow.
+	
+	Sample Code
+	-----------
+	
+	The following sample code illustrates, using the previously listed steps, in the
+	context of the MFC CIRC3 OLE control sample. The sample code uses PX_Blob to
+	serialize the Offset property of the CIRC3 OLE control.
+	
+	  /////////////////////////////////////////////////////////////////////// 
+	  // CIRC3CTL.H
+	
+	  //  STEP 1:
+	  //  Declare a structure to make working with a BLOB easier.
+	     typedef struct tagOFFSET
+	     {
+	       ULONG size;
+	       short offset;
+	     } OFFSET;
+	
+	     class CCirc3Ctrl : public COleControl
+	     {
+	     public:
+	       //  STEP 2:
+	       //  Declare an HGLOBAL member in the control's class declaration.
+	       HGLOBAL hOffset;
+	       ...
+	     };
+	
+	  /////////////////////////////////////////////////////////////////////// 
+	  // CIRC3CTL.CPP
+	
+	     CCirc3Ctrl::CCirc3Ctrl()
+	     {
+	       InitializeIIDs(&IID_DCirc3, &IID_DCirc3Events);
+	
+	       //  STEP 3:
+	       //  Initialize the HGLOBAL member to NULL.
+	       hOffset = NULL;
+	
+	       //  TODO: Initialize your control's instance data here.
+	     }
+	
+	     void CCirc3Ctrl::DoPropExchange(CPropExchange* pPX)
+	     {
+	       ExchangeVersion(pPX, MAKELONG(_wVerMinor, _wVerMajor));
+	       COleControl::DoPropExchange(pPX);
+	
+	       if (pPX->GetVersion() == (DWORD)MAKELONG(_wVerMinor, _wVerMajor))
+	       {
+	         PX_Bool(pPX, _T("CircleShape"), m_circleShape, TRUE);
+	
+	         //****** NEW PX_Blob RELATED CODE STARTS HERE ******
+	
+	         if(!pPX->IsLoading())
+	         {
+	           //  The control's properties are being saved.
+	
+	           //  STEP 4.a:
+	           //  GlobalAlloc the size of your structure. This step could take
+	           //  place somewhere else and GMEM_FIXED isn't required.
+	           hOffset = GlobalAlloc(GMEM_FIXED, sizeof(OFFSET));
+	
+	           if(hOffset != NULL)
+	           {
+	             //  STEP 4.b:
+	             //  GlobalLock the handle returned from the GlobalAlloc call.
+	             OFFSET * p_mem = (OFFSET*)GlobalLock(hOffset);
+	
+	             if(p_mem != NULL)
+	             {
+	               //  STEP 4.c:
+	               //  Fill in the first part of your structure with the
+	               //  sizeof(your property data).
+	               p_mem->size = (long)sizeof(short); // The offset property is
+	                                                  // a short.
+	               //  STEP 4.d:
+	               //  Fill in the second part of your structure with the actual
+	               //  data that represents the control's property value.
+	               p_mem->offset = m_circleOffset;
+	
+	               //  STEP 4.e:
+	               //  Call PX_Blob, unlock and free your global memory.
+	               PX_Blob(pPX, _T("CircleOffset"), hOffset);
+	
+	               GlobalUnlock(hOffset);
+	             }
+	             else
+	             {
+	               // The GlobalLock call failed. Pass in a NULL HGLOBAL for the
+	               // third parameter to PX_Blob. This will cause it to write a
+	               // value of zero for the BLOB data.
+	               HGLOBAL hTmp = NULL;
+	
+	               PX_Blob(pPX, _T("CircleOffset"), hTmp);
+	             }
+	
+	             GlobalFree(hOffset);
+	             hOffset = NULL;
+	           }
+	           else
+	             // The GlobalAlloc call failed. Pass in a NULL HGLOBAL for the
+	             // third parameter to PX_Blob. This will cause it to write a
+	             // value of zero for the BLOB data.
+	             PX_Blob(pPX, _T("CircleOffset"), hOffset);
+	         }
+	         else
+	         {
+	           //  Properties are being loaded into the control.
+	
+	           //  STEP 5.a:
+	           //  Call PX_Blob to get the handle to the memory containing
+	           //  the property data.
+	           PX_Blob(pPX, _T("CircleOffset"), hOffset);
+	
+	           //  Definitely error check hOffset
+	           if(hOffset != NULL)
+	           {
+	             // STEP 5.b:
+	             // Lock the memory to get a pointer to the actual property
+	             // data.
+	             OFFSET * p_mem = (OFFSET *)GlobalLock(hOffset);
+	
+	             if(p_mem != NULL)
+	             {
+	               //  Step 5.c:
+	               //  Set the value of the property, unlock and free the global
+	               //  memory.
+	               m_circleOffset = p_mem->offset;
+	               GlobalUnlock(hOffset);
+	             }
+	             else
+	               m_circleOffset = 0;
+	
+	             GlobalFree(hOffset);
+	             hOffset = NULL;
+	           }
+	           else
+	             //  STEP 5.d:
+	             //  If the preceeding call to PX_Blob didn't give a handle
+	             //  to memory containing a BLOB containing the property value,
+	             //  initialize the property value to a default value.
+	             m_circleOffset = 0;
+	         }
+	
+	         //  Comment out the original PX_Short call for the original
+	         //  non-BLOB version of the Offset property used by the CIRC3
+	         //  sample.
+	         // PX_Short(pPX, _T("CircleOffset"), m_circleOffset, 0);
+	
+	         //****** NEW PX_Blob RELATED CODE ENDS HERE ******
+	
+	         PX_Long(pPX, _T("FlashColor"), (long &)m_flashColor,
+	             RGB(0xFF, 0x00, 0x00));
+	         PX_String(pPX, _T("Note"), m_note, _T(""));
+	       }
+	       else if (pPX->IsLoading())
+	       {
+	         m_circleShape = TRUE;
+	         m_circleOffset = 0;
+	         m_flashColor = RGB(0xFF, 0x00, 0x00);
+	         m_note = _T("");
+	       }
+	     }
+	
+	Additional query words: 1.5 2.5 1.51 2.51 1.52 2.52 2.0 3.0 2.1 3.1 2.2 3.2
+	
+	======================================================================
+	Keywords          : kbcode kbole kbdocfix kbdocerr kbCtrl kbVC500fix 
+	Technology        : kbAudDeveloper kbMFC
+	Version           : :1.0,4.0,4.1
+	
+	=============================================================================
+	

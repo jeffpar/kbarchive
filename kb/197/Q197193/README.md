@@ -1,0 +1,133 @@
+---
+layout: page
+title: "Q197193: FIX: Application Error in Locals Window with Specific Variables"
+permalink: kb/197/Q197193/
+---
+
+## Q197193: FIX: Application Error in Locals Window with Specific Variables
+
+	Article: Q197193
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:5.0,5.0a
+	Operating System(s): 
+	Keyword(s): kbMiscTools kbvfp500aBUG kbvfp600fix kbXBase
+	Last Modified: 06-AUG-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you do the following:
+	
+	1. Run a program that uses several variables consisting of single alpha
+	  character names.
+	
+	2. Release a form.
+	
+	3. Scroll the Debugger Locals window to look at some of the variable values.
+	
+	Windows displays an application error message, and Visual FoxPro is terminated.
+	
+	The message displayed depends on the operating system:
+	
+	- Under Windows NT, an error message similar to the following appears:
+	
+	  An application error has occurred and an application error log is being
+	  generated.
+	
+	  vfp.exe
+	  Exception: access violation (0xc0000005), Address 0x0043e8db
+	
+	- Under Windows 9x, an error message similar to the following appears:
+	
+	  This program has performed an illegal operation and will be shut down. If the
+	  problem persists, contact the program vendor.
+	
+	  If you click Details in the dialog box, a message similar to the following
+	  appears:
+	
+	  VFP caused an invalid page fault in module VFP.EXE at 0137:0044940e.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article. This bug has been corrected in Visual FoxPro 6.0.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Run the following code from a program (.prg) file:
+	
+	        SET STEP ON
+	        CLEAR DEBUGGER
+	        STORE .t. to a,b,c,d,e,f,g,h
+	        KEYBOARD "{enter}"
+	
+	        TheForm=CreateObject("aForm")
+	        TheForm.show
+	        READ events
+	        RETURN
+	
+	        DEFINE class aForm as form
+	           ADD object aButton as commandbutton
+	           PROCEDURE aButton.click
+	              thisform.release
+	           ENDPROC
+	        ENDDEFINE
+	
+	2. Switch to the debugger by pressing ALT+Tab.
+	
+	3. Scroll down in the Locals Window to the last item by clicking on the down
+	  arrow in the Locals Window scroll bar.
+	
+	4. The Locals window scroll bar must be visible for this behavior to occur. If
+	  you do not see the error, you can make the Locals window shorter by resizing
+	  it with the mouse, and repeating the steps.
+	
+	RESULT: You will receive an application error that will vary depending on the
+	operating system. See the SYMPTOMS section above for details. The addresses may
+	vary depending on operating system version or Visual FoxPro 5 build number.
+	
+	This only happens with these specific variable names. If you modify the STORE
+	command in the program above to read as follows, the behavior does not occur:
+	
+	     STORE .t. to aa,bb,cc,dd,ee,ff,gg,hh
+	
+	As a rule, it is a good idea to avoid the letters "A" through "N", uppercase or
+	lowercase, for variable, field, or table names. Visual FoxPro uses these as
+	default alias names for tables when tables are opened and their names are
+	already in use.
+	
+	Example:
+	
+	     USE table1
+	     USE table1 AGAIN IN 0
+	
+	The second table1 will be used under the alias A.
+	
+	This error does not occur if you do not scroll in the Locals window.
+	
+	(c) Microsoft Corporation 1998, All Rights Reserved. Contributions by Jim
+	Saunders, Microsoft Corporation
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbMiscTools kbvfp500aBUG kbvfp600fix kbXBase 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP500a
+	Version           : WINDOWS:5.0,5.0a
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

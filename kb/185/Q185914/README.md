@@ -1,0 +1,68 @@
+---
+layout: page
+title: "Q185914: SMS: Mismatch in Network Data Reported by 16/32-Bit Inv Agents"
+permalink: kb/185/Q185914/
+---
+
+## Q185914: SMS: Mismatch in Network Data Reported by 16/32-Bit Inv Agents
+
+	Article: Q185914
+	Product(s): Microsoft Systems Management Server
+	Version(s): winnt:1.2
+	Operating System(s): 
+	Keyword(s): kbInventory smsinv
+	Last Modified: 25-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server version 1.2 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The Systems Management Server Inventory Agents, Invdos and Invwin32, do not
+	record the NetCardID information (Sms.ini, [Local]) in the same format.
+	
+	Invdos records the media access control address using a set of lowercase letters
+	and digits whereas Invwin32 reports the media access control address with a set
+	of uppercase letters and digits.
+	
+	When a 16-bit client and a 32-bit client are installed on the same computer,
+	Systems Management Server Database Manager (Dbclean) cannot report it as a
+	duplicate computer because the NetCardID case is different for each client
+	(lowercase for 16-bit versus uppercase for 32-bit).
+	
+	NOTE: For clients with dual-boot systems, you must choose one of the operating
+	systems on which to run the Systems Management Server client. Systems Management
+	Server does not support its installation on both operating systems even though
+	it would allow the user to switch back and forth repeatedly. This is because
+	Systems Management Server must know which operating system is run by each client
+	computer, so that the correct jobs can be sent to each client. If Systems
+	Management Server is installed on a computer with a dual-boot configuration and
+	you want to change which operating system is supported by Systems Management
+	Server, run the Upgrade.bat file on the operating system you want to switch to.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Systems Management Server
+	version 1.2. This problem has been corrected in the latest U.S. service pack for
+	Systems Management Server version 1.2. For information on obtaining the service
+	pack, query on the following word in the Microsoft Knowledge Base (without the
+	spaces):
+	
+	  S E R V P A C K
+	
+	Additional query words: prodsms
+	
+	======================================================================
+	Keywords          : kbInventory smsinv 
+	Technology        : kbSMSSearch kbSMS120
+	Version           : winnt:1.2
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

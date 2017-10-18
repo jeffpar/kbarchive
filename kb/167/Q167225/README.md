@@ -1,0 +1,259 @@
+---
+layout: page
+title: "Q167225: HOWTO: Access an Oracle Database Using RDO"
+permalink: kb/167/Q167225/
+---
+
+## Q167225: HOWTO: Access an Oracle Database Using RDO
+
+	Article: Q167225
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): WINDOWS:5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbOracle kbVBp500 kbVBp600 kbDSupport
+	Last Modified: 27-AUG-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	With Visual Basic 5.0 and higher Enterprise edition, you have the ability to
+	connect to an Oracle database through a DSN-Less connection, execute a stored
+	procedure using parameters, and get return values from that stored procedure.
+	The example in this article illustrates all of this functionality.
+	
+	MORE INFORMATION
+	================
+	
+	The example in this article is a simple Visual Basic project that creates a
+	DSN-Less connection against an Oracle database and executes a stored procedure.
+	When working with Oracle and the Microsoft ODBC Driver for Oracle, there are
+	some settings that are different than working with Microsoft SQL Server. These
+	differences occur because you are using a different ODBC driver.
+	
+	The Visual Basic 5.0 and higher Enterprise edition includes RDO 2.0 and the
+	Microsoft ODBC Driver for Oracle. Both of these need to be installed in order to
+	run the example project in this article.
+	
+	NOTE: The ODBC driver from Oracle does not support the entire RDO 2.0 feature set
+	(including the calling of stored procedures and binding return values).
+	
+	The following example was created against an Oracle 7.3 database through a
+	SQL*Net 2.3 connection. All of the following code (including the stored
+	procedure) should work fine with Oracle 7.2. But, the Microsoft ODBC Driver for
+	Oracle Help file states that it only supports SQL*Net 2.3
+	
+	There are two objects that need to be created on the Oracle database; a table
+	(rdooracle) and a stored procedure (rdoinsert). Following are the data
+	definition language (DDL) scripts to create these objects:
+	
+	- RDOORACLE: This is just a two-column table with the first column set as the
+	  primary key:
+	
+	        CREATE TABLE rdooracle (
+	                  item_number    NUMBER(3) PRIMARY KEY,
+	                  depot_number   NUMBER(3));
+	
+	- RDOINSERT: This procedure accepts a single numeric input parameter and
+	  returns a single numeric output parameter. The input parameter is first used
+	  by an input statement then it is divided by 2 and set as the output
+	  parameter:
+	
+	        CREATE OR REPLACE PROCEDURE rdoinsert
+	           (insnum IN NUMBER, outnum OUT NUMBER)
+	        IS
+	        BEGIN
+	        INSERT INTO rdooracle
+	           (Item_Number, Depot_Number)
+	        VALUES
+	           (insnum, 16);
+	        outnum := insnum/2;
+	        END;
+	
+	NOTE: You must use Procedures that have output parameters and not Functions when
+	working with Oracle and RDO placeholder parameters.
+	
+	The above scripts can be run from SQL*Plus or from within the Visual Database
+	Tools Add-In in the Visual Basic 5.0 Enterprise edition. Once these objects have
+	been created, you can create the Visual Basic project that will use them.
+	
+	Step-by-Step Example
+	--------------------
+	
+	This example project uses a simple form to send a bind parameter to the RDOINSERT
+	stored procedure and then return the output parameter from that procedure. Here
+	are the steps to create the project:
+	
+	1. Open a new project in Visual Basic 5.0 Enterprise edition. Form1 is created
+	  by default.
+	
+	2. Place the following controls on the form:
+	
+	     Control     Name     Text/Caption
+	     ---------------------------------
+	     Button      cmdCheck  Check
+	     Button      cmdSend   Send
+	     Text Box    txtInput
+	     Label       lblInput  Input:
+	
+	3. From the Tools menu, select the Options item. Click the Default Full Module
+	  View option and then click OK. This will allow you to view all of the code
+	  for this project.
+	
+	4. Paste the following code into your code window:
+	
+	        Option Explicit
+	        Dim Cn As rdoConnection
+	        Dim En As rdoEnvironment
+	        Dim CPw As rdoQuery
+	        Dim Rs As rdoResultset
+	        Dim Conn As String
+	        Dim QSQL As String
+	        Dim Response As String
+	        Dim Prompt As String
+	
+	        Private Sub cmdCheck_Click()
+	
+	            QSQL = "Select Item_Number, Depot_Number From rdooracle Where " _
+	            & "item_number =" & txtInput.Text
+	            Set Rs = Cn.OpenResultset(QSQL, rdOpenStatic, , rdExecDirect)
+	
+	            Prompt = "Item_Number = " & Rs(0) & ".  Depot_Number = " _
+	            & Rs(1) & "."
+	
+	            Response = MsgBox(Prompt, , "Query Results")
+	
+	            Rs.Close
+	
+	        End Sub
+	
+	        Private Sub cmdSend_Click()
+	
+	            CPw(0) = Val(txtInput.Text)
+	            CPw.Execute
+	
+	            Prompt = "Return value from stored procedure is " & CPw(1) & "."
+	            Response = MsgBox(Prompt, , "Stored Procedure Result")
+	
+	        End Sub
+	
+	        Private Sub Form_Load()
+	
+	            Conn = "UID=;PWD=;driver={Microsoft ODBC Driver for Oracle};" _
+	                 & "CONNECTSTRING=MyOracle;"
+	
+	            Set En = rdoEnvironments(0)
+	            Set Cn = En.OpenConnection("", rdDriverPrompt, False, Conn)
+	            QSQL = "{call rdoinsert(?,?)}"
+	            Set CPw = Cn.CreateQuery("", QSQL)
+	
+	        End Sub
+	
+	        Private Sub Form_Unload(Cancel As Integer)
+	
+	            En.Close
+	
+	        End Sub
+	
+	5. Run the project.
+	
+	When you enter a number in the text box, txtInput, and click the "Send" button,
+	the Oracle stored procedure, RDOINSERT, is called. The number you entered in the
+	text box is used as the input parameter for the procedure. The output parameter
+	is used in a message box that is called after the stored procedure has completed
+	processing. With your original value still in the text box, click the "Check"
+	button. This creates a simple read-only resultset that is displayed in another
+	message box.
+	
+	Following is a detailed explanation of the code used in this demonstration
+	project:
+	
+	The Form_Load event contains the code that creates the DSN-Less connection. It
+	also contains the code that creates the query that calls the stored procedure:
+	
+	      Private Sub Form_Load()
+	
+	         Conn = "UID=;PWD=;driver={Microsoft ODBC Driver for Oracle};" _
+	              & "CONNECTSTRING=MyOracle;"
+	
+	         Set En = rdoEnvironments(0)
+	         Set Cn = En.OpenConnection("", rdDriverPrompt, False, Conn)
+	         QSQL = "{call rdoinsert(?,?)}"
+	         Set CPw = Cn.CreateQuery("", QSQL)
+	
+	     End Sub
+	
+	Note that you are not using the rdPreparedStatement object. This object has been
+	replaced by the rdoQuery object. This is new for RDO 2.0. Also, with RDO 2.0,
+	you do not need to explicitly create a connection object as is done in this
+	project. You can create a stand-alone query object that is not specifically
+	associated with a connection. To learn more about this functionality, look up
+	the rdoQuery Object in the Visual Basic 5.0 Enterprise edition Help file.
+	
+	The connect string used to open a connection to an Oracle database (or any
+	database) is very dependent upon the underlying ODBC driver. Even though similar
+	parameters are used by most ODBC drivers (UID, PWD, etc.), the connect string
+	used here will work only with the Microsoft ODBC Driver for Oracle:
+	
+	  Conn = "UID=;PWD=;driver={Microsoft ODBC Driver for Oracle};" _
+	              & "CONNECTSTRING=MyOracle;"
+	
+	The most important part of this connect string is the "CONNECTSTRING" keyword. It
+	is used only by the Microsoft ODBC Driver for Oracle. For Microsoft SQL Server
+	6.5, you use the keyword "SERVER." The string assigned to CONNECTSTRING is the
+	Database Alias that you set up in SQL*Net. This is the only difference in the
+	connect string when connecting to an Oracle database. All of the other
+	parameters operate as described in the Help file (under rdoConnection Object)
+	for Visual Basic 5.0 Enterprise edition. As stated in the Help file, for a
+	connection, you do not specify a DSN in the connect string.
+	
+	Also in the Form_Load event is the code that creates the query object that calls
+	the stored procedure:
+	
+	     QSQL = "{call rdoinsert(?,?)}"
+	     Set CPw = Cn.CreateQuery("", QSQL)
+	
+	With Oracle, you cannot specify a return value for a stored procedure call as you
+	can with Microsoft SQL Server 6.5; you must use stored procedures that have
+	output parameters as noted earlier in this article. The parameter placeholders
+	in the QSQL string are denoted by a "?" and referenced in the order they in
+	which they appear in the string. For more information on the use of parameter
+	placeholders in the rdoQuery object, refer to the rdoParameter object in the
+	Visual Basic 5.0 Enterprise edition Help file.
+	
+	The remainder of the project is fairly straight-forward and well-documented in
+	both the online Help file and Books Online, both of which come with Visual Basic
+	5.0. The RDO issues critical to working with Oracle, the connect string, and the
+	calling of stored procedures have been detailed in this project. For more
+	information on these issues, please consult your Oracle SQL*Net 2.3
+	documentation, the Help file for the Microsoft ODBC Driver for Oracle, and your
+	Oracle 7 server documentation.
+	
+	(c) Microsoft Corporation 1999, All Rights Reserved.
+	Contributions by Sam Carpenter, Microsoft Corporation
+	
+	
+	REFERENCES
+	==========
+	
+	Visual Basic 5.0 Enterprise Edition Help files
+	
+	Oracle SQL*Net 2.3 Help file
+	
+	Hitchhiker's Guide to Visual Basic and SQL Server - Fourth Edition.
+	
+	Additional query words: Oracle RDO Stored Procedure
+	
+	======================================================================
+	Keywords          : kbOracle kbVBp500 kbVBp600 kbDSupport 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600
+	Version           : WINDOWS:5.0,6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

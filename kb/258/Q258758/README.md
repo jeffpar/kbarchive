@@ -1,0 +1,154 @@
+---
+layout: page
+title: "Q258758: XADM: Understanding How and When Mailbox Manager Processes Items"
+permalink: kb/258/Q258758/
+---
+
+## Q258758: XADM: Understanding How and When Mailbox Manager Processes Items
+
+	Article: Q258758
+	Product(s): Microsoft Exchange
+	Version(s): 5.5 SP3
+	Operating System(s): 
+	Keyword(s): exc55sp3
+	Last Modified: 26-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.5 SP3 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article discusses the expected behavior of the Exchange Server Mailbox
+	Manager service in different settings and with different target item locations.
+	The Mailbox Manager service processes items according to the age limit, item
+	location, and deletion mode that are selected. The service either deletes or
+	moves items that reach specified age limits for the location of those items.
+	This article assumes that the Run Mode is set to Cleanup rather than Audit on
+	the General tab of the Mailbox Manager add-in properties.
+	
+	The Mailbox Manager service is included with Exchange Server Service Pack 3,
+	either on the CD-ROM in the Support\Mbmngr folder, or in the Sp3_55ss.exe file
+	that is available from the following Web site:
+	
+	  http://www.microsoft.com/exchange/downloads/55/SP3_EngDL.asp
+	
+	Note that the Mailbox Manager service requires Exchange Server 5.5 Service Pack 2
+	or later. See the Mailbox Manager documentation for complete system
+	requirements.
+	
+	MORE INFORMATION
+	================
+	
+	How Mailbox Manager Processes Items
+	-----------------------------------
+	
+	Mailbox Manager processes items according to the Deletion Mode that is selected
+	on the General tab of the Exchange Server add-in object properties. If Mailbox
+	Manager is enabled for a folder in the Folder Age Limits dialog box and an item
+	in that folder exceeds the age limit that is specified in that dialog box, that
+	item is "processed." Mailbox Manager can move an item to the Deleted Items
+	folder or to a corresponding subfolder in the System Cleanup folders, or Mailbox
+	Manager can "hard delete" an item immediately. The following are available
+	Deletion Mode settings and explanations of these settings:
+	
+	- Move to Deleted Items. This deletion mode simply moves the processed item to
+	  the Deleted Items folder.
+	
+	- Move to System Cleanup Folders. This deletion mode creates subfolders in the
+	  System Cleanup folders that correspond to the processed items. The System
+	  Cleanup folders are created at the root of each user's mailbox at the same
+	  hierarchical level as the Inbox folder.
+	
+	- Delete Items Immediately. This deletion mode performs a "hard delete" on
+	  processed items.
+	
+	For additional information about how to recover these items, click the article
+	number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q178630 XADM: How to Recover Items That Do Not Touch the Deleted Items Folder
+	
+	The exception to these explanations is the Deleted Items hierarchy. Mailbox
+	Manager handles items in the Deleted Items hierarchy differently than items in
+	other folders. Mailbox Manager never moves items in the Deleted Items folder or
+	any of its subfolders to the System Cleanup folders or back to the Deleted Items
+	folder. Instead, when Mailbox Manager processes an item in the Deleted Items
+	folder, that item is deleted immediately.
+	
+	When Mailbox Manager Processes Items
+	------------------------------------
+	
+	Mailbox Manager processes an item if the age of the item has reached the age
+	limit that is specified in the Folder Age Limits dialog box for the folder in
+	which the item is contained.
+	
+	The age of an item is determined by the amount of time that has elapsed since the
+	item was sent to the mailbox, and not by the amount of time that an item has
+	spent in a particular folder. As a result, the System Cleanup folders need to
+	have an age limit that is greater that all of the other folders.
+	
+	For example, if the Inbox folder has a 10-day limit and System Cleanup folders
+	have a 15-day limit, after an item has been in the Inbox folder for 10 days,
+	Mailbox Manager moves the item to the System Cleanup folder. The item only stays
+	in the System Cleanup folder for 5 days before Mailbox Manager deletes the item,
+	rather than the 15 days that might be expected. This is because the actual age
+	of the item is 15 days, even though the item has been in the System Cleanup
+	folders for only 5 days. The age of an item is determined by the time that the
+	item was sent to the mailbox, not the amount of time that the item remains in
+	the System Cleanup folders.
+	
+	IMPORTANT: Note that items that are in the subfolders of any folder that is
+	listed in the Folder Age Limits dialog box (for example, subfolders of the
+	Inbox, Sent Items, or Calendar folders) are processed when they reach the age
+	limits that are set for Other Folders.
+	
+	Quick Reference Tables
+	----------------------
+	
+	The following table outlines the way that an item is processed according to the
+	location of the item and the deletion mode that is selected for the item. To
+	find out the way that an item is processed, find the deletion mode in the column
+	headings, and then find the item location in the row headings; the intersection
+	is the action that is performed on the item during processing.
+	
+	+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	|                                                                                                                                                                     | Move to Deleted Items Folder               | Move to System Cleanup Folders                                  | Delete Immediately | 
+	+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	| Item is in the root of any folder (except Deleted Items) listed in the Folder Age Limits dialog box.                                                                | Moved to root of the Deleted Items folder. | Moved to corresponding subfolder of the System Cleanup folders. | Deleted.           | 
+	+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	| Item is in the root of the Deleted Items folder.                                                                                                                    | Deleted.                                   | Deleted.                                                        | Deleted.           | 
+	+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	| Item is in any folder (except in subfolders of Deleted Items folder or in subfolders of the System Cleanup folders) not listed in the Folder Age Limits dialog box. | Moved to root of the Deleted Items folder. | Moved to corresponding subfolder of the System Cleanup folders. | Deleted.           | 
+	+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	| Item is in subfolders of the Deleted Items folder.                                                                                                                  | Deleted.                                   | Deleted.                                                        | Deleted.           | 
+	+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	| Item is in the System Cleanup folders.                                                                                                                              | Deleted.                                   | Deleted.                                                        | Deleted.           | 
+	+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	
+	The following table contains the age limit settings that applies to items in
+	given locations. Each row contains an age limit that determines when an item is
+	processed and an item location.
+	
+	+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	| Item Location                                                                                          | Determinant Setting in the Folder Age Limits Dialog Box | 
+	+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	| Root of any folder listed in the Folder Age Limits dialog box                                          | Age limit for that folder                               | 
+	+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	| Root or any subfolder of the System Cleanup folders                                                    | The System Cleanup folders                              | 
+	+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	| Subfolder of any folder (except the System Cleanup Folders) listed in the Folder Age Limits dialog box | Other folders                                           | 
+	+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	
+	Additional query words: MBMgr MBCleanup
+	
+	======================================================================
+	Keywords          : exc55sp3 
+	Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange550SP3
+	Version           : :5.5 SP3
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

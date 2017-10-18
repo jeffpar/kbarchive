@@ -1,0 +1,94 @@
+---
+layout: page
+title: "Q174179: Err Msg: WAB Caused a General Protection Fault in Module..."
+permalink: kb/174/Q174179/
+---
+
+## Q174179: Err Msg: WAB Caused a General Protection Fault in Module...
+
+	Article: Q174179
+	Product(s): The Microsoft Network
+	Version(s): WINDOWS:2.5
+	Operating System(s): 
+	Keyword(s): kberrmsg kbmsn
+	Last Modified: 09-OCT-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The Microsoft Network version 2.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you attempt to find a contact or group by clicking Start, pointing to Find,
+	and then clicking People, you may receive the following error message when you
+	click a directory service in the Search box:
+	
+	  WAB caused a general protection fault in module USER.EXE
+	
+	CAUSE
+	=====
+	
+	This error message can occur if the entry for the directory service is damaged.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, remove and re-create the directory service entry. To do
+	this, follow these steps:
+	
+	1. Click Start, point to Find, and then click People.
+	
+	2. Right-click Windows Address Book, and then click Directory Services.
+	
+	3. Click the appropriate directory service, and then click Remove.
+	
+	4. Click Add to re-create the entry, and then click the General tab.
+	
+	5. In the Friendly Name box, type the name you want to appear for the directory
+	  service in the list of directory services. For example, for The Microsoft
+	  Network, you may want to type "MSN" (without quotation marks).
+	
+	6. In the Directory Service box, type the name of the Internet directory server.
+	  For example, for MSN, The Microsoft Network, type the following:
+	
+	  "ldap.msn.com" (without the quotation marks)
+	
+	7. Under Authentication Type, click the appropriate option for your directory
+	  service. The following authentication types are available:
+	   - Anonymous: This setting specifies to use anonymous authentication with
+	     this directory service, which requires no user name or password.
+	
+	   - Secure Password (Requires Server Support): This setting specifies that
+	     this server requires you to use challenge/response password authentication
+	     to log on, such as Microsoft Distributed Password Authentication (DPA).
+	     For additional information about this setting, right-click the Secure
+	     Password (Requires Server Support) option, and then click What's This? on
+	     the menu that appears.
+	
+	   - Password: This setting specifies to use user name and password
+	     authentication for this directory service.
+	
+	     If you are creating an entry for MSN, click Secure Password (Requires
+	     Server Support).
+	
+	8. Click the "Check names against this server when sending mail" check box to
+	  select it or clear it as appropriate for your directory service. This setting
+	  specifies that when you send mail, recipient names are checked against this
+	  directory service to verify that the e-mail addresses are correct. For MSN,
+	  this check box should be clear.
+	
+	9. Click OK, and then click OK again to close the Directory Services dialog box.
+	
+	Additional query words: gpf gp
+	
+	======================================================================
+	Keywords          : kberrmsg kbmsn 
+	Technology        : kbMSNSearch kbMSN250
+	Version           : WINDOWS:2.5
+	Issue type        : kbprb
+	
+	=============================================================================
+	

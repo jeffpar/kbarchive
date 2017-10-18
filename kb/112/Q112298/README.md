@@ -1,0 +1,93 @@
+---
+layout: page
+title: "Q112298: DOC: Port I/O with inp() and outp() Fails on Windows NT"
+permalink: kb/112/Q112298/
+---
+
+## Q112298: DOC: Port I/O with inp() and outp() Fails on Windows NT
+
+	Article: Q112298
+	Product(s): Microsoft C Compiler
+	Version(s): 1.00 2.00
+	Operating System(s): 
+	Keyword(s): kbCRT kbVC
+	Last Modified: 22-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The C Run-Time (CRT), included with:
+	   - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Attempting to use the port I/O (input/output) functions such as inp() and outp()
+	from within an application for Windows NT running in user mode causes a
+	privileged instruction exception to occur. The sample code provided in the
+	OUTP.C online help sample for the outp() function and related functions can be
+	used to illustrate this behavior.
+	
+	The documentation regarding the compatibility of the port I/O functions is
+	incomplete. Win32-based applications that call inp(), outp(), and so forth can
+	be successfully compiled and linked. However, these applications will generate
+	the privileged instruction exception because the port I/O functions cannot be
+	called from code running in user mode.
+	
+	Do not call the following functions from within a Win32-based application
+	executing in user mode:
+	
+	  _inp()
+	  _inpw()
+	  _inpd()
+	  _outp()
+	  _outpw()
+	  _outpd()
+	
+	NOTE: This documentation error has been corrected for the Visual C++ 4.0 Books
+	Online. The descriptions of the various port I/O functions do not list "Win NT"
+	in the Compatibility section.
+	
+	
+	MORE INFORMATION
+	================
+	
+	According to the documentation provided with Visual C++ 32-bit Edition, inp(),
+	outp(), and the other port I/O related functions are Win32 and Win32s
+	compatible. However, executing code that uses these functions causes a
+	privileged instruction exception on Win32 on Windows NT. The code that uses
+	inp(), outp(), and so forth will execute correctly on Win32s.
+	
+	The inp(), outp(), and other I/O port related functions map to privileged
+	processor instructions. For example, on Intel processors, the inp() and outp()
+	functions end up calling the IN and OUT instructions. The privileged instruction
+	exception occurs when these instructions are executed because typical Windows NT
+	applications execute in a nonprivileged (user) mode. Only code executing in
+	kernel mode has the necessary rights to execute privileged instructions. Kernel
+	mode code is typically found in device drivers.
+	
+	For more information on user mode and kernel mode in Windows NT, refer to the
+	Microsoft Press book "Inside Windows NT" by Helen Custer. For an example of a
+	kernel mode Windows NT device driver that allows user mode applications to
+	access hardware ports, refer to the GENPORT sample provided with the Microsoft
+	Windows NT Device Driver Kit (DDK).
+	
+	REFERENCES
+	==========
+	
+	The Online help for _inp, _inpw, _inpd, _outp, _outpw, and _outpd.
+	The Microsoft Press book "Inside Windows NT" by Helen Custer.
+	The Microsoft Press book "Microsoft's 80386/80486 Programming Guide" by Ross P.
+	Nelson.
+	The "Kernel-Mode Device Driver Guide" provided with the Microsoft Windows NT DDK.
+	
+	Additional query words: 1.00 2.00
+	
+	======================================================================
+	Keywords          : kbCRT kbVC 
+	Technology        : kbVCsearch kbAudDeveloper kbCRT
+	Version           : 1.00 2.00
+	
+	=============================================================================
+	

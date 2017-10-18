@@ -1,0 +1,153 @@
+---
+layout: page
+title: "Q231399: SMS:SMSCliToknAcct&amp; and/or SMSCliSvcAcct Accounts Locked Out"
+permalink: kb/231/Q231399/
+---
+
+## Q231399: SMS:SMSCliToknAcct&amp; and/or SMSCliSvcAcct Accounts Locked Out
+
+	Article: Q231399
+	Product(s): Microsoft Systems Management Server
+	Version(s): winnt:2.0
+	Operating System(s): 
+	Keyword(s): kbSecurity kbServer kbsms200 kbsms200bug kbsms120 kbsms120bug kbCAP kbSoftwareDist
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server version 2.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	After adding clients to a Systems Management Server site, administrators may
+	observe the following symptoms involving account lockouts and/or software
+	distribution failure:
+	
+	- Software distribution fails to domain controllers because the
+	  SMSCliToknAcct& domain account is locked out.
+	
+	- Software distribution fails to site systems that are not domain controllers
+	  because the SMSCliToknAcct& is locked out in the local accounts database.
+	
+	- The Systems Management Server Client Service fails to start on site systems
+	  that are not domain controllers because the SMSCliSvcAcct& account has
+	  been locked out.
+	
+	- The SMSCliToknAcct& in the domain is continually locked out.
+	
+	- The SMSCliToknAcct& on individual site systems that are not domain
+	  controllers is continually locked out.
+	
+	- The SMSCliSvcAcct& on individual site systems that are not domain
+	  controllers is continually locked out.
+	
+	To work around this problem, disable account lockouts on the domain and on
+	individual site systems that are not domain controllers.
+	
+	
+	CAUSE
+	=====
+	
+	The Systems Management Server Client services incorrectly attempts to use the
+	local SMSCliToknAcct& and the local SMSCliSvcAcct& credentials when
+	attempting to connect to site systems such as client access points (CAPs) or
+	distribution points.
+	
+	On site systems that happen to be Systems Management Server clients and are not
+	domain controllers, both the SMSCliToknAcct& and SMSCliSvcAcct& accounts
+	exist in the local accounts database but have different passwords than those
+	similarly named accounts in the client's local accounts database. The continual
+	attempts by individual clients to connect with the client-specific accounts can
+	cause these two accounts to get locked out on the site systems as a result of
+	logon failures.
+	
+	On site systems that are domain controllers, only one account with the same name
+	exists, the SMSCliToknAcct& account, which is shared among all the domain
+	controllers. If any of the domain controllers for a given domain are configured
+	as a client access point or distribution point, clients may incorrectly attempt
+	to use the local account credentials to access these site systems. This can
+	result in logon failures due to the password mismatch. Successive logon failures
+	can cause lockouts of the SMSCliToknAcct& domain account.
+	
+	WORKAROUND
+	==========
+	
+	To resolve this problem, obtain the latest service pack for Systems Management
+	Server 2.0. For additional information, click the following article number to
+	view the article in the Microsoft Knowledge Base:
+	
+	  Q236325 SMS: How to Obtain the Latest Systems Management Server 2.0 Service
+	  Pack
+	
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	  Date        Time         Size      File name    Platform
+	  --------------------------------------------------------
+	
+	  06/08/99   06:12pm          67    Compver.ini    
+	  06/08/99   06:09pm     199,008   Mslmcli9.dll   Intel
+	  06/08/99   06:09pm     336,224   Mslmclin.dll   Intel
+	  04/06/99   06:11pm     228,704    Abnwcli.dll   Intel
+	  06/08/99   11:52am     264,544    NdsCliN.dll   Intel
+	  06/08/99   06:09pm     334,176   Mslmsvrn.dll   Intel
+	  05/19/99   01:03pm      69,488    Clisvcl.exe   Intel
+	  06/08/99   06:12pm   1,172,311    CCMCore.exe   Intel
+	  06/08/99   06:18pm   3,118,422    CliCore.exe   Intel
+	  06/08/99   06:10pm     575,248   Mslmclin.dll   Alpha
+	  04/06/99   06:13pm     403,728    Abnwcli.dll   Alpha
+	  06/08/99   06:10pm     571,152   Mslmsvrn.dll   Alpha
+	  06/08/99   06:18pm   4,085,128    Clicore.exe   Alpha
+	  06/08/99   06:18pm   1,667,169    CCMCore.exe   Alpha
+	  05/19/99   01:03pm     101,648    Clisvcl.exe   Alpha
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed that this is a problem in Systems Management Server 2.0.
+	This problem was first corrected in Systems Management Server 2.0 Service Pack
+	Service Pack 1.
+	
+	MORE INFORMATION
+	================
+	
+	The SMSCliToknAcct& account is used to launch installations in several
+	specific situations:
+	
+	- The Run with administrative rights option is enabled for a program that isn't
+	  also configured to use the Windows NT client software installation account.
+	
+	- The program is set to run Whether or not a user is logged on and the program
+	  isn't configured to use the Windows NT client software installation account.
+	
+	- The program is set to run Only when no user is logged on and isn't configured
+	  to use the Windows NT client software installation account.
+	
+	The Systems Management Server client service runs under the SMSCliSvcAcct&
+	account on Windows NT-based clients that are not domain controllers. On domain
+	controllers the client service runs under the context of a machine-specific
+	domain account named SMS&_<servername>. The SMSCliSvcAcct& account
+	lockout doesn't occur when using domain controllers as site systems because
+	there is not an account named SMSCliSvcAcct& automatically created on domain
+	controller clients.
+	
+	This issue will not affect the majority of client systems in a site, only those
+	which are site systems or domain controllers.
+	
+	
+	Additional query words: prodsms
+	
+	======================================================================
+	Keywords          : kbSecurity kbServer kbsms200 kbsms200bug kbsms120 kbsms120bug kbCAP kbSoftwareDist 
+	Technology        : kbSMSSearch kbSMS200
+	Version           : winnt:2.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

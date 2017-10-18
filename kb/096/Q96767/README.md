@@ -1,0 +1,163 @@
+---
+layout: page
+title: "Q96767: Using the SETVER Command"
+permalink: kb/096/Q96767/
+---
+
+## Q96767: Using the SETVER Command
+
+	Article: Q96767
+	Product(s): Microsoft Disk Operating System
+	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 17-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes how you can use the SETVER command to add an MS-DOS-based
+	application to the version table so that you can run it successfully under
+	MS-DOS 5.0 and later.
+	
+	MORE INFORMATION
+	================
+	
+	Some applications check which version of Microsoft MS-DOS is running when you
+	start them. Such applications may not run if you are using a version of MS-DOS
+	that the application was not designed for. For example, an application designed
+	for MS-DOS version 3.30 may not start if you are running MS-DOS version 6.0;
+	instead, the application may display a message similar to the following:
+	
+	  Incorrect DOS version
+	
+	This message indicates that one of the following problems exists:
+	
+	- The application is incompatible with your version of MS-DOS.
+	
+	- The application is compatible; however, the application cannot run because it
+	  interprets the MS-DOS version as incompatible.
+	
+	Contact the manufacturer of your application to determine whether it is
+	compatible with MS-DOS versions 5.0, 6.0, or 6.2. If it is incompatible with
+	these versions, you need to obtain an updated version of the application.
+	
+	When to Use SETVER
+	------------------
+	
+	If the application is actually compatible but interprets your version of MS-DOS
+	as incompatible, you may be able to work around this problem by adding the
+	application to the version table. The version table is a list of applications
+	that need MS-DOS to report a version number other than 5.0, 6.0, or 6.2. MS-DOS
+	maintains the version table in a file called SETVER.EXE, which is in your DOS
+	directory.
+	
+	Installing SETVER.EXE
+	---------------------
+	
+	To use SETVER, you must also have the "DEVICE=C:\DOS\SETVER.EXE" command in your
+	CONFIG.SYS file. This command installs the SETVER.EXE file, which contains the
+	version table, each time you start your computer. Usually, Setup adds this
+	command for you when you install MS-DOS version 5.0, 6.0, or 6.2 on your
+	computer.
+	
+	If "DEVICE=C:\DOS\SETVER.EXE" is not in your CONFIG.SYS file, use a text editor
+	to add it.
+	
+	You must restart your computer by pressing CTRL+ALT+DEL for the change to take
+	effect.
+	
+	NOTE: Make sure you have only one SETVER.EXE file on your hard disk drive. Each
+	SETVER.EXE file contains a unique version table. If you have multiple version
+	tables, SETVER may not report the correct version number to an application.
+	
+	To display the complete list of applications in the version table, type "setver"
+	(without the quotation marks) at the MS-DOS command prompt. The setup programs
+	for MS-DOS 5 Upgrade and MS-DOS 6 Upgrade add several programs and device
+	drivers to the version table; therefore, even if you don't add any programs to
+	the version table yourself, you will see a list of applications when you type
+	the command.
+	
+	Adding an Application to the Version Table
+	------------------------------------------
+	
+	To add an application to the version table, use the SETVER command. The syntax of
+	the SETVER command is as follows:
+	
+	  setver <filename> <n.nn>
+	
+	where <filename> is the name of the application file, including its
+	extension (you do not need to specify the location of the application file), and
+	<n.nn> is the version number you want MS-DOS to report. Specify the
+	version number of your previous version of MS-DOS. For example, if your previous
+	version of MS-DOS was 3.20, specify 3.20 on the SETVER command line.
+	
+	NOTE: You must restart your system by pressing CTRL+ALT+DEL for the change to
+	take effect.
+	
+	Suppose you have an application called EASYEDIT.EXE that requires MS-DOS to
+	report version 3.30. To work around this version number problem, type the
+	following command at the MS-DOS command prompt to add EASYEDIT.EXE to the
+	version table:
+	
+	  " setver easyedit.exe 3.30" (without the quotation marks)
+	
+	Removing an Application from the Version Table
+	----------------------------------------------
+	
+	If you install an updated version of the application, you may need to remove its
+	entry from the version table. You can do this by using the /D switch with the
+	SETVER command.
+	
+	For example, to remove the EASYEDIT.EXE application from the version table, type
+	the following command:
+	
+	  " setver easyedit.exe /d" (without the quotation marks)
+	
+	You must restart your computer by pressing CTRL+ALT+DEL for this change to take
+	effect. Once you do, MS-DOS goes back to reporting the current version of MS-DOS
+	to the application.
+	
+	Incompatible Applications
+	-------------------------
+	
+	The SETVER command does not affect whether an application is actually compatible
+	with MS-DOS. The command works only for applications that are already compatible
+	with MS-DOS version 5.0, 6.0, or 6.2, and simply need to receive a different
+	version number when they check for the MS-DOS version at startup.
+	
+	If an application is incompatible, you must obtain an updated version from the
+	manufacturer of the application.
+	
+	CAUTION: You many want to contact your software manufacturer to determine if your
+	specific program works with MS-DOS 5.0, 6.0, or 6.2. Some programs rely on
+	outdated MS-DOS functions that may not be present in later versions of MS-DOS.
+	Adding an incompatible program to the version table may result in lost or
+	corrupt data or system instabilities. Microsoft is not responsible for any lost,
+	damaged, or corrupted data.
+	
+	REFERENCES
+	==========
+	
+	For more information about the SETVER command, see Chapter 14 of the Microsoft
+	MS-DOS 5.0 "User's Guide and Reference" if you are using MS-DOS 5 Upgrade.
+	
+	If you are using MS-DOS 6 Upgrade or MS-DOS 6.2, see MS-DOS Help for more
+	information about the SETVER command. To use the MS-DOS Help, type "help"
+	(without the quotation marks) at the MS-DOS command prompt.
+	
+	Additional query words: 6.22 6.00 5.00 6.20 dos tshoot
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+	Version           : MS-DOS:5.x,6.0,6.2,6.21,6.22
+	
+	=============================================================================
+	

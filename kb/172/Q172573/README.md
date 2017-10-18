@@ -1,0 +1,519 @@
+---
+layout: page
+title: "Q172573: Voice Modem Drivers Available in Unimodem V"
+permalink: kb/172/Q172573/
+---
+
+## Q172573: Voice Modem Drivers Available in Unimodem V
+
+	Article: Q172573
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:95
+	Operating System(s): 
+	Keyword(s): dun kbDialUp
+	Last Modified: 28-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 95 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The downloadable version of Unimodem V includes a number of voice modem drivers
+	that are certified by Microsoft to take advantage of the features in Unimodem V.
+	This article lists the modems drivers included with the downloadable version of
+	Unimodem V.
+	
+	For more information about the contents of Unimodem V, please see the following
+	article in the Microsoft Knowledge Base:
+	
+	  Q140323 Microsoft Unimodem V Readme.txt File
+	
+	For information about obtaining Unimodem V, please see the following article in
+	the Microsoft Knowledge Base:
+	
+	  Q139383 Unimodem V Adds Additional Support for Data/Fax/Voice Modems
+	
+	MORE INFORMATION
+	================
+	
+	3X
+	   3X 14.4 Data Fax Modem Voice
+	
+	Acer
+	   Acer 14.4 Data Fax Voice, VF1114HV-C1
+	   Acer 14.4 Data Fax, F1114HV-R2
+	   Acer 2400 Bps Data Fax Voice, VF9924H-C1
+	   Acer 2400 Bps Data, 96-48 Fax, FM9648HR
+	   Acer 2400 Bps Data, M24H-R1
+	   Acer 28.8, V.34 Data Fax, F1128HV-R6
+	
+	Apex Data Inc.
+	   Apex V.34 Cellular PCMCIA Modem
+	   V.34 Cellular PCMCIA Modem
+	   Apex Data-Fax PCA-1414 PCMCIA Modem
+	
+	AST
+	   14.4 PCMCIA Data Fax modem
+	   AST 14.4 Data Fax Modem (RPI version)
+	   AST 14.4 Data Fax, Banksia International version
+	   AST 14.4 Data Fax, Creatix International version
+	   AST 14.4 Data Fax, Pace International version
+	   AST 14.4D-14.4F Data Fax PCMCIA modem
+	   AST 2400-9600 Data Fax Voice Modem
+	   AST Advantage 14.4 Data Fax Voice
+	   AST Advantage 14.4 Data Fax Voice Speakerphone
+	   AST EXCA 24-96 Data Fax PCMCIA
+	   AST PNB 24D-96F Data Fax PCMCIA
+	
+	ATT
+	   AT&T Comsphere 3825 Plus
+	   14.4 Data Fax Modem
+	   AT&T DataPort PCX 14.4 Data Fax
+	   AT&T KeepInTouch 28.8 V.34 PCMCIA
+	   AT&T KeepInTouch Cellular 28.8 V.34 PCMCIA
+	   AT&T KeepInTouch 28.8 V.34 PCMCIA
+	   AT&T DataPort Express V.34 (28.8)
+	   AT&T Comsphere 3810 Plus
+	   AT&T Co3820 Plus
+	   Nokia 14.4 PCMCIA
+	   14.4 PCMCIA Modem
+	   AT&T DataPort Express Internal
+	   AT&T DataPort Express External
+	   NEC 14.4 Kbps Data-Fax Card
+	   AT&T KeepInTouch Card
+	   14,400 bps Data-Fax PCMCIA Modem
+	   AT&T KeepInTouch Express Card
+	   14.4 Data Fax PCMCIA Modem
+	   AT&T Comsphere 3800 Series
+	   AT&T DataPort 14.4-Fax Internal
+	   AT&T DataPort 14.4-Fax External
+	   AT&T DataPort 2001
+	
+	Aztech Systems
+	   Aztech 14.4 Data Fax Voice Soundcard
+	
+	Banksia
+	   Banksia 14.4 Data Fax
+	   Banksia 14.4 Data Fax
+	
+	Best Data
+	   2400 bps Modem
+	   28.8 External modem
+	   28.8 Internal modem
+	   Best Data Smart One 1442F (FT, RPI)
+	   Best Data 1442FX Internal (FTX, RPI model)
+	   Best Data Smart One 1442F Modem
+	   Best Data Smart One 1442FX (FTX, RPI)
+	   Best Data Smart One 1442FX Modem
+	   Best Data Smart One 2400B Modem
+	   Best Data Smart One 2400X Modem
+	   Best Data Smart One 2834F Modem
+	   Best Data Smart One 2834FX Modem
+	   Best Data Smart One 9624FQ Modem
+	   Best Data Smart One 9648FX Modem
+	
+	Calcom
+	   2400-9600 Data Fax Voice Modem
+	   Calcom 14.4 Data Fax Voice, 1442VF
+	   Calcom 2400-9600 Data Fax Voice, 9624VF
+	   Calcom 14.4 Data Fax Voice
+	   Calcom 14.4 Data Fax, 1442EX
+	   Calcom 14.4 Data Fax, 1442F
+	   Calcom 2400-9600 Data Fax Voice
+	   Calcom 2400-9600 Data Fax, 9624i
+	   Calcom 28.8 Data Fax, 2842EX
+	   Calcom 28.8 Data Fax, 2842I
+	
+	Cardinal
+	   28.8, V.34-VFC Data Fax Modem Cardinal
+	   28.8, V.34-VFC Data Fax Modem Cardinal
+	   Cardinal 14.4 Data Fax Modem MVP144IF
+	   Cardinal 14.4 Kbps Internal Fax Modem
+	   Cardinal MB2650SR 2400 bps Fax Modem
+	   Cardinal MVP144CC 14.4 Kbps PC Card
+	   Cardinal MVP144E 14.4 Kbps Fax Modem
+	   Cardinal MVP144I 14.4 Kbps Fax Modem
+	   Cardinal MVP144IF 14.4 Kbps Fax Modem
+	   Cardinal MVP144XF 14.4 Kbps Fax Modem
+	   Cardinal MVP192I 19.2 Fax Modem
+	   Cardinal MVP24XF 2400 Fax Modem
+	   Cardinal MVP288I 28.8 Kbps V.34 Fax Modem
+	   Cardinal MVP288XF 28.8 Kbps V.34 Fax Modem
+	   Cardinal MVP288XF 28.8 Kbps V.34 Fax Modem PNP
+	
+	Cirrus Logic
+	   Cirrus Data Fax Voice MDK1414UN
+	   Cirrus Data Fax Voice MDK1414EC2
+	   14.4 Data Fax Modem
+	
+	Com 1
+	   COM1-SA MC214 2400 PCMCIA
+	   COM1-SA MC216 14.4 PCMCIA
+	   COM1-SA MC217 14.4 PCMCIA
+	   COM1-SA MC218 V.34 PCMCIA
+	
+	Compaq
+	   Compaq 144 Data+Fax (Enhanced Com Slot)
+	   Compaq 2400 Data+Fax (Enhanced Com Slot)
+	   Compaq 2400-9600 Data Fax Modem (PCMCIA)
+	   Compaq 288 Fax Modem (PCMCIA)
+	   Compaq Enhanced 9600 Data (Enhanced Com Slot)
+	   Compaq Enhanced 9600 Data+Fax (Enhanced Com Slot)
+	   Compaq International 2400 Data
+	   Compaq PCMCIA 144
+	   Compaq PCMCIA 2400-9600
+	   Compaq Presario 144 Data+Fax
+	   Compaq Presario 144 Data+Fax+Voice
+	   Compaq Presario 24-96 Data+Fax+Voice
+	   Compaq Presario International 24-96 Data+Fax+Voice
+	   Compaq SpeedPaq 144 (Enhanced Com Slot)
+	   Compaq SpeedPaq 144-I
+	   Compaq SpeedPaq 144-P
+	   Compaq SpeedPaq 19.2 Kbps PCMCIA Modem
+	   Compaq SpeedPaq 192 Modem (PCMCIA)
+	   Compaq SpeedPaq 192S Modem (PCMCIA)
+	
+	Connectware
+	   PhoneWorks 28.8 To Go!
+	   Sierra 14.4 Data Fax SQ3223
+	   Sierra 14.4 Data Fax Voice SQ3229
+	   Sierra 14.4 Data Fax Voice SQ3262
+	   Sierra 14.4 Data Fax Voice SQ3228
+	   14.4 Data Fax
+	   Sierra 14.4 Data Fax Voice SQ3230
+	   Sierra 28800 PnP SQ3465
+	
+	Creative Labs
+	   Creative Labs Modem Blaster 14.4
+	   Creative Labs Modem Blaster 14.4 PCMCIA
+	   Creative Labs Modem Blaster 19.2
+	   Creative Labs Modem Blaster 28.8
+	   Creative Labs Modem Blaster 28.8 DSVD PnP Voice
+	   Creative Labs Phone Blaster 28.8 DSVD PnP Voice
+	   Creative Labs Phone Blaster Voice
+	   Digicom or Creative Labs 19.2 Modem
+	
+	Creatix
+	   Creatix 14.4 PCMCIA
+	   Creatix 14.4
+	
+	Data Race
+	   Data Race RediCARD Data 14.4 Fax 9600
+	   Data Race RediCARD Data 14.4 Fax
+	   Data Race RediCARD Data 14.4 Fax 14.4
+	   Data Race RediCARD Data 2400 Fax 9600
+	
+	DEC
+	   DEC 14.4 International Data Fax PCMCIA
+	   DEC 14.4 Starion Data Fax Modem
+	
+	Diamond Multimedia
+	   28.8 Data Fax Modem
+	   TeleCommander 2500 Voice
+	   TeleCommander 3500
+	
+	Digicom
+	   214.4 Data FAX Modem
+	   Digicom 14.4 Data FAX Modem
+	   Digicom 9624AR External
+	   Digicom 9624AR+ External
+	   Digicom 9624E External
+	   Digicom 9624E+ External
+	   Digicom 9624LE External
+	   Digicom 9624LE+ External
+	   Digicom 9624LR External
+	   Digicom 9624LR+ External
+	   Digicom 9624PC+ Internal
+	   Digicom Connection 144+ Internal
+	   Digicom Connection 144+FAX Internal
+	   Digicom Connection 144DF Internal
+	   Digicom Connection 96+ Internal
+	   Digicom Connection Pro 19.2 Internal
+	   Digicom Eagle 14.4 V.32 Data FAX
+	   Digicom FaxModem 1442PC Internal
+	   Digicom Scout 14400 PCMCIA Fax Modem
+	   Digicom Scout Classic 144 External
+	   Digicom Scout External
+	   Digicom Scout Internal
+	   Digicom Scout Plus External
+	   Digicom Scout Plus Internal
+	   Digicom Scout Plus or Scout Plus Terbo
+	   Digicom Scout Plus or Terbo
+	   Digicom Scout Plus Terbo External
+	   Digicom Softmodem 14400 + Fax
+	
+	Digitan
+	   Digitan 14400 bps Internal Data-Fax Modem
+	   Digitan DS144FVM 14.4 Fax-Data-Voice Modem
+	   Digitan DS288FVM 28.8 Fax-Data-Voice Modem
+	   Digitan DS288F 28.8 Fax-Data Modem
+	   Digitan 28.8 DSVD Data Fax Voice
+	   Digitan 28.8, V.34 Data-Fax-Modem
+	   Digitan 28.8, V.34 Data-Fax-Voice Modem
+	
+	Eiger Labs Inc.
+	   Eiger 14.4 Data Fax PCMCIA
+	   14.4 Data Fax PCMCIA
+	
+	Epson
+	   Epson Data Fax 24-96 PCMCIA
+	
+	E-Tech
+	   E-Tech Bullet 100E 28.8 V.34 Data Fax
+	   E-Tech Bullet C1414CX 14.4 Data Fax PCMCIA
+	   E-Tech Bullet PC1414UX 14.4 Data Fax
+	   E-Tech Bullet PC288MX 28.8 V.34 Data Fax
+	   E-Tech Pocket P1414MX 14.4 Data Fax
+	
+	General DataComm
+	   General DataComm FastPro
+	   General DataComm FastPro or V.F 28.8
+	   General DataComm V.F 28.8
+	
+	GVC
+	   GVC V.32 9600 Modem
+	   GVC Super Modem 9600
+	   GVC External Fax Modem GM9648E
+	   GVC 14.4 Data Fax GM144i, F-1114HV-R2
+	   GVC 14.4 Data Fax GM144e, 14400 V.42bis-MNP5
+	   14400 Data Fax Modem
+	   GVC External Fax Modem 9696
+	   GVC External Fax Modem 9648
+	   GVC External Super Modem 2400
+	   GVC PCMCIA Faxmodem FM144-144V(P)
+	   14.4 Data Fax Modem PCMCIA
+	   GVC PCMCIA Faxmodem PFM-964824
+	   GVC External 28800 Fax Modem
+	
+	Hayes
+	   Hayes Optima 288 V.34-V.FC + FAX + Voice
+	   Hayes Optima 288 V.34-V.FC + FAX + Voice Plug & Play
+	
+	IBM
+	   IBM 7852 013, V.34 Data Fax
+	   IBM 7852 010, V.34 Data Fax
+	   IBM 28.8, V.34 Data Fax
+	   IBM 14.4 Data Fax with DAA PCMCIA
+	   14.4 Bps Data Fax Modem
+	   IBM Aptiva 310, 2400 Bps Data Fax
+	   IBM Aptiva 730, 14.4 Data Fax
+	   IBM Aptiva 510, 14.4 Data Fax Voice
+	   IBM Thinkpad 701 Internal Modem Voice
+	   IBM Aptiva 14.4 Data Fax Modem
+	   IBM Aptiva 2400-9600 Data Fax Modem
+	   2400 Bps Internal Modem
+	   IBM 2400, SM-24HN-1 Modem
+	   IBM 2400-9600 Data Fax Modem
+	   14400 Data Fax Modem
+	   IBM PS-1 Internal Fax Modem
+	
+	Infotel
+	   Infotel FM 144C Data Fax Voice
+	   Infotel V1414VH-L Data Fax Voice
+	   Infotel 1414VQE
+	   Infotel Modem 2400 SM-24N-S
+	   Infotel 2400P
+	   Infotel 2400 SF
+	   Infotel 1414VQH
+	   Infotel 9624P
+	   Infotel 9624H-S
+	   Infotel 144I
+	   Infotel 1414VQP
+	   Infotel 1428VQE
+	   Infotel 1428VQH-R
+	
+	Logicode
+	   14.4 Data-Fax Modem
+	   Logicode 14.4 Data Fax (RPI)
+	   Logicode 14.4 Data-Fax External (No voice)
+	   Logicode 14.4 Data-Fax Internal 1414HV (No voice!)
+	   Logicode 14.4 Data-Fax 1414XV-R
+	   Logicode 14.4 Data-Fax-Voice External
+	   Logicode 14.4 Data-Fax-Voice Internal
+	   Logicode 28.8, V.34 External
+	   Logicode 28.8, V.34 Internal
+	   Logicode 9624 Data-Fax External
+	   Logicode 9624 Data-Fax Internal
+	   14.4 Data Fax Modem Voice
+	   Logicode 14.4 Data-Fax-Voice PCMCIA
+	
+	Macronix
+	   Macronix 1200 bps Modem
+	   Macronix 14.4 Data Fax PCMCIA
+	
+	Maxtech
+	   Maxtech 28.8 Data Fax XM288E
+	   28.8 Data Fax Modem
+	   Maxtech 14.4 Data Fax PCMCIA, PCM144C
+	   Maxtech 28.8 Data Fax Internal, XM288I
+	   28.8 Data Fax Modem
+	   Maxtech 14.4 Data Fax (RPI), XM144I
+	   Maxtech 14.4 Data Fax Voice, XVM144I
+	
+	Mitsubishi
+	   Mitsubishi 14.4 PCMCIA
+	   Mitsubishi Melfax 14.4 PCMCIA
+	
+	Motorola
+	   Motorola 28.8 Internal Data Fax Modem
+	   Motorola OnlineSURFR 28.8 Internal Plug & Play
+	   Motorola Premier 33.6 Internal Plug & Play
+	   Motorola Premier 33.6 Desktop Plug & Play
+	   Motorola Premier 33.6 Desktop
+	   Motorola ModemSURFR Internal 28.8 Plug & Play
+	   Motorola ModemSURFR External 28.8 Plug & Play
+	   Motorola ModemSURFR External 28.8
+	   Motorola Lifestyle 28.8 Internal
+	   Motorola BitSURFR Plug & Play
+	   Motorola BitSURFR
+	   Motorola V.3225 or V.3229
+	   Motorola 3220 or 3220 Plus
+	   Motorola 3220 Plus
+	   Motorola 3220
+	   Motorola Modem
+	   Motorola 3260
+	   Motorola Lifestyle 28.8 V.34 Plug & Play
+	   Motorola Lifestyle 28.8 External
+	   Motorola Power 28.8 V.34 Plug & Play
+	   Motorola Power 28.8 External
+	   Motorola V.34R
+	   Motorola TA210 Plug & Play
+	   Motorola TA210
+	   Motorola Power 14.4 PCMCIA
+	   Motorola Lifestyle 14.4 PCMCIA
+	   Motorola 3260 FAST
+	   Motorola HMTA 200 (ISDN) Plug & Play
+	   Motorola HMTA 200 (ISDN)
+	   Motorola FasTalk 32x
+	   Motorola V.3257
+	   Motorola V.3229
+	   Motorola V.3227
+	   Motorola V.3225
+	   Motorola TA110 - TA120
+	   Motorola PCTA120
+	   Motorola CELLect 14.4
+	   Motorola CELLect 14.4 PCMCIA
+	   Motorola FasTalk FAX32bx
+	   Motorola FasTalk II
+	   Motorola V.3400 Plug & Play
+	   Motorola V.3400
+	
+	Packard Bell
+	   Packard Bell F-1114HV-R2 Data Fax
+	   Packard Bell 24DBF Data Fax Modem
+	   Packard Bell 14.4AM(SP) Modem-Soundcard
+	   Packard Bell F-114 Modem Fax
+	
+	Piiceon
+	   Piiceon Dispatcher 14.4 for LTE and Contura
+	   Piiceon Dispatcher 14.4 for Toshiba
+	   Piiceon Dispatcher 14.4 PCMCIA
+	   Piiceon Dispatcher 28.8, V.34 PCMCIA
+	   Piiceon Dispatcher Modem
+	   Piiceon Dispatcher PCMCIA
+	   Piiceon Dispatcher V.34 for LTE and Contura
+	
+	Premax
+	   28.8, V.34 PCMCIA Modem
+	   Premax 28.8, V.34 PCMCIA
+	   Premax 28.8, VFC PCMCIA
+	
+	Prometheus
+	   Prometheus CyberPhone PC144evsp
+	   Prometheus CyberPhone PC144ev
+	   Prometheus 14.4 Data Fax Modem
+	   Prometheus CyberPort PC144e
+	   Prometheus CyberStereo PC144ivspa
+	   Prometheus CyberStereo PC144iva
+	   Prometheus 14.4 Data Fax Modem
+	   Prometheus CyberPhone PC144ivsp
+	   14.4 Data Fax Modem, Plug & Play
+	   Prometheus CyberPhone PC144iv
+	   Prometheus CyberPort PC144i
+	
+	Reveal
+	   14.4 Data Fax Voice Modem+Soundcard
+	   Reveal 14.4, Data Fax PC-Card CM144
+	   Reveal 14.4, Data Fax PM500
+	   Reveal 28.8, V.34, Data Fax PM700
+	   Reveal Decathlon XL 14.4 Modem+Sound Card
+	
+	Rockwell
+	   14400 bps Data-Fax Modem
+	   14400 bps Internal Data-Fax Modem
+	   14400 bps Internal Data-Fax Modem
+	   Rockwell 144 PCMCIA Data+Fax+Voice
+	   Rockwell 288 PCMCIA Data+Fax+Voice
+	
+	Sierra Wireless
+	   Sierra Wireless PocketPlus 210 Wireline
+	
+	Smart Modular Technologies
+	   SMART Modular Tech ST 1414 Cell PCMCIA
+	   SMART Modular Tech ST 2814 V.34 PCMCIA
+	
+	Supra Corporation
+	   SupraExpress 288i PnP Voice
+	   SupraExpress 336i Multinational
+	   Supra 336i SP
+	   SupraSonic 336V+ Plug & Play
+	   SupraSonic 336V+
+	   Supra 336i SVD
+	   SupraExpress 288i Multinational
+	   Supra 288i SP
+	   SupraExpress 288i SP
+	   SupraSonic 288V+ Plug & Play
+	   SupraSonic 288V+
+	   Supra COMcard 144 Data Fax PCMCIA
+	
+	Turbomodem
+	   Turbomodem Plus FM-144VR-1
+	   14400 Data Fax Modem
+	   Turbomodem 14.4 Data Fax Modem
+	
+	Victory
+	   Victory 14.4 Data Fax
+	
+	VoiceView
+	   VoiceView 9600 bps Modem
+	   VoiceView 14400 bps Modem
+	   VoiceView 19200 bps Modem
+	   VoiceView 28800 bps Modem
+	   VoiceView 9600 bps Modem
+	   VoiceView 14400 bps Modem
+	   VoiceView 28800 bps Modem
+	   VoiceView Modem
+	   VoiceView 9600 bps Modem
+	   VoiceView 14400 bps Modem
+	   VoiceView 28800 bps Modem
+	   VoiceView Modem
+	   VoiceView 9600 bps Modem
+	   VoiceView 14400 bps Modem
+	   VoiceView 28800 bps Modem
+	   VoiceView Modem
+	   VoiceView 9600 bps Modem
+	   VoiceView 14400 bps Modem
+	   VoiceView 28800 bps Modem
+	   VoiceView Modem
+	   Boca Complete Office Communicator (Voice)
+	
+	Winbook
+	   Winbook (Cirrus) 14.4 Data Fax
+	   Winbook (Dynalink) 14.4 Data Fax
+	
+	Zoom Telephonics, Inc.
+	   Zoom Fax Modem V.34X Model 470
+	   Zoom Fax Modem V.34X Model 470 Plug & Play
+	
+	
+	======================================================================
+	Keywords          : dun kbDialUp 
+	Technology        : kbWin95search kbZNotKeyword3
+	Version           : WINDOWS:95
+	
+	=============================================================================
+	

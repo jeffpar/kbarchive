@@ -1,0 +1,89 @@
+---
+layout: page
+title: "Q119044: Mac Srv: Objects, Large Mail Data Files, &amp; Server Performance"
+permalink: kb/119/Q119044/
+---
+
+## Q119044: Mac Srv: Objects, Large Mail Data Files, &amp; Server Performance
+
+	Article: Q119044
+	Product(s): Microsoft Mail For Appletalk Networks
+	Version(s): WINDOWS:3.0,3.1
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 10-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Mail for AppleTalk Networks, versions 3.0, 3.1 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The Microsoft Mail for AppleTalk Networks data file can be large for two
+	reasons: many objects and/or many enclosures.
+	
+	Run the Mail Network Administrator program and run the Server Usage report to get
+	an idea of what percentage of the data file is made up of enclosures. If the
+	data file is mostly made up of large enclosures, server performance should not
+	be hampered.
+	
+	The Microsoft Mail data file can contain up to 65,535 objects. AppleTalk Mail
+	uses an object to represent the many parts of mail: each message, enclosure,
+	form, user information, information about other Mail servers, group lists,
+	gateway names, gateway resources, etc. The Mail server keeps track of all of
+	these objects by keeping a map in memory of where these objects are on disk.
+	
+	A large number of objects can affect the performance of the Mail server. When a
+	Mail data file has a large number of objects, the map in memory is also large
+	(one entry for each object). For any disk access, the server must search the map
+	to find where the requested object is on disk. Even though the map is a binary
+	tree, a large number of objects can slow down this searching process. Virtually
+	every request by a workstation or another server on the network requires the
+	server to access the hard disk.
+	
+	MORE INFORMATION
+	================
+	
+	Because of shared objects, it is not possible to tell exactly how many objects
+	are contained in a Mail data file. A rough estimate can be made by adding the
+	following numbers together:
+	
+	1. Total number of messages
+	
+	2. Total number of enclosures
+	
+	3. If on a gateway server, add one for every gateway recipient defined in the
+	  Gateway Recipients screen per gateway.
+	
+	
+	If this number is less than 60,000, then the server has not reached the limit on
+	the number of objects. If this number is greater than 65,535, then the server
+	still may not have reached the limit on the number of objects, because messages
+	and objects to multiple recipients are shared. However, steps should be taken to
+	reduce the number of messages and enclosures in the Mail data file.
+	
+	These steps would include:
+	
+	1. Deleting mail older than X number of days old.
+	
+	2. Moving users to other servers.
+	
+	3. Having users move messages to local storage.
+	
+	NOTE: The above numbers are a rough estimate based on experience by Mail Product
+	Support.
+	
+	Additional query words: 3.00 3.10
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMailSearch kbZNotKeyword3 kbMailATN300 kbMailATN310
+	Version           : WINDOWS:3.0,3.1
+	
+	=============================================================================
+	

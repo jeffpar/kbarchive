@@ -1,0 +1,75 @@
+---
+layout: page
+title: "Q241462: XCON: Non-Delivery Report May Contain the Wrong User Information"
+permalink: kb/241/Q241462/
+---
+
+## Q241462: XCON: Non-Delivery Report May Contain the Wrong User Information
+
+	Article: Q241462
+	Product(s): Microsoft Exchange
+	Version(s): winnt:5.5 SP3
+	Operating System(s): 
+	Keyword(s): exc55sp3 kbExchange550preSP4fix kbExchange550sp4Fix
+	Last Modified: 12-NOV-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.5 SP3 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	When you use Outlook to create and send a mail message, you receive one of the
+	following:
+	
+	- A non-delivery report (NDR) that points to the wrong user. When you resend
+	  the message it is addressed to the correct user. This is only a display
+	  issue.
+	
+	- A delivery receipt (DR) that has the To and Cc recipients exchanged in the
+	  body.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, obtain the latest service pack for Exchange Server 5.5.
+	For additional information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q191014 XGEN: How to Obtain the latest Exchange Server 5.5 Service Pack
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+	version 5.5. This problem was first corrected in Exchange Server 5.5 Service
+	Pack 4.
+	
+	MORE INFORMATION
+	================
+	
+	When Outlook modifies the recipient list during creation of a message, it
+	re-sorts the recipient list internally. The Exchange Server Message Transfer
+	Agent (MTA) does not interpret the list correctly.
+	
+	This behavior occurs when two Exchange Server computers are connected by an X.400
+	Connector with the default parameters, except that the "Allow MS Exchange
+	Contents" and "Two Way Alternate" check boxes are cleared.
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : exc55sp3 kbExchange550preSP4fix kbExchange550sp4Fix 
+	Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange550SP3
+	Version           : winnt:5.5 SP3
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

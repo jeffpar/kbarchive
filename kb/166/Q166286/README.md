@@ -1,0 +1,97 @@
+---
+layout: page
+title: "Q166286: BUG: Books Online Index Search Field Finds Incorrect Topic"
+permalink: kb/166/Q166286/
+---
+
+## Q166286: BUG: Books Online Index Search Field Finds Incorrect Topic
+
+	Article: Q166286
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): WINDOWS:5.0
+	Operating System(s): 
+	Keyword(s): kbVBp500 kbGrpDSVB
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+	- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The index view in Books Online provides a search field you can use to find a
+	topic. Books Online scrolls to the appropriate section in the index list when
+	you quickly type the letters for a desired topic into the search field. However,
+	if you type slowly into the search field, Books Online scrolls to a section in
+	the index list, but only for the text displayed in the search field. If you
+	continue to type slowly, the index list scrolls to a different section for each
+	of the letters you type and these letters are never displayed in the search
+	field.
+	
+	CAUSE
+	=====
+	
+	Typing slowly into the search field yields control to the Books Online program
+	and focus is shifted from the search field. Books Online scrolls to the section
+	in the index list for the text already in the search field but focus is not
+	returned. If you continue typing slowly, this loss of focus on the search field
+	causes each letter to be interpreted separately and the index list to scroll to
+	a different section for each one. The text in the search field is also not
+	updated correctly for the same reason.
+	
+	RESOLUTION
+	==========
+	
+	The workarounds are:
+	
+	- to type the letters of the desired topic into the search field as quickly as
+	  possible without any pauses,
+	
+	-or-
+	
+	- to paste the string you are searching for into the search field.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Open Books Online. "Books Online..." appears under the Help menu.
+	
+	2. Switch to the Index by clicking the Index toolbar button or selecting "Index"
+	  under the View menu.
+	
+	3. Set focus to the search field by clicking the search field with the mouse.
+	  The search field is above the index list.
+	
+	4. Press the "s" key and wait for the index list to scroll to the "S" section.
+	
+	5. Press the "c" key.
+	
+	At this point, you would normally expect to see "sc" in the search field and the
+	"SC" section in the index list. Because the focus did not return to the search
+	field, the "c" key press causes the index list to jump to the "C" section of the
+	index list instead of the desired "SC" section.
+	
+	Additional query words: TextBox
+	
+	======================================================================
+	Keywords          : kbVBp500 kbGrpDSVB 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500 kbVB500
+	Version           : WINDOWS:5.0
+	Issue type        : kbbug
+	
+	=============================================================================
+	

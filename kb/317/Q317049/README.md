@@ -1,0 +1,113 @@
+---
+layout: page
+title: "Q317049: You Cannot Log On After You Remove the Computer from the Domain"
+permalink: kb/317/Q317049/
+---
+
+## Q317049: You Cannot Log On After You Remove the Computer from the Domain
+
+	Article: Q317049
+	Product(s): Microsoft Windows NT
+	Version(s): 4.0
+	Operating System(s): 
+	Keyword(s): kberrmsg ocsso
+	Last Modified: 12-APR-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 4.0 
+	- Microsoft Windows NT Workstation version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	After you reconfigure a Windows NT Workstation or Windows NT Server computer to
+	change its membership from a domain to a workgroup, and then you restart the
+	computer, you cannot log on with your previous user name and password, and may
+	receive the following error message:
+	
+	  The system could not log you on. Make sure your user name and domain are
+	  correct, then type your password again. Letters in passwords must be typed
+	  using the correct case. Make sure that Caps Lock is not accidentally on.
+	
+	CAUSE
+	=====
+	
+	This behavior occurs because the user name and password that you previously used
+	are available for logon only to a domain. Your computer is no longer a member of
+	a domain, and therefore your logon attempt must be validated on the local
+	computer by using the local security database. To log on to the computer, you
+	must provide a user name and password that exists in the local computer's user
+	database, or Security Accounts Manager (SAM).
+	
+	RESOLUTION
+	==========
+	
+	Make sure that the local security database on the computer contains the default
+	Administrator account from when the computer was first installed, along with any
+	additional user accounts that have been created, in its local users security
+	settings.
+	
+	If you do not know your local user account and password, you cannot log on to the
+	computer.
+	
+	To resolve this issue, use a recent copy of the Windows NT Emergency Repair Disk
+	(ERD) to restore the registry files on your system. This resolution permits you
+	to restore the computer's user database (or SAM) to a version for which you have
+	a correct user name and password.
+	
+	Note that when you replace the SAM from the ERD, this replaces the user accounts
+	and passwords with those that existed on the date that the ERD was created.
+	Therefore, when you use an account created by this method, you will need to know
+	that account's password on the date that the ERD was created.
+	
+	Also, depending on the options used during the creation of the ERD (such as
+	whether the /S switch was used or not), the ERD may not include all existing
+	user accounts.
+	
+	By using the ERD, you are also required to start your computer from either the
+	Windows NT 4.0 CD-ROM or from a boot disk, and to select the Repair option.
+	During the repair process, select only the Registry option in the first window.
+	Later in the repair process, a second window will offer options for which
+	registry hives to repair, and here you need to select the SAM option.
+	
+	For additional information about ERDs and how to perform an emergency repair in
+	Windows NT, click the article numbers below to view the articles in the
+	Microsoft Knowledge Base:
+	
+	  Q156328 Description of Windows NT Emergency Repair Disk
+	
+	  Q122857 RDISK /S and RDISK /S- Options in Windows NT
+	
+	WORKAROUND
+	==========
+	
+	If you do not have an ERD, you may install a parallel installation of Windows NT
+	as a workaround.
+	
+	A parallel installation will permit you to log on to the computer by using this
+	installation and therefore gain access to, or copy your files from, the
+	computer. However, this method will not permit you to retrieve either user names
+	or passwords from the original Windows NT installation. After you have backed up
+	all of your files by using the parallel installation, you have the choice to
+	reformat your hard disk and then reinstall Windows NT, or to configure the new
+	parallel installation for your needs and use it instead.
+	
+	For additional information about how to perform a Windows NT parallel
+	installation, click the article number below to view the article in the
+	Microsoft Knowledge Base:
+	
+	  Q259003 How and Why to Perform a Parallel Installation of Windows NT 4.0
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kberrmsg ocsso 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+	Version           : :4.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

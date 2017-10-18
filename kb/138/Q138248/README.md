@@ -1,0 +1,133 @@
+---
+layout: page
+title: "Q138248: Instsupp.bat File Does Not Install Restore.exe Properly"
+permalink: kb/138/Q138248/
+---
+
+## Q138248: Instsupp.bat File Does Not Install Restore.exe Properly
+
+	Article: Q138248
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): 95
+	Operating System(s): 
+	Keyword(s): win95
+	Last Modified: 17-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 95 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If you run the Instsupp.bat file to install the supplemental MS-DOS tools
+	located in the Other\Oldmsdos folder on the Windows 95 CD-ROM, you may receive
+	the following error message when you try to run the Restore.exe program:
+	
+	  Incorrect DOS version
+	
+	You may also receive this error message when you try to run other MS-DOS tools.
+	
+	CAUSE
+	=====
+	
+	When you install Windows 95, Setup updates the version table to include several
+	commonly used MS-DOS tools. The version of MS-DOS that Setup indicates should be
+	reported to these tools is the version of MS-DOS that is running when you
+	install Windows 95.
+	
+	If you install Windows 95 on a computer that is already running Windows 95, the
+	version table is updated to report MS-DOS version 7.0 to MS-DOS tools. This
+	prevents tools that require MS-DOS 6.22 from running.
+	
+	The Instsupp.bat file prevents this problem by copying MS-DOS tools from the
+	Windows 95 CD-ROM and then updating the version table to report the appropriate
+	version of MS-DOS to the tools. However, the Instsupp.bat file does not update
+	the version table for the Restore.exe program.
+	
+	RESOLUTION
+	==========
+	
+	To work around this problem, update the version table for the Restore.exe
+	program. To do so, type the following line at an MS-DOS prompt, and then restart
+	your computer:
+	
+	  setver restore.exe 6.22
+	
+	You can use this method to update the version table for any MS-DOS tool. Use the
+	following syntax
+	
+	  setver <program name> <MS-DOS version>
+	
+	where <program name> is the name of the program file you want to run, and
+	<MS-DOS version> is the version number of MS-DOS that should be reported
+	to the program. Remember to restart your computer after updating the version
+	table.
+	
+	If you reinstall Windows 95 or run the Instsupp.bat file after you update the
+	version table, you may need to update the table again.
+	
+	MORE INFORMATION
+	================
+	
+	The Windows 95 Setup program updates the version table to include the following
+	MS-DOS tools:
+	
+	- Append.exe
+	
+	- Basic.com
+	
+	- Basica.com
+	
+	- Diskcomp.com
+	
+	- Extdisk.exe
+	
+	- Graphics.com
+	
+	- Fastopen.exe
+	
+	- Mode_dos.com
+	
+	- Print.exe
+	
+	- Replace.exe
+	
+	- Restore.exe
+	
+	- Scplus.exe
+	
+	- Scsic710.sys
+	
+	- Tree.com
+	
+	- Vdisk.sys
+	
+	The Append.exe, Graphics.com, Print.exe, Replace.exe, and Tree.com files are
+	located in the Other\Oldmsdos folder on the Windows 95 CD-ROM, and should be
+	installed by running the Instsupp.bat file found in that folder. When you
+	install these tools with the Instsupp.bat file, the problem discussed in this
+	article does not occur.
+	
+	The Basic.com, Basica.com, Diskcomp.com, Extdisk.exe, Fastopen.exe, Mode_dos.com,
+	Scplus.exe, Scsic710.sys, and Vdisk.sys files are not located in the
+	Other\Oldmsdos folder on the Windows 95 CD-ROM. To run these tools, you must
+	copy or expand them from your original MS-DOS Setup disks, or run them from the
+	MS-DOS folder on your hard disk. When you try to run these tools, the problem
+	discussed in this article may occur.
+	
+	NOTE: Before using the MS-DOS tools discussed in this article, please see the
+	Lfnbk.txt file in the Admin\Apptools\Lfnback folder on the Windows 95 CD-ROM, or
+	see the following article in the Microsoft Knowledge Base:
+	
+	  Q120442 Using Hard Disk Utilities with Windows 95
+	
+	======================================================================
+	Keywords          : win95 
+	Technology        : kbWin95search kbZNotKeyword3
+	Version           : 95
+	
+	=============================================================================
+	

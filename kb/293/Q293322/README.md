@@ -1,0 +1,105 @@
+---
+layout: page
+title: "Q293322: Directory Service Client Not Installed on Windows NT 4.0 SP6a"
+permalink: kb/293/Q293322/
+---
+
+## Q293322: Directory Service Client Not Installed on Windows NT 4.0 SP6a
+
+	Article: Q293322
+	Product(s): Microsoft Windows NT
+	Version(s): 4.0 SP6,4.0 SP6a
+	Operating System(s): 
+	Keyword(s): kbWinNT400PreSP7Fix
+	Last Modified: 28-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 4.0 SP6a 
+	- Microsoft Windows NT Server, Enterprise Edition version 4.0 SP6a 
+	- Microsoft Windows NT Server version 4.0 SP6, Terminal Server Edition 
+	- Microsoft Windows NT Workstation version 4.0 SP6a 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Installing the directory service client (Dsclient.exe) on Windows NT 4.0 with
+	Service Pack 6a (SP6a) with certain hotfixes installed may not succeed, and you
+	may receive the following Setup error message:
+	
+	  Setup cannot detect the Windows NT4 with SP6a or higher operating system
+	  which is required to install the Directory Service Client. The installation
+	  will terminate.
+	
+	CAUSE
+	=====
+	
+	Dsclient.exe uses the GetVersionEx function to obtain information about the
+	version of the operating system and service pack. GetVersionEx may return an
+	incorrect service pack number on computers that have Windows NT kernel versions
+	with RC designations. For example, if SP6a and the Q246467 hotfix is installed,
+	GetVersionEx returns the ServicePackMajor value as 1 instead of 6. The Windows
+	NT kernel (Ntoskrnl.exe) that is included with the Q246467 hotfix sets the
+	version to Service Pack 6, RC 1.3.
+	
+	
+	RESOLUTION
+	==========
+	
+	A supported fix is now available from Microsoft, but it is only intended to
+	correct the problem described in this article and should be applied only to
+	systems experiencing this specific problem.
+	
+	To resolve this problem, contact Microsoft Product Support Services to obtain the
+	fix. For a complete list of Microsoft Product Support Services phone numbers and
+	information on support costs, please go to the following address on the World
+	Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	NOTE: In special cases, charges that are normally incurred for support calls may
+	be canceled, if a Microsoft Support Professional determines that a specific
+	update will resolve your problem. Normal support costs will apply to additional
+	support questions and issues that do not qualify for the specific update in
+	question.
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	  Date        Time    Size     File name     Platform
+	  ---------------------------------------------------
+	  03/20/2001  10:01p  378,640  Kernel32.dll  Intel
+	  03/20/2001  10:01p  593,168  Kernel32.dll  Alpha
+	
+	NOTE: Because of file dependencies, this hotfix requires Windows NT 4.0 SP6a.
+	
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products that are
+	listed at the beginning of this article.
+	
+	MORE INFORMATION
+	================
+	
+	For additional information about RC designations of the Windows NT kernel
+	versions, see the following Microsoft Knowledge Base article:
+	
+	  Q246547 RC Designations of the Windows NT Kernel Versions
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbWinNT400PreSP7Fix 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTS400sp6 kbWinNTS400search kbNTTermServ400sp6 kbNTTermServSearch kbWinNTSEnt400SP6a kbWinNTW400SP6a
+	Version           : :4.0 SP6,4.0 SP6a
+	Hardware          : ALPHA x86
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

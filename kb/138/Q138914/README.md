@@ -1,0 +1,195 @@
+---
+layout: page
+title: "Q138914: FoxPro Advisor Magazine Articles July 1995"
+permalink: kb/138/Q138914/
+---
+
+## Q138914: FoxPro Advisor Magazine Articles July 1995
+
+	Article: Q138914
+	Product(s): Microsoft FoxPro
+	Version(s): 3.00 2.50x 2.60 2.60a | 2.00 2.5
+	Operating System(s): 
+	Keyword(s): kb3rdparty kbvfp300 kbvfp600
+	Last Modified: 30-JUL-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 6.0 
+	- Microsoft FoxPro for Windows, versions 2.5x, 2.6, 2.6a 
+	- Microsoft FoxPro for MS-DOS, versions 2.0, 2.5x, 2.6, 2.6a 
+	- Microsoft FoxPro for Macintosh, versions 2.5x, 2.6a 
+	-------------------------------------------------------------------------------
+	
+	NOTE: The "FoxPro Advisor" is published by Data Based Solutions, Inc., a
+	publisher independent of Microsoft; we make no warranty or endorsement,
+	implied or otherwise, regarding the accuracy or reliability of information
+	published in the "FoxPro Advisor." Please contact Data Based Solutions if
+	you have questions or want to order the "FoxPro Advisor."
+	
+	SUMMARY
+	=======
+	
+	This article lists the table of contents of the July 1995 FoxPro Advisor, a
+	magazine published by Data Based Solutions, Inc., 4010 Morena Blvd., Suite 200,
+	San Diego, CA 92117. For more information, please call Data Based Solutions at
+	619-483-6400, or to place an order, please call them at 800- 336-6060. You may
+	also contact them by Fax 619-483-9851 and Internet 70007.1614@compuserve.com.
+	
+	MORE INFORMATION
+	================
+	
+	FoxPro News, page 6. Develop Interactive Voice Response (IVR) Applications in
+	FoxPro. Imaging and Multimedia OLE Controls for Windows Developers. Customizable
+	Business System for Visual FoxPro. Same (ProMatrix) Applications Run in FoxPro
+	2.x and Visual FoxPro 3.0 Customizable Medical Practice Software Now Available
+	for Windows. Add Caller ID Information to Windows Applications.
+	
+	Editor's View, page 8. Support is a Big Job. Microsoft's FoxPro product support
+	facility is an impressive place. By Tamar E. Granor. Tamar talks about a visit
+	to Microsoft and muses on volunteer software projects. Plus, why you should
+	attend conferences.
+	
+	Multi-User Programming, page 12. Visual FoxPro 3.0 Locking Strategies - Then and
+	Now. Visual FoxPro offers new strategies for detecting and handling collisions.
+	By Y. Alan Griver. Alan reviews the old ways to handle multi-user contention
+	issues and describes the new methods provided in Visual FoxPro. Direct READs,
+	Indirect READs, Semaphore locking, Concurrency issues, Pessimistic Row
+	Buffering, Optimistic Row Buffering, Pessimistic Table Buffering, Optimistic
+	Table Buffering.
+	
+	Tips, Tricks, & Traps, page 18. By Drew Speedie. This issue's tips include
+	some ideas for improving screens and forms, a routine to check on Windows
+	resources, an update to an old tip, and more.
+	
+	Tip: FoxPro 2.x., Visual FoxPro 3.0. Using RUN /N to call any Windows
+	Application, such as Control Panel.
+	
+	Tip: FoxPro 2.x, Visual FoxPro 3.0. Custom ORDER BY Situations. When two SQL
+	SELECTs with a UNION will not do since it is limited to one order by clause.
+	Ascending and Descending order.
+	
+	Tip: Visual FoxPro 2.x. A Fix for Corrupted Project Files. Simple fix for the
+	errors: "Project file is invalid" or "MEMO file is missing or invalid". Project
+	FILE, SAVE AS ... with a new file name forces a rebuild of the supporting
+	table.
+	
+	Tip: FoxPro 2.x. Nested Arrays, Brackets, and #DEFINEd Constants. Compiler
+	interprets nested array using brackets, along with #DEFINEd constant as a
+	character string, resulting in error of "Variable xxx not found."
+	
+	Tip: FoxPro 2.x, Visual FoxPro 3.0. PAD() Functions Work on Numerics and Dates,
+	Too! Return is always a character string from PADC(), PADR(), and PADL().
+	
+	Tip: FoxPro 2.x, Visual FoxPro 3.0. Push Buttons Instead of check boxes, Anyone?
+	Check Boxes require prompts, which consumes screen real estate, so use push
+	buttons with a symbol font checkmark for a prompt instead.
+	
+	Tip: Visual FoxPro 3.0 Richt-Click Strikes Again! Right-Click empty portion of
+	standard toolbar gives menu of toolbar choices for controls, queries, etc, to
+	quickly see toolbars or add one.
+	
+	Tip: FoxPro 2.x, Visual FoxPro 3.0. Simple Editing Bookmarks. Using EDIT, UNDO,
+	or CTRL+Z to return to last edit within the editor. Also using a keyboard macro
+	to insert '* BookMark <date> <time>' in order to later be able to
+	find this place holder by using EDIT, FIND or Ctrl+F.
+	
+	Tip: FoxPro 2.x, Visual FoxPro 3.0 Using \? and \! Replacements Visual FoxPro
+	equivalents for push button default and selection on ESC key.
+	
+	Tip: FoxPro 2.x, Visual FoxPro 3.0 Check Windows System Resources. Procedure to
+	return the amount of free Windows Resources as a percentage, in order to prevent
+	application errors.
+	
+	FoxPro Fundamentals, page 22. Visual FoxPro 3.0. Persistent Relationships and
+	Referential Integrity. Visual FoxPro's support for these makes your job easier.
+	By Miriam Liskin. Miriam explains the various relationships available in Visual
+	FoxPro and describes Visual FoxPro's approach to referential integrity rules.
+	Persistent relationships, SET RELATION, RI, Cascade, Restrict, Ignore, Triggers,
+	Stored Procedures, and database integrity.
+	
+	Functional FoxPro, page 28. Visual FoxPro 3.0. Why Client-Server?.
+	Client-server's scalability makes a compelling argument to do it. By Malcolm C.
+	Rubel. Mac points to scalability as a prime reason to take advantage of Visual
+	FoxPro's client-server capabilities. Discussion of reasons for us of
+	client-server solutions to business problems as compared to performance.
+	mobility, nomadic.
+	
+	Form Designer, page 32. Visual FoxPro 3.0. Create a Default Form. Visual FoxPro's
+	template forms let you base every form you create on a standard you define. By
+	John V. Petersen. With form templates, you can create master forms and base new
+	forms on these. Changes to the master automatically change the other forms. John
+	shows you how to build our own base classes with native form and formset
+	objects. Design, create class, Tools, Options, .vcx, class library,
+	inheritance.
+	
+	User Interface, page 36. FoxPro 2.x, Visual FoxPro 3.0 Keep Your Users Alert.
+	With just a little code, you can let users know when data is ordered or if a
+	filter is in effect. By Peter Sam. It's nice to tell users when data is ordered
+	or if there's a filter in effect. This handy function adds a pair of pads to the
+	menu bar for just that purpose. AlertPad.
+	
+	Report Writer, page 40. FoxPro 2.x, Visual FoxPro 3.0 Too Many Relations? Design
+	reports involving multiple one-to-many relations. By Gary Zaika. Some reports
+	need to handle a lot of one-to-many relations. Gary presents a technique that
+	works regardless of the actual data involved. Multiple one-to-many relations,
+	reference to article in October 1993 FoxPro Advisor, SCAN ... ENDSCAN, SCATTER
+	MEMVAR MEMO BLANK, CHR(13), group header.
+	
+	Drag-and-Drop, page 44. Visual FoxPro 3.0. Life Is a Drag! Visual FoxPro makes it
+	easy to incorporate drag-and-drop in your applications. By Andy Griebel.
+	Drag-and-drop is a big part of the Windows interface. Discussion of when and how
+	to use. DRAG() method parameter values, DragMode property, MROW(), MCOL(),
+	DragDrop event, MouseDown method, DragOver event and method, DragIcon property,
+	CUR files, event-driven programming.
+	
+	Data Integrity, page 48. FoxPro 2.x, Visual FoxPro 3.0. Detecting Data Loss.
+	Undetected data loss can have devastating consequences. By George Allen. Users
+	might not always notice subtle errors that can lead to bad data. George provides
+	valuable suggestions for catching these errors. FLUSH, UPDATED(), DOS
+	ERRORLEVELS, SETVER, BACKUP, RESTORE, network environments, normal versus
+	abnormal terminations.
+	
+	Data Integrity, page 54. FoxPro 2.x, Visual FoxPro 3.0. Detect Corrupted Indexes.
+	A simple technique lets you find broken indexes before they corrupt your data.
+	By Bryant Ingram. Indexes do get corrupted. Bryant offers a function to test a
+	table's indexes and find out if any index is corrupt. CHECKDBF, .CDX,
+	
+	User Groups, page 56. Birth of a User Group. If there's no FoxPro user group in
+	your area, consider starting your own. Here's what it takes. By Steven Miller. A
+	FoxPro User Group can be a vital resource. Steve talks about the process of
+	getting one started. Constitution, SIGs, Microsoft Mindshare User Group Program
+	FoxPro contact is Kerri Grubb, kerrig@microsoft.com or corporate switchboard
+	phone (206)882-8080, fax (206) 936-7329, APCUG.
+	
+	Screen Builder, page 60. FoxPro 2.x. Add "QuickFill" to FoxPro. Make data entry
+	easier for your users with fields that jump to the first matching entry. By
+	Edward Leafe. QuickFill fields in Quicken(tm) make it easy to either choose an
+	existing item or add a new one. Ed shows us how to do the same thing in FoxPro
+	2.x. INKEY(), WHEN, VALID, ON KEY LABEL, QFInit, ClrKey, QFWhen, invoice entry.
+	
+	Developer's Toolkit, page 70. FoxPro 2.x, Visual FoxPro 3.0. That Message Rings a
+	Bell. Give users audible and visual signs of a problem. By Shar Feldheim. We
+	often need to display a message and sound the bell. Shar offers a function that
+	does both with a single call. CHR(7), WAIT ... TIMEOUT, WAIT WINDOW NOWAIT,
+	WindTone, Cherps, and Talkback.
+	
+	FoxPro Advisor Q&A, page 74. By Tamar E. Granor, and Ted Roche. Tamar and Ted
+	tackle questions on registering MSGraph, naming conflicts in Visual FoxPro,
+	modal READs, and displaying multiple pictures. FoxPro 2.x, POPUP WINDOW MODAL
+	screen, #READCLAUSES MODAL. FoxPro 2.x, Visual FoxPro 3.0, MSGRAPH and REGEDIT
+	/V on network, REG.DAT. Visual FoxPro 3.0, A through J and M single letter
+	objects, SELECT workareas, OOP, and memory variables, memvars, ALIAS FoxPro 2.x
+	for Windows/Macintosh, Thumbnail image files in general field, gallery view,
+	print preview, report layout, USE ... AGAIN, bitmaps, bmp, image controls.
+	
+	Additional query words: VFP VFoxWin FoxWin FoxDos FoxMac 2.50 2.50a 2.50b 2.50c dba fpa
+	
+	======================================================================
+	Keywords          : kb3rdparty kbvfp300 kbvfp600 
+	Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro260aMac kbFoxPro200DOS kbFoxPro260DOS kbFoxPro260aDOS kbFoxPro260 kbFoxPro260a kbVFP300 kbVFP600
+	Version           : 3.00 2.50x 2.60 2.60a | 2.00 2.5
+	
+	=============================================================================
+	

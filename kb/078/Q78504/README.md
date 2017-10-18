@@ -1,0 +1,58 @@
+---
+layout: page
+title: "Q78504: EVDISK.SYS Is Not Compatible with MS-DOS 5 Upgrade"
+permalink: kb/078/Q78504/
+---
+
+## Q78504: EVDISK.SYS Is Not Compatible with MS-DOS 5 Upgrade
+
+	Article: Q78504
+	Product(s): Microsoft Disk Operating System
+	Version(s): MS-DOS:5.0,5.0a,6.0,6.2,6.21,6.22
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 22-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Everex Systems has confirmed that EVDISK.SYS partitioning software is not
+	compatible with the Microsoft MS-DOS 5 and later Upgrade.
+	
+	
+	MORE INFORMATION
+	================
+	
+	To work around this incompatibility, do the following:
+	
+	1. Back up all necessary data on the hard drive.
+	
+	2. Repartition the hard drive with the MS-DOS FDISK command.
+	
+	3. Format the hard disk. Example: FORMAT C: /S
+	
+	For more information, query on the following words:
+	
+	  "combine" (without the quotation marks) and "fdisk" (without the quotation
+	  marks)
+	
+	The product included here is manufactured by vendors independent of Microsoft; we
+	make no warranty, implied or otherwise, regarding this product's performance or
+	reliability.
+	
+	
+	Additional query words: 5.00 5.00a 6.00 6.20 3rdparty
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+	Version           : MS-DOS:5.0,5.0a,6.0,6.2,6.21,6.22
+	
+	=============================================================================
+	

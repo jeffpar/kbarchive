@@ -1,0 +1,95 @@
+---
+layout: page
+title: "Q168599: SMS: Brief Overview of PGC for Windows 95 Clients in SMS 1.2"
+permalink: kb/168/Q168599/
+---
+
+## Q168599: SMS: Brief Overview of PGC for Windows 95 Clients in SMS 1.2
+
+	Article: Q168599
+	Product(s): Microsoft Systems Management Server
+	Version(s): winnt:1.2
+	Operating System(s): 
+	Keyword(s): kbnetwork kbsetup kbPGC smssetup smsappman smspgc kbSMSAppMan
+	Last Modified: 31-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server version 1.2 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article provides a brief overview of 32-bit Program Group Control (PGC) for
+	Windows 95 clients in Systems Management Server 1.2.
+	
+	MORE INFORMATION
+	================
+	
+	In previous versions of Systems Management Server, PGC monitored and
+	reconfigured Windows registry settings each time an application was launched
+	using the Appstart functionality of PGC. This was done so that PGC would be able
+	to provide dynamic server selection at launch time. For this to work, a special
+	application (called Smssetup.exe) was required to perform these changes. This
+	implementation proved to be difficult to support, and a better solution now
+	exists for Windows 95.
+	
+	Under Windows 95, Program Group Control performs server name substitution at the
+	file system level instead of reconfiguring the application at launch time. The
+	application gets installed normally, and then when it tries to use any of its
+	components, PGC recognizes that the application was installed from a Systems
+	Management Server package, connects to the Systems Management Server share point
+	at the file system level, and then the application can access the necessary
+	files. This functionality is only available to applications that are capable of
+	running from a UNC path (for example, \\servername\sharepoint).
+	
+	The Systems Management Server Router technology (Program Group Control's file
+	system redirection capability) is implemented as a VxD file system driver called
+	Smsroutr.vxd. Applications that use the Systems Management Server Router
+	technology only deliver the application's setup icon to the user's desktop.
+	After the user installs the application from the icon delivered by Systems
+	Management Server, the application should be run from the icons created by the
+	setup program. Choosing the Systems Management Server-delivered icon will only
+	reinstall the application.
+	
+	The implementation of Program Group Control for Windows NT clients has always
+	been 32-bit, but its functionality is identical to that of the 16-bit PGC that
+	runs on Windows 3.x clients. The new functionality of PGC under Windows 95 is
+	not available to Windows NT clients using Systems Management Server. Windows NT
+	clients run the shared application successfully, but only from the server that
+	the application was installed from. Therefore, load balancing and fault
+	tolerance will not be available for Windows NT clients.
+	
+	NETWORK NAMING PROVIDER
+	-----------------------
+	
+	Network Naming Provider (NNP) is a system application (running at Ring 3) that
+	provides the non-real time component of the Systems Management Server Router.
+	NNP loads at boot time, reads the system registry for Systems Management Server
+	information, formats that information, and passes it to the Logical Network
+	Redirector (LNR). In addition, NNP verifies server and share status as needed,
+	and updates the information for LNR.
+	
+	LOGICAL NETWORK REDIRECTOR
+	--------------------------
+	
+	Logical Network Redirector (LNR) is a Windows 95 system VxD (running at Ring 0)
+	that contains the real-time portion of Systems Management Server Router. LNR
+	loads at startup, hooks the installable file system (IFS) manager, and is
+	transparent to user applications. LNR is used to monitor appropriate file
+	operations for accesses to Systems Management Server controlled resources and
+	when necessary to redirect operations that fail to an alternate path. In
+	addition, LNR does load leveling on the initial use of a share.
+	
+	Additional query words: prodsms win95 SMSRouter
+	
+	======================================================================
+	Keywords          : kbnetwork kbsetup kbPGC smssetup smsappman smspgc kbSMSAppMan 
+	Technology        : kbSMSSearch kbSMS120
+	Version           : winnt:1.2
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

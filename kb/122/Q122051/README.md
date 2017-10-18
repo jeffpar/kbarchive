@@ -1,0 +1,119 @@
+---
+layout: page
+title: "Q122051: How Windows 95 Performs a Safe-Mode Start"
+permalink: kb/122/Q122051/
+---
+
+## Q122051: How Windows 95 Performs a Safe-Mode Start
+
+	Article: Q122051
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): Win2000:95
+	Operating System(s): 
+	Keyword(s): kbenv kbui win95
+	Last Modified: 17-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 95 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article discusses how Windows 95 boots in Safe mode. A Safe-mode boot can
+	be invoked in the following ways:
+	
+	- By pressing F5 at the "Starting Windows 95" message.
+	
+	- By pressing F8 at the "Starting Windows 95" message, and then choosing Safe
+	  Mode from the Windows 95 Startup menu.
+	
+	- Automatically, if Windows 95 did not start on the previous attempt.
+	
+	MORE INFORMATION
+	================
+	
+	How Windows 95 boots in Safe mode:
+	
+	1. Windows 95 bypasses the portion of the Registry that loads protected- mode
+	  device drivers, and bypasses the Autoexec.bat and Config.sys files.
+	
+	2. Himem.sys is loaded with the /testmem:on switch. No other command-line
+	  switches are processed. For additional information, please see the following
+	  article in the Microsoft Knowledge Base:
+	
+	  Q133442 Safe Mode Boot Does Not Process Machine Switch for Himem.sys
+	
+	3. Ifshlp.sys is loaded. Dblbuff.sys is loaded with the /d+ switch.
+	
+	4. Windows 95 obtains path information from the Msdos.sys file.
+	
+	5. If Windows 95 files are found, the command "win /d:m" (which enables a
+	  Safe-mode boot) is executed and Command.com is skipped.
+	
+	  If Windows 95 files are not found, Command.com is executed.
+	
+	
+	1. When "win /d:m" is executed, Windows 95 looks for a System.cb file in the
+	  Windows folder. If this file is not present, a clean System.cb file is loaded
+	  from memory.
+	
+	  A clean System.cb file loads the following virtual device drivers (VxDs):
+	
+	     mouse=*vmouse
+	     device=*configmg
+	     device=*vwin32
+	     device=*vfbackup
+	     device=*vshare
+	     device=*vcomm
+	     device=*ifsmgr
+	     device=*ios
+	     device=*vfat
+	     device=*vcache
+	     device=*vcond
+	     device=*int13
+	     device=*vxdldr
+	     device=*vdef
+	     device=*dynapage
+	     device=*reboot
+	     device=*vsd
+	     device=*parity
+	     device=*biosxlat
+	     device=*vmcpd
+	     device=*vkd
+	     device=*vdd
+	     device=*ebios
+	     device=*vtdapi
+	     device=*vmpoll
+	     woafont=dosapp.fon
+	
+	2. After these VxDs are loaded, and just before Win.com loads the shell, the
+	  System.cb file is discarded and the original System.ini file is restored. If
+	  no System.ini file is found to restore, an empty System.ini file is created.
+	  The Winstart.bat file is not processed.
+	
+	3. Windows 95 now uses the original registry settings and System.ini and Win.ini
+	  files.
+	
+	  This effectively bypasses the [Boot] and [386Enh] sections of the System.ini
+	  file and disables all the Windows 95 protected-mode devices listed in Device
+	  Manager. Also, Windows 95 does not run programs listed on the "Load=" and
+	  "Run=" lines in the [Windows] section of the Win.ini file.
+	
+	  Note that although the [Boot] section of the System.ini file is bypassed, the
+	  "shell=" and "drivers=" lines in the [Boot] section are processed.
+	
+	4. The shell resizes the desktop to a resolution of 640 x 480.
+	
+	Additional query words: w95susd
+	
+	======================================================================
+	Keywords          : kbenv kbui win95 
+	Technology        : kbWin95search kbZNotKeyword3
+	Version           : Win2000:95
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

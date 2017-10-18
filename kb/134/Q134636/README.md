@@ -1,0 +1,309 @@
+---
+layout: page
+title: "Q134636: List of Error Messages That Have Changed in Visual FoxPro"
+permalink: kb/134/Q134636/
+---
+
+## Q134636: List of Error Messages That Have Changed in Visual FoxPro
+
+	Article: Q134636
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:3.0
+	Operating System(s): 
+	Keyword(s): kbvfp300 kbvfp600
+	Last Modified: 18-JUL-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 3.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The following list shows those error messages with the corresponding error
+	numbers that have been modified (the wording has changed) in Microsoft Visual
+	FoxPro. This list does not include error numbers new to Microsoft Visual FoxPro.
+	
+	MORE INFORMATION
+	================
+	
+	  1   File does not exist.
+	 11   Function argument value, type, or count is invalid.
+	 12   Variable  <variable>  is not found.
+	 13   Alias is not found.
+	 15   Not a table.
+	 17   Table number is invalid.
+	 18   Line is too long.
+	 21   Length of memory variable strings exceeds amount of memory.
+	 23   Index expression exceeds maximum length.
+	 24   Alias name is already in use.
+	 26   Table has no index order set.
+	 30   Row or column position is off the screen.
+	 34   Operation is invalid for a Memo, General, or Picture field.
+	 36   Command contains unrecognized phrase/keyword.
+	 37   You must use a logical expression with FILTER.
+	 39   Numeric overflow. Data was lost.
+	 41   Memo file  <name>  is missing or is invalid.
+	 42   The LOCATE command must be issued before the CONTINUE command.
+	 43   There is not enough memory to complete this operation.
+	 46   Expression evaluated to an illegal value.
+	 47   No fields found to process.
+	 50   Report file is invalid.
+	 52   No table is open.
+	 54   Label file is invalid.
+	 55   Memory variable file is invalid.
+	 58   LOG(): Zero or negative used as argument.
+	 61   SQRT() argument cannot be negative.
+	 62   Cannot access characters beyond string.
+	 67   Expression evaluator failed.
+	 91   File was not placed in memory using the LOAD command.
+	 94   Must specify additional parameters.
+	 95   Statement is not allowed in interactive mode.
+	101   Cannot open file.
+	103   Allowed DO nesting level exceeded.
+	108   File is in use by another user.
+	109   Record is in use by another user.
+	110   File must be opened exclusively.
+	111   Cannot update the cursor.
+	114   Index does not match the table. Delete the index file
+	      and re-create the index.
+	115   .DIF file header is invalid.
+	116   .DIF vector is invalid - .DBF field mismatch.
+	117   .DIF type indicator is invalid.
+	119   .SYLK file header is invalid.
+	120   .SYLK file dimension bounds are invalid.
+	121   .SYLK file format is invalid.
+	124   Printer redirection is invalid.
+	125   Printer is not ready.
+	127   View file is invalid.
+	164   Menu title has not been defined with DEFINE PAD.
+	165   Menu has not been defined with DEFINE POPUP.
+	166   No menu items have been defined for this menu.
+	167   Menu item position must be a positive number.
+	168   Menu has not been defined with DEFINE MENU.
+	169   Cannot define menu item.
+	170   Cannot release menu item.
+	174   Cannot redefine a menu that is in use.
+	175   Cannot redefine a popup that is in use.
+	176   Cannot clear a menu that is in use.
+	177   Cannot clear a popup that is in use.
+	178   Menu has not been activated with ACTIVATE MENU.
+	179   Menu has not been activated with ACTIVATE POPUP.
+	181   Menu specified in ACTIVATE MENU is already in use.
+	182   Menu specified in ACTIVATE POPUP is already in use.
+	202   Invalid path or file name.
+	214   Window has not been defined with DEFINE WINDOW.
+	215   Window has not been activated with ACTIVATE WINDOW.
+	216   Display mode is not available.
+	221   Left margin including indent must be less than the right margin.
+	225    <name>  is not a memory variable.
+	226    <name>  is not a file variable.
+	227   Box dimensions are invalid.
+	230   Array dimensions are invalid.
+	231   Invalid argument used with the SET function.
+	232    <name>  is not an array.
+	279   Menu was not pushed.
+	287   Menu size is too small.
+	291   Expression used with ASIN() is out of range.
+	292   Cannot use 0 or negative as the argument for LOG10().
+	293   Expression used with ACOS() is out of range.
+	297   Lotus 1-2-3 version 2.0 file format is invalid.
+	332   Window specified in DEFINE WINDOW has invalid coordinates.
+	355   Macro is not defined.
+	356   Keyboard macro file format is invalid.
+	392   Maximum record length exceeded in the import file.
+	1001   Feature is not available.
+	1002   Input/output operation failure.
+	1103   Invalid seek offset.
+	1104   Error reading file.
+	1105   Error writing to file.
+	1106   Cannot access file; transaction is in progress.
+	1108   Picture too big, corrupt, or in wrong format.
+	1112   Error closing the file.
+	1113   File is not open.
+	1115   Invalid operation for the cursor.
+	1117   Key field length does not match.
+	1124   Key exceeds allowed size.
+	1126   Record is too long.
+	1127   You must use a logical expression with a FOR or WHILE clause.
+	1130   'field' phrase is not found.
+	1134   Variable must be in the selected table.
+	1140   FILTER expression exceeds allowed size.
+	1141   Unrecognized index file revision. Re-create the index.
+	1145   Must be a character or numeric key field.
+	1147   Target table is already engaged in a relation.
+	1148   Expression has been re-entered while the filter is executing.
+	1149   Not enough memory for buffer.
+	1150   Not enough memory for file map.
+	1151   Not enough memory for filename.
+	1152   Cannot access the selected table.
+	1153   Cannot rename the file to different device.
+	1157   Cannot update the file.
+	1161   Too many records to browse or edit in the demo version.
+	1162   Procedure  <procedure>  is not found.
+	1163   Browse table is closed.
+	1164   Browse structure has changed.
+	1165    <field>  is not related to the current work area.
+	1178   Application file  <file>  is not closed.
+	1195   Object file  <file>  was compiled in a previous version of FoxPro.
+	1196    <file>  is not a Visual FoxPro .EXE file.
+	1202   Program is too large.
+	1211   An IF | ELSE | ENDIF statement is missing.
+	1212   Structure nesting is too deep.
+	1213   CASE, ENDCASE, or OTHERWISE does not have corresponding
+	      DO CASE statement.
+	1214   ENDTEXT does not have corresponding TEXT statement.
+	1220   Command contains invalid character.
+	1221   Command is missing required clause.
+	1225   Must be a memory or array variable.
+	1232   DIMENSION contains variable declaration without required
+	      subscript arguments.
+	1234   Subscript is outside defined range.
+	1235   Structure is invalid.
+	1238   No PARAMETER statement is found.
+	1241   Improper data type in the group expression.
+	1242   Syntax error in the field expression.
+	1243   Internal error: Too many characters in the report.
+	1245   Invalid expression in label definition file.
+	1246   Total label width exceeds allowed size.
+	1249   Too many READ commands are in effect.
+	1250   Too many PROCEDURE commands are in effect.
+	1252   Compiled code for this line is too long.
+	1253   Cannot rename the current directory.
+	1254   Cannot nest key labels.
+	1255   Key label  <label>  is invalid.
+	1257   Key string is too long.
+	1294   FOXUSER.DBF file is invalid.
+	1296   Error reading the resource.
+	1300   Function name is missing ).
+	1304   Function name is missing (.
+	1306   Missing comma (,).
+	1307   Cannot divide by 0.
+	1309    <file>  is not an object file.
+	1310   Too many characters are specified in the PICTURE clause.
+	1337   Cannot nest the PRINTJOB command.
+	1405   RUN|! command failed.
+	1410   Unable to create temporary work files.
+	1411   RUN|! command string is too long.
+	1412   Cannot locate the COMSPEC environment variable.
+	1420   OLE object is invalid or corrupted.
+	1421   Cannot activate the OLE server.
+	1422   Error saving the OLE object.
+	1423   Error creating the OLE object.
+	1424   Error copying the OLE object to Clipboard.
+	1502   Cannot write to the record because it is in use.
+	1507   Screen code is too large for available memory.
+	1600   Not enough memory to open a table with the USE command.
+	1604   No menu item is defined.
+	1605   No menu is defined.
+	1607   Maximum menu items allowed (128) is exceeded.
+	1608   Maximum menus allowed (25) is exceeded.
+	1611   Menu items and titles must be type Character.
+	1612   No such menu or menu item is defined.
+	1621   No menu titles have been defined for this menu.
+	1632   Window file format is invalid.
+	1637   File must be opened exclusively to convert the Memo file.
+	1642   Color set resource is not found.
+	1644   Printer driver is not found.
+	1645   Report contains a nesting error.
+	1646   Total field type must be Date or Numeric.
+	1647   Field expression contains an invalid data type.
+	1649   No previous PRINTJOB command to correspond to this command.
+	1651   CANCEL or SUSPEND is not allowed.
+	1652   Invalid use of a Visual FoxPro function as an array.
+	1657   Column number must be between 0 and the right margin.
+	1659   The table has memo fields that cannot be converted while
+	      open read-only.
+	1661   Microsoft Excel file format is invalid.
+	1662   Lotus 1-2-3 version 1.0 file format is invalid.
+	1670   Multiplan version 4.0 file format is invalid.
+	1671   Cannot import from password-protected file.
+	1673   Symphony version 1.0 file format is invalid.
+	1674   Symphony version 1.1 file format is invalid.
+	1678   Lotus 1-2-3 version 3.0 file format is invalid.
+	1681   PREVIEW clause is not allowed with OFF/NOCONSOLE or TO PRINT/FILE.
+	1683   Index tag is not found.
+	1684   Index tag or file name must be specified.
+	1686   Form file  <name>  is invalid.
+	1687   Menu file is invalid.
+	1688   Paradox file format is invalid.
+	1689   Cannot build an .APP or .EXE file without a main program.
+	1690   Table operation is invalid during indexing.
+	1691   Library file  <name>  is invalid.
+	1693   Cannot find the menu-generation program.
+	1694   Too many extensions are specified.
+	1695   COLUMN | FORM | ALIAS | NOOVERWRITE | WIDTH are only allowed
+	      with the FROM clause.
+	1696   NOWAIT/SAVE/NOENVIRONMENT/IN/WINDOW clauses are not allowed
+	      with the FROM clause.
+	1698   COLUMN | ROW | ALIAS | NOOVERWRITE | SIZE | SCREEN are only
+	      allowed with the FROM clause.
+	1705   File access is denied.
+	1706   Cannot sort .IDX files in descending order.
+	1707   Structural .CDX file is not found.
+	1710   MULTISELECT or MOVER clause is not supported for PROMPT style menus.
+	1711   API library revision mismatch. Rebuild library.
+	1712   Field name is a duplicate or invalid.
+	1713   Field width or number of decimal places is invalid.
+	1715   Server  <server>  is not found.
+	1716   Queue  <queue>  is not found.
+	1718   File is read-only.
+	1719   Object file  <name>  is in use and cannot be removed from memory.
+	1720   Cannot issue the SET FORMAT command while a READ command is
+	      in progress on a format file.
+	1722   Preprocessor expression is invalid.
+	1723   Mismatched #IF/#ELSIF/#ELSE/#ENDIF.
+	1724   Missing #ENDIF.
+	1725   Constant is already created with #DEFINE.
+	1726   API library is not found.
+	1727   A .DBF-style Help file is required.
+	1800   SQL: Internal error.
+	1801   SQL: Error correlating fields.
+	1802   SQL: Cannot locate table.
+	1803   SQL: HAVING clause is invalid.
+	1804   SQL: Statement is invalid.
+	1805   SQL: Too many subqueries.
+	1806   SQL: Column  <field> | <variable>  is not found.
+	1807   SQL: GROUP BY clause is invalid.
+	1808   SQL: ORDER BY clause is invalid.
+	1809   SQL: Out of memory.
+	1810   SQL: Invalid use of subquery.
+	1811   SQL: Aggregate on non-numeric expression.
+	1812   SQL: Statement too long.
+	1813   SQL: Use of UNION in subquery is invalid.
+	1814   SQL: Queries of this type are not supported.
+	1815    <cursor>  must be created with SELECT ...INTO TABLE.
+	1818   SQL: FROM clause is required.
+	1819   SQL: DISTINCT is invalid.
+	1820   SQL: SELECT contains invalid *.
+	1822   SQL: Invalid aggregate field.
+	1825   SQL: Subquery is invalid.
+	1826   SQL: SELECT is invalid.
+	1828   SQL: Illegal GROUP BY in subquery.
+	1830   SQL: Index is not found.
+	1831   SQL: Error building temporary index.
+	1832    <field> | <variable>  is not unique and must be qualified.
+	1833   SQL: WHERE clause is invalid.
+	1834   SQL: Too many UNIONs.
+	1839   SQL: Operation was canceled.
+	1841   SQL: Too many columns referenced.
+	1842   SQL: Subquery nesting is too deep.
+	1844   Cannot nest aggregate functions.
+	1845   SQL expression is too complex.
+	1903   String is too long to fit.
+	1907   Drive specifier is invalid.
+	1908   Length or decimal place argument is invalid.
+	1912   Operation is invalid for a General field.
+	1999   Function is not implemented.
+	
+	Additional query words: VFoxWin
+	
+	======================================================================
+	Keywords          : kbvfp300 kbvfp600 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+	Version           : WINDOWS:3.0
+	
+	=============================================================================
+	

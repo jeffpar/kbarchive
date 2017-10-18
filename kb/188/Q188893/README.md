@@ -1,0 +1,98 @@
+---
+layout: page
+title: "Q188893: SnaBase Hangs When 256th Process Added to Internal Process Table"
+permalink: kb/188/Q188893/
+---
+
+## Q188893: SnaBase Hangs When 256th Process Added to Internal Process Table
+
+	Article: Q188893
+	Product(s): Microsoft SNA Server
+	Version(s): 3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 25-OCT-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 4.0, 4.0 SP1 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The Control Panel Services tool may indicate that the SnaBase service is not
+	running even though Snabase.exe appears in the Windows NT Task List. If you
+	attempt to stop the SnaBase service from an MS-DOS command prompt when it is in
+	this state, it results in an error message indicating that the service cannot be
+	controlled in this state.
+	
+	CAUSE
+	=====
+	
+	The Snadmod.dll file (running underneath the SnaBase service) keeps track of
+	each SNA application that is running on a system in a table that can contain up
+	to 255 entries. This problem can occur if the table is full and a two hundred
+	fifty sixth entry is added to the table. The addition of the two hundred fifty
+	sixth entry to a table defined for 255 entries causes memory owned by other SNA
+	Server processes to be overwritten, which can cause unpredictable results. In
+	this case, the result was that the SnaBase service stopped responding and could
+	no longer respond to requests.
+	
+	
+	RESOLUTION
+	==========
+	
+	SNA Server 3.0
+	--------------
+	
+	To resolve this problem, obtain the latest service pack for SNA Server version
+	3.0. For additional information, please see the following article in the
+	Microsoft Knowledge Base:
+	
+	  Q184307 How to Obtain the Latest SNA Server Version 3.0 Service Pack
+	
+	
+	
+	SNA Server 4.0
+	--------------
+	
+	This problem was corrected in the latest Microsoft SNA Server version 4.0 U.S.
+	Service Pack. For information on obtaining this Service Pack, query on the
+	following word in the Microsoft Knowledge Base (without the spaces):
+	
+	  S E R V P A C K
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in SNA Server, versions 3.0, 3.0
+	SP1, 3.0 SP2, 3.0 SP3, 4.0, and 4.0 SP1. This problem was first corrected in SNA
+	Server 3.0 Service Pack 4.
+	
+	MORE INFORMATION
+	================
+	
+	Although this problem can potentially occur on an SNA Server system, the only
+	reported occurrence of this problem was on Windows NT clients for SNA Server. In
+	this case, the clients were no longer able to accept new connections to process
+	incoming APPC requests.
+	
+	The table that is used to track the active SNA applications should rarely reach
+	255 entries because it is rare to have 255 distinct, active SNA applications on
+	a single SNA Server or client.
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ400 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ300SP2
+	Version           : :3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

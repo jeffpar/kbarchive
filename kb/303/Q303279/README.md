@@ -1,0 +1,78 @@
+---
+layout: page
+title: "Q303279: SMS: Software Inventory Processor Has a Critical Status"
+permalink: kb/303/Q303279/
+---
+
+## Q303279: SMS: Software Inventory Processor Has a Critical Status
+
+	Article: Q303279
+	Product(s): Microsoft Systems Management Server
+	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
+	Operating System(s): 
+	Keyword(s): kbtool kbui kbsms200
+	Last Modified: 19-NOV-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server versions 2.0, 2.0 SP1, 2.0 SP2, 2.0 SP3 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you view the system status, the status of the SMS Software Inventory
+	Processor component may appear as Critical. When you review SMS Software
+	Inventory Processor status messages, you may see thousands of 523 error status
+	messages. Also, when you view the Sinvproc.log file, you may see entries (that
+	are similar to the following entries) that indicate the SMS Software Inventory
+	Processor has repeatedly been unable to process a software inventory file (.sic
+	or .sid):
+	
+	Processing Inventory files
+	Processing file: C:\SMS\inboxes\sinv.box\SMS_000001.SIC  
+	ERROR - Failed to open file C:\SMS\inboxes\sinv.box\SMS_000001.SIC  
+	ERROR - Failed to move file C:\SMS\inboxes\sinv.box\SMS_000001.SIC 
+	to C:\SMS\inboxes\sinv.box\BADSinv\AE4TKKJF.SIC Directory, Win32 = 32 
+	WARNING - Delete file C:\SMS\inboxes\sinv.box\SMS_000001.SIC failed, 
+	Win32 = 32 
+	STATMSG: ID=523 SEV=W LEV=M SOURCE="SMS Server" 
+	COMP="SMS_SOFTWARE_INVENTORY_PROCESSOR" SYS=XSERVER01 SITE=OFF PID=2120 
+	TID=1028 GMTDATE=Wed Jul 04 14:46:43.146 2001 
+	ISTR0="C:\SMS\inboxes\sinv.box\SMS_000001.SIC" ISTR1="" ISTR2="" ISTR3="" 
+	ISTR4="" ISTR5="" ISTR6="" ISTR7="" ISTR8="" ISTR9="" NUMATTRS=0 
+	$$<SMS_SOFTWARE_INVENTORY_PROCESSOR><Wed Jul 4 9:46:43.146 2001 Central 
+	Standard Time><thread=1028 (0x404)>
+	WARNING - Unable to generate resync for client without valid Client Id. !!
+	Process Cycle Completed.  
+	
+	Eventually, the file is successfully processed, and the 523 status messages are
+	no longer generated.
+	
+	CAUSE
+	=====
+	
+	The SMS Software Inventory Processor attempts to process the Software Inventory
+	file before Inbox Manager Assistant has completed copying the file from the
+	Client Access Point to the Site Server.
+	
+	WORKAROUND
+	==========
+	
+	To work around this issue, use a Status Filter rule to discard 523 error status
+	messages, or increase the critical threshold for the SMS Software Inventory
+	Processor within Component Status Summarizers properties.
+	
+	
+	
+	Additional query words: prodsms sinvproc
+	
+	======================================================================
+	Keywords          : kbtool kbui kbsms200 
+	Technology        : kbSMSSearch kbSMS200 kbSMS200SP1 kbSMS200SP2 kbSMS200SP3
+	Version           : :2.0,2.0 SP1,2.0 SP2,2.0 SP3
+	Issue type        : kbprb
+	
+	=============================================================================
+	

@@ -1,0 +1,72 @@
+---
+layout: page
+title: "Q99276: LAN Manager API NetUserSetInfo - Changeable Flag Options"
+permalink: kb/099/Q99276/
+---
+
+## Q99276: LAN Manager API NetUserSetInfo - Changeable Flag Options
+
+	Article: Q99276
+	Product(s): Microsoft LAN Manager
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbnetwork
+	Last Modified: 30-JUL-2001
+	
+	SUMMARY
+	=======
+	
+	This article supplements information in the Microsoft LAN Manager "Programmer's
+	Reference" on option flags you can change using the NetUserSetInfo() API
+	function call.
+	
+	MORE INFORMATION
+	================
+	
+	NetUserSetInfo() allows you to enable and disable various options, some of which
+	are displayed on screens shown in Net Admin->Accounts->User->Select a
+	User, others of which you can display only from the command line by typing:
+	
+	  " net user <username>" (without the quotation marks)
+	
+	Not all of the user account options shown on page 608 of the "Programmer's
+	Reference" can be altered through the use of LAN Manager APIs. These are the
+	usri1_flag bit fields you can change using NetUserSetInfo():
+	
+	 UF_SCRIPT
+	 UF_ACCOUNTDISABLE
+	 UF_HOMEDIR_REQUIRED
+	 UF_PASSWD_NOTREQD
+	 UF_PASSWD_CANT_CHANGE
+	
+	NOTE: You cannot change the UF_DELETE_PROHIBITED flag bit shown on page
+	
+	1. (The flags list is for reference only).
+	
+	In the LAN Manager PTK source file examples, the file NETUSER.C demonstrates how
+	to use the NetSetUserInfo() function call to enable a user account by making
+	changes to the UF_ACCOUNTDISABLE bit of the (usri1_flags) variable: set the
+	UF_ACCOUNTDISABLE bit in the usri1_flags variable to 0 (user account=ON). To
+	disable it, set the bit to 1 (User Account=OFF).
+	
+	Code to the flag bits has this syntax:
+	
+	  usri1_flags &= ~UF_ACCOUNTDISABLE     // to 0 enabling
+	  usri1_flags |= UF_ACCOUNTDISABLE      // to 1 disabling
+	
+	You can change the other changeable bits in the usri1_flags in a similar manner,
+	to the extent that your user privileges allow.
+	
+	REFERENCES
+	==========
+	
+	Microsoft LAN Manager "Programmer's Reference," explanation, page 644;
+	structures, page 608; example program, page 656.
+	
+	Additional query words: 2.10 2.1 2.10a 2.1a 2.20 2.2
+	
+	======================================================================
+	Keywords          : kbnetwork 
+	
+	=============================================================================
+	

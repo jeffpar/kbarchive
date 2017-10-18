@@ -1,0 +1,158 @@
+---
+layout: page
+title: "Q194848: SDLC Connection Fails with Event 23, Qualifier X'002E'"
+permalink: kb/194/Q194848/
+---
+
+## Q194848: SDLC Connection Fails with Event 23, Qualifier X'002E'
+
+	Article: Q194848
+	Product(s): Microsoft SNA Server
+	Version(s): 4.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 01-MAR-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, version 4.0 
+	-------------------------------------------------------------------------------
+	
+	
+	IMPORTANT: This article contains information about editing the registry.
+	Before you edit the registry, make sure you understand how to restore it if
+	a problem occurs. For information about how to do this, view the "Restoring
+	the Registry" Help topic in Regedit.exe or the "Restoring a Registry Key"
+	Help topic in Regedt32.exe.
+	
+	SYMPTOMS
+	========
+	
+	When SNA Server and its synchronous data link control (SDLC) link service do not
+	receive an acknowledgement for a transmitted Information Frame (I- Frame) from
+	the underlying SDLC hardware (that is, SDLC Adapter), the following error will
+	be logged in the Windows NT Application Event Log:
+	
+	  Event ID: 23
+	  Source: SDLC Link Service
+	  Description: Connection <connection name> using Link Service <link service 
+	   name> failed  Qualifier = X'002E'
+	
+	The qualifer of X'002E' indicates that the Write Timeout Retry has been exceeded.
+	
+	CAUSE
+	=====
+	
+	I-Frames should generally be acknowledged before the Write Timeout/Retry value
+	of 15 seconds expires. However, it is not possible to change the Write Timeout
+	and Write Retry Limit parameters in the event that a longer timeout is needed
+	because these values are hardcoded.
+	
+	These parameters were not originally designed to be configurable.
+	
+	
+	RESOLUTION
+	==========
+	
+	SNA Server 3.0
+	--------------
+	
+	To resolve this problem, obtain the latest service pack for SNA Server version
+	3.0. For additional information, please see the following article in the
+	Microsoft Knowledge Base:
+	
+	  Q184307 How to Obtain the Latest SNA Server Version 3.0 Service Pack
+	
+	
+	
+	SNA Server 4.0
+	--------------
+	
+	Microsoft has confirmed this to be a problem in SNA Server version 4.0 and 4.0
+	SP1. This problem was corrected in the latest SNA Server version 4.0 U.S.
+	Service Pack. For information on obtaining this Service Pack, query on the
+	following word in the Microsoft Knowledge Base (without the spaces):
+	
+	  S E R V P A C K
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in SNA Server 2.11, 2.11 Service
+	Pack 1, 2.11 Service Pack 2, 3.0, 3.0 Service Pack 1, 3.0 Service Pack 2, 3.0
+	Service Pack 3, 4.0, and 4.0 Service Pack 1. This problem was first corrected in
+	SNA Server 3.0 Service Pack 4.
+	
+	MORE INFORMATION
+	================
+	
+	The Write Timeout value is set to 1,000 milliseconds and the Write Retry Limit
+	is set to 15. These values cannot be changed. So, if an I-Frame is not
+	acknowledged within 15 seconds from the time it was sent to the SDLC hardware,
+	the error described above will be logged and the SDLC connection will drop to a
+	Pending state while it attempts to re-establish the SDLC connection to the
+	remote device.
+	
+	After applying the hotfix above, the Write Timeout and Write Retry Limit
+	parameters can be configured by setting the following registry parameters:
+	
+	WARNING: Using Registry Editor incorrectly can cause serious problems that may
+	require you to reinstall your operating system. Microsoft cannot guarantee that
+	problems resulting from the incorrect use of Registry Editor can be solved. Use
+	Registry Editor at your own risk.
+	
+	For information about how to edit the registry, view the "Changing Keys And
+	Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+	Information in the Registry" and "Edit Registry Data" Help topics in
+	Regedt32.exe. Note that you should back up the registry before you edit it.
+	
+	1. Start Registry Editor (Regedt32.exe).
+	
+	2. Locate the following key in the registry:
+	  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Snaservr \Parameters
+	  NOTE: The above registry key is one path; it has been wrapped for
+	  readability.
+	
+	3. On the Edit menu, click Add Value, and then add the following registry
+	  value:
+	
+	     Value Name: SDLCWriteTimeout
+	     Data Type:  REG_SZ
+	     Value:      <writetimeout>
+	
+	     where: writetimeout can be from 1 to 65,535 milliseconds.
+	
+	  The default value for this entry is 1,000 milliseconds. If the entry
+	  does not exist, the default value will be used.
+	
+	4. On the Edit menu, click Add Value, and then add the following registry
+	  value:
+	
+	     Value Name: SDLCWriteRetries
+	     Data Type:  REG_SZ
+	     Value:      <writeretries>
+	
+	     where: writeretries can be from 1 to 65535.
+	
+	  The default value for this entry is 15. If the entry does not exist, the
+	  default value will be used.
+	
+	5. Quit Registry Editor.
+	
+	For more information on these and other SDLC connection parameters, please refer
+	to Open(LINK) Request message discussion in Chapter 4 of the SNA Device
+	Interface Specification manual included with the SNA Server SDK.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400
+	Version           : :4.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

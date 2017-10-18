@@ -1,0 +1,82 @@
+---
+layout: page
+title: "Q159504: XCLN: Profgen.exe Fails to Replace MailBoxName"
+permalink: kb/159/Q159504/
+---
+
+## Q159504: XCLN: Profgen.exe Fails to Replace MailBoxName
+
+	Article: Q159504
+	Product(s): Microsoft Exchange
+	Version(s): WINDOWS:4.0,5.0
+	Operating System(s): 
+	Keyword(s): kbusage
+	Last Modified: 12-APR-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Windows NT client, versions 4.0, 5.0 
+	- Microsoft Exchange Windows 95/98 client, versions 4.0, 5.0 
+	- Microsoft Exchange Windows 3.x client, versions 4.0, 5.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you create profiles using Profgen.exe with the -U switch or with
+	UpdateMailboxName=1 in Profgen.ini, the MailboxName= entry in the Default.prf
+	file is updated with the Current Login ID; however, the profile contains the
+	MailboxName originally specified in Default.prf instead of the Current Login ID.
+	
+	RESOLUTION
+	==========
+	
+	This problem can be resolved by obtaining the latest version of Profgen.exe from
+	the Microsoft BackOffice Resource Kit, version 1.0. You will need to obtain the
+	updated version of Profgen.exe if the properties of your Profgen.exe file are:
+	
+	  Size: 80,272 KB
+	  Date: 5/17/96
+	
+	The newer version of Profgen.exe has the following properties:
+	
+	  Size: 80,752 KB
+	  Date: 8/13/96
+	
+	MORE INFORMATION
+	================
+	
+	The Microsoft Exchange Roving User Profile Generation Program, Profgen.exe, is
+	an unsupported program that simplifies the creation of Microsoft Exchange
+	Profiles. It works in conjunction with the Automatic Profile Generator program
+	(Newprof.exe) to create profiles.
+	
+	Profgen.exe can be used to overwrite the MailBoxName= entry in the Default.prf
+	file with the current logged in User ID. This can be done by running Profgen.exe
+	with the -U switch or changing the UpdateMailboxName= entry in the the [PROFGEN]
+	section of the Profgen.ini file to a value of 0. If no command line options are
+	specified, Profgen.exe will utilize the Profgen.ini.
+	
+	After modifying Default.prf, Profgen.exe copies Default.prf to Profgen.tmp.
+	Profgen.tmp is then used with Newprof.exe to create the profile.
+	
+	The older version of Profgen.exe modifies the MailboxName= entry after copying
+	Default.prf to Profgen.tmp. Thus, the newly created profile will not be updated,
+	but the Default.prf will.
+	
+	More information on Profgen.exe can be found in the "Microsoft Exchange Roving
+	User Profile Generation Program (Profgen.exe)" white paper located on the
+	Microsoft TechNet compact disc and at
+	http://www.microsoft.com/technet/tnorder.htm.
+	
+	
+	Additional query words: stfedt bork newprof profgen exclnfaqold
+	
+	======================================================================
+	Keywords          : kbusage 
+	Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange400NT kbExchange500NT kbExchange400Win95 kbExchange500Win95
+	Version           : WINDOWS:4.0,5.0
+	
+	=============================================================================
+	

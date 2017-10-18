@@ -1,0 +1,120 @@
+---
+layout: page
+title: "Q125469: PRB: Run-time Subroutines Do Not Appear to Function"
+permalink: kb/125/Q125469/
+---
+
+## Q125469: PRB: Run-time Subroutines Do Not Appear to Function
+
+	Article: Q125469
+	Product(s): Microsoft Fortran Compiler
+	Version(s): 1.0,1.0a,4.0
+	Operating System(s): 
+	Keyword(s): kbFortranPS kbLangFortran
+	Last Modified: 05-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft FORTRAN PowerStation for MS-DOS, versions 1.0, 1.0a 
+	- Microsoft Fortran Powerstation 32 for Windows NT, versions 1.0, 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The code compiles, links, and runs with no errors, but some of the run-time
+	subroutines do not appear to function correctly. Unexpected results are
+	returned.
+	
+	CAUSE
+	=====
+	
+	The subroutine may not have an interface statement or a parameter used in the
+	subroutine may not be defined.
+	
+	RESOLUTION
+	==========
+	
+	Include FLIB.FI prior to the PROGRAM statement or as the first line in any file
+	that uses these subroutines or functions. Also, include FLIB.FD inside the main
+	program or any subroutine or function that uses the run- time subroutines.
+	
+	MORE INFORMATION
+	================
+	
+	The following code sample compiles, links, and runs without generating an error,
+	but the array is not sorted and the random seed is initialized with a zero. In
+	the case of the SORTQQ routine, the last argument is a parameter defined in
+	FLIB.FD. Because that file is not included, the variable is typed as a REAL and
+	initialized to zero. SORTQQ fails to sort because the size of the data items to
+	be sorted is zero.
+	
+	If the file FLIB.FI is included by changing the first INCLUDE from a comment into
+	an executed line, you will receive these errors:
+	
+	  F4016 : SEED : formal argument ARG: type mismatch
+	  F4016 : SORTQQ : formal argument SIZE: type mismatch
+	
+	If the variables passed to these routines are type compatible and indicate
+	correct values, the program may run correctly.
+	
+	To solve the problem in the sample below, change both include lines from comments
+	into executable lines.
+	
+	Additionally, there may be several run-time subroutines that use parameters
+	defined in the FLIB.FD file, but the documentation fails to indicate that you
+	must include FLIB.FD. The following is a partial list of those subroutines:
+	
+	     ELLIPSE, ELLIPSE_W
+	     GETWRITEMODE
+	     PIE, PIE_W
+	     REMAPALLPALETTE, REMAPPALETE
+	     SEED
+	     SETWRITEMODE
+	
+	Sample Code
+	-----------
+	
+	  C Compile options needed: none
+	
+	  C      INCLUDE 'flib.fi'
+	
+	        PROGRAM Test
+	  C      INCLUDE 'flib.fd'
+	        INTEGER maxsize
+	        INTEGER*4 buf(100)
+	        INTEGER*4 i
+	        REAL*4 rdm
+	        PRINT*, "Enter the number of values (max = 100): "
+	        READ(*, "(I4)") maxsize
+	        IF(maxsize .GT. 100 ) maxsize = 100
+	        CALL SEED(RND$TIMESEED)
+	        DO i = 1, maxsize
+	            CALL RANDOM(rdm)
+	  C         Random value from 1 to maxsize
+	
+	            buf(i) = INT4(rdm * maxsize + 1.0)
+	        END DO
+	  C     Print out the unsorted array
+	
+	        WRITE(*, "(5I6)") (buf(i), i = 1, maxsize)
+	        PRINT*
+	  C     Sort the array
+	
+	        CALL SORTQQ(LOC(buf), maxsize, SRT$INTEGER4)
+	  C     Print out the sorted array
+	
+	        WRITE(*, "(5I6)") (buf(i), i = 1, maxsize)
+	        PRINT*
+	        END
+	
+	Additional query words: 1.00 1.00a 4.00 fail bomb incorrect bad runtime
+	
+	======================================================================
+	Keywords          : kbFortranPS kbLangFortran 
+	Technology        : kbAudDeveloper kbFortranSearch kbZNotKeyword2 kbZNotKeyword3 kbFORTRANPower32100NT kbFORTRANPower32400NT kbFORTRANPower100DOS kbFORTRANPower100aDOS
+	Version           : :1.0,1.0a,4.0
+	
+	=============================================================================
+	

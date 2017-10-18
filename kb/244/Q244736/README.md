@@ -1,0 +1,101 @@
+---
+layout: page
+title: "Q244736: Asheron's Call: Character Created at a Previous Time Is Missing"
+permalink: kb/244/Q244736/
+---
+
+## Q244736: Asheron's Call: Character Created at a Previous Time Is Missing
+
+	Article: Q244736
+	Product(s): Microsoft Home Games
+	Version(s): 1.0
+	Operating System(s): 
+	Keyword(s): igz kbimu msgamekbfaq
+	Last Modified: 16-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Asheron's Call, version 1.0 
+	- Microsoft Asheron's Call: Dark Majesty, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you enter a world in Microsoft Asheron's Call, a character that you created
+	at a previous time may not be listed in one of the five character slots.
+	
+	CAUSE
+	=====
+	
+	This behavior can occur if one of the following conditions is true:
+	
+	- You enter a world that is different from the world in which you created the
+	  character.
+	
+	- You delete the character.
+	
+	- The character was removed for having an offensive name.
+	
+	- Someone else has gained access to your account.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, use the appropriate method.
+	
+	You Enter a World that Is Different From the World in Which You Created the Character:
+	
+	There are 8 Asheron's Call worlds. Each world is seperate from the others. If a
+	character is created on one world it will not be visible on the others. To
+	locate a missing character please connect to each of the worlds listed on the
+	appropriate Web pages below until the character is found:
+	
+	  Asheron's Call Dark Majesty
+	
+	  http://zone.msn.com/asheronscallxp/minilaunch2.asp
+	
+	  Asheron's Call
+	
+	  http://zone.msn.com/asheronscall/minilaunch2.asp
+	
+	You Delete the Character:
+	
+	When you delete a character, it no longer exists after one hour. You need to
+	create a new character after this time.
+	
+	For additional information about how to restore a deleted character, click the
+	article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q262247 Asheron's Call: How to Restore Accidentally Deleted Characters
+	
+	Your Character Has an Offensive Name:
+	
+	If you create a character that has an offensive name it will be removed from the
+	servers.
+	
+	To prevent your character from being removed do not create one with an offensive
+	name.
+	
+	For more information, please see the following Asheron's Call Web site:
+	
+	  http://zone.msn.com/asheronscall/tips/ashetipsconduct.asp
+	
+	Someone Else Has Gained Access to Your Account:
+	
+	If you think that someone else has gained access to your account, please follow
+	the precautions described at the following Asheron's Call Web site:
+	
+	  http://zone.msn.com/asheronscall/news/ashenewsprotect.asp
+	
+	Additional query words: 1.00 msgame igz msngz ac missing asherons
+	
+	======================================================================
+	Keywords          : igz kbimu msgame kbfaq
+	Technology        : kbHomeProdSearch _IKkbbogus kbGamesSearch kbMSNSearch kbAsheronSearch kbAsheron100 kbAsheronDarkMaj
+	Version           : :1.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

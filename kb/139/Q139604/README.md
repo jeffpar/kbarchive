@@ -1,0 +1,551 @@
+---
+layout: page
+title: "Q139604: Golf 2.0 for Windows: Multimedia Edition Readme.txt File"
+permalink: kb/139/Q139604/
+---
+
+## Q139604: Golf 2.0 for Windows: Multimedia Edition Readme.txt File
+
+	Article: Q139604
+	Product(s): Microsoft Home Games
+	Version(s): WINDOWS:2.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 12-JUN-2001
+	
+	2.00
+	WINDOWS
+	kbreadme kbref
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Golf for Windows, multimedia edition, version 2.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The following article contains a copy of the Microsoft Golf 2.0 Readme.txt
+	file.
+	
+	NOTE: This Readme document refers to the Microsoft Download Service (MSDL). As of
+	12/31/1998, the MSDL service is no longer available. To download support files,
+	visit one of the following Microsoft Internet sites:
+	
+	  http://www.microsoft.com/support
+	
+	  ftp://ftp.microsoft.com/softlib/mslfiles
+	
+	MORE INFORMATION
+	================
+	
+	Microsoft Golf for Windows CD-ROM Version 2.0 README File
+	
+	This file contains important information that supplements online Help
+	and the Microsoft Golf Getting Started booklet.
+	
+	To get news and any product updates for MS Golf 2.0 CD and PlayerNet
+	be sure to check out our Internet site on http://www.microsoft.com.
+	Go to the Microsoft Home section and look for Golf 2.0 in the Index.
+	
+	Contents
+	
+	A. Installation Notes
+	
+	  > Troubleshooting Microsoft Golf Setup
+	  > Installing Microsoft Golf on Windows NT
+	  > Installing Microsoft Golf from a Third-Party Shell
+	  > Using a Clean Boot to Resolve Setup Conflicts
+	  > Resolving Setup Freezes During Installation
+	  > Starting Microsoft Golf If You Are Using the PC Tools Desktop
+	  > Notes on Uninstalling Golf on Windows 3.1
+	  > Uninstalling Golf on Windows NT 3.51
+	  > Late-Breaking Installation Notes
+	
+	B. PlayerNet and Multiplayer Game Notes
+	
+	  > Installing PlayerNet
+	  > PlayerNet and Plus! 95 Internet AutoDial
+	  > More on PlayerNet
+	
+	C. Hardware and System Compatibility
+	
+	  > Increasing Your Swap File
+	  > Improving Performance on Machines with 8 MB of RAM
+	  > Growstub Error
+	  > EMM 386 Exception Error
+	  > Win32s Error
+	
+	D. Video Driver Notes
+	
+	  > Unhandled Exception Error for the S3 Video Driver
+	  > Resolving Diamond Stealth 24 Video Driver Conflicts
+	  > Resolving Other Video Driver Conflicts
+	
+	E. Midi Notes
+	
+	  > Playing Midi Files on Older Windows 3.1 Systems
+	
+	A.  Installation Notes
+	
+	Troubleshooting Microsoft Golf Setup
+	Below are the four most common errors encountered while installing
+	Microsoft Golf. Follow the instructions for each error message you
+	encountered while trying to install Microsoft Golf, and then run
+	Setup again.
+	
+	**An Intel 386 or higher processor**
+	
+	You must either upgrade to an Intel 386 or higher processor, or
+	switch to a computer with an Intel 386 or higher processor.
+	
+	**Windows version 3.1 or later**
+	
+	You must install Microsoft Windows version 3.1 or later. To purchase
+	a Windows upgrade, see your local retailer.
+	
+	**A 256-color video driver (minimum 640 x 480 display resolution)**
+	
+	Microsoft Golf high-resolution golf courses require a 256-color video
+	display. In most cases you need only install a 256-color video driver
+	to correct the problem.
+	
+	IMPORTANT: Use the File Manager to copy and rename the SYSTEM.INI
+	file before following this procedure. For your protection, do not
+	make changes to the original SYSTEM.INI file in case you need to
+	restore it later. To install a video driver in Windows 3.1:
+	
+	In the Main group of the Windows Program Manager, double-click the
+	Windows Setup icon.
+	Click the Options menu, and then click Change System Settings.
+	Under Display, click a 256-color driver that is compatible with
+	your computer's video card.
+	NOTE: If you are unsure which 256-color driver is compatible with
+	your video card, try the generic Super VGA driver, or contact your
+	video-card manufacturer for more information
+	Click OK.
+	Restart Windows to update the system.
+	Reinstall Microsoft Golf.
+	
+	To change the palette to 256 colors in Windows 95:
+	Click the Start button, point to Settings, and then click Control Panel.
+	Double-click the Display icon.
+	Click the Settings tab.
+	Under Color Palette, click 256 color.
+	Click OK.
+	Reinstall Microsoft Golf.
+	
+	NOTE: If you don't have the necessary 256-color driver, or if you
+	aren't sure that your video card supports 256 colors, contact your
+	video-card manufacturer.
+	
+	To obtain Super VGA drivers:
+	Download the SVGA drivers from the Microsoft Download Service (MSDL).
+	These drivers work correctly on many video cards. The phone number
+	for MSDL is (425) 936-6735. This service is available 24 hours a day,
+	7 days a week. The highest download speed available is 14,400 bits
+	per second (bps). Each file is a compressed, self-extracting file. To
+	download the file, download the filename SVGA.EXE. After you download
+	the file, run it in an empty directory to extract the files it
+	contains.
+	
+	**Windows running in 386 enhanced mode (applies only to Windows 3.1
+	users)**
+	
+	Windows requires 2 megabytes (MB) of RAM to run in enhanced mode. If
+	you have 8 MB of RAM, as required by Microsoft Golf, and are unable
+	to run Windows in enhanced mode, you may need to reconfigure your
+	computer. You can determine if Windows is running in standard or
+	enhanced mode by clicking About on the Help menu.
+	
+	NOTE: If you are unsure how much RAM your computer has, you can run
+	Microsoft Diagnostics (MSD), or check with the manufacturer of you
+	computer. For more information about running MSD, see your Windows
+	User's Guide.
+	
+	If your computer has the required 8 MB of RAM and won't run in
+	enhanced mode, contact Microsoft Windows support at 1-425-637-7098.
+	
+	If your computer has the required 8 MB of RAM, and you are an
+	advanced computer user, you may try removing some TSRs from your
+	AUTOEXEC.BAT file and editing your CONFIG.SYS file to make more
+	memory available to Windows.
+	
+	Below are examples of clean boot AUTOEXEC.BAT and CONFIG.SYS files
+	that should make enough memory available for Windows to run in
+	enhanced mode.
+	
+	IMPORTANT: Use the File Manager to copy and rename your AUTOEXEC.BAT
+	and CONFIG.SYS files in case you need to restore your current
+	configuration.
+	
+	Example for a clean boot AUTOEXEC.BAT file:
+	Path=c:\;c:\dos;c:\windows
+	Prompt $p$g
+	Set Temp=c:\temp(make sure it points to a valid temp directory)
+	Include any command lines necessary for audio cards, CD-ROM drives,
+	or hard-disk compression utilities.
+	
+	Example for a clean boot CONFIG.SYS file:
+	Device=c:\windows\himem.sys
+	Files=65
+	Buffers=20
+	Stacks=9,256
+	Shell=c:\dos\command.com c:\dos\ /p /e:256
+	Include any command lines necessary for audio cards, CD-ROM drives,
+	or hard-disk compression utilities.
+	
+	Installing Microsoft Golf on Windows NT
+	You must have Windows NT 3.51 or higher to install Microsoft Golf. If
+	you are using Windows NT 3.5, contact your retailer for an upgrade.
+	
+	Installing Microsoft Golf from a Third-Party Shell
+	Follow these instructions if you are having trouble installing
+	Microsoft Golf from a shell program such as Packard Bell Navigator,
+	Xsoft TabWorks, or Norton Desktop.
+	
+	IMPORTANT: Use the File Manager to copy and rename the SYSTEM.INI
+	file before following this procedure. For your protection, do not
+	make changes to the original SYSTEM.INI file in case you need to
+	restore it later.
+	
+	In the Accessories group of Windows Program Manager, double-click
+	the Notepad icon.
+	On the File menu, click Open.
+	In the File Name box, type:  system.ini
+	Click OK.
+	Under [Boot], find the 'Shell=' line.
+	Type a semicolon at the beginning of the 'Shell=' line. (This
+	remarks out the line.)
+	Create a new line under 'Shell=' and type:  Shell=Progman.exe
+	On the File menu, click Save.
+	On the File menu, click Exit.
+	Restart Windows, and then install Microsoft Golf.
+	
+	After you've installed Microsoft Golf, follow steps 1 to 5 above, and
+	then delete the semicolon from the first 'Shell=' line. Type a
+	semicolon at the beginning of the 'Shell=Progman.exe' line you added
+	to remark out the line.
+	
+	Using a Clean Boot to Resolve Setup Conflicts
+	If you are unable to install Microsoft Golf, you can edit your
+	AUTOEXEC.BAT, CONFIG.SYS, and WIN.INI files and use a clean boot to
+	make more memory available to Windows.
+	
+	IMPORTANT: Use the File Manager to copy and rename the AUTOEXEC.BAT,
+	CONFIG.SYS, and WIN.INI files before following this procedure. For
+	your protection, do not make changes to the original files in case
+	you need to restore them later.
+	
+	In the Main group of Windows Program Manager, double-click the
+	File Manager icon.
+	Double-click the Windows directory.
+	Open the AUTOEXEC.BAT, CONFIG.SYS, and WIN.INI files and edit out
+	unnecessary command lines. Refer to the following examples for what
+	to leave in the files.
+	On the File menu, click Save.
+	On the File menu, click Exit.
+	Restart Windows, and then install Microsoft Golf.
+	
+	Examples:
+	
+	AUTOEXEC.BAT
+	Path=c:\;c:\dos;c:\windows
+	Prompt $p$g
+	Set Temp=c:\temp (make sure it points to a valid temp directory)
+	Include any command lines necessary for audio cards, CD-ROM drives,
+	or hard-disk compression utilities.
+	
+	CONFIG.SYS
+	Device=c:\windows\himem.sys
+	Files=65
+	Buffers=20
+	Stacks=9,256
+	Shell=c:\dos\command.com c:\dos\ /p /e:256
+	Include any command lines necessary for audio cards, CD-ROM drives,
+	or hard-disk compression utilities.
+	
+	WIN.INI
+	Type a semicolon in front of the 'Load=' line and the 'Run=' line in
+	the 'Windows' category to remark out the lines.
+	
+	NOTE: Remarking out the lines only has to be done if there are
+	commands on the lines.
+	
+	Rename the Startup group if any programs are being loaded through it.
+	
+	Resolving Setup Freezes During Installation
+	If Setup stalls during installation, and you are running MS-DOS 6.0
+	or later, run Scandisk followed by Defrag /f. For information about
+	these two commands, see the MS-DOS User's Guide. After the commands
+	are completed, restart Windows, and then install Microsoft Golf.
+	
+	If you are not running MS-DOS 6.0 or later, you can use the Chkdsk /f
+	command. You can then use a defragmentation utility such as PC Tools
+	or Norton Desktop.
+	
+	Starting Microsoft Golf If You Are Using the PC Tools Desktop
+	If you are using PC Tools Desktop as your Windows shell, you will
+	need to restart Windows manually after installing Microsoft Golf.
+	Just exit Windows and type Win at the prompt.
+	
+	Notes on Uninstalling Golf on Windows 3.1
+	On some systems, uninstalling Golf from Windows 3.1 can leave
+	unnecessary files and subfolders in the Golf folder. You can safely
+	delete these.
+	
+	Uninstalling Golf on Windows NT 3.51
+	To uninstall Golf from Windows NT 3.51, double-click SETUP.EXE from
+	the GLFSETUP subfolder in the GOLFCD folder. Follow the directions on
+	the screen.
+	
+	Late-Breaking Installation Notes
+	When installing Golf on Windows 3.1 systems you might encounter a
+	system error if there is not enough memory to install all of the
+	selected installation options. To avoid a system error, select fewer
+	installation options in the Custom Installation dialog box, or cancel
+	Setup and free-up enough space for the options selected.
+	
+	B.  PlayerNet and Multiplayer Game Notes
+	
+	Installing PlayerNet
+	If you choose the Typical Golf installation option from Golf Setup,
+	PlayerNet Setup will automatically start after Golf installation is
+	complete. If you choose the Custom installation option and choose not
+	to install PlayerNet, you cannot add it later using Golf Setup.
+	Instead, double-click SETUP.EXE in the PLAYERNET folder of the
+	Multimedia Golf 2.0 CD.
+	
+	PlayerNet and Plus! 95 Internet AutoDial
+	If the Plus! 95 Internet AutoDial feature is interfering with making
+	PlayerNet connections, turn off AutoDial. To turn off AutoDial, click
+	the Windows 95 Start button, point to Settings, and click Control
+	Panel. Double-click the Internet icon. On the AutoDial tab of the
+	Internet Properties dialog box, click Use AutoDial to clear the check
+	box.
+	
+	More on PlayerNet
+	When the start-up procedure for a PlayerNet game is cancelled for any
+	reason, be sure that all message boxes that may have been displayed
+	are closed before the Host attempts to restart a game. If you are
+	still having trouble, close Golf and wait for an invitation to play
+	in PlayerNet. If you are still having difficulty being connected to a
+	PlayerNet game, close Golf and PlayerNet, restart PlayerNet and then
+	start a new game from PlayerNet.
+	
+	It is recommended that all players in a multiplayer Game have
+	different names. It may cause problems to have more than one player
+	with the same name when saving and playing saved games.
+	
+	NOTE: For additional late-breaking PlayerNet information, consult the
+	file PLAYRNET.TXT in the PLAYERNET folder.
+	
+	C. Hardware and System Compatibility
+	
+	Increasing Your Swap File
+	Microsoft Golf requires at least 8 MB of RAM and an 8-MB swap file
+	(preferably permanent). Be sure that the swap file is set for a
+	minimum of 8 MB. Increasing the swap-file size may improve the
+	performance of Microsoft Golf.
+	
+	Follow this procedure to increase the swap file if your computer has
+	enough disk space:
+	
+	In the Main Group of Windows Program Manager, double-click the
+	Control Panel icon.
+	Double-click the 386 Enhanced icon.
+	Click Virtual Memory.
+	Click Change.
+	Increase the size of the swap file.
+	
+	Follow this procedure to increase the swap file if your computer is
+	low on disk space and you are running MS-DOS 6.0 or later:
+	
+	In the Main group of Windows Program Manager, double-click the
+	Control Panel icon.
+	Double-click the 386 Enhanced icon.
+	Click Virtual Memory.
+	Click Change.
+	Under New Swapfile Settings, type None in the Type box.
+	Click OK in both dialog boxes.
+	Close Windows.
+	At the MS-DOS prompt, run Scandisk, and then Defrag. For
+	information about these two commands, see the MS-DOS User's Guide.
+	Once these commands are completed, restart Windows. Increase the
+	virtual memory using the previous procedure.
+	
+	NOTE:  If you are unable to create an 8 MB swap file using this
+	procedure, you can delete files from the hard disk, and then try the
+	procedure again.
+	
+	If you are not using MS-DOS 6.0 or later, you can use the Chkdsk /f
+	command to check your swap file size. You can then use a
+	defragmentation utility such as PCTOOLS or Norton.
+	
+	Improving Performance on Machines with 8 MB of RAM
+	If performance is slow on your computer with 8 MB of RAM, the
+	following tips may help:
+	
+	* Increase the size of your swap file (see Increasing Your Swap File).
+	* Close some of the Microsoft Golf windows (for example, if both Main
+	View and Green View are displayed, then close Green View).
+	* Reduce the size of Main View.
+	* Modify options in the Display Options dialog box:
+	On the Options menu, click Display.
+	Clear the Render Full Size check box.
+	Clear the Draw Shadows check box.
+	Clear the Texture Terrain check box.
+	Reduce the Terrain Detail levels.
+	When you turn off Texture Terrain and reduce the Terrain Detail
+	levels, you affect the appearance of the course -- do this only if
+	speed is more important than appearance.
+	* Use the clean boot configuration (see Using a Clean Boot to Resolve
+	Setup Conflicts). Change the clean boot so that it:
+	- Loads the minimal number of memory-resident drivers and programs
+	needed to run Windows.
+	- Does not enable expanded memory (EMM386 should be configured for NOEMS).
+	- Does not load SmartDrive (this becomes a trade-off between more
+	memory and slower hard-disk performance -- on some systems this may
+	lead to slower game play).
+	
+	*Install more memory in your machine to speed up Microsoft Golf. 8 MB
+	of RAM is recommended.
+	
+	Growstub Error
+	Use the following procedure if you get a growstub error message.
+	
+	IMPORTANT: Use the File Manager to copy and rename the WIN.INI file
+	before following this procedure. For your protection, do not make
+	changes to the original WIN.INI file in case you need to restore it
+	later.
+	
+	Click the Accessories group of Windows Program Manager, and then
+	double-click Notepad.
+	On the File menu, click Open.
+	In the File Name box, type:  win.ini.
+	Find the 'Load=' line under the 'Window' category.
+	Delete 'Pointer.exe' part of the 'Load=' line.
+	On the File menu, click Save.
+	On the File menu, click Exit.
+	Restart Windows, and then restart Microsoft Golf.
+	
+	EMM 386 Exception Error
+	Use the following procedure if you get an EMM 386 exception error.
+	
+	IMPORTANT: Use the File Manager to copy and rename the WIN.INI file
+	before following this procedure. For your protection, do not make
+	changes to the original WIN.INI file in case you need to restore it
+	later.
+	
+	Click the Accessories group of Windows Program Manager, and then
+	double-click Notepad.
+	On the File menu, click Open.
+	In the File Name box, type:  win.ini.
+	Click OK.
+	Find the 'Load=' line under the 'Window' category.
+	Delete the 'Pointer.exe' command part of the 'Load=' line.
+	NOTE: For some Packard Bell computers, you may also need to remove
+	the 'Mapiappi.exe' command part of the 'Run=' line.
+	On the File menu, click Save.
+	On the File menu, click Exit.
+	Restart Windows, and then restart Microsoft Golf.
+	
+	Win32s Error
+	To resolve this error, you need to create a larger swap file. See
+	Increasing Your Swap File for instructions.
+	
+	D.  Video Driver Notes
+	
+	Unhandled Exception Error for the S3 Video Driver
+	Some S3 video drivers (in particular Dell S3 drivers) can cause
+	unpredictable crashes when running Microsoft Golf under Win32s.
+	Contact your video-card manufacturer to make sure you have a video
+	driver compatible with Win32s.
+	
+	IMPORTANT: Use the File Manager to copy and rename the SYSTEM.INI
+	file before following this procedure. For your protection, do not
+	make changes to the original SYSTEM.INI file in case you need to
+	restore it later.
+	
+	In the Main group of Windows Program Manager, click Windows Setup.
+	On the Options menu, click Change System Settings.
+	In the Display list, click Super VGA or a newer 256-color display
+	driver suited for the video card in the computer.
+	Click OK.
+	Restart Windows, and then restart Microsoft Golf.
+	
+	To obtain Super VGA drivers:
+	Download the SVGA drivers from the Microsoft Download Service (MSDL).
+	These drivers work correctly on many video cards. The phone number
+	for MSDL is (425) 936-6735. This service is available 24 hours a day,
+	7 days a week. The highest download speed available is 14,400 bps.
+	Each file is a compressed, self-extracting file. To download the
+	file, download the filename SVGA.EXE. After you download the file,
+	run it in an empty directory to extract the files it contains.
+	
+	Resolving Diamond Stealth 24 Video Driver Conflicts
+	Diamond Stealth 24 video drivers can cause unpredictable crashes when
+	running Microsoft Golf under Win32s. Contact your video-card
+	manufacturer to make sure you have a video driver compatible with
+	Win32s.
+	
+	IMPORTANT: Use the File Manager to copy and rename the SYSTEM.INI
+	file before following this procedure. For your protection, do not
+	make changes to the original SYSTEM.INI file in case you need to
+	restore it later.
+	
+	In the Main group of Windows Program Manager, double-click Windows
+	Setup.
+	
+	On the Options menu, click Change System Settings.
+	In the Display list, click Super VGA 256 color or a newer 256
+	color display driver suited for the video card in the computer.
+	Click OK.
+	Restart Windows, and then restart Microsoft Golf.
+	
+	Resolving Other Video Driver Conflicts
+	General Video Driver Notes
+	
+	Some systems may have display problems when using incorrect or
+	generic Windows video drivers. Be sure you have installed the correct
+	video driver for you video card.
+	
+	Determine which driver is being used by double-clicking Windows Setup
+	in the Main group.
+	
+	Contact your video-card manufacturer for verification of the latest
+	video driver, and for information about obtaining the latest driver.
+	See Unhandled Exception Error for the S3 Video Driver for information
+	about downloading SVGA drivers.
+	
+	E. Midi Notes
+	
+	Playing Midi Files on Older Windows 3.1 Systems
+	Older Windows 3.1 systems may not be able to play the Midi files that
+	accompany fly-bys due to older midi mapping conventions. To hear the
+	midi music, either use an existing midi map that has channels 1-10
+	already assigned to a device, or reassign channels 1-10 of the
+	current map to a valid device. For more information on changing your
+	midi mapping consult your Windows documentation.
+	
+	***************************************************************************
+	**
+	*
+	Thank you for choosing Microsoft Golf version 2.0 for Windows. Have fun!
+	Fore
+	!
+	***************************************************************************
+	**
+	*
+	
+	Additional query words: kbhowto golf cd compactdisc multi media multi- multimedia
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbGamesSearch kbGolfSearch kbGolf200
+	Version           : WINDOWS:2.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

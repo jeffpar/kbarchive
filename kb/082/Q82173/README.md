@@ -1,0 +1,152 @@
+---
+layout: page
+title: "Q82173: Applications Appearing in Windows 3.1 APPS.HLP (N-Z)"
+permalink: kb/082/Q82173/
+---
+
+## Q82173: Applications Appearing in Windows 3.1 APPS.HLP (N-Z)
+
+	Article: Q82173
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:3.1,3.11
+	Operating System(s): 
+	Keyword(s): win31
+	Last Modified: 16-OCT-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows versions 3.1, 3.11 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The following is the complete text for each application listed in the Microsoft
+	Windows 3.1 APPS.HLP file.
+	
+	MORE INFORMATION
+	================
+	
+	NBI Legacy
+	----------
+	
+	If you have been running Legacy with Windows version 3.0, you might see some
+	differences when you run this application with Windows version 3.1. For example,
+	you might not be able to print device fonts on Hewlett-Packard Series III
+	printers. If you are not using Legacy version 2.0 or later, you should obtain an
+	updated version.
+	
+	To obtain an updated version of Legacy, contact your software vendor or NBI,
+	Incorporated, at 1-800-NBI-1111. Outside the United States, contact your local
+	software vendor or NBI subsidiary.
+	
+	Norton Desktop 1.0
+	------------------
+	
+	If you have been running Norton Desktop version 1.0 with Windows version 3.0, you
+	might see some differences when you run this application with Windows version
+	3.1. For example, when you try to change an icon's label, you may need to select
+	the icon twice before you can begin the task.
+	
+	If you have difficulty getting Desktop to run, you might need to make the
+	following changes to the [386Enh] section of your SYSTEM.INI file: Add the line
+	device=*vdmad and remove the line:
+	
+	       device=vdmadx.386.
+	
+	For information about obtaining an updated version of Norton Desktop, call the
+	Peter Norton Group of the Symantec Corporation at 408-253-9600. Outside the
+	United States, contact your local software vendor or Symantec subsidiary.
+	
+	PFS:WindowsWorks
+	----------------
+	
+	If you have been running PFS:WindowsWorks with Windows version 3.0, you might see
+	some differences when you run this application with Windows version 3.1. For
+	example, you might have difficulty printing files in landscape orientation.
+	
+	To obtain an updated version of PFS:WindowsWorks, contact your software vendor or
+	call Spinnaker Software Corporation at 617-494-5261. Outside the United States,
+	contact your local software vendor or Spinnaker Software subsidiary.
+	
+	Powersoft Powerbuilder 1.0
+	--------------------------
+	
+	To run Powersoft Powerbuilder with Windows version 3.1, you need to use
+	Powerbuilder version 1.0b or later.
+	
+	To obtain an updated version of Powerbuilder, contact your software vendor or
+	call Powersoft Corporation at 617-229-2200. Outside the United States, contact
+	your local software vendor or Powersoft subsidiary.
+	
+	SofNet FAXit for Windows
+	------------------------
+	
+	To run SofNet FAXit for Windows with Windows version 3.1, you need to use FAXit
+	version 2.5 or later.
+	
+	If you have difficulty sending a fax, adding the following line to the [386Enh]
+	section of your SYSTEM.INI file might solve the problem:
+	
+	       comxbuffer=0
+	
+	For information about obtaining an update to FAXit version 1.53 that was supplied
+	with the Intel SatisFAXtion board, call the Intel Corporation at
+	1-800-256-3071.
+	
+	For information about obtaining an update to FAXit versions 2.0 and later, call
+	SofNet at 404-984-8088. Outside the United States, contact your local software
+	vendor or SofNet subsidiary.
+	
+	Software Publishing Harvard Graphics for Windows
+	------------------------------------------------
+	
+	If you want to use TrueType fonts with Harvard Graphics, you must select a
+	printer driver other than the Magicorp driver.
+	
+	For information about obtaining an updated version, contact your software vendor
+	or call Software Publishing Corporation at 408-986-8000. Outside the United
+	States, contact your local software vendor.
+	
+	WordPerfect for Windows
+	-----------------------
+	
+	If you have been running WordPerfect version 5.1 with Windows version 3.0 and you
+	find that it runs differently with Windows version 3.1, you need to obtain an
+	updated version of Wordperfect.
+	
+	For information about obtaining an updated version of WordPerfect, contact your
+	software vendor or WordPerfect Corporation at 1-800-228-1029. Outside the United
+	States, contact your local software vendor or WordPerfect subsidiary.
+	
+	WordStar for Windows
+	--------------------
+	
+	If you have been running WordStar for Windows with Windows version 3.0, you might
+	see some differences when you run this application with Windows version 3.1. For
+	example, some elements of the WordStar screen might not be displayed the same as
+	they were in Windows version 3.0.
+	
+	Windows version 3.1 uses descriptive printer-model names for printer drivers.
+	Because WordStar does not recognize the new names, you need to update your
+	WordStar templates. Do this by opening a template, selecting the printer you are
+	using, and then saving the new information in the template.
+	
+	To obtain an updated version of WordStar for Windows, contact your software
+	vendor or call Wordstar International, Incorporated, at 1-800-227-5609. Outside
+	the United States, contact your local software vendor or WordStar subsidiary.
+	
+	The products included here are manufactured by vendors independent of Microsoft;
+	we make no warranty, implied or otherwise, regarding these products' performance
+	or reliability.
+	
+	Additional query words: ndw 3.11 3.10 3.1
+	
+	======================================================================
+	Keywords          : win31 
+	Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+	Version           : WINDOWS:3.1,3.11
+	
+	=============================================================================
+	

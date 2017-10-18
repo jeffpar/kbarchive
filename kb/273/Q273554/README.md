@@ -1,0 +1,90 @@
+---
+layout: page
+title: "Q273554: SMS: License Requirements for Servers and Clients Using SMS"
+permalink: kb/273/Q273554/
+---
+
+## Q273554: SMS: License Requirements for Servers and Clients Using SMS
+
+	Article: Q273554
+	Product(s): Microsoft Systems Management Server
+	Version(s): 2.0
+	Operating System(s): 
+	Keyword(s): kbsetup kbClient kbConfig kbServer kbsms200 kbCAP kbDiscovery kbInventory kbSoftwareDis
+	Last Modified: 23-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server version 2.0 
+	- Microsoft SQL Server 2000 (all editions) 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article answers frequently asked questions about the licensing requirements
+	for Microsoft Systems Management Server (SMS) version 2.0 for both client and
+	server computers.
+	
+	MORE INFORMATION
+	================
+	
+	When is an SMS license required?
+	
+	SMS can be installed as a primary site or a secondary site. In both cases, a
+	license for SMS is required. Component servers, such as distribution points,
+	client access points (CAPs), and software metering servers do not require an SMS
+	license, but they may require an SMS Client Access License.
+	
+	When do I need a Systems Management Server Client Access License?
+	
+	Any computer or device, including servers, that installs any of the client
+	components (such as hardware inventory, software inventory, software metering,
+	software distribution, or remote control) requires an SMS Client Access License.
+	Any client that runs packages that are created with the SMS Installer software
+	repackaging tool also requires a Client Access License. A Client Access License
+	is not required for server-to-server communications.
+	
+	Do I need a Microsoft SQL Server license?
+	
+	SMS version 2.0 requires at least one license for Microsoft SQL Server 6.5 or
+	later. Larger or decentralized organizations may require more SQL Server
+	licenses if they have more than one SMS primary site.
+	
+	Do I need SQL Server Client Access Licenses ?
+	
+	SQL Server Client Access Licenses are only required if SQL Server is used with
+	programs other than SMS. If SQL Server is used solely as a database for SMS and
+	is accessed solely through the interface provided by SMS, no additional SQL
+	Server Client Access Licenses are required.
+	
+	Is SQL Server included with SMS?
+	
+	If you acquire Microsoft BackOffice Server version 4.5, you receive SMS 2.0 and
+	SQL Server 7.0. You may install both products on the same computer as defined in
+	the BackOffice End User License Agreement (EULA). If you acquire only SMS, you
+	do not receive any software or license for SQL Server. In this case, you would
+	need to obtain a complete version of SQL Server 6.5 or later separately.
+	
+	REFERENCES
+	==========
+	
+	Please see the EULA that is included with SMS for more information about SMS
+	licensing details.
+	
+	For additional information about SQL Server licensing details, please refer to
+	the Server and Client End User License Agreement that is included with SQL
+	Server and SMS.
+	
+	Additional query words: prodsms
+	
+	======================================================================
+	Keywords          : kbsetup kbClient kbConfig kbServer kbsms200 kbCAP kbDiscovery kbInventory kbSoftwareDist kbsmsMeter kbfaq
+	Component         : SystemManagement
+	Technology        : kbSMSSearch kbSMS200
+	Version           : :2.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

@@ -1,0 +1,365 @@
+---
+layout: page
+title: "Q86926: Using the Dynamic Data Exchange Management Library"
+permalink: kb/086/Q86926/
+---
+
+## Q86926: Using the Dynamic Data Exchange Management Library
+
+	Article: Q86926
+	Product(s): Microsoft Windows Software Development Kit
+	Version(s): WINDOWS:3.0,3.1
+	Operating System(s): 
+	Keyword(s): kbfile kbsample kb16bitonly kbOSWin310 kbOSWin300
+	Last Modified: 08-JUL-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	In the Microsoft Windows operating system, dynamic data exchange (DDE) is a form
+	of inter-process communication that uses shared memory to exchange data between
+	applications. DDE is implemented by passing messages between a client and a
+	server application. The Dynamic Data Exchange Management Library (DDEML), on the
+	other hand, provides a set of functions that simplify the task of adding DDE
+	capability to an application for the Windows environment.
+	
+	Even though an application developed using the message-based DDE protocol is
+	fully compatible with those that use the DDEML, new applications are strongly
+	encouraged to use DDEML functionality.
+	
+	The text below discusses the basics of a DDE transaction between a client and a
+	server engaged in an automatic (hot) link, and a code sample that demonstrates
+	the communication process.
+	
+	BOUNCE is a sample application in the Software Library that shows two balls
+	bouncing from one application's window to another, graphically demonstrating DDE
+	using DDEML. The sample also illustrates how an application can act as both
+	client and server.
+	
+	MORE INFORMATION
+	================
+	
+	The following files are available for download from the Microsoft Download
+	Center:
+	
+	Bounce.exe
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. Once posted, the file is housed on secure
+	servers that prevent any unauthorized changes to the file.
+	
+	
+	The BOUNCE file contains a directory structure. Use the "-d" option when
+	uncompressing to create a corresponding directory structure on the destination
+	drive. For example:
+	
+	  bounce -d
+	
+	An application that uses any of the DDEML functions must include the DDEML.H
+	header file in its source file, link with the DDEML.LIB library, and ensure that
+	DDEML.DLL is installed in a directory listed in the MS-DOS PATH environment
+	variable.
+	
+	To use the DDEML, Windows must be running in protected mode; if not, DDEML.DLL
+	will not load. Although this is not a consideration for applications running
+	under Windows 3.1, it remains a concern for applications running under Windows
+	3.0 and earlier. The -T switch for the Resource Compiler (RC.EXE) marks an
+	application so that the Windows loader will load it only in protected mode. The
+	-T switch is used as follows:
+	
+	  RC -T GENERIC.RES
+	
+	An application developed with the DDEML can run in the Windows 3.0 environment.
+	However, because the DDEML.DLL is not a standard part of Windows 3.0, it must be
+	included with the application and copied to the system as part of the
+	application installation process.
+	
+	The following steps describe the requirements to use the DDEML in an
+	application:
+	
+	1. Define a callback function. In the same way the window manager sends
+	  "messages" along with wParam and lParam to an application's window procedure,
+	  DDEML sends "transactions" to the application's DDE callback function, to
+	  notify the application of DDE activity that takes place.
+	
+	  This function, like any callback function in Windows, must be listed in the
+	  EXPORTS section of the application's module- definition (.DEF) file.
+	
+	  The following is a sample structure for a server's DdeCallback function:
+	
+	         HDDEDATA EXPENTRY DdeCallback(
+	             UINT type,      // transaction type
+	             UINT fmt,       // clipboard data format
+	             HCONV hConv,    // handle to the conversation
+	             HSZ hsz1,       // handle to a string
+	             HSZ hsz2,       // handle to a string
+	             HDDEDATA hData, // handle to global memory object
+	             DWORD dwData1,  // transaction-specific data
+	             DWORD dwData2)  // transaction-specific data
+	         {
+	          switch (wType)
+	             {
+	
+	          case XTYP_DISCONNECT:
+	             ...
+	             return (HDDEDATA)NULL;
+	
+	          case XTYP_CONNECT:               // hsz1 = Topic Name
+	
+	                                           // hsz2 = Service name
+	             if ((!DdeCmpStringHandles(hsz1, hszTopicName)) &&
+	                 (!DdeCmpStringHandles(hsz2, hszAppName)))
+	               return TRUE;   // SERVER supports Topic|Service
+	             else
+	               return FALSE;  // SERVER does not support Topic|Service
+	
+	          case XTYP_CONNECT_CONFIRM:       // Follow-up transaction to
+	                                           // XTYP_CONNECT
+	             hConvServer = hConv;          // Save handle to conversation
+	             return (HDDEDATA)NULL;
+	
+	          case XTYP_ADVSTART:        // Sent in response to CLIENT's
+	                                     // request for an XTYP_ADVSTART
+	             if ((hConv == hConvServer)   // hConv = handle to conversation
+	                                          // hsz1  = topic name
+	                 && (!DdeCmpStringHandles(hsz1, hszTopicName))
+	                                          // hsz2  = Item name
+	                 && (!DdeCmpStringHandles(hsz2, hszFS_1)))
+	               return TRUE;   // SERVER supports this Topic|Service pair
+	             else
+	               return FALSE;  // SERVER does not support this pair
+	
+	          case XTYP_ADVSTOP:  // Sent in response to CLIENT's request
+	                              // for an XTYP_ADVSTOP
+	             ...
+	             return (HDDEDATA)NULL;
+	
+	          case XTYP_ADVREQ:
+	             // Sent when SERVER calls DdePostAdvise function to advise the
+	             // CLIENT of some data change.
+	             {
+	             if ((hConvServer == hConv)      // hConv = conversation handle
+	                                             // hsz1  = topic name
+	                 && (!DdeCmpStringHandles(hsz1, hszTopicName))
+	                                             // hsz2  = Item name
+	                 && (!DdeCmpStringHandles(hsz2, hszFS_1)))
+	               return DdeCreateDataHandle(..);
+	
+	             return (HDDEDATA)NULL;
+	             }
+	
+	          default:
+	             return (HDDEDATA)NULL;
+	             }
+	         }
+	
+	2. Before calling any DDEML function, an application must obtain an instance
+	  identifier for itself by calling the DdeInitialize function, as follows:
+	
+	         DWORD idInst;
+	         FARPROC lpDdeProc;
+	
+	         lpDdeProc = MakeProcInstance((FARPROC) DdeCallback, ghInstance);
+	
+	         // Register application with the DDEML.
+	         if (DdeInitialize(&idInst,          // pointer to instance ID
+	                   (PFNCALLBACK)lpDdeProc,   // points to Callback function
+	                   APPCMD_FILTERINITS |
+	                   CBF_FAIL_SELFCONNECTIONS |
+	                   CBF_FAIL_EXECUTES,        // array of filter flags
+	                   0L))
+	            return FALSE;
+	
+	3. DDEML functions often take handles to strings as parameters. The
+	  DdeCreateStringHandle function provides string handles, as illustrated
+	  below:
+	
+	         HSZ hszAppName;
+	
+	         hszAppName = DdeCreateStringHandle(idInst, "MyServer", NULL);
+	         if (hszAppName == 0)
+	            MessageBox(hWnd, "DdeCreateStringHandle failed.", "Oops!!",
+	                       MB_ICONEXCLAMATION | MB_OK);
+	
+	         The DdeCmpStringHandles function compares string handles to each
+	         other, as shown below:
+	
+	         case XTYP_CONNECT:               // hsz1 = Topic Name;
+	                                          // hsz2 = Service name
+	            if ((!DdeCmpStringHandles(hsz1, hszTopicName))
+	                && (!DdeCmpStringHandles(hsz2, hszAppName)))
+	              return TRUE;   // SERVER supports Topic|Service name pair
+	            else
+	              return FALSE;  // SERVER does not support Topic|Service
+	                             // name pair
+	
+	4. A DDEML server notifies all other DDEML applications in the system that a new
+	  server is available by calling the DdeNameService function to register its
+	  service name with the DDEML. A client application is not required to
+	  register.
+	
+	  In the example below, note that the call to DdeNameService takes the
+	  hszAppName value obtained in step 3 above as its second parameter:
+	
+	         // Register the SERVER's supported Service Name here.
+	         if (!DdeNameService(idInst,         // instance identifier
+	                             hszAppName,     // string specifying svc name
+	                             NULL,           // RESERVED
+	                             DNS_REGISTER))  // Name-service flags
+	           MessageBox(hWnd, "Unable to register SERVER", "Oops!!",
+	                      MB_ICONEXCLAMATION | MB_OK);
+	
+	5. A DDEML client initiates a conversation with the server by calling the
+	  DdeConnect function as follows. Server applications do not need to do this.
+	
+	         HCONV hConvClient;
+	
+	         // from DdeCreateStringHandle()
+	         HSZ hszSvrAppName, hszSvrTopicName;
+	
+	         // Establish conversation with the SERVER
+	         hConvClient = DdeConnect(idInst,              // Instance ID
+	                                  hszSvrAppName,       // Service Name
+	                                  hszSvrTopicName,     // Topic Name
+	                                  (LPVOID)NULL);
+	
+	  If the value returned for hConvClient is NULL, the server is unable for a
+	  connection and no conversation is established. The DDEML signals the new
+	  conversation by sending an XTYP_CONNECT and an XTYP_CONNECT_CONFIRM
+	  transaction to the server's callback function.
+	
+	6. A DDEML client application established an automatic link with a server
+	  application by specifying XTYP_ADVSTART in a call to the DdeClientTransaction
+	  function. Server applications need not do this.
+	
+	  In an automatic link, the server sends a data handle to the client application
+	  whenever the value of the specified data item changes. Conversely, a manual
+	  (warm) link causes the server to notify the client that the data has changed,
+	  but does not send the updated data value to the client. A client can specify
+	  a manual link by specifying XTYP_ADVSTART | XTYPF_NODATA in the call to
+	  DdeClientTransaction.
+	
+	         if (!DdeClientTransaction(NULL, // pointer to server's data
+	                          0,             // data length
+	                          hConvClient,   // conversation handle
+	                          hszFS_1,       // item name
+	                          CF_TEXT,       // clipboard format
+	                          XTYP_ADVSTART, // start an ADVISE loop
+	                          1000,          // time-out in one second
+	                          NULL))         // points to result flags
+	            MessageBox(hWnd, szBuffer, "Oops!!",
+	                       MB_ICONEXCLAMATION | MB_OK);
+	
+	  DDEML sends the XTYP_ADVSTART transaction to the server's callback function.
+	
+	7. Whenever the value of the data item changes, the server application calls the
+	  DdePostAdvise function to notify the client application, as follows. Client
+	  applications need not do this.
+	
+	        DdePostAdvise(idInst, hszTopicName, hszFS_1);
+	
+	  The DdePostAdvise function causes the DDEML to send an XTYP_ADVREQ transaction
+	  to the server application's callback function. The server processes the
+	  XTYP_ADVREQ transaction by returning a handle to the changed data. DDEML then
+	  notifies the client of the changed data by sending an XTYP_ADVDATA
+	  transaction to the client application's callback function with hData set to
+	  the data handle returned from the server application.
+	
+	  When the server processes an XTYP_ADVREQ transaction, it calls
+	  DdeCreateDataHandle to create a data handle that contains the changed data
+	  item and returns this handle. If the server specified the HDATA_APPOWNED flag
+	  in the afCmd parameter of the DdeCreateDataHandle function, it must call the
+	  DdeFreeDataHandle function to free the shared memory associated with the
+	  handle. Otherwise, the data handle is owned by the system and the handle is
+	  invalidated after it is returned from the server's callback function.
+	
+	  When the client processes an XTYP_ADVDATA transaction, it may take either of
+	  two courses of action: call the DdeGetData function to copy the data item
+	  from the global memory object to a local buffer and return the DDE_FACK
+	  value; or call the DdeAccessData function to obtain a pointer to the data
+	  object received from the server application, and then call the
+	  DdeUnaccessData function to release the pointer.
+	
+	8. A DDEML client application ends an advise loop (an automatic link) by
+	  specifying XTYP_ADVSTOP in a call to the DdeClientTransaction function, as in
+	  step 6, above. Server applications need not do this.
+	
+	         if (!DdeClientTransaction(NULL,  // pointer to data passed to
+	                                          // server
+	                            0,            // data length
+	                            hConvClient,  // conversation handle
+	                            hszFS_1,      // item name
+	                            CF_TEXT,      // clipboard format
+	                            XTYP_ADVSTOP, // end an ADVISE loop
+	                            1000,         // time-out in one second
+	                            NULL))        // points to result flags
+	            MessageBox(hWnd, "Failed XTYP_ADVSTOP", "Oops!!",
+	                       MB_ICONEXCLAMATION | MB_OK);
+	
+	  DDEML then sends the XTYP_ADVSTOP transaction to the server application's
+	  callback function.
+	
+	9. Either the client or the server application can call DdeDisconnect to
+	  terminate a conversation any time. Terminating a conversation invalidates the
+	  conversation handle specified by the hConv parameter.
+	
+	         if (!DdeDisconnect(hConvClient))
+	            MessageBox(hWnd, "Unable to disconnect hConvClient", "Oops!!",
+	                       MB_ICONEXCLAMATION | MB_OK);
+	
+	  DDEML sends the XTYP_DISCONNECT transaction to the partner in the
+	  conversation.
+	
+	10. A server should call DdeNameService to unregister its service name just
+	  before terminating, as follows. A client application need not do this.
+	
+	         // Unregister application's service Name with the DDEML.
+	         if (!DdeNameService(idInst,          // instance identifier
+	                             hszAppName,      // string specifying svc name
+	                             NULL,            // RESERVED
+	                             DNS_UNREGISTER)) // Name-service flags
+	           MessageBox(hWnd, "Unable to UNREGISTER Server.", "Oops!!",
+	                      MB_ICONEXCLAMATION | MB_OK);
+	
+	11. After the application has finished using any string handles created by the
+	  DdeCreateStringHandle function, the handles must be freed, as follows:
+	
+	         if (!DdeFreeStringHandle (idInst, hszAppName))
+	           MessageBox(hWnd, "DdeFreeStringHandle failed.", "Oops!!",
+	                      MB_ICONEXCLAMATION | MB_OK);
+	
+	12. Each application should call DdeUnitialize to free the DDEML resources that
+	  the system allocated for the application, as follows:
+	
+	            if (!DdeUninitialize(idInst))
+	              MessageBox(hWnd, "Unable to uninitialize.", "Oops!!",
+	                         MB_ICONEXCLAMATION | MB_OK);
+	
+	13. When ever a DDEML function fails, it is a good practice to call the
+	  DdeGetLastError function to retrieve an indication of the failure. For a
+	  list of error codes and their possible causes, search for the following
+	  words in the Microsoft Knowledge Base:
+	
+	         ddeml and error
+	
+	
+	Additional query words: softlib BOUNCE.EXE kbfile
+	
+	======================================================================
+	Keywords          : kbfile kbsample kb16bitonly kbOSWin310 kbOSWin300 
+	Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+	Version           : WINDOWS:3.0,3.1
+	
+	=============================================================================
+	

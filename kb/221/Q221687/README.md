@@ -1,0 +1,87 @@
+---
+layout: page
+title: "Q221687: FIX:C0000005 Fatal Error with CLEAR DEBUGGER and SUSPEND"
+permalink: kb/221/Q221687/
+---
+
+## Q221687: FIX:C0000005 Fatal Error with CLEAR DEBUGGER and SUSPEND
+
+	Article: Q221687
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:6.0
+	Operating System(s): 
+	Keyword(s): kbservicepack kbMiscTools kbvfp600 kbvfp600bug kbVS600sp2 kbVS600sp2fix kbVS600SP1 kbVS
+	Last Modified: 20-MAY-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you run a form from a program that contains CLEAR DEBUGGER and SUSPEND
+	commands, the program suspends on the SUSPEND line. When you resume and run the
+	same program again, Visual FoxPro terminates after displaying the following
+	error:
+	
+	  Fatal error: Exception code=C0000005
+	  Called from - <procedure name and line number> {<path and
+	  filename>}
+	
+	The procedure name and line number will contain the method or procedure
+	containing the SUSPEND command, and the line number of the line following the
+	SUSPEND command. The path and filename will contain the path and filename of the
+	file containing the method or procedure.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article.
+	
+	This bug was corrected in Visual Studio 6.0 Service Pack 3. For more information
+	about Visual Studio service packs, please see the following articles in the
+	Microsoft Knowledge Base:
+	
+	Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+	
+	Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Run the following code from a program (.PRG) file:
+	
+	  CLEAR DEBUGGER
+	  PUBLIC oform1
+	  oform1=CREATEOBJECT("form")
+	  oform1.SHOW
+	  SUSPEND
+	  x = 1
+	  _SCREEN.SHOW()
+	
+	2. Press the F5 key in the Debugger window to resume.
+	
+	3. Run the program again and note that the fatal error occurs.
+	
+	(c) Microsoft Corporation 1999, All Rights Reserved.
+	Contributions by Jim Saunders, Microsoft Corporation
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbservicepack kbMiscTools kbvfp600 kbvfp600bug kbVS600sp2 kbVS600sp2fix kbVS600SP1 kbVS600sp3fix kbGrpDSFox kbVS600SP1fix 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+	Version           : WINDOWS:6.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

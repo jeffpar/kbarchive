@@ -1,0 +1,107 @@
+---
+layout: page
+title: "Q235535: Smsman Requires Logon Installation or Discovery to Be Enabled"
+permalink: kb/235/Q235535/
+---
+
+## Q235535: Smsman Requires Logon Installation or Discovery to Be Enabled
+
+	Article: Q235535
+	Product(s): Microsoft Systems Management Server
+	Version(s): 2.0
+	Operating System(s): 
+	Keyword(s): kbClient kbsms200 kbCAP kbDiscovery
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server version 2.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Microsoft Systems Management Server (SMS) version 2.0 clients cannot be manually
+	set up until Windows Networking Logon Client Installation (Logon Installation)
+	is enabled.
+	
+	NOTE: SMS 2.0 requires Windows Networking Logon Client Installation to be enabled
+	if you want to manually install the SMS Client software. If you only have
+	Windows Networking Logon Discovery enabled, the files needed to install a client
+	in SMSLogon\Sites\<site-code> are unavailable.
+	
+	MORE INFORMATION
+	================
+	
+	In order for SMSMAN to successfully install a client, Logon Installation is the
+	only method required. If SMSMAN is the only installation method in use, then
+	Login Installation must be enabled. This has been the case with the product
+	since the products release in early 1999.
+	
+	If the NT remote Installation (NT Push) method is enabled, then either Logon
+	Discovery or Network Discovery is required as NT Push picks up the Data
+	Discovery Record (DDR), creates a Client Configuration Request (CCR) and begins
+	the client installation routine.
+	
+	If your clients connect to SMS by using NetWare, there are additional discovery
+	and installation methods that you must also enable on the SMS site system.
+	
+	If your clients belong to a Novell Directory Services (NDS) tree and you have
+	configured the site system for NDS interoperability, you need to enable either
+	NetWare NDS Logon Discovery or NetWare NDS Logon Client Installation. If you do
+	not, the Smsman, Manboot, and Smsman16 files are not placed on the appropriate
+	volume for the clients to access.
+	
+	If your clients log on using a Bindery context and you have configured the site
+	system for NetWare Bindery interoperability, you need to enable either NetWare
+	Bindery Logon Discovery or NetWare Bindery Logon Client Installation. If you do
+	not, the Smsman, Manboot, and Smsman16 files are not placed on the appropriate
+	volume for the clients to access.
+	
+	In this case, attempting to run Smsman, Manboot, or Smsman16 from the
+	SMS\Bin\<Platform>\00000409 folder on the site server does not install a
+	client but instead generates the following error message:
+	
+	  The wizard was unable to locate a Systems Management Server. Enter the name
+	  of a specific domain or server.
+	
+	Typing the name of the site server or the domain in which the site server resides
+	also results in an unsuccessful installation attempt.
+	
+	When you specify a server or domain, a "Searching for logon points" dialog box is
+	displayed. Eventually, the following error message is displayed:
+	
+	  The wizard was unable to locate a Systems Management Server. Re-enter
+	  installation location.
+	
+	These issues occur if no discovery or installation methods are enabled.
+	
+	To be able to use Smsman, Manboot, or Smsman16, you must enable either a Logon
+	Discovery method (Windows, NDS, or Bindery) or a Logon Installation method
+	(Windows, NDS, or Bindery) to get logon points set up.
+	Smsman finds logon points by enumerating the domain controllers in its domain and
+	by analyzing any existing network connections the client currently has. These
+	connections include any to an NDS tree or a NetWare Bindery server.
+	
+	For additional information, refer to the Microsoft Systems Management Server
+	Administrator's Guide, Part 2, Chapter 9, pages 278-281 (Logon Discovery) and
+	pages 285-287 (Logon Installation).
+	
+	For more information about how to set up and configure a site system to use the
+	NetWare NDS or Bindery modes, see the "Integrating Microsoft Systems Management
+	Server 2.0 with Novell NetWare" white paper at the following Microsoft Web
+	site:
+	
+	  http://www.microsoft.com/smsmgmt/deployment/SMSwithNovell.asp
+	
+	Additional query words: prodsms
+	
+	======================================================================
+	Keywords          : kbClient kbsms200 kbCAP kbDiscovery 
+	Technology        : kbSMSSearch kbSMS200
+	Version           : :2.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

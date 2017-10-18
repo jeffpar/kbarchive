@@ -1,0 +1,141 @@
+---
+layout: page
+title: "Q179049: XADM: DSAMain Stops on DSAMAIN!PutDistName"
+permalink: kb/179/Q179049/
+---
+
+## Q179049: XADM: DSAMain Stops on DSAMAIN!PutDistName
+
+	Article: Q179049
+	Product(s): Microsoft Exchange
+	Version(s): WinNT:4.0,5.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 22-MAR-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 4.0, 5.0 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	This problem occurs when you are running version 5.0 of the Microsoft Exchange
+	Server Administrator program against a computer running Microsoft Exchange
+	Server version 4.0. When you remove a server from the site, the Directory
+	Service (Dsamain.exe) has a general protection fault (GPF).
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+	versions 4.0. This problem has been corrected in the latest U.S. Service Pack
+	for Microsoft Exchange Server version 4.0. For information on obtaining the
+	Service Pack, query on the following word in the Microsoft Knowledge Base
+	(without the spaces):
+	
+	  S E R V P A C K
+	
+	MORE INFORMATION
+	================
+	
+	The Dr. Watson log may look like:
+	
+	  Application exception occurred:
+	       App: dsamain.DBG (pid=112)
+	       When: 10/13/1997 @ 9:31:4.890
+	       Exception number: c0000005 (access violation)
+	
+	  *----> System Information <----*
+	       Computer Name: STCA112A
+	       User Name: ExchangeService
+	       Number of Processors: 2
+	       Processor Type: x86 Family 6 Model 1 Stepping 9
+	       Windows Version: 4.0
+	       Current Build: 1381
+	       Current Type: Multiprocessor Free
+	       Registered Organization:
+	       Registered Owner: STCA112A
+	
+	  State Dump for Thread Id 0xca
+	
+	  eax=00000000 ebx=00000000 ecx=00000000 edx=08ca115c esi=08ca1008
+	  edi=08c9fc88
+	  eip=0041818d esp=08c9f8fc ebp=08c9fa8c iopl=0         nv up ei pl zr na
+	  po
+	  nc
+	  cs=001b  ss=0023  ds=0023  es=0023  fs=0038  gs=0000
+	  efl=00000246
+	
+	  function: PutDistName
+	       0041816f 81ec84010000     sub     esp,0x184
+	       00418175 53               push    ebx
+	       00418176 56               push    esi
+	       00418177 57               push    edi
+	       00418178 c745fc00000000   mov    dword ptr [ebp-0x4],0x0
+	  ss:0a03e492=????????
+	       0041817f 8b4508           mov     eax,[ebp+0x8]
+	  ss:0a03e492=????????
+	       00418182 83c004           add     eax,0x4
+	       00418185 8945ec           mov     [ebp-0x14],eax
+	  ss:0a03e492=????????
+	       00418188 8b4508           mov     eax,[ebp+0x8]
+	  ss:0a03e492=????????
+	       0041818b 33c9             xor     ecx,ecx
+	  FAULT ->0041818d 668b4802         mov     cx,[eax+0x2]
+	  ds:0139ea07=????
+	       00418191 8d0449           lea     eax,[ecx+ecx*2]
+	  ds:00000000=????????
+	       00418194 c1e002           shl     eax,0x2
+	       00418197 034508           add     eax,[ebp+0x8]
+	  ss:0a03e492=????????
+	       0041819a 83c004           add     eax,0x4
+	       0041819d 8945f0           mov     [ebp-0x10],eax
+	  ss:0a03e492=????????
+	       004181a0 c745f800000000   mov    dword ptr [ebp-0x8],0x0
+	  ss:0a03e492=????????
+	       004181a7 eb07             jmp     PutDistName+0x44 (004181b0)
+	       004181a9 ff45f8           inc     dword ptr [ebp-0x8]
+	  ss:0a03e492=????????
+	       004181ac 8345ec0c         add   dword ptr [ebp-0x14],0xc
+	  ss:0a03e492=????????
+	       004181b0 8b45ec           mov     eax,[ebp-0x14]
+	  ss:0a03e492=????????
+	       004181b3 3945f0           cmp     [ebp-0x10],eax
+	  ss:0a03e492=????????
+	
+	  *----> Stack Back Trace <----*
+	
+	  FramePtr ReturnAd Param#1  Param#2  Param#3  Param#4  Function Name
+	  08c9fa8c 004188ca 00000000 08ca1168 08c9fc88 08ca1008
+	  dsamain!PutDistName
+	  [omap]
+	  08c9fab8 00418801 08ca1510 00000001 08ca1148 08c9fc88
+	  dsamain!StatusFromAtrErr [omap]
+	  08c9fae4 00444e50 00000001 08ca1510 00000001 08c9fd18 dsamain!XDSError
+	  [omap]
+	  08c9fcd4 0041766d 00000014 08ca05c8 08ca0780 00000001
+	  dsamain!_ds_search_172ry_139y_146_70own_99 [omap]
+	  08c9fe20 77e1134f 08c9fef0 08c9fef0 00156700 00000000
+	  dsamain!rxds__ds_search [omap]
+	  08c9fe5c 77e11122 00417432 08c9fef0 08c9ff34 00000000
+	  rpcrt4!I_RpcGetBuffer
+	  08c9feb0 77e112fb 08c9fef0 00000000 08c9ff34 00167e44 rpcrt4!<nosymbols>
+	  08c9fed0 77e18fe6 08c9fef0 00000000 08c9ff34 00167e44
+	  rpcrt4!I_RpcGetBuffer
+	  08c9ff40 77e185d1 00168ff8 00000670 08c9ff90 00149f08
+	  rpcrt4!I_RpcTransServerUnprotectThread
+	  00168ff8 00000010 00100670 00000014 00000638 000a0000
+	  rpcrt4!I_RpcTransServerUnprotectThread
+	======================================================================
+	Keywords          :  
+	Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbZNotKeyword2
+	Version           : WinNT:4.0,5.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

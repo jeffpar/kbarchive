@@ -1,0 +1,167 @@
+---
+layout: page
+title: "Q193736: WD97: HTML Converter Disappears After Installing IE 4.01 on SR2"
+permalink: kb/193/Q193736/
+---
+
+## Q193736: WD97: HTML Converter Disappears After Installing IE 4.01 on SR2
+
+	Article: Q193736
+	Product(s): Word 97 for Windows
+	Version(s): Service Release 2
+	Operating System(s): 
+	Keyword(s): kbdta
+	Last Modified: 11-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows, version Service Release 2 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about editing the registry.
+	Before you edit the registry, make sure you understand how to restore it
+	if a problem occurs. For information about how to do this, view the
+	"Restoring the Registry" Help topic in Regedit.exe or the "Restoring a
+	Registry Key" Help topic in Regedt32.exe.
+	
+	SYMPTOMS
+	========
+	
+	When you perform an Administrative installation of SR-2, the HTML converter no
+	longer appears as an installed converter when you use the Save As command from
+	the File menu. This may occur if the following conditions are true:
+	
+	- You install the HTML Authoring Tools.
+	
+	- You choose to leave shared components on the server.
+	
+	  -and-
+	
+	- You install Internet Explorer 4.01.
+	
+	CAUSE
+	=====
+	
+	When SR-2 is installed, the Internet Explorer 4.01 installation changes the
+	registry key of the HTML converter to point to the local hard drive but does not
+	install the HTML converter to the local hard drive.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, follow one of these methods:
+	
+	WARNING: Using Registry Editor incorrectly can cause serious problems that may
+	require you to reinstall your operating system. Microsoft cannot guarantee that
+	problems resulting from the incorrect use of Registry Editor can be solved. Use
+	Registry Editor at your own risk.
+	
+	For information about how to edit the registry, view the "Changing Keys and
+	Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+	Information in the Registry" and "Edit Registry Data" Help topics in
+	Regedt32.exe. Note that you should back up the registry before you edit it. If
+	you are running Windows NT, you should also update your Emergency Repair Disk
+	(ERD).
+	
+	Method 1: Delete the Registry Keys and Run Setup
+	------------------------------------------------
+	
+	Delete the registry key and then run Office setup with the /y switch to reinstall
+	and re-register the converter.
+	
+	To delete the registry keys, follow these steps:
+	
+	1. On the Start menu, click Run.
+	
+	2. In the Open box, type "regedit" (without the quotation marks), and then click
+	  OK.
+	
+	3. Locate the following registry key:
+	
+	     HKEY_LOCAL_MACHINE\Software\Microsoft\Shared Tools\Text
+	     Converters\Import\HTML
+	
+	  and
+	
+	     HKEY_LOCAL_MACHINE\Software\Microsoft\Shared Tools\Text
+	     Converters\Export\HTML
+	
+	4. Click the registry key to highlight it and press the Delete key.
+	
+	To run Setup with the /y switch, follow these steps:
+	
+	1. Insert the Word or Office CD into the CD-ROM drive. If you installed Word or
+	  Office from floppy disks insert the Setup Disk 1 in the floppy disk drive of
+	  your computer.
+	
+	2. On the Windows Start menu, click Run.
+	
+	3. In the Open box, type the following:
+	
+	  <drive>:\setup /Y
+	
+	  where <drive> is the letter of the drive that contains the CD or Setup
+	  Disk 1.
+	
+	4. Click OK.
+	
+	5. Click Reinstall.
+	
+	Method 2: Modify the Registry Key To The Server Installation Path
+	-----------------------------------------------------------------
+	
+	Modify the above key to correctly reflect the server installation path of your
+	shared components. To Modify the path, follow these steps:
+	
+	1. On the Start menu, click Run.
+	
+	2. In the Open box, type "regedit" (without the quotation marks), and then click
+	  OK.
+	
+	3. Locate the following registry key:
+	
+	     HKEY_LOCAL_MACHINE\Software\Microsoft\Shared Tools\Text
+	     Converters\Import\HTML
+	
+	  Click the HTML registry key and on the right, click Path. From the Edit menu,
+	  click Modify to change the path.
+	
+	  and
+	
+	     HKEY_LOCAL_MACHINE\Software\Microsoft\Shared Tools\Text
+	     Converters\Export\HTML
+	
+	  Click on the HTML registry key and on the right, click on Path. From the Edit
+	  menu, click Modify to change the path.
+	
+	Method 3: Move the Converter To the Location That Is Set In the Registry
+	------------------------------------------------------------------------
+	
+	Move the HTML32.cnv file to the location that is set in the registry key.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products listed at
+	the beginning of this article.
+	
+	MORE INFORMATION
+	================
+	
+	With versions of Word prior to SR-2, IE 4.01 installs an HTML converter,
+	HTML32.cnv version 97081200, dated 5/8/98, to the local hard drive and correctly
+	changes the registry to reflect the correct location.
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbdta 
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : :Service Release 2
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

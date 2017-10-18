@@ -1,0 +1,118 @@
+---
+layout: page
+title: "Q231439: XADM: Error 1276 Starting Information Store"
+permalink: kb/231/Q231439/
+---
+
+## Q231439: XADM: Error 1276 Starting Information Store
+
+	Article: Q231439
+	Product(s): Microsoft Exchange
+	Version(s): 4.0,5.0,5.5
+	Operating System(s): 
+	Keyword(s): exc4 exc5 exc55
+	Last Modified: 01-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If you completely remove and reinstall Exchange Server and then restore the
+	Exchange Server directory and information store from an online backup, the
+	information store may not start because of error 1276. The following event is
+	logged in the Microsoft Windows NT Event Viewer application event log:
+	
+	  Event ID: 1005
+	  Type: Error
+	  Source: MSexchangeIS Private
+	  Category: General
+	  Description: Unable to start the Microsoft information store error 0x4fc
+	
+	The following event is logged in the Event Viewer System log:
+	
+	  Event ID 7024
+	  Type: Error
+	  Source: Service Control Manager
+	  Category: None
+	  Server specific error 1276
+	
+	NOTE: Error 1276 (0x4fc) refers to ecDomainError.
+	
+	CAUSE
+	=====
+	
+	This issue can occur when you reinstall Exchange Server if you use the display
+	name instead of the directory name that is used during a clean installation of
+	Exchange Server. This issue can also occur if you use a different organization
+	or site name instead of the names that were used in the original installation of
+	Exchange Server.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, completely uninstall Exchange Server and then reinstall
+	Exchange Server by using the original directory name instead of the display name
+	for the organization and site. For additional information about how to remove
+	Exchange Server completely, click the article number below to view the article
+	in the Microsoft Knowledge Base:
+	
+	  Q259158 XADM: How to Manually Remove Exchange Server 5.5 Completely
+	
+	When you reinstall Exchange Server, always use the directory name instead of the
+	display name that is listed in the properties of the organization and site that
+	were used in the original installation of Exchange Server. In most cases, the
+	directory name and display name are the same. If they are different and you use
+	the display name, event ID 1088 is logged.
+	
+	To verify the directory name if there is more than one server in the site or
+	organization, use the Exchange Server Administrator program to connect to one of
+	the Exchange Server computers and check the directory name for the organization
+	and site by clicking Properties on the File menu for both the Organization and
+	Site objects. Use these names to reinstall Exchange Server. Log on by using the
+	Exchange Server service account to reinstall Exchange Server.
+	
+	To verify the directory name if there is only one server in the site or
+	organization, use the Exchange_Server_Setup.log file. This file is always
+	located in the root folder in which Exchange Server was originally installed and
+	is appended each time that Exchange Server is reinstalled or an Exchange Server
+	service pack is applied. If the logical drive for Exchange Server reinstallation
+	has changed, a new Exchange_Server_Setup.log file is created. Also, if the
+	entire logical folder or hard disk has been rebuilt, the
+	Exchange_Server_Setup.log file contains only the new information.
+	
+	Use Notepad or another text editor to search the Exchange_Server_Setup.log file
+	for the first occurrence of the word "Creating." This section contains the
+	original organization, site, and computer name. Because the file is appended
+	each time that Setup is run, there may be multiple Setup details in the file.
+	For additional information about how to use Exchange_Server_Setup.log files to
+	determine the original name, click the article number below to view the article
+	in the Microsoft Knowledge Base:
+	
+	  Q158545 XADM: How to Determine the Organization, Site, and Computer Name
+	
+	MORE INFORMATION
+	================
+	
+	For additional information about error 1276, click the article numbers below to
+	view the articles in the Microsoft Knowledge Base:
+	
+	  Q155509 XADM: Restore Exchange When Site or Organization Name Is Unknown
+	
+	  Q264437 XADM: Event ID 1088 and Error 1276 Occur Even After Reinstalling with
+	  the Distinguished Name Listed in the Event 1088
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : exc4 exc5 exc55 
+	Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+	Version           : :4.0,5.0,5.5
+	Issue type        : kbprb
+	
+	=============================================================================
+	

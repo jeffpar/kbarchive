@@ -1,0 +1,108 @@
+---
+layout: page
+title: "Q87448: Windows Err Msg: The LPTx Port Is Currently Assigned..."
+permalink: kb/087/Q87448/
+---
+
+## Q87448: Windows Err Msg: The LPTx Port Is Currently Assigned...
+
+	Article: Q87448
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 02-OCT-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+	- Microsoft Windows for Workgroups versions 3.1, 3.11 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you try to print from an MS-DOS-based application in Windows or Windows for
+	Workgroups running in 386 enhanced mode, you receive the following error
+	message:
+	
+	  The LPTx port is currently assigned to a DOS Application.
+	  Do you want to reassign the port to Windows?
+	
+	CAUSE
+	=====
+	
+	This error occurs when:
+	
+	- After Dark version 2.0 installed.
+	
+	  -or-
+	
+	- You are using the PRINTMAN.EXE file provided with the Hewlett-Packard (HP) 4L
+	  (71,024 bytes in size) with Windows for Workgroups.
+	
+	WORKAROUND
+	==========
+	
+	To work around this problem:
+	
+	- Set the Idle time on the printer port to 1 or 2, or change the device
+	  contention to NEVER WARN.
+	
+	  -or-
+	
+	- Remove After Dark.
+	
+	  -or-
+	
+	- Expand PRINTMAN.EX_ from the original Windows for Workgroups 3.1 or 3.11
+	  disks.
+	
+	Workaround 1
+	------------
+	
+	1. In the Main group, run Control Panel.
+	
+	2. Choose the 386 Enhanced icon.
+	
+	3. Select the correct printer port (for example, LPT1).
+	
+	4. Change the Idle time from a default of 60 to 1 or 2.
+	
+	5. Choose OK.
+	
+	Workaround 2
+	------------
+	
+	1. In the Main group, run Control Panel.
+	
+	2. Choose the 386 Enhanced icon.
+	
+	3. Select the correct printer port (for example, COM1).
+	
+	4. Set Device Contention to Never Warn.
+	
+	5. Choose OK.
+	
+	NOTE: Windows 3.1 and 3.11 do not include the option to set the device contention
+	for LPT ports. To gain this functionality, you must obtain VPD386.EXE and
+	install VPD.386. For more information about VPD386.EXE, query on "vpd386"
+	(without the quotation marks) in the Microsoft Knowledge Base.
+	
+	MORE INFORMATION
+	================
+	
+	After Dark is manufactured by Berkeley Systems, a vendor independent of
+	Microsoft; we make no warranty, implied or otherwise, regarding this product's
+	performance or reliability.
+	
+	Additional query words: afterdark after dark screensaver screen saver 3.00 3.00a 3.0 3.0a 3.10 after-dark berkley star trek startrek 3.11 LPT1 LPT2
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311 kbWFW310 kbWFW311
+	Version           : WINDOWS:3.0,3.0a,3.1,3.11
+	
+	=============================================================================
+	

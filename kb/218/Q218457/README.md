@@ -1,0 +1,112 @@
+---
+layout: page
+title: "Q218457: BUG: Custom Expression Builder Crashes Query and View Designers"
+permalink: kb/218/Q218457/
+---
+
+## Q218457: BUG: Custom Expression Builder Crashes Query and View Designers
+
+	Article: Q218457
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:6.0
+	Operating System(s): 
+	Keyword(s): kbDesigner kbvfp600bug kbXBase
+	Last Modified: 12-MAR-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If a custom expression builder is defined with the system variable _getexpr, the
+	Query/View Designer crashes with the following error:
+	
+	  Fatal error: Exception code=C0000005
+	
+	RESOLUTION
+	==========
+	
+	Use GETEXPR() in the Command window to obtain the expression. Run the following
+	code from the Command window, and then press CTRL-V to paste the text into the
+	Functions and expressions text box of the Designer:
+	
+	  GETEXPR() TO x
+	  _cliptext = x
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Create a new form. Add a text box and a command button to the form.
+	
+	2. Enter the following code in the command button's Click event:
+	
+	  gcExpr = Thisform.Text1.Text
+	  Thisform.Release
+	
+	3. Set the following form properties:
+	
+	  AlwaysOnTop True (.T.)
+	  Desktop True (.T.)
+	  WindowType 1 ? Modal
+	
+	4. Save the form with the file name "MyGetExpr".
+	
+	5. Create a new program file and enter the following code:
+	
+	  PARAMETERS cExpressionType, cErrorMessageText, cDefaultExpression, cCaptionText
+	
+	  PUBLIC gcExpr
+	  gcExpr = ""
+	  Do Form MyGetExpr
+	  return gcExpr
+	
+	6. Save the program file with the file name "MyGetExpr.prg".
+	
+	7. In the Command window, enter the following code:
+	
+	  _getexpr = "MyGetExpr"
+	  CREATE QUERY
+	
+	8. When the Open dialog box displays, press the ESC key.
+	
+	9. Click the ellipsis next to the Functions and expressions field.
+	
+	RESULTS: Visual FoxPro displays the error message listed in the SYMPTOMS section.
+	
+	REFERENCES
+	==========
+	
+	For additional information about custom expression builders, please see the
+	following article in the Microsoft Knowledge Base:
+	
+	  Q218453 Custom Expression Builder Value is not Accepted in Report Designer
+	
+	(c) Microsoft Corporation 1999, All Rights Reserved. Contributions by Mike A.
+	Stewart, Microsoft Corporation.
+	
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbDesigner kbvfp600bug kbXBase 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+	Version           : WINDOWS:6.0
+	Issue type        : kbbug
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

@@ -1,0 +1,166 @@
+---
+layout: page
+title: "Q207525: PRB: IIS4: ASP/ADO Do Not Work Across UNC Path"
+permalink: kb/207/Q207525/
+---
+
+## Q207525: PRB: IIS4: ASP/ADO Do Not Work Across UNC Path
+
+	Article: Q207525
+	Product(s): Internet Information Server
+	Version(s): 1.5,2.0,2.01,2.1,2.1 SP1,2.1 SP2,4.0
+	Operating System(s): 
+	Keyword(s): kbATM kbDatabase kbJET kbDSupport
+	Last Modified: 04-MAR-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Server version 4.0 
+	- Microsoft Active Server Pages 
+	- ActiveX Data Objects (ADO), versions 1.5, 2.0, 2.01, 2.1, 2.1 SP1, 2.1 SP2 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Active Server Pages (ASP) and ActiveX Data Objects (ADO) cannot access a
+	Microsoft Access database across a universal naming convention (UNC) Path. The
+	following error message is generated:
+	
+	  Microsoft OLE DB Provider for ODBC Drivers error '80004005' [Microsoft][ODBC
+	  Microsoft Access 97 Driver]
+	  The Microsoft Jet database engine cannot open the file '(unknown)'. It is
+	  already opened exclusively by another user, or you need permission to view
+	  its data.
+	  /scripts/default.asp, line 11
+	
+	CAUSE
+	=====
+	
+	Internet Information Server (IIS) is not passing valid credentials to the share.
+	This behavior could occur because:
+	
+	- The Web page's authenticated user, often the IUSR_Servername account, is not
+	  a valid account on the computer that is hosting the database file.
+	
+	  -or-
+	
+	- IIS is passing a secondary token for the account that does not have
+	  permission to access the file.
+	
+	RESOLUTION
+	==========
+	
+	Resolution 1:
+	
+	This is more of an example of how to set this up assuming the following
+	conditions:
+	
+	Webserver name: Server1
+	
+	Database resides on the following share: \\Server2\Sharefolder\db.mdb
+	
+	ConnectionString used:
+	
+	  Set CN=Server.CreateObject("ADODB.Connection")
+	  CN.Open "DBQ=\\Server2\Sharefolder\db.mdb"
+	
+	1. On both Server1 and Server2, create an Microsoft Windows NT account named
+	  "Server1Guest" (without the quotation marks) and give it the same password.*
+	  See NOTE.
+	
+	2. On Server2, make sure that this account has sufficient privileges to access
+	  the database.
+	
+	3. Open the Microsoft Management Console (MMC) on Server1. Drill down to your
+	  application, right-click on it, and then click to open Properties.
+	
+	4. On the Security tab, make sure that the Allow Anonymous option is enabled.
+	  Click the Edit button for this option twice so that you are viewing the
+	  Account. It will usually be "IUSR_Server1."
+	
+	5. Deselect Enable Password Synchronization, and change the user and password to
+	  Server1Guest and whatever password that you have chosen. DO NOT re-select
+	  Enable Password Synchronization.
+	
+	6. Recycle the Web server. On the Start menu, select Run, and then type:
+	
+	  "net stop iisadmin /y
+	  net start W3SVC" (without the quotation marks)
+	
+	7. On Server1 in NT Explorer, make sure that Server1Guest has permissions to
+	  Inetpub/wwwroot/AppName and its subdirectories.
+	
+	  *NOTE: This can be any valid NT Username, and you may leave it as
+	  IUSR_Server1. You must change the password and make sure that the Username
+	  and the password are EXACTLY the same in IIS on Server1, and in the User
+	  Manager for Domains in both Server1 and Server2.
+	
+	Resolution 2.
+	
+	1. Map a drive (x:) to the share and have it connect as someuser.
+	
+	2. Create your ODBC connection to the mapped drive (x:\directory\database.mdb).
+	
+	3. Set the virtual directory that the ASP is running under to: Run in separate
+	  memory space.
+	
+	4. Create an IWAM_<computer name> account on the share computer and give
+	  it a password.
+	
+	5. Grant that user the appropriate rights to the files and directory.
+	
+	6. Synchronize the password that you assigned to the IWAM account on the
+	  ShareComputer with the IISComputer.
+	
+	7. On the IISComputer, open the Internet Service Manager and expand the
+	  Microsoft Transaction Server folder until you reach the Packages Installed
+	  folder.
+	
+	8. Highlight the following package name: IIS - {<Web site
+	  name>//Root/<virtual directory name>}, and choose Properties.
+	
+	9. Click on the Identity tab and type in the password that you used for the
+	  IWAM_<computer name> account.
+	
+	10. Stop and restart the Virtual Web site.
+	
+	When you run a virtual directory in its own memory space, it runs as the
+	IWAM_<computer name> account. However, during the installation of IIS,
+	that account never gets a password. When you create the account for the share
+	computer, you must give it a password and synchronize the account passwords with
+	the IISComputer. The only step that is missing is the specification of the the
+	account password for the package that IIS creates.
+	
+	WORKAROUND
+	----------
+	
+	For additional information about a workaround, click the article number below to
+	view the article in the Microsoft Knowledge Base:
+	
+	  Q178215 HOWTO: Configure Visual InterDev to Work with an Authenticated Web
+	  Project
+	
+	MORE INFORMATION
+	================
+	
+	For additional information, click the article numbers below to view the articles
+	in the Microsoft Knowledge Base:
+	
+	  Q166029 PRB: Cannot Open File Unknown Using Access
+	
+	  Q234205 PRB: File '(unknown)', Exception Occurred, or No Data Using Recordset
+	  DTCs
+	
+	Additional query words: 80004005 unknown
+	
+	======================================================================
+	Keywords          : kbATM kbDatabase kbJET kbDSupport 
+	Technology        : kbiisSearch kbAudDeveloper kbADOsearch kbASPsearch kbADO150 kbADO210 kbADO201 kbADO200 kbADO210sp1 kbADO210sp2 kbiis400
+	Version           : :1.5,2.0,2.01,2.1,2.1 SP1,2.1 SP2,4.0
+	Issue type        : kbprb
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

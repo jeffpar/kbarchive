@@ -1,0 +1,205 @@
+---
+layout: page
+title: "Q280467: PRB: DDE Support Disabled While MFC App Displays Modal Dialog"
+permalink: kb/280/Q280467/
+---
+
+## Q280467: PRB: DDE Support Disabled While MFC App Displays Modal Dialog
+
+	Article: Q280467
+	Product(s): Microsoft C Compiler
+	Version(s): 6.0
+	Operating System(s): 
+	Keyword(s): kbDDE kbDlg kbMFC kbVC600 kbDSupport kbGrpDSMFCATL kbArchitecture
+	Last Modified: 27-MAR-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+	- Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+	- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+	- Microsoft Visual C++.NET (2002) 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	While a Microsoft Foundation Classes (MFC) application displays a modal dialog
+	box, all the Dynamic Data Exchange (DDE) messages are discarded. This becomes
+	obvious in the case of a multiple-document interface (MDI) application that
+	displays a modal dialog box when the end user double-clicks on a file whose
+	extension is associated with the application. The user's attempt to open the new
+	file is ignored.
+	
+	CAUSE
+	=====
+	
+	The CFrameWnd class has code that ignores all DDE requests while the frame
+	window is disabled, and the shell (Windows Explorer) tries to open new files by
+	using DDE. Because MFC implements modal dialog boxes by disabling the dialog
+	box's parent, modal dialog boxes hamper the application's ability to handle DDE
+	requests.
+	
+	RESOLUTION
+	==========
+	
+	To work around this problem you must override CFrameWnd's handling of the
+	WM_DDE_EXECUTE message and cache all DDE commands in order to execute them as
+	soon as the frame window is re-enabled.
+	
+	MORE INFORMATION
+	================
+	
+	To work around this limitation, follow these steps:
+	
+	1. Add the following definitions to your CMainFrame class:
+	
+	  // Attributes
+	  private:
+	      // if TRUE cache the DDE requests received while the window is disabled
+	      BOOL          m_bEnableDdeCmdCaching;
+	      // Array of strings that holds the cached DDE commands
+	      CStringArray  m_aStrDdeCmd;
+	
+	  // Operations
+	  public:
+	      void          EnableDdeCmdCaching()
+	                    { m_bEnableDdeCmdCaching = TRUE; }
+	      int           FlushDdeCmdCache();
+	
+	2. Add a message handler declaration for WM_DDE_EXECUTE in your CMainFrame
+	  declaration:
+	
+	  afx_msg LRESULT OnDDEExecute(WPARAM wParam, LPARAM lParam);
+	
+	3. Add the following entry in CMainFrame's message map:
+	
+	  ON_MESSAGE(WM_DDE_EXECUTE, OnDDEExecute)
+	
+	4. Add a
+	
+	  #include <dde.h>
+	
+	  in CMainFrame's implementation file and the following function
+	  implementations:
+	
+	  // Handle the WM_DDE_EXECUTE message and batch the DDE request for later
+	  LRESULT CMainFrame::OnDDEExecute(WPARAM wParam, LPARAM lParam)
+	  {
+	      if ( !IsWindowEnabled() && m_bEnableDdeCmdCaching )
+	      {
+	          UINT unused;
+	          HGLOBAL hData;
+	          VERIFY(UnpackDDElParam(WM_DDE_EXECUTE, lParam, &unused, (UINT*)&hData));
+	
+	          // get the command string
+	          LPCTSTR lpsz = (LPCTSTR) GlobalLock(hData);
+	
+	          // Cache the command string for later
+	          m_aStrDdeCmd.Add(CString(lpsz));
+	
+	          GlobalUnlock(hData);
+	      }
+	
+	      return CMDIFrameWnd::OnDDEExecute(wParam, lParam);
+	  }
+	
+	  // Returns the number of successfully satisfied "open" requests
+	  int CMainFrame::FlushDdeCmdCache()
+	  {
+	      if ( !IsWindowEnabled() )
+	          return -1;
+	
+	      int nSuccessOpen = 0;
+	      for ( int i = 0; i <= m_aStrDdeCmd.GetUpperBound ( ); i++ )
+	      {
+	          if ( !AfxGetApp()->OnDDECommand((LPTSTR)(LPCTSTR) m_aStrDdeCmd[i]) )
+	              TRACE1("Error: failed to execute DDE command '%s'.\n", m_aStrDdeCmd[i]);
+	          else if ( m_aStrDdeCmd[i].Left(7) == _T("[open(\"") )
+	          {
+	              nSuccessOpen++;
+	          }
+	      }
+	      m_aStrDdeCmd.RemoveAll();
+	      m_bEnableDdeCmdCaching = FALSE;
+	
+	      return nSuccessOpen;
+	  }
+	
+	5. Next, everywhere that you bring up a modal dialog box that must allow for the
+	  DDE commands to be executed, do something like the following:
+	
+	  CMainFrame *pMainFrame = (CMainFrame*) AfxGetMainWnd();
+	  pMainFrame->EnableDdeCmdCaching();
+	
+	  // Display the modal dialog that disables the main frame
+	  CAboutDlg dlg;
+	  dlg.DoModal();
+	
+	  // Handle the possible batched DDE commands
+	  pMainFrame->FlushDdeCmdCache();
+	
+	6. If used in the CWinApp::InitInstance() override, you might want to suppress
+	  the opening of a blank new document when the user attempts to open a document
+	  during the dialog box display. This can be achieved through code like the
+	  following:
+	
+	  // ...
+	  // Enable DDE Execute open
+	  EnableShellOpen();
+	  RegisterShellFileTypes(TRUE);
+	
+	  pMainFrame->EnableDdeCmdCaching();
+	
+	  CPasswordDlg dlg;
+	  if ( dlg.DoModal() != IDOK || dlg.NotValidPassword() )
+	          return FALSE;
+	
+	  int nOpen = pMainFrame->FlushDdeCmdCache();
+	
+	  // Parse command line for standard shell commands, DDE, file open
+	  CCommandLineInfo cmdInfo;
+	  ParseCommandLine(cmdInfo);
+	
+	  if ( nOpen > 0 && cmdInfo.m_nShellCommand == CCommandLineInfo::FileNew )
+	          cmdInfo.m_nShellCommand = CCommandLineInfo::FileNothing;
+	  // ... 
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Create a new MFC MDI application. In step 4 specify the extension ".zzz".
+	
+	2. Run the application, and from the File menu, choose Save as in order to
+	  create two files, "A1.zzz" (without the quotation marks) and "A2.zzz"
+	  (without the quotation marks).
+	
+	3. Close all open files.
+	
+	4. Open the About dialog box.
+	
+	5. Switch to Windows Explorer and double-click A1.zzz.
+	
+	Result: Nothing happens.
+	
+	Expected result: The file opens in your application.
+	
+	REFERENCES
+	==========
+	
+	(c) Microsoft Corporation 2000, All Rights Reserved.
+	Contributions by Cosmin Radu, Microsoft Corporation
+	
+	
+	Additional query words: DDE, ShellExecute, Windows Explorer
+	
+	======================================================================
+	Keywords          : kbDDE kbDlg kbMFC kbVC600 kbDSupport kbGrpDSMFCATL kbArchitecture 
+	Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch kbVCNET
+	Version           : :6.0
+	Issue type        : kbprb
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

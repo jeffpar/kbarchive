@@ -1,0 +1,301 @@
+---
+layout: page
+title: "Q303076: Academic Learning Series Designing a Microsoft Windows 2000 Dire"
+permalink: kb/303/Q303076/
+---
+
+## Q303076: Academic Learning Series Designing a Microsoft Windows 2000 Dire
+
+	Article: Q303076
+	Product(s): Microsoft Press
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 16-APR-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- MSPRESS Academic Learning Series Designing a Microsoft Windows 2000 Directory Services Infrastructure ISBN 0-7356-1267-6 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article contains comments, corrections, and information about known errors
+	relating to the Microsoft Press book Academic Learning Series Designing a
+	Microsoft Windows 2000 Directory Services Infrastructure, ISBN 0-7356-1267-6.
+	
+	The following topics are covered:
+	
+	- Lab Manual, page iii: Incorrect Number of Core Elective Exams
+	
+	- Page xxiv: Incorrect Hardware Requirements
+	
+	- Page 30: Incorrect Information About Host Name And Computer (NetBIOS) Name
+	
+	- Page 61: Incorrect Weighted Total
+	
+	- Page 80: NT DNS Does Not Meet Active Directory DNS Requirements
+	
+	- Page 146: "Domains" Should Be "Trees"
+	
+	- Page 195: Correction To Point 3
+	
+	- Page 201: Publish Should Be Assign
+	
+	- Page 202: Incorrect Caption In Figure 5.11
+	
+	- Page 221: Incorrect Domain Local Group Membership In Figure 5.9
+	
+	- Page 253: "Pull" Should Be "Push" For Intrasite Replication In Table 6.2
+	
+	- Page 306: Incorrect Child Domain Names In Figure 7.6
+	
+	- Page 346: Incorrect Subdomain Names In Illustration
+	
+	- Page 363: Incorrect Information About Schema Master And Domain Naming Master
+	
+	MORE INFORMATION
+	================
+	
+	Lab Manual, page iii: Incorrect Number of Core Elective Exams
+	-------------------------------------------------------------
+	
+	On page iii, in the third paragraph,
+	
+	Change:
+	"The new certification program is composed of four core requirement exams and
+	three core elective exams."
+	
+	To:
+	"The new certification program is composed of four core requirement exams and
+	four core elective exams."
+	
+	
+	Page xxiv: Incorrect Hardware Requirements
+	------------------------------------------
+	
+	On page xxiv, under Hardware Requirements,
+	
+	Change:
+	"32-bit 166MHz Pentium processor
+	64-MB memory for networking with one to five client computers; 128 MB minimum is
+	recommended for most network environments"
+	
+	To:
+	"133 MHz or higher Pentium-compatible CPU
+	256 megabytes (MB) of RAM recommended minimum; 128 MB minimum supported"
+	
+	
+	Page 30: Incorrect Information About Host Name And Computer (NetBIOS) Name
+	--------------------------------------------------------------------------
+	
+	On page 30, in the second Note section,
+	
+	Change:
+	"The host name does not have to be the same as the computer name, NetBIOS, or any
+	other naming protocol."
+	
+	To:
+	"The host name is always the same as the computer (NetBIOS) name. In Windows
+	2000, you cannot specify different host (Directory Naming Service, or DNS) and
+	computer (NetBIOS) names."
+	
+	
+	Page 61: Incorrect Weighted Total
+	---------------------------------
+	
+	On page 61, in Table 2.1, change:
+	
+	"Maximum: 35"
+	
+	To:
+	
+	"Maximum: 25"
+	
+	
+	Page 80: NT DNS Does Not Meet Active Directory DNS Requirements
+	---------------------------------------------------------------
+	
+	On page 80, in the paragraph above the Note section, in the last sentence,
+	change:
+	
+	"If you organization is currently running Windows NT 4 DNS, your DNS service is
+	also compatible with Active Directory DNS requirements."
+	
+	To:
+	
+	"If you organization is currently running Windows NT 4 DNS, your DNS service is
+	not compatible with Active Directory DNS requirements."
+	
+	
+	Page 146: "Domains" Should Be "Trees"
+	-------------------------------------
+	
+	On page 146, in the first paragraph under "Implications of Using Multiple
+	Trees",
+	
+	Change:
+	"When determining whether to define multiple domains"
+	
+	To:
+	"When determining whether to define multiple trees"
+	
+	
+	Page 195: Correction To Point 3
+	-------------------------------
+	
+	On page 195, in point 3, change:
+	
+	"3. If the OU is allowed to set its own membership, place the administrator group
+	inside the OU. If the OU is not allowed to set its own membership, place the
+	administrator group outside the OU."
+	
+	To:
+	
+	"3. If the administrator group is allowed to set its own membership, place the
+	administrator group inside the OU. If the administrator group is not allowed to
+	set its own membership, place it outside the OU."
+	
+	
+	Page 201:  Publish Should Be Assign
+	-----------------------------------
+	
+	On page 201, Change:
+	
+	"..and another group policy to publish software on management workstations"
+	
+	To:
+	
+	"..and another group policy to assign software on management workstations"
+	
+	
+	Page 202: Incorrect Caption In Figure 5.11
+	------------------------------------------
+	
+	On page 202, in Figure 5.11, change:
+	"OUs defined to hide objects"
+	
+	To:
+	"OUs defined to implement Group Policy"
+	
+	
+	Page 221: Incorrect Domain Local Group Membership In Figure 5.9
+	---------------------------------------------------------------
+	
+	On page 221, in Table 5.9, groups with both read-only access and full access
+	needs to the Customer database and Tracking database (as defined in Table 5.8)
+	are being incorrectly made members of the same domain local groups:
+	"CustDatabase" and "TrackDatabase".
+	
+	Only global groups that share the same access needs should be made members of the
+	same domain local group to ensure proper access permission assignment. There
+	should be separate domain local groups created for different access needs.
+	
+	Change:
+	"CustDatabase - Security, domain local - Domestic Dispatchers, International
+	Dispatchers, Managers, Delivery Representatives
+	
+	TrackDatabase - Security, domain local - Distribution Trackers, Managers,
+	Distribution Handlers"
+	
+	To:
+	"CustDatabase - Security, domain local - Domestic Dispatchers, International
+	Dispatchers, Managers
+	
+	CustDatabase2 - Security, domain local - Delivery Representatives
+	
+	TrackDatabase - Security, domain local - Distribution Trackers, Managers
+	
+	TrackDatabase2 - Security, domain local - Distribution Handlers"
+	
+	
+	Page 253: "Pull" Should Be "Push" For Intrasite Replication In Table 6.2
+	------------------------------------------------------------------------
+	
+	On page 253, in Table 6.2, in the "Instrasite replication" - "Replication model"
+	cell, "pull" should be "push".
+	
+	Change:
+	"To reduce replication latency, replication partners notify each other when
+	changes need to be replicated and then pull the information for processing."
+	
+	To:
+	"To reduce replication latency, replication partners notify each other when
+	changes need to be replicated and then push the information for processing."
+	
+	
+	Page 306: Incorrect Child Domain Names In Figure 7.6
+	----------------------------------------------------
+	
+	On page 306, in Figure 7.6,
+	
+	Change:
+	"london.microsoft.com, chicago.microsoft.com, redmond.microsoft.com"
+	
+	To:
+	"london.sales.microsoft.com, chicago.sales.microsoft.com,
+	redmond.development.microsoft.com"
+	
+	
+	Page 346: Incorrect Subdomain Names In Diagram
+	----------------------------------------------
+	
+	On page 346, in the diagram, the subdomain names listed are incorrect.
+	
+	Change:
+	au.a-100times.com
+	asia.a-100times.com
+	na.a-100times.com
+	sa.a-100times.com
+	africa.a-100times.com
+	euro.a-100times.com
+	th.a-100times.com
+	br.a-100times.com
+	
+	To:
+	au.corp.a-100times.com
+	asia.corp.a-100times.com
+	na.corp.a-100times.com
+	sa.corp.a-100times.com
+	africa.corp.a-100times.com
+	euro.corp.a-100times.com
+	th.asia.corp.a-100times.com
+	br.sa.corp.a-100times.com"
+	
+	
+	Page 363: Incorrect Information About Schema Master And Domain Naming Master
+	----------------------------------------------------------------------------
+	
+	On page 363, the diagram lists multiple schema masters (SM) and domain naming
+	masters (DN) in different domains. This is incorrect. At any time, there can be
+	only one schema master and one domain naming master in the forest.
+	
+	In the diagram, please remove all the SMs and DNs, except for the SM and DN at
+	hq.corp.f-1000times.com.
+	
+	And in the last bulleted item on the same page:
+	
+	Change:
+	"... the forest-wide roles were assigned to DC1s."
+	
+	To:
+	"... the forest-wide roles were assigned to DC1 at hq.corp.f-1000times.com."
+	
+	
+	Microsoft Press is committed to providing informative and accurate books. All
+	comments and corrections listed above are ready for inclusion in future
+	printings of this book. If you have a later printing of this book, it may
+	already contain most or all of the above corrections.
+	
+	Additional query words: ALS TKBOOK 0-7356-1267-6
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMSPressSearch
+	Version           : :
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

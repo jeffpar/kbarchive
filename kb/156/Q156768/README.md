@@ -1,0 +1,150 @@
+---
+layout: page
+title: "Q156768: STL Sample for deque::push_front, deque::pop_front Functions"
+permalink: kb/156/Q156768/
+---
+
+## Q156768: STL Sample for deque::push_front, deque::pop_front Functions
+
+	Article: Q156768
+	Product(s): Microsoft C Compiler
+	Version(s): 4.2,5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbcode kbVC420 kbVC500 kbVC600 kbDSupport
+	Last Modified: 26-MAR-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The Standard C++ Library, used with:
+	   - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+	   - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+	   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+	   - Microsoft Visual C++.NET (2002) 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The sample code below illustrates how to use the deque::push_front and
+	deque::pop_front STL functions in Visual C++. Deque is a double-ended queue
+	where elements can be inserted and removed from the front and from the back.
+	
+	MORE INFORMATION
+	================
+	
+	Required Header
+	---------------
+	
+	     <deque>
+	
+	Prototype
+	---------
+	
+	     void push_front(const T& x);
+	     void pop_front();
+	
+	NOTE: The class/parameter names in the prototype may not match the version in the
+	header file. Some have been modified to improve readability.
+	
+	Description
+	-----------
+	
+	The push_front function inserts an element with value x at the beginning of the
+	deque container. The pop_front function removes the first element of the deque
+	container, which must be non-empty.
+	
+	Sample Code
+	-----------
+	
+	NOTE: In the first line of the sample code section, /GX is equivalent to /EHsc in
+	VC++ .NET and is set by default.
+	
+	     ////////////////////////////////////////////////////////////////////// 
+	     // 
+	     // Compile options needed: -GX
+	     // 
+	     // deque.cpp :
+	     // 
+	     // Functions:
+	     // 
+	     //    deque::push_front
+	     //    deque::pop_front
+	     // 
+	     // Written by Bobby Mattappally
+	     // of Microsoft Product Support Services,
+	     // Copyright (c) 1996 Microsoft Corporation. All rights reserved.
+	     ////////////////////////////////////////////////////////////////////// 
+	
+	     /* Compile options needed:-GX
+	     */ 
+	
+	     #include <iostream>
+	     #include <deque>
+	    
+	  #if _MSC_VER > 1020   // if VC++ version is > 4.2
+	     using namespace std;  // std c++ libs implemented in std
+	     #endif
+	
+	     typedef deque<int, allocator<int> >  INTDEQUE;
+	     void printcontents (INTDEQUE  deque);
+	
+	     void main()
+	     {
+	
+	         INTDEQUE  dequetest;
+	
+	         dequetest.push_front(1);
+	         dequetest.push_front(2);
+	         dequetest.push_front(3);
+	         printcontents (dequetest);
+	         dequetest.pop_front();
+	         printcontents (dequetest);
+	         dequetest.pop_front();
+	         printcontents (dequetest);
+	
+	     }
+	
+	     //function to print the contents of deque
+	     void printcontents (INTDEQUE  deque)
+	     {
+	         INTDEQUE::iterator pdeque;
+	
+	         cout <<"The output is:"<<endl;
+	
+	             for(pdeque = deque.begin();
+	             pdeque != deque.end();
+	             pdeque++)
+	         {
+	             cout << *pdeque <<endl ;
+	         }
+	
+	     }
+	
+	Program output is:
+	
+	  The output is:
+	  3
+	  2
+	  1
+	  The output is:
+	  2
+	  1
+	  The output is:
+	  1
+	
+	REFERENCES
+	==========
+	
+	Visual C++ Books On Line: Visual C++ Books:C/C++:Standard C++ Library Reference.
+	
+	Additional query words: STL STLSample push_front pop_front deque
+	
+	======================================================================
+	Keywords          : kbcode kbVC420 kbVC500 kbVC600 kbDSupport 
+	Technology        : kbVCsearch kbAudDeveloper kbVCNET kbVCLibrary
+	Version           : :4.2,5.0,6.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

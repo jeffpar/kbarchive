@@ -1,0 +1,221 @@
+---
+layout: page
+title: "Q258495: XCLN: Troubleshooting Client Connectivity Using Command Lines"
+permalink: kb/258/Q258495/
+---
+
+## Q258495: XCLN: Troubleshooting Client Connectivity Using Command Lines
+
+	Article: Q258495
+	Product(s): Microsoft Exchange
+	Version(s): WINDOWS:4.0,5.0,97; :
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Windows 95/98 client, versions 4.0, 5.0 
+	- Microsoft Exchange Windows NT client, versions 4.0, 5.0 
+	- Microsoft Outlook 97 
+	- Microsoft Outlook 98 
+	- Microsoft Outlook 2000 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article is a reference for troubleshooting client-to-server communication
+	by using common command line utilities. Command line utilities are useful
+	because of their reporting capabilities. You can redirect the output of any of
+	the commands shown here by appending an ">" (without the quotation marks) to
+	the command line, followed by a path and file name.
+	
+	MORE INFORMATION
+	================
+	
+	Troubleshooting Basic TCP/IP Connectivity and NetBios Name Resolution
+	---------------------------------------------------------------------
+	
+	Syntax:
+	
+	ping <NetBios_name_of_Exchange_Server_computer>
+	
+	Results:
+	
+	A line similar to the following should be displayed
+	
+	  Pinging <DNS_name> [192.168.###.###] with 32 bytes of data:
+	
+	where <DNS_name> is the Domain Name System (DNS) name of the Exchange
+	Server computer.
+	
+	The Internet Protocol (IP) address that is listed must match the IP address of
+	your Exchange Server computer. If the IP address is wrong, or if a line that
+	reads "Unknown host ..." is displayed, name resolution is not working properly.
+	In such a case, see the "Viewing the Contents of a Hosts File" section of this
+	article and also click the article numbers below to view the articles in the
+	Microsoft Knowledge Base:
+	
+	  Q139270 How to Change Name Resolution Order on Windows 95 and Windows NT
+	
+	  Q189906 XCLN: How to Ensure Proper Name Resolution
+	
+	The next four lines that are displayed should be similar to the following:
+	
+	  Reply from 192.168.###.###: bytes=32 time<10ms TTL=62
+	
+	These lines indicate that you have Transmission Control Protocol/Internet
+	Protocol (TCP/IP) connectivity. If all four lines read "Request timed out," you
+	have no TCP/IP connectivity.
+	
+	Troubleshooting Intermittent TCP/IP Connectivity Issues
+	-------------------------------------------------------
+	
+	Syntax:
+	
+	ping -t <NetBios_name_of_Exchange_Server_computer>
+	
+	Results:
+	
+	The -t switch causes pinging to continue until stopped or interrupted. After you
+	type this command you can interrupt the pings to check statistics by pressing
+	CTRL-BREAK, and you can stop the process by pressing CTRL-C. A report similar to
+	the following should be displayed:
+	
+	  
+	
+	  Ping statistics for 192.168.###.###:
+	    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+	    Approximate round trip times in milli-seconds:
+	    Minimum = 0ms, Maximum =  0ms, Average =  0ms
+	
+	The Packets Lost value is important because packets that are dropped is a sign of
+	a poor physical connection.
+	
+	NOTE: If you redirect the output of this command to a file, the size of that file
+	will grow by approximately 29,000 bytes every 10 minutes.
+	
+	Identifying Routers in a Path Between a Client and a Server
+	-----------------------------------------------------------
+	
+	Syntax:
+	
+	tracert <NetBios_name/DNS_name/IP_address_of_Exchange_Server_computer>
+	
+	Results:
+	
+	The output should look similar to the following:
+	
+	  
+	
+	  Tracing route to <DNS_name_of_Exchange_Server_computer> [192.168.101.1] over a maximum of 30 hops:
+	  1   <10 ms   <10 ms   <10 ms  <DNS_name_of_first_router> [192.168.103.1]
+	  2   <10 ms   <10 ms   <10 ms  <DNS_name_of_second_router> [192.168.102.1]
+	  3   <10 ms   <10 ms   <10 ms  <DNS_name_of_Exchange_Server_computer> [192.168.101.1]
+	
+	You can use this output to determine which routers or firewalls may be blocking
+	the ports that are necessary for remote procedure call (RPC) communication. For
+	additional information about client connectivity through a firewall, click the
+	article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q155831 XADM: Setting TCP/IP Ports for Exchange and Outlook Client
+	  Connections Through a Firewall
+	
+	If you do not want to know the DNS names of the hosts in the route to the target,
+	you can add the -d switch to the tracert
+	<NetBios_name/DNS_name/IP_address_of_Exchange_Server_computer> command.
+	This switch tells the Tracert utility not to resolve the IP addresses that are
+	encountered in the route to host names.
+	
+	Viewing the TCP/IP Configuration of a Computer
+	----------------------------------------------
+	
+	On a computer that is running Microsoft Windows 95 or Microsoft Windows 98, click
+	Start, click Run, and then type "winipcfg.exe" (without the quotation marks).
+	When an IP Configuration dialog box is displayed, click More Info. More detailed
+	information is displayed.
+	
+	The following command is for computers running Microsoft Windows NT:
+	
+	Syntax:
+	
+	ipconfig /all
+	
+	Results:
+	
+	A list of TCP/IP configuration parameters is displayed. The following is a sample
+	of some of the information that is displayed:
+	
+	  
+	
+	  Connection-specific DNS Suffix  . : <DNS_domain_name>
+	  Description . . . . . . . . . . . : 3Com 3C918 Integrated Fast Ethernet Controller (3C905B-TX Compatible)
+	  Physical Address. . . . . . . . . : 00-C0-4F-xx-xx-xx
+	  DHCP Enabled. . . . . . . . . . . : Yes
+	  Autoconfiguration Enabled . . . . : Yes
+	  IP Address. . . . . . . . . . . . : 192.168.25.###
+	  Subnet Mask . . . . . . . . . . . : 255.255.255.0
+	  Default Gateway . . . . . . . . . : 192.168.25.1
+	  DHCP Server . . . . . . . . . . . : 192.168.25.50
+	  DNS Servers . . . . . . . . . . . : 192.168.30.100
+	                                   192.168.30.101
+	  Primary WINS Server . . . . . . . : 192.168.25.60
+	  Secondary WINS Server . . . . . . : 192.168.25.61
+	  Lease Obtained. . . . . . . . . . : Monday, March 27, 2000 9:01:03 AM 	Lease Expires . . . . . . . . . . : Friday, March 31, 2000 9:01:03 AM
+	
+	Determine if Dynamic Host Configuration Protocol (DHCP) is enabled. If it is
+	enabled, make any necessary changes on the DHCP server instead of on the local
+	computer; otherwise any modification to the TCP/IP parameters must be made to
+	the local computer. Also make sure that the IP address and the default gateway
+	(if one is specified) are on the same subnet. This is necessary to communicate
+	with computers in other subnets. To determine whether the IP address and the
+	default gateway are on the same subnet, apply the subnet mask to both the IP
+	address and the default gateway. For additional information, click the article
+	numbers below to view the articles in the Microsoft Knowledge Base:
+	
+	  Q164015 Understanding TCP/IP Addressing and Subnetting Basics
+	
+	  Q185753 No Network Connectivity on TCP/IP-Based Network
+	
+	Viewing the Contents of a Hosts File
+	------------------------------------
+	
+	Syntax:
+	
+	For Windows NT:
+	
+	  TYPE %windir%\system32\drivers\etc\hosts
+	
+	For Windows 95 and Windows 98:
+	
+	  TYPE %windir%\hosts
+	
+	Results:
+	
+	The contents of the Hosts file are displayed (by default) or output to a file (if
+	redirection is used). During name resolution, the Hosts file is the first item
+	that is checked, so any entries in this file are used for name resolution. Any
+	lines that are preceded by a number sign (#) are ignored. The following is the
+	proper format for a Windows Hosts file:
+	
+	  <IP_address> <A0><NetBios_name>
+	
+	If your Exchange Server computer is listed, make sure that the IP address that
+	precedes it is still valid. This is a static file, so if you make changes to
+	your network or IP addressing scheme, you need to update this file. Also, both
+	Windows NT and Windows 98 read this file dynamically, so if you make any changes
+	to the Hosts file, you do not need to restart the computer for the changed
+	mappings to take effect.
+	
+	Additional query words: OL97 OL98 OL2000
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbOutlookSearch kbExchangeSearch kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbOutlook2000Search kbOutlook97Search kbOutlook98Search kbZNotKeyword3 kbExchange400NT kbExchange500NT kbExchange400Win95 kbExchange500Win95
+	Version           : WINDOWS:4.0,5.0,97; :
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

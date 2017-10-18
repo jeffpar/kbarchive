@@ -1,0 +1,82 @@
+---
+layout: page
+title: "Q258875: BUG: Win2000 Multicast Groups Not Rejoined When Interface Enable"
+permalink: kb/258/Q258875/
+---
+
+## Q258875: BUG: Win2000 Multicast Groups Not Rejoined When Interface Enable
+
+	Article: Q258875
+	Product(s): Microsoft Windows NT
+	Version(s): 2000
+	Operating System(s): 
+	Keyword(s): kbnetwork kbAPI kbOSWin2000 kbOSWin2000bug kbSDKPlatform kbSDKWin32 kbWinsock kbDSuppor
+	Last Modified: 19-NOV-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 2000 Advanced Server 
+	- Microsoft Windows 2000 Server 
+	- Microsoft Windows 2000 Professional 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When an interface is disabled and then re-enabled in Windows 2000 either by the
+	user interface or through MediaSense, if the adapter was joined to multicast
+	groups, the interface may not be able to receive multicasts from those groups
+	once it is re-enabled. Internet Group Membership Protocol (IGMP) should be
+	sending a join message for each group that the computer is a member of when the
+	interface is re-enabled.
+	
+	
+	CAUSE
+	=====
+	
+	This problem occurs when the multicast sockets are bound to INADDR_ANY. Mulicast
+	groups are rejoined as expected if the socket is bound to a specific interface.
+	
+	RESOLUTION
+	==========
+	
+	Workaround
+	----------
+	
+	A well written application should generally monitor for address changes and
+	should unjoin and then rejoin the multicast group when there is an address
+	change (especially when obtaining a different IP address). You can use the
+	SIO_ADDRESS_LIST_CHANGE option of the WSAIoctl function to receive notification
+	of an address list change.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed that this is a bug in the Microsoft products that are
+	listed at the beginning of this article.
+	
+	REFERENCES
+	==========
+	
+	For additional information, click the article number below to view the article
+	in the Microsoft Knowledge Base:
+	
+	  Q131978 HOWTO: Receive/Send Multicasts Under WinNT/Win95 Using WinSock
+	
+	See the "Windows Sockets 2 API Programmer's Reference in the Platform SDK" at the
+	following Web site:
+	
+	  http://msdn.microsoft.com/library
+	
+	Additional query words: IGMP
+	
+	======================================================================
+	Keywords          : kbnetwork kbAPI kbOSWin2000 kbOSWin2000bug kbSDKPlatform kbSDKWin32 kbWinsock kbDSupport kbGrpDSNet 
+	Technology        : kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWinAdvServSearch
+	Version           : :2000
+	Issue type        : kbbug
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

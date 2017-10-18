@@ -1,0 +1,107 @@
+---
+layout: page
+title: "Q128637: HOWTO: How to Draw a Gradient Background"
+permalink: kb/128/Q128637/
+---
+
+## Q128637: HOWTO: How to Draw a Gradient Background
+
+	Article: Q128637
+	Product(s): Microsoft Windows Software Development Kit
+	Version(s): WINDOWS:3.1,95; winnt:3.5,3.51,4.0
+	Operating System(s): 
+	Keyword(s): kbOSWinNT350 kbOSWinNT351 kbOSWinNT400 kbOSWin2000 kbOSWin95 _IK kbSDKWin16
+	Last Modified: 12-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows Software Development Kit (SDK) 3.1 
+	- Microsoft Win32 Application Programming Interface (API) 
+	- Microsoft Windows 2000 Advanced Server 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article provides source code for drawing a gradient background pattern
+	similar to the one used in Microsoft Setup applications. The code will compile
+	and run on Windows version 3.1, Win32s, Windows 95 and Windows NT.
+	
+	MORE INFORMATION
+	================
+	
+	WARNING: ANY USE BY YOU OF THE CODE PROVIDED IN THIS ARTICLE IS AT YOUR OWN
+	RISK. Microsoft provides this code "as is" without warranty of any kind, either
+	express or implied, including but not limited to the implied warranties of
+	merchantability and/or fitness for a particular purpose.
+	
+	     /*************************************************************
+	
+	     *                                                            *
+	     *  DrawBackgroundPattern()                                   *
+	     *                                                            *
+	     *  Purpose: This function draws a gradient pattern that      *
+	     *           transitions between blue and black. This is      *
+	     *           similar to the background used in Microsoft      *
+	     *           setup programs.                                  *
+	     *                                                            *
+	     *************************************************************/ 
+	
+	     void DrawBackgroundPattern(HWND hWnd)
+	
+	     {
+	     HDC hDC = GetDC(hWnd);  // Get the DC for the window
+	     RECT rectFill;          // Rectangle for filling band
+	     RECT rectClient;        // Rectangle for entire client area
+	     float fStep;            // How large is each band?
+	     HBRUSH hBrush;
+	
+	     int iOnBand;  // Loop index
+	
+	     // How large is the area you need to fill?
+	
+	     GetClientRect(hWnd, &rectClient);
+	
+	     // Determine how large each band should be in order to cover the
+	     // client with 256 bands (one for every color intensity level)
+	
+	     fStep = (float)rectClient.bottom / 256.0f;
+	
+	     // Start filling bands
+	
+	     for (iOnBand = 0; iOnBand < 256; iOnBand++) {
+	
+	      // Set the location of the current band
+	      SetRect(&rectFill,
+	              0,                           // Upper left X
+	              (int)(iOnBand * fStep),      // Upper left Y
+	              rectClient.right+1,          // Lower right X
+	              (int)((iOnBand+1) * fStep)); // Lower right Y
+	
+	     // Create a brush with the appropriate color for this band
+	     hBrush = CreateSolidBrush(RGB(0, 0, (255 - iOnBand)));
+	
+	     // Fill the rectangle
+	     FillRect(hDC, &rectFill, hBrush);
+	
+	     // Get rid of the brush you created
+	     DeleteObject(hBrush);
+	
+	     };
+	
+	     // Give back the DC
+	
+	     ReleaseDC(hWnd, hDC);
+	     }
+	
+	Additional query words: 3.00 3.10 4.00 GRADIENT BACKGROUND DITHER
+	
+	======================================================================
+	Keywords          : kbOSWinNT350 kbOSWinNT351 kbOSWinNT400 kbOSWin2000 kbOSWin95 _IK kbSDKWin16 
+	Technology        : kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Search kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinAdvServSearch kbWin32sSearch kbWin32API kbWinSDKSearch kbWinSDK310
+	Version           : WINDOWS:3.1,95; winnt:3.5,3.51,4.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

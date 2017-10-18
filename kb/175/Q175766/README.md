@@ -1,0 +1,125 @@
+---
+layout: page
+title: "Q175766: FIX: WAIT WINDOW NOWAIT Problem with Top-Level Forms"
+permalink: kb/175/Q175766/
+---
+
+## Q175766: FIX: WAIT WINDOW NOWAIT Problem with Top-Level Forms
+
+	Article: Q175766
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:5.0,5.0a
+	Operating System(s): 
+	Keyword(s): kbvfp
+	Last Modified: 23-MAR-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When running a Visual FoxPro program that displays a WAIT WINDOW on activation
+	of a Top-Level form, the Top-Level form stops responding. The Top-Level form
+	does not close. The WAIT WINDOW does not close. If the Visual FoxPro desktop is
+	not hidden, it can be activated to access the Command window either by clicking
+	it or by clicking the button on the Windows Taskbar. Upon reactivating the
+	Top-Level form by clicking the Windows Taskbar button for the Top-Level form, a
+	transparent copy of the Top-Level form appears but the Top-Level form is still
+	unresponsive. Quit Visual FoxPro to eliminate the Top-Level form.
+	
+	CAUSE
+	=====
+	
+	There is a WAIT WINDOW "some message" NOWAIT command in the Activate method of
+	the Top-Level form, which is followed by the Thisform.Release command. The
+	problem still occurs if there is other code between the WAIT WINDOW command and
+	the Thisform.Release command.
+	
+	RESOLUTION
+	==========
+	
+	There are three possible workarounds, depending on what is desired:
+	
+	- Use WAIT WINDOW "some message" TIMEOUT 1.
+	
+	  -or-
+	
+	  Use a number greater than one.
+	
+	- Remove the WAIT WINDOW completely.
+	
+	- Use WAIT WINDOW "some message" TIMEOUT 0.
+	
+	  -or-
+	
+	  Remove the TIMEOUT clause completely. Clicking the mouse is necessary in this
+	  case though.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article. This has been corrected in Visual FoxPro 6.0.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Place the following code in a new program file, save the code and run The
+	  program. The code below is from a form created in the Form Designer that was
+	  opened in the Class Browser. Note the PROCEDURE Activate.
+	
+	        ***Start of program code
+	        PUBLIC oform1
+	
+	        oform1=CREATEOBJECT("form1")
+	        oform1.Show
+	        RETURN
+	
+	        **************************************************
+	        *-- Form:         form1 (d:\dchou\test\test.scx)
+	        *-- ParentClass:  form
+	        *-- BaseClass:    form
+	        *
+	        DEFINE CLASS form1 AS form
+	
+	           ShowWindow = 2
+	           DoCreate = .T.
+	           AutoCenter = .T.
+	           Caption = "Form1"
+	           Name = "Form1"
+	
+	           PROCEDURE Activate
+	              WAIT WINDOW "Some Message" NOWAIT
+	              Thisform.Release
+	           ENDPROC
+	
+	        ENDDEFINE
+	        *
+	        *-- EndDefine: form1
+	        **************************************************
+	
+	2. Click the form or WAIT WINDOW. There should be no response.
+	
+	3. Click the Windows Taskbar button for Visual FoxPro. The Top-Level form should
+	  disappear behind Visual FoxPro. Click the Windows Taskbar button for the
+	  Top-Level form; it should be labeled Form1. The border and title bar of the
+	  form may sometimes reappear. If the form appears, it will look transparent.
+	
+	Additional query words: SDI Single Document Interface kbvfp600fix
+	
+	======================================================================
+	Keywords          : kbvfp 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP500a
+	Version           : WINDOWS:5.0,5.0a
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

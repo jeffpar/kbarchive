@@ -1,0 +1,148 @@
+---
+layout: page
+title: "Q252615: OLE Examples for Taking Control of Excel from Visual FoxPro"
+permalink: kb/252/Q252615/
+---
+
+## Q252615: OLE Examples for Taking Control of Excel from Visual FoxPro
+
+	Article: Q252615
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+	Operating System(s): 
+	Keyword(s): kbfile kbinterop kbsample kbAutomation kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600 k
+	Last Modified: 10-NOV-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Dbf2xls.exe is a sample that provides Microsoft Visual FoxPro code to control
+	Microsoft Excel by using OLE Automation.
+	
+	MORE INFORMATION
+	================
+	
+	  Dbf2xls.exe
+	  (http://download.microsoft.com/download/vfox60/sample/9/w9x2k/en-us/Dbf2xls.exe)
+	
+	Release Date: Mar-20-2000
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. Once posted, the file is housed on secure
+	servers that prevent any unauthorized changes to the file.
+	
+	The dbf2xls.exe file contains the following files:
+	
+	+----------------------+
+	| File Name    | Size  | 
+	+----------------------+
+	| vfpexcel.prg | 29520 | 
+	+----------------------+
+	| customer.dbf | 25979 | 
+	+----------------------+
+	| readme.txt   | 3773  | 
+	+----------------------+
+	
+	VFPExcel.prg demonstrates, by example, the means by which to create a fully
+	formatted and ready to print Microsoft Excel file using OLE Automation from
+	within Microsoft Visual FoxPro. This program requires the installation of
+	Microsoft Excel version 7.0 (Excel for Office 95) or higher. The program is
+	capable of functioning in Microsoft Visual FoxPro version 3.0 and higher. If
+	this program is run on a computer with no installed printer, functionality
+	associated with Microsoft Excel Page Setup features produces errors. These can
+	be ignored.
+	
+	The operation performed within this program first uses a COPY TO TYPE XL5
+	command. While OLE can be used to pass data from Visual FoxPro to Excel, the
+	COPY TO command is vastly more efficient. Once the Excel file is created, the
+	program creates an OLE instance of Microsoft Excel and opens the temporary file
+	created with the COPY TO command. The program stores the temporary file in the
+	Microsoft Visual FoxPro root directory as determined by the HOME() function.
+	
+	NOTE: Any partial installation of Microsoft Visual FoxPro that does not include
+	the appropriate OLE or COM DLLs causes this program to fail when it attempts to
+	instantiate (through OLE) the Microsoft Excel Application Object.
+	
+	To Use This Program
+	-------------------
+	
+	A table, view, or cursor must be open in the currently selected work area. The
+	table, view, or cursor must not contain any memo field or fields. This program
+	creates a Microsoft Excel file and stores it in the directory containing the
+	source table. The name assigned to the created file is the same as the one
+	provided by the ALIAS() function. The extension of the derived file is .xls.
+	
+	The program utilizes a parameter passed as a numeric value to determine the paper
+	size and print orientation. The parameter values are shown here:
+	
+	- 1 = letter size paper, portrait orientation (1,1)
+	- 2 = letter size paper, landscape orientation (1,2)
+	- 3 = legal size paper, portrait orientation (5,1)
+	- 4 = legal size paper, landscape orientation (5,2)
+	
+	If no parameter is passed, the default value will be 1.
+	
+	Important Items to Remember
+	---------------------------
+	
+	- This program does not work with a table, view, or cursor that contains a memo
+	  field or fields.
+	
+	- Cursors and Views that represent subsets of a single table or represent data
+	  combined from two or more tables can be temp (.tmp) files that are stored in
+	  the computer's assigned TEMP directory.
+	
+	- This program places the entire contents of the currently open file into a
+	  resulting Microsoft Excel file. If you want to use only a subset of the data,
+	  this action needs to be taken prior to running this program. This is
+	  especially true, and particularly important, when using larger tables.
+	
+	- The program code is thoroughly commented to describe all processes that are
+	  occurring.
+	
+	Step-by-Step Process for Using Vfpexcel.prg  
+	-------------------------------------------
+	
+	1. Download the self-extracting executable file and expand the Vfpexcel.prg,
+	  Customer.dbf, and Readme.txt files.
+	
+	2. Start Microsoft Visual FoxPro.
+	
+	3. From within Microsoft Visual FoxPro, set the default directory to the folder
+	  containing the extracted Vfpexcel.prg, Customer.dbf, and the Readme.txt
+	  files.
+	
+	4. Open the Customer.dbf table. Ensure that the selected work area is the one in
+	  which the Customer.dbf file is open.
+	
+	5. In the Microsoft Visual FoxPro Command window, type the following line of
+	  code:
+	
+	  DO vfpexcel.prg WITH 4
+	
+	The result is a Microsoft Excel file with a name of Customer.xls that is stored
+	in the same location as the customer.dbf table. If you print (or print preview)
+	the file, you see that the paper size is legal and the print orientation is
+	landscape. This was determined by the parameter of 4.
+	
+	Additional query words: Dbf2xls
+	
+	======================================================================
+	Keywords          : kbfile kbinterop kbsample kbAutomation kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600 kbGrpDSFox kbDSupport kbCodeSnippet 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+	Version           : WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

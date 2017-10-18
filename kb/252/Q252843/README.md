@@ -1,0 +1,94 @@
+---
+layout: page
+title: "Q252843: XCON: MTA Generates a Large Number of Event ID 4293"
+permalink: kb/252/Q252843/
+---
+
+## Q252843: XCON: MTA Generates a Large Number of Event ID 4293
+
+	Article: Q252843
+	Product(s): Microsoft Exchange
+	Version(s): winnt:5.0,5.5
+	Operating System(s): 
+	Keyword(s): exc5 exc55
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 5.0, 5.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Mail backs up in the queues, and the message transfer agent (MTA) generates a
+	large number of the following Event ID 4293:
+	
+	  Event ID: 4293
+	  Source: MSExchange MTA
+	  Type: Warning
+	  Category: Field Engineering
+	
+	  (POP4 POP4 UP(7) PROC 39) Incoming Connection rejected due to an incorrect
+	  T-selector. Called T-Selector is: %1%2%3
+	
+	CAUSE
+	=====
+	
+	This problem occurs if T Selector values are mismatched either on incoming or
+	outgoing connections. You can find the X.400 transport selectors in the
+	Microsoft Exchange Server Administrator program in the three following
+	configuration fields:
+	
+	- Stack T Selector. To find this configuration field, perform the following
+	  steps:
+	
+	  1. Click to expand Site, click to expand Configuration, click to expand
+	     Servers, and click the Server object.
+	
+	  2. In the right pane, a protocol stack in the following form is displayed:
+	
+	  TCP(<server name>)
+	
+	     The following is a sample protocol stack:
+	
+	  TCP(Server1)
+	
+	- Outgoing T Selector. To find this configuration field, perform the following
+	  step:
+	
+	  Click to expand Site, click to expand Configuration, click to expand
+	  Connectors, and in the right pane, click your X.400 Connector. Click the
+	  Stack tab; this tab has both an Outgoing and Incoming section for transport
+	  values.
+	
+	- Incoming T Selector. To find this configuration field, perform the following
+	  step:
+	
+	  Click to expand Site, click to expand Configuration, click to expand
+	  Connectors, and in the right pane, click your X.400 Connector. Click the
+	  Stack tab; this tab has both an Outgoing and Incoming section for transport
+	  values.
+	
+	RESOLUTION
+	==========
+	
+	Although a T Selector value is optional, if you do use this value you must make
+	sure that it is an exact match with the corresponding value that is specified
+	for the transport selector on the target Microsoft Exchange Server computer. If
+	a remote administrator wants to specify an S Selector or a P Selector, the
+	remote administrator must only do so after successful messaging has been
+	established. The T, S, and P Selectors are supported between Exchange Server
+	computers.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : exc5 exc55 
+	Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+	Version           : winnt:5.0,5.5
+	Issue type        : kbprb
+	
+	=============================================================================
+	

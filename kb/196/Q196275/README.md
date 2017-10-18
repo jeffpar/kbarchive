@@ -1,0 +1,107 @@
+---
+layout: page
+title: "Q196275: PRB: Repeatedly Pressing F1 Key on VB Application May Crash Help"
+permalink: kb/196/Q196275/
+---
+
+## Q196275: PRB: Repeatedly Pressing F1 Key on VB Application May Crash Help
+
+	Article: Q196275
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbWinHelp kbOSWinNT kbVBp kbVBp500 kbVBp600 kbOSWin98 kbGrpDSVB
+	Last Modified: 16-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If you create a project with context-sensitive Help in Visual Basic and hold
+	down the F1 key, an error may occur. This error will be different depending upon
+	the operating system.
+	
+	On Windows NT, you may see the following error messages:
+	
+	  Windows Help
+	
+	  Help could not read the current Help file. Make sure there are no errors on
+	  the disk, or if the file is on a network server, that the server is active.
+	  (163)
+	
+	  Winhlp32.exe - Application Error
+	
+	  The instruction at "0x0102ebd" referenced at "0x00000001". The memory could
+	  not be "read".
+	
+	The memory addresses may vary.
+	
+	On Windows 98 or Windows Me, you may see the following error.
+	
+	  This program has performed an illegal operation and will shutdown. If the
+	  problem persists, contact the program vendor.
+	
+	This error may also occur if the F1 key is quickly pressed many times.
+	
+	RESOLUTION
+	==========
+	
+	The F1 key is used in Visual Basic as a way of providing Help for the current
+	item. Repeatedly hitting this key would cause the Help system to go a level
+	deeper each time it is pressed. In most cases, Help for a topic does not go more
+	than two or three levels deep. Avoid repeated or continuous pressing of the F1
+	key.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products that are
+	listed at the beginning of this article.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	To reproduce this behavior, create an application with either Visual Basic 5.0 or
+	Visual Basic 6.0 having context-sensitive Help on a form or control. With focus
+	on the form or control having context-sensitive Help, hold the F1 key down.
+	After a period of time you may see one of the above error messages.
+	
+	This problem could also be reproduced in the Microsoft Visual Basic 5.0 IDE
+	(Integrated Development Environment).
+	
+	This problem will not occur in the Microsoft Visual Basic 6.0 IDE.
+	
+	Step-by-Step Example
+	--------------------
+	
+	1. Create a Standard EXE project in Visual Basic. Form1 is created by default.
+	
+	2. Click on any control on the Visual Basic toolbox, such as a CommandButton.
+	
+	3. Hold down the F1 key and note that of the above error messages appears as a
+	  result.
+	
+	REFERENCES
+	==========
+	
+	Online Help for Microsoft Visual Basic versions 5.0 and 6.0.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbWinHelp kbOSWinNT kbVBp kbVBp500 kbVBp600 kbOSWin98 kbGrpDSVB 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600
+	Version           : :5.0,6.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

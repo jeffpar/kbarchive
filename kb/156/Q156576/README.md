@@ -1,0 +1,72 @@
+---
+layout: page
+title: "Q156576: Windows NT 3.51 Service Pack Disables Dual Boot for 4.0"
+permalink: kb/156/Q156576/
+---
+
+## Q156576: Windows NT 3.51 Service Pack Disables Dual Boot for 4.0
+
+	Article: Q156576
+	Product(s): Microsoft Windows NT
+	Version(s): 4.0
+	Operating System(s): 
+	Keyword(s): kbenv
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 4.0 
+	- Microsoft Windows NT Workstation version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	After you install Windows NT 3.51 Service Pack 2, 3, or 4, you may receive the
+	following error message when you choose Windows NT 4.0 from the Windows NT boot
+	menu:
+	
+	  Windows NT could not start because the following file is missing or corrupt:
+	
+	  %systemroot%\SYSTEM32\CONFIG\SYSTEM
+	
+	  You can attempt to repair this file by starting the Windows NT setup using the
+	  original setup floppy disk or CD-ROM. Select 'r' at the first screen to start
+	  repair.
+	
+	CAUSE
+	=====
+	
+	This behavior occurs because the Ntldr file included with Windows NT 3.51
+	Service Pack 2, 3, or 4, is incapable of starting Windows NT 4.0.
+	
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, replace the Ntldr file with the Windows NT 4.0 version of
+	the file. To do so, follow these steps:
+	
+	1. Start your computer using Windows NT 3.51.
+	
+	2. Using File Manager or Command Prompt, copy the Ntldr file from the Windows NT
+	  4.0 CD-ROM to the root folder of the boot drive. For example, if you are
+	  using Command Prompt and the Windows NT 4.0 CD-ROM is inserted in drive D,
+	  type the following line:
+	
+	  "copy d:\i386\ntldr c:\ntldr" (without the quotation marks)
+	
+	3. When you are prompted whether to overwrite the existing file, choose Yes.
+	
+	4. Restart your computer.
+	
+	Additional query words: prodnt boot.ini
+	
+	======================================================================
+	Keywords          : kbenv 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+	Version           : 4.0
+	
+	=============================================================================
+	

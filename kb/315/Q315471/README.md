@@ -1,0 +1,216 @@
+---
+layout: page
+title: "Q315471: HOW TO: Perform Secure Internet Messaging over HTTPS"
+permalink: kb/315/Q315471/
+---
+
+## Q315471: HOW TO: Perform Secure Internet Messaging over HTTPS
+
+	Article: Q315471
+	Product(s): Internet Information Server
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbAudDeveloper kbHOWTOmaster
+	Last Modified: 19-MAR-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Services version 5.1 
+	-------------------------------------------------------------------------------
+	
+	IN THIS TASK
+	------------
+	
+	- SUMMARY
+	
+	   - Requirements
+	- Secure Internet Messaging with MSMQ 3.0
+	- Install a Certificate on the IIS Server
+	- Create the New Queue on the IIS Server
+	- Send a Message to the Queue Using HTTPS
+	- Retrieve a Message Using HTTPS
+	
+	- REFERENCES
+	
+	SUMMARY
+	=======
+	
+	This step-by-step article describes how to use HTTPS to encrypt messages that
+	must be secure and send these messages to Internet Information Services (IIS)
+	servers.
+	
+	Requirements
+	------------
+	
+	The following items describe the recommended hardware, software, network
+	infrastructure, skills and knowledge, and service packs that you need:
+	
+	
+	- Microsoft Windows XP
+	- Microsoft Message Queuing 3.0
+	- Microsoft Visual Basic 6.0
+	- Knowledge of Microsoft Visual Basic programming
+	- Knowledge of basic IIS 5.1 administration techniques
+	
+	Secure Internet Messaging with MSMQ 3.0
+	---------------------------------------
+	
+	When you develop distributed applications, a means of guaranteeing the
+	reliability of communications between components is essential. Microsoft Message
+	Queuing (MSMQ) version 3.0 provides store and forward functions for
+	communications between components of distributed applications that run on
+	different computers by creating queues in which messages can be stored until
+	delivery is possible. Version 3.0 of this application programming interface
+	(API), which is included with Windows XP, includes the ability to send messages
+	through Hypertext Transfer Protocol (HTTP) to IIS servers. If these messages
+	need to be secure, you can use the HTTPS protocol, which includes Secure Sockets
+	Layer (SSL) encryption.
+	
+	MSMQ 3.0 must be installed on all computers that are involved in the application,
+	including the IIS server. To install MSMQ 3.0, follow these steps:
+	
+	1. On the Start menu, point to Settings, and then click Control Panel.
+	
+	2. Double-click Add/Remove Programs, and then click Add/Remove Windows
+	  Components.
+	
+	3. Select Messaging Queuing from the list.
+	
+	Install a Certificate on the IIS Server
+	---------------------------------------
+	
+	Any system that uses SSL requires a server-side certificate. You should otain a
+	server-side certificate from a trusted source, such as an Internet Certificate
+	Authority.
+	
+	To create a certificate request file, follow these steps:
+	
+	1. Open Internet Services Manager, right-click the default Web site, and then
+	  click Properties.
+	
+	2. On the Directory Security tab, click Server Certificate.
+	
+	3. When the IIS Certificate Request Wizard starts, select Create a New
+	  Certificate and Prepare the request now but send it later.
+	
+	4. Under Name and Security Settings, accept the default, and then type your
+	  organization and organizational unit. The Common Name value must be the fully
+	  qualified domain name (FQDN) of the Web server (for example,
+	  msmqserver.microsoft.com).
+	
+	5. Complete the remaining details according to your location. Select a file name
+	  where the resulting request will be saved.
+	
+	6. Forward this file to your chosen Certificate Authority. The Certificate
+	  Authority checks the details and returns the completed certificate. You can
+	  use the IIS Certificate Request Wizard again to install the certificate into
+	  the Web site.
+	
+	Create the New Queue on the IIS Server
+	--------------------------------------
+	
+	The following Visual Basic sample demonstrates how to create the new queue:
+	
+	NOTE: You must add Microsoft Message Queue 3.0 Object Library to the project
+	references. This sample uses an MSMQQueueInfo object.
+	
+	  'Declare the MSMQQueueInfo object.
+	  Dim objQueueInfo As MSMQQueueInfo
+	
+	  'Instantiate it.
+	  Set objQueueInfo = New MSMQQueueInfo
+	
+	  'To specify the queue name, use the PathName property. Here "." is
+	  'used to specify the localhost. Note that http: syntax cannot be 
+	  'used to create a new queue, only to reference an existing one.
+	  objQueueInfo.PathName = ".\testqueue"
+	
+	  'Create the queue.
+	  objQueueInfo.Create
+	
+	Send a Message to the Queue Using HTTPS
+	---------------------------------------
+	
+	Run the following Visual Basic code on the computer that sends the messages:
+	
+	NOTE: You must add Microsoft Message Queue 3.0 Object Library to the project
+	references. An MSMQDestination object is used to reference the queue on the IIS
+	server. To ensure that secure protocol is used, set the Format Name property of
+	the MSMQDestination object by using HTTPS syntax.
+	
+	  'Declarations.
+	  Dim objDestination As MSMQDestination
+	  Dim objMessage As MSMQMessage
+	  Dim strFormatName As String
+	
+	  'Formulate the HTTPS format name. Substitute your server FQDN and queue 'name here.
+	  strFormatName = "DIRECT=HTTPS://msmqserver.microsoft.com\msmq\testqueue"
+	
+	  'Open the remote queue.
+	  Set objDestination = New MSMQDestination
+	  objDestination.FormatName = strFormatName
+	
+	  'Create a new message and set its properties. Here the Label property is 'used by way of example.
+	  Set objMessage = New MSMQMessage
+	  objMessage.Label = "This is a test message!"
+	
+	  'Send the message.
+	  objMessage.Send objDestination
+	
+	Retrieve a Message Using HTTPS
+	------------------------------
+	
+	The following sample loops through all the messages in the queue and reads their
+	labels, and then displays the messages in a message box:
+	
+	NOTE: An MSMQQueueInfo object is used to address the queue by using an HTTPS
+	format name. You must add Microsoft Message Queue 3.0 Object Library to the
+	project references.
+	
+	  'Declare the necessary objects.
+	  Dim objQueueInfo As MSMQQueueInfo
+	  Dim objQueue As MSMQQueue
+	  Dim objMessage As MSMQMessage
+	
+	  'Use the MSMQQueueInfo object to specify the HTTPS format name.
+	  Set objQueueInfo = New MSMQQueueInfo
+	  objQueueInfo.FormatName = "DIRECT=HTTPS://msmqserver.microsoft.com"_& "\msmq\testqueue"
+	
+	  'Open the queue.
+	  Set objQueue = objQueueInfo.Open(MQ_RECEIVE_ACCESS, MQ_DENY_NONE)
+	
+	  'Loop through the messages in the queue.
+	  Do While True
+	     Set objMessage = objQueue.Receive(, , , 1000)
+	     If objMessage Is Nothing Then
+	        MsgBox "No Messages! Closing Queue..."
+	        objQueue.Close
+	        Exit Sub
+	     End If
+	     MsgBox "A message with label " & objMessage.Label & " was retrieved!"
+	  Loop
+	
+	REFERENCES
+	==========
+	
+	For additional information about how to use an internal Certificate Authority
+	and set up Windows 2000 Certificate Services, click the article number below to
+	view the article in the Microsoft Knowledge Base:
+	
+	  Q231881 How to Install/Uninstall a Public Key Certificate Authority for
+	  Windows 2000
+	
+	For more information about MSMQ 3.0, see the "Message Queuing (MSMQ)" topic in
+	the Platform Software Development Kit (SDK).
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbAudDeveloper kbHOWTOmaster 
+	Technology        : kbiisSearch kbiis510
+	Version           : :
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

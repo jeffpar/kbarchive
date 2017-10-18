@@ -1,0 +1,335 @@
+---
+layout: page
+title: "Q111010: HOWTO: Use PASSTHROUGH As An Alternative to SpoolFile()"
+permalink: kb/111/Q111010/
+---
+
+## Q111010: HOWTO: Use PASSTHROUGH As An Alternative to SpoolFile()
+
+	Article: Q111010
+	Product(s): Microsoft Windows Software Development Kit
+	Version(s): 3.1
+	Operating System(s): 
+	Keyword(s): kbOSWin310 kbDSupport kbSDKWin16
+	Last Modified: 23-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows Software Development Kit (SDK) 3.1 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Applications written for Windows 3.1 can use either the SpoolFile() function or
+	the PASSTHROUGH printer escape to send a printer-specific file to Print Manager
+	for spooling to a printer. Because there are several caveats to using
+	SpoolFile(), using the PASSTHROUGH printer escape is often a better choice.
+	
+	MORE INFORMATION
+	================
+	
+	The following is a list of known limitations of the Windows SDK SpoolFile()
+	function:
+	
+	- SpoolFile() is documented as being for use with local printers only. Using
+	  SpoolFile() with network printers results in undefined behavior; sometimes
+	  you may get output, sometimes you may get a general protection (GP) fault.
+	
+	- Print Manager must be enabled to use SpoolFile().
+	
+	- Print Manager treats the file exactly as it treats temporary files generated
+	  through "normal" GDI printing. This has two major implications: - The file
+	  must use the correct language/format for the printer. Print Manager does not
+	  attempt to interpret or modify the file in any way, but simply writes the
+	  contents to the port. - Print Manager deletes the file when done spooling it
+	  to the port.
+	
+	- Finally, a bug in SpoolFile() causes Print Manager to cause a GP fault when
+	  the application that called SpoolFile() terminates before Print Manager is
+	  done spooling the file to the port.
+	
+	
+	Sample Code
+	-----------
+	
+	The following sample code demonstrates how to use the PASSTHROUGH escape:
+	
+	     /* FILE: spool.c */ 
+	
+	     #include <windows.h>
+	     #include <print.h>
+	     #include <commdlg.h>
+	     #include <string.h>
+	
+	     // Function prototypes
+	     BOOL FAR PASCAL PrintFile(LPSTR, HDC, HGLOBAL, HGLOBAL);
+	     VOID SendFile(HDC, LPSTR);
+	     HDC  GetPrinterDC(HGLOBAL, HGLOBAL);
+	     BOOL CALLBACK __export PrintAbortProc(HDC, int);
+	
+	     // Play with this number
+	     #define BUFSIZE 2048
+	
+	     // Convenient structure for use with PASSTHROUGH escape
+	     typedef struct
+	     {
+	       WORD wSize;
+	       BYTE bData[2];                  // placeholder
+	     } PASSTHROUGHSTRUCT, FAR *LPPTS;
+	
+	     BOOL bAbort;        // Global printing abort flag
+	
+	     //*************************************************************
+	     // 
+	     //  PrintFile()
+	     // 
+	     //  Purpose:
+	     //          Reads a file and copies it to a printer using the
+	     //          PASSTHROUGH escape.
+	     // 
+	     //  Parameters:
+	     //      LPSTR   szFile    - Pointer to path/filename to print
+	     //      HDC     hPrnDC    - Handle to printer DC or NULL
+	     //      HGLOBAL hDevNames - Handle to DEVNAMES struct or NULL
+	     //      HGLOBAL hDevMode  - Handle to DEVMODE struct or NULL
+	     // 
+	     //  Return:
+	     //      Returns nonzero for success or zero for failure.
+	     // 
+	     //  Comments:
+	     //      hDevNames and hDevMode are only used if hPrnDC is NULL.
+	     //      If both hPrnDC and hDevNames are NULL, the default
+	     //      printer is used.
+	     // 
+	     //  History:    Date       Author     Comment
+	     //              6/03/93    JMS        Created
+	     // 
+	     //*************************************************************
+	
+	     BOOL FAR PASCAL PrintFile ( LPSTR   szFile,
+	
+	                                 HDC     hPrnDC,
+	                                 HGLOBAL hDevNames,
+	                                 HGLOBAL hDevMode )
+	
+	     {
+	
+	       int iEsc;
+	       BOOL bLocalDC = TRUE; // Assume we must create a DC (hPrnDC == NULL)
+	
+	       bAbort = FALSE;       // Haven't aborted yet
+	
+	       // Make sure we have a printer DC
+	
+	       if (!hPrnDC)
+	         hPrnDC = GetPrinterDC(hDevNames, hDevMode);
+	       else
+	         bLocalDC = FALSE;   // Use passed in hPrnDC
+	
+	       if (!hPrnDC)
+	         return FALSE;
+	
+	       // PASSTHROUGH is required. If driver doesn't support it, bail out.
+	
+	       iEsc = PASSTHROUGH;
+	       if (!Escape(hPrnDC, QUERYESCSUPPORT, sizeof(int), (LPSTR)&iEsc, NULL))
+	         {
+	         bAbort = TRUE;
+	         goto MSFCleanUp;
+	         }
+	
+	       // If we created the DC, install an abort procedure. We don't have
+	       // a Cancel dialog box, but the abort proc enables multitasking.
+	       // (Use __export and compile with -GA or -GD so we don't need
+	       // a MakeProcInstance.)
+	
+	       if (bLocalDC)
+	         Escape (hPrnDC, SETABORTPROC, 0, (LPSTR) PrintAbortProc, NULL);
+	
+	       // Call EPSPRINTING if it is supported (that is, if we're on a
+	       // PostScript printer) to suppress downloading the pscript header.
+	
+	       iEsc = EPSPRINTING;
+	       if (Escape(hPrnDC, QUERYESCSUPPORT, sizeof(int), (LPSTR)&iEsc, NULL))
+	         {
+	         iEsc = 1;  // 1 == enable PASSTHROUGH (disable pscript header)
+	         Escape(hPrnDC, EPSPRINTING, sizeof(int), (LPSTR)&iEsc, NULL);
+	         }
+	
+	       SendFile(hPrnDC, szFile); // Send file to printer (could do multiple
+	                                 // files)
+	
+	     MSFCleanUp:                 // Done
+	
+	       if (bLocalDC)             // Only delete DC if we created it
+	         DeleteDC(hPrnDC);
+	
+	       return !bAbort;
+	
+	     } /* PrintFile() */ 
+	
+	     VOID SendFile(HDC hPrnDC, LPSTR szFile)
+	     {
+	       static LPPTS lpPTS=NULL;          // Pointer to PASSTHROUGHSTRUCT
+	       OFSTRUCT ofs;
+	       HFILE hFile;
+	
+	       hFile = OpenFile((LPSTR) szFile, &ofs, OF_READ);
+	       if (hFile == HFILE_ERROR)
+	         {
+	         bAbort = TRUE;  // Can't open file!
+	         return;
+	         }
+	
+	       if (!lpPTS &&
+	            !(lpPTS = (LPPTS)GlobalLock(GlobalAlloc(GPTR, sizeof(WORD) +
+	      BUFSIZE))))
+	         {
+	         bAbort = TRUE;  // Can't allocate memory for buffer!
+	         return;
+	         }
+	
+	       Escape (hPrnDC, STARTDOC, 0, "", NULL);
+	
+	       // Loop through the file, reading a chunk at a time and passing
+	       // it to the printer. QueryAbort calls the abort procedure, which
+	       // processes messages so we don't tie up the whole system.
+	       // We could skip the QueryAbort, in which case we wouldn't need
+	       // to set an abort proc at all.
+	
+	       do {
+	         if ((lpPTS->wSize=_lread(hFile, lpPTS->bData, BUFSIZE)) ==
+	
+	           {
+	           bAbort = TRUE;  // error reading file
+	           break;
+	           }
+	
+	         Escape(hPrnDC, PASSTHROUGH, NULL, (LPSTR)lpPTS, NULL);
+	         }
+	       while ((lpPTS->wSize == BUFSIZE) && QueryAbort(hPrnDC, 0));
+	
+	       if (!bAbort)
+	         Escape(hPrnDC, ENDDOC, NULL, NULL, NULL);
+	
+	       _lclose(hFile);
+	
+	     } /* SendFile() */ 
+	
+	     HDC GetPrinterDC(HGLOBAL hDevNames, HGLOBAL hDevMode)
+	     {
+	
+	       HDC hdc;
+	       char szPrinter[64];
+	       LPSTR szDevice=NULL, szDriver=NULL, szOutput=NULL;
+	       LPDEVMODE lpdm;
+	
+	       if (hDevNames)
+	         {
+	         LPDEVNAMES lpdn = (LPDEVNAMES) GlobalLock(hDevNames);
+	
+	         szDriver = (LPSTR) lpdn + lpdn->wDriverOffset;
+	         szDevice = (LPSTR) lpdn + lpdn->wDeviceOffset;
+	         szOutput = (LPSTR) lpdn + lpdn->wOutputOffset;
+	
+	         if (hDevMode)
+	           lpdm = (LPDEVMODE) GlobalLock(hDevMode);
+	         }
+	       else
+	         {                       // Get default printer info
+	         GetProfileString ("windows", "device", "", szPrinter, 64);
+	
+	         if (!((szDevice = strtok (szPrinter, "," )) &&
+	               (szDriver = strtok (NULL,      ", ")) &&
+	               (szOutput = strtok (NULL,      ", "))))
+	                 return NULL;    // No default printer
+	
+	         lpdm = NULL;  // Don't use DEVMODE with default printer
+	         }
+	
+	       hdc = CreateDC(szDriver, szDevice, szOutput, lpdm);
+	
+	       if (hDevMode && lpdm)
+	         GlobalUnlock(hDevMode);
+	       if (hDevNames)
+	         GlobalUnlock(hDevNames);
+	
+	       return hdc;
+	
+	     } /* GetPrinterDC() */ 
+	
+	     BOOL CALLBACK __export PrintAbortProc(HDC hdc, int code)
+	     {
+	
+	       MSG msg;
+	
+	       while (!bAbort && PeekMessage(&msg, 0, 0, 0, PM_REMOVE))
+	         {
+	         TranslateMessage(&msg);
+	         DispatchMessage(&msg);
+	         }
+	
+	       return (!bAbort);
+	
+	     }  /* PrintAbortProc() */ 
+	
+	     /*** EOF: spool.c ***/ 
+	
+	
+	The PrintFile() function in the above sample code can be used instead of
+	SpoolFile(). PrintFile() uses the PASSTHROUGH printer escape to send a file to
+	the printer. This method has several advantages over SpoolFile():
+	
+	- It works equally well with local and network printers.
+	
+	- It works whether or not Print Manager is enabled.
+	
+	- It does not delete the file when done, but could be easily modified to do so
+	  if desired.
+	
+	- It avoids the GP fault problem mentioned above.
+	
+	- It can be easily modified to print several files in a row to a single printer
+	  with a single call to PrintFile().
+	
+	The primary disadvantages of PrintFile() are that it's slower than giving Print
+	Manager the file directly, and it requires the printer driver to support the
+	PASSTHROUGH escape. Almost all drivers support PASSTHROUGH, with the current
+	LaserJet 4 driver (HPPCL5E.DRV) being a notable exception. For printer drivers
+	that do not support the PASSTHROUGH escape, applications can use the driver
+	RAW.drv, which is available in the Microsoft Download Center.
+	
+	For additional information about the driver RAW.drv, please see the following
+	article in the Microsoft Knowledge Base:
+	
+	  Q35708 SAMPLE: Raw.exe Sends Binary Data to Printer w/Device Driver
+	
+	There have been reports of problems using the PASSTHROUGH escape with the driver
+	HPPCL5A.drv. This is the version of the printer driver for the HP LaserJet III
+	series that shipped with Windows 3.1. A more recent version of the driver
+	(HPPCL5MS.drv), which has no known problems with the PASSTHROUGH escape, is
+	available in the Windows Driver Library (WDL). To obtain the latest driver for
+	the HP LaserJet III series, download the self-extracting file HPPCL5.exe from
+	the WDL.
+	
+	Intermixing the PASSTHROUGH escape with calls to GDI output functions can be
+	problematic. It is best to print using either the PASSTHROUGH approach or using
+	the "normal" Windows printing method using GDI output functions. If you must
+	intermix the two approaches, you will get best results if you use the NEXTBAND
+	escape and send the raw data via the PASSTHROUGH escape on each first (all text)
+	band and call the GDI output functions on subsequent printer bands.
+	
+	NOTE: The Win32 API provides APIs for spooling raw print jobs.
+	
+	Additional query words: RAW gpf gp-fault kbVBp301
+	
+	======================================================================
+	Keywords          : kbOSWin310 kbDSupport kbSDKWin16 
+	Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+	Version           : :3.1
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

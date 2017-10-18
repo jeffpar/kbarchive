@@ -1,0 +1,108 @@
+---
+layout: page
+title: "Q166529: APPC Applications Fail to Connect to SNA Server 3.0 and 4.0"
+permalink: kb/166/Q166529/
+---
+
+## Q166529: APPC Applications Fail to Connect to SNA Server 3.0 and 4.0
+
+	Article: Q166529
+	Product(s): Microsoft SNA Server
+	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
+	Operating System(s): 
+	Keyword(s): kbbuglist
+	Last Modified: 13-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 3.0, 3.0 SP1, 3.0 SP2, 4.0 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	APPC applications and 5250 emulators may appear to hang when trying to connect
+	to a SNA Server, version 3.0 (including all SPs) or 4.0 system.
+	
+	APPC applications and 5250 emulators may appear to hang when trying to connect to
+	a SNA Server, version 3.0 or 3.0 Service Pack 1 (SP1) system.
+	
+	After starting a 5250 session and entering an AS/400 userid and password in the
+	AS/400 logon dialogue, the 5250 session will continue to display a blank screen
+	and will not display the AS/400 signon screen. The session may eventually
+	display an error similar to the following:
+	
+	  Could not connect to remote host.
+	
+	  [0003][0000005]
+	
+	This is the error that was displayed when using the 5250 Applet that is included
+	with SNA Server when QPCSUPP was configured as the Implicit Incoming Mode in SNA
+	Server Manager. It took several minutes before the error was displayed. The
+	error message may be different depending on the emulator that is being used.
+	
+	For other APPC applications, a SNA Server LU 6.2 Message trace may show that the
+	SNA Server nevers responds to the "Open LU62 Request" that it receives from the
+	APPC DLL on the client running the application.
+	
+	If you are using dependent APPC LUs, this message may appear in the Application
+	Event Log:
+	
+	Event ID 7
+	
+	APPC session activation failure: LU inactive
+	  Connection   = SUNGARD 
+	  LU alias     = SUNGARD 
+	  PLU alias    = WNWCI52D
+	  Mode name    = PA62TKNU
+	  LU address   =
+	
+	CAUSE
+	=====
+	
+	This problem is caused if the Remote APPC LU defined in SNA Server 3.0 is
+	configured to use an Implicit Incoming Mode that matches the APPC Mode that the
+	application will be using. For example, the problem would occur if the Implicit
+	Incoming Mode was set to APPCMODE and the APPC application was defined to use
+	this mode.
+	
+	The Implicit Incoming Mode is configured on the Options tab of the Remote APPC
+	LU's property page in SNA Server Manager.
+	
+	MORE INFORMATION
+	================
+	
+	An Implicit Incoming Mode is used to define the properties to use when SNA
+	Server receives a request to start an APPC session when an incoming APPC
+	Allocate specifies a null Mode name or if the specified Mode name is not
+	recognized by SNA Server.
+	
+	WORKAROUND
+	==========
+	
+	The workaround is to change the Implicit Incoming Mode setting for Remote APPC
+	LUs to either <None> or to a Mode name that the APPC/5250 applications are
+	not actually using.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in SNA Server version 3.0, 3.0 SP1,
+	3.0 SP2, and 4.0. This problem was corrected in the latest SNA Server versions
+	3.0 and 4.0 U.S. Service Packs. For information on obtaining these Service
+	Packs, query on the following word in the Microsoft Knowledge Base (without the
+	spaces):
+	
+	  S E R V P A C K
+	
+	Additional query words: hang black
+	
+	======================================================================
+	Keywords          :  kbbuglist
+	Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ400 kbSNAServ300SP1 kbSNAServ300SP2
+	Version           : WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
+	
+	=============================================================================
+	

@@ -1,0 +1,120 @@
+---
+layout: page
+title: "Q249633: Setting a Filter Allows no Real Time Scrolling in Listbox"
+permalink: kb/249/Q249633/
+---
+
+## Q249633: Setting a Filter Allows no Real Time Scrolling in Listbox
+
+	Article: Q249633
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:5.0,5.0a,6.0
+	Operating System(s): 
+	Keyword(s): kbContainer kbCtrl kbvfp500 kbvfp500a kbvfp600 kbGrpDSFox kbDSupport kbCodeSnippet
+	Last Modified: 05-JAN-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When using the scroll button of a combo or list box to scroll through data that
+	has a SET FILTER TO expression, the data in the combo or list box will not be
+	refreshed to show the new data until the mouse button is released. If there is
+	no SET FILTER used on the data the data moves as the scroll button moves and
+	immediately displays the new data.
+	
+	NOTE: Setting DELETED ON in Visual FoxPro 6.0 causes the same behavior to occur.
+	
+	STATUS
+	======
+	
+	This behavior is by design. When any type of filter is used there is no real
+	time scrolling of data in a combo or list box.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Copy the following code into a program (.prg) file and then run the program.
+	  This code uses the customer.dbf sample table that comes with Visual FoxPro.
+	  Make sure that a path is set to the table:
+	
+	     PUBLIC oform
+	          oform = CREATEOBJECT("frmFilterTest")
+	          oform.Show
+	      
+	          DEFINE CLASS frmFilterTest AS form
+	                Top = 0
+	                Left = 0
+	                Height = 255
+	                Width = 354
+	                DoCreate = .T.
+	                Caption = "frmFilterTest"
+	                Name = "frmFilterTest"
+	
+	                ADD OBJECT cboFilter AS combobox WITH ;
+	                          RowSourceType = 6, ;
+	                          RowSource = "customer.cust_id", ;
+	                          Height = 24, ;
+	                          Left = 24, ;
+	                          Top = 36, ;
+	                          Width = 100, ;
+	                          Name = "cboFilter"
+	
+	                ADD OBJECT lstCustomer AS listbox WITH ;
+	                          RowSourceType = 6, ;
+	                          RowSource = "customer.cust_id", ;
+	                          Height = 170, ;
+	                          Left = 180, ;
+	                          Top = 24, ;
+	                          Width = 100, ;
+	                          Name = "lstCustomer"
+	
+	                ADD OBJECT cmdFilter AS commandbutton WITH ;
+	                          Top = 156, ;
+	                          Left = 24, ;
+	                          Height = 27, ;
+	                          Width = 84, ;
+	                          Caption = "Filter On", ;
+	                          Name = "cmdFilter"
+	
+	                PROCEDURE Load
+	                          SET DELETED OFF
+	                          SET FILTER to maxordamt > 1000
+	
+	                PROCEDURE cmdFilter.Click
+	                          IF This.caption='Filter On'
+	                                  SET FILTER TO
+	                                  This.caption='Filter Off'
+	                          ELSE
+	                                  SET FILTER TO maxordamt > 1000
+	                                  This.caption='Filter On'
+	                          ENDIF
+	
+	2. Move the scroll button of the list or combo box and note that the data does
+	  not refresh until the mouse button is released.
+	
+	3. Select the Set Filter command button to turn the filter off and note that the
+	  data moves interactively when the scroll button is moved.
+	
+	4. Changing the SET DELETED OFF command to ON in the Load event of the code
+	  causes the same behavior to occur in both the combo and list boxes when you
+	  use Visual FoxPro 6.0.
+	
+	Additional query words: KBDSE
+	
+	======================================================================
+	Keywords          : kbContainer kbCtrl kbvfp500 kbvfp500a kbvfp600 kbGrpDSFox kbDSupport kbCodeSnippet 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+	Version           : WINDOWS:5.0,5.0a,6.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

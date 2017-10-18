@@ -1,0 +1,292 @@
+---
+layout: page
+title: "Q138569: INFO: Object-Oriented Programming Reference Books"
+permalink: kb/138/Q138569/
+---
+
+## Q138569: INFO: Object-Oriented Programming Reference Books
+
+	Article: Q138569
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:3.0,6.0
+	Operating System(s): 
+	Keyword(s): kb3rdparty kbvfp300 kbvfp600
+	Last Modified: 25-MAY-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article gives a more detailed description of some third party books. The
+	materials listed are provided as a reference to some of the subject matter that
+	is available on the subject of Object Oriented Programming.
+	
+	NOTE: Microsoft does not endorse or recommend any of these references; this
+	information is provided purely as a convenience for Microsoft customers.
+	
+	MORE INFORMATION
+	================
+	
+	Advanced C++ Programming - Styles and Idioms
+	by, James O. Coplien
+	(Addison-Wesley, ISBN 0-201-54855-0)
+	
+	  Assuming a background in the basic syntax of C++, this book imparts the
+	  proficiency that expert C++ programmers gain through experience by giving a
+	  feel for the styles and idioms of the language. It shows how different styles
+	  let C++ be used for simple data abstraction, full- fledged abstract data type
+	  implementation, and various styles of object- oriented programming. It also
+	  explores idioms that the core of the C++ language does not support, such as
+	  functional and frame-based programming, and advanced garbage collection
+	  techniques.
+	
+	Object-Oriented Technology: A Manager's Guide
+	by, David A. Taylor, Ph.D.
+	(Addison-Wesley, ISBN 0-201-56358-4)
+	
+	  This book is an introduction and guide to object-oriented technology for
+	  managers, sales people, engineers, software developers, and anyone interested
+	  in this technology. It explains object-oriented terminology and concepts.
+	  Explanations and creative illustrations make learning about objects
+	  enjoyable. You can become object-oriented literate in a couple of hours. The
+	  book translates the advantages of this technology into clear business
+	  benefits, allowing both managers and software developers to make informed
+	  decisions about the direction of their computing environment.
+	
+	Object-Oriented Systems Design: An Integrated Approach
+	by, Edward Yourdon
+	(Yourdon Press Computing Systems, ISBN 0-13-636325-3)
+	
+	  Object-orientation (OO) is an important technology, and has already made an
+	  important contribution to the software engineering field. However, there is
+	  still a great deal to learn about OO, and a number of technical problems to
+	  solve. But OO, like all other technologies, does not exist in a vacuum; it is
+	  used within a larger context of project management and organizational
+	  cultures.
+	
+	  The author is aware of the impact these managerial and cultural issues have on
+	  the success or failure of technologies such as OO, CASE technology, and
+	  structured methods. This perspective may help identify the intended audience
+	  of this book. It is not intended for the pure technician whose primary
+	  interest is rigorous theory and formal methods. Instead, it is aimed at the
+	  practitioner -- the systems developer or manager who has to make OO work in
+	  the real world -- a world filled with politics, demanding deadlines, and
+	  increasing pressure for rapid solutions to urgent problems.
+	
+	  Because this book is concerned with analysis and design issues more than
+	  programming issues in C++ or Smalltalk, it will be of interest primarily to
+	  systems analysts, designers, software architects, and project managers.
+	
+	Object-Oriented Analysis and Design with Applications, Second Edition
+	by, Grady Booch
+	(Benjamin/Cummings Publishing, ISBN 0-8053-5340-2)
+	
+	  The first edition of this book was instrumental in making object- oriented
+	  technology a practical reality. Hundreds of projects applied Booch's notation
+	  and process to complex problems in diverse domains. In this new edition,
+	  Grady Booch draws upon the rich and varied results of these projects to offer
+	  improved methods for object development and a new, unified notation. With
+	  numerous examples, all of which are now implemented in C++, Booch illustrates
+	  essential concepts, explains the method, and shows successful applications in
+	  a variety of fields. You'll also find pragmatic advice on a host of issues,
+	  including classification, implementation strategies, and cost-effective
+	  project management.
+	
+	  This new edition uses C++ in all programming examples and applications and
+	  gives new examples of real-world projects, including a client/server
+	  architecture and an application framework.
+	
+	  The book also distinguishes between good and bad object-oriented analysis and
+	  design and shows how to evaluate architectural tradeoffs to manage
+	  complexity. This is a reference for anyone who implements or manages object
+	  technologies, or who wishes to begin exploration of this important new
+	  paradigm.
+	
+	Object-Oriented Software Engineering: A Use Case Driven Approach
+	by, Ivar Jacobson
+	(Addison-Wesley, ISBN 0-201-54435-0)
+	
+	  This book is based on Objectory, which is the first commercially- available
+	  comprehensive object-oriented process for developing large- scale industrial
+	  systems. Ivar Jacobson developed Objectory as a result of 20 years of
+	  experience building real software-based products. This approach takes a
+	  global view of systems development and focuses on minimizing the system's
+	  life cycle cost. Objectory is an extensible industrial process that provides
+	  a method for building large industrial systems.
+	
+	Practical Applications of Object-Oriented Techniques to Relational Databases
+	by, Donald K. Burleson
+	(Wiley, ISBN 0-471-61225-1)
+	
+	  This book shows systems professionals how to apply object-oriented techniques
+	  to relational databases. This very practical guide provides a wealth of
+	  proven programming strategies and constructs that enable legacy databases to
+	  function within the scope of an object-technology application.
+	
+	  The book includes dozens of real-life examples and shows how to apply object
+	  techniques to relational databases, including dBASE, DB2, ORACLE, and IDMS.
+	
+	  This work is part of the Object Management Group Series on Object Technology
+	  and is a clearly written, nuts-and-bolts guide to object- oriented databases
+	  and techniques with relational databases that administrators, analysts, and
+	  database designers will find useful.
+	
+	Object-Orientation: Concepts, Languages, Databases, User Interfaces
+	by, Setrag Khoshafian and Razmik Abnous
+	(Wiley, ISBN 0-471-51801-8)
+	
+	  A comprehensive guide to the main concepts of today's most popular
+	  object-oriented systems. Designed to clarify the basic concepts associated
+	  with object-orientation, this book provides the information you need to
+	  improve your programming style, regardless of whether or not you use an
+	  object-oriented programming language.
+	
+	  It reveals the underlying commonalties of such object-oriented systems as
+	  programming environments, user interfaces, and database applications. Some of
+	  the other topics include:
+	
+	- Object-oriented system and language design paradigms, including abstract data
+	  types, inheritance, and object identity.
+	
+	- Implementation of object-oriented applications using practical, real-world
+	  examples in C++ and Ada.
+	
+	- Manifestation of object-oriented concepts in user interface design, including
+	  windowing systems and tool kits.
+	
+	- Discussion of the emerging field of object-oriented databases, with
+	  particular emphasis on how object-oriented concepts and database capabilities
+	  are integrated in these next generation database management systems. Suitable
+	  for software developers, software engineers, data processing professionals,
+	  programmers, and students.
+	
+	Object-Oriented Information Systems: Planning and Implementation
+	by, David A. Taylor, Ph.D.
+	(Wiley, ISBN 0-471-54364-0)
+	
+	  This book is aimed at the general manager who realizes that the use and
+	  control of total information is the key to their company's competitive
+	  advantage. Written in a clear, easy-to-understand manner, this guide cuts
+	  through the usual technojargon, enabling managers to make informed decisions
+	  for successful system installation and development. Discussions on how to
+	  purchase, build, and maintain flexible, powerful, and competitive
+	  object-oriented technologies. Includes a helpful fast- track feature that
+	  summarizes the contents of every page in the outer margins.
+	
+	Object Technology in Application Development
+	by, Daniel Tkach and Richard Puttick
+	(Benjamin/Cummings Publishing, ISBN 0-8053-2572-7)
+	
+	  This comprehensive guide, developed at IBM's International Technical Support
+	  Center in San Jose, CA, is a ideal for managers and developers looking to
+	  apply object-oriented methods in large-scale information technology
+	  environments. Demonstrating the ups, downs, and trade-offs of object-oriented
+	  methodologies, the authors provide information that will help managers make
+	  choices about the resources and technologies available for application
+	  development.
+	
+	  The book discusses the impact of object technology on management decisions
+	  with examples from real, full-scale environments in which productivity has
+	  increased from the use of this technology. This work covers the following:
+	
+	- Provides a solid explanation of the principles of object-oriented technology.
+	
+	- Describes and compares the methodologies in use in object-oriented
+	  development environments.
+	
+	- Analyzes the role of CASE tools in object-oriented development.
+	
+	- Presents the issues involved in building a user interface.
+	
+	- Includes a full chapter on the process of team building in object-oriented
+	  applications.
+	
+	- Details the use of a configuration management tool.
+	
+	- Explains how legacy code can be reused in object-oriented environments.
+	
+	Object Data Management: Object-Oriented and Extended Relational Database Systems
+	by, R.G.G. Cattell
+	(Addison-Wesley, ISBN 0-201-53092-9)
+	
+	  This book is the first comprehensive introduction to the latest and most
+	  promising database technologies -- database systems that manipulate objects.
+	  Principal examples include object-oriented and extended relational database
+	  systems. The author, who has been active in both the development and the
+	  evaluation of such technologies, examines the nature and benefits of the new
+	  systems, compares them with conventional systems, and shows the range of
+	  applications they now make possible.
+	
+	  Object data management is particularly useful where a large quantity of
+	  complex data needs to be managed, as in science and engineering,
+	  computer-aided design and manufacturing (CAD/CAM), computer-aided software
+	  engineering (CASE), office automation, and new approaches to traditional
+	  business problems. Readers will find the book valuable not just for learning
+	  about these technologies and their applications, but for evaluation the
+	  various claims being made for them.
+	
+	  The author's aim is to provide a broad look at newly available database
+	  systems and an objective foundation on which decisions about them can be
+	  based. Any database system user interested in the latest technologies,
+	  particularly users with large amounts of complex data to manage, will find
+	  this book an invaluable resource. Students, designers, and implementers of
+	  such systems will also find it packed with useful information for their
+	  needs.
+	
+	Code Complete
+	by, Steve McConnell
+	(Microsoft Press, ISBN 1-55615-484-4)
+	
+	  Whatever your background -- experienced developer, self-taught programmer, or
+	  programming student -- this ingeniously organized handbook contains
+	  state-of-the-art information that can help you write better programs in less
+	  time with fewer headaches. Code Complete is not a panacea, but it is an
+	  encyclopedic treatment of software construction, a critical part of the
+	  software-development cycle.
+	
+	  It contains some 500 examples of code (good and bad) and includes ready-to-use
+	  checklists to help you assess your architecture, design approach, and module
+	  and routine quality. It also provides a larger perspective on the software
+	  development process and the role of construction in the process that will
+	  inform and stimulate your thinking about your own projects, enabling you to
+	  take strategic action rather than fight the same battles again and again.
+	
+	  The concepts are applicable to any procedural language in any computing
+	  environment. Although Code Complete does not focus on object-oriented
+	  development, it does relate since logical instructions are also required in
+	  object-oriented development.
+	
+	Object Magazine
+	(Sigs Publications)
+	
+	  This monthly technical magazine focuses on object-oriented technology in all
+	  aspects from management, software development processes, analysis, design,
+	  implementation, methodology, and future trends. Many of the authors of the
+	  OOP books above are monthly contributors.
+	
+	Simple C++
+	by, Jeffrey M. Cogswell
+	(Waite Group Press, ISBN 1-878739-44-1)
+	
+	  A quick, fun introduction to the basics of object-oriented programming. The
+	  first portion of each chapter covers general OOP concepts, such as
+	  encapsulation, inheritance, attributes and methods. The second half of each
+	  chapter uses actual C++ programs to illustrate points. This book will ease
+	  your first steps into OOP, and the C++ specifics will translate fairly well
+	  to other languages.
+	
+	Additional query words: VFoxWin language
+	
+	======================================================================
+	Keywords          : kb3rdparty kbvfp300 kbvfp600 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP600
+	Version           : WINDOWS:3.0,6.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

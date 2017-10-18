@@ -1,0 +1,168 @@
+---
+layout: page
+title: "Q179072: XFOR: Exchange cc:Mail Connector Causes NFT Error on Clandata"
+permalink: kb/179/Q179072/
+---
+
+## Q179072: XFOR: Exchange cc:Mail Connector Causes NFT Error on Clandata
+
+	Article: Q179072
+	Product(s): Microsoft Exchange
+	Version(s): WinNT:5.0,5.5
+	Operating System(s): 
+	Keyword(s): kbusage
+	Last Modified: 22-MAR-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 5.0, 5.5 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	The Microsoft Exchange Connector for Lotus cc:Mail may stop. The cc:Mail
+	executable Import.exe produces the log file NFTerror.log in the cc:Mail post
+	office directory. The Windows NT Application log may include multiple
+	occurrences of the following events:
+	
+	  Event ID: 59
+	  Lotus cc:Mail IMPORT from file *.ccm returned result code 1.  Program
+	  did not complete successfully.
+	
+	  Event ID: 62
+	  MSExchangeCCMC
+	  Lotus cc:Mail IMPORT from file %1 returned result code 4. The Lotus
+	  cc:Mail post office is locked by another process.  %2
+	
+	  Event ID: 71
+	  MSExchangeCCMC
+	  Lotus cc:Mail EXPORT to file %1 returned result code 4. The Lotus
+	  cc:Mail Post Office is locked by another process  %2
+	
+	  Event ID: 59
+	  Lotus cc:Mail IMPORT from file *.ccm returned result code 1. Program did
+	  not complete successfully.
+	
+	  Event ID: 68
+	  Lotus cc:Mail EXPORT to file msg4987.ccm returned result code 1. Could
+	  not access the Lotus cc:Mail Post Office.
+	
+	CAUSE
+	=====
+	
+	Microsoft Exchange Connector for Lotus cc:Mail is designed to redirect the
+	Import/Export console messages to temporary files located in the
+	Exchsrvr\Ccmcdata directory. However, the file handles used to control these
+	temporary files may not be generated correctly. When a file handle for a
+	temporary file incorrectly matches a file handle used for a message content, the
+	Microsoft Exchange Connector for Lotus cc:Mail writes the screen output to the
+	header of that message. This writing causes Clandata corruption.
+	
+	WORKAROUND
+	==========
+	
+	If the post office is a hub post office (without any users), then perform the
+	following steps to restore message flow quickly:
+	
+	1. Restore the post office from a current backup, before the corruption.
+	
+	2. If there is no reliable backup, then install a new post office. Be careful to
+	  match the naming and routing configuration of the production post office.
+	
+	If the post office has users, then follow these steps:
+	
+	1. Inform the users that there may be a long period of message outage.
+	
+	2. Install a new post office and reconfigure the routing.
+	
+	3. Move each user from the corrupt post office to the new post office.
+	
+	4. After the new post office is ready, review the cc:Mail temporary directories
+	  for any corrupt messages.
+	
+	5. Move the corrupt post office outside its original directory.
+	
+	6. Move the new post office to the location of the production post office.
+	
+	7. Restart the Microsoft Exchange Connector for Lotus cc:Mail.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+	version 5.0. This problem has been corrected in the latest U.S. Service Pack for
+	Microsoft Exchange Server version 5.0. For information on obtaining the Service
+	Pack, query on the following word in the Microsoft Knowledge Base (without the
+	spaces):
+	
+	  S E R V P A C K
+	
+	Microsoft has confirmed this to be a problem in Microsoft Exchange Server version
+	5.5. This problem has been corrected in the latest U.S. Service Pack for
+	Microsoft Exchange Server version 5.5. For information on obtaining the Service
+	Pack, query on the following word in the Microsoft Knowledge Base (without the
+	spaces):
+	
+	  S E R V P A C K
+	
+	
+	MORE INFORMATION
+	================
+	
+	When Microsoft Exchange Connector for Lotus cc:Mail is used with DB6 (version
+	6.x), it is possible for it to mis-write the .Tmp and .Ccm files that are
+	written for the import process. When Import uses the mis-written .Ccm file, it
+	corrupts the post office index (Clandata). The next time Import or Export is
+	cycled, it generates an NFT error in the Nfterror.log file. The corruption
+	occurs only when the Microsoft Exchange Connector for Lotus cc:Mail spawns
+	Import or Export that in turn spawns the temporary file in the
+	Exchsrvr\Ccmcdata\ directory.
+	
+	The problem with allocating these temporary files is two-fold:
+	
+	1. The Microsoft Exchange Connector for Lotus cc:Mail may fail to generate a
+	  valid file handle for the temporary file (resulting in a zero byte temporary
+	  file).
+	
+	2. The Microsoft Exchange Connector for Lotus cc:Mail may corrupt the Clandata
+	  file by creating a valid file handle for the temporary file that actually
+	  matches the file handle for Import.exe's temporary file used for the actual
+	  message (Exchsrvr\ccmcdata\import\*.tmp). When a new process uses the handles
+	  that are duplicated in the process, the handles won't be unique, so at random
+	  the redirected console messages are written to the cc:Mail post office files.
+	
+	When this problem occurs, you will also see plain text information similar to the
+	following in the corrupted file by using debug or VC++. You should not see any
+	plain text information in the non-corrupted cc:Mail post office files.
+	
+	  0AFA:3F00  0D 0A 0D 0A 45 78 70 6F-72 74 69 6E 67 20 6D 65
+	  ....Exporting
+	  me
+	  0AFA:3F10  73 73 61 67 65 73 20 69-6E 20 6D 61 69 6C 62 6F   ssages in
+	  mailbo
+	  0AFA:3F20  78 20 22 72 61 6E 64 79-79 65 68 5F 65 65 22 20   x
+	  "randyyeh_ee"
+	  0AFA:3F30  74 6F 20 66 69 6C 65 20-45 58 50 4F 52 54 5C 4D   to file
+	  EXPORT\M
+	  0AFA:3F40  53 47 34 41 32 37 2E 43-43 4D 0D 0A 41 FA 2B 16
+	  SG4A27.CCM..A.+.
+	  0AFA:3F50  58 64 44 6A 63 28 E9 7E-ED 83 D5 D0 54 7B DE 25
+	  XdDjc(.~....T{.%
+	  0AFA:3F60  89 94 34 11 33 CD E2 0C-82 8B 57 5E 34 D1 39 2A
+	  ..4.3.....W^4.9*
+	  0AFA:3F70  AF 38 B2 20 11 8E 85 4F-A6 77 7D 5A C9 F9 3C AB   .8.
+	  ...O.w}Z..<.
+	
+	Additional query words: ccmc po corruption nft
+	======================================================================
+	Keywords          : kbusage 
+	Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+	Version           : WinNT:5.0,5.5
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

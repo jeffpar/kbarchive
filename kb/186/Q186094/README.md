@@ -1,0 +1,129 @@
+---
+layout: page
+title: "Q186094: HOWTO: Change the Data Series in MSGraph Using the PlotBy Prop"
+permalink: kb/186/Q186094/
+---
+
+## Q186094: HOWTO: Change the Data Series in MSGraph Using the PlotBy Prop
+
+	Article: Q186094
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:5.0,5.0a
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 10-AUG-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	When displaying a MSGraph chart using OLE automation, the Data Series defaults
+	to "Series in Rows" in Visual FoxPro. If the graph needs to display the Data
+	Series as "Series in Columns", MSGraph version 8.0 allows changes to be made
+	programmatically using the PlotBy property. In MSGraph 5.0, you may change to
+	"Series in Columns" manually by double-clicking the graph object and selecting
+	the "DATA - SERIES IN COLUMNS" menu items.
+	
+	MORE INFORMATION
+	================
+	
+	The following code creates a table with a general field and adds a graph. The
+	code creates a form that displays the graph object. Pressing the command button
+	toggles the Data Series between Rows and Columns.
+	
+	     ************** Beginning of Code ******************
+	     * Create a table with a general field and add
+	     * a graph.
+	     IF ! FILE("mygraph.dbf")
+	              CREATE TABLE mygraph (graph_fld G)
+	              graph_var = " " + chr(9) + "MyData" + chr(13) + chr(10) ;
+	                 + "Data1" + chr(9) + "5" + chr(13) + chr(10) + "Data2" ;
+	                 + chr(9) + "10" + chr(13) + chr(10)
+	              APPEND BLANK
+	              APPEND GENERAL graph_fld CLASS "MsGraph.Chart" DATA graph_var
+	     ELSE
+	              IF ! USED("mygraph")
+	                     USE mygraph IN 0
+	              ENDIF
+	     ENDIF
+	
+	     PUBLIC oForm
+	     oForm = CREATEOBJECT("form")
+	     oForm.ADDOBJECT("Ole1","OleBoundControl")
+	     oForm.ADDOBJECT("Command1","MyCommand")
+	     oForm.Ole1.ControlSource = "mygraph.graph_fld"
+	     oForm.height=400
+	     oForm.width=600
+	     oForm.Caption = "MyGraph"
+	     oForm.Ole1.Height = 300
+	     oForm.Ole1.Width  = 500
+	     oForm.Ole1.HasTitle = .T.
+	     oForm.Ole1.ChartTitle.Caption = "Chart that Plots by Row or Column."
+	     oForm.Ole1.ChartTitle.Font.Name = "Arial"
+	     oForm.Ole1.ChartTitle.Font.Size = 12
+	     oForm.Ole1.ChartTitle.Font.Bold = .T.
+	     oForm.Ole1.Type = 3
+	     oForm.Visible=.t.
+	     oForm.Ole1.Visible=.t.
+	     oForm.Command1.Visible=.t.
+	     * The PlotBy property allows the switching of Rows and Columns.
+	     oForm.Ole1.Object.Application.PlotBy=1
+	
+	     DEFINE CLASS MyCommand AS COMMANDBUTTON
+	              Caption = 'Plot by Column'
+	              Visible = .T.
+	              Left = 450
+	              Top = 350
+	              Height = 30
+	              Width = 100
+	
+	              PROCEDURE Click
+	
+	              * Check what PlotBy is set to and change it.
+	              IF oForm.Ole1.Object.Application.PlotBy = 1
+	                     oForm.Ole1.Object.Application.PlotBy = 2
+	                     oForm.Command1.Caption = 'Plot by Row'
+	              ELSE
+	                     oForm.Ole1.Object.Application.PlotBy = 1
+	                     oForm.Command1.Caption = 'Plot by Column'
+	              ENDIF
+	              Thisform.Refresh
+	
+	     ENDDEFINE
+	     ************** End of Code ******************
+	
+	Click the command button to toggle between "Series in Rows" and "Series in
+	Columns".
+	
+	If an OLE exception code error occurs stating that the Application does not have
+	the PlotBy property, then the computer needs upgrading to version 8.0 of
+	MSGraph, also known as Microsoft Graph 97.
+	
+	Running the code in Microsoft FoxPro version 3.0 or 3.0b fails on the If
+	statement line with the following error:
+	
+	  OLE error code 0x8002006: Unknown name.
+	
+	REFERENCES
+	==========
+	
+	For more information on Data Series Display Changes using Visual FoxPro versions
+	3.0 or 3.0b, please see the following article in the Microsoft Knowledge Base:
+	
+	  Q157225 SAMPLE: Msgrp5cg.exe Graph Wizard Data Series Display Changes
+	
+	Additional query words: kbDSupport kbDSE FxinteropOle
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP500a
+	Version           : WINDOWS:5.0,5.0a
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

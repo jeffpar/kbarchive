@@ -1,0 +1,166 @@
+---
+layout: page
+title: "Q236616: XCLN: The IExpress Deployment Kit ReadMe Text"
+permalink: kb/236/Q236616/
+---
+
+## Q236616: XCLN: The IExpress Deployment Kit ReadMe Text
+
+	Article: Q236616
+	Product(s): Microsoft Exchange
+	Version(s): WINDOWS:5.0,97,98
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 29-OCT-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Windows 95/98 client, version 5.0 
+	- Microsoft Outlook 97 
+	- Microsoft Outlook 98 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	What is the IExpress Deployment Kit?
+	----------------------------------------
+	
+	The IExpress Deployment Kit (IDK) is a series of articles and utilities to
+	generate user-specific profiles as well as rollout hotfixes or patches by
+	bundling all files together into one custom package. This custom package
+	can be run as a stand-alone executable, or added to a login script, etc.
+	
+	Why use the IDK?
+	----------------
+	
+	Administrators deploying Outlook need to dynamically generate profiles and
+	update Outlook with the various patches and hotfixes available. By using
+	the articles and tools included, administrators can accomplish both of
+	these tasks during installation in one step.
+	
+	How does the IDK work?
+	----------------------
+	
+	Administrators accomplish multiple tasks in one step by bundling program
+	files into one self-extracting executable. The Windows INF technology is
+	then used to execute the program or patches along with any command-line
+	switches. This way applications can run in quiet mode or particular options 
+	can be specified. A sample .inf is supplied with the IDK. This gives
+	administrators more control over deployment; they are not tied to using
+	utilities running in the background where environment parameters can't be
+	easily changed. 
+	
+	Can I only generate profiles?
+	-----------------------------
+	
+	No. With this method you can apply QFE hotfixes, patches available with a
+	Service Pack, patches downloaded from the Web, replace .dll files, or
+	install full applications.
+	
+	What is the Profile Designer?
+	------------------------------
+	Profile Designer is a graphical utility to help in the generation of the
+	custom package needed for a user specific profile. The utility can generate
+	a custom .prf file with specific services and Outlook settings. It can
+	generate an .inf file to be used as a building block for building a custom
+	package. It can create the whole self-extracting archive with the click of
+	a button. This will eliminate the need to completely understand .inf and 
+	.prf files if all you wish to do is make a custom profile package.
+	
+	What's new in this version of Profile Designer v2.5?
+	----------------------------------------------------
+	
+	- Profile Designer can now set the number of months and the
+	frequency to publish free/busy information.
+	
+	- Includes Profgen 3.0. This allows the variable $USERNAME$ to be
+	used throughout the PRF file. Anywhere this variable appears it
+	will be replaced with the currently logged in user name. This can
+	be used for the mailbox name, as well as for file location for 
+	Personal Folders, Personal Address Books, AutoArchive Folders and 
+	Offline Folders.
+	
+	- Interface changes which makes it easier to select the services 
+	and options to be included in the profile.
+	
+	Does it only work with Outlook and the ODK?
+	-------------------------------------------
+	
+	No. The IDK can be used to generate a self-extracting stand-alone
+	executable, which can accomplish the above tasks for almost any
+	application.
+	
+	Your update could then be emailed to users, deployed through Systems
+	Management Server, used in logon scripts, and so on.
+	
+	What is included with the IDK?
+	------------------------------
+	
+	The IExpress Deployment Kit contains all the files and Knowledge Base
+	articles necessary to guide you through:
+	
+	Steps for the creation of an IExpress package:
+	
+	  Q191900 XCLN: How to Use IExpress to Deploy Multiple Packages with ODK
+	
+	  Navigating The IExpress Configuration Wizard.doc
+	
+	Steps and a sample .inf file to cleanly generate profiles with user
+	specific settings:
+	
+	Steps and filenames for applying the patches available for Outlook:
+	
+	  Q191899 XCLN: How to Deploy Exchange 5.5 SP1 KMS Client Fixes with ODK
+	
+	  Odk.inf file
+	
+	Instructions for adding your package to the ODK for easy deployment:
+	
+	  Q190053 XCLN: Adding Custom Applications to Active Setup with the ODK
+	
+	A fix for the "Out of Memory or System Resources" error when creating new
+	journal items that can sometimes happen after installing Outlook with the
+	ODK:
+	
+	  Q190495 OL98: ErrMsg: Out of Memory or System Resources
+	
+	Profile Designer (Designer.exe):
+	
+	  Profile Designer is a graphical utility to help in the generation of the
+	  custom package needed for a user specific profile.
+	
+	MORE INFORMATION
+	================
+	
+	For additional help please see the following articles and documents
+	included in this archive:
+	
+	Q191899    How to Deploy Exchange 5.5 SP1 KMS Client Fixes with ODK.txt    
+	
+	Q191900    How to Use IExpress to Deploy Multiple Packages with ODK.txt
+	
+	Q193114    How To Generate A User-Specific Profile with IExpress and
+	          ODK.txt
+	
+	Q190053    Adding Custom Applications to Active Setup with the ODK 
+	
+	  Navigating The IExpress Configuration Wizard.doc
+	
+	This utility is available at the following locations:
+	
+	  http://support.microsoft.com/download/support/mslfiles/ 
+	
+	  ftp://ftp.microsoft.com/softlib/mslfiles/ 
+	
+	Additional query words: idk odkidk profgen newprof multiple inf odk deploy prfadmin odkidk98 odkidk98.exe admin login iexpress idk99 profile ciw move server wizard Q195152
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbOutlookSearch kbExchangeSearch kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbOutlook97Search kbOutlook98Search kbZNotKeyword3 kbExchange500Win95
+	Version           : WINDOWS:5.0,97,98
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

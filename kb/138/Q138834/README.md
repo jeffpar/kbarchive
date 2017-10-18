@@ -1,0 +1,127 @@
+---
+layout: page
+title: "Q138834: Improvements for EIS/3270 and APPC Resource Location"
+permalink: kb/138/Q138834/
+---
+
+## Q138834: Improvements for EIS/3270 and APPC Resource Location
+
+	Article: Q138834
+	Product(s): Microsoft SNA Server
+	Version(s): WINDOWS:2.11
+	Operating System(s): 
+	Keyword(s): kbnetwork kbprogramming
+	Last Modified: 13-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, version 2.11, on platform(s):
+	   - the operating system: Microsoft Windows NT 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	This article describes how the SNA Server client server interface locates an
+	available LU for both APPC and EIS/3270 applications, both with and without
+	Service Pack 1 installed.
+	
+	Microsoft has updated the following files. Service Pack 1 is planned to be
+	released in December 1995. To obtain these files before Service Pack 1 is
+	released, contact Microsoft Product Support Services. Service Pack 1 includes
+	the following modified files:
+	
+	  Operating System     Modified Files
+	  ---------------------------------------------------------------
+	  Windows NT           SNABASE.EXE, SNACFG.DLL, SNADMOD.DLL, WAPPC32.DLL
+	  Windows 95           SNADMOD.DLL, WAPPC32.DLL
+	  Windows 3.x          WDMOD.DLL, WINAPPC.DLL
+	
+	STATUS
+	======
+	
+	This feature is included in the latest U.S. Service Pack for SNA Server for
+	Windows NT, version 2.11. For information on obtaining the Service Pack, query
+	on the following word in the Microsoft Knowledge Base (without the spaces):
+	
+	  S E R V P A C K
+	
+	MORE INFORMATION
+	================
+	
+	EIS/3270, Without Service Pack 1 Installed
+	------------------------------------------
+	
+	Over the sponsor connection, the EIS/3270 application makes a sepdcrec() call to
+	acquire a list of the LUs/pools that are assigned to the client's user record.
+	On a connect request to open a session, the application issues an OPEN SSCP
+	request on the chosen LU/Pool name. The underlying DMOD (part of the client
+	server interface) attempts to locate the server that can house this available LU
+	by connecting to each server in the client's local service table one by one
+	until the specified LU/Pool is satisfied. It must do this because the local
+	service table does not contain any LU/Pool information; it contains only server
+	names.
+	
+	APPC, Without Service Pack 1 Installed
+	--------------------------------------
+	
+	During the TP_START request and ALLOCATE verb processing that a TP does to get a
+	conversation, the underlying DMOD (part of the client server interface) attempts
+	to locate the server that houses this available LU by connecting to each server
+	in the client's local service table one by one until the specified LU-LU pair is
+	satisfied. It must do this because the local service table does not contain any
+	APPC LU information; it contains only server names.
+	
+	EIS/3270, With Service Pack 1 Installed
+	---------------------------------------
+	
+	The client still makes the normal sepdcrec() call to acquire a list of the
+	LUs/pools that are assigned to the client's user record. As part of the OPEN
+	SSCP message processing, the SNA Server client software sends a new RPC request
+	(RPC_LU_SERVER_LIST) to the SNA Server that is supporting the client computer's
+	sponsor connection. The requested LU name from the OPEN SSCP is part of the RPC
+	request. The sponsor server returns a list of the servers who can possibly
+	support the requested LU. If the LU is a dedicated LU, the list has only one
+	server name. If it is a POOL the list may have up to 50 server names. After this
+	RPC response, the resource locating continues normally except that the client
+	tries (in random order) only the servers whose names are in the LUs server list.
+	In general, the client tries only the servers that can actually support the LU
+	resource.
+	
+	APPC, With Service Pack 1 Installed
+	-----------------------------------
+	
+	The RPC request is sent as part of the TP_START request and ALLOCATE verb
+	processing. In both cases, the server returns the list of servers where the
+	local or remote LU Alias is configured. The rest is similar to 3270 resource
+	location.
+	
+	In both the EIS/3270 and the APPC, the RPC request is sent only once per LU. The
+	SNA Server client interface cashes the LU/Server information internally. In
+	Windows NT and Windows 95, the cache is flushed when the application exits. In
+	Windows 3.x, the cache is flushed when the client server piece (Wnap.exe)
+	terminates.
+	
+	NOTE: If the sponsor server is not running SNA Server 2.11 with Service Pack 1
+	installed, the client DMOD sends only one RPC request. After it gets the "not
+	supported" error it does not try again.
+	
+	If the RPC request fails for any reason, for example if the sponsor does not
+	support the new RPC request, the DMOD uses the old resource locating algorithm.
+	
+	No changes are required to existing emulators, including the 3270 application
+	that ships with SNA Server.
+	
+	Additional query words: prodsna
+	
+	======================================================================
+	Keywords          : kbnetwork kbprogramming 
+	Technology        : kbAudDeveloper kbSNAServSearch
+	Version           : WINDOWS:2.11
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

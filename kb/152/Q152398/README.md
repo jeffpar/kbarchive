@@ -1,0 +1,68 @@
+---
+layout: page
+title: "Q152398: Login.exe Now Sets Primary Server After Successful Login"
+permalink: kb/152/Q152398/
+---
+
+## Q152398: Login.exe Now Sets Primary Server After Successful Login
+
+	Article: Q152398
+	Product(s): Microsoft Windows NT
+	Version(s): winnt:3.51
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 17-MAR-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft File and Print Services for NetWare version 3.51 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	When using Microsoft Login.exe some applications may prompt the user to log on
+	to the network even though the user is currently logged on.
+	
+	CAUSE
+	=====
+	
+	Microsoft Login.exe neglects to set the shell's primary server after a
+	successful login. Setting the primary server is the responsibility of the login
+	program. It should be set to the login server's connection ID (value of 1-8
+	representing the login server's row number in the shell's connection table). The
+	Logout.exe program resets this field back to zero (indicating not logged on).
+	Many applications call the SetPrimaryServer API to differentiate the true login
+	server from other attached servers. Also, some applications assume that if this
+	value is zero (that is, not set), the client computer is not logged in. An
+	example of a program which has difficulties with this situation is McAfee's
+	NetTOOLs.
+	
+	RESOLUTION
+	==========
+	
+	Obtain the fix referenced below.LOGIN.EXE has been modified to now set the
+	shell's primary server after a successful login.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in File and Print Services for
+	NetWare version 3.51. This problem was corrected in the latest Windows NT 3.51
+	U.S. Service Pack. For information on obtaining the Service Pack, query on the
+	following word in the Microsoft Knowledge Base (without the spaces):
+	
+	  S E R V P A C K
+	
+	
+	Additional query words: prodnt 3.51 netware
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbServicesNetwareSearch kbFPNW351
+	Version           : winnt:3.51
+	
+	=============================================================================
+	

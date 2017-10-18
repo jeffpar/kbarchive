@@ -1,0 +1,140 @@
+---
+layout: page
+title: "Q96086: HP DeskJet Printer Driver Support in Windows 3.1"
+permalink: kb/096/Q96086/
+---
+
+## Q96086: HP DeskJet Printer Driver Support in Windows 3.1
+
+	Article: Q96086
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:3.1,3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 26-SEP-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows versions 3.1, 3.11 
+	- Microsoft Windows for Workgroups version 3.1 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	There are three printer drivers that support the Hewlett-Packard (HP) DeskJet
+	family of printers in Microsoft Windows and Windows for Workgroups. The HP
+	DeskJet family of printers includes the HP DeskJet, DeskJet Plus, DeskJet 500,
+	DeskJet 500C, DeskJet 510, DeskJet 520, DeskJet 540, DeskJet 550C, and DeskJet
+	560C.
+	
+	MORE INFORMATION
+	================
+	
+	The Microsoft HP DeskJet series universal printer driver (HPDSKJET.DRV) supports
+	the HP DeskJet (original), DeskJet Plus, DeskJet 500, and DeskJet 500C. This
+	printer driver supports the following features:
+	
+	- Monochrome printing (text and graphics).
+	
+	- TrueType scaleable typeface font support.
+	
+	- Internal HP printer fonts, soft fonts, and plug-in cartridge fonts (except
+	  printer emulation cartridges, landscape font support for cartridges 22707K
+	  and 22707L, and internal landscape font support).
+	
+	The HP DeskJet series version 3.11 printer driver (DESKJET.DRV) available from HP
+	supports the HP DeskJet (original), DeskJet Plus, DeskJet 500, and DeskJet 500C.
+	This printer driver supports the following features:
+	
+	- Color printing on the HP DeskJet 500C.
+	
+	- Intellifont typeface.
+	
+	- Landscape fonts with cartridge 22707K or 22707L.
+	
+	- Internal landscape fonts.
+	
+	The HP DeskJet series version 5.x printer driver (DESKJETC.DRV) available from HP
+	supports the HP DeskJet 500, DeskJet 500C, DeskJet 510, DeskJet 520, DeskJet
+	540, DeskJet 550C, and DeskJet 560C. This printer driver supports the following
+	features:
+	
+	- Color printing on the HP DeskJet 500C, 550C, and 560C.
+	
+	- No Intellifont support.
+	
+	- No internal font support.
+	
+	- Landscape-orientation envelope support for the HP DeskJet 510, 520, 550C, and
+	  560C.
+	
+	- ColorSmart technology.
+	
+	- 600 x 300 capability for enhanced print quality in black text printing on the
+	  HP DeskJet 520 and 560C.
+	
+	You can install both the Microsoft HP DeskJet universal printer driver and the HP
+	DeskJet series version 5.x printer driver in Windows at the same time, but one
+	of the printer drivers can be active. You can switch between the printer drivers
+	as needed in Control Panel and in some applications.
+	
+	You cannot install both the HP DeskJet series version 3.11 and version 5.x
+	printer drivers in Windows. If you install a version 5.x printer driver over an
+	existing version 3.11 (or older) printer driver, the version 3.11 (or older)
+	printer driver files will be overwritten and the version 5.x printer driver will
+	become the active driver.
+	
+	To determine which printer driver and version you are using, follow these steps.
+	
+	HP DeskJet 500 Series Version 4.x Drivers
+	-----------------------------------------
+	
+	1. In Program Manager, double-click the Control Panel icon.
+	
+	2. Double-click the Printers icon.
+	
+	3. In the Installed Printers box, select the installed HP printer.
+	
+	4. Choose the Setup button.
+	
+	5. Open the drop-down menu in the upper-left corner.
+	
+	6. Choose the About button.
+	
+	HP DeskJet Series Version 3.10/3.11/5.00 Drivers
+	------------------------------------------------
+	
+	1. In Program Manager, double-click the Control Panel icon.
+	
+	2. Double-click the Printers icon.
+	
+	3. In the Installed Printers box, select the installed HP DeskJet printer.
+	
+	4. Choose the Setup button. Version number 3.10 or 3.11 appears in the
+	  lower-right corner of the Printer Setup dialog box. Version number 5.00
+	  appears in the dialog box's heading.
+	
+	Microsoft HP DeskJet Universal Printer Driver
+	---------------------------------------------
+	
+	1. In Control Panel, double-click the Control Panel icon.
+	
+	2. Double-click the Printers icon.
+	
+	3. In the Installed Printers box, select the installed HP DeskJet printer.
+	
+	4. Choose the Setup button.
+	
+	5. Choose the About button.
+	
+	Additional query words: true type TT ttf desk jet 3.11 grayscale 3.10 greyscale scale gray grey hpdj 500 520 550 DJ 560 c 540 510
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin310 kbWin311 kbWFW310
+	Version           : WINDOWS:3.1,3.11
+	
+	=============================================================================
+	

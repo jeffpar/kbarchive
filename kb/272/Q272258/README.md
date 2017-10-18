@@ -1,0 +1,212 @@
+---
+layout: page
+title: "Q272258: Programs Included with the Fun Pocket PC Expansion Pack"
+permalink: kb/272/Q272258/
+---
+
+## Q272258: Programs Included with the Fun Pocket PC Expansion Pack
+
+	Article: Q272258
+	Product(s): Microsoft Home Games
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbhw kbimu kbHardware
+	Last Modified: 25-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Fun Pocket PC Expansion Pack 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes the programs and content that are included with Microsoft
+	Fun Pocket PC Expansion Pack.
+	
+	For more information about Fun Pocket PC Expansion Pack, visit the following
+	Microsoft Web site:
+	
+	  http://www.microsoft.com/pocketpc/funpack2.asp
+	
+	MORE INFORMATION
+	================
+	
+	The Fun Pocket PC Expansion Pack contains the following programs and content:
+	
+	Pac-Man:
+	
+	The classic arcade game.
+	
+	Primer pdf Viewer from Ansyr Technologies:
+	
+	Primer is the first product to provide PDF viewing capability on the Pocket PC.
+	Primer supports most PDF image formats, as well as bookmarks, hyperlinks, and
+	Table-of-Contents.
+	
+	PocketFriendly Backgammon by AnyWerx:
+	
+	The always popular and colorful backgammon, can be played alone or with a
+	friend.
+	
+	CoolCalc by Applian Technologies:
+	
+	This version has three advanced calculators -- an enhanced basic calculator, a
+	scientific calculator with a visible stack, and a tip calculator.
+	
+	Audible.com book excerpts:
+	
+	Audible provided four excerpts from their popular catalog of audio books and
+	magazines. These files when downloaded to the device will appear in the
+	Microsoft Reader table of contents, so be sure to open the MS Reader application
+	to hear these Audible files.
+	
+	BSQUARE Messenger [30-day trial]:
+	
+	Welcome to BSQUARE Messenger. Now you can send and receive instant messages from
+	your Pocket PC while connected to a modem. BSQUARE Messenger is compatible with
+	MSN(tm) Messenger, so you can chat with any MSN member!
+	
+	bUseful Backup by BSQUARE [30-day trial]:
+	
+	The bUseful Backup, is one of ten applications in the bUseful Utilities Pak 2.0
+	for Pocket PC. With bUseful Backup, you can back up your device on your PC or a
+	storage card in just a few minutes.
+	
+	bUseful Zip by BSQUARE [30-day trial]:
+	
+	The bUseful Zip, is one of ten applications in the bUseful Utilities Pak 2.0 for
+	Pocket PC. With bUseful Zip, you can read industry-standard ZIP files from your
+	PC or e-mail attachments. Now you can extract, read and zip up all
+	industry-standard compressed files, too, on your Pocket PC.
+	
+	Bubblets by oopdreams [trial version]:
+	
+	Bubblets is a game that is simple to learn, and very addictive, but tough to
+	master. Your challenge is to pop as many bubbles of the same color as
+	possible-the bigger the group the better your score.
+	
+	Pocket Artist LE by Conduits Technologies:
+	
+	With Pocket Artist LE, you can draw, edit and view photos and images, add text
+	and much more. Share screenshots of your drawings with your friends and family
+	by using one of the screen capture applications in this Fun Pack.
+	
+	Three Songs by The Five Points Band:
+	
+	Listen to some music on your Pocket PC. The Five Points Band breathes new life
+	into the old blues scene. They blend their knowledge of the evolution of music
+	with modern musical sensibilities in the three songs included below from their
+	debut album.
+	
+	PocketBible by Laridian [trial version]:
+	
+	Laridian presents PocketBible, which includes selections from the King James
+	version of the Bible. The PocketBible in this pack includes the New Testament as
+	well as the Book of Psalms and the Book of Proverbs from the Old Testament.
+	
+	PocketShot by FieldSoftware Products:
+	
+	PocketShot easily captures, prints, and saves a snapshot of your Pocket PC
+	screen. Screen snapshots can be printed directly to a wide variety of infrared
+	and serial printers, including most HP DeskJet and LaserJet compatible printers,
+	and others.
+	
+	Tipster by Ilium Software:
+	
+	A fast, easy, and free restaurant tip and tax calculator for Pocket PCs. With one
+	touch, Tipster gives you your tip or tax amount both by itself and added to your
+	original bill.
+	
+	eWallet by Ilium Software [trial version]:
+	
+	Use eWallet to store your passwords, PINs, credit card numbers, and the other
+	information you need in a safe, secure form. Your information will be safely
+	encrypted, but convenient and easy to access.
+	
+	ListPro by Ilium Software [trial version]:
+	
+	Put your Pocket PC to work for you with ListPro. Use ListPro for to-do lists,
+	trip packing, URLs, interview questions, restaurants, shopping, errands,
+	reference information, and everything else you shouldn't have to remember. It
+	functions easily with desktop synchronization as well.
+	
+	ScreenSnap by Developer One:
+	
+	Developer One ScreenSnap makes it easier than ever before to capture screen
+	images from your Pocket PC as it instantly captures screen images to file with
+	the press of a button.
+	
+	ZIOGolf by ZIO Interactive:
+	
+	ZIOGolf is an unparalleled, real-time 3D golf acceleration game. In this two-hole
+	version, the breathtaking scenery and exceptional challenge deliver a realistic
+	golf experience.
+	
+	CompactFlash Cards by Pretec Electronics:
+	
+	The Pretec CompactFlash memory card is a small form factor, removable data
+	storage device. The cards weigh only a half-ounce each, but they provide a much
+	improved mass-storage solution for handheld devices.
+	
+	Microsoft Pocket Streets maps:
+	
+	With this software, users can carry the maps they need with them and may never
+	have to ask for directions again.
+	
+	New color versions of "Chess," and "Hearts"
+	
+	These are the games included from Microsoft's Entertainment Pack for the Pocket
+	PC. Hearts is an unique game you can play over infrared with another person who
+	has a Pocket PC.
+	
+	Cubicle Chaos from the upcoming Mobile Games Pack for the Pocket PC:
+	
+	Clear out all of the "cubicles" without losing the bouncing ball. Your desk acts
+	as a paddle that slides across the bottom of the screen. This Break Out style
+	game can be played as a one or two player turn-based game.
+	
+	Fire Drill from the upcoming Mobile Games Pack for the Pocket PC:
+	
+	A fire has started in your office and it's up to you to put it out before it gets
+	out of control! Grab your extinguisher! This top-down, scrolling shooter depicts
+	the floor layout of an office building, complete with cubicles, desks, file
+	cabinets, water coolers, and so forth.
+	
+	Power Contacts from PowerToys:
+	
+	This is a tool to extend the power of your contacts application in three areas:
+	1) Create Appointment creates an appointment with the contact as the attendee
+	and the subject. 2) Create Task creates a task with the contact as the subject.
+	3) Open Web Page opens the Web page associated with the contact.
+	
+	Windows Media Skin Chooser from PowerToys:
+	
+	Customize your new Windows(r) Media(tm) Player for Pocket PC with a new interface
+	skin to match your personality or your music. Skins are the custom interface
+	created for the Windows Media Player. A skin is a collection of bitmap files
+	(files with the *.bmp extension) and a text file (in this case, a file with a
+	*.skn extension). You can use information stored in the *.skn file to organizes
+	the images, giving you complete control over what buttons you want, how they
+	look, and where they are located on screen.
+	
+	Microsoft Reader Books:
+	
+	This expansion packs includes a variety of books for the Microsoft Reader
+	application included in your Pocket PC. Check out old childhood favorites such
+	as "Alice in Wonderland, The Adventures of Tom Sawyer, Treasure Island, The
+	Wonderful Wizard of Oz, Call of the Wild" and two classics "The Fall of the
+	House of Usher" by Edgar Allan Poe and Oscar Wilde's "The Importance of Being
+	Earnest."
+	
+	Additional query words: msgame
+	
+	======================================================================
+	Keywords          : kbhw kbimu kbHardware 
+	Technology        : kbHomeProdSearch kbOSWinCE kbPocketSearch
+	Version           : :
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

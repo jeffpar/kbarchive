@@ -1,0 +1,59 @@
+---
+layout: page
+title: "Q196005: DirectX Home User Troubleshooter Available"
+permalink: kb/196/Q196005/
+---
+
+## Q196005: DirectX Home User Troubleshooter Available
+
+	Article: Q196005
+	Product(s): Microsoft Home Games
+	Version(s): 1.0,2.0
+	Operating System(s): 
+	Keyword(s): kbtool kbimu msgame
+	Last Modified: 07-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Age of Empires, version 1.0 
+	- Microsoft Baseball 3D, version 1.0 
+	- Microsoft CART Precision Racing, version 1.0 
+	- Microsoft Close Combat: A Bridge Too Far, version 2.0 
+	- Microsoft Combat Flight Simulator: WWII Europe Series, version 1.0 
+	- Microsoft Combat Flight Simulator 2: WWII Pacific Theater, version 1.0 
+	- Microsoft Flight Simulator 98 
+	- Microsoft Golf 1999 Edition, version 1.0 
+	- Microsoft Monster Truck Madness 2, version 2.0 
+	- Microsoft Motocross Madness, version 1.0 
+	- Microsoft Outwars, version 1.0 
+	- Microsoft Urban Assault, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article discusses the availability of the DirectX Home User
+	troubleshooter.
+	
+	The DirectX Home User troubleshooter provides you with step-by-step instructions
+	on how to resolve common issues with Microsoft DirectX.
+	
+	MORE INFORMATION
+	================
+	
+	The DirectX Home User troubleshooter is available at the following Microsoft Web
+	site:
+	
+	  http://support.microsoft.com/support/directx/directx_7.0/tshooter/default.asp
+	
+	Additional query words: 1.00 2.00 frequent questions answers troubleshooting tshoot
+	
+	======================================================================
+	Keywords          : kbtool kbimu msgame 
+	Technology        : kbHomeProdSearch _IKkbbogus kbHomeMMsearch kbAOE kbGamesSearch kbFlightSimSearch kbZNotKeyword kbGolf99 kbGolfSearch kbMotocrossSearch kbOutwarsSearch kbOutwars kbCloseCombatSearch kbCARTRacingSearch kbBaseballSearch kbMonsterTMSearch kbAOESearch kbUrbanAssault kbMonsterTM2 kbCloseCombat2 kbCombatFlightSim2 kbCombatFlightSim kbCombatFlightSimSearch kbFlightSim98 kbMotocrossM kbBaseBall3D kbCARTRacing kbSimSearch
+	Version           : :1.0,2.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

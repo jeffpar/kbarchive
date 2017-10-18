@@ -1,0 +1,80 @@
+---
+layout: page
+title: "Q152956: XCLN: Details Corrupt When Using Spanish Client"
+permalink: kb/152/Q152956/
+---
+
+## Q152956: XCLN: Details Corrupt When Using Spanish Client
+
+	Article: Q152956
+	Product(s): Microsoft Exchange
+	Version(s): WINDOWS:4.0,5.0
+	Operating System(s): 
+	Keyword(s): kbnetwork
+	Last Modified: 01-APR-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Windows 95/98 client, versions 4.0, 5.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When attempting to view address book detail information, secondary property
+	pages are not readable. This occurs when viewing the address lists on a
+	Microsoft Mail postoffice using the Spanish language Exchange Windows 95 client.
+	
+	CAUSE
+	=====
+	
+	When a Microsoft Mail postoffice is installed for the Spanish language clients,
+	Spanish-specific TPL files are installed in the TPL subdirectory. The
+	Spanish-specific TPL files listed below have improper values for the Alias and
+	Nombre fields. These TPL files incorrectly specify lengths of 31 when it should
+	be a value of 30.
+	
+	  SPACOU00.TPL     SPAALIAS.TPL     SPACOU02.TPL       SPACOU04.TPL
+	
+	WORKAROUND
+	==========
+	
+	A self-extracting zip file has been created that includes replacements for the
+	affected files. The filename is Tplspan.exe. Expand this file into the TPL
+	subdirectory and run the Replace.bat file to rename the original files and
+	substitute the corrected files.
+	
+	The following corrections have been made in the TPL files indicated:
+	
+	SPACOU00.TPL
+	    Alias:~9~31~A~~             changed to        Alias:~9~30~A~~
+	    Nombre:~9~31~A~~            changed to        Nombre:~9~30~A~~
+	SPACOU02.TPL
+	    Nombre:~7~31~A~~            changed to        Nombre:~7~30~A~~
+	SPAALIAS.TPL
+	    Alias:~9~31~ULNP~~          changed to        Alias:~9~30~ULNP~~
+	SPACOU04.TPL
+	    Alias:~9~31~ULNP~~          changed to        Alias:~9~30~ULNP~~
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft Mail version 4.0.
+	
+	A supported fix is now available, but has not been fully regression-tested and
+	should be applied only to systems experiencing this specific problem. Contact
+	Microsoft Product Support Services for more information.
+	
+	
+	
+	Additional query words: Spanish TPL
+	
+	======================================================================
+	Keywords          : kbnetwork 
+	Technology        : kbExchangeSearch kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange400Win95 kbExchange500Win95
+	Version           : WINDOWS:4.0,5.0
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

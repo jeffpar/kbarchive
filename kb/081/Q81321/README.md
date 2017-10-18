@@ -1,0 +1,125 @@
+---
+layout: page
+title: "Q81321: Maintaining PWB Display While Running a Program"
+permalink: kb/081/Q81321/
+---
+
+## Q81321: Maintaining PWB Display While Running a Program
+
+	Article: Q81321
+	Product(s): Microsoft Programming Utilities
+	Version(s): MS-DOS:1.0,1.1,2.0; OS/2:1.0,1.1
+	Operating System(s): 
+	Keyword(s): kb16bitonly
+	Last Modified: 13-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Programmer's Workbench for MS-DOS, versions 1.0, 1.1, 2.0 
+	- Microsoft Programmer's Workbench for OS/2, versions 1.0, 1.1 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article discusses how to run a program in the background with the
+	Programmer's WorkBench (PWB) versions 1.0 and 1.1, much like NMAKE and other
+	utilities do. Although this method also works for version 2.0 of PWB, we
+	recommend that you use the newer callback, DoSpawn(), instead.
+	
+	MORE INFORMATION
+	================
+	
+	The best way to do this is to use PWB's compile command. First build a string of
+	the form:
+	
+	  "arg arg \"progname.exe arguments for exe \" compile"
+	
+	Then pass the string to fExecute(). To demonstrate this, without having to write
+	an extension, do the following in PWB:
+	
+	1. Press ALT+A ALT+A.
+	
+	2. Type in the name of the program or command you want to execute. For the
+	  purposes of this article, type in "set" (without the quotation marks).
+	
+	3. Press CTRL+F3. This is the compile command.
+	
+	4. PWB will appear to be doing a build of your program. The box that comes up
+	  will show the command that you passed to it, in this case, set.
+	
+	5. A dialog box will give you the options to View Results or Cancel. Choose View
+	  Results.
+	
+	6. In the Compile Results window, you will see the environment variables that
+	  you have set.
+	
+	Note that the PROGNAME.EXE can also be an MS-DOS or OS/2 command. The following
+	sample code shows how to incorporate this into a simple program. Note that the
+	results, if any, of your program will appear in the compile results window. Add
+	the following lines to the TOOLS.INI file to make the function, funcname,
+	accessible in PWB by using the ALT+Z keystroke:
+	
+	load:[extension].mxt funcname:alt+z
+	
+	If you are working under OS/2 rather than MS-DOS, you should use .PXT instead of
+	.MXT as the file extension. It is important to note that you must force PWB to
+	load your extension before you assign a keystroke to your function. PWB will
+	recognize your function only after the extension is loaded, and since extensions
+	are loaded after the TOOLS.INI, you cannot rely on PWB's automatic loading of
+	extensions. MORE information about PWB extensions can be found in Chapter 8 of
+	the "Microsoft C Advanced Programming Techniques" manual, the online help, and
+	in Chapter 9 of the C versions 6.x "Developers Toolkit Reference."
+	
+	Sample Code
+	-----------
+	
+	  /* Compile and link options needed:
+	     cl /c /ACw /Gs [extension].c
+	        To link for MS-DOS:
+	     link /NOI exthdr.obj [extension].obj, [extension].mxt;
+	        To link for OS/2:
+	     link /NOI exthdrp.obj [extension].obj, [extension].pxt,,, ext.def;
+	  */ 
+	
+	  #include "ext.h"
+	
+	  /* function prototype */ 
+	  PWBFUNC funcname (
+	      unsigned argData,
+	      ARG _far *pArg,
+	      flagType fMeta);
+	
+	  /* Switch description table (required for an extension) */ 
+	  struct swiDesc swiTable[] = { { NULL,NULL,0} };
+	
+	  /* Command description table ( required for a PWB extension) */ 
+	  struct cmdDesc cmdTable[] ={
+	      { "funcname", funcname, 0 , NOARG},
+	      { NULL, NULL, 0, 0} };
+	
+	  /* Function that PWB calls when loading the extension */ 
+	  void EXTERNAL WhenLoaded(void)
+	  {
+	      DoMessage("Loading funcname extension");
+	  }
+	
+	  PWBFUNC funcname (
+	      unsigned argData,
+	      ARG _far *pArg,
+	      flagType fMeta)
+	  {
+	      char c[] = "arg arg \"set\" compile";
+	      fExecute(c);
+	  }
+	
+	Additional query words: kbinf extension 1.00 1.10 2.00 PWBIss
+	
+	======================================================================
+	Keywords          : kb16bitonly 
+	Technology        : kbAudDeveloper kbPWBSearch kbZNotKeyword3 kbPWB100DOS kbPWB110DOS kbPWB200DOS kbPWB100OS2 kbPWB110OS2
+	Version           : MS-DOS:1.0,1.1,2.0; OS/2:1.0,1.1
+	
+	=============================================================================
+	

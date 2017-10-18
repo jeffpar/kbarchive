@@ -1,0 +1,86 @@
+---
+layout: page
+title: "Q132575: Windows Explorer Does Not Refresh Disk Drives Automatically"
+permalink: kb/132/Q132575/
+---
+
+## Q132575: Windows Explorer Does Not Refresh Disk Drives Automatically
+
+	Article: Q132575
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:95
+	Operating System(s): 
+	Keyword(s): win95 appscomp kbAppCompatibility
+	Last Modified: 28-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 95 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you use Windows Explorer (Explorer.exe) to examine the contents of a disk
+	drive, you see any of the following symptoms after you remove a disk from the
+	disk drive and insert a new disk:
+	
+	- The right side of the Explorer window continues to display the contents of
+	  the original disk.
+	
+	- The right side of the Explorer window displays the contents of the new disk,
+	  but the left side continues to display folders from the original disk.
+	
+	- After expanding the disk drive branch by double-clicking the branch or by
+	  clicking the plus sign (+) to the left of the branch, the left side of the
+	  Explorer window displays folders from both the original disk and the new
+	  disk, and the right side continues to display the contents of the original
+	  disk.
+	
+	This problem may also occur with other types of removable media, such as CD-ROM
+	or Syquest drives.
+	
+	CAUSE
+	=====
+	
+	On most computers, Windows Explorer is not automatically notified when the disk
+	in a disk drive changes.
+	
+	-or-
+	
+	The Auto Insert Notification check box has been cleared in Device Manager,
+	causing media changes not to be reported by the 32-bit CD-ROM driver.
+	
+	RESOLUTION
+	==========
+	
+	After you remove a disk from a disk drive and insert a new disk, refresh the
+	Windows Explorer display by clicking Refresh on the View menu, or by pressing
+	F5.
+	
+	-or-
+	
+	To enable Windows 95 to update CD-ROM directory listings when you are using
+	32-bit drivers, follow these steps to enable the Auto Insert Notification
+	option:
+	
+	1. In Control Panel, double-click the System icon.
+	
+	2. On the Device Manager tab, double-click CD-ROM, and then double-click the
+	  installed CD-ROM device.
+	
+	3. On the Settings tab, click the Auto Insert Notification check box to select
+	  it.
+	
+	4. Click Close. When you are prompted to restart your computer, do so.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : win95 appscomp kbAppCompatibility 
+	Technology        : kbWin95search kbZNotKeyword3
+	Version           : WINDOWS:95
+	
+	=============================================================================
+	

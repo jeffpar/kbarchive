@@ -1,0 +1,158 @@
+---
+layout: page
+title: "Q278154: How to Extract SMTP Addresses for Mailbox Recipients"
+permalink: kb/278/Q278154/
+---
+
+## Q278154: How to Extract SMTP Addresses for Mailbox Recipients
+
+	Article: Q278154
+	Product(s): Microsoft Exchange
+	Version(s): 5.5
+	Operating System(s): 
+	Keyword(s): exc55
+	Last Modified: 24-NOV-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.5 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes how to extract Simple Mail Transfer Protocol (SMTP)
+	addresses for Mailbox Recipients [the "E-mail Address (Internet)" object] from
+	the Exchange Server directory's global address list and export them into a .csv
+	file. You can then use this file to import and create Custom Recipients in
+	another organization
+	
+	MORE INFORMATION
+	================
+	
+	NOTE: This procedure is successful if you have only one SMTP address for each
+	recipient. If you have more than one SMTP address for each recipient, you must
+	remove the additional addresses before you attempt the following steps. You can
+	remove the extra addresses from the E-mail addresses tab (located in Mailbox
+	properties). You can also remove the addresses after you export them to the .csv
+	file by modifying the column for this value.
+	
+	To extract SMTP addresses, follow these steps:
+	
+	1. Start the Exchange Administrator program.
+	
+	2. Under Site Name, click the Recipients container.
+	
+	3. On the View menu, click Mailboxes.
+	
+	4. Make sure the Recipients container is still highlighted, and then on the View
+	  menu, click Columns.
+	
+	5. Move the following columns to the "Show the following columns" section in the
+	  right pane:
+	
+	   - E-mail Address (Internet) [this is your SMTP address]
+	
+	   - Display Name
+	
+	   - First Name
+	
+	   - Last Name
+	
+	   - Directory Name
+	
+	6. Move any other unnecessary columns to the Available columns section in the
+	  left pane.
+	
+	7. Click Apply, and then click OK.
+	
+	8. Click one of the names in the Detail window in the right pane of the Exchange
+	  Administrator program.
+	
+	9. On the Edit menu, click All.
+	
+	10. On the File menu, click "Save Window Contents", and save the file as a Comma
+	  Delimited File (.csv).
+	
+	11. Copy the new .csv file to the Exchange-based server in the target
+	  organization where you want to import the mailbox recipients as Custom
+	  Recipients.
+	
+	You can use this SMTP information to create Custom Recipients in another Exchange
+	organization. To do this, follow these steps:
+	
+	NOTE: This process must be done on a computer that has Excel installed so that
+	the data can be viewed and manipulated in spreadsheet format.
+	
+	1. Start the Exchange Administrator program on a server in the organization in
+	  which you want to create Custom Recipients.
+	
+	2. Click your site name, and then on the File menu, point to New, click Other,
+	  and then click Recipients Container.
+	
+	3. Create a new Recipients container named "Other Organization Custom
+	  Recipients."
+	
+	4. Open the .csv file using Excel. The following column headers are displayed:
+	
+	   - E-mail Address (Internet)
+	
+	   - Display Name
+	
+	   - First Name
+	
+	   - Last Name
+	
+	   - Directory Name
+	
+	5. Change the column header for "E-mail Address (Internet)" to "E-mail Address"
+	  (without the quotes).
+	
+	6. Add an additional column and name it "Obj-Class," and configure the value to
+	  be "Remote" for all of the rows of recipients in your spreadsheet. The
+	  Obj-Class column should be the first column on the spreadsheet.
+	
+	NOTE: Save this file as a .csv file.
+	
+	7. In the Exchange Administrator program, on the Tools menu, click Directory,
+	  click Import, and then click Custom Recipients. The target .csv file contents
+	  are imported to the Custom Recipients container that you previously created.
+	
+	NOTE: Make a backup copy of your target directory database before you import the
+	information.
+	If errors occur when you import the file, a file is created in the same directory
+	as the .csv file that you are creating. This file contains a list of any
+	recipients that failed to be imported due to errors. The file's extension is
+	.err and opens as a .csv file. For readability purposes, you can append this
+	file with a .csv extension and open it in spreadsheet format.
+	
+	You can review the application event log on the server to find out why a
+	recipient was not imported. The events are designated as:
+	
+	  TYPE: ERROR
+	  SOURCE: MSExchangeDSImp
+	
+	The events provide information that you need to correct data on any recipient
+	address that was not imported.
+	
+	If you need to run this procedure again in the future, either to update your
+	Custom Recipients container, or to accommodate changes for newly added or
+	inactive recipients, run the procedure again, but first delete the contents of
+	the Custom Recipients container before importing the directory.
+	
+	For additional information, click the article number below to view the article in
+	the Microsoft Knowledge Base:
+	
+	  Q155414 XADM: Bulk Import/Export FAQ
+	
+	Additional query words: InterOrg Sync Tool GAL
+	
+	======================================================================
+	Keywords          : exc55 
+	Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+	Version           : :5.5
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

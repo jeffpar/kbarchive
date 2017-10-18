@@ -1,0 +1,106 @@
+---
+layout: page
+title: "Q150983: PPT7: Graph Patterns Not Printed in PowerPoint Presentation"
+permalink: kb/150/Q150983/
+---
+
+## Q150983: PPT7: Graph Patterns Not Printed in PowerPoint Presentation
+
+	Article: Q150983
+	Product(s): Microsoft PowerPoint for Windows
+	Version(s): WINDOWS:5.0,7.0
+	Operating System(s): 
+	Keyword(s): kbprint kbualink97 kbgraph kbPrinting
+	Last Modified: 07-SEP-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft PowerPoint for Windows 95, version 7.0 
+	- Microsoft Graph 5.0 for Windows 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you print a PowerPoint slide that contains a Microsoft Graph picture with
+	patterned fills, the patterns may not print correctly, or they may not print at
+	all.
+	
+	CAUSE
+	=====
+	
+	Microsoft Graph 5.0 renders its pattern fills at the resolution of the output
+	device, whether it is printer or display. The patterns are defined by a GDI
+	brush 8 x 8 pixels in size. On a display that has a dpi of 96, Graph 5.0 will
+	render its patterns at 96 dpi, repeating the pattern 12 times per inch. If
+	printed from a printer capable of printing at 600dpi, the pattern is repeated 75
+	times per inch. Because of this, the pattern is so small you can barely see it.
+	
+	RESOLUTION
+	==========
+	
+	To work around this behavior under, use either of the following methods.
+	
+	Method 1: Paste the Graph into PowerPoint as a Bitmap
+	-----------------------------------------------------
+	
+	To paste the graph into Powerpoint as a bitmap, follow these steps:
+	
+	1. After you create your graph, return to PowerPoint 95, and click the graph.
+	
+	2. On the Edit menu, click Copy.
+	
+	3. On the Start menu, point to Programs, point to Accessories, and then click
+	  Microsoft Paint. In Microsoft Paint, follow these steps:
+	  a. On the Image menu, click Attributes.
+	
+	  b. Set the Width to 1 and the Height to 1, and then click OK.
+	
+	  c. On the Edit menu, click Paste.
+	
+	     A message appears asking if the image in the clipboard is larger than the
+	     bitmap. Click Yes.
+	
+	  d. On the Edit menu, click Copy.
+	
+	4. Switch to your program.
+	
+	5. On the Insert menu, click New Slide, and then click a blank slide from the
+	  New Slide dialog box.
+	
+	6. On the View menu, click Zoom, click 100%, and click OK.
+	
+	7. On the Edit menu, click Paste.
+	  This pastes a bitmap picture of your graph into the new slide.
+	
+	8. On the Draw menu, click Scale. In the Scale To box, click to select 100%, and
+	  make sure the "Relative to original picture size" check box is selected.
+	
+	  Now you can print this slide and the patterns are visible (the way they appear
+	  on the screen). You can click Hide on the Tools menu to hide this slide
+	  during your slide show presentation, but when you print your slides, you
+	  should print this slide instead of the one containing the original graph.
+	
+	Method 2: Set the Printer Resolution to 75 Dots Per Inch
+	--------------------------------------------------------
+	
+	Set the printer resolution on your printer driver to 75 dots per inch (DPI). If
+	you are printing with a Hewlett-Packard (HP) LaserJet 4, you must use an HP III
+	printer driver to achieve this effect.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft Graph 5.0 for Windows.
+	
+	Additional query words: 97 8.00 black gray patterned hp 4 3 okidata pcl graph ppt97
+	
+	======================================================================
+	Keywords          : kbprint kbualink97 kbgraph kbPrinting 
+	Technology        : kbWordSearch kbAccessSearch kbPowerPtSearch kbPowerPt95 kbZNotKeyword2 kbGraphSearch kbPowerPt95Search kbGraph500
+	Version           : WINDOWS:5.0,7.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

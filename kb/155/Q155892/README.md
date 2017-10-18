@@ -1,0 +1,117 @@
+---
+layout: page
+title: "Q155892: Windows NT Boot Problem: Kernel File Is Missing From the Disk"
+permalink: kb/155/Q155892/
+---
+
+## Q155892: Windows NT Boot Problem: Kernel File Is Missing From the Disk
+
+	Article: Q155892
+	Product(s): Microsoft Windows NT
+	Version(s): 3.51,4.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 20-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation versions 3.51, 4.0 
+	- Microsoft Windows NT Server versions 3.51, 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you start Microsoft Windows NT you receive the following error message:
+	
+	  A kernel file is missing from the disk. Insert a system disk and restart the
+	  system.
+	
+	The message is displayed before the boot options from the Boot.ini are shown.
+	
+	
+	CAUSE
+	=====
+	
+	The file NTLDR is missing from the active system partition or the allocation for
+	\Ntldr's $DATA attribute has become so fragmented that the whole $DATA attribute
+	is not in the base FRS (file record segment).
+	
+	MORE INFORMATION
+	================
+	
+	After the Power On Self Test (POST), the Master Boot Record (MBR) reads the
+	partition table and jumps to the boot record.
+	
+	The code that generates the error is in the boot record. The error is generated
+	if the NTLDR file cannot be found or if the $DATA attribute cannot be found.
+	
+	Windows NT File System (NTFS) views each file or directory as a set of file
+	attributes. Elements such as the file's name, its security information, and its
+	data are all file attributes. Each attribute is identified by an attribute type
+	code and, optionally, an attribute name.
+	
+	
+	WORKAROUND
+	==========
+	
+	When you experience this problem you can either:
+	
+	1. Boot Microsoft Windows NT from floppy (using the NTLDR on the floppy disk).
+	
+	2. Move the NTLDR file to a different physical location on disk (ren ntldr
+	  ntldr.sav, copy ntldr.sav ntldr).
+	
+	3. Use an NTFS defrag utility to unfragment NTLDR.
+	
+	4. Ensure the correct partition is marked active using either NT Disk
+	  administrator, or Boot to DOS and use FDISK.EXE to ensure the correct system
+	  partition is marked for boot.
+	
+	And,
+	
+	- Obtain the Bcupdate.exe program, which updates the boot code of the NTFS
+	  bootsector. For information on obtaining the individual software update,
+	  contact Microsoft Product Support Services. For a complete list of Microsoft
+	  Product Support Services phone numbers and information on support costs,
+	  lease go to the following address on the World Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	- Once you have obtained the software update create a Windows NT startup floppy
+	  disk and boot Windows NT using this disk. For additional information about
+	  how to create this disk, click the article number below to view the article
+	  in the Microsoft Knowledge Base:
+	
+	  Q119467 Creating a Boot Disk for an NTFS or FAT Partition
+	
+	  - Extract Bcupdate.exe and NTLDR from the software update.
+	
+	  - Run Bcupdate.exe C: /F.
+	
+	  - Other command line parameters supported:
+	
+	  /q - Quiet mode (must include /y).
+	  /y - Don't confirm.
+	  /f - Force update of in use volume.
+	  /t - Only test for old boot code.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft Windows NT 3.5x and
+	4.0. We are researching this problem and will post new information here in the
+	Microsoft Knowledge Base as it becomes available.
+	
+	
+	Additional query words: bootsect.com boot
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+	Version           : :3.51,4.0
+	Issue type        : kbbug
+	
+	=============================================================================
+	

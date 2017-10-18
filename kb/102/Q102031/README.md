@@ -1,0 +1,55 @@
+---
+layout: page
+title: "Q102031: OS/2 Postscript Driver Traps After About 1600 Print Jobs"
+permalink: kb/102/Q102031/
+---
+
+## Q102031: OS/2 Postscript Driver Traps After About 1600 Print Jobs
+
+	Article: Q102031
+	Product(s): Microsoft LAN Manager
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 30-JUL-2001
+	
+	SYMPTOMS
+	========
+	
+	Print Manager generates a ring 2 trap in the OS/2 Postscript driver after
+	printing approximately 1600 print jobs. The CSLIM and IP of the trap screen
+	match these values:
+	
+	AX=FFFF BX=0008 CX=0000 DX=FFFF BP=0f6c
+	SI=31F4 DI=2ccc DS=200E ES=1ff7 FLG=2246
+	CS=1FB6 IP=7242 SS=0486 SP=0f2c MSW=001b
+	CSLIM=d720 SSLIM=0fff DSLIM=470f ESLIM=fffb
+	CSACC=DB SSACC=D3 DSACC=d3 ESACC=F3
+	ERRCD=FFFC ERLIM=**** ERACC=**
+	
+	You are able to end Print Manager, although restarting it without rebooting is
+	not recommended.
+	
+	CAUSE
+	=====
+	
+	The OS/2 Postscript driver (PSCRIPT.DRV) allocates a small piece of memory from
+	its local heap with each print job. This error was caused when the driver failed
+	to release local heap memory when the job was complete. Eventually the local
+	heap would reach its 64-K maximum and subsequent attempts to allocate memory
+	would fail.
+	
+	WORKAROUND
+	==========
+	
+	Microsoft has confirmed this to be a problem in LAN Manager version 2.2. This
+	problem was corrected in the LAN Manager 2.2b Patch. Contact Microsoft PSS for
+	the patch.
+	
+	Additional query words: 2.20 2.2 pmspool pmspl pscript.drv adobe
+	
+	======================================================================
+	Keywords          :  
+	
+	=============================================================================
+	

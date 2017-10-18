@@ -1,0 +1,121 @@
+---
+layout: page
+title: "Q231883: SMS: Provider Is Unable to Connect to SQL Server"
+permalink: kb/231/Q231883/
+---
+
+## Q231883: SMS: Provider Is Unable to Connect to SQL Server
+
+	Article: Q231883
+	Product(s): Microsoft Systems Management Server
+	Version(s): winnt:2.0
+	Operating System(s): 
+	Keyword(s): kbDatabase kbSecurity kbsms200 kbsmsProvider
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server version 2.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you are attempting to connect to the Systems Management Server (SMS) site
+	database by using the Systems Management Server Administrator console, the
+	connection attempt may take a long time, and then you may receive a "Connection
+	Failed: \\server\root\sms" status in the Microsoft Management console.
+	
+	The following message may appear in the Smsprov.log file on the SQL server in the
+	Smsprov\logs folder:
+	
+	  *
+	  *
+	  E:\OPALSP1\sdk_provider\nt\smsprov\SspObjectQuery.cpp(4177) : SQL Connection
+	  attempt timed out
+	  SQL Error: Login incorrect.
+	  *
+	*
+	
+	CAUSE
+	=====
+	
+	This behavior can occur if the SMSProvider_<XXX> account does not have
+	permission to connect to the SQL server database.
+	
+	This problem may occur when the following conditions are true:
+	
+	- The SMS site database is located on a SQL Server 6.5-based server that is
+	  external to the SMS site server.
+	
+	- The SMS provider is located on the SQL server.
+	
+	- The SQL Server 6.5-based server is using mixed or integrated security.
+	
+	- In SQL Security Manager, the Windows NT Administrators group has been
+	  removed, or is no longer mapped to the 'sa' SQL login ID. A different Windows
+	  NT group may be mapped to the 'sa' SQL login ID.
+	
+	WORKAROUND
+	==========
+	
+	SMS requires that the following accounts belong to the local Administrators
+	group on the SQL server:
+	
+	- SMSProvider_<XXX>, where <XXX> is the site code of the SMS site.
+	
+	- SMSSvc_<XXX>_0000, where <XXX> is the site code of the SMS site.
+	
+	In addition, if you are using integrated security in SQL server, the
+	Administrators group must be mapped to the 'sa' login ID in SQL Security
+	Manager.
+	
+	To verify or correct the issue:
+	
+	1. Start SQL Security Manager and connect to the SQL server on which the SMS
+	  site database resides.
+	
+	2. On the View menu, click Sa Privilege.
+	
+	3. In the main window, verify that the Administrators group is listed.
+	
+	4. If the Administrators group is listed, expand the selection to see the
+	  members of the group. Verify that the Domain\SMSProvider_<XXX> and
+	  SQLSERVER\SMSSvc_<XXX>_0000 accounts are listed. If they are not
+	  listed, verify that they are listed in User Manager in the Administrators
+	  group.
+	
+	If the Administrators group does not appear in the Sa Privilege view:
+	
+	1. On the Security menu, click Grant New.
+	
+	2. On the Grant Privilege list, click Administrators, and then click Grant. You
+	  should receive a "Permission Granted to Administrators" message.
+	
+	3. Click OK.
+	
+	4. When you are finished, click Done.
+	
+	MORE INFORMATION
+	================
+	
+	When the SMS provider and SMS SQL Monitor components are installed, the
+	SMSProvider_<XXX> and SMSSvc_<XXX>_0000 accounts are placed in the
+	local Administrators group on the SQL server. By default, under the integrated
+	security model, they are mapped to the 'sa' login ID, which gives the accounts
+	access to the SQL database.
+	
+	If the members of the SQL server Administrators group are not mapped to a valid
+	SQL login ID with access to the SMS site database, they cannot connect.
+	
+	Additional query words: prodsms
+	
+	======================================================================
+	Keywords          : kbDatabase kbSecurity kbsms200 kbsmsProvider 
+	Technology        : kbSMSSearch kbSMS200
+	Version           : winnt:2.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

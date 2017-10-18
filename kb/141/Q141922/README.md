@@ -1,0 +1,236 @@
+---
+layout: page
+title: "Q141922: WD97: How to Start a Mail Merge"
+permalink: kb/141/Q141922/
+---
+
+## Q141922: WD97: How to Start a Mail Merge
+
+	Article: Q141922
+	Product(s): Word 97 for Windows
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbualink97 winword word97 kbmergekbfaq
+	Last Modified: 07-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	
+	SUMMARY
+	=======
+	
+	This article describes how to start a mail merge.
+	
+	The process is divided into four parts:
+	
+	1. Open or create the main document.
+	
+	2. Open or create the data source
+	
+	3. Edit the main document.
+	
+	4. Perform the merge.
+	
+	MORE INFORMATION
+	================
+	
+	STEP 1: OPEN OR CREATE THE MAIN DOCUMENT
+	----------------------------------------
+	
+	To open or create the main document, follow these steps:
+	
+	1. If you already have a document that you want to use as the main document,
+	  open it now.
+	
+	  The main document can be an existing letter, a new letter based on a letter
+	  template, or a new blank document. If you do not yet have a document to use
+	  as the main document, you can create one in step 4.
+	
+	2. Open the document in Word. On the Tools menu, click Mail Merge.
+	
+	  The Mail Merge Helper dialog box appears.
+	
+	3. Under "1. Main Document," click Create and click Form Letters.
+	
+	4. Word asks if you want to use the active window or a new document window. If
+	  you want to use the document you opened in step 1, click Active Window. (The
+	  active document becomes the Mail Merge main document.) If you do not have a
+	  document yet, click New Main Document. (Word creates a new document).
+	
+	Word returns to the Mail Merge Helper.
+	
+	STEP 2: OPEN OR CREATE THE DATA SOURCE
+	--------------------------------------
+	
+	The data source contains the information that can vary in each version of the
+	form letter. You can open an existing data source created in Word, or you can
+	create a new data source and fill in the addressee information.
+	
+	NOTE: The data source can also be created in another program such as Microsoft
+	Excel, Microsoft Access, a Personal Address Book created in Exchange or
+	Schedule+, an ASCII text file, or any other delimited file.
+	
+	In the Mail Merge Helper, under "2 Data Source," click Get Data. The options are
+	Create Data Source (that is, create a new data source), Open Data Source (open
+	an existing data source), Header Options, and Use Address Book.
+	
+	Use any of the following methods.
+	
+	Method 1: Typing the Names and Addresses for the First Time:
+	
+	If you haven't yet typed the names and addresses, and if you want to do so in
+	Word, follow these steps:
+	
+	1. Under "2. Data Source," click Get Data and choose Create Data Source.
+	
+	2. The Create Data Source dialog box contains a list of field names commonly
+	  used in form letters, mailing labels, and envelopes. You can rename the
+	  fields and remove the fields you don't need. To add field names, type the
+	  name in the Field Name box and then choose the Add Field Name button. Click
+	  OK when you are finished.
+	
+	3. When Word prompts you to save the data source, name the file and click OK.
+	
+	4. When Word asks if you want to edit the data source or set up the main
+	  document, click Edit Data Source.
+	
+	5. When the Data Form dialog box appears, enter your addressee information. (If
+	  there's no information for a particular field, leave the box blank.)
+	
+	  The set of information in each form makes up one data record.
+	
+	  After entering the information for a record, click Add New to move to the next
+	  record. After adding all of your data, click OK.
+	
+	6. Skip to "Step 3: Edit the Main Document."
+	
+	Method 2: Using a Data Source That Has Already Been Created:
+	
+	To open an existing data source, follow these steps:
+	
+	1. In the Mail Merge Helper dialog box, click Get Data.
+	
+	2. Click Open Data Source.
+	
+	3. From the list of files, select the data source you want to use, and then
+	  click OK.
+	
+	  If the data source is not listed in the list of files, choose the appropriate
+	  drive and folder. Select the appropriate option in the List Files of Type
+	  box.
+	
+	4. Word determines whether you need to set up the main document and displays a
+	  message. Click Edit Main Document.
+	
+	5. Skip to "Step 3: Edit the Main Document."
+	
+	Method 3: Using the Names and Addresses Stored in the Address Book:
+	
+	To use the name and addresses stored in the address book, follow these steps:
+	
+	1. In the Mail Merge Helper dialog box, click Get Data, and select Use Address
+	  Book.
+	
+	  The Use Address Book dialog box appears with the available address books
+	  listed under Choose Address Book.
+	
+	2. Select the Address Book you want to use as your data source. Word may ask you
+	  to confirm the data source if you have Confirm Conversions selected as an
+	  option.
+	
+	  If you use an address book/contact list from Schedule+, Word prompts you to
+	  log on to Schedule+ and provide a password if necessary.
+	
+	  If you use an address book from Exchange, Word asks you to log on to the
+	  Exchange services.
+	
+	  Word determines whether you need to set up the main document and displays a
+	  message.
+	
+	3. Click Set Up Main Document.
+	
+	4. Continue with "Step 3: Edit the Main Document."
+	
+	STEP 3: EDIT THE MAIN DOCUMENT
+	------------------------------
+	
+	Word returns to the main document. (Notice the appearance of the Mail Merge
+	Toolbar.) From the main document, follow these steps:
+	
+	1. Type or add any text and graphics you want to include in the letter.
+	
+	2. Each time you come to a place where you want to insert information from the
+	  data source, click the Insert Merge Field button on the Mail Merge Toolbar.
+	  Choose the appropriate merge field.
+	
+	  Make sure you type any spaces or punctuation you want between two merge fields
+	  or after a merge field.
+	
+	3. When you finish editing the main document, click Save or Save As on the File
+	  menu. Name the file and click Save.
+	
+	STEP 4: PERFORM THE MERGE
+	-------------------------
+	
+	To perform the merge, follow these steps:
+	
+	1. On the Tools menu, click Mail Merge.
+	
+	  This returns you to the Mail Merge Helper.
+	
+	2. Under "3. Merge the Data with the Document," click Merge.
+	
+	  Word displays the Merge dialog box. (If you click Query Options instead of
+	  Merge, you are given the option to select certain data records to include in
+	  the merge or to sort the records in the data source.)
+	
+	3. Under Merge To, select New Document to display the merged document on the
+	  screen.
+	
+	  This allows you to view the document before printing it. (Select Printer to
+	  send the merged document directly to the printer.)
+	
+	4. With New Document selected in Merge To, click Merge.
+	
+	5. Once the merged document appears on the screen, you can save this as a
+	  separate document or you can send the merged document to the printer by
+	  clicking Print on the File menu.
+	
+	Online Help Topics:
+	
+	For more information about mail merge, click Contents and Index on the Help menu.
+	Click the Index tab, and type "Mail Merge" in the search window. The applicable
+	topics will be listed for you to choose from. Select a topic and click Display.
+	
+	Or click the Office Assistant, type "mail merge," click Search, and then click to
+	view the "Print or send a mail-merge document" topic.
+	
+	NOTE: If the Assistant is hidden, click the Office Assistant button on the
+	Standard toolbar. If Word Help is not installed on your computer, please see the
+	following article in the Microsoft Knowledge Base:
+	
+	  Q120802 Office: How to Add/Remove a Single Office Program or Component
+	
+	Other Related Articles:
+	
+	For more information about mail merge, please see the following articles in the
+	Microsoft Knowledge Base:
+	
+	  Q141991 WD: How to Create Envelopes Using Mail Merge
+	
+	  Q141992 WD: How to Create Mailing Labels Using Mail Merge
+	
+	Additional query words: mail merge form letter tools create helper secondary mmh 8.0 8.00
+	
+	======================================================================
+	Keywords          : kbualink97 winword word97 kbmerge kbfaq
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : :
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

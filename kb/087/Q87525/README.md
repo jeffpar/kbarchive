@@ -1,0 +1,57 @@
+---
+layout: page
+title: "Q87525: HOW TO: Obtain a Copy of the VESA SVGA Standard"
+permalink: kb/087/Q87525/
+---
+
+## Q87525: HOW TO: Obtain a Copy of the VESA SVGA Standard
+
+	Article: Q87525
+	Product(s): Microsoft C Compiler
+	Version(s): 1.0,1.5,2.0,4.0,4.1,5.0
+	Operating System(s): 
+	Keyword(s): kbhw kbGenInfo kbVC100 kbVC150 kbVC200 kbVC400 kbVC410 kbVC500 kbHardware kbArtTypeINF
+	Last Modified: 18-DEC-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual C++, versions 1.0, 1.5, 2.0, 4.0, 4.1 
+	- Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+	- Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article contains information about the VESA Super VGA Standard, and how to
+	obtain a copy of it. "Super VGA" (SVGA) does not describe a standard display
+	adapter. Instead, it refers to any VGA-compatible video adapter that also
+	provides higher resolution modes. SVGA adapters made by different manufacturers
+	may support different resolution modes.
+	
+	To allow programs to take advantage of different SVGA adapters, the graphics
+	library supplied with Microsoft C/C++ supports the interface defined by the
+	Video Electronics Standards Association (VESA). VESA has defined a standard
+	interface for accessing the extended features of different SVGA adapters, and
+	this interface is widely supported by video hardware manufacturers. This allows
+	applications to run with virtually any adapter that is VESA- compliant.
+	
+	To obtain a copy of the VESA Super VGA Standard, write or call:
+	
+	  The Video Electronics Standards Association
+	  2150 N. 1st St., Suite 440
+	  San Jose, CA 95131-2020
+	  Phone (408) 435-0333
+	  Fax (408) 435-8225
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbhw kbGenInfo kbVC100 kbVC150 kbVC200 kbVC400 kbVC410 kbVC500 kbHardware kbArtTypeINF kbHOWTOmaster 
+	Technology        : kbVCsearch kbVC400 kbAudDeveloper kbvc150 kbvc100 kbVC410 kbVC500 kbVC200 kbVC32bitSearch kbVC500Search
+	Version           : :1.0,1.5,2.0,4.0,4.1,5.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

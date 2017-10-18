@@ -1,0 +1,348 @@
+---
+layout: page
+title: "Q111537: PC Win: Frequently Asked Questions for Mail for Windows 3.2"
+permalink: kb/111/Q111537/
+---
+
+## Q111537: PC Win: Frequently Asked Questions for Mail for Windows 3.2
+
+	Article: Q111537
+	Product(s): Microsoft Mail For PC Networks
+	Version(s): WINDOWS:3.0,3.0b,3.2
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 08-JUL-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Mail for Windows, versions 3.0, 3.0b, 3.2 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Below is a list of common questions and answers about versions 3.0, 3.0b, and
+	3.2 of Microsoft Mail for Windows.
+	
+	1. Q. Can I set the return receipt feature as the default for all messages?
+	
+	  A. This is not possible. You must set return receipt on a message-by- message
+	  basis.
+	
+	2. Q. How can I create Group folders in the Windows client?
+	
+	  A. You cannot create or delete Group folders in the Windows client. You must
+	  create or delete them using the MS-DOS client. If you have Mail for Windows
+	  version 3.0b or later, you can access Group folders that were created using
+	  the MS-DOS client. However, the Group folder will show up under Shared
+	  folders for everyone to see, but only members of the group will be permitted
+	  to access the folder.
+	
+	3. Q. What is MMF Recovery and how do I invoke it?
+	
+	  A. MMF Recovery is a procedure you can use to repair minor corruption in the
+	  Mail message file (MMF). If you have Mail for Windows version 3.0b or later,
+	  the MMF Recovery routine is built in. You can invoke it by holding down the
+	  SHIFT key as Mail is being loaded into memory.
+	
+	  NOTE: Do not invoke this process unless you have problems with your MMF. A
+	  side effect of this process is that it will create a backup file on each run.
+	  You will have to delete the backup manually. For more information about this
+	  backup file, please refer to article Q104362 in the Microsoft Knowledge Base.
+	
+	4. Q. On Novell NetWare, do I need File Scan to run MMF Recovery?
+	
+	  A. File Scan is not necessary as long as you have STORE.DLL version 3.2.0.4051
+	  or later, which is provided in version 3.2a of Microsoft Mail for PC
+	  Networks.
+	
+	  For information on obtaining this update, query on the following word in the
+	  Microsoft Knowledge Base:
+	
+	  " mailupd" (without the quotation marks)
+	
+	5. Q. Why don't I see my private folders that I created in the MS-DOS client?
+	
+	  A. Versions 3.0 and 3.2 of Microsoft Mail for Windows and Microsoft Mail for
+	  PC Networks, MS-DOS workstation, implement private folder storage in
+	  different ways. Mail for Windows stores private folders in the MMF and the
+	  MS-DOS client stores folders in the .FLD files within the postoffice database
+	  structure.
+	
+	  There is a Convert utility (CONVERT.EXE) you can run to convert your private
+	  folders from the MS-DOS client. Once converted, the private folders are
+	  stored in the MMF. Private folders created in Mail for Windows cannot be
+	  accessed using the MS-DOS client.
+	
+	6. Q. How can I force automatic compression of my MMF?
+	
+	  A. This is not compression per se; it is in effect an excess space collection
+	  routine, and by default it is already enabled to run in the background. To
+	  automatically begin this excess space collection routine (run in the
+	  foreground), hold down the F5 key as Mail is being loaded into memory. For
+	  more information about MMF compression, please refer to article Q93134 in the
+	  Microsoft Knowledge Base.
+	
+	7. Q. How can I change the print font in the Windows client?
+	
+	  A. You cannot control the print font. It will always print in Helvetica if you
+	  are looking at the normal view. If you choose View, Change Font, it will
+	  change to a fixed pitch font and will also print out in a fixed pitch font
+	  from this view. You can, however, change the font size by inserting
+	  PrintFont=x in the [Microsoft Mail] section of the MSMAIL.INI file. For more
+	  information about the PrintFont parameter, please refer to either of the
+	  following sources:
+	
+	   - Article Q86100 in the Microsoft Knowledge Base
+	
+	  -or-
+	
+	   - Pages 85-89 in Chapter 6 of the Microsoft Windows for Workgroups version
+	     3.1 Resource Kit.
+	
+	8. Q. Can I prevent importing the original message in my reply?
+	
+	  A. There is no way to disable the automatic import of the original message in
+	  your reply. If you want to delete the original message, press SHIFT+CTRL+END
+	  and then DELETE.
+	
+	9. Q. Attachments disappear when I do a Reply. How can I preserve them?
+	
+	  A. To preserve attachments, do a Forward rather than a Reply.
+	
+	10. Q. When I run the Setup program to install Mail for Windows, the blue screen
+	  flashes and nothing happens. Why?
+	
+	  A. If you run _MSSETUP.EXE instead of SETUP.EXE to install Mail for Windows,
+	  the file will delete itself and will not run the setup process. If you then
+	  run SETUP.EXE and _MSSETUP.EXE is not present in the same directory as
+	  SETUP.EXE, the blue setup screen will momentarily flash on the screen and
+	  quickly disappear because the Setup program is unable to find _MSSETUP.EXE.
+	  For more information about this Setup issue, please refer to article Q105107
+	  in the Microsoft Knowledge Base.
+	
+	11. Q. How do I move my MMF to my local computer?
+	
+	  A. Log in to Mail. From the Mail menu, choose Options and select the Server
+	  button. Select Local and specify a name for the Mail message file. Then
+	  select the OK button.
+	
+	12. Q. When I try to export a folder to a local drive, I am prompted for a
+	  password. Why?
+	
+	  A. To export your folders, you can do either of the following:
+	
+	   - Load SHARE.EXE into memory.
+	
+	   - Save the export file to the file server.
+	
+	13. Q. How can I install version 3.2 of Mail for Windows to run from the
+	  network?
+	
+	  A. The Microsoft Software Library file, SETUPD.EXE, outlines the procedure to
+	  install the Windows client on the Network. You can download SETUPD.EXE, a
+	  self-extracting file, on the following services:
+	
+	   - Microsoft's World Wide Web Site on the Internet On the www.microsoft.com
+	     home page, click the Support icon. Click Knowledge Base, and select the
+	     product. Enter kbfile SETUPD.EXE, and click GO! Open the article, and
+	     click the button to download the file.
+	
+	   - Internet (anonymous FTP) ftp ftp.microsoft.com Change to the
+	     Softlib/Mslfiles folder. Get SETUPD.EXE
+	
+	   - The Microsoft Network On the Edit menu, click Go To, and then click Other
+	     Location. Type "mssupport" (without the quotation marks). Double-click the
+	     MS Software Library icon. Find the appropriate product area. Locate and
+	     Download SETUPD.EXE.
+	
+	
+	For additional information about downloading, please see the following article in
+	the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	
+	14. Q. Where is the Polling Interval setting picked up from?
+	
+	  A. The first time you sign into mail, the setting in the Polling
+	  Interval=<entry> parameter in the MSMAIL.INI file comes into effect.
+	  Once you change the setting by choosing Options from the Mail menu, the
+	  value is stored in the MMF and is used from then on.
+	
+	15. Q. When I use the Send option in Word, it sends the document as unformatted
+	  text in the body of the mail message.
+	
+	  A. When you use Microsoft Word version 2.0 or 2.0a for Windows in conjunction
+	  with version 3.0 or 3.2 of Microsoft Mail for Windows, the Word Send option
+	  (from the File menu) sends the document as an attachment in icon form. If
+	  you use Word 2.0b or 2.0c for Windows, the Send option sends the document as
+	  unformatted text in the body of the mail message.
+	
+	  Word versions 2.0 and 2.0a use a macro to send documents as an attachment in
+	  icon form. Word versions 2.0b and later are MAPI aware applications and, for
+	  purposes of sending attachments, make calls to the Mail Messaging
+	  Application Programming Interface (MAPI). The Word document is not sent as
+	  an icon; it is converted to ASCII text and is sent as unformatted text in
+	  the body of the mail message. This is the default setting for Word 2.0b and
+	  later.
+	
+	  To change the default setting and enable you to send documents as an
+	  attachment in icon form, do the following:
+	
+	  1. In Microsoft Word, choose Options from the Tools menu and select General.
+	
+	  2. Under Settings, select the Send Mail As Attachment check box. Making this
+	     selection will force Word to send the document to Mail as an attachment in
+	     icon form, thus retaining the document's original formatting.
+	
+	16. Q. Where can I find details about the entries in the MSMAIL.INI file?
+	
+	  A. For more information about the entries in the MSMAIL.INI file, please
+	  refer to the following articles in the Microsoft Knowledge Base:
+	
+	  Article ID Contains information about entries in the
+	
+	  Q86094 [Address Book] section
+	
+	  Q86095 [Custom Commands] section
+	
+	  Q86096 [Custom Messages] section
+	
+	  Q86097 [MAC File Types] section
+	
+	  Q86098 [MS Proofing Tools] section
+	
+	  Q86099 [Custom Menus] section
+	
+	  Q86100 [Microsoft Mail] section
+	
+	  Q86101 [MMF] section
+	
+	  Q86102 [Providers] section
+	
+	  The Help file in the Windows Mail client is also a good source of
+	  information.
+	
+	17. Q. What are the means of notification available in the Windows client?
+	
+	  A. Version 3.0 of Microsoft Mail for Windows notifies you of new mail in
+	  three ways:
+	
+	   - The mouse arrow turns into an envelope. For example, if you are in a
+	     Windows application and new mail arrives, you'll see the arrow momentarily
+	     change to an envelope, then back to an arrow. In other words, the envelope
+	     flashes.
+	
+	   - When you have Mail minimized and new mail arrives, you will notice a
+	     letter sticking out of the slot of the Mail icon. If the slot is empty, no
+	     new mail has arrived.
+	
+	   - You can have your computer sound a wave file when new mail arrives. To do
+	     this, choose Options from the Mail menu and select Sound Chime. If you
+	     have a sound board, you should then choose the Sound icon from the Windows
+	     Control Panel. You will see an option for New Mail Notification, where you
+	     can assign a .WAV sound file. Then your computer will play the .WAV file
+	     when new mail arrives.
+	
+	18. Q. How can I get new messages on login?
+	
+	  A. Include "NewMsgsAtStartup=1" in the [Microsoft Mail] section of the
+	  MSMAIL.INI. If this entry is 1 Mail will download new messages on startup.
+	  The default is 0.
+	
+	19. Q. Why does the offline symbol(network disconnect icon) appear in the status
+	  bar?
+	
+	  A. An ownerless MMF on the postoffice of a Novell NetWare server may cause
+	  this symbol to appear. To assign ownership, the supervisor must run Filer
+	  (select the root of the postoffice when all users are off Mail) and change
+	  the entire directory tree to supervisor ownership.
+	
+	  Network problems that prevent Mail for Windows from writing to the MMF can
+	  bring up the network disconnect icon as well.
+	
+	20. Q. What is inbox shadowing?
+	
+	  A. Version 3.0 or later of Microsoft Mail for Windows has a feature named
+	  Inbox Shadowing. This feature is enabled in Mail for Windows when you
+	  selection Options from the Mail menu and choose the Server button. Then
+	  select the "Copy Inbox on Postoffice for Dialin Access" option and choose
+	  the OK button. The Copy Inbox option instructs Mail for Windows to
+	  synchronize its inbox with the inbox on the postoffice.
+	
+	  When you send a mail message, Microsoft Mail adds a header to the recipient's
+	  .MBG file that includes a pointer to the corresponding .MAI file. The .MBG
+	  file is the inbox for MS-DOS and Macintosh clients. Inbox Shadowing is
+	  necessary because Mail for Windows moves all messages in an individual's
+	  .MBG file into the user's MMF file. If Inbox Shadowing is not active when
+	  Mail for Windows moves a message into the MMF file, it flags the headers in
+	  the .MBG file as if the message was deleted and it deletes the corresponding
+	  .MAI files. In this case, the Inboxes for the MS-DOS and Macintosh clients
+	  are empty.
+	
+	21. Q. Is DDE supported?
+	
+	  A. Versions 3.0, 3.0b, and 3.2 of Microsoft Mail for Windows do not support
+	  Dynamic Data Exchange (DDE) calls. Mail for Windows is not designed to
+	  support DDE calls, as indicated in the Windows registration database.
+	
+	22. Q. How can I read a Word 6.0 attachment if I have Word 2.0?
+	
+	  A. Knowledge Base Article Q105773 contains information about converting from
+	  Microsoft Word for Windows, version 2.0, to Microsoft Word for Windows,
+	  version 6.0.
+	
+	
+	Word 2.0 will read your Word 6.0 documents, but you must first install the Word
+	6.0 converter, supplied with your Word 6.0 package, using the following
+	instructions. (If you do not have the Word 6.0 package, see below for
+	instructions on how to get the converter).
+	
+	a. If you did not install all the text converters when you installed Word 6.0,
+	  run Setup again and install them.
+	
+	b. Copy the MSWORD6.CNV file from the <WINDOWS>\MSAPPS\TEXTCONV
+	  subdirectory (where <WINDOWS> is the name of your Windows program
+	  directory) to your Word 2.0 program directory.
+	
+	c. Start Word 2.0.
+	
+	d. Open your Word 6.0 document. Word 2.0 automatically searches for and installs
+	  the Word 6.0 converter and converts your document. If the following error
+	  message appears, choose OK to continue:
+	
+	  The document template is not valid.
+	
+	If you do not have the Word 6.0 package, you can obtain the Word 6.0 converter
+	through any of the following options:
+	
+	- Phone the Microsoft Sales Information Center at (800) 426-9400. If you are
+	  outside the United States, contact the Microsoft subsidiary for your area. To
+	  locate your subsidiary, call Microsoft International Customer Service at
+	  (206) 936-8661.
+	
+	Important Points
+	
+	- This converter is intended for users of Word 2.0 for Windows who do not have
+	  access to Word 6.0. The converter has its own Setup program; setup
+	  instructions are included in the cover letter.
+	
+	- This converter will not run under Windows version 3.0.
+	
+	- The formatting features added in Word 6.0 that do not exist in Word 2.0 will
+	  not be retained during the conversion. A complete list of these features is
+	  included in the WRD6CONV.DOC file, which is installed with the converter.
+	
+	- This converter allows Word 2.0 to read documents created by Word 6.0.
+	
+	Additional query words: 3.00 3.00b 3.20 most frequently asked top ten
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMailSearch kbZNotKeyword3 kbMail300 kbMail320 kbMail300b
+	Version           : WINDOWS:3.0,3.0b,3.2
+	
+	=============================================================================
+	

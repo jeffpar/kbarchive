@@ -1,0 +1,98 @@
+---
+layout: page
+title: "Q156878: FIX: Checking Out .vbp Overwrites Unsaved Changes in Project"
+permalink: kb/156/Q156878/
+---
+
+## Q156878: FIX: Checking Out .vbp Overwrites Unsaved Changes in Project
+
+	Article: Q156878
+	Product(s): Microsoft SourceSafe
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbinterop kbSSafe400bug kbSSafe500bug kbSSafe600fix kbVBp400
+	Last Modified: 08-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual SourceSafe, 16-bit, for Windows, versions 4.0, 4.0a, 5.0 
+	- Microsoft Visual SourceSafe, 32-bit, for Windows versions 4.0, 4.0a, 5.0 
+	- Microsoft Visual SourceSafe for Windows, version 5.0 
+	- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If you have checked out and modified files from a project that is under
+	SourceSafe control without checking out the .vbp file, unsaved changes to those
+	files will be erased without warning if you then check out the .VBP.
+	
+	WORKAROUND
+	==========
+	
+	Either checkout the VBP file before modifying any file in the project or save
+	all modified files in the project before checking out the VBP file.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products listed at
+	the beginning of this article. This problem was corrected in Visual SourceSafe
+	version 6.0 for Windows.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Problem
+	--------------------------
+	
+	Steps one through five can be omitted if you already have a Visual Basic project
+	under SourceSafe control with all files checked in.
+	
+	1. Start Visual Basic 4.0. A default project is created.
+	
+	2. Save the project, form1.frm & project1.vbp, in a new directory such as
+	  C:\temp\testme.
+	
+	3. Click Yes in the messagebox asking you if the project should be added to
+	  SourceCode control.
+	
+	4. Click Create in the Add SourceSafe Project dialog, then click Yes when
+	  prompted to create the project. The default name is Project1.
+	
+	5. Add both files to the SourceSafe project in the Add to SourceSafe dialog. By
+	  default, both files are now checked in. In the Visual Basic 4.0 project
+	  window, form1.frm is now correctly marked as read-only.
+	
+	6. In the Visual Basic 4.0 project window, right-click the line containing
+	  form1.frm, and invoke the Check Out command.
+	
+	7. In the Check Out File(s) from SourceSafe dialog, only form1.frm is selected.
+	  Click OK to check out only form1.frm. Do not check out project1.vbp. The
+	  bitmap in the Visual Basic 4.0 project window now shows that form1.frm is
+	  checked out.
+	
+	8. Click View Form in the Visual Basic project window and make some changes to
+	  the form, such as placing a Command button on the form.
+	
+	9. Right-click again on form1.frm in the Visual Basic 4.0 project window, and
+	  choose the Check Out command. You will find only project1.vbp in the list of
+	  Files to be checked out. Select the file and check it out. Note that
+	  Form1.frm is replaced by its previous version without any warning.
+	
+	The same behavior, such as unsaved changes being overwritten, will happen to any
+	component in the project when the VBP file is checked out.
+	
+	Additional query words: module
+	
+	======================================================================
+	Keywords          : kbinterop kbSSafe400bug kbSSafe500bug kbSSafe600fix kbVBp400 
+	Technology        : kbVBSearch kbSSafeSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch kbSSafe400 kbSSafe400a kbSSafe500 kbSSafe16bitSearch kbSSafe32bitSearch
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

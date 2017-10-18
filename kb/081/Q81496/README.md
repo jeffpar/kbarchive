@@ -1,0 +1,317 @@
+---
+layout: page
+title: "Q81496: Modules, Instances, and Tasks"
+permalink: kb/081/Q81496/
+---
+
+## Q81496: Modules, Instances, and Tasks
+
+	Article: Q81496
+	Product(s): Microsoft Windows Software Development Kit
+	Version(s): WINDOWS:3.1,3.11
+	Operating System(s): 
+	Keyword(s): kbfile kbsample kb16bitonly kbOSWin310 kbOSWin300
+	Last Modified: 10-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows Software Development Kit (SDK) versions 3.1, 3.11 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The following is the text of the article "Modules, Instances, and Tasks". This
+	article is available in Windows Help file format in the Microsoft Software
+	Library in addition to the text presented below.
+	
+	MORE INFORMATION
+	================
+	
+	The following files are available for download from the Microsoft Download
+	Center:
+	
+	Mti.exe
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. Once posted, the file is housed on secure
+	servers that prevent any unauthorized changes to the file.
+	
+	
+	This article discusses modules, instances, and tasks. It covers the following
+	topics:
+	
+	- Definitions of module, instance, and task handles
+	
+	- Microsoft(R) Windows(TM) functions that deal with these handles
+	
+	- Exporting and the MakeProcInstance function
+	
+	- Task switching and yielding
+	
+	OVERVIEW
+	--------
+	
+	The Microsoft Windows graphical environment defines two types of executable
+	files: applications and dynamic-link libraries (DLLs). The code in both types is
+	normally sharable. Multiple instances of an application or multiple users of a
+	DLL can share code loaded by the first instance. Most Windows-based applications
+	and DLLs also contain resources that are sharable in the same manner. When
+	Windows loads an application or a DLL into memory for the first time, it assigns
+	a unique identifier, called a module handle, or an hModule, to the shared code
+	and resources.
+	
+	When Windows loads an application, it creates a unique execution context for the
+	application to distinguish it from other running copies of the same application.
+	This execution context is given an identifier called an instance handle, or an
+	hInstance. Part of the execution context for an application is its automatic
+	data segment, where the application's static data, stack, and local heap reside.
+	Two running copies of an application share code, but each has its own data
+	segment. DLLs differ from applications in that all instances of a DLL share the
+	same execution context, and therefore share a common data segment.
+	
+	Part of the execution context of an application is defined by a set of CPU
+	registers and a stack. This portion of the execution context (a task context) is
+	given a special identifier called a task handle, or an hTask. Every loaded
+	application has its own task handle, but task handles are never associated with
+	DLLs. Therefore, the automatic data segment of a DLL never contains a stack.
+	
+	Windows can easily obtain a module handle from an instance handle because an
+	execution context is always associated with only one module. Because a module
+	can have more than one running instance, however, obtaining an instance handle
+	given only the module handle is impossible.
+	
+	DEALING WITH HMODULE AND HINSTANCE
+	----------------------------------
+	
+	Module and instance handles are used inconsistently in the Microsoft Windows
+	Software Development Kit (SDK) documentation. For example, LoadLibrary is
+	documented to return an hInstance, but FreeLibrary takes an hModule. How can you
+	free a library if Windows provides no obvious way to convert an hInstance to an
+	hModule?
+	
+	A number of the Windows-based application programming interfaces (APIs) that are
+	documented as accepting only a module handle are defined incorrectly: Most can
+	take an instance handle or a module handle. FreeLibrary, for example, can accept
+	either a module handle or an instance handle. The following APIs are documented
+	incorrectly; the following short descriptions of what the function does are
+	correct:
+	
+	  DeviceMode,         Obtain and set printer configuration data. Pass
+	  ExtDeviceMode       the hModule or the hInstance of a printer driver.
+	                      (Printer drivers are simply DLLs.)
+	
+	  FreeLibrary         Identical to FreeModule but is provided for
+	                      symmetry with LoadLibrary. FreeLibrary accepts
+	                      either an hModule or an hInstance. Usually only
+	                      DLLs that are loaded by LoadLibrary are freed with
+	                      FreeLibrary because implicitly loaded DLLs are
+	                      freed by Windows when the application using the
+	                      DLL is terminated.
+	
+	  FreeModule          Normally called with an hInstance but also takes
+	                      an hModule. For applications, all instance-
+	                      specific data associated with the hInstance passed
+	                      is freed. FreeModule also decrements the usage
+	                      count of the associated module, and if the usage
+	                      count becomes 0, the module is freed. For DLLs,
+	                      the window exit procedure (WEP) is called, and
+	                      instance-specific data is freed before the module
+	                      is freed. The FreeModule function should have been
+	                      named FreeInstance.
+	
+	  GetModuleFileName   Returns the full path of the executable file (EXE
+	                      or DLL) for a module. This API takes either an
+	                      hModule or an hInstance.
+	
+	  GetModuleHandle     Returns the hModule of a module given the module
+	                      name or an instance handle. The module name is not
+	                      always the same as the filename of the file from
+	                      which the module was loaded. The module name is
+	                      specified in the module definition file (DEF) when
+	                      the module is created (NAME and LIBRARY
+	                      statements). Most, but not all, applications and
+	                      DLLs specify a module name that is equivalent to
+	                      its root filename (the filename without the
+	                      extension). Modules that have different module
+	                      names and filenames may experience problems when
+	                      the module is debugged because some debuggers
+	                      assume they are equivalent. You can use an
+	                      instance handle in place of the module name by
+	                      passing the hInstance in the low word and a NULL
+	                      in the high word of the lpModuleName parameter.
+	
+	  GetModuleUsage      Returns the usage count of a module. This function
+	                      accepts either an hModule or an hInstance. The
+	                      usage count is incremented each time a new
+	                      instance of the module is loaded, and it is
+	                      decremented each time an instance is freed.
+	
+	  GetProcAddress      Obtains the address of a specified function in a
+	                      module. Either an hModule or an hInstance can be
+	                      passed to the function.
+	
+	  LoadLibrary         Loads a DLL. If the DLL is not already loaded,
+	                      LoadLibrary creates a module and an execution
+	                      context for it. If the DLL is already loaded,
+	                      LoadLibrary simply increments the module's usage
+	                      count (no new execution context is created because
+	                      all instances of a DLL share the same execution
+	                      context). In both cases, the function returns the
+	                      hInstance for the DLL.
+	
+	  LoadModule          Loads an application. If the application is
+	                      already loaded, LoadModule increments the module's
+	                      usage count and creates a new execution context
+	                      and task context. This function returns the
+	                      hInstance of the application just started.
+	
+	  WinExec             Operates exactly the same as LoadModule but is
+	                      easier to use.
+	
+	At this point you may be asking, "If an instance handle can be used in place of a
+	module handle, why have module handles at all? Why not just have instance
+	handles and be done with it?" Good question. The answer is that it really
+	doesn't matter. You can just write applications using instance handles rather
+	than module handles for the functions above. This is good news because instance
+	handles are much easier to obtain than module handles. For example, calling
+	GetWindowWord with GWW_HINSTANCE obtains the instance handle of the application
+	or the DLL that created a window. This instance handle can then be used to
+	determine the module filename of the application that created the window. No
+	equivalent way exists to do this using module handles.
+	
+	Actually, module handles have a real use. Internally, Windows uses module handles
+	to tag certain resources, such as window classes and hooks, that are associated
+	with a module and not with a particular instance of a module. These resources
+	are not freed until the last instance of the module is freed.
+	
+	Although undocumented in Windows version 3.0, obtaining a module handle from an
+	instance handle is possible. Calling the GetModuleHandle function with the low
+	word of the lpModuleName parameter set to an hInstance and the high word of the
+	same parameter set to NULL returns the module handle of the specified hInstance.
+	The version 3.1 WINDOWS.H file contains a macro, GetInstanceModule, that does
+	this for you.
+	
+	INSTANCE HANDLE API FUNCTIONS
+	-----------------------------
+	
+	The following Windows functions deal with instance handles:
+	
+	  Resource functions:      AccessResource, AllocResource, CreateIcon,
+	                           FindResource, LoadAccelerators, LoadBitmap,
+	                           LoadCursor, LoadIcon, LoadMenu, LoadResource,
+	                           LoadString, SetResourceHandler,
+	                           SizeofResource
+	
+	  Window functions:        CreateDialog, CreateDialogParam,
+	                           CreateDialogIndirect,
+	                           CreateDialogIndirectParam, CreateWindow,
+	                           CreateWindowEx, DialogBox, DialogBoxParam,
+	                           DialogBoxIndirect, DialogBoxIndirectParam
+	
+	  Class functions:         GetClassInfo, RegisterClass, UnregisterClass
+	
+	  Miscellaneous functions: GetInstanceData, MakeProcInstance, WinMain
+	
+	EXPORTED FUNCTIONS
+	------------------
+	
+	Execution usually enters a module's code through exported entry points. If an
+	application has multiple instances, the exported entry points must be able to
+	set the proper data segment upon entry. This applies to all functions that are
+	the target of a call from another module, such as functions in an application
+	that Windows calls (dialog procedures, callback functions, and so on). But
+	exporting alone is not enough to set the proper data segment. For each instance
+	of the application, these functions need a unique entry point, which can set the
+	proper data segment and then jump to the "real" function. The MakeProcInstance
+	function is used for this purpose. It takes a pointer to an exported function
+	and an instance handle and creates a call thunk. A call thunk is merely a piece
+	of code that moves the specific instance's data segment value into the AX
+	register and then jumps to the real function. Exported functions expect the
+	appropriate data segment value to be passed in the AX register, and move the
+	value to the DS register in the function prolog. The application uses the
+	pointer to the call thunk returned by MakeProcInstance in place of the pointer
+	to the real function in calls such as DialogBox and EnumWindows.
+	
+	Window procedures do not need call thunks. When an application creates a window,
+	it supplies an hInstance value on the CreateWindow call. This value is saved
+	internally, and Windows uses it to set the proper AX value before dispatching
+	messages to a window procedure. Dialog procedures, on the other hand, are not
+	real window procedures and do need call thunks.
+	
+	Exported functions that reside in a DLL also don't require call thunks. Because
+	all users of a DLL share the same instance, creating call thunks for them is not
+	necessary.
+	
+	TASKS
+	-----
+	
+	A task can be thought of as a "logical CPU" with its own CS:IP, stack, and
+	registers. A task can execute code from any number of modules. As execution
+	enters a module (usually through an exported entry point), the current task
+	handle remains unchanged, but the function's prolog code sets the proper
+	execution context, that is, the proper data segment.
+	
+	Task switching occurs when an application calls a Windows function that gives up
+	control of the system, a procedure known as yielding. Because Windows is a
+	nonpreemptive multitasking system, applications must periodically give up
+	control of the system to allow other applications to run. The following
+	functions can cause the calling task to yield:
+	
+	- DialogBox, DialogBoxParam, DialogBoxIndirect, DialogBoxIndirectParam
+	
+	- DeviceMode, ExtDeviceMode (These can display a dialog box.)
+	
+	- GetDC (Only if all device contexts [DCs] are in use.)
+	
+	- GetMessage, PeekMessage, WaitMessage
+	
+	- MessageBox
+	
+	- Yield
+	
+	Along with the functions on this list, any function that sends a message to
+	another application (such as SendMessage) can cause a temporary task switch
+	while the target application processes the message. Few Windows functions deal
+	with tasks. Applications seldom need to obtain or use their task handle.
+	Usually, task handles are used only for identification. The only functions that
+	accept or return task handles are GetCurrentTask, EnumTaskWindows, and
+	PostAppMessage. Enumerating all tasks currently running is not possible, using
+	the standard Windows functions. Applications that need this information can use
+	the Toolhelp library, which provides a function for this purpose.
+	
+	Because DLLs are not instanced under Windows (that is, all instances share the
+	same DS), creating a server-type DLL that can provide services to multiple
+	simultaneous clients is not straightforward. The problem is knowing which client
+	is requesting service at any point. Some DLLs call the GetCurrentTask function
+	to retrieve the current task's hTask and then tag a data structure or some other
+	data item with this task handle. Then, each time a request for service is made,
+	the DLL checks its list of known client task handles with the current task. This
+	solution has only one flaw. Task handles are actually global handles to an
+	internal data structure that describes the task. Global handles can be reused.
+	If one task terminates and another starts, the new task can have the same task
+	handle as the task just terminated. This is not a problem to a server DLL as
+	long as the DLL knows that the original task terminated. Even if a client
+	application is written to disconnect from a server DLL before terminating, an
+	abnormal termination of the application can still cause the problem just
+	described. In this case, the server DLL doesn't know the task terminated. Rather
+	than hacking around this problem, DLLs in this situation can easily use the
+	Toolhelp notification services to detect when a particular task terminates.
+	
+	Copyright 1992 by Microsoft Corporation. All rights reserved.
+	
+	Additional query words: 0 softlib MTI.EXE
+	
+	======================================================================
+	Keywords          : kbfile kbsample kb16bitonly kbOSWin310 kbOSWin300 
+	Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310 kbWinSDK311
+	Version           : WINDOWS:3.1,3.11
+	
+	=============================================================================
+	

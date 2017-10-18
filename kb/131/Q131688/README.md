@@ -1,0 +1,85 @@
+---
+layout: page
+title: "Q131688: Mac Bookshelf '95: Manual Installation Instructions"
+permalink: kb/131/Q131688/
+---
+
+## Q131688: Mac Bookshelf '95: Manual Installation Instructions
+
+	Article: Q131688
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): 1995 edition
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 11-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Bookshelf for the Macintosh 1995 edition 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article tells how to manually install Bookshelf 1995 for the Macintosh.
+	
+	MORE INFORMATION
+	================
+	
+	The system resource files required to operate Bookshelf 1995 are in compressed
+	format on the CD-ROM. During a normal installation process each of the files is
+	decompressed and stored in the correct location on your hard drive.
+	
+	However, because compressed files can not be copied to the computer from the
+	Bookshelf CD-ROM, the required system files listed below, must be installed
+	already on the computer. If these items are not present, features within
+	Bookshelf may not operate properly. Also, the appearance of Bookshelf fonts may
+	be incorrect.
+	
+	Name Of Required Item            Required Folder Location
+	---------------------            ------------------------
+	
+	QuickTime version 2.0            System Folder: Extensions Folder
+	QuickTime PowerPlug              System Folder: Extensions Folder
+	QuickTime Musical Instruments    System Folder: Extensions Folder
+	Sound Manager 3.0                System Folder: Extensions Folder
+	Sound                            System Folder: Control Panels
+	Apple Multimedia Tuner           System Folder: Extensions Folder
+	Arial, Bookshelf Fonts, Symbol   System Folder: Fonts Folder
+	
+	NOTE: QuickTime PowerPlug is necessary only for the Power Macintosh. Sound
+	Manager is only required for computers running system versions earlier than
+	7.5.3.
+	
+	To manually install Bookshelf, follow the steps below:
+	
+	NOTE: The following steps discuss creating and copying folders and files. For
+	more information about how to accomplish these tasks, see your printed Macintosh
+	documentation or online help.
+	
+	1. Create the following new folder on your hard drive:
+	
+	  Bookshelf 95
+	
+	2. From the Bookshelf CD-ROM locate and copy the following items to the new
+	  folder:
+	
+	  Bookshelf 95
+	  Bookshelf Lexicon
+	  Bookshelf 95 ReadMe
+	  Setup Folder
+	
+	3. The manual installation is complete.
+	
+	4. Restart the computer and start Bookshelf from your hard drive.
+	
+	Additional query words: kbhowto mac 1995 multi media multimedia multi- mmtitles kbmm
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbHWMAC kbOSMAC kbHomeMMsearch kbBookshelfSearch kbBookShelf1995Mac
+	Version           : :1995 edition
+	
+	=============================================================================
+	

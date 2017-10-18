@@ -1,0 +1,169 @@
+---
+layout: page
+title: "Q95722: How to Export Memo Fields to an ASCII File"
+permalink: kb/095/Q95722/
+---
+
+## Q95722: How to Export Memo Fields to an ASCII File
+
+	Article: Q95722
+	Product(s): Microsoft FoxPro
+	Version(s): 2.5x 2.6x 3.00 | 2.00 2.5x 2.6x
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 20-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 6.0 
+	- Microsoft FoxPro for Windows, versions 2.5x, 2.6x 
+	- Microsoft FoxPro for MS-DOS, versions 2.0, 2.5x, 2.6x 
+	- Microsoft FoxPro for Macintosh, versions 2.5x, 2.6a 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The COPY TO <filename> TYPE DELIMITED command ignores memo fields. To
+	create an ASCII, delimited file from a .DBF file that contains memo fields, you
+	must either convert the memo fields to character fields or use low-level file
+	I/O commands.
+	
+	MORE INFORMATION
+	================
+	
+	The following examples assume the .DBF file has the following structure:
+	
+	  FIELD NAME            TYPE
+	  Numfield              Numeric
+	  Memo1                 Memo
+	  Charfield             Character
+	
+	Method 1 (For FoxPro 2.x Only)
+	------------------------------
+	
+	To convert the memo field to a character field:
+	
+	1. In the Command window, type:
+	
+	  USE <database name>
+	
+	2. From the Database menu, choose Setup.
+	
+	3. In the Setup dialog box, choose the Modify button.
+	
+	4. In the Structure dialog box, add a field "Newchar" of type character. The
+	  length of the character field should be large enough to accommodate the
+	  largest memo field.
+	
+	5. To save your changes, choose the OK button in the Structure dialog box,
+	  choose the Yes button in the "Make structure changes permanent?" message box,
+	  and choose the OK button in the Setup dialog box.
+	
+	6. In the Command window, type:
+	
+	  REPLACE ALL newchar WITH memo1
+	
+	You can now create an ASCII, delimited file from the database with the following
+	command:
+	
+	  COPY TO <filename> FIELDS numfield, charfield, newchar ;
+	  TYPE DELIMITED
+	
+	The limitation of this method is that the maximum number of characters allowed in
+	a character field is 254. If the memo field is longer than this, it will be
+	truncated.
+	
+	Method 1 (For Visual FoxPro)
+	----------------------------
+	
+	To convert the memo field to a character field:
+	
+	1. In the Command window, type:
+	
+	  USE <database_name>! <table_name>
+	
+	2. From the Window menu, choose View.
+	
+	3. In the View dialog box, choose the Properties button.
+	
+	4. In the Work area Properties dialog box, choose Modify.
+	
+	5. In the Table designer dialog box, add a field "Newchar" of type Character.
+	  The length of the character field should be large enough to accommodate the
+	  largest memo field.
+	
+	6. To save your changes, choose the OK button in the Table designer dialog box,
+	  choose the Yes button in the "Make structure changes permanent?" dialog box,
+	  and choose the OK button in the Work area Properties dialog box.
+	
+	7. In the Command window, type:
+	
+	  REPLACE ALL newchar WITH memo1
+	
+	You can now create an ASCII-delimited file from the database with the following
+	command:
+	
+	  COPY TO <filename> FIELDS numfield, charfield, newchar ;
+	  TYPE DELIMITED
+	
+	The limitation of this method is that the maximum number of characters allowed in
+	a character field is 254. If the memo field is longer than this, it will be
+	truncated.
+	
+	Method 2
+	--------
+	
+	This method uses low-level file I/O commands to create the ASCII, delimited file.
+	The file created is in the same format as a file created with the COPY TO
+	<filename> TYPE DELIMITED command; that is, fields are separated by
+	commas, and character fields are enclosed in quotation marks. The following
+	example assumes that the database is named "mydata", and that the memo field is
+	to be treated as a character field:
+	
+	     handle=FCREATE('c:\mytext.txt')
+	     IF handle < 0
+	       WAIT WINDOW "Unable to create file"
+	       RETURN
+	     ENDIF
+	     USE mydata
+	     SCAN
+	       *Numeric values must be converted to characters before
+	       *writing them to a text file.
+	       *The following line converts the number to a string
+	       =FWRITE(handle,ALLTRIM(STR(numfield))+",")
+	       *The following sends open quotes for the memo field
+	       =FWRITE(handle,CHR(34))
+	       x=MEMLINES(memo1)
+	       FOR i = 1 TO x
+	         =FWRITE(handle,MLINE(memo1,i))
+	         *The following line inserts a space before writing the next
+	         *line from the memo field
+	         =FWRITE(handle," ")
+	       ENDFOR
+	       *the following line adds close quotes and a delimiter
+	       *after the memo field
+	       =FWRITE(handle,CHR(34)+",")
+	       *the following line uses FPUTS to end a record with a
+	       *carriage return and linefeed
+	       =FPUTS(handle,CHR(34)+ALLTRIM(charfield)+CHR(34))
+	     ENDSCAN
+	     =FCLOSE(handle)
+	
+	REFERENCES
+	==========
+	
+	FoxPro version 2.0 for MS-DOS "Interface Guide," "Modifying Database Structure"
+	
+	FoxPro version 2.0 for MS-DOS "Developer's Guide," "Low-Level File I/O"
+	
+	Additional query words: VFoxWin FoxDos FoxWin FoxMac 2.50 2.50a 2.50b 2.60 memo export kbvfp300 kbvfp600 kbMac
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro260aMac kbFoxPro200DOS kbVFP300 kbVFP600
+	Version           : 2.5x 2.6x 3.00 | 2.00 2.5x 2.6x
+	
+	=============================================================================
+	

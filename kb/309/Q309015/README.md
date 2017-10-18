@@ -1,0 +1,86 @@
+---
+layout: page
+title: "Q309015: ODBC Provider for DB2 Doesn't Allow &quot;Blank&quot; Local APPC LU Alias"
+permalink: kb/309/Q309015/
+---
+
+## Q309015: ODBC Provider for DB2 Doesn't Allow &quot;Blank&quot; Local APPC LU Alias
+
+	Article: Q309015
+	Product(s): Microsoft SNA Server
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbDSupport
+	Last Modified: 09-OCT-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Host Integration Server 2000 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The Microsoft ODBC Driver for DB2 Configuration dialog box does not allow a
+	blank Local APPC LU alias to be specified when you are creating a data source
+	name (DSN).
+	
+	CAUSE
+	=====
+	
+	The ODBC Provider for DB2 handles the Local APPC LU alias parameter as a
+	required field and does not allow the field to be left blank. The ODBC DSN
+	configuration interface requires that a Local APPC LU alias be selected from the
+	dropdown list or that the field be manually filled in.
+	
+	WORKAROUND
+	==========
+	
+	Although the ODBC DSN interface does not allow the Local APPC LU alias field to
+	be left blank, you can instead enter 8 spaces in the field. This gives the same
+	effect as using a blank Local APPC LU alias and bypasses the graphical user
+	interface restriction that requires that the field be nonblank.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft Host Integration
+	Server 2000.
+	
+	
+	MORE INFORMATION
+	================
+	
+	The use of a blank Local APPC LU alias is desired to provide optimum Advanced
+	Program-to-Program (APPC) load balancing when you are using Host Integration
+	Server (HIS) 2000 or SNA Server.
+	
+	For APPC load balancing in HIS 2000, an invoking APPC application must specify a
+	blank Local LU Alias in its TP_STARTED request. Once that request is received by
+	the HIS 2000 server, there are two methods the server tries to assign a local LU
+	to the application:
+	
+	1. User or group APPC default LUs are used.
+	
+	2. One or more local LUs are designated as members of the default outgoing local
+	  APPC LU pool.
+	
+	If both of these attempts fail, the SNA server rejects the request.
+	
+	For additional information, click the article number below to view the article in
+	the Microsoft Knowledge Base:
+	
+	  Q128244 INFO: SNA Server Load Balancing and Hot Backup
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbDSupport 
+	Technology        : kbAudDeveloper kbHostIntegServ2000
+	Version           : :
+	Issue type        : kbbug
+	Solution Type     : kbnofix
+	
+	=============================================================================
+	

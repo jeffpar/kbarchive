@@ -1,0 +1,324 @@
+---
+layout: page
+title: "Q308202: HOW TO: Create and Configure a Catalog for Indexing"
+permalink: kb/308/Q308202/
+---
+
+## Q308202: HOW TO: Create and Configure a Catalog for Indexing
+
+	Article: Q308202
+	Product(s): Internet Information Server
+	Version(s): 2000
+	Operating System(s): 
+	Keyword(s): kbhowto kbAudITPro
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows XP Professional 
+	- Microsoft Windows 2000 Advanced Server 
+	- Microsoft Windows 2000 Server 
+	- Microsoft Windows 2000 Professional 
+	- Microsoft Small Business Server 2000 
+	-------------------------------------------------------------------------------
+	
+	
+	IN THIS TASK
+	
+	- SUMMARY
+	
+	   - Create a New Catalog
+	- Define the Scope of the Catalog
+	- Configure the Catalog
+	- Troubleshooting
+	
+	   - No Results Are Displayed in Search Results
+	- Disk Is Full
+	- Specific Documents Are Not Indexed
+	- Network Connection Is Lost
+	
+	- REFERENCES
+	
+	SUMMARY
+	=======
+	
+	This step-by-step article describes how to create and configure a catalog for
+	indexing in Windows 2000. Windows 2000 Indexing Service creates an index of
+	document content and properties (such as file name, date created, date modified,
+	author name, and number of characters) on your local hard disks and on shared
+	network drives. The index information is stored in catalogs.
+	
+	After you create an index of documents and start Indexing Service (it is not
+	started by default), you can use any of the following methods to perform queries
+	to search the index for specific text in documents or document properties:
+	
+	- Start Microsoft Windows Explorer, and then click Search.
+	
+	- Click Search on the Start menu.
+	
+	- Use the Indexing Service query form. To do this, start the Indexing Service
+	  snap-in, click to expand the catalog that you want to search, and then click
+	  "Query the Catalog". The query form is displayed in the right pane.
+	
+	- Use a Web browser to submit a query in a Web page that was created by a Web
+	  master or administrator.
+	
+	When Indexing Service is installed with Windows 2000, the following catalogs are
+	automatically created:
+	
+	- System catalog: By default, the System catalog lists all folders on all
+	  permanently attached disk drives. It contains an index for all file system
+	  documents (except certain system and temporary files). The System catalog is
+	  created in the volume of your hard disk that has the greatest available free
+	  space.
+	
+	- Web catalog: If Internet Information Services (IIS) is installed, Indexing
+	  Service creates a Web catalog that contains an index of IIS content. By
+	  default, the Web catalog is created in the Inetpub folder.
+	
+	You can add and remove additional catalogs or configure existing catalogs to meet
+	your requirements at any time.
+	
+	Create a New Catalog
+	--------------------
+	
+	To create a new catalog:
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click Administrative Tools, and then double-click Computer Management.
+	
+	3. In the console tree, double-click "Services and Applications", and then
+	  double-click Indexing Service.
+	
+	4. Right-click Indexing Service, point to New, and then click Catalog.
+	
+	5. In the Name box, type a name for your new catalog.
+	
+	6. Click Browse, click the folder in which you want your new catalog located,
+	  and then click OK twice.
+	
+	7. When you receive the "Catalog will remain off-line until Indexing Service is
+	  restarted" message, click OK.
+	
+	The new catalog is created and is listed under Indexing Service in the console
+	tree.
+	
+	Define the Scope of the Catalog
+	-------------------------------
+	
+	After you create a new catalog, you must add the folders that you want included
+	in the catalog's scope. The scope is the set of folders that is included in and
+	excluded from the catalog; the scope defines the content that is included and
+	excluded from the index. For each folder that is included or excluded, all of
+	its subfolders are also included or excluded.
+	
+	To define the scope of the catalog:
+	
+	1. In the console tree, double-click the catalog to expand the container (if it
+	  is not already expanded).
+	
+	2. Right-click Directories, point to New, and then click Directory.
+	
+	3. Click Browse, locate and click the folder that you want to add, and then
+	  click OK.
+	
+	  If the folder that you add is located on a different computer, follow these
+	  steps:
+	
+	  a. In the User Name box under Account Information, type the domain and user
+	     name of a user account that has permission to access that computer, for
+	     example, "<domain>\<username>" (without the quotation marks).
+	
+	  b. In the Password box, type the password that is associated with the user
+	     account.
+	
+	  c. In the Alias (UNC) box, type the Uniform Naming Convention (UNC) path to
+	     the folder, for example, "\\<computername><\sharename>"
+	     (without the quotation marks).
+	
+	4. Under "Include in Index", perform one of the following tasks:
+	
+	   - Click Yes if you want to include the folder in the catalog.
+	
+	     -or-
+	
+	   - Click No if you want to exclude the folder from the catalog.
+	
+	5. Click OK.
+	
+	6. Repeat steps 2 through 5 to add additional folders to your catalog.
+	
+	7. If Indexing Service is running, right-click Indexing Service in the console
+	  tree, and then click Stop.
+	
+	8. Right-click Indexing Service, and then click Start.
+	
+	The folders that you specified are now added and are either included or excluded
+	from the catalog. When you click Directories, the folders are listed in the
+	details pane of the Indexing Service dialog box.
+	
+	NOTES:
+	
+	- If the catalog is tracking a Web server, folders are added automatically.
+	
+	- If you do not want an NTFS file system file or folder included in the index,
+	  follow these steps:
+	
+	  a. Start Windows Explorer, and then locate and click the file or folder that
+	     you do not want to index.
+	
+	  b. On the File menu, click Properties.
+	
+	  c. Click the General tab, and then click Advanced.
+	
+	  d. In the Advanced Attributes dialog box, click to clear the "For fast
+	     searching, allow Indexing Service to index this file" check box.
+	
+	Configure the Catalog
+	---------------------
+	
+	To configure the catalog:
+	
+	1. In the Indexing Service dialog box, right-click the catalog that you want to
+	  configure, and then click Properties.
+	
+	2. Click the General tab, and then click the Tracking tab.
+	
+	3. Under Inheritable Settings, perform one of the following tasks:
+	
+	   - If you want Indexing Service to use the share name of any shared folder as
+	     the alias for that folder, click to clear the "Inherit above settings from
+	     Service" check box, and then click to select the "Add Network Share Alias
+	     Automatically" check box.
+	
+	     -or-
+	
+	   - If you want to use the same settings as the service, click to select the
+	     "Inherit above settings from Service" check box (if it is not already
+	     selected).
+	
+	4. If IIS is installed on your computer and you want to index a Web server,
+	  click the Web server that you want to index in the WWW Server box.
+	
+	5. If the NNTP Service is installed and running on your computer and you want to
+	  index virtual news servers, click the NNTP virtual server that you want to
+	  use in the NNTP Server box.
+	
+	6. Click the Generation tab.
+	
+	7. Under Inheritable Settings, perform one or more of the following tasks:
+	
+	   - If you want to index files with unknown extensions, click to clear the
+	     "Inherit above settings from Service" check box, and then click to select
+	     the "Index files with unknown extensions" check box.
+	
+	   - If you want to generate abstracts for files that are found in a search,
+	     click to clear the "Inherit above settings from Service" check box, click
+	     to select the "Generate abstracts" check box, and then type a size limit
+	     for the abstracts in the "Maximize size" box.
+	
+	   - If you want to use the same settings as the service, click to select the
+	     "Inherit above settings from Service" check box (if it is not already
+	     selected).
+	
+	8. Click OK.
+	
+	9. If Indexing Service is started, right-click Indexing Service in the console
+	  tree, and then click Stop.
+	
+	10. Right-click Indexing Service, and then click Start.
+	
+	Users can now search the index for documents that contain specific words,
+	phrases, or properties.
+	
+	Troubleshooting
+	---------------
+	
+	No Results Are Displayed in Search Results:
+	
+	If the search does not return the expected search results when you query the
+	index, index data may be corrupted.
+	
+	To troubleshoot this issue, stop and restart Indexing Service to reindex all
+	documents:
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click Administrative Tools, and then double-click Computer Management.
+	
+	3. In the console tree, double-click "Services and Applications".
+	
+	4. Right-click Indexing Service, and then click Stop.
+	
+	5. Right-click Indexing Service, and then click Start.
+	
+	Disk Is Full:
+	
+	Indexing pauses temporarily if the volume in which the catalog is stored is low
+	on disk space. If there is very little disk space available (less than 20 MB),
+	Indexing Service pauses until more disk space is freed up. A message is logged
+	in the Event Viewer Application log when disk space on the volume that contains
+	the catalog starts to fill up.
+	
+	To troubleshoot this issue, monitor the Application Log in Event Viewer for these
+	messages, and then free up disk space when necessary.
+	
+	Specific Documents Are Not Indexed:
+	
+	If Indexing Service detects corrupted files or if it continually has problems
+	accessing particular documents, those documents are marked as unindexed.
+	
+	To troubleshoot this issue, use the Indexing Service query form to generate a
+	list of unindexed documents:
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click Administrative Tools, and then double-click Computer Management.
+	
+	3. In the console tree, double-click "Services and Applications", and then
+	  double-click Indexing Service.
+	
+	4. Click "Query the Catalog".
+	
+	5. In the "Enter your free text query below" box, type "@unfiltered=true"
+	  (without the quotation marks), and then click Search.
+	
+	  A list of unindexed documents is displayed below the query form in the details
+	  pane. If a specific type of document is not indexed consistently, investigate
+	  possible issues with the filter that is used to index those documents.
+	
+	Network Connection Is Lost:
+	
+	If folders in a catalog are located on remote computers, and the connection to
+	those network shares is lost, Indexing Service detects and scans the network
+	shares to determine when the connection is active again. You do not need to
+	reconfigure the catalog.
+	
+	REFERENCES
+	
+	For additional information about how to configure Indexing Service to use the
+	neutral word breaker, click the article number below to view the article in the
+	Microsoft Knowledge Base:
+	
+	  Q271818 How to Configure Windows 2000 Indexing Service to Use the Neutral
+	  Word Breaker
+	
+	For additional information about how to set up Windows 2000 Indexing Service as a
+	generic clustered service, click the article number below to view the article in
+	the Microsoft Knowledge Base:
+	
+	  Q292542 HOWTO: Set Up Windows 2000 Indexing Service as a Generic Clustered
+	  Service
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbhowto kbAudITPro 
+	Technology        : kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWinXPPro kbSBServSearch kbWinAdvServSearch kbZNotKeyword3 kbSBServ2000 kbWinXPProSearch kbWinXPSearch
+	Version           : :2000
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

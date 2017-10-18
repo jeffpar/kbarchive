@@ -1,0 +1,83 @@
+---
+layout: page
+title: "Q78153: &quot;Golden&quot; (Complete) Backup and Restore"
+permalink: kb/078/Q78153/
+---
+
+## Q78153: &quot;Golden&quot; (Complete) Backup and Restore
+
+	Article: Q78153
+	Product(s): Microsoft Disk Operating System
+	Version(s): MS-DOS:2.x,3.x,4.x,5.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 17-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft MS-DOS operating system versions 2.11, 3.1, 3.2, 3.21, 3.3, 3.3a, 4.0, 4.01, 5.0 
+	-------------------------------------------------------------------------------
+	
+	
+	SUMMARY
+	=======
+	
+	The "golden" or complete BACKUP command backs up all files, beginning with the
+	designated directory. The complete RESTORE restores all files from the backup
+	disks, overwriting existing files and creating subdirectories as needed.
+	
+	MORE INFORMATION
+	================
+	
+	To run a complete BACKUP, enter the following at the command prompt:
+	
+	  " backup [source drive]:\[dir]\*.* [dest. drive]: /s " (without the quotation
+	  marks)
+	
+	(Where [source drive] is the drive specification, [dir] is the optional directory
+	name containing the files to be backed up, and [dest. drive] is the target
+	location of the backup files.)
+	
+	Example
+	-------
+	
+	  backup c:\mydir\*.* a: /s
+	
+	The above command will back up all files and all levels of subdirectories
+	contained within the MYDIR directory.
+	
+	To run a complete RESTORE, enter the following at the command prompt:
+	
+	  " restore [source drive]: [dest. drive]\*.* /s " (without the quotation
+	  marks)
+	
+	(Where [source drive] is the location of the backup data and [dest. drive] is the
+	target location of the backup data.)
+	
+	Example
+	-------
+	
+	  restore a: c:\*.* /s
+	
+	The above command will restore all files and subdirectories contained within the
+	backed up data.
+	
+	NOTE: Using the RESTORE command as in the example above will overwrite all files
+	existing on the backup, without regard for updated or modified files.
+	
+	REFERENCES
+	==========
+	
+	"Microsoft MS-DOS User's Guide and Reference," version 5.0, pages 370-374,
+	555-557
+	
+	Additional query words: full BACKUP.EXE RESTORE.EXE BACKUP.COM RESTORE.COM 3.0 3.00 3.1 3.10 3.2 3.20 3.21 3.22 3.3 3.30 3.3a 3.30a 4.0 4.00 4.0a 4.00a 4.01 4.01a 5.00
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMSDOSSearch kbMSDOS321 kbMSDOS400 kbMSDOS320 kbMSDOS330a kbMSDOS310 kbMSDOS500 kbMSDOS330 kbMSDOS401 kbMSDOS211
+	Version           : MS-DOS:2.x,3.x,4.x,5.0
+	
+	=============================================================================
+	

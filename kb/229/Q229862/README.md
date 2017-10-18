@@ -1,0 +1,122 @@
+---
+layout: page
+title: "Q229862: Microsoft Windows 95 Year 2000 Corporate Update"
+permalink: kb/229/Q229862/
+---
+
+## Q229862: Microsoft Windows 95 Year 2000 Corporate Update
+
+	Article: Q229862
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): 1,2,2.1,2.5
+	Operating System(s): 
+	Keyword(s): kbenv win95kbbuglist kbfixlist
+	Last Modified: 17-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 95 
+	- Microsoft Windows 95 OEM Service Release, versions 1, 2, 2.1, 2.5 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The Microsoft Windows 95 Year 2000 Corporate Update (Corpupd.exe) is a follow-up
+	to the Microsoft Windows 95 Year 2000 Update (W95y2k.exe). Note that the
+	W95y2k.exe program must be installed before installing the Corpupd.exe program.
+	The Windows 95 Year 2000 Corporate Update performs the following actions:
+	
+	- Removes "Windows 95 Year 2000 Update" from the list of installed programs in
+	  the Add/Remove Programs tool.
+	
+	- Removes an extraneous copy of the Command.com file from the Windows\Command
+	  folder.
+	
+	- Installs an updated Vdhcp.386 (version 4.10.1660) file needed for either the
+	  Dial-Up Networking Update (DUN1.3) or Windows Sockets 2.0.
+	
+	- Installs the QfeCheck utility.
+	
+	- Modifies the registry to permit detection by the QfeCheck utility.
+	
+	- Places a file named Corpupd.txt in the Windows folder.
+	
+	You can download the Microsoft Windows 95 Year 2000 Corporate Update from the
+	following Microsoft Web site:
+	
+	  http://www.microsoft.com/windows95
+	
+	MORE INFORMATION
+	================
+	
+	
+	The following command-line switches are available for use with the Corporate
+	Update:
+	
+	- /Q
+	
+	  No prompts, error messages, or file-extraction animation.
+	
+	- /Q:1
+	
+	  No prompts except file-extraction animation and error messages.
+	
+	- /Q:A
+	
+	  No prompts, no error messages, no checking for disk space, or administrative
+	  rights, possibly useful for push installations.
+	
+	- /Q:U
+	
+	  No initial prompt, does show file-extraction animation, and reboot dialog box
+	  (if required).
+	
+	The Microsoft Windows 95 Year 2000 Corporate Update places the following values
+	in the following registry key to become visible to the QfeCheck tool:
+	
+	  HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Setup\
+	  Updates\Y2K.W95
+	
+	  Value name: Default
+	  Value type: REG_SZ
+	  Value data: Windows 95 Year 2000 Update
+	
+	
+	REFERENCES
+	==========
+	
+	For additional information about year 2000 (Y2K) issues with the DATE and DIR
+	commands, please see the following article in the Microsoft Knowledge Base:
+	
+	  Q182967 Windows 95 Year 2000 Problems with DATE and DIR Commands
+	
+	For additional information about the Vdhcp.386 file and Y2K issues, please see
+	the following article in the Microsoft Knowledge Base:
+	
+	  Q230173 Windows 98/95 Year 2000 Update May Not Update Vdhcp.386 File
+	
+	For additional information about QfeCheck, please see the following article in
+	the Microsoft Knowledge Base:
+	
+	  Q161020 Implementing Windows 95 Updates
+	
+	For additional information about the Windows 95 Year 2000 Update, please see the
+	following articles in the Microsoft Knowledge Base:
+	
+	  Q225050 Availability of the Windows 95 Year 2000 Update
+	
+	  Q232855 Microsoft Windows 95 Year 2000 Corporate Update Readme File
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbenv win95 kbbuglist kbfixlist
+	Technology        : kbWin95search kbOPKSearch kbZNotKeyword3 kbWin95OPKOSR2 kbWin95OPKOSR25 kbWin95OPKOSR1 kbWin95OPKOSR210
+	Version           : :1,2,2.1,2.5
+	Issue type        : kbinfo
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

@@ -1,0 +1,70 @@
+---
+layout: page
+title: "Q32730: Use Logical AND to Determine Which Bits Are Set in an Integer"
+permalink: kb/032/Q32730/
+---
+
+## Q32730: Use Logical AND to Determine Which Bits Are Set in an Integer
+
+	Article: Q32730
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 1.0,3.20,3.20 and later,4.0,4.0b,4.5,7.0,7.1
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 13-SEP-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic for MS-DOS 1.0 
+	- Microsoft QuickBASIC for MS-DOS, versions 4.0, 4.0b, 4.5 
+	- Microsoft BASIC Compiler for MS-DOS and OS/2 
+	- Microsoft Basic Professional Development System (PDS) for MS-DOS and MS OS/2, versions 7.0, 7.1 
+	- Microsoft QuickBASIC Compiler for the Apple Macintosh, version 1.0 
+	- Microsoft GW-Basic Interpreter, versions 3.20, 3.20 and later 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The logical AND operator can be used in Basic to determine which bits are set.
+	For example, the program below determines whether a bit has been set in the High
+	or Low byte of a 2-byte integer variable.
+	
+	MORE INFORMATION
+	================
+	
+	The CALL INTERRUPT or INT86OLD functions in Visual Basic for MS-DOS return
+	information by setting certain bits in the AH or AL register. The program listed
+	below determines whether a bit has been set in the High or Low byte of a 2-byte
+	integer variable:
+	
+	  ' To try this example in VBDOS.EXE:
+	  ' 1. From the File menu, choose New Project.
+	  ' 2. Copy the code example to the Code window.
+	  ' 3. Press F5 to run the program.
+	
+	  INPUT x%  'Give it an integer value.
+	  PRINT "Bits set in the High byte of x%."
+	  IF x% < 0 THEN PRINT "Bit 7 set!"
+	  mask% = &H4000
+	  FOR i% = 6 TO 0 STEP -1
+	     IF x% AND mask% THEN PRINT "Bit"; i%; " set!"
+	     mask% = mask% \ 2
+	  NEXT
+	  PRINT "Bits set in the Low byte of x%."
+	  ' For just the Low byte, mask% starts out as 128.
+	  FOR i% = 7 TO 0 STEP -1
+	     IF x% AND mask% THEN PRINT "Bit"; i%; " set!"
+	     mask% = mask% \ 2
+	  NEXT
+	
+	Additional query words: VBmsdos QuickBas BasicCom 1.00 2.10 3.11 3.20 3.22 3.23 4.00 4.00b 4.50 6.00 6.00b 7.00 7.10
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbHWMAC kbOSMAC kbVBSearch kbAudDeveloper kbZNotKeyword2 kbBASICSearch kbQBASIC100Mac kbQBASICSearch kbGWBASICSearch kbGWBASICInt320 kbZNotKeyword3 kbBASICPDS700DOS kbBASICPDS710DOS kbBASICPDS700OS2 kbBASICPDS710OS2 kbGWBASICIntSearch kbQBASIC400 kbQBASIC400b kbQBASIC450 kbVB100DOS
+	Version           : :1.0,3.20,3.20 and later,4.0,4.0b,4.5,7.0,7.1
+	
+	=============================================================================
+	

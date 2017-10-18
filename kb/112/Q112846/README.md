@@ -1,0 +1,121 @@
+---
+layout: page
+title: "Q112846: WFWG 3.11 Disk 7 Directory Listing (5.25 Inch, 1.2 MB)"
+permalink: kb/112/Q112846/
+---
+
+## Q112846: WFWG 3.11 Disk 7 Directory Listing (5.25 Inch, 1.2 MB)
+
+	Article: Q112846
+	Product(s): Microsoft Windows 3.x Retail Product
+	Version(s): WINDOWS:3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 04-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows for Workgroups version 3.11 
+	-------------------------------------------------------------------------------
+	
+	
+	SUMMARY
+	=======
+	
+	This article contains the directory listing of Disk 7 of the Windows for
+	Workgroups version 3.11 1.2-megabyte 5.25-inch disk set dated 11/1/93.
+	
+	MORE INFORMATION
+	================
+	
+	Disk 7
+	------
+	
+	  Volume in drive A is MSWFW7
+	  Volume Serial Number is 1C14-2B0F
+	  Directory of A:\
+	
+	ARIAL    FO_           384 11-01-93   3:11a
+	ARIALBD  FO_           388 11-01-93   3:11a
+	ARIALBD  TT_        44,999 11-01-93   3:11a
+	ARIALBI  FO_           394 11-01-93   3:11a
+	ARIALI   FO_           386 11-01-93   3:11a
+	ARIALI   TT_        41,572 11-01-93   3:11a
+	AWCAS    DL_         6,531 11-01-93   3:11a
+	AWFAXIO  DL_        10,814 11-01-93   3:11a
+	BP1CP2   PC_        34,398 11-01-93   3:11a
+	CALC     HL_        11,331 11-01-93   3:11a
+	CHARMAP  EX_        10,645 11-01-93   3:11a
+	CLIPSRV  EX_         9,882 11-01-93   3:11a
+	CONTROL  EX_         9,227 11-01-93   3:11a
+	COUR     FO_           385 11-01-93   3:11a
+	COURBD   FO_           388 11-01-93   3:11a
+	COURBI   FO_           396 11-01-93   3:11a
+	COURF    FO_         9,676 11-01-93   3:11a
+	COURI    FO_           391 11-01-93   3:11a
+	CPQGR3   EX_         9,772 11-01-93   3:11a
+	CPQVGA   GR_         9,772 11-01-93   3:11a
+	DD1CP1   PC_        30,920 11-01-93   3:11a
+	DISK7                    8 11-01-93   3:11a
+	EFAXRUN  DL_        13,310 11-01-93   3:11a
+	FAXCOVER DL_        13,965 11-01-93   3:11a
+	FINSTALL DL_        98,999 11-01-93   3:11a
+	FINSTALL HL_        14,634 11-01-93   3:11a
+	HIMEM    SY_        10,074 11-01-93   3:11a
+	HPPCL    DR_        48,031 11-01-93   3:11a
+	HPPCL5E  DR_       153,870 11-01-93   3:11a
+	HPPCL5E  HL_        16,172 11-01-93   3:11a
+	HPPCL5E1 DL_        32,760 11-01-93   3:11a
+	HPPCL5E2 DL_        24,558 11-01-93   3:11a
+	HPPCL5E3 DL_        46,699 11-01-93   3:11a
+	HPPCL5E4 DL_        10,899 11-01-93   3:11a
+	HPPCL5EO HL_        12,297 11-01-93   3:11a
+	HPPCL5MS DR_       100,098 11-01-93   3:11a
+	MAIL     WR_        14,150 11-01-93   3:11a
+	MCISEQ   DR_        14,450 11-01-93   3:11a
+	MSADLIB  DR_         9,112 11-01-93   3:11a
+	MSCDEX   EX_        14,829 11-01-93   3:11a
+	NETFAX   DL_         9,317 11-01-93   3:11a
+	NETWORKS WR_        26,563 11-01-93   3:11a
+	OLESVR   DL_        13,144 11-01-93   3:11a
+	PACKAGER HL_        14,752 11-01-93   3:11a
+	PRINTERS WR_        17,282 11-01-93   3:11a
+	PSCRIPT  HL_        29,034 11-01-93   3:11a
+	README   WR_        32,954 11-01-93   3:11a
+	RECORDER HL_        10,840 11-01-93   3:11a
+	REGEDIT  HL_        14,435 11-01-93   3:11a
+	SMALLE   FO_        11,251 11-01-93   3:11a
+	SMALLF   FO_         9,391 11-01-93   3:11a
+	SNDBLST  DR_         8,979 11-01-93   3:11a
+	SNDBLST2 DR_         9,286 11-01-93   3:11a
+	SYMBOL   FO_           389 11-01-93   3:11a
+	SYSEDIT  EX_        10,035 11-01-93   3:11a
+	SYSINI   WR_        19,900 11-01-93   3:11a
+	TESTPS   TX_         1,087 11-01-93   3:11a
+	TIMER    DR_         2,832 11-01-93   3:11a
+	TIMES    FO_           391 11-01-93   3:11a
+	TIMESBD  FO_           399 11-01-93   3:11a
+	TIMESBI  FO_           404 11-01-93   3:11a
+	TIMESI   FO_           399 11-01-93   3:11a
+	VADLIBD  38_         1,631 11-01-93   3:11a
+	VSBD     38_         2,114 11-01-93   3:11a
+	VTDAPI   38_         1,549 11-01-93   3:11a
+	WINGDING FO_           390 11-01-93   3:11a
+	WININI   WR_         6,920 11-01-93   3:11a
+	WININIT  EX_        13,478 11-01-93   3:11a
+	WINLOGO  BM_        11,025 11-01-93   3:11a
+	WINMINE  EX_        11,938 11-01-93   3:11a
+	WSWAP    EX_        10,131 11-01-93   3:11a
+	      71 file(s)      1,193,806 bytes
+	                          3,072 bytes free
+	
+	Additional query words: wfw wfwg 3.11 dirwfw list
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+	Version           : WINDOWS:3.11
+	
+	=============================================================================
+	

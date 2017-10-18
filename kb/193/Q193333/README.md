@@ -1,0 +1,81 @@
+---
+layout: page
+title: "Q193333: NetMon Fails on Multiprocessor Windows NT Server Under Stress"
+permalink: kb/193/Q193333/
+---
+
+## Q193333: NetMon Fails on Multiprocessor Windows NT Server Under Stress
+
+	Article: Q193333
+	Product(s): Microsoft Windows NT
+	Version(s): 1.2,4.0,4.0a
+	Operating System(s): 
+	Keyword(s): smallbiz
+	Last Modified: 20-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 4.0 
+	- Microsoft BackOffice Small Business Server versions 4.0, 4.0a 
+	- Microsoft Windows NT Workstation version 4.0 
+	- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+	- Microsoft Systems Management Server version 1.2 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Using Network Monitor to analyze a network interface on a multiprocessor
+	computer running Windows NT under heavy stress can result in the following STOP
+	error message being displayed:
+	
+	  STOP 0x0000000A (0xf8e09000, 0x00000002, 0x00000001, 0xfe2d0397)
+	
+	The exact address where the STOP error occurs may vary, the fourth parameter will
+	be in the range of Bhnt.sys.
+	
+	CAUSE
+	=====
+	
+	Under certain stress circumstances in a multiprocessor environment, Network
+	Monitors' NDIS-related packet receive handler will leave a data buffer
+	vulnerable to multiple processes. This results in damaged buffer metrics and a
+	buffer overrun.
+	
+	RESOLUTION
+	==========
+	
+	A supported fix that corrects this problem is now available from Microsoft, but
+	has not been fully regression tested and should be applied only to systems
+	experiencing this specific problem. If you are not severely affected by this
+	specific problem, Microsoft recommends that you wait for the next Systems
+	Management Server and/or Windows NT service pack that contains this fix.
+	
+	To resolve this problem immediately, contact Microsoft Product Support Services
+	to obtain the fix. For a complete list of Microsoft Product Support Services
+	phone numbers and information on support costs, please go to the following
+	address on the World Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	Date       Time      Size     File name   Platform
+	  --------------------------------------------------
+	  10/16/98   06:30pm   38,864   Bhnt.sys   (x86)
+	  10/16/98   06:29pm   101,136  Bhnt.sys   (Alpha)
+	
+	
+	Additional query words: bloodhound multi processor multi-processor prodSystems Management Server sbs bluescreen
+	
+	======================================================================
+	Keywords          : smallbiz 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400 kbSMSSearch kbAudDeveloper kbSBServSearch kbSBServ400 kbSBServ400a kbSMS120
+	Version           : :1.2,4.0,4.0a
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

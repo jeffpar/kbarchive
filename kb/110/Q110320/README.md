@@ -1,0 +1,187 @@
+---
+layout: page
+title: "Q110320: PC Forms: Summary List of E-Forms Designer 1.0 Bugs"
+permalink: kb/110/Q110320/
+---
+
+## Q110320: PC Forms: Summary List of E-Forms Designer 1.0 Bugs
+
+	Article: Q110320
+	Product(s): Microsoft Mail For PC Networks
+	Version(s): WINDOWS:1.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 08-NOV-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Electronic Forms Designer, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The following is a list of bugs confirmed in version 1.0 of Microsoft Electronic
+	Forms Designer. This is not a comprehensive list; this list is current as of
+	January 1, 1994.
+	
+	For more information on the bug listed, query in the Microsoft Knowledge Base on
+	the article ID or the bug number.
+	
+	BUG LISTING FOR VERSION 1.0
+	---------------------------
+	
+	- Mail Message Displays Name in Single Quotation Marks
+	
+	- Resolved Names Are Not Underlined
+	
+	- MS Mail Spooler (Auto) Is Visible
+	
+	- Err Msg: Another Application Denied Your Request
+	
+	- Err: MAPI_FAILURE When Sending Message
+	
+	- Err Msg: The Application Could Not Be Executed...
+	
+	- Err: Login Failure When Opening from Browser
+	
+	- Fax Gateway Does Not Support E-Forms
+	
+	- Attach Defaults to WINDOWS\SYSTEM Directory
+	
+	- Custom Form Not Displayed
+	
+	- Data Segment Error When Routing File
+	
+	Mail Message Displays Name in Single Quotation Marks
+	----------------------------------------------------
+	
+	  Q99055
+	
+	In version 1.0 of Microsoft Electronic Forms Designer, if you reply to a message
+	sent to yourself, the copy you receive in your Inbox incorrectly displays your
+	name in single quotation marks. This is inconsistent with the way your name is
+	displayed in a standard mail message.
+	
+	For example, the copy of the message you receive in your Inbox displays your name
+	as:
+	
+	  To: 'Your Name'
+	
+	A standard mail message displays your name as:
+	
+	  To: Your Name
+	
+	Resolved Names Are Not Underlined
+	---------------------------------
+	
+	  Q99057
+	
+	When you address a form using version 1.0 of Microsoft Electronic Forms Designer
+	and you select the Check Names button, the resolved names are not underlined.
+	
+	MS Mail Spooler (Auto) Is Visible
+	---------------------------------
+	
+	  Q99697
+	
+	When you start the E-Form Browser (included with version 1.0 of Microsoft
+	Electronic Forms Designer) independently of Microsoft Mail or Schedule+, the MS
+	Mail Spooler (auto) is visible.
+	
+	Err Msg: Another Application Denied Your Request
+	------------------------------------------------
+	
+	  Q101751
+	
+	When you are using Microsoft Electronic Forms Designer with Microsoft Mail for
+	Windows, you may receive the following error message when you exit Mail:
+	
+	  Another application has denied your request
+	
+	Err: MAPI_FAILURE When Sending Message
+	--------------------------------------
+	
+	  Q102448
+	
+	When you use version 1.0 of Microsoft Electronic Forms Designer to address a note
+	to another user listed in your Personal Address Book (PAB), you receive a
+	MAPI_FAILURE error if you delete the addressee from your PAB before you send the
+	message.
+	
+	Err Msg: The Application Could Not Be Executed...
+	-------------------------------------------------
+	
+	  Q103793
+	
+	Opening numerous forms in version 1.0 of Microsoft Electronic Forms Designer can
+	cause the following error:
+	
+	  MEFLIB.DLL: The application could not be executed.
+	  Insufficient memory to start the application.
+	
+	Err: Login Failure When Opening from Browser
+	--------------------------------------------
+	
+	  Q104109
+	
+	When you attempt to create a new custom message using the Browser application
+	included with version 1.0 of Microsoft Electronic Forms Designer, you may
+	receive the following error message:
+	
+	  Login failure.
+	
+	Fax Gateway Does Not Support E-Forms
+	------------------------------------
+	
+	  Q104278
+	
+	Electronic forms (e-forms) created with version 1.0 of Microsoft Electronic Forms
+	Designer are not recognized when they are sent through the version 2.1 or 3.0
+	Microsoft Mail Gateway to Fax.
+	
+	Attach Defaults to WINDOWS\SYSTEM Directory
+	-------------------------------------------
+	
+	  Q104361
+	
+	When you attach a file to the routing form included with version 1.0 of Microsoft
+	Electronic Forms Designer, the directory listed in the Attach File to Be Routed
+	dialog box is the WINDOWS\SYSTEM directory. This may be inconsistent with other
+	Windows applications, which default to the WINDOWS directory.
+	
+	Custom Form Not Displayed
+	-------------------------
+	
+	  Q104366
+	
+	When you attempt to read a message created using version 1.0 of Microsoft
+	Electronic Forms Designer, the custom form may not be displayed. Instead, a
+	standard note is displayed with the following error message:
+	
+	  Displaying this message correctly requires a custom E-Form that is not
+	  available or is incorrectly installed. Please contact your network
+	  administrator for more information.
+	
+	Data Segment Error When Routing File
+	------------------------------------
+	
+	  Q104420
+	
+	When you send a Microsoft Visual Basic .MAK file as an attachment to the routing
+	form included with version 1.0 of Microsoft Electronic Forms Designer, you may
+	receive the following error message when you attempt to open the file:
+	
+	  The associated application for the attached file FILENAME.MAK encountered a
+	  data segment error. (reason: 16)
+	
+	Additional query words: readme.txt
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbZNotKeyword kbZNotKeyword2 kbMailSearch kbZNotKeyword3 kbEForms
+	Version           : WINDOWS:1.0
+	
+	=============================================================================
+	

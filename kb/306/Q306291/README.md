@@ -1,0 +1,183 @@
+---
+layout: page
+title: "Q306291: MCSE Readiness Review Exam 70-217: Microsoft Windows 2000 Direct"
+permalink: kb/306/Q306291/
+---
+
+## Q306291: MCSE Readiness Review Exam 70-217: Microsoft Windows 2000 Direct
+
+	Article: Q306291
+	Product(s): Microsoft Press
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbdocfix kbdocerr
+	Last Modified: 11-JUL-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- MSPRESS MCSE Readiness Review Exam 70-217 Microsoft Windows 2000 Directory Services Infrastructure ISBN 0-7356-1000-2 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article contains comments, corrections, and information about known errors
+	relating to the Microsoft Press book MCSE Readiness Review Exam 70-217 Microsoft
+	Windows 2000 Directory Services Infrastructure, ISBN 0-7356-1000-2.
+	
+	The following topics are covered:
+	
+	- Page 36: Correction To Question 70-217.02.01.007
+	
+	- Page 41: Correction To Question 70-217.02.01.009's Answer
+	
+	- Page 94: Correction To Question 70-217.03.04.002's Answers
+	
+	- Pages 112, 114, 115, 116, 118, 119, 121 and 123: Incorrect Secedit Switch
+	
+	- Page 115: Correction To Question 70-217.03.06.004
+	
+	- Page 122: Correction To Question 70-217.03.06.005's Answer
+	
+	- Page 141: Correction To Question 70-217.04.01.012
+	
+	MORE INFORMATION
+	================
+	
+	Page 36: Correction To Question 70-217.02.01.007
+	------------------------------------------------
+	
+	On page 36, in question 70-217.02.01.007,
+	
+	Change:
+	"You have configured the zone on the Windows 2000 server to use dynamic updates
+	to synchronize the DNS database files"
+	
+	To:
+	"You have configured the zone on the Windows 2000 server to use dynamic updates"
+	
+	
+	Page 41: Correction To Question 70-217.02.01.009's Answer
+	---------------------------------------------------------
+	
+	On page 41, in question 70-217.02.01.009, the correct answer should be A, not A
+	and B.
+	
+	Change:
+	"Correct Answers: A and B
+	
+	...
+	
+	B. Correct: When you create a standard primary forward lookup zone, the New Zone
+	Wizard requires you to specify a name for the zone database filename. The zone
+	database filename defaults to the zone name with a .dns extension. If you are
+	migrating a standard primary forward lookup zone from another server, you must
+	first copy the zone database file to the systemroot\system32\dns folder on the
+	target server."
+	
+	To:
+	"Correct Answers: A
+	
+	...
+	
+	B. Incorrect: When you create a standard primary forward lookup zone, the New
+	Zone Wizard does not require you to specify a name for the zone database
+	filename. The zone database filename defaults to the zone name with a .dns
+	extension. "
+	
+	
+	Page 94: Correction To Question 70-217.03.04.002's Answers
+	----------------------------------------------------------
+	
+	On page 94, in question 70-217.03.04.002, the correct answer should be B, not D.
+	
+	Change the answers to be:
+	
+	"Correct Answers: B
+	...
+	
+	B. Correct: Because you did not change any default settings on the Settings tab
+	of the My Documents Properties dialog box, the My Pictures folder reamins a
+	subfolder of My Documents. Therefore, My Pictures follows My Documents to the
+	redirection target specified on the Target tab of the My Documents Properties
+	dialog box, which is \\fs1\data\%username%. The path suggested in this answer
+	choice correctly shows the My Pictures folder as a subfolder of
+	\\fs1\data\%username%, which is the My Documents folder.
+	...
+	
+	D. Incorrect: Folder Rediction does not create a subfolder called "My Documents"
+	under \\fs1\data\%username%. \\fs1\data\%username% is the redirected My
+	Documents folder. Therefore, the answers is incorrect.
+	
+	
+	Pages 112, 114, 115, 116, 118, 119, 121 and 123: Incorrect Secedit Switch
+	-------------------------------------------------------------------------
+	
+	On pages 112, 114, 115, 116, 118, 119, 121 and 123, change:
+	
+	"secedit /refreshpolicy /machine_policy"
+	
+	To:
+	
+	"secedit /refreshpolicy machine_policy"
+	
+	
+	Page 115: Correction To Question 70-217.03.06.004
+	-------------------------------------------------
+	
+	On page 115, in question 70-217.03.06.004,
+	
+	Change:
+	"You take one of your Windows 2000 member servers and install the RIS component"
+	
+	To:
+	"You take one of your Windows 2000 member servers and promote it to be a domain
+	controller and install the RIS component"
+	
+	
+	Page 122: Correction To Question 70-217.03.06.005's Answer
+	----------------------------------------------------------
+	
+	On page 122, in question 70-217.03.06.005, in answer B,
+	
+	Change:
+	"To authorize an RIS server in AD from a W2K Pro computer using Adminstrative
+	Tools, you must log on with an account that is a member of the Enterprise Admins
+	group."
+	
+	To:
+	"To authorize a DHCP server, you must login as either a member of the Enterprise
+	Admins or Domain Admins groups."
+	
+	
+	Page 141: Correction To Question 70-217.04.01.012
+	-------------------------------------------------
+	
+	On page 141, in question 70-217.04.01.012,
+	
+	Change:
+	"Your proposed solution is to create a shared folder named Users on a domain
+	controller named FS1"
+	
+	To:
+	"Your proposed solution is to create shared folders named Users and Profiles on a
+	domain controller named FS1"
+	
+	
+	Microsoft Press is committed to providing informative and accurate books. All
+	comments and corrections listed above are ready for inclusion in future
+	printings of this book. If you have a later printing of this book, it may
+	already contain most or all of the above corrections.
+	
+	Additional query words: 0-7356-1000-2 TKBOOK RRBOOK WIN2K SPEALMAN 0-7356-1387-7
+	
+	======================================================================
+	Keywords          : kbdocfix kbdocerr 
+	Technology        : kbMSPressSearch
+	Version           : :
+	Issue type        : kbinfo
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

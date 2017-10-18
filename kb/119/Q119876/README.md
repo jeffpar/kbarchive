@@ -1,0 +1,87 @@
+---
+layout: page
+title: "Q119876: Windows 95 Startup Error: Incorrect MS-DOS Version..."
+permalink: kb/119/Q119876/
+---
+
+## Q119876: Windows 95 Startup Error: Incorrect MS-DOS Version...
+
+	Article: Q119876
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 17-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 95 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	After you install Windows 95 and restart the system, it returns to an MS-DOS
+	prompt with the following error message:
+	
+	  Incorrect MS-DOS version
+	  Enter the name of Command Interpreter (e.g., C:\WINDOWS\COMMAND.COM)
+	
+	CAUSE
+	=====
+	
+	This problem can occur if SETVER.EXE is being loaded in the CONFIG.SYS file and
+	has a setting indicating that COMMAND.COM should look for a version of MS-DOS
+	earlier than 7.0.
+	
+	RESOLUTION
+	==========
+	
+	Boot the system with the Windows 95 Startup disk and do the following:
+	
+	1. Change to the WINDOWS directory by typing the following:
+	
+	  " cd\<Windows 95 directory name> " (without the quotation marks)
+	
+	2. Rename the SETVER.EXE file by typing the following:
+	
+	  " ren setver.exe setver.old " (without the quotation marks)
+	
+	3. Remove the Windows 95 Startup disk from drive A, then shut down and restart
+	  the system. (Windows 95 loads at this point.)
+	
+	4. Click the Start button, point to Programs, and then click MS-DOS Prompt.
+	
+	5. Change to the Windows directory by typing the following:
+	
+	  " cd\<Windows 95 directory name> " (without the quotation marks)
+	
+	6. Rename the SETVER.EXE file again by typing the following:
+	
+	  " ren setver.old setver.exe " (without the quotation marks)
+	
+	7. Remove the COMMAND.COM entry by typing the following:
+	
+	  " setver command.com /d " (without the quotation marks)
+	
+	8. Restart the computer to make the SETVER changes take effect.
+	
+	The above procedure allows SETVER to maintain compatibility with existing
+	MS-DOS-based applications.
+	
+	MORE INFORMATION
+	================
+	
+	When Windows 95 is installed, the new SETVER.EXE assumes the settings of the
+	currently loaded SETVER.EXE in an effort to maintain compatibility with existing
+	MS-DOS-based applications.
+	
+	Additional query words: 7.00 err msg
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWin95search kbZNotKeyword3
+	
+	=============================================================================
+	

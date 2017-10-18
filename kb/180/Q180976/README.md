@@ -1,0 +1,325 @@
+---
+layout: page
+title: "Q180976: WD97: How to Create a Watermark in Word"
+permalink: kb/180/Q180976/
+---
+
+## Q180976: WD97: How to Create a Watermark in Word
+
+	Article: Q180976
+	Product(s): Word 97 for Windows
+	Version(s): WINDOWS:97
+	Operating System(s): 
+	Keyword(s): word97 kblayout
+	Last Modified: 14-NOV-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	
+	SUMMARY
+	=======
+	
+	This article describes various methods you can use to create a watermark in
+	Microsoft Word. A watermark, as defined in this article, is any text or graphic
+	that is printed to overlap existing text in a document, either in the background
+	or foreground. For example, a logo printed lightly behind a letter or the word
+	"Confidential" printed lightly on a contract might be considered a watermark.
+	Some of the most commonly used text type watermarks are:
+	
+	- Confidential
+	
+	- Paid
+	
+	- Draft
+	
+	The three methods listed in this article will show how you can create a watermark
+	in Word using the following features:
+	
+	- Drawing features
+	
+	- A text box
+	
+	- WordArt
+	
+	With each of these methods, to print a watermark on every page of a document, you
+	will want to insert it into a header or footer. To print a watermark on just one
+	page of a document, place your insertion point in the body of the document where
+	you want it printed and then use one of the methods below.
+	
+	To view a watermark as it will appear on the printed page, click Page Layout on
+	the View menu or click Print Preview on the File menu.
+	
+	To format graphic properties or attributes as used throughout this document, see
+	the "How to Format a Graphic's Properties" section of this article.
+	
+	If the watermark interferes with the legibility of the text on the page, you can
+	lighten the object you used to create the watermark. See the "How to Lighten the
+	Watermark Color" section of this article.
+	
+	Use the following information to determine which method below would be the best
+	one that you can use for your watermark needs:
+	
+	- Use "Method 1: Use the Drawing Features" if you are inserting a graphic or
+	  picture.
+	
+	- Use "Method 2: Use a Text Box" if you want to use text as your watermark with
+	  none or limited rotational ability.
+	
+	- Use "Method 3: Use WordArt" if you want to use text as your watermark and you
+	  want to be able to rotate that text at any angle of rotation. This is the
+	  only method that allows you full rotation of text.
+	
+	Method 1: Use the Drawing Features
+	----------------------------------
+	
+	This method is an example of placing the Watermark in the Header and Footer area
+	so that it prints on all pages. To print a watermark only on the current page,
+	start with step 3.
+	
+	1. On the View menu, click Header And Footer.
+	
+	2. Click the Show/Hide Document Text button on the Header And Footer toolbar.
+	
+	  The text and graphics will now be hidden from view.
+	
+	3. On the Insert menu, point to Picture, click Clip Art or From File, make sure
+	  the Float Over Text setting is selected, select your graphic, and then click
+	  Insert.
+	
+	4. Click once to select the object, on the Format menu, click Picture or Object,
+	  and then click the Picture tab.
+	
+	5. Under Image Control, Color, select Watermark.
+	
+	6. If you want, change the Brightness and Contrast settings.
+	
+	7. Click the Wrapping tab and under Wrapping Style, click None, and then click
+	  OK.
+	
+	8. Position and size the watermark by dragging it to the desired location on the
+	  document.
+	
+	9. If the graphic was placed into the Header or Footer, click Close on the
+	  Header And Footer toolbar. If the graphic was placed on a page of your
+	  document, to move the graphic and its contents behind the text in the
+	  document, follow these steps:
+	
+	  a. Click once to select the graphic.
+	
+	  b. Right-click the graphic. On the menu that appears, point to Order, and
+	     then select Send Behind Text.
+	
+	  NOTE: Once the object has been sent behind the text, to select that object at
+	  a future time, click the Select Objects button on the Drawing toolbar and
+	  then click in the area of the object.
+	
+	Method 2: Use a Text Box
+	------------------------
+	
+	To use a text box to create a watermark, follow these steps:
+	
+	1. Position the insertion point on the page where you want the watermark to be
+	  placed. If you want the watermark to appear on every page in the document or
+	  that section, position the insertion point in the header by clicking Header
+	  and Footer on the View menu.
+	
+	2. On the Insert menu, click Text Box.
+	
+	3. Click and drag the mouse pointer to specify the size of the text box needed
+	  for the text or graphic you'll be using.
+	
+	4. Type the watermark text.
+	
+	5. To rotate the text, select the text inside of the Text Box, click Text
+	  Direction on the Format menu, and then select the option you want. This
+	  rotation method is limited to 3 rotational positions. To have complete
+	  rotation flexibility, you will need to use WordArt. For details of how to do
+	  this, see the "How to Create Rotated Watermark Text" section of this article.
+	
+	6. To enlarge the font size and lighten the font color, do the following:
+	
+	  a. Select the text inside the Text Box.
+	
+	  b. On the Format menu, click Font.
+	
+	  c. Under size, change it to the appropriate size.
+	
+	  d. Under Color, select Grey--25%.
+	
+	  e. Click OK.
+	
+	7. To move the text box, select the border and drag it to its new location. To
+	  resize the text box, select the border, and then drag one of the sizing
+	  handles. You can also move or resize the text box with specific measurements
+	  by choosing Drawing Object from the Format menu.
+	
+	8. If the Text Box was placed into the Header or Footer, click Close on the
+	  Header and Footer toolbar. If the Text Box was placed on a page of your
+	  document, to move the text box and its contents behind the text in the
+	  document, do the following:
+	
+	  a. Click to select the Text Box.
+	
+	  b. Point to the text box border, right mouse click, and on the menu that
+	     appears, point to Order, and then select Send Behind Text.
+	
+	  NOTE: Once the object has been sent behind the text, to select that object at
+	  a future time, click the Select Objects button on the Drawing toolbar and
+	  then click in the area of the object.
+	
+	Method 3: Use WordArt
+	---------------------
+	
+	1. If the Drawing toolbar is not on, turn it on by pointing to Toolbars on the
+	  View menu, and then select Drawing. The toolbar should appear at the bottom
+	  of your document.
+	
+	2. On the Drawing Toolbar, click Insert WordArt.
+	
+	3. Select a WordArt Style and then click OK.
+	
+	4. In the "Enter Your Text Here" dialog box, type the watermark text and then
+	  click OK.
+	
+	5. Position and size the WordArt object by sizing and dragging it to the desired
+	  location.
+	
+	6. If the WordArt object was placed into the Header or Footer, click Close on
+	  the Header and Footer toolbar. If the WordArt object was placed on a page of
+	  your document, to move the WordArt object behind the text in the document, do
+	  the following:
+	
+	  a. Click to select the WordArt object.
+	
+	  b. Point to the WordArt object, right mouse click, and on the menu that
+	     appears, point to Order, and then select Send Behind Text.
+	
+	  NOTE: Once the object has been sent behind the text, to select that object at
+	  a future time, click the Select Objects button on the Drawing toolbar and
+	  then click in the area of the object.
+	
+	How to Create Rotated Watermark Text
+	------------------------------------
+	
+	You must use a WordArt object to be able to rotate text at any angle. For details
+	of how to insert a WordArt object, see the "Method 3: Use WordArt" section of
+	this article.
+	
+	Once the WordArt object is in your document, to rotate text at any angle, do the
+	following:
+	
+	1. Click once to select the WordArt object. You should now see the WordArt
+	  toolbar.
+	
+	  NOTE: Once the object has been sent behind the text, to select that object at
+	  a future time, click the Select Objects button on the Drawing toolbar and
+	  then click in the area of the object.
+	
+	  NOTE: If the WordArt toolbar does not show, on the View menu, point to
+	  Toolbars and then select WordArt.
+	
+	2. On the WordArt toolbar, click the Free Rotate icon.
+	
+	  NOTE: Your mouse pointer will turn to an arrow with a circular arrow and the
+	  four corners of your WordArt object will turn into green round circles.
+	
+	3. Move the mouse pointer to one of the corners and with the left mouse button,
+	  click to rotate to your desired position.
+	
+	4. Click back into your document when done. Your mouse pointer will return to
+	  normal.
+	
+	How to Lighten the Watermark Color
+	----------------------------------
+	
+	If the watermark interferes with the legibility of the text on the page, use one
+	of the following methods to lighten it:
+	
+	Method 1: Text not in a WordArt or Drawing Object
+	
+	1. Select the text.
+	
+	2. On the Format menu, click Font, change the Color option to Gray-25%, and then
+	  click OK.
+	
+	Method 2: Text in a Drawing or WordArt Object
+	
+	1. Click to select the Object, on the Format menu, click either AutoShape, Text
+	  Box, or WordArt, and then click the Colors and Lines tab.
+	
+	2. Under Fill, Color: select a light gray color and then click OK.
+	
+	NOTE: The result of this method may vary depending on what options were chosen
+	when the object was created.
+	
+	Method 3: Imported graphics
+	
+	You may not be able to edit the graphic, depending on where it was created. In
+	this case you will need to use a graphics program to alter the color of the
+	graphic.
+	
+	Depending on the imported graphic, it may be lightened using the Picture Editor
+	by doing the following:
+	
+	1. Double-click the picture.
+	
+	2. If possible, use the Drawing toolbar to change the attributes that you
+	  desire. If you are unable to change the attributes here, you will need to use
+	  another graphics program to make the changes.
+	
+	How to Format a Graphic's Properties
+	------------------------------------
+	
+	To format the graphic, select it, and then on the Format menu, click Picture or
+	Object. Use the following table to adjust the picture's Format.
+	
+	     To format this                  Use these steps
+	     ------------------------------------------------------------------
+	
+	     To format the picture with      On the Picture tab, under Image
+	     preset brightness and contrast  control, select Watermark from the
+	     settings that work well for     Color box.
+	     watermarks
+	                                     -or-
+	
+	                                     Adjust the picture's brightness and
+	                                     contrast manually using the
+	                                     Brightness and Contrast slide
+	                                     controls.
+	
+	     To format the graphic so that   Click Picture or Object (Format
+	     document text flows above it    menu), and then click None on the
+	     instead of around it            Wrapping tab.
+	
+	     To format the text in the text  Select it, click Font on the Format
+	     box                             menu, and then select the options
+	                                     you want. To rotate the text, click
+	                                     Text Direction on the Format menu,
+	                                     and then select the option you want.
+	
+	                                     NOTE: This rotation method is limited
+	                                     to 3 rotational positions. To have
+	                                     complete rotation flexibility, you
+	                                     will need to use WordArt. For details
+	                                     of how to do this, see the "How to
+	                                     Create Rotated Watermark Text"
+	                                     section of this article.
+	
+	     To format the text object's     Use the options on the Drawing
+	     borders, background color, and  toolbar (the text box is a drawing
+	     so on.                          object)
+	
+	Additional query words: watermarking watermarks water mark overlay overlapping
+	
+	======================================================================
+	Keywords          : word97 kblayout 
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : WINDOWS:97
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

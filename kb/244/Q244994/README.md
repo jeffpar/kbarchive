@@ -1,0 +1,164 @@
+---
+layout: page
+title: "Q244994: Unattended Installation of Windows NT Does Not Autodetect 3C905."
+permalink: kb/244/Q244994/
+---
+
+## Q244994: Unattended Installation of Windows NT Does Not Autodetect 3C905.
+
+	Article: Q244994
+	Product(s): Microsoft Windows NT
+	Version(s): winnt:4.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 10-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you perform an unattended installation of Microsoft Windows NT Workstation
+	4.0, Setup may not automatically detect the 3C905 Original Equipment
+	Manufacturer (OEM) network adapter, and may therefore not install it.
+	
+	CAUSE
+	=====
+	
+	This behavior can occur because the Oemsetup.inf file included with the network
+	adapter does not have the appropriate settings for an unattended installation.
+	You must modify the file before you begin the unattended installation.
+	
+	RESOLUTION
+	==========
+	
+	To work around this issue, modify the Oemsetup.inf file:
+	
+	1. Before you modify the file, make a backup copy of the original Oemsetup.inf
+	  file supplied by the OEM.
+	
+	2. Modify the original Oemsetup.inf file as follows:
+	
+	    Original Oemsetup.inf:   [InstallOptions]
+	    Install_dRMON = ''YES''
+	    Install_3NIC_Diag = ''YES''
+	    Install_PACE = ''YES''
+	    Install_Shortcuts = ''YES''
+	
+	    Replace with:
+	    [InstallOptions]
+	    Install_dRMON = ''NO''
+	    Install_3NIC_Diag = ''NO''
+	    Install_PACE = ''NO''
+	    Install_Shortcuts = ''NO''
+	
+	    Original Oemsetup.inf:
+	    [Options]
+	    3C90X 
+	    3C905 
+	    3C900 
+	
+	    Replace with:
+	    [Options] 
+	    3C905 
+	
+	    Original Oemsetup.inf:
+	    Debug-Output $(InfName)''Adding files: Files-$(NDIS_VER),
+	    SrcDir=$(SrcDir)''
+	    AddSectionFilesToCopyList Files-$(NDIS_VER)
+	    $(SrcDir)WIN32\$(!STF_PLATFORM)     $(!STF_WINDOWSSYSPATH)\drivers
+	    set !STF_NCPA_FLUSH_COPYLIST = TRUE
+	
+	    Replace with:
+	    Debug-Output $(InfName)''Adding files: Files-$(NDIS_VER), SrcDir=$(SrcDir)''
+	    AddSectionFilesToCopyList Files-$(NDIS_VER) $(SrcDir) $(!STF_WINDOWSSYSPATH)
+	    set !STF_NCPA_FLUSH_COPYLIST = TRUE
+	
+	    Original Oemsetup.inf:
+	    set STF_OVERWRITE = ''VERIFYSOURCEOLDER''
+	    AddSectionFilesToCopyList Files-Uninstaller $(SrcDir)win32 $(!STF_WINDOWSSYSPATH)
+	    set !STF_NCPA_FLUSH_COPYLIST = TRUE
+	
+	    Replace with:
+	    set STF_OVERWRITE = ''VERIFYSOURCEOLDER''
+	    AddSectionFilesToCopyList Files-Uninstaller $(SrcDir) $(!STF_WINDOWSSYSPATH)
+	    set !STF_NCPA_FLUSH_COPYLIST = TRUE
+	
+	    Original Oemsetup.inf:
+	    set STF_OVERWRITE = ''VERIFYSOURCEOLDER''
+	    AddSectionFilesToCopyList Files-3nicdiag $(SrcDir)win32 $(!STF_WINDOWSSYSPATH)
+	    AddSectionFilesToCopyList Files-HwDll $(SrcDir)WINNT $(!STF_WINDOWSSYSPATH)
+	    set !STF_NCPA_FLUSH_COPYLIST = TRUE
+	
+	    Replace with:
+	    set STF_OVERWRITE = ''VERIFYSOURCEOLDER''
+	    AddSectionFilesToCopyList Files-3nicdiag $(SrcDir) $(!STF_WINDOWSSYSPATH)
+	    AddSectionFilesToCopyList Files-HwDll $(SrcDir) $(!STF_WINDOWSSYSPATH)
+	    set !STF_NCPA_FLUSH_COPYLIST = TRUE
+	
+	    Original Oemsetup.inf:
+	    set STF_OVERWRITE = ''VERIFYSOURCEOLDER''
+	    AddSectionFilesToCopyList Files-PACE $(SrcDir)win32 $(!STF_WINDOWSSYSPATH)
+	    set !STF_NCPA_FLUSH_COPYLIST = TRUE
+	
+	    Replace with:
+	    set STF_OVERWRITE = ''VERIFYSOURCEOLDER''
+	    AddSectionFilesToCopyList Files-PACE $(SrcDir) $(!STF_WINDOWSSYSPATH)
+	    set !STF_NCPA_FLUSH_COPYLIST = TRUE
+	
+	    Original Oemsetup.inf:
+	    set STF_OVERWRITE = ''VERIFYSOURCEOLDER''
+	    AddSectionFilesToCopyList Files-Tray $(SrcDir)win32 $(!STF_WINDOWSSYSPATH)
+	    set !STF_NCPA_FLUSH_COPYLIST = TRUE
+	
+	    Replace with:
+	    set STF_OVERWRITE = ''VERIFYSOURCEOLDER''
+	    AddSectionFilesToCopyList Files-Tray $(SrcDir) $(!STF_WINDOWSSYSPATH)
+	    set !STF_NCPA_FLUSH_COPYLIST = TRUE
+	
+	    Original Oemsetup.inf:
+	    set STF_OVERWRITE = ''VERIFYSOURCEOLDER''
+	    AddSectionFilesToCopyList Files-dRMON $(SrcDir)drmon $(!STF_WINDOWSSYSPATH)
+	    AddSectionFilesToCopyList Files-dRMONINF $(SrcDir)WINNT $(!STF_WINDOWSSYSPATH)
+	    set !STF_NCPA_FLUSH_COPYLIST = TRUE
+	
+	    Replace with:
+	    set STF_OVERWRITE = ''VERIFYSOURCEOLDER''
+	    AddSectionFilesToCopyList Files-dRMON $(SrcDir) $(!STF_WINDOWSSYSPATH)
+	    AddSectionFilesToCopyList Files-dRMONINF $(SrcDir) $(!STF_WINDOWSSYSPATH)
+	    set !STF_NCPA_FLUSH_COPYLIST = TRUE
+	
+	    Original Oemsetup.inf:
+	    [OptionsTextENG]
+	    3C90X = ''3Com Fast EtherLink/Etherlink XL PCI Busmaster NIC''
+	
+	    Replace with:
+	    [OptionsTextENG]
+	    3C905 = ''3Com Fast EtherLink/Etherlink XL PCI Busmaster NIC''
+	
+	3. After you modify the Oemsetup.inf file, perform the unattended installation
+	  of Windows NT Workstation 4.0.
+	
+	MORE INFORMATION
+	================
+	
+	For additional information about how to install Windows NT Workstation 4.0 and
+	an OEM network adapter, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q156823 How to Install an OEM Network Adapter Card in WinNT 4.0 Setup
+	
+	Additional query words: nic autodetect
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search
+	Version           : winnt:4.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

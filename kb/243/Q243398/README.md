@@ -1,0 +1,70 @@
+---
+layout: page
+title: "Q243398: XADM: Two Sites With the Same Org and Site Name May Join"
+permalink: kb/243/Q243398/
+---
+
+## Q243398: XADM: Two Sites With the Same Org and Site Name May Join
+
+	Article: Q243398
+	Product(s): Microsoft Exchange
+	Version(s): winnt:4.0,5.0,5.5
+	Operating System(s): 
+	Keyword(s): exc4 exc5 exc55
+	Last Modified: 25-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+	-------------------------------------------------------------------------------
+	
+	
+	SUMMARY
+	=======
+	
+	When you have two multi-server sites with the same organization and site name
+	and same service account, and you remove a server from one site and install it
+	in the other site without deleting the server from the original site, the two
+	sites will join together.
+	
+	When this happens, you receive the following message on the server left in the
+	original site:
+	
+	  Event ID: 1349
+	  Source: MSExchangeDS
+	  Type: Warning
+	  Description:
+	  The GUID on server ServerD has changed from 8ab25beb042fd311af6c00c04f68de18
+	  ServerD to 54242885302fd311af6e00c04f68de18. This will cause all replicas to
+	  be resynced from scratch.
+	
+	MORE INFORMATION
+	================
+	
+	This behavior is by design.
+	
+	When Exchange Server is removed from a server, you must delete it from the site
+	so that all servers are notified that it was removed. The Remove All option in
+	Setup does not do this. If the server is not removed, the remaining servers know
+	the departed computer by name and will establish remote procedure call (RPC)
+	connections to it as needed. Because they are in the same security context,
+	there is no problem establishing a connection. Two sites with the same
+	organization and site name have the same Naming Context (NC), so the information
+	returned on a replication request is valid for the NC. When the two servers
+	communicate, the remaining server sees that the GUID has changed on the moved
+	computer. This cannot be used to decide against replication, however, because a
+	server that is removed and reinstalled in the same site will also have a new
+	GUID. There is no GUID for the organization itself, so Exchange Server cannot
+	determine that an organization change has occurred.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : exc4 exc5 exc55 
+	Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+	Version           : winnt:4.0,5.0,5.5
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

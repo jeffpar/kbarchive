@@ -1,0 +1,69 @@
+---
+layout: page
+title: "Q120181: BUG: Incomplete APPEND GENERAL Command Doesn't Generate Error"
+permalink: kb/120/Q120181/
+---
+
+## Q120181: BUG: Incomplete APPEND GENERAL Command Doesn't Generate Error
+
+	Article: Q120181
+	Product(s): Microsoft FoxPro
+	Version(s): MACINTOSH:2.5x,2.6a; WINDOWS:2.5x,2.6,2.6a,3.0,5.0,5.0a,6.0
+	Operating System(s): 
+	Keyword(s): kberrmsg kbvfp kbvfp500aBUG kbvfp250bug kbvfp250aBUGkbbuglist
+	Last Modified: 03-AUG-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 5.0a, 6.0 
+	- Microsoft FoxPro for Windows, versions 2.5x, 2.6, 2.6a 
+	- Microsoft FoxPro for Macintosh, versions 2.5x, 2.6a 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Issuing the following incomplete command doesn't generate an error message:
+	
+	  APPEND GENERAL <fieldname>
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products listed at
+	the beginning of this article.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Problem
+	--------------------------
+	
+	Type the following commands in the Command window:
+	
+	     CREATE TABLE test (genfld G, charfld C(10))
+	     INSERT INTO test (charfld) VALUES ('ONE')
+	     APPEND GENERAL genfld
+	
+	Note that no error message is generated.
+	
+	NOTE: If the INSERT command is not run, an "End of file encountered" error
+	message is displayed. This error occurs when the APPEND GENERAL command is used
+	with an empty table.
+	
+	For additional information about using the APPEND GENERAL command with an empty
+	table, please see the following article(s) in the Microsoft Knowledge Base:
+	
+	  Q110364 ERR: "End of File Encountered" with APPEND GENERAL
+	
+	Additional query words: errmsg err msg database ole object linking embedding statement kbFP250 kbFP260 kbvfp300 kbvfp500 kbvfp600 akz
+	
+	======================================================================
+	Keywords          : kberrmsg kbvfp kbvfp500aBUG kbvfp250bug kbvfp250aBUG kbbuglist
+	Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro260aMac kbFoxPro260 kbFoxPro260a kbVFP300 kbVFP500 kbVFP600 kbVFP500a
+	Version           : MACINTOSH:2.5x,2.6a; WINDOWS:2.5x,2.6,2.6a,3.0,5.0,5.0a,6.0
+	Issue type        : kbbug
+	
+	=============================================================================
+	

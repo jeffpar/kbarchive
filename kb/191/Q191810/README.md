@@ -1,0 +1,63 @@
+---
+layout: page
+title: "Q191810: Dial-Up Networking Server Utility Does Not Work"
+permalink: kb/191/Q191810/
+---
+
+## Q191810: Dial-Up Networking Server Utility Does Not Work
+
+	Article: Q191810
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:95
+	Operating System(s): 
+	Keyword(s): kbenv kbnetwork kbtool dun win95 kbDialUp
+	Last Modified: 28-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 95 
+	- Microsoft Plus! for Windows 95 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	After you install the Dial-Up Networking 1.3 Upgrade, the Dial-Up Networking
+	Server utility does not work.
+	
+	CAUSE
+	=====
+	
+	This behavior can occur because the Dial-Up Networking 1.3 Upgrade uninstalls
+	the Dial-Up Networking Server utility.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, reinstall the Dial-Up Networking Server utility if you
+	want to continue using it. To do so, use the following steps:
+	
+	1. Click Start, point to Settings, click Control Panel, and then double-click
+	  Add/Remove Programs.
+	
+	2. Click the Windows Setup tab, click Communications (the word, not the check
+	  box), and then click Details.
+	
+	3. Click the Dial-Up Networking Server check box to select it, click OK, and
+	  then restart your computer. Note that this also installs the Direct Cable
+	  Connection utility if it is not already installed.
+	
+	MORE INFORMATION
+	================
+	
+	The Dial-Up Networking 1.3 Upgrade Setup program deletes the Rnaserv.dll file.
+	
+	======================================================================
+	Keywords          : kbenv kbnetwork kbtool dun win95 kbDialUp 
+	Technology        : kbWin95search kbGamesSearch kbPlusSearch kbZNotKeyword3 kbPlus95
+	Version           : WINDOWS:95
+	Issue type        : kbprb
+	
+	=============================================================================
+	

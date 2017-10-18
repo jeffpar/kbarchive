@@ -1,0 +1,99 @@
+---
+layout: page
+title: "Q157855: PRB: AfterRowColChange Event Code Does Not Enable Grid Cell"
+permalink: kb/157/Q157855/
+---
+
+## Q157855: PRB: AfterRowColChange Event Code Does Not Enable Grid Cell
+
+	Article: Q157855
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:5.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 11-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If the Enabled property of a cell is changed in the AfterRowColChange event, the
+	effect may not take place immediately. A cell that should be enabled may be
+	disabled after moving to it from a disabled cell. Moving to a different cell in
+	that row and back again enables the cell.
+	
+	CAUSE
+	=====
+	
+	The Enabled property at the column level is checked upon entry to the field. If
+	it is changed after entering a field, it is not looked at again until you leave
+	and re-enter the field.
+	
+	WORKAROUND
+	==========
+	
+	If you wish to disallow editing of a cell based on the contents of the cell, set
+	the ReadOnly property to true (.T.) as shown below:
+	
+	     IF numb_char.numb>80000
+	        This.Columns(ncolindex).ReadOnly=.F.
+	     ELSE
+	        This.Columns(ncolindex).ReadOnly=.T.
+	     ENDIF
+	
+	Furthermore, you can change the color of the active cell by following the steps
+	outlined in the following article in the Microsoft Knowledge Base:
+	
+	  Q129280 How to Change the Color of the Active Cell in a Grid
+	
+	STATUS
+	======
+	
+	This behavior is by design.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Create a table by entering the following command in the Command window:
+	
+	  " CREATE TABLE numb_char(numb n(5),alpha c(5)) " (without the quotation
+	  marks)
+	
+	2. Fill the numeric field with some values over 80000 and some values under.
+	  Fill the alpha field with anything.
+	
+	3. Create a new form and place the table in the DataEnvironment.
+	
+	4. Drag the table to the form to make a grid.
+	
+	5. Place the following code in the AfterRowColChange event:
+	
+	        IF numb_char.numb>80000
+	           This.Columns(ncolindex).Enabled=.t.
+	        ELSE
+	           This.Columns(ncolindex).Enabled=.f.
+	        ENDIF
+	
+	6. Save and Run the form. Move from row to row.
+	
+	Notice when you move with the arrow keys from a disabled row to one that should
+	be enabled, the row that should be enabled is not until you move to the left or
+	right and back again.
+	
+	Additional query words: kbdsd VFoxWin
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP500
+	Version           : WINDOWS:5.0
+	
+	=============================================================================
+	

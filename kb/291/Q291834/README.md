@@ -1,0 +1,122 @@
+---
+layout: page
+title: "Q291834: How To Troubleshoot MSN Connectivity After AOL Is Installed."
+permalink: kb/291/Q291834/
+---
+
+## Q291834: How To Troubleshoot MSN Connectivity After AOL Is Installed.
+
+	Article: Q291834
+	Product(s): The Microsoft Network
+	Version(s): 2000,6.0,6.1
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 15-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- the operating system: Microsoft Windows Millennium Edition 
+	- the operating system: Microsoft Windows 98 
+	- The Microsoft Network versions 6.0, 6.1 
+	- the operating system: Microsoft Windows 2000 
+	- the operating system: Microsoft Windows 95 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	MSN Explorer users may have difficulty connecting to MSN after installing
+	America Online (AOL) software. Users who attempt to run AOL software and MSN
+	Internet Access software on the same computer may experience any of the
+	following issues:
+	
+	- MSN software can't detect a dial tone.
+	
+	- Web pages display with errors or not at all.
+	
+	- Dial-up connection does not work.
+	
+	CAUSE
+	=====
+	
+	This issue is caused by conflicts between the network components included with
+	AOL installations and those included with MSN installations.
+	
+	RESOLUTION
+	==========
+	
+	These issues can be resolved by uninstalling and then re-installing the network
+	components (Dial-up adapter and TCP/IP). Note: Make sure that the customer has a
+	Windows CD nearby before performing these steps.
+	
+	- To uninstall and then re-install the network components for Windows 95, 98,
+	  and Millenium users
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click the Network icon.
+	
+	3. Select Dial-up Adapter, and then click the Remove button.
+	
+	4. Click OK after the warning box that appears.
+	  This should remove both Dial-up Adapter and TCP/IP/Dial-up Adapter.
+	  Note: Remove only Dial-up Adapter; do not remove AOL Dial-up Adapter.
+	
+	5. Click the Add button.
+	
+	6. Click Adapter , and then click Add.
+	  You may have to wait for Windows to build a driver information database.
+	
+	7. Under the Manufacturer column, select Microsoft; under the Adapter column,
+	  select Dial-up adapter, and then click OK.
+	  This will return you to the Network screen. Dial-up adapter and TCP/IP should
+	  now be present.
+	
+	8. Click OK.
+	  Now Windows will build a driver information database. If prompted, insert the
+	  Windows CD and click OK. Otherwise, after the database has been built, you
+	  will receive a prompt to restart your computer. Click Yes to restart the
+	  computer.
+	
+	- To uninstall and then re-install the network components for Windows 2000
+	  users
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click Network and Dial-up Connections.
+	
+	3. Right-click the MSN Explorer or MSN Internet Access icon.
+	  A menu appears.
+	
+	4. Click Properties.
+	
+	5. Click the Networking tab at the top of the properties screen.
+	
+	6. Click TCP/IP and then click the Uninstall button.
+	  A warning screen appears.
+	
+	7. Click OK.
+	
+	8. Click the Install button.
+	
+	9. Click Protocol and then click the Add button.
+	
+	10. Click TCP/IP and then click OK.
+	
+	11. On the properties window, click OK.
+	
+	MORE INFORMATION
+	================
+	
+	
+	Additional query words: kbimu; MSN Explorer
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbOSWin2000 kbOSWin98 kbOSWin95 kbOSWinME kbOSWinSearch kbMSNSearch kbMSN600 kbMSN610
+	Version           : :2000,6.0,6.1
+	Issue type        : kbprb
+	
+	=============================================================================
+	

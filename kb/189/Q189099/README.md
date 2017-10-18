@@ -1,0 +1,99 @@
+---
+layout: page
+title: "Q189099: RRAS Could Forward IP Fragments Without Filtering"
+permalink: kb/189/Q189099/
+---
+
+## Q189099: RRAS Could Forward IP Fragments Without Filtering
+
+	Article: Q189099
+	Product(s): Microsoft Windows NT
+	Version(s): WinNT:4.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 09-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Routing and Remote Access Service Update for Windows NT Server version 4.0 
+	- Microsoft Windows NT Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about editing the registry. 
+	Before you edit the registry, make sure you understand how to restore it if
+	a problem occurs. For information about how to do this, view the "Restoring 
+	the Registry" Help topic in Regedit.exe or the "Restoring a Registry Key" Help 
+	topic in Regedt32.exe.
+	
+	SYMPTOMS
+	========
+	
+	If you enable packet filtering on an interface in the Microsoft Routing and
+	Remote Access Service Update for Windows NT (RRAS), IP fragments could be
+	forwarded without being filtered.
+	
+	CAUSE
+	=====
+	
+	RRAS filters are "stateless." Therefore, no matter how the filter is defined, it
+	is possible that an unwanted fragment will be forwarded. For RRAS to drop
+	unwanted fragments, it must keep track of the protocol state, from packet to
+	packet, for each routed conversation.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, obtain the latest service pack for Windows NT 4.0. For
+	additional information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+	
+	
+	After you apply the service pack, make the following registry changes to use the
+	new filter capabilities:
+	
+	WARNING: Using Registry Editor incorrectly can cause serious problems that may
+	require you to reinstall your operating system. Microsoft cannot guarantee that
+	problems resulting from the incorrect use of Registry Editor can be solved. Use
+	Registry Editor at your own risk.
+	
+	For information about how to edit the registry, view the "Changing Keys and
+	Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+	Information in the Registry" and "Edit Registry Data" Help topics in
+	Regedt32.exe. Note that you should back up the registry before you edit it. If
+	you are running Windows NT or Windows 2000, you should also update your
+	Emergency Repair Disk (ERD).
+	
+	  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\IPFilterDriver
+	  \Parameters
+	
+	NOTE: The above registry key is one path; it has been wrapped for readability.
+	
+	Add the following values to the above Registry key:
+	
+	- DefaultForwardFragments - REG_DWORD = 0 (Decimal)
+	
+	  Setting this to "0" causes the filterdriver to drop fragments if they don't
+	  match a previous header.
+	
+	- EnableFragmentChecking - REG_DWORD = 1 (Decimal)
+	
+	  Setting this to "1" enables fragment checks.
+	
+	NOTE: Even with this new filter update properly installed, it is possible for
+	unwanted fragments to be forwarded through the router.
+	
+	
+	Additional query words: ntrouter
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbAudDeveloper kbRRASNTSearch kbRRASNT400
+	Version           : WinNT:4.0
+	Hardware          : ALPHA x86
+	Issue type        : kbbug
+	
+	=============================================================================
+	

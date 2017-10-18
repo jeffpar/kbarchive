@@ -1,0 +1,167 @@
+---
+layout: page
+title: "Q132128: ADT2: Installing/Registering OLE Controls in Run-time App"
+permalink: kb/132/Q132128/
+---
+
+## Q132128: ADT2: Installing/Registering OLE Controls in Run-time App
+
+	Article: Q132128
+	Product(s): Microsoft Access Distribution Kit
+	Version(s): 2.0
+	Operating System(s): 
+	Keyword(s): kbsetup
+	Last Modified: 05-JUL-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Access Developer's Toolkit, version 2.0 
+	-------------------------------------------------------------------------------
+	
+	Moderate: Requires basic macro, coding, and interoperability skills.
+	
+	SUMMARY
+	=======
+	
+	This article describes how to install and register an OLE control (.OCX) using
+	the Microsoft Access Developer's Toolkit version 2.0 (ADT) Setup Wizard or a
+	third-party installation program.
+	
+	MORE INFORMATION
+	================
+	
+	To use an OLE control in a Microsoft Access run-time application, you must first
+	install the OLE control and its support files; then, you must register the
+	control in the REG.DAT file in the \Windows\SYSTEM directory. These two
+	procedures are described in detail below.
+	
+	Installing OLE Custom Controls
+	------------------------------
+	
+	If you plan to use a third-party installation program to set up your run- time
+	application, make sure the OLE control and its support files are installed in
+	the following directories:
+	
+	  Directory         Filename        Description
+	  ----------------------------------------------------------------------
+	  \Windows\SYSTEM   OC1016.DLL      The OLE Control Support DLL shipped
+	                                    with the ADT.
+	  \Windows\SYSTEM   OC25.DLL        A support DLL required by controls
+	                                    created with the OLE Control
+	                                    Development Kit (CDK) for Microsoft
+	                                    Visual C\C++ version 2.0. If your
+	                                    control was not created with the CDK,
+	                                    this file is not needed.
+	  \<application>    MSAREG.EXE      The OLE Control registration tool.
+	  \<application>    <control>.OCX   The OLE Control file.
+	  \<application>    DAO2016.DLL     A DLL required for custom controls.
+	
+	If you plan to use the Microsoft ADT Setup Wizard to create your distribution
+	disks, follow these steps to ensure proper installation of OLE controls:
+	
+	1. Open the Microsoft ADT Setup Wizard (SETUPWIZ.MDB) located in your
+	  \ACCESS\ADT directory.
+	
+	2. In the "Pick the files to include with your application" box, click the Add
+	  File button.
+	
+	3. In the Add File box, enter the full path to your database. Select the "Show
+	  in Program Manager Group" and "Run with MSARN200" options. In the INI File
+	  box, type the full path to your application's .INI file, and then click the
+	  OK button.
+	
+	4. In the "Pick the files to include with your application" box, click the Add
+	  File button.
+	
+	5. In the Add File box, type the full path to the OLE control (.OCX) file, and
+	  click OK.
+	
+	6. If you are using a third-party OLE control, repeat steps 4 and 5 to add any
+	  support DLLs for the OLE control.
+	
+	  If you are using an OLE control included with the Microsoft ADT (the
+	  MSACAL20.OCX, MSASB20.OCX, or OUTL1016.DLL files), the Setup Wizard prompts
+	  you with the message "The file you've selected depends on 1 file(s). Do you
+	  want to see a list?" Click the No button. In the Add File box, click OK. The
+	  Setup Wizard adds the OLE support file, OC1016.DLL.
+	
+	7. After you add the OLE control (and its supporting DLLs), click the Next
+	  button in the "Pick the files to include with your application" box.
+	
+	8. In the "What optional features does your application support?" box, make sure
+	  the OLE 2.01 option (or OLE 2.02, if you installed the Microsoft Access 2.0
+	  Service Pack) is selected.
+	
+	9. In the "What is the name of your application" box, type a name for your
+	  application. Also, type a name for the directory that your custom setup
+	  program suggests as a default directory, and then click Next.
+	
+	10. In the "Do you want to run another application after Setup is finished?"
+	  box, click Next.
+	
+	11. In the "Where do you want to create the disk images" box, type a path for
+	  your application's SETUP directory, select a type of disk setup, and then
+	  click Finish.
+	
+	  At this point, you can use your distribution disks to set up you run- time
+	  application and register any OLE control.
+	
+	Registering OLE Controls
+	------------------------
+	
+	If you use the Microsoft ADT Setup Wizard to create your distribution disks, your
+	OLE controls are registered automatically when you set up your run-time
+	application. The Microsoft Access Setup program installs and runs the file
+	MSAREG.EXE that registers any .OCX files you picked in the ADT Setup Wizard.
+	
+	If you plan to use a third-party installation program, make sure all OLE controls
+	are registered properly in the REG.DAT file of the \Windows\SYSTEM directory. To
+	register an OLE control, follow these steps:
+	
+	1. In Windows 3.x, in Program Manager or File Manager, click Run on the File
+	  menu. In Windows 95, click the Start Button, and then click Run.
+	
+	2. In the Command box (or Open box in Windows 95), type a command similar to the
+	  following line:
+	
+	  " MSAREG.EXE C:\<application>\<control>.OCX " (without the
+	  quotation marks)
+	
+	  For example, to register the Calendar control type the following line:
+	
+	  " MSAREG.EXE C:\ACCESS\ADT\MSACAL20.OCX " (without the quotation marks)
+	
+	3. Click OK to run the MSAREG.EXE file and to register the OLE control.
+	
+	NOTE: OLE controls created with the OLE Control Development Kit (CDK) for
+	Microsoft Visual C\C++ version 2.0 require users to install OLE version 2.02.
+	For more information about OLE 2.02, please see the following article in the
+	Microsoft Knowledge Base:
+	
+	  ARTICLE-ID: Q123593
+	  TITLE : ACC2: OLE 2.02 Required to Use Custom Controls
+	
+	REFERENCES
+	==========
+	
+	Microsoft Access "Advanced Topics," version 2.0, Chapter 6, "Using OLE Custom
+	Controls," pages 166-175
+	
+	For information about how to obtain the Microsoft Access Service Pack, please see
+	the following article in the Microsoft Knowledge Base:
+	
+	  ARTICLE-ID: Q122927
+	  TITLE : WX1124: Microsoft Access Version 2.0 Service Pack
+	
+	Additional query words: ADT20
+	
+	======================================================================
+	Keywords          : kbsetup 
+	Technology        : kbAudDeveloper kbAccessSearch kbAccessDevTK200 kbZNotKeyword3
+	Version           : 2.0
+	Hardware          : x86
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

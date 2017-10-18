@@ -1,0 +1,106 @@
+---
+layout: page
+title: "Q181367: WinNT Error Message: Could Not Locate Ws2_32.dll"
+permalink: kb/181/Q181367/
+---
+
+## Q181367: WinNT Error Message: Could Not Locate Ws2_32.dll
+
+	Article: Q181367
+	Product(s): Microsoft Windows NT
+	Version(s): WinNT:3.51
+	Operating System(s): 
+	Keyword(s): kb3rdparty kberrmsg kbinterop
+	Last Modified: 09-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 3.51 
+	- Microsoft Windows NT Server version 3.51 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When your computer running Windows NT version 3.51 starts, you may receive the
+	following error message:
+	
+	  Could not locate WS2_32.DLL. Hit OK to continued.
+	
+	NOTE: You have a version of Compaq's Insight Manager installed in addition to the
+	Simple Network Management Protocol (SNMP) service that ships with Windows NT.
+	
+	CAUSE
+	=====
+	
+	There are conflicting versions of files on the computer because of the removal
+	and reinstallation of certain network components.
+	
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, use the following steps:
+	
+	1. Completely uninstall the Insight Agents service.
+	
+	  NOTE: For instructions on how to uninstall Insight Agent, please refer to the
+	  Insight Agent documentation.
+	
+	2. Restart the computer.
+	
+	3. Remove the SNMP service:
+	
+	  a. In Control Panel, double-click Network.
+	
+	  b. Select the SNMP service from the Installed Network Software list and then
+	     click Remove.
+	
+	  c. Click Yes to the confirmation dialog.
+	
+	  d. Click Restart Now.
+	
+	4. Reinstall SNMP service:
+	
+	  a. In Control Panel, double-click Network.
+	
+	  b. Click Add Software, select TCP/IP and related components in the Network
+	     Software drop-down list, and click Continue.
+	
+	  c. Click to select SNMP Service and click Continue.
+	
+	  d. Provide the path to your Windows NT source files and click Continue. For
+	     example:
+	
+	     D:\i386
+	
+	  e. Configure your SNMP options and click OK.
+	
+	  f. Click Close and click Don't Restart Now.
+	
+	5. Reapply Windows NT version 3.51 Service Pack 5.
+	
+	  NOTE: Do not restart your computer when prompted.
+	
+	6. Reapply the latest Compaq SSD and restart your computer when prompted.
+	
+	7. Reinstall Insight Agent.
+	
+	For more information, please see the following article in the Microsoft Knowledge
+	base:
+	
+	  ARTICLE-ID: Q177202
+	  TITLE : Installing WinNT SPs with Compaq's SSD and Insight Mgr
+	
+	The third-party products discussed here are manufactured by vendors independent
+	of Microsoft; we make no warranty, implied or otherwise, regarding these
+	products' performance or reliability.
+	======================================================================
+	Keywords          : kb3rdparty kberrmsg kbinterop 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+	Version           : WinNT:3.51
+	Issue type        : kbprb
+	
+	=============================================================================
+	

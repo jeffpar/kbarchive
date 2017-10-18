@@ -1,0 +1,124 @@
+---
+layout: page
+title: "Q188715: Global ASA Not Firing When Visual InterDev Made IIS 4.0 App"
+permalink: kb/188/Q188715/
+---
+
+## Q188715: Global ASA Not Firing When Visual InterDev Made IIS 4.0 App
+
+	Article: Q188715
+	Product(s): Internet Information Server
+	Version(s): 1.0,4.0,6.0
+	Operating System(s): 
+	Keyword(s): kbnokeyword
+	Last Modified: 11-MAR-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Server 4.0 
+	- Microsoft Visual InterDev, versions 1.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	After creating a new application with Visual InterDev on Internet Information
+	Server 4.0 (IIS), the code in the Global.asa for this application does not
+	execute. A common symptom is while an administrator is logged into the IIS 4.0
+	computer, applications are created successfully, and when an administrator is
+	not logged into the IIS computer, projects are not created as applications.
+	
+	CAUSE
+	=====
+	
+	If the virtual directory that contains the Global.asa is not set as an
+	Application Root, the code in the Global.asa will not be executed. Visual
+	InterDev will be unable to create an application root if the Microsoft
+	Transaction Server (MTS) system package logon identity is set to "Interactive
+	user - the current logged on user" and no one is currently logged on or the
+	current logged on does not have the proper permissions to create an MTS package.
+	
+	RESOLUTION
+	==========
+	
+	During the installation of Internet Information Server 4.0, a user can specify
+	the account for MTS sessions to run under. By default, the Interactive User is
+	specified. What this means is that when there is no Interactive User (for
+	example, an administrator is not logged onto the Web server), administrative
+	operations that require authentication, such as creating an Application Root,
+	fail.
+	
+	Use the following steps to resolve existing problems:
+	
+	1. Bring up the Microsoft Management Console (MMC).
+	
+	2. Right-click the directory that contains the Global.asa that is not firing and
+	  select "properties."
+	
+	3. Select the Directory or Virtual Directory tab.
+	
+	4. Click the Create button to establish this directory as an application root.
+	
+	While the above steps will resolve existing problems, you can use the following
+	steps to prevent future problems:
+	
+	1. Bring up the MMC for the server.
+	
+	2. Expand "Microsoft Transaction Server."
+	
+	3. Expand "Computers."
+	
+	4. Expand "My Computer."
+	
+	5. Expand "Packages Installed."
+	
+	6. Right-click "System" and bring up the Property page.
+	
+	7. On the Identity tab, change from the interactive user to a user that is an
+	  administrator* on the machine.
+	
+	8. Close the Property page.
+	
+	9. Reboot.
+	
+	*Following are steps to create an account to use for the MTS System Package:
+	
+	Follow these steps to use the user manager:
+	
+	1. Create a new local group and name it MTS Administrators.
+	
+	2. Create a new user and name it MTS Administrator.
+	
+	3. Make the new user a member of the both the Administrators group and the MTS
+	  Administrators group,
+	
+	4. Give the new user the advanced user right to log on as a service.
+	
+	For more information on how to configure the system package account, see the
+	Internet Information Server 4.0 product documentation under Getting Started
+	Release Notes for Microsoft Transaction Server
+	
+	REFERENCES
+	==========
+	
+	For more information about application settings, see the "Configuring
+	Applications" topic in the Windows NT 4.0 Option Pack online documentation.
+	
+	For the latest Knowledge Base articles and other support information on Visual
+	InterDev and Active Server Pages, see the following page on the Microsoft
+	Technical Support site:
+	
+	  http://support.microsoft.com/support/vinterdev/
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbnokeyword 
+	Technology        : kbVisIDsearch kbiisSearch kbAudDeveloper kbiis400 kbVisID100 kbVisID600
+	Version           : :1.0,4.0,6.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

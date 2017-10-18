@@ -1,0 +1,83 @@
+---
+layout: page
+title: "Q139055: Problem Changing Computer Name Without Changing DNS Name"
+permalink: kb/139/Q139055/
+---
+
+## Q139055: Problem Changing Computer Name Without Changing DNS Name
+
+	Article: Q139055
+	Product(s): Microsoft Windows NT
+	Version(s): 3.5 3.51 4.0
+	Operating System(s): 
+	Keyword(s): kbnetwork
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+	- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	On your computer running Windows NT, if you install TCP/IP and allow it to use
+	your computer name, by default, as Domain Name System (DNS) host name and you
+	decide to change the computer name afterwards, the following symptoms occur when
+	you issue the PING.EXE and IPCONFIG.EXE /ALL commands:
+	
+	- Even though no other computer uses the old computer name, you can still ping
+	  the old as well as the new computer name by using the following syntax:
+	
+	  PING <computer_name>
+	
+	- The IPCONFIG /ALL command still displays a name that matches your old
+	  computer name.
+	
+	- If another computer running Windows NT or another operating system (with
+	  TCP/IP installed) has your old computer name as a computer name or DNS host
+	  name and you try to ping the other computer by name, ping still returns the
+	  IP address of your computer instead of the other computer.
+	
+	CAUSE
+	=====
+	
+	When you ping by name, Windows NT responds if either the computer name or the
+	DNS host name match the name being pinged.
+	
+	IPCONFIG /ALL displays the DNS host name, not the computer name, and the host
+	name has not changed.
+	
+	RESOLUTION
+	==========
+	
+	To cause PING.EXE and IPCONFIG /ALL to display names that match your computer
+	name, change your DNS host name to your new computer name.
+	
+	To change your DNS host name:
+	
+	1. Run Control Panel and choose Network.
+	
+	2. Select the TCP/IP Protocol from the list of Installed Network Software and
+	  choose Configure.
+	
+	3. Choose DNS and edit the Host Name.
+	
+	MORE INFORMATION
+	================
+	
+	It may be appropriate in your environment to have a DNS host name that is
+	different from your computer name. Windows NT TCP/IP does not require that the
+	computer name and host name match.
+	
+	Additional query words: prodnt hostname
+	
+	======================================================================
+	Keywords          : kbnetwork 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+	Version           : 3.5 3.51 4.0
+	
+	=============================================================================
+	

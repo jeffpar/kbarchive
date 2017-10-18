@@ -1,0 +1,202 @@
+---
+layout: page
+title: "Q236092: FIX: &quot;Error Spawning 'vcspawn.exe'. The build could not be perfo"
+permalink: kb/236/Q236092/
+---
+
+## Q236092: FIX: &quot;Error Spawning 'vcspawn.exe'. The build could not be perfo
+
+	Article: Q236092
+	Product(s): Microsoft C Compiler
+	Version(s): 6.0
+	Operating System(s): 
+	Keyword(s): kbVC600bug kbDSupport kbNoUpdate
+	Last Modified: 11-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+	- Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+	- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Building applications from the integrated development environment (IDE) may
+	fail, with the following message subsequently displayed in the output window:
+	
+	  Error spawning 'vcspawn.exe'. The build could not be performed.
+	
+	The message does not identify why the build could not be performed.
+	
+	CAUSE
+	=====
+	
+	There are several known causes for this message:
+	
+	- The environment used by the IDE does not have the correct directories to
+	  search for such tools as Vcspawn.exe.
+	
+	- The ComSpec environment variable may be incorrectly defined.
+	
+	- The system's NULL device may be disabled or missing (Microsoft Windows NT
+	  only).
+	
+	Although all of these are valid reasons for a build to fail, Visual C++ does not
+	provide enough information to identify the specific cause of the failure or how
+	to resolve it.
+	
+	RESOLUTION
+	==========
+	
+	The following are four suggested resolutions:
+	
+	Resolution 1: Install or Re-Enable NULL Device (Windows NT Only):
+	
+	There are slight variations on the displayed error text. These variations can
+	sometimes help to identify what is causing the problem. If the error text
+	resembles the following, you may have problems opening the NULL device:
+	
+	  Cannot start tool. The system cannot find the file specified. The system
+	  cannot find the file specified. Error spawning 'vcspawn.exe'. The build could
+	  not be performed.
+	
+	Use the following steps to check on the NULL device:
+	
+	1. From Control Panel, open the Devices manager.
+	
+	2. Look for the Null device in the list of devices. If you do not have a Null
+	  device, you must reinstall Null.sys.
+	
+	3. The Null device should show Status=Started and Startup=System.
+	
+	4. To correct the Status setting, select the Null device and click Start.
+	
+	5. To correct the Startup setting, select the Null device, click Startup, and
+	  then select System.
+	
+	Resolution 2: Correct the IDE Environment:
+	
+	If you have the following error text variation, you probably have errors in the
+	ComSpec definition or the IDE environment, which specifies where to find the
+	tools:
+	
+	  Cannot start tool. The operation completed successfully. Cannot start tool.
+	  Error spawning 'vcspawn.exe'. The build could not be performed.
+	
+	See Resolution 4 below for information about correcting the ComSpec definition.
+	To correct the IDE environment:
+	
+	1. From the Tools menu, click Options.
+	
+	2. Click the Directories tab, and under Show Directories for, select Executable
+	  Files.
+	
+	3. The following five directories should be listed in this order: Correct the
+	  directory list to point to valid directories:
+	
+	  a. (Your VC install location)\Common\MSDev98\Bin;
+	
+	  b. (Your VC install location)\VC98\BIN;
+	
+	  c. (Your VC install location)\Common\TOOLS;
+	
+	  d. Your Windows system directory (often this is C:\WINNT\system32)
+	
+	  e. Your Windows directory (often this is C:\WINNT)
+	
+	4. Test these directories by double-clicking them, and then click the ellipses
+	  [...]. Alternatively, copy the directory to the clipboard. Then, on the Start
+	  menu, click Run, and paste the directory into the Open text box. This method
+	  should bring up Windows Explorer with that directory.
+	
+	5. To add a new directory, double-click an empty box and then click the ellipses
+	  [...].
+	
+	  NOTE: The "...\MSDev98\Bin" directory contains Vcspawn.exe and should be first
+	  in the list.
+	
+	Resolution 3: Use the System Environment:
+	
+	An alternative way of specifying the executable paths is to use the /USEENV
+	argument when starting MSDEV (Visual C++). The command line resembles the
+	following:
+	
+	Msdev /USEENV
+	
+	This action forces Visual C to use the system environment settings rather than
+	the directories specified in Options under the Tools menu. This will help if the
+	system environment variables are all correct; for example, if you can build
+	successfully from a command prompt.
+	
+	NOTE: Resolution 2 is usually recommended over using the /USEENV switch. For
+	additional information about a bug that was fixed in Service Pack 3, please
+	click the article number below to view the article in the Microsoft Knowledge
+	Base:
+	
+	  Q216854 FIX: Running msdev /useenv Once Causes Environment To Be Used
+	  Permanently
+	
+	Resolution 4: Correct the ComSpec Environment Variable Definition:
+	
+	If the paths look correct (see Resolution 2), the problem may be with the ComSpec
+	environment variable. The ComSpec environment variable identifies the command
+	prompt executable. On Windows NT, this usually resembles the following:
+	
+	ComSpec=C:\WINNT\system32\cmd.exe
+	
+	On Windows 95 or Windows 98, it typically resembles the following:
+	
+	ComSpec=C:\Windows\COMMAND.COM
+	
+	To check, set, or change the value of the ComSpec environment variable:
+	
+	- On Windows NT:
+	
+	  1. From the Start menu, point to Settings, then click Control Panel.
+	
+	  2. Double-click the System icon (this action displays all existing
+	     environment variables and their values).
+	
+	  3. Add or modify the ComSpec variable, as necessary.
+	
+	- On Windows 9x:
+	
+	  1. From the MS-DOS prompt, enter "set ComSpec" (without the quotation marks).
+	     This action either displays the current value of the ComSpec environment
+	     variable, or "Environment Variable ComSpec not defined."
+	
+	  2. Edit the Autoexec.bat file to modify or add ComSpec to the system as
+	     necessary.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article.
+	
+	This problem was corrected in Microsoft Visual C++ .NET.
+	
+	REFERENCES
+	==========
+	
+	For additional information about this subject, please click the article numbers
+	below to view the articles in the Microsoft Knowledge Base:
+	
+	  Q189138 PRB: "error spawning empfile.exe" Building WINCE Application
+	
+	  Q188720 PRB: Error Executing ~vcecho!Compiling
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbVC600bug kbDSupport kbNoUpdate 
+	Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch
+	Version           : :6.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

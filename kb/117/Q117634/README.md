@@ -1,0 +1,332 @@
+---
+layout: page
+title: "Q117634: Baseball 1994: Manual Installation Instructions"
+permalink: kb/117/Q117634/
+---
+
+## Q117634: Baseball 1994: Manual Installation Instructions
+
+	Article: Q117634
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): 1994 edition
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 09-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Complete Baseball for Windows, version 1994 edition 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article provides instructions to manually set up Microsoft Complete
+	Baseball for Windows.
+	
+	This installation is equivalent to the Fast setup option, which requires 6
+	megabytes (MB) of disk space and provides the fastest performance.
+	
+	These instructions assume:
+	
+	- Your hard disk drive is drive C.
+	
+	- Your destination folder (directory) is C:\Baseball
+	
+	- Your Windows folder is C:\Windows
+	
+	- Your CD-ROM drive is drive D.
+	
+	If your hard disk drive, destination folder, Windows folder, and/or CD-ROM drive
+	letters and directories are different, replace the drive letters and folder
+	names throughout this article with the drive letters and folder names on your
+	computer.
+	
+	NOTE: The following manual installation instructions discuss copying, editing,
+	and modifying directories and files. For more information about accomplishing
+	these tasks in Windows, see your Windows printed documentation or online Help.
+	
+	MORE INFORMATION
+	================
+	
+	1. Create a directory named Baseball and a subdirectory named Baseball\Daily on
+	  drive C. For example, from the MS-DOS command prompt on drive C, type the
+	  following and press ENTER:
+	
+	  "MD C:\BASEBALL" (without the quotation marks)
+	
+	  Then type the following at the MS-DOS command prompt and press ENTER:
+	
+	  "MD C:\BASEBALL\DAILY" (without the quotation marks)
+	
+	2. Copy all the files from the D:\App directory on your Baseball 1994 compact
+	  disc to the C:\Baseball directory on your hard disk.
+	
+	3. Copy the following files into the C:\Baseball directory:
+	
+	  D:\Readme.ico
+	  D:\Readme.txt
+	  D:\Baggage\Text.m11
+	  D:\Aamsstp\Baseball.stf
+	
+	4. Copy all the files from the D:\Daily directory on your Baseball 1994 CD to
+	  the C:\Baseball\Daily subdirectory.
+	
+	5. Without Windows running, perform the following steps at the MS-DOS command
+	  prompt. Allow MS-DOS to overwrite any files it finds already on your hard
+	  disk drive:
+	
+	  NOTE: If you are using Windows 95 and get a message stating that the file you
+	  are trying to copy to the system is older than the one on the system, do not
+	  let Windows change it.
+	  a. Copy all the files from the D:\Zzsystem directory on your Baseball 1994 CD
+	     to the C:\Windows\System directory.
+	
+	  b. Copy all the files from the D:\Viewer directory on your Baseball 1994
+	     compact disc to the C:\Windows\System directory.
+	
+	  c. Copy the following files from the D:\Zzmmcat directory on your Baseball
+	     1994 compact disc to the C:\Windows\System directory:
+	
+	  Catstub.exe
+	  Picclip.vbx
+	  Spush.vbx
+	  Vbrun300.dll
+	
+	  d. Remove the read-only attribute from all the files in the C:\Baseball and
+	     the C:\Baseball\Daily directories.
+	
+	Changes to the Win.ini File
+	---------------------------
+	
+	Use a text editor such as Windows Notepad or WordPad to make the following
+	changes to the Win.ini file, which is located in the Windows directory:
+	
+	1. Find the [mci extensions] section in the file and add the following line if
+	  it is not already present:
+	
+	  "AVI=AVIVideo" (without the quotation marks)
+	
+	2. Change or create the section labeled [Microsoft Multimedia Catalog] and add
+	  the following three lines to the section:
+	
+	  CatalogNum=1
+	  Path=D:\zzmmcat\
+	  ParentCD=Microsoft Complete Baseball
+	
+	Changes to the System.ini File
+	------------------------------
+	
+	Use a text editor to make the following changes to the System.ini file, which is
+	located in the Windows directory:
+	
+	1. Find the [Drivers] section in the file and add or modify the following
+	  lines:
+	
+	  WaveMapper=msacm.drv MSACM.msadpcm=msadpcm.acm MSACM.imaadpcm=imaadpcm.acm
+	  VIDC.MSVC=msvidc.drv VIDC.RT21=indeov.drv VIDC.CVID=iccvid.drv
+	  VIDC.IV31=indeov.drv VIDC.MRLE=msrle.drv VIDC.YVU9=indeov.drv
+	
+	2. Find the [mci] section in the file and add the following line if it is not
+	  already present:
+	
+	  "AVIVideo=mciavi.drv" (without the quotation marks)
+	
+	3. Find the [386Enh] section and add the following line if it is not already
+	  present:
+	
+	  "device=vshare.386" (without the quotation marks)
+	
+	  Verify that Vshare.386 is located in the \Windows\System subdirectory. If
+	  Vshare.386 isn't located in that directory, copy it from the \Zzsystem
+	  directory on the Complete Baseball disc.
+	
+	Changes to the Control.ini File
+	-------------------------------
+	
+	Use a text editor to make the following changes to the Control.ini file, which is
+	located in the Windows directory:
+	
+	Find the [drivers.desc] section in the file and add or modify the following
+	lines:
+	
+	  "msacm.drv=Microsoft Sound Mapper V2.00 msadpcm.acm=Microsoft ADPCM Codec
+	  V2.00 imaadpcm.acm=Microsoft IMA ADPCM Codec V2.00" (without the quotation
+	  marks)
+	
+	Create the Baseball.ini File
+	----------------------------
+	
+	Use a text editor to create the Baseball.ini file with the following entries:
+	
+	     [baseball]
+	     idxpath=C:\BASEBALL\ 
+	     cd=D:\ 
+	     workpath=C:\BASEBALL\ 
+	     viewerpath=C:\WINDOWS\SYSTEM\ 
+	     rlefix=0
+	
+	     [sound]
+	     installed=1
+	     fxsounds=1
+	     music=1
+	     random=1
+	     button=1
+	
+	Save the Baseball.ini file in the Windows directory.
+	
+	Create the Mssports.ini File
+	----------------------------
+	
+	Use a text editor to create the Mssports.ini file with the following entries:
+	
+	     [baseball]
+	     Key=<special characters>
+	     Path=C:\BASEBALL\DAILY
+	
+	     [online]
+	     ViewerPath=C:\WINDOWS\SYSTEM\ 
+	
+	NOTE: To insert the <special characters> after Key=, do the following: With
+	the NUMLOCK key turned on, place the cursor to the right of the Key= entry.
+	Press and hold down the ALT key while you type the numeric keypad numbers shown
+	below. Be sure to release the ALT key after typing each sequence of numbers:
+	
+	  ALT+0177
+	  ALT+0184
+	  ALT+0187
+	  ALT+0182
+	  ALT+0180
+	  ALT+0180
+	  ALT+0182
+	  ALT+0182
+	
+	Save the Mssports.ini file in the Windows directory.
+	
+	Windows 3.x, Creating the Baseball Icons in Program Manager
+	-----------------------------------------------------------
+	
+	If you use the Windows Program Manager, use the steps below to create the
+	Baseball icons:
+	
+	1. In Program Manager, create a new group called "Microsoft Multimedia" if there
+	  is not one there already.
+	  a. On the File menu, click New, and then select Program Group. Click OK.
+	
+	  b. In the Description field of the Program Group dialog box, type the
+	     following and click OK.
+	
+	  "Microsoft Multimedia" (without the quotation marks)
+	
+	2. Create the following three items in the Microsoft Multimedia group. To create
+	  an item, do the following:
+	  a. On the File menu in Program Manager, click New.
+	
+	  b. Click Program Item, and then click OK.
+	
+	  c. Copy the information below into the fields of the Program Item Properties
+	     dialog box, then click OK
+	
+	  Item 1:
+	  Description:      Complete Baseball
+	  Command Line:     C:\BASEBALL\BASEBALL.EXE
+	
+	  Item 2:
+	  Description:      Complete Baseball Info
+	  Command Line:     notepad.exe C:\BASEBALL\README.TXT
+	  Icon File Name:   C:\BASEBALL\README.ICO
+	
+	  Item 3:
+	  Description:      Online T-Shooting Tips
+	  Command Line:     notepad.exe C:\BASEBALL\DAILY\TBLSHOOT.TXT
+	  Icon File Name:   C:\BASEBALL\DAILY\TBLSHOOT.ICO
+	
+	     NOTE: You must choose Change Icon to select the icon file above.
+	
+	  Item 4
+	  Description:      Microsoft Multimedia Catalog
+	  Command Line:     C:\WINDOWS\SYSTEM\CATSTUB.EXE
+	
+	     NOTE: If the Multimedia Catalog icon is already in the group, you can just
+	     modify that icon.
+	
+	Windows 95, Creating Start Menu Shortcuts
+	-----------------------------------------
+	
+	If you are using Windows 95, use the following instructions to add Baseball to
+	the Start Menu:
+	
+	1. With your right mouse button, click the Taskbar, and then click Properties.
+	
+	2. Click the Start Menu Programs tab, and then click Advanced.
+	
+	3. Double-click the Programs folder
+	
+	4. Add a Microsoft Multimedia folder, if it does not already exist:
+	  a. On the File menu, point to New, and then click Folder.
+	
+	  b. Type the following and then press ENTER:
+	
+	  "Microsoft Multimedia" (without the quotation marks)
+	
+	5. Double-click the Microsoft Multimedia folder.
+	
+	6. Add a shortcut icon for each item listed below.
+	  a. On the File menu, point to New, and then click Shortcut.
+	
+	  b. Type the information for the Command Line, then click Next.
+	
+	  c. Type the information for the Name, then click Finish
+	
+	  Item 1
+	  ------
+	
+	  Command line       C:\Baseball\Baseball.exe
+	  Name               Complete Baseball
+	
+	  Item 2
+	  ------
+	
+	  Command line       Notepad.Exe C:\Baseball\Readme.txt
+	  Name               Complete Baseball Info
+	  Icon File Name     C:\Baseball\Readme.ico
+	
+	  Item 3
+	  ------
+	
+	  Command line       Notepad.Exe   C:\Baseball\Daily\Tblshoot.txt
+	  Name               Online T-Shooting Tips
+	  Icon File Name     C:\Baseball\Daily\Tblshoot.ico
+	
+	  Item 4
+	  ------
+	
+	  Command line       C:\Windows\System\Catstub.exe
+	  Name               Microsoft Multimedia Catalog
+	
+	7. If an Icon File Name is listed for the item, do the following to change the
+	  icon that appears in the Start Menu:
+	  a. With your right mouse button, click the shortcut, and then click
+	     Properties.
+	
+	  b. Click the Shortcut tab, and then click Change Icon
+	
+	  c. Click Change Icon, and then type the information for the File Name.
+	
+	  d. Click OK, and then click OK to finish.
+	
+	Restarting Windows
+	------------------
+	
+	Exit or Shut Down Windows and restart the computer. The installation is complete.
+	
+	Additional query words: kbhowto 1994 multi media multimedia multi-media set up setup install base ball guide
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbHomeProdSearch kbGamesSearch kbBaseballSearch kbCompleteBaseballSearch kbCompleteBaseball1994
+	Version           : :1994 edition
+	
+	=============================================================================
+	

@@ -1,0 +1,313 @@
+---
+layout: page
+title: "Q199466: SMS: How to Set Up SQL Server Integrated Security For Use w/ SMS"
+permalink: kb/199/Q199466/
+---
+
+## Q199466: SMS: How to Set Up SQL Server Integrated Security For Use w/ SMS
+
+	Article: Q199466
+	Product(s): Microsoft Systems Management Server
+	Version(s): winnt:1.2
+	Operating System(s): 
+	Keyword(s): kbDatabase smsdatabase smssecman
+	Last Modified: 31-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server version 1.2 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	When Systems Management Server is used on a large scale administrators often
+	find it necessary to give other people permission to use the Systems Management
+	Server Administrator utility. In response to this need and since granting full
+	permissions to all the features of the Systems Management Server Administrator
+	is rarely desired, it is necessary to create a seperate set of SQL Server login
+	IDs. These IDs have different permissions matching the needs of unique and
+	specific tasks. Furthermore, using SQL Server integrated security can help
+	reduce the amount of administration required because the users only have to
+	remember one password; that of their Windows NT account.
+	
+	MORE INFORMATION
+	================
+	
+	When using the Systems Management Server Administrator tool, the user will only
+	have access to those features granted to their matching SQL Server login ID or
+	the SQL Server login ID that the user is aliased to. The procedure described
+	below incorporates the use of SQL Server integrated security so that users will
+	only have to log on to their workstation once.
+	
+	These instructions also incorporate aliasing certain SQL Server logins to a
+	"unique" SQL Server login ID that does not match a specific user account. This
+	makes managing the permissions on the SQL Server login IDs easier since the
+	Systems Management Server Security Manager only allows permissions to be
+	modified on individual SQL Server login IDs. For example, if you have 20 SQL
+	Server logins; that is, user accounts, that need to be given access to perform
+	Remote Control in Systems Management Server, they can be given permissions much
+	easier. Modifying each account's rights individually can take a long time. But,
+	if those 20 SQL Server logins are aliased to one SQL Server login ID called
+	"HelpDesk", it becomes a simple task to modify permissions on the single
+	HelpDesk login ID.
+	
+	NOTE: If you are managing a small number of SQL Server logins, it may not be
+	necessary to use aliases. If this is the case, simply skip the references below
+	where SQL Server login IDs are aliased to other SQL Server logins. For Step 5,
+	simply assign permissions to the users' SQL Server login IDs.
+	
+	Initial Setup
+	-------------
+	
+	1. In the Windows NT User Manager, create the Windows NT user group(s) and
+	  assign user accounts to the group(s).
+	
+	2. Use SQL Security Manager to create SQL Server login IDs for users in the
+	  Windows NT groups you just created. To do this, perform the following steps:
+	
+	  a. In SQL Security Manager, on the View menu, click User Privilege.
+	
+	  b. On the Security menu, click Grant New.
+	
+	  c. Select the correct Windows NT group and make certain the Add Login IDs For
+	     Group Members and Add Users to Database options are selected. Also ensure
+	     that the SMS database is selected from the drop-down menu.
+	
+	  d. Click Grant.
+	
+	3. Using the SQL Enterprise Manager utility, create unique SQL Server login IDs
+	  for the types (or levels) of access that your users will need when using the
+	  Systems Management Server Administrator utility. These are the SQL Server
+	  login accounts that you will assign the different permissions to using the
+	  Systems Management Server Security Manager utility. These unique SQL Server
+	  login IDs serve the purpose of custom templates or user groups. Again, if you
+	  need to change permissions, it is a simple process to modify the SQL Server
+	  login ID that the users are aliased to as opposed to changing permissions on
+	  each individual SQL Server login ID. Some examples include "HelpDesk",
+	  "SoftDist" (software distribution), or "SMSAdmins". To create a login ID,
+	  perform the following steps:
+	
+	  a. Click SQL Enterprise Manager.
+	
+	  b. On the Manage menu, click Logins.
+	
+	  c. Type the login name that corresponds to the type of functions that this
+	     login ID will have permissions for.
+	
+	  d. Type a password.
+	
+	  e. Select Permit column for the Systems Management Server database.
+	
+	  f. Click Add.
+	
+	4. While still operating in the SQL Enterprise Manager, alias the SQL Server
+	  login IDs (that match the Windows NT user logon accounts) created by SQL
+	  Security Manager to the unique logins that were manually created in Step 3.
+	  To do this, perform the following steps:
+	
+	  a. On the Manage menu, click Logins.
+	
+	  b. Select the new SQL Server login ID from the drop-down list of available
+	     accounts.
+	
+	  c. Click Alias (for the Systems Management Server database) and select the
+	     appropriate unique SQL Server login ID that was created in Step 3 of the
+	     Initial Setup (for example, "HelpDesk", "SoftDist", and so on).
+	
+	  d. Click Add.
+	
+	5. Use the Systems Management Server Security Manager to grant access to
+	  specific areas of Systems Management Server to the unique SQL Server logins
+	  that were created in Step 3. Because the users of SQL Server login IDs are
+	  aliased to a few unique ones, it is not necessary to modify the permissions
+	  on the users' SQL Server logins. To do this, perform the following steps:
+	
+	  NOTE: Do not modify the permissions on "dbo" (database owner). This login
+	  should always have full permissions to all security objects.
+	
+	  a. In Systems Management Server Security Manager, select SQL Server login ID
+	     from the drop-down list.
+	
+	  b. Select the appropriate security objects and select the type of access
+	     desired for those objects; that is, full, view, or no access. You can use
+	     the default security templates by clicking Use Template on the Security
+	     menu.
+	
+	  c. After setting the permissions you want, click Save on the toolbar or click
+	     Save User on the Security menu to make the changes take effect.
+	
+	6. To implement SQL Server integrated security, perform the following steps:
+	
+	  a. From SQL Enterprise Manager, right-click the SQL Server name that appears
+	     in the Server Manager window and click Configure on the shortcut menu.
+	
+	  b. Click Security Options.
+	
+	  c. Select Windows NT Integrated as the Login Security Mode, and then click
+	     OK.
+	
+	  NOTE: When SQL Server integrated security is enabled, all members of the
+	  Administrators built-in Windows NT user group will have System Administrator
+	  (SA) privilege to the SQL Server. To avoid this, you must create a separate
+	  Windows NT user group (for example, a group named "SQLAdmins") that contains
+	  those user accounts that need SA privilege to SQL Server. The Systems
+	  Management Server Service Account should be in this new group. After the
+	  group is created, use SQL Security Manager (with the SA privilege view) to
+	  grant SA privilege to the new group and then revoke SA privilege from the
+	  Administrators group.
+	
+	7. Stop and restart the MSSQLServer service, to do this, use SQL Enterprise
+	  Manager, SQL Service Manager, or Control Panel Services.
+	
+	8. After these steps have been accomplished, the system should be tested. To
+	  test, perform the following steps:
+	
+	  a. Using a Windows NT user account that was created in Step 1 of this
+	     procedure, log on to a computer running Windows NT Workstation.
+	
+	  b. Run the Systems Management Server Administrator utility and type the SQL
+	     Server name and database information. Because SQL Server integrated
+	     security is being used, it is not necessary to type any SQL Server login
+	     ID or password. In fact, doing so will have no effect.
+	
+	  c. Click OK.
+	
+	The Systems Management Server Administrator now only allows those features that
+	have been enabled to function. If some functionality is not working correctly,
+	it can be the result of a dependency on another security object not being
+	enabled. If in doubt, examine the list of dependencies in Chapter 6:
+	"Configuring Security for the Systems Management Server Administrator" in the
+	Installation And Configuration guide in the Systems Management Server Books
+	Online.
+	
+	Adding a User After the Initial Setup
+	-------------------------------------
+	
+	To add another user after completing the steps above, perform the following
+	steps:
+	
+	1. In Windows NT User Manager, add the Windows NT user account to the
+	  appropriate group.
+	
+	2. Use SQL Security Manager or SQL Enterprise Manager to create the new SQL
+	  Server login ID. Choose either to use SQL Security Manager or SQL Enterprise
+	  Manager. NOTE: The SQL Enterprise Manager method is quicker when only adding
+	  a few (one or two) SQL Server login IDs. The SQL Security Manager method is
+	  easier if you want to add several new logins at once.
+	
+	  SQL ENTERPRISE MANAGER METHOD:
+	
+	  a. Open SQL Enterprise Manager.
+	
+	  b. On the Manage menu, click Logins.
+	
+	  c. Type the login name that matches the user's Windows NT account.
+	
+	  d. Type a password and note that it does NOT need to match the password for
+	     the corresponding Windows NT account.
+	
+	  e. Click in the Permit column for the Systems Management Server database.
+	
+	  f. Click Alias (for the Systems Management Server database) and select the
+	     appropriate unique SQL Server login ID that was created in Step 3 of the
+	     "Initial Setup" procedure in this article.
+	
+	  g. Click Add.
+	
+	SQL SECURITY MANAGER METHOD:
+	
+	  a. In the User Privilege view of SQL Security Manager, select the group that
+	     contains the new Windows NT user account.
+	
+	  b. On the Security menu, click Account Detail.
+	
+	  c. From the Account Detail window, click Update Logins. This will create a
+	     matching SQL Server login ID for the new Windows NT user account. NOTE:
+	     For each Windows NT account that already has an SQL Server login ID, an
+	     error saying that the account already exists will be generated. You can
+	     ignore these error messages.
+	
+	  d. Open SQL Enterprise Manager and click Logins on the Manage menu.
+	
+	  e. Select the new SQL Server login ID from the drop-down list of available
+	     accounts.
+	
+	  f. Click Alias (for the Systems Management Server database) and select the
+	     appropriate unique SQL Server login ID that was created in Step 3 of the
+	     "Initial Setup" procedure in this article; that is, HelpDesk, SoftDist,
+	     and so on.
+	
+	  g. Click Add.
+	
+	Delete a User
+	-------------
+	
+	To remove a user, perform the following steps:
+	
+	1. Using SQL Enterprise Manager, delete the SQL Server login ID that matches the
+	  Windows NT user account. To do this, perform the following steps:
+	
+	  a. In SQL Enterprise Manager, click Logins on the Manage menu.
+	
+	  b. Select the login name that matches the user's Windows NT account from the
+	     drop-down list.
+	
+	  c. To temporarily disable this user's access, click to clear the Permit
+	     column for the Systems Management Server database and then click Modify.
+	     To permanently delete the SQL Server login ID, click Drop.
+	
+	NOTE: If necessary, use Windows NT User Manager utility to remove the user's
+	account from the Windows NT user group and/or delete the account entirely.
+	
+	Possible Problems
+	-----------------
+	
+	The following are things to be aware of:
+	
+	- If a user's SQL Server login ID is deleted and then re-created, the Systems
+	  Management Server Security Manager may show that the user's SQL Server login
+	  ID still has certain permissions allowed to the Systems Management Server
+	  database when in fact those permissions are not valid. If this occurs, revoke
+	  the existing permissions and grant them again, using the Systems Management
+	  Server Security Manager. If aliases are being used, re-establish the alias
+	  for the re-created account (see Step 4 in the "Initial Setup" procedure).
+	
+	- When running the Systems Management Server Administrator with a reduced set
+	  of permissions, certain menu buttons will be removed from the toolbar. When
+	  the Systems Management Server Administrator console is run again with full
+	  permissions, the buttons will not be automatically restored. To restore these
+	  buttons, perform the following steps:
+	  1. On the Options menu in the Systems Management Server Administrator, click
+	     Customize Toolbar.
+	
+	  2. Click Reset and then click OK.
+	
+	REFERENCES
+	==========
+	
+	For more information concerning this topic, including descriptions of the
+	Security objects (viewed with the Systems Management Server Security Manager),
+	see Chapter 6: "Configuring Security for the Systems Management Server
+	Administrator" in the Installation And Configuration guide in the Systems
+	Management Server Books Online.
+	
+	For descriptions of the security objects, see Chapter 6: "Configuring Security
+	for the Systems Management Server Administrator" in the Installation And
+	Configuration guide in the Systems Management Server Books Online.
+	
+	For more information on implementing SQL Server integrated security, see Chapter
+	8, "Security Concepts" and Chapter 9, "Managing Security" in the Administrator's
+	Companion in the SQL Server Books Online.
+	
+	Additional query words: prodsms
+	
+	======================================================================
+	Keywords          : kbDatabase smsdatabase smssecman 
+	Technology        : kbSMSSearch kbSMS120
+	Version           : winnt:1.2
+	Issue type        : kbhowto kbinfo
+	
+	=============================================================================
+	

@@ -1,0 +1,78 @@
+---
+layout: page
+title: "Q129168: How to Recover Corrupt DataBase Container Files"
+permalink: kb/129/Q129168/
+---
+
+## Q129168: How to Recover Corrupt DataBase Container Files
+
+	Article: Q129168
+	Product(s): Microsoft FoxPro
+	Version(s): 3.00
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 13-AUG-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 3.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The best way to ensure that you will be able to recover corrupt DBC files is to
+	use proactive measures, such as frequently backing up the Database files (both
+	the .DBC and .DCT files). The next best method is to use the GENDBC.PRG tool
+	located in the VFP\TOOLS\GENDBC subdirectory.
+	
+	GENDBC.PRG is a utility that generates a custom .PRG file that can then be
+	executed to re-build the DataBase Container that GENDBC was run against. The
+	resulting .PRG file, when run, will recreate the DataBase Container to the state
+	prior to when GENDBC was run against it. Thus it may be necessary to run GENDBC
+	many times during the development life cycle to prevent loss of work if the
+	files are damaged.
+	
+	MORE INFORMATION
+	================
+	
+	When GENDBC.PRG is run, it creates a "generation" program file for the current
+	Database container. If no Database is open it will prompt for one.
+	
+	To use GENDBC, execute it from the Command window. For example:
+	
+	     DO C:\VFP\TOOLS\GENDBC\GENDBC.PRG WITH 'GD_MYDBC'
+	
+	When GENDBC.PRG is finished, a program file with the same name as the database
+	will be created in the current directory. This program can then be executed to
+	recreate damaged Database (.DBC) files. For instance, in the example above, a
+	program named "GD_MYDBC.PRG" would be created.
+	
+	If the Database (.DBC) file is corrupt or damaged at the table level (in other
+	words, the .DBC is a FoxPro Table (.DBF)) and it is not usable as a FoxPro
+	table, GENDBC will not correct the matter. The error generated in this case is:
+	
+	  UNRECOVERABLE ERROR...FILE <path>\dbc_name.dbc
+	  IS NOT A DATABASE AT LINE <line_no>
+	
+	If this is the case, a third-party database repair utility will be required to
+	repair the DBC at the table level. However, once the file is corrected in this
+	manner, there is still no guarantee that the .DBC file will be recoverable with
+	GENDBC.PRG. Thus the importance of using GENDBC.PRG prior to using the Database
+	or immediately following any changes to the Database Container.
+	
+	For additional information on repairing a corrupt database, please see the
+	following article in the Microsoft Knowledge Base:
+	
+	  Q129400 Free Table Command Removes Table From Corrupted Database
+	
+	Additional query words: VFoxWin remove free damage corrupted
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+	Version           : 3.00
+	
+	=============================================================================
+	

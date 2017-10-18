@@ -1,0 +1,129 @@
+---
+layout: page
+title: "Q157254: BUG: SELECT-SQL Error When Joining Parent to Two Child Tables"
+permalink: kb/157/Q157254/
+---
+
+## Q157254: BUG: SELECT-SQL Error When Joining Parent to Two Child Tables
+
+	Article: Q157254
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS: 5.0,5.0a,6.0
+	Operating System(s): 
+	Keyword(s): kbprogramming kbvfp kbvfp500aBUG kbvfp500bugkbbuglist
+	Last Modified: 11-AUG-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Using the SELECT-SQL command with the ON clause, to Join a Parent table to two
+	child tables, may cause the following error:
+	
+	  SQL: Column <column name> is not found
+	
+	If the error occurs, then a result set is not created by the query.
+	
+	CAUSE
+	=====
+	
+	The Visual FoxPro query parser looks at the SELECT-SQL queries starting from the
+	innermost part of it. In the case of the SELECT..JOIN..ON statement in the MORE
+	INFORMATION section of this article the parser looks at the following:
+	
+	     INNER JOIN test3 ;
+	        ON  test1.t1f1 = test3.t3f1 ;
+	
+	The parser cannot resolve the reference for "test1.t1f1" because it is not in
+	scope at this level.
+	
+	WORKAROUND
+	==========
+	
+	You can use one of the following workarounds to correct this behavior:
+	
+	1. Run the Query after opening all the tables involved with the query. This way
+	  the Visual FoxPro query parser is able to resolve all the references.
+	
+	2. Modify the Query in the MORE INFORMATION section of this article as follows:
+	
+	        SELECT *;
+	          FROM test1;
+	          INNER JOIN test2;
+	            ON  test1.t1f1 = test2.t2f1 ;
+	          INNER JOIN test3 ;
+	            ON  test1.t1f1 = test3.t3f1
+	
+	With the above query, the parser is able to relate each ON clause to the JOIN
+	clause that it belongs to.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products listed at
+	the beginning of this article.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Create and Populate three tables as following:
+	
+	        CREATE TABLE test1 (t1f1 c(5), t1f2 c(5))
+	        INSERT INTO test1 VALUES("AAAAA", "11111")
+	        INSERT INTO test1 VALUES("BBBBB", "22222")
+	
+	        CREATE TABLE test2 (t2f1 c(5), t2f2 c(5))
+	        INSERT INTO test2 VALUES("AAAAA", "A1A1")
+	        INSERT INTO test2 VALUES("AAAAA", "A2A2")
+	
+	        CREATE TABLE test3 (t3f1 c(5), t3f2 c(5))
+	        INSERT INTO test3 VALUES("BBBBB", "B1B1")
+	        INSERT INTO test3 VALUES("BBBBB", "B2B2")
+	
+	2. Issue the "CLOSE ALL" command in the Command window to Close all the tables.
+	
+	3. Issue the following SQL Statement:
+	
+	        SELECT *;
+	          FROM  test1;
+	          INNER JOIN test2;
+	             INNER JOIN test3 ;
+	             ON  test1.t1f1 = test3.t3f1 ;
+	          ON test1.t1f1 = test2.t2f1
+	
+	The above command produces the "SQL: Column 'T1F1' is not found" error, and a
+	result set is not created.
+	
+	When creating a query to Join a Parent table to two child tables using the View
+	Designer, the SQL statement that is built is similar to the one in step 3.
+	Because of this, the View Designer is not able to process the query correctly.
+	
+	The above article discusses the correct syntax for a select based on a parent,
+	child and grandchild relationship.
+	
+	REFERENCES
+	==========
+	
+	For more information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q156667 Limitations of View Designer vs. CREATE SQL VIEW Command
+	
+	Additional query words: kbvfp500 kbvfp500a kbvfp600
+	
+	======================================================================
+	Keywords          : kbprogramming kbvfp kbvfp500aBUG kbvfp500bug kbbuglist
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+	Version           : WINDOWS: 5.0,5.0a,6.0
+	Issue type        : kbbug
+	
+	=============================================================================
+	

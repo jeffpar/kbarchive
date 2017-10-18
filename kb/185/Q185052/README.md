@@ -1,0 +1,243 @@
+---
+layout: page
+title: "Q185052: WD97: How to Use Other Converters with the FileFormat Property"
+permalink: kb/185/Q185052/
+---
+
+## Q185052: WD97: How to Use Other Converters with the FileFormat Property
+
+	Article: Q185052
+	Product(s): Word 97 for Windows
+	Version(s): WINDOWS:97
+	Operating System(s): 
+	Keyword(s): kbdta kbconversion kbdtacode word8 word97
+	Last Modified: 13-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	
+	SUMMARY
+	=======
+	
+	The SaveAs method of the Document object in Microsoft Visual Basic for
+	Applications has an optional parameter called FileFormat that you can use to
+	specify the save format for the document.
+	
+	This article describes how to use the FileFormat property of the SaveAs method to
+	specify a converter that is not supported with one of the supplied constants
+	(values).
+	
+	MORE INFORMATION
+	================
+	
+	Microsoft provides programming examples for illustration only, without warranty
+	either expressed or implied, including, but not limited to, the implied
+	warranties of merchantability and/or fitness for a particular purpose. This
+	article assumes that you are familiar with the programming language being
+	demonstrated and the tools used to create and debug procedures. Microsoft
+	support professionals can help explain the functionality of a particular
+	procedure, but they will not modify these examples to provide added
+	functionality or construct procedures to meet your specific needs. If you have
+	limited programming experience, you may want to contact a Microsoft Certified
+	Partner or the Microsoft fee-based consulting line at (800) 936-5200. For more
+	information about Microsoft Certified Partners, please visit the following
+	Microsoft Web site:
+	
+	  http://www.microsoft.com/partner/referral/
+	
+	For more information about the support options that are available and about how
+	to contact Microsoft, visit the following Microsoft Web site:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	FileFormat accepts the following built-in conversion constants:
+	
+	wdFormatDocument
+	
+	  Save as a Word document.
+	
+	wdFormatText
+	
+	  Text Only: Saves text without its formatting. Converts all section breaks,
+	  page breaks, and newline characters to paragraph marks. Uses the ANSI
+	  character set. Select this format only if the destination program cannot read
+	  any of the other available file formats.
+	
+	wdFormatDOSText
+	
+	  MS-DOS Text: Converts files the same way as Text only format (wdFormatText).
+	  Uses the extended ASCII character set, which is the standard for MS-DOS-based
+	  programs. Use this format to share documents between Word and
+	  non-Windows-based programs.
+	
+	wdFormatTextLineBreaks
+	
+	  Text only with line breaks: Saves text without formatting. Converts all line
+	  breaks, section breaks, and page breaks to paragraph marks. Use this format
+	  when you want to maintain line breaks. For example, when transferring
+	  documents to an electronic mail system.
+	
+	wdFormatDOSTextLineBreaks
+	
+	  MS-DOS text only with line breaks: Saves text without formatting. Converts
+	  all line breaks, section breaks, and page breaks to paragraph marks. Use this
+	  format when you want to maintain line breaks, for example, when transferring
+	  documents to an electronic mail system.
+	
+	wdFormatRTF
+	
+	  Rich Text Format (RTF): Saves all formatting. Converts formatting to
+	  instructions that other programs, including compatible Microsoft programs,
+	  can read and interpret.
+	
+	wdFormatTemplate
+	
+	  Save as a Word template.
+	
+	wdFormatUnicodeText
+	
+	  Saves as a Unicode text file. Converts text between common character encoding
+	  standards, inclucing Unicode 2.0, Mac OS, Windows, EUC and ISO-8859 series.
+	
+	Other File Types
+	----------------
+	
+	If you record a macro that saves a file as a type not supported by one of the
+	constants described earlier, the FileFormat property will contain a number. The
+	following sample macro was recorded using HTML as the Save As Type:
+	
+	     Sub Macro1()
+	        ActiveDocument.SaveAs FileName:="myHTMLdoc", FileFormat:=103
+	     End Sub
+	
+	Note the number 103 that was recorded for the HTML FileFormat argument. This
+	number may not be the same on another computer.
+	
+	To retrieve the correct FileFormat number for a conversion type for any computer,
+	use the FileConverters collection. The following sample Visual Basic for
+	Applications macro saves a document in HTML format on any computer:
+	
+	NOTE: In the following example, replace "HTML" with the class name you want to
+	Save As. For a list of class names, see the "Obtaining Class Names" section
+	later in this article.
+	
+	     Sub SaveAsHTML()
+	        Dim fcCnv As FileConverter
+	        Dim strClass As String
+	        Dim strFileName As String
+	
+	        ' If there are no documents open to
+	        ' save, exit this routine.
+	        If Documents.Count = 0 Then Exit Sub
+	
+	        ' Set the ClassName to use for saving.
+	        strClass = "HTML"
+	
+	        ' Set the FileName to use for saving.
+	        strFileName = "MyHTMLdoc"
+	
+	        ' Loop through all installed converters.
+	        For Each fcCnv In FileConverters
+	           With fcCnv
+	              ' Test for conversion ClassName.
+	              If .ClassName = strClass Then
+	                 ' Save using the FileConverters.ClassName.
+	                 ActiveDocument.SaveAs FileName:=strFileName, _
+	                    FileFormat:=.SaveFormat
+	              End If
+	           End With
+	        Next fcCnv
+	     End Sub
+	
+	For more information about the SaveFormat Property, from the Visual Basic Editor,
+	click the Office Assistant, type "SaveFormat," click Search, and then click to
+	view "SaveFormat Property."
+	
+	NOTE: If the Assistant is hidden, click the Office Assistant button on the
+	Standard toolbar. If the Assistant is not able to answer your query, please see
+	the following article in the Microsoft Knowledge Base:
+	
+	  Q176476 Office Assistant Not Answering Visual Basic Questions
+	
+	Obtaining Class Names
+	---------------------
+	
+	The following list contains converters and class names installed by Word that you
+	can use for saving a document:
+	
+	  Converter                                  ClassName
+	  ----------------------------------------------------
+	  HTML Document                              HTML
+	  MS-DOS Text with Layout                    MS-DOS Text with Layout
+	  Text with Layout                           Text with Layout
+	  Word 2.x for Windows                       MSWordWin2
+	  Converter: Word 4.0 for Macintosh          MSWordMac4
+	  Word 5.0 for Macintosh                     MSWordMac5
+	  Word 5.1 for Macintosh                     MSWordMac51
+	  WordPerfect 5.0                            WrdPrfctDOS50
+	  WordPerfect 5.1 for DOS                    WrdPrfctDOS51
+	  WordPerfect 5.x for Windows                WrdPrfctWin
+	  WordPerfect 5.1 or 5.2 Secondary File      WrdPrfctDat
+	  WordPerfect 5.0 Secondary File             WrdPrfctDat50
+	  Works 3.0 for Windows                      MSWorksWin3
+	  Works 4.0 for Windows                      MSWorksWin4
+	  Word 6.0/95                                MSWord6Exp
+	  Word 97 & 6.0/95 - RTF                     MSWord6RTFExp
+	
+	To retrieve other class names for an installed converter to Save As, you can loop
+	through the FileConverters collection.
+	
+	The following sample macro loops through all installed converters that you can
+	use for saving, and then inserts the converter name and associated class name
+	into a blank document:
+	
+	        Sub GetConvClassName()
+	       Dim fcCnv As FileConverter
+	
+	       ' Create blank document.
+	       Documents.Add
+	
+	       ' Loop through all installed converters.
+	        For Each fcCnv In FileConverters
+	           With fcCnv
+	              ' If the converter can be used to save...
+	              If .CanSave = True Then
+	                 ' Insert the converter name and class name in the document.
+	                 Selection.TypeText "Converter: " & .FormatName & vbTab _
+	                    & "ClassName: " & .ClassName & vbCr
+	              End If
+	           End With
+	        Next fcCnv
+	     End Sub
+	
+	For more information about the ClassName property, from the Visual Basic Editor,
+	click the Office Assistant, type "ClassName," click Search, and then click to
+	view "ClassName Property."
+	
+	REFERENCES
+	==========
+	
+	For additional information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q173707 How to Run Sample Code from Knowledge Base Articles
+	
+	For more information about getting help with Visual Basic for Applications,
+	please see the following article in the Microsoft Knowledge Base:
+	
+	  Q163435 Programming Resources for Visual Basic for Applications
+	
+	Additional query words: wordcon vba vbe vb
+	
+	======================================================================
+	Keywords          : kbdta kbconversion kbdtacode word8 word97 
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : WINDOWS:97
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

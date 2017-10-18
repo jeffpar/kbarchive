@@ -1,0 +1,152 @@
+---
+layout: page
+title: "Q197490: PRB: ATL Full Control Needs Enabled Stock Property for Access 97"
+permalink: kb/197/Q197490/
+---
+
+## Q197490: PRB: ATL Full Control Needs Enabled Stock Property for Access 97
+
+	Article: Q197490
+	Product(s): Microsoft C Compiler
+	Version(s): 5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbnokeyword kbAccess97 kbATL210 kbCOMt kbContainer kbCtrlCreate kbVC500 kbVC600 kbATL30
+	Last Modified: 26-JUL-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+	- Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+	- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+	- Microsoft Visual C++.NET (2002) 
+	- Microsoft Access 97 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When opening a form that was saved in Access 97 and contains ActiveX controls
+	developed with ATL, you might get a message box stating the following:
+	
+	  There is no object in this control.
+	
+	CAUSE
+	=====
+	
+	This error can be caused when the control does not support the stock property
+	for Enabled.
+	
+	RESOLUTION
+	==========
+	
+	If you are developing a control using ATL and plan to use it in Microsoft
+	Access, be sure to support the Enabled stock property. The ATL COM Object Wizard
+	can add the needed code if you select Enabled from the list of available stock
+	properties on the last property page when inserting the full control.
+	
+	If you already have a control project that does not have the Enabled stock
+	property selected, you can add support for it using the steps outlined here.
+	
+	1. Determine whether or not your control has support for ANY stock properties.
+	  If not, modify the header file for the control to include support for ATL's
+	  default stock property support and comment out the IDispatchImpl derived
+	  class. For example:
+	
+	  class ATL_NO_VTABLE CATLAccessKBControl :
+	    public CComObjectRootEx<CComSingleThreadModel>,
+	  //public IDispatchImpl<IATLAccessKBControl, &IID_IATLAccessKBControl,
+	  \    //&LIBID_ATLACCESSCONTROLLib>,
+	  public CStockPropImpl<CATLAccessKBControl, IATLAccessKBControl, \ 
+	            &IID_IATLAccessKBControl, &LIBID_ATLACCESSCONTROLLib>,
+	  //rest of interfaces that are derived....
+	
+	2. Modify the IDL file by adding support for propget/propput methods for
+	  DISPID_ENABLED. For example:
+	
+	  [
+	    object,
+	    uuid(91A905D0-8B9F-11D2-8F10-00C04F94089E),
+	    dual,
+	    pointer_default(unique)
+	  ]
+	  interface IATLAccessKBControl : IDispatch
+	  {
+	  [propput, id(DISPID_ENABLED)] HRESULT Enabled([in]VARIANT_BOOL
+	     vbool);
+	  [propget, id(DISPID_ENABLED)] HRESULT Enabled([out,retval] \ 
+	     VARIANT_BOOL*pbool);
+	  };
+	
+	3. Add a member variable to the control's header file, which will have the
+	  enabled stock property value. For example:
+	
+	  class ATL_NO_VTABLE CATLAccessKBControl :
+	    public CComObjectRootEx<CComSingleThreadModel>,
+	  //rest of interfaces that are derived...
+	  {
+	    public:
+	      BOOL m_bEnabled;
+	    //rest of class definition
+	  };
+	
+	Be sure to name the property "m_bEnabled" so ATL framework correctly sets it.
+	
+	STATUS
+	======
+	
+	This behavior is by design.
+	
+	MORE INFORMATION
+	================
+	
+	You do not get this problem with controls created with MFC or Visual Basic. Both
+	of these products provide the Enabled stock property by default.
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Create a new ATL COM AppWizard.
+	
+	2. Select Dynamic Link Library (DLL) as the Server Type and accept the remaining
+	  defaults.
+	
+	3. On the Insert menu, click New ATL Object.
+	
+	4. Select controls from the category list on the left.
+	
+	5. Select Full Control.
+	
+	6. Give the control a name and accept the remaining defaults.
+	
+	7. Build the control.
+	
+	8. Start Access97 and open a database.
+	
+	9. Insert a new form.
+	
+	10. Insert the control and place it on the form.
+	
+	11. Save the form and close it.
+	
+	12. Attempt to re-open the form, and note that you receive a message box stating
+	  "There is no object in this control."
+	
+	REFERENCES
+	==========
+	
+	For additional information, please click the article number below to view the
+	article in the Microsoft Knowledge Base:
+	
+	  Q177105 ACC97: "No Object in This Control" Inserting Web Browser
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbnokeyword kbAccess97 kbATL210 kbCOMt kbContainer kbCtrlCreate kbVC500 kbVC600 kbATL300 kbDSupport kbGrpDSMFCATL 
+	Technology        : kbVCsearch kbAudDeveloper kbAccessSearch kbAccess97 kbAccess97Search kbVC500 kbVC600 kbVC32bitSearch kbVCNET kbVC500Search
+	Version           : :5.0,6.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

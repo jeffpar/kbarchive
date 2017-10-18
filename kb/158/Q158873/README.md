@@ -1,0 +1,153 @@
+---
+layout: page
+title: "Q158873: How to Enable IDE DMA Bus-Mastering Using SP2 Atapi.sys"
+permalink: kb/158/Q158873/
+---
+
+## Q158873: How to Enable IDE DMA Bus-Mastering Using SP2 Atapi.sys
+
+	Article: Q158873
+	Product(s): Microsoft Windows NT
+	Version(s): winnt:4.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 11-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 4.0 
+	- Microsoft Windows NT Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+	
+	  Q256986 Description of the Microsoft Windows Registry
+	
+	SUMMARY
+	=======
+	
+	A DMA Bus-Mastering-capable version of the Atapi.sys device driver is available
+	in Service Pack 2 or later for Microsoft Windows NT 4.0. By default, Atapi.sys
+	will perform disk I/O through the Programmed Input/Output (PIO), which is the
+	transfer method used in previous versions of Windows NT.
+	
+	For additional information, please see the following article(s) in the Microsoft
+	Knowledge Base:
+	
+	  Q164378 WinNT 4.0 SP2 or SP3 Atapi Does Not Support Ultra DMA Devices
+	
+	MORE INFORMATION
+	================
+	
+	There are two levels of Disk I/O support in the Windows NT 4.0 Service Pack 2
+	version of Atapi.sys:
+	
+	- Level 0 (Programmed I/O) (PIO mode): (Normal Default setting)
+	
+	  This mode conducts PIO transfers only, which is the only transfer method used
+	  in previous versions of Windows NT.
+	
+	- Level 1 (DMA-Enabled mode): (Requires manual registry changes to enable)
+	
+	  This mode enables DMA Bus-Master transfers, provided the following criteria
+	  are met:
+	
+	   - PCI command register bit 2 (Master Enable) is set.
+	
+	   - PCI device Class code is 1.
+	
+	   - PCI device Subclass code is 1.
+	
+	   - Programmer's interface bit 7 is set.
+	
+	   - Bus-Master status register bits 5 and 6 are set. (These two bits are
+	     enabled by the system BIOS and are only set if the device or devices exist
+	     -- bit 5 is for the master and bit 6 is for the slave.)
+	
+	NOTE: If ANY of the previous criteria are not met, the system will default to
+	Level 0 (PIO mode) transfers and no performance will be gained.
+	
+	
+	NOTE: DMA is used on a per-channel basis with the new Atapi.sys driver. It will
+	not perform DMA Bus-Master transfers to one device on the channel and PIO to
+	another device on the same channel.
+	
+	
+	Manual Registry Changes Required to Enable DMA Bus-Mastering
+	------------------------------------------------------------
+	
+	WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+	that may require you to reinstall your operating system. Microsoft cannot
+	guarantee that you can solve problems that result from using Registry Editor
+	incorrectly. Use Registry Editor at your own risk.
+	
+	It is highly recommended that a user perform a full system backup (including the
+	local registry files) and update the system Emergency Repair Disk before making
+	the following registry changes. The changes required to implement DMA Bus-Master
+	transfers affect Windows NT hardware detection/boot sequence at a very low
+	level.
+	
+	Should the system fail to boot following the specified registry changes, the user
+	may boot the system by selecting Last Known Good. If the Last Known Good boot
+	fails, the user must recover his or her system by restoring a tape backup or
+	using the Emergency Repair process.
+	
+	1. Start Registry Editor (Regedt32) and go to the following subkey:
+	
+	  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Atapi\Parameters
+	
+	2. From the Edit menu, click Add Key.
+	
+	3. Enter the following key name:
+	
+	  DeviceX (where X represents the IDE channel, either 0 or 1)
+	
+	4. Select the DeviceX subkey and click Add Value from the Edit menu.
+	
+	5. Enter the following information
+	
+	  Value Name: DriverParameter
+	  Data Type: REG_SZ
+	  Value: DMADetectionLevel = 0x0,0x0 or 0x1,0x0 or 0x1,0x1
+	
+	where the string equals 0x0 for PIO mode or 0x1 for DMA-Enabled. The first
+	parameter in the value for DMADetectionLevel specifies the enabling of DMA for
+	the master device on the IDE controller. The second parameter specifies the
+	enabling of DMA on the slave device on the IDE controller.
+	
+	Also, there is a utility called DMACheck.exe on the Windows NT 4.0, Enterprise
+	Edition, CD-ROM that will automatically set the correct and neccessary registry
+	settings to enable DMA support.
+	
+	6. Shut down and restart Windows NT.
+	
+	
+	Determining DMA Status
+	----------------------
+	
+	Whether DMA Bus-Mastering is enabled can be determined by looking in the Windows
+	NT registry under
+	
+	  
+	  HKEY_LOCAL_MACHINE\HARDWARE\DEVICEMAP\Scsi\ScsiPortX
+	
+	where X represents the IDE channel, 0=primary or 1=secondary channel.
+	
+	Look at the following value:
+	
+	  DMAEnabled:REG_DWORD:0x0 or 0x1 0x1=DMA enabled
+	
+	These entries will only show if the full Windows NT Service Pack 2 or later was
+	installed on the system, not just the Atapi.sys device driver.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+	Version           : winnt:4.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

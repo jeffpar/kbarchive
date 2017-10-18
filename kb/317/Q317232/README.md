@@ -1,0 +1,112 @@
+---
+layout: page
+title: "Q317232: Errors After You Change the Cluster Service Account Password"
+permalink: kb/317/Q317232/
+---
+
+## Q317232: Errors After You Change the Cluster Service Account Password
+
+	Article: Q317232
+	Product(s): Microsoft Windows NT
+	Version(s): 2000,2000 SP1,2000 SP2,4.0,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
+	Operating System(s): 
+	Keyword(s): kbenv kberrmsg
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows versions 2000, 2000 SP1, 2000 SP2 Advanced Server 
+	- Microsoft Windows NT Server versions 4.0, 4.0 SP3, 4.0 SP4, 4.0 SP5, 4.0 SP6, 4.0 SP6a 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	After you change the password for the Cluster service account on a domain
+	controller, the second node may not be able to join the cluster. Either of the
+	following events may be logged in the System event log:
+	
+	  Event ID: 1107
+	  Source: ClusSvc
+	  Description: Cluster node <xxxxxxx> failed to make a connection to the
+	  node over network 'Public'. The error code was 5.
+	
+	  -an-
+	
+	  Event ID: 1079
+	  Event Source: ClusSvc
+	  Description: The node cannot join the cluster because it cannot communicate
+	  with node <xxx> over any network configured for internal cluster
+	  communication. Check the network configuration of the node and the cluster.
+	
+	CAUSE
+	=====
+	
+	This problem can occur if you did not restart the Cluster service. You must stop
+	and restart the Cluster service on both nodes after you change either the
+	Cluster service account or the Cluster service password.
+	
+	The Cluster service uses NTLM for all authentication processes. After the Cluster
+	service starts on the node that is joining the cluster, the joining node's
+	credentials are validated by a domain controller. After the node's credentials
+	are validated on the domain, the node starts the process of joining the existing
+	cluster. To do so, the node passes its credentials to the existing node and
+	requests for a remote procedure call (RPC) binding to be created. During this
+	process, the existing node's local security authority validates the credentials
+	of the joining node with a domain controller. If the node is valid, the local
+	security authority receives an access token (password hash) for the joining node
+	from the domain controller. Finally, the Cluster service on the existing node
+	validates the credentials. Because the service account is the same, the existing
+	node compares its own token with the token of the joining node. The service
+	account of the joining node is validated, and then allowed to join if both
+	tokens match. However, if you do not restart the Cluster service on the existing
+	node, the existing node still has the token that was created by using the old
+	password. The tokens do not match and the Cluster service on the joining node
+	reports an "Error 5 (Access Denied)" error message.
+	
+	The authentication process is first attempted on the public network interface. If
+	authentication fails, it is attempted on the private network interface.
+	Therefore, two event ID 1107 messages are associated with the authentication
+	failure.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, stop and restart the Cluster service on both nodes
+	after you either change the Cluster service account or reset the password.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed that this is a problem in the Microsoft products that
+	are listed at the beginning of this article.
+	
+	MORE INFORMATION
+	================
+	
+	Microsoft recommends that you use the same service account for all nodes in a
+	cluster. For more information about how to either change the service account or
+	reset the Cluster service account password, refer to Windows Online Help.
+	
+	For additional information about how to change the service account, click the
+	article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q157780 How to Change the Service Account Password
+	
+	  Q239885 INF: How To Change Service Accounts on a SQL Virtual Server
+	
+	
+	
+	
+	Additional query words: mscs
+	
+	======================================================================
+	Keywords          : kbenv kberrmsg 
+	Component         : Cluster
+	Technology        : kbWinNTsearch kbWinNT400search kbwin2000AdvServ kbwin2000AdvServSearch kbWinNTSsearch kbWinNTS400sp6 kbWinNTS400sp5 kbWinNTS400sp4 kbWinNTS400sp3 kbWinNTS400search kbWinNTS400 kbwin2000Search kbWinAdvServSearch kbWin2000AdvServSP2 kbWin2000AdvServSP1
+	Version           : :2000,2000 SP1,2000 SP2,4.0,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
+	Issue type        : kbprb
+	
+	=============================================================================
+	

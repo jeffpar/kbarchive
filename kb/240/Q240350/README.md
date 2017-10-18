@@ -1,0 +1,137 @@
+---
+layout: page
+title: "Q240350: HOWTO: Manually Uninstall the MSDN Library"
+permalink: kb/240/Q240350/
+---
+
+## Q240350: HOWTO: Manually Uninstall the MSDN Library
+
+	Article: Q240350
+	Product(s): Microsoft Developer Network
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbHTMLHelp kbMSDN kbDSupport kbGrpDSTools
+	Last Modified: 03-JUL-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Developer Network (MSDN) 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about modifying the registry. Before you 
+	modify the registry, make sure to back it up and make sure that you understand how to restore 
+	the registry if a problem occurs. For information about how to back up, restore, and edit the 
+	registry, click the following article number to view the article in the Microsoft Knowledge Base:
+	
+	  Q256986 Description of the Microsoft Windows Registry
+	
+	SUMMARY
+	=======
+	
+	This article describes procedures for manually removing the MSDN Library as well
+	as any other HTML Help collections installed on the system.
+	
+	NOTE: Only use these steps as a last resort. When possible, the MSDN Library
+	should be removed and/or reinstalled using Control Panel's Add/Remove
+	application.
+	
+	MORE INFORMATION
+	================
+	
+	WARNING: These steps will remove all HTML Help collections from the system. This
+	includes but is not limited to the MSDN Library installations and the Platform
+	SDK Documentation. All customizations for these collections will be lost.
+	
+	WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+	that may require you to reinstall your operating system. Microsoft cannot
+	guarantee that you can solve problems that result from using Registry Editor
+	incorrectly. Use Registry Editor at your own risk.
+	
+	If the operating system is Windows 2000, first change the settings to view all
+	the hidden files and folders on the system:
+	
+	1. Open Windows Explorer.
+	
+	2. From the Tools menu, choose Folder Options.
+	
+	3. Choose the View tab in the Folder Options dialog box.
+	
+	4. Under Advanced settings, select the Show hidden files and folders option.
+	
+	The following steps will completely remove all HTML Help collections from the
+	system:
+	
+	1. Use Add/Remove Programs in Control Panel to uninstall all MSDN Library
+	  installations listed.
+	
+	2. Use Add/Remove Programs to uninstall any other HTML Help collections, such as
+	  the Platform SDK Documentation.
+	
+	3. On the Start menu, point to Find, and click Files or Folders.
+	
+	4. Search for and delete all occurrences of the following files on your hard
+	  disk:
+	
+	Hhcolreg.dat
+	Hh.dat
+	
+	5. Delete the installation folders for any MSDN Libraries. The default folders
+	  are as follows:
+	
+	Program Files\Microsoft Visual Studio\MSDN98 (for the MSDN Library for Visual Studio 6.0)
+	Program Files\Microsoft Visual Studio\MSDN (for the MSDN Quarterly Library releases)
+	
+	6. Search for "MSDN*" (without the quotation marks) on your hard disk, and then
+	  delete all instances of files or folders that are found.
+	
+	7. Use Regedit.exe to delete any instance of the key for MSDN Library under the
+	  following key:
+	
+	  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall
+	
+	  WARNING - Do not delete the entire key, only those subkeys for MSDN, such as:
+	
+	  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\MSDN
+	  Library - January 2000)
+	
+	8. Use Regedit.exe to delete the following registry key if it exists:
+	
+	  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\HTML Help Collections
+	
+	9. Manually uninstall and update HTML Help. The MSDN Library is dependent on
+	  HTML Help for its functionality.
+	
+	For additional information, click the article number below to view the article in
+	the Microsoft Knowledge Base:
+	
+	  Q201420 HOWTO: Manually Uninstall and Update HTML Help
+	
+	On Windows 2000, the above steps can cause problems for the Administrative Tools
+	(Microsoft Management Console [MMC], Services, Event Viewer, and so forth). The
+	Help files for these tools may not work. To fix this, you must also do the
+	following on Windows 2000:
+	
+	1. Locate the path containing user profiles. By default this is located at
+	  C:\Documents and Settings. For an upgrade it may be located under <Windows
+	  Directory>\Profiles.
+	
+	2. For each user, go to <User Profile Directory>\Local Settings\Temp.
+	
+	3. Delete all collection files (.col) from this directory.
+	
+	REFERENCES
+	==========
+	
+	  Q216109 HOWTO: Troubleshoot MSDN Library Run-Time/Install/Uninstall Problems
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbHTMLHelp kbMSDN kbDSupport kbGrpDSTools 
+	Technology        : kbMSDNSearch kbZNotKeyword2
+	Version           : :
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

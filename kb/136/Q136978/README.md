@@ -1,0 +1,90 @@
+---
+layout: page
+title: "Q136978: How to Refresh a Formset by Using Commands Outside of the Form"
+permalink: kb/136/Q136978/
+---
+
+## Q136978: How to Refresh a Formset by Using Commands Outside of the Form
+
+	Article: Q136978
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:3.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 12-FEB-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 3.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	When moving the record pointer in a table whose fields belong to an active form,
+	the form will not refresh if the command that moved the record pointer was
+	issued from a menu or the Command window. For example, if there is a menu item
+	issues a SKIP command, the record pointer will move but the form will not
+	refresh.
+	
+	To have your application menu item move the record pointer and refresh the form,
+	use the SKIP command to move the record pointer. and then use the
+	_SCREEN.FORMCOUNT and _SCREEN.FORMS().REFRESH commands to refresh a form or
+	formset correctly.
+	
+	MORE INFORMATION
+	================
+	
+	If the active form on the screen is a form and not a formset, you can use the
+	_SCREEN.ACTIVEFORM.REFRESH command alone from the menu or Command window to
+	refresh the form. However, if the form could be a form or a formset, it is best
+	to make your refresh code generic, so it fits both cases.
+	
+	The _SCREEN.FORMCOUNT command returns the number of forms on the screen, so it
+	allows you to refresh each form whether a single form or a formset. Then you can
+	use the FORMS() array to refresh each form if a formset is active. The FORMS()
+	array is created when the forms start up. It is internal to Visual FoxPro. By
+	putting these commands in a FOR loop, you can refresh a form or formset from a
+	menu action.
+	
+	For additional information about a form that uses toolbars, please see the
+	following article in the Microsoft Knowledge Base:
+	
+	  Q136277 FormCount Property Does Not Count Toolbars in a Formset
+	
+	Step-by-Step Example
+	--------------------
+	
+	1. Create a formset with two pages, and place a field from a table on each page.
+	
+	2. Run the form, and place the two forms side by side.
+	
+	3. Type the SKIP command in the Command window and press ENTER. Note that the
+	  fields on each form do not change.
+	
+	4. Type the _SCREEN.FORMS(1).REFRESH command in the Command window and press
+	  ENTER. Note that the second form refreshes. This is because the name of the
+	  last form in the formset is placed in the first FORMS array element. Issuing
+	  the _SCREEN.FORMS(2).REFRESH command will refresh the other form.
+	
+	5. If the SKIP command is used in a menu, place the following code in the menu
+	  item's procedure:
+	
+	     SKIP
+	     FOR x = 1 TO _SCREEN.FORMCOUNT
+	        _SCREEN.FORMS(x).REFRESH
+	     ENDFOR
+	
+	  This will refresh any form or formset that is active at the time when the user
+	  clicks that menu item.
+	
+	Additional query words: VFoxWin
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+	Version           : WINDOWS:3.0
+	
+	=============================================================================
+	

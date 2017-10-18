@@ -1,0 +1,145 @@
+---
+layout: page
+title: "Q189249: HOWTO: Determine Which 32-Bit Windows Version Is Being Used"
+permalink: kb/189/Q189249/
+---
+
+## Q189249: HOWTO: Determine Which 32-Bit Windows Version Is Being Used
+
+	Article: Q189249
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 4.0,5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbnokeyword KbVBA kbVBp400 kbVBp500 kbVBp600 kbGrpDSVB
+	Last Modified: 25-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic for Applications version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	An application may need to perform tasks differently depending on which
+	operating system is running on the computer. This article shows, by example, how
+	to differentiate between Microsoft Windows 95, Microsoft Windows 98, Microsoft
+	Window NT 3.51, Microsoft Windows NT 4.0, Microsoft Windows 2000, and Microsoft
+	Windows XP.
+	
+	The Win32 GetVersionEx function returns information that a program can use to
+	identify the operating system. Among those values are the major and minor
+	revision numbers and a platform identifier. With the introduction of Windows 98,
+	it now takes a more involved logical evaluation to determine which version of
+	Windows is in use. The listing below provides the data needed to evaluate the
+	OSVERSIONINFO structure populated by GetVersionEx:
+	
+	+---------------------------------------------------------------------------------------------------+
+	|               | Windows 95 | Windows 98 | Windows Me | Windows NT 4.0 | Windows 2000 | Windows XP | 
+	+---------------------------------------------------------------------------------------------------+
+	| PlatformID    | 1          | 1          | 1          | 2              | 2            | 2          | 
+	+---------------------------------------------------------------------------------------------------+
+	| Major Version | 4          | 4          | 4          | 4              | 5            | 5          | 
+	+---------------------------------------------------------------------------------------------------+
+	| Minor Version | 0          | 10         | 90         | 0              | 0            | 1          | 
+	+---------------------------------------------------------------------------------------------------+
+	
+	MORE INFORMATION
+	================
+	
+	Step-by-Step Example
+	--------------------
+	
+	1. Start a new Standard EXE project in Visual Basic. Form1 is created by
+	  default.
+	
+	2. From the Project menu, add a Standard Module to the project.
+	
+	3. Insert the following code into Module1:
+	
+	        Public Declare Function GetVersionExA Lib "kernel32" _
+	                 (lpVersionInformation As OSVERSIONINFO) As Integer
+	   
+	              Public Type OSVERSIONINFO
+	                 dwOSVersionInfoSize As Long
+	                 dwMajorVersion As Long
+	                 dwMinorVersion As Long
+	                 dwBuildNumber As Long
+	                 dwPlatformId As Long
+	                 szCSDVersion As String * 128
+	              End Type
+	   
+	              Public Function getVersion() As String
+	                 Dim osinfo As OSVERSIONINFO
+	                 Dim retvalue As Integer
+	   
+	                 osinfo.dwOSVersionInfoSize = 148
+	                 osinfo.szCSDVersion = Space$(128)
+	                 retvalue = GetVersionExA(osinfo)
+	   
+	                 With osinfo
+	                 Select Case .dwPlatformId
+	   
+	                  Case 1
+	                  
+	                      Select Case .dwMinorVersion
+	                          Case 0
+	                              getVersion = "Windows 95"
+	                          Case 10
+	                              getVersion = "Windows 98"
+	                          Case 90
+	                              getVersion = "Windows Mellinnium"
+	                      End Select
+	      
+	                  Case 2
+	                      Select Case .dwMajorVersion
+	                          Case 3
+	                              getVersion = "Windows NT 3.51"
+	                          Case 4
+	                              getVersion = "Windows NT 4.0"
+	                          Case 5
+	                              If .dwMinorVersion = 0 Then
+	                                  getVersion = "Windows 2000"
+	                              Else
+	                                  getVersion = "Windows XP"
+	                              End If
+	                      End Select
+	      
+	                  Case Else
+	                     getVersion = "Failed"
+	              End Select
+	   
+	                 End With
+	              End Function
+	
+	4. Add the following line of code to the Load event of Form1:
+	
+	  MsgBox GetVersion()
+	
+	5. Run the project, and note that a message box displays the correct Windows
+	  version.
+	
+	REFERENCES
+	==========
+	
+	For more information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q92936 HOWTO: Get Windows 3.1 Version Number in VB with GetVersion
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbnokeyword KbVBA kbVBp400 kbVBp500 kbVBp600 kbGrpDSVB 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVB500 kbVB600 kbVB400Search kbVB400 kbVBASearch kbZNotKeyword3
+	Version           : :4.0,5.0,6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

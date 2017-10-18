@@ -1,0 +1,64 @@
+---
+layout: page
+title: "Q175997: Err Msg: Findfast Caused an Invalid Page Fault in Findfast.exe"
+permalink: kb/175/Q175997/
+---
+
+## Q175997: Err Msg: Findfast Caused an Invalid Page Fault in Findfast.exe
+
+	Article: Q175997
+	Product(s): The Microsoft Network
+	Version(s): WINDOWS:2.5,2.51,2.52,2.6,95,98,98 Second Edition
+	Operating System(s): 
+	Keyword(s): kbenv kberrmsg kbmsn
+	Last Modified: 16-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The Microsoft Network versions 2.5, 2.51, 2.52, 2.6 
+	- the operating system: Microsoft Windows 95 
+	- the operating system: Microsoft Windows 98 
+	- the operating system: Microsoft Windows 98 Second Edition 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you attempt to connect to MSN, The Microsoft Network, you may receive one
+	or both of the following error messages:
+	
+	  
+	
+	- Findfast caused an invalid page fault in module Findfast.exe.
+	
+	  
+	
+	- Osa caused an invalid page fault in module Osa.exe.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, remove the shortcuts to Microsoft Find Fast and Office
+	Startup from the Startup folder. To do so, use the following steps:
+	
+	1. Right-click Start, and then click Open.
+	
+	2. Double-click the Programs folder, and then double-click the Startup folder.
+	
+	3. Right-click the Microsoft Find Fast icon, and then click Delete.
+	
+	4. Right-click the Office Startup icon, and then click Delete.
+	
+	5. Close all open windows, and then restart the computer.
+	
+	Additional query words: msnet msnetwork microsoft-net m.s.n. 2.50 2.51 2.52 2.60
+	
+	======================================================================
+	Keywords          : kbenv kberrmsg kbmsn 
+	Technology        : kbOSWin98 kbOSWin95 kbOSWin98SE kbOSWinSearch kbMSNSearch kbMSN252 kbMSN251 kbMSN260 kbMSN250
+	Version           : WINDOWS:2.5,2.51,2.52,2.6,95,98,98 Second Edition
+	Issue type        : kbprb
+	
+	=============================================================================
+	

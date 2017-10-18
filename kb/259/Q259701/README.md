@@ -1,0 +1,80 @@
+---
+layout: page
+title: "Q259701: Extra Lines Appear in LU3 Print Job When You Use PDT"
+permalink: kb/259/Q259701/
+---
+
+## Q259701: Extra Lines Appear in LU3 Print Job When You Use PDT
+
+	Article: Q259701
+	Product(s): Microsoft SNA Server
+	Version(s): WINDOWS:4.0 SP3
+	Operating System(s): 
+	Keyword(s): kbSNA400sp4fix kbSNA400PreSP4fix
+	Last Modified: 08-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, version 4.0 SP3 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	LU3 print jobs that use a Printer Definition Table (PDT) may have extra blank
+	lines inserted at the end of each page or at the end of the print job.
+	
+	CAUSE
+	=====
+	
+	3270 Write Control Characters (WCC) are used at the beginning of each LU3 print
+	job to define print settings. With LU3 printing, bits 2 and 3 of the WCC define
+	the printout format. If bits 2 and 3 of the WCC are both set to zero, the line
+	length is determined by New Line or Carriage Return characters, and the End of
+	Medium (EM) character indicates the end of the message.
+	
+	If the WCC specifies that the EM character, 0x19, indicate the end of the print
+	job and the EM character is not actually present in the print datastream, all
+	remaining characters in the print data buffer are interpreted as null characters
+	(0x00). This adds additional characters to the datastream, which are interpreted
+	as spaces when the job is printed.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, obtain the latest service pack for SNA Server 4.0. For
+	additional information, click the following article number to view the article
+	in the Microsoft Knowledge Base:
+	
+	  Q215838 How to Obtain the Latest SNA Server Version 4.0 Service Pack
+	
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed that this is a problem in Microsoft SNA Server version
+	4.0 Service Pack 3.
+	
+	This problem was first corrected in SNA Server 4.0 Service Pack 4.
+	
+	MORE INFORMATION
+	================
+	
+	After you apply the fix, a default screen buffer size of 1,920 is used if the
+	WCC specifies an EM and there is no EM included in the print job. If the print
+	job writes beyond the end of this buffer, the buffer is extended to a maximum of
+	3,612 characters.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbSNA400sp4fix kbSNA400PreSP4fix 
+	Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400SP3
+	Version           : WINDOWS:4.0 SP3
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

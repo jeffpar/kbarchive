@@ -1,0 +1,114 @@
+---
+layout: page
+title: "Q163433: Kids Plus!: Uninstalling Protect It!"
+permalink: kb/163/Q163433/
+---
+
+## Q163433: Kids Plus!: Uninstalling Protect It!
+
+	Article: Q163433
+	Product(s): Microsoft Home Kids Products
+	Version(s): 1.0
+	Operating System(s): 
+	Keyword(s): kbsetup kbusagekbfaq
+	Last Modified: 08-NOV-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Plus! for Kids, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Microsoft Plus! For Kids, Protect It! is considered a system component and
+	cannot be removed through ACME Setup. If you try to remove the Protect It!
+	component, you will receive the following error message:
+	
+	  Protect It! is a system component and cannot be removed by Setup. Please see
+	  the jewel case booklet for more information.
+	
+	and then another message stating:
+	
+	  Microsoft Plus! For Kids setup was completed successfully.
+	
+	MORE INFORMATION
+	================
+	
+	Removing Protect It!
+	--------------------
+	
+	Although it is not recommended that you remove Protect It! (because you lose
+	security functionality) you can remove the program by following the steps below.
+	The first step in removing Protect It! is to remove the restrictions for each
+	Family Member and to disable Protect It!. To do this, follow these steps:
+	
+	1. Start Protect It!.
+	
+	2. Click a family member in the Family Members box, click Set/Change, clear all
+	  of the check boxes in the "Protect It! - Limit Access to Computer (Step 1 of
+	  3)" dialog box, and then click Next.
+	
+	3. Clear all check boxes in the "Protect It! - Limit Access to Programs (Step 2
+	  of 3)" dialog box, click Next, and then click Finish.
+	
+	4. Verify that the following text is displayed next to the family member's
+	  name:
+	
+	  <NOT RESTRICTED>
+	
+	5. Repeat steps 2-4 for each family member listed in Protect It!.
+	
+	6. In the Protect It! Options area on the main "Protect It! - Family Member
+	  Options" dialog box, click the Enable Protect It! check box to clear it.
+	
+	7. Click Close.
+	
+	To completely remove Protect It! you must follow the command line instructions
+	included on the last page of the CD-ROM's jewel case booklet. The following text
+	is from that page:
+	
+	1. Put your Microsoft Plus! For Kids disc in the CD caddy (if needed), and then
+	  insert it into the CD-ROM drive.
+	
+	2. Click the Start button, and then click Run.
+	
+	3. Type: rundll32.exe d:\protect!\piclean.dll,clean, or if your CD-ROM drive
+	  letter is not D:, substitute the letter of your CD-ROM drive.
+	
+	4. Exit and restart Windows.
+	
+	After following the steps above to remove Protect It!, remove Plus! for Kids, and
+	then reinstall the program without installing Protect It!. To do this, follow
+	these steps:
+	
+	1. Insert the Microsoft Plus! For Kids CD-ROM into your CD-ROM drive.
+	
+	2. Click Install Plus! for Kids.
+	
+	3. Click Remove All, and then click Yes. (You are warned that Protect It! is a
+	  system component that will not be removed, click OK.)
+	
+	4. When Setup is finished, click OK.
+	
+	5. Start the Plus! For Kids Setup program again.
+	
+	6. Follow the instructions on the screen. When you are prompted to choose the
+	  type of installation, click Custom Install.
+	
+	7. In the Options box, click the Protect It! check box to clear it.
+	
+	8. Click Continue, and then follow the instructions on the screen to complete
+	  the Plus! for Kids installation.
+	
+	Additional query words: kids kbmm kidsplus kidsplus! pack plus plus! remove un-install uninstall un install
+	
+	======================================================================
+	Keywords          : kbsetup kbusage kbfaq
+	Technology        : _IKkbbogus kbGamesSearch kbPlusKids kbPlusSearch
+	Version           : 1.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

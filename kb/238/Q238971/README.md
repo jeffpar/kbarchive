@@ -1,0 +1,94 @@
+---
+layout: page
+title: "Q238971: Err Msg: OLE DB Provider for ODBC Drivers Error '80004005'"
+permalink: kb/238/Q238971/
+---
+
+## Q238971: Err Msg: OLE DB Provider for ODBC Drivers Error '80004005'
+
+	Article: Q238971
+	Product(s): Internet Information Server
+	Version(s): winnt:4.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 11-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+	
+	  Q256986 Description of the Microsoft Windows Registry
+	
+	SYMPTOMS
+	========
+	
+	When you use an Internet Information Server (IIS) ASP page to access a database,
+	the connection may fail with the following error message:
+	
+	  Microsoft OLE DB Provider for ODBC Drivers error '80004005'
+	
+	  [Microsoft][ODBC Driver Manager] Data source name not found and no default
+	  driver specified
+	
+	CAUSE
+	=====
+	
+	If you have used the C2 security program from the Windows NT Resource Kit on
+	your system, the following registry key may only have read permissions assigned
+	to the Everyone group:
+	
+	  Hkey_Local_Machine\Software\ODBC
+	
+	In order for the ODBC drivers to function properly, the Web user accounts must
+	have full control of this registry key.
+	
+	RESOLUTION
+	==========
+	
+	WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+	that may require you to reinstall your operating system. Microsoft cannot
+	guarantee that you can solve problems that result from using Registry Editor
+	incorrectly. Use Registry Editor at your own risk.
+	To assign full-control permissions to the Everyone group, follow these steps:
+	
+	1. Start Registry Editor (Regedt32.exe).
+	
+	2. Locate the following key in the registry:
+	
+	  Hkey_Local_Machine\Software\ODBC
+	
+	3. On the Security menu, select Permissions.
+	
+	4. Select Replace Permission on Existing Subkeys and set the permissions for the
+	  Everyone group to full control.
+	
+	5. Quit Registry Editor.
+	
+	MORE INFORMATION
+	================
+	
+	For additional information on the C2 security update utility, consult the
+	Windows NT Resource Kit, or see the following articles in the Microsoft
+	Knowledge Base:
+	
+	  Q185874 How to Troubleshoot Permissions in IIS 4.0
+	
+	  Q137018 Availability of C2 Security Compliant Windows NT
+	
+	  Q93362 C2 Evaluation and Certification for Windows NT
+	
+	Additional query words: C2 Security Permissions Registry
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbiisSearch kbiis400
+	Version           : winnt:4.0
+	Issue type        : kbprb
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

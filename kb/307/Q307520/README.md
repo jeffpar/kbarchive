@@ -1,0 +1,142 @@
+---
+layout: page
+title: "Q307520: Dynamic Remote LUs May Lead to Allocation Failures"
+permalink: kb/307/Q307520/
+---
+
+## Q307520: Dynamic Remote LUs May Lead to Allocation Failures
+
+	Article: Q307520
+	Product(s): Microsoft SNA Server
+	Version(s): 3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+	Operating System(s): 
+	Keyword(s): kbDSupport
+	Last Modified: 08-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Host Integration Server 2000 
+	- Microsoft SNA Server, versions 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 3.0 SP4, 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Advanced Program-to-Program Communications (APPC) or Common Programming
+	Interface for Communications (CPI-C) applications may be unable to allocate LU
+	6.2 sessions. This typically occurs after the applications have been functioning
+	normally for a long period of time.
+	
+	This problem only occurs if the SNA Server or Host Integration Server (HIS) 2000
+	systems are using dynamic remote APPC logical units (LUs) for communications
+	with the host system.
+	
+	The exact symptoms experienced by the end users of the APPC or CPI-C applications
+	may vary depending on the application, but the following errors are likely to be
+	returned by the underlying SNA Server/HIS 2000 APPC and CPI-C APIs.
+	
+	APPC
+	
+	  Primary Return Code: 0003 (AP_ALLOCATION_ERROR)
+	
+	  Secondary Return Code: 00000005 (AP_ALLOCATION_FAILURE_RETRY)
+	
+	CPI-C
+	
+	  Error 20 (CM_PRODUCT_SPECIFIC_ERROR)
+	
+	  -or-
+	
+	  Error 24 (CM_PROGRAM_PARAMETER_CHECK)
+	
+	CAUSE
+	=====
+	
+	The SNA Server service can get into a state where the internal configuration
+	table that is used to track all APPC conversations has no more free entries.
+	This in turn leads to the APPC or CPI-C allocation failures.
+	
+	It has been determined that under certain circumstances, the SNA Server service
+	fails to clean up entries for APPC conversations involving Dynamic Remote APPC
+	LUs, which can eventually cause the internal configuration table to become full.
+	
+	RESOLUTION
+	==========
+	
+	SNA Server
+	----------
+	
+	A supported fix is now available from Microsoft, but it is only intended to
+	correct the problem described in this article and should be applied only to
+	systems experiencing this specific problem. This fix may receive additional
+	testing at a later time, to further ensure product quality. Therefore, if you
+	are not severely affected by this problem, Microsoft recommends that you wait
+	for the next Microsoft SNA Server version 4.0 that contains this fix.
+	
+	To resolve this problem immediately, contact Microsoft Product Support Services
+	to obtain the fix. For a complete list of Microsoft Product Support Services
+	phone numbers and information about support costs, please go to the following
+	address on the World Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	NOTE: In special cases, charges that are normally incurred for support calls may
+	be canceled, if a Microsoft Support Professional determines that a specific
+	update will resolve your problem. Normal support costs will apply to additional
+	support questions and issues that do not qualify for the specific update in
+	question.
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	+--------------------------------------+
+	| File name    | Date       | Time     | 
+	+--------------------------------------+
+	| Snaservr.exe | 09/18/2001 | 15:04:48 | 
+	+--------------------------------------+
+	
+	NOTE: Because of file dependencies, the most recent fix that contains the above
+	files may also contain additional files.
+	
+	
+	
+	Host Integration Server 2000
+	----------------------------
+	
+	No fix is available for this problem in Host Integration Server 2000 at this
+	time.
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft SNA Server versions
+	3.0 and 4.0.
+	
+	Microsoft has confirmed this to be a problem in Microsoft Host Integration Server
+	2000.
+	
+	MORE INFORMATION
+	================
+	
+	Note that the APPC and CPI-C errors noted in the "Symptoms" section of this
+	article are common errors that can also occur for reasons other than the ones
+	described in this article.
+	
+	For additional information other problems that can cause similar symptoms, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q307601 Unable To Allocate LU 6.2 Sessions Using Dependent APPC LUs
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbDSupport 
+	Technology        : kbAudDeveloper kbSNAServSearch kbHostIntegServ2000 kbSNAServ300 kbSNAServ400 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3 kbSNAServ400SP4 kbSNAServ300SP2 kbSNAServ300SP4
+	Version           : :3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

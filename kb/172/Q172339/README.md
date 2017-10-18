@@ -1,0 +1,192 @@
+---
+layout: page
+title: "Q172339: PRB: Explaining &quot;Record is Deleted&quot; Error Accessing ODBC Table"
+permalink: kb/172/Q172339/
+---
+
+## Q172339: PRB: Explaining &quot;Record is Deleted&quot; Error Accessing ODBC Table
+
+	Article: Q172339
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbGrpDSVBDB
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Professional Edition for Windows, versions 4.0, 5.0, 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 4.0, 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Error 3167 "Record is Deleted" is a common error when using the Data Access
+	Objects (DAO) or a data control to access ODBC tables. This is due to the way
+	that the Microsoft Jet Database Engine manipulates its cursor for the recordset.
+	It is not limited to DAO. Similar errors can be raised by any engine that
+	maintains a cursor. The ODBC cursor library and servers themselves can and will
+	raise similar errors. Understanding why and how these errors are caused requires
+	a knowledge of resultset and cursor behavior.
+	
+	CAUSE
+	=====
+	
+	The "Record is Deleted" error (error 3167) is a byproduct of the Jet engine's
+	keyset cursor for the dynaset type recordset. A keyset cursor is fixed in
+	membership, but there is nothing stopping another user from deleting a row in
+	the underlying table that you have selected in your keyset. When you attempt to
+	get the data or update the data in a deleted row, the "Record is Deleted" error
+	message is generated. Again, this behavior is not limited to the Jet engine, but
+	can occur in any keyset cursor.
+	
+	This is not the only cause of the error. There are several other causes that are
+	far more subtle and depend on the keyset implementation. Because the Jet engine
+	uses a keyset based on a unique index in the underlying tables, it is possible
+	to get this error if something changes the index information. When the fields
+	that the keyset is built from are changed in the underlying table for a given
+	record, the Jet engine is not able to find the record to read or update the data
+	and raises the "Record is Deleted" error. In most cases the Jet engine knows
+	that the indexed fields changed in the underlying table if it made the changes,
+	but the following could change the indexed fields without the Jet engine being
+	aware of it:
+	
+	- Other users. Other users may change the values in the indexed fields. When
+	  the Jet engine is unable to find that record based on the value that it is
+	  storing, it raises an error.
+	
+	- Triggers. Triggers can change the values in the indexed fields. Since a
+	  trigger changes the values from what the Jet engine thinks it put in there,
+	  the cached keyset value and the actual value in the table differ. When the
+	  Jet engine tries to fetch the record, it will raise an error.
+	
+	- Null and Empty String behavior. Many databases automatically change data if
+	  necessary without alerting the Jet engine. For example, if the user were to
+	  add a record where the indexed column was a varchar() and the user submitted
+	  a "" value for that field, SQL Server would change the "" into a space (" ")
+	  and not alert the Jet engine. The Jet engine would then try to find that
+	  record with "", fail to do so and raise the "Record is Deleted" error.
+	
+	- Functions. Many indexed fields are updated with server functions such as
+	  GetDate(). These can change the indexed data without the Jet engine knowing
+	  it.
+	
+	- Indexes on non-standard datatypes or floating point datatypes. Some server
+	  datatypes have no ODBC or Jet engine equivalent datatype. In most cases, the
+	  Recordset is created as read-only, but sometimes it is not. Rounding or
+	  conversion errors on the datatypes can cause the error as well.
+	
+	RESOLUTION
+	==========
+	
+	Proper table structure and recordset creation is all that is usually needed.
+	Where this is not possible, there are a few alternatives:
+	
+	- Use SQL statements to do the updating and deleting and use read-only snapshot
+	  type recordsets to view the data. Refresh the recordset as needed.
+	
+	- Refresh the recordset after every edit or addnew or execute operation that
+	  affects the data in the recordset. The Jet engine will rebuild the keyset
+	  with the updated information.
+	
+	- Remove triggers, functions, and so forth from the ODBC table and perform
+	  those actions manually.
+	
+	STATUS
+	======
+	
+	This behavior is by design. Keyset cursors behave in this manner. Since the Jet
+	engine implements a keyset cursor, it is subject to the limitations of the
+	cursor.
+	
+	MORE INFORMATION
+	================
+	
+	A resultset is the set of records obtained from an SQL query (generally a SELECT
+	statement). A cursor is a way of maintaining position in a resultset, but is
+	often thought of as the combination of the resultset and the actual cursor.
+	
+	Cursors (as they apply to ODBC and most database servers) are either Forward Only
+	or Scrollable. A Forward Only cursor is a very simple cursor. You can move
+	forward only one row at a time. Scrollable cursors allow you to move back and
+	forth through the cursor, optionally allowing for exact positioning, determining
+	position, finding records, and so forth. Scrollable cursors can optionally be
+	Block cursors in that the cursor can fetch records a block at a time. The block
+	of data is often referred to as a rowset. Cursors can also be Static, Dynamic,
+	Keyset, or Mixed.
+	
+	A Static cursor is a cursor in which membership, order, and values are fixed upon
+	opening. The data appears to be static. It may change in the underlying tables,
+	but the cursor is unaware of the changes until it is refreshed.
+	
+	A Dynamic cursor is exactly the opposite. The membership, order and values are
+	completely dynamic. The data reflects what is currently in the underlying tables
+	at that moment (usually limited by some refresh rate).
+	
+	A Keyset cursor is a cursor that is fixed in membership and order, but not in
+	values. A keyset cursor gets its name because a set of keys (bookmarks) that
+	point to the data in the tables is created. Think of it as an array of pointers
+	to the actual data for each record in the tables.
+	
+	A Mixed cursor is a mix of Dynamic and Keyset cursors. It is essentially a cursor
+	where the keyset does not contain all of the rows of the resultset (to save on
+	memory). Therefore, there is a rowsetsize that is the size of the block of data
+	fetched, a keysetsize that is the size of the keyset, and a resultsetsize that
+	is the size of the entire resultset. The cursor is mixed because it is keyset
+	within the current keyset, but dynamic outside of the current keyset.
+	
+	In regards to ODBC there are two classifications of cursors, Client-side
+	(ODBC)and Server-side. Client-side cursors are maintained on the client's system
+	and Server-side cursors are maintained on the server. Client-side cursors cannot
+	realistically be dynamic.
+	
+	Due to bandwidth limitations and other factors, client-side cursors are generally
+	limited to Forward Only, Static, and Keyset. Server-side cursors can be of any
+	type.
+	
+	The Jet engine creates and maintains its own cursors for ODBC recordsets. It does
+	not rely on the ODBC cursor library cursors or server-side cursors. It does this
+	so that it can provide the updatability of dynaset type recordsets and allow SQL
+	statements that span multiple Access, ISAM, or ODBC databases. It provides the
+	following cursors:
+	
+	  Recordset Type       Cursor Type
+	  -------------------- ---------------------------
+	  Table                Dynamic (MDB and IISAM only; not available for
+	                       ODBC)
+	
+	  SnapShot             Static read-only
+	  Dynaset              Keyset
+	
+	Forward-Only Snapshot Forward-only read-only
+	
+	A Note About Jet's Keyset Cursor Implementation
+	-----------------------------------------------
+	
+	The Jet engine creates a keyset for the cursor based on a unique index on the
+	table. It queries the database for information on the table to find a unique
+	index. If one is not found, a non-unique keyset cursor (dynaset type recordset)
+	will be built, but it will be read-only. This is because Jet updates records via
+	an UPDATE statement using the key fields to limit the changes to a single
+	record. If the table does not have a unique index, Jet cannot ensure that an
+	update affects only a single record.
+	
+	Other cursor libraries, like the ODBC cursor library, use more sophisticated
+	updating schemes that can handle tables without indexes, but are more complex
+	and error prone.
+	
+	(c) Microsoft Corporation 1997, All Rights Reserved. Contributions by Troy
+	Cambra, Microsoft Corporation
+	
+	
+	Additional query words: kbVBp500 kbVBp600 kbdse kbDSupport kbVBp kbRDO kbODBC kbVBp400
+	
+	======================================================================
+	Keywords          : kbGrpDSVBDB 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400
+	Issue type        : kbprb
+	
+	=============================================================================
+	

@@ -1,0 +1,153 @@
+---
+layout: page
+title: "Q143478: Stop 0A in Tcpip.sys When Receiving Out Of Band (OOB) Data"
+permalink: kb/143/Q143478/
+---
+
+## Q143478: Stop 0A in Tcpip.sys When Receiving Out Of Band (OOB) Data
+
+	Article: Q143478
+	Product(s): Microsoft Windows NT
+	Version(s): winnt:3.51,4.0
+	Operating System(s): 
+	Keyword(s): kbfile kbWinNT400sp4fix
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation versions 3.51, 4.0 
+	- Microsoft Windows NT Server versions 3.51, 4.0 
+	- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	A Stop 0x0000000A occurs in Tcpip.sys when receiving Out of Band (OOB) data.
+	
+	CAUSE
+	=====
+	
+	A sender specifies "Out of Band" data by setting the URGENT bit flag in the TCP
+	header. The receiver uses the URGENT POINTER to determine where in the segment
+	the urgent data ends. Windows NT bugchecks when the URGENT POINTER points to the
+	end of the frame and no normal data follows. Windows NT expects normal data to
+	follow.
+	
+	RESOLUTION
+	==========
+	
+	Microsoft has updated Tcpip.sys to correct the problem. Instructions for
+	installing it are available from Microsoft support channels, or directly from
+	the Internet locations below.
+	
+	NOTE: This hotfix was originally posted on May 12, 1997. A subsequent fix was
+	completed on January 9, 1998, to address another nearly identical attack and
+	this hotfix has replaced the original one. The original hotfix is included in
+	Windows NT 4.0 Service Pack 3. The most recent hotfix is not; however, it is
+	available from the following Internet locations:
+	
+	Windows NT 4.0 SP2
+	------------------
+	
+	NOTE: Service pack 2 must be applied to Windows NT 4.0 prior to applying this
+	fix.
+	
+	This hotfix has been posted to the following Internet location:
+	
+	  ftp://ftp.microsoft.com/bussys/winnt/winnt-public/fixes/usa/NT40/
+	  hotfixes-postSP2/oob-fix
+	
+	Windows NT 4.0 SP3
+	------------------
+	
+	NOTE: Service pack 3 must be applied to Windows NT 4.0 prior to applying this
+	fix.
+	
+	Oob-fix and Icmp-fix have been superseded by Teardrop2-fix. For your convenience,
+	the English version of this post-SP3 hotfix has been posted to the following
+	Internet location. However, Microsoft recommends that you install Windows NT 4.0
+	Service Pack 4 to correct this problem.
+	
+	  ftp://ftp.microsoft.com/bussys/winnt/winnt-public/fixes/usa/NT40/
+	  hotfixes-postSP3/teardrop2-fix
+	
+	This fix should have the following time stamp:
+	
+	  01/09/98  08:16a               143,664 Tcpip.sys   (Intel)
+	  01/09/98  08:13a               263,536 Tcpip.sys   (Alpha)
+	
+	For your convenience, the English version of this post-SP3 hotfix has been posted
+	to the following Internet location. However, Microsoft recommends that you
+	install Windows NT 4.0 Service Pack 4 to correct this problem.
+	
+	  ftp://ftp.microsoft.com/bussys/winnt/winnt-public/fixes/usa/NT40/
+	  hotfixes-postSP3/archive/oob-fix
+	
+	WARNING: If you install the original (archived) version of this hotfix AFTER you
+	apply the later version, your system may become unusable. Microsoft does not
+	recommend you install the original hotfix after applying the later version.
+	
+	To resolve this problem, obtain the latest service pack for Windows NT 4.0 or
+	Windows NT Server 4.0, Terminal Server Edition. For additional information,
+	please see the following article in the Microsoft Knowledge Base:
+	
+	  Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+	
+	
+	Windows NT 3.51
+	---------------
+	
+	NOTE: Service pack 5 must be applied to Windows NT 3.51 prior to applying this
+	fix.
+	
+	This hotfix has been posted to the following Internet location:
+	
+	  ftp://ftp.microsoft.com/bussys/winnt/winnt-public/fixes/usa/NT351/
+	  hotfixes-postSP5/teardrop2-fix
+	
+	This fix should have the following time stamp:
+	
+	  01/14/98  12:04p               123,824 Tcpip.sys   (Intel)
+	  01/14/98  12:00p               216,848 Tcpip.sys   (Alpha)
+	
+	STATUS
+	======
+	
+	Windows NT 4.0
+	--------------
+	
+	Microsoft has confirmed this problem could result in some degree of security
+	vulnerability in Windows NT version 4.0. This problem was first corrected in
+	Windows NT 4.0 Service Pack 4.0 and Windows NT Server 4.0, Terminal Server
+	Edition Service Pack 4.
+	
+	
+	Windows NT 3.51
+	---------------
+	
+	Microsoft has confirmed this problem could result in some degree of security
+	vulnerability in Windows NT version 3.51. A fully supported fix is now
+	available, but it has not been fully regression tested and should only be
+	applied to systems determined to be at risk of attack. Please evaluate your
+	system's physical accessibility, network and Internet connectivity, and other
+	factors to determine the degree of risk to your system. If your system is
+	sufficiently at risk, Microsoft recommends you apply this fix. Otherwise, wait
+	for the next Windows NT service pack, which will contain this fix. Please
+	contact Microsoft Technical Support for more information.
+	
+	
+	
+	Additional query words: win nuke winnuke win95 95
+	
+	======================================================================
+	Keywords          : kbfile kbWinNT400sp4fix 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbNTTermServ400 kbNTTermServSearch kbWinNTS351search
+	Version           : winnt:3.51,4.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

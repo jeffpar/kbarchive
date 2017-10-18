@@ -1,0 +1,118 @@
+---
+layout: page
+title: "Q124984: Multimedia Titles Requiring 256 or More Colors"
+permalink: kb/124/Q124984/
+---
+
+## Q124984: Multimedia Titles Requiring 256 or More Colors
+
+	Article: Q124984
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): 1.0,1996 edition,2.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 09-NOV-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft 500 Nations, version 1.0 
+	- Microsoft Art Gallery for Windows, version 1.0 
+	- Microsoft Bookshelf '95 for Windows 95 
+	- Microsoft Bookshelf 1996-97 for Windows 
+	- Microsoft CD Sampler 
+	- Microsoft Cinemania for Windows, 1992, 1993, 1994, 1995, 1996, 1997 editions 
+	- Microsoft Complete Baseball for Windows, 1994 edition (see below) 
+	- Microsoft Complete Baseball Guide for Windows, 1995 edition 
+	- Microsoft Complete NBA Basketball for Windows, 1994-1995, 1995-1996 editions 
+	- Microsoft Dogs for Windows, version 1.0 
+	- Microsoft Encarta 96 Encyclopedia for Windows 
+	- Microsoft Encarta 96 World Atlas for Windows 
+	- Microsoft Explorapedia series: World of Nature for Windows 
+	- Microsoft Explorapedia series: World of People for Windows 
+	- Microsoft Golf for Windows, version 2.0 
+	- Microsoft How the Leopard Got His Spots 
+	- Microsoft Julia Child: Home Cooking with Master Chefs for Windows, version 1.0 
+	- Microsoft Music Central for Windows 1996 edition 
+	- Microsoft Oceans for Windows, version 1.0 
+	- Scholastic's Magic School Bus series: Explores the Human Body for the Macintosh 
+	- Scholastic's Magic School Bus series: Explores the Solar System for Windows 
+	- Scholastic's Magic School Bus series: Explores the Ocean for Windows 
+	- Scholastic's Magic School Bus series: Explores Inside the Earth for Windows, version 1.0 
+	- Microsoft Wine Guide for Windows 
+	- Microsoft World of Flight for Windows, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	
+	SUMMARY
+	=======
+	
+	The applications listed at the beginning of this article require a video display
+	driver of 256 or more colors. These applications will not run under the Standard
+	VGA display driver which supports only 16 colors. Art Gallery requires 256 color
+	capability for playing animation only. Note also that the CD Samplers may not
+	run properly with more than 256 colors.
+	
+	MORE INFORMATION
+	================
+	
+	A standard troubleshooting procedure is to run an application using the Standard
+	VGA display. When you test the applications, one or more of the following
+	approaches may be required:
+	
+	- Consult the Readme or Tips for the application to see if the problem you are
+	  having has been documented.
+	
+	- Use the Super VGA 256-color driver if the installed video card supports it.
+	
+	- Try different color depths. For example, if the system is configured for 256
+	  colors, change the display to 65K colors.
+	
+	- Try different resolutions. For example, if the system is configured for
+	  800-by-600 pixel resolution, change the resolution to 640-by-480 pixels.
+	
+	- If you are using a Large-Font display, change the corresponding font to a
+	  Small-Font display.
+	
+	- Update to the latest version of the video card driver. Often these change on
+	  a monthly basis.
+	
+	- Contact your hardware vendor for further suggestions.
+	
+	NOTE: Microsoft Scholastic's The Magic School Bus Explores The Human Body for
+	Windows, ONLY runs with 256 colors. That is, you cannot run this program with
+	less than or more than 256 colors.
+	
+	For more information on using these methods, consult your video card
+	documentation or readme file.
+	
+	Titles that Run with 16-color VGA
+	---------------------------------
+	
+	The following titles require 256 or more colors, but can be run using 16-color
+	VGA for troubleshooting purposes:
+	
+	- Microsoft Bookshelf for Windows, 1995 edition
+	
+	- Microsoft Bookshelf '95 for Windows 95
+	
+	- Microsoft Bookshelf for Windows, 1995 Intro Edition
+	
+	- Microsoft Encarta for Windows, 1995 edition
+	
+	- Microsoft Explorapedia series:
+	
+	  World of Nature for Windows, versions 1.0 and 1.2
+	  World of People for Windows, version 1.0
+	
+	- Microsoft Wine Guide, version 1.0
+	
+	Additional query words: kbhowto Windowsmulti media multimedia multi- mmtitles t-shoot troubleshoot homemm homegame homekids homekid explora 3dmm ocean oceans msbhuman msbsolar leo rabbit ears earth rocks msbearth msbocean msboceans geology
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbGamesSearch kbZNotKeyword kbGolfSearch kbZNotKeyword2 kbKidsSearch kbBookshelfSearch kbBaseballSearch kbEncartaEncycSearch kbCDSampler kbCineManiaSearch kbCompleteBaseballSearch kbCompleteBasketballSearch kb500Nations100 kbBookShelf1995 kbBookShelf1996 kbBookShelf1997 kbCompleteBaseball1994 kbCompleteBaseball1995 kbDogs100 kbJuliaChild kbMusicCentral kbPJLeopard kbWorldofFlight kbScholasticOcean kbScholasticSolar kbScholasticEarth kbArtGallery kbGolf200 kbCompleteNBABasketball1994 kbEncartaEnCyc1996 kbEncartaWorldAtlas1996 kbMusicCentral1996 kbOceans kbMSBSearch
+	Version           : :1.0,1996 edition,2.0
+	
+	=============================================================================
+	

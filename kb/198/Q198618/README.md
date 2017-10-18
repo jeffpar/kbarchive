@@ -1,0 +1,397 @@
+---
+layout: page
+title: "Q198618: MCSE Readiness Review Windows NT Workstation Corrections"
+permalink: kb/198/Q198618/
+---
+
+## Q198618: MCSE Readiness Review Windows NT Workstation Corrections
+
+	Article: Q198618
+	Product(s): Microsoft Press
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbdocerr
+	Last Modified: 13-MAR-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- MSPRESS MCSE Readiness Review Exam 70-073 Windows NT Workstation ISBN 0-7356-0537-8 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article contains comments, corrections, and information about known errors
+	relating to the Microsoft Press book MCSE Readiness Review Exam 70-073 Windows
+	NT Workstation, ISBN 0-7356-0537-8.
+	
+	The following topics are covered:
+	
+	- CD-ROM: Practice Exam Answer Key Is Incorrect
+	
+	- Page 48: Answer To Question 70-073.02.01.002 Should Be D, Not B
+	
+	- Pages 65 & 66: 70-073.02.02.001, WINNT32 Should Be Used Instead Of WINNT
+	
+	- Page 112: "D" Is Correct
+	
+	- Page 164: Correct Answer Should Be C
+	
+	- Pages 165 & 166: Typo In Question 70-073.03.02.006
+	
+	- Page 166: Correct Answer Should Be B
+	
+	- Page 176: Correct Answer Should Be B
+	
+	- Page 240: Explanation For Answer D Is Incorrect
+	
+	- Pages 289 & 299: Reference To Chapter 2 Should Be Changed To Chapter 8
+	
+	- Page 319: The Table Lists Disk Counters, Not Processor Counters
+	
+	- Page 336: Explanation For Answer D Is Incorrect
+	
+	- Pages 409 And 410: Condition A Should be "share permission", Not "NTFS
+	  permission"
+	
+	- Error Message: Tests Have Expired
+	
+	MORE INFORMATION
+	================
+	
+	CD-ROM: Practice Exam Answer Key Is Incorrect
+	---------------------------------------------
+	
+	The questions in the Practice Exam do not link to the correct answers when you
+	press the Learn Now button. This affects both the individual copies of this
+	title as well as the Core Readiness Review set of books.
+	
+	The book includes all of the questions contained on the CD. You can refer to the
+	book rather than the CD for the correct answers, or you can order a fixed
+	replacement CD by calling 1-800-MSPRESS.
+	
+	A service pack that will correct this problem is also available from Self Test
+	Software. You can download Svcpk073.exe from the support link at:
+	
+	http://www.selftestsoftware.com/shop/
+	
+	
+	Page 48: Answer To Question 70-073.02.01.002 Should Be D, Not B
+	---------------------------------------------------------------
+	
+	Page 47, Question 70-073.02.01.002:
+	
+	The question allows for additional memory. Therefore, the second group of ten
+	Windows 95 computers can be upgraded. This brings the total number of
+	upgradeable machines to 25.
+	
+	Page 48:
+	
+	Change Answer B to:
+	"Incorrect: More than fifteen computers meet the minimum hardware requirements
+	for a Windows NT Workstation installation, without purchasing any new hardware
+	besides memory."
+	
+	Change Answer C to:
+	"Incorrect: More than twenty computers meet the minimum hardware requirements for
+	a Windows NT Workstation installation, without purchasing any new hardware
+	besides memory."
+	
+	Change Answer D to:
+	"Correct: Twenty-five computers meet the minimum hardware requirements without
+	purchasing any new hardware besides memory. The first group of ten Windows NT
+	Workstation 3.51 computers meets the hardware requirements, the second group of
+	ten Window 95 computers meets the hardware requirements after the purchase of
+	additional memory, the third group of five Windows 95 computers meets the
+	hardware requirements, and the fourth group of five MS-DOS workstations does not
+	have a CD-ROM drive. Since the computers are not on a network, a network
+	installation cannot be performed for the computers without a CD-ROM drive."
+	
+	Change Answer E to:
+	"Less than thirty computers meet the minimum hardware requirements for a Windows
+	NT Workstation installation. Five computers do not have a CD-ROM drive."
+	
+	
+	Pages 65 & 66: 70-073.02.02.001, WINNT32 Should Be Used Instead Of WINNT
+	------------------------------------------------------------------------
+	
+	The WINNT command is used to install Windows NT Workstation on a computer
+	currently running a 16-bit Windows operating system, such as Windows 3.1 or
+	Windows for Workgroups 3.1, MS-DOS, or Windows 95. Therefore, none of the
+	answers to question 70-073.02.02.001 are correct.
+	
+	On pages 65, change Answer D from:
+	"D. You should install Windows NT Workstation 4.0 using WINNT32 /U and assign a
+	unique computer name to the 4.0 installation."
+	
+	To:
+	"D. You should install Windows NT Workstation 4.0 using WINNT32 and assign a
+	unique computer name to the 4.0 installation."
+	
+	On page 66, change the explanations for each answer:
+	
+	Answer A from:
+	"A. Incorrect: While you should install Windows NT Workstation 4.0 interactively
+	using the WINNT command, you should not assign the computer name MYWORK. Since
+	both the Windows NT Workstation 3.51 installation and the Windows NT Workstation
+	4.0 installation are members of the same domain, they must have different
+	computer names."
+	
+	To:
+	"A. Incorrect: You must install the Windows NT Workstation 4.0 interactively
+	using the WINNT32 command, not the WINNT command. In addition, you should not
+	assign the computer name MYWORK. Since both the Windows NT Workstation 3.51
+	installation and the Windows NT Workstation 4.0 installation are members of the
+	same domain, they must have different computer names."
+	
+	Answer B from:
+	"B. Incorrect: You must install the Windows NT Workstation 4.0 interactively
+	using the WINNT command, not the WINNT32 /U (unattended setup) command. In
+	addition, you should not assign the computer name MYWORK. Since both the Windows
+	NT Workstation 3.51 installation and the Windows NT Workstation 4.0 installation
+	are members of the same domain, they must have different computer names."
+	
+	To:
+	"B. Incorrect: You must install the Windows NT Workstation 4.0 interactively
+	using the WINNT32 command, not the WINNT32 /U (unattended setup) command. In
+	addition, you should not assign the computer name MYWORK. Since both the Windows
+	NT Workstation 3.51 installation and the Windows NT Workstation 4.0 installation
+	are members of the same domain, they must have different computer names."
+	
+	Answer C from:
+	"C. Correct: You must install the Windows NT Workstation 4.0 interactively using
+	the WINNT command, and you must assign a unique computer name when both the
+	Windows NT Workstation 3.51 installation and the Windows NT Workstation 4.0
+	installation are members of the same domain."
+	
+	To:
+	"C. Incorrect: You must install the Windows NT Workstation 4.0 interactively
+	using the WINNT32 command. However, assigning a unique computer name when both
+	the Windows NT Workstation 3.51 installation and the Windows NT Workstation 4.0
+	installation are members of the same domain is correct."
+	
+	Answer D from:
+	"D. Incorrect: You must install the Windows NT Workstation 4.0 interactively
+	using the WINNT command, not the WINNT32 /U command. However, assigning a unique
+	computer name when both the Windows NT Workstation 3.51 installation and the
+	Windows NT Workstation 4.0 installation are members of the same domain is
+	correct."
+	
+	To:
+	"D. Correct: You must install the Windows NT Workstation 4.0 interactively using
+	the WINNT32 command, and you must assign a unique computer name when both the
+	Windows NT Workstation 3.51 installation and the Windows NT Workstation 4.0
+	installation are members of the same domain."
+	
+	
+	Page 112: "D" Is Correct
+	------------------------
+	
+	The correct answer is "D" but the wording for the correct answer is listed under
+	"B". The order of the answers needs to be changed so that the letters match up
+	with the correct text.
+	
+	Corrected text should read:
+	
+	Correct Answer: D
+	
+	A. Incorrect: There is no way to convert an HPFS partition to FAT; the CONVERT
+	utility only converts an HPFS (or FAT) partition to NTFS. In addition, the WINNT
+	setup program is used to install Windows NT on a computer running Windows 95 or
+	MS-DOS. Since your computer is running Windows NT Workstation 3.51, you should
+	use the WINNT32 setup program.
+	
+	B. Incorrect: There is no way to convert an HPFS partition to FAT; the CONVERT
+	utility only converts an HPFS (or FAT) partition to NTFS. However, since your
+	computer is running Windows NT Workstation 3.51, you should use the WINNT32
+	setup program.
+	
+	C. Incorrect: Using the CONVERT utility to convert the partition to NTFS is the
+	correct way to convert the HPFS partition. However, the WINNT setup program is
+	used to install Windows NT on a computer running Windows 95 or MS-DOS. Since
+	your computer is running Windows NT Workstation 3.51, you should use the WINNT32
+	setup program.
+	
+	D. Correct: Using the CONVERT utility to convert the partition to NTFS is the
+	correct way to convert the HPFS partition. Since your computer is running
+	Windows NT Workstation 3.51, you should use the WINNT32 setup program. To retain
+	desktop settings, configuration settings, and file system security attributes,
+	you must install Windows NT Workstation 4.0 in the same folder where Windows NT
+	3.51 was installed.
+	
+	
+	Page 164: Correct Answer Should Be C
+	------------------------------------
+	
+	On page 164, the correct answer should be C. Change Answer C to read:
+	
+	"C. Correct: While default user profiles are created when Windows NT Workstation
+	users log on for the first time, and you have created a logon script to
+	configure user network and printer connections for Windows 3.11 users, no steps
+	have been taken to prevent Windows NT Workstation and Windows 3.11 users from
+	changing their configurations."
+	
+	
+	Pages 165 & 166: Typo In Question 70-073.03.02.006
+	--------------------------------------------------
+	
+	Pages 165 and 166, Question 70-073.03.02.006, second paragraph:
+	
+	Change:
+	"The required result is to configure the network environment for Windows NT
+	Workstation and Windows 3.1 clients each time they log on to the network."
+	
+	To:
+	"The required result is to configure the network environment for Windows NT
+	Workstation and Windows 3.11 clients each time they log on to the network."
+	
+	
+	Page 166: Correct Answer Should Be B
+	------------------------------------
+	
+	On page 166, the correct answer should B. Change Answer B to read:
+	
+	"B. Correct: Default user profiles are created when Windows NT Workstation users
+	log on for the first time, a logon script is created to configure user network
+	and printer connections for Winodws 3.11 users, and profiles are configured to
+	prevent Windows NT Workstation users from changing their configurations."
+	
+	
+	Page 176: Correct Answer Should Be B
+	------------------------------------
+	
+	On page 176, the correct answer should be B. Please modify answers A and B to
+	read as follows:
+	
+	"A. Incorrect: The second optional result is not achieved. Because of the Read
+	permission assigned to the Everyone system group, users will not be able to
+	create new files in the \Bank folder after it is copied. In order to allow users
+	to create files in the folder, Add and Read permissions must be assigned to the
+	Everyone system group in order for users to create new files in the \Bank folder
+	after it is copied. The Full Control permission assigned to Creator Ownership
+	only ensures that you will be able to access and change files you have created
+	in the \Bank folder, it does not assign anyone any permission, such as Add, to
+	the \Bank folder.
+	
+	B. Correct: Copying the \BANK folder to the \WEDGE folder on the server
+	automatically provides Full Control permission to the Everyone system group for
+	the \Wedge folder. Sharing the \BANK folder on the server and setting permission
+	so the Everyone system group has Read permission prevents other users from
+	changing files in the \BANK folder, but allows them to read the files. The
+	second optional result is not achieved, please see the explanation for answer
+	A."
+	
+	
+	Page 240: Explanation For Answer D Is Incorrect
+	-----------------------------------------------
+	
+	On Page 240, the explanation for Answer D is incorrect.
+	
+	Change:
+	"D. Incorrect: The default tree and context is only specified when setting up
+	Client Services for NetWare (CSNW). When running Gateway Service for NetWare
+	(GSNW), there is no need to specify the default tree and context."
+	
+	To:
+	"D. Incorrect: A preferred server is specified in the Client Service for NetWare
+	dialog box when configuring Client Services for NetWare (CSNW). When running
+	Gateway Services for NetWare (GSNW), the preferred server must be specified in
+	the Gateway Service for NetWare dialog box."
+	
+	
+	Pages 289 & 299: Reference To Chapter 2 Should Be Changed To Chapter 8
+	----------------------------------------------------------------------
+	
+	Page 289, first reference, first sentence:
+	
+	Change:
+	"Microsoft Windows NT Technical Support Self-Paced Training Chapter 2..."
+	
+	To:
+	"Microsoft Windows NT Technical Support Self-Paced Training Chapter 8..."
+	
+	Page 299:
+	
+	Change:
+	"The Microsoft Windows NT Technical Support volume of the Microsoft Windows NT
+	Technical Support Training kit Chapter 2..."
+	
+	To:
+	"The Microsoft Windows NT Technical Support volume of the Microsoft Windows NT
+	Technical Support Training kit Chapter 8..."
+	
+	
+	Page 319: The Table Lists Disk Counters, Not Processor Counters
+	---------------------------------------------------------------
+	
+	Page 319, first paragraph, last sentence:
+	
+	Change:
+	"The most commonly used processor counters are:"
+	
+	To:
+	"The most commonly used disk counters are:"
+	
+	
+	Page 336: Explanation For Answer D Is Incorrect
+	-----------------------------------------------
+	
+	On page 336, the explanation for answer D is incorrect.
+	
+	Change:
+	"D. Correct: One of the advantages of using a volume set is the ability to
+	combine free disk space from several areas, including different types of hard
+	disks. Since you have not combined the disks into one volume set, you have not
+	optimized performance for optimum throughput, which is the required result to
+	the problem."
+	
+	To:
+	"D. Correct: One of the advantages of using a volume set is the ability to
+	combine free disk space from several areas, including different types of hard
+	disks. However, volume sets do not improve performance, so you have not
+	optimized performance for optimum throughput, which is the required result to
+	the problem."
+	
+	
+	Pages 409 and 410: Condition A Should be "share permission", Not "NTFS permission"
+	----------------------------------------------------------------------------------
+	
+	On pages 409 and 410, under question 70-073.07.05.004,
+	
+	Change:
+	"A. The NTFS permission on the \MKTG folder is set to Read Only."
+	
+	To:
+	"A. The share permission on the \MKTG folder is set to Read Only."
+	
+	
+	Error Message: Tests Have Expired
+	---------------------------------
+	
+	After the date 9/9/99, you may receive a message box stating the following:
+	
+	  Tests Have Expired. Contact Customer Service.
+	
+	Once you click OK, the test splash screen appears. You can start and run all
+	facets of the test without any error.
+	
+	This error message is incorrect. The tests have not expired and you should be
+	able to perform them without error.
+	
+	
+	Microsoft Press is committed to providing informative and accurate books. All
+	comments and corrections listed above are ready for inclusion in future
+	printings of this book. If you have a later printing of this book, it may
+	already contain most or all of the above corrections.
+	
+	Additional query words: TKINPUT RRBOOK 0-7356-0537-8
+	
+	======================================================================
+	Keywords          : kbdocerr 
+	Technology        : kbMSPressSearch
+	Version           : :
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

@@ -1,0 +1,78 @@
+---
+layout: page
+title: "Q43238: Mac Srv: Modifying a User's Name and/or Password"
+permalink: kb/043/Q43238/
+---
+
+## Q43238: Mac Srv: Modifying a User's Name and/or Password
+
+	Article: Q43238
+	Product(s): Microsoft Mail For Appletalk Networks
+	Version(s): WINDOWS:3.0,3.1
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 09-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Mail for AppleTalk Networks, versions 3.0, 3.1 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	In Microsoft Mail, only the Network Manager can modify user names. On the other
+	hand, both users and the Network Manager can modify a password.
+	
+	If you are the Network Manager, do the following to modify a user's name or
+	password:
+	
+	1. Log in as Network Manager.
+	
+	2. With the Summary window open, choose Server User/Groups from the Mail menu.
+	
+	
+	3. Select the Users icon.
+	
+	4. Select Modify User.
+	
+	5. Select the user's name in the list box.
+	
+	6. Make any changes to the user's name or password.
+	
+	7. When you are done modifying the current user, click Modify.
+	
+	8. If you need to modify more users, repeat steps 5 through 7, then click the
+	  Close box.
+	
+	A user can change his or her password as follows:
+	
+	1. With the Summary window open, choose Change Password from the Mail menu.
+	
+	2. Type the new password and click OK. For security, when you type your
+	  password, bullets are displayed in the password text box. You should be very
+	  careful when you type your new password because you cannot see on the screen
+	  which keys you are typing. You are then asked to type your password a second
+	  time for verification.
+	
+	
+	MORE INFORMATION
+	================
+	
+	Please note that the Mail server maintains two lists of users: a list of local
+	users and a list of all users as seen in the Address Mail window. The Mail
+	server does not update its list of all users until it broadcasts its new list of
+	local users to other Mail servers on the network. It may take a short time for
+	the modified users to show up in your server's list of all users; however, the
+	modified users should appear immediately in the list of local users.
+	
+	Additional query words: 3.00 3.10
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMailSearch kbZNotKeyword3 kbMailATN300 kbMailATN310
+	Version           : WINDOWS:3.0,3.1
+	
+	=============================================================================
+	

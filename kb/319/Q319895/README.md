@@ -1,0 +1,80 @@
+---
+layout: page
+title: "Q319895: Zoo Tycoon: Computer Stops Responding When You Start Zoo Tycoon"
+permalink: kb/319/Q319895/
+---
+
+## Q319895: Zoo Tycoon: Computer Stops Responding When You Start Zoo Tycoon
+
+	Article: Q319895
+	Product(s): Microsoft Home Games
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbimu
+	Last Modified: 16-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Zoo Tycoon 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you try to start Microsoft Zoo Tycoon for the first time, your computer may
+	stop responding, and the game does not start.
+	
+	CAUSE
+	=====
+	
+	This behavior may occur if the Microsoft DirectX file is damaged.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, download the latest version of DirectX from the Microsoft
+	Web site, and then install it in safe mode.
+	
+	NOTE: Because it is a system component, DirectX runtime cannot be removed without
+	reinstalling your operating system.
+	
+	To download and install the latest version of DirectX, follow these steps:
+	
+	1. Visit the following Microsoft Web site:
+	
+	  http://www.microsoft.com/windows/directx/downloads/default.asp
+	
+	2. On the DirectX Downloads Web page, click the Web link that is appropriate for
+	  your operating system to download the correct version of DirectX.
+	
+	3. In the "Language used" list, click a language, and then click Go.
+	
+	4. Click the "Download now" link.
+	
+	5. When you are prompted with the question "Do you want to open the file or save
+	  it to your computer?" click Save, specify a location, and then click Save.
+	
+	6. When the download is complete, restart your computer in safe mode.
+	
+	  For more information about how to start Microsoft Windows in safe mode, see
+	  the related topic in Windows Help.
+	
+	7. Right-click Start, click Explore, browse to the location of the DirectX file
+	  that you just downloaded, and then double-click the file to begin the
+	  installation.
+	
+	8. Follow the on-screen instructions to complete the installation.
+	
+	9. Restart your computer in normal mode.
+	
+	Additional query words: msgame
+	
+	======================================================================
+	Keywords          : kbimu 
+	Technology        : kbGamesSearch kbZooTycoon
+	Version           : :
+	Issue type        : kbprb
+	
+	=============================================================================
+	

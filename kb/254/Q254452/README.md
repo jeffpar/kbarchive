@@ -1,0 +1,72 @@
+---
+layout: page
+title: "Q254452: Streets and Trips 2001: Help Is Displayed in Unexpected Language"
+permalink: kb/254/Q254452/
+---
+
+## Q254452: Streets and Trips 2001: Help Is Displayed in Unexpected Language
+
+	Article: Q254452
+	Product(s): Microsoft Automap
+	Version(s): 1.0
+	Operating System(s): 
+	Keyword(s): kbdisplay kbtool kbimukbfaq
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft MapPoint 2002 
+	- Microsoft MapPoint 2001 
+	- Microsoft Streets & Trips 2002, version 1.0 
+	- Microsoft Streets and Trips 2001 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you press the F1 key to open the online Help window in Microsoft Streets
+	and Trips 2001 or Microsoft MapPoint 2001, Help topics may not be displayed in
+	the language that you expect.
+	
+	CAUSE
+	=====
+	
+	This behavior can occur if the following conditions are true:
+	
+	- You previously installed a different localized version of the program on your
+	  computer.
+	
+	- The version of the Hhctrl.ocx file that is installed on your computer is the
+	  same version or a newer version than the file that is installed by the
+	  program.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue:
+	
+	1. Insert the Setup CD-ROM into your CD-ROM Drive. Press and hold down the SHIFT
+	  key when you insert the CD-ROM to prevent Setup from starting automatically.
+	
+	2. Click Start, and then click Run.
+	
+	3. In the Open box, type the following line, and then click OK
+	
+	  <drive>:\msmap\redist\htmlhelp\hhupd.exe
+	
+	  where <drive> is the drive letter of the CD-ROM drive.
+	
+	NOTE: After you perform these steps, the HTML Help topics for all of the programs
+	that are installed on your computer are displayed in the same language.
+	
+	Additional query words: st2000 amap auto-map mp2000 international foreign
+	
+	======================================================================
+	Keywords          : kbdisplay kbtool kbimu kbfaq
+	Technology        : kbHomeProdSearch _IKkbbogus kbExpediaSearch kbMapptSearch kbMapPoint2001 kbExpediaStreets2001 kbExpediaStreets2002 kbMapPoint2002
+	Version           : :1.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

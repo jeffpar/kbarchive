@@ -1,0 +1,233 @@
+---
+layout: page
+title: "Q238553: SAMPLE: VFPSCUT.EXE Creates Desktop Shortcut to a VFP App"
+permalink: kb/238/Q238553/
+---
+
+## Q238553: SAMPLE: VFPSCUT.EXE Creates Desktop Shortcut to a VFP App
+
+	Article: Q238553
+	Product(s): Microsoft FoxPro
+	Version(s): 6.0
+	Operating System(s): 
+	Keyword(s): kbfile kbSample kbAppSetup kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600
+	Last Modified: 01-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The Visual FoxPro Setup Wizard contains no inherent way to create a desktop
+	shortcut to a custom Visual FoxPro application. However, it can be done by using
+	the functions in a Visual Basic DLL named Vb6stkit.dll. The Vfpscut.exe sample
+	demonstrates how to do this.
+	
+	MORE INFORMATION
+	================
+	
+	Vfpscut.exe is a file that contains the Vb6stkit.dll file and sample FoxPro
+	files that can be used to create a desktop shortcut. The included program is
+	designed to be built into a Visual FoxPro .exe file and called as the POST SETUP
+	EXECUTABLE when using the Visual FoxPro Setup Wizard.
+	
+	NOTE: This sample code was written for Visual FoxPro 6.0. It uses a function that
+	was introduced in that version called JUSTPATH() as follows:
+	
+	  strLinkPath = JUSTPATH(SYS(16,0)) + "\" + lcExeName + CHR(0)
+	
+	You can modify this sample code to work with Visual FoxPro 3.0 and Visual FoxPro
+	5.0 by replacing the JUSTPATH() call with the following:
+	
+	  strLinkPath = SUBSTR(SYS(16),1,ATC("\",SYS(16),OCCURS("\",SYS(16)))) + CHR(0)
+	
+	The Visual FoxPro Setup Wizard allows for a post-setup executable. Building the
+	following code into an .exe file and calling it as the post-setup executable in
+	a setup routine creates a desktop shortcut.
+	
+	The process involves distributing and making calls to Vb6stkit.dll. This file is
+	part of the Microsoft Visual Basic setup kit and you may redistribute it freely.
+	It is listed under the "REDISTRIBUTABLE CODE - Standard" section of the file
+	REDIST.TXT. This file comes with Microsoft Visual Studio 98. The following file
+	is available for download from the Microsoft Download Center:
+	
+	  VFPSCUT.exe
+	  (http://download.microsoft.com/download/vfox60/shortcut/2/Win98/En-US/VFPSCUT.exe)
+	
+	Release Date: August 15, 2000
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. Once posted, the file is housed on secure
+	servers that prevent any unauthorized changes to the file.
+	
+	The file contains the following:
+	
+	+-------------------------------------+
+	| FileName                   | Size   | 
+	+-------------------------------------+
+	| MAKE_SHORTCUT.PRG          | 2.85KB | 
+	+-------------------------------------+
+	| VB6STKIT.DLL               | 99.5KB | 
+	+-------------------------------------+
+	| README.TXT (this document) |        | 
+	+-------------------------------------+
+	
+	To test this code, download and unzip the sample to an empty directory. Follow
+	the steps outlined below. If the machine you are testing this on already has a
+	copy of Vb6stkit.dll, start at step 2:
+	
+	1. Copy the Vb6stkit.dll to the Windows\System directory (SYSTEM32 on Windows NT
+	  machines).
+	
+	2. Open Visual FoxPro and SET DEFAULT to the directory containing the unzipped
+	  files.
+	
+	3. From the Command window, issue the following command:
+	
+	  DO MAKE_SHORTCUT
+	
+	You are asked if you would like a shortcut to "THE README DOCUMENT" on your
+	desktop. Click Yes on the dialog and minimize all windows so that your desktop
+	is visible. You now have a shortcut to the text document named README.TXT.
+	
+	To use this sample code in a Visual FoxPro setup routine, do the following:
+	
+	1. Create a new Visual FoxPro project (named POST for instance) and add the
+	  MAKE_SHORTCUT.PRG file to it.
+	
+	2. Modify the MAKE_SHORTCUT program and adjust the lcExeName and lcAppName
+	  variables for the application you are about to install. lcExeName is the
+	  actual file name of the executable you would like a shortcut to (like
+	  "Vfp.exe"). lcAppName is the "friendly" name of the application (like "Visual
+	  FoxPro").
+	
+	3. Build the project into an executable named Post.exe.
+	
+	4. Copy Post.exe and Vb6stkit.dll into the directory with your main .exe file.
+	
+	5. Run the setup wizard on your .exe file. In step 4 of the wizard, use the
+	  ellipse (...) button next to the Post-setup executable textbox to locate
+	  Post.exe you created earlier.
+	
+	6. In step 6 of the setup wizard, ensure that Vb6stkit.dll is installed in the
+	  WinSysDir (this should be the default).
+	
+	7. Complete the wizard and test install your application.
+	
+	Here is the sample code contained in MAKE_SHORTCUT.PRG:
+	
+	  *********************************************************
+	  * CREATE DESKTOP SHORTCUT
+	  *********************************************************
+	  *
+	  * Demonstrates using shell api fCreateShellLink
+	  * to create a shortcut to a file on the Windows desktop.
+	  *
+	  *********************************************************
+	  *~ Main program variables. These are the only ones that need to be changed:
+	  *~ lcExeName: This is the actual file name (without any path) of the .exe to create a shortcut to.
+	  *~ lcAppName: This is the name of the application (like "Microsoft Visual FoxPro").
+	
+	  lcExeName = "README.TXT"
+	  lcAppName = "THE README DOCUMENT"
+	
+	  *~ #DEFINEs from FOXPRO.h (HOME() + 'foxpro.h')
+	  #DEFINE MB_YESNO                4       && Yes and No buttons
+	  #DEFINE MB_ICONQUESTION         32      && Warning query
+	
+	  #DEFINE CR						CHR(13) && Carriage Return
+	
+	  #DEFINE ERROR_SUCCESS           0		&& Success error code from WINERROR.H
+	  #DEFINE FORMAT_MESSAGE_FROM_SYSTEM     0x00001000 && Value for use with FormatMessage API. From WINBASE.H
+	
+	  *~ Declare the function in the VB DLL
+	  DECLARE INTEGER fCreateShellLink IN vb6stkit.DLL ;
+	  	STRING lpstrFolderName, ;
+	  	STRING lpstrLinkName, ;
+	  	STRING lpstrLinkPath, ;
+	  	STRING lpstrLinkArguments, ;
+	  	INTEGER fPrivate, ;
+	  	STRING sParent
+	
+	  *~ Declare function to return system error code if the call fails.
+	  DECLARE INTEGER GetLastError IN win32api
+	
+	  *~ Declare function to return text message from system error code.
+	  DECLARE INTEGER FormatMessage IN kernel32.DLL ;
+	  	INTEGER dwFlags, ;
+	  	STRING @lpSource, ;
+	  	INTEGER dwMessageId, ;
+	  	INTEGER dwLanguageId, ;
+	  	STRING @lpBuffer, ;
+	  	INTEGER nSize, ;
+	  	INTEGER Arguments
+	
+	  *~ Set up variables. These variables remain unchanged.
+	  strLinkPath = JUSTPATH(SYS(16,0)) + "\" + lcExeName + CHR(0)
+	  strLinkName = "Shortcut to " + ALLT(lcAppName)
+	  strLinkArguments = "" + CHR(0)
+	  fPrivate  = -1
+	  strGroupName = "..\..\Desktop"
+	  sParent  = "$(Programs)"
+	
+	  *~ Ask users if they would like the shortcut created.
+	  lnAns = MESSAGEBOX("Would you like a shortcut to " + lcAppName + " on your Desktop?", ;
+	  	MB_YESNO+MB_ICONQUESTION,"Setup")
+	
+	  IF lnAns = 6	&& User answered YES.
+	  	lnSuccess = fCreateShellLink(strGroupName, ;
+	  		strLinkName, ;
+	  		strLinkPath, ;
+	  		strLinkArguments, ;
+	  		fPrivate, ;
+	  		sParent)
+	  	IF !(lnSuccess > ERROR_SUCCESS)
+	  *~      If the process failed for some reason, put up a messagebox saying so
+	  *~      and display the system error code from WINERROR.H. You also extend this
+	  *~      by using FormatMessage API to display a character error message.
+	  		lpBuffer  = SPACE(128)
+	  		lnError = GetLastError()
+	  		=FormatMessage(FORMAT_MESSAGE_FROM_SYSTEM, ;
+	  			'WINERROR.H', lnError, 0, @lpBuffer, 128 , 0)
+	  		
+	  		=MESSAGEBOX("Unable to create desktop shortcut." + CR + ;
+	  			"System Error code: " + ALLTRIM(STR(lnError)) + CR + ;
+	  			"System Error message: "+ALLT(lpBuffer),64,"ERROR")
+	  	ENDIF
+	  ENDIF
+	
+	(c) Microsoft Corporation 1999, All Rights Reserved.
+	Contributions by Trevor Hancock, Microsoft Corporation
+	
+	(c) Microsoft Corporation 1999, All Rights Reserved.
+	Contributions by Mike Stewart, Microsoft Corporation
+	
+	
+	REFERENCES
+	==========
+	
+	For additional information, click the article number about working with the
+	Visual FoxPro setup wizard below to view the article about working with the
+	Visual FoxPro setup wizard in the Microsoft Knowledge Base:
+	
+	  Q130664 HOWTO: Use the Setup Wizard in Professional Visual FoxPro
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbfile kbSample kbAppSetup kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+	Version           : :6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

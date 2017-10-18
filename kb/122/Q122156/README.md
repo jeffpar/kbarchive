@@ -1,0 +1,125 @@
+---
+layout: page
+title: "Q122156: How to Save (or Not Save) TrueType Fonts with Your Publication"
+permalink: kb/122/Q122156/
+---
+
+## Q122156: How to Save (or Not Save) TrueType Fonts with Your Publication
+
+	Article: Q122156
+	Product(s): Microsoft PowerPoint for Windows
+	Version(s): WINDOWS:4.0,4.0a,4.0c,7.0
+	Operating System(s): 
+	Keyword(s): kbprint kbFont kbPrinting
+	Last Modified: 07-SEP-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft PowerPoint for Windows, versions 4.0, 4.0a, 4.0c 
+	- Microsoft PowerPoint for Windows 95, version 7.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	You can include TrueType fonts when you save a PowerPoint for Windows
+	presentation. This is useful if you want to display or print the presentation
+	from another computer that does not have the same TrueType fonts installed.
+	
+	Each TrueType font you save with your presentation increases the file size of
+	your presentation, so you may not want to include the TrueType fonts that others
+	usually have. The TTEMBED.INI file allows you to specify whether or not a
+	certain TrueType font should be saved with the presentation. By default, it
+	specifies that the TrueType fonts that ship with the Windows Operating
+	Environment (Arial, Courier New, Times New Roman, Symbol, and Wingdings) should
+	not be saved with your presentation.
+	
+	MORE INFORMATION
+	================
+	
+	To save fonts with your presentation
+	------------------------------------
+	
+	1. In PowerPoint, choose Save from the File menu. (If this presentation has
+	  already been saved, choose Save As instead.)
+	
+	2. Type a filename in the File Name box.
+	
+	3. Select (place an 'x' in) the "Embed True Type Fonts" check box.
+	
+	4. Choose OK.
+	
+	Every TrueType font that the presentation uses will be saved with the file except
+	those listed in the TTEMBED.INI file. A default TTEMBED.INI looks like this:
+	
+	  [EMBEDDING]
+	  Arial=0
+	  Arial Bold=0
+	  Arial Bold Italic=0
+	  Arial Italic=0
+	  Courier New=0
+	  Courier New Bold=0
+	  Courier New Bold Italic=0
+	  Courier New Italic=0
+	  Symbol=0
+	  Times New Roman=0
+	  Times New Roman Bold=0
+	  Times New Roman Bold Italic=0
+	  Times New Roman Italic=0
+	  Wingdings=0
+	
+	To allow PowerPoint to save one or more of these fonts
+	------------------------------------------------------
+	
+	1. Save your work and exit PowerPoint.
+	
+	2. Open TTEMBED.INI in a text editor such as Notepad. TTEMBED.INI is located in
+	  your Windows directory.
+	
+	3. Change the number next to each TrueType font you would like PowerPoint to
+	  save from a 0 to a 1.
+	
+	4. Save TTEMBED.INI.
+	
+	To prevent PowerPoint from saving one or more unlisted fonts
+	------------------------------------------------------------
+	
+	1. Open Control Panel and double-click Fonts.
+	
+	2. Look on the list of installed fonts for the font or fonts you want to add to
+	  TTEMBED.INI. Write down the description exactly as it appears on the list.
+	  For example:
+	
+	  TestFont Bold (TrueType)
+	
+	3. Close Control Panel.
+	
+	4. Open the TTEMBED.INI file in a text editor such as Notepad.
+	
+	5. Add an entry to the end of the file similar to:
+	
+	  "TestFont Bold=0" (without the quotation marks)
+	
+	  NOTE: Do not put the word (TrueType) after the font name. You will need to put
+	  a separate entry for each font weight (for example, TestFont Bold, TestFont
+	  Italic, and so forth).
+	
+	6. Save the file.
+	
+	NOTE: Some fonts are manufactured and copyrighted in such a way that they cannot
+	be saved with a presentation. If you receive a warning saying that a certain
+	font cannot be saved because of a license restriction, there is nothing you can
+	do to TTEMBED.INI that will allow you to save this font with your presentation.
+	
+	Additional query words: 4.00 4.00a 4.00c power point powerpt Font embedding
+	
+	======================================================================
+	Keywords          : kbprint kbFont kbPrinting 
+	Technology        : kbPowerPtSearch kbPowerPt95 kbZNotKeyword2 kbPowerPt95Search kbPowerPt400 kbPowerPt400c kbPowerPt400a
+	Version           : WINDOWS:4.0,4.0a,4.0c,7.0
+	Hardware          : x86
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

@@ -1,0 +1,155 @@
+---
+layout: page
+title: "Q174050: HOWTO: Determine File Type from Registered CLSID"
+permalink: kb/174/Q174050/
+---
+
+## Q174050: HOWTO: Determine File Type from Registered CLSID
+
+	Article: Q174050
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbGrpDSVB
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+	- Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+	- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+	- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	You can use the Windows API to retrieve the CLSID (class ID) associated with a
+	given file and use this value to determine the product and version of its
+	format.
+	
+	MORE INFORMATION
+	================
+	
+	The CLSID for a product or component can be found in the Windows Registry under
+	HKEY_CLASSES_ROOT. For example:
+	
+	  MyComputer\HKEY_CLASSES_ROOT\Excel.Sheet.8\CLSID
+	
+	The following example creates a Visual Basic project that shows how to retrieve
+	and use the CLSID associated with a given file. Constants are only defined for
+	two versions of Microsoft Excel and two versions of Microsoft Word to
+	demonstrate this technique. This example can be modified to work for any file
+	format with a unique CLSID associated with it.
+	
+	NOTE: In order to identify a file on a given system, the appropriate CLSID must
+	be registered on the system running this code. Also, this sample does not
+	include any error trapping, which should be added for any production use of this
+	technique.
+	
+	Step-by-Step Example
+	--------------------
+	
+	1. Start a new Standard EXE project. Form1 is created by default.
+	
+	2. Add a Command button, a TextBox, and two Labels to Form1.
+	
+	3. Copy the following code into the Form's module:
+	
+	        Private Sub Command1_Click()
+	        Dim FileCLSID As String
+	
+	        FileCLSID = GetCLSID(Text1.Text)
+	        Label2.Caption = FileCLSID
+	        Select Case FileCLSID
+	          Case EXCEL97
+	            Label1.Caption = "Excel 97"
+	          Case EXCEL95
+	            Label1.Caption = "Excel 95"
+	          Case WORD97
+	            Label1.Caption = "Word 97"
+	          Case WORD95
+	            Label1.Caption = "Word 95"
+	          Case Else
+	            Label1.Caption = "Unknown File Version"
+	        End Select
+	        End Sub
+	
+	        Private Sub Form_Load()
+	                   Label1.AutoSize = True
+	                   Label2.AutoSize = True
+	              End Sub
+	
+	4. Add a Module to the project. In Visual Basic 4, choose "Module" from the
+	  "Insert" menu. In later versions of Visual Basic, choose "Add Module" from
+	  the "Project" menu.
+	
+	5. Copy the following code into Module1:
+	
+	        Type GUID
+	          B(16) As Byte
+	        End Type
+	
+	        Declare Function GetClassFile Lib "Ole32.DLL" (ByVal lpszFileName _
+	        As String, ByRef pclsid As GUID) As Long
+	
+	        Declare Function StringFromGUID2 Lib "Ole32.DLL" (ByRef rguid _
+	        As GUID, ByVal lpsz As String, ByVal cbMax As Long) As Long
+	
+	        Public Const EXCEL97 As String = _
+	           "{00020820-0000-0000-C000-000000000046}"
+	        Public Const EXCEL95 As String = _
+	           "{00020810-0000-0000-C000-000000000046}"
+	        Public Const WORD97 As String = _
+	           "{00020906-0000-0000-C000-000000000046}"
+	        Public Const WORD95 As String = _
+	           "{00020900-0000-0000-C000-000000000046}"
+	
+	        Function GetCLSID(FileName As String) As String
+	           Dim g As GUID
+	           Dim RetVal As Long
+	           Dim strGUID As String
+	
+	           RetVal = GetClassFile(StrConv(FileName, vbUnicode), g)
+	           strGUID = Space(255)
+	           RetVal = StringFromGUID2(g, strGUID, 255)
+	           strGUID = StrConv(strGUID, vbFromUnicode)
+	           If (InStr(strGUID, Chr(0)) > 0) Then
+	              strGUID = Left(strGUID, InStr(strGUID, Chr(0)) - 1)
+	           End If
+	           GetCLSID = strGUID
+	        End Function
+	
+	6. Run the project and enter a path and filename for a Word 97 or Word 95
+	  document, or an Excel 97 or Excel 95 Worksheet into Text1. Click on Command1
+	  and the type of file will be displayed in Label1 and the actual CLSID will be
+	  displayed in Label2.
+	
+	REFERENCES
+	==========
+	
+	For more information, please Search on the following topics in either the Win32
+	Programmer's Reference or The Microsoft Developer Network (MSDN) Library CD:
+	
+	- GetClassFile
+	
+	- StringFromGUID2
+	
+	- CLSID (class ID)
+	
+	Additional query words: kbVBp kbdsd kbDSupport kbRegistry kbVBp400 kbVBp500 kbVBp600 kbAPI
+	
+	======================================================================
+	Keywords          : kbGrpDSVB 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400 kbZNotKeyword3
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

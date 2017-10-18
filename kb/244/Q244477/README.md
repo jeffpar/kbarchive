@@ -1,0 +1,428 @@
+---
+layout: page
+title: "Q244477: How to Determine Max String Size  in COMTI at Runtime"
+permalink: kb/244/Q244477/
+---
+
+## Q244477: How to Determine Max String Size  in COMTI at Runtime
+
+	Article: Q244477
+	Product(s): Microsoft SNA Server
+	Version(s): WINDOWS:1.0 SP1,4.0,4.0 SP1,4.0 SP2,4.0 SP3
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 31-OCT-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3 
+	- Microsoft COM Transaction Integrator for CICS and IMS, versions 1.0 SP1, 4.0 SP2, 4.0 SP3 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	When communicating with mainframe applications, COM Transaction Integrator for
+	CICS and IMS (COMTI) runtime transforms UNICODE strings that are received as
+	parameters, fields, or columns into mainframe character strings. Likewise, when
+	receiving data from a mainframe transaction program, the COMTI runtime converts
+	mainframe character strings into UNICODE strings that are returned as output
+	values to the calling client application. COMTI runtime determines which type of
+	mainframe character string is being used based on how the parameter, field, or
+	column is defined in Component Builder, and which code page is defined for the
+	remote environment describing the mainframe environment.
+	
+	In most situations, the developer who is providing the user interface to the
+	COMTI component is familiar with the maximum field size associated with a given
+	string value, and can provide the appropriate string validation to accommodate
+	this. For example, with a COBOL data type of PIC X (100), the user interface
+	limits the end user input to 100 characters. However, under rare conditions, the
+	developer may want to determine the length of a particular string value at
+	runtime. There are no built-in (intrinsic) mechanisms in COMTI to allow for this
+	to be easily accomplished. However, if this functionality is essential, one can
+	determine the string size by querying a custom property associated with the
+	COMTI Type Library describing the component.
+	
+	This article provides an Active Template Library (ATL) EXE sample (Readtlb.cpp)
+	that demonstrates how to query the COMTI custom property associated with the
+	maximum string size. It is beyond the scope of this article to discuss the
+	various COM interfaces used however. For details concerning programmatic
+	interfaces and methods supported for Type Library manipulation, please see the
+	Microsoft Platform SDK.
+	
+	MORE INFORMATION
+	================
+	
+	The bulk of work performed in the ReadTLB program is handled by the ReadTLB()
+	function. Essentially, the function receives the name of the type library as
+	input and proceeds to enumerate the various type descriptions associated with
+	the library. A loop is constructed to search for the dispinterface. When this is
+	found, another loop is constructed to parse through the various methods that are
+	supported by the interface. The structure FUNCDESC is constructed for each
+	method and provides relevant information concerning the parameters and return
+	values for the method. Ultimately, the ITypeInfo2::GetParamCustData is called to
+	retrieve the custom properties. When the custom properties have been determined,
+	a comparison is performed to make sure we have the correct one (GUID
+	CEDAR_MAXSTRSIZE_GUID). The LONG value, lMaxSize (by default), is set to 80. If
+	a value has been predetermined using Component Builder (CB), the lMaxSize value
+	is set to the specified value. The following code fragment shows where this
+	occurs:
+	
+	  ...
+	  if (VT_EMPTY != V_VT(&varProp))
+	  	{
+	  	varProp.ChangeType(VT_I4);
+	  	lMaxSize = V_I4(&varProp);  //assign lMaxSize the custom property value
+	  ...
+	  ...
+	
+	Further details have been provided as remark statements within the code for
+	handling string values associated with Recordsets.
+	
+	  // ReadTLB.cpp : Implementation of WinMain
+	
+	  #include "stdafx.h"
+	  #include "resource.h"
+	  #include <initguid.h>
+	  #include "ReadTLB.h"
+	  #include "comdef.h"
+	  #include "ReadTLB_i.c"
+	
+	  const DWORD dwTimeOut = 5000; // time for EXE to be idle before shutting down
+	  const DWORD dwPause = 1000; // time to wait for threads to finish up
+	
+	  // Passed to CreateThread to monitor the shutdown event
+	  static DWORD WINAPI MonitorProc(void* pv)
+	  {
+	      CExeModule* p = (CExeModule*)pv;
+	      p->MonitorShutdown();
+	      return 0;
+	  }
+	
+	  LONG CExeModule::Unlock()
+	  {
+	      LONG l = CComModule::Unlock();
+	      if (l == 0)
+	      {
+	          bActivity = true;
+	          SetEvent(hEventShutdown); // tell monitor that we transitioned to zero
+	      }
+	      return l;
+	  }
+	
+	  //Monitors the shutdown event
+	  void CExeModule::MonitorShutdown()
+	  {
+	      while (1)
+	      {
+	          WaitForSingleObject(hEventShutdown, INFINITE);
+	          DWORD dwWait=0;
+	          do
+	          {
+	              bActivity = false;
+	              dwWait = WaitForSingleObject(hEventShutdown, dwTimeOut);
+	          } while (dwWait == WAIT_OBJECT_0);
+	          // timed out
+	          if (!bActivity && m_nLockCnt == 0) // if no activity let's really bail
+	          {
+	  #if _WIN32_WINNT >= 0x0400 & defined(_ATL_FREE_THREADED)
+	              CoSuspendClassObjects();
+	              if (!bActivity && m_nLockCnt == 0)
+	  #endif
+	                  break;
+	          }
+	      }
+	      CloseHandle(hEventShutdown);
+	      PostThreadMessage(dwThreadID, WM_QUIT, 0, 0);
+	  }
+	
+	  bool CExeModule::StartMonitor()
+	  {
+	      hEventShutdown = CreateEvent(NULL, false, false, NULL);
+	      if (hEventShutdown == NULL)
+	          return false;
+	      DWORD dwThreadID;
+	      HANDLE h = CreateThread(NULL, 0, MonitorProc, this, 0, &dwThreadID);
+	      return (h != NULL);
+	  }
+	
+	  CExeModule _Module;
+	
+	  BEGIN_OBJECT_MAP(ObjectMap)
+	  END_OBJECT_MAP()
+	
+	  LPCTSTR FindOneOf(LPCTSTR p1, LPCTSTR p2)
+	  {
+	      while (p1 != NULL && *p1 != NULL)
+	      {
+	          LPCTSTR p = p2;
+	          while (p != NULL && *p != NULL)
+	          {
+	              if (*p1 == *p)
+	                  return CharNext(p1);
+	              p = CharNext(p);
+	          }
+	          p1 = CharNext(p1);
+	      }
+	      return NULL;
+	  }
+	
+	  void TypeDescToDWord(TYPEDESC *ptdescSrc, VARTYPE *pvt, BOOL fIsRval)
+	  {
+	  	*pvt = 0;
+	  	switch (ptdescSrc->vt)
+	  	{
+	  		case VT_I2:
+	  		case VT_I4:
+	  		case VT_R4:
+	  		case VT_R8:
+	  		case VT_CY:
+	  		case VT_BOOL:
+	  		case VT_BSTR:
+	  		case VT_DATE:
+	  		case VT_UI1:
+	  		case VT_DISPATCH:
+	  		case VT_USERDEFINED:
+	  		case VT_VARIANT:
+	  		case VT_VOID:
+	  		// Elemental types signal end of type description
+	  		(*pvt)|=ptdescSrc->vt;
+	  		break;
+	
+	  		case VT_PTR:
+	  		// Pointers are byref (skip byref on return value) then recurse
+	  		if (!fIsRval)
+	  			(*pvt)|=VT_BYREF;
+	  		TypeDescToDWord(ptdescSrc->lptdesc, pvt, FALSE);
+	  		break;
+	
+	  		case VT_SAFEARRAY:
+	  		// Arrays (safearray) get array attribute then recurse
+	  		(*pvt)|=VT_ARRAY;
+	  		TypeDescToDWord(ptdescSrc->lptdesc, pvt, FALSE);
+	  		break;
+	
+	  		default:
+	  		_ASSERT(0);
+	  		break;
+	  	}
+	  }	
+	
+	  void ReadTLB(LPCTSTR lpszTLBFile)
+	  {
+	  	USES_CONVERSION;
+	  	HRESULT hr;
+	  	CComPtr<ITypeLib> pITypeLib;
+	  	const GUID CEDAR_MAXSTRSIZE_GUID =
+	  	   { 0x07257f20,0xfb76,0x11cf,{0xb9,0x49,0x00,0xa0,0xc9,0x03,0x48,0x17} };
+	
+	  	try
+	  	{
+	  		// Load the typelib
+	
+	  		hr = LoadTypeLib(T2W(lpszTLBFile), &pITypeLib);
+	  		if (FAILED(hr))
+	  			_com_issue_error(hr);
+	
+	  		// Look thru all type info's to find the dispinterface.  If looking
+	  		// for recordset columns then look for TKIND_RECORD.
+	
+	  		UINT cTypeInfos = pITypeLib->GetTypeInfoCount();
+	  		for (UINT ui=0;ui<cTypeInfos;ui++)
+	  		{
+	  			CComPtr<ITypeInfo> pITypeInfo;
+	  			hr = pITypeLib->GetTypeInfo(ui, &pITypeInfo);
+	  			if (FAILED(hr))
+	  				_com_issue_error(hr);
+	
+	  			TYPEATTR *pTA;
+	  			hr = pITypeInfo->GetTypeAttr(&pTA);
+	  			if (FAILED(hr))
+	  				_com_issue_error(hr);
+	
+	  			// Find the dispinterface information in the typelib (look for
+	  			// TKIND_RECORD to find structs that describe Recordsets)
+	
+	  			if (TKIND_DISPATCH != pTA->typekind)
+	  			{
+	  				pITypeInfo->ReleaseTypeAttr(pTA);
+	  				continue;
+	  			}
+	  			// QI for the ITypeInfo2 interface to get custom properties
+	
+	  			CComPtr<ITypeInfo2> pITypeInfo2;
+	  			pITypeInfo->QueryInterface(IID_ITypeInfo2
+	  				, reinterpret_cast<void **>(&pITypeInfo2));
+	  			_ASSERT(pITypeInfo2);
+	
+	  			_variant_t varProp;
+	  			long lMaxSize;
+	  			VARTYPE vt;
+	
+	  			USHORT cFuncs = pTA->cFuncs;
+	  			for (USHORT usFunc=0;usFunc<cFuncs;usFunc++)
+	  			{
+	  				// Get the method's FUNCDESC struct (if looking
+	  				// at TKIND_RECORD use GetVarDesc and loop thru
+	  				// cVars members calling GetVarDesc)
+	
+	  				FUNCDESC *pFD;
+	  				hr = pITypeInfo->GetFuncDesc(usFunc, &pFD);
+	  				if (FAILED(hr))
+	  					_com_issue_error(hr);
+	
+	  				// GetDocumentation will return the function name
+	
+	  				CComBSTR bstrFuncName;
+	  				hr = pITypeInfo->GetDocumentation(pFD->memid, &bstrFuncName
+	  					, 0, 0, 0);
+	  				if (FAILED(hr))
+	  					_com_issue_error(hr);
+	
+	  				// You could skip IUnknown and IDispatch methods here
+	  				// as well as the COMTI-supplied properties.
+	
+	  				// See if the return value is a string (if looking
+	  				// at TKIND_RECORD look at elemdescVar.tdesc.vt in
+	  				// the VARDESC struct)
+	
+	  				TypeDescToDWord(&pFD->elemdescFunc.tdesc, &vt, true);
+	  				if (VT_BSTR == vt)
+	  				{
+	  					// Get the custom property for max string size (if
+	  					// looking at TKIND_RECORD use GetVarCustData)
+	
+	  					hr = pITypeInfo2->GetFuncCustData(
+	  						 usFunc
+	  						, CEDAR_MAXSTRSIZE_GUID
+	  						, &varProp);
+	  					if (FAILED(hr))
+	  						_com_issue_error(hr);
+	
+	  					// if the custom property exists then that's the max
+	  					// string size else the default is 80
+	
+	  					lMaxSize = 80;
+	  					if (VT_EMPTY != V_VT(&varProp))
+	  					{
+	  						varProp.ChangeType(VT_I4);
+	  						lMaxSize = V_I4(&varProp);
+	  					}
+	  				}
+	
+	  				// Check if any parameters are string (if looking at
+	  				// TKIND_RECORD you won't have this code)
+	
+	  				short cParams = pFD->cParams;
+	  				for (short sParm=0;sParm<cParams;sParm++)
+	  				{
+	  					TypeDescToDWord(&pFD->lprgelemdescParam[sParm].tdesc, &vt, false);
+	  					if (VT_BSTR == vt)
+	  					{
+	  						hr = pITypeInfo2->GetParamCustData(
+	  							 usFunc
+	  							, sParm
+	  							, CEDAR_MAXSTRSIZE_GUID
+	  							, &varProp);
+	  						if (FAILED(hr))
+	  							_com_issue_error(hr);
+	
+	  						// if the custom property exists then that's the
+	  						// max string size else the default is 80
+	
+	  						lMaxSize = 80;
+	  						if (VT_EMPTY != V_VT(&varProp))
+	  						{
+	  							varProp.ChangeType(VT_I4);
+	  							lMaxSize = V_I4(&varProp);
+	  						}
+	  					}
+	  				}
+	  				pITypeInfo->ReleaseFuncDesc(pFD);
+	  			}
+	  			pITypeInfo->ReleaseTypeAttr(pTA);
+	  		}
+	  		return;
+	  	}
+	  	catch (_com_error &e)
+	  	{
+	  		// report error
+	  		return;
+	  	}
+	  }
+	
+	  ///////////////////////////////////////////////////////////////////////////// 
+	  // 
+	  extern "C" int WINAPI _tWinMain(HINSTANCE hInstance, 
+	      HINSTANCE /*hPrevInstance*/, LPTSTR lpCmdLine, int /*nShowCmd*/)
+	  {
+	      lpCmdLine = GetCommandLine(); //this line necessary for _ATL_MIN_CRT
+	
+	  #if _WIN32_WINNT >= 0x0400 & defined(_ATL_FREE_THREADED)
+	      HRESULT hRes = CoInitializeEx(NULL, COINIT_MULTITHREADED);
+	  #else
+	      HRESULT hRes = CoInitialize(NULL);
+	  #endif
+	      _ASSERTE(SUCCEEDED(hRes));
+	      _Module.Init(ObjectMap, hInstance, &LIBID_READTLBLib);
+	      _Module.dwThreadID = GetCurrentThreadId();
+	      TCHAR szTokens[] = _T("-/");
+	
+	      int nRet = 0;
+	      BOOL bRun = TRUE;
+	      LPCTSTR lpszToken = FindOneOf(lpCmdLine, szTokens);
+	      while (lpszToken != NULL)
+	      {
+	          if (lstrcmpi(lpszToken, _T("UnregServer"))==0)
+	          {
+	              _Module.UpdateRegistryFromResource(IDR_Readtlb, FALSE);
+	              nRet = _Module.UnregisterServer(TRUE);
+	              bRun = FALSE;
+	              break;
+	          }
+	          if (lstrcmpi(lpszToken, _T("RegServer"))==0)
+	          {
+	              _Module.UpdateRegistryFromResource(IDR_Readtlb, TRUE);
+	              nRet = _Module.RegisterServer(TRUE);
+	              bRun = FALSE;
+	              break;
+	          }
+	
+	  		ReadTLB(lpszToken);
+	
+	          lpszToken = FindOneOf(lpszToken, szTokens);
+	      }
+	
+	      if (bRun)
+	      {
+	          _Module.StartMonitor();
+	  #if _WIN32_WINNT >= 0x0400 & defined(_ATL_FREE_THREADED)
+	          hRes = _Module.RegisterClassObjects(CLSCTX_LOCAL_SERVER, 
+	              REGCLS_MULTIPLEUSE | REGCLS_SUSPENDED);
+	          _ASSERTE(SUCCEEDED(hRes));
+	          hRes = CoResumeClassObjects();
+	  #else
+	          hRes = _Module.RegisterClassObjects(CLSCTX_LOCAL_SERVER, 
+	              REGCLS_MULTIPLEUSE);
+	  #endif
+	          _ASSERTE(SUCCEEDED(hRes));
+	
+	          _Module.RevokeClassObjects();
+	          Sleep(dwPause); //wait for any threads to finish
+	      }
+	
+	      _Module.Term();
+	      CoUninitialize();
+	      return nRet;
+	  }
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbSNAServSearch kbCOMTISearch kbCOMTI100SP1 kbCOMTI400SP2 kbCOMTI400SP3 kbSNAServ400 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3
+	Version           : WINDOWS:1.0 SP1,4.0,4.0 SP1,4.0 SP2,4.0 SP3
+	
+	=============================================================================
+	

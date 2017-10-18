@@ -1,0 +1,206 @@
+---
+layout: page
+title: "Q135892: Windows 95 CD-ROM Exchange.txt File"
+permalink: kb/135/Q135892/
+---
+
+## Q135892: Windows 95 CD-ROM Exchange.txt File
+
+	Article: Q135892
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): 95
+	Operating System(s): 
+	Keyword(s): win95
+	Last Modified: 17-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 95 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article contains a copy of the information in the Exchange.txt file from
+	the Windows 95 CD-ROM. Setup copies this file to the Windows folder.
+	
+	MORE INFORMATION
+	================
+	
+	  -----------------------------------------------------------------
+	    Microsoft Windows 95 README for Inbox and Microsoft Exchange
+	                               August 1995
+	  -----------------------------------------------------------------
+	
+	             (c) Copyright Microsoft Corporation, 1995
+	
+	This document provides complementary or late-breaking information to
+	supplement the Microsoft Windows 95 documentation.
+	
+	------------------------
+	How to Use This Document
+	------------------------
+	
+	To view Exchange.txt on screen in Notepad, maximize the Notepad
+	window.
+	
+	To print Exchange.txt, open it in Notepad or another word processor,
+	and then use the Print command on the File menu.
+	
+	--------
+	CONTENTS
+	--------
+	
+	WHAT IS MICROSOFT EXCHANGE?
+	MINIMUM HARDWARE REQUIREMENTS
+	INSTALLATION
+	USING MICROSOFT EXCHANGE WITH MICROSOFT SCHEDULE+ 1.0
+	USING MICROSOFT EXCHANGE WITH MICROSOFT MAIL
+	USING MICROSOFT EXCHANGE WITH THE COMPUSERVE SERVICE(SM)
+	UPGRADING A PREVIOUS INSTALLATION OF WINDOWS 95
+	TROUBLESHOOTING TIPS
+	
+	WHAT IS MICROSOFT EXCHANGE?
+	===========================
+	
+	Microsoft Exchange enables you to send and receive e-mail, faxes,
+	and documents in messages. Information services that can be used
+	with Windows 95 include Microsoft Mail, Microsoft Fax, and the
+	Microsoft Network. Also, a Microsoft Mail postoffice is included
+	in this version of Windows 95.
+	
+	MINIMUM HARDWARE REQUIREMENTS
+	=============================
+	
+	Microsoft Exchange runs on a minimum of 6 megabytes (MB) of RAM,
+	and 10 MB of hard disk space (for the swapfile). However, it is
+	recommended that you have at least 8 MB of RAM for good
+	performance.
+	
+	INSTALLATION
+	============
+	
+	To install Microsoft Exchange during Windows 95 Setup, choose the
+	information services that you would like to use with Microsoft
+	Exchange.
+	
+	You can also install Microsoft Exchange after you have completed
+	installation of Windows 95 by double-clicking the Inbox icon
+	on your desktop and then choosing the information services that
+	you would like to use with Microsoft Exchange.
+	
+	If you have removed the Inbox from the desktop, you can install
+	Microsoft Exchange by using Add/Remove Programs in Control Panel.
+	You must shut down and restart Windows 95 after doing this.
+	
+	When you install Windows 95 or use Microsoft Exchange for the
+	first time, the Microsoft Exchange Setup Wizard will be run. The
+	Wizard is also run each time you add a new profile using the Mail
+	And Fax icon in Control Panel.
+	
+	USING MICROSOFT EXCHANGE WITH MICROSOFT SCHEDULE+ 1.0
+	=====================================================
+	
+	Microsoft Exchange is designed to work with Microsoft Schedule+
+	7.0. When Microsoft Exchange is installed, it will partially
+	disable Microsoft Schedule+ 1.0. You will still be able to use
+	Microsoft Schedule+ 1.0 in standalone mode, but you will not be
+	able to send or receive meeting requests. You will see an error
+	message when starting Microsoft Schedule+ 1.0 that notifies you
+	that the mail spooler cannot be started. Click Yes to continue,
+	and Microsoft Schedule+ 1.0 will continue.
+	
+	Microsoft Schedule+ is disabled by changing Mailspl.exe to
+	Mailspl.bak and by putting a StartupOffline=1 line into
+	Schdplus.ini.
+	
+	NOTE:  There is no message warning you that these changes are
+	made.
+	
+	USING MICROSOFT EXCHANGE WITH MICROSOFT MAIL
+	============================================
+	
+	Microsoft Exchange is designed to replace the Microsoft Mail
+	program that comes with Windows for Workgroups and Microsoft
+	Mail version 3.x. After installing Microsoft Exchange you will
+	no longer be able to run the older Microsoft Mail program,
+	but you will be able to use Microsoft Exchange to send and
+	receive messages.
+	
+	USING MICROSOFT EXCHANGE WITH THE COMPUSERVE SERVICE(SM)
+	========================================================
+	
+	The setup program for the CompuServe Service(sm) for
+	Microsoft Exchange is available on the Windows 95 CD in
+	the \Drivers\Other\Exchange\Compusrv directory.  The files will
+	also be available on CompuServe in the "cissoft" forum.
+	For more information, see the Cisnotes.rtf file in the
+	\Drivers\Other\Exchange\Compusrv directory of the Windows 95 CD.
+	
+	UPGRADING A PREVIOUS INSTALLATION OF WINDOWS 95
+	===============================================
+	
+	You can install Microsoft Exchange with Windows 95 over an
+	existing Windows 95 setup. When you upgrade, you may lose some
+	of your Microsoft Exchange preferences.
+	
+	There is NO interoperability between the final release and the
+	beta releases. You cannot send or receive messages to or from
+	mismatched Windows 95 releases. Upgrade all Microsoft Exchange
+	users simultaneously to the released version of Microsoft
+	Exchange.
+	
+	TROUBLESHOOTING TIPS
+	====================
+	
+	If you experience problems connecting to your Microsoft Mail
+	postoffice, please ensure you have network access to your postoffice.
+	You can also get diagnostic details about the reason for failures by
+	clicking the Tools menu, clicking Microsoft Mail Tools, and then
+	clicking View Session Log.
+	
+	If you experience a problem composing or reading a message that
+	produces an error saying "Can't launch form," then the forms file
+	may be corrupt. To correct this problem, quit Microsoft Exchange,
+	and then go to your {Windows}\Forms directory and delete Frmcache.dat.
+	>From {Windows}\Forms, copy the file Frmcache.bak to Frmcache.dat,
+	and restart Microsoft Exchange.
+	
+	Some Microsoft Mail 3.x extensions are not compatible with
+	Microsoft Exchange--for example, WinRules and Conference+.
+	Microsoft Exchange automatically disables some of these
+	extensions to prevent system problems. If a Microsoft Mail 3.x
+	extension is causing a problem, it can be disabled by placing a
+	';' in front of the corresponding line in Msmail.ini.  Contact
+	the product vendors for further information.
+	
+	If you experience a problem where messages are stuck in the Outbox,
+	it is possible that the wrong information service is trying to process
+	the message. To correct the problem, click the Tools menu, click
+	Options, click Delivery, and then ensure the information services are
+	listed in the order you want them.
+	
+	After quitting Microsoft Exchange, you may notice that mapisp32 is
+	still running. Mapisp32 continues to run for 20 seconds after you
+	quit Microsoft Exchange.
+	
+	E-forms created with the Microsoft Electronic Forms Designer do not
+	open correctly when saved in the .msg file format. Transfer the .msg
+	file from the file system to the Inbox to open the e-form correctly.
+	
+	If clicking Send on the File command in Lotus Approach does not
+	work, please ensure that you have a file called Msmail.ini in your
+	{Windows}\ directory.  If the file does not exist, just create an
+	empty file with that name.
+	
+	Two clients using Microsoft Mail should not be run against the same
+	Microsoft Mail mailbox. This configuration is not supported.
+	
+	======================================================================
+	Keywords          : win95 
+	Technology        : kbWin95search kbZNotKeyword3
+	Version           : 95
+	
+	=============================================================================
+	

@@ -1,0 +1,76 @@
+---
+layout: page
+title: "Q156719: XCLN: Mac Client Doesn't Handle MacBinary Type I Attachments"
+permalink: kb/156/Q156719/
+---
+
+## Q156719: XCLN: Mac Client Doesn't Handle MacBinary Type I Attachments
+
+	Article: Q156719
+	Product(s): Microsoft Exchange
+	Version(s): WINDOWS:4.0
+	Operating System(s): 
+	Keyword(s): kbusage
+	Last Modified: 13-JAN-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Macintosh client, version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you are running a Microsoft Exchange Macintosh client and receive a message
+	with attachments that are in MacBinary I format, the following error will be
+	displayed when you open the message:
+	
+	  /!\ Can't get the time stamp of MacintoshHD:System Folder:
+	  Exchange Temporary Items:Attachment Name.
+	  Microsoft Exchange will assume it is dirty. <OK>
+	
+	It will be followed by:
+	
+	  /!\The application associated with this attachment could not be started.
+	  Attachment Name (System Error = -43) <OK>
+	
+	and then when you close the message:
+	
+	  [Attachment Name] - has actual attachment name
+	  /!\The temporary file has disappeared. Changes could not be saved.
+	  <OK>
+	
+	CAUSE
+	=====
+	
+	Currently, the Microsoft Exchange Macintosh client does not support attachments
+	in MacBinary I format
+	
+	WORKAROUND
+	==========
+	
+	Originators should send you messages using any encoding other than MacBinary I.
+	
+	Note: The Macintosh Client does support the MacBinary II format.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft Exchange clients,
+	version 4.0, listed at the beginning of this article. This problem was corrected
+	in Microsoft Exchange Server 4.0 U.S. Service Pack 4. For information on
+	obtaining the service pack, query on the following word in the Microsoft
+	Knowledge Base:
+	
+	  " SERVPACK" (without the quotation marks)
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbusage 
+	Technology        : kbHWMAC kbOSMAC kbExchangeSearch kbExchangeClientSearch kbExchange400Mac
+	Version           : WINDOWS:4.0
+	
+	=============================================================================
+	

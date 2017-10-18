@@ -1,0 +1,114 @@
+---
+layout: page
+title: "Q186196: PRB: Jet ODBC Driver Error 40002: Operation Invalid at This Time"
+permalink: kb/186/Q186196/
+---
+
+## Q186196: PRB: Jet ODBC Driver Error 40002: Operation Invalid at This Time
+
+	Article: Q186196
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbGrpDSVBDB
+	Last Modified: 09-JAN-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Using RDO and transactions against the Microsoft Access ODBC driver results in
+	the following error message:
+	
+	  Run-time error '40002':
+	
+	  S1011:[Microsoft][ODBC Microsoft Access 97 Driver]Operation invalid at this
+	  time
+	
+	CAUSE
+	=====
+	
+	The ODBC driver does not support transactions on a connection that has open
+	Resultsets. The Resultset must be opened and closed within the scope of the
+	transaction.
+	
+	RESOLUTION
+	==========
+	
+	There are three resolutions:
+	
+	1. Choose a different back-end database whose ODBC driver does not have this
+	  limitation.
+	
+	2. Use DAO instead of RDO.
+	
+	3. Rewrite the code to avoid this limitation.
+	
+	STATUS
+	======
+	
+	This behavior is by design.
+	
+	MORE INFORMATION
+	================
+	
+	The Microsoft Access ODBC driver does not preserve cursors across transaction
+	boundaries. This means that open Resultsets must be closed before entering or
+	exiting the scope of a transaction. This is a limitation in the design of the
+	ODBC driver.
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Use the ODBC Administrator in the Control Panel to add a DSN called NWIND for
+	  the Microsoft Access ODBC driver pointing to the Northwind sample database.
+	
+	2. Create a standard EXE project in Visual Basic. Form1 is created by default.
+	
+	3. Add a Project Reference to Microsoft Remote Data Object 2.0.
+	
+	4. Add a CommandButton (Command1) to the default form.
+	
+	5. Add the following code to the form:
+	
+	        Option Explicit
+	
+	        Private Sub Command1()
+	        Dim cn As rdoConnection, rs As rdoResultset, SQL As String
+	          Set cn = RDOEngine(0).OpenConnection("NWIND", rdDriverNoPrompt, _
+	                                               False)
+	          SQL = "SELECT * FROM Customers"
+	          Set rs = cn.OpenResultset(SQL, rdOpenKeyset, rdConcurRowVer)
+	          cn.BeginTrans
+	          rs.Edit
+	          rs!ContactTitle = "Vice President"
+	          rs.Update
+	          cn.CommitTrans
+	          rs.Close
+	          cn.Close
+	        End Sub
+	
+	6. Run the project and click the CommandButton. The error above will be
+	  displayed.
+	
+	7. Move the "cn.BeginTrans" line before the "Set rs =" line, and move the
+	  "cn.CommitTrans" line after the "rs.Close" line. Re-run the code and it will
+	  complete without the error.
+	
+	(c) Microsoft Corporation 1998. All Rights Reserved. Contributions by Malcolm
+	Stewart, Microsoft Corporation
+	
+	Additional query words: kbRDO kbODBC kbDAO kbdse kbDSupport kbVBp kbVBp500 kbVBp600 kbDSupport kbdse
+	
+	======================================================================
+	Keywords          : kbGrpDSVBDB 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600
+	Issue type        : kbprb
+	
+	=============================================================================
+	

@@ -1,0 +1,169 @@
+---
+layout: page
+title: "Q162250: Service Packs on Compaq MPS Systems May Cause System Hangs"
+permalink: kb/162/Q162250/
+---
+
+## Q162250: Service Packs on Compaq MPS Systems May Cause System Hangs
+
+	Article: Q162250
+	Product(s): Microsoft Windows NT
+	Version(s): WinNT:4.0
+	Operating System(s): 
+	Keyword(s): kb3rdparty kbhw kbHardware
+	Last Modified: 10-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 4.0 
+	- Microsoft Windows NT Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	After you install a Windows NT 4.0 Service Pack on a Dual Processor Compaq
+	System with a Compaq SSD installed, the computer may stop responding at the
+	Windows NT logon screen, without displaying any error messages.
+	
+	CAUSE
+	=====
+	
+	The Compaq SSD was used to upgrade the system to a multiprocessor system. The
+	SSD correctly installs the files required for multiprocessing support, but
+	incorrectly modifies the line in the Setup.log file that refers to the Hal.dll
+	file. The Hal.dll line references the single processor version of the Hal.dll
+	file, while the NTOSKRNL line references the multiprocessor version of the
+	kernel. As a result, the Windows NT service pack installs the multiprocessor
+	kernel file, and the single processor version of the Hal.dll file. When the
+	system restarts after the service pack installation, the Windows NT kernel load
+	screen reports 1 system processor; Multiprocessor Kernel. Windows NT continues
+	loading, but will stop responding at the logon screen without any errors.
+	
+	RESOLUTION
+	==========
+	
+	Prior to installing the service pack:
+	
+	Manually edit the Setup.log file located in %SystemRoot%\Repair to reflect the
+	following changes:
+	
+	On a Compaq Proliant 4500 or other System Pro Compatible System:
+	
+	  Original Line
+	  \winnt\system32\hal.dll = "\HAL.DLL","f337"
+	
+	Modify this line to the following:
+	
+	  \winnt\system32\hal.dll = "halsp.dll"."f337"
+	
+	On a Compaq Proliant 1500, 5000 or other MPS Compatible System:
+	
+	  Original Line
+	  \winnt\system32\hal.dll = "\HAL.DLL","1a01c"
+	
+	Modify this line to the following:
+	
+	  \winnt\system32\hal.dll = "halmps.dll"."1a01c"
+	
+	After installing the service pack, perform the following steps:
+	
+	If Windows NT is installed on a FAT Partition
+	---------------------------------------------
+	
+	1. Start the computer with a DOS disk.
+	
+	2. On a Proliant 4500 or other System Pro Compatible computer, manually copy the
+	  Halsp.dll file from Service Pack 2 to %SystemRoot%\System32\Hal.dll.
+	
+	  On a Proliant 1500, 5000, or other MPS Compatible computer, manually copy the
+	  Halmps.dll file from Service Pack 2 to %SystemRoot%\System32\Hal.dll.
+	
+	3. The computer should start normally now.
+	
+	4. To prevent the problem from happening in the future, follow the earlier steps
+	  to modify the Setup.log in the repair directory. You must also change the
+	  file checksum from f337 to 1b36e, or from 1a01c to 125d8.
+	
+	If Windows NT is installed on an NTFS partition
+	-----------------------------------------------
+	
+	1. Perform a second installation of Windows NT in a different directory.
+	
+	2. After the installation is complete, start the second installation and:
+	
+	  On a Proliant 4500 or other System Pro compatible computer, manually copy the
+	  Halsp.dll file from Service Pack 2 to the original
+	  %SystemRoot%\System32\Hal.dll directory.
+	
+	  On a Proliant 1500, 5000, or other MPS compatible computer, manually copy the
+	  Halmps.dll file from Service Pack 2 to the original
+	  %SystemRoot%\System32\Hal.dll directory.
+	
+	3. Restart the original installation of Windows NT.
+	
+	4. Delete the second installation of Windows NT.
+	
+	5. To prevent the problem from happening in the future, follow the earlier steps
+	  to edit the Setup.log file in the repair directory. You must also change the
+	  file checksum from f337 to 1b36e, or from 1a01c to 125d8.
+	
+	As an alternative to a second installation, you can modify the contents of the
+	emergency repair disk (ERD) by performing the following steps:
+	
+	1. Remove the attributes from the Setup.log file by typing the following at the
+	  command-line prompt:
+	
+	  attrib -r -h -s a:\SETUP.LOG
+	
+	2. In the Setup.log file, add the following line to the files.WinNt section:
+	
+	  On a Proliant 4500 or other System Pro compatible computer:
+	
+	     \Winnt\System32\hal.dll = "halsp.dll","f337","\",
+	     (continued line)  "nt351 repair disk","halsp.dll"
+	
+	  On a Proliant 1500, 5000, or other MPS compatible computer:
+	
+	     \Winnt\System32\hal.dll = "halmps.dll","1a01c","\",
+	     (continued line)  "nt351 repair disk","halmps.dll"
+	
+	  NOTE: \Winnt represents the directory where Windows NT is installed.
+	
+	3. Copy the Halmps.dll or Halsp.dll file from the Windows NT 4.0 service pack
+	  source media to the root directory of the ERD.
+	
+	4. Restart your computer with the three Windows NT 3.51 Setup disks.
+	
+	5. Select R to Repair your Windows NT.
+	
+	6. Select only "Verify Windows NT System Files" and continue.
+	
+	7. If prompted to insert Windows NT setup disk #4, press ESC to continue with
+	  the Repair process.
+	
+	8. After you replace the Hal.dll file with the file from the Windows NT 4.0
+	  service pack, press F3 to exit Repair. Restart the computer, and then restart
+	  Windows NT.
+	
+	9. To prevent the problem from happening in the future, follow the earlier steps
+	  to edit the Setup.log file in the repair directory. Also, you must change the
+	  file checksum from "f337" to "1b36e" for Halsp.dll, or from "1a01c" to
+	  "125d8" for Halmps.dll.
+	
+	MORE INFORMATION
+	================
+	
+	The third-party products discussed here are manufactured by Compaq, a vendor
+	independent of Microsoft; we make no warranty, implied or otherwise, regarding
+	these products' performance or reliability.
+	
+	Additional query words: compaq hang complete frozen freeze
+	======================================================================
+	Keywords          : kb3rdparty kbhw kbHardware 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+	Version           : WinNT:4.0
+	
+	=============================================================================
+	

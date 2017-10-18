@@ -1,0 +1,697 @@
+---
+layout: page
+title: "Q100633: PACKING.LST for Professional Edition of VB 3.0 for Windows"
+permalink: kb/100/Q100633/
+---
+
+## Q100633: PACKING.LST for Professional Edition of VB 3.0 for Windows
+
+	Article: Q100633
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 11-DEC-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The following article contains the complete contents of the PACKING.LST file
+	distributed with Microsoft Professional Edition of Visual Basic version 3.0 for
+	Windows.
+	
+	MORE INFORMATION
+	================
+	
+	PACKING.LST
+	-----------
+	
+	Disk Contents for Microsoft (R) Visual Basic for Windows,
+	Professional Edition Version 3.0
+	(C) Copyright Microsoft Corporation, 1993
+	
+	This file lists all the files on the distribution disks provided with this
+	product.
+	NOTE: Most of the files on the distribution disks are compressed (indicated by an
+	underscore character "_" in the file extension) and must be decompressed before
+	they are used.
+	
+	The Setup program on Disk 1 decompresses files as it installs them.
+	
+	Files with a PA_ extension decompress to multiple .ICO files. These files cannot
+	be decompressed manually.
+	
+	If you need to decompress files manually, you can do so by running setup from the
+	file manager or program manager in the following way:
+	
+	1. Choose the Run item from the File menu.
+	
+	2. Type SETUP.EXE /Z [source file] [destination file]
+	
+	The /Z switch activates an internal decompression system. SETUP.EXE must be run
+	from within Windows.
+	
+	***** DISK1 ****
+	
+	assorted.pa_  clip art            vb\bitmaps\assorted\assorted.pak
+	circlock.bm_  clip art            vb\bitmaps\gauge\circlock.bmp
+	dome.bm_      clip art            vb\bitmaps\gauge\dome.bmp
+	horz.bm_      clip art            vb\bitmaps\gauge\horz.bmp
+	horz1.bm_     clip art            vb\bitmaps\gauge\horz1.bmp
+	semicirc.bm_  clip art            vb\bitmaps\gauge\semicirc.bmp
+	therbot.bm_   clip art            vb\bitmaps\gauge\therbot.bmp
+	therlft.bm_   clip art            vb\bitmaps\gauge\therlft.bmp
+	thermid.bm_   clip art            vb\bitmaps\gauge\thermid.bmp
+	thermidh.bm_  clip art            vb\bitmaps\gauge\thermidh.bmp
+	therrt.bm_    clip art            vb\bitmaps\gauge\therrt.bmp
+	thertop.bm_   clip art            vb\bitmaps\gauge\thertop.bmp
+	vert.bm_      clip art            vb\bitmaps\gauge\vert.bmp
+	volbot.bm_    clip art            vb\bitmaps\gauge\volbot.bmp
+	voltop.bm_    clip art            vb\bitmaps\gauge\voltop.bmp
+	outbmps.pa_   clip art            vb\bitmaps\outbmps\outbmps.pak
+	toolbar.pa_   clip art            vb\bitmaps\toolbar3\toolbar.pak
+	circ1.c_      control dev kit     vb\cdk\circ1\circ1.c
+	circ1.de_     control dev kit     vb\cdk\circ1\circ1.def
+	circ1.h_      control dev kit     vb\cdk\circ1\circ1.h
+	circ1.rc_     control dev kit     vb\cdk\circ1\circ1.rc
+	circ1.vb_     control dev kit     vb\cdk\circ1\circ1.vbx
+	circ1cd.bm_   control dev kit     vb\cdk\circ1\circ1cd.bmp
+	circ1cu.bm_   control dev kit     vb\cdk\circ1\circ1cu.bmp
+	circ1eu.bm_   control dev kit     vb\cdk\circ1\circ1eu.bmp
+	circ1mu.bm_   control dev kit     vb\cdk\circ1\circ1mu.bmp
+	makefil1._    control dev kit     vb\cdk\circ1\makefile
+	circ2.c_      control dev kit     vb\cdk\circ2\circ2.c
+	circ2.de_     control dev kit     vb\cdk\circ2\circ2.def
+	circ2.h_      control dev kit     vb\cdk\circ2\circ2.h
+	circ2.rc_     control dev kit     vb\cdk\circ2\circ2.rc
+	circ2.vb_     control dev kit     vb\cdk\circ2\circ2.vbx
+	circ2cd.bm_   control dev kit     vb\cdk\circ2\circ2cd.bmp
+	circ2cu.bm_   control dev kit     vb\cdk\circ2\circ2cu.bmp
+	circ2eu.bm_   control dev kit     vb\cdk\circ2\circ2eu.bmp
+	circ2mu.bm_   control dev kit     vb\cdk\circ2\circ2mu.bmp
+	makefil2._    control dev kit     vb\cdk\circ2\makefile
+	cntr.c_       control dev kit     vb\cdk\cntr\cntr.c
+	cntr.de_      control dev kit     vb\cdk\cntr\cntr.def
+	cntr.h_       control dev kit     vb\cdk\cntr\cntr.h
+	cntr.rc_      control dev kit     vb\cdk\cntr\cntr.rc
+	cntr.vb_      control dev kit     vb\cdk\cntr\cntr.vbx
+	cntrcd.bm_    control dev kit     vb\cdk\cntr\cntrcd.bmp
+	cntrcu.bm_    control dev kit     vb\cdk\cntr\cntrcu.bmp
+	cntreu.bm_    control dev kit     vb\cdk\cntr\cntreu.bmp
+	cntrmu.bm_    control dev kit     vb\cdk\cntr\cntrmu.bmp
+	makefil4._    control dev kit     vb\cdk\cntr\makefile
+	makefil5._    control dev kit     vb\cdk\pal\makefile
+	pal.c_        control dev kit     vb\cdk\pal\pal.c
+	pal.de_       control dev kit     vb\cdk\pal\pal.def
+	pal.h_        control dev kit     vb\cdk\pal\pal.h
+	pal.rc_       control dev kit     vb\cdk\pal\pal.rc
+	pal.vb_       control dev kit     vb\cdk\pal\pal.vbx
+	palcd.bm_     control dev kit     vb\cdk\pal\palcd.bmp
+	palcu.bm_     control dev kit     vb\cdk\pal\palcu.bmp
+	paleu.bm_     control dev kit     vb\cdk\pal\paleu.bmp
+	palmu.bm_     control dev kit     vb\cdk\pal\palmu.bmp
+	makefil7._    control dev kit     vb\cdk\push\makefile
+	push.c_       control dev kit     vb\cdk\push\push.c
+	push.de_      control dev kit     vb\cdk\push\push.def
+	push.h_       control dev kit     vb\cdk\push\push.h
+	push.rc_      control dev kit     vb\cdk\push\push.rc
+	push.vb_      control dev kit     vb\cdk\push\push.vbx
+	pushcd.bm_    control dev kit     vb\cdk\push\pushcd.bmp
+	pushcu.bm_    control dev kit     vb\cdk\push\pushcu.bmp
+	pusheu.bm_    control dev kit     vb\cdk\push\pusheu.bmp
+	pushmu.bm_    control dev kit     vb\cdk\push\pushmu.bmp
+	pushvb1.h_    control dev kit     vb\cdk\push\pushvb1.h
+	vbapi.hl_     control dev kit     vb\cdk\vbapi.hlp
+	hc31.ex_      help compiler       vb\hc\hc31.exe
+	arrows.pa_    icons               vb\icons\arrows\arrows.pak
+	comm.pa_      icons               vb\icons\comm\comm.pak
+	computer.pa_  icons               vb\icons\computer\computer.pak
+	dragdrop.pa_  icons               vb\icons\dragdrop\dragdrop.pak
+	elements.pa_  icons               vb\icons\elements\elements.pak
+	flags.pa_     icons               vb\icons\flags\flags.pak
+	industry.pa_  icons               vb\icons\industry\industry.pak
+	mail.pa_      icons               vb\icons\mail\mail.pak
+	misc.pa_      icons               vb\icons\misc\misc.pak
+	office.pa_    icons               vb\icons\office\office.pak
+	traffic.pa_   icons               vb\icons\traffic\traffic.pak
+	writing.pa_   icons               vb\icons\writing\writing.pak
+	mcimmp.dr_    never               mcimmp.dr_
+	mmp.dl_       never               mmp.dl_
+	oemsetup.in_  never               oemsetup.inf
+	vboa300.dl_   ole                 windows\system\vboa300.dll
+	dispcalc.ex_  ole                 vb\dispcalc.exe
+	dispcalc.re_  ole                 vb\dispcalc.reg
+	proreadm.tx_  always              vb\readme.txt
+	_mssetup.ex_  always              msvb2set.tmp\_mssetup.exe
+	mscomstf.dl_  data access         vb\odbc\mscomstf.dll
+	mscustom.dl_  always              msvb2set.tmp\mscustom.dll
+	msdetstf.dl_  data access         vb\odbc\msdetstf.dll
+	msinsstf.dl_  data access         vb\odbc\msinsstf.dll
+	msshlstf.dl_  data access         vb\odbc\msshlstf.dll
+	msuilstf.dl_  data access         vb\odbc\msuilstf.dll
+	packing.ls_   visual basic        vb\packing.lst
+	setup.ex_     always              msvb2set.tmp\setup.exe
+	setup.ls_     always              msvb2set.tmp\setup.lst
+	vbsetup.ex_   always              msvb2set.tmp\vbsetup.exe
+	vbsetup.in_   always              msvb2set.tmp\vbsetup.ini
+	calc.fr_      samples             vb\samples\calc\calc.frm
+	calc.ic_      samples             vb\samples\calc\calc.ico
+	calc.ma_      samples             vb\samples\calc\calc.mak
+	calc1.fr_     samples             vb\samples\calc\calc.frx
+	calldll1.fr_  samples             vb\samples\calldlls\calldlls.frx
+	calldlls.fr_  samples             vb\samples\calldlls\calldlls.frm
+	calldlls.ma_  samples             vb\samples\calldlls\calldlls.mak
+	declares.ba_  samples             vb\samples\calldlls\declares.bas
+	frmmenus.fr_  samples             vb\samples\calldlls\frmmenus.frm
+	array.fr_     samples             vb\samples\controls\array.frm
+	button.fr_    samples             vb\samples\controls\button.frm
+	button1.fr_   samples             vb\samples\controls\button.frx
+	check.fr_     samples             vb\samples\controls\check.frm
+	controls.ma_  samples             vb\samples\controls\controls.mak
+	listbox.fr_   samples             vb\samples\controls\listbox.frm
+	main2.fr_     samples             vb\samples\controls\main.frm
+	multi.fr_     samples             vb\samples\controls\multi.frm
+	number.fr_    samples             vb\samples\controls\number.frm
+	scroll.fr_    samples             vb\samples\controls\scroll.frm
+	wordwrap.fr_  samples             vb\samples\controls\wordwrap.frm
+	biblio.fr_    samples             vb\samples\datactrl\biblio.frm
+	biblio1.fr_   samples             vb\samples\datactrl\biblio.frx
+	biblio.ma_    samples             vb\samples\datactrl\biblio.mak
+	datactl.ba_   samples             vb\samples\datactrl\datactl.bas
+	dde.ba_       samples             vb\samples\dde\dde.bas
+	dde.ma_       samples             vb\samples\dde\dde.mak
+	execute.fr_   samples             vb\samples\dde\execute.frm
+	main.fr_      samples             vb\samples\dde\main.frm
+	alarm.fr_     samples             vb\samples\envir\alarm.frm
+	alarm.ma_     samples             vb\samples\envir\alarm.mak
+	alarm1.fr_    samples             vb\samples\envir\alarm.frx
+	seek.fr_      samples             vb\samples\filectls\seek.frm
+	winseek.ma_   samples             vb\samples\filectls\winseek.mak
+	fileproc.ba_  samples             vb\samples\fileio\fileproc.bas
+	recedit.ba_   samples             vb\samples\fileio\recedit.bas
+	recedit.fr_   samples             vb\samples\fileio\recedit.frm
+	recedit.ma_   samples             vb\samples\fileio\recedit.mak
+	bfly1.bm_     samples             vb\samples\firstapp\bfly1.bmp
+	bfly2.bm_     samples             vb\samples\firstapp\bfly2.bmp
+	butterf.fr_   samples             vb\samples\firstapp\butterf.frm
+	butterf.ma_   samples             vb\samples\firstapp\butterf.mak
+	butterf1.fr_  samples             vb\samples\firstapp\butterf.frx
+	picview.fr_   samples             vb\samples\firstapp\picview.frm
+	picview.ma_   samples             vb\samples\firstapp\picview.mak
+	blanker.fr_   samples             vb\samples\graphics\blanker.frm
+	blanker.ma_   samples             vb\samples\graphics\blanker.mak
+	blanker1.fr_  samples             vb\samples\graphics\blanker.frx
+	loan.fr_      samples             vb\samples\grid\loan.frm
+	loan.ma_      samples             vb\samples\grid\loan.mak
+	loan1.fr_     samples             vb\samples\grid\loan.frx
+	filopen.ba_   samples             vb\samples\mdi\filopen.bas
+	find1.fr_     samples             vb\samples\mdi\find.frm
+	mdi.fr_       samples             vb\samples\mdi\mdi.frm
+	mdi1.fr_      samples             vb\samples\mdi\mdi.frx
+	mdinote.ba_   samples             vb\samples\mdi\mdinote.bas
+	mdinote.ma_   samples             vb\samples\mdi\mdinote.mak
+	notepad.fr_   samples             vb\samples\mdi\notepad.frm
+	about.fr_     samples             vb\samples\menus\about.frm
+	edit.fr_      samples             vb\samples\menus\edit.frm
+	textedit.ba_  samples             vb\samples\menus\textedit.bas
+	textedit.ma_  samples             vb\samples\menus\textedit.mak
+	click.fr_     samples             vb\samples\mouse\click.frm
+	drag.fr_      samples             vb\samples\mouse\drag.frm
+	drag1.fr_     samples             vb\samples\mouse\drag.frx
+	main1.fr_     samples             vb\samples\mouse\main.frm
+	mouse.ma_     samples             vb\samples\mouse\mouse.mak
+	scribble.fr_  samples             vb\samples\mouse\scribble.frm
+	frmmain.fr_   samples             vb\samples\objects\frmmain.frm
+	multinst.fr_  samples             vb\samples\objects\multinst.frm
+	multinst.ma_  samples             vb\samples\objects\multinst.mak
+	objects.ba_   samples             vb\samples\objects\objects.bas
+	objects.ma_   samples             vb\samples\objects\objects.mak
+	about1.fr_    samples             vb\samples\ole\about.frm
+	ole2chld.fr_  samples             vb\samples\ole\ole2chld.frm
+	ole2demo.ma_  samples             vb\samples\ole\ole2demo.mak
+	ole2mdi.fr_   samples             vb\samples\ole\ole2mdi.frm
+	ole2mod1.ba_  samples             vb\samples\ole\ole2mod1.bas
+	ole2mod2.ba_  samples             vb\samples\ole\ole2mod2.bas
+	oleauto.ba_   samples             vb\samples\ole\oleauto.bas
+	oleauto.fr_   samples             vb\samples\ole\oleauto.frm
+	oleauto.ma_   samples             vb\samples\ole\oleauto.mak
+	infofor1.fr_  samples             vb\samples\picclip\infoform.frx
+	infoform.fr_  samples             vb\samples\picclip\infoform.frm
+	redtop.fr_    samples             vb\samples\picclip\redtop.frm
+	redtop.ma_    samples             vb\samples\picclip\redtop.mak
+	redtop1.fr_   samples             vb\samples\picclip\redtop.frx
+	fontdial.fr_  samples             vb\samples\print\fontdial.frm
+	tccancel.fr_  samples             vb\samples\print\tccancel.frm
+	timecar1.fr_  samples             vb\samples\print\timecard.frx
+	timecard.fr_  samples             vb\samples\print\timecard.frm
+	timecard.ma_  samples             vb\samples\print\timecard.mak
+	cansend.fr_   samples             vb\samples\vbterm\cansend.frm
+	termset.fr_   samples             vb\samples\vbterm\termset.frm
+	termset1.fr_  samples             vb\samples\vbterm\termset.frx
+	vbterm.fr_    samples             vb\samples\vbterm\vbterm.frm
+	vbterm.gl_    samples             vb\samples\vbterm\vbterm.glo
+	vbterm.ma_    samples             vb\samples\vbterm\vbterm.mak
+	vbterm1.fr_   samples             vb\samples\vbterm\vbterm.frx
+	dialer.ma_    samples             vb\samples\vbterm\dialer.mak
+	dialer.fr_    samples             vb\samples\vbterm\dialer.frm
+	message.fr_   samples             vb\setupkit\setup1\message.frm
+	path.fr_      samples             vb\setupkit\setup1\path.frm
+	path1.fr_     samples             vb\setupkit\setup1\path.frx
+	setup1.ba_    samples             vb\setupkit\setup1\setup1.bas
+	setup1.fr_    samples             vb\setupkit\setup1\setup1.frm
+	setup1.gl_    samples             vb\setupkit\setup1\setup1.glb
+	setup1.ma_    samples             vb\setupkit\setup1\setup1.mak
+	setup11.fr_   samples             vb\setupkit\setup1\setup1.frx
+	status.fr_    samples             vb\setupkit\setup1\status.frm
+	shell.dl_     always              windows\system\shell.dll
+	ver.dl_       always              windows\system\ver.dll
+	vbknowlg.hl_  knowledgebase       vb\vbknowlg.hlp
+	cbt.ex_       tutorial            vb\vb.cbt\cbt.exe
+	cbtlib4.dl_   tutorial            vb\vb.cbt\cbtlib4.dll
+	vdg.ex_       visual design guide vb\vb.cbt\vdg.exe
+	vdg.le_       visual design guide vb\vb.cbt\vdg.les
+	vb.li_        always              windows\system\vb.lic
+	
+	***** DISK2 ****
+	
+	win31wh.h1_   windows api         vb\winapi\win31wh.hlp
+	Split file, part 1 of 2
+	
+	***** DISK3 ****
+	
+	cdk.tx_       control dev kit     vb\cdk\cdk.txt
+	tn001.tx_     control dev kit     vb\cdk\tn001.txt
+	tn002.tx_     control dev kit     vb\cdk\tn002.txt
+	libentry.as_  control dev kit     vb\cdk\libentry.asm
+	libentry.ob_  control dev kit     vb\cdk\libentry.obj
+	makefil6._    control dev kit     vb\cdk\pix\makefile
+	pictblt.c_    control dev kit     vb\cdk\pix\pictblt.c
+	pictblt.h_    control dev kit     vb\cdk\pix\pictblt.h
+	pix.c_        control dev kit     vb\cdk\pix\pix.c
+	pix.de_       control dev kit     vb\cdk\pix\pix.def
+	pix.h_        control dev kit     vb\cdk\pix\pix.h
+	pix.rc_       control dev kit     vb\cdk\pix\pix.rc
+	pix.vb_       control dev kit     vb\cdk\pix\pix.vbx
+	pixcd.bm_     control dev kit     vb\cdk\pix\pixcd.bmp
+	pixcu.bm_     control dev kit     vb\cdk\pix\pixcu.bmp
+	pixeu.bm_     control dev kit     vb\cdk\pix\pixeu.bmp
+	pixmu.bm_     control dev kit     vb\cdk\pix\pixmu.bmp
+	pixvb1.h_     control dev kit     vb\cdk\pix\pixvb1.h
+	vbapi.h_      control dev kit     vb\cdk\vbapi.h
+	vbapi.li_     control dev kit     vb\cdk\vbapi.lib
+	vbx.rc_       control dev kit     vb\cdk\vbx.rcv
+	wps.ex_       control dev kit     vb\cdk\wps.exe
+	makefil9._    control dev kit     vb\cdk\xlist\makefile
+	xlist.c_      control dev kit     vb\cdk\xlist\xlist.c
+	xlist.de_     control dev kit     vb\cdk\xlist\xlist.def
+	xlist.h_      control dev kit     vb\cdk\xlist\xlist.h
+	xlist.rc_     control dev kit     vb\cdk\xlist\xlist.rc
+	xlist.vb_     control dev kit     vb\cdk\xlist\xlist.vbx
+	xlistcd.bm_   control dev kit     vb\cdk\xlist\xlistcd.bmp
+	xlistcu.bm_   control dev kit     vb\cdk\xlist\xlistcu.bmp
+	xlisteu.bm_   control dev kit     vb\cdk\xlist\xlisteu.bmp
+	xlistmu.bm_   control dev kit     vb\cdk\xlist\xlistmu.bmp
+	xlistvb1.h_   control dev kit     vb\cdk\xlist\xlistvb1.h
+	maillst.fr_   samples             vb\samples\mapi\maillst.frm
+	maillst1.fr_  samples             vb\samples\mapi\maillst.frx
+	mailoptf.fr_  samples             vb\samples\mapi\mailoptf.frm
+	mailsup.ba_   samples             vb\samples\mapi\mailsup.bas
+	msgview.fr_   samples             vb\samples\mapi\msgview.frm
+	msgview1.fr_  samples             vb\samples\mapi\msgview.frx
+	newmsg.fr_    samples             vb\samples\mapi\newmsg.frm
+	vbmail.fr_    samples             vb\samples\mapi\vbmail.frm
+	vbmail1.fr_   samples             vb\samples\mapi\vbmail.frx
+	vbmail.ma_    samples             vb\samples\mapi\vbmail.mak
+	firsttab.bm_  samples             vb\samples\msout\firsttab.bmp
+	lasttab.bm_   samples             vb\samples\msout\lasttab.bmp
+	midtab.bm_    samples             vb\samples\msout\midtab.bmp
+	phone.fr_     samples             vb\samples\msout\phone.frm
+	phone1.fr_    samples             vb\samples\msout\phone.frx
+	phone.ma_     samples             vb\samples\msout\phone.mak
+	phone.md_     samples             vb\samples\msout\phone.mdb
+	delay.fr_     samples             vb\samples\pen\delay.frm
+	delay1.fr_    samples             vb\samples\pen\delay.frx
+	editsubf.fr_  samples             vb\samples\pen\editsubf.frm
+	gestfrm.fr_   samples             vb\samples\pen\gestfrm.frm
+	grafpapr.bm_  samples             vb\samples\pen\grafpapr.bmp
+	inkfrm.fr_    samples             vb\samples\pen\inkfrm.frm
+	iobfrm.fr_    samples             vb\samples\pen\iobfrm.frm
+	iobfrm1.fr_   samples             vb\samples\pen\iobfrm.frx
+	keybrd.fr_    samples             vb\samples\pen\keybrd.frm
+	keybrd1.fr_   samples             vb\samples\pen\keybrd.frx
+	penapi.tx_    samples             vb\samples\pen\penapi.txt
+	penmain.fr_   samples             vb\samples\pen\penmain.frm
+	penmain1.fr_  samples             vb\samples\pen\penmain.frx
+	pensmpl.ma_   samples             vb\samples\pen\pensmpl.mak
+	rcfrm.fr_     samples             vb\samples\pen\rcfrm.frm
+	rulepapr.bm_  samples             vb\samples\pen\rulepapr.bmp
+	skbface.bm_   samples             vb\samples\pen\skbface.bmp
+	transfrm.fr_  samples             vb\samples\pen\transfrm.frm
+	win31wh.h2_   windows api         vb\winapi\win31wh.hlp
+	Split file, part 2 of 2
+	
+	***** DISK4 ****
+	
+	biblio.md_    data access         vb\biblio.mdb
+	circ3.c_      control dev kit     vb\cdk\circ3\circ3.c
+	circ3.de_     control dev kit     vb\cdk\circ3\circ3.def
+	circ3.h_      control dev kit     vb\cdk\circ3\circ3.h
+	circ3.hl_     control dev kit     vb\cdk\circ3\circ3.hlp
+	circ3.hp_     control dev kit     vb\cdk\circ3\circ3.hpj
+	circ3.rc_     control dev kit     vb\cdk\circ3\circ3.rc
+	circ3.rt_     control dev kit     vb\cdk\circ3\circ3.rtf
+	circ3.vb_     control dev kit     vb\cdk\circ3\circ3.vbx
+	circ3cd.bm_   control dev kit     vb\cdk\circ3\circ3cd.bmp
+	circ3cu.bm_   control dev kit     vb\cdk\circ3\circ3cu.bmp
+	circ3eu.bm_   control dev kit     vb\cdk\circ3\circ3eu.bmp
+	circ3mu.bm_   control dev kit     vb\cdk\circ3\circ3mu.bmp
+	circ3vb1.h_   control dev kit     vb\cdk\circ3\circ3vb1.h
+	circ3vb2.h_   control dev kit     vb\cdk\circ3\circ3vb2.h
+	makefil3._    control dev kit     vb\cdk\circ3\makefile
+	xbs110.dl_    dbase driver        windows\system\xbs110.dll
+	pdx110.dl_    paradox driver      windows\system\pdx110.dll
+	btrv110.dl_   btrieve driver      windows\system\btrv110.dll
+	external.tx_  data access         vb\external.txt
+	btrieve.tx_   data access         vb\btrieve.txt
+	perform.tx_   data access         vb\perform.txt
+	datamgr.ex_   data access         vb\datamgr.exe
+	datamgr.hl_   data access         vb\datamgr.hlp
+	2darrow1.wm_  clip art            vb\metafile\arrows\2darrow1.wmf
+	2darrow2.wm_  clip art            vb\metafile\arrows\2darrow2.wmf
+	2darrow3.wm_  clip art            vb\metafile\arrows\2darrow3.wmf
+	2darrow4.wm_  clip art            vb\metafile\arrows\2darrow4.wmf
+	3darrow1.wm_  clip art            vb\metafile\arrows\3darrow1.wmf
+	3darrow2.wm_  clip art            vb\metafile\arrows\3darrow2.wmf
+	3darrow3.wm_  clip art            vb\metafile\arrows\3darrow3.wmf
+	3darrow4.wm_  clip art            vb\metafile\arrows\3darrow4.wmf
+	3darrow5.wm_  clip art            vb\metafile\arrows\3darrow5.wmf
+	3darrow6.wm_  clip art            vb\metafile\arrows\3darrow6.wmf
+	3darrow7.wm_  clip art            vb\metafile\arrows\3darrow7.wmf
+	3dxarrow.wm_  clip art            vb\metafile\arrows\3dxarrow.wmf
+	3dxcirar.wm_  clip art            vb\metafile\arrows\3dxcirar.wmf
+	halfarrw.wm_  clip art            vb\metafile\arrows\halfarrw.wmf
+	hortarrw.wm_  clip art            vb\metafile\arrows\hortarrw.wmf
+	hozcirar.wm_  clip art            vb\metafile\arrows\hozcirar.wmf
+	layerarw.wm_  clip art            vb\metafile\arrows\layerarw.wmf
+	lrgearrw.wm_  clip art            vb\metafile\arrows\lrgearrw.wmf
+	medarrw1.wm_  clip art            vb\metafile\arrows\medarrw1.wmf
+	medarrw2.wm_  clip art            vb\metafile\arrows\medarrw2.wmf
+	multarw1.wm_  clip art            vb\metafile\arrows\multarw1.wmf
+	multarw2.wm_  clip art            vb\metafile\arrows\multarw2.wmf
+	multarw3.wm_  clip art            vb\metafile\arrows\multarw3.wmf
+	multarw4.wm_  clip art            vb\metafile\arrows\multarw4.wmf
+	smallarw.wm_  clip art            vb\metafile\arrows\smallarw.wmf
+	tinyarrw.wm_  clip art            vb\metafile\arrows\tinyarrw.wmf
+	vertarrw.wm_  clip art            vb\metafile\arrows\vertarrw.wmf
+	vrtcirar.wm_  clip art            vb\metafile\arrows\vrtcirar.wmf
+	vrtcurar.wm_  clip art            vb\metafile\arrows\vrtcurar.wmf
+	xarrow.wm_    clip art            vb\metafile\arrows\xarrow.wmf
+	dbnmp3.od_    sql server driver   vb\odbc\dbnmp3.dl_
+	instcat.sq_   sql server driver   vb\odbc\instcat.sql
+	drvssrvr.hl_  sql server driver   vb\odbc\drvssrvr.hl_
+	sqlsrvr.od_   sql server driver   vb\odbc\sqlsrvr.dl_
+	aboutbo3.fr_  samples             vb\samples\iconworks\aboutbox.frx
+	aboutbox.fr_  samples             vb\samples\iconworks\aboutbox.frm
+	colorpa1.fr_  samples             vb\samples\iconworks\colorpal.frx
+	colorpal.fr_  samples             vb\samples\iconworks\colorpal.frm
+	iconedi1.fr_  samples             vb\samples\iconworks\iconedit.frx
+	iconedit.fr_  samples             vb\samples\iconworks\iconedit.frm
+	iconwrks.ba_  samples             vb\samples\iconworks\iconwrks.bas
+	iconwrks.gb_  samples             vb\samples\iconworks\iconwrks.gbl
+	iconwrks.hl_  samples             vb\samples\iconworks\iconwrks.hlp
+	iconwrks.ic_  samples             vb\samples\iconworks\iconwrks.ico
+	iconwrks.ma_  samples             vb\samples\iconworks\iconwrks.mak
+	screen.ic_    samples             vb\samples\iconworks\screen.ico
+	toolpal.bm_   samples             vb\samples\iconworks\toolpal.bmp
+	viewico1.fr_  samples             vb\samples\iconworks\viewicon.frx
+	viewicon.fr_  samples             vb\samples\iconworks\viewicon.frm
+	aboutbo1.fr_  samples             vb\samples\mci\aboutbox.frm
+	aboutbo6.fr_  samples             vb\samples\mci\aboutbox.frx
+	animate.fr_   samples             vb\samples\mci\animate.frm
+	cd.fr_        samples             vb\samples\mci\cd.frm
+	cd1.fr_       samples             vb\samples\mci\cd.frx
+	global3.ba_   samples             vb\samples\mci\global.bas
+	mcitest.ba_   samples             vb\samples\mci\mcitest.bas
+	mcitest.fr_   samples             vb\samples\mci\mcitest.frm
+	mcitest1.fr_  samples             vb\samples\mci\mcitest.frx
+	mcitest.ma_   samples             vb\samples\mci\mcitest.mak
+	mcitest.mi_   samples             vb\samples\mci\mcitest.mid
+	mcitest.mm_   samples             vb\samples\mci\mcitest.mmm
+	mcitest.wa_   samples             vb\samples\mci\mcitest.wav
+	opendlg.fr_   samples             vb\samples\mci\opendlg.frm
+	wave.fr_      samples             vb\samples\mci\wave.frm
+	aboutbo2.fr_  samples             vb\samples\visdata\aboutbox.frm
+	aboutbo5.fr_  samples             vb\samples\visdata\aboutbox.frx
+	addfield.fr_  samples             vb\samples\visdata\addfield.frm
+	attach.fr_    samples             vb\samples\visdata\attach.frm
+	cpystru.fr_   samples             vb\samples\visdata\cpystru.frm
+	databox.fr_   samples             vb\samples\visdata\databox.frm
+	dataform.fr_  samples             vb\samples\visdata\dataform.frm
+	datafor1.fr_  samples             vb\samples\visdata\dataform.frx
+	dynagri1.fr_  samples             vb\samples\visdata\dynagrid.frx
+	dynagrid.fr_  samples             vb\samples\visdata\dynagrid.frm
+	dynaset.fr_   samples             vb\samples\visdata\dynaset.frm
+	dynaset1.fr_  samples             vb\samples\visdata\dynaset.frx
+	find.fr_      samples             vb\samples\visdata\find.frm
+	indexadd.fr_  samples             vb\samples\visdata\indexadd.frm
+	join.fr_      samples             vb\samples\visdata\join.frm
+	opendb.fr_    samples             vb\samples\visdata\opendb.frm
+	query.fr_     samples             vb\samples\visdata\query.frm
+	query1.fr_    samples             vb\samples\visdata\query.frx
+	replace.fr_   samples             vb\samples\visdata\replace.frm
+	replace1.fr_  samples             vb\samples\visdata\replace.frx
+	seek4.fr_     samples             vb\samples\visdata\seek.frm
+	sql.fr_       samples             vb\samples\visdata\sql.frm
+	sql1.fr_      samples             vb\samples\visdata\sql.frx
+	tables.fr_    samples             vb\samples\visdata\tables.frm
+	tables1.fr_   samples             vb\samples\visdata\tables.frx
+	tblstru.fr_   samples             vb\samples\visdata\tblstru.frm
+	tableobj.fr_  samples             vb\samples\visdata\tableobj.frm
+	tableob1.fr_  samples             vb\samples\visdata\tableobj.frx
+	vdmdi.fr_     samples             vb\samples\visdata\vdmdi.frm
+	vdmdi1.fr_    samples             vb\samples\visdata\vdmdi.frx
+	visdata.ba_   samples             vb\samples\visdata\visdata.bas
+	visdata.ic_   samples             vb\samples\visdata\visdata.ico
+	visdata.ma_   samples             vb\samples\visdata\visdata.mak
+	zoom.fr_      samples             vb\samples\visdata\zoom.frm
+	compress.ex_  samples             vb\setupkit\kitfiles\compress.exe
+	compress.tx_  samples             vb\setupkit\kitfiles\compress.txt
+	expand.ex_    samples             vb\setupkit\kitfiles\expand.exe
+	setupa.ex_    samples             vb\setupkit\kitfiles\setup.exe
+	setupa.ls_    samples             vb\setupkit\kitfiles\setup.lst
+	setupkit.dl_  samples             vb\setupkit\kitfiles\setupkit.dll
+	setupwiz.ex_  samples             vb\setupkit\kitfiles\setupwiz.exe
+	setupwiz.hl_  samples             vb\setupkit\kitfiles\setupwiz.hlp
+	setupwiz.in_  samples             vb\setupkit\kitfiles\setupwiz.ini
+	code.ma_      tutorial            vb\vb.cbt\code.mak
+	country.ma_   tutorial            vb\vb.cbt\country.mak
+	form1.fr_     tutorial            vb\vb.cbt\form1.frm
+	form2.fr_     tutorial            vb\vb.cbt\form2.frm
+	formchi.fr_   tutorial            vb\vb.cbt\formchi.frm
+	formchi1.fr_  tutorial            vb\vb.cbt\formchi.frx
+	mdinpad.fr_   tutorial            vb\vb.cbt\mdinpad.frm
+	mdinpad1.fr_  tutorial            vb\vb.cbt\mdinpad.frx
+	payment.fr_   tutorial            vb\vb.cbt\payment.frm
+	payment.ma_   tutorial            vb\vb.cbt\payment.mak
+	sweden.fr_    tutorial            vb\vb.cbt\sweden.frm
+	sweden1.fr_   tutorial            vb\vb.cbt\sweden.frx
+	vb.le_        tutorial            vb\vb.cbt\vb.les
+	gsw.ex_       controls            windows\system\gsw.exe
+	gswdll.dl_    controls            windows\system\gswdll.dll
+	winhelp.ex_   always              windows\winhelp.exe
+	
+	***** DISK5 ****
+	
+	bullet.bm_    help compiler       vb\hc\bullet.bmp
+	emdash.bm_    help compiler       vb\hc\emdash.bmp
+	hc31.er_      help compiler       vb\hc\hc31.err
+	helpref.hl_   help compiler       vb\hc\helpref.hlp
+	iconwrks.bm_  help compiler       vb\hc\iconwrks.bmp
+	iconwrks.hp_  help compiler       vb\hc\iconwrks.hpj
+	iconwrks.ph_  help compiler       vb\hc\iconwrks.ph
+	iconwrks.rt_  help compiler       vb\hc\iconwrks.rtf
+	iwedit.sh_    help compiler       vb\hc\iwedit.shg
+	mrbc.ex_      help compiler       vb\hc\mrbc.exe
+	shed.ex_      help compiler       vb\hc\shed.exe
+	shed.hl_      help compiler       vb\hc\shed.hlp
+	track.do_     help compiler       vb\hc\track.doc
+	winhelp.tx_   help compiler       vb\hc\winhelp.txt
+	3dlrsign.wm_  clip art            vb\metafile\business\3dlrsign.wmf
+	alphbord.wm_  clip art            vb\metafile\business\alphbord.wmf
+	alphtrpn.wm_  clip art            vb\metafile\business\alphtrpn.wmf
+	answmach.wm_  clip art            vb\metafile\business\answmach.wmf
+	apptbook.wm_  clip art            vb\metafile\business\apptbook.wmf
+	calcultr.wm_  clip art            vb\metafile\business\calcultr.wmf
+	calendar.wm_  clip art            vb\metafile\business\calendar.wmf
+	cent.wm_      clip art            vb\metafile\business\cent.wmf
+	check.wm_     clip art            vb\metafile\business\check.wmf
+	clipbord.wm_  clip art            vb\metafile\business\clipbord.wmf
+	coins.wm_     clip art            vb\metafile\business\coins.wmf
+	computer.wm_  clip art            vb\metafile\business\computer.wmf
+	copymach.wm_  clip art            vb\metafile\business\copymach.wmf
+	deutsch.wm_   clip art            vb\metafile\business\deutsch.wmf
+	digitals.wm_  clip art            vb\metafile\business\digitals.wmf
+	digitnum.wm_  clip art            vb\metafile\business\digitnum.wmf
+	dime.wm_      clip art            vb\metafile\business\dime.wmf
+	disk35.wm_    clip art            vb\metafile\business\disk35.wmf
+	disk525.wm_   clip art            vb\metafile\business\disk525.wmf
+	dollar.wm_    clip art            vb\metafile\business\dollar.wmf
+	dollars.wm_   clip art            vb\metafile\business\dollars.wmf
+	envlback.wm_  clip art            vb\metafile\business\envlback.wmf
+	envlfrnt.wm_  clip art            vb\metafile\business\envlfrnt.wmf
+	fileclsd.wm_  clip art            vb\metafile\business\fileclsd.wmf
+	fileopen.wm_  clip art            vb\metafile\business\fileopen.wmf
+	guilder.wm_   clip art            vb\metafile\business\guilder.wmf
+	harddisk.wm_  clip art            vb\metafile\business\harddisk.wmf
+	laptop1.wm_   clip art            vb\metafile\business\laptop1.wmf
+	laptop2.wm_   clip art            vb\metafile\business\laptop2.wmf
+	micrchip.wm_  clip art            vb\metafile\business\micrchip.wmf
+	money.wm_     clip art            vb\metafile\business\money.wmf
+	moneybag.wm_  clip art            vb\metafile\business\moneybag.wmf
+	monitor.wm_   clip art            vb\metafile\business\monitor.wmf
+	monystk1.wm_  clip art            vb\metafile\business\monystk1.wmf
+	monystk2.wm_  clip art            vb\metafile\business\monystk2.wmf
+	nickel.wm_    clip art            vb\metafile\business\nickel.wmf
+	payphone.wm_  clip art            vb\metafile\business\payphone.wmf
+	pcomputr.wm_  clip art            vb\metafile\business\pcomputr.wmf
+	penny.wm_     clip art            vb\metafile\business\penny.wmf
+	peseta.wm_    clip art            vb\metafile\business\peseta.wmf
+	phone.wm_     clip art            vb\metafile\business\phone.wmf
+	postcard.wm_  clip art            vb\metafile\business\postcard.wmf
+	pound.wm_     clip art            vb\metafile\business\pound.wmf
+	poundbag.wm_  clip art            vb\metafile\business\poundbag.wmf
+	printer.wm_   clip art            vb\metafile\business\printer.wmf
+	prntout1.wm_  clip art            vb\metafile\business\prntout1.wmf
+	prntout2.wm_  clip art            vb\metafile\business\prntout2.wmf
+	prntout3.wm_  clip art            vb\metafile\business\prntout3.wmf
+	quarter.wm_   clip art            vb\metafile\business\quarter.wmf
+	rolodex.wm_   clip art            vb\metafile\business\rolodex.wmf
+	ruble.wm_     clip art            vb\metafile\business\ruble.wmf
+	satedish.wm_  clip art            vb\metafile\business\satedish.wmf
+	satelit1.wm_  clip art            vb\metafile\business\satelit1.wmf
+	satelit2.wm_  clip art            vb\metafile\business\satelit2.wmf
+	typewrtr.wm_  clip art            vb\metafile\business\typewrtr.wmf
+	yen.wm_       clip art            vb\metafile\business\yen.wmf
+	odbc.in_      data access         vb\odbc\odbc.inf
+	odbc.od_      data access         vb\odbc\odbc.dl_
+	odbcadm.ex_   data access         vb\odbc\odbcadm.ex_
+	odbcinst.od_  data access         vb\odbc\odbcinst.dll
+	odbsetup.ex_  data access         vb\odbc\setup.exe
+	odb_mssu.ex_  data access         vb\odbc\_mssetup.exe
+	odbsetup.ls_  data access         vb\odbc\setup.lst
+	odbcstp.ex_   data access         vb\odbc\odbcstp.exe
+	commdlg.od_   data access         vb\odbc\commdlg.dll
+	ctl3d.od_     data access         vb\odbc\ctl3d.dll
+	lzexpand.dl_  data access         vb\odbc\lzexpand.dll
+	ver.od_       data access         vb\odbc\ver.dll
+	ora6win.od_   oracle driver       vb\odbc\ora6win.dl_
+	oracle.tx_    oracle driver       vb\odbc\oracle.tx_
+	orasetup.od_  oracle driver       vb\odbc\orasetup.dl_
+	sqora.od_     oracle driver       vb\odbc\sqora.dl_
+	drvoracl.hl_  oracle driver       vb\odbc\drvoracl.hl_
+	odbcinst.hl_  data access         vb\odbc\odbcinst.hl_
+	mscpxlt.od_   data access         vb\odbc\mscpxlt.dl_
+	10070220.cp_  data access         vb\odbc\10070220.cp_
+	10070437.cp_  data access         vb\odbc\10070437.cp_
+	10070850.cp_  data access         vb\odbc\10070850.cp_
+	10070860.cp_  data access         vb\odbc\10070860.cp_
+	10070861.cp_  data access         vb\odbc\10070861.cp_
+	10070863.cp_  data access         vb\odbc\10070863.cp_
+	10070865.cp_  data access         vb\odbc\10070865.cp_
+	msole2.vb_    controls            windows\system\msole2.vbx
+	crystal.vb_   controls            windows\system\crystal.vbx
+	gauge.vb_     controls            windows\system\gauge.vbx
+	keystat.vb_   controls            windows\system\keystat.vbx
+	mci.vb_       controls            windows\system\mci.vbx
+	mscomm.vb_    controls            windows\system\mscomm.vbx
+	msmapi.vb_    controls            windows\system\msmapi.vbx
+	msmasked.vb_  controls            windows\system\msmasked.vbx
+	msoutlin.vb_  controls            windows\system\msoutlin.vbx
+	picclip.vb_   controls            windows\system\picclip.vbx
+	spin.vb_      controls            windows\system\spin.vbx
+	win30api.tx_  windows api         vb\winapi\win30api.txt
+	win31api.hl_  windows api         vb\winapi\win31api.hlp
+	win31ext.tx_  windows api         vb\winapi\win31ext.txt
+	winmmsys.tx_  windows api         vb\winapi\winmmsys.txt
+	
+	***** DISK6 ****
+	
+	msafinx.dl_   visual basic        windows\system\msafinx.dll
+	compobj.dl_   ole                 windows\system\compobj.dll
+	ole2nls.dl_   ole                 windows\system\ole2nls.dll
+	ole2.dl_      ole                 windows\system\ole2.dll
+	ole2.re_      ole                 windows\system\ole2.reg
+	ole2conv.dl_  ole                 windows\system\ole2conv.dll
+	ole2prox.dl_  ole                 windows\system\ole2prox.dll
+	ole2disp.dl_  ole                 windows\system\ole2disp.dll
+	storage.dl_   ole                 windows\system\storage.dll
+	crxlate.dl_   report writer       windows\system\crxlate.dll
+	ctl3d.cr_     report writer       windows\system\ctl3d.dll
+	p3conv.dl_    report writer       windows\system\p3conv.dll
+	p3dib.dl_     report writer       windows\system\p3dib.dll
+	p3file.dl_    report writer       windows\system\p3file.dll
+	p3info.dl_    report writer       windows\system\p3info.dll
+	pdbjet.dl_    report writer       windows\system\pdbjet.dll
+	pdctjet.dl_   report writer       windows\system\pdctjet.dll
+	pdirjet.dl_   report writer       windows\system\pdirjet.dll
+	pdsodbc.dl_   report writer       windows\system\pdsodbc.dll
+	msabc110.dl_  report writer       windows\system\msabc110.dll
+	commdlg.dl_   visual basic        windows\system\commdlg.dll
+	ddeml.dl_     visual basic        windows\system\ddeml.dll
+	vbrun300.dl_  visual basic        windows\system\vbrun300.dll
+	cmdialog.vb_  visual basic        windows\system\cmdialog.vbx
+	crpe.dl_      controls            windows\system\crpe.dll
+	grid.vb_      visual basic        windows\system\grid.vbx
+	
+	***** DISK7 ****
+	
+	autopro.ma_   controls            vb\autoload.mak
+	bright.di_    visual basic        vb\bright.dib
+	datacons.tx_  visual basic        vb\datacons.txt
+	msajt110.dl_  data access         windows\system\msajt110.dll
+	msaes110.dl_  data access         windows\system\msaes110.dll
+	vbdb300.dl_   data access         windows\system\vbdb300.dll
+	demo.ex_      controls            vb\demo.exe
+	pastel.di_    visual basic        vb\pastel.dib
+	proconst.tx_  visual basic        vb\constant.txt
+	rainbow.di_   visual basic        vb\rainbow.dib
+	samples.tx_   visual basic        vb\samples.txt
+	ctrlref.hl_   controls            vb\ctrlref.hlp
+	vb.ex_        visual basic        vb\vb.exe
+	
+	***** DISK8 ****
+	
+	a_to_b.md_    report writer       vb\report\a_to_b.mdb
+	crystal.md_   report writer       vb\report\crystal.mdb
+	empdata.md_   report writer       vb\report\empdata.mdb
+	crw.ex_       report writer       vb\report\crw.exe
+	crw.hl_       report writer       vb\report\crw.hlp
+	crw.ne_       report writer       vb\report\crw.net
+	labels.tx_    report writer       vb\report\labels.txt
+	crvbxsam.ma_  report writer       vb\report\crvbxsam.mak
+	crvbxsam.fr_  report writer       vb\report\crvbxsam.frm
+	form2a.fr_    report writer       vb\report\form2.frm
+	form3.fr_     report writer       vb\report\form3.frm
+	vbxmdb.rp_    report writer       vb\report\vbxmdb.rpt
+	
+	***** DISK9 ****
+	
+	msolevbx.dl_  controls            windows\system\msolevbx.dll
+	vb.hl_        visual basic        vb\vb.hlp
+	anibuton.vb_  controls            windows\system\anibuton.vbx
+	graph.vb_     controls            windows\system\graph.vbx
+	pencntrl.vb_  controls            windows\system\pencntrl.vbx
+	threed.vb_    controls            windows\system\threed.vbx
+	
+	Additional query words: 3.00
+	
+	======================================================================
+	Keywords          :  
+	
+	=============================================================================
+	

@@ -1,0 +1,141 @@
+---
+layout: page
+title: "Q169404: NTFS Directory Corruption with Frequent File Creation"
+permalink: kb/169/Q169404/
+---
+
+## Q169404: NTFS Directory Corruption with Frequent File Creation
+
+	Article: Q169404
+	Product(s): Microsoft Windows NT
+	Version(s): winnt:3.51,4.0
+	Operating System(s): 
+	Keyword(s): kbWinNT400sp4fix
+	Last Modified: 09-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation versions 3.51, 4.0 
+	- Microsoft Windows NT Server versions 3.51, 4.0 
+	- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	A directory in which files are repeatedly created and deleted eventually becomes
+	corrupt. Subsequent attempts to access files in the directory or to create or
+	delete files in the directory yield pop-up window indicating that the directory
+	is corrupt and instructing the user to run CHKDSK.
+	
+	When CHKDSK is run, it generates output like the following (although the specific
+	file record segments affected will vary):
+	
+	  Deleting corrupt attribute record (16, "")
+	  from file record segment 286.
+	  Deleting corrupt attribute record (32, "")
+	  from file record segment 286.
+	  Deleting corrupt attribute record (48, "")
+	  from file record segment 286.
+	  Deleting corrupt attribute record (80, "")
+	  from file record segment 286.
+	  Deleting corrupt attribute record (144, $I30)
+	  from file record segment 286.
+	  Deleting corrupt file record segment 286.
+	  Deleting orphan file record segment 8628.
+	  Deleting index entry DirectoryName in index $I30 of file 244.
+	  CHKDSK is recovering lost files.
+	
+	
+	CAUSE
+	=====
+	
+	Multiple attributes associated with a given file have the same attribute
+	instance tag value. This is only likely to happen in directories where many
+	files are repeatedly added and deleted in an "unbalanced" way.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, you can do one of the following:
+	
+	- Run CHKDSK /f. By running CHKDSK /f, all files contained in a directory that
+	  is corrupted in this way should be recovered. CHKDSK is also capable of
+	  detecting when instance counts are exceptionally large and will proactively
+	  renumber attribute instance values. Specifically, if an attribute instance
+	  tag is larger than 0xF000, CHKDSK will send the following message (file
+	  number will vary):
+	
+	     Adjusting instance tags to prevent rollover on file 252.
+	
+	  Thus, by periodically running read-only CHKDSK, it is possible to detect
+	  problem directories before they become corrupt. If the above message is
+	  encountered while running CHKDSK in read-only mode, you should schedule a
+	  full CHKDSK to correct the problem.
+	
+	  -or-
+	
+	- To resolve this problem, obtain the latest service pack for Windows NT 4.0 or
+	  Windows NT Server 4.0, Terminal Server Edition. For additional information,
+	  please see the following article in the Microsoft Knowledge Base:
+	
+	  Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Windows NT version 3.51. A
+	supported fix is now available, but has not been fully regression tested and
+	should be applied only to systems experiencing this specific problem. Unless you
+	are severely impacted by this specific problem, Microsoft recommends that you
+	wait for the next Service Pack that contains this fix. Contact Microsoft
+	Technical Support for more information.
+	
+	
+	Microsoft has confirmed this to be a problem in Windows NT 4.0 and Windows NT
+	Server 4.0, Terminal Server Edition. This problem was first corrected in Windows
+	NT 4.0 Service Pack 4.0 and Windows NT Server 4.0, Terminal Server Edition
+	Service Pack 4.
+	
+	
+	MORE INFORMATION
+	================
+	
+	Attribute entries within an NTFS File Record Segment (FRS) are labeled with an
+	"instance tag" that must be unique for the attributes in a given FRS. The value
+	for an attribute instance tag is generated when an attribute is created. Thus,
+	typical instance tag values range from 0 to about 10 on most files.
+	
+	If an attribute is deleted and recreated, it receives a new instance tag. Each
+	time a new instance tag is needed, NTFS increments a counter associated with the
+	FRS in question and uses the next previously unused value. Thus, instance tags
+	can grow without bound if attributes are repeatedly destroyed and recreated.
+	
+	For the vast majority of files and directories, the scheme described above does
+	not result in any problems because, once created, FRS attributes tend not to be
+	deleted and recreated. There is one scenario that is known to be an exception.
+	If many files are repeatedly added to a directory and then deleted from the
+	directory in such a way that the "binary tree" that indexes the directory
+	becomes unbalanced, the "index root" attribute for the directory is repeatedly
+	destroyed and re-created. Because instance tags are only 16 bits in size, this
+	means that instance tags can be duplicated after a directory index has been
+	rebalanced 65,535 times. Note that even if instance tags are duplicated, the
+	directory will not be considered corrupt unless, at some point, it contained a
+	sufficiently large enough number of files. Therefore this problem may be
+	difficult to reproduce except in directories containing large numbers of files.
+	
+	
+	
+	Additional query words: chkdisk autochk autocheck
+	
+	======================================================================
+	Keywords          : kbWinNT400sp4fix 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbNTTermServ400 kbNTTermServSearch kbWinNTS351search
+	Version           : winnt:3.51,4.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

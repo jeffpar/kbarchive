@@ -1,0 +1,123 @@
+---
+layout: page
+title: "Q161941: XADM: Corrupt Page Causes Edbutil to Receive an Access Violation"
+permalink: kb/161/Q161941/
+---
+
+## Q161941: XADM: Corrupt Page Causes Edbutil to Receive an Access Violation
+
+	Article: Q161941
+	Product(s): Microsoft Exchange
+	Version(s): 4.0
+	Operating System(s): 
+	Keyword(s): kbusage
+	Last Modified: 25-APR-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	A corrupt page in the private information store causes an access violation. If
+	the Microsoft Exchange Server and Windows NT Server symbols are properly
+	installed, the following Dr. Watson log will be generated:
+	
+	  Application exception occurred:
+	        App: store.DBG (pid=240)
+	        When: 12/9/1996 @ 6:36:7.933
+	        Exception number: c0000005 (access violation)
+	
+	  State Dump for Thread Id 0x162
+	
+	  eax=fffffeed ebx=0a0bf000 ecx=3e7b1bfb edx=05effdb8 esi=101f8fff
+	  edi=101f8ffb
+	  eip=6cdef219 esp=05effd5c ebp=0a0c00fb iopl=0         nv up ei pl nz na
+	  po
+	  nc
+	  cs=001b  ss=0023  ds=0023  es=0023  fs=0038  gs=0000
+	  efl=00000206
+	
+	  function: ErrPMReplace
+	        6cdef1ff 8b4c241c         mov     ecx,[esp+0x1c]
+	  ss:0640e67f=????????
+	        6cdef203 89680c           mov     [eax+0xc],ebp
+	  ds:0050e80f=????????
+	        6cdef206 3bca             cmp     ecx,edx
+	        6cdef208 7625             jbe     ErrPMReplace+0x1c4 (6cdef22f)
+	        6cdef20a 8b02             mov     eax,[edx]
+	  ds:05effdb8=6cdee648
+	        6cdef20c 8b7204           mov     esi,[edx+0x4]
+	  ds:0640e6da=????????
+	        6cdef20f 8bfd             mov     edi,ebp
+	        6cdef211 8bc8             mov     ecx,eax
+	        6cdef213 c1e902           shr     ecx,0x2
+	        6cdef216 83c208           add     edx,0x8
+	  FAULT ->6cdef219 f3a5            rep  movsd ds:101f8fff=????????
+	  es:101f8ffb=82c50001
+	        6cdef21b 8bc8             mov     ecx,eax
+	        6cdef21d 83e103           and     ecx,0x3
+	        6cdef220 f3a4             rep     movsb         ds:101f8fff=0e
+	  es:101f8ffb=01
+	        6cdef222 8b42f8           mov     eax,[edx-0x8]
+	  ds:0640e6da=????????
+	        6cdef225 8b4c241c         mov     ecx,[esp+0x1c]
+	  ss:0640e67f=????????
+	        6cdef229 03e8             add     ebp,eax
+	        6cdef22b 3bca             cmp     ecx,edx
+	        6cdef22d 77db             ja      ErrPMReplace+0x19f (6cdef20a)
+	        6cdef22f 8b442410         mov     eax,[esp+0x10]
+	  ss:0640e67f=????????
+	        6cdef233 8b742414         mov     esi,[esp+0x14]
+	  ss:0640e67f=????????
+	        6cdef237 8b4810           mov     ecx,[eax+0x10]
+	  ds:0050e80f=????????
+	
+	  *----> Stack Back Trace <----*
+	
+	  FramePtr  RetAddr   Param1   Param2   Param3   Function Name
+	  05effd7c  6cdee596  00000003 00000120 0965f8e0
+	  EDB!ErrPMReplace+0x1ae(0x05EFFDB8, 0x05EFFDB8)
+	  05effdb4  6cdee648  099f0080 00000000 00000000
+	  EDB!ErrNDExpungeBackLink+0xd1(0x101F8FFF)
+	  05effdcc  6cdc67ab  092c2480 00000000 00000000
+	  EDB!ErrNDExpungeLinkCommit+0x4b(0x101F8FFB, 0x0A0BF000)
+	  05effe18  6cdc5fa6  000000ff 099f0080 6ce5eb18
+	  EDB!ErrBMExpungeBacklink+0x2dc(0x0A0BF000, 0xfffffeed)
+	  05efff7c  6cdc7352  000000ff 093a54e0 05efffa4
+	  EDB!ErrBMCleanPage+0x43c(0x101f8fff, 0xfffffeed)
+	  05efffa4  6cdc7555  05efffec 77f270a8 00000018
+	  EDB!ErrBMClean+0x16c(0x0A0C00FB)
+	  05efffb8  77f26c2a  00000000 77f270a8 00000018
+	  EDB!BMCleanProcess+0xbc(...)
+	  05efffec  00000000  6cdc7499 00000000 00000000
+	  KERNEL32!BaseThreadStart+0x61
+	
+	
+	While trying to recover the database, Edbutil caused an access violation upon
+	hitting this corrupted page, and is unable to run to completion.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+	version 4.0. This problem was corrected in the latest Microsoft Exchange 4.0
+	U.S. Service Pack. For information on obtaining the service pack, query on the
+	following word in the Microsoft Knowledge Base (without the spaces):
+	
+	  S E R V P A C K
+	
+	
+	Additional query words: GPF general protection invalid page fault illegal operation crash AV
+	======================================================================
+	Keywords          : kbusage 
+	Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+	Version           : 4.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

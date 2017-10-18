@@ -1,0 +1,107 @@
+---
+layout: page
+title: "Q307579: CFS2: Err Msg: CFS2 Has Caused an IPF in Module CFS2.exe"
+permalink: kb/307/Q307579/
+---
+
+## Q307579: CFS2: Err Msg: CFS2 Has Caused an IPF in Module CFS2.exe
+
+	Article: Q307579
+	Product(s): Microsoft Home Games
+	Version(s): 1.0
+	Operating System(s): 
+	Keyword(s): kberrmsg kbimu
+	Last Modified: 07-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Combat Flight Simulator 2: WWII Pacific Theater, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you attempt to start Microsoft Combat Flight Simulator 2: WWII Pacific
+	Theater, you may receive an error message similar to the following:
+	
+	  CFS2 has caused an invalid page fault in module CFS2.exe
+	
+	CAUSE
+	=====
+	
+	This behavior can occur if DirectX files installed on your computer are
+	mismatched or the wrong version.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, follow these steps:
+	
+	1. Browse to the following Microsoft Web site:
+	
+	  http://www.microsoft.com/directx/homeuser/downloads/default.asp
+	
+	2. Click the link appropriate to your operating system, and then click the
+	  DirectX link underneath Download Now.
+	
+	3. Click "Save this program to disk" to copy the download to your computer for
+	  installation at a later time, note the name and location of the file, and
+	  then click OK.
+	
+	4. Restart Windows in Safe mode. To do this, use one of the following methods,
+	  as appropriate to your version of Windows.
+	
+	  Microsoft Windows 95
+	  --------------------
+	
+	  Restart the computer. When you see the "Starting Windows 95" message, press
+	  the F8 key. On the Startup menu, select Safe Mode, and then press ENTER.
+	
+	  Microsoft Windows 98 and Microsoft Windows Millennium Edition (Me)
+	  ------------------------------------------------------------------
+	
+	  Restart the computer. When the computer completes the Power On Self-Test
+	  (POST), press and hold down the CTRL key until you see the Startup menu. On
+	  the Startup menu, select Safe Mode, and then press ENTER.
+	
+	  Microsoft Windows 2000
+	  ----------------------
+	
+	  Restart your computer, and when the Boot menu appears, press F8. When the
+	  "Windows 2000 Advanced Options" menu appears, select an option, and then
+	  press ENTER. When the Boot menu appears again with the words "Safe Mode"
+	  displayed in red at the bottom, select the installation that you want to
+	  start, and then press ENTER.
+	
+	  WARNING: Do not select a Microsoft Windows NT 4.0 installation.
+	
+	5. Run the DirectX setup program from the location noted in step 3. Follow the
+	  steps to complete the installation of DirectX.
+	
+	6. Restart the computer in normal mode.
+	
+	MORE INFORMATION
+	================
+	
+	DirectX is a Windows component that improves access to hardware. Games use
+	DirectX to communicate with your hardware. For more information about DirectX,
+	browse to the following Microsoft Web site:
+	
+	  http://www.microsoft.com/directx/homeuser/aboutdx.asp
+	
+	For additional information about Windows NT 4.0 and DirectX, click the article
+	number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q179113 How to Download and Install DirectX
+	
+	Additional query words: msgame
+	
+	======================================================================
+	Keywords          : kberrmsg kbimu 
+	Technology        : kbHomeProdSearch _IKkbbogus kbGamesSearch kbCombatFlightSim2 kbCombatFlightSimSearch
+	Version           : :1.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

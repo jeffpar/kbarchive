@@ -1,0 +1,86 @@
+---
+layout: page
+title: "Q82074: DCA IRMA Workstation for Windows 3270"
+permalink: kb/082/Q82074/
+---
+
+## Q82074: DCA IRMA Workstation for Windows 3270
+
+	Article: Q82074
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 05-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Digital Communications Associates (DCA) IRMA 3270 Workstation for Windows
+	version 1.1 generates a general protection (GP) fault when running under
+	Microsoft Windows version 3.1 if any of the following conditions are true:
+	
+	- TTOnly=1 is in the [TrueType] section of the WIN.INI file.
+	
+	- You are using an IRMA 3270 Workstation for Windows version earlier than 1.1
+	  revision D.
+	
+	- You are using DCA IRMA Workstation for Windows QuickPad.
+	
+	MORE INFORMATION
+	================
+	
+	TTOnly=1 Is in the [TrueType] Section of WIN.INI
+	------------------------------------------------
+	
+	If TTOnly=1 is in the [TrueType] section of the WIN.INI file, a general
+	protection (GP) fault occurs. This entry causes Windows to use only TrueType
+	fonts in Windows-based applications. IRMA 3270 Workstation for Windows, like
+	many other Windows-based 3270 programs, requires that its own fonts be used
+	because of its ability to scale multiple displayed sessions.
+	
+	To correct this problem:
+	
+	1. Run Control Panel and choose the Fonts icon.
+	
+	2. Choose the TrueType button.
+	
+	3. Clear the Show Only TrueType Fonts In Applications check box.
+	
+	Using IRMA 3270 Workstation for Windows Earlier than 1.1 Revision D
+	-------------------------------------------------------------------
+	
+	A GP fault occurs if you install a version of IRMA 3270 Workstation for Windows
+	earlier than 1.1 revision D and install Windows with the SETUP /N command.
+	
+	This behavior occurs because IRMA automatically installs its fonts into the
+	SYSTEM subdirectory, which does not exist in a network installation of Windows.
+	Windows tries to load those fonts, and can't find them, causing the GP fault.
+	
+	This is corrected in version 1.1 revision D of IRMA. A workaround is to copy the
+	fonts needed into the shared WINDOWS directory.
+	
+	Using DCA IRMA Workstation for Windows QuickPad
+	-----------------------------------------------
+	
+	There is a problem in the DCA Workstation for Windows QuickPad application that
+	results in a GP fault in Windows 3.1 and an Unrecoverable Application Error
+	(UAE) in Windows 3.0.
+	
+	Contact DCA for information on the availability of upgrades for this program.
+	
+	Additional query words: 3.00 3.00a 3.10 3270 size extra linkup rumba 3.11
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+	Version           : WINDOWS:3.0,3.0a,3.1,3.11
+	
+	=============================================================================
+	

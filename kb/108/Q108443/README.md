@@ -1,0 +1,73 @@
+---
+layout: page
+title: "Q108443: Writer/Artist 1: Document Prints Strangely"
+permalink: kb/108/Q108443/
+---
+
+## Q108443: Writer/Artist 1: Document Prints Strangely
+
+	Article: Q108443
+	Product(s): Microsoft Home Kids Products
+	Version(s): MACINTOSH:1.0,1.1,1.1a
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 27-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Creative Writer for the Macintosh, versions 1.0, 1.1, 1.1a 
+	- Microsoft Fine Artist for the Macintosh, versions 1.0, 1.1, 1.1a 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If you change printers in the Chooser and do not return to Creative Writer
+	Printing Options to reset the settings for the new printer, your document prints
+	strangely.
+	
+	For example, text or graphics may print either enlarged or squished, or may
+	overlap each other or hang over the margins.
+	
+	RESOLUTION
+	==========
+	
+	To avoid this problem, follow these steps:
+	
+	1. In Creative Writer, press and hold down the SHIFT and COMMAND keys, while you
+	  press the A key (SHIFT+COMMAND+A) to switch to the Control Room.
+	
+	2. From the File menu, click Printing Options.
+	
+	3. Choose either Set Local (if you are setting printer options for only your own
+	  installation of Creative Writer) or Set Global (if you are setting options
+	  for all Creative Writer users on a network).
+	
+	4. Make sure that the printer name in the upper left corner of the dialog box is
+	  the printer you want to use. Set your printing options as desired, and click
+	  OK.
+	
+	5. In the next dialog box that appears, click Print or OK.
+	
+	6. From the File menu, choose Return to Creative Writer.
+	
+	Your document should print correctly.
+	
+	MORE INFORMATION
+	================
+	
+	When you switch printers on a Macintosh, the System gives you a message
+	instructing you to choose Page Setup in all open applications. In Creative
+	Writer, the printer setup menu is called Printing Options, not Page Setup.
+	Setting the options in this menu, however, achieve the results.
+	
+	Additional query words: 1.00 kids distorted overlapping stretched wrong printout printjob print job out odd oddly mac mskids mczee wm_artist 1.10 1.10a
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbPTProdChange kbCreativeWriter110Mac kbCreativeWriter110aMac kbCreativeWriter100Mac kbFineArtist110Mac kbFineArtist110aMac kbFineArtist100Mac
+	Version           : MACINTOSH:1.0,1.1,1.1a
+	
+	=============================================================================
+	

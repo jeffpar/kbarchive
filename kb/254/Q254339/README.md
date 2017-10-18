@@ -1,0 +1,135 @@
+---
+layout: page
+title: "Q254339: HOWTO: Use FlashWindowEx to Notify a User from VB"
+permalink: kb/254/Q254339/
+---
+
+## Q254339: HOWTO: Use FlashWindowEx to Notify a User from VB
+
+	Article: Q254339
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbAPI kbOSWin2000 kbSDKWin32 kbVBp kbVBp500 kbVBp600 kbOSWin98 kbGrpDSVB kbDSupport kbO
+	Last Modified: 27-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0, on platform(s):
+	   - the operating system: Microsoft Windows 98 
+	   - the operating system: Microsoft Windows 2000 
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0, on platform(s):
+	   - the operating system: Microsoft Windows 98 
+	   - the operating system: Microsoft Windows 2000 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Under Microsoft Windows 98, Microsoft Windows Me, and Microsoft Windows 2000, a
+	change was made regarding how Windows allows the foreground window to be set. An
+	application is no longer permitted to bring a window to the foreground unless:
+	
+	- The application is already the foreground window.
+	
+	- The application activated the current foreground window.
+	
+	- The application received the last input event.
+	
+	- There is currently no active foreground window.
+	
+	- The foreground application is being debugged.
+	
+	- The foreground lock timeout has expired.
+	
+	Windows 2000 introduces the following constraint:
+	
+	- No menus are active.
+	
+	This article demonstrates how to implement the new method of alerting a user to
+	an application using the FlashWindowEx API function from Visual Basic. For
+	further information on this topic, see the "References" section below.
+	
+	MORE INFORMATION
+	================
+	
+	The following code sample demonstrates how to implement this functionality using
+	Visual Basic versions 5.0 or 6.0. Note that this implementation is intended for
+	Windows 98, Windows Me, and Windows 2000 only. This sample fails on any other
+	operating system.
+	
+	Step by Step Example:
+	
+	1. Start a new Visual Basic Standard EXE project. Form1 is created by default.
+	
+	2. Add a CommandButton control to Form1.
+	
+	3. Add the following code to the General Declarations section of Form1:
+	
+	  Option Explicit
+	
+	  Private Declare Function FlashWindowEx Lib "user32" _
+	     (FWInfo As FLASHWINFO) As Boolean
+	
+	  Private Declare Sub Sleep Lib "kernel32" _
+	     (ByVal dwMilliseconds As Long)
+	
+	  Private Type FLASHWINFO
+	    cbSize As Long     ' size of structure
+	    hWnd As Long       ' hWnd of window to use
+	    dwFlags As Long    ' Flags, see below
+	    uCount As Long     ' Number of times to flash window
+	    dwTimeout As Long  ' Flash rate of window in milliseconds. 0 is default.
+	  End Type
+	
+	  Const FLASHW_STOP = 0
+	  Const FLASHW_CAPTION = 1
+	  Const FLASHW_TRAY = 2
+	  Const FLASHW_ALL = FLASHW_CAPTION Or FLASHW_TRAY
+	  Const FLASHW_TIMER = 4
+	  Const FLASHW_TIMERNOFG = 12
+	
+	  Private Sub Command1_Click()
+	     Dim RetVal As Integer
+	     Dim FWInfo As FLASHWINFO
+	     
+	     ' Fill the structure:
+	     With FWInfo
+	        .cbSize = 20
+	        .hWnd = Me.hWnd
+	        .dwFlags = FLASHW_ALL
+	        .uCount = 5
+	        .dwTimeout = 0
+	     End With
+	     
+	     ' Allow time to cover the window:
+	     Sleep (2000)
+	     ' call the function:
+	     RetVal = FlashWindowEx(FWInfo)
+	  End Sub
+	
+	4. Start the application and press the CommandButton. A two-second delay occurs
+	  before the window flashes in the taskbar. This allows time for you to cover
+	  up the window and observe the change in behavior.
+	
+	REFERENCES
+	==========
+	
+	For additional information, click the article number below to view the article
+	in the Microsoft Knowledge Base:
+	
+	  Q227043 INFO: Changing the Foreground Window in Windows 98 and Windows 2000
+	
+	Platform SDK Documentation: "Foreground and Background Windows"
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbAPI kbOSWin2000 kbSDKWin32 kbVBp kbVBp500 kbVBp600 kbOSWin98 kbGrpDSVB kbDSupport kbOSWinME 
+	Technology        : kbVBSearch kbAudDeveloper kbPTNotAssigned kbZNotKeyword2
+	Version           : :5.0,6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

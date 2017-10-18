@@ -1,0 +1,113 @@
+---
+layout: page
+title: "Q321747: Dungeon Siege: How to Set Screen Resolution and Color Depth"
+permalink: kb/321/Q321747/
+---
+
+## Q321747: Dungeon Siege: How to Set Screen Resolution and Color Depth
+
+	Article: Q321747
+	Product(s): Microsoft Home Games
+	Version(s): 1.0
+	Operating System(s): 
+	Keyword(s): kbimu
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Dungeon Siege, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	When you start Dungeon Siege, the screen resolution and color depth are set
+	according to the capability of your system. You can change the screen resolution
+	and color depth in the Options Menu dialog box, but some resolutions may not be
+	available. This article explains how to set the resolution and color depth to
+	other settings so that every time that you start Dungeon Siege, the game uses
+	those settings.
+	
+	MORE INFORMATION
+	================
+	
+	You can set the screen resolution and color depth as part of the command line
+	property in either the desktop icon or Start menu program item. Those settings
+	are
+	
+	- width=<x>
+	
+	- height=<y>
+	
+	- bpp=<z>
+	
+	where <x> and <y> are screen resolution dimensions, and <z> is
+	either 16 for 16-bit color depth or 32 for 32-bit color depth. The standard and
+	supported settings for screen resolution are:
+	
+	- 640 width by 480 height
+	
+	- 800 width by 600 height
+	
+	- 1024 width by 768 height
+	
+	NOTE: Resolutions other then these are not supported by Microsoft.
+	
+	If you do not specify a setting, Dungeon Siege uses the default setting of the
+	highest resolution or color depth that is supported by your computer. For
+	example, if 640 x 480 in 16-bit color depth is your computer's highest default
+	resolution and color depth, and you specify a width of 800 but do not specify
+	other settings, Dungeon Siege starts in 800 x 480 resolution with 16-bit color
+	depth.
+	
+	NOTE: Because there are several versions of Microsoft Windows, the following
+	steps may be different on your computer. If they are, see your product
+	documentation to complete these steps.
+	
+	How to Specify Settings for the Desktop Icon
+	--------------------------------------------
+	
+	1. On the desktop, right-click the Dungeon Siege icon, and then click
+	  Properties.
+	
+	2. In the Target box, click to the right of the closing quotation mark, type a
+	  space, and then add the settings as explained earlier. For example, the
+	  following command line specifies 640 x 480 resolution with 32-bit color:
+	
+	  "C:\Program Files\Microsoft Games\Dungeon Siege\DungeonSiege.exe" width=640
+	  height=480 bpp=32 (with the quotation marks)
+	
+	3. Click OK.
+	
+	How to Specify Settings for the Start Menu Program Item
+	-------------------------------------------------------
+	
+	1. Click Start, point to Settings, and then click "Taskbar and Start Menu".
+	
+	2. Click the Advanced tab, and then click Advanced.
+	
+	3. In the Start Menu window, locate Start Menu\Programs\Dungeon Siege,
+	  right-click Dungeon Siege, and then click Properties.
+	
+	4. In the Target box, click to the right of the closing quotation mark, type a
+	  space, and then add the settings as explained earlier.
+	
+	  For example, the following settings would specify 800 x 600 resolution with
+	  16-bit color:
+	
+	  "C:\Program Files\Microsoft Games\Dungeon Siege\DungeonSiege.exe" width=800
+	  height=600 bpp=16 (with the quotation marks)
+	
+	5. Click OK, close the Start Menu window, and then click OK.
+	
+	Additional query words: msgame
+	
+	======================================================================
+	Keywords          : kbimu 
+	Technology        : kbHomeProdSearch kbGamesSearch _IK kbDungeonSiege
+	Version           : :1.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

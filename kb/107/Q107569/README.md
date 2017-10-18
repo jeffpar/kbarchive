@@ -1,0 +1,177 @@
+---
+layout: page
+title: "Q107569: Configuring for LU 6.2 Through a 3174 APPN Network Node"
+permalink: kb/107/Q107569/
+---
+
+## Q107569: Configuring for LU 6.2 Through a 3174 APPN Network Node
+
+	Article: Q107569
+	Product(s): Microsoft SNA Server
+	Version(s): WINDOWS:2.0,2.1,2.11,3.0,4.0
+	Operating System(s): 
+	Keyword(s): kbenv kbnetwork sna4
+	Last Modified: 12-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 2.0, 2.1, 2.11, 3.0, 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This document provides the configuration parameters required on an IBM 3174
+	controller acting as an APPN Network Node, supporting a downstream SNA Server
+	(APPN LEN Node) over 802.2. The link between the 3174 and the host or peer
+	system may be any link type supported by the 3174. To support PU2.1 attached
+	devices with independent LU6.2, the 3174 must be running microcode support level
+	"C" or greater.
+	
+	MORE INFORMATION
+	================
+	
+	SNA Server can access a host or peer system through an IBM 3174 APPN Network
+	Node. In this configuration, SNA Server is configured with an 802.2 connection
+	(as a PU 2.1 LEN node), which may include independent APPC LU support,
+	communicating through an adjacent IBM 3174 configured as an APPN Network Node.
+	
+	On the SNA Server machine, do the following:
+	
+	1. Run SNA Server Setup and add an 802.2 link service.
+	
+	  NOTE: Link Services are added using SNA Server Manager in SNA Server version
+	  3.0 and later.
+	
+	2. Run SNA Server Admin/Manager and configure the local SNA Server name:
+	   - Network Name: Must match parameter #501 in the 3174 configuration.
+	
+	   - Control Point Name: Must match the CPNAME parameter (Node type #1),
+	     configured in the NETWORK RESOURCES and ASSOCIATED LUs in the 3174.
+	
+	  In SNA Server 3.0 and later, the network name and control point can be set
+	  either globally as in SNA Server version 2.x or they can be set for each
+	  connection in the connection properties dialog box.
+	
+	3. Add a Local APPC LU with the following options:
+	   - LU 6.2 type: Select Independent to support multiple (parallel) sessions.
+	
+	   - LU Alias: Must match the Local LU name used by the Local APPC transaction
+	     program (refer to the product documentation).
+	
+	   - Network Name: Must match parameter #501 in the 3174 configuration.
+	
+	   - LU Name: In the 3174 configuration, this must match one of the 3174
+	     LUNAMES that is configured off the CPNAME configured on behalf of SNA
+	     Server. The 3174 supports up to 4 LUNAMES (for LEN nodes) off one CPNAME.
+	
+	   - Choose Enable Automatic Partnering if you want SNA Server to automatically
+	     partner this APPC LU with all remote APPC LUs in the SNA Server
+	     configuration.
+	
+	   - Choose "Member of Default Outgoing Local APPC LU Pool" only if the local
+	     APPC transaction program does not specifies a local APPC LU, and you want
+	     this LU to be automatically used (this is not used by most programs).
+	
+	4. Configure the 802.2 connection (associated with the 802.2 link service) using
+	  the following properties:
+	   - Remote End: Peer System NOTE: Remote End: Host system must be configured
+	     if the connection also supports 3270 devices. This setting forces SNA
+	     Server to have a secondary link role, while "Peer system" allows SNA
+	     Server to negotiate the link role to be either primary or secondary.
+	     Either role will support independent LU6.2 sessions.
+	
+	   - Activation: (As desired by the administrator--default for 802.2
+	     connections is On Server Startup.)
+	
+	   - Allowed Directions: Outgoing and Incoming should be selected.
+	
+	5. Set the following additional parameters:
+	   - Remote Network Address: Enter the network card interface address of the
+	     3174. This is set in Response 900 in the 3174 customization program.
+	
+	   - Local Node ID: not used--leave to default.
+	
+	   - Remote Node Name:
+	      - Network Name: Must match parameter #501 in the 3174 configuration
+	
+	      - Control Point Name: Must match parameter #511 in the 3174
+	        configuration.
+	
+	      - Remote Node ID: not needed--leave blank.
+	
+	   - The Advanced settings can be left at the default settings (if remote SAP =
+	     04).
+	
+	6. Focus on the 802.2 connection and create all required LUs off the connection,
+	  which can include both 3270 LUs and remote APPC LUs. To configure a Remote
+	  APPC LU off the connection, enter the following information in the APPC
+	  Remote LU Properties dialog box:
+	   - LU Alias: Name used by the Local APPC transaction program (refer to
+	     product documentation).
+	
+	   - Network Name: Remote VTAM NETID (which usually matches #501 in the 3174
+	     configuration).
+	
+	   - LU Name: Remote APPC LU name configured in VTAM (LU macro name in VTAM).
+	
+	   - Uninterpreted LU Name: Usually the same as the LU Name.
+	
+	   - Check Supports Parallel Sessions if you want to support multiple sessions.
+	
+	   - Check Enable Automatic Partnering if you want SNA Server to automatically
+	     partner this APPC LU with all other Local LUs configured.
+	
+	   - Implicit Incoming Mode: Not necessary.
+	
+	7. Configure an APPC Mode, and partner the Local and Remote APPC LUs with the
+	  Mode:
+	   - In the Local or Remote APPC LU dialog box, zoom on the Partners button. If
+	     the Local and Remote LUs are not already partnered with the desired APPC
+	     mode name, zoom on the Modes button.
+	
+	   - To create a new Mode, enter the new Mode name over an existing Mode. This
+	     Mode name must match the "DLOGMOD" entry in the Remote APPC LU macro in
+	     VTAM.
+	
+	   - Partner your Local APPC LU and Remote APPC LU with this new mode, if they
+	     are not already partnered together.
+	
+	8. Optional: Configure pools of LUs in the LU Pools dialog box of SNA Server
+	  Admin, if you want to create pools of 3270 LUs for your users.
+	
+	9. Assign LUs and/or LU Pools to the appropriate users and groups. This is not
+	  necessary for APPC, though is required for user access to 3270 sessions.
+	
+	10. Save the configuration, and then restart SNA Server.
+	
+	On the IBM 3174 machine, do the following:
+	
+	1. Using the 3174 configuration utility, configure downstream devices in Panel
+	  940. Enter the SNA Server network card (MAC) address in this panel. (You can
+	  find the network card address of the SNA Server machine by entering "NET
+	  CONFIG WKSTA" from the command line of the Windows NT machine).
+	
+	2. Configure the SNA Server control point name in the NETWORK RESOURCES option,
+	  as well as the Local APPC LU names as "LUNAMES" in the ASSOCIATED LUs section
+	  for the control point.
+	
+	3. Complete the 3174 configuration and reload it according to 3174 procedures.
+	
+	For CICS and VTAM information for LU6.2, see the SNA server Administration Guide
+	(SY57265-09/94) page 111.
+	
+	Also note the configuration questions for the 3174 change from level to level of
+	3174 microcode. Be sure to use the correct 3174 planning guide for the microcode
+	installed in the 3174.
+	
+	Additional query words: snaprod
+	
+	======================================================================
+	Keywords          : kbenv kbnetwork sna4 
+	Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ200 kbSNAServ211 kbSNAServ400 kbSNAServ210
+	Version           : WINDOWS:2.0,2.1,2.11,3.0,4.0
+	
+	=============================================================================
+	

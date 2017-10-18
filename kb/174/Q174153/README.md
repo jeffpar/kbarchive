@@ -1,0 +1,95 @@
+---
+layout: page
+title: "Q174153: XFOR: Incorrect Character Mappings when MSFS32.DLL Doesn't Match"
+permalink: kb/174/Q174153/
+---
+
+## Q174153: XFOR: Incorrect Character Mappings when MSFS32.DLL Doesn't Match
+
+	Article: Q174153
+	Product(s): Microsoft Exchange
+	Version(s): winnt:5.5
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 17-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When migrating data from a localized version of Microsoft Mail for PC Networks
+	to Microsoft Exchange Server, some characters may not be mapped correctly.
+	
+	CAUSE
+	=====
+	
+	The Microsoft Mail (PC) migration component of the Migration Wizard accesses the
+	postoffice by using the Microsoft Mail Messaging Application Programming
+	Interface (MAPI) service. The Migration Wizard includes the version of the
+	Microsoft Mail MAPI service for the appropriate server language: U.S., French,
+	German, or Japanese. The Microsoft Mail MAPI service assumes the postoffice is
+	in the default code page for that language. For French, German, and U.S., this
+	is code page 850. For Japanese, this is code page 932. If the postoffice uses a
+	different code page, some non-7 bit ASCII characters will be mapped incorrectly
+	during migration because the characters are actually in one code page but
+	assumed to be in another.
+	
+	WORKAROUND
+	==========
+	
+	To resolve this problem, you must use the localized version of the Microsoft
+	Mail MAPI service that matches the language of the postoffice (Microsoft Mail
+	for PC Networks 3.x) from which you are migrating. For example, if you want to
+	migrate a Swedish postoffice to a computer running an English version of the
+	Administrator program, first copy the Swedish Microsoft Mail Msfs32.dll file in
+	the Windows\System32 directory over the English Msfs32.dll file prior to running
+	the Migration Wizard. This prevents the message subject from being truncated to
+	40 characters.
+	
+	For Far East postoffices, the DBCS-enabled Microsoft Mail MAPI service gathers
+	its settings from the Windows NT environment. Therefore, to migrate a Korean
+	postoffice, install the Migration Wizard on a Korean Windows NT computer.
+	
+	The following lists the postoffice code pages and the corresponding Windows NT
+	code pages the data is translated into.
+	
+	Language               Postoffice  Windows NT
+	---------------------------------------------
+	Chinese (Simplified)   936          936
+	Chinese (Traditional)  950          950
+	Czech                  852         1250
+	Danish                 850         1252
+	Dutch                  850         1252
+	English                850         1252
+	Finnish                850         1252
+	French                 850         1252
+	German                 850         1252
+	Greece                 737         1252
+	Hungarian              852         1250
+	Italian                850         1252
+	Japanese (3.0)         932          932
+	Japanese               932          932
+	Korean                 949          949
+	Norwegian              850         1252
+	Polish                 852         1250
+	Portuguese             850         1252
+	Russian                866         1251
+	Spanish                850         1252
+	Swedish                850         1252
+	Turkey                 737         1252
+	
+	Additional query words: migwiz sfs jpn ger fre usa codepage
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+	Version           : winnt:5.5
+	Issue type        : kbprb
+	
+	=============================================================================
+	

@@ -1,0 +1,153 @@
+---
+layout: page
+title: "Q326108: PCL Codes are Ignored After You Install Host Integration Server"
+permalink: kb/326/Q326108/
+---
+
+## Q326108: PCL Codes are Ignored After You Install Host Integration Server
+
+	Article: Q326108
+	Product(s): Microsoft SNA Server
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 01-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Host Integration Server 2000 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Ignored Printer Control Language (PCL) codes are printed at the top of the first
+	page after you install Host Integration Server Print Sessions by using the
+	SNACFG utility.
+	
+	PCL codes that are similar to the following are printed:
+	
+	    <1B>&l6D<1B>&k2S<1B>&l63F<1B>&d@<1B>(s0B<1B>&k0S<1B>(0N<1B>E<1B>&l1o4.3c8e88P<1B>&l2A<1B>(s16.67H
+	
+	CAUSE
+	=====
+	
+	The PCL codes are ignored because the print sessions were not created through
+	the SNA Manager interface.
+	
+	By creating the print sessions using the SNACFG command line tool, the underlying
+	devmode structure of the print server session becomes corrupt. As a result,
+	embedded PCL codes under 0x40 are converted to spaces, which is the default
+	behavior if a character is unrecognized by Host Integration Server 2000.
+	
+	WORKAROUND
+	==========
+	
+	To work around this problem so that host print jobs that contain PCL codes are
+	processed and the data prints correctly, follow these steps:
+	
+	1. Right-click SNA Print Service, and then click Properties.
+	
+	2. Click to select the "Ignore Characters 3F and Under" check box, and then
+	  click Apply.
+	
+	3. Click to clear the "Ignore Characters 3F and Under" check box, click Apply,
+	  and then click OK.
+	
+	4. Save the configuration.
+	
+	5. Resend the print job. It prints correctly.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed that this is a problem in Host Integration Server 2000.
+	
+	MORE INFORMATION
+	================
+	
+	PCL commands are escape codes that can be embedded by the Mainframe Host into
+	the 3270 printer data stream. These PCL commands give instructions to the
+	printer on how to format the print job.
+	
+	When this problem occurs, SNA Print Internal traces (SPRTINTx.ATF) shows that the
+	EBCDIC 0x27 Escape Character is converted to an ASCII 0x20 Space instead of an
+	ASCII 1B Escape Character:
+	
+	DUMPD (session: 0604  ISPR49-MOD-C-SUITE-290, job #1)  
+	DUMPD (session: 0604  ISPR49-MOD-C-SUITE-290, job #1)
+	
+	  NOTE: The EBCDIC 27s appear correctly as
+	  27C52750 93F196F4
+	
+	DUMPD (session: 0604  ISPR49-MOD-C-SUITE-290, job #1) | 4BF383F8 85F8F8D7 | 
+	DUMPD (session: 0604  ISPR49-MOD-C-SUITE-290, job #1)
+	
+	  NOTE: The EBCDIC 27s appear correctly as
+	  275093F2 C1274DA2
+	
+	DUMPD (session: 0604  ISPR49-MOD-C-SUITE-290, job #1) | F1F64BF6 F7C8     | 
+	DUMPD (session: 0604  ISPR49-MOD-C-SUITE-290, job #1)
+	INTRN SNAP-3270   S3PPPDAT  CODE CONVERT PBUF 
+	INTRN SNAP-3270   S3PPPDAT  SINGLE BYTE SESSION 
+	INTRN SNAP-3270   S3PPPDAT  CONVERT CHARACTERS < 
+	PPDAT Converting 39 
+	PPDAT Converting 39 
+	PPDAT Converting 39 
+	PPDAT Converting 39 
+	PPDAT (session: 0604  ISPR49-MOD-C-SUITE-290, job #1) DATA TO FLUSH (AFTER ASCII CONVERSION) 
+	DUMPD Enter 
+	VLJOB Enter, id=0x23A0D4 
+	VLJOB Found Job 
+	VLJOB Leave 
+	DUMPD (session: 0604  ISPR49-MOD-C-SUITE-290, job #1)  
+	DUMPD (session: 0604  ISPR49-MOD-C-SUITE-290, job #1)
+	
+	  NOTE: The EBCDIC 27s are converted to ASCII 20s (spaces)
+	  20452026 6C316F34
+	
+	DUMPD (session: 0604  ISPR49-MOD-C-SUITE-290, job #1) | 2E336338 65383850 | 
+	DUMPD (session: 0604  ISPR49-MOD-C-SUITE-290, job #1)
+	
+	  NOTE: The EBCDIC 27s are converted to ASCII 20s (spaces)
+	  20266C32 41202873
+	
+	DUMPD (session: 0604  ISPR49-MOD-C-SUITE-290, job #1) | 31362E36 3748     | 
+	DUMPD (session: 0604  ISPR49-MOD-C-SUITE-290, job #1) 
+	INTRN SNAP-3270   S3PPPDAT  GDI WRITE
+	
+	
+	REFERENCES
+	----------
+	
+	For additional information, click the article number below to view the article in
+	the Microsoft Knowledge Base:
+	
+	  Q326084 BUG: Print Server Translates EBCDIC Chars Under 0x40 to Spaces
+	
+	For additional information about Host Integration Server 2000 printing, download
+	the following white paper:
+	
+	  Microsoft SNA Print Service White Paper
+	  http://www.microsoft.com/hiserver/evaluation/previousversions/Snaprint.doc
+	  (http://www.microsoft.com/hiserver/evaluation/previousversions/Snaprint.doc)
+	
+	For additional information about PCL commands, see the following resources:
+	
+	- PCL 5 Printer Language Technical Reference Manual, Hewlett Packard, HP Part
+	  No. 5961-0509, October 1992.
+	
+	- PCL 5 Comparison Guide, Hewlett Packard, HP Part No. 5961-0634, May 1994.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbHostIntegServ2000
+	Version           : :
+	Issue type        : kbbug
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

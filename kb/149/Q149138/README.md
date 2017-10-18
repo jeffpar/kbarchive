@@ -1,0 +1,102 @@
+---
+layout: page
+title: "Q149138: BUG: F6804 or F6511 Error with Spaces in Namelist Input File"
+permalink: kb/149/Q149138/
+---
+
+## Q149138: BUG: F6804 or F6511 Error with Spaces in Namelist Input File
+
+	Article: Q149138
+	Product(s): Microsoft Fortran Compiler
+	Version(s): 4.0
+	Operating System(s): 
+	Keyword(s): kbFortranPS kbLangFortrankbbuglist
+	Last Modified: 03-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Fortran PowerStation for Windows 95 and Windows NT, version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Performing a READ of a namelist input file that contains spaces in or between
+	the namelist variable objects causes one of the following run-time errors:
+	
+	  run-time error F6804
+	  - illegal subscript in namelist input record
+	
+	  -or-
+	
+	  run-time error F6511
+	  - variable name not found
+	
+	RESOLUTION
+	==========
+	
+	Remove all spaces in or between namelist object variables from the namelist
+	input file.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article. We are researching this problem and will post new
+	information here in the Microsoft Knowledge Base as it becomes available.
+	
+	MORE INFORMATION
+	================
+	
+	If you use the sample namelist input file "test.in" as a reference, the F6511
+	error occurs under one of the following conditions:
+	
+	- A space precedes a comma separating two or more assignment statements as in
+	  this example:
+	
+	     i = 3  , j = 4
+	
+	-or-
+	
+	- A space separates an array from its subscript as in this example:
+	
+	     x (3) = 2
+	
+	The F6804 error occurs when a space is inside an array subscript as in this
+	example:
+	
+	     "x( 2) = 1" or "y( 1, 1, 1) = 5"
+	
+	Sample Code to Illustrate Problem
+	---------------------------------
+	
+	  C Compile options needed: none
+	
+	        integer i, j, x(3), y(1,1,1)
+	        namelist /thelist/ i, j, x, y
+	        open(7, file='test.in', mode='read')
+	        read(7, thelist)
+	        write(*, thelist)
+	        end
+	
+	  Namelist input file:
+	
+	  ---test.in---
+	  &thelist
+	  i = 3  , j = 4
+	  x (3) = 2
+	  x( 2) = 1
+	  y( 1, 1, 1) = 5
+	  / 
+	  ---end---
+	
+	Additional query words: 4.00
+	
+	======================================================================
+	Keywords          : kbFortranPS kbLangFortran kbbuglist
+	Technology        : kbAudDeveloper kbPTProdChange kbFortranSearch kbFORTRANPower400NT
+	Version           : :4.0
+	
+	=============================================================================
+	

@@ -1,0 +1,143 @@
+---
+layout: page
+title: "Q166541: XADM: Random Access Violation in Store.exe (Edb.dll)"
+permalink: kb/166/Q166541/
+---
+
+## Q166541: XADM: Random Access Violation in Store.exe (Edb.dll)
+
+	Article: Q166541
+	Product(s): Microsoft Exchange
+	Version(s): WinNT:4.0,5.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 25-APR-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 4.0, 5.0 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	Your computer may randomly stop responding (crash) in Store.exe. This results in
+	a Drwtsn32.log file entry similar to the following:
+	
+	  Application exception occurred:
+	     App: store.dbg (pid=290)
+	     When: 9/8/1997 @ 10:4:21.453
+	     Exception number: c0000005 (access violation)
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+	version 4.0. This problem has been corrected in the latest U.S. Service Pack for
+	Microsoft Exchange Server version 4.0. For information on obtaining the Service
+	Pack, query on the following word in the Microsoft Knowledge Base (without the
+	spaces):
+	
+	  S E R V P A C K
+	
+	
+	Microsoft has confirmed this to be a problem in Microsoft Exchange Server version
+	5.0. This problem has been corrected in the latest U.S. Service Pack for
+	Microsoft Exchange Server version 5.0. For information on obtaining the Service
+	Pack, query on the following word in the Microsoft Knowledge Base (without the
+	spaces):
+	
+	  S E R V P A C K
+	
+	
+	MORE INFORMATION
+	================
+	
+	The following is a stack dump from the Drwatson log:
+	
+	State Dump for Thread Id 0x166
+	
+	  eax=00000000 ebx=0465c920 ecx=04645700 edx=00000000 esi=044f0e00
+	  edi=04645700
+	  eip=6c898e06 esp=01b7f860 ebp=00000000 iopl=0 nv up ei pl nz na po nc
+	  cs=001b  ss=0023  ds=0023  es=0023  fs=0038  gs=0000     efl=00000206
+	
+	  function: EDB!FCBUnlink
+	          6c898dee cc               int     3
+	          6c898def cc               int     3
+	          6c898df0 56               push    esi
+	          6c898df1 33d2             xor     edx,edx
+	          6c898df3 8b7108           mov     esi,[ecx+0x8]
+	                                            ds:05654106=84e40029
+	          6c898df6 c7410800000000   mov     dword ptr [ecx+0x8],0x0
+	                                            ds:05654106=84e40029
+	          6c898dfd 8b4620           mov     eax,[esi+0x20]
+	                                            ds:054ff806=52000000
+	          6c898e00 3bc8             cmp     ecx,eax
+	          6c898e02 7409             jz      JetMove+0xbfd (6c898e0d)
+	          6c898e04 8bd0             mov     edx,eax
+	  FAULT ->6c898e06 8b400c           mov     eax,[eax+0xc]
+	                                            ds:0100ea06=????????
+	          6c898e09 3bc8             cmp     ecx,eax
+	          6c898e0b 75f7             jnz     JetMove+0xbf4 (6c898e04)
+	          6c898e0d 8b400c           mov     eax,[eax+0xc]
+	                                            ds:0100ea06=????????
+	          6c898e10 85d2             test    edx,edx
+	          6c898e12 7505             jnz     JetMove+0xc09 (6c898e19)
+	          6c898e14 894620           mov     [esi+0x20],eax
+	                                            ds:054ff806=52000000
+	          6c898e17 eb03             jmp     JetMove+0xc0c (6c898e1c)
+	          6c898e19 89420c           mov     [edx+0xc],eax
+	                                            ds:0100ea06=????????
+	          6c898e1c 8b462c           mov     eax,[esi+0x2c]
+	                                            ds:054ff806=52000000
+	          6c898e1f 48               dec     eax
+	          6c898e20 89462c           mov     [esi+0x2c],eax
+	                                            ds:054ff806=52000000
+	
+	*----> Stack Back Trace <----*
+	
+	  FramePtr ReturnAd Param#1  Param#2  Param#3  Param#4  Function Name
+	  00000000 00000000 00000000 00000000 00000000 00000000 edb!JetMove
+	
+	From the User.dmp:
+	
+	  FramePtr ReturnAd Param#1  Param#2  Param#3  Param#4  Function Name
+	  01b7f860  6c89a9f7  00000000 00000000 04a10280 EDB!FCBUnlink+0x16
+	  01b7f874  6c89a4d8  01b7f998 01b7f8e0 04a10280 EDB!DIRPurge+0x87
+	  01b7f890  6c89aae3  fffffc15 00000001 6c89ac09
+	  EDB!ErrDIRCommitTransaction+0x1f8
+	  01b7f89c  6c89ac09  01216bec 00000001 004123f1
+	  EDB!ErrIsamCommitTransaction+0xd3
+	  01b7f8a8  004123f1  04a10280 00000001 01b7f998
+	  EDB!JetCommitTransaction+0x59
+	  01b7f8c4  004122c1  00000002 01b7f8e0 546b6454
+	  STORE!JSES_BASE::EcCommitTransaction+0x41
+	  01b7f8e0  0043e93f  00000002 00000000 00000000
+	  STORE!JSES::EcCommitTransaction+0x21
+	  01b7f93c  0043d0f2  01b7f998 01b7f990 01b7f9dc
+	  STORE!OMSG::EcDeliver+0x55f
+	  01b7fb64  0046efdf  00e59c2c 01216bec 00000000
+	  STORE!EcDoDeliverMessage+0x1132
+	  01b7fcc8  004b28fe  0123064c 0123143c 00e5aaac
+	  STORE!EcDeliverMessage+0xe8f
+	  01b7ffa0  00485e07  01b7ffec 010ef6a4 77de32c9
+	  STORE!FStartReceive+0x7ce
+	  > r
+	  EAX=00000000  EBX=0465c920  ECX=04645700  EDX=00000000  ESI=044f0e00
+	  EDI=04645700
+	  EIP=6c898e06  ESP=01b7f860  EBP=00000000  EFL=00000206
+	  CS=001b  DS=0023  ES=0023  SS=0023  FS=0038  GS=0000
+	
+	Additional query words: av drwtsn32
+	======================================================================
+	Keywords          :  
+	Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbZNotKeyword2
+	Version           : WinNT:4.0,5.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

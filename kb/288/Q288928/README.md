@@ -1,0 +1,125 @@
+---
+layout: page
+title: "Q288928: BatchOptimistic With Client Side Cursor in DataEnvironment Fails"
+permalink: kb/288/Q288928/
+---
+
+## Q288928: BatchOptimistic With Client Side Cursor in DataEnvironment Fails
+
+	Article: Q288928
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 2.5,2.6,6.0 SP4
+	Operating System(s): 
+	Keyword(s): kbDatabase kbDataBinding kbMDAC kbVBp600bug kbDataEnv kbGrpDSVBDB kbDSupport kbATM kbad
+	Last Modified: 23-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 SP4 
+	- ActiveX Data Objects (ADO), versions 2.5, 2.6, 2.7 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you set a recordset to use client-side cursor and the BatchOptimistic lock
+	type, there is no update to the database until you call the UpdateBatch method.
+	However, if the DataGrid is bound to the DataEnvironment object, it does not
+	work as expected. Any update to the DataGrid sends to the database immediately
+	without the UpdateBatch method being called even if you have set the command's
+	properties accordingly.
+	
+	CAUSE
+	=====
+	
+	The problem is caused by the Microsoft Environment Instance 1.0 component
+	(Msderun.dll), which does not handle such situations correctly. The problem only
+	occurs on Msderun.dll version 6.0.88.4 that is shipped with Microsoft Visual
+	Studio 6.0 Service Pack 4 (SP4). The problem does not occur on Msderun.dll
+	version 6.0.0.3005 that is shipped with Visual Studio 6.0) or version 6.0.84.50
+	that is shipped with Visual Studio 6.0 Service Pack 3 (SP3).
+	
+	RESOLUTION
+	==========
+	
+	One workaround is to use Microsoft ADO Data Control (ADODC) or ActiveX Data
+	Object ADO) recordset object as the data source of the DataGrid instead of using
+	the DataEnvironment and command, as follows:
+	
+	1. Create a new Visual Basic project, add the DataGrid control, and then add an
+	  ADO Data Control, ADODC1.
+	
+	2. Configure the ADO Data Control to use the Microsoft Jet 4.0 OLE DB Provider,
+	  and choose the Nwind.mdb database file. (The database file is shipped with
+	  Visual Basic 6.0, and the typical directory is C:\Program Files\Microsoft
+	  Visual Studio\VB98\NWIND.MDB.)
+	
+	3. Set the LockType property of ADODC1 to 4-adLockBatchOptimistic.
+	
+	4. On the newly added ADO Data Control, click the RecordSource tab of Property
+	  Pages, and then choose Products Table.
+	
+	5. Configure the DataGrid control's DataSource to adodc1.
+	
+	6. Run the project.
+	
+	7. Modify the value in the cell of the first row, second column (ProductName).
+	
+	8. Click another cell in the DataGrid, and note that the change is not updated
+	  to the database without calling the UpdateBatch method.
+	
+	NOTE: Verify the change by rerunning the program.
+	
+	STATUS
+	======
+	
+	This behavior is by design.
+	
+	MORE INFORMATION
+	================
+	
+	The problem is not related to MDAC and OLE DB Provider. Both OLE DB Provider for
+	SQL Server and OLE DB Provider for ODBC Drivers can be used to reproduce the
+	problem.
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Create a new Visual Basic project, add the DataGrid control, and then add
+	  DataEnvironment.
+	
+	2. Configure the DataEnvironment to use the Microsoft Jet 4.0 OLE DB Provider,
+	  and choose database file Nwind.mdb. (The database file is shipped with Visual
+	  Basic 6.0 and the typical directory is C:\Program Files\Microsoft Visual
+	  Studio\VB98\NWIND.MDB.)
+	
+	3. Create a new command, such as products, to open a table.
+	
+	4. Open the newly created Command Property dialog box, and click the Advanced
+	  tab. Be sure to set the command to use client-side cursor and BatchOptimistic
+	  lock type.
+	
+	5. Configure the DataGrid control's DataSource and DataMemeber properties to the
+	  DataEnvironment and the command.
+	
+	6. Run the project.
+	
+	7. Modify the value in the cell of first row, second column (ProductName).
+	
+	8. Click another cell in the DataGrid, and note that the change is updated to
+	  the database without calling UpdateBatch.
+	
+	NOTE: Verify the change by rerunning the program.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbDatabase kbDataBinding kbMDAC kbVBp600bug kbDataEnv kbGrpDSVBDB kbDSupport kbATM kbado270 
+	Technology        : kbVBSearch kbAudDeveloper kbADOsearch kbADO250 kbADO260 kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600SP4 kbADO270
+	Version           : :2.5,2.6,6.0 SP4
+	Issue type        : kbprb
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

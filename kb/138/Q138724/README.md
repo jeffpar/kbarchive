@@ -1,0 +1,210 @@
+---
+layout: page
+title: "Q138724: Notes on Installing SNA Server on Citrix's OEM version of WinNT"
+permalink: kb/138/Q138724/
+---
+
+## Q138724: Notes on Installing SNA Server on Citrix's OEM version of WinNT
+
+	Article: Q138724
+	Product(s): Microsoft SNA Server
+	Version(s): WINDOWS:2.11,3.0
+	Operating System(s): 
+	Keyword(s): kbnetwork
+	Last Modified: 13-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 2.11, 3.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The installation of Microsoft SNA Server on Citrix's OEM version of Windows NT
+	requires specific steps which are documented by Citrix. There are specific
+	requirements depending on whether SNA Server Version 2.11 or 3.0 will be
+	installed.
+	
+	The required steps are documented in either the Help file that is included with
+	the Citrix Winframe software or in application notes provided by Citrix.
+	Additional information can also be located on Citrix's Website (www.citrix.com).
+	
+	MORE INFORMATION
+	================
+	
+	SNA Server 2.11 (all service packs):
+	
+	The following is an excerpt from the Winframe Help file and pertains only to
+	2.11:
+	
+	SNA Server and Client Installation
+	
+	For the SNA Server-based installation on a WinFrame application server, follow
+	the instructions as described in the Microsoft SNA Server Installation Guide.
+	
+	However, installing on a WinFrame application server has an additional caveat.
+	There are three files that must be registered as system global. Follow the
+	procedures below:
+	
+	1. From the SNA Server Setup Finish dialog box, choose the Exit button.
+	
+	2. From the Main Group, start an MS DOS Prompt.
+	
+	3. REGISTER SNADMOD.DLL /SYSTEM
+	  REGISTER SNAMANAG.DLL /SYSTEM
+	  REGISTER SNAADMIN.EXE /SYSTEM
+	
+	4. Type "NET START SNABASE" (without the quotation marks) and press Enter.
+	
+	Configuration
+	
+	To configure the Microsoft SNA Server connection, LU and users, follow the
+	instructions as described in the Microsoft SNA Server Administration Guide.
+	
+	SNA Server 3.0 (all service packs):
+	
+	Citrix WinFrame Version 1.6 or higher with Service Pack 5 and Hotfix SE165075 is
+	required when using SNA Server 3.0.
+	
+	There are three known issues when installing SNA Server 3.0 on Cirtrix Winframe
+	1.6.
+	
+	1. SNA Setup causes an exception in PROGMAN.EXE when Winframe Service Pack 5 is
+	  installed.
+	
+	2. Installation of SNA Server is very slow on WinFrame.
+	
+	3. SNA system EXEs and DLLs must be registered system global in order to run SNA
+	  Server.
+	
+	To Install Microsoft SNA Server on a WinFrame Server
+	----------------------------------------------------
+	
+	SNA Server is installed by executing the program SETUP.EXE on the SNA Server
+	compact disk. This is a 16-bit program that calls the actual 32-bit install
+	program ACMSETUP.EXE. Because of a WinFrame performance tuning Registry entry,
+	SETUP.EXE consumes nearly 100% of the CPU while running in the background
+	Because of this, ACMSETUP.EXE does not receive enough CPU resources to complete
+	in a timely fashion. The procedure below modifies the performance tuning
+	parameters to allow SNA Server to install properly, and restores the settings
+	after installation.
+	
+	1. Install WinFrame on your server hardware.
+	
+	2. After installing WinFrame , obtain and apply WinFrame Service Pack 5. You can
+	  download Service Pack 5 from the Citrix Web site:
+	
+	  http://www.citrix.com.
+	
+	3. Obtain and apply WinFrame Hotfix WF160514. As of 08/13/97, use SE165075.EXE
+	  because it is the replacement hotfix for WF160514 which is no longer on the
+	  FTP server. You can download hotfixes from the Citrix Web site. If you do not
+	  apply Hotfix WF160514 after applying Service Pack 5, the SNA Setup program
+	  will cause a trap in PROGMAN.EXE when you attempt to install SNA Server 3.0.
+	
+	4. Log on as an administrator.
+	
+	5. At a command prompt, type regedt32 and press Enter.
+	
+	6. Locate the Registry key:
+	
+	  \\HKEY_LOCAL_MACHINE\SOFTWARE\Citrix\Compatibility\Applications\SETUP
+	
+	7. Change the value MsgQBadAppSleepTimeInMillisec: REG_DWORD from 0 to 1.
+	
+	8. Save the changes and exit the Registry Editor.
+	
+	9. At a command prompt, enter the following commands:
+	
+	  "change user /install
+	  setbuild /ms" (without the quotation marks)
+	
+	10. Install Microsoft SNA Server and SNA Client according to the supplied
+	  installation instructions in the SNA Server documentation.
+	
+	11. At a command prompt, type regedt32 and press Enter.
+	
+	12. Locate the Registry key:
+	
+	  \\HKEY_LOCAL_MACHINE\SOFTWARE\Citrix\Compatibility\Applications\SETUP
+	
+	13. Change the value MsgQBadAppSleepTimeInMillisec: REG_DWORD from 1 to 0.
+	
+	14. Save the changes and exit the Registry Editor.
+	
+	15. Use change user /execute to return the session to execute mode.
+	
+	16. Use Notepad (or another text editor) to create a batch file named SNAREG.CMD
+	  that contains the following commands:
+	
+	     @ECHO OFF
+	     REM *** SNAREG.CMD: Batch file to register SNA Server 3.0 ***
+	     REM *** files system global ***
+	     REGISTER %SNAROOT%\SNADMOD.DLL /SYSTEM
+	     REGISTER %SNAROOT%\SNAMANAG.DLL /SYSTEM
+	     REGISTER %SNAROOT%\WAPPC32.DLL /SYSTEM
+	     REGISTER %SNAROOT%\DBGTRACE.DLL /SYSTEM
+	     REGISTER %SNAROOT%\MNGBASE.DLL /SYSTEM
+	     REGISTER %SNAROOT%\SNATRC.DLL /SYSTEM
+	     REGISTER %SNAROOT%\SNALM.DLL /SYSTEM
+	     REGISTER %SNAROOT%\SNANW.DLL /SYSTEM
+	     REGISTER %SNAROOT%\SNAIP.DLL /SYSTEM
+	     REGISTER %SNAROOT%\SNABASE.EXE /SYSTEM
+	     REGISTER %SNAROOT%\SNASERVR.EXE /SYSTEM
+	     REGISTER %SNAROOT%\SNASII.DLL /SYSTEM
+	     REGISTER %SNAROOT%\SNALINK.DLL /SYSTEM
+	
+	  This file contains commands used to register some SNA executable files and
+	  DLLs as system global. Save the file and exit Notepad.
+	
+	17. Before executing the SNAREG.CMD batch file, you must stop the SNABase
+	  service or the batch file will not function properly. To stop the SNABase
+	  service:
+	  a. After installing SNA Server 3.0, run the Services application in Control
+	     Panel. The Services dialog box appears.
+	
+	  b. Select the SNABase service in the Service list box and then click the
+	     Startup button. The Service Startup dialog box appears.
+	
+	  c. Select Disabled in the Startup Type box and then click OK.
+	
+	  d. Click the Close button in the main Services dialog box.
+	
+	  e. Exit Control Panel. Shutdown and reboot the WinFrame server.
+	
+	  f. Logon to WinFrame as an administrator.
+	
+	  g. Start a command prompt session and execute the SNAREG.CMD batch file.
+	
+	  h. After the SNAREG.CMD batch file has completed, run the Services
+	     application in Control Panel. The Services dialog box appears.
+	
+	  i. Select the SNABase service in the Service list box and then click the
+	     Startup button. The Service Startup dialog box appears.
+	
+	  j. Select Automatic in the Startup Type box and then click OK.
+	
+	  k. Click the Close button in the main Services dialog box.
+	
+	  l. Exit Control Panel. Shutdown and reboot the WinFrame server.
+	
+	18. Configure SNA Server as required for your installation according to the SNA
+	  Server 3.0 documentation.
+	
+	Note: If you upgrade to SNA Server 3.0 Service Pack 3, it is necessary to stop
+	the snabase service and re-register all the DLLs mentioned in step 16.
+	Otherwise, the SNA Server connections may remain in a "Pending" state and not
+	activate correctly.
+	
+	Additional query words: prodsna snaadmin snadmod snamanag
+	
+	======================================================================
+	Keywords          : kbnetwork 
+	Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ211
+	Version           : WINDOWS:2.11,3.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

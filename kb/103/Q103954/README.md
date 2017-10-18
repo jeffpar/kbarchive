@@ -1,0 +1,101 @@
+---
+layout: page
+title: "Q103954: Protocol Standards Defined by IEEE Project 802 and FDDI"
+permalink: kb/103/Q103954/
+---
+
+## Q103954: Protocol Standards Defined by IEEE Project 802 and FDDI
+
+	Article: Q103954
+	Product(s): Windows for Workgroups and Windows NT Networking Issues
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 30-JUL-2001
+	
+	IEEE STANDARD 802 FOR LOCAL AREA NETWORKS
+	
+	Recognizing a need for standards in the LAN market, the Institute
+	of Electrical and Electronics Engineering (IEEE) undertook Project
+	802. Named for the year and month ('80 Feb) of its inception,
+	Project 802 defined a family of low-level protocol standards at
+	physical and data link layers of the OSI model.
+	
+	In IEEE 802 terms, the OSI data link layer is divided into two
+	sublayers: logical link control (LLC) and media access control
+	(MAC).
+	
+	The data link layer functions allocated to the LLC sublayer are:
+	
+	- Link establishment and termination
+	
+	- Frame traffic control
+	
+	- Frame sequencing
+	
+	- Frame acknowledgment
+	
+	The data link layer functions allocated to the MAC sublayer are:
+	
+	- Frame delimiting
+	
+	- Frame error checking
+	
+	- Media access management
+	
+	The low-level protocol standards defined by IEEE project 802
+	include 802.3 CSMA/CD, 802.4 token bus, and 802.5 token ring.
+	These standards differ at the physical layer and media access
+	control sublayer, but are compatible at the logical link
+	control sublayer.
+	
+	The 802 standards have been adopted by:
+	
+	- ANSI as American national standards
+	
+	- NBS as government standards
+	
+	- ISO as international standards (known as ISO 8802)
+	
+	PROJECT 802 OVERVIEW
+	
+	- 802.1--overview of project 802, including higher layers and internetworking
+	
+	- 802.2-logical link control (LLC)
+	
+	- 802.3-carrier sense multiple access with collision detect (CSMA/CD), very
+	  similar to Ethernet
+	
+	- 802.4-token bus
+	
+	- 802.5-token Ring
+	
+	- 802.6-metropolitan area network
+	
+	- 802.7-broadband technology advisory group
+	
+	- 802.8-optical fiber technology advisory group
+	
+	- 802.9-voice/data integration on LANs
+	
+	- 802.10-standard for interoperable LAN security
+	
+	ANSI FDDI STANDARD
+	
+	Closely related to the IEEE 802 standards is a more recently
+	developed low-level protocol standard known as fiber distributed
+	data interface(FDDI) developed by the American National
+	Standards Institute (ANSI) and based on the use of fiber optic
+	cable.
+	
+	FDDI differs from the IEEE 802 standards at the physical layer and
+	MAC sublayer, but is compatible with the IEEE standards at the LLC
+	sublayer.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	
+	=============================================================================
+	

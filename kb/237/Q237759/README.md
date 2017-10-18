@@ -1,0 +1,232 @@
+---
+layout: page
+title: "Q237759: Avoiding Client Lockouts When Using Client Connection Accounts"
+permalink: kb/237/Q237759/
+---
+
+## Q237759: Avoiding Client Lockouts When Using Client Connection Accounts
+
+	Article: Q237759
+	Product(s): Microsoft Systems Management Server
+	Version(s): winnt:2.0
+	Operating System(s): 
+	Keyword(s): kbsms200
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server version 2.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes orphan clients and steps for recovering from this
+	problem. This article also describes a procedure to plan for account rotation in
+	domains with secure account policies.
+	
+	MORE INFORMATION
+	================
+	
+	A client is orphaned when it cannot connect back to its client access point
+	(CAP) server to receive configuration updates or package instruction files.
+	Microsoft Windows 95/98 clients do not experience this condition because the
+	client always connects back to the CAP in the current user context. Microsoft
+	Windows NT client computers use a client connection account to connect to the
+	CAP. The default account that is created when the site is installed is
+	SMSClient_xxx (where xxx is the site code). This account has no special rights
+	apart from Domain User privileges.
+	
+	Depending on the number of Windows NT clients and your network infrastructure,
+	the symptoms of the orphan client condition vary. Problems that can occur
+	include:
+	
+	- Domain controllers are slow to respond to logon requests.
+	
+	- Repeated account lockout of the SMSClient_xxx account occurs when Account
+	  Lockout is enabled for the domain.
+	
+	- Performance degradation occurs on CAP servers.
+	
+	- Windows NT clients do not receive optional component configuration changes.
+	
+	- Windows NT clients do not receive advertised packages.
+	
+	- Windows NT clients do not report inventory for long periods of time.
+	
+	The orphan client condition occurs for many different reasons. Examples of when
+	this behavior can occur include:
+	
+	- When a site is rebuilt (for example, you install a new site to replace a
+	  failed site).
+	
+	- When a site is restored from backup.
+	
+	- When the SMSClient_xxx account password is changed.
+	
+	- When the SMSClient_xxx account is deleted.
+	
+	Best Practice
+	-------------
+	
+	To avoid the orphan client condition, always manually create at least one other
+	client connection account as a fallback account. To create a second client
+	connection account:
+	
+	1. In User Manager for Domains, copy the SMSClient_xxx account, and give it a
+	  strong password (eight or more characters, using a combination of upper/lower
+	  case letters, numbers, and symbols).
+	
+	2. In Server Manager, synchronize the domain.
+	
+	3. In the SMS Administrator console, click Site Hierarchy, click SiteName, click
+	  SiteSettings, click Connection Accounts, right-click Client, point to New,
+	  and then click Windows NT.
+	
+	4. Specify the account name in domain\account format and the password you chose
+	  in step 1.
+	
+	Windows NT clients receive the updated account information the next time they
+	connect to the CAP (on their 23-hour Client Configuration Installation Manager
+	(CCIM) cycle) or when they run Smsls.bat or Smsman.exe.
+	
+	NOTE: If your security policies require you to change passwords frequently and
+	your clients are installed using Windows NT Remote Client Installation method,
+	always create a new account several days before the password change is made so
+	the clients get new account information before the old password is changed. For
+	more information, refer to the procedure outlined at the end of this article.
+	
+	Steps to Recover
+	----------------
+	
+	If you are currently experiencing an orphaned client problem, use the following
+	steps to recover the clients:
+	
+	1. In User Manager for Domains, copy the SMSClient_xxx account, and give it a
+	  strong password (eight or more characters, using a combination of upper/lower
+	  case letters, numbers, and symbols).
+	
+	2. In Server Manager, synchronize the domain.
+	
+	3. In the SMS Administrator console, click Site Hierarchy, click SiteName, click
+	  SiteSettings, click Connection Accounts, right-click Client, point to New,
+	  and then click Windows NT.
+	
+	4. Specify the account name in domain\account format and the password you chose
+	  in step 1 above.
+	
+	Windows NT clients receive the updated account information when they run
+	Smsls.bat or Smsman.exe. If the clients are installed using Windows NT Remote
+	Client Installation Method, they cannot be recovered automatically. You must
+	turn on Windows Networking Logon Client Installation Method and either run
+	Smsls.bat in the logon script or manually run Smsman.exe on each affected
+	client.
+	
+	Supplemental Client Connection Account Information
+	--------------------------------------------------
+	
+	The following information is included in the Systems Management Server 2.0
+	documentation.
+	
+	If Account Lockout is enabled in Windows NT User Manager for Domains, any one
+	client with an invalid password causes all client connection accounts that the
+	client is aware of to become locked out, if the password on those accounts have
+	changed. For example, an SMS client that has been offline for a long period of
+	time can cause a lockout because all of its client connection accounts passwords
+	might have expired. When it attempts to return online with an old, invalid
+	account password, it causes that client connection account to become locked
+	out.
+	
+	Because Windows NT account information typically propagates down the domain more
+	quickly than Systems Management Server account information in a Systems
+	Management Server site hierarchy, when a client connection account password is
+	changed in Windows NT, the Systems Management Server client with the old
+	password does not work.
+	
+	If the Systems Management Server client software is installed on the client using
+	Windows NT Remote Client Installation, it is difficult for that client to
+	recover from the account lockout because the client receives updated account
+	information from the CAP using the account that did not work. However, if Logon
+	Discovery is enabled, the client receives the updated account and password
+	information during the next logon attempt (if logon scripts are used). If logon
+	points are not created, the only way for such a client to recover from account
+	lockout is for you to either enable Discovery or Logon Installation (with
+	scripts enabled), or use Smsman.exe to reinstall. You could also remove and then
+	reinstall the client using Windows NT Remote Client Installation.
+	
+	To avoid locking out clients, do not change the password of the client connection
+	account. Instead, create new client connection accounts with new passwords.
+	After the new account information is propagated to all domain controllers, CAPs,
+	and clients, you can change or delete the old accounts.
+	
+	If your domain uses a Password Restrictions Account Policy, you need to develop a
+	procedure to avoid orphaning your Windows NT clients. The time between a cycle
+	of adding and deleting accounts should be one-third of the maximum password age
+	set in Windows NT.
+	
+	Procedure to Maintain Two Valid Client Connection Accounts:
+	
+	You can use the following procedure to ensure that two valid client connection
+	accounts are maintained at all times. This procedure should be implemented in
+	every domain that has a client connection account used by clients in the site.
+	
+	NOTE: In this procedure, the time between cycles of adding and deleting accounts
+	is two weeks (one-third of the default 42-day maximum password age in Windows NT
+	User Manager for Domains).
+	
+	1. In User Manager for Domains, create the following three accounts:
+	
+	   - SMSClient_00001
+	
+	   - SMSClient_00002
+	
+	   - SMSClient_00003
+	
+	NOTE: When you name your accounts, use the SMSClient_xxxxx format to ensure
+	sufficient account capacity.
+	
+	2. In the SMS Administrator console, create the same three client connection
+	  accounts.
+	
+	3. Two weeks after you create the first three accounts, create a fourth account
+	  (SMSClient_00004) in User Manager for Domains and in the SMS Administrator
+	  console.
+	
+	4. Delete the oldest account (SMSClient_00001) from User Manager for Domains and
+	  from the SMS Administrator console.
+	
+	5. Two weeks after you delete the oldest account, add a new account
+	  (SMSClient_00005) to User Manager for Domains and the SMS Administrator
+	  console.
+	
+	6. Delete the oldest account (SMSClient_00002) from User Manager for Domains and
+	  from the SMS Administrator console.
+	
+	7. Continue this cycle every two weeks by adding a new account with an
+	  incremented number in the account name (SMSClient_xxxxx), and by deleting the
+	  oldest account in the series. Remember to add and delete the account in both
+	  User Manager for Domains and the SMS Administrator console.
+	
+	By creating three new accounts, adding a new account and then deleting an old
+	account, you ensure that two accounts remain untouched during account
+	maintenance (the newer account and the older account). The older account helps
+	ensure that clients who have been offline for a longer period of time and return
+	online, have a valid account and password.
+	
+	REFERENCES
+	==========
+	
+	The procedure outlined above is also described in Systems Management Server 2.0
+	Service Pack 1 Readme.htm
+	
+	Additional query words: prodsms plan planning kbhowto traffic access denied smssec sync synch
+	
+	======================================================================
+	Keywords          : kbsms200 
+	Technology        : kbSMSSearch kbSMS200
+	Version           : winnt:2.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

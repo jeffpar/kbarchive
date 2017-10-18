@@ -1,0 +1,131 @@
+---
+layout: page
+title: "Q185676: FEEDIGNOREINITIAL Option Not Working in Snaprint"
+permalink: kb/185/Q185676/
+---
+
+## Q185676: FEEDIGNOREINITIAL Option Not Working in Snaprint
+
+	Article: Q185676
+	Product(s): Microsoft SNA Server
+	Version(s): 3.0 SP2,3.0 SP3,4.0
+	Operating System(s): 
+	Keyword(s): kbbuglist
+	Last Modified: 11-MAR-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 3.0 SP2, 3.0 SP3, 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Host print jobs that begin with an initial Form Feed ('0x0C') command cause a
+	blank page to be printed before the rest of the print job prints, even after you
+	configure the FEEDIGNOREINITIAL for the print session using SNACFG.
+	
+	CAUSE
+	=====
+	
+	SNACFG (SNA Server Command Line Configuration utility) includes support for a
+	FEEDIGNOREINITIAL parameter for 3270 print sessions. This parameter is designed
+	to suppress Form Feed commands at the beginning of host print jobs.
+	
+	The Host Print service included with SNA Server was not designed to support the
+	FEEDIGNOREINITIAL parameter; therefore, the parameter is ignored even when it is
+	set to YES via SNACFG.
+	
+	RESOLUTION
+	==========
+	
+	SNA Server 3.0
+	--------------
+	
+	To resolve this problem, obtain the latest service pack for SNA Server version
+	3.0. For additional information, please see the following article in the
+	Microsoft Knowledge Base:
+	
+	  Q184307 How to Obtain the Latest SNA Server Version 3.0 Service Pack
+	
+	
+	
+	SNA Server 4.0
+	--------------
+	
+	Microsoft has confirmed this to be a problem in SNA Server version 4.0. This
+	problem has been corrected in the latest U.S. Service Pack for SNA Server
+	version 4.0. For information on obtaining the Service Pack, query on the
+	following word in the Microsoft Knowledge Base (without the spaces):
+	
+	  S E R V P A C K
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in SNA Server 3.0 SP2, 3.0 SP3, and
+	4.0. This problem was first corrected in SNA Server 3.0 Service Pack 4.
+	
+	MORE INFORMATION
+	================
+	
+	The following is a sample trace showing a form feed present as the first byte of
+	data:
+	
+	----------------------------------------------- 11:51:02.0859
+	  04020302->08120200 FMI DATA
+	                     NO ACK reqd Key:2 Seq:1 BCI COMMIT BBI EBI
+	                     BBIUI EBIUI
+	
+	  ---- Header  at address 0B2E7008, 2 elements ----
+	  00000002 5C062C00 07010001 01005A01     <....\.,.......Z.>
+	
+	  ---- Element at address 0B3126C0, start 13, end 268 ----
+	  0C404040 40404040 40404040 40404040     <.@@@@@@@@@@@@@@@>
+	  40404040 40404040 40404040 40404040     <@@@@@@@@@@@@@@@@>
+	  40404040 40404040 40404040 40404040     <@@@@@@@@@@@@@@@@>
+	  40404040 40404040 40404040 40404040     <@@@@@@@@@@@@@@@@>
+	  40404040 40404040 40404040 40404040     <@@@@@@@@@@@@@@@@>
+	  40404040 40404040 40404040 40404040     <@@@@@@@@@@@@@@@@>
+	  40404040 40404040 40404040 40404040     <@@@@@@@@@@@@@@@@>
+	  40404040 40404040 40404040 40404040     <@@@@@@@@@@@@@@@@>
+	  40404040 40404040 40404040 40404040     <@@@@@@@@@@@@@@@@>
+	  40404040 40404040 40404040 40404040     <@@@@@@@@@@@@@@@@>
+	  40404040 40404040 40404040 40404040     <@@@@@@@@@@@@@@@@>
+	  40404040 40404040 40404040 40404040     <@@@@@@@@@@@@@@@@>
+	  60606060 60606060 60606060 60606060     <````````````````>
+	  60606060 60606060 60606060 60606060     <````````````````>
+	  60606060 60606060 60606060 60606060     <````````````````>
+	  60606060 60606060 60606060 60606060     <````````````````>
+	
+	  ---- Element at address 0B312D98, start 13, end 71 ----
+	  60606060 60606060 60606060 60151515     <`````````````...>
+	  15151515 15151515 15151515 15151515     <................>
+	  15151515 15151515 15151515 15151515     <................>
+	  15151515 15151515 151515                <...........     >
+	
+	The following is the command-line option to set the FEEDIGNOREINITIAL option:
+	
+	  snacfg [#configpath] printsession3270 printsession3270name
+	  /Feedignoreinitial:{ yes | no }
+	
+	For more information about the snacfg command line, click SNA Server Help Topics
+	on the Help menu from SNA Server Manager, and type the following text:
+	
+	  snacfg
+	
+	Double-click the selected text to go to the Help topic.
+	
+	
+	Additional query words: snaprintservice
+	
+	======================================================================
+	Keywords          :  kbbuglist
+	Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400 kbSNAServ300SP3 kbSNAServ300SP2
+	Version           : :3.0 SP2,3.0 SP3,4.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

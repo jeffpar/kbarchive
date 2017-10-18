@@ -1,0 +1,138 @@
+---
+layout: page
+title: "Q192060: Cannot Send Or Receive E-mail On MSN Using Outlook Express"
+permalink: kb/192/Q192060/
+---
+
+## Q192060: Cannot Send Or Receive E-mail On MSN Using Outlook Express
+
+	Article: Q192060
+	Product(s): The Microsoft Network
+	Version(s): 2.6,3.02,4.0,4.01,5,5.0,5.01,5.1,5.2,5.3,5.5
+	Operating System(s): 
+	Keyword(s): kbenv kberrmsg kbmsn
+	Last Modified: 07-JAN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The Microsoft Network versions 2.6, 5.0, 5.1, 5.2, 5.3 
+	- Microsoft Internet Explorer versions 3.02, 4.0, 4.01, 5, 5.01, 5.5 for Windows 95 
+	- Microsoft Outlook Express versions 5, 5.01, 5.5 for Windows 98 Second Edition 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you send and receive e-mail messages using Microsoft Outlook Express on
+	MSN, The Microsoft Network, you may receive one of the following error
+	messages:
+	
+	  The host 'pop3.email.msn.com' could not be found. Please verify that
+	  you have entered the server name correctly. Account 'MSN Mail', Server:
+	  'pop3.email.msn.com', Protocol: POP3, Port: 110, Secure(SSL): No,
+	  Socket Error: 11001, Error Number: 0x800CCC0D
+	
+	  The host 'smtp.email.msn.com' could not be found. Please verify that
+	  you have entered the server name correctly. Account 'MSN Mail', Server:
+	  'pop3.email.msn.com', Protocol: POP3, Port: 110, Secure(SSL): No,
+	  Socket Error: 11001, Error Number: 0x800CCC0D
+	
+	CAUSE
+	=====
+	
+	This behavior can occur if MSN or Outlook Express is not configured to use the
+	correct connection.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, configure MSN and Outlook Express to use the correct
+	Connection To do this,follow these steps:
+	
+	Make sure Outlook Express is properly configured to work with MSN. For
+	information about how to configure Outlook Express to work with MSN, see the
+	following article in the Microsoft Knowledge Base:
+	<A0><A0><A0><A0> Q173952 How to Configure Outlook Express for The Microsoft Network
+	
+	1. Double-click the MSN icon on the desktop and click Settings.
+	
+	2. On the Options tab, select the Use this service for all dial-up Internet
+	  access check box, and then click OK.
+	
+	Test to see if the issue is resolved. If the issue continues to occur, proceed to
+	the next step.
+	
+	1. Double-click the Outlook Express icon on the desktop and if the MSN Sign-In
+	  screen appears, click Cancel.
+	
+	2. On the Tools menu, click Accounts.
+	
+	3. On the Mail tab, click MSN Mail, and then click Properties.
+	
+	NOTE: The name of your MSN e-mail account may vary depending on how you configure
+	Outlook Express. MSN Setup creates a default MSN e-mail account named "MSN
+	Mail."
+	
+	   - For Microsoft Outlook Express 4.x on the Connection tab, click Connect
+	     using Internet Explorer's or a 3rd party dialer.
+	
+	   - For Microsoft Outlook Express version 5.0 on the Connections tab click
+	     Always connect to this account using MSN.
+	
+	4. Click OK, and then click Close.
+	
+	This issue can also occur if Microsoft Internet Explorer is not configured to use
+	MSN. To resolve this issue, follow these steps:
+	
+	1. Right click the desktop icon Internet Explorer.
+	
+	2. Click properties.
+	
+	3. For Internet Explorer 4.x click the Connection tab, click Connect to the
+	  Internet using a modem, click Settings, and then in the "Use the following
+	  Dial-Up Networking connection" box select MSN.
+	
+	-Or-
+	
+	For Internet Explorer 5.0 click the Connections tab, click Always dial my default
+	connection, click MSN, click Set default, and then click OK.
+	
+	This error can also occour if the TCP/IP->Dial-up Adapter is not configured
+	correctly for access to MSN. To resolve this issue, follow these steps:
+	
+	1. Click start, point to Settings and click Control Panel.
+	
+	2. Double-click Network.
+	
+	3. On the Configuration tab, double-click TCP/IP.
+	
+	4. On the IP Address tab, click Obtain An IP Address Automatically.
+	
+	5. On the DNS Configuration tab, click Disable DNS.
+	
+	6. On the WINS Configuration tab, click Disable WINS Resolution.
+	
+	7. On the Gateway tab, clear the Installed Gateways box . If any gateways are
+	  listed in this box, click a gateway and then click Remove. Repeat this step
+	  until the Installed Gateways box is empty.
+	
+	8. On the Bindings tab, make sure no network components are selected. If any
+	  network component is selected, clear the check box to the left of the
+	  component. If you are prompted to choose a driver to bind with, click No.
+	
+	9. Click OK. If you are prompted to restart the computer, click Yes.
+	
+	Note: the above instructions are NOT to be applied to MSN Explorer e-mail which
+	is HTTP mail, not POP3.
+	
+	Additional query words: 4.0 4.01 msnet msnetwork microsoft-net m.s.n. outexw95 kbimu
+	
+	======================================================================
+	Keywords          : kbenv kberrmsg kbmsn 
+	Technology        : kbIEsearch kbMSNSearch kbOutlookExpressSearch kbIE95Search kbIE500Search kbZNotKeyword3 kbOutlookExpress98Search kbIE302Win95 kbIE400Win95 kbIE401Win95 kbIE500Win95 kbIE550Win95 kbIE501Win95 kbOutlookExpress550Win98SE kbOutlookExpress501Win98SE kbOutlookExpress500Win98SE kbMSN520 kbMSN530 kbMSN510 kbMSN500 kbMSN260 kbIE550Search
+	Version           : :2.6,3.02,4.0,4.01,5,5.0,5.01,5.1,5.2,5.3,5.5
+	Issue type        : kbprb
+	
+	=============================================================================
+	

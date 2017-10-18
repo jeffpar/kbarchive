@@ -1,0 +1,189 @@
+---
+layout: page
+title: "Q83461: INFO: Extended Characters Different Under Windows"
+permalink: kb/083/Q83461/
+---
+
+## Q83461: INFO: Extended Characters Different Under Windows
+
+	Article: Q83461
+	Product(s): Microsoft Windows Software Development Kit
+	Version(s): WINDOWS:3.1
+	Operating System(s): 
+	Keyword(s): kb16bitonly kbInput kbKeyIn kbSDKPlatform
+	Last Modified: 11-JUN-1999
+	
+	3.00 3.10
+	WINDOWS
+	kbprg
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows Software Development Kit (SDK) 3.1 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Applications in the Windows environment must typically deal with two different
+	character sets: the ANSI (American National Standards Institute) character set
+	and the OEM (original equipment manufacturer) character set. Conversely,
+	applications in the MS-DOS environment must deal only with the OEM character
+	set. This article describes how Windows deals with the ANSI and OEM character
+	sets.
+	
+	- When ALT+xxx is used to enter a character from the OEM character set into an
+	  application in the Windows environment that uses the ANSI character set,
+	  Windows displays the character in the ANSI character set that most closely
+	  matches the entered character.
+	
+	- When a character from the OEM character set is entered into a file using a
+	  text editor under MS-DOS and the file is displayed under Windows, the
+	  character from the ANSI character set that has the same character code number
+	  as the OEM character is displayed.
+	
+	MORE INFORMATION
+	================
+	
+	OEM and ANSI Character Sets
+	---------------------------
+	
+	MS-DOS uses the OEM character set. This character set varies between computers
+	and depends on the code page ROM (read-only memory) installed by the computer
+	manufacturer. For example, personal computers manufactured for use in the United
+	States use a character set called code page 437, while computers manufactured
+	for use in Portugal use code page 860. MS-DOS uses the OEM character set in
+	applications and to create files and filenames.
+	
+	For the most part, Windows uses fonts organized according to the ANSI character
+	set (called ANSI-set fonts, in this article). Windows also supports fonts that
+	use the same OEM character set that MS-DOS uses (called OEM-set fonts, in this
+	article).
+	
+	Character positions 32 through 127 are identical in the ANSI and OEM character
+	sets for most code pages (including code pages 437, 850, 852, 860, 861, and
+	865). The remaining characters of the OEM character set (character positions 0
+	through 31 and 128 through 255) either do not appear in the ANSI character set,
+	or exist at a different position in the ANSI character set. Therefore, some
+	characters in the OEM character set cannot be displayed in Windows using an
+	ANSI-set font. If an application must display such characters under Windows, an
+	OEM- set font is required.
+	
+	Typing ANSI and OEM Characters in Windows
+	-----------------------------------------
+	
+	In the Windows environment, a user can enter any character in the character set
+	by holding down the ALT key and typing 0xxx, where "xxx" is the decimal number
+	of the desired character position in the font. For example, with an ANSI-set
+	font in use, ALT+0123 will display the 123rd character in the ANSI character
+	set. Similarly, with an OEM-set font in use, ALT+0123 will display the 123rd
+	character in the OEM character set.
+	
+	In the MS-DOS environment, a user can enter any character in the OEM character
+	set by holding down the ALT key and typing xxx (no leading zero), where "xxx" is
+	the decimal number of the desired character position in the font.
+	
+	If a user enters an MS-DOS OEM character set code (ALT+xxx) in an application for
+	Windows that uses an ANSI-set font, Windows converts the OEM-set character to
+	the character that most closely matches in the ANSI set. This conversion is
+	governed by a mapping table that is installed with Windows. Because some OEM-set
+	characters with positions greater than 127 do not exist in the ANSI character
+	set, the result of the conversion in Windows may differ from the character in
+	the OEM set. The OemToAnsi function uses the same mapping table to perform its
+	character conversions.
+	
+	For example, while OEM character-set code page 437 contains a square- root symbol
+	at position 251, the ANSI character set does not contain this character.
+	Consequently, when the user types an ALT+251 in an edit control that uses the
+	ANSI character set, an underscore character appears because Windows defines the
+	character mapping in this manner. As another example, the C-cedilla character
+	exists in both the ANSI character set and in the OEM character-set code page
+	437. Therefore, typing ALT+128 in an edit control creates the desired C-cedilla
+	character. Note that while the character exists in both character sets, its
+	position is different in each set (128 in the OEM character set and 199 in
+	ANSI). The alternative method to request a C-cedilla is to type ALT+0199, which
+	specifies the character's position in the ANSI character set.
+	
+	An edit control that uses the ES_OEMCONVERT style and a combo box that uses the
+	CBS_OEMCONVERT style have a different behavior from that described above. These
+	two styles cause their text contents to be converted from lowercase letters to
+	uppercase letters, then from the ANSI set to the OEM set and then back to the
+	ANSI set for display. This behavior is important for an edit control in which
+	the user specifies a filename. If the user enters characters that do not exist
+	in the underlying OEM character set, the name of the file will differ from the
+	name specified by the user, which would be confusing. Because the characters are
+	mapped into characters that exist in the OEM character set, the filename
+	specified always matches the filename actually used. The contents are converted
+	to uppercase characters because it is customary in some languages to eliminate
+	diacritical marks when a character is in uppercase, and the OEM character set
+	does not contain uppercase characters with these diacritical marks.
+	
+	Displaying a String Containing OEM-Set Characters
+	
+	in an Application that Uses the ANSI Character Set
+	--------------------------------------------------
+	
+	Text editors running under MS-DOS use the OEM character set for display and in
+	the files they create. When a Windows-based text editor loads a file that uses
+	the OEM character set, the editor interprets the characters according to the
+	ANSI character set. Character positions 32 through 127 are not affected under
+	most code pages because both the ANSI and OEM character sets have identical
+	characters. However, character positions greater than 127 may be displayed
+	differently than in the MS-DOS-based text editor because the character positions
+	represent different characters in the ANSI character set.
+	
+	The solution to this difficulty is to use a Windows-based text editor that uses
+	the ANSI character set when the text contains characters in both the OEM and
+	ANSI character sets. A Windows-based editor accepts ANSI-set characters directly
+	and converts OEM-set characters to the closest matching ANSI-set characters. The
+	resulting text contains only ANSI-set characters, which can be displayed by any
+	application running under the Windows environment. If an application must
+	display OEM-set characters that are not in the ANSI character set, it must use
+	an OEM- set font.
+	
+	Consider the following example: An MS-DOS-based text editor is used to edit a
+	application's resource file on a system with OEM character-set code page 437
+	installed. The user types ALT+129 as part of the static text to label a button
+	in a dialog box. However, when the dialog box is displayed, the text is not as
+	expected but contains a black rectangle where the u-umlaut character belongs.
+	The black rectangle is used to signify character positions that are not defined
+	in the ANSI character set.
+	
+	To workaround to this problem is to edit the resource file with a Windows-based
+	text editor that uses the ANSI character set. Typing ALT+129 will create a
+	u-umlaut as desired because the editor will convert the OEM-set character to the
+	closest matching ANSI-set character. In this case OEM-set character position 129
+	maps to ANSI- set character position 252. The alternative method to specify
+	u-umlaut in the Windows-based editor is to type ALT+0252, using its ANSI
+	character set character position directly.
+	
+	As another example, an application requires the square-root symbol, which does
+	not exist in the ANSI character set, as part of a button label. Assuming the
+	code page 437 is installed, and that the resource file is edited under Windows,
+	enter ALT+0251 in the button label because the square-root symbol is the 251st
+	character of the OEM character set. When the application is run, send a
+	WM_SETFONT message to the control, specifying an OEM-set font. An OEM-set font
+	is always available from the GetStockObject function through its OEM_FIXED_FONT
+	index.
+	
+	For more information on code pages and character sets under Windows, query on the
+	following words in the Microsoft Knowledge Base:
+	
+	  prod(winsdk) and code and pages and character and sets
+	
+	For a reference to a Windows Developer's Note regarding this subject, query on
+	the following word in the Microsoft Knowledge Base:
+	
+	  INTLAPPS
+	
+	Additional query words: 3.00 3.10 folding
+	
+	======================================================================
+	Keywords          : kb16bitonly kbInput kbKeyIn kbSDKPlatform 
+	Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+	Version           : WINDOWS:3.1
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

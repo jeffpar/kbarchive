@@ -1,0 +1,121 @@
+---
+layout: page
+title: "Q252209: XADM: Troubleshooting Link Monitor When Red Arrow Is Displayed"
+permalink: kb/252/Q252209/
+---
+
+## Q252209: XADM: Troubleshooting Link Monitor When Red Arrow Is Displayed
+
+	Article: Q252209
+	Product(s): Microsoft Exchange
+	Version(s): winnt:4.0,5.0,5.5
+	Operating System(s): 
+	Keyword(s): exc4 exc5 exc55
+	Last Modified: 19-APR-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Connection problems may exist for the Exchange Server computers that you are
+	using link monitors to monitor. In link monitor in the Exchange Server
+	Administrator program, if the arrow points down and is red, this indicates a
+	problem. This article provides some steps that can help you troubleshoot this
+	issue.
+	
+	MORE INFORMATION
+	================
+	
+	To troubleshoot connection problems:
+	
+	1. Ensure that the four following core services for Exchange Server are started
+	  on the server you are monitoring:
+	
+	   - The Exchange Server System Attendant service
+	
+	   - The Exchange Server Directory service
+	
+	   - The Exchange Server Information Store service
+	
+	   - The Exchange Server Message Transfer Agent (MTA) service
+	
+	  If these services are not started, you need to check the Windows NT Event
+	  Viewer application event log and the System log on the server for any error
+	  messages. If there are any errors for any of these services that prevent the
+	  start of the service, you need to correct those errors first.
+	
+	2. On the Exchange Server computer that you want to monitor, make sure that the
+	  system attendant has an X.400 address:
+	
+	  a. Start the Exchange Server Administrator program.
+	
+	  b. Connect to the server that you want to monitor; on the File menu, click
+	     "Connect to Server".
+	
+	  c. Go to the Servers container for the server that you want to monitor.
+	
+	  d. Select the server that you want to monitor.
+	
+	  e. In the right pane, select System Attendant.
+	
+	  f. On the File menu, click Properties to open the properties for the system
+	     attendant. The System Attendant Properties dialog box is displayed.
+	
+	  g. Click the E-mail Addresses tab, and check to see if there is an X.400
+	     address.
+	
+	  If there is no X.400 address listed, you must generate a new X.400 address. To
+	  do this, either reinstall Exchange Server or restore the directory from a
+	  backup that you know is good and that contains this information. If you
+	  reinstall Exchange Server, the X.400 address is generated for the system
+	  attendant.
+	
+	3. Further general troubleshooting steps that you can take include the
+	  following:
+	
+	  a. Ping by Internet protocol (IP) and fully qualified domain name (FQDN).
+	
+	  b. Check the status of the network connection by using the RPCPING command.
+	
+	For additional information, click the article number below to view the article in
+	the Microsoft Knowledge Base:
+	
+	  Q167260 How to Use RPCPing to Test RPC Communication
+	
+	  c. If multiple connections do not work, check your network for common causes
+	     of the problem, such as servers, routers, switches, bridges, gateways, or
+	     leased lines.
+	
+	  d. Ping messages that you send to foreign servers should be received by an
+	     application that replies to the messages. If you send the ping message to
+	     a non-existent address, a non-delivery report (NDR) is a sign that the
+	     link is operational. However, when NDRs are returned from foreign systems,
+	     it is not clear which host actually generated the NDR and which connection
+	     has been tested. Send a message along the route of the ping message and
+	     examine the NDR to determine the host that replied.
+	
+	  e. Check the link monitor log for the polling intervals, bounce tolerances,
+	     and notifications. This can help you troubleshoot possible causes.
+	
+	  f. Use the Event Viewer to search application event logs on the home server
+	     of the link monitor and on the destination server. To make the search more
+	     efficient, filter the display to show only those events between the last
+	     successful message and the first link monitor warning. Look for warnings
+	     and alerts from the MTA, information store, and directory.
+	
+	
+	Additional query words: Installing Exchange, Restoring Link Monitors
+	
+	======================================================================
+	Keywords          : exc4 exc5 exc55 
+	Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+	Version           : winnt:4.0,5.0,5.5
+	Issue type        : kbprb
+	
+	=============================================================================
+	

@@ -1,0 +1,241 @@
+---
+layout: page
+title: "Q181997: How SNA Server Operates w/ NetWare When Configured in NDS Mode"
+permalink: kb/181/Q181997/
+---
+
+## Q181997: How SNA Server Operates w/ NetWare When Configured in NDS Mode
+
+	Article: Q181997
+	Product(s): Microsoft SNA Server
+	Version(s): WINDOWS:3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1,4.0 SP2
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 14-MAR-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 3.0 SP1, 3.0 SP2, 3.0 SP3, 4.0, 4.0 SP1, 4.0 SP2 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Novell's NetWare Directory Services (NDS) support has been added to SNA Server
+	3.0 Service Pack 1. This feature allows SNA Server to create and publish useful
+	information about its existence into the NDS Tree. The information that is
+	registered can be queried by NDS-enabled SNA Server clients to resolve sponsor
+	connections. The requirement to run in native bindery mode (or emulated bindery
+	mode in NetWare 4.x) has been removed. However, all servers and clients in a
+	domain must support NDS to take advantage of this enhancement. If they cannot
+	support it, they must be configured to run in bindery mode.
+	
+	This article explains the behavior of Microsoft SNA Server and Microsoft SNA
+	clients when configured to support NDS. This article does not attempt to explore
+	all the details of NDS but can be used to provide a foundation to successfully
+	troubleshoot connectivity-related issues when configured in NDS mode.
+	
+	Overview
+	--------
+	
+	Prior versions of SNA Server were limited to NetWare bindery-based participation
+	only. At startup time, all SNA Server computers broadcast their subdomain name
+	and computer name using SAP type 0x444. Sometime later, a client requests an
+	initial SNA session (3270 or APPC). The client first sends out an SAP query
+	packet in an effort to locate a bindery-based server. The intent is to query the
+	bindery for a list of registered SNA Server computers that can be used to create
+	the sponsor connection. After the client receives a response, it attaches to one
+	server and enumerates all SNA Server computers in the bindery. The client then
+	selects at random one of the names from this list of SNA Server computers and
+	attempts to get a LAN connection with one of the SNA Server computers. The SNA
+	Server computer responds with a list of all SNA Server computers that are
+	available to get a 3270 or APPC session with. This special connection is called
+	the "Sponsor Connection". Finally, the SNA Server client attempts to connect to
+	each SNA Server computer in the list until a server is found that can service
+	the 3270 or APPC request.
+	
+	When SNA Server is configured to support NDS, much of same "logic" mentioned
+	above is used to resolve an SNA Server sponsor connection as well. The SNA
+	Server creates an SNA Server object into the tree using NDS function calls, and
+	the client workstation formulates an NDS-based query operation to locate the SNA
+	Server or subdomain name.
+	
+	NDS Security and Operational Requirements
+	-----------------------------------------
+	
+	The NDS schema is extended to create a new class definition called Microsoft SNA
+	Server. The new class is derived from an existing base class called Server. This
+	particular class identifies entities that manage one or more resources and
+	provide access to those resources through a communication protocol.
+	
+	When SNA Server is first started, Snabase authenticates using the credentials
+	provided in the IPX Directory Properties of SNA Server. From this point, it
+	checks for the existence of the Microsoft SNA Server class. If the class does
+	not exist (meaning there have been no prior installations of SNA Server into the
+	NDS tree), the class will be created. A schema modification such as this
+	requires the trustee (Snabase user account in this case) to have, at a minimum,
+	Write rights to the Access Control List (ACL) of the directory's [ROOT] object.
+	After the class definition has been defined and the NDS base schema has been
+	updated with the new extension, no further attempts are made to create the
+	Microsoft SNA Server class from *any* subsequent SNA Server installations that
+	are configured to use this particular Tree. At this point, the Write rights to
+	the [ROOT] object can be removed if you want.
+	
+	NOTE: Extensions to the default schema are not typically backed up by third-
+	party tape backup providers in an NDS environment, although the objects created
+	with these extensions are. Therefore, after disaster recovery has been
+	performed, Snabase may not find the Microsoft SNA Server class registered within
+	NDS and must recreate it. NetWare administrative personnel who have removed the
+	Write rights to the [ROOT] for Snabase user account must reassign these. Failure
+	to do so results in an incomplete restoration.
+	
+	
+	After the class has been defined, Snabase must create the Microsoft SNA Server
+	object in the context specified in the SNA Server configuration. The object will
+	have the same name as the Windows NT computer name from which SNA Server is
+	running. To create this object, Snabase needs Create and Delete Object rights to
+	the Organizational Unit (OU) from where the SNA Server object will be created.
+	There are numerous ways to provide these rights in an NDS environment (for
+	example, inheritance, security equivalency, trustee assignment, and so on). See
+	your NetWare administrator for details. After the object is created, it becomes
+	security equivalent to the [PUBLIC] object. The [PUBLIC] object is granted
+	Browse object rights by default to the [ROOT], which allows clients to browse
+	the tree without authenticating to NDS. So SNA client workstations do not
+	necessarily have to be authenticated to NetWare in order to resolve the SNA
+	sponsor connection, if the default settings for [PUBLIC] have not been changed.
+	
+	
+	The Windows NT computer name becomes the name of the newly created SNA object,
+	which can be viewed by using the NWAdmin utility provided by Novell. An
+	administrator can use this utility to determine whether SNA Server has
+	successfully registered with NDS as well. When SNA Server is administratively
+	taken down, Snabase removes the object from the tree using the NDS Remove Entry
+	function.
+	
+	
+	IPX/SPX based workstations that are currently using NDS are typically configured
+	with either Microsoft Client for NetWare Networks or Novell's Client32
+	implementation, depending on the client's operating system. See Table 1 below
+	for details concerning the various connectivity combinations that are supported
+	for SNA Server.
+	
+	SNA SERVER         OPERATING    NETWARE   COMMENTS
+	COMPONENT          SYSTEM       CLIENT
+	---------------    ---------    --------  ----------------------------
+	
+	Windows 3.x                               NDS is supported with the
+	                                         latest Novell Win3.x client.
+	
+	Sna Win95 Client    Win95       MCNW      Supported
+	
+	Sna Win95 Client    Win95       NWC32     Supported
+	
+	Sna Win95 Client    NT4.0       MCNW      Supported
+	
+	Sna Win95 Client    NT4.0       NWC32     Supported
+	
+	Sna Win95 Client    NT3.51      MCNW      ?
+	
+	Sna Win95 Client    NT3.51      NWC32     Supported
+	
+	Sna WinNT Client    NT4.0       MCNW      Supported
+	
+	Sna WinNT Client    NT4.0       NWC32     x86 only
+	
+	Sna WinNT Client    NT3.51      MCNW      Not Supported
+	
+	Sna WinNT Client    NT3.51      NWC32     x86 only
+	
+	SNA Server          NT4.0       MCNW      This is the only combination
+	                                         supported by the SNA server
+	                                         platform.
+	
+	SNA Server          NT4.0       NWC32     Not supported
+	
+	SNA Server          NT3.51      MCNW      Not supported
+	
+	SNA Server          NT3.51      NWC32     Not supported
+	
+	MCNW = Microsoft Client for NetWare
+	
+	NWC32 = NetWare Client 32
+	-------------------------------------------------------------
+	
+	Table 1.
+	
+	SNA client workstations that are configured to support NDS through Microsoft
+	Client for NetWare Networks client or Novell's Client/32 client can locate SNA
+	Server computers either by machine name (remote) or by subdomain name (local).
+	In either case, the client resolves the location of the context specified within
+	the SNA configuration program by performing NDS query operations. From this
+	point, all objects of type Microsoft SNA Server are queried and sent to the
+	client workstation.
+	
+	By default, NDS grants the [PUBLIC] object Browse object rights to the [ROOT]
+	object. If this has not been changed, SNA client workstations do not have to be
+	logged into NetWare to query for a sponsor connection.
+	
+	How to Configure SNA Server to Use NDS
+	--------------------------------------
+	
+	SNA Server can be configured to support NDS via the SNA Server Manager
+	application. The following are the prerequisites and steps that can be used to
+	accomplish this task:
+	
+	1. Select the Properties for the SNA Server by right-clicking the icon.
+	
+	2. Enable IPX/SPX as a Network Transport under the Server Configuration tab.
+	  *NOTE: IPX/SPX must be loaded prior to this step.
+	
+	3. Under the IPX Directory Services tab, select the NetWare Directory Services
+	  (NetWare 4.x) radio control and configure the properties as described below:
+	  a. NDS Logon Name
+	
+	     The NDS Logon Name is shaded (you cannot modify it from this dialog box).
+	     The name used is the Windows NT account name under which SnaBase is
+	     running.
+	
+	  b. Password
+	
+	     Type your Windows NT password for the account name in the NDS Logon Name
+	     box. The password entered here does *not* necessarily have to match the
+	     password defined in Windows NT.
+	
+	  c. Verify Password
+	
+	     Type your password again to verify.
+	
+	  d. Context Name
+	      - Leave this box blank to accept the default value defined in Gateway
+	        Services for Novell service (GWNW).
+	
+	        -or-
+	
+	      - Type a Context Name. You must know the correct Context Name.
+	
+	        NOTE: This is the location where the SNA Server object will be created.
+	        See your Novell system administrator for a Context Name other than the
+	        default name.
+	
+	  e. Tree Name
+	      - Leave this field blank to accept the default value defined in GWNW.
+	
+	        -or-
+	
+	      - Type a Tree Name. You must know the correct Tree Name
+	
+	        NOTE: This is the Tree your SNA Server object will be registered in. See
+	        your Novell system administrator for a name other than the default
+	        name.
+	
+	Additional query words: nds netware
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ300SP2
+	Version           : WINDOWS:3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1,4.0 SP2
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

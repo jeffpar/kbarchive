@@ -1,0 +1,118 @@
+---
+layout: page
+title: "Q138831: Disabling TCP/IP Nagle Algorithm Improves Speed on Slow Nets"
+permalink: kb/138/Q138831/
+---
+
+## Q138831: Disabling TCP/IP Nagle Algorithm Improves Speed on Slow Nets
+
+	Article: Q138831
+	Product(s): Microsoft SNA Server
+	Version(s): WINDOWS:2.1,2.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 13-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 2.1, 2.11, on platform(s):
+	   - the operating system: Microsoft Windows NT 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	This article explains the Nagle TCP/IP algorithm and how to manually disable it
+	on different the SNA Server client and server releases for different operating
+	systems. It also mentions how to obtain an update that automatically disables
+	this algorithm. Microsoft has updated the file <snaroot>\SYSTEM\SNAIP.DLL
+	to correct this problem.
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products that are
+	listed at the beginning of this article.
+	This correction is included in the latest U.S. Service Pack for SNA Server for
+	Windows NT, version 2.11. For information on obtaining the Service Pack, query
+	on the following word in the Microsoft Knowledge Base (without the spaces):
+	
+	  S E R V P A C K
+	
+	MORE INFORMATION
+	================
+	
+	The Nagle TCP/IP Algorithm
+	--------------------------
+	
+	The Nagle TCP/IP algorithm was designed to avoid problems with small packets,
+	called tinygrams, on slow networks. The algorithm says that a TCP/IP connection
+	can have only one outstanding small segment that has not yet been acknowledged.
+	The definition of "small" varies but usually it is defined as "less than the
+	segment size" which on ethernet is about 1500 bytes.
+	
+	Manually Disabling the Nagle Algorithm
+	--------------------------------------
+	
+	You can disable the Nagle algorithm by performing the SNA Server client and
+	server modifications mentioned below and following the instructions in the
+	Activating the Modifications section.
+	
+	SNA Server Modifications
+	------------------------
+	
+	1. Under the subtree HKEY_LOCAL_MACHINE add the subkey "SNATCP" (without the
+	  quotation marks) under the following key:
+	
+	SYSTEM\CurrentControlSet\Services\Snabase\Parameters\ 
+	
+	2. Choose Add Key from the Edit menu and use the following information:
+	
+	     Value Name: NoDelay
+	     Data Type:  REG_SZ
+	     String:     yes
+	
+	Windows 95 SNA Client Modifications
+	-----------------------------------
+	
+	Add the same registry entry as SNA Server above.
+	
+	Windows 3.x Modifications
+	-------------------------
+	
+	Windows 3.x client always disables the Nagle algorithm and there is no way to
+	enable it.
+	
+	Activating the Modifications
+	----------------------------
+	
+	When the NoDelay is set to yes, the TCP/IP transport DLL uses the TCP_NODELAY
+	option when it opens a socket.
+	
+	For this to take effect, the client server interface must be stopped and
+	restarted on both the server and client after the registry changes have been
+	made. The following table shows the name of the SNA client server interface
+	program and the corresponding operating system platform:
+	
+	  Client Server Interface      Platform
+	  ----------------------------------------
+	  SNABASE Service              Windows NT
+	  SNABASE Service              Windows 95
+	  WNAP.EXE                     Windows 3.x
+	
+	Note: The Nagle algorithm is defined in TCP/IP RFC 896.
+	
+	Additional query words: prodsna 2.10 2.11
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbSNAServSearch
+	Version           : WINDOWS:2.1,2.11
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

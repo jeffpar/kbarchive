@@ -1,0 +1,112 @@
+---
+layout: page
+title: "Q186083: INFO: New Features of Class Browser"
+permalink: kb/186/Q186083/
+---
+
+## Q186083: INFO: New Features of Class Browser
+
+	Article: Q186083
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:6.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 30-JUL-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes some of the new features added to the Class Browser in
+	Visual FoxPro 6.0.
+	
+	MORE INFORMATION
+	================
+	
+	- In the new Class Browser, the splitters allow you to resize the Treeview and
+	  description areas.
+	- The new Class Browser provides more detailed information, as compared to the
+	  Class Browser for Visual FoxPro 5.0, when opening type libraries such as OLB,
+	  TLB, DLL, OCX, EXE, and so forth. The Class Browser is now comparable to the
+	  Visual Basic version 5.0 Object Browser, similar to the one included in
+	  Office 97 VBA.
+	
+	Example 1
+	---------
+	
+	Open Vfp6.exe in the Class Browser to view the entire Visual FoxPro 6.0
+	automation server object model. Note that the Class Browser displays more
+	collections as compared to Visual FoxPro 5.0. The Visual FoxPro 6.0 Class
+	Browser also displays information for the selected Collection, Property, Event,
+	or Method in the description pane, at the bottom. This is particularly useful
+	for seeing all the related member and collection interfaces of the new Project
+	Manager hooks.
+	
+	Example 2
+	---------
+	
+	- If a specific Property, Event or Method (PEM) in a type library has help
+	  associated with it, you can right-click and select Help or press the space
+	  bar when you select the item, which opens help for that topic.
+	
+	- The Redefine dialog in the new Class Browser, for selecting a specific class
+	  to redefine, no longer requires you to type in the class name. The Redefine
+	  dialog now uses the get class dialog.
+	
+	- Right-clicking the Class Browser/Component Gallery button (to the left of the
+	  Open button) displays a history list, up to 32 items, of the recent items
+	  selected for both the Component Gallery and the Class Browser since that
+	  instance of Browser.app was loaded (not saved after closing, it is a per
+	  Browser/Gallery window list only). If you select a Class Browser item when in
+	  the component gallery mode, Gallery switches to the Class Browser
+	  automatically and that item (class or member) is selected. If the VCX for
+	  that item is no longer open, that VCX (or file) is automatically added to the
+	  current view then selected. The same applies to Component Gallery catalogs
+	  and items.
+	
+	- The Class Browser and the Component Gallery shortcut menus now have a menu
+	  item called "New Window", which loads a new instance of the Class Browser (or
+	  Gallery) and loads the current files in the view and selects the same item
+	  (kind of a window clone feature). When in the Class Browser mode, there is a
+	  shortcut menu item called "New Component Gallery" that opens a new Component
+	  Gallery window and opens the same catalogs and selects the same item as in
+	  the current Gallery window. When in the Component Gallery mode, there is a
+	  shortcut menu item called "New Class Browser" that opens a new Class Browser
+	  window and opens the same files and selects the same item as in the current
+	  browser window.
+	
+	- Exporting the class definition code is enhanced. In the Visual FoxPro 5.x
+	  Class Browser, clicking the View Class Code button displays the class code in
+	  a modal Visual FoxPro edit window. In Visual FoxPro 6.0, when you click the
+	  View Class code button, a modaless form appears over the Class Browser area
+	  containing the class code, and is auto- refreshed if you select a different
+	  class in the left pane. Besides that, selecting a different method from the
+	  same class also auto- refreshes and positions the cursor in the View Class
+	  code window. This window can be resized, minimized, and so forth. If you
+	  close the Class Browser, the window automatically closes.
+	
+	- If you right-click the View Class code button, using Microsoft Internet
+	  Explorer 4.0 or higher, the class code displays in the Internet Explorer Web
+	  browser control and the text appears in HTML. If you are using Microsoft
+	  Internet Explorer 3.0 (or you do not have Internet Explorer), then a Visual
+	  FoxPro EditBox class displays the class code.
+	
+	- The Export option from the Class Browser shortcut menu now allows you to save
+	  the file using HTM or HTML extensions that automatically generate HTML
+	  instead of plain text for the class code definition.
+	
+	Additional query words: kbvfp600
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+	Version           : WINDOWS:6.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

@@ -1,0 +1,79 @@
+---
+layout: page
+title: "Q279635: CTL on Destination Node Does Not Work after Replicatication"
+permalink: kb/279/Q279635/
+---
+
+## Q279635: CTL on Destination Node Does Not Work after Replicatication
+
+	Article: Q279635
+	Product(s): Internet Information Server
+	Version(s): 5.0
+	Operating System(s): 
+	Keyword(s): kbCOMIS kbWin2000sp3fix
+	Last Modified: 15-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Services version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When a Cluster Server (MSCS) uses Internet Information Services (IIS) 5.0, and
+	the administrator creates a Client Trust List (CTL) on Node A, and then runs
+	IISSYNC for metabase replication from Node A to Node B, the property changes are
+	replicated, but the CTL is not. If a CTL is already in place on Node B before
+	the replication, IISSYNC replaces the CTL with a null value.
+	
+	CAUSE
+	=====
+	
+	Each CTL has a GUID and is computer specific. Even though IISSYNC replicates
+	this GUID, the second node does not have a CTL associated with it.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, obtain the latest service pack for Windows 2000. For
+	additional information, click the following article number to view the article
+	in the Microsoft Knowledge Base:
+	
+	  Q260910 How to Obtain the Latest Windows 2000 Service Pack
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	  Date      Time    Version         Size    File name     Platform
+	  -------------------------------------------------------------
+	  5/31/2001  03:31p  5.0.2195.3649  26896   Mdsync.dll    Intel
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed that this is a problem in Internet Information Services
+	(IIS) 5.0. This problem was first corrected in Windows 2000 Service Pack 3.
+	
+	MORE INFORMATION
+	================
+	
+	This fix prevents any replication in respect to the CTL, so that a CTL that
+	exists on the destination node before the replication will still work after the
+	metabase replication runs.
+	
+	
+	Additional query words: kbIISCom
+	
+	======================================================================
+	Keywords          : kbCOMIS kbWin2000sp3fix 
+	Technology        : kbiisSearch kbiis500
+	Version           : :5.0
+	Hardware          : ALPHA x86
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

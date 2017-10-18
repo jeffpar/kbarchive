@@ -1,0 +1,110 @@
+---
+layout: page
+title: "Q198248: Some SPI_SET Settings Are Treated As Read-Only Attributes"
+permalink: kb/198/Q198248/
+---
+
+## Q198248: Some SPI_SET Settings Are Treated As Read-Only Attributes
+
+	Article: Q198248
+	Product(s): Microsoft Windows NT
+	Version(s): WinNT:4.0
+	Operating System(s): 
+	Keyword(s): kbWinNT400sp4fix
+	Last Modified: 10-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 4.0 
+	- Microsoft Windows NT Workstation version 4.0 
+	- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	You can call the SystemParametersInfo API to set and get all the settings
+	controlled by the Windows Control Panel. Normally a user would have to select
+	the Windows Control Panel to view or change system settings such as granularity,
+	wallpaper, or icon title wrap. Instead of forcing the user to set things
+	manually using Control Panel, you can have your program call the
+	SystemParametersInfo API to set them automatically.
+	
+	The SystemParametersInfo function queries or sets system-wide parameters. These
+	API functions can also update the user profile while setting a parameter
+	(SPI_SET). Your custom application may have problems defining system settings
+	because certain functions are treated as read-only in the SystemParametersInfo,
+	thus limiting the ability to define a system's settings. These functions are:
+	SPI_SETDRAGFULLWINDOWS, SPI_SETDRAGWIDTH, SPI_SETDRAGHEIGHT, SPI_SETCURSORS, SPI
+	_SETICONS, and SPI_SETLANGTOGGLE.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, obtain the latest service pack for Windows NT 4.0 or
+	Windows NT Server 4.0, Terminal Server Edition. For additional information,
+	please see the following article in the Microsoft Knowledge Base:
+	
+	  Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Windows NT 4.0 and Windows NT
+	Server 4.0, Terminal Server Edition. This problem was first corrected in Windows
+	NT 4.0 Service Pack 4.0 and Windows NT Server 4.0, Terminal Server Edition
+	Service Pack 4.
+	
+	MORE INFORMATION
+	================
+	
+	SPI_SETDRAGFULLWINDOWS: Sets dragging of full windows either on or off. The
+	uiParam parameter specifies TRUE for on or FALSE for off.
+	
+	SPI_SETDRAGWIDTH: Sets the width, in pixels, of the rectangle used to detect the
+	start of a drag operation.
+	
+	SPI_SETDRAGHEIGHT: Sets the height, in pixels, of the rectangle used to detect
+	the start of a drag operation.
+	
+	SPI_SETCURSORS: Reloads the system cursors. Set the uiParam parameter to zero and
+	the pvParam parameter to NULL.
+	
+	SPI _SETICONS: Reloads the system icons. Set the uiParam parameter to zero and
+	the pvParam parameter to NULL.
+	
+	SPI_SETLANGTOGGLE: Sets the hot key set for switching between input languages.
+	The uiParam and pvParam parameters are not used. The value sets the shortcut
+	keys in the keyboard property sheets by reading the registry again. The registry
+	must be set before this flag is used. the path in the registry is
+	HKEY_CURRENT_USER\keyboard layout\toggle. Valid values are "1" = ALT+SHIFT, "2"
+	= CTRL+SHIFT, and "3" = none.
+	
+	Syntax:
+	
+	  BOOL SystemParametersInfo(
+	
+	    UINT uiAction, // system parameter to query or set
+	    UINT uiParam,  // depends on action to be taken
+	    PVOID pvParam, // depends on action to be taken
+	    UINT fWinIni   // user profile update flag);
+	
+	For additional information on these and other API functions, please refer to
+	MSDN.
+	
+	For additional information on the C2 Evaluation and Certification process, please
+	see the following article in the Microsoft Knowledge Base:
+	
+	  Q93362 C2 Evaluation and Certification for Windows NT
+	
+	======================================================================
+	Keywords          : kbWinNT400sp4fix 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch
+	Version           : WinNT:4.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

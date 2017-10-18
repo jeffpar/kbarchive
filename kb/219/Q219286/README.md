@@ -1,0 +1,63 @@
+---
+layout: page
+title: "Q219286: Appointments Are Not Deleted from OWA When Using Netscape"
+permalink: kb/219/Q219286/
+---
+
+## Q219286: Appointments Are Not Deleted from OWA When Using Netscape
+
+	Article: Q219286
+	Product(s): Microsoft Exchange
+	Version(s): 5.5
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 17-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Outlook Web Access, version 5.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Netscape's browser cannot delete more than one appointment per session. No error
+	messages are returned nor any indication of a problem is given.
+	
+	
+	CAUSE
+	=====
+	
+	By default, Netscape enables Disk Cache and Memory Cache, causing the page not
+	to expire therefore, reloading a local copy of the page.
+	
+	RESOLUTION
+	==========
+	
+	One solution is to turn off the cache by setting the disk cache and memory cache
+	values to zero. Another, less intrusive solution, is to flush the cache before
+	reloading the frame. Netscape Navigator 4.5 has command buttons to do this for
+	you. If you have any problems locating the cache settings, contact Netscape.
+	
+	MORE INFORMATION
+	================
+	
+	Network trace information shows that Netscape sends a "Get" request that does
+	not include the "no-cache" directive. This allows "stale" information to
+	remain.
+	. For more information, please refer to RFC 1945.
+	
+	Note: Internet Explorer uses the "no-cache" directive and also "expires" the page
+	immediately.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbOutlookSearch kbOWASearch kbOWA550
+	Version           : :5.5
+	Issue type        : kbprb
+	
+	=============================================================================
+	

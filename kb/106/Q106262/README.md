@@ -1,0 +1,142 @@
+---
+layout: page
+title: "Q106262: FIX: Direction Flag Is Not Cleared When an Exception Occurs"
+permalink: kb/106/Q106262/
+---
+
+## Q106262: FIX: Direction Flag Is Not Cleared When an Exception Occurs
+
+	Article: Q106262
+	Product(s): Microsoft C Compiler
+	Version(s): winnt:
+	Operating System(s): 
+	Keyword(s): kbCRT kbVCkbbuglist kbfixlist
+	Last Modified: 26-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The C Run-Time (CRT), included with:
+	   - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	
+	Functions called in an exception handler can cause unexpected behavior such as
+	access violations.
+	
+	CAUSE
+	=====
+	
+	The direction flag bit may not be cleared when the exception occurs.
+	
+	RESOLUTION
+	==========
+	
+	Clear the direction flag bit within either the exception handler or the
+	termination handler. The sample code shown below illustrates clearing the flag
+	in an exception handler.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the products listed at the beginning
+	of this article. This problem was corrected in Visual C++ version 2.0.
+	
+	MORE INFORMATION
+	================
+	
+	On Intel processors, the direction flag bit in the flags register modifies the
+	behavior of the string instructions. When the direction flag (DF) is 0 (zero),
+	the string instructions operate on incrementally higher addresses. When DF is 1,
+	the string instructions operate on incrementally lower addresses. On Intel
+	chips, DF can be set to 1 with the STD instruction and can be cleared to 0 with
+	the CLD instruction.
+	
+	If a function sets DF to 1, it should clear DF before terminating. This allows
+	all functions to make the assumption that DF is always 0.
+	
+	All C run-time functions correctly clear DF upon termination. However, if an
+	exception occurs before a function has a chance to clear DF, the flag will still
+	be set when the exception handler is executed. This will cause code in the
+	handler (which assumes that DF is 0) to fail. The manner in which the code fails
+	depends on what the code is trying to do. In the example shown below, the
+	printf() function called in the exception handler causes a memory access
+	violation.
+	
+	The problem can be worked around by clearing DF upon entry into an exception or
+	termination handler. In the sample code shown below, the exception handler
+	checks the value of the do_cld variable to determine whether or not it will
+	clear DF. The do_cld variable is set to 0 or 1 depending on whether or not the
+	CLD command-line argument is specified when the sample is run. To illustrate the
+	problem with DF being set to 1, run the sample without any command-line
+	arguments. To allow the sample to run correctly, specify the CLD command-line
+	argument.
+	
+	Sample Code
+	-----------
+	
+	  /* Compiler options needed: /D_X86_
+	  */ 
+	
+	  #include <windows.h>
+	  #include <memory.h>
+	  #include <string.h>
+	  #include <stdio.h>
+	
+	  int handling = 0;
+	  int do_cld = 0;
+	
+	  LONG MyFilter(LPEXCEPTION_POINTERS except_pointers)
+	  {
+	      EXCEPTION_RECORD* er = except_pointers->ExceptionRecord;
+	
+	      if (do_cld)
+	      {
+	          __asm cld
+	      }
+	
+	      if (er->ExceptionCode==EXCEPTION_ACCESS_VIOLATION && handling==0)
+	      {
+	          handling = 1;
+	          printf("We're in the filter now and printing out a long"
+	                 "string that's long enough to cause a problem\n");
+	          handling = 0;
+	          return EXCEPTION_EXECUTE_HANDLER;
+	      }
+	      else return EXCEPTION_CONTINUE_SEARCH;
+	  }
+	
+	  int main(int argc,char** argv)
+	  {
+	      if ( argc==2 && ((strcmp(argv[1],"cld")==0) ||
+	                       (strcmp(argv[1],"CLD")==0)))
+	          do_cld = 1;
+	
+	      __try
+	      {
+	          printf("Starting the test\n");
+	          memcpy((void*)4,(void*)0,8);
+	          printf("After exception");
+	      }
+	      __except (MyFilter(GetExceptionInformation()))
+	      {
+	          printf("In the handler now\n");
+	      }
+	
+	      return 0;
+	  }
+	
+	Additional query words: 1.00 structured handling protection fault
+	
+	======================================================================
+	Keywords          : kbCRT kbVC kbbuglist kbfixlist
+	Technology        : kbVCsearch kbAudDeveloper kbCRT
+	Version           : winnt:
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

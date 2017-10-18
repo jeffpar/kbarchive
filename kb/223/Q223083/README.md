@@ -1,0 +1,95 @@
+---
+layout: page
+title: "Q223083: FIX: Changes to MSHFlexgrid Adding/Removing Records Not Vis"
+permalink: kb/223/Q223083/
+---
+
+## Q223083: FIX: Changes to MSHFlexgrid Adding/Removing Records Not Vis
+
+	Article: Q223083
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): WINDOWS:6.0
+	Operating System(s): 
+	Keyword(s): kbservicepack kbCtrl kbVS600sp2 kbVS600SP1 kbVS600sp3fix kbGrpDSVBDB
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	After using the Remove method of the MSHFlexGrid, rows added with the AddItem
+	method may not be visible.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article.
+	
+	This bug was corrected in Visual Studio 6.0 Service Pack 3. For more information
+	about Visual Studio service packs, please see the following articles in the
+	Microsoft Knowledge Base:
+	
+	  Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+	
+	  Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Create a new standard Visual Basic project. Form1 is create by default.
+	
+	2. Add the MSHFlexGrid to the Visual Basic toolbox.
+	
+	3. Place an MSHFlexGrid and two CommandButtons on the form.
+	
+	4. Add the following code to your application:
+	
+	  Private Sub Command1_Click()
+	      MSHFlexGrid1.AddItem "Hello"
+	  End Sub
+	
+	  Private Sub Command2_Click()
+	      MSHFlexGrid1.RemoveItem MSHFlexGrid1.Rows - 1
+	  End Sub
+	
+	  Private Sub Form_Load()
+	      Command1.Caption = "AddItem"
+	      Command2.Caption = "RemoveItem"
+	  End Sub
+	
+	5. Run the project
+	
+	6. Click the "Command1" button three times to add three rows.
+	
+	7. Click the "Command2" button three times to remove the three rows.
+	
+	8. Click the "Command1" button three times again to add back the three rows.
+	
+	If you're using the MSHFlexGrid prior to the version that shipped with Visual
+	Basic 6.0 Service Pack 3, you won't see the second batch of rows created by
+	clicking the AddItem button.
+	
+	With the version of MSHFlexGrid that shipped with Visual Basic 6.0 Service Pack
+	3, this problem does not occur.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbservicepack kbCtrl kbVS600sp2 kbVS600SP1 kbVS600sp3fix kbGrpDSVBDB 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+	Version           : WINDOWS:6.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

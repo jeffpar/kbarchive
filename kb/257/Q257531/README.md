@@ -1,0 +1,118 @@
+---
+layout: page
+title: "Q257531: FIX: Wrong Large Currency Values Returned From Late Bound Object"
+permalink: kb/257/Q257531/
+---
+
+## Q257531: FIX: Wrong Large Currency Values Returned From Late Bound Object
+
+	Article: Q257531
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): WINDOWS:6.0
+	Operating System(s): 
+	Keyword(s): kbActiveX kbCtrl kbDLL kbLocalSvr kbVBp kbVBp600bug kbGrpDSVB kbDSupport kbVS600sp4fix
+	Last Modified: 27-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When the data type of a class property in an ActiveX DLL is Currency, and you
+	use late binding in a client to set a large value to the property, incorrect
+	results are returned from the property. If you use a method to retrieve the
+	large Currency value, the same behavior results.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed that this is a bug in the Microsoft products that are
+	listed at the beginning of this article. This bug was corrected in the latest
+	service pack for Visual Studio 6.0.
+	
+	For additional information about Visual Studio service packs, click the following
+	article numbers to view the articles in the Microsoft Knowledge Base:
+	
+	  Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+	
+	  Q194295 HOWTO: Tell That a Visual Studio Service Pack Is Installed
+	
+	To download the latest Visual Studio service pack, visit the following Microsoft
+	Web site:
+	
+	  http://msdn.microsoft.com/vstudio/downloads/updates.asp
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Create a new ActiveX DLL project. Rename it to "CurrDLL" (without the
+	  quotation marks). Class1 is created by default.
+	
+	2. Paste the following code in Class1's code module:
+	
+	  Dim mCurr As Currency
+	
+	  Public Property Let Curr(x As Currency)
+	      mCurr = x
+	      MsgBox "Let = " & x
+	  End Property
+	
+	  Public Property Get Curr() As Currency
+	      MsgBox "pre-get = " & mCurr
+	      Curr = mCurr
+	  End Property
+	
+	3. From the File menu, select Make CurrDLL.dll to compile the project, and
+	  create CurrDLL.dll.
+	
+	4. From the File menu, select New project, and select Standard EXE project.
+	  Form1 is created by default.
+	
+	5. From the Project menu, select References, check CurrDLL.dll, and then click
+	  OK.
+	
+	6. Add two TextBox controls and two CommandButton controls to Form1.
+	
+	7. Paste the following code into the code module of Form1:
+	
+	  Private Sub Command1_Click()
+	      Dim MyObj As Object
+	      Set MyObj = CreateObject("CurrDll.Class1")
+	      MyObj.Curr = Val(Text1.Text)
+	      Text2.Text = MyObj.Curr
+	  End Sub
+	
+	  Private Sub Command2_Click()
+	      Dim MyObj As CurrDll.Class1
+	      Set MyObj = New CurrDll.Class1
+	      MyObj.Curr = Val(Text1.Text)
+	      Text2.Text = MyObj.Curr
+	  End Sub
+	  Private
+	
+	8. Press the F5 key to run the project. Enter "922000000000000" (without the
+	  quotation marks) into TextBox1, click the Late Binding button, and note that
+	  the incorrect value is displayed in TextBox2.
+	
+	9. Click the Early Binding button, and note that the correct value is now
+	  displayed in TextBox2.
+	
+	Additional query words: sp4
+	
+	======================================================================
+	Keywords          : kbActiveX kbCtrl kbDLL kbLocalSvr kbVBp kbVBp600bug kbGrpDSVB kbDSupport kbVS600sp4fix kbVS600sp5fix 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600
+	Version           : WINDOWS:6.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

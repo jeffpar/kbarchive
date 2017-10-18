@@ -1,0 +1,129 @@
+---
+layout: page
+title: "Q66136: Emulation Modes for All Okidata Printers"
+permalink: kb/066/Q66136/
+---
+
+## Q66136: Emulation Modes for All Okidata Printers
+
+	Article: Q66136
+	Product(s): Microsoft Windows Printing Issues
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 30-JUL-2001
+	
+	SUMMARY
+	=======
+	
+	Below is a description of each emulation mode for every Okidata printer. The
+	list below is from Okidata and includes its latest emulation modes.
+	
+	MORE INFORMATION
+	================
+	
+	Term    Description
+	----    -----------
+	
+	Std     Standard Emulation Mode
+	Ibm     IBM Emulation Modes
+	Epson   Epson Emulation Modes
+	Diablo  Diablo Emulation Modes
+	Apple   Apple Emulation Modes
+	Hp      Hewlett-Packard Emulation Modes
+	
+	Printer                           Emulation
+	-------                           ---------
+	
+	82a/83a                          Std= emulates Okidata
+	                                Ibm= emulates IBM Text Printer
+	
+	84                               Std= emulates Okidata
+	                                Ibm= emulates IBM
+	                                     Graphics Printer
+	
+	92/93                            Std= emulation Okidata
+	                                Ibm= emulates IBM
+	                                     Graphics Printer
+	
+	172                              Emulates IBM Graphics
+	                                Model 5152 Only
+	
+	182/183                          Std= emulates Okidata
+	                                Ibm= emulates IBM
+	                                     Graphics Printer
+	
+	192/193                          Std= emulates Okidata
+	                                Ibm= emulates IBM
+	                                     Graphics Printer
+	
+	192+/193+                        Std= emulates Okidata
+	                                Ibm= emulates IBM
+	                                     Graphics Printer and
+	                                     Proprinter
+	
+	292/293/294                      Std=   emulates Okidata
+	                                Ibm=   emulates IBM Graphics Printer
+	                                Epson= Mx 80 for Black
+	                                       Jx 80 for Color
+	
+	320/321                          Std=   emulates Okidata
+	                                Epson= Fx series
+	                                Ibm=   IBM Proprinter
+	
+	380                              Epson= emulates the Epson
+	                                       LQ series only
+	
+	390/391                          Ibm=   emulates IBM x-24 or
+	                                       IBM Proprinter
+	                                Epson= emulates Epson LQ1500
+	
+	393                              Ibm=   emulates IBM
+	                                       Graphics or
+	                                       Proprinter
+	                                Epson= emulates the Epson
+	                                       LQ 1500 (Black) and
+	                                       LQ 2500 (Color) Also
+	                                       any other LQ Printer
+	
+	PM 2410                          Std= emulates Okidata 2410
+	                                Ibm= Emulates IBM
+	                                     Graphics Printer
+	                                     Model 5152
+	                                     Only
+	
+	Laserline6                       Hp= emulates the HP LaserJet or
+	                                    HP LaserJet Plus
+	
+	Okilaser 400                     HP= emulates the HP LaserJet Series II
+	
+	120                              emulates only the
+	                                Commodore 1525,801,802
+	
+	180                              Epson= emulates the Epson
+	                                       Fx 80 running
+	                                       Parallel
+	
+	180+                             Epson= emulates the Epson
+	                                       FX series only
+	
+	OM 20                            Ibm= emulates IBM Graphics Printer
+	
+	Okilaser 800                     Hp=     emulates the HP Series II
+	                                Ibm=    emulates the IBM Proprinter
+	                                Diablo= emulates the Diablo 630
+	
+	Okilaser 820                     Ibm=    emulates the IBM Proprinter
+	                                Diablo= emulates the Diablo 630
+	
+	Okilaser 840                     Apple=  emulates the Apple Laser Writer
+	                                Hp=     emulates the HP Series II
+	                                Diablo= emulates the Diablo 630
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	
+	=============================================================================
+	

@@ -1,0 +1,90 @@
+---
+layout: page
+title: "Q131899: FIX: Access Violation with Large NAMELIST"
+permalink: kb/131/Q131899/
+---
+
+## Q131899: FIX: Access Violation with Large NAMELIST
+
+	Article: Q131899
+	Product(s): Microsoft Fortran Compiler
+	Version(s): 1.0,1.0a
+	Operating System(s): 
+	Keyword(s): kbCompiler kbFL32 kbFortranPSkbbuglist kbfixlist
+	Last Modified: 24-MAR-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft FORTRAN PowerStation for MS-DOS, versions 1.0, 1.0a 
+	- Microsoft Fortran Powerstation 32 for Windows NT, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	An application that uses a large NAMELIST may cause an access violation when
+	attempting to write the NAMELIST. This problem is seen most often with NAMELISTs
+	around 2K in size, but the problem has been known to occur with a NAMELIST as
+	small as 100 bytes.
+	
+	RESOLUTION
+	==========
+	
+	To work around this problem, reduce the size of the NAMELIST. This can be
+	accomplished by either splitting the NAMELIST into multiple smaller NAMELISTs or
+	by grouping variables of similar type together in an array.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article. This problem was corrected in FORTRAN PowerStation
+	32, version 4.0.
+	
+	MORE INFORMATION
+	================
+	
+	Sample Code to Demonstrate Problem
+	----------------------------------
+	
+	  C
+	  C  Compile options needed: none
+	  C
+	  C  This program should cause an access violation
+	
+	        PROGRAM NAMELISTTest
+	
+	        CHARACTER*20 TheArray(100)
+	        INTEGER*4 Index
+	        NAMELIST /TheNameList/ TheArray
+	
+	  C  Fill in the array
+	        DO Index = 1,100
+	            TheArray(Index) = "Testing NAMELIST"
+	        END DO
+	
+	  C  Display the name list
+	        WRITE (*,TheNameList)
+	
+	        END
+	
+	REFERENCES
+	==========
+	
+	For more information on a related problem, please see the following article in
+	the Microsoft Knowledge Base:
+	
+	  Q65047 BUG: Errors F1002, F1901, R6000 Using Large Namelists
+	
+	Additional query words: 5.10 1.00 1.00a
+	
+	======================================================================
+	Keywords          : kbCompiler kbFL32 kbFortranPS kbbuglist kbfixlist
+	Technology        : kbAudDeveloper kbFortranSearch kbZNotKeyword2 kbZNotKeyword3 kbFORTRANPower32100NT kbFORTRANPower100DOS kbFORTRANPower100aDOS
+	Version           : :1.0,1.0a
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

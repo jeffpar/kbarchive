@@ -1,0 +1,144 @@
+---
+layout: page
+title: "Q171746: PRB: ListBox/ComboBox Picture Won't Display If Defined in Class"
+permalink: kb/171/Q171746/
+---
+
+## Q171746: PRB: ListBox/ComboBox Picture Won't Display If Defined in Class
+
+	Article: Q171746
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:5.0,5.0a
+	Operating System(s): 
+	Keyword(s): kbvfp kbvfp500 kbvfp500a
+	Last Modified: 11-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When running Visual FoxPro under Windows 95, a class based on either a list box
+	or a combo box that sets the Picture property in the class, does not display the
+	picture either in the Form Designer when you add the class to a form, or when
+	you run the form. If FoxPro is running under Windows NT 4.0, the picture does
+	not appear in the Class Designer either.
+	
+	RESOLUTION
+	==========
+	
+	This article includes two workarounds. The first adds a new property to the
+	class that sets the Picture property to the new property. The second sets the
+	Picture property in the form after the class is added. Both methods assume that
+	the class has been created following steps 1-3 in the Steps to Reproduce
+	Behavior section below.
+	
+	Method 1
+	--------
+	
+	1. Open the class in the Visual Class Designer. Either by selecting Open from
+	  the File menu and then clicking Visual Class Library as the file type or
+	  enter the following command in the Command window:
+	
+	        MODIFY CLASS list OF test.vcx
+	
+	2. Create a new property for the class by selecting New Property from the Class
+	  menu. Enter the property name; cPicture, for example. Click Close.
+	
+	3. Locate the Picture property on the Property Sheet. Copy the path to the
+	  graphic and file name from the Picture property and paste it to the new
+	  cPicture property.
+	
+	4. In the Init of the class, add the following code:
+	
+	        This.Picture = This.cPicture
+	
+	5. Close and save the class.
+	
+	6. Run the form. The picture should appear next to each row in the list.
+	
+	NOTE: If any code or comments are added to the Init of the List1 class on the
+	form, add the DODEFAULT() statement to the Init of List1 to ensure that the
+	parent class Init code is also executed.
+	
+	Method 2
+	--------
+	
+	1. Create a form. Using the Form Controls Toolbar, click the View Classes button
+	  and select Add. Add the test class library. Click the list class and drop it
+	  onto the form.
+	
+	2. In the Init of the form, enter code similar to the following:
+	
+	     Thisform.List1.Picture = ;
+	     "c:\vfp5\samples\graphics\bmps\assorted\bell.bmp"
+	
+	3. Save and run the form.
+	
+	This method is similar to explicitly setting the Picture property of List1 of the
+	Property sheet to the graphic.
+	
+	STATUS
+	======
+	
+	Microsoft is researching this problem and will post new information here in the
+	Microsoft Knowledge Base as it becomes available.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Create a new class by either selecting New from File menu then selecting
+	  Class or enter the following code in the Command window:
+	
+	        CREATE CLASS list AS listbox OF test.vcx
+	
+	2. Set the Picture property of the ListBox to a graphic:
+	
+	        c:\vfp5\samples\graphics\bmps\assorted\bell.bmp
+	
+	  NOTE: In Windows 95, the picture is visible in the Visual Class Designer.
+	
+	3. Save and close the class.
+	
+	4. Create a form. Using the Form Controls toolbar, click the View Classes button
+	  and select Add. Add test.vcx. Click the list class and drop it onto the
+	  form.
+	
+	  NOTE: The picture is not visible in the list class on the form.
+	
+	5. Right-click on the form to display the short-cut menu, and select Data
+	  Environment.
+	
+	6. Add the customer table from the \VFP5\Samples\Data directory, then click
+	  Close.
+	
+	7. Change the RowSource property of List1 to customer.contact and the
+	  RowSourceType property to 6 - Fields.
+	
+	8. Save and run the form.
+	
+	REFERENCES
+	==========
+	
+	Visual FoxPro Online Help file.
+	(c) Microsoft Corporation 1997, All Rights Reserved.
+	Contributions by Dean Christopher, Microsoft Corporation
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbvfp kbvfp500 kbvfp500a 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP500a
+	Version           : WINDOWS:5.0,5.0a
+	Issue type        : kbprb
+	
+	=============================================================================
+	

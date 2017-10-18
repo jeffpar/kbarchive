@@ -1,0 +1,58 @@
+---
+layout: page
+title: "Q148975: Err Msg: &quot;STOP 0x00000079 MISMATCHED_HAL&quot; on IBM PC Server 320"
+permalink: kb/148/Q148975/
+---
+
+## Q148975: Err Msg: &quot;STOP 0x00000079 MISMATCHED_HAL&quot; on IBM PC Server 320
+
+	Article: Q148975
+	Product(s): Microsoft Windows NT
+	Version(s): 3.5,3.51
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 20-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation versions 3.5, 3.51 
+	- Microsoft Windows NT Server versions 3.5, 3.51 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you run Windows NT Setup on a multiprocessor IBM PC Server 320, it stops
+	during the second Setup disk, just after loading the keyboard driver and the
+	file allocation table (FAT) file system. The following Stop message appears:
+	
+	  STOP 0x00000079 MISMATCHED_HAL.
+	
+	RESOLUTION
+	==========
+	
+	The manufacturer-supplied hardware abstraction layer (HAL) must be manually
+	specified. At the beginning of the first Setup disk, when Setup displays "Setup
+	is Inspecting Hardware," press F5. After a while, a message will come up saying
+	that Setup could not detect your computer type, or that you chose to specify the
+	computer type. Select Other and put in the OEM- supplied disk containing the HAL
+	(in this case, the IBM device driver disk). Select the only HAL presented and
+	continue.
+	
+	This computer also comes with a SCSI II Fast Wide PCI RAID controller for which
+	the driver must be manually installed. Choose Custom Install instead of Express
+	Install. At the Mass Storage Detection section, type ESC to skip detection and
+	manually specify the controller. Select Other and then select the IBM-supplied
+	RAID driver disk.
+	
+	
+	Additional query words: bluescreen
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+	Version           : :3.5,3.51
+	
+	=============================================================================
+	

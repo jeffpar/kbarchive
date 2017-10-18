@@ -1,0 +1,152 @@
+---
+layout: page
+title: "Q231967: XADM: Isinteg Has Been Modified to Dump the Mailbox Table"
+permalink: kb/231/Q231967/
+---
+
+## Q231967: XADM: Isinteg Has Been Modified to Dump the Mailbox Table
+
+	Article: Q231967
+	Product(s): Microsoft Exchange
+	Version(s): winnt:5.5
+	Operating System(s): 
+	Keyword(s): exc55 EXC55SP3Fix
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.5 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	In a disaster recovery situation, when the only backup available is a few days
+	old, there is no mechanism for determining whether the best procedure is to
+	restore the old backup, or to try running the utilities (Eseutil and Isinteg) to
+	repair the database. The problem is that the utilities can end up removing
+	information (pages) from the database, and there no way of telling which actual
+	users (mailboxes) have been affected. Determining which users are affected by
+	the repair may be useful in making the decision to try and repair the database,
+	as opposed to restoring the old backup.
+	
+	This modification is no substitute for a correctly implemented disaster recovery
+	strategy. Restoring from a recent backup should always be the preferred method
+	for coping with a disaster recovery scenario.
+	
+	CAUSE
+	=====
+	
+	Isinteg has been modified to additionally dump the Mailbox table of the
+	database. Previously the Isinteg -dump option would dump the Index Age and
+	Folder tables, but now it also dumps the Mailbox table.
+	
+	This additional information can be used in the following manner to manually
+	determine which users have lost information from a database repair.
+	
+	- After running Eseutil to repair the database, that is, "eseutil /p
+	  <database name> /v /x" (without the quotation marks), check the display
+	  and Repair.txt file in the same directory. If you see lines in the file such
+	  as:
+	
+	  Inserting page 62 into BadPages table
+	  Creating new FDP with 3 pages starting at 246
+	  Table Msg (14). new pgnoFDP is 246
+	
+	  It indicates that bad pages have been found in the database and moved to a
+	  different table for deletion.
+	
+	- When running Isinteg to check the integrity of the database, that is "isinteg
+	  -pri -fix -detailed -verbose -test alltests" (without the quotation marks),
+	  check the Isinteg.pri file in the same directory. If you see lines such as:
+	
+	  Fix: MsgFolder 1 (FID=0001-000000000144, MID=0001-000000000167,
+	  INID=0001-0000000010E9): Deleting this MsgFolder row
+	
+	  It indicates from which folder (indicated by the FID) has been repaired.
+	
+	- Now run Isinteg in dump mode, that is, "isinteg -pri -dump" (without the
+	  quotation marks), and check the Isinteg.pri file in the same directory. Look
+	  up the FID in the dump of the Folder table and obtain the Root FID of the
+	  folder:
+	
+	  [36] Folder FID=0001-000000000144
+	  Parent FID=0001-000000000141
+	  Root FID=0001-000000000140
+	  ACL ID=0000-000000000000
+	  Folder Type=1
+	  Msg Count=0
+	  Msgs Unread=0
+	  Msgs Submitted=0
+	  Rcv Count=4
+	  Subfolders=0
+	  Name=Inbox
+	  Comment=
+	  Restriction=
+	  Search FIDs=0001-000000000401
+	  Recursive FIDs=
+	  Search Backlinks=0001-000000000401
+	  Categ FIDs=
+	
+	  Look up the Root FID in the dump of the Mailbox table and obtain the details
+	  of a user who has lost information as a result of the database repair, for
+	  example:
+	
+	  [3] RootFID=0001-000000000140
+	  Owner DN=???
+	  GUID=5BC414D6 1BFED211 B9C20080 C7C0C499
+	  Display Name=Mailbox - John Doe
+	  Comment=
+	  Sentmail FID=542D-6530362B5136
+	  Subtree=0001-000000000141
+	  Inbox=0001-000000000142
+	  Outbox=0001-000000000143
+	  Sentmail=0001-000000000144
+	  Finder=0001-000000000146
+	  DAF=0001-000000000147
+	  Spooler Q=0001-000000000148
+	  Size=(ec:ecNotFound-MAPI_E_NOT_FOUND)
+	  Localized=TRUE
+	  Locale=0x409
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, obtain the latest service pack for Exchange Server
+	version 5.5. For additional information, click the following article number to
+	view the article in the Microsoft Knowledge Base:
+	
+	  Q191014 XGEN: How to Obtain the Latest Exchange Server 5.5 Service Pack
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	Component: Information Store
+	
+	+--------------------------+
+	| File name   | Version    | 
+	+--------------------------+
+	| Isinteg.exe | 5.5.2608.0 | 
+	+--------------------------+
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed that this is a problem in Microsoft Exchange Server
+	version 5.5. This problem was first corrected in Exchange Server 5.5 Service
+	Pack 3.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : exc55 EXC55SP3Fix 
+	Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+	Version           : winnt:5.5
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

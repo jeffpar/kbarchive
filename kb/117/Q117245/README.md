@@ -1,0 +1,114 @@
+---
+layout: page
+title: "Q117245: Manual MS-DOS Installation When SETUP.EXE Fails"
+permalink: kb/117/Q117245/
+---
+
+## Q117245: Manual MS-DOS Installation When SETUP.EXE Fails
+
+	Article: Q117245
+	Product(s): Microsoft Disk Operating System
+	Version(s): MS-DOS:6.0,6.2,6.21,6.22
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 21-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft MS-DOS operating system versions 6.0, 6.2, 6.21, 6.22 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	If a regular or manual installation of MS-DOS fails because SETUP.EXE does not
+	run correctly, you may be able to use a batch file called EXPALL.BAT to perform
+	a successful manual installation. EXPALL.BAT is discussed on pages 553-554 of
+	the Microsoft Windows 3.0 "User's Guide." This file was originally designed to
+	perform a network installation of Windows 3.0. In the steps below, it has been
+	adapted to perform an installation of MS-DOS to the C:\DOS subdirectory.
+	
+	MORE INFORMATION
+	================
+	
+	1. Boot your machine with Disk 1 (Setup) of the MS-DOS disk set you are
+	  upgrading to by inserting the disk in drive A and pressing CTRL+ALT+DEL. When
+	  the message "Starting MS-DOS ..." appears on the screen, press the F5 key to
+	  bypass MS-DOS Setup.
+	
+	  IMPORTANT: If your Disk 1 fits in drive B only, you must first install MS-DOS
+	  to a floppy disk in drive A (use the command B:\SETUP /F). Then boot with the
+	  floppy disk created in drive A and follow the above instructions. If SETUP /F
+	  does not run, you must obtain a copy of MS-DOS that is the same media type as
+	  your boot disk drive and then perform step 1.
+	
+	2. Transfer the MS-DOS system files to the hard disk drive with the following
+	  command:
+	
+	     a:sys c:
+	
+	3. Make sure Disk 1 is no longer in drive A. Reboot your machine from the hard
+	  disk drive, and press F5 when the message "Starting MS-DOS ..." appears on
+	  the screen to ensure no unnecessary drivers are loaded.
+	
+	4. Create the directory C:\DOS.
+	
+	NOTE: We do not recommended that you copy files from the disk created with the
+	SETUP /F command to C:\DOS because all MS-DOS files are not present on that
+	disk.
+	
+	1. Copy EXPAND.EXE from the MS-DOS Disk 1 (Setup) to the C:\DOS directory.
+	
+	2. Change to the C:\DOS directory on the hard disk, and create EXPALL.BAT with
+	  COMMAND.COM by typing the following lines (be sure to press ENTER after each
+	  line):
+	
+	  " COPY CON EXPALL.BAT
+	  %1
+	  FOR %%i IN (*.*) DO C:\DOS\EXPAND %%i C:\DOS\%%i
+	  C:
+	  CTRL + Z " (without the quotation marks)
+	
+	3. Run EXPALL.BAT with the source disk drive indicated (such as EXPALL A: or
+	  EXPALL B:). The command must be repeated for each disk you are installing.
+	
+	4. Rename the files expanded to the C:\DOS directory from their compressed names
+	  to their decompressed filenames.
+	
+	  a. First rename the following files:
+	
+	  rename dblspace.in_ dblspace.inf
+	  rename memmaker.in_ memmaker.inf
+	
+	  b. Perform the following commands to rename the remaining files:
+	
+	     rename *.38_ *.386
+	     rename *.bi_ *.bin
+	     rename *.co_ *.com
+	     rename *.cp_ *.cpi
+	     rename *.dl_ *.dll
+	     rename *.ex_ *.exe
+	     rename *.ov_ *.ovl
+	     rename *.sy_ *.sys
+	     rename *.tx_ *.txt
+	     rename *.gr_ *.grp
+	     rename *.hl_ *.hlp
+	     rename *.ls_ *.lst
+	     rename *.pr_ *.pro
+	
+	5. Copy the files WINA20.386 and DBLSPACE.BIN (or DRVSPACE.BIN in MS-DOS 6.22)
+	  to the root directory, and set the attributes of DBLSPACE.BIN or DRVSPACE.BIN
+	  to Hidden, System, and Read-Only by using the ATTRIB command as follows:
+	
+	     c:\dos\attrib c:\???space.bin +r +s +h
+	
+	Additional query words: tshoot t-shoot fail clean boot run setup hangs 6.00 6.20
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600
+	Version           : MS-DOS:6.0,6.2,6.21,6.22
+	
+	=============================================================================
+	

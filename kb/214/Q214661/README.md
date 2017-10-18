@@ -1,0 +1,134 @@
+---
+layout: page
+title: "Q214661: FIX: Daylight Savings Time Bug in C Run-Time Library"
+permalink: kb/214/Q214661/
+---
+
+## Q214661: FIX: Daylight Savings Time Bug in C Run-Time Library
+
+	Article: Q214661
+	Product(s): Microsoft C Compiler
+	Version(s): winnt:4.1,4.2,5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbservicepack kbCRT kbVC500 kbVC600bug kbVS600sp2 kbVS600SP1 kbVS600sp3fixkbbuglist
+	Last Modified: 07-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual C++, version 4.1 
+	- Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+	- Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+	- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The C-Run-time Library date/time functions might fail to calculate the correct
+	time during the first week of daylight savings time beginning April 1, 2001. The
+	bug corrects itself after one week, on the following Sunday. This bug is not
+	related to the year 2000 problem.
+	
+	CAUSE
+	=====
+	
+	The bug is caused by a logic error in the C-Run-time library's cvtdate helper
+	function.
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article.This bug was corrected in Visual Studio 6.0 Service
+	Pack 3. For more information about Visual Studio service packs, please see the
+	following articles in the Microsoft Knowledge Base:
+	
+	Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+	
+	Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	The following sample program reproduces the problem:
+	
+	  // ----------------- start of sample program -------------------------
+	
+	  // Compiler switches needed : none.
+	
+	  #include <time.h>;
+	  #include <stdio.h>
+	  #include <stdlib.h>
+	  #include <stdarg.h>
+	
+	  int main ()
+	  {
+	      struct tm ltm;
+	      time_t tstamp = 0;
+	
+	      ltm.tm_year = 90;	/* First valid year .*/ 
+	      ltm.tm_mon = 3;		/* April. */ 
+	      ltm.tm_mday = 1;	/* 1st of the month. */ 
+	      ltm.tm_hour = 3;	/* At 3:00 am. */ 
+	      ltm.tm_min = 0;
+	      ltm.tm_sec = 0;
+	      ltm.tm_wday =0;
+	      ltm.tm_yday = 0;
+	
+	      while (ltm.tm_year <= 2005)
+	      {
+	          ltm.tm_isdst = -1;
+	
+	  	// mktime indirectly calls cvtdate which has the logic bug.
+	  	tstamp = mktime(&ltm);
+	
+	  	/* If it's Sunday April 1st, it should also be DST */ 
+	  	if (!ltm.tm_wday && !ltm.tm_isdst)
+	  	{
+	  	    printf("April 01 is the first Sunday in April, %d  \ 
+	              -it should be DST but tm_isdst says it's \ 
+	              not!\n", 1900+ltm.tm_year);
+	  	    while (!ltm.tm_isdst)
+	  	    {
+	  		ltm.tm_mday++;
+	  		ltm.tm_isdst=-1;
+	  		tstamp = mktime(&ltm);
+	  	    }
+	  	    printf("\tDST is reported as starting on  \ 
+	              %d/%d/%d\n", 1+ltm.tm_mon, ltm.tm_mday, \ 
+	  	    1900+ltm.tm_year);
+	  	
+	              ltm.tm_mday = 1;
+	  	}
+	  	
+	          ltm.tm_year++;
+	  	
+	      }
+	
+	      return 0;
+	  }
+	
+	  // ----------------- end  of sample program ---------------------------
+	
+	REFERENCES
+	==========
+	
+	http://msdn.microsoft.com/visualc/headlines/2001.asp
+	
+	Additional query words: y2k year2000
+	
+	======================================================================
+	Keywords          : kbservicepack kbCRT kbVC500 kbVC600bug kbVS600sp2 kbVS600SP1 kbVS600sp3fix kbbuglist
+	Technology        : kbVCsearch kbAudDeveloper kbVC410 kbVC420 kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+	Version           : winnt:4.1,4.2,5.0,6.0
+	Hardware          : ALPHA x86
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

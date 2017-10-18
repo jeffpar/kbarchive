@@ -1,0 +1,139 @@
+---
+layout: page
+title: "Q173916: WD97: Inserting or Pasting over Selection Retains Hyperlink"
+permalink: kb/173/Q173916/
+---
+
+## Q173916: WD97: Inserting or Pasting over Selection Retains Hyperlink
+
+	Article: Q173916
+	Product(s): Word 97 for Windows
+	Version(s): WINDOWS:97
+	Operating System(s): 
+	Keyword(s): winword word97 kbwdinternet
+	Last Modified: 14-NOV-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	If you select a hyperlink and then paste or insert any of the following items
+	over the selection, Word preserves the hyperlink, although it does not preserve
+	the hyperlink's blue underline:
+	
+	- Form Field
+	
+	- Field
+	
+	- Symbol
+	
+	- Date & Time
+	
+	- Page Number
+	
+	- Table of Contents
+	
+	- Index
+	
+	- Table of Authorities
+	
+	- Picture (if the Float Over Text check box is cleared)
+	
+	- Formula
+	
+	- File
+	
+	Also, when you type over a selected hyperlink, Word preserves the hyperlink along
+	with its blue underline.
+	
+	CAUSE
+	=====
+	
+	This functionality is by design. When you insert, paste, or type over a selected
+	hyperlink, Word preserves the hyperlink.
+	
+	WORKAROUND
+	==========
+	
+	Removing the Hyperlink
+	----------------------
+	
+	To manually remove the hyperlink, follow these steps:
+	
+	1. Right-click the item containing the hyperlink, point to Hyperlink on the
+	  shortcut menu, and then click Select Hyperlink.
+	
+	  NOTE: If Hyperlink is not on the shortcut menu, press F9 to display the
+	  hyperlink field code, and right-click the item again.
+	
+	2. Press CTRL+SHIFT+F9 to remove the hyperlink.
+	
+	Showing the Hyperlink Underline
+	-------------------------------
+	
+	To retain the hyperlink and show it as a hyperlink:
+	
+	1. Right-click the item containing the hyperlink, point to Hyperlink on the
+	  shortcut menu, and then click Select Hyperlink.
+	
+	2. On the Format menu, click Style.
+	
+	3. Under List, click to select "All Styles."
+	
+	4. In the Styles list, click to select the Hyperlink style, and then click
+	  Apply.
+	
+	MORE INFORMATION
+	================
+	
+	Word does not preserve the hyperlink when you insert any of the following items
+	over a selected hyperlink:
+	
+	- AutoText
+	
+	- Objects
+	
+	- Any item if the Float Over Text check box is selected
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products listed
+	above.
+	
+	REFERENCES
+	==========
+	
+	For additional information about editing hyperlinks, please see the following
+	articles in the Microsoft Knowledge Base:
+	
+	  Q167465 WD97: Inserting a Graphic Over Hyperlink Retains Hyperlink Style
+	
+	  Q173674 WD97: Blue Underline for Hyperlink Not Placed Below Object
+	
+	Or, click the Office Assistant, type "How do I edit a hyperlink?" (without the
+	quotation marks), click Search, and then click to view "Change the display text
+	or image of a hyperlink" topic.
+	
+	NOTE: If the Assistant is hidden, click the Office Assistant button on the
+	Standard toolbar. If Microsoft Help is not installed on your computer, please
+	see the following article in the Microsoft Knowledge Base:
+	
+	  Q120802 Office: How to Add/Remove a Single Office Program or Component
+	
+	Additional query words: 8.0 8.00
+	
+	======================================================================
+	Keywords          : winword word97 kbwdinternet 
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : WINDOWS:97
+	Issue type        : kbprb
+	
+	=============================================================================
+	

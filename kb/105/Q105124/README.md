@@ -1,0 +1,132 @@
+---
+layout: page
+title: "Q105124: PC Adm: Error Message: Template File Does Not Match Data File"
+permalink: kb/105/Q105124/
+---
+
+## Q105124: PC Adm: Error Message: Template File Does Not Match Data File
+
+	Article: Q105124
+	Product(s): Microsoft Mail For PC Networks
+	Version(s): WINDOWS:2.1,3.0,3.2
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 31-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Mail for PC Networks, versions 2.1, 3.0, 3.2 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If you use version 2.1, 3.0, or 3.2 of Microsoft Mail for PC Networks, when you
+	attempt to create or modify a local user by using the MS Mail Administrator
+	program (Admin.exe), clicking Local-Admin, and then clicking either Create or
+	Modify, the following error message may be displayed:
+	
+	  Notice 93 Template file does not match data file. Press Enter to continue.
+	
+	CAUSE
+	=====
+	
+	This error message is displayed if the Admin.tpl file has been modified and no
+	longer corresponds to the records in the existing Admin.inf file.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, rename or delete the existing Admin.inf file and use
+	the MS Mail Administrator program to re-enter the template information by
+	modifying each of the local addresses.
+	
+	You can also resolve this problem by using the Template utility (Template.exe)
+	that is located in the Mailexe folder. This utility allows you to transfer the
+	contents of the Admin.inf file into the Admin.txt text file, where you can
+	modify the information to match the information in the existing Admin.tpl file.
+	You can then convert this manually modified Admin.txt file to a new Admin.inf
+	file by using the Template utility. To use this utility, you must do the
+	following:
+	
+	1. Using a text editor, remove the template field prompts that were added to the
+	  Admin.inf file that resulted in the error message in the "Symptoms" section
+	  of this article.
+	
+	2. At a DOS prompt, change to the Inf subfolder of the Mail database.
+	
+	3. Type the following command:
+	
+	  "type nul > admin.txt" (without the quotation marks)
+	
+	  This command creates a 0 byte file, the Admin.txt file, in the Inf subfolder.
+	
+	4. Go to the root of the MS Mail database.
+	
+	5. Change to the drive and subfolder that contain the MS Mail executable files.
+	  This is usually the Mailexe subfolder.
+	
+	6. Type the following (this example assumes that the Maildata subfolder is in
+	  the root of drive M):
+	
+	  template m:\tpl\admin.tpl m:\inf\admin.inf m:\inf\admin.txt -dm
+	
+	7. Change to the Inf subfolder.
+	
+	8. Use a text editor to modify the Admin.txt file so that it matches the new
+	  Admin.tpl format (refer to step 11 for more details). For more information
+	  about the Admin.tpl file and MS Mail templates, see Chapter 8 of the
+	  Microsoft Mail Administrator's Guide.
+	
+	  NOTE: Add the template field prompts in a new line right before the end of
+	  each record in the Admin.txt file. The end of the record marker is a pair of
+	  tildes "~~" (without the quotation marks) in a separate line. If you use the
+	  sample field prompts of "Given Name" and "Surname," the field prompts appear
+	  right before the end of record marker as follows:
+	
+	  Given Name:~
+	  Surname:~
+	  ~~
+	
+	  Also note that the tilde at the end of the line is a data field placeholder.
+	  This tilde can also be replaced with the actual data that is entered for the
+	  user data.
+	
+	9. At the DOS prompt, rename the Admin.inf file to Admin.old. From the DOS
+	  prompt, type the following command:
+	
+	  ren admin.inf *.old
+	
+	10. Change to the TPL subdirectory.
+	
+	11. Use a text editor to modify the Admin.tpl file so that it contains the
+	  template field prompts that you removed in step 1. If you use the sample
+	  template field prompts that are supplied in step 8, the template field
+	  prompts are displayed as follows:
+	
+	  Surname:~15~10~ULP~Lastname~
+	  Given Name:~15~10~ULP~Firstname~
+	
+	12. Go to the root of the MS Mail database.
+	
+	13. Change to the drive and subfolder that contain the MS Mail executable files.
+	  This is usually the Mailexe subfolder.
+	
+	14. Type the following (this example assumes that the Maildata subfolder is in
+	  the root of drive M):
+	
+	  template m:\tpl\admin.tpl m:\inf\admin.txt m:\inf\admin.inf -dm
+	
+	These steps create a new Admin.inf file that matches the current Admin.tpl file.
+	
+	Additional query words: 2.10 3.00 3.00b 3.20 admin
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN300 kbMailPCN210
+	Version           : WINDOWS:2.1,3.0,3.2
+	Issue type        : kbprb
+	
+	=============================================================================
+	

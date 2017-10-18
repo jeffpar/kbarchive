@@ -1,0 +1,85 @@
+---
+layout: page
+title: "Q87922: CodeView Gives &quot;Bad DLL Format in 'Filename'&quot;"
+permalink: kb/087/Q87922/
+---
+
+## Q87922: CodeView Gives &quot;Bad DLL Format in 'Filename'&quot;
+
+	Article: Q87922
+	Product(s): Microsoft Programming Utilities
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kberrmsg kb16bitonly kbCodeView kbDebug kbVC
+	Last Modified: 26-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft CodeView for MS-DOS 
+	- Microsoft CodeView for Windows 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Attempting to have CodeView for Windows version 4.0x or 4.1 or CodeView for
+	Win32s version 4.25 load one of the DOS expression evaluators through an Eval
+	statement in the [CVW] section of the TOOLS.INI file will cause the following
+	error message to be displayed:
+	
+	  bad DLL format in 'filename'
+	
+	'filename' is the name of the expression evaluator that CodeView for Windows or
+	CodeView for Win32s is trying to load, and will be either EED1CAN.DLL or
+	EED1CXX.DLL. The message is issued immediately after the file to be debugged has
+	been specified.
+	
+	If an expression evaluator designed to run in the Windows environment is loaded
+	by CodeView under MS-DOS, CodeView will cause the following error message to be
+	displayed when run under Windows:
+	
+	  This application has violated system integrity
+	  due to an invalid general protection fault and
+	  will be terminated.
+	
+	  Quit all applications, quit Windows, and then restart you computer.
+	
+	If CodeView is run outside of Windows, it will either generate a R6915 unhandled
+	exception or hang the machine.
+	
+	MORE INFORMATION
+	================
+	
+	CodeView versions 4.0x and 4.1, CodeView for Windows versions 4.0x and 4.1, and
+	CodeView for Win32s version 4.25 use expression evaluators to look up symbols,
+	parse, and evaluate expressions. The expression evaluators are provided in the
+	form of dynamic-link libraries (DLLs).
+	
+	The Eval statement can be used in the TOOLS.INI file to tell CodeView to load a
+	specific expression evaluator. If no Eval statement is used, CodeView loads the
+	C++ expression evaluator by default.
+	
+	The expression evaluators used by CodeView under MS-DOS are different than those
+	used by CodeView for Windows or CodeView for Win32s because the environments
+	they operate in are different. The names of the expression evaluators identify
+	the environment they were designed to run in and use the following naming
+	convention:
+	
+	  EEhost evaluator.DLL
+	
+	The "host" portion is either D1 for MS-DOS or W0 for Windows. The "evaluator"
+	part is either CAN for C or MASM, or CXX for C, C++, or MASM. For example, the
+	EED1CAN.DLL expression evaluator is the C and MASM expression evaluator for
+	CodeView under MS-DOS. EEW0CAN.DLL is the C and MASM expression evaluator for
+	CodeView for Windows.
+	
+	Additional query words: kbinf 4.00 4.10
+	
+	======================================================================
+	Keywords          : kberrmsg kb16bitonly kbCodeView kbDebug kbVC 
+	Technology        : kbAudDeveloper kbCodeView kbZNotKeyword3
+	Version           : :
+	
+	=============================================================================
+	

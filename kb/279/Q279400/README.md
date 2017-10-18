@@ -1,0 +1,447 @@
+---
+layout: page
+title: "Q279400: MechWarrior 4: Vengeance: Contents of the Readme.rtf File, Pt 2"
+permalink: kb/279/Q279400/
+---
+
+## Q279400: MechWarrior 4: Vengeance: Contents of the Readme.rtf File, Pt 2
+
+	Article: Q279400
+	Product(s): Microsoft Home Games
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbref kbimu msgame
+	Last Modified: 09-NOV-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft MechWarrior 4: Vengeance 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article contains the second part of the contents of the Microsoft
+	MechWarrior 4: Vengeance Readme.rtf file, which is located in the root folder of
+	the Microsoft MechWarrior Vengeance CD-ROM and in the MechWarrior Vengeance
+	folder on your hard disk.
+	
+	MORE INFORMATION
+	================
+	
+	Microsoft MechWarrior: Vengeance Readme File
+	--------------------------------------------
+	
+	November 2000
+	
+	Microsoft Corporation, 1998-2001. All rights reserved.:
+	
+	Welcome to Microsoft MechWarrior: Vengeance.
+	
+	CONTENTS
+	--------
+	
+	A. System Requirements
+	
+	B. Installation
+	
+	  Installing MechWarrior: Vengeance
+	  Installing Audio Compression
+	  Installing DirectX 8
+	  Installing Winsock 2.0
+	  SafeDisc Issues
+	  About the Goodies Folder
+	  Getting Help
+	
+	C. Corrections to the Print Documentation
+	
+	D. DirectX Issues
+	
+	E. Gameplay Issues
+	
+	  Multiplayer
+	  Other
+	
+	F. Configuration Issues
+	
+	  Operating Systems
+	  Display
+	  Audio
+	  Software
+	  Hardware
+	
+	G. Zone Stats
+	
+	H. 3D Card Issues
+	
+	I. 3D Card Drivers and Manufacturers
+	
+	This file contains information to help you troubleshoot issues with MechWarrior:
+	Vengeance. You can find more information about MechWarrior: Vengeance and
+	Microsoft Product Support Services in the printed manual and on the MechWarrior:
+	Vengeance Web site (http://www.microsoft.com/games/mechwarrior4/).
+	
+	F. Configuration Issues
+	-----------------------
+	
+	Known hardware and operating system configuration issues are listed in this
+	section. For issues with specific 3D cards, see section H, "3D Card Issues."
+	
+	Operating Systems:
+	
+	Internet Connection Sharing (ICS) for Multiplayer
+	
+	- Playing by going through a Windows Millennium Internet Connection Sharing
+	  (ICS) machine: This works properly for Windows Millennium and non-Windows
+	  Millennium machines (that have DirectX 8 installed), except in a ZoneMatch
+	  instance.
+	
+	- Playing by going through a Windows 2000 ICS machine: Only one client at a
+	  time can play through the server to the Internet, with either DirectX
+	  versions 7 or 8.
+	
+	- Playing by going through a Windows 98 SE ICS machine: This operating system
+	  does not support the DirectPlay Protocol Flag, so no users can play.
+	
+	Windows 2000
+	
+	AGP aperture size and Windows 2000 stability: If you are experiencing stability
+	issues such as system reboots and system hangs while running MechWarrior:
+	Vengeance under Windows 2000, first make sure you have the latest Windows 2000
+	drivers installed for all of your hardware and motherboard. Also, install the
+	latest Service Packs for Windows 2000. Finally, try lowering the AGP aperture
+	size to increase the stability of your system. Contact your motherboard
+	manufacturer about how to change your AGP aperture size.
+	
+	Windows 2000 and AMD Athlon/Duron processors: Stability issues may arise when
+	playing on a computer with an AMD Athlon/Duron processor, which uses the AMD
+	751/756 motherboard chipset. Make sure you have the latest AMD software drivers
+	and patches installed on your computer. They can be found at
+	http://www.amd.com/support/software.html and
+	http://www.amd.com/products/cpg/athlon-duron/amd_win2k_patch.html.
+	
+	Windows 98
+	
+	Game minimizes when network connection is made: When the user interface is used
+	to establish a dial-up connection, the game minimizes after the connection is
+	established. To fix this, simply maximize the game from the Windows taskbar.
+	
+	Windows 95
+	
+	Windows 95 Gold: To run MechWarrior: Vengeance on Windows 95 Gold, you must have
+	the latest Indeo Video 3.2, 4.5, 5.11, and Indeo Audio 2.5 codecs installed. You
+	can download them from http://www.ligos.com/indeo/downloads/form.shtm.
+	
+	Multiplayer: If you are running Windows 95 and you have not installed Internet
+	Explorer 4.0 or later, you need to upgrade the networking on your computer to
+	play MechWarrior: Vengeance. To do this, double-click Ws2setup.exe on CD1 in
+	\Goodies\Wsock2.
+	
+	NOTE: This upgrade detects versions of Windows later than Windows 95 and will NOT
+	install over them. This download is not intended for use on computers running
+	Windows 98.
+	
+	Display:
+	
+	NVIDIA TNT and GeForce cards: When running MechWarrior: Vengeance on a system
+	with a GeForce or TNT card and an ASUS motherboard, you may experience a
+	periodic crash or hang. This is a display driver issue and NVIDIA is working to
+	resolve it. If you get this problem, contact your manufacturer for driver
+	updates.
+	
+	Via chipsets: Stability issues may occur with these motherboard chipsets when not
+	using the latest drivers. To fix this, download and install the latest chipset
+	drivers for your motherboard (http://www.viatech.com/).
+	
+	AMD Athlon/Duron processors: If you experience instability when running
+	MechWarrior: Vengeance, download and install the latest AMD processor utilities
+	and drivers for your operating system (http://www.amd.com/support/software.html)
+	and (http://www.amd.com/products/cpg/athlon-duron/amd_win2k_patch.html).
+	
+	Audio:
+	
+	Vortex 2 audio chipset (Turtle Beach Montego II, Diamond Monster Sound MX-300)
+	compatibility with Windows 2000: You may experience choppy playback of audio
+	during the installation of MechWarrior: Vengeance as well as other anomalies or
+	even lock-ups in the game. The original manufacturer of the Vortex 2 chipset,
+	Aureal Semiconductor, has gone out of business. No driver updates are available
+	for Vortex 2-based sound cards running on Windows 2000, other than the generic
+	Vortex 2 driver included with Windows 2000. Contact your hardware manufacturer
+	for updated drivers. For reference drivers, visit http://support.a3d.com/.
+	
+	Alternatively, try the following solution:
+	
+	1. Click Start on the Windows taskbar, point to Settings, and then click Control
+	  Panel.
+	
+	2. Double-click Multimedia, and then click the Audio tab.
+	
+	3. Under Playback, click Advanced Properties, and then click the Performance
+	  tab.
+	
+	4. Drag the Hardware Acceleration slider to the left by 2 settings, and then
+	  click OK.
+	
+	Software:
+	
+	Software DVD Players: Certain display cards (for example, those in the Maxi Gamer
+	Xentor family) that come bundled with software DVD players may experience
+	problems when trying to start MechWarrior: Vengeance due to the opening cinemas
+	being in the MPEG format. To correct this, contact your hardware manufacturer
+	for updated software. If problems persist, uninstall the software DVD player,
+	and the game should start and play normally.
+	
+	Winsock 2.0 required to play network games: If you receive an error message
+	referring to Winsock 2.0, manually install it by double-clicking Ws2setup.exe on
+	CD1 in \Goodies\Wsock2.
+	
+	NetMeeting disables hardware acceleration: If NetMeeting is running, or Remote
+	Desktop Sharing is enabled, you will have no hardware acceleration to run
+	MechWarrior: Vengeance. This also happens when NetMeeting has improperly shut
+	down. To fix this, properly shut down NetMeeting from within the application, or
+	disable Remote Desktop Sharing if you have it enabled.
+	
+	Hardware:
+	
+	Microsoft Dual Strike Joystick: You need to enable FX Mode in the Dual Strike
+	software. You also need to enable the mouse in the Options menu in the game to
+	be able to use the free look ability during game play.
+	
+	Mitsumi CD-ROM drive: You may experience issues when launching MechWarrior:
+	Vengeance with this CD-ROM drive. Please contact your hardware manufacturer for
+	firmware updates.
+	
+	Creative 48x CD-ROM drive: Trying to launch MechWarrior: Vengeance with this
+	CD-ROM drive causes an error message to appear. Bypass this by clicking Continue
+	to play the game.
+	
+	G. Zone Stats
+	-------------
+	
+	Through Zone.com, game statistics and player ranking information is available
+	(http://stats.zone.com/). Additionally, with the Zone's own ZoneMatch
+	matchmaking service you can search for, find, and play games over the Internet
+	from within the game itself.
+	
+	Use the following procedure to set up statistical tracking for your games.
+	
+	To track game statistics
+	
+	1. On the Host Setup screen, select Report Game Stats to stats.Zone.
+	
+	2. On the Multiplayer Options screen, select the Track Online option to enable
+	  player ranking.
+	
+	3. In the ZoneStats Password box, enter your password.
+	
+	4. In the Scoreboard for MechWarrior: Vengeance, click View ZoneStats to go
+	  directly to specific player statistics from within the game. This button is
+	  only active if you've entered a password in the ZoneStats Password box on the
+	  Multiplayer Options screen.
+	
+	All game types except Steal the Beacon and Escort can have stats tracked by
+	MechWarrior: Vengeance on http://stats.zone.com/.
+	
+	H. 3D Card Issues
+	-----------------
+	
+	MechWarrior: Vengeance only fully supports DirectX 8-compliant video cards. It is
+	good practice to always install the latest certified drivers for all of your
+	hardware.
+	
+	3DLabs Permedia 2 chipset: Graphics irregularities may occur. To fix this,
+	download and install the latest reference drivers from 3DLabs
+	(http://www.3dlabs.com/).
+	
+	AccelStar II 3D Accelerator: Graphics rendering may be corrupted. To fix this,
+	download and install the latest reference drivers from 3DLabs
+	(http://www.3dlabs.com/http://www.accelgraphics.com/).
+	
+	AOpen PA3000: With the retail drivers installed the system may hang. To fix this,
+	download and install the latest reference drivers from AOpen
+	(http://www.aopen.comhttp://www.nvidia.com/).
+	
+	ASUS 3DexPlorer 3000: With the retail drivers installed, brief screen corruption
+	may appear when the opening cinema begins. To fix this, download and install the
+	latest drivers from ASUS (http://www.asus.com/) or NVIDIA
+	(http://www.nvidia.com/).
+	
+	ASUS V2740: With the retail drivers installed, textures may not render properly.
+	To fix this, download and install the latest reference drivers from Intel
+	(http://www.intel.com).
+	
+	Asus V-6600: Launching a game will cause a hang when using the retail drivers. To
+	fix this, please contact your hardware manufacturer for updated drivers
+	(http://www.asus.com/), or download the latest reference drivers from NVIDIA
+	(http://www.nvidia.com/).
+	
+	ATI All-in-Wonder 128 Pro: When 32-bit color is enabled, graphic instability may
+	occur. To fix this, download and install the latest drivers from ATI
+	(http://support.atitech.ca/).
+	
+	ATI Rage Fury Maxx: Graphics may be corrupted. To fix this, download and install
+	the latest drivers from ATI (http://support.atitech.ca/).
+	
+	ATI Rage Pro Turbo: Some graphics irregularities may occur. To fix this, try
+	downloading and installing the "Special Released" drivers from ATI
+	(http://support.atitech.ca/).
+	
+	ATI Rage II+: Slight texture corruption may occur. To fix this, download and
+	install the latest drivers from ATI (http://support.atitech.ca/).
+	
+	ATI Xpert 128: Texture corruption may occur. To fix this, download and install
+	the latest drivers from ATI (http://support.atitech.ca/).
+	
+	Creative Blaster Riva TNT: Using the latest reference drivers from NVIDIA
+	(version 6.31) the system will hang. Contact your hardware manufacture for
+	updated drivers (http://www.creative.com/). Also, lowering your AGP aperture
+	size may help, contact your hardware manufacturer for more information about
+	changing your AGP aperture size.
+	
+	Creative Labs 3D Blaster Savage4: Game resolution changes may give unreliable
+	results. To fix this, download and install the latest drivers from Creative Labs
+	(http://www.creative.com/).
+	
+	Diamond Fire Pro GL: Graphics may appear corrupted. Contact the manufacturer for
+	updated drivers (http://www.s3.com/).
+	
+	Diamond Monster II 3D: With driver version 2207 from the Diamond Web site, your
+	computer may not recognize the card. To fix this, download and install the
+	latest reference drivers for your Voodoo 2 from 3dfx Interactive
+	(http://www.3dfx.com/).
+	
+	Diamond Monster Fusion: With the Diamond retail display drivers installed,
+	texture corruption may occur. To fix this, download and install the latest
+	reference driver for the 3dfx Voodoo Banshee display chipset from 3dfx
+	Interactive (http://www.3dfx.com/).
+	
+	Diamond Stealth II G-460: With the retail drivers installed, textures will not
+	appear. To fix this, download and install the latest drivers from S3
+	(http://www.s3.com/).
+	
+	Diamond Viper V550: Texture corruption may occur. To fix this, download and
+	install the latest drivers from Diamond (http://www.diamondmm.com/).
+	
+	Diamond Viper V770 Ultra: Graphics corruption and the game may even hang. To fix
+	this, download and install the latest drivers from S3 (http://www.s3.com/) or
+	reference drivers from NVIDIA (http://www.nvidia.com/).
+	
+	Diamond Viper II Z200: With the retail drivers, graphics irregularities may
+	occur. To fix this, download and install the latest drivers from S3
+	(http://www.s3.com/).
+	
+	Elsa Gladiac: The game will hang or the video card will be unrecognized when the
+	latest retail drivers (version.6.34) for this card are installed. To fix this,
+	please contact your hardware manufacturer for updated drivers
+	(http://www.elsa.de/), or download the latest reference drivers from NVIDIA
+	(http://www.nvidia.com/).
+	
+	Guillemot 3D Prophet GeForce: There may be slight graphic irregularities. To fix
+	this, download and install the latest drivers from Guillemot
+	(http://www.guillemot.com/).
+	
+	Guillemot Maxi Gamer Phoenix 2: Sporadic menu corruption may occur in the user
+	interface. To fix this, download and install the latest display drivers from
+	Guillemot (http://www.guillemot.com/).
+	
+	Intel 810 graphics chipset: When using this chipset, always make sure you
+	download and install the latest drivers from Intel (http://www.intel.com/).
+	
+	Matrox Marvel G-400: If you experience stability problems such as the machine
+	hanging when playing MechWarrior: Vengeance in 32-bit color, download and
+	install the latest drivers from Matrox (http://www.matrox.com/), or run the game
+	in 16-bit color by selecting it with the Autoconfig.exe tool in your MechWarrior
+	Vengeance root directory.
+	
+	Matrox Millennium G200 AGP: Texture flashes may occur. To fix this, download and
+	install the latest drivers from Matrox (http://www.matrox.com/).
+	
+	Number Nine Revolution IV: Texture corruption may occur, causing the game to
+	freeze. To fix this, download and install the latest drivers from Number Nine
+	(http://www.nine.com/).
+	
+	NVIDIA chipset (TNT, TNT2, and GeForce): When running Windows 2000, the game will
+	not run in accelerated hardware mode with the NVIDIA display drivers that come
+	with the operating system. To fix this, download and install the latest
+	reference drivers from NVIDIA (http://www.nvidia.com/), or contact your hardware
+	manufacturer for the latest drivers.
+	
+	NVIDIA GeForce 2 GTS: With some monitors, a split screen may occasionally occur
+	when changing video modes. To work around this problem, press ALT+TAB to
+	minimize the game and then ALT+TAB again to maximize it. To fix this problem,
+	download and install the latest reference driver from NVIDIA
+	(http://www.nvidia.com/), or contact your hardware manufacturer for updated
+	drivers. Also, make sure you have the correct drivers installed for your
+	monitor.
+	
+	S3 Savage 4 chipset: When running Windows 2000, the game will not run in
+	accelerated hardware mode with the display drivers that come with the operating
+	system. To fix this, or download and install the latest reference drivers from
+	S3 (http://www.s3.com/), or contact your hardware manufacturer for the latest
+	drivers.
+	
+	STB BlackMagic 3D: Slight graphic corruption may occur. To fix this, install the
+	latest Voodoo 2 reference drivers from 3dfx Interactive (http://www.3dfx.com/).
+	
+	STB Velocity 128: The computer may hang after the opening movie, or graphic
+	irregularities may occur when using the retail drivers. To fix this, download
+	and install the latest reference drivers from NVIDIA (http://www.nvidia.com/).
+	
+	STB Velocity 4400: With the retail drivers installed, the game may freeze during
+	the opening cinema or occasionally in other places in the game. To fix this,
+	download and install the latest reference display drivers from NVIDIA
+	(http://www.nvidia.com/). If this does not correct the problem, contact your
+	hardware manufacturer for driver updates or for system settings that may fix the
+	problem.
+	
+	I. 3D Card Drivers and Manufacturers
+	------------------------------------
+	
+	Make sure that you have the latest drivers from the manufacturer of your video
+	card. Many video issues will be resolved if you install your video card's latest
+	drivers. MechWarrior: Vengeance may not detect some older video cards properly
+	because their video drivers are not DirectX 8-compliant. Please contact your
+	video card manufacturer for updated drivers or install the latest reference
+	drivers for your video board. Note that many reference drivers are not supported
+	by the chipset manufacturer. Listed below are some common video card
+	manufacturers' Web sites. MechWarrior: Vengeance may not support some or all of
+	the cards produced by a particular manufacturer.
+	
+	3dfx Interactive-http://www.3dfx.com/
+	3Dlabs-http://www.3dlabs.com/
+	AccelGraphics-http://www.accelgraphics.com/
+	Asus-http://www.asus.com/
+	ATI-http://support.atitech.ca/
+	Aztech Labs-http://www.aztechlabs.com/
+	Canopus-http://www.canopuscorp.com/
+	Creative Labs-http://www.creativelabs.com/
+	Elsa Technology-http://www.elsa.de/
+	Gateway 2000-http://www.gw2k.com/
+	Guillemot-http://www.guillemot.com/
+	Hercules (see Guillemot)-http://www.guillemot.com/
+	I/O Magic-http://www.iomagic.com/
+	Intergraph (see 3Dlabs)-http://www.3dlabs.com/
+	Jaton-http://www.jaton.com/
+	Leadtek-http://www.leadtek.com/
+	Matrox-http://www.matrox.com/
+	Number Nine-http://www.nine.com/
+	NVIDIA-http://www.nvidia.com/
+	Orchid (see S3)-http://www.s3.com/
+	S3 Incorporated-http://www.s3.com/
+	SiS-http://www.sis.com.tw/
+	Silicon Integrated Systems Corporation (SiS)-http://www.sis.com.tw/
+	STB (see 3dfx Interactive)-http://www.3dfx.com/
+	VIA Technologies-http://www.viatech.com/
+	VideoLogic-http://www.videologic.com/
+	
+	Additional query words: 4.00 msgame mech warrior read me doc mw4
+	
+	======================================================================
+	Keywords          : kbref kbimu msgame 
+	Technology        : kbGamesSearch
+	Version           : :
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

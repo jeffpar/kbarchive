@@ -1,0 +1,142 @@
+---
+layout: page
+title: "Q147809: HOWTO: Create a Setup-Like Status Bar in Visual Basic"
+permalink: kb/147/Q147809/
+---
+
+## Q147809: HOWTO: Create a Setup-Like Status Bar in Visual Basic
+
+	Article: Q147809
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): WINDOWS:4.0,5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbAPI kbSDKWin32 kbVBp kbVBp400 kbVBp600 kbGrpDSVB kbDSupport
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Standard Edition for Windows, version 4.0 
+	- Microsoft Visual Basic Professional Edition for Windows, version 4.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Many applications use a status bar to display the progress of an installation or
+	other lengthy process. Often the percent completed is printed in the middle of
+	the bar and it changes color as the status bar passes over it. This article
+	illustrates how to achieve this effect using Visual Basic for Windows. As a
+	note, the professional and enterprise edition contain a progress bar control
+	that could be used instead. For Win16 applications, the sample calldlls in
+	vb\samples\calldlls uses shape controls to achieve the same effect.
+	
+	MORE INFORMATION
+	================
+	
+	The simplest way to specify the range of the status bar is to determine what the
+	zero-based range will be and specify that value as the ScaleWidth of the
+	horizontal scroll bar. Then you don't have to scale the data for each new
+	sample.
+	
+	Changing the color of the percentage displayed within the picture box is done by
+	specifying the DrawMode as Not XOR Pen with a compatible background. When the
+	bar is drawn, an exclusive OR is performed on each pixel. If the pixel is red,
+	it is made white and vice versa. The text must be placed first because Print
+	does not support DrawMode. The following program demonstrates how to display a
+	red status bar with a red or white text message centered in it. Colors other
+	than red are specified by changing the ForeColor property of the Picture Box
+	Control.
+	
+	Step-by-Step Example
+	--------------------
+	
+	1. Start a new project in Visual Basic. Form1 is created by default.
+	
+	2. Add a picture box (Picture1) and a command button (Command1) to the form.
+	
+	3. Add the following code to the general declarations section of Form1:
+	
+	  Dim tenth As Long
+	
+	  #If Win32 Then
+	  Private Declare Function BitBlt Lib "gdi32" _
+	  (ByVal hDestDC As Long, ByVal x As Long, ByVal y As Long, _
+	  ByVal nWidth As Long, ByVal nHeight As Long, _
+	  ByVal hSrcDC As Long, ByVal xSrc As Long, ByVal ySrc As Long, _
+	  ByVal dwRop As Long) As Long
+	  #Else
+	  Private Declare Function BitBlt Lib "GDI" (ByVal hDestDC As _
+	  Integer, ByVal x As Integer, ByVal y As Integer, ByVal nWidth _
+	  As Integer, ByVal nHeight As Integer, ByVal hSrcDC As Integer, _
+	  ByVal xSrc As Integer, ByVal ySrc As Integer, ByVal dwRop As _
+	  Long) As Integer
+	  #End If
+	
+	  Sub UpdateStatus(FileBytes As Long)
+	  '--------------------------------------------------------------------
+	  ' Update the Picture1 status bar
+	  '--------------------------------------------------------------------
+	      Static progress As Long
+	      Dim r As Long
+	      Const SRCCOPY = &HCC0020
+	      Dim Txt$
+	      progress = progress + FileBytes
+	      If progress > Picture1.ScaleWidth Then
+	          progress = Picture1.ScaleWidth
+	      End If
+	      Txt$ = Format$(CLng((progress / Picture1.ScaleWidth) * 100)) + "%"
+	      Picture1.Cls
+	      Picture1.CurrentX = _
+	      (Picture1.ScaleWidth - Picture1.TextWidth(Txt$)) \ 2
+	      Picture1.CurrentY = _
+	      (Picture1.ScaleHeight - Picture1.TextHeight(Txt$)) \ 2
+	      Picture1.Print Txt$
+	      Picture1.Line (0, 0)-(progress, Picture1.ScaleHeight), _
+	      Picture1.ForeColor, BF
+	      r = BitBlt(Picture1.hDC, 0, 0, Picture1.ScaleWidth, _
+	          Picture1.ScaleHeight, Picture1.hDC, 0, 0, SRCCOPY)
+	  End Sub
+	
+	  Private Sub Command1_Click()
+	      Picture1.ScaleWidth = 109
+	      tenth = 10
+	      For i = 1 To 11
+	          Call UpdateStatus(tenth)
+	          x = Timer
+	          While Timer < x + 0.75
+	              DoEvents
+	          Wend
+	      Next
+	  End Sub
+	
+	  Private Sub Form_Load()
+	      Picture1.FontBold = True
+	      Picture1.AutoRedraw = True
+	      Picture1.BackColor = vbWhite
+	      Picture1.DrawMode = 10
+	      Picture1.FillStyle = 0
+	      Picture1.ForeColor = vbBlue
+	  End Sub
+	
+	4. Select F5 to run the program, and then click Command1.
+	
+	REFERENCES
+	==========
+	
+	Visual Basic Setup Wizard file SETUP1.BAS.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbAPI kbSDKWin32 kbVBp kbVBp400 kbVBp600 kbGrpDSVB kbDSupport 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400
+	Version           : WINDOWS:4.0,5.0,6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

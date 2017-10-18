@@ -1,0 +1,93 @@
+---
+layout: page
+title: "Q244645: User May Get Access Denied Executing a GET from the FTP Prompt"
+permalink: kb/244/Q244645/
+---
+
+## Q244645: User May Get Access Denied Executing a GET from the FTP Prompt
+
+	Article: Q244645
+	Product(s): Internet Information Server
+	Version(s): winnt:4.0
+	Operating System(s): 
+	Keyword(s): kbiis400
+	Last Modified: 08-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When configuring the Microsoft FTP Server, an FTP administrator has the option
+	to create a FTP Directory using a network share name or UNC name. This allows
+	the FTP Site to maintain FTP content on a remote system and doing so makes the
+	actual physical location transparent to the end FTP User.
+	
+	When setting up the FTP Virtual Directory to use UNC names, the FTP administrator
+	must specify a User Name and Password that is valid on the network and on the
+	remote host. The FTP administrator will then setup the appropriate permissions
+	on the remote host for this Virtual FTP User. This means that any FTP User that
+	connects to the FTP Server wants to access content on the remote FTP Virtual
+	directory will only be able to exercise the permissions set up for the Virtual
+	FTP User.
+	
+	When the Microsoft FTP Server is configured this way there is a possibility that
+	when the FTP User is using the FTP command prompt to connect to a Microsoft FTP
+	Server, and the FTP User uses the GET command as the initial command that the
+	logged in Users credentials will be passed to the remote system not those
+	specified when the FTP Virtual Directory was initially configured.
+	
+	RESOLUTION
+	==========
+	
+	A supported fix is now available from Microsoft, but it is only intended to
+	correct the problem described in this article and should be applied only to
+	systems experiencing this specific problem. This fix may receive additional
+	testing at a later time, to further ensure product quality. Therefore, if you
+	are not severely affected by this problem, Microsoft recommends that you wait
+	for the next Product Name service pack that contains this fix.
+	
+	To resolve this problem immediately, contact Microsoft Product Support Services
+	to obtain the fix. For a complete list of Microsoft Product Support Services
+	phone numbers and information about support costs, please go to the following
+	address on the World Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	NOTE: In special cases, charges that are normally incurred for support calls may
+	be canceled, if a Microsoft Support Professional determines that a specific
+	update will resolve your problem. Normal support costs will apply to additional
+	support questions and issues that do not qualify for the specific update in
+	question.
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	  Date      Time    Version      Size    File name     Platform
+	  -------------------------------------------------------------<BR>
+	  10-26-99  2:08PM  4.2.728.1   81,888   ftpsvc2.dll   x86<BR/>
+	  10-26-99  2:08PM  4.2.728.1   126,736  ftpsvc2.dll   alpha<BR/>
+	
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Internet Information Server.
+	
+	Additional query words: IIS hotfix hot fix qfe quick engineering patch
+	
+	======================================================================
+	Keywords          : kbiis400 
+	Technology        : kbiisSearch kbiis400
+	Version           : winnt:4.0
+	Hardware          : ALPHA x86
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

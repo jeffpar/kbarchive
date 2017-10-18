@@ -1,0 +1,108 @@
+---
+layout: page
+title: "Q182963: XADM: How to Compare USNs for Intrasite Replication"
+permalink: kb/182/Q182963/
+---
+
+## Q182963: XADM: How to Compare USNs for Intrasite Replication
+
+	Article: Q182963
+	Product(s): Microsoft Exchange
+	Version(s): 4.0,5.0,5.5
+	Operating System(s): 
+	Keyword(s): kbusage
+	Last Modified: 27-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes the procedure for determining whether an object is being
+	properly replicated, based on the object's update sequence number (USN). This
+	procedure should be used as one of the steps in verifying intrasite directory
+	replication.
+	
+	MORE INFORMATION
+	================
+	
+	If the USN-Changed numbers are being increased above the USN of the modified or
+	new object, then that directory is capable of verifying changes made to its
+	directory entries. If you are unable to perform an Update Now, then you will be
+	unable to perform the USN procedure.
+	
+	For further information on intrasites, see the following Microsoft Knowledge Base
+	articles:
+	
+	  Q166312 Replication or Knowledge Consistency Check Fails
+	
+	  Q176459 DirRep Bridgehead Errors Modifying Site Naming Contexts
+	
+	  Q170334 Troubleshooting Intrasite Directory Replication
+	
+	Procedure
+	---------
+	
+	SERVER 1 = Problem server
+	SERVER 2 = A server in the site that successfully replicates
+	
+	NOTE: This procedure needs to be performed in the Exchange Server Administrator
+	program in raw mode on any server involved.
+	
+	WARNING: Using the raw mode of the Exchange Administrator program (admin /r)
+	incorrectly can cause serious problems that may require you to reinstall
+	Microsoft Windows NT Server and/or Microsoft Exchange Server. Microsoft cannot
+	guarantee that problems resulting from the incorrect use of raw mode can be
+	solved. Use raw mode at your own risk.
+	
+	- To initialize raw mode, from the command prompt, in the EXCHSRVR\BIN
+	  directory, type the following:
+	
+	  admin /r
+	
+	1. From Server 1 and Server 2, select the configuration object and select File /
+	  Raw properties.
+	
+	2. Write down the numbers for the following items on the two servers:
+	
+	  USN-Changed
+	  USN-Source
+	  Reps-From (for the other server involved in the test. For example, if you are
+	  connected to Server 1, select Reps-From, select Server 2, and double-click.
+	  When the screen opens, click OK, and then write down the USN.)
+	
+	3. Make a change to an object or create a new object while connected to Server
+	  1. Notice the object's USN-Changed by viewing its raw properties. This number
+	  should be higher than the configuration object's USN-Changed number.
+	
+	4. Go to Configuration / Servers / Server 1 - Directory Service, and perform an
+	  Update Now (select Refresh All Items in the Directory).
+	
+	5. Verify that the USN-Changed on the configuration object is now higher than
+	  the USN-Changed of the new or modified object mentioned in step 3. If not,
+	  there's a problem with the directory on Server 1.
+	
+	6. Connect to Server 2 and perform an Update Now (Refresh All Items in the
+	  Directory). The USN-Changed on Server 2 should match USN-Source on Server 1
+	  (if there have been no other updates performed on Server 1).
+	
+	7. The new or modified object should be viewable from Server 2, and the USN-
+	  Changed on Server 2 should match the USN-Source on Server 1.
+	
+	8. Repeat steps 2-7 while connected to Server 2, replacing each entry of Server
+	  1 with Server 2.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbusage 
+	Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+	Version           : :4.0,5.0,5.5
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

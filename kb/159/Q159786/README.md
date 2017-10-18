@@ -1,0 +1,105 @@
+---
+layout: page
+title: "Q159786: BUG: Setup Wizard Cannot Locate Files on Non-English Mac OS"
+permalink: kb/159/Q159786/
+---
+
+## Q159786: BUG: Setup Wizard Cannot Locate Files on Non-English Mac OS
+
+	Article: Q159786
+	Product(s): Microsoft FoxPro
+	Version(s): MACINTOSH:3.0b
+	Operating System(s): 
+	Keyword(s): kberrmsg
+	Last Modified: 10-MAR-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you start the Visual FoxPro for Macintosh Setup Wizard, the following
+	message appears:
+	
+	  One or more of the source distribution files defined in <path to FoxPro
+	  folder>:Distribution Sources:DKSYSTEM.DBF cannot be located (BROWSE FOR
+	  !FOUND to see which files are missing). Run the Visual FoxPro Professional
+	  Setup to install the files, then run the Setup Wizard again.
+	
+	Usually the Setup Wizard cannot find the ODBC Setup PPC Control Panel file.
+	
+	CAUSE
+	=====
+	
+	The Setup Wizard cannot locate some files because the names of the folders
+	within the System folder are on a non-English Macintosh operating system.
+	
+	WORKAROUND
+	==========
+	
+	This workaround explains how to locate the Control Panel "ODBC Setup PPC," but
+	you can apply it to any files affected by this problem.
+	
+	1. Copy the file "ODBC Setup PPC" in your Control Panels folder to the Visual
+	  FoxPro:Distribution Sources:System:Control Panels folder.
+	
+	2. Type the following commands in the FoxPro Command window:
+	
+	        USE SYS(2004)+"Distribution Sources:DKSYSTEM.DBF"
+	        BROWSE FOR !FOUND
+	
+	3. Change the "Source" field for ODBC Setup PPC to read:
+	
+	        System\Control Panels\Odbc Setup PPC
+	
+	4. Change the "Sourcedir" field for ODBC Setup PPC to read:
+	
+	        SYSTEM
+	
+	5. Run Setup Wizard again.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this problem in the products listed above and will post
+	new information here in the Microsoft Knowledge Base as it becomes available.
+	
+	MORE INFORMATION
+	================
+	
+	When you build a set of disks for a PPC application, the Setup Wizard pulls
+	files from the "System Folder:Control Panels" and "System Folder:Extensions"
+	folders. It looks for all files that it might need for the distribution disks,
+	even if you do not need them for your application. The options you select in the
+	remaining steps of the Setup Wizard determine whether these files actually are
+	placed on your distribution disks.
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	You can duplicate this behavior by moving the ODBC Setup PPC Control Panel from
+	your Macintosh System Folder:Control Panels folder to your desktop, and then
+	running the Setup Wizard.
+	
+	REFERENCES
+	==========
+	
+	For more information about ODBC files installed by Visual FoxPro 3.0b for
+	Macintosh, please see the following article in the Microsoft Knowledge Base:
+	
+	  Q152516 List of ODBC Files Installed During Setup
+	
+	Additional query words: VFoxMac kbdsd
+	
+	======================================================================
+	Keywords          : kberrmsg 
+	Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac
+	Version           : MACINTOSH:3.0b
+	Issue type        : kbbug
+	
+	=============================================================================
+	

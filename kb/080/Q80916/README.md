@@ -1,0 +1,97 @@
+---
+layout: page
+title: "Q80916: MathType Installation Changes to WIN.INI and AUTOEXEC.BAT"
+permalink: kb/080/Q80916/
+---
+
+## Q80916: MathType Installation Changes to WIN.INI and AUTOEXEC.BAT
+
+	Article: Q80916
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 10-OCT-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	MathType is a mathematical equation editor designed for use with Microsoft
+	Windows. This program alters the WIN.INI and AUTOEXEC.BAT files during its
+	installation. MathType can be used within Microsoft Word for Windows or as a
+	separate installation in Windows.
+	
+	MORE INFORMATION
+	================
+	
+	The memory requirement for MathType after starting Windows is 1.5 MB of RAM.
+	MathType requires 2 MB of hard disk space.
+	
+	MathType adds the following font types to the WIN.INI file: [fonts]
+	
+	  MTEXTRA.PFB (The MathType extra font)
+	  MTSYMBOL.PFB (The MathType symbol font)
+	  MTSYMITA.PFB (The MathType italic symbol font)
+	  FENCES.PFB (Contains large brackets, braces integers, etc.)
+	
+	MathType adds the following extensions to the WIN.INI file:
+	
+	  [extensions]
+	
+	  EPS=mathtype.exe ^.eps
+	  WMF=mathtype.exe ^.wmf
+	
+	Soft font information using these filenames also appears for each installed
+	printer. The following is a sample entry:
+	
+	  [PostScript,LPT1]
+	  SoftFonts=4
+	  SoftFont1=E:\MT\PSFONTS\PFM\FENCES.PFM,E:\MT\PSFONTS\FENCES.PFB
+	  SoftFont2=E:\MT\PSFONTS\PFM\MTEXTRA.PFM,E:\MT\PSFONTS\MTEXTRA.PFB
+	  SoftFont3=E:\MT\PSFONTS\PFM\MTSYMBOL.PFM,E:\MT\PSFONTS\MTSYMBOL.PFB
+	  SoftFont4=E:\MT\PSFONTS\PFM\MTSYMITA.PFM,E:\MT\PSFONTS\MTSYMITA.PFB
+	  feed1=1
+	  feed15=1
+	  device=5
+	
+	MathType changes AUTOEXEC.BAT by loading a PostScript font downloading utility if
+	it detects a PostScript printer. If you add a PostScript printer later, you must
+	add the downloading utility manually. The PSD.EXE entry follows the format
+	below:
+	
+	  psd port:,speed,parity,databits,stopbits fonts
+	
+	For example:
+	
+	  psd com1:,9600,n,8,1 mtextra.pfb mtsymita.pfb fences.pfb
+	
+	This entry is only required for downloading the soft fonts; it is not required
+	for correct operation of the program.
+	
+	MathType is manufactured by Design Science, Incorporated, vendor independent of
+	Microsoft; we make no warranty, implied or otherwise, regarding this product's
+	performance or reliability.
+	
+	For more information regarding MathType, contact Design Science technical
+	support.
+	
+	REFERENCES
+	==========
+	
+	"MathType: Mathematical Equation Editor User's Manual," pages 9-12, 18-23
+	
+	Additional query words: 3.00 3.00a 3.10 3.11 math type word 3rdparty win31
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+	Version           : WINDOWS:3.0,3.0a,3.1,3.11
+	
+	=============================================================================
+	

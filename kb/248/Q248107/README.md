@@ -1,0 +1,123 @@
+---
+layout: page
+title: "Q248107: Creating Server Certificates Using Certificate Services Web Form"
+permalink: kb/248/Q248107/
+---
+
+## Q248107: Creating Server Certificates Using Certificate Services Web Form
+
+	Article: Q248107
+	Product(s): Internet Information Server
+	Version(s): 5.0
+	Operating System(s): 
+	Keyword(s): kbOSWin2000
+	Last Modified: 02-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Services version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	When you enable secure communications (SSL and TLS) on an Internet Information
+	Services (IIS) 5.0 computer, you must first obtain a server certificate. With
+	the integration of certificates in Windows 2000 and the new additions to IIS
+	5.0, there are several ways to obtain a server certificate.
+	
+	MORE INFORMATION
+	================
+	
+	Usually, you would use the Web Server Certificate Wizard to perform this task;
+	however, you can also use the Web forms that are included with Certificate
+	Services 2.0 to create a key pair that is signed by your CA without having to
+	use the Web Server Certificate Wizard. This can save time if you do not already
+	have a site configured, but already know the information needed to create the
+	certificate for the site.
+	
+	To create a server certificate, perform the following steps:
+	
+	NOTE: You must be an administrator to complete the following steps.
+	
+	1. On the computer where the Web site will reside, browse to your certificate
+	  server's Web pages (usually located at http://servername/certsrv, where
+	  servername is the name of the server hosting IIS and the certificate server).
+	
+	2. Choose Request a Certificate, and then click Next.
+	
+	3. Choose Advanced Request, and then click Next.
+	
+	4. Choose Submit a Certificate Request to This CA Using a Form, and then click
+	  Next.
+	
+	5. Under Identifying Information, in the Name field, choose a common name for
+	  the Web site.
+	
+	  For example, if users will type "https://server" into their browser, then the
+	  common name would be "server." However, if the user will contact your site
+	  using "https://www.server.com," then the common name will need to reflect
+	  this by using "www.server.com" as the server name.
+	
+	6. For the rest of the information under Identifying Information, follow the
+	  instructions for e-mail, company, and so on.
+	
+	7. In the Intended Purpose section, choose Server Authentication Certificate
+	  from the drop-down list.
+	
+	8. In the Key Options section, leave everything at the defaults, but click to
+	  enable the Use Local Machine Store option.
+	
+	9. Be sure to enable the Mark Private Key as Exportable check box if you want to
+	  backup this key pair later (recommended). If you do not do this, you will not
+	  have the option to export the private key at a later time (only the public
+	  key).
+	
+	10. Click Submit.
+	
+	11. When you are prompted to Install the Certificate, do so. This adds the
+	  certificate to your certificate store (the local computer store).
+	
+	Now that you have a certificate in the local computer store, in order to use it
+	in IIS, do the following:
+	
+	1. Open the Internet Services Manager (or custom MMC containing IIS) and
+	  navigate to the site where you want to enable secure communications.
+	
+	2. Right-click on the Web site and choose Properties.
+	
+	3. On the properties page for the site, click the Directory Security tab.
+	
+	4. Click Server Certificate.
+	
+	5. When the Web Server Certificate Wizard appears, click Next.
+	
+	6. Choose Assign an Existing Certificate, and then click Next.
+	
+	7. In the list, choose the certificate that you added to the store using the
+	  Certificate Web Forms, and then click Next.
+	
+	8. When the summary screen appears, showing you the certificate you are about to
+	  bind to the Web site, make sure the information is correct. If everything
+	  looks good, click Next.
+	
+	9. Click Finish to close the wizard.
+	
+	10. Test your site to make sure you can access it using an https request (for
+	  example, https://common name).
+	
+	For more information, see the Internet Information Services 5.0 online
+	documentation, which can be found at http://localhost/IISHelp (the default
+	path).
+	
+	Additional query words: iis 5 certificate wizard forms server authentication
+	
+	======================================================================
+	Keywords          : kbOSWin2000 
+	Technology        : kbiisSearch kbiis500
+	Version           : :5.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

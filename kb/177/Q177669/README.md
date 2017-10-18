@@ -1,0 +1,114 @@
+---
+layout: page
+title: "Q177669: Changing to UK Regional Settings during an Unattended Install"
+permalink: kb/177/Q177669/
+---
+
+## Q177669: Changing to UK Regional Settings during an Unattended Install
+
+	Article: Q177669
+	Product(s): Microsoft Windows NT
+	Version(s): winnt:4.0
+	Operating System(s): 
+	Keyword(s): kbOPK kbSBK
+	Last Modified: 09-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 4.0 
+	- Microsoft Windows NT Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	During the unattended installation process of Windows NT version 4.0, there is
+	no switch or option to change the Regional Settings of a computer from the
+	default (U.S.) to UK.
+	
+	MORE INFORMATION
+	================
+	
+	The following steps outline a method on how to use unattended installation to
+	configure new computers with UK Regional settings.
+	
+	NOTE: This article assumes the unattended installation files are stored on a
+	distribution server in the directory C:\Install.
+	
+	1. Log on to a new Windows NT 4.0 installation as a new user.
+	
+	2. Run sysdiff /SNAP 1.txt from an MS-DOS command prompt on this computer. This
+	  will create a file of the current settings for the computer.
+	
+	3. Click the Start button, point to Settings, click Control Panel, and then
+	  double-click Regional Settings. Click the Regional Settings tab, and then
+	  select English (United Kingdom).
+	
+	4. Run the command sysdiff /DIFF 1.txt 2.txt. This will generate a file (2.txt)
+	  listing all system changes that have been made.
+	
+	5. From the difference file (2.txt), create a directory structure of changes,
+	  along with an .inf file and Cmdlines.txt file. To do this, run the following
+	  command:
+	
+	  "sysdiff /INF 2.txt C:\INSTALL" (without the quotation marks)
+	
+	  This will copy the cmdlines.txt file, 2.inf file, and any changed files into a
+	  $OEM$ directory off the C:\Install directory on the distribution server.
+	
+	6. Log off and copy the Ntuser.dat file from the Winnt\Profiles\Username
+	  directory on this computer (for the user profile above) to the distribution
+	  server. Copy the file to the C:\Temp directory off the $OEM$ directory on the
+	  distribution server.
+	
+	  For Example, to C:\Install\$OEM$\C\Temp).
+	
+	7. Create a batch file named Regupd.bat that copies the Ntuser.dat file from the
+	  C:\Temp directory to the C:\Winnt\Profiles\Default User directory on any new
+	  computers. Copy the Regupd.bat file to the $OEM$\C\TEMP directory on the
+	  distribution server.
+	
+	8. Add the line 'OemPreinstall = yes' to Unattend.txt.
+	
+	9. Run WINNT with the desired unattended installation options, plus the /E
+	  option pointing to the batch file created in Step 2.1.
+	
+	  For example:
+	
+	  "WINNT.EXE /U:UNATTEND.TXT /S:C:\INSTALL /E:C:\TEMP\REGUPD.BAT" (without the
+	  quotation marks)
+	
+	The Unattended setup will run as normal. It will make changes during the
+	installation as specified by the OemPreinstall entry and $OEM$ updates. This
+	will run the Cmdlines.txt and use the created .inf file to update the system.
+	Then, at the end of the setup, the batch file will run copying the updated
+	Ntuser.dat over the Default User profile for that computer. This should complete
+	the setup process and any users logging on to the new computer will
+	automatically have UK regional settings.
+	
+	REFERENCES
+	==========
+	
+	For more help on unattended setup, please refer to the Windows NT Workstation
+	Resource Kit or the following Microsoft Knowledge Base article:
+	
+	Q155614 Unattended Installation of Microsoft Windows NT 4.0
+	
+	http://support.microsoft.com/support/tshoot/default.asp
+	
+	http://www.microsoft.com/ntwkssupport/content/faq/unattend.htm
+	
+	For more help information on the use of Sysdiff.exe, type "sysdiff help" at a
+	command prompt.
+	
+	Additional query words: uk regional setup installation Unattended Install
+	
+	======================================================================
+	Keywords          : kbOPK kbSBK 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+	Version           : winnt:4.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

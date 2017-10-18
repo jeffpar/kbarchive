@@ -1,0 +1,155 @@
+---
+layout: page
+title: "Q248479: Host Account Database Location for Single Sign-On"
+permalink: kb/248/Q248479/
+---
+
+## Q248479: Host Account Database Location for Single Sign-On
+
+	Article: Q248479
+	Product(s): Microsoft SNA Server
+	Version(s): 3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+	Operating System(s): 
+	Keyword(s): kbsna300sp1 kbsna300sp2 kbsna300sp3 kbsna300sp4 sna4 kbsna400sp1 kbsna400sp2 kbsna400sp
+	Last Modified: 18-DEC-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 3.0 SP4, 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4 
+	- Microsoft Host Integration Server 2000 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	When you use the Host Security Integration features to provide Single Sign-On
+	(SSO) support, the SNA Server/Host Integration Server (HIS) 2000 computer needs
+	to contact a Host Account Cache (HAC) database to get the correct host user
+	credentials to send to the host system.
+	
+	The Host Security Integration dynamic link library (DLL) (Snasii.dll) is
+	responsible for locating an HAC database that can be used for host account look
+	ups.
+	
+	MORE INFORMATION
+	================
+	
+	The Snasii.dll file is initialized when the SNA Server service starts. During
+	initialization, the Snasii.dll file attempts to locate a secondary (backup) host
+	account database (SDB) to use for host account look ups. The following steps
+	describe the process that is used to locate a secondary HAC database.
+	
+	1. The Snasii.dll file makes a call to determine the primary domain controller
+	  (PDC)/PDC emulator for the Windows NT/Windows 2000 domain.
+	
+	2. A remote procedure call (RPC) connection to the PDC/PDC emulator where the
+	  master database (MDB) resides is attempted.
+	
+	   - If the RPC connection to the MDB is successful:
+	
+	     a. A UDI_LOCATE message is sent to the MDB asking for the name of a SDB.
+	        The UDI_LOCATE message also includes the SNA subdomain for the SNA
+	        Server.
+	
+	     b. The MDB checks to see if any SDBs are registered with an SNA subdomain
+	        name that matches the subdomain name in the UDI_LOCATE message.
+	
+	        1. If there are SDBs that are registered with the same subdomain name,
+	           then the MDB sends a response to the UDI_LOCATE message that
+	           includes the name of the first SDB that matches the request.
+	
+	           In HIS 2000, the UDI_LOCATE message includes the name of the SDB that
+	           has the same domain name and the lowest locate_count number.
+	
+	           NOTE: The locate_count number was added in HIS 2000 to provide
+	           load-balancing among SDBs. Prior to HIS 2000, all SNA Server
+	           computers in a subdomain used the same SDB for account look-ups
+	           because the MDB always returned the first SDB in its list that
+	           matched the subdomain name specified.
+	
+	        2. If there are no SDBs registered with the MDB with the same subdomain
+	           name, then the MDB sends a response to the UDI_LOCATE message that
+	           includes the name of the first SDB in its list regardless of the
+	           subdomain name.
+	
+	           In HIS 2000, the MDB sends a response to the UDI_LOCATE message that
+	           includes the name of the SDB that has the lowest locate_count
+	           regardless of the subdomain name.
+	
+	        3. If there are no SDBs registered with the MDB, the MDB sends a
+	           response to the UDI_LOCATE that indicates that the MDB should be
+	           used for the account look ups.
+	
+	   - If the RPC connection to the MDB is unsuccessful (for example, if the MDB
+	     is unavailable) and if SNA Server 4.0 Service Pack (SP) 3 or later is
+	     being used:
+	
+	     a. The Snasii.dll file checks to see if there is an active HAC database
+	        installed locally; if there is, it will use this SDB for host account
+	        look ups.
+	
+	     b. If the local system does not have an active HAC database, the
+	        Snasii.dll file issues an API call to find all of the backup domain
+	        controllers (BDCs) (DCs in Windows 2000) in the domain. It then
+	        contacts each BDC (or DC) in turn to see if it has an active HAC
+	        database. It connects to the first BDC (or DC) that reports that it has
+	        an active database and uses this database for host account look ups.
+	
+	Note: The ability to search for BDCs was added in SNA Server 4.0 SP3. Please
+	refer to the following article for details on the problem that resulted in this
+	new functionality:
+	
+	  Q235929 Single Sign-On Fails If the Windows NT Primary Domain Controller is
+	  Unavailable
+	
+	For additional information regarding the initialization of the SNASII.DLL when
+	host security is not being used, click the article number below to view the
+	article in the Microsoft Knowledge Base:
+	
+	  Q265384 SNASII.DLL Always Tries to Locate Host Account Cache Database
+	
+	Other Points of Interest:
+	
+	- All SNA Server 3.0/4.0 computers in a subdomain that do account look-ups use
+	  the same SDB for account look-ups because the MDB always returns the first
+	  SDB in its list that matches the subdomain name that is specified. The MDB
+	  does not implement any load-balancing algorithm to distribute the host
+	  account look ups across multiple SDBs. Load-balancing was implemented in HIS
+	  2000, as described previously.
+	
+	- An SNA Server/HIS 2000 computer with a secondary HAC database is only
+	  guaranteed to use its local HAC database for host account look-ups when the
+	  MDB is unavailable.
+	
+	- SDBs reregister with the MDB every three minutes. This is done to make sure
+	  that the MDB has an accurate list of active SDBs. If the MDB cannot
+	  reregister an SDB after three registration periods (approximately 9 minutes),
+	  the SDB is removed from its list of active SDBs.
+	
+	- When a new SDB is registered with the MDB, all SNA Server computers with the
+	  same subdomain name as the new SDB relocate to this new SDB. The new SDB is
+	  then used for host account look ups.
+	
+	  NOTE: This does not apply when HIS 2000 is being used.
+	
+	- The SNA Host Account Cache service can be installed on a Windows NT/Windows
+	  2000 member server, and can be used for host account look-ups. If there are
+	  no other SDBs installed on BDCs (or DCs) in the domain, SNA Server/HIS 2000
+	  computers cannot locate these SDBs if the MDB is unavailable. The reason for
+	  this is that SNA Server/HIS 2000 (Snasii.dll) searches for an active local
+	  HAC database, and then it searches for BDCs (or DCs). It does not search for
+	  member servers. If the SNA Server/HIS 2000 computers are running on member
+	  Windows NT/Windows 2000 servers and each has an active SDB, then each would
+	  use its own local HAC database if the MDB is unavailable.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbsna300sp1 kbsna300sp2 kbsna300sp3 kbsna300sp4 sna4 kbsna400sp1 kbsna400sp2 kbsna400sp3 
+	Technology        : kbAudDeveloper kbSNAServSearch kbHostIntegServ2000 kbSNAServ400
+	Version           : :3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

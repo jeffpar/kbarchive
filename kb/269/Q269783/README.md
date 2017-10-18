@@ -1,0 +1,214 @@
+---
+layout: page
+title: "Q269783: BUG: Cannot Drag Multiple Selections from ListView Control"
+permalink: kb/269/Q269783/
+---
+
+## Q269783: BUG: Cannot Drag Multiple Selections from ListView Control
+
+	Article: Q269783
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 6.0
+	Operating System(s): 
+	Keyword(s): kbCtrl kbDragDrop kbListView kbVBp kbVBp600bug kbGrpDSVB kbDSupport kbCodeSnippet
+	Last Modified: 12-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If you use the Drag method to implement the drag-and-drop feature for a ListView
+	control, the application works as expected when you use the Visual Basic 5.0
+	version of the ListView control. However, when you use the Visual Basic 6.0
+	version of the ListView control, you can only drag one item, even if you select
+	multiple items.
+	
+	CAUSE
+	=====
+	
+	When the Drag method is called, the ListView control updates the selection state
+	so that only the item that is clicked most recently is selected.
+	
+	RESOLUTION
+	==========
+	
+	To work around this problem, store the selection information before the Drag
+	method is called, and restore the selection state after the Drag method is
+	issued. You need to restore the selection state after the function that calls
+	the Drag method exits. For sample code that demonstrates this workaround, see
+	the "More Information" section.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Create a Standard EXE project in Visual Basic 6.0. Form1 is created by
+	  default.
+	
+	2. Press CTRL+T. In the Components dialog box, select the "Microsoft Windows
+	  Common Controls 6.0" check box, and then click OK.
+	
+	3. Add a ListView control (ListView1) and a Label control (Label1) to Form1.
+	  Enlarge both controls.
+	
+	4. Add the following code to Form1:
+	
+	  Option Explicit
+	
+	  Private m_bBegDrag   As Boolean
+	
+	  Private Sub ListView1_MouseMove(Button As Integer, Shift As Integer, x As Single, y As Single)
+	      If m_bBegDrag = True Then
+	          ListView1.Drag vbBeginDrag
+	          m_bBegDrag = False
+	      End If
+	  End Sub
+	
+	  Private Sub Form_Load()
+	      Dim ItmX As ListItem
+	      Dim i As Integer
+	      
+	      Label1.BorderStyle = vbFixedSingle
+	   
+	      ListView1.View = lvwList
+	      ListView1.MultiSelect = True
+	      
+	      For i = 1 To 12
+	          Set ItmX = ListView1.ListItems.Add(, , "Item " & CStr(i))
+	      Next
+	  End Sub
+	
+	  Private Sub Label1_DragDrop(Source As Control, x As Single, y As Single)
+	      Dim nCount As Integer
+	      Dim ItmX As ListItem
+	      
+	      If Not TypeOf Source Is ListView Then Exit Sub
+	      
+	      For Each ItmX In Source.ListItems
+	          If ItmX.Selected = True Then
+	              nCount = nCount + 1
+	          End If
+	      Next
+	      MsgBox nCount & " Items dropped"
+	  End Sub
+	
+	  Private Sub ListView1_MouseDown(Button As Integer, Shift As Integer, x As Single, y As Single)
+	      If Not ListView1.HitTest(x, y) Is Nothing Then
+	          m_bBegDrag = True
+	      End If
+	  End Sub
+	
+	  Private Sub ListView1_MouseUp(Button As Integer, Shift As Integer, x As Single, y As Single)
+	      m_bBegDrag = False
+	  End Sub
+	
+	5. Press F5 to run the application. Select several items in the ListView
+	  control, and drag them to the Label control. Notice that only one item is
+	  dropped to the Label control.
+	
+	Workaround
+	----------
+	
+	Continuing from the previous steps, follow these steps to work around this
+	problem:
+	
+	1. From the Project menu, click Add Module. In the Add Module dialog box, click
+	  Open. Module1 is added to your project.
+	
+	2. Add the following code to Module1:
+	
+	  Option Explicit
+	
+	  Public Sub GetSelectedItems(lvwCtl As ListView, colItems As Collection, & _
+	  x As Single, y As Single)
+	      Dim i   As Integer
+	      Dim ItmX    As ListItem
+	      
+	      ' Clear the collection
+	      Set colItems = New Collection
+	      
+	      ' If you click a non-selected node, you only drag this node.
+	      If lvwCtl.HitTest(x, y).Selected = False Then
+	          colItems.Add (lvwCtl.HitTest(x, y).Index)
+	          Exit Sub
+	      End If
+	      
+	      ' Otherwise, drag the currently selected nodes.
+	      For Each ItmX In lvwCtl.ListItems
+	          If ItmX.Selected = True Then
+	             colItems.Add (ItmX.Index)
+	          End If
+	      Next
+	  End Sub
+	
+	  Public Sub SetSelectedItems(lvwCtl As ListView, colItems As Collection)
+	      Dim i As Integer
+	      Dim ItmX As ListItem
+	      
+	      If colItems Is Nothing Then Exit Sub
+	      If colItems.Count = 0 Then Exit Sub
+	      
+	      ' Select the items that should be selected.
+	      For i = 1 To colItems.Count
+	          lvwCtl.ListItems(colItems(i)).Selected = True
+	      Next
+	  End Sub
+	
+	3. Replace this code in Form1
+	
+	  Private Sub ListView1_MouseMove(Button As Integer, Shift As Integer, x As Single, y As Single)
+	      If m_bBegDrag = True Then
+	          ListView1.Drag vbBeginDrag
+	          m_bBegDrag = False
+	      End If
+	  End Sub
+	
+	  with the following code:
+	
+	  Private m_bSetSelectedItems As Boolean
+	  Private m_colItems As Collection
+	
+	  Private Sub ListView1_MouseMove(Button As Integer, Shift As Integer, x As Single, y As Single)
+	      If m_bBegDrag = True Then
+	          GetSelectedItems ListView1, m_colItems, x, y
+	          ListView1.Drag vbBeginDrag
+	          m_bBegDrag = False
+	          m_bSetSelectedItems = True
+	      End If
+	  End Sub
+	  Private Sub ListView1_DragOver(Source As Control, x As Single, y As Single, State As Integer)
+	      If m_bSetSelectedItems Then
+	          SetSelectedItems ListView1, m_colItems
+	          m_bSetSelectedItems = False
+	      End If
+	  End Sub
+	
+	4. Press F5 to run the application. Select several items in the ListView
+	  control, and drag them to the Label control. Note that all of the selected
+	  items are dropped as expected.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbCtrl kbDragDrop kbListView kbVBp kbVBp600bug kbGrpDSVB kbDSupport kbCodeSnippet 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+	Version           : :6.0
+	Issue type        : kbbug
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

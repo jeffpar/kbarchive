@@ -1,0 +1,98 @@
+---
+layout: page
+title: "Q254703: PRB: Maximized MDI Child Form with Control Loses Focus"
+permalink: kb/254/Q254703/
+---
+
+## Q254703: PRB: Maximized MDI Child Form with Control Loses Focus
+
+	Article: Q254703
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): WINDOWS:6.0
+	Operating System(s): 
+	Keyword(s): kbMDI kbVBp kbVBp600 kbGrpDSVB kbDSupport
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When an MDI child form with a control is maximized, and another child form is
+	created while the top child window is closed, the control on the original child
+	form loses focus.
+	
+	CAUSE
+	=====
+	
+	When the new child form is closed, the original form gets the focus instead of
+	the control. The GotFocus event of the original form fires.
+	
+	RESOLUTION
+	==========
+	
+	Step-by-Step Workaround
+	-----------------------
+	
+	1. Start a new Standard EXE project in Visual Basic. Form1 is created by
+	  default.
+	
+	2. Set the MDIChild property of Form1 to True.
+	
+	3. Add a TextBox to Form1.
+	
+	4. From the Project menu, add an MDI form to the project.
+	
+	5. From the Tools menu, select Menu Editor and create a menu item on the MDI
+	  form with the caption "New Form" (without the quotation marks) and name it
+	  "mnuNew" (without the quotation marks).
+	
+	6. Add the following code to the MDI form:
+	
+	  Private Sub mnuNew_Click()
+	      Dim tmpView As Form1
+	      Set tmpView = New Form1 
+	      tmpView.Caption = "New Form"
+	      tmpView.Show
+	  End Sub
+	
+	7. Add the following code to the General Declarations area of Form1:
+	
+	  Dim ctlFocus As Object
+	
+	  Private Sub Form_Deactivate()
+	  Set ctlFocus = Me.ActiveControl
+	  End Sub
+	
+	  Private Sub Form_GotFocus() 
+	  ' Comment out the next two lines to reproduce behavior
+	  MsgBox "form got focus"
+	  ctlFocus.SetFocus
+	  End Sub
+	
+	8. Run the project and maximize Form1. The TextBox, Text1, has focus.
+	
+	9. Click on the MDI menu New Form. A new form is created. Close the new form.
+	
+	10. A message box indicates that the original form received the focus. Click OK.
+	  Focus is now set to the ActiveControl of the original form.
+	
+	11. Comment out the specified lines and repeat the steps above to see the
+	  problem reproduced.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbMDI kbVBp kbVBp600 kbGrpDSVB kbDSupport 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+	Version           : WINDOWS:6.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

@@ -1,0 +1,139 @@
+---
+layout: page
+title: "Q192023: XFOR: Generating Unique SMTP Address During Dirsync"
+permalink: kb/192/Q192023/
+---
+
+## Q192023: XFOR: Generating Unique SMTP Address During Dirsync
+
+	Article: Q192023
+	Product(s): Microsoft Exchange
+	Version(s): WINDOWS:5.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 20-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.0 
+	-------------------------------------------------------------------------------
+	
+	
+	IMPORTANT: This article contains information about editing the registry.
+	Before you edit the registry, make sure you understand how to restore it if
+	a problem occurs. For information about how to do this, view the "Restoring
+	the Registry" Help topic in Regedit.exe or the "Restoring a Registry Key"
+	Help topic in Regedt32.exe.
+	
+	SYMPTOMS
+	========
+	
+	When importing users via directory synchronization (dirsync), the custom
+	recipient (CR) creation may fail. Those imported users have a non-unique alias
+	or address that can create duplicate proxy addresses. For example, dirsync is
+	attempting to import a user with the alias SOMEONE, while a user with an SMTP
+	proxy address of someone@microsoft.com already exists. This newly introduced
+	user's SMTP proxy should be automatically set to be someone2@microsoft.com.
+	Instead, the attempt to create a unique proxy is not done, and the entire
+	creation of the CR fails.
+	
+	CAUSE
+	=====
+	
+	If the "AddressMappingFileName" and "SMTPDomain" values in the
+	\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSExchangeDX registry key
+	are enabled, it causes the Addr_map.cfg file to be in use. If the file is in use
+	when dirsync reaches the duplicate proxy address, dirsync does not attempt to
+	create a unique address, and therefore, is unable to create the custom
+	recipient.
+	
+	The whole point of having the Addr_map.cfg file is to ensure that users can
+	retain their original SMTP address from Microsoft Mail for PC Networks.
+	Therefore, as can be expected, when this feature is activated by the registry
+	entries, it attempts to retain the original SMTP address.
+	
+	RESOLUTION
+	==========
+	
+	WARNING: Using Registry Editor incorrectly can cause serious problems that may
+	require you to reinstall your operating system. Microsoft cannot guarantee that
+	problems resulting from the incorrect use of Registry Editor can be solved. Use
+	Registry Editor at your own risk.
+	
+	For information about how to edit the registry, view the "Changing Keys And
+	Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+	Information in the Registry" and "Edit Registry Data" Help topics in
+	Regedt32.exe. Note that you should back up the registry before you edit it. If
+	you are running Windows NT, you should also update your Emergency Repair Disk
+	(ERD).
+	
+	Microsoft recognizes the need for resolving the CR creation failure as mentioned
+	in the situation above. We have modified Exchange Server version 5.5 so that a
+	new registry key is now available.
+	
+	The new code allows for the setup of a new registry value. Perform the following
+	steps to set these values:
+	
+	1. Start Registry Editor (Regedt32.exe).
+	
+	2. Locate the following key in the registry:
+	
+	     HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeDX
+	
+	3. On the Edit menu, click Add Value, and then add the following registry
+	  value:
+	
+	     Value Name: Unique SMTP for AddrMap
+	     Data Type:  REG_DWORD
+	     Value:      0 (Default) or 1
+	
+	4. Quit Registry Editor.
+	
+	If this value is set to 0 (default), functionality remains as is. If this value
+	is set to 1 (True), then the Directory Exchange Agent (DXA) and the
+	AddressMappingFileName registry setting is used to create specific SMTP proxies.
+	The DXA will then create a unique SMTP address much in the same way it does now
+	for the secondary MS Mail (PC) proxy.
+	
+	A supported fix that corrects this problem is now available from Microsoft, but
+	has not been fully regression-tested and should be applied only to systems
+	experiencing this specific problem. If you are not severely affected by this
+	specific problem, Microsoft recommends that you wait for the next Microsoft
+	Exchange Server version 5.0 service pack that contains this fix.
+	
+	To resolve this problem immediately, contact Microsoft Product Support Services
+	to obtain the fix. For a complete list of Microsoft Product Support Services
+	phone numbers and information on support costs, please go to the following
+	address on the World Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	  Component: dirsync
+	
+	  File Name     Version
+	  -----------------------
+	  Dxa.exe       5.0.2358.0
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+	version 5.0.
+	
+	
+	Additional query words: Unique SMTP for AddrMap, addr_map.cfg, dirsync, migration, MS Mail
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+	Version           : WINDOWS:5.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

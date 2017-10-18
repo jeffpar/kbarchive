@@ -1,0 +1,88 @@
+---
+layout: page
+title: "Q144930: OFF97: Size of TIFF Picture Is Incorrect When Inserted"
+permalink: kb/144/Q144930/
+---
+
+## Q144930: OFF97: Size of TIFF Picture Is Incorrect When Inserted
+
+	Article: Q144930
+	Product(s): Word 97 for Windows
+	Version(s): WINDOWS:97
+	Operating System(s): 
+	Keyword(s): kbgraphic word8
+	Last Modified: 14-NOV-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	- Microsoft Excel 97 for Windows 
+	- Microsoft PowerPoint 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	When you insert a tagged image file format (TIFF) picture into a document in any
+	of the programs listed above, the picture is larger than it should be. If you
+	examine the original size and scaling information (On the Format menu, click
+	Picture, and then click the Size tab), they are incorrect.
+	
+	RESOLUTION
+	==========
+	
+	To temporarily work around the problem, you can resize the picture. To do this,
+	follow these steps:
+	
+	1. Start Microsoft Photo Editor.
+	
+	2. Open the TIFF file that you inserted into your document.
+	
+	3. Click Properties on the File menu. Make note of the Height and Width
+	  properties of the picture, as expressed in Inches. Click OK to dismiss the
+	  Properties dialog box.
+	
+	4. Click Exit on the File menu.
+	
+	5. Open the Office document that contains the TIFF file that you inserted.
+	
+	6. Click to select the picture, and then click Picture on the Format menu.
+	
+	7. Activate the Size tab. Type the height of the picture in the Height box. Type
+	  the width of the picture in the Width box, and then click OK.
+	
+	  Note: You may have to clear the Lock Aspect Ratio box in order to enter that
+	  correct values for the width and height of the picture.
+	
+	To correct this problem, obtain Microsoft Office 97 Service Release 2 (SR-2).
+	
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Word 97 for Windows SR-1. This
+	problem was corrected in Microsoft Office 97 Service Release 2 (SR-2).
+	
+	MORE INFORMATION
+	================
+	
+	For additional information about SR-2, please see the following article in the
+	Microsoft Knowledge Base:
+	
+	  Q151261 OFF97: How to Obtain and Install MS Office 97 SR-2
+	
+	
+	Additional query words: tif tiff picture size link word97 word8
+	
+	======================================================================
+	Keywords          : kbgraphic word8 
+	Technology        : kbWordSearch kbExcelSearch kbPowerPtSearch kbWord97 kbWord97Search kbPowerPt97 kbZNotKeyword2 kbExcel97Search kbPowerPt97Search kbZNotKeyword3
+	Version           : WINDOWS:97
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

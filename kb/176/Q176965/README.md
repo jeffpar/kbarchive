@@ -1,0 +1,96 @@
+---
+layout: page
+title: "Q176965: Programs (16-bit .exe) May Start NTVDM at 100% CPU Utilization"
+permalink: kb/176/Q176965/
+---
+
+## Q176965: Programs (16-bit .exe) May Start NTVDM at 100% CPU Utilization
+
+	Article: Q176965
+	Product(s): Windows for Workgroups and Windows NT Networking Issues
+	Version(s): WinNT:4.0
+	Operating System(s): 
+	Keyword(s): kbinterop
+	Last Modified: 13-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- the operating system: Microsoft Windows NT 4.0 
+	- Microsoft Internet Information Server versions 1.0, 2.0, 3.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Internet Information Server (IIS) does not support Web links that launch 16- bit
+	applications as CGI scripts. This article details a particular problem that
+	occurs as a result of IIS not supporting such Web links. It also explains why
+	the problem occurs. A symptom of the problem is a slow server showing Task
+	Manager with one session of Windows NT Virtual DOS Machine (NTVDM) running at
+	100 percent of CPU utilization.
+	
+	MORE INFORMATION
+	================
+	
+	At least one session of NTVDM is always associated with a launching of a 16- bit
+	application. Internet Information Server launches a Web page link to a 16-bit
+	application as a CGI script. In this case, the process is spawned by IIS to run
+	in a non-interactive state, with spawn parameters that do not permit the
+	application to receive console-user input. In the case where a 16-bit
+	application requests console-user input and polls the keyboard for input,
+	especially in a tight loop, CPU utilization may increase to 100 percent.
+	
+	
+	This problem may occur in some large Web sites where the following two things are
+	unclear:
+	
+	1. That the same Web link points to a 16-bit application.
+	
+	2. That the 16-bit application contains prompts for user input.
+	
+	This issue becomes more problematic on large Web sites, where it is difficult to
+	determine who spawned the executable. Task Manager, which you access by
+	double-clicking Taskbar, only details the name NTVDM, instead of the 16-bit
+	executable name. To find the executable name, it is helpful to reference an IIS
+	generated logfile, which is contained under the \winnt\system32\LogFile
+	directory. This date-specific file contains a history of processes spawned by
+	IIS by application name.
+	
+	Here is an example of the logfile contents:
+	
+	  C:\WINNT\system32\LOGFILES>type in971021.log
+	  107.57.227.160, -, 10/21/97, 17:11:48, W3SVC, COMPUTER1, 107.57.227.160,
+	  681, 437, 72, 304, 0, GET, /test2.htm, -,
+	  107.57.227.160, -, 10/21/97, 17:11:49, W3SVC, COMPUTER1, 107.57.227.160,
+	  141, 429, 72, 304, 0, GET, /samples/images/backgrnd.gif, -,
+	  107.57.227.160, -, 10/21/97, 17:26:51, W3SVC, COMPUTER1, 107.57.227.160,
+	  900334, 423, 275, 502, 0, GET, /scripts/test2.exe, -,
+	
+	Viewing this logfile output should make it easier to track down the name of the
+	16-bit spawned executables. Since spawning 16-bit executables from Web links is
+	not supported under IIS, it is a good idea to review all executable files under
+	the IIS directories.
+	
+	16-bit executables show the following tabs under Windows Explorer/Properties:
+	
+	  General, Program, Font, Memory, Screen, Misc
+	  (Example: Go to Windows Explorer and find \winnt\system32\edit.com.
+	  Right click and choose Properties).
+	
+	32-bit executables show only the following tabs under Windows
+	Explorer/Properties:
+	
+	  General, Version
+	
+	Additional query words: prodiis 16Bit vdm dos app dosapp Zip file zip files processor util
+	
+	======================================================================
+	Keywords          : kbinterop 
+	Technology        : kbiisSearch kbOSWinSearch kbOSWinNT400 kbiis300 kbiis200 kbiis100 kbOSWinNTSearch
+	Version           : WinNT:4.0
+	Issue type        : kbprb
+	Solution Type     : kbnofix
+	
+	=============================================================================
+	

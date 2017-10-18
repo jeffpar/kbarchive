@@ -1,0 +1,195 @@
+---
+layout: page
+title: "Q150406: Music Central 96 Update Contents: October 95"
+permalink: kb/150/Q150406/
+---
+
+## Q150406: Music Central 96 Update Contents: October 95
+
+	Article: Q150406
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): 1996 edition
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 18-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Music Central for Windows 1996 edition 
+	- Microsoft Music Central for the Macintosh 1996 edition 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The following article lists the album titles and artist names included in the
+	October 95 update of Music Central 1996:
+	
+	Album Titles and Artists
+	------------------------
+	
+	A To Z Geographers Guide To The Piano, The (Jools Holland), Abandoned Garden
+	(Michael Franks), Abriendo Puertas (Gloria Estefan), Ace In The Hole (Elvin
+	Bishop), Ace Ventura: When Nature Calls (Original Soundtrack), Achilles Heel
+	(Paul K. & The Weathermen), Acid Yantra (Sundial), Acoustic Anthology (Al
+	DiMeola), After The Rain (John Laughlin), Agnew Funeral E.P., The (Lotion),
+	Ain't Misbehavin': 25 Greatest Hits (Fats Waller), Airdream Believer: A
+	Retrospective (John Stewart), Alannah (Alannah Myles), Alex Lifeson (Alex
+	Lifeson), Alive In America (Steely Dan), All Ages (Bad Religion), All I Ever
+	Need: The Kapp/MCA Anthology (Sonny & Cher), All I Want (Tim McGraw), All In
+	Good Time (Marcus Hummon), All Of This Love (Pam Tillis), All You Can Eat (K.D.
+	Lang), All-4-One Christmas, An (All-4-One), Alternative (Pet Shop Boys),
+	Altitude (ALT), American Babylon (Joe Grushecky/The Houserockers), American
+	President, The (Original Soundtrack), American Songbook Series: E.Y. Harburg
+	(Various Artists), American Songbook Series: Frank Loesser (Various Artists),
+	American Songbook Series: Kurt Weill (Various Artists), Angels Embrace (Jon
+	Anderson), Angle Of The Light (Anne Hills), Ann Arbor Blues & Jazz Festival
+	1972, Volume 2 (Little Sonny), Anthology (2nd Album) (Diana Ross & The
+	Supremes), Anthony Braxton's Charlie Parker Project 1993 (Anthony Braxton), Art
+	'N' Zoot (Art Pepper/Zoot Sims), Arto Lindsay (Arto Lindsay), Ask For It (Hole),
+	At The Blue Note: The Complete Recordings [Box] (Keith Jarrett), At The Movies
+	(Stanley Clarke), Attic Tracks 1972-1984, The (Sandy Denny/Trevor Lucas), Austin
+	Country Nights (Various Artists), Back From The Living (Stevie Salas/Colorcode),
+	Back To Da Illness (Jammin' G), Ballbreaker AC/DC), Baptism Of Solitude (Paul
+	Bowles), Barrel Full Of Funkies (Da Peace Funk), Basia On Broadway (Basia),
+	Beaker (22 Brides), Beast Of Dreams (Pain Teens), Becky Sharp (Becky Sharp),
+	Best Of Alexander O'Neal, The (Alexander O'Neal), Best Of Beck (Jeff Beck), Best
+	Of Bill Evans On Verve, The (Bill Evans), Best Of Carmen McRae, The (Carmen
+	McRae), Best Of Cherrelle, The (Cherrelle), Best Of Emitt Rhodes, The (Emitt
+	Rhodes), Best Of M.C. Breed, The (M.C. Breed), Best Of Pure Prairie League (Pure
+	Prairie League), Best Of The Nat King Cole Trio, The (Nat "King" Cole Trio),
+	Best Of The S.O.S. Band, The (The S.O.S. Band), Best Of The Season (Anne
+	Murray), Best Of UB40, Volume One (UB40), Best Of UB40, Volume Two (UB40), Best
+	Of Young-Holt Unlimited, The (Young-Holt Unlimited), Between The Sheets, Vol. 1
+	(Various Artists), Between The Sheets, Vol. 2 (Various Artists), Beyond December
+	(First Call), Big Phat Ones Of Hip-Hop: Volume 1 (Various Artists), Birthday
+	Concert, The (Jaco Pastorius), Black Spot, The (D.O.A.), Blackface (Shai),
+	Blowtorch Consequence (Dripping Goss), Blue Day For The Blues, A (Rory
+	Gallagher), Blue Gardenia: Songs Of Love (Dinah Washington), Blue Lady: The
+	Nashville Sessions (Petula Clark), Blue Streak (Luther Allison), Blue Sun (Mark
+	Isham), Bluebird Recordings, Volume 1 (Chicago 1941-1942), The (Big Maceo),
+	Blues Hangover: Excello Rarities (Various Artists), Blues Live From Mountain
+	Stage (Various Artists), Blues Of The Month Club (Joe Louis Walker), Bob Dylan's
+	Greatest Hits, Volume 3 (Bob Dylan), Bombora! (The Original Surfaris), Boppin'
+	At The Blue Note (Jon Hendricks & The All-Stars), Borrowed Tales (Don
+	Williams), Boss Hog (Boss Hog), Breathe (Loud Lucy), Brett James (Brett James),
+	Bridge, The (Ace of Base), Brilliant! The Global Dance Music Experience, Volume
+	6 (Various Artists), Bring 'Em All In (Mike Scott), Brother Ray "Rocks" Rhythm
+	& Blues (Ray Charles), Brotherhood (3T), Brothers McMullen, The (Original
+	Soundtrack), Bryndle (Bryndle), Buffalo Returns To The Plains (Jimmy LaFave),
+	Bullwinkle Part II: The Centurions (The Centurions), Bunny Gets Paid (Red Red
+	Meat), Burned (Electrafixion), Cab Driver's Blues, A (Mem Shannon), Cabaret
+	Manana (Esquivel), California Born And Bred (Flamin' Groovies), California
+	Country: The Best Of The Challenge Masters (Wynn Stewart), Calypso-Is Like So
+	(Robert Mitchum), Capitol Years, The (The Kingston Trio), Celtic Story (Jon
+	Mark), Chant II (Benedictine Monks Of Santo Domingo De Silos), Charlatans U.K.,
+	The (The Charlatans U.K.), Charlie Parker Story: Vol. 1, The (Charlie Parker),
+	Charlie Parker Story: Vol. 2, The (Charlie Parker), Cherry Alive (Eve's Plum),
+	Christmas At Home With The Four Tops (The Four Tops), Christmas In The Aire
+	(Mannheim Steamroller), Christmas In The Country (Legacy) (Various Artists),
+	Christmas To Christmas (Toby Keith), Clapton's Cradle: The Early Yardbirds
+	Recordings (The Yardbirds), Classic Rockers (Augustus Pablo), Classics (Patsy
+	Cline), Clouds Taste Metallic (The Flaming Lips), Coast To Coast Motel (G. Love
+	& Special Sauce), Comet (Cordelia's Dad), Compilation, The (20 Fingers),
+	Confirmation: Best Of The Verve Years (Charlie Parker), Conspiracy (Junior
+	M.A.F.I.A.), Cool Down Time (Dan Zanes), Couplehood (Paul Reiser), Curb Servin'
+	(WC & The Maad Circle), Cypress Hill III (Temples Of Boom) (Cypress Hill),
+	Dance Of The Rainbow Serpent (Santana), Dance The Night Away (Scud Mountain
+	Boys), David Vanian & The Phantom Chords (David Vanian & The Phantom
+	Chords), Daydream (Mariah Carey), Dead Winter Dead (Savatage), Dear You
+	(Jawbreaker), Deep Blue: 25 Years Of Blues On Rounder Records (Various Artists),
+	Deeper Water (Paul Kelly), Delilah Blue (Joshua Kadison), Departure (Michael
+	Johnson), Design Of A Decade 1986/1996 (Janet Jackson), Devil In A Blue Dress
+	(Original Soundtrack), Didn't It Blow You're Mind: Soul Hits Of The '70s, Volume
+	18 (Various Artists), Didn't It Blow Your Mind: Soul Hits Of The '70s, Volume 16
+	(Various Artists), Didn't It Blow Your Mind: Soul Hits Of The '70s, Volume 17
+	(Various Artists), Didn't It Blow Your Mind: Soul Hits Of The '70s, Volume 19
+	(Various Artists), Didn't It Blow Your Mind: Soul Hits Of The '70s, Volume 20
+	(Various Artists), Dirt Track Date (Southern Culture On The Skids), Dirty Pearl
+	(Anita Lane), Disco Volante (Mr. Bungle), Djelika (Toumani Diabate), Do You
+	Believe In Magic/Hums Of The Lovin' Spoonful (The Lovin' Spoonful), Doors And
+	Windows (The Cranberries), Dr. Demento 25th Anniversary Collection: More Of The
+	Greatest Novelty Records Of All Time (Various Artists), Dr. Demento's Country
+	Corn (Various Artists), Dr. Demento's Holidays In Dementia (Various Artists),
+	Dreamland (Yellowjackets), East Jesus (Lee Ranaldo), Electric Anthology (Al
+	DiMeola), Elements: The Island Anthology (Jade Warrior), Ella: The Legendary
+	Decca Recordings (Ella Fitzgerald), Empty (God Lives Underwater), Enchanted
+	Evening, An (Kitaro), End Of Summer, The (Crowsdell), Ennio Morricone Anthology,
+	An (Ennio Morricone), Erasure (Elektra) (Erasure), Essential Glen Campbell V.3,
+	The (Glen Campbell), Essential Glen Campbell Vol. 2, The (Glen Campbell),
+	Essential Judds, The (The Judds), Essential Mills Brothers: Four Boys And A
+	Guitar, The (The Mills Brothers), Etcetera (Wayne Shorter), Evening With Don
+	Williams: Best Of Live, An (Don Williams), Every Second Counts (Jim Lauderdale),
+	Everything Is Black (Club Nouveau), Evil Stig (Evil Stig), Exit Planet Dust
+	(Chemical Brothers), Exit The Dragon (Urge Overkill), Fade Away Diamond Time
+	(Neal Casal), Fall-Outs, The (The Fall-Outs), Falling Farther In (October
+	Project), Father And Son (Gerald Levert & Eddie Levert, Sr), Folk Heroes
+	(The Foremen), For Lovers Only (The Temptations), For The Players (Father MC),
+	Forgiven, Not Forgotten (The Corrs), Frank Sinatra: The Complete Reprise Studio
+	Recordings (Frank Sinatra), Freddie Hubbard And Woody Shaw Sessions, The
+	(Freddie Hubbard/Woody Shaw), Free Spirit (Bonnie Tyler), Friendly Fire (Shara
+	Nelson), From One Good American To Another (Kinky Friedman), From The Vaults
+	(Dionne Warwick), Full Size Boy (Bivouac), Funk It (Martin Lawrence), Funky
+	Christmas (James Brown), Garbage (Garbage), Gentle Creatures (Tarnation), Gerry
+	Cross The Mersey: All The Hits Of Gerry And The Pacemakers (Gerry & The
+	Pacemakers), Get Down Live (KC & The Sunshine Band), Get Lost (The Magnetic
+	Fields), Ghost Of Tom Joad, The (Bruce Springsteen), Gideon Gaye (The High
+	Llamas), Gingerbread Man (The Residents), Give Your Body Up: Club Classics &
+	House Foundations, Volume 1 (Various Artists), Give Your Body Up: Club Classics
+	And House Foundations, Volume 2 (Various Artists), Give Your Body Up: Club
+	Classics And House Foundations, Volume 3 (Various Artists), Giving Myself To You
+	(Gerald Albright), Godhead (Godhead), Goldsinger: The Best Of Shirley Bassey
+	(Shirley Bassey), Gone (Dwight Yoakam), Good Weird Feeling (The Odds), Goofyfoot
+	(Phranc), Great Escape, The (Blur), Greatest Hits (Debbie Gibson), Greatest Hits
+	(Expose'), Greatest Hits (Frankie Avalon), Greatest Hits (Little Milton),
+	Greatest Hits (Little Texas), Greatest Hits (Taylor Dayne), Greatest Hits -
+	Finest Performances (Jerry Lee Lewis), Greatest Hits - Finest Performances
+	(Merle Haggard), Greatest Hits 1985-1995 (Michael Bolton), Greatest Hits
+	Collection, The (Alan Jackson), Greatest Hits, Volume 1 (Curb) (The Bellamy
+	Brothers), Greatest Hits, Volume 2 (Curb) (The Bellamy Brothers), Greatest
+	Hits-From The Beginning (Travis Tritt), Greatest Hits/Finest Performances (Carl
+	Perkins), Greatest Hits/Finest Performances (Conway Twitty), Greatest
+	Hits/Finest Performances (Johnny Cash), Greatest Hits/Finest Performances (The
+	Vogues), Greatest Hits/Finest Performances (Webb Pierce), Guitar Preacher: The
+	Polydor Years (Link Wray), Hand-Picked: 25 Years Of Bluegrass On Rounder Records
+	(Various Artists), Hate Rock 'N' Roll (Jesus & Mary Chain), Have Another
+	Beer With Fear (Fear), Have Yourself A Tractors Christmas (The Tractors), Heart
+	& Soul (The Winans), Heart Land (Tim Wheater), Heat Of The Sun (Strunz &
+	Farah), Helen Darling (Helen Darling), Help (Various Artists), Hempilation
+	(Various Artists), Her Greatest Recordings (1935-1943) (Edith Piaf), Her
+	Highness (Medicine), Here I Am (Monte Warden), Here's Where The Strings Come In
+	(Superchunk), Hey (Toni Price), Heyday 1979-83 (The Embarrassment), High, Wide
+	And Lonesome (David Olney), Hippodrome Paris '77 (Iggy Pop), His Best Recordings
+	1933-1944 (Art Tatum), Hit & Run Holiday (My Life With The Thrill Kill
+	Kult), Hits: Chapter 1, The (Sammy Kershaw), Hittin' That Jug! The Best Of Sonny
+	Burgess (Sonny Burgess), Ho Ho Hoey! (Gary Hoey), Home (Deep Blue Something),
+	Honeyman: Recorded Live 1973 (Tim Buckley), Hot (Half Japanese), Houdini (Long
+	Fin Killie), How We Roll (The Barrio Boyzz), Hundred Year Hall (Grateful Dead),
+	Hustle And The Best Of Van McCoy, The (Van McCoy), Hypnotize The Moon (Clay
+	Walker), I Brought Him With Me (Blind Boys Of Alabama), I Do Not Play No Rock 'N
+	Roll: The Complete Sessions (Fred McDowell), I Don't Know Why I Act This Way
+	(Jude Cole), I Don't Know: The Best Of Willie Mabon (Willie Mabon), I Feel A
+	Song Comin' On: Capitol Sings Jimmy McHugh, Vol. 17 (Various Artists), I Feel
+	Good (John Lee Hooker), I Heard They Suck Live!! (NoFx), I Just Wasn't Made For
+	These Times (Brian Wilson), I Refuse To Be Lonely (Phyllis Hyman), I Think About
+	You (Collin Raye), I'll Be There (Gloria Gaynor), I'll Lead You Home (Michael W.
+	Smith), I'm Livin' With The Blues (Danny Kalb), Iaora Tahiti (Mouse On Mars),
+	Ice Station Zebro (Nine Below Zero), In Europe (Sonny Boy Williamson), In Light
+	Syrup (Toad the Wet Sprocket), In Pictures (Alabama), In Pine Effect (U-Ziq),
+	Indispensable Duke Ellington Volumes 11/12, The (Duke Ellington), Infinity
+	(McCoy Tyner Trio Featuring Michael Brecker), Information Superdriveway (For
+	Love Not Lisa), Insomniac (Green Day), Intertwine Da' Fold (Kenneth Mangram),
+	Intravenous Television Continuum (Man Or Astroman?), Isle Of View, The (The
+	Pretenders), It's A Mystery (Bob Seger/Silver Bullet Band), It's Heavy In Here
+	(Eric Matthews),
+	
+	Additional query words: 1996 multi media multimedia multi-media mmtitles kbmm information infomation udate updates muscen96 mc96
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbMusicCentral kbMusicCentralMacSearch kbMusicCentralMac1996 kbMusicCentral1996
+	Version           : :1996 edition
+	
+	=============================================================================
+	

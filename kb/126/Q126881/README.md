@@ -1,0 +1,194 @@
+---
+layout: page
+title: "Q126881: Baseball 1995: ASCII Format Statistics (BS95STRM.TXT)"
+permalink: kb/126/Q126881/
+---
+
+## Q126881: Baseball 1995: ASCII Format Statistics (BS95STRM.TXT)
+
+	Article: Q126881
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): WINDOWS:
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 11-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Complete Baseball Guide for Windows, 1995 edition 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The BS95STRM.TXT file contains Baseball Daily's ASCII format statistics. The
+	following is the contents of the BS95STRM.TXT file included with Microsoft
+	Complete Baseball for Windows, 1995 edition.
+	
+	==============================================
+	MICROSOFT COMPLETE BASEBALL'S BASEBALL DAILY
+	ASCII FORMAT STATISTICS FILE
+	==============================================
+	
+	This file contains information not included in the User's Guide about
+	Baseball Daily's ASCII format statistics file.
+	
+	To read this file on-screen, use the Page Down and Page Up keys.  You
+	can also print the file by opening this file in any Windows word
+	processing program and choosing the Print command from the File menu.
+	
+	This file contains important information on the following topics:
+	
+	1) WHERE THE ASCII FILE IS
+	
+	2) WHAT THE ASCII FILE IS
+	
+	3) WHAT THE ASCII FILE CONTAINS
+	
+	4) HOW THE RANKINGS IN THE ASCII FILE ARE CALCULATED
+	
+	=================================================================
+	1. WHERE THE ASCII FILE IS
+	=================================================================
+	
+	**** Sample ASCII file located at: ****
+	x:\MSBS95\BS95_STA\MLSTATS.txt where x is your Complete Baseball drive
+	
+	Every day when you download the Baseball Daily, you also receive an
+	ASCII file of player statistics.  This file appears within the
+	BS95_STA subdirectory of your MSBS95 directory, assuming you
+	installed in the default directory suggested in Setup (the regular
+	Daily file has a .mvb extension and appears in the BS95_DLY
+	subdirectory of your MSBS95 directory).  The ASCII file has a .txt
+	extension and includes the date of the file in the name.  For
+	example, the ASCII file for April 7, 1995, would be named
+	19950407.txt.  A sample ASCII file ships with Complete Baseball in
+	the BS95_STA subdirectory and is called MLSTATS.txt.
+	
+	=================================================================
+	2. WHAT THE ASCII FILE IS
+	=================================================================
+	
+	ASCII is a common file format supported by most software programs.
+	Since the file is in ASCII format, you can easily use it in your
+	favorite spreadsheet, database, word processor or other software
+	program that supports the ASCII format.  Many programs will read
+	ASCII format directly, so you can just open the file directly
+	in those programs.  Others, typically database programs, support
+	ASCII format via an import function.  This allows you to import the
+	ASCII file into those programs where it is converted to the native
+	format of that program.  Consult your program's documentation for how
+	ASCII is supported and how to use directly or import ASCII files.
+	
+	Notepad, which comes with MS Windows, will also read the ASCII file
+	directly but it can not open files over a certain size, and
+	formatting may not be ideal for viewing the file.  You should be able
+	to open the ASCII stats files during the season with Notepad and you
+	can use it to open the sample ASCII file (MLSTATS.txt) included with
+	Complete Baseball (keep in mind this file is provided as a sample and
+	does not include every player who played last season).
+	
+	By getting your statistics in this format, you can use your favorite
+	program to search, sort, and manipulate the players' statistics in
+	any way you wish.  This makes it simple, for example, to track the
+	statistics of your favorite player, or to sort all second basemen by
+	ranking them on how many home runs they have hit.
+	You also can easily chart or graph the performance of players on key
+	measures using any built-in graphing features of your favorite
+	program.
+	
+	You could also, for example, develop your own formula for ranking
+	players' performance and use the ASCII file to provide the statistics
+	you need to create your rankings throughout the season.
+	
+	Please note that these ASCII files are copyrighted and are licensed
+	to you for your personal, non-commercial use, and any other use or
+	redistribution of these files is expressly prohibited.
+	
+	=================================================================
+	3. WHAT THE ASCII FILE CONTAINS
+	=================================================================
+	
+	The file covers every player in the league and contains over 30
+	statistical categories including players' most recently played
+	position and a ranking based on key statistical measures.  The
+	ranking is described below.  The stats are cumulative season-to-date
+	totals and are updated daily. Both pitchers and hitters are included.
+	
+	Players' statistics include their most recently played position so
+	you can, if you want, sort them by position in whatever program you
+	use to view the statistics.  All players who are active roster
+	players are listed everyday even if they did not play the previous
+	day.
+	
+	=================================================================
+	4. HOW THE RANKINGS IN THE ASCII FILE ARE CALCULATED
+	=================================================================
+	
+	Along with the statistics, each player is given a ranking for the
+	season-to-date (updated daily).  This ranking is for all players by
+	league. So if you wanted to find out who the highest ranking American
+	League shortstop is, you would you use your favorite program to sort
+	on shortstops in the American League section of statistics and also
+	on ranking as the secondary sort criteria (see your program's
+	documentation for how to do sorts and secondary sorts).
+	
+	This might give results like the following:
+	
+	  Player         Position   Ranking
+	  ------         --------   -------
+	  Cal Ripken Jr.    SS        8.40
+	  Mike Gallego      SS        7.94
+	  Greg Gagne        SS        5.67
+	  Ozzie Guillen     SS        4.34
+	
+	Cal Ripken Jr. might be the twelfth ranked player overall with his
+	score of 8.40 but the highest ranked shortstop (and Mike Gallego,
+	perhaps the 27th ranked player overall but the second-highest ranked
+	shortstop, and so on).  This ranking system is preferable to a system
+	ranking just by position (where Cal Ripken Jr. and Mike Gallego would
+	have numerical rankings of 1 and 2, respectively) because it gives
+	you a relative measure of a player's performance -- if players are
+	ranked 1, 2, 3, etc., you have no way to tell the gap in performance
+	between each player.  With overall rankings, though, it is clear that
+	two players who ranked 1 and 2 by position have far different
+	relative performance levels if their overall rankings are 12 and 13,
+	for example, versus 12 and 157.  In the latter case they might have
+	ranking scores of 8.40 and 4.43, while in the former their ranking
+	scores might be 8.40 and 8.34 so you can easily see their relative
+	performance on the measures included in the ranking.
+	
+	The Microsoft Complete Baseball Ranking System uses the following
+	formulas to rank players:
+	
+	  Hitters:  At bat = .5 point; Single = 1; Double = 2; Triple = 3; Home
+	  run = 4; RBI = 1; Run = 1; Stolen Base = 1; Caught Stealing = (-1);
+	  Walk (BB) = 1; Strikeout = (-1)
+	
+	  Pitchers:  Inning pitched = .5 points; Win = 8; Loss = (-4); Save = 5;
+	  Game Finished = 2; Strikeout = 1; Walk (BB) = (-1); Earned Run = (-1);
+	  Hit = (-.5); Complete Game = 2; Shutout = 3
+	
+	Players' points are summed for all games they have played and are
+	then divided by games played to render a ranking that is based on
+	average points per game.  To sort on relief pitchers versus starting
+	pitchers, search for pitchers with zero games started (these are the
+	relief pitchers).
+	
+	The Microsoft Complete Baseball Ranking System is intended for
+	personal reference purposes only and does not attempt or purport to
+	establish any objective value for one player over another -- it is
+	ranking only the performance of a particular player against other
+	players over the course of the season on an arbitrary set of
+	measures.
+	
+	Additional query words: kbhowto 1995multi media multimedia multi-media mmtitles kbmm
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbHomeProdSearch kbGamesSearch kbBaseballSearch kbCompleteBaseballSearch kbCompleteBaseball1995
+	Version           : WINDOWS:
+	
+	=============================================================================
+	

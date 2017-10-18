@@ -1,0 +1,340 @@
+---
+layout: page
+title: "Q280058: List of Bugs Fixed in SNA Server 4.0 Service Pack 4"
+permalink: kb/280/Q280058/
+---
+
+## Q280058: List of Bugs Fixed in SNA Server 4.0 Service Pack 4
+
+	Article: Q280058
+	Product(s): Microsoft SNA Server
+	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+	Operating System(s): 
+	Keyword(s): kbDSupport kbfix sna4 kbSNA400sp4fixkbfixlist
+	Last Modified: 12-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article contains a list of the article numbers for bugs that were fixed in
+	SNA Server 4.0 Service Pack 4 (SP4). Service packs are cumulative. This means
+	that the bugs that are fixed in a service pack are also fixed in subsequent
+	service packs. Click the Qxxxxxx number that precedes the title of the bug fix
+	article to view the article about that bug. For additional information on the
+	bugs that are fixed in previous service packs, click the article numbers below
+	to view the articles in the Microsoft Knowledge Base:
+	
+	  Q236364 List of Fixes in SNA Server 4.0 Service Pack 3
+	
+	  Q188070 List of Bugs Fixed in SNA Server 4.0 Service Packs 1 and 2
+	
+	For additional information on obtaining SNA Server 4.0 service packs, click the
+	article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q215838 How to Obtain the Latest SNA Server 4.0 Service Pack
+	
+	MORE INFORMATION
+	================
+	
+	SNA Server 4.0 Service Pack 4 (SP4)
+	-----------------------------------
+	
+	For additional information, click the article numbers below to view the articles
+	in the Microsoft Knowledge Base:
+	
+	  Q279260 Asynchronous ACTIVATE/DEACTIVATE_SESSION May Complete Three Times
+	
+	  Q278617 Blank Pages or Access Violation with LU3 Print Jobs
+	
+	  Q278457 Intermittent Hangs in Inetinfo with Microsoft SNA DB2 Provider
+	
+	  Q278331 COMTI: Deallocate Issued to Host for Every COMTI Transaction
+	
+	  Q278245 Four-Part Linked Server Queries Through DB2OLEDB May Cause an
+	  Exception or Slow Performance
+	
+	  Q278242 DB2OLEDB Provider Incorrectly Maps Isolation Levels
+	
+	  Q278228 INSERTS and DELETES from ACCESS to a DB2 Linked Table May Fail
+	
+	  Q277988 COMTI: Memory Leak When Using TCP/IP MS Link Component
+	
+	  Q277928 Snaservr.exe Access Violation in Functions S1ppiusn and S1ppstad
+	
+	  Q277894 Consecutive Inserts to DB2 from SQL Server by way of Linked Server
+	  Fail
+	
+	  Q277871 Linked Server SELECT's to DB2/400 Tables with a DBCS Character Field
+	  Fail
+	
+	  Q276481 SNA Server Does Not Send LU Name in NMVT for DDDLU
+	
+	  Q276476 TN3270 Cannot Restrict Access Through Ports for Specific Requests
+	
+	  Q276470 Dynamically Defined LUs Show Pending Status After PU Recycled
+	
+	  Q276460 Internal Record Error Opening HIS 2000 Com.cfg with SNA 4.0
+	
+	  Q276453 Dynamically Defined Dependent LU Support for Printer LUs
+	
+	  Q276446 Branch Servers That Use DLS Use Dynamic Port for SnaBase Connection
+	
+	  Q276330 TN3270 Connection Requests Fail Over Slow Links
+	
+	  Q276288 WritePrinter() Error Recovery with SNA Server Print Service
+	
+	  Q276273 Remote Administration Is Not Supported in Multiple Master Domains
+	
+	  Q276265 AS/400 Print Jobs May Print Blank Pages after Job End
+	
+	  Q276264 Zero Byte Files When You Print to a File with ByPass GDI Selected
+	
+	  Q276260 User Record Is Not Updated If Remote LU Alias Is Removed
+	
+	  Q276242 SNA Service Table Objects Increased from 1 KB to 4 KB
+	
+	  Q276232 SNARAS Connections Fail with Events 101 and 201
+	
+	  Q276230 SNA Server Incorrectly Formats the First Line of Page
+	
+	  Q276218 Win9x 3270 Client May Not Unload from Memory on Microsoft Windows 98
+	
+	  Q276213 Spurious Pop-up Messages When You Insert a New Link Service
+	
+	  Q276209 Print Session Timeout Problems When You Set a Large Time-Out Value
+	
+	  Q276200 BUG: ADO Application May Hang When You Use OLE DB Provider for DB2
+	
+	  Q276199 SNA Manager (Snaexp.exe) Trapping in CSnaOleObj::CreateObject or
+	  CTN3270AddressItem::`RTTI Complete Object Locator'
+	
+	  Q276196 NMVT Power Off Now Supported in SNA Server
+	
+	  Q276068 SNA Server Traps When Sending "Session Deactivated Event"
+	
+	  Q276053 5250 Applet Uses Wrong Conversion Table for Host Code Page 870
+	
+	  Q276047 Application Exception in DMODInitReceiveAllocate
+	
+	  Q276045 Telnet IP+DM Is Ignored If TN3270 Server Is Already Queuing Data
+	
+	  Q276037 SNA Server Access Violation After Logging Event 3
+	
+	  Q276036 SNA Server Retrieves Incorrect Net Name from XID
+	
+	  Q276026 SNA Print Server May Insert Extra Form Feed
+	
+	  Q276022 Windows 95 and Window 98 Client Fails to Use Multiple Firewall
+	  Entries
+	
+	  Q275908 COMTI: Need to Define a Decimal Data Type with More Than 18 Digits
+	
+	  Q275896 SNA Server Rejects TN3270 Client Data with Sense Code 200D
+	
+	  Q275870 Erroneous Query by Windows 95, Windows 98, and Windows NT SNA Client
+	  Causes DNS Event Errors
+	
+	  Q275865 COMTI Event 104 HRESULT 0x8007000e When You Use Recordsets
+	
+	  Q275864 COMTI TOR/AOR Changes
+	
+	  Q275722 APPC Hot Backup Application Slow To Recover When Primary Fails
+	
+	  Q275718 SNA Server Manager May Stop Responding When You Quit the Program
+	
+	  Q275711 SNACFG Incorrectly Uses Long File Names
+	
+	  Q275710 TN3270 Does Not Handle CD Field Properly During Error Recovery
+	
+	  Q275709 Event 108 When You Cancel CPI-C CMALLC Verb
+	
+	  Q275708 TN3270E Bracket Error Because of Race Condition
+	
+	  Q275669 ODBC Driver for DB2 Truncates Binary Data Flow That Includes NULLs
+	
+	  Q275630 INSERTS from DTS to DB2 Through OLE DB Provider for DB2 May Not Work
+	  Correctly
+	
+	  Q275565 Multiple-Threaded 3270/LUA Application May Stop Responding (Hang)
+	  Opening LU
+	
+	  Q275479 Access Violation in 5250 Application While in TN5250 Mode
+	
+	  Q275469 APPC Load Balancing May Fail to Choose "Best" SNA Server
+	
+	  Q275366 Restarting APPC Print Sessions Results in a Pending Status
+	
+	  Q275280 Workstation Definitions That Use MAC Addresses Fail on Windows 2000
+	
+	  Q274185 LocalLU Is Documented Incorrectly in CPIC SDK Online Help
+	
+	  Q274179 TN3270/TN5250 Port Values Limited to Four Digits in SNA Manager
+	
+	  Q274160 FIX: Four-Part Inserts to DB2 Through LinkedServer Fails
+	
+	  Q273975 Opening Multiple SLI Sessions May Cause Some to Stop Responding
+	  (Hang)
+	
+	  Q268266 TN3270 Print Session Stops Responding When Host Sends a SHUTD Command
+	
+	  Q268171 TN3270 Application May Process a Screen of Host Data Twice
+	
+	  Q267993 Access Violation in Snatrc.dll When You Enable CPI-C API Traces
+	
+	  Q267902 Applications Fail to Receive Data When Opening LUA LU
+	
+	  Q265792 DB2OLEDB Leaks Memory When Stored Procedure Returns Large VarChar
+	
+	  Q264526 Snaoledb.dll Init Fails When the CoInitializeEx Multithreaded
+	  Function Is Used
+	
+	  Q263096 ACTIVATE_SESSION Event Not Signaled When the Session Ends
+	
+	  Q262991 All 3270 Clients Stop Responding When Snaservr.exe Starts
+	
+	  Q262573 Japanese CICS File Transfer Fails with 3270 Applet
+	
+	  Q262473 LU 6.2 Data Compression Fails When Initiated by Host System
+	
+	  Q262017 Memory Leak in TN3270 Service When You Print Through TN3270 Emulator
+	  Session
+	
+	  Q261290 3270 Applet Causes Access Violation Error Message in Win3270.exe
+	
+	  Q260988 Capture RE Fails When You Use TCP/IP MS LINK Component
+	
+	  Q259701 Extra Lines Appear in LU3 Print Job When You Use PDT
+	
+	  Q259293 Allocate Request May Stop Responding When Host Rejects SNASVCMG BIND
+	
+	  Q259251 Host Security Unattended Install Sets Wrong Domain for Service
+	  Account
+	
+	  Q259195 Cannot Control COMMIT or ROLLBACK Commands When You Use ADO with DB2
+	  and Stored Procedures
+	
+	  Q259149 SNA Server Selects Bad Dependent APPC LU from Default Pool
+	
+	  Q259085 MSMQ-MQSeries Bridge: Reducing Polling Traffic from Windows NT to
+	  MQSeries
+	
+	  Q259045 MSMQ_MQSeries Bridge: Translating Windows NT Machine Names That
+	  Contain Hyphens
+	
+	  Q258993 Perflib Event 1009 Occurs When You Open COMTI Performance Monitor
+	
+	  Q258972 TN3270 Display Session Can be Opened Even If Associated Printer Is In
+	  Use
+	
+	  Q258252 TN5250 Clients Stop Responding When TN5250 Fails to Issue
+	  RECEIVE_AND_WAIT
+	
+	  Q257765 SNA DDM Service Fails with an Access Violation When Too Many Tables
+	  Open
+	
+	  Q257759 TN5250 Service Ends Unexpectedly When Client Disconnects
+	
+	  Q256906 SNA Server Fails Unexpectedly with Access Violation in S1PROLU6
+	
+	  Q255173 Applet Stops Responding at Blank Screen When Connecting with TN3270E
+	
+	  Q254662 Event ID 5: TN5250 Generates Dr. Watson with a Fault in DbgBreakPoint
+	
+	  Q254015 SNA Server Access Violation During Single Sign-On Processing
+	
+	  Q254000 SNA Server Access Violation Occurs after Dynamically Adding 3270 LUs
+	
+	  Q253556 FIX: Bridge Service Fails to Create Queue with
+	  MQ_ERROR_OBJECT_SERVER_NOT_AVAILABLE Error Message
+	
+	
+	  Q253206 Active TN3270 Clients Might Hang Unexpectedly
+	
+	  Q253102 COMTI Returns ADO Recordset That Cannot Be Sorted
+	
+	  Q252837 Exception in DbgBreakPoint with TN5250 Service
+	
+	  Q250395 Stopping TN3270 LU from SNA Manager Fails to Clean Out the Session
+	
+	  Q249971 Windows NT SNA Client Truncates FQDN in OtherServers Registry
+	  Parameter
+	
+	  Q249970 Print Server May Send CR and LF in Wrong Order
+	
+	  Q249967 LU1 Print Job Loses the First Line When DelayPrintStart Is
+	  Implemented
+	
+	  Q249960 COBOL Definitions with Multiple FILLER Fields Do Not Import Properly
+	  When You Use the COMTI COBOL Wizard
+	
+	  Q248498 Win32 CPIC Application May Stop Unexpectedly
+	
+	  Q248401 User May Override Mapping Is Not Enforced Centrally
+	
+	  Q247816 Some SNA Print Sessions May Remain Pending When Autostarted
+	
+	  Q247332 IBM PCOM 5250 Fails on Windows 95/98 after a 3270/FMI Session Is
+	  Closed
+	
+	  Q247320 Host User ID Can be Edited When "User May Override Mapping" Is
+	  Disabled
+	
+	  Q246794 Invokable APPC/CPI-C TP May Fail Intermittently with Event 60
+	
+	  Q246004 5250 and 3270 Applets Do Not Find SNA Server
+	
+	  Q245573 Display Verb Returns Unexpected Results When Channel Connections Are
+	  Used
+	
+	  Q245487 APPC Program Never Retries New Local LU From Pool
+	
+	  Q245460 5250 Numeric Keypad ENTER Key Produces Space Character
+	
+	  Q245453 TN3270 Server Access Violation in Mngext!MngDeleteObject()
+	
+	  Q245429 Win5250 Problem Exiting AS/400 Screen With Function Key
+	
+	  Q244792 OLE/DB for DB2 Error: Could Not Resolve the Specified Host Name
+	
+	  Q244262 OLE DB Provider/ODBC Driver for DB2 May Break Access/Jet Applications
+	
+	  Q243917 SNA Workstation 4.0 Access Violation When SnaBase Ends
+	
+	  Q243784 SNARAS Traces Continually Grow in Size If Left Enabled
+	
+	  Q243388 Shared Folders Connections Fail Using Same User ID with Different
+	  Passwords
+	
+	  Q242987 Host Security Domain Disappears from SNA Server Manager
+	
+	  Q242876 Access Violation in SNA Host Account Cache (SNAUDB) Service
+	
+	  Q241991 TN3270 Emulator Displays Corrupted Data
+	
+	  Q241408 WIN5250 Applet Incorrectly Displays Error Messages on Line 24
+	
+	  Q241320 LU Has Blank Status after Connection Move to Another SNA Server
+	
+	
+	  Q240762 Password Synch Fails after Promoting Backup SNAPMP Service
+	
+	  Q240676 Cannot Use ODO As a Return Value for Method's Recordset in CICS LINK
+	  and MSLINK Programming Models
+	
+	  Q239861 SNA Server Host Print Service Supports 1,024 3270 Print Sessions
+	
+	Additional query words: sna400sp4fixlist
+	
+	======================================================================
+	Keywords          : kbDSupport kbfix sna4 kbSNA400sp4fix kbfixlist
+	Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3 kbSNAServ400SP4
+	Version           : :4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+	
+	=============================================================================
+	

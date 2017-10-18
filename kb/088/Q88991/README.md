@@ -1,0 +1,155 @@
+---
+layout: page
+title: "Q88991: Visual Basic for MS-DOS: Memory Management Questions &amp; Answers"
+permalink: kb/088/Q88991/
+---
+
+## Q88991: Visual Basic for MS-DOS: Memory Management Questions &amp; Answers
+
+	Article: Q88991
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): MS-DOS:1.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 06-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic for MS-DOS 1.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	1. Q. I am receiving the error message "subscript out of range." What is causing
+	  this problem?
+	
+	  A. In the Microsoft Visual Basic for MS-DOS (VBDOS) environment and in a
+	  compiled application, a "subscript out of range" error message may occur on a
+	  dimension (DIM) statement. This error is usually caused by one or both of the
+	  following conditions:
+	
+	  a. If you have an array whose total size is greater than 64K, you must use
+	     the /ah switch. To compile an application, add the /ah switch to your
+	     command line. To use the /ah switch in the VBDOS environment, add /ah to
+	     the command line when you invoke VBDOS.EXE.
+	
+	  b. Also, if you are working with a huge array (that is, over 128K), the
+	     length of each element of the array must be a power of 2 bytes (2, 4, 8,
+	     16, 32, 64, and so on). Frequently this is not the case with arrays of
+	     user-defined types and arrays of fixed-length strings. If an element of a
+	     huge array is not a power of 2 bytes, the user-defined type or fixed-
+	     length string must be increased to the nearest power of 2. For example, an
+	     array of fixed-length strings where each string is 60 bytes long must be
+	     changed to an array of fixed- length strings where each string is 64 bytes
+	     long.
+	
+	2. Q. I am running out of memory in the VBDOS environment. What can I do to help
+	  alleviate this problem?
+	
+	  A. When you are running in the VBDOS environment, it is best to have as much
+	  expanded memory available as possible. VBDOS.EXE stores subprograms and
+	  functions of less than 16K of code in expanded memory. To make more
+	  conventional memory available, VBDOS provides an /s switch to reduce the
+	  amount of conventional memory used by VBDOS.EXE. For example, you can start
+	  VBDOS.EXE by typing "vbdos /s:340" (without the quotation marks) at the
+	  command line. We recommend that you start VBDOS.EXE with an /s value between
+	  320 and 350. This provides a good compromise between available memory and
+	  speed. The lower the /s value, the slower the environment runs.
+	
+	  Running out of DGROUP or conventional memory is the most common cause of "out
+	  of memory" messages in the VBDOS environment. Possible reasons for running
+	  out of DGROUP include the following:
+	
+	  a. Too many subroutines or functions: Each SUB or FUNCTION procedure uses 46
+	     bytes of DGROUP in the environment. Remove all routines that are not being
+	     called or used.
+	
+	  b. Static arrays: Static arrays are stored in DGROUP. The only way to have a
+	     static array in VBDOS.EXE is to have a dimension (DIM) statement for a
+	     common shared array before the COMMON SHARED statement that contains it.
+	     By positioning the DIM statement after the COMMON SHARED statement, the
+	     array becomes dynamic and therefore is not stored in DGROUP.
+	
+	  c. Variable overhead: There is a 4-byte overhead in DGROUP for each variable.
+	     This overhead occurs for each module. Therefore, in a multiple-module
+	     program that has many common shared variables, this overhead is duplicated
+	     for each module you have. To reduce the overhead, reduce the number of
+	     variables and modules.
+	
+	  For more information on memory management, please refer to Appendix B of the
+	  "Programmer's Guide." Please note that the README.DOC file provided with
+	  Visual Basic for MS-DOS contains some corrections to this appendix.
+	
+	  Possible reasons for running out of conventional memory include the
+	  following:
+	
+	  a. Not enough expanded memory for all your Basic routines: To work around
+	     this problem, you must increase the amount of expanded memory available to
+	     your program.
+	
+	  b. Subroutine or functions that are over 16K: To work around this problem,
+	     decrease the size of each SUB or FUNCTION procedure until it is less than
+	     16K. The size of each routine can be determined by pressing F2 in the
+	     environment.
+	
+	  c. Large arrays: To work around this problem, decrease the number of
+	     dimensions in your arrays. Nonvariable-length- string arrays of less than
+	     16K can be stored in expanded memory by using the /ea switch when you
+	     invoke VBDOS.EXE and Quick libraries. Your Quick library should include
+	     only the routines that you need.
+	
+	  For more information on memory management, please refer to Appendix B of the
+	  "Programmer's Guide." Please note that the README.DOC file provided with
+	  Visual Basic for MS-DOS contains some corrections to this appendix.
+	
+	3. Q. My program runs in the VBDOS environment; however, when the program is
+	  compiled, an "out of memory" message is generated. How can I correct this
+	  problem?
+	
+	  A. If a program runs successfully in the VBDOS environment but runs out of
+	  memory at compile time or run time, there may be a problem with arrays. In
+	  the VBDOS environment, arrays are dynamic by default. This means that the
+	  arrays are created at run time and are stored in far memory. In a compiled
+	  application, arrays are static by default. This means the arrays are created
+	  at compile time and are stored in near memory (DGROUP), of which there is
+	  only 64K.
+	
+	  To make all your arrays dynamic in a compiled application, use the metacommand
+	  REM $DYNAMIC at the beginning of your program before the dimension (DIM)
+	  statements of your arrays. If you have any arrays that are included in COMMON
+	  SHARED statements, The DIM statements for these arrays should come after the
+	  COMMON SHARED statements in which they are included.
+	
+	  For more information on the $DYNAMIC metacommand, please refer to the "A-Z
+	  Reference" in the "Reference" manual.
+	
+	  For more information on memory management, please refer to Appendix B of the
+	  "Programmer's Guide."
+	
+	4. Q. When I try to compile my program, I receive a "program memory overflow"
+	  error message. How can I correct this problem?
+	
+	  A. If a program runs successfully in the VBDOS environment but generates a
+	  "program memory overflow" error message at compile time, the program needs to
+	  be broken down into multiple modules.
+	
+	  In the VBDOS environment, each subroutine, function, event, or module-level
+	  code is allocated 64K for code. In a compiled application, the entire file is
+	  allocated only 64K. This difference allows a much larger code module or form
+	  run in the environment than can run in a compiled application.
+	
+	  To make your compiled programs run, you must reduce them in size by moving
+	  some code to another module. For more information on multiple-module
+	  programming, please refer to Chapters 6 and 16 of the "Programmer's Guide."
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword3 kbVB100DOS
+	Version           : MS-DOS:1.0
+	
+	=============================================================================
+	

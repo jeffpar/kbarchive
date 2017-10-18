@@ -1,0 +1,79 @@
+---
+layout: page
+title: "Q126448: Err Msg: Not Enough Extended Memory Available to Start..."
+permalink: kb/126/Q126448/
+---
+
+## Q126448: Err Msg: Not Enough Extended Memory Available to Start...
+
+	Article: Q126448
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:95
+	Operating System(s): 
+	Keyword(s): kbenv kberrmsg win95
+	Last Modified: 17-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 95 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you try to start Microsoft Windows 95 you receive the following error
+	message:
+	
+	  Not enough extended memory available to run Windows.
+	
+	  Quit one or more applications to increase available memory or restart your
+	  computer. Press any key to continue...
+	
+	CAUSE
+	=====
+	
+	This error message can occur if you have configured your computer to create a
+	RAM drive larger than 15 megabytes (MB). The error occurs even if your computer
+	has enough memory to create the RAM drive and still meet the memory requirements
+	for starting Windows 95.
+	
+	A RAM drive larger than 15 MB is allocated all the available extended memory
+	below physical address 16 MB. To start Windows 95 on most computers, some memory
+	below 16 MB is necessary for DMA buffers. If all the memory below 16 MB is
+	allocated to the RAM drive, Windows 95 cannot start.
+	
+	RESOLUTION
+	==========
+	
+	To correct this problem, decrease the size of the RAM drive to less than 15 MB.
+	To do so, follow these steps:
+	
+	1. Restart your computer. When you see the "Starting Windows 95" message, press
+	  the F8 key and then choose Command Prompt Only.
+	
+	2. At the command prompt, type
+	
+	  " edit c:\config.sys " (without the quotation marks)
+	
+	  and then press ENTER.
+	
+	3. Locate the line that contains RAMDRIVE.SYS. Change the line so that it
+	  contains a value lower than 15 MB. For example, to use an 8 MB RAM drive,
+	  change the line to read:
+	
+	  " DEVICE=C:\WINDOWS\RAMDRIVE.SYS 8192 " (without the quotation marks)
+	
+	4. Save the CONFIG.SYS file and then quit the editor.
+	
+	5. Restart your computer.
+	
+	
+	======================================================================
+	Keywords          : kbenv kberrmsg win95 
+	Technology        : kbWin95search kbZNotKeyword3
+	Version           : WINDOWS:95
+	Issue type        : kbprb
+	
+	=============================================================================
+	

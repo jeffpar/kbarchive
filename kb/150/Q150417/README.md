@@ -1,0 +1,110 @@
+---
+layout: page
+title: "Q150417: PRB: Read-Only SSTab Does Not Display Child Controls Properly"
+permalink: kb/150/Q150417/
+---
+
+## Q150417: PRB: Read-Only SSTab Does Not Display Child Controls Properly
+
+	Article: Q150417
+	Product(s): Microsoft SourceSafe
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbSSafe400 kbSSafe600 kbVBp400
+	Last Modified: 07-DEC-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual SourceSafe for Windows, version 6.0 
+	- Microsoft Visual SourceSafe, 16-bit, for Windows, version 4.0 
+	- Microsoft Visual SourceSafe, 32-bit, for Windows 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Create a form that contains the Sheridan SSTab control, and child controls on
+	each of the tabs. When the form is in read-only mode (common when using Visual
+	SourceSafe to control the project) and the user selects each tab to display it,
+	the only child controls displayed are those controls which were on the original
+	tab.
+	
+	In addition, if you specify a File, Save File menu item on the form (after moving
+	from tab to tab) one of the following two error messages (depending on whether
+	there is a .FRX file associated with the form or not) displays one of the
+	following error messages:
+	
+	  Path/File access error: '<location of form file>.FRX'
+	
+	  Path/File access error: '<location of form file>.FRM'
+	
+	CAUSE
+	=====
+	
+	The Sheridan Tab control actually changes the Left property of the specific tab
+	child controls to make them appear and disappear. The Left property of all the
+	child controls on the previously shown tab are changed by -75000. The Left
+	property of all child controls on the newly selected tab is changed by +75000.
+	Visually, it appears that the tab control is properly displaying its children.
+	
+	However, when the form is in read-only mode, the Left property cannot be
+	modified. Therefore, the controls do not change as they should.
+	
+	STATUS
+	======
+	
+	This Sheridan Tab control behavior is by design.
+	
+	WORKAROUND
+	==========
+	
+	Check out the form with the SSTab control (make the file read/write). Then the
+	control behaves as you would expect.
+	
+	Sheridan has created an update for the 32-bit control, which corrects many of
+	these problems. The update, tabctl32.exe, can be downloaded from their Web site
+	at www.shersoft.com.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Problem
+	--------------------------
+	
+	1. Start Visual Basic 4.0. Form1 is created by default.
+	
+	2. Place the Sheridan tab (SSTab) on Form1.
+	
+	3. Add at least one control to each of the tabs on the form. Place the controls
+	  in unique locations on each tab, so when tabbing from tab to tab, it is
+	  obvious which controls are on which tabs.
+	
+	4. Tab through each of the tabs and see what controls are on which tabs.
+	
+	5. Save the project via the File, Save Project option and add the project to
+	  Source Code Control when asked.
+	
+	6. Double-click on Form1 to display the form. Select each tab and watch the
+	  behavior on the controls. The controls are not changing as you would expect
+	  them to.
+	
+	7. Try to save the form via the File, Save File option. One of the following two
+	  error messages displays:
+	
+	  Path/File access error: '<location of form file>.FRX'
+	
+	  -or-
+	
+	  Path/File access error: '<location of form file>.FRM'
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbSSafe400 kbSSafe600 kbVBp400 
+	Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe400 kbSSafe16bitSearch kbSSafe32bitSearch
+	Issue type        : kbprb
+	
+	=============================================================================
+	

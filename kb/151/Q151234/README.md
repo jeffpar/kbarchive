@@ -1,0 +1,91 @@
+---
+layout: page
+title: "Q151234: Packets Misrouted on RAS Client w/Multiple Outbound Connection"
+permalink: kb/151/Q151234/
+---
+
+## Q151234: Packets Misrouted on RAS Client w/Multiple Outbound Connection
+
+	Article: Q151234
+	Product(s): Microsoft Windows NT
+	Version(s): 3.5 3.51
+	Operating System(s): 
+	Keyword(s): kbnetwork
+	Last Modified: 09-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation versions 3.5, 3.51 
+	- Microsoft Windows NT Server versions 3.5, 3.51 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	When you use a Windows NT Remote Access client to make multiple simultaneous
+	outbound connections to different remote TCP/IP networks, some packets may not
+	be sent or may be sent via the wrong modem.
+	
+	This problem only occurs if two or more modems are attempting to send packets to
+	their respective remote networks at the same time.
+	
+	CAUSE
+	=====
+	
+	The cause is currently under investigation.
+	
+	RESOLUTION
+	==========
+	
+	There is currently no resolution or workaround to this problem.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Windows NT version 3.51. We are
+	researching this problem and will post new information here in the Microsoft
+	Knowledge Base as it becomes available.
+	
+	MORE INFORMATION
+	================
+	
+	To illustrate, suppose your RAS client has three modems, A, B, and C. Modem A
+	dials RAS server A, modem B dials RAS server B, and modem C dials RAS server C.
+	The IP addresses for both ends of the RAS connection are as follows:
+	
+	  Modem A (192.1.1.2) -/\/\/\/\/\/\/\/-> Server A (192.1.1.1)
+	
+	  Modem B (193.1.1.2) -/\/\/\/\/\/\/\/-> Server B (193.1.1.1)
+	
+	  Modem C (194.1.1.2) -/\/\/\/\/\/\/\/-> Server C (194.1.1.1)
+	
+	If modem A is in the process of sending a ping to the address of RAS server A,
+	modem B and modem C would be unable to successfully ping RAS server B and RAS
+	server C (respectively).
+	
+	If modem B attempts to ping RAS server B while modem A is in the process of
+	pinging RAS server A, the ping would be unsuccessful and either four instances
+	of "HARDWARE ERROR" or four instances of "DESTINATION HOST UNREACHABLE" are
+	returned for the results of the ping to server B.
+	
+	"DESTINATION HOST UNREACHABLE" is returned because the ping that should have been
+	sent to RAS server B is instead sent to the IP address of server A, which modem
+	B has no connection to.
+	
+	For example, the ping command would be "PING 193.1.1.1", but the result would
+	look like the following:
+	
+	Reply from 192.1.1.1: DESTINATION HOST UNREACHABLE Reply from 192.1.1.1:
+	DESTINATION HOST UNREACHABLE Reply from 192.1.1.1: DESTINATION HOST UNREACHABLE
+	Reply from 192.1.1.1: DESTINATION HOST UNREACHABLE
+	
+	Additional query words: prodnt
+	======================================================================
+	Keywords          : kbnetwork 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+	Version           : 3.5 3.51
+	
+	=============================================================================
+	

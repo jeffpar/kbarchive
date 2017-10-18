@@ -1,0 +1,192 @@
+---
+layout: page
+title: "Q200791: SMS: SMS 1.2 SP4 May Cause WinNT Clients Not to Report Inventory"
+permalink: kb/200/Q200791/
+---
+
+## Q200791: SMS: SMS 1.2 SP4 May Cause WinNT Clients Not to Report Inventory
+
+	Article: Q200791
+	Product(s): Microsoft Systems Management Server
+	Version(s): winnt:1.2,2.0
+	Operating System(s): 
+	Keyword(s): kbsms200 kbsms200bug kbsms120 kbsms120bug kbInventory smsinv
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server versions 1.2, 2.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	After you apply Systems Management Server 1.2 Service Pack 4, an updated version
+	of the Smsls.bat file is placed in the Netlogon share. This new version of the
+	Systems Management Server logon script makes a call to Check20.exe, and may
+	cause a client computer running Windows NT not to report inventory.
+	
+	CAUSE
+	=====
+	
+	CHECK20 /i returns an errorlevel 1 if %windir% is not on the client's path. In
+	this case, the logon script assumes that the client is a Systems Management
+	Server 2.0 client, so the logon script and does NOT continue to the RUN_NT_2
+	section to perform a normal Systems Management Server 1.2 client inventory.
+	
+	RESOLUTION
+	==========
+	
+	A supported fix that corrects this problem is now available from Microsoft, but
+	has not been fully regression tested and should be applied only to systems
+	experiencing this specific problem. If you are not severely affected by this
+	specific problem, Microsoft recommends that you wait for the next Systems
+	Management Server service pack that contains this fix.
+	
+	To resolve this problem immediately, contact Microsoft Product Support Services
+	to obtain the fix. For a complete list of Microsoft Product Support Services
+	phone numbers and information on support costs, please go to the following
+	address on the World Wide Web:
+	
+	http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	  Date     Time    Size     File name   Platform
+	  ----------------------------------------------
+	
+	  10/06/98 03:50   44,252   Check20.exe (x86)
+	
+	NOTE: You should apply this hotfix to the Systems Management Server 1.2 site
+	server.
+	
+	
+	
+	WORKAROUND
+	==========
+	
+	To work around this problem, do one of the following:
+	
+	- Correct the path of the Windows NT client computer to contain the path of the
+	  Windows NT system files, as in the following example:
+	
+	     path=c:\winnt\system32;C:\WINNT
+	
+	  -or-
+	
+	- NOTE: The following workaround may cause problems with Systems Management
+	  Server 2.0 clients.
+	
+	  On the Systems Management Server 1.2 site server, modify the following script
+	  files:
+	
+	   - x:\Sms\Site.srv\Maincfg.box\Smsls.bat
+	
+	   - x:\Sms\Site.srv\Maincfg.box\Client.src\Runsms.bat
+	
+	  Verify that these files are the Systems Management Server 1.2 Service Pack 4
+	  versions by ensuring that the RUN_NT_2 section exists. If they are not the
+	  Service Pack 4 versions, replace them with the Service Pack 4 versions from
+	  the Systems Management Server 1.2 Service Pack 4 CD. Then modify the
+	  following line:
+	
+	     if "%OS%" == "Windows_NT" goto RUN_NT
+	
+	  To:
+	
+	     if "%OS%" == "Windows_NT" goto RUN_NT_2
+	
+	  Confirm that the files are properly replicated to the logon servers and
+	  Netlogon shares.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Systems Management Server
+	version 1.2 Service Pack 4.
+	
+	MORE INFORMATION
+	================
+	
+	Upon applying Systems Management Server 1.2 Service Pack 4 to a functioning
+	Systems Management Server 1.2 site and fully updating all logon servers and
+	Netlogon shares with the modified Smsls.bat and Runsms.bat files, some Windows
+	NT clients may stop reporting inventory if the client's Windows NT installation
+	directory is not in the PATH environment variable.
+	
+	This change in the Systems Management Server logon scripts was made to keep
+	Systems Management Server 1.2 from overwriting client files installed by a
+	Systems Management Server 2.0 site.
+	
+	Description Details
+	-------------------
+	
+	When Windows NT clients run Smsls.bat from a Netlogon share or Runsms.bat from a
+	SMS_SHR share, there is a section called RUN_NT that calls %0\..\check20 /i.
+	Normally, this checks for a Smscfg.ini file on the client in the %WINDIR%
+	directory. If this file exists, the following section is scanned:
+	
+	  [SMS MultiBoot Configuration]
+	  Number of Opal Installations = 0
+	
+	At this point, if the "Number of Opal Installations" value is 0, an errorlevel 2
+	is returned. The script continues and performs a Systems Management Server 1.2
+	inventory. If the "Number of Opal Installations" value is greater than 0, it is
+	assumed that this is a Systems Management Server 2.0 client, and the client
+	setup and inventory portions of the logon script are skipped.
+	
+	If the Smscfg.ini file does not exist, Check20.exe will create it in the %windir%
+	directory. This operation may fail if the value of %windir% is not in the PATH
+	variable. This then causes the check for errorlevel2 to fail and not go on to
+	the RUN_NT_2 section of the script. Neither Cli_nt.exe nor Invwin32.exe are
+	executed to perform client setup and collect inventory.
+	
+	Possible errorlevels returned by CHECK20
+	----------------------------------------
+	
+	The following are Possible errorlevels returned by Check20.exe:
+	
+	  iCHECKED_ASSIGNED     =  0;
+	  iNOT_CHECKED_UNKNOWN  =  1;
+	  iCHECKED_NOT_ASSIGNED =  2;
+	  iUNSUPPORTED_OS       =  3;
+	
+	0 = This client is assigned to one or more SMS 2.0 sites.
+	
+	1 = Systems Management Server 2.0 has not yet reached this resource with an
+	installation method to determine if it should be assigned to one or more Systems
+	Management Server 2.0 sites.
+	
+	2 = Systems Management Server 2.0 has already evaluated this resource at least
+	once and determined this resource was NOT assigned to any Systems Management
+	Server 2.0 site participating in that installation method (that is, using that
+	domain for logon installation) at the time of the determination.
+	
+	3 = Unresolved Error occurred
+	
+	The Systems Management Server 1.2 "Opal Interop" script (which assumes that the
+	Systems Management Server 2.0 script is also running during this logon) will
+	skip processing the Systems Management Server 1.2 script if Check20.exe returns
+	a 0 or a 1, giving the Systems Management Server 2.0 script a chance to set the
+	value to 0 or 2.
+	
+	The Systems Management Server 1.2 "Opal Aware" script (which assumes that the
+	Systems Management Server 2.0 script is not also running during the logon,
+	although Systems Management Server 2.0 clients may be encountered in the
+	enterprise) will skip processing the Systems Management Server 1.2 script only
+	if Check20.exe returns a value of 0.
+	
+	
+	Additional query words: prodsms login sp sp4
+	
+	======================================================================
+	Keywords          : kbsms200 kbsms200bug kbsms120 kbsms120bug kbInventory smsinv 
+	Technology        : kbSMSSearch kbSMS120 kbSMS200
+	Version           : winnt:1.2,2.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

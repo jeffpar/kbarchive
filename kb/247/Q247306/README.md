@@ -1,0 +1,416 @@
+---
+layout: page
+title: "Q247306: SMS: SMS 2.0 SP1 ICP1 Client Hotfix Bundle"
+permalink: kb/247/Q247306/
+---
+
+## Q247306: SMS: SMS 2.0 SP1 ICP1 Client Hotfix Bundle
+
+	Article: Q247306
+	Product(s): Microsoft Systems Management Server
+	Version(s): 2.0,2.0 SP1
+	Operating System(s): 
+	Keyword(s): kbsms200 kbsms200fix
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server versions 2.0, 2.0 SP1 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Microsoft has released various hotfixes to correct specific issues for Systems
+	Management Server (SMS) 2.0 clients. Microsoft has packaged these hotfixes into
+	a single client hotfix bundle to simplify applying these hotfixes on an SMS 2.0
+	site that is running Service Pack 1 (SP1). This article will be updated as new
+	hotfixes are added to this client bundle.
+	
+	The following section lists Microsoft Knowledge Base articles that document
+	issues that are corrected in the Client Hotfix Bundle for SMS 2.0 SP1 with
+	International Client Pack 1 (ICP1) for English, German, French, and Spanish. For
+	additional information about each corrected problem in SMS 2.0 SP1, view the
+	article in the Microsoft Knowledge Base.
+	
+	NOTE: You must apply SMS 2.0 ICP1 SP1 before you install this client bundle. Do
+	not install this client bundle on sites that are not upgraded to SP1 or do not
+	have ICP1 installed.
+	
+	Summary List for Client Hotfix Bundle for SMS 2.0 ICP1 SP1
+	----------------------------------------------------------
+	
+	  Q239590 SMS: SMSCliToknAcct Connection Attempts to Mapped Drives in Path
+	
+	  Q240980 SMS: Smscfg.cpl May Not Be Loaded with More Than 20 Network Adapters
+	
+	  Q240250 Migration from SMS 1.2 to 2.0 Uninstalls LANDesk Remote Control Files
+	
+	  Q240921 SMS: Smsapm32 May Consume 100 Percent CPU Time on Windows NT SMS
+	  Clients
+	
+	  Q242489 SMS: Run-Time Error When Advertising MFC-Based Package
+	
+	  Q244034 SMS: Windows 95/98 Clients Hang Opening E-mail Attachments or
+	  Associated Files
+	
+	  Q239564 SMS: Client Components Reinstalled During Periodic Verification
+	
+	  Q243189 SMS: %SMS_LOCAL_DIR%\MS\CORE\BIN Added to Path Multiple Times
+	
+	  Q243681 SMS: Copy-Queue Causes 'Not Logged in' Requests on NetWare Servers
+	
+	  Q244409 SMS: Access Account Security on Distribution Points May Be Applied
+	  Incorrectly in a Multiple-Domain Environment
+	
+	  Q241279 SMS: Client Incorrectly Reported as Not Installed in the
+	  Administrator Console
+	
+	  Q244410 SMS: Smsapm32 Uses SMSCliToknAcct& to Search Mapped Drives Listed
+	  in the Path
+	
+	  Q238250 SMS: SMSCliSvcAcct& May Be Used When Netware Redirector Is
+	  Installed
+	
+	  Q232653 SMS: SMSCliToknAcct& Locked Out When Hardware Inventory Is
+	  Enabled
+	
+	  Q246164 SMS: Novell intraNetWare Login Dialog Box Appears During Hardware
+	  Inventory
+	
+	  Q235205 SMS: Advertised Program Does Not Run with 10003 Status Message
+	
+	  Q235808 SMS: Smsapm32.exe May Report Status Incorrectly If Package Starts
+	  Another Instance
+	
+	  Q238762 SMS: Software Inventory Creation Date Is Incorrect in SMS Database
+	
+	  Q239915 SMS: 'Insert Disk in Drive A:' Message During Hardware Inventory
+	
+	  Q238144 Client Installation Corrupts Path Statement in Autoexec.bat
+	
+	MORE INFORMATION
+	================
+	
+	A supported fix is now available from Microsoft, but it is only intended to
+	correct the problem that is described in this article. Only apply it to systems
+	that are experiencing this specific problem. This fix may receive additional
+	testing. Therefore, if you are not severely affected by this problem, Microsoft
+	recommends that you wait for the next Systems Management Server service pack
+	that contains this fix.
+	
+	To resolve this problem immediately, contact Microsoft Product Support Services
+	to obtain the fix. For a complete list of Microsoft Product Support Services
+	phone numbers and information about support costs, visit the following Microsoft
+	Web site:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	NOTE: In special cases, charges that are ordinarily incurred for support calls
+	may be canceled if a Microsoft Support Professional determines that a specific
+	update will resolve your problem. The usual support costs will apply to
+	additional support questions and issues that do not qualify for the specific
+	update in question.
+	
+	The ICP1 version of this software update for SP1 should have the following file
+	attributes or later:
+	
+	 Date        Time    Size       File name        Platform  Version
+	 ----------------------------------------------------------------------
+	 12/30/1999  09:34p      5,677  54831.sql        Intel
+	 12/02/1999  12:17a    233,824  Abnwcli.dll      Intel     2.0.1380.1405
+	 12/31/1999  02:15a    367,798  Apasetup.exe     Intel     2.0.91.8
+	 12/02/1999  12:16a    201,568  Bindcli9.dll     Intel     2.0.1380.1405
+	 12/02/1999  12:17a    260,448  Bindclin.dll     Intel     2.0.1380.1405
+	 12/02/1999  12:16a    254,816  Bindsvrn.dll     Intel     2.0.1380.1405
+	 12/02/1999  12:17a    160,592  Ccim32.dll       Intel     2.0.1380.1405
+	 12/02/1999  12:39a  1,328,228  Ccmcore.exe      Intel     2.0.91.7
+	 12/02/1999  12:39a  4,274,102  Clicore.exe      Intel     2.0.91.7
+	 11/04/1999  02:01a     70,000  Clisvc95.exe     Intel     2.0.1380.1063
+	 12/02/1999  12:17a     77,168  Clisvcl.exe      Intel     2.0.1380.1405
+	 11/04/1999  02:11a    268,753  Cliunins.exe     Intel     2.0.91.3
+	 10/05/1999  12:21a         67  Compver1053.ini  Intel     
+	 10/11/1999  08:28p         67  Compver1054.ini  Intel     
+	 11/10/1999  02:48a         67  Compver1070.ini  Intel     
+	 11/11/1999  03:34a         67  Compver1072.ini  Intel
+	 01/04/2000  06:57p         67  Compver1110.ini  Intel  
+	 12/03/1999  08:15p         65  Compver1405.ini  Intel
+	 01/11/2000  01:23a         67  Compver1407.ini  Intel   
+	 11/12/1999  12:23a         67  Compver2.ini     Intel     
+	 10/12/1999  11:31p    133,188  Dehinv32.exe     Intel     2.0.91.3
+	 12/02/1999  12:17a    158,048  Falclin.dll      Intel     2.0.1380.1405
+	 10/12/1999  11:31p    327,682  Inhinv32.exe     Intel     2.0.91.3
+	 11/06/1999  12:59a    277,953  Insinv32.exe     Intel     2.0.91.3
+	 11/04/1999  02:01a     66,928  Launch32.exe     Intel     2.0.1380.1063
+	 12/02/1999  12:16a    199,520  Mslmcli9.dll     Intel     2.0.1380.1405
+	 12/02/1999  12:17a    336,224  Mslmclin.dll     Intel     2.0.1380.1405
+	 12/02/1999  12:16a    335,712  Mslmsvrn.dll     Intel     2.0.1380.1405
+	 12/02/1999  12:16a    206,688  Ndscli9.dll      Intel     2.0.1380.1405
+	 12/02/1999  12:17a    270,176  Ndsclin.dll      Intel     2.0.1380.1405
+	 12/02/1999  12:16a    265,056  Ndssvrn.dll      Intel     2.0.1380.1405
+	 01/11/2000  12:52a     47,984  Odpsys32.exe     Intel     2.0.1380.1407
+	 01/11/2000  12:52a     55,664  Odpusr32.exe     Intel     2.0.1380.1407
+	 10/05/1999  12:17a     67,952  Progrm32.dll     Intel     2.0.1380.1053
+	 11/06/1999  12:56a    100,208  Sinv32.exe       Intel     2.0.1380.1070
+	 12/31/1999  02:13p    209,264  Smsapm32.exe     Intel     2.0.1380.1097
+	 10/11/1999  08:21p     15,680  Smscimp.dll      Intel     2.0.1380.1054
+	 11/04/1999  01:59a    291,856  Smsclreg.dll     Intel     2.0.1380.1063
+	 09/28/1999  11:29p     75,456  Sms_def.mof      Intel     
+	 01/12/2000  12:30a    781,463  Swdist32.exe     Intel     2.0.91.8
+	 10/27/1999  08:50p  3,826,417  Wbemsdk.exe      Intel     2.0.91.3
+	
+	 12/30/1999  09:34p      5,677  54831.sql        Alpha     
+	 12/02/1999  12:17a    411,408  Abnwcli.dll      Alpha     2.0.1380.1405
+	 12/31/1999  02:15a    630,108  Apasetup.exe     Alpha     2.0.91.8
+	 12/02/1999  12:17a    256,272  Ccim32.dll       Alpha     2.0.1380.1405
+	 12/02/1999  12:40a  1,935,627  Ccmcore.exe      Alpha     2.0.91.7
+	 12/02/1999  12:40a  5,697,722  Clicore.exe      Alpha     2.0.91.7
+	 11/04/1999  02:00a    100,624  Clisvc95.exe     Alpha     2.0.1380.1063
+	 12/02/1999  12:17a    110,864  Clisvcl.exe      Alpha     2.0.1380.1405
+	 11/04/1999  02:12a    465,812  Cliunins.exe     Alpha     2.0.91.3
+	 10/05/1999  12:21a         67  Compver1053.ini  INTEL      
+	 10/11/1999  08:28p         67  Compver1054.ini  INTEL      
+	 11/10/1999  02:48a         67  Compver1070.ini  INTEL      
+	 11/11/1999  03:34a         67  Compver1072.ini  INTEL
+	 01/04/2000  06:57p         67  Compver1110.ini  INTEL  
+	 12/03/1999  08:15p         65  Compver1405.ini  INTEL
+	 01/11/2000  01:23a         67  Compver1407.ini  INTEL   
+	 11/12/1999  12:23a         67  Compver2.ini     Alpha     
+	 10/12/1999  11:32p    248,466  Dehinv32.exe     Alpha     2.0.91.3
+	 12/02/1999  12:17a    286,480  Falclin.dll      Alpha     2.0.1380.1405
+	 10/12/1999  11:32p    567,386  Inhinv32.exe     Alpha     2.0.91.3
+	 11/06/1999  12:59a    507,636  Insinv32.exe     Alpha     2.0.91.3
+	 11/04/1999  02:00a     97,040  Launch32.exe     Alpha     2.0.1380.1063
+	 12/02/1999  12:17a    576,272  Mslmclin.dll     Alpha     2.0.1380.1405
+	 12/02/1999  12:16a    573,712  Mslmsvrn.dll     Alpha     2.0.1380.1405
+	 01/11/2000  12:52a     68,880  Odpsys32.exe     Alpha     2.0.1380.1407
+	 01/11/2000  12:52a     78,096  Odpusr32.exe     Alpha     2.0.1380.1407  
+	 10/05/1999  12:18a    112,912  Progrm32.dll     Alpha     2.0.1380.1053
+	 11/06/1999  12:56a    144,144  Sinv32.exe       Alpha     2.0.1380.1070
+	 09/24/1999  09:36p    280,336  Smsapm32.exe     Alpha     2.0.1380.1043
+	 10/11/1999  08:21p     25,872  Smscimp.dll      Alpha     2.0.1380.1054
+	 11/04/1999  02:00a    550,672  Smsclreg.dll     Alpha     2.0.1380.1063
+	 09/28/1999  11:29p     75,456  Sms_def.mof      Alpha     
+	 01/11/2000  12:55a    836,151  Swdist32.exe     Alpha     2.0.91.8
+	 10/27/1999  08:52p  7,100,159  Wbemsdk.exe      Alpha     2.0.91.3
+	
+	NOTE: Because of file dependencies, the most recent hotfix or feature that
+	contains the above files may also contain additional files.
+	
+	
+	
+	NOTE: When you apply this client hotfix bundle, you may need to temporarily
+	disable Logon Discovery and Installation to prevent possible client file
+	mismatches in a single-domain, multiple-site hierarchy. This can result in the
+	existing senior site designation being lost. For additional information about
+	special preparations before you apply this hotfix, click the article numbers
+	below to view the articles in the Microsoft Knowledge Base:
+	
+	  Q238780 SMS: Best Practices for Applying Systems Management Server 2.0 SP1
+	
+	  Q235726 SMS: Specifying Senior Site for WinNT Logon Point Management
+	
+	Client Hotfix Bundle Installation
+	---------------------------------
+	
+	Method 1: Using the Hotfix Installer:
+	
+	NOTE: You can use this method only for Intel-based computers.
+	
+	1. Copy the hotfix folder structure to a local folder on your site server or to
+	  a share on your network. The I386 and Alpha subfolders are required and must
+	  also be downloaded from the Microsoft FTP site. It is important to keep the
+	  folder structure intact. The Q247306.exe file is a Microsoft Windows
+	  Installer file that updates specific files on your site server.
+	
+	2. Log on to your site server by using an account with administrative
+	  privileges.
+	
+	3. On the site server, quit the SMS Administrator console.
+	
+	4. Run the Q247306.exe file and follow the instructions in the wizard. You can
+	  run this file in Quiet mode using the /s switch.
+	
+	5. The SMS services are stopped and restarted as part of the installation
+	  process. You need to stop the SMS_SITE_COMPONENT_MANAGER and SMS_EXECUTIVE
+	  services again before continuing to the next step.
+	
+	6. From the SMS site database server, use a Microsoft SQL Server query tool (for
+	  example, Query Analyzer or ISQL/W) to open the 54831.sql script file. This
+	  file is located in the I386 subfolder that you created in step 1. This script
+	  is also documented in the Q247306q.txt file, which is created in the
+	  <Drive>\Sms\Logs folder during the installation process.
+	
+	7. Select the SMS database in the SQL Server query tool and run the script. If
+	  you use a common SQL Server computer for multiple site databases, apply this
+	  script to the site database that belongs to the primary site you are
+	  updating.
+	
+	8. Restart the SMS site services. The new files are replicated to all logon
+	  points and client access points (CAPs). After all logon points and CAPs are
+	  updated, allow an additional 23 hours for clients to begin their update
+	  polling cycle.
+	
+	9. WARNING: Editing the Compver.ini file incorrectly can cause serious problems
+	  that may orphan your clients or cause them to become out of synchronization
+	  with the site. Microsoft cannot guarantee that problems resulting from the
+	  incorrect use of the following step can be resolved. Use this step only if
+	  you have the specific component version problem that is described below.
+	
+	  Continue with this step only after all clients are installed. This step is
+	  necessary only if the early revision of the hotfix for Q240921 was previously
+	  applied and your SMS Client Base Component version is in the 2000 range (for
+	  example, 2.00.1380.20<xx>). Manually reset the component version in the
+	  Compver.ini file that is located in the
+	  <Drive>\Sms\Inboxes\Clicomp.src\Base folder. Change the component
+	  version from 2.00.1380.2004 to 2.00.1380.1072).
+	
+	Method 2: Manual Installation:
+	
+	NOTE: You can use this method for both Intel-based and Alpha-based site servers.
+	
+	1. Copy the hotfix folder structure to a local folder on your site server or to
+	  a share on your network. The I386 and Alpha subfolders are required and must
+	  also be downloaded from the Microsoft FTP site. It is important to keep the
+	  folder structure intact. The Q247306.exe file is a Microsoft Windows
+	  Installer file that updates specific files on your site server and can only
+	  be run on Intel-based machines. Refer to installation method 1 in this
+	  article for information about how to use the Q247306.exe file.
+	
+	2. Quit the SMS Administrator console and stop all SMS services by using Control
+	  Panel. If the SMS_SITE_BACKUP service is running, stop it also.
+	
+	3. Copy the following files from the hotfix I386 folder to the
+	  <Drive>\Sms\Bin\I386 folder:
+	
+	  Abnwcli.dll
+	  Bindcli9.dll
+	  Bindclin.dll
+	  Bindsvrn.dll
+	  Ccim32.dll
+	  Clisvcl.exe
+	  Falclin.dll
+	  Mslmcli9.dll
+	  Mslmclin.dll
+	  Mslmsvrn.dll
+	  Ndscli9.dll
+	  Ndsclin.dll
+	  Ndssvrn.dll
+	  Odpusr32.exe
+	  Odpsys32.exe
+	  Sinv32.exe
+	  Smsapm32.exe
+	
+	4. If Alpha-based support is enabled on the primary site, copy the following
+	  files from the hotfix Alpha folder to the <Drive>\Sms\Bin\Alpha folder:
+	
+	  Abnwcli.dll
+	  Ccim32.dll
+	  Clisvcl.exe
+	  Falclin.dll
+	  Mslmclin.dll
+	  Mslmsvrn.dll
+	  Odpusr32.exe
+	  Odpsys32.exe
+	  Sinv32.exe
+	  Smsapm32.exe
+	
+	5. Copy the following files from the appropriate <Platform> subfolder to
+	  the <Drive>\Sms\Inboxes\Clicomp.src\Base\<Platform> folder:
+	
+	  Ccmcore.exe
+	  Clicore.exe
+	
+	6. Copy the Apasetup.exe file from the appropriate <Platform> subfolder
+	  into the <Drive>\Sms\Inboxes\Clicomp.src\Smsapm32\<Platform>
+	  folder.
+	
+	7. Copy the following files from the appropriate <Platform> subfolder into
+	  the <Drive>\Sms\Inboxes\Clicomp.src\Hinv\<Platform> folder:
+	
+	  Inhinv32.exe
+	  Sms_def.mof
+	
+	8. Copy the Insinv32.exe file from the appropriate <Platform> subfolder
+	  into the <Drive>\Sms\Inboxes\Clicomp.src\Sinv\<Platform> folder.
+	
+	9. Copy the Swdist32.exe file from the appropriate <Platform> subfolder
+	  into the <Drive>\Sms\Inboxes\Clicomp.src\Swdist\<Platform>
+	  folder.
+	
+	10. Copy the Wbemsdk.exe file from the appropriate <Platform> subfolder
+	  into the <Drive>\Sms\Inboxes\Clicomp.src\Wbem\<Platform> folder.
+	
+	11. WARNING: Editing the Compver.ini file incorrectly can cause serious problems
+	  that may orphan your clients or cause them to become out of synchronization
+	  with the site. Microsoft cannot guarantee that problems resulting from the
+	  incorrect use of the following step can be resolved. Use this step only if
+	  you have the specific component version problem described below.
+	
+	  If your current SMS Client Base Component version is in the 1400 range (for
+	  example, 2.00.1380.14<xx>), replace the Compver.ini file in the
+	  <Drive>\Sms\Inboxes\Clicomp.src\Base folder with the Compver1405.ini
+	  file that is located in the hotfix bundle source folder after renaming this
+	  file to Compver.ini.
+	
+	12. If your current SMS Client Base Component version is in the 2000 range (for
+	  example, 2.00.1380.20<xx>), replace the Compver.ini file in the
+	  <Drive>\Sms\Inboxes\Clicomp.src\Base folder with the Compver2.ini file
+	  located in the hotfix bundle source folder. Note that you must rename the
+	  Compver2.ini file to Compver.ini.
+	
+	13. Replace the Compver.ini file in the
+	  <Drive>\Sms\Inboxes\Clicomp.src\Smsapm32 folder with the
+	  Compver1110.ini file located in the hotfix bundle source folder after
+	  renaming this file to Compver.ini.
+	
+	14. Replace the Compver.ini file in the
+	  <Drive>\Sms\Inboxes\Clicomp.src\Hinv folder with the Compver1054.ini
+	  file located in the hotfix bundle source folder after renaming this file to
+	  Compver.ini.
+	
+	15. Replace the Compver.ini file in the
+	  <Drive>\Sms\Inboxes\Clicomp.src\Sinv folder with the Compver1070.ini
+	  file located in the hotfix bundle source folder after renaming this file to
+	  Compver.ini.
+	
+	16. Replace the Compver.ini file in the
+	  <Drive>\Sms\Inboxes\Clicomp.src\Swdist folder with the Compver1407.ini
+	  file located in the hotfix bundle source folder after renaming this file to
+	  Compver.ini.
+	
+	17. From the SMS site database server, use a SQL Server query tool (for example,
+	  Query Analyzer or ISQL/W) to open the 54831.sql script file. This file is
+	  located in the appropriate <Platform> folder in the hotfix subfolder
+	  you created in step 1.
+	
+	18. Select the SMS database from within the SQL Server query tool and run the
+	  script. If you are using a common SQL Server computer for multiple site
+	  databases, apply this script to the site database that belongs to the
+	  primary site you are updating.
+	
+	19. Restart the SMS site services. The new files are replicated to all logon
+	  points and CAPs. After all logon points and CAPs are updated, allow an
+	  additional 23 hours for clients to begin their update polling cycle.
+	
+	20. Continue with this step only after all clients are installed. This step is
+	  necessary only if the early revision of the hotfix for Q240921 was
+	  previously applied and your SMS Client Base Component version is in the 2000
+	  range (for example, 2.00.1380.20<xx>). Manually reset the component
+	  version in the Compver.ini file located in the
+	  <Drive>\Sms\Inboxes\Clicomp.src\Base folder. Change the component
+	  version from 2.00.1380.2004 to 2.00.1380.1072).
+	
+	
+	Additional query words: prodsms
+	
+	======================================================================
+	Keywords          : kbsms200 kbsms200fix 
+	Technology        : kbSMSSearch kbSMS200 kbSMS200SP1
+	Version           : :2.0,2.0 SP1
+	Issue type        : kbinfo
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

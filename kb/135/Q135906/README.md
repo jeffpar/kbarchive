@@ -1,0 +1,162 @@
+---
+layout: page
+title: "Q135906: FIX: Can't Restore Default Foxhead Icon After Set Icon Prop"
+permalink: kb/135/Q135906/
+---
+
+## Q135906: FIX: Can't Restore Default Foxhead Icon After Set Icon Prop
+
+	Article: Q135906
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:3.0,3.0b
+	Operating System(s): 
+	Keyword(s): kbvfp kbvfp300bBUG kbvfp500fixkbbuglist kbfixlist
+	Last Modified: 24-MAR-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	After setting the Icon property of the _SCREEN object in Visual FoxPro to an
+	icon file or to blank, you can't restore the default foxhead icon. If you set
+	_SCREEN.Icon="", then only a square white box is shown when Visual FoxPro is
+	minimized when running under Windows 3.x or Windows NT. In Windows 95, the icon
+	shown on the task bar button for the minimized Visual FoxPro, is a generic gray
+	button that looks like a program window with a blue title bar. These same
+	incorrect icons show up when switching tasks by pressing ALT+TAB.
+	
+	WORKAROUND
+	==========
+	
+	There are at least two known workarounds for this, each one with its own
+	advantages and disadvantages.
+	
+	Workaround One
+	--------------
+	
+	Use the MODIFY WINDOW SCREEN command without any clauses to set the Visual FoxPro
+	icon back to the default foxhead. The main drawback of this method is that other
+	properties of the _SCREEN object are also set back to their defaults. Therefore,
+	_SCREEN.Picture, _SCREEN.Fontname, _SCREEN.Caption, and so on are set back to
+	their defaults. An additional side effect of this is that the Picture and Icon
+	properties of the _SCREEN object will still report the user defined values even
+	though the defaults show up visually (no picture and the foxhead icon). To work
+	around this drawback, you can save the necessary properties of the _SCREEN
+	object in variables, and then restore them after using the MODIFY WINDOW SCREEN
+	command. The following commands can be issued in the Command window to
+	illustrate this:
+	
+	     _SCREEN.Icon=HOME()+"samples\graphics\icons\flag\ctrcan.ico"
+	     _SCREEN.Picture=HOME()+"fox.bmp"
+	     _SCREEN.Fontname="Wingdings"
+	     _SCREEN.Fontsize=16
+	     cScrPic=_SCREEN.Picture
+	     cScrFont=_SCREEN.Fontname
+	     nScrFontsz=_SCREEN.Fontsize
+	     * Minimize Visual FoxPro and check the icon. Restore Visual FoxPro.
+	     MODIFY WINDOW SCREEN
+	     * Minimize Visual FoxPro and check the icon. Restore Visual FoxPro.
+	     ? _SCREEN.Picture      && this returns the name of the picture file
+	     *                         even though the picture isn't displayed
+	     ? _SCREEN.Icon         && this returns the name of the icon file even
+	     *                         though the icon is now the default icon
+	     ? _SCREEN.Fontname     && this should be Arial
+	     ? _SCREEN.Fontsize     && this should be 10
+	     * The next three commands restore the specified settings:
+	     _SCREEN.Picture=cScrPic
+	     _SCREEN.Fontname=cScrFont
+	     _SCREEN.Fontsize=nScrFontsz
+	
+	Workaround Two
+	--------------
+	
+	Create a foxhead icon file and set the _SCREEN.Icon property to that icon file.
+	You can change the Fox.bmp bitmap file (located in the VFP directory) to an icon
+	file by using the Imagedit program that comes with the Professional Edition of
+	Visual FoxPro. The main drawbacks for this workaround are that the icon file
+	will not have a transparent background and the resolution isn't as good as the
+	default icon built into Visual FoxPro.
+	
+	Steps to convert the Fox.bmp file to an icon file:
+	
+	1. Start Imagedit and open the VFP\Fox.bmp file.
+	
+	2. On the Edit menu in Imagedit, click Copy.
+	
+	3. On the File menu in Imagedit, click New, and create a new icon file. Choose
+	  the "EGA/VGA 16-Color 32x32" option for the icon file.
+	
+	4. On the Edit menu, click Paste. In the Paste From Clipboard dialog box, choose
+	  either option. The "Stretch/shrink clipboard bitmap?" option produces a
+	  larger icon but it won't look as good as the "Clip clipboard bitmap?" option.
+	  Both will have white backgrounds and this will show when using the icon in
+	  Visual FoxPro. The background can be changed to black, but that will also
+	  appear when it is used in Visual FoxPro if the Windows desktop is other than
+	  black.
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products listed at
+	the beginning of this article. This problem has been fixed in Visual FoxPro 5.0
+	for Windows.
+	
+	MORE INFORMATION
+	================
+	
+	In FoxPro version 2.x for Windows, the MODIFY WINDOW SCREEN command can be used
+	to set what are now many of the properties of the _SCREEN object. The _SCREEN
+	object is the system memory variable that refers to the Visual FoxPro
+	application window. Some of the _SCREEN properties and the corresponding clauses
+	for the MODIFY WINDOW SCREEN command are:
+	
+	_SCREEN Property     MODIFY WINDOW Clause
+	------------------------------------------
+	Caption              Title
+	Picture              Fill File
+	Icon                 Icon File
+	FontName             Font
+	
+	For more information, please use the Visual FoxPro Help menu and search for
+	_SCREEN and the MODIFY WINDOW command.
+	
+	Steps to Reproduce Problem
+	--------------------------
+	
+	1. Start a new session of Visual FoxPro. If running Visual FoxPro under Windows
+	  3.x or Windows NT, minimize Visual FoxPro and any other running programs,
+	  including Program Manager, and note that Visual FoxPro has the foxhead icon
+	  on the desktop. In Windows 95, look on the status bar to see the default
+	  foxhead icon. Under all platforms, press ALT+TAB to switch tasks and see the
+	  default foxhead icon.
+	
+	2. In the Visual FoxPro Command window, type:
+	
+	      _SCREEN.Icon=""
+	
+	3. Repeat step 1. This time notice that the icon is either a square white box
+	  under Windows 3.x or Windows NT, or it is a generic gray button that looks
+	  like a program window with a blue title bar under Windows 95.
+	
+	4. In the Visual FoxPro Command window, type the following command to get the
+	  default foxhead icon back:
+	
+	     MODIFY WINDOW SCREEN
+	
+	Additional query words: 3.00 3.00b
+	
+	======================================================================
+	Keywords          : kbvfp kbvfp300bBUG kbvfp500fix kbbuglist kbfixlist
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+	Version           : WINDOWS:3.0,3.0b
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

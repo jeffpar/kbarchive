@@ -1,0 +1,95 @@
+---
+layout: page
+title: "Q140417: Controlling Common Program Groups Seen In User Profiles"
+permalink: kb/140/Q140417/
+---
+
+## Q140417: Controlling Common Program Groups Seen In User Profiles
+
+	Article: Q140417
+	Product(s): Microsoft Windows NT
+	Version(s): 3.5,3.51
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 18-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation versions 3.5, 3.51 
+	- Microsoft Windows NT Server versions 3.5, 3.51 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Creating user profiles is accomplished with the User Profile Editor (creates the
+	profile) and User Manager for Domains (assigns existing profiles to users). For
+	additional information, please see the following article(s) in the Microsoft
+	Knowledge Base:
+	
+	  ARTICLE-ID: Q128624
+	  TITLE : How to Create and Assign User Profiles for Users in a Domain
+	
+	A profile created by using the Profile Editor is stored on the server and
+	controls the user's desktop configuration at the workstation. There are two
+	types of server-based profiles available:
+	
+	- Mandatory profiles which use the *.MAN file extension.
+	
+	- Personal profiles which use the *.USR file extension.
+	
+	To control the program groups that users see when they log into a server, you
+	have two choices:
+	
+	The first option is to use Mandatory profiles for the user if security and tight
+	control are priorities. The user is able to change the settings while logged in,
+	but the profile reverts back to the settings in the mandatory profile. The
+	program groups are those outlined in the program settings section. The common
+	program groups that are seen are from the local computer and not the server.
+	
+	The second option is to use a Personal Profile. You can customize the profile per
+	individual user, but unless you select the Disable Save Settings Menu Item and
+	Never Save Settings, the user is able to change the program group settings.
+	Again, the show common program groups will show the local machines common group
+	and not the server common group.
+	
+	MORE INFORMATION
+	================
+	
+	When using Profile Editor, the following settings are available on the menu:
+	
+	- Disable Run in File Menu.
+	
+	  This option disables the user from running the File Run command in program
+	  manager.
+	
+	- Disable Save Settings Menu Item and Never Save Settings.
+	
+	  Allows you to restrict the user from changing the program group settings by
+	  graying out these options in Program Manager under the Options menu.
+	
+	- Show Common Program Groups.
+	
+	  Allows you to show the common program groups from the local machine accounts
+	  database as opposed to the common program groups from the server, regardless
+	  of whether it is a mandatory profile or personal profile.
+	
+	If you create the profile (mandatory or personal) as outlined in Q128624 and
+	select the Show Common Program Groups, you will see the Common Program Groups
+	that reside on the Local Machine.
+	
+	If you deselect the Show Common Program Groups you will only see the program
+	groups created from the Profile Editor for that profile in the program settings
+	section.
+	
+	
+	Additional query words: prodnt
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+	Version           : :3.5,3.51
+	
+	=============================================================================
+	

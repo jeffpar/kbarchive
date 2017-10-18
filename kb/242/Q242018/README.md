@@ -1,0 +1,149 @@
+---
+layout: page
+title: "Q242018: HOWTO: Copy a Section of a Bitmap to the Clipboard"
+permalink: kb/242/Q242018/
+---
+
+## Q242018: HOWTO: Copy a Section of a Bitmap to the Clipboard
+
+	Article: Q242018
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): WINDOWS:5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbBitmap kbClipboard kbCtrl kbVBp kbVBp500 kbVBp600 kbGrpDSVB kbDSupport
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article shows how to select a region of a bitmap from a picture box and
+	then copy only the selected region to the clipboard. This article assumes that
+	you select from the top-left to the bottom-right with the mouse.
+	
+	MORE INFORMATION
+	================
+	
+	Step by Step Example
+	--------------------
+	
+	1. Start a new Visual Basic Standard Exe project. Form1 is created by default.
+	
+	2. On the Project menu, select Add Module to add a new module to the existing
+	  project.
+	
+	3. Add two Picture Boxes to the form, name one "Pic_Edit" (without the quotation
+	  marks) (the target), and name the other "Pic_Dest" (without the quotation
+	  marks) (the destination.)
+	
+	4. Set the Picture property of Pic_Edit to a bitmap from which you want to
+	  select a region.
+	
+	5. Set the AutoRedraw property of Pic_Dest to True.
+	
+	6. Add the following code to Module1:
+	
+	  Public Const INVERSE = 6
+	  Public Const DOT = 2
+	  Public Const SOLID = 0
+	
+	  Public OrigX As Long
+	  Public OrigY As Long
+	  Public DestX As Long
+	  Public DestY As Long
+	
+	  Public Sub Draw_Selection_Rectangle()
+	   
+	      ' Set drawing mode to INVERSE since this routine also used to erase
+	      ' the selection rectangle by simply drawing over the currently 
+	      ' displayed rectangle
+	      
+	      With Editor.Pic_Edit
+	          .DrawMode = INVERSE
+	          .DrawStyle = DOT
+	          Editor.Pic_Edit.Line (OrigX, OrigY)-(DestX, DestY), , B
+	          .DrawStyle = SOLID
+	      End With
+	
+	  End Sub
+	
+	  Public Sub Copy_Rectangle()
+	      With Editor.Pic_Dest
+	          .Cls
+	          .Visible = True
+	          .Height = DestY - OrigY
+	          .Width = DestX - OrigX
+	          .PaintPicture Editor.Pic_Edit, 0, 0, (DestX - OrigX), _
+	              (DestY - OrigY), OrigX, OrigY, (DestX - OrigX), _
+	              (DestY - OrigY), vbSrcCopy
+	      End With
+	      
+	      ' Make sure the clipboard is clear, then copy the image:
+	      Clipboard.Clear
+	      Clipboard.SetData Editor.Pic_Dest.Image
+	  End Sub
+	
+	7. Add the following code to Form1:
+	
+	  Private Sub Pic_Edit_MouseDown(Button As Integer, Shift As Integer, X As Single, Y As Single)
+	      If Button = 1 Then Pic_Edit.Refresh
+	      Pic_Dest.Visible = False
+	      OrigX = X
+	      OrigY = Y
+	      DestX = OrigX
+	      DestY = OrigY
+	      Call Module1.Draw_Selection_Rectangle
+	  End Sub
+	
+	  Private Sub Pic_Edit_MouseMove(Button As Integer, Shift As Integer, X As Single, Y As Single)
+	         
+	      If Button = 1 Then
+	          DestX = X
+	          DestY = Y
+	          Pic_Edit.Refresh
+	          Call Module1.Draw_Selection_Rectangle
+	      End If
+	  End Sub
+	
+	  Private Sub Pic_Edit_MouseUp(Button As Integer, Shift As Integer, X As Single, Y As Single)
+	      ' Check to see if mouse moved or goes the "wrong" way:
+	      If DestX <= OrigX Or DestY <= OrigY Then
+	          Pic_Edit.Refresh
+	          Exit Sub
+	      End If
+	      
+	      If Button = 1 Then Call Copy_Rectangle
+	  End Sub
+	
+	8. Start the application and select an area of the bitmap with the mouse. When
+	  you release the mouse button, Pic_Dest appears with the selected region.
+	
+	NOTE: If you open up MS Paint, MS Word, or any other application that can take a
+	pasted bitmap image, you are able to paste the selected portion of the image to
+	that application. You can also view the contents of the clipboard by using the
+	Clipboard Viewer.
+	
+	REFERENCES
+	==========
+	
+	For additional information, click the article number below to view the article
+	in the Microsoft Knowledge Base:
+	
+	  Q71488 How to Create Rubber-Band Lines/Boxes in Visual Basic
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbBitmap kbClipboard kbCtrl kbVBp kbVBp500 kbVBp600 kbGrpDSVB kbDSupport 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+	Version           : WINDOWS:5.0,6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

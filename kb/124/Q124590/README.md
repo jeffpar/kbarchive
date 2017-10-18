@@ -1,0 +1,80 @@
+---
+layout: page
+title: "Q124590: Cinemania 1995: Font Changes When Printing a Two-Page Document"
+permalink: kb/124/Q124590/
+---
+
+## Q124590: Cinemania 1995: Font Changes When Printing a Two-Page Document
+
+	Article: Q124590
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): 1995 edition
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 10-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Cinemania for Windows 1995 edition 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you print articles from Microsoft Cinemania, the first few words or the
+	first two lines on the second page may be garbled or in a different font than
+	you expect.
+	
+	WORKAROUND
+	==========
+	
+	To work around this problem, follow these steps:
+	
+	1. Select the text you want to print. Instead of choosing the Print button,
+	  choose the Copy button.
+	
+	2. Open any word processor program (such as Microsoft Write).
+	
+	3. From the word processor's Edit menu, choose Paste to paste the text from
+	  Cinemania into the word processor.
+	
+	4. From the word processor's File menu, choose Print. The text you selected is
+	  printed correctly by the word processor program.
+	
+	MORE INFORMATION
+	================
+	
+	This problem seems to occur in biographies and documents that contain two or
+	more pages.
+	
+	Step to Reproduce Problem
+	-------------------------
+	
+	1. Start Cinemania 1995.
+	
+	2. Choose the Find button at the bottom of the Find dialog box.
+	
+	3. Select the People category.
+	
+	4. Type "Stewart, James" (without the quotation marks) and then press ENTER.
+	
+	5. Choose the Print button.
+	
+	
+	For more information about using the Copy command in Cinemania, choose Index from
+	the Help menu and then select the "Copying Displayed Text" topic.
+	
+	Microsoft has confirmed this to be a problem in the 1995 edition of Cinemania for
+	Windows. We are researching this problem and will post new information here in
+	the Microsoft Knowledge Base as it becomes available.
+	
+	Additional query words: 1995 multi media multimedia multi-media mmtitles cinemania hewlett packard hewlett-packard Epson Stylus 800 Action Laser II HP IIIsi LJ 4L Panasonic 440 emulating IIp printer 630 black text only KX-P2023 deskjet 5.0 driver kxp2023
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbHomeProdSearch kbHomeMMsearch kbCineManiaSearch kbCinemania1995
+	Version           : :1995 edition
+	
+	=============================================================================
+	

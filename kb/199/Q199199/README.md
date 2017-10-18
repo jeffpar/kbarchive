@@ -1,0 +1,74 @@
+---
+layout: page
+title: "Q199199: SMS: Cannot Change the Name of a Program in SMS 2.0"
+permalink: kb/199/Q199199/
+---
+
+## Q199199: SMS: Cannot Change the Name of a Program in SMS 2.0
+
+	Article: Q199199
+	Product(s): Microsoft Systems Management Server
+	Version(s): winnt:2.0
+	Operating System(s): 
+	Keyword(s): kbsms200 kbsms200bug kbSoftwareDist
+	Last Modified: 04-MAR-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server version 2.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	In Systems Management Server 2.0, the name of a program cannot be changed or
+	modified in any way after it has been created. The database structure currently
+	does not allow this modification.
+	
+	CAUSE
+	=====
+	
+	The program name is a database key; thus the name is used to identify a
+	package's program in advertisements. If the key were changed, it would orphan
+	any advertisements that rely on the key to identify the program.
+	
+	WORKAROUND
+	==========
+	
+	If you must change the name of a program, you must delete and re-create it with
+	the same settings it originally had (except for the name). The advertisements,
+	which are deleted with the program, as well as the security, must also be
+	re-created, as with the creation of any new program.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Systems Management Server
+	version 2.0.
+	
+	MORE INFORMATION
+	================
+	
+	Using the Systems Management Server Software ToolKit (STK) to override this
+	limitation is strongly discouraged because it will most likely yield an error
+	with WMI PutInstance. At this time, it is not known what other side effects
+	modifying this parameter might have on the database and the Systems Management
+	Server site server itself. Making this change by means of the STK is likely to
+	have detrimental effects on, but not limited to, the STK itself, future upgrade
+	possibilities, some server subsystems, the database, and some client
+	components.
+	
+	Note that you can change the names of packages, collections, and advertisements
+	in Systems Management Server 2.0.
+	
+	Additional query words: prodsms swdist32
+	
+	======================================================================
+	Keywords          : kbsms200 kbsms200bug kbSoftwareDist 
+	Technology        : kbSMSSearch kbSMS200
+	Version           : winnt:2.0
+	Issue type        : kbbug
+	
+	=============================================================================
+	

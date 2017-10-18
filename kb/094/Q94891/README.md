@@ -1,0 +1,71 @@
+---
+layout: page
+title: "Q94891: Using MemMaker with MS-DOS Multiple Configuration Menus"
+permalink: kb/094/Q94891/
+---
+
+## Q94891: Using MemMaker with MS-DOS Multiple Configuration Menus
+
+	Article: Q94891
+	Product(s): Microsoft Disk Operating System
+	Version(s): MS-DOS:6.0,6.2,6.21,6.22
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 19-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft MS-DOS operating system versions 6.0, 6.2, 6.21, 6.22 
+	-------------------------------------------------------------------------------
+	
+	
+	SUMMARY
+	=======
+	
+	You can use MemMaker with multiple configurations, but doing so requires that
+	you create separate configuration files to run MemMaker. The "MS-DOS User's
+	Guide" for version 6.0 and 6.2 explains this procedure in detail in Chapter 6
+	(pages 151 to 154).
+	
+	This article explains why these separate configuration files are necessary.
+	
+	MORE INFORMATION
+	================
+	
+	MemMaker removes all references to memory managers, the FILES= statement, the
+	BUFFERS= statement, and the DOS= statement. It then adds the following
+	statements at the top of the CONFIG.SYS file:
+	
+	        DEVICE=C:\DOS\HIMEM.SYS
+	     DEVICE=C:\DOS\EMM386.EXE <settings>
+	     buffers=<setting>
+	     files=<setting>
+	     dos=umb
+	     lastdrive=<setting>
+	     FCBS=<setting>
+	     [Everything else remains in the same order]
+	
+	NOTE: The <setting> and <settings> are determined by MemMaker for
+	your specific installation and configuration.
+	
+	Because of this design, MemMaker cannot work with configuration files containing
+	Multi-Config sections that reference multiple memory managers or have different
+	memory configurations.
+	
+	MemMaker also uses a program called SIZER.EXE to determine memory requirements
+	for device drivers and terminate-and-stay-resident (TSR) programs. MemMaker
+	analyzes the contents of the entire CONFIG.SYS and AUTOEXEC.BAT files
+	(regardless of Multi-Config headings) to calculate the optimum memory
+	configuration for your system. Because the files are viewed as a single unit,
+	each individual configuration will not be optimized after you run MemMaker.
+	
+	Additional query words: 6.22 6.00 6.20 MULTICONFIG
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600
+	Version           : MS-DOS:6.0,6.2,6.21,6.22
+	
+	=============================================================================
+	

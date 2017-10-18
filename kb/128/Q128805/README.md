@@ -1,0 +1,148 @@
+---
+layout: page
+title: "Q128805: FIX: Explicit Call to Virtual Destructor Corrupts Stack"
+permalink: kb/128/Q128805/
+---
+
+## Q128805: FIX: Explicit Call to Virtual Destructor Corrupts Stack
+
+	Article: Q128805
+	Product(s): Microsoft C Compiler
+	Version(s): 1.00 2.00 2.10
+	Operating System(s): 
+	Keyword(s): kbCompiler kbCPPonly kbVCkbbuglist kbfixlist
+	Last Modified: 29-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The C/C++ Compiler (CL.EXE), included with:
+	   - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Making an explicit call to a destructor that has been declared virtual can
+	corrupt the stack. This problem may show up as:
+	
+	- Local variables change unexpectedly.
+	
+	-or-
+	
+	- Access violations occur on return from functions.
+	
+	CAUSE
+	=====
+	
+	An explicit call to a virtual destructor generates a call to a helper function
+	called the scalar deleting destructor. In addition to calling the destructor,
+	the scalar deleting destructor also calls operator delete, depending on the
+	value of a flag that is pushed onto the stack before the call.
+	
+	Because the compiler is not correctly pushing the flags before calling the scalar
+	deleting destructor, four extra bytes are popped off the stack each time an
+	explicit call to a destructor is made. Also, if the last value stored on the
+	stack before the call happens to be 1, operator delete is also called.
+	
+	RESOLUTION
+	==========
+	
+	To work around this problem, use the scope resolution operator (::) to specify
+	which destructor should be called. This will avoid the call through the virtual
+	table, so that the destructor is called without calling the scalar deleting
+	destructor.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article. This problem was fixed in Microsoft Visual C++,
+	32-bit Edition, version 4.0.
+	
+	MORE INFORMATION
+	================
+	
+	The following program demonstrates both the problem and the solution. When
+	compiled without the /D "GOOD_CODE" compiler option, the ptr->~MyClass() call
+	corrupts the stack, so the loop is only executed only six times, and operator
+	delete is accidentally called.
+	
+	The following is the output when you compile the sample code without using the /D
+	"GOOD_CODE" compiler option:
+	
+	  ~MyClass(2D0340)
+	  i=0, after ptr->~MyClass()
+	  ~MyClass(2D134C)
+	  i=1, after ptr->~MyClass()
+	  ~MyClass(2D1354)
+	  i=2, after ptr->~MyClass()
+	  ~MyClass(2D135C)
+	  i=3, after ptr->~MyClass()
+	  ~MyClass(2D1364)
+	  MyClass::operator delete(2D1364)
+	  i=4, after ptr->~MyClass()
+	  ~MyClass(2D136C)
+	  MyClass::operator delete(2D136C)
+	  i=5, after ptr->~MyClass()
+	  out of the loop, i=4227241
+	
+	To see the correct output, compile the code with the /D "GOOD_CODE" compiler
+	option.
+	
+	Sample Code
+	-----------
+	
+	  /* Compile options needed: none
+	  */ 
+	  #include <stdio.h>
+	  class MyClass
+	  {
+	  public:
+	     void operator delete(void *ptr)
+	     {
+	      printf("\nMyClass::operator delete(%lX)", (long)ptr);
+	     }
+	     virtual ~MyClass()
+	     {
+	      printf("\n~MyClass(%lX)", (long)this);
+	     }
+	  };
+	  void main(void)
+	  {
+	     int i;
+	     MyClass *ptr;
+	     int j;
+	
+	     for (i=0; i < 100; i++)
+	     {
+	      ptr = new MyClass;
+	      j = 1;  // Used to put '1' onto the stack
+	
+	      #ifndef GOOD_CODE
+	       // This call corrupts the stack, and "accidentally"
+	       // calls delete()
+	       ptr->~MyClass();
+	      #else
+	       // This call works fine
+	       ptr->MyClass::~MyClass();
+	      #endif
+	
+	      printf("\ni=%d, after ptr->~MyClass()", i);
+	      fflush(stdout);
+	     }
+	
+	     printf("\nout of the loop, i=%d", i);
+	  }
+	
+	Additional query words: 1.00 2.00 2.10 8.0 8.00 9.0 9.00 9.1 9.10
+	
+	======================================================================
+	Keywords          : kbCompiler kbCPPonly kbVC kbbuglist kbfixlist
+	Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+	Version           : 1.00 2.00 2.10
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

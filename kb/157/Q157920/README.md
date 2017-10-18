@@ -1,0 +1,156 @@
+---
+layout: page
+title: "Q157920: INFO: How to Prevent Welcome to Windows NT Screen During Setup"
+permalink: kb/157/Q157920/
+---
+
+## Q157920: INFO: How to Prevent Welcome to Windows NT Screen During Setup
+
+	Article: Q157920
+	Product(s): Microsoft Windows NT
+	Version(s): 4.0
+	Operating System(s): 
+	Keyword(s): kbsetup kbui kbOPK kbSBKkbfaq
+	Last Modified: 18-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 4.0 
+	- Microsoft Windows NT Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	
+	SUMMARY
+	=======
+	
+	When you perform unattended installations using the Unattend.txt file, it is
+	possible to remove the Welcome To Windows NT splash screen that appears after
+	the initial installation, and after each new user logs on to the computer. You
+	can also use this procedure with attended installations. This is useful if an
+	administrator wants to prevent users from seeing this splash screen.
+	
+	MORE INFORMATION
+	================
+	
+	To remove the Welcome To Windows NT splash screen, use one of the following
+	methods:
+	
+	Method 1
+	--------
+	
+	1. Copy all the Windows NT system files needed (usually the I386 directory and
+	  all its subdirectories) from the Windows NT compact disc to the distribution
+	  server, which is a network share devoted to network client setup.
+	
+	2. Create the Unattend.txt file with any parameters that you feel are necessary.
+	  In this method, there are no special entries that need to be made in the
+	  Unattend.txt file to remove the splash screen.
+	
+	  For additional information, please see the following article in the Microsoft
+	  Knowledge Base:
+	
+	  Q155197 Unattended Setup Parameters for Unattend.txt File
+	
+	
+	3. In the I386 directory (or the directory for the platform you are installing
+	  that you copied to the distribution server), change the name of the
+	  Welcome.ex_ file to Welcome.bak.
+	
+	4. Back up the Txtsetup.sif file in the I386 directory to another file name,
+	  such as Txtsetup.bak.
+	
+	5. Open the Txtsetup.sif file in Notepad. Use the Find command and search for
+	  the word "Welcome." There should be only one entry, and it should appear as
+	  the following:
+	
+	  welcome.exe = 1,,,,,,,1,0,0
+	
+	6. Place a semicolon in front of this line. It should now look like:
+	
+	  ;welcome.exe = 1,,,,,,,1,0,0
+	
+	7. Save the Txtsetup.sif file back to the distribution share.
+	
+	8. Back up the Dosnet.inf file in the I386 directory to another file name, such
+	  as Dosnet.bak.
+	
+	9. Open the Dosnet.inf file in Notepad. Use the Find command and search for the
+	  word "Welcome." There should be only one entry, and it should appear as the
+	  following:
+	
+	  d1,welcome.exe
+	
+	10. Place a semicolon in front of this line. It should now look like:
+	
+	  ;d1,welcome.exe
+	
+	11. Save the Dosnet.inf file back to the distribution share and quit Notepad.
+	
+	12. Run the setup routine for Microsoft Windows NT. The first time the
+	  administrator or any user logs on, the Welcome to Windows NT screen will no
+	  longer be presented.
+	
+	  NOTE: The functionality of the Welcome to Windows NT splash screen can be
+	  enabled again. Copy the expanded Welcome.exe file to the %Systemroot%, log
+	  off, and then log back on. There is a registry entry that controls the
+	  operation of this executable file.
+	
+	
+	Method 2
+	--------
+	
+	1. Copy all the Windows NT system files needed, usually the I386 directory and
+	  all its subdirectories, from the compact disc to the distribution server,
+	  which is a network share devoted to network client setup. The directory name
+	  of this network share is usually also I386.
+	
+	2. Create the Unattend.txt file with any parameters that you feel are necessary.
+	  In your Unattend.txt file, make sure Oempreinstall is set to Yes.
+	
+	  For additional information, please see the following article in the Microsoft
+	  Knowledge Base:
+	
+	  Q155197 Unattended Setup Parameters for Unattend.txt File
+	
+	3. Create a directory named $oem$ under the I386 directory (the directory of the
+	  network share on the distribution server).
+	
+	4. In the $oem$ directory, create a text file named Cmdlines.txt that contains
+	  the following two lines:
+	
+	  [Commands]
+	  ".\regedit /s nowelc.reg"
+	
+	5. Also in the $oem$ directory, create a text file named Nowelc.reg that
+	  contains the following six lines:
+	
+	  REGEDIT4
+	
+	  [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion
+	     \Explorer\Tips]
+	  "DisplayInitialTipWindow"=dword:00000000
+	  "Show"=hex:00,00,00,00
+	  "Next"=hex:03,00
+	
+	  NOTE: The second line is blank, but it must be present; line 3 above wraps to
+	  the next line for readability, but it should be all on one line in the
+	  Nowelc.reg file, with no spaces between CurrentVersion and \Explorer (that
+	  is, ...\CurrentVersion\Explorer\Tips]).
+	
+	6. Place a copy of the Regedit.exe file (from the I386 directory) in the $oem$
+	  directory. At this point, there should be three files in the $oem$ directory:
+	  Cmdlines.txt, Nowelc.reg, and Regedit.exe.
+	
+	7. Run unattended setup for Windows NT 4.0.
+	
+	Additional query words: 4.00 Unattended Setup
+	
+	======================================================================
+	Keywords          : kbsetup kbui kbOPK kbSBK kbfaq
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+	Version           : :4.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

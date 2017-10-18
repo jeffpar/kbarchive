@@ -1,0 +1,242 @@
+---
+layout: page
+title: "Q155641: Games: DirectX 2.0 Notes and Troubleshooting"
+permalink: kb/155/Q155641/
+---
+
+## Q155641: Games: DirectX 2.0 Notes and Troubleshooting
+
+	Article: Q155641
+	Product(s): Microsoft Home Games
+	Version(s): 1.0
+	Operating System(s): 
+	Keyword(s): kbdisplay kbreadm kbimukbfaq
+	Last Modified: 08-NOV-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Monster Truck Madness, version 1.0 
+	- Microsoft Hellbender for Windows, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article contains information from the DirectX 2.0 Notes and Troubleshooting
+	section of the Monster Truck Madness Readme.txt file.
+	
+	DirectX Replaces Video Drivers
+	------------------------------
+	
+	DirectX is a system component that allows for more efficient hardware access. The
+	games listed at the top of this article require DirectX 2.0 or later. DirectX is
+	installed on your computer when you install one of the games listed at the top
+	of this article.
+	
+	DirectX 2.0 Setup updates your Windows 95 drivers and your DirectX 1.0 drivers
+	automatically. In some cases, the latest video drivers from your video card
+	manufacturer have additional functionality that is specific to your video card.
+	If these drivers are marked as DirectX 1.0 drivers, DirectX Setup will replace
+	them with a generic DirectX 2.0 driver. In some cases, this may result in a loss
+	of the features that are specific to your video card.
+	
+	If you want to have the additional functionality that you had with your original
+	video card drivers, you have two options:
+	
+	- This is the option we recommend: Contact your video card manufacturer to get
+	  a DirectX 2.0 compatible video driver. See the "To Update Your Video Driver
+	  With a Directx 2.0 Driver" section below for instructions on how to update
+	  your driver.
+	
+	  -or-
+	
+	- Reinstall your DirectX 1.0 driver. We do not recommend doing this; however,
+	  in most cases DirectX 2.0 will work with your DirectX 1.0 driver.
+	
+	  See the "Restoring Your Video Driver with a DirectX 1.0 Driver 2.2" section
+	  below for instructions on how to restore your DirectX 1.0 driver.
+	
+	To Update Your Video Driver With a Directx 2.0 Driver
+	-----------------------------------------------------
+	
+	First, contact your video card manufacturer and follow the manufacturer's
+	instructions to get the latest driver. Typically this will be a PKZip file, or a
+	self-extracting executable.
+	
+	If the manufacturer of your video card includes specific instructions for
+	installing the driver, follow them. Otherwise, unzip the files into a temporary
+	subdirectory on your hard disk, or onto a floppy disk. Then follow the
+	instructions below:
+	
+	1. Open the Display Properties dialog box by using your right mouse button to
+	  click the Desktop and then click Properties from the pop-up menu.
+	
+	2. In the Display Properties dialog box, click the Settings tab.
+	
+	3. Click Change Display Type.
+	
+	4. In the Advanced Display Properties dialog box, click the Adapter tab.
+	
+	5. Click Change.
+	
+	6. In the Select Device dialog box, click Have Disk.
+	
+	7. If you have the latest video driver from your video card manufacturer on a
+	  disk or compact disc, select the appropriate drive and click OK. Otherwise
+	  click Browse and from the temporary subdirectory you created for your video
+	  card manufacturer's files, open the file called Display.inf.
+	
+	8. In the Select Device dialog box, choose the driver that matches your video
+	  card and then click OK.
+	
+	9. Click OK as many times as necessary to accept the changes.
+	
+	10. Click Yes in the System Settings Change dialog box to restart your computer.
+	
+	Restoring Your Video Driver with a DirectX 1.0 Driver
+	-----------------------------------------------------
+	
+	You should have a disk that has the video drivers that shipped with your system.
+	
+	These disks should contain a video driver that works with your system. You may
+	also get a DirectX 1.0 driver by contacting your video card manufacturer.
+	
+	If you have specific instructions from your video card manufacturer for
+	installing the DirectX 1.0 driver, follow them. Otherwise, do the following:
+	
+	1. Open the Display Properties dialog box by using the right mouse button to
+	  click the Desktop and then select Properties from the pop-up menu.
+	
+	2. In the Display Properties dialog box, click the Settings tab.
+	
+	3. Click Change Display Type.
+	
+	4. In the Advanced Display Properties dialog box, click the Adapter tab.
+	
+	5. Click Change.
+	
+	6. In the Select Device dialog box, click Have Disk.
+	
+	7. If you have the latest video driver from your video card manufacturer on a
+	  disk or compact disc, select the appropriate drive and click OK. Otherwise
+	  click Browse and from the temporary subdirectory you created for your video
+	  card manufacturer's files, open the file called Display.inf.
+	
+	8. In the Select Device dialog box, choose the driver that matches your video
+	  card and then click OK.
+	
+	9. Click OK as many times as necessary to accept the changes.
+	
+	10. Click Yes in the System Settings Change dialog box to restart your computer.
+	
+	Microsoft DirectX 2.0 General Questions and Answers
+	---------------------------------------------------
+	
+	Q. What is Microsoft DirectX?
+	
+	A. Microsoft DirectX is a set of drivers that is available with the Microsoft
+	Game Software Development Kit (SDK).
+	
+	Q. What components make up Microsoft DirectX?
+	
+	A. DirectX components include DirectDraw, DirectInput, DirectPlay, and
+	DirectSound. DirectDraw and DirectSound components replace current Windows 95
+	and DirectX 1.0 display and sound drivers with DirectX 2.0 drivers.
+	
+	Q. How do I obtain Microsoft DirectX?
+	
+	A. If you develop computer games and you want to provide DirectX functionality
+	within your game, you need the Microsoft Game SDK. The Game SDK is available on
+	the Microsoft Developer's Network (MSDN) Level 2 CD-ROM.
+	
+	Independent software vendors (ISVs) who use these components in their games can
+	redistribute them.
+	
+	Q. What is DirectDraw?
+	
+	A. DirectDraw allows direct access of video display memory, hardware blitters,
+	hardware overlays, and page flipping. DirectDraw provides this functionality
+	while maintaining compatibility with existing Windows 95-based programs and
+	device drivers.
+	
+	Essentially, DirectDraw is a memory manager for video memory. Using DirectDraw, a
+	program can manipulate video memory with ease, taking full advantage of the
+	blitting and color decompression capabilities of different types of video
+	hardware without becoming dependent on a particular piece of hardware.
+	
+	Q. What is DirectInput?
+	
+	A. The Microsoft DirectInput application programming interface (API) provides
+	fast and consistent access to analog and digital joysticks. The DirectInput API
+	maintains consistency with the joystick APIs of the Microsoft Win32 Software
+	Development Kit (SDK), but has improved responsiveness and reliability by
+	changing the device driver model. DirectInput device drivers also use the
+	registry to store settings for standard joysticks, calibration information for
+	previously configured joysticks, and settings for OEM-supplied joysticks.
+	
+	Q. What is DirectPlay?
+	
+	A. The Microsoft DirectPlay application programming interface (API) for Windows
+	95 is a software interface that simplifies game access to communication
+	services. DirectPlay provides a way for games to communicate with each other
+	that is independent of the underlying transport, protocol, or online service.
+	
+	Q. What is DirectSound?
+	
+	A. The Microsoft DirectSound application programming interface (API) is the audio
+	component of the Microsoft Windows 95 Game SDK that provides low-latency mixing,
+	hardware acceleration, and direct access to the sound device. DirectSound
+	provides this functionality while maintaining compatibility with existing
+	Windows 95-based programs and device drivers.
+	
+	Q. What do I do if I have problems with the DirectX drivers that replace my
+	Windows 95 video and sound drivers?
+	
+	A. If you experience problems with the DirectX video or sound drivers, you can
+	remove them by running Dxsetup.exe. Dxsetup.exe is on the compact disc of the
+	games listed at the top of this article.
+	
+	To run Dxsetup.exe:
+	
+	1. Insert your the compact disc (from the game listed at the top of this
+	  article) in your CD-ROM drive.
+	
+	2. Open Windows Explorer, and then select your CD-ROM drive.
+	
+	3. Open the Setup folder on the CD of the game listed at the top of this
+	  article.
+	
+	4. Double-click the DirectX folder, which is inside the Setup folder.
+	
+	5. Double-click the file DXSetup.exe to run DirectX Setup.
+	
+	NOTE: After you run Dxsetup.exe, some DirectX files remain in the Windows\System
+	folder. These files do not affect the Windows 95 video or sound drivers. To
+	remove these files, restart your computer to an MS-DOS prompt and remove the
+	following files from the Windows\System folder:
+	
+	  Dsound.*
+	  Ddraw.*
+	  Ddhelp.exe
+	  Dplay.dll
+	  Dpserial.dll
+	  Dpwsock.dll
+	
+	Q. Who supports Microsoft Game SDK and DirectX?
+	
+	A. Microsoft Game SDK is supported by Microsoft Developer Support. The DirectX
+	drivers, such as video and sound drivers, are supported by the Desktop Systems
+	group. If your DirectX drivers are provided by an original equipment
+	manufacturer (OEM), the drivers are supported by that manufacturer.
+	
+	Additional query words: 1.00 hell bender hell-bender mtm direct-x
+	
+	======================================================================
+	Keywords          : kbdisplay kbreadm kbimu kbfaq
+	Technology        : kbGamesSearch kbZNotKeyword kbMonsterTMSearch kbMonsterTM kbHellBender
+	Version           : :1.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

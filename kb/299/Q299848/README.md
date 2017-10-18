@@ -1,0 +1,151 @@
+---
+layout: page
+title: "Q299848: HOWTO: Insert Code at Cursor/Selection Position from an Add-In"
+permalink: kb/299/Q299848/
+---
+
+## Q299848: HOWTO: Insert Code at Cursor/Selection Position from an Add-In
+
+	Article: Q299848
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 6.0
+	Operating System(s): 
+	Keyword(s): kbsample kbide kbVBp kbVBp600 kbIDEProject kbGrpDSVB _IK
+	Last Modified: 19-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes how to create an Add-In for Visual Basic 6.0 that adds a
+	line of text to the active code module at the present cursor or selection
+	position.
+	
+	MORE INFORMATION
+	================
+	
+	You can use the AddFromString method of the CodeModule object in an Add-In to
+	insert text on the line that precedes the first procedure in a module. The
+	AddFromString method does not offer functionality to insert text at a specific
+	line in a code module. However, the InsertLines method of the CodeModule object
+	does offer this functionality.
+	
+	The sample code in this article uses the GetSelection method of the CodePane
+	object to obtain the current selection position in the active code module. It
+	then uses the InsertLines method to add text at the position that the
+	GetSelection call obtains.
+	
+	Step-by-Step Example
+	--------------------
+	
+	1. Create a new Addin project in Visual Basic. A form, frmAddIn, and an
+	  AddInDesigner class, Connect, are created by default.
+	
+	2. In Project Explorer, click frmAddIn to select the form.
+	
+	3. On the Project menu, click Remove frmAddIn to remove the form from the
+	  project.
+	
+	4. In Project Explorer, click Connect to select the AddInDesigner.
+	
+	5. On the View menu, click Code to display the code pane for the Connect class.
+	
+	6. On the Edit menu, click Select All to highlight the contents of the Connect
+	  class.
+	
+	7. On the Edit menu, click Delete to remove the contents of the Connect class.
+	
+	8. Add the following code to the General Declarations section of Connect:
+	
+	  Option Explicit
+	
+	  Dim VBInstance As VBIDE.VBE
+	  Dim cbAddIns As CommandBar
+	  Dim cbcInsertLine As CommandBarControl
+	  Private WithEvents cbeInsertLine As CommandBarEvents
+	
+	  Private Sub AddinInstance_OnConnection(ByVal Application As Object, _
+	              ByVal ConnectMode As AddInDesignerObjects.ext_ConnectMode, _
+	              ByVal AddInInst As Object, custom() As Variant)
+	      Set VBInstance = Application
+	      ' Find the Add-Ins menu.
+	      Set cbAddIns = VBInstance.CommandBars("Add-Ins")
+	      ' Add a button to the Add-Ins menu.
+	      Set cbcInsertLine = cbAddIns.Controls.Add(Type:=msoControlButton)
+	      ' Assign the Caption and Style of the new button.
+	      cbcInsertLine.Caption = "Insert Line at Cursor"
+	      cbcInsertLine.Style = msoButtonCaption
+	      ' Associate an event object with the new button.
+	      Set cbeInsertLine = VBInstance.Events.CommandBarEvents(cbcInsertLine)
+	  End Sub
+	
+	  Private Sub AddinInstance_OnDisconnection( _
+	              ByVal RemoveMode As AddInDesignerObjects.ext_DisconnectMode, _
+	              custom() As Variant)
+	      ' Remove the button from the Add-Ins menu.
+	      cbAddIns.Controls(cbcInsertLine.Caption).Delete
+	      ' Free the object variables.
+	      Set cbcInsertLine = Nothing
+	      Set cbAddIns = Nothing
+	      Set cbeInsertLine = Nothing
+	      Set VBInstance = Nothing
+	  End Sub
+	
+	  Private Sub cbeInsertLine_Click(ByVal CommandBarControl As Object, _
+	              handled As Boolean, CancelDefault As Boolean)
+	      Dim lngStartLine As Long
+	      Dim lngStartColumn As Long
+	      Dim lngEndLine As Long
+	      Dim lngEndColumn As Long
+	      ' Only add a new line if a code pane is present.
+	      If VBInstance.CodePanes.Count > 0 Then
+	          ' Retrieve the starting line of the
+	          ' selection in active code pane.
+	          VBInstance.ActiveCodePane.GetSelection lngStartLine, _
+	             lngStartColumn, lngEndLine, lngEndColumn
+	          ' Add a line at the location that is
+	          ' retrieved in the GetSelection statement.
+	          VBInstance.ActiveCodePane.CodeModule.InsertLines lngStartLine, _
+	             "'Line inserted from Add-In"
+	      End If
+	  End Sub
+	
+	9. Run the project.
+	
+	10. Start another instance of Visual Basic, and create a new Standard EXE
+	  project. Form1 is created by default.
+	
+	11. Double-click on the Form1 designer to display the code window of Form1.
+	  Notice that the cursor appears in the Form_Load event procedure.
+	
+	12. On the Add-Ins menu, click Insert Line at Cursor. Notice that a line of text
+	  is added to the Form_Load event procedure.
+	
+	If all the code windows in the project are closed, text is not added to any
+	module.
+	
+	REFERENCES
+	==========
+	
+	For additional information about how to use Visual Basic 6.0 to create an
+	Add-In, click the article number below to view the article in the Microsoft
+	Knowledge Base:
+	
+	  Q189468 HOWTO: Create a Basic Add-in Using VB5 or VB6
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbsample kbide kbVBp kbVBp600 kbIDEProject kbGrpDSVB _IK 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600
+	Version           : :6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

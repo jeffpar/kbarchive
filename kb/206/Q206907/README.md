@@ -1,0 +1,166 @@
+---
+layout: page
+title: "Q206907: BUG: Reposition/Resize Control Can Causes Incorrect Results"
+permalink: kb/206/Q206907/
+---
+
+## Q206907: BUG: Reposition/Resize Control Can Causes Incorrect Results
+
+	Article: Q206907
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): WINDOWS:5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbVBp kbVBp500bug kbVBp600bug kbGrpDSVB kbDSupport
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you programmatically reposition and resize a control to a new scale
+	immediately after the Font property of the control has been changed, the
+	control's new size and new position may be incorrect.
+	
+	RESOLUTION
+	==========
+	
+	Change the control's position and size properties before changing the control's
+	Font property.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Open a new Visual Basic Standard EXE project. Form1 is created by default.
+	
+	2. Add two Label controls, two TextBox controls, and two CommandButton controls
+	  to Form1.
+	
+	3. Add the following code to the General Declarations section of Form1:
+	
+	  Option Explicit
+	  Private Sub form_load()
+	    Label1.Left = 120
+	    Label1.Top = 255
+	    Label1.Height = 255
+	    Label1.Width = 615
+	    
+	    Label2.Left = 120
+	    Label2.Top = 615
+	    Label2.Height = 255
+	    Label2.Width = 615
+	   
+	    Text1.Left = 840
+	    Text1.Top = 240
+	    Text1.Height = 285
+	    Text1.Width = 1215
+	    
+	    Text2.Left = 840
+	    Text2.Top = 600
+	    Text2.Height = 285
+	    Text2.Width = 1215
+	    
+	    Command1.Left = 2160
+	    Command1.Top = 240
+	    Command1.Height = 285
+	    Command1.Width = 2175
+	    Command1.Caption = "Change Font Then Scale"
+	    
+	    Command2.Left = 2160
+	    Command2.Top = 600
+	    Command2.Height = 285
+	    Command2.Width = 2175
+	    Command2.Caption = "Change Scale Then Font"
+	      
+	    Form1.Left = 0
+	    Form1.Top = 0
+	    Form1.Height = 1560
+	    Form1.Width = 4605
+	  End Sub
+	
+	  Private Sub Command1_Click()
+	      ChangeFont
+	      ChangeScale
+	  End Sub
+	
+	  Private Sub Command2_Click()
+	      ChangeScale
+	      ChangeFont
+	  End Sub
+	
+	  Private Sub ChangeFont()
+	      Dim fntNew As StdFont
+	      Dim oControl As Object
+	      
+	      Set fntNew = New StdFont
+	      With fntNew
+	          .Name = "MS Sans Serif"
+	          .Size = 14
+	      End With
+	      
+	      On Error Resume Next
+	      For Each oControl In Me.Controls
+	          Set oControl.Font = fntNew
+	      Next
+	  End Sub
+	
+	  Private Sub ChangeScale()
+	      Const FactorX = 1.77
+	      Const FactorY = 1.85
+	      
+	      Dim oControl As Object
+	      
+	      On Error Resume Next
+	      With Me
+	          .Move 0, 0, .Width * FactorX, .Height * FactorY
+	          For Each oControl In .Controls
+	              With oControl
+	                  .Left = .Left * FactorX
+	                  .Top = .Top * FactorY
+	                  .Width = .Width * FactorX
+	                  .Height = .Height * FactorY
+	              End With
+	          Next
+	      End With
+	  End Sub
+	
+	4. Run the program. Click the CommandButton labeled Change Font Then Scale. The
+	  form displays incorrectly. The controls are not sized properly. In addition,
+	  the TextBoxes overlap and the CommandButtons butt up against each other.
+	
+	5. Exit the program, and then run the program again. Click the CommandButton
+	  labeled Change Scale Then Font, and note that the problem does not occur.
+	
+	REFERENCES
+	==========
+	
+	For additional information on rescaling forms, click the article number below to
+	view the article in the Microsoft Knowledge Base:
+	
+	  Q182070 HOWTO: Create a Resolution-Independent Form
+	
+	Additional query words: FontSize
+	
+	======================================================================
+	Keywords          : kbVBp kbVBp500bug kbVBp600bug kbGrpDSVB kbDSupport 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+	Version           : WINDOWS:5.0,6.0
+	Issue type        : kbbug
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

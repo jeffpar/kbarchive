@@ -1,0 +1,102 @@
+---
+layout: page
+title: "Q245273: XWEB: Error Message: There Are No More Endpoints Available..."
+permalink: kb/245/Q245273/
+---
+
+## Q245273: XWEB: Error Message: There Are No More Endpoints Available...
+
+	Article: Q245273
+	Product(s): Microsoft Exchange
+	Version(s): WINDOWS:5.5
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 11-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Outlook Web Access, version 5.5 
+	- Microsoft Outlook Web Access, version 5.5 Service Packs 1, 2, 3 
+	- Microsoft Exchange Server, version 5.5 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+	
+	  Q256986 Description of the Microsoft Windows Registry
+	
+	SYMPTOMS
+	========
+	
+	When you attempt to install Outlook Web Access (OWA) with a firewall between the
+	Microsoft Internet Information Server (IIS)/OWA server and the Exchange Server
+	computer, you receive the following error message:
+	
+	  There are no more endpoints available from the endpoint mapper.
+	
+	CAUSE
+	=====
+	
+	During the installation of OWA, the Exchange Server installation program needs
+	to bind to the system attendant on the Exchange Server computer. If the port for
+	the system attendant is being blocked by the firewall, the installation does not
+	work.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, statically map the system attendant port on the
+	Exchange Server computer, and then open that port on the firewall. This allows
+	the installation program to bind to the system attendant during installation. To
+	do so requires you to restart the Exchange Server services. The instructions for
+	statically mapping the system attendant port on the Exchange Server computer
+	follow:
+	
+	WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+	that may require you to reinstall your operating system. Microsoft cannot
+	guarantee that you can solve problems that result from using Registry Editor
+	incorrectly. Use Registry Editor at your own risk.
+	
+	1. Start Registry Editor (Regedt32.exe).
+	
+	2. Under the HKEY_LOCAL_MACHINE subtree, go to the following subkey:
+	
+	  SYSTEM\CurrentControlSet\Services\MSExchangeSA\Parameters
+	
+	3. Add the registry value, TCP/IP port, as a DWORD value, and specify the port
+	  to be used. The RADIX should be set to decimal when you enter the value.
+	
+	  NOTE: The DWORD value should be in decimal. The port must be above 1024.
+	
+	4. Quit Registry Editor.
+	
+	For additional information on questions regarding statically mapping the system
+	attendant port, click the article number below to view the article in the
+	Microsoft Knowledge Base:
+	
+	  Q148732 XADM: Setting TCP/IP Port Numbers for Internet Firewalls
+	
+	You should also statically map the information store and the directory service,
+	and open those ports on the firewall.
+	
+	MORE INFORMATION
+	================
+	
+	For additional information, click the article numbers below to view the articles
+	in the Microsoft Knowledge Base:
+	
+	  Q155831 XADM: Setting TCP/IP Ports for Exchange and Outlook Client
+	  Connections Through a Firewall
+	
+	  Q176466 XGEN: TCP Ports and Microsoft Exchange: In-depth Discussion
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbOutlookSearch kbExchangeSearch kbExchange550 kbZNotKeyword2 kbOWASearch kbOWA550 kbOWA550SP1 kbOWA550SP2 kbOWA550SP3
+	Version           : WINDOWS:5.5
+	Issue type        : kbprb
+	
+	=============================================================================
+	

@@ -1,0 +1,70 @@
+---
+layout: page
+title: "Q131339: STOP Msg: 0x0000000A or 0X0000001E Dis/Reconnecting to WfWG Svr"
+permalink: kb/131/Q131339/
+---
+
+## Q131339: STOP Msg: 0x0000000A or 0X0000001E Dis/Reconnecting to WfWG Svr
+
+	Article: Q131339
+	Product(s): Microsoft Windows NT
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 3.5 
+	- Microsoft Windows NT Server version 3.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	From your Windows NT Workstation, when you disconnect and reconnect to two
+	network shares with the same password on a Windows for Workgroups 3.11 computer
+	running the NetWatcher utility, the following STOP Message appears (on your
+	Windows NT Workstation client):
+	
+	  STOP: 0x0000000A
+	
+	When you do the same from your Windows NT Server, the following STOP Message
+	appears (on your Windows NT Server client):
+	
+	 STOP: 0X0000001E
+	 KMODE_EXCEPTION_NOT_HANDLED
+	
+	CAUSE
+	=====
+	
+	The Windows NT network redirector, RDR.SYS, confuses the security entries for
+	the two connections. It tries to assign a security entry to the wrong share and
+	causes an access violation.
+	
+	RESOLUTION
+	==========
+	
+	Changes have been made to RDR.SYS that correct this problem.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Windows NT version 3.5. This
+	problem has been corrected in the latest U.S. Service Pack for Windows NT
+	version 3.5. For information on obtaining the Service Pack, query on the
+	following word in the Microsoft Knowledge Base (without the spaces):
+	
+	  S E R V P A C K
+	
+	This problem was corrected in Windows NT version 3.51.
+	
+	Additional query words: prodnt redirection connect confuse cross
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+	
+	=============================================================================
+	

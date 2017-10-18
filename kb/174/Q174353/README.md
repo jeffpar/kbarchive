@@ -1,0 +1,95 @@
+---
+layout: page
+title: "Q174353: XCLN: Creating and Using an OST Between Two Computers"
+permalink: kb/174/Q174353/
+---
+
+## Q174353: XCLN: Creating and Using an OST Between Two Computers
+
+	Article: Q174353
+	Product(s): Microsoft Exchange
+	Version(s): WINDOWS:5.5
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 23-APR-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Windows 3.x client, version 5.5 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Microsoft Exchange Client and Outlook users who use more than one workstation
+	can set up an offline storage file (OST) to share between computers. The OST is
+	usable from either system, but can only be used on one computer at a time. This
+	can be useful for the individual who works in the office at a desktop system
+	connected to the local area network (LAN) intermittently, and also works from a
+	laptop computer at a remote location connected to an RAS server intermittently
+	or not at all. The same OST file can be used for both systems, which can prevent
+	problems with synchronization of sent or received items from either computer.
+	
+	MORE INFORMATION
+	================
+	
+	To set up an OST to share between computers, follow the steps:
+	
+	1. On the first computer, install the Exchange Client or Outlook Client.
+	
+	2. Right click on the Inbox icon and select Properties.
+	
+	3. Select Add to add a new profile for the client.
+	
+	4. Follow the Exchange setup wizard to select the information services needed
+	  for this profile, and indicate the server where your account exists.
+	
+	5. Select No for the option, "Do you travel with this computer," and finish
+	  creating the profile.
+	
+	6. Next, select Properties, and highlight Microsoft Exchange Server.
+	
+	7. Select Properties on the Advanced tab, and choose Offline folder settings.
+	  The settings will default to Exchange.ost for the offline file name. This may
+	  be changed as needed.
+	
+	8. Click OK, and the new file will be created.
+	
+	9. Open the Exchange or Outlook Client and select Tools.
+	
+	10. Synchronize all folders from the Menu toolbar. You may also want to Download
+	  the Offline Address Book at this time.
+	
+	11. Exit and log off the client.
+	
+	12. Copy the OST file that you created to the second computer, which will be
+	  used remotely. Make sure that Exchange Client or Outlook Client is set up on
+	  this computer in the same manner as described above, with the Offline
+	  Storage File settings pointing to the OST file copied from the first
+	  computer.
+	
+	13. Connect to the Exchange Server computer from the remote system by opening
+	  the client and synchronizing one time. This will pass the security
+	  credentials of the individual's profile to the Exchange Server computer,
+	  allowing access to the OST on the second computer. This OST can be used in
+	  whatever manner an OST would normally be used.
+	
+	14. From the second computer, synchronize the OST before moving it to the first
+	  computer to ensure that the server copy of messages is current. Then from
+	  the first computer, the OST file can be copied to the system (overwriting
+	  the initial OST) and then opened and synchronized to send any messages or
+	  changes made to it.
+	
+	Public folders are another popular feature with offline folder users. Favorites
+	from public folders can be synchronized while online, and then used off-line in
+	the same manner as the private folders. Using this OST that has been copied from
+	one computer to another will not affect opening Favorites from public folders.
+	======================================================================
+	Keywords          :  
+	Technology        : kbExchangeSearch kbExchangeClientSearch kbZNotKeyword3
+	Version           : WINDOWS:5.5
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

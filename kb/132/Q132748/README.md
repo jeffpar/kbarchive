@@ -1,0 +1,273 @@
+---
+layout: page
+title: "Q132748: Choosing a Workstation OS: Windows 95/Windows NT Workstation"
+permalink: kb/132/Q132748/
+---
+
+## Q132748: Choosing a Workstation OS: Windows 95/Windows NT Workstation
+
+	Article: Q132748
+	Product(s): Windows for Workgroups and Windows NT Networking Issues
+	Version(s): WINDOWS:95; winnt:3.51
+	Operating System(s): 
+	Keyword(s): win95
+	Last Modified: 02-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 95 
+	- Microsoft Windows NT Workstation version 3.51 
+	-------------------------------------------------------------------------------
+	
+	
+	SUMMARY
+	=======
+	
+	Both Windows 95 and Windows NT Workstation 3.51 are designed to deliver a common
+	set of capabilities - great application support, ease of use, connectivity, and
+	manageability. Both products provide a platform for a new generation of
+	Win32-based applications that provide new features and greater performance and
+	reliability than today's Win16-based applications.
+	
+	When choosing the right operating system to deploy for your corporation, consider
+	the needs of the users:
+	
+	- Users doing mobile computing should use Windows 95 for the plug & play,
+	  power management, and the Windows 95 Briefcase feature.
+	
+	- Developers, engineers, and other technical computer users, should choose
+	  Windows NT Workstation.
+	
+	If you have the hardware to support Windows NT, and all your applications and
+	devices are supported, choose Windows NT Workstation. If you have older
+	hardware, older applications, and older devices, choose Windows 95.
+	
+	You can plan for the future by making all new hardware purchases compatible with
+	Windows NT Workstation.
+	
+	MORE INFORMATION
+	================
+	
+	Mobile Users
+	------------
+	
+	Mobile computer users need integrated features, such as electronic mail, fax, and
+	remote networking, which ease information access from whatever location. They
+	need a high level of compatibility with their current devices and applications,
+	and an operating system which places moderate demands on the system (RAM, disk
+	space, battery power) and provides Plug and Play device configuration
+	capabilities. These users should use Windows 95.
+	
+	Developers and Technical Users
+	------------------------------
+	
+	Developers, engineers, scientific researchers, statisticians, and other technical
+	users often run processing-intensive applications, while also using business
+	productivity applications. Today, many of these users must have both a
+	UNIX-based workstation and a PC on their desk to get their job done. Windows NT
+	Workstation can save costs by meeting their demands for greater processing power
+	while also running Windows-based personal and business productivity applications
+	on the same system. Windows NT Workstation provides the performance of a
+	leading-edge workstation or mini- computer at a fraction of the cost, with its
+	support for symmetric multiprocessing (SMP) and its portability to different
+	high-performance platforms like those based on Alpha AXP, PowerPC, or MIPS-based
+	CPUs.
+	
+	Business Desktop
+	----------------
+	
+	For the business desktop, examine the business problem you're trying to solve. To
+	determine if Windows NT Workstation is compatible with your existing hardware
+	and software, answer the following three questions:
+	
+	1. Do your current systems have the resources (minimum 12 MB RAM, 90 MB hard
+	  drive space) required to run Windows NT Workstation? If not, do you have the
+	  budget to upgrade these systems to run Windows NT Workstation? You should
+	  weight this cost against the extra reliability and protection features you
+	  get with Windows NT Workstation. If you can not afford to upgrade your
+	  systems today, you should deploy Windows 95.
+	
+	2. Are there Windows NT Workstation drivers for the devices you have in place,
+	  including video cards, drive controllers, proprietary 3270 devices, and
+	  network interface cards? The Windows NT Hardware Compatibility List can be
+	  used to determine if drivers are available for these devices.
+	
+	3. Are your applications compatible with Windows NT Workstation? Are you running
+	  applications that require an MS-DOS or Windows device driver or SR, and have
+	  these been ported to Windows NT Workstation?
+	
+	If the answer to each of the above questions is yes, then you should deploy
+	Windows NT Workstation. In the areas that require the higher level of
+	compatibility, you should deploy Windows 95.
+	
+	Do you need the additional application and system protection features offered by
+	Windows NT Workstation?
+	
+	In some situations, the business cost from a disruption in service caused by an
+	application bringing down another application or the system can be very high.
+	Windows NT Workstation can help minimize these costs by running Win16
+	applications in separate address space (often referred to as separate virtual
+	machines) so that if one Win16 application fails, all of the other applications
+	will continue to run. Win32-based applications running on both platforms provide
+	greater reliability through use of separate memory address areas, multiple
+	asynchronous message queues, and structured exception handling. Windows NT
+	provides an additional level of protection for the system by completely
+	separating operating system and application code. Windows NT Workstation can
+	also be configured to automatically restart if the system goes down. If the
+	value of these additional protection features offered by Windows NT Workstation
+	is greater than the value of the higher level of compatibility offered by
+	Windows 95, choose Windows NT Workstation.
+	
+	Do you require the data security features offered by Windows NT Workstation?
+	
+	Both Windows 95 and Windows NT Workstation can help prevent naive users from
+	damaging their system configuration. Beyond this, the Windows NT File System
+	(NTFS) can be configured to restrict access to systems and data. This prevents
+	malicious users from deleting system files or damaging line- of-business
+	applications. With these features, a Windows NT desktop system can even be
+	shared by multiple users and still maintain security for all files on the
+	system. In addition, Windows NT Workstation is currently in the evaluation phase
+	for the government C2 level security specification. If the value of these
+	additional security features offered by Windows NT Workstation is greater than
+	the value of the higher level of compatibility offered by Windows 95, choose
+	Windows NT Workstation.
+	
+	Overall, Windows 95 is the best choice where you need to leverage your investment
+	in your existing infrastructure by using your existing applications and devices
+	as you make a steady transition to Win32-based applications and more capable
+	hardware. In other cases where the highest levels of protection for
+	applications, system and data are required to meet your business needs, Windows
+	NT Workstation is the best choice.
+	
+	Similarities of Windows NT Workstation and Windows 95
+	-----------------------------------------------------
+	
+	The following table summarizes features that the products share. Feature
+	differences that exist today, but will be resolved in the future, are noted as
+	"Future Release".
+	
+	                                                          Windows NT
+	Product Feature                               Windows 95   Workstation
+	----------------------------------------------------------------------
+	Application Support
+	- Win32 API for application development, OLE     Yes         Yes
+	  for linking data across applications
+	- Preemptive multitasking of Win32               Yes         Yes
+	  applications
+	- Runs the majority of Win16 applications        Yes         Yes
+	- Multimedia APIs (DibEngine, Direct Draw,       Yes         Future
+	  DirectSound, Direct Input, Reality Lab 3D                  Release
+	  graphics libraries)
+	- OpenGL graphics libraries for 3D graphics      Future      Yes
+	                                                 Release
+	
+	Ease of Use
+	- Auto-detection and configuration of            Yes         Yes
+	  hardware during installation
+	- Next-generation Windows User Interface         Yes         Future
+	                                                             Release
+	- Plug and Play technology that lets you add     Yes         Future
+	  hardware automatically and dynamically                     Release
+	  reconfigure the system
+	
+	Connectivity
+	- LAN connectivity and peer-to-peer              Yes         Yes
+	  networking, with all popular protocols
+	  including TCP/IP, IPX/SPX, DLC and NetBEUI
+	- Open networking architecture provides          Yes         Yes
+	  choice of clients, transports and drivers
+	  and extensibility for support of third
+	  party networking applications
+	- Built-in Remote Access services                Yes         Yes
+	- Built-in universal inbox providing             Yes         Future
+	  email and fax                                              Release
+	- Built-in MSN online service                    Yes         Future
+	  client software                                            Release
+	
+	Manageability
+	- Open system management architecture            Yes         Yes
+	  provides infrastructure for third party
+	  system management solutions
+	- Supports existing and emerging system          Yes         Yes
+	  management standards (SNMP, DMI)
+	- System Policies to provide centralized         Yes         Future
+	  control over desktop configuration                         Release
+	- User profiles to provide consistent            Yes         Yes
+	  configuration for roving users or
+	  different  users sharing a single system
+	- Remote monitoring of system performance        Yes         Yes
+	
+	System and Peripheral Support
+	- Fully exploits 386DX, 486, and Pentium         Yes         Yes
+	  platforms
+	- Disk compression                               Yes         Yes
+	                                                 (VFAT)      (NTFS)
+	- Dynamic PCMCIA support (you don't have         Yes         Static today,
+	  to reboot system to add a device)                          Yes in Future
+	                                                             Release
+	
+	Support and Service
+	- Quick Fix Engineering teams to solve           Yes         Yes
+	  critical problems at specific sites
+	- Regular Service Pack releases to               Yes         Yes
+	  provide new drivers, component updates,
+	  and problem fixes
+	
+	Differences between Windows NT Workstation and Windows 95
+	---------------------------------------------------------
+	
+	The following table summarizes differences between the two products that
+	will continue over time.
+	
+	Product Feature                              Windows 95    Windows NT
+	                                                          Workstation
+	----------------------------------------------------------------------
+	
+	Application Support
+	- System Resource Capacity                     Greatly    Unlimited
+	                                               expanded
+	- Runs MS-DOS applications                     Yes        Most (see
+	                                                          note below)
+	- Runs IBM Presentation Manager                No         Yes
+	 (through 1.3)  & POSIX 1003.1 applications
+	
+	Application and Data Protection
+	- Preemptive multitasking for Win16            No         Yes
+	  applications
+	- System completely protected from             No         Yes
+	  errant Win16 and Win32 applications
+	- NTFS file system provides complete           No         Yes
+	  protection of files on a stand-alone
+	  system (Files, folders, and applications
+	  can be made "invisible" to specific users)
+	- Has automatic recovery from a system         No         Yes
+	  failure
+	
+	System and Peripheral Requirements and Support
+	- Runs MS-DOS device drivers                  Yes         No
+	- Runs Win16 device drivers                   Yes         No
+	- Minimum recommended RAM                     8 MB        12 MB
+	- Typical disk space requirement              40 MB       90 MB
+	- Runs on PowerPC, MIPS, and DEC Alpha        No          Yes
+	  AXP-based RISC systems
+	- Supports multi-processor configurations     No          Yes
+	  for scaleable performance without
+	  changing operating system or applications
+	
+	NOTE: Windows NT Workstation requires 12 MB RAM 486 or greater, or compatible
+	RISC-based system. Also, certain categories of applications that try to directly
+	access hardware will not work on Windows NT Workstation because they compromise
+	security or system robustness (for example, applications that try to directly
+	access hardware, some MS-DOS games requiring specialized hardware access, and
+	old MS-DOS and Windows device drivers [including VxDs]).
+	
+	Additional query words: prodnt 3.50 legacy megabytes megabyte virtual device driver microsoft network winnt vs nt windows
+	
+	======================================================================
+	Keywords          : win95 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351 kbWin95search kbZNotKeyword3
+	Version           : WINDOWS:95; winnt:3.51
+	
+	=============================================================================
+	

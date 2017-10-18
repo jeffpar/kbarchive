@@ -1,0 +1,92 @@
+---
+layout: page
+title: "Q223439: HOWTO: Using Class Wrappers to Access Windows Common Controls in"
+permalink: kb/223/Q223439/
+---
+
+## Q223439: HOWTO: Using Class Wrappers to Access Windows Common Controls in
+
+	Article: Q223439
+	Product(s): Microsoft C Compiler
+	Version(s): WINDOWS:3.0
+	Operating System(s): 
+	Keyword(s): kbsample kbATLWC kbCtrl kbATL300 kbGrpDSMFCATL
+	Last Modified: 26-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The Microsoft Active Template Library (ATL) 3.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	When accessing Windows Common Controls in an MFC dialog box, you can use the
+	thin class wrappers provided by MFC to simplify the task. Unfortunately, ATL
+	does not "officially" provide this functionality.
+	
+	Normally, this would require you to create your own classes or communicate with
+	the controls by using messages. Thankfully, there is another option. In the
+	ATLCON sample included with Visual C++, you will find ATLControls.h, which has
+	created thin wrapper classes for the Windows Standard and Common Controls. These
+	wrapper classes can be used to access controls on an ATL dialog box or ATL
+	composite control.
+	
+	Because these classes are not officially in ATL, they are only supported in the
+	context of the sample included with this article. Should you need to, it is a
+	straight-forward process to change the source code of your project's version of
+	ATLControls.h.
+	
+	MORE INFORMATION
+	================
+	
+	The first step is to copy the ATLControls.h file to your project. This can be
+	done as follows:
+	
+	1. Go to the Online help and search for "ATL Samples Index".
+	
+	2. Select the ATLCON sample.
+	
+	3. Click "Click to open or copy the ATLCON project files" link.
+	
+	4. Copy the ATLControls.h file to your project directory.
+	
+	5. In the Visual C++ Workspace window, click the FileView tab.
+	
+	6. Right-click the Header Files directory and select Add Files to Folder from
+	  the context menu.
+	
+	7. Browse to the file directory to which you copied ATLControls.h to select it.
+	
+	Note that the wrapper classes are part of the ATLControls namespace.
+	We are ready to use ATLControls.h within our project:
+	
+	  //***** Adds untested wrapper classes for Win32 common controls.
+	  //***** Used for CTabCtrl. Found in "ATLCON sample (ATL)".
+	  #include "AtlControls.h"
+	
+	  //***** AtlControls.h classes are part of the ATLControls namespace
+	  using namespace ATLControls;
+	
+	  class CForm: ... {
+	     CTabCtrl m_TabCtrl; //*****
+	
+	     LRESULT OnInitDialog(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL& bHandled) {
+	        // Give a Tab Control on the dialog with ID: IDC_TabCtrl
+	        m_TabCtrl = GetDlgItem(IDC_TabCtrl); //*****
+	
+	        // We can now use m_TabCtrl to manipulate the Tab Control.
+	        ...
+	     }
+	
+	Additional query words: CAnimateCtrl, CButton, CComboBox, CComboBoxEx, CDateTimePickerCtrl, CDragListBox, CEdit, CFlatScrollBar, CHeaderCtrl, CHotKeyCtrl, CImageList, CIPAddressCtrl, CListBox, CListViewCtrl, CMonthCalendarCtrl, CPagerCtrl, CProgressBarCtrl, CReBarCtrl, CRichEditCtrl, CScrollBar, CStatic, CStatusBarCtrl, CTabCtrl, CToolBarCtrl, CToolInfo, CToolTipCtrl, CTrackBarCtrl, CTreeItem, CTreeViewCtrl, CTreeViewCtrlEx, CUpDownCtrl.
+	
+	======================================================================
+	Keywords          : kbsample kbATLWC kbCtrl kbATL300 kbGrpDSMFCATL 
+	Technology        : kbAudDeveloper kbATLsearch kbATL300
+	Version           : WINDOWS:3.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

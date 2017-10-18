@@ -1,0 +1,211 @@
+---
+layout: page
+title: "Q82203: SMARTDrive 4.0 Design Overview"
+permalink: kb/082/Q82203/
+---
+
+## Q82203: SMARTDrive 4.0 Design Overview
+
+	Article: Q82203
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:3.1,3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 27-SEP-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows versions 3.1, 3.11 
+	- Microsoft Windows for Workgroups version 3.1 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	SMARTDrive version 4.0 is a utility included with Microsoft Windows and
+	Microsoft Windows for Workgroups.
+	
+	SMARTDrive 4.0 is designed as block-oriented disk cache. It hooks into the system
+	at the MS-DOS device driver level, rather than at the ROM BIOS INT13 level. Each
+	block device driver on the MS-DOS device driver chain is "front- ended" by
+	SMARTDrive 4.0, which provides the caching.
+	
+	SMARTDrive version 4.0 does not cache a temporary or permanent swapfile. Although
+	SMARTDrive 4.0 is designed as a block-oriented disk cache and hooks into the
+	system at the MS-DOS device driver level, SMARTDrive includes code which
+	determines whether what is being cached is part of the swapfile. If SMARTDrive
+	determines that disk access was made to access the swapfile, SMARTDrive. does
+	not cache that data.
+	
+	MORE INFORMATION
+	================
+	
+	SMARTDrive 4.0 calls the MS-DOS level device driver to perform any needed
+	physical disk I/O. This design yields the following benefits:
+	
+	1. It is independent of the INT13 interface. Many device drivers do not use the
+	  INT13 interface. This means that these devices can be cached where
+	  INT13-level caches cannot. Examples are Bernoulli drives, some hard cards,
+	  and many SCSI and WORM drives. SMARTDrive 4.0 can cache any disk controller
+	  that uses an MS-DOS block device driver.
+	
+	2. It is independent of disk geometry. Some disk managers and disk controllers
+	  use a disk-geometry mapping scheme that causes the logical geometry (that is,
+	  what MS-DOS sees) to be different from the physical geometry. Examples are
+	  many PS/2 systems, Ontrack's Disk Manager, and several disk controllers.
+	
+	  INT13-based caches are sensitive to this difference and often have problems.
+	  For example, some disk-management software actually change the ROM BIOS
+	  specified disk geometry on the fly and thus confuse INT13-based caches.
+	
+	  There usually is an interface to determine the true geometry, but this
+	  requires detection of the specific disk manager driver and generally
+	  complicates the disk cache software. Often, logical tracks actually cross
+	  physical track boundaries, which then cause track caches to incur performance
+	  penalties (inter-track seeks and rotational latencies).
+	
+	  Also, to get around the ROM BIOS 1024 cylinder limitation, disk managers and
+	  controllers "fold" multiple tracks into 1 logical track. Doing this yields
+	  the above problem as well as forcing track caches to have a very large track
+	  buffer. In some cases, this cache is as large as 31.5K and must reside in low
+	  memory. The design of SMARTDrive 4.0 eliminates the geometry mismatch
+	  problem.
+	
+	3. SMARTDrive 4.0 is also a write-behind cache. It adds significant performance
+	  improvement when files are being written. An application writes data to what
+	  it thinks is the disk. SMARTDrive takes this data and place it in a cache
+	  rather than physically writing it to the disk. This write-behind data stays
+	  in the cache until one of the following events occurs:
+	
+	   - The cache fills up. The oldest block in the cache is freed up and if it is
+	     write-behind data, it is physically written to the disk.
+	
+	   - The system goes idle. SMARTDrive writes the oldest write-behind data block
+	     to the physical disk. As long as the system is idle, it continues to write
+	     data until all the write-behind data has been written. This includes both
+	     Windows and MS-DOS applications being idle.
+	
+	     When a disk-reset operation occurs (INT21H, function 0DH), SMARTDrive
+	     writes all write-behind data to the physical disk. This is a synchronous
+	     operation -- SMARTDrive does not give up control until all data has been
+	     written. Because of this feature, disk defragmenting programs and other
+	     utilities (such as Chkdsk) do not get the benefit of write-behind caching,
+	     but this feature provides safety because this is a common way to "commit
+	     files" (that is, to make sure that all writes have been completed) under
+	     MS-DOS. A number of applications force a system reboot, and they generally
+	     issue a disk reset prior to jumping to FFFF:0.
+	
+	   - If a block is older than 5 seconds, it is written to the physical disk.
+	
+	  NOTE: SMARTDrive cannot flush its buffers when exiting Windows if you are
+	  running a version of QEMM earlier than 6.02. Earlier versions of QEMM trap
+	  the INT 2Fh shutdown broadcast. After exiting Windows in this configuration,
+	  SMARTDrive does not increase its cache size to the size prior to starting
+	  Windows, nor is the cache flushed.
+	
+	4. SMARTDrive 4.0 implements a shrink algorithm that frees memory for Windows
+	  that is similar to the one in SMARTDrive 3.x. The difference is that
+	  SMARTDrive 4.0 watches for the Windows startup broadcast while SMARTDrive 3.x
+	  provides an IOCTL interface. The net effect is identical but the SMARTDrive
+	  4.0 code is much simpler. When you exit Windows, the process is reversed and
+	  the memory is reacquired by SMARTDrive 4.0.
+	
+	Testing the Performance of SMARTDrive 4.0
+	-----------------------------------------
+	
+	1. Hard disk performance tests do not produce representative results because
+	  they often use the disk-reset function. These are designed to test the
+	  physical performance of the disk, not the disk cache. Disk defragmenting
+	  programs and other utilities that directly manipulate the disk (such as
+	  CHKDSK) also issue a disk reset to make sure that the data is really written
+	  to the disk. These does not show performance gains with write-behind caching.
+	
+	2. Cache size. SMARTDrive automatically determines a reasonable cache size based
+	  on the amount of free extended memory when it initially loads. Any tests
+	  should load SMARTDrive with the cache size specified on the command line. A
+	  small cache does not perform as well as a large cache.
+	
+	3. Windows startup speed is not a good test of SMARTDrive's performance because
+	  the shrink algorithm causes the cache to be flushed.
+	
+	Double Buffering and Bus Masters
+	--------------------------------
+	
+	Certain disk controllers support a concept called bus mastering. This is where
+	the actual disk controller takes over the bus in order to transfer data to or
+	from system RAM. Some SCSI controllers have this feature. A problem occurs when
+	running in the virtual 8086 mode that Windows 3.0 and 3.1 virtual machines
+	provide. Memory managers such as QEMM and EMM386.EXE also use virtual 8086 mode.
+	The read or write address that is passed to MS-DOS is often not the same as the
+	actual physical memory address. This can cause data to be read from the wrong
+	location or cause data to be written to the wrong address, which in turn can
+	cause erratic system behavior, general protection faults, and the system to stop
+	responding (hang).
+	
+	Microsoft created a standard called Virtual DMA Services, which provides an
+	interface that allows these bus-master controllers to get the correct address
+	and avoid the problems mentioned above. However, some older bus- master
+	controller cards do not support this standard. To allow SMARTDrive to work with
+	these older bus mastering cards, a feature has been added to SMARTDrive that
+	provides a memory buffer that has the same physical and virtual addresses. This
+	avoids the system instability problem at the cost of 2.5K of conventional memory
+	and a small amount of performance (the cost of moving the data to and from the
+	buffer.) To use this feature, place the following line in the CONFIG.SYS file:
+	
+	  DEVICE=SMARTDRV.EXE /DOUBLE_BUFFER+
+	
+	NOTE: This line does not install the cache, only the double-buffer driver; the
+	cache must be installed in the AUTOEXEC.BAT file.
+	
+	Most disk controllers do not need double buffering. This includes all MFM, RLL,
+	and IDE controllers as well as many ESDI and SCSI devices. The Windows 3.1 Setup
+	program will not install the double buffer driver in most cases. In the cases
+	where Setup is unable to determine if double buffering is needed or not, it will
+	install the driver based on the reasoning that it is better to error on the side
+	of safety.
+	
+	A feature has been added to SMARTDrive to help determine if double buffering is
+	unneeded and allow removal of the driver. Once the system is running with
+	SMARTDrive loaded, type "SMARTDRV" (without quotation marks) at the MS-DOS
+	command prompt. The following will appear:
+	
+	  Copyright 1991,1992 Microsoft Corp.
+	
+	  Cache size: 1,048,576 bytes
+	  Cache size while running Windows: 1,048,576 bytes
+	
+	               Disk Caching Status
+	
+	  drive   read cache   write cache   buffering
+	  --------------------------------------------
+	  A:       yes           no           no
+	  B:       yes           no           no
+	  C:       yes           yes          yes
+	  D:       yes           yes          -
+	
+	      Microsoft SMARTDrive Disk Cache version 4.00
+	
+	  For help, type "Smartdrv /?".
+	
+	NOTE: The double buffer driver must be loaded for SMARTDrive to determine if
+	there is a need for buffering. If the double buffer driver is not loaded, all
+	entries in the buffering column read "no."
+	
+	To determine if double buffering is required, look at the column labeled
+	buffering. For each drive that is being cached, it can have one of three values:
+	yes, no, or -. "Yes" indicates that double buffering is needed and being
+	performed; "no" indicates that buffering is not needed. "-" indicates that
+	SMARTDrive has not yet determined the necessity of double buffering.If the
+	buffering column has all "no" entries in it, the double buffer driver is
+	unneeded and can be safely removed from the CONFIG.SYS file.
+	
+	Additional query words: 3.10 3.1 SMARTDRV.EXE smart drive 3.11
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin310 kbWin311 kbWFW310
+	Version           : WINDOWS:3.1,3.11
+	
+	=============================================================================
+	

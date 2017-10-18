@@ -1,0 +1,105 @@
+---
+layout: page
+title: "Q269571: Unsigned CRL File Causes Access Violation in Inetinfo"
+permalink: kb/269/Q269571/
+---
+
+## Q269571: Unsigned CRL File Causes Access Violation in Inetinfo
+
+	Article: Q269571
+	Product(s): Internet Information Server
+	Version(s): WINDOWS:2000; winnt:4.0,5.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 08-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Server version 4.0 
+	- Microsoft Windows 2000 Server 
+	- Microsoft Internet Information Services version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When a client certificate is issued by a certificate authority, it may contain a
+	Certificate Revocation List (CRL). A CRL is a list that is maintained by a
+	Certificate Authority (CA) and records the serial numbers of certificates that
+	have been revoked.
+	
+	If the CRL file is not signed, the Inetinfo application causes an Access
+	Violation error message to occur. A Dr. Watson log similar to the following
+	occurs:
+	
+	  Application exception occurred:
+	  App: inetinfo.exe (pid=1116)
+	  When: 7/25/2000 @ 12:51:14.825
+	  Exception number: c0000005 (access violation)
+	
+	NOTE: Windows 2000 automatically restarts after this error message appears.
+	
+	CAUSE
+	=====
+	
+	This problem occurs because the CRL needs to be signed.
+	
+	RESOLUTION
+	==========
+	
+	Ask your CA to correctly sign the CRL file.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products that are
+	listed at the beginning of this article.
+	
+	MORE INFORMATION
+	================
+	
+	You can check the validity of the CRL by doing the following:
+	
+	1. In Internet Explorer, from the Tools menu, click Internet Options.
+	
+	2. On the Content tab, click the Certificates button.
+	
+	3. Double-click the client certificate.
+	
+	4. Click on the Details tab.
+	
+	5. Click CRL Distribution Points.
+	
+	6. Select the URL string.
+	
+	7. Cancel out of all of the dialog boxes.
+	
+	8. Paste the URL into the address bar.
+	
+	9. Save the CRL to your local disk.
+	
+	10. Find the Certutil.exe file in the <WINNT>\System32\Dllcache folder.
+	
+	11. Copy the CRL into the same folder.
+	
+	12. Open a command prompt in this folder.
+	
+	13. Run the following command:
+	
+	  CERTUTIL <CRL file name>
+	
+	The output of CERTUTIL will indicate "No Signature" at the end.
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbiisSearch kbiis500 kbiis400
+	Version           : WINDOWS:2000; winnt:4.0,5.0
+	Hardware          : ALPHA x86
+	Issue type        : kbprb
+	
+	=============================================================================
+	

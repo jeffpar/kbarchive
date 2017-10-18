@@ -1,0 +1,106 @@
+---
+layout: page
+title: "Q246120: How To Determine Audit Policies from the Registry"
+permalink: kb/246/Q246120/
+---
+
+## Q246120: How To Determine Audit Policies from the Registry
+
+	Article: Q246120
+	Product(s): Microsoft Windows NT
+	Version(s): winnt:4.0
+	Operating System(s): 
+	Keyword(s): kbenv
+	Last Modified: 11-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+	
+	  Q256986 Description of the Microsoft Windows Registry
+	
+	SUMMARY
+	=======
+	
+	This article describes how to determine audit settings by checking the registry.
+	
+	MORE INFORMATION
+	================
+	
+	WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+	that may require you to reinstall your operating system. Microsoft cannot
+	guarantee that you can solve problems that result from using Registry Editor
+	incorrectly. Use Registry Editor at your own risk.
+	
+	For troubleshooting purposes, it may be useful to be able to determine the audit
+	policy on a computer without using User Manager. This information is stored in
+	the registry under:
+	
+	  HKEY_LOCAL_MACHINE\Security\Policy\PolAdtEv
+	
+	NOTE: Administrators do not have access to this information by default. You must
+	change the permissions on the registry keys.
+	
+	This location contains a string of numbers, with the following format:
+	
+	  0Z2114000A0000000B0000000C0000000D0000000E0000000F0000000G00000007000000
+	
+	+----------------------------------------------------------+
+	| Value | Meaning                                          | 
+	+----------------------------------------------------------+
+	| A     | Restart, Shutdown, System                        | 
+	+----------------------------------------------------------+
+	| B     | Logons and Logoffs                               | 
+	+----------------------------------------------------------+
+	| C     | File and Object Access                           | 
+	+----------------------------------------------------------+
+	| D     | Use of User Rights                               | 
+	+----------------------------------------------------------+
+	| E     | Process Tracking                                 | 
+	+----------------------------------------------------------+
+	| F     | Security Policy Management                       | 
+	+----------------------------------------------------------+
+	| G     | User and Group Management                        | 
+	+----------------------------------------------------------+
+	| Z     | Determines if the policy is enabled or disabled. | 
+	+----------------------------------------------------------+
+	
+	If any of the values (A,B,C,D,E,F,G) are set to 1, success auditing is enabled on
+	those areas.
+	
+	If any of the values (A,B,C,D,E,F,G) are set to 2, failure auditing is enabled on
+	those areas.
+	
+	If any of the values (A,B,C,D,E,F,G) are set to 3, both success and failures are
+	audited on those areas.
+	
+	If the value of Z is 1, the policy is enabled; if it is 0, auditing is disabled.
+	
+	NOTE: You can have an audit policy (such as Audit Successful and Failed Logon
+	Attempts), but have it disabled. You may also have an enabled audit policy that
+	audits nothing.
+	
+	Examples:
+	
+	Everything is Audited:
+	
+	  012114000300000003000000030000000300000003000000030000000300000007000000
+	
+	Nothing is audited (but auditing is enabled):
+	
+	  012114000000000000000000000000000000000000000000000000000000000007000000
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbenv 
+	Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+	Version           : winnt:4.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

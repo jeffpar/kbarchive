@@ -1,0 +1,92 @@
+---
+layout: page
+title: "Q145608: PRB: Remote View of 2.x Table Changes Numeric Field Data Type"
+permalink: kb/145/Q145608/
+---
+
+## Q145608: PRB: Remote View of 2.x Table Changes Numeric Field Data Type
+
+	Article: Q145608
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:3.0,3.0b
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 05-FEB-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you create a remote view based on a FoxPro 2.x table and a numeric field is
+	present, the view will change the data type of the field to a double that
+	defaults to two decimal places.
+	
+	CAUSE
+	=====
+	
+	The field type is determined by the ODBC driver in use.
+	
+	RESOLUTION
+	==========
+	
+	Before the view is opened for a browse, issue the following command:
+	
+	     =DBSETPROP('<View_name.fieldname>','field','datatype','n(<nX>,<nY>)')
+	
+	In this example, the <View_name.fieldname> is the name of the remote view
+	and field. The <nX>, <nY> in the n parameters should be replaced
+	with the original field size followed by a comma and then the original decimal
+	places.
+	
+	STATUS
+	======
+	
+	This behavior is by design.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Problem
+	--------------------------
+	
+	1. Copy the Invoices table from FoxPro for MS-DOS 2.6 or FoxPro for Windows 2.6
+	  into your default Visual FoxPro directory.
+	
+	2. Modify a database, and create a new remote view.
+	
+	3. Select Available data sources, and choose FoxPro Files from the list.
+	
+	4. When the Open dialog box appears, choose the Invoices table.
+	
+	5. Choose your fields to display, and then run the query.
+	
+	6. You should notice that the INO field in the view now has a decimal point with
+	  two zeros.
+	
+	7. Type the following command in the command window:
+	
+	        ?DBGETPROP('remote view name.fieldname', 'field', 'datatype')
+	
+	  Notice it returns b(8,2), indicating a datatype of Double.
+	
+	8. Type the following command in the command window:
+	
+	        ?DBSSETPROP('remote view name.fieldname',  ;
+	           'field','datatype','n(4,0)')
+	
+	  This will set the data type back to its correct value.
+	
+	Additional query words: VFoxWin sql
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+	Version           : WINDOWS:3.0,3.0b
+	
+	=============================================================================
+	

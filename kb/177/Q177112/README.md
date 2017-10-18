@@ -1,0 +1,87 @@
+---
+layout: page
+title: "Q177112: Unable to Send Message to RAS Clients from RAS Admin"
+permalink: kb/177/Q177112/
+---
+
+## Q177112: Unable to Send Message to RAS Clients from RAS Admin
+
+	Article: Q177112
+	Product(s): Microsoft Windows NT
+	Version(s): WinNT:4.0
+	Operating System(s): 
+	Keyword(s): kberrmsg
+	Last Modified: 09-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 4.0 
+	- Microsoft Windows NT Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you attempt to send a message using Remote Access Admin to one or more of
+	the Remote Access Service (RAS) clients who are connected to your RAS server,
+	you may receive the following error:
+	
+	  Cannot send message to user <username> because the messenger service
+	  is not started on the remote computer or the remote computer is not
+	  capable of receiving messages.
+	
+	If your server is running Routing and Remote Access Service (RRAS) you may
+	receive the following error:
+	
+	  Messages cannot be sent to the selected client, because the messenger
+	  service is not running on the client.
+	
+	NOTE: With both cases, the Messenger Service is running on both the RAS or RRAS
+	server and the RAS client. You can also use the NET SEND command at a command
+	prompt to successfully send messages either to the remote computer or to the
+	remotely connected user.
+	
+	RESOLUTION
+	==========
+	
+	To work around this issue, you will need to use Net.exe to send messages to RAS
+	clients. For more information on using Net.exe type, the following at a command
+	prompt:
+	
+	"net /?" (without the quotation marks)
+	
+	For more information on using the NET SEND command, type the following at a
+	command prompt:
+	
+	" net send /? " (without the quotation marks)
+	
+	The following example would send a message that displays "Logoff in 5 minutes" to
+	the connected user, JoeUser:
+	
+	net send JoeUser "Logoff in 5 minutes"
+	
+	NOTE: Those options that rely on broadcast-based messages will fail. Because RAS
+	does not forward broadcast-based messages, the following Net.exe commands will
+	fail:
+	
+	- net send /DOMAIN:<domain name>
+	
+	- net send *
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Windows NT version 4.0. We are
+	researching this problem and will post new information here in the Microsoft
+	Knowledge Base as it becomes available.
+	
+	Additional query words: announcement
+	======================================================================
+	Keywords          : kberrmsg 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+	Version           : WinNT:4.0
+	Issue type        : kbbug
+	
+	=============================================================================
+	

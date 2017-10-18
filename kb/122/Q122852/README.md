@@ -1,0 +1,127 @@
+---
+layout: page
+title: "Q122852: PC Gen: Getting Statistics on Intra-postoffice Mail"
+permalink: kb/122/Q122852/
+---
+
+## Q122852: PC Gen: Getting Statistics on Intra-postoffice Mail
+
+	Article: Q122852
+	Product(s): Microsoft Mail For PC Networks
+	Version(s): WINDOWS:3.2
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 07-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Mail for PC Networks, version 3.2 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	External options (LogReceive, LogSent, and LogMessageVolume) allow a Mail
+	administrator to track the volume of mail flowing in or out of a postoffice
+	(PO). However, Mail does not have the ability to log the number of mail messages
+	or attachments generated and received within the same postoffice. Regular
+	monitoring of the CONTROL.GLB file can provide estimates.
+	
+	The CONTROL.GLB file is an 8-byte file that contains two long integers, which are
+	used for generating new, unique file names. The second integer is used primarily
+	for generating mail messages (.MAI) and attachments (.ATT) filename prefixes.
+	The change in the integer over a period of time is roughly equal to the volume
+	of .MAI and .ATT files created during the same period. This number would include
+	both mail and attachments generated within the PO, and the ones the PO received
+	through a message transfer agent (MTA).
+	
+	If a receive log is kept, the number of received messages during the time frame
+	can be subtracted from the change in the integer over the same period for a
+	rough estimate of local mail and attachment volume during the period.
+	
+	NOTE: ONLY WORK WITH A COPY OF THE CONTROL.GLB FILE. NEVER RUN DEBUG AGAINST THE
+	ACTUAL FILE.
+	
+	MORE INFORMATION
+	================
+	
+	If the Mail administrator made periodic, numbered copies of the CONTROL.GLB, the
+	administrator should be able to get a rough estimate of intra-postoffice mail
+	and attachment volume by setting up a procedure similar to the following
+	example.
+	
+	Example of Weekly Numbered Copies of CONTROL.GLB
+	------------------------------------------------
+	
+	  M:\GLB\STATS >dir
+	
+	   Volume in drive M is REG
+	   Volume Serial Number is 1B61-1104
+	   Directory of M:\GLB\STATS
+	
+	  .            <DIR>         08-15-94   9:27a
+	  ..           <DIR>         08-15-94   9:27a
+	  CONTROL  001             8 08-21-94   1:06a
+	  CONTROL  002             8 08-28-94   1:09a
+	  CONTROL  003             8 09-04-94   1:02a
+	          3 file(s)             24 bytes
+	                       208,634,368 bytes free
+	
+	Translate the last 4 bytes of each copy of CONTROL.GLB to a decimal number, and
+	calculate the change by following the steps below:
+	
+	1. View the last 4 bytes of the CONTROL.# file.
+	
+	2. Reverse the order of the 4 bytes and concatenate to form an 8 digit hex
+	  number.
+	
+	3. Convert the hex number to decimal.
+	
+	4. Subtract the integer's decimal value in the previous CONTROL.# file from the
+	  integer's decimal value in the current CONTROL.# file.
+	
+	An example of these steps follows:
+	
+	Viewing the Integer for .MAI/.ATTs for Each Numbered CONTROL.# File
+	-------------------------------------------------------------------
+	
+	  M:\GLB\STATS >debug control.001
+	  -d 104 107
+	  15B7:0100              4D 3C 2B 1A                               M<+.
+	  -q
+	
+	  M:\GLB\STATS >debug control.002
+	  -d 104 107
+	  15B7:0100              C8 2C 2C 1A                               .,,.
+	  -q
+	
+	  M:\GLB\STATS >debug control.003
+	  -d 104 107
+	  15B7:0100              29 21 2D 1A                               )!-.
+	  -q
+	
+	File Name       Last 4 Bytes    HEX Integer  Decimal         Change
+	---------------------------------------------------------------------
+	CONTROL.001 --> 4D 3C 2B 1A --> 1A2B3C4D --> 439,041,101
+	CONTROL.002 --> C8 2C 2C 1A --> 1A2C2CC8 --> 439,102,664 ==> 61,563
+	CONTROL.003 --> 29 21 2D 1A --> 1A2D2129 --> 439,165,225 ==> 62,561
+	
+	NOTE: The calculator that comes with Microsoft Windows can convert between hex
+	and decimal numbers if you switch the view to scientific.
+	
+	The value in the change column above represents the number of new message and
+	attachment files that were created during the period being tracked. If you keep
+	a log of all received mail, you can then subtract the number of messages in the
+	RECV.LOG during the same period for a estimate of local mail and attachment
+	volume.
+	
+	Additional query words: 3.20
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320
+	Version           : WINDOWS:3.2
+	
+	=============================================================================
+	

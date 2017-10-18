@@ -1,0 +1,734 @@
+---
+layout: page
+title: "Q249180: Desktop Applications with Microsoft Visual C++ 6.0 MCSD Training"
+permalink: kb/249/Q249180/
+---
+
+## Q249180: Desktop Applications with Microsoft Visual C++ 6.0 MCSD Training
+
+	Article: Q249180
+	Product(s): Microsoft Press
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbdocfix kbdocerr
+	Last Modified: 23-JAN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- MSPRESS Desktop Applications with Microsoft Visual C++ 6.0 MCSD Training Kit ISBN 0-7356-0795-8 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article contains comments, corrections, and information about known errors
+	relating to the Microsoft Press book Desktop Applications with Microsoft Visual
+	C++ 6.0 MCSD Training Kit, ISBN 0-7356-0795-8.
+	
+	The following topics are covered:
+	
+	- Page xxxii: Download URL For PWS Invalid
+	
+	- Page 25: Half-Megabyte Should Be 5805 KB
+	
+	- Page 69: Step 10 Correction
+	
+	- Page 78: Typo in Third Bulleted Item
+	
+	- Page 106: Typo in Table 3.7
+	
+	- Page 124: Change "Import" to "Connect" In Step 6
+	
+	- Page 131: Change The Title Of Table 4.1
+	
+	- Page 143: Corrections To Procedure
+	
+	- Page 143: Change IDC_CHECKCONTROL To IDC_CHECKCONNECT
+	
+	- Page 145: Use "Connect" in place of "Continue" and "Conflict"
+	
+	- Page 147: Function Names Incorrect
+	
+	- Page 154: Step 8 Should Refer To The No Button
+	
+	- Page 157: CSTUpload Should Be CSTUploadDoc
+	
+	- Page 158: Quotation Mark Missing in Code
+	
+	- Page 173: Change CListBox to CEdit
+	
+	- Page 175: Corrections To Code That Disables The Connect Button
+	
+	- Page 178: CDialog Should be CPropertySheet
+	
+	- Page 187: Misspelled Parameter
+	
+	- Page 200: Ctimer Should Be CTimer
+	
+	- Page 202: Incorrect Variable Name
+	
+	- Page 229: Correction To Step 4
+	
+	- Page 230: Correction To Step 1 To Implement The Function
+	
+	- Page 233: Steps Should Refer To CSTUploadDoc Not CDocument
+	
+	- Page 236: Sample Code Is Found In CH5_06.cpp
+	
+	- Page 247: strPath Needs Quotation Marks Around Path
+	
+	- Page 251: Change "writing to" To "reading from"
+	
+	- Page 256: Change CtestAppDoc to CTestAppDoc In Code Sample
+	
+	- Page 258: Change Both Instances Of CMyApp To CMyAppDoc
+	
+	- Pages 309 & 322: Incorrect Case In "forwardOnly" Parameter
+	
+	- Page 330: CViewDBDialog Should Be CViewDBDlg
+	
+	- Page 330: Last Two Variable Names In Table Are Reversed
+	
+	- Page 334: Incorrect Variable Name & Resource ID In Table
+	
+	- Page 338 & 339: ID_QUERY_DATABASE Should Be ID_DATA_QUERYDATABASE
+	
+	- Page 389: IEncoder Is Missing a Cap
+	
+	- Page 401: Idispatch Should Be IDispatch
+	
+	- Page 404: Iunknown Should Be IUnknown
+	
+	- Page 410: Step 4 EncodeServer\Debug Should Read EncodeHello\Debug
+	
+	- Page 421: STLink.udl Is Not In The Location The Code Points To
+	
+	- Page 427: Code In CH10_04.CPP Is For Step 7 Not Step 5
+	
+	- Page 441: Incorrect File Name
+	
+	- Page 444: Change ClassWizard To ClassView
+	
+	- Page 456: NumberOfProperties Should be NumberOfSymbols In Last Paragraph
+	
+	- Page 481: Change TitlePage To MyPage
+	
+	- Page 545: The Verify Macro Will Evaluate Regardless Of Build Configuration
+	
+	MORE INFORMATION
+	================
+	
+	Page xxxii: Download URL For PWS Invalid
+	----------------------------------------
+	
+	On page xxxii the link to download Personal Web Server is listed as
+	www.microsoft.com/windows/ie/pws/default.htm. This URL is no longer valid.
+	
+	Personal Web Server for Windows 98 is included on the Microsoft Windows 98 CD-ROM
+	in the "\add-ons\pws" folder, and you can also download it from:
+	
+	http://www.microsoft.com/ntserver/nts/downloads/recommended/NT4OptPk/default.asp
+	(http://www.microsoft.com/ntserver/nts/downloads/recommended/NT4OptPk/default.asp)
+	
+	and
+	http://www.microsoft.com/msdownload/ntoptionpack/askwiz.asp
+	(http://www.microsoft.com/msdownload/ntoptionpack/askwiz.asp)
+	
+	
+	Page 25: Half-Megabyte Should Be 5805 KB
+	----------------------------------------
+	
+	On page 25, the second paragraph states that the CRT source code requires 5805
+	KB. The next paragraph states that the CRT library source code takes a
+	half-megabyte.
+	
+	Change the third paragraph from:
+	"If you would like to have the CRT library source code available, and you can
+	spare the half-megabyte of disk space that this option requires..."
+	
+	To:
+	"If you would like to have the CRT library source code available, and you can
+	spare the 5805 KB of disk space that this option requires..."
+	
+	
+	Page 69: Step 10 Correction
+	---------------------------
+	
+	On page 69, in Step 10, delete the second sentence.
+	
+	"Click Close to close the Advanced Options dialog box."
+	
+	
+	Page 78: Typo in Third Bulleted Item
+	------------------------------------
+	
+	On page 78, in the 3rd bulleted item, the quotation marks around _tcscat are
+	misplaced.
+	
+	Change:
+	_"tcscat"
+	
+	To:
+	"_tcscat"
+	
+	
+	Page 106: Typo in Table 3.7
+	---------------------------
+	
+	On page 106, in Table 3.7, change the capitalization in "CMetafileDC" to
+	"CMetaFileDC".
+	
+	
+	Page 124: Change "Import" to "Connect" In Step 6
+	------------------------------------------------
+	
+	On page 124, in step 6, change the second sentence as follows:
+	
+	Change:
+	"The dialog box for the Import command should now look as it does in Figure
+	4.5."
+	
+	To:
+	"The dialog box for the Connect command should now look as it does in Figure
+	4.5."
+	
+	
+	Page 131: Change The Title Of Table 4.1
+	---------------------------------------
+	
+	On page 131, change the title of Table 4.1 from:
+	"Table 4.1 CCmd UT Member Functions"
+	
+	To:
+	"Table 4.1 CCmdUI Member Functions"
+	
+	
+	Page 143: Corrections To Procedure
+	----------------------------------
+	
+	On page 143, in the "To Add A Check Box Control To The Dialog Box" subheading,
+	make the following corrections.
+	
+	In step 2, in the first sentence change:
+	"With the crosshair pointer, draw a check box control beneath the read-only edit
+	control, as shown in Figure 4.12."
+	
+	To:
+	"With the crosshair pointer, draw a check box control beneath the Access Level
+	input box, as shown in Figure 4.12."
+	
+	In step 6, change:
+	"In the Caption box, type Attempt to connect at application & startup."
+	
+	To:
+	"In the Caption box, type Attempt to connect at application &startup."
+	
+	
+	Page 143: Change IDC_CHECKCONTROL To IDC_CHECKCONNECT
+	-----------------------------------------------------
+	
+	On page 143, in step 5, under "To add a check box control to the dialog box," the
+	control ID should be IDC_CHECKCONNECT to work with step 12 on page 164 when you
+	add DDX member variables.
+	
+	On page 143 change:
+	"5. On the General tab, change the control ID by typing IDC_CHECKCONTROL in the
+	ID box."
+	
+	To:
+	"5. On the General tab, change the control ID by typing IDC_CHECKCONNECT in the
+	ID box."
+	
+	
+	Page 145: Use "Connect" in place of "Continue" and "Conflict"
+	-------------------------------------------------------------
+	
+	On page 145, in the "To Test The Dialog Box" subheading, correct the last
+	sentence in step 2.
+	
+	Change:
+	"Try selecting the different sample commands in the list box, and then try
+	closing the dialog box with the Continue or Cancel button."
+	
+	To:
+	"Try selecting the different sample commands in the list box, and then try
+	closing the dialog box with the Connect or Cancel button."
+	
+	Also, toward the bottom of the page change the subheading:
+	"To create the CConflictDialog class"
+	
+	To:
+	"To create the CConnectDialog class".
+	
+	
+	Page 147: Function Names Incorrect
+	----------------------------------
+	
+	On page 147, change the "To Display The Connect To Data Source Dialog Box"
+	procedure as follows.
+	
+	Change step 2 from:
+	"Double-click the OnUpdateConnect() function icon..."
+	
+	To:
+	"Double-click the OnUpdataDataConnect() function icon..."
+	
+	Change step 4 from:
+	"Locate the OnConnect() handler function..."
+	
+	To:
+	"Locate the OnDataConnect() handler function..."
+	
+	
+	Page 154: Step 8 Should Refer To The No Button
+	----------------------------------------------
+	
+	On page 154, step 8 should refer to the "No" button rather than the "Cancel"
+	button.
+	
+	Change:
+	"Copy the Cancel button to create a new button."
+	
+	To:
+	"Copy the No button to create a new button."
+	
+	
+	Page 157: CSTUpload Should Be CSTUploadDoc
+	------------------------------------------
+	
+	On page 157, in step 2 under "To create the Import command handler function":
+	
+	Change:
+	"2. In the Class Name list, click CSTUpload."
+	
+	To:
+	"2. In the Class Name list, click CSTUploadDoc."
+	
+	
+	Page 158: Quotation Mark Missing in Code
+	----------------------------------------
+	
+	On page 158, in step 3, there should be a quotation mark between the equal sign
+	and the word Data.
+	
+	Change:
+	CString strFilter = Data files (*.dat) | *.dat | All Files (*.*) | *.* | |";
+	
+	To:
+	CString strFilter = "Data files (*.dat) | *.dat | All Files (*.*) | *.* | |";
+	
+	
+	Page 173: Change CListBox to CEdit
+	----------------------------------
+	
+	On page 173, at the bottom of the page, CListBox should be changed to CEdit.
+	
+	The bulleted item will then read:
+	"To add a CEdit member variable"
+	
+	
+	Page 175: Corrections To Code That Disables The Connect Button
+	--------------------------------------------------------------
+	
+	On page 175, the code in step 5 does not disable the Connect button when the
+	dialog box is first displayed. The following code will resolve the problem:
+	
+	  char tempbuf[8];
+	  m_bnConnect.EnableWindow(FALSE);
+	  if(m_lbDSN.GetCurSel() != LB_ERR)
+	  {
+	  	if(m_editUserID.GetWindowText(tempbuf, 7))
+	  		m_bnConnect.EnableWindow(TRUE);
+	  }
+	
+	
+	Page 178: CDialog Should be CPropertySheet
+	------------------------------------------
+	
+	On page 178, in step 6, CDialog should be changed to CPropertySheet.
+	
+	Change:
+	"Create a modal property sheet with the CDialog::DoModal( ) function, or a
+	modeless property sheet with the CDialog::Create( ) function."
+	
+	To:
+	"Create a modal property sheet with the CPropertySheet::DoModal( ) function, or a
+	modeless property sheet with the CPropertySheet::Create( ) function."
+	
+	
+	Page 187: Misspelled Parameter
+	------------------------------
+	
+	On page 187, in the first paragraph following code, in the first sentence:
+	
+	Change:
+	"The LOGPIXELSX and LOGPIXELSXY parameters to the GetDeviceCaps()..."
+	
+	To:
+	"The LOGPIXELSX and LOGPIXELSY parameters to the GetDeviceCaps()..."
+	
+	
+	Page 200: Ctimer Should Be CTimer
+	---------------------------------
+	
+	On page 200, in the code in step 2, change "class Ctimer" to "class CTimer".
+	
+	
+	Page 202: Incorrect Variable Name
+	---------------------------------
+	
+	On page 202, in the "To Create The CTimerDialog Class" subheading, in Step 2,
+	there is an incorrect variable in the second sentence.
+	
+	Change:
+	"This should be a variable of type CTime and be named m_settime."
+	
+	To:
+	"This should be a variable of type CTime and be named m_time."
+	
+	
+	Page 229: Correction To Step 4
+	------------------------------
+	
+	On page 229, in the second step 4,
+	
+	Change:
+	"4. Add the following line of code to the top of the MainFrm.cpp file:"
+	
+	To:
+	"4. Add the following line of code to the top of the MainFrm.cpp file after the
+	'#inlcude STUpload.h' statement:"
+	
+	
+	Page 230: Correction To Step 1 To Implement The Function
+	--------------------------------------------------------
+	
+	On page 230, in step 1, under the section for implementing the function, you will
+	need to open the MainFrm.h file.
+	
+	Change:
+	"In File View, expand the Header Files folder and double-click the CMainFrm.h
+	file icon to open the file."
+	
+	To:
+	"In File View, expand the Header Files folder and double-click the MainFrm.h file
+	icon to open the file."
+	
+	
+	Page 233: Steps Should Refer To CSTUploadDoc Not CDocument
+	----------------------------------------------------------
+	
+	On page 233, in the steps outlined at the bottom of the page, every "CDocument"
+	should be replaced by "CSTUploadDoc".
+	
+	Under "To add the CDocument::m_strCurrentFund member" change:
+	"Right-click the CDocument icon in Class View and add a protected member
+	variable..."
+	
+	To:
+	"Right-click the CSTUploadDoc icon in Class View and add a protected member
+	variable..."
+	
+	Under "To create accessory functions for the m_strCurrentFund member variable"
+	change:
+	"Add the following lines of code to the public section of the CDocument class
+	declaration:"
+	
+	To:
+	"Add the following lines of code to the public section of the CSTUploadDoc class
+	declaration:"
+	
+	
+	Page 236: Sample Code Is Found In CH5_06.cpp
+	--------------------------------------------
+	
+	On page 236, in the line just above the 2nd piece of code, change "CH5_15.cpp" to
+	"CH5_06.cpp", so the statement reads as follows:
+	
+	"This code can be found in CH5_06.cpp, installed from the companion CD."
+	
+	
+	Page 247: strPath Needs Quotation Marks Around Path
+	---------------------------------------------------
+	
+	On page 247, change the code in the middle of the page so the path is enclosed in
+	quotation marks.
+	
+	Change:
+	CString strPath = C:\\Program Files\\MyApp\\MyFile.bin;
+	
+	To:
+	CString strPath = "C:\\Program Files\\MyApp\\MyFile.bin";
+	
+	
+	Page 251: Change "writing to" To "reading from"
+	-----------------------------------------------
+	
+	On page 251, in the fifth paragraph, change "writing to" to "reading from" as
+	follows:
+	
+	Change:
+	"When writing to a text mode file, use the ReadString( ) function, which is
+	similar to Read( ) except that:"
+	
+	To:
+	"When reading from a text mode file, use the ReadString( ) function, which is
+	similar to Read( ) except that:"
+	
+	
+	Page 256: Change CtestAppDoc to CTestAppDoc In Code Sample
+	----------------------------------------------------------
+	
+	In the code sample on page 256, change CtestAppDoc to CTestAppDoc in the first
+	line of code.
+	
+	
+	Page 258: Change Both Instances Of CMyApp To CMyAppDoc
+	------------------------------------------------------
+	
+	On page 258, in Step 1, change both instances of "CMyApp" to "CMyAppDoc".
+	
+	
+	Pages 309 & 322: Incorrect Case In "forwardOnly" Parameter
+	----------------------------------------------------------
+	
+	In Table 7.3 on page 309 and on page 322, the parameter "forwardOnly" was
+	incorrectly printed as "forwardonly".
+	
+	In Table 7.3 on page 309, change:
+	"CRecordset::forwardonly"
+	
+	To:
+	"CRecordset::forwardOnly"
+	
+	In the second bullet item on page 322, change:
+	"forwardonly"
+	
+	To:
+	"forwardOnly"
+	
+	
+	Page 330: CViewDBDialog Should Be CViewDBDlg
+	--------------------------------------------
+	
+	Step 2 on page 330 contains an error.
+	
+	Change:
+	"CViewDBDialog"
+	
+	To:
+	"CViewDBDlg"
+	
+	
+	Page 330: Last Two Variable Names In Table Are Reversed
+	-------------------------------------------------------
+	
+	On Page 330, in Table 7.4 the last two variable names are reversed.
+	
+	The corrected table should look like this:
+	
+	Resource ID        Category      Variable type     Variable name
+	------------------------------------------------------------------------
+	IDC_ADODC1         Control       CAdodc            m_adodc
+	IDC_DATAGRID1      Control       CDataGird         m_datagird
+	IDC_ORDERLIST      Value         CString           m_strOrder
+	IDC_ORDERLIST      Control       CListBox          m_lbOrder
+	
+	
+	Page 334: Incorrect Variable Name & Resource ID In Table
+	--------------------------------------------------------
+	
+	On page 334, in Table 7.5, IDC_FUND should be IDC_QUERY_FUND on both lines, and
+	the variable name m_dtFund should be m_cbFund.
+	
+	The first two entries in the table should look like this:
+	
+	Resource ID        Category      Variable type     Variable name
+	------------------------------------------------------------------
+	IDC_QUERY_FUND     Value         int               m_nFund
+	IDC_QUERY_FUND     Control       CComboBox         m_cbFund
+	
+	
+	Page 338 & 339: ID_QUERY_DATABASE Should Be ID_DATA_QUERYDATABASE
+	-----------------------------------------------------------------
+	
+	On page 338 and 339, both references to "ID_QUERY_DATABASE" should be changed to
+	"ID_DATA_QUERYDATABASE".
+	
+	On page 338, step 2 should read:
+	"Use ClassWizard to add a command handler for the ID_DATA_QUERYDATABASE ID to the
+	CSTUploadDoc class."
+	
+	On page 339, step 1 should read:
+	"Use ClassWizard to add an UPDATE_COMMAND_UI handler for the
+	ID_DATA_QUERYDATABASE ID to the CSTUploadDoc class."
+	
+	
+	Page 389: IEncoder Is Missing a Cap
+	-----------------------------------
+	
+	On page 389, in the code block at the end of the page, in the 4th line, "public
+	Iencoder" should be replaced with "public IEncoder".
+	
+	
+	Page 401: Idispatch Should Be IDispatch
+	---------------------------------------
+	
+	On page 401, in the code at the bottom of the page, change Idispatch to
+	IDispatch.
+	
+	
+	Page 404: Iunknown Should Be IUnknown
+	-------------------------------------
+	
+	On page 404, at the bottom of the page, change Iunknown to IUknown.
+	
+	The last line of type on the page should be:
+	
+	  IEncoder : public IUknown<BR/>
+	
+	
+	Page 410: Step 4 EncodeServer\Debug Should Read EncodeHello\Debug
+	-----------------------------------------------------------------
+	
+	On page 410, in step 4 change EncodeServer\Debug to EncodeHello\Debug.
+	
+	Step 4 should read as follows:
+	"When the compilation is complete, locate the files EncodeServer.tlh and
+	EncodeServer.tli in the EncodeHello\Debug folder."
+	
+	
+	Page 421: STLink.udl Is Not In The Location The Code Points To
+	--------------------------------------------------------------
+	
+	On page 421, Lab 10 instructs you to create a folder and file
+	C:\DataLinks\STLink.udl
+	
+	In the sample code shown on page 424, the following code is used to refer to this
+	file:
+	
+	  File Name=C:\\STLink.UDL
+	
+	If the code is executed, the file will not be found and you may receive an error
+	message.
+	
+	You can either change the location of the file to C:\STLink.UDL or change the
+	code to C:\\DataLinks\\STLink.udl. Either method will fix the problem.
+	
+	
+	Page 427: Code In CH10_04.CPP Is For Step 7 Not Step 5
+	------------------------------------------------------
+	
+	On page 427, the reference to the file CH10_04.cpp shouldn't be in step 5. It
+	should be in step 7. This file contains the code for the
+	CSTUploadDoc::OnDataUpload() function only.
+	
+	Delete the following sentence from step 5 and place it under the first sentence
+	in step 7.
+	
+	"(This code can be found in CH10_04.cpp, installed from the companion CD.)"
+	
+	
+	Page 441 & 442 : Incorrect File Name
+	------------------------------------
+	
+	On page 441, in the second line change:
+	"OneArmedBandit.cpp"
+	
+	To:
+	"OneArmedBanditCtrl.cpp"
+	
+	This file name is also used on page 442, in the last sentence of the first
+	paragraph on Stock Property Pages and should also be changed as outlined above.
+	
+	
+	Page 444: Change ClassWizard To ClassView
+	-----------------------------------------
+	
+	On page 444 in step 1, change ClassWizard to ClassView.
+	
+	Step 1 should read:
+	"In ClassView, right-click the COneArmedBanditCtrl class."
+	
+	
+	Page 456: NumberOfProperties Should be NumberOfSymbols In Last Paragraph
+	------------------------------------------------------------------------
+	
+	On page 256, in the last paragraph, NumberOfProperties should be changed to
+	NumberOfSymbols.
+	
+	Change:
+	"This function sets the control's NumberOfProperties property with the integer
+	value..."
+	
+	To:
+	"This function sets the control's NumberOfSymbols property with the integer
+	value..."
+	
+	
+	Page 481: Change TitlePage To MyPage
+	------------------------------------
+	
+	On page 481, in steps 1 and 2 at the bottom of the page, all instances of
+	TitlePage should be changed to MyPage.
+	
+	In Step 1, change:
+	LoadFromResource(IDR_TITLEPAGE);
+	
+	To:
+	LoadFromResource(IDR_MYPAGE);
+	
+	In Step 2, change:
+	"Build and run the MyHtmlApp application. Check that the IDR_TITLEPAGE HTML
+	resource displays as expected.
+	
+	Note that what you are seeing is a compiled version of the TitlePage.htm file.
+	This means that any changes you make to the HTML code in the TitlePage.htm..."
+	
+	To:
+	"Build and run the MyHtmlApp application. Check that the IDR_MYPAGE HTML resource
+	displays as expected.
+	
+	Note that what you are seeing is a compiled version of the MyPage.htm file. This
+	means that any changes you make to the HTML code in the MyPage.htm..."
+	
+	
+	Page 545: The VERIFY Macro Will Evaluate Regardless Of Build Configuration
+	--------------------------------------------------------------------------
+	
+	On page 545, the first sentence states that if you prefer to leave a check in
+	place for both debug and release builds you can use the VERIFY macro. This is
+	incorrect. In release versions, VERIFY evaluates the expression argument but
+	does not check the result.
+	
+	If you want the expression to be evaluated in both debug and release versions,
+	you can use the VERIFY macro instead of the ASSERT macro. In debug versions,
+	VERIFY is the same as ASSERT. However, ASSERT will not evaluate expressions in
+	the release version.
+	
+	Change:
+	"If you prefer to leave a check in place for both debug and release builds, use
+	the VERIFY macro instead, which functions regardless of the build
+	configuration."
+	
+	To:
+	"If you want to evaluate the expression in both debug and release builds, use the
+	VERIFY macro instead, which evaluates regardless of the build configuration."
+	
+	
+	Microsoft Press is committed to providing informative and accurate books. All
+	comments and corrections listed above are ready for inclusion in future
+	printings of this book. If you have a later printing of this book, it may
+	already contain most or all of the above corrections.
+	
+	Additional query words: TKBOOK ITBOOK DEVBOOK VSTUDIO VC 0-7356-0795-8
+	
+	======================================================================
+	Keywords          : kbdocfix kbdocerr 
+	Technology        : kbMSPressSearch
+	Version           : :
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

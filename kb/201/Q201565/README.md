@@ -1,0 +1,124 @@
+---
+layout: page
+title: "Q201565: PRB: Visual Basic Read-only .exp/.lib Files Cause Compile Error"
+permalink: kb/201/Q201565/
+---
+
+## Q201565: PRB: Visual Basic Read-only .exp/.lib Files Cause Compile Error
+
+	Article: Q201565
+	Product(s): Microsoft SourceSafe
+	Version(s): WINDOWS:5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbSSafe kbVBp500 kbVBp600
+	Last Modified: 01-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual SourceSafe for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When compiling an ActiveX component, you might see the following error message:
+	
+	  Unexpected error occurred in code generator or linker. --View error messages?
+	
+	If you click Yes, messages similar to the following might appear:
+	
+	  <project name>.OBJ : warning LNK4104: export of
+	  symbol"DllUnregisterServer" should be PRIVATE
+	  <project name>.OBJ : warning LNK4104: export of symbol
+	  "DllGetClassObject" should be PRIVATE
+	  <project name>.OBJ : warning LNK4104: export of symbol
+	  "DllRegisterServer" should be PRIVATE
+	  <project name>.OBJ : warning LNK4104: export of symbol "DllCanUnloadNow"
+	  should be PRIVATE
+	  Creating library <path to .lib file> and object <path to .exp
+	  file>
+	  LINK : fatal error LNK1104: cannot open file "<path to .lib file>"
+	  LINK : fatal error LNK1141: failure during build of exports file
+	
+	NOTE: These warnings might vary or not appear at all.
+	
+	CAUSE
+	=====
+	
+	The <project name>.exp and/or <project name>.lib files in the
+	project directory are read-only.
+	
+	RESOLUTION
+	==========
+	
+	Change the read-only attribute to read/write.
+	
+	STATUS
+	======
+	
+	This behavior is by design.
+	
+	MORE INFORMATION
+	================
+	
+	The Export file (.exp) and Import Library file (.lib) are created in a Visual
+	Basic project directory when, for example, you compile a component project.
+	These files are actually Visual C++ files. Their purpose is explained in greater
+	detail in Visual C++ Help files.
+	
+	One typical scenario in which these files might unexpectedly become read-only is
+	if they are manually added to source control through the Visual SourceSafe
+	Explorer. Unchecked out files in Visual SourceSafe are marked read-only.
+	Microsoft recommends that you not place these types of files under source
+	control. And, if you have such files currently under source control, you should
+	remove them.
+	
+	NOTE: This problem is not specific to Visual SourceSafe. Simply changing the
+	file's attribute manually, or by any other process, to read-only would be
+	sufficient to reproduce this behavior.
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Create an ActiveX DLL project and save it.
+	
+	2. Compile the project. (This step creates the .lib and .exp files.)
+	
+	3. Next, from project's compile directory in Windows Explorer, right-click
+	  either the .lib or .exp file and select Properties to change the file's
+	  attribute to read-only.
+	
+	4. Compile the project again to the same directory as used in Step 2.
+	
+	REFERENCES
+	==========
+	
+	For additional information, please see the following articles in the Microsoft
+	Knowledge Base:
+	
+	  Q156513 INFO: Which Visual C++ Files to Add to Source-Code Control
+	
+	  Q132340 INFO: Common File Extensions Used by Visual C++
+	
+	  Q166470 PRB: LINK Fatal Error LNK1104 Cannot Open File
+	
+	  Q193089 PRB: Unexpected Error Occurs in Code Generator or Linker
+	
+	  Q166275 HOWTO: Debug a Native Code Visual Basic Component in VC++
+	
+	For details about .exp files and import libraries, see "Working with Import
+	Libraries and Export Files" in Visual C++ Help.
+	
+	Additional query words: kbDSupport export
+	
+	======================================================================
+	Keywords          : kbSSafe kbVBp500 kbVBp600 
+	Technology        : kbVBSearch kbSSafeSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600 kbSSafe600 kbSSafe500
+	Version           : WINDOWS:5.0,6.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

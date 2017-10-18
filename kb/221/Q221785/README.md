@@ -1,0 +1,95 @@
+---
+layout: page
+title: "Q221785: Encarta: Error Messages Displayed While Setup Updates Computer"
+permalink: kb/221/Q221785/
+---
+
+## Q221785: Encarta: Error Messages Displayed While Setup Updates Computer
+
+	Article: Q221785
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): WINDOWS:1.0
+	Operating System(s): 
+	Keyword(s): kbenv kberrmsg kbsetup kbimu
+	Last Modified: 09-MAY-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Encarta Encyclopedia 99 
+	- Microsoft Encarta Reference Suite 99 
+	- Microsoft Encarta Virtual Globe 99, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you install any of the programs listed at the beginning of this article,
+	the following message is displayed on the screen:
+	
+	  Please wait while Setup updates your computer...
+	
+	While this message is displayed on the screen, you may receive one of the
+	following error messages:
+	
+	Microsoft Encarta Encyclopedia 99
+	---------------------------------
+	
+	  Microsoft Visual C++ Runtime Library
+	
+	  Runtime Error!
+	  Program: E:\EE\SETUP.EXE
+	  Abnormal Program Termination
+	
+	Microsoft Encarta Reference Suite 99
+	------------------------------------
+	
+	  Encarta Reference Suite 99 Setup Complete
+	
+	  One or more errors were encountered during Setup. Setup did not complete
+	  sucessfully.
+	
+	Microsoft Encarta Virtual Globe 99
+	----------------------------------
+	
+	  Microsoft Visual C++ Runtime Library
+	
+	  Runtime Error!
+	  Program: E:\EVG\SETUP.EXE
+	  Abnormal Program Termination
+	
+	CAUSE
+	=====
+	
+	This behavior can occur if the System.ini file has been marked with the
+	Read-only attribute.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, follow these steps:
+	
+	1. Click Start, point to Find, and then click Files Or Folders.
+	
+	2. In the Named box, type "system.ini" (without the quotation marks) and then
+	  click Find Now.
+	
+	3. Right-click the System.ini file located in the Windows folder, and then click
+	  Properties.
+	
+	4. Click to clear the Read-only check box, and then click OK.
+	
+	5. Close the Find: Files Named System.ini window, and then restart your
+	  computer.
+	
+	
+	Additional query words: 1.00 multi multi-media media mm enc99 evg99
+	
+	======================================================================
+	Keywords          : kbenv kberrmsg kbsetup kbimu 
+	Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1999 kbEncartaReference99 kbEncartaVirtGlobe99
+	Version           : WINDOWS:1.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

@@ -1,0 +1,208 @@
+---
+layout: page
+title: "Q118621: PC DirSync: Commonly Asked Questions"
+permalink: kb/118/Q118621/
+---
+
+## Q118621: PC DirSync: Commonly Asked Questions
+
+	Article: Q118621
+	Product(s): Microsoft Mail For PC Networks
+	Version(s): 3.2,3.2a,3.5
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 28-JAN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Mail for PC Networks, versions 3.2, 3.2a, 3.5 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article answers some commonly asked questions regarding directory
+	synchronization (Dir-Sync).
+	
+	MORE INFORMATION
+	================
+	
+	Questions and Answers
+	---------------------
+	
+	1. When I create a user and exclude the user from Dir-Sync , the user's name
+	  still appears on the Global Address List (GAL) on that postoffice. Why? This
+	  is expected behavior. When a user is excluded from Dir-Sync, the user's
+	  address will not be propagated to other postoffices. However, the user will
+	  be visible to users on the postoffice that the user belongs to and will show
+	  up in the GAL on that postoffice.
+	
+	2. Can I have more than one Dir-Sync server? No. Requestors can be registered
+	  with only one Dir-Sync server. Also, the Dir-Sync server cannot be registered
+	  as a requestor with another Dir-Sync server.
+	
+	3. When I change the template file ADMIN.TPL, the updated template is not
+	  distributed to other postoffices. Why? When you change the template file
+	  ADMIN.TPL that contains the template definition, you must select Config,
+	  Dir-Sync, Requestor, Export command to distribute the updated template file
+	  to all postoffices.
+	
+	4. Is a Config, Dir-Sync, Requestor, Export required when the template
+	  information stored in ADMIN.INF is modified through the Admin program or the
+	  Import process? No. Changes to ADMIN.INF are automatically distributed. For
+	  more information, please refer to page 160 of the version 3.2
+	  "Administrator's Guide."
+	
+	5. Gateway addresses processed through Import are not being distributed to other
+	  postoffices. Why? For gateway addresses to propagate to all the postoffices
+	  participating in Dir-Sync, you should use Import with the -e option. Changes
+	  made through Admin or Import (without -e option) will not be distributed to
+	  other postoffices.
+	
+	6. What if I have already imported the gateway addresses using Import without
+	  the -e option? You can use Import with the -x option to extract the
+	  addresses, and then use Import with -e option to get them into the Dir-Sync
+	  stream (REQTRANS.GLB).
+	
+	7. Can extended information (templates) be imported for all gateway types? No.
+	  Extended information can be added only to gateways that conform to the
+	  10/10/10 addressing.
+	
+	
+	1. Dir-Sync appears to run without a hitch. However the number of entries in the
+	  GAL of each postoffice is different. Why? Variation in the number of entries
+	  in the GAL on each postoffice by itself is no cause for concern. Some
+	  possibilities are:
+	
+	  a. Users excluded from Dir-Sync will be included in the GAL of the home
+	     postoffice but will not show up on the GAL of other postoffices.
+	
+	  b. Not all postoffices may be requesting all types of addresses (for example,
+	     gateway addresses). This choice is available under Config, Dir- Sync,
+	     Requestor, Options, Types.
+	
+	  c. Groups containing external users will not be propagated to other
+	     postoffices.
+	
+	2. In the Windows client, when the GAL is the default address list, the Check
+	  names function returns an error although the address exists in the Global
+	  Address List. Why? A GAL rebuild problem manifests itself in the form of a
+	  Check names problem in the Windows client. There were some problems with
+	  Rebuild version 3.0.x that were fixed with Rebuild version 3.2.x.
+	
+	3. Is there an easy way to monitor the success of the Dir-Sync process other
+	  than checking the logs on each postoffice and checking the sync numbers? Yes,
+	  on each postoffice, the administrator can add a user with a full name that
+	  reflects the current date, the network, and postoffice name (for example,
+	  Jul21 Network Postoffice). The administrator needs to modify the full name
+	  each day to reflect the current date. When this procedure is used, each
+	  administrator can log into the Windows client and do a Check Names on the
+	  current date, Jul21. This will bring up an entry for each postoffice that
+	  participated in Dir-Sync. The logs can be checked for those postoffices that
+	  did not participate in Dir-Sync.
+	
+	  NOTE: This method introduces administrative overhead, (although Import can
+	  facilitate the process) and relies on the Administrator making the
+	  modification at each postoffice.
+	
+	4. Which is the best place to begin troubleshooting Dir-Sync problems? The
+	  DISPATCH.LOG gives an indication of the return code for the Dir- Sync
+	  processes namely "NSDA -RT," "NSDA -S," and "NSDA -RR". The DIRSYNC.LOG on
+	  each postoffice provides more detailed information.
+	
+	5. When EXTERNAL is run as an idle process of Dispatch, is it necessary to
+	  specify break parameters for External? No. Dispatch appends a break relative
+	  time to the idle process command line automatically.
+	
+	6. With version 3.2 of Dispatch, I am unable to run Dispatch, External, and
+	  Schdist from the same machine. Why? With version 3.3 and 6.x of MS-DOS, this
+	  will work provided that COMMAND.COM is copied to the same directory where the
+	  dispatch executables reside. For additional information, please see the
+	  following article in the Microsoft Knowledge Base:
+	
+	  Q101752 PC Ext: Dispatch Cannot Spawn Batch File Without COMMAND.COM
+	
+	7. Can I run more than one Dispatch process per postoffice? No, only one
+	  Dispatch process should be run against a postoffice.
+	
+	8. The Dir-Sync times change around Daylight Savings Time (DST). How can this be
+	  changed? When a Dir-Sync process runs, it is rescheduled to run a week later
+	  at the same time. If the rescheduled time falls after a DST change, the
+	  process time is changed. The administrator has to manually change the process
+	  times on each postoffice after the DST change has been effected.
+	
+	9. What is the proper usage for the TZ variable? Please refer to the following
+	  article in the Microsoft Knowledge Base:
+	
+	  Q101753 PC DirSync: When to Use the Time Zone Option with Dir-Sync
+	
+	10. Is there any way to restrict gateway addresses from showing up in the Global
+	  Address List? No. Rebuild will process all the addresses available in the
+	  mail database (postoffice) into the Global Address List.
+	
+	11. Does Dispatch or one of the Dir-Sync agents that Dispatch spawns transfer
+	  the Dir-Sync mail between postoffices? No. Dispatch creates Dir-Sync mail
+	  messages, but External is the agent that transfers the message between
+	  postoffices.
+	
+	12. Can a foreign mail system participate in Dir-Sync? Yes, to participate in
+	  Dir-Sync, the foreign mail system should create a foreign requestor. The
+	  Dir-Sync process considers the foreign requestor as a requestor postoffice.
+	  For more information, please obtain the "Directory Synchronization with
+	  Foreign Mail Systems" guide (part number 34524) from the Microsoft Sales and
+	  Information Center at (800) 426-9400.
+	
+	13. Are the Dir-Sync executables bound applications? NOTE: Bound applications
+	  are designed and built so that they can be run under either OS/2 or MS-DOS.
+	  All Dir-Sync files, except DISPATCH.EXE, are bound executables. The bound
+	  executables run on both OS/2 and MS-DOS.
+	
+	14. Where can I find more information about Dir-Sync? You can refer to the
+	  Microsoft Mail "Administrator's Guide." There is also a document, "Directory
+	  Synchronization (Dir-Sync)" that covers the Dir-Sync process in depth. You
+	  can obtain this document from the following sources:
+	
+	   - Microsoft's World Wide Web Site on the Internet
+	
+	   - The Internet (Microsoft anonymous ftp server)
+	
+	   - The Microsoft Network (MSN)
+	
+	   - Microsoft Product Support Services
+	
+	  The following self-extracting file is available for download from the
+	  Microsoft Download Center: Wa0725.exe The following file is available for
+	  download from the Microsoft Download Center:
+	
+	  DownloadDownload Wa0725.exe now
+	  (http://download.microsoft.com/download/pcmail/Utility/23/WIN/EN-US/Wa0725.exe)
+	
+	  For additional information about how to download Microsoft Support files,
+	  click the article number below to view the article in the Microsoft
+	  Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	  Microsoft used the most current virus detection software available on the
+	  date of posting to scan this file for viruses. Once posted, the file is
+	  housed on secure servers that prevent any unauthorized changes to the file.
+	
+	  This document has also been posted to the following Internet location:
+	
+	  ftp://ftp.microsoft.com/bussys/mail/pcmail public/WA0725/
+	
+	  For more information about how to obtain this document please see the
+	  following article in the Microsoft Knowledge Base:
+	
+	  Q96060 PC DirSync: Directory Synchronization (Dir Sync)
+	
+	Additional query words: 3.20 3.20a 3.50 dirsync
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN320a kbMailPCN350
+	Version           : :3.2,3.2a,3.5
+	
+	=============================================================================
+	

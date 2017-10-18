@@ -1,0 +1,72 @@
+---
+layout: page
+title: "Q146054: STOP 0xC0000263 When Upgrading to WinNT 3.51 On Compaq Computers"
+permalink: kb/146/Q146054/
+---
+
+## Q146054: STOP 0xC0000263 When Upgrading to WinNT 3.51 On Compaq Computers
+
+	Article: Q146054
+	Product(s): Microsoft Windows NT
+	Version(s): WinNT:3.51
+	Operating System(s): 
+	Keyword(s): kb3rdparty
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 3.51 
+	- Microsoft Windows NT Server version 3.51 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	After you upgrade a Compaq computer with Microsoft Windows NT 3.51 and restart
+	the computer, the following STOP error message appears:
+	
+	  STOP: 0xC0000263 {Driver Entry Point Not Found}
+	  The \SystemRoot\system32\drivers\Sysmgmt.sys device driver could not locate
+	  the entry point HalCPQShareInt13 in driver hal.dll.
+	
+	CAUSE
+	=====
+	
+	This problem occurs if the Compaq Insight Management Agent is not disabled
+	before you perform the upgrade.
+	
+	RESOLUTION
+	==========
+	
+	To work around this problem:
+	
+	1. Restart your computer with another installation of Windows NT 3.51 or another
+	  operating system. The Compaq Insight Management Agent file SMSMGMT.SYS is
+	  located in the %SystemRoot%\System32\Drivers directory. If this directory is
+	  in the NTFS partition, you must use another installation of Windows NT.
+	
+	2. Rename SYSMGMT.SYS to another file name.
+	
+	3. Restart the upgraded version of Windows NT. The Insight Management Agent
+	  fails to load and an error message appears.
+	
+	4. Load the Compaq Hardware Abstraction Layer (HAL) with the entry point for
+	  SYSMGMT.SYS from the latest Compaq Support Software Diskette (SSD), or enable
+	  the the Insight Management Agent by renaming the agent file back to
+	  SYSMGMT.SYS. The Compaq SSD loads a newer version of the SYSMGMT.SYS.
+	
+	For more information, contact Compaq Technical Support at (800) 652-6672. In
+	addition, obtain the "Migrating to Microsoft Windows NT Server 3.51 on Compaq
+	Servers" from Compaq (Compaq part number 185026-001).
+	
+	The Compaq products discussed here are manufactured by Compaq Computer Corp., a
+	vendor independent of Microsoft; we make no warranty, implied or otherwise,
+	regarding these products' performance or reliability.
+	======================================================================
+	Keywords          : kb3rdparty 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+	Version           : WinNT:3.51
+	
+	=============================================================================
+	

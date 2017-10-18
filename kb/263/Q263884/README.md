@@ -1,0 +1,195 @@
+---
+layout: page
+title: "Q263884: SAMPLE: AdoChng.exe Changes Business Object Via ADO Recordset"
+permalink: kb/263/Q263884/
+---
+
+## Q263884: SAMPLE: AdoChng.exe Changes Business Object Via ADO Recordset
+
+	Article: Q263884
+	Product(s): Microsoft C Compiler
+	Version(s): 2.0,2.1,2.5,2.7,6.0
+	Operating System(s): 
+	Keyword(s): kbfile kbSample kbADO200 kbADO210 kbDatabase kbVC kbVC600 kbGrpDSVCDB kbGrpDSMDAC kbDSu
+	Last Modified: 11-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- ActiveX Data Objects (ADO), versions 2.0, 2.1, 2.5, 2.7 
+	- Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+	- Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+	- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+	
+	  Q256986 Description of the Microsoft Windows Registry
+	
+	SUMMARY
+	=======
+	
+	The AdoChng.exe sample demonstrates how you can write an Active Template Library
+	(ATL) COM .dll file that will create a disconnected ADO recordset and return it
+	to a client. The sample also demonstrates how you can make changes on the
+	client, send only the changes to the server to minimize network traffic, and
+	apply the changes to the database. The sample includes two different clients: a
+	Visual C++ console application and a Microsoft Visual Basic (VBScript) client
+	Web page that uses Remote Data Service (RDS) to connect to a remote server and
+	instantiate the object.
+	
+	The sample uses a Microsoft SQL Server 7.0 database to store its data. In order
+	to use the VBScript client, you must have an Internet Information Services (IIS)
+	server configured to use RDS in unsafe mode and Internet Explorer 5.0 or later
+	on the client computer.
+	
+	MORE INFORMATION
+	================
+	
+	The following file is available for download from the Microsoft Download
+	Center:
+	
+	  AdoChng.exe
+	  (http://download.microsoft.com/download/ado/SAMPLE-A/1.0/WIN98/EN-US/AdoChng.exe)
+	
+	Release Date: June 27, 2000
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. After it is posted, the file is housed on
+	secure servers that prevent any unauthorized changes to the file.
+	
+	Overview
+	--------
+	
+	The sample consists of three parts, as described here.
+	
+	- The ATL COM object source code is in the main folder where the files are
+	  extracted. The COM object has three methods:
+	
+	   - CreateTable() - This method creates a table to be used on a SQL Server 7.0
+	     database and populates it with sample data. In a production environment,
+	     it is not recommended that you allow clients to create database objects,
+	     but this method is provided to simplify the creation of the necessary
+	     table.
+	
+	   - CreateRecordset() - This method creates a disconnected ADO recordset and
+	     returns this recordset as an IDispatch** parameter to the client.
+	
+	   - SendChanges() - This method accepts an IDispatch* parameter, interprets it
+	     as an ADO recordset, reconnects to the database, and applies the changes
+	     included in the recordset. The method returns the number of records in the
+	     recordset to confirm how many records were sent by the client. As will be
+	     demonstrated in this section, if you set the marshaling option on the
+	     client to adMarshalModifiedOnly, only the changes will be sent by the
+	     client, and therefore the number of records will reflect the number of
+	     changes done on the client. It is necessary to call UpdateBatch() on the
+	     client after you send the changes to the server object to clear the
+	     modified flag from the recordset on the client.
+	
+	- The Visual C++ client simply creates the COM object locally and calls its
+	  methods.
+	
+	- The VBScript client creates an RDS DataSpace object, creates the COM object
+	  on the remote IIS server, and calls the methods on the object. The client has
+	  several buttons that call procedures on the server:
+	
+	   - Create Remote Object - Creates an RDS DataSpace object and creates the
+	     remote object on the server.
+	
+	   - Create Table - Calls the CreateTable() on the remote object.
+	
+	   - Create Recordset - Calls the CreateRecordset() on the remote object.
+	
+	   - Send Changes - Calls the SendChanges() method on the remote object and
+	     calls UpdateBatch() on the client afterwards.
+	
+	   - Next, Previous - Navigates the recordset.
+	
+	   - Change - Changes the value of the current field to the value in the edit
+	     box.
+	
+	How to Run the Sample
+	---------------------
+	
+	WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+	that may require you to reinstall your operating system. Microsoft cannot
+	guarantee that you can solve problems that result from using Registry Editor
+	incorrectly. Use Registry Editor at your own risk.
+	
+	To run the sample, you should follow these instructions completely:
+	
+	1. Modify your SQL Server connection string in the AdoRsObject.h source file if
+	  necessary. For the purposes of this sample, it is better if your SQL Server
+	  is on the same computer as your IIS server if you will be using the VBSript
+	  client to minimize the administration steps needed to connect successfully.
+	
+	2. Compile the code to generate the COM object .dll file.
+	
+	3. Compile the Visual C++ client. Run the client code for the first time.
+	  Observe that UpdateChanges() returns "4" for the number of modified records
+	  because the object is running in the same process space as the client. When
+	  an object is running in the same process space as the client, no marshaling
+	  is performed.
+	
+	4. Create an MTS Server Package or a COM+ Server Application. Install the COM
+	  object into this package. This will allow the object to run in a different
+	  process space.
+	
+	5. Rerun the Visual C++ client. Note that the number of records modified is
+	  equal to the number of changes made because only those records are marshaled
+	  to the COM object. The client calls UpdateBatch() on the ADO recordset to
+	  clear the flag on the fields that marks them as modified. The next time
+	  SendChanges() is called, only changes made after the UpdateBatch() call are
+	  sent to the server.
+	
+	6. Configure your IIS server to allow RDS access in unsafe mode. You must also
+	  add a key called MarshalChanges.AdoRsObject under the key
+	
+	  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W3SVC\Parameters\ADCLaunch
+	
+	  to allow the object to be created for use by RDS. For more information about
+	  RDS, please see the "References" section of this article.
+	
+	7. Open the TestPage.htm page in Internet Explorer on the client computer.
+	
+	8. Change the location of your IIS server.
+	
+	9. Click the Create Remote Object, Create Table, and Create Recordset buttons to
+	  get the ADO Recordset from the server and populate the edit controls.
+	
+	10. Navigate the recordset and make changes to the value field. When you are
+	  done, click Send Changes to send the changes to the server.
+	
+	(c) Microsoft Corporation 2000, All Rights Reserved. Contributions by Kamil
+	Sykora, Microsoft Corporation.
+	
+	
+	REFERENCES
+	==========
+	
+	For additional information, click the article numbers below to view the articles
+	in the Microsoft Knowledge Base:
+	
+	  Q166277 HOWTO: Create a VB Component that Returns a Recordset in RDS
+	
+	  Q191741 INFO: RDS Registry/Security Settings for Custom Business Objects
+	
+	  Q250536 HOWTO: Configure RDS for Windows 2000
+	
+	  Q183315 HOWTO: Write and Validate a Custom Business Object With RDS
+	
+	Additional query words: AdoChng
+	
+	======================================================================
+	Keywords          : kbfile kbSample kbADO200 kbADO210 kbDatabase kbVC kbVC600 kbGrpDSVCDB kbGrpDSMDAC kbDSupport kbADO250 kbATM kbado270 
+	Technology        : kbVCsearch kbAudDeveloper kbADOsearch kbADO210 kbADO200 kbADO250 kbVC600 kbVC32bitSearch kbADO270
+	Version           : :2.0,2.1,2.5,2.7,6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

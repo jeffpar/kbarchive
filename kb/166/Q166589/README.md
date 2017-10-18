@@ -1,0 +1,114 @@
+---
+layout: page
+title: "Q166589: XFOR: Microsoft Mail Connector Fails When Sending an Attachment"
+permalink: kb/166/Q166589/
+---
+
+## Q166589: XFOR: Microsoft Mail Connector Fails When Sending an Attachment
+
+	Article: Q166589
+	Product(s): Microsoft Exchange
+	Version(s): WinNT:4.0,5.0
+	Operating System(s): 
+	Keyword(s): kbinterop
+	Last Modified: 28-APR-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 4.0, 5.0 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	Although there is a path to deliver a message between two Microsoft Mail
+	postoffices by using two Microsoft Mail Connectors, you may not be able to send
+	a message with attachments. This problem only occurs on versions of Microsoft
+	Exchange Server which are enabled for double-byte character set (DBCS), such as
+	Japanese.
+	
+	MORE INFORMATION
+	================
+	
+	In the following environment, User-A can send a message to User-B. However, when
+	User-A sends a message with attachments to User-B, User-A will occasionally
+	receive a non-delivery report (NDR) from the postmaster of SRV- B's Microsoft
+	Mail Connector interchange (MSMI).
+	
+	                          same site
+	                  (or any other connectors)
+	   Exchange Server  ---------------------  Exchange Server
+	        (SRV-A)                               (SRV-B)
+	            |                                     |
+	            |MMC                                  |MMC
+	            |                                     |
+	      MS-Mail PO                            MS-Mail PO
+	         (PO-A)                                (PO-B)
+	            |                                     |
+	            |                                     |
+	            |                                     |
+	   Any MS Mail Client                    Any MS Mail Client
+	         (User-A)                              (User-B)
+	
+	When you set Diagnostics Logging to Maximum for the MSExchangeMSMI on the
+	Microsoft Mail Connector's property page using the Microsoft Exchange
+	Administrator program, the following event will appear in the receiving
+	Microsoft Exchange Server's (SRV-B) Windows NT Event Viewer Application log:
+	
+	   Event ID : 10000
+	   Source: MSExchangeMSMI
+	   Type:Information
+	   MDBEF parsing failed in Rich text information
+	
+	User-A will receive an NDR from the postmaster. This NDR only includes the title
+	of the original message and the reason of NDR:
+	
+	  Microsoft Mail Connector fails in analysis the contents.
+	
+	This occurs when the message created in a DBCS language is passed between two
+	Microsoft Mail postoffices using two MSMIs.
+	
+	This may occur when all of the following conditions are true:
+	
+	- The message is sent through two MSMIs which are DBCS enabled.
+	
+	  -and-
+	
+	- The client application is also DBCS enabled.
+	
+	  -and-
+	
+	- The message includes attachments.
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft Exchange Server,
+	version 4.0. This problem has been corrected in the latest U.S. Service Pack for
+	Microsoft Exchange Server version 4.0. For information on obtaining the Service
+	Pack, query on the following word in the Microsoft Knowledge Base (without the
+	spaces):
+	
+	  S E R V P A C K
+	
+	Microsoft has confirmed this to be a problem in Microsoft Exchange Server version
+	5.0. This problem has been corrected in the latest U.S. Service Pack for
+	Microsoft Exchange Server version 5.0. For information on obtaining the Service
+	Pack, query on the following word in the Microsoft Knowledge Base (without the
+	spaces):
+	
+	  S E R V P A C K
+	
+	Additional query words: rich text JPN
+	======================================================================
+	Keywords          : kbinterop 
+	Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbZNotKeyword2
+	Version           : WinNT:4.0,5.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

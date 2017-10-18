@@ -1,0 +1,287 @@
+---
+layout: page
+title: "Q122670: MSB Human: How to Play the Games"
+permalink: kb/122/Q122670/
+---
+
+## Q122670: MSB Human: How to Play the Games
+
+	Article: Q122670
+	Product(s): Microsoft Home Kids Products
+	Version(s): 1.0
+	Operating System(s): 
+	Keyword(s): kbusagekbfaq
+	Last Modified: 05-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Scholastic's Magic School Bus series: Explores the Human Body for Windows, version 1.0 
+	- Scholastic's Magic School Bus series: Explores the Human Body for the Macintosh, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This section provides summaries of the games included with Human Body and
+	instructions for how to play them.
+	
+	GAME DESCRIPTIONS
+	-----------------
+	
+	Chatterbox - Mouth:
+	
+	Object:
+	
+	  Learn how the shape of your mouth affects the sounds you make.
+	
+	How to Play:
+	
+	Listen to the word as it's pronounced. Click the word if you want to hear it
+	again. Have Ms. Frizzle say the word by clicking the mouth shapes and moving
+	them onto the dark boxes in the thought balloon. The order you place them is the
+	order Ms. Frizzle says them. When you're ready, click "Say," and Ms. Frizzle
+	pronounces the sounds. If the word comes out wrong, try moving the sounds
+	around. If Ms. Frizzle says the word properly, you go on to another word.
+	
+	Esophagus Puzzle - Esophagus:
+	
+	Object:
+	
+	  Reconstruct the picture by sliding or rotating puzzle pieces.
+	
+	Easy Puzzle:
+	
+	The picture that you are about to reconstruct splits into four pieces that
+	rotate. To reconstruct it, click any of the pieces. It will rotate once
+	(clockwise), but at the same time, another piece will rotate either once or
+	twice clockwise, or once counter-clockwise. The way the pieces interact with
+	each other will stay the same as long as you play but will be different the next
+	time you start the game.
+	
+	Hard Puzzle:
+	
+	The picture that you are about to reconstruct splits into 15 pieces that may
+	slide left and right or up and down into an empty space. The bottom- right piece
+	is missing and reappears when you complete the picture.
+	
+	Down The Hatch - Stomach:
+	
+	Object:
+	
+	  Line up the four major meals of the day, across or down.
+	
+	How to Play:
+	
+	As pieces fall into the stomach, line them up so you have breakfast, lunch,
+	dinner, and dessert in a row going side to side, or up and down. The meals can
+	be in any order. Press the SPACEBAR, the UP ARROW key, or "5" on the numeric
+	keypad to rotate the piece as it falls. When you get all four meals in a row,
+	they are digested, filling in part of the puzzle next to the stomach. Some
+	puzzles have only a few pieces; others have more. Good luck and bon appetit!
+	
+	Tunnel Vision - Small Intestine:
+	
+	Object:
+	
+	  Make a path out of tunnel pieces so that the ball can move to the opening at
+	  the end of the small intestine.
+	
+	How to Play:
+	
+	You can start your path anywhere, but your goal is a path that connects with the
+	opening at the end of the intestine by the time the ball gets there. Click one
+	of the three pieces UNDER the word "Next" and move it to a spot on the board.
+	Click again to place it on the board. Continue this until you have a path that
+	leads to the end of the intestine. You can replace a piece by putting a new one
+	on top of it unless the ball has already rolled through the old piece. If the
+	ball goes off the board or reaches a dead-end, you lose.
+	
+	Scoring:
+	
+	You get 50 points for each piece the ball rolls over. If the ball rolls over a
+	plus sign (+), you get 100 extra points. If the ball rolls over an "x," you get
+	200 extra points.
+	
+	Tunnel Vision - Large Intestine:
+	
+	Object:
+	
+	  Guide the class to the end of the large intestine by connecting the pieces as
+	  they appear.
+	
+	How to Play:
+	
+	Start creating your path before the kids start to move! Click the piece in the
+	"Next" box and move it to a spot on the board. Click again to place it on the
+	board. Soon, the class will follow the path you've made. If the path ends before
+	the exit, or runs into a dead-end, you lose. Be careful! The end of the
+	intestine moves around the board so make sure your path goes to the right place.
+	You can change you path by putting a new piece on top of an old one and
+	continuing from there. After you've made a complete path, click the kids to
+	freeze the end platform and make them go faster. Scoring:
+	
+	You get 25 points for every new piece the kids go through, but you lose 30 points
+	if they go through a piece more than once. You lose 5 points if you replace an
+	old piece with a new one. You have to win to get on the high score list.
+	
+	Liver Lever - Liver:
+	
+	Object:
+	
+	  Put the colored ball in the right tubes by changing the levers as the balls
+	  fall.
+	
+	How to Play:
+	
+	When the balls start falling, click the levers to change their paths. The goal is
+	to guide the balls into the tubes of the same color. Beneath each tube is the
+	number of balls you need to guide into that tube. Any ball that falls into the
+	gray tube will be sent back to the top of the screen. There are 50 balls of each
+	color at the start of the game and they drop from the top of the screen
+	randomly. After each level, the number of balls that has to go into each tube
+	increases. The game ends when you lose all of your balls without fulfilling all
+	of the quotas.
+	
+	Kid'n'Around - Kidney:
+	
+	Object:
+	
+	  Help the school bus pass through the kidneys.
+	
+	How to Play:
+	
+	Using the arrow keys, move the school bus from nephron to nephron (nephrons are
+	the blue dots). You want to get the bus from the start through the car wash and
+	across to the other kidney. Watch the nephrons because they shrink and disappear
+	quickly. If the nephron gets too small or disappears the bus will fall off the
+	screen and you will have to start over again. You start with three buses, so
+	good luck!
+	
+	Ticker Ball - Heart:
+	
+	Object:
+	
+	  Use the flippers to send the blue blood cells to the heart and the red blood
+	  cells to the body.
+	
+	How to Play:
+	
+	You start with three blue cells which fall, one at a time, from the left UPPER
+	CHAMBER. Click the mouse to move the flippers at the bottom of the ventricles.
+	As the ball bounces around, you get points for almost everything it hits. If you
+	send it to the lungs, you get the number of points that are lit. When a cell
+	goes to the lungs, it turns red and shoots back into play on the right side of
+	the heart. If you send a red cell to the body, you get double the number of
+	points that are lit.
+	
+	Air Combat - Lungs:
+	
+	Object:
+	
+	  Defend the lung cells from viruses and nasty pollution.
+	
+	How to Play:
+	
+	As viruses and pollution enter the lungs, aim at them or a little below them with
+	the mouse and click to shoot an antidote that will destroy the invader. You can
+	shoot only at targets in the highlighted part of the lungs. Every time a bad
+	blob touches your lung cells, the cells shrink a little, until they are gone.
+	The orange anti-bodies can help repair the cells, so don't shoot these, or
+	you'll lose points. When all the lung cells are gone, the game is over.
+	
+	Nose Puzzle - Nose:
+	
+	Object:
+	
+	  Reconstruct the picture by sliding or rotating puzzle pieces.
+	
+	Easy puzzle:
+	
+	The picture that you are about to reconstruct splits into four pieces that
+	rotate. To reconstruct it, click any of the pieces. It will rotate once
+	(clockwise), but at the same time, another piece will rotate either once or
+	twice clockwise, or once counter-clockwise. The way the pieces interact with
+	each other will stay the same as long as you play but will be different the next
+	time you start the game.
+	
+	Hard puzzle:
+	
+	The picture that you are about to reconstruct splits into 15 pieces that may
+	slide left and right or up and down into an empty space. The bottom-right piece
+	is missing and reappears when you complete the picture.
+	
+	Crossed Wires - Brain:
+	
+	Object:
+	
+	  Find the pictures on the right that relate to those on the left.
+	
+	How to Play:
+	
+	The neurons are in two columns, left and right. Many impulses (the blue balls)
+	pass between them, moving randomly from side to side. Click a neuron in the left
+	column and one in the right column. If the two are related, such as a foot and a
+	shoe, you have a match, and both will stay face up. If they don't match, they'll
+	flip back over and a yellow shock moves from the left neuron to the right. The
+	shock will destroy any impulse it touches, so be careful! If you run out of
+	impulses before you make all the matches, the game is over.
+	
+	Skin Puzzle - Skin:
+	
+	Object:
+	
+	  Reconstruct the picture by sliding or rotating puzzle pieces.
+	
+	Easy puzzle:
+	
+	The picture that you are about to reconstruct splits into four pieces that
+	rotate. To reconstruct it, click any of the pieces. It will rotate once
+	(clockwise), but at the same time, another piece will rotate either once or
+	twice clockwise, or once counter-clockwise. The way the pieces interact with
+	each other will stay the same as long as you play but will be different the next
+	time you start the game.
+	
+	Hard puzzle:
+	
+	The picture that you are about to reconstruct splits into 15 pieces that may
+	slide left and right or up and down into an empty space. The bottom-right piece
+	is missing and reappears when you complete the picture.
+	
+	Skeleton Puzzle:
+	
+	Object:
+	
+	  Put the skeleton back together again.
+	
+	How to Play:
+	
+	The skeleton will fall apart when you click it. Try to reconstruct the skeleton
+	from its parts. Start from either the top or the bottom. Click Liz if you need
+	help. Click "Hint" if you need a hint.
+	
+	MORE INFORMATION
+	================
+	
+	For descriptions and information on how to play the games, click on the question
+	mark on the opening screen of each game.
+	
+	Winning the Game:
+	
+	To win the "game" you must first go to all 12 locations in Arnold's body. After
+	you have gone to all 12 body parts, return to either the nose, mouth, or skin.
+	Click the keyhole to receive either a feather (nose), jalapeno pepper (mouth),
+	or water (skin). Click that object and drop it on the windshield to initiate the
+	escape sequence from Arnold's body. You will either be sneezed out, coughed out,
+	or sweat out.
+	
+	Additional query words: 1.00 kbhowto magicbus msb-hb winmsbhuman msbhuman frizz frizzle liz magic_bus schoolbus mac
+	
+	======================================================================
+	Keywords          : kbusage kbfaq
+	Technology        : kbHomeProdSearch kbZNotKeyword kbKidsSearch kbScholasticHuman kbScholasticHumanMac kbMSBSearch
+	Version           : :1.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

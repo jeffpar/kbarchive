@@ -1,0 +1,108 @@
+---
+layout: page
+title: "Q265445: Password Notification Hangs Handling Multiple Password Expiratio"
+permalink: kb/265/Q265445/
+---
+
+## Q265445: Password Notification Hangs Handling Multiple Password Expiratio
+
+	Article: Q265445
+	Product(s): Internet Information Server
+	Version(s): 4.0,5.0
+	Operating System(s): 
+	Keyword(s): kbWin2000SP2Fix
+	Last Modified: 08-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Server version 4.0 
+	- Microsoft Internet Information Services version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	IIS may stop responding when it is handling multiple, simultaneous password
+	expiration notifications from the same client using the IISADMPWD virtual
+	server.
+	
+	CAUSE
+	=====
+	
+	IIS 4.0 and 5.0 use a password cache list to keep track of current users when
+	processing password changes. The cache has a list traversing problem where it
+	does not crawl the cache correctly after the first entry, and often crawls a
+	series of invalid addresses when trying to find a user or password in the cache,
+	which makes it appear to stop responding.
+	
+	WORKAROUND
+	==========
+	
+	Use ADSI for password notification. For additional information on using
+	IISADMPWD for password notification, click the article number below to view the
+	article in the Microsoft Knowledge Base:
+	
+	  Q184619 How to Change Windows NT Account Passwords Using Internet Information
+	  Server (IIS) 4.0
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, obtain the latest service pack for Windows 2000. For
+	additional information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q260910 How to Obtain the Latest Windows 2000 Service Pack
+	
+	The Internet Information Service 4.0 English version of this fix should have the
+	following file attributes or later:
+	
+	  
+	
+	Date     Time    Version          Size   File Name     Platform
+	---------------------------------------------------------------
+	08/03/2000 20:08  4.2.749.1     551,696  Asp.dll         Alpha 
+	08/03/2000 20:06  4.2.749.1     304,912  Infocomm.dll    Alpha 
+	08/03/2000 20:07  4.2.749.1      60,176  Ssinc.dll       Alpha 
+	08/03/2000 20:07  4.2.749.1      39,696  Sspifilt.dll    Alpha 
+	08/03/2000 20:07  4.2.749.1     384,272  W3svc.dll       Alpha 
+	08/03/2000 20:06  4.2.749.1     330,080  Asp.dll         x86 
+	08/03/2000 20:04  4.2.749.1     185,792  Infocomm.dll    x86 
+	08/03/2000 20:05  4.2.749.1      38,256  Ssinc.dll       x86 
+	08/03/2000 20:05  4.2.749.1      25,360  Sspifilt.dll    x86 
+	08/03/2000 20:05  4.2.749.1     228,496  W3svc.dll       x86 
+	
+	The Internet Information Services 5.0 English version of this fix should have the
+	following file attributes or later:
+	
+	  
+	
+	Date        Time    Version         Size   File Name    
+	-------------------------------------------------------
+	10/18/2000  03:58p  5.0.2195.2517 244,496  Infocomm.dll
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products that are
+	listed at the beginning of this article.
+	
+	MORE INFORMATION
+	================
+	
+	Infocomm.dll has been modified to traverse the password cache list correctly.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbWin2000SP2Fix 
+	Technology        : kbiisSearch kbiis500 kbiis400
+	Version           : :4.0,5.0
+	Hardware          : ALPHA x86
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

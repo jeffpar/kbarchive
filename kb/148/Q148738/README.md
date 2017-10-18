@@ -1,0 +1,97 @@
+---
+layout: page
+title: "Q148738: MFCDRAG Implements Drag and Drop Between CListCtrl and CTree"
+permalink: kb/148/Q148738/
+---
+
+## Q148738: MFCDRAG Implements Drag and Drop Between CListCtrl and CTree
+
+	Article: Q148738
+	Product(s): Microsoft C Compiler
+	Version(s): 4.0,4.1,5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbfile kbProgramming kbSample kbCtrl kbDragDrop kbMFC KbUIDesign kbVC400 kbVC500 kbVC60
+	Last Modified: 02-JUL-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual C++, versions 4.0, 4.1 
+	- Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+	- Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+	- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	MFCDRAG shows how to implement drag and drop between a CListCtrl and CTreeCtrl.
+	The program creates a splitter window containing four panes. Two panes contain
+	CListCtrls and the other two contain CTreeCtrls. You can drag an item from any
+	window to another. For example, dragging can occur between the following panes:
+	
+	  CListCtrl to CTreeCtrl
+	  CListCtrl to CListCtrl
+	  CTreeCtrl to CListCtrl
+	  CTreeCtrl to CTreeCtrl
+	
+	Code marked with the comment "Added 7/29/96" was added to support a change in the
+	CreateDragImage function in MFC 4.2. The CImageList pointer returned from
+	CreateDragImage must now be explicitly deleted. If you are using a version of
+	MFC prior to 4.2, please comment this code out.
+	
+	The following files are available for download from the Microsoft Download
+	Center:
+	
+	Visual C++ 6.0:
+	
+	  DownloadDownload Mfcdrag.exe now
+	  (http://download.microsoft.com/download/vc60pro/demo4/1/WIN98/EN-US/Mfcdrag.exe)
+	
+	For additional information about how to download Microsoft Support files, click
+	the following article number to view the article in the Microsoft Knowledge
+	Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft scanned this file for viruses. Microsoft used the most current
+	virus-detection software that was available on the date that the file was
+	posted. The file is stored on secure servers that prevent any unauthorized
+	changes to the file.
+	
+	Visual C++ .NET:
+	
+	  DownloadDownload Mfcdragvcnet.exe now
+	  (http://download.microsoft.com/download/visualstudionet/sample/1.21/win98mexp/en-us/Mfcdragvcnet.exe)
+	
+	Release Date: June 27, 2002
+	
+	For additional information about how to download Microsoft Support files, click
+	the following article number to view the article in the Microsoft Knowledge
+	Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft scanned this file for viruses. Microsoft used the most current
+	virus-detection software that was available on the date that the file was
+	posted. The file is stored on secure servers that prevent any unauthorized
+	changes to the file.
+	
+	
+	NOTE: Use the -d option when running MFCDRAG.EXE to decompress the file and
+	recreate the proper directory structure.
+	
+	MORE INFORMATION
+	================
+	
+	
+	
+	Additional query words: drag drop
+	
+	======================================================================
+	Keywords          : kbfile kbProgramming kbSample kbCtrl kbDragDrop kbMFC KbUIDesign kbVC400 kbVC500 kbVC600 kbGrpDSMFCATL 
+	Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC410 kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+	Version           : :4.0,4.1,5.0,6.0
+	
+	=============================================================================
+	

@@ -1,0 +1,100 @@
+---
+layout: page
+title: "Q158903: Garbled Output from Macintosh to Shared PostScript Printer"
+permalink: kb/158/Q158903/
+---
+
+## Q158903: Garbled Output from Macintosh to Shared PostScript Printer
+
+	Article: Q158903
+	Product(s): Microsoft Windows NT
+	Version(s): 3.1; winnt:3.5,3.51,4.0
+	Operating System(s): 
+	Keyword(s): kbinterop kbprint
+	Last Modified: 07-SEP-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Advanced Server, version 3.1 
+	- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Print jobs from Macintosh clients may be printed incorrectly, often producing
+	multiple PostScript error pages. The problem seems to happen only with complex
+	print jobs that contain graphics.
+	
+	CAUSE
+	=====
+	
+	This behavior occurs when the AppleTalk protocol is not used to connect to the
+	printer. This is because there are two predominant binary encoding schemes,
+	"standard protocol" and "Tagged Binary Core Protocol" (TBCP). PostScript
+	originally supported several text encoding schemes, plus "standard protocol"
+	binary. Other languages originally supported one or more text encoding schemes,
+	plus TBCP. Standard protocol and TBCP are mutually incompatible; neither is a
+	subset nor an extension of the other.
+	
+	AppleTalk was designed to support PostScript printing, and although AppleTalk's
+	Printer Access Protocol (PAP) can transmit TBCP on the wire, nearly every binary
+	print job over PAP is PostScript using standard protocol encoding. As a result,
+	many print devices assume that all binary data that arrives over AppleTalk is
+	encoded with standard protocol.
+	
+	Similarly, PC-based network printing protocols, such as DLC and LPR, were
+	designed to support PC clients. When those clients send PostScript jobs, data is
+	almost always encoded as text; when those clients send non- PostScript jobs,
+	binary data is almost always encoded as TBCP. As a result, many print devices
+	assume that all binary data over non- AppleTalk protocols is TBCP-encoded, even
+	though the network protocols can correctly transmit standard-protocol-encoded
+	data.
+	
+	The Windows NT printing architecture lets you receive a print job, in any
+	language, from any client, with any encoding scheme, and send that job over any
+	available protocol to any network-attached print device. This flexibility lets
+	Windows NT deliver Macintosh print jobs over an LPT port connection (both DLC
+	and LPR). It also lets Windows NT deliver PC print jobs over AppleTalk. If this
+	violates the print device's binary encoding assumptions, you receive incorrect
+	output.
+	
+	A Windows NT print server can receive PostScript jobs from Macintosh clients with
+	binary data encoded in the standard protocol scheme. It can send those jobs over
+	an LPT port connection (either DLC or LPR) to a network or locally attached
+	print device that assumes all DLC, LPT port, or LPR jobs use TBCP encoding. In
+	this case, jobs will be printed incorrectly.
+	
+	RESOLUTION
+	==========
+	
+	1. Use AppleTalk to connect to the printer.
+	
+	2. When you create PostScript print jobs (on any platform) that might be printed
+	  over a network, use "ASCII" or "text" encoding rather than binary encoding.
+	  This is an option in the PostScript driver made by Adobe Corporation for
+	  16-bit Windows and Macintosh clients. The Windows NT PostScript driver always
+	  uses text encoding. Desktop publishing programs (on any platform) often
+	  generate their own PostScript code, completely independent of the operating
+	  system's driver. According to the Adobe Serial and Parallel Communications
+	  Protocols Specification, programs capable of both binary and text encoding
+	  should provide a user interface to select either scheme. The ability to
+	  switch modes can usually be found in the Printer Driver dialog box.
+	
+	MORE INFORMATION
+	================
+	
+	The third-party product discussed in this article is manufactured by a vendor
+	independent of Microsoft; we make no warranty, implied or otherwise, regarding
+	this product's performance or reliability.
+	
+	Additional query words: prodnt 3.10 PS error parallel sfm
+	
+	======================================================================
+	Keywords          : kbinterop kbprint 
+	Technology        : kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS351search kbWinNTS350search kbWinNT310Search
+	Version           : :3.1; winnt:3.5,3.51,4.0
+	
+	=============================================================================
+	

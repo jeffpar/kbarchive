@@ -1,0 +1,679 @@
+---
+layout: page
+title: "Q154481: XGEN: README.TXT: Microsoft Exchange 5.0 U.S. Service Pack 1"
+permalink: kb/154/Q154481/
+---
+
+## Q154481: XGEN: README.TXT: Microsoft Exchange 5.0 U.S. Service Pack 1
+
+	Article: Q154481
+	Product(s): Microsoft Exchange
+	Version(s): 5.0
+	Operating System(s): 
+	Keyword(s): kbusage
+	Last Modified: 07-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The following is the Readme.txt file that accompanies the Microsoft Exchange
+	Server version 5.0 U.S. Service Pack 1.
+	
+	MORE INFORMATION
+	================
+	
+	Microsoft Exchange Server Version 5.0 Service Pack 1
+	
+	Contents
+	
+	1.0 Introduction
+	2.0 Installation Instructions for Microsoft Exchange Server Service Pack 1
+	2.1 Installation Instructions for Microsoft Exchange Client Service Pack 1
+	2.2 Installation Instructions for Microsoft Exchange Macintosh client
+	   Service Pack 1
+	2.3 Installation Instructions for Microsoft Outlook Client for Exchange
+	   Service Pack 1
+	2.3.1 Administrator Installation Instructions for Outlook Client
+	     Installation Point
+	2.3.2 End User Installation Instructions
+	2.3.3 Value Pack Installation Instructions
+	3.0 Updating the Web Connector
+	3.1 Requirements Before Updating
+	3.2 Chinese Language Preferences
+	3.3 Anonymous Access
+	3.4 Attachment Upload Requirements
+	4.0 User Notes
+	4.1 Using Multiple Offline Address Books in the Administrator Program
+	4.2 Using Multiple Offline Address Books in the Client
+	4.3 Windows File Types List for Microsoft Exchange Client for Macintosh
+	4.4 Microsoft Exchange White Papers
+	5.0 List of Bugs Fixed in Microsoft Exchange Server Service Packs
+	
+	1.0 Introduction
+	----------------
+	
+	This release of Microsoft Exchange Server 5.0 Service Pack 1 (SP1) is easy
+	to apply from within Microsoft Windows NT and changes only those files that
+	were originally set up on the Microsoft Exchange Server system.
+	
+	Important: Service Pack 1 requires that Microsoft Exchange Server 5.0 has
+	already been installed on the server or client workstation that you are
+	updating.
+	
+	2.0 Installation Instructions for Microsoft Exchange Server Service Pack 1
+	--------------------------------------------------------------------------
+	
+	To install Service Pack 1 for the Microsoft Exchange Server from compressed
+	files:
+	
+	1. Create two subdirectories, Setup and Support.
+	
+	2. Download the compressed Setup file appropriate for your hardware
+	 platform into the Setup directory. Select the appropriate file as
+	 indicated in the following list:
+	
+	     Alpha AXP(TM): SP1_500A.EXE
+	     Intel(R): SP1_500I.EXE
+	
+	3. Download the compressed support file appropriate for your hardware
+	 platform into the Support directory. Select the appropriate file as
+	 indicated in the following list:
+	
+	     Alpha AXP(TM): SP1S500A.EXE
+	     Intel(R): SP1S500I.EXE
+	
+	4. At the Windows NT command prompt, switch to the Setup directory and type
+	 the name of the file downloaded in step 2 followed by a -d to ensure
+	 that the correct directories are created. (Example: SP1_500A -d)
+	
+	5. At the Windows NT command prompt, switch to the Support directory and
+	 type the name of the file downloaded in step 3 followed by a -d to ensure
+	 that the correct directories are created. (Example: SP1S500A -d)
+	
+	6. Switch to the Setup directory, and type Update. Follow the instructions
+	 displayed on the screen.
+	
+	7. Switch to the Support directory, and type Setup. Follow the instructions
+	displayed on the screen.
+	
+	2.1 Installation Instructions for Microsoft Exchange Client Service Pack 1
+	--------------------------------------------------------------------------
+	
+	To install Service Pack 1 for the Microsoft Exchange Client from a
+	compressed file:
+	
+	1. Create a Client subdirectory.
+	
+	2. Download the compressed Setup file appropriate for the clients for your
+	 hardware platform directory. Select the appropriate files as indicated
+	 in the following list:
+	
+	     Windows 16-bit client: SP1_50WI.EXE
+	     Windows 16-bit NEC client (Japan only): SP1_50EC.EXE
+	     Windows 95 client: SP1_509I.EXE
+	     Windows NT (Alpha): SP1_50NA.EXE
+	     Windows NT (Intel): SP1_50NI.EXE
+	
+	3. At a command prompt, switch to the Client directory, and type the
+	 name of the file downloaded in step 2 followed by a -d to ensure that
+	 the correct directories are created. (Example: SP1_50NA -d)
+	
+	4. To update a client, switch to the Client and platform directory, and
+	 type Update. Follow the instructions displayed on the screen.
+	
+	NOTE: On older computers and non-Intel processors, the Update program can
+	take 10 or more minutes to run because it must copy the cabinet files to
+	the local computer, extract the files, and then copy them to their correct
+	locations.
+	
+	NOTE: To refresh the client installation point on your network so that it
+	contains the latest fixes and prevents new users from having to run Update
+	immediately after they run Setup, please see the following article in the
+	Microsoft Knowledge Base:
+	
+	  ARTICLE-ID: Q164560
+	  TITLE   :How to Update Client Install Share with 5.0 SP1.
+	
+	2.2 Installation Instructions for Microsoft Exchange Macintosh client
+	Service Pack 1
+	--------------------------------------------------------------------------
+	
+	To install Service Pack 1 for the Microsoft Exchange Macintosh client from
+	a compressed file:
+	
+	1. Download the file SP1_50MA.EXE and unzip it.
+	
+	2. Copy SP1_50MA.hqx to a Macintosh or a Power Macintosh.
+	
+	3. Convert the file from BinHex format. (This requires a utility on the
+	 Macintosh to convert from BinHex format.)
+	
+	4. Double-click the SP1_50MA file.
+	
+	5. Open the Microsoft Exchange folder.
+	
+	6. Double-click Microsoft Exchange Setup. Follow the instructions.
+	
+	7. Run Microsoft Exchange. The Profile Wizard guides you through the
+	  process of creating a new profile.
+	
+	-or-
+	
+	1. Download SP1_50MA.hqx to a Macintosh or a Power Macintosh.
+	
+	2. Convert the file from BinHex format. (This requires a utility on the
+	  Macintosh to convert from BinHex format.)
+	
+	3. Double-click the SP1_50MA file.
+	
+	4. Open the Microsoft Exchange folder.
+	
+	5. Double-click Microsoft Exchange Setup. Follow the instructions.
+	
+	6. Run Microsoft Exchange. The Profile Wizard guides you through the
+	  process of creating a new profile.
+	
+	2.3 Installation Instructions for Microsoft Outlook Client for Exchange
+	Service Pack 1
+	------------------------------------------------------------------------
+	
+	2.3.1 Administrator Installation Instructions for Outlook Client
+	Installation Point
+	----------------------------------------------------------------
+	
+	To install Service Pack 1 on an existing Outlook Administrator installation
+	point from a compressed file:
+	
+	1. Create an Outlook directory.
+	
+	2. Change to the Outlook directory and create a Admin directory.
+	
+	3. Download the compressed Outlook Admin file appropriate for your hardware
+	  platform into the Admin directory. Select the appropriate file as
+	  indicated in the following list:
+	
+	     Windows 95 Outlook Administrator    SP1_50A9.EXE
+	     Windows NT 3.51 Outlook Administrator     SP1_50A3.EXE
+	     Windows NT 4.0 Outlook Administrator      SP1_50A4.EXE
+	
+	4. At the Windows NT command prompt, switch to the Admin directory and type
+	  the file name. (Example: SP1_50A4).
+	
+	5. Double-click AdminUpd.exe, and then follow the instructions displayed on
+	  the screen.
+	
+	NOTE: This Service Pack will not update an Outlook version 8.0
+	installation.
+	
+	2.3.2 End User Installation Instructions
+	----------------------------------------
+	
+	To install Service Pack 1 on an existing Outlook Client installation point
+	from a compressed file:
+	
+	1. Create an Outlook directory.
+	
+	2. Change to the Outlook directory and create a Client directory.
+	3. Download the compressed Outlook Client file appropriate for your
+	  hardware platform into the Client directory. Select the appropriate file
+	  as indicated in the following list:
+	
+	     Windows 95 Outlook Client     SP1_50O9.EXE
+	     Windows NT 3.51 Outlook Client      SP1_50O3.EXE
+	     Windows NT 4.0 Outlook Client    SP1_50O4.EXE
+	
+	4. At the Windows NT command prompt, switch to the Client directory and
+	  type the name of the file downloaded in step 3 followed by a -d to
+	  ensure that the correct directories are created. (Example: SP1_50O4 -d)
+	
+	5. Double-click Update.exe, and then follow the instructions displayed on
+	  the screen.
+	
+	NOTE: This Service Pack will not update an Outlook version 8.0
+	installation.
+	
+	2.3.3 Value Pack Installation Instructions
+	------------------------------------------
+	
+	To install Service Pack 1 on an existing Outlook Value Pack installation
+	point from a compressed file:
+	
+	1. Create an Outlook directory.
+	
+	2. Change to the Outlook directory and create a ValuPack directory.
+	
+	3. Download the compressed Outlook ValuPack file appropriate for your
+	  hardware platform into the ValuPack directory. Select the appropriate
+	file as indicated in the following list:
+	
+	     Windows 95 Outlook Client: SP1_50V9.EXE
+	     Windows NT 3.51 Outlook Client: SP1_50V3.EXE
+	     Windows NT 4.0 Outlook Client: SP1_50V4.EXE
+	
+	4. At the Windows NT command prompt, switch to the ValuPack directory and
+	  type the name of the file downloaded in step 3 followed by a -d to
+	  ensure that the correct directories are created. (Example: SP1_50V4 -d)
+	
+	NOTE: This Service Pack will not update an Outlook 8.0 installation.
+	
+	3.0 Updating the Web Connector
+	------------------------------
+	
+	The Web Connector is now called Microsoft Outlook Web Access.
+	
+	1. Create an Outlook directory.
+	
+	2. Change to the Outlook directory and create a Web directory.
+	
+	3. Download the compressed Web Connector file appropriate for your hardware
+	  platform into the Web directory. Select the appropriate file as
+	indicated in the following list:
+	
+	     Alpha AXP(TM): SP1_50BA.EXE
+	     Intel(R): SP1_50BI.EXE
+	
+	4. At the Windows NT command prompt, switch to the Web directory and type
+	the name of the file downloaded in step 3 followed by a -d to ensure that
+	the correct directories are created. (Example: SP1_50BI -d)
+	
+	3.1 Requirements Before Updating
+	--------------------------------
+	Before updating a server that has the Web Connector installed, the
+	following must be installed:
+	
+	  Windows NT 4.0 Service Pack 3
+	  Active Server Pages 1.0b (distributed in Windows NT 4.0 SP3)
+	
+	3.2 Chinese Language Preferences
+	--------------------------------
+	
+	Web browsers can request Chinese Traditional (zh-tw) or Chinese Simplified
+	(zh-cn). Some browsers do not differentiate between Chinese Traditional and
+	Chinese Simplified when reporting their language preference to the server.
+	In cases where the browser does not specify a sublanguage, the most
+	recently installed language pack will be the default. You can control what
+	language will be returned in these cases by the order of installation of
+	your Chinese language packs.
+	
+	3.3 Anonymous Access
+	--------------------
+	
+	Anonymous access is not available to folders hosted on servers running
+	Windows NT Server 3.51. To support anonymous folder access, the folders
+	must be hosted on a server running Windows NT 4.0.
+	
+	3.4 Attachment Upload Requirements
+	----------------------------------
+	
+	When using Microsoft Internet Explorer for Windows 95 or Windows NT, you
+	must update to Internet Explorer 3.02 with the File Upload add-on to add
+	attachments to a message. At the time of the SP1 release, this add-on was
+	not available for the Windows 3.x platforms.
+	
+	4.0 User Notes
+	--------------
+	
+	4.1 Using Multiple Offline Address Books in the Administrator Program
+	---------------------------------------------------------------------
+	
+	Administrators can configure offline Address Books that remote users can
+	use to obtain information about other users in their organization. When
+	connecting remotely to a Microsoft Exchange Server computer, a user can
+	download an offline Address Book containing a list of recipients the
+	administrator specifies. Offline Address Books are stored in hidden public
+	folders.
+	
+	Remote users typically send messages to a regular group of addresses and
+	require a subset of the global address list (GAL) rather than the entire
+	GAL for their organization. For example, members of a marketing group may
+	need the addresses of the complete marketing and sales groups, but not the
+	entire set of engineering group addresses.
+	
+	The Offline Address Book property page on the DS Site Configuration object
+	has been enhanced to allow generation and manipulation of multiple offline
+	Address Books.
+	
+	Defining Offline Address Book Properties
+	
+	Use the Offline Address Book property page to set up multiple offline
+	Address Books.
+	
+	1. In the Administrator window, choose Configuration, and then double-click
+	  DS Site Configuration.
+	
+	2. Select the Offline Address Book tab.
+	
+	3. In the Offline Address Book Server box, select one of the servers in
+	  your site.
+	
+	IMPORTANT: You must select a server running Microsoft Exchange Server
+	version 5.0 and Service Pack 1.
+	
+	4. To add containers for more offline Address Books, click Add.
+	
+	-or-
+	
+	  To remove offline Address Book containers, select a container, and then
+	  click Remove.
+	
+	5.To generate offline Address Books, click Generate All.
+	
+	The following options appear in the Offline Address Book property page:
+	
+	- Offfline Address Book Serve: The name of the server where you want to
+	  generate the offline Address Book.
+	
+	- Address Books: Displays a list of Address Books to be generated for the
+	  site being administered.
+	
+	- Add: Displays a list of containers that can be added to the list of
+	  offline Address Books.
+	
+	- Remove: Removes the selected offline Address Book from the list.
+	
+	- Generate All: Generates all displayed offline Address Books immediately.
+	
+	4.2 Using Multiple Offline Address Books in the Client
+	------------------------------------------------------
+	
+	Multiple offline Address Books require Microsoft Exchange Server 5.0 SP1 or
+	later and either Microsoft Exchange Client 5.0 SP1 or Outlook 8.02. When
+	the feature is enabled on the server and a user tries to download an
+	offline Address Book as in previous versions of Microsoft Exchange, the
+	user will be prompted with a dialog box that lists all available Address
+	Books. The user can select one of these Address Books.
+	
+	4.3 Windows File Types List for Microsoft Exchange Client for Macintosh
+	-----------------------------------------------------------------------
+	
+	This feature improves interoperability between the Microsoft Exchange
+	Macintosh client and other e-mail clients. Under some circumstances, the
+	Microsoft Exchange Macintosh client sends and receives e-mail by using only
+	the data fork of the message. A new entry in the preferences file (named
+	Windows File Types) lists file types for which the Microsoft Exchange
+	Macintosh client will use only the data fork of the message.
+	
+	Types of Entries
+	There are two types of entries:
+	
+	- General extensions
+	- Specific extensions for creator and type
+	
+	General Extensions
+	
+	Users can add an entry of the form:
+	
+	  EXT [Number]= .[Extension]
+	
+	All files that have this extension will be inserted in subsequent messages
+	as a data fork-only attachment. The default types are HTML, GIF, PDF, and
+	JPEG.
+	
+	Specific Extensions for Creator and Type
+	
+	Users can add an entry of the form:
+	
+	  :[CREATOR]:[TYPE]= .[Extension]
+	
+	All files that have the specified creator and type will be inserted as a
+	data fork-only attachment. The extension will be added to the end of the
+	file name, unless it is already present.
+	
+	4.4 Microsoft Exchange White Papers
+	-----------------------------------
+	
+	Downloading the Exchange Whitepapers
+	
+	1. Create the subdirectory WPapers on your local hard disk drive.
+	
+	2. Download the file SP1_50WH.EXE located in the Server subdirectory to
+	  your WPapers subdirectory.
+	
+	3. At the Windows NT command prompt, switch to the WPapers directory and
+	  type SP1_50WH followed by a -d to ensure that the correct directories
+	  are created. (Example: SP1_50WH -d).
+	
+	The following Microsoft Exchange white papers have been included as a
+	convenience to you and can be found in the \\Support\Whiteppr directory.
+	These documents can be viewed with Microsoft Word for Windows 95 or
+	Microsoft Word for Windows version 6.0.
+	
+	- 09exrk.doc = Microsoft Exchange Troubleshooting
+	  This document provides information about troubleshooting problems with
+	  Microsoft Exchange Server and Microsoft Exchange Client.
+	
+	- Abexrk.doc = System Management Checklist
+	  This document provides checklists for daily, weekly, monthly, and
+	  periodic maintenance tasks to ensure that your Microsoft Exchange
+	  Server computers are operating efficiently.
+	
+	- Acexrk.doc = Performance Monitor Chart Views
+	This paper describes the pre-configured Microsoft Windows NT Performance
+	Monitor chart views included with Microsoft Exchange Server.
+	
+	- Backrest.doc = MS Exchange Disaster Recovery
+	This paper outlines thoughts, observations, and techniques that can be
+	applied to Microsoft Exchange Disaster Recovery planning.
+	
+	NOTE: For more information about Microsoft Exchange, see the following
+	resources:
+	
+	  Microsoft Exchange Server Web site: http://www.microsoft.com/exchange/ 
+	  Microsoft Exchange Troubleshooters:
+	     http://support.microsoft.com/support/exchange/content/whitepapers/whitepapers.asp
+	  Microsoft Exchange Frequently Asked Questions:
+	     http://support.microsoft.com/support/exchange/content/faq/ 
+	   Microsoft Knowledge Base: http://support.microsoft.com/support/ 
+	  Microsoft TechNet Reference Desk:
+	     http://www.microsoft.com/ithome
+	  Microsoft Support OnLine: http://support.microsoft.com/support/ 
+	  Microsoft TechNet: (800) 344-2121 and
+	     http://www.microsoft.com/ithome
+	     or e-mail technet@microsoft.com
+	
+	5.0 List of Bugs Fixed in Microsoft Exchange Server Service Packs
+	-----------------------------------------------------------------
+	
+	NOTE: Use the Qnnnnnn number that precedes the title of the bug fix to
+	query the Microsoft Knowledge Base for an article about that bug.
+	
+	Microsoft Exchange Server 5.0 Service Pack 1
+	
+	  Q145789: XCLN: Boldon James MAPI X.500 Address Book Client Service Crash
+	  Q145875: XFOR: cc:Mail Messages are not Delivered by DEC Mail Bus
+	  Q145976: XCON: GWART is Incorrect Due to Latency in Directory Replication
+	  Q145986: XCON: Illegal Country Code in X400 Address Causes MTA to Hang
+	  Q146032: XCON: MTA: Invalid Originator Address When Sending to X.400
+	  Q146143: XCON: DeferredDeliveryTime Echoed Within DeliveryReportEnvelope
+	  Q146929: XCON: ORName not Included in Reported IPMessageId
+	  Q147454: XFOR: PC MTA Message Tracking Does Not Log Message Size
+	  Q147547: XFOR: IMC Mail Arrives in X.400 Address Format
+	  Q148284: XCON: When and How to use the Mtacheck Utility
+	  Q148992: XADM: Cannot Perform Forklift Upgrade Using UPDATE.EXE
+	  Q149387: XFOR: MSMI Terminating with Memory Access Violation, Event ID 23
+	  Q149974: XADM: ISINTEG Prematurely Aborts Processing in Test 22
+	  Q151373: XCON: DBCS Chars in Subject of Embedded Message not Converted
+	  Q151395: XCON: MTA Terminates After Receiving Mail from Zoomit Gateway
+	  Q151413: XCON: ContentReturn Requested by Default
+	  Q151417: XCON: Latin-1 X.400 Bodypart Encoding Causes NDR
+	  Q151431: XFOR: MSMI Stops Without Error
+	  Q151473: XFOR: MSMI Crashes Starting a New Thread, Reads a Null Pointer
+	  Q151669: XFOR: MSMI Stops Processing Mail
+	  Q151782: XFOR: DirSync Modifies Causing Names to Disappear from Exchange
+	  Q151786: XFOR: Schedule+ Meeting Requests Drop the When Field
+	  Q151788: XADM: "Reps-From" USN Too High for One Server
+	  Q151790: XFOR: NDR with Diagnostic: 12 Erroneous Content Syntax
+	  Q151791: XFOR: MSMI Stops Processing When Submitting Bad Address
+	  Q151792: XFOR: One-off Addressed Mail from ccMail User not Tracked
+	  Q151972: XADM: Message Limits Incorrectly Valculated After 5.0 Upgrade
+	  Q151978: XADM: EcPropSize-MAPI_E_NOT_ENOUGH_MEMORY Reported by ISINTEG
+	  Q151992: XADM: Simultaneous Move User Operations Freeze
+	  Q152165: XCON: IMS Queues Back Up to Hosts with Multiple MX Records
+	  Q152166: XFOR: Attachment Name Truncated When Name Contains a Period
+	  Q152292: XFOR: IA5 Body Part Used Although Different Setting is Selected
+	  Q152449: XADM: Directory Import Fails When Import File Includes DBCS
+	  Q152529: XADM: Crash in Srvrmax.exe (RtlQueryInformationAcl) During Setup
+	  Q153103: XCON: MTA Terminates Unexpectedly in Large Nested DL Expansion
+	  Q153464: XFOR: Unexpected Text Attachment in Mail Received from Internet
+	  Q153487: XFOR: Exchange Proxy Addresses Not Deleted on cc:Mail POs
+	  Q154053: XFOR: Address Format Bhen Backboning cc:Mail over Exchange
+	  Q154719: XCON: MTA: Line Wrap When Using ISO 6937 Bodypart
+	  Q155379: XADM: Unable to Match Custom Recipient Due to RFC1327 Conversion
+	  Q155592: XFOR: MSMI Message Tracking Does Not Log Message Size
+	  Q155727: XFOR: DirSync Deletes and Modifies Not Being Processed by DXA
+	  Q155765: XADM: Store Crashes in Ecreleaselogonop
+	  Q156355: XADM: IS Incorrectly Handles a Forward Slash in DDA Value
+	  Q156844: XADM: IS Incorrectly Handles a Forward Slash in DDA Value
+	  Q158151: XFOR: ErrMsg: Event ID 1035 - Unable to Open or Read a Message
+	  Q158590: XCON: Delivery Restrictions Max CPU and Slow Down Msg Delivery
+	  Q159166: XCON: MTA Stops Responding; Event ID 2110
+	  Q160250: OL97: Printout of Item Contains Header But no Body Text
+	  Q160534: XCON: Size Limits May Cause Message Looping
+	  Q160850: XADM: DS_E_BUSY after Directory Service Restore
+	  Q161587: OL97: How to Customize Outlook Calendar Holidays
+	  Q161945: XCON: MSMail Shows Blank Icon for File Attachments from Internet
+	  Q161952: XFOR: Messages Sent with MSMI Are Malformed
+	  Q163750: OL97: Outlook Running With Eudora Pro 3.0 May Cause Errors
+	  Q164136: XCON: MSMail Read Receipts Missing Subject: and To: Information
+	  Q164247: OL97: Outlook Does Not Correctly Show All TAPI Devices
+	  Q164340: XADM: Importing CSV to Directory Causes GPF in MAD
+	  Q164401: OL97: Using Contacts with Insert Address in Word
+	  Q164408: OL97: Imported Fax Numbers May Not Work in Outlook
+	  Q164662: XCON: Message Conversion Fails in MIME Uudecoder
+	  Q164697: XCON: EDK Gateway Gets Directory Name Instead of E-mail Address
+	  Q164839: XCLN: Application Err When MSMail Client Gets the Return Receipt
+	  Q164845: XADM: Access Violation in Srvrmax.exe During Setup
+	  Q164847: XCON: Win95 Client w/ Mail Service Won't Prompt for RAS Callback
+	  Q164852: XCON: Attachments from HP OpenDesk May Not Open
+	  Q164855: XCON: Japanese Exchange May Show a Subject Line of ????????
+	  Q164856: XCON: MTA Fails to Pick Up DN of Servers with Similar Site Names
+	  Q165115: OL97: Outlook Problems Handling Macintosh File Attachments
+	  Q165371: XADM: Error Creating NT Account in Exchange Administrator
+	  Q165412: OL97: Some Outlook Fields Are Offset by One Character
+	  Q165442: XCLN: Client Deletes Existing PST in Absence of Filescan Rights
+	  Q165873: OL97: Sam Translator Error Importing Schedule Plus File
+	  Q166022: OL97: Summary of Changes in Outlook Version 8.02
+	  Q166023: OL97: 8.02 Security Improvements
+	  Q166162: XFOR: MACGATE Access Violation During Generation of Admin Msg
+	  Q166262: OL97: Visual Basic Script Editor Has 32 KB Limit
+	  Q166515: XADM: Primary SMTP Proxy Not Used for Email Address
+	  Q166516: XFOR: Message Body Missing or Truncated While Downloading Msg
+	  Q166518: XADM: New Public Folder Created by INS Defaults to US ASCII
+	  Q166519: XCON: IMS Encapsulates the X.400 O/R Address
+	  Q166521: XFOR: X.400 Address is Encapsulated on SMTP Messages
+	  Q166522: XFOR: From Field Changed when Message Sent to INS
+	  Q166523: XFOR: 5.0 Mapi Causes IMS to be 10% Slower
+	  Q166531: XCLN: Mac Attachments are Unrecognizable After Crossing IMC
+	  Q166532: XFOR: Incorrect Codepage SJIS Used when JIS Set as Default
+	  Q166533: XFOR: Message Body Corruption Due to Ambiguous Codepage
+	  Q166534: XCLN: Synchronization of Offline Folders Over RAS or Net Hangs
+	  Q166536: XCON: MTA Generates Event ID 2187 on Deferred Delivery Message
+	  Q166537: XFOR: NNTP Authentication Denied with Space in NT Password
+	  Q166539: XADM: View-Only Admin can Change the Age Limits on PF
+	  Q166542: XADM: JET_errDatabaseInconsistent After Crash in Soft Recovery
+	  Q166543: XFOR: Migration Wizard Hangs with Invalid Entry in SEC File
+	  Q166545: XFOR: DXA Improperly Appending 001 to Friendly Names in the GAL
+	  Q166546: XCLN: POP Attachments do not Decode
+	  Q166547: XCLN: Mac Client will not Launch on PowerMacs Without Easy Open
+	  Q166548: XADM: Administrators Cannot Add Accounts to Private IS
+	  Q166549: XCLN: Can't Access Proptags in Other Propsets Via Fields.Item()
+	  Q166550: XCLN: Active Messaging App Running as Service Fails
+	  Q166551: XCON: MTA Fails while Rebuilding Routing Table
+	  Q166552: XADM: Starting the IMS Causes the Infomation Store to Stop
+	  Q166553: XCON: Encapsulated Message not Delivered Over X.400 Connector
+	  Q166555: XADM: Address Book Views Fail if Referenced Object is Deleted
+	  Q166556: XADM: Modifying cc:Mail Proxy Address can Cause Double Escapes
+	  Q166557: XCLN: More Secure Launching of Attachments, Freedocs and URL's
+	  Q166558: XFOR: Inbound Internet Message may Cause Access Violation
+	  Q166560: XGEN: German EDB Error Messages not Localized
+	  Q166561: XFOR: CCMC not Handling Bad Messages Correctly
+	  Q166562: XFOR: STORE.EXE GPFs When POP3 Client Submits Bad Message Header
+	  Q166563: XADM: System Attendant Stops While Tracking a Message
+	  Q166564: XCLN: How to Not Convert Outbound Attachments to MacBinary
+	  Q166567: XCON: How to Enable Lowest Cost Routes Only
+	  Q166568: XCLN: Message Created Using MAPI Cannot be Opened
+	  Q166570: XFOR: IMS May Crash When Receiving Message from Pegasus Mail
+	  Q166572: XADM: 5.0 Proxy Address Generator and Scandinavian Characters
+	  Q166573: XFOR: Two attachments Created When Filename Has a Path
+	  Q166576: XFOR: GPF in Store.exe When Doing Fixed Width Font Conversion
+	  Q166577: XFOR: Subject Field for SMTP Outbound Mails not ECU-KR Encoded
+	  Q166580: XFOR: MIME and UUENCODED Messages Cause Store Conversion Error
+	  Q166583: XADM: Folders are Sorted when Non-English Settings are Used
+	  Q166584: XFOR: IMS does not Immediately Reject Inbound Connections
+	  Q166590: XCLN: Searching for Manager Produces Mapi Error
+	  Q166593: XFOR: MSMail Migration Wizard Stops in Progress
+	  Q166595: XFOR: Japanese Web Client Messages Corrupted when Posted
+	  Q166596: XADM: Store Dr. Watson's When Trying To Start
+	  Q166597: XCLN: Outlook Chinese SFS Client Receives NDR's on Replies
+	  Q166599: XCLN: .MMP file Created by Exchange Active Server
+	  Q166600: XCON: Message Subject Lost When Sending to SP3 Exchange Server
+	  Q166602: XCON: Exchange MTA TCP/IP and TP4 connection Limits
+	  Q166604: XFOR: IMS Behind Firewall does not use Second MX Record
+	  Q166605: XFOR: Reply Message to Internet Will have Embedded Text Ticked
+	  Q166606: XFOR: Msgs With Mixed Japanese Encoding not Decoded Correctly
+	  Q166608: XADM: Store Access Violation with error code C0000005
+	  Q166610: XFOR: Unable to Open Attachment from ccMail
+	  Q166612: XADM: Migration from Collabra to Exchange Fails
+	  Q166613: XCLN: Mac Client Can't Logon if NT Account Has Extended Chars
+	  Q166614: XFOR: Attachments Migrated from ccMail are not Viewable
+	  Q166615: XFOR: Message Characters Corrupted When Different Locale Used
+	  Q166616: XFOR: IMS Can Accept RFC821 Addresses Containing an Equal Sign
+	  Q166618: XADM: Batch Export Crashes When Non Zero ulUSNBase is Specified
+	  Q166621: XADM: Gateway out threads not set correctly by Perfwiz.exe
+	  Q166622: XADM: SA Crashes When Generating Offline Address Book
+	  Q166623: XCON: Large Number of Messages with Receipts Can Stay in MTA
+	  Q166624: XADM: Upgrading Active Server Page Scripts
+	  Q166645: OL97: Printed Shared Calendar Uses Wrong Name in Header/Footer
+	  Q167024: XFOR: Cc:Mail Migration Generates Dr. Watson in Mailmig.exe
+	  Q167100: XCLN: Out of Memory errors with Exchange 5.0 16-Bit Client
+	  Q167132: XADM: Access Violation in Store.exe After Upgrading to SP4
+	  Q167139: XFOR: MSMI Reports Errors 2563 and 2450
+	  Q167639: XFOR: MSMI Reports Warning 2597 About Un-installed Codepage
+	  Q168077: XFOR: Ccmail Connector Alias Name Rule not Functioning Properly
+	  Q168119: OL97: Outlook 8.01 Does Not Include CC:Mail Service License
+	  Q168139: XFOR: IMS Inbound Mail Communication Problem
+	  Q168188: XADM: Possible Loss of Mail with Move Mailbox
+	  Q168189: XADM: Unable to Extract Windows NT Account List
+	  Q168216: XADM: DSAMAIN.EXE Maxes CPU When Connecting With a Browser
+	  Q168300: XCLN: Err Msg: Cannot Open Attachment - Format is not Consistent
+	  Q168356: XFOR: Cannot Reply to SMTP Mail Coming from the ccMail Connector
+	  Q168536: XCON: Event ID: 246 An Internal MTA Error has Occurred
+	  Q168586: OL97: Lunar New Year Is a Chinese, Not a Japanese, Holiday
+	  Q168587: OL97: ALT+I in Find Items Causes Outlook to Stop Responding
+	  Q168619: OL97: ErrMsg: Condition is Not Valid Using Timex Wizard
+	  Q168621: OL97: Calendar Disappears in Second Window
+	  Q168622: OL97: Date Prints in Empty User Defined Date/Time Field
+	  Q168623: OL97: ErrMsg: Operation Failed Saving Message with Attachment
+	  Q168625: OL97: Items Deleted From a Shared Mailbox Go to Wrong Folder
+	  Q168626: OL97: Southern Hemisphere Time Zone Appointments Off One Hour
+	  Q168641: OL97: Unable to Resolve Nicknames
+	  Q168642: OL97: Unable to Print a Shared Schedule+ Calendar from Outlook
+	  Q168656: XCON: Given and Surnames Moved to the Front of FROM: Line
+	  Q168767: OL97: Garbled Characters in Imported CC:Mail Bulletin Board
+	  Q168771: XFOR: Read Receipt From MSMail Does not Contain Subject Line
+	  Q168832: OL97: Spelling Checker Does Not Check Words in the Subject Line
+	  Q169060: OL97: Error Occurred While Checking Spelling
+	  Q169076: OL97: Mailto Function Includes Only E-mail Address
+	  Q169163: XCLN: Changes not Proped When Items Added to Fields Collection
+	  Q169167: OL97: Invalid Page Fault Opening Outlook Notes MAPI Folder
+	  Q169174: XFOR: IMS Halts if RFC821 Address Over 1k in Size is Received
+	  Q169200: XADM: Offline Address Book does not Contain all Users
+	  Q169241: OL97: Error in Page Setup Using Acrobat PDFWriter
+	  Q169242: OL97: Viewing Other's Schedule+ Calendar Uses Outlook Calendar
+	  Q169259: OL97: New Nickname Features in Outlook Service Release 1
+	
+	Additional query words: servpack SP1 fix qfe
+	
+	======================================================================
+	Keywords          : kbusage 
+	Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+	Version           : 5.0
+	
+	=============================================================================
+	

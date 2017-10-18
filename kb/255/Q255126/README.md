@@ -1,0 +1,86 @@
+---
+layout: page
+title: "Q255126: PRB: ADSI Err '-2147016694(8007200a)' and '-2147023591(80070519)"
+permalink: kb/255/Q255126/
+---
+
+## Q255126: PRB: ADSI Err '-2147016694(8007200a)' and '-2147023591(80070519)
+
+	Article: Q255126
+	Product(s): Microsoft Exchange
+	Version(s): winnt:2.5,5.5
+	Operating System(s): 
+	Keyword(s): kbADSI kbMsg kbVBp kbGrpDSMsg kbDSupport
+	Last Modified: 23-OCT-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.5 
+	- Microsoft Active Directory Service Interfaces, version 2.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you use Active Directory Service Interfaces (ADSI) to retrieve the Exchange
+	Server 5.5 recipient attribute NT-Security-Descriptor as a binary value, instead
+	of as an ASCII value, you use the binary operator as follows:
+	
+	  set obj = GetObject(AdsPath)
+	  obj.GetInfoEx Array("NT-Security-Descriptor;binary"), 0
+	
+	If you have not installed Exchange Server 5.5 Service Pack 1 (SP1) or later, you
+	may receive the following error:
+	
+	  Run-time '-2147016694(8007200a)' Automation Error The specified directory
+	  service attribute or value does not exist.
+	
+	If your Exchange Server 5.5 is running on Microsoft Windows 2000 and you choose
+	to modify the GetInfoEx command to not include the binary operator, and then
+	attempt to convert a raw security descriptor to an IADsSecurityDescriptor by
+	using the following code:
+	
+	  obj.GetInfoEx Array("NT-Security-Descriptor"), 0
+	  v = obj.Get("NT-Security-Descriptor")<BR/>
+	  Set propVal = CreateObject("PropertyValue")
+	  propVal.PutObjectProperty ADSTYPE_OCTET_STRING, v
+	  Set sd = propVal.GetObjectProperty(ADSTYPE_NT_SECURITY_DESCRIPTOR)
+	
+	you may receive the following error:
+	
+	  Run-time '-2147023591(80070519)' Automation Error The revision level is
+	  unknown.
+	
+	RESOLUTION
+	==========
+	
+	To resolve both errors, install Exchange Server 5.5 Service Pack 1 (SP1) or
+	later, and use the binary operator as follows:
+	
+	  obj.GetInfoEx Array("NT-Security-Descriptor;binary"), 0
+	
+	REFERENCES
+	==========
+	
+	For a complete sample that demonstrates how to retrieve and modify the
+	NT-Security-Descriptor, see the sample "Setting and Modifying the Exchange
+	Security Descriptor" in the Adsi.htm file. The Adsi.htm file is part of the ADSI
+	2.5 Resource Kit, which is available for download from the following Web site:
+	
+	  http://www.microsoft.com/adsi
+	
+	To locate the sample, open Adsi.htm, select Interop, and then click Exchange. You
+	will see the sample listed in the table of contents.
+	
+	
+	Additional query words: -2147016694(8007200a) -2147023591(80070519)
+	
+	======================================================================
+	Keywords          : kbADSI kbMsg kbVBp kbGrpDSMsg kbDSupport 
+	Technology        : kbAudDeveloper kbExchangeSearch kbADSISearch kbExchange550 kbZNotKeyword2 kbADSI250
+	Version           : winnt:2.5,5.5
+	Issue type        : kbprb
+	
+	=============================================================================
+	

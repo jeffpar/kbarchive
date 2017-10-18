@@ -1,0 +1,157 @@
+---
+layout: page
+title: "Q73761: Mac Util: Dial-in Utility ReadMe File"
+permalink: kb/073/Q73761/
+---
+
+## Q73761: Mac Util: Dial-in Utility ReadMe File
+
+	Article: Q73761
+	Product(s): Microsoft Mail For Appletalk Networks
+	Version(s): WINDOWS:3.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 10-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Mail for AppleTalk Networks, version 3.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article contains the version 3.0 Microsoft Mail Dial-In Utility ReadMe file
+	included with the Microsoft Mail Extras disk.
+	
+	Welcome to the Microsoft Mail Dial-In Utility
+	---------------------------------------------
+	
+	The following information supplements information in the "Microsoft Mail Dial-In
+	User's Guide."
+	
+	Turning the Dial-In Utility On and Off
+	--------------------------------------
+	
+	After turning the dial-in utility on or off from the Control Panel, you must
+	restart your Macintosh to have the change take effect. When the dial- in utility
+	is first installed on your Macintosh, it is off.
+	
+	Recommended Modems
+	------------------
+	
+	The dial-in utility has been designed to work with Hayes- compatible modems with
+	a baud rate of 1200-9600. The following modems are fully supported: Hayes
+	Smartmodem series, Hayes V-series modems, Hayes Personal Modem 2400plus, Apple
+	Personal Modem, TouchBase Systems Worldport 2496, and Volksmodem 12.
+	
+	Terminals and Settings
+	----------------------
+	
+	The dial-in utility works with any terminal emulator which supports full VT100
+	emulation. Microsoft Windows Terminal, Microphone II (Software Ventures
+	Corporation), DynaComm (Future Soft Engineering, Inc.), White Knight (The
+	Freesoft Company), ProComm (Datastorm Technologies, Inc.), and most other
+	communication programs support VT100 emulation.
+	
+	Your terminal should be set for 8 data bits, 1 stop bit, and no parity. Make sure
+	Local Echo is off and there is no Xon/Xoff flow control.
+	
+	Dial-In User List Limitations
+	-----------------------------
+	
+	Clicking Add/Remove Users from the Control Panel brings up the list of all
+	Microsoft Mail users in the current Mail site. This process may take up to a
+	minute in a very large site. If the Mail site contains 800 users or more, the
+	dial-in utility may not be able to display all of them. If you have a very large
+	Mail system, you should configure it into sites to most effectively use the
+	dial-in utility. (See Appendix B in the Network Manager's Guide.)
+	
+	Because of memory limitations, you cannot give more than 800 users access to a
+	single dial-in machine.
+	
+	Timing Considerations
+	---------------------
+	
+	If a dial-in user is connected for six minutes without typing anything, the
+	dial-in utility will log the user out to prevent unwanted phone charges and to
+	give other users a chance to call in.
+	
+	If the modem connected to the Macintosh running the dial-in utility software is
+	turned on after the Macintosh is started, it may take up to five minutes before
+	the utility has registered with the modem and can begin answering calls.
+	
+	MS Mail Cache
+	-------------
+	
+	The dial-in user list is stored in the MS Mail Cache file in the System Folder of
+	the Macintosh running the dial-in utility. If this file is deleted or moved out
+	of the system folder, all dial- in users will be removed and you will need to
+	build up a new dial-in user list.
+	
+	Performance
+	-----------
+	
+	The speed of the modem connection has the most significant impact on the
+	performance of the dial-in utility. Additionally, the dial-in utility should be
+	installed on a Macintosh which is running Finder (rather than MultiFinder) and
+	which is not used heavily for other purposes.
+	
+	Compatibility Issues
+	--------------------
+	
+	The dial-in utility is incompatible with the screen saver After Dark.
+	
+	You should not attempt to run a Microsoft Mail gateway, terminal emulator, or
+	other program which interacts with the modem port when the dial-in utility is
+	loaded. The dial-in utility exclusively controls the modem port while it is
+	running.
+	
+	Reply All
+	---------
+	
+	If you reply to all recipients of a message, the dial-in utility displays a Send
+	window addressed to "<All Original Recipients>". If you wish to address
+	the message to other recipients, you can add their names after "<All Original
+	Recipients>" or in the Cc or Bcc fields.
+	
+	Forwarding Enclosures
+	---------------------
+	
+	Enclosures cannot be attached to messages which are sent from the dial-in
+	utility, but enclosures remain attached to messages which are forwarded from the
+	dial-in utility.
+	
+	Redrawing the Screen
+	--------------------
+	
+	If line noise or other problems cause your terminal output to become cluttered,
+	press CTRL+R. This will redraw the screen.
+	
+	Insert and Overstrike Compose Mode
+	----------------------------------
+	
+	The dial-in utility supports both insert and overstrike from the Send window.
+	When insert mode is in effect, typed characters are inserted at the cursor
+	position without typing over previously entered text. When overstrike mode is in
+	effect, typed characters replace characters after the cursor with the characters
+	you type. By default, the dial-in utility is in insert mode. Pressing CTRL+V
+	toggles between the two modes.
+	
+	Custom Messages
+	---------------
+	
+	Image and other nontext messages can be read from the dial-in utility, but only
+	the text portions of these messages will be displayed.
+	
+	
+	Additional query words: 3.00
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMailSearch kbZNotKeyword3 kbMailATN300
+	Version           : WINDOWS:3.0
+	
+	=============================================================================
+	

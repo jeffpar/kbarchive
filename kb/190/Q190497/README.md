@@ -1,0 +1,88 @@
+---
+layout: page
+title: "Q190497: PRB: List Box Becomes Distorted Counting the Selected Items"
+permalink: kb/190/Q190497/
+---
+
+## Q190497: PRB: List Box Becomes Distorted Counting the Selected Items
+
+	Article: Q190497
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:5.0,5.0a
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 11-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When using the Selected property to count the number of items in a list box, the
+	visual display of the list box becomes distorted if some of the items are
+	unselected. The counting of the selected items must be done in the
+	InterActiveChange event for the distortion to occur.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products listed at
+	the beginning of this article. We are researching this problem and will post new
+	information here in the Microsoft Knowledge Base as it becomes available.
+	
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Create a form in Visual FoxPro and add a list box to it.
+	
+	2. Select New Property from the Form menu and in the New Property dialog box,
+	  type Listarray(100) into the Name text box.
+	
+	3. Add the following code to the Init of the List box:
+	
+	        FOR I = 1 TO 100
+	              Thisform.Listarray[i] = "Array"+ALLTRIM(STR(i))
+	        ENDFOR
+	
+	4. Add the following code to the InteractiveChange event of the List box.
+	
+	        xcount = 0
+	        FOR x = 1 TO This.ListCount
+	              IF This.Selected(x) = .T.
+	                   Xcount = xcount + 1
+	              ENDIF
+	        ENDFOR
+	
+	5. Set the list box properties RowSource to 5 - Array and the RowSourceType
+	  property to Thisform.Listarray. Set the MultiSelect property to .T. - True.
+	
+	6. Run the form and click on the first item in the list box. Hold the Shift key
+	  down and press the DownArrow key until all of the items are highlighted in
+	  the list box.
+	
+	7. Release the Shift key and scroll back to the top of the list box with the
+	  mouse or press the PageUp key.
+	
+	8. Press the Ctrl key and click on three or four of the items in the list box to
+	  clear them. Note that as more of the list box items become cleared, the more
+	  distorted the list box becomes.
+	
+	Additional query words: kbbeta kbVFp500abug kbXBase
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP500a
+	Version           : WINDOWS:5.0,5.0a
+	Issue type        : kbprb
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

@@ -1,0 +1,106 @@
+---
+layout: page
+title: "Q65670: Saving Resources Using Multiple PROGMAN.INI Files"
+permalink: kb/065/Q65670/
+---
+
+## Q65670: Saving Resources Using Multiple PROGMAN.INI Files
+
+	Article: Q65670
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:3.0,3.0a
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 02-OCT-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows versions 3.0, 3.0a 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	It's possible to avoid low-resource problems in Microsoft Windows version 3.0 by
+	altering the number of Program Groups contained in Program Manager. A convenient
+	way of doing this is by using multiple PROGMAN.INI files.
+	
+	MORE INFORMATION
+	================
+	
+	Program Manager uses the PROGMAN.INI file to determine the groups it can use
+	when it is running. If you run Windows sessions in which you will not be using
+	programs in some groups, you can create separate PROGMAN.INI files for those
+	sessions in which the unused group will not appear and save on system
+	resources.
+	
+	For example, if you have several applications that were written for previous
+	versions of Windows, you must run them in real mode. When running in 386
+	enhanced mode, these applications need not be present in Program Manager. To
+	open Windows with only the necessary groups in Program Manager, do the
+	following:
+	
+	1. In Program manager, create a group called Old Windows Application, which
+	  contains these applications.
+	
+	2. Open Notepad.
+	
+	3. From the File menu, choose Open.
+	
+	4. Type "PROGMAN.INI" (without the quotation marks).
+	
+	5. From the File menu, choose Save As.
+	
+	6. Type "PROGMAN.REL" (without the quotation marks), then choose OK (this will
+	  be the PROGMAN.INI file for real mode).
+	
+	7. While still in Notepad, delete the line that refers to the Old Windows
+	  Applications group ("GROUP#=C:\WINDOWS\OLDWINDO.GRP" (without the quotation
+	  marks)).
+	
+	8. From the File menu, choose Save As.
+	
+	9. Type "PROGMAN.ENH" (without the quotation marks) then choose OK. (This will
+	  be the PROGMAN.INI file for 386 enhanced mode.)
+	
+	10. From the File menu, choose New (to create a batch file for the real-mode
+	  PROGMAN.INI).
+	
+	11. Enter the following lines (substitute the correct path):
+	
+	         COPY C:\WINDOWS\PROGMAN.REL C:\WINDOWS\PROGMAN.INI
+	         WIN /R
+	
+	12. From the File menu, choose Save As.
+	
+	13. Type "RWIN.BAT" (without the quotation marks) and choose OK.
+	
+	14. From the File menu, choose New (to create a batch file for the enhanced mode
+	  PROGMAN.INI).
+	
+	15. Still in Notepad, alter the lines to read as follows:
+	
+	         COPY C:\WINDOWS\PROGMAN.ENH C:\WINDOWS\PROGMAN.INI
+	         WIN /3
+	
+	16. From the File menu, choose Save As.
+	
+	17. Type "EWIN.BAT" (without the quotation marks) and choose OK.
+	
+	18. Exit Notepad and exit Windows.
+	
+	To start Windows in real mode, type "RWIN", then press ENTER at the MS-DOS
+	prompt. To start in enhanced mode, type "EWIN", then press ENTER at the MS-DOS
+	prompt. This will start Windows in the appropriate mode with the correct Program
+	Groups.
+	
+	Additional query words: 3.00 3.0 3.0a 3.00a winmem
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+	Version           : WINDOWS:3.0,3.0a
+	
+	=============================================================================
+	

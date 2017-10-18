@@ -1,0 +1,131 @@
+---
+layout: page
+title: "Q162230: Fragmentation and Performance Issues with PPTP Connections"
+permalink: kb/162/Q162230/
+---
+
+## Q162230: Fragmentation and Performance Issues with PPTP Connections
+
+	Article: Q162230
+	Product(s): Microsoft Windows NT
+	Version(s): 4.0
+	Operating System(s): 
+	Keyword(s): kbnetwork kbWinNT400sp4fix
+	Last Modified: 21-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 4.0 
+	- Microsoft Windows NT Server version 4.0 
+	- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+	- Microsoft Routing and Remote Access Service Update for Windows NT Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	
+	IMPORTANT: This article contains information about editing the registry.
+	Before you edit the registry, make sure you understand how to restore it
+	if a problem occurs. For information about how to do this, view the
+	"Restoring the Registry" Help topic in Regedit.exe or the "Restoring a
+	Registry Key" Help topic in Regedt32.exe.
+	
+	SYMPTOMS
+	========
+	
+	Performance degradation may occur when you use Point-to-Point Tunneling Protocol
+	(PPTP) connections.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, obtain the latest service pack for Windows NT 4.0 or
+	Windows NT Server 4.0, Terminal Server Edition. For additional information,
+	please see the following article in the Microsoft Knowledge Base:
+	
+	  Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+	
+	
+	This hotfix does the following:
+	
+	- Corrects an issue in TCP/IP that occasionally generates packets larger than
+	  1,500 bytes.
+	
+	- Corrects a resource allocation issue in TCP/IP that causes the stack (under
+	  heavy load) to drop forwarded packets instead of allocating more memory.
+	
+	- Changes the MTU for IP connections over NDISWan down to 1,400. This helps to
+	  keep from fragmenting when you are connecting with PPTP directly across a
+	  LAN.
+	
+	If your PPTP connection is exhibiting any of these types of behavior, please
+	obtain the following fix or wait for the next Windows NT service pack.
+	
+	NOTE: Ndiswan.sys is the 40-bit version and Ndiswand.sys is the 128-bit version
+	of this file. If you are using 128-bit encryption, you will need to install
+	Ndiswand.sys and rename it to Ndiswan.sys to retain your encryption.
+	
+	After you apply the fix, shut down and restart your computer.
+	
+	WARNING: Using Registry Editor incorrectly can cause serious problems that may
+	require you to reinstall your operating system. Microsoft cannot guarantee that
+	problems resulting from the incorrect use of Registry Editor can be solved. Use
+	Registry Editor at your own risk.
+	
+	For information about how to edit the registry, view the "Changing Keys And
+	Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+	Information in the Registry" and "Edit Registry Data" Help topics in
+	Regedt32.exe. Note that you should back up the registry before you edit it.
+	
+	Registry Change
+	---------------
+	
+	The registry change below can be used to increase performance on a reliable
+	network. If the network is unreliable or congested, this setting should be set
+	to the default value; otherwise, set this value to 8.
+	
+	NOTE: This registry change is not a requirement for the hotfix itself, but should
+	be used to gain performance under reliable conditions.
+	
+	1. Run Registry Editor (Regedt32.exe).
+	
+	2. Go to the following key:
+	
+	  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Raspptpe
+	  \Parameters\Configuration
+	
+	  NOTE: The above registry key is one path; it has been wrapped for readability.
+	
+	3. Click Add Value on the Edit menu.
+	
+	4. Add the following value:
+	
+	  Value Name: RxPacketWindow
+	  Data Type: REG_DWORD
+	  Data: 2 (default)
+	
+	  Set the data value to 8.
+	
+	5. Click OK and then quit Registry Editor.
+	
+	6. Shut down and restart Windows NT.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Windows NT 4.0 and Windows NT
+	Server 4.0, Terminal Server Edition. This problem was first corrected in Windows
+	NT 4.0 Service Pack 4.0 and Windows NT Server 4.0, Terminal Server Edition
+	Service Pack 4.
+	
+	
+	
+	Additional query words: 4.00 exchange
+	
+	======================================================================
+	Keywords          : kbnetwork kbWinNT400sp4fix 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch kbAudDeveloper kbRRASNTSearch kbRRASNT400
+	Version           : :4.0
+	Issue type        : kbbug
+	
+	=============================================================================
+	

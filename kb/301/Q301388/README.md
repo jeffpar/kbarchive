@@ -1,0 +1,155 @@
+---
+layout: page
+title: "Q301388: HOW TO: Upgrade from IIS 4.0 to IIS 5.0"
+permalink: kb/301/Q301388/
+---
+
+## Q301388: HOW TO: Upgrade from IIS 4.0 to IIS 5.0
+
+	Article: Q301388
+	Product(s): Internet Information Server
+	Version(s): 4.0,5.0
+	Operating System(s): 
+	Keyword(s): kbHOWTOmaster
+	Last Modified: 10-APR-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Services version 5.0 
+	- Microsoft Internet Information Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	
+	IN THIS TASK
+	------------
+	
+	- Summary
+	
+	   - Requirements
+	- Back Up the Metabase
+	- Upgrade the Operating System to Windows 2000 Server
+	- Troubleshooting
+	
+	- REFERENCES
+	
+	SUMMARY
+	=======
+	
+	This article describes how to upgrade from Microsoft Windows NT Server Internet
+	Information Server (IIS) 4.0 to Microsoft Windows 2000 Internet Information
+	Services (IIS) 5.0.
+	
+	
+	Requirements
+	------------
+	
+	The minimum requirements for IIS 5.0 closely match the requirements for Microsoft
+	Windows 2000 Professional, Microsoft Windows 2000 Server, and Microsoft Windows
+	2000 Advanced Server. Although the hardware requirements for IIS 5.0 depend
+	heavily on the amount of traffic that the server will experience, the following
+	system hardware should meet the needs of most environments:
+	
+	- Processor: 400 MHz Pentium II (or faster)
+	
+	- RAM: 128 MB (or more)
+	- Connection: 100MB/Sec. Network Card
+	- Drive: SCSI Single Drive or SCSI Array
+	
+	Important: Microsoft highly recommends that you replicate the server's Web site
+	content and configuration settings to another server before you upgrade your Web
+	server.
+	
+	Back up the IIS Metabase
+	------------------------
+	
+	Before you upgrade the Web server with Windows 2000 Server, back up the IIS
+	metabase file. To back up the IIS metabase:
+	
+	1. In the IIS management console, right-click the server name (for example, in
+	  the Internet Information Server folder: *mywebserver), and then click
+	  Backup/Restore Configuration.
+	
+	2. Click Create Backup.
+	
+	3. In the Configuration Backup Name text box, type a name for the backup, and
+	  then click OK.
+	
+	For information on how to create a backup of the metabase for IIS 4.0, see the
+	"References" section of this article, which contains a URL link to detailed
+	instructions.
+	
+	NOTE: When you backup the metabase, a file is created with the name
+	<backup_name>.md0 (the last character in the extension is a zero; not the
+	letter O). The file is stored in the %SystemRoot%\System32\Inetsrv\Iis.msc
+	folder.
+	
+	Data Recovery Recommendations:
+	
+	Best practice dictates that you ensure that all critical data is backed up to
+	either a remote share or tape prior to the upgrade. This should include the
+	metabase backup file that you just created and stored in the
+	%SystemRoot%\System32\Inetsrv\Iis.msc folder, as well as all Web content.
+	
+	Upgrade the Operating System to Windows 2000 Server
+	---------------------------------------------------
+	
+	1. Insert the Windows 2000 compact disc into the CD-ROM drive. If AutoPlay is
+	  enabled, the Windows 2000 Setup Wizard should start. If not, run Setup.exe
+	  from the CD-ROM drive.
+	
+	2. Click Upgrade to Windows 2000, click Next, and then follow the instructions
+	  provided by the Windows 2000 Setup Wizard.
+	
+	By default, IIS 5.0 installs during the installation of Windows 2000 Server and
+	Windows 2000 Advanced Server. When you upgrade from Windows NT Server 4.0 to
+	Windows 2000, IIS 4.0 is automatically upgraded to 5.0.
+	
+	NOTES:
+	
+	- IIS 5.0 files are copied into the INETSRV folder. Existing IIS 4.0 files are
+	  overwritten.
+	
+	- IIS 5.0 uses the existing IIS 4.0 metabase file. All configuration options
+	  from IIS 4.0 are left in place. IIS 5.0 sets default values in the metabase
+	  for new features that are included in IIS 5.0, such as World Wide Web
+	  Distributed Authoring and Versioning (WebDAV) and HTTP Compression.
+	
+	- IIS 5.0 uses the existing IIS 4.0 IUSR_<computername> and
+	  IWAM_<computername> accounts.
+	
+	Troubleshooting
+	---------------
+	
+	Unlike IIS 4.0, which allows you to specify the location of the Web and FTP root
+	folders, Windows 2000 automatically places everything in the Inetpub folder on
+	the system drive. The only way to install IIS 5.0 on a different drive is to
+	perform an unattended installation. For information about unattended
+	installations, see the Microsoft Knowledge Base article, Q259671 "How to Change
+	the Default Installation Paths for FTP and the Web" (listed in the "References"
+	section of this article), the Deployment Planning Guide in the Windows 2000
+	Resource Kit, and the "Microsoft Windows 2000 Guide to Unattended Setup"
+	(Unattend.doc), which is located in the Support\Tools\Deploy.cab folder on the
+	Windows 2000 CD-ROM.
+	
+	REFERENCES
+	==========
+	
+	For additional information, click the article numbers below to view the articles
+	in the Microsoft Knowledge Base:
+	
+	  Q300675 HOW TO: Create a Metabase Backup by Using Internet Information Server
+	  4.0
+	
+	  Q259671 How to Change the Default Installation Paths for FTP and the Web
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbHOWTOmaster 
+	Technology        : kbiisSearch kbiis500 kbiis400
+	Version           : :4.0,5.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

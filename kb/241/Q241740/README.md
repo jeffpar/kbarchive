@@ -1,0 +1,247 @@
+---
+layout: page
+title: "Q241740: XGEN: List of Bugs Fixed in Exchange Server 5.5 Service Pack 3"
+permalink: kb/241/Q241740/
+---
+
+## Q241740: XGEN: List of Bugs Fixed in Exchange Server 5.5 Service Pack 3
+
+	Article: Q241740
+	Product(s): Microsoft Exchange
+	Version(s): 5.5 SP3
+	Operating System(s): 
+	Keyword(s): exc55sp3kbfixlist
+	Last Modified: 03-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.5 SP3 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article is part two of a current listing of the article numbers for bugs
+	that are fixed in Exchange Server 5.5 Service Pack 3
+	(http://www.microsoft.com/exchange/downloads/55/sp3.asp). Use the Qxxxxxx number
+	that precedes the title of the bug fix to query the Microsoft Knowledge Base to
+	find an article about that bug.
+	
+	Please see the following article in the Microsoft Knowledge Base for part two of
+	this list:
+	
+	  Q235453 XGEN: List of Bugs Fixed in Exchange Server 5.5 Service Packs (Part
+	  1)
+	
+	NOTE: Exchange Server service packs are cumulative and contain all fixes included
+	in earlier service packs. For example, Exchange Server 5.5 Service Pack 3
+	contains all fixes included in Exchange Server 5.5 Service Pack 1 and 2. You do
+	not need to install an earlier service pack before you install Exchange Server
+	5.5 Service Pack 3.
+	
+	For information about bug fixes included in earlier Exchange Server 5.5 service
+	packs, please see the following article in the Microsoft Knowledge Base:
+	
+	  Q242221 XGEN: List of Bugs Fixed in Exchange Server 5.5 Service Pack 1
+	
+	  Q242222 XGEN: List of Bugs Fixed in Exchange Server 5.5 Service Pack 2
+	
+	MORE INFORMATION
+	================
+	
+	SERVICE PACK 3
+	
+	  Q227142 XFOR: The cc:Mail Connector May not Deliver Some Messages with
+	  Attachments
+	  Q228534 XFOR: DBCS Attachment Name Disappears When Sending a Mail by Means of
+	  CCMC
+	  Q228743 XFOR: NDR Message from Downstream cc:Mail PO Doesn't Name Unreachable
+	  Recipient
+	  Q228998 XADM: Trailing Space in the Domain Name Allowing Mail to Route
+	  Incorrectly
+	  Q229089 XADM: Unable to Reply All to Forwarded Post from a Public Folder
+	  Q229114 XFOR: InterOrg Fails to Replicate Public Folder
+	  Q229314 XFOR: Lotus cc:Mail Migration Fails when PO Name Contains
+	  Non-AlphaNumeric Characters
+	  Q229498 XIMS: Cannot Change Nickname After Default Has Been Assigned
+	  Q229631 XFOR: InterOrg Fails to Replicate Public Folder if Folder Name Has
+	  Backslash
+	  Q229643 XCON: 9156 Errors Occur after Applying Exchange 5.5 Service Pack 2
+	  Q229648 XADM: Sent Field Displayed Incorrectly in Forwarded Message
+	  Q229688 XIMS: Chat Service Returns List of All Users When WHO Command Is Sent
+	  Without Parameters
+	  Q229729 XWEB: Inetinfo.exe Stops Running During Anonymous MAPI Logon Process
+	  Q230051 XFOR: Internet Mail Connector Dial-Up Connection Stops Working
+	  Q230215 XADM: Backup Checksuming Not Performed on Single Processor Computers
+	  Q230273 XWEB: OWA Creates English Special Folders (Contacts, Calendar ...)
+	  During First Logon
+	  Q230285 XADM:"Denial of service" Vulnerability in Store with IMAP
+	  Q230288 XFOR: NDR from Internet Mail Service Contains Incorrect 3-Byte Reason
+	  Code Sent to X.400 Connector
+	  Q230331 XFOR: SMTP Address Generator May Include Multiple Consecutive Periods
+	  in the Address
+	  Q230563 XADM: Information Store Crash in FreePadrlist:padrlist
+	  Q230691 XADM: Space Tree Fragmentation in Exchange Database Engine Can Degrade
+	  Server Performance
+	  Q230691 XADM: Space Tree Fragmentation in Exchange Database Engine Can Degrade
+	  Server Performance
+	  Q230769 XADM: Information Store Stops During RTF or HTML Conversion
+	  Q230780 XADM: Cannot Start KM Service After Upgrading to V3 Certificates
+	  Q231303 XFOR: New Feature for Setting Size Limit for Internet Mail Service
+	  Q231307 XADM: KM Server Issues V1 Certificate When Configured to Issue V3
+	  Only
+	  Q231411 XCON: Embedded X.400 Message is Incorrectly Opened Using the Message
+	  Compose Window
+	
+	
+	  Q231748 XADM: A Certain Pattern in Address Fields in SMTP Messages Causes
+	  Information Store to Crash
+	  Q231751 XADM: Cannot Renew Signing Key After Applying SP2 for Exchange Server
+	  version 5.5
+	  Q231799 XCON: MIME Messages Sent Using Outlook Express Receive an NDR
+	  Q231803 XADM: CC Recipient Lost in P2 When BCC Is Present on a Lotus cc:Mail
+	  Message
+	  Q231818 XCON: P1 Headers Containing Very Long Object IDs Cause the MTA to
+	  Crash
+	  Q231967 XADM: Isinteg Has Been Modified to Dump the Mailbox Table
+	  Q231969 XADM: IS/DS Check Does Not Recreate Deliv-Ext-Cont-Types for Mailbox
+	  Q231974 XFOR: Notes Connector Doesn't Restart
+	  Q231992 XFOR: Enabling/Disabling Meeting Request Support with PROFS/Notes
+	  Connectors
+	  Q232076 XFOR: Notes Connector Access Violation During Message Conversation
+	  when Address Is 256 Bytes Long
+	  Q232279 XCON: Internet Mail Service Stops with Event IDs 4102 and 4182
+	  Q232370 XCON: MTA Loses Attachment on FTBP Messages with No Subject
+	  Q232384 XFOR: Information Store Does Not Recognize Double Angle Brackets
+	  Correctly
+	  Q232388 XCON: MTA Content Conversion Error
+	  Q232391 XADM: Duplicate Messages are Received When Message is Sent to Large DL
+	  and Recipient's Quotas are Exceeded
+	  Q232396 XCON: Content Conversion Failures Result in Reroutes to Another Server
+	  in the Site
+	  Q232448 XFOR: Netscape 4.x Cannot Delete Appointments in Calendar Using OWA
+	  Q232471 XFOR: Replication from Lotus Notes to Exchange Server Displays
+	  Inconsistent Times
+	  Q232579 XCON: Wrong Encoding of Extended Characters
+	  Q232586 XCON: X.400 MTA Logs "Loop Detected" Error Message When Receiving a
+	  Message from Exchange Server
+	  Q232599 XADM: Exchange Server Creating Illegal JIS Encoded Text
+	  Q232600 XADM: Message Using Non-GAPI Code Page Is Not Converted Properly
+	  Q232602 XCON: MTA Fails to Recover Associations Following Network Problems
+	  Q232604 XCON: MTA Is Leaking During Content Conversion
+	  Q232606 XIMS: Exchange Server 5.5 LDAP Service Running on Windows 2000
+	  Q232656 XCON: MTA X.400 1988 to 1984 Downgrade Failure Causes NDR
+	  Q232687 XFOR: Cannot Send Messages to cc:Mail Recipients After Directory
+	  Synchronization
+	  Q232713 XCON: Message Arrives with Blank To and From Fields
+	  Q232767 OL2000: Integrity Check For Client OAB
+	  Q233054 XFOR: Migration Wizard Stops Processing Messages When Passed Bad
+	  Attribute
+	  Q233236 XFOR: Chinese Outlook MSMail Users Receive NDRs Sending to Exchange
+	  Server
+	  Q233284 XADM: Installing Event Service after Exchange Server Setup Causes
+	  Unwanted Public Folder Replications
+	  Q233319 XFOR: INMR01 Record Doesn't Have All Recipient Addresses When Sending
+	  Attachments with CMS/Netdata Format
+	  Q233325 XFOR: Migration from cc:Mail Stops after Encountering an Invalid Date
+	  Q233512 XIMS: Chat Service Ends Connection When Client Does Not Send Data for
+	  10 Minutes
+	  Q234175 XADM: Store May Stop Responding When Generating a DR to an SMIME
+	  Message
+	  Q234350 XFOR: Cannot Send Message with Brackets in Subject Field Through
+	  Connector for cc:Mail
+	  Q234432 XADM: Running Isinteg May Truncate Databases to 8 KB
+	  Q234630 XADM: Event Scripts Fail with Error 0x800401f0 (CO_E_NOTINITIALIZED)
+	  after Installing Exchange 5.5 SP2
+	  Q234671 XWEB: IIS May Not Work When OWA Is Being Heavily Accessed
+	  Q234745 XFOR: Corrupted Message Causes CCMC to Stop Inbound Traffic and Engage
+	  90 Percent of CPU
+	  Q234764 XADM: Eseutil Ends with -1808 (Jet_ErrDiskFull) on /P or /G
+	  Q234869 XADM: Multi-Valued String Array MAPI Property is Not Being Copied from
+	  Store to Store
+	  Q235051 XADM: Disabling Clear Text Authentication for POP3 Also Disables SSL
+	  Clear Text Authentication
+	  Q235059 MAPI Crashes When Using COM Multithread Model
+	  Q235219 XADM: Too Many Consecutive CRLF Characters Truncate Message or Cause
+	  Information Store to Stop Responding
+	  Q235223 XADM: Cannot Configure Dial-Up Connections in the German Version of
+	  Exchange Server
+	  Q235228 XWEB: OWA Stops Responding after Applying Exchange Server 5.5 SP2
+	  Q235372 XADM: Display Name Corrupts and Information Store Stops Frequently
+	  Q235392 XADM: Slow Intra-Site Replication on Multi-Processor Server
+	  Q235455 XCON: Modification in X.400 Blind Copy Implementation
+	  Q235464 XADM: Server Indicates Certificate Was Imported After You Cancel
+	  Operation
+	  Q235533 XIMS: Refreshing MTS-OUT Queue Causes Application Error in
+	  Msexcimc.exe
+	  Q235534 XCON: MTA Logs Errors 2124, 2175 on Invalid Incoming X.400 Message
+	  Q235607 XADM: HTML in Subject Field Is Not Converted Properly When Message Is
+	  Forwarded
+	  Q235619 XIMS: Clients Being Disconnected or Receive Channel Collision Messages
+	  from Microsoft Exchange Chat Service
+	  Q235627 XIMS: AUTH LOGIN Command Must Use Base-64-Encoded User Name and
+	  Password
+	  Q235659 XFOR: Lsmexnts Access Violation When Sending Recurring Meeting
+	  Request
+	  Q235679 XADM: Slow Performance When Opening Unread Item from Public Folder
+	  with Many Restrictions
+	  Q235699 XFOR: Meetings with Attachments Incorrectly Migrated from GroupWise
+	  4.x
+	  Q235965 XADM: Message Forwarded Through Chinese Traditional Client Not
+	  Displayed Correctly
+	  Q236156 XADM: Permissions for Viewing Client Permissions on Public Folders
+	  Q236170 XCLN: Event Service Stops with Event ID 5
+	  Q236311 XIMS: WHO Command with Wildcard Characters Causes Server to End Portal
+	  Connection
+	  Q236335 XFOR: The To Field is Empty if a User Sends Mail with AT Command from
+	  the OV/VM
+	
+	
+	  Q236426 XADM: Information Store or Directory Service Appear Hung
+	
+	
+	  Q236586 XCON: Mail Flow Stops with MTA Event ID 4287, Error Code 8640
+	  Q236788 XIMS: URL Not Formatted Properly in IMAP Referral Response
+	  Q236882 XIMS: Addresses Separated by Spaces in IMAP4 Envelope
+	  Q236900 XFOR: Notes Connector Corrupts CR Display Name When Dirsync Occurs
+	  over a Slow WAN Link
+	  Q236910 XIMS: Cannot Open IMS Dial-Up Connections Tab on Windows 2000 Server
+	  Computer
+	  Q237182 XFOR: MSMI Fails with Unknown Exception While MTA Delivers Message
+	  Q237187 XCON: MTA Performs Excessive Context Switching During Heavy Message
+	  Traffic
+	  Q237327 XFOR: Server Advertises STARTTLS Even Though SSL Certificate Not
+	  Available
+	  Q237421 XCON: Euro Displayed Incorrectly After Being Sent Through X.400
+	  Connector
+	  Q237422 XADM: ESEUTIL /P Aborts with -1605, JET_errKeyDuplicate
+	  Q237544 XADM: Unable to Connect Using IMAP/SSL
+	  Q237876 XADM: Cyrillic Characters in TNEF Not Converted Properly
+	  Q237927 XIMS: Messages Sent to Encapsulated SMTP Address Are Rerouted Even
+	  Though Rerouting Is Disabled
+	  Q237953 XADM: Erroneous -1018 Error Returned During Online Backup
+	  Q238429 XADM: Messages Auto Forwarded to an Invalid Internet Address Appear to
+	  Create a Looping Message
+	  Q238491 XCON: Exchange Server Message Transfer Agent MIME Internet X.400
+	  Enhanced Relay - MIXER
+	  Q238838 XCON: Delivery Reports Are No Longer Received After Upgrading to
+	  Exchange Server 5.5 SP2
+	  Q238911 XADM: Delegate Stops Receiving Meeting Requests
+	  Q239082 XIMS: IMAP4 Client Hangs Attempting to Append Message Using SSL
+	  Q240788 XIMS: Outbound Limitation Works Improperly in Exchange Server Internet
+	  Mail Service 26xx
+	
+	
+	
+	
+	Additional query words: servpack
+	
+	======================================================================
+	Keywords          : exc55sp3 kbfixlist
+	Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange550SP3
+	Version           : :5.5 SP3
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

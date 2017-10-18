@@ -1,0 +1,106 @@
+---
+layout: page
+title: "Q189740: BUG: Class Builder Does Not Handle Base Classes Properly"
+permalink: kb/189/Q189740/
+---
+
+## Q189740: BUG: Class Builder Does Not Handle Base Classes Properly
+
+	Article: Q189740
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbGrpDSVB
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The Class Builder Utility incorrectly displays derived classes and base class
+	properties.
+	
+	RESOLUTION
+	==========
+	
+	Before creating a derived class, select the appropriate base class in the Class
+	pane. In the Class Module Builder dialog, select the base class in the Based On
+	list and check the box for "This Class is a Top Level Object."
+	
+	Alternatively, create the derived class directly with code, without using the
+	class builder utility.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article. We are researching this bug and will post new
+	information here in the Microsoft Knowledge Base as it becomes available.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Add the following classes using the Class Builder Utility:
+	
+	   - Add a class called Person; with two properties Age and FirstName.
+	
+	   - Add a class called Employee based on Person.
+	
+	   - Add a class called Customer based on Person.
+	
+	  At this point you will find that Customer is actually subordinate to Employee
+	  instead of Person; this would seem to be wrong because we indicated that
+	  Customer was supposed to be based on Person. Instead, Customer was based on
+	  the Employee class because that was the selected class in the Classes pane.
+	
+	2. Delete the Customer class.
+	
+	3. Select the Person class in the Classes pane.
+	
+	4. Add a class called Customer based on Person.
+	
+	  This creates a perceived hierarchy of classes in the Class pane, but Employee
+	  and Customer were created as components of Person, rather than derivatives.
+	  Examine the properties of each class to see that Person has both Customer and
+	  Employee as additional properties. Customer has Employee as a property and
+	  Employee has no properties.
+	
+	To workaround this problem, do the following:
+	
+	1. Delete the Employee and Customer classes.
+	
+	2. Select the Person class and create a new class. Choose Person in the Based On
+	  list and check the box for "This Class is a Top Level Object."
+	
+	  When this new class is created, view its properties and note that it has the
+	  same properties as Person. Also note that the new class is at the same
+	  "level" in the Class pane as the Base class. This is correct; a derived class
+	  is not a subordinate or child of the base class.
+	
+	REFERENCES
+	==========
+	
+	Books Online for Microsoft Visual Basic, version 5.0
+	
+	Books Online for Microsoft Visual Basic, version 6.0
+	
+	Additional query words: kbDSupport kbdss kbVBp500bug kbWizard kbVBp kbVBp600bug
+	
+	======================================================================
+	Keywords          : kbGrpDSVB 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+	Issue type        : kbbug
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

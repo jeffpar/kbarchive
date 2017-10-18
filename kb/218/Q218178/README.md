@@ -1,0 +1,177 @@
+---
+layout: page
+title: "Q218178: Access Violation in SNASERVR!SNPUGETC"
+permalink: kb/218/Q218178/
+---
+
+## Q218178: Access Violation in SNASERVR!SNPUGETC
+
+	Article: Q218178
+	Product(s): Microsoft SNA Server
+	Version(s): WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1,4.0SP2
+	Operating System(s): 
+	Keyword(s): kbsna300sp4fix kbsna400sp3fixkbbuglist
+	Last Modified: 08-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 3.0, 3.0SP1, 3.0SP2, 3.0SP3, 4.0, 4.0SP1, 4.0SP2 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	The SNA Server service (Snaservr.exe) may fail unexpectedly with an access
+	violation in function snpugetc. This failure may occur when receiving an invalid
+	formatted General Data Stream (GDS) variable from a mainframe. If Drwtsn32.exe
+	is configured as the default debugger on the SNA Server system, the Drwtsn32.log
+	file may contain an entry similar to the following when this access violation
+	occurs:
+	
+	  Application error:
+	          Application: exe\snaservr.dbg (pid=259)
+	          11/26/1998 @ 8:56:47.484
+	          Error: c0000005 (Access violation)
+	  Function: snpugetc
+	          0100a5ca 8d4e06           lea     ecx,[esi+0x6]
+	  ds:0120ea06=????????
+	          0100a5cd 2bdd             sub     ebx,ebp
+	          0100a5cf 0fbfef           movsx   ebp,di
+	          0100a5d2 3beb             cmp     ebp,ebx
+	          0100a5d4 7e27             jle     snpugetc+0x4d (0100a5fd)
+	          0100a5d6 85f6             test    esi,esi
+	          0100a5d8 7427             jz      snpugetc+0x51 (0100a601)
+	          0100a5da 668b00           mov     ax,[eax]
+	  ds:019dff01=????
+	          0100a5dd 8b36             mov     esi,[esi]
+	  ds:00000000=????????
+	          0100a5df 662b01           sub     ax,[ecx]
+	  ds:019d61f6=010c
+	  Fault ->0100a5e2 0fbf5e04         movsx   ebx,word ptr [esi+0x4]
+	  ds:0120ea07=????
+	          0100a5e6 0fbf6e06         movsx   ebp,word ptr [esi+0x6]
+	  ds:0120ea07=????
+	          0100a5ea 8d7c07ff         lea     edi,[edi+eax-0x1]
+	  ds:02bee908=????????
+	
+	  *----> Stack Back Trace <----*
+	
+	  FramePtr ReturnAd Param#1  Param#2  Param#3  Param#4  Function Name
+	  0118fd2c 0105f212 019d257c a3160e06 002d042c 002d0360 snaservr!snpugetc
+	  (FPO: [EBP 0xa3160e06] [2,0,4])
+	  0118fd94 0105c297 002d0360 0000125d 0118fdf8 01144bdd snaservr!s1pxntur
+	  (FPO: [EBP 0x002d042c] [3,19,4])
+	
+	In addition, an event similar to the following will be logged in the Windows NT
+	Application Event Log:
+	
+	  Event ID: 624
+	  Source: SNA Server
+	  Description: Creating dump file C:\SNA\traces\snadump.log for
+	  SNASERVR.EXE
+	
+	CAUSE
+	=====
+	
+	The access violation is caused when SNA Server receives a badly formatted GDS
+	variable. In this case, the format of the Sign-On GDS variable 0x'1221' sent by
+	the host was invalid.
+	
+	This problem started to occur with SNA Server 3.0 with the introduction of SNA
+	Server single sign on support, where SNA Server now explicitly parses the user
+	and password data within the Sign-On GDS message.
+	
+	RESOLUTION
+	==========
+	
+	SNA Server 4.0
+	--------------
+	
+	To resolve this problem, obtain the latest service pack for SNA Server version
+	4.0. For additional information, please see the following article in the
+	Microsoft Knowledge Base:
+	
+	  Q215838 How to Obtain the Latest SNA Server Version 4.0 Service Pack
+	
+	
+	SNA Server 3.0
+	--------------
+	
+	To resolve this problem, obtain the latest service pack for SNA Server version
+	3.0. For additional information, please see the following article in the
+	Microsoft Knowledge Base:
+	
+	  Q184307 How to Obtain the Latest SNA Server Version 3.0 Service Pack
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in SNA Server 3.0, 3.0 SP1, 3.0
+	SP2, 3.0 SP3, SNA Server 4.0, 4.0 SP1, 4.0 SP2. This problem was first corrected
+	in SNA Server version 3.0 Service Pack 4 and SNA Server version 4.0 Service Pack
+	3.
+	
+	MORE INFORMATION
+	================
+	
+	With Client message trace enabled, you may see output similar to the following:
+	
+	   PVI   -----------------------------------------------
+	   PVI   9A000001->010AF5B1 LU 6.2
+	   PVI                      MSGID:SWAT   MSGTYP:NTEOD  Sense1:0000
+	   PVI                      Sense2:0700
+	   PVI
+	   PVI   ---- Header  at address 014D4B00, 14 elements ----
+	   PVI   0B010000 07000000 000E0000 01000301     <................>
+	   PVI
+	   PVI   ---- Element at address 019D257C, start 13, end 268 ----
+	   PVI   2A0502FF 0003D000 000406F3 F0F10019
+	   PVI   10C4C5E5 C2C7F0F3 F14BC1D7 D7C3C3D3
+	   PVI   F207CE0B 1A0DF500 01002033 1221202F
+	   PVI   FF002201 40404040 40404040 E5F0F0F1
+	   PVI   F0F0F0F0 F0F0F0F0 D3D6C7C9 D5404040
+	   PVI   40404040 40404040 40404040 40404040
+	   PVI   40404040 40404040 D9C5C3C5 C9D9C5C3
+	   PVI   C5C9F0F0 F0F0F0F0 F0F0F0F0 40404040
+	   PVI   40404040 40404040 40404040 40404040
+	   PVI   40404040 40404040 40404040 40404040
+	   PVI   40404040 40404040 40404040 40404040
+	   PVI   40404040 40404040 40404040 40404040
+	   PVI   40404040 40404040 40404040 40404040
+	   PVI   F0F0F0F0 F0F0F0F5 40404040 40404040
+	   PVI   40404040 40404040 E4E2D9C9 C4404040
+	   PVI   40404040 40404040 C3F0F0F0 F8F0D5D7
+	
+	Decoding the data shows the following:
+	
+	  2033 1221 - Sign-on GDS variable of length 2033 (which is much too large).
+	
+	  202F FF00 - Sign-On Request Data of length 202F.
+	
+	  2201 - User ID subfield of length 22.
+	
+	According to SNA Formats & Protocols, the user ID must be 1-10 bytes, so the
+	only valid lengths are 3-12.
+	
+	  40404040 40404040 E5F0F0F1 F0F0F0F0 F0F0F0F0 D3D6C7C9 D5404040 40404040 -
+	  User ID
+	
+	  40404040 40404040 40404040 - This is supposed to be an 00,01 or 02 subfield,
+	  which it clearly isn't.
+	
+	Therefore, the data within the above frame clearly shows incorrect SNA protocol.
+	
+	Additional query words: SNA trap snpugetc
+	
+	======================================================================
+	Keywords          : kbsna300sp4fix kbsna400sp3fix kbbuglist
+	Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ400
+	Version           : WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1,4.0SP2
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

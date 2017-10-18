@@ -1,0 +1,90 @@
+---
+layout: page
+title: "Q172683: SNA Manager Traps When Editing LUA Properties TN3270 Tab"
+permalink: kb/172/Q172683/
+---
+
+## Q172683: SNA Manager Traps When Editing LUA Properties TN3270 Tab
+
+	Article: Q172683
+	Product(s): Microsoft SNA Server
+	Version(s): WINDOWS:3.0,3.0 SP1
+	Operating System(s): 
+	Keyword(s): kbnetwork
+	Last Modified: 02-APR-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 3.0, 3.0 SP1 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	When you click the TN3270 tab of the LUA properties dialog box, there is an
+	exception error in SNA Manager. A Drwtsn32.log file is generated.
+	
+	CAUSE
+	=====
+	
+	If a connection is deleted, a call is made to Snacfg.dll, which deletes all of
+	the LU records, whether they are assigned to the TN3270 servers or not. The LU
+	needs to be removed with a DestroyConfig() call similar to that which occurs
+	when an LU is deleted individually.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in SNA Server versions 3.0 and 3.0
+	Service Pack 1 (SP1). This problem was corrected in the latest SNA Server
+	version 3.0 U.S. Service Pack. For information on obtaining this Service Pack,
+	query on the following word in the Microsoft Knowledge Base (without the
+	spaces):
+	
+	  S E R V P A C K
+	
+	
+	MORE INFORMATION
+	================
+	
+	With the fix applied, a change is made to the Snacfg.dll file and Snaadmin.dll
+	file so that a DestroyLU() and DestroyConfig() make the same type of deletion
+	call.
+	
+	To reproduce this problem:
+	
+	1. Create two connections.
+	
+	2. On each connection create an LUA LU.
+	
+	3. Assign both LUA LUs to the TN3270 Server.
+	
+	4. Save the configuration and exit the SNA Manager.
+	
+	5. Restart the SNA Manager.
+	
+	6. Delete one of the connections.
+	
+	7. Re-create the connection and insert a new LUA LU.
+	
+	8. Do not save the configuration.
+	
+	9. Select the TN3270 Server, right-click the TN3270 LUA LU, and click
+	  Properties.
+	
+	10. Click the TN3270 tab of the LUA LU's properties window and the exception
+	  occurs. A Drwtsn32.log file is generated.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbnetwork 
+	Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ300SP1
+	Version           : WINDOWS:3.0,3.0 SP1
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

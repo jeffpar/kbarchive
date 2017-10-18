@@ -1,0 +1,526 @@
+---
+layout: page
+title: "Q174138: Frequently Asked Questions About Newsgroups on MSN"
+permalink: kb/174/Q174138/
+---
+
+## Q174138: Frequently Asked Questions About Newsgroups on MSN
+
+	Article: Q174138
+	Product(s): The Microsoft Network
+	Version(s): WINDOWS:1.0,2.0,2.5
+	Operating System(s): 
+	Keyword(s): kbmsnkbfaq
+	Last Modified: 26-OCT-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The Microsoft Network versions 2.0, 2.5 
+	- Microsoft Internet Mail and News version 1.0 for Windows 95 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article lists frequently asked questions about newsgroups on MSN, The
+	Microsoft Network.
+	
+	MORE INFORMATION
+	================
+	
+	The frequently asked questions are arranged in the following sections:
+	
+	- Bulletin Boards
+	
+	- Forums
+	
+	- Newsgroups
+	
+	- Reading and Posting Messages
+	
+	- Internet News
+	
+	Bulletin Boards
+	---------------
+	
+	1. Q. What is a bulletin board?
+	
+	  A. A bulletin board is an area where MSN members can post questions and view
+	  posted answers from the bulletin board's manager. A member can also read
+	  questions and answers posted by other members. Each bulletin board is
+	  organized by topic. MSN bulletin boards are newsgroups that hold MSN content.
+	  These bulletin boards are stored on the MSNNews server.
+	
+	2. Q. How do I view MSN bulletin board content?
+	
+	  A. In MSN Program Viewer, click any link to a bulletin board. For example, the
+	  Communicate Home Page has links to bulletin boards.
+	
+	3. Q. Who can exclude me from a forum chat or bulletin board?
+	
+	  A. Exclusion from forum chats and bulletin boards is at the discretion of the
+	  individual forum manager.
+	
+	Forums
+	------
+	
+	1. Q. What are forums?
+	
+	  A. Forums are public meeting areas where MSN members can discuss ideas, gather
+	  information, or find out what other people have to say. Each MSN forum is
+	  centered around a specific subject, theme, or hobby. There are about 80
+	  special-interest forums on MSN.
+	
+	2. Q. How do I find a forum on MSN?
+	
+	  A. To find a forum, click MSN Forums on the Communicate home page, and then
+	  click the forum you want to view.
+	
+	3. Q. Who do I contact if I have a problem in a forum?
+	
+	  A. If you have a problem, contact the forum manager for that forum.
+	
+	4. Q. How do I contact a forum manager?
+	
+	  A. To contact a forum manager, follow these steps:
+	  1. In the forum, click Information.
+	
+	  2. Send e-mail with your question to the listed forum manager.
+	
+	5. Q. How do I apply to become a forum assistant, host, or manager?
+	
+	  A. If you would like to become a forum assistant or host, apply to the forum
+	  manager of the forum that you want to assist or host. If you would like to
+	  become a forum manager, e-mail your resume and proposal to: Content_Provider.
+	  Include a list of your interests and hobbies.
+	
+	Newsgroups
+	----------
+	
+	1. Q. What is a newsgroup?
+	
+	  A. A newsgroup is a public bulletin board where Internet users can post, read,
+	  and reply to messages that anyone can see. An Internet newsgroup can contain
+	  hundreds or thousands of articles posted each day from all over the world.
+	  These newsgroups originate outside of MSN, and we have no control over the
+	  names of the newsgroups or the content of any newsgroup messages. MSN carries
+	  newsgroups as part of the service to members, but we do not monitor or claim
+	  any responsibility for what is contained in these groups.
+	
+	2. Q. How do I subscribe to a newsgroup?
+	
+	  A. To subscribe to a newsgroup, follow these steps:
+	  1. In the Newsgroups box, click the Newsgroups icon.
+	
+	  2. If a News Servers list is displayed, click one of the servers to select
+	     it.
+	
+	  3. Scroll down the newsgroup list. Click one of the newsgroups to select it.
+	
+	  4. Click Subscribe.
+	
+	3. Q. How do I cancel my subscription to a newsgroup?
+	
+	  A. To cancel a subscription, on the News menu, click Unsubscribe from this
+	  Newsgroup.
+	
+	4. Q. How do I view Internet newsgroups?
+	
+	  A. Throughout MSN, there are links to bulletin boards and newsgroups. Click
+	  the Communicate page for access to many of them.
+	
+	  To access newsgroups, follow these steps:
+	  1. Click Start, point to Programs, and then click Internet News.
+	
+	  2. Click Newsgroups.
+	
+	5. Q. Why are newsgroup messages no longer posted when I return to a newsgroup?
+	
+	  A. Actually, those messages are usually still there. The default in Internet
+	  News is set to eliminate messages that you have already read. To change this
+	  or to check for messages that you have read before, click All Messages on the
+	  View menu. In a minute or two the messages reappear.
+	
+	6. Q. Is there an extra charge for subscribing to a newsgroup?
+	
+	  A. There is no extra charge for subscribing to a newsgroup. The term
+	  "subscribe" means that your newsgroup reader will keep track of the messages
+	  you have read and downloaded from visit to visit. You can subscribe and
+	  unsubscribe at any time with no additional charge.
+	
+	7. Q. Why am I unable to find an Internet newsgroup that I believe should be
+	  there?
+	
+	  A. MSN tries to keep its feed as current as possible, but occasionally we do
+	  miss a new group or fall behind. If you send an e-mail message to
+	  newsmaster@msn.com, we may be able to get the group up more quickly.
+	
+	8. Q. How do I read newsgroup messages offline?
+	
+	  A. Once you download the newsgroup message you want to read, you can
+	  disconnect from your Internet service provider (ISP) and read the message
+	  offline. To download messages in a newsgroup, follow these steps:
+	  1. In the message list, click the message you want to download. To select
+	     more than one message for downloading, hold down the CTRL key while
+	     clicking each message.
+	
+	  2. On the Off-line menu, click Mark Message For Download.
+	
+	  3. On the Off-line menu, click Post And Download.
+	
+	  4. Click File, and then click Disconnect.
+	
+	9. Q. Why am I unable to access a newsgroup that appears in the newsgroup list?
+	
+	  A. You may not be able to access the newsgroup because it has been removed
+	  from the server. You can determine this by resetting the newsgroup list. If
+	  the title of the newsgroup no longer appears in the list, it has been
+	  removed.
+	
+	  To reset the newsgroup list, use the following steps:
+	  1. Click Internet Community (Culture/Newsgroups) located on the Communicate
+	     page in MSN.
+	
+	  2. Click Internet News Groups.
+	
+	  3. Double-click Try Newsgroups Now!
+	
+	  4. Click Newsgroups.
+	
+	  5. In the News Servers box, click the Newsgroup icon of the newsgroup you
+	     usually access.
+	
+	  6. Click Reset List.
+	
+	  7. Look in the list of Newsgroups to see if your newsgroup is still listed.
+	     If not, the newsgroup has been removed from the server. If it is still
+	     listed, try to access it again.
+	
+	Reading and Posting Messages
+	----------------------------
+	
+	1. Q. How do I post a new message to a newsgroup?
+	
+	  A. To post a new message to a newsgroup, use the following steps:
+	  1. On the News menu, click New Message To Newsgroup.
+	
+	  2. In the Newsgroups box, type the names of any other newsgroups you want to
+	     post the message to, separating each name with a semicolon (;).
+	
+	  3. Type the subject of your message. Internet News does not post messages
+	     without a subject.
+	
+	  4. Type your message.
+	
+	  5. On the File menu, click Post Message.
+	
+	2. Q. How do I post a reply to a newsgroup message?
+	
+	  A. To post a reply to a message, use the following steps:
+	  1. Click the message you want to reply to in the list of messages.
+	
+	  2. On the News menu, click Reply To Group.
+	
+	  3. In the Newsgroups box, type the names of any other newsgroups on the same
+	     server you want to post the reply to, separating each name with a
+	     semicolon (;).
+	
+	  4. Type the subject of your message. Internet News does not post messages
+	     without a subject.
+	
+	  5. Type your message.
+	
+	  6. On the File menu, click Post Message.
+	
+	3. Q. How do I post a reply to the author of a newsgroup message?
+	
+	  A. To post a reply to the author of a newsgroup message, use the following
+	  steps:
+	  1. Click the message you want to reply to in the list of messages.
+	
+	  2. On the News menu, click Reply to Author.
+	
+	  3. In the Newsgroups box, type the names of any other newsgroups on the same
+	     server you want to post the reply to, separating each name with a
+	     semicolon (;).
+	
+	  4. Type the subject of your message. Internet News does not post messages
+	     without a subject.
+	
+	  5. Type your message.
+	
+	  6. On the File menu, click Post Message.
+	
+	4. Q. How do I reply by mail to the author of a newsgroup message and other
+	  recipients?
+	
+	  A. To reply to a newsgroup message by mail, use the following steps:
+	  1. Click the message you want to reply to in the list of messages.
+	
+	  2. On the News menu, click Reply To Author. To send the message to other
+	     individuals, type the e-mail name of each recipient you want to send the
+	     message to in the To or Cc boxes, separating each name with a semicolon
+	     (;).
+	
+	  3. Type your message.
+	
+	  4. On the File menu, click Send Message.
+	
+	5. Q. How do I view messages that I have posted?
+	
+	  A. In the Newsgroups box, click Posted Messages.
+	
+	6. Q. Is it possible to post a message to multiple newsgroups?
+	
+	  A. You can post a message to multiple newsgroups that are on the same news
+	  server.
+	
+	7. Q. What are my options for posting replies to a newsgroup?
+	
+	  A. To view the options in Internet News, use the following steps:
+	  1. On the News menu, click Options.
+	
+	  2. On the Send tab, you see the following options:
+	      - When posting, save a copy in the 'Posted Messages' folder
+	
+	      - When selecting, automatically select entire word
+	
+	      - Include original message in reply
+	
+	      - Break apart messages larger than ___ KB
+	
+	8. Q. How do I align a paragraph?
+	
+	  A. To align a paragraph, use the following steps:
+	  1. Click the paragraph you want to format.
+	
+	  2. On the Format menu, click Paragraph.
+	
+	  3. Click the alignment you want, and then click OK.
+	
+	9. Q. How Do I Change the Font Type, Style, or Size?
+	
+	  A. To change the font, use the following steps:
+	  1. Click to select the text you want to format.
+	
+	  2. On the Format menu, click Font.
+	
+	  3. Click the font type, style, or size you prefer.
+	
+	10. Q. How do I use HTML formatting in outgoing messages?
+	
+	  A. To configure outgoing messages to use HTML, use the following steps:
+	  1. On the News menu, click Options.
+	
+	  2. On the Send tab, click HTML.
+	
+	  3. Click OK.
+	
+	     NOTE: If the recipient's mail or news program does not read HTML
+	     formatting, the message appears as plain text with an HTML file attached.
+	     The recipient can view the attached file with HTML formatting by opening
+	     it in any Web browser.
+	
+	11. Q. How do I check for valid e-mail names and address book contacts?
+	
+	  A. With a news message open, click Check Names on the News menu. If a name
+	  matches an address book entry or is in the correct format for an e-mail name
+	  (name@company), then it is a valid e-mail name, and is underlined. Note that
+	  this does not mean the e-mail name actually exists. If the e-mail name is
+	  not valid, then the name and some possible matches are displayed.
+	
+	12. Q. How do I use the spelling checker with a newsgroup message?
+	
+	  A. To check the spelling in one newsgroup message, use method 1. To configure
+	  Internet News to check the spelling in all messages that you send, use
+	  method 2.
+	
+	  Method 1
+	  --------
+	
+	  1. On the File menu, click New Message.
+	
+	  2. Type your message, click Check Spelling on the News menu.
+	
+	  Method 2
+	  --------
+	
+	  1. On the News menu, click Options.
+	
+	  2. On the Spelling tab, click the Always Check Spelling Before Sending box.
+	
+	     NOTE: If you do not have Microsoft Office 95/97 installed on your computer,
+	     the Check Spelling command is not available. Internet News uses the
+	     spelling checker provided with Office 95/97.
+	
+	13. Q. How do I configure messages to be marked as read after previewing them?
+	
+	  A. To mark previewed messages as read, use the following steps:
+	  1. On the News menu, click Options.
+	
+	  2. On the Read tab, click the "Message is read after being previewed for x
+	     second(s)" check box.
+	
+	14. Q. How do I mark a read message as unread?
+	
+	  A. To mark a message as unread, use the following steps:
+	  1. In the list of messages, click the first message in the thread.
+	
+	  2. On the Edit menu, click Mark As Unread.
+	
+	15. Q. How do I mark an individual message as read?
+	
+	  A. To mark an individual message as read, use the following steps:
+	  1. In the list of messages, click the first message in the thread.
+	
+	  2. On the Edit menu, click Mark As Read.
+	
+	16. Q. How do I expand or collapse all of the threads in the list of messages?
+	
+	  A. To expand or collapse all of the threads in the list of messages, use the
+	  following steps:
+	  1. On the Edit menu, click Select All.
+	
+	  2. On the View menu, click Expand or Collapse.
+	
+	17. Q. How do I decode messages?
+	
+	  A. To decode messages, use the following steps:
+	  1. In the list of messages, click the message you want to decode.
+	
+	  2. On the News menu, click Combine And Decode.
+	
+	  3. In the Decode Order list, put the messages into the correct order. Note
+	     that the correct order can vary depending on the program used to post the
+	     message. For example, the list of messages may contain the values 1/x,
+	     2/x, and 3/x, in the subject lines of a three part message.
+	
+	  4. Click OK.
+	
+	18. Q. When I Try to Reply to a message, why do I Receive the message: "One or
+	  More Newsgroup Names Could Not Be Verified. Do You Want To Post This Message
+	  Anyway?"
+	
+	  A. If you receive this error message, it may be because the newsgroup name
+	  has been deleted or changed. You can correct this by resetting the
+	  Msnnews.msn.com list.
+	
+	  To reset the Msnnews.msn.com list, follow these steps:
+	  1. Click the Start button, point to Programs, and then click Internet News.
+	
+	  2. When you see the Sign-In screen, click Cancel.
+	
+	  3. Click Newsgroups.
+	
+	  4. Click the Msnnews.msn.com icon located in the News Servers box.
+	
+	  5. Click Reset List.
+	
+	  6. When you see the Sign-In screen, click OK.
+	
+	Internet News
+	-------------
+	
+	1. Q. What is Internet News?
+	
+	  A. Internet News is a program you can use to view both MSN bulletin boards and
+	  Internet newsgroups. Within this program, both Internet newsgroups and MSN
+	  bulletin boards are referred to as newsgroups.
+	
+	2. Q. How do I uninstall Internet Mail and News?
+	
+	  A. To uninstall Internet News and Mail, follow these steps:
+	  1. Click Start, point to Settings, and then click Control Panel.
+	
+	  2. Double-click Add/Remove Programs.
+	
+	  3. Click the Install/Uninstall tab.
+	
+	  4. In the list of installed programs, click Internet Mail And News.
+	
+	  5. Click Add/Remove.
+	
+	3. Q. What are the paper clips in the newsgroup messages, and how do I open
+	  attachments?
+	
+	  A. Paper clips are symbols for file attachments. To view an attachment, click
+	  the paper clip icon. It displays the file type as well as the size. To open
+	  the attachment, click the file, move the mouse pointer onto the file, and
+	  open it when you are prompted.
+	
+	4. Q. How do I clean up the news files stored on my computer?
+	
+	  A. Internet News stores information about newsgroups and messages in files
+	  kept locally on your computer. This reduces the amount of traffic (and
+	  connection time) necessary to browse through newsgroups and messages. To
+	  clear out these files, use the following steps:
+	  1. On the File menu of the Newsgroups box, click Clean Up Files, and then
+	     click Delete.
+	
+	  2. When you are prompted if you are sure you want to delete all your
+	     newsgroup files, click Yes.
+	
+	  3. Click Close.
+	
+	5. Q. What is a thread?
+	
+	  A. A thread is an original message and any posted replies. Threads are sorted
+	  and grouped according to the original title. For example, a thread that
+	  starts with a message titled "Please do not post binaries in this newsgroup"
+	  includes all of the replies titled "RE: Please do not post binaries in this
+	  newsgroup."
+	
+	  If you reply to a message and change the title, you start a new thread. For
+	  example, posting a reply titled "Let's end this thread: Please do not post
+	  binaries in this newsgroup" starts a new thread.
+	
+	6. Q. How do I view messages by thread?
+	
+	  A. To view messages by thread, follow these steps:
+	  1. On the View menu, point to Sort By.
+	
+	  2. Click Group Messages By Thread.
+	
+	     You can also expand or collapse individual threads by clicking the plus (+)
+	     or minus (-) sign next to the original message, or by clicking the message
+	     and then clicking Expand or Collapse on the View menu.
+	
+	7. Q. What is SPAM? How do I avoid becoming a SPAMMER?
+	
+	  A. By definition, SPAM is posting the same or a very similar article to 20 or
+	  more newsgroups. This is based entirely on quantity, not content. You might
+	  post the cure for cancer to 20 newsgroups, and it would still be SPAM.
+	
+	  In addition, some e-mail items are determined by Internet consensus to be
+	  SPAM, even if someone posts the message only once. This is simply because
+	  similar articles already have been posted thousands of times. Items in this
+	  category include pyramid scams, MLM schemes, 1-900 advertisements, and chain
+	  letters. Sending unsolicited e-mail, especially commercially related e-mail,
+	  normally is classified as SPAM.
+	
+	  MSN does not tolerate SPAM sent by its members. If you send SPAM, you may
+	  receive a warning letter from the MSN Postmaster or MSN Management in a minor
+	  case. In a more serious case, MSN may terminate your account.
+	
+	  To avoid becoming a SPAMMER, do not send SPAM.
+	
+	For additional information please see the following articles in the Microsoft
+	Knowledge Base:
+	
+	  Q131810 Internet Newsgroups Shown as Bulletin Board Type
+	
+	  Q137107 Questions and Answers About Newsgroups on The MS Network
+	
+	  Q160984 Setting Up MS Internet News to Work with MSN
+	
+	Additional query words: 2.00 2.50 1.00 msn inetnewsw95
+	
+	======================================================================
+	Keywords          : kbmsn kbfaq
+	Technology        : kbMSNSearch kbIMNSearch kbMSN200 kbMSN250 kbIMN100Win95
+	Version           : WINDOWS:1.0,2.0,2.5
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

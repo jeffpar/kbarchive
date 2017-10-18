@@ -1,0 +1,86 @@
+---
+layout: page
+title: "Q286766: PRB: Unable to Change Location of MSDN Library After Install"
+permalink: kb/286/Q286766/
+---
+
+## Q286766: PRB: Unable to Change Location of MSDN Library After Install
+
+	Article: Q286766
+	Product(s): Microsoft Developer Network
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbDSupport
+	Last Modified: 08-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Developer Network (MSDN) 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	After you install the Microsoft Developers Network (MSDN) Library to one
+	location, you are unable to change the location of the files to another drive.
+	Also, occasionally after you remove the product through the Add/Remove Programs
+	option on the Control Panel, you are still unable to reinstall the same edition
+	to another location. This behavior is usually due to a removal of the product by
+	means other than the Add/Remove Programs option but can be seen even if the
+	product was removed correctly but the registry entries were not successfully
+	updated.
+	
+	CAUSE
+	=====
+	
+	Registry entries are left behind after uninstalling the product.
+	
+	RESOLUTION
+	==========
+	
+	Remove the MSDN Library manually as directed in the following Microsoft
+	Knowledge Base article:
+	
+	  Q240350 HOWTO: Manually Uninstall the MSDN Library
+	
+	MORE INFORMATION
+	================
+	
+	If you have multiple versions of the MSDN Library installed and only want to
+	remove one specific edition, you can do so by following these steps:
+	
+	1. Remove the specific editions folder under the default location of:
+	
+	C:\Program Files\Microsoft Visual Studio\MSDN\1033
+	
+	The default location for the original Microsoft Visual Studio edition is:
+	
+	C:\Program Files\Microsoft Visual Studio\MSDN98\1033
+	
+	2. On the Start menu, type REGEDIT in the Run box, and then click OK.
+	
+	3. Browse to the following key:
+	
+	  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\HTML Help Collections\Developer
+	  Collections\0x0409\0x039a28760
+	
+	4. Delete only the key that is associated with the MSDN Library version that you
+	  want to uninstall. Each MSDN Library that is installed has a separate key
+	  under \0x0409\.
+	
+	  NOTE: The key 0x039a28760 varies depending on the MSDN edition. To see the
+	  MSDN version information, look in the Data column or double-click (Default)
+	  in the right pane. With this information you can remove the correct MSDN
+	  version and registry key.
+	
+	Additional query words: msdnsetup vssetup msdnsub
+	
+	======================================================================
+	Keywords          : kbDSupport 
+	Technology        : kbMSDNSearch kbZNotKeyword2
+	Version           : :
+	Issue type        : kbprb
+	
+	=============================================================================
+	

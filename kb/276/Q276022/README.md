@@ -1,0 +1,76 @@
+---
+layout: page
+title: "Q276022: Windows 95 and Window 98 Client Fails to Use Multiple Firewall E"
+permalink: kb/276/Q276022/
+---
+
+## Q276022: Windows 95 and Window 98 Client Fails to Use Multiple Firewall E
+
+	Article: Q276022
+	Product(s): Microsoft SNA Server
+	Version(s): 2.11 (all versions),3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
+	Operating System(s): 
+	Keyword(s): kbDSupport sna4 kbsna400sp1 kbsna400sp2 kbsna400sp3 kbSNA400sp4fix kbSNA400PreSP4fix
+	Last Modified: 13-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 2.11, 2.11 SP1, 2.11 SP2, 3.0 SP1, 3.0 SP2, 3.0 SP3, 3.0 SP4, 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you configure the Microsoft Windows 95 and Microsoft Windows 98 SNA Server
+	client to connect through a firewall by using a list of addresses, the SNA
+	Windows 95 or Windows 98 client may only connect to the first entry in the
+	firewall registry entries.
+	
+	CAUSE
+	=====
+	
+	The SNA Server client is not searching beyond the first entry in the following
+	registry entry:
+	
+	  HKeyLocalMachine\Software\Microsoft\SnaBase\Parameters\SnaTcp\FireWall\<list
+	  of firewall IP addresses>
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, obtain the latest service pack for SNA Server 4.0. For
+	additional information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q215838 How to Obtain the Latest SNA Server Version 4.0 Service Pack
+	
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products that are
+	listed at the beginning of this article.
+	
+	This problem was first corrected in SNA Server 4.0 Service Pack 4.
+	
+	MORE INFORMATION
+	================
+	
+	For additional information about firewall entries that are used with SNA, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q139508 Internet Firewall Support in SNA Server
+	
+	Additional query words: Snacip sp1 sp2 sp3
+	
+	======================================================================
+	Keywords          : kbDSupport sna4 kbsna400sp1 kbsna400sp2 kbsna400sp3 kbSNA400sp4fix kbSNA400PreSP4fix 
+	Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ211 kbSNAServ400 kbSNAServ211SP1 kbSNAServ211SP2 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3 kbSNAServ300SP2 kbSNAServ300SP4
+	Version           : :2.11 (all versions),3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

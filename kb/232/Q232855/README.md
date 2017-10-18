@@ -1,0 +1,117 @@
+---
+layout: page
+title: "Q232855: Microsoft Windows 95 Year 2000 Corporate Update Readme File"
+permalink: kb/232/Q232855/
+---
+
+## Q232855: Microsoft Windows 95 Year 2000 Corporate Update Readme File
+
+	Article: Q232855
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:95
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 17-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 95 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article contains a copy of the information in the Corpupd.txt file included
+	in the Microsoft Windows 95 Year 2000 Corporate Update (corpupd.exe).
+	
+	MORE INFORMATION
+	================
+	
+	
+	************************************************************************
+	                       Microsoft Windows 95 
+	                   Corporate Update README File
+	                             May 1999
+	************************************************************************
+	
+	(c) Copyright Microsoft Corporation, 1999
+	
+	This document provides complementary information to supplement the 
+	Microsoft Windows 95 documentation.
+	
+	NOTE: For the best readability, maximize the Notepad window. 
+	
+	To print this file, open it in Notepad or another word processing 
+	program, and then click Print on the File menu.
+	
+	========================================================================
+	
+	The Corporate Update (corpupd.exe) is a companion package for the Windows
+	95 Y2K Update (w95y2k.exe) provided in response to corporate customer
+	feedback regarding the Windows 95 Y2K Update package.  
+	
+	The Windows 95 Y2K Update needs to be installed before installing the
+	companion Corpupd.exe.  
+	
+	========================================================================
+	
+	Corpupd.exe supports the following install switches:
+	
+	  There are several installation options available to advanced users 
+	  when installing the Corporate Update. You can view these options at
+	  any time by clicking Start, clicking Run, typing corpupd.exe /? and
+	  then clicking OK.
+	
+	  To use the optional installation parameters below, type
+	  corpupd.exe <option>
+	
+	  /Q - Quiet mode (skips all user prompts) - Useful for silent 
+	       installations in batch setups.
+	  /T: <full path> - Specifies a temporary working folder.
+	  /C - Extract files only to the folder when used also with /T - 
+	       Allows an administrator to download files into a specified 
+	       location.
+	  /C: <cmd> - Override install command defined by author - Not used 
+	       for this update.
+	
+	========================================================================
+	
+	Corpupd.exe addresses the following concerns:
+	
+	Confusion regarding a Windows 95 Hotfix (Q172707)
+	 1. The hotfix registered itself to display in Control Panel, Add/Remove
+	    Programs and QFECheck.exe.  The Windows 95 Y2K Update supercedes the
+	    hotfix but did not remove the registry entries.  Corpupd.exe corrects
+	    this by removing the hotfix registry entries that are no longer
+	    needed and removing the ability to inadvertently uninstall.
+	 2. The hotfix mistakenly copied command.com to the windows\command
+	    folder.  Corpupd.exe corrects this by removing command.com from 
+	    the windows\command folder.  The Windows 95 Y2K Update correctly 
+	    updates command.com in the appropriate locations.
+	
+	Registering the Windows 95 Y2K Update so QFECheck identifies the install.
+	  Corporate customers requested that the Windows 95 Y2K Update is 
+	  displayed in QFECheck.exe to easily determine that the Windows 95 Y2K
+	  Update is installed.  Corpupd.exe adds the registry entries needed for
+	  this.
+	
+	Confusion regarding VDHCP.386
+	  The Windows 95 Y2K Update included a Y2K compliant VDHCP.386 for "clean"
+	  installs of Windows 95 or Windows 95 OSR2.x.  It did not include a Y2K
+	  compliant version of VDHCP.386 for systems which had installed either the
+	  Microsoft DUN 1.3 or Winsock2 Updates.  A Microsoft DUN 1.3/Winsock2 Y2K 
+	  Update is now available which includes a Y2K compliant version of
+	  VDHCP.386 for systems running the Microsoft DUN 1.3 or Winsock2 Updates.
+	  Corpupd.exe includes the Microsoft DUN 1.3 or Winsock2 Y2K Update.
+	
+	Additional query words: y2k year 2000 winsock2 DUN sockets dial-up corporate
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWin95search kbZNotKeyword3
+	Version           : WINDOWS:95
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

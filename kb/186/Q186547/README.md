@@ -1,0 +1,850 @@
+---
+layout: page
+title: "Q186547: Terminal Server Error Messages: 3700 to 3899"
+permalink: kb/186/Q186547/
+---
+
+## Q186547: Terminal Server Error Messages: 3700 to 3899
+
+	Article: Q186547
+	Product(s): Microsoft Windows NT
+	Version(s): WinNT:4.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 11-DEC-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes Terminal Server error messages 3700 to 3899.
+	
+	MORE INFORMATION
+	================
+	
+	Error 3710
+	----------
+	
+	  An error occurred while opening the Help file.
+	
+	Explanation: Windows NT could not find a file of Help information.
+	
+	Action: Be sure the Net.hlp file is in the same directory as Net.exe, which is
+	usually in your system directory. This directory should also be on your search
+	path (specified by the PATH command). If you cannot find the Help file on your
+	computer, contact your network administrator. Your administrator should copy the
+	Help file from the Windows NT distribution disks to your computer.
+	
+	Error 3711
+	----------
+	
+	  The Help file is empty.
+	
+	Explanation: Help file, Net.hlp, is damaged. The file is usually in your system
+	directory.
+	
+	Action: Contact your network administrator. Your administrator should copy the
+	Help file from the Windows NT distribution disks to your computer. If the
+	problem persists, contact technical support.
+	
+	Error 3712
+	----------
+	
+	  The Help file is corrupted.
+	
+	Explanation: Help file, Net.hlp, is damaged. The file is usually in your system
+	directory.
+	
+	Action: Contact your network administrator. Your administrator should copy the
+	Help file from the Windows NT distribution disks to your computer. If the
+	problem persists, contact technical support.
+	
+	Error 3713
+	----------
+	
+	  Could not find a domain controller for domain ***.
+	
+	Explanation: Either this domain does not have logon security and therefore does
+	not have a domain controller, or its domain controller is currently
+	unavailable.
+	
+	Action: If this domain does not have logon security, you cannot use this domain.
+	Otherwise, retry the command. If the problem persists, ask your network
+	administrator if the domain controller is running.
+	
+	Error 3714
+	----------
+	
+	  This operation is privileged on systems with earlier versions of the
+	  software.
+	
+	Explanation: This message should occur only on a down-level computer. Any action
+	to correct the problem should be performed on that computer. You must have
+	administrative privilege on the remote computer to perform this task because
+	that computer is running a previous version of LAN Manager.
+	
+	Action: To complete this task, ask your administrator to give you administrative
+	privilege on the remote computer, or have that computer upgraded to Windows NT.
+	
+	Error 3716
+	----------
+	
+	  The device type is unknown.
+	
+	Explanation: You typed an invalid device name.
+	
+	Action: Check the spelling of the device name. Valid device names are LPT1: to
+	LPT9: for printers and A: to Z: for disk devices.
+	
+	Error 3717
+	----------
+	
+	  The log file has been corrupted.
+	
+	Explanation: This message should occur only on a down-level computer. Any action
+	to correct the problem should be performed on that computer. The log file you
+	are using is damaged.
+	
+	Action: If you may need to refer to this log file in the future, copy it to
+	another filename, and then clear it so that you can start another one.
+	
+	Error 3718
+	----------
+	
+	  Program filenames must end with .EXE.
+	
+	Explanation: This message should occur only on a down-level computer. Any action
+	to correct the problem should be performed on that computer. The Netrun service
+	runs only programs with the filename extension .exe.
+	
+	Action: To use a program with a .com extension, an administrator must rename it
+	to a .exe file.
+	
+	Error 3719
+	----------
+	
+	  A matching share could not be found so nothing was deleted.
+	
+	Explanation: Windows NT could not find the resource you wanted to stop sharing.
+	
+	Action: Check the spelling of the share name. To see a list of resources the
+	server is sharing, type:
+	
+	  "NET SHARE" (without the quotation marks)
+	
+	Error 3720
+	----------
+	
+	  A bad value is in the units-per-week field of the user record.
+	
+	Explanation: This message should occur only on a down-level computer. Any action
+	to correct the problem should be performed on that computer. The internal record
+	of this user is invalid.
+	
+	Action: Contact technical support.
+	
+	Error 3721
+	----------
+	
+	  The password is invalid for ***.
+	
+	Explanation: You used an incorrect password.
+	
+	Action: Check that you have the correct password, and then retype it. If you
+	cannot remember your password, see your network administrator to have your
+	password changed.
+	
+	Error 3722
+	----------
+	
+	  An error occurred while sending a message to ***.
+	
+	Explanation: An error occurred when a message was sent to the alias you selected.
+	An additional error message should follow this one. It will tell you what action
+	to take to correct the error.
+	
+	Action: Follow the recommended action in the second error message.
+	
+	Error 3723
+	----------
+	
+	  The password or user name is invalid for ***.
+	
+	Explanation: Either your password or your user name is incorrect.
+	
+	Action: Retry the operation with the correct password or user name. If you cannot
+	remember your password, see your network administrator to have your password
+	changed.
+	
+	Error 3725
+	----------
+	
+	  An error occurred when the share was deleted.
+	
+	Explanation: An error occurred when Windows NT tried to stop sharing the
+	resource.
+	
+	Action: Try again to stop sharing the resource. If no more information about this
+	error is displayed, use Event Viewer to read the system log. If no more
+	information appears in Event Viewer and the problem persists, contact technical
+	support.
+	
+	Error 3726
+	----------
+	
+	  The user name is invalid.
+	
+	Explanation: You typed an invalid user name.
+	
+	Action: Retype the command with a valid user name.
+	
+	Error 3727
+	----------
+	
+	  The password is invalid.
+	
+	Explanation: You typed an invalid password.
+	
+	Action: Retype the command, using a valid password.
+	
+	Error 3728
+	----------
+	
+	  The passwords do not match.
+	
+	Explanation: The two passwords you typed did not match.
+	
+	Action: Be sure to type identical passwords.
+	
+	Error 3729
+	----------
+	
+	  Your persistent connections were not all restored.
+	
+	Explanation: Loading of the profile stopped after an error occurred.
+	
+	Action: No action is needed.
+	
+	Error 3730
+	----------
+	
+	  This is not a valid computer name or domain name.
+	
+	Explanation: You typed an invalid computer name or domain.
+	
+	Action: Retype the command with a valid computer name or domain. If you need
+	further assistance, contact your network administrator.
+	
+	Error 3732
+	----------
+	
+	  Default permissions cannot be set for that resource.
+	
+	Error 3734
+	----------
+	
+	  A valid password was not entered.
+	
+	Explanation: You typed an invalid password.
+	
+	Action: Type a valid password.
+	
+	Error 3735
+	----------
+	
+	  A valid name was not entered.
+	
+	Explanation: You typed an invalid name.
+	
+	Action: Type a valid name.
+	
+	Error 3736
+	----------
+	
+	  The resource named cannot be shared.
+	
+	Explanation: You cannot share this resource.
+	
+	Action: No action is needed.
+	
+	Error 3737
+	----------
+	
+	  The permissions string contains invalid permissions.
+	
+	Error 3738
+	----------
+	
+	  You can only perform this operation on printers and communication devices.
+	
+	Explanation: This command is valid only for device names of printers and
+	communication devices.
+	
+	Action: No action is needed.
+	
+	Error 3742
+	----------
+	
+	  *** is an invalid user or group name.
+	
+	Explanation: You typed an invalid user name or group name.
+	
+	Action: Check the spelling of the user or group name. To see a list of existing
+	users, type:
+	
+	  "NET USER" (without the quotation marks)
+	
+	To see a list of existing local groups, type:
+	
+	  "NET LOCALGROUP" (without the quotation marks)
+	
+	To see a list of existing global groups, type:
+	
+	  " NET GROUP " (without the quotation marks)
+	
+	Error 3743
+	----------
+	
+	  The server is not configured for remote administration.
+	
+	Explanation: The server is not set up to be administered remotely.
+	
+	Action: For the server to be administered remotely, you must share the server's
+	ADMIN$ and IPC$ resources.
+	
+	Error 3752
+	----------
+	
+	  No users have sessions with this server.
+	
+	Explanation: No users have sessions with this server.
+	
+	Action: No action is needed.
+	
+	Error 3753
+	----------
+	
+	  User *** is not a member of group ***.
+	
+	Explanation: This user is not a member of the group.
+	
+	Action: No action is needed.
+	
+	Error 3754
+	----------
+	
+	  User *** is already a member of group ***.
+	
+	Explanation: This user is already a member of the group.
+	
+	Action: No action is needed.
+	
+	Error 3755
+	----------
+	
+	  There is no such user: ***.
+	
+	Explanation: You typed an unknown user name.
+	
+	Action: Check the spelling of the user name and then retype the command.
+	
+	Error 3756
+	----------
+	
+	  This is an invalid response.
+	
+	Error 3757
+	----------
+	
+	  No valid response was provided.
+	
+	Explanation: You did not provide a valid response to a Windows NT prompt.
+	
+	Action: Type a valid response.
+	
+	Error 3758
+	----------
+	
+	  The destination list provided does not match the destination list of the
+	  printer queue.
+	
+	Error 3759
+	----------
+	
+	  Your password cannot be changed until ***.
+	
+	Error 3760
+	----------
+	
+	  *** is not a recognized day of the week.
+	
+	Explanation: The day you specified is invalid. Valid days are Monday, Tuesday,
+	Wednesday, Thursday, Friday, Saturday, and Sunday. Valid abbreviations are M, T,
+	W, Th, F, Sa, and Su.
+	
+	Action: Retype the command, using valid names or abbreviations.
+	
+	Error 3761
+	----------
+	
+	  The time range specified ends before it starts.
+	
+	Explanation: You specified a time range that starts later than it ends. Time
+	ranges must start and end on the same day.
+	
+	Action: Retype the command with a valid time range. You can use either the
+	12-hour or the 24-hour time format. When you use the 12-hour format, you must
+	specify either AM or PM for each time. When you use the 24-hour format, do not
+	specify AM or PM.
+	
+	Error 3762
+	----------
+	
+	  *** is not a recognized hour.
+	
+	Explanation: You specified an hour in a format that could not be recognized. The
+	hour can be a number from 0 to 12 in 12-hour format or 0 to 24 in 24-hour
+	format. If you use the 12-hour format, you must specify either A.M. or P.M. for
+	each time.
+	
+	Action: Retype the command with the correct hour format.
+	
+	Error 3763
+	----------
+	
+	  *** is not a valid specification for minutes.
+	
+	Explanation: You specified the minutes in a format that could not be recognized.
+	Typing the minutes is optional, but if included, the format must be :00 (a colon
+	and two zeros).
+	
+	Action: Retype the command, either omitting the minutes or using the correct
+	format (:00).
+	
+	Error 3764
+	----------
+	
+	  Time supplied is not exactly on the hour.
+	
+	Explanation: Specifying minutes in your logon command is optional, but if
+	included, the minutes must be in the format :00 (a colon and two zeros).
+	
+	Action: Retype the command, either omitting the minutes or using the correct
+	format (:00).
+	
+	Error 3765
+	----------
+	
+	  12 and 24 hour time formats may not be mixed.
+	
+	Explanation: You mixed 12-hour and 24-hour formats in your time specification. If
+	you use the 12-hour format (with A.M. and P.M.), the hours must be from 0 to 12.
+	If you use 24-hour format, the hours must be from 0 to 24.
+	
+	Action: Retype the command with either the 12-hour or 24-hour format.
+	
+	Error 3766
+	----------
+	
+	  *** is not a valid 12-hour suffix.
+	
+	Explanation: You tried to use the 12-hour format, but the time was followed by
+	text that was neither AM nor PM. If you use the 12-hour format, you must follow
+	each time with either AM, A.M., PM, or P.M.
+	
+	Action: Retype the command with the correct forms of A.M. and P.M.
+	
+	Error 3767
+	----------
+	
+	  An illegal date format has been supplied.
+	
+	Explanation: You used an illegal date format.
+	
+	Action: Retype the command with a correct date format. Dates should be typed in
+	the form mm/dd/yy or dd/mm/yy, depending on the country code. Months can be
+	represented by a number, spelled out, or abbreviated to exactly 3 letters. Use
+	commas or slashes to separate the parts of the date, but do not use spaces. If
+	you do not specify the year, Windows NT assumes it to be the next occurrence of
+	the date.
+	
+	Error 3768
+	----------
+	
+	  An illegal day range has been supplied.
+	
+	Explanation: You specified an illegal range of days. You must also type a hyphen
+	between the first and last days of each range.
+	
+	Action: When specifying days, use only the complete names of the days or valid
+	Windows NT abbreviations. Valid abbreviations are: M, T, W, Th, F, Sa, and Su.
+	
+	Use a hyphen to separate the beginning and end of each range of days.
+	
+	Error 3769
+	----------
+	
+	  An illegal time range has been supplied.
+	
+	Explanation: You typed an invalid time range.
+	
+	Action: Retype the command with a valid time range. Use either the 12-hour
+	format, with the numbers 0-12 and A.M. and P.M., or the 24-hour format, with the
+	numbers 0-24. Use a hyphen to separate the beginning and end of a time range, as
+	in 9AM-4PM.
+	
+	Error 3770
+	----------
+	
+	  Arguments to NET USER are invalid. Check the minimum password length and/or
+	  arguments supplied.
+	
+	Explanation: You typed invalid options or variables with the command.
+	
+	Action: Retype the command, using valid options and variables. When you add a
+	user account, the password you set for the user must conform to your system's
+	guidelines for password length.
+	
+	Error 3771
+	----------
+	
+	  The value for ENABLESCRIPT must be YES.
+	
+	Explanation: The /ENABLESCRIPT option of the NET USER command accepts only YES as
+	a value.
+	
+	Action: Retype the command, either specifying /ENABLESCRIPT:YES or not specifying
+	/ENABLESCRIPT.
+	
+	Error 3773
+	----------
+	
+	  An illegal country code has been supplied.
+	
+	Explanation: You typed an invalid country code.
+	
+	Action: Specify a valid country code.
+	
+	Error 3774
+	----------
+	
+	  The user was successfully created but could not be added to the USERS local
+	  group.
+	
+	Explanation: The user was successfully created but could not be added to the
+	USERS local group.
+	
+	Action: Try deleting the user. Then add the user to the local group again. If the
+	problem persists, contact technical support.
+	
+	Error 3775
+	----------
+	
+	  The user context supplied is invalid.
+	
+	Explanation: The user context you supplied with /USER is invalid.
+	
+	Action: Retype the command with a valid user context which may be a simple user
+	name or a qualified user name (in the form Domain\Username).
+	
+	Error 3776
+	----------
+	
+	  The dynamic-link library *** could not be loaded, or an error occurred while
+	  trying to use it.
+	
+	Explanation: A system dynamic-link library could not be loaded.
+	
+	Action: Make sure the file specified is in your system directory. If it is not,
+	contact your network administrator.
+	
+	Error 3777
+	----------
+	
+	  Sending files is no longer supported.
+	
+	Explanation: The NET SEND command no longer sends files.
+	
+	Action: Type the message you want to send on the same line as NET SEND.
+	
+	Error 3778
+	----------
+	
+	  You may not specify paths for ADMIN$ and IPC$ shares.
+	
+	Explanation: When you are creating the special shares IPC$ or ADMIN$, you may not
+	specify a path.
+	
+	Action: Retype the command without a path. For example, type:
+	
+	  " NET SHARE ADMIN$ " (without the quotation marks)
+	
+	Error 3779
+	----------
+	
+	  User or group *** is already a member of local group ***.
+	
+	Explanation: The account (user or global group) is already in the local group you
+	are trying to add it to.
+	
+	Action: No action is needed.
+	
+	Error 3780
+	----------
+	
+	  There is no such user or group: ***.
+	
+	Explanation: The user or group specified does not exist.
+	
+	Action: Retype the command with a correct user name or group name.
+	
+	Error 3781
+	----------
+	
+	  There is no such computer: ***.
+	
+	Explanation: The computer account specified does not exist.
+	
+	Action: Retype the command with a correct computer name.
+	
+	Error 3782
+	----------
+	
+	  The computer *** already exists.
+	
+	Explanation: The computer account specified already exists.
+	
+	Action: Select a different computer name.
+	
+	Error 3783
+	----------
+	
+	  There is no such global user or group: ***.
+	
+	Explanation: The global user or group specified does not exist.
+	
+	Action: Retype the command with a correct user name or group name.
+	
+	Error 3790
+	----------
+	
+	  The system could not find message: ***.
+	
+	Explanation: The system could not find the message.
+	
+	Action: Contact your system administrator.
+	
+	Error 3802
+	----------
+	
+	  This schedule date is invalid.
+	
+	Explanation: You typed an invalid schedule date.
+	
+	Action: Specify either a day of the month represented by a number between 1 and
+	31, or a day of the week represented by one of the following abbreviations: M,
+	T, W, Th, F, Sa, or Su.
+	
+	Error 3803
+	----------
+	
+	  The LANMAN root directory is unavailable.
+	
+	Explanation: This message should occur only on a down-level computer. Any action
+	to correct the problem should be performed on that computer. The root directory
+	for LAN Manager is unavailable.
+	
+	Action: Be sure the workstation is running and the directory containing the LAN
+	Manager software is accessible.
+	
+	Error 3804
+	----------
+	
+	  The SCHED.LOG file could not be opened.
+	
+	Explanation: This message should occur only on a down-level computer. Any action
+	to correct the problem should be performed on that computer. Either the
+	Sched.log file has been opened by another process or the disk is full.
+	
+	Action: Be sure the disk is not full. If another process has opened the file, you
+	will have to wait for it to close the file before you can open it.
+	
+	Error 3805
+	----------
+	
+	  The Server service has not been started.
+	
+	Explanation: The Server service must be running for this command to run.
+	
+	Action: Start the server, and then retype the command.
+	
+	Error 3806
+	----------
+	
+	  The AT job ID does not exist.
+	
+	Explanation: You specified a job identification number that does not exist.
+	
+	Action: To see the list of jobs and identification numbers in the schedule file,
+	type:
+	
+	  " AT " (without the quotation marks)
+	
+	Error 3807
+	----------
+	
+	  The AT schedule file is corrupted.
+	
+	Explanation: This message should occur only on a down-level computer. Any action
+	to correct the problem should be performed on that computer. The schedule file
+	is damaged.
+	
+	Action: Restore the schedule file, Sched.log, from a backup copy, or delete the
+	file and create a new one with the AT utility. Sched.log is in the LANMAN\LOGS
+	directory.
+	
+	Error 3808
+	----------
+	
+	  The delete failed due to a problem with the AT schedule file.
+	
+	Explanation: This message should occur only on a down-level computer. Any action
+	to correct the problem should be performed on that computer. LAN Manager cannot
+	find the job you are trying to delete.
+	
+	Action: Check the job identification number by typing:
+	
+	  " AT " (without the quotation marks)
+	
+	Try again to delete the job, using the correct job identification number. If the
+	error persists, the schedule file, Sched.log, may be damaged. Restore Sched.log
+	from a backup copy, or delete it and create a new one with the AT utility.
+	Sched.log is in the Lanman\Logs folder.
+	
+	Error 3809
+	----------
+	
+	  The command line cannot exceed 259 characters.
+	
+	Explanation: Commands used with the AT utility cannot exceed 259 characters.
+	
+	Action: Type a command with 259 or fewer characters.
+	
+	Error 3810
+	----------
+	
+	  The AT schedule file could not be updated because the disk is full.
+	
+	Explanation: This message should occur only on a down-level computer. Any action
+	to correct the problem should be performed on that computer. You cannot update
+	the schedule file because the disk is full.
+	
+	Action: Make room on the disk by deleting unnecessary files.
+	
+	Error 3812
+	----------
+	
+	  The AT schedule file is invalid. Please delete the file and create a new one.
+	
+	Explanation: This message should occur only on a down-level computer. Any action
+	to correct the problem should be performed on that computer. The schedule file
+	has been damaged, possibly by system errors.
+	
+	Action: Restore the schedule file, SCHED.LOG, from a backup copy, or delete the
+	file and create a new one with the AT utility. Sched.log is in the Lanman\Logs
+	folder.
+	
+	Error 3813
+	----------
+	
+	  The AT schedule file was deleted.
+	
+	Explanation: The schedule file was cleared.
+	
+	Action: No action is needed.
+	
+	Error 3814
+	----------
+	
+	  The syntax of this command is:
+	
+	  AT [id] [/DELETE]
+	  AT time [/EVERY:date | /NEXT:date] command
+	
+	  The AT command schedules a program command to run at a later date and time on
+	  a server. It also displays the list of programs and commands scheduled to be
+	  run. You can specify the date as M,T,W,Th,F,Sa,Su or 1-31 for the day of the
+	  month. You can specify the time in the 24 hour HH:MM format.
+	
+	Error 3815
+	----------
+	
+	  The AT command has timed-out. Please try again later.
+	
+	Explanation: The command could not be completed because another scheduled command
+	is currently running.
+	
+	Action: Try the command later.
+	
+	Error 3816
+	----------
+	
+	  The minimum password age for user accounts cannot be greater than the maximum
+	  password age.
+	
+	Explanation: The minimum password age specified must not be greater than the
+	maximum.
+	
+	Action: Specify a minimum password age that is less than the maximum password
+	age.
+	
+	Error 3817
+	----------
+	
+	  You have specified a value that is incompatible with servers with down- level
+	  software. Please specify a lower value.
+	
+	Explanation: User account values cannot be replicated to down-level servers
+	unless the account values are compatible with the down-level server's values.
+	
+	Action: No action is needed.
+	
+	Error 3870
+	----------
+	
+	  *** is not a valid computer name.
+	
+	Explanation: The computer name you specified is invalid.
+	
+	Action: Check the spelling of the computer name.
+	
+	Error 3871
+	----------
+	
+	  *** is not a valid Windows NT network message number.
+	
+	Explanation: The specified message number does not represent a Windows NT
+	message.
+	
+	Action: Check that you typed the correct message number. To see more information
+	about system messages, type
+	
+	  " NET HELPMSG message# " (without the quotation marks)
+	
+	where message# is the message number.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+	Version           : WinNT:4.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

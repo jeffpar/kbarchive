@@ -1,0 +1,129 @@
+---
+layout: page
+title: "Q142823: INFO: Visual Basic Programmer's Guide to Visual SourceSafe"
+permalink: kb/142/Q142823/
+---
+
+## Q142823: INFO: Visual Basic Programmer's Guide to Visual SourceSafe
+
+	Article: Q142823
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): WINDOWS:4.0; :
+	Operating System(s): 
+	Keyword(s): kbinterop kbusage kbVBp400
+	Last Modified: 14-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+	- Microsoft Visual SourceSafe for Windows 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article includes information that can be of use to anyone wishing to take
+	advantage of the source code control features found in Microsoft Visual Basic
+	version 4.0 for Windows, and specifically integration with Microsoft Visual
+	SourceSafe, version 4.0. The following sections are covered:
+	
+	- Useful Microsoft Visual SourceSafe Knowledge Base articles
+	
+	- Visual SourceSafe and Electronic Information
+	
+	
+	
+	This information is current for version 4.0 of Visual Basic and for version 4.0
+	of Visual SourceSafe. Previous versions of both Visual Basic and SourceSafe do
+	not support integration.
+	
+	MORE INFORMATION
+	================
+	
+	Useful Visual SourceSafe Knowledge Base Articles
+	------------------------------------------------
+	
+	
+	The following list includes articles that are useful in performing setup of
+	Visual SourceSafe, verifying/utilizing integration of Visual SourceSafe with
+	Visual Basic, and general usage of Visual SourceSafe.
+	
+	Setup/Installation
+	------------------
+	
+	  Q135995 -- FAQ: Visual SourceSafe Integration w/Visual Basic 4.0
+	  Q133018 -- Visual SourceSafe Setup Registration Settings
+	
+	
+	
+	  The README.WRI file that ships with Visual SourceSafe is also an excellent
+	  and timely source of installation information.
+	
+	Using Visual Basic with Visual SourceSafe
+	-----------------------------------------
+	
+	  Q136399 -- Visual Basic and SourceCode Control Glyphs
+	  Q135720 -- PRB: Moving Project in SourceSafe Explorer Causes Error in VB
+	  Q136401 -- PRB: Visual SourceSafe "Invalid Data Path" Error
+	  Q137017 -- Visual Basic 4.0 File Types & Version Control Recommendations
+	  Q136400 -- Changing Visual SourceSafe User Name in Visual Basic
+	  Q135994 -- PRB: Visual SourceSafe Explorer Checks Out .FRM without .FRX
+	  Q135357 -- PRB: Sync Between Visual SourceSafe and VB Is Delayed
+	
+	General Usage
+	-------------
+	
+	  Q134369 -- Microsoft SourceSafe Frequently Asked Questions (FAQ)
+	  Q131895 -- SourceSafe Knowledge Base Available as Help File
+	  Q132922 -- Sharing SourceSafe Files
+	  Q132923 -- Sharing SourceSafe Projects
+	  Q132921 -- Branching or Separating SourceSafe Files and Projects
+	  Q132971 -- Merging SourceSafe Files
+	  Q133054 -- Detecting and Fixing Database Corruption Errors in SourceSafe
+	
+	Visual SourceSafe and Electronic Information
+	--------------------------------------------
+	
+	The World Wide Web For Developer's Only Home Page offers useful information for
+	all Microsoft developer products. Within it you can connect to home pages
+	dedicated to either Visual Basic or Visual SourceSafe and connect to dedicated
+	pages for the Knowledge Base. To access this home page, connect to:
+	
+	  http://www.microsoft.com/DevOnly
+	
+	
+	This web site contains rich content and award-winning services.
+	
+	- Microsoft Frequently Asked Questions
+	
+	- Microsoft Software Library
+	
+	- Microsoft Knowledge Base
+	
+	- Microsoft Wish
+	
+	- Microsoft Member BBSs (MSN only)
+	
+	The Microsoft Support Desktop offers information from Microsoft Technical Support
+	for all Microsoft products, including the full Knowledge Base. To access this
+	information, connect to:
+	
+	  http://www.microsoft.com/Support
+	
+	
+	
+	Additional query words: srcsafe ssafe
+	
+	======================================================================
+	Keywords          : kbinterop kbusage kbVBp400 
+	Technology        : kbVBSearch kbSSafeSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+	Version           : WINDOWS:4.0; :
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

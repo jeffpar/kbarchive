@@ -1,0 +1,159 @@
+---
+layout: page
+title: "Q191788: PRB: rdoConnection_Connect Event Does Not Always Fire"
+permalink: kb/191/Q191788/
+---
+
+## Q191788: PRB: rdoConnection_Connect Event Does Not Always Fire
+
+	Article: Q191788
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): WINDOWS:4.0,5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbRDO _IK12475 kbVBp kbVBp400 kbVBp500 kbVBp600 kbGrpDSVBDB kbDSupport
+	Last Modified: 09-JAN-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 4.0, 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When using the OpenConnection method of a rdoEnvironment object to establish a
+	connection to a local database, the Connect event of the rdoConnection object
+	will not fire.
+	
+	The Connect event will fire, however, when using the EstablishConnection method
+	of the rdoConnection object.
+	
+	CAUSE
+	=====
+	
+	This is primarily caused by the speed of the connection. When accessing a
+	database server that resides locally, the connection is made and the Connect
+	event is fired before the object can be returned to your program. Because the
+	object has not yet been returned, custom event handlers are not called.
+	
+	Basically, when using the rdoEnvironment.OpenConnection on a synchronous call, a
+	connection is established first and then the object is returned, whereas using
+	rdoConnection.EstablishConnection, an object has already been created before the
+	connection is established.
+	
+	Specifying rdAsyncEnable (an asynchronous connection) in the OpenConnection
+	method will not solve the problem on machines where the database server is
+	local. Because the database server is local, the connection is created before
+	RDO has an object to return to the calling program. When the database is remote,
+	RDO has enough time to return the rdoConnection object to the calling program
+	before the connection is established. When the connection is finally
+	established, the Connect event will fire normally.
+	
+	NOTE: You must specify rdAsyncEnable to make OpenConnection fire the Connect
+	event or the Connect event will never fire under any circumstances. If
+	rdAsyncEnable is not specified, the connection is always made to the database
+	before the object is returned.
+	
+	RESOLUTION
+	==========
+	
+	To work around this problem, try using the EstablishConnection method of a valid
+	connection object. Because the object has already been created and your program
+	has the event handler established before the connect call has been made, the
+	Connect event will always fire correctly.
+	
+	STATUS
+	======
+	
+	Microsoft is researching this problem and will post new information here in the
+	Microsoft Knowledge Base as it becomes available.
+	
+	
+	MORE INFORMATION
+	================
+	
+	If you are running SQL Server or other similar database system locally, you can
+	reproduce this behavior by following the steps below.
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Open a new Standard EXE project in Visual Basic. Form1 is created by default.
+	  Add a reference to the RDO Object Library.
+	
+	2. Add the following controls with the following properties to Form1:
+	
+	   Control         Property         Value
+	   -------         --------         -----
+	
+	   Label           Name             lblDSN
+	                   Caption          DSN
+	   TextBox         Name             txtDSN
+	   CommandButton   Name             cmdUseEstablishConnection
+	                   Caption          Use EstablishConnection
+	   CommandButton   Name             cmdUseOpenConnection
+	                   Caption          Use OpenConnection
+	
+	3. Paste the following code into the Code Window of Form1:
+	
+	       Option Explicit
+	       Dim WithEvents ConnectionObj As RDO.rdoConnection
+	       Dim Env As RDO.rdoEnvironment
+	
+	       Private Sub cmdUseEstablishConnection_Click()
+	
+	           'Here, we are creating the Object First
+	           Set ConnectionObj = New RDO.rdoConnection
+	
+	           ConnectionObj.Connect = txtDSN
+	
+	           'and then establishing the connection
+	           ConnectionObj.EstablishConnection
+	
+	       End Sub
+	
+	       Private Sub cmdUseOpenConnection_Click()
+	
+	           'Here, we are establishing the connection first
+	           'and then creating the object
+	           Set ConnectionObj = Env.OpenConnection(dsname:="", _
+	           prompt:=rdDriverNoPrompt, Connect:=txtDSN.Text, _
+	           Options:=rdAsyncEnable)
+	
+	       End Sub
+	
+	       Private Sub ConnectionObj_Connect(ByVal ErrorOccurred As Boolean)
+	           MsgBox "We are connected!", vbInformation
+	       End Sub
+	
+	       Private Sub Form_Load()
+	
+	           Set Env = rdoEngine.rdoEnvironments(0)
+	
+	           'This sample is designed to work with the pubs database
+	           'on a local SQL Server.  You may change your connect string
+	           'here.
+	           txtDSN = "Driver={SQL Server};Server=(local);" & _
+	                    "Database=Pubs;UID=sa;PWD=;"
+	
+	       End Sub
+	
+	4. Run the form. Click on each of the command buttons and note that the Use
+	  EstablishConnection will always display a Message Box whereas OpenConnection
+	  will not.
+	
+	(c) Microsoft Corporation 1998. All Rights Reserved.
+	Contributions by Jonathan Johnson, Microsoft Corporation
+	
+	
+	Additional query words: kbVBp400 kbVBp500 kbVBp600 kbdse kbDSupport kbVBp kbRDO
+	
+	======================================================================
+	Keywords          : kbRDO _IK12475 kbVBp kbVBp400 kbVBp500 kbVBp600 kbGrpDSVBDB kbDSupport 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600 kbVB400Search kbVB400
+	Version           : WINDOWS:4.0,5.0,6.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

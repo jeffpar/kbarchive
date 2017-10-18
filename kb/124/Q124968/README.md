@@ -1,0 +1,79 @@
+---
+layout: page
+title: "Q124968: MSB Human: Computer Stops Responding on Exit"
+permalink: kb/124/Q124968/
+---
+
+## Q124968: MSB Human: Computer Stops Responding on Exit
+
+	Article: Q124968
+	Product(s): Microsoft Home Kids Products
+	Version(s): WINDOWS:1.0
+	Operating System(s): 
+	Keyword(s): kbfaq
+	Last Modified: 08-NOV-2001
+	
+	1.0
+	WINDOWS
+	kbmm kbhw kbenv kbfaq
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Scholastic's Magic School Bus series: Explores the Human Body for Windows, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Your computer may stop responding (hang) when you click the Exit signs that
+	appear in various places in Explores The Human Body if you are using an S3 864
+	or S3 964 video chip set and driver.
+	
+	
+	RESOLUTION
+	==========
+	
+	WORKAROUND
+	----------
+	
+	To work around this problem, exit the program without clicking the Exit signs.
+	Clicking the Exit sign takes you through an animated exit sequence, which makes
+	the computer stop responding.
+	
+	To avoid the exit signs, press and hold down the ALT key while you press the F4
+	function key (ALT+F4).
+	
+	NOTE: If you use the ALT+F4 exit sequence, information about the places you have
+	visited is saved.
+	
+	In some instances, usually with newer versions of the S3 drivers, it is possible
+	to resolve the problem by using Animation Option #1 in the Bus Stop Utility,
+	instead of using ALT+F4 to exit.
+	
+	MORE INFORMATION
+	================
+	
+	The S3 864 and S3 964 chip sets are relatively new (late 1994), and there is no
+	known driver that allows them to function correctly in the Exit sequence in
+	Magic School Bus Explores the Human Body.
+	
+	NOTE: The S3 964 driver may not work with all S3 964 chipsets because many OEM
+	companies modify the video card in such a way that only their own drivers will
+	work.
+	
+	The S3 products included here are manufactured by S3, a vendor independent of
+	Microsoft; we make no warranty, implied or otherwise, regarding these products'
+	performance or reliability.
+	
+	
+	Additional query words: crash freeze error hang liz winmsbhuman msbhuman msb msb-hb msbhb frizz frizzle magic_bus chipset diamond stealth video screen bomb S3864 S3964
+	
+	======================================================================
+	Keywords          :  kbfaq
+	Technology        : kbHomeProdSearch kbZNotKeyword kbKidsSearch kbScholasticHuman kbMSBSearch
+	Version           : WINDOWS:1.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

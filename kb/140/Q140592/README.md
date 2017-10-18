@@ -1,0 +1,154 @@
+---
+layout: page
+title: "Q140592: HOWTO: Implement Per-Property Browsing for a Custom Property"
+permalink: kb/140/Q140592/
+---
+
+## Q140592: HOWTO: Implement Per-Property Browsing for a Custom Property
+
+	Article: Q140592
+	Product(s): Microsoft C Compiler
+	Version(s): winnt:2.0,2.1,2.2,4.0,5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbnokeyword kbActiveX kbCOMt kbCtrlCreate kbMFC kbVC150 kbVC200 kbVC400 kbVC500 kbVC600
+	Last Modified: 06-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The Microsoft Foundation Classes (MFC), used with:
+	   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.5, 1.51, 1.52 
+	   - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1, 2.2, 4.0 
+	   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+	   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+	   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+	   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+	   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article illustrates how to implement per-property browsing for a custom
+	property present in an OLE control. The custom property can be manipulated
+	either in a property page that implements editing of this property or directly
+	in the property browser provided by the container application.
+	
+	When the property browser of Microsoft Visual Basic is used, for example,
+	selecting the custom property for editing displays a three-dot button next to
+	the property's value. Clicking the three-dot button displays the property page
+	associated with the property--if one is available.
+	
+	MORE INFORMATION
+	================
+	
+	An OLE control container typically provides some kind of user interface where
+	the user can manipulate the properties of the control. Some containers may need
+	to browse individual property values rather than groups of property values,
+	which is a technique commonly referred to as per-property browsing. An OLE
+	control can support non-default, per-property browsing by implementing
+	IPerPropertyBrowsing. Otherwise, the container application uses the type
+	information.
+	
+	When an OLE control's property is manipulated using the property browser provided
+	by a container application, the container queries to find out if the control
+	supports IPerPropertyBrowsing. If an interface pointer can be successfully
+	obtained, the container then makes a call to
+	IPerPropertyBrowsing::MapPropertyToPage to obtain the CLSID of the property page
+	that implements editing of this particular property. If this method returns S_OK
+	or S_FALSE, the container creates a property frame with the property page
+	corresponding to the returned CLSID in it.
+	
+	The success return codes (S_OK and S_FALSE) from
+	IPerPropertyBrowsing::MapPropertyToPage specify whether or not a property can be
+	edited outside the property page identified by the CLSID. A return code of
+	S_FALSE implies that this particular property can only be edited through a
+	specific property page -- not outside this property page. For example, the
+	property cannot be directly edited in the property browser of Visual Basic. If
+	the method returns S_OK, then the property can be manipulated outside the
+	property page. Please refer to the CDK Books Online for more information on
+	MapPropertyToPage and its return values.
+	
+	The sample code in this article can be added to an OLE control to implement a
+	custom property that can only be edited using a specific property page -- not
+	outside the property page. The code overrides two member functions of
+	COleControl, namely OnMapPropertyToPage and OnGetDisplayString. The MFC
+	framework calls OnMapPropertyToPage to obtain the CLSID of a property page that
+	implements editing of the property identified by a dispID. The framework calls
+	OnGetDisplayString to obtain a string representing the property's value to be
+	displayed in a container-supplied property browser.
+	
+	Steps to Add Custom Property Named MyProp to an OLE Control
+	-----------------------------------------------------------
+	
+	For the code to work, the ClassWizard must have been used to add a custom
+	property named MyProp to an OLE control. The following steps illustrate how to
+	add a custom property named MyProp using ClassWizard. This will use the Get/Set
+	Methods implementation:
+	
+	1. Load the OLE control project.
+	
+	2. Open ClassWizard.
+	
+	3. Click the OLE Automation tab.
+	
+	4. Click Add Property.
+	
+	5. In the External name box, type MyProp.
+	
+	6. Under Implementation, select Get/Set Methods.
+	
+	7. From the type box, select short as the property's type.
+	
+	8. Type unique names for the Get and Set methods, or accept the default names,
+	  and then click OK.
+	
+	9. Click OK to confirm the choices, and close ClassWizard.
+	
+	Sample Code
+	-----------
+	
+	Once the MyProp property is added, the following code can be used to display that
+	property in the property browser provided by Visual Basic:
+	
+	     BOOL CTestCtrl::OnMapPropertyToPage(DISPID dispid, LPCLSID
+	      lpclsid, BOOL* pbPageOptional)
+	     {
+	          switch (dispid)
+	          {
+	           case dispidMyProp:
+	              // Return the CLSID of the property page that implements
+	              // editing of the MyProp property
+	              *lpclsid = CTestPropPage::guid;
+	              pbPageOptional = FALSE; // Can't be edited outside this page
+	              return TRUE;
+	          }
+	
+	          return COleControl::OnMapPropertyToPage(
+	                              dispid, lpclsid, pbPageOptional);
+	     }
+	
+	     BOOL CTestCtrl::OnGetDisplayString(DISPID dispid, CString& strValue)
+	     {
+	          switch (dispid)
+	          {
+	           case dispidMyProp:
+	              // Return any string that should be displayed in the property
+	              // browser provided by VB
+	              strValue = _T("(My Property)");
+	              return TRUE;
+	          }
+	
+	          return COleControl::OnGetDisplayString(dispid, strValue);
+	     }
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbnokeyword kbActiveX kbCOMt kbCtrlCreate kbMFC kbVC150 kbVC200 kbVC400 kbVC500 kbVC600 kbGrpDSMFCATL 
+	Technology        : kbAudDeveloper kbMFC
+	Version           : winnt:2.0,2.1,2.2,4.0,5.0,6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

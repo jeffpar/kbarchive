@@ -1,0 +1,151 @@
+---
+layout: page
+title: "Q161853: Writer 2: Problems Spell Checking"
+permalink: kb/161/Q161853/
+---
+
+## Q161853: Writer 2: Problems Spell Checking
+
+	Article: Q161853
+	Product(s): Microsoft Home Kids Products
+	Version(s): WINDOWS:2.0
+	Operating System(s): 
+	Keyword(s): kbusagekbfaq
+	Last Modified: 12-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Creative Writer for Windows, version 2.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you attempt to check the spelling of a document in Creative Writer version
+	2.0, you may receive the following error message:
+	
+	  Creative Writer had trouble spell checking your document. Something may be
+	  broken in the spell checker.
+	
+	  Please re-install Creative Writer by running Setup from the Creative Writer
+	  CD.
+	
+	Following the instructions in the error box may not resolve the problem.
+	
+	CAUSE
+	=====
+	
+	The files used for checking the spelling may be damaged or missing.
+	
+	RESOLUTION
+	==========
+	
+	Rename the following files using the steps below:
+	
+	  Mssp232.dll
+	  Mssp2_en.lex (The letters, "en" may be something else if this is not a U.S.
+	  English version of Creative Writer 2.0.)
+	
+	1. Double-click the My Computer icon on your desktop.
+	
+	2. Double-click your C: drive. (This assumes that C: is the letter of the hard
+	  drive where Creative Writer is installed.)
+	
+	3. Double-click the Program Files folder.
+	
+	4. Double-click the Common Files folder.
+	
+	5. Double-click the Microsoft Shared folder.
+	
+	6. Double-click the Proof folder.
+	
+	7. Click once on the Mssp232.dll file, and then click Rename on the File menu.
+	
+	8. Rename the file to mssp232.old.
+	
+	9. Repeat steps 7 and 8 for Mssp2_en.lex file, and rename it to Mssp2_en.old.
+	
+	10. Reinstall Creative Writer 2.0.
+	
+	  a. Put the Creative Writer 2.0 compact disc in the CD-ROM drive, while
+	     holding down the SHIFT key (this will prevent the program from starting
+	     automatically).
+	
+	  b. Click the Start button, then click Run.
+	
+	  c. Type "d:\setup" (without the quotation marks), where d: is the drive
+	     letter of your CD ROM drive.
+	
+	  d. Click the Setup Again button.
+	
+	11. Run Creative Writer.
+	
+	After following the steps listed above, Creative Writer should check the spelling
+	of your document correctly.
+	
+	MORE INFORMATION
+	================
+	
+	NOTE: This article assumes that Regional Settings in Control Panel is set to
+	English (United States). If the regional setting is a different English version,
+	such as English (British), this information still applies. However, you may need
+	to substitute any references to the American English dictionary file
+	(Mssp_am.lex) with the British English dictionary file (Mssp_br.lex) in the
+	discussion below.
+	
+	When you install a Microsoft program and include the spelling checker, the Setup
+	program copies a spelling engine file (.dll) and a dictionary file (.lex) to a
+	common folder on your computer:
+	
+	  C:\Program Files\Common Files\Microsoft\Shared\Proof
+	
+	This folder may contain two versions of the spelling checker because Microsoft
+	programs can install different spelling engines and Dictionary files. For
+	example, Microsoft Word, Microsoft Publisher, and Microsoft Office install the
+	following spelling checker files:
+	
+	  Engine: Mssp232.dll
+	  Dictionary: Mssp2_en.lex
+	
+	Microsoft Excel, Microsoft Project, Microsoft PowerPoint, and Microsoft Access
+	install these different spelling checker files:
+	
+	  Engine: Mssp32.dll
+	  Dictionary: Mssp_am.lex
+	
+	To have two versions of the spelling checker usually does not cause a problem
+	because the Windows Registry keeps track of only one main engine and dictionary.
+	The Registry stores a Spelling key with an Engine value and a Dictionary value
+	under the following entry:
+	
+	  
+	  [\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\Shared Tools\Proofing
+	  Tools\Spelling\1033\Normal]
+	
+	If the spelling checker in Microsoft Word (the same spelling checker that is also
+	included with Microsoft Office and Microsoft Publisher) is installed at the time
+	you set up other Microsoft programs, then the Registry's Engine and Dictionary
+	values are not changed. This enables other Microsoft programs to use the
+	Microsoft Word spelling engine (Mssp232.dll) and dictionary (Mssp2_en.lex)
+	because they are more robust than the other spelling engine and dictionary
+	(Mssp32.dll and Mssp_am.lex).
+	
+	For additional information, please see the following articles in the Microsoft
+	Knowledge Base:
+	
+	  Q139502 PRA: Spelling Checker Not Running After MS Access Is Installed
+	
+	  Q166034 Writer 2: ErrMsg: Creative Writer Had Trouble Spell Checking...
+	
+	
+	Additional query words: 2.00 mskids artist maggie max writer cw2 cw2.0
+	
+	======================================================================
+	Keywords          : kbusage kbfaq
+	Technology        : kbHomeProdSearch kbCreativeWriter200
+	Version           : WINDOWS:2.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

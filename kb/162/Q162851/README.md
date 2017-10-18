@@ -1,0 +1,104 @@
+---
+layout: page
+title: "Q162851: ACC97: &quot;Couldn't find object&quot; Error Checking Out Table/Query"
+permalink: kb/162/Q162851/
+---
+
+## Q162851: ACC97: &quot;Couldn't find object&quot; Error Checking Out Table/Query
+
+	Article: Q162851
+	Product(s): Microsoft SourceSafe
+	Version(s): 97
+	Operating System(s): 
+	Keyword(s): kberrmsg kbinterop
+	Last Modified: 01-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual SourceSafe for Windows, versions 4.0, 4.0a, 5.0 
+	- Microsoft Access 97 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Advanced: Requires expert coding, interoperability, and multi-user skills.
+	
+	This article assumes that you are familiar with using the client side
+	capabilities of Visual SourceSafe. For more information about Visual SourceSafe,
+	please refer to the "Visual SourceSafe User's Guide" or the Help topics
+	available from the Visual SourceSafe menu.
+	
+	This article also assumes that you have Microsoft Visual SourceSafe installed.
+	
+	When you check out a query object, you may receive the following error message:
+	
+	  The Microsoft Jet database engine could not find the object <'Object'>.
+	  Make sure the object exists and that you spell its name and the path name
+	  correctly.
+	
+	CAUSE
+	=====
+	
+	You are trying to check out a query that conflicts with the name of a table.
+	
+	-or-
+	
+	You are trying to check out the "Data and Misc. Objects" file, and there is a
+	table in it that conflicts with the name of a query.
+	
+	RESOLUTION
+	==========
+	
+	Make sure that tables and queries do not share the same name.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Create a new Database and name it VssTest.mdb.
+	
+	2. Add this database to SourceSafe Control by clicking SourceSafe on the Tools
+	  Menu and selecting "Add Database to SourceSafe."
+	
+	3. Check out the "Data and Misc. Objects" file from SourceSafe.
+	
+	4. On the File menu, point to Get External Data, and then click Import. Import
+	  the Employees Table from the sample database Northwind.mdb.
+	
+	5. Create a new query based on the Employees table, save it as "SSTest" (without
+	  the quotation marks), and add it to SourceSafe.
+	
+	6. Delete the SSTest query from the Database window.
+	
+	7. Note that you receive a message box asking "Would you like to remove query
+	  "SSTest" from the source code control?" Click No.
+	
+	8. Create a new table in Datasheet View and save it as "SSTest" (without the
+	  quotation marks).
+	
+	9. Check in the "Data and Misc. Objects" file.
+	
+	10. Check out SSTest from the "Object type of Query" in SourceSafe. Note that
+	  you receive the error message mentioned in the "Symptoms" section.
+	
+	REFERENCES
+	==========
+	
+	For more information about using Microsoft Access 97 with Source Code Control,
+	search the Help Index for "source code control."
+	
+	Additional query words: AccScc, VSS, Visual
+	
+	======================================================================
+	Keywords          : kberrmsg kbinterop 
+	Technology        : kbSSafeSearch kbAudDeveloper kbAccessSearch kbAccess97 kbAccess97Search kbSSafe400 kbSSafe400a kbSSafe500
+	Version           : 97
+	Hardware          : x86
+	Issue type        : kbprb
+	
+	=============================================================================
+	

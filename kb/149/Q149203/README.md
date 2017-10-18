@@ -1,0 +1,164 @@
+---
+layout: page
+title: "Q149203: XFOR: Preventing Winmail.dat From Being Sent Over IMC"
+permalink: kb/149/Q149203/
+---
+
+## Q149203: XFOR: Preventing Winmail.dat From Being Sent Over IMC
+
+	Article: Q149203
+	Product(s): Microsoft Exchange
+	Version(s): WINDOWS:4.0,8.0,8.01; winnt:4.0
+	Operating System(s): 
+	Keyword(s): kbusage
+	Last Modified: 19-OCT-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 4.0 
+	- Microsoft Exchange Windows 3.x client, version 4.0 
+	- Microsoft Exchange Windows NT client, version 4.0 
+	- Microsoft Exchange Windows 95/98 client, version 4.0 
+	- Microsoft Outlook 97, versions 8.0, 8.01, used with:
+	   - the operating system: Microsoft Windows NT 
+	- Microsoft Outlook 97, versions 8.0, 8.01, used with:
+	   - the operating system: Microsoft Windows 98 
+	   - the operating system: Microsoft Windows 95 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	When you send mail over the Internet from a Microsoft Exchange Windows client or
+	an Outlook client, a file attachment called Winmail.dat may be added to the
+	message. This attachment contains the Microsoft Exchange rich-text information
+	of the message being sent. The Winmail.dat file may not be useful to
+	non-Microsoft Exchange recipients. The information in the Winmail.dat file may
+	appear on the receiving end as binary information at the end of the mail
+	message.
+	
+	This article describes how to prevent sending the Winmail.dat attachment to
+	Internet users when you are using the Microsoft Exchange Internet Mail Connector
+	(IMC).
+	
+	MORE INFORMATION
+	================
+	
+	You can control whether or not to send rich-text format in any one of the
+	following ways:
+	
+	- Custom Recipients
+	  The administrator can modify an existing Microsoft Exchange custom recipient
+	  to prevent rich text information from being sent to that custom recipient by
+	  clearing the Allow Rich Text in Messages check box on the Advanced property
+	  page of the recipient's properties. You can view the custom recipient's
+	  properties by selecting the recipient name and then choosing Properties from
+	  the File menu.
+	
+	- Addresses in the Personal Address Book
+	  The user can modify the Internet addresses in their Personal Address Book
+	  (PAB) to not be sent rich-text information by clearing the Always Send to
+	  This Recipient in Microsoft Exchange Rich-Text Format check box on the SMTP
+	  General property page of the Internet address in the PAB. To obtain the
+	  properties of an entry in a PAB, select the entry and choose Properties from
+	  the File menu.
+	
+	- Configuring the Internet Mail Connector (IMC)
+	  The administrator can configure the IMC to send or not to send rich-text
+	  information by following the steps below:
+	
+	  a. Bring up the properties of the Internet Mail Connector.
+	
+	  b. Select the Internet Mail property page.
+	
+	  c. Click on the button labeled Interoperability. This should bring up the
+	     Interoperability dialog.
+	
+	  d. The Send Microsoft Exchange Rich-Text Formatting list box controls the
+	     sending of rich-text data. There are three values to choose from:
+	
+	      - If the value is set to User, the recipient's properties are used to
+	        determine whether or not to send rich-text information.
+	
+	      - If the value is set to Always, rich-text information is always sent,
+	        regardless of the recipient's properties.
+	
+	      - If the value is set to Never, rich-text information is never sent.
+	
+	  You can also configure whether or not to send rich-text information on a
+	  per-domain basis. To define e-mail domains and the message settings for that
+	  domain, click the E-Mail Domain button on the Internet Mail page of the IMC
+	  Properties. This will bring up the Add E-Mail Domain dialog. Click on the Add
+	  button to specify an e-mail domain. Click on the Interoperability button.
+	  Select a setting from the Send Microsoft Exchange rich text formatting list
+	  box.
+	
+	- One-Off Addressing You can send e-mail to an Internet user from a Microsoft
+	  Exchange or Outlook client using One-Off addressing. One-Off addressing
+	  allows sending a message to addresses that are not in the PAB, the Global
+	  Address List (GAL), or in any recipient containers. Depending on the type of
+	  the One-Off address used, rich-text information is or is not sent with the
+	  message:
+	
+	   - Rich-Text Information Sent:
+	     If the One-Off address has the following format, rich-text information is
+	     sent with the message:
+	
+	           [SMTP:<SMTP Address>]
+	
+	     where SMTP Address is any valid SMTP address, for example:
+	
+	           user@domain.com
+	
+	     To verify that rich-text information is sent:
+	
+	     1. Select the Check Names command from the Tools menu after typing the
+	        address in the above format. This should display the SMTP address
+	        without the SMTP:. The name should be underlined.
+	
+	     2. Bring up the Properties of the address by double clicking it. The
+	        option Always Send to This Recipient in Microsoft Exchange Rich-Text
+	        Format should be checked indicating that rich-text information (the
+	        Winmail.dat file) will be sent along with the message.
+	
+	     NOTE: Even if you address a message to [SMTP:<SMTP Address>], you can
+	     run the Check Names command, then get the properties of the resolved
+	     recipient and unselect the Always Send to This Recipient in Microsoft
+	     Exchange Rich-Text Format checkbox. This will prevent rich-text
+	     information from being sent along with the message.
+	
+	   - Rich-Text Information Not Sent: If you use a One-Off address and you do
+	     not want to send rich-text information to the recipient, the address
+	     should have the following format:
+	
+	           <SMTP Address>
+	
+	     where SMTP Address is any valid SMTP Address, for example:
+	
+	           user@domain.com
+	
+	     NOTE: Unlike the address in step 4.a. above, the SMTP Address is not
+	     proceeded by SMTP: and the address is not enclosed in square brackets. If
+	     you click the Check Names command and then get the properties of the
+	     address, you can see that the rich-text option is not selected.
+	
+	  However, no matter what option is selected for the address of the recipient,
+	  the IMC settings determine whether or not rich-text information is
+	  transmitted. If the IMC is set to never send rich-text data, then even if the
+	  properties of the recipient address have the rich-text option selected, no
+	  rich-text is transmitted.
+	
+	  If the IMC has separate settings for individual domains, then the settings for
+	  those domains takes precedence for all messages addressed to users in those
+	  domains.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbusage 
+	Technology        : kbOutlookSearch kbExchangeSearch kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbOutlook97Search kbZNotKeyword3
+	Version           : WINDOWS:4.0,8.0,8.01; winnt:4.0
+	
+	=============================================================================
+	

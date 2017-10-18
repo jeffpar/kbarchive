@@ -1,0 +1,80 @@
+---
+layout: page
+title: "Q158041: Xircom CreditCard Ethernet Adapter IIps with Windows NT 4.0"
+permalink: kb/158/Q158041/
+---
+
+## Q158041: Xircom CreditCard Ethernet Adapter IIps with Windows NT 4.0
+
+	Article: Q158041
+	Product(s): Microsoft Windows NT
+	Version(s): 4.0
+	Operating System(s): 
+	Keyword(s): kb3rdparty
+	Last Modified: 09-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 4.0 
+	- Microsoft Windows NT Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The Windows NT 4.0 Server and Workstation compact discs provided the driver for
+	the Xircom Ethernet Adapter IIps in the following directory:
+	I386\Drvlib.nic\Xircom\Ce2. The driver can be installed through the Control
+	Panel PCMCIA tool or through the Control Panel Network tool.
+	
+	If the Control Panel PCMCIA tool is used to install the Xircom driver, the tool
+	will request the use of the CE2NDIS3 driver, which is the older Windows NT 3.5x
+	driver, and the driver will not install.
+	
+	If the Control Panel Network tool is used to install the driver, the Xircom
+	Adapter will fail to initialize correctly. In some cases, the driver appears to
+	load, but does not function correctly.
+	
+	CAUSE
+	=====
+	
+	The PCMCIA database located in the Windows NT registry references the older
+	version of the driver, CE2NDIS3. The Windows NT 4.0 driver is referenced by
+	CE2XPS, which conflicts with the PCMCIA database.
+	
+	
+	STATUS
+	======
+	
+	The Windows NT 3.51 driver does work as a temporary solution; however, an
+	alternative network adapter is recommended until a new driver is available. The
+	driver is supplied by Xircom and can be downloaded from the Xircom web site,
+	http://www.xircom.com/
+	
+	If you currently have Windows NT 3.51 the driver can be found in the
+	Drvlib\Netcard\X86\Xce10 on the CD and be copied to the root of a floppy disk.
+	
+	In either case, use the Control Panel Network tool and select the Have Disk
+	option from the Adapters tab to install the driver.
+	
+	Microsoft has confirmed this to be a problem in Windows NT version 4.0. We are
+	researching this problem and will post new information here in the Microsoft
+	Knowledge Base as it becomes available.
+	
+	MORE INFORMATION
+	================
+	
+	The Xircom CreditCard Ethernet Adapter IIps is manufactured by Xircom, a vendor
+	independent of Microsoft; we make no warranty, implied or otherwise, regarding
+	this product's performance or reliability.
+	
+	Additional query words: prodnt Xircom
+	
+	======================================================================
+	Keywords          : kb3rdparty 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+	Version           : 4.0
+	
+	=============================================================================
+	

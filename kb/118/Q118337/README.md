@@ -1,0 +1,108 @@
+---
+layout: page
+title: "Q118337: FIX: &quot;Integer divide by 0&quot; Error Handling"
+permalink: kb/118/Q118337/
+---
+
+## Q118337: FIX: &quot;Integer divide by 0&quot; Error Handling
+
+	Article: Q118337
+	Product(s): Microsoft Fortran Compiler
+	Version(s): 1.0,1.0a
+	Operating System(s): 
+	Keyword(s): kberrmsg kbCompiler kbFL32 kbFortranPS
+	Last Modified: 24-MAR-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft FORTRAN PowerStation for MS-DOS, versions 1.0, 1.0a 
+	- Microsoft Fortran Powerstation 32 for Windows NT, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	In code, there are two significant problems with dividing by 0:
+	
+	- "Integer divide by 0" is not generated as a run-time error. Instead, one of
+	  two error messages is produced:
+	
+	   - Under MS-DOS, the DOSXMSF error message is produced:
+	
+	  DX1020 unhandled exception: divide by zero exception
+	
+	   - Under Windows NT, the Dr. Watson error message is produced:
+	
+	  exception: divide by zero
+	
+	- With optimization on, the compiler replaces any constant expression that
+	  contains an "Integer divide by 0" with 0, which is incorrect, and produces
+	  the following error message:
+	
+	  warning F4723: potential divide by 0
+	
+	  (With optimization on, but warnings off, the compiler fails to generate an
+	  error or warning, either during compilation or run time.)
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article. This problem was corrected in Microsoft FORTRAN
+	PowerStation 32, version 4.0.
+	
+	MORE INFORMATION
+	================
+	
+	To generate the "Integer divide by 0" exceptions, compile and run the "Sample
+	Code 1," below. With optimization off, the exception occurs on the first print
+	statement. With optimization on, it occurs on the second print statement.
+	
+	NOTE: FORTRAN PowerStation for MS-DOS, version 1.0, correctly generates error
+	F6003 in this case.
+	
+	To produce the invalid code generation and warning F4723, compile and run either
+	sample with optimization on (option /Ox). To demonstrate invalid code generation
+	with no warnings or errors, compile and run "Sample Code 2," below, with
+	optimization on and warnings off (/Ox /W0). With optimization off (default
+	option), "Sample Code 2" will correctly generate the run-time error for "Integer
+	divide by 0": M6103.
+	
+	NOTE: /4Yb ($DEBUG) does not produce any additional error messages.
+	
+	Sample Code 1
+	-------------
+	
+	  c compile options needed: See text above.
+	
+	        integer i,j
+	        character*4 c /"0"/ 
+	        i=0
+	        j=1
+	        print *, ' 1/0 =',j/i
+	        read(c,'(I1)') i
+	        print *, ' 1/0 =',j/i
+	        end
+	
+	Sample Code 2
+	-------------
+	
+	  c compile options needed: See text above.
+	        real a,b
+	        a=0
+	        b=1
+	        print *, ' 1.0/0.0 =',b/a
+	        end
+	
+	Additional query words: 1.00 1.00a
+	
+	======================================================================
+	Keywords          : kberrmsg kbCompiler kbFL32 kbFortranPS 
+	Technology        : kbAudDeveloper kbFortranSearch kbZNotKeyword2 kbZNotKeyword3 kbFORTRANPower32100NT kbFORTRANPower100DOS kbFORTRANPower100aDOS
+	Version           : :1.0,1.0a
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

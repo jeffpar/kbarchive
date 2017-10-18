@@ -1,0 +1,154 @@
+---
+layout: page
+title: "Q143248: FIX: Error: &quot;Variable 'TITLE' is not found&quot; as Start Tastrade"
+permalink: kb/143/Q143248/
+---
+
+## Q143248: FIX: Error: &quot;Variable 'TITLE' is not found&quot; as Start Tastrade
+
+	Article: Q143248
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:3.0,3.0b
+	Operating System(s): 
+	Keyword(s): kbvfp kbvfp300bBUG kbvfp500fixkbbuglist kbfixlist
+	Last Modified: 24-MAR-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Starting Tastrade.app causes the following error message to appear:
+	
+	  Variable "TITLE" is not found.
+	  <Cancel> <Suspend> <Ignore> <Help>
+	
+	If you click Ignore, the error message will appear with NOTES replacing TITLE as
+	the variable not found. This will occur several more times, each with a
+	different variable such as PHOTO_FILE and PASSWORD.
+	
+	NOTE: The error is not displayed immediately upon starting Tastrade.app if the
+	introductory screen appears. To cause the error message to appear, click the
+	Continue button on the Introductory form.
+	
+	CAUSE
+	=====
+	
+	COMPATIBLE has been set to ON or DB4.
+	
+	WORKAROUND
+	==========
+	
+	The short-term solution is to issue the following command in the Command window
+	before running Tastrade.app:
+	
+	     SET COMPATIBLE OFF
+	
+	The permanent solution is to modify the Environment class in the Tsgen class
+	library as described below.
+	
+	Step-by-Step Workaround
+	-----------------------
+	
+	1. Open the Tastrade.pjx project file located in the VFP\Samples\Mainsamp
+	  directory.
+	
+	2. Click the Classes tab. Drill down in the Tsgen class library, and select the
+	  Environment library. Click the Modify button to edit the library.
+	
+	3. With the Environment class open in design mode, click New Property on the
+	  Class menu. In the Name box, enter the following variable name:
+	
+	  " cOldCompatible " (without the quotation marks)
+	
+	4. Ensure that the properties sheet of the class is open by choosing Properties
+	  from the View menu. Click the Methods tab on the properties sheet.
+	
+	5. Double-click the Init event, and add the following line of code at the end of
+	  the current code:
+	
+	     this.cOldCompatible = SET('COMPATIBLE')
+	
+	  Close and save the Init event.
+	
+	6. From the Methods tab in the Property sheet, double-click the Reset method,
+	  and add the code at the end of the current code:
+	
+	     lutemp = this.cOldCompatible
+	     SET COMPATIBLE &lutemp
+	
+	  Close and save the method.
+	
+	7. Double-click the Set method in the Methods tab of the Property sheet and
+	  enter the following line of code at the end of the current code:
+	
+	     SET COMPATIBLE OFF
+	
+	  Close and save the method.
+	
+	8. Close and save the Environment class. In the Project Manager, click the Build
+	  option button, and then click Build Application under options, and choose OK.
+	  The Save As dialog box appears. Either take the default name for the
+	  application, or enter a new name to leave the original application intact if
+	  necessary.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products listed at
+	the beginning of this article. This problem has been fixed in Visual FoxPro 5.0
+	for Windows.
+	
+	MORE INFORMATION
+	================
+	
+	COMPATIBLE can be set in following three ways:
+	
+	- By using the following command in the Config.fpw file:
+	
+	  COMPATIBLE=ON
+	
+	- By using the following command in program code or in the Command window:
+	
+	     SET COMPATIBLE ON
+	
+	- By choosing Options from the Tools menu; then clicking the General tab, and
+	  selecting the dBASE Compatibility check box.
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. In Command window, type "SET COMPATIBLE ON" (without the quotation marks), or
+	  select the dBASE Compatibility check box in the General tab the Options
+	  choice on the Tools menu.
+	
+	2. Run \Vfp\Samples\Mainsamp\Tastrade.app
+	
+	3. Click the Continue button on the Introductory form if you see it.
+	
+	4. The following program error is displayed:
+	
+	  "Variable 'TITLE' is not found."
+	  <Cancel> <Suspend> <Ignore> <Help>
+	
+	5. Click Ignore. Several more similar error messages will appear, each with a
+	  different variable not found.
+	
+	6. Click Ignore until the Login form appears. Each field that was displayed in
+	  the error message is blank.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbvfp kbvfp300bBUG kbvfp500fix kbbuglist kbfixlist
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+	Version           : WINDOWS:3.0,3.0b
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

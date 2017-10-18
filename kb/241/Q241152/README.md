@@ -1,0 +1,216 @@
+---
+layout: page
+title: "Q241152: XADM: &quot;Unsecuring&quot; a Database for a Lab Environment"
+permalink: kb/241/Q241152/
+---
+
+## Q241152: XADM: &quot;Unsecuring&quot; a Database for a Lab Environment
+
+	Article: Q241152
+	Product(s): Microsoft Exchange
+	Version(s): 4.0,5.0,5.5
+	Operating System(s): 
+	Keyword(s): exc4 exc5 exc55
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	You may need to run an Exchange Server directory service database in a lab
+	environment, or to send a database to Microsoft Product Support Services (PSS)
+	for testing and troubleshooting. Because the directory service database is
+	linked to the Exchange Server service account, running it "out of place" can be
+	inconvenient because its associated Microsoft Windows NT service account domain
+	must be available.
+	
+	Alternately, you can "unsecure" the database and then reassociate it with an
+	unrelated domain and service account. Unsecuring a directory service database
+	removes the link between the database and any Windows NT domain security. After
+	you unsecure a directory service database, anyone with physical access to it can
+	read it, so you must carefully control unsecured copies.
+	
+	MORE INFORMATION
+	================
+	
+	You can unsecure a directory service database by removing all Windows NT account
+	permissions from the following three "root" security objects in the directory:
+	
+	- <Organization Name>
+	
+	- <Site Name>
+	
+	- Configuration
+	
+	Removing all permissions from any of these objects makes the container completely
+	unsecure, rather than completely inaccessible. If you remove all permissions,
+	the following message is displayed:
+	
+	  You have removed all security from this object, allowing anybody to modify
+	  it. Are you sure you want to do this? (Yes, No)
+	
+	These three objects are the roots of three independent security "contexts" in the
+	Exchange Server directory. Inheritance of permissions from above in the
+	directory tree is blocked at the root object for each context.
+	
+	This means a given account can have complete rights over the <Site Name>
+	container, but still have no rights at all for the Configuration container.
+	Rights granted on a root object flow to all its subobjects. Any account with
+	permissions on all three of the root objects inherits permissions on every
+	object in the Exchange Server directory, including the Schema and Address Book
+	Views objects. (Schema permissions are inherited from the Configuration object,
+	and Address Book Views permissions are inherited from the <Site Name>
+	object.
+	
+	Be aware that removing permissions using the Exchange Server Administrator
+	program is different than deleting accounts with permissions using Windows NT
+	User Manager. If you delete all accounts with permissions using Windows NT User
+	Manager, the Exchange Server directory service database becomes inaccessible to
+	anyone.
+	
+	IMPORTANT: It is safe to delete all accounts with permissions using the Exchange
+	Server Administrator program, but unsafe to do so using Windows NT User
+	Manager.
+	
+	If you unsecure an Exchange Server directory service database while it is live on
+	the network, it replicates the change to all other Exchange Server computers in
+	the site, effectively unsecuring all the servers. To prevent this, follow this
+	procedure (which requires direct physical access to the server console):
+	
+	1. Run the Exchange Server Administrator program, click to expand the <Site
+	  Name> container, click to expand the Configuration container, and then
+	  click to expand the Servers container, to access the properties of the server
+	  on which the Exchange Server directory service database is to be unsecured.
+	  On the Database Paths property page, note the directory service paths. There
+	  are three paths, some or all of which may be identical.
+	
+	2. Stop the directory service and verify that the directory service database
+	  file is consistent. To do this, at a command prompt, run:
+	
+	  eseutil /mh dir.edb | more
+	
+	  Look for the line:
+	
+	  State: Consistent
+	
+	  If the state is inconsistent, do not proceed.
+	
+	  NOTE: For Exchange Server 5.0 and 4.0, run Edbutil rather than Eseutil.
+	
+	3. Rename each of the database folders noted in Step 1 above to
+	  Exchsvr\Dsadata_sav. Then create new Dsadata folders to replace the ones you
+	  just renamed.
+	
+	4. Copy the Dir.edb file from Dsadata_sav to the corresponding Dsadata folder.
+	
+	5. Start the directory service. After startup finishes, physically disconnect
+	  the server from the network, or otherwise ensure that there is no
+	  communication between it and any other Exchange Server computer.
+	
+	  You may want to disable the directory service in Control Panel by
+	  double-clicking Services, and then clicking Startup. This does not stop the
+	  service if it is currently running, but prevents it from starting later
+	  without your intervention.
+	
+	  Do not disconnect the server from the network before you start the directory
+	  service. If you do, and there are many other servers in your organization,
+	  startup may be greatly delayed while this server tries to communicate with
+	  the other servers.
+	
+	6. Unsecure the directory service database by running the Exchange Server
+	  Administrator program on the server console, and removing all permissions
+	  from the <Organization Name>, <Site Name>, and Configuration
+	  objects.
+	
+	7. Stop the directory service.
+	
+	  If the directory service takes a long time to stop, you can use a utility,
+	  such as Kill.exe, from the Windows NT Resource Kit to forcibly stop the
+	  process (at a command prompt, type "kill dsamain.exe" (without the quotation
+	  marks)). You can also perform a normal shutdown of the server, and then
+	  restart it if you have previously disabled the directory service in Control
+	  Panel.
+	
+	8. After you stop the directory service, at a command prompt, run "eseutil /mh"
+	  (without the quotation marks) again to ensure that the database file is
+	  consistent. Look for the line:
+	
+	  State: Consistent
+	
+	  If the state is inconsistent, at a command prompt, run:
+	
+	  eseutil /r /ds
+	
+	  Use the exact command line shown above. Do not substitute Dir.edb for /ds. The
+	  /r switch runs "soft recovery." Soft recovery may succeed, but still may not
+	  bring the database back to a consistent state. After soft recovery is
+	  finished, whether or not it reports success, check the database again for
+	  consistency using /mh.
+	
+	  If the directory service database file is still not consistent, the process
+	  has failed. Follow the next two steps to restore the directory to its
+	  previous state, and consult PSS for further advice.
+	
+	9. Rename the current Dsadata folders to Dsadata_uns, and then rename the
+	  Dsadata_sav folders back to Dsadata.
+	
+	10. Connect the server back to the network and start the directory service (if
+	  you previously disabled the service, reenable it).
+	
+	11. Preserve the Dir.edb file from the Dsadata_uns folder, and discard all other
+	  Dsadata_uns files.
+	
+	The unsecured Dir.edb database is now ready to be transported to another Exchange
+	Server installation, and does not need its previous service account or service
+	account domain.
+	
+	You can run this database on another Exchange Server installation where:
+	
+	- The Windows NT server name is identical.
+	
+	- The organization name and site name are identical.
+	
+	- Revision and service pack levels are the same as the original server.
+	
+	To run the unsecured directory in the new installation:
+	
+	1. Stop the directory service.
+	
+	2. Remove all existing files from the Dsadata folders.
+	
+	3. Copy the unsecured Dir.edb into the appropriate Dsadata folder.
+	
+	4. Start the directory service.
+	
+	5. Secure the directory by adding the service account chosen at Exchange Server
+	  installation to the <Organization Name>, <Site Name>, and
+	  Configuration containers.
+	
+	You must resecure the database, not only to protect it from unauthorized access,
+	but also to restore full functionality for all Exchange Server services. The
+	directory must be secure for some functions to work.
+	
+	The information store service may not start and logs a 1011 error. This does not
+	indicate a problem with the database, but simply that the directory and
+	information store are not synchronized. To correct this, at a command prompt,
+	run:
+	
+	  c:\exchsrvr\bin\isinteg -patch
+	
+	Start the information store service again.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : exc4 exc5 exc55 
+	Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+	Version           : :4.0,5.0,5.5
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

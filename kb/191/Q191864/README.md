@@ -1,0 +1,95 @@
+---
+layout: page
+title: "Q191864: PRB: Error 743 Adding ActiveX Controls to Control Collection"
+permalink: kb/191/Q191864/
+---
+
+## Q191864: PRB: Error 743 Adding ActiveX Controls to Control Collection
+
+	Article: Q191864
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbGrpDSVB
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When dynamically adding a large number of ActiveX controls into a Form's
+	Controls Collection, you receive the following:
+	
+	  "Error 743. Unable to create or activate a new instance of <control
+	  name>."
+	
+	RESOLUTION
+	==========
+	
+	While this situation has been reported as a bug, this is an application design
+	problem and the best solution is "Don't do this." If you have encountered this
+	problem, you are probably using controls where you should be using objects.
+	Consider using a Class, ActiveX DLL, or ActiveX EXE to create your objects. If
+	you must use controls, consider using windowless controls as they are less
+	resource-intensive.
+	
+	Keep in mind that forms with hundreds of visible controls will be confusing for
+	the end user. If the controls are not being displayed, then there is no reason
+	to use a control. ActiveX controls have a great deal of "overhead" when compared
+	to an object.
+	
+	STATUS
+	======
+	
+	This behavior is by design.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Start a new Standard EXE project in Visual Basic. Form1 is created by
+	  default.
+	
+	2. Choose Add Project from the File menu to add an ActiveX Control project.
+	
+	3. Place an instance of UserControl1 on Form1.
+	
+	4. Place a CommandButton on Form1.
+	
+	5. Add the following code to the module of Form1:
+	
+	        Private Sub Command1_Click()
+	           Dim i As Integer
+	           On Error GoTo trap
+	           For i = 1 To 1000
+	              Me.Controls.Add "project2.usercontrol1", "control" & i
+	           Next
+	           Debug.Print "Finished"
+	           Exit Sub
+	           trap:
+	           If Err.Number = 743 Then
+	              Debug.Print "Error 743 loading control #" & i
+	           End If
+	        End Sub
+	
+	6. Run the project. You should see the message in the immediate window
+	  indicating that the error occurred.
+	
+	Additional query words: kbDSupport kbDSD kbVBp kbVBp600 kbCtrl
+	
+	======================================================================
+	Keywords          : kbGrpDSVB 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+	Issue type        : kbprb
+	
+	=============================================================================
+	

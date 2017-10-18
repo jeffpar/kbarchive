@@ -1,0 +1,315 @@
+---
+layout: page
+title: "Q314613: Asheron's Call: Known Video Issues"
+permalink: kb/314/Q314613/
+---
+
+## Q314613: Asheron's Call: Known Video Issues
+
+	Article: Q314613
+	Product(s): Microsoft Home Games
+	Version(s): 1.0
+	Operating System(s): 
+	Keyword(s): kbimu
+	Last Modified: 16-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Asheron's Call, version 1.0 
+	- Microsoft Asheron's Call: Dark Majesty, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes some known video-related issues that may occur when you
+	use Microsoft Asheron's Call.
+	
+	MORE INFORMATION
+	================
+	
+	nVidia GeForce2 Chip Set
+	------------------------
+	
+	When you attempt to start Microsoft Asheron's Call, you may see one of the
+	following symptoms:
+	
+	- The screen may turn black.
+	
+	- The game may not start.
+	
+	- The game may quit unexpectedly.
+	
+	To resolve this issue, disable the anti-aliasing feature of the video adapter. To
+	do this, follow these steps:
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click Display, and then click the Settings tab.
+	
+	3. Click Advanced, and then click the GeForce tab.
+	
+	4. Click Additional Properties, and then click 3D Antialiasing Settings.
+	
+	5. Click to select "Manually select the antialiasing mode", and then click to
+	  select "Off (no antialiasing)".
+	
+	6. Click OK, click OK again, and then click OK again.
+	
+	ATI Technologies RADEON VE video card
+	-------------------------------------
+	
+	When you play Microsoft Asheron's Call, the game may stop responding (hang) or
+	quit unexpectedly, and then your screen displays the Microsoft Windows desktop.
+	
+	To resolve this issue, download and install the latest video driver for your
+	video adapter, or disable 3D Acceleration mode.
+	
+	nVidia Riva TNT Chip Set
+	------------------------
+	
+	When you play Microsoft Asheron's Call, you may be able to see the end of the
+	world from an extremely high altitude. This behavior can occur because the fog
+	and hazing effects do not properly obscure the end of the world in the
+	distance.
+	
+	When you click Help on the Character Generation screen, your mouse pointer may
+	stop responding (hang) or move erratically.
+	
+	To download updated NVIDIA video drivers, browse to the following NVIDIA Web
+	site:
+	
+	  http://www.nvidia.com
+	
+	ATI Rage Fury Maxx Video Adapter
+	--------------------------------
+	
+	When you play Microsoft Asheron's Call, graphics or textures in the game may be
+	missing or may not be displayed correctly.
+	
+	To work around this issue, reduce the level of texture detail in the game. To do
+	this, follow these steps:
+	
+	1. On the Microsoft Asheron's Call game screen, click Options in the lower-right
+	  corner of the screen.
+	
+	2. Click the Sound/Graphics tab.
+	
+	3. Select lower values for the Landscape, Indexed, RGBA, and ClipMap settings.
+	
+	4. Click Apply.
+	
+	5. If the issue continues to occur, repeat these steps to select lower values
+	  for the Landscape, Indexed, RGBA, and ClipMap settings.
+	
+	To resolve this issue, disable 3D Acceleration mode.
+	
+	ATI Rage 128 or an ATI Rage 128 Pro Video Adapter
+	-------------------------------------------------
+	
+	When you play Microsoft Asheron's Call, graphics or textures in the game may be
+	distorted or black.
+	
+	To resolve this issue, disable 3D Acceleration mode.
+	
+	Matrox Millennium G200 AGP Video Adapter
+	----------------------------------------
+	
+	You may be unable to play Microsoft Asheron's Call at screen resolutions higher
+	than 640 x 480 pixels. In addition, you may see one or more of the following
+	symptoms:
+	
+	1. Textures may not be applied to the sky or trees.
+	
+	2. Lighting, fog, or spell effects may not be displayed.
+	
+	3. When you quit the game, desktop icons may be stacked on top of each other in
+	  the upper-left corner of the desktop.
+	
+	4. The game may quit unexpectedly.
+	
+	5. When you click Social Systems, Magic, "Attributes and Skills", Map, or
+	  Options, the background image may be missing from the settings panel that is
+	  displayed.
+	
+	To resolve this issue, download and install the latest video driver for your
+	video adapter.
+	
+	3Dfx Chip Set
+	-------------
+	
+	When you play Microsoft Asheron's Call, black lines or transparencies may be
+	displayed around trees.
+	
+	When you attempt to install Microsoft Asheron's Call, you may receive an error
+	message similar to the following:
+	
+	  Client caused an invalid page fault in module 3dfx32v2.dll.
+	
+	To resolve these issues, download and install the latest video driver for your
+	video adapter.
+	
+	3Dfx Voodoo Banshee Chip Set
+	----------------------------
+	
+	After you play the opening movie in Microsoft Asheron's Call, the computer may
+	stop responding (hang).
+	
+	When you play Microsoft Asheron's Call, the sky may appear brown in color and be
+	displayed at a low resolution.
+	
+	To resolve this issue, download and install the latest video driver for your
+	video adapter.
+	
+	S3 Savage 3D Chip Set
+	---------------------
+	
+	When you attempt to play Microsoft Asheron's Call, the game may quit when you
+	start the game, and the desktop is displayed. Or the game may stop responding
+	(hang) on the Character Generation screen.
+	
+	To resolve this issue, download and install the latest video driver for your
+	video adapter or disable 3D Acceleration mode.
+	
+	Real 3D StarFighter Video Adapter
+	---------------------------------
+	
+	When you play Microsoft Asheron's Call, you may see one or more of the following
+	symptoms:
+	
+	- Slow movement of facial features in the character selection screen.
+	
+	- Choppy portal movement.
+	
+	- Lack of dynamic lighting in dungeons.
+	
+	To resolve this issue, download and install the latest video driver for your
+	video adapter.
+	
+	AccelStar II Video Adapter
+	--------------------------
+	
+	When you play Microsoft Asheron's Call, detailed textures may not be displayed
+	properly. Lines may appear in the landscape and buildings may appear grainy.
+	
+	To work around this issue, disable Detail Textures. To do this, follow these
+	steps:
+	
+	1. On the Microsoft Asheron's Call game screen, click Options in the lower-right
+	  corner of the screen.
+	
+	2. Click the Sound/Graphics tab.
+	
+	3. Under Detail Textures, click to clear the Landscape and Environment check
+	  boxes.
+	
+	4. Click Apply.
+	
+	5. Close the Sound/Graphics dialog box.
+	
+	Matrox Mystique Video Adapter
+	-----------------------------
+	
+	When you play Microsoft Asheron's Call, you may receive the following error
+	message:
+	
+	  Required ARGB4444 texture format not supported by your 3D card.
+	
+	To resolve this issue, disable 3D Acceleration mode.
+	
+	Diamond Viper V330 Video Adapter
+	--------------------------------
+	
+	After you enable 3D Acceleration in Microsoft Asheron's Call, you may receive the
+	following error message:
+	
+	  Fatal error - Couldn't set/restore primary video surfaces.
+	
+	To resolve this issue, download and install the latest video driver for your
+	video adapter or disable 3D Acceleration mode.
+	
+	ATI Rage Pro or ATI Rage II+ Video Adapter
+	------------------------------------------
+	
+	When you play Microsoft Asheron's Call, clouds may be distorted and light sources
+	may be displayed as black images.
+	
+	ATI Rage Pro and ATI Rage II+ video adapters do not support Microsoft Asheron's
+	Call graphic requirements such as additive transparencies.
+	
+	Rendition Verite 1000 Chip Set
+	------------------------------
+	
+	When you use Rendition Verite 1000 chip set in combination with a 3Dfx Voodoo
+	chip set, when you click Settings on the Microsoft Asheron's Call startup screen
+	and then click 3D Settings, the incorrect video driver may appear in the Driver
+	box.
+	
+	This problem does not affect the actual video driver that is used in the game.
+	Microsoft Asheron's Call uses the video adapter and driver that you select.
+	
+	Trident Blade 3D Video Adapter
+	------------------------------
+	
+	When you play Microsoft Asheron's Call, graphics or textures in the game may be
+	missing or may not be displayed correctly.
+	
+	To work around this issue, reduce the level of texture detail in the game. To do
+	this, follow these steps:
+	
+	1. On the Microsoft Asheron's Call game screen, click Options in the lower-right
+	  corner of the screen.
+	
+	2. Click the Sound/Graphics tab.
+	
+	3. Select lower values for the Landscape, Indexed, RGBA, and ClipMap settings.
+	
+	4. Click Apply.
+	
+	5. If the issue continues to occur, repeat these steps to select lower values
+	  for the Landscape, Indexed, RGBA, and ClipMap settings.
+	
+	To resolve this issue, disable 3D Acceleration mode.
+	
+	Permedia 2 Chip Set
+	-------------------
+	
+	When you play Microsoft Asheron's Call, black boxes may appear around light
+	sources in the game, or the text in a scrolling text box may become scrambled.
+	
+	To resolve this issue, disable 3D Acceleration mode.
+	
+	Rendition Verite 2100 or Rendition Verite 2200 Chip Set
+	-------------------------------------------------------
+	
+	When you open the Help screen in Microsoft Asheron's Call, the mouse pointer may
+	change to a black square.
+	
+	Hercules Stingray 128/3D Video Adapter
+	--------------------------------------
+	
+	When you scroll through a list, the text that is displayed may become distorted.
+	
+	You may be able to work around this issue by refreshing the game screen. To do
+	this, press ALT+TAB to minimize Microsoft Asheron's Call, and then press ALT+TAB
+	again to restore the game.
+	
+	S3 Savage4 Chip Set
+	-------------------
+	
+	When you play Microsoft Asheron's Call, game textures may be missing and black
+	patches may appear on the game screen.
+	
+	To resolve this issue, disable 3D Acceleration mode.
+	
+	Additional query words: msgame
+	
+	======================================================================
+	Keywords          : kbimu 
+	Technology        : kbHomeProdSearch _IKkbbogus kbGamesSearch kbMSNSearch kbAsheronSearch kbAsheron100 kbAsheronDarkMaj
+	Version           : :1.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

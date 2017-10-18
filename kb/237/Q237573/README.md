@@ -1,0 +1,110 @@
+---
+layout: page
+title: "Q237573: SSO May Not Work After User Changes Windows NT Password"
+permalink: kb/237/Q237573/
+---
+
+## Q237573: SSO May Not Work After User Changes Windows NT Password
+
+	Article: Q237573
+	Product(s): Microsoft SNA Server
+	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2
+	Operating System(s): 
+	Keyword(s): kbsna400sp3fix kbsna300sp1 kbsna300sp2 kbsna300sp3 kbsna300sp4 sna4 kbsna400sp1 kbsna40
+	Last Modified: 08-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 3.0 SP4, 4.0, 4.0 SP1, 4.0 SP2 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	An environment that successfully uses SNA Server Host Security features to allow
+	Single Sign-On (SSO) to a host may start experiencing a problem where the APPC
+	or 3270 Application does not work. This is caused by a security violation
+	because an invalid password is being sent to the host system.
+	
+	An APPC application, such as COM Transaction Integrator for CICS and IMS (COMTI),
+	may receive the following return codes after issuing an ALLOCATE to establish a
+	conversation with the host when this problem occurs:
+	
+	  Primary Return Code = 0003 (AP_ALLOCATION_ERROR)
+	  Secondary Return Code = 080F6051 (AP_SECURITY_NOT_VALID)
+	
+	Sample Scenario
+	---------------
+	
+	- The host application (for example, COMTI) successfully connects to the host
+	  using current user credentials that are cached in the Host Account Database.
+	- The user changes his or her Windows NT password.
+	- The host account password for this user is also changed to match the new
+	  Windows NT password.
+	- The host application does not connect to the host because the previous
+	  Windows NT password is passed to the host because the Host Account Cache does
+	  not get updated to reflect the new password.
+	
+	CAUSE
+	=====
+	
+	The password change DLL (Snapwchg.dll) does not make any additional attempts to
+	connect to the Windows NT Password Synchronization Service (SNAPMP) if its first
+	attempt to connect to the SNAPMP service doesn't work. The first attempt of the
+	password change DLL to connect to the SNAPMP service occurs after it intercepts
+	the first password change notification since the DLL was initialized.
+	
+	When this occurs, the Host Account Cache is not updated with the new passwords;
+	therefore, the passwords passed to the host when the SNA application starts are
+	the user's previous Windows NT passwords. If the previous passwords are no
+	longer valid on the host, security errors are returned to the application.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, obtain the latest service pack for SNA Server version
+	4.0. For additional information, please see the following article in the
+	Microsoft Knowledge Base:
+	
+	  Q215838 How to Obtain the Latest SNA Server Version 4.0 Service Pack
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products that are
+	listed at the beginning of this article. This problem was first corrected in SNA
+	Server version 4.0 Service Pack 3.
+	
+	MORE INFORMATION
+	================
+	
+	The password change DLL has been updated to include a retry mechanism in those
+	cases where it is unable to connect to the SNAPMP service after receiving the
+	first password change notification.
+	
+	The password change DLL has also been updated to implement a retry mechanism in
+	those instances where it loses an existing connection to the SNAPMP service. For
+	additional information about this particular issue, please see the following
+	article in the Microsoft Knowledge Base:
+	
+	  Q236135 Password Change Lost if Password Change DLL Can't Contact SNAPMP
+	
+	For additional information about SNA Server Host Security Architecture, please
+	see the following article in the Microsoft Knowledge Base:
+	
+	  Q175063 Host Security Integration Setup and Architectural Overview
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbsna400sp3fix kbsna300sp1 kbsna300sp2 kbsna300sp3 kbsna300sp4 sna4 kbsna400sp1 kbsna400sp2 
+	Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ400 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ300SP2 kbSNAServ300SP4
+	Version           : WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

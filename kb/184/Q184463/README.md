@@ -1,0 +1,86 @@
+---
+layout: page
+title: "Q184463: XFOR: Cannot Connect to Server with POP3 Client"
+permalink: kb/184/Q184463/
+---
+
+## Q184463: XFOR: Cannot Connect to Server with POP3 Client
+
+	Article: Q184463
+	Product(s): Microsoft Exchange
+	Version(s): 5.0,5.5
+	Operating System(s): 
+	Keyword(s): exc5 exc55
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange 2000 Server 
+	- Microsoft Exchange Server, versions 5.0, 5.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	You may be unable to connect to a computer running Microsoft Exchange Server
+	with a Post Office Protocol version 3 (POP3) or Internet Messaging Access
+	Protocol 4 (IMAP) e-mail client. No error messages are displayed.
+	
+	CAUSE
+	=====
+	
+	This problem can occur when your Microsoft Exchange Server mailbox name is
+	different from your Windows NT user name and you do not specify both names in
+	the properties for the Microsoft Exchange Server information service. If you do
+	not specify both names, the Microsoft Exchange Server computer may be unable to
+	authenticate your user account and password.
+	
+	WORKAROUND
+	==========
+	
+	To resolve this problem, specify your Windows NT domain, Windows NT user name,
+	and Microsoft Exchange Server mailbox name in the properties for the Microsoft
+	Exchange Server information service. To do so, follow these steps:
+	
+	1. On the Tools menu in your e-mail client, click Services.
+	
+	2. Click Microsoft Exchange Server in the list of information services, and then
+	  click Properties.
+	
+	3. In the Mailbox box, type
+	
+	  "<domain>\<username>\<mailbox>" (without the quotation
+	  marks)
+	
+	where <domain> is your Windows NT domain, <username> is your Windows
+	NT user name, and <mailbox> is your Microsoft Exchange Server mailbox
+	name. For example, type:
+	
+	  "Domain1\User1\Mailbox1" (without the quotation marks)
+	
+	4. Click OK, and then click OK again.
+	
+	MORE INFORMATION
+	================
+	
+	If you specify your mailbox name in the properties for the Microsoft Exchange
+	Server information service, but do not specify your domain and user name, the
+	computer running Microsoft Exchange Server assumes that your user name is the
+	same as your mailbox name. If it is not, the server is unable to locate your
+	user account.
+	
+	If you specify the domain and user name, but do not specify the mailbox name, the
+	server assumes that your mailbox name is the same as your user name. If it is
+	not, the server is unable to locate your mailbox.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : exc5 exc55 
+	Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2 kbExchange2000Search kbExchange2000Serv
+	Version           : :5.0,5.5
+	Issue type        : kbprb
+	
+	=============================================================================
+	

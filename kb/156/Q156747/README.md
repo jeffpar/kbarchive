@@ -1,0 +1,171 @@
+---
+layout: page
+title: "Q156747: INFO: STL Sample for the reverse Function"
+permalink: kb/156/Q156747/
+---
+
+## Q156747: INFO: STL Sample for the reverse Function
+
+	Article: Q156747
+	Product(s): Microsoft C Compiler
+	Version(s): 4.2,5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbcode kbVC420 kbVC500 kbVC600 kbDSupport
+	Last Modified: 26-MAR-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The Standard C++ Library, used with:
+	   - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+	   - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+	   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+	   - Microsoft Visual C++.NET (2002) 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The sample code below illustrates how to use the reverse STL function in Visual
+	C++.
+	
+	MORE INFORMATION
+	================
+	
+	Required Header
+	---------------
+	
+	     <algorithm>
+	
+	Prototype
+	---------
+	
+	     template<class BidirectionalIterator> inline
+	     void reverse(BidirectionalIterator first,
+	
+	                        BidirectionalIterator last)
+	
+	NOTE: The class/parameter names in the prototype do not match the version in the
+	header file. Some have been modified to improve readability.
+	
+	Description
+	-----------
+	
+	The reverse algorithm reverses the order of the elements in the range [first,
+	last).
+	
+	Sample Code
+	-----------
+	
+	NOTE: In the first line of the sample code section, /GX is equivalent to /EHsc in
+	VC++ .NET and is set by default.
+	
+	  ////////////////////////////////////////////////////////////////////// 
+	  // 
+	  // Compile options needed: /GX
+	  // 
+	  // reverse.cpp : Illustrates how to use the reverse function.
+	  // 
+	  // Functions:
+	  // 
+	  //    reverse - Reverse the items in a sequence.
+	  // 
+	  // Written by Kalindi Sanghrajka
+	  // of Microsoft Product Support Services,
+	  // Software Core Developer Support.
+	  // Copyright (c) 1996 Microsoft Corporation. All rights reserved.
+	  ////////////////////////////////////////////////////////////////////// 
+	
+	  // disable warning C4786: symbol greater than 255 character,
+	  // okay to ignore
+	
+	  #pragma warning(disable: 4786)
+	
+	  #include <iostream>
+	  #include <vector>
+	  #include <string>
+	  #include <algorithm>
+	  #include <functional>
+	
+	  #if _MSC_VER > 1020   // if VC++ version is > 4.2
+	     using namespace std;  // std c++ libs implemented in std
+	     #endif
+	
+	  void main()
+	
+	  {
+	
+	      const int VECTOR_SIZE = 8 ;
+	
+	      // Define a template class vector of strings
+	      typedef vector<string, allocator<string> > StrVector ;
+	
+	      //Define an iterator for template class vector of strings
+	      typedef StrVector::iterator StrVectorIt ;
+	
+	      StrVector Tongue_Twister(VECTOR_SIZE) ;
+	
+	      StrVectorIt start, end, it ;
+	
+	      start = Tongue_Twister.begin() ;   // location of first
+	                                        // element of Tongue_Twister
+	
+	      end = Tongue_Twister.end() ;       // one past the location last
+	                                         // element of Tongue_Twister
+	
+	      //Initialize vector Tongue_Twister
+	      Tongue_Twister[0] = "she" ;
+	      Tongue_Twister[1] = "sells" ;
+	      Tongue_Twister[2] = "sea" ;
+	      Tongue_Twister[3] = "shells" ;
+	      Tongue_Twister[4] = "by";
+	      Tongue_Twister[5] = "the";
+	      Tongue_Twister[6] = "sea" ;
+	      Tongue_Twister[7] = "shore" ;
+	
+	      cout << "Before calling reverse \n" << endl ;
+	
+	      // print content of Tongue_Twister
+	      cout << "Try this Tongue Twister: " ;
+	      for(it = start; it != end; it++)
+	          cout << *it << " " ;
+	      cout << "\n\n" ;
+	
+	      // reverse the items in the vector Tongue_Twister
+	       reverse(start, end) ;
+	
+	       cout << "After calling reverse \n" << endl ;
+	
+	      // print content of Tongue_Twister
+	      cout << "Now try the reversed Tongue Twister: " ;
+	      for(it = start; it != end; it++)
+	          cout << *it << " " ;
+	      cout << "\n\n" ;
+	
+	  }
+	
+	Program Output is:
+	
+	Before calling reverse
+	
+	Try this Tongue Twister: she sells sea shells by the sea shore
+	
+	After calling reverse
+	
+	Now try the reversed Tongue Twister: shore sea the by shells sea sells she
+	
+	REFERENCES
+	==========
+	
+	Visual C++ Books On Line: Visual C++ Books:C/C++:Standard C++ Library Reference.
+	
+	Additional query words: STL STLSample reverse
+	
+	======================================================================
+	Keywords          : kbcode kbVC420 kbVC500 kbVC600 kbDSupport 
+	Technology        : kbVCsearch kbAudDeveloper kbVCNET kbVCLibrary
+	Version           : :4.2,5.0,6.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

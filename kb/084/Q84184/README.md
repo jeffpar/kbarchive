@@ -1,0 +1,95 @@
+---
+layout: page
+title: "Q84184: Printing on Unsupported UNIX-Based Networks (Windows)"
+permalink: kb/084/Q84184/
+---
+
+## Q84184: Printing on Unsupported UNIX-Based Networks (Windows)
+
+	Article: Q84184
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): 3.1,3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 11-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows versions 3.1, 3.11 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you print to an unsupported UNIX-based network, such as PC-NFS, through
+	Microsoft Windows version 3.1, the print job may fail.
+	
+	CAUSE
+	=====
+	
+	Printing problems in a network installation have a variety of causes. Follow the
+	troubleshooting steps in this article to locate the problem and correct it.
+	
+	WORKAROUND
+	==========
+	
+	There are a variety of utilities that connect MS-DOS machines to UNIX machines,
+	where the UNIX system is a file and printer server. Usually, the MS-DOS client
+	runs a TCP/IP terminate-and-stay-resident (TSR) program that redirects all
+	printing to a parallel port to the UNIX machine. There are several things to
+	consider if you have trouble printing from Windows.
+	
+	1. Start the network redirector from MS-DOS before you start Windows.
+	
+	2. If Windows was installed or upgraded with the network running, then Windows
+	  sees it and Print Manager selects the Update Network Display and Print Net
+	  Jobs Direct check boxes. These two check boxes should NOT be selected. Run
+	  Print Manager and choose Network Settings from the Options menu, then clear
+	  the appropriate check boxes.
+	
+	3. You should run the Control Panel, choose Printers, and select the port
+	  LPT1.DOS (or LPT1.OS2 if this Windows installation was upgraded from Windows
+	  3.0 to 3.1):
+	
+	  a. Run Control Panel and choose Printers.
+	
+	  b. Choose the Connect button and choose Port LPT1.DOS.
+	
+	  c. Choose OK and then choose the Close button.
+	
+	  NOTE: Clearing the Fast Printing Direct To Port check box doesn't allow the
+	  system to print, you must choose LPT.x for the port.
+	
+	
+	4. If you are printing to a PostScript printer, add the following line to the
+	  WIN.INI file's [modelname,port] section:
+	
+	  CTRLD=0
+	
+	  An example of the [modelname,port] section would be:
+	
+	  [Apple LaserWriter II NTX,LPT3]
+	
+	  This strips the CTRL+D used for resetting the printer from the print job
+	  because UNIX-based networks consider the CTRL+D to be an end of file
+	  character.
+	
+	NOTE: At the MS-DOS level or in an MS-DOS application run from Windows, you may
+	not see the print job until the application is exited. For example, run
+	WordPerfect and send a print job. Nothing happens until WordPerfect is exited or
+	the WordPerfect Shell command is used to go out to MS-DOS. This is because the
+	redirector does not know when the print job has actually ended. Turning off the
+	Print Net Jobs Direct box in Print Manager and switching back to LPT1 corrects
+	the problem.
+	
+	
+	Additional query words: 3.10 tcpip tops stika pcnfs sun eof word perfect dos pc nfs control sitka kbnetwork black square rip d linotronic 3.11 hangs current error locks locked Winword pc-nfs
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+	Version           : :3.1,3.11
+	
+	=============================================================================
+	

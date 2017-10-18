@@ -1,0 +1,84 @@
+---
+layout: page
+title: "Q113307: Sound Board Manufacturers Phone List"
+permalink: kb/113/Q113307/
+---
+
+## Q113307: Sound Board Manufacturers Phone List
+
+	Article: Q113307
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 30-JUL-2001
+	
+	SUMMARY
+	=======
+	
+	The following is a list of sound board manufacturers and their phone numbers.
+	
+	MORE INFORMATION
+	================
+	
+	
+	Company                                        Telephone
+	-----------------------------------------------------------
+	
+	Acer America                                   408-432-6200
+	ACS Computer                                   415-875-6633
+	Actix Systems                                  408-524-0550
+	Addtech Research                               510-623-7583
+	Advanced Gravis                                604-431-5020
+	AlTech International                           510-226-8960
+	Alpha Systems Lab                              714-252-0117
+	Antex Electronics                              310-532-3092
+	Aztech Labs                                    510-623-8988
+	 Aztech Labs Technical Support                800-886-8879
+	 Aztech Labs BBS                              510-623-8933
+	Best Data Products                             818-773-9600
+	Calypso Micro Products                         408-379-9494
+	Cardinal Technologies                          717-293-3000
+	Creative Labs                                  405-742-6622
+	Criterion Computer                             510-657-3898
+	Diamond Computer Systems                       408-325-7100
+	DSP Solutions                                  415-494-8086
+	Echo Speech                                    805-684-4593
+	Focus Information Systems                      510-657-2845
+	Genoa Systems                                  408-432-9090
+	IBM                                            800-887-7771
+	ImagiMedia                                     408-453-9911
+	Jovian Logic                                   510-651-4823
+	KYE International                              909-923-3510
+	Logitech                                       510-795-8500
+	Media Innovations                              408-954-0611
+	Media Magic                                    512-339-3500
+	Media Vision                                   503-882-1177
+	Mediatrix Peripherals                          819-563-6722
+	Microsoft                                      206-882-8086
+	Midi Land                                      909-595-0708
+	Multiwave Innovation                           408-379-2900
+	New Media Corporation                          714-453-0100
+	Omni Labs                                      415-788-1345
+	Orchid Technologies                            510-683-0300
+	Reveal Computer Products                       800-473-8325
+	Roland                                         213-685-5141
+	Sigma Designs                                  510-770-0100
+	Sound Minds Technology                         408-374-7070
+	TopTek Technology                              818-960-9211
+	Turtle Beach Systems                           510-624-6200
+	Vision Enhancements                            602-265-5665
+	Wearnes Technology                             408-456-8838
+	
+	For additional information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q112715 Sound Boards and Compressed Audio Support
+	
+	Additional query words: kbhowto 1.00 sound hang freeze lock vendor w_wss multi media multimedia mmtitles flight sim fltsim kbmm mmtitles cdg multi-media
+	
+	======================================================================
+	Keywords          :  
+	
+	=============================================================================
+	

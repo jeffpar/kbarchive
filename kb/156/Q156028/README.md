@@ -1,0 +1,103 @@
+---
+layout: page
+title: "Q156028: XCLN: List of Files Installed and Used"
+permalink: kb/156/Q156028/
+---
+
+## Q156028: XCLN: List of Files Installed and Used
+
+	Article: Q156028
+	Product(s): Microsoft Exchange
+	Version(s): WINDOWS:4.0
+	Operating System(s): 
+	Keyword(s): kbsetup
+	Last Modified: 12-JAN-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Macintosh client, version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article lists files installed and used with the Microsoft Exchange
+	Macintosh client.
+	
+	"Release Notes" are available on the Microsoft Exchange Macintosh client compact
+	disc. (Insert the compact disc into a Macintosh CD-ROM drive, and you will see
+	the install files, along with the Release Notes.)
+	
+	MORE INFORMATION
+	================
+	
+	Files Installed on Client Setup:
+	--------------------------------
+	
+	  Microsoft Exchange\Exchange Settings
+	  Microsoft Exchange\Exchange Spelling
+	  Microsoft Exchange\Inbox Repair Tools\Inbox Repair Tool
+	  Microsoft Exchange\Inbox Repair Tools\Inbox Repair Tool Help
+	  Microsoft Exchange\Microsoft Exchange
+	  System\Preferences\Exchange Files\Exchange RegDB
+	  System\Preferences\Exchange Help Folder\ccMail Help
+	  System\Preferences\Exchange Help Folder\Distribution List Help
+	  System\Preferences\Exchange Help Folder\Exchange Find Help
+	  System\Preferences\Exchange Help Folder\Exchange Help
+	  System\Preferences\Exchange Help Folder\Internet Mail Connector Help
+	  System\Preferences\Exchange Help Folder\Microsoft Mail for AT Help
+	  System\Preferences\Exchange Help Folder\Microsoft Mail for PC Help
+	  System\Preferences\Exchange Help Folder\Other Address Book Entry Help
+	  System\Preferences\Exchange Help Folder\Public Folders Help
+	  System\Preferences\Exchange Help Folder\Send Option Help
+	  System\Preferences\Exchange Help Folder\x.400 Connector Help
+	  System\Preferences\Exchange Preferences
+	  System\Preferences\Exchange Services
+	
+	Files Modified or Installed with Client Setup:
+	----------------------------------------------
+	
+	  System Folder\Extensions\Microsoft OLE Automation
+	  System Folder\Extensions\Microsoft OLE Extension
+	  System Folder\Extensions\Microsoft OLE Library
+	  System Folder\Extensions\Microsoft RPC Runtime Library
+	
+	Files created by profile configurations:
+	----------------------------------------
+	
+	System\Preferences\Exchange Profiles\<nnnnCBn> (where n's are replaced by
+	numbers; each profile created on the Macintosh will have a unique "CB" file)
+	
+	System\Preferences\Exchange Profiles\Profile Registry (each Macintosh client will
+	only have one of these files, but it will be modified as needed)
+	
+	System\Preferences\Exchange Profiles\ExchangeUID (each Macintosh client will only
+	have one of these files, but it will be modified as needed)
+	
+	System\Preferences\mspst.ini (created when you start the Microsoft Exchange
+	Macintosh client)
+	
+	Microsoft Exchange\Personal Address Book (created when you install the Personal
+	Address Book service)
+	
+	Microsoft Exchange\Personal Folders (created when you install the Personal
+	Folders service)
+	
+	System\Preferences\RPC Preferences (created when you send or read a message)
+	
+	System\Preferences\Exchange Profiles\Offline Folders (created when you click Yes
+	in the dialog box asking whether you will travel with computer. This file can
+	also be created by doing this: in the Microsoft Exchange Server service, click
+	the Advanced tab, and select Offline Folder File Settings.)
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbsetup 
+	Technology        : kbHWMAC kbOSMAC kbExchangeSearch kbExchangeClientSearch kbExchange400Mac
+	Version           : WINDOWS:4.0
+	
+	=============================================================================
+	

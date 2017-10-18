@@ -1,0 +1,143 @@
+---
+layout: page
+title: "Q114253: Sample Code for Summing a Field in a Database"
+permalink: kb/114/Q114253/
+---
+
+## Q114253: Sample Code for Summing a Field in a Database
+
+	Article: Q114253
+	Product(s): Microsoft FoxPro
+	Version(s): MACINTOSH:2.5b; MS-DOS:2.0,2.5,2.5a,2.5b,2.6; WINDOWS:2.5,2.5a,2.5b,2.6,3.0
+	Operating System(s): 
+	Keyword(s): kbcode
+	Last Modified: 09-FEB-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 3.0 
+	- Microsoft FoxPro for Windows, versions 2.5, 2.5a, 2.5b, 2.6 
+	- Microsoft FoxPro for MS-DOS, versions 2.0, 2.5, 2.5a, 2.5b, 2.6 
+	- Microsoft FoxPro for Macintosh, version 2.5b 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	FoxPro does not provide a function that sums a field in a database. The closest
+	FoxPro comes is the command SUM <field> TO memvar. Although this command
+	is useful, you may need to call a function that will sum a field for a given
+	condition.
+	
+	The sample code below is a user-defined function (UDF) that can sum a field in
+	any specified table for any given condition.
+	
+	MORE INFORMATION
+	================
+	
+	     **************************************************************
+	     *                                                            *
+	     *  Function:     DBSUM()                                     *
+	     *  Parameters:                                               *
+	     *      fieldname   C   Required                              *
+	     *      workarea    N   Optional                              *
+	     *      condition   C   Optional                              *
+	     *                                                            *
+	     *                                                            *
+	     *   Purpose: Sums any field in the current or specified      *
+	     *            work area for any logical condition.            *
+	     *                                                            *
+	     *   NOTE: When summing a field that is not in the current    *
+	     *   work area, the alias must be supplied in the first       *
+	     *   parameter.                                               *
+	     **************************************************************
+	
+	     PARAMETERS fieldname, workarea, condition
+	
+	     *******************************
+	     * Store parameter count and current work area to memory variables
+	     *******************************
+	
+	     STORE PARAMETERS() TO parms
+	     STORE SELECT() TO currselect
+	
+	     *******************************
+	     * Verify that the field name passed in is a numeric field
+	     *******************************
+	
+	     IF TYPE(fieldname) != 'N'
+	        WAIT WINDOW "Data type mismatch" NOWAIT
+	        RETURN ""
+	     ELSE
+	
+	     *******************************
+	     * Store current record and total records to memory variables
+	     * Initialize m.sum memory variable
+	     *******************************
+	
+	     currecord = RECNO(IIF(parms>1,workarea,currselect))
+	     m.sum = 0
+	
+	     *******************************
+	     * Select the correct work area if not current work area
+	     *******************************
+	
+	     IF parms > 1
+	        SELECT (workarea)
+	     ENDIF
+	
+	     *******************************
+	     * Position cursor at top of file
+	     * Begin summation loop
+	     *******************************
+	
+	     GO TOP
+	     SCAN FOR IIF(parms > 2,EVALUATE(condition),.T.)
+	       m.sum = m.sum + EVALUATE(fieldname)
+	       SET MESSAGE TO ALLTRIM(STR(m.sum,10,2))
+	     ENDSCAN
+	
+	     *******************************
+	     * Reset record pointer
+	     ******************************
+	
+	     DO CASE
+	        CASE currecord > reccount()
+	           GO BOTTOM
+	           SKIP 1
+	        CASE currecord < reccount()
+	           GO TOP
+	           SKIP -1
+	        OTHERWISE
+	           GO currecord
+	     ENDCASE
+	
+	     *******************************
+	     * Select the original work area if necessary
+	     *******************************
+	
+	     IF parms > 1
+	        SELECT (currselect)
+	     ENDIF
+	
+	     SET MESSAGE TO
+	     RETURN m.sum
+	     ENDIF
+	
+	  To use the DBSUM() function, execute the following commands in the Command
+	  window or in a program:
+	
+	     USE customer IN 1
+	     SELECT 0
+	     ? dbsum("customer.ytdpurch",1,"state = 'NC'")
+	
+	Additional query words: VFoxWin FoxMac FoxDos FoxWin total
+	
+	======================================================================
+	Keywords          : kbcode 
+	Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro250bMac kbFoxPro200DOS kbFoxPro250DOS kbFoxPro250aDOS kbFoxPro250bDOS kbFoxPro260DOS kbFoxPro260 kbFoxPro250 kbFoxPro250a kbFoxPro250b kbVFP300
+	Version           : MACINTOSH:2.5b; MS-DOS:2.0,2.5,2.5a,2.5b,2.6; WINDOWS:2.5,2.5a,2.5b,2.6,3.0
+	
+	=============================================================================
+	

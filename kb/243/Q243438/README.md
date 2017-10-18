@@ -1,0 +1,154 @@
+---
+layout: page
+title: "Q243438: XADM: Replication Doesn't Work; Event 1171 w/Parameters 9, 111"
+permalink: kb/243/Q243438/
+---
+
+## Q243438: XADM: Replication Doesn't Work; Event 1171 w/Parameters 9, 111
+
+	Article: Q243438
+	Product(s): Microsoft Exchange
+	Version(s): winnt:5.5
+	Operating System(s): 
+	Keyword(s): exc55
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Exchange Server intersite directory replication does not work properly, and the
+	following events are logged in the application event log on an Exchange Server
+	replication bridgehead server:
+	
+	  Event Type: Error
+	  Event Source: MSExchangeDS
+	  Event Category: Replication
+	  Event ID: 1224
+	  Description:
+	  Fatal replication error (internal ID 303025f). Parameter(s) 2615834 941779.
+	  Contact Microsoft Technical Support for assistance.
+	
+	  Event Type: Error
+	  Event Source: MSExchangeDS
+	  Event Category: Internal Processing
+	  Event ID: 1171
+	  Description:
+	  Exception e0010002 has occurred with parameters 9 and 111 (internal ID
+	  3030260). Contact Microsoft Technical Support for assistance.
+	
+	CAUSE
+	=====
+	
+	The Exchange Server computer that is receiving these events has one or more
+	objects in its directory with USN-Changed attribute values greater than the
+	latest USN-Changed attribute value given to an object in the directory.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, you can use command-line directory export, search for
+	all objects with a USN-Changed attribute value greater than the latest change
+	made in the directory, and then modify those objects.
+	
+	WARNING: If you use the raw mode of the Exchange Server Administrator program
+	(admin /r) incorrectly, serious problems may occur that may require you to
+	reinstall Microsoft Windows NT Server, Microsoft Exchange Server, or both.
+	Microsoft cannot guarantee that problems that result from using raw mode
+	incorrectly can be solved. Use raw mode at your own risk.
+	
+	To find the highest expected USN-Changed attribute value on the Exchange Server
+	computer:
+	
+	1. Start the Microsoft Exchange Server Administrator program in raw mode by
+	  typing the following at a command prompt:
+	
+	  "c:\exchsrvr\bin\admin /r" (without the quotation marks)
+	
+	2. Open the properties of a mailbox or custom recipient.
+	
+	3. Make a change to that object (such as the city or phone number), and click
+	  OK.
+	
+	4. Open the raw properties of that same object and look at the value for the
+	  USN-Changed attribute. Make a note of this value for a future step.
+	
+	To find the directory objects that have incorrect USN-Changed attribute values,
+	run a command-line directory export, and analyze the resulting export file:
+	
+	1. Create a plain text file with the following text, and save it in the
+	  Exchsrvr\Bin folder with the file name Usn.csv:
+	
+	  Obj-Class,Directory Name,Obj-Dist-Name,Is-Deleted,USN-Changed
+	
+	2. Create a plain text file with the following text, and save it in the
+	  Exchsrvr\Bin folder with the filename Export.ini:
+	
+	  [Export]
+	  DirectoryService=<Your_Exchange_Server_Name>
+	  Basepoint=/o=<Your_Exchange_Organization_Name>
+	  Subcontainers=Yes
+	  ExportObject=All
+	  RawMode=yes
+	  HiddenObjects=yes
+	  InformationLevel=Full
+	
+	3. Open a command prompt in the Exchsrvr\Bin folder, and run the following
+	  command:
+	
+	  "admin /e usn.csv /o export.ini" (without the quotation marks)
+	
+	4. After the export is finished, open the Usn.csv file in a spreadsheet or in
+	  database software, and sort the information based on the USN-Changed
+	  attribute values. You need to correct the objects in the spreadsheet that
+	  have a higher USN-Changed attribute value than the highest USN-Changed
+	  attribute value found in step 4 of the first procedure.
+	
+	To correct the USN-Changed attribute values of these problem objects, start the
+	Microsoft Exchange Server Administrator program, and make changes to the objects
+	whose USN-Changed attribute value is too high. These objects will be assigned
+	new USN-Changed attribute values that are correct for the server.
+	
+	After you make the modifications to the problem objects in the Exchange Server
+	directory, replication should start working again on its own.
+	
+	MORE INFORMATION
+	================
+	
+	When an Exchange Server computer receives a request from another site to
+	replicate information, the server checks all the objects in its local Exchange
+	Server directory to make sure that all of the USN-Changed attribute values are
+	equal to or less than the latest USN-Changed attribute value assigned to an
+	object in the directory.
+	
+	If it finds objects that have USN-Changed attribute values that are greater than
+	what that server would assign to the next change in its directory, then an error
+	condition exists, replication stops, and the two events listed in the "Symptoms"
+	section are written to the application event log.
+	
+	In the resolution, the Obj-Dist-Name attribute is included in the .csv file so
+	that you can find the exact location of the object in the Exchange Server
+	directory. The Is-Deleted attribute is included so that you can see potential
+	problem objects that have been deleted but not permanently removed from the
+	directory (this is called "tombstoning"). If this is the case, the Is-Deleted
+	value for the objects is set to 1. For additional information about tombstoned
+	objects, click the article number below to view the article in the Microsoft
+	Knowledge Base:
+	
+	  Q239639 XADM: How to View Deleted (Tombstoned) Objects
+	
+	Additional query words: dir rep repl
+	
+	======================================================================
+	Keywords          : exc55 
+	Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+	Version           : winnt:5.5
+	Issue type        : kbprb
+	
+	=============================================================================
+	

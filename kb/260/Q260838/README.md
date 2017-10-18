@@ -1,0 +1,248 @@
+---
+layout: page
+title: "Q260838: MS00-031: IIS Stops Servicing HTR Requests"
+permalink: kb/260/Q260838/
+---
+
+## Q260838: MS00-031: IIS Stops Servicing HTR Requests
+
+	Article: Q260838
+	Product(s): Internet Information Server
+	Version(s): 4.0,5.0
+	Operating System(s): 
+	Keyword(s): kbSecurity kbWin2000PreSP1Fix kbWinNT400PreSP7Fix kbWin2000sp1Fix kbgraphxlinkcritical
+	Last Modified: 16-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Server version 4.0 
+	- Microsoft Internet Information Services version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If a malicious user provides a password change request that is missing an
+	expected delimiter, the algorithm conducts an unbounded search. This prevents
+	the servicing of additional HTR requests, and can also slow the overall response
+	of the server.
+	
+	CAUSE
+	=====
+	
+	The body of the request for a HTR page is assumed to be valid.
+	
+	RESOLUTION
+	==========
+	
+	Windows 2000
+	------------
+	
+	The original release of this fix is available in Windows 2000 Service Pack 1. For
+	additional information on Windows 2000 Service Pack 1, click the article number
+	below to view the article in the Microsoft Knowledge Base:
+	
+	  Q260910 How to Obtain the Latest Windows 2000 Service Pack
+	
+	For additional information about what the updated package fixes, click the
+	article numbers below to view the articles in the Microsoft Knowledge Base:
+	
+	  Q267560 Changing the URL in a Specific Manner May Expose Contents of a File
+	
+	  Q267559 GET on .Htr File Can Cause a "Denial of Service" or Enable Directory
+	  Browsing
+	
+	  Q260069 Malformed HTR Request Returns Source Code for ASP Scripting Files
+	
+	A supported fix is now available from Microsoft, but it is only intended to
+	correct the problem described in this article and should be applied only to
+	systems experiencing this specific problem. This fix may receive additional
+	testing at a later time, to further ensure product quality. Therefore, if you
+	are not severely affected by this problem, Microsoft recommends that you wait
+	for the next Windows 2000 that contains this fix.
+	
+	To resolve this problem immediately, download the fix as instructed below or
+	contact Microsoft Product Support Services to obtain the fix. For a complete
+	list of Microsoft Product Support Services phone numbers and information on
+	support costs, please go to the following address on the World Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	NOTE: In special cases, charges that are normally incurred for support calls may
+	be canceled, if a Microsoft Support Professional determines that a specific
+	update will resolve your problem. Normal support costs will apply to additional
+	support questions and issues that do not qualify for the specific update in
+	question.
+	
+	The following file is available for download from the Microsoft Download Center:
+	
+	  DownloadDownload Q267559_w2k_sp2_x86_en.exe now
+	  (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=22708)
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. After it is posted, the file is housed on
+	secure servers that prevent any unauthorized changes to the file.
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	  Date        Time    Version         Size    File name
+	  -----------------------------------------------------
+	  07/07/2000  03:17p  5.00.2195.2100  46,352  Ism.dll
+	
+	
+	
+	Windows NT 4.0
+	--------------
+	
+	A supported fix is now available from Microsoft, but it is only intended to
+	correct the problem described in this article and should be applied only to
+	systems experiencing this specific problem. This fix may receive additional
+	testing at a later time, to further ensure product quality. Therefore, if you
+	are not severely affected by this problem, Microsoft recommends that you wait
+	for the next Windows NT 4.0 that contains this fix.
+	
+	To resolve this problem immediately, download the fix as instructed below or
+	contact Microsoft Product Support Services to obtain the fix. For a complete
+	list of Microsoft Product Support Services phone numbers and information on
+	support costs, please go to the following address on the World Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	NOTE: In special cases, charges that are normally incurred for support calls may
+	be canceled, if a Microsoft Support Professional determines that a specific
+	update will resolve your problem. Normal support costs will apply to additional
+	support questions and issues that do not qualify for the specific update in
+	question.
+	
+	The following file is available for download from the Microsoft Download Center:
+	
+	  US English:
+	
+	  x86: DownloadDownload Ismpst4i.exe now
+	  (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=20905)
+	
+	  Alpha: DownloadDownload Ismpst4a.exe now
+	  (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=20905)
+	
+	  Chinese (Simplified):
+	
+	  x86: DownloadDownload Ismpst4i.exe now
+	  (http://download.microsoft.com/download/iis40/Patch/Q260838/NT4ALPHA/CN/Ismpst4i.exe)
+	  x86 Symbols: DownloadDownload Ismpst4is.exe now
+	  (http://download.microsoft.com/download/iis40/Patch/Q260838/NT4ALPHA/CN/Ismpst4is.exe)
+	  Alpha: DownloadDownload Ismpst4a.exe now
+	  (http://download.microsoft.com/download/iis40/Patch/Q260838/NT4ALPHA/CN/Ismpst4a.exe)
+	  Alpha Symbols: DownloadDownload Ismpst4as.exe now
+	  (http://download.microsoft.com/download/iis40/Patch/Q260838/NT4ALPHA/CN/Ismpst4as.exe)
+	
+	  Chinese (Traditional):
+	
+	  x86: DownloadDownload Ismpst4i.exe now
+	  (http://download.microsoft.com/download/iis40/Patch/Q260838/NT4ALPHA/TW/Ismpst4i.exe)
+	  x86 Symbols: DownloadDownload Ismpst4is.exe now
+	  (http://download.microsoft.com/download/iis40/Patch/Q260838/NT4ALPHA/TW/Ismpst4is.exe)
+	  Alpha: DownloadDownload Ismpst4a.exe now
+	  (http://download.microsoft.com/download/iis40/Patch/Q260838/NT4ALPHA/TW/Ismpst4a.exe)
+	  Alpha Symbols: DownloadDownload Ismpst4as.exe now
+	  (http://download.microsoft.com/download/iis40/Patch/Q260838/NT4ALPHA/TW/Ismpst4as.exe)
+	
+	  German:
+	
+	  x86: DownloadDownload Ismpst4i.exe now
+	  (http://download.microsoft.com/download/iis40/Patch/Q260838/NT4ALPHA/DE/Ismpst4i.exe)
+	  x86 Symbols: DownloadDownload Ismpst4is.exe now
+	  (http://download.microsoft.com/download/iis40/Patch/Q260838/NT4ALPHA/DE/Ismpst4is.exe)
+	  Alpha: DownloadDownload Ismpst4a.exe now
+	  (http://download.microsoft.com/download/iis40/Patch/Q260838/NT4ALPHA/DE/Ismpst4a.exe)
+	  Alpha Symbols: DownloadDownload Ismpst4as.exe now
+	  (http://download.microsoft.com/download/iis40/Patch/Q260838/NT4ALPHA/DE/Ismpst4as.exe)
+	
+	  Japanese:
+	
+	  x86: DownloadDownload Ismpst4i.exe now
+	  (http://download.microsoft.com/download/iis40/Patch/Q260838/NT4ALPHA/JA/Ismpst4i.exe)
+	  x86 Symbols: DownloadDownload Ismpst4is.exe now
+	  (http://download.microsoft.com/download/iis40/Patch/Q260838/NT4ALPHA/JA/Ismpst4is.exe)
+	  Alpha: DownloadDownload Ismpst4a.exe now
+	  (http://download.microsoft.com/download/iis40/Patch/Q260838/NT4ALPHA/JA/Ismpst4a.exe)
+	  Alpha Symbols: DownloadDownload Ismpst4as.exe now
+	  (http://download.microsoft.com/download/iis40/Patch/Q260838/NT4ALPHA/JA/Ismpst4as.exe)
+	
+	  Korean:
+	
+	  x86: DownloadDownload Ismpst4i.exe now
+	  (http://download.microsoft.com/download/iis40/Patch/Q260838/NT4ALPHA/KO/Ismpst4i.exe)
+	  x86 Symbols: DownloadDownload Ismpst4is.exe now
+	  (http://download.microsoft.com/download/iis40/Patch/Q260838/NT4ALPHA/KO/Ismpst4is.exe)
+	  Alpha: DownloadDownload Ismpst4a.exe now
+	  (http://download.microsoft.com/download/iis40/Patch/Q260838/NT4ALPHA/KO/Ismpst4a.exe)
+	  Alpha Symbols: DownloadDownload Ismpst4as.exe now
+	  (http://download.microsoft.com/download/iis40/Patch/Q260838/NT4ALPHA/KO/Ismpst4as.exe)
+	
+	
+	
+	Microsoft Windows NT Server version 4.0, Terminal Server Edition
+	----------------------------------------------------------------
+	
+	To resolve this problem, obtain the Windows NT Server 4.0, Terminal Server
+	Edition, Security Rollup Package (SRP). For additional information about the
+	SRP, click the article number below to view the article in the Microsoft
+	Knowledge Base:
+	
+	  Q317636 Windows NT Server 4.0, Terminal Server Edition, Security Rollup
+	  Package
+	
+	STATUS
+	======
+	
+	Windows 2000
+	------------
+	
+	Microsoft has confirmed this problem could result in some degree of security
+	vulnerability in Internet Information Services 5.0. This problem was first
+	corrected in Windows 2000 Service Pack 1.
+	
+	Windows NT 4.0
+	--------------
+	
+	Microsoft has confirmed this problem could result in some degree of security
+	vulnerability in Internet Information Server 4.0.
+	
+	MORE INFORMATION
+	================
+	
+	For related information about this problem, please visit the following Microsoft
+	Web site:
+	
+	  http://www.microsoft.com/technet/security/bulletin/ms00-031.asp
+	
+	For additional security-related information about Microsoft products, please
+	visit the following Microsoft Web site:
+	
+	  http://www.microsoft.com/security/
+	
+	For additional information about what else is fixed by this update, click the
+	article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q260069 Malformed HTR Request Returns Source Code for ASP Scripting Files
+	
+	
+	Additional query words: security_patch DoS denial of service
+	
+	======================================================================
+	Keywords          : kbSecurity kbWin2000PreSP1Fix kbWinNT400PreSP7Fix kbWin2000sp1Fix kbgraphxlinkcritical 
+	Technology        : kbiisSearch kbiis500 kbiis400
+	Version           : :4.0,5.0
+	Hardware          : ALPHA x86
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

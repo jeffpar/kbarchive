@@ -1,0 +1,90 @@
+---
+layout: page
+title: "Q128957: Optional Components Unavailable When User Profiles Are Enabled"
+permalink: kb/128/Q128957/
+---
+
+## Q128957: Optional Components Unavailable When User Profiles Are Enabled
+
+	Article: Q128957
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): 95
+	Operating System(s): 
+	Keyword(s): win95 appscomp kbAppCompatibility
+	Last Modified: 28-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 95 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The Windows Setup tab in the Add/Remove Programs tool may show that a component
+	is installed, even though the component is not available to the current user.
+	
+	For example, the The Microsoft Network check box may be selected in the
+	Add/Remove Programs tool even though The Microsoft Network is not available to
+	the current user.
+	
+	CAUSE
+	=====
+	
+	When user profiles are enabled and neither "Include desktop icons and Network
+	Neighborhood contents in user settings" nor "Include Start menu and Program
+	groups in user settings" is selected, components are available only to the user
+	who was logged on when the component was installed.
+	
+	However, once a component has been installed by one user, the component shows as
+	being installed on the Windows Setup tab regardless of which user is logged on.
+	
+	RESOLUTION
+	==========
+	
+	To make a Windows 95 component that was installed by another user available to
+	the current user, follow these steps:
+	
+	1. Double-click My Computer.
+	
+	2. Double-click Control Panel.
+	
+	3. Double-click the Add/Remove Programs icon.
+	
+	4. On the Windows Setup tab, click the component's check box to clear it.
+	
+	5. Click the Apply button. If you are prompted to restart the computer, click
+	  Yes. After the computer restarts, repeat steps 1-3 to return to the
+	  Add/Remove Programs Properties window if necessary.
+	
+	6. Click the component's check box to select it.
+	
+	7. Click the Apply button. If you are prompted to restart your computer, click
+	  Yes.
+	
+	STATUS
+	======
+	
+	Microsoft is researching this problem and will post new information here in the
+	Microsoft Knowledge Base as it becomes available.
+	
+	MORE INFORMATION
+	================
+	
+	This problem occurs with Windows 95 components that do not have Control Panel
+	extensions. When these components are installed, Windows 95 updates the Start
+	menu and registry only for the current user profile. When a different user logs
+	on, the registry entries and Start menu shortcuts do not exist and the
+	components are not available.
+	
+	The status of components on the Windows Setup tab is not user-specific, however,
+	so components are reported as installed no matter which user is logged on.
+	
+	======================================================================
+	Keywords          : win95 appscomp kbAppCompatibility 
+	Technology        : kbWin95search kbZNotKeyword3
+	Version           : 95
+	
+	=============================================================================
+	

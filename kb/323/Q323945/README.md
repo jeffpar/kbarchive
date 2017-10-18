@@ -1,0 +1,227 @@
+---
+layout: page
+title: "Q323945: Zoo Tycoon: Guests Appear Stuck to Zoo Objects in Dinosaur Digs"
+permalink: kb/323/Q323945/
+---
+
+## Q323945: Zoo Tycoon: Guests Appear Stuck to Zoo Objects in Dinosaur Digs
+
+	Article: Q323945
+	Product(s): Microsoft Home Games
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Zoo Tycoon 
+	- Microsoft Zoo Tycoon: Dinosaur Digs Expansion Pack 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you use Microsoft Zoo Tycoon Dinosaur Digs Expansion Pack after you install
+	third-party content, guests in your game may appear to be attached and stuck to
+	objects in the zoo.
+	
+	CAUSE
+	=====
+	
+	This problem may occur if one or more Zoo Tycoon and/or Dinosaur Digs files are
+	damaged after you download and install third-party Zoo Tycoon content.
+	
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, remove and then reinstall Zoo Tycoon and Dinosaur Digs.
+	To do so, follow these steps.
+	
+	NOTE: Because there are several versions of Microsoft Windows, the following
+	steps may be different on your computer. If they are, see your product
+	documentation to complete these steps.
+	
+	Part 1: Remove Zoo Tycoon and Dinosaur Digs
+	-------------------------------------------
+	
+	1. Click Start, and then click Control Panel.
+	
+	2. Click "Add or Remove Programs".
+	
+	3. In the "Currently installed programs" list, click "Zoo Tycoon - Dinosaur
+	  Digs", and then click Change/Remove.
+	
+	4. Click Uninstall, and then click OK.
+	
+	5. Click OK when you receive the message that Zoo Tycoon - Dinosaur Digs was
+	  removed.
+	
+	6. Click Start, and then click Search.
+	
+	7. In the "All or part of the file name" box, type "zoo tycoon" including the
+	  quotation marks.
+	
+	8. In the "Look in" box, click the drive on which Zoo Tycoon is installed, and
+	  then click Search.
+	
+	9. In the search results window, right-click the Zoo Tycoon folder, and then
+	  click Delete.
+	
+	  When you are prompted, click Yes to confirm the deletion.
+	
+	Part 2: Restart the Computer by Using a Clean-Boot Procedure
+	------------------------------------------------------------
+	
+	Use a clean boot to restart your computer. A clean boot is a way to create a
+	clean environment. When you start your computer with a clean boot, Microsoft
+	Windows starts and loads only basic devices and services. For more information
+	about how to use a clean boot, see the "More Information" section later in this
+	article.
+	
+	To restart your computer with a clean boot, follow the steps that are appropriate
+	to your operating system.
+	
+	Windows XP:
+	
+	1. Click Start, and then click Run.
+	
+	2. Type "msconfig" (without the quotation marks) in the Open box, and then click
+	  OK.
+	
+	3. Click the General tab, and then click Selective Startup.
+	
+	4. Click to clear the following check boxes under Selective Startup.
+	
+	  Process SYSTEM.INI file
+	  Process WIN.INI file
+	  Load Startup Items
+	
+	5. Click the Services tab, click to select the "Hide All Microsoft Services"
+	  check box, and then click Disable All.
+	
+	6. Click OK, and then click Restart to restart the computer.
+	
+	NOTE: To restore the computer to use a normal startup, click "Normal Startup -
+	load all device drivers and services" on the General tab in the System
+	Configuration Utility, click OK, and then click Restart to restart the
+	computer.
+	
+	Windows Me:
+	
+	1. Click Start, and then click Run.
+	
+	2. In the Open box, type "msconfig" (without the quotation marks), and then
+	  click OK.
+	
+	3. Click the General tab, and then click "Selective startup".
+	
+	4. Click to clear all of the check boxes under Selective startup.
+	
+	5. On the Startup tab, click to select the *StateMgr check box, and then click
+	  OK.
+	
+	  When you are prompted to restart the computer, click Yes.
+	
+	
+	6. After the computer restarts, click Start, click Run, type "msconfig" (without
+	  the quotation marks) in the Open box, and then click OK.
+	
+	  IMPORTANT: Look closely at the General tab to verify that the check boxes that
+	  you cleared are still cleared. If you see a selected, unavailable check box
+	  (it appears dimmed and has a check mark in it), your computer is not truly
+	  "clean-booted," and you may need assistance from the manufacturer of the
+	  program that is listed next to the selected, unavailable check box.
+	
+	NOTE: To restore the computer to use a normal startup, click Normal Startup on
+	the General tab in the System Configuration Utility, click OK, and then restart
+	the computer.
+	
+	Windows 98:
+	
+	1. Click Start, point to Programs, point to Accessories, point to System Tools,
+	  and then click System Information.
+	
+	2. On the Tools menu, click System Configuration Utility.
+	
+	3. Click the General tab, click Selective Startup, and then click to clear the
+	  following check boxes:
+	
+	  Process Config.sys file
+	  Process Autoexec.bat file
+	  Process Winstart.bat file (if available)
+	  Process Win.ini file
+	  Load Startup group items
+	
+	4. Click OK, and then restart the computer.
+	
+	NOTE: To restore the computer to use a normal startup, click Normal Startup on
+	the General tab in the System Configuration Utility, click OK, and then restart
+	the computer.
+	
+	Part 3: Reinstall Zoo Tycoon
+	----------------------------
+	
+	To reinstall Zoo Tycoon, follow these steps:
+	
+	1. Insert the Zoo Tycoon CD-ROM into the computer's CD-ROM drive or DVD-ROM
+	  drive.
+	
+	  If Setup does not start automatically, follow these steps:
+	
+	  a. Click Start, and then click Run.
+	
+	  b. In the Open box, type the following line, where <cd-rom> is the
+	     drive letter of the CD-ROM or DVD-ROM drive.
+	
+	  <cd-rom>:\setup.exe
+	
+	  c. Click OK.
+	
+	2. Follow the on-screen instructions to install Zoo Tycoon.
+	
+	Part 4: Reinstall Dinosaur Digs
+	-------------------------------
+	
+	To reinstall the Dinosaur Digs Expansion Pack, follow these steps:
+	
+	1. Insert the Zoo Tycoon Dinosaur Digs Expansion Pack CD-ROM into the computer's
+	  CD-ROM drive or DVD-ROM drive.
+	
+	  If Setup does not start automatically, follow these steps:
+	
+	  a. Click Start, and then click Run.
+	
+	  b. In the Open box, type the following line, where <cd-rom> is the
+	     drive letter of the CD-ROM or DVD-ROM drive.
+	
+	  <cd-rom>:\setup.exe
+	
+	  c. Click OK.
+	
+	2. Follow the on-screen instructions to install Dinosaur Digs.
+	
+	MORE INFORMATION
+	================
+	
+	For additional information about how to perform a clean-boot in Windows, click
+	the article numbers below to view the articles in the Microsoft Knowledge Base:
+	
+	  Q310353 How to Perform a Clean Boot in Windows XP
+	
+	  Q267288 How to Perform a Clean Boot in Windows Millennium Edition
+	
+	  Q192926 How to Perform Clean-Boot Troubleshooting for Windows 98
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbGamesSearch kbZooTycoon
+	Version           : :
+	Issue type        : kbprb
+	
+	=============================================================================
+	

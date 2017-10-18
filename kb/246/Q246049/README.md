@@ -1,0 +1,136 @@
+---
+layout: page
+title: "Q246049: Streets &amp; Trips 2000 Err Msg: This Program Can No Longer Run"
+permalink: kb/246/Q246049/
+---
+
+## Q246049: Streets &amp; Trips 2000 Err Msg: This Program Can No Longer Run
+
+	Article: Q246049
+	Product(s): Microsoft Automap
+	Version(s): WINDOWS:
+	Operating System(s): 
+	Keyword(s): kbenv kberrmsg kbsetup kbtool kbimu
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Expedia Streets and Trips 2000 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you start Microsoft Expedia Streets & Trips 2000, you may receive the
+	following error message:
+	
+	  This program can no longer run. Click OK to acknowledge this message, and
+	  then restart the program.
+	
+	CAUSE
+	=====
+	
+	This behavior can occur if the Itss.dll file is missing, damaged, or an
+	incorrect version.
+	
+	RESOLUTION
+	==========
+	
+	You may be able to resolve this issue by installing the HTML Help Installation
+	and Update Package. To do this:
+	
+	1. Insert the Expedia Streets & Trips 2000 Setup CD-ROM into your CD-ROM
+	  drive. Press and hold down the SHIFT key as you insert the CD-ROM to prevent
+	  Setup from starting automatically.
+	
+	2. Click Start, point to Programs, and then click MS-DOS Prompt.
+	
+	3. Type the following lines, pressing ENTER after you type each line:
+	
+	  copy <cd-rom>:\common\enu\hhupd.exe <drive>:\windows\desktop
+	  exit
+	
+	  where <cd-rom> is the drive letter of your CD-ROM drive, and
+	  <drive> is the drive letter of the hard disk on which Microsoft Windows
+	  is installed.
+	
+	4. Clean boot your computer. To do this, use the appropriate method for your
+	  version of Windows.
+	
+	Windows 98
+	----------
+	
+	  a. Click Start, and then click Run.
+	
+	  b. In the Open box, type "msconfig" (without the quotation marks), and then
+	     click OK.
+	
+	  c. On the General tab, click Selective Startup, and then click to clear the
+	     following check boxes:
+	
+	      - Process Config.sys File
+	      - Process Autoexec.bat File
+	      - Process Winstart.bat File (if available)
+	      - Process Win.ini File
+	      - Load Startup Group Items
+	
+	  d. Click OK. When you are prompted to restart the computer, do so.
+	
+	For additional information about how to clean boot Windows 98, click the article
+	number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q192926 How to Perform Clean-Boot Troubleshooting for Windows 98
+	
+	Windows 95
+	----------
+	
+	  a. Restart the computer. When you see the "Starting Windows 95" message,
+	     press the F8 key, and then select Command Prompt Only from the Startup
+	     menu.
+	
+	  b. At the command prompt, type "win" (without the quotation marks), and then
+	     press ENTER. Press and hold down the SHIFT key until the Windows startup
+	     sequence is complete.
+	
+	  c. Disable any anti-virus or disk tool programs installed on the computer.
+	     For information about how to disable these programs, see the printed or
+	     online documentation for the program.
+	
+	  d. Quit all running programs except Explorer and Systray. To do this, press
+	     CTRL+ALT+DELETE, click the program you want to quit, and then click End
+	     Task. If you receive a message that the program is busy or not responding,
+	     click End Task again. Repeat this step to quit all programs except
+	     Explorer and Systray.
+	
+	For additional information about how to clean boot Windows 95, click the article
+	number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q177604 Multimedia: Troubleshooting Using Clean Boot of Windows 95
+	
+	5. Double-click the Hhupd.exe file on the desktop, click Yes, and then click OK.
+	
+	6. If you run Expedia Streets & Trips 2000 on a Windows 95-based computer,
+	  restart the computer normally.
+	
+	  If you run Expedia Streets & Trips 2000 on a Windows 98-based computer:
+	
+	  a. Click Start, and then click Run.
+	
+	  b. In the Open box, type "msconfig" (without the quotation marks), and then
+	     click OK.
+	
+	  c. On the General tab, click Normal Startup.
+	
+	  d. Click OK. When you are prompted to restart the computer, do so.
+	
+	Additional query words: multi multi-media media mm clean-boot automap amap
+	
+	======================================================================
+	Keywords          : kbenv kberrmsg kbsetup kbtool kbimu 
+	Technology        : kbHomeProdSearch kbExpediaSearch kbExpediaStreets2000
+	Version           : WINDOWS:
+	Issue type        : kbprb
+	
+	=============================================================================
+	

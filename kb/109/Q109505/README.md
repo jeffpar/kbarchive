@@ -1,0 +1,420 @@
+---
+layout: page
+title: "Q109505: NETWORKS.WRI from Windows for Workgroups 3.11 (Part 4 of 4)"
+permalink: kb/109/Q109505/
+---
+
+## Q109505: NETWORKS.WRI from Windows for Workgroups 3.11 (Part 4 of 4)
+
+	Article: Q109505
+	Product(s): Microsoft Windows 3.x Retail Product
+	Version(s): WINDOWS:3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 22-SEP-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows for Workgroups version 3.11 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The following information was taken from the Microsoft Windows for Workgroups
+	version 3.11 NETWORKS.WRI file.
+	
+	MORE INFORMATION
+	================
+	
+	7.0 Using Windows for Workgroups 3.11 with Beame & Whiteside BW-NFS
+	
+	Windows for Workgroups 3.11 works with Beame & Whiteside BW-NFS version
+	3.0c.
+	
+	Set up BW-NFS on your computer according to the directions in your BW-NFS
+	documentation. Make sure you can connect to a BW-NFS server from MS-DOS
+	before you set up Windows for Workgroups 3.11 to work with BW-NFS. For more
+	information on installing BW-NFS support in Windows for Workgroups, see
+	Chapter 9, "Using Other Networks," in the Microsoft Workgroup Add-On
+	"User's Guide."
+	
+	7.1 Changes to System Files
+	
+	When You Install Support for BW-NFS Setup makes the following changes to
+	your SYSTEM.INI file:
+	
+	[boot]
+	secondnet.drv=bwnet.drv
+	
+	[boot description]
+	secondnet.drv=BW-NFS Network File System (version 3.0c)
+	
+	[386Enh]
+	secondnet=bwdosnet.386, bwredir.386
+	TimerCriticalSection=1000
+	UniqueDOSPSP=True
+	PSPIncrement=5
+	
+	8.0 Using Windows for Workgroups 3.11 with ArcNet
+	
+	If you are setting up an ArcNet network for use with Windows for
+	Workgroups, follow the instructions in Appendix C, "Installing Network
+	Hardware," in the Microsoft Workgroup Add-On "User's Guide" for setting up
+	a network using Thin Ethernet, but with these exceptions:
+	
+	- Instead of RG-58 cable, use RG-62U thin coaxial cable.
+	
+	- You do not need to use BNC T-Connectors. You can plug RG-62U cable
+	  directly into ArcNet cards.
+	
+	9.0 Using Windows for Workgroups 3.11 with TCP/IP
+	
+	You can use the TCP/IP protocol with Microsoft Windows for Workgroups
+	version 3.11. We recommend that you use the Microsoft TCP/IP for
+	Windows for Workgroups protocol package.
+	
+	Set up Microsoft TCP/IP for Windows for Workgroups according to the
+	Microsoft TCP/IP for Windows for Workgroups Installation and
+	Configuration Guide.
+	
+	9.1 Changes to System Files When You Install TCP/IP
+	
+	The TCP/IP installation process adds the following lines to the
+	AUTOEXEC.BAT file.
+	
+	    C:\WINDOWS\NET START
+	    C:\WINDOWS\UMB
+	    C:\WINDOWS\TCPTSR
+	    C:\WINDOWS\TINYRFC
+	    C:\WINDOWS\EMSBFR.EXE
+	    C:\WINDOWS\NMTSR.EXE
+	
+	The following lines are added to the SYSTEM.INI file.
+	
+	[386ENH]
+	device=vsockets.386
+	device=vbapi.386
+	TimerCriticalSection=5000
+	UniqueDosPSP=TRUE
+	PSPIncrement=2
+	
+	[Network Drivers]
+	devdir=C:\WINDOWS
+	LoadRMDrivers=Yes
+	netcard=<network adapter>
+	transport=ndishlp.sys,*netbeui,tcpdrv.dos,nemm.dos
+	
+	The TCP/IP installation process also creates a TCPUTILS.INI file.
+	
+	[tcpglobal]
+	username=<user name>
+	NetFiles=C:\WINDOWS
+	hostname=<host name>
+	drivername=GLOBAL$
+	
+	[sockets]
+	drivername=SOCKETS$
+	bindings=TCPIP
+	numsockets=4
+	numthreads=32
+	poolsize=3200
+	maxsendsize=1024
+	
+	[telnet]
+	drivername=TELNET$
+	bindings=TCPIP
+	nsessions=0
+	max_out_sends=0
+	
+	9.2 Sample PROTOCOL.INI file
+	
+	The following is a sample PROTOCOL.INI file. It is taken from a computer
+	where Microsoft Windows for Workgroups version 3.11 is set up to use the
+	Microsoft NetBEUI and Microsoft TCP/IP protocols with the same network
+	adapter.
+	
+	[network.setup]
+	version=0x3110
+	netcard=ms$ewtrbtp,1,MS$EWTRBTP,3
+	transport=ms$ndishlp,MS$NDISHLP
+	transport=ms$netbeui,NETBEUI
+	transport=tcpip,TCPIP
+	lana0=ms$ewtrbtp,1,tcpip
+	lana1=ms$ewtrbtp,1,ms$ndishlp
+	lana2=ms$ewtrbtp,1,ms$netbeui
+	
+	[protman]
+	DriverName=PROTMAN$
+	PRIORITY=MS$NDISHLP
+	
+	[MS$EWTRBTP]
+	DriverName=DEPCA$
+	Interrupt=15
+	IOAddress=0x300
+	RamAddress=0xD000
+	MaxMulticast=8
+	MaxTransmits=16
+	AdapterName=DE200
+	
+	[LANCE]
+	Adapters=MS$EWTRBTP
+	
+	[MS$NDISHLP]
+	DriverName=ndishlp$
+	BINDINGS=MS$EWTRBTP
+	
+	[NETBEUI]
+	DriverName=netbeui$
+	SESSIONS=10
+	NCBS=12
+	BINDINGS=MS$EWTRBTP
+	LANABASE=2
+	
+	[TCPIP]
+	DefaultGateway0=130 25 0 1
+	SubNetMask0=255 255 0 0
+	IPAddress0=130 25 8 144
+	NBSessions=12
+	NetFiles=C:\WINDOWS
+	DriverName=TCPIP$
+	BINDINGS=MS$EWTRBTP
+	LANABASE=0
+	
+	The following parameters are optional entries in the [tcpip] section
+	of the PROTOCOL.INI file.
+	
+	____________________________________________________________
+	ForcePushBit=<0-or-1>
+	
+	Default:        0
+	Purpose:Determines how frequently the push bit is set. If this
+	setting is set to 1, the stack sets the push bit on every outgoing
+	packet. If this setting is set to 0, the stack sets the push bit
+	only on packets as needed.
+	
+	       If you are having trouble connecting to an IBM mainframe, try
+	setting ForcePushBit=1..
+	
+	____________________________________________________________
+	
+	MaxLmHosts=<number>
+	
+	Default:        120
+	Purpose:Specifies the number of entries from the LMHOSTS file that
+	should be loaded into the cache when the workstation is booted. The
+	value for this setting must be a number between 0 and 120.
+	
+	____________________________________________________________
+	TcpRetries=<number>
+	
+	Default:        10
+	Purpose:Specifies the length of time your workstation will continue
+	attempting to send a packet. The default, 10, corresponds to
+	approximately 50 seconds. Higher values allow more time for repeated
+	attempts to send the packet, up to a maximum of about six minutes.
+	The value for this setting must be a number between 1 and 17.
+	____________________________________________________________
+	
+	9.3 More Information about using Windows for Workgroups 3.11 with TCP/IP
+	
+	- In order to run the ping utility, you must first run NMTSR.EXE.
+	  NMTSR.EXE is a terminate-and-stay-resident (TSR) program that is
+	  loaded before the Windows operating system is started. It is started
+	  by a line in the AUTOEXEC.BAT file.
+	
+	  If you will not run the ping utility, you can remove NMTSR.EXE. To
+	  do this, remove or comment out (add REM to the beginning of the line)
+	  the line in your AUTOEXEC.BAT file that loads NMTSR.EXE. Then reboot
+	  your computer.
+	
+	- If you need to remove the Microsoft TCP/IP for Windows for
+	  Workgroups protocol package for troubleshooting purposes:
+	
+	  1. In the Network program group, select the Network Setup icon.
+	     The Network Setup dialog box appears.
+	
+	  2. In the Network Setup dialog box, choose the Drivers button. The
+	     Network Drivers dialog box appears.
+	
+	  3. Select on the protocol Microsoft TCP/IP. Then choose the Remove
+	     button.
+	
+	  You should not need to edit any files. However, if you receive errors
+	  when you restart your computer is booting, use a text editor to view the
+	  system files and make sure that all of the entries have been
+	  successfully removed.
+	
+	10.0 Using Windows for Workgroups 3.11 with Data Link Control (DLC)
+	    Protocol
+	
+	You can use the Data Link Control (DLC) protocol with Microsoft
+	Windows for Workgroups version 3.11. We recommend that you use the
+	Microsoft MS-DLC for Windows for Workgroups protocol package. You can
+	use the MS-DLC protocol along with other protocols. However, the
+	MS-DLC protocol must be set as the default protocol.
+	
+	Use the Network Setup icon to set up Windows for Workgroups to work
+	with MS-DLC. See the Microsoft Workgroup Add-On "User's Guide" for more
+	information.
+	
+	NOTE:
+	Do not use the Setup program included with MS-DLC. If you do, you
+	will be unable to run Windows Setup or Network Setup. Instead, use
+	the Network Setup icon to set up Windows for Workgroups to work with
+	MS-DLC as you would in adding an Unlisted or Updated Protocol. See
+	the Microsoft Workgroup Add-On User's Guide for more information.
+	
+	If you run the Setup program included with MS-DLC, the Setup program
+	creates a file called WFWSETUP.CPL and copies a new WFWSETUP.DLL file
+	to your C:\WINDOWS\SYSTEM directory. This prevents Network  Setup
+	from working. To fix this, delete the WFWSETUP.CPL file. Then copy
+	and expand WFWSETUP.DLL from your Windows for Workgroups 3.11 disks.
+	For information on how to expand files, see your Windows
+	documentation.
+	
+	10.1 Changes to System Files When You Install MS-DLC
+	
+	The MS-DLC installation process adds the following lines to the
+	AUTOEXEC.BAT file:
+	
+	    C:\WINDOWS\NET INITIALIZE
+	    C:\WINDOWS\MSDLC.EXE
+	    C:\WINDOWS\NET START
+	
+	The MS-DLC installation process adds the following lines to the
+	SYSTEM.INI file:
+	
+	[Network Drivers]
+	LoadRMDrivers=Yes
+	
+	10.2 Sample PROTOCOL.INI file
+	
+	The following is a sample PROTOCOL.INI file. It is taken from a
+	computer where Microsoft Windows for Workgroups version 3.11 is set
+	up to use the Microsoft NetBEUI and MS-DLC protocols with the same
+	network adapter.
+	
+	[network.setup]
+	version=0x3110
+	netcard=ms$ewtrbtp,1,MS$EWTRBTP,3
+	transport=ms$ndishlp,MS$NDISHLP
+	transport=ms$netbeui,NETBEUI
+	transport=msdlc,MSDLC
+	lana0=ms$ewtrbtp,1,msdlc
+	lana1=ms$ewtrbtp,1,ms$ndishlp
+	lana2=ms$ewtrbtp,1,ms$netbeui
+	
+	[protman]
+	DriverName=PROTMAN$
+	PRIORITY=MS$NDISHLP
+	
+	[MS$EWTRBTP]
+	DriverName=DEPCA$
+	Interrupt=15
+	IOAddress=0x300
+	RamAddress=0xD000
+	MaxMulticast=8
+	MaxTransmits=16
+	AdapterName=DE200
+	
+	[LANCE]
+	Adapters=MS$EWTRBTP
+	
+	[MS$NDISHLP]
+	DriverName=ndishlp$
+	BINDINGS=MS$EWTRBTP
+	
+	[NETBEUI]
+	DriverName=netbeui$
+	SESSIONS=10
+	NCBS=12
+	BINDINGS=MS$EWTRBTP
+	LANABASE=2
+	
+	[MSDLC]
+	xstations1=0
+	xstations0=0
+	stations=20
+	saps=3
+	xsaps1=0
+	xsaps0=0
+	swap=1
+	usedix=0
+	DriverName=MSDLC$
+	BINDINGS=MS$EWTRBTP
+	
+	11.0 Using Windows for Workgroups 3.11 with MS-Net?Compatible Networks
+	
+	You can use Windows for Workgroups 3.11 with any network that is
+	MS-Net (Microsoft Network) Compatible instead of the Microsoft
+	Windows Network. These networks include:
+	
+	3Com 3+Share
+	TCS 10-Net
+	Ungermann-Bass Net/One
+	
+	12.0 Using an Unlisted Network Adapter with No OEMSETUP.INF File
+	
+	If you have a network adapter that is not included in the list of
+	available network adapters in Network Setup, and if you don't have an
+	OEMSETUP.INF file for it, you can still use it with Windows for
+	Workgroups. This section tells you how to modify your PROTOCOL.INI,
+	SYSTEM.INI, and CONFIG.SYS files to use your network adapter.
+	
+	1. Open your PROTOCOL.INI with a text editor, such as the MS-DOS EDIT
+	  command. Find the section that configures your network adapter
+	  driver. Select that section, including the header, and cut it.
+	
+	2. Find the section that begins with the [ms$genndis2] header. Select
+	  that section, including the header, and replace it with the section
+	  that configures your network adapter driver, that you cut in step 1.
+	
+	3. Replace all the occurrences of "ms$genndis2" with the name of your
+	  network adapter driver section. Then save and close the file.
+	
+	4. Open your SYSTEM.INI file with a text editor. In the [Network
+	  Drivers] section, add the name of your network adapter driver at the
+	  end of the netcard= line, and remove the "genndis2.dos" entry from
+	  that line. Then save and close the SYSTEM.INI file.
+	
+	5. Open your CONFIG.SYS with a text editor, and remove the line that
+	  loads the network adapter driver.
+	
+	13.0 Other Online Documents
+	
+	The following table describes other online documents that contain
+	important information about Windows for Workgroups that is not
+	included in the Microsoft Workgroup Add-On User's Guide or in Help.
+	
+	Document               Contains
+	____________________________________________________________
+	
+	SETUP.TXT      Information about problems that may occur when you
+	              set up Windows for Workgroups.
+	
+	README.WRI     Information about using Windows for Workgroups with
+	              the Multimedia Extensions version 1.0, specific display-
+	              adapter and system configurations, and MS-DOS?based
+	              applications, and information that was unavailable when the
+	              Microsoft Workgroup Add-On "User's Guide" was printed.
+	
+	PRINTERS.WRI   Information about specific printers and fonts.
+	
+	SYSINI.WRI     Information about the settings in the SYSTEM.INI file.
+	
+	WININI.WRI     Information about the settings in the WIN.INI file.
+	
+	MAIL.WRI       Information about using Microsoft Mail with Windows
+	              for Workgroups.
+	
+	Additional query words: wfw wfwg 3.11
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+	Version           : WINDOWS:3.11
+	
+	=============================================================================
+	

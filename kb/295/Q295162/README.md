@@ -1,0 +1,115 @@
+---
+layout: page
+title: "Q295162: System Errors When You Open Services from Administrative Tools"
+permalink: kb/295/Q295162/
+---
+
+## Q295162: System Errors When You Open Services from Administrative Tools
+
+	Article: Q295162
+	Product(s): Internet Information Server
+	Version(s): 5.0
+	Operating System(s): 
+	Keyword(s): kbDSupport
+	Last Modified: 08-DEC-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Services version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you try to start the World Wide Publishing Service, you may receive the
+	following error message:
+	
+	  The World Wide Web Publishing service could not be started.
+	  A system error has occurred.
+	  System error 15 has occurred.
+	  The system cannot find the drive specified.
+	
+	In addition, when you try to open Services from Administrative Tools, you may
+	receive the following error message:
+	
+	  Unexpected error 0x80074002
+	  Do you wish to continue to attempt to connect to it in the future?
+	
+	When you restart the computer, you receive the following error message:
+	
+	  At least one service or driver failed during system startup. Use Event Viewer
+	  to examine the event log for details.
+	
+	The following system errors are listed in the Event Viewer:
+	
+	  Event ID: 7022
+	  Source: Service Control Manager
+	  Description: The World Wide Web Publishing Service service hung on starting.
+	
+	  Event ID: 26
+	  Source: Application Popup
+	  Description: Application popup: Service Control Manager : At least one service
+	  or driver failed during system startup. Use Event Viewer to examine the event
+	  log for details.
+	
+	  Event ID: 7023
+	  Source: Service Control Manager
+	  Description: The World Wide Web Publishing Service service terminated with the
+	  following error:
+	  Object already exists.
+	
+	The following system errors may also appear in Event Viewer, depending on which
+	components were installed:
+	
+	  Event ID: 7024
+	  Source: Service Control Manager
+	  Description: The Certificate Services service terminated with service-specific
+	  error 2148073494.
+	
+	  Event ID: 42
+	  Source: CertSvc
+	  Description: Certificate Services did not start: Could not build CA
+	  certificate chain for %servername% Certificate Authority. Keyset does not
+	  exist 0x80090016 (-2146893802).
+	
+	CAUSE
+	=====
+	
+	This problem occurs because the System and Administrator accounts do not have
+	sufficient permissions to, or the Administrators group does not have ownership
+	of, the directory %SystemDrive%\Documents and Settings\All Users\Application
+	Data\Microsoft\Crypto\RSA\MachineKeys folder.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, follow these steps:
+	
+	1. Allow the System and Administrator accounts Full Control of the %System
+	  Drive%\Documents and Settings\All Users\Application
+	  Data\Microsoft\Crypto\RSA\MachineKeys folder.
+	
+	2. Allow the Administrators group ownership of these directories.
+	
+	MORE INFORMATION
+	================
+	
+	NOTE: The directory above assumes a clean install of Windows 2000. If we have a
+	computer which was upgraded from Windows NT 4.0 then the directory is as
+	follows:
+	
+	  %SystemRoot%\Profiles\All Users\Application
+	  Data\Microsoft\Crypto\RSA\MachineKeys
+	
+	Additional query words: PC Anywhere 0x80074002 7022 26 7023 7024 2148073494 42 0x80090016 (-2146893802) 2148073487
+	
+	======================================================================
+	Keywords          : kbDSupport 
+	Technology        : kbiisSearch kbiis500
+	Version           : :5.0
+	Issue type        : kbprb
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

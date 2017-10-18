@@ -1,0 +1,83 @@
+---
+layout: page
+title: "Q244048: XFOR: Manually Moving the Imcdata Folder"
+permalink: kb/244/Q244048/
+---
+
+## Q244048: XFOR: Manually Moving the Imcdata Folder
+
+	Article: Q244048
+	Product(s): Microsoft Exchange
+	Version(s): 4.0,5.0,5.5
+	Operating System(s): 
+	Keyword(s): exc4 exc5 exc55
+	Last Modified: 11-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+	
+	  Q256986 Description of the Microsoft Windows Registry
+	
+	SUMMARY
+	=======
+	
+	You may need to move the Microsoft Exchange Server Internet Mail Service flat
+	database folder to a drive other than the installation drive, because of an
+	increase in mail volume or additional requirements for logging and archiving. By
+	default, the Internet Mail Service flat database folder location is
+	C:\Exchsrvr\Imcdata.
+	
+	MORE INFORMATION
+	================
+	
+	In Exchange Server version 5.5, you can move the Internet Mail Service files by
+	using the Performance Optimizer. If necessary, you can move the Internet Mail
+	Service files manually by using the following steps:
+	
+	WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+	that may require you to reinstall your operating system. Microsoft cannot
+	guarantee that you can solve problems that result from using Registry Editor
+	incorrectly. Use Registry Editor at your own risk.
+	
+	1. Stop the Exchange Server Internet Mail Service; at a command prompt, type
+	  "net stop msexchangeimc" (without the quotation marks), and then press the
+	  ENTER key.
+	
+	2. Start the Registry Editor (Regedt32.exe).
+	
+	3. Locate the RootDir value under the following key in the registry:
+	
+	  HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeIMC\Parameters
+	
+	4. Change the value to the new location of the Exchsrvr\Imcdata folder, for
+	  example, F:\Exchsrvr\Imcdata.
+	
+	5. Create the new Imcdata folder. For example, to create the folder in the
+	  example in step 4, at a command prompt, type "md f:\exchsrvr\imcdata"
+	  (without the quotation marks), and then press the ENTER key.
+	
+	6. From the original Imcdata folder, copy the In, Out, and Pickup folders to the
+	  new folder location. This maintains any messages that may be in these
+	  queues.
+	
+	  NOTE: Ensure that when you perform this step that you do not copy the
+	  Queue.dat file.
+	
+	7. Restart the Internet Mail Service; at a command prompt, type "net start
+	  msexchangeimc" (without the quotation marks), and then press the ENTER key.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : exc4 exc5 exc55 
+	Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+	Version           : :4.0,5.0,5.5
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

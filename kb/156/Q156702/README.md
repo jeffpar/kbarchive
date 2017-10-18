@@ -1,0 +1,76 @@
+---
+layout: page
+title: "Q156702: Windows NT 4 &quot;Browse Folders Using a Separate Window&quot; Option"
+permalink: kb/156/Q156702/
+---
+
+## Q156702: Windows NT 4 &quot;Browse Folders Using a Separate Window&quot; Option
+
+	Article: Q156702
+	Product(s): Microsoft Windows NT
+	Version(s): 4.0
+	Operating System(s): 
+	Keyword(s): kbui
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 4.0 
+	- Microsoft Windows NT Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article discusses the expected behavior, under Windows NT 4.0, of My
+	Computer when "Browse folders using a separate window for each folder" is
+	selected on the View\Options menu.
+	
+	MORE INFORMATION
+	================
+	
+	If the "Browse folders using a separate window for each folder" button is
+	selected under the View\Options pull-down menu of My Computer, new windows
+	created by clicking on a folder will default to using large icons, status bar
+	enabled, and no toolbar. All root level settings under the View menu may be
+	defined by the user on a per folder basis. Once defined, the following settings
+	are stored for each window title (such as c:\winnt) for the 50 most recently
+	used windows on a per user basis:
+	
+	  Toolbar enabled/disabled
+	  Status bar enabled/disabled
+	  Icon Size (large, small, list, details)
+	  Arrange Icons (name, type, size, date)
+	
+	NOTE: No check mark, or other visual cue, is displayed to indicate what ordering
+	scheme (by name, type, size, or date) is used to display folders and files under
+	the View\Arrange Icons menu, with the exception of the Auto Arrange setting.
+	Unless manually defined, the default option of sorting by name is used.
+	
+	Settings in the View tab under View\Options are not saved when multiple windows
+	are used, even if manually defined. Default settings are used for all new and
+	previously modified folders.
+	
+	This category, along with the default settings, includes:
+	
+	  Show all files (not enabled)
+	  Hide files of these type: (enabled)
+	  Display the full path in the title bar (not enabled)
+	  Hide file extensions for known file types (enabled)
+	  Display compress files and folders with alternate colors (not enabled)
+	
+	If the single window view is used, settings under the view menu (including icon
+	size, toolbar visibility, and sort criteria), are inherited from the parent
+	window they were launched from, along with settings in the View tab under the
+	View\Options menu. This behavior is by design, and is consistent with the
+	Windows 95 interface, which was the design goal for Windows NT 4.0.
+	
+	Additional query words: prodnt
+	======================================================================
+	Keywords          : kbui 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+	Version           : 4.0
+	
+	=============================================================================
+	

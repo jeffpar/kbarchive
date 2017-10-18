@@ -1,0 +1,257 @@
+---
+layout: page
+title: "Q185882: HOWTO: Use the HitTest Event and HitBehavior Property"
+permalink: kb/185/Q185882/
+---
+
+## Q185882: HOWTO: Use the HitTest Event and HitBehavior Property
+
+	Article: Q185882
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbGrpDSVB
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article discusses a new Event-Property pair available for UserControls
+	created using Visual Basic 6.0. The general purpose of the HitTest Event, and
+	the HitBehavior Property is to give greater flexibility in responding to
+	UserControl events. Specifically, this article demonstrates how to build a
+	transparent UserControl that responds to mouse events. This was not possible in
+	previous versions of Visual Basic.
+	
+	MORE INFORMATION
+	================
+	
+	Using HitTest is relatively straightforward. "HitResult" is a value that is
+	passed into the HitTest event by the system. By examining the value of
+	HitResult, you can determine on which area of the control the mouse event
+	occurred. Based on that information, you can reset the value of HitResult to
+	have the control respond in the desired manner. You can instruct the control to
+	process the mouse event, or you can instruct the control to pass the event on to
+	the container. The default settings for the HitBehavior Property do not need to
+	be changed for these examples.
+	
+	For the examples used here, there are two different scenarios depending on
+	whether or not the UserControl has been masked using MaskPicture and MaskColor.
+	If your UserControl does not have a masked area please see the section entitled
+	"Capturing Mouse Events on a Transparent UserControl." If your UserControl has a
+	masked area, please see the section entitled "Capturing Mouse Events on a Masked
+	Usercontrol."
+	
+	It is important to note that the HitTest event occurs only on a Windowless
+	UserControl with the BackStyle property set to Transparent. Windowless
+	UserControls are also new to Visual Basic 6.0.
+	
+	Capturing Mouse Events on a Transparent UserControl
+	---------------------------------------------------
+	
+	1. Create a New Standard EXE project.
+	
+	2. Add a UserControl to the project. (You may receive a warning that the
+	  UserControl can not be Public in this type of project. Choose OK in response
+	  to this message.)
+	
+	3. Set the BackStyle property of the UserControl to Transparent.
+	
+	4. Set the Windowless property of the UserControl to True.
+	
+	5. Add the following code to the UserControl's module:
+	
+	        Private Sub UserControl_Click()
+	           Debug.Print "Usercontrol Click"
+	        End Sub
+	
+	        Private Sub UserControl_DblClick()
+	           Debug.Print "Usercontrol Doubleclick"
+	        End Sub
+	
+	        Private Sub UserControl_HitTest(X As Single, Y As Single, _
+	                                            HitResult As Integer)
+	
+	           'Instruct the UserControl to behave as if the click occurred on a
+	           ' painted region of the control.
+	           If HitResult = vbHitResultOutside Then
+	              HitResult = vbHitResultHit
+	           End If
+	
+	        End Sub
+	
+	6. Place the UserControl on Form1. You may wish to draw a rectangle or other
+	  shape around the control since the control will not be visible.
+	
+	7. Run the project.
+	
+	8. Clicking or double-clicking the UserControl should result in the display of
+	  the message boxes.
+	
+	Capturing Mouse Events on a Masked UserControl
+	----------------------------------------------
+	
+	This example requires a UserControl set up to use the MaskPicture and MaskColor
+	Properties.
+	
+	For more information on using the MaskPicture and MaskColor properties, please
+	see the article listed in the REFERENCES section.
+	
+	1. Create a bitmap with a white background that contains a filled red circle.
+	
+	2. Perform steps 1-4 from the previous section.
+	
+	3. Set the following properties for the UserControl:
+	
+	     BackStyle:      0 - Transparent
+	     MaskColor:      &H00FFFFFF&  'White
+	     MaskPicture:    The bitmap created in Step 1.
+	     BackColor:      &H000000FF& 'Red
+	
+	4. Add the following code to the UserControl:
+	
+	        Private Sub UserControl_Click()
+	           Debug.Print "Usercontrol Click"
+	        End Sub
+	
+	5. Add the following code to Form1:
+	
+	        Private Sub Form_Click()
+	           Debug.Print "Form Click"
+	        End Sub
+	
+	6. Run the project. Click the masked (or visible) portion of the UserControl.
+	  You should see the "UserControl Click" message box. Clicking the transparent
+	  area of the control should cause the "Form Click" message box to display.
+	  This is the default behavior of a masked control - events on the painted area
+	  will be processed by the control and events on the transparent area will be
+	  forwarded to the container.
+	
+	7. The event process behavior can be modified at this point to create separate
+	  responses based on which area of the UserControl received the Mouse event.
+	
+	8. Add the following code to the General Section of the UserControl's module:
+	
+	        Private HitTestFlag As Integer
+	
+	        Private Sub UserControl_HitTest(X As Single, Y As Single, _
+	                                            HitResult As Integer)
+	           HitTestFlag = HitResult
+	           'Set the UserControl to respond to the event.
+	           HitResult = vbHitResultHit
+	        End Sub
+	
+	9. Replace the UserControl_Click event created in step 2 with the following:
+	
+	        Private Sub UserControl_Click()
+	           If HitTestFlag = vbHitResultOutside Then
+	              Debug.Print "usercontrol transparent area click"
+	           ElseIf HitTestFlag = vbHitResultHit Then
+	              Debug.Print "usercontrol painted area click"
+	           End If
+	        End Sub
+	
+	10. Run the project. Clicking the Masked area of the control should display the
+	  "painted area click" message. Clicking the transparent area of the control
+	  should display the "transparent area click" message.
+	
+	Using X and Y Coordinates with HitTest
+	--------------------------------------
+	
+	Along with the HitResult argument, the X and Y coordinates of the mouse event are
+	also passed into the HitText Event. The ability to determine whether the event
+	occurred on a transparent area of the control or a masked area of the control
+	can be sufficient in many cases. However, it may be necessary to determine if
+	the event occurred on a specific area on the control. The X and Y coordinates
+	can be used to accomplish this. The following example demonstrates a simple
+	scenario.
+	
+	For the example, we will determine over which quadrant of a UserControl the mouse
+	pointer is currently positioned.
+	
+	1. Start a new Standard EXE project in Visual Basic 6.0.
+	
+	2. Add a Usercontrol to the project.
+	
+	3. Set the Windowless property of the UserControl to True.
+	
+	4. Set the BackStyle property of the UserControl to Transparent.
+	
+	5. Add the following code to the UserControl module:
+	
+	        Private Sub UserControl_HitTest(X As Single, Y As Single, _
+	                                            HitResult As Integer)
+	
+	        Dim txtDisplay As String
+	        With UserControl
+	           If Y < .Height / 2 Then
+	              txtDisplay = "Upper "
+	           Else
+	              txtDisplay = "Lower "
+	           End If
+	           If X < .Width / 2 Then
+	              txtDisplay = txtDisplay & "Left"
+	           Else
+	              txtDisplay = txtDisplay & "Right"
+	           End If
+	        End With
+	
+	        Parent.Label1.Caption = txtDisplay
+	
+	        End Sub
+	
+	6. Add a Label to the Form.
+	
+	7. Add the UserControl to Form1. You may wish to draw a square or rectangle
+	  around the control since it will not be visible. You may also want to display
+	  a picture on the form using the form's Picture property.
+	
+	8. Set the BackStyle of the Label to Transparent.
+	
+	9. Run the Project. As you move the mouse over the UserControl, the text in the
+	  Label control changes as you move from one quadrant to another.
+	
+	The HitBehavior Property
+	------------------------
+	
+	The HitBehavior is settable at design time or run-time, and controls how HitTest
+	works. There are three options, which are explained in Online Help. Since
+	HitBehavior has the potential to effect logical evaluations in your code, it is
+	important to understand the differences and determine which HitBehavior is
+	desirable before you write the code.
+	
+	Summary
+	-------
+	
+	HitTest and HitBehavior are new features in Visual Basic 6.0. These features
+	allow event handling on transparent UserControls that was not possible in
+	previous versions. There are many possible combinations when using HitTest,
+	HitBehavior, and XY coordinates. They could be used to create any number of
+	behaviors, ToolTips or HotSpots for example. Keep in mind that these properties
+	and events are available for Windowless, Transparent UserControls only.
+	
+	REFERENCES
+	==========
+	
+	For additional information on using the MaskPicture and MaskColor properties,
+	please see the following article(s) in the Microsoft Knowledge Base:
+	
+	  Q174216 : TransparentPaint Backstyle Option Unavailable
+	
+	Additional query words: kbDSupport kbDSD kbCtrlCreate kbVBp600 kbVBp
+	
+	======================================================================
+	Keywords          : kbGrpDSVB 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

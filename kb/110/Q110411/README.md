@@ -1,0 +1,97 @@
+---
+layout: page
+title: "Q110411: BUG: &quot;Invalid Excel File Format&quot; with IMPORT Command"
+permalink: kb/110/Q110411/
+---
+
+## Q110411: BUG: &quot;Invalid Excel File Format&quot; with IMPORT Command
+
+	Article: Q110411
+	Product(s): Microsoft FoxPro
+	Version(s): MACINTOSH:2.5b; MS-DOS:2.0,2.5,2.5a,2.5b; WINDOWS:2.5,2.5a,2.5b
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 05-FEB-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft FoxPro for MS-DOS, versions 2.0, 2.5, 2.5a, 2.5b 
+	- Microsoft FoxPro for Windows, versions 2.5, 2.5a, 2.5b 
+	- Microsoft FoxPro for Macintosh, version 2.5b 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	You receive the "Invalid Excel File Format" error message when you are importing
+	a Microsoft Excel version 5.0 file into FoxPro.
+	
+	NOTE: In FoxPro 2.0 for MS-DOS, you will get the error message "Invalid Excel
+	version 2.0 file" when you are importing worksheets in Microsoft Excel 3.0, 4.0,
+	or 5.0 file format.
+	
+	CAUSE
+	=====
+	
+	With each release of Microsoft Excel, the file format that Microsoft Excel uses
+	has changed. FoxPro 2.0 can import only Microsoft Excel 2.0 files. FoxPro 2.5
+	for MS-DOS, Windows, and the Macintosh can import files in the Microsoft Excel
+	2.0, 3.0, and 4.0 formats.
+	
+	Microsoft Excel 5.0 was not released until after FoxPro 2.5 for MS-DOS and
+	Windows were developed. FoxPro for Macintosh was developed at approximately the
+	same time as Microsoft Excel 5.0 for Windows. Therefore, support for importing
+	Microsoft Excel 5.0 format files was not built into FoxPro 2.5 for any platform.
+	
+	RESOLUTION
+	==========
+	
+	There are some workarounds to directly importing a Microsoft Excel 5.0
+	worksheet, all of which must be performed in Microsoft Excel. Two of these
+	workarounds are:
+	
+	- Save the Microsoft Excel 5.0 file as a Microsoft Excel 4.0, 3.0, or 2.0
+	  format file. (IMPORTANT: Make sure you give the file a new name before you
+	  save it.) Then import this file with the IMPORT FROM <file> TYPE XLS
+	  command.
+	
+	-or-
+	
+	- Save the Microsoft Excel 5.0 file as a DBF format file. (IMPORTANT: Make sure
+	  you give the file a new name before you save it.) All versions of Microsoft
+	  Excel can save files in the DBF3 file format; in addition, Microsoft Excel
+	  3.0, 4.0, and 5.0 can save files in the DBF4 file format. FoxPro can open
+	  either of these two file formats.
+	
+	  IMPORTANT: In versions of Microsoft Excel prior to 5.0, the database range
+	  must be defined in Microsoft Excel before the file is saved in one of the DBF
+	  formats. Data outside the database range will NOT be saved to the DBF format
+	  file.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products listed at
+	the beginning of this article. We are researching this problem and will post new
+	information here in the Microsoft Knowledge Base as it becomes available.
+	
+	REFERENCES
+	==========
+	
+	FoxPro for MS-DOS and Windows "Language Reference," version 2.5, pages L3-569
+	and L3-570
+	
+	FoxPro for Macintosh "Language Reference," version 2.5, pages 468-469
+	
+	Microsoft Excel "User's Guide 1," version 4.0, pages 60, 306, and 307
+	
+	Additional query words: FoxMac FoxDos FoxWin buglist2.00 buglist2.50 buglist2.50a buglist2.50b append errmsg err msg
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbHWMAC kbOSMAC kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro250bMac kbFoxPro200DOS kbFoxPro250DOS kbFoxPro250aDOS kbFoxPro250bDOS kbFoxPro250 kbFoxPro250a kbFoxPro250b
+	Version           : MACINTOSH:2.5b; MS-DOS:2.0,2.5,2.5a,2.5b; WINDOWS:2.5,2.5a,2.5b
+	
+	=============================================================================
+	

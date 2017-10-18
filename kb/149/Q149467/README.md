@@ -1,0 +1,61 @@
+---
+layout: page
+title: "Q149467: Unable to Install New Software in Windows 95"
+permalink: kb/149/Q149467/
+---
+
+## Q149467: Unable to Install New Software in Windows 95
+
+	Article: Q149467
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): 95
+	Operating System(s): 
+	Keyword(s): win95
+	Last Modified: 17-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 95 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you are installing new software in Windows 95, if you use the Close Program
+	dialog box to end the Copying Files or Inserting Disk task, you may not be able
+	to install any new software. If you try to install new software, you may receive
+	the following error message:
+	
+	  Rundll32: An error has occurred in your program. To keep working anyway click
+	  Ignore and save your work in a new file. To quit this program click Close.
+	  You will lose information you entered since your last Save.
+	
+	In some cases, the Install Program Wizard may seem to work, but the software is
+	not actually installed. You do not receive any error message when this occurs.
+	
+	CAUSE
+	=====
+	
+	When you end the Copying Files or Inserting Disk task, Windows 95 unloads
+	Rundll32.exe from memory, leaving Setupx.dll in memory. Setupx.dll cannot be
+	unloaded properly by Rundll32.exe because Rundll32.exe has already been
+	unloaded.
+	
+	Note that similar situations can occur adding new hardware with the Add New
+	Hardware Wizard.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, restart Windows 95 and then install the new software.
+	
+	Additional query words: gpf
+	
+	======================================================================
+	Keywords          : win95 
+	Technology        : kbWin95search kbZNotKeyword3
+	Version           : 95
+	
+	=============================================================================
+	

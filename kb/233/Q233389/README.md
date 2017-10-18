@@ -1,0 +1,79 @@
+---
+layout: page
+title: "Q233389: SMS: Cannot Communicate with NetWare 5 Servers"
+permalink: kb/233/Q233389/
+---
+
+## Q233389: SMS: Cannot Communicate with NetWare 5 Servers
+
+	Article: Q233389
+	Product(s): Microsoft Systems Management Server
+	Version(s): 2.0
+	Operating System(s): 
+	Keyword(s): kbinterop kbnetwork kbsetup kbConfig kbServer kbsms200 kbCAP kbMaintMan kbNDS kbOSNovel
+	Last Modified: 11-FEB-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server version 2.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Systems Management Server version 2.0 does not communicate with Novell NetWare
+	version 5.
+	
+	MORE INFORMATION
+	================
+	
+	Systems Management Server version 2.0 supports interaction with servers running
+	Novell NetWare versions 3.x and 4.x in bindery and NDS mode. Systems Management
+	Server version 2.0 and 2.0 Service Pack 1 (SP1) do not successfully communicate
+	with servers running Novell NetWare version 5.
+	
+	Also, you cannot communicate with servers running NetWare versions 3.x or 4.x
+	that are part of the NetWare 5 tree. This occurs because when you install
+	NetWare 5 into an existing NetWare 4.x NDS tree, the NetWare 5 server takes
+	ownership of the master copy of the NDS database. When NetWare 5 converts the
+	NDS database, it adds extensions to the NDS tree to which Systems Management
+	Server 2.0 cannot connect.
+	
+	When Systems Management Server version 2.0 attempts to create a client access
+	point (CAP) or distribution point on a NetWare 5 server it cannot authenticate
+	the tree. This occurs even if your credentials are valid.
+	
+	For more information about integration with NetWare and supported redirectors,
+	please review the Microsoft Systems Management Server Version 1.2 and 2.0
+	Interoperability white paper at the following Microsoft Web site:
+	
+	  http://www.microsoft.com/smsmgmt/deployment/
+	
+	Please review the release notes from later service packs for any additional
+	supported redirectors.
+	
+	New Support for NetWare 5 Integration with Systems Management Server 2.0 SP2:
+	
+	Refer to the Readme_operations.htm file that comes on the Systems Management
+	Server 2.0 SP2 image. Later service packs may change the requirement for the
+	supported redirector. Refer to the Readme_operations.htm or Readme.htm file that
+	is supplied with each service pack for changes to supportability.
+	
+	Systems Management Server 2.0 SP2 adds the following NetWare support:
+	
+	Systems Management Server 2.0 SP2 site servers can use the Novell intraNetWare
+	Client for NT 4.7 to communicate with site systems running NetWare 4.x or 5.x.
+	See Known Issues Regarding Novell NetWare Client v4.7 for Windows NT/2000 for
+	issues with using the Novell 4.7 redirector.
+	
+	Additional query words: prodsms
+	
+	======================================================================
+	Keywords          : kbinterop kbnetwork kbsetup kbConfig kbServer kbsms200 kbCAP kbMaintMan kbNDS kbOSNovell 
+	Technology        : kbSMSSearch kbSMS200
+	Version           : :2.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

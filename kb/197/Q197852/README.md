@@ -1,0 +1,132 @@
+---
+layout: page
+title: "Q197852: Troubleshooting Directory Service Manager for NetWare"
+permalink: kb/197/Q197852/
+---
+
+## Q197852: Troubleshooting Directory Service Manager for NetWare
+
+	Article: Q197852
+	Product(s): Microsoft Windows NT
+	Version(s): 4.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 07-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Directory Service Manager for NetWare (DSMN) comes with three utilities that are
+	useful for troubleshooting: DSMPACK, DSMCHK and DSMDUMP.
+	
+	MORE INFORMATION
+	================
+	
+	NOTE: DSMPACK is installed by default; DSMCHK and DSMDUMP must be manually
+	EXPANDed from the installation medium.
+	
+	DSMPACK is a utility similar to Jetpack (for WINS) and is used to repair and
+	compress the DSMN database. This utility can be used if a system crashes or
+	power outage causes unexpected errors, or the DSMN Service fails to start. To
+	use DSMPACK, following these steps:
+	
+	1. Open a command prompt.
+	
+	2. Change to the DSMN database path (%SystemRoot%\System32\Syncagnt).
+	
+	3. Stop the DMSN service (for example, by typing "net stop mssync").
+	
+	4. Type "dsmpack /r" to defragment and repair the database.
+	
+	5. Restart the DSMN service.
+	
+	Sample output:
+	
+	  Microsoft (R) DSMN Database Compaction Utility
+	  Version 4.0
+	  Copyright (C) Microsoft Corporation 1996.  All Rights Reserved.
+	
+	  Initiating DEFRAGMENTATION mode (with REPAIR option)...
+	          Database: C:\WINNT40\System32\SyncAgnt\mssync.mdb
+	         Log files: C:\WINNT40\System32\SyncAgnt
+	      System files: C:\WINNT40\System32\SyncAgnt
+	    Temp. Database: C:\WINNT40\System32\SyncAgnt\mssync.tmp
+	   Backup Database: C:\WINNT40\System32\SyncAgnt\mssync.bkp
+	
+	                       Repair Status  ( % complete )
+	
+	            0    10   20   30   40   50   60   70   80   90  100
+	            |----|----|----|----|----|----|----|----|----|----|
+	            ...................................................
+	
+	  Operation completed successfully in 6.28 seconds.
+	
+	DSMCHK can be used to check the synchronization state of a user (for example, in
+	the logon script). The syntax for DSMCHK is:
+	
+	  Usage: dsmchk -d DomainName -u UserName
+	
+	               [-n NetWareServerName] [-r Number1:Number2]
+	         where Number1 : The number of retries
+	               Number2 : The interval in seconds between the retries
+	
+	NOTE: Use %USERDOMAIN% and %USERNAME% in a logon script.
+	
+	For additional information on DSMCHK, please see the following article in the
+	Microsoft Knowledge Base:
+	
+	  Q154760 How to Use the DSMN Utility to Verify Synchronized Passwords
+	
+	DSMDUMP dumps the database used by DSMN to the screen. This is useful in
+	verifying that all your accounts and groups are replicated correctly. To use
+	DSMDUMP, follow these steps:
+	
+	1. Open a command prompt.
+	
+	2. Change to the DSMN database path (%SystemRoot%\System32\Syncagnt).
+	
+	3. Stop the DMSN service (for example, type "net stop mssync").
+	
+	4. Type "dsmdump" (without the quotation marks).
+	
+	5. Restart the DSMN service.
+	
+	If might be useful to redirect DSMDUMP'S output to a file, for example, type
+	"dsmdump >db.txt".
+	
+	Sample output:
+	
+	  ---------------------   SERVER TABLE   ---------------------
+	
+	  ------------------------------------------------------------
+	
+	  --------------------   ACCOUNT TABLE   ---------------------
+	
+	  1) DOMAIN ADMINS
+	     Rid = 512   Type = Global Group  State = Normal
+	     Local groups containing this global group = 544
+	     Propagated to servers = NULL
+	     LOCAL:      Version = 1
+	
+	  2) DOMAIN USERS
+	     Rid = 513   Type = Global Group  State = Normal
+	     Local groups containing this global group = NULL
+	     Propagated to servers = NULL
+	     LOCAL:      Version = 1
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNT400xsearch kbWinNTSsearch kbWinNTS400xsearch kbWinNTS400
+	Version           : :4.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

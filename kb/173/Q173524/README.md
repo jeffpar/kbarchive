@@ -1,0 +1,73 @@
+---
+layout: page
+title: "Q173524: WINS Pull Partner Start Time Cannot Be Cleared"
+permalink: kb/173/Q173524/
+---
+
+## Q173524: WINS Pull Partner Start Time Cannot Be Cleared
+
+	Article: Q173524
+	Product(s): Microsoft Windows NT
+	Version(s): WinNT:4.0
+	Operating System(s): 
+	Keyword(s): kbnetwork
+	Last Modified: 09-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	After you clear the Start Time value for one or more WINS pull partners, the
+	Start Time will still appear the next time you go into the Pull Partner
+	Properties dialog box.
+	
+	RESOLUTION
+	==========
+	
+	WARNING: Using Registry Editor incorrectly can cause serious problems that may
+	require you to reinstall Windows 95. Microsoft cannot guarantee that problems
+	resulting from the incorrect use of Registry Editor can be solved. Use Registry
+	Editor at your own risk.
+	
+	For information about how to edit the registry, view the Changing Keys And Values
+	online Help topic in Registry Editor (Regedit.exe). Note that you should make a
+	backup copy of the registry files (System.dat and User.dat) before you edit the
+	registry.
+	
+	To clear the Start Time from your pull partner parameters, edit the registry
+	using the following steps:
+	
+	1. Run Registry Editor (Regedt32.exe).
+	
+	2. Go to the following subkey, where <IP address> is the IP address of
+	  your pull partner:
+	
+	  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services
+	  \Wins\Partners\Pull\<IP address>
+	
+	  NOTE: The above registry key is one path; it has been wrapped for readability.
+	
+	3. Double-click SpTime, then delete the value from the String Editor dialog box.
+	
+	4. Click OK, then exit Registry Editor.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Windows NT version 4.0. We are
+	researching this problem and will post new information here in the Microsoft
+	Knowledge Base as it becomes available.
+	======================================================================
+	Keywords          : kbnetwork 
+	Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+	Version           : WinNT:4.0
+	Issue type        : kbbug
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

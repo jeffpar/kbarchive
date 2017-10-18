@@ -1,0 +1,136 @@
+---
+layout: page
+title: "Q179305: Troubleshooting Async Mail Flow Connection Problems"
+permalink: kb/179/Q179305/
+---
+
+## Q179305: Troubleshooting Async Mail Flow Connection Problems
+
+	Article: Q179305
+	Product(s): Microsoft Mail For PC Networks
+	Version(s): WINDOWS:3.0,3.2,3.2a,3.5
+	Operating System(s): 
+	Keyword(s): kbtshoot
+	Last Modified: 29-OCT-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Mail for PC Networks, versions 3.0, 3.2, 3.2a, 3.5 
+	- Microsoft Mail Remote for Windows, version 3.2 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Periodically, asynchronous mail flow problems can arise during connection. The
+	procedures in this article can be helpful in troubleshooting the problem.
+	
+	MORE INFORMATION
+	================
+	
+	To troubleshoot asynchronous mail flow problems:
+	
+	1. Ensure Mail Agents on both sides of the connection can access the modem. At
+	  an MS-DOS prompt, type
+	
+	  " ECHO ATDT > COM# " (without the quotation marks)
+	
+	  where # is the com port that the mail agent is configured to use.
+	
+	  If another MS-DOS prompt is returned, the modem is accessible to the Mail
+	  Agent. If the error message, "Write fault error writing device COM#," is
+	  returned, the modem is not accessible to any Mail Agent. This must be
+	  resolved before the Mail Agents can use the modem. Often another application
+	  will be using the modem. Look for RAS, Fax applications, or any application
+	  that uses a modem.
+	
+	2. Enable logging on both sides of the connection.
+	
+	  a. For Microsoft Mail Remote for Windows, ensure that the System Selector is
+	     set to Mail Remote for Windows.
+	
+	  b. Edit Msmail.ini in the Windows directory. Under the [SFS Remote] section,
+	     add the following entries and save the file.
+	
+	           DebugLog=1
+	           VerboseLog=1
+	
+	  c. Restart the client. This detailed logging information can be viewed after
+	     the connection attempt by choosing <VIEW><SESSION LOG> in the
+	     client. Information in this log is replaced by information from subsequent
+	     connection attempts. To save the information, it must be copied and pasted
+	     to another file to be saved.
+	
+	  d. For External.exe, add the following options to the command line:
+	
+	        -Q123Z -V -Lc:\logfile.txt
+	
+	  e. Restart External. This detailed logging information can be viewed after
+	     the connection attempt by opening Logfile.txt. Information in this log is
+	     appended, so all subsequent connection attempts are written to this file.
+	     If you are using the Windows NT message transfer agent (MTA), you can add
+	     these options to the Command-Line Options box in the Edit Service dialog.
+	     The MTA service must be restarted for the change to take effect.
+	
+	Additional information concerning the INI equivalents for the -Qx options can be
+	found in Q116434 (see below).
+	
+	1. Determine whether there are any errors. Some typical errors are:
+	
+	- Time out occurred while reading data at the serial layer.
+	
+	- Time out occurred while writing data at the serial layer.
+	
+	  These errors typically point to a problem with the modem script. Verify with
+	  the modem manufacturer that the appropriate script is being used for the
+	  modem.
+	
+	- Sign-on ID or password incorrect.
+	
+	- Postoffice has not accepted mail item.
+	
+	  These errors can indicate a postoffice serial number problem. Ensure that the
+	  <EXTERNAL ADMIN><SETUP> information in Admin.exe is correct for
+	  the postoffice being called. Also, create a new data disk for remote users
+	  having these problems.
+	
+	1. Determine line diagnostics. These appear in the log after each connection
+	  attempt when -Q2Z is enabled. A sample listing:
+	
+	     TEST      1-1-98 12:00 Diagnostics for connection:
+	     TEST      1-1-98 12:00 Bad STX     0
+	     TEST      1-1-98 12:00 Bad TYPE    0
+	     TEST      1-1-98 12:00 Bad SEQ     0
+	     TEST      1-1-98 12:00 Bad CRC1    0
+	     TEST      1-1-98 12:00 Bad CRC2    0
+	     TEST      1-1-98 12:00 Time-outs   0
+	     TEST      1-1-98 12:00 Rejects     0
+	
+	If any of the above diagnostic results are other than zero, this may indicate
+	"dirty" phone lines. Microsoft cannot guarantee asynchronous mail flow over a
+	connection indicating anything greater than 0 for these diagnostics. This can
+	also be an indication of incompatible modem and script combination. More
+	detailed information regarding these measurements can be found in Microsoft
+	Knowledge Base article Q80272 (see below).
+	
+	For additional information concerning the INI equivalents for the -Qx options,
+	please see the following article in the Microsoft Knowledge Base:
+	
+	  Q116434 PC Ext: External.ini Equivalents to -Qx Command-Line Options
+	
+	For additional information concerning diagnostic results other than zero, please
+	see the following article in the Microsoft Knowledge Base:
+	
+	  Q80272 PC Ext: Diagnostics Produced by the -Qz Parameter on External
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbtshoot 
+	Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN320a kbMailPCN300 kbMailPCN350 kbMailRemote320
+	Version           : WINDOWS:3.0,3.2,3.2a,3.5
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

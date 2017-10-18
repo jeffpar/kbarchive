@@ -1,0 +1,215 @@
+---
+layout: page
+title: "Q139361: INFO: Readme.wri: Section 3, Issues and Considerations"
+permalink: kb/139/Q139361/
+---
+
+## Q139361: INFO: Readme.wri: Section 3, Issues and Considerations
+
+	Article: Q139361
+	Product(s): Microsoft SourceSafe
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbSSafe400 kbVBp400
+	Last Modified: 07-DEC-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article holds Section 3, Issues and Considerations, of the Readme.wri file
+	found in the main Visual SourcesSafe directory (Vssafe by default). For more
+	information about other sections of the Readme.wri file, please see the
+	following articles in the Microsoft Knowledge Base:
+	
+	  Q139358 Readme.wri: Section 1, Software Installation Information
+	
+	  Q139359 Readme.wri: Section 2, General Notes and Tips
+	
+	  Q139360 Readme.wri: Section 4, Documentation Notes
+	
+	  Q139362 Readme.wri: Section 5, New Features of Visual SourceSafe
+	
+	
+	MORE INFORMATION
+	================
+	
+	Loss of Network Connection Produces Numerical Error Message
+	-----------------------------------------------------------
+	
+	If you are in the middle of a Visual SourceSafe session and lose your connection
+	to a server over the network, the only message you see is a numerical message
+	informing you of an unknown error. When you see, "unknown error - 20038," or
+	something similar, you have lost your network connection. Restart Visual
+	SourceSafe and continue your work.
+	
+	File List Not Always Automatically Updated for Certain Actions After Search
+	---------------------------------------------------------------------------
+	
+	The file list displayed in the Visual SourceSafe Explorer is not always updated
+	for certain actions after completion of a global or recursive wildcard or status
+	search. In these cases, use the Refresh File List command on the View menu to
+	update the display.
+	
+	Example 1: A global or recursive search has completed and the results view
+	displays the results of that search. You share a file from the results view with
+	Project1. Project1 contained no files meeting the search criteria before the
+	share action. After the share action, Project1 has a child, Project2, that now
+	meets the search criteria. The file list display does not show the contents of
+	Project2 until you use the Refresh File List command. If Project1 is already in
+	the results view, the shared file shows up in the display.
+	
+	Adding a file or a project after a search produces a similar situation. If a
+	parent did not appear in the results view before the share or the add, the
+	shared or added file does not appear in the results view. If the parent was
+	there, the new added or shared file does appear in the display.
+	
+	Example 2: Three projects are displayed in the results view after a search. Two
+	projects share a file. If you check out the file from one of the projects, you
+	need to use the Refresh File List command to see the "checked out" icon on all
+	instances of the shared file in the file list.
+	
+	Considerations for 16-Bit Systems
+	---------------------------------
+	
+	When you run Visual SourceSafe in Windows 3.1 16-bit systems, you are limited to
+	one instance of Visual SourceSafe Explorer or Visual SourceSafe Administrator at
+	a time.
+	
+	In addition, you can run only one instance of Visual SourceSafe-Visual Basic
+	integration at a time. If you need to run more than one instance of Visual
+	SourceSafe-Visual Basic integration to debug a program for example, you can use
+	the following procedure:
+	
+	1. From the Visual Basic Tools menu, check out the files you want to change.
+	
+	2. On the Add-Ins menu, click Add-In Manager to display the Add-In Manager
+	  dialog box.
+	
+	3. Clear the Source Code Control Add-In check box.
+	
+	4. Debug your program.
+	
+	5. On the Add-Ins menu, click Add-In Manager to display the Add-In Manager
+	  dialog box.
+	
+	6. Click the Source Code Control Add-In check box.
+	
+	7. Check in your changed files.
+	
+	Considerations for NEC PC 9801 Systems
+	--------------------------------------
+	
+	The memory manager used by Visual SourceSafe MS-DOS programs is not compatible
+	with the NEC PC 9801 computer. Visual SourceSafe programs for Windows 3.1,
+	Windows NT, and Windows 95 are fully compatible with the NEC PC 9801 computer.
+	
+	If you use an NEC PC 9801 computer, do not run any programs from the command line
+	in the Visual SourceSafe \Dos directory, which is under the directory in which
+	you installed Visual SourceSafe. These programs include the following programs
+	and utilities: Analyze.exe, Ddconv.exe, Delta_Ss.exe, Mkss.exe, Pvcs_Ss.exe,
+	Ssint.exe, Sslogin.exe, Testlock.exe, and Unlock.exe. If you run these programs
+	from the \Dos directory, you might have to reboot your computer.
+	
+	To use these programs, run them from the \Win or \Win32 directories under the
+	directory in which you installed Visual SourceSafe. This restriction applies
+	only to the NEC PC 9801 computer.
+	
+	Considerations when Cancelling a Client Setup
+	---------------------------------------------
+	
+	When you choose the Client Setup option to install Visual SourceSafe, you must
+	type a path for the Visual SourceSafe server directory. If you click Cancel in
+	the Database Location dialog box, Setup displays the following message in error,
+	"Microsoft Visual SourceSafe 4.0 Setup was completed successfully." Disregard
+	this message. The setup was not completed. Although a directory tree was created
+	on your hard disk for the client, you cannot connect with the database on the
+	server.
+	
+	To correct this situation, edit the Srcsafe.ini file created by the cancelled
+	Client setup. Add a line including the path to the Srcsafe.ini file for the
+	Visual SourceSafe database server in a #include statement. You can include a UNC
+	path, for example:
+	
+	  #include \\SRCSERVR\SRCSHARE\VSS4\SRCSAFE.INI
+	
+	Alternatively, you can include the path to a mapped drive, for example:
+	
+	  #include R:\VSS\SRCSAFE.INI
+	
+	Considerations when Installing on Alpha and Mips Systems
+	--------------------------------------------------------
+	
+	When you install Visual SourceSafe 4.0 on an Alpha or Mips system, you might see
+	two messages informing you that certain files can't be opened. These files are
+	Mfc30.dll and Msvcrt20.dll, which are installed in the \Windows\System
+	directory. If you have already installed these files during another the
+	installation of another product and the files are already open, click Ignore in
+	the message boxes and continue with your installation of Visual SourceSafe 4.0.
+	
+	Considerations When Choosing SourceSafe Database from IDEs
+	----------------------------------------------------------
+	
+	When you have multiple SourceSafe databases, the Advanced options for Source
+	Control from within an IDE allows you to choose to be prompted for a database
+	name to connect to. In your Srcsafe.ini file, you must explicitly name a data
+	path, by using the Data_Path initialization variable, for each of the multiple
+	databases. The Choose SourceSafe Database dialog box prompts you for a name, and
+	uses that name to connect to the database you want.
+	
+	If you have not explicitly supplied a data path in your Srcsafe.ini file for each
+	database, the IDE might not find the database you want and you will be connected
+	to the default database. To connect to one of multiple databases, you must
+	provide a separate Data_Path value with an explicit path and a named value for
+	each database you want to connect to. By including a named value within
+	parentheses, such as Data_Path(scc), you can then use the value in parentheses
+	when prompted for a data path.
+	
+	Considerations When Acting on .Frm Files from Within Visual SourceSafe
+	----------------------------------------------------------------------
+	
+	When you perform an action on a Visual Basic .frm file from within Visual
+	SourceSafe, the .frx file associated with the .frm file is not affected by the
+	action you perform. For example, if you check out an .frm form, the associated
+	.frx file is not checked out. To keep the associated files synchronized, perform
+	all actions from within the Visual Basic environment, not from standalone Visual
+	SourceSafe. Alternatively, you can perform the actions from within standalone
+	Visual SourceSafe, but you must perform the same action on the.frx file that you
+	perform on the .frm file.
+	
+	Considerations When Installing on Netware 4.02 and Banyan 5.52 Systems
+	----------------------------------------------------------------------
+	
+	When you install Visual SourceSafe on Netware 4.02 and Banyan 5.52 systems, the
+	Setup program generates a message telling you to use the following command:
+	SETUP /F. When you use that command, Setup generates error code 997, indicating
+	that your setup files may have been damaged. Disregard that message. The setup
+	files have not been damaged.
+	
+	To install Visual SourceSafe on these systems, follow these steps:
+	
+	1. Use Setup to install the Visual SourceSafe server option on the hard disk of
+	  your local computer in a directory such as C:\Vss.
+	
+	2. Use XCOPY to copy the directory in which you installed Visual SourceSafe and
+	  all of its subdirectories to your server.
+	
+	After copying all Visual SourceSafe directories and files to a Netware 4.02 or
+	Banyan 5.52 system, you can perform all Visual SourceSafe actions, including
+	Netsetup for client installations. However, removing Visual SourceSafe by using
+	the Setup program might not work. To remove all Visual Source files and
+	directories, use the MS-DOS command DELTREE to delete the directory in which you
+	installed Visual SourceSafe and all its subdirectories and files.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbSSafe400 kbVBp400 
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

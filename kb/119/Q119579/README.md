@@ -1,0 +1,193 @@
+---
+layout: page
+title: "Q119579: Windows Support of the 16550 UART"
+permalink: kb/119/Q119579/
+---
+
+## Q119579: Windows Support of the 16550 UART
+
+	Article: Q119579
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 21-SEP-1999
+	
+	3.00 3.00a 3.10 3.11
+	
+	WINDOWS
+	
+	kbref kbhw kbdocerr
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+	- Microsoft Windows for Workgroups versions 3.1, 3.11 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The universal asynchronous receiver-transmitter (UART) is an integrated circuit
+	that contains the software programming control of the PC serial port. The 8250
+	was the original UART to ship with the IBM personal computer. This UART and the
+	improved 16450 version are limited to one input register that holds only one
+	byte at a time. These UARTs are not usually suitable for modem speeds greater
+	than 9600 bits per second (BPS) because of possible input data overruns that can
+	occur if a character is left in the input register when the next byte is
+	received.
+	
+	The newer 16550 UART allows reliable data transfer at high speeds with its
+	16-byte first in, first out (FIFO) input register. The FIFO feature can buffer
+	up to 16 bytes at a time, which improves serial communications by preventing
+	data overruns in applications that are 16550 aware.
+	
+	This article outlines the use and history of support for the 16550 in Microsoft
+	Windows.
+	
+	MORE INFORMATION
+	================
+	
+	Windows 3.0 and Earlier Versions
+	--------------------------------
+	
+	Windows 3.0 and earlier versions do not support the FIFO feature of the 16550
+	UART. Instead, the UART remains in the 8250 UART compatibility mode, allowing
+	one byte to be received at a time. If the incoming character isn't read fast
+	enough by the computer, the byte is lost. Lost or "dropped" characters are
+	likely to occur at speeds faster than 9600 bits per second (BPS).
+	
+	There are no UART-specific switches in the SYSTEM.INI file with Windows 3.0.
+	
+	NOTE: Third-party communications drivers (such as Turbocom by Pacific Commware)
+	are available to add support for the 16550 FIFO feature in Windows 3.0.
+	
+	Windows 3.1, 3.11, and Windows for Workgroups 3.1
+	-------------------------------------------------
+	
+	Windows 3.1 was the first version of Windows to support the FIFO feature of the
+	16550 UART for Windows-based applications. (MS-DOS-based applications run under
+	Windows 3.1, 3.11, or Windows for Workgroups 3.1 do not support the FIFO
+	feature.) The receive buffer (RX) is set by the serial communications driver
+	(COMM.DRV) to 14 bytes. The transmit buffer (TX) is not enabled.
+	
+	[386Enh] Section SYSTEM.INI Setting:
+	
+	     COM1FIFO=0 | 1
+	     COM2FIFO=0 | 1
+	     COM3FIFO=0 | 1
+	     COM4FIFO=0 | 1
+	
+	Default: Enable the FIFO if detected and the setting is not in the SYSTEM.INI
+	file.
+	
+	Purpose: Specifies whether the FIFO buffer of a communication (COM) port 16550
+	UART should be enabled (1) or disabled (0). If a serial port does not have a
+	16550 UART, this setting is ignored. If you place a numerical value other than
+	"1" or "0" (for example, COMxFIFO=2 ), the setting is ignored, and the FIFO is
+	enabled if detected. Using TRUE, FALSE, or any other non- numerical value sets
+	the switch to "0" and therefore disables the FIFO.
+	
+	
+	Example:
+	
+	The COMxFIFO= setting is not fully Boolean aware. To properly use these switches,
+	use the following syntax
+	
+	     COM<x>FIFO=1
+	
+	-or-
+	
+	      COM<x>FIFO=0
+	
+	where <x> is the number of the COM port you want to set.
+	
+	The SYSINI.WRI file from the Microsoft Windows Resource Kit for version 3.1
+	incorrectly identifies TRUE and FALSE as functioning with this switch. Page 196
+	of the Windows Resource Kit manual incorrectly identifies "On" and "Off" as
+	functioning with this switch. Again, using any non-numerical value sets the
+	switch to "0" and therefore disables the FIFO.
+	
+	These values are used by Windows for both standard and 386 enhanced modes.
+	
+	NOTE: Third-party communications drivers (such as Turbocom by Pacific Commware
+	and KingComm by OTC Corporation) enable FIFO support for MS-DOS- based
+	applications running under Windows.
+	
+	Windows for Workgroups 3.11
+	---------------------------
+	
+	Windows for Workgroups 3.11 is the first version of Windows to enable 16550 FIFO
+	support for MS-DOS-based applications running under Windows. In addition to
+	Windows-based applications, your MS-DOS-based applications can now use FIFO to
+	prevent data overruns without using a third-party communications driver. The
+	Windows for Workgroups communications driver (SERIAL.386) can also use the
+	transmit buffer (TX) of the 16550 UART. Previous versions of the communications
+	driver use the receive buffer (RX) only.
+	
+	[386Enh] section SYSTEM.INI settings:
+	
+	
+	In addition to the COMxFIFO setting outlined above, Windows for Workgroups 3.11
+	introduces two new settings, RXTRIGGER and TXFIFO.
+	
+	RXFIFO Setting:
+	
+	     COM1RxTRIGGER=1 | 4 | 8 | 14
+	     COM2RxTRIGGER=1 | 4 | 8 | 14
+	     COM3RxTRIGGER=1 | 4 | 8 | 14
+	     COM4RxTRIGGER=1 | 4 | 8 | 14
+	
+	Default: 8
+	
+	Purpose: Sets the number of bytes to enable for the receive FIFO buffer (RX) on
+	the 16550 UART.
+	
+	Example:
+	
+	      COM<x>RXTRIGGER=8
+	
+	where <x> is the number of the COM port you want to set.
+	
+	NOTE: In general, you should not change the RXFIFO value. Increasing the value of
+	RXFIFO to 14 causes fewer interrupts to be generated, but it also decreases the
+	space in the remainder of the buffer to 2 characters. On a busy system, which
+	may have an increase in interrupt latency (the time that it takes for an
+	interrupt to be serviced by the CPU), this may cause characters to overrun the
+	buffer. Likewise, decreasing the value for RXFIFO increases the number of
+	interrupts generated, which could lead to interrupt saturation, negating the
+	usefulness of the FIFO on a multitasking system.
+	
+	
+	TXFIFO Setting:
+	
+	     COM1TXFIFO=0 | 1
+	     COM2TXFIFO=0 | 1
+	     COM3TXFIFO=0 | 1
+	     COM4TXFIFO=0 | 1
+	
+	Default: 0
+	
+	Purpose: Enables the transmit buffer (TX) on the 16550 UART. If enabled, 16 bytes
+	are sent to the UART with each empty transmit interrupt generated.
+	
+	Example:
+	
+	       COM<x>TXFIFO=0
+	
+	where <x> equals the number of the COM port you want to set.
+	
+	NOTE: Enabling the transmit buffer (TX) may result in better system performance
+	during a high-speed file upload. It does not affect downloads.
+	
+	
+	Additional query words: 3.00 3.0 3.0a 3.1 3.11 3.10 50Z PS/2 modems
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311 kbWFW310 kbWFW311
+	Version           : WINDOWS:3.0,3.0a,3.1,3.11
+	
+	=============================================================================
+	

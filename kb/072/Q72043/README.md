@@ -1,0 +1,98 @@
+---
+layout: page
+title: "Q72043: Byte Total Returned by DIR Less Than Bytes Used"
+permalink: kb/072/Q72043/
+---
+
+## Q72043: Byte Total Returned by DIR Less Than Bytes Used
+
+	Article: Q72043
+	Product(s): Microsoft Disk Operating System
+	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 17-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	A directory listing using the DIR command under Microsoft MS-DOS version 5.0 or
+	later reports the total number of bytes in the files for that specific
+	directory. The disk space occupied by these files can be much greater than the
+	byte total reported by DIR, depending on the disk's allocation unit size. This
+	difference may cause confusion when calculating disk space requirements for
+	copying files.
+	
+	NOTE: File storage is handled the same under all versions of MS-DOS; the 5.0 DIR
+	command is the first MS-DOS command to list the number of bytes stored in a
+	particular directory.
+	
+	MORE INFORMATION
+	================
+	
+	The minimum storage space on an MS-DOS disk is one allocation unit. Each
+	allocation unit contains one or more sectors, depending on the disk size and
+	capacity. Sectors can also vary in size but are usually 512 bytes.
+	
+	Since files seldom fill a single allocation unit entirely, a number of bytes are
+	left unused. These bytes are unavailable to MS-DOS for any other file storage.
+	For example, if the allocation unit size is 1024 bytes, a file of 1000 bytes
+	occupies one allocation unit, leaving 24 bytes unused and unavailable to MS-DOS
+	for storage of other files.
+	
+	Calculating Disk Space Requirements
+	-----------------------------------
+	
+	PC utility programs like Norton Utilities and PCTools determine the number of
+	bytes in a particular directory as well as the number of bytes occupied on the
+	current disk. If you do not have one of these programs, you can estimate disk
+	space requirements.
+	
+	To estimate the number of bytes occupied by the files in a particular directory,
+	you must determine the allocation unit size for the disk. CHKDSK return the
+	allocation units for a MS-DOS disk.
+	
+	The following equation is based on the law of averages that dictates that
+	one-half of an allocation unit will be unused for each file stored on a disk.
+	The more files you have in a particular directory, the closer the estimate will
+	be. If you have just a few small files, this formula is not accurate.
+	
+	     disk space occupied = (number of files in directory *
+	
+	                           allocation unit size in bytes * .5) +
+	                           file size total reported by DIR
+	
+	Use the following method to estimate the disk space required to copy the files in
+	a directory to a disk. Use CHKDSK to determine the allocation unit size of the
+	destination disk. Use the same equation as above, substituting the allocation
+	unit size of the disk for the allocation unit size in bytes.
+	
+	For more information on allocation unit sizes, query on the following words here
+	in the Microsoft Knowledge Base:
+	
+	  "allocation" (without the quotation marks) and "unit" (without the quotation
+	  marks) and "fat" (without the quotation marks) and "disk" (without the
+	  quotation marks)
+	
+	REFERENCES
+	==========
+	
+	More information on this topic can be found in "The MS-DOS Encyclopedia,"
+	"Advanced MS-DOS Programming," or "The NEW Peter Norton Programmer's Guide to
+	the IBM PC & PS/2," which are published by Microsoft Press.
+	
+	Additional query words: 6.22 5.00 5.00a 6.00 6.20 6.21
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+	Version           : MS-DOS:5.x,6.0,6.2,6.21,6.22
+	
+	=============================================================================
+	

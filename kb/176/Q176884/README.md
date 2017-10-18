@@ -1,0 +1,233 @@
+---
+layout: page
+title: "Q176884: BUG: Problems with SET COLLATE and Queries with Integer Fields"
+permalink: kb/176/Q176884/
+---
+
+## Q176884: BUG: Problems with SET COLLATE and Queries with Integer Fields
+
+	Article: Q176884
+	Product(s): Microsoft FoxPro
+	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+	Operating System(s): 
+	Keyword(s): kbHWMAC kbvfp kbvfp300 kbvfp500 kbvfp600 kbGrpDSFox
+	Last Modified: 17-JUL-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+	- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Queries in Visual FoxPro that compare integer fields in the WHERE clause of a
+	SQL Select statement between two or more tables may not return all matching
+	records. This problem occurs when the collation sequence is set to anything but
+	Machine.
+	
+	RESOLUTION
+	==========
+	
+	The workaround to this problem depends on which version of Visual FoxPro is
+	being used. Four workarounds are listed below:
+	
+	- Use the SET COLLATE command prior to running the query to set the collation
+	  sequence to Machine. This works in all versions of Visual FoxPro.
+	
+	- Create an index on the integer fields before running the query. The program
+	  in the Steps to Reproduce Behavior section can be modified to accomplish
+	  this. All records will then be returned.
+	
+	  Follow each of the two CREATE CURSOR commands in the sample program with a
+	  command to create an index on the integer field. A sample follows:
+	
+	  CREATE CURSOR t1 (in1 i)
+	        INDEX ON in1 TAG in1
+	        CREATE CURSOR t2 (in2 i)
+	        INDEX ON in2 TAG in2
+	
+	- Use numeric, float, or double type fields without decimal places instead of
+	  integer fields although this may affect query performance. You will need to
+	  test query speed if query performance is a concern. This workaround works in
+	  all versions of Visual FoxPro.
+	
+	- If you are using Visual FoxPro 5.0 or later, use the LEFT or RIGHT JOIN
+	  syntax to join the tables rather than the WHERE clause.
+	
+	  For example, using the code from the Steps to Reproduce Behavior section
+	  below, you can use the following queries to produce the correct results. Keep
+	  in mind that the cursors created in the program below are stripped down with
+	  only an integer field in each. The SELECT statements below may produce very
+	  different results on real data although they produce identical results on the
+	  test data:
+	
+	  SELECT * FROM t1 LEFT JOIN t2 ON t1.in1=t2.in2 INTO CURSOR t3
+	
+	        SELECT * FROM t1 RIGHT JOIN t2 ON t1.in1=t2.in2 INTO CURSOR t3
+	
+	Either statement above can replace the following line in the sample program
+	below:
+	
+	  SELECT * FROM t1,t2 WHERE in1=in2 INTO CURSOR t3
+	
+	- Unfortunately, the INNER JOIN syntax has the same problem as the SQL Select
+	  statement with the WHERE clause.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article.
+	
+	MORE INFORMATION
+	================
+	
+	The SET COLLATE command, according to the Visual FoxPro Online Help file,
+	"Specifies a collation sequence for character fields in subsequent indexing and
+	sorting operations." The command should not have any affect on numeric or
+	integer type fields or their comparison.
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Run the following code in a program file in Visual FoxPro:
+	
+	  CLEAR ALL
+	        CLEAR
+	
+	        ** Store the current collation sequence to the variable yyy.
+	
+	        yyy=SET("collate")
+	
+	        ** Setting collate to General, a collation sequence that illustrates
+	        ** the problem.
+	
+	        SET COLLATE TO "General"
+	
+	        ** Create two cursors with one integer field in each
+	
+	        CREATE CURSOR t1 (in1 i)
+	        CREATE CURSOR t2 (in2 i)
+	
+	        ** Populate each cursor with 1000 records, inserting the loop counter
+	        ** into the integer field.
+	
+	        FOR x=1 TO 1000
+	        INSERT INTO t1 (in1) VALUES(x)
+	        INSERT INTO t2 (in2) VALUES(x)
+	        ENDFOR
+	
+	        ** The SELECT statement to join the two tables.
+	
+	        SELECT * FROM t1,t2 WHERE in1=in2 INTO CURSOR t3
+	
+	        ** Checking  _Tally to see how many records the query returned.
+	
+	        WAIT WINDOW STR(_Tally)+" records returned by the query"
+	
+	        ** Start of loop to determine what records are missing.
+	
+	        x=0
+	        SCAN
+	        x=x+1
+	        IF NOT in1=x
+	        WAIT WINDOW "Missing integer"+ STR(x)
+	        x=in1
+	        ENDIF
+	        ENDSCAN
+	
+	        ** Set collate back to its original setting
+	
+	        SET COLLATE TO yyy
+	
+	2. The following table shows which records, out of the 1,000 in the test tables
+	  created above, are missing with the different collation settings and the
+	  platform (Windows vs. Macintosh):
+	
+	     Collation Sequence     Platform           Missing Records
+	     ------------------     --------           ---------------
+	     Dutch,  General
+	     German, Iceland
+	     Nordan, Spanish
+	     Swefin                 Windows           17, 273, 529, 785
+	
+	     Uniqwt                 Windows, Mac      46, 302, 558, 814
+	
+	     Dutch,  General
+	     German
+	     Nordan, Spanish
+	     Swefin                 Mac               24, 280, 536, 792
+	
+	     Czech,   General
+	     Hungary, Polish        Eastern European
+	                            Windows, MS-DOS   22, 278, 534, 790, 1046
+	
+	     Slovak                 Eastern European
+	                            MS-DOS            21, 277, 533, 789, 1045
+	
+	     Slovak                 Eastern European
+	                            Windows           23, 279, 535, 791, 1047
+	
+	     Czech,   General
+	     Slovak                 Kamenicky (Czech)
+	                            MS-DOS	       19, 275, 531, 787, 1043
+	
+	     General, Iceland       Icelandic MS-DOS  19, 275, 531, 787, 1043
+	
+	     Greek                  Greek MS-DOS      19, 275, 531, 787, 1043
+	
+	     Greek                  Greek Windows     23, 279, 535, 791, 1047
+	
+	     Russian                Russian MS-DOS    19, 275, 531, 787, 1043
+	
+	     Russian                Russian Windows   22, 278, 534, 787, 1043
+	
+	     Polish                 Mazovia (Polish)
+	                            MS-DOS            17, 273, 529, 785, 1041
+	
+	  NOTE: The Iceland collation sequence is not available in Visual FoxPro for the
+	  Macintosh.
+	
+	3. Change the command SET COLLATE TO "General" to SET COLLATE TO "Machine" in
+	  the program above and note that no records are missing. One thousand records
+	  are returned from the query.
+	
+	There is a pattern to the missing records. For the problematic collation
+	sequences on the Windows platform, if the missing numbers are converted to
+	hexadecimal, they all end in 11. This pattern continues into at least the next
+	1,000 records (2,000 total). On the Macintosh platform, the missing numbers,
+	when converted to hexadecimal all end in 18. However, as an exception to the
+	pattern, hexadecimal 518 or decimal 1304, does not turn up missing when the
+	number of records in the test tables is 2,000.
+	
+	The Unique collation sequence's pattern is also different. Here the missing
+	numbers all end in E when converted to hexadecimal. If the number of records
+	used is increased to 2,000, hexadecimal numbers 42E (decimal 1070) and 52E
+	(decimal 1326) are not missing.
+	
+	The problem described in this article is similar to another problem that was
+	fixed in Visual FoxPro 5.0a that was related to character fields not integer
+	fields.
+	
+	REFERENCES
+	==========
+	
+	For additional information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q164869 SET COLLATE TO "GENERAL" May Affect Search Results
+	
+	Additional query words: SQL select collate
+	
+	======================================================================
+	Keywords          : kbHWMAC kbvfp kbvfp300 kbvfp500 kbvfp600 kbGrpDSFox 
+	Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+	Version           : MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+	Issue type        : kbbug
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

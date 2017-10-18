@@ -1,0 +1,119 @@
+---
+layout: page
+title: "Q142026: Err: &quot;Hidden Console of WOW VDM&quot; Running 16-bit or MS-DOS App"
+permalink: kb/142/Q142026/
+---
+
+## Q142026: Err: &quot;Hidden Console of WOW VDM&quot; Running 16-bit or MS-DOS App
+
+	Article: Q142026
+	Product(s): Microsoft Windows NT
+	Version(s): winnt:3.5,3.51,4.0
+	Operating System(s): 
+	Keyword(s): kbenv kbWinNT400sp4fix
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+	- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+	- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	When running a 16-bit Windows application or an MS-DOS application, you may
+	receive one of the following error messages:
+	
+	  Hidden console of WOWVDM NT VDM has encountered a system error. The handle is
+	  invalid. Choose Close to terminate the application.
+	
+	  Hidden console of WOW VDM c:\<winnt>\System32\Config.nt. The system
+	  file is not suitable for running MS-DOS and Microsoft Windows applications.
+	  Choose 'Close' to terminate the application.
+	
+	  Hidden Console of WOW VDM c:\<winnt>\System32\Autoexec.nt. The system
+	  file is not suitable for running MS-DOS and Microsoft Windows applications.
+	  Choose 'Close' to terminate the application.
+	
+	  Hidden Console of WOW VDM error while setting up environment for the
+	  application. Choose Close to terminate the application.
+	
+	  Config.nt The system file is not suitable for running MS-DOS and Microsoft
+	  Windows Applications.
+	
+	CAUSE
+	=====
+	
+	The symptoms above may occur for one or more of the following reasons:
+	
+	- One or all of the following files are corrupt or missing from the
+	  %Systemroot\System32 folder:
+	
+	  Autoexec.nt
+	  Config.nt
+	  Command.com
+	
+	- Windows NT is installed on a removable drive such as Bernoulli, IOMEGA, or
+	  SyQuest drive.
+	
+	- You attempt to install another version of Windows NT on a removable drive.
+	
+	- Pagefile.sys resides on a removable drive.
+	
+	RESOLUTION
+	==========
+	
+	To correct this problem, perform one or more of the following:
+	
+	- Run the emergency repair disk (ERD) to replace the missing or corrupt
+	  file(s). The ERD also verifies the integrity of Windows NT system files in
+	  general.
+	
+	- Manually expand the Autoexec.nt, Config.nt, and Command.com files off the
+	  Windows NT CD-ROM.
+	
+	- Move the paging file to a permanent physical drive.
+	
+	
+	To resolve this problem, obtain the latest service pack for Windows NT 4.0 or
+	Windows NT Server 4.0, Terminal Server Edition. For additional information,
+	please see the following article in the Microsoft Knowledge Base:
+	
+	  Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Windows NT 4.0 and Windows NT
+	Server 4.0, Terminal Server Edition. This problem was first corrected in Windows
+	NT 4.0 Service Pack 4.0 and Windows NT Server 4.0, Terminal Server Edition
+	Service Pack 4.
+	
+	
+	MORE INFORMATION
+	================
+	
+	
+	For more information on troubleshooting MS-DOS applications, please see the
+	following Microsoft Knowledge Base article:
+	
+	  ARTICLE-ID: Q165214
+	  TITLE : Troubleshooting MS-DOS-Based Programs in Windows NT 4.0
+	
+	
+	Additional query words: WOWVDM config.nt autoexec.nt console app hidden apps msdos application dos virtual memory page file
+	
+	======================================================================
+	Keywords          : kbenv kbWinNT400sp4fix 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbNTTermServ400 kbNTTermServSearch kbWinNTS351search kbWinNTS350search
+	Version           : winnt:3.5,3.51,4.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

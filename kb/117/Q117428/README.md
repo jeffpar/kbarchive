@@ -1,0 +1,113 @@
+---
+layout: page
+title: "Q117428: INFO: GetProcAddress(), Function Pointers, and C++"
+permalink: kb/117/Q117428/
+---
+
+## Q117428: INFO: GetProcAddress(), Function Pointers, and C++
+
+	Article: Q117428
+	Product(s): Microsoft C Compiler
+	Version(s): 1.0,2.0,2.1,4.0,5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbLangCPP kbVC100 kbVC150 kbVC151 kbVC152 kbVC200 kbVC210 kbVC400 kbVC500 kbVC600
+	Last Modified: 11-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1, 4.0, 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	When porting code that uses GetProcAddress() from C to C++, the C++ compiler for
+	MS-DOS can return the following error message:
+	
+	  error C2564: formal/actual parameters mismatch in call through pointer to
+	  function
+	
+	The error message that is returned with the 32-bit compiler is:
+	
+	  error C2197: 'int (__stdcall *)(void )' : too many actual parameters
+	
+	MORE INFORMATION
+	================
+	
+	In a traditional C application, use GetProcAddress() to obtain the address of a
+	function to be called. Declare a variable of type FARPROC, initialize the
+	pointer with the value returned from GetProcAddress(), and then call the
+	function through a pointer as shown:
+	
+	  void func1(void)
+	  {
+	     HINSTANCE       hLib;
+	     FARPROC         lpfnDLLProc;
+	     UINT            param1 = 1;
+	     int             param2;
+	
+	     hLib = LoadLibrary ("dll1.dll");
+	     if (hLib)
+	     {
+	        lpfnDLLProc = GetProcAddress (hLib, "DLLProc");
+	        (*lpfnDLLProc) (param1, (LPINT)&param2);
+	        FreeLibrary (hLib);
+	     }
+	  }
+	
+	When not compiling with STRICT, FARPROC is defined in the WINDOWS.H file as
+	follows:
+	
+	  typedef int (CALLBACK* FARPROC)();
+	
+	When the sample code above is converted to C++, a type-mismatch error occurs
+	because C and C++ have a fundamental difference in the way they interpret empty
+	parentheses in function declarations. In C, a function declared as follows:
+	
+	  int (*funcptr)();
+	
+	declares a function that accepts an unknown number of arguments. In C++, the same
+	declaration represents a function that accepts no arguments. In other words, in
+	C++, the statement is equivalent to:
+	
+	  int (*funcptr)(void);
+	
+	Because of this difference, when a pointer of type FARPROC is used to call a
+	function with parameters in C, no error occurs. In C++, when the function being
+	passed to GetProcAddress() has parameters, the formal/actual-parameter-mismatch
+	error occurs because the function of type FARPROC is defined as a function that
+	has void parameters rather than as a function that accepts parameters.
+	
+	To eliminate the error, define the function pointer as a pointer to a function
+	with the correct number of parameters and then typecast the return value from
+	GetProcAddress() to the appropriate type:
+	
+	  typedef void (CALLBACK *ULPRET)(UINT,LPINT);
+	
+	  void func1(void)
+	  {
+	     HINSTANCE       hLib;
+	     ULPRET          lpfnDLLProc;
+	     UINT            param1 = 1;
+	     int             param2;
+	
+	     hLib = LoadLibrary ("dll1.dll");
+	     if (hLib)
+	     {
+	        lpfnDLLProc = (ULPRET) GetProcAddress (hLib,"DLLProc");
+	        (*lpfnDLLProc) (param1, (LPINT)&param2);
+	        FreeLibrary (hLib);
+	     }
+	  }
+	
+	Additional query words: 8.00 8.00c 9.00 9.10
+	
+	======================================================================
+	Keywords          : kbLangCPP kbVC100 kbVC150 kbVC151 kbVC152 kbVC200 kbVC210 kbVC400 kbVC500 kbVC600 
+	Technology        : kbVCsearch kbVC400 kbAudDeveloper kbvc100 kbVC500 kbVC600 kbVC200 kbVC210 kbVC32bitSearch kbVC500Search
+	Version           : :1.0,2.0,2.1,4.0,5.0,6.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

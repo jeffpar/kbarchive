@@ -1,0 +1,127 @@
+---
+layout: page
+title: "Q151997: DECMON Can Cause Spoolss to Generate an Access Violation"
+permalink: kb/151/Q151997/
+---
+
+## Q151997: DECMON Can Cause Spoolss to Generate an Access Violation
+
+	Article: Q151997
+	Product(s): Microsoft Windows NT
+	Version(s): 3.5,3.51
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 10-JUL-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation versions 3.5, 3.51 
+	- Microsoft Windows NT Server versions 3.5, 3.51 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	The print service stops and a Dr. Watson Log is created. Upon further review of
+	the Dr. Watson log (Drwtsn32.log) you may find:
+	
+	  Application exception occurred:
+	
+	          App: spoolss.DBG (pid=87)
+	          When: 5/9/1996 @ 16:38:2.449
+	          Exception number: c0000005 (access violation)
+	
+	CAUSE
+	=====
+	
+	DECMON.DLL causes Spoolss to generate an Access Violation error. Spoolss uses
+	many DLLs to communicate with printers, so any of those *.dll files can contain
+	a problem.
+	
+	To find where the error was in the case of Decmon.dll, search for the keyword
+	FAULT in the following stack back trace:
+	
+	 function: wvsprintfW
+	         77eb3ea2 83c602           add     esi,0x2
+	         77eb3ea5 85c9             test    ecx,ecx
+	         77eb3ea7 0f8e7b04ffff     jle     wvsprintfW+0xb2 (77ea4328)
+	         77eb3ead ebdf             jmp     wvsprintfW+0x1c3 (77eb3e8e)
+	         77eb3eaf 8345ec04         add   dword ptr [ebp-0x14],0x4
+	 ss:00a7e08e=????????
+	         77eb3eb3 8b45ec           mov     eax,[ebp-0x14]
+	 ss:00a7e08e=????????
+	         77eb3eb6 b9ffffffff       mov     ecx,0xffffffff
+	         77eb3ebb 8b50fc           mov     edx,[eax-0x4]
+	 ds:0046e922=????????
+	         77eb3ebe 2bc0             sub     eax,eax
+	         77eb3ec0 8bfa             mov     edi,edx
+	 FAULT ->77eb3ec2 f2ae             repne   scasb
+	 es:001a0000=??
+	         77eb3ec4 f7d1             not     ecx
+	         77eb3ec6 49               dec     ecx
+	         77eb3ec7 837df000         cmp   dword ptr [ebp-0x10],0x0
+	 ss:00a7e08e=????????
+	         77eb3ecb 894df4           mov     [ebp-0xc],ecx
+	 ss:00a7e08e=????????
+	         77eb3ece 7c0a             jl      wvsprintfW+0x20f (77eb3eda)
+	         77eb3ed0 8b45f0           mov     eax,[ebp-0x10]
+	 ss:00a7e08e=????????
+	         77eb3ed3 3bc1             cmp     eax,ecx
+	         77eb3ed5 7d03             jge     wvsprintfW+0x20f (77eb3eda)
+	         77eb3ed7 8945f4           mov     [ebp-0xc],eax
+	 ss:00a7e08e=????????
+	         77eb3eda 8b45f4           mov     eax,[ebp-0xc]
+	 ss:00a7e08e=????????
+	         77eb3edd 2945f8           sub     [ebp-0x8],eax
+	 ss:00a7e08e=????????
+	
+	 *----> Stack Back Trace <----*
+	
+	 FramePtr ReturnAd Param#1  Param#2  Param#3  Param#4  Function Name
+	 0060f76c 775871a0 0060f780 7758cb38 0060ff5c 00650067 user32!wvsprintfW
+	 [omap]
+	 0060ff50 7756d0bf 7758cb0c 00000037 0019ffc4 01a42ab4 decpsmon!trace
+	
+	MORE INFORMATION
+	================
+	
+	In general, to find the fault and determine which *.dll causes the problems,
+	look in the STACK BACK TRACE under Function Name. To do that you must do the
+	following first:
+	
+	1. Load the correct debug files, called SYMBOL files, to the directory where
+	  Windows NT is installed (that is, \Winnt\Symbols). Symbol files are found on
+	  the Windows NT compact disc under \Support\Debug\<your platform, for
+	  example I386>\Symbols.
+	
+	2. Copy this directory to your Windows NT directory. If you have any Service
+	  Packs installed you will need the symbols for that Service Pack also. Symbols
+	  for Service Packs are included on the compact disc.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, install the fix mentioned below.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Windows NT version 3.51. This
+	problem was corrected in the latest Windows NT 3.51 U.S. Service Pack. For
+	information on obtaining the Service Pack, query on the following word in the
+	Microsoft Knowledge Base (without the spaces):
+	
+	  S E R V P A C K
+	
+	
+	Additional query words: prodnt 3.50 3.51
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+	Version           : :3.5,3.51
+	
+	=============================================================================
+	

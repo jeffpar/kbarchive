@@ -1,0 +1,568 @@
+---
+layout: page
+title: "Q174647: The Microsoft Network 2.51 Readme.txt File"
+permalink: kb/174/Q174647/
+---
+
+## Q174647: The Microsoft Network 2.51 Readme.txt File
+
+	Article: Q174647
+	Product(s): The Microsoft Network
+	Version(s): WINDOWS:2.51
+	Operating System(s): 
+	Keyword(s): kbreadme kbmsn
+	Last Modified: 07-OCT-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The Microsoft Network version 2.51 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article contains a copy of the information in the Readme.txt file included
+	with MSN, The Microsoft Network, version 2.51.
+	
+	MORE INFORMATION
+	================
+	
+	------------------------------------------------------------
+	        README for The Microsoft Network 2.51
+	                        September l997
+	------------------------------------------------------------
+	
+	       (c) Copyright Microsoft Corporation, 1997
+	
+	This document provides complementary or late-breaking information
+	for The Microsoft Network 2.51.
+	
+	For the most current information about MSN, always check online at
+	http://memberservices.msn.com.
+	
+	-------------------------
+	HOW TO USE THIS DOCUMENT
+	-------------------------
+	
+	To view Readme.txt onscreen in Notepad, maximize the Notepad
+	window.
+	
+	To print Readme.txt, open it in Notepad or another word
+	processor, and then use the Print command on the File menu.
+	
+	Thank you for joining The Microsoft Network. This
+	document contains information that will help you solve common
+	problems and get the most out of The Microsoft Network.
+	
+	Table of Contents
+	=================
+	1. System Requirements
+	2. Video Cards and Display Problems
+	3. Hard Disk Location of MSN Program Files
+	4. Microsoft Internet Explorer Installation
+	5. Installation Problems
+	6. Known Problems with This Release
+	7. Outlook Express Mail & News
+	8. Connection Problems
+	9. Removing MSN Files and Shortcuts
+	
+	1.  System Requirements
+	=======================
+	* Windows 95 or later operating system
+	* Personal computer with a 486/66 or higher processor
+	* 14.4 Kbps modem or higher
+	* 16MB of memory required
+	* 70MB available hard disk space (See Disk Space Requirements note below)
+	* CD-ROM drive (2x or higher)
+	* VGA or higher resolution graphics card
+	* Sound card recommended
+	* Microsoft Mouse or compatible pointing device
+	
+	Disk Space Requirements
+	Internet Explorer 4.0:  45 MB
+	The Microsoft Network:  20 MB
+	MSN Setup:       5 MB
+	
+	If you need to clear space on your hard disk for MSN,
+	one option is to uninstall any previous versions of
+	Internet Explorer (3.02 or earlier) that you may have
+	installed.
+	
+	To uninstall Internet Explorer 3.02 or earlier:
+	1. Click the Windows Start button, then click
+	  Settings, Control Panel.
+	2. Double-click the Add/Remove Programs icon.
+	3. Select Microsoft Internet Explorer 3.x from the list.
+	4. Click Add/Remove... and then follow the directions.
+	
+	MSN is compatible only with Windows 95 or later.  It does not run
+	on Windows NT or on Windows 3.1.  MSN is considering future
+	support for Windows NT.
+	
+	In order to fully experience MSN you will need a sound card and
+	speakers.  MSN will function properly without them, but audio is
+	an integral part of the full experience.
+	
+	2.  Video Cards and Display Problems
+	====================================
+	LESS THAN 256 COLOR:
+	MSN Setup will run if your display is set to 16-color mode;
+	however, it is designed to run at 640x480 resolution or higher,
+	with a minimum of 256 colors. If your display is set to show 16
+	colors, we strongly recommend that you change your display
+	setting to show 256 colors or more.
+	
+	If you experience problems with display colors, check your
+	color configuration:
+	1. Click the Windows Start button, then click Settings,
+	  Control Panel.
+	2. Double-click the Display icon.
+	3. Click the Settings tab.
+	4. In the Color palette list box, click 256 Color.
+	
+	MORE THAN 256 COLOR:
+	MSN is designed to look even better at higher color settings.
+	You will find that much of the text is more readable and the
+	images much clearer when you set your display resolution to
+	16 bit (65,536 colors) or higher.
+	
+	Some video cards may encounter problems when using accelerated
+	video drivers, video drivers with more than 256 colors, or high
+	resolution video drivers.
+	
+	If you run into display problems:
+	1. Try switching to a driver supplied with Windows 95 or later.
+	2. Change to a different display mode. An alternative to using a
+	  different driver is to change your video mode to a standard
+	  video mode such as 640x480 resolution with 256 colors.
+	
+	For details on how to change drivers or switch to a different
+	display mode, see your Windows documentation.
+	
+	NEC computers using the Alliance Promotion video card do not work
+	well with the MSN setup program. Please contact your computer
+	dealer for assistance.
+	
+	3.  Hard Disk Location of MSN Program Files
+	===========================================
+	MSN requires that its files be installed on your system disk (the
+	drive from which your computer boots, generally the C: drive).
+	
+	If you do not have enough space on your system drive, Setup will
+	notify you.  You will need to make room on your system disk in
+	order to install MSN.
+	
+	4.  Microsoft Internet Explorer Installation
+	============================================
+	MSN requires Internet Explorer (IE) version 4.0 or higher.  If
+	you have an older version of IE, MSN Setup will install a new
+	version and back up your old version.  During IE installation,
+	you may be prompted to accept the IE End User License Agreement.
+	If you do not accept the IE License Agreement, MSN Setup will fail
+	and your computer will not be properly configured to access MSN.
+	You must accept the IE license in order to use MSN.
+	
+	WARNING: Do not install a previous version of Internet Explorer
+	over Internet Explorer 4.0. If you need to install an earlier version
+	of Internet Explorer, you must uninstall Internet Explorer 4.0 first.
+	
+	You should always uninstall your current version of
+	Internet Explorer 4.0 before installing a newer build.
+	
+	INSTALLING IE 4.0 WINDOWS DESKTOP UPDATE
+	The Internet Explorer 4.0 Windows Desktop Update brings true Web
+	integration to Windows: a Web-enhanced Active Desktop, taskbar,
+	Start menu, and folders.
+	
+	To install the IE 4.0 Active Desktop:
+	1. Click the MSN Quick View icon (the small hand
+	  icon next to your clock in the Windows task bar).
+	2. Click MSN Options, then Customize MSN.
+	3. Follow the directions on the Web site.
+	
+	INTERNET EXPLORER 4.0 FULL INSTALLATION
+	Included on the MSN CD are the files for a "Full" installation of
+	Internet Explorer 4.0. After installing MSN 2.51, reinsert
+	the MSN Setup CD and click the "Browse the CD" button. The IE 4.0
+	setup program is in a directory labeled "IE40."
+	Run "ie4setup.exe" and select the FULL installation.
+	
+	5.  Installation Problems
+	=========================
+	VERSION CONFLICTS:
+	You may encounter a version conflict when running
+	the MSN setup program, or when logging in for the first time.
+	If a "Version Conflict" dialog box is displayed, always keep the newer
+	version. The dialog box will usually ask, "Do you want to keep this file?"
+	to which you should click "Yes."
+	
+	PROGRAMS RUNNING DURING SETUP:
+	During MSN Setup, we notify you of any running programs that may interfere
+	with the MSN installation.  Before continuing, we recommend that you close
+	those
+	programs. This better ensures a successful installation.
+	Some programs, such as anti-virus applications that load automatically at
+	startup,
+	may be more difficult to close than others. If you are unable to close
+	these programs,
+	you can continue with MSN Setup by clicking the Next button and selecting
+	"Yes" when
+	you are given a "Do you want to continue anyway?" prompt. In most cases,
+	MSN Setup will
+	complete successfully. However, should you run into problems, for example,
+	your system
+	stops responding for several minutes during Setup, please try the steps
+	below to disable all running applications prior to installing MSN.
+	
+	Recommended steps to disable programs that load during startup:
+	1. Restart your computer.
+	2. While Windows is loading, hold down a Shift key.
+	3. After booting up, but before running other programs,
+	  press the Ctrl-Alt-Del keys together ONCE.
+	  If there are programs in the list other than Explorer and Systray
+	  select them and click the End Task button.
+	
+	Programs may also load automatically in the Startup folder.  These items
+	can be
+	temporarily moved to another temporary folder or your desktop until MSN
+	completes the installation.  Once finished they can be placed back in the
+	Startup folder.  This folder is located in:
+	Windows\StartMenu\Programs\Startup
+	and the items appear as shortcuts.  Once moved from your Startup folder, be
+	sure
+	to restart your computer so that the changes will take effect.
+	
+	6.  Known Problems with This Release
+	====================================
+	MSN SIGN IN APPEARS AFTER DISCONNECT:
+	Some programs like Outlook Express and some Web-based
+	content like Microsoft Investor periodically check for updated
+	information. If you are not already connected to the Internet when
+	these checks occur, MSN will attempt to dial in to the Internet
+	for you.
+	
+	There are two ways to prevent this from happening:
+	*  Close all Internet applications after you disconnect from the
+	  Internet.
+	*  Disable the default dialer option for Internet access.  This
+	  will require that you first start your MSN connection before using
+	  Internet applications. To do this:
+	    1. Click the MSN Quick View icon (the small hand
+	       icon next to your clock in the Windows task bar).
+	    2. Click MSN, then Connection Settings.
+	    3. Click the Options tab.
+	    4. Uncheck the Use this service for all dial-up Internet access
+	       option.
+	
+	SIGNUP OR REQUEST NEW PASSWORD SERVERS ARE NOT AVAILABLE:
+	When you sign up for a new MSN account, or if you want to
+	change the password on your current account, MSN will step you
+	through a process that puts your computer into "kiosk mode" (the
+	IE 4.0 browser with no user interface controls). If there are
+	Internet server problems while you are in kiosk mode, you can use
+	the Alt-F4 keyboard command to cancel the operation and
+	close out of IE 4.0.
+	
+	IE AS DEFAULT BROWSER:
+	Internet Explorer launches when you click e-mail, chat, or
+	history links. MSN does not replace your default browser and
+	will be activated only if you double-click the MSN icon on your
+	desktop or click the MSN Quick View icon in the Windows system
+	tray to connect to MSN.
+	
+	JAVA SCRIPT OR VB SCRIPT ERROR:
+	Java or Visual Basic script errors could occur in the MSN
+	Program Viewer for a couple of reasons:
+	
+	1. The MSN Program Viewer does not support the "window.open"
+	  command, which is supported by IE 3.0, IE 4.0, and
+	  Netscape 2.0, 3.0 & 4.0.
+	  Pages that use this command will cause a script error in the
+	  MSN Program Viewer.
+	
+	2. MSN is now based on IE 4.0, which includes higher security
+	  safeguards that will prevent some script commands from
+	  executing on your machine.
+	
+	MSN QUICK VIEW COMES BACK EVEN AFTER IT IS CLOSED:
+	The MSN Quick View icon in your Windows taskbar provides
+	you with periodic information about your e-mail message count and
+	the status of your friends online, and it checks to make sure
+	that your MSN client software is up to date.
+	
+	Even if you close MSN Quick View, it will be restarted if you
+	visit a Web page that requires its functionality.  For example,
+	MSN's On Stage and Communicate home pages use MSN Quick View to
+	display your new e-mail count.
+	
+	NOTE: As of 10/13/98 the MSN Communicate home page no longer exists.
+	
+	REMOVING MSN QUICK VIEW FROM STARTUP:
+	If you do not want MSN Quick View to start when you turn on
+	your computer, you can remove it from your Windows Startup group.
+	
+	To remove MSN Quick View from your Startup group:
+	1. Click the Windows Start button, then click Settings, Taskbar.
+	2. Click the Start Menu Programs tab.
+	3. Click the Remove button.
+	4. Click the plus (+) sign next to the Startup folder that appears
+	  in the list.
+	5. Click MSN Quick View to select it.
+	6. Click the Remove button. MSN Quick View will no longer start up
+	  with Windows.
+	
+	Please note that MSN Quick View will still automatically start when
+	you connect to MSN or when you connect via a LAN or a proprietary dialer.
+	MSN Quick View will also start up whenever you visit a page that uses
+	Quick View's services, such as MSN's Communicate home page.
+	
+	NOTE: As of 10/13/98 the MSN Communicate home page no longer exists. MSN
+	Quick View will restart if you visit http://memberservices.msn.com.
+	
+	MSN QUICK VIEW BEHAVIOR WHEN USING A LAN TO CONNECT TO MSN:
+	If you connect to MSN using a LAN, MSN Quick View will be unable
+	to tell when you are done using MSN. If you want to disconnect
+	from MSN, you will need to select that option from the MSN Quick
+	View menu.
+	
+	Otherwise, MSN Quick View will restart anytime you
+	visit a page that uses MSN Quick View's services.
+	MSN Quick View will detect that you are configured to connect over
+	a LAN and start a "sleep" timer, which will count down and put MSN Quick
+	View to sleep.  When MSN Quick View is running, it will notify you of
+	Friends Online, e-mail and software updates.  You will not be notified of
+	these events when MSN Quick View is asleep.
+	
+	MSN Quick View's sleep timer is set by the Idle Disconnect value in your
+	Internet browser properties.
+	
+	To change your sleep timer settings:
+	1. Click the MSN Quick View icon.
+	2. Click MSN Options, then Internet Properties.
+	3. Click the Connection Tab, then click the Connect to the Internet
+	  using a modem check box to enable the Settings button.
+	4. Click the Settings button and then choose a value for Disconnect
+	  if idle for ____ minutes.
+	5. Click OK and then reselect Connect to the Internet using a local
+	  area network.
+	6. Click OK again to accept these settings.
+	
+	MSN QUICK VIEW BEHAVIOR WHEN CONNECTING WITH DIAL UP
+	NETWORKING OR PROPRIETARY DIALER:
+	The MSN dialer starts MSN Quick View once a successful
+	connection has been made, and it turns it off once the modem
+	disconnects.  While MSN Quick View is running, it will provide
+	intermittent notice of e-mail and friends online status, and it
+	will estimate how long you have been connected.
+	
+	If you use a proprietary dialer (like AOL), or you start your
+	connection by clicking on a Dial-Up Networking icon, then MSN
+	Quick View will only start when you visit a page that uses MSN
+	Quick View's services.  MSN Quick View cannot detect the end of a
+	dial-up connection started by another service and may still be
+	active after you have disconnected.  MSN Quick View will detect
+	that you are configured to connect via non-MSN connection and
+	start a "sleep" timer which will count down and put MSN Quick
+	View to sleep.  To change the interval used to put MSN to sleep,
+	refer to the instructions for changing the sleep timer interval
+	in the LAN connection section above.
+	
+	7. Outlook Express Mail and News
+	================================
+	UPGRADING TO MICROSOFT OUTLOOK EXPRESS FROM MICROSOFT EXCHANGE
+	("INBOX"), OUTLOOK, OR WINDOWS MESSAGING:
+	MSN 2.51 installs a new Internet e-mail program called
+	Microsoft Outlook Express. If you have an existing MSN e-mail
+	account (Microsoft Exchange), MSN Setup will give you
+	the option of importing your existing mail file to this new program.
+	
+	If you choose to upgrade (recommended), MSN 2.51 will replace your
+	previous mail account with a new MSN Internet mail account, and you
+	will no longer be able to use Exchange, Outlook, or Windows Messaging
+	as your MSN e-mail program.
+	
+	If you have MSN installed on another computer and you want to be
+	able to access your MSN e-mail account on that computer, you'll need
+	to install MSN 2.51 and Microsoft Outlook Express there as well.
+	
+	CHANGES IN EXISTING MSN E-MAIL ACCOUNT ADDRESSES:
+	You may note, as you receive replies to the messages you send, that
+	your e-mail address is listed as MSN_Member_ID@email.msn.com, instead
+	of MSN_Member_ID@msn.com.  This DOES NOT mean that your e-mail
+	address has changed. The addition of the word "email" after the "@"
+	sign is simply a behind-the-scenes mechanism used to ensure higher
+	levels of performance on the new MSN mail platform. Your e-mail
+	address is the same as before the upgrade.
+	
+	8.  Connection Problems
+	=======================
+	AOL USERS WHO INSTALL MSN 2.51:
+	AOL 3.0 should work fine after installing MSN.  In order to use both MSN
+	and AOL at the same time, however, you will need to disable MSN's autodial
+	functionality before you connect to MSN.
+	
+	To turn off the autodial functionality, complete the following steps:
+	1.  Click the MSN Quick View icon (hand icon in the system tray).
+	2.  Click MSN Options, then Connection Settings.
+	3.  Click the Options tab.
+	4.  Uncheck "Use this service for all dial-up Internet access."
+	
+	    Then complete the next procedure on configuring AOL to use
+	    TCP/IP access.
+	
+	To configure AOL to use TCP/IP access, complete the following steps:
+	1.  At the AOL login screen, click Setup.
+	2.  Select Edit Location
+	3.  Choose TCP/IP for the type of network.
+	
+	You can now use both MSN and AOL by starting your connection
+	through MSN first, and then starting AOL.
+	
+	AT&T WORLDNET USERS WHO INSTALL MSN 2.51:
+	AT&T Worldnet should work fine after installing MSN
+	2.51. If there are any problems getting connected to AT&T
+	Worldnet or using AT&T Worldnet to access the Internet
+	check the "Connection Configuration of MSN" section for
+	instructions on how to manually configure your Internet
+	connection.  If you are unable to fix the problem manually,
+	then you should re-install AT&T Worldnet to reset your
+	connection configuration.
+	
+	PRODIGY USERS WHO INSTALL MSN 2.51:
+	Users of Prodigy may find that the Prodigy Internet browser does not work
+	after
+	installing the MSN 2.51.  This is because MSN 2.51 installs the latest
+	version of
+	Internet Explorer (4.0), which includes new security features that conflict
+	with the Prodigy browser.  You will need to uninstall Internet Explorer 4.0
+	from your machine and then reinstall Internet Explorer 4.0 from the
+	Internet.
+	This will allow both MSN 2.51 and Prodigy to be used on the same PC.
+	
+	CONNECTION CONFIGURATION OF MSN:
+	To reconfigure any of the connection settings in the following chart,
+	first:
+	1. Click the Windows Start button, then click Settings, Control Panel.
+	2. Double-click the "Internet" icon.
+	3. Click the Connection Tab.
+	
+	DESIRED CONNECTION   SETTINGS IN INTERNET PROPERTIES
+	CONFIGURATION      CONNECTION TAB
+	-----------------------------------------------------------------
+	Dial Up Using MSN   In the Connection section, check the
+	        "Connect to the Internet using a modem"
+	        option. Click the Settings
+	        button and make sure that "MSN" is the
+	        highlighted connection.  Make sure that
+	        "Connect using a proxy server" is
+	        unchecked.
+	
+	Dial Up Using       In the Connection section, check the
+	other RAS Service   "Connect to the Internet using a modem" option.
+	(eg. MCI, AT&T)      Click the Settings button.  Select the service
+	        you want to use. (If the service you use
+	        is not listed, see the next topic about
+	        proprietary ISPs.)  Make sure that
+	        "Connect using a proxy server" is
+	        unchecked.
+	
+	Dial Up Using       In the Connection section, check the
+	Proprietary ISP      "Connect to the Internet using a modem" option.
+	(e.g., AOL, Netscape)   Click the Settings button.  If your service does
+	not
+	        appear in the drop-down list, then click
+	        the Add button and follow the steps to
+	        create a connection for your service.
+	        Make sure that "Connect using a proxy
+	        server" is unchecked.
+	
+	Direct Connection   In the Connection section, check the
+	to the Internet   or,   "Access the Internet via a Local Area
+	Remote Winsock Proxy   Network" option and make sure that
+	Connection via LAN   "Connect using a proxy server" is
+	        unchecked. Note: Only Remote Winsock Proxy 2.0
+	        or later is supported.
+	
+	LAN Proxy Connection   You can configure IE or MSN to
+	(cannot access       use LAN Proxy by checking the
+	MSN via proxy until   "Connect through proxy" box in
+	Q4 1997)      the Proxy Server section.
+	
+	MODEM ACCESS WITH WINSOCK PROXY (WSP):
+	If you have Remote Winsock Proxy installed on your computer
+	and would like to access MSN 2.51 with a modem,
+	you will need to turn off Remote Winsock Access.
+	
+	To turn off Remote Winsock Access:
+	1. Click the Windows Start button, then click Settings, Control Panel.
+	2. Double-click the "WSP Client" icon.
+	3. Uncheck the "Enable WinSock Proxy Client."
+	
+	Additionally, you will need to uncheck the Proxy server in your Internet
+	Explorer Connection Properties, as described above.
+	
+	WHICH CONNECTION CHOICE TO SELECT
+	This 2.51 version of MSN ships with a new dial-up
+	connection manager that replaces the dial-up manager from
+	previous versions of MSN. The new dial-up connection
+	manager creates an entry in your Dial-up Networking folder
+	called "MSN" but does not delete your old entries, "The
+	Microsoft Network" and "The Microsoft Network (backup)."
+	Either of these old entries will still work with the new MSN
+	dial-up connection manager, but they will disable the autodial
+	support for IE and Mail.  So when you access dial-up networking
+	within either Outlook Express Mail, Exchange Mail, or Chat,
+	you will be presented with all three choices for connection
+	to MSN.  You should select the connection entry "MSN" for
+	all dial-up access to MSN.
+	
+	9. Removing MSN Files and Shortcuts
+	====================================
+	NOTE:  UNINSTALLING WILL REMOVE ALL THE FILES NECESSARY FOR MSN TO
+	WORK ON YOUR COMPUTER.
+	
+	To uninstall MSN 2.51 from your computer, please complete the
+	following steps:
+	
+	1. Click the Windows Start button, then click Settings,
+	  Control Panel.
+	2. Double-click the Add/Remove Programs icon.
+	3. For each of the components in the following list, select the item, and
+	  then click the Add/Remove button. Be sure to remove the components
+	  in the order that they appear in this list.
+	
+	  Note: Depending on whether you chose the typical or full installation,
+	  you may not have all of the items listed below.
+	  If you are prompted to remove files, click Yes.
+	
+	  Components to Remove
+	  ------------------------------------------------
+	  - Connection Manager
+	  - Microsoft Chat 2.0
+	  - MSN Optional Controls
+	  - MSN 2.5
+	  - RealPlayer 4.0
+	  - Microsoft Netshow Player 2.0
+	  - Outlook Express
+	  - Microsoft Internet Explorer 4.0 (optional)
+	
+	4. Click OK to close the Add/Remove Programs dialog box.
+	
+	You have now successfully uninstalled MSN 2.51.
+	
+	For the most current information about MSN, always check online at the
+	following MSN Web site:
+	
+	  http://memberservices.msn.com.
+	
+	Additional query words: msnet msnetwork microsoft-net m.s.n.
+	
+	======================================================================
+	Keywords          : kbreadme kbmsn 
+	Technology        : kbMSNSearch kbMSN251
+	Version           : WINDOWS:2.51
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

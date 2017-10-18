@@ -1,0 +1,81 @@
+---
+layout: page
+title: "Q161038: Winsock Apps Fail on First Attempt at NetBIOS Name Resolution"
+permalink: kb/161/Q161038/
+---
+
+## Q161038: Winsock Apps Fail on First Attempt at NetBIOS Name Resolution
+
+	Article: Q161038
+	Product(s): Microsoft Windows NT
+	Version(s): winnt:4.0
+	Operating System(s): 
+	Keyword(s): kbnetwork kbAPI kbSDKPlatform kbWinsock kbGrpDSNetkbbuglist kbfixlist
+	Last Modified: 09-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 4.0 
+	- Microsoft Windows NT Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	After applying Service Pack 2 to Windows NT 4.0, socket applications fail to
+	complete connections on the first attempt. Simply retrying the connection works.
+	This problem has been seen with Internet Explorer, as well as with FTP
+	applications.
+	
+	CAUSE
+	=====
+	
+	When an attempt is made to resolve a NetBIOS name, the request goes out on all
+	interfaces, including RAS. RAS completes right away, indicating timeout, and
+	Registration and Name Resolution (RNR) cancels all outstanding requests.
+	Instead, RNR needs to wait for all outstanding requests to complete.
+	
+	
+	The only time you will see this problem is when you are using a winsock app on a
+	computer attempting to connect to a server on a remote network, with no DNS
+	servers configured, RAS installed, and NETBT node type set as M- node. You will
+	see the problem only on the first try, and subsequent attempts to resolve the
+	name will work.
+	
+	WORKAROUND
+	==========
+	
+	The following are workarounds for this problem:
+	
+	- Configure a Domain Name Service (DNS) server.
+	
+	  -or-
+	
+	- Change the NetBT node type to anything other than M-Node.
+	
+	  -or-
+	
+	- Remove RAS.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Windows NT version 4.0. This
+	problem was corrected in the latest Microsoft Windows NT 4.0 U.S. Service Pack.
+	For information on obtaining the service pack, query on the following word in
+	the Microsoft Knowledge Base (without the spaces):
+	
+	  S E R V P A C K
+	
+	
+	Additional query words: prodnt SP2
+	
+	======================================================================
+	Keywords          : kbnetwork kbAPI kbSDKPlatform kbWinsock kbGrpDSNet kbbuglist kbfixlist
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+	Version           : winnt:4.0
+	Issue type        : kbbug
+	
+	=============================================================================
+	

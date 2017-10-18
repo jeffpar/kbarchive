@@ -1,0 +1,105 @@
+---
+layout: page
+title: "Q191382: Error Message: This Program Can No Longer Run"
+permalink: kb/191/Q191382/
+---
+
+## Q191382: Error Message: This Program Can No Longer Run
+
+	Article: Q191382
+	Product(s): Microsoft Automap
+	Version(s): WINDOWS:1.0
+	Operating System(s): 
+	Keyword(s): kbenv kberrmsg kbimukbfaq
+	Last Modified: 11-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Expedia Trip Planner 98 
+	- Microsoft Expedia Streets 98 Deluxe, version 1.0 
+	- Microsoft Expedia Streets 98 
+	- Microsoft Encarta Virtual Globe 1998 edition 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you attempt to start Expedia Streets 98, Expedia Trip Planner 98, or
+	Encarta Virtual Globe 98, you may receive one of the following error messages:
+	
+	  This program can no longer run. Click OK to acknowledge this message, and
+	  then restart the program.
+	
+	  Encarta Virtual Globe is unable to continue running. The problem may be the
+	  result of low system resources such as memory or disk space. Try closing
+	  other running applications or freeing up disk space before restarting Encarta
+	  Virtual Globe. (6-75221073741819)
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, follow these steps:
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click Add/Remove Programs.
+	
+	3. Double-click <program>, where <program> is one of the Microsoft
+	  programs listed at the beginning of this article.
+	
+	4. Click Remove All, and then follow the instructions on the screen to finish
+	  removing the program.
+	
+	5. Use Scandisk to find and repair any problems on the hard disk. To do so,
+	  follow these steps:
+	
+	  NOTE: You cannot run Scandisk on a Windows NT-based computer.
+	
+	  1. Click Start, and then click Run.
+	
+	  2. In the Open box, type "scandisk" (without the quotation marks), and then
+	     click OK.
+	
+	  3. In the "Select the drive(s) you want to check for errors" box, click the
+	     hard disk. If more than one hard disk is installed in your computer, press
+	     and hold down the SHIFT key as you click each additional hard disk.
+	
+	  4. Click Start.
+	
+	  5. When ScanDisk finishes checking the hard disk, click Close.
+	
+	6. Click Start, point to Find, and then click Files Or Folders.
+	
+	7. In the Named box, type "itss.dll" (without the quotation marks), and then
+	  click Find Now.
+	
+	8. In the list of found files, right-click the Itss.dll file, and then click
+	  Rename.
+	
+	9. Type "itss.old" (without the quotation marks), and then press ENTER.
+	
+	10. Clean the installation CD-ROM for the program. To do so, gently wipe the
+	  silver side of the disc with a soft, lint-free cotton cloth. Do not use
+	  paper cloth, which may scratch the plastic or leave streaks. Wipe from the
+	  center out. Do not use a circular motion.
+	
+	11. Insert the CD-ROM into the CD-ROM drive, and then install the program.
+	
+	If the issue continues to occur, there may be a problem with Internet Explorer.
+	Download and install the latest version of Microsoft Internet Explorer from the
+	following Microsoft Web site:
+	
+	  http://www.microsoft.com/ie
+	
+	
+	Additional query words: 1998 multi-media mm auto-map world atlas evg kbimu
+	
+	======================================================================
+	Keywords          : kbenv kberrmsg kbimu kbfaq
+	Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbExpediaSearch kbExpediaStreets98 kbExpediaStreets98del kbEncartaVirtGlobe98
+	Version           : WINDOWS:1.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

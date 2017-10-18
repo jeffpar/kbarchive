@@ -1,0 +1,94 @@
+---
+layout: page
+title: "Q223126: FIX: Form Icon Displayed as Compressed on True Color Display"
+permalink: kb/223/Q223126/
+---
+
+## Q223126: FIX: Form Icon Displayed as Compressed on True Color Display
+
+	Article: Q223126
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): WINDOWS:6.0
+	Operating System(s): 
+	Keyword(s): kbIcon kbVBp600bug kbOSWinNT400sp3 kbOSWinNT400sp4 kbGrpDSVB kbVS600sp3fix
+	Last Modified: 13-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, version 6.0, on platform(s):
+	   - the operating system: Microsoft Windows NT 
+	- Microsoft Visual Basic Professional Edition for Windows, version 6.0, on platform(s):
+	   - the operating system: Microsoft Windows NT 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0, on platform(s):
+	   - the operating system: Microsoft Windows NT 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When running Visual Basic on a system using Windows NT 4.0 Service Pack 3 or 4
+	with the video mode set to the True Color display, a compressed 32x32 version of
+	the icon appears in the Title bar of the form despite the fact that the icon
+	file contains a 16x16 version of the icon. Assuming that the icon file contains
+	both a 32x32 and 16x16 version of the icon, Visual Basic should display the
+	16x16 version.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article.
+	
+	This bug was corrected in Visual Studio 6.0 Service Pack 3.
+	
+	For more information about Visual Studio service packs, please see the following
+	articles in the Microsoft Knowledge Base:
+	
+	Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+	
+	Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+	
+	MORE INFORMATION
+	================
+	
+	This section illustrates how to create a sample project that demonstrates the
+	bug behavior. It assumes that you are running Visual Basic on a system using
+	Windows NT 4.0 with Service Pack 3 or 4. The display setting of this system must
+	be set to True Color. The section also assumes you have an icon file with a
+	32x32 version and a 16x16 version of the icon.
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Start a new Visual Basic Standard EXE project. Form1 is created by default.
+	
+	2. Set the Icon property of Form1 to the icon file.
+	
+	  A compressed version of the 32x32 icon appears in the Title bar of Form1. The
+	  expected behavior is the 16x16 version of the icon appears in the Title bar.
+	
+	REFERENCES
+	==========
+	
+	For more information on how the Windows operating systems uses icons, please
+	see: ImageList Control in the MSDN Web site at:
+	
+	http://msdn.microsoft.com/library/techart/msdn_icons.htm
+	
+	Another approach to this problem is provided in the following publication:
+	
+	Peterson, Karl E. "Ask the VB Pro" Visual Basic Programmer's Journal April, 1999.
+	Fawcette Technical Publications
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbIcon kbVBp600bug kbOSWinNT400sp3 kbOSWinNT400sp4 kbGrpDSVB kbVS600sp3fix 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2
+	Version           : WINDOWS:6.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

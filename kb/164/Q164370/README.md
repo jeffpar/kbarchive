@@ -1,0 +1,137 @@
+---
+layout: page
+title: "Q164370: WD97: Word Development Tools and White Papers"
+permalink: kb/164/Q164370/
+---
+
+## Q164370: WD97: Word Development Tools and White Papers
+
+	Article: Q164370
+	Product(s): Word 97 for Windows
+	Version(s): WINDOWS:97
+	Operating System(s): 
+	Keyword(s): kb3rdparty kbfile kbdta kbtemplate kbwordvbakbfaq
+	Last Modified: 14-NOV-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article lists several development resources that are available for download
+	from the Microsoft Office Developer Web site.
+	
+	MORE INFORMATION
+	================
+	
+	The following files are available in the Microsoft Office Developer Web site.
+	
+	WordPerfect 5.1 Macro Text Extractor
+	------------------------------------
+	
+	Executable file contains: cvt_doc.doc, wp51cvt.dot
+	
+	WordPerfect 5.1 for MS-DOS uses a proprietary file format for storing macros.
+	This macro-to-text utility converts macros written for WordPerfect 5.1 to
+	standard text for viewing and printing.
+	
+	NOTE: The utility does not translate WordPerfect macro code to Visual Basic for
+	Applications.
+	
+	For more information about this file, see the following Microsoft Office
+	Developer Web site:
+	
+	  http://www.microsoft.com/WordDev/Articles/cvt1.htm
+	
+	WordBasic Migration to Visual Basic for Applications
+	----------------------------------------------------
+	
+	Executable file contains: Wbmigrat.doc
+	
+	Microsoft has integrated WordBasic migration to Visual Basic as transparently as
+	possible. When a template file is opened, either directly or indirectly
+	(attached templates are an example of indirect) the WordBasic code is converted
+	to Visual Basic automatically. In most cases, the user doesn't even know that a
+	conversion process happened. This paper explains the conversion process, many of
+	the known conversion issues, and solutions to resolve conversion issues.
+	
+	For more information about this file, see the following Microsoft Office
+	Developer Web site:
+	
+	  http://www.microsoft.com/worddev/articles/wbmigrat.htm
+	
+	Updated WbODBC.wll
+	------------------
+	
+	Executable file contains: Wbodbc97.dot, Wbodbc.wll, Test.mdb, Readme.txt
+	
+	If you've written Word 7.0 solutions that use the ODBC functions in WbODBC.wll (a
+	Word add-in library available in the Microsoft Word Developer's Kit, 3rd
+	edition), you'll need to install this updated version of the WLL to run your
+	solution in Word 97. In addition to a new version of the WLL, this download also
+	includes new versions of the sample ODBC macros template (WbODBC97.dot) and the
+	corresponding test database (Test.mdb). The macros in WbODBC97.dot have been
+	updated to use Visual Basic and demonstrate how to use the ODBC add-in functions
+	in Word 97. For complete information about this update, see the Readme.txt file
+	included in this download.
+	
+	For more information about this file, see the following Microsoft Office
+	Developer Web site:
+	
+	  http://www.microsoft.com/WordDev/Articles/WbOdbcdl.htm
+	
+	Converting WordPerfect Macros to Microsoft Word 97 Visual Basic
+	---------------------------------------------------------------
+	
+	White Paper: Converting WordPerfect Macros to Microsoft Word 97, Visual Basic for
+	Applications
+	
+	Executable file contains: wpconv.doc
+	
+	This document describes the methodology, approach, and requirements for
+	converting macros developed for various versions of WordPerfect to Visual Basic
+	for Applications in Microsoft Word. Because of the complexity of macros, there's
+	no automatic conversion utility available for converting macros from WordPerfect
+	to Visual Basic for Applications. However, an unsupported macro-to-text utility
+	is available that converts macros written for WordPerfect 5.1 to standard text
+	for viewing and printing.
+	
+	For more information about this file, see the following Microsoft Office
+	Developer Web site:
+	
+	  http://www.microsoft.com/WordDev/Articles/wpconv.htm
+	
+	Updating String Functions in WLLs and DLLs for Word 97
+	------------------------------------------------------
+	
+	Microsoft Word add-in libraries (WLLs) and dynamic-link libraries (DLLs) that
+	expose string-returning or string-processing functions that worked in earlier
+	versions of Word (6.0 or 95) may not work correctly when used in Word 97.
+	
+	The following outline describes the string-related problems you may encounter,
+	along with the three steps necessary to make string functions from old WLLs and
+	DLLs work with Visual Basic for Applications in Word 97. (Step 4 is necessary
+	only if you want to keep using old WordBasic code in a template after converting
+	it to Word 97.) Note that after you make the suggested changes in your source
+	code, your modified WLL or DLL can still work in Word 95. However, it will not
+	work in 16-bit environments.
+	
+	For more information about updating string functions in WLLs and DLLs for Word
+	97, see the following Microsoft Office Developer Web site:
+	
+	  http://www.microsoft.com/WordDev/Articles/UpdtWlls.htm
+	
+	Additional query words: 97
+	
+	======================================================================
+	Keywords          : kb3rdparty kbfile kbdta kbtemplate kbwordvba kbfaq
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : WINDOWS:97
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

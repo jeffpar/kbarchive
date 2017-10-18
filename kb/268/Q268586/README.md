@@ -1,0 +1,105 @@
+---
+layout: page
+title: "Q268586: SMS: SMS 2.0 Clients Do Not Complete Installation Due to a Space"
+permalink: kb/268/Q268586/
+---
+
+## Q268586: SMS: SMS 2.0 Clients Do Not Complete Installation Due to a Space
+
+	Article: Q268586
+	Product(s): Microsoft Systems Management Server
+	Version(s): winnt:2.0,2.0 SP1,2.0 SP2
+	Operating System(s): 
+	Keyword(s): kbsetup kbClient kbConfig kbsms200 kbsms200bug
+	Last Modified: 10-AUG-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server versions 2.0, 2.0 SP1, 2.0 SP2 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When running the Smsls.bat file during Logon Installation, the client does not
+	complete the installation process and no logs appear in the
+	%systemroot%\ms\sms\logs directory.
+	
+	CAUSE
+	=====
+	
+	In the Smsls.bat file, several calls are based on the TEMP environment variable.
+	If this variable is set to a path that has a space in it, then the attempt to
+	find and execute Slownet.exe in the SLOWNET section of the Smsls.bat file fails
+	due to a misinterpretation of the command line.
+	
+	WORKAROUND
+	==========
+	
+	Modify the TEMP environment variable on the desired System Management Server
+	(SMS) client workstation so it no longer has spaces in the path.
+	
+	On a Microsoft Windows 95 or Microsoft Windows 98 Computer
+	----------------------------------------------------------
+	
+	1. Modify this variable within the Autoexec.bat file on the client.
+	
+	2. The variable should be listed in a line similar to "SET TEMP" or "SET TMP."
+	
+	3. Make sure that there is no space in the location, particularly any trailing
+	  spaces.
+	
+	On a Microsoft Windows NT 4.0 Workstation
+	-----------------------------------------
+	
+	1. Right-click the My Computer icon on the desktop, and then click Properties.
+	
+	2. On the Environment tab, under the "User Variables for Administrator", locate
+	  either the TEMP, or the TMP variable (both may exist).
+	
+	3. Select the TEMP or TMP variable next to Value.
+	
+	4. Make sure that there is no space in the location, particularly any trailing
+	  spaces.
+	
+	On a Microsoft Windows 2000 Computer
+	------------------------------------
+	
+	1. Right-click the My Computer icon on the desktop, and then click Properties.
+	
+	2. On the Advanced tab, click Environment Variables.
+	
+	3. Under the "User Variables for Administrator", locate either the TEMP, or the
+	  TMP variable (both may exist).
+	
+	4. Select the TEMP or TMP variable, and then click Edit.
+	
+	5. Make sure that there is no space in the location, particularly any trailing
+	  spaces.
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Systems Management Server
+	version 2.0.
+	
+	MORE INFORMATION
+	================
+	
+	For additional information, click the article number below to view the article
+	in the Microsoft Knowledge Base:
+	
+	  Q161412 SMS: 'Too Many Parameters' Error When Running Smsls.bat
+	
+	Additional query words: prodsms
+	
+	======================================================================
+	Keywords          : kbsetup kbClient kbConfig kbsms200 kbsms200bug 
+	Technology        : kbSMSSearch kbSMS200 kbSMS200SP1 kbSMS200SP2
+	Version           : winnt:2.0,2.0 SP1,2.0 SP2
+	Issue type        : kbbug
+	
+	=============================================================================
+	

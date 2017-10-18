@@ -1,0 +1,97 @@
+---
+layout: page
+title: "Q177183: Unable to Add Components from Corporate Evaluation CD-ROM"
+permalink: kb/177/Q177183/
+---
+
+## Q177183: Unable to Add Components from Corporate Evaluation CD-ROM
+
+	Article: Q177183
+	Product(s): Microsoft Windows NT
+	Version(s): WINNT:4.0
+	Operating System(s): 
+	Keyword(s): kbenv kberrmsg
+	Last Modified: 09-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you try to add additional components or services to an existing
+	installation of Windows NT Workstation, you may receive the following prompt:
+	
+	  Please insert the disk labeled: 'Windows NT Workstation CD-ROM'
+	  into <drive>:
+	
+	You may receive this prompt even though your CD-ROM drive is working properly,
+	the appropriate Corporate Desktop Evaluation 97 CD-ROM is in the drive, and you
+	have properly specified the folder containing the Windows NT installation files.
+	
+	CAUSE
+	=====
+	
+	When you add new components or services, the volume label of the CD-ROM is
+	checked to ensure that the proper CD-ROM is in the drive. The volume label of
+	the Corporate Desktop Evaluation 97 CD-ROM is EVALSYS instead of the retail
+	volume label of NTWKS40a. For this reason, the Corporate Desktop Evaluation 97
+	CD-ROM is not recognized as a valid Windows NT Workstation CD-ROM.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, follow these steps:
+	
+	1. Copy the I386 folder from the appropriate Corporate Desktop Evaluation 97
+	  CD-ROM to your hard disk.
+	
+	  NOTE: On some Corporate Desktop Evaluation 97 CD-ROMs, the Windows NT
+	  Workstation installation files may be located in the Winntw folder instead of
+	  the I386 folder.
+	
+	2. Add the components or services to your Windows NT Workstation installation.
+	
+	3. When you are prompted, type the location of the Windows NT installation files
+	  on your hard disk.
+	
+	MORE INFORMATION
+	================
+	
+	Note that this behavior does not occur if you access the Corporate Desktop
+	Evaluation 97 CD-ROM from a network share or if you copy the Windows NT
+	Workstation installation files from the Corporate Desktop Evaluation 97 CD-ROM
+	to your hard disk.
+	
+	The Corporate Desktop Evaluation 97 CD-ROM contains the following programs:
+	
+	- Microsoft Office 97
+	
+	- Microsoft FrontPage 97
+	
+	- Microsoft Team Manager 97
+	
+	- Microsoft Project for Windows 95
+	
+	- Microsoft Windows 95
+	
+	- Microsoft Windows NT Workstation 4.0
+	
+	- Microsoft Internet Explorer 3.0
+	
+	These products are full versions with trial licenses. These products are disabled
+	when the trial license period expires. For additional information, see the
+	documentation included with the Corporate Desktop Evaluation 97 package.
+	
+	Additional query words: csnw netware eval timebomb time bomb
+	
+	======================================================================
+	Keywords          : kbenv kberrmsg 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search
+	Version           : WINNT:4.0
+	
+	=============================================================================
+	

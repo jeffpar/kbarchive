@@ -1,0 +1,156 @@
+---
+layout: page
+title: "Q142795: PRB: FoxPro DBF Opened/Saved by MacWord Alters File Type"
+permalink: kb/142/Q142795/
+---
+
+## Q142795: PRB: FoxPro DBF Opened/Saved by MacWord Alters File Type
+
+	Article: Q142795
+	Product(s): Microsoft FoxPro
+	Version(s): MACINTOSH:2.6a,3.0b
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 11-FEB-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft FoxPro for Macintosh, version 2.6a 
+	- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If a Microsoft FoxPro table is opened and converted to a Microsoft Word 6.0 for
+	Macintosh document and saved in Macintosh Word, it is no longer a FoxPro table.
+	Further attempts to open the table in Microsoft FoxPro will result is the
+	following error message:
+	
+	  Not a table/DBF
+	
+	CAUSE
+	=====
+	
+	The FoxPro-dBASE converter used in Microsoft Word for Macintosh can't save the
+	file back to the original FoxPro format.
+	
+	RESOLUTION
+	==========
+	
+	Because the file is now a Word document with the same name the original FoxPro
+	DBF file, it must be saved to a format FoxPro can read, such as a text file. The
+	following methods show how to do it.
+	
+	Method One: Append to FoxPro Table as a Text File
+	-------------------------------------------------
+	
+	1. In Microsoft Word for Macintosh, open the converted FoxPro table as a Word
+	  document by choosing Open from the File menu and All Files in the List Files
+	  of Type list box.
+	
+	2. Click somewhere in the table. From the Table menu, choose Select Table. This
+	  should highlight the entire table.
+	
+	3. From the Table menu, choose Convert Table to Text. Then select Commas and
+	  choose OK.
+	
+	4. From the File menu, choose Save As. In the Save File as Type box, choose Text
+	  Only.
+	
+	5. Create a table in Microsoft FoxPro for Macintosh by choosing New from the
+	  File menu. Select Table/DBF as the file type.
+	
+	6. Enter the appropriate field name, type, and width to correspond with each
+	  field in the text file saved in step 4.
+	
+	7. With this new table open, choose Append From...on the Database menu. In the
+	  File Type drop-down list, choose Delimited with Commas. Click the
+	  From...button and locate the text file created in step 4 above and hit OK.
+	  Then hit the Append push button.
+	
+	Method Two: Use Microsoft Excel 5.0 to Read or Convert to the Text File
+	-----------------------------------------------------------------------
+	
+	1. Complete steps 1-4 in method one.
+	
+	2. Open Microsoft Excel 5.0 for the Macintosh. From the File menu, choose Open.
+	  In List Files of Type box, choose Text files. Open the text file from step 4
+	  of method one.
+	
+	3. From the File menu, choose Save As. In the Save File as Type box, choose DBF
+	  4. This new file can simply be opened in FoxPro as a table/DBF.
+	
+	  NOTE: If you are using Excel 4.0 or an earlier version, check the Microsoft
+	  Excel manuals on the procedure used to save the spreadsheet file in a DBF
+	  format. Also, this step could be broken into another method. Instead of
+	  saving the file as a DBF from Microsoft Excel, you could save the file as a
+	  Microsoft Excel spreadsheet XLS version 4 or earlier. This is because FoxPro
+	  cannot open Microsoft Excel 5.0 spreadsheets. Then in FoxPro, issue the
+	  following command in the Command window, with the correct path to the
+	  spreadsheet:
+	
+	     IMPORT FROM "Macintosh HD:Excel:test.txt" TYPE XLS
+	
+	Method Three: Look for Backup .BAK of the Table in FoxPro
+	---------------------------------------------------------
+	
+	1. Check the hard disk for the existence of the old table name with a .bak
+	  extension. If one exists, then in FoxPro, choose Open from the File menu.
+	  Select Table/DBF in the Type list box, and select the All Files check box.
+	  Find the .bak file, and choose Open. The data in this table will probably be
+	  old, but the structure should be the same.
+	
+	2. This table structure can be used in place of step 6 in method one, or the
+	  text file can be appended directly to the end of this backup table by
+	  following step 7 in method one. If you want to use this table structure but
+	  start with an empty database, it is probably better to copy the structure to
+	  another table rather that delete all records in the .bak file. This way there
+	  would be a backup of the old data. After following step 1 in this section,
+	  type the following commands in the Command window:
+	
+	     COPY STRUCTURE TO temp
+	     USE temp
+	
+	  This will copy the structure to another table named temp and then open the
+	  table. From here, follow step 7 in method one to append the text file to this
+	  table.
+	
+	STATUS
+	======
+	
+	This behavior is by design.
+	
+	MORE INFORMATION
+	================
+	
+	This problem is most likely to occur when a FoxPro table is used in a Microsoft
+	Word for the Macintosh mail merge. After the mail merge has completed and the
+	user begins to close the documents in the mail merge, the user will receive this
+	warning message:
+	
+	  Document 1 is a mail merge main document that is attached to a data source
+	  <table.dbf> that has not been saved. Do you want to save
+	  <table.dbf>?
+	
+	  <Yes> <No> <Cancel> <Help>
+	
+	If you click Yes, the table is no longer a FoxPro table. It is saved as a Word
+	table in a Word document. Word changes the file type to WGBN for Word from
+	FoxPro's APPL, and it changes the creator type to MSWD for Word from FoxPro's
+	FOXX. This can be checked by opening the file in Apple's Resource Editor,
+	ResEdit. In addition, Word replaces the FoxPro file header with a Word header,
+	so you can't simply use ResEdit to change the creator and file types. All
+	attempts to open the file in FoxPro will result in the error message given in
+	the "Symptoms" section of thie article.
+	
+	Additional query words: VFoxMac FoxMac
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro260aMac kbVFP300bMac
+	Version           : MACINTOSH:2.6a,3.0b
+	
+	=============================================================================
+	

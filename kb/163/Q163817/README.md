@@ -1,0 +1,144 @@
+---
+layout: page
+title: "Q163817: How To Create a Printer Using GSNW"
+permalink: kb/163/Q163817/
+---
+
+## Q163817: How To Create a Printer Using GSNW
+
+	Article: Q163817
+	Product(s): Microsoft Windows NT
+	Version(s): WinNT:4.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 09-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	To access the Novell Printers from the Microsoft Client computers without
+	NetWare client software, you can create a gateway using Gateway Services for
+	NetWare (GSNW) that comes with Windows NT Server. You can make gateways for
+	resources located on NetWare Directory Service (NDS) trees as well as for
+	resources on servers running NetWare 2.x or later with bindery security. These
+	resources include volumes, directories, printers, and print queues.
+	
+	GSNW also enables users working locally at the Windows NT Server computer to
+	directly access NetWare file and print resources, both on NDS trees and on
+	servers with bindery security.
+	
+	MORE INFORMATION
+	================
+	
+	Before you can create a gateway on a Windows NT Server computer:
+	
+	- You must have a user account on the NetWare network with the necessary rights
+	  for the resources you want to access.
+	
+	- The NetWare server must have a group named NTGATEWAY with the necessary
+	  rights for the resources you want to access.
+	
+	- The NetWare user account you use must be a member of the NTGATEWAY group.
+	
+	The NetWare user account you use to enable gateways can be either an NDS account
+	or a bindery account. If the server will have gateways to both NDS resources and
+	resources on servers running bindery security, the user account must be a
+	bindery account. (This account can connect to NDS resources through bindery
+	emulation). If you create gateways only to NDS resources, the account can be an
+	NDS account.
+	
+	Creating a gateway is a two-step process.
+	
+	1. First you enable gateways on the server running Windows NT Server. When you
+	  enable a gateway, you must type the name and password of the user account
+	  that has access to the NetWare server and is a member of the NTGATEWAY group
+	  on that NetWare server.
+	
+	  If you are activating a gateway to an NDS resource, and the gateway user
+	  account is a bindery user account, you should specify the resource using the
+	  bindery context name.
+	
+	  If you are using a NDS user account, and you do not plan on also creating
+	  gateways to bindery resources, than you can specify the NDS resource name.
+	  You need to do this only once for each server that will act as a gateway.
+	
+	2. To activate a gateway for a print queue, use Print Manager.
+	
+	Steps to Setup the Printer on the Windows NT 4.0 Computer
+	---------------------------------------------------------
+	
+	1. Click the Start button, point to Settings, and click Printers. Double- click
+	  the Add Printer icon.
+	
+	2. Click the My computer radio button.
+	
+	3. Click Add Port.
+	
+	4. Double-click on Local Port.
+	
+	5. Type in the UNC name format (\\<servername>\<printername>) of the
+	  Novell server and printer name (this should be the same UNC name when you
+	  browse the NetWare network).
+	
+	6. Click OK and Close.
+	
+	7. Select the correct driver for the printer.
+	
+	8. Type in the printer name.
+	
+	9. Share out the printer. This is the name that the Client will see when
+	  browsing for the printer.
+	
+	10. Click finish and test the printout.
+	
+	Steps to setup the printer on a Windows NT 3.5 and 3.51 Computer
+	----------------------------------------------------------------
+	
+	1. From Print Manager, select Create Printer.
+	
+	2. At the Create Printer dialog box, type in the printer name, and then select
+	  the correct printer driver.
+	
+	3. Select OTHER in the PRINT TO: box and double-click on Local Port.
+	
+	4. Type in the UNC name format (\\<servername>\<printername>) of the
+	  Novell server and printer name (this should be the same UNC name when you
+	  browse the NetWare network).
+	
+	5. Click on the share this printer on the network box and type in the share
+	  name.
+	
+	6. Click OK.
+	
+	Security for gateway resources is provided on two levels:
+	
+	- On the computer running Windows NT Server and acting as a gateway, you can
+	  set share-level permissions for each resource made available through the
+	  gateway.
+	
+	- On the NetWare file server, the NetWare administrator can assign trustee
+	  rights to the user account used for the gateway or to the Ntgateway group.
+	  These rights will be enforced for all Microsoft client users who access the
+	  resource through the gateway.
+	
+	There is no auditing of gateway access.
+	
+	NOTE: Because requests from Microsoft networking clients are being processed
+	through the gateway, access is slower than direct access from the client to the
+	NetWare network. Clients that require frequent access to NetWare resources
+	should run Windows NT Workstation with the Client Service for NetWare or Windows
+	95 with its NetWare client software, to achieve higher performance.
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+	Version           : WinNT:4.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

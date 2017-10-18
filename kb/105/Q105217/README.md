@@ -1,0 +1,105 @@
+---
+layout: page
+title: "Q105217: Scenes 1.0: Cannot Write to Scenes File"
+permalink: kb/105/Q105217/
+---
+
+## Q105217: Scenes 1.0: Cannot Write to Scenes File
+
+	Article: Q105217
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): WINDOWS:1.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 10-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Scenes (all collections), version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	In Microsoft Scenes, if you load a new screen saver image or change the
+	wallpaper, you may receive one of the following error messages:
+	
+	  Cannot write to Scenes file. Your hard disk may be nearly full.
+	
+	  -or-
+	
+	  Cannot write to file. Your hard disk may be nearly full. Check out how much
+	  disk space is available and, if necessary, delete some files you no longer
+	  use.
+	
+	Usually, you receive the first error message when 76 percent of a Scenes image is
+	loaded. When this problem occurs, the screen blanks out and the error message
+	scrolls across the center of the screen from left to right.
+	
+	The second error message commonly appears when 85 percent of a new wallpaper is
+	loaded.
+	
+	NOTE: These are the percentages and situations in which these problems most
+	commonly occur. You may experience these errors at a different point in the
+	loading process.
+	
+	CAUSE
+	=====
+	
+	The error messages may occur because an invalid Set Temp= statement exists in
+	the Autoexec.bat file or because insufficient hard disk space is available in
+	the temporary folder. Microsoft Scenes 1.0 requires at least 2 megabytes (MB) of
+	free hard disk space or a minimum 2-MB RAM drive for the storage of temporary
+	files.
+	
+	Your system may stop responding (hang) or system performance may slow down if an
+	invalid Set Temp= statement exists in the Autoexec.bat file or if less than 1 MB
+	of free hard disk space exists in the temporary folder.
+	
+	RESOLUTION
+	==========
+	
+	If your system has a RAM drive of 1 MB or less, and if you have set the TEMP=
+	variable to point to it, increase the RAM drive to a minimum of 2 megabytes.
+	Also, check the temporary directory for validity and free space by following
+	these steps:
+	
+	1. Exit Windows.
+	
+	2. At the MS-DOS prompt, type "set" (without the quotation marks) and press the
+	  ENTER key. Determine which folder (directory) the TEMP= statement is pointing
+	  to.
+	
+	3. Change to the folder listed on the TEMP= line by the SET command. (For
+	  example, if the TEMP= line reads TEMP=C:\TEMP, type "cd\temp" (without the
+	  quotation marks), and then press ENTER.)
+	
+	4. Type "dir" (without the quotation marks) at the temporary directory prompt
+	  and press ENTER.
+	
+	  This displays any undeleted temporary files and the number of bytes free.
+	
+	5. Delete any unnecessary temporary files.
+	
+	6. Verify that 2 or more megabytes of free disk space exist.
+	
+	NOTE: If the bytes free value is less than or equal to 10 MB, it is recommended
+	that you use a disk defragmenter.
+	
+	To test the validity of the Set Temp= line in the Autoexec.bat file, run the
+	Microsoft Diagnostics program (MSD) by typing "msd" (without the quotation
+	marks) from the Windows folder. When MSD first starts, it displays an error
+	message if the Set Temp= statement in the Autoexec.bat file has any trailing
+	spaces or is invalid. If MSD starts up without an error, return to MS-DOS by
+	pressing the F3 key.
+	
+	Additional query words: crash freeze freezes hangs hung lockups msscenes screen saver screensaver
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbScenesSearch kbScenes100
+	Version           : WINDOWS:1.0
+	
+	=============================================================================
+	

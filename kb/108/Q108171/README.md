@@ -1,0 +1,91 @@
+---
+layout: page
+title: "Q108171: Restoring Default FoxPro 1.02 Resource File Color Sets"
+permalink: kb/108/Q108171/
+---
+
+## Q108171: Restoring Default FoxPro 1.02 Resource File Color Sets
+
+	Article: Q108171
+	Product(s): Microsoft FoxPro
+	Version(s): MS-DOS:1.02
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 03-AUG-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft FoxPro for MS-DOS, version 1.02 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The FoxPro for MS-DOS resource file (by default FOXUSER.DBF and its associated
+	memo file, FOXUSER.FPT) contains 18 default color sets when FoxPro is first
+	installed. If this information is deleted or damaged, no color sets are listed
+	in the Load Color Sets dialog box of the Color Picker.
+	
+	To restore the original color sets, run the PROINST.PRG program.
+	
+	MORE INFORMATION
+	================
+	
+	To view the color sets
+	----------------------
+	
+	1. From the Window menu, choose Color. This displays the Color Picker dialog
+	  box.
+	
+	2. Choose the Load button. This displays the Color Sets dialog box.
+	
+	This dialog box is empty if the resource file does not contain any color sets.
+	
+	To restore the default color sets
+	---------------------------------
+	
+	CAUTION: The PROINST.PRG program overwrites the resource file currently in use.
+	Any information currently stored in the resource file, such as Browse window
+	settings and diary data, will be lost.
+	
+	1. Make sure the correct resource file (the one you want to contain the color
+	  sets) is in use.
+	
+	  NOTE: Use the SYS(2005) function to check the current resource file.
+	
+	2. Run PROINST.PRG from the main FoxPro directory.
+	
+	3. When prompted for the source drive (the floppy drive you will insert a FoxPro
+	  installation disk in) use the SPACEBAR to choose the appropriate drive, then
+	  press the ENTER key.
+	
+	4. Insert FoxPro Installation Disk 2 in the source drive.
+	
+	5. When prompted, choose your monitor type, then press the ENTER key.
+	
+	6. You may be prompted to overwrite your FoxUser (resource) file. Choose Yes to
+	  overwrite the current resource file with the information for the seven color
+	  sets.
+	
+	7. In the FoxPro Optional Products Installation Procedure dialog box, press the
+	  DOWN ARROW key to select Color Sets, and then press the SPACEBAR.
+	
+	8. Press the ENTER key to begin the installation. When asked if you want to
+	  begin the installation, choose Yes.
+	
+	A message box that says "Installation complete. Press any key to continue."
+	appears. After you press a key, FoxPro automatically quits, exiting to an MS-DOS
+	prompt.
+	
+	The original color sets will be available the next time FoxPro is run.
+	
+	Additional query words: FoxDos colorsets akz
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbFoxproSearch kbZNotKeyword3
+	Version           : MS-DOS:1.02
+	
+	=============================================================================
+	

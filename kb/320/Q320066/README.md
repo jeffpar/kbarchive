@@ -1,0 +1,191 @@
+---
+layout: page
+title: "Q320066: SMS: A Large .tmp File Is Created When You Install a Client"
+permalink: kb/320/Q320066/
+---
+
+## Q320066: SMS: A Large .tmp File Is Created When You Install a Client
+
+	Article: Q320066
+	Product(s): Microsoft Systems Management Server
+	Version(s): 2.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server version 2.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you install or upgrade a client computer that is running Systems Management
+	Server (SMS) 2.0, a large temporary (.tmp) file may be created in the
+	%SystemRoot%\MS\SMS\Core\Bin folder on the client computer. Typically, this file
+	is named ~glh000*.tmp. When this issue occurs, Clicore.exe may use 90 percent or
+	more of the client's CPU resources. The .tmp file grows until the client runs
+	out of hard disk space, and you receive an error message. The error message
+	states that the client installation did not succeed and to contact your
+	administrator.
+	
+	CAUSE
+	=====
+	
+	This issue may occur if the Clicore.exe file becomes corrupted as it is copied
+	to the client. This issue may also occur if the Clicore.exe file on the site
+	server, client access point (CAP), logon point, or client is corrupted. The
+	Clicore.exe file may be corrupted if any of the following conditions exist:
+	
+	- The Clicore.exe file has a different time and date stamp than the Clicore.exe
+	  file in the SMS 2.0 source.
+	
+	- The Clicore.exe file is a different size than the Clicore.exe file in the SMS
+	  2.0 source.
+	
+	- When you run the "clicore.exe /x" command from a command prompt, a list of
+	  client installation files that are contained in the Clicore.exe file that are
+	  available for extraction does not appear.
+	
+	RESOLUTION
+	==========
+	
+	A supported fix is now available from Microsoft, but it is only intended to
+	correct the problem that is described in this article. Only apply it to systems
+	that are experiencing this specific problem. This fix may receive additional
+	testing. Therefore, if you are not severely affected by this problem, Microsoft
+	recommends that you wait for the next Systems Management Server service pack
+	that contains this fix.
+	
+	To resolve this problem immediately, contact Microsoft Product Support Services
+	to obtain the fix. For a complete list of Microsoft Product Support Services
+	phone numbers and information about support costs, visit the following Microsoft
+	Web site:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	NOTE: In special cases, charges that are ordinarily incurred for support calls
+	may be canceled if a Microsoft Support Professional determines that a specific
+	update will resolve your problem. The usual support costs will apply to
+	additional support questions and issues that do not qualify for the specific
+	update in question.
+	
+	The English-language version of this fix for SMS 2.0 Service Pack 3 (SP3) sites
+	should have the following file attributes or later:
+	
+	  Date         Time   Version        Size     File name     Platform
+	  ------------------------------------------------------------------
+	  01-Mar-2001  18:50  2.0.1493.3258  586,512  Boot32nd.exe  Alpha
+	  01-Mar-2001  18:50  2.0.1493.3258  586,512  Boot32nw.exe  Alpha
+	  01-Mar-2001  18:50  2.0.1493.3258  586,512  Boot32wn.exe  Alpha
+	  01-Mar-2001  18:50  2.0.1493.3258  374,528  Boot32nd.exe  X86
+	  01-Mar-2001  18:50  2.0.1493.3258  374,528  Boot32nw.exe  X86
+	  01-Mar-2001  18:50  2.0.1493.3258  374,528  Boot32wn.exe  X86
+	
+	NOTE: Because of file dependencies, the most recent hotfix or feature that
+	contains the above files may also contain additional files.
+	
+	
+	
+	How to Install the Hotfix
+	-------------------------
+	
+	To install the hotfix, use the appropriate method.
+	
+	Use the Hotfix Installer:
+	
+	NOTE: This method works only for Intel-based computers.
+	
+	1. Create a folder in a location that is accessible to your SMS site servers.
+	
+	2. Copy the update file (Q320066.exe) and platform folders to the new folder.
+	  Arrange the new folder structure so that the update file is located one
+	  folder "above" the platform folders.
+	
+	3. From each of the primary and secondary SMS site servers in your environment,
+	  log on to your site server by using an account with administrator
+	  permissions.
+	
+	4. Quit the SMS Administrator console, if it is running.
+	
+	5. Run Q320066.exe, and then follow the instructions in the wizard.
+	
+	Manual Installation:
+	
+	1. Create a folder in a location that is accessible to your SMS site servers.
+	
+	2. Copy the platform folders that contain the hotfix files to the new folder.
+	
+	3. From each of the primary and secondary SMS site servers in your environment,
+	  log on to your site server by using an account with administrator
+	  permissions.
+	
+	4. Quit the SMS Administrator console, if it is running.
+	
+	5. Stop all SMS services.
+	
+	6. Replace the Boot32nd.exe file in the
+	  <Sms_root_folder>\Bin\<Platform> folder with the version from the
+	  hotfix.
+	
+	7. Replace the Boot32nw.exe file in the
+	  <Sms_root_folder>\Bin\<Platform> folder with the version from the
+	  hotfix.
+	
+	8. Replace the Boot32wn.exe file in the
+	  <Sms_root_folder>\Bin\<Platform> folder with the version from the
+	  hotfix.
+	
+	9. Restart all SMS services.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed that this is a problem in the Microsoft products that
+	are listed at the beginning of this article. This problem was first corrected in
+	the Systems Management Server 2.0 Service Pack 4 Hotfix Rollup Package (HRP).
+	
+	For additional information about the SMS 2.0 SP4 HRP, click the article number
+	below to view the article in the Microsoft Knowledge Base:
+	
+	  Q323206 SMS: List of Bugs Fixed in the Systems Management Server 2.0 SP4 HRP
+	
+	MORE INFORMATION
+	================
+	
+	Corrupted Clicore.exe files have occurred in two scenarios:
+	
+	- The more common variation of this problem is addressed in hotfix Q287990. In
+	  this case, the corruption occurs during the remote client installation. The
+	  Q287990 hotfix includes changes to the server-side components that are
+	  responsible for remote client installation.
+	
+	For additional information, click the article number below to view the article in
+	the Microsoft Knowledge Base:
+	
+	  Q287990 Large .tmp File Is Created When You Install or Upgrade an SMS
+	  2.0-based Client
+	
+	- The hotfix that is described in this article addresses a less common
+	  variation of the problem. In this case, files may become corrupted while the
+	  client copies files to itself.
+	
+	You can apply both of these hotfixes if you suspect that you are experiencing the
+	issue that is described in this article. The hotfixes are complementary; they
+	contain different files. The hotfix that is described in this article contains
+	client-side files. The Q287990 hotfix contains server-side files.
+	
+	Additional query words: prodsms
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbSMSSearch kbSMS200
+	Version           : :2.0
+	Hardware          : x86
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

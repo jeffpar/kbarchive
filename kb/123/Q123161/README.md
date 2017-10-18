@@ -1,0 +1,116 @@
+---
+layout: page
+title: "Q123161: BUG: ios::internal Adds No Fill Characters for int and long"
+permalink: kb/123/Q123161/
+---
+
+## Q123161: BUG: ios::internal Adds No Fill Characters for int and long
+
+	Article: Q123161
+	Product(s): Microsoft C Compiler
+	Version(s): 1.0,1.5,1.51,2.0,2.1,4.0,4.1,4.2,5.0
+	Operating System(s): 
+	Keyword(s): kbCodeGen kbVC kbVC500bug kbHWx86
+	Last Modified: 15-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The C/C++ Compiler (CL.EXE), included with:
+	   - Microsoft Visual C++, versions 1.5, 1.51 
+	   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+	   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+	   - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1, 4.0, 4.1, 4.2, used with:
+	      - the hardware: Intel x86 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Using member function ios::flags() with flag ios::internal fails to add fill
+	characters after the leading sign but before the value. This only occurs for
+	negative integers or negative long integers. For other data types and positive
+	integers or positive long integers, the flag works correctly.
+	
+	The following is output from the sample program given under "MORE INFORMATION":
+	
+	  --- Output Starts ---
+	
+	+          1234      // Correct, positive integer with space between
+	                       + and 1234.
+	
+	+          1234      // Correct, positive long integer.
+	+      1234.000      // Correct, positive float.
+	+      1234.000      // Correct, positive double.
+	         -1234      // Incorrect, negative integer with no space
+	                       between - and 1234.
+	         -1234      // Incorrect, negative long integer.
+	-     1.23e+003      // Correct, negative float in scientific notation.
+	-     1.23e+003      // Correct, negative double.
+	
+	  --- Output Ends ---
+	
+	RESOLUTION
+	==========
+	
+	Cast the integer or long integer values to float or double values, and use
+	manipulator setprecision(0) and ios flag ios::fixed. See the sample code in the
+	"More Information" section of this article.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article.
+	
+	MORE INFORMATION
+	================
+	
+	Sample Code to Reproduce Problem
+	--------------------------------
+	
+	  /* Compile options needed: none
+	  */ 
+	
+	  #include        <IOSTREAM.H>
+	  #include        <IOMANIP.H>
+	
+	  #pragma         warning( disable : 4270 )
+	  #define         WIDTH   20
+	
+	  void main( void )
+	  {
+	    int i = 1234;
+	
+	    cout.flags( ios::showpos | ios::internal );
+	    cout << setw(WIDTH) << (int) i << endl;
+	    cout << setw(WIDTH) << (long) i << endl;
+	
+	    cout.precision(3);
+	    cout.flags( ios::showpos | ios::internal | ios::fixed );
+	    cout << setw(WIDTH) << (float) i << endl;
+	    cout << setw(WIDTH) << (double) i << endl;
+	
+	    cout << setw(WIDTH) << (int)-i << endl;  // Problem
+	    cout << setw(WIDTH) << (long)-i << endl; // Problem
+	
+	    // The following two lines show how to work around the problem.
+	    // cout << setprecision(0) << setw(WIDTH) <<  (float)-i << endl;
+	    // cout << setprecision(0) << setw(WIDTH) <<  (float)-i << endl;
+	
+	    cout.precision(3);
+	    cout.flags( ios::showpos | ios::internal | ios::scientific );
+	    cout << setw(WIDTH) << (float)-i << endl;
+	    cout << setw(WIDTH) << (double)-i << endl;
+	  }
+	
+	Additional query words: kbVC400bug buglist1.50 buglist1.00 buglist2.00
+	
+	======================================================================
+	Keywords          : kbCodeGen kbVC kbVC500bug kbHWx86 
+	Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+	Version           : :1.0,1.5,1.51,2.0,2.1,4.0,4.1,4.2,5.0
+	Issue type        : kbbug
+	
+	=============================================================================
+	

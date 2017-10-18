@@ -1,0 +1,88 @@
+---
+layout: page
+title: "Q193766: SMS: Despooler Reports Out of Disk Space in Event Log"
+permalink: kb/193/Q193766/
+---
+
+## Q193766: SMS: Despooler Reports Out of Disk Space in Event Log
+
+	Article: Q193766
+	Product(s): Microsoft Systems Management Server
+	Version(s): winnt:1.2
+	Operating System(s): 
+	Keyword(s): kbDespooler smsdespooler
+	Last Modified: 31-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server version 1.2 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When redistributing a package, despooler may report out of disk space in the
+	application event log (Event 109) even though there is sufficient disk space. In
+	addition, the package will not be copied to the distribution point.
+	
+	CAUSE
+	=====
+	
+	This problem may occur if a file that already exists in the distribution share
+	point is open or in use when that file is being recopied.
+	
+	WORKAROUND
+	==========
+	
+	Restarting the computer that contains the open file will clear file contention
+	issues. If the problem occurs again, it may be necessary to troubleshoot
+	conflicts with backup software, antivirus software, and the file system.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Systems Management Server
+	version 1.2.
+	
+	MORE INFORMATION
+	================
+	
+	The following event will appear in the Windows NT application event log:
+	
+	     Event 109
+	     Failed to install package. There isn't sufficient disk space on package
+	     server \\<Server>\<Share>\<PackageID>. Disk space available on that
+	     server is megabytes, space required is megabytes.
+	
+	Note that <Server>, <Share>, and <PackageID> above will be the
+	name of your server, your package distribution share, and the ID of the package
+	you are sending.
+	
+	Also note that the amount of disk space required and disk space available is
+	reported as null, or blank.
+	
+	In the despooler log file, Despool.log, an error similar to the following error
+	will be logged:
+	
+	     ~Copying E:\_S M0000.TMP\filename.EXE to
+	     E:\SMS_PKGE\DOG0005D\filename.EXE, Failed, Win32 Error = 32
+	     $$>SMS_DESPOOLER><Thu Sep 10 09:55:37 1998~><thread=1D0>
+	
+	This error identifies the file that could not be copied. Win32 Error 32 indicates
+	that the process cannot access the file because it is being used by another
+	process. The file is in use.
+	
+	Event 109 should indicate that there is a file contention error, or that the file
+	is in use, not that there is a disk space problem.
+	
+	Additional query words: prodsms anti virus
+	
+	======================================================================
+	Keywords          : kbDespooler smsdespooler 
+	Technology        : kbSMSSearch kbSMS120
+	Version           : winnt:1.2
+	Issue type        : kbbug
+	
+	=============================================================================
+	

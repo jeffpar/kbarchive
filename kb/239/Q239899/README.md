@@ -1,0 +1,108 @@
+---
+layout: page
+title: "Q239899: SMS: Administrator Console Cannot Connect After Reinstallation"
+permalink: kb/239/Q239899/
+---
+
+## Q239899: SMS: Administrator Console Cannot Connect After Reinstallation
+
+	Article: Q239899
+	Product(s): Microsoft Systems Management Server
+	Version(s): 2.0
+	Operating System(s): 
+	Keyword(s): kbsms200 kbsms200bug
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server version 2.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	After fully removing and reinstalling Microsoft Systems Management Server (SMS)
+	2.0 on a server that is running Microsoft Windows NT or Microsoft Windows 2000
+	with a new site code that is alphanumerically greater than a previously
+	installed site, SMS Administrator consoles cannot connect to the new site
+	server.
+	
+	Whether the SMS Administrator Console is excuted locally or remotely, the SMS
+	Administrator Console is unable to connect to the SMS Site Database. The SMS
+	Administrator Console displays the following message:
+	
+	  Connection Failed
+	
+	Also, SMSprov.log contains the following error message:
+	
+	  11A][Mon 10/02/2000 19:50:57]:CSspClassManager::Initialize, Reading SQL db
+	  info from registry for sitecode WWW... [11A][Mon 10/02/2000 19:50:57]:NOTE:If
+	  the site has just been installed, the registry may not yet be set up and the
+	  follwing may be normal: [11A][Mon 10/02/2000 19:50:57]:
+	  *
+	  E:\OPALSP2\sdk_provider\nt\smsprov\SspClassManager.cpp(437) : Failed to find
+	  specific provider config, failing INIT this time around, will try again.
+	
+	SMSProv.log is located on the server where the SMS Provider is installed. During
+	SMS primary site installation, the SMS administrator can choose the location of
+	the SMS Provider. It can be installed on the SMS site server, or a remote SQL
+	server. After it is installed, it cannot be relocated unless SMS is reinstalled.
+	
+	CAUSE
+	=====
+	
+	When you remove a site server, its namespace is not removed from the Windows
+	Management Instrumentation (WMI) repository (previously known as WBEM) for the
+	server.
+	
+	WORKAROUND
+	==========
+	
+	To work around this behavior, on the site server provider perform the following
+	steps:
+	
+	1. Run the C:\Winnt\System32\Wbem\Wbemtest.exe utility locally.
+	
+	2. Click Connect.
+	
+	3. In the Server/Namespace box, type "root\sms" (without the quotation marks),
+	  and then click Login.
+	
+	4. After you are connected, click Enum Classes.
+	
+	5. Click Recursive, and then click OK.
+	
+	6. Scroll down and double-click SMS_ProviderLocation().
+	
+	7. Click Instances.
+	
+	8. You should see two "SMS__ProviderLocation.SiteCode='<XXX>'" entries.
+	  Select the old site's site code, and then click Delete.
+	
+	9. Double-click the __Namespace object.
+	
+	10. Click Instances.
+	
+	11. You should see two "__Namespace.name='site_XXX'" entries. Select the old
+	  site's site code, and then click Delete.
+	
+	12. Close Wbemtest.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Systems Management Server
+	version 2.0.
+	
+	Additional query words: prodsms
+	
+	======================================================================
+	Keywords          : kbsms200 kbsms200bug 
+	Technology        : kbSMSSearch kbSMS200
+	Version           : :2.0
+	Issue type        : kbbug
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

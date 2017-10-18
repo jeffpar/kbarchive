@@ -1,0 +1,121 @@
+---
+layout: page
+title: "Q105962: PC MAPI: C Equivalent to MAPI APPEXEC.TXT in MS Visual Basic"
+permalink: kb/105/Q105962/
+---
+
+## Q105962: PC MAPI: C Equivalent to MAPI APPEXEC.TXT in MS Visual Basic
+
+	Article: Q105962
+	Product(s): Microsoft Mail For PC Networks
+	Version(s): WINDOWS:3.0,3.0b,3.2
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 28-OCT-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Mail for Windows, versions 3.0, 3.0b, 3.2 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The Microsoft C code fragment below shows how to call application programming
+	interface (API) functions in the APPEXEC.DLL file, which is included on the
+	version 3.0 and 3.2 Microsoft Mail for PC Networks Technical Reference disk, to
+	access the information in the PARAMBLK structure. The APPEXEC.TXT file, which is
+	also included on the Microsoft Mail for PC Networks Technical Reference disk,
+	includes only Microsoft Visual Basic code that calls APPEXEC.DLL.
+	
+	The steps below describe how to access the PARAMBLK structure. This is also
+	described in the APPEXEC.TXT file. After obtaining the MessageID returned by
+	GetMessageID(), you can use Messaging API (MAPI) from versions 3.0 and 3.2 of
+	Microsoft Mail for PC Networks to access information on the mail message
+	correlating to the MessageID. This program was written using Microsoft Visual
+	C++ version 1.0.
+	
+	MORE INFORMATION
+	================
+	
+	The code below shows that to access the PARAMBLK structure, your code must do
+	the following:
+	
+	1. Obtain the hexadecimal memory handle from the command line of your
+	  application.
+	
+	2. Convert the hexadecimal handle into an integer.
+	
+	3. Call the Windows API GlobalRealloc() function to copy the PARAMBLK structure
+	  into your application's memory.
+	
+	4. Call the APPEXEC API ReleaseSemaphore() function to tell APPEXEC you have
+	  copied the PARAMBLK structure.
+	
+	5. Call the APPEXEC API CrackParameterBlock() and GetMessageID() functions to
+	  obtain the wCommand and MessageID information from the PARAMBLK structure.
+	
+	Sample Code Fragment
+	--------------------
+	
+	  #include <windows.h>
+	  #include <stdlib.h>
+	  #include <appexec.h>
+	
+	  int PASCAL WinMain( HINSTANCE hinstCurrent, HINSTANCE hinstPrevious,
+	  LPSTR lpCmdLine, int nCmdShow )
+	  {
+	  char    szBuf[ 128 ];
+	  char    szHandle[ 128 ];
+	  DWORD   dw;
+	  BOOL    fVal;
+	  HGLOBAL ghParamBlk;
+	
+	  // procedure to pull messageID
+	
+	  if( *lpCmdLine ) {
+	
+	   wsprintf( szHandle, "0x%s", lpCmdLine );
+	
+	   ghParamBlk = (HGLOBAL)strtol( szHandle, '\0', 16 );
+	
+	   ghParamBlk = GlobalReAlloc( ghParamBlk, 0, GMEM_MODIFY |GMEM_MOVEABLE
+	        | GMEM_SHARE );
+	
+	   ReleaseSemaphore();
+	
+	   fVal = CrackParameterBlock( ghParamBlk, CPB_wCommand, &dw, szBuf );
+	   if( fVal == 0 )
+	     goto ErrorStarting;
+	
+	   fVal = CrackParameterBlock( ghParamBlk, CPB_wMessageIDCount, &dw,
+	   szBuf);
+	   if( fVal == 0 || dw != 1 )
+	     goto ErrorStarting;
+	
+	   fVal = GetMessageID( ghParamBlk, 0, szBuf );
+	   if( fVal == 0 )
+	      goto ErrorStarting;
+	                    }
+	
+	  else
+	   goto ErrorStarting;
+	
+	  MessageBox( 0, szBuf, "Message ID", MB_OK );
+	  return 0;
+	
+	  ErrorStarting:
+	   MessageBox( 0, "Unable to get Message ID", "Error", MB_OK );
+	   return 1;
+	  }
+	
+	Additional query words: 3.00 3.00b 3.20
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMailSearch kbZNotKeyword3 kbMail300 kbMail320 kbMail300b
+	Version           : WINDOWS:3.0,3.0b,3.2
+	
+	=============================================================================
+	

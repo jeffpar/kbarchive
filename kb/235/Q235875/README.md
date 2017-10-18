@@ -1,0 +1,67 @@
+---
+layout: page
+title: "Q235875: XADM: Japanese Characters Appear as Vertical Bars in Admin.exe"
+permalink: kb/235/Q235875/
+---
+
+## Q235875: XADM: Japanese Characters Appear as Vertical Bars in Admin.exe
+
+	Article: Q235875
+	Product(s): Microsoft Exchange
+	Version(s): winnt:4.0,5.0,5.5
+	Operating System(s): 
+	Keyword(s): exc4 exc5 exc55
+	Last Modified: 27-JUN-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you view information in the Exchange Server Administrator program, some of
+	the characters appear as vertical dark bars.
+	
+	This happens when you view information in the U.S. version of the Administrator
+	program on a computer running the U.S. version of Exchange Server that has
+	directory information replicated to it from a Japanese version Exchange Server
+	computer.
+	
+	CAUSE
+	=====
+	
+	The Japanese code page is not installed on the U.S. version server or the MS
+	Mincho font is not being used by the Exchange Server Administrator program.
+	
+	RESOLUTION
+	==========
+	
+	Install the Japanese code page on the U.S. version Exchange Server computer, and
+	in the Exchange Server Administrator program, on the View menu, click Font, and
+	select MS Mincho.
+	
+	MORE INFORMATION
+	================
+	
+	Using the MS Mincho font allows the U.S. version of the Exchange Server
+	Administrator program to display the Japanese information correctly, instead of
+	with vertical bars.
+	
+	For more information on installing foreign language code pages, please see the
+	following article in the Microsoft Knowledge Base:
+	
+	  Q160028 XADM: Adding Code Pages to Windows NT Server 4.0
+	
+	Additional query words: jp barcode lines
+	
+	======================================================================
+	Keywords          : exc4 exc5 exc55 
+	Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+	Version           : winnt:4.0,5.0,5.5
+	Issue type        : kbprb
+	
+	=============================================================================
+	

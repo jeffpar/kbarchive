@@ -1,0 +1,168 @@
+---
+layout: page
+title: "Q258632: Baseball 2001: Game Screen Distorted or Not Centered on Monitor"
+permalink: kb/258/Q258632/
+---
+
+## Q258632: Baseball 2001: Game Screen Distorted or Not Centered on Monitor
+
+	Article: Q258632
+	Product(s): Microsoft Home Games
+	Version(s): WINDOWS:
+	Operating System(s): 
+	Keyword(s): kbdisplay kbimu msgame
+	Last Modified: 22-OCT-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Baseball 2001 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you play Microsoft Baseball 2001, the game screen may be distorted or may
+	not be centered on the monitor.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, use the following methods in the order in which they are
+	presented.
+	
+	Change the Screen Resolution in Microsoft Windows
+	-------------------------------------------------
+	
+	To change the screen resolution in Windows:
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click Display.
+	
+	3. Click the Settings tab.
+	
+	4. Move the Desktop Area or Screen Area slider to the 800 x 600 setting.
+	
+	5. Click OK.
+	
+	  NOTE: If you are unable to change the resolution setting to 800 x 600, verify
+	  that the correct monitor is selected and that the monitor supports a
+	  resolution setting of 800 x 600.
+	
+	If the issue continues to occur, proceed to the next method.
+	
+	Adjust Your Monitor Controls
+	----------------------------
+	
+	Adjust the controls on the front of your monitor to center the game screen on the
+	monitor.
+	
+	If the issue continues to occur, proceed to the next method.
+	
+	Configure Your Monitor
+	----------------------
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click Display.
+	
+	3. Follow the appropriate steps for your version of Microsoft Windows:
+	
+	Microsoft Windows 95:
+	
+	  a. On the Settings tab, click Change Display Type.
+	
+	  b. Under Monitor Type, note the manufacturer and model of your current video
+	     driver, and then click Change.
+	
+	  c. Click Show All Devices.
+	
+	Microsoft Windows 95 OEM Service Release 2 (OSR2):
+	
+	  a. On the Settings tab, click Advanced Properties.
+	
+	  b. On the Monitor tab, note the manufacturer and model of your current video
+	     driver, and then click Change.
+	
+	  c. Click Show All Devices.
+	
+	Microsoft Windows 98:
+	
+	  a. On the Settings tab, click Advanced.
+	
+	  b. Click the Monitor tab.
+	
+	  c. Click to select the "Automatically detect Plug & Play monitors" check
+	     box.
+	
+	  d. Note the manufacturer and model of your current monitor, and then click
+	     Change.
+	
+	  e. Click Next.
+	
+	  f. Click "Display a list of all the drivers in a specific location, so you
+	     can select the driver you want," and then click Next.
+	
+	  g. Click "Show all hardware."
+	
+	4. In the Manufacturers box, click the manufacturer of your monitor.
+	
+	5. In the Models box, click the model of your monitor, and then click OK, or
+	  click Next, click Next again, and then click Finish.
+	
+	  NOTE: If you are prompted to verify that you want to change the monitor, click
+	  Yes.
+	
+	6. Click Close, and then click Close again.
+	
+	If the issue continues to occur, proceed to the next method.
+	
+	Change the Refresh Rate for Your Video Adapter
+	----------------------------------------------
+	
+	NOTE: Most video drivers that are designed for Windows 95 do not allow you to
+	change the refresh rate for your video adapter, although some third-party
+	vendors include software with their video drivers to provide this feature.
+	
+	To change the refresh rate for your video adapter:
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click Display.
+	
+	3. If you are using the retail version of Windows 95, on the Settings tab, click
+	  Change Display Type.
+	
+	  If you are using Microsoft Windows 95 OSR2, on the Settings tab, click
+	  Advanced Properties.
+	
+	  If you are using Microsoft Windows 98, click Advanced on the Settings tab.
+	
+	4. Click the Adapter tab.
+	
+	  If you do not see an Adapter tab, you cannot change the refresh rate for your
+	  video adapter.
+	
+	5. On the Adapter tab, click Adapter Default in the Refresh Rate box, and then
+	  click OK.
+	
+	  If you are prompted to test the setting, click OK.
+	
+	6. If the setting appears to function properly, click Yes.
+	
+	  If the setting does not function properly, click No, and then repeat step 5 to
+	  select a different refresh rate.
+	
+	7. Click OK, and then close Control Panel.
+	
+	Additional query words: 1.00 bball bb2001 base ball scrambled wavy
+	
+	======================================================================
+	Keywords          : kbdisplay kbimu msgame 
+	Technology        : kbHomeProdSearch kbGamesSearch kbBaseballSearch
+	Version           : WINDOWS:
+	Issue type        : kbprb
+	
+	=============================================================================
+	

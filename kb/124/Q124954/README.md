@@ -1,0 +1,130 @@
+---
+layout: page
+title: "Q124954: MHS: Err Msg: Error Getting Memory. Not Enough RAM..."
+permalink: kb/124/Q124954/
+---
+
+## Q124954: MHS: Err Msg: Error Getting Memory. Not Enough RAM...
+
+	Article: Q124954
+	Product(s): Microsoft Mail For PC Networks
+	Version(s): MS-DOS:3.0; :3.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 05-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Mail Gateway to MHS, version 3.0 
+	- Microsoft Mail Gateway to MHS Access, version 3.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The Microsoft Mail Gateway to MHS or Microsoft Mail Gateway to MHS Access
+	installation program may report the following error:
+	
+	  Error getting memory. Not enough RAM to create postoffice list
+	
+	CAUSE
+	=====
+	
+	There is not enough memory to install the addressing component of the MHS
+	gateway when more than 430 postoffice definitions exist on the local postoffice.
+	
+	RESOLUTION
+	==========
+	
+	A possible workaround is to delete several postoffice definitions from the local
+	postoffice before you install the access component. These postoffices can then
+	be redefined after the access component is successfully installed. Deleting
+	postoffices affects users in two ways:
+	
+	- Removing a postoffice definition also removes the address list for that
+	  postoffice. The address list can be imported again after the postoffice is
+	  reinstalled.
+	
+	- Because the postoffice address list (POL) is removed, any entries in a
+	  personal address list (PAL) referring to a user on a deleted postoffice will
+	  no longer work. These entries will also have to be deleted and re-created
+	  after the new postoffice address list is re- created.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in version 3.0 of the Microsoft
+	Mail Gateway to MHS and Microsoft Mail Gateway to MHS Access. This problem is
+	corrected in INSTALL.EXE version 3.0.1.
+	
+	The files listed below are available to download from the Microsoft Software
+	Library (MSL). For information on how to download these files, please see the
+	"Instructions for Downloading" section at the end of this article.
+	
+	FILES AVAILABLE FROM ONLINE SERVICES
+	------------------------------------
+	
+	Item ID      Filename   Description
+	-----------------------------------------------------------
+	S15128       MHSGINST.EXE  Update for Microsoft Mail
+	           Gateway to MHS
+	S15129       MHSAINST.EXE  Update for Microsoft Mail
+	           Gateway to MHS Access
+	
+	INSTRUCTIONS FOR DOWNLOADING
+	----------------------------
+	
+	You can download any of these self-extracting files from the following services:
+	
+	- Microsoft's World Wide Web Site on the Internet
+	
+	  On the www.microsoft.com home page, click the Support icon.
+	  Click Knowledge Base, and select the product.
+	  Enter kbfile <FILENAME>.EXE, and click GO!
+	  Open the article, and click the button to download the file.
+	
+	- Internet (anonymous FTP)
+	
+	  ftp ftp.microsoft.com
+	  Change to the Softlib/Mslfiles folder.
+	  Get <FILENAME>.EXE
+	
+	- The Microsoft Network
+	
+	  On the Edit menu, click Go To, and then click Other Location. Type "mssupport"
+	  (without the quotation marks).
+	  Double-click the MS Software Library icon.
+	  Find the appropriate product area.
+	  Locate and Download <FILENAME>.EXE.
+	
+	
+	For additional information about downloading, please see the following article in
+	the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	
+	MORE INFORMATION
+	================
+	
+	After you specify the name of the network for the postoffice on which you are
+	installing, the installation program builds a DLLIST of all known postoffices on
+	that network. After the list is compiled, you are prompted for the name of the
+	postoffice on which you want to install. The installation program then takes
+	your user name and scans for it in the postoffice list stored in memory. This is
+	how the installation program verifies it has a valid postoffice.
+	
+	The problem is that each postoffice structure in the DLLIST takes 106 bytes; in
+	addition, the DLL item itself is another 6 bytes. Therefore, the total size is
+	112 bytes.
+	
+	Additional query words: 3.00
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateMHS300 kbMailGateMHSAccess300
+	Version           : MS-DOS:3.0; :3.0
+	
+	=============================================================================
+	

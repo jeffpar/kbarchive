@@ -1,0 +1,71 @@
+---
+layout: page
+title: "Q216767: XFOR: OVVM/SNADS/Notes Connector Not Recognizing Apparently-To"
+permalink: kb/216/Q216767/
+---
+
+## Q216767: XFOR: OVVM/SNADS/Notes Connector Not Recognizing Apparently-To
+
+	Article: Q216767
+	Product(s): Microsoft Exchange
+	Version(s): winnt:5.0,5.5
+	Operating System(s): 
+	Keyword(s): kbfaq
+	Last Modified: 09-MAY-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 5.0, 5.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If the Internet Mail Service accepts an inbound SMTP message missing the TO:
+	address in the 822 section, but does have Apparently-To addressed to an
+	OV/VM(PROFS)/SNADS/Notes user, these connectors will fail to build the envelope.
+	A non-delivery report will be generated and returned to the orginal sender.
+	
+	CAUSE
+	=====
+	
+	The PROFS/SNADS/Notes Connector does not recognize Apparently-To as a valid
+	header from which an envelope, or P1, can be built. Thus, the message has no
+	recipient and is undeliverable.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, ensure that inbound SMTP traffic conforms to RFC-822
+	and RFC 2076.
+	
+	MORE INFORMATION
+	================
+	
+	A close reading of RFC-822 shows that the TO: address is the only field usable
+	in the body for generating routing information beyond that supplied by the
+	RFC-821 conversation. Within Exchange Server, the 821 information is no longer
+	used and is discarded following a successful directory lookup on the recipient.
+	When the message is transferred to the PROFS/SNADS/Notes connector (or any other
+	EDK connector), the only routing information available is that found in the 822
+	body. The Apparently-To field is an optional header defined in RFC-1211. The
+	following is an excerpt from RFC-2076:
+	
+	  RFC 2076 Internet Message Headers February 1997
+	  Apparently-To:
+	  Inserted by Sendmail when there is no "To:" recipient in the original message,
+	  listing recipients derived from the envelope into the message heading. This
+	  behavior is not quite proper, MTAs should not modify headings (except
+	  inserting Received lines), and it can in some cases cause Bcc recipients to
+	  be wrongly divulged to non-Bcc recipients. Non-standard, discouraged,
+	  mentioned in RFC 1211.
+	======================================================================
+	Keywords          :  kbfaq
+	Component         : IMS
+	Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+	Version           : winnt:5.0,5.5
+	Issue type        : kbprb
+	
+	=============================================================================
+	

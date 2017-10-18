@@ -1,0 +1,76 @@
+---
+layout: page
+title: "Q243610: MSN 5.O Minimum Installation Requirements and Highlights"
+permalink: kb/243/Q243610/
+---
+
+## Q243610: MSN 5.O Minimum Installation Requirements and Highlights
+
+	Article: Q243610
+	Product(s): The Microsoft Network
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 30-JUL-2001
+	
+	SUMMARY
+	=======
+	
+	This articles describes the minimum requirements needed for your computer in
+	order to successfully install and use MSN Internet Access, version 5.0. In
+	addition, it mentions the highlights of this release.
+	
+	MORE INFORMATION
+	================
+	
+	The minimum system requirements for MSN 5.0 are the following:
+	
+	- Computer/Processor: 486DX/66MHZ or higher
+	
+	- Windows 95 or 98 for the Operating System
+	
+	- A minimum of 16 MB (megabytes) of RAM
+	
+	- Hard drive space: For the installation only, you need 110 MB (100 MB for IE5
+	  and 10 MB for MSN components; to run MSN you need to have 65 MB available on
+	  your Hard drive (5 MB if IE5 and OE5 are already installed).
+	
+	- Microsoft mouse or compatible pointing device
+	
+	- 28.8 Modem or Internet connection
+	
+	- 4x CD-ROM drive
+	
+	- VGA or higher resolution graphics card
+	
+	- Sound card is recommended
+	
+	- WinNT is not supported by MSN
+	
+	In addition, here are the main highights for MSN 5.0:
+	
+	- Installs Microsoft Internet Explorer 5.0 as the default browser. If you're
+	  currently using MSN 2.5 or 2.0, MSN 5.0 replaces the Program Viewer.
+	
+	- Includes a new, easier setup program.
+	
+	- Includes MSN Chat 2.5
+	
+	- Additional items on the CD include: the MSN Address Book Conversion utility
+	  and Outlook 97 IMEP.
+	
+	At this time, there is no online upgrade avaiable. To order a copy of the MSN 5.0
+	CD, please visit the following Web site:
+	
+	  http://free.msn.com/replace
+	
+	or call MSN Member Support at 1-800-386-5550.
+	
+	Additional query words: kbmsn 5.00 msnetwork
+	
+	======================================================================
+	Keywords          :  
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

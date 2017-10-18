@@ -1,0 +1,93 @@
+---
+layout: page
+title: "Q37507: PRB: &quot;Floating-point Support Not Loaded&quot; Error with scanf()"
+permalink: kb/037/Q37507/
+---
+
+## Q37507: PRB: &quot;Floating-point Support Not Loaded&quot; Error with scanf()
+
+	Article: Q37507
+	Product(s): Microsoft C Compiler
+	Version(s): winnt:
+	Operating System(s): 
+	Keyword(s): kbCRT kbVC
+	Last Modified: 25-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The C Run-Time (CRT), included with:
+	   - Microsoft C for MS-DOS, versions 6.0, 6.0a, 6.0ax 
+	   - Microsoft C for OS/2, versions 6.0, 6.0a 
+	   - Microsoft C/C++ for MS-DOS, version 7.0 
+	   - Microsoft Visual C++, versions 1.0, 1.5 
+	   - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, versions 1.0, 2.0, 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When an application uses the scanf() function to read a floating-point value
+	from the console into an uninitialized "float" type global variable, an R6002
+	"floating-point format support not loaded" error occurs. This error also occurs
+	when any formatted input routine is used to read a value.
+	
+	CAUSE
+	=====
+	
+	The compiler does not generate a reference to the __fltused variable that
+	instructs the linker to load the floating-point support module.
+	
+	RESOLUTION
+	==========
+	
+	To work around this problem, initialize the floating-point variable or use the
+	variable in an expression in the routine that contains the scanf() call.
+	
+	STATUS
+	======
+	
+	This behavior is expected. To minimize the size of the executable file, the
+	compiler loads floating-point support only when it is required.
+	
+	MORE INFORMATION
+	================
+	
+	When a module uses only one of the formatted input routines and does not also
+	initialize a floating-point variable, the compiler does not load floating-point
+	support.
+	
+	Remove the comment indication from either or both of the two lines in the sample
+	code below to eliminate the R6002 error.
+	
+	Sample Code
+	-----------
+	
+	     /*
+	      * Compile options needed: none
+	      */ 
+	
+	     #include <stdio.h>
+	     float x ;
+	
+	     main()
+	     {
+	     // Remove the comment from the next line to eliminate the error.
+	     // x = 2.3 ;
+	
+	        scanf ("%f", &x) ;
+	
+	     // Remove the comment from the next line to eliminate the error.
+	     // printf ("%f\n", x) ;
+	     }
+	
+	Additional query words: floating point not loaded
+	
+	======================================================================
+	Keywords          : kbCRT kbVC 
+	Technology        : kbVCsearch kbAudDeveloper kbCRT
+	Version           : winnt:
+	Issue type        : kbprb
+	
+	=============================================================================
+	

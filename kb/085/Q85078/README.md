@@ -1,0 +1,57 @@
+---
+layout: page
+title: "Q85078: Windows: Sleep Mode and 32-Bit Disk Access"
+permalink: kb/085/Q85078/
+---
+
+## Q85078: Windows: Sleep Mode and 32-Bit Disk Access
+
+	Article: Q85078
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:3.1,3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 27-SEP-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows versions 3.1, 3.11 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Most machines that have a sleep mode cannot effectively use 32-bit disk access.
+	This is true whether the machine implements a "full sleep mode" or a sleep mode
+	that affects only the hard disk. All sleep modes turn off the hard disk as a
+	minimum, and turning off the hard disk effectively disables the functionality of
+	32-bit disk access.
+	
+	MORE INFORMATION
+	================
+	
+	There are a small number of machines on which 32-bit disk access can be enabled
+	even though they have a hard disk sleep mode. This feature is machine specific;
+	you must contact your computer manufacturer to verify whether or not your
+	machine has this feature.
+	
+	The Microsoft Windows User's Guide states the following:
+	
+	  CAUTION: Using 32-bit disk access may be unreliable on some battery-powered
+	  portable computers when the computer's power-saving features are enabled.
+	
+	REFERENCES
+	==========
+	
+	"Microsoft Windows User's Guide," version 3.1, page 535
+	
+	Additional query words: 3.10 3.11 sleepmode sleep-mode 32-bit-disk-access
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+	Version           : WINDOWS:3.1,3.11
+	
+	=============================================================================
+	

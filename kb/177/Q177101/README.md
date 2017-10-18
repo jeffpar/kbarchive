@@ -1,0 +1,121 @@
+---
+layout: page
+title: "Q177101: FIX: Modal Dialogs in MFC Regular DLL Cause ASSERT in AfxWndProc"
+permalink: kb/177/Q177101/
+---
+
+## Q177101: FIX: Modal Dialogs in MFC Regular DLL Cause ASSERT in AfxWndProc
+
+	Article: Q177101
+	Product(s): Microsoft C Compiler
+	Version(s): 4.2,5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbDlg kbDLL kbMFC kbThread kbVC420bug kbVC500bug kbVC600bug kbGrpDSMFCATL kbNoUpdate
+	Last Modified: 11-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The Microsoft Foundation Classes (MFC), used with:
+	   - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+	   - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+	   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If two or more threads display modal dialog boxes at the same time inside an MFC
+	regular dynamic-link library (DLL) (USRDLL), the following ASSERT may be
+	generated in AfxWndProc, on Wincore.cpp, line 365 in Visual C++ 6.0 (line 368 in
+	Visual C++ 5.0, line 360 in Visual C++ 4.2):
+	
+	  // All other messages route through message map.
+	  CWnd* pWnd = CWnd::FromHandlePermanent(hWnd);
+	  ASSERT(pWnd != NULL);
+	
+	This ASSERT occurs only if one of the threads was created outside of the DLL.
+	
+	The probability of this problem occurring increases with the number of threads
+	and modal dialog boxes.
+	
+	CAUSE
+	=====
+	
+	When AfxGetThread() is called in an MFC regular DLL from a secondary thread that
+	was not created inside the DLL, it returns the CWinApp object for the DLL
+	because a CWinThread object was not created for the thread in the context of the
+	DLL.
+	
+	When a modal dialog box is displayed, CWnd::RunModalLoop() pumps messages by
+	calling AfxGetThread()->PumpMessage(). If two modal dialog boxes both call
+	the CWinApp object's PumpMessage at the same time, synchronization problems
+	cause the wrong message to get processed on the wrong thread.
+	
+	RESOLUTION
+	==========
+	
+	One possible work around is to spawn secondary threads, which in turn display
+	the modal dialog boxes. Each new thread created inside the MFC regular DLL will
+	have a new CWinThread object and a separate message pump.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article.
+	
+	This problem was corrected in Microsoft Visual C++ .NET.
+	
+	MORE INFORMATION
+	================
+	
+	In Visual C++ versions earlier than Visual C++ 4.2, MFC regular DLLs could be
+	accessed only from the same thread that loaded the DLL. Support for external
+	secondary threads was added in Visual C++ 4.2.
+	
+	The following sample code shows one possible workaround:
+	
+	        UINT ShowMeTheDlg( LPVOID pParam )
+	
+	     {
+	
+	      // Create CWnd object from passed in HWND
+	      CFileSecurity FS(CWnd::FromHandle((HWND)pParam));
+	      FS.DoModal();
+	      return TRUE;
+	     }
+	
+	     void CSubfolderPage::OnBreakit()
+	     {
+	     // Start MFC Worker thread for modal dialog box. Modal dialog box has
+	     // PumpMessage code so, user interface thread is not necessary.
+	     // Can't pass CWnds between threads, so pass HWND
+	     // After DoModal call above, function returns
+	     // and thread terminates.
+	      AfxBeginThread(ShowMeTheDlg, (LPVOID)this->GetSafeHwnd());
+	     }
+	
+	REFERENCES
+	==========
+	
+	For additional information, please see the following article(s) in the Microsoft
+	Knowledge Base:
+	
+	  Q122676 Multiple Threads and MFC _USRDLLs
+	
+	(c) Microsoft Corporation 1997, All Rights Reserved.
+	Contributions by Marie Ward, Microsoft Corporation
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbDlg kbDLL kbMFC kbThread kbVC420bug kbVC500bug kbVC600bug kbGrpDSMFCATL kbNoUpdate 
+	Technology        : kbAudDeveloper kbMFC
+	Version           : :4.2,5.0,6.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

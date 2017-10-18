@@ -1,0 +1,69 @@
+---
+layout: page
+title: "Q214889: SMS: Remote Chat May Not Work on Slow Link"
+permalink: kb/214/Q214889/
+---
+
+## Q214889: SMS: Remote Chat May Not Work on Slow Link
+
+	Article: Q214889
+	Product(s): Microsoft Systems Management Server
+	Version(s): winnt:1.2,2.0
+	Operating System(s): 
+	Keyword(s): kbnetwork kbClient kbsms200 kbsms120 kbHelpDesk
+	Last Modified: 21-APR-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server versions 2.0, 1.2 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	When you attempt a remote chat session on a slow link (such as a 9,600 bits per
+	second link) by using only TCP/IP, the Chat window may behave as if the viewer
+	timed out immediately. Immediately after the viewer closes its window, the
+	client's Chat window also closes.
+	
+	MORE INFORMATION
+	================
+	
+	The TCP/IP Nagle algorithm that helps reduce small packets on a slow network is
+	the root cause. Although the Nagle algorithm can be disabled in Microsoft
+	Windows NT for troubleshooting or remote helpdesk issues, disabling the Nagle
+	algorithm may be detrimental. If it is not re-enabled, performance could be
+	degraded.
+	
+	The Nagle algorithm was developed to help with a couple of problems on the
+	Internet/ARPANET. Programs such as Telnet sometimes transmit each character at a
+	time. 1 byte of data and 40 bytes of header information in an environment that
+	can carry up to 1,500 byte packets is very inefficient. When a packet is sent,
+	it is sent with a Time to Live value (TTL); if the TTL expires, the sending node
+	retransmits the packet with a greater TTL, up to a point. In the meantime, as
+	more and more packets hit a router, the router becomes congested, up to the
+	point where it starts to drop packets. The Nagle algorithm holds a small packet
+	200 to 500 milliseconds. If there is more data to be sent to the same
+	destination, the packet is held. This decreases the overall number of packets,
+	thereby decrease the router congestion. On a slow link (9600 bits per second),
+	the wait is long enough that the Chat session does not work. One of the inherent
+	problems in the Nagle algorithm is finding a delay that works for everything.
+	
+	For additional information about the Nagle algorithm and how to disable it, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q236316 Performance Improvement for Redirector/Server Connections
+	
+	Be aware that this change could degrade performance in other areas.
+	
+	Additional query words: prodsms
+	
+	======================================================================
+	Keywords          : kbnetwork kbClient kbsms200 kbsms120 kbHelpDesk 
+	Technology        : kbSMSSearch kbSMS120 kbSMS200
+	Version           : winnt:1.2,2.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

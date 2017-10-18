@@ -1,0 +1,244 @@
+---
+layout: page
+title: "Q152316: CONDOC.EXE Extract Container/Document Info with MFC DAO"
+permalink: kb/152/Q152316/
+---
+
+## Q152316: CONDOC.EXE Extract Container/Document Info with MFC DAO
+
+	Article: Q152316
+	Product(s): Microsoft C Compiler
+	Version(s): winnt:4.0,4.1,4.2
+	Operating System(s): 
+	Keyword(s): kbcode kbfile kbsample kbDAOsearch kbDatabase kbMFC kbODBC kbVC
+	Last Modified: 06-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The Microsoft Foundation Classes (MFC), used with:
+	   - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+	   - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+	   - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	MFC does not currently provide methods for extracting container and document
+	information from DAO collections. The sample, CONDOC.EXE demonstrates how to
+	implement this extraction using MFC DAO objects and, in particular, demonstrates
+	using DAO OLE interfaces not directly available from the MFC DAO classes.
+	
+	Containers provide an application-independent way for an application to store
+	objects in a database. For example, Microsoft Access uses separate containers to
+	store forms, reports, macros, and modules. This is in a format native only to
+	Access. However, the code below shows how to see which containers are stored in
+	an Access database.
+	
+	Documents are used to store a specific instance of an application-specific object
+	within a container, such as a form, a report, etc. A container can have more
+	than one document collection. To repeat, Microsoft Access documents and
+	containers are in a format native to Access and not available programatically
+	from other products except through OLE Automation using Access itself.
+	
+	The following files are available for download from the Microsoft Download
+	Center:
+	
+	Condoc.exe
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. Once posted, the file is housed on secure
+	servers that prevent any unauthorized changes to the file.
+	
+	
+	NOTE: Use the -d option when running CONDOC.EXE to decompress the file and
+	recreate the proper directory structure.
+	
+	MORE INFORMATION
+	================
+	
+	Sample Code
+	-----------
+	
+	The following code demonstrates how to extract Container and Document information
+	and store it in a Tree View control:
+	
+	     // Command handler which performs the pertinent operations
+	     ///////////////////////////////////////////////////////////////////// 
+	     // 
+	     void CCONDOCView::OnGetinfoOpenMDB()
+	     {
+	         // Prepare the open file dialog
+	         static char BASED_CODE szFilter[] = _
+	                               T( "Access Database Files  (*.mdb) | *.mdb" );
+	
+	         CFileDialog dlg(TRUE, "mdb", NULL,
+	                         OFN_HIDEREADONLY| OFN_OVERWRITEPROMPT, szFilter);
+	
+	         // To be retrieved by the open file dialog
+	         CString strFile;
+	
+	         // open file dialog
+	         if(dlg.DoModal() == IDOK)
+	         {
+	             strFile = dlg.m_ofn.lpstrFile;
+	
+	             if(strFile.Right(3).CompareNoCase("mdb") // verify extension
+	             {
+	                 AfxMessageBox("File Extension error");
+	                 return;
+	             }
+	         }
+	
+	         // you will display the info in a tree control
+	         CTreeCtrl &tree = GetTreeCtrl();
+	
+	         // the root of all items!
+	         HTREEITEM itemDatabase =    tree.InsertItem(
+	                                    dlg.m_ofn.lpstrFile );
+	
+	         // An MFC DAO object
+	         CDaoDatabase db;
+	
+	         // straight DAO interface pointer variables
+	         ConDoctainers *pContainers=NULL;
+	         ConDoctainer* pCon=NULL;
+	         DAODocuments* pDocuments=NULL;
+	         DAODocument* pDoc=NULL;
+	
+	         // To be used for iterating through the collections
+	         short count;
+	         short doccount;
+	
+	         // open the .MDB
+	         try
+	         {
+	             db.Open( strFile );
+	         }
+	         catch( CDaoException* e )
+	         {
+	             AfxMessageBox( e->m_pErrorInfo->m_strDescription );
+	             return;
+	         }
+	
+	         // Using the DAODatabase interface pointer method contained
+	         // by the MFC/DAO class CDaoDatabase, you retrieve the interface's
+	         // set of collections.
+	         if( FAILED( db.m_pDAODatabase->get_Containers( &pContainers ) ) )
+	         {
+	             AfxMessageBox( "Collection not found" );
+	             db.Close();
+	             return;
+	         }
+	
+	         // Once you have the set of collections, you iterate thru each
+	         // individual collection, display some of its attributes,
+	         // then get the document collection on the container,
+	         // and iterate thru the individual documents, displaying some
+	         // of the attributes of the documents.
+	         // See the dbdao.h in the DAOSDK\INCLUDE for more information
+	
+	         try
+	         {
+	             // get the count property of the containers collection
+	             pContainers->get_Count( &count );
+	
+	             HTREEITEM itemContainers = tree.InsertItem( _T( "Containers" )
+	                                                           , itemDatabase );
+	
+	             // iterate thru the containers
+	             while( --count > 0 )
+	             {
+	                 // get an individual container and iterate thru its
+	                 //attributes
+	                 pContainers->get_Item( COleVariant( count, VT_I2 ),
+	                                                            &pCon );
+	                 BSTR bstr=NULL;
+	
+	                 pCon->get_Name( &bstr );
+	                 CString strName( ( LPCTSTR ) bstr );
+	                 HTREEITEM itemName = tree.InsertItem( strName,
+	                                                   itemContainers );
+	
+	                 pCon->get_Owner( &bstr );
+	                 CString strOwner(_T("Owner: ") );
+	                 strOwner += (LPCTSTR) bstr;
+	                 HTREEITEM itemOwner = tree.InsertItem( strOwner,
+	                                                      itemName );
+	
+	                 pCon->get_UserName( &bstr );
+	                 CString strUserName(_T("User Name: ") );
+	                 strUserName += (LPCTSTR) bstr;
+	                 HTREEITEM itemUserName = tree.InsertItem( strUserName,
+	                                                             itemName );
+	
+	                 // Now get the documents collection
+	                 if( FAILED ( pCon->get_Documents( &pDocuments ) ) )
+	                 {
+	                     AfxMessageBox( "Collection not found" );
+	                     db.Close();
+	                     return;
+	                 }
+	
+	                 // Now get the number of documents contained in the
+	                 // container
+	                 pDocuments->get_Count( &doccount );
+	                 HTREEITEM itemDocuments = tree.InsertItem(
+	                                             _T( "Documents"), itemName );
+	
+	                 // iterate thru the documents
+	                 while( --doccount > 0 )
+	                 {
+	                     // get an individual document and iterate thru
+	                     // some of its attributes.
+	                     pDocuments->get_Item( COleVariant( doccount, VT_I2 ),
+	                                                                  &pDoc );
+	
+	                     pDoc->get_Name( &bstr );
+	                     CString strDocName( ( LPCTSTR ) bstr );
+	                     HTREEITEM itemDocName = tree.InsertItem( strDocName,
+	                                                         itemDocuments );
+	
+	                     pDoc->get_Owner( &bstr );
+	                     CString strDocOwner(_T("Owner: ") );
+	                     strDocOwner += (LPCTSTR) bstr;
+	                     tree.InsertItem( strDocOwner, itemDocName );
+	
+	                     pCon->get_UserName( &bstr );
+	                     CString strDocUserName(_T("User Name: ") );
+	                     strDocUserName += (LPCTSTR) bstr;
+	                     tree.InsertItem( strDocUserName, itemDocName );
+	                 }
+	             }
+	         }
+	         catch( CDaoException*  e)
+	         {
+	             AfxMessageBox( e->m_pErrorInfo->m_strDescription );
+	             db.Close();
+	             return;
+	         }
+	         db.Close();
+	     }
+	     ///////////////////////////////////////////////////////////////////// 
+	     // END OF SAMPLE CODE
+	
+	REFERENCES
+	==========
+	
+	Microsoft Jet Database Engine Programmer's Guide, ISBN #: 1-55615-877-7.
+	
+	Additional query words: 4.00 4.10 4.20 prop
+	
+	======================================================================
+	Keywords          : kbcode kbfile kbsample kbDAOsearch kbDatabase kbMFC kbODBC kbVC 
+	Technology        : kbAudDeveloper kbMFC
+	Version           : winnt:4.0,4.1,4.2
+	
+	=============================================================================
+	

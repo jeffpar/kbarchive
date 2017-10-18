@@ -1,0 +1,92 @@
+---
+layout: page
+title: "Q174890: XFOR: Content Conversion Fails with Outbound Internet Message"
+permalink: kb/174/Q174890/
+---
+
+## Q174890: XFOR: Content Conversion Fails with Outbound Internet Message
+
+	Article: Q174890
+	Product(s): Microsoft Exchange
+	Version(s): WinNT:5.0
+	Operating System(s): 
+	Keyword(s): kbusage
+	Last Modified: 08-MAR-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.0 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	When cc:Mail users send messages to the Internet through the Exchange Server 5.0
+	Internet Mail Service for outbound Internet messages, and the Internet Mail
+	Service is set to MIME, the receiving POP3 client may receive a garbled message
+	that has no attachment. The message takes this path:
+	
+	  Cc:mail -- [CCMC] -- exchange -- [IMS] --- Other POP server -
+	  -- POP client
+	
+	The POP client will receive the following statement appended to the message:
+	
+	  This message is in MIME format. Since your mail reader does not
+	  understand this format, some or all of this message may not be legible.
+	
+	Affected POP3 clients tested are Eudora, IE 3.02, Exchange Internet Mail service
+	(client). The only client that will interpret the message/attachment correctly
+	is the Outlook Internet Mail Service.
+	
+	CAUSE
+	=====
+	
+	cc:Mail attachments do not stop for conversion from CCmail format to Exchange to
+	MIME. They appear to go straight from CCmail format to MIME (content- type:
+	application/ms-tnef). The problem is that the Internet Mail Service is sending
+	rich text.
+	
+	WORKAROUND
+	==========
+	
+	If you cannot apply the fix referenced below, do one of the following:
+	
+	- Create a custom recipient on exchange of the POP3 receiving client and send
+	  the message to him or her. It will be received as "content-type:
+	  application/octet-stream" and the POP3 client gets an attachment and reads
+	  the message properly.
+	
+	  -OR-
+	
+	- Set Internet Mail Service service to send all outbound mail as UUENCODED
+	  messages.
+	
+	  -OR-
+	
+	- Set the Internet Mail Service interoperability "send RTF" to Never. It is set
+	  to User by default.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+	version 5.0. This problem has been corrected in the latest U.S. Service Pack for
+	Microsoft Exchange Server version 5.0. For information on obtaining the Service
+	Pack, query on the following word in the Microsoft Knowledge Base:
+	
+	  SERVPACK
+	
+	
+	
+	Additional query words: CCMail IMS IMC
+	======================================================================
+	Keywords          : kbusage 
+	Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+	Version           : WinNT:5.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

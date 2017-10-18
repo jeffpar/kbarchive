@@ -1,0 +1,69 @@
+---
+layout: page
+title: "Q153570: How to Pass One OLE Control to Another"
+permalink: kb/153/Q153570/
+---
+
+## Q153570: How to Pass One OLE Control to Another
+
+	Article: Q153570
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 4.00 | 4.00
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	It is possible to pass an OLE Automation Object as a parameter to a method of a
+	custom OLE control (.OCX). To do this, declare the OCX method to take a
+	parameter of type IDispatch *. An OLE control is essentially an OLE Automation
+	Object, so you can then pass one OLE Control to another using this technique.
+	
+	MORE INFORMATION
+	================
+	
+	In Visual Basic 4.0, all OLE controls except the intrinsic controls (TextBox,
+	PictureBox, Label, and so on) implement an Object Property. Except for the OLE
+	container control, this Object property refers to the primary IDispatch
+	interface of that OLE control. So, if you pass the object property of any OLE
+	control except the OLE container control to a method of another custom OLE
+	control, a pointer to the primary IDispatch interface (LPDISPATCH) of the source
+	OLE control is what is passed, so you can then access the methods and properties
+	of the source OLE control through this LPDISPATCH inside your custom OLE control
+	method.
+	
+	If you have a method declared in your custom OLE control source code:
+	
+	     void CTestCtrl::PassObject(LPDISPATCH lpDisp)
+	     {
+	         // TODO: Add your dispatch handler code here
+	         ...
+	     }
+	
+	You can call this from Visual Basic as follows:
+	
+	  Test1.PassObject DbGrid1.Object    'Pass the DBGrid control's primary
+	                                     'dispatch interface to your custom
+	                                     'control, Test1
+	
+	Additional query words: 4.00 vb4win vb4all vbctrl
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+	Version           : 4.00 | 4.00
+	
+	=============================================================================
+	

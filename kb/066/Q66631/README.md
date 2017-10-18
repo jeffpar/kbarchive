@@ -1,0 +1,80 @@
+---
+layout: page
+title: "Q66631: Adding a Category in QuickHelp"
+permalink: kb/066/Q66631/
+---
+
+## Q66631: Adding a Category in QuickHelp
+
+	Article: Q66631
+	Product(s): Microsoft Programming Utilities
+	Version(s): MS-DOS:1.7,1.83; OS/2:1..4,1.7,1.83
+	Operating System(s): 
+	Keyword(s): kb16bitonly
+	Last Modified: 31-OCT-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft HELPMAKE Utility for MS-DOS, versions 1.7, 1.83 
+	- Microsoft HELPMAKE Utility for OS/2, versions 1..4, 1.7, 1.83 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	When creating a help database with HELPMAKE, new categories may be added to the
+	Microsoft Advisor help system for use in the QuickHelp utility. To add
+	selections that will appear under the QuickHelp Categories menu, use the topic
+	"List categories." Under the List categories topic, list the selections that
+	need to be added to the menu.
+	
+	MORE INFORMATION
+	================
+	
+	The following is a sample help file:
+	
+	  File CATEGORY.TXT
+	  -----------------
+	
+	     .context List categories
+	     Category1
+	     Category2
+	
+	     .context Category1
+	     This is the information under the first category.
+	
+	     .context Category2
+	     This is the information under the second category.
+	
+	For the file CATEGORY.TXT shown above, the HELPMAKE command line will appear as
+	follows:
+	
+	  helpmake /E8 /Ocategory.hlp category.txt
+	
+	The choice of /E8 for partial compression is strictly arbitrary in this case, and
+	is shown for demonstration purposes only. The maximum compression can be
+	achieved by using /E15, and no compression is denoted by /E0.
+	
+	When the above help database is added to the list of databases for the Advisor,
+	the topics "Category1" and "Category2" will be added under the Categories menu.
+	
+	The items that are placed in the List categories topic should be topics that are
+	already defined with ".context" strings; otherwise, when the item is selected
+	from the Categories menu, a message will be displayed stating that the topic
+	could not be found.
+	
+	When using HELPMAKE with the "/C" option, which preserves case sensitivity, you
+	must use the string "List categories" exactly. The case is important. Failure to
+	use the exact case for each letter will cause the Advisor to ignore the
+	categories you have added.
+	
+	Additional query words: kbinf 1.40 1.70 1.83
+	
+	======================================================================
+	Keywords          : kb16bitonly 
+	Technology        : kbAudDeveloper kbHELPMAKE kbZNotKeyword3
+	Version           : MS-DOS:1.7,1.83; OS/2:1..4,1.7,1.83
+	
+	=============================================================================
+	

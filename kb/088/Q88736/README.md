@@ -1,0 +1,54 @@
+---
+layout: page
+title: "Q88736: Software Labs Fonts May Cause Crosslinked Files"
+permalink: kb/088/Q88736/
+---
+
+## Q88736: Software Labs Fonts May Cause Crosslinked Files
+
+	Article: Q88736
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): 3.0,3.0a,3.1,3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 13-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Software Labs technical support has confirmed that installing more than 10 fonts
+	at one time from its TrueType Font package can create cross-linked files on your
+	hard disk.
+	
+	WORKAROUND
+	==========
+	
+	When installing Software Labs' fonts, install between 2 and 10 at one time. Do
+	not install the entire software library on a single system. When you want to use
+	other fonts in the library, remove the fonts that are installed, then install
+	the new ones.
+	
+	MORE INFORMATION
+	================
+	
+	For further information, contact Software Labs.
+	
+	The product included here is manufactured by a vendor independent of Microsoft;
+	we make no warranty, implied or otherwise, regarding this product's performance
+	or reliability.
+	
+	Additional query words: 3.10 3.00 3.00a 3.11 3rdparty winfont
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWin3xSearch kbWin300 kbWin300a kbWin310 kbWin311
+	Version           : :3.0,3.0a,3.1,3.11
+	
+	=============================================================================
+	

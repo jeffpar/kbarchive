@@ -1,0 +1,86 @@
+---
+layout: page
+title: "Q256895: Remote Control Agent Does Not Listen on Assigned IP Addresses"
+permalink: kb/256/Q256895/
+---
+
+## Q256895: Remote Control Agent Does Not Listen on Assigned IP Addresses
+
+	Article: Q256895
+	Product(s): Microsoft Systems Management Server
+	Version(s): winnt:2.0
+	Operating System(s): 
+	Keyword(s): kbsms200 kbsms200bug
+	Last Modified: 03-MAY-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server version 2.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	On dial-up computers, the Remote Control agent starts shortly after the computer
+	is booted (about 30 seconds after the graphical user interface appears). Upon
+	starting, the Remote Control agent tries to obtain an IP address on which to
+	listen. If there are no valid IP addresses (which is usually the case before
+	dialing), the agent listens on either 0.0.0.0 or an invalid, previous IP
+	address.
+	
+	CAUSE
+	=====
+	
+	The problem occurs when the computer uses Remote Access Services (RAS) to dial
+	into a site and is assigned an IP address by the authenticating RAS server. The
+	client-side Remote Control agent cannot "reset" itself to start using the newly
+	provided IP address.
+	
+	The source of the issue is the inability to obtain the new IP address and start
+	listening on the new address instead of the old one.
+	
+	WORKAROUND
+	==========
+	
+	To work around this behavior:
+	
+	1. Install the Stop Remote Control tool (Stoprc.exe) on the client computer. You
+	  can install the Stop Remote Control tool by running the Microsoft BackOffice
+	  4.5 Resource Kit Setup program, or by copying the required files to an
+	  appropriate location.
+	
+	2. After a dial-up connection is established and an IP address assigned, the
+	  client must run the Stop Remote Control tool to stop the Remote Control
+	  agent.
+	
+	3. Run the Stop Remote Control tool again to restart the Remote Control agent,
+	  which then picks up the newly assigned IP address.
+	
+	4. Let the Systems Management Server administrator know that the client computer
+	  can now be remote controlled.
+	
+	NOTE: There is a difference when you run Stoprc.exe on a computer running
+	Microsoft Windows 95/Microsoft Windows 98 and Microsoft Windows NT. The Windows
+	95/Windows 98 version of the tool stops and restarts Wuser32.exe. The interval
+	between stopping and restarting varies from 2 to 30 minutes.
+	
+	A Windows NT user must have local administrative rights to use this tool. These
+	rights are required to stop and start the Remote Control agent.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Systems Management Server
+	version 2.0.
+	
+	Additional query words: prodsms sms
+	
+	======================================================================
+	Keywords          : kbsms200 kbsms200bug 
+	Technology        : kbSMSSearch kbSMS200
+	Version           : winnt:2.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

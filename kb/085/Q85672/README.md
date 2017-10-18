@@ -1,0 +1,94 @@
+---
+layout: page
+title: "Q85672: PC Win: Packaged Object Icon Changes After Reading"
+permalink: kb/085/Q85672/
+---
+
+## Q85672: PC Win: Packaged Object Icon Changes After Reading
+
+	Article: Q85672
+	Product(s): Microsoft Mail For PC Networks
+	Version(s): WINDOWS:3.0,3.0b,3.2
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 16-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Mail for Windows, versions 3.0, 3.0b, 3.2 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	With version 3.0, 3.0b, or 3.2 of Microsoft Mail for Windows, the icon for an
+	object embedded within a message may change after the object is read.
+	
+	CAUSE
+	=====
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in versions 3.0, 3.0b, and 3.2 of
+	Microsoft Mail for Windows. We are researching this problem and will post new
+	information here in the Microsoft Knowledge Base as it becomes available.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Problem
+	--------------------------
+	
+	1. Open Packager and Import a Windows executable file.
+	
+	2. From the Edit menu, choose Copy, then select Package.
+	
+	3. Compose a message in Mail for Windows.
+	
+	4. From the Edit menu, choose Paste Special, then select Package Object.
+	
+	5. Send the message.
+	
+	6. Have the recipient open the message.
+	
+	7. Run the packaged object.
+	
+	8. Close the running packaged object.
+	
+	The icon for the packaged object has now changed to the PACKAGER.EXE icon, but
+	still maintains the caption of the packaged object. When you close the message,
+	you are prompted to save changes. If you do not save changes, the object retains
+	its original icon and can be rerun later. If you do save changes, the icon
+	changes but the executable still can be launched.
+	
+	This behavior can also be reproduced without Mail for Windows when disconnection
+	from a network server occurs.
+	
+	Example
+	-------
+	
+	1. Connect to a network server that contains a Windows executable that you don't
+	  have.
+	
+	2. Start Write.
+	
+	3. Drag the executable from File Manager to Write (this embeds the file as a
+	  packaged object).
+	
+	4. Disconnect from the network server.
+	
+	5. Activate the package. The icon becomes the Packager default.
+	
+	
+	Additional query words: 3.00 3.00b 3.20
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMailSearch kbZNotKeyword3 kbMail300 kbMail320 kbMail300b
+	Version           : WINDOWS:3.0,3.0b,3.2
+	
+	=============================================================================
+	

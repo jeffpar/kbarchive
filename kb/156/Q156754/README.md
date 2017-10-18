@@ -1,0 +1,144 @@
+---
+layout: page
+title: "Q156754: Limit of 26 Catalogs with Microsoft Index Server"
+permalink: kb/156/Q156754/
+---
+
+## Q156754: Limit of 26 Catalogs with Microsoft Index Server
+
+	Article: Q156754
+	Product(s): Internet Information Server
+	Version(s): winnt:1.0,2.0; :
+	Operating System(s): 
+	Keyword(s): kbOSWin2000
+	Last Modified: 30-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Index Server versions 1.0, 2.0 
+	- Indexing Service 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If you try to use an Administrators page or submit a query with more than 26
+	catalogs directories under Microsoft Index Server, you receive the following
+	error message:
+	
+	  Call failed for unknown reason 0x80041600 while processing the query
+	
+	CAUSE
+	=====
+	
+	This error message occurs if you have created more than 26 catalog directories.
+	Microsoft Internet Information Server (IIS) version 1.0 has a limit of 26
+	catalog directories. This is a hardcoded limit and is currently viewed and
+	adequate for implementation.
+	
+	You are discouraged from using multiple catalogs because 26 catalogs take
+	substantially more space than one catalog containing the same data. Both threads
+	and processes are unique to a given catalog. 26 catalogs will be 26 daemon
+	processes (Cidaemon.exe) and over 100 extra threads. This takes a large amount
+	of physical memory (RAM); therefore, it is not the optimal way to operate.
+	
+	RESOLUTION
+	==========
+	
+	Indexing Service:
+	
+	This is not an issue in Windows 2000 Indexing Service. By default, a maximum of
+	33 catalogs can be created. You can modify this limit by changing the
+	MaxCatalogs registry entry in the following location:
+	
+	  HKEY_LOCAL_MACHINE\System\Currentcontrolset\Control\Contentindex
+	
+	Note: It is still not recommended to have multiple catalogs.
+	
+	Index Server:
+	
+	To control the directories that are being searched rather than creating unique
+	catalogs, Microsoft recommends that you use the CISCOPE and the CIRESTRICTIONS
+	flags.
+	
+	The CiSCope flag indicates the topmost directory (either the virtual root or the
+	physical path) that will be searched in a given query.
+	
+	NOTE: This parameter is not valid in Administrator pages and should only be used
+	in Queries.
+	
+	The CiRestrictions flag can be used to limit your scope further and is the query
+	itself that is being processed.
+	
+	MORE INFORMATION
+	================
+	
+	Use the following information as an example.
+	
+	In the Internet Service Manager, you have the following virtual directories
+	assigned:
+	
+	Directory           Alias
+	--------------------------------
+	C:\InetPub\WWWroot  <Home>
+	C:\InetPub\Scripts  /Scripts
+	c:\MyFiles          /Myfiles
+	C:\OtherStuff       /OtherStuff
+	
+	and the following directory structure.
+	
+	C:\Myfiles\Cats
+	C:\Myfiles\Dogs
+	C:\MyFiles\Pigs
+	C:\MyFiles\Cows
+	C:\MFiles\Cows\Brown
+	C:\MyFiles\Cows\Spotted
+	C:\MyFiles\Cows\Green
+	
+	To specify the appropriate CISCOPE and CIRESTRICTIONS, you should use the form
+	fields you will find in the sample query HTML document (found under Start,
+	Programs, Microsoft Index Server, Index Server Sample Query Form).
+	
+	  <INPUT TYPE="HIDDEN" NAME="CiScope" VALUE="/">
+	
+	This value will search all virtual roots starting at the topmost level.
+	
+	If you wanted a search to start at the /Myfiles/Dogs directory, you can use
+	something similar to the following:
+	
+	<INPUT TYPE="HIDDEN" NAME="CiScope" VALUE="/MyFiles/dogs">
+	or
+	<INPUT TYPE="HIDDEN" NAME="CiScope" VALUE="/MyFiles/Cows">
+	or
+	<INPUT TYPE="HIDDEN" NAME="CiScope" VALUE="/MyFiles/dogs/brown">
+	or
+	<INPUT TYPE="HIDDEN" NAME="CiScope" VALUE="c:\MyFiles\Cown\Green">
+	
+	The CiRestrictions flag normally contains the query parameters to search for
+	such, as in the following example.
+	
+	<TD>
+	<INPUT TYPE="TEXT" NAME="CiRestriction" SIZE="60" MAXLENGTH="100"
+	VALUE="">
+	</TD>
+	
+	This is the Form Field that the user types their query into and will take the
+	text typed in to pass it to the IDQ file. This allows you to use a particular
+	IDQ for multiple queries by changing the HTML code, and the user can use the
+	appropriate HTML form for a particular scope in the query. Alternatively, you
+	can have the user type in the scope information and pass it similar to the way
+	the example passes the CiRestriction value.
+	
+	For additional information, please see the documentation in the Online "Users
+	Guide" that outlines these flags and covers the methods described above.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbOSWin2000 
+	Technology        : kbIdxServSearch kbAudDeveloper kbIdxServ100 kbIdxServ200
+	Version           : winnt:1.0,2.0; :
+	
+	=============================================================================
+	

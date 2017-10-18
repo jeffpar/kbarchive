@@ -1,0 +1,74 @@
+---
+layout: page
+title: "Q141212: How to Open the Find Tool by Double-Clicking a Folder"
+permalink: kb/141/Q141212/
+---
+
+## Q141212: How to Open the Find Tool by Double-Clicking a Folder
+
+	Article: Q141212
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): 95 4.00
+	Operating System(s): 
+	Keyword(s): win95
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 95 
+	- Microsoft Windows NT Server version 4.0 
+	- Microsoft Windows NT Workstation version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes how to configure Windows 95 so that double-clicking a
+	folder opens the Find tool, rather than opening a window displaying the contents
+	of the folder.
+	
+	MORE INFORMATION
+	================
+	
+	Causing the Find tool to open when you double-click a folder may be useful if
+	you often must find files or documents in folders containing a large number of
+	files.
+	
+	Note that changing this setting affects all folders.
+	
+	To cause the Find tool to open when you double-click a folder, follow these
+	steps:
+	
+	1. Double-click My Computer.
+	
+	2. On the View menu, click Options.
+	
+	3. Click the File Types tab.
+	
+	4. In the Registered File Types box, click File Folder, and then click Edit.
+	
+	5. In the Actions box, click Find, and then click Set Default.
+	
+	6. Click Close, and then click Close.
+	
+	After you follow these steps, double-clicking a folder causes the Find tool to
+	open. To open a window displaying the folder's contents, use the right mouse
+	button to click the folder, and then click Open on the menu that appears.
+	
+	REFERENCES
+	==========
+	
+	For additional information about the Find tool, click the Start button, click
+	Help, type "find command, using" on the Index tab, click Display, and then view
+	the topics you want.
+	
+	Additional query words: 4.0
+	
+	======================================================================
+	Keywords          : win95 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWin95search kbZNotKeyword3
+	Version           : 95 4.00
+	
+	=============================================================================
+	

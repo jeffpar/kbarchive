@@ -1,0 +1,123 @@
+---
+layout: page
+title: "Q206076: MARSHAL.EXE: How To Marshal Interfaces Across Apartments"
+permalink: kb/206/Q206076/
+---
+
+## Q206076: MARSHAL.EXE: How To Marshal Interfaces Across Apartments
+
+	Article: Q206076
+	Product(s): Microsoft C Compiler
+	Version(s): 6.0
+	Operating System(s): 
+	Keyword(s): kbfile kbSample kbCOMt kbThread kbATL300 kbGrpDSMFCATL kbArchitecture
+	Last Modified: 02-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+	- Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+	- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+	- Microsoft Visual C++.NET (2002) 
+	-------------------------------------------------------------------------------
+	
+	NOTE: Microsoft Visual C++ NET (2002) supported both the managed code model that is provided by the .NET Framework and the unmanaged native Windows code model. The information in this article applies to unmanaged Visual C++ code only.
+	
+	SUMMARY
+	=======
+	
+	Marshal.exe is a sample that shows the different ways of marshalling an
+	interface across apartments.
+	
+	MORE INFORMATION
+	================
+	
+	The following files are available for download from the Microsoft Download
+	Center:
+	
+	Marshal.exe
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. After it is posted, the file is housed on
+	secure servers that prevent any unauthorized changes to the file.
+	
+	A Single-Threaded Apartment (STA) is a thread that was initialized with
+	CoInitialize() or CoInitializeEx (NULL, COINIT_APARTMENTTHREADED). Also, any
+	other threads in the same process that use COM must also call CoInitialize() or
+	CoInitializeEx() to initialize COM for its thread.
+	
+	If you create a COM object in one STA thread, you cannot pass an interface
+	pointer to another STA thread and call out on that pointer. Since calls to STA
+	objects are supposed to be serialized, COM enforces this by only allowing one
+	thread to call into the STA object (the thread where it was created). If the
+	interface pointer you pass to the second STA thread is a pointer to a proxy, you
+	will get an error HRESULT of 0x8001010E or RPC_E_WRONG_THREAD (the application
+	called an interface that was marshalled for a different thread). If the
+	interface pointer is a direct pointer to the object, COM will not enforce
+	serialization, you will not get the above error, and the interface method call
+	will be made. However, this is still illegal behavior on the part of the
+	client.
+	
+	You can still call methods on the STA object from a different STA thread as long
+	as you do it through a proxy. A proxy is a copy of the interface that you get
+	via marshaling/unmarshaling. When you make a call through the proxy, COM makes a
+	thread switch and the call ends up executing in the context of the thread where
+	the STA object was created.
+	
+	There are three ways to marshal/unmarshal an interface to another STA thread:
+	
+	1. CoMarshalInterThreadInterfaceInStream() and CoGetInterfaceAndReleaseStream():
+	  One drawback to using this method is the interface can only be unmarshaled
+	  once. That is, if you need access to the same object from several STA
+	  threads, this method won't work.
+	
+	2. CoMarshalInterface() and CoUnMarshalInterface(): This method is more flexible
+	  since you can marshal the interface once and unmarshal the interface as many
+	  times as you like; for example, specifying MSHLFLGS_TABLEWEAK or
+	  MSHLFLGS_TABLESTRONG when marshaling the interface. But it also requires more
+	  code since you have to create the IStream, set the seek pointer and clean up
+	  the marshal packet via CoReleaseMarshalData(). When marshaling pointers to a
+	  proxy you must have Windows NT 4.0 Service Pack 4 or later, Windows 98 or
+	  Windows 95 with DCOM 1.2 or later installed. Also when using the
+	  MSHLFLGS_TABLESTRONG flag you must have Windows 2000 or later.
+	
+	3. Global Interface Table(GIT): The GIT is a COM object that allows you to store
+	  an interface in one STA thread and get access to it's proxy in another STA
+	  thread. This is only available with Windows NT 4.0 Service Pack 3 or later,
+	  Windows 98 or Windows 95 with DCOM 1.1 or later installed.
+	
+	Marshal.exe contains TSTMARSH which is the main project. This contains an ATL EXE
+	server that implements ITest. ITest has one method called ToUpper(), which
+	converts a string to uppercase. A sub-project called Client is also included.
+	Client.cpp is where all the marshaling/unmarshaling methods are shown. Each
+	method creates an instance of the Test object, marshals an ITest interface and
+	creates a thread. In each thread, an ITest interface is unmarshaled and the
+	method ToUpper() is called to convert a string. You should see the output in the
+	debug window of: "THIS IS OUTPUT FROM THREAD #N".
+	
+	REFERENCES
+	==========
+	
+	For additional information, click the article number below to view the article
+	in the Microsoft Knowledge Base:
+	
+	  Q150777 NFO: Descriptions and Workings of OLE Threading Models
+	
+	  Q172314 INFO: RPC_E_WRONG_THREAD If Thread Calls Via Interface Pointer
+	
+	Additional query words: kbDSupport kbsample
+	
+	======================================================================
+	Keywords          : kbfile kbSample kbCOMt kbThread kbATL300 kbGrpDSMFCATL kbArchitecture 
+	Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch kbVCNET
+	Version           : :6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

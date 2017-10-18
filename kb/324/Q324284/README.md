@@ -1,0 +1,352 @@
+---
+layout: page
+title: "Q324284: HOW TO: Secure XML Web Services with SSL in Windows .NET Server"
+permalink: kb/324/Q324284/
+---
+
+## Q324284: HOW TO: Secure XML Web Services with SSL in Windows .NET Server
+
+	Article: Q324284
+	Product(s): Internet Information Server
+	Version(s): Beta
+	Operating System(s): 
+	Keyword(s): kbenv kbnetwork kbtool kbAudDeveloper kbHOWTOmaster
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Services version 6.0 
+	- Microsoft Windows.NET Datacenter Server Beta 
+	- Microsoft Windows.NET Enterprise Server Beta 
+	- Microsoft Windows.NET Standard Server Beta 
+	- Microsoft Windows.NET Web Server Beta 
+	- Microsoft Windows.NET Datacenter Server 64-bit Edition Beta 
+	- Microsoft Windows.NET Enterprise Server 64-bit Edition Beta 
+	-------------------------------------------------------------------------------
+	
+	For a Microsoft Windows 2000 version of this article, see Q307267.
+	
+	
+	Microsoft provides programming examples for illustration only, without warranty either 
+	expressed or implied, including, but not limited to, the implied warranties of 
+	merchantability and/or fitness for a particular purpose. This article assumes 
+	that you are familiar with the programming language being demonstrated and the 
+	tools used to create and debug procedures. Microsoft support professionals can 
+	help explain the functionality of a particular procedure, but they will not 
+	modify these examples to provide added functionality or construct procedures to 
+	meet your specific needs. If you have limited programming experience, you may 
+	want to contact a Microsoft Certified Partner or the Microsoft fee-based 
+	consulting line at (800) 936-5200. For more information about Microsoft Certified 
+	Partners, please visit the following Microsoft Web site:
+	
+	  http://www.microsoft.com/partner/referral/
+	
+	For more information about the support options that are available and about how to contact Microsoft, visit the following Microsoft Web site:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	IN THIS TASK
+	------------
+	
+	- SUMMARY
+	
+	   - Configure Your Web Server for SSL
+	- Install Your Certification Authority's Certificate on the Client
+	- Modify WSDL from HTTP to HTTPS
+	- Verify That SSL Is Configured Correctly
+	- Enforce SSL-Only Access
+	
+	
+	SUMMARY
+	=======
+	
+	This step-by-step article describes how to configure a current XML Web service
+	to use an encrypted channel with a Secure Socket Layer (SSL) connection.
+	
+	Configure Your Web Server for SSL
+	---------------------------------
+	
+	Your XML Web Service will be running on Internet Information Server (IIS) and it
+	will rely on IIS to provide SSL support. Because of this, you must first install
+	an SSL server certificate on your server so that you can enable SSL support. To
+	do this, follow these steps:
+	
+	1. If you are purchasing a server certificate from a third-party certification
+	  authority or if you have an enterprise certification authority available to
+	  you, skip to step 2.
+	
+	  Otherwise, to install Certificate Services, follow these steps:
+	
+	  a. Start the Add or Remove Programs tool.
+	
+	  b. Click Add/Remove Windows Components.
+	
+	  c. Click to select the Certificate Services check box.
+	
+	  d. Follow the on-screen instructions to complete the installation.
+	
+	2. To run the Web Server Certificate Wizard, follow these steps:
+	
+	  a. Start Internet Information Services Manager (IISM).
+	
+	  b. Right-click the site that you want the certificate for.
+	
+	  c. Click Properties, click the Directory Security tab, and then click Server
+	     Certificate.
+	
+	3. In the Web Server Certificate Wizard, click Next.
+	
+	4. Click "Create a new certificate", and then click Next.
+	
+	5. Click "Prepare the request now, but send it later", and then click Next.
+	
+	6. Type a name for the certificate, select the "Bit length", and then click
+	  Next.
+	
+	7. Type your company's organization and organizational unit names, and then
+	  click Next.
+	
+	8. Type the "Common name", and then click Next.
+	
+	  NOTE: Provide the common name for the server that runs your XML Web service.
+	
+	9. Complete the Geographical Information page, and then click Next.
+	
+	10. Type a file name for your certificate request, and then click Next.
+	
+	11. Click Next.
+	
+	12. Click Finish.
+	
+	13. When you complete the wizard, a certificate request is saved in a file that
+	  you specify. By default, this is C:\Certreq.txt.
+	
+	14. Do one of the following:
+	
+	   - If you are submitting your certificate to another certification authority,
+	     submit your application by following the certification authority's
+	     guidelines. When you receive your certificate file, open it, and then skip
+	     to step 15.
+	
+	   - If you are using Windows .NET Server Certificate Services to create your
+	     certificate, follow these steps:
+	
+	     a. In Internet Explorer, visit the following Web site:
+	
+	  http://localhost/certsrv
+	
+	     b. Click "Request a Certificate".
+	
+	     c. Click "Advanced certificate request".
+	
+	     d. Click "Submit a certificate request using a base64 encoded PKCS #10
+	        file or a renewal request using a base64 encoded PKCS #7 file".
+	
+	     e. On the Submit a Certificate Request or Renewal Request page, click
+	        "Browse for a file to insert", specify the file that you created in
+	        step 13, click Read, and then click Submit.
+	
+	        NOTE: You may also copy and paste the content of the certificate request
+	        file into the Saved Request text box.
+	
+	     f. Click Start, point to Administrative Tools, and then click
+	        Certification Authority.
+	
+	     g. Expand your certification authority's name, and then double-click the
+	        Pending Request folder.
+	
+	     h. Right-click the certificate request that you just submitted, point to
+	        All Tasks, and then click Issue.
+	
+	     i. Quit the Certification Authority Management console.
+	
+	     j. In Internet Explorer, visit the following Web site:
+	
+	  http://localhost/certsrv
+	
+	     k. Click "View the status of a pending certificate request".
+	
+	     l. Click the request that you just created.
+	
+	     m. On the Certificate Issued page, select either of the encoding schemes,
+	        and then click "Download certificate".
+	
+	     n. Click Save in the security dialog box.
+	
+	     o. Click Close.
+	
+	15. In Internet Services Manager, right-click the virtual site that you created
+	  the certificate for, and then click Properties.
+	
+	16. Click the Directory Security tab, and then click Server Certificate.
+	
+	17. Click Next.
+	
+	18. Click "Process the pending request and install the certificate", and then
+	  click Next.
+	
+	19. Click Browse, locate and click your certificate file, and then click Next.
+	
+	20. Click Next.
+	
+	  NOTE: If a dialog box appears that warns you that the certificate may have
+	  come from an untrusted source, click OK.
+	
+	21. Click Finish.
+	
+	Install Your Certification Authority's Certificate on the Client
+	----------------------------------------------------------------
+	
+	If you used your own certificate services, follow these steps to install your
+	certification authority's certificate on the client as a trusted root
+	certification authority:
+	
+	1. In Internet Explorer, visit the following Web site, where
+	  <CertificateServer> is the name of the Certificate Services server that
+	  issued the certificate that is being used on the Web server:
+	
+	  http://<CertificateServer>/certsrv
+	
+	2. Click "Download a CA certificate, certificate chain or CRL".
+	
+	3. Click "Download CA certificate".
+	
+	4. In the File Download dialog box, click Open.
+	
+	5. In the Certificate dialog box, click Install Certificate.
+	
+	6. In the Certificate Import Wizard, click Next.
+	
+	7. Click "Automatically select the certificate store based on the type of
+	  certificate", and then click Next.
+	
+	8. Click Finish.
+	
+	9. Click OK to acknowledge that the import was successful.
+	
+	10. Click OK to close the Certificate dialog box.
+	
+	If you plan to access your XML Web Service from an ASP page, follow these steps
+	to add the certification authority's certificate to the computer's trusted root
+	store:
+	
+	1. In Internet Explorer, visit the following Web site, where
+	  <CertificateServer> is the name of the Certificate Services server that
+	  issued the certificate that is being used on the Web server:
+	
+	  http://<CertificateServer>/certsrv
+	
+	2. Click "Download a CA certificate, certificate chain or CRL".
+	
+	3. Click "Download CA certificate".
+	
+	4. In the File Download dialog box, click Save.
+	
+	5. Click Close.
+	
+	6. Click Start, and then click Run.
+	
+	7. In the Open box, type "mmc" (without the quotation marks), and then click OK.
+	
+	8. On the File menu, click Add/Remove Snap-in.
+	
+	9. Click Add.
+	
+	10. Click Certificates, and then click Add.
+	
+	11. Click Computer Account, and then click Next.
+	
+	12. Click Local Computer, and then click Finish.
+	
+	13. Click Close, and then click OK.
+	
+	  The list of certificate categories for the local computer appears in the
+	  snap-in window.
+	
+	14. Expand Certificates (Local Computer).
+	
+	15. Expand "Trusted Root Certification Authorities".
+	
+	16. Right-click Certificates, point to All Tasks, and then click Import.
+	
+	17. In the Certificate Import Wizard, click Next.
+	
+	18. Click Browse, and then locate the certificate that you saved in step 14,n.
+	
+	19. Click the file, and then click Open.
+	
+	20. Click Next.
+	
+	21. Click Next, and then click Finish.
+	
+	22. Click OK to acknowledge the successful import.
+	
+	Modify WSDL from HTTP to HTTPS
+	------------------------------
+	
+	1. Edit the Web Service Description Language (WSDL) files for your service so
+	  that the address for your Web service begins with https instead of http. Make
+	  sure that the copy of the WSDL that your client uses also indicates https.
+	
+	2. For Microsoft Visual Studio .NET projects, when you add a Web Reference, you
+	  can specify an https URL as the location of the XML Web service. To do this,
+	  edit the class that was created by Visual Studio .NET that wraps the Web
+	  service; modify the line of code that sets the URL. For a C# project, the
+	  line of code will look similar to the following after you modify it, where
+	  <mycomputer> refers to the Web server that is hosting Web services that
+	  are secured by SSL:
+	
+	  this.Url = "https://mycomputer/MyWS/Service1.asmx";
+	
+	Your XML Web Service will now be accessed over SSL.
+	
+	Verify That SSL Is Configured Correctly
+	---------------------------------------
+	
+	To determine whether SSL is configured correctly, try using an https URL such as
+	the following, where <mycomputer> refers to the Web server that is hosting
+	Web services that are secured by SSL:
+	
+	  https://<mycomputer>/test/test.asmx
+	
+	If you can successfully visit the location without Internet Explorer displaying
+	an error message, your configuration is correct. You are now ready to try to
+	access your Web service programmatically.
+	
+	Enforce SSL-Only Access
+	-----------------------
+	
+	To make sure that only SSL requests are accepted by your Web service, follow
+	these steps to configure the virtual directory where your XML Web service
+	resides to be SSL only in Internet Services Manager:
+	
+	1. Click Start, point to Administrative Tools, and then click "Internet
+	  Information Services (IIS)".
+	
+	2. Expand the computer that hosts your XML Web service Web site.
+	
+	3. Expand the Web Sites folder.
+	
+	4. Expand the Web site that hosts your XML Web service.
+	
+	5. Right-click the virtual directory where your XML Web service resides, and
+	  then click Properties.
+	
+	6. Click the Directory Security tab, and then click Edit under the Secure
+	  Communications section.
+	
+	7. In the Secure Communications dialog box, click "Require secure channel
+	  (SSL)", and then click OK two times.
+	
+	
+	Additional query words: kbsecurity ca https
+	
+	======================================================================
+	Keywords          : kbenv kbnetwork kbtool kbAudDeveloper kbHOWTOmaster 
+	Technology        : kbWinNETServ kbWinNETEntServ kbWinNETDataServ kbWinNETSearch kbiisSearch kbWinNETEntServ64bit kbWinNETDataServ64bit kbZNotKeyword kbWinNETEntServSearch kbWinNETDataServSearch kbWinNETServSearch kbiis600 kbWinNETEntServ64bitSearch kbWinNETDataServ64bitSearch kbWinNETWebServSearch kbWinNETWebServ
+	Version           : :Beta
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

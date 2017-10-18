@@ -1,0 +1,65 @@
+---
+layout: page
+title: "Q152488: Event 7000: File Not Found with SMS"
+permalink: kb/152/Q152488/
+---
+
+## Q152488: Event 7000: File Not Found with SMS
+
+	Article: Q152488
+	Product(s): Microsoft Systems Management Server
+	Version(s): winnt:1.0,1.1
+	Operating System(s): 
+	Keyword(s): kbnetwork kbInventory kbPCM smsinv smspcm
+	Last Modified: 30-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server versions 1.0, 1.1 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The following two entries are present in the System Log of a system running
+	Windows NT Server within an SMS site:
+	
+	  The SMS_INVENTORY_AGENT_NT service failed to start due to the following
+	  error:
+	  The system cannot find the file specified.
+	
+	  The SMS_PACKAGE_COMMAND_MANAGER_NT service failed to start due to the
+	  following error:
+	  The system cannot find the file specified.
+	
+	CAUSE
+	=====
+	
+	This problem occurs if the server components for the platform (I386 and Alpha)
+	that generated the error message are not installed. For example, if the SMS site
+	server has an Alpha processor, the Alpha server and client components will be
+	installed by default. However, the I386 and MIPS files will not. The server
+	components will then be propagated to all the SMS logon servers in the site. If
+	any of these are non-Alpha, they will generate the error message because the
+	correct files do not exist in the SMS\site.srv\<platform>.bin directories
+	on the SMS site server or in the SMS\helper.srv\<platform>.bin directories
+	on the logon servers (actually the correct <platform.bin> directories
+	don't exist at all).
+	
+	RESOLUTION
+	==========
+	
+	Run the SMS Setup Program and choose Add Components. From the list box, choose
+	Add and the correct platform components. (For example, Intel Server Components.)
+	This will create an \SMS\site.srv\x86.bin directory and copy the needed files.
+	
+	Additional query words: prodsms
+	
+	======================================================================
+	Keywords          : kbnetwork kbInventory kbPCM smsinv smspcm 
+	Technology        : kbSMSSearch kbSMS100 kbSMS110
+	Version           : winnt:1.0,1.1
+	
+	=============================================================================
+	

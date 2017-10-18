@@ -1,0 +1,149 @@
+---
+layout: page
+title: "Q120554: Summary List: Windows for Workgroups 3.11 Confirmed Problems"
+permalink: kb/120/Q120554/
+---
+
+## Q120554: Summary List: Windows for Workgroups 3.11 Confirmed Problems
+
+	Article: Q120554
+	Product(s): Microsoft Windows 3.x Retail Product
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 06-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows for Workgroups 
+	-------------------------------------------------------------------------------
+	
+	The following is a list of confirmed problems in Windows for
+	Workgroups version 3.11. For more information on each issue, query in
+	the Microsoft Knowledge Base on the article identifier (ID).
+	
+	Summary Listing for Windows for Workgroups Version 3.11
+	-------------------------------------------------------
+	
+	+-----------------------------------------------------------------------------+
+	| Article ID | Article Title                                                  | 
+	+-----------------------------------------------------------------------------+
+	| Q86705     | Problems When Exiting Windows or WFWG After Running 386 Enh    | 
+	+-----------------------------------------------------------------------------+
+	| Q89484     | GP Fault in WFWG Mail May Suppress Password                    | 
+	+-----------------------------------------------------------------------------+
+	| Q89880     | Toolbar Buttons Extend Beyond the Toolbar in File Manager      | 
+	+-----------------------------------------------------------------------------+
+	| Q89973     | Net Watcher: Lines Appear in Share Name When Scrolled          | 
+	+-----------------------------------------------------------------------------+
+	| Q89977     | Print Manager Help Error: Cannot Use CTRL+UP ARROW             | 
+	+-----------------------------------------------------------------------------+
+	| Q90422     | WFWG Err Msg: Application Has Violated System Integrity        | 
+	+-----------------------------------------------------------------------------+
+	| Q91000     | "How To Use Help" Command in WFWG Setup Does Not Work          | 
+	+-----------------------------------------------------------------------------+
+	| Q91114     | WFWG Err Msg: NET3651: There Is No Protocol Added...           | 
+	+-----------------------------------------------------------------------------+
+	| Q92577     | WFWG: GP Fault in Video Driver When Using ClipBook Viewer      | 
+	+-----------------------------------------------------------------------------+
+	| Q92634     | Invalid Err Msg in Print Manager w/14-Character Machine Name   | 
+	+-----------------------------------------------------------------------------+
+	| Q92877     | WFWG May Hang If TCP/IP Hasn't Registered at Logon Time        | 
+	+-----------------------------------------------------------------------------+
+	| Q92880     | WFWG Mail Incorrectly Displays Bad Network Connection Icon     | 
+	+-----------------------------------------------------------------------------+
+	| Q92996     | Local Printer Causes 1st Network Print Job to Disappear        | 
+	+-----------------------------------------------------------------------------+
+	| Q94766     | Workstation Not Showing Status w/Print Mgr Minimized on Server | 
+	+-----------------------------------------------------------------------------+
+	| Q99387     | WFWG: Status Bar Option in Chat Shows Incorrect Shortcut Key   | 
+	+-----------------------------------------------------------------------------+
+	| Q105502    | CAS Modem Fails to Receive Faxes with WFWG 3.11                | 
+	+-----------------------------------------------------------------------------+
+	| Q106022    | Network Dialog Err Msgs Truncated with Small Fonts             | 
+	+-----------------------------------------------------------------------------+
+	| Q106042    | WFWG Err Msg: This Application Was Communicating on...Network  | 
+	+-----------------------------------------------------------------------------+
+	| Q106274    | Certain Network Adapters Can Use DMA Channels 0-3 Only         | 
+	+-----------------------------------------------------------------------------+
+	| Q106365    | Positions of Minimized Icons Are Not Saved in File Manager     | 
+	+-----------------------------------------------------------------------------+
+	| Q106367    | WinPopup Message Incorrectly States Message Was Sent           | 
+	+-----------------------------------------------------------------------------+
+	| Q107199    | Windows Help Does Not Save Maximized Window Position           | 
+	+-----------------------------------------------------------------------------+
+	| Q107471    | WFWG 3.11 Err Msg: Segment Load Failure                        | 
+	+-----------------------------------------------------------------------------+
+	| Q107473    | WFWG 3.11 Err Msg: Access Denied                               | 
+	+-----------------------------------------------------------------------------+
+	| Q107476    | Video Seven VRAM II Video Adapter Hangs WFWG 3.11 Setup        | 
+	+-----------------------------------------------------------------------------+
+	| Q107580    | Net Watcher Event Log May Not Clear                            | 
+	+-----------------------------------------------------------------------------+
+	| Q107994    | "Not Enough Memory" Error Occurs When Browsing                 | 
+	+-----------------------------------------------------------------------------+
+	| Q108100    | PC-NFS Error: NFS903F Missing or Invalid PROTOCOL.INI Data     | 
+	+-----------------------------------------------------------------------------+
+	| Q108818    | WFWG May Hang at Startup with 32-Bit File Access & NoEmmDriver | 
+	+-----------------------------------------------------------------------------+
+	| Q109054    | Games Group Installed Even If Games Are Not Selected           | 
+	+-----------------------------------------------------------------------------+
+	| Q111333    | Errors on Token Ring Network with Banyan Vines 5.52 and WFWG   | 
+	+-----------------------------------------------------------------------------+
+	| Q111566    | Microsoft Mail Err Msg: Error: Unable to Allocate Hook...      | 
+	+-----------------------------------------------------------------------------+
+	| Q111567    | WFWG Setup with HP Ethertwist Cards: No Network Installed      | 
+	+-----------------------------------------------------------------------------+
+	| Q111568    | Video Display Problems with MS-DOS Prompt and Trident Card     | 
+	+-----------------------------------------------------------------------------+
+	| Q111569    | Cannot See Writing with Pen Pointing Device and Super VGA      | 
+	+-----------------------------------------------------------------------------+
+	| Q111570    | System Hangs Using Super VGA Driver with Compaq QVision        | 
+	+-----------------------------------------------------------------------------+
+	| Q111571    | Video Corruption with Diamond Stealth and WFWG VGA Driver      | 
+	+-----------------------------------------------------------------------------+
+	| Q111572    | Basic Redir Repeatedly Prompts for User Name & Password        | 
+	+-----------------------------------------------------------------------------+
+	| Q111573    | Standby Mode with APM, Mail, & AWFAX May Result in a GP Fault  | 
+	+-----------------------------------------------------------------------------+
+	| Q111574    | Server Problems After Extended Use w/EtherExpress & EXP16ODI   | 
+	+-----------------------------------------------------------------------------+
+	| Q111575    | Security Settings File Error with Shared Windows Installation  | 
+	+-----------------------------------------------------------------------------+
+	| Q111683    | New Installation of WFWG with IPX.COM Gives Erroneous Dialog   | 
+	+-----------------------------------------------------------------------------+
+	| Q111685    | AWFAX: Invalid Directory Accepted in Share Fax Modem Dialog    | 
+	+-----------------------------------------------------------------------------+
+	| Q111882    | TI MicroLaser w/EXP16ODI.COM Driver May Cause 15-Second Delay  | 
+	+-----------------------------------------------------------------------------+
+	| Q111966    | WFWG WinPopup Incorrectly Reports Print Job Completed          | 
+	+-----------------------------------------------------------------------------+
+	| Q112198    | WinPopup Sends Multiple Messages to a Workgroup                | 
+	+-----------------------------------------------------------------------------+
+	| Q112368    | Chat Text Is Pasted in the Wrong Window                        | 
+	+-----------------------------------------------------------------------------+
+	| Q112739    | Error Renaming Expanded Directory When Running NetWare 3.x     | 
+	+-----------------------------------------------------------------------------+
+	| Q113455    | AWFAX: Excel Macro File Does Not Render Correctly When Faxed   | 
+	+-----------------------------------------------------------------------------+
+	| Q113456    | Problems Sending Faxes from MAPI-Enabled Applications          | 
+	+-----------------------------------------------------------------------------+
+	| Q114337    | SETUP /H Installs NETDDE with Novell-Only Setup                | 
+	+-----------------------------------------------------------------------------+
+	| Q115321    | Incorrect Time Stamp on File Copied to Disk w/Inadequate Space | 
+	+-----------------------------------------------------------------------------+
+	| Q119204    | Setup Problems on NEC Docking Station When Checking for APM    | 
+	+-----------------------------------------------------------------------------+
+	| Q119208    | AWFAX: CAS Modem Receives Fax with Jagged Print                | 
+	+-----------------------------------------------------------------------------+
+	
+	Additional query words: 3.11
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbWFWSearch
+	Version           : :
+	
+	=============================================================================
+	

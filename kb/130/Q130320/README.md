@@ -1,0 +1,95 @@
+---
+layout: page
+title: "Q130320: PC Win: MOVEUSER.EXE Fails if User's HEXID.CAL Is Missing"
+permalink: kb/130/Q130320/
+---
+
+## Q130320: PC Win: MOVEUSER.EXE Fails if User's HEXID.CAL Is Missing
+
+	Article: Q130320
+	Product(s): Microsoft Mail For PC Networks
+	Version(s): WINDOWS:1.0,1.0a,3.0,3.0b,3.2
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 08-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Mail for Windows, versions 3.0, 3.0b, 3.2 
+	- Microsoft Schedule+ for Windows, versions 1.0, 1.0a 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you use version 3.2 of Microsoft Mail for Windows, the following error
+	message may appear when you try to run the MOVEUSER.EXE utility to move a user
+	from one postoffice to another:
+	
+	  Moving user '<UserName>' failed.
+	
+	CAUSE
+	=====
+	
+	A possible cause of this error is a missing or renamed MAILDATA\CAL\HEXID.CAL
+	file for the UserID being moved.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, have the user launch Schedule+ to create the
+	MAILDATA\CAL\HEXID.CAL file.
+	
+	MORE INFORMATION
+	================
+	
+	The SCHEDULE.KEY file will reserve a hexid number for the user if the user has
+	received a meeting request from another user, even if the user has never
+	launched Schedule+ to create the HEXID.CAL file. MoveUser will read the
+	SCHEDULE.KEY searching for the UserID being moved and determine the user's hexid
+	number. If the HEXID.CAL for the user is not found, the error will occur.
+	
+	The MOVEUSER utility is provided with MVUSR.EXE on the Microsoft Software Library
+	(MSL).
+	
+	You can find MVUSR.EXE,
+	(http://support.microsoft.com/download/support/mslfiles/MVUSR.EXE,) a
+	self-extracting file, on the following services:
+	
+	- Microsoft's World Wide Web Site on the Internet
+	
+	  On the www.microsoft.com home page, click the Support icon.
+	  Click Knowledge Base, and select the product.
+	  Enter kbfile MVUSR.EXE, and click GO!
+	  Open the article, and click the button to download the file.
+	
+	- Internet (anonymous FTP)
+	
+	  ftp ftp.microsoft.com
+	  Change to the Softlib/Mslfiles folder.
+	  Get MVUSR.EXE
+	
+	- The Microsoft Network
+	
+	  On the Edit menu, click Go To, and then click Other Location.
+	  Type "mssupport" (without the quotation marks).
+	  Double-click the MS Software Library icon.
+	  Find the appropriate product area.
+	  Locate and Download MVUSR.EXE.
+	
+	
+	For additional information about downloading, please see the following article in
+	the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Additional query words: 1.00 plus
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMailSearch kbScheduleSearch kbZNotKeyword3 kbSchedule100 kbSchedule100a kbMail300 kbMail320 kbMail300b
+	Version           : WINDOWS:1.0,1.0a,3.0,3.0b,3.2
+	
+	=============================================================================
+	

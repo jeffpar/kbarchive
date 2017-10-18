@@ -1,0 +1,100 @@
+---
+layout: page
+title: "Q248401: User May Override Mapping Option Is Not Enforced Centrally"
+permalink: kb/248/Q248401/
+---
+
+## Q248401: User May Override Mapping Option Is Not Enforced Centrally
+
+	Article: Q248401
+	Product(s): Microsoft SNA Server
+	Version(s): 3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
+	Operating System(s): 
+	Keyword(s): kbsna300sp1 kbsna300sp2 kbsna300sp3 kbsna300sp4 sna4 kbsna400sp1 kbsna400sp2 kbsna400sp
+	Last Modified: 13-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 3.0 SP1, 3.0 SP2, 3.0 SP3, 3.0 SP4, 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The User May Override Mapping option is available in the Host Security Domain
+	properties in SNA Server Manager. If this option is disabled, a user is not
+	allowed to change the mapping for their User ID. The enforcement of the User May
+	Override Mapping option is handled in the Host Account Manager (Udconfig.exe)
+	program. This option is not enforced centrally by any of the other host security
+	components.
+	
+	The following article discusses a problem with Host Account Manager that allows
+	the "Use This User ID" field to be edited even though the User May Override
+	Mapping option is disabled in the Host Security Domain:
+	
+	  Q247320 User ID Can be Edited When User May Override Mapping Is Disabled
+	
+	To provide more security when using previous versions of Host Account Manager,
+	and to prevent the problem described in the referenced article, a change has
+	been made to enforce the User May Override Mapping option centrally instead of
+	solely in the Host Account Manager program (which can be installed on Windows NT
+	or Windows 95/98 SNA Server clients).
+	
+	MORE INFORMATION
+	================
+	
+	For additional information about the latest service pack for SNA Server 4.0,
+	click the article number below to view the article in the Microsoft Knowledge
+	Base:
+	
+	  Q215838 How to Obtain the Latest SNA Server Version 4.0 Service Pack
+	
+	
+	
+	The following list describes the central enforcement of the User May Override
+	Mapping option when you use various versions of the affected components:
+	
+	- Updated versions of Udconfig.exe, Snapmp.exe, and Snaudb.exe.
+	
+	  When all of the updated components are used, Udconfig.exe verifies the user
+	  privilege before enabling the mapped User ID field. The Snapmp service sets a
+	  flag to TRUE if the client has Admin privileges. The Snaudb service checks
+	  this flag before making any updates to the host account cache database. In
+	  this scenario, administrators are the only ones that can change the host
+	  account mappings if the User May Override Mapping option is disabled.
+	
+	- Updated versions of Snapmp.exe and Snaudb.exe with previous versions of
+	  Udconfig.exe.
+	
+	  If the Udconfig.exe file from SNA Server 4.0 SP3 or earlier is used, the "Use
+	  This User ID" field can be edited. A user can change the mapped User ID in
+	  Udconfig, and it appears that the change was made. However, the Snapmp and
+	  Snaudb services verify the user privilege. If the user has Admin privileges,
+	  the change is made in the host account cache database. If the user does not
+	  have Admin privileges, the change is not made in the host account cache
+	  database. Also, the following event is logged in the Application event log
+	  when the attempted change is not authorized:
+	
+	  Event ID: 51
+	  Source: SNA Host Security
+	  Description: PMP could not validate the request.
+	
+	- Updated version of Snaudb.exe and previous versions of Snapmp.exe and
+	  Udconfig.exe.
+	
+	  In this case, the Snaudb service verifies that no one, including the
+	  Administrator, can change the mapped user name. The service logs event ID 51
+	  (described above) in the Application event Log to note that the attempted
+	  change was unauthorized.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbsna300sp1 kbsna300sp2 kbsna300sp3 kbsna300sp4 sna4 kbsna400sp1 kbsna400sp2 kbsna400sp3 
+	Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3 kbSNAServ300SP2 kbSNAServ300SP4
+	Version           : :3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

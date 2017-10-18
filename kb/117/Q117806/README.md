@@ -1,0 +1,133 @@
+---
+layout: page
+title: "Q117806: DoubleSpace Conversion Kit: Description &amp; How to Obtain"
+permalink: kb/117/Q117806/
+---
+
+## Q117806: DoubleSpace Conversion Kit: Description &amp; How to Obtain
+
+	Article: Q117806
+	Product(s): Microsoft Disk Operating System
+	Version(s): MS-DOS:6.22
+	Operating System(s): 
+	Keyword(s): kbfile msdos kbgraphxlinkcritical
+	Last Modified: 13-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft MS-DOS operating system version 6.22 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes the Microsoft DoubleSpace Conversion Kit (DBLCONV.EXE)
+	and how to obtain and install it. The DoubleSpace Conversion Kit enables you to
+	convert DoubleSpace-compressed drives to DriveSpace format. DBLCONV.EXE is a
+	self-extracting executable file that contains the following files:
+	
+	  DRVSPACE.MR1
+	  README.TXT
+	  SETUP.EXE
+	  DBLCDESC.TXT
+	
+	NOTE: If you installed MS-DOS 6.22 Step-Up, you should already have the
+	DRVSPACE.MR1 file in your DOS directory and therefore do not need to obtain this
+	conversion kit.
+	
+	MORE INFORMATION
+	================
+	
+	Description
+	-----------
+	
+	The DoubleSpace Conversion Kit provides the DRVSPACE.MR1 file. If you used MS-DOS
+	6 or 6.2 before installing MS-DOS 6.22, the DRVSPACE.MR1 file enables MS-DOS to
+	read data stored in the DoubleSpace compression format even if the DoubleSpace
+	driver (DBLSPACE.BIN) is not loaded in memory.
+	
+	DRVSPACE.MR1 makes it possible to:
+	
+	- Convert DoubleSpace-compressed drives to DriveSpace format.
+	
+	- Use DriveSpace to mount and read DoubleSpace-compressed drives.
+	
+	- Use MS-DOS 6.22 ScanDisk to check and repair DoubleSpace-compressed drives
+	  and compressed volume files (CVFs), even if DBLSPACE.BIN is not loaded in
+	  memory.
+	
+	- Use MS-DOS 6.22 Backup for MS-DOS to restore backups created with MS-DOS 6 or
+	  6.2 Backup for MS-DOS or Windows, even if DBLSPACE.BIN is not loaded in
+	  memory.
+	
+	IMPORTANT: DRVSPACE.MR1 works in conjunction with the MS-DOS DBLSPACE.BIN file.
+	If you did not install MS-DOS 6.22 over MS-DOS 6.0 or 6.2, you do not have the
+	DBLSPACE.BIN file.
+	
+	If you did not install MS-DOS 6.22 over MS-DOS 6.0 or 6.2, you can obtain the
+	DBLSPACE.BIN file from online services. For information about obtain- ing the
+	DBLSPACE.BIN file, please see the following article in the Microsoft Knowledge
+	Base:
+	
+	  Q148479 Cannot Restore DoubleSpace-Compressed Backup with MS-DOS 6.22
+	
+	For information about converting DoubleSpace-compressed drives to DriveSpace
+	format, type "help dblspace" (without the quotation marks) at the MS-DOS command
+	prompt after you upgrade to MS-DOS 6.22, and then choose the Notes button.
+	
+	Availability of the Dblconv.exe File
+	------------------------------------
+	
+	The following file is available for download from the Microsoft Download Center:
+	
+	  DownloadDownload Dblconv.exe now
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. Once posted, the file is housed on secure
+	servers that prevent any unauthorized changes to the file.
+	
+	You can also:
+	
+	- Fill out and return the form included in your MS-DOS 6.22 Upgrade package.
+	
+	- Call the Microsoft Sales Information Center (MSIC) at (800) 426-9400 and
+	  order the Microsoft DoubleSpace Conversion Kit.
+	
+	Installation Instructions
+	-------------------------
+	
+	To install the DoubleSpace Conversion Kit, follow these steps:
+	
+	1. Copy the DBLCONV.EXE file to a blank floppy disk.
+	
+	2. Change to the floppy disk drive by typing "A:" (without the quotation marks)
+	  or "B:" (without the quotation marks) at the MS-DOS command prompt.
+	
+	3. Run DBLCONV.EXE by typing "dblconv" (without the quotation marks) at the
+	  MS-DOS command prompt.
+	
+	  DBLCONV.EXE extracts the compressed files and stores them in the root
+	  directory of the floppy disk.
+	
+	4. Run SETUP.EXE by typing "setup" (without the quotation marks) at the MS-DOS
+	  command prompt.
+	
+	  Setup installs the DoubleSpace Conversion Kit on your hard disk.
+	
+	  NOTE: The Setup program must be run from a floppy disk.
+	
+	Additional query words: 6.20 24105 1430 5-31-94 Description
+	
+	======================================================================
+	Keywords          : kbfile msdos kbgraphxlinkcritical 
+	Technology        : kbMSDOSSearch kbMSDOS622
+	Version           : MS-DOS:6.22
+	
+	=============================================================================
+	

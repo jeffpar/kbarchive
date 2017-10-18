@@ -1,0 +1,81 @@
+---
+layout: page
+title: "Q268908: PRB: Error Message &quot;Variable 'APP_CLASSNAME' Is Not Found&quot;"
+permalink: kb/268/Q268908/
+---
+
+## Q268908: PRB: Error Message &quot;Variable 'APP_CLASSNAME' Is Not Found&quot;
+
+	Article: Q268908
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:6.0
+	Operating System(s): 
+	Keyword(s): kbwizard kbvfp600 kbGrpDSFox kbDSupport kbCodeSnippet
+	Last Modified: 26-JUL-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Running the main program for an application created by the Application Wizard
+	produces the following error:
+	
+	  Variable 'APP_CLASSNAME' is not found.
+	
+	RESOLUTION
+	==========
+	
+	Compile the application into either an executable (.exe) file or an application
+	(.app) file, and then run it.
+	
+	STATUS
+	======
+	
+	This behavior is by design.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. On the File menu, select New, select Project, and then click Wizard to create
+	  a new Visual FoxPro project called test.
+	
+	2. Click OK to close the Application Builder.
+	
+	3. On the Project Manager, select and run the test_app.prg. Note that you
+	  receive the preceding error message.
+	
+	To eliminate the error, perform the following steps:
+	
+	1. Open the test project.
+	
+	2. Compile the application by typing the following in the Command window:
+	
+	"BUILD APP test FROM test" (without the quotation marks)
+	
+	3. Run the test.app application.
+	
+	REFERENCES
+	==========
+	
+	(c) Microsoft Corporation 2000, All Rights Reserved. Contributions by Kenneth
+	Robison, Microsoft Corporation.
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbwizard kbvfp600 kbGrpDSFox kbDSupport kbCodeSnippet 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+	Version           : WINDOWS:6.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

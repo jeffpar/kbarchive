@@ -1,0 +1,207 @@
+---
+layout: page
+title: "Q234526: PRB: Visual SourceSafe 6.0 SP3 Netsetup Installation Problem"
+permalink: kb/234/Q234526/
+---
+
+## Q234526: PRB: Visual SourceSafe 6.0 SP3 Netsetup Installation Problem
+
+	Article: Q234526
+	Product(s): Microsoft SourceSafe
+	Version(s): WINDOWS:6.0
+	Operating System(s): 
+	Keyword(s): kbfile kbpatch kbsetup kbSSafe600bug kbVS600sp3bug _IK kbGrpDSSSafe
+	Last Modified: 01-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual SourceSafe for Windows, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When updating a Visual SourceSafe Netsetup server installation with Visual
+	Studio 6.0 Service Pack 3, several key files used by Visual SourceSafe are not
+	updated.
+	
+	You are affected if you have done any of the following:
+	
+	- Installed new Visual SourceSafe clients from the Visual SourceSafe Server
+	  Netsetup share.
+	
+	- Updated Visual SourceSafe clients with Service Pack 3 files from the Visual
+	  SourceSafe Server Netsetup share.
+	
+	CAUSE
+	=====
+	
+	The service pack setup does not update the following system files in the Visual
+	SourceSafe Netsetup directories:
+	
+	- Hh.exe
+	- Mfc42.dll
+	- Msvcrt.dll
+	- Hhctrl.ocx
+	- Itss.dll
+	- Itircl.dll
+	
+	In addition, the .inf file used in a Visual SourceSafe 6.0 Netsetup installation
+	was not correctly updated in Visual Studio 6.0 Service Pack 3 to reflect the
+	files updated in Service Pack 3. This issue prevents the Netsetup installation
+	program from detecting if a client system has already been upgraded. The result
+	is that some updated files are not installed and some installed files are given
+	incorrect creation dates. This leaves the client system in an indeterminate
+	state with incorrect dates and version numbers on some files.
+	
+	NOTE: This problem does not corrupt data or stop the client machine. The machine
+	and its Visual SourceSafe install will function normally. This issue places the
+	client machine into a non-prescribed state that may break future installs or
+	hinder swift resolution of Product Support Services calls.
+	
+	RESOLUTION
+	==========
+	
+	To ensure that your Visual SourceSafe server has a correctly updated and
+	configured Netsetup for remote Visual SourceSafe 6.0 Service Pack 3 client
+	installations, the Visual SourceSafe Administrator needs to perform the
+	following steps on the Visual SourceSafe server:
+	
+	1. Copy the following files from the source location on the Visual Studio 6.0
+	  Service Pack 3 CD to the destination location on the Visual SourceSafe
+	  Netsetup server. Because the Service Pack Web downloads have these files
+	  embedded in various CAB files, it is strongly recommend that you use the
+	  CD-ROM as your source for these files.
+	
+	  +---------------------------------------------------------------------------------+
+	  | Source File on Service Pack 3 CD-ROM  | Target Location within Netsetup Folder  | 
+	  +---------------------------------------------------------------------------------+
+	  | ..\os\system\hh.exe                   | ..\Netsetup.x86\os\system               | 
+	  +---------------------------------------------------------------------------------+
+	  | ..\os\system\itircl.dll               | ..\Netsetup.x86\os\system               | 
+	  +---------------------------------------------------------------------------------+
+	  | ..\os\system\itss.dll                 | ..\Netsetup.x86\os\system               | 
+	  +---------------------------------------------------------------------------------+
+	  | ..\os\system\mfc42.dll                | ..\Netsetup.x86\os\system               | 
+	  +---------------------------------------------------------------------------------+
+	  | ..\os\system\msvcrt.dll               | ..\Netsetup.x86\os\system               | 
+	  +---------------------------------------------------------------------------------+
+	  | ..\os\system\resource\1025\hhctrl.ocx | ..\Netsetup.x86\os\system\resource\1025 | 
+	  +---------------------------------------------------------------------------------+
+	  | ..\os\system\resource\1027\hhctrl.ocx | ..\Netsetup.x86\os\system\resource\1027 | 
+	  +---------------------------------------------------------------------------------+
+	  | ..\os\system\resource\1028\hhctrl.ocx | ..\Netsetup.x86\os\system\resource\1028 | 
+	  +---------------------------------------------------------------------------------+
+	  | ..\os\system\resource\1029\hhctrl.ocx | ..\Netsetup.x86\os\system\resource\1029 | 
+	  +---------------------------------------------------------------------------------+
+	  | ..\os\system\resource\1030\hhctrl.ocx | ..\Netsetup.x86\os\system\resource\1030 | 
+	  +---------------------------------------------------------------------------------+
+	  | ..\os\system\resource\1031\hhctrl.ocx | ..\Netsetup.x86\os\system\resource\1031 | 
+	  +---------------------------------------------------------------------------------+
+	  | ..\os\system\resource\1032\hhctrl.ocx | ..\Netsetup.x86\os\system\resource\1032 | 
+	  +---------------------------------------------------------------------------------+
+	  | ..\os\system\resource\1033\hhctrl.ocx | ..\Netsetup.x86\os\system\resource\1033 | 
+	  +---------------------------------------------------------------------------------+
+	  | ..\os\system\resource\1035\hhctrl.ocx | ..\Netsetup.x86\os\system\resource\1035 | 
+	  +---------------------------------------------------------------------------------+
+	  | ..\os\system\resource\1036\hhctrl.ocx | ..\Netsetup.x86\os\system\resource\1036 | 
+	  +---------------------------------------------------------------------------------+
+	  | ..\os\system\resource\1037\hhctrl.ocx | ..\Netsetup.x86\os\system\resource\1037 | 
+	  +---------------------------------------------------------------------------------+
+	  | ..\os\system\resource\1038\hhctrl.ocx | ..\Netsetup.x86\os\system\resource\1038 | 
+	  +---------------------------------------------------------------------------------+
+	  | ..\os\system\resource\1040\hhctrl.ocx | ..\Netsetup.x86\os\system\resource\1040 | 
+	  +---------------------------------------------------------------------------------+
+	  | ..\os\system\resource\1041\hhctrl.ocx | ..\Netsetup.x86\os\system\resource\1041 | 
+	  +---------------------------------------------------------------------------------+
+	  | ..\os\system\resource\1042\hhctrl.ocx | ..\Netsetup.x86\os\system\resource\1042 | 
+	  +---------------------------------------------------------------------------------+
+	  | ..\os\system\resource\1043\hhctrl.ocx | ..\Netsetup.x86\os\system\resource\1043 | 
+	  +---------------------------------------------------------------------------------+
+	  | ..\os\system\resource\1044\hhctrl.ocx | ..\Netsetup.x86\os\system\resource\1044 | 
+	  +---------------------------------------------------------------------------------+
+	  | ..\os\system\resource\1045\hhctrl.ocx | ..\Netsetup.x86\os\system\resource\1045 | 
+	  +---------------------------------------------------------------------------------+
+	  | ..\os\system\resource\1046\hhctrl.ocx | ..\Netsetup.x86\os\system\resource\1046 | 
+	  +---------------------------------------------------------------------------------+
+	  | ..\os\system\resource\1049\hhctrl.ocx | ..\Netsetup.x86\os\system\resource\1049 | 
+	  +---------------------------------------------------------------------------------+
+	  | ..\os\system\resource\1051\hhctrl.ocx | ..\Netsetup.x86\os\system\resource\1051 | 
+	  +---------------------------------------------------------------------------------+
+	  | ..\os\system\resource\1053\hhctrl.ocx | ..\Netsetup.x86\os\system\resource\1053 | 
+	  +---------------------------------------------------------------------------------+
+	  | ..\os\system\resource\1055\hhctrl.ocx | ..\Netsetup.x86\os\system\resource\1055 | 
+	  +---------------------------------------------------------------------------------+
+	  | ..\os\system\resource\1060\hhctrl.ocx | ..\Netsetup.x86\os\system\resource\1060 | 
+	  +---------------------------------------------------------------------------------+
+	  | ..\os\system\resource\1069\hhctrl.ocx | ..\Netsetup.x86\os\system\resource\1069 | 
+	  +---------------------------------------------------------------------------------+
+	  | ..\os\system\resource\2052\hhctrl.ocx | ..\Netsetup.x86\os\system\resource\2052 | 
+	  +---------------------------------------------------------------------------------+
+	  | ..\os\system\resource\2070\hhctrl.ocx | ..\Netsetup.x86\os\system\resource\2070 | 
+	  +---------------------------------------------------------------------------------+
+	  | ..\os\system\resource\3082\hhctrl.ocx | ..\Netsetup.x86\os\system\resource\3082 | 
+	  +---------------------------------------------------------------------------------+
+	
+	  In the case of the Hhctrl.ocx files, simply copy all of the folders in
+	  ..\os\system\resource directory to the target
+	  ..\Netsetup.x86\os\system\resource directory to update the files.
+	
+	2. Download the appropriate Vss98net.inf for your language from the Microsoft
+	  Software Library (see MORE INFORMATION in this article) and copy it to the
+	  ..\Netsetup.x86\setup directory. This updates your Netsetup installation
+	  program with the correct file list containing the correct create dates and
+	  version numbers.
+	
+	  When completed, your Visual SourceSafe 6.0 client installation share
+	  (Netsetup) will be configured to install a valid Visual SourceSafe 6.0
+	  Service Pack 3 client.
+	
+	MORE INFORMATION
+	================
+	
+	The VSS98net.inf file for your language is in one of the following
+	self-extracting files. The following files are available for download from the
+	Microsoft Download Center:
+	
+	English: VSSEnu.exe
+	
+	German: VSSDeu.exe
+	
+	Spanish: VSSEsp.exe
+	
+	French: VSSFra.exe
+	
+	Italian: VSSIta.exe
+	
+	Japanese: VSSJpn.exe
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. Once posted, the file is housed on secure
+	servers that prevent any unauthorized changes to the file.
+	
+	REFERENCES
+	==========
+	
+	For additional information, click the article number below to view the article
+	in the Microsoft Knowledge Base:
+	
+	  Q221146 INFO: Description of Visual SourceSafe Versions, Build Numbers
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbfile kbpatch kbsetup kbSSafe600bug kbVS600sp3bug _IK kbGrpDSSSafe 
+	Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600
+	Version           : WINDOWS:6.0
+	Issue type        : kbprb
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

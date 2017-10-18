@@ -1,0 +1,77 @@
+---
+layout: page
+title: "Q192203: XADM: NNTP Message ID Missing From Event Description"
+permalink: kb/192/Q192203/
+---
+
+## Q192203: XADM: NNTP Message ID Missing From Event Description
+
+	Article: Q192203
+	Product(s): Microsoft Exchange
+	Version(s): winnt:5.5,5.5 SP1
+	Operating System(s): 
+	Keyword(s): exc55sp2fix exc55 exc55sp1
+	Last Modified: 22-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 5.5, 5.5 SP1 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	When a Network News Transfer Protocol (NNTP) message is received by a Microsoft
+	Exchange Server computer, an event may appear in the event log with the message
+	ID missing from the description. For example, an event similar to the following
+	may appear in the event log:
+	
+	  Event: 12034
+	  Source: MSExchange NNTP
+	  Type: Warning
+	  Category: Content Engine
+	  Description: Message <> from '<sender>' had to be reprocessed due to
+	  error 80040C10-F2000200.
+	
+	where <sender> is the person who sent the message. The message ID is
+	missing from the description even if the original NNTP message contained a valid
+	message ID. Note that the last eight hexadecimal digits of the error listed in
+	the description may also be F0000000, F2000210, or F200024C.
+	
+	CAUSE
+	=====
+	
+	This problem occurs when the message ID is not recorded before the event is
+	logged.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, obtain the latest service pack for Exchange Server
+	version 5.5. For more information, please see the following article in the
+	Microsoft Knowledge Base:
+	
+	  Q191014 XGEN: How to Obtain the Latest Exchange Server 5.5 Service Pack
+	
+	
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+	version 5.5.
+	
+	Additional query words: msexchangenntp
+	
+	======================================================================
+	Keywords          : exc55sp2fix exc55 exc55sp1 
+	Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2 kbExchange550SP1
+	Version           : winnt:5.5,5.5 SP1
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

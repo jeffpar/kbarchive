@@ -1,0 +1,180 @@
+---
+layout: page
+title: "Q149087: HOWTO: Using CDaoRecordset::Seek"
+permalink: kb/149/Q149087/
+---
+
+## Q149087: HOWTO: Using CDaoRecordset::Seek
+
+	Article: Q149087
+	Product(s): Microsoft C Compiler
+	Version(s): winnt:4.0,4.1,4.2,5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbcode kbDAOsearch kbDatabase kbMFC kbVC400 kbVC500 kbVC600
+	Last Modified: 06-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The Microsoft Foundation Classes (MFC), included with:
+	   - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+	   - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+	   - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+	   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+	   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+	   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+	   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+	   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article explains how to use CDaoRecordset::Seek. Seek enables high-
+	performance indexed searching on table-type recordsets. You can call Seek to
+	find the first record that satisfies the specified criteria for the current
+	index and make that record the current record. There are two versions of the
+	Seek member function that you can use to locate a record in an indexed
+	table-type recordset object. This article explains both.
+	
+	MORE INFORMATION
+	================
+	
+	There are two versions of Seek, one works with indexes that are comprised of up
+	to three fields and the other handles indexes comprised of more than three
+	fields. You must set the current index by calling SetCurrentIndex before calling
+	Seek. If you do not, an exception will be thrown, as MFC does not specify a
+	default index when a recordset is opened. If the index identifies a non-unique
+	key, Seek locates the first record that satisfies the criteria.
+	
+	NOTE: If you are not creating a UNICODE recordset, any character string
+	COleVariant objects must be explicitly declared ANSI. This can be done by using
+	the COleVariant::COleVariant( lpszSrc, vtSrc ) form of constructor with vtSrc
+	set to VT_BSTRT (ANSI) or by using the COleVariant function SetString( lpszSrc,
+	vtSrc ) with vtSrc set to VT_BSTRT. SetString() is only available in MFC Version
+	4.1 or later.
+	
+	Here are the declarations for Seek:
+	
+	     BOOL Seek( LPCTSTR lpszComparison,
+	                COleVariant* pKey1,
+	                COleVariant* pKey2 = NULL,
+	                COleVariant* pKey3 = NULL );
+	
+	     BOOL Seek (LPCTSTR lpszComparison,
+	                COleVariant* pKeyArray,
+	                WORD nKeys );
+	
+	When you call Seek, you pass one or more key values and a comparison operator
+	(<, <=, =, >=, or >). Seek searches through the current index and
+	locates the first record that satisfies the criteria specified by lpszComparison
+	and the key values passed to it. Once found, Seek returns a nonzero value and
+	makes that record current. If Seek fails to locate a match, Seek returns zero
+	and the current record is undefined.
+	
+	If the current index is a multiple-field index, then the key values for Seek must
+	be in the same order as the fields in the index. In this case, trailing key
+	values can be omitted. You can leave off any number of key values from the end
+	of the list of key values but not from the beginning or middle. If you do choose
+	to leave off trailing key values, Microsoft recommends that you use the >=
+	operator instead of the = operator. The missing key values will be treated as
+	NULL, which probably won't match the values in your table.
+	
+	NOTE: The Microsoft Jet database engine, and therefore the Seek method, does not
+	perform case-sensitive searches.
+	
+	The easiest way to create an index object is from within Microsoft Access.
+	
+	Steps to Create an Index Object
+	-------------------------------
+	
+	1. Start Microsoft Access.
+	
+	2. Open the database file (.mdb) to be targeted.
+	
+	3. Open the target table in Design View.
+	
+	4. Invoke the Index Dialog by choosing Indexes on the View menu.
+	
+	5. Decide on a name for your index object, and then type it into the Index Name
+	  field of the Index Dialog.
+	
+	6. Type the field names of the fields you want tied to the index object into the
+	  Field Name field of the Index Dialog.
+	
+	Sample Code
+	-----------
+	
+	     // Using the first version of Seek specifying the
+	     // first field in the index:
+	
+	     void CMyDaoRecordset::FindCourse()
+	     {
+	        m_pSet->SetCurrentIndex( _T("PrimaryKey") );
+	
+	        COleVariant varCourse ( _T("MATH202"), VT_BSTRT );
+	
+	        if( m_pSet->Seek( _T( "=" ), &varCourse ) )
+	        // then you have found the record and it is now
+	        // the current record
+	
+	     // Using the first version of Seek specifying the
+	     // first two fields in the index:
+	     void CMyDaoRecordset::FindCourse()
+	     {
+	        m_pSet->SetCurrentIndex( _T("PrimaryKey") );
+	
+	        COleVariant varCourse ( _T("MATH202"), VT_BSTRT );
+	        COleVariant varSection( _T( "2"     ), VT_BSTRT );
+	
+	        if( m_pSet->Seek( _T( "=" ), &varCourse, &varSection ) )
+	        // then you have found the record and it is now
+	        // the current record
+	
+	The first version of Seek may be used with up to three fields. If an index has
+	more than three fields and you need to specify more than three fields, use the
+	second version of Seek. An array of COleVariants will be passed.
+	
+	     // Using the second version of Seek, specifying the first four
+	     // fields of the index:
+	
+	     void CMyDaoRecordset::FindCourse()
+	     {
+	        m_pSet->SetCurrentIndex( _T("Secondary") );
+	
+	        COleVariant varCourse    ( _T( "MATH202"  ), VT_BSTRT );
+	        COleVariant varSection   ( _T( "2"        ), VT_BSTRT );
+	        COleVariant varInstructor( _T( "ROGERSN"  ), VT_BSTRT );
+	        COleVariant varRoomNo      ( _T( "KEN-12"   ), VT_BSTRT );
+	
+	        // Now create an array and let the assignment
+	        // operator of COleVariant populate the array
+	        COleVariant rgVariant[4];
+	
+	        rgVariant[0] = varCourse;
+	        rgVariant[1] = varSection;
+	        rgVariant[2] = varInstructor;
+	        rgVariant[3] = varRoomNo;
+	
+	        if( m_pSet->Seek( _T( "=" ), &rgVariant[0], 4 ) )
+	        // then you have found the record and it is now
+	        // the current record
+	
+	REFERENCES
+	==========
+	
+	For more information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q140599 PRB: MFC DAO Functions Accepting COleVariant Strings May Fail
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbcode kbDAOsearch kbDatabase kbMFC kbVC400 kbVC500 kbVC600 
+	Technology        : kbAudDeveloper kbMFC
+	Version           : winnt:4.0,4.1,4.2,5.0,6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

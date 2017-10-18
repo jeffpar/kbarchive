@@ -1,0 +1,161 @@
+---
+layout: page
+title: "Q137385: WD97: Error Using Text Data Source with ODBC Driver"
+permalink: kb/137/Q137385/
+---
+
+## Q137385: WD97: Error Using Text Data Source with ODBC Driver
+
+	Article: Q137385
+	Product(s): Word 97 for Windows
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kberrmsg kbother kbualink97 word97 kbmerge
+	Last Modified: 02-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	
+	
+	SYMPTOMS
+	========
+	
+	When you use a text file as a data source in a mail merge or when you use the
+	Database command on the Insert menu, you may receive one of the following error
+	messages:
+	
+	- External table isn't in the expected format.
+	
+	  -or-
+	
+	- Field1|Field2|Field3|Field4|Field5 isn't a valid name.
+	
+	  -or-
+	
+	- Syntax error in FROM clause.
+	
+	  -or-
+	
+	- Word was unable to open the data source.
+	
+	CAUSE/WORKAROUND
+	----------------
+	
+	The following are possible causes and workarounds for the error messages listed
+	in the Symptoms section of this article:
+	
+	Case 1
+	------
+	
+	CAUSE: The option to hide file extensions is selected (turned on) in Windows.
+	
+	WORKAROUND: Use one of the following methods.
+	
+	Method 1: Use the Select Method option.
+	---------------------------------------
+	
+	1. Open the Open Data Source dialog box using one of the following steps:
+	
+	   - On the Database toolbar (On the View menu, point to Toolbars and then
+	     click Database), click Insert Database.
+	
+	  -or-
+	
+	   - From the Mail Merge Helper (on the Tools menu, click Mail Merge), click
+	     Get Data and then click Open Data Source.
+	
+	2. Select the database file you want to use, click to select the Select Method
+	  check box, and then click OK.
+	
+	3. In the Confirm Data Source dialog box, select Text Files and then click OK.
+	
+	  NOTE: There will be a "Text Files via ODBC (*.txt, *.csv)" entry if the ODBC
+	  text converter is installed. Do not select this converter.
+	
+	Method 2: Turn off the option to hide file extensions.
+	------------------------------------------------------
+	
+	1. Right-click the Windows Start button.
+	
+	2. On the shortcut menu, click Explore.
+	
+	3. In the Windows Explorer, on the View menu, click Folder Options.
+	
+	4. Click the View tab.
+	
+	5. Click to clear the "Hide extensions for known file types" check box, and then
+	  click OK.
+	
+	6. Close the Windows Explorer.
+	
+	Case 2
+	------
+	
+	CAUSE: The data source text file is open on a different computer.
+	
+	NOTE: This problem may occur if you are working in a network environment.
+	
+	WORKAROUND: Close the data source text file on the other system, and then restart
+	your mail merge in Word.
+	
+	Case 3
+	------
+	
+	CAUSE: The data source text file is open by a different text converter than the
+	one you are using. For example, your data source text file may be open by your
+	mail merge main document using the "Text File via ODBC" converter. If open a
+	different mail merge main document without closing the first mail merge main
+	document, when you try to attach the same data source text file using the Text
+	Files converter, you will receive the error message "Word was unable to open the
+	data source."
+	
+	WORKAROUND: Close the other mail merge main document and then restart your mail
+	merge in Word.
+	
+	Case 4
+	------
+	
+	CAUSE: The ODBC Text driver installed by Microsoft Office for Windows does not
+	support the delimiter that you used to separate text in your data source text
+	file. Some known delimiters that the ODBC Text driver does not support are:
+	
+	- Tab Delimited
+	- Tilde ( ~ ) Delimited
+	- Pipe Delimited
+	
+	WORKAROUND: Use one of the following methods.
+	
+	Method 1: Rename the Data Source Text File Extension.
+	-----------------------------------------------------
+	
+	Rename the extension of your tab-delimited text file to an 'unrecognized'
+	extension. For example, if your tab-delimited text file is named Address.txt,
+	then rename the file to Address.too.
+	
+	Method 2: Use a comma-delimited text file as your data source instead of a tab-delimited data source.
+	-----------------------------------------------------------------------------------------------------
+	
+	NOTE: If a comma-delimited text file does not resolve the problem, then use the
+	Method 2 workaround in Case 1.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products listed at
+	the beginning of this article.
+	
+	Additional query words: mail merge database data datafile delimited delimiters insert
+	
+	======================================================================
+	Keywords          : kberrmsg kbother kbualink97 word97 kbmerge 
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : :
+	Issue type        : kbbug
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

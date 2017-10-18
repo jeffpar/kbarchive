@@ -1,0 +1,75 @@
+---
+layout: page
+title: "Q217142: XCON: DRAS Fails with Event 9322"
+permalink: kb/217/Q217142/
+---
+
+## Q217142: XCON: DRAS Fails with Event 9322
+
+	Article: Q217142
+	Product(s): Microsoft Exchange
+	Version(s): winnt:5.0,5.5
+	Operating System(s): 
+	Keyword(s): exc5 exc55
+	Last Modified: 18-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 5.0, 5.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you attempt to connect two Microsoft Exchange Server 5.5 computers using
+	the Dynamic RAS (DRAS) connector over TCP/IP, and the servers are in two
+	different, untrusted domains, the Exchange Server computer that dials may log a
+	9318 and a 289 message transfer agent (MTA) event in the application log. The
+	Exchange Server computer that is being dialed into will log a 9322 event with a
+	Windows NT/MTA error of 5:
+	
+	  9322: MSExchangeMTA
+	  An interface error has occurred. An MtaBindBack over RPC has failed.
+	  Locality Table (LTAB) index: %1, NT/MTA error code:5.
+	  Comms error %3, Bind error %4,Remote Server Name %5, Protocol String %6 [%7 %8
+	  %9 %10]
+	
+	CAUSE
+	=====
+	
+	A Windows NT error code of 5 signifies that there is a security problem between
+	the two servers.
+	
+	WORKAROUND
+	==========
+	
+	1. Create a new Windows NT user account called RASCON. Repeat this process on
+	  each of the untrusted domains.
+	
+	2. Give the new RASCON accounts the exact same password.
+	
+	3. Add the RASCON account to the Domain Admins group.
+	
+	4. Verify that the RASCON account has permission to log onto the Exchange Server
+	  computer. This is done using the Windows NT User Manager.
+	
+	5. Within the Microsoft Exchange Administrator program, give the new RASCON
+	  account Service Account Admin permission at the Organization, Site, and
+	  Configuration levels of the Exchange Server computer.
+	
+	6. Adjust the RAS Override tab of the DRAS connector to use these new accounts
+	  on both Exchange Server computers.
+	
+	7. Retest mail flow over the DRAS Connector.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : exc5 exc55 
+	Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+	Version           : winnt:5.0,5.5
+	Issue type        : kbprb
+	
+	=============================================================================
+	

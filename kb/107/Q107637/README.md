@@ -1,0 +1,127 @@
+---
+layout: page
+title: "Q107637: Problem Accessing SNA Server from Windows NT RAS Client"
+permalink: kb/107/Q107637/
+---
+
+## Q107637: Problem Accessing SNA Server from Windows NT RAS Client
+
+	Article: Q107637
+	Product(s): Microsoft SNA Server
+	Version(s): 2.0,2.1,2.11,3.0,3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+	Operating System(s): 
+	Keyword(s): kbnetwork
+	Last Modified: 13-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 2.0, 2.1, 2.11, 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 3.0 SP4, 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4 
+	- Microsoft Host Integration Server 2000 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	When you attempt to start a 3270 or 5250 session from a Windows NT RAS client
+	(or from a Windows NT computer which was rebooted without being initially
+	connected to a network), the emulator does not start and the following error
+	occurs:
+	
+	  ERROR - The SnaBase service is not started.
+	
+	Also, once SnaBase is started, the Windows NT user must still be authorized to
+	open a network session to the Windows NT server where SNA Server is running, or
+	the SNA session cannot connect. If this occurs, the 3270 applet displays "No SNA
+	Server found in domain", while the 5250 applet displays error F004
+	(Comm_Subsystem_Not_Loaded).
+	
+	CAUSE
+	=====
+	
+	When Windows NT starts up, the SnaBase service is configured to autostart.
+	However, if SnaBase cannot initially connect to an SNA Server, SnaBase stops
+	before the user can establish the RAS connection.
+	
+	If an administrator logs into the computer and the 3270 emulator is started, the
+	SnaBase service is autostarted. However, if a user logs into the computer, the
+	user does not have authority to start a Windows NT service (for example, SnaBase
+	service), so this error occurs.
+	
+	Also, once SnaBase is started, the user must still have authority to open a
+	network session to the Windows NT computer where SNA Server is running. If a
+	user account exists on the Windows NT computer, the local user password must
+	match the Windows NT domain user password or access is denied.
+	
+	RESOLUTION
+	==========
+	
+	An SNA Server 2.11 update is available to correct this problem. Microsoft has
+	updated the following Windows NT client files to correct this problem:
+	
+	  <snaroot>\SYSTEM\SNABASE.EXE
+	  <snaroot>\SYSTEM\SNADMOD.DLL
+	
+	With this update applied, SnaBase does not terminate if you add the following
+	registry Value under the HKEY_LOCAL_MACHINE subtree under the following subkey:
+	
+	  /SYSTEM/CurrentControlSet/Services/SnaBase/  Parameters/ 
+	
+	  Value Name: TerminateIfNoSponsors
+	  Data Type:  REG_DWORD
+	  Data: 0
+	
+	If this entry is not present, or is set to 1, then SnaBase terminates if it
+	cannot open the sponsor connection.
+	
+	NOTE: This update is included in SNA Server versions 2.11 SP1 and later.
+	
+	Without applying this update, it is possible to work around this problem by
+	assigning the following rights to local users so that they have authority to
+	start SnaBase:
+	
+	- For Windows NT Workstation, the local user must be a member of the "Power
+	  Users" group.
+	
+	- For Windows NT Servers, the local user must be a member of the "Server
+	  Operators" group.
+	
+	Also, once the SnaBase service is started, the Windows NT user must still have
+	authority to open a network session to the Windows NT computer where the SNA
+	Server is running. When connecting over RAS, a Windows NT user must initially
+	login to the computer using a local user account. When attempting to get a
+	session to the SNA Server, the local user credentials are used to connect to the
+	Windows NT computer where SNA Server is running.
+	
+	If the user passwords are not synchronized, and if the SNA client is connecting
+	to the server over named pipes, the user can still gain access to the SNA Server
+	by preestablishing a network session to the server before starting their SNA
+	application. To do this, the user can issue the following command:
+	
+	  " net use \\<server_name>\ipc$ /user:<domain>\<user_name>
+	  *" (without the quotation marks)
+	
+	where <server_name> is the SNA Server, <domain> is the Windows NT
+	domain, <user_name> is the Windows NT user name, and * causes the prompt
+	for the user's Windows NT password.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in SNA Server for Windows NT. This
+	problem was corrected in the latest SNA Server for Windows NT, 2.11 U.S. Service
+	Pack. For information on obtaining the Service Pack, query on the following word
+	in the Microsoft Knowledge Base (without the spaces):
+	
+	  S E R V P A C K
+	
+	Additional query words: prodsna
+	
+	======================================================================
+	Keywords          : kbnetwork 
+	Technology        : kbAudDeveloper kbSNAServSearch kbHostIntegServ2000 kbSNAServ300 kbSNAServ200 kbSNAServ211 kbSNAServ400 kbSNAServ210 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3 kbSNAServ400SP4 kbSNAServ300SP2 kbSNAServ300SP4
+	Version           : :2.0,2.1,2.11,3.0,3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+	
+	=============================================================================
+	

@@ -1,0 +1,435 @@
+---
+layout: page
+title: "Q250979: Contents of Internet Information Server 5.0 Release Notes"
+permalink: kb/250/Q250979/
+---
+
+## Q250979: Contents of Internet Information Server 5.0 Release Notes
+
+	Article: Q250979
+	Product(s): Internet Information Server
+	Version(s): 5.0
+	Operating System(s): 
+	Keyword(s): kbOSWin2000
+	Last Modified: 12-APR-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Services version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The More Information section of this article contains a copy of the Release
+	Notes included with the IIS 5.0 documentation. It is included here so that the
+	topics it covers are searchable in the Microsoft Knowledge Base.
+	
+	To navigate to the Release Notes in the documentation, open the Getting Started
+	topic, and then click Release Notes.
+	
+	NOTE: The direct URL for the file containing these Release Notes is located at:
+	
+	  http://localhost/iishelp/iis/htm/core/readme.htm
+	
+	(assuming that the documentation is installed on the local computer).
+	
+	NOTE: Knowledge Base articles can be viewed in either ASCII-text or HTML format.
+	If you are viewing the ASCII-text version of this article, some formatting may
+	have been lost when it was converted from the original HTML form of readme.htm.
+	
+	Following are the contents of the Readme file as it shipped with the products
+	listed above. It has not been edited by the Microsoft Developer Support
+	Knowledge Base editing team.
+	
+	MORE INFORMATION
+	================
+	
+	Internet Information Services 5.0
+	
+	Release Notes
+	-----------------------------------------------
+	
+	Welcome to the release notes for Microsoft Internet Information Services (IIS)
+	5.0. Please refer to these notes to obtain the most recent information about
+	installation, documentation, and other known issues.
+	
+	- Known Problems and Limitations
+	
+	   - Security
+	
+	- Performance and Logging
+	
+	- Multiple Sites and Clustering
+	
+	- Miscellaneous
+	
+	- Documentation Addenda
+	
+	- Getting Help and Providing Feedback
+	
+	Known Problems and Limitations
+	------------------------------
+	
+	Security
+	--------
+	
+	- "Inherit all security settings" in the Permissions Wizard If you run the
+	  Permissions Wizard for a Web site, and choose to inherit all security
+	  settings, customers might be denied access to the Web site. To correct this,
+	  open the Home Directory property sheet for the Web site and select Read and
+	  Scripts only permissions. When prompted, have all virtual directories and
+	  files inherit these settings.
+	
+	- Requiring 128-Bit Encryption on a 56-Bit Server If you select the Require
+	  128-bit encryption check box on a server that is only capable of 56-bit
+	  encryption, users will not be able to access resources for which this
+	  requirement is selected. Even though the 128-bit encryption check box is
+	  enabled, only 56-bit encryption can be used. To enable users to view these
+	  resources, clear the check box.
+	
+	- Server Certificate Cannot Be Removed and Reassigned After Upgrade If you
+	  cannot remove and reassign your server certificate after an upgrade to
+	  Microsoft<AE> Windows 2000<AE>, this is due to changes in the way that IIS 5.0 uses
+	  server certificates. To fix this problem, use the Visual Basic script below
+	  to change metabase settings and to remove the certificate. You can then use
+	  the Web Site Certificate Wizard in IIS to reassign the certificate.
+	
+	  'Set Machinename to the name of the machine or localhost
+	  Set PathObj = GetObject("IIS://" & MachineName & "/w3svc")
+	  PathObj.PutEx 1, "SSLCertHash", ""
+	  PathObj.PutEx 1, "SSLStoreName", ""
+	  PathObj.Setinfo
+	
+	- Domain Name Restrictions not Functioning Properly If you are using DNS
+	  restrictions in IIS 5.0, and some users are experiencing difficulty accessing
+	  server resources, you can correct this problem by using the
+	  "*.domainname.com" syntax rather than the "domainname.com" syntax.
+	
+	Performance and Logging
+	-----------------------
+	
+	- Application Server vs. File Server
+	
+	  Microsoft Windows 2000 Server and IIS 5.0 are built so that you can get the
+	  most from your server. You can run your server as either an application
+	  server or a file serve. These two types of servers have different memory
+	  needs, and the setting you choose can influence the performance of the
+	  server.
+	
+	  By default, Windows 2000 Server installs as a file server. It is recommended
+	  that you configure your server as an application server, if you are using it
+	  primarily as a Web server.
+	
+	  To configure your server as an application server:
+	
+	  1. Click Start, point to Settings, and then click "Network and Dial-up
+	     Connections".
+	
+	  2. Select Local Area Connection, and then open its properties.
+	
+	  3. Select "File and Printer Sharing for Microsoft Networks", and then open
+	     its properties.
+	
+	  4. On the Server Optimization tab, select "Maximize data throughput for
+	     network applications".
+	
+	- Socket Pooling, Performance, and Security Issues
+	
+	  You might want to disable socket pooling if any of the following are true:
+	
+	  You are not hosting a large number of sites.
+	
+	  -or-
+	
+	  You have special security concerns.
+	
+	  Socket pooling will cause IIS 5.0 to listen to all IP addresses, which might
+	  present a possible security risk for secure domains with multiple networks.
+	  In addition, both bandwidth throttling and performance adjustments will apply
+	  to all Web sites configured for the same port, for example port 80. If you
+	  intend to use bandwidth throttling or do performance tuning on a per-site
+	  basis, you will need to disable socket pooling.
+	
+	  To disable socket pooling, type the following at the command prompt:
+	
+	  "c:\inetpub\adminscripts\cscript adsutil.vbs set w3svc/disablesocketpooling
+	  true" (without the quotation marks)
+	
+	  The command prompt will reply:
+	
+	  "disablesocketpooling : (BOOLEAN) True" (without the quotation marks)
+	
+	- Stopping Internet Services
+	
+	  The Reliable Restart feature of the Windows 2000 Service Control Manager will
+	  automatically restart Internet services if the Inetinfo.exe process
+	  terminates abnormally, or if you use Windows Task Manager or Kill.exe to stop
+	  Internet services. If you want to stop Internet services, you must disable
+	  Reliable Restart.
+	
+	  To disable Reliable Restart:
+	
+	  1. Click Start, point to Settings, click Control Panel, double-click
+	     Administrative Tools, and then double-click Computer Management.
+	
+	  2. Under the System Tools node, click Services.
+	
+	  3. Open the properties for IIS Admin Service.
+	
+	  4. On the Recovery tab, select Take No Action in each of the drop-down menus.
+	
+	  You can also disable Reliable Restart by typing "Iisreset.exe /disable"
+	  (without the quotation marks) at the command line.
+	
+	- ASP Buffering and Performance After Upgrade
+	
+	  In IIS 4.0, the Buffer property of the ASP Response object was set to FALSE by
+	  default. In a new installation of IIS 5.0, the Buffer property is set to TRUE
+	  by default. During an upgrade to IIS 5.0, the Buffer property will not be
+	  changed from its previous setting.
+	
+	  Setting the Buffer property to TRUE can significantly improve the performance
+	  of large ASP applications in which users primarily connect to the application
+	  by means of a modem. You can enable buffering for your applications from the
+	  IIS snap-in or by adding the <% Response.Buffer = True %> statement to
+	  selected pages. You can also change the property for entire applications by
+	  using the IIS snap-in. For more information, see the IIS 5.0 documentation.
+	
+	Multiple Sites and Clustering
+	-----------------------------
+	
+	- Remove All IIS 5.0 Resources from a Cluster Before Uninstalling Microsoft
+	  Cluster Service
+	
+	  All IIS resources, including NNTP and SMTP resources, must be removed from a
+	  cluster before Microsoft<AE> Clustering is uninstalled. If they are not removed,
+	  you will not be able to stop or start the previously clustered IIS sites.
+	
+	  To fix this, type the following at the command prompt for all previously
+	  clustered IIS resources:
+	
+	  "Inetpub\AdminScripts\adsutil.vbs set <service name>/<instance
+	  id>/ClusterEnabled 0" (without the quotation marks)
+	
+	- FrontPage Server Extensions Not Supported in Microsoft Clustering
+	
+	  Microsoft FrontPage Server Extensions are not supported for resources in
+	  Microsoft Clustering.
+	
+	- Stopping Internet Services in Microsoft Clustering
+	
+	  When using the new Restart IIS option in the IIS snap-in, or when using
+	  Iisreset.exe (the command-line version of this feature), to stop IIS 5.0,
+	  Microsoft Clustering will attempt to automatically restart IIS.
+	
+	  To keep Microsoft Clustering from automatically restarting IIS:
+	  1. Open a connection to the cluster where IIS 5.0 cluster resources are
+	     located, and then take all IIS cluster resources off line.
+	
+	  2. In the IIS snap-in, right-click the Web service, and then click Restart
+	     IIS.
+	
+	- ASP and FTP Sessions Will Not Fail Over
+	
+	  ASP and FTP sessions do not fail over to other nodes in Microsoft Clustering.
+	  ASP session information is not lost if the affected computer fails back
+	  before the session times out, and if the original failure wasn't due to IIS
+	  stopping unexpectedly. However, FTP sessions are lost and must be restarted.
+	  In both cases, clients will need to reestablish the connection if a failover
+	  occurs on the server.
+	
+	- Clustered NNTP and SMTP Resources
+	
+	  Must be Stopped by Using Cluster Administrator User Interface NNTP and SMTP
+	  resources that are part of Microsoft Clustering must be stopped using the
+	  Cluster Administration user interface. Using the IIS snap-in will not stop
+	  them.
+	
+	- Using Clustered Host Header Sites
+	
+	  If you are using clustered Web sites that use host headers, you must set the
+	  ServerAutoStart metabase property to TRUE for these sites.
+	
+	  To set this property type the following at the command prompt:
+	
+	  "%SystemDrive%\inetpub\adminscripts\adsutil.vbs set w3svc/<instance
+	  id>/ServerAutoStart True" (without the quotation marks)
+	
+	  where <instance id> is the instance ID of the virtual host sites that
+	  are part of the cluster.
+	
+	- Deleting Clustered Resources
+	
+	  If you are deleting clustered IIS 5.0 resources, you need to use a two-step
+	  process:
+	
+	  1. In the Cluster Administration user interface, remove the resources from
+	     the cluster.
+	
+	  2. In the IIS snap-in, delete the resources.
+	
+	Miscellaneous
+	-------------
+	
+	- Microsoft Proxy Server 2.0 Will Not Function After Upgrade
+	
+	  If you are installing Windows 2000 Beta 2 or later on a computer with
+	  Microsoft Proxy Server 2.0, you must install an update to Proxy Server 2.0.
+	  Refer to http://www.microsoft.com/proxy for details. Without the update,
+	  Proxy Server will not function and IIS will be unable to start.
+	
+	- FrontPage Webs Not Accessible After Upgrade from Windows 98
+	
+	  If you were using Microsoft FrontPage 98 Server Extensions, or earlier
+	  versions, with Microsoft Windows 98 and Personal Web Server, then the
+	  FrontPage Server Extensions will no longer work after upgrading to Windows
+	  2000. This is because Microsoft FrontPage 2000 Server Extensions are required
+	  for IIS 5.0.
+	
+	  To upgrade to the FrontPage 2000 Server Extensions from the Default Web Site:
+	
+	  1. Open Add/Remove Programs in Control Panel.
+	
+	  2. Click "Add/Remove Windows Components" to bring up the Windows Components
+	     Wizard.
+	
+	  3. Click Next.
+	
+	  4. Select "Internet Information Services (IIS)", and then click Details.
+	
+	  5. Select "FrontPage 2000 Server Extensions", and then click OK.
+	
+	  6. Click Next to complete the Wizard and to install the FrontPage 2000 Server
+	     Extensions.
+	
+	  To upgrade to the FrontPage 2000 Server Extensions on other virtual Web
+	  sites:
+	
+	  7. At the command prompt, navigate to the \Program Files\Common
+	     Files\Microsoft Shared\Web Server Extensions\40\bin directory.
+	
+	  8. In this directory, type the following at the command prompt:
+	
+	  "fpsrvadm -o upgrade -p all" (without the quotation marks)
+	
+	- Problems Starting Out-of-Process Applications After Changing Account
+	  Information
+	
+	  This is due to the user account's username and password information not being
+	  synchronized after the change. You might receive Event Log errors telling you
+	  that your IWAM_computername account could not be logged on. If you encounter
+	  this problem, run the synciwam script to synchronize the passwords.
+	
+	  To run the script, at the command prompt type "cscript synciwam.vbs [-v|-h]
+	  -v" (without the quotation marks) uses verbose mode and prints a log of the
+	  script's activity. -h prints the script Help information.
+	
+	- Using the MyInfo, PageCounter, and Counters Objects After an Upgrade
+	
+	  To use your current data for these objects after an upgrade to IIS 5.0, you
+	  must move their data files to the %WINDIR%\inetsrv\Data directory, which is
+	  created by IIS during the upgrade. Move the MyInfo.xml and the Counters.txt
+	  files from the %WINDIR%\inetsrv\ directory and the %WINDIR%HitCnt.cnt file to
+	  the new directory %WINDIR%\inetsrv\Data. ("%WINDIR%" is the Windows
+	  installation directory.) The components will then append information to your
+	  files.
+	
+	Documentation Addenda
+	---------------------
+	
+	- Site Server Express 2.0 Documentation
+	
+	  If you've upgraded from the Microsoft Windows NT 4.0 Option Pack with
+	  Microsoft Site Server Express components to IIS 5.0, the documentation for
+	  Site Server Express 2.0 can now be accessed by typing
+	  "http://localhost/iishelp/sse/misc/default.asp" (without the quotation marks)
+	  in the address bar of the browser on the computer running IIS.
+	
+	- Seeing the "Welcome to Microsoft Windows NT 4.0 Option Pack" Page After
+	  Upgrading to Windows 2000
+	
+	  If you are upgrading to Windows 2000 and have not changed the Default.asp file
+	  for the Default Web Site, visitors to your site will see the old IIS 4.0
+	  welcome page when they type the URL http://<servername>/ in their
+	  browser.
+	
+	  To set IIS so that users see the new IIS 5.0 welcome page:
+	
+	  1. Open the Properties Sheet for the Default Web Site in the IIS snap-in.
+	
+	  2. On the Documents tab, select the file default.asp, and then click Remove.
+	
+	  If you want visitors to your site to see a welcome page that you created,
+	  replace the IIS 4.0 Default.asp file with your own Default.asp file.
+	
+	- Hosting Multiple Web Sites
+	
+	  The IIS 5.0 documentation says that if you use multiple IP addresses to host
+	  multiple Web sites, you will need an additional network card for each IP
+	  address. In fact, it is possible to bind multiple IP addresses to a single
+	  network card, although this configuration is not recommended for sites with
+	  high volumes of Internet traffic.
+	
+	  NOTE: Microsoft Windows 2000 Professional with IIS 5.0 can host one Web site
+	  and one FTP site on a single computer. If you would like to host multiple Web
+	  or FTP sites on a single computer, consider upgrading to Microsoft Windows
+	  2000 Server.
+	
+	- Documentation Correction for DisableSocketPooling
+	
+	  The IIS documentation states that sockets are shared between sites that use
+	  the same socket number but different IP addresses. This is incorrect. Sockets
+	  are shared between sites that use the same port number but different IP
+	  addresses.
+	
+	- Adsutil.exe Not Included in Samples
+	
+	  The Adsutil.exe utility is not included in the samples, as mentioned in the
+	  documentation.
+	
+	Getting Help and Providing Feedback
+	-----------------------------------
+	
+	Peer-to-peer newsgroups are available to help you interact with other users of
+	our products. You can use any newsreader software to access these newsgroups,
+	but you might need to configure it in order to read them. When prompted for News
+	Server, specify msnews.microsoft.com. You do not need to enter an account name
+	or password. Before posting to the newsgroups, please review the Microsoft
+	Newsgroup Rules of Conduct. For IIS 5.0 issues, please use:
+	
+	  microsoft.public.inetserver.iis
+	
+	Copyright Information
+	---------------------
+	
+	<A9>1998-1999 Microsoft Corporation
+	
+	These materials are provided "as-is," for informational purposes only.
+	
+	Neither Microsoft nor its suppliers makes any warranty, express or implied with
+	respect to the content of these materials or the accuracy of any information
+	contained herein, including, without limitation, the implied warranties of
+	merchantability or fitness for a particular purpose. Because some
+	states/jurisdictions do not allow exclusions of implied warranties, the above
+	limitation may not apply to you.
+	
+	Neither Microsoft nor its suppliers shall have any liability for any damages
+	whatsoever including consequential, incidental, direct, indirect, special, and
+	lost profits. Because some states/jurisdictions do not allow exclusions of
+	implied warranties, the above limitation may not apply to you. In any event,
+	Microsoft's and its suppliers' entire liability in any manner arising out of
+	these materials, whether by tort, contract, or otherwise shall not exceed the
+	suggested retail price of these materials.
+	
+	Additional query words: iis 5 readme kbreadme read me rtm golden release released to manufacturing final akz
+	
+	======================================================================
+	Keywords          : kbOSWin2000 
+	Technology        : kbiisSearch kbiis500
+	Version           : :5.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

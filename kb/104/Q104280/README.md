@@ -1,0 +1,281 @@
+---
+layout: page
+title: "Q104280: FFAPI: Command Line Options for Remote FFAPI Programs"
+permalink: kb/104/Q104280/
+---
+
+## Q104280: FFAPI: Command Line Options for Remote FFAPI Programs
+
+	Article: Q104280
+	Product(s): Microsoft Mail For PC Networks
+	Version(s): 3.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 04-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Mail Software Development Kit (FFAPI), version 3.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article lists the Remote FFAPI programs and their command-line options.
+	There are two programs--Remote Get (listed first) and Remote Put--each of which
+	comes in small and large models. Large model version names start with an L.
+	
+	  Article Q118787 Details the Application FFAPI programs.
+	
+	MORE INFORMATION
+	================
+	
+	Program: REMOTE GET
+	-------------------
+	
+	Syntax: RMTGET -imailbox:password output-file [-ddrive] [-f0|1|2]
+	
+	  [-h] [-k] [-ms] [-nvalue] [-pvalue] [-r]
+	  [-wydirectory|-wndirectory log-filename]
+	  [-yyy|-yyn|-yny|ynn]
+	  [-zeyy|-zeny|-zeyn|-zdmsgid|-zrmsgid]][-ver]
+	
+	Options:
+	
+	-imailbox:password
+	
+	  Use the -i option to specify the user mailbox and password for the
+	  application. This identification is assigned by the administrator.
+	  Example: -ijjones:star
+	
+	output-filename
+	
+	  Use this to specify the file that will contain the message exported from
+	  Mail. It can be no longer than a maximum of 8 characters with a 3 character
+	  extension.
+	  Example: data.out <or> c:\mail\data.out
+	
+	-ddrive
+	
+	  Use the -d option to specify the drive that contains the Remote Mail data
+	  files. If you do not specify a drive, FFAPI searches for the files on drive
+	  M.
+	  Example: -df
+	
+	-f0|1|2
+	
+	  Use the -f option to specify the new-line sequence to be used in the MMFF
+	  output file. Each line in the MMFF is separated by this sequence.
+	
+	  0 = carriage return
+	  1 = line feed
+	  2 = carriage return, line feed
+	
+	  If you do not specify the new-line sequence, carriage return is used.
+	  Example: -f2
+	
+	-h
+	
+	  Use the -h option to generate messages in the extended mail format. The
+	  default is to create the MMFF file using the basic header format.
+	  Example: -h
+	
+	-k
+	
+	  Use the -k option to keep messages in the postoffice mailbag, including MMFF
+	  output files and all message data files. The default is to delete the message
+	  from the mailbag once extracted.
+	  Example: -k
+	
+	-ms
+	
+	  Use the -ms option to generate a log of messages sent in the file
+	  \LOG\SENT.LOG located on the drive specified for the Mail data files (-d
+	  option). If the file already exists, the new messages are appended to it.
+	  Example: -ms
+	
+	-nvalue
+	
+	  Use the -n option to specify the number of messages to get from the Mail data
+	  file and place in the MMFF output file. The number must be greater than zero
+	  and not more than 50. If you do not specify a number, up to 50 messages are
+	  retrieved.
+	  Example: -n20
+	
+	-pvalue
+	
+	  Use the -p option to extract messages assigned a priority equal to or higher
+	  than the one you specify. The order of priority is determined by the ASCII
+	  character set. Priorities 1 to 5 and R, C, F, and T are reserved for Mail. If
+	  you do not specify a priority, all messages are extracted.
+	
+	  Values: 1 - 9 or any letter.
+	  Example: -p3
+	
+	-r
+	
+	  Use the -r option to get messages from the Remote Mail Outbox. If you do not
+	  specify this option, messages are put in the Inbox.
+	  Example: -r
+	
+	-wydirectory|-wndirectory
+	
+	  Use the -w option to automatically save files sent to the user by file
+	  transfer, to indicate what to do with duplicate file names, and to specify
+	  the directory to contain the files. Choose -wy to overwrite an existing file
+	  if the file received has the same name. Choose -wn to automatically change
+	  the name of the file received if the existing file has the same name. Save
+	  all files received in the directory you specify.
+	  Example: -wnc:\inbox
+	
+	log-filename
+	
+	  Use this option to specify the path and the name of the file to contain the
+	  audit of files received.
+	  Example: c:\mail\receive.log
+	
+	-yyy|-yyn|-yny|-ynn
+	
+	  Use a -y option to create external files for the message body, attachments,
+	  or both.
+	
+	- Specify -yyy to generate external files for both the attachments and the body
+	  of a message. Yy means generate the files for the message body; the last y
+	  means generate files for the message attachments.
+	
+	- Specify -yyn to generate external files for the message body. Yy means
+	  generate the files for the message body; n means do not generate files for
+	  the message attachment.
+	
+	- Specify -yny to generate external files for the message attachments. Yn means
+	  do not generate files for the message body; the second y means generate files
+	  for the message attachments.
+	
+	  If you specify -ynn, the messages along with any associated attachment files
+	  are put in the MMFF output file. If you do not specify this option, RmtGet
+	  uses -ynn .
+	
+	-zeyy|-zeny|-zeyn|-zdmsgid|-zrmsgid
+	
+	  Use a -z option to manipulate individual message headings in the mailbag. You
+	  can read message headings, and get or delete a message.
+	
+	- To enumerate the headings of the messages in the mailbag, specify -zeyy. The
+	  first y means extract headings of unread messages; the second y means extract
+	  headings of messages that have been read.
+	
+	- To extract only headings of messages that have been read, specify -zeny. The
+	  n means do not extract the headings of unread messages; y means extract
+	  headings of messages that have been read.
+	
+	- To extract only headings of unread messages, specify -zeyn. Y means extract
+	  the headings of unread messages; n means do not extract headings of messages
+	  that have been read.
+	
+	- To get a message and place it in the output file, specify -zrmsgid, where the
+	  message identification is the mail identifier.
+	
+	- To delete a message in the mailbag, specify -zdmsgid, where the message
+	  identification is the mail identifier.
+	
+	  Example: -zd0000008a
+	
+	-ver
+	
+	  Use the -ver option to display the version of this FFAPI program. The version
+	  number will appear on the screen unless you direct it to another location.
+	  Example: -ver
+	
+	Program: REMOTE PUT
+	-------------------
+	
+	Syntax: RMTPUT -imailbox:password input-file [-bffilename]
+	
+	  [-ddrive] [-f0|1|2] [-k] [-mr] [-r] [-wuser-address
+	  [,user-address] physical-filename [ physical-filename]
+	  |-wuser-address [,user-address] physical-filename,
+	  logical-filename [ physical-filename,logical-filename]]][-ver]
+	
+	Options:
+	
+	-imailbox:password
+	
+	  See entry under REMOTE GET
+	
+	input filename
+	
+	  Use this to specify the file that contains the messages to put into the
+	  Remote Mail Outbox.
+	  Example: c:\mail\data.in
+	
+	-bffilename
+	
+	  Use the -bf option to log all error messages in a file you specify. If you
+	  omit this option, the errors are directed to standard output.
+	  Example: -bfc:\errors\err.log
+	
+	-ddrive
+	
+	  See entry under REMOTE GET
+	
+	-f0|1|2
+	
+	  See entry under REMOTE GET
+	
+	-k
+	
+	  Use the -k option to keep the MMFF file and all data files that make up the
+	  message.
+	  Example: -k
+	
+	-mr
+	
+	  Use the -mr option to generate a log of messages received in the file:
+	  \log\recv.log. If the file already exists, the new messages are appended to
+	  it.
+	  Example: -mr
+	
+	-r
+	
+	  Use the -r option to put the messages into the Remote Mail Inbox. If you omit
+	  this option the messages are put in the Outbox.
+	  Example: -r
+	
+	-wuser-address [,user-address] physical-filename [ physical-filename]
+	|-wuser-address [,user-address] physical-filename,logical-filename
+	[physical-filename,logical-filename]
+	
+	  Use the -w option to specify what files are to be sent to whom. Use this
+	  option to specify the user address, and the file to be sent. Specify the name
+	  of a file by its physical filename followed by a comma (,) and its logical
+	  filename, or simply the physical filename.
+	
+	  If you are specifying more than one file, you can specify one file by its
+	  physical filename, and the next file by its physical and logical filenames.
+	  You can send more than one file to a user; each filename must be preceded by
+	  a space.
+	  Example: -wny4/po1/jbrown c:\doc\list1.txt c:\doc\list2.txt
+	
+	  You can also send files to more than one user. Each address must be separated
+	  from the next by a comma. No more than ten spaces can precede or follow the
+	  comma.
+	  Example: -wny4/po1/jbrown c:\doc\list1.txt,lanet/sales/margb a:list2.txt
+	
+	  You can also repeat the -w option for each additional user. Example:
+	
+	  -wny4/po1/jbrown c:\doc\list1.txt -wlanet/sales/margb a:list2.txt
+	
+	-ver
+	
+	  See entry under REMOTE GET
+	
+	Additional query words: 3.00 3.0
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbMailSearch kbSDKSearch kbSDKMailFFAPI300
+	Version           : :3.0
+	
+	=============================================================================
+	

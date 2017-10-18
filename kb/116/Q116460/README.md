@@ -1,0 +1,145 @@
+---
+layout: page
+title: "Q116460: BUG: Debugging With Mono And VGA Can Cause Screen Corruption"
+permalink: kb/116/Q116460/
+---
+
+## Q116460: BUG: Debugging With Mono And VGA Can Cause Screen Corruption
+
+	Article: Q116460
+	Product(s): Microsoft Programming Utilities
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kb16bitonly
+	Last Modified: 26-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft CodeView for MS-DOS 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When using the MS-DOS "mode mono" command to debug a graphics application on a
+	secondary monochrome monitor (VGA being the primary monitor), screen corruption
+	can result on both monitors.
+	
+	RESOLUTION
+	==========
+	
+	To work around the problem, do not use the mode mono command. Instead, either
+	debug on the primary VGA monitor or use the /2 command line option to display
+	Codeview's windows on the monochrome monitor (instead of on the VGA monitor).
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article. We are researching this problem and will post new
+	information here in the Microsoft Knowledge Base as it becomes available.
+	
+	MORE INFORMATION
+	================
+	
+	The sample program below demonstrates the problem. Build a debug version and
+	enter the following commands at the DOS prompt:
+	
+	  msherc
+	  mode mono
+	  cv /b /s modes
+	
+	Once you have started Codeview, enter the following commands in the command
+	window:
+	
+	  bp .49
+	  g
+	g
+	
+	At this point both the VGA monitor and the monochrome monitor may display corrupt
+	information.
+	
+	Sample Code
+	-----------
+	
+	  /* Compiler Options Needed:  /AL /Zi /Od
+	  */ 
+	
+	  #include <conio.h>
+	  #include <stdio.h>
+	  #include <graph.h>
+	
+	  short modes[] = { _TEXTBW40,     _TEXTC40,      _TEXTBW80,
+	                    _TEXTC80,      _MRES4COLOR,   _MRESNOCOLOR,
+	                    _HRESBW,       _TEXTMONO,     _HERCMONO,
+	                    _MRES16COLOR,  _HRES16COLOR,  _ERESNOCOLOR,
+	                    _ERESCOLOR,    _VRES2COLOR,   _VRES16COLOR,
+	                    _MRES256COLOR, _ORESCOLOR
+	                  };
+	  char *names[] = { "TEXTBW40",    "TEXTC40",     "TEXTBW80",
+	                    "TEXTC80",     "MRES4COLOR",  "MRESNOCOLOR",
+	                    "HRESBW",      "TEXTMONO",    "HERCMONO",
+	                    "MRES16COLOR", "HRES16COLOR", "ERESNOCOLOR",
+	                    "ERESCOLOR",   "VRES2COLOR",  "VRES16COLOR",
+	                    "MRES256COLOR","ORESCOLOR"
+	                  };
+	  short rows[] = { 60, 50, 43, 30, 25 };  /* Possible number of rows */ 
+	
+	  void main(void)
+	  {
+	   short c, i, j, x, y, row, num = sizeof(modes) / sizeof(modes[0]);
+	   struct _videoconfig vc;
+	   char b[500];              /* Buffer for string */ 
+	
+	   _displaycursor( _GCURSOROFF );
+	
+	   /* Try each mode. */ 
+	   for( i = 0; i <= num; i++ )
+	   {
+	    for (j = 0; j < 5; j++ )
+	    {
+	     /* Try each possible number of rows. */ 
+	     row = _setvideomoderows( modes[i], rows[j] );
+	     if( (!row) || (rows[j] != row) )
+	      continue;
+	     else
+	     {
+	      _getvideoconfig( &vc );
+	      y = (vc.numtextrows - 12) / 2;
+	      x = (vc.numtextcols - 25) / 2;
+	
+	      /* Use text window to place output in middle of screen. */ 
+	      _settextwindow( y, x, vc.numtextrows - y, vc.numtextcols - x );
+	
+	      /* Write all information to a string, then output string */ 
+	      c  = sprintf( b,     "Video mode: %s\n", names[i] );
+	      c += sprintf( b + c, "X pixels:   %d\n", vc.numxpixels );
+	      c += sprintf( b + c, "Y pixels:   %d\n", vc.numypixels );
+	      c += sprintf( b + c, "Columns:    %d\n", vc.numtextcols );
+	      c += sprintf( b + c, "Rows:       %d\n", vc.numtextrows );
+	      c += sprintf( b + c, "Colors:     %d\n", vc.numcolors );
+	      c += sprintf( b + c, "Bits/pixel: %d\n", vc.bitsperpixel );
+	      c += sprintf( b + c, "Pages:      %d\n", vc.numvideopages );
+	      c += sprintf( b + c, "Mode:       %d\n", vc.mode );
+	      c += sprintf( b + c, "Adapter:    %d\n", vc.adapter );
+	      c += sprintf( b + c, "Monitor:    %d\n", vc.monitor );
+	      c += sprintf( b + c, "Memory:     %d",   vc.memory );
+	      _outtext( b );
+	      _getch();
+	     }
+	    }
+	   }
+	   _displaycursor( _GCURSORON );
+	   _setvideomode( _DEFAULTMODE );
+	  }
+	
+	Additional query words: 4.00 4.01 4.10
+	
+	======================================================================
+	Keywords          : kb16bitonly 
+	Technology        : kbAudDeveloper kbCodeView kbZNotKeyword3
+	Version           : :
+	
+	=============================================================================
+	

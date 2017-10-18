@@ -1,0 +1,136 @@
+---
+layout: page
+title: "Q228754: CC III: The Russian Front: Description of the Cc30b.exe Update"
+permalink: kb/228/Q228754/
+---
+
+## Q228754: CC III: The Russian Front: Description of the Cc30b.exe Update
+
+	Article: Q228754
+	Product(s): Microsoft Home Games
+	Version(s): WINDOWS:
+	Operating System(s): 
+	Keyword(s): kbfile kbsetup kbui kburl kbimukbfaq
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Close Combat III: The Russian Front 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes the Close Combat III Update (Cc30b.exe) for Close Combat
+	III: The Russian Front.
+	
+	MORE INFORMATION
+	================
+	
+	The Close Combat III Update upgrades your copy of Close Combat III: The Russian
+	Front to version 3.0b.
+	
+	To install the Close Combat III Update, you must have Close Combat III installed
+	on your computer.
+	
+	How to Obtain the Close Combat III Update
+	-----------------------------------------
+	
+	The Close Combat III Update is available as a free download from the following
+	Microsoft Web site:
+	
+	  http://www.microsoft.com/games/closecombat/update.htm
+	
+	Changes in the Close Combat III Update
+	--------------------------------------
+	
+	The Close Combat III Update includes the following changes:
+	
+	- Connection stability is significantly improved in multiplayer games.
+	
+	- Multiplayer games are far less likely to stop responding (hang).
+	
+	- The game no longer hangs occasionally when you view the map.
+	
+	- Bazookas and Panzerschrecks now take longer to reload.
+	
+	- The strategic artificial intelligence (SAI) engine no longer purchases twice
+	  the correct number of tanks for the current map.
+	
+	- If you have surplus equipment at the beginning of an operation, you now
+	  receive 50 points instead of 10 points.
+	
+	- The computer is less likely to send armor units to an area where it already
+	  lost some of its vehicles during the current battle.
+	
+	- Pathfinding is improved for short paths.
+	
+	- When the SAI plays a defensive position, the computer's units are more likely
+	  to remain in place until the enemy makes contact.
+	
+	- Units executing Move or Sneak orders now make better use of defensive
+	  terrain.
+	
+	- The computer now accepts a truce after 5-15 minutes if no fighting occurs or
+	  no victory locations change sides.
+	
+	- A progress meter is now displayed during long data transfers in multiplayer
+	  games.
+	
+	- The AB GDs 120mm mortar no longer has two mortar tubes.
+	
+	- Machine guns can now directly target antitank (AT) guns and heavy mortars.
+	
+	- Units no longer conserve ammunition as quickly as they did in version 3.0.
+	
+	- AT guns now take more time to reload.
+	
+	- The computer is now less likely to camp when it has an advantage.
+	
+	- The long and medium range kill power of all units is now more realistic.
+	
+	- Improved realism for location and damage of shell hits on the Joseph Stalin
+	  II (IS-2) tank.
+	
+	Multiplayer Games
+	-----------------
+	
+	When you play a multiplayer game in Close Combat III, each player in the game
+	must have the same version of the program installed on their computer.
+	
+	Removing Close Combat III After You Install the Update
+	------------------------------------------------------
+	
+	The Close Combat III Update installs certain files that the original Close Combat
+	III uninstall program cannot remove. To remove Close Combat III after you
+	install the Close Combat III Update, follow these steps:
+	
+	1. Click Start, point to Programs, point to Microsoft Games, point to Close
+	  Combat III, and then click Uninstall The Russian Front.
+	
+	2. Follow the instructions on the screen to remove the program.
+	
+	3. Click Start, and then click Run.
+	
+	4. In the Open box, type the following line (including the quotation marks), and
+	  then click OK
+	
+	  "<drive>:\program files\microsoft games"
+	
+	  where <drive> is the letter of the hard disk on which Close Combat III
+	  was installed.
+	
+	5. Right-click the Close Combat III folder, and then click Delete. If you are
+	  prompted to confirm the deletion, click Yes or Yes To All.
+	
+	Additional query words: cciii cc3 trf msgame patch
+	
+	======================================================================
+	Keywords          : kbfile kbsetup kbui kburl kbimu kbfaq
+	Technology        : kbHomeProdSearch kbGamesSearch kbCloseCombatSearch kbCloseCombat3
+	Version           : WINDOWS:
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

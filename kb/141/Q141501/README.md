@@ -1,0 +1,73 @@
+---
+layout: page
+title: "Q141501: How to Add SourceSafe for Unix to SourceSafe for Windows"
+permalink: kb/141/Q141501/
+---
+
+## Q141501: How to Add SourceSafe for Unix to SourceSafe for Windows
+
+	Article: Q141501
+	Product(s): Microsoft SourceSafe
+	Version(s): WINDOWS:3.04; winnt:3.04
+	Operating System(s): 
+	Keyword(s): kb3rdparty kbsetup
+	Last Modified: 22-JAN-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SourceSafe for Windows, version 3.04 
+	- Microsoft SourceSafe for Windows NT, version 3.04 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	SourceSafe for UNIX version 3.02 requires a Um.Dat file with a valid serial
+	number. This article explains how to update the Um.dat file to use with
+	SourceSafe for UNIX.
+	
+	MORE INFORMATION
+	================
+	
+	NOTE: SourceSafe for UNIX version 3.02 and Unix are manufactured by a vendor
+	independent of Microsoft; we make no warranty, implied or otherwise, regarding
+	these products' performance or reliability.
+	
+	SourceSafe for UNIX version 3.02 requires a Um.dat file containing a valid serial
+	number. This number is entered by the installation script during the
+	installation of SourceSafe for Unix. SourceSafe for Windows version 3.04 does
+	not require a serial number but can use a Um.dat file that contains it. You can
+	use the following step-by-step procedure to add SourceSafe 3.02 for UNIX to an
+	existing SourceSafe for Windows 3.04 site:
+	
+	
+	Step-by-Step Example
+	--------------------
+	
+	1. Back up the existing database.
+	
+	2. Update all existing SourceSafe file names and directory names to lowercase
+	  names.
+	
+	3. Install SourceSafe version 3.02 for UNIX.
+	
+	4. Set the SSDIR and PATH variables.
+	
+	5. Run the following commands:
+	
+	  %serializ data -s123-654-789
+	  %ddconv date
+	
+	6. Reset the project and users rights if they are different from the default
+	  settings.
+	
+	Additional query words: ss3
+	
+	======================================================================
+	Keywords          : kb3rdparty kbsetup 
+	Technology        : kbSSafeSearch kbAudDeveloper kbZNotKeyword2 kbZNotKeyword3 kbSSafe304 kbSSafe304NT
+	Version           : WINDOWS:3.04; winnt:3.04
+	
+	=============================================================================
+	

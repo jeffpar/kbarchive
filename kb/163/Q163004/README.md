@@ -1,0 +1,81 @@
+---
+layout: page
+title: "Q163004: &quot;Pack and Go Setup Was Unable to Install...&quot; Trying to Unpack"
+permalink: kb/163/Q163004/
+---
+
+## Q163004: &quot;Pack and Go Setup Was Unable to Install...&quot; Trying to Unpack
+
+	Article: Q163004
+	Product(s): Microsoft PowerPoint for Windows
+	Version(s): WINDOWS:7.0
+	Operating System(s): 
+	Keyword(s): kberrmsg kbpng
+	Last Modified: 16-APR-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft PowerPoint for Windows 95, version 7.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you attempt to unpack a presentation from multiple disks using
+	Pngsetup.exe, you receive the following error message and the unpack process
+	halts:
+	
+	  Pack and Go Setup was unable to install the presentation. The disk may be
+	  full, you may not have permission for the <Path> or it may already
+	  contain a presentation with the same name."
+	
+	Although you receive the error message, you can open the presentation.
+	
+	CAUSE
+	=====
+	
+	This error occurs when you do not pack the PowerPoint Viewer with your
+	presentation and you use multiple disks to pack your presentation. The
+	Playlist.lst file, which is included in the packed presentation, is not
+	unpacked. Although this file is not required by PowerPoint it is required by the
+	Viewer and it is packed when you pack your presentation.
+	
+	WORKAROUND
+	==========
+	
+	Use one of the following methods to work around this problem:
+	
+	Method 1
+	--------
+	
+	Click OK when you receive the error message.
+	
+	NOTE: You can open your presentation successfully if you have PowerPoint 7.0 or
+	the PowerPoint 7.0 viewer installed.
+	
+	Method 2
+	--------
+	
+	Copy all of the files from the disks to a single folder on your hard drive. Run
+	Pngsetup.exe from that folder. You will not receive the error message and the
+	presentation will run automatically.
+	
+	NOTE: You must have PowerPoint 7.0 or the PowerPoint 7.0 viewer installed.
+	
+	STATUS
+	======
+	
+	Microsoft is researching this problem and will post new information here in the
+	Microsoft Knowledge Base as it becomes available.
+	
+	Additional query words: 7.00 Error Messages ppt7 ppt95 png pack and go diskette disc several more than one
+	
+	======================================================================
+	Keywords          : kberrmsg kbpng 
+	Technology        : kbPowerPtSearch kbPowerPt700 kbZNotKeyword2 kbPowerPt700Search
+	Version           : WINDOWS:7.0
+	Hardware          : x86
+	
+	=============================================================================
+	

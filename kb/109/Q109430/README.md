@@ -1,0 +1,889 @@
+---
+layout: page
+title: "Q109430: FILE:Fw0969.exe Coordinates Menus &amp; Screens w/ Foundation READs"
+permalink: kb/109/Q109430/
+---
+
+## Q109430: FILE:Fw0969.exe Coordinates Menus &amp; Screens w/ Foundation READs
+
+	Article: Q109430
+	Product(s): Microsoft FoxPro
+	Version(s): 2.5,2.5a,2.5b
+	Operating System(s): 
+	Keyword(s): kbcode kbfile kbDSupport
+	Last Modified: 28-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft FoxPro for Windows, versions 2.5, 2.5a, 2.5b 
+	- Microsoft FoxPro for MS-DOS, versions 2.5, 2.5a, 2.5b 
+	-------------------------------------------------------------------------------
+	
+	
+	SUMMARY
+	=======
+	
+	Fw0969.exe is a file that contains the Application Note entitled "Coordinating
+	Screens and Menus with Foundation READs" describing how to manage a menu system
+	and access screen controls through a menu.
+	
+	MORE INFORMATION
+	================
+	
+	The following files are available for download from the Microsoft Download
+	Center:
+	
+	  Fw0969.exe
+	  (http://download.microsoft.com/download/fox26win/Doc/1/W9X/EN-US/fw0969.exe)
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. Once posted, the file is housed on secure
+	servers that prevent any unauthorized changes to the file.
+	
+	THE TEXT OF FW0969
+	------------------
+	
+	======================================================================
+	     Microsoft(R) Technical Support Application Note (Text File)
+	    FW0969: COORDINATING MENUS AND SCREENS WITH FOUNDATION READS
+	======================================================================
+	                                                 Revision Date: 12/93
+	                                                     No Disk Included
+	
+	The following information applies to Microsoft FoxPro versions 2.5,
+	2.5a, and 2.5b for Windows and FoxPro versions 2.5, 2.5a, and 2.5b for
+	MS-DOS.
+	
+	-----------------------------------------------------------------------
+	| INFORMATION PROVIDED IN THIS DOCUMENT AND ANY SOFTWARE THAT MAY     |
+	| ACCOMPANY THIS DOCUMENT (collectively referred to as an Application |
+	| Note) IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER      |
+	| EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED      |
+	| WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR       |
+	| PURPOSE. The user assumes the entire risk as to the accuracy and    |
+	| the use of this Application Note. This Application Note may be      |
+	| copied and distributed subject to the following conditions:  1) All |
+	| text must be copied without modification and all pages must be      |
+	| included;  2) If software is included, all files on the disk(s)     |
+	| must be copied without modification (the MS-DOS(R)  utility         |
+	| diskcopy is appropriate for this purpose);  3) All components of    |
+	| this Application Note must be distributed together;  and  4) This   |
+	| Application Note may not be distributed for profit.                 |
+	|                                                                     |
+	| Copyright (C) 1993 Microsoft Corporation.  All Rights Reserved.     |
+	| Microsoft, FoxPro, and MS-DOS are registered trademarks and Windows |
+	| is a trademark of Microsoft Corporation.                            |
+	|---------------------------------------------------------------------|
+	
+	                            INTRODUCTION
+	                            ============
+	
+	Many screens have associated menu systems that are called from the
+	screen program. These menu systems usually contain:
+	
+	- Options with keyboard shortcuts for accessing screen controls.
+	- Options that are not available in the screen because they are used
+	  infrequently.
+	- Options that trigger irreversible actions (such as PACK).
+	
+	This Application Note covers managing a menu system and accessing
+	screen controls via a menu.
+	
+	                       MANAGING A MENU SYSTEM
+	                       ======================
+	
+	Menus created in the Menu Builder automatically interact with the
+	FoxPro menu system. If you create a menu and add it to the FoxPro menu
+	system, you don't have to explicitly activate the menu with ACTIVATE
+	MENU.
+	
+	The following sections give you more information about managing menus
+	that you create.
+	
+	ACCESSING MENUS DURING A READ
+	=============================
+	
+	The READ command activates controls in FoxPro screens. Whether or not
+	your menus are accessible when a READ is active depends on the type of
+	READ you issue.
+	
+	A modal READ is a READ that includes the MODAL keyword or a WITH
+	<window title list> clause. When you issue a modal READ, your menu is
+	disabled.
+	
+	After you issue a READ, access to your menu depends on the setting of
+	SYSMENU, as discussed in the following section.
+	
+	CONTROLLING MENUS WITH SET SYSMENU
+	==================================
+	
+	With the SET SYSMENU command, you can disable your menu, selectively
+	add and remove items from the menu, restore the default FoxPro menus,
+	and control access to your menu during program execution. Here are
+	some of the ways you can use SET SYSMENU:
+	
+	SET SYSMENU ON
+	--------------
+	
+	Your menu bar is accessible during program execution when FoxPro waits
+	for keyboard input, such as during BROWSE, a non-modal READ, or MODIFY
+	MEMO. The menu bar is not displayed in FoxPro for MS-DOS, but you can
+	display it and make it accessible by pressing the ALT or F10 key or by
+	double-clicking the mouse button.
+	
+	SET SYSMENU OFF
+	---------------
+	
+	Your menu bar is not accessible during program execution.
+	
+	SET SYSMENU AUTOMATIC
+	---------------------
+	
+	Your menu bar is displayed at all times during program execution and
+	is accessible during program execution when FoxPro waits for keyboard
+	input.
+	
+	SET SYSMENU TO DEFAULT
+	----------------------
+	
+	The default FoxPro menu system is restored to its default
+	configuration.
+	
+	For more information about the SET SYSMENU command, see the FoxPro
+	"Language Reference."
+	
+	SAVING AND RESTORING MENUS
+	==========================
+	
+	PUSH MENU and POP MENU help you save and restore menus. Using these
+	commands, you can push a menu onto a stack in memory and restore it
+	later by popping it off the stack.
+	
+	Pushing a menu onto a stack saves its current state but does not
+	remove it from the screen. While the menu is saved in memory, you can
+	change the menu on the screen, or you can replace it with another
+	menu. After changing or replacing the original menu, you can restore
+	the original menu by using POP MENU.
+	
+	Menus are pushed onto and popped off the stack in a "last in, first
+	out" order. The number of menus saved in memory is limited only by the
+	amount of memory available. For more information about PUSH MENU and
+	POP MENU, see the FoxPro "Language Reference."
+	
+	The ORGANIZER application demonstrates how menus are replaced and
+	restored. When you choose a menu option in the ORGANIZER, a screen
+	program runs. This program pushes the current menu into memory and
+	then runs a menu program that creates a new menu to replace the
+	original one. When the screen program ends, the original ORGANIZER
+	menu is restored (popped) from memory.
+	
+	The following example shows the Convert.spr screen program commands
+	that PUSH the ORGANIZER menu onto a stack in memory, replace the
+	ORGANIZER menu with its own menu, and then restore the original
+	ORGANIZER menu when the screen program ends.
+	
+	  PUSH MENU _MSYSMENU  && Defined in the setup code for the screen.
+	        .
+	        .
+	        .
+	  DO convmenu.mpr      && Defined in the READ WHEN code for the screen.
+	        .
+	        .
+	        .
+	  POP MENU _MSYSMENU   && Defined in the cleanup code for the screen.
+	
+	CALLING SCREEN AND MENU PROGRAMS
+	================================
+	
+	To call a menu program, use the following syntax:
+	
+	  DO <menu name>.mpr
+	
+	Similarly, to call a screen program, use the following syntax:
+	
+	  DO <filename>.spr
+	
+	You must include the .mpr or .spr extension, because different types
+	of program or code files -- such as menus, screens, and queries -- can
+	have the same names. The filename extensions make them unique.
+	
+	                ACCESSING SCREEN CONTROLS VIA A MENU
+	                ====================================
+	
+	If screen controls such as radio buttons are frequently used, you can
+	help users by allowing access to these controls via menu options and
+	keyboard shortcuts. For example, the CONVERT.SCX screen has a set of
+	radio buttons, menu options, and keyboard shortcuts that you can use
+	to select a measurement unit -- such as area, length, or mass.
+	
+	To define a menu option, you can often use the code that defines the
+	behavior of the corresponding screen control. Simply copy the code
+	used for the screen control into the code snippet for the menu option.
+	
+	         USING A FOUNDATION READ WITH MENUS AND SCREEN SETS
+	         ==================================================
+	
+	A foundation READ is a READ command with a VALID clause that you issue
+	before issuing any @ ... GET commands. The foundation READ, also
+	called a "GETless" READ, suspends program flow so that your
+	application can wait for the user to make choices and initiate
+	actions. The foundation READ keeps your application active until the
+	VALID clause expression evaluates to true (.T.) or until a user-
+	defined function returns true.
+	
+	A foundation READ serves two basic purposes:
+	
+	- It keeps an application active even though no screen sets are
+	  active so that application users can choose options from your custom
+	  menu.
+	
+	- It can be used in conjunction with an event handler to create an
+	  event-driven application. An event-driven application allows the
+	  user to control which application events take place, instead of the
+	  application limiting and controlling the actions of the user.
+	
+	Depending on the complexity of your application, you might choose to
+	use the basic model or the advanced model of the foundation READ. If
+	your application has no more than one screen set active at a time, the
+	basic model should be adequate. Otherwise, you'll probably want to use
+	the advanced model.
+	
+	BASIC MODEL -- FOUNDATION READ WITHOUT AN EVENT HANDLER
+	=======================================================
+	
+	The basic model of the foundation READ keeps a menu active in an
+	application created with the FoxPro Distribution Kit. If your
+	application has only one screen active at a time, use the basic model.
+	
+	If you want a menu program to be the main file in your application,
+	initialize a logical variable to false (.F.) in the menu's setup or
+	cleanup code. For example, the following statement creates the logical
+	variable M.ENDREAD and initializes it to false:
+	
+	  m.endread = .F.
+	
+	Then issue the foundation READ command in the menu's cleanup code. The
+	following statement issues a READ command that remains active until
+	the VALID clause (that is, M.ENDREAD) evaluates to true:
+	
+	  READ VALID m.endread     && This is the foundation READ.
+	
+	You also need to provide a mechanism for altering the value of the
+	memory variable when it's time for the application to terminate. In
+	the procedure associated with the Quit option on your custom menu,
+	include the following:
+	
+	  m.endread = .T.
+	  CLEAR READ ALL
+	
+	The VALID clause on the foundation READ will be evaluated after the
+	READ is cleared in the second statement. Since the previous line of
+	code stored true to the logical variable that is evaluated in the
+	VALID, the foundation READ terminates, and program flow continues
+	until your application ends.
+	
+	If you want your user to be able to interact with multiple screen sets
+	at the same time, you should use a foundation READ in conjunction with
+	an event handler function. The next section describes how to do this.
+	
+	ADVANCED MODEL -- FOUNDATION READ AND EVENT HANDLER
+	===================================================
+	
+	The advanced model of the foundation READ calls an event handler UDF
+	instead of evaluating a variable flag to determine whether to
+	terminate the READ. Code in the handler function can be used to manage
+	subsequent READ levels by determining which screen set the user wants
+	to activate based on choices the user has made. If the appropriate
+	screen set is not active, the handler function clears the active READ
+	and launches the desired screen set. A detailed example of a
+	foundation READ with an event handler is provided in the "Sample
+	Applications Using a Foundation READ" section later in this
+	Application Note.
+	
+	Creating a Foundation READ with an Event Handler
+	------------------------------------------------
+	
+	To create a foundation READ that calls a handler function in the VALID
+	clause, create a .PRG program and make it the main file of your
+	application. For information about creating programs, see the "File
+	Menu" chapter in the FoxPro "User's Guide." For information about the
+	main program in an application, see the "Selecting a Main File"
+	section in the "Project -- The Main Organizing Tool" chapter in the
+	FoxPro "Developer's Guide."
+	
+	The main program contains these elements:
+	
+	- Preliminary Code -- Sets up your environment and initializes global
+	  variables.
+	
+	- Launch Menu -- Runs the main menu program for the application. The
+	  user can launch screen sets by choosing menu options.
+	
+	- Foundation READ -- Issues the foundation READ with a handler
+	  function in the VALID clause.
+	
+	- Cleanup Code -- Restores the environment.
+	
+	- Procedures and Functions -- Includes user-defined functions to be
+	  called in your application.
+	
+	The following statement issues the foundation READ:
+	
+	  READ VALID myhandler( )   && This is the foundation READ.
+	
+	MYHANDLER( ) is a function in the main program that launches the
+	appropriate screen set in response to user actions.
+	
+	To terminate the foundation READ
+	
+	1. Issue the command CLEAR READ ALL in the procedure associated with
+	  the Quit option on your custom menu.
+	
+	2. Have the function MYHANDLER( ) return true (.T.).
+	
+	Why an Event Handler Is Necessary
+	---------------------------------
+	
+	A screen is a window with GET objects and an associated READ. In a
+	generated screen set, all the screens have a single common READ. All
+	the GET objects on the screens in the screen set can be active while
+	this READ is active. If another screen set is run, another READ is
+	issued, and it is nested within the original READ. The user cannot
+	access any of the objects in the original READ until the nested READ
+	has been terminated.
+	
+	Even though the GET objects in the original screen set are not active,
+	the windows are still visible and can be brought to the front. To the
+	user, it appears as though the objects and controls on the original
+	screens are accessible. In addition, if you have very many screen sets
+	in your application, you can easily exceed the FoxPro limit of five
+	nested READ commands, generating an error.
+	
+	Using a handler function allows you to clear all READs except the
+	foundation READ and the READ associated with the screen set that the
+	user wants to access. The user can choose a screen set either by
+	choosing a menu option or by clicking on a visible window in the
+	screen set.
+	
+	SAMPLE APPLICATIONS USING A FOUNDATION READ
+	===========================================
+	
+	FoxPro version 2.5 includes two sample applications that demonstrate how to
+	use a foundation READ and manage subsequent READ levels: Ex1.app and
+	Ex2.app. Both of these samples are installed by default in the
+	GOODIES\FNDATION subdirectory. The file Ex2.app is the same as Ex1.app
+	except that it also demonstrates coordinating a screen and a Browse
+	window. This section of this Application Note traces the code that
+	executes when users of Ex1.app interact with the application's
+	interface.
+	
+	Overview of Ex1.app
+	-------------------
+	
+	Ex1.app is an application that allows users to view, update, browse,
+	and search through the customer, salesman, parts, and invoice files of
+	a company. The user can open multiple screens by choosing menu
+	options, and can switch between visible screens by clicking on them.
+	
+	Programs in Ex1.app
+	
+	Although there are other programs in the application, the following
+	programs are important in a discussion of the foundation READ and the
+	event handler:
+	
+	- Ex1.prg -- The main program. The first code to be executed,
+	  including the foundation READ, is in this program.
+	
+	- Ex1.mpr -- The menu program.
+	
+	- Excust.spr -- The customer update screen set.
+	
+	- Exparts.spr -- The parts update screen set.
+	
+	- Exinv.spr -- The invoice screen set.
+	
+	- Exsman.spr -- The salesman update screen set.
+	
+	Procedures and User-Defined Functions
+	
+	- MYHANDLER -- The event handler. MYHANDLER is located in Ex1.prg.
+	
+	- EFFACE -- Routine to decide whether to release the control panel.
+	  EFFACE is located in Ex1.prg.
+	
+	- STOPREAD -- Returns .T. to terminate the screen set READ or .F. to
+	  keep the screen set READ active. STOPREAD is called from the window
+	  DEACTIVATE clause in each of the screen sets, and is located in
+	  Ex1.prg.
+	
+	- MHIT -- Handles choices from the Application menu. MHIT is located
+	  in Ex1.mpr.
+	
+	Important FoxPro Commands and Functions Used in Handling Events
+	
+	CLEAR READ             INLIST( )               LEN( )
+	RDLEVEL( )             READ CYCLE              WCHILD( )
+	WONTOP( )              WREAD( )                WVISIBLE( )
+	
+	Information about each of these functions can be found in the FoxPro
+	"Language Reference" or in the Help system.
+	
+	What Happens in Ex1.app
+	-----------------------
+	
+	EX1.PRG is the main program in the application, so the menu and the
+	foundation READ are invoked in this program. When you run the
+	application:
+	
+	1. The menu program is launched, replacing the system menu with the
+	  custom menu:
+	
+	     DO Ex1.mpr
+	
+	2. The foundation READ is issued:
+	
+	     READ VALID myhandler( )
+	
+	Since MYHANDLER( ) initially returns .F., the READ continues. Issuing
+	RDLEVEL( ) at this point would return 1. The menu bar is available to
+	the user, and the Application menu on the custom menu bar contains the
+	following options:
+	
+	- Customers -- Launches the EXCUST screen set. The window in this
+	  screen set for customer updates is CUST.
+	
+	- Salesmen -- Launches the EXSMAN screen set. The window in this
+	  screen set for salesmen updates is SMAN.
+	
+	- Parts -- Launches the EXPARTS screen set. The window in this screen
+	  set for part updates is PARTS.
+	
+	- Invoices -- Launches the EXINV screen set. The window in this
+	  screen set for customer updates is INV.
+	
+	User Action 1: Initial Menu Choice
+	
+	If the user chooses Customers from the Application menu, for example,
+	the following code is executed:
+	
+	  DO mhit IN Ex1.mpr WITH "Excust.spr"
+	
+	Because MHIT is a procedure in the cleanup and procedures area of the
+	menu program, it is necessary to specify where the procedure is, IN
+	Ex1.mpr. The string "Excust.spr" is passed as a parameter to MHIT.
+	
+	   MHIT with Only the Foundation READ Active
+	
+	Code                          Comments
+	---------------------------------------------------------------------
+	
+	PROCEDURE mhit                The parameter "EXCUST.SPR" is stored to
+	PARAMETER prog                the variable PROG.
+	
+	IF RDLEVEL() > 1              Since the only READ active is the
+	  tobedone = prog            foundation READ when MHIT is initially
+	  CLEAR READ                 invoked, RDLEVEL( ) is not greater than
+	                             1, and this code is not executed.
+	
+	ELSE                          Instead, Excust.spr is run.
+	  DO (prog)
+	ENDIF
+	
+	Excust.spr is a generated screen set containing two screens: CUST
+	(titled "Customer Update") and CONTROL3 (not titled). CONTROL3 is
+	included in each of the four main screen sets.
+	
+	User Action 2: Second Menu Choice
+	
+	If, without closing CUST (the Customer Update screen), the user then
+	chooses Salesmen from the Application menu, the following actions
+	occur:
+	
+	1. The following command is executed:
+	
+	     DO mhit in Ex1.mpr WITH "Exsman.spr"
+	
+	   MHIT with Two READs Active
+	
+	Code                          Comments
+	---------------------------------------------------------------------
+	
+	PROCEDURE mhit                The parameter "Exsman.spr" is stored to
+	PARAMETER prog                the variable PROG.
+	
+	IF RDLEVEL() > 1              RDLEVEL( ) returns 2 -- the foundation
+	  tobedone = prog            READ and the READ for the EXCUST screen
+	  CLEAR READ                 set. "Exsman.spr" is stored to the
+	                             variable TOBEDONE, and the READ for the
+	                             EXCUST screen set is cleared.
+	
+	                             The windows for the EXCUST screen set
+	                             are still visible even though the READ
+	                             has been cleared. This is because the
+	                             screens in Ex1.app are generated with
+	                             the Clear Windows check box in the
+	                             Generate Screen dialog not checked.
+	ELSE
+	  DO (prog)
+	ENDIF
+	
+	2. When the EXCUST READ is cleared, the cleanup code for the screen
+	  set executes. The cleanup code in the CUST screen consists of the
+	  following lines:
+	
+	     IF quitting
+	        RELEASE WINDOW cust
+	        DO efface
+	     ENDIF
+	
+	  Since .T. is stored to the variable QUITTING only if the user
+	  chooses Quit on the control panel or manually closes the CUST
+	  window, no action is taken in the cleanup code.
+	
+	3. RDLEVEL( ) drops back to 1. Program execution returns to the
+	  foundation READ, which causes the VALID clause, MYHANDLER( ), of
+	  the foundation READ to be evaluated.
+	
+	   MYHANDLER Function in Ex1.prg
+	
+	Code                          Comments
+	---------------------------------------------------------------------
+	
+	PRIVATE m.temp, m.x
+	IF dropdead                   DROPDEAD is initialized to .F., so this
+	  RETURN .T.                 condition isn't met and the command
+	ENDIF                         isn't executed.
+	
+	IF LEN(tobedone) > 0          In MHIT, "Exsman.spr" was stored to the
+	  m.temp = tobedone          public variable TOBEDONE so the length
+	  tobedone = ""              of the variable is greater than 0.
+	  DO (m.temp)                "Exsman.spr" is stored to a private
+	  RETURN .F.                 variable, the null string is stored to
+	ENDIF                         the public variable TOBEDONE, and
+	                             Exsman.spr is executed. .F. is returned
+	                             so that the foundation READ does not
+	                             terminate.
+	
+	.                             The additional code in the MYHANDLER( )
+	.                             function will be discussed in
+	.                             conjunction with the actions that
+	                             trigger it.
+	
+	When this code executes, SMAN is the active window and EXSMAN is the
+	active READ. CUST is still visible.
+	
+	User Action 3: User Clicks on a Screen in Another READ
+	
+	If the user clicks on the CUST window, the following actions take
+	place:
+	
+	1. SMAN ceases to be the active window, so the window DEACTIVATE
+	  clause on the READ is executed. The DEACTIVATE clause can be viewed
+	  as a window-level VALID clause; if the DEACTIVATE clause returns
+	  .T., the READ terminates. If the DEACTIVATE clause returns .F., the
+	  READ continues to be active.
+	
+	2. The DEACTIVATE clause in the SMAN window invokes the STOPREAD
+	  function, located in Ex1.prg, with the parameter "sman".
+	
+	     stopread("sman")
+	
+	   STOPREAD Invoked When Changing Active READs
+	
+	Code                             Comments
+	---------------------------------------------------------------------
+	
+	FUNCTION stopread                The parameter "sman" is stored to the
+	PARAMETER m.window               variable M.WINDOW.
+	
+	IF NOT WVISIBLE(m.window)        SMAN would not be visible if the user
+	  SHOW WINDOW control3 TOP      had chosen Close from the File menu,
+	  quitting = .T.                clicked the close box, or pressed ESC.
+	ENDIF                            This code would make sure that the
+	                                control panel remained visible and
+	                                would store .T. to QUITTING so that
+	                                the READ would be terminated.
+	
+	                                Since the user only clicked on another
+	                                window, SMAN remains visible and these
+	                                commands are not executed.
+	
+	RETURN quitting OR NOT WREAD()   QUITTING is still false. WREAD( )
+	                                determines if WONTOP( ) is involved in
+	                                the current READ level. Since the user
+	                                clicked on CUST and the current READ
+	                                is still the READ associated with
+	                                EXSMAN, WREAD( ) evaluates to .F., and
+	                                NOT WREAD( ) evaluates to .T.
+	
+	                                .F. OR .T. returns .T., so the EXSMAN
+	                                READ terminates.
+	
+	3. When the nested READ terminates, RDLEVEL( ) drops back to 1.
+	  Program execution returns to the foundation READ, which causes the
+	  VALID clause, MYHANDLER( ), of the foundation READ to be evaluated
+	  again.
+	
+	   MYHANDLER Function in Ex1.prg
+	
+	Code                          Comments
+	---------------------------------------------------------------------
+	
+	PRIVATE m.temp, m.x
+	
+	IF dropdead
+	  RETURN .T.
+	ENDIF
+	
+	IF LEN(tobedone) > 0          Neither of these conditions is met, so
+	  m.temp = tobedone          none of this code is executed this time.
+	  tobedone = ""
+	  DO (m.temp)
+	  RETURN .F.
+	ENDIF
+	
+	DO CASE                       Since the user clicked on CUST,
+	CASE WONTOP("cust")           WONTOP("cust") returns .T., EXCUST.SPR
+	  DO excust.spr              is launched again, and the EXCUST screen
+	CASE WONTOP("parts")          set becomes the active READ. RDLEVEL( )
+	  DO exparts.spr             would return 2 again at this point.
+	CASE WONTOP("inv")
+	  DO exinv.spr
+	CASE WONTOP("sman")
+	  DO exsman.spr
+	
+	CASE WONTOP("control3")
+	.
+	.
+	.
+	ENDCASE
+	
+	RETURN .F.                    The foundation READ is not terminated.
+	
+	Now CUST is the active window, and EXCUST is the active READ.
+	
+	User Action 4: User Clicks on the Control Panel
+	
+	If the user clicks on the control panel (the window CONTROL3), the
+	following actions occur:
+	
+	1. CUST ceases to be the active window, so the window DEACTIVATE
+	  clause on the READ is executed.
+	
+	2. The DEACTIVATE clause in the CUST window invokes the STOPREAD
+	  function with the parameter "cust".
+	
+	     stopread("cust")
+	
+	   STOPREAD Invoked When Changing Active Windows in the Same READ
+	
+	Code                            Comments
+	---------------------------------------------------------------------
+	
+	FUNCTION stopread               The parameter "cust" is stored to the
+	PARAMETER m.window              variable M.WINDOW.
+	
+	IF NOT WVISIBLE(m.window)       CUST remains visible and these
+	  SHOW WINDOW control3 TOP     commands are not executed.
+	  quitting = .T.
+	ENDIF
+	
+	RETURN quitting OR NOT WREAD()  QUITTING is still false. Since the
+	                               user clicked on CONTROL3, which is a
+	                               window in the EXCUST screen set,
+	                               WREAD( ) evaluates to .T., and NOT
+	                               WREAD( ) evaluates to .F. .F. OR .F.
+	                               returns .F., so the EXCUST READ does
+	                               not terminate.
+	
+	Now CONTROL3 is the active window and EXCUST is the active READ.
+	
+	User Action 5: User Chooses Quit on the Control Panel
+	
+	If the user chooses Quit on the control panel, the following actions
+	occur:
+	
+	1. The following commands from the push button VALID clause in
+	  CONTROL3 are run:
+	
+	     quitting = .T.
+	     CLEAR READ
+	
+	2. Since the EXCUST READ is cleared, the cleanup code for the screen
+	  set is run. The cleanup code consists of the following:
+	
+	     IF quitting
+	        RELEASE WINDOW cust
+	        DO efface
+	     ENDIF
+	
+	  Because .T. has been stored to QUITTING, CUST is released so that
+	  it is no longer visible to the user and command execution goes to
+	  the procedure EFFACE, located in Ex1.prg.
+	
+	    EFFACE to Determine Whether to Release the Control Panel
+	
+	Code                          Comments
+	---------------------------------------------------------------------
+	
+	PROCEDURE efface
+	
+	PRIVATE m.x
+	
+	m.x = WCHILD("",0)            This procedure cycles through all the
+	DO WHILE LEN(m.x) > 0         visible windows until it finds one of
+	  IF INLIST(m.x, "CUST",     the application screen set windows:
+	"PARTS", ;                    CUST, PARTS, INV, or SMAN.
+	     "INV","SMAN")
+	     RETURN                  Since SMAN is still visible, RETURN is
+	  ENDIF                      issued. CONTROL3 remains visible and is
+	  m.x = WCHILD("",1)         the active window.
+	ENDDO
+	RELEASE WINDOW(WONTOP())
+	                             If none of the other screen set windows
+	                             had been visible, the last line in this
+	                             procedure would have released CONTROL3,
+	                             too, so that none of the screen set
+	                             windows would be visible.
+	
+	3. Again, because the VALID clause associated with the Quit button in
+	  the control panel cleared the READ, the nested READ terminates and
+	  RDLEVEL( ) drops back to 1. Program execution returns to the
+	  foundation READ, which causes FoxPro to evaluate the VALID clause,
+	  MYHANDLER( ), of the foundation READ.
+	
+	   MYHANDLER( ) Function in Ex1.prg
+	
+	Code                              Comments
+	---------------------------------------------------------------------
+	
+	PRIVATE m.temp, m.x
+	
+	IF dropdead
+	  RETURN .T.
+	ENDIF
+	                                 Neither of these conditions is met, so
+	                                 none of this code is executed this
+	                                 time.
+	
+	IF LEN(tobedone) > 0
+	  m.temp = tobedone
+	  tobedone = ""
+	  DO (m.temp)
+	  RETURN .F.
+	ENDIF
+	DO CASE
+	CASE WONTOP("cust")
+	  DO excust.spr
+	CASE WONTOP("parts")
+	  DO exparts.spr
+	CASE WONTOP("inv")
+	  DO exinv.spr
+	CASE WONTOP("sman")
+	  DO exsman.spr
+	
+	CASE WONTOP("control3")           WONTOP("control3") returns .T.
+	
+	  m.temp = ""                    This code cycles through the visible
+	  m.x = WCHILD("",0)             windows, starting with the window at
+	  DO WHILE LEN(m.x) > 0          the bottom of the stack of child
+	     DO CASE                     windows, until it finds the window to
+	     CASE m.x = "CUST"           launch the screen program for.
+	        m.temp = "Excust.spr"
+	     CASE m.x = "PARTS"
+	        m.temp ="Exparts.spr"
+	     CASE m.x = "INV"
+	        m.temp ="Exinv.spr"
+	     CASE m.x ="SMAN"            Since SMAN is the child window that is
+	        m.temp ="Exsman.spr"     found, "Exsman.spr" is stored to
+	     ENDCASE                     M.TEMP.
+	     m.x = WCHILD("",1)
+	  ENDDO
+	  IF LEN(m.temp) > 0
+	     DO (m.temp)                 Exsman.spr is launched again. RDLEVEL()
+	  ENDIF                          goes back to 2, and SMAN becomes the
+	ENDCASE                           active window.
+	
+	RETURN .F.
+	
+	User Action 6: User Chooses to Terminate the Application
+	
+	The user is finished with the application and chooses Quit from the
+	File menu, causing the following actions to occur:
+	
+	1. The following lines of code are executed:
+	
+	     dropdead = .T.
+	     CLEAR READ ALL
+	
+	2. Because the READ is cleared, program execution returns to the
+	  foundation READ, which causes FoxPro to evaluate the VALID clause,
+	  MYHANDLER( ), of the foundation READ.
+	
+	   MYHANDLER( ) Function in Ex1.prg
+	
+	Code                          Comments
+	---------------------------------------------------------------------
+	
+	PRIVATE m.temp, m.x
+	
+	IF dropdead                   This time, because .T. has been stored
+	  RETURN .T.                 to DROPDEAD, the event handler in the
+	ENDIF                         VALID clause of the foundation READ
+	                             returns .T., causing the foundation READ
+	                             to terminate.
+	
+	3. The foundation READ terminates and code in Ex1.prg following the
+	  foundation READ runs, restoring environment settings and cleaning
+	  up after the application.
+	
+	Summary of Event Handler Events
+	-------------------------------
+	
+	The event handler manages a variety of possible user actions:
+	
+	- If the user chooses a new screen set from the Application menu,
+	  code in MHIT determines whether to immediately launch the screen set
+	  or to CLEAR the current READ and have MYHANDLER( ) launch the
+	  appropriate screen set.
+	
+	- If the user clicks on a different window, code in the previously
+	  active window's DEACTIVATE clause invokes STOPREAD( ) to determine
+	  whether the current READ should be terminated so that another can be
+	  activated or whether the current READ should remain active.
+	
+	- If the user closes a window by pressing ESC, by choosing Close from
+	  the File menu, or by clicking on the close box, the DEACTIVATE
+	  clause and the STOPREAD( ) function allow the READ to be cleared as
+	  if the user had chosen Quit in the control panel.
+	
+	- When the user closes a window, code in the EFFACE procedure, called
+	  in the screen set's cleanup code, determines whether the control
+	  panel should also be closed.
+	
+	- If the user closes a window, code in the MYHANDLER( ) function
+	  determines what screen set should be the active READ, if any.
+	
+	- If the user chooses Quit from the File menu, MYHANDLER( ) returns
+	  .T. to terminate the foundation READ.
+	
+	Coding an event handler takes some effort, but an event handler like
+	the one in Ex1.app enables you to create an intuitive and easy-to-use
+	interface.
+	
+	Additional query words: MBuilder FoxDos FoxWin 2.50 2.50a 2.50b appnote
+	
+	======================================================================
+	Keywords          : kbcode kbfile kbDSupport 
+	Technology        : kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro250DOS kbFoxPro250aDOS kbFoxPro250bDOS kbFoxPro250 kbFoxPro250a kbFoxPro250b
+	Version           : :2.5,2.5a,2.5b
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

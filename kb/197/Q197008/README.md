@@ -1,0 +1,170 @@
+---
+layout: page
+title: "Q197008: WD97: Word Assigns a Delivery Point Bar Code (DPBC) of 99"
+permalink: kb/197/Q197008/
+---
+
+## Q197008: WD97: Word Assigns a Delivery Point Bar Code (DPBC) of 99
+
+	Article: Q197008
+	Product(s): Word 97 for Windows
+	Version(s): WINDOWS:97
+	Operating System(s): 
+	Keyword(s): kbdta kbenvelope word97 kbmerge
+	Last Modified: 14-NOV-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	In Microsoft Word, when you use the address bar coding feature, a POSTNET
+	delivery point bar code (DPBC) of 99 may be inserted in your document.
+	
+	CAUSE
+	=====
+	
+	This problem occurs for one of the following reasons:
+	
+	- Word cannot parse the delivery address for the correct information.
+	
+	  -or-
+	
+	- The delivery address does not contain information that can generate a valid
+	  DPBC.
+	
+	Word determines the DPBC by reading the address line preceding the address line
+	containing the City, State, and ZIP Code (Postal Code). Note that Word
+	determines the DPBC this way, regardless of the number of lines used to create
+	the address.
+	
+	MORE INFORMATION
+	================
+	
+	An address will generate a DPBC of 99 if any of the following conditions are
+	true:
+	
+	- The address line does not contain a number:
+	
+	  John Smith
+	  Main St.
+	  Anytown, WA 12345-6789
+	
+	- The address line contains only alpha characters:
+	
+	  John Smith
+	  AA Main St.
+	  Anytown, WA 12345-6789
+	
+	- The address line contains a slash mark (/):
+	
+	  John Smith
+	  123/4 Main St.
+	  Anytown, WA 12345-6789
+	
+	  NOTE: Both 1/4 Main St. and 12/3/4 Main St. will generate the DPBC 99.
+	
+	- The address line contains an APO or an FPO.
+	
+	Note that there are other conditions not listed here that may cause an address to
+	generate a DPBC of 99.
+	
+	Examples of Common Addresses That May Generate a DPBC of 99
+	-----------------------------------------------------------
+	
+	Example 1
+	---------
+	
+	  John Doe
+	  Big Time Company
+	  123 Main St.
+	  Suite 456
+	  Anytown, WA 98007-5555
+	
+	Word tries to generate a DPBC from the next-to-last address line--in this case,
+	"Suite 456," which is not a valid street address. To correct this problem, move
+	"Suite 456" to the same line as the street address:
+	
+	  John Doe
+	  Big Time Company
+	  123 Main St. Suite 456
+	  Anytown, WA 98007-5555
+	
+	Example 2
+	---------
+	
+	  Pinecliffe International
+	  Post Office Drawer 3737
+	  Coal Creek Canyon
+	  Golden, CO 80401-0100
+	
+	Word tries to generate a DPBC from the "Coal Creek Canyon" line of the address.
+	Because there is no number on this line, Word returns a 99 DPBC. Moving "Coal
+	Creek Canyon" to the previous line will not work because "Post Office Drawer" is
+	not a recognized address term. Changing the address to this format will work:
+	
+	  Pinecliffe International
+	  Coal Creek Canyon
+	  PO Box 3737
+	  Golden, CO 80401-0100
+	
+	Because Word checks only the next-to-last address line, Word ignores the "Coal
+	Creek Canyon" line and tries to generate a DPBC from the line that reads "PO Box
+	3737." Since this is a valid address term, it generates the correct DPBC.
+	
+	Example 3--A Military Address
+	-----------------------------
+	
+	  John Doe
+	  Company A, 122 Sig BN
+	  Unit 20511 Box 4290
+	  APO AA 34049-1234
+	
+	Because this is an APO address, Word will return a DPBC of 99.
+	
+	Example 4--An invalid Street Address
+	------------------------------------
+	
+	  John Doe
+	  100 Main St.
+	  Apt 204
+	  Anytown, WA 12345-5678
+	
+	Word will try to generate a DPBC using the next-to-last line, "Apt 204." Because
+	this is not a valid street address, Word will return a DPBC of 99. To generate
+	the correct DPBC, move the apartment number to the previous line:
+	
+	  John Doe
+	  100 Main St., Apt 204
+	  Anytown, WA 12345-5678
+	
+	For information about reading bar codes, obtain the "Designing Mail" packet from
+	the U.S. Postal Service or please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q155187 WD: How to Read Postal Barcodes
+	
+	NOTE: Word will not create a bar code for a Canadian postal code. Under the
+	Canadian postal system, the post office applies bar coding to mail.
+	
+	REFERENCES
+	==========
+	
+	CASS Technical Guide, March 1993
+	
+	
+	Additional query words: bar code
+	
+	======================================================================
+	Keywords          : kbdta kbenvelope word97 kbmerge 
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : WINDOWS:97
+	Issue type        : kbprb
+	
+	=============================================================================
+	

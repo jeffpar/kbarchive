@@ -1,0 +1,71 @@
+---
+layout: page
+title: "Q176312: WD97: Macro Shortcut Key Assignments Do Not Appear"
+permalink: kb/176/Q176312/
+---
+
+## Q176312: WD97: Macro Shortcut Key Assignments Do Not Appear
+
+	Article: Q176312
+	Product(s): Word 97 for Windows
+	Version(s): WINDOWS:97
+	Operating System(s): 
+	Keyword(s): kbdta word97
+	Last Modified: 14-NOV-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	If you assign a shortcut key combination to a macro in Word and you then add the
+	macro to a menu or toolbar, the shortcut key assignment will not appear on the
+	menu or toolbar.
+	
+	WORKAROUND
+	==========
+	
+	When you create a custom macro with an assigned shortcut key, follow these steps
+	to place the macro and its shortcut key assignment on a menu or toolbar:
+	
+	1. On the Tools menu, click Customize. Click the Commands tab, and under
+	  Categories, select Macros.
+	
+	2. Under Commands, find your macro and drag it to a menu or toolbar.
+	
+	3. Click Modify Selection, click in the Name box, and then change, if necessary,
+	  the name of the macro. Following the name of the macro, type in the shortcut
+	  key assignment.
+	
+	4. Click Close on the Customize dialog box.
+	
+	MORE INFORMATION
+	================
+	
+	Any built-in Word commands that display shortcut keys on menus or in screen tips
+	will automatically show key assignments when customized on toolbars or menus.
+	
+	For additional information about customizing features of Word, please see the
+	following articles in the Microsoft Knowledge Base:
+	
+	  Q163547 WD97: How to Create Custom Toolbars and Toolbar Buttons
+	
+	  Q163547 OFF97: How to Add a Command to a New Toolbar
+	
+	  Q169870 WD: Customizing and Sharing Toolbars In Microsoft Word
+	
+	Additional query words: vba visual basic
+	
+	======================================================================
+	Keywords          : kbdta word97 
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : WINDOWS:97
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

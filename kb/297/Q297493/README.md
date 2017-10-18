@@ -1,0 +1,472 @@
+---
+layout: page
+title: "Q297493: HOWTO: Modify Exchange Folder Permissions w/IExchangeModifyTable"
+permalink: kb/297/Q297493/
+---
+
+## Q297493: HOWTO: Modify Exchange Folder Permissions w/IExchangeModifyTable
+
+	Article: Q297493
+	Product(s): Microsoft Exchange
+	Version(s): 1.0,5.5
+	Operating System(s): 
+	Keyword(s): kbMsg kbGrpDSMsg kbDSupport
+	Last Modified: 13-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.5 
+	- Microsoft Exchange 2000 Server 
+	- Microsoft Extended Messaging Application Programming Interface (MAPI), version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The private and public folder permissions for an Exchange server are stored in
+	Access Control List (ACL) table objects which can be accessed using
+	IExchangeModifyTable interface. This article demonstrates how to add, modify, or
+	remove user permissions using this interface.
+	
+	MORE INFORMATION
+	================
+	
+	You can use the IExchangeModifyTable::ModifyTable method to change user
+	permissions for Exchange folders. ModifyTable takes a ROWLIST structure, which
+	contains an array of ROWENTRY structures representing rows in the table and the
+	operations performed on those rows. In the ROWENTRY structure, you must specify
+	the operation to be performed in the ulRowFlags field. You must also specify an
+	array of SPropValue structures representing the columns values to be inserted
+	into the table. For example:
+	
+	- To add a user permission, set ulRowFlags to ROW_ADD, and specify
+	  PR_MEMBER_ENTRYID and PR_MEMBER_RIGHTS for SPropValue.
+	
+	- To modify a user permission, set ulRowFlags to ROW_MODIFY, and specify
+	  PR_MEMBER_ID and PR_MEMBER_RIGHTS for SPropValue.
+	
+	- To remove a user permission, set ulRowFlags to ROW_REMOVE, and specify
+	  PR_MEMBER_ID for SPropValue.
+	
+	Sample Code
+	-----------
+	
+	Microsoft provides programming examples for illustration only, without warranty
+	either expressed or implied, including, but not limited to, the implied
+	warranties of merchantability and/or fitness for a particular purpose. This
+	article assumes that you are familiar with the programming language being
+	demonstrated and the tools used to create and debug procedures. Microsoft
+	support professionals can help explain the functionality of a particular
+	procedure, but they will not modify these examples to provide added
+	functionality or construct procedures to meet your specific needs. If you have
+	limited programming experience, you may want to contact a Microsoft Certified
+	Partner or the Microsoft fee-based consulting line at (800) 936-5200. For more
+	information about Microsoft Certified Partners, please visit the following
+	Microsoft Web site:
+	
+	  http://www.microsoft.com/partner/referral/
+	
+	For more information about the support options that are available and about how
+	to contact Microsoft, visit the following Microsoft Web site:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	To run the sample code, follow these steps:
+	
+	1. Using the Win32 Console Application AppWizard, create a new empty project and
+	  name it "ModifyTable".
+	
+	2. Add a new C++ source file to the project and name it "ModifyTable.cpp".
+	
+	3. Paste the following code into ModifyTable.cpp.
+	
+	  #include <windows.h>
+	  #include <stdio.h>
+	  #include "edk.h"
+	
+	  typedef 
+	  enum ACLRIGHTS
+	      { 
+	   RIGHTS_EDIT_OWN = 0x8,
+	   RIGHTS_EDIT_ALL = 0x20,
+	   RIGHTS_DELETE_OWN = 0x10,
+	   RIGHTS_DELETE_ALL = 0x40,
+	   RIGHTS_READ_ITEMS = 0x1,
+	   RIGHTS_CREATE_ITEMS = 0x2,
+	   RIGHTS_CREATE_SUBFOLDERS = 0x80,
+	   RIGHTS_FOLDER_OWNER = 0x100,
+	   RIGHTS_FOLDER_CONTACT = 0x200,
+	   RIGHTS_FOLDER_VISIBLE = 0x400,
+	   RIGHTS_NONE = 0,
+	   ROLE_OWNER = 0x5e3,
+	   ROLE_PUBLISH_EDITOR = 0x4e3,
+	   ROLE_EDITOR = 0x463,
+	   ROLE_PUBLISH_AUTHOR = 0x49b,
+	   ROLE_AUTHOR = 0x41b,
+	   ROLE_NONEDITING_AUTHOR = 0x413,
+	   ROLE_REVIEWER = 0x401,
+	   ROLE_CONTRIBUTOR = 0x402,
+	   ROLE_NONE = 0x400
+	      } ACLRIGHTS;
+	
+	  enum {
+	      ePR_MEMBER_ENTRYID, 
+	      ePR_MEMBER_RIGHTS,  
+	      ePR_MEMBER_ID, 
+	      ePR_MEMBER_NAME, 
+	      NUM_COLS
+	  };
+	
+	  SizedSPropTagArray(NUM_COLS, rgPropTag) =
+	  {
+	      NUM_COLS,
+	      {
+	          PR_MEMBER_ENTRYID,  // Unique across directory.
+	          PR_MEMBER_RIGHTS,  
+	          PR_MEMBER_ID,       // Unique within ACL table. 
+	          PR_MEMBER_NAME,     // Display name.
+	      }
+	  };
+	
+	  STDMETHODIMP AddUserPermission(
+	     LPSTR szUserAlias, 
+	     LPMAPISESSION lpSession,
+	     LPEXCHANGEMODIFYTABLE lpExchModTbl, 
+	     ACLRIGHTS frights);
+	
+	  STDMETHODIMP ModifyUserPermission(
+	     LPSTR szDisplayName, 
+	     LPEXCHANGEMODIFYTABLE lpExchModTbl, 
+	     ACLRIGHTS frights);
+	
+	  STDMETHODIMP RemoveUserPermission(
+	     LPSTR szDisplayName, 
+	     LPEXCHANGEMODIFYTABLE lpExchModTbl);
+	
+	  void  main()
+	  {
+	   HRESULT               hr = NULL;
+	   LPMAPISESSION         lpSession = NULL;
+	   LPMDB                 lpPubStore = NULL;
+	   LPMAPIFOLDER          lpPubFolder = NULL;
+	   LPMAPIFOLDER          lpMyFolder = NULL;
+	   LPEXCHANGEMODIFYTABLE lpExchModTbl= NULL; 
+	   
+	   hr = MAPIInitialize(NULL);
+	   if (FAILED(hr)) return;
+	
+	   hr = MAPILogonEx(0,
+	        NULL,
+	        NULL,
+	        MAPI_LOGON_UI | MAPI_NEW_SESSION,
+	        &lpSession);
+	   if (FAILED(hr)) goto cleanup0; 
+	   
+	   // Open public folder store.
+	   hr = HrOpenExchangePublicStore(lpSession,
+	                               &lpPubStore);
+	   if (FAILED(hr)) goto cleanup;
+	   
+	   // Open all public folders.
+	   hr = HrOpenExchangePublicFolders(lpPubStore,  
+	                                 &lpPubFolder);  
+	   if (FAILED(hr)) goto cleanup;
+	   
+	   // Replace with your public folder name.
+	   hr = HrMAPIOpenSubfolderEx(lpPubFolder, 
+	                           '\\',
+	                           "\\MyFolder", 
+	                           &lpMyFolder);
+	   if (FAILED(hr)) goto cleanup;
+	
+	   hr = lpMyFolder->OpenProperty(PR_ACL_TABLE, 
+	                               &IID_IExchangeModifyTable, 
+	                               0, 
+	                               MAPI_DEFERRED_ERRORS, 
+	                               (LPUNKNOWN*)&lpExchModTbl);
+	      if(FAILED(hr)) goto cleanup;
+	
+	   // Replace first parameter with user alias.
+	   // Add user with publishing author rights.
+	   hr = AddUserPermission(
+	     "userone", 
+	     lpSession,
+	     lpExchModTbl, 
+	     ROLE_PUBLISH_AUTHOR); 
+	   
+	   // Replace first parameter with user display name.
+	   // Modify user to have reviewer rights.
+	   hr = ModifyUserPermission(
+	     "User One", 
+	     lpExchModTbl, 
+	     ROLE_REVIEWER);
+	
+	   // Replace first parameter with user display name.
+	   // Remove user rights.
+	   hr = RemoveUserPermission(
+	     "User One", 
+	     lpExchModTbl);
+	
+	  cleanup:
+	   if (lpExchModTbl) 
+	    lpExchModTbl->Release();
+	   
+	   if (lpMyFolder)
+	    lpMyFolder->Release();
+	   if (lpPubFolder)
+	    lpPubFolder->Release();
+	   if (lpPubStore)
+	    lpPubStore->Release();
+	
+	   lpSession->Logoff(0, MAPI_LOGOFF_UI, 0);
+	   lpSession->Release();
+	
+	  cleanup0:
+	
+	   MAPIUninitialize(); 
+	   return;
+	   
+	  }
+	
+	  STDMETHODIMP AddUserPermission(
+	     LPSTR szUserAlias, 
+	     LPMAPISESSION lpSession,
+	     LPEXCHANGEMODIFYTABLE lpExchModTbl, 
+	     ACLRIGHTS frights)
+	  {
+	   HRESULT     hr = S_OK;
+	   LPADRBOOK   lpAdrBook;  
+	   ULONG       cbEid;
+	   LPENTRYID   lpEid = NULL;
+	   SPropValue  prop[2] = {0};
+	   ROWLIST     rowList  = {0};
+	   
+	   char szExName[MAX_PATH]; 
+	   // Replace with "/o=OrganizationName/ou=SiteName/cn=Recipients/cn="
+	   char* szServerDN = "/o=org/ou=site/cn=Recipients/cn=";
+	
+	   strcpy(szExName, szServerDN);
+	   strcat(szExName, szUserAlias);
+	
+	   // Open the address book.
+	   hr = lpSession->OpenAddressBook(0,
+	                                   0, 
+	                                   MAPI_ACCESS_MODIFY, 
+	                                   &lpAdrBook );
+	   if ( FAILED( hr ) ) goto cleanup;
+	
+	   // Obtain the entry ID for the recipient.
+	   hr = HrCreateDirEntryIdEx(lpAdrBook, 
+	                             szExName, 
+	                             &cbEid, 
+	                             &lpEid);
+	   if ( FAILED( hr ) ) goto cleanup;
+	   
+	   prop[0].ulPropTag  = PR_MEMBER_ENTRYID;
+	   prop[0].Value.bin.cb = cbEid;
+	   prop[0].Value.bin.lpb = (BYTE*)lpEid;
+	   prop[1].ulPropTag  = PR_MEMBER_RIGHTS;
+	   prop[1].Value.l   = frights;
+	
+	   rowList.cEntries = 1;
+	   rowList.aEntries->ulRowFlags = ROW_ADD;
+	   rowList.aEntries->cValues  = 2;
+	   rowList.aEntries->rgPropVals = &prop[0]; 
+	
+	   hr = lpExchModTbl->ModifyTable(0, &rowList);
+	   if(FAILED(hr)) goto cleanup;
+	   printf("Added user permission. \n");
+	
+	  cleanup:
+	   if (lpAdrBook)
+	    lpAdrBook->Release();
+	   return hr;
+	  }
+	
+	  STDMETHODIMP ModifyUserPermission(
+	     LPSTR szDisplayName, 
+	     LPEXCHANGEMODIFYTABLE lpExchModTbl, 
+	     ACLRIGHTS frights)
+	  {
+	   HRESULT      hr = S_OK;
+	   LPMAPITABLE  lpMapiTbl = NULL;
+	   ULONG        ulFlagsTable = 0;
+	   ULONG        lpulCount = NULL;
+	   LPSRowSet    pRows = NULL;
+	   UINT         i = 0;
+	   SPropValue   prop[2] = {0};
+	   ROWLIST      rowList  = {0};
+	   BOOLEAN      bFound = false;
+	   
+	   // Retrieve MAPI table. 
+	   hr = lpExchModTbl->GetTable(0,
+	                            &lpMapiTbl);
+	   if (FAILED(hr)) goto cleanup;
+	
+	   hr = lpMapiTbl->GetRowCount(ulFlagsTable,
+	                            &lpulCount);
+	   if (FAILED(hr)) goto cleanup;
+	   
+	   hr = lpMapiTbl->SetColumns((LPSPropTagArray)&rgPropTag, 
+	                              0 );
+	   if (FAILED(hr)) goto cleanup;
+	
+	   hr = HrQueryAllRows(lpMapiTbl,
+	                       NULL, 
+	                       NULL, 
+	                       NULL, 
+	                       lpulCount,
+	                       &pRows);
+	   if (FAILED(hr)) goto cleanup;
+	
+	   for (i = 0; i < pRows -> cRows; i++)
+	   {
+	    if(PR_MEMBER_NAME == pRows ->aRow[i].lpProps[ePR_MEMBER_NAME].ulPropTag)
+	    {
+	     if (!strcmp(pRows -> aRow[i].lpProps[ePR_MEMBER_NAME].Value.lpszA, szDisplayName))
+	     {
+	      bFound = true;
+	      if (PR_MEMBER_ID == pRows -> aRow[i].lpProps[ePR_MEMBER_ID].ulPropTag)
+	      {
+	       prop[0].ulPropTag  = PR_MEMBER_ID;
+	       prop[0].Value.bin.cb = pRows -> aRow[i].lpProps[ePR_MEMBER_ID].Value.bin.cb;
+	       prop[0].Value.bin.lpb = (BYTE*)pRows -> aRow[i].lpProps[ePR_MEMBER_ID].Value.bin.lpb;
+	       prop[1].ulPropTag  = PR_MEMBER_RIGHTS;
+	       prop[1].Value.l   = frights;
+	
+	       rowList.cEntries    = 1;
+	       rowList.aEntries->ulRowFlags = ROW_MODIFY;
+	       rowList.aEntries->cValues  = 2;
+	       rowList.aEntries->rgPropVals = &prop[0];
+	       
+	       hr = lpExchModTbl->ModifyTable(0, &rowList);
+	       if(FAILED(hr)) goto cleanup;
+	       printf("Modified user permission.\n");
+	      }
+	     }
+	    }
+	   }
+	   if (!bFound)
+	    printf("User not there, no need to modify ...\n");
+	  cleanup:
+	   if (lpMapiTbl) 
+	    lpMapiTbl->Release();
+	   if (pRows)
+	    FreeProws(pRows);
+	   return hr;
+	  }
+	
+	  STDMETHODIMP RemoveUserPermission(
+	     LPSTR szDisplayName, 
+	     LPEXCHANGEMODIFYTABLE lpExchModTbl)
+	  {
+	   HRESULT      hr = S_OK;
+	   LPMAPITABLE  lpMapiTbl = NULL;
+	   ULONG        ulFlagsTable = 0;
+	   ULONG        lpulCount = NULL;
+	   LPSRowSet    pRows = NULL;
+	   UINT         i = 0;
+	   SPropValue   prop[1] = {0};
+	   ROWLIST      rowList  = {0};
+	   BOOLEAN      bFound = false;
+	   
+	   // Retrieve MAPI table.
+	   hr = lpExchModTbl->GetTable(0, 
+	                            &lpMapiTbl);
+	   if (FAILED(hr)) goto cleanup;
+	
+	   hr = lpMapiTbl->GetRowCount(ulFlagsTable,
+	                            &lpulCount);
+	   if (FAILED(hr)) goto cleanup;
+	   
+	   hr = lpMapiTbl->SetColumns((LPSPropTagArray)&rgPropTag, 
+	                             0 );
+	   if (FAILED(hr)) goto cleanup;
+	
+	   hr = HrQueryAllRows(lpMapiTbl,
+	                       NULL, 
+	                       NULL, 
+	                       NULL, 
+	                       lpulCount,
+	                       &pRows);
+	   if (FAILED(hr)) goto cleanup;
+	
+	   for (i = 0; i < pRows -> cRows; i++)
+	   {
+	    if(PR_MEMBER_NAME == pRows -> aRow[i].lpProps[ePR_MEMBER_NAME].ulPropTag)
+	    {
+	     if (!strcmp(pRows -> aRow[i].lpProps[ePR_MEMBER_NAME].Value.lpszA, szDisplayName))
+	     {
+	      printf("Found User to remove\n");
+	      bFound = true;
+	      if (PR_MEMBER_ID == pRows -> aRow[i].lpProps[ePR_MEMBER_ID].ulPropTag)
+	      {
+	       prop[0].ulPropTag  = PR_MEMBER_ID;
+	       prop[0].Value.bin.cb = pRows -> aRow[i].lpProps[ePR_MEMBER_ID].Value.bin.cb;
+	       prop[0].Value.bin.lpb = (BYTE*)pRows -> aRow[i].lpProps[ePR_MEMBER_ID].Value.bin.lpb;
+	       rowList.cEntries    = 1;
+	       rowList.aEntries->ulRowFlags = ROW_REMOVE;
+	       rowList.aEntries->cValues  = 1;
+	       rowList.aEntries->rgPropVals = &prop[0];
+	      
+	       hr = lpExchModTbl->ModifyTable(0,
+	                                   &rowList);
+	       if(FAILED(hr)) goto cleanup;
+	       printf("Removed user permission. \n");
+	      }
+	     }
+	    }
+	   }
+	   if (!bFound)
+	    printf("User not there, no need to remove. \n");
+	  cleanup:
+	   if (lpMapiTbl) 
+	    lpMapiTbl->Release();
+	   if (pRows)
+	    FreeProws(pRows);
+	   return hr;
+	  }
+	
+	4. In the main function, replace MyFolder with your public folder name under All
+	  Public Folders.
+	
+	5. In the main function, replace the first parameter to the AddUserPermission
+	  call with a user alias for which you want to add permission, and replace the
+	  first parameter to both the ModifyPermission and RemovePermission calls with
+	  the user's display name.
+	
+	6. In the AddUserPermission function, replace szServerDN to reflect your
+	  Exchange organization name and site name.
+	
+	7. On the Project menu, click Settings, and then click the Link tab. In
+	  Object/Library Modules, add edkutils.lib exchsdk.lib mapi32.lib msvcrt.lib
+	  kernel32.lib version.lib user32.lib and advapi32.lib. Click to select Ignore
+	  all default libraries.
+	
+	8. Compile and then build the project.
+	
+	9. Put breakpoints on the AddUserPermission, ModifyPermission, and
+	  RemovePermission calls in the main function.
+	
+	10. Press F5 to start debugging, and choose the profile name when prompted.
+	
+	11. Press F10 when the first breakpoint is reached. Check the folder permission
+	  from Microsoft Outlook to verify that the user permission is added with
+	  "Publishing Author" permission.
+	
+	12. Press F10 again, and verify that the user's permission is changed to
+	  "Reviewer".
+	
+	13. Press F10 again, and verify that the user's permission is removed.
+	
+	Additional query words: IExchangeModifyTable ModifyTable
+	
+	======================================================================
+	Keywords          : kbMsg kbGrpDSMsg kbDSupport 
+	Technology        : kbAudDeveloper kbMAPISearch kbExchangeSearch kbExchange550 kbZNotKeyword kbZNotKeyword2 kbExchange2000Search kbExchange2000Serv kbMAPIExt
+	Version           : :1.0,5.5
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

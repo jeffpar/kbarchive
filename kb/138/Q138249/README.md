@@ -1,0 +1,114 @@
+---
+layout: page
+title: "Q138249: Updated Vredir.vxd Corrects Errors Running Files on LMX"
+permalink: kb/138/Q138249/
+---
+
+## Q138249: Updated Vredir.vxd Corrects Errors Running Files on LMX
+
+	Article: Q138249
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): 3rdpartynet msnets win95 kb3rdPartyNetClient
+	Last Modified: 15-MAR-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 95 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you try to run an executable file from a LAN Manager for Unix (LMX) version
+	1.44 server, you may receive an "Access denied" error message, even though you
+	have the correct permissions to access the file.
+	
+	CAUSE
+	=====
+	
+	Some LMX configurations allow files to be opened for Execute access without
+	allowing Read access. If a Windows 95 client opens such a file to run it, the
+	server denies subsequent read requests. You must be able to read the file in
+	order to run it.
+	
+	RESOLUTION
+	==========
+	
+	This issue is resolved by the following updated file(s) for Windows 95, and
+	later versions of these file(s):
+	
+	  VREDIR.VXD  version 4.00.953  dated 9/13/95  140,367 bytes
+	
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft Windows 95 which is
+	resolved by Windows 95 Service Pack 1. For information about Windows 95 Service
+	Pack 1, please see the following article in the Microsoft Knowledge Base:
+	
+	  Q142794 Availability of Microsoft Windows 95 Service Pack 1
+	
+	This issue is resolved in Microsoft Windows 98.
+	
+	MORE INFORMATION
+	================
+	
+	The updated Vredir.vxd file (version 4.00.955) is also available in Windows 95
+	Service Pack 1. For information about Windows 95 Service Pack 1, please see the
+	following article in the Microsoft Knowledge Base:
+	
+	  Q142794 Availability of Microsoft Windows 95 Service Pack 1
+	
+	For additional information about issues resolved by updates to this component,
+	please see the following articles in the Microsoft Knowledge Base:
+	
+	  Q183493 Batch File Calling CD Command May Not Run on HPFS
+	
+	  Q174371 Possible Database File Damage When Data Is Appended
+	
+	  Q172594 Cannot Connect to Server with 15 Characters and Period in Name
+	
+	  Q167712 Fatal Exception Error in VREDIR with DCOM Program
+	
+	  Q165403 Windows 95 Update Prevents Sending Clear-Text Password Over Net
+	
+	  Q165402 Windows 95 Update to Encrypt Passwords in Memory
+	
+	  Q161100 File May Be Truncated When Copied to a Full Network Drive
+	
+	  Q160807 Cannot Connect to Windows NT Server with Many Shares
+	
+	  Q157114 "Access Denied" Attempting to Run File on LM/X Server
+	
+	  Q152186 Possible Network Data Corruption If Locking Not Used
+	
+	  Q150215 Disabling Automatic Network Shortcut Resolution
+	
+	  Q148367 Possible Network File Corruption with Redirector Caching
+	
+	  Q142803 Locking Error or Computer Hangs Accessing Network Database Files
+	
+	  Q140558 Deleting Files on Samba Servers May Delete Local Files Instead
+	
+	  Q138249 Updated Vredir.vxd Corrects Errors Running Files on LMX
+	
+	  Q138014 File May Be Truncated to Zero Bytes When Copied Onto Itself
+	
+	  Q136834 Error Copying Read-Only Files to Core SMB Server
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : 3rdpartynet msnets win95 kb3rdPartyNetClient 
+	Technology        : kbWin95search kbZNotKeyword3
+	Version           : :
+	Issue type        : kbprb
+	
+	=============================================================================
+	

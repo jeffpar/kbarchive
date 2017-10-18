@@ -1,0 +1,123 @@
+---
+layout: page
+title: "Q95633: Automating RAMDrive Compression with DoubleSpace"
+permalink: kb/095/Q95633/
+---
+
+## Q95633: Automating RAMDrive Compression with DoubleSpace
+
+	Article: Q95633
+	Product(s): Microsoft Disk Operating System
+	Version(s): MS-DOS:6.0,6.2,6.21,6.22
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 19-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft MS-DOS operating system versions 6.0, 6.2, 6.21, 6.22 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This information applies to both Microsoft DoubleSpace and Microsoft DriveSpace.
+	For MS-DOS 6.22, use DRVSPACE in place of DBLSPACE for commands and filenames.
+	
+	It is possible to compress a RAM drive with DoubleSpace. However, since the
+	information on the RAM drive is lost each time you restart your computer, you
+	must recompress the RAM drive each time you start your system.
+	
+	You can avoid this problem by storing the RAM drive compressed volume file (CVF)
+	on your hard disk drive and placing two commands in your AUTOEXEC.BAT file to
+	copy and mount the CVF on the RAM drive when you start your computer.
+	
+	MORE INFORMATION
+	================
+	
+	You can automate the compression of the RAM drive with the following procedure:
+	
+	1. Create RAM drive. For example, to create a 1-megabyte (MB) RAM drive in
+	  extended memory, place the following statement in your CONFIG.SYS file:
+	
+	     device=c:\dos\ramdrive.sys 1280 /e
+	
+	2. Restart your computer to load the RAM drive.
+	
+	  NOTE: MS-DOS assigns the next available drive letter for the RAM drive. For
+	  example, if you only have one hard disk drive (C), the RAM drive is assigned
+	  the drive letter D. This procedure uses drive D as the RAM drive.
+	
+	3. Compress the RAM drive. For example, to compress drive D, type the following
+	  at the MS-DOS command prompt and the press ENTER:
+	
+	  " dblspace /compress d: " (without the quotation marks)
+	
+	4. Resize the compressed drive to its maximum size (and thereby reduce the size
+	  of the host drive to zero bytes). For example, type the following at the
+	  MS-DOS command prompt and then press ENTER:
+	
+	  " dblspace /size /reserve=0 d: " (without the quotation marks)
+	
+	5. Change the CVF attributes so the file can be copied. For example:
+	
+	     attrib h:\dblspace.000 -s -h -r
+	
+	  This example assumes the host drive is drive H. To determine your host drive,
+	  type "dblspace /list" (without the quotation marks) at the MS-DOS command
+	  prompt. Write the drive mapping information down, because you need it in step
+	  5.
+	
+	6. Copy the compressed volume file (CVF) to your hard disk drive.
+	
+	  To avoid having to recompress the RAM drive each time you start your computer,
+	  you must store the CVF on your hard disk drive. This requires approximately 1
+	  MB of space.
+	
+	  To copy the compressed volume file to your hard drive, type the following at
+	  the MS-DOS command prompt:
+	
+	  " copy h:\dblspace.000 c:\dos\ramcvf.000 " (without the quotation marks)
+	
+	  Since this file cannot be compressed (it already is), you should copy it to an
+	  uncompressed drive.
+	
+	7. Add the following lines to your AUTOEXEC.BAT file so that the CVF is copied
+	  to your RAM drive and mounted each time you start your computer.
+	
+	  " REM Copies and Mounts CVF to RAM drive
+	  copy c:\dos\ramcvf.000 d:\dblspace.000
+	  dblspace /mount=000 d: /newdrive=h: " (without the quotation marks)
+	
+	  Substitute the appropriate drive letters for C, D, and H. Drive C should be
+	  the uncompressed drive on which you store the RAM drive CVF; drive D is the
+	  RAM drive, and drive H is the host drive.
+	
+	8. Restart your computer. To determine if the procedure worked, type "dblspace
+	  /list" (without the quotation marks) at the MS-DOS command prompt and press
+	  ENTER.
+	
+	WARNING: Any information stored on a RAM drive is lost when you restart or turn
+	off your computer. To prevent data loss, copy any file you want to save from
+	your RAM drive to your hard disk drive before turning off your computer.
+	
+	NOTE: Since DoubleSpace uses a 512-byte sector size, RAM drives must be created
+	with a 512-byte sector size so that DoubleSpace can compress the drive. If a RAM
+	drive is created with a sector size of 128 bytes or 256 bytes, DoubleSpace does
+	not recognize the drive as available for compression. The default value for the
+	sector size of a RAM drive created with RAMDRIVE.SYS included with MS-DOS 6.0 is
+	512 bytes. For information on changing the sector size of a RAM drive, type the
+	following at the MS-DOS command prompt and press ENTER:
+	
+	  " help ramdrive.sys " (without the quotation marks)
+	
+	Additional query words: 6.0 6.20 6.21 6.22 compressed double space dblspace ram drive
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600
+	Version           : MS-DOS:6.0,6.2,6.21,6.22
+	
+	=============================================================================
+	

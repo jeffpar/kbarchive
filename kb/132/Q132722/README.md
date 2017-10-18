@@ -1,0 +1,87 @@
+---
+layout: page
+title: "Q132722: Server Instability After Reboot Caused by NDIS Driver Problem"
+permalink: kb/132/Q132722/
+---
+
+## Q132722: Server Instability After Reboot Caused by NDIS Driver Problem
+
+	Article: Q132722
+	Product(s): Microsoft Windows NT
+	Version(s): 3.5,3.51
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 06-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation versions 3.5, 3.51 
+	- Microsoft Windows NT Server versions 3.5, 3.51 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Computers running Windows NT (especially multiprocessor computers) may stop
+	responding (hang) or display a STOP message, within a few minutes of the Windows
+	NT startup sequence after being rebooted.
+	
+	
+	CAUSE
+	=====
+	
+	There is a problem is NDIS.SYS that causes Windows NT to attempt to close a
+	Windows NT file handle twice when NdisOpenFile and NdisCloseFile are called.
+	Closing a handle a second time causes undefined results. If the handle being
+	closed a second time is in use by another driver, the results are unpredictable,
+	but may include a system hang or STOP message.
+	
+	
+	The following network card drivers make calls to the NdisOpenFile and
+	NdisCloseFile APIs, and therefore may indirectly cause the symptoms mentioned
+	above.
+	
+	ANDTOK.SYS
+	F30N3.SYS
+	F70N3.SYS
+	IRMATRAC.SYS
+	NCRTOK.SYS
+	MDGMPORT.SYS
+	NE3200.SYS
+	NETFLX.SYS
+	PCIMAC.SYS
+	PRONET16.SYS
+	TCTOKNT.SYS
+	UBNEI.SYS
+	
+	NOTE: The problem is in NDIS, not in these drivers. They are listed here to help
+	identify systems that may exhibit the symptoms mentioned above.
+	
+	RESOLUTION
+	----------
+	
+	To correct this problem, upgrade to Windows NT 3.51 (if you have not already done
+	so) and install the latest U.S. Service Pack for Windows NT version 3.51.
+	
+	NDIS.SYS was corrected to close the Windows NT file handle only once.
+	
+	STATUS
+	------
+	
+	Microsoft has confirmed this to be a problem in Windows NT versions 3.5 and 3.51.
+	This problem has been corrected in the latest U.S. Service Pack for Windows NT
+	version 3.51. For information on obtaining the Service Pack, query on the
+	following word in the Microsoft Knowledge Base (without the spaces):
+	
+	  S E R V P A C K
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+	Version           : :3.5,3.51
+	
+	=============================================================================
+	

@@ -1,0 +1,134 @@
+---
+layout: page
+title: "Q184542: XFOR: Internet Mail Service Very Slow with High Message Volume"
+permalink: kb/184/Q184542/
+---
+
+## Q184542: XFOR: Internet Mail Service Very Slow with High Message Volume
+
+	Article: Q184542
+	Product(s): Microsoft Exchange
+	Version(s): winnt:5.0,5.5
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 08-MAR-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 5.0, 5.5 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	You may experience either of the following symptoms:
+	
+	- When an extremely large number of Simple Mail Transfer Protocol (SMTP)
+	  messages are sent through the Internet Mail Service and the Internet Mail
+	  Service is unable to resolve some of the Domain Name System (DNS) addresses
+	  associated with the messages, the Internet Mail Service may take a long time
+	  to send the messages.
+	
+	  -OR-
+	
+	- When the outbound Internet Mail Service message queue contains a large number
+	  of messages, the Internet Mail Service may take an unusually long time to
+	  start.
+	
+	CAUSE
+	=====
+	
+	These problems can occur for the following reasons:
+	
+	- The rate at which the Internet Mail Service delivers SMTP messages is limited
+	  in part by the number of resolver threads and SMTP worker threads that are
+	  available. If message volume is very high and DNS name resolution is
+	  frequently unsuccessful, the number of available threads can become very low.
+	
+	- When you start the Internet Mail Service, it processes the destination domain
+	  list. The method by which it processes the destination domain list can be
+	  inefficient, particularly when the outbound message queue contains a large
+	  number of messages.
+	
+	WORKAROUND
+	==========
+	
+	You can increase the number of resolver threads and SMTP worker threads that are
+	available when the Internet Mail Service starts, but only by increasing the
+	value assigned to the ThreadsPerProcessor variable.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+	version 5.0.
+	
+	
+	A supported fix is now available, but has not been fully regression-tested and
+	should be applied only to systems experiencing this specific problem. Unless you
+	are severely impacted by this specific problem, Microsoft recommends that you
+	wait for the next service pack that contains this fix. Contact Microsoft
+	Technical Support for more information.
+	
+	This fix has been posted to the following Internet location:
+	
+	  ftp://ftp.microsoft.com/bussys/exchange/exchange-public/fixes/Eng/Exchg5.0/Post-SP2-IMS/
+	
+	
+	
+	
+	Microsoft has confirmed this to be a problem in Microsoft Exchange Server version
+	5.5. This problem has been corrected in the latest U.S. service pack for
+	Microsoft Exchange Server version 5.5. For information on obtaining the service
+	pack, query on the following word in the Microsoft Knowledge Base (without the
+	spaces):
+	
+	  S E R V P A C K
+	
+	
+	MORE INFORMATION
+	================
+	
+	After you apply the fix, three new registry values are available under the
+	following registry key:
+	
+	  HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeIMC
+	  \Parameters
+	
+	NOTE: The above registry key is one path; it has been wrapped for readability.
+	
+	The following registry values are available:
+	
+	  Value Name            Value Type   Description
+	  -----------------------------------------------------------------------
+	  SMTPWorkerThreads     REG_DWORD    If this registry value exists, it
+	                                     represents the number of SMTP worker
+	                                     threads that are available when the
+	                                     Internet Mail Service starts.
+	
+	  ResolverThreads       REG_DWORD    If this registry value exists, it
+	                                     represents the number of resolver
+	                                     threads that are available when the
+	                                     Internet Mail Service starts.
+	
+	  DestinationDomain-    REG_DWORD    If this registry value exists, it
+	  Threshold                          represents the number of
+	                                     DestinationDomain objects that are
+	                                     cached before the Internet Mail
+	                                     Service attempts to reduce the size
+	                                     of the destination domain list.
+	
+	
+	Additional query words: ims internet mail connector imc
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+	Version           : winnt:5.0,5.5
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

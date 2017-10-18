@@ -1,0 +1,81 @@
+---
+layout: page
+title: "Q193461: 3.51: Problems in Date/Time after Choosing Feb 29 in Leap Year"
+permalink: kb/193/Q193461/
+---
+
+## Q193461: 3.51: Problems in Date/Time after Choosing Feb 29 in Leap Year
+
+	Article: Q193461
+	Product(s): Microsoft Windows NT
+	Version(s): WinNT:3.51
+	Operating System(s): 
+	Keyword(s): kbYear2000
+	Last Modified: 20-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 3.51 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	You may experience one or more of the following problems in Windows NT version
+	3.51:
+	
+	- Using the Date/Time tool in Control Panel, if you select February 29 in a
+	  leap year, select a non-leap year, and then click Cancel, the system date is
+	  set to a random year.
+	
+	- Using the Date/Time tool in Control Panel, if you are editing any field other
+	  than the seconds field and the time passes midnight, clicking Cancel sets the
+	  date to a seemingly random value.
+	
+	
+	RESOLUTION
+	==========
+	
+	A supported fix that corrects this problem is now available from Microsoft, but
+	has not been fully regression tested and should be applied only to systems
+	experiencing this specific problem.
+	
+	To resolve this problem immediately, download the fix as described below. For a
+	complete list of Microsoft Product Support Services phone numbers and
+	information on support costs, please go to the following address on the World
+	Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	  Date      Time                 Size    File Name     Platform
+	  -------------------------------------------------------------
+	  09/25/98  05:25p               234,432 Main.cpl      (x86)
+	  09/25/98  04:39p               360,208 Main.cpl      (Alpha)
+	
+	NOTE: Y2k351-i.exe and Y2k351-a.exe were updated on November 5, 1998.
+	
+	This hotfix has been posted to the following Internet location as Y2k351-i.exe
+	(x86) and Y2k351-a.exe (Alpha):
+	
+	  ftp://ftp.microsoft.com/bussys/winnt/winnt-public/fixes/usa/NT351/hotfixes-postSP5/y2k-fix/
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Windows NT version 3.51.
+	
+	======================================================================
+	Keywords          : kbYear2000 
+	Technology        : kbWinNTsearch kbWinNT351search kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+	Version           : WinNT:3.51
+	Hardware          : x86
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

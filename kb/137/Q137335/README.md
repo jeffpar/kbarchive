@@ -1,0 +1,276 @@
+---
+layout: page
+title: "Q137335: Error Message: Invalid VxD Dynamic Link Call from..."
+permalink: kb/137/Q137335/
+---
+
+## Q137335: Error Message: Invalid VxD Dynamic Link Call from...
+
+	Article: Q137335
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): 95
+	Operating System(s): 
+	Keyword(s): win95kbfaq
+	Last Modified: 17-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 95 
+	-------------------------------------------------------------------------------
+	
+	
+	SUMMARY
+	=======
+	
+	This article describes the three parts of the following error message:
+	
+	  Invalid VxD dynamic link call from <Part 1> to device <Part 2>,
+	  service <Part 3>
+	
+	MORE INFORMATION
+	================
+	
+	Normally, an Invalid Dynamic Link Call error message is the result of an
+	incompatibility between driver versions, or a damaged or missing driver. Try
+	uninstalling and then reinstalling any programs or components that you installed
+	recently (before the error message occurred).
+	
+	The error message stated above may occur because your computer is configured
+	incorrectly. This may be due to a device driver that was added or removed
+	recently.
+	
+	Part 1
+	------
+	
+	- Part 1 may be divided into an encoded device name, object number, and offset,
+	  such as "VMM(0A) + 0000001C." This example means the problem was detected in
+	  the VMM virtual device driver, in object 0A, at offset 0000001C.
+	
+	
+	- If Part 1 is an eight-character sequence of letters and numbers, such as
+	  "C13A1EC6," a device driver jumped to an invalid location. The identity of
+	  the driver could not be determined.
+	
+	  If this is the case, restart your computer in Safe mode by pressing the F8 key
+	  when you see the "Starting Windows 95" message, then choosing Safe Mode from
+	  the Windows 95 Startup menu. If the error message does not reoccur, the
+	  problem may be caused by one of the installed device drivers. For information
+	  about how to create a new System.ini file without third-party drivers, see
+	  the following article in the Microsoft Knowledge Base:
+	
+	  Q140441 Creating a New System.ini File Without Third-Party Drivers
+	
+	Part 2
+	------
+	
+	- If Part 2 is the name of a device (such as VMD), the named device driver
+	  should be upgraded to a Windows 95-compatible version.
+	
+	  When this type of error occurs, it means Part 1 requested that Part 2 perform
+	  an operation that Part 2 does not support. This typically means that there is
+	  a version mismatch between the two drivers.
+	
+	  If this is the case, make certain Part 1 and Part 2 are compatible. If the
+	  driver identified in Part 2 is provided with Windows 95, make sure the driver
+	  identified in Part 1 is designed for Windows 95.
+	
+	
+	  The driver identified in Part 2 may not be compatible with Windows 95
+	  because a newly installed program may have replaced the Windows 95
+	  standard driver with a customized driver. This is typically the case
+	  for device drivers marked with an exclamation point in the table below.
+	
+	- If Part 2 is a four-character sequence of letters and numbers, such as
+	  "0418," a device driver required by the system could not be found. See the
+	  below table for a list of commonly encountered device drivers and their
+	  identification numbers.
+	
+	  If this is the case, install the missing driver or remove the driver
+	  identified in Part 1 that requires it.
+	
+	Part 3
+	------
+	
+	Part 3 provides the service ordinal (for example, it identifies which service
+	from Part 2 was requested but could not be satisfied).
+	
+	If the service number is unusually large (for example, the first two digits are
+	not both zero), the problem may be that Part 1 is damaged. However, service
+	numbers as large as 0191 are not unusual if the device driver identified in Part
+	2 is VMM.
+	
+	If Part 3 is unusually large, reinstall the driver identified in Part 1.
+	Remember, Part 1 may contain a device name, an object number, and an offset.
+	
+	How to Determine a Device Driver's Source
+	-----------------------------------------
+	
+	1. The device driver name may suggest the name of the program that installed it.
+	  For example, CCVKD is the virtual keyboard device driver installed by Carbon
+	  Copy. Virtual devices often begin with the letter "V" and end in the letter
+	  "D." For example, VNAVD is the Norton Anti- Virus device driver.
+	
+	  If you are successful in identifying the source of the driver, remove the
+	  corresponding program.
+	
+	2. The device driver name may begin with the letters "NW," suggesting that it
+	  may be a Novell NetWare networking driver. Other clues that may identify a
+	  driver as network-related are the presence of the letters "NDIS," "NET," or
+	  "SERVER."
+	
+	3. If you are unable to identify the program or component that installed the
+	  driver, search the [386Enh] section of the System.ini file for a line with
+	  the following form
+	
+	     Device=<DeviceName>.386
+	
+	  where <DeviceName> is the name of the device driver, possibly with a
+	  path, or possibly with a slightly modified name. For example:
+	
+	     Device=ccvkd.386
+	
+	4. If the driver that needs to be replaced is one of the Windows 95 standard
+	  drivers, run Windows 95 Setup again, and choose to verify the installation.
+	
+	The following table lists virtual device drivers you may encounter.
+	
+	
+	Legend:
+	
+	# - Indicates a standard Windows 95 driver.
+	
+	! - Indicates a standard Windows 95 driver that may have been replaced by a
+	third-party product.
+	
+	$ - Indicates a driver provided by a third-party manufacturer.
+	
+	3.0 - Indicates a driver from Windows 3.0.
+	
+	3.1, 3.11 - Indicates device drivers that have been superseded by drivers in
+	Windows 95.
+	
+	      ID    Driver
+	      No.   Name      Driver Description
+	-----------------------------------------------------------------------
+	#      0001  VMM       Virtual Machine Manager
+	#      0002  DEBUG     WDEB386 Kernel Debugger
+	!      0003  VPICD     Virtual Programmable Interrupt Controller Device
+	#      0004  VDMAD     Virtual Direct Memory Access Device
+	!      0005  VTD       Virtual Timer Device
+	#      0006  V86MMGR   Virtual 8086-mode Memory Manager
+	#      0007  PAGESWAP  Demand Paging Swap Device
+	#      0008  PARITY    Parity-checking Device
+	#      0009  REBOOT    System Reboot Device
+	!      000A  VDD       Virtual Display Device
+	#      000B  VSD       Virtual Sound Device
+	!      000C  VMD       Virtual Mouse Device
+	!      000D  VKD       Virtual Keyboard Device
+	!      000E  VCD       Virtual Communications Device
+	!      000F  VPD       Virtual Printer Device
+	3.1    0010  BLOCKDEV  Block Device Driver
+	#      0010  IOS       Input/Output Supervisor
+	#      0011  VMCPD     Virtual Math Coprocessor Device
+	#      0012  EBIOS     PS/2 Extended BIOS Device Driver
+	#      0013  BIOSXLAT  BIOS Translation Device Driver
+	#      0014  VNETBIOS  Virtual NetBIOS Device Driver
+	#      0015  DOSMGR    MS-DOS Device Driver
+	
+	
+	#      0017  SHELL     Shell Interface Device
+	#      0018  VMPOLL    Virtual Machine Polling Detection Device
+	
+	
+	! 3.1  001A  DOSNET    MS-DOS Network Interface Driver - This driver is
+	                      often replaced by third-party network drivers
+	!      001B  VFD       Virtual Floppy Device
+	$!     001C  LOADHI    EMM386 Memory Manager Driver - This driver is often
+	                      replaced by third-party memory managers
+	
+	
+	#      0020  INT13     Fixed Disk Interrupt Driver
+	! 3.1  0021  PAGEFILE  Paging File Device - This driver is often replaced
+	                      by RAM-doubling software
+	
+	
+	      0022  SCSI      SCSI Device
+	      0023  MCA_POS   MCA_POS Device
+	      0024  SCSIFD    SCSI FastDisk Device
+	      0025  VPEND     Pen Device
+	3.1    0026  APM       Advanced Power Management Device
+	#      0026  VPOWERD   Virtual Advanced Power Management Device
+	#      0027  VXDLDR    VxD Loader device
+	#      0028  NDIS      NDIS wrapper
+	#      002A  VWIN32    Windows 95 Win32 Support Driver
+	#      002B  VCOMM     Windows 95 Communications Device Driver
+	#      002C  SPOOLER   Print Spooler
+	3.1    002D  WIN32S    WIN32S Driver
+	
+	
+	3.11   0031  VNB       NetBEUI Driver from Windows for Workgroups
+	3.11   0032  SERVER    NetBEUI Driver from Windows for Workgroups
+	#      0033  CONFIGMG  Plug and Play Configuration Manager
+	3.1    0034  DWCFGMG   Configuration Manager for Windows 3.1 and MS-DOS
+	#      0035  SCSIPORT  I/O Subsystem Miniport Loader/Driver
+	#      0036  VFBACKUP  Helper Driver for Backup Applications
+	#      0037  ENABLE    Accessibility Driver
+	#      0038  VCOND     Virtual Console Device for WIN32 Console Subsystem
+	
+	
+	#      003C  ISAPNP    ISA Plug and Play Enumerator
+	#      003D  BIOS      BIOS Plug and Play Enumerator
+	#      003E  WINSOCK   Windows Network Sockets
+	#      003F  WSIPX     Windows Network Sockets for IPX
+	#      0040  IFSMGR    Installable File System Manager
+	#      0041  VCDFSD    CD-ROM File System Driver
+	#      0042  MRCI32    Microsoft Real-time Compression Driver
+	#      0043  PCI       PCI Plug and Play Enumerator
+	
+	
+	#      0045  EISA      EISA Plug and Play Enumerator
+	
+	
+	#      011F  VFLATD    Linear Frame Buffer Video Driver
+	
+	
+	#      0442  VTDAPI    Multimedia Timer Services Driver
+	3.0    0444  VADMAD    Auto-initialize DMA
+	!      0445  VSBD      Sound Blaster (Windows Resource Kit) - This driver
+	                      is often replaced by third-party sound drivers
+	
+	
+	#      0460  UNIMODEM  Universal Modem Driver
+	#      0480  VNETSUP   Network Support Driver
+	#      0481  VREDIR    Network Redirector
+	
+	
+	#      0483  VSHARE    File Sharing Support Driver
+	3.11   0484            Old IFSMGR from Windows for Workgroups
+	
+	
+	#      0486  VFAT      32-bit File System Driver
+	#      0487  NWLINK    32-bit IPX/SPX-compatible Protocol
+	#      0488  VTDI      TCP/IP Driver
+	#      0489  VIP       TCP/IP Driver
+	#      048A  VTCP      TCP/IP Driver
+	#      048B  VCACHE    Cache Manager
+	#      048C  VUDP      User Datagram Protocol Driver
+	
+	
+	#      048E  NWREDIR   Windows 95 NetWare-compatible Redirector
+	
+	
+	#      0491  FILESEC   File Security Driver
+	#      0492  NWSERVER  Windows 95 NetWare-compatible File Server
+	
+	
+	#      049B  VNBT      NetBIOS Transport for TCP/IP
+	
+	
+	======================================================================
+	Keywords          : win95 kbfaq
+	Technology        : kbWin95search kbZNotKeyword3
+	Version           : 95
+	
+	=============================================================================
+	

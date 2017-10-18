@@ -1,0 +1,497 @@
+---
+layout: page
+title: "Q274832: XGEN: Bugs Fixed in Exchange Server 5.5 Service Pack 4 (Part 1)"
+permalink: kb/274/Q274832/
+---
+
+## Q274832: XGEN: Bugs Fixed in Exchange Server 5.5 Service Pack 4 (Part 1)
+
+	Article: Q274832
+	Product(s): Microsoft Exchange
+	Version(s): 5.5 SP4
+	Operating System(s): 
+	Keyword(s): kbfixlist
+	Last Modified: 10-SEP-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.5 SP4 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article is part one of a current list of article numbers for bugs that are
+	fixed in Exchange Server 5.5 Service Pack 4. Click the <Qxxxxxx> number
+	that precedes the title of the bug fix to view the article about that bug.
+	
+	Please see the following article in the Microsoft Knowledge Base for part two of
+	this list:
+	
+	  Q274833 XGEN: List of Bugs Fixed in Exchange Server 5.5 Service Pack 4 (Part
+	  2)
+	
+	NOTE: Exchange Server service packs are cumulative and contain all fixes that are
+	included in earlier service packs. For example, Exchange Server 5.5 Service Pack
+	4 contains all fixes included in Exchange Server 5.5 Service Pack 1, 2, and 3.
+	You do not need to install an earlier service pack before you install Exchange
+	Server 5.5 Service Pack 4.
+	
+	For additional information on bug fixes included in earlier Exchange Server 5.5
+	service packs, click the article numbers below to view the articles in the
+	Microsoft Knowledge Base:
+	
+	  Q235453 XGEN: List of Bugs Fixed in Exchange Server 5.5 Service Pack 3 (Part
+	  1)
+	
+	  Q241740 XGEN: List of Bugs Fixed in Exchange Server 5.5 Service Pack 3 (Part
+	  2)
+	
+	  Q242222 XGEN: List of Bugs Fixed in Exchange Server 5.5 Service Pack 2
+	
+	  Q242221 XGEN: List of Bugs Fixed in Exchange Server 5.5 Service Pack 1
+	
+	For additional information on obtaining Exchange Server 5.5 service packs, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q191014 How to Obtain the Latest Exchange Server 5.5 Service Pack
+	
+	MORE INFORMATION
+	================
+	
+	SERVICE PACK 4
+	
+	  Q275714 XADM: Information Store Stops Unexpectedly with Multipart or Mixed
+	  Message and Null Boundary String
+	
+	  Q272863 XADM: Information Store Access Violation When You Attempt to Encode a
+	  Corrupted HTML Message
+	
+	  Q272113 XADM: Information Store Causes Access Violation When It Tries to
+	  Process Outbound Internet E-mail Message
+	
+	  Q271975 XADM: Default Folders Appear in English Instead of Brazilian or
+	  Portuguese
+	
+	  Q271960 XADM: Address Book Search Takes Longer Than Expected
+	
+	  Q271711 XADM: Autoforward Rules May Be Disabled When Using Antivirus API
+	
+	  Q271706 XCON: Embedded MSP4 Message in a P772 Message Gets Downgraded to MSP3
+	
+	  Q271600 XCON: Under Certain Conditions MTA Erroneously Deletes Data Files
+	
+	  Q271591 XFOR: Internet Mail Service Does Not Deliver Message After You
+	  Install Virus Scan Software
+	
+	  Q271549 XWEB: Outlook Web Access and Collaboration Data Objects Daylight
+	  Saving Time Transition Change for Australia in Year 2000
+	
+	  Q271547 XADM: Move Mailbox Utility Does Not Work When Antivirus API Is In Use
+	
+	  Q271199 XADM: Netscape Internet Message Access Protocol Clients Unable to
+	  Determine Content Type of Attachments
+	
+	  Q270918 XADM: Event Service Delay in Processing Scripts Bound to Folders
+	  Which Have Replicas
+	
+	  Q270910 XCON: Non-Delivery Report States Recipient Not Recognized When a
+	  Large Message Is Sent
+	
+	  Q270712 XADM: Store.exe Process Stops Responding with Very Large Number of
+	  Threads
+	
+	  Q270695 XADM: MTA Logs Content Conversion Error 4096 for an Inbound Message
+	
+	  Q269611 XFOR: Message Containing Null Recipient Address Is Not Delivered
+	
+	  Q269442 XADM: Mailbox Manager Removes Future Appointment
+	
+	  Q269355 FIX: E_FAIL Error Returned From CDO When Accessing MAPI.Folder
+	
+	  Q269158 XCON: Message Transfer Agent Stops Responding in emsmta!onpugtck
+	
+	  Q269007 XADM: Problems While Running Multiple Link Monitor Sessions
+	
+	  Q268886 XADM: Exchange Server 5.5 Post-SP3 Information Store Service Provider
+	  Fixes Available
+	
+	  Q268380 XADM: Store Crashes When Rich Text Is Enabled over the IMAP4 Protocol
+	
+	  Q268141 XADM: Information Store Stops Responding When IMAP Client Attempts to
+	  Retrieve S/MIME Message
+	
+	  Q268131 XADM: Store Uses Wrong Language When It Delivers Quota Warning
+	  Message to a Public Folder
+	
+	  Q268105 XADM: Mailbox Manager Stops Responding Cleaning a Container with
+	  Hidden Mailboxes
+	
+	  Q267583 XADM: Exchange Server 5.5 Fix Setup.exe Does Not Work on Windows 2000
+	  Cluster Server
+	
+	  Q267425 XADM: Hiding Address Book Views from Exchange Server Administrator
+	  and Clients During Address Book View Storms
+	
+	  Q267245 XIMS: Internet Mail Service Incorrectly Returns Non-Delivery Report
+	  Message or Silently Drops E-Mail Message
+	
+	  Q266742 XCON: Message Transfer Agent Logs 9405 Exception Error Message When
+	  Starting the Service on Cluster Server
+	
+	  Q266639 XCLN: Outlook Tasks Assigned to Users on Other Exchange Server
+	  Computers Do Not Send Back Updates upon Completion
+	
+	  Q266383 XCON: MTA 2026 and Internet Mail Service 3016 Logging Error Messages
+	  During Periods of High Server Use When Message Tracking Is Enabled
+	
+	  Q266371 XADM: Exchange Server 5.5 User Receives Duplicate E-Mail Message When
+	  on Exchange 2000 Server Distribution List and Carbon Copied
+	
+	  Q266259 XGEN: MAPI Applications Opening Messages Simultaneously Will Not Save
+	  Properties Correctly
+	
+	  Q266093 XADM: Information Store Stops Responding Because of Invalid QueryRows
+	  Request
+	
+	  Q265727 XFOR: Internet Mail Service Stops Responding while Trying to Obtain
+	  Next Host to Deliver a Message
+	
+	  Q265508 XCON: Message Transfer Agent Instance Is Not Displayed in Performance
+	  Monitor on Terminal Services Client
+	
+	  Q265077 "The Pipe Has Ended" Error Message Occurs When You Crawl Exchange
+	  Server Public Folders
+	
+	  Q264341 XFOR: Unintelligible Characters in Dialog Box Font in Microsoft Mail
+	  Connector Queue
+	
+	  Q264330 XFOR: Internet Mail Service May Relay Messages Despite Restrictions
+	
+	  Q264329 XCON: Message Transfer Agent Stops Transferring Data After an X.25
+	  Error
+	
+	  Q264102 XADM: ARCserve 6.5 and Other Third-Party Backup Programs Stop
+	  Responding After Installing Extensible Storage Engine Fix
+	
+	  Q263947 XADM: Messages Stuck in Outbox with Antivirus Application Programming
+	  Interface in Use
+	
+	  Q263916 XFOR: Microsoft Mail Connector Stops Unexpectedly While Viewing
+	  Message Queue
+	
+	  Q263908 XADM: Information Store Crash in EcReplFolderMessagesUnpack
+	
+	  Q263898 XCON: East European Extended Characters Lost in T.61 Content
+	  Conversion
+	
+	  Q263567 XCON: Message Transfer Agent Stops Responding and Cannot Be Stopped
+	
+	  Q263563 XCON: Domain Defined Attributes Value Is Not Displayed in
+	  Non-Delivery Report
+	
+	  Q263526 XADM: Appointments Sent from Different Time Zones Are Not Processed
+	  Properly
+	
+	  Q263457 XADM: Information Store Access Violation with Long One-Off Address
+	  Entries
+	
+	  Q263173 XADM: Only 100 Accounts Can Be Extracted from Active Directory Domain
+	
+	  Q263112 XCON: Message Transfer Agent Generates Event 1016 When Logging
+	  Performance Monitor Counter in Windows 2000 Server
+	
+	  Q263064 XADM: Blackberry Service Stops Responding If the Exchange Server
+	  Computers Are Offline
+	
+	  Q265267 XIMS: Chat Server May Cause an Access Violation With Chat Server
+	  Extension and MIC Chat Client
+	
+	  Q262989 XFOR: Lotus cc:Mail Migration Event 1030 Error Message Caused By
+	  Return Receipt
+	
+	  Q262899 XADM: Knowledge Consistency Checker Generates Notifications for
+	  Server Performing Replication Within the Site Based on the Directory
+	  Replication Schedule
+	
+	  Q262773 XADM: Permissions Tab on Address Book View Object Should Not Display
+	  Inherited Permissions
+	
+	  Q262695 XADM: Move Mailbox Does Not Continue After Encountering a Corrupted
+	  Mailbox
+	
+	  Q262578 XADM: Add Move User Event Logging
+	
+	  Q262491 XADM: Information Store Crashes When Using Antivirus Application
+	  Programming Interface
+	
+	  Q262271 XADM: Admin.exe Program Causes Access Violation When Attempting to
+	  Duplicate User
+	
+	  Q260912 XADM: Exchange Server Categorization Count Displays 4294967296 in
+	  Performance Monitor
+	
+	  Q260839 XADM: Installing Defense Message System Active Directory Connector
+	  Prevents Site Replication
+	
+	  Q260741 XFOR: Internet Mail Service Does Not Deliver Message to Other
+	  Recipients If 552 Code Is Returned from Remote Server
+	
+	  Q260701 XADM: Reducing the Large Number of Public Folder Status Messages
+	
+	  Q260695 XADM: Third-Party Backup Program May Stop Working After Applying Fix
+	
+	  Q260554 XFOR: Microsoft Mail Connector Leaks Memory on Windows 2000 Server
+	
+	  Q260167 XCON: Message Transfer Agent Stops Communicating with Other Message
+	  Transfer Agents in the Same Site
+	
+	  Q260063 XADM: News Article with Followup-To Property Defined Cannot Be Posted
+	
+	  Q260022 XADM: Isscan Utility Stops Responding with ecBadVersion When Run
+	  Against Post-Exchange Server 5.5 Service Pack 3 Store.exe
+	
+	  Q259881 XADM: Unexpected Event ID 2078 in Application Event Log Occurs When a
+	  Client Has Multiple Transport Providers
+	
+	  Q259675 XADM: Isinteg Utility Does Not Correct Mailbox Item Count
+	
+	  Q259541 XADM: Store Hangs During Move Mailbox Process
+	
+	  Q259487 XADM: Isinteg Loops If the Folder's Parent Does Not Exist in the
+	  Information Store
+	
+	  Q259163 XADM: Recipients Cannot Open Attachments If Virus Scanning Interfaces
+	  Are Enabled
+	
+	  Q259146 XCON: Message Transfer Agent Slow When Sending to Multiple Servers in
+	  the Same Site
+	
+	  Q258731 XFOR: Internet Message Access Protocol Migration Extractor Does Not
+	  Work with Event ID 14002
+	
+	  Q258705 XADM: Site Addressing Is Generating Incorrect SMTP Address for
+	  "%g.%s.%m"
+	
+	  Q258704 XIMS: SMTP Proxy Adds a Trailing Period (.) for the Template
+	  Containing "%g.%m.%s"
+	
+	  Q258505 XADM: Information Store Receives Access Violation When UTF-8 and
+	  UTF-7 Client Logs On
+	
+	  Q258319 XADM: Temporary File Grows Until Disk Space Is Consumed When Sending
+	  or Receiving Mail with Attached File
+	
+	  Q258056 XADM: Store Generates 3079 and 3084 Errors When It Cannot Rehome a
+	  Public Folder Correctly
+	
+	  Q258006 XADM: Free and Busy Information for Resources May Disappear While
+	  Using Auto-Accept Script
+	
+	  Q257698 XFOR: Migration Wizard Stops Responding While Migrating Calendar Data
+	  from Lotus Notes
+	
+	  Q257678 XWEB: Outlook Web Access Unable to Send Message to SMTP User By Using
+	  X.400 Address
+	
+	  Q257578 XCON: Internet Mail Service Does Not Respond if Recipient Does Not
+	  Have an Address Type
+	
+	  Q256879 XADM: Mbclean Stops Unexpectedly Because of Memory Corruption
+	
+	  Q256656 BUG: Error Occurs When Using Site Server Search in Outlook 2000
+	
+	  Q256467 XADM: Information Store Does Not Log Message in Application Event Log
+	  on Delivery
+	
+	  Q256350 XCON: PR_CONTENT_CORRELATOR Greater Than 2 Bytes Causes MTA Event ID
+	  246
+	
+	  Q256315 XADM: Information Store Stops Unexpectedly Writing to Message
+	  Tracking Log Because of NULL Address
+	
+	  Q256294 XADM: Server Delegate Rule Is Disabled by External E-Mail Message
+	
+	  Q256245 XADM: Mailbox Manager Deletes All Recurring Calendar Items
+	
+	  Q256114 XIMS: Access Violation at CMtsOutQueue::LoadCachedDetailInfo on
+	  Msexcimc.exe When a Comma Is Included in E-Mail Address
+	
+	  Q255894 XCON: Message Transfer Agent Does Not Support MSP4 Content Type
+	
+	  Q255879 XCLN: Appointments Created Using Collaboration Data Objects Off by
+	  One Hour
+	
+	  Q255768 XADM: Mbclean Report Messages Are Composed in German
+	
+	  Q255766 XCON: MSExchangeMTA Service May Stop Unexpectedly with "Access
+	  Violation" Error Message
+	
+	  Q255673 XADM: Unwanted Replication of Address Book Views
+	
+	  Q255251 XADM: Cannot View Free and Busy Consistently
+	
+	  Q255193 XWEB: Outlook Web Access First Chance Exception in the Cdo.dll File
+	
+	  Q255024 XCON: SMTP Addresses Can Be Encapsulated in RFC-822 Domain Defined
+	  Attributes Instead of SMTP Domain Defined Attributes
+	
+	  Q255019 XCON: MIME Internet X.400 Enhanced Relay Maps an Incoming SMTP
+	  Address Even If a Global Address List Entry Is Available
+	
+	  Q254998 XCON: MIME Internet X.400 Enhanced Relay Maps X.400 Address to SMTP
+	  Address Rather than Encapsulating X.400 Address in the SMTP Address
+	
+	  Q254992 XCON: MIME Internet X.400 Enhanced Relay Encapsulates X.400 Addresses
+	  in the Wrong SMTP Address
+	
+	  Q254976 XCON: MIME Internet X.400 Enhanced Relay Does Not Map SMTP Subdomains
+	  to Organizational Units
+	
+	  Q254916 XFOR: Line Is Overwritten When Sending Files to an Exchange Server
+	  Recipient by Using Exchange PROFS Connector
+	
+	  Q254893 XFOR: Internet Mail Service Does Not Generate the Non-Delivery Report
+	  to the Sender
+	
+	  Q254818 XCON: Message Transfer Agent Stops Processing E-Mail over X.400
+	  Connector with Event ID 9156
+	
+	  Q254812 XADM: Message Transfer Agent Backlogs to Private and Public
+	  Information Store
+	
+	  Q254800 XADM: Rules Do Not Work When Using Custom Recipient from the Global
+	  Address List
+	
+	  Q254788 XFOR: Schedule+ 7.5 Users Are Always Prompted for a Password After
+	  Migration from MS Mail
+	
+	  Q254725 XCON: (040) and (041) in Domain Defined Attribute Addresses Cause
+	  Non-Delivery Reports
+	
+	  Q254720 XADM: Installation of French Mailbox Manager on Cluster Server Does
+	  Not Work with 80004005
+	
+	  Q254576 XADM: The Isinteg Utility Reports ecCorruptData-MAPI_E_CORRUPT_DATA
+	
+	  Q254552 XADM: Slow Information Store Startup Because of Unnecessary Cleanup
+	  of Public Folder Restrictions
+	
+	  Q254540 XCON: GroupWise Router Has Trouble with Multiple Messages with Same
+	  Attachment Name
+	
+	  Q254533 XADM: Incoming Internet Message Shows Corrupted Display Name
+	
+	  Q254380 XFOR: Exchange.Box Compaction Occurs Even When Notes Maintenance Is
+	  Disabled
+	
+	  Q254334 XCON: Message Transfer Agent Stops Responding in EMSMTA!o4puinqh
+	  After Dereferencing a Pointer
+	
+	  Q254282 XIMS: Memory Leaks in MMC Snap-in and ChatCommand Object of Chat
+	  Server
+	
+	  Q254230 XADM: Appointments Become Unusable or Are Deleted After You Run
+	  Isinteg in Fix Mode
+	
+	  Q254091 XADM: Folder Names Become Question Marks in the Report Message from
+	  MBClean
+	
+	  Q254064 XFOR: Exchange Connector for SNADS Delivery Receipt Does Not Work in
+	  Exchange Server 5.5 Service Pack 2 and Service Pack 3
+	
+	  Q254035 XADM: Stack Overflow While Deleting Child Folders in a Deep Hierarchy
+	
+	  Q254027 OL98: Password Expires; No Prompt to Change Password
+	
+	  Q253867 XFOR: URL Links Not Active When HTML Message Routed to Notes
+	
+	  Q253718 XCON: Message Transfer Agent Event IDs 2110, 2171
+	
+	  Q253712 XFOR: Problems with Attachments Sent over the Exchange Notes
+	  Connector
+	
+	  Q253620 XCLN: Non-Delivery Report from "Ghost" Recipients
+	
+	  Q253619 XCON: Message Transfer Agent Logs Event 3150 When Receiving an
+	  Invalid Message from the Internet Mail Service
+	
+	  Q253358 XWEB: Outlook Web Access Issue Generates Stack That Contains
+	  CDO!FEqBin+0xa
+	
+	  Q253350 XCON: Perflib Module Reports that the Exchange Connector for Lotus
+	  Notes Performance Monitor Will Not Return Data on Windows 2000 Server
+	
+	  Q253349 XCON: Response Files from GroupWise Are Put in Badfiles Folder
+	
+	  Q253348 XCON: Exchange Server Cannot Reply All to Notes Recipients that Only
+	  Have a Last Name and No Notes Proxy Address
+	
+	  Q253347 XCON: Comments File in Gw2mexa Folder Stops Calendar Items from Being
+	  Sent to Exchange Server
+	
+	  Q253261 XFOR: Large Temporary Proxy Address Tables Become Corrupted and
+	  CTCleanup Procedure Cannot Clean up Tables
+	
+	  Q253216 XADM: Online Backup Does Not Detect Corruption on a Multiprocessor
+	  Computer if Buffer Size Is Larger than 64 Kilobytes
+	
+	  Q253029 XFOR: Exchange Connector for Lotus Notes to Support Attachments
+	  Inside Embedded Messages
+	
+	  Q253011 XFOR: Exchange Connector for Lotus Notes Does Not Use the StartDate
+	  Property
+	
+	  Q252820 XADM: Information Store Stops Responding When an IMAP4 User Logs on
+	  to an Orphaned Mailbox
+	
+	  Q252819 XFOR: Read Receipt from cc:Mail Loses Content
+	
+	  Q252773 XADM: Deleting All Custom Forms Deletes Contact Distribution List
+	
+	  Q252757 XCLN: Memory Leak in Loop Accessing Collaboration Data Objects
+	
+	  Q252689 XCON: Extended Characters in Attachment Names Are Mishandled by
+	  Exchange Connector for Novell GroupWise
+	
+	  Q252624 XIMS: Internet Mail That Contains Illegal X-Mac-Creator Attribute Is
+	  Archived After Upgrading to Exchange Server 5.5 Service Pack 3
+	
+	  Q252494 XWEB: Attachments Cannot Be Opened in OWA 5.5 SP3
+	
+	  Q252433 XCON: How to Configure the Message Transfer Agent to Perform Routing
+	  Based on the Content Type
+	
+	  Q252345 XADM: Information Store Stops with Access Violation in FEqCAI
+	
+	  Q251318 XCON: Message Transfer Agent Uses Node IP Address Instead of Cluster
+	  IP Address
+	
+	  Q251107 XCON: Message Transfer Agent Can Now Set Reply To Address Based on
+	  the X.400 Connector Used
+	
+	  Q251049 XFOR: Lotus Notes Directory Synchronization Allows Specification of
+	  Read Only Field for Selected Attributes
+	
+	  Q251018 XFOR: Configure Migration Wizard with Lotus cc:Mail 8.5 32-bit
+	  Executables
+	
+	  Q250671 XFOR: Notes Group Type Attribute Does Not Synchronize to Exchange
+	  Server Directory
+	
+	  Q248838 XADM: Exchange Server 5.5 Post-SP3 Information Store Fixes Available
+	
+	  Q246889 XIMS: Exchange Server 5.5 Post-SP3 Internet Mail Service Fixes
+	  Available
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  kbfixlist
+	Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange550SP4
+	Version           : :5.5 SP4
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

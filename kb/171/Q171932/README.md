@@ -1,0 +1,71 @@
+---
+layout: page
+title: "Q171932: Help Author Kit: Windows 3.x Help File Information Is Inaccurate"
+permalink: kb/171/Q171932/
+---
+
+## Q171932: Help Author Kit: Windows 3.x Help File Information Is Inaccurate
+
+	Article: Q171932
+	Product(s): Microsoft Press
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbfile
+	Last Modified: 15-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- MSPRESS Microsoft Windows 95 Help Authoring Kit ISBN 1-55615-892-0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Page 301 of the "Microsoft Windows 95 Help Authoring Kit" states that you can
+	compile Help files for Windows 3.x by using Win32s, or by restricting the Help
+	file to use features that are only available Help Compiler 3.0.
+	
+	The Windows 95 Help Compiler included with this book creates Help files in the
+	Help Compiler 4.0 file format. You cannot use these files on Windows 3.1 systems
+	without Win32s; instead, you must compile these Help files with the Windows 3.1
+	Help Compiler.
+	
+	MORE INFORMATION
+	================
+	
+	The Windows 3.1 Help Compiler, version 3.10.505, is available at no charge from
+	Microsoft in the compressed file Hc505.exe. This file also contains directions
+	to install the compiler to the practice directory.
+	
+	The following file is available for download from the Microsoft Download Center:
+	
+	  Hc505.exe
+	  (http://download.microsoft.com/download/win31/Install/3.10.505/W31/EN-US/Hc505.exe)
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. Once posted, the file is housed on secure
+	servers that prevent any unauthorized changes to the file.
+	
+	
+	STATUS
+	======
+	
+	Microsoft Press has confirmed this to be a problem in the "Microsoft Windows 95
+	Help Authoring Kit." This problem will be corrected in future reprints and
+	editions of this book.
+	
+	Additional query words: mspress ms_press press bookbug eubook
+	
+	======================================================================
+	Keywords          : kbfile 
+	Technology        : kbMSPressSearch
+	Version           : :
+	
+	=============================================================================
+	

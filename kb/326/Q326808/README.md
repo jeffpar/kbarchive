@@ -1,0 +1,196 @@
+---
+layout: page
+title: "Q326808: SNA Server Access Violation in Function s1prmsnd"
+permalink: kb/326/Q326808/
+---
+
+## Q326808: SNA Server Access Violation in Function s1prmsnd
+
+	Article: Q326808
+	Product(s): Microsoft SNA Server
+	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 12-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4 
+	- Microsoft Host Integration Server 2000 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The SNA Server service may quit unexpectedly and cause all users who are
+	connected to lose their existing host sessions. The results may be a .log file
+	in the debugger, and a message in the Windows NT Application Event Log, as
+	follows:
+	
+	- If the default debugger on the system is Dr. Watson (Drwtsn32.exe), it
+	  generates a Drwtsn32.log file similar to the following:
+	
+	  Application exception occurred:
+	             App: exe\snaservr.dbg (pid=<process id>)
+	             When: <date> @ <time>
+	             Exception number: c0000005 (access violation)
+	
+	  [...]
+	
+	  State Dump for Thread Id 0x151
+	   
+	  eax=00000000 ebx=00000000 ecx=00000017 edx=00000000 esi=01315a70 edi=0118846c
+	  eip=0101ca8f esp=00baff50 ebp=00000001 iopl=0         nv up ei ng nz ac po cy
+	  cs=001b  ss=0023  ds=0023  es=0023  fs=003b  gs=0000             efl=00000297
+	   
+	   
+	  function: s1prmsnd
+	          0101ca74 e8c78bfeff       call    sbpenq (01005640)
+	          0101ca79 5f               pop     edi
+	          0101ca7a 5e               pop     esi
+	          0101ca7b 5d               pop     ebp
+	          0101ca7c 5b               pop     ebx
+	          0101ca7d 83c408           add     esp,0x8
+	          0101ca80 c3               ret
+	          0101ca81 668b470a         mov     ax,[edi+0xa]               ds:025a6e73=????
+	          0101ca85 0fbfd0           movsx   edx,ax
+	          0101ca88 8b1495bcf40e01                                  ds:00000000=????????
+	                                    mov     edx,[s1rcb+0xe25c (010ef4bc)+edx*4]
+	  FAULT ->0101ca8f 0fbf5210         movsx   edx,word ptr [edx+0x10]    ds:0141ea07=????
+	          0101ca93 8b1495dc520b01                                  ds:00000000=????????
+	                                    mov     edx,[G_comp_flat2+0x59fc (010b52dc)+edx*4]
+	          0101ca9a 66395a02         cmp     [edx+0x2],bx               ds:0141ea07=????
+	          0101ca9e 741e             jz      s1prmsnd+0x15e (0101cabe)
+	          0101caa0 33d2             xor     edx,edx
+	          0101caa2 80f917           cmp     cl,0x17
+	          0101caa5 0f95c2           setne   dl
+	          0101caa8 83c204           add     edx,0x4
+	          0101caab 50               push    eax
+	          0101caac 668b4616         mov     ax,[esi+0x16]              ds:02734477=????
+	          0101cab0 8bca             mov     ecx,edx
+	          0101cab2 668b5614         mov     dx,[esi+0x14]              ds:02734477=????
+	   
+	  *----> Stack Back Trace <----*
+	   
+	  FramePtr ReturnAd Param#1  Param#2  Param#3  Param#4  Function Name
+	  00000001 00000000 00000000 00000000 00000000 00000000 snaservr!s1prmsnd  (FPO: [EBP 0x00000000] [0,2,4])
+	  00000009 00000000 00000000 00000000 00000000 00000000 snaservr!<nosymbols>
+	
+	- The SNA Server generates a message similar to the following in the Windows NT
+	  Application Event Log:
+	
+	  Event ID: 624
+	  Source: SNA Server
+	  Description: Creating dump file <snaroot>\traces\snadump.log for
+	  snaservr.exe.
+	
+	CAUSE
+	=====
+	
+	In certain situations, the SNA Server service retains a pointer to an internal
+	control block that has already been freed. If the SNA Server service tries to
+	free this control block a second time, the access violation occurs.
+	
+	RESOLUTION
+	==========
+	
+	Host Integration Server 2000
+	----------------------------
+	
+	No fix is available at this time.
+	
+	
+	SNA Server 4.0 SP4
+	------------------
+	
+	A supported fix is now available from Microsoft, but it is only intended to
+	correct the problem that is described in this article. Apply it only to
+	computers that are experiencing this specific problem. This fix may receive
+	additional testing. Therefore, if you are not severely affected by this problem,
+	Microsoft recommends that you wait for the next Microsoft SNA Server version 4.0
+	service pack that contains this fix.
+	
+	To resolve this problem immediately, contact Microsoft Product Support Services
+	to obtain the fix. For a complete list of Microsoft Product Support Services
+	phone numbers and information about support costs, visit the following Microsoft
+	Web site:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	NOTE: In special cases, charges that are ordinarily incurred for support calls
+	may be canceled if a Microsoft Support Professional determines that a specific
+	update will resolve your problem. The typical support costs will apply to
+	additional support questions and issues that do not qualify for the specific
+	update in question.
+	
+	The English version of this fix has the file attributes (or later) that are
+	listed in the following table. The dates and times for these files are listed in
+	coordinated universal time (UTC). When you view the file information, it is
+	converted to local time. To find the difference between UTC and local time, use
+	the Time Zone tab in the Date and Time tool in Control Panel.
+	
+	  Date         Time   Version      Size    File name
+	  -----------------------------------------------------
+	  29-Jul-2002  07:10  4.0.0.606   468,864  Snaservr.exe
+	  29-Jul-2002  07:10  4.0.0.606   935,344  Trcservr.exe
+	
+	NOTE: Because of file dependencies, the most recent fix that contains the above
+	files may also contain additional files.
+	
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed that this is a problem in Host Integration Server 2000
+	and Microsoft SNA Server version 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4.
+	
+	MORE INFORMATION
+	================
+	
+	If you examine a crash dump file of the access violation, and matching symbols
+	in a debugging tool such as WinDBG, you can see a stack trace similar to the
+	following:
+	
+	  (fa.151): Access violation - code c0000005 (!!! second chance !!!)
+	  eax=00000000 ebx=00000000 ecx=00000017 edx=00000000 esi=01315a70 edi=0118846c
+	  eip=0101ca8f esp=00baff50 ebp=00000001 iopl=0         nv up ei ng nz ac po cy
+	  cs=001b  ss=0023  ds=0023  es=0023  fs=003b  gs=0000             efl=00000297
+	  snaservr!s1prmsnd+12f:
+	  0101ca8f 0fbf5210         movsx edx,word ptr [edx+0x10] ds:0023:00000010=????
+	  0:001> kv
+	  ChildEBP RetAddr  Args to Child              
+	  00baff64 01034367 0100536b 0000001f 77f0178b snaservr!s1prmsnd+0x12f (FPO: [EBP 0x01186f5d] [0,2,4])
+	  00baff68 0100536b 0000001f 77f0178b 00075b98 snaservr!s1pgdisp+0xf7 (FPO: [1,0,0])
+	  00baff88 01005b15 64001281 00000001 00075b98 snaservr!sbpsched+0xdb (FPO: [EBP 0x77f0178b] [0,2,4])
+	  00baff8c 64001281 00000001 00075b98 77f9d850 snaservr!sbpgmain+0x25 (FPO: [0,0,0])
+	  00baffa8 77dd8bec 00000001 00075b98 ffffffff SNASVC!ServiceMainFunction+0x131 (FPO: [EBP 0x00075b90] [2,1,3])
+	  00baffb8 77f04ee8 00075b90 77f9d850 ffffffff ADVAPI32!ScSvcctrlThreadA+0xe (FPO: [1,0,1])
+	  00baffc4 ffffffff 00075b90 c0000005 00baffc4 KERNEL32!BaseThreadStart+0x51 (FPO: [Non-Fpo])
+	  77f9d850 77f8e58f 77f8e596 0052005c 00670065 0xffffffff
+	  ffffffff 00000000 00000000 00000000 00000000 ntdll!RtlpFreeToHeapLookaside+0x5b (FPO: [Non-Fpo])
+	
+	For additional information about configuring Drwtsn32.exe as the default
+	debugger, click the article number below to view the article in the Microsoft
+	Knowledge Base:
+	
+	  Q188296 How to Disable Dr. Watson for Windows NT
+	
+	For more information about WinDBG, symbols, and other Microsoft debugging tools,
+	visit the following Microsoft Web site:
+	
+	  Microsoft Debugging Tools
+	  http://www.microsoft.com/ddk/debugging/
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbSNAServSearch kbHostIntegServ2000 kbSNAServ400 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3 kbSNAServ400SP4
+	Version           : :4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

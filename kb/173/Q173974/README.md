@@ -1,0 +1,229 @@
+---
+layout: page
+title: "Q173974: HOWTO: Add MFC Support to an ATL Project"
+permalink: kb/173/Q173974/
+---
+
+## Q173974: HOWTO: Add MFC Support to an ATL Project
+
+	Article: Q173974
+	Product(s): Microsoft C Compiler
+	Version(s): 2.0,2.1,3.0,5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbATL200 kbATL210 kbMFC kbVC500 kbVC600 kbATL300 kbFAQ kbGrpDSMFCATL
+	Last Modified: 10-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The Microsoft Active Template Library (ATL), versions 2.0, 2.1, 3.0, used with:
+	   - Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+	   - Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+	   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	When creating an ATL EXE project using the AppWizard, the MFC support check box
+	is disabled. This article explains how to add MFC support to an ATL EXE project.
+	This article also explains how to add MFC support to an ATL DLL project if you
+	failed to initially select the "support MFC" check box in the AppWizard.
+	
+	MORE INFORMATION
+	================
+	
+	Adding MFC Support to an ATL EXE Project
+	----------------------------------------
+	
+	1. Add the following #include directives to StdAfx.h prior to including
+	  Atlbase.h:
+	
+	        #include <afxwin.h>   // MFC core and standard components
+	        #include <afxext.h>   // MFC extensions
+	        #include <afxdisp.h>  // MFC Automation extensions
+	
+	2. Change project settings to use MFC. From the Project Settings dialog box,
+	  click the General tab, and change the setting in the "Microsoft Foundation
+	  Classes" list box to MFC.
+	
+	3. Add a CWinApp derived class and declare a global variable of that type as
+	  follows:
+	
+	  class CMyApp : public CWinApp
+	        {
+	        public:
+	           virtual BOOL InitInstance();
+	           virtual int ExitInstance();
+	        protected:
+	        BOOL m_bRun;
+	  };
+	
+	4. Replace the _tWinMain function with the following InitInstance and
+	  ExitInstance code:
+	
+	  BOOL CMyApp::InitInstance()
+	  {
+	  	// Initialize OLE libraries.
+	  	if (!AfxOleInit())
+	  	{
+	  		AfxMessageBox(_T("OLE Initialization Failed!"));
+	  		return FALSE;
+	  	}
+	
+	  	// Initialize CcomModule.
+	  	_Module.Init(ObjectMap, m_hInstance);
+	  	_Module.dwThreadID = GetCurrentThreadId();
+	
+	  	// Check command line arguments.
+	  	TCHAR szTokens[] = _T("-/");
+	  	m_bRun = TRUE;
+	  	LPCTSTR lpszToken = FindOneOf(m_lpCmdLine, szTokens);
+	  	while (lpszToken != NULL)
+	  	{
+	  		// Register ATL and MFC class factories.
+	  		if (lstrcmpi(lpszToken, _T("Embedding"))==0 ||
+	  		lstrcmpi(lpszToken, _T("Automation"))==0)
+	  		{
+	  			AfxOleSetUserCtrl(FALSE);
+	  			break;
+	  		}
+	  	// Unregister servers.
+	  	// There is no unregistration code for MFC
+	  	// servers. Refer to <LINK TYPE="ARTICLE" VALUE="Q186212">Q186212</LINK> "HOWTO: Unregister MFC
+	  	// Automation Servers" for adding unregistration
+	  	// code.
+	  		else if (lstrcmpi(lpszToken, _T("UnregServer"))==0)
+	  		{
+	  			VERIFY(SUCCEEDED(_Module.UpdateRegistryFromResource(IDR_ServerS2B, FALSE)));
+	  //Replace  IDR_ServerS2B with your project specific resource ID for the registry script resource
+	  			VERIFY(SUCCEEDED(_Module.UnregisterServer(TRUE)));
+	  			m_bRun = FALSE;
+	  			break;
+	  		}
+	  	// Register ATL and MFC objects in the registry.
+	  		else if (lstrcmpi(lpszToken, _T("RegServer"))==0)
+	  		{
+	  			VERIFY(SUCCEEDED(_Module.UpdateRegistryFromResource(IDR_ServerS2B, TRUE)));
+	  			VERIFY(SUCCEEDED(_Module.RegisterServer(TRUE)));
+	  			COleObjectFactory::UpdateRegistryAll();
+	  			m_bRun = FALSE;
+	  			break;
+	  		}
+	  		lpszToken = FindOneOf(lpszToken, szTokens);
+	  	}
+	  	if (m_bRun)
+	  	{
+	  		// Comment out the next line if not using VC 6-generated
+	  		// code.
+	  		_Module.StartMonitor();
+	
+	  		VERIFY(SUCCEEDED(_Module.RegisterClassObjects(CLSCTX_LOCAL_SERVER, REGCLS_MULTIPLEUSE)));
+	  		VERIFY(COleObjectFactory::RegisterAll());
+	  		// To run the EXE standalone, you need to create a window
+	  		// and assign the CWnd* to m_pMainWnd.
+	  		LPCTSTR szClass = AfxRegisterWndClass(NULL);
+	  		m_pMainWnd = new CWnd;
+	  		m_pMainWnd->CreateEx(0, szClass, _T("SomeName"), 0, CRect(0, 0, 0, 0), NULL, 1234);
+	  	}
+	  	return TRUE;
+	  }
+	
+	  int CMyApp::ExitInstance()
+	  {
+	  	// MFC's class factories registration is
+	  	// automatically revoked by MFC itself.
+	  	if (m_bRun)
+	  	{
+	  		_Module.RevokeClassObjects();
+	          Sleep(dwPause); //wait for any threads to finish
+	      }
+	
+	      _Module.Term();
+	  	return 0;
+	  }
+	
+	5. For Unicode builds, make sure the entry point is set to wWinMainCRTStartup in
+	  the Output category of the Link field in the Project Settings dialog box. For
+	  additional information, please see the following article in the Microsoft
+	  Knowledge Base:
+	
+	  Q125750 PRB: Error LNK2001: '_WinMain@16': Unresolved External Symbol
+	
+	6. Add the following line of code to the beginning of every member function of a
+	  COM interface, window procedure, and exported function:
+	
+	  AFX_MANAGE_STATE(AfxGetAppModuleState());
+	
+	  For more information on AFX_MANAGE_STATE, consult the VC++ online
+	  documentation.
+	
+	For more information about adding MFC support to an ATL COM AppWizard project,
+	please see the following article in the Microsoft Knowledge Base:
+	
+	  Q181505 PRB: ATL COM AppWizard Doesn't Offer MFC Support for .EXE
+	
+	Adding MFC Support to an ATL DLL Project
+	----------------------------------------
+	
+	Follow steps 1 to 3 from above.
+	
+	1. Move the code in the AppWizard-generated DllMain's DLL_PROCESS_ATTACH and
+	  DLL_PROCESS_DETACH to the CMyApp's InitInstance and ExitInstance and remove
+	  the DllMain as follows:
+	
+	        BOOL CMyApp::InitInstance()
+	        {
+	           _Module.Init(ObjectMap, m_hInstance);
+	           return CWinApp::InitInstance();
+	        }
+	
+	   int CMyApp::ExitInstance()
+	  {
+	      // MFC's class factories registration is
+	      // automatically revoked by MFC itself.
+	      if (m_bRun)
+	          _Module.RevokeClassObjects();
+	
+	2. Add the following line of code to the beginning of every member function of a
+	  COM interface, window procedure and exported function:
+	
+	  AFX_MANAGE_STATE(AfxGetStaticModuleState());
+	
+	  For additional information, please see the following article in the Microsoft
+	  Knowledge Base:
+	
+	  Q140850 HOWTO: Converting DLLTRACE to Use MFC in Shared Library
+	
+	NOTE: For all release builds, make sure that the _ATL_MIN_CRT preprocessor
+	definition has been removed. You can find these definitions in the Preprocessor
+	category of the C/C++ tab in the Project Settings dialog box.
+	
+	When adding a class derived from a MFC class using the ClassWizard to an ATL EXE
+	project or to an ATL DLL project without "MFC Support," the compiler will issue
+	a C2504 error.
+	
+	REFERENCES
+	==========
+	
+	MFCATL Sample included with Visual C++ 5.0.
+	
+	For additional information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q186212 HOWTO: Unregister MFC Automation Servers
+	
+	(c) Microsoft Corporation 1997, All Rights Reserved. Contributions by Chuck Bell,
+	Microsoft Corporation.
+	
+	
+	Additional query words: checkbox listbox
+	
+	======================================================================
+	Keywords          : kbATL200 kbATL210 kbMFC kbVC500 kbVC600 kbATL300 kbFAQ kbGrpDSMFCATL 
+	Technology        : kbVCsearch kbAudDeveloper kbATLsearch
+	Version           : :2.0,2.1,3.0,5.0,6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

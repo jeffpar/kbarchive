@@ -1,0 +1,95 @@
+---
+layout: page
+title: "Q136941: Options Dialog Box Choices That Are Set Immediately"
+permalink: kb/136/Q136941/
+---
+
+## Q136941: Options Dialog Box Choices That Are Set Immediately
+
+	Article: Q136941
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:3.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 15-FEB-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 3.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The choices and settings you make in the Options dialog box (obtained by
+	clicking Options on the Tools menu) take effect once you click OK. However, most
+	of them will not be evident until you take some further action. There are just a
+	few settings that are immediately evident.
+	
+	MORE INFORMATION
+	================
+	
+	International Tab
+	-----------------
+	
+	- All of the Date and Time settings are immediately reflected in an active
+	  Browse window displaying Date or DateTime type fields.
+	
+	- The Decimal Separator character is reflected in any Browse window displaying
+	  numeric or currency type fields.
+	
+	- Selecting the 24 Hour option displays the time in 24-hour format in the Clock
+	  on the Status Bar if the Status Bar is visible and the Clock is set on.
+	  However, if you select the 12 Hour option after selecting the 24 Hour option,
+	  the Clock window resizes to a smaller width, hiding the AM/PM. To correct
+	  this, open the Options dialog box again and click OK.
+	
+	Data Tab
+	--------
+	
+	- Selecting or clearing the Ignore Deleted Records option hides or displays
+	  deleted records in an active Browse window.
+	
+	View Tab
+	--------
+	
+	- Selecting or clearing the Status Bar option sets the status bar ON or OFF.
+	
+	- Selecting or clearing the Clock option displays or removes the clock from the
+	  Status Bar, if the Status Bar is set on.
+	
+	General Tab
+	-----------
+	
+	- Selecting the Show Trace Window option opens the Trace window. However,
+	  clearing it does not close the Trace window. To close the Trace window and
+	  reset ECHO to OFF, use the Trace window Control menu.
+	
+	Edit Tab
+	--------
+	
+	Several of the choices on the Edit tab are immediately apparent in the edit
+	window that is open when you select the Options dialog box
+	
+	- Word Wrap. Text wraps or unwraps to the current width of the edit window.
+	
+	- Automatic Indent. When Word Wrap is selected, paragraphs that begin with a
+	  Tab adjust as you change this setting.
+	
+	- Alignment. Text immediately aligns to the left, center, or right.
+	
+	- Tab Width. Both Indents and embedded Tabs adjust to a change in this setting.
+	
+	- Show Line/Column Position. This is reflected on the Status Bar if it is
+	  displayed.
+	
+	Additional query words: VFoxWin
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+	Version           : WINDOWS:3.0
+	
+	=============================================================================
+	

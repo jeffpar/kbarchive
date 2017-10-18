@@ -1,0 +1,116 @@
+---
+layout: page
+title: "Q93039: Token Ring Cards and Local Addressing with WFWG"
+permalink: kb/093/Q93039/
+---
+
+## Q93039: Token Ring Cards and Local Addressing with WFWG
+
+	Article: Q93039
+	Product(s): Microsoft Windows 3.x Retail Product
+	Version(s): WINDOWS:3.1,3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 26-SEP-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows for Workgroups versions 3.1, 3.11 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Some token ring network interface cards (NICs) can use a "local addressing"
+	feature with Windows for Workgroups. This feature allows the network card's
+	internal network address to be bypassed and defined manually.
+	
+	MORE INFORMATION
+	================
+	
+	The local address is defined by placing the following line in the network card
+	section of the PROTOCOL.INI file:
+	
+	     [MS$IBMTR1]            (Using the IBM Token Ring card)
+	     Netaddress="<value>"   (The quotation marks are required)
+	
+	The value for the Netaddress= setting must be stated as a series of 12
+	hexadecimal digits within quotation marks, with no spaces separating the digits.
+	There is no default for the Netaddress= setting.
+	
+	The address must be within the range 400000000000 through 40007FFFFFFF; however,
+	for strict IBM compatibility, use only decimal digits (0-9), as in
+	"400001020304."
+	
+	Incorrectly Entered Netaddress Values
+	-------------------------------------
+	
+	If the Netaddress= value is incorrectly entered (without quotation marks, for
+	example), one of the following error messages may be displayed during startup:
+	
+	While loading PROTMAN.DOS:
+	
+	  PRO0006E: Integer overflow in PROTOCOL.INI parameter Unable to open Protocol
+	  Manager
+	
+	While loading the netcard driver:
+	
+	  MAC0001: Initialization Failure Press any key to continue...
+	
+	While executing NET USE in AUTOEXEC.BAT:
+	
+	  Error 3653: The protocol manager could not be found.
+	
+	To correct these errors, verify that there are 12 digits, that they are within
+	quotation marks, and that there are no spaces between entries.
+	
+	Computers Using the Same Netaddress
+	-----------------------------------
+	
+	You may also experience one of the following problems if there are duplicate
+	computers on the network using the same Netaddress= value:
+	
+	- Computers cannot connect to the network. (This problem occurs when the first
+	  computer to enter the ring causes another machine that is attempting to use
+	  the same Netaddress= value to fail.)
+	
+	- Lost connection to the ring when starting Windows for Workgroups or starting
+	  the real mode redirector.
+	
+	- Inability to browse or connect to other computers within Windows for
+	  Workgroups.
+	
+	No error messages are displayed if you start a machine that is attempting to use
+	a network address that is already in use, but network access problems, as
+	described above, do occur.
+	
+	To troubleshoot a possible network address conflict, remove the Netaddress= line
+	in the PROTOCOL.INI by placing a semicolon at the beginning of that line. If
+	problems persist, there is may be some other conflict, such as IRQ, I/O address,
+	or device driver.
+	
+	The following token ring network cards support local addressing with Windows for
+	Workgroups:
+	
+	     Netcard                   Driver
+	     --------------------------------------
+	
+	     ProNET-4/16 (P1892)       NDIS89XR.DOS
+	     3Com TokenLink            TLNK.DOS
+	     IBM Token-Ring Adpater    IBMTOK.DOS
+	     IBM Token-Ring II         IBMTOK.DOS
+	     IBM Token-Ring A          IBMTOK.DOS
+	     IBM Token-Ring 16/4       IBMTOK.DOS
+	     IBM Token-Ring 16/4 A     IBMTOK.DOS
+	
+	
+	Additional query words: 1.0 1.00 3.10 3.11 LAN Manager LANman MSDLC
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbWFWSearch kbWFW310 kbWFW311
+	Version           : WINDOWS:3.1,3.11
+	
+	=============================================================================
+	

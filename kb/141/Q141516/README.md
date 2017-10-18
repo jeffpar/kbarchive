@@ -1,0 +1,135 @@
+---
+layout: page
+title: "Q141516: Updated HP PCL5EMS Drivers for NT"
+permalink: kb/141/Q141516/
+---
+
+## Q141516: Updated HP PCL5EMS Drivers for NT
+
+	Article: Q141516
+	Product(s): Microsoft Windows NT
+	Version(s): 3.51
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 14-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 3.51 
+	- Microsoft Windows NT Server version 3.51 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Below is the README from the updated Hewlett-Packard (HP) PCL5EMS drivers. At
+	the end of the document are locations for downloading the driver set.
+	
+	MORE INFORMATION
+	================
+	
+	PCL5EMS.DLL Version 3.30
+	------------------------
+	
+	This release adds support for the following HP Model Printers:
+	
+	- HP LaserJet 5Si
+	
+	- HP LaserJet 5Si MX
+	
+	- HP LaserJet 5L
+	
+	- HP CopyJet
+	
+	- HP DeskJet 1600C
+	
+	Requirements Before Installation
+	--------------------------------
+	
+	These updated Drivers require that Service Pack 3 be installed before they will
+	work properly. In particular WINSRV.DLL was changed to handle large spool files
+	across the Lan.
+	
+	The order of Installation is important. Please install in the following order:
+	
+	1. Service Pack 3
+	
+	2. Updated Printer Drivers.
+	
+	In the event that you installed the Service Pack 3 last please do the following:
+	
+	1. Select the Installed Printer from Print Manager
+	
+	2. From the Printer Menu choose "Remove Printer"
+	
+	3. Following the Installation steps listed in the section "Installation
+	  Instructions"
+	
+	Known Issues:
+	
+	In some cases, when printing to the HP Deskjet 1600c in 24bit color mode from 16
+	bit applications, the output received may not be in color. This does not occur
+	when printing in 8 bit (256 color) mode or the 3 bit (8 color) mode. This
+	problem can be worked around by printing to a lower color mode setting or, if
+	possible, printing from a 32 bit version of the application.
+	
+	HP 5SI/5SI MX Bin Mapping
+	-------------------------
+	
+	The following is a list of how the naming of media sources in Microsoft's printer
+	driver compares to the naming of media sources in HP's printer driver for the HP
+	LaserJet 5Si and HP LaserJet 5Si MX printers:
+	
+	  HP's Driver           Microsoft's Driver
+	  -------------------------------------------------------
+	  Tray 1                MP Tray
+	  Tray 2                Upper Tray
+	  Tray 3                Lower Tray
+	  Manual Feed(Tray 1)   Manual Feed/ Envelope Manual Feed
+	  Envelope Feeder       Envelope
+	  Tray 4                Large Capacity
+	  Automatic             Auto Select
+	
+	Installation Instructions
+	-------------------------
+	
+	By using the following Windows NT Driver Library (the "Software"), you are hereby
+	agreeing to the included license agreement. Please review the file LICENSE.TXT.
+	
+	Installing a Printer Driver:
+	
+	1. In the Main group, choose the Control Panel icon.
+	
+	2. In Control Panel, choose the Print Manager icon. The Print Manager opens.
+	  From the Printer menu option, choose "Create Printer...".
+	
+	3. The Create Printer dialog box appears. Expand the "Driver:" drop-down list by
+	  clicking on its down arrow. Scroll to the bottom of the list and select
+	  "Other...".
+	
+	4. The Install Driver dialog will appear. Either insert the disk you made during
+	  the downloading procedure, or type the path of the directory where you
+	  downloaded the driver. Then choose the OK button.
+	
+	5. A Select Driver dialog box appears, listing one or more printers.
+	
+	6. In the "Printer Driver:" list, select the printer you want and choose the OK
+	  button.
+	
+	7. Windows NT copies the needed file(s) and returns you to the "Create Printer"
+	  dialog box.
+	
+	8. Fill in the rest of the information fields and choose OK.
+	
+	9. For instructions on how to configure your printer, see the section for the
+	  Print Manager in the "Microsoft Windows NT System Guide."
+	
+	Additional query words: prodnt
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+	Version           : 3.51
+	
+	=============================================================================
+	

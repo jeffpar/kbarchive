@@ -1,0 +1,90 @@
+---
+layout: page
+title: "Q92587: Standard Mode Boot Process for Windows for Workgroups"
+permalink: kb/092/Q92587/
+---
+
+## Q92587: Standard Mode Boot Process for Windows for Workgroups
+
+	Article: Q92587
+	Product(s): Microsoft Windows 3.x Retail Product
+	Version(s): WINDOWS:3.1
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 23-SEP-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows for Workgroups version 3.1 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	In Windows for Workgroups, the standard-mode startup ("boot") process is
+	slightly different than the process for Windows version 3.1. This article
+	describes the procedure for starting Windows for Workgroups in standard mode.
+	
+	MORE INFORMATION
+	================
+	
+	The following procedure starts the network connections and Windows for
+	Workgroups in standard mode.
+	
+	1. The user starts the network software by typing "net logon" (without the
+	  quotation marks) at the MS-DOS command prompt. If the user logs onto the
+	  network successfully, the persistent network connections are restored (for
+	  example, file and printer connections active during the last Windows for
+	  Workgroups session.)
+	
+	2. The user starts WIN.COM by typing "win" (without the quotation marks) at the
+	  MS-DOS command prompt.
+	
+	  Note: If you are using a 386 machine and you type "win", your system attempts
+	  to start in enhanced mode. Type "win/s" (without the quotation marks) to
+	  enter standard mode.
+	
+	3. WIN.COM invokes the MS-DOS EXEC function to load DOSX to provide extended
+	  memory access support.
+	
+	4. DOSX loads the standard-mode kernel (KRNL286.EXE).
+	
+	5. KRNL286.EXE loads the following files:
+	
+	   - The Windows drivers (identified as *.DRV in the SYSTEM.INI file)
+	
+	   - GDI.EXE
+	
+	   - USER.EXE
+	
+	   - Supporting files (for example, fonts)
+	
+	   - WFWNET.DRV (the Windows for Workgroups network driver)
+	
+	6. WFWNET.DRV loads the Network DDE background application (NETDDE.EXE) and the
+	  ClipBook Server background application (CLIPSRV.EXE).
+	
+	7. WFWNET.DRV prompts the user to log on to the network if the user has not done
+	  so already. If the user logs on to the network successfully, the WFWNET.DRV
+	  then restores the persistent network connections (for example, file and
+	  printer connections active during the last Windows for Workgroups session).
+	
+	8. KRNL286.EXE launches the Windows shell identified by the shell= entry in the
+	  [boot] section of the SYSTEM.INI file. By default, this is the Windows
+	  Program Manager.
+	
+	REFERENCES
+	==========
+	
+	"Windows for Workgroups Resource Kit," Windows version 3.1, pages 2-15
+	
+	Additional query words: 3.10
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbWFWSearch kbWFW310
+	Version           : WINDOWS:3.1
+	
+	=============================================================================
+	

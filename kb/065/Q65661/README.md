@@ -1,0 +1,92 @@
+---
+layout: page
+title: "Q65661: Changing Color of Selected Text in Help and Windows"
+permalink: kb/065/Q65661/
+---
+
+## Q65661: Changing Color of Selected Text in Help and Windows
+
+	Article: Q65661
+	Product(s): Microsoft Windows 3.x Retail Product
+	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
+	Operating System(s): 
+	Keyword(s): kbenable win31 win95 kbEnableSight kbEnableLearn
+	Last Modified: 06-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows for Workgroups versions 3.1, 3.11 
+	- Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	You can change the color of Help jump terms, Help glossary terms, text that run
+	Help macros, and selected text in Microsoft Windows by adding lines to different
+	sections of the WIN.INI file, as follows:
+	
+	Highlighted text        Section of WIN.INI      Line to add
+	---------------------------------------------------------------------
+	
+	Help jump terms         [Windows Help]          Jumpcolor=(R G B)
+	Help glossary terms     [Windows Help]          Popupcolor=(R G B)
+	Help macros             [Windows Help]          MacroColor=(R G B)
+	Windows screens         [colors]                HighlightText=(R G B)
+	
+	The R, G, and B values are integers between 0 and 255 that specify the relative
+	intensities of red, green, and blue. For example, the following turns the text
+	bright blue:
+	
+	     Jumpcolor=0 0 255
+	
+	In this example, zero turns the red and green intensities off, and 255 turns the
+	blue intensity to the brightest level.
+	
+	After you make the change in the WIN.INI file and save it, you can access the
+	Program Manager, choose Help, then choose Contents. The color change you made
+	appears. You do not have to exit and restart Windows to see your color change.
+	
+	MORE INFORMATION
+	================
+	
+	The following table lists the default 16-color palette:
+	
+	Color                 Line to add
+	-------------------------------------------
+	White                 JumpColor=255 255 255
+	Light Gray            JumpColor=192 192 192
+	Gray                  JumpColor=127 127 127
+	Bright Red            JumpColor=255 000 000
+	Red                   JumpColor=127 000 000
+	Bright Green          JumpColor=000 255 000
+	Green                 JumpColor=000 127 000
+	Bright Blue           JumpColor=000 000 255
+	Blue                  JumpColor=000 000 127
+	Yellow                JumpColor=255 255 000
+	Brown                 JumpColor=127 127 000
+	Cyan                  JumpColor=000 255 255
+	Aqua                  JumpColor=000 127 127
+	Violet                JumpColor=255 000 255
+	Purple                JumpColor=127 000 127
+	Black                 JumpColor=000 000 000
+	
+	NOTE: If your video driver supports more than 256 colors, the jump colors may not
+	displayed correctly.
+	
+	REFERENCES
+	==========
+	
+	WININI.WRI, Microsoft Windows for Workgroups version 3.11, Disk 3 (for 1.44MB
+	and 1.2MB diskettes) and Disk 6 (for 720K diskettes)
+	
+	Additional query words: help text change color colors 3.00 3.0 3.0a 3.00a 3.1 3.10 highlighted highlight disability disabilities handicap accessibility
+	
+	======================================================================
+	Keywords          : kbenable win31 win95 kbEnableSight kbEnableLearn 
+	Technology        : kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311 kbWFW310 kbWFW311
+	Version           : WINDOWS:3.0,3.0a,3.1,3.11
+	
+	=============================================================================
+	

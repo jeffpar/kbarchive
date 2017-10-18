@@ -1,0 +1,448 @@
+---
+layout: page
+title: "Q187917: Baseball 3D: How to Configure and Use Game Controls"
+permalink: kb/187/Q187917/
+---
+
+## Q187917: Baseball 3D: How to Configure and Use Game Controls
+
+	Article: Q187917
+	Product(s): Microsoft Home Games
+	Version(s): WINDOWS:1.0
+	Operating System(s): 
+	Keyword(s): kbui kbimu msgame bball3dkbfaq
+	Last Modified: 13-MAR-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Baseball 3D, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes how to select, configure, and use a game controller in
+	Baseball 3D.
+	
+	MORE INFORMATION
+	================
+	
+	The following topics explain how to set up game controllers in Baseball 3D and
+	how to use them when you play a game.
+	
+	- Choosing Controllers
+	
+	- User Settings
+	
+	- Using Game Controllers
+	
+	- Batting
+	
+	- Running the Bases
+	
+	- Pitching
+	
+	- Fielding
+	
+	Choosing Controllers
+	--------------------
+	
+	You can play Baseball 3D with a game pad, a joystick, or a keyboard. For best
+	results, we recommend you use a game pad. To select a game controller in
+	Baseball 3D, follow these steps:
+	
+	1. Start Baseball 3D, choose a game, and then select teams.
+	
+	2. On any pre-game screen, click Controls.
+	
+	3. Select a controller for each team. Baseball 3D displays the currently
+	  selected controller for a team in color, available controllers in light gray,
+	  and unavailable controllers in dark gray. To select a game controller, follow
+	  these steps:
+	
+	  a. If you want to run a simulated game, click Reset to clear all controller
+	     selections.
+	
+	  b. If you want to play a single-player game, click the controller you want to
+	     use for your team, and then verify that no game controller is selected for
+	     the other team.
+	
+	  c. If you want to play a two-player game, click the controller you want to
+	     use for your team, and then click the controller your opponent wants to
+	     use for their team.
+	
+	4. When you are ready to play, click Play Ball.
+	
+	User Settings
+	-------------
+	
+	In Baseball 3D, each player can configure their own user settings. To do so,
+	follow these steps:
+	
+	1. On the Controls screen, click User Settings in the controller selection box
+	  for your team.
+	
+	2. Under Batting, click either Basic or Advanced. If you click Advanced, you can
+	  aim your swing and move the batter in the box. Advanced batting gives you
+	  more control, but also makes it more challenging to hit the ball. If you
+	  click Basic, you only need to time your swing to hit the ball.
+	
+	3. Baseball 3D can provide computer assistance for running or throwing and
+	  fielding, and display swing selection and pitch selection menus. To configure
+	  the computer assistance options, follow these steps:
+	
+	  a. If you want computer assistance with base running, click the Running
+	     button to turn it on. If you want full control of base running, click the
+	     Running button to turn it off.
+	
+	  b. If you want computer assistance with throwing and fielding, click the
+	     Throwing/Fielding button to turn it on. If you want full control of
+	     throwing and fielding, click the Throwing/Fielding button to turn it off.
+	
+	  c. If you want to see swing and pitch selection menus, click Select
+	     Swing/Pitch Menus to turn it on. If you do not want to see swing and pitch
+	     selection menus, click Select Swing/Pitch Menus to turn it off.
+	
+	4. Click OK.
+	
+	Using Game Controllers
+	----------------------
+	
+	To open the online Player's Guide to the "Controls" topic, click Using
+	Controllers on the User Settings screen. From there you can link to Help topics
+	that contain printable tables of commands for game pads, joysticks, and
+	keyboards. Controller information is also available in the booklet inside the
+	CD-ROM jewel case.
+	
+	The tables below list the Baseball 3D commands for game pads, joysticks, and
+	keyboards.
+	
+	Game Pad:
+	
+	The direction control on the game pad is laid out like a baseball diamond, and so
+	are the game pad buttons.
+	
+	For an illustration of the game pad button and direction assignments in Baseball
+	3D, please see the Using a Game Pad topic in the online Players' Guide.
+	
+	                Game Pad    Game Pad
+	  Base          Direction   Button
+	  ----------------------------------
+	
+	  Home plate    DOWN        H
+	  First base    RIGHT       1
+	  Second base   UP          2
+	  Third base    LEFT        3
+	
+	Joystick:
+	
+	The direction control on the joystick is laid out like a baseball diamond, and
+	the joystick buttons are sequentially assigned to the bases, starting with home
+	plate for button 1.
+	
+	For an illustration of the joystick direction assignments in Baseball 3D, please
+	see the Using a Joystick topic in the online Players' Guide.
+	
+	                Joystick    Joystick
+	  Base          Direction   Button
+	  ----------------------------------
+	
+	  Home plate    BACK        1
+	  First base    RIGHT       2
+	  Second base   FORWARD     3
+	  Third base    LEFT        4
+	
+	Keyboard:
+	
+	There are three different keyboard layouts in Baseball 3D. Each set of keys is
+	configured like a baseball diamond, as are the ARROW keys. All three keyboard
+	layouts are active when you select the keyboard as your controller.
+	
+	For an illustration of the keyboard key assignments in Baseball 3D, please see
+	the Using a Keyboard topic in the online Players' Guide.
+	
+	  Base          ARROW Keys    Layout 1   Layout 2   Layout 3
+	  ----------------------------------------------------------
+	
+	  Home plate    DOWN ARROW    D          Z          K
+	  First base    RIGHT ARROW   F          X          L
+	  Second base   UP ARROW      E          C          I
+	  Third base    LEFT ARROW    S          V          J
+	
+	NOTE: The keyboard commands in the following tables are based on keyboard layout
+	1. If you want to use keyboard layout 2 or keyboard layout 3, substitute the
+	appropriate keys.
+	
+	Batting
+	-------
+	
+	Before the pitch:
+	
+	When you step up to bat, you can select the type of swing you want to use or take
+	a practice swing, and if you use advanced batting, you can change the batter's
+	position in the batting box.
+	
+	  Game Action            Game Pad       Joystick         Keyboard
+	  ----------------------------------------------------------------------
+	
+	  Select normal swing    Button H        Button 1        D key
+	
+	  Select power swing     Button 1        Button 2        F key
+	
+	  Select contact swing   Button 2        Button 3        E key
+	
+	  Move batter in box*    Control pad     Control stick   LEFT ARROW or
+	                         LEFT or RIGHT   LEFT or RIGHT   RIGHT ARROW key
+	
+	  * Advanced batting only.
+	
+	During the pitch:
+	
+	When the pitcher throws the ball, you can swing the bat, bunt, or stop your
+	swing, and if you use advanced batting, you can aim your swing.
+	
+	  Game Action     Game Pad         Joystick         Keyboard
+	  -----------------------------------------------------------------------
+	
+	  Aim swing*      Control pad      Control Stick    LEFT ARROW or
+	                  LEFT or RIGHT    LEFT or RIGHT    RIGHT ARROW key
+	                  before swing     before swing     before swing
+	
+	  Swing the bat   Press and Hold   Press and Hold   Press and Hold
+	                  Button H         Button 1         D key
+	
+	  Bunt            Press and Hold   Press and Hold   Press and Hold
+	                  Button 2         Button 3         E key
+	
+	  Check swing     Release          Release          Release D key
+	                  Button H         Button 1
+	
+	  * Advanced batting only.
+	
+	Running the Bases
+	-----------------
+	
+	The Tap command indicates that you can repeat the command several times in
+	succession.
+	
+	During the pitch:
+	
+	During the pitch, you can make your lead runner or all of your runners increase
+	lead off, steal a base, or return to base.
+	
+	  Game Action          Game Pad        Joystick        Keyboard
+	  ------------------------------------------------------------------
+	
+	  Increase lead off
+	
+	     Lead runner       Button 3 +      Button 4 +      S key +
+	                       Control pad     Control stick   ARROW key
+	                       for next base   for next base   for next base
+	
+	     All runners       Tap Button 3    Tap Button 4    Tap S key
+	
+	  Steal
+	
+	     Lead runner       Button 3 +      Button 4 +      S key +
+	                       double-move     double-move     double-press
+	                       Control pad     Control stick   ARROW key for
+	                       for next base   for next base   next base
+	
+	     All runners       Double-press    Double-press    Double-press
+	                       Button 3        Button 4        S key
+	
+	  Return
+	
+	     Lead runner       Button 1 +      Button 2 +      F key +
+	                       double-move     double-move     double-press
+	                       Control pad     Control stick   ARROW key for
+	                       for previous    for previous    previous base
+	                       base            base
+	
+	     All runners       Double-press    Double-press    Double-press
+	                       Button 1        Button 2        F key
+	
+	After the Pitch:
+	
+	After the pitch, while the ball is in play, you can make your lead runner or all
+	of your runners increase their speed, advance a base, return to their previous
+	base, or slide into a base.
+	
+	  Game Action        Game Pad        Joystick        Keyboard
+	  ----------------------------------------------------------------
+	
+	  Speed burst        Button H        Button 1        D key
+	
+	  Advance
+	
+	     Lead runner     Button 3 +      Button 4 +      S key +
+	                     Control pad     Control stick   ARROW key
+	                     for next base   for next base   for next base
+	
+	     All runners     Button 3        Button 4        S key
+	
+	  Return
+	
+	     Lead runner     Button 1 +      Button 2 +      F key +
+	                     Control pad     Control stick   ARROW key for
+	                     for previous    for previous    previous base
+	                     base            base
+	
+	     All runners     Button 1        Button 2        F key
+	
+	  Slide on advance
+	
+	     Lead runner     Button 3 +      Button 4 +      S key +
+	                     double-move     double-move     double-press
+	                     Control pad     Control stick   ARROW key for
+	                     for next base   for next base   next base
+	
+	     All runners     Double-press    Double-press    Double-press
+	                     Button 3        Button 4        S key
+	
+	  Slide on return
+	
+	     Lead runner     Button 1 +      Button 2 +      F key +
+	                     double-move     double-move     double-press
+	                     Control pad     Control stick   ARROW key for
+	                     for previous    for previous    previous base
+	                     base            base
+	
+	     All runners     Double-press    Double-press    Double-press
+	                     Button 1        Button 2        F key
+	
+	NOTE: The slide control only works when a runner is close to the target base.
+	
+	Pitching
+	--------
+	
+	Selecting a Pitch:
+	
+	Before you throw a pitch, you can select the type of pitch you want to throw.
+	
+	  Game Action      Game Pad   Joystick   Keyboard
+	  -------------------------------------------------
+	
+	  Pitch option 1   Button H   Button 1   D key
+	
+	  Pitch option 2   Button 1   Button 2   F key
+	
+	  Pitch option 3   Button 2   Button 3   E key
+	
+	  Pitch option 4   Button 3   Button 4   S key
+	
+	Ready to Pitch:
+	
+	Once you select a pitch, you can attempt to pick-off a base runner, aim and throw
+	your pitch, or apply an energy boost to your pitch.
+	
+	  Game Action         Game Pad          Joystick          Keyboard
+	  ----------------------------------------------------------------------
+	
+	  Pick-off attempt
+	
+	     First base       Button 1          Button 2          F key
+	
+	        Alternate     Control pad       Control stick     RIGHT ARROW
+	        method        RIGHT +           RIGHT +           key + S key
+	                      Button 3          Button 4
+	
+	     Second base      Button 2          Button 3          E key
+	
+	        Alternate     Control pad UP    Control stick     UP ARROW key
+	        method        + Button 3        FORWARD +         + S key
+	                                        Button 4
+	
+	     Third base       Button 3          Button 4          S key
+	
+	        Alternate     Control pad       Control stick     LEFT ARROW key
+	        method        LEFT +            LEFT +            + S key
+	                      Button 3          Button 4
+	
+	  Aim pitch           Control Pad       Control stick     LEFT ARROW or
+	                      LEFT or RIGHT     LEFT or RIGHT     RIGHT ARROW key
+	
+	  Energy boost*       Press and hold    Press and hold    Press and hold
+	                      Button H during   Button 1 during   D key during
+	                      windup            windup            windup
+	*NOTE: The longer you hold the energy boost button, the greater the effect. For
+	best results, release the button just before the pitcher releases the ball. If
+	you hold the button too long, you decrease the effectiveness of the energy
+	boost. The effect of the energy boost differs with the type of pitch. On a
+	fastball or split-fingered fastball, an energy boost increases the speed of the
+	ball. On a curve ball or screwball, an energy boost increases the spin of the
+	ball.
+	
+	Fielding
+	--------
+	
+	Before Fielding the Ball:
+	
+	When the batter hits the ball, you can select the fielder closest to the ball,
+	increase fielder speed, and run, dive, or jump for the ball.
+	
+	  Game Action                Game Pad       Joystick        Keyboard
+	  --------------------------------------------------------------------
+	
+	  Move fielder               Control pad    Control stick   ARROW keys
+	
+	  Dive for a ball            Button 3       Button 4        S key
+	
+	  Jump for a ball            Button 1       Button 2        F key
+	
+	  Speed burst                Tap Button H   Tap Button 1    Tap D key
+	
+	  Pick player nearest ball   Button 2       Button 3        E key
+	
+	After Fielding the Ball:
+	
+	When you catch the ball, you can use either a one button or two button command to
+	throw the ball to a base.
+	
+	  Game Action         Game Pad   Joystick   Keyboard
+	  --------------------------------------------------------
+	
+	  Throw to infield
+	
+	     First base       Button 1      Button 2        F key
+	
+	        (alternate)   Control pad   Control stick   RIGHT ARROW key
+	                      RIGHT +       RIGHT +         + D key
+	                      Button H      Button 1
+	
+	     Second base      Button 2      Button 3        E key
+	
+	        (alternate)   Control pad   Control stick   UP ARROW key
+	                      UP +          FORWARD +       + D key
+	                      Button H      Button 1
+	
+	     Third base       Button 3      Button 4        S key
+	
+	        (alternate)   Control pad   Control stick   LEFT ARROW key
+	                      LEFT +        LEFT +          + D key
+	                      Button H      Button 1
+	
+	     Home plate       Button H      Button 1        D key
+	
+	        (alternate)   Control pad   Control stick   DOWN ARROW key
+	                      DOWN +        BACK +          + D key
+	                      Button H      Button 1
+	
+	  NOTE: Throws from the outfield might be cut off before reaching the intended
+	  base. The catcher has one second to throw to a base after a pitch.
+	
+	After you finish a play, the player that has the ball automatically returns it to
+	the pitcher. To manually return the ball to the pitcher, tap the game pad
+	button, joystick button, or key for the base where the ball is located.
+	
+	Additional query words: 1.00 msgame base ball 3-d kbfaq
+	
+	======================================================================
+	Keywords          : kbui kbimu msgame bball3d kbfaq
+	Technology        : kbHomeProdSearch kbGamesSearch kbBaseballSearch kbBaseBall3D
+	Version           : WINDOWS:1.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

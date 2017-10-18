@@ -1,0 +1,211 @@
+---
+layout: page
+title: "Q87114: Packing List: Windows 3.1 SDK Part 1 (3.5-Inch Disks)"
+permalink: kb/087/Q87114/
+---
+
+## Q87114: Packing List: Windows 3.1 SDK Part 1 (3.5-Inch Disks)
+
+	Article: Q87114
+	Product(s): Microsoft Windows Software Development Kit
+	Version(s): 3.1
+	Operating System(s): 
+	Keyword(s): kb16bitonly
+	Last Modified: 05-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows Software Development Kit (SDK) 3.1 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The following is the packing list for the Microsoft Windows Software Development
+	Kit (SDK) version 3.1:
+	
+	  Disk 1
+	------
+	
+	  INSTALL.EXE    Setup program
+	  INSTALL.INF    Information file for Setup program
+	  README.SDK     SDK information not in online help
+	  ROBUST.TXT     Information about creating robust applications
+	  WINDOWS.TXT    Lists changes to WINDOWS.H since Windows 3.0
+	  WINDOWSX.TXT   Information on message crackers, WINDOWSX.H file
+	  README.WRI     SDK information not in online help
+	  VPROD.386      Virtual machine device driver
+	  HOOK.DLL       Hook DLL
+	  DDESPY.EXE     Displays DDE messages between applications
+	  HEAPWALK.EXE   Heap Walker application
+	  SHOWHITS.EXE   Displays data from Windows Profiler
+	  SPY.EXE        Displays messages between applications
+	  STRESS.EXE     Resource limiting utility
+	  STRESS.HLP     Resource limiting utility help file
+	  STRESS.INI     Resource limiting utility initialization file
+	  COMPRESS.EXE   File compression utility
+	  MARK.EXE       Marks files with memory and font info
+	  GDI.SYM        GDI nondebugging symbol file
+	  KRNL286.SYM    Kernel 286 nondebugging symbol file
+	  KRNL386.SYM    Kernel 386 nondebugging symbol file
+	  MMSYSTEM.SYM   Multimedia nondebugging symbol file
+	  USER.SYM       Windows user nondebugging symbol file
+	  VER.DLL        Version checking redistributable DLL
+	  SMALLF.FON     8514 small font for Windows
+	  HC.BAT         Help Compiler batch file
+	  DBWIN.DLL      Debugging DLL
+	  HC31.ERR       Help Compiler version 3.1 error file
+	  RCPP.ERR       Resource Compiler preprocessor error file
+	  DBWIN.EXE      Debugger
+	  DLGEDIT.EXE    Dialog Editor
+	  FONTEDIT.EXE   Font Editor
+	  HC30.EXE       Help Compiler version 3.0
+	  HC31.EXE       Help Compiler version 3.1
+	  IMAGEDIT.EXE   Image Editor
+	  MARKMIDI.EXE   MIDI file marker
+	  MRBC.EXE       Multiple Resolution Bitmap Compiler
+	  QH.EXE         Quick Help utility
+	  RC.EXE         Resource Compiler
+	  RCPP.EXE       Resource Compiler preprocessor
+	  SHED.EXE       Segmented Hypergraphics (hotspot) Editor
+	  ZOOMIN.EXE     Zoom utility
+	  VGASYS.FNT     VGA font file
+	  SDKTOOL1.GRP   Temporary group file for setup
+	  SDKTOOLS.GRP   Windows SDK group file
+	  DLGEDIT.HLP    Dialog Editor help file
+	  EDITHLP.HLP    Help on Help file
+	  IMAGEDIT.HLP   Image Editor help file
+	  QH.HLP         Quick Help help file
+	  SHED.HLP       Segmented Hypergraphics Editor help file
+	  MAKEFILE       SRVRDEMO sample application project file
+	  DOC.C          SRVRDEMO sample application source file
+	  FILE.C         SRVRDEMO sample application source file
+	  INI.REG        Registration initialization file
+	  WINSTUB.EXE    STUB file for Windows applications
+	
+	Disk 2
+	------
+	
+	 
+	  CVW3.EXE       CodeView for Windows version 3.07
+	  CVW3.HLP       CodeView for Windows 3.07 help file
+	  CVWIN.DLL      CodeView for Windows DLL
+	  D2N.BAT        Debugging Windows to nondebugging Windows batch file
+	  MAPSYM.EXE     Symbol file generator
+	  N2D.BAT        Nondebugging Windows to debugging Windows batch file
+	  SWITCH.BAT     Performs debugging-nondebugging conversion
+	  VCV.386        Video driver for CodeView for Windows
+	  WDEB386.EXE    Low level debugger
+	  WINDEBUG.386   Low level debugger device driver
+	  GDI.EXE        Debugging version of GDI
+	  GDI.SYM        Symbol table for debugging GDI
+	  KRNL286.EXE    Debugging version of kernel 286
+	  KRNL286.SYM    Debugging kernel 286 symbol table
+	  KRNL386.EXE    Debugging version of kernel 386
+	  KRNL386.SYM    Debugging kernel 386 symbol table
+	  MMSYSTEM.DLL   Debugging version of multimedia DLL
+	  MMSYSTEM.SYM   Debugging multimedia DLL symbols table
+	  USER.EXE       Debugging version of user
+	  USER.SYM       Debugging user symbol table
+	  RAINBOW.C      RAINBOW sample program
+	
+	Disk 3
+	------
+	
+	
+	  STRESS.DLL     Resource limiting DLL
+	  STRESSHK.DLL   Resource limiting DLL component
+	  STRESSLG.DLL   Resource limiting DLL component
+	  CDERR.H        Common dialog box DLL error codes
+	  CMACROS.INC    Assembly language macros for Windows
+	  COLORDLG.H     Common dialog box DLL color ID numbers
+	  COMMDLG.H      Common dialog box DLL header file
+	  CPL.H          Control Panel DLL extensions
+	  CUSTCNTL.H     Custom control library header file
+	  DDE.H          Dynamic data exchange header file
+	  DDEML.H        Dynamic Data Exchange Management Library header file
+	  DLGS.H         Common dialog box DLL member ID numbers
+	  DRIVINIT.H     Obsolete header file
+	  LZDOS.H        Obsolete header file
+	  LZEXPAND.H     Data decompression DLL header file
+	  MMSYSTEM.H     Multimedia header file
+	  MMSYSTEM.INC   Multimedia header file for assembly language
+	  OLE.H          Object linking and embedding header file
+	  PENWIN.H       Pen Windows functions header file
+	  PENWOEM.H      Pen Windows Recognizer function header file
+	  PRINT.H        Printing helper functions header file
+	  SCRNSAVE.H     Screen saver header file
+	  SHELLAPI.H     Shell DLL header file
+	  STRESS.H       Resource limiting test DLL header file
+	  TOOLHELP.H     Tool Helper DLL header file
+	  TOOLHELP.INC   Tool Helper DLL header file for assembly language
+	  VER.H          Version checking DLL header file
+	  WFEXT.H        File Manager extensions header file
+	  WINDOWS.H      Windows functions header file
+	  WINDOWSX.H     Message cracker header file
+	  WINMEM32.H     Windows 32-bit API header file
+	  COMMDLG.DAN    Common dialogs DLL Danish
+	  COMMDLG.DLL    Common dialogs DLL US
+	  COMMDLG.DUT    Common dialogs DLL Dutch
+	  COMMDLG.FIN    Common dialogs DLL Finnish
+	  COMMDLG.FRN    Common dialogs DLL French
+	  COMMDLG.GER    Common dialogs DLL German
+	  COMMDLG.ITN    Common dialogs DLL Italian
+	  COMMDLG.NOR    Common dialogs DLL Norwegian
+	  COMMDLG.POR    Common dialogs DLL Portuguese
+	  COMMDLG.SPA    Common dialogs DLL Spanish
+	  COMMDLG.SWE    Common dialogs DLL Swedish
+	  DDEML.DLL      Dynamic Data Exchange Management Library
+	  DIB.DRV        Device independent bitmap driver
+	  EXPAND.EXE     File decompression utility
+	  LZEXPAND.EXE   Data decompression utility
+	  MCIPIONR.DRV   Laser disk device driver
+	  OEMSETUP.INF   Media Control Interface setup information file
+	  OLECLI.DLL     Object linking and embedding client DLL
+	  OLESVR.DLL     Object linking and embedding server DLL
+	  PENWIN.DLL     Windows for Pen Computing DLL
+	  REGLOAD.EXE    Registration file loader
+	  SMALLB.FON     VGA small font for Windows
+	  SMALLE.FON     EGA small font for Windows
+	  TOOLHELP.DLL   Tool Helper DLL
+	  VTD.386        Virtual timing device driver
+	  WINHELP.EXE    Windows Help application
+	  WINMEM32.DLL   32-bit memory API DLL
+	  RAINBOW.DLL    Custom control DLL
+	  MAKEFILE       Sample project file
+	  COMMDLG.LIB    Common dialog box static Library
+	  DDEML.LIB      Dynamic Data Exchange Management Library (static)
+	  LIBENTRY.ASM   DLL entry source code
+	  LIBENTRY.OBJ   DLL entry object code
+	  LIBW.LIB       Windows API library
+	  LZEXPAND.LIB   Data decompression static library
+	  LZEXPC.LIB     Data decompression library compact model extensions
+	  LZEXPL.LIB     Data decompression library large model extensions
+	  LZEXPM.LIB     Data decompression library medium model extensions
+	  LZEXPS.LIB     Data decompression library small model extensions
+	  MMSYSTEM.LIB   Multimedia API static library
+	  OLECLI.LIB     Object linking and embedding client static library
+	  OLESVR.LIB     Object linking and embedding server static library
+	  PENWIN.LIB     Windows for Pen Computing static library
+	  SCRNSAVE.LIB   Screen saver extensions static library
+	  SHELL.LIB      Shell static library
+	  STRESS.LIB     Resource limiting DLL static library
+	  TOOLHELP.LIB   Tool Helper static library
+	  VER.LIB        Version checking DLL static library
+	  VERC.LIB       Version checking DLL compact model extension
+	  VERL.LIB       Version checking DLL large model extension
+	  VERM.LIB       Version checking DLL medium model extension
+	  VERS.LIB       Version checking DLL small model extension
+	  WIN87EM.LIB    Coprocessor library
+	  WINMEM32.LIB   Windows 32-bit API static library
+	
+	Additional query words: no32bit 3.10
+	
+	======================================================================
+	Keywords          : kb16bitonly 
+	Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+	Version           : :3.1
+	
+	=============================================================================
+	

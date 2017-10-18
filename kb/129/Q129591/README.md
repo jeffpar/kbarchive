@@ -1,0 +1,73 @@
+---
+layout: page
+title: "Q129591: MAC Bookshelf 1994: CloseView Control Panel Freezes System"
+permalink: kb/129/Q129591/
+---
+
+## Q129591: MAC Bookshelf 1994: CloseView Control Panel Freezes System
+
+	Article: Q129591
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): MACINTOSH:1.0,1.0a,2.0; :1.0,1993, 1994, 1995, 1996-1997 editions,1994 edition,1995 edi
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 08-NOV-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Ancient Lands for the Macintosh, version 1.0 
+	- Microsoft Art Gallery for the Macintosh, version 1.0 
+	- Microsoft Bookshelf for the Macintosh 1993, 1994, 1995, 1996-1997 editions 
+	- Microsoft Cinemania for the Macintosh versions 1994 edition, 1995 edition, 1996 edition, 1997 edition 
+	- Microsoft Dangerous Creatures for the Macintosh, version 1.0 
+	- Microsoft Dinosaurs for the Macintosh 1.0 
+	- Microsoft Encarta 1994 The Complete Multimedia Encyclopedia 
+	- Microsoft Encarta 95 The Complete Interactive Multimedia Encyclopedia for Macintosh 
+	- Microsoft Encarta 96 Encyclopedia for Macintosh 
+	- Microsoft Encarta 97 Encyclopedia for Macintosh 
+	- Microsoft Isaac Asimov's The Ultimate Robot for the Macintosh, version 1.0 
+	- Microsoft Musical Instruments for the Macintosh, version 1.0 
+	- Microsoft Music Central for the Macintosh, 1996, 1997 editions 
+	- Microsoft The Ultimate Frank Lloyd Wright for the Macintosh, version 1.0 
+	- Microsoft Wine Guide for the Macintosh, versions 1.0, 1.0a, 2.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If you run the programs listed at the top of this article while running the
+	Apple control panel CloseView, your computer may stop responding (hang). This
+	problem has been confirmed with System versions 7.1 and 7.5.
+	
+	RESOLUTION
+	==========
+	
+	To avoid this problem, do the following before starting the application:
+	
+	1. Remove the CloseView control panel from the System folder.
+	
+	2. Restart the machine.
+	
+	  NOTE: To restart your Macintosh after it has hung, turn it off using the power
+	  switch, wait 10 to 15 seconds, and then restart the system.
+	
+	MORE INFORMATION
+	================
+	
+	CloseView is a product of Apple Computer, Inc. For more information about
+	CloseView, call Apple technical support at (800) SOS-APPL.
+	
+	CloseView is manufactured by a vendor independent of Microsoft; we make no
+	warranty, implied or otherwise, regarding this product's performance or
+	reliability.
+	
+	Additional query words: mac 1994multi media multimedia multi-media mmtitles kbmm locks locked freezes lockup up
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbHWMAC kbOSMAC kbHomeProdSearch _IKkbbogus kbHomeMMsearch kbEncartaSearch kbGamesSearch kbZNotKeyword kbBookshelfSearch kbEncartaEncycSearch kbCineManiaSearch kbAncientLandsMac kbAsimovSearch kbCinemania1994Mac kbCinemania1995Mac kbCinemania1996Mac kbCinemania1997Mac kbDangerousCreaturesMac kbDinosaurs100Mac kbAsimovUltimateRobotMac kbMusicCentralMacSearch kbMusicalInstMac kbUltimateFLWMac kbWine100Mac kbWine100aMac kbWine200Mac kbArtGalleryMac kbEncartaEnCyc1994 kbEncartaEnCyc1995Mac kbEncartaEnCyc1996Mac kbEncartaEnCyc1997Mac kbMusicCentralMac1996
+	Version           : MACINTOSH:1.0,1.0a,2.0; :1.0,1993, 1994, 1995, 1996-1997 editions,1994 edition,1995 edition,1996 edition,1997 edition
+	
+	=============================================================================
+	

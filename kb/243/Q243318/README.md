@@ -1,0 +1,155 @@
+---
+layout: page
+title: "Q243318: How to Use Dh.exe to Troubleshoot User-Mode Memory Leaks"
+permalink: kb/243/Q243318/
+---
+
+## Q243318: How to Use Dh.exe to Troubleshoot User-Mode Memory Leaks
+
+	Article: Q243318
+	Product(s): Microsoft Windows NT
+	Version(s): winnt:4.0
+	Operating System(s): 
+	Keyword(s): kbtool kbtshoot
+	Last Modified: 11-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 4.0 
+	- Microsoft Windows NT Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+	
+	  Q256986 Description of the Microsoft Windows Registry
+	
+	SUMMARY
+	=======
+	
+	This article describes how to set up and use the Display Heap tool (Dh.exe) to
+	troubleshoot User-mode memory leaks in processes and services.
+	
+	
+	MORE INFORMATION
+	================
+	
+	WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+	that may require you to reinstall your operating system. Microsoft cannot
+	guarantee that you can solve problems that result from using Registry Editor
+	incorrectly. Use Registry Editor at your own risk.
+	
+	Dh.exe is a character-mode tool for displaying information about heap allocations
+	in a process, or pool usage in Kernel-mode memory. The use of Dh.exe for
+	troubleshooting Kernel-mode leaks is beyond the scope of this article.
+	
+	When the heap-tracking global flags are set in the registry, a database is
+	created at system startup that contains real-time information about memory
+	allocation activities. At the instant that an allocation or a free is performed,
+	a snapshot of the current thread's stack is recorded and stored in the database.
+	You can use this information to identify the cause of a memory leak.
+	
+	To enable allocation tracking:
+	
+	1. Start Registry Editor (Regedt32.exe).
+	
+	2. Locate the GlobalFlag value under the following key in the registry:
+	
+	  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager
+	
+	3. On the Edit menu, click DWORD, type "23000" (without the quotation marks),
+	  and then click OK. This value sets the following bits in the global flag:
+	
+	  Create user mode stack trace DB
+	  Create kernel mode stack trace DB
+	  Enable Debugging of Win32 Subsystem
+	
+	4. Quit Registry Editor.
+	
+	5. Install the debug symbols in the %SystemRoot%\Symbols folder.
+	
+	For additional information about how to install debug symbols, click the article
+	number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q141465 How to Install Symbols for Dr. Watson Error Debugging
+	
+	6. Rename the original Ntdll.dll file to Ntdll.fre. This is best done across the
+	  network or from a parallel install of Windows NT to prevent sharing
+	  violations.
+	
+	7. Copy the checked version of the Ntdll.dll to the %SystemRoot%\System32
+	  folder.
+	
+	8. Copy the checked version of the Ntdll debug symbol file (Ntdll.dbg) to the
+	  %SystemRoot%\Symbols\DLL folder.
+	
+	9. Shut down and restart the computer to allow the changes to take effect.
+	
+	10. Create a batch file named Dhsnap.bat in the folder in which Dh.exe is
+	  located. The batch file should contain the lines in the sample file listed
+	  below:
+	
+	  @echo on
+	  set _NT_SYMBOL_PATH=%SystemRoot%\Symbols
+	  dh.exe -p %1 -m -l -s -g -h
+	
+	After you follow the steps listed above, the system is ready for allocation
+	tracking. You can use Dh.exe to extract the data from the allocation database
+	after the leak begins:
+	
+	1. Identify the process ID (PID) of the process that you are troubleshooting
+	  (the target process). You can do this by running Tlist.exe from the Windows
+	  NT 4.0 Resource Kit.
+	
+	  NOTE: If Tlist.exe is not available, you can obtain the PID by pressing
+	  CTRL+ALT+DELETE, clicking Task Manager, clicking the Processes tab, and
+	  locating the PID of the target process in the list.
+	
+	2. It may be necessary to give the current user "All Access" permissions to the
+	  target process if the process has special security settings. You can do this
+	  with the Pview.exe tool included with the Windows NT 4.0 Resource Kit. Run
+	  Pview.exe and click the target process. Click Process Security to activate
+	  the Security dialog box. Add the current user to the list and give that user
+	  "All Access" permissions. Click OK to apply the changes. Quit Pview.exe.
+	
+	  NOTE: Pview.exe settings are volatile and are reset to the defaults when you
+	  restart the system.
+	
+	3. To generate the Dh.exe log data, run the batch file you created above against
+	  the PID of the target process from a command prompt. If you do not specify
+	  the PID, an error message is displayed.
+	
+	  For example, the following command generates a Dh.exe dump of process 116:
+	
+	  C:\NTRESKIT>dh.exe -p 116 -m -l -s -g -h
+	  DH: Writing dump output to C:\NTRESKIT\DH_116.dmp
+	
+	The log file generated by Dh.exe is a text file that contains heap tracking
+	information for the targeted process. For each heap, all call stacks that
+	resulted in a memory allocation (and do not have a correlating free) are
+	recorded in the "Heap Hogs" section. Call stacks charged with the greatest
+	allocations are at the top and decrease down the log. Note that steady state
+	should be considered (meaning that some code may not return memory for days by
+	design). Leaks are usually obvious from the log and they are always at the top.
+	After you locate the problem call stack, examine the source for each function
+	within the call stack until you find the leak.
+	
+	REFERENCES
+	==========
+	
+	The utilities mentioned in this article (Dh.exe, Pview.exe, and Tlist.exe) are
+	available with Windows NT 4.0 Resource Kit Supplement 2 or later.
+	
+	Checked builds of the Ntdll.dll and Ntdll.dbg files are available in Microsoft
+	Developer Network (MSDN).
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbtool kbtshoot 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+	Version           : winnt:4.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

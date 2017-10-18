@@ -1,0 +1,98 @@
+---
+layout: page
+title: "Q275020: SMB Signing May Become Unsynchronized"
+permalink: kb/275/Q275020/
+---
+
+## Q275020: SMB Signing May Become Unsynchronized
+
+	Article: Q275020
+	Product(s): Microsoft Windows NT
+	Version(s): 4.0,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
+	Operating System(s): 
+	Keyword(s): kbWinNT400PreSP7Fix
+	Last Modified: 08-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation versions 4.0, 4.0 SP4, 4.0 SP5, 4.0 SP6, 4.0 SP6a 
+	- Microsoft Windows NT Server versions 4.0, 4.0 SP4, 4.0 SP5, 4.0 SP6, 4.0 SP6a 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When a session is established from a workstation to a server, and server message
+	block (SMB) signing is enabled, the signatures may become out of synchronization
+	and cause all subsequent requests that are sent by the workstation to be
+	rejected by the server. This is more likely to occur if the workstation and
+	server are separated by a slow WAN link.
+	
+	CAUSE
+	=====
+	
+	This behavior occurs only if there is an active SMB session established to the
+	same server to which the workstation is trying to connect. If the workstation
+	sends an SMB from the other session while the SMB session setup for the new
+	session is outstanding, the signature count on the server may become out of
+	synchronization with the signature count on the workstation. This results in all
+	subsequent SMB commands that are sent to the server being rejected. All
+	responses after this point are returned to the workstation with a status of
+	"ACCESS_DENIED."
+	
+	RESOLUTION
+	==========
+	
+	A supported fix is now available from Microsoft, but it is only intended to
+	correct the problem described in this article and should be applied only to
+	systems experiencing this specific problem.
+	
+	To resolve this problem, contact Microsoft Product Support Services to obtain the
+	fix. For a complete list of Microsoft Product Support Services phone numbers and
+	information on support costs, please go to the following address on the World
+	Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	NOTE: In special cases, charges that are normally incurred for support calls may
+	be canceled, if a Microsoft Support Professional determines that a specific
+	update will resolve your problem. Normal support costs will apply to additional
+	support questions and issues that do not qualify for the specific update in
+	question.
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	Date        Time     Version       Size     File name  Platform
+	------------------------------------------------------------------
+	03/01/2001  11:12pm  4.0.1381.7086  266,224  Rdr.sys    Intel
+	
+	
+	
+	To resolve this problem, obtain the individual package referenced earlier, or
+	obtain the Windows NT 4.0 Security Rollup Package. For additional information
+	about the Security Rollup Package, click the article number below to view the
+	article in the Microsoft Knowledge Base:
+	
+	  Q299444 Post-Windows NT 4.0 Service Pack 6a Security Rollup Package (SRP)
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products that are
+	listed at the beginning of this article.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbWinNT400PreSP7Fix 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTW400sp5 kbWinNTW400sp4 kbWinNTSsearch kbWinNTS400sp6 kbWinNTS400sp5 kbWinNTS400sp4 kbWinNTS400search kbWinNTS400 kbWinNTW400sp6 kbWinNTW400SP6a
+	Version           : :4.0,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
+	Hardware          : ALPHA x86
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

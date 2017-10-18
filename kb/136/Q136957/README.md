@@ -1,0 +1,201 @@
+---
+layout: page
+title: "Q136957: PC MAPI: How to Find a Currently Logged on User"
+permalink: kb/136/Q136957/
+---
+
+## Q136957: PC MAPI: How to Find a Currently Logged on User
+
+	Article: Q136957
+	Product(s): Microsoft Mail For PC Networks
+	Version(s): WINDOWS:3.0,3.2,3.5
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 29-OCT-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Mail for PC Networks, versions 3.0, 3.2, 3.5 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	By using a Simple Messaging Application Programming Interface (MAPI)
+	application, you can find a user that is currently logged on to Microsoft Mail.
+	The following code illustrates one way that this can be done using Microsoft
+	Visual C++ version 1.5 or any other C compiler.
+	
+	MORE INFORMATION
+	================
+	
+	NOTE: The following code implements MAPI.DLL as a static library.
+	
+	  /* WHOAMI.C  */ 
+	
+	  #include <stdio.h>
+	  #include <stdlib.h>
+	  #include <windows.h>
+	  #include <mapi.h>
+	  #include <string.h>
+	
+	  int WhoAmI();
+	
+	  long err;
+	  LHANDLE lhSession;
+	
+	  MapiRecipDesc recip[1];
+	  lpMapiMessage FAR *lppMessage;
+	  lpMapiMessage lpMessage;
+	  char szSeedMessageID[512];
+	  char szMessageID[512];
+	  char szbuffer[80];
+	
+	  LPSTR lpszSeedMessageID=&szSeedMessageID[0];
+	  LPSTR lpszMessageID=&szMessageID[0];
+	
+	  MapiMessage note;
+	
+	  int main()
+	  {
+	
+	   WhoAmI();
+	
+	   return(0);
+	  }
+	
+	  int WhoAmI()
+	  {
+	    char szMsg1[80];
+	    char szMsg2[80];
+	
+	    recip[0].ulReserved = 0;
+	    recip[0].ulRecipClass = MAPI_TO;
+	    recip[0].lpszName = "Anybody";
+	    recip[0].lpszAddress = NULL;
+	    recip[0].ulEIDSize = 0;
+	    recip[0].lpEntryID = NULL;
+	
+	    note.ulReserved = 0;
+	    note.lpszSubject = "WhoAmI message";
+	    note.lpszNoteText = "Test";
+	    note.lpszMessageType = "IPC.WhoAmI.Note";
+	    note.lpszDateReceived = NULL;
+	    note.lpszConversationID = NULL;
+	    note.flFlags = 0;
+	    note.lpOriginator = 0;
+	    note.nFileCount = 0;
+	    note.lpFiles = NULL;
+	    note.nRecipCount = 1;
+	    note.lpRecips = recip;
+	
+	    strcpy(szMsg1, "Logged in user name:  ");
+	    strcpy(szMsg2, "Logged in user address:  ");
+	
+	    /************  Logon  **********************/ 
+	    err = MAPILogon(0L, "", "", MAPI_LOGON_UI, 0L,
+	    &lhSession);
+	    if(err != SUCCESS_SUCCESS)
+	    {
+	       MessageBox(0, "Error logging on", "Error", MB_OK);
+	       return(0);
+	    }
+	
+	    /*********** Save Message ******************/ 
+	    err = MAPISaveMail(lhSession, 0L, &note, 0L, 0L, "");
+	    if(err != SUCCESS_SUCCESS)
+	   {
+	      MessageBox(0, "Error saving message", "Error",
+	      MB_OK);
+	      err = MAPILogoff(lhSession, 0L, 0L, 0L);
+	      return(0);
+	    }
+	
+	    /********* Find Message ********************/ 
+	    *lpszSeedMessageID = '\0';
+	
+	    // reset MAPIFindNext back to the top again
+	    err = MAPIFindNext(lhSession, 0L, "IPC.WhoAmI.Note",
+	    lpszSeedMessageID, 0L, 0L, lpszMessageID);
+	
+	    do
+	    {
+	      err = MAPIFindNext(lhSession, 0L, "IPC.WhoAmI.Note",
+	      lpszSeedMessageID, 0L, 0L, lpszMessageID);
+	      if(err != SUCCESS_SUCCESS)
+	      {
+	        MessageBox(0, "Error finding message", "Error",
+	        MB_OK);
+	        err = MAPILogoff(lhSession, 0L, 0L, 0L);
+	        return(0);
+	      }
+	      lppMessage=(lpMapiMessage FAR *) &lpMessage;
+	
+	      /******** Read Message *************/ 
+	      err = MAPIReadMail(lhSession, 0L, lpszMessageID,
+	      MAPI_PEEK, 0L, lppMessage);
+	      if(err != SUCCESS_SUCCESS)
+	      {
+	        MessageBox(0, "Error during message read", "Error",
+	        MB_OK);
+	        err = MAPILogoff(lhSession, 0L, 0L, 0L);
+	        return(0);
+	      }
+	
+	      /* copy the user data into the buffers */ 
+	      _fstrcpy(szbuffer, lpMessage->lpszMessageType);
+	
+	      /* Message Types compare               */ 
+	      if(strcmp(szbuffer,"IPC.WhoAmI.Note") == 0)
+	      {
+	        _fstrcpy(szbuffer, lpMessage->lpOriginator->
+	        lpszName);
+	        strcat(szMsg1, szbuffer);
+	        MessageBox(0, szMsg1, "Currently logged in user",
+	        MB_OK);
+	        _fstrcpy(szbuffer, lpMessage->lpOriginator->
+	        lpszAddress);
+	        strcat(szMsg2, szbuffer);
+	        MessageBox(0, szMsg2, "Currently logged in user
+	        address", MB_OK);
+	
+	      /* Delete the message since we are done with it */ 
+	        err = MAPIDeleteMail(lhSession, 0L, lpszMessageID,
+	        0L, 0L);
+	        if(err != SUCCESS_SUCCESS)
+	        {
+	          MessageBox(0, "Error deleting message", "Error",
+	          MB_OK);
+	        }
+	
+	        err = MAPIFreeBuffer(lpMessage);
+	        if(err != SUCCESS_SUCCESS)
+	        {
+	          MessageBox(0, "Error freeing memory", "Error",
+	          MB_OK);
+	        }
+	        err = MAPILogoff(lhSession, 0L, 0L, 0L);
+	        return(0);
+	      }
+	      //if necessary, get next message ID.
+	      lstrcpy(lpszSeedMessageID, lpszMessageID);
+	
+	    }while(err == SUCCESS_SUCCESS);
+	
+	   /************** Logoff  ***************/ 
+	    err = MAPILogoff(lhSession, 0L, 0L, 0L);
+	
+	    return(0);
+	   //End whoami function
+	  }
+	
+	Additional query words: 3.00 3.20 3.20a 3.50
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN300 kbMailPCN350
+	Version           : WINDOWS:3.0,3.2,3.5
+	
+	=============================================================================
+	

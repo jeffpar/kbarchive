@@ -1,0 +1,212 @@
+---
+layout: page
+title: "Q162793: How to Set Up KiXtart Logon Scripts for a Windows 95 Client"
+permalink: kb/162/Q162793/
+---
+
+## Q162793: How to Set Up KiXtart Logon Scripts for a Windows 95 Client
+
+	Article: Q162793
+	Product(s): Windows for Workgroups and Windows NT Networking Issues
+	Version(s): 4.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 31-JAN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 4.0 
+	- Microsoft Windows 95 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes how to set up Windows 95 Clients for use with KiXtart
+	logon scripts. What follows is an example that uses the most commonly requested
+	KiXtart functions.
+	
+	The version of KiXtart supplied with the Windows NT 4.0 Resource Kit is 3.21. To
+	obtain a newer version of KiXtart, please refer to the following Kixtart Web
+	site:
+	
+	  http://www.kixtart.org
+	
+	MORE INFORMATION
+	================
+	
+	1. Use User Manager to create a new user with the Username of USER.
+	
+	2. Enter the file name Script1.bat in the Logon Script Name dialog box.
+	
+	3. Using a text editor such as Notepad, create Script1.bat with the following
+	  contents:
+	
+	     @ECHO OFF
+	     Z:\kix32.exe script1.scr
+	     EXIT
+	
+	4. Using a text editor such as Notepad, create Script1.scr with the following
+	  contents:
+	
+	     ? "Setting DOS variables..."
+	     SHELL "winset.exe USERNAME=@USERID"
+	     SHELL "Winset.exe ADDRESS=@ADDRESS"
+	     SHELL "Winset.exe COMPUTER=@WKSTA"
+	     SHELL "Winset.exe DOMAIN=@DOMAIN"
+	     SHELL "Winset.exe COMMENT=@COMMENT"
+	     SHELL "Winset.exe FULLNAME=@FULLNAME"
+	     SHELL "Winset.exe HOMEDIR=@HOMEDIR"
+	     SHELL "Winset.exe HOMESHR=@HOMESHR"
+	     SHELL "Winset.exe LSERVER=@LSERVER"
+	     SHELL "Winset.exe PRIV=@PRIV"
+	     ? "Done."
+	     Call Macro.bat
+	     EXIT
+	
+	5. Using a text editor such as Notepad, create Macro.bat with the following
+	  contents:
+	
+	     SHELL "winset.exe USERNAME=@USERID"
+	     BREAK ON         ;(re)set Ctrl-C/Break handling
+	     COLOR r+/n
+	     SMALL
+	     ? "USER INFORMATION"
+	     ?
+	     AT (4,4)
+	     "HI, @userid"
+	     ?
+	     AT (6,4)
+	     @FULLNAME        ;full name of current user
+	     ?
+	     AT (8,4)
+	     @COMMENT         ;user comment in User Manager
+	     ?
+	     SLEEP 10
+	     CLS
+	     ?
+	     COLOR g+/n
+	     ? "WHAT TIME IS IT?"
+	     ?
+	     ? @DAY", " @DATE
+	     ?
+	     ? @TIME
+	     ?
+	     ? "This is the " @WDAYNO "the day of the week"
+	     ?
+	     ? "This is day Number " @YDAYNO " of " @YEAR
+	     ?
+	     ? "This is Day Number " @MDAYNO " of Month Number " @MONTHNO
+	     ?
+	     ? @MONTH ", " @YEAR
+	     ?
+	     SLEEP 10
+	     CLS
+	     ?
+	     ?
+	     COLOR m+/n
+	     ? "COMPUTER INFORMATION"
+	     ?
+	     ? "MAC Address of your Network Card:"
+	     ? @ADDRESS
+	     ?
+	     ? "Netbios Computer Name:"
+	     ? @WKSTA
+	     ?
+	     ? "Version of Windows You are Running:"
+	     ? "1 = Windows NT,     2 = Windows 95"
+	     ? @INWIN
+	     ?
+	     ? "Your Operating System's Version Number:"
+	     ? @DOS
+	     ?
+	     SLEEP 10
+	     CLS
+	     ?
+	     ?
+	     COLOR c+/n
+	     ? "NETWORK INFORMATION"
+	     ?
+	     ? "Logon Domain Name:"
+	     ? @DOMAIN
+	     ?
+	     ? "Home Directory Location:"
+	     ? @HOMESHR "\" @HOMEDIR
+	     ?
+	     ? "Directory Where Network Software Resides:"
+	     ? @LANROOT
+	     ?
+	     SLEEP 10
+	     CLS
+	     ?
+	     COLOR y+/n
+	     ? "Logon Server:"
+	     ? @LSERVER ;logon server
+	     ?
+	     ? "Drive That is Redirected to \\logonserver\NETLOGON:"
+	     ? @LDRIVE
+	     ?
+	     ? "Network Software Version:"
+	     ? @LM
+	     ?
+	     ? "Your Password is " @PWAGE " Days Old."
+	     ? "The Maximum Password Age is " @MAXPWAGE " Days."
+	     ? "You Are Logged on With " @PRIV " Privileges."
+	     ?
+	     SLEEP 10
+	     CLS
+	     ?
+	     ?
+	     If INGROUP("Domain Admins")
+	     DISPLAY "Z:\Admins.txt"
+	     ELSE
+	     DISPLAY "Z:\Users.txt"
+	     ENDIF
+	     SLEEP 3
+	     ?
+	     COLOR b+/n
+	     ? "Thank you for Test Driving Version " @KIX " of..."
+	     BIG
+	     ? "KiXtart!!"
+	     sleep 4
+	     SMALL
+	     MESSAGEBOX ("This Concludes This Test of the KiXtart Logon Script!",
+	        "KiXtart", 0)
+	     EXIT
+	
+	6. Using a text editor such as Notepad, create Admins.txt with the following
+	  contents:
+	
+	  This is from the Admins.txt file.
+	
+	7. Using a text editor such as Notepad, create "Users.txt" with the following
+	  contents:
+	
+	  This is from the Users.txt file.
+	
+	8. Place the following files in the NETLOGON share of every domain controller:
+	
+	  Kix32.exe (Located on the Windows NT 4.0 Resource Kit CD-ROM)
+	  KIX32.DLL (Located on the Windows NT 4.0 Resource Kit CD-ROM)
+	  KIX16.DLL (Located on the Windows NT 4.0 Resource Kit CD-ROM)
+	  MSVCRT.DLL (Located on the Windows NT 4.0 CD-ROM)
+	  WINSET.EXE (Located on the Windows 95 CD-ROM)
+	  SCRIPT1.BAT (The file listed above in step 3)
+	  SCRIPT1.SCR (The file listed above in step 4)
+	  MACRO.BAT (The batch file called by Script1.scr)
+	  ADMINS.TXT
+	  USERS.TXT
+	
+	9. Log on as FRED from the Windows 95 Client. The KiXtart script should now run.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWin95search kbZNotKeyword3
+	Version           : :4.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

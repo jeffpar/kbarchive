@@ -1,0 +1,117 @@
+---
+layout: page
+title: "Q276015: Windows Services for UNIX 2.0 NFS Case Control"
+permalink: kb/276/Q276015/
+---
+
+## Q276015: Windows Services for UNIX 2.0 NFS Case Control
+
+	Article: Q276015
+	Product(s): Microsoft Windows NT
+	Version(s): 2.0
+	Operating System(s): 
+	Keyword(s): kbfile w2000site
+	Last Modified: 11-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows Services for UNIX, version 2.0 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+	
+	  Q256986 Description of the Microsoft Windows Registry
+	
+	SUMMARY
+	=======
+	
+	In Microsoft Windows Services for UNIX 1.0, you can change the way that a case
+	is presented to an NFS client after mounting a file system by using menu
+	commands. When you use Windows Services for UNIX 2.0, you must modify the
+	registry to do this.
+	
+	MORE INFORMATION
+	================
+	
+	Windows Services for UNIX 1.0 has the following commands in Advanced Server
+	Options:
+	
+	- NTFS Case - Upper, Lower, and Ignore
+	
+	- FAT Case - Upper, Lower, and Ignore
+	
+	- CDFS Case - Upper, Lower, and Ignore
+	
+	Although these menu commands are not available in Windows Services for UNIX 2.0,
+	you can use these settings by modifying the registry.
+	
+	WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+	that may require you to reinstall your operating system. Microsoft cannot
+	guarantee that you can solve problems that result from using Registry Editor
+	incorrectly. Use Registry Editor at your own risk.
+	To use these settings, locate the following registry key:
+	
+	  HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NfsSvr\Parameters
+	
+	You can use any of the following registry values:
+	
+	  
+	
+	  Value name: NtfsCase
+	  Value type: REG_DWORD
+	  Value data: 0 - ignore
+	           1 - lowercase
+	           2 - uppercase
+	           (default=0)
+	
+	  Value name: FatCase
+	  Value type: REG_DWORD
+	  Value data: 0 - ignore
+	           1 - lowercase
+	           2 - uppercase
+	           (default=0)
+	
+	  Value name: CdfsCase
+	  Value type: REG_DWORD
+	  Value data: 0 - ignore
+	           1 - lowercase
+	           2 - uppercase
+	           (default=0)
+	
+	  Value Name:  CaseSensitive
+	  Value type:  REG_DWORD
+	  Value data:  1 - enable case sensitivity. (Default)
+	            0 - ignore case on mounts, directories and files
+	
+	The following example describes the effect of these settings and assumes that
+	Windows 2000 is using an NFS server to share the Test.txt file:
+	
+	- If you set the case value to zero (0), the UNIX client can view the file, and
+	  it is title capitalized (Test.txt).
+	
+	- If you set the case values to one (1), the UNIX client can view the file, but
+	  the file name is in all lowercase letters (test.txt).
+	
+	- If you set the case value to two (2), the client can view the file, but the
+	  file name is in all uppercase letters (TEST.TXT).
+	
+	The CaseSensitive value controls whether mounts, directories and file names are
+	case sensitive. If a UNIX computer or other NFS client attempts to copy files to
+	a directory named "Xxxxx" but uses an incorrect case, a "Not a directory" error
+	message is returned. Changing this value to 0 enables the NFS client to copy
+	files to that directory. This also prevents generation of more than one file
+	with the same name, but with a different case. For example, XyZZy is not the
+	same file as xyzzy when CaseSensitive is enabled. When you set CaseSensitive to
+	0, they would address the same file.
+	
+	Additional query words: sfu sensitivity sensitive
+	
+	======================================================================
+	Keywords          : kbfile w2000site 
+	Technology        : kbWinServiceUNIX200 kbWinServiceUNIXSearch
+	Version           : :2.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

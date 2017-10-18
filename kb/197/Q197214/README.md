@@ -1,0 +1,230 @@
+---
+layout: page
+title: "Q197214: WD97:Creating Template with First Page or Odd/Even Header/Footer"
+permalink: kb/197/Q197214/
+---
+
+## Q197214: WD97:Creating Template with First Page or Odd/Even Header/Footer
+
+	Article: Q197214
+	Product(s): Word 97 for Windows
+	Version(s): WINDOWS:97
+	Operating System(s): 
+	Keyword(s): kbdta word97 kblayout
+	Last Modified: 14-NOV-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	
+	SUMMARY
+	=======
+	
+	This article contains the necessary steps to create a one-page Word template
+	that contains:
+	
+	- A different first page header and footer
+	
+	  -or-
+	
+	- A different odd and even page header and footer
+	
+	  -or-
+	
+	- A different first page header and footer with different odd and even page
+	  headers and footers
+	
+	MORE INFORMATION
+	================
+	
+	Use one of the following methods appropriate for your situation:
+	
+	Method 1: Different First Page Header and Footer
+	------------------------------------------------
+	
+	To create a template with a different first page header and footer, follow these
+	steps:
+	
+	1. Create a new Word document by clicking New on the Standard toolbar.
+	
+	2. Insert a Page Break by pressing CTRL+ENTER once.
+	
+	  This will create a two-page document.
+	
+	3. Position the insertion point on page one by pressing CTRL+HOME.
+	
+	4. On the View menu, click Header And Footer.
+	
+	5. Click the Page Setup button on the Header And Footer toolbar.
+	
+	6. Click the Layout tab.
+	
+	7. Select the "Different First Page" option. From the Section Start list, select
+	  New Page, and then click OK.
+	
+	8. Use the following steps to create the Headers and Footers:
+	
+	  a. Create the first page header in the First Page Header area.
+	
+	  b. Click the "Switch Between Header and Footer" button on the Header And
+	     Footer toolbar to position the insertion point in the First Page Footer
+	     area.
+	
+	  c. Create the first page footer.
+	
+	  d. Press PAGE DOWN to position the insertion point in the Header area, and
+	     then create the page header for the second and subsequent pages.
+	
+	  e. Click the "Switch Between Header and Footer" button on the Header And
+	     Footer toolbar to position the insertion point in the Footer area. Create
+	     the page footer for the second and subsequent pages.
+	
+	9. To return to your document, click the Close button on the Header And Footer
+	  toolbar.
+	
+	10. Delete the page break from the document.
+	
+	11. Save the document in Document Template file format. To do this, follow these
+	  steps:
+	
+	  a. On the File menu, click Save As.
+	
+	  b. In the Save As Type box, select Document Template.
+	
+	  c. Type in a name and click Save.
+	
+	Method 2: Different Odd and Even Headers and Footers
+	----------------------------------------------------
+	
+	To create a template with different odd and even headers and footers, follow
+	these steps:
+	
+	1. Create a new Word document by clicking New on the Standard toolbar.
+	
+	2. Insert two Page Breaks by pressing CTRL+ENTER twice. This will create a three
+	  page document.
+	
+	3. Position the insertion point on the page one by pressing CTRL+HOME.
+	
+	4. On the View menu, click Header And Footer.
+	
+	5. Click the Page Setup button on the Header And Footer toolbar.
+	
+	6. Click the Layout tab.
+	
+	7. Select the "Different Odd and Even" option. From the Section Start list,
+	  select New Page and then click OK.
+	
+	8. Use the following steps to create the odd and even page headers and footers:
+	
+	  a. Create the odd page header in the Odd Page Header area.
+	
+	  b. Click the Show Next button on the Header And Footer toolbar to position
+	     the insertion point in the Even Page Header area.
+	
+	  c. Create the Even Page Header.
+	
+	9. To return to your document, click the Close button on the Header And Footer
+	  toolbar.
+	
+	10. Delete all the page breaks from the document.
+	
+	11. Save the document in Document Template file format. To do this, follow these
+	  steps:
+	
+	  a. On the File menu, click Save As.
+	
+	  b. In the Save As Type box, select Document Template.
+	
+	  c. Type in a name and click Save.
+	
+	Method 3: Different First Page and Odd/Even Headers and Footers
+	---------------------------------------------------------------
+	
+	1. Create a new Word document by clicking New on the Standard toolbar.
+	
+	2. Insert two page breaks by pressing CTRL+ENTER twice.
+	
+	  NOTE: This will create a three page document.
+	
+	3. Position the insertion point on page one by pressing CTRL+HOME.
+	
+	4. On the View menu, click Header And Footer.
+	
+	5. Click the Page Setup button on the Header And Footer toolbar.
+	
+	6. Select the Layout tab.
+	
+	7. Select the "Different Odd and Even" and "Different First Page" options. From
+	  the Section Start list, select New Page, and then click OK.
+	
+	8. Use the following steps to create the first page and odd and even page
+	  headers and footers:
+	
+	  a. Create the first page header in the First Page Header area.
+	
+	  b. Click the "Switch Between Header and Footer" button on the Header And
+	     Footer toolbar to position the insertion point in the First Page Footer
+	     area.
+	
+	  c. Create the first page footer.
+	
+	  d. Press PAGE DOWN to position the insertion point in the Even Page Header
+	     area.
+	
+	  e. Create the even page header.
+	
+	  f. Click the "Switch Between Header and Footer" button on the Header And
+	     Footer toolbar to position the insertion point in the Even Page Footer
+	     area.
+	
+	  g. Create the even page footer.
+	
+	  h. Press PAGE DOWN to position the insertion point in the Odd Page Header
+	     area.
+	
+	  i. Create the odd page header.
+	
+	  j. Click the "Switch Between Header and Footer" button on the Header And
+	     Footer toolbar to position the insertion point in the Odd Page Footer
+	     area.
+	
+	  k. Create the odd page footer.
+	
+	9. To return to your document, click the Close button on the Header And Footer
+	  toolbar.
+	
+	10. Delete all the page breaks from the document.
+	
+	11. Save the document in Document Template file format. To do this, follow these
+	  steps:
+	
+	  a. On the File menu, click Save As.
+	
+	  b. In the Save As Type box, select Document Template.
+	
+	  c. Type in a name and click Save.
+	
+	For more information about headers and footers, click the Office Assistant, type
+	"How do I create a header," click Search, and then click to view "Create Headers
+	and Footers."
+	
+	NOTE: If the Assistant is hidden, click the Office Assistant button on the
+	Standard toolbar. If Word Help is not installed on your computer, please see the
+	following article in the Microsoft Knowledge Base:
+	
+	  Q120802 Office: How to Add/Remove a Single Office Program or Component
+	
+	Additional query words: header/footer hdr/ftr winword macword
+	
+	======================================================================
+	Keywords          : kbdta word97 kblayout 
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : WINDOWS:97
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

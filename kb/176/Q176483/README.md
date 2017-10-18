@@ -1,0 +1,100 @@
+---
+layout: page
+title: "Q176483: PRB: Large Amounts of RAM Seem to Process Data Slowly"
+permalink: kb/176/Q176483/
+---
+
+## Q176483: PRB: Large Amounts of RAM Seem to Process Data Slowly
+
+	Article: Q176483
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+	Operating System(s): 
+	Keyword(s): kbvfp kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600
+	Last Modified: 06-AUG-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Sometimes when you manipulate a table with certain FoxPro commands, the record
+	counter on the status bar pauses or stops for long periods of time. The hard
+	drive continues to process information. This problem is more noticeable on
+	faster computers that have large amounts of RAM installed.
+	
+	RESOLUTION
+	==========
+	
+	Set the foreground buffer of SYS(3050) to a smaller number. Here's an example:
+	
+	       =SYS(3050,1,10000000) && Sets the foreground buffer to 10 million
+	                             && bytes.
+	
+	STATUS
+	======
+	
+	This behavior is by design.
+	
+	MORE INFORMATION
+	================
+	
+	Using the commands COPY, APPEND, DELETE, INDEX, PACK or SQL-SELECT on a large
+	table in Visual FoxPro causes long pauses while the data is being manipulated.
+	The hard drive continues processing the data, but Visual FoxPro seems to be
+	inactive. This happens because computers that have large amounts of RAM and are
+	running Windows 95 or Windows NT give Visual FoxPro a large amount of buffered
+	memory to use. This memory is composed of RAM and physical hard drive space.
+	When FoxPro writes data into memory, large temporary files are created. When
+	they are written to the virtual memory (the hard drive), that memory is always
+	slower. Using a smaller amount of foreground buffer memory with SYS(3050) makes
+	Visual FoxPro use only the RAM memory, which is faster. Reducing the foreground
+	buffer size has eliminated the long delay in most situations.
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Use a computer with 64 MG of RAM or more, Visual FoxPro, and a table that
+	  contains 2 million or more records.
+	
+	2. Open the table, issue a SET STATUS BAR ON, and a COPY TO test in the FoxPro
+	  Command window.
+	
+	3. Watch the record counter on the status bar as it starts counting the copied
+	  records. After a while, the counter stops but the hard drive continues to
+	  process data. Later, the record counter starts counting again and then pauses
+	  after doubling the last record count.
+	
+	4. Press the ESC key after watching this behavior, and type the following in the
+	  FoxPro Command window:
+	
+	  
+	
+	          =SYS(3050,1,10000000)  && The 10 million number can be changed to
+	                                 && suit individual situations.
+	
+	5. Issue a COPY TO test command again and note that the counter does not pause
+	  as long this time.
+	
+	REFERENCES
+	==========
+	
+	Visual FoxPro Help File: SYS(3050)
+	
+	"Foxtalk," February 1997, "Set Turbo On: How Visual FoxPro Memory Usage Affects
+	Performance," page 1, Flavio Almeida and Walter Loughney
+	
+	Additional query words: slow freeze VFoxWin
+	
+	======================================================================
+	Keywords          : kbvfp kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+	Version           : WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

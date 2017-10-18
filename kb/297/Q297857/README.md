@@ -1,0 +1,134 @@
+---
+layout: page
+title: "Q297857: SMS: French SMS 2.0 SP3 Contains an Incorrect Ccm.dll File"
+permalink: kb/297/Q297857/
+---
+
+## Q297857: SMS: French SMS 2.0 SP3 Contains an Incorrect Ccm.dll File
+
+	Article: Q297857
+	Product(s): Microsoft Systems Management Server
+	Version(s): 2.0 SP3
+	Operating System(s): 
+	Keyword(s): kbsms120 kbsms120bug
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server version 2.0 SP3 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Client Setup may not start on a Windows 2000-based domain controller because the
+	replication of the SMS#_<DCname> account creation takes longer than 60
+	minutes on a large Windows 2000 Active Directory site. The same symptoms occur
+	if the replication for the temporary bootstrap account succeeds in time and the
+	SMS#_<DCname> client service account is created.
+	
+	For additional information, click the article number below to view the article in
+	the Microsoft Knowledge Base:
+	
+	  Q271724 SMS May Time Out Attempting a PDC/BDC Resynchronization in a Large
+	  Windows 2000 Active Directory Environment
+	
+	CAUSE
+	=====
+	
+	The French release of Systems Management Server (SMS) 2.0 Service Pack 3 (SP3)
+	includes an incorrect Ccm.dll file.
+	
+	RESOLUTION
+	==========
+	
+	A supported fix is now available from Microsoft, but it is only intended to
+	correct the problem that is described in this article. Only apply it to systems
+	that are experiencing this specific problem. This fix may receive additional
+	testing. Therefore, if you are not severely affected by this problem, Microsoft
+	recommends that you wait for the next Systems Management Server service pack
+	that contains this fix.
+	
+	To resolve this problem immediately, contact Microsoft Product Support Services
+	to obtain the fix. For a complete list of Microsoft Product Support Services
+	phone numbers and information about support costs, visit the following Microsoft
+	Web site:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	NOTE: In special cases, charges that are ordinarily incurred for support calls
+	may be canceled if a Microsoft Support Professional determines that a specific
+	update will resolve your problem. The usual support costs will apply to
+	additional support questions and issues that do not qualify for the specific
+	update in question.
+	
+	The French version of this fix should have the following file attributes or
+	later:
+	
+	  Date        Time    Version         Size     File name  Platform
+	  ----------------------------------------------------------------
+	  03/01/2001  05:15p  2.00.1493.3140  240,400  Ccm.dll    Alpha
+	  03/01/2001  05:15p  2.00.1493.3140  151,952  Ccm.dll    Intel
+	
+	NOTE: Because of file dependencies, the most recent hotfix or feature that
+	contains the above files may also contain additional files.
+	
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed that this is a problem in the Microsoft products that
+	are listed at the beginning of this article.
+	
+	Note that the SMS 2.0 SP 3 French download that is available from
+	http://www.microsoft.com/smsmgmt/downloads/sms20sp3.asp has been updated to
+	include this fix.
+	
+	MORE INFORMATION
+	================
+	
+	To install the hotfix, use the appropriate method.
+	
+	Using the Hotfix Installer
+	--------------------------
+	
+	NOTE: This method is only for Intel-based computers.
+	
+	1. Copy the hotfix folder structure to a share on your network. The Q297857.exe
+	  file is a Microsoft Windows Installer file that updates specific files on
+	  your site server.
+	
+	2. Log on to your site server by using an account with administrative
+	  privileges.
+	
+	3. On the site server, close the Systems Management Server Administrator
+	  console.
+	
+	4. Run Q297857.exe and follow the instructions in the wizard. You can run the
+	  file in Quiet mode by using the /s switch.
+	
+	Manual Installation
+	-------------------
+	
+	1. Stop the Systems Management Server Site Component Manager and Systems
+	  Management Server Executive services.
+	
+	2. Replace the Ccm.dll file in the <Sms_root_folder>\Bin\<Platform>
+	  folder with the version obtained from the hotfix.
+	
+	3. Restart the Systems Management Server Site Component Manager and Systems
+	  Management Server Executive services.
+	
+	Additional query words: prodsms
+	
+	======================================================================
+	Keywords          : kbsms120 kbsms120bug 
+	Technology        : kbSMSSearch kbSMS200SP3
+	Version           : :2.0 SP3
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

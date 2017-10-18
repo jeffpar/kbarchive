@@ -1,0 +1,159 @@
+---
+layout: page
+title: "Q67868: SVAR: Program that Creates System Variables from Network Info"
+permalink: kb/067/Q67868/
+---
+
+## Q67868: SVAR: Program that Creates System Variables from Network Info
+
+	Article: Q67868
+	Product(s): Microsoft LAN Manager
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 30-JUL-2001
+	
+	SUMMARY
+	=======
+	
+	The NETLOGON.CMD sample logon script for OS/2 LAN Manager version 1.01 contains
+	system variables %1 - %4. Useful in the creation of global logon scripts, the
+	variables return these values when included in a script:
+	
+	  Value      Description
+	  -----      -----------
+	
+	  %1         the username of the user logging on
+	  %2         the computer name of the Netlogon server validating
+	             logons
+	  %3         the sharename of the server directory that contains the
+	             home directories
+	  %4         the path of the user's home directory relative to %3
+	
+	These system variables are no longer supplied or supported in logon scripts in
+	OS/2 LAN Manager version 2.00. This article explains other methods for getting
+	the functionality they provided.
+	
+	MORE INFORMATION
+	================
+	
+	You can obtain all of the %1 through %4 system variable information elements
+	that were in OS/2 LAN Manager version 1.01 plus many additional information
+	elements, in OS/2 LAN Manager version 2.00 by means of several API calls,
+	including NetWkstaGetInfo() and NetUserGetInfo().The APIs are used in a sample
+	program, SVAR.C.
+	
+	A Microsoft Software/Data Library article contains these files:
+	
+	 Filename       Description
+	  --------       -----------
+	
+	  SVAR.C         SVAR source code
+	  SVAROS2.CMD    OS/2 command file used to build SVAR-OS2.EXE
+	  SVARDOS.BAT    MS-DOS batch file used to build SVAR-DOS.EXE
+	  SVAR-OS2.EXE   OS/2 version of SVAR (~10K)
+	  SVAR-DOS.EXE   MS-DOS version of SVAR (~29K)
+	  SAMPLE.CMD     sample command logon script file that demonstrates
+	                 how SVAR might be used in an OS/2 LAN Manager logon
+	                 script
+	
+	To find SVAR in the Software/Data Library, search on the keyword SVAR, the Q
+	number of this article, or S12868. SVAR was archived using the PKware
+	file-compression utility.
+	
+	SVAR.C uses OS/2 LAN Manager APIs to obtain network information elements:
+	
+	- workstation's computer name (obtained from local LANMAN.INI file)
+	
+	- user's logon name (as specified at logon time)
+	
+	- workstation's default domain (obtained from local LANMAN.INI file)
+	
+	- user's preferred logon server (from user's account -- if specified)
+	
+	- user's home directory (from user's account -- if specified)
+	
+	It creates a temporary .BAT (MS-DOS) or .CMD (OS/2) file in the local
+	environment's %TEMP% directory, appends each information element to a "SET
+	<varname> =" string and writes them to a temporary file that can be run
+	whenever the elements are needed as local system variables. For example, the
+	temporary batch file can be called from your logon script to set the requested
+	system variables for use further down in the logon script (see SAMPLE.CMD).
+	
+	Usage
+	-----
+	
+	   {os2}
+	
+	svar-dos [-c [Computer varname]] [-u [User varname]]
+	           [-d [Default domain varname]] [-s [Preferred server varname]]
+	           [-h [Home directory varname]] [-f Temporary file name]
+	
+	You can provide any combination of the -c, -u, -d, -s, and -h flags (at least one
+	is required), or you can follow any of the indicated flags with a local system
+	variable name that you want used in the "set <varname> =" string instead
+	of these standard information element names:
+	
+	  -c  COMPUTER
+	  -u  USER
+	  -d  DOMAIN
+	  -s  SERVER
+	  -h  HOME
+	
+	By default, the filename for the temporary file is "$x$x$x$x". You can designate
+	a different filename by using the -f parameter (see the usage listed above).
+	
+	Example
+	-------
+	
+	  svar-dos -c -u USERNAME -d -h HOMEDIR -f tmpfile
+	
+	If the local workstation's computer name is TW301, the domain is SALES, the
+	user's logon name is JOE, and JOE's home directory is \\SERVER1\HOME1, this
+	command creates the following TMPFILE.BAT file in the %TEMP% directory:
+	
+	  SET COMPUTER=TW301
+	  SET USERNAME=JOE
+	  SET DOMAIN=SALES
+	  SET HOMEDIR=\\SERVER1\HOME1
+	
+	You can modify SVAR easily to provide additional system variables that may be
+	needed within the logon script.
+	
+	For example, if you are configured in a large network installation you may want
+	to be automatically connected to a departmental (or divisional) word processing
+	data directory, either at system boot or when you run a word processing
+	application. One way to do this is to make the department code (and division
+	code, if needed) available through system variables.
+	
+	There are a few fields in the user account record, such as "comment" or "parms,"
+	that can contain additional information elements--such as department and
+	division code--obtained by parsing the appropriate field (comment, parameters,
+	etc.) returned by NetUserGetInfo(), and adding them in "set <varname> ="
+	strings in the temporary .BAT or .CMD file.
+	
+	You can add a network command such as the following to the logon script (or word
+	processing application execution batch file) to attach your drive W to the
+	appropriate departmental word processing share and set the default directory to
+	the appropriate divisional subdirectory:
+	
+	  NET USE W: \\WORDPROC1\%department%
+	  CD W:\%division%
+	
+	Or, if the servers are departmentalized:
+	
+	  NET USE W: \\%department%\WORDPROC
+	  CD W:\%division%
+	
+	Note: the system variables established by CALLing the temporary .BAT or .CMD file
+	remain in effect only for the duration of the logon script, so you may want to
+	keep the file in the %temp% directory for later use by another process (such as
+	the above mentioned word processing application execution batch file).
+	
+	Additional query words: 2.00 2.0 2.10 2.1 2.10a 2.1a 2.20 2.2
+	
+	======================================================================
+	Keywords          :  
+	
+	=============================================================================
+	

@@ -1,0 +1,112 @@
+---
+layout: page
+title: "Q167406: FIX: TYPE() Function Returns Wrong Value for Appended Records"
+permalink: kb/167/Q167406/
+---
+
+## Q167406: FIX: TYPE() Function Returns Wrong Value for Appended Records
+
+	Article: Q167406
+	Product(s): Microsoft FoxPro
+	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b
+	Operating System(s): 
+	Keyword(s): kbcode kbvfp kbvfp300bBUGkbbuglist kbfixlist
+	Last Modified: 11-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+	- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The TYPE() function returns the wrong current value for appended records in a
+	buffered table. The TYPE() function returns "L" for logical type for all field
+	types in the table. This behavior occurs regardless of the type of data
+	buffering applied to the table.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article. This bug has been corrected in Microsoft Visual
+	FoxPro version 5.0 for Windows.
+	
+	MORE INFORMATION
+	================
+	
+	The following program creates a table, set the data buffering property to
+	optimistic table buffering, and appends a blank record. Then a comparison
+	displays the difference between the field types of the new record and the
+	original table structure.
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Create a program that contains the following code:
+	
+	        CLEAR
+	        CLOSE DATA ALL
+	        SET MULTILOCKS ON
+	        CREATE TABLE TheTable (;
+	          Char       C(40),;
+	          Date       D,;
+	          DateTime   T,;
+	          Numeric    N(20,9),;
+	          Double     B(9),;
+	          Currency   Y,;
+	          Logical    L,;
+	          Memo       M,;
+	          General    G,;
+	          Picture    P)
+	
+	        ? "CURSORSETPROP('Buffer', 5)"
+	        = CURSORSETPROP('Buffer', 5)
+	        APPEND BLANK
+	        ? [TYPE("CURVAL('Char')") =], TYPE("CURVAL('Char')")
+	        ? [TYPE("OLDVAL('Char')") =], TYPE("OLDVAL('Char')")
+	        ? [TYPE("CURVAL('Date')") =], TYPE("CURVAL('Date')")
+	        ? [TYPE("OLDVAL('Date')") =], TYPE("OLDVAL('Date')")
+	        ? [TYPE("CURVAL('DateTime')") =], TYPE("CURVAL('DateTime')")
+	        ? [TYPE("OLDVAL('DateTime')") =], TYPE("OLDVAL('DateTime')")
+	        ? [TYPE("CURVAL('Numeric')") =], TYPE("CURVAL('Numeric')")
+	        ? [TYPE("OLDVAL('Numeric')") =], TYPE("OLDVAL('Numeric')")
+	        ? [TYPE("CURVAL('Double')") =], TYPE("CURVAL('Double')")
+	        ? [TYPE("OLDVAL('Double')") =], TYPE("OLDVAL('Double')")
+	        ? [TYPE("CURVAL('Currency')") =], TYPE("CURVAL('Currency')")
+	        ? [TYPE("OLDVAL('Currency')") =], TYPE("OLDVAL('Currency')")
+	        ? [TYPE("CURVAL('Logical')") =], TYPE("CURVAL('Logical')")
+	        ? [TYPE("OLDVAL('Logical')") =], TYPE("OLDVAL('Logical')")
+	        ? [TYPE("CURVAL('Memo')") =], TYPE("CURVAL('Memo')")
+	        ? [TYPE("OLDVAL('Memo')") =], TYPE("OLDVAL('Memo')")
+	        ? [TYPE("CURVAL('General')") =], TYPE("CURVAL('General')")
+	        ? [TYPE("OLDVAL('General')") =], TYPE("OLDVAL('General')")
+	        ? [TYPE("CURVAL('Picture')") =], TYPE("CURVAL('Picture')")
+	        ? [TYPE("OLDVAL('Picture')") =], TYPE("OLDVAL('Picture')")
+	        = TABLEREVERT(.T.)
+	        CLOSE DATA ALL
+	        DELETE FILE TheTable.DBF
+	        DELETE FILE TheTable.FPT
+	        SET MULTILOCKS OFF
+	
+	2. Run the program.
+	
+	3. Notice the current value of every field appears as a type logical (L). The
+	  TYPE() function reports the data type of each field in the newly appended
+	  record as a logical type. However, TYPE() reports the original field type
+	  correctly.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbcode kbvfp kbvfp300bBUG kbbuglist kbfixlist
+	Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac kbVFP300 kbVFP300b
+	Version           : MACINTOSH:3.0b; WINDOWS:3.0,3.0b
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

@@ -1,0 +1,277 @@
+---
+layout: page
+title: "Q199412: XGEN: Administrator Program Dump Files (Admindmp.txt)"
+permalink: kb/199/Q199412/
+---
+
+## Q199412: XGEN: Administrator Program Dump Files (Admindmp.txt)
+
+	Article: Q199412
+	Product(s): Microsoft Exchange
+	Version(s): winnt:4.0,5.0,5.5
+	Operating System(s): 
+	Keyword(s): exc4 exc5
+	Last Modified: 20-OCT-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The Microsoft Exchange Server Administrator program has built-in functionality
+	that allows you to quickly dump an object's raw properties to a text file that
+	can be sent to a Microsoft Support Professional. This can be very useful when
+	you are troubleshooting objects with many configuration options, such as an
+	X.400 connector, where there may be typographical errors, basic configuration
+	errors, or misunderstandings that are difficult for a Microsoft Support
+	Professional to catch over the phone.
+	
+	MORE INFORMATION
+	================
+	
+	Administrator dump files are always written to a file named Admindmp.txt. If the
+	file does not already exist, it is created. If it already exists, the current
+	dump is appended to the existing file.
+	
+	The dump file is created in the Administrator program's working directory.
+	Normally, this is the Exchsrvr\Bin directory, but it may be different if the
+	Administrator is started from the command line in a different directory, or if
+	the working directory of the Administrator icon has been modified.
+	
+	It is usually much easier to work with distinct dump files for each object of
+	interest, so you should rename the Admindmp.txt file after each object's raw
+	properties are dumped.
+	
+	Notepad does not easily read the dump file format, so you may want to rename your
+	dump files with a .wri extension instead of .txt. For example, if you perform
+	dumps on two objects and rename the Admindmp.txt file after each dump, you might
+	end up with two files named Tcpstack.wri and X400conn.wri.
+	
+	Steps to Create an Admindmp.txt File
+	------------------------------------
+	
+	1. Verify that there is not an existing Admindmp.txt file. If so, rename or
+	  delete it.
+	
+	WARNING: Using the raw mode of the Exchange Server Administrator program (admin
+	/r) incorrectly can cause serious problems that may require you to reinstall
+	Microsoft Windows NT Server and/or Microsoft Exchange Server. Microsoft cannot
+	guarantee that problems resulting from the incorrect use of raw mode can be
+	solved. Use raw mode at your own risk.
+	
+	2. Start the Microsoft Exchange Server Administrator program in raw mode by
+	  typing the following at a command prompt:
+	
+	  c:\exchsrvr\bin\admin /r
+	
+	3. Select the object from which you will dump the raw properties.
+	
+	4. Press and hold down the CTRL key.
+	
+	5. On the File menu, click Raw Properties.
+	
+	6. Continue to hold the CTRL key down until the Raw Properties page is
+	  displayed, then you can release it.
+	
+	7. Click the Cancel button on the Raw Properties page.
+	
+	8. Rename the newly created Admindmp.txt file to something meaningful.
+	
+	9. Perform any more Administrator dumps you need (repeat steps 3 through 8 for
+	  each dump.)
+	
+	10. Quit the Exchange Server Administrator program.
+	
+	Breakdown of X.400 Connector Administrator Dump File
+	----------------------------------------------------
+	
+	You may not see all of the following properties reported in your own dump files
+	as what is listed below contains samples from TCP, TP4, and X.25 stacks. In
+	addition, some properties are only reported if they aren't blank. If the
+	property is left blank, nothing is reported in the Administrator dump file.
+	
+	NOTE: Comments explaining or amplifying properties or values will be enclosed in
+	square ([]) brackets.
+	
+	RFC1006-X400-Link   2/7/97  11:46 AM                  [TCP Stack used]
+	Eicon-X25-X400-Link   2/7/97  11:57 AM               [X.25 Stack used]
+	TP4-X400-Link   2/7/97  12:00 PM                      [TP4 Stack used]
+	
+	[Only one of the three lines above will be present.]
+	
+	Object-Class:   values: 4
+	     [1]   '2A864886F714010320'
+	     [2]   '2A864886F71401031D'
+	     [3]   '2A864886F714010333'
+	     [4]   '550600'
+	
+	  Directory Name:   'X400USA2'                          [General Tab]
+	
+	  Instance-Type:   '5'
+	  When-Created:   '970207194610Z'
+	  When-Changed:   '970207194610Z'
+	  USN-Created:   '4045'
+	  Obj-Dist-Name:   '/o=Microsoft/ou=BOND007/cn=Configuration
+	                    /cn=Connections/cn=DirectoryName'
+	  DSA-Signature:   '808E92BD73F4CF11A3C700AA00C14927'
+	  Object-Version:   '1'
+	  USN-Changed:   '4045'
+	
+	  Admin-Display-Name:   'X400 Connector to Texas'       [General Tab]
+	
+	  USN-Source:   '4045'
+	
+	  Activation-Style:   '2'                              [Schedule Tab]
+	  [0=Never, 1=Selected Times, 2=Always, 3=Remote Initiated]
+	
+	  ADMD: 'ADMD'                             [only dumped if not blank]
+	          [Advanced Tab: Use GDI specified below: ADMD (a): Specific]
+	
+	  Admin Note:   'Remote contact: Jana'     [only dumped if not blank]
+	                                   [General Tab: Administrative Note]
+	
+	  Association-Lifetime:   '300'                        [Override Tab]
+	
+	  Connected-Domains:   values: 1                [Connected Sites Tab]
+	     [1]   'ExchOrg[ASCII 167]ExchSite[ASCII 167]1[ASCII 167]X400:c=US;a=
+	;p=ExchOrg;o=ExchSite;'
+	     [Only present if a connected site has been defined]
+	
+	  Country-Name: 'US'                       [only dumped if not blank]
+	                 [Advanced Tab: Use GDI specified below: Country (c)]
+	
+	  Incoming message size limit:   '1024'    [only dumped if not blank]
+	                            [Advanced Tab: Message size: Maximum (K)]
+	
+	  Deliverable Information Types:   values: 7
+	     [1]   '56030402'
+	     [2]   '56030405'
+	     [3]   '5603040B'
+	     [4]   '56030400'
+	     [5]   '56010C00'   [Advanced Tab: X400 link options: Allow BP15]
+	                       [Value present if box is checked][not in 1984]
+	
+	     [6]   '28CE2507010006'                [not present in 1984 mode]
+	     [7]   '28CE2507010064'                [not present in 1984 mode]
+	
+	  Deliv-Ext-Cont-Types:   values: 4
+	     [1]   '56010A00'
+	     [2]   '56010A01'                      [not present in 1984 mode]
+	     [3]   '2A864886F7140502'
+	     [4]   '2A864886F7140501'             [present if box is checked]
+	        [Advanced Tab: X400 link options: Allow MS Exchange contents]
+	
+	  Delivery-Mechanism:   '3'
+	
+	  Encapsulation-Method:   '1'         [Check Box: 0=blank, 1=checked]
+	                           [General Tab: Remote clients support MAPI]
+	
+	  Gateway-Local-Cred:   'Remote-MTA-Password'           [General Tab]
+	  Gateway-Local-Desig:   'Remote-MTA-Name'              [General Tab]
+	
+	  Home-MTA:   '/o=Microsoft/ou=BOND007/cn=Configuration
+	               /cn=Servers/cn=DRNO/cn=Microsoft MTA'
+	
+	  Line-Wrap:   '55'             [General Tab: Message text word-wrap]
+	            [Only present when 'At column' selected and value filled]
+	
+	  Local-Initial-Turn:   '1'
+	  MTA-Local-Cred:   'Local-MTA-Password'               [Override Tab]
+	  MTA-Local-Desig:   'Local-MTA-Name'                  [Override Tab]
+	
+	  N-Address:   '484F53544E414D45'                         [Stack Tab]
+	  [                                                                 ]
+	  [ This is the other MTA's Network address.  Depending on the      ]
+	  [ stack type the field name in exchange differs as follows:       ]
+	  [                                                                 ]
+	  [   TCP Stack: Field Name = Address                               ]
+	  [   TP4 Stack: Field Name = Address                               ]
+	  [   X25 Stack: Field Name = X.121 Address                         ]
+	  [                                                                 ]
+	  [ The value is always written to the dump in Hex.                 ]
+	
+	  N-Address-Type:   '0'                                   [Stack Tab]
+	  [                                                                 ]
+	  [ This line only is dumped when the stack is TCP                  ]
+	  [ 0 = Remote host name, 1 = IP address                            ]
+	
+	  Num-Of-Open-Retries:   '144'                         [Override Tab]
+	  Num-Of-Transfer-Retries:   '2'                       [Override Tab]
+	  Open-Retry-Interval:   '600'                         [Override Tab]
+	
+	  PRMD: 'PRMD'                             [only dumped if not blank]
+	                    [Advanced Tab: Use GDI specified below: PRMD (p)]
+	
+	  P-Selector:   '5053454C'         [Stack Tab: Outgoing OSI (in Hex)]
+	  P-Selector-Inbound:   '5053454C' [Stack Tab: Incoming OSI (in Hex)]
+	
+	  RTS-Checkpoint-Size:   '30'                          [Override Tab]
+	  RTS-Recovery-Timeout:   '60'                         [Override Tab]
+	  RTS-Window-Size:   '5'                               [Override Tab]
+	
+	  S-Selector:   '5353454C'         [Stack Tab: Outgoing OSI (in Hex)]
+	  S-Selector-Inbound:   '5353454C' [Stack Tab: Incoming OSI (in Hex)]
+	
+	  Session-Disconnect-Timer:   '120'                    [Override Tab]
+	
+	  Supported-Application-Context:   values: 1
+	
+	     [1]   '56000106'
+	
+	     [ Advanced Tab: MTA conformance                                ]
+	     [ 1988= 56000106, 1988 x410= 5600010C, 1984= 5600010D          ]
+	
+	  T-Selector:   '5453454C'         [Stack Tab: Outgoing OSI (in Hex)]
+	  T-Selector-Inbound:   '5453454C' [Stack Tab: Incoming OSI (in Hex)]
+	
+	  Temp-Assoc-Threshold:   '50'                         [Override Tab]
+	  Transfer-Retry-Interval:   '120'                     [Override Tab]
+	  Transfer-Timeout-Non-Urgent:   '3000'                [Override Tab]
+	  Transfer-Timeout-Normal:   '2000'                    [Override Tab]
+	  Transfer-Timeout-Urgent:   '1000'                    [Override Tab]
+	
+	  Translation-Table-Used:   '0'
+	  [                                                                 ]
+	  [Advanced Tab: X400 bodypart used for message text:               ]
+	  [ IA5                 = 0                                         ]
+	  [ IA5 Swedish         = 1                                         ]
+	  [ IA5 Norwegian       = 2                                         ]
+	  [ IA5 German          = 3                                         ]
+	  [ ISO 8859-1 (Latin-1)= 4   (not available in 1984 mode)          ]
+	  [ ISO 6937            = 5                                         ]
+	  [ T.61 (TTX)          = 6                                         ]
+	
+	  Transport-Expedited-Data:   '1'      [Stack Tab:Use expidited data]
+	                                      [Check Box: 1=checked, 0=blank]
+	
+	  Two-Way-Alternate-Facility:   '1' [Advanced Tab: X400 link options]
+	                                      [Check Box: 1=checked, 0=blank]
+	
+	  [ The following two properties only show with an X.25 Stack       ]
+	  X25-Call-User-Data-Outgoing:   'CD'                     [Stack Tab]
+	  X25-Facilities-Data-Outgoing:   'FD'                    [Stack Tab]
+	
+	  X400-Selector-Syntax:   '1'
+	
+	  Supporting-Stack:   values: 1                         [General Tab]
+	     [1]   '/o=Microsoft/ou=BOND007/cn=Configuration
+	            /cn=Servers/cn=DRNO/cn=TCP (DRNO)'
+	
+	  Routing-List:   values: 1                       [Address Space Tab]
+	     [1]   'X400:c=US;a=X400admd;p=X400prmd;o=X400org;;1'
+	     [Only present if a connected site has been defined             ]
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : exc4 exc5 
+	Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+	Version           : winnt:4.0,5.0,5.5
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

@@ -1,0 +1,412 @@
+---
+layout: page
+title: "Q158190: Windows 95 OEM Service Release 2 CD-ROM Directory (1 of 6)"
+permalink: kb/158/Q158190/
+---
+
+## Q158190: Windows 95 OEM Service Release 2 CD-ROM Directory (1 of 6)
+
+	Article: Q158190
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:95
+	Operating System(s): 
+	Keyword(s): kbdiskdir win95 kbdir
+	Last Modified: 31-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 95 OEM Service Release, version 2.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article lists the directory contents of the Windows 95 OEM Service Release
+	2 (OSR2) CD-ROM (part 1 of 6).
+	
+	NOTE: The directory listing in this article corresponds to the contents of the
+	original CD-ROM shipped to OEMs. Because OEMs can customize the CD-ROM they ship
+	to customers, the contents of a customer's CD-ROM may vary from this article.
+	
+	MORE INFORMATION
+	================
+	
+	Contents of the Win95 folder
+	----------------------------
+	
+	FORMAT   COM        49,543  08-24-96 11:11a
+	MINI     CAB       441,905  08-24-96 11:11a
+	MSINFO   INF         6,551  08-24-96 11:11a
+	OEMSETUP BIN         3,270  08-24-96 11:11a
+	OEMSETUP EXE        78,672  08-24-96 11:11a
+	PRECOPY1 CAB       480,768  08-24-96 11:11a
+	PRECOPY2 CAB     1,237,083  08-24-96 11:11a
+	SETUP25I EXE     1,950,007  08-24-96 11:11a
+	SETUP32  EXE     6,729,752  08-24-96 11:11a
+	SUHELPER BIN         1,472  08-24-96 11:11a
+	SWINST4  EXE     1,009,600  08-24-96 11:11a
+	CS3KIT   EXE     5,783,436  08-24-96 11:11a
+	DELTEMP  COM           496  08-24-96 11:11a
+	DOSSETUP BIN        72,358  08-24-96 11:11a
+	EXTRACT  EXE        46,656  08-24-96 11:11a
+	LAYOUT   INF        54,600  08-24-96 11:11a
+	LAYOUT1  INF         5,739  08-24-96 11:11a
+	README   TXT         3,728  08-24-96 11:11a
+	SAVE32   COM           920  08-24-96 11:11a
+	SCANDISK EXE       142,353  08-24-96 11:11a
+	SCANDISK PIF           995  08-24-96 11:11a
+	SCANPROG EXE         4,438  08-24-96 11:11a
+	SETUP    EXE         5,184  08-24-96 11:11a
+	SETUP    TXT        33,963  08-24-96 11:11a
+	SMARTDRV EXE        44,867  08-24-96 11:11a
+	WB16OFF  EXE           537  08-24-96 11:11a
+	WIN95_02 CAB       464,896  08-24-96 11:11a
+	WIN95_03 CAB     1,716,224  08-24-96 11:11a
+	WIN95_04 CAB     1,716,224  08-24-96 11:11a
+	WIN95_05 CAB     1,716,224  08-24-96 11:11a
+	WIN95_06 CAB     1,716,224  08-24-96 11:11a
+	WIN95_07 CAB     1,716,224  08-24-96 11:11a
+	WIN95_08 CAB     1,716,224  08-24-96 11:11a
+	WIN95_09 CAB     1,716,224  08-24-96 11:11a
+	WIN95_10 CAB     1,716,224  08-24-96 11:11a
+	WIN95_11 CAB     1,716,224  08-24-96 11:11a
+	WIN95_12 CAB     1,716,224  08-24-96 11:11a
+	WIN95_13 CAB     1,716,224  08-24-96 11:11a
+	WIN95_14 CAB     1,716,224  08-24-96 11:11a
+	WIN95_15 CAB     1,716,224  08-24-96 11:11a
+	WIN95_16 CAB     1,716,224  08-24-96 11:11a
+	WIN95_17 CAB     1,716,224  08-24-96 11:11a
+	WIN95_18 CAB     1,716,224  08-24-96 11:11a
+	WIN95_19 CAB     1,716,224  08-24-96 11:11a
+	WIN95_20 CAB     1,716,224  08-24-96 11:11a
+	WIN95_21 CAB     1,716,224  08-24-96 11:11a
+	WIN95_22 CAB     1,716,224  08-24-96 11:11a
+	WIN95_23 CAB     1,716,224  08-24-96 11:11a
+	WIN95_24 CAB     1,716,224  08-24-96 11:11a
+	WIN95_25 CAB     1,716,224  08-24-96 11:11a
+	WIN95_26 CAB     1,716,224  08-24-96 11:11a
+	WIN95_27 CAB     1,716,224  08-24-96 11:11a
+	WIN95_28 CAB     1,426,482  08-24-96 11:11a
+	WINSETUP BIN       159,824  08-24-96 11:11a
+	WOWKIT   EXE    19,687,469  08-24-96 11:11a
+	XMSMMGR  EXE        14,144  08-24-96 11:11a
+	
+	Contents of the Mini.cab File
+	-----------------------------
+	
+	DOSX     EXE        32,682  07-11-95  9:50a
+	USER     EXE       264,016  07-11-95  9:50a
+	GDI      EXE       149,456  07-11-95  9:50a
+	KRNL386  EXE        75,490  07-11-95  9:50a
+	LZEXPAND DLL         9,936  07-11-95  9:50a
+	MINIKBD  DLL         1,300  07-11-95  9:50a
+	WIN87EM  DLL        12,800  07-11-95  9:50a
+	VER      DLL         9,008  07-11-95  9:50a
+	COMM     DRV         9,280  07-11-95  9:50a
+	KEYBOARD DRV         7,568  07-11-95  9:50a
+	LMOUSE31 DRV        12,928  07-11-95  9:50a
+	MSMOUS31 DRV        10,672  07-11-95  9:50a
+	NOMOUSE  DRV           416  07-11-95  9:50a
+	SYSTEM   DRV         2,304  07-11-95  9:50a
+	VGA      DRV        73,200  07-11-95  9:50a
+	SOUND    DRV         3,440  07-11-95  9:50a
+	SERIFE   FON        57,936  07-11-95  9:50a
+	SSERIFE  FON        64,544  07-11-95  9:50a
+	VGAFIX   FON         5,360  07-11-95  9:50a
+	VGAOEM   FON         5,168  07-11-95  9:50a
+	VGASYS   FON         7,280  07-11-95  9:50a
+	SYSTEM   INI           358  07-11-95  9:50a
+	WIN      INI           165  07-11-95  9:50a
+	MINI     CAB             0  10-15-96  4:51p
+	
+	Contents of the Precopy1.cab File
+	---------------------------------
+	
+	COMMAND  COM        93,812  08-24-96 11:11a
+	DRVSPACE BIN        65,271  08-24-96 11:11a
+	DRVSPACE SYS         2,135  08-24-96 11:11a
+	WINBOOT  SYS       214,836  08-24-96 11:11a
+	COMCTL31 DLL        46,480  08-24-96 11:11a
+	COMMCTRL DLL        48,112  08-24-96 11:11a
+	KOMMCTRL DLL       154,880  08-24-96 11:11a
+	COMMDLG  DLL        97,936  08-24-96 11:11a
+	COMPLINC DLL        43,504  08-24-96 11:11a
+	DLCNDI   DLL         2,474  08-24-96 11:11a
+	LZEXPAND DLL        23,696  08-24-96 11:11a
+	MSPRINT  DLL        55,920  08-24-96 11:11a
+	MSPRINT2 DLL        48,128  08-24-96 11:11a
+	MSTCP    DLL        30,016  08-24-96 11:11a
+	MSWEBNDI DLL         2,832  08-24-96 11:11a
+	NETAPI   DLL       106,960  08-24-96 11:11a
+	
+	Contents of the Precopy2.cab File
+	---------------------------------
+	
+	NETDI    DLL       284,784  08-24-96 11:11a
+	NETOS    DLL        24,400  08-24-96 11:11a
+	NETDET   INI         7,885  08-24-96 11:11a
+	NDSNP    HLP        30,807  08-24-96 11:11a
+	NWNDS    DLL         7,424  08-24-96 11:11a
+	_NWNDS   BAT           366  08-24-96 11:11a
+	RNASETUP DLL         5,408  08-24-96 11:11a
+	SETUPX   DLL       592,720  08-24-96 11:11a
+	SHELL    DLL        41,600  08-24-96 11:11a
+	SUEXPAND DLL         9,936  08-24-96 11:11a
+	SYSDETMG DLL       318,512  08-24-96 11:11a
+	VER      DLL         9,008  08-24-96 11:11a
+	VERX     DLL        14,768  08-24-96 11:11a
+	DSKMAINT DLL       214,048  08-24-96 11:11a
+	WIN95BB  DLL       342,640  08-24-96 11:11a
+	SUWIN    EXE       395,696  08-24-96 11:11a
+	SUFAIL   BAT           751  08-24-96 11:11a
+	SUCHECK  BAT           816  08-24-96 11:11a
+	DRVSPACE BAT           329  08-24-96 11:11a
+	DBLSPACE BAT           403  08-24-96 11:11a
+	DEFRAG   BAT           339  08-24-96 11:11a
+	DESKMGMT INF        63,697  08-24-96 11:11a
+	SCANDISK BAT           152  08-24-96 11:11a
+	COPY     INF        49,569  08-24-96 11:11a
+	REN      INF         9,306  08-24-96 11:11a
+	DEL      INF        47,343  08-24-96 11:11a
+	ADAPTER  INF         4,788  08-24-96 11:11a
+	APM      INF         2,578  08-24-96 11:11a
+	APPLETS  INF        51,699  08-24-96 11:11a
+	AWFAX    INF        15,660  08-24-96 11:11a
+	AWUPD    INF         2,191  08-24-96 11:11a
+	MSCDROM  INF           951  08-24-96 11:11a
+	DISKDRV  INF           765  08-24-96 11:11a
+	ENABLE   INF         2,971  08-24-96 11:11a
+	GPS      INF         6,010  08-24-96 11:11a
+	ICM      INF         2,049  08-24-96 11:11a
+	IMAGEVUE INF        24,919  08-24-96 11:11a
+	INETMAIL INF         1,860  08-24-96 11:11a
+	INFRARED INF         9,089  08-24-96 11:11a
+	JOYSTICK INF         2,830  08-24-96 11:11a
+	KEYBOARD INF         7,397  08-24-96 11:11a
+	LOCALE   INF        40,707  08-24-96 11:11a
+	MACHINE  INF        48,644  08-24-96 11:11a
+	MF       INF         7,887  08-24-96 11:11a
+	MIDI     INF         5,315  08-24-96 11:11a
+	MODEMS   INF         3,358  08-24-96 11:11a
+	MONITOR  INF        37,696  08-24-96 11:11a
+	MONITOR2 INF        55,964  08-24-96 11:11a
+	MONITOR3 INF        56,039  08-24-96 11:11a
+	MONITOR4 INF        42,300  08-24-96 11:11a
+	MONITOR6 INF        24,795  08-24-96 11:11a
+	MOS      INF        51,043  08-24-96 11:11a
+	MOTOWN   INF        48,045  08-24-96 11:11a
+	MSBASE   INF        63,551  08-24-96 11:11a
+	MSDET    INF        21,852  08-24-96 11:11a
+	MSDISP   INF        55,125  08-24-96 11:11a
+	MSDOS    INF        11,013  08-24-96 11:11a
+	MSDX     INF         4,209  08-24-96 11:11a
+	MSFDC    INF         3,657  08-24-96 11:11a
+	MSHDC    INF        14,556  08-24-96 11:11a
+	MSINFO   INF         6,559  08-24-96 11:11a
+	MSMAIL   INF        41,581  08-24-96 11:11a
+	MSMOUSE  INF        13,322  08-24-96 11:11a
+	MSPORTS  INF         9,520  08-24-96 11:11a
+	MSPRINT  INF        46,347  08-24-96 11:11a
+	MSPRINT2 INF        37,350  08-24-96 11:11a
+	MTD      INF         1,891  08-24-96 11:11a
+	MULTILNG INF        27,437  08-24-96 11:11a
+	NDSCLI   INF        11,587  08-24-96 11:11a
+	NETCLI   INF        16,479  08-24-96 11:11a
+	NETINFO  INF        59,928  08-24-96 11:11a
+	NETSERVR INF        12,394  08-24-96 11:11a
+	NETDEF   INF        10,267  08-24-96 11:11a
+	NETCLI3  INF        28,015  08-24-96 11:11a
+	NETDLC32 INF        12,276  08-24-96 11:11a
+	NET3COM  INF        31,895  08-24-96 11:11a
+	NETSILC  INF         7,524  08-24-96 11:11a
+	NETTDKP  INF         4,828  08-24-96 11:11a
+	NETPCI   INF        11,080  08-24-96 11:11a
+	NETAUXT  INF           153  08-24-96 11:11a
+	NETFLEX  INF         7,168  08-24-96 11:11a
+	NETMADGE INF        25,842  08-24-96 11:11a
+	NETTCC   INF        16,149  08-24-96 11:11a
+	NETCABLE INF        25,234  08-24-96 11:11a
+	NETPROT  INF        12,890  08-24-96 11:11a
+	NETGEN   INF         4,039  08-24-96 11:11a
+	NETSOCK  INF         3,155  08-24-96 11:11a
+	NETAMD   INF        19,827  08-24-96 11:11a
+	NETDEC   INF        20,208  08-24-96 11:11a
+	NETEE16  INF        22,103  08-24-96 11:11a
+	NETNICE  INF         3,808  08-24-96 11:11a
+	NETNOVEL INF        23,314  08-24-96 11:11a
+	NETOLI   INF        21,733  08-24-96 11:11a
+	NETPPP   INF         2,898  08-24-96 11:11a
+	NETHP    INF        10,111  08-24-96 11:11a
+	NETSMC   INF        36,024  08-24-96 11:11a
+	NETSMCTR INF         4,543  08-24-96 11:11a
+	NETXIR   INF        24,805  08-24-96 11:11a
+	NETIBM   INF        17,817  08-24-96 11:11a
+	NETIBMCC INF        19,419  08-24-96 11:11a
+	NETCPQ   INF         6,816  08-24-96 11:11a
+	NETSNIP  INF         8,347  08-24-96 11:11a
+	NETCEM   INF         2,810  08-24-96 11:11a
+	CEMMF    INF        35,608  08-24-96 11:11a
+	MFOSI    INF         7,288  08-24-96 11:11a
+	NETOSI   INF         3,811  08-24-96 11:11a
+	NETBW    INF         4,152  08-24-96 11:11a
+	NETDLC   INF        12,751  08-24-96 11:11a
+	OSR2     INF         2,860  08-24-96 11:11a
+	NODRIVER INF         2,392  08-24-96 11:11a
+	OLE2     INF        25,965  08-24-96 11:11a
+	OHARE    INF        64,493  08-24-96 11:11a
+	OVERRIDE INF         7,229  08-24-96 11:11a
+	PCMCIA   INF        12,063  08-24-96 11:11a
+	PCMCIAMF INF           867  08-24-96 11:11a
+	PRTUPD   INF        20,851  08-24-96 11:11a
+	QUARTZ   INF        51,227  08-24-96 11:11a
+	IRDALAN  INF         2,125  08-24-96 11:11a
+	SCSI     INF        36,561  08-24-96 11:11a
+	SHELL    INF        49,033  08-24-96 11:11a
+	SHELL2   INF        46,936  08-24-96 11:11a
+	TAPI     INF         1,046  08-24-96 11:11a
+	TIMEZONE INF        47,015  08-24-96 11:11a
+	UNKNOWN  INF           462  08-24-96 11:11a
+	VIDCAP   INF         2,158  08-24-96 11:11a
+	WAVE     INF        62,629  08-24-96 11:11a
+	WORDPAD  INF        10,566  08-24-96 11:11a
+	RNA      INF        13,794  08-24-96 11:11a
+	BKUPPROP DLL        40,960  08-24-96 11:11a
+	CHEYPROP DLL        11,792  08-24-96 11:11a
+	RPLIMAGE DLL        23,040  08-24-96 11:11a
+	APPLETPP INF        22,326  08-24-96 11:11a
+	BKUPAGNT INF         2,893  08-24-96 11:11a
+	CHEYENNE INF         1,657  08-24-96 11:11a
+	DECPSMW4 INF         2,436  08-24-96 11:11a
+	MMOPT    INF        35,602  08-24-96 11:11a
+	MSNETMTG INF        27,471  08-24-96 11:11a
+	MSWEBSVR INF        32,012  08-24-96 11:11a
+	SHELL3   INF         7,272  08-24-96 11:11a
+	HPNETPRN INF         5,297  08-24-96 11:11a
+	NETCD    INF        30,838  08-24-96 11:11a
+	NETDCA   INF        16,782  08-24-96 11:11a
+	NETSMC32 INF         2,593  08-24-96 11:11a
+	NETUB    INF        13,101  08-24-96 11:11a
+	NETNCR   INF        16,525  08-24-96 11:11a
+	NETRACAL INF         8,055  08-24-96 11:11a
+	NETEVX   INF         2,634  08-24-96 11:11a
+	NETZNOTE INF         3,831  08-24-96 11:11a
+	NETTULIP INF         1,980  08-24-96 11:11a
+	NETFTP   INF         4,125  08-24-96 11:11a
+	UNIMODV  INF           952  08-24-96 11:11a
+	ATHENA   INF        11,796  08-24-96 11:11a
+	LICENSE  TXT        10,127  08-24-96 11:11a
+	NET      INF        21,759  08-24-96 11:11a
+	NETTRANS INF        37,435  08-24-96 11:11a
+	FONTS    INF        31,737  08-24-96 11:11a
+	PRECOPY  INF         2,901  08-24-96 11:11a
+	SETUPC   INF        57,629  08-24-96 11:11a
+	SETUPPP  INF         4,550  08-24-96 11:11a
+	WINVER   INF        56,062  08-24-96 11:11a
+	LAYOUT   INF        54,590  08-24-96 11:11a
+	LAYOUT1  INF         5,729  08-24-96 11:11a
+	
+	Contents of the Win95_02.cab File
+	---------------------------------
+	
+	FORMAT   COM        49,543  08-24-96 11:11a
+	SYS      COM        18,967  08-24-96 11:11a
+	HIMEM    SYS        33,191  08-24-96 11:11a
+	FDISK    EXE        63,116  08-24-96 11:11a
+	ATTRIB   EXE        15,252  08-24-96 11:11a
+	EDIT     COM        69,886  08-24-96 11:11a
+	REGEDIT  EXE       105,984  08-24-96 11:11a
+	SCANDISK INI         7,332  08-24-96 11:11a
+	DEBUG    EXE        20,554  08-24-96 11:11a
+	CHKDSK   EXE        28,096  08-24-96 11:11a
+	UNINSTAL EXE        76,496  08-24-96 11:11a
+	MSGCCMCS DLL        69,120  08-24-96 11:11a
+	ACCESS   CPL        57,344  08-24-96 11:11a
+	ENABLE3  DLL         6,160  08-24-96 11:11a
+	ACCSTAT  EXE        24,576  08-24-96 11:11a
+	ACCESS   HLP        34,923  08-24-96 11:11a
+	ENABLE   VXD        43,197  08-24-96 11:11a
+	ENABLE2  VXD        25,154  08-24-96 11:11a
+	ENABLE4  VXD        21,629  08-24-96 11:11a
+	CLIPBOOK CNT           440  08-24-96 11:11a
+	CLIPBRD  CNT           411  08-24-96 11:11a
+	HYPERTRM CNT           910  08-24-96 11:11a
+	MSPAINT  CNT         1,978  08-24-96 11:11a
+	PACKAGER CNT           940  08-24-96 11:11a
+	HTICONS  DLL        20,480  08-24-96 11:11a
+	HYPERTRM DLL       326,144  08-24-96 11:11a
+	MFC30    DLL       322,832  08-24-96 11:11a
+	
+	Contents of the Win95_03.cab File
+	---------------------------------
+	
+	MFC40    DLL       924,432  08-24-96 11:11a
+	MFCD30   DLL        55,808  08-24-96 11:11a
+	MFCN30   DLL        15,872  08-24-96 11:11a
+	MFCO30   DLL       133,392  08-24-96 11:11a
+	MFCO40   DLL       384,512  08-24-96 11:11a
+	MSPCX32  DLL        32,256  08-24-96 11:11a
+	MSVCRT20 DLL       253,952  08-24-96 11:11a
+	CALC     EXE        59,392  08-24-96 11:11a
+	CLIPBOOK EXE        57,664  08-24-96 11:11a
+	CLIPBRD  EXE        17,376  08-24-96 11:11a
+	CLIPSRV  EXE        16,608  08-24-96 11:11a
+	HYPERTRM EXE         6,144  08-24-96 11:11a
+	MSPAINT  EXE       311,808  08-24-96 11:11a
+	NOTEPAD  EXE        34,304  08-24-96 11:11a
+	PACKAGER EXE        65,024  08-24-96 11:11a
+	PBRUSH   EXE         4,608  08-24-96 11:11a
+	SYSEDIT  EXE        19,488  08-24-96 11:11a
+	WRITE    EXE         5,120  08-24-96 11:11a
+	PCXIMP32 FLT        26,624  08-24-96 11:11a
+	CLIPBOOK HLP        20,029  08-24-96 11:11a
+	CLIPBRD  HLP        13,015  08-24-96 11:11a
+	HYPERTRM HLP        21,473  08-24-96 11:11a
+	MSPAINT  HLP        43,620  08-24-96 11:11a
+	PACKAGER HLP        23,529  08-24-96 11:11a
+	AT&TMA~1 HT            829  08-24-96 11:11a
+	COMPUS~1 HT            829  08-24-96 11:11a
+	MCIMAI~1 HT            829  08-24-96 11:11a
+	WRITE32  WPC        62,464  08-24-96 11:11a
+	RSRC16   DLL         1,312  08-24-96 11:11a
+	RSRC32   DLL         4,608  08-24-96 11:11a
+	RSRCMTR  EXE        15,360  08-24-96 11:11a
+	DIALER   CNT           552  08-24-96 11:11a
+	DIALER   EXE        63,240  08-24-96 11:11a
+	DIALER   HLP        19,193  08-24-96 11:11a
+	3DBLOCKS BMP         2,754  08-24-96 11:11a
+	CLOUDS   BMP       307,514  08-24-96 11:11a
+	FOREST   BMP        66,146  08-24-96 11:11a
+	GATOR    BMP        32,850  08-24-96 11:11a
+	MESH     BMP        36,182  08-24-96 11:11a
+	SAND     BMP        32,854  08-24-96 11:11a
+	WEAVE2   BMP         4,678  08-24-96 11:11a
+	WORDPAD  CNT         1,920  08-24-96 11:11a
+	MFCANS32 DLL       133,904  08-24-96 11:11a
+	WORDPAD  EXE       183,296  08-24-96 11:11a
+	WORDPAD  HLP        28,422  08-24-96 11:11a
+	MSWD6_32 WPC       164,352  08-24-96 11:11a
+	WIN      CNF        24,503  08-24-96 11:11a
+	IOSCLASS DLL        10,560  08-24-96 11:11a
+	PIFMGR   DLL        82,816  08-24-96 11:11a
+	WINASPI  DLL         3,536  08-24-96 11:11a
+	WNASPI32 DLL        16,384  08-24-96 11:11a
+	BIGMEM   DRV         9,962  08-24-96 11:11a
+	MMSOUND  DRV         3,104  08-24-96 11:11a
+	SORT     EXE        25,882  08-24-96 11:11a
+	IOS      INI        10,444  08-24-96 11:11a
+	WINOA386 NEW        61,680  08-24-96 11:11a
+	ASPI2HLP SYS         1,105  08-24-96 11:11a
+	APIX     VXD        29,401  08-24-96 11:11a
+	BIOSXLAT VXD        18,077  08-24-96 11:11a
+	CDFS     VXD        59,129  08-24-96 11:11a
+	
+	Additional query words: 95 dirwin dirwin95 osr2
+	
+	======================================================================
+	Keywords          : kbdiskdir win95 kbdir 
+	Technology        : kbWin95search kbOPKSearch
+	Version           : WINDOWS:95
+	
+	=============================================================================
+	

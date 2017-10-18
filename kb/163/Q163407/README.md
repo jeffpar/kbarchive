@@ -1,0 +1,66 @@
+---
+layout: page
+title: "Q163407: HOWTO: Use OLE Automation with Visual SourceSafe"
+permalink: kb/163/Q163407/
+---
+
+## Q163407: HOWTO: Use OLE Automation with Visual SourceSafe
+
+	Article: Q163407
+	Product(s): Microsoft FoxPro
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbinterop kbAutomation kbSSafe500 kbvfp300 kbvfp500 kbvfp600
+	Last Modified: 01-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 6.0 
+	- Microsoft Visual SourceSafe for Windows, version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Visual SourceSafe version 5.0 is an OLE automation server and can be called
+	programmatically from within Visual FoxPro. This article describes how to invoke
+	the OLE server and demonstrates some simple functionality.
+	
+	MORE INFORMATION
+	================
+	
+	Assuming that Visual SourceSafe Version 5.0 is installed, and that Tastrade.pjx
+	has been added to a SourceSafe database, the following code sample will check
+	out main.prg to the current Visual FoxPro default directory:
+	
+	        oSSafe = CREATEOBJECT("SourceSafe")
+	
+	        * Syntax is object.open(path to srcsafe.ini, username, password)
+	        oSSafe.open("C:\vss\srcsafe.ini","guest","")
+	
+	        * The next 2 lines show some of the object's properties
+	        ? oSSafe.username
+	        ? oSSafe.currentproject
+	
+	        * The next line assumes FoxApps is the Visual SourceSafe project and
+	        * Tastrade is a subproject
+	        oFile = oSSafe.vssitem("$/FoxApps/Tastrade/main.prg")
+	        oFile.Checkout()
+	        oFile.Checkin()
+	
+	For more information on the Visual SourceSafe object model, you can use a tool
+	such as the Visual Basic object browser. Documentation is also available on the
+	World Wide Web at:
+	
+	  http://www.microsoft.com/ssafe
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbinterop kbAutomation kbSSafe500 kbvfp300 kbvfp500 kbvfp600 
+	Technology        : kbVFPsearch kbSSafeSearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbSSafe500
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

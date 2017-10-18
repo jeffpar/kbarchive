@@ -1,0 +1,115 @@
+---
+layout: page
+title: "Q257772: FIX: Updates to Textbox Bound to MSRDC Fail, rdUseClientBatch"
+permalink: kb/257/Q257772/
+---
+
+## Q257772: FIX: Updates to Textbox Bound to MSRDC Fail, rdUseClientBatch
+
+	Article: Q257772
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): WINDOWS:6.0
+	Operating System(s): 
+	Keyword(s): kbCtrl kbDatabase kbDataBinding kbMDAC kbODBC _IK12473 kbVBp600bug kbGrpDSVBDB kbGrpDSM
+	Last Modified: 23-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Updates to a TextBox control that is bound to a Remote Data control fail to
+	update in certain instances. This behavior occurs when you use a cursor type of
+	rdUseClientBatch and the BatchUpdate method is called before moving the cursor
+	off the edited row.
+	
+	RESOLUTION
+	==========
+	
+	There are several possible workarounds for this problem:
+	
+	- Use a server-side cursor for your data access.
+	
+	- Call the MoveNext method before calling BatchUpdate.
+	
+	- Call the UpdateRow method before calling BatchUpdate.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed that this is a bug in the Microsoft products that are
+	listed at the beginning of this article. This bug was corrected in the latest
+	service pack for Visual Studio 6.0.
+	
+	For additional information about Visual Studio service packs, click the following
+	article numbers to view the articles in the Microsoft Knowledge Base:
+	
+	  Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+	
+	  Q194295 HOWTO: Tell That a Visual Studio Service Pack Is Installed
+	
+	To download the latest Visual Studio service pack, visit the following Microsoft
+	Web site:
+	
+	  http://msdn.microsoft.com/vstudio/downloads/updates.asp
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	The following code uses an ODBC Datasource named Pubs that connects to the Pubs
+	database in SQL Server.
+	
+	1. In Visual Basic, create a new Standard EXE project. Form1 is added to the
+	  project by default.
+	
+	2. From the Project menu, click to select Components. From the list of available
+	  Components, select Microsoft Remote Data Control 6.0.
+	
+	3. Place a Remote DataControl, a Textbox, and a CommandButton control onto
+	  Form1. MSRDC1, Text1, and Command1 are created by default.
+	
+	4. Set the following properties for MSRDC1:
+	
+	  DataSourceName: Pubs
+	  SQL: SELECT * From Titles
+	  CursorDriver: 3 - rdUseClientBatch
+	  LockType: 5 - rdConcurBatch
+	  Prompt: 1 - rdDriverNoPrompt
+	
+	5. Set the following properties for Text1:
+	
+	  DataSource: MSRDC1
+	  DataField: Title
+	
+	6. Add the following code to Form1's Code Window:
+	
+	  Option Explicit
+	
+	  Private Sub Command1_Click()
+	  '   MSRDC1.UpdateRow
+	     MSRDC1.Resultset.BatchUpdate
+	     MSRDC1.Refresh
+	  End Sub
+	
+	7. Run the code. Change the value in Text1, click Command1, and note how the old
+	  value returns to the box. Uncomment the UpdateRow line of code, and note that
+	  the data remains in the box and is updated back to the database.
+	
+	Additional query words: sp4
+	
+	======================================================================
+	Keywords          : kbCtrl kbDatabase kbDataBinding kbMDAC kbODBC _IK12473 kbVBp600bug kbGrpDSVBDB kbGrpDSMDAC kbDSupport kbVS600sp4fix kbVS600sp5fix 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600
+	Version           : WINDOWS:6.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

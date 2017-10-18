@@ -1,0 +1,55 @@
+---
+layout: page
+title: "Q126108: Cannot Share Program Manager Group Files"
+permalink: kb/126/Q126108/
+---
+
+## Q126108: Cannot Share Program Manager Group Files
+
+	Article: Q126108
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:3.1,3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 07-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows versions 3.1, 3.11 
+	- Microsoft Windows for Workgroups versions 3.1, 3.11 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Shared Program Manager group (.GRP) files become damaged.
+	
+	CAUSE
+	=====
+	
+	Sharing Program Manager group files is not supported for the following reasons:
+	
+	- When it is writing to .GRP files, Program Manager does not take file
+	  attributes into account.
+	
+	- Program Manager copies icons from their source, renders them at the correct
+	  color depth for the video driver, and saves them in the .GRP file. If
+	  different computers sharing the same .GRP files use different video drivers,
+	  the .GRP files become damaged.
+	
+	WORKAROUND
+	==========
+	
+	To work around this behavior, use a logon script to copy the .GRP files to each
+	user's Windows directory.
+	
+	Additional query words: 3.10 3.11 login read-only corrupt
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin310 kbWin311 kbWFW310 kbWFW311
+	Version           : WINDOWS:3.1,3.11
+	
+	=============================================================================
+	

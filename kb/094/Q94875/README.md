@@ -1,0 +1,125 @@
+---
+layout: page
+title: "Q94875: Reinstalling Original Windows TrueType Fonts"
+permalink: kb/094/Q94875/
+---
+
+## Q94875: Reinstalling Original Windows TrueType Fonts
+
+	Article: Q94875
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:3.1,3.11
+	Operating System(s): 
+	Keyword(s): win31
+	Last Modified: 27-SEP-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows versions 3.1, 3.11 
+	- Microsoft Windows for Workgroups versions 3.1, 3.11 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article discusses how to reinstall the original TrueType fonts on machines
+	running Windows 3.1 and Windows for Workgroups.
+	
+	MORE INFORMATION
+	================
+	
+	Follow the procedures below to reinstall the original TrueType fonts:
+	
+	Enabling TrueType Fonts
+	-----------------------
+	
+	Before installing any TrueType fonts, you must enable TrueType fonts; otherwise,
+	the font names are installed, but the fonts will have either EGA or VGA
+	resolution, not TrueType.
+	
+	To enable TrueType, proceed as follows:
+	
+	1. From Control Panel, choose the Fonts icon.
+	
+	2. Choose the TrueType button.
+	
+	3. Select the "Enable TrueType Fonts" option, then choose OK.
+	
+	Reinstalling TrueType Fonts
+	---------------------------
+	
+	To reinstall the fonts, proceed as follows:
+	
+	1. From Control Panel, choose the Fonts icon.
+	
+	2. Choose the Add button.
+	
+	3. Place the disk (see the appropriate list below) containing the .TT_ files
+	  into your floppy disk drive.
+	
+	  The following list identifies the original Windows 3.1 TrueType fonts and
+	  their disk locations (for each disk size).
+	
+	                                               Disk Number
+	  Filename       Size    Date      Time  1.44 MB  1.2 MB  720K
+	  ------------------------------------------------------------
+	
+	  ARIAL.TTF      65692  03-10-92   3:10a    5       6      9
+	  ARIALBD.TTF    66080  03-10-92   3:10a    5       6      9
+	  ARIALBI.TTF    71880  03-10-92   3:10a    5       6      9
+	  ARIALI.TTF     61656  03-10-92   3:10a    5       6      B
+	  COUR.TTF       72356  03-10-92   3:10a    5       6      9
+	  COURBD.TTF     78564  03-10-92   3:10a    5       6      9
+	  COURBI.TTF     84436  03-10-92   3:10a    5       6      9
+	  COURI.TTF      80588  03-10-92   3:10a    5       6      9
+	  TIMES.TTF      83260  03-10-92   3:10a    5       6      9
+	  TIMESBD.TTF    79804  03-10-92   3:10a    5       6      9
+	  TIMESBI.TTF    76452  03-10-92   3:10a    5       6      9
+	  TIMESI.TTF     78172  03-10-92   3:10a    5       6      9
+	  SYMBOL.TTF     64516  03-10-92   3:10a    6       6      9
+	  WINGDING.TTF   71052  03-10-92   3:10a    6       6      A
+	
+	  The following list identifies the original Windows for Workgroups TrueType
+	  fonts and their disk locations (for each disk size).
+	
+	                                              Disk Number
+	  Filename       Size    Date     Time     1.44 MB   1.2 MB
+	  ---------------------------------------------------------
+	
+	  ARIAL.TTF      52532  10-01-92   3.11a       6       6
+	  ARIALBD.TTF    51841  10-01-92   3.11a       7       7
+	  ARIALBI.TTF    57729  10-01-92   3.11a       7       6
+	  ARIALI.TTF     47643  10-01-92   3.11a       7       7
+	  COUR.TTF       53733  10-01-92   3.11a       7       6
+	  COURBD.TTF     56871  10-01-92   3.11a       7       6
+	  COURBI.TTF     64330  10-01-92   3.11a       7       6
+	  COURI.TTF      60757  10-01-92   3.11a       7       6
+	  TIMES.TTF      69074  10-01-92   3.11a       6       6
+	  TIMESBD.TTF    63489  10-01-92   3.11a       7       6
+	  TIMESBI.TTF    60539  10-01-92   3.11a       7       6
+	  TIMESI.TTF     61880  10-01-92   3.11a       7       6
+	  SYMBOL.TTF     50450  10-01-92   3.11a       6       6
+	  WINGDING.TTF   50450  10-01-92   3.11a       7       6
+	
+	4. From the Control Panel window, choose the Fonts icon.
+	
+	5. Choose the Add button.
+	
+	6. Select the floppy drive containing the disk from step 3. At this point, all
+	  of the .TT_ fonts appear in the installed fonts section.
+	
+	7. Choose the Select All button and choose the OK button. This will reinstall
+	  the selected fonts into the Windows SYSTEM subdirectory.
+	
+	8. Repeat steps 3 and 4 for each disk containing TrueType fonts.
+	
+	Additional query words: 3.10 3.11 TTF TT_ setup deleted re-install tt true type
+	
+	======================================================================
+	Keywords          : win31 
+	Technology        : kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin310 kbWin311 kbWFW310 kbWFW311
+	Version           : WINDOWS:3.1,3.11
+	
+	=============================================================================
+	

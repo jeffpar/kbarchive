@@ -1,0 +1,94 @@
+---
+layout: page
+title: "Q209155: Combat Flight Simulator: Overview of Multiplayer Game Issues"
+permalink: kb/209/Q209155/
+---
+
+## Q209155: Combat Flight Simulator: Overview of Multiplayer Game Issues
+
+	Article: Q209155
+	Product(s): Microsoft Home Games
+	Version(s): WINDOWS:1.0
+	Operating System(s): 
+	Keyword(s): kbui fsim kbimu
+	Last Modified: 07-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Combat Flight Simulator: WWII Europe Series, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes some of the issues that you may encounter when you play a
+	multiplayer game of Microsoft Combat Flight Simulator: WWII Europe Series.
+	
+	MORE INFORMATION
+	================
+	
+	The following issues can occur when you play a multiplayer game of Combat Flight
+	Simulator:
+	
+	- Symptom: When you attempt to start an Internet multiplayer game of Combat
+	  Flight Simulator, the game may stop responding (hang).
+	
+	  Cause: This behavior can occur if you do not connect to the Internet by using
+	  Dial-Up Networking before you start Combat Flight Simulator in Full Screen
+	  mode.
+	
+	  Resolution: To resolve this issue, use either of the following methods:
+	
+	   - Press ALT+ENTER to play the game inside a window before you start an
+	     Internet multiplayer game.
+	
+	   - Start your Internet connection before you start Combat Flight Simulator.
+	
+	- Symptom: When you play a multiplayer game of Combat Flight Simulator, some
+	  aircraft may appear to fly through buildings or terrain features.
+	
+	  Cause: This behavior can occur if either of the following conditions is true:
+	
+	   - A player configured a different level of dynamic scenery or scenery
+	     complexity than the rest of the players.
+	
+	   - A player installed a different scenery file than the rest of the players.
+	
+	- Symptom: If you attempt to transmit visual models of other players' converted
+	  aircraft, you may be disconnected from the game or you may experience other
+	  erratic behavior.
+	
+	  Cause: This behavior can occur if you use a modem connection to connect to the
+	  Combat Flight Simulator game.
+	
+	  NOTE:If the host of a multiplayer game selects the Restrict Aircraft option,
+	  you cannot fly any imported or converted aircraft during that game.
+	
+	  This includes the Sopwith Camel, which is an imported Microsoft Flight
+	  Simulator 98 aircraft.
+	
+	- When you play a Squadron game in Combat Flight Simulator, you can see your
+	  team's score at the bottom of the Heads-Up Display (HUD).
+	
+	  If you want to see your individual score, press the D key.
+	
+	  NOTE: When you press the D key, your aircraft is put in a suspended state
+	  until you press the D key again.
+	
+	  For additional information about the suspended state in multiplayer games,
+	  click the article number below to view the article in the Microsoft Knowledge
+	  Base:
+	
+	  Q194775 Combat Flight Simulator: Potential Cheating in Multiplayer Games
+	
+	Additional query words: 1.00 msgame combatfs cfs
+	
+	======================================================================
+	Keywords          : kbui fsim kbimu 
+	Technology        : _IKkbbogus kbGamesSearch kbCombatFlightSim kbCombatFlightSimSearch kbSimSearch
+	Version           : WINDOWS:1.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

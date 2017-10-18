@@ -1,0 +1,93 @@
+---
+layout: page
+title: "Q259321: XWEB: Outlook Web Access Error Replying or Forwarding Messages"
+permalink: kb/259/Q259321/
+---
+
+## Q259321: XWEB: Outlook Web Access Error Replying or Forwarding Messages
+
+	Article: Q259321
+	Product(s): Microsoft Exchange
+	Version(s): 5.5
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 22-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Outlook Web Access, version 5.5 
+	- Microsoft Exchange Server, version 5.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If you use Outlook Web Access (OWA) to reply to or forward e-mail messages, the
+	following error message may be displayed:
+	
+	  Failed to open item, your item does not exist in this folder. It may have
+	  been deleted.
+	
+	CAUSE
+	=====
+	
+	This problem can occur if Active Server Pages (ASP) pages are corrupted or
+	missing.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, remove and reinstall Outlook Web Access:
+	
+	NOTE: These steps assume that Autorun for the CD-ROM drive is turned on. If
+	Autorun is not turned on for the CD-ROM drive, run Setup.exe from Windows
+	Explorer, and then go to step 4 of the following steps.
+	
+	1. Insert the Microsoft Exchange Server version 5.5 CD-ROM.
+	
+	2. Click "Setup Server and Components".
+	
+	3. Click "Microsoft Exchange Server Setup".
+	
+	4. Click Add/Remove.
+	
+	5. Clear Outlook Web Access, and then click Continue.
+	
+	6. When you are prompted with Are you sure you want to remove this item?, click
+	  Yes.
+	
+	7. After Setup finishes, rename the Exchsrvr\Webdata folder.
+	
+	8. Insert the Exchange Server 5.5 CD-ROM again, and click "Setup Server and
+	  Components".
+	
+	9. Click "Microsoft Exchange Server Setup".
+	
+	10. Click Add/Remove, select Outlook Web Access, and then click Continue.
+	
+	11. Complete the installation of Outlook Web Access.
+	
+	12. Install the latest Exchange Server 5.5 Service Pack.
+	
+	Another resolution to this issue is to re-register the Cdo.dll and Cdohtml.dll
+	files. To do so, run the Regsvr32.exe program after you install OWA. This
+	utility resets the affected registry settings by reregistering the Cdo.dll
+	file:
+	
+	1. At the command prompt, run Regsvr32.exe. Use the full path to the Cdo.dll
+	  file.
+	
+	2. At the command prompt, run Regsvr32.exe. Use the full path to the Cdohtml.dll
+	  file.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbOutlookSearch kbExchangeSearch kbExchange550 kbZNotKeyword2 kbOWASearch kbOWA550
+	Version           : :5.5
+	Issue type        : kbprb
+	
+	=============================================================================
+	

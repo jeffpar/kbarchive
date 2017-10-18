@@ -1,0 +1,57 @@
+---
+layout: page
+title: "Q136660: Windows Software Compatibility List"
+permalink: kb/136/Q136660/
+---
+
+## Q136660: Windows Software Compatibility List
+
+	Article: Q136660
+	Product(s): Windows for Workgroups and Windows NT Networking Issues
+	Version(s): WINDOWS:95; winnt:4.0; :
+	Operating System(s): 
+	Keyword(s): win95 win98kbfaq
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 95 
+	- Microsoft Windows 98 
+	- Microsoft Windows NT Server version 4.0 
+	- Microsoft Windows NT Workstation version 4.0 
+	- Microsoft Windows NT Server, Enterprise Edition 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The Windows Software Compatibility List (SCL)--also known as the Application
+	Compatibility List, or ACL--contains a list of programs that have been tested
+	with Windows.
+	
+	MORE INFORMATION
+	================
+	
+	You can search for products that carry the Made for Windows logo on the
+	Microsoft Web site at:
+	
+	  http://www.microsoft.com/windows/compatible/
+	
+	The SCL is also included with the Windows 95 Support Assistant. For information
+	about obtaining the Windows 95 Support Assistant, please see the following
+	article in the Microsoft Knowledge Base:
+	
+	  Q134363 Windows 95 Support Assistant Available
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : win95 win98 kbfaq
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTS400search kbWinNTS400 kbWin95search kbWin98search kbZNotKeyword3 kbWin98
+	Version           : WINDOWS:95; winnt:4.0; :
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

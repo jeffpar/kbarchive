@@ -1,0 +1,152 @@
+---
+layout: page
+title: "Q259891: VFP 6.0 Sample: Using the DateTimePicker's CallBack Field"
+permalink: kb/259/Q259891/
+---
+
+## Q259891: VFP 6.0 Sample: Using the DateTimePicker's CallBack Field
+
+	Article: Q259891
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:6.0
+	Operating System(s): 
+	Keyword(s): kbfile kbSample kbActiveX kbCtrl kbvfp600 kbGrpDSFox kbDSupport
+	Last Modified: 10-NOV-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Dtpcallb.exe is a sample that provides an example of how to use the CallBack
+	field feature in the CustomFormat property of the DateTimePicker control.
+	
+	MORE INFORMATION
+	================
+	
+	The following file is available for download from the Microsoft Download
+	Center:
+	
+	  Dtpcallb.exe
+	  (http://download.microsoft.com/download/vfox60/sample1/6/win98/en-us/Dtpcallb.exe)
+	
+	Release Date: May-24-2000
+	
+	For additional information about how to download Microsoft Support files, click
+	the following article number to view the article in the Microsoft Knowledge
+	Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft scanned this file for viruses. Microsoft used the most current
+	virus-detection software that was available on the date that the file was
+	posted. The file is stored on secure servers that prevent any unauthorized
+	changes to the file.
+	
+	The Dtpcallb.exe file contains the following files:
+	
+	+-----------------------+
+	| File name    | Size   | 
+	+-----------------------+
+	| Dtpcallb.scx | 2,232  | 
+	+-----------------------+
+	| Dtpcallb.sct | 20,769 | 
+	+-----------------------+
+	| ReadMe.txt   | 3,383  | 
+	+-----------------------+
+	
+	About the DateTimePicker's CallBack Fields
+	------------------------------------------
+	
+	The DateTimePicker control allows you to specify the format used to display the
+	date or time using the CustomFormat property. By using string fragments to
+	specify the format fields, you can format the datetime display to suit your
+	needs. One of these format fields is a CallBack field, which allows you to
+	customize the output displayed in the control's display area. To declare a
+	CallBack field, you must include one or more "X" characters (ASCII Code 88)
+	anywhere in the body of the format string. CallBack fields are displayed in
+	left-to-right order.
+	
+	The DateTimePicker control had three events that are used specifically for
+	CallBack fields: FormatSize, Format, and CallBackKeyDown. For each of these
+	events, the CallBack field value is passed to the method so that you may code
+	the appropriate responses for each CallBack field in the CustomFormat property.
+	
+	The FormatSize event is triggered by the control to determine the size required
+	for each CallBack field. This event only fires once for each CallBack field in
+	the CustomFormat property. The size returned by this event is used to allocate
+	space in the control's display area for the largest value that is returned by
+	the Format event.
+	
+	The Format event is triggered by the control each time it is refreshed, and is
+	fired for each CallBack field in the CustomFormat property. The character string
+	value returned by this event is displayed in the control's display area in place
+	of the string fragment used to define the CallBack field.
+	
+	The CallBackKeyDown event is triggered when a KeyDown event occurs while a
+	CallBack field is selected in the control. Just like the up/down spinner buttons
+	on the control, the UP ARROW or DOWN ARROW keys on the keyboard allow you to
+	"spin" through the valid date/time values in the control while that field in the
+	control is selected. Because the up/down spinner buttons do not work with a
+	CallBack field, you may want to simulate the actions that occur using the UP
+	ARROW or DOWN ARROW keys from the keyboard by using the CallBackKeyDown event.
+	
+	PLEASE NOTE: This simulation does not enable the spinner buttons to work with the
+	CallBack field or fields.
+	
+	The CustomFormat string used in the following sample:
+	
+	  MM->(XXXX) dd->(XX) yyy
+	
+	displays a date in the DateTimePicker with the following components:
+	
+	- a two-digit month, followed by ->
+	
+	- the first CallBack field, which contains the month's name within parentheses
+	
+	- a two-digit day, followed by ->
+	
+	- the second CallBack field, which contains the day of the week name within
+	  parentheses
+	
+	- a four-digit year
+	
+	About This Example
+	------------------
+	
+	This example demonstrates the ability to change the language used in the
+	DateTimePicker control using CallBack fields. While running the form, you may
+	choose a language (English, French, German, or Spanish) from a combo box. The
+	DateTimePicker displays the month, day, and year. For the month and day, the
+	control displays the appropriate month and day of week names in the selected
+	language. The user may use the spinner buttons to spin through the values for
+	the month, day, and year. The user may also use the UP ARROW and DOWN ARROW keys
+	from the keyboard to "spin" through the values for the month, month name, day,
+	day of week, or year. A text box on the form displays the current contents of
+	the Value property of the DateTimePicker control.
+	
+	REFERENCES
+	==========
+	
+	For more information about the DateTimePicker control, please see that topic in
+	the Windows Controls Help file, CMCTL298.CHM, usually located where you have
+	installed your MSDN Library.
+	
+	For additional information on the DateTimePicker control, click the article
+	number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q259646 SAMPLE: DTPICKER.EXE How to Use the DateTimePicker Control
+	
+	Additional query words: Dtpcallb
+	
+	======================================================================
+	Keywords          : kbfile kbSample kbActiveX kbCtrl kbvfp600 kbGrpDSFox kbDSupport 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+	Version           : WINDOWS:6.0
+	
+	=============================================================================
+	

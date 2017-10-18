@@ -1,0 +1,239 @@
+---
+layout: page
+title: "Q76761: WUGNET.TXT: Putting Windows on a Network"
+permalink: kb/076/Q76761/
+---
+
+## Q76761: WUGNET.TXT: Putting Windows on a Network
+
+	Article: Q76761
+	Product(s): Microsoft Windows 3.x Retail Product
+	Version(s): 1.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 10-OCT-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows with Multimedia Extensions, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The following information is contained in the Multimedia Extensions version 1.0
+	WUGNET.TXT file. The Setup program copies this file to the Windows with
+	Multimedia Extensions directory.
+	
+	This information does not apply to later versions of Windows.
+	
+	MORE INFORMATION
+	================
+	
+	--------------------------
+	WUGNET.TXT ONLINE DOCUMENT
+	--------------------------
+	
+	PUTTING WINDOWS ON A NETWORK
+	============================
+	
+	This file is intended for system administrators or anyone who will
+	install Windows on a network to be shared by multiple users.
+	
+	The Microsoft License Agreement that came with your Windows package
+	gives you permission to install Windows on a network. For information
+	on this license, see the Grant of License section of this agreement or
+	contact the Microsoft Information Center.
+	
+	The files on the CD-ROM may be compressed. To  put Windows with
+	Multimedia Extensions on the network, you must decompress these files
+	by using the Expand decompression program that is included with
+	Windows. To operate Expand efficiently, you will need to create an
+	MS-DOS batch file. The following procedure contains the commands
+	necessary to create this batch file.
+	
+	This procedure assumes you are copying Windows from the CD-ROM in
+	CD-ROM drive L to the \\WINDOWS network directory on network disk
+	drive W and that you must decompress these files. You should replace
+	the pathnames in these examples with the actual ones you are using,
+	where appropriate.
+	
+	To Install Windows on a Network:
+	--------------------------------
+	
+	1. Connect to the network.
+	
+	2. Change to the directory where you want to put the shared copy of
+	  Windows.
+	
+	3. Type copy con expall.bat at the DOS prompt.
+	
+	  This DOS command means that what you type next will be copied into
+	  EXBALL.BAT batch file. You can use any filename for this batch file
+	  as long as it contains the .BAT extension.
+	
+	4. Type the following at the DOS prompt
+	
+	     l:
+	     for %%i in (*.*) do w:\windows\expand %%i w:\windows\%%i
+	     w:
+	
+	  This MS-DOS code creates a program that will allow you to enter the
+	  pathnames of the source and destination of the Windows files.
+	
+	5. At the DOS prompt, press CTRL+Z.
+	
+	  This MS-DOS command closes the batch files.
+	
+	6. Insert the CD-ROM into drive L and type the following at the DOS
+	  prompt:
+	
+	     copy l:expand.exe w:\windows
+	
+	  The Expand decompression program is copied to your network Windows
+	  directory.
+	
+	7. Now type the following:
+	
+	     expall l:*.* w:\windows
+	
+	  This command will run the EXPALL batch file program, which copies
+	  and expands the files from the Windows disks to the Windows
+	  directory on network disk drive W. You should enter the network
+	  disk drive and directory of your choice.
+	
+	8. Make all Windows files and the network share read-only.
+	
+	Users may now connect to this directory and run Setup.
+	
+	Giving Users Access to Network Applications
+	===========================================
+	
+	You can give users easier access to applications running on the
+	network by modifying the SETUP.INF file when you put Windows on the
+	network. This text file is included with windows and remains in the
+	shared windows directory.
+	
+	Windows setup uses this file, among other reasons, to determine the
+	initial contents of the user's Program Manager groups. By modifying
+	the file, you can add applications to these groups and customize their
+	settings.
+	
+	The [progman.groups] section of SETUP.INF lists the groups in the
+	Program Manager window. Following this section is a list of the
+	applications that are displayed as icons in each group when a user
+	starts Windows. Each application is listed by title, pathname, icon
+	filename, and icon number. These fields are separated by commas. The
+	icon fields are optional.
+	
+	If you want Windows to install an application that is on the network
+	and place it in the user's Program Manager window, you need to add to
+	SETUP.INF a title (of your choice) and the pathname of that
+	application.
+	
+	You have the option of specifying which icon will be displayed by
+	including  an icon filename and/or an icon number.
+	
+	The icon filename identifies the file that contains the icon you want
+	to use. If you want to use an icon that is assigned to another
+	application, you can enter that application's filename as the icon
+	filename. If you don't specify an icon filename, the displayed icon
+	will be one from the application file. Or, if the application file
+	does not contain any icons, the icon will come from Program Manager.
+	
+	If the file you select contains more than one icon, you can specify
+	the one you want to use by entering the appropriate icon number. This
+	number corresponds to the order in which the icon is listed in the
+	file. If you do not enter an icon number, Program Manager will use the
+	first icon listed in the file.
+	
+	To Add a Network Application to a User's Program Manager Window
+	---------------------------------------------------------------
+	
+	1. Open the SETUP.INF file by using Write.
+	
+	2. Choose the No Conversion option in the Write dialog box.
+	
+	3. In the section for the group where you want the application to
+	  appear, type the program title, pathname, and, optionally, the icon
+	  filename and icon number of the application. The fields must be
+	  separated by commas.
+	
+	4. Choose Save from the File menu to save the changes.
+	
+	The following are examples of different entries that you could put in
+	SETUP.INF if you wanted to add a shared copy of Microsoft Word to a
+	user's Program Manager window.
+	
+	  "Microsoft Word",k:\word\word.exe
+	
+	  "Microsoft Word",k:\word\word.exe,progman.exe
+	
+	  "Microsoft Word",k:\word\word.exe,,2
+	
+	  "Microsoft Word",k:\word\word.exe,progman.exe,2
+	
+	Keeping a User's Files Off a Shared Directory
+	=============================================
+	
+	When a user runs an application, Program Manager changes the user's
+	directory to the one that contains the application. As a result, a
+	user running a shared application from the network might accidentally
+	leave personal files in the shared directory. These files will use up
+	disk space and possibly interfere with other users.
+	
+	You can avoid this problem when you add the application to SETUP.INF.
+	First, make sure the application is located on the user's path. Then,
+	instead of typing the network pathname for the application, type the
+	user's personal Windows directory followed by the application
+	filename.
+	
+	For example, if EXCEL.EXE is located in K:\APPS, and that directory is
+	in the user's path, type c:\excel.exe in SETUP.INF. Then, when the
+	user selects the Excel icon, Windows will change to the user's
+	directory (C:\) and run Microsoft Excel from the user's path. Any
+	document files the user creates will stay in the user's directory
+	rather than in the shared network directory.
+	
+	Putting Additional Network Files on a User's System
+	===================================================
+	
+	When a user runs the network version of Setup, Windows will copy
+	selected files to the user's system. You can copy additional files to
+	the user's Windows directory by adding the filenames to the [net]
+	section of the user's SETUP.INF file.
+	
+	To Put Additional Files in the User's Windows Directory
+	-------------------------------------------------------
+	
+	1. Open the SETUP.INF file by using a text editor, such as Notepad.
+	
+	2. find the [net] section of the file. (If you are using Notepad, you
+	  can do this by choosing Find from the Search menu, type [net], and
+	  choosing OK.)
+	
+	3. Type a drive number, a colon, the filename, and a title (optional)
+	  for the file you want to copy.
+	
+	  You must enter a drive number, but it does not matter what number
+	  you use. Include a title only if you want a message to appear
+	  during Setup that indicates when this file is being copied to the
+	  user's disk.
+	
+	The following are acceptable entries in the [net] section of
+	SETUP.INF:
+	
+	  2:NEW.PIF
+	
+	  2:NEW.PIF, "Network Application Settings"
+	
+	Additional query words: MMWIN kbmm readme 1.00
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinMultiXSearch kbWinMultiX100
+	Version           : :1.0
+	
+	=============================================================================
+	

@@ -1,0 +1,69 @@
+---
+layout: page
+title: "Q126861: Mail Err Msg: The Network Path You Entered Could Not Be Found"
+permalink: kb/126/Q126861/
+---
+
+## Q126861: Mail Err Msg: The Network Path You Entered Could Not Be Found
+
+	Article: Q126861
+	Product(s): Microsoft Windows 3.x Retail Product
+	Version(s): WINDOWS:3.1,3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 24-OCT-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows for Workgroups versions 3.1, 3.11 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you try to connect to an existing Post Office in Windows for Workgroups
+	Mail, you receive the following error message:
+	
+	  The network path you entered could not be found
+	
+	CAUSE
+	=====
+	
+	This error can occur if you do not have an available network drive letter for
+	Mail to use to connect to the Post Office. When this occurs, Mail tries to
+	connect to the Post Office using network drive M. If that drive letter is not
+	available, Mail tries to use the next available drive letter before drive M. If
+	no other drive letters are available, Mail returns the error message stated
+	above.
+	
+	RESOLUTION
+	==========
+	
+	Adjust the LASTDRIVE= statement in the CONFIG.SYS file to reflect the last
+	possible drive letter. For example, add the following line to the CONFIG.SYS
+	file if it does not already exist:
+	
+	  LASTDRIVE=Z
+	
+	NOTE: You can use any text editor (such as Notepad) to edit the CONFIG.SYS file.
+	After you edit the file, save and then close it and then restart your computer.
+	
+	MORE INFORMATION
+	================
+	
+	Some network DOS requesters, such as Novell NetWare's NETX.EXE, require the
+	LASTDRIVE statement to be set to a letter other than Z. Changing the value of
+	the LASTDRIVE statement in these configurations can limit network functionality.
+	If you cannot change the LASTDRIVE statement, disconnect some of your network
+	drives to provide available drive letters.
+	
+	Additional query words: 3.10 3.11 ms-mail last drive
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbWFWSearch kbWFW310 kbWFW311
+	Version           : WINDOWS:3.1,3.11
+	
+	=============================================================================
+	

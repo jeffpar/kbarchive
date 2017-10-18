@@ -1,0 +1,249 @@
+---
+layout: page
+title: "Q123337: HOWTO: How SNA Server Communicates with Other SNA Server Compute"
+permalink: kb/123/Q123337/
+---
+
+## Q123337: HOWTO: How SNA Server Communicates with Other SNA Server Compute
+
+	Article: Q123337
+	Product(s): Microsoft SNA Server
+	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
+	Operating System(s): 
+	Keyword(s): kbnetwork kbsna211sp1 kbsna211sp2 kbsna300sp1 kbsna300sp2 kbsna300sp3 sna4 kbsna400sp1
+	Last Modified: 12-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 2.0, 2.1, 2.11, 2.11 SP1, 2.11 SP2, 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 4.0, 4.0 SP1 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about editing the registry. Before you edit the registry, make sure you understand how to restore it if a problem occurs. For information about how to do this, view the "Restoring the Registry" Help topic in Regedit.exe or the "Restoring a Registry Key" Help topic in Regedt32.exe.
+	
+	SUMMARY
+	=======
+	
+	SNA Server uses broadcasts to propagate its Service Table updates to other SNA
+	server computers in the domain. This is necessary to keep all SNA Server
+	computers abreast of any configuration change that is made or any action that is
+	being taken in the SNA Server domain. SNA Server version 2.1 and later provides
+	choices that allow an administrator of an SNA Server network to optimize the way
+	this Service Table propagation occurs. This article should be read as a
+	supplement to the Server Broadcasts dialog box Help file that can be launched
+	from within the Server Broadcasts dialog box.
+	
+	MORE INFORMATION
+	================
+	
+	SNA Server 2.0
+	--------------
+	
+	By default, SNA Server 2.0 sends broadcasts using the following method:
+	
+	- WriteFile API call:
+	
+	SNA Server uses a WriteFile API call to send broadcasts to other SNA Server
+	computers in the domain. It does this by submitting a WriteFile API call that is
+	sent in turn over all network protocols that the Workstation Service is bound
+	to. For instance, if the Workstation Service is bound to NetBEUI, TCP/IP, and
+	NWLink NetBIOS, SNA Server sends MailSlot broadcasts over all three of these
+	protocols. Sending MailSlot broadcasts over all transports is a function of the
+	WriteFile API call. This may cause unnecessary network traffic, however. In SNA
+	Server 2.0, there is no way to disable this other than to remove unnecessary
+	protocols from the Network applet in Control Panel.
+	
+	- IPX Sockets if NWLink is installed:
+	
+	If NWLink is installed, SNA Server 2.0 will send a mailslot broadcast over NWLink
+	NetBIOS as described above, using the WriteFile API AND over a well- known IPX
+	socket.
+	
+	- TCP/IP MailSlots:
+	
+	WARNING: Using Registry Editor incorrectly can cause serious problems that may
+	require you to reinstall your operating system. Microsoft cannot guarantee that
+	problems resulting from the incorrect use of Registry Editor can be solved. Use
+	Registry Editor at your own risk.
+	
+	For information about how to edit the registry, view the "Changing Keys And
+	Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+	Information in the Registry" and "Edit Registry Data" Help topics in
+	Regedt32.exe. Note that you should back up the registry before you edit it.
+	
+	If the SNA Server computers are divided by TCP/IP routers, then enable the
+	following registry parameter:
+	
+	     HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Snabase\Parameters\ 
+	     : EnableIPMailSlots:REG_SZ:YES
+	
+	With this value enabled, SNA Server will send MailSlot broadcasts to domain
+	controllers in the domain using only TCP/IP, even though other protocols may be
+	installed. If the SNA Server computers do not reside on a domain controller with
+	this option chosen, no SNA Server computer will [ASCII 147]listen[ASCII 148] for
+	these MailSlots.
+	
+	- For Comm Server Support:
+	
+	WARNING: Using Registry Editor incorrectly can cause serious problems that may
+	require you to reinstall your operating system. Microsoft cannot guarantee that
+	problems resulting from the incorrect use of Registry Editor can be solved. Use
+	Registry Editor at your own risk.
+	
+	For information about how to edit the registry, view the "Changing Keys And
+	Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+	Information in the Registry" and "Edit Registry Data" Help topics in
+	Regedt32.exe. Note that you should back up the registry before you edit it.
+	
+	By default, SNA Server 2.0 has turned on support for Comm Server Gateways,
+	sending specific MailSlot broadcasts that they can recognize. If there are no
+	Comm Server computers in the domain, add the following value to:
+	
+	     HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Snabase\Parameters\ 
+	     : CommServerSupport:REG_SZ:NO
+	
+	Setting this value to NO will reduce broadcast traffic by nearly one-half.
+	
+	SNA Server 2.1, 2.11, 2.11SP1 and 2.11SP2
+	-----------------------------------------
+	
+	SNA Server Admin enables the user to choose how two or more SNA Server computers
+	communicate with each other. Go to the Server Broadcasts dialog box under the
+	Options menu in SNA Server Admin. This dialog box includes the following
+	choices:
+	
+	- Microsoft Networking
+	
+	- Novell NetWare (IPX/SPX)
+	
+	- Banyan Vines/IP
+	
+	- Windows Sockets (TCP/IP)
+	
+	- Router Server Broadcasts over IP routers
+	
+	  - SNA Server 2.0 servers in the same domain
+	  - DCA/Microsoft Comm Server Client Support
+	
+	- Microsoft Networking:
+	
+	When you select the [ASCII 147]Microsoft Networking[ASCII 148] option only, SNA
+	Server versions 2.1, 2.11, 2.11 SP1 and 2.11 SP2 send MailSlot broadcasts using
+	the WriteFile API, just as SNA Server 2.0 does by default. SNA Server does this
+	by submitting a WriteFile API call that is sent in turn over all network
+	protocols that the Workstation Service is bound to. For instance, if the
+	Workstation Service is bound to NetBEUI, TCP/IP, and NWLink NetBIOS, SNA Server
+	sends MailSlot broadcasts over all three of these protocols. Sending MailSlot
+	broadcasts over all transports is a function of the WriteFile API call. This may
+	cause unnecessary network traffic, however.
+	
+	- Native Transport Interface:
+	
+	Unlike 2.0, SNA Server versions 2.1, 2.11, 2.11 SP1 and 2.11 SP2 have options
+	that enable the user to choose to send over selected native transports instead
+	of using the WriteFile API call. These other choices are:
+	
+	- Novell NetWare (IPX/SPX)
+	
+	- Banyan Vines/IP
+	
+	- Windows Sockets (TCP/IP)
+	
+	For example, if TCP/IP is installed on all SNA Server computers, then you want to
+	deselect [ASCII 147]Microsoft Networking[ASCII 148] and select [ASCII
+	147]Windows Sockets (TCP/IP)[ASCII 148]. This will reduce the number of MailSlot
+	broadcasts by sending over only one transport - TCP/IP in this case.
+	
+	- Comm Server Support:
+	
+	If there are no DCA/Microsoft Comm Server clients or servers, disable the
+	following Comm Server Support options: "SNA Server 2.0 servers in the same
+	domain" and "DCA/Microsoft Comm Server Client Support".
+	
+	Clearing these values will reduce broadcast traffic by nearly one-half.
+	
+	- TCP/IP MailSlots:
+	
+	When SNA Server computers are separated by TCP/IP routers, select "Route Server
+	Broadcasts over IP routers" if there is an IP router separating SNA Server
+	computers. This is equivalent to setting EnableIPMailslots to YES under 2.0. As
+	in 2.0, SNA Server will send MailSlot broadcasts to domain controllers in the
+	domain over TCP/IP only, even though other protocols may be installed. For this
+	configuration, SNA Server computers must be installed on primary or backup
+	domain controllers. If the SNA Server computers do not reside on a domain
+	controller with this option chosen, no SNA Server computer will [ASCII
+	147]listen[ASCII 148] for these MailSlots. Note: This option can only be chosen
+	if [ASCII 147]Microsoft Networking[ASCII 148] is chosen.
+	
+	SNA Server 3.0 and 4.0
+	----------------------
+	
+	SNA Server Manager enables you to choose how two or more SNA Server computers
+	communicate with each other. Go to the Server Broadcasts tab under the
+	Properties page for the SNA Server Subdomain in SNA Server Manager. The Server
+	Broadcasts tab includes the following choices:
+	
+	- Microsoft Networking (Named Pipes)
+	
+	- IPX/SPX (Novell NetWare)
+	
+	- TCP/IP
+	
+	- Banyan Vines
+	
+	- Microsoft Networking:
+	
+	When you select only the "Microsoft Networking" option, SNA Server 3.0 and 4.0
+	sends MailSlot broadcasts using the WriteFile API, just as the previous versions
+	of SNA Server do by default. Version 3.0 and 4.0 does this by submitting a
+	WriteFile API call that is sent in turn over all network protocols that the
+	Workstation Service is bound to. For example, if the Workstation Service is
+	bound to NetBEUI, TCP/IP, and NWLink NetBIOS, SNA Server sends MailSlot
+	broadcasts over all three of these protocols. Sending MailSlot broadcasts over
+	all transports is a function of the WriteFile API call. This may cause
+	unnecessary network traffic, however.
+	
+	- Native Transport Interface:
+	
+	SNA Server 3.0 and 4.0 have options that enable you to choose to send over
+	selected native transports instead of using the WriteFile API call. These other
+	choices are:
+	
+	- IPX/SPX (Novell NetWare)
+	
+	- TCP/IP
+	
+	- Banyan Vines
+	
+	For example, if TCP/IP is installed on all SNA Server computers, then you want to
+	clear "Microsoft Networking" and select [ASCII 147]TCP/IP[ASCII 148]. This cuts
+	down on the number of MailSlot broadcasts by only sending over one transport -
+	TCP/IP in this case.
+	
+	- TCP/IP MailSlots:
+	
+	Unlike previous versions of SNA Server, SNA Server 3.0 and 4.0 does not have a
+	Route Server Broadcasts over IP routers" option. With SNA Server 3.0 and 4.0,
+	each SNA Server computer builds a list of other SNA Server computers in its
+	subdomain. The list of servers is built based on the current SNA Server
+	configuration file. During installation, the SNA Server 3.0 and 4.0 Setup
+	program tries to dynamically locate the primary SNA Server computer, based on a
+	UDP broadcast datagram. If this fails, the Setup program displays a prompt
+	asking for the primary SNA Server computer's name. Backup SNA Server computers
+	store in their registry the name of the primary SNA Server computer. Member SNA
+	Server computers store in their registry the names of all of the SNA Server
+	computers in their subdomain.
+	
+	Due to this change, SNA Server 3.0 and 4.0 does not have to be installed on
+	Windows NT domain controllers even if the subdomain spans IP routers.
+	
+	Additional query words: prodsna snafaq
+	
+	======================================================================
+	Keywords          : kbnetwork kbsna211sp1 kbsna211sp2 kbsna300sp1 kbsna300sp2 kbsna300sp3 sna4 kbsna400sp1 
+	Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ200 kbSNAServ211 kbSNAServ400 kbSNAServ210 kbSNAServ211SP1 kbSNAServ211SP2 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ300SP2
+	Version           : WINDOWS:2.0,2.1,2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

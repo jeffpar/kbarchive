@@ -1,0 +1,141 @@
+---
+layout: page
+title: "Q84331: BUG: Incorrect Jump to ERR Label in Windows DLLs"
+permalink: kb/084/Q84331/
+---
+
+## Q84331: BUG: Incorrect Jump to ERR Label in Windows DLLs
+
+	Article: Q84331
+	Product(s): Microsoft Fortran Compiler
+	Version(s): 5.1
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 07-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft FORTRAN for Windows, version 5.1 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Opening a file from within a Windows DLL (dynamic-linked library) created with
+	FORTRAN 5.1 may incorrectly branch to the ERR label specified in the OPEN
+	statement.
+	
+	The problem occurs only when all of the following conditions exist:
+	
+	- The name of the file to be opened is generated within the OPEN statement with
+	  a substring.
+	
+	- The substring used for the filename is specified using an integer variable as
+	  the substring index.
+	
+	- This substring is concatenated to another string or variable.
+	
+	- The ERR label has been specified within the OPEN statement.
+	
+	CAUSE
+	=====
+	
+	The problem occurs because of a call within the LDLLFEW.LIB library to an
+	internal routine called __FCchfr. Following the call to this routine, the AX
+	register becomes corrupted and the ERR label is branched to, even though the
+	file was successfully opened. The IOSTAT variable also contains incorrect
+	information after the OPEN operation. The same code compiled as an MS-DOS
+	executable, an OS/2 executable, or an OS/2 DLL does not produce the run-time
+	problem.
+	
+	RESOLUTION
+	==========
+	
+	To avoid this problem, use a temporary CHARACTER variable to assign the result
+	from the concatenation and substring operations. Then use this temporary
+	variable as the filename in the OPEN statement.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the library LDLLFEW.LIB shipped
+	with Microsoft FORTRAN version 5.1.
+	
+	This is not a problem in FORTRAN PowerStation.
+	
+	MORE INFORMATION
+	================
+	
+	Sample codes 1 and 2 together reproduce the problem. The solution suggested is
+	demonstrated in sample code 3.
+	
+	Sample Code 1
+	-------------
+	
+	This is the source code for the SAMPLE.FOR file:
+	
+	  c compile line: fl -MW sample.for
+	
+	        PROGRAM Sample
+	        INTEGER*4 Init
+	        CHARACTER*8 String
+	        String = 'Test'
+	        PRINT *, Init(String)   ! the Errant DLL is called here.
+	        END
+	
+	Sample Code 2
+	-------------
+	
+	This is the code for the SAM_DLL.FOR file:
+	
+	  c compile line: fl -GW -AW sam_dll.for
+	
+	        INTEGER*4 FUNCTION Init (String1)
+	        CHARACTER*8 String1
+	        INTEGER*4 Stat, i
+	        i = 4
+	        OPEN (1, FILE = String1(:i) // '.DAT', IOSTAT=Stat,
+	       +  ERR=20, STATUS='UNKNOWN')
+	        WRITE (1, *) 'In DLL,  Successful Open' ! Will not be reached.
+	
+	   20   CONTINUE                        ! Incorrectly, branches to here.
+	
+	        Init = Stat
+	        CLOSE (1)
+	        RETURN
+	        END
+	
+	Sample Code 3
+	-------------
+	
+	This is the code for the DLL with the suggested solutions:
+	
+	  c compile line: fl -GW -AW sam_dll.for
+	
+	        INTEGER*4 FUNCTION Init (String1)
+	        CHARACTER*8 String1
+	        CHARACTER*12 FileName
+	        INTEGER*4 Stat, i
+	        i = 4
+	        FileName = String1(:i) // '.DAT'   ! Temporary variable to store
+	                                           ! the filename.
+	        OPEN (1, FILE = FileName, IOSTAT=Stat, ERR=20, STATUS='UNKNOWN')
+	        WRITE (1, *) 'In DLL With Successful Open'
+	
+	   20   CONTINUE
+	
+	        Init = Stat
+	        CLOSE (1)
+	        RETURN
+	        END
+	
+	Additional query words: 5.10
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbFortranSearch kbFORTRAN510QuickWin
+	Version           : :5.1
+	
+	=============================================================================
+	

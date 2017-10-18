@@ -1,0 +1,71 @@
+---
+layout: page
+title: "Q262698: FIX: Visual C++ 6.0 Debugger Hangs on Multiprocessor Computers"
+permalink: kb/262/Q262698/
+---
+
+## Q262698: FIX: Visual C++ 6.0 Debugger Hangs on Multiprocessor Computers
+
+	Article: Q262698
+	Product(s): Microsoft C Compiler
+	Version(s): WINDOWS:6.0; winnt:
+	Operating System(s): 
+	Keyword(s): kbide kbVC kbVC600bug kbVS600sp4fix kbVS600sp5fix
+	Last Modified: 20-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+	- The Integrated Debugger 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The Visual C++ Debugger may stop responding (hang) when it is run on a computer
+	that has multiple processors.
+	
+	
+	CAUSE
+	=====
+	
+	This problem is caused by a bug in the Em.dll file, one of the Visual C++ 6.0
+	debugger files.
+	
+	RESOLUTION
+	==========
+	
+	Install the latest service pack for Visual Studio 6.0.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article. This bug was corrected in the next service pack for
+	Visual Studio 6.0.
+	
+	For additional information about Visual Studio service packs, click the article
+	numbers below to view the articles in the Microsoft Knowledge Base:
+	
+	  Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+	
+	  Q194295 HOWTO: Tell That a Visual Studio Service Pack Is Installed
+	
+	You can download the latest Visual Studio service pack from the following
+	Microsoft Web site:
+	
+	  Visual Studio Product Updates
+	  (http://msdn.microsoft.com/vstudio/downloads/updates.asp)
+	
+	Additional query words: sp4
+	
+	======================================================================
+	Keywords          : kbide kbVC kbVC600bug kbVS600sp4fix kbVS600sp5fix 
+	Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch kbIntegratedDebugger
+	Version           : WINDOWS:6.0; winnt:
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

@@ -1,0 +1,210 @@
+---
+layout: page
+title: "Q254117: HOWTO: Display Recordset 'Pages' in MSHFlexGrid Control"
+permalink: kb/254/Q254117/
+---
+
+## Q254117: HOWTO: Display Recordset 'Pages' in MSHFlexGrid Control
+
+	Article: Q254117
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): WINDOWS:6.0
+	Operating System(s): 
+	Keyword(s): kbVBp600 kbGrpDSVBDB kbDSupport
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Generally it is not a good idea to populate a Grid control with more than a 1000
+	rows, but there might be times when it is necessary to populate a Grid with many
+	times this number. When you do this, however, your application takes a large
+	performance hit at the beginning, sometimes taking several minutes after the
+	recordset is loaded to actually populate the grid.
+	
+	This article demonstrates one way to display thousands of records without having
+	to actually load them all at the same time. The is done by "paging" through the
+	recordset and only displaying the number of records that corresponds to the
+	number of rows visible in the grid. This particular sample uses the MSFlexGrid
+	control and is intended to show how to handle a read-only grid. With additional
+	code, you can update the underlying recordset but that is beyond the scope of
+	this particular article.
+	
+	MORE INFORMATION
+	================
+	
+	The following steps accomplish the task of populating the MSFlexgrid without
+	loading the entire recordset into the grid.
+	
+	1. Create a new Standard EXE Visual Basic project. Form1 is created by default.
+	
+	2. On the Project menu, click to select References, and then add a reference to
+	  Microsoft ActiveX Data Objects 2.x Library.
+	
+	3. On the Toolbar, right-click and select Components. Select the Microsoft
+	  FlexGrid control from the list of available controls. Add an MSFlexgrid
+	  Component to Form1. MSFlexGrid1 is created by default.
+	
+	4. Add a Vertical ScrollBar to the Form. VScroll1 will be created by default
+	
+	5. Paste the following code into the forms General Declarations section:
+	
+	  Dim Rs As New ADODB.Recordset
+	  Dim RecPages As Long
+	  Dim PageSize As Long
+	  Dim CurrentStart As Long
+	  Dim JustSet As Boolean
+	
+	  Private Sub Form_Load()
+	  Dim Cn As New ADODB.Connection
+	  Set Cn = New ADODB.Connection
+	  Set Rs = New ADODB.Recordset
+	  Cn.CursorLocation = adUseClient
+	
+	  'Jet Connection And Recordset
+	  'Cn.Open "Provider=Microsoft.Jet.Oledb.4.0;Data Source=C:\Northwind.mdb"
+	  'Rs.Open "Select * from Customers", Cn, adOpenStatic, adLockOptimistic
+	
+	  'SQL Connection and Recordset
+	  Cn.Open "PROVIDER=SQLOLEDB;server=YourSQLServer;uid=sa;pwd=;database=pubs;"
+	  Rs.Open "select * from [authors]", Cn, adOpenStatic, adLockOptimistic
+	
+	  CurrentStart = 0
+	
+	  'Set the Scroll bar to be in front of the grid
+	  VScroll1.ZOrder 0
+	  End Sub
+	
+	  Sub FillGrid(StartRec As Long, NumRecs As Long)
+	  MSFlexGrid1.Clear
+	  If StartRec <= 1 Then StartRec = 1
+	  Dim MyString As String
+	  Dim X As Long
+	  MSFlexGrid1.Visible = False
+	  MSFlexGrid1.Clear
+	  MSFlexGrid1.Rows = 1
+	  MSFlexGrid1.Cols = Rs.Fields.Count + 1
+	
+	  MSFlexGrid1.AddItem ""
+	  For X = StartRec To StartRec + NumRecs
+	      If X < Rs.RecordCount - 1 Then
+	          Rs.AbsolutePosition = X
+	          MyString = "" & Chr(9)
+	          
+	          For J = 0 To Rs.Fields.Count - 1
+	              If IsNull(Rs(J)) Then
+	                  A$ = " "
+	              Else
+	                  A$ = Rs(J)
+	              End If
+	              MyString = MyString & A$ & Chr(9)
+	          Next J
+	          MSFlexGrid1.AddItem MyString
+	      End If
+	  Next X
+	  MSFlexGrid1.AddItem ""
+	  MSFlexGrid1.Visible = True
+	  JustSet = True
+	  MSFlexGrid1.TopRow = 2
+	
+	  End Sub
+	
+	  Private Sub Form_Resize()
+	  JustSet = True
+	  MSFlexGrid1.Top = 30
+	  MSFlexGrid1.Left = 50
+	  MSFlexGrid1.Visible = True
+	  MSFlexGrid1.Height = Me.Height - 500
+	  MSFlexGrid1.Width = Me.Width - 200
+	  MSFlexGrid1.Clear
+	  MSFlexGrid1.Cols = 20
+	  MSFlexGrid1.Rows = 100
+	  MSFlexGrid1.TopRow = 1
+	  X = 1
+	  Do Until X = 100
+	      If MSFlexGrid1.RowIsVisible(X) = False Then
+	          PageSize = X - 1
+	          Exit Do
+	      End If
+	      X = X + 1
+	  Loop
+	
+	  MSFlexGrid1.Rows = 1
+	  MSFlexGrid1.Cols = 1
+	  RecPages = (Rs.RecordCount / PageSize) - 1
+	  VScroll1.Max = RecPages
+	  VScroll1.Min = 0
+	
+	  FillGrid CurrentStart, PageSize
+	  VScroll1.Top = MSFlexGrid1.Top + 30
+	  VScroll1.Left = (MSFlexGrid1.Width - VScroll1.Width) + 15
+	  MSFlexGrid1.LeftCol = 1
+	  If MSFlexGrid1.ColWidth(Rs.Fields.Count) + MSFlexGrid1.ColPos(Rs.Fields.Count) > MSFlexGrid1.Width Then
+	  TempVAr = MSFlexGrid1.RowHeight(1)
+	  Else
+	  TempVAr = 0
+	  End If
+	
+	  VScroll1.Height = (((PageSize + 1) * MSFlexGrid1.RowHeight(1)) + ((MSFlexGrid1.Height - 60) - (PageSize + 1) _
+	  * MSFlexGrid1.RowHeight(1))) - TempVAr
+	
+	  End Sub
+	
+	  Private Sub MSFlexGrid1_Scroll()
+	
+	  If JustSet = True Then JustSet = False: Exit Sub
+	
+	  If MSFlexGrid1.Row >= MSFlexGrid1.Rows - 3 Then
+	      CurrentStart = CurrentStart + 1
+	      If CurrentStart > Rs.RecordCount - 1 Then CurrentStart = Rs.RecordCount - 1
+	      FillGrid CurrentStart, PageSize
+	      MSFlexGrid1.SetFocus
+	      MSFlexGrid1.Row = MSFlexGrid1.Rows - 3
+	      If (VScroll1.Value + 1) * PageSize < CurrentStart Then VScroll1.Value = VScroll1.Value + 1
+	      Exit Sub
+	  End If
+	
+	  If MSFlexGrid1.Row <= 2 Then
+	      CurrentStart = CurrentStart - 1
+	      If CurrentStart < 1 Then CurrentStart = 1
+	      FillGrid CurrentStart, PageSize
+	      MSFlexGrid1.SetFocus
+	      MSFlexGrid1.Row = 3
+	      MSFlexGrid1.Row = 2
+	      If VScroll1.Value - 1 > 0 Then VScroll1.Value = VScroll1.Value - 1
+	      Exit Sub
+	  End If
+	      
+	      Call FillGrid(CurrentStart, PageSize)
+	      MSFlexGrid1.SetFocus
+	      
+	      
+	  End Sub
+	
+	  Private Sub VScroll1_Change()
+	  If VScroll1.Value * PageSize >= CurrentStart Then
+	  CurrentStart = CurrentStart + (PageSize)
+	  Else
+	  CurrentStart = CurrentStart - (PageSize)
+	  End If
+	  If CurrentStart < 1 Then CurrentStart = 1
+	  FillGrid CurrentStart, PageSize
+	  End Sub 
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbVBp600 kbGrpDSVBDB kbDSupport 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+	Version           : WINDOWS:6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

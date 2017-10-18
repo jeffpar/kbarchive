@@ -1,0 +1,65 @@
+---
+layout: page
+title: "Q60717: Using IBM Adapters and DMA Support on Full Duplex Lines"
+permalink: kb/060/Q60717/
+---
+
+## Q60717: Using IBM Adapters and DMA Support on Full Duplex Lines
+
+	Article: Q60717
+	Product(s): Microsoft LAN Manager
+	Version(s): 1.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 08-NOV-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- DCA/Microsoft Communications Server, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	When you use an IBM SDLC adapter for an X.25 link, a Direct Memory Access (DMA)
+	error appears in the connection trace in response to the SET LINK
+	CHARACTERISTICS command.
+	
+	This warning message is being displayed because the SDLC and X.25 link services
+	always ask the adapter driver to use DMA. If the driver has no DMA support, or
+	can't provide full duplex DMA, it returns a warning to the link service in the
+	form of a return code to the SET LINK CHARACTERISTICS command. The link services
+	log this return code at level 6 and continue.
+	
+	IBM SDLC adapters have only one DMA channel. X.25 is a full duplex protocol,
+	which means that data is normally being both transmitted and received at the
+	same time. This would require two DMA channels on the adapter to use it in DMA
+	mode. Therefore, since DMA can't be used, the driver falls back to using
+	character interrupts when the protocol requires simultaneous send/receive. In
+	practice, per-character interrupts can be sustained at 9600 baud, so this
+	warning does not necessarily indicate a problem.
+	
+	MORE INFORMATION
+	================
+	
+	Direct Memory Access (DMA) is a hardware feature that permits adapters to write
+	directly to memory rather than requesting that the CPU transfer the data. A
+	non-DMA adapter must interrupt the processor with each byte of information,
+	whereas a DMA adapter places the information in a predefined memory location and
+	interrupts the processor when a complete block has been transferred. An adapter
+	operating in DMA mode is less demanding on the CPU.
+	
+	In the case of SDLC connections, a PC AT type machine can support DMA to the SDLC
+	adapter, or to one of the MPCA adapters. The PS/2 can support DMA to both
+	adapters.
+	
+	Additional query words: 1.00
+	
+	======================================================================
+	Keywords          :  
+	Technology        : _IKkbbogus kbSNAServSearch kbDCAMSCommServ
+	Version           : :1.0
+	
+	=============================================================================
+	

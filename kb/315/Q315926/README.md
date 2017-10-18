@@ -1,0 +1,551 @@
+---
+layout: page
+title: "Q315926: Flight Simulator 2002: Troubleshooting Joystick Problems Part 1"
+permalink: kb/315/Q315926/
+---
+
+## Q315926: Flight Simulator 2002: Troubleshooting Joystick Problems Part 1
+
+	Article: Q315926
+	Product(s): Microsoft Home Games
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbimu
+	Last Modified: 07-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Flight Simulator 2002 
+	- Microsoft Flight Simulator 2002 Professional Edition 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you run Microsoft Flight Simulator 2002, you may see one or more of the
+	following symptoms:
+	
+	- The joystick behaves erratically.
+	
+	- The joystick does not respond.
+	
+	- The rudder or throttle does not respond.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, use the following troubleshooting methods in the order in
+	which they are presented. After each method, test to see if the issue is
+	resolved. If the issue continues to occur, proceed to the next method.
+	
+	NOTE: If you use a Logitech Warrior joystick, connect it to the game port. Do not
+	connect it to the serial port. The Logitech Warrior does not function properly
+	with Microsoft DirectX 5.0 or later when it is connected to a serial port.
+	
+	Verify That Your Operating System Supports Your Game Controller
+	---------------------------------------------------------------
+	
+	To enable support for the game port in Microsoft Windows NT 4.0, you must install
+	Windows NT 4.0 Service Pack 3 (SP3) or later. Windows NT 4.0 with SP3 or later
+	supports most analog game controllers. However, it does not support digital game
+	controllers.
+	
+	Microsoft Windows 95 and Microsoft Windows 98 support both analog and digital
+	game controllers. For best performance, verify that the latest version of the
+	game controller driver for your game controller is installed on your computer.
+	
+	The following table contains an operating system compatibility list for Microsoft
+	SideWinder game controllers. The table shows the compatibility for Windows 95,
+	Windows 98, Microsoft Windows Millennium Edition (Me), Microsoft Windows 2000,
+	and Microsoft Windows XP:
+	
+	  
+	  +-----------------------------------------------------------------------------------------------------------------------------+
+	  | Game Controller                       | Windows 95 | Windows 98 and Windows Me | Windows NT 4 | Windows 2000 and Windows XP | 
+	  +-----------------------------------------------------------------------------------------------------------------------------+
+	  | SideWinder standard                   | Yes        | Yes                       | Yes          | Yes                         | 
+	  +-----------------------------------------------------------------------------------------------------------------------------+
+	  | SideWinder 3DPro                      | Yes        | Yes                       | Yes *        | Yes                         | 
+	  +-----------------------------------------------------------------------------------------------------------------------------+
+	  | SideWinder Game Pad                   | Yes        | Yes                       | No           | Yes                         | 
+	  +-----------------------------------------------------------------------------------------------------------------------------+
+	  | SideWinder Plug and Play Game Pad     | No         | Yes                       | No           | Yes                         | 
+	  +-----------------------------------------------------------------------------------------------------------------------------+
+	  | SideWinder Game Pad Pro               | No         | Yes                       | No           | No **                       | 
+	  +-----------------------------------------------------------------------------------------------------------------------------+
+	  | SideWinder FreeStyle Pro              | Yes ***    | Yes                       | No           | Yes                         | 
+	  +-----------------------------------------------------------------------------------------------------------------------------+
+	  | SideWinder Dual Strike                | No         | Yes                       | No           | No **                       | 
+	  +-----------------------------------------------------------------------------------------------------------------------------+
+	  | SideWinder Joystick                   | No         | Yes                       | No           | Yes                         | 
+	  +-----------------------------------------------------------------------------------------------------------------------------+
+	  | SideWinder Precision Pro              | Yes ***    | Yes                       | No           | Yes                         | 
+	  +-----------------------------------------------------------------------------------------------------------------------------+
+	  | SideWinder Precision Pro 2            | No         | Yes                       | No           | Yes                         | 
+	  +-----------------------------------------------------------------------------------------------------------------------------+
+	  | SideWinder Force Feedback Pro         | Yes        | Yes                       | No           | Yes                         | 
+	  +-----------------------------------------------------------------------------------------------------------------------------+
+	  | SideWinder Force Feedback Pro 2       | No         | Yes                       | No           | Yes                         | 
+	  +-----------------------------------------------------------------------------------------------------------------------------+
+	  | SideWinder Precision Racing Wheel     | No         | Yes                       | No           | No **                       | 
+	  +-----------------------------------------------------------------------------------------------------------------------------+
+	  | SideWinder Force Feedback Wheel       | Yes        | Yes                       | No           | Yes                         | 
+	  +-----------------------------------------------------------------------------------------------------------------------------+
+	  | SideWinder Force Feedback Wheel (USB) | No         | Yes                       | No           | No **                       | 
+	  +-----------------------------------------------------------------------------------------------------------------------------+
+	
+	* NOTE: Windows NT 4.0 with Service Pack 3 or later only supports the SideWinder
+	3DPro joystick in analog mode.
+	
+	** NOTE: You can install and run SideWinder software version 4.0 on a Windows
+	2000-based computer or a Windows XP-based computer. However, not all features
+	may function as expected, and the SideWinder software may not function properly.
+	To install the SideWinder software on Windows 2000, you must log on as an
+	administrator.
+	
+	For additional information about Sidewinder software, Windows 2000, and Windows
+	XP, click the article numbers below to view the articles in the Microsoft
+	Knowledge Base:
+	
+	  Q253769 SideWinder Error Message: A Limitation Exists with Your Computer's
+	  Resources or Configuration
+	
+	  Q254463 SideWinder Error Message: Setup Has Detected You Are Running Windows
+	  2000
+	
+	*** NOTE: To use a hybrid game port and Universal Serial Bus (USB) game
+	controller with a Windows 95-based computer, you must connect the game
+	controller to the game port in your computer. Windows 95 does not support USB.
+	
+	NOTE: Unless otherwise indicated in the preceding table, support for all current
+	USB game controllers and game port/USB-only SideWinder game controllers is
+	included in Windows 98, Windows Me, and Windows 2000.
+	
+	Check the Game Controller Connection to the Game Port
+	-----------------------------------------------------
+	
+	If you use a game port game controller, verify that the game controller is
+	connected directly to the game port in your computer. "Daisy-chained" game
+	controllers or game port adapters can interfere with communication between the
+	game port and the game controller.
+	
+	If you use a USB game controller, verify that the game controller is connected
+	properly to the USB port in your computer or to a compatible USB hub that is
+	connected to the USB port in your computer.
+	
+	NOTE: Windows NT 4.0 does not support daisy-chained game controllers, game port
+	adapters, or USB game controllers.
+	
+	Disable the SideWinder Game Device Profiler
+	-------------------------------------------
+	
+	If you use a SideWinder game controller, disable the SideWinder Game Device
+	Profiler or SideWinder Game Controller software. To do this, right-click the
+	Game Device Profiler icon or the Game Controller Software icon in the status
+	area on the taskbar, and then click Unload or Disable.
+	
+	Confirm That Your Game Controller Is Assigned to Controller ID 1
+	----------------------------------------------------------------
+	
+	Many games do not recognize game controllers that are not assigned to Controller
+	ID 1. To verify that your game controller is assigned to Controller ID 1, follow
+	these steps:
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click Game Controllers.
+	
+	3. Click the Advanced tab.
+	
+	4. If the game controller that you want to use is not assigned to ID 1, click
+	  Change.
+	
+	  If the game controller that you want to use is assigned to ID 1, proceed to
+	  the "Confirm the Version of SideWinder Game Controller Software" section of
+	  this article.
+	
+	5. In the Game Controllers box, click the game controller that you want to use,
+	  and then click the UP ARROW or DOWN ARROW to change the Selected ID value to
+	  1.
+	
+	6. Click OK, and then click OK again.
+	
+	7. Quit Control Panel.
+	
+	Confirm the Version of SideWinder Game Controller Software
+	----------------------------------------------------------
+	
+	If you use a SideWinder USB-only game controller, verify that SideWinder Game
+	Controller software version 4.0 is installed on your computer.
+	
+	If you use a game port-only game controller or a hybrid game port/USB game
+	controller, verify that one of the following is installed on your computer:
+	SideWinder Game Device Profiler version 3.02 or earlier, or SideWinder Game
+	Controller software.
+	
+	If you use both SideWinder USB-only game controllers and SideWinder game port or
+	hybrid game port/USB game controllers, make sure that the following are
+	installed on your computer: SideWinder Game Controller software version 4.0 and
+	SideWinder Game Controller software version 3.02 or earlier.
+	
+	The following table lists the SideWinder game controllers that are supported by
+	each version of SideWinder Game Controller software:
+	
+	  
+	  +---------------------------------------------------------------------------+
+	  | Game controller                 | Version 4.0   | Version 3.02 or earlier | 
+	  +---------------------------------------------------------------------------+
+	  | SideWinder Game Pad Pro         | Supported     | Not supported           | 
+	  +---------------------------------------------------------------------------+
+	  | SideWinder Dual Strike          | Supported     | Not supported           | 
+	  +---------------------------------------------------------------------------+
+	  | SideWinder 3D Pro               | Not supported | Supported               | 
+	  +---------------------------------------------------------------------------+
+	  | SideWinder Game Pad 1.0         | Not supported | Supported               | 
+	  +---------------------------------------------------------------------------+
+	  | SideWinder Precision Pro        | Not supported | Supported               | 
+	  +---------------------------------------------------------------------------+
+	  | SideWinder Force Feedback Pro   | Not supported | Supported               | 
+	  +---------------------------------------------------------------------------+
+	  | SideWinder Force Feedback Wheel | Not supported | Supported               | 
+	  +---------------------------------------------------------------------------+
+	  | SideWinder Freestyle Pro        | Not supported | Supported               | 
+	  +---------------------------------------------------------------------------+
+	
+	If you use one of the SideWinder game controllers listed in the preceding table,
+	see the following Microsoft Web site to check whether a software update is
+	available for your game controller:
+	
+	  http://www.microsoft.com/hardware/sidewinder
+	
+	Calibrate the Game Controller
+	-----------------------------
+	
+	If you use a digital Microsoft SideWinder game controller with Microsoft
+	SideWinder Game Device software version 2.0 or later or Microsoft SideWinder
+	Game Controller software, the software calibrates the game controller
+	automatically.
+	
+	To use Microsoft SideWinder Game Device software version 2.0 to test the
+	calibration for your digital SideWinder game controller, follow these steps:
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click Game Controllers.
+	
+	3. On the Test tab, test all of the functions for your digital SideWinder game
+	  controller, and then click OK.
+	
+	4. Quit Control Panel.
+	
+	To use Microsoft SideWinder Game Controller software version 3.x or 4.0 to test
+	the calibration for your digital SideWinder game controller:
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click Game Controllers.
+	
+	3. On the General tab, click the game controller that you want to test in the
+	  Game Controllers box, and then click Properties.
+	
+	4. On the Test tab, test all of the functions for your digital SideWinder game
+	  controller, click OK, and then click OK again.
+	
+	5. Quit Control Panel.
+	
+	If you use an analog game controller, or if you use a Microsoft SideWinder 3D Pro
+	or a Microsoft SideWinder game pad with SideWinder Game Device software version
+	1.5, you may need to calibrate the game controller manually. To do this:
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click Game Controllers.
+	
+	3. Select the gaming device that you want to calibrate in the Controller column,
+	  and then click Properties.
+	
+	4. Click Calibrate, and then follow the instructions on the screen to calibrate
+	  the game controller. If you use a SideWinder 3D Pro with SideWinder software
+	  version 1.0, when you are prompted to press a button on the controller, press
+	  a button on the joystick, not on the joystick base.
+	
+	  NOTE: Because of differences among analog game controllers, you may notice a
+	  certain amount of deviation between the graphic display for the joystick
+	  position and the actual joystick movement. This is normal and does not affect
+	  the calibration of the game controller.
+	
+	5. When you receive the "You have successfully calibrated your device" message,
+	  click Finish.
+	
+	6. On the Test tab, test all of the functions for your game controller, and then
+	  click OK.
+	
+	7. Quit Control Panel.
+	
+	NOTE: No calibration option is available in SideWinder Game Device software
+	version 1.5 unless you install Microsoft Flight Simulator 98 with Microsoft
+	DirectX 5.0.
+	
+	If you cannot calibrate your game controller, or if your game controller does not
+	function properly when you test it, Windows may be unable to communicate
+	properly with the game controller. If this is true, contact the manufacturer of
+	your game controller for information about how to configure the device correctly
+	in Windows. You may also need to obtain and install the latest version of the
+	game controller device driver.
+	
+	If you calibrate and test the game controller successfully, start Flight
+	Simulator 2002 to test the game controller in the game. If the issue continues
+	to occur, calibrate the device in Flight Simulator 2002. To do this, follow
+	these steps:
+	
+	1. Start Flight Simulator 2002.
+	
+	2. On the main screen, click Settings.
+	
+	3. Click Calibrate Joystick.
+	
+	  NOTE: If Calibrate Joystick is unavailable, click Enable Joystick, and then
+	  click Calibrate Joystick.
+	
+	4. In the Game Controller box on the General tab, click the game controller that
+	  you want to use, and then click Properties.
+	
+	  NOTE: The procedure may be slightly different, depending on the version of
+	  your operating system and which version of Microsoft Sidewinder software is
+	  installed.
+	
+	5. On the Settings tab, move the sliders to the settings that you want, or click
+	  Calibrate, and then follow the instructions in the Device Calibration Wizard.
+	
+	6. Click OK, and then click OK again.
+	
+	Reset the Default Actions
+	-------------------------
+	
+	To reset the default actions assigned to the game controller, follow these
+	steps:
+	
+	1. Start a new flight in Flight Simulator 2002.
+	
+	2. On the main screen, click Settings.
+	
+	3. In the Controls box, click Assignments.
+	
+	4. On the Buttons/Keys tab, click Reset defaults.
+	
+	5. On the Joystick Axes tab, click Reset defaults.
+	
+	6. To check whether the default events are selected for your 4-axis game
+	  controller, verify that the Axis settings for each event match the settings
+	  in the following table:
+	
+	  
+	  +----------------------------+
+	  | Event         | Axis       | 
+	  +----------------------------+
+	  | Elevator axis | Y          | 
+	  +----------------------------+
+	  | Ailerons axis | X          | 
+	  +----------------------------+
+	  | Rudder axis   | Z Rotation | 
+	  +----------------------------+
+	  | Throttle axis | Slider     | 
+	  +----------------------------+
+	
+	  If the default events are not selected, proceed to the "Manually Assign
+	  Actions" method in part 2 of this article to assign the default events
+	  manually.
+	
+	  To view part 2 of this article, click the article number below:
+	
+	  Q315941 Flight Simulator 2002: Troubleshooting Joystick Problems (Part 2)
+	
+	  If the default event is assigned to an axis, but the event behaves in reverse
+	  (for example, up instead of down, or right instead of left), click to select
+	  or clear the check box under the Reverse column for that axis.
+	
+	7. Click OK.
+	
+	Rebuild the Fs2002.cfg File
+	---------------------------
+	
+	To rebuild the Fs2002.cfg file, press and hold down CTRL+SHIFT as you start
+	Flight Simulator and start a new flight. Continue to hold down CTRL+SHIFT until
+	the game is in Cockpit view.
+	
+	NOTE: When you rebuild the Fs2002.cfg file, some of your joystick settings may
+	change.
+	
+	If your game controller is installed properly and the Devices.cfg file contains
+	the default settings for your game controller, Flight Simulator 2002 adds the
+	appropriate entries for your game controller to the Fs2002.cfg file.
+	
+	The Devices.cfg file contains the following joystick headings:
+	
+	  [Generic]
+	  [Generic SLEW]
+	  [Generic Gamepad]
+	  [Generic Gamepad SLEW]
+	  [Mad Catz Panther XL]
+	  [Mad Catz Panther XL SLEW]
+	  [Gravis GrIP MultiPort]
+	  [Gravis GrIP MultiPort SLEW]
+	  [Logitech ThunderPad Digital]
+	  [Logitech ThunderPad Digital SLEW]
+	  [Microsoft SideWinder Freestyle Pro]
+	  [Microsoft SideWinder Freestyle Pro SLEW]
+	  [Microsoft USB SideWinder Game Pad]
+	  [Microsoft USB SideWinder Game Pad SLEW]
+	  [Microsoft SideWinder Force Feedback Wheel]
+	  [Microsoft SideWinder Force Feedback Wheel SLEW]
+	  [INTERACT Vortex 3D (General 2)]
+	  [INTERACT Vortex 3D (General 2) SLEW]
+	  [Logitech CyberMan 2]
+	  [Logitech CyberMan 2 SLEW]
+	  [Thrustmaster NASCAR Pro w/combined pedals]
+	  [Thrustmaster NASCAR Pro w/separate pedals SLEW]
+	  [Logitech WingMan Warrior]
+	  [Logitech WingMan Warrior SLEW]
+	  [Logitech WingMan Extreme Digital]
+	  [Logitech WingMan Extreme Digital SLEW]
+	  [INTERACT Vortex 3D (Flight Simulation)]
+	  [INTERACT Vortex 3D (Flight Simulation) SLEW]
+	  [Spacetec SpaceOrb 360]
+	  [Spacetec SpaceOrb 360 SLEW]
+	  [Creative GamePad]
+	  [Creative GamePad SLEW]
+	  [Gravis Gamepad]
+	  [Gravis Gamepad SLEW]
+	  [Gravis GrIP]
+	  [Gravis GrIP SLEW]
+	  [Gravis Analog Joystick]
+	  [Gravis Analog Joystick SLEW]
+	  [Gravis Analog Pro Joystick]
+	  [Gravis Analog Pro Joystick SLEW]
+	  [Thrustmaster Formula T1/T2 without adapter]
+	  [Thrustmaster Formula T1/T2 without adapter SLEW]
+	  [Thrustmaster Formula T1/T2 with adapter SLEW]
+	  [Thrustmaster Flight Control System]
+	  [Thrustmaster Flight Control System SLEW]
+	  [ThrustMaster Attack Throttle]
+	  [ThrustMaster Attack Throttle SLEW]
+	  [Logitech WingMan Light]
+	  [Logitech WingMan Light SLEW]
+	  [Logitech WingMan Extreme]
+	  [Logitech WingMan Extreme SLEW]
+	  [Logitech WingMan]
+	  [Logitech WingMan SLEW]
+	  [Logitech ThunderPad]
+	  [Logitech ThunderPad SLEW]
+	  [CH Flightstick]
+	  [CH Flightstick SLEW]
+	  [CH Flightstick Pro]
+	  [CH Flightstick Pro SLEW]
+	  [CH Virtual Pilot]
+	  [CH Virtual Pilot SLEW]
+	  [CH Virtual Pilot Pro]
+	  [CH Virtual Pilot Pro SLEW]
+	  [CH Flight Sim Yoke LE]
+	  [CH Flight Sim Yoke LE SLEW]
+	  [CH Flight Sim Yoke PC (Win98)]
+	  [CH Flight Sim Yoke PC (Win98) SLEW]
+	  [CH GameStick 14]
+	  [CH GameStick 14 SLEW]
+	  [CH GameStick 3D USB]
+	  [CH GameStick 3D USB SLEW]
+	  [CH GameStick 3D]
+	  [CH GameStick 3D SLEW]
+	  [CH Force FX Joystick (analog mode)]
+	  [CH Force FX Joystick (analog mode) SLEW]
+	  [Suncom Sceptor LCD]
+	  [Suncom Sceptor LCD SLEW]
+	  [Suncom SFS Flight Controller USB]
+	  [Suncom SFS Flight Controller USB SLEW]
+	  [Suncom SFS Throttle and SFS Flight Controller with Left grip]
+	  [Suncom SFS Throttle and SFS Flight Controller with Left grip SLEW]
+	  [Mad Catz Panther DX]
+	  [Mad Catz Panther DX SLEW]
+	  [Microsoft SideWinder game pad]
+	  [Microsoft SideWinder game pad SLEW]
+	  [Microsoft SideWinder]
+	  [Microsoft SideWinder SLEW]
+	  [Microsoft SideWinder 3D Pro]
+	  [Microsoft SideWinder 3D Pro SLEW]
+	  [Microsoft SideWinder Force Feedback Pro]
+	  [Microsoft SideWinder Force Feedback Pro SLEW]
+	  [Microsoft SideWinder Precision Pro]
+	  [Microsoft SideWinder Precision Pro SLEW]
+	  [Microsoft SideWinder Precision Pro (USB)]
+	  [Microsoft SideWinder Precision Pro (USB) SLEW]
+	  [Microsoft SideWinder Dual Strike]
+	  [Microsoft SideWinder Dual Strike SLEW]
+	  [CH FLIGHT SIM YOKE USB]
+	  [CH FLIGHT SIM YOKE USB SLEW]
+	  [CH PRO PEDALS USB]
+	  [CH PRO PEDALS USB SLEW]
+	  [CH Pro Pedals USB Rudder Pedals]
+	  [CH Pro Pedals USB Rudder Pedals SLEW]
+	  [Microsoft SideWinder Precision 2]
+	  [Microsoft SideWinder Precision 2 SLEW]
+	  [Microsoft SideWinder Force Feedback 2]
+	  [Microsoft SideWinder Force Feedback 2 SLEW]
+	  [SideWinder Precision 2 Joystick]
+	  [SideWinder Precision 2 Joystick SLEW]
+	  [SideWinder Force Feedback 2 Joystick]
+	  [SideWinder Force Feedback 2 Joystick SLEW]
+	
+	The settings under the SLEW headings determine how the game controller behaves in
+	Slew mode. The settings under the RUDDER headings determine how the game
+	controller behaves when the rudder is enabled. To enable the rudder settings,
+	click to select the Rudder check box on the Settings tab in the Game Controllers
+	tool in Control Panel.
+	
+	NOTE: If your game controller is not defined in the Devices.cfg file, Flight
+	Simulator 2002 may not assign any actions to the buttons on your game
+	controller. To manually assign actions to the buttons on your game control
+	device, proceed to the "Manually Assign Actions" method in part 2 of this
+	article.
+	
+	This article is continued in the following article in the Microsoft Knowledge
+	Base. To view part 2 of this article, click the article number below:
+	
+	  Q315941 Flight Simulator 2002: Troubleshooting Joystick Problems (Part 2)
+	
+	Install the Latest Version of Microsoft DirectX
+	-----------------------------------------------
+	
+	Download and install the latest version of DirectX from the following Microsoft
+	Web site:
+	
+	  http://www.microsoft.com/directx/homeuser/downloads/default.asp
+	
+	For additional information about how to obtain and install the latest version of
+	DirectX, click the article number below to view the article in the Microsoft
+	Knowledge Base:
+	
+	  Q179113 How to Download and Install DirectX
+	
+	MORE INFORMATION
+	================
+	
+	This article is part 1 of the "Flight Simulator 2002: Troubleshooting Joystick
+	Problems" article in the Microsoft Knowledge Base. To view part 2 of this
+	article, click the article number below:
+	
+	  Q315941 Flight Simulator 2002: Troubleshooting Joystick Problems (Part 2)
+	
+	The third-party products discussed in this article are manufactured by vendors
+	independent of Microsoft; we make no warranty, implied or otherwise, regarding
+	these products' performance or reliability.
+	
+	Additional query words: msgame
+	
+	======================================================================
+	Keywords          : kbimu 
+	Technology        : kbGamesSearch kbFlightSimSearch kbFlightSim2002 kbFlightSim2002Pro
+	Version           : :
+	Issue type        : kbprb
+	
+	=============================================================================
+	

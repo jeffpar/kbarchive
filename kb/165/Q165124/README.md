@@ -1,0 +1,168 @@
+---
+layout: page
+title: "Q165124: Australian Time Zones End Daylight Savings Time on Wrong Date"
+permalink: kb/165/Q165124/
+---
+
+## Q165124: Australian Time Zones End Daylight Savings Time on Wrong Date
+
+	Article: Q165124
+	Product(s): Microsoft Windows NT
+	Version(s): WinNT:3.5,3.51,4.0
+	Operating System(s): 
+	Keyword(s): kbsetup kbdomain
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+	- Microsoft Windows NT Server versions 3.5, 3.51., 4.0 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about editing the registry.
+	Before you edit the registry, make sure you understand how to restore it if
+	a problem occurs. For information about how to do this, view the "Restoring
+	the Registry" Help topic in Regedit.exe or the "Restoring a Registry Key"
+	Help topic in Regedt32.exe.
+	
+	SYMPTOMS
+	========
+	
+	Windows NT ends daylight savings time in the Brisbane, Melbourne, Sydney and
+	Adeliade time zones on the first Sunday in March. The time zones do not actually
+	officially switch back to standard time until the last Sunday of March.
+	
+	CAUSE
+	=====
+	
+	The date that Windows NT ends daylight savings time is set incorrectly in the
+	system registry.
+	
+	WORKAROUND
+	==========
+	
+	To work around this problem, do one of the following:
+	
+	- The Windows NT 4.0 Resource Kit includes a TZEDIT program. Use this program
+	  to change the affected time zones to end daylight savings time on the last
+	  Sunday in March.
+	
+	- If the Resource Kit is unavailable, make the following changes in the system
+	  registry.
+	
+	  WARNING: Using Registry Editor incorrectly can cause serious problems that may
+	  require you to reinstall your operating system. Microsoft cannot guarantee
+	  that problems resulting from the incorrect use of Registry Editor can be
+	  solved. Use Registry Editor at your own risk.
+	
+	For information about how to edit the registry, view the "Changing Keys And
+	Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+	Information in the Registry" and "Edit Registry Data" Help topics in
+	Regedt32.exe. Note that you should back up the registry before you edit it.
+	
+	  1. Start Registry Editor (Regedt32.exe).
+	
+	  2. In the HKEY_LOCAL_MACHINE subtree, find the subkey for the Adelaide time
+	     zone:
+	
+	     SOFTWARE\Microsoft\Windows NT\CurrentVersion\Time Zones\Cen.
+	     Australia Standard Time
+	
+	     NOTE: The above registry key is one path; it has been wrapped for
+	     readability.
+	
+	  3. Open the value TZI in your time zone key to get into the binary editor.
+	
+	  4. You should see binary information like this:
+	
+	     C6FDFFFF00000000C4FFFFFF0000030000000100020000000000000000000
+	     A00000005000200000000000000
+	
+	     NOTE: The above binary information is one line; it has been wrapped for
+	     readability.
+	
+	  5. Change this value to the following value:
+	
+	     C6FDFFFF00000000C4FFFFFF0000030000000500020000000000000000000
+	     A00000005000200000000000000
+	
+	     NOTE: The above binary information is one line; it has been wrapped for
+	     readability.
+	
+	  6. In the HKEY_LOCAL_MACHINE subtree find the subkey for the Brisbane,
+	     Melbourne, Sydney time zone:
+	
+	     SOFTWARE\Microsoft\Windows NT\CurrentVersion\Time Zones\Sydney
+	     Standard Time
+	
+	     NOTE: The above registry key is one path; it has been wrapped for
+	     readability.
+	
+	  7. Open the value TZI in your time zone key to get into the binary editor.
+	
+	  8. You should see binary information like this:
+	
+	     A8FDFFFF00000000C4FFFFFF0000030000000100020000000000000000000
+	     A00000005000200000000000000
+	
+	     NOTE: The above binary information is one line; it has been wrapped for
+	     readability.
+	
+	  9. Change this value to the following value:
+	
+	     A8FDFFFF00000000C4FFFFFF0000030000000500020000000000000000000
+	     A00000005000200000000000000
+	
+	     NOTE: The above binary information is one line; it has been wrapped for
+	     readability.
+	
+	  10. Quit Registry editor and restart your computer.
+	
+	  11. The system should now end Daylight Savings Time on the last Sunday in
+	     March.
+	
+	- You can also make the necessary registry changes using Regini.exe from the
+	  resource kit in conjunction with a text file that contains the following
+	  entries:
+	
+	  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion
+	  \Time zones\Cen. Australia Standard Time
+	  TZI = REG_BINARY 0x0000002c 0xfffffdc6 0x00000000 0xffffffc4 0x00030000
+	  0x00050000 0x00000002 0x00000000 0x000a0000 0x00050000 0x00000002
+	  0x00000000
+	
+	  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion
+	  \Time Zones\Sydney Standard Time
+	  TZI = REG_BINARY 0x0000002c 0xfffffda8 0x00000000 0xffffffc4 0x00030000
+	  0x00050000 0x00000002 0x00000000 0x000a0000 0x00050000 0x00000002
+	  0x00000000
+	
+	  Create this text file using Edit.com or Notepad with word wrap turned off. The
+	  text file can only contain ascii text characters. The key name has to be on
+	  one line, and the value on the next line, the value being spaced in 4 spaces.
+	  Save the text file using any eight-dot-three standard name you like. Then use
+	  regini as per the example below.
+	
+	  Example:
+	
+	  regini <filename>
+	
+	  This will automatically make the necessary changes for you.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Windows NT versions 3.51 and
+	4.0. We are researching this problem and will post new information here in the
+	Microsoft Knowledge Base as it becomes available.
+	
+	Additional query words: DST
+	======================================================================
+	Keywords          : kbsetup kbdomain 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS350 kbWinNTS350search
+	Version           : WinNT:3.5,3.51,4.0
+	Issue type        : kbbug
+	
+	=============================================================================
+	

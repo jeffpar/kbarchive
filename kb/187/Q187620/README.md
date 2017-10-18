@@ -1,0 +1,137 @@
+---
+layout: page
+title: "Q187620: Understanding Intranets Comments and Corrections"
+permalink: kb/187/Q187620/
+---
+
+## Q187620: Understanding Intranets Comments and Corrections
+
+	Article: Q187620
+	Product(s): Microsoft Press
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbdocerr
+	Last Modified: 07-JAN-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- MSPRESS Understanding Intranets ISBN 1-57231-702-7 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article contains information on known errors, corrections, and comments
+	relating to the Microsoft Press book "Understanding Intranets," ISBN
+	1-57231-702-7.
+	
+	Contents
+	--------
+	
+	- Page 23: Extra Word
+	
+	- Page 77: Typographical Error
+	
+	- Page 91: Typographical Error
+	
+	- Page 100: Text Corrections
+	
+	- Page 106: Text Correction
+	
+	- Page 111: Typographical Error
+	
+	- Page 212: Incorrect Cross-Reference
+	
+	- Page 359: Spelling Error
+	
+	MORE INFORMATION
+	================
+	
+	Page 23: Extra Word
+	-------------------
+	
+	Page 23, footnote 9, line 2:
+	Change: "This is done both in advance..."
+	To: "This is done in advance..."
+	
+	
+	Page 77: Typographical Error
+	----------------------------
+	
+	Page 77, paragraph 1, line 2:
+	Change: "Risk and Mitigation Strategies"
+	To: "Risks and Mitigation Strategies"
+	
+	
+	Page 91: Typographical Error
+	----------------------------
+	
+	Page 91, paragraph 4, line 1:
+	Change: "Risk and Mitigation Strategies"
+	To: "Risks and Mitigation Strategies"
+	
+	
+	Page 100: Text Corrections
+	--------------------------
+	
+	Page 100, paragraph 1, line 4:
+	Change: "To Block Access to..."
+	To: "To Block Spider Access to..."
+	
+	
+	Page 106: Text Correction
+	-------------------------
+	
+	Page 106, paragraph 3, line 4:
+	Change: "...see "Pretty Good Privacy"...)
+	To: "...see Pretty Good Privacy (PGP)"...)
+	
+	
+	Page 111: Typographical Error
+	-----------------------------
+	
+	Page 111, paragraph 1, line 1:
+	Change: "everyTom,"
+	To: "every Tom,"
+	
+	
+	Page 140: Typographical Error
+	-----------------------------
+	
+	Page 140, paragraph 3, line 5:
+	Change: "Risk and Mitigation Strategies"
+	To: "Risks and Mitigation Strategies"
+	
+	
+	Page 212: Incorrect Cross-Reference
+	-----------------------------------
+	
+	Page 212, paragraph 2, line 10:
+	Change: "page 165."
+	To: "page 164."
+	
+	
+	Page 359: Spelling Error
+	------------------------
+	
+	Page 359, footnote 4, line 3:
+	Change: "satelitte"
+	To: "satellite"
+	
+	
+	Microsoft Press is committed to providing informative and accurate books. All
+	comments and corrections listed above are ready for inclusion in future
+	printings of this book. If you have a later printing of the book, it may already
+	contain the above corrections.
+	
+	Additional query words: press strategic technologies
+	
+	======================================================================
+	Keywords          : kbdocerr 
+	Technology        : kbMSPressSearch
+	Version           : :
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

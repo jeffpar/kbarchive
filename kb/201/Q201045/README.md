@@ -1,0 +1,278 @@
+---
+layout: page
+title: "Q201045: HOWTO: Add Multiple Window Types to a Non-Document/View MDI App"
+permalink: kb/201/Q201045/
+---
+
+## Q201045: HOWTO: Add Multiple Window Types to a Non-Document/View MDI App
+
+	Article: Q201045
+	Product(s): Microsoft C Compiler
+	Version(s): 6.0
+	Operating System(s): 
+	Keyword(s): kbDocView kbMFC KbUIDesign kbVC600 kbGrpDSMFCATL kbArchitecture
+	Last Modified: 26-JUL-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The Microsoft Foundation Classes (MFC), included with:
+	   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+	   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+	   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+	   - Microsoft Visual C++.NET (2002) 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The following steps create a simple application with two types of windows, one
+	for drawing, the other for text, starting from the wizard-generated non document
+	view MDI application. At the end, the application has two CMDIChildFrame-derived
+	classes called CDrawFrame and CTextFrame, two CWnd-derived classes called
+	CDrawWnd and CTextWnd, and resources (accelerators, menus, icons, strings)
+	called IDR_DRAWTYPE and IDR_TEXTTYPE.
+	
+	The application has two types of windows, each with its own menu, accelerator
+	table, title and icon. More complex features like persistency are not
+	implemented in this code.
+	
+	MORE INFORMATION
+	================
+	
+	Step-by-Step Procedure
+	----------------------
+	
+	1. Create an MDI application with the MFC Application Wizard, and clear the
+	  'Document/View architecture support' option in the Application Type section.
+	  CChildFrame and CChildView are the default names the Wizard uses for frame
+	  and window classes. Rename these to CDrawFrame and CDrawWnd, respectively, in
+	  the Generated Classes section. Call the header and implementation files
+	  DrawFrm and DrawWnd.
+	
+	  If you want to paste the following code into your application without any
+	  changes, name your application class CNDVWApp.
+	
+	2. Delete the OnFileNew() handler declaration, definition and entry in the
+	  message map for the application class.
+	
+	3. Using the Add New Item menu on the Project menu, create a new header and
+	  source file called TextFrm.h and TextFrm.cpp. Copy DrawFrm.h and DrawFrm.cpp
+	  to TextFrm.h and TextFrm.cpp, respectively. In TextFrm.h and TextFrm.cpp,
+	  replace all occurrences of CDrawFrame with CTextFrame and DrawFrm with
+	  TextFrm.
+	
+	4. Similarly, create a new header and source file called TextWnd.h and
+	  TextWnd.cpp. Copy DrawWnd.h and DrawWnd.cpp to TextWnd.h and TextWnd.cpp,
+	  respectively. In TextWnd.h and TextWnd.cpp replace all occurrences of
+	  CDrawWnd with CTextWnd and DrawWnd with TextWnd.
+	
+	5. Change the m_wndView member of CTextFrame to be of CTextWnd type. Change the
+	  name of the included file DrawWnd.h to TextWnd.h.
+	
+	6. Include TextFrm.h in the implementation file for the application class after
+	  include of DrawFrm.h. The project should now compile.
+	
+	7. In Visual C++ 6.0 and earlier (Visual C++ .NET does not use Class Wizard),
+	  re-create the Class Wizard information, (.clw file), for the project. Close
+	  the workspace, delete the .clw file and reload the workspace. Next, invoke
+	  the Class Wizard, press Yes in the message box and then click the OK button
+	  in the dialog box to close the Class Wizard.
+	
+	8. Differentiate the two CWnd-derived classes for members and drawing.
+	
+	  In CDrawWnd:
+	
+	     // data members
+	     protected:
+	        CRect m_Ellipse;
+	        CRect m_Rectangle;
+	
+	     // initialization: replace existing contructor
+	     CDrawWnd::CDrawWnd():
+	        m_Ellipse(10, 10, 100, 100),
+	        m_Rectangle(5, 5, 105, 105)
+	     {
+	     }
+	
+	     // painting: replace existing OnPaint
+	     void CDrawWnd::OnPaint()
+	     {
+	         CPaintDC dc(this); // device context for painting
+	
+	         dc.Rectangle(m_Rectangle);
+	         dc.Ellipse(m_Ellipse);
+	     }
+	
+	  In CTextWnd:
+	
+	     // data members
+	     protected:
+	         CString m_Text;
+	
+	     // initialization: replace existing contructor
+	     CTextWnd::CTextWnd():
+	         m_Text("Text Window ")
+	     {
+	     }
+	
+	     // painting: replace existing OnPaint
+	     void CTextWnd::OnPaint()
+	     {
+	         CPaintDC dc(this); // device context for painting
+	         CRect r(10, 10, 400, 50);
+	         dc.DrawText(m_Text, r, DT_BOTTOM);
+	     }
+	
+	9. Delete the menu and accelerator handles in the application class and create
+	  the following:
+	
+	     HMENU m_hDrawMenu;
+	     HMENU m_hTextMenu;
+	     HACCEL m_hDrawAccel;
+	     HACCEL m_hTextAccel;
+	
+	10. Modify the application class's InitInstance() and ExitInstance() to load and
+	  unload resources IDR_DRAWTYPE and IDR_TEXTTYPE instead of the
+	  Wizard-generated resources.
+	
+	  For InitInstance():
+	
+	     HINSTANCE hInst = AfxGetResourceHandle();
+	     m_hDrawMenu  = ::LoadMenu(hInst, MAKEINTRESOURCE(IDR_DRAWTYPE));
+	     m_hTextMenu  = ::LoadMenu(hInst, MAKEINTRESOURCE(IDR_TEXTTYPE));
+	     m_hDrawAccel = ::LoadAccelerators(hInst, MAKEINTRESOURCE(IDR_DRAWTYPE));
+	     m_hTextAccel = ::LoadAccelerators(hInst, MAKEINTRESOURCE(IDR_TEXTTYPE));
+	
+	  For ExitInstance():
+	
+	     int CNDVWApp::ExitInstance()
+	     {
+	         if (m_hDrawMenu != NULL)
+	             FreeResource(m_hDrawMenu);
+	         if (m_hDrawAccel != NULL)
+	             FreeResource(m_hDrawAccel);
+	         if (m_hTextMenu != NULL)
+	             FreeResource(m_hTextMenu);
+	         if (m_hTextAccel != NULL)
+	             FreeResource(m_hTextAccel);
+	
+	         return CWinApp::ExitInstance();
+	     }
+	
+	11. In the menu IDR_MAINFRAME, delete the menu item 'New' and define 'New Draw'
+	  (ID_FILE_NEW_DRAW) and 'New Text' (ID_FILE_NEW_TEXT). In the toolbar,
+	  IDR_MAINFRAME, delete the ID_FILE_NEW button and add two new buttons for
+	  ID_FILE_NEW_DRAW and ID_FILE_NEW_TEXT.
+	
+	12. Define handlers for these two items in the application class.
+	
+	  For OnFileNewDraw():
+	
+	     void CNDVWApp::OnFileNewDraw()
+	     {
+	         CMainFrame* pFrame = STATIC_DOWNCAST(CMainFrame, m_pMainWnd);
+	
+	         // create a new MDI child window
+	         pFrame->CreateNewChild(
+	             RUNTIME_CLASS(CDrawFrame), IDR_DRAWTYPE, m_hDrawMenu,    m_hDrawAccel);
+	     }
+	
+	  For OnFileNewText():
+	
+	     void CNDVWApp::OnFileNewText()
+	     {
+	         CMainFrame* pFrame = STATIC_DOWNCAST(CMainFrame, m_pMainWnd);
+	
+	         // create a new MDI child window
+	         pFrame->CreateNewChild(
+	             RUNTIME_CLASS(CTextFrame), IDR_TEXTTYPE, m_hTextMenu,    m_hTextAccel);
+	     }
+	
+	13. Copy the IDR_MAINFRAME menu and accelerator resources and paste them into
+	  IDR_DRAWTYPE and IDR_TEXTTYPE.
+	
+	14. Add a 'Text' pop-up menu to IDR_TEXTTYPE, and an 'Add Text' menu item,
+	  associating it to ID_TEXT_ADD. Also define ID_TEXT_ADD accelerator (CTRL+A)
+	  to the IDR_TEXTTYPE accelerator table.
+	
+	15. Add a 'Draw' pop-up menu to IDR_DRAWTYPE, and a 'Widen draw' menu item,
+	  associating it to ID_DRAW_WIDEN. Also define ID_DRAW_WIDEN accelerator
+	  (CTRL+W) to IDR_DRAWTYPE accelerator table.
+	
+	16. Define handlers for both commands in the respective CWnd-derived classes:
+	
+	     void CDrawWnd::OnDrawWiden()
+	     {
+	         m_Ellipse.InflateRect(10, 10);
+	         m_Rectangle.InflateRect(10, 10);
+	         Invalidate();
+	     }
+	
+	     void CTextWnd::OnTextAdd()
+	     {
+	         m_Text += " Window";
+	         Invalidate();
+	     }
+	
+	17. Define IDR_DRAWTYPE and IDR_TEXTTYPE strings in stringtable in order to set
+	  window titles:
+	
+	     IDR_DRAWTYPE       \nDraw\nDraw
+	     IDR_TEXTTYPE       \nText\nText
+	
+	18. Define IDR_DRAWTYPE and IDR_TEXTTYPE icon resources and associate them with
+	  the frames: modify the PreCreateWindow() function in the frames as follows:
+	
+	     BOOL CDrawFrame::PreCreateWindow(CREATESTRUCT& cs)
+	     {
+	         if( !CMDIChildWnd::PreCreateWindow(cs) )
+	             return FALSE;
+	
+	         HICON hWndIcon = ::LoadIcon(AfxGetApp()->m_hInstance,    MAKEINTRESOURCE(IDR_DRAWTYPE));
+	         cs.dwExStyle &= ~WS_EX_CLIENTEDGE;
+	         cs.lpszClass = AfxRegisterWndClass(0, 0, 0, hWndIcon);
+	
+	         return TRUE;
+	     }
+	
+	     BOOL CTextFrame::PreCreateWindow(CREATESTRUCT& cs)
+	     {
+	         if( !CMDIChildWnd::PreCreateWindow(cs) )
+	             return FALSE;
+	
+	         HICON hWndIcon = ::LoadIcon(AfxGetApp()->m_hInstance,    MAKEINTRESOURCE(IDR_TEXTTYPE));
+	         cs.dwExStyle &= ~WS_EX_CLIENTEDGE;
+	         cs.lpszClass = AfxRegisterWndClass(0, 0, 0, hWndIcon);
+	
+	         return TRUE;
+	     }
+	
+	19. Build the application.
+	
+	Testing the Application
+	-----------------------
+	
+	Execute the application and test different features:
+	
+	- You can create multiple windows of either the draw or text type using both
+	  the menu and the toolbar.
+	
+	- The menu resource is automatically changed accordingly to the current window
+	  type.
+	
+	- Accelerator keys are also automatically loaded and unloaded depending on the
+	  current window type. Text CTRL+A and CTRL+W.
+	
+	- Text and draw child frames have different window titles and icons.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbDocView kbMFC KbUIDesign kbVC600 kbGrpDSMFCATL kbArchitecture 
+	Technology        : kbAudDeveloper kbMFC
+	Version           : :6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

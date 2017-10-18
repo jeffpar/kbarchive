@@ -1,0 +1,68 @@
+---
+layout: page
+title: "Q199354: XADM: Slow Intrasite Replication Issues with Exchange Server 5.5"
+permalink: kb/199/Q199354/
+---
+
+## Q199354: XADM: Slow Intrasite Replication Issues with Exchange Server 5.5
+
+	Article: Q199354
+	Product(s): Microsoft Exchange
+	Version(s): 5.5
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	In some cases, intrasite replication may appear to be slow or take up to two
+	hours to complete. By default, Replication Latency is set to 300 seconds, plus
+	30 seconds per server in the site.
+	
+	CAUSE
+	=====
+	
+	The unusual latency can be attributed to many factors, including network
+	bandwidth saturation or name resolution problems. Other factors that cause the
+	latency may have to do with Remote Procedure Calls (RPC).
+	
+	WORKAROUND
+	==========
+	
+	The Microsoft Exchange Server 5.5 release notes state that you must run Windows
+	NT 4.0 SP3 to install Exchange Server 5.5. It is also strongly recommended that
+	you at least install the Windows NT 4.0 post-SP3 fix before installing Exchange
+	Server 5.5 in your environment. This fix can be downloaded from the following
+	location:
+	
+	  ftp://ftp.microsoft.com/bussys/winnt/winnt-public/fixes/usa/nt40/hotfixes-postsp3/roll-up/
+	
+	Note: If you install a new Windows NT component, you should reapply the service
+	pack and any post-SP3 fixes. Windows NT SP4 or SP5 can be applied instead of
+	Windows NT SP3 and the post fixes.
+	
+	MORE INFORMATION
+	================
+	
+	For additional information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q147222 Group of Hotfixes for Exchange 5.5 and IIS 4.0
+	
+	Additional query words: RPC Rpcrt4.dll Intrasite Directory
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+	Version           : :5.5
+	Issue type        : kbprb
+	
+	=============================================================================
+	

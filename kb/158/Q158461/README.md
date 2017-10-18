@@ -1,0 +1,70 @@
+---
+layout: page
+title: "Q158461: Default LPD Printer Name of NetQue/NetJet Card"
+permalink: kb/158/Q158461/
+---
+
+## Q158461: Default LPD Printer Name of NetQue/NetJet Card
+
+	Article: Q158461
+	Product(s): Microsoft Windows NT
+	Version(s): WinNT:3.5,3.51,4.0
+	Operating System(s): 
+	Keyword(s): kbnetwork kbprint
+	Last Modified: 07-SEP-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+	- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The NetQue and NetJet cards from Emulex Network Technology support the Line
+	Printer Daemon (LPD) print server for the Windows NT Line Printer Remote (LPR)
+	Print Monitor. The default printer name of the NetQue and NetJex card is either
+	TEXT, for ASCII files, or PASSTHRU, for formatted text. These names are case
+	sensitive.
+	
+	MORE INFORMATION
+	================
+	
+	The LPR port monitor enables Windows NT to print through TCP/IP to printers with
+	built-in network cards that support TCP/IP network and LPD print server. When
+	you install the LPR port monitor, you will be asked to specify the IP address of
+	the LPD print server and printer name (or print queue name) on that LPD.
+	
+	When the NetQue or NetJet card is used, you should type:
+	
+	- The IP address of the card in the "Name or address of server providing lpr"
+	  field
+	
+	- PASSTHRU for formatted text (PCL, POSTSCRIPT) and TEXT for ASCII files in the
+	  "Name of printer or print queue on that server" field. PASSTHRU works for
+	  most cases.
+	
+	NOTE: These names must typed in capital letters, regardless of how they appear on
+	screen.
+	If you specify a printer name other than PASSTHRU or TEXT, printing to the
+	printer will fail and the following application event will appear in Event
+	Viewer:
+	
+	  Event ID: 2004
+	  Description: Printer on <printer name> is rejecting your request. Will
+	  retry until it accepts the request or the job is canceled by the user.
+	
+	The NetQue/NetJet product discussed here is manufactured by Emulex Network
+	Technology, a vendor independent of Microsoft; we make no warranty, implied or
+	otherwise, regarding these products performance or reliability.
+	
+	======================================================================
+	Keywords          : kbnetwork kbprint 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+	Version           : WinNT:3.5,3.51,4.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

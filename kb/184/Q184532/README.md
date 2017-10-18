@@ -1,0 +1,822 @@
+---
+layout: page
+title: "Q184532: XADM: Description of Directory Export/Import Event IDs"
+permalink: kb/184/Q184532/
+---
+
+## Q184532: XADM: Description of Directory Export/Import Event IDs
+
+	Article: Q184532
+	Product(s): Microsoft Exchange
+	Version(s): WINDOWS:4.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 10-APR-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The following article lists the event IDs with error messages for the directory
+	import/export process.
+	
+	MORE INFORMATION
+	================
+	
+	Event ID=128
+	
+	A general failure occurred.
+	
+	Event ID=129
+	
+	A bad DAPI handle supplied to call.
+	
+	Event ID=130
+	
+	Header values must be specified as text strings.
+	
+	Event ID=131
+	
+	Unable to find the primary domain controller for domain %1.
+	
+	Event ID=132
+	
+	Primary domain controller %1 is not responding.
+	
+	Event ID=133
+	
+	The application event log is full. If you continue, you should increase the
+	maximum log size or additional error information may not be written to the log.
+	If you cancel, existing operations will not be undone. Do you want to continue
+	with the %1?
+	
+	Event ID=134
+	
+	The following error was encountered when attempting to log an event in the
+	application event log: %2 If you continue, additional error information may not
+	be written to the log. If you cancel, existing operations will not be undone. Do
+	you wish to continue with the %1?
+	
+	Event ID=135
+	
+	An error was encountered when writing to the log file %1. If you continue,
+	additional error information will not be written to the log file. If you cancel,
+	completed operations will not be undone. Do you want to continue with the %2?
+	
+	Event ID=136
+	
+	A Windows NT account for user %1 already exists.
+	
+	Event ID=137
+	
+	Windows NT account %1 could not be created because the primary domain controller
+	(PDC) could not be found for domain %2.
+	
+	Event ID=138
+	
+	Object %1 that was specified for deletion does not exist.
+	
+	Event ID=139
+	
+	The Windows NT security account, %1\%2, was not found and could not be deleted.
+	
+	Event ID=140
+	
+	The Windows NT security account, %1\%2, could not be deleted because the NT
+	security domain controller could not be found.
+	
+	Event ID=141
+	
+	The Assoc-NT-Account value %2 specified for mailbox %1 could not be found.
+	
+	Event ID=142
+	
+	Obj-Perm-Admin value %3 specified for %2 %1 was not found. This user could not be
+	granted permissions administrator privileges on the %2.
+	
+	Event ID=143
+	
+	Obj-Admin value %3 specified for %2 %1 was not found. This user could not be
+	granted administrator privileges on the %2.
+	
+	Event ID=144
+	
+	Obj-User value %3 specified for %2 %1 was not found. This user will not have
+	access to the %2.
+	
+	Event ID=145
+	
+	User access privileges could not be assigned to %2 %1. No user accounts were
+	specified, and the default Windows NT account, %3, could not be found.
+	
+	Event ID=146
+	
+	Microsoft Windows error %2 was encountered while attempting to create a Windows
+	NT security descriptor for mailbox object %1.
+	
+	Event ID=147
+	
+	Missing a code page (20261 or 1252) required for proper character translation
+	when reading and writing objects in the directory. Some characters may not map
+	properly. Verify that these are installed on your system.
+	
+	Event ID=148
+	
+	File %1 already existed and was renamed to %2.
+	
+	Event ID=149
+	
+	The specified import file, %1, conflicts with a constructed output file and was
+	renamed to %2.
+	
+	Event ID=150
+	
+	Entry %1 did not contain property %2 so the property could not be deleted.
+	
+	Event ID=151
+	
+	Microsoft Windows error %1 occurred when attempting to create a processing
+	thread.
+	
+	Event ID=152
+	
+	%1 has been specified more than once in the attribute list. Only the first
+	instance will be used when writing to the directory.
+	
+	Event ID=153
+	
+	The attribute %1 is read-only. Values specified for this attribute will be
+	ignored when writing to the Directory.
+	
+	Event ID=154
+	
+	The attribute %1 is not directly importable.
+	
+	Event ID=155
+	
+	Template objects do not apply when in raw mode.
+	
+	Event ID=156
+	
+	The attribute value data length exceeded the Microsoft Excel limit of 255
+	characters. The data was written to file %1.
+	
+	Event ID=157
+	
+	The value type specified for attribute %1 is incorrect.
+	
+	Event ID=158
+	
+	The specified code page has not been installed on the system.
+	
+	Event ID=159
+	
+	Unable to find object %1.
+	
+	Event ID=160
+	
+	No object specified.
+	
+	Event ID=161
+	
+	Unable to create the export file %1. %2
+	
+	Event ID=162
+	
+	Unable to recalculate the Address Book hierarchy after performing the %2
+	operation on the %1 container.
+	
+	Event ID=163
+	
+	The export file %1 already exists and is being overwritten.
+	
+	Event ID=164
+	
+	No values specified for DAPIWrite.
+	
+	Event ID=165
+	
+	One or more characters specified for the %2 are not valid. The object name was
+	changed from %1 to %3.
+	
+	Event ID=166
+	
+	One or more characters specified for the %2 attribute of object %1 are not valid.
+	The value was changed from %3 to %4.
+	
+	Event ID=167
+	
+	One or more characters in the %2 attribute of %1 could not be mapped to the
+	export code page. The system default character was used.
+	
+	Event ID=168
+	
+	One or more backslash characters specified in the %2 attribute of %1 were mapped
+	out on import. The value was changed from %3 to %4. The backslash character may
+	be specified by doubling it (i.e., \\).
+	
+	Event ID=169
+	
+	A value specified for the %2 attribute of object %1 exceeded the limit of %3 %4.
+	The string was truncated to fit.
+	
+	Event ID=170
+	
+	There is no primary Windows NT Account associated with the object specified as
+	the owner of distribution list %1.
+	
+	Event ID=171
+	
+	The Microsoft Exchange Directory server, %1, is currently synchronizing with
+	other servers in the site. Write operations are not recommended at this time.
+	
+	Event ID=172
+	
+	A version mismatch was detected between DAPI.DLL and the program. %1 cannot
+	proceed.
+	
+	Event ID=173
+	
+	The object name specified for basepoint %1 is not valid.
+	
+	Event ID=174
+	
+	The basepoint object %1 does not exist in the directory.
+	
+	Event ID=175
+	
+	The object name specified for the container %1 is not valid.
+	
+	Event ID=176
+	
+	The specified container %1 does not exist in the directory.
+	
+	Event ID=177
+	
+	The object name specified for the create object template %1 is not valid.
+	
+	Event ID=178
+	
+	No object management (OM) workspace is available.
+	
+	Event ID=179
+	
+	Unable to initialize directory user agent (DUA) workspace.
+	
+	Event ID=180
+	
+	Could not negotiate directory user agent (DUA) features. %1
+	
+	Event ID=181
+	
+	Could not bind to the Microsoft Exchange Directory server %2. %1
+	
+	Event ID=182
+	
+	No Microsoft Exchange Directory server is available.
+	
+	Event ID=183
+	
+	The Microsoft Exchange Directory server Name, %1, is illegal.
+	
+	Event ID=184
+	
+	The Microsoft Exchange Directory server, %1, is not currently writable. Try the
+	operation again later.
+	
+	Event ID=185
+	
+	Could not unbind from the directory service. %1
+	
+	Event ID=186
+	
+	An initialization failure occurred. The directory schema could not be read from
+	messaging site %1.
+	
+	Event ID=187
+	
+	An initialization failure occurred. Object management (OM) error %1 was
+	encountered while attempting to read the schema.
+	
+	Event ID=188
+	
+	An initialization failure occurred while attempting to read the schema. %1
+	
+	Event ID=189
+	
+	An initialization failure occurred. Unable to read attributes from the schema.
+	
+	Event ID=190
+	
+	An initialization failure occurred. The attribute-schema object %1 does not
+	contain the %2 attribute.
+	
+	Event ID=191
+	
+	Attribute %1 is not defined in the directory schema and so is not supported for
+	import.
+	
+	Event ID=192
+	
+	An internal error occurred. The directory schema contained an unrecognized type
+	value. Attribute %1.
+	
+	Event ID=193
+	
+	Attribute %1 cannot be processed because its object type is not yet implemented.
+	
+	Event ID=194
+	
+	An internal error occurred. The directory schema contains an unrecognized syntax
+	value. Attribute %1.
+	
+	Event ID=195
+	
+	An internal error occurred. Attribute %1 cannot be processed because its object
+	management (OM) syntax is not yet implemented.
+	
+	Event ID=196
+	
+	Unable to convert the attribute value to a string because syntax %1 is not yet
+	implemented.
+	
+	Event ID=197
+	
+	Unable to convert the attribute value to a string because syntax %1 is not
+	recognized.
+	
+	Event ID=198
+	
+	Unable to convert the attribute value to a string because object type %1 is not
+	yet implemented.
+	
+	Event ID=199
+	
+	Unable to convert the attribute value to a string because the object type is not
+	recognized.
+	
+	Event ID=200
+	
+	Unable to initialize because class ID %1 was not found in the descriptors read
+	from the schema.
+	
+	Event ID=201
+	
+	Unable to initialize because the object class descriptions could not be read from
+	the schema.
+	
+	Event ID=202
+	
+	Unable to initialize because the class schema object %1 does not contain the %2
+	attribute.
+	
+	Event ID=203
+	
+	Unable to initialize because at least one of the schema attributes specified in
+	the %2 attribute of the class schema object %1 is not defined.
+	
+	Event ID=204
+	
+	There is no file specified for directory import.
+	
+	Event ID=205
+	
+	There is no file specified for the export operation.
+	
+	Event ID=206
+	
+	Unable to open import file %1. %2
+	
+	Event ID=207
+	
+	Unable to export to file %1. %2
+	
+	Event ID=208
+	
+	The specified file is Unicode. Code page override is not valid.
+	
+	Event ID=209
+	
+	The specified file is not Unicode.
+	
+	Event ID=210
+	
+	The filename %1 is not valid.
+	
+	Event ID=211
+	
+	The specified import file %1 conflicts with a constructed output filename, but
+	could not be renamed for import.
+	
+	Event ID=212
+	
+	The export file %1 could not be accessed. The file may be opened by another
+	application or the path may not be valid.
+	
+	Event ID=213
+	
+	The specified file %1 names a directory.
+	
+	Event ID=214
+	
+	Unable to create output file %1. The file exists and is read only.
+	
+	Event ID=215
+	
+	Unable to create the directory import error log file %1.
+	
+	Event ID=216
+	
+	Unable to create the directory import password file %1.
+	
+	Event ID=217
+	
+	The system reported the following error while attempting to write to the created
+	account file %1. %2
+	
+	Event ID=218
+	
+	The Obj-Class value must be specified on each import line.
+	
+	Event ID=219
+	
+	The %1 attribute is required to identify %2 objects.
+	
+	Event ID=220
+	
+	An incorrect use of the quotation mark delimiter was encountered on the import
+	line.
+	
+	Event ID=221
+	
+	%1 is not recognized as a legal import mode.
+	
+	Event ID=222
+	
+	%1 can be specified only in the second column.
+	
+	Event ID=223
+	
+	Out of memory error encountered.
+	
+	Event ID=224
+	
+	The following error occurred while attempting to read from the import file: %1
+	
+	Event ID=225
+	
+	The import file %1 is not valid because the Common Name column is missing.
+	
+	Event ID=226
+	
+	The import file %1 is not valid. The first column header must be Obj-Class. The
+	first column header found was %2. Confirm that the column delimiter, '%3', is
+	correct for the file.
+	
+	Event ID=227
+	
+	Import file %1 is not valid because quotation mark delimiters were used
+	improperly in the header line.
+	
+	Event ID=228
+	
+	%1 is not recognized as a legal Obj-Class value.
+	
+	Event ID=229
+	
+	The following error was reported while trying to initialize the e-mail address
+	generating subsystem. %1
+	
+	Event ID=230
+	
+	Import object %1 was not processed because the e-mail address type separator, :,
+	was not found in the specified %3 value: %2.
+	
+	Event ID=231
+	
+	Import object %1 was not processed because no e-mail address type was specified
+	for %3 string: %2
+	
+	Event ID=232
+	
+	Unable to process import object %1. The e-mail address type must be eight
+	characters or less. %2
+	
+	Event ID=233
+	
+	Unable to process object %1 because the specified e-mail address %2 has the same
+	type as one or more other e-mail addresses specified for the same object.
+	
+	Event ID=234
+	
+	Unable to process object %1 because the Microsoft Exchange System Attendant
+	encountered errors while attempting to generate or validate e-mail addresses.
+	For more information, see the event log on server %2.
+	
+	Event ID=235
+	
+	Unable to process custom recipient %1 because the target address is not valid.
+	%2
+	
+	Event ID=236
+	
+	Unable to process custom recipient %1 because target address %2 has already been
+	assigned to Address Book entry %3.
+	
+	Event ID=237
+	
+	The e-mail address specified for import object %1 is not valid. %2
+	
+	Event ID=238
+	
+	The e-mail address specified for import object %1 is not unique. %2 has already
+	been assigned to Address Book entry %3.
+	
+	Event ID=239
+	
+	The Microsoft Exchange System Attendant reported %3 when attempting to generate
+	or validate e-mail addresses for %1. For more information, see the event log on
+	server %2 for details.
+	
+	Event ID=240
+	
+	The following error was encountered when attempting to generate or validate
+	e-mail addresses for %1. %2
+	
+	Event ID=241
+	
+	Object %1 was not built because the string ~DEL may only be used with existing
+	objects.
+	
+	Event ID=242
+	
+	Object management (OM) error %1 was reported.
+	
+	Event ID=243
+	
+	A duplicate value was specified for attribute %2 on object %1.
+	
+	Event ID=244
+	
+	Unable to complete the operation on object %1 because a value specified for
+	attribute %2 is out of range.
+	
+	Event ID=245
+	
+	Unable to complete the operation on object %1 because the syntax specified for a
+	value for attribute %2 is not valid.
+	
+	Event ID=246
+	
+	The attribute %2 is not defined on object %1 and could not be read.
+	
+	Event ID=247
+	
+	Unable to create Windows NT accounts because network error %1 occurred while
+	initializing.
+	
+	Event ID=248
+	
+	Could not initialize -- Net error %1 reported during initialization.
+	
+	Event ID=249
+	
+	Network error %1 occurred.
+	
+	Event ID=250
+	
+	The primary domain controller for domain %1 is no longer available.
+	
+	Event ID=251
+	
+	Unable to create a Windows NT account for user %1. %2
+	
+	Event ID=252
+	
+	Unable to create a Windows NT account for user %1. %2
+	
+	Event ID=253
+	
+	Unable to create a Windows NT account %2 for mailbox %1 because Windows NT
+	account names cannot exceed 20 characters.
+	
+	Event ID=254
+	
+	Unable to create Windows NT account %2 for mailbox %1 because it contains the
+	illegal character(s) %3.
+	
+	Event ID=255
+	
+	A network error occurred when attempting to delete Windows NT security account
+	%1.
+	
+	Event ID=256
+	
+	Unable to delete the Windows NT account for user %1. %2.
+	
+	Event ID=257
+	
+	An error occurred while attempting to lookup the Assoc-NT-Account value for
+	object %1. Neither the security account nor the object was deleted.
+	
+	Event ID=258
+	
+	An error occurred while attempting to lookup the Assoc-NT-Account value for
+	object %1.
+	
+	Event ID=259
+	
+	Unable to create Windows NT accounts because Windows reports error %1.
+	
+	Event ID=260
+	
+	Unable to initialize because Windows reports error %1.
+	
+	Event ID=261
+	
+	Unable to initialize because Windows reports error %1 occurred while attempting
+	to register with the system.
+	
+	Event ID=262
+	
+	Windows reports error %1.
+	
+	Event ID=263
+	
+	No attributes are specified.
+	
+	Event ID=264
+	
+	The attribute %1 is unknown.
+	
+	Event ID=265
+	
+	Attribute %1 cannot be imported.
+	
+	Event ID=266
+	
+	Unable to process object %1. The required attribute %2 may not be deleted.
+	
+	Event ID=267
+	
+	Unable to process object %1. Attribute %2 may not be deleted.
+	
+	Event ID=268
+	
+	Unable to process object %1. ~DEL may not be specified with other values for
+	multi-valued attribute %2.
+	
+	Event ID=269
+	
+	Error %2 occurred while attempting to throw away %1's mail.
+	
+	Event ID=270
+	
+	Unable to process object %1 because the octet string specified for attribute %2
+	is incorrect.
+	
+	Event ID=271
+	
+	Unable to process object %1 because the character specified in value for
+	attribute %2 is not valid.
+	
+	Event ID=272
+	
+	Unable to process object %1 because the character specified in value for
+	attribute %2 is not valid.
+	
+	Event ID=273
+	
+	Could not build DN string from components: BasePoint == %1, Container == %2,
+	ObjName == %3.
+	
+	Event ID=274
+	
+	Unable to process object %1 because DN string %2 is not valid.
+	
+	Event ID=275
+	
+	Unable to process object %1 because RDN string %2 is not valid.
+	
+	Event ID=276
+	
+	DN string %1 is not valid.
+	
+	Event ID=277
+	
+	The distinguished name (DN) object read from the directory information tree (DIT)
+	is not valid.
+	
+	Event ID=278
+	
+	Unable to create a Windows NT account for user %1. The primary domain controller
+	for domain %2 is not responding.
+	
+	Event ID=279
+	
+	Object management (OM) error %1 was encountered when attempting to remove object
+	%2 from a distribution list.
+	
+	Event ID=280
+	
+	The directory service reported the following error: %1
+	
+	Event ID=281
+	
+	Could not create object %2 because the directory service reported the following
+	error: %1
+	
+	Event ID=282
+	
+	Could not modify object %2 because the directory service reported the following
+	error: %1
+	
+	Event ID=283
+	
+	Could not remove object %2 because the directory service reported the following
+	error: %1
+	
+	Event ID=284
+	
+	Could not modify the DL membership of object %2 because the directory service
+	reported the following error: %1
+	
+	Event ID=285
+	
+	Unable to add object %1 to distribution list %2.
+	
+	Event ID=286
+	
+	Unable to create object %1 because one or more objects in the directory path %2
+	do not exist.
+	
+	Event ID=287
+	
+	Unable to create object %1 because it already exists.
+	
+	Event ID=288
+	
+	Unable to modify object %1 because it could not be found.
+	
+	Event ID=289
+	
+	Entry %1 could not be modified as a %2 because it already exists as a %3 object.
+	
+	Event ID=290
+	
+	Unable to delete the %3 %1 because the entry already exists as a %2 in the
+	directory.
+	
+	Event ID=291
+	
+	Unable to process object %1 because the import line must contain the same number
+	of fields as the header line. %2 were expected. %3 were found.
+	
+	Event ID=292
+	
+	Unable to create %3 %1 because the required %2 attribute was not specified.
+	
+	Event ID=293
+	
+	Only a single container can be specified for the import object %1.
+	
+	Event ID=294
+	
+	The directory import encountered Windows Error %2 when attempting to record the
+	following message in the system event log: %1
+	
+	Event ID=295
+	
+	Unable to open or read the attribute value include file %1.
+	
+	Event ID=296
+	
+	The attribute value file pointer %1 was not specified correctly.
+	
+	Event ID=297
+	
+	Unable to process object %1 because the specified home server %2 does not exist.
+	
+	Event ID=298
+	
+	Unable to process object %1 because there is no Microsoft Exchange MTA installed
+	on the specified home server %2.
+	
+	Event ID=299
+	
+	Unable to process object %1 because there is no Microsoft Exchange private
+	information store installed on the specified home server %2.
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+	Version           : WINDOWS:4.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

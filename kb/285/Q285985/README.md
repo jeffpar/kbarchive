@@ -1,0 +1,163 @@
+---
+layout: page
+title: "Q285985: New Variant of File Fragment Reading via .HTR Vulnerability"
+permalink: kb/285/Q285985/
+---
+
+## Q285985: New Variant of File Fragment Reading via .HTR Vulnerability
+
+	Article: Q285985
+	Product(s): Internet Information Server
+	Version(s): 4.0,5.0
+	Operating System(s): 
+	Keyword(s): kbSecurity kbCOMIS kbWinNT400PreSP7Fix kbWin2000PreSP3Fix kbgraphxlinkcritical KbSECVul
+	Last Modified: 15-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Server version 4.0 
+	- Microsoft Internet Information Services version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Microsoft has released a patch that eliminates a security vulnerability in
+	Internet Information Server (IIS) 4.0 and Internet Information Services (IIS)
+	5.0. Under very unusual conditions, this vulnerability can allow an attacker to
+	read fragments of files from a Web server.
+	
+	This vulnerability involves a new variant of the "File Fragment Reading via .HTR"
+	vulnerability, which is described in Microsoft Security Bulletin (MS00-044)
+	(http://www.microsoft.com/technet/security/bulletin/ms00-044.asp). Like the
+	other variants, this one may allow an attacker to request a file in a way that
+	causes it to be processed by the .htr ISAPI extension. The result of this is
+	that fragments of server-side files such as .asp files may potentially be sent
+	to the attacker. There is no capability through this vulnerability to add,
+	change, or delete files on the server, or to access a file without permissions.
+	
+	There are a number of significant restrictions on this vulnerability:
+	
+	- During normal .htr processing, the effect is to strip out the very data that
+	  would be the most likely to contain sensitive information.
+	
+	- There must be zeros fortuitously located in the server memory in order for
+	  the file fragments to be sent.
+	
+	- If best practices have been followed regarding the need to avoid ever storing
+	  sensitive information in .asp and other server-side files, there should be no
+	  sensitive information in the files to begin with.
+	
+	Customers who have previously disabled the .htr functionality are not affected by
+	this vulnerability. Microsoft recommends that all customers disable .htr
+	functionality, unless there is a business-critical reason for keeping it. For
+	the latter group of customers, a patch is available that eliminates this
+	vulnerability.
+	
+	RESOLUTION
+	==========
+	
+	Internet Information Services 5.0
+	---------------------------------
+	
+	To resolve this problem, either obtain the hotfix referenced in this section or
+	Windows 2000 Security Rollup Package 1 (SRP1). For additional information about
+	SRP1, click the article number below to view the article in the Microsoft
+	Knowledge Base:
+	
+	  Q311401 Windows 2000 Security Rollup Package 1 (SRP1), January 2002
+	
+	To resolve this problem, obtain the latest service pack for Windows 2000. For
+	additional information, click the following article number to view the article
+	in the Microsoft Knowledge Base:
+	
+	  Q260910 How to Obtain the Latest Windows 2000 Service Pack
+	
+	The following files are available for download from the Microsoft Download
+	Center:
+	
+	  DownloadDownload Q285985_w2k_sp3_x86_en.exe now
+	
+	For additional information about how to download Microsoft Support files, click
+	the following article number to view the article in the Microsoft Knowledge
+	Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft scanned this file for viruses. Microsoft used the most current
+	virus-detection software that was available on the date that the file was
+	posted. The file is stored on secure servers that prevent any unauthorized
+	changes to the file.
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	  Date        Time    Version         Size     File name   Platform
+	  -----------------------------------------------------------------
+	  5/31/2001   03:31p  5.0.2195.3649  46,352    Ism.dll     x86
+	
+	NOTE: Due to file dependencies, this hotfix requires Microsoft Windows NT 4.0
+	Service Pack 5 or Service Pack 6a.
+	
+	
+	Internet Information Server 4.0
+	-------------------------------
+	
+	Windows NT 4.0:
+	
+	To resolve this problem, obtain the Windows NT 4.0 Security Rollup Package. For
+	additional information, click the article number below to view the article in
+	the Microsoft Knowledge Base:
+	
+	  Q299444 Post-Windows NT 4.0 Service Pack 6a Security Rollup Package (SRP)
+	
+	Microsoft Windows NT Server version 4.0, Terminal Server Edition:
+	
+	To resolve this problem, obtain the Windows NT Server 4.0, Terminal Server
+	Edition, Security Rollup Package (SRP). For additional information about the
+	SRP, click the article number below to view the article in the Microsoft
+	Knowledge Base:
+	
+	  Q317636 Windows NT Server 4.0, Terminal Server Edition, Security Rollup
+	  Package
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed that this problem may cause a degree of security
+	vulnerability in IIS 4.0 and 5.0. This problem was first corrected in Windows
+	2000 Service Pack 3.
+	
+	MORE INFORMATION
+	================
+	
+	For additional information about how to obtain a hotfix for Windows 2000
+	Datacenter Server, click the article number below to view the article in the
+	Microsoft Knowledge Base:
+	
+	  Q265173 The Datacenter Program and Windows 2000 Datacenter Server Product
+	
+	For additional information about how to install multiple hotfixes with only one
+	reboot, click the article number below to view the article in the Microsoft
+	Knowledge Base:
+	
+	  Q296861 Use QChain.exe to Install Multiple Hotfixes with One Reboot
+	
+	For more information on this security vulnerability, please see the following
+	Microsoft Web site:
+	
+	  http://www.microsoft.com/technet/security/bulletin/ms01-004.asp
+	
+	Additional query words: kbIISCom security_patch kbWin2000srp1
+	
+	======================================================================
+	Keywords          : kbSecurity kbCOMIS kbWinNT400PreSP7Fix kbWin2000PreSP3Fix kbgraphxlinkcritical KbSECVulnerability KbSECBulletin KbSECHack kbWin2000sp3fix 
+	Technology        : kbiisSearch kbiis500 kbiis400
+	Version           : :4.0,5.0
+	Hardware          : x86
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

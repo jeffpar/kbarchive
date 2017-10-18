@@ -1,0 +1,103 @@
+---
+layout: page
+title: "Q196091: How to Configure SBS Clients to Use Dial-Up Networking"
+permalink: kb/196/Q196091/
+---
+
+## Q196091: How to Configure SBS Clients to Use Dial-Up Networking
+
+	Article: Q196091
+	Product(s): Windows for Workgroups and Windows NT Networking Issues
+	Version(s): Windows:95,98; WinNT:4.0,4.0a
+	Operating System(s): 
+	Keyword(s): sbs
+	Last Modified: 18-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 95 
+	- Microsoft Windows 98 
+	- Microsoft BackOffice Small Business Server versions 4.0, 4.0a 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	By default, on installation, the client installation disk for Small Business
+	Server (SBS) removes the Dial-Up Networking (DUN) component from Windows 95 and
+	Windows 98 clients. If a client wants to use a local modem or modem-sharing to
+	connect to an ISP for local use, dial-up networking will have to reinstalled.
+	
+	MORE INFORMATION
+	================
+	
+	Windows 95 and Windows 98
+	-------------------------
+	
+	Determine if dial-up networking is installed:
+	
+	1. Click Start, click Settings, and then click Control Panel.
+	
+	2. Double-click Add/Remove Programs.
+	
+	3. Click the Windows Setup tab, click Communications, and then click Details.
+	
+	4. Click to select the Dial-Up Networking check box, click OK, and then click OK
+	  in the Add/Remove Programs Properties dialog box.
+	
+	5. You may then be prompted to insert your Windows 95/98 CD or enter a location
+	  for your source files.
+	
+	6. After locating the appropriate files, you may be prompted to restart your
+	  computer. Do so at this time.
+	
+	7. If you are NOT prompted to restart your computer, it is suggested you do so
+	  anyway.
+	
+	Install Local Modem
+	-------------------
+	
+	To install and use a local modem on a Windows 95 or Windows 98 computer, see the
+	following article in the Microsoft Knowledge Base:
+	
+	  Q142984 How to Install New Hardware in Windows
+	
+	Install Remote Modem
+	--------------------
+	
+	To install a modem that is shared on the Small Business Server computer:
+	
+	1. Click Start, click Settings, and then click Control Panel.
+	
+	2. Double-click Modems.
+	
+	3. If no modem is currently installed, you will see the Install New Modem
+	  Wizard; allow the wizard to detect the modem.
+	
+	  -or-
+	
+	  If another modem is already installed you will see the Modem Properties dialog
+	  box. Click Add, and then allow the wizard to detect modem.
+	
+	You can now configure dial-up networking to use a local modem (if installed) or
+	the shared modem from the server.
+	
+	Special Considerations
+	----------------------
+	
+	If you intend to use dial-up networking on a SBS client computer to connect to
+	another IP network, you will need to disable the WinSock Proxy Client in Control
+	Panel and then restart the computer before making a DUN connection to be able to
+	send and receive information properly.
+	
+	Additional query words: smallbiz
+	
+	======================================================================
+	Keywords          : sbs 
+	Technology        : kbAudDeveloper kbWin95search kbWin98search kbSBServSearch kbZNotKeyword3 kbWin98 kbSBServ400 kbSBServ400a
+	Version           : Windows:95,98; WinNT:4.0,4.0a
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

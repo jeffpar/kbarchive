@@ -1,0 +1,91 @@
+---
+layout: page
+title: "Q150298: Renaming a Windows NT PDC or BDC"
+permalink: kb/150/Q150298/
+---
+
+## Q150298: Renaming a Windows NT PDC or BDC
+
+	Article: Q150298
+	Product(s): Microsoft Windows NT
+	Version(s): 3.5 3.51 4.0
+	Operating System(s): 
+	Keyword(s): kbnetwork
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+	-------------------------------------------------------------------------------
+	
+	You may need to change the computer name of a primary domain
+	controller (PDC) or a backup domain controller (BDC). To do this, follow
+	the steps below.
+	
+	To Rename a Primary Domain Controller
+	-------------------------------------
+	
+	1. On Windows NT 3.x computers, from the console of the PDC, go to Control Panel
+	  Network.
+	
+	  On Windows NT 4.0 computers, from the console of the PDC, go to Control Panel
+	  Network and click the Identification tab.
+	
+	  In the Network Settings dialog box, choose the Change button next to the
+	  computer name. Type the new name in the Computer Name dialog box and choose
+	  OK.
+	
+	2. Restart the PDC for the name change to take effect.
+	
+	3. In Server Manager, if the old name still appears as a Backup, or if there is
+	  no entry for the new name:
+	
+	  a. Create an entry for the new name. To do this, select Add to Domain in the
+	     Computer menu of Server Manager.
+	
+	  b. Add the new computer account as a "Windows NT Backup Domain Controller"
+	     (it will be added and displayed as a Primary).
+	
+	  c. Remove the old name by selecting the entry. To do this, select Remove from
+	     Domain on the Computer menu.
+	
+	  NOTE: In some cases, Step 3a may create two accounts for the new computer
+	  name: one as a backup and the other as a primary. If this occurs, remove the
+	  Backup as described above.
+	
+	To Rename a Backup Domain Controller
+	------------------------------------
+	
+	1. In Server Manager, select the domain to which you are adding the new computer
+	  name. Then add the new computer name. Make sure to specify that it will be a
+	  backup domain controller.
+	
+	2. On the BDC that you are changing the name of, go to Control Panel Network. In
+	  the Network Settings dialog box, click the Change button next to the computer
+	  name. Type the new computer name in the Computer Name dialog box and choose
+	  OK.
+	
+	3. Restart the BDC for which you have changed the name. Note that the NETLOGON
+	  service will not yet start on this server.
+	
+	4. On any other computer that is a member of the domain, open Server Manager.
+	  Select the new BDC name and from the Computer menu, choose Synchronize With
+	  Primary. This will start the NETLOGON service.
+	
+	5. In Server Manager, select the old BDC name from the list and from the
+	  Computer menu, choose Remove From Domain.
+	
+	Note:  If the BDC begins to receive 7023 or 3210 errors after synching the
+	domain in server manager, on the PDC choose the BDC and then synch that
+	specific BDC with the PDC.  After an event indicating that the synch is
+	complete, restart the BDC.
+	
+	Additional query words: prodnt rename name renaming
+	======================================================================
+	Keywords          : kbnetwork 
+	Technology        : kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+	Version           : 3.5 3.51 4.0
+	
+	=============================================================================
+	

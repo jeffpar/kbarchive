@@ -1,0 +1,134 @@
+---
+layout: page
+title: "Q258664: Baseball 2001: Tips for Improving Game Performance"
+permalink: kb/258/Q258664/
+---
+
+## Q258664: Baseball 2001: Tips for Improving Game Performance
+
+	Article: Q258664
+	Product(s): Microsoft Home Games
+	Version(s): WINDOWS:
+	Operating System(s): 
+	Keyword(s): kbimu msgame
+	Last Modified: 01-APR-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Baseball 2001 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article provides a few tips for improving game performance in Microsoft
+	Baseball 2001.
+	
+	MORE INFORMATION
+	================
+	
+	Change the Microsoft Windows Display Settings
+	---------------------------------------------
+	
+	On some computers, you can improve the frame rate in Baseball 2001 by changing
+	the Windows display settings for the video adapter that is installed in your
+	computer.
+	
+	To change the Windows display settings for your video adapter to improve the
+	frame rate in Baseball 2001:
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click Display.
+	
+	3. Click the tab that is named for the video adapter installed in your
+	  computer.
+	
+	  If no such tab is present, click the Settings tab.
+	
+	4. Click Advanced.
+	
+	5. Click the Adapter tab.
+	
+	6. Turn off the synchronize vertical refresh feature (sometimes called "Vsync in
+	  flip").
+	
+	  If you do not see the synchronize vertical refresh feature, proceed to the
+	  next step.
+	
+	7. In the "Refresh rate" box, click "Adapter default".
+	
+	  If the issue continues to occur after you adjust the settings described in
+	  these steps, repeat this step, selecting a different refresh rate each time,
+	  until you experience an improved frame rate in the game.
+	
+	  NOTE: If you do not see an Adapter tab, you cannot change the refresh rate for
+	  your video adapter.
+	
+	8. Turn off anti-aliasing.
+	
+	  NOTE: If you do not see an option for turning off anti-aliasing, you cannot
+	  turn off anti-aliasing for your video adapter.
+	
+	9. Turn off alpha-blending.
+	
+	  NOTE: If you do not see an option for turning off alpha-blending, you cannot
+	  turn off alpha-blending for your video adapter.
+	
+	10. Click OK.
+	
+	11. Under "Screen area", move the slider to any setting other than "640 by 480
+	  pixels".
+	
+	NOTE: If you do not see any controls for adjusting the Windows display settings,
+	then this option is not available to you.
+	
+	Change the Baseball 2001 Graphics and Sound Settings
+	----------------------------------------------------
+	
+	To change the graphics and sound settings in Baseball 2001 to improve game
+	performance:
+	
+	1. Start Baseball 2001.
+	
+	2. On the Home Plate screen, click Options.
+	
+	3. Click the Graphics tab.
+	
+	4. Click to set the Gouraud Shading option to Off.
+	
+	5. Click to set the Shadows option to Off.
+	
+	6. Under Player Detail, click a lower player detail setting than is currently
+	  selected.
+	
+	7. Under Available Resolutions, click to select a lower display resolution than
+	  is currently selected.
+	
+	8. Click OK.
+	
+	9. Click the Sounds tab.
+	
+	10. Move the Commentator slider to Off.
+	
+	11. Move the Crowd & Stadium slider to Off.
+	
+	12. Move the Game Sounds slider to Off.
+	
+	13. Move the Music slider to Off.
+	
+	14. Move the Button Sounds slider to Off.
+	
+	15. Click OK.
+	
+	Additional query words: 1.00 msgame bb2001 bball t-shoot
+	
+	======================================================================
+	Keywords          : kbimu msgame 
+	Technology        : kbHomeProdSearch kbGamesSearch kbBaseballSearch
+	Version           : WINDOWS:
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

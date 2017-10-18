@@ -1,0 +1,92 @@
+---
+layout: page
+title: "Q195936: SMS: Pkg. Distribution Fails If Updating of Master Pkg. Fails"
+permalink: kb/195/Q195936/
+---
+
+## Q195936: SMS: Pkg. Distribution Fails If Updating of Master Pkg. Fails
+
+	Article: Q195936
+	Product(s): Microsoft Systems Management Server
+	Version(s): winnt:1.2
+	Operating System(s): 
+	Keyword(s): kbsms120bug
+	Last Modified: 20-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server version 1.2 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When Despooler fails to update the stored master copy of a package, it creates a
+	"retry" instruction for the job. However, the retry does not refresh existing
+	distribution servers even though the original job specified that existing
+	distribution servers be refreshed.
+	
+	RESOLUTION
+	==========
+	
+	A supported fix that corrects this problem is now available from Microsoft, but
+	has not been fully regression tested and should be applied only to systems
+	experiencing this specific problem. If you are not severely affected by this
+	specific problem, Microsoft recommends that you wait for the next Systems
+	Management Server service pack that contains this fix.
+	
+	To resolve this problem immediately, contact Microsoft Product Support Services
+	to obtain the fix. For a complete list of Microsoft Product Support Services
+	phone numbers and information on support costs, please go to the following
+	address on the World Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	  Date      Time        Size    File name   Platform
+	  --------------------------------------------------
+	  9/28/98   4:23pm      254,400 Smsinst.dll (Intel)
+	  9/28/98   4:21pm      481,040 Smsinst.dll (Alpha)
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Systems Management Server
+	version 1.2.
+	
+	MORE INFORMATION
+	================
+	
+	To install the hotfix, perform the following steps on the Systems Management
+	Server site server:
+	
+	1. Stop the SMS Executive service.
+	
+	2. Close all Systems Management Server applications (including the SMS
+	  Administrator program, SMS Database Manager, and so on).
+	
+	3. Replace the Smsinst.dll file in the
+	  <SMS_root>\Site.srv\<platform>.bin directory with the hotfixed
+	  version.
+	
+	  NOTE: You can perform this step automatically by running Hotfix.exe with the
+	  Hotfix.ini file that is provided.
+	
+	4. Restart the SMS Executive service.
+	
+	Additional query words: prodsms
+	
+	======================================================================
+	Keywords          : kbsms120bug 
+	Technology        : kbSMSSearch kbSMS120
+	Version           : winnt:1.2
+	Hardware          : ALPHA x86
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

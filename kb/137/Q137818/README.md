@@ -1,0 +1,441 @@
+---
+layout: page
+title: "Q137818: Microsoft Plus! CD-ROM Directory Listing (1 of 2)"
+permalink: kb/137/Q137818/
+---
+
+## Q137818: Microsoft Plus! CD-ROM Directory Listing (1 of 2)
+
+	Article: Q137818
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): 95
+	Operating System(s): 
+	Keyword(s): win95
+	Last Modified: 09-JUN-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Plus! for Windows 95 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article lists the directory contents of the Microsoft Plus! for Windows 95
+	CD-ROM. This article lists the contents of the root folder and cabinet files
+	1-4.
+	
+	MORE INFORMATION
+	================
+	
+	Contents of the Root Folder
+	---------------------------
+	
+	AUTORUN  EXE       996,352  07-14-95  4:40a AUTORUN.EXE
+	AUTORUN  INF           185  07-14-95  4:40a AUTORUN.INF
+	EXTRACT  EXE        46,656  07-14-95  4:40a EXTRACT.EXE
+	MMCAT          <DIR>        07-16-95  3:15p MMCAT
+	PLUS     ICO           766  07-14-95  4:40a PLUS.ICO
+	PLUS     INF        70,138  07-14-95  4:40a PLUS.INF
+	PLUSLAYT INF        19,707  07-14-95  4:40a PLUSLAYT.INF
+	PLUS_1   CAB       663,552  07-14-95  4:40a PLUS_1.CAB
+	PLUS_2   CAB     2,048,000  07-14-95  4:40a PLUS_2.CAB
+	PLUS_3   CAB     2,048,000  07-14-95  4:40a PLUS_3.CAB
+	PLUS_4   CAB     2,048,000  07-14-95  4:40a PLUS_4.CAB
+	PLUS_5   CAB     2,048,000  07-14-95  4:40a PLUS_5.CAB
+	PLUS_6   CAB     2,048,000  07-14-95  4:40a PLUS_6.CAB
+	PLUS_7   CAB     1,279,947  07-14-95  4:40a PLUS_7.CAB
+	README   TXT        21,044  07-14-95  4:40a README.TXT
+	SETUP    EXE        72,992  07-14-95  4:40a SETUP.EXE
+	SETUP    INI           149  07-14-95  4:40a SETUP.INI
+	SETUP    LST           642  07-14-95  4:40a SETUP.LST
+	SETUP    TDF            84  07-14-95  4:40a SETUP.TDF
+	WIN95          <DIR>        07-16-95  3:13p WIN95
+	18 file, 13,412,214 bytes
+	
+	Contents of the Plus_1.cab File
+	-------------------------------
+	
+	07-14-1995  4:40:00a A---       330,752 ACMSETUP.EXE
+	07-14-1995  4:40:00a A---        18,397 ACMSETUP.HLP
+	07-14-1995  4:40:00a A---       249,344 MSSETUP.DLL
+	07-14-1995  4:40:00a A---       194,876 DSKAPI16.DLL
+	07-14-1995  4:40:00a A---        21,504 DSKAPI32.DLL
+	07-14-1995  4:40:00a A---       126,464 PLUS.DLL
+	07-14-1995  4:40:00a A---       121,235 PLUS.STF
+	07-14-1995  4:40:00a A---        24,628 SUPPORT.TXT
+	07-14-1995  4:40:00a A---        13,654 DRVSPACE.TXT
+	07-14-1995  4:40:00a A---        64,135 DRVPLUS.BIN
+	07-14-1995  4:40:00a A---         1,895 DRVSPACE.SYS
+	07-14-1995  4:40:00a A---        61,719 DRVSPACX.VXD
+	07-14-1995  4:40:00a A---        53,394 MRCI2.VXD
+	07-14-1995  4:40:00a A---       385,344 DRVSPACE.EXE
+	
+	Contents of the Plus_2.cab File
+	-------------------------------
+	
+	07-14-1995  4:40:00a A---        59,017 PLUSSPAC.HLP
+	07-14-1995  4:40:00a A---         1,203 PLUSSPAC.CNT
+	07-14-1995  4:40:00a A---       441,926 MINI.CAB
+	07-14-1995  4:40:00a A---       237,456 CMPAGENT.EXE
+	07-14-1995  4:40:00a A---        43,520 UPGRDALM.EXE
+	07-14-1995  4:40:00a A---       123,904 COMPEXT.DLL
+	07-14-1995  4:40:00a A---        71,904 NOCOMP.EXE
+	07-14-1995  4:40:00a A---         4,615 NOCOMP.INF
+	07-14-1995  4:40:00a A---         1,386 DRVSPACE.DAT
+	07-14-1995  4:40:00a A---       189,696 DSKMAINT.DLL
+	07-14-1995  4:40:00a A---       137,836 SCANPLUS.EXE
+	07-14-1995  4:40:00a A---         4,896 SCANDSKW.EXE
+	07-14-1995  4:40:00a A---       126,464 SYSAGENT.EXE
+	07-14-1995  4:40:00a A---        32,768 SAGE.EXE
+	07-14-1995  4:40:00a A---        71,680 SAGE.DLL
+	07-14-1995  4:40:00a A---         6,858 SAGE.DAT
+	07-14-1995  4:40:00a A---         8,226 DS3UPGRD.DAT
+	07-14-1995  4:40:00a A---         6,858 SAGE24.DAT
+	07-14-1995  4:40:00a A---         8,226 DS3UPG24.DAT
+	07-14-1995  4:40:00a A---         6,171 SAGE.VXD
+	07-14-1995  4:40:00a A---        48,621 SYSAGENT.HLP
+	07-14-1995  4:40:00a A---           591 SYSAGENT.CNT
+	07-14-1995  4:40:00a A---        53,760 DISKALM.EXE
+	07-14-1995  4:40:00a A---        21,504 RNASERV.DLL
+	07-14-1995  4:40:00a A---         3,947 FONT.DAT
+	07-14-1995  4:40:00a A---       928,700 PINBALL.DAT
+	07-14-1995  4:40:00a A---       351,744 PINBALL.EXE
+	07-14-1995  4:40:00a A---       285,184 WMCONFIG.EXE
+	07-14-1995  4:40:00a A---        16,563 WAVEMIX.INF
+	07-14-1995  4:40:00a A---       108,607 PINBALL.MID
+	07-14-1995  4:40:00a A---        28,888 PINBALL2.MID
+	07-14-1995  4:40:00a A---        42,496 PINBALL.DOC
+	07-14-1995  4:40:00a A---       339,178 TABLE.BMP
+	07-14-1995  4:40:00a A---        55,490 SOUND1.WAV
+	07-14-1995  4:40:00a A---         1,226 SOUND104.WAV
+	07-14-1995  4:40:00a A---         1,968 SOUND105.WAV
+	07-14-1995  4:40:00a A---         7,754 SOUND108.WAV
+	07-14-1995  4:40:00a A---         4,296 SOUND12.WAV
+	07-14-1995  4:40:00a A---         1,290 SOUND131.WAV
+	07-14-1995  4:40:00a A---         3,002 SOUND14.WAV
+	07-14-1995  4:40:00a A---         1,046 SOUND16.WAV
+	07-14-1995  4:40:00a A---         2,090 SOUND17.WAV
+	07-14-1995  4:40:00a A---         3,986 SOUND18.WAV
+	07-14-1995  4:40:00a A---         5,230 SOUND19.WAV
+	07-14-1995  4:40:00a A---         8,650 SOUND20.WAV
+	07-14-1995  4:40:00a A---         9,194 SOUND21.WAV
+	07-14-1995  4:40:00a A---         7,376 SOUND22.WAV
+	07-14-1995  4:40:00a A---        12,106 SOUND24.WAV
+	07-14-1995  4:40:00a A---        25,704 SOUND25.WAV
+	07-14-1995  4:40:00a A---         7,306 SOUND26.WAV
+	
+	Contents of the Plus_3.cab File
+	-------------------------------
+	
+	07-14-1995  4:40:00a A---        20,242 SOUND27.WAV
+	07-14-1995  4:40:00a A---         8,650 SOUND28.WAV
+	07-14-1995  4:40:00a A---        10,364 SOUND29.WAV
+	07-14-1995  4:40:00a A---        22,858 SOUND3.WAV
+	07-14-1995  4:40:00a A---        22,570 SOUND30.WAV
+	07-14-1995  4:40:00a A---         1,520 SOUND34.WAV
+	07-14-1995  4:40:00a A---        19,498 SOUND35.WAV
+	07-14-1995  4:40:00a A---        33,848 SOUND36.WAV
+	07-14-1995  4:40:00a A---        13,024 SOUND38.WAV
+	07-14-1995  4:40:00a A---        28,282 SOUND39.WAV
+	07-14-1995  4:40:00a A---        16,626 SOUND4.WAV
+	07-14-1995  4:40:00a A---        29,140 SOUND42.WAV
+	07-14-1995  4:40:00a A---        22,796 SOUND43.WAV
+	07-14-1995  4:40:00a A---         9,770 SOUND45.WAV
+	07-14-1995  4:40:00a A---         1,876 SOUND49.WAV
+	07-14-1995  4:40:00a A---         3,330 SOUND49D.WAV
+	07-14-1995  4:40:00a A---         3,180 SOUND5.WAV
+	07-14-1995  4:40:00a A---        12,074 SOUND50.WAV
+	07-14-1995  4:40:00a A---        18,250 SOUND54.WAV
+	07-14-1995  4:40:00a A---        21,890 SOUND55.WAV
+	07-14-1995  4:40:00a A---        30,502 SOUND57.WAV
+	07-14-1995  4:40:00a A---         3,408 SOUND58.WAV
+	07-14-1995  4:40:00a A---        26,442 SOUND7.WAV
+	07-14-1995  4:40:00a A---         2,102 SOUND8.WAV
+	07-14-1995  4:40:00a A---        20,098 SOUND9.WAV
+	07-14-1995  4:40:00a A---         9,606 PINBALL.HLP
+	07-14-1995  4:40:00a A---           131 PINBALL.CNT
+	07-14-1995  4:40:00a A---       107,820 LUCON.TTF
+	07-14-1995  4:40:00a A---         3,236 APPLE.ANI
+	07-14-1995  4:40:00a A---        11,904 BANANA.ANI
+	07-14-1995  4:40:00a A---         7,114 COIN.ANI
+	07-14-1995  4:40:00a A---         4,804 DINOSAUR.ANI
+	07-14-1995  4:40:00a A---        14,936 FILLITUP.ANI
+	07-14-1995  4:40:00a A---         3,292 HAND.ANI
+	07-14-1995  4:40:00a A---        18,722 HORSE.ANI
+	07-14-1995  4:40:00a A---         4,784 PIANO.ANI
+	07-14-1995  4:40:00a A---        15,644 COFFEE.ANI
+	07-14-1995  4:40:00a A---           818 SIZENESW.ANI
+	07-14-1995  4:40:00a A---           818 SIZENS.ANI
+	07-14-1995  4:40:00a A---           818 SIZENWSE.ANI
+	07-14-1995  4:40:00a A---           818 SIZEWE.ANI
+	07-14-1995  4:40:00a A---        11,040 TV.ANI
+	07-14-1995  4:40:00a A---         3,254 WINFLAG.ANI
+	07-14-1995  4:40:00a A---       373,536 COOL.DLL
+	07-14-1995  4:40:00a A---       129,078 LOGO.SYS
+	07-14-1995  4:40:00a A---         1,729 MSPLUS.CNT
+	07-14-1995  4:40:00a A---       146,321 PLUS!.HLP
+	07-14-1995  4:40:00a A---        37,888 PLUSTAB.DLL
+	07-14-1995  4:40:00a A---        86,016 THEMES.EXE
+	07-14-1995  4:40:00a A---        15,360 THEMES.CPL
+	07-14-1995  4:40:00a A---         4,189 DEFAULT.THM
+	07-14-1995  4:40:00a A---         4,293 RESTORE.REG
+	07-14-1995  4:40:00a A---         7,680 WILDLB32.DLL
+	07-14-1995  4:40:00a A---       148,480 WL32DLL.DLL
+	07-14-1995  4:40:00a A---        38,400 WL32SCR.EXE
+	07-14-1995  4:40:00a A---       104,448 MSJPEG32.DLL
+	07-14-1995  4:40:00a A---        26,624 JPEGIM32.FLT
+	07-14-1995  4:40:00a A---         5,115 WIN95.THM
+	07-14-1995  4:40:00a A---        42,497 WI_WALL.JPG
+	07-14-1995  4:40:00a A---         1,048 WI_WALL.PAL
+	07-14-1995  4:40:00a A---         2,734 WI_COMP.ICO
+	07-14-1995  4:40:00a A---         2,734 WI_NET.ICO
+	07-14-1995  4:40:00a A---         2,734 WI_RECYE.ICO
+	07-14-1995  4:40:00a A---         2,734 WI_RECYF.ICO
+	07-14-1995  4:40:00a A---        13,278 WI_BUSY.ANI
+	07-14-1995  4:40:00a A---        13,310 WI_WAIT.ANI
+	07-14-1995  4:40:00a A---           766 WI_ARROW.CUR
+	07-14-1995  4:40:00a A---           766 WI_BEAM.CUR
+	07-14-1995  4:40:00a A---           766 WI_CROSS.CUR
+	07-14-1995  4:40:00a A---           766 WI_HELP.CUR
+	07-14-1995  4:40:00a A---           766 WI_MOVE.CUR
+	07-14-1995  4:40:00a A---           766 WI_NESW.CUR
+	07-14-1995  4:40:00a A---           766 WI_NO.CUR
+	07-14-1995  4:40:00a A---           766 WI_NS.CUR
+	07-14-1995  4:40:00a A---           766 WI_NWSE.CUR
+	07-14-1995  4:40:00a A---           766 WI_PEN.CUR
+	07-14-1995  4:40:00a A---           766 WI_UP.CUR
+	07-14-1995  4:40:00a A---           766 WI_WE.CUR
+	07-14-1995  4:40:00a A---       102,912 BLOCKS.SCR
+	07-14-1995  4:40:00a A---        66,052 NWGTHC.TTF
+	07-14-1995  4:40:00a A---        66,512 NWGTHCB.TTF
+	07-14-1995  4:40:00a A---        61,280 NWGTHCI.TTF
+	07-14-1995  4:40:00a A---        11,750 WI_ASTRX.WAV
+	07-14-1995  4:40:00a A---        28,922 WI_BEEP.WAV
+	07-14-1995  4:40:00a A---        29,938 WI_DEFAU.WAV
+	07-14-1995  4:40:00a A---        31,818 WI_EMPTY.WAV
+	07-14-1995  4:40:00a A---        34,474 WI_ERROR.WAV
+	07-14-1995  4:40:00a A---        13,924 WI_EXCLA.WAV
+	07-14-1995  4:40:00a A---       135,398 WI_EXIT.WAV
+	07-14-1995  4:40:00a A---        11,330 WI_MAX.WAV
+	07-14-1995  4:40:00a A---         6,278 WI_MENU.WAV
+	07-14-1995  4:40:00a A---         9,978 WI_MENUC.WAV
+	07-14-1995  4:40:00a A---        38,788 WI_MIN.WAV
+	07-14-1995  4:40:00a A---         8,336 WI_QUEST.WAV
+	07-14-1995  4:40:00a A---        13,580 WI_RESTD.WAV
+	07-14-1995  4:40:00a A---         9,992 WI_RESTU.WAV
+	07-14-1995  4:40:00a A---        64,038 WI_STOP.WAV
+	07-14-1995  4:40:00a A---         7,066 WI_ASTRX.WA8
+	07-14-1995  4:40:00a A---        15,652 WI_BEEP.WA8
+	07-14-1995  4:40:00a A---        16,160 WI_DEFAU.WA8
+	07-14-1995  4:40:00a A---        17,100 WI_EMPTY.WA8
+	07-14-1995  4:40:00a A---        18,428 WI_ERROR.WA8
+	07-14-1995  4:40:00a A---         8,152 WI_EXCLA.WA8
+	07-14-1995  4:40:00a A---        68,890 WI_EXIT.WA8
+	07-14-1995  4:40:00a A---         6,856 WI_MAX.WA8
+	07-14-1995  4:40:00a A---         4,330 WI_MENU.WA8
+	07-14-1995  4:40:00a A---         6,180 WI_MENUC.WA8
+	07-14-1995  4:40:00a A---         7,002 WI_MIN.WA8
+	07-14-1995  4:40:00a A---         8,336 WI_QUEST.WA8
+	07-14-1995  4:40:00a A---         8,024 WI_RESTD.WA8
+	07-14-1995  4:40:00a A---         6,188 WI_RESTU.WA8
+	07-14-1995  4:40:00a A---        31,318 WI_STOP.WA8
+	07-14-1995  4:40:00a A---         5,198 SIXTIES.THM
+	07-14-1995  4:40:00a A---        94,322 SX_WALL.JPG
+	07-14-1995  4:40:00a A---         1,048 SX_WALL.PAL
+	07-14-1995  4:40:00a A---         2,734 SX_COMP.ICO
+	07-14-1995  4:40:00a A---         2,734 SX_NET.ICO
+	07-14-1995  4:40:00a A---         2,734 SX_RECYE.ICO
+	07-14-1995  4:40:00a A---         2,734 SX_RECYF.ICO
+	07-14-1995  4:40:00a A---         7,860 SX_BUSY.ANI
+	07-14-1995  4:40:00a A---         4,762 SX_WAIT.ANI
+	07-14-1995  4:40:00a A---           766 SX_ARROW.CUR
+	07-14-1995  4:40:00a A---           766 SX_BEAM.CUR
+	07-14-1995  4:40:00a A---           766 SX_CROSS.CUR
+	07-14-1995  4:40:00a A---           766 SX_HELP.CUR
+	07-14-1995  4:40:00a A---           766 SX_MOVE.CUR
+	07-14-1995  4:40:00a A---           766 SX_NESW.CUR
+	07-14-1995  4:40:00a A---           766 SX_NO.CUR
+	07-14-1995  4:40:00a A---           766 SX_NS.CUR
+	07-14-1995  4:40:00a A---           766 SX_NWSE.CUR
+	07-14-1995  4:40:00a A---           766 SX_PEN.CUR
+	07-14-1995  4:40:00a A---           766 SX_UP.CUR
+	07-14-1995  4:40:00a A---           766 SX_WE.CUR
+	07-14-1995  4:40:00a A---        56,560 LHANDW.TTF
+	07-14-1995  4:40:00a A---        59,636 LSANSI.TTF
+	07-14-1995  4:40:00a A---        24,004 SX_ASTRX.WAV
+	07-14-1995  4:40:00a A---        10,982 SX_BEEP.WAV
+	07-14-1995  4:40:00a A---         7,664 SX_DEFAU.WAV
+	07-14-1995  4:40:00a A---        16,870 SX_EMPTY.WAV
+	07-14-1995  4:40:00a A---        20,566 SX_ERROR.WAV
+	07-14-1995  4:40:00a A---        24,666 SX_EXCLA.WAV
+	07-14-1995  4:40:00a A---        40,670 SX_EXIT.WAV
+	07-14-1995  4:40:00a A---        10,166 SX_MAX.WAV
+	07-14-1995  4:40:00a A---         4,326 SX_MENU.WAV
+	07-14-1995  4:40:00a A---         4,180 SX_MENUC.WAV
+	07-14-1995  4:40:00a A---        10,164 SX_MIN.WAV
+	07-14-1995  4:40:00a A---        20,532 SX_QUEST.WAV
+	07-14-1995  4:40:00a A---        10,244 SX_RESTD.WAV
+	07-14-1995  4:40:00a A---        11,178 SX_RESTU.WAV
+	07-14-1995  4:40:00a A---        66,656 SX_START.WAV
+	07-14-1995  4:40:00a A---         9,486 SX_STOP.WAV
+	07-14-1995  4:40:00a A---        13,170 SX_ASTRX.WA8
+	07-14-1995  4:40:00a A---         6,682 SX_BEEP.WA8
+	07-14-1995  4:40:00a A---         5,024 SX_DEFAU.WA8
+	07-14-1995  4:40:00a A---        16,870 SX_EMPTY.WA8
+	07-14-1995  4:40:00a A---        11,474 SX_ERROR.WA8
+	07-14-1995  4:40:00a A---        13,524 SX_EXCLA.WA8
+	07-14-1995  4:40:00a A---        21,526 SX_EXIT.WA8
+	07-14-1995  4:40:00a A---         6,274 SX_MAX.WA8
+	07-14-1995  4:40:00a A---         3,354 SX_MENU.WA8
+	07-14-1995  4:40:00a A---         3,280 SX_MENUC.WA8
+	07-14-1995  4:40:00a A---         6,274 SX_MIN.WA8
+	07-14-1995  4:40:00a A---        11,456 SX_QUEST.WA8
+	07-14-1995  4:40:00a A---         6,314 SX_RESTD.WA8
+	07-14-1995  4:40:00a A---         6,780 SX_RESTU.WA8
+	07-14-1995  4:40:00a A---        34,520 SX_START.WA8
+	07-14-1995  4:40:00a A---         5,934 SX_STOP.WA8
+	07-14-1995  4:40:00a A---         5,047 SCIENCE.THM
+	07-14-1995  4:40:00a A---       107,669 SC_WALL.JPG
+	07-14-1995  4:40:00a A---         1,048 SC_WALL.PAL
+	07-14-1995  4:40:00a A---         2,734 SC_COMP.ICO
+	07-14-1995  4:40:00a A---         2,734 SC_NET.ICO
+	07-14-1995  4:40:00a A---         2,734 SC_RECYE.ICO
+	07-14-1995  4:40:00a A---         2,734 SC_RECYF.ICO
+	07-14-1995  4:40:00a A---         7,808 SC_BUSY.ANI
+	07-14-1995  4:40:00a A---         7,856 SC_WAIT.ANI
+	07-14-1995  4:40:00a A---           766 SC_ARROW.CUR
+	07-14-1995  4:40:00a A---           766 SC_BEAM.CUR
+	07-14-1995  4:40:00a A---           766 SC_CROSS.CUR
+	07-14-1995  4:40:00a A---           766 SC_HELP.CUR
+	07-14-1995  4:40:00a A---           766 SC_MOVE.CUR
+	07-14-1995  4:40:00a A---           766 SC_NESW.CUR
+	07-14-1995  4:40:00a A---           766 SC_NO.CUR
+	07-14-1995  4:40:00a A---           766 SC_NS.CUR
+	07-14-1995  4:40:00a A---           766 SC_NWSE.CUR
+	07-14-1995  4:40:00a A---           766 SC_PEN.CUR
+	07-14-1995  4:40:00a A---           766 SC_UP.CUR
+	07-14-1995  4:40:00a A---           766 SC_WE.CUR
+	07-14-1995  4:40:00a A---       101,888 LENS.SCR
+	
+	Contents of the Plus_4.cab File
+	-------------------------------
+	
+	07-14-1995  4:40:00a A---       304,932 LSANSUNI.TTF
+	07-14-1995  4:40:00a A---        15,710 SC_ASTRX.WAV
+	07-14-1995  4:40:00a A---        15,506 SC_BEEP.WAV
+	07-14-1995  4:40:00a A---        12,662 SC_DEFAU.WAV
+	07-14-1995  4:40:00a A---        12,122 SC_EMPTY.WAV
+	07-14-1995  4:40:00a A---        10,880 SC_ERROR.WAV
+	07-14-1995  4:40:00a A---        30,522 SC_EXCLA.WAV
+	07-14-1995  4:40:00a A---        32,742 SC_EXIT.WAV
+	07-14-1995  4:40:00a A---         9,440 SC_MAX.WAV
+	07-14-1995  4:40:00a A---         7,320 SC_MENU.WAV
+	07-14-1995  4:40:00a A---         7,264 SC_MENUC.WAV
+	07-14-1995  4:40:00a A---         9,316 SC_MIN.WAV
+	07-14-1995  4:40:00a A---        29,952 SC_QUEST.WAV
+	07-14-1995  4:40:00a A---        10,688 SC_RESTD.WAV
+	07-14-1995  4:40:00a A---        10,742 SC_RESTU.WAV
+	07-14-1995  4:40:00a A---        19,836 SC_START.WAV
+	07-14-1995  4:40:00a A---        17,642 SC_STOP.WAV
+	07-14-1995  4:40:00a A---         9,046 SC_ASTRX.WA8
+	07-14-1995  4:40:00a A---         8,944 SC_BEEP.WA8
+	07-14-1995  4:40:00a A---         7,522 SC_DEFAU.WA8
+	07-14-1995  4:40:00a A---         7,252 SC_EMPTY.WA8
+	07-14-1995  4:40:00a A---         6,632 SC_ERROR.WA8
+	07-14-1995  4:40:00a A---        16,452 SC_EXCLA.WA8
+	07-14-1995  4:40:00a A---        17,562 SC_EXIT.WA8
+	07-14-1995  4:40:00a A---         5,912 SC_MAX.WA8
+	07-14-1995  4:40:00a A---         4,850 SC_MENU.WA8
+	07-14-1995  4:40:00a A---         4,822 SC_MENUC.WA8
+	07-14-1995  4:40:00a A---         5,850 SC_MIN.WA8
+	07-14-1995  4:40:00a A---        29,952 SC_QUEST.WA8
+	07-14-1995  4:40:00a A---         6,536 SC_RESTD.WA8
+	07-14-1995  4:40:00a A---         6,562 SC_RESTU.WA8
+	07-14-1995  4:40:00a A---        11,110 SC_START.WA8
+	07-14-1995  4:40:00a A---        10,012 SC_STOP.WA8
+	07-14-1995  4:40:00a A---         5,419 DANGER~1.THM
+	07-14-1995  4:40:00a A---        99,357 DA_WALL.JPG
+	07-14-1995  4:40:00a A---         1,048 DA_WALL.PAL
+	07-14-1995  4:40:00a A---         2,734 DA_COMP.ICO
+	07-14-1995  4:40:00a A---         2,734 DA_NET.ICO
+	07-14-1995  4:40:00a A---         2,734 DA_RECYE.ICO
+	07-14-1995  4:40:00a A---         2,734 DA_RECYF.ICO
+	07-14-1995  4:40:00a A---         4,744 DA_BUSY.ANI
+	07-14-1995  4:40:00a A---         4,712 DA_WAIT.ANI
+	07-14-1995  4:40:00a A---           766 DA_ARROW.CUR
+	07-14-1995  4:40:00a A---           766 DA_BEAM.CUR
+	07-14-1995  4:40:00a A---           766 DA_CROSS.CUR
+	07-14-1995  4:40:00a A---           766 DA_HELP.CUR
+	07-14-1995  4:40:00a A---           766 DA_MOVE.CUR
+	07-14-1995  4:40:00a A---           766 DA_NESW.CUR
+	07-14-1995  4:40:00a A---           766 DA_NO.CUR
+	07-14-1995  4:40:00a A---           766 DA_NS.CUR
+	07-14-1995  4:40:00a A---           766 DA_NWSE.CUR
+	07-14-1995  4:40:00a A---           766 DA_PEN.CUR
+	07-14-1995  4:40:00a A---           766 DA_UP.CUR
+	07-14-1995  4:40:00a A---           766 DA_WE.CUR
+	07-14-1995  4:40:00a A---       279,040 DANGEROU.DLL
+	07-14-1995  4:40:00a A---        13,782 DA_ASTRX.WAV
+	07-14-1995  4:40:00a A---         8,746 DA_BEEP.WAV
+	07-14-1995  4:40:00a A---        20,718 DA_DEFAU.WAV
+	07-14-1995  4:40:00a A---        22,474 DA_EMPTY.WAV
+	07-14-1995  4:40:00a A---        18,914 DA_ERROR.WAV
+	07-14-1995  4:40:00a A---         9,298 DA_EXCLA.WAV
+	07-14-1995  4:40:00a A---         7,064 DA_MAX.WAV
+	07-14-1995  4:40:00a A---         5,566 DA_MENU.WAV
+	07-14-1995  4:40:00a A---        10,736 DA_MENUC.WAV
+	07-14-1995  4:40:00a A---         8,222 DA_MIN.WAV
+	07-14-1995  4:40:00a A---        15,010 DA_QUEST.WAV
+	07-14-1995  4:40:00a A---        93,144 DA_START.WAV
+	07-14-1995  4:40:00a A---        10,732 DA_STOP.WAV
+	07-14-1995  4:40:00a A---         5,982 DA_ASTRX.WA8
+	07-14-1995  4:40:00a A---         3,464 DA_BEEP.WA8
+	07-14-1995  4:40:00a A---         9,450 DA_DEFAU.WA8
+	07-14-1995  4:40:00a A---        10,328 DA_EMPTY.WA8
+	07-14-1995  4:40:00a A---         8,548 DA_ERROR.WA8
+	07-14-1995  4:40:00a A---         3,740 DA_EXCLA.WA8
+	07-14-1995  4:40:00a A---         2,624 DA_MAX.WA8
+	07-14-1995  4:40:00a A---         1,874 DA_MENU.WA8
+	07-14-1995  4:40:00a A---         4,460 DA_MENUC.WA8
+	07-14-1995  4:40:00a A---         3,202 DA_MIN.WA8
+	07-14-1995  4:40:00a A---         6,596 DA_QUEST.WA8
+	07-14-1995  4:40:00a A---        45,662 DA_START.WA8
+	07-14-1995  4:40:00a A---         4,456 DA_STOP.WA8
+	07-14-1995  4:40:00a A---         5,370 DAVINCI.THM
+	07-14-1995  4:40:00a A---        91,336 DV_WALL.JPG
+	07-14-1995  4:40:00a A---         1,048 DV_WALL.PAL
+	07-14-1995  4:40:00a A---         2,734 DV_COMP.ICO
+	07-14-1995  4:40:00a A---         2,734 DV_NET.ICO
+	07-14-1995  4:40:00a A---         2,734 DV_RECYE.ICO
+	07-14-1995  4:40:00a A---         2,734 DV_RECYF.ICO
+	07-14-1995  4:40:00a A---         7,908 DV_BUSY.ANI
+	07-14-1995  4:40:00a A---        10,268 DV_WAIT.ANI
+	07-14-1995  4:40:00a A---           766 DV_ARROW.CUR
+	07-14-1995  4:40:00a A---           766 DV_BEAM.CUR
+	07-14-1995  4:40:00a A---           766 DV_BUSY.CUR
+	07-14-1995  4:40:00a A---           766 DV_CROSS.CUR
+	07-14-1995  4:40:00a A---           766 DV_HELP.CUR
+	07-14-1995  4:40:00a A---           766 DV_MOVE.CUR
+	07-14-1995  4:40:00a A---           766 DV_NESW.CUR
+	07-14-1995  4:40:00a A---           766 DV_NO.CUR
+	07-14-1995  4:40:00a A---           766 DV_NS.CUR
+	07-14-1995  4:40:00a A---           766 DV_NWSE.CUR
+	07-14-1995  4:40:00a A---           766 DV_PEN.CUR
+	07-14-1995  4:40:00a A---           766 DV_UP.CUR
+	07-14-1995  4:40:00a A---           766 DV_WAIT.CUR
+	07-14-1995  4:40:00a A---           766 DV_WE.CUR
+	07-14-1995  4:40:00a A---       910,336 DAVINCI.DLL
+	07-14-1995  4:40:00a A---        65,976 BKANT.TTF
+	07-14-1995  4:40:00a A---        30,604 DV_ASTRX.WAV
+	
+	Additional query words: dirwin dirwin95
+	
+	======================================================================
+	Keywords          : win95 
+	Technology        : kbGamesSearch kbPlusSearch kbPlus95
+	Version           : 95
+	
+	=============================================================================
+	

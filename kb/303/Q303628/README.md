@@ -1,0 +1,73 @@
+---
+layout: page
+title: "Q303628: Relative Path Issue Lets Program Be Run Under System Context"
+permalink: kb/303/Q303628/
+---
+
+## Q303628: Relative Path Issue Lets Program Be Run Under System Context
+
+	Article: Q303628
+	Product(s): Microsoft Windows NT
+	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
+	Operating System(s): 
+	Keyword(s): kbSecurity kbWinNT400PreSP7Fix
+	Last Modified: 24-APR-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4, 4.0 SP5, 4.0 SP6a 
+	- Microsoft Windows NT Server, Enterprise Edition versions 4.0, 4.0 SP4, 4.0 SP5, 4.0 SP6a 
+	- Microsoft Windows NT Workstation versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4, 4.0 SP5, 4.0 SP6a 
+	- Microsoft Windows NT Server versions 4.0, 4.0 SP4, 4.0 SP5, 4.0 SP6, Terminal Server Edition 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	A domain user could potentially run a process under the System context if the
+	program file is renamed as a screen saver file in the root folder of the system
+	drive. System must have Read rights to the folder under which the process is
+	renamed.
+	
+	RESOLUTION
+	==========
+	
+	Windows NT 4.0
+	--------------
+	
+	To resolve this problem, obtain the Windows NT 4.0 Security Rollup Package. For
+	additional information, click the article number below to view the article in
+	the Microsoft Knowledge Base:
+	
+	  Q299444 Post-Windows NT 4.0 Service Pack 6a Security Rollup Package (SRP)
+	
+	Microsoft Windows NT Server version 4.0, Terminal Server Edition
+	----------------------------------------------------------------
+	
+	To resolve this problem, obtain the Windows NT Server 4.0, Terminal Server
+	Edition, Security Rollup Package (SRP). For additional information about the
+	SRP, click the article number below to view the article in the Microsoft
+	Knowledge Base:
+	
+	  Q317636 Windows NT Server 4.0, Terminal Server Edition, Security Rollup
+	  Package
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed that this problem could result in some degree of
+	security vulnerability in Microsoft Windows NT 4.0 and Windows NT Server version
+	4.0, Terminal Server Edition.
+	
+	Additional query words: security_patch kbtsesrp
+	
+	======================================================================
+	Keywords          : kbSecurity kbWinNT400PreSP7Fix 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTW400sp5 kbWinNTW400sp4 kbWinNTW400sp3 kbWinNTW400sp2 kbWinNTW400sp1 kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400sp5 kbWinNTSEnt400sp4 kbWinNTSEnt400 kbWinNTS400sp6 kbWinNTS400sp5 kbWinNTS400sp4 kbWinNTS400sp3 kbWinNTS400sp2 kbWinNTS400sp1 kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServ400sp4 kbNTTermServ400sp5 kbNTTermServ400sp6 kbNTTermServSearch kbWinNTSEnt400SP6a kbWinNTW400SP6a
+	Version           : :4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

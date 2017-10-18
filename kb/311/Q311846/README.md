@@ -1,0 +1,113 @@
+---
+layout: page
+title: "Q311846: INFO: Names and IP Addresses an MSDTC Client Must Have"
+permalink: kb/311/Q311846/
+---
+
+## Q311846: INFO: Names and IP Addresses an MSDTC Client Must Have
+
+	Article: Q311846
+	Product(s): Microsoft Programming Utilities
+	Version(s): 1.0,2.0,4.0,5.0
+	Operating System(s): 
+	Keyword(s): kbnokeyword
+	Last Modified: 17-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft COM+, version 1.0 
+	- Microsoft Transaction Server 2.0 
+	- Microsoft SQL Server 
+	- Microsoft SQL Server 2000 (all editions) 
+	- Microsoft Cluster Server 
+	- Microsoft Internet Information Server versions 4.0, 5.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The purpose of this article is to help you in the setup or in the
+	troubleshooting of a configuration for a COM+ Application Server or a
+	configuration for an Internet Information Server (IIS) computer that interacts
+	with a clustered server that uses Microsoft Cluster Server (MSCS) that is behind
+	a firewall.
+	
+	You may have one of the following scenarios:
+	
+	- COM+ or IIS computer (client computer)
+	
+	- SQL Server clustered that uses MSCS
+	
+	- Microsoft Distributed Transaction Coordinator (MSDTC) as a clustered resource
+	  in its own resource group (own name and IP address)
+	
+	- Cluster and client computer that are separated by a firewall
+	
+	Certain Internet Protocol (IP) addresses and their corresponding network names
+	must be known by the client computer for MSDTC to work correctly. The client
+	computer can resolve the following names and the following IP addresses by using
+	Domain Name System (DNS), hosts file, or another name resolution method:
+	
+	- MSDTC resource
+	
+	- An instance of SQL Server if the cluster configuration is either
+	  active-passive or active-active
+	
+	- Cluster Name
+	
+	Certain IP addresses and their corresponding network names must be known by the
+	nodes in the cluster for MSDTC to work correctly. Both nodes in the cluster can
+	resolve the client computer name to an IP address by using DNS, hosts file, or
+	another name resolution method.
+	
+	MORE INFORMATION
+	================
+	
+	Additionally, the firewall must be configured to allow bidirectional traffic to
+	occur between the client computer and the cluster. The firewall rules must
+	include the following:
+	
+	- The IP network names and the addresses of both physical nodes on the cluster
+	
+	- The SQL Server Instances network names and address
+	
+	- The client network name and addresses
+	
+	- The child network name and IP resource of the MSDTC Resource
+	
+	Firewall rules must include the range of IP ports that are defined in the
+	registry to allow traffic. See the "References" section.
+	
+	You may also have to open an additional range of available IP ports as a
+	requirement for the cluster server. See the "References" section for more
+	information.
+	
+	REFERENCES
+	==========
+	
+	For additional information, click the article numbers below to view the articles
+	in the Microsoft Knowledge Base:
+	
+	  Q250367 INFO: Configuring Microsoft Distributed Transaction Coordinator (DTC)
+	  to Work Through a Firewall
+	
+	  Q258469 Cluster Service May Not Start After You Restrict Available IP Ports
+	  for Remote Procedure Call
+	
+	For information about Distributed Component Object Model (DCOM) and Remote
+	Procedure Call (RPC) with firewalls, visit the following Microsoft Web site:
+	
+	  Using Distributed COM with Firewalls
+	  http://www.microsoft.com/com/wpaper/dcomfw.asp
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbnokeyword 
+	Technology        : kbSQLServSearch kbMTSsearch kbiisSearch kbAudDeveloper kbClustServSearch kbiis500 kbiis400 kbSQLServ2000Search kbCOMPlusSearch kbCOMPlus100 kbSQLServ2000 kbMTS200 kbComSearch
+	Version           : :1.0,2.0,4.0,5.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

@@ -1,0 +1,84 @@
+---
+layout: page
+title: "Q314296: PRB: HTML Help Does Not Work from VFP Application"
+permalink: kb/314/Q314296/
+---
+
+## Q314296: PRB: HTML Help Does Not Work from VFP Application
+
+	Article: Q314296
+	Product(s): Microsoft FoxPro
+	Version(s): 7.0
+	Operating System(s): 
+	Keyword(s): kbGrpDSFox kbDSupport kbvfp700 _IK283
+	Last Modified: 15-JAN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 7.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	After a Visual FoxPro (VFP) 7.0 application is distributed to a computer that
+	does not have VFP 7.0 installed, HTML Help files do not open when accessed from
+	inside the application.
+	
+	CAUSE
+	=====
+	
+	The files FoxHHelp7.exe and FoxHHelpPS7.dll are required in order for HTML Help
+	to work from a distributed VFP 7.0 application.
+	
+	RESOLUTION
+	==========
+	
+	If you are using "InstallShield Express - Visual FoxPro Limited Edition" to
+	install your application, add FoxHHelp7.exe and FoxHHelpPS7.dll in step 2 of the
+	install project. These files should be installed on the development computer in
+	the \Program Files\Common Files\Microsoft Shared\VFP folder. If you do not want
+	to keep them with your application files, you can place them in
+	[CommonFilesFolder]\Microsoft Shared\VFP.
+	
+	If you are copying the files manually, after bringing them over you need to run
+	the command FoxHHelp7 /regserver on the new computer to put the proper entries
+	in the registry.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Create a Visual FoxPro 7.0 application that uses HTML Help.
+	
+	2. Install the application on a computer that has not had VFP 7.0 installed on
+	  it.
+	
+	3. Try to use Help from the application. You will find that nothing happens.
+	
+	The Microsoft Visual FoxPro HTML Help Support Library merge module which ships
+	with InstallShield Express contains the files needed for calling HTML Help from
+	VFP 6.0 applications. Including the merge module (MSM) with a VFP 7.0
+	application has no effect.
+	
+	REFERENCES
+	==========
+	
+	For additional information on building distributions in Visual FoxPro 7.0, see
+	the "InstallShield Express - Visual FoxPro Limited Edition" Help files as well
+	as the article "Walkthrough: Creating a Visual FoxPro Application Setup Program
+	Using InstallShield Express" on the VFP 7.0 CD.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbGrpDSFox kbDSupport kbvfp700 _IK283 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP700
+	Version           : :7.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

@@ -1,0 +1,167 @@
+---
+layout: page
+title: "Q172189: Routing and Remote Access with a Null Serial Cable"
+permalink: kb/172/Q172189/
+---
+
+## Q172189: Routing and Remote Access with a Null Serial Cable
+
+	Article: Q172189
+	Product(s): Microsoft Windows NT
+	Version(s): WinNT:4.0
+	Operating System(s): 
+	Keyword(s): kbnetwork kbhowto kbinfo kbArtTypeINF
+	Last Modified: 09-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 4.0 
+	- Microsoft Routing and Remote Access Service Update for Windows NT Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The information in this article explains how to setup a Dial-on-Demand (DOD)
+	connection between two Routing and Remote Access Service (RRAS) Servers using a
+	null serial cable.
+	
+	MORE INFORMATION
+	================
+	
+	The following steps assume that you have already installed Routing and Remote
+	Access Service and that it is operating correctly. Perform the following steps
+	on both servers:
+	
+	1. Click the Start button, point to Settings, click Control Panel, and then
+	  double-click the Modems icon.
+	
+	2. Click Don't detect my modem; I will select it from a list and click Next.
+	
+	3. Click Dial-Up Networking Serial Cable between 2 PCs, and then click Next.
+	
+	4. Click the physical com port to which the cable is attached, and then click
+	  Next.
+	
+	  NOTE: If this is the first modem that you have installed you will now need to
+	  enter the area code and any dial out prefix that is required.
+	
+	5. Restart your server.
+	
+	6. Click the Start button, point to Settings, click Control Panel, and then
+	  double-click the Modems icon. Verify the modem properties on both servers and
+	  make sure the maximum speed matches.
+	
+	  NOTE: It is best to start at 9600 bps and increase it later to a speed that
+	  does not give serial overruns. Each time you change the speed, you will need
+	  to stop and restart Routing and Remote Access Service for the change to take
+	  effect.
+	
+	7. Start Routing and Remote Access Service Administrator and add a DOD interface
+	  on both servers, using the following steps:
+	
+	  a. Click LAN and Demand Dial Interfaces.
+	
+	  b. Click Actions, click Add Interface..., and then type the name for your DOD
+	     connection. For the sake of simplicity, use the same name on both servers.
+	
+	  c. Click Next.
+	
+	  d. Click the appropriate routing options to enable them.
+	
+	     For example, if you are using Routing Information Protocol (RIP) for IP
+	     then you would enable the option Route IP packets on this interface.
+	
+	  e. Click the following options to create the user accounts:
+	
+	     1. Add a user account so a remote router can dial in Authenticate remote
+	        router when dialing out
+	
+	  f. Click Next, click Dial-Up Networking Serial Cable between 2 PCs (ComX),
+	     and then click Next.
+	
+	     where X is the com port number.
+	
+	  g. Leave the phone number blank, and then click Next.
+	
+	  h. Enter the same name that you used in step b for the User Name, Password,
+	     and Confirm Password.
+	
+	  i. Click Next and type the same name as steps b and h for the Password and
+	     Confirm Password.
+	
+	  j. Click Next, and then click Finish.
+	
+	8. Click the desired routing protocols, and then accept the default options.
+	
+	9. Once both DOD Interfaces are created, from one server only in Routing and
+	  Remote Access Service Administrator, click LAN and Demand Dial Interfaces.
+	  Right-click on the new DOD interface, and then click Connect.
+	
+	At this point your two servers should be connected through the null serial cable.
+	When you use DOD connections with Routing and Remote Access Service the routes
+	are not automatically updated so you have to manually update any routes by
+	performing the following steps:
+	
+	1. In Routing and Remote Access Service from both servers, expand IP Routing
+	  and/or IPX Routing depending on which routing protocols you have installed.
+	
+	2. Click Summary, right-click the DOD interface, and then click Update Routes.
+	
+	3. Click Static Routes, and if the routes were exchanged successfully, you
+	  should see the routes from the opposite server.
+	
+	Troubleshooting
+	---------------
+	
+	If you are experiencing problems connecting or exchanging routes between the two
+	servers, check for one or more of the following:
+	
+	- Check the modem properties and verify the Maximum Speed for the Serial Cable
+	  connections match on both servers.
+	
+	  -or-
+	
+	- From both servers, verify the Initial Speed setting by performing the
+	  following steps:
+	
+	  1. In the Routing and Remote Access Service Administrator, click LAN and
+	     Demand Dial Interfaces.
+	
+	  2. Right-click the new DOD interface, and then click Configure Interface.
+	
+	  3. Click Configure, and verify that Initial Speed matches the Maximum Speed
+	     in the modem properties, and that these speeds match the other server.
+	
+	     NOTE: It is imperative that if you make any changes to the modem
+	     properties, Routing and Remote Access Service must be stopped and
+	     restarted.
+	
+	-or-
+	
+	- If both servers seem to be connecting successfully but cannot exchange RIP
+	  routes or clients on either side of the routers cannot communicate but the
+	  servers can, then check to see if a RAS connection was made instead of DOD
+	  using the following steps:
+	
+	  1. In the Routing and Remote Access Service Administrator, click LAN and
+	     Demand Dial Interfaces.
+	
+	  2. Verify that the Connection State for the DOD interfaces are displaying
+	     Connected.
+	
+	     NOTE: If only the dialing computer shows connected, then, most likely, a
+	     RAS connection has been made. If this is the case, check to see that the
+	     User Name being used in the credentials on the dialing server matches the
+	     name of a DOD interface on the server being dialed.
+	
+	Additional query words: modem interlink cross-over laplink steelhead dial on demand
+	======================================================================
+	Keywords          : kbnetwork kbhowto kbinfo kbArtTypeINF 
+	Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbAudDeveloper kbRRASNTSearch kbRRASNT400
+	Version           : WinNT:4.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

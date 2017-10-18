@@ -1,0 +1,162 @@
+---
+layout: page
+title: "Q143032: PRB: RDO: Hstmt Error with Asynchronous SQL Server Queries"
+permalink: kb/143/Q143032/
+---
+
+## Q143032: PRB: RDO: Hstmt Error with Asynchronous SQL Server Queries
+
+	Article: Q143032
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbGrpDSVBDB
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Trying to simultaneously execute a second query on the same rdoConnection that
+	currently has an asynchronous query executing will cause the following error:
+	
+	  S1000: [Microsoft][ODBC SQL Server Driver]Connection is busy with
+	  results for another hstmt
+	
+	CAUSE
+	=====
+	
+	After you execute an asynchronous query you cannot access the recordset or
+	execute another asynchronous query on the same rdoConnection until the
+	StillExecuting property of the recordset is False. This behavior is by design.
+	
+	RESOLUTION
+	==========
+	
+	You need to allow for the asynchronous query to finish before executing another
+	query on the same rdoConnection or accessing the recordset object.
+	
+	You can check to see if the query is finished by checking the StillExecuting
+	property of the recordset. This can also be resolved by opening a separate
+	rdoConnection for each query you want to execute simultaneously.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Problem in Visual Basic Version 4.0:
+	
+	This example uses a "DSN-less" ODBC connection so you will not need to set up a
+	DSN with the ODBC Admin utility.
+	
+	1. Start a new project in Visual Basic. Form1 is created by default.
+	
+	2. Add two command buttons to Form1.
+	
+	3. Paste the following code into the General Declarations section of form1.
+	
+	     Private Sub Command1_Click()
+	       'The following code will cause the error:
+	       Dim en As rdoEnvironment
+	       Dim cn As rdoConnection
+	       Dim rs1 As rdoResultset
+	       Dim rs2 As rdoResultset
+	       Dim sql1 As String
+	       Dim sql2 As String
+	
+	       'establish connection
+	       Set en = rdoEngine.rdoEnvironments(0)
+	       en.CursorDriver = rdUseOdbc
+	       'this should be modified to connect to your database
+	       Dim cnStr As String
+	       cnStr = "driver={SQL Server};server=myserver;" & _
+	         "database=pubs;uid=myuid;pwd=mypwd"
+	       Set cn = en.OpenConnection(dsname:="", Prompt:=rdDriverNoPrompt, _
+	         Connect:=cnStr)
+	
+	       'create SQL statements that take at least a few seconds to finish
+	       sql1 = "Select title From Titles"
+	       Set rs1 = cn.OpenResultset(Name:=sql1, Type:=rdOpenStatic, _
+	         Option:=rdAsyncEnable)
+	
+	       sql2 = "Select au_id From Authors"
+	       ' The next line will cause the error:
+	       ' "Connection is busy with results for another hstmt"
+	       Set rs2 = cn.OpenResultset(Name:=sql2, Type:=rdOpenStatic, _
+	         Option:=rdAsyncEnable)
+	
+	       While rs1.StillExecuting Or rs2.StillExecuting
+	         DoEvents
+	       Wend
+	       MsgBox "rs1 and rs1 have both completed"
+	     End Sub
+	
+	     Private Sub Command2_Click()
+	       'The following code will not cause the error:
+	       Dim en As rdoEnvironment
+	       Dim cn1 As rdoConnection
+	       Dim cn2 As rdoConnection  'a second connection has been added
+	       Dim rs1 As rdoResultset
+	       Dim rs2 As rdoResultset
+	       Dim sql1 As String
+	       Dim sql2 As String
+	
+	       'establish connection
+	       Set en = rdoEngine.rdoEnvironments(0)
+	       en.CursorDriver = rdUseOdbc
+	       'this should be modified to connect to your database
+	       Dim cnStr As String
+	       cnStr = "driver={SQL Server};server=myserver;" & _
+	         "database=pubs;uid=myuid;pwd=mypwd"
+	       Set cn1 = en.OpenConnection(dsname:="", Prompt:=rdDriverNoPrompt, _
+	         Connect:=cnStr)
+	       Set cn2 = en.OpenConnection(dsname:="", Prompt:=rdDriverNoPrompt, _
+	         Connect:=cnStr)
+	
+	       'create SQL statements that take at least a few seconds to finish
+	       sql1 = "Select title From Titles"
+	       Set rs1 = cn1.OpenResultset(Name:=sql1, Type:=rdOpenStatic, _
+	         Option:=rdAsyncEnable)
+	
+	       sql2 = "Select au_id From Authors"
+	       Set rs2 = cn2.OpenResultset(Name:=sql2, Type:=rdOpenStatic, _
+	         Option:=rdAsyncEnable)
+	
+	       While rs1.StillExecuting Or rs2.StillExecuting
+	         DoEvents
+	       Wend
+	       MsgBox "rs1 and rs1 have both completed"
+	     End Sub
+	
+	4. Note that you will need to change your DRIVER, SERVER, DATABASE, UID, and PWD
+	  in the OpenConnection method. You will also need to modify the SQL statement
+	  contained in the Command1_Click event to match your own SQL data source.
+	
+	5. Clicking on Command1 will cause the error: "Connection is busy with results
+	  for another hstmt." This is because you are trying to simultaneously execute
+	  a second query on the same rdoConnection. Clicking on Command2 will
+	  successfully execute each query simultaneously because they are each on a
+	  separate rdoConnection.
+	
+	REFERENCES
+	==========
+	
+	Hitchhiker's Guide to Visual Basic and SQL Server, Microsoft Press. ISBN:
+	1-55615-906-4
+	
+	Additional query words: kbVBp400 kbVBp600 kbdse kbDSupport kbVBp kbControl
+	
+	======================================================================
+	Keywords          : kbGrpDSVBDB 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600 kbVB400Search kbVB400
+	Issue type        : kbprb
+	
+	=============================================================================
+	

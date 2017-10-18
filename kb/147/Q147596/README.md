@@ -1,0 +1,106 @@
+---
+layout: page
+title: "Q147596: HOWTO: Create a Form that Resizes Based on Resolution"
+permalink: kb/147/Q147596/
+---
+
+## Q147596: HOWTO: Create a Form that Resizes Based on Resolution
+
+	Article: Q147596
+	Product(s): Microsoft FoxPro
+	Version(s): 3.0,3.0b,5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbcode kbvfp300 kbvfp500 kbvfp600
+	Last Modified: 13-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Screens developed under one resolution might not look the way you want them to
+	look when you run the screens on systems with different screen resolutions. One
+	solution is to develop several different screens under different resolutions,
+	and run the screen that is the same as the current resolution.
+	
+	However, in Visual FoxPro, it is possible to dynamically resize the screen and
+	reposition objects on it based on the current resolution. This article shows by
+	example how to do this.
+	
+	MORE INFORMATION
+	================
+	
+	Step-by-Step Example
+	--------------------
+	
+	1. Create a new form while under 640x480 resolution. Add some controls such as
+	  text boxes, command buttons, and labels to the form.
+	
+	2. Place the following code in the Init event of the form and in the Init event
+	  of any container objects such as a page on a pageframe that are on the form:
+	
+	  ** Assumes a screen built at 640x480
+	  LOCAL lnHeight, lnWidth, lnHeightdiff, lnWidthdiff
+	
+	  lnHeight = 480   && The height of the original resolution
+	  lnWidth = 640    && The width of the original resolution
+	  lnHeightdiff = 0 && Variable to hold the height difference
+	  lnWidthdiff = 0  && Variable to hold the width difference
+	
+	  IF SYSMETRIC(2) <> lnHeight && If this is not 640x480 resolution
+	     lnHeightDiff = SYSMETRIC(2) / lnHeight
+	     lnWidthDiff = SYSMETRIC(1) / lnWidth
+	
+	  ** You need to remark out the code down to, but not including the,
+	  ** ENDIF line of code if this is in the Init of a container object
+	  ** such as a page on a pageframe, or any other non-form container
+	  ** object that has a Controls and ControlsCount property.
+	
+	     This.Height = This.Height * lnHeightDiff
+	     This.Width = This.Width * lnWidthDiff
+	     This.Top = This.Top * lnHeightDiff
+	     This.Left = This.Left * lnHeightDiff
+	
+	  ** The code goes through each object, resizes and
+	  ** repositions it.
+	
+	     FOR i = 1 TO This.ControlCount
+	        WITH This.Controls(i)
+	           .Height = .Height * lnHeightdiff
+	           .Width = .Width * lnWidthdiff
+	           .Top = .Top * lnHeightdiff
+	           .Left = .Left * lnWidthdiff
+	
+	  ** You could also resize the font at this point
+	  ** by changing the FontSize property, perhaps to
+	  ** IF TYPE(".FontSize") # "U"
+	  **    && The IF ensures the control has a FontSize property
+	  **    .FontSize = .FontSize * ((.5 * lnWidthdiff) + (.5 * lnHeightdiff))
+	  ** ENDIF
+	  ** However, some higher screen resolutions can change
+	  ** the appearance of fonts considerably, so testing is
+	  ** advised before trying that step.
+	
+	        ENDWITH
+	     ENDFOR
+	  ENDIF
+	
+	  ThisForm.Refresh()
+	
+	3. Run the form in a different resolution. Observe the automatic changes that
+	  are made.
+	
+	Additional query words: page frame
+	
+	======================================================================
+	Keywords          : kbcode kbvfp300 kbvfp500 kbvfp600 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600
+	Version           : :3.0,3.0b,5.0,6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

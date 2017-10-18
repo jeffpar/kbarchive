@@ -1,0 +1,258 @@
+---
+layout: page
+title: "Q241757: XGEN: Readme.txt: Microsoft Exchange 5.5 U.S. Service Pack 3"
+permalink: kb/241/Q241757/
+---
+
+## Q241757: XGEN: Readme.txt: Microsoft Exchange 5.5 U.S. Service Pack 3
+
+	Article: Q241757
+	Product(s): Microsoft Exchange
+	Version(s): winnt:5.5 SP3
+	Operating System(s): 
+	Keyword(s): exc55sp3
+	Last Modified: 13-JAN-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.5 SP3 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	                 Microsoft Exchange Server Version 5.5
+	                            Service Pack 3
+	
+	Information in this document is subject to change without notice and is
+	provided for informational purposes only. The entire risk of the use or 
+	results of the use of this document remains with the user, and Microsoft 
+	Corporation makes no warranties, either express or implied. Complying with 
+	all applicable copyright laws is the responsibility of the user. No part of 
+	this document may be reproduced or transmitted in any form or by any means, 
+	electronic or mechanical, for any purpose, without the express written 
+	permission of Microsoft Corporation. 
+	
+	Microsoft may have patents, patent applications, trademarks, copyrights, or 
+	other intellectual property rights covering subject matter in this 
+	document. Except as expressly provided in any written license agreement 
+	from Microsoft, the furnishing of this document does not give you any 
+	license to these patents, trademarks, copyrights, or other intellectual 
+	property.
+	
+	1999 Microsoft Corporation. All rights reserved.
+	
+	Microsoft, MS-DOS, MS, Outlook, Windows, and Windows NT are either 
+	registered trademarks or trademarks of Microsoft Corporation in the U.S.A. 
+	and/or other countries.
+	
+	Other product and company names mentioned herein may be the trademarks of 
+	their respective owners.
+	
+	MORE INFORMATION
+	================
+	
+	---------------------------------------------------------------------
+	Installing the Service Pack 3 Update from the Compressed Files
+	---------------------------------------------------------------------
+	
+	1. Create an SP3 directory on your local hard drive.
+	
+	2. Download all of the compressed files in the ftp://ftp.microsoft.com/ 
+	  bussys/exchange/exchange-public/fixes/<LANG>/Exchg 5.5/SP3/server
+	  directory into the SP3 directory just created. 
+	
+	3. At the Windows NT command prompt, switch to the SP3 directory and type 
+	  the compressed file name to bring up the Self-extracting menu (Example: 
+	  SP3_550A.EXE). 
+	
+	4. At the Self-extracting menu, type the location of the SP3 folder in the 
+	  "Unzip to folder" box. Then select the "Unzip" button. Once the process 
+	  is completed select "OK," and then select "Close."
+	
+	The following files are provided for Exchange Server 5.5 Service Pack 3:
+	
+	Server update for Alpha                        SP3_550A.EXE
+	Server update for Intel                        SP3_550I.EXE
+	Chat server update for Alpha                   SP3_55CA.EXE
+	Chat server update for Intel                   SP3_55CI.EXE
+	Documentation                                  SP3_55DC.EXE
+	HTML Form Converter                            SP3_55FO.EXE
+	Server support files (cluster,KMS,etc)         SP3_55SS.EXE
+	Server support files for App Conn/Conv.        SP3_55SC.EXE
+	Exchange Cal/Groupwise Conn. Inst.(Alpha)      SP3_55GA.EXE
+	Exchange Cal/Groupwise Conn. Inst.(Intel)      SP3_55GI.EXE
+	Exchange Notes/OVVM/SNADS Conn. Inst.(Alpha)   SP3_55XA.EXE
+	Exchange Notes/OVVM/SNADS Conn. Inst.(Intel)   SP3_55XI.EXE
+	Exchange Connector symbols for Alpha           SP3S55XA.EXE
+	Exchange Connextor symbols for Intel           SP3S55XI.EXE
+	Server symbols for Alpha                       SP3S550A.EXE
+	Server symbols for Intel                       SP3S550I.EXE
+	Chat server symbols for Alpha                  SP3S55CA.EXE
+	Chat server symbols for Intel                  SP3S55CI.EXE
+	Readme and HTML file                           SP3_55RE.EXE
+	
+	5. Perform steps 3 and 4 for each file required. 
+	
+	All of the files listed may be necessary to use the Readme.htm file and to 
+	access Service Pack 3 depending on which links are accessed. The Readme.rtf 
+	and Readme.htm refer to these files in the SP3 directory as being located 
+	in the CD-ROM drive.  
+	
+	For detailed information about Exchange Server 5.5 SP3, see the enclosed 
+	server Readme in the file SP3_55RE.exe.
+	
+	Note: All compressed files in the Server directory are intended to be 
+	extracted on the I386 platform. Files for extraction on the Alpha platform 
+	are available in the ftp://ftp.microsoft.com/bussys/exchange/ 
+	exchange-public/fixes/<LANG>/Exchg 5.5/SP3/server/Alpha directory. 
+	
+	-----------------------------------------------------------------
+	Installing the Service Pack 3 Windows 16-bit Client Update from 
+	the Compressed File
+	-----------------------------------------------------------------
+	
+	1. Create a directory with the following path: SP3\Support. 
+	
+	2. Download the compressed client file SP3_55WI.EXE into the SP3\Support 
+	  directory. 
+	
+	3. At the Windows NT command prompt, switch to the SP3\Support directory, 
+	  and type the file name followed by a -d:
+	
+	     Example: SP3_55WI -d
+	
+	4. Switch to the SP3\Support\WIN16 directory, and then type setup.
+	
+	---------------------------------------------------------------------
+	Installing Service Pack 3 for the Microsoft Exchange Macintosh Client 
+	from the Compressed File
+	---------------------------------------------------------------------
+	
+	If you are currently using a Macintosh:
+	
+	   Note: The information in step 1 has been updated from the original
+	   Readme file.
+	
+	1.  Download the file "macout82.hqx" or the file "macout82.bin" from the
+	   Microsoft ftp site at ftp://ftp.microsoft.com/bussys/exchange/ 
+	   exchange-public/fixes/<LANG>/exchg5.5/sp3/mac/. (If you do
+	   not know which file to choose, download "macout82.hqx".)
+	
+	2. Use a utility to decompress and unstuff the downloaded file as 
+	  necessary.
+	
+	3. Open the folder "Microsoft Outlook 8.2" that was created on the desktop.
+	
+	4. Double-click "Microsoft Outlook Setup" to begin the installation.
+	
+	If you are currently not using a Macintosh:
+	
+	1. Download and run the file "macout82.exe".
+	
+	2. Locate the file "macout82.hqx" that was extracted by this program.
+	
+	3. Copy this extracted file to a Macintosh.
+	
+	4. Using a BinHex-capable decompression program, decompress this file to 
+	  the Macintosh desktop.
+	
+	5. If necessary, double-click the file "Microsoft Outlook 8.2.sit" to 
+	  unstuff the installation files.
+	
+	6. Open the folder "Microsoft Outlook 8.2" that was created on the desktop.
+	
+	7. Double-click "Microsoft Outlook Setup" to begin the installation.
+	
+	Macintosh Client System Requirements
+	
+	Minimum: Apple Macintosh with a 68030 or faster processor, System 7.5.5 or 
+	later, and at least 16 megabytes (MB) of RAM.
+	
+	Recommended: Apple Power Macintosh with Mac OS 8.0 or later and at least 16 
+	MB of RAM. In addition, Outlook will run faster if virtual memory is 
+	enabled and set to a minimum of 1 MB above the installed physical memory.
+	
+	For more information about Microsoft Outlook 8.2 for Macintosh, including 
+	information about new features, read the Release Notes from your Microsoft 
+	Outlook 8.2 installation folder.
+	
+	-----------------------------------------------------------------------
+	Installing Service Pack 3 for Microsoft Exchange Client Support Files 
+	from the Compressed File
+	-----------------------------------------------------------------------
+	
+	1. Create a directory with the following path: SP3\Support.
+	
+	2. Download the client support file SP3_55SU.exe from 
+	  ftp://ftp.microsoft.com/bussys/exchange/exchange-public/fixes/<LANG>/ 
+	  Exchg5.5/SP3/client directory into the SP3\Support directory.
+	
+	3. At the Windows NT command prompt, switch to the SP3\Support directory, 
+	  and type the file name to bring up the Self-extracting menu.(Example: 
+	  SP3_55SU.EXE) From the menu, select the folder in which to unzip the 
+	  files.
+	
+	The client support file includes the following directories under the
+	SP3\<LANG>\Support directory:
+	
+	- The Language pack. Located in the SP3\Support\Langpack\<LANG>\Nta and
+	  SP3\Support\Langpack\<LANG>\Ntx directory.
+	
+	- The Schedule+ Exchange Transport DLL installation program. Located in
+	  the SP3\Support\Msoutl\<LANG>\Win16 and SP3\Support\Msoutl\<LANG>\Win32 
+	  directory. This driver enables you to open Microsoft Outlook calendars 
+	  from within Schedule+ 7.x. It works only with Windows NT or Windows 95 
+	  versions of Schedule+ 7.x. You must also be using Microsoft Exchange 
+	  Server. 
+	
+	- The Templates are located in the SP3\Support\Template\<LANG>\Alpha and 
+	  SP3\Support\Template\<LANG>\I386 directories.
+	
+	--------------------------------------------------------------------
+	Installing Service Pack 3 Server Update from the Compressed Files
+	--------------------------------------------------------------------
+	
+	1. Make a complete backup of your Microsoft Exchange Server computer.
+	  Verify that it is done.
+	
+	2. Create an SP3 directory.
+	
+	3. Download the compressed Setup file appropriate for your hardware 
+	  platform into the SP3 directory. 
+	
+	     Select one of these files as appropriate:
+	
+	        Alpha AXP      SP3_550A.EXE
+	        Intel          SP3_550I.EXE
+	
+	4. Download the compressed Support file appropriate for your hardware 
+	  platform into the SP3 directory. 
+	
+	     Select one of these files as appropriate:
+	
+	        Alpha AXP      SP3S550A.EXE
+	        Intel          SP3S550I.EXE
+	
+	5. At the Windows NT command prompt, switch to the SP3 directory, and type 
+	  the compressed file name(Example: SP3_550A.EXE) to bring up the 
+	  Self-extracting menu. From the menu, select the folder in which to unzip 
+	  the files.
+	
+	6. Switch to the SP3\ENG\Server\Setup\I386 or SP3\ENG\Server\Setup\Alpha 
+	  directory (depending on whether you have an Intel or Alpha AXP    
+	  processor).
+	
+	7. Type "Update", and then follow the instructions displayed on the screen.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : exc55sp3 
+	Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange550SP3
+	Version           : winnt:5.5 SP3
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

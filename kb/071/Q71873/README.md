@@ -1,0 +1,156 @@
+---
+layout: page
+title: "Q71873: MS-DOS 5 Upgrade README.TXT: Hardware Compatibility"
+permalink: kb/071/Q71873/
+---
+
+## Q71873: MS-DOS 5 Upgrade README.TXT: Hardware Compatibility
+
+	Article: Q71873
+	Product(s): Microsoft Disk Operating System
+	Version(s): 5.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 31-JAN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft MS-DOS operating system version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The following information was taken from the Microsoft MS-DOS 5 Upgrade
+	README.TXT file.
+	
+	MORE INFORMATION
+	================
+	
+	5. MAKING YOUR HARDWARE COMPATIBLE WITH MS-DOS 5.0
+	--------------------------------------------------
+	
+	5.1 Acer 1100/33 and CTRL+ALT+DEL:
+	
+	If you have an Acer 1100/33 computer with an Award BIOS, you may not be able to
+	restart your system by using CTRL+ALT+DEL. Contact Acer for a ROM BIOS upgrade.
+	
+	5.2 Amstrad Systems and KEYB.COM:
+	
+	If your Amstrad system has a ROM BIOS version earlier than 1.4, and you can't use
+	your keyboard after loading KEYB.COM, contact your vendor for a ROM BIOS
+	upgrade.
+	
+	5.3 Apricot Qi 386 Systems:
+	
+	If your Apricot Qi 300 fails to start while loading EMM386.EXE, contact Apricot
+	for a ROM BIOS upgrade.
+	
+	Some Apricot Qi660 and Qi900 computers may not work if MS-DOS 5.0 is loaded into
+	the high memory area. Run MS-DOS 5.0 in conventional memory, or contact Apricot
+	Computers for more information.
+	
+	5.4 Arrow Keys and QBasic/MS-DOS Editor:
+	
+	If you can't use the arrow keys on your numeric keypad when running QBasic or
+	MS-DOS Editor, a memory-resident program named FIXSHIFT.COM may help. To obtain
+	FIXSHIFT.COM, call Microsoft Product Support Services; see your registration
+	card for the phone number.
+	
+	5.5 AT&T Computer with an VDC 750 Display Adapter Card:
+	
+	Before using the MS-DOS Shell Task Swapper on an AT&T computer with a VDC 750
+	display adapter card, remove the DEVICE=EGA.SYS command from your CONFIG.SYS
+	file.
+	
+	5.6 Commodore PC III and Task Swapper:
+	
+	You may not be able to use Task Swapper in MS-DOS Shell on a Commodore PC III.
+	
+	5.7 Compaq EXTDISK.SYS Driver:
+	
+	The Compaq EXTDISK.SYS driver is incompatible with MS-DOS 5.0. Contact your
+	system vendor for an upgrade.
+	
+	5.8 Corel Corporation Disk Drivers:
+	
+	If your Corel Corporation disk driver doesn't work correctly, contact your vendor
+	for an upgrade.
+	
+	5.9 External Floppy Disk Drives:
+	
+	If you can't use your Nth, Procomm, or Sysgen external floppy disk drive, contact
+	your vendor for an update.
+	
+	5.10 Hardcard II:
+	
+	If you can't use Plus Development Hardcard II or Hardcard II XL when running
+	EMM386.EXE, specify the exclude (x=) switch to prevent EMM386 from conflicting
+	with the card's BIOS address.
+	
+	See your Hardcard II manual to determine the BIOS addresses that Hardcard II or
+	Hardcard II XL uses. See the "MS-DOS User's Guide and Reference" for more
+	information about the exclude switch.
+	
+	5.11 NCR VGA BIOS:
+	
+	If you have an NCR VGA BIOS and can't switch between screens when running MS-DOS
+	Shell or QBasic, see your NCR manual for information about making your VGA BIOS
+	PS/2 compatible.
+	
+	5.12 Olivetti System with a CGA Video Board:
+	
+	An Olivetti system with a CGA video board may not scroll correctly. Add the /s
+	switch to the DEVICE=ANSI.SYS command in your CONFIG.SYS file.
+	
+	5.13 Toshiba T3100SX:
+	
+	Toshiba T3100SX computer's suspend/resume feature is incompatible with
+	EMM386.EXE. Either disable the feature or do not use EMM386.EXE.
+	
+	5.14 Using a Mouse with MS-DOS Shell:
+	
+	If you have a Logitech or Microsoft mouse, use the following driver versions with
+	MS-DOS Shell:
+	
+	  Logitech mouse version 5.01 or later
+	  Microsoft mouse version 6.21 or later
+	
+	5.15 Western Digital VGA Card:
+	
+	If you have a Western Digital VGA card and are using RAMBIOS.EXE and RAMBIOS.SYS,
+	load RAMBIOS.SYS before ANSI.SYS and DISPLAY.SYS in your CONFIG.SYS file, and
+	RAMBIOS.EXE before GRAPHICS.COM in your AUTOEXEC.BAT file.
+	
+	5.16 WonderCard 3.x:
+	
+	Using MS-DOS 5.0 with an ATI WonderCard 3.x in 50-line mode may cause the lower
+	part of your display to be truncated. Contact your vendor for more information.
+	
+	5.17 XGA and EMM386.EXE:
+	
+	If you use an XGA display with EMM386.EXE, you may need to exclude certain memory
+	ranges with the EMM386 EXCLUDE option (x=). To determine which memory ranges to
+	exclude, use your reference disk to view the memory map.
+	
+	5.18 Zenith Computer:
+	
+	To use the GRAPHICS command with a Zenith computer, set the STACKS command in
+	your CONFIG.SYS file to at least STACKS=9,256. For information about the STACKS
+	command, see Chapter 14 of the "MS-DOS User's Guide and Reference."
+	
+	5.19 Zeos 486 and Task Swapper:
+	
+	If you have a Zeos 486 computer with a Mylex BIOS, you may not be able to use
+	Task Swapper in MS-DOS Shell. Contact Zeos for a ROM BIOS upgrade.
+	
+	Additional query words: 5.00 Readme
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMSDOSSearch kbMSDOS500
+	Version           : :5.0
+	
+	=============================================================================
+	

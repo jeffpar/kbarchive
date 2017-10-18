@@ -1,0 +1,86 @@
+---
+layout: page
+title: "Q234499: Microsoft Pocket Guide to Access 2000 Comments and Corrections"
+permalink: kb/234/Q234499/
+---
+
+## Q234499: Microsoft Pocket Guide to Access 2000 Comments and Corrections
+
+	Article: Q234499
+	Product(s): Microsoft Press
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbdocfix kbdocerr
+	Last Modified: 09-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- MSPRESS Microsoft Pocket Guide to Microsoft Access 2000 ISBN 1-57231-969-0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article contains comments, corrections, and information about known errors
+	relating to the Microsoft Press book Microsoft Pocket Guide to Microsoft Access
+	2000, ISBN 1-57231-969-0.
+	
+	The following topics are covered:
+	
+	- Page 20: Command Names Reversed
+	
+	- Pages 65-66: Error In Step 2 Of Procedures
+	
+	- Page 83: Delete Incorrect Information
+	
+	- Page 90: Command Name Incorrect
+	
+	MORE INFORMATION
+	================
+	
+	Page 20: Command Names Reversed
+	-------------------------------
+	
+	In the ASCII Text Files entry, the last sentence of the first paragraph should
+	read: "...by choosing the File menu's Get External Data command and the
+	submenu's Import command."
+	
+	
+	Pages 65-66: Error In Step 2 Of Procedures
+	------------------------------------------
+	
+	Step 2 of the procedure should say "Click Tables."
+	The same applies to step 2 of both of the procedures on page 66 as well.
+	
+	
+	Page 83: Delete Incorrect Information
+	-------------------------------------
+	
+	In the first paragraph of the Office Assistant entry, the sentence beginning "Or
+	click Tips..." is incorrect. Please delete it.
+	
+	
+	Page 90: Command Name Incorrect
+	-------------------------------
+	
+	The last sentence of the first paragraph under Personal Menus and Toolbars is
+	incorrect.
+	It should say:
+	"...choosing the Tools menu's Customize command..."
+	
+	
+	Microsoft Press is committed to providing informative and accurate books. All
+	comments and corrections listed above are ready for inclusion in future
+	printings of this book. If you have a later printing of this book, it may
+	already contain most or all of the above corrections.
+	
+	Additional query words: EUBOOK EUPG OFF2000 ACCESS
+	
+	======================================================================
+	Keywords          : kbdocfix kbdocerr 
+	Technology        : kbMSPressSearch
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

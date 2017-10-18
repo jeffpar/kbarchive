@@ -1,0 +1,111 @@
+---
+layout: page
+title: "Q149587: PPT7: Creating PowerPoint 95 Viewer Disks from Downloaded File"
+permalink: kb/149/Q149587/
+---
+
+## Q149587: PPT7: Creating PowerPoint 95 Viewer Disks from Downloaded File
+
+	Article: Q149587
+	Product(s): Microsoft PowerPoint for Windows
+	Version(s): WINDOWS:7.0
+	Operating System(s): 
+	Keyword(s): kbsetup kbdta
+	Last Modified: 16-APR-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft PowerPoint for Windows 95, version 7.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes how to use the 32-bit PowerPoint 95 viewer self-
+	extracting file Pptvw32.exe to create a PowerPoint Viewer disk set.
+	
+	Pptvw32.exe is posted on many online sites, but it is too large to fit on a
+	single 3.5-inch high-density disk.
+	
+	NOTE: The information in this article does not apply to the PowerPoint Viewer 97
+	self-extracting file, Ppview97.exe. For information about creating a disk set
+	from this file, please see the following article in the Microsoft Knowledge
+	Base:
+	
+	  Q170329 PPT97: Contents of the PowerPoint 97 Viewer Readme.txt File
+	
+	MORE INFORMATION
+	================
+	
+	To create PowerPoint Viewer for Windows 95 disks, follow these steps:
+	
+	1. Create a new folder called Ppvw95.
+	
+	2. Run Pptvw32.exe.
+	
+	3. When the Licensing Agreement dialog box appears, click Yes. When the Welcome
+	  Window appears, minimize the Setup program.
+	
+	4. On the Start Menu, point to Find, and then click Files Or Folders.
+	
+	5. In the Named box, type:
+	
+	  "View951.cab" (without the quotation marks)
+	
+	  Click Find Now.
+	
+	6. Use Windows Explorer to open the folder found in step 5. This folder contains
+	  the following files:
+	
+	     SETUP.EXE            73,152   12-18-95   12:00p
+	     LICENSE.TXT           4,915   12-18-95   12:00p
+	     PPTV.INF              2,670   12-18-95   12:00p
+	     PPVWREAD.TXT          5,178   12-18-95   12:00p
+	     EXTRACT.EXE          87,916   12-18-95   12:00p
+	     SETUP.INI               149   12-20-95   12:44p
+	     SETUP.LST             1,320   12-18-95   12:00p
+	     SETUP.STF            17,334   12-18-95   12:00p
+	     SETUP.TDF                84   12-20-95   12:45p
+	     VIEW951.CAB       1,254,400   12-18-95   12:00p
+	     VIEW952.CAB         163,673   12-18-95   12:00p
+	
+	  Copy these files to the Ppvw95 folder.
+	
+	7. Switch to the Viewer Setup program and complete it.
+	
+	8. When the Setup program is complete, copy all the files (except View952.cab)
+	  from the Ppvw95 folder to a blank 3.5-inch (high-density) disk. Label the
+	  disk:
+	
+	  PowerPoint Viewer for Windows 95 (Disk 1 of 2).
+	
+	9. Copy the View952.cab file from the Ppvw95 folder onto a blank 3.5-inch
+	  (high-density) disk. Label this disk:
+	
+	  PowerPoint Viewer for Windows 95 (Disk 2 of 2)
+	
+	You can now install PowerPoint Viewer for Windows 95 to another computer by
+	running the Setup.exe located on Disk 1.
+	
+	REFERENCES
+	==========
+	
+	For additional information, please see the following articles here in the
+	Microsoft Knowledge Base:
+	
+	  Q159522 PPT: PowerPoint Viewer (32-Bit) Available from Online Services
+	
+	  Q143019 PPT7: Contents of PowerPoint Viewer (32-Bit) Disks
+	
+	Additional query words: 7.00 span viewer ppt powerpt softlib power point slideshow slides spans cabinet ppt7 ppt95 pp95 pp7
+	
+	======================================================================
+	Keywords          : kbsetup kbdta 
+	Technology        : kbPowerPtSearch kbPowerPt700 kbZNotKeyword2 kbPowerPt700Search
+	Version           : WINDOWS:7.0
+	Hardware          : x86
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

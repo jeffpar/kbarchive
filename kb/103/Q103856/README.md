@@ -1,0 +1,88 @@
+---
+layout: page
+title: "Q103856: SubVBX.exe - Subclassing VBX Controls with MFC 2.0"
+permalink: kb/103/Q103856/
+---
+
+## Q103856: SubVBX.exe - Subclassing VBX Controls with MFC 2.0
+
+	Article: Q103856
+	Product(s): Microsoft Windows Software Development Kit
+	Version(s): WINDOWS:3.1
+	Operating System(s): 
+	Keyword(s): kbfile kbsample kb16bitonly kbMFC
+	Last Modified: 04-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows Software Development Kit (SDK) 3.1 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	SubVBX.exe is a sample application that does Windows subclassing on a VBX
+	control using the Microsoft Foundation Class (MFC) Libraries version 2.0. The
+	sample subclasses the grid control, overrides the OnDlgCode() message handler,
+	and returns the DLGS_WANTARROWS code. Normally Windows uses the arrow keys to
+	move between controls in a dialog box, and does not pass the arrow keys to the
+	control. Subclassing the grid control and overriding the OnDlgCode() message
+	handler causes Windows to pass the arrow keys to the grid control so that it can
+	use the keys to move between cells in the control.
+	
+	MORE INFORMATION
+	================
+	
+	The following file is available for download from the Microsoft Download
+	Center:
+	
+	  SubVBX.exe
+	  (http://download.microsoft.com/download/platformsdk/app99/3.1/W31/EN-US/SubVBX.exe)
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. Once posted, the file is housed on secure
+	servers that prevent any unauthorized changes to the file.
+	
+	Windows controls, such as an edit control or a list box control, can be
+	subclassed in MFC using the CWnd::SubclassWindow() and CWnd::SubclassDlgItem()
+	functions. These functions do not work for VBX controls. These functions rely on
+	the fact that each window control has its own Windows procedure. This way it is
+	possible for an MFC object to chain to the control's original Windows procedure.
+	However, Visual Basic (VB) controls under MFC 2.0 are managed by MFC objects,
+	and therefore VB controls use the same Windows procedure as all other MFC
+	objects.
+	
+	To subclass a VB control in MFC 2.0, it is necessary to copy the data from the
+	original control object into the object that you want to use to subclass the
+	original control. After the original object has been copied, it can be detached
+	and deleted, and the new control object can be attached.
+	
+	This sample defines the CVBClone class that contains the function
+	SubclassVBControl(). This function does the copying, attaching, and detaching
+	that is described above. To use this class, derive a new class from the CVBClone
+	class and new message handling functions to the message map. This class can then
+	be used to subclass a VB control in a dialog box by calling the
+	SubclassVBControl() function in the OnInitDialog() or OnInitialUpdate() function
+	of the dialog box or form view that contains the control.
+	
+	This sample subclasses a grid control in a form view. The sample defines the
+	CMyGrid class from CVBControl, which it uses to subclass the control. The sample
+	also calls SubclassVBControl in the OnInitialUpdate() of the form view to
+	subclass the control in the form view.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbfile kbsample kb16bitonly kbMFC 
+	Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+	Version           : WINDOWS:3.1
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

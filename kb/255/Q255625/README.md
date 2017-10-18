@@ -1,0 +1,156 @@
+---
+layout: page
+title: "Q255625: BUG: Err Object Returns Zero Number and Empty Description."
+permalink: kb/255/Q255625/
+---
+
+## Q255625: BUG: Err Object Returns Zero Number and Empty Description.
+
+	Article: Q255625
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): WINDOWS:6.0
+	Operating System(s): 
+	Keyword(s): kbActiveX kbCOMt kbVBp kbVBp600bug kbGrpDSVB kbDSupport
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	After an object raises a trappable error, the client checks the Err object and
+	finds that the error number is zero and the error description is empty.
+	
+	CAUSE
+	=====
+	
+	This problem occurs only when the client application is compiled to native code
+	and when the client does not have a local or global variable that stores a
+	reference to the object that raises the error.
+	
+	Assume that you have an object called Object1 and it has a property called
+	ChildObject that returns a reference to another object, Object2. If you call a
+	method on Object2 using a syntax such as:
+	
+	Object1.ChildObject.Method
+	
+	you see this type of behavior because no variable holds a reference to Object2.
+	
+	RESOLUTION
+	==========
+	
+	The workaround for this problem is to assign an object to a variable and avoid
+	using the preceding syntax. Do the following:
+	
+	  Dim MyObject as Object2
+	
+	  Set MyObject = Object1.ChildObject
+	  ' call the method using the MyObject variable
+	  MyObject.Method
+	
+	Another workaround is to compile your project to p-code.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Start a new ActiveX DLL project. Class1 is created by default.
+	
+	2. From the Project menu, select Project1 Properties, and then set the name to
+	  "MyDll" (without the quotation marks).
+	
+	3. From the Project menu, add a new class module to this project. This is called
+	  Class2 by default.
+	
+	4. Paste the following code into the Class1 code module:
+	
+	  Option Explicit
+	  Public Sub DoSomething
+	      Err.Raise 101
+	  End Sub
+	
+	  Private Sub Class_Terminate
+	      Dim i as Long
+	
+	      ' if you comment the following line, the error object is not reset
+	      On Error Resume Next
+	  	
+	      i=0
+	  End Sub
+	
+	5. Paste the following code into the Class2 code module:
+	
+	  Option Explicit
+	  Public Property Get ChildObject() As Class1
+	      Set ChildObject = New Class1
+	  End Property
+	
+	6. Save the project and compile it as "MyDll.Dll" (without the quotation marks).
+	
+	7. Start a new Standard EXE project. Form 1 is created by default.
+	
+	8. From the Project menu, select References, select MyDll, and then click OK to
+	  add a reference to the DLL you just created.
+	
+	9. Add a CommandButton to Form1. This is Command1 by default.
+	
+	10. Paste the following code into Form1's code module:
+	
+	  Option Explicit
+	  Private Sub Command1_Click()
+	     Dim MyObj As New MyDll.Class2
+	     On Error GoTo p1
+	     MyObj.ChildObject.DoSomething
+	     Exit Sub
+	  p1:
+	     MsgBox "Err.Number=" & Err.Number
+	  End Sub
+	
+	11. From the Project menu, select Project1 Properties, and then select the
+	  Compile tab. Select Compile to P-Code.
+	
+	12. From the File menu, select Make to compile the Standard EXE project to
+	  p-code. Run the executable and click on Command1. Note that you get a
+	  message box with "Err.Number=101" as expected.
+	
+	13. Dismiss the message box and stop the project to return to the design
+	  environment.
+	
+	14. From the Project menu, select Project1 Properties, and select the Compile
+	  tab. Select Compile to Native Code.
+	
+	15. From the File menu, select Make to compile the project to native code. Run
+	  the executable and click on Command1. Note that you get a message box with
+	  "Err.Number=0" which is not as expected.
+	
+	The problem is caused by the Class_Terminate event. When you use the syntax
+	Object1.ChildObject.Method, Object2 gets released before the next line of code
+	is executed, which triggers the Class_Terminate event, and the Err object is
+	reset in the terminate event procedure. If you comment out the line that uses
+	the Err object in this event, the problem does not happen.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbActiveX kbCOMt kbVBp kbVBp600bug kbGrpDSVB kbDSupport 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+	Version           : WINDOWS:6.0
+	Issue type        : kbbug
+	Solution Type     : kbnofix
+	
+	=============================================================================
+	

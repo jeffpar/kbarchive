@@ -1,0 +1,402 @@
+---
+layout: page
+title: "Q281107: Travel-Mode Clients May Lose Inventory or Not Run Advertisements"
+permalink: kb/281/Q281107/
+---
+
+## Q281107: Travel-Mode Clients May Lose Inventory or Not Run Advertisements
+
+	Article: Q281107
+	Product(s): Microsoft Systems Management Server
+	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
+	Operating System(s): 
+	Keyword(s): kbsms200bug kbAdvertisement kbDiscovery kbInventory kbsms200preSP3fix kbsms200preSP4fix
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server versions 2.0, 2.0 SP1, 2.0 SP2, 2.0 SP3 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about modifying the registry. Before you 
+	modify the registry, make sure to back it up and make sure that you understand how to restore 
+	the registry if a problem occurs. For information about how to back up, restore, and edit the 
+	registry, click the following article number to view the article in the Microsoft Knowledge Base:
+	
+	  Q256986 Description of the Microsoft Windows Registry
+	
+	SYMPTOMS
+	========
+	
+	In Systems Management Server (SMS) 2.0, the following behavior may occur with
+	clients that are temporarily outside the site boundaries for the clients'
+	assigned site:
+	
+	- Hardware and software inventory for these clients may be periodically deleted
+	  without administrator intervention.
+	
+	- Resynchronization of hardware and software inventory for these clients may
+	  not work. One of the following status messages may be generated:
+	
+	  3703 SMS Software Inventory Processor requested a resynchronization for
+	  resource "CLIENTNAME" because an attempt was made to update inventory
+	  information in the SMS site database that does not already exist.
+	
+	  -or-
+	
+	  2703 SMS Inventory Data Loader failed to process the delta MIF file
+	  "filename" and has moved it to "path".
+	
+	  Possible cause: The file is corrupt or contains bad syntax.
+	  Solution: Review the immediately preceding status messages from this component
+	  for more details.
+	
+	  If you ignore this problem, SMS will probably fix it and complete this
+	  operation later. If this error occurs repeatedly, refer to your SMS
+	  documentation or the Microsoft Knowledge Base for further troubleshooting
+	  information.
+	
+	  NOTE: These messages can also occur during typical site operations and may not
+	  be related to the problem that is described in this article. Please read this
+	  article thoroughly to determine whether or not this issue applies to your
+	  site.
+	
+	- Clients that are installed in secondary sites but are outside the site
+	  boundaries may not receive advertised programs.
+	
+	See the "More Information" section of this article for additional details.
+	
+	CAUSE
+	=====
+	
+	This problem can occur if a SMS client either has the Travel Mode option set or
+	is configured for forced sites, the client is located outside its site
+	boundaries, and the client reports a discovery data record (DDR) to the client's
+	installed site. The system resource for this client is then evaluated as not
+	being assigned to any valid SMS site. Discovery Data Manager later deletes the
+	hardware and software inventory for any client that is not assigned to at least
+	one site. This deletion is performed on a daily basis and is not configurable.
+	
+	See the "More Information" section of this article for additional details.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, obtain the latest service pack for Systems Management
+	Server version 2.0. For additional information, click the following article
+	number to view the article in the Microsoft Knowledge Base:
+	
+	  Q288239 SMS: How to Obtain the Latest Systems Management Server 2.0 Service
+	  Pack
+	
+	
+	
+	
+	Additional Settings
+	-------------------
+	
+	To configure site evaluations to keep Travel mode or forced sites clients
+	assigned appropriately, you need to edit the registry.
+	
+	WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+	that may require you to reinstall your operating system. Microsoft cannot
+	guarantee that you can solve problems that result from using Registry Editor
+	incorrectly. Use Registry Editor at your own risk.
+	
+	To configure site evaluations to keep Travel mode or forced sites clients
+	assigned appropriately, on each SMS site server on which the fix has been
+	applied:
+	
+	1. Start Registry Editor (Regedt32.exe).
+	
+	2. Locate and click the following registry key:
+	
+	  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SMS\Components\SMS_DISCOVERY_DATA_MANAGER
+	
+	3. On the Edit menu, click Add Value.
+	
+	4. In the box, type "Travel Mode Clients Filter" (without the quotation marks).
+	
+	5. Click REG_DWORD for the data type, and then click OK.
+	
+	6. In the Data box, type one of the following values:
+	
+	   - 0x1 = Clients in SMS 2.0 Client Travel mode are not unassigned from their
+	     installed sites, even if the new site boundaries do not include the
+	     clients' currently reported subnets.
+	
+	   - 0x2 = Clients that have forced sites configured are not unassigned from
+	     their installed sites, even if the new site boundaries do not include the
+	     clients' currently reported subnets.
+	
+	   - 0x3 = Clients in either SMS 2.0 Client Travel mode or with forced sites
+	     configured are not unassigned from their installed sites, even if the new
+	     site boundaries do not include the clients' currently reported subnets.
+	
+	7. Click OK, and then quit Registry Editor.
+	
+	NOTE: If you do not configure each site server in a hierarchy with this registry
+	value, inconsistent assignments and the potential absence of inventory for
+	Travel mode or forced site clients might result. Make sure that you configure
+	and document each site in your hierarchy with this new item.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed that this is a problem in the Microsoft products that
+	are listed at the beginning of this article. This problem was first corrected in
+	Systems Management Server 2.0 Service Pack 4.
+	
+	MORE INFORMATION
+	================
+	
+	You can configure SMS clients for Travel mode, and to prompt the user when the
+	client travels outside site boundaries to join another site, to remove itself
+	from its current site, or to stay installed in its current site. You can also
+	configure the client to remain in its current site without any user
+	intervention. This is useful in keeping the client components installed on
+	computers that travel outside site boundaries, and in reducing bandwidth usage
+	over potentially slow links.
+	
+	Another available option is the use of a Forced Sites list. With this method, a
+	registry entry specifies the site or sites in which the client is forcibly
+	installed and that the client reports to, in addition to any client evaluation
+	of site assignment that is based on subnet location.
+	
+	For additional information about the Travel mode and forced sites options, see
+	the Systems Management Server Resource Guide and Systems Management Server
+	Administrator's Guide.
+	
+	Without this fix, these client-side configuration options do not change the
+	server logic that is used to determine site assignment. Therefore, a client
+	might appear to be installed in a given site, but does not have a status of
+	"Assigned" when the client is evaluated on the server.
+	
+	When an SMS client travels outside its site boundaries, or the site boundaries of
+	a site are changed so that they do not include that client's subnet, Discovery
+	Data Manager (a component of the SMS_EXECUTIVE service that is running on the
+	site server) evaluates assignment based on this new information. If the client's
+	currently reported subnet value does not match the list of subnets in the site's
+	current assignment rules, the client resource record is updated to reflect that
+	the client is no longer assigned. Note that this behavior may be sporadic,
+	depending on the discovery methods that are used and the frequency of discovery.
+	The primary discovery method for SMS clients is heartbeat discovery, which is
+	configured by default to report every seven days. You may want to avoid removing
+	an assignment for the following reasons:
+	
+	- If a Travel-mode client reports a heartbeat DDR while the client is outside
+	  site boundaries, the client appears unassigned from the site or sites to
+	  which the client normally belongs when viewed in the SMS site database.
+	
+	- SMS deletes inventory for any clients that are not evaluated as assigned to
+	  at least one site each night between 12:00 A.M. and 5:00 A.M. (server local
+	  time). This inventory deletion task is performed by Discovery Data Manager
+	  automatically and is not configurable.
+	
+	- If a client sends a partial inventory record, and the database contains no
+	  inventory for that client, a resynchronization request must be generated to
+	  request that the client send a full hardware or software inventory. The
+	  hardware and software inventory resynchronization mechanisms rely on site
+	  assignment to determine the site that the resynchronization mechanisms should
+	  forward resynchronization requests to. If a client is not assigned to any
+	  site, a resynchronization request for it does not succeed. Inventory is not
+	  updated until the client is evaluated as being within the boundaries of at
+	  least one site.
+	
+	  When this behavior occurs, the following log entries are logged in the
+	  Dataldr.log file on the site server:
+	
+	  CMachineSource::InsertMachine - attempt to update non-existent row.
+	  Requesting resync.
+	
+	  CMachine::SendResyncCommand - could not get site assignment.
+	
+	- The targeting mechanism for advertised programs at a secondary site requires
+	  that all targeted systems be assigned to the site. Secondary sites maintain
+	  system resource information in the Sms\Ddm.box\Data.col folder in the form of
+	  DDRs. These DDRs are, in effect, the database of system resources that are
+	  used by Collection Evaluator and Offer Manager for software-distribution
+	  purposes. Only assigned client system DDRs are forwarded to secondary sites
+	  by the parent site. Therefore, if a system is not assigned to a site because
+	  of re-evaluation by the parent site Discovery Data Manager component, the DDR
+	  for that system is removed from the secondary site. Clients are not able to
+	  receive software distributions until they are evaluated as being within the
+	  boundaries of at least one site.
+	
+	The fix that is described in this article provides the ability to keep
+	Travel-mode or forced site clients assigned to their installed sites, even if
+	they are reported as being outside the site boundaries.
+	
+	To implement this ability, a new system resource discovery record Travel Mode
+	attribute has been added to reflect that a client is in Travel mode or has a
+	forced site entry. Discovery Data Manager logic on the SMS site server has been
+	updated to check for this attribute and evaluate these clients as assigned to
+	their reported installed site.
+	
+	The Travel Mode attribute can have the following values:
+	
+	- 0x0 = The client is not in any form of client-configured Travel mode.
+	
+	- 0x1 = The client is in SMS 2.0 Client Travel mode as indicated from the
+	  Reserved2 registry value, in the
+	  HKEY_LOCAL_MACHINE\Software\Microsoft\SMS\Client\Configuration\Client
+	  Properties key.
+	
+	- 0x2 = The client has forced sites configured in the Forced Sites value in the
+	  HKEY_LOCAL_MACHINE\Software\Microsoft\SMS\Client\Sites key.
+	
+	- 0x3 = The client is in both SMS 2.0 Client Travel mode and has forced sites
+	  configured.
+	
+	NOTE: Site control file modification to configure Travel mode for SMS clients on
+	a site-wide level is not supported. Clients that are in Travel mode as a result
+	of a site-wide setting that is imposed by the site control file are not
+	detected. Instead, use The Clitravl.exe tool from the SMS 2.0 SP2 Supportability
+	Tools bundle to configure clients for Travel mode.
+	
+	This attribute is reported with normal client logon or heartbeat discovery and is
+	processed by Discovery Data Manager based on the following algorithm:
+	
+	  If the client has any form of Travel mode set, the system resource is
+	  assigned to a combination of its installed sites as reported by the DDR and
+	  its assigned sites as evaluated by regular site-assignment rules.
+	
+	Also, an additional SMS site server registry setting must be configured to
+	control the evaluation of system resources that report the new Travel mode
+	attribute when site assignment rules are changed. Site assignment rules change
+	when an administrator modifies the list of subnets by starting the SMS
+	Administrator console, and then clicking Site, clicking Site Properties, and
+	then clicking the Boundaries tab. Please see the "Resolution" section of this
+	article for details about the necessary registry configuration items.
+	
+	Examples of Changed Behavior with the Fix Applied and Enabled
+	-------------------------------------------------------------
+	
+	The following examples use a simple hierarchy of three sites: a central site
+	(AAA) and two child primary sites (ABC and XYZ). Four client systems are
+	represented (SMSClient1, SMSClient2, SMSClient3, and SMSClient4). Both site
+	servers have the fix installed, and both also have the Travel Mode Clients
+	Filter registry item configured to 0x3.
+	
+	Example 1:
+	
+	Site ABC has subnet boundaries of 192.168.0.0. A computer that is named
+	SMSClient1 originally installed the SMS Client software from this site and is in
+	the site boundaries, so SMSClient1 appears as assigned to site ABC. Travel mode
+	is set for SMSClient1 with prompting off.
+	
+	- SMSClient1 travels outside the site boundaries to an unmanaged subnet,
+	  10.0.0.0. While SMSClient1 is in this subnet, SMSClient1 sends a heartbeat
+	  DDR to site ABC reporting that SMSClient1 is currently in subnet 10.0.0.0.
+	
+	- Discovery Data Manager at site ABC evaluates the client and notes that it has
+	  Travel mode set. Therefore, Discovery Data Manager assigns the client to the
+	  combination of the client's installed sites, ABC, and assigned sites, null,
+	  which results in assignment to site ABC.
+	
+	Example 2:
+	
+	- Site ABC has subnet boundaries of 192.168.0.0. A computer that is named
+	  SMSClient2 originally installed the SMS Client software from this site and is
+	  in the site boundaries, so SMSClient2 appears as assigned to site ABC. Travel
+	  mode is set for SMSClient2 with prompting off.
+	
+	- SMSClient2 travels outside the site boundaries of site ABC to a subnet,
+	  10.0.1.0, managed by another site: XYZ. While in this subnet, SMSClient2
+	  sends a heartbeat DDR to site ABC reporting that SMSClient2 is currently in
+	  subnet 10.0.1.0.
+	
+	- Discovery Data Manager at site ABC evaluates the client and notes that it has
+	  Travel mode set. As a result, Discovery Data Manager assigns the client to
+	  the combination of the client's installed sites, ABC, and assigned sites,
+	  XYZ, which results in assignment to sites ABC and XYZ. Note that the client
+	  is not actually reporting to site XYZ, but because the client is in the site
+	  boundaries of XYZ, it is evaluated.
+	
+	Example 3:
+	
+	Site ABC has subnet boundaries of 192.168.0.0. A computer that is named
+	SMSClient1 originally installed the SMS Client software from this site and is in
+	the site boundaries, so SMSClient1 appears as assigned to site ABC. The Forced
+	Site registry key is populated with ABC, denoting that this client always
+	reports to site ABC.
+	
+	- SMSClient1 travels outside the site boundaries to an unmanaged subnet,
+	  10.0.0.0. While in this subnet, SMSClient1 sends a heartbeat DDR to site ABC
+	  reporting that SMSClient1 is currently in subnet 10.0.0.0.
+	
+	- Discovery Data Manager at site ABC evaluates the client and notes that it has
+	  Travel mode set (indicated by a value of 2 for the Travel mode discovery
+	  property). As a result, Discovery Data Manager assigns the client to the
+	  combination of the client's installed sites, ABC, and assigned sites, null,
+	  which results in assignment to site ABC.
+	
+	Example 4:
+	
+	- Site ABC has subnet boundaries of 192.168.0.0. A computer that is named
+	  SMSClient4 originally installed the SMS Client software from this site and is
+	  in the site boundaries, so SMSClient4 appears as assigned to site ABC. The
+	  Forced Site registry key is populated with ABC, denoting that this client
+	  always reports to site ABC.
+	
+	- SMSClient2 travels outside the site boundaries of site ABC to a subnet,
+	  10.0.1.0, that is managed by another site named XYZ. While in this subnet,
+	  SMSClient4 sends a heartbeat DDR to site ABC reporting that SMSClient4 is
+	  currently in subnet 10.0.1.0.
+	
+	- Discovery Data Manager at site ABC evaluates the client and notes that it has
+	  forced sites set (indicated by a value of 2 for the Travel mode discovery
+	  property). Therefore, Discovery Data Manager assigns the client to the
+	  combination of the client's installed sites, ABC, and assigned sites, XYZ,
+	  which results in assignment to sites ABC and XYZ. Note that the client is not
+	  necessarily reporting to site XYZ, but because the client is in the site
+	  boundaries of XYZ, the client is evaluated as being assigned to that site.
+	
+	Example 5:
+	
+	For the purposes of this example, the events in example 1 or example 2 have
+	already occurred.
+	
+	- An administrator at site ABC adds an additional subnet to the site
+	  boundaries. This triggers an immediate evaluation by Discovery Data Manager
+	  of all of the system resources in the site database.
+	
+	- Discovery Data Manager notes that the Travel mode clients filter is set.
+	
+	- Based on this setting, Discovery Data Manager does not un-assign any clients
+	  that have reported a Travel Mode attribute, including the mask set by using
+	  the Travel Mode Clients Filter registry item, even if the clients are
+	  currently outside the list of managed subnets for site ABC (for example, the
+	  clients' Travel Mode property is set to 1 or 2).
+	
+	Example of Disabling the New Assignment Behavior for Travel Mode Clients
+	------------------------------------------------------------------------
+	
+	- An administrator at site ABC reconfigures the Travel Mode Clients Filter to a
+	  REG_DWORD data value of 0.
+	
+	- Discovery Data Manager notes that the Travel Mode Clients Filter is set to 0.
+	
+	- All SMS clients still report the Travel Mode property with the clients'
+	  regular heartbeat or logon discovery record, but because of the configuration
+	  change, Discovery Data Manager no longer uses the new logic to evaluate the
+	  records. Discovery Data Manager evaluates site assignment based strictly on
+	  the original site assignment rules. If the client does not report as being
+	  within a managed subnet boundary, the client is evaluated as not assigned.
+	
+	- If a client is in a managed subnet boundary other than the client's home site
+	  (that is, the site in which the client was originally installed), the client
+	  is assigned to the site in which the client currently resides.
+	
+	Additional query words: prodsms roam visit move DDM
+	
+	======================================================================
+	Keywords          : kbsms200bug kbAdvertisement kbDiscovery kbInventory kbsms200preSP3fix kbsms200preSP4fix 
+	Technology        : kbSMSSearch kbSMS200 kbSMS200SP1 kbSMS200SP2 kbSMS200SP3
+	Version           : :2.0,2.0 SP1,2.0 SP2,2.0 SP3
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

@@ -1,0 +1,182 @@
+---
+layout: page
+title: "Q184199: DMM: Envelopes are Printed Incorrectly Using DeskJet Printer"
+permalink: kb/184/Q184199/
+---
+
+## Q184199: DMM: Envelopes are Printed Incorrectly Using DeskJet Printer
+
+	Article: Q184199
+	Product(s): Word 97 for Windows
+	Version(s): WINDOWS:97
+	Operating System(s): 
+	Keyword(s): kbprint kbdta word97
+	Last Modified: 07-SEP-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Direct Mail Manager for Windows 
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you print an envelope from Microsoft Direct Mail Manager (DMM) to an
+	Hewlett-Packard (HP) 692C DeskJet printer, you may see one of the following
+	symptoms:
+	
+	- The delivery and return addresses may be printed upside down.
+	
+	  -or-
+	
+	- The return address may be printed too far from the edge of the envelope.
+	
+	CAUSE
+	=====
+	
+	Envelopes are Printing Upside Down
+	----------------------------------
+	
+	The Clockwise Rotation option is turned off and the envelope is being fed into
+	the printer according to the printer specifications.
+	
+	NOTE: To locate the Clockwise Rotation option, click Envelopes And Labels on the
+	Tools menu, click Options, and then click the Printing Options tab.
+	
+	Return Address is Printed Too Far in from the Edge of the Paper
+	---------------------------------------------------------------
+	
+	When printing envelopes in landscape orientation, the return address is printed
+	on the trailing edge of the envelope (the bottom). That causes the return
+	address to be printed about an inch in from the edge of the envelope to avoid
+	the unprintable region specified by the printer. This causes the return address
+	not to print near the edge of the envelope.
+	
+	WORKAROUND
+	==========
+	
+	Envelopes Are Printing Upside Down
+	----------------------------------
+	
+	If your envelope is printed with the delivery and return addresses upside down,
+	rotate the envelope 180 degrees before placing it in the manual feeder of your
+	printer and then print it.
+	
+	Return Address Is Printed Too Far in from the Edge of the Paper
+	---------------------------------------------------------------
+	
+	Reset the envelope feed option in Word and feed the envelopes into the printer
+	the way that Word describes rather than how the Microsoft Direct Mail Manager or
+	your printer manual explains. To do this, follow these steps:
+	
+	1. Create a new document.
+	
+	2. On the Tools menu, click Envelopes And Labels, and then click the Envelopes
+	  tab.
+	
+	3. Click Options.
+	
+	4. Click the Printing Options tab.
+	
+	5. Select the following options:
+	
+	  a. Clockwise Rotation.
+	
+	  b. Face Down.
+	
+	  c. The third image from the right under Feed Method.
+	
+	6. Click OK.
+	
+	7. Click Add To Document.
+	
+	8. On the File menu, click Exit. You do not need to save the document.
+	
+	9. Feed your envelope into the printer feeder with the upper right-hand corner
+	  facing the printer, face down, and the flap toward the left.
+	
+	  NOTE: These instructions are different than the instructions in the Deskjet
+	  Manual or the instructions provided by DMM.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products listed at
+	the beginning of this article.
+	
+	MORE INFORMATION
+	================
+	
+	The symptoms described in this article may appear when using any of the
+	following HP DeskJet printers:
+	
+	  540
+	  550
+	  550c
+	  560c
+	  600c
+	  670c
+	  680c
+	  690c
+	  692c
+	  820c
+	  850c
+	  870c
+	
+	How To Print Envelopes From Direct Mail Manager
+	-----------------------------------------------
+	
+	1. In Direct Mail Manager, import your address list, verify your addresses, edit
+	  the address list, and check for duplicate addresses (steps 1 and 2 in the
+	  DMM).
+	
+	2. When Direct Mail Manager prompts you with "How would you like to send your
+	  mailing" (step 3 in the DMM), click to select "Quick and Simple - First Class
+	  Mail" and then click Next.
+	
+	3. When Direct Mail Manager prompts you with "Design your mailpiece here," click
+	  the Design button.
+	
+	4. In the Mailpiece Design Options dialog box, do the following:
+	
+	  a. Click the Media tab.
+	
+	     1. Under Media Types, select Envelopes.
+	
+	     2. In the Size box, under Media Details, select the type of envelope you
+	        want and click OK.
+	
+	  b. Click the Delivery Address tab and make the changes you want.
+	
+	  c. Click the Return Address tab and make the changes you want.
+	
+	  d. Click OK.
+	
+	5. Click Next.
+	
+	6. Under Printer, select your DeskJet printer. Under Feed From, select Manual
+	  Feed. Under Orientation, select Landscape.
+	
+	  NOTE: When you select Manual Feed, you will need to feed the envelopes in the
+	  printer one at a time and press the Load Paper button on your DeskJet printer
+	  each time you put in a new envelope. However, if your DeskJet printer rollers
+	  are working correctly, you may be able to place up to 10 envelopes in the
+	  tray at once. However, if the rollers pull more multiple envelopes at a time,
+	  you will need to feed the envelopes one at a time.
+	
+	7. Click OK.
+	
+	Additional query words: backward backwards upside-down upsidedown
+	
+	======================================================================
+	Keywords          : kbprint kbdta word97 
+	Technology        : kbWordSearch kbOutlookSearch kbAudDeveloper kbWord97 kbWord97Search kbZNotKeyword2 kbDMM
+	Version           : WINDOWS:97
+	Hardware          : x86
+	Issue type        : kbbug
+	Solution Type     : kbnofix
+	
+	=============================================================================
+	

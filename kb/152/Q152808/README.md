@@ -1,0 +1,170 @@
+---
+layout: page
+title: "Q152808: XADM: How To Change the Service Account"
+permalink: kb/152/Q152808/
+---
+
+## Q152808: XADM: How To Change the Service Account
+
+	Article: Q152808
+	Product(s): Microsoft Exchange
+	Version(s): 4.0,5.0
+	Operating System(s): 
+	Keyword(s): kbusage
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 4.0, 5.0 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about modifying the registry. Before you 
+	modify the registry, make sure to back it up and make sure that you understand how to restore 
+	the registry if a problem occurs. For information about how to back up, restore, and edit the 
+	registry, click the following article number to view the article in the Microsoft Knowledge Base:
+	
+	  Q256986 Description of the Microsoft Windows Registry
+	
+	SUMMARY
+	=======
+	
+	This article describes how to change the Microsoft Exchange Server service
+	account after the initial Exchange Server installation.
+	
+	Microsoft does not recommend that you change the Exchange Server service account.
+	However, you can use the following procedure in a situation where there is a
+	single Exchange Server site and a single Exchange Server computer. In situations
+	where there is more than one Exchange Server computer or site, the only
+	workaround is a complete reinstallation of Exchange Server.
+	
+	MORE INFORMATION
+	================
+	
+	WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+	that may require you to reinstall your operating system. Microsoft cannot
+	guarantee that you can solve problems that result from using Registry Editor
+	incorrectly. Use Registry Editor at your own risk.
+	
+	WARNING: If you use the raw mode of the Exchange Server Administrator program
+	(admin /r) incorrectly, serious problems may occur that may require you to
+	reinstall Microsoft Windows NT Server, Microsoft Exchange Server, or both.
+	Microsoft cannot guarantee that problems that result from using raw mode
+	incorrectly can be solved. Use raw mode at your own risk.
+	
+	You may find that your Microsoft Windows NT administrator account is the Exchange
+	Server service account some time after installation. To change the Exchange
+	Server service account without reinstalling Exchange Server:
+	
+	1. Create a new Windows NT account that will be the new Exchange Server service
+	  account. Give this account Act as Part of the Operating System, Logon as a
+	  Service, and Restore Files and Directories rights. The password must be the
+	  same as the current Exchange Server service account password.
+	
+	2. Start the Microsoft Exchange Server Administrator program in raw mode by
+	  typing the following at a command prompt:
+	
+	  c:\exchsrvr\bin\admin /r
+	
+	3. Assign the new account Service Account administrator permissions on the
+	  Organization container, Site container, and Configuration container property
+	  pages.
+	
+	4. Add the new account to the Schema object:
+	
+	  a. View the raw directory. To do so, on the View menu, click Raw Directory.
+	     After you click Raw Directory, a check mark is displayed on the View menu
+	     in front of Raw Directory.
+	
+	  b. A new object called the Schema object is displayed in the directory tree
+	     at the site level. Click the Schema object, and then click Raw Properties
+	     on the File menu.
+	
+	  c. Under "List attributes of type", click to select All.
+	
+	  d. Click to select "Object Attribute", scroll down to
+	     "NT-Security-Descriptor", and then click Editor.
+	
+	  e. Under "Attribute Editor Selection", click to select "NT Security
+	     Descriptor", and then click OK.
+	
+	  f. Add the new account.
+	
+	  g. Click OK.
+	
+	  h. Click OK, click Apply, and then click OK.
+	
+	  i. Click Set, click Apply, click OK, click Yes, and then click OK.
+	
+	  j. Close the Microsoft Exchange Administrator Console.
+	
+	5. If the new account is not a member of the Local Administrators group, give
+	  the new account Full Control on the following registry keys and subkeys:
+	
+	  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\ProfileList
+	
+	  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services
+	
+	  HKEY_USERS
+	
+	  To do this, you need to edit the registry.
+	
+	  Start Registry Editor (Regedt32.exe), click to select each key, and then
+	  perform the following steps:
+	
+	  a. Click Security, and then click Permissions.
+	
+	  b. Click "Replace Permission on Existing Subkeys".
+	
+	  c. Click Add.
+	
+	  d. Click the new account in the "Add Users and Groups" list.
+	
+	6. Stop the Exchange Server services.
+	
+	7. In Control Panel, double-click Services and change the Log On account for
+	  each Exchange Server service. To do this, click each Exchange Server service,
+	  click Startup, and change the Log On As account. Enter the password for each
+	  service.
+	
+	8. Restart all of the Exchange Server services. All of the services should start
+	  with the new Exchange Server service account.
+	
+	If you want to change the password, you can change it by using the Exchange
+	Server Administrator program, in the Configuration property page. You must also
+	change the password in Windows NT by using the User Manager for Domains
+	utility.
+	
+	Under the C:\Exchsrvr folder, there are five shared folders (the Add- ins,
+	Address, Connect, Res, and Tracking.log folders). For proper operation, the
+	default permissions on these folders are the following:
+	
+	- Administrator: Full Control
+	
+	- Everyone: Read
+	
+	- <service_account>: Full Control
+	
+	You need to change the permissions on these folders to reflect the new service
+	account that is in use.
+	
+	NOTE: This procedure also works on a Windows 2000, Exchange 5.5 cluster server
+	implementation.
+	
+	For additional information about changing the Service Account in Microsoft
+	Exchange 5.5, click the article number below to view the article in the
+	Microsoft Knowledge Base:
+	
+	  Q266041 XADM: The 'How to Change the Exchange Server 5.5 Service Account'
+	  White Paper Is Available
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbusage 
+	Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbZNotKeyword2
+	Version           : :4.0,5.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

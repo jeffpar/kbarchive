@@ -1,0 +1,133 @@
+---
+layout: page
+title: "Q266209: Network Time Protocols and the Timeserv.exe Utility File"
+permalink: kb/266/Q266209/
+---
+
+## Q266209: Network Time Protocols and the Timeserv.exe Utility File
+
+	Article: Q266209
+	Product(s): Microsoft Windows NT
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kb3rdparty kbTools
+	Last Modified: 08-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- MSPRESS Microsoft Windows NT Server 4.0 Resource Kit ISBN 1-57231-344-7 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article provides information about network time protocols and the
+	Timeserv.exe utility file.
+	
+	MORE INFORMATION
+	================
+	
+	The Microsoft Windows NT Server 4.0 Resource Kit includes the utility
+	Timeserv.exe file that allows for the synchronization of the Windows NT server
+	with any of the public time servers. Many different time servers are available
+	and the port through which that connection is made is based upon which RFCs that
+	individual time server is compliant with.
+	
+	NOTE: RFC is an acronym for Request for Comments. It refers to a document in
+	which a standard, a protocol, or other information pertaining to the operation
+	of the Internet is published.
+	
+	If you want to change the port number to which the Timeserv.exe file connects,
+	use Microsoft NotePad or any other standard text editor to edit the Timeserv.ini
+	file, located in the same directory as the Timeserv.exe file. You must modify
+	the line "type=x" (without the quotes) where "x" is either NTP or Internet as
+	described in this article.
+	
+	If the Timeserv.exe file is set to Type=NTP, it accesses port 123 of the
+	specified server, but the outgoing port from Windows NT is dynamic. If the
+	specified server fails, the Timeserv.exe file might try port 37, but only to
+	present a detailed error message. If the Timeserv.exe file is set to
+	Type=Internet, it accesses port 13 of a National Institute of Standards and
+	Technology (NIST) server located in Boulder, Colorado.
+	
+	Some of the more widely used RFCs are provided below, along with a brief
+	description:
+	
+	Daytime Protocol (RFC 867)
+	--------------------------
+	
+	This protocol is widely used by small computers that run MS-DOS and similar
+	operating systems. The server listens on port 13, and responds to requests in
+	either Transmission Control Protocol/Internet Protocol (TCP/IP) or User Datagram
+	Protocol/Internet Protocol (UDP/IP) formats. The standard does not specify an
+	exact format for the Daytime Protocol, but requires that the time is sent using
+	standard ASCII characters.
+	
+	Time Protocol (RFC 868)
+	-----------------------
+	
+	This simple protocol returns a 32-bit unformatted binary number that represents
+	the time in Universal Time Coordinate (UTC) seconds since January 1, 1900. The
+	server listens for Time Protocol requests on port 37, and responds in either
+	TCP/IP or UDP/IP formats.
+	
+	Network Time Protocol (RFC 1305)
+	--------------------------------
+	
+	The Network Time Protocol (NTP) is the most complex and sophisticated of the time
+	protocols, and it is the one that provides the best performance. NTP is
+	typically used by large computers and workstations, because NTP software is
+	often bundled with the operating system. The client software runs continuously
+	as a background task that periodically obtains updates from the server. The
+	client software can be configured to query several servers, and to average the
+	results. Since it can query multiple servers, it can ignore responses from
+	servers that appear to send the wrong time. The NTP servers listen for a NTP
+	request on port 123, and respond by sending a UDP/IP data packet in the NTP
+	format.
+	
+	Simple Network Time Protocol (SNTP) Version 4 (RFC 2030)
+	--------------------------------------------------------
+	
+	SNTP can be used when the ultimate performance of the full NTP implementation
+	described in RFC 1305 is not needed or justified. The only significant protocol
+	change in SNTP version 4 from previous versions of NTP and SNTP is a modified
+	header interpretation to accommodate Internet Protocol version 6 (IPv6).
+	
+	REFERENCES
+	==========
+	
+	You can obtain more information about this issue from the following sources:
+	
+	- The Windows NT 4.0 Resource Kit (the Timeserv.wri document).
+	
+	- For additional information about using Timeserv, click the article number
+	  below to view the article in the Microsoft Knowledge Base:
+	
+	  Q232255 Using Timeserv to Set and Synchronize Time
+	
+	- The NIST Web site at the following address:
+	
+	  http://www.bldrdoc.gov/timefreq/service/nts.htm
+	
+	- The Timeserv Web site of Doug Hogarth (the original author of the
+	  Timeserv.wri document):
+	
+	  http://www.niceties.com/TimeServ.html
+	
+	The third-party contact information included in this article is provided to help
+	you find the technical support you need. This contact information is subject to
+	change without notice. Microsoft in no way guarantees the accuracy of this
+	third-party contact information.
+	
+	Additional query words: reskit rfc-1305 rfc-868 rfc-867 rfc-2030 timesrv
+	
+	======================================================================
+	Keywords          : kb3rdparty kbTools 
+	Technology        : kbMSPressSearch kbZNotKeyword2 kbZNotKeyword3
+	Version           : :
+	Hardware          : ALPHA x86
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

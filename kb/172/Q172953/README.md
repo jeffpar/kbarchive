@@ -1,0 +1,277 @@
+---
+layout: page
+title: "Q172953: How to Install and Configure Microsoft DNS Server"
+permalink: kb/172/Q172953/
+---
+
+## Q172953: How to Install and Configure Microsoft DNS Server
+
+	Article: Q172953
+	Product(s): Microsoft Windows NT
+	Version(s): winnt:4.0,4.0a
+	Operating System(s): 
+	Keyword(s): kbnetwork sbs kbhowto
+	Last Modified: 09-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 4.0 
+	- Microsoft BackOffice Small Business Server versions 4.0, 4.0a 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article is designed as an introduction to the Microsoft Domain Name Service
+	(DNS) included with Microsoft Windows NT Server 4.0. This guide will take you
+	through the steps needed to install and configure DNS on your Windows NT
+	Server.
+	
+	For additional information on Domain Name Service, please see the following white
+	paper available on the Microsoft anonymous ftp server:
+	
+	  File Name: Dnswp.exe
+	  Location : ftp://ftp.microsoft.com/bussys/winnt/winnt-docs/papers/
+	  Title : "DNS and Microsoft Windows NT 4.0"
+	
+	MORE INFORMATION
+	================
+	
+	Installing Microsoft DNS
+	------------------------
+	
+	Use the following steps to install DNS on your Windows NT 4.0 Server:
+	
+	1. Click the Start button, point to Settings, and then click Control Panel.
+	  Double-click the Network icon, and then click the Services tab.
+	
+	2. Click Add, select Microsoft DNS Server from the Select Network Service dialog
+	  box, and then click OK.
+	
+	3. Type the location of your Windows NT source files, click OK, and then click
+	  Close.
+	
+	  NOTE: If you have any service packs installed, you will need to re-apply your
+	  service pack before restarting your computer.
+	
+	4. Restart your computer.
+	
+	Configuring Microsoft DNS
+	-------------------------
+	
+	Gathering Information:
+	
+	Before you actually begin configuring the DNS server, there is some basic
+	information you will need. Some of this information must be approved by Internic
+	for use on the Internet, but if you are configuring this server for internal use
+	only, you can then decide what names and IP addresses to use. You will need:
+	
+	- Your domain name (must be approved by Internic)
+	
+	- The IP address of each server for which you wish to provide name resolution
+	
+	- The host names of each of the servers in step above
+	
+	NOTE: The servers in the step above may be your mail servers, any public access
+	servers, FTP servers, WWW servers, and so on.
+	
+	For example, use the following information (substitute your actual information
+	where appropriate):
+	
+	  Domain Name: <Domain.com>
+	  Servers:   192.168.50.11   <Mail1.domain.com>
+	             192.168.50.12   <Ftp1.domain.com>
+	             192.168.50.12   <WWW.domain.com> (notice the same IP
+	                              address)
+	             192.168.50.15   <DNS1.domain.com>
+	
+	Creating Your DNS Server:
+	
+	Using the information above, configure your Microsoft DNS server by doing the
+	following:
+	
+	1. Click the Start button, point to Programs, point to Administrative Tools, and
+	  then click DNS Manager.
+	
+	2. From the DNS menu, click New Server.
+	
+	3. Type the IP address of your DNS server in the Add DNS Server dialog box
+	  (192.168.58.15 in the example information), and then click OK.
+	
+	NOTE: It is not necessary to restart the DNS server for changes to your zones to
+	take effect. All that is required is for the server data files to be updated
+	using the following step:
+	
+	- In DNS Manager, right-click your DNS server, and click Update Server Data
+	  Files.
+	
+	Creating Your Reverse Lookup Zone:
+	
+	Some applications use a reverse query to a DNS server to find the host name of a
+	host when it has the IP address of the computer. You must configure a reverse
+	lookup zone to provide this capability.
+	
+	NOTE: Reverse lookup zones may not be necessary in your network, but it is
+	recommended that one be present. NSLOOKUP run on the DNS server will fail if no
+	reverse lookup zone is configured.
+	
+	To create a reverse lookup zone, perform the following steps:
+	
+	1. In DNS Manager, right-click your DNS server, and then click New Zone.
+	
+	2. Click Primary from the "Creating New Zone for" dialog box, and then click
+	  Next.
+	
+	3. The Zone Name is derived from your IP network address. In the example
+	  information, the Zone Name is 58.168.192.in-addr.arpa. Type your reverse zone
+	  name (the least significant part of the IP address, and work toward the most
+	  significant part of the address). For example:
+	
+	  If your network ID is:         Then your reverse zone is:
+	
+	  10.0.0.0                       10.in-addr.arpa
+	  130.20.0.0                     20.130.in-addr.arpa
+	  250.30.203.0                   203.30.250.in-addr.arpa
+	
+	  NOTE: The syntax of the reverse lookup zone is imperative to its operation.
+	
+	4. After you type the reverse lookup zone name, press Tab and the reverse lookup
+	  zone file name will automatically fill in using the zone name in step 3
+	  appended by ".dns" (without the quotes).
+	
+	5. Click Next, and then click Finish.
+	
+	Creating Your Forward Lookup Zone:
+	
+	1. In DNS Manager, right-click your server, and then click New Zone.
+	
+	2. Click Primary Zone, and then click Next.
+	
+	3. Type the Zone Name for your DNS domain. This is the domain name that is
+	  registered with Internic (<Domain.com> in the example).
+	
+	4. Press Tab, click Next, and then click Finish.
+	
+	When you have created the forward lookup zone, you should see three records
+	automatically created in that zone: the NS record, the SOA record, and an A
+	record. If you do not have all three of these, you may want to verify that your
+	DNS settings in your TCP/IP properties are configured correctly (click the Start
+	button, point to Settings, click Control Panel, and then double-click the
+	Network icon).
+	
+	NOTE: The A record will only be created if the zone name matches the domain
+	name.
+	
+	Adding Host Records to Your Forward Lookup Zone:
+	
+	The A record for your DNS server should have been automatically created. However,
+	DNS Manager does not automatically create the PTR record in the reverse zone for
+	the DNS server. The simplest way to correct this is to use the following steps:
+	
+	1. Right-click the A record for your DNS server, and then click Delete Record.
+	
+	2. Click Yes in the confirmation dialog box.
+	
+	3. Right-click your forward zone, <Domain.com>, and then click New Host.
+	
+	4. Type the host name of your DNS server and the IP address.
+	
+	5. Click Create Associated PTR Record to enable it and click Add Host.
+	
+	6. Click Done.
+	
+	NOTE: Repeat steps 3-5 above for all of the servers that you want to add to your
+	DNS domain.
+	
+	To verify the PTR records are created successfully, right-click the reverse
+	lookup zone 58.168.192.in-addr.arpa, and then click Refresh.
+	
+	Configuring Other Record Types
+	------------------------------
+	
+	A DNS server can be responsible for several different record types. Some of them
+	include, but are not limited to the following: A, CNAME, HINFO, MX, NS, and SOA.
+	For details on these and other record types, please refer to the DNS white paper
+	mentioned earlier in this article.
+	
+	Creating A CNAME Record:
+	
+	A CNAME record allows you to use multiple names for the same IP address. This
+	way, you can have users access the same server for separate functions, such as
+	FTP1.domain.com and WWW.domain.com. Before you can create the CNAME record, you
+	must first have an A record, as described earlier.
+	
+	To create a CNAME record, perform the following steps:
+	
+	1. Right-click your forward zone, <Domain.com>, and click New Record.
+	
+	2. Select CNAME Record from the Record Type list box in the New Resource Record
+	  dialog box.
+	
+	3. Type an alternate name for access to this computer. For example, in the
+	  sample information earlier in this article, WWW is an alternate name for
+	  FTP1.domain.com.
+	
+	4. Type the original host name in "For Host DNS Name." For example,
+	  <FTP1.domain.com>.
+	
+	  NOTE: It is important to use the fully-qualified domain name (FQDN) for the
+	  originating host DNS name.
+	
+	5. Click OK.
+	
+	Now when your users make a query for either of these host names, your DNS server
+	will return the same IP address.
+	
+	Creating an MX Record:
+	
+	An MX Record is a Mail Exchange record that points mail programs to your mail
+	servers. To create an MX record, perform the following steps:
+	
+	1. Right-click your forward lookup zone, <Domain.com> and then click New
+	  Record.
+	
+	2. Select MX Record from the Record Type list box in the New Resource Record
+	  dialog box.
+	
+	3. The Host Name (Optional) field is used for the host name of the mail server.
+	  However, if you want users to be able to send mail to your domain using the
+	  format USER@Domain.com, then leave the Host Name field blank.
+	
+	NOTE: If the MX record contains the hostname, sending mail to user@domain.com may
+	not work. There are three ways to resolve this. First, remove the hostname from
+	the MX record as described in step 3. Second, after the MX record is created
+	with the hostname, create an "A" record for the domain that has no hostname.
+	Third, delete the existing MX record and re-create as described in steps one
+	through six in the Creating an MX record section of this article.
+	4. Type the FQDN of the mail server in the Mail Exchange Server DNS Name, for
+	  example, Mail.domain.com.
+	
+	  NOTE: There is a trailing dot, ".", after the Mail Exchange Server DNS Name.
+	  The FQDN that is used for the Mail Exchange Server must have a corresponding
+	  A record for that domain. If the Mail Exchange Server is a different computer
+	  than the DNS Server, the DNS Server must know where to redirect the mail
+	  traffic.
+	
+	5. The Preference Number is any number from 0 to 65535. In the case of multiple
+	  mail servers, this number identifies which mail server is to be used first.
+	  The lower the preference number, the higher the priority.
+	
+	6. Click OK.
+	
+	For additional information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q174419 How to Configure a Subnetted Reverse Lookup Zone on Windows NT
+	
+	Additional query words: smallbiz DNS KBhowto Setup configure NT4
+	
+	======================================================================
+	Keywords          : kbnetwork sbs kbhowto 
+	Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbAudDeveloper kbSBServSearch kbSBServ400 kbSBServ400a
+	Version           : winnt:4.0,4.0a
+	Issue type        : kbhowto kbinfo
+	
+	=============================================================================
+	

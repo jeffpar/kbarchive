@@ -1,0 +1,98 @@
+---
+layout: page
+title: "Q102466: How to Update a Character Field from a Popup"
+permalink: kb/102/Q102466/
+---
+
+## Q102466: How to Update a Character Field from a Popup
+
+	Article: Q102466
+	Product(s): Microsoft Fox Miscellaneous Products
+	Version(s): MACINTOSH:2.01
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 23-OCT-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft FoxBASE+ for Macintosh, version 2.01 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The following code example demonstrates one method of replacing a character
+	field with a numeric selection from a popup. Occasionally, you may need to store
+	a character string choice made from a popup to a character field.
+	
+	Normally, a popup must be assigned to a numeric database field and as a result,
+	the numeric value indicating which bar of the popup was selected is placed in
+	the database. This example actually places the character selection string in a
+	character field of the database.
+	
+	WARNING: ANY USE BY YOU OF THE CODE PROVIDED IN THIS ARTICLE IS AT YOUR OWN RISK.
+	Microsoft provides this code "as is" without warranty of any kind, either
+	expressed or implied, including but not limited to the implied warranties of
+	merchantability and/or fitness for a particular purpose.
+	
+	     SET PROCEDURE TO dbf.prg  && The name of this program
+	     SET TALK OFF
+	     CLEAR
+	
+	     ** Initialize variables and open database
+	     mchoice = 0
+	     ok = 0
+	     USE ":foxbase:tutorial:faculty.dbf"
+	
+	     ** Main program body
+	     DO WHILE ok=0  && Continue until the OK button is not pressed
+	     SCREEN 1 TYPE 0 LOCK HEADING "Update a DBF" ;
+	       AT 0,0 SIZE 224,366 PIXELS FONT "Times",14 TOP
+	     @PIXELS 27,16 GET mchoice STYLE 0 FONT "Chicago",12 ;
+	       PICTURE "@^ Edit;View;Browse;Change" SIZE 19,68
+	     @PIXELS 18,98 SAY "The selection from a popup returns a " STYLE 65536
+	     @PIXELS 33,98 SAY "numeric value. This numeric value is" STYLE 65536
+	     @PIXELS 48,98 SAY "stored in the database which can be" STYLE 65536
+	     @PIXELS 63,98 SAY "difficult to read." STYLE 65536
+	     @PIXELS 87,98 SAY "In this example, the value stored to" STYLE 65536
+	     @PIXELS 102,98 SAY "the database is the actual character" STYLE 65536
+	     @PIXELS 117,98 SAY "string and not the number it " STYLE 65536
+	     @PIXELS 140,98 SAY "represents. " STYLE 65536
+	     @PIXELS 155,98 SAY "As you can see, the database" STYLE 65536
+	     @PIXELS 170,98 SAY "field reads "+faculty->id+"and not the" ;
+	        STYLE 65536
+	     @PIXELS 185,98 SAY "selection number from the popup." STYLE 65536
+	     @PIXELS 168,19 GET ok STYLE 1 FONT "Chicago",12 ;
+	        PICTURE "@*V OK" SIZE 2066,35
+	
+	     READ
+	     DO xchange WITH mchoice && The popup was selected, now update the DBF
+	     ENDDO
+	
+	     SCREEN 1 OFF
+	     SET PROCEDURE TO
+	
+	     PROCEDURE xchange
+	     PARAMETERS choice && The selection from the popup
+	     DO CASE
+	      CASE choice=1 && The first choice from the popup
+	        REPLACE id WITH "EDIT"
+	      CASE choice=2 && The second choice from the popup
+	        REPLACE id WITH "VIEW"
+	      CASE choice=3 && The third choice from the popup
+	        REPLACE id WITH "BROWSE"
+	      CASE choice=4 && The fourth choice from the popup
+	        REPLACE id WITH "CHANGE"
+	     ENDCASE
+	     RETURN
+	
+	Additional query words: 2.01 example screen pop up FoxBASE+/Mac
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbHWMAC kbOSMAC kbAudDeveloper kbFoxproSearch kbFoxBASE201Mac kbFoxBASESearch
+	Version           : MACINTOSH:2.01
+	
+	=============================================================================
+	

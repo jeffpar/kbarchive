@@ -1,0 +1,162 @@
+---
+layout: page
+title: "Q117563: HOWTO: How to Trap WM_KEYDOWN Messages in a CDialog"
+permalink: kb/117/Q117563/
+---
+
+## Q117563: HOWTO: How to Trap WM_KEYDOWN Messages in a CDialog
+
+	Article: Q117563
+	Product(s): Microsoft C Compiler
+	Version(s): winnt:2.0,2.1,4.0
+	Operating System(s): 
+	Keyword(s): kbDlg kbHook kbKeyIn kbMFC kbVC100 kbVC150 kbVC200 kbVC400 kbArchitecture
+	Last Modified: 07-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The Microsoft Foundation Classes (MFC), used with:
+	   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5, 1.51, 1.52 
+	   - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1, 4.0 
+	   - Microsoft Visual C++ 32-bit Edition, versions 2.0, 2.1, 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Certain Windows messages are difficult to trap in a dialog box because they are
+	either processed by the Windows internal dialog procedure or sent to the control
+	instead of the dialog box. There are several ways to do this, but they usually
+	involve subclassing all the controls in the dialog box or using a Windows hook
+	function. The method described in this article uses the predefined overridable
+	MFC hook function ProcessMessageFilter() to capture these messages. The idea is
+	to override the MFC preinstalled hook function, ProcessMessageFilter(), to trap
+	the messages before they get to the dialog box.
+	
+	MORE INFORMATION
+	================
+	
+	The following steps are the required to implement the hook function. The
+	SCRIBBLE sample was used as the base for the steps. In Visual C++ 32-bit
+	Edition, version 4.0, use SCRIBBLE sample STEP3.
+	
+	In this example, the steps outlined below trap WM_KEYDOWN for a specific dialog
+	box:
+	
+	1. Add a member variable to your CWinApp-derived class to hold the handle to the
+	  dialog box for which you want to trap the messages. You need to know the
+	  handle because ProcessMessageFilter is receiving messages for the entire
+	  application, while you only want a small selection of those messages:
+	
+	        SCRIBBLE.H
+	
+	        <Inside CScribbleApp class>
+	
+	        public:
+	          HWND m_hwndDialog;
+	
+	        SCRIBBLE.CPP
+	
+	        <Inside CScribbleApp::InitInstance>
+	
+	        m_hwndDialog = NULL;
+	
+	  NOTE: Because this message filter applies to the entire application, there may
+	  be a performance hit when you use this method.
+	
+	2. Override CWinApp::ProcessMessageFilter in your CWinApp-derived class.
+	  CWinApp::ProcessMessageFilter is a virtual function of CWinApp, so all you
+	  need to do is put a declaration in the header file and an implementation in
+	  the source file.
+	
+	        SCRIBBLE.H
+	
+	        public:
+	          virtual BOOL ProcessMessageFilter(int code, LPMSG lpMsg);
+	
+	        SCRIBBLE.CPP
+	
+	        BOOL CScribbleApp::ProcessMessageFilter(int code, LPMSG lpMsg)
+	        {
+	                // Check to make sure CPenWidthsDlg is up
+	             if (m_hwndDialog != NULL)
+	                {
+	               if ((lpMsg->hwnd == m_hwndDialog) ||
+	                   ::IsChild(m_hwndDialog, lpMsg->hwnd))
+	                  // Use ::IsChild to get messages that may be going
+	                  // to the dialog's controls.  In the case of
+	                  // WM_KEYDOWN this is required.
+	               {
+	                    if (lpMsg->message == WM_KEYDOWN)
+	                         TRACE("Got WM_KEYDOWN\n");
+	               }
+	                }
+	             // Default processing of the message.
+	             return CWinApp::ProcessMessageFilter(code, lpMsg);
+	        }
+	
+	  For more information on overriding ProcessMessageFilter, please see the MFC
+	  online Help.
+	
+	3. Add initialization code for the dialog handle member variable in our
+	  OnInitDialog for the desired dialog box. You also have to add exit code to
+	  reset the member variable after the dialog box closes:
+	
+	        PENDLG.H
+	
+	        protected:
+	          virtual BOOL OnInitDialog();
+	          afx_msg void OnDestroy();
+	
+	        PENDLG.CPP
+	
+	        <Add to Message Map>
+	        ON_WM_DESTROY()
+	
+	        BOOL CPenWidthsDlg::OnInitDialog()
+	        {
+	             CDialog::OnInitDialog();
+	
+	             // Use AfxGetApp() to get pointer to CWinApp-derived
+	             // object; then cast the pointer to our type and assign
+	             ((CScribbleApp *)AfxGetApp())->m_hwndDialog = m_hWnd;
+	
+	             return TRUE;  // Return TRUE
+	                           // unless you set the focus to a control.
+	        }
+	
+	        void CPenWidthsDlg::OnDestroy()
+	        {
+	             CDialog::OnDestroy();
+	
+	             // Use AfxGetApp() to get pointer to CWinApp-derived
+	             // object; then cast the pointer to our type and assign
+	             ((CScribbleApp *)AfxGetApp())->m_hwndDialog = NULL;
+	
+	        }
+	
+	Once these steps are completed, you can trap any message intended for the
+	CPenWidthsDlg or any of its children (such as edit controls, combo boxes, and
+	radio buttons)
+	
+	If this method is unacceptable because of the application-wide nature of the
+	message filter, please see the following article in the Microsoft Knowledge
+	Base:
+	
+	  Q72219 Context-Sensitive Help in a Dialog Box Through F1
+	
+	This article explains how to set a hook function for a specific dialog and how to
+	remove the hook after the dialog box has terminated. That method requires more
+	Windows programming knowledge.
+	
+	Additional query words: kbinf 1.00 1.50 2.00 2.10 2.50 3.00 3.10 4.00 key keystroke
+	
+	======================================================================
+	Keywords          : kbDlg kbHook kbKeyIn kbMFC kbVC100 kbVC150 kbVC200 kbVC400 kbArchitecture 
+	Technology        : kbAudDeveloper kbMFC
+	Version           : winnt:2.0,2.1,4.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

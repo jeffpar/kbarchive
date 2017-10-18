@@ -1,0 +1,258 @@
+---
+layout: page
+title: "Q185223: HOW TO: Manually Uninstall Visual Basic CE Programs"
+permalink: kb/185/Q185223/
+---
+
+## Q185223: HOW TO: Manually Uninstall Visual Basic CE Programs
+
+	Article: Q185223
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 3.0
+	Operating System(s): 
+	Keyword(s): kbToolkit kbVBp500 kbVBp600 kbOSWinCE100 kbGrpDSVB kbAudDeveloper kbHOWTOmaster
+	Last Modified: 11-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft eMbedded Visual Basic, version 3.0 
+	- Microsoft Windows CE Toolkit for Visual Basic 6.0 
+	-------------------------------------------------------------------------------
+	
+	IN THIS TASK
+	------------
+	
+	- SUMMARY
+	
+	   - Cleaning Up Application Manager Files
+	- Cleaning Up Registry Entries
+	- Deleting the Visual Basic Run Time
+	
+	- REFERENCES
+	
+	SUMMARY
+	=======
+	
+	This article describes how to manually remove a program created by the Windows
+	CE Toolkit for Visual Basic (VBCE) or eMbedded Visual Basic (eVB) from Windows
+	CE device. To uninstall a VBCE/eVB program, you must remove the files generated
+	by the Application Manager, remove any controls registered by the program, and
+	delete whatever files and folders were added during the installation process,
+	while avoiding the removal of components or files that are shared by other
+	applications.
+	
+	A VBCE/eVB program consists of the following parts:
+	
+	- The .vb file for the application.
+	
+	- The VBCE/eVB run-time files:
+	
+	  
+	   - pvbform2.dll
+	   - pvbhost2.dll
+	   - pvbload.exe
+	   - vbscript.dll
+	   - vbsen.dll (for Windows CE 2.11-based platforms only)
+	
+	- Any .dll, data or other associated files added for the application.
+	
+	VBCE programs are usually installed and uninstalled by the CE Services
+	Application Manager. If, for some reason, the Application Manager fails to
+	completely install or remove the program, you may manually remove it by removing
+	all of its files and registry settings.
+	
+	Cleaning Up Application Manager Files
+	-------------------------------------
+	
+	The Application Manager does the following when installing a program:
+	
+	- Copies the CAB file to Windows\AppMgr\Install.
+	
+	- Decompresses and copies the files.
+	
+	- Creates folders as needed.
+	
+	- Puts DAT and DLL files in Windows\AppMgr.
+	
+	- Puts files in the application folder.
+	
+	- Puts files in the Windows folder (no other folders usually needed).
+	
+	- Registers controls.
+	
+	- Creates an Unload file.
+	
+	- Writes uninstall registry entries.
+	
+	- Deletes the CAB file from Windows\AppMgr\Install
+	
+	Using Pocket Word (PWD), you may look at the .unload or .dat files for clues on
+	what was added during the install process. In most cases, the Application
+	Install Wizard instructs the Application Manager to use file names of the form
+	"CompanyName AppName."
+	
+	NOTE: The .dat and .unload files are not in Pocket Word or pure text format. Do
+	not modify the files if they are to be used later.
+	
+	1. If it exists, delete the CAB file for the application. If the Application
+	  Manager runs of out room while copying the CAB file, the device may drop the
+	  connection to the desktop and exhibit other strange behavior because it is
+	  out of working room. To recover, allocate some application memory for storage
+	  using the Memory tab under the System icon in the Control Panel (reset the
+	  device if needed), and delete the CAB file from the \Windows\AppMgr\Install
+	  folder.
+	
+	2. If they exist, delete the .dll and .dat file for the application from the
+	  \Windows\AppMgr folder.
+	
+	3. Delete the program's .lnk file from the \Windows\Programs folder. This will
+	  remove the program from the Start menu. On PocketPC devices, the shortcut
+	  file will be located in the \Windows\Start Menu\Programs folder.
+	
+	4. Delete the application's program folder. Application files are usually stored
+	  in a folder called \Program Files\[appname] where [appname] is the name of
+	  the application (as specified in Step 7 of the Application Install Wizard).
+	
+	5. Delete the other files (except .dll files) that were installed in the Windows
+	  folder.
+	
+	  NOTE: If you are unsure whether another application requires the file, it is
+	  safer not to delete it.
+	
+	Cleaning Up Registry Entries
+	----------------------------
+	
+	Because many Windows CE devices do not ship with a registry editor, you must use
+	a third-party program, the Remote Registry Editor shipped with VBCE/eVB, or the
+	Control Manager to manually change registry settings.
+	
+	1. Unregister installed .dll files that are not shared by other applications. If
+	  you are unsure whether a .dll is shared, it is safer to leave it. To
+	  unregister a control run the following:
+	
+	  RegSvr.Exe /u \windows\[controlname]
+	
+	  Where [controlname] is the name of a control such as MSCEFile.dll. You can use
+	  the Windows CE Control Manager to automatically run RegSvr /u on the device
+	  in an attempt to remove controls.
+	
+	2. Due to a bug in RegSvr.exe, controls may not be completely unregistered and
+	  may still show as installed in the Control Manager.
+	
+	  WARNING: If you use Registry Editor incorrectly, you may cause serious
+	  problems that may require you to reinstall your operating system. Microsoft
+	  cannot guarantee that you can solve problems that result from using Registry
+	  Editor incorrectly. Use Registry Editor at your own risk.
+	
+	  The registry holds control information in three places: ProgId, CLSID, and
+	  TypeLib.
+	
+	  NOTE: Deleting the CLSID information (in HKey_Classes_Root\CLSID\<key>)
+	  is required to ensure the control is unregistered. Removing the ProgId and
+	  TypeLib information is not required. Partially uninstalled controls are safe
+	  to leave on your system, but will not function properly.
+	
+	  For example, identify the registry entries for the MSCEFile.dll. The File
+	  control actually has two classes: File and File System. This example focuses
+	  only on the File class.
+	
+	  a. ProgIds are listed in HKEY_CLASSES_ROOT\:
+	
+	  HKEY_CLASSES_ROOT\FILECTL.FileSystem
+	        HKEY_CLASSES_ROOT\FILECTL.FileSystem.1
+	        (In the Clsid subfolder will be the matching Clsid:
+	           {3F0C2794-5C3A-11D1-A717-00AA0044064C}  )
+	
+	        HKEY_CLASSES_ROOT\FILECTL.File
+	        HKEY_CLASSES_ROOT\FILECTL.File.1
+	        (Clsid={25C953B5-5464-11D1-A714-00AA0044064C})
+	
+	  b. CLSID information is listed in HKEY_CLASSES_ROOT\CLSID\<clsid>. Use
+	     the CLSID found in step A above to locate the matching entry, such as the
+	     following:
+	
+	  HKEY_CLASSES_ROOT\CLSID\{25C953B5-5464-11D1-A714-00AA0044064C}
+	
+	     Under this key will be numerous entries that provide additional information
+	     about the server, such as: Version, TypeLib, InProcServer32, and ProgId
+	     (useful as a cross reference).
+	
+	     WARNING: DO NOT delete the parent key HKey_Classes_Root\CLSID!
+	
+	     Note the TypeLib value from HKEY_CLASSES_ROOT\CLSID\<clsid>\TypeLib.
+	     For the File class is should be: {25C953A7-5464-11D1-A714-00AA0044064C}.
+	
+	  c. TypeLib information is listed in HKEY_CLASSES_ROOT\TypeLib\<clsid>.
+	     Use the TypeLib value obtained in step B above to locate the matching
+	     TypeLib key.
+	
+	  HKEY_CLASSES_ROOT\TypeLib\{25C953A7-5464-11D1-A714-00AA0044064C}
+	
+	  d. Now that you have found the entries for the class, you can delete the
+	     appropriate CLSID subkey (not the entire KEY_CLASSES_ROOT\CLSID). Deleting
+	     the matching TypeLib and ProgId entries are optional.
+	
+	3. You may delete the .dll file that you just unregistered. To re-register a
+	  control that you accidentally unregister, run the following:
+	
+	  RegSvr.Exe \windows\[controlname]
+	
+	  This is not possible if you delete the control.
+	
+	4. Also in the registry are entries for the Start menu:
+	
+	  HKEY_Local_Machine\Software\Apps\<TOKEN>application name</TOKEN>
+	
+	  This key can be deleted if desired.
+	
+	Deleting the Visual Basic Run Time
+	----------------------------------
+	
+	If no other VBCE/eVB programs are installed on the Windows CE device, it might be
+	possible to remove the following files:
+	
+	- pvbdecl.dll
+	
+	- pvbform2.dll
+	
+	- pvbhost2.dll
+	
+	- pvbload.exe
+	
+	- vbscript.dll
+	
+	- vbsen.dll
+	
+	On some devices, these files may be in ROM, making it impossible to delete them.
+	
+	WARNING: These files are required to run Visual Basic programs on Windows CE. If
+	they are deleted, you cannot run other programs created by the Toolkit until
+	they are restored. Please use caution when removing them.
+	
+	Follow the steps in this article to remove a VBCE/eVB program from the Windows CE
+	device. The steps do not remove the installation program from the desktop.
+	
+	NOTE: Development machines may still contain other files used by the remote tools
+	and the debugger.
+	
+	REFERENCES
+	==========
+	
+	Books Online for Microsoft Windows CE Toolkit for Visual Basic 6.0
+	
+	eMbedded Visual Basic 3.0 Online Help
+	
+	  http://msdn.microsoft.com/library/en-us/wcesetup/htm/insintro.asp?frame=true
+	
+	
+	Additional query words: uninstall wince wce vbce vbce6 evb inf cab
+	
+	======================================================================
+	Keywords          : kbToolkit kbVBp500 kbVBp600 kbOSWinCE100 kbGrpDSVB kbAudDeveloper kbHOWTOmaster 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword2 kbVBeMbSearch kbWinCETKVBSearch kbWinCESearch kbVBeMb300
+	Version           : :3.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

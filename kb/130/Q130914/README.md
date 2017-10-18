@@ -1,0 +1,132 @@
+---
+layout: page
+title: "Q130914: Number of Users and Groups Affects SAM Size of Domain"
+permalink: kb/130/Q130914/
+---
+
+## Q130914: Number of Users and Groups Affects SAM Size of Domain
+
+	Article: Q130914
+	Product(s): Microsoft Windows NT
+	Version(s): winnt:4.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 4.0 
+	- Microsoft Windows NT Server version 4.0 
+	- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article discusses domain limitations in terms of the numbers of users,
+	groups, and computers in a domain, and the number of users in groups. The total
+	number of users, groups, and computers in the domain determines the overall size
+	of the security accounts manager (SAM) database. The way groups within a domain
+	are implemented also affects the size of the SAM database.
+	
+	The following table represents general guidelines, which assume that the computer
+	functions only as a domain controller (DC) and that no other major Windows NT
+	services are running on the computer. This includes the following services: SQL
+	Server, SNA Server, Exchange, File and Print Services, Remote Access Service,
+	WINS, DNS, and DHCP.
+	
+	All values are listed in megabytes (MB). This also assumes that the paging file
+	is at least 250 MB in size.
+	
+	Number    SAM   Registry         PagedPool      CPU          Paging    RAM
+	of users  size  size             size           needed*      file size
+	--------------------------------------------------------------------------
+	
+	3,000      5      25 (default)   50 (default)  486DX/33        32      16
+	7,500     10      25 (default)   50 (default)  486DX/66        64      32
+	10,000     15      25 (default)   50 (default)  P, M, or A      96      48
+	15,000     20      30             75            P, M, or A     128      64
+	20,000     30      50            100            P, M, or A     256     128
+	30,000     45      75            128            P, M, or A     332     166
+	40,000     60     102            128            SMP            394     197
+	50,000     75     153            192            SMP            512     256
+	60,000     80     153            192            SMP            1GB     512
+	
+	* P, M, and A are used to represent Pentium, MIPS, or Alpha.
+	
+	NOTE: The processor type is relatively unimportant in relation to the number of
+	users supported on a domain controller. Processor type is more important when
+	considering client authentication, and when domain controllers are used for more
+	than one purpose. For large domain operations, Microsoft strongly recommends
+	that your domain controllers be used only for user validation.
+	
+	MORE INFORMATION
+	================
+	
+	Ultimately, the size of the SAM is constrained by the registry size limit, which
+	can be a maximum of 153.6 MB. If you assume that the non-SAM hives of the
+	registry consume no more than 3 MB, the theoretical maximum SAM size is
+	approximately 150 MB. Because of current hardware technologies, however, the
+	practical limitation is much smaller. The tests used to gather the information
+	for this article were initially performed using hardware available during the
+	first part of 1995. Additional tests using hardware available in the second half
+	of 1998 indicate that Windows NT domain controllers can handle more user logons
+	and larger SAM databases than the original recommendations.
+	
+	Because of the way the registry is managed, differences in group membership
+	patterns, and variations in the frequency of SAM operations, it is difficult to
+	provide exact numbers and limits for capacity planning. This is why it is
+	important that administrators monitor the performance of their domain
+	controllers, especially as account operations push the size of the SAM over 40
+	MB (40 MB is the point at which Microsoft recommends administrators start adding
+	a new master domain). Using faster processors and large physical memory size,
+	domains up to approximately 60 Mb are useable with reasonable response times.
+	Observations of 80-MB SAM databases show noticeable performance delays in
+	routine operations and are not recommended. Routine monitoring can uncover
+	gradual degradation in performance that indicates the need for more processing
+	power or physical RAM, depending on the bottleneck discovered.
+	
+	Some of the performance areas of the domain controller to monitor as the domain
+	size increases include:
+	
+	- System boot time to first user operations. With a very large SAM database,
+	  this time increases as the system pages in the entire account database.
+	
+	- Time to create a new local or global group increases as the total SAM size
+	  grows very large.
+	
+	- As the membership of a group increases (as a percentage of total users), the
+	  time to add additional users to a large group also increases in very large
+	  SAM databases. For example, as the total SAM size increases above 60 MB,
+	  adding users to a group that already contains 20 percent of the total user
+	  accounts takes longer as more users are added to the group.
+	
+	- For batch update operations, the time involved for adding a large number of
+	  users to the same group takes longer as the SAM database size increases above
+	  60 MB.
+	
+	Replication of large SAM databases is also a consideration with respect to
+	network bandwidth usage. Domains use incremental synchronization for replicating
+	updates. Adding more users, computer accounts, and groups adds a variable amount
+	of network traffic depending on the frequency of password changes and group
+	membership change operations. For additional information, click the article
+	numbers below to view the articles in the Microsoft Knowledge Base:
+	
+	  Q150934 How to Create a Performance Monitor Log for NT Troubleshooting
+	
+	  Q146005 Optimizing Windows NT for Performance
+	
+	Additional information about detecting performance bottlenecks is available in
+	the Windows NT Workstation 4.0 Resource Kit, Chapters 12-15.
+	
+	Additional query words: page pool
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400
+	Version           : winnt:4.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

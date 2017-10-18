@@ -1,0 +1,253 @@
+---
+layout: page
+title: "Q148659: How to Set Up Windows NT Debug Symbols"
+permalink: kb/148/Q148659/
+---
+
+## Q148659: How to Set Up Windows NT Debug Symbols
+
+	Article: Q148659
+	Product(s): Microsoft Windows NT
+	Version(s): 3.5,3.51
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 13-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation versions 3.5, 3.51 
+	- Microsoft Windows NT Server versions 3.5, 3.51 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	
+	Windows NT Debug Symbols must be set up if a computer needs to be remotely or
+	locally debugged. This article provides instructions on how to set up Windows NT
+	Debug Symbols.
+	
+	MORE INFORMATION
+	================
+	
+	Article Contents
+	----------------
+	
+	- What Are Symbols
+	
+	- Setting Up a Custom Symbol Tree
+	
+	- Single Processor vs. Multiprocessor
+	
+	- Custom HAL.DLL
+	
+	- After the Symbol Tree Is Created
+	
+	What Are Symbols
+	----------------
+	
+	Debug Symbol files (symbols) are required to do both kernel and user-mode
+	debugging in Windows NT. Symbols provide a way to resolve global variables and
+	function names in the loaded executable file.
+	
+	Symbols are produced by the linker when a program is built. They are stripped out
+	of the retail product and saved in a separate (.DBG) file. This considerably
+	reduces file size which decreases file load time and thus increases system
+	performance. Symbols represent Function\API names and global variables.
+	
+	The .DBG file contains symbolic information for each file. They can be found on
+	the SUPPORT\DEBUG\<platform>\SYMBOLS directory of the Windows NT
+	installation compact disc.
+	
+	Patched builds such as Service Packs require a special set of symbols, that is a
+	combination of the base build and the patched symbols.
+	
+	The SYMBOLS directory is divided up into seven subdirectories, called Extension
+	Subdirectories (note that many of the symbol files in these directories match
+	USER MODE components of Windows NT):
+	
+	  COM - symbols for all files ending in .COM go here
+	  CPL - symbols for all files ending in .CPL go here.
+	  DLL - symbols for all files ending in .DLL go here
+	  DRV - symbols for all files ending in .DRV go here
+	  EXE - symbols for all files ending in .EXE go here
+	  SCR - symbols for all files ending in .SCR go here
+	  SYS - symbols for all files ending in .SYS go here.
+	
+	The symbols must match their respective files. Symbols from a different build
+	give erroneous information. All of the symbol file link dates must match those
+	on the computer being debugged.
+	
+	Setting Up a Custom Symbol Trees
+	--------------------------------
+	
+	The Symbol Tree is the subdirectory tree on the host computer which contains the
+	symbol files which match the remote computer being debugged.
+	
+	1. Create a Subdirectory on the host computer. For example:
+	
+	  MKDIR C:\SYMBOLS
+	
+	2. Always start with the base Windows NT version number. Copy the following
+	  files from the installation compact disc for the appropriate version:
+	
+	  "XCOPY [CD Drive]:\SUPPORT\DEBUG\I386 C:\SYMBOLS /S." (without the quotation
+	  marks)
+	
+	3. Copy the symbols for the appropriate Service Pack into the custom tree.
+	  Service Pack symbols can be found on FTP.MICROSOFT.COM.
+	
+	  For example, the symbols for Windows NT 3.51 Service Pack 4 can be downloaded
+	  from the following location:
+	
+	  \bussys\winnt\winnt-public\fixes\usa\NT351\ussp4\symbols
+	
+	  Download the file called SYM_351<X>.EXE where X represents the platform
+	  (I for x86, A for Alpha, P for PPC).
+	
+	  Decompress the files into the symbol tree. For example:
+	
+	  SYM_351<X>.EXE -d C:\SYMBOLS
+	
+	4. Copy any third-party patches, such as the Compaq SSD symbols, to the custom
+	  symbol tree. These symbols must be obtained from the third-party vendor.
+	
+	5. If Microsoft has supplied unique fixes for your installation, copy the DBG
+	  file supplied with the fix into the appropriate subdirectory (for example:
+	  SYS, EXE, DLL).
+	
+	
+	6. If the computer is a single processor Intel system, the symbol tree is
+	  complete. Please see the "After the Symbol Tree is Created" section below.
+	
+	Single Processor vs. Multiprocessor
+	-----------------------------------
+	
+	Windows NT uses a special kernel for SMP systems. During installation this kernel
+	is renamed. It is important that the DBF file is renamed for debugging.
+	
+	  NTOSKRNL.EXE  NTOSKRNL.DBG  = Single processor
+	  NTKRNLMP.EXE  NTKRNLMP.DBG  = Multiple processors
+	
+	If the system is a Multi-Processor, do the following:
+	
+	1. Change the directory to the DLL component directory. For example:
+	
+	  CHDIR C:\SYMBOLS\DLL
+	
+	2. Rename the uniprocessor kernel to another filename. For example:
+	
+	  "RENAME NTOSKRNL.DBG NTOSKRNL.UNI" (without the quotation marks)
+	
+	3. Copy the multiprocessor kernel over the uniprocessor kernel. For example:
+	
+	  "COPY NTKRNLMP.DBG NTOSKRNL.DBG" (without the quotation marks)
+	
+	
+	Custom HAL.DLL
+	--------------
+	
+	Some hardware platforms require a special Hardware Abstraction Layer (HAL)
+	Driver. Like the Kernel file, the custom HAL is renamed during the installation
+	process. Here is a list of common HALs:
+	
+	HAL files for I386 Computers:
+	
+	Filename                   Description
+	---------------------------------------------------
+	HAL.DLL                    Standard HAL for Intel systems
+	HAL486C.DLL                HAL for 486 c step processor
+	HALAPIC.DLL                Uniprocessor version of HALMPS.DLL
+	HALAST.DLL                 HAL for AST SMP systems
+	HALCBUS.DLL                HAL for Cbus systems
+	HALMCA.DLL                 HAL for MCA-based systems (PS\2 and others)
+	HALMPS.DLL                 HAL for most Intel multiprocessor systems
+	HALNCR.DLL                 HAL for NCR SMP computers
+	HALOLI.DLL                 HAL for Olivetti SMP computers
+	HALSP.DLL                  HAL for Compaq Systempro
+	HALWYSE7.DLL               HAL for Wyse7 systems
+	
+	HAL files for DEC Alpha Computers:
+	
+	Filename                   Description
+	---------------------------------------------------
+	HAL0JENS.DLL               Digital DECpc AXP 150 HAL
+	HALALCOR.DLL               Digital AlphaStation 600 Family
+	HALAVANT.DLL               Digital AlphaStation 200\400 Family HAL
+	HALEB64P.DLL               Digital AlphaPC64 HAL
+	HALGAMMP.DLL               Digital AlphaServer 2x00 5\xxx Family HAL
+	HALMIKAS.DLL               Digital AlphaServer 1000 Family Uniprocessor HAL
+	HALNONME.DLL               Digital AXPpci 33 HAL
+	HALQS.DLL                  Digital Multia MultiClient Desktop HAL
+	HALSABMP.DLL               Digital AlphaServer 2x00 4\xxx Family HAL
+	
+	HAL files for MIPS Computers:
+	
+	Filename                   Description
+	---------------------------------------------------
+	HALACR.DLL                 ACER HAL
+	HALDTI.DLL                 DESKStation Evolution
+	HALDUOMP.DLL               Microsoft-designed dual MP HAL
+	HALFXS.DLL                 MTI with a r4000 or r4400
+	HALFXSPC.DLL               MTI with a r4600
+	HALNECMP.DLL               NEC dual MP
+	HALNTP.DLL                 NeTpower FASTseries
+	HALR98MP.DLL               NEC 4 processor MP
+	HALSNI4X.DLL               Siemens Nixdorf UP and MP
+	HALTYNE.DLL                DESKstation Tyne
+	
+	HAL files for PPC Computers:
+	
+	Filename                   Description
+	---------------------------------------------------
+	HALCARO.DLL                HAL for IBM-6070
+	HALEAGLE.DLL               HAL for Motorola PowerStack and Big Bend
+	HALFIRE.DLL                Hal for Powerized_ES,
+	                                  Powerized_MX, and
+	                                  Powerized_MX MP
+	HALPOLO.DLL                HAL for IBM-6030
+	HALPPC.DLL                 HAL for IBM-6015
+	HALWOOD.DLL                HAL for IBM-6020
+	
+	How to Determine Which HAL to Use:
+	
+	During installation, a text log file is created. This file has a line which shows
+	which HAL is installed during setup. If the HAL has changed after the original
+	Setup, the SETUP.LOG does not reflect the change. To verify, do the following:
+	
+	1. Go to %SystemRoot%\REPAIR subdirectory.
+	
+	2. Run ATTRIB -R -H -S SETUP.LOG to make the file visible.
+	
+	3. Use Notepad to view SETUP.LOG and search for "Hal".
+	
+	NOTE: This same technique can be useful to verify if a special kernel is also
+	used.
+	
+	Copy the HAL into the Symbol Tree:
+	
+	1. Change directory to \SYMBOLS\DLL.
+	
+	2. Rename HAL.DBG to HAL.X86.
+	
+	3. Copy the "Custom HLL.DBG" to HAL.DBG.
+	
+	After the Symbol Tree Is Created
+	--------------------------------
+	
+	The symbol tree is now complete. For more information, query on the following
+	word here in the Microsoft Knowledge Base:
+	
+	  debugref
+	
+	
+	Additional query words: 3.50 3.51 prodnt debugref
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+	Version           : :3.5,3.51
+	
+	=============================================================================
+	

@@ -1,0 +1,102 @@
+---
+layout: page
+title: "Q171603: HOWTO: Get the Unread Message Count from an Outlook Folder"
+permalink: kb/171/Q171603/
+---
+
+## Q171603: HOWTO: Get the Unread Message Count from an Outlook Folder
+
+	Article: Q171603
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): WINDOWS:5.0,6.0,97
+	Operating System(s): 
+	Keyword(s): kbnokeyword kbVBp500 kbVBp600 kbGrpDSVBDB
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Control Creation Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Outlook 97 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The following code sample demonstrates how to determine the count of all unread
+	messages on a per folder basis for all folders grouped under a specified
+	Microsoft Outlook folder. The sample assumes that the Microsoft Outlook mail
+	client is installed.
+	
+	MORE INFORMATION
+	================
+	
+	The code below uses a recursive routine to iterate through a mail folder to
+	produce a list of all its sub-folders and a count of corresponding unread
+	messages. The data is then displayed in the Visual Basic Immediate Window. The
+	code takes advantage of the UnReadItemCount property of the Outlook MAPIFolder
+	object.
+	
+	1. Open a Standard EXE project in Visual Basic.
+	
+	2. Select References from the Project menu.
+	
+	3. Select "Microsoft Outlook 8.0 Object Library" (msoutl8.olb), and click OK.
+	
+	4. Select Project1 Properties on the Project menu and set the Startup Object to
+	  "Sub Main".
+	
+	5. Select Add Module from the Project menu to add a module to the project.
+	
+	6. Add the following sample code to Module1:
+	
+	  NOTE: Modify the FOLDER_TO_OPEN constant as appropriate.
+	
+	Sample Code
+	-----------
+	
+	  Option Explicit
+	
+	     Private Sub Main()
+	        Dim olMAPI As Outlook.NameSpace
+	        Dim Folder As Outlook.MAPIFolder
+	        Const FOLDER_TO_OPEN = "Mailbox - John Doe"   'Modify as appropriate
+	
+	        Set olMAPI = GetObject("", "Outlook.Application") _
+	                                .GetNamespa   ce("MAPI")
+	        Call PrintFolderNames(olMAPI.Folders(FOLDER_TO_OPEN), "->")
+	        Set olMAPI = Nothing
+	     End Sub
+	
+	     Sub PrintFolderNames(tempfolder As Outlook.MAPIFolder, a$)
+	        Dim i As Integer
+	        If tempfolder.Folders.Count Then
+	           Debug.Print a$ & " " & tempfolder.Name & "  ";
+	           Debug.Print tempfolder.UnReadItemCount
+	           For i = 1 To tempfolder.Folders.Count
+	             Call PrintFolderNames(tempfolder.Folders(i), a$ & "->")
+	           Next i
+	        Else
+	           Debug.Print a$ & " " & tempfolder.Name & "  ";
+	           Debug.Print tempfolder.UnReadItemCount
+	        End If
+	     End Sub
+	
+	7. Run the program.
+	
+	RESULT: The unread message count for the folder FOLDER_TO_OPEN appears in the
+	Immediate Window.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbnokeyword kbVBp500 kbVBp600 kbGrpDSVBDB 
+	Technology        : kbVBSearch kbOutlookSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbOutlook97Search kbZNotKeyword3
+	Version           : WINDOWS:5.0,6.0,97
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

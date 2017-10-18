@@ -1,0 +1,79 @@
+---
+layout: page
+title: "Q246688: XCLN: Private Calendar Items Not Showing for Secondary Mailbox"
+permalink: kb/246/Q246688/
+---
+
+## Q246688: XCLN: Private Calendar Items Not Showing for Secondary Mailbox
+
+	Article: Q246688
+	Product(s): Microsoft Exchange
+	Version(s): 8.04; WINDOWS:
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 22-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Outlook 97, version 8.04 
+	- Microsoft Outlook 98 
+	- Microsoft Outlook 2000 
+	- Microsoft Exchange Server, version 5.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If you have Microsoft Outlook configured to open a secondary calendar when
+	Outlook starts, calendar appointments marked as private are not visible. A small
+	blue line that indicates the time slot of the meeting is displayed, but there
+	appears to be no meeting on the Calendar.
+	
+	In Outlook 2000, the appointment appears on the Calendar, but it is a private
+	appointment and you are not able to get details.
+	
+	MORE INFORMATION
+	================
+	
+	You cannot view private appointments unless you have the proper permissions.
+	Typically, you are assigned Delegate Access permissions to a user, rather than
+	being listed as one of the Primary Windows NT Accounts associated with this
+	mailbox.
+	
+	If you view items in another mailbox with Delegate Access permissions, you do not
+	have permissions to view the private items of the other mailbox. You are
+	considered a delegate looking at another user's mailbox.
+	
+	To assign permissions in Outlook 2000:
+	
+	1. On the Tools menu, click Options.
+	
+	2. Click the Delegates tab.
+	
+	3. In the Delegates list, click the delegate in question, and then click
+	  Permissions.
+	
+	4. Click to select the "Delegate can see my private appointments" check box.
+	
+	5. Click OK twice.
+	
+	When you use Outlook 97 and 98, delegates are not able to see private items for
+	another user unless they are the owner of that mailbox.
+	
+	For additional information about delegate permissions and private items, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q225354 XCLN: Delegates Cannot Access Private Appointments
+	
+	
+	Additional query words: 8.04 8.5 9.0
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbOutlookSearch kbOutlook2000Search kbOutlook97Search kbOutlook98Search kbZNotKeyword3 kbOutlook804
+	Version           : :8.04; WINDOWS:
+	Issue type        : kbprb
+	
+	=============================================================================
+	

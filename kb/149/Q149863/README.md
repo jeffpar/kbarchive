@@ -1,0 +1,94 @@
+---
+layout: page
+title: "Q149863: PRB: Long Filenames Lost when Project is Loaded by Association"
+permalink: kb/149/Q149863/
+---
+
+## Q149863: PRB: Long Filenames Lost when Project is Loaded by Association
+
+	Article: Q149863
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 4.0,5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbnokeyword kbVBp400 kbVBp500 kbVBp600
+	Last Modified: 15-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+	- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Visual Basic for Windows 32-bit project long filenames are converted to short
+	filenames when run by association under Microsoft Windows 95, Windows 98,
+	Windows Me, Windows NT, or Windows 2000. Running by association is invoked by
+	double-clicking on a file in Windows Explorer or Windows File Manager.
+	
+	CAUSE
+	=====
+	
+	If the fully qualified path to vb32.exe contains any long filenames (for
+	example: C:\Files\Microsoft Visual Basic\Vb32.exe) when a project is loaded by
+	association from Windows Explorer or Windows File Manager, Visual Basic uses the
+	short filename to load the project. The short filename appears on the Visual
+	Basic design environment title bar. In addition, using the File/"Make EXE"
+	option on a Windows 95, Windows 98, or Windows Me machine, the .Exe file uses
+	the short filename as well.
+	
+	RESOLUTION
+	==========
+	
+	For Windows Explorer
+	--------------------
+	
+	1. From the Explorer View/Options dialog box, select the FileTypes tab. In the
+	  Registered File Types list box, select Visual Basic Project, and click on the
+	  Edit button. In the Actions list box of the Edit File Type dialog box, select
+	  open, then click the Edit button. In the Application used to perform action
+	  field, put quotation marks (" ") around the path to Vb32.exe as follows:
+	
+	  "C:\Program Files\Microsoft Visual Basic\Vb32.exe" "%1"
+	
+	2. Click OK to save the change.
+	
+	3. Modify the Make EXE File and Run Program selections in the Actions list box
+	  in the same way as the edit selection in step 1.
+	
+	Visual Basic now loads/makes/runs the project using its correct long filename.
+	
+	For Windows File Manager
+	------------------------
+	
+	1. From File Manager, select a Visual Basic 32-bit Visual Basic Program file,
+	  and select the File/Associate option. Select Change Type. Edit the Command
+	  field, placing quotation marks (" ") around the path to Vb32.exe, as follows:
+	
+	  "C:\Program Files\Microsoft Visual Basic\Vb32.exe" "%1"
+	
+	2. Click OK to save the change.
+	
+	Now Visual Basic 32 loads the project using its correct long filename.
+	
+	STATUS
+	======
+	
+	This behavior is by design.
+	
+	Additional query words: EnvtRun
+	
+	======================================================================
+	Keywords          : kbnokeyword kbVBp400 kbVBp500 kbVBp600 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400 kbZNotKeyword3
+	Version           : :4.0,5.0,6.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

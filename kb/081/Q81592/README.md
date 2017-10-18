@@ -1,0 +1,364 @@
+---
+layout: page
+title: "Q81592: Timer2.exe - Timers and Timing in Microsoft Windows"
+permalink: kb/081/Q81592/
+---
+
+## Q81592: Timer2.exe - Timers and Timing in Microsoft Windows
+
+	Article: Q81592
+	Product(s): Microsoft Windows Software Development Kit
+	Version(s): WINDOWS:3.0,3.1
+	Operating System(s): 
+	Keyword(s): kbfile kbsample kb16bitonly kbGrpDSUser kbOSWin310 kbWndw kbWndwMsg kbOSWin300
+	Last Modified: 25-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Timer2.exe is a file that contains the text of this article in the Windows Help
+	file format. The following is the text of the article "Timers and Timing in
+	Microsoft Windows".
+	
+	MORE INFORMATION
+	================
+	
+	The following file is available for download from the Microsoft Download
+	Center:
+	
+	  Timer2.exe
+	  (http://download.microsoft.com/download/platformsdk/sample73/3.1/W31/EN-US/Timer2.exe)
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. Once posted, the file is housed on secure
+	servers that prevent any unauthorized changes to the file.
+	
+	This article covers the following aspects of timers and timing in the
+	Microsoft(R) Windows(TM) graphical environment:
+	
+	- How Windows-based applications set up and use timers to perform an operation
+	  periodically
+	
+	- Limitations of timers
+	
+	- Creating and destroying timers using the SetTimer and KillTimer functions
+	
+	- How timer events are detected, recorded, and dispatched internal to Windows
+	
+	- How standard and enhanced modes affect timers and timing
+	
+	- How TOOLHELP.DLL can be useful to timers
+	
+	- A description of the INT 2Fh interface to the virtual timer driver (VTD.386)
+	
+	TIMERS AND THEIR USES
+	---------------------
+	
+	Microsoft Windows timers create an event that periodically triggers a specific
+	action in an application. The event can be a WM_TIMER message returned from a
+	GetMessage or a PeekMessage function, or it can be a call to a specified
+	function.
+	
+	Timers are used in many ways. For example, the Windows Clock application uses a
+	timer to awaken the application periodically to update the clock face.
+	Internally, carets flash on timer events. Also, the rate at which list boxes and
+	edit controls scroll is based on timer events. Without timers, the application
+	would remain active in delay loops, violating the "give up control when you are
+	not active" rule needed to keep the nonpreemptive tasking model of Windows
+	running.
+	
+	Instead, a Windows-based application creates a timer with an appropriate delay
+	and then suspends itself in a standard GetMessage loop. When the timer delay
+	expires, the timer event is generated, and the application can perform the
+	necessary operation. At this point the timer can either be destroyed or be left
+	active. If it is left active, another timer event is generated when the timer
+	delay again expires. This cycle continues until the timer is destroyed. Windows
+	version 3.0 can maintain only 16 active timers; Windows version 3.1 can maintain
+	only 32 active timers. Therefore, an application that is not actively using a
+	timer should destroy it so the timer can be used by another application.
+	
+	Tip: Timers are a limited resource. If all timers are in use, the SetTimer
+	function fails. Unless keeping a timer active is absolutely essential to a
+	program, the application must destroy the timer when it is not in use.
+	
+	Creating and Destroying a Timer
+	-------------------------------
+	
+	A timer is created when a program calls the SetTimer function. A timer can
+	dispatch a message to a particular window or call a specified callback function.
+	The lpTimerFunc parameter to SetTimer determines whether a message is sent or a
+	callback function is called. When GetMessage and PeekMessage determine that a
+	timer event has occurred, they return a WM_TIMER message. The lParam of this
+	message contains the lpTimerFunc value passed to SetTimer. The code in
+	DispatchMessage examines the lParam of the WM_TIMER message and dispatches the
+	message to the appropriate window procedure if the lParam is NULL, or calls the
+	callback if the lParam is not NULL. If the lpTimerFunc parameter contains a
+	non-null value, it is assumed to be the FARPROC address of an exported callback
+	function (use MakeProcInstance on it too). This parameter must be correct
+	because Windows does not validate it. Windows simply makes a far call to the
+	specified address. The format of the callback is described in the Microsoft
+	Windows Software Development Kit (SDK) documentation for the SetTimer function,
+	but the following table better describes the parameters to the callback.
+	
+	  Parameter Description
+	  --------- -----------
+	
+	  hWnd      The window handle that was passed as the hWnd parameter to
+	            the SetTimer function. Because Windows never looks at this
+	            parameter, you can pass a NULL here if the callback doesn't
+	            need an hWnd or if no hWnd is available at the time SetTimer
+	            is called.
+	
+	  wMsg      Always WM_TIMER.
+	
+	  nIDEvent  The timer's ID.
+	
+	  dwTimer   DispatchMessage calls the GetTickCount function and then
+	            passes the value obtained in dwTimer.
+	
+	If the lpTimerFunc parameter to SetTimer is NULL, the timer generates a WM_TIMER
+	message for the window specified by the hWnd parameter. The lParam of the
+	WM_TIMER message returned from GetMessage or PeekMessage is NULL, which causes
+	DispatchMessage to send the message to the appropriate Windows procedure. If
+	hWnd is not a valid window handle, DispatchMessage returns an "Invalid Window
+	Handle" FatalExit (code 0x0007). When the window procedure gets the WM_TIMER
+	message, the wParam contains the timer's ID, and the lParam is NULL.
+	
+	When a timer is created, it is assigned an ID. Timer IDs are passed to timer
+	callback functions and with WM_TIMER messages. Timer IDs are also used when
+	killing the timer with the KillTimer function. The nIDEvent parameter lets an
+	application choose the timer's ID if the hWnd parameter is not NULL. If the hWnd
+	parameter is NULL, Windows chooses an ID and returns it from the SetTimer
+	function. In this case, the nIDEvent parameter is ignored, regardless of the
+	value of lpTimerFunc.
+	
+	The return value from SetTimer is 0 (zero) if the timer could not be created.
+	This situation occurs only when all timers are in use before the function is
+	called. SetTimer returns a nonzero value if the timer is successfully created.
+	If the hWnd parameter is NULL, this nonzero value is the timer's ID. If hWnd is
+	nonzero, the function succeeded, and the timer's ID is the value passed in
+	nIDEvent. The timer's ID must be saved because it will be needed later to kill
+	the timer.
+	
+	Tip: If the application calls SetTimer with a nonzero hWnd, it must specify the
+	timer ID. Contrary to the Windows version 3.0 documentation, this ID, not the
+	SetTimer return value, must be used when killing the timer.
+	
+	If SetTimer is called with exactly the same hWnd and ID as an already active
+	timer, Windows resets the timer rate to the new value passed in the wElapse
+	parameter. This method is convenient for changing the rate of a timer without
+	having to kill it and create a new one. Note that if hWnd is NULL, the ID value
+	passed must be the timer's ID as returned from the preceding SetTimer call.
+	
+	In all flavors of SetTimer, the timer event rate is passed in the wElapse
+	parameter. It is specified in milliseconds but is not nearly that precise.
+	
+	A timer is killed by calling the KillTimer function. KillTimer requires two
+	parameters: the hWnd that was passed to SetTimer when the timer was created and
+	the timer's ID. Note again that if hWnd is NULL, the timer's ID is the return
+	value from the SetTimer call, not the value passed in the nIDEvent parameter.
+	
+	Timer Implementation and the Effect on Timer Resolution
+	-------------------------------------------------------
+	
+	All ISA (IBM PC/AT and compatible) computer systems generate a hardware interrupt
+	on IRQ0 18.2 Hz. This interrupt is mapped to INT 8 and can be intercepted by any
+	application that wants to hook it. At 18.2 Hz, the interrupt occurs
+	approximately once every 55 milliseconds. The Windows system driver hooks INT 8
+	and maintains the value returned by the GetTickCount function. Thus, this value
+	is accurate only to within 55 milliseconds.
+	
+	Interrupt-level timer services via INT 8 are fairly straightforward and easy to
+	understand. Providing timer services to a Windows-based application is much more
+	difficult. The two major complications are the inability to call Windows-based
+	applications at interrupt level and the nonpreemptive nature of the Windows
+	tasking model. A timer event for a Windows-based application must behave the
+	same as other interrupt-driven events such as mouse and keyboard events: The
+	event must be detected and recorded at interrupt level but dispatched only to
+	the appropriate application the next time the application asks for messages.
+	Therefore, the delay between the interrupt event occurring and the application
+	receiving it is nondeterministic.
+	
+	Although the hardware timer rate is 18.2 Hz, the rate at which Windows-based
+	applications receive timer messages is quite a bit slower and is affected by
+	other applications that are running.
+	
+	Windows hooks INT 8 at initialization time. As a timer is created, a timer data
+	structure is reserved for the timer. This data structure contains information
+	about the timer, such as which hWnd to send the message to or which FARPROC to
+	call, the timer ID, or the delay time between events. This delay time is then
+	copied into a current delay counter. When the INT 8 handler is called, the
+	current delay counter for each active timer is decremented by 55 (because the
+	delay time is specified in milliseconds). If in doing so the current delay
+	counter reaches 0, a flag is set to indicate that an event should be generated
+	for this timer.
+	
+	GetMessage and PeekMessage first check to see if any posted messages or any
+	keyboard or mouse events are waiting for the application. If none are,
+	GetMessage and PeekMessage check to see if any timers created by the active
+	application have triggered. If one of these timers has triggered, GetMessage and
+	PeekMessage create a WM_TIMER message with the appropriate wParam and lParam and
+	return the message. Contrary to the SDK documentation, the message is never
+	placed in the applications queue. DispatchMessage properly dispatches the
+	message either to the appropriate window or to the specified callback function.
+	
+	When a timer is created, it is associated with the currently active task. When
+	GetMessage and PeekMessage scan for timer events, they look only at timers
+	associated with the currently active task. Although not normally a problem, this
+	activity does prevent an application from creating a timer that would dispatch
+	WM_TIMER messages to a window in another task. Also, timers should not be
+	created in systemwide hooks such as the keyboard hook because the hook is likely
+	to be called while another task is active.
+	
+	Tip: Be careful with SetTimer calls inside dynamic-link libraries (DLLs). If a
+	DLL creates a timer on behalf of a task and then the task terminates, the timer
+	is destroyed.
+	
+	ENHANCED-MODE VIRTUALIZATION
+	----------------------------
+	
+	When running in enhanced mode, Windows takes advantage of the virtual machine
+	(VM) capabilities of the Intel386(TM) hardware. All MS-DOS-based applications
+	run as if each had the entire system to itself. All Windows-based applications
+	run together in a single VM. All VMs, if none are paged, reside simultaneously
+	in physical memory, but only one at a time is active. To arbitrate among the
+	VMs, Windows loads a virtualization layer when running in enhanced mode. This
+	layer acts as a traffic cop, directing hardware events to the appropriate VM on
+	the basis of which VM is active.
+	
+	One of the many hardware events that is virtualized is INT 8, the timer. When a
+	VM is not the active VM, it does not receive INT 8 events at the standard 18.2
+	Hz rate. The Windows VM not receiving INT 8 events at a standard rate plays
+	havoc with the value returned by the GetTickCount function as well as with any
+	active timers set by Windows- based applications. In this environment, WM_TIMER
+	messages are at the mercy of the enhanced-mode scheduler and the relative
+	priority of the Windows VM. Probably more problematic is the value returned from
+	GetTickCount. Because this value increments by 55 only when the Windows VM sees
+	an INT 8, it is not at all accurate in enhanced mode. Applications that require
+	accurate event timing must not use GetTickCount to determine time delays.
+	Instead, they must use the clock maintained by MS-DOS (INT 21H, function 2CH),
+	TOOLHELP.DLL services, or the VTD (described below).
+	
+	Tip: Windows timers operate erratically in enhanced mode when MS-DOS-based
+	applications are active.
+	
+	Tip: The GetTickCount function cannot be used to time events accurately because
+	it is not regularly updated when the MS-DOS VMs are active. GetTickCount is
+	inaccurate both in standard mode and in enhanced mode.
+	
+	STANDARD-MODE TASK SWITCHING
+	----------------------------
+	
+	Standard-mode task switching has essentially the same effect on the GetTickCount
+	value and Windows timers as does enhanced-mode virtualization, but for a
+	different reason. When a task is switched in standard mode, either between an
+	MS-DOS-based application and Windows or between two MS-DOS-based applications,
+	Windows swaps the entire running application to disk and then loads the new
+	application from its previously saved swap file. While running an MS-DOS-based
+	application, the Windows INT 8 handler obviously is not being called because
+	Windows is not in memory. Thus, any active timers do not count down, and the
+	GetTickCount value does not increment. This problem is less obvious in standard
+	mode than in enhanced mode because MS-DOS-based applications cannot run in a
+	window in standard mode.
+	
+	USING TOOLHELP.DLL
+	------------------
+	
+	TOOLHELP.DLL is a new library being developed for Windows version 3.1, but it
+	will also run under Windows version 3.0. It was developed for use by debuggers
+	and profilers, but its ability to provide high- resolution timing services is
+	useful to other types of Windows-based applications. The TimerCount function can
+	return system time information that is accurate to the millisecond. The function
+	returns two values: a count of how long Windows has been running and a
+	cumulative total of how long the Windows VM has been active. In standard mode,
+	both values are the same and contain the time Windows has been running; however,
+	the counts are accurate only if no task switches take place, because they are
+	not maintained while MS-DOS-based applications are active.
+	
+	VIRTUAL TIMER DEVICE
+	--------------------
+	
+	The virtual timer device (VTD) provides timer services that are more accurate
+	than the value returned by GetTickCount. TOOLHELP.DLL provides a convenient way
+	to access the VTD services via the TimerCount function. Under some conditions,
+	however, calling TimerCount is not possible or appropriate. Under these rare
+	conditions, an application can call the VTD directly. The VTD in Windows version
+	3.1 is the first version of the VTD that supplies these timer services.
+	
+	The VTD uses the 8253 Programmable Interval Timer chip to obtain its values. The
+	8253 countdown register is always set to FFFFh, and the rate is set to 1.196
+	MHz. Thus, an interrupt is generated about 18.2 times per second, or roughly
+	every 55 milliseconds. This is the interrupt that comes through INT 8. The
+	countdown register of the 8253 is accessible at any time, and the VTD uses it to
+	obtain more accurate time information than is available through INT 8.
+	
+	The address of the function in the VTD that provides these timer services is
+	obtained in a slightly roundabout way. The application must execute an INT 2Fh
+	instruction with the AX register set to 1684h and the BX register set to 5. This
+	instruction returns the address of the VTD timer services function in ES:DI.
+	
+	The following values can be obtained from the VTD by calling this function with
+	the appropriate value in the AX register.
+	
+	Version Number
+	--------------
+	
+	The VTD version number is obtained by calling the VTD with AX set to 0. The major
+	version number is returned in AH, and the minor version number is returned in
+	AL. The version number does not change to match the version of Windows with
+	which the VTD is shipped. Instead, the version number changes when any
+	modifications or additions are made to the services provided. The version values
+	returned from the VTD in Windows version 3.1 are AH set to 3 and AL set to 0Ah.
+	
+	Current Clock Tick Time
+	-----------------------
+	
+	The VTD maintains a 64-bit value that is accurate to 0.8 microseconds. This value
+	is obtained by calling the VTD with AX set to 0100h. The 64-bit value is
+	returned in EDX:EAX. The returned value indicates the time Windows has been
+	running based on a 1.196 MHz clock.
+	
+	Current System Time in Milliseconds
+	-----------------------------------
+	
+	The VTD also maintains the time in milliseconds Windows has been running. This
+	value can be obtained by calling the VTD with AX set to 0101h. The 32-bit result
+	is returned in the EAX register. This value is not affected by changes in VM
+	activation.
+	
+	Current VM Time in Milliseconds
+	-------------------------------
+	
+	The cumulative time the current VM has been active can be obtained by calling the
+	VTD with AX set to 0102h. The 32-bit result is returned in the EAX register. The
+	value returned is the cumulative amount of time that the VM that is active at
+	the time of the call has been active.
+	
+	All applications will incur an overhead when calling the VTD (also when calling
+	TOOLHELP.DLL because it, in turn, calls the VTD). Calling the VTD causes a ring
+	transition because the VTD runs in ring 0. Ring transitions are about 100 times
+	slower than a far call but still take less than 1 millisecond. The overhead for
+	a ring transition to the VTD is constant.
+	
+	Copyright 1992 by Microsoft Corporation. All rights reserved.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbfile kbsample kb16bitonly kbGrpDSUser kbOSWin310 kbWndw kbWndwMsg kbOSWin300 
+	Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+	Version           : WINDOWS:3.0,3.1
+	
+	=============================================================================
+	

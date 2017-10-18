@@ -1,0 +1,152 @@
+---
+layout: page
+title: "Q93582: DoubleSpace Err Msg: &quot;There Are No More Drive Letters&quot;"
+permalink: kb/093/Q93582/
+---
+
+## Q93582: DoubleSpace Err Msg: &quot;There Are No More Drive Letters&quot;
+
+	Article: Q93582
+	Product(s): Microsoft Disk Operating System
+	Version(s): MS-DOS:6.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 19-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft MS-DOS operating system version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	
+	You receive the following error message:
+	
+	  There are no more drive letters reserved for dblspace to use.
+	  To add more, use the options selection from the tools menu.
+	
+	CAUSE
+	=====
+	
+	This error occurs when there are not enough drive letters available to
+	DoubleSpace, your DBLSPACE.INI file is missing or corrupted, or you have not
+	installed DoubleSpace on your hard disk and you are trying to mount a compressed
+	floppy disk.
+	
+	WORKAROUND
+	==========
+	
+	To work around this problem, follow the appropriate procedure below.
+	
+	DoubleSpace Does Not Have Enough Drive Letters Available
+	--------------------------------------------------------
+	
+	If there are no drive letters available for DoubleSpace to mount a drive, use the
+	following procedure to increase the "Last drive reserved for DoubleSpace's use"
+	setting.
+	
+	1. To run DoubleSpace, type "dblspace" (without the quotation marks) at the
+	  command prompt.
+	
+	2. From the Tools menu, choose Options.
+	
+	3. Increase your "Last drive reserved for DoubleSpace's use" setting by at least
+	  one letter.
+	
+	  NOTE: This procedure causes the host drive letter to change. If your Windows
+	  permanent swap file is located on that host drive, when you start Windows,
+	  you will receive an error message indicating that your permanent swap file is
+	  corrupted. To correct this problem, run Control Panel and reconfigure your
+	  permanent swap file for the new host drive.
+	
+	Your DBLSPACE.INI file Is Missing or Corrupted
+	----------------------------------------------
+	
+	Create a C:\DBLSPACE.INI file (where C is your startup disk) with a text editor
+	such as MS-DOS Editor. The DBLSPACE.INI file should contain the following two
+	lines:
+	
+	  MaxRemovableDrives=2
+	  LastDrive=F
+	
+	Your drive should now mount normally with a DBLSPACE /MOUNT command. For more
+	information on this command, type "help dblspace /mount" (without the quotation
+	marks) at the MS-DOS command prompt and then press ENTER.
+	
+	NOTE: LastDrive= must be set to one letter beyond your last logical drive letter.
+	For example, if your last drive is E, use LastDrive=F in your DBLSPACE.INI
+	file.
+	
+	You Are Attempting to Mount a Compressed Floppy Disk
+	----------------------------------------------------
+	
+	To work around this problem, create a very small new DoubleSpace drive and then
+	delete it. This creates the DBLSPACE.INI file and loads DBLSPACE.BIN into memory
+	so you can read the compressed floppy disk.
+	
+	To do this:
+	
+	1. Type "dblspace" (without the quotation marks) at the MS-DOS command prompt.
+	
+	2. Choose Custom Setup
+	
+	3. Choose Create A New Empty Compressed Drive.
+	
+	4. Select a drive you want to use.
+	
+	5. When you are prompted for the amount of free space to leave on the drive,
+	  type a number larger than your hard disk drive.
+	
+	6. After DoubleSpace tells you the maximum amount free space you can leave on
+	  your drive, type in that number. For example, if DoubleSpace tells you the
+	  maximum amount of free space is 95.55 megabytes (MB), leave 95 MB of free
+	  space.
+	
+	7. Choose Continue.
+	
+	8. Press the C key to create the compressed drive.
+	
+	You can now mount the compressed floppy disk. If you do not want to keep the
+	DoubleSpace drive you created, type the following command at the MS-DOS command
+	prompt and restart your computer:
+	
+	  " deltree /y dblspace.001 " (without the quotation marks)
+	
+	As an alternative, you can also use the following procedure to create a
+	DBLSPACE.INI file and load DBLSPACE.BIN in memory:
+	
+	1. Create a C:\DBLSPACE.INI file (where C is your startup disk) with a text
+	  editor such as MS-DOS Editor. The DBLSPACE.INI file should contain the
+	  following two lines:
+	
+	     MaxRemovableDrives=2
+	     LastDrive=F
+	
+	  NOTE: LastDrive= must be set to one letter beyond your last logical drive
+	  letter. For example, if your last drive is E, use LastDrive=F in your
+	  DBLSPACE.INI file.
+	
+	2. Copy DBLSPACE.BIN from your DOS directory to the root directory of your
+	  startup (boot) drive. For example:
+	
+	     copy c:\dos\dblspace.bin c:\ 
+	
+	3. Restart your computer.
+	
+	4. You can now mount the compressed disk in your floppy drive. For example, if
+	  the disk is in drive A, type the following at the command prompt:
+	
+	  " dblspace /mount a: " (without the quotation marks)
+	
+	Additional query words: 6.00 err msg compress double space
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMSDOSSearch kbMSDOS600
+	Version           : MS-DOS:6.0
+	
+	=============================================================================
+	

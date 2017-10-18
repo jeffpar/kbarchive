@@ -1,0 +1,60 @@
+---
+layout: page
+title: "Q97607: MemMaker Err Msg: Invalid Session ID"
+permalink: kb/097/Q97607/
+---
+
+## Q97607: MemMaker Err Msg: Invalid Session ID
+
+	Article: Q97607
+	Product(s): Microsoft Disk Operating System
+	Version(s): MS-DOS:6.0,6.2,6.21,6.22
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 22-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft MS-DOS operating system versions 6.0, 6.2, 6.21, 6.22 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	You may receive the following error message when you run MemMaker if there is
+	more than one MEMMAKER.STS file on your hard drive:
+	
+	  Invalid Session ID
+	
+	WORKAROUND
+	==========
+	
+	To work around this problem:
+	
+	1. Delete all the MEMMAKER.STS files.
+	
+	2. Remove any MemMaker commands from the CONFIG.SYS and AUTOEXEC.BAT files.
+	
+	3. Run MemMaker again.
+	
+	If you are using disk compression, you may need to run MemMaker with the /SWAP
+	parameter.
+	
+	MORE INFORMATION
+	================
+	
+	The "Invalid Session ID" error message means the identifier that is passed to
+	MEMMAKER, CHKSTATE, or SIZER is not the same as the identifier in the
+	MEMMAKER.STS file. An "Invalid Session ID" indicates that an incorrect .STS file
+	is being found.
+	
+	Additional query words: 6.22 6.00 6.20
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600
+	Version           : MS-DOS:6.0,6.2,6.21,6.22
+	
+	=============================================================================
+	

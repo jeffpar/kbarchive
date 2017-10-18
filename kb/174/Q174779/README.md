@@ -1,0 +1,90 @@
+---
+layout: page
+title: "Q174779: Require Secure SSL Channel Not Available"
+permalink: kb/174/Q174779/
+---
+
+## Q174779: Require Secure SSL Channel Not Available
+
+	Article: Q174779
+	Product(s): Internet Information Server
+	Version(s): WINNT:2.0,3.0
+	Operating System(s): 
+	Keyword(s): kbtshoot
+	Last Modified: 30-APR-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Server versions 2.0, 3.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	After you use Key Manager to install a new key for use with Secure Sockets Layer
+	(SSL) security, the option to enable SSL for a specific virtual directory or a
+	home directory remains unavailable (grayed out).
+	
+	RESOLUTION
+	==========
+	
+	WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+	problems that may require you to reinstall Windows NT to correct them. Microsoft
+	cannot guarantee that any problems resulting from the use of Registry Editor can
+	be solved. Use this tool at your own risk.
+	
+	The following are troubleshooting steps you can take to ensure availability of
+	SSL functionality:
+	
+	1. Is the key complete and usable?
+	
+	  In Key Manager, select the key and verify that is has been installed
+	  correctly. If the key has not been installed correctly or is not complete and
+	  usable, backup the current keyset by selecting Key, select Export Key and
+	  click Backup File. Select the key and delete it.
+	
+	  To import the key from the original key or the backup set files, select Key,
+	  Import, and click Keyset Files or Backup File. Always choose Servers and
+	  click Commit Changes Now when you change the Key Manager configuration.
+	
+	2. Once the key is complete and usable, choose Servers and click Commit Changes
+	  Now. Exit Key Manager.
+	
+	3. The registry entry for the Sspifilt.dll file that is required for SSL
+	  functionality has the following location:
+	
+	     Hkey_Local_Machine/System/CurrentControlSet/Services/W3svc/Parameters
+	
+	
+	  Within the Parameters key, there is a string; the value of which is comma
+	  delimited and should specify the path for the Sspifilt.dll file. (for
+	  example, C:\Winnt\System32\Inetsrv\Sspifilt.dll).
+	
+	  Other Isapi filters may appear in this value as well. Verify that no spaces
+	  exist in this value. If spaces exist, you will need to specify a different
+	  physical path, without spaces, for the isapi filter dll path. (for example,
+	  C:\Program Files\Isapi.dll needs to change to C:\Winnt\System32\Isapi.dll or
+	  some valid path without spaces.
+	
+	  If the Sspifilt.dll file does not exist in the registry value, add it to the
+	  value by double-clicking the FILTER DLLS registry value and use the String
+	  editor.
+	
+	  NOTE: Use a comma with no spaces to separate isapi filter entries.
+	
+	4. Restart the computer.
+	
+	5. Verify that the Require Secure SSL Channel option is available in the
+	  Directories Properties page in the WWW service.
+	
+	Additional query words: greyed grey connection cannot be established
+	
+	======================================================================
+	Keywords          : kbtshoot 
+	Technology        : kbiisSearch kbiis300 kbiis200
+	Version           : WINNT:2.0,3.0
+	Hardware          : ALPHA x86
+	
+	=============================================================================
+	

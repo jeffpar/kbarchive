@@ -1,0 +1,178 @@
+---
+layout: page
+title: "Q214527: FP97: Save Results Form Handler and Four-Digit Year Format"
+permalink: kb/214/Q214527/
+---
+
+## Q214527: FP97: Save Results Form Handler and Four-Digit Year Format
+
+	Article: Q214527
+	Product(s): Word Front Page
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbdta
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft FrontPage 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The Save Results Form Handler allows you to specify whether to save Time or Date
+	information along with each submitted form record. If you save this Date
+	information, the date will be formatted in M/D/YY format. However, you can
+	instruct FrontPage to output dates in the M/D/YYYY format. This article
+	describes two methods you can use to format your dates in the M/D/YYYY format.
+	
+	MORE INFORMATION
+	================
+	
+	WARNING: ANY USE BY YOU OF THE CODE PROVIDED IN THIS ARTICLE IS AT YOUR OWN
+	RISK. Microsoft provides this CODE "as is" without warranty of any kind, either
+	express or implied, including but not limited to the implied warranties of
+	merchantability and/or fitness for a particular purpose.
+	
+	Method 1: Using Active Server Pages (requires IIS or MSPWS)
+	-----------------------------------------------------------
+	
+	If you are using Microsoft Internet Information Server (IIS) or Microsoft
+	Personal Web Server (with the ASP patch installed), you can use Active Server
+	Pages (ASP) to save the server's date as a part of the Save Results Form
+	Handler. To do this, follow these steps:
+	
+	1. In FrontPage Editor, open the page that contains the Save Results Form
+	  Handler.
+	
+	2. Place the cursor above the Form
+	
+	3. On the Insert menu, click HTML Markup.
+	
+	4. Enter the following ASP script in the HTML Markup dialog box, and then click
+	  OK:
+	
+	  <% FullDate = Month(date) & "/" & Day(date) & "/" &
+	  Year(date)
+	  ' FullDate is the combination of the exact Month, Day and Year.
+	  ' It will be used to assign the value of the hidden field. %>
+	
+	5. To create a hidden field, follow these steps:
+	
+	  a. Right-click the form, and then click Form Properties on the menu that
+	     appears.
+	
+	  b. In the Hidden box, click Add.
+	
+	  c. In the Name box, type "DateStamp" (without the quotation marks).
+	
+	  d. In the Value box, type "<%=FullDate%>" (without the quotation
+	     marks).
+	
+	  e. Click OK twice.
+	
+	6. Save the page as "<<filename>>.asp" (without the quotation marks)
+	  where <<filename>> is the name you want to assign to your page
+	  (Make sure the page is saved in a folder that allows scripts to be run).
+	
+	For additional information about Active Server Pages, click the article numbers
+	below to view the articles in the Microsoft Knowledge Base:
+	
+	  Q174008 FP98: What are Active Server Pages?
+	
+	  Q174015 FP98: How to Create Active Server Pages in FrontPage 98
+	
+	Method 2: Using JavaScript (does not require IIS or MSPWS)
+	----------------------------------------------------------
+	
+	If you are not using Microsoft Internet Information Server or Microsoft Personal
+	Web Server, you can use the following client-side JavaScript.
+	
+	NOTE: This script returns the date of the client browser, rather than the date of
+	the server.
+	
+	1. In FrontPage Editor, open the page that contains the Save Results Form
+	  Handler.
+	
+	2. Place the cursor above the form.
+	
+	3. On the Insert menu, click Script.
+	
+	4. Click to select the JavaScript check box.
+	
+	5. Paste the following code into the Script dialog box:
+	
+	        // Give the function a name so the onSubmit event for the submit
+	        // button can call it.
+	        function FullYear () {
+	        // Create a variable called ddate that will contain the current
+	        // date on the client system.
+	        var ddate= new Date();
+	        // Create a variable called year that will contain the current
+	        // year on the client system. Note that the JavaScript getYear method
+	        // will return values 0 through 99 for years 1900 through 1999, but
+	        // it will return 2000 or higher for years above 2000.
+	        var year=ddate.getYear()
+	        // Analyze the current year, and if it is less than 100 (year 2000),
+	        // then add 1900 to it.
+	        if (year < 100) {year = (year + 1900)}
+	        // Specify that the return value of the function FullYear shall be a
+	        // text string in the form of m/d/yyyy. The month portion is the
+	        // result of the getMonth method that returns 0 for January and 11
+	        // for December. Add one to that value for the common representation
+	        //of a month. The date portion is the result of the getDate method,
+	        // and the year portion is the result of the calculation within the
+	        // if condition in the line above.
+	        return ((ddate.getMonth() + 1)+ "/" + ddate.getDate()+ "/" + year);
+	        }
+	
+	6. On the View menu, click HTML.
+	
+	7. Add the onClick event to the Submit button code. To do this, follow these
+	  steps:
+	
+	  a. Find the HTML code that resembles the following:
+	
+	  <input type="submit" value="Submit" name="B1">
+	
+	  b. Add the following code after name="B1" but before the > sign:
+	
+	  onClick="DateStamp.value=FullYear()"
+	
+	  c. The HTML code should look similar to the following:
+	
+	  <input type="submit" value="Submit" name="B1"
+	  onClick="DateStamp.value=FullYear()">
+	
+	8. Add a hidden field named "DateStamp" (without the quotation marks) to the
+	  form by typing the following HTML code right after the tag in the previous
+	  step:
+	
+	  <input type="hidden" name="DateStamp">
+	
+	REFERENCES
+	==========
+	
+	For more information about JavaScript, please see the following Microsoft World
+	Wide Web site:
+	
+	  http://www.microsoft.com/scripting/jscript
+	
+	For more information about writing HTML, please see the following Microsoft Web
+	site:
+	
+	  http://www.microsoft.com/workshop/author/newhtml/default.htm
+	
+	Additional query words: y2k fpscript 97 asp
+	
+	======================================================================
+	Keywords          : kbdta 
+	Technology        : kbFrontPageSearch kbFrontPage97 kbZNotKeyword2 kbFrontPage97Search
+	Version           : :
+	Hardware          : x86
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

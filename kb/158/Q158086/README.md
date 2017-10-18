@@ -1,0 +1,148 @@
+---
+layout: page
+title: "Q158086: STL Sample for the list::back, list::front Functions"
+permalink: kb/158/Q158086/
+---
+
+## Q158086: STL Sample for the list::back, list::front Functions
+
+	Article: Q158086
+	Product(s): Microsoft C Compiler
+	Version(s): 4.2,5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbcode kbVC420 kbVC500 kbVC600 kbDSupport
+	Last Modified: 29-APR-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The Standard C++ Library, used with:
+	   - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+	   - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+	   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+	   - Microsoft Visual C++.NET (2002) 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The sample code below illustrates how to use the list::back, list::front,
+	list::pop_back, list::pop_front, list::push_back, and list::push_front STL
+	functions in Visual C++.
+	
+	MORE INFORMATION
+	================
+	
+	Required Header
+	---------------
+	
+	     <list>
+	
+	Prototype
+	---------
+	
+	     reference back();
+	     const_reference back() const;
+	     reference front();
+	     const_reference front() const;
+	     void pop_back();
+	     void pop_front();
+	     void push_back(const T& x);
+	     void push_front(const T& x);
+	
+	NOTE: The class/parameter names in the prototype may not match the version in the
+	header file. Some have been modified to improve readability.
+	
+	Description
+	-----------
+	
+	The member function back returns a reference to the last element of the
+	controlled sequence. The member function front returns a reference to the first
+	element of the controlled sequence. The member function pop_back removes the
+	last element of the controlled sequence. The member function pop_front removes
+	the first element of the controlled sequence. All the above functions require
+	that the controlled sequence be non-empty.
+	
+	The member function push_back inserts an element with value x at the end of the
+	controlled sequence. The member function push_front inserts an element with
+	value x at the beginning of the controlled sequence.
+	
+	Sample Code
+	-----------
+	
+	  ////////////////////////////////////////////////////////////////////// 
+	  // 
+	  // Compile options needed: -GX
+	  // 
+	  // liststck.cpp :  This example shows how to use the various stack
+	  //                 like functions of list.
+	  // 
+	  // Functions:
+	  // 
+	  //    list::back
+	  //    list::front
+	  //    list::pop_back
+	  //    list::pop_front
+	  //    list::push_back
+	  //    list::push_front
+	  // 
+	  // Written by Andrew Bradnan
+	  // Copyright (c) 1996 Microsoft Corporation. All rights reserved.
+	  ////////////////////////////////////////////////////////////////////// 
+	
+	  #include <list>
+	  #include <string>
+	  #include <iostream>
+	  using namespace std;
+	
+	  #if _MSC_VER > 1020   // if VC++ version is > 4.2
+	     using namespace std;  // std c++ libs implemented in std
+	     #endif
+	
+	  typedef list<string, allocator<string> > LISTSTR;
+	
+	  void main()
+	
+	  {
+	
+	      LISTSTR test;
+	
+	      test.push_back("back");
+	      test.push_front("middle");
+	      test.push_front("front");
+	
+	      // front
+	      cout << test.front() << endl;
+	
+	      // back
+	      cout << test.back() << endl;
+	
+	      test.pop_front();
+	      test.pop_back();
+	
+	      // middle
+	      cout << test.front() << endl;
+	
+	  }
+	
+	The Program Output is:
+	
+	front
+	back
+	middle
+	
+	REFERENCES
+	==========
+	
+	Visual C++ Books On Line: Visual C++ Books:C/C++:Standard C++ Library Reference.
+	
+	Additional query words: STL STLSample kbdss list::back list::front list::pop_back list::pop_front list::push_back list::push_front
+	
+	======================================================================
+	Keywords          : kbcode kbVC420 kbVC500 kbVC600 kbDSupport 
+	Technology        : kbVCsearch kbAudDeveloper kbVCLibrary
+	Version           : :4.2,5.0,6.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

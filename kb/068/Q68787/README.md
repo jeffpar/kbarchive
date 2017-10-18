@@ -1,0 +1,69 @@
+---
+layout: page
+title: "Q68787: Appending a Line to a File with COPY Con or ECHO"
+permalink: kb/068/Q68787/
+---
+
+## Q68787: Appending a Line to a File with COPY Con or ECHO
+
+	Article: Q68787
+	Product(s): Microsoft Disk Operating System
+	Version(s): MS-DOS:3.x,4.x,5.0,5.0a,6.0,6.2,6.21,6.22
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 17-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft MS-DOS operating system versions 3.1, 3.2, 3.21, 3.3, 3.3a, 4.0, 4.01, 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	You can add a line to the end of a file, such as your CONFIG.SYS file, without
+	using an editor if you use the COPY command in the following form:
+	
+	  copy filename.ext + con
+	
+	MORE INFORMATION
+	================
+	
+	Copy echoes FILENAME.EXT as it is copied, then it echoes CON and the cursor to
+	show that it is now copying from the CONsole. For example:
+	
+	  C:\>copy config.sys + con
+	  config.sys
+	  con
+	_
+	
+	This causes MS-DOS to echo CONFIG.SYS and CON, with the cursor. Enter the text to
+	be added to the file, then press CTRL+Z and ENTER to end your modification. The
+	following example adds a line to the end of CONFIG.SYS:
+	
+	  C:\>copy config.sys + con
+	  config.sys
+	  con
+	  shell=c:\command.com c:\ /p /e:512
+	  ^z
+	
+	  1 File(s) copied
+	
+	If only one line is to be added and that line doesn't contain any redirection,
+	you can also use the ECHO command as follows:
+	
+	  C:\>echo shell=c:\command.com c:\ /p /e:512 >> config.sys
+	
+	NOTE: If the last line of the text file does not contain a carriage return, the
+	line being added is appended to the end of the last line.
+	
+	Additional query words: 6.22 3.20 3.21 3.30 3.30a 4.00 4.01 5.00 5.00a 6.00 6.20
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMSDOSSearch kbMSDOS321 kbMSDOS400 kbMSDOS320 kbMSDOS330a kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS310 kbMSDOS500 kbMSDOS330 kbMSDOS401 kbMSDOS500a
+	Version           : MS-DOS:3.x,4.x,5.0,5.0a,6.0,6.2,6.21,6.22
+	
+	=============================================================================
+	

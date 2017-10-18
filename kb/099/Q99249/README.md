@@ -1,0 +1,198 @@
+---
+layout: page
+title: "Q99249: Boot Block Configuration File Format"
+permalink: kb/099/Q99249/
+---
+
+## Q99249: Boot Block Configuration File Format
+
+	Article: Q99249
+	Product(s): Microsoft LAN Manager
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 30-JUL-2001
+	
+	SUMMARY
+	=======
+	
+	The boot block configuration file specifies the contents of the boot block sent
+	to the workstation by the RPL service. For MS-DOS, the boot block is named
+	dosbb.cnf.
+	
+	For OS/2 1.21 and OS/2 1.3, the boot block configuration file is named
+	os2121bb.cnf and os213bb.cnf respectively. The files can be found under:
+	
+	<lanroot>\RPL\BBLOCK\NETBEUI\<network card>\
+	
+	The file normally contains rplboot, and the real mode network drivers and support
+	programs. For MS-DOS it also contains rplstart and rpldisk; for OS/2 it also
+	contains os2ldr, os2krnl, and rplmfsd.sys.
+	
+	MORE INFORMATION
+	================
+	
+	Typically, you will never need to edit a boot block configuration file. However,
+	you may need to allocate more memory for a specific driver, or for OEM's, make
+	changes so that their network drivers work with RPL.
+	
+	The general format of a line in a boot block configuration file consists of four
+	fields: TYPE, FILENAME, PARAMETER(s), and MOVEABLE. All valid TYPES are
+	described below, along with their expected FILENAMEs and PARAMETERs (where
+	applicable).
+	
+	Fields are separated with spaces; spaces within a field are represented with
+	tilde (~). The maximum line length is 512 characters. Comments are given by
+	lines where the first non-space character is ';'. The MOVEABLE field is only
+	valid for device drivers, and M indicates that the device driver can be moved
+	after initialization to reclaim memory it doesn't need; ~, M indicates the
+	device driver cannot be moved. The MOVEABLE field is new with LAN Manager 2.1.
+	
+	RPL Type
+	
+	The RPL entry specifes the first (initialization) program that runs on the
+	workstation. The filename specified is relative to rpldir. There are no
+	parameters. There may be only a single RPL entry. The initialization program for
+	both DOS and OS/2 is rplboot.
+	
+	ORG Type
+	
+	ORG entries bind files to specific addresses in memory. Since all files are in a
+	continuous memory block, there can be only one ORG entry. For ORG entries, the
+	filename field has a special meaning; it specifies the hexadecimal segment
+	number used as the address to bind to. There are no parameters.
+	
+	DAT Type
+	
+	DAT entries specify data files which are included in the boot block. The filename
+	specified is relative to rpldir. There are no parameters.
+	
+	LDR Type
+	
+	The LDR entry specifies the loader to use on the workstation, which is the
+	program that rplboot will pass control to. There can be only one LDR entry. The
+	filename specified is relative to rpldir.
+	
+	The parameters specified depend on the operating system being booted.
+	
+	For MS-DOS the filename and parameters are:
+	
+	    BBLOCK\RPLSTART.COM ~
+	
+	For OS/2 1.21 the filename and parameters are:
+	
+	    BBLOCK\OS2121\OS2LDR ~ OS2LDR OS2KRNL RPLMFSD.SYS
+	
+	For OS/2 1.3 the filename and parameters are:
+	
+	    BBLOCK\OS213\OS2LDR ~ OS2LDR OS2KRNL RPLMFSD.SYS
+	
+	DRV Type
+	
+	DRV entries specify which device drivers should be used to form the boot block.
+	The filename field specifies the name of the device driver; it is relative to
+	rpldir. The first parameter field specifies parameters used by the device
+	driver. The second parameter field specifies any additional memory used by the
+	device driver (in decimal K).
+	
+	The MOVEABLE field must be either M or ~. M indicates that the driver is moveable
+	after initialization. If the driver can be moved after initialization, and its
+	memory requirements are less than for the original driver image, rplboot moves
+	the driver to reclaim the unused memory, and adjusts all interrupt vectors that
+	point into the driver's memory area. Some drivers cannot be moved, because they
+	record segment addresses that are correct during initialization, but not after
+	the driver has been moved. This field is new in LAN Manager 2.1.
+	
+	EXE Type
+	
+	EXE entries specify executables (.EXEs and .COMs) that are run during the boot
+	process. The filename is the name of the executable, and the parameters field
+	specifies arguments passed to the executable. As mentioned above, EXEs must be
+	specified in reverse order (the last one listed in the boot block configuration
+	file is the first one executed). The DRVs and EXEs of boot block configuration
+	files must be specified in the reverse of the order they would normally occur in
+	config.sys.
+	
+	BASE Type
+	
+	The BASE entry specifies the base address of the boot block. The filename is
+	actually a hexadecimal segment number (paragraph). There are no parameter
+	fields. There can be only one BASE entry; if none is specified, 00C0h is used as
+	the default base address.
+	
+	Boot Block Config File Examples
+	
+	Example DOS boot block config files:
+	
+	; DOS on IBM Token Ring
+	BASE D0H
+	RPL BBLOCK\RPLBOOT.SYS
+	LDR BBLOCK\RPLSTART.COM ~
+	DAT BBLOCK\NETBEUI\IBMTOK\PROTOCOL.INI
+	DRV BBLOCK\RPLDISK.SYS ~ 4 M
+	EXE BBLOCK\RPLPRO1.COM ~ 2 ~
+	EXE BBLOCK\RPLBIND2.EXE ~ ~
+	EXE BBLOCK\PROTMAN.EXE ~ ~
+	EXE BBLOCK\RPLBIND1.EXE ~ ~
+	DRV BBLOCK\TCPDRV.DOS /I:C:\LANMAN.DOS ~ ~
+	EXE BBLOCK\NETBEUI\NETBEUI.EXE ~ 10 ~
+	DRV BBLOCK\NDIS\IBMTOK.DOS ~ 2 M
+	DRV BBLOCK\PROTMAN.DOS /I:C:\LANMAN.DOS ~ M
+	
+	; DOS on Western Digital Ethernet
+	BASE D0H
+	RPL BBLOCK\RPLBOOT.SYS
+	LDR BBLOCK\RPLSTART.COM ~
+	DAT BBLOCK\NETBEUI\MACWD\PROTOCOL.INI
+	DRV BBLOCK\RPLDISK.SYS ~ 4 M
+	EXE BBLOCK\RPLPRO1.COM ~ 2 ~
+	EXE BBLOCK\RPLBIND2.EXE ~ ~
+	EXE BBLOCK\PROTMAN.EXE ~ ~
+	EXE BBLOCK\RPLBIND1.EXE ~ ~
+	DRV BBLOCK\TCPDRV.DOS /I:C:\LANMAN.DOS ~ ~
+	EXE BBLOCK\NETBEUI\NETBEUI.EXE ~ 10 ~
+	DRV BBLOCK\NDIS\MACWD.DOS ~ 4 ~
+	DRV BBLOCK\PROTMAN.DOS /I:C:\LANMAN.DOS ~ M
+	
+	Example OS/2 1.3 boot block config files:
+	
+	; OS/2 1.3 on IBM Token Ring
+	RPL BBLOCK\RPLBOOT.SYS
+	DAT BBLOCK\RPLMFSD.SYS
+	ORG 1000H
+	DAT BBLOCK\OS213\OS2KRNL
+	LDR BBLOCK\OS213\OS2LDR ~ OS2LDR OS2KRNL RPLMFSD.SYS
+	DAT BBLOCK\NETBEUI\IBMTOK\PROTOCOL.INI
+	EXE BBLOCK\RPLBIND2.EXE ~ ~
+	EXE BBLOCK\PROTMAN.EXE ~ ~
+	EXE BBLOCK\RPLBIND1.EXE ~ ~
+	EXE BBLOCK\NETBEUI\NETBEUI.EXE ~ 10 ~
+	DRV BBLOCK\NDIS\IBMTOK.DOS ~ 2 M
+	DRV BBLOCK\PROTMAN.DOS /I: ~ M
+	
+	; OS/2 1.3 on Western Digital Ethernet
+	RPL BBLOCK\RPLBOOT.SYS
+	DAT BBLOCK\RPLMFSD.SYS
+	ORG 1000H
+	DAT BBLOCK\OS213\OS2KRNL
+	LDR BBLOCK\OS213\OS2LDR ~ OS2LDR OS2KRNL RPLMFSD.SYS
+	DAT BBLOCK\NETBEUI\MACWD\OS2\PROTOCOL.INI
+	EXE BBLOCK\RPLBIND2.EXE ~ ~
+	EXE BBLOCK\PROTMAN.EXE ~ ~
+	EXE BBLOCK\RPLBIND1.EXE ~ ~
+	EXE BBLOCK\NETBEUI\NETBEUI.EXE ~ 10 ~
+	DRV BBLOCK\NDIS\MACWD.DOS ~ 4 ~
+	DRV BBLOCK\PROTMAN.DOS /I: ~ M
+	
+	OS/2 1.21 boot block config files are almost exactly the same as OS/2 1.3 boot
+	block config files. The only difference is that they specify bblock\os121 as the
+	location to find os2ldr and os2krnl. They even use the same rplmfsd.sys.
+	
+	
+	Additional query words: 2.10 rpl remoteboot boot block dosbb.cnf
+	
+	======================================================================
+	Keywords          :  
+	
+	=============================================================================
+	

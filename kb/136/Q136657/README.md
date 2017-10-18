@@ -1,0 +1,244 @@
+---
+layout: page
+title: "Q136657: Obtaining Files for Installing the SNA Win95 Client"
+permalink: kb/136/Q136657/
+---
+
+## Q136657: Obtaining Files for Installing the SNA Win95 Client
+
+	Article: Q136657
+	Product(s): Microsoft SNA Server
+	Version(s): WINDOWS:2.11,3.0
+	Operating System(s): 
+	Keyword(s): kbinterop kbnetwork kbsetup
+	Last Modified: 13-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 2.11, 3.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article contains the complete text of the README.TXT file included with the
+	Windows 95 Client for Microsoft SNA Server. It describes how to obtain the files
+	for installing the Windows 95 Client for Microsoft SNA Server.
+	
+	NOTE: The Windows 95 client is included with SNA Server 3.0 and SNA Server 2.11
+	sp1.
+	
+	MORE INFORMATION
+	================
+	
+	September 1995
+	
+	This note contains information on how to obtain the files for installing the
+	Windows 95 Client for Microsoft SNA Server.
+	
+	A. General Information
+	
+	A.1. Obtaining the Windows 95 Client for SNA Server
+	
+	The Windows 95 client files are available for downloading in a self-extracting
+	file, named SNAWIN95.EXE. This self-extracting file may be found along with the
+	README1.TXT file you are currently reading. These files have been placed in
+	several locations for the convenience of our customers. If the files have become
+	separated and you need to locate the SNAWIN95.EXE file, see Section C at the end
+	of this file.
+	
+	Note that SNAWIN95.EXE is less than 3 megabytes in size (in a compressed
+	format).
+	
+	A.2. Operating system considerations
+	
+	The Windows 95 client of SNA Server can be installed on computers running
+	Microsoft Windows 95 or later.
+	
+	For client computers running Microsoft Windows NT Workstation version 3.51 or
+	later, you can install either the Windows 95 client or the Windows NT client
+	(that was included with SNA Server versions 2.1 and 2.11), but not both at the
+	same time. The Windows 95 client is supported by Microsoft SNA Server version
+	2.1 or later. The Windows 95 client provides full support for existing 32-bit
+	SNA Server applications, using CPIC, APPC, LUA and FMI. Support for 16-bit SNA
+	applications on Windows 95 is provided by the Win3x client included with SNA
+	Server versions 2.1 and 2.11.
+	
+	A.3. Licensing
+	
+	Each Windows 95 client must be properly licensed to access an SNA Server. Client
+	licensing options on an SNA Server include Per Seat or Per Server.
+	
+	For more information on licensing, see the SNA Server version 2.11 README.WRI
+	file, Enhancements Guide, and Planning Guide.
+	
+	B. Downloading and Extracting the Files
+	
+	The Windows 95 Client for SNA Server can be installed from a shared network
+	drive, or from your local drive. To download the Windows 95 client and prepare
+	the files for installation, follow these steps:
+	
+	1. Create a folder from which to install the Windows 95 client files. (Share
+	  this folder with the appropriate users if you want users to install from a
+	  shared network drive).
+	
+	2. Download SNAWIN95.EXE (see Section C for locations) to the folder created in
+	  the previous step.
+	
+	3. To expand the files, open a command box (MS-DOS session), change to the
+	  folder where you downloaded the SNAWIN95.EXE file, and type
+	
+	  "snawin95.exe -d" (without the quotation marks)
+	
+	This will expand the files for the Windows 95 Client of SNA Server into the
+	current folder. The -d switch must be used because it enables the creation of
+	the appropriate subdirectories. When you issue the preceding command, a message
+	will popup to remind you to use the -d switch; it will also provide the option
+	of cancelling the self-extraction if you did not use the -d switch.
+	
+	For setup instructions, and additional information about the Windows 95 Client
+	for SNA Server, please see the README.HLP file that will be copied in Step 3
+	above to your local drive in the <snaroot>\system folder.
+	
+	A shortcut to the README.HLP file is also created at the time you run the Setup
+	program, and is called SNA Client for Windows 95 Release Notes. This icon will
+	be located on the program menu in the folder created for the SNA Client for
+	Windows 95. To print all topics in the Release Notes, select the book icon in
+	the Contents window and choose the Print button.
+	
+	C. Locating the SNAWIN95.EXE and README1.TXT Files
+	
+	The following information relates to locating the SNAWIN95.EXE file if it becomes
+	separated from this file.
+	
+	C.1 For MSN users: Microsoft SNA Server forum (MSSNA)
+	
+	To find the files on MSN:
+	
+	>From the Edit menu of The Microsoft Network screen (MSN Central), choose Go
+	to, then choose Other Location, and type mssna
+	
+	This will take you directly to the Microsoft SNA Server Forum. >From there,
+	click the following folders:
+	
+	    Microsoft SNA Server Product Information
+	      Technical Resources
+	        Windows 95 Client for SNA Server
+	
+	  or
+	
+	>From The Microsoft Network screen (MSN Central), choose the Categories
+	button, and then click the following icons or folders:
+	
+	   Computers & Software
+	     Computer Companies & Organizations
+	       Software Companies
+	         Microsoft
+	           Microsoft BackOffice & Windows NT Workstation
+	             Microsoft BackOffice Products
+	               Microsoft SNA Server Forum
+	                 Microsoft SNA Server Product Information
+	              Technical Resources
+	                     Windows 95 Client for SNA Server
+	
+	C.2 For CompuServe users: MS WinNT SNA forum (go MSSNA)
+	
+	To find the MS WinNT SNA forum on CompuServe:
+	
+	Choose the GO (green light) icon, and type mssna
+	
+	or
+	
+	>From the Services screen, choose the following folders:
+	
+	   Computers/Technology
+	     Software Forums
+	       Microsoft Connection
+	         Support Forums and Services
+	           US Product Support
+	             Microsoft BackOffice Products
+	               Microsoft WinNT SNA Forum
+	
+	C.3 For Internet World Wide Web users: http:\\www.microsoft.com
+	
+	To find the files on the World Wide Web:
+	
+	http:\\www.microsoft.com
+	
+	>From Microsoft's home page, choose the following:
+	
+	Products
+	 BackOffice
+	   Microsoft SNA Server
+	     Technical Resources
+	
+	C.4 For Internet FTP users: ftp://ftp.microsoft.com
+	
+	Note: You must have access to the internet to use FTP.
+	
+	To find the files using FTP:
+	
+	1. Start FTP.
+	
+	2. Open a connection by typing:
+	
+	  "open ftp.microsoft.com" (without the quotation marks)
+	
+	3. When prompted for a user name, type
+	
+	  "anonymous" (without the quotation marks)
+	
+	4. You will be prompted to type your email name for a password.
+	
+	5. To locate the file, type:
+	
+	  "cd bussys
+	  cd winnt
+	  cd sna-public
+	  dir" (without the quotation marks)
+	
+	  The SNAWIN95.EXE and README1.TXT files should be listed.
+	
+	6. To specify binary file transfer and download the files to the current
+	  directory, type
+	
+	  "binary
+	  get snawin95.exe
+	  get readme1.txt" (without the quotation marks)
+	
+	7. To close the connection and FTP, type
+	
+	  " bye" (without the quotation marks)
+	
+	C.5 For TechNet users: Available on a future update
+	
+	To find the files on the TechNet CD:
+	
+	>From the Contents window, open the following books or folders:
+	
+	BackOffice and Enterprise Systems
+	 MS BackOffice
+	   MS SNA Server
+	     Technical Notes
+	
+	C.6 For MSDN users: Available on a future update
+	
+	To find the files on the MSDN CD:
+	
+	The files will be placed on the Development Platform CD. Look for the files in
+	the What's New folder. To display the What's New folder, open the Development
+	Platform Installer, click on the Contents menu, and then click the List New
+	Products option.
+	
+	(September 7, 1995)
+	
+	Additional query words: prodsna readme1.txt
+	
+	======================================================================
+	Keywords          : kbinterop kbnetwork kbsetup 
+	Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ211
+	Version           : WINDOWS:2.11,3.0
+	
+	=============================================================================
+	

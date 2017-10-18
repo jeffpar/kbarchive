@@ -1,0 +1,104 @@
+---
+layout: page
+title: "Q320675: Event ID 3 Logged After You Restrict Access to LogFiles Folder"
+permalink: kb/320/Q320675/
+---
+
+## Q320675: Event ID 3 Logged After You Restrict Access to LogFiles Folder
+
+	Article: Q320675
+	Product(s): Internet Information Server
+	Version(s): 4.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you restart Internet Information Server (IIS), the following event is
+	logged in the event log:
+	
+	  Source: IISLOG
+	  Error: None
+	  Event ID: 3
+	
+	  Description: IIS Logging was unable to create the file
+	  C:\WINNT\System32\LogFiles\W3SVC1\ex020401.log. The data is the error.
+	
+	CAUSE
+	=====
+	
+	This error occurs if you restrict the permissions on the folder that contains
+	the log files (for example, if the Everyone group and the IUSR_<computer>
+	account do not have at least Change permissions on the folders in the
+	C:\WINNT\System32\LogFiles folder).
+	
+	You see this error only if the first request to the server is a Microsoft Active
+	Server Pages (ASP) page.
+	
+	RESOLUTION
+	==========
+	
+	A supported fix is now available from Microsoft, but it is only intended to
+	correct the problem that is described in this article. Apply it only to systems
+	that are experiencing this specific problem.
+	
+	To resolve this problem, contact Microsoft Product Support Services to obtain the
+	fix. For a complete list of Microsoft Product Support Services phone numbers and
+	information about support costs, visit the following Microsoft Web site:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	NOTE: In special cases, charges that are ordinarily incurred for support calls
+	may be canceled if a Microsoft Support Professional determines that a specific
+	update will resolve your problem. The usual support costs will apply to
+	additional support questions and issues that do not qualify for the specific
+	update in question.
+	
+	The English version of this fix has the file attributes (or later) that are
+	listed in the following table. The dates and times for these files are listed in
+	coordinated universal time (UTC). When you view the file information, it is
+	converted to local time. To find the difference between UTC and local time, use
+	the Time Zone tab in the Date and Time tool in Control Panel.
+	
+	  Date         Time   Version           Size     File name
+	  --------------------------------------------------------------
+	  30-Apr-2002  08:31  4.2.776.1         214,544  Adsiis.dll       
+	  30-Apr-2002  08:32  4.2.776.1         330,672  Asp.dll          
+	  30-Apr-2002  08:32  4.2.776.1          34,384  Clusiis4.dll     
+	  30-Apr-2002  08:31  4.2.776.1          55,392  Httpodbc.dll     
+	  30-Apr-2002  08:31  4.2.776.1          98,912  Iischema.dll     
+	  30-Apr-2002  08:30  4.2.776.1          63,984  Iislog.dll       
+	  30-Apr-2002  08:30  4.2.776.1         185,792  Infocomm.dll     
+	  30-Apr-2002  08:30  4.2.776.1          29,520  Iscomlog.dll     
+	  30-Apr-2002  08:31  4.2.776.1          38,256  Ssinc.dll        
+	  30-Apr-2002  08:31  4.2.776.1          25,360  Sspifilt.dll     
+	  30-Apr-2002  08:31  4.2.776.1         231,104  W3svc.dll        
+	  30-Apr-2002  08:30  4.2.776.1          88,032  Wam.dll
+	
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed that this is a problem in the Microsoft products that
+	are listed at the beginning of this article.
+	
+	Additional query words: logfiles directory
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbiisSearch kbiis400
+	Version           : :4.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

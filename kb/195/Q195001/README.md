@@ -1,0 +1,73 @@
+---
+layout: page
+title: "Q195001: Pinball Arcade: Computer Hangs When You Return to Startup Screen"
+permalink: kb/195/Q195001/
+---
+
+## Q195001: Pinball Arcade: Computer Hangs When You Return to Startup Screen
+
+	Article: Q195001
+	Product(s): Microsoft Home Games
+	Version(s): WINDOWS:1.0
+	Operating System(s): 
+	Keyword(s): kb3rdparty kbdisplay kbimu msgamekbfaq
+	Last Modified: 15-MAR-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Pinball Arcade, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you press ESC to quit a game on any table in Pinball Arcade, and then click
+	Yes when you are prompted to exit to the game hall, the game screen may become
+	distorted and your computer may stop responding (hang).
+	
+	CAUSE
+	=====
+	
+	This behavior can occur if both of the following conditions are true:
+	
+	- A Hercules Stingray 128/3D Series display adapter is installed in your
+	  computer.
+	
+	- You are using version 1.17.2059 or earlier of the Hercules video driver.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, download and install the latest video driver for Hercules
+	Stingray 128/3D Series display adapters from the following Hercules Web site:
+	
+	  http://www.hercules.com
+	
+	If the issue continues to occur, download and install the Single Planar Reference
+	driver for Voodoo Rush-based display adapters from the following 3DFx Web site:
+	
+	  http://www.3dfx.com
+	
+	MORE INFORMATION
+	================
+	
+	The third-party contact information included in this article is provided to help
+	you find the technical support you need. This contact information is subject to
+	change without notice. Microsoft in no way guarantees the accuracy of this
+	third-party contact information.
+	
+	The third-party products discussed in this article are manufactured by vendors
+	independent of Microsoft; we make no warranty, implied or otherwise, regarding
+	these products' performance or reliability.
+	
+	Additional query words: 1.00 msgame pin ball crash freeze
+	
+	======================================================================
+	Keywords          : kb3rdparty kbdisplay kbimu msgame kbfaq
+	Technology        : kbGamesSearch kbPinballArc kbArcadeSearch
+	Version           : WINDOWS:1.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

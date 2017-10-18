@@ -1,0 +1,179 @@
+---
+layout: page
+title: "Q128985: INFO: Comparing SNA client TCP/IP named pipes vs sockets"
+permalink: kb/128/Q128985/
+---
+
+## Q128985: INFO: Comparing SNA client TCP/IP named pipes vs sockets
+
+	Article: Q128985
+	Product(s): Microsoft SNA Server
+	Version(s): WINDOWS:2.1,2.11,3.0,4.0
+	Operating System(s): 
+	Keyword(s): kbinterop kbnetwork sna4
+	Last Modified: 13-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 2.1, 2.11, 3.0, 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The TCP/IP windows sockets interface was added in SNA Server 2.1 and is
+	configured during SNA Server client setup:
+	
+	- Microsoft Networking (named pipes)
+	
+	- Novell Netware (native IPX/SPX)
+	
+	- Banyan VINES (through Banyan IP)
+	
+	- TCP/IP (through windows sockets)
+	
+	When the Microsoft TCP/IP protocol is installed onto a Windows 3.1, Windows for
+	Workgroups 3.11, Windows 95 or Windows NT computer, the SNA Server client can
+	communicate to the server over:
+	
+	- Microsoft Networking (named pipes over TCP/IP)
+	
+	  -or-
+	
+	- TCP/IP (over the Windows sockets interface)
+	
+	The TCP/IP windows sockets interface was added to SNA Server 2.1 and is the
+	recommended SNA Server client connection method for customers using the TCP/IP
+	transport. NOTE: To use TCP/IP sockets, the SNA Server client software requires
+	that the TCP/IP transport support the Windows Sockets version 1.1 specification.
+	TCP/IP sockets provides better performance and better reliability when
+	connecting to servers across routed IP networks.
+	
+	This article compares these two methods of connecting from an SNA Server client.
+	
+	MORE INFORMATION
+	================
+	
+	Named Pipes over TCP/IP
+	-----------------------
+	
+	When communicating over named pipes, the SNA Server client opens a named pipe
+	resource (\\server\PIPE\...) which is created by the SNA Server. A named pipe is
+	an interprocess communication facility supported by the client redirector (that
+	is, Windows for Workgroups protected mode redirector) and the Windows NT Server.
+	The SNA Server client and server send messages to each other over this named
+	pipe.
+	
+	As with shared file and printer connections, named pipe session traffic flows
+	over a NetBIOS session between the client redirector and the Windows NT server
+	using the "Server Message Block" (SMB) protocol. The following illustrates the
+	message flow:
+	
+	    SNA Client         <- Named Pipe ->           SNA Server
+	
+	    Redirector   <- SMB over NetBIOS session ->   NT Server
+	
+	    TCP/IP          <- TCP/IP connection ->       TCP/IP
+	
+	    Network card <---------------------------->   Network card
+	
+	A typical message packet would include the following information:
+	
+	     [ IP | TCP [ NetBios [ SMB ( SNA application data ) ] ] ]
+	
+	Disadvantages of Using Named Pipes
+	----------------------------------
+	
+	The client redirector and Windows NT server process all messages passed between
+	the SNA Server client and the server. All named pipe messages are formatted
+	within "SMB" requests by the client redirector and NT server which flow over a
+	NetBios session.
+	
+	Each NetBios session requires "keep-alive" messages to flow between the client
+	redirector and Windows NT server. These NetBIOS level acknowledgments lead to
+	network overhead, and the possibility of NetBIOS-level timeout conditions when
+	traveling across a routed IP network.
+	
+	A NetBIOS session over TCP/IP requires NetBIOS-to-IP address name resolution,
+	requiring a client LMHOSTS file entry for each server, or a WINS server to
+	provide this name resolution. DNS servers don't provide this name resolution.
+	
+	Since each SNA Server client has one outstanding read request pending on the
+	sponsor connection, and one read pending on the SNA application session, Windows
+	NT server resources are required to handle these pending I/O requests even when
+	the SNA client session is idle.
+	
+	Advantages of Using Named Pipes
+	-------------------------------
+	
+	Windows NT user validation is performed by the client redirector and the Windows
+	NT server (as part of the SMB protocol). This allows the user's initial network
+	login to be used.
+	
+	TCP/IP Sockets
+	--------------
+	
+	When communicating over TCP/IP sockets, the SNA Server client opens a TCP/IP
+	socket number created by the SNA Server. A socket is a session- oriented
+	interprocess communication facility supported directly over the TCP/IP
+	transport. The following illustrates the message flow:
+	
+	    SNA Client         <- TCP/IP socket ->         SNA Server
+	
+	    TCP/IP           <- TCP/IP connection ->       TCP/IP
+	
+	    Network card  <---------------------------->   Network card
+	
+	A typical message packet includes the following information:
+	
+	     [ IP | TCP ( SNA application data ) ]
+	
+	Advantages of Using TCP/IP Sockets
+	----------------------------------
+	
+	The SNA Server client and server communicate directly over the Windows sockets
+	interface, bypassing NetBIOS, the SMB protocol, and overhead introduced using
+	the named pipes interface.
+	
+	TCP/IP name-to-IP address resolution is provided by the client HOSTS file, DNS
+	server, or WINS server
+	
+	TCP/IP session keep-alive timeout processing is handled directly by the SNA
+	Server client and server. The SNA Server WatchDogTimeOut setting controls the
+	timeout value, as described in the SNA Server 2.1 readme file (the default is 60
+	seconds).
+	
+	The SNA Server Win 3.x client uses a larger buffer size to exchange data with the
+	server than does the SNA client named pipe interface. Also, data transfer is
+	performed using byte stream protocol which makes better use of network resources
+	(named pipes uses message mode protocol).
+	
+	
+	Disadvantages of Using TCP/IP Sockets
+	-------------------------------------
+	
+	User authentication is handled by the SNA Server client and server. This requires
+	the user to "login" to the Windows NT network when the SNA client software is
+	loaded. This client login can be automated to some degree, as described on page
+	208 of the SNA Server 2.1 Reference Guide. In SNA Server 2.11, more enhancements
+	have been made in this area. For additional information, see the following
+	article in the Microsoft Knowledge Base:
+	
+	  Q130854 TITLE :Automating the SNA Server Win 3.x Client Login Process
+	
+	NOTE: Windows 95 and Windows NT support secure programmatic methods to
+	impersonate the currently logged on user. Therefore, there is no need to
+	automate the client logon request when using the SNA Server Windows 95 or
+	Windows NT client software.
+	
+	Additional query words: prodsna tcp/ip sockets named pipes snafaq
+	
+	======================================================================
+	Keywords          : kbinterop kbnetwork sna4 
+	Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ211 kbSNAServ400 kbSNAServ210
+	Version           : WINDOWS:2.1,2.11,3.0,4.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

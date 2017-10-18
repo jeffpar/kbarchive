@@ -1,0 +1,91 @@
+---
+layout: page
+title: "Q141847: PPT7: New Slide Dialog Box (AutoLayout) Does Not Appear"
+permalink: kb/141/Q141847/
+---
+
+## Q141847: PPT7: New Slide Dialog Box (AutoLayout) Does Not Appear
+
+	Article: Q141847
+	Product(s): Microsoft PowerPoint for Windows
+	Version(s): WINDOWS:7.0
+	Operating System(s): 
+	Keyword(s): kbusage
+	Last Modified: 16-APR-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft PowerPoint for Windows 95, version 7.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you try to start a new presentation, the New Slide dialog box (where you
+	can choose an AutoLayout) does not automatically appear.
+	
+	CAUSE
+	=====
+	
+	There are two reasons this behavior can occur:
+	
+	- You disabled the Show New Slide Dialog option in the Options dialog box.
+	
+	  -or-
+	
+	- The Blank Presentation.pot file or the template you are using to create the
+	  presentation already has a slide in it.
+	
+	  If you create a new presentation based on a presentation that already has a
+	  slide, the first slide will have the same AutoLayout as the first slide of
+	  the template. Blank Presentation.pot is the template that PowerPoint uses
+	  unless you select a different template.
+	
+	RESOLUTION
+	==========
+	
+	Check to see if the Show New Slide Dialog option is selected:
+	
+	1. On the Tools menu, click Preferences.
+	
+	2. Click the General tab.
+	
+	3. See if the Show New Slide Dialog check box is selected. If it is not checked,
+	  the New Slide dialog box will not appear.
+	
+	If this box is checked but the New Slide dialog box does not appear when you try
+	to create a new presentation, follow these steps:
+	
+	1. On the File menu, click Open.
+	
+	2. In the Files Of Type list, click Presentation Templates (*.pot).
+	
+	3. Choose the file called Blank Presentation.pot located in the Microsoft
+	  PowerPoint:Templates folder, and then click Open.
+	
+	4. On the Edit menu, click Delete Slide.
+	
+	5. On the File menu, click Save As.
+	
+	6. In the Save As Type list, click Presentation Templates (*.pot).
+	
+	7. Click the existing Blank Presentation.pot file in the folder list box (so
+	  that it appears in the File Name box).
+	
+	8. Click Save, and then click Yes.
+	
+	You can also use these steps to delete the slides from other templates that
+	contain slides.
+	
+	Additional query words: 7.00 ppt95 ppt7 PowerPoint 95 powerpt powerpnt autolayout blank presentation.pot design template windows ppt8
+	
+	======================================================================
+	Keywords          : kbusage 
+	Technology        : kbPowerPtSearch kbPowerPt700 kbZNotKeyword2 kbPowerPt700Search
+	Version           : WINDOWS:7.0
+	Hardware          : MAC x86
+	Issue type        : kbprb
+	
+	=============================================================================
+	

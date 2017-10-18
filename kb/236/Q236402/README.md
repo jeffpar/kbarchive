@@ -1,0 +1,220 @@
+---
+layout: page
+title: "Q236402: Microsoft Systems Management Server 2.0 Training Kit Corrections"
+permalink: kb/236/Q236402/
+---
+
+## Q236402: Microsoft Systems Management Server 2.0 Training Kit Corrections
+
+	Article: Q236402
+	Product(s): Microsoft Press
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbdocfix kbdocerr
+	Last Modified: 26-SEP-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- MSPRESS Microsoft Systems Management Server 2.0 Training Kit ISBN 1-57231-834-1 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article contains comments, corrections, and information about known errors
+	relating to the Microsoft Press book Microsoft Systems Management Server 2.0
+	Training Kit, ISBN 1-57231-834-1.
+	
+	The following topics are covered:
+	
+	- CD-ROM: PowerPoint Presentation References "Windows NT 5.0"
+	
+	- CD-ROM: Broken Links In Files
+	
+	- CD-ROM: NT4SP4 Installs More Than SP4 From CD-ROM
+	
+	- CD-ROM: SMS Evaluation Software May Not Install Properly
+	
+	- CD-ROM: SMS Evaluation Software Does Not Expire
+	
+	- CD-ROM: No Sound In Demos
+	
+	- Page 44: Corrections Needed In User Connections Section
+	
+	- Page 105: Typo In The Last Sentence
+	
+	- Page 110, Paragraph 2: Registry Path Is Incorrect
+	
+	- Page 154: Incorrect File Location
+	
+	- Page 423: Exercise Requires Full Version of Software
+	
+	MORE INFORMATION
+	================
+	
+	CD-ROM: PowerPoint Presentation References "Windows NT 5.0"
+	-----------------------------------------------------------
+	
+	The PowerPoint presentation included on the SMS 2.0 Supplementary course
+	materials CD makes several references to "Windows NT 5.0" in chapter 12. You
+	will see this as part of the presentation text and in at least one slide title.
+	These references should be changed to "Windows 2000."
+	
+	
+	CD-ROM: Broken Links In Files
+	-----------------------------
+	
+	There are broken links within two of the documents on the SMS 2.0 Supplementary
+	course materials CD, as follows:
+	
+	Chapt01\Articles\pressreleases.htm links to the missing files:
+	\others.htm and \standards.htm
+	
+	Chapt07\Articles\Q142641.doc contains a link to an external source:
+	ftp://info.cert.org/pub/cert_advisories. This link cannot be opened unless you
+	have an open and active connection to the Internet.
+	
+	
+	CD-ROM: NT4SP4 Installs More Than SP4 From CD-ROM
+	-------------------------------------------------
+	
+	The NT4SP4.exe included on the SMS 2.0 Supplemental Course materials CD, as well
+	as the SP4 included in the autorun install on the SMS 2.0 Evaluation CD,
+	installs more than Service Pack 4.
+	
+	NT4SP4.exe is in the Chapt04\Exfiles\Ex20 folder of the supplemental course
+	materials CD and in the NTQFE\NT4SP4 folder of the SMS Evaluation CD.
+	
+	When the user runs this executable, it installs NT4 Service Pack 4, IE4.01SP1,
+	and MDAC, with no option or opportunity to install just one or a combination of
+	these applications.
+	
+	
+	CD-ROM: SMS Evaluation Software May Not Install Properly
+	--------------------------------------------------------
+	
+	There may be instances where the Systems Management Server 2.0 software will not
+	install properly. These issues have been addressed in the SMS 2.0 Service Pack 1
+	(SP1). However, you will be unable to install SP1 if you are running the
+	evaluation version of SMS 2.0. The service pack requires the full retail version
+	of the software.
+	
+	If you experience any of the issues listed in the following article, you must
+	install a retail copy of SMS 2.0, then apply the service pack.
+	
+	For a complete list of the issues that SP1 fixes, please review the following
+	Knowledge Base article on the Microsoft Web site:
+	
+	  Q235991 SMS: Systems Management Server 2.0 Service Pack 1 Fixlist
+	
+	
+	CD-ROM: SMS Evaluation Software Does Not Expire
+	-----------------------------------------------
+	
+	The copy of Systems Management Server 2.0 included on the SMS 120-day Evaluation
+	CD does not explicitly expire after 120 days. SQL Server 7.0, which is also
+	installed during the SMS setup does expire after 120 days. This renders SMS
+	nonfunctional.
+	
+	The expiration of SQL Server 7.0 can be verified by an event recorded in the
+	Windows NT Event Viewer under the Application type of Event.
+	
+	
+	CD-ROM: No Sound In Demos
+	-------------------------
+	
+	There is no sound to accompany the demonstration files included in the Chapter
+	folders.
+	
+	The omission of sound was by design to ensure that all content was accessible,
+	regardless of whether the computer was configured to provide audio. No sound is
+	necessary to fully understand the concepts being demonstrated.
+	
+	Correction: Add this information to the README.TXT file on the CD-ROM.
+	
+	
+	Page 44: Corrections Needed In User Connections Section
+	-------------------------------------------------------
+	
+	On page 44, in the first paragraph change:
+	"A primary site server uses a minimum of 40 user connections for installation and
+	operation. Above the minimum of 40 connections, the first five concurrently
+	operating SMS Administrator consoles require two user connections each. If more
+	than five SMS Administrator consoles will be running on your site concurrently,
+	grant an additional five user connections in SQL Server for each console."
+	
+	To:
+	"Systems Management Server 2.0 requires 50 user connections for the use of the
+	site server and the Systems Management Server services that run on the server
+	plus 5 user connections for each SMS Administrator console that will run
+	concurrently."
+	
+	For more information, please see the following article in the Microsoft Knowledge
+	Base:
+	
+	  Q199249 SMS: How to Configure SQL Server User Connections for SMS 2.0
+	
+	
+	Page 105: Typo In The Last Sentence
+	-----------------------------------
+	
+	On page 105, in the last sentence in the third bulleted item, change u.Ebutart to
+	inventory.
+	
+	The last sentence should read:
+	"Since the recurrence pattern is configured for the last day of the month,
+	inventory day must be the last day of the month."
+	
+	
+	Page 154: Incorrect File Location
+	---------------------------------
+	
+	On page 154, in step 17, the correct location for the file SP4I386.exe should be
+	"cdrom drive:\msie\en\nt4sp4\I386", not "cdrom drive:\chapt04\exfiles\ex20".
+	
+	
+	Page 110, Paragraph 2: Registry Path Is Incorrect
+	-------------------------------------------------
+	
+	On page 110, paragraph 2, the registry path is incorrect.
+	
+	Change:
+	"HKLM\SW\MS\SMS\CLIENT\SITES\sitecode\CLIENT COMPONENTS\HARDWARE INVENTORY
+	AGENT"
+	
+	To:
+	"HKLM\SW\MS\SMS\Client\Client Components\Hardware Inventory Agent"
+	
+	
+	Page 423: Exercise Requires Full Version of Software
+	----------------------------------------------------
+	
+	On Page 423, Exercise 47 requires the full version of SMS 2.0. The evaluation
+	software included with this training kit does not have SMS Trace or the support
+	directory needed for the exercise.
+	
+	Change Step 1 at the bottom of the page from:
+	1. Insert the SMS 2.0 Installation CD-ROM.
+	
+	To:
+	1. Insert the installation CD-ROM for the full version of SMS 2.0. (The
+	installation CD-ROM for the 120-day Evaluation Edition of SMS 2.0 can not be
+	used for this exercise.)
+	
+	
+	Microsoft Press is committed to providing informative and accurate books. All
+	comments and corrections listed above are ready for inclusion in future
+	printings of this book. If you have a later printing of this book, it may
+	already contain most or all of the above corrections.
+	
+	Additional query words: TKBOOK SMS 1-57231-834-1
+	
+	======================================================================
+	Keywords          : kbdocfix kbdocerr 
+	Technology        : kbMSPressSearch
+	Version           : :
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

@@ -1,0 +1,107 @@
+---
+layout: page
+title: "Q234638: XADM: Server Location and Public Folder Access"
+permalink: kb/234/Q234638/
+---
+
+## Q234638: XADM: Server Location and Public Folder Access
+
+	Article: Q234638
+	Product(s): Microsoft Exchange
+	Version(s): winnt:5.0,5.5
+	Operating System(s): 
+	Keyword(s): exc5 exc55
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 5.0, 5.5 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes the concept of server location in Exchange Server and
+	explains how to use server location to better control public folder access.
+	
+	MORE INFORMATION
+	================
+	
+	When you design a large Exchange Server organization, you generally want to
+	create and maintain fewer, larger sites. If you keep the number of sites to a
+	minimum, it is easier to administer the Exchange Server organization. However,
+	public folder access can become an issue in a large Exchange Server
+	organization.
+	
+	You can logically group servers in a site into smaller groups by creating server
+	locations. Specifically, server locations allow more control over public folder
+	access in a large Exchange Server organization. You can also use server
+	locations to limit the users who can gain access to the services of a
+	connector.
+	
+	A typical way to implement server locations in an Exchange Server site is to
+	place Exchange Server computers on the same subnet in the same server location.
+	
+	NOTE: Server locations only apply within a site, not between sites.
+	
+	To create a server location for an Exchange Server computer:
+	
+	1. In the Microsoft Exchange Server Administrator program, click the server
+	  name.
+	
+	2. On the File menu, click Properties, and then click the General tab.
+	
+	3. In the Server Location box, type a new location name to replace the default
+	  none.
+	
+	4. Click Apply. When the following question is displayed
+	
+	  Are you sure you want to create the new location '<name_of_new_entry>'?
+	
+	  click Yes.
+	
+	Further Considerations on Public Folder Access
+	----------------------------------------------
+	
+	The order in which users in a single site gain access to public folders is not
+	totally random. Users are assigned to a default public folder server. When a
+	user needs access to the contents of a public folder, the default server is
+	checked first. If the default server does not respond to the request, the
+	modulus server, which is a randomly assigned public folder server, is the next
+	priority. The remaining servers that are available to the user are those servers
+	that have currently established remote procedure call (RPC) connections,
+	followed by all of the remaining public folder servers in the site.
+	
+	If the site is large and contains network connections that have bandwidth issues,
+	the public folder connection process that is outlined above may be inefficient.
+	In this case, you can use server locations to direct connection requests and use
+	the best possible network route.
+	
+	Additional References on Server Location
+	----------------------------------------
+	
+	For additional information about the algorithm that is used to determine public
+	folder access referrals, click the article number below to view the article in
+	the Microsoft Knowledge Base:
+	
+	  Q154941 XADM: How to Determine Which Public Folder Replica is Used
+	
+	For additional information about the concept of server location in Exchange
+	Server and how you can use server location to limit the users in a site who can
+	gain access to the services of a connector, click the article number below to
+	view the article in the Microsoft Knowledge Base:
+	
+	  Q234639 XFOR: Server Location and the Internet Mail Service and Other
+	  Exchange Server Connectors
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : exc5 exc55 
+	Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+	Version           : winnt:5.0,5.5
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

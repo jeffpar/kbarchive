@@ -1,0 +1,107 @@
+---
+layout: page
+title: "Q89513: LAN Man 2.1 Test Summary (DigiBoard DigiCHANNEL C/X MCA)"
+permalink: kb/089/Q89513/
+---
+
+## Q89513: LAN Man 2.1 Test Summary (DigiBoard DigiCHANNEL C/X MCA)
+
+	Article: Q89513
+	Product(s): Microsoft LAN Manager
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 30-JUL-2001
+	
+	SUMMARY
+	=======
+	
+	The following are the test results for the DigiBoard DigiCHANNEL C/X System, MCA
+	Host Adapter multiport communication board. The test was conducted as part of
+	the Microsoft Compatibility Lab (MCL) peripheral test for LAN Manager version
+	2.1:
+	
+	MORE INFORMATION
+	================
+	
+	Manufacturer
+	------------
+	
+	DigiBoard
+	6751 Oxford St.
+	Minneapolis, MN 55426
+	(612) 943-9020
+	
+	Date Tested
+	-----------
+	
+	5/19/92
+	
+	Multiport Communication Board
+	-----------------------------
+	
+	Model:                 DigiCHANNEL C/X System, MCA Host Adapter
+	Serial number:         551773
+	I/O port:              F1F0h
+	Memory address:        FC0000h
+	
+	Board Switch Settings
+	---------------------
+	
+	No switches on this board.
+	
+	Other Hardware Supplied
+	-----------------------
+	
+	Connector for port board:        DIGICHANNEL C/CON - 16 (DB25)
+	Part number:                     50000043 REV.F
+	
+	Software and Drivers
+	--------------------
+	
+	OS/2 device driver filename:     XALL.SYS
+	File date:                       11/20/91
+	Version:                         1.3.2
+	
+	Line Added to CONFIG.SYS
+	------------------------
+	
+	device=c:\digi\xall.sys /a:Q /n:3 /p:f1f0 /m:fc0000 /t:m10
+	
+	Testing Environment
+	-------------------
+	
+	Operating system:        OS/2 1.3
+	Network:                 LAN Manager 2.1
+	Test platforms:          386/25 6 MB RAM
+	Bus specification:       MCA
+	Network topology:        Ethernet
+	Server file system:      FAT
+	
+	Final Test Results
+	------------------
+	
+	Test Focus                  Pass     Anomalies and/or Workarounds
+	----------                  ----     ----------------------------
+	
+	Installation                Yes      The server and all RAS clients
+	
+	                                    are using a null modem cable
+	                                    running at 9600 bps. Higher
+	                                    transmission rates are available
+	                                    using the DigiBoard, but are not
+	                                    recommended for the RAS service.
+	
+	Remote Access Admin         Yes
+	Remote Access Server        Yes
+	Network Functionality       Yes
+	Stress                      Yes
+	Named Pipes                 Yes
+	
+	Additional query words: certification 2.1 2.10
+	
+	======================================================================
+	Keywords          :  
+	
+	=============================================================================
+	

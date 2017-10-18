@@ -1,0 +1,122 @@
+---
+layout: page
+title: "Q172899: SMS: Despooler Instruction (.SNI) Files Are Not Processed"
+permalink: kb/172/Q172899/
+---
+
+## Q172899: SMS: Despooler Instruction (.SNI) Files Are Not Processed
+
+	Article: Q172899
+	Product(s): Microsoft Systems Management Server
+	Version(s): 1.2
+	Operating System(s): 
+	Keyword(s): kbenv kbDespooler smsdespooler
+	Last Modified: 22-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server version 1.2 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	After sending a Run Command on Workstation job to Systems Management Server
+	clients, the Package Command Manager (PCM) creates an .sni file to report that
+	the package has been successfully sent.
+	
+	If the time is set incorrectly on the client workstation, the .sni file that PCM
+	creates may not be processed.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Systems Management Server
+	version 1.2. This problem has been corrected in the latest U.S. service pack for
+	Systems Management Server version 1.2. For information on obtaining the service
+	pack, query on the following word in the Microsoft Knowledge Base (without the
+	spaces):
+	
+	  S E R V P A C K
+	
+	WORKAROUND
+	==========
+	
+	To work around this problem, contact Microsoft Technical Support to obtain the
+	following fix, or wait for the next Systems Management Server 1.2 s service
+	pack.
+	
+	This fix should have the following time stamp:
+	
+	  6/22/98  5:34pm               249KB SMSINST.DLL (Intel)
+	  6/22/98  5:36pm               470KB SMSINST.DLL (Alpha)
+	
+	To install the hotfix, perform the following steps on the Systems Management
+	Server site server:
+	
+	1. Stop the SMS_EXECUTIVE Service.
+	
+	2. In the <SMS_root_directory>\Site.srv\<platform>.bin directory on
+	  the site server, replace the Smsinst.dll file with the version obtained from
+	  the hotfix.
+	
+	3. Restart the SMS_EXECUTIVE Service.
+	
+	The Smsinst.dll file can be replaced automatically (after stopping the Executive)
+	by running Hotfix.exe with the appropriate Hotfix.ini file for your platform.
+	
+	
+	MORE INFORMATION
+	================
+	
+	For those .sni files that were created by a workstation whose time is set to a
+	future date and time, the Despooler service that processes the .sni files will
+	record something similar to the following in the Despool.log file:
+	
+	Instruction D:\SMS\site.srv\despoolr.box\receive\sni00001.sni won't be processed
+	till 05/13/01 18:04:37 SMS_DESPOOLER 07/27/97
+	
+	As a result, the Job Status details of this job will not show that this client
+	has run this package, even though it actually has done so.
+	
+	To determine which client computer has its time set incorrectly, open the .sni
+	file in a text editor such as Notepad. The SMSID of the client computer that
+	created the .sni file is the second sitecode + identifier listed.
+	
+	In the following example, the JOBID is VAQ0000F and the SMSID is VAQ00005:
+	
+	      MICROSOFT|SMS|DOMAIN_COMMISSAR_WIREMOVE VAQ VAQ0000F   FV  FVx   x
+	      FV  FVx   x   VAQ00005
+	
+	You can use the Systems Management Server Administrator program to cross-
+	reference the client's SMSID to its computer name.
+	
+	In some cases, the Despooler service will create duplicates of the .sni file(s)
+	that it cannot process. This may result in the accumulation of a very large
+	number of .sni files in the SMS\Site.Srv\Despoolr.box\Receive directory.
+	
+	You can move these duplicate files to a "temp" directory and delete them. It is
+	important that you only move or delete those .sni files that have a future
+	date.
+	
+	To avoid this problem, ensure that each client workstation has the time set
+	correctly. Adding a simple NET TIME statement such as the following to the
+	user's logon script can accomplish this quickly:
+	
+	      NET TIME /Domain:<login domain> /SET /Y
+	
+	If a NET TIME statement is used, it should be run after the Systems Management
+	Server logon script.
+	
+	Additional query words: prodsms machine utility login
+	
+	======================================================================
+	Keywords          : kbenv kbDespooler smsdespooler 
+	Technology        : kbSMSSearch kbSMS120
+	Version           : :1.2
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

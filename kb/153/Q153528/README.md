@@ -1,0 +1,124 @@
+---
+layout: page
+title: "Q153528: SET PRINTER TO Enhancements in Visual FoxPro for Macintosh"
+permalink: kb/153/Q153528/
+---
+
+## Q153528: SET PRINTER TO Enhancements in Visual FoxPro for Macintosh
+
+	Article: Q153528
+	Product(s): Microsoft FoxPro
+	Version(s): MACINTOSH:3.0b
+	Operating System(s): 
+	Keyword(s): kb3rdparty
+	Last Modified: 15-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The SET PRINTER TO command has been enhanced in Visual FoxPro for the Macintosh.
+	Its functionality differs depending on whether or not QuickDraw GX is installed.
+	This article describes the new enhancements that are not described in the Visual
+	FoxPro Help file.
+	
+	Note: Since Macintosh OS 8 no longer supports QuickDraw GX printer drivers or
+	printing extensions, the SET PRINTER TO NAME "<QuickDraw GX printer driver
+	name>" command no longer functions in Visual FoxPro with Macintosh OS 8. For
+	more information on the changes to QuickDraw GX with OS 8 refer to the About
+	QuickDraw GX read me file in the Mac OS Read Me folder on the OS 8 CD-ROM.
+	
+	MORE INFORMATION
+	================
+	
+	Without QuickDraw GX
+	--------------------
+	
+	A new feature of the SET PRINTER TO command that is available only when QuickDraw
+	GX is not installed is the ability to set all the page setup options for the
+	current printer back to their default values. The command to do this is:
+	
+	     SET PRINTER TO DEFAULT
+	
+	To test this, try these steps:
+	
+	1. Make sure a printer is selected in Chooser.
+	
+	2. Start Visual FoxPro.
+	
+	3. Choose the Page Setup command from the File menu. Change the settings to
+	  something other than what they are. Choose OK.
+	
+	4. In the Command window, type:
+	
+	     SET PRINTER TO DEFAULT.
+	
+	5. Go back into Page Setup, and observe that all the settings are back to what
+	  they were originally (before they were changed in step 3).
+	
+	Note that when QuickDraw GX is not used, Visual FoxPro always uses the printer
+	that was selected in Chooser, which is the default printer of the system.
+	
+	With QuickDraw GX
+	-----------------
+	
+	NOTE: QuickDraw GX is manufactured by a vendor independent of Microsoft; we make
+	no warranty, implied or otherwise, regarding the performance or reliability of
+	QuickDraw GX.
+	
+	The SET PRINTER TO enhancements with QuickDraw GX loaded allow more control over
+	the selection of the printer to be used. These enhancements work with the
+	current versions of QuickDraw GX (this article was tested with version 1.1.2).
+	Future changes to the Macintosh operating system and QuickDraw GX may cause
+	these enhancements to stop functioning.
+	
+	With QuickDraw GX, different printers are set up as icons on the Macintosh
+	desktop. These printers have names that can be referenced in Visual FoxPro.
+	These names can be used with the SET PRINTER TO NAME command to redirect a a
+	Visual FoxPro print job to a different printer.
+	
+	For examaple, on the Macintosh desktop, there may be an ImageWriter GX printer
+	and a LaserWriter with name of 4SI@2253. In Visual FoxPro the following commands
+	can be used to switch the current printer:
+	
+	     SET PRINTER TO NAME "ImageWriter GX"
+	     SET PRINTER TO NAME "4SI@2253"
+	
+	The first command directs Visual FoxPro's print jobs to the ImageWriter GX
+	printer, and the second directs print jobs to the 4SI printer by way of the
+	LaserWriter GX printer driver.
+	
+	NOTE: The names of the printers setup on the desktop are case sensitive in the
+	SET PRINTER TO NAME "<printer name>" command. The quotation marks are
+	optional if the printer name does not have spaces in it.
+	
+	With QuickDraw GX, there is a default printer for the Macintosh system. The icon
+	that shows on the desktop for the default printer has a thick black border. In
+	Visual FoxPro, if the Visual FoxPro printer is changed with the SET PRINTER TO
+	NAME <printer name> command, the SET PRINTER TO DEFAULT command will set
+	the Visual FoxPro printer back to the printer that is the default for the
+	Macintosh system.
+	
+	You can use the SET("Printer",2) command to determine which printer Visual FoxPro
+	will print to. To see this in action, enter the following code in the Visual
+	FoxPro Command window:
+	
+	     ? SET("Printer",2)
+	     SET PRINTER TO NAME "ImageWriter GX"
+	     ? SET("Printer",2)
+	     SET PRINTER TO DEFAULT
+	
+	Additional query words: VFoxMac
+	
+	======================================================================
+	Keywords          : kb3rdparty 
+	Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac
+	Version           : MACINTOSH:3.0b
+	
+	=============================================================================
+	

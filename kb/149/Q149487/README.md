@@ -1,0 +1,134 @@
+---
+layout: page
+title: "Q149487: BUG: Mouse Captured After Clicking DBGrid Column Header"
+permalink: kb/149/Q149487/
+---
+
+## Q149487: BUG: Mouse Captured After Clicking DBGrid Column Header
+
+	Article: Q149487
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 4.0
+	Operating System(s): 
+	Keyword(s): kbVBp400kbbuglist
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Clicking a column header in a DBGrid control of a Visual Basic program causes
+	the mouse to remain inside the borders of the column headers. The program only
+	responds to keyboard commands when the mouse cursor is trapped in the column
+	header.
+	
+	WORKAROUND
+	==========
+	
+	In order to work around the problem it is possible to add the following code to
+	the project. Because this problem should not affect the compiled executable, it
+	is possible to remove the workaround before debugging.
+	
+	1. Add the following code to the General Declaration section of the form:
+	
+	        #If Win32 Then
+	        Private Declare Function GetWindowRect Lib "user32" _
+	        (ByVal hWnd As Long, lpRect As RECT) As Long
+	        Private Declare Function ClipCursor Lib "user32" (lpRect As Any) _
+	        As Long
+	        Private Declare Function GetDesktopWindow Lib "user32" () As Long
+	        
+	        Private Type RECT
+	            left As Long
+	            top As Long
+	            right As Long
+	            bottom As Long
+	        End Type
+	        
+	        #Else
+	        Private Declare Sub GetWindowRect Lib "user" _
+	        (ByVal hWnd As Integer,lpRect As RECT)
+	        Private Declare Sub ClipCursor Lib "user" (lpRect As Any)
+	        Private Declare Function GetDesktopHwnd Lib "user" () As Integer
+	        
+	        Private Type RECT
+	            left As Integer
+	            top As Integer
+	            right As Integer
+	            bottom As Integer
+	        End Type
+	
+	2. Add the following code to the click event before the Stop:
+	
+	        Dim winrect As RECT
+	        #If Win32 Then
+	            Dim dskhwnd As Long
+	            Dim suc As Long
+	            dskhwnd = GetDesktopWindow()
+	            suc = GetWindowRect(dskhwnd, winrect)
+	            suc = ClipCursor(winrect)
+	        #Else
+	            Dim dskhwnd As Integer
+	            Dim suc As Integer
+	            dskhwnd = GetDesktopHwnd()
+	            Call GetWindowRect(dskhwnd, winrect)
+	            Call ClipCursor(winrect)
+	        #End If
+	        'Stop and/or all other code goes here
+	
+	NOTE: All code should follow this patch code in the subroutine.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be an issue in the Microsoft products listed at
+	the beginning of this article. Microsoft is researching this problem and will
+	post new information here in the Microsoft Knowledge Base as it becomes
+	available.
+	
+	MORE INFORMATION
+	================
+	
+	To reproduce this behavior, add a DBGrid control to a form. In the click event
+	of the DBGrid control, stop the program by adding the stop keyword. When you run
+	the program and click the column headers of the DBGrid control, the mouse
+	pointer cannot be moved outside the borders of the DBGrid column headers.
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Start Visual Basic or if it is already running, click New Project on the File
+	  menu.
+	
+	2. Add a DBGrid control to the Form1 form.
+	
+	3. Copy the following code sample to the Form1 code window.
+	
+	        Private Sub DBGrid1_Click()
+	           Stop
+	        End Sub
+	
+	4. On the Run menu, click start, or press the F5 key to start the program.
+	
+	5. Click the column head of the DBGrid control. The cursor remains within the
+	  boundaries of the column headers.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbVBp400 kbbuglist
+	Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+	Version           : 4.0
+	Issue type        : kbbug
+	
+	=============================================================================
+	

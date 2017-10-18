@@ -1,0 +1,89 @@
+---
+layout: page
+title: "Q157912: &quot;STOP: 0x00000093&quot; with Security Dongle Adapter"
+permalink: kb/157/Q157912/
+---
+
+## Q157912: &quot;STOP: 0x00000093&quot; with Security Dongle Adapter
+
+	Article: Q157912
+	Product(s): Microsoft Windows NT
+	Version(s): 4.0
+	Operating System(s): 
+	Keyword(s): kb3rdparty kbhw kbHardwarekbfaq
+	Last Modified: 09-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 4.0 
+	- Microsoft Windows NT Workstation version 4.0 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	When you start your computer, you may receive the following error message:
+	
+	  STOP: 0x00000093
+	  INVALID_KERNEL_HANDLE
+	
+	CAUSE
+	=====
+	
+	This error message can be caused by the driver for a dongle security device. Two
+	such drivers known to cause this error message are:
+	
+	- Haspnt.sys
+	
+	- Sentinel.sys
+	
+	RESOLUTION
+	==========
+	
+	If you receive this error after installing software in your Windows NT 4.0
+	installation, you may be able to resolve this issue by starting the computer
+	using the Last Known Good configuration. However, if the error occurred after
+	upgrading to Windows NT 4.0 you may resolve the issue, by renaming the driver
+	using the steps in the appropriate section below.
+	
+	Windows NT Installed on a FAT Partition
+	---------------------------------------
+	
+	1. Start your computer using the MS-DOS option from the NT OS Loader. (If MS-DOS
+	  is not an option, boot your computer using an MS-DOS boot disk.)
+	
+	2. Rename the driver.
+	
+	3. Restart your computer and start Windows NT.
+	
+	Windows NT Installed on an NTFS Partition
+	-----------------------------------------
+	
+	1. Install Windows NT in an alternate folder on your computer.
+	
+	2. Log in to the new installation of Windows NT and run Command Prompt.
+	
+	3. Rename the driver.
+	
+	4. Restart your computer using the original installation of Windows NT.
+	
+	NOTE: Some of your software may require these drivers to be present in order to
+	operate properly and may generate error messages when you restart Windows NT
+	4.0.
+	
+	MORE INFORMATION
+	================
+	
+	For updated versions of these drivers, contact the manufacturer of the driver.
+	
+	Additional query words: blue screen dump 93 0x93 0x093
+	
+	======================================================================
+	Keywords          : kb3rdparty kbhw kbHardware kbfaq
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+	Version           : 4.0
+	
+	=============================================================================
+	

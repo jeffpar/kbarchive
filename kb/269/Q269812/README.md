@@ -1,0 +1,129 @@
+---
+layout: page
+title: "Q269812: Magic School Bus: Computer Hangs When You Install Program"
+permalink: kb/269/Q269812/
+---
+
+## Q269812: Magic School Bus: Computer Hangs When You Install Program
+
+	Article: Q269812
+	Product(s): Microsoft Home Kids Products
+	Version(s): 1.0
+	Operating System(s): 
+	Keyword(s): kbsetup mskids kbimu
+	Last Modified: 12-NOV-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Scholastic's The Magic School Bus in Concert 
+	- Scholastic's The Magic School Bus Lands on Mars 
+	- Scholastic's The Magic School Bus Discovers Flight, version 1.0 
+	- Scholastic's The Magic School Bus Whales and Dolphins, version 1.0 
+	- Scholastic's Magic School Bus Series: Volcanoes, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you attempt to install one of the programs listed at the beginning of this
+	article, the computer may stop responding (hang).
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, use the following methods in the order in which they are
+	presented.
+	
+	Quit Unnecessary Programs
+	-------------------------
+	
+	Quit all unnecessary programs before you attempt to install the program. To do
+	this:
+	
+	1. Press CTRL+ALT+DELETE.
+	
+	2. In the Close Program dialog box, click any program except Explorer or
+	  Systray, which are components of Microsoft Windows, and then click End Task.
+	
+	  If you are receive a message stating the program has stopped responding, click
+	  End Task again.
+	
+	3. Repeat steps 1 and 2 to quit all programs except Explorer and Systray.
+	
+	If the issue continues to occur, proceed to the next method.
+	
+	Clean Boot the Computer
+	-----------------------
+	
+	Clean boot the computer to determine if the issue is caused by a program or a
+	driver that starts automatically when you start the computer. To do this, use
+	the appropriate method for your version of Microsoft Windows.
+	
+	Microsoft Windows 98:
+	
+	1. Click Start, and then click Run.
+	
+	2. In the Open box, type "msconfig" (without the quotation marks), and then
+	  click OK.
+	
+	3. Click "Selective startup", and then click to clear the following check
+	  boxes:
+	
+	   - "Process Config.sys file"
+	   - "Process Autoexec.bat file"
+	   - "Process Winstart.bat file" (if available)
+	   - "Load startup group items"
+	
+	  NOTE: If any of these check boxes are unavailable, the related file is empty
+	  or does not exist.
+	
+	4. Click the Win.ini tab.
+	
+	5. Click the plus sign (+) next to Windows to expand the branch.
+	
+	6. Click to clear the "load=" and the "run=" check boxes, and then click OK.
+	
+	7. When you are prompted to restart the computer, do so.
+	
+	NOTE: To restore your original Startup options, click Normal Startup on the
+	General tab in the System Configuration Utility tool.
+	
+	For more information about how to clean boot a Windows 98-based computer, please
+	see the "Narrowing the Focus" section in the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q192926 How to Perform Clean-Boot Troubleshooting for Windows 98
+	
+	Microsoft Windows 95:
+	
+	1. Restart the computer. When you see the "Starting Windows 95" message, press
+	  the F8 key, and then select Command Prompt Only from the Startup menu.
+	
+	2. At the command prompt, type "win" (without the quotation marks), and then
+	  press ENTER. Press and hold down the SHIFT key until the Windows startup
+	  sequence is complete. This prevents any programs from being loaded
+	  automatically when Windows starts.
+	
+	3. Disable any anti-virus or disk tool programs installed on the computer. For
+	  information about how to disable these programs, see the printed or online
+	  documentation for the program.
+	
+	4. Quit all running programs except Explorer and Systray. To do this, see the
+	  "Quit Unnecessary Programs" method in this article.
+	
+	For additional information about how to clean boot Windows 95, click the article
+	number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q177604 Multimedia: Troubleshooting Using Clean Boot of Windows 95
+	
+	Additional query words: mskids schoolbus msb msbconcert msbmars hangs freeze lock
+	
+	======================================================================
+	Keywords          : kbsetup mskids kbimu 
+	Technology        : kbHomeProdSearch _IKkbbogus kbKidsSearch kbScholasticVolcanoes kbScholasticFlight kbScholasticMars kbScholasticWhales kbMSBSearch
+	Version           : :1.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

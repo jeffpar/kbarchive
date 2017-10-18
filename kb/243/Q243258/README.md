@@ -1,0 +1,92 @@
+---
+layout: page
+title: "Q243258: End User License Agreement (EULA) Policy on Backup CD-ROMs"
+permalink: kb/243/Q243258/
+---
+
+## Q243258: End User License Agreement (EULA) Policy on Backup CD-ROMs
+
+	Article: Q243258
+	Product(s): Microsoft Home Games
+	Version(s): 1.0,2.0
+	Operating System(s): 
+	Keyword(s): kbpolicy kbref kbimu
+	Last Modified: 05-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Age of Empires II: The Age of Kings, version 2.0 
+	- Microsoft Combat Flight Simulator: WWII Europe Series, version 1.0 
+	- Microsoft Combat Flight Simulator 2: WWII Pacific Theater, version 1.0 
+	- Microsoft NBA Inside Drive 2000, version 1.0 
+	- Microsoft NFL Fever 2000, version 1.0 
+	- Microsoft Pandora's Box, version 1.0 
+	- Microsoft Flight Simulator 2000 
+	- Microsoft Flight Simulator 2000 Professional Edition 
+	- Microsoft Flight Simulator 2002 
+	- Microsoft Flight Simulator 2002 Professional Edition 
+	- Microsoft Midtown Madness, version 1.0 
+	- Microsoft Zoo Tycoon 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	As stated in "Section 6" of the Microsoft End-User License Agreement (EULA) for
+	the products listed at the beginning of this article, you are allowed to make a
+	backup copy of the product for archiving purposes only. However, the original
+	program CD-ROM is still required to install or run the program.
+	
+	For the complete text of the EULA introduction and Section 6, please see the
+	"More Information" section later in this article.
+	
+	If your original CD-ROM is damaged, please contact Microsoft Customer Service at
+	(800) 426-9400 to request a replacement CD-ROM. Microsoft Customer Service hours
+	are Monday through Friday, 8:00 A.M to 5:00 P.M. Pacific time.
+	
+	The complete text of the Microsoft EULA for the programs listed at the beginning
+	of this article is in the Eula.rtf file located in the program's installation
+	folder on the hard disk.
+	
+	MORE INFORMATION
+	================
+	
+	EULA Introduction:
+	
+	This Microsoft End-User License Agreement ("EULA") is a legal agreement between
+	you (either an individual or a single entity) and Microsoft Corporation for the
+	Microsoft software product identified above, which includes computer software
+	and may include associated media, printed materials, and "online" or electronic
+	documentation ("SOFTWARE PRODUCT"). The SOFTWARE PRODUCT also includes any
+	updates and supplements to the original SOFTWARE PRODUCT provided to you by
+	Microsoft. Any software provided along with the SOFTWARE PRODUCT that is
+	associated with a separate end-user license agreement is licensed to you under
+	the terms of that license agreement. By installing, copying, downloading,
+	accessing or otherwise using the SOFTWARE PRODUCT, you agree to be bound by the
+	terms of this EULA. If you do not agree to the terms of this EULA, do not
+	install or use the SOFTWARE PRODUCT; you may, however, return it to your place
+	of purchase for a full refund.
+	
+	Section 6:
+	
+	6. BACKUP COPY
+	
+	After installation of one copy of the SOFTWARE PRODUCT pursuant to this EULA, you
+	may keep the original media on which the SOFTWARE PRODUCT was provided by
+	Microsoft solely for backup or archival purposes. If the original media is
+	required to use the SOFTWARE PRODUCT on the COMPUTER, you may make one copy of
+	the SOFTWARE PRODUCT solely for backup or archival purposes. Except as expressly
+	provided in this EULA, you may not otherwise make copies of the SOFTWARE PRODUCT
+	or the printed materials accompanying the SOFTWARE PRODUCT.
+	
+	Additional query words: 2.00 1.00 aoe aok pb football basketball multiplayer multiplay write duplicates
+	
+	======================================================================
+	Keywords          : kbpolicy kbref kbimu 
+	Technology        : kbHomeProdSearch _IKkbbogus kbGamesSearch kbFlightSimSearch kbNFLFever2000 kbNFLSearch kbPandoraSearch kbMidtownMadSearch kbAOESearch kbMidtownMadness kbAOE2Kings kbCombatFlightSim2 kbCombatFlightSim kbCombatFlightSimSearch kbFlightSim2000 kbPandorasBox kbNBAInsideDrive2000 kbFlightSim2002 kbFlightSim2002Pro kbZooTycoon kbSimSearch
+	Version           : :1.0,2.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

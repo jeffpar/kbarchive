@@ -1,0 +1,83 @@
+---
+layout: page
+title: "Q197500: XADM: Tape Backup Program Hangs During Exchange Backup"
+permalink: kb/197/Q197500/
+---
+
+## Q197500: XADM: Tape Backup Program Hangs During Exchange Backup
+
+	Article: Q197500
+	Product(s): Microsoft Exchange
+	Version(s): winnt:5.5
+	Operating System(s): 
+	Keyword(s): exc55 EXC55SP3Fix
+	Last Modified: 23-OCT-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.5 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	A backup program stops responding (hangs) while you are attempting to back up an
+	Exchange Server database.
+	
+	CAUSE
+	=====
+	
+	Backup programs that attempt to use large buffers to read data from an Exchange
+	Server computer are susceptible to this problem. When an attempt is made to back
+	up a server using a large buffer, the backup program initiates the read attempt
+	and waits for data to be read into the buffer. Because the buffer is large, a
+	problem allocating memory for this buffer may result on the server, causing the
+	read on the server to fail. Because no data will be returned to the backup
+	program, the backup program will wait indefinitely.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, obtain the latest service pack for Exchange Server
+	version 5.5. For additional information, please see the following article in the
+	Microsoft Knowledge Base:
+	
+	  Q191014 XGEN: How to Obtain the latest Exchange Server 5.5 Service Pack
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	Component: Exchange Database Engine
+	
+	+--------------------------+
+	| File name   | Version    | 
+	+--------------------------+
+	| Edbbcli.dll | 5.5.2511.0 | 
+	+--------------------------+
+	
+	This hotfix has been posted to the following Internet location as Psp2esea.zip
+	and Psp2esei.zip:
+	
+	  ftp://ftp.microsoft.com/bussys/exchange/exchange-public/fixes/Eng/Exchg5.5/PostSP2/ese-fix/
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+	version 5.5. This problem was first corrected in Exchange Server 5.5 Service
+	Pack 3.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : exc55 EXC55SP3Fix 
+	Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+	Version           : winnt:5.5
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

@@ -1,0 +1,172 @@
+---
+layout: page
+title: "Q311771: Encarta Online Deluxe: Free Membership Included with Computer"
+permalink: kb/311/Q311771/
+---
+
+## Q311771: Encarta Online Deluxe: Free Membership Included with Computer
+
+	Article: Q311771
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbimu
+	Last Modified: 23-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Encarta Online Deluxe Encyclopedia 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes how to obtain and use a free membership to Encarta Online
+	Deluxe Encyclopedia if your new computer included a free one-year subscription.
+	
+	MORE INFORMATION
+	================
+	
+	Encarta Online Deluxe Encyclopedia is a premium Internet multimedia encyclopedia
+	with 42,000 articles, an atlas, a dictionary, Web links, and more. When you
+	register for Encarta Online Deluxe, you are offered a free subscription to
+	Encarta Online Deluxe Encyclopedia. This offer is valid for one year from the
+	date of registration, not from the date of purchase.
+	
+	For example, if you start your membership on Oct 31, 2001, your membership to
+	Encarta Online Deluxe is valid until Oct 31, 2002.
+	
+	You can use the Online Deluxe Encyclopedia from any computer with Internet
+	access. The Encarta CD-ROM or DVD-ROM discs are not required, except for initial
+	membership.
+	
+	Registering for Encarta Online Deluxe
+	-------------------------------------
+	
+	NOTE: You must have Internet access for online registration, so make sure to
+	connect to the Internet before you follow these steps.
+	
+	2002 Version:
+	
+	Locate the shortcut (icon) labeled Try Encarta Online Deluxe! or Encarta Online
+	Deluxe on your desktop or Start menu. Double-click this icon to open your Web
+	browser, which opens the Encarta Web site. This process does not require an
+	Encarta CD.
+	
+	2001 Version:
+	
+	On the Help menu, click Registration. Click Register Online Now.
+	
+	Registration:
+	
+	The first time you run Encarta Online Deluxe, the program prompts you to
+	register.
+	
+	NOTE: If the program does not prompt you to register, and you receive the
+	following error message
+	
+	  We're sorry, but there is no Online Deluxe subscription associated with this
+	  Passport.
+	
+	please stop. This message indicates that you are already registered for Encarta
+	Online Deluxe.
+	
+	1. Type your name, e-mail address, and mailing address.
+	
+	2. Select whether you want to join the Encarta Annual Update Program.
+	
+	3. Click "Yes, I want to sign up for a free introductory offer for Encarta
+	  Online Deluxe".
+	
+	4. Select whether you want to receive the Encarta News e-mail newsletter.
+	
+	5. Click Next.
+	
+	6. If you are prompted to sign in with .NET Passport, do either of the
+	  following:
+	
+	   - If you have a .NET Passport already, sign in. You can use any of the
+	     following accounts:
+	
+	      - .NET Passports provided by Passport.com
+	
+	      - MSN Internet Access e-mail address
+	
+	      - Your Hotmail e-mail address
+	
+	   - If you do not have a .NET Passport already, click "Get one now" at the
+	     sign-in screen for .NET Passport. After you receive your .NET Passport,
+	     you will be returned to the next Encarta Online page.
+	
+	NOTE: Do not leave the sign-up process at this point.
+	
+	7. The following page is displayed:
+	
+	  Welcome!
+	
+	  You are now signed up for this Encarta Online Deluxe offer:
+	  Encarta Online Deluxe CD Free Trial 
+	
+	  Next time you return, click the Deluxe sign-in link from
+	  http://encarta.msn.com to access Encarta Online Deluxe. 
+	
+	  Click here to continue.
+	
+	  You can also use the shortcut to access the Web site.
+	
+	NOTE: If your computer included Microsoft Encarta Encyclopedia software, you are
+	also eligible for free access to the Online Deluxe Encyclopedia. For more
+	information, click the article numbers below to view the articles in the
+	Microsoft Knowledge Base.
+	
+	For Encarta 2002:
+	
+	  Q306747 ENC2002: How to Obtain Free Membership to Encarta Online Deluxe
+	  Encyclopedia
+	
+	For Encarta 2001 and Earlier:
+	
+	  Q259058 Encarta Online Deluxe Encyclopedia: Free Subscription Available for
+	  Encarta Users
+	
+	How to Sign In
+	--------------
+	
+	To sign in and use the Encarta Online Deluxe Encyclopedia, follow these steps:
+	
+	1. Visit the following MSN Web site:
+	
+	  http://encarta.msn.com
+	
+	2. Click Deluxe Sign-In.
+	
+	3. If you are prompted, sign in to your .NET Passport account.
+	
+	  NOTE: If your Passport account is configured to sign you in automatically, you
+	  are not prompted to sign in.
+	
+	Support for Encarta Online Deluxe Encyclopedia
+	----------------------------------------------
+	
+	To request support for Encarta Online Deluxe Encyclopedia, use the form on the
+	MSN Web site. To do this, follow these steps:
+	
+	1. Visit the following MSN Web site:
+	
+	  http://encarta.msn.com
+	
+	2. Click Help, and then click any help topic.
+	
+	3. Click "Contact us".
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbimu 
+	Technology        : kbEncartaSearch kbEncartaOnlineSearch kbEncartaOnlineDeluxe
+	Version           : :
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

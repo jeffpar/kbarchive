@@ -1,0 +1,65 @@
+---
+layout: page
+title: "Q89409: X400: Definition of ADMD"
+permalink: kb/089/Q89409/
+---
+
+## Q89409: X400: Definition of ADMD
+
+	Article: Q89409
+	Product(s): Microsoft Mail For PC Networks
+	Version(s): MS-DOS:3.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 05-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Mail Gateway to X.400, version 3.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	ADMD is the abbreviation for ADministration Management Domain. This term is
+	defined by the CCITT X.400 standard which defines the basis for a unified,
+	world-wide, electronic mail (e-mail) network. The network functions through the
+	cooperation of independent operators of public and private e-mail systems, each
+	of whom manages a separate domain. No single international authority,
+	government, company, or other body assigns names and addresses to the network.
+	
+	X.400 defines a two-level domain structure. Level-1 domains are termed ADMD and
+	level-2 domains are termed PRMD (PRivate Management Domain). As stated in
+	section 7.3.3 of the F.400 standard:
+	
+	  In one country one or more ADMDs can exist. An ADMD is characterized by its
+	  provision of relaying functions between other Management Domains and the
+	  provision of Message Transfer Service for the applications provided within
+	  the ADMD
+	
+	A PRMD "is characterized by the provision of messaging functions" with the domain
+	(F.400, section 7.3.4).
+	
+	Typically, a company or organization operates a PRMD to facilitate communications
+	within a local organization and uses an ADMD to serve as the e-mail hub between
+	sites, either within the same country or internationally. If the PRMDs use the
+	transfer services of different ADMDs, or access mailboxes in the ADMDs, each
+	ADMD must be linked. This link could be direct or a relay through another ADMD.
+	
+	The X.400 standard discusses administrations because CCITT is part of the
+	International Telecommunications Union (ITU), a United Nations organization.
+	CCITT groups governmental bodies (another name for administrations). However, a
+	number of private companies operate ADMDs and the number of companies grows as
+	the postal, telephone, and telegraph (PTT) authorities are sold to private
+	investors.
+	
+	Additional query words: 3.00 address gateway format
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGatex400300
+	Version           : MS-DOS:3.0
+	
+	=============================================================================
+	

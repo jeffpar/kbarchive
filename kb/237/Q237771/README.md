@@ -1,0 +1,123 @@
+---
+layout: page
+title: "Q237771: FIX: Events Fail in ATL Containers if Enum Used as Parameter"
+permalink: kb/237/Q237771/
+---
+
+## Q237771: FIX: Events Fail in ATL Containers if Enum Used as Parameter
+
+	Article: Q237771
+	Product(s): Microsoft C Compiler
+	Version(s): 3.0,6.0
+	Operating System(s): 
+	Keyword(s): kbActivexEvents kbAutomation kbCOMt kbConnPts kbVC600bug kbATL300bug kbDSupport kbGrpDS
+	Last Modified: 10-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The Microsoft Active Template Library (ATL) 3.0, used with:
+	   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+	   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+	   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	An ATL event sink defined with SINK_ENTRY or SINK_ENTRY_EX will fail to catch an
+	event when an enum is used as one of the parameters for the event. The failure
+	code returned by IDispatch::Invoke is "0x80070057 (E_INVALIDARG - The parameter
+	is incorrect)." The event will succeed in another container, such as Visual
+	Basic.
+	
+	CAUSE
+	=====
+	
+	IDispEventImpl's GetFuncInfoFromID method checks the type of the event
+	parameters and, on encountering type VT_USERDEFINED, calls GetUserDefinedType.
+	This method currently checks only for TKIND_ALIAS ("typedef struct" data types)
+	and not TKIND_ENUM.
+	
+	RESOLUTION
+	==========
+	
+	There are several ways to work around this problem. One method is to use the
+	SINK_ENTRY_INFO macro and define an _ATL_FUNC_INFO structure to provide type
+	information for the event method. Use a VT_I4 type for the enum parameter. For
+	an example, and for more information on SINK_ENTRY_INFO, see the following
+	article in the Microsoft Knowledge Base:
+	
+	  Q194179 SAMPLE: AtlEvnt.exe Creates ATL Sinks Using IDispEventImpl
+	
+	If you are using IDispEventImpl<> for the sink, you can override the
+	virtual function GetFuncInfoFromID. A simple override is as follows:
+	
+	  HRESULT GetFuncInfoFromId(const IID& iid, DISPID dispidMember,LCID lcid, _ATL_FUNC_INFO& info)
+	  {
+	  	// class base class implementation
+	      HRESULT hr = IDispEventImpl<IDC_OBJ, CSinkObj, &DIID__IEnumEventEvents, &LIBID_TESTUNKARTICLELib, 1, 0>::GetFuncInfoFromId(iid, dispidMember,lcid, info);
+	      if (SUCCEEDED(hr))
+	  	{
+	          // is this the correct event interface
+	          if (InlineIsEqualGUID(iid, DIID__IEnumEventEvents))
+	  		{
+	              //check for dispid of event with enum param
+	              switch(dispidMember)
+	  			{
+	                  case 1:
+	                      // the enumeration parameter is change to VT_I4
+	                      // info.pVarTypes represents the type of params
+	                      // params are stored in reverse order, with 0 base index
+	                      if (info.pVarTypes[0] == VT_USERDEFINED)
+	                          info.pVarTypes[0] = VT_I4;  
+	                      break;
+	  			}
+	  		}
+	  	}
+	      return hr;
+	  }
+	
+	The most direct approach when using IDispEventImpl<>is to change the
+	implementation of GetUserDefinedType in Atlcom.h. At line 3968, after the code
+	block that begins "if(pta && pta->typekind == TKIND_ALIAS)", a second
+	if statement could be inserted that would set the correct VARTYPE for
+	enumerations. This block could be written as follows:
+	
+	  if (pta && pta->typekind == TKIND_ENUM)
+	  {
+	      vt = VT_I4;
+	  }
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article.
+	
+	This problem was corrected in Microsoft Visual C++ .NET.
+	
+	REFERENCES
+	==========
+	
+	For additional information, click the article numbers below to view the articles
+	in the Microsoft Knowledge Base:
+	
+	  Q194179 SAMPLE: AtlEvnt.exe Creates ATL Sinks Using IDispEventImpl
+	
+	  Q181277 SAMPLE: AtlSink Uses ATL to Create a Dispinterface Sink
+	
+	See also the ATL Articles in the Visual C++ documentation, specifically "ATL
+	Collections and Enumerators" and "Event Handling in ATL."
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbActivexEvents kbAutomation kbCOMt kbConnPts kbVC600bug kbATL300bug kbDSupport kbGrpDSMFCATL 
+	Technology        : kbVCsearch kbAudDeveloper kbATLsearch
+	Version           : :3.0,6.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

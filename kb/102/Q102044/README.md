@@ -1,0 +1,74 @@
+---
+layout: page
+title: "Q102044: Bringing Up a Windows NT Advanced Server in a TCP/IP WAN"
+permalink: kb/102/Q102044/
+---
+
+## Q102044: Bringing Up a Windows NT Advanced Server in a TCP/IP WAN
+
+	Article: Q102044
+	Product(s): Microsoft Windows NT
+	Version(s): 3.1
+	Operating System(s): 
+	Keyword(s): kbnetwork
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Advanced Server, version 3.1 
+	- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+	-------------------------------------------------------------------------------
+	
+	When you bring up a Windows NT Server as a "Server", the Windows NT Server
+	communicates with the domain controller and checks for access permissions
+	and so on. When the domain spans over a wide area network (WAN) and the
+	domain controller is located across a router that is routing IP only, you
+	should perform the following procedure to bring up a server in the domain.
+	
+	These steps will allow the Windows NT Server to resolve the name of the
+	domain controller and communicate with it for authentication and
+	participation in the domain:
+	
+	1. Prepare an LMHOSTS file on another machine. The LMHOSTS file should contain
+	  the following information:
+	
+	     IP Address of DC    NetBIOS name of DC     #PRE #DOM:Domain name
+	
+	  For example:
+	
+	     130.20.7.80         DOMCTRLR               #PRE #DOM:MYDOMAIN
+	
+	2. Copy the LMHOSTS file to a floppy disk so that it can later be imported by
+	  the domain controller.
+	
+	3. When you are installing the Server, select the Custom Install option to
+	  install the Advanced Server.
+	
+	4. During a network installation, make sure you select TCP/IP Protocol to be
+	  installed. This step is important; otherwise, only NetBEUI will be installed,
+	  and the Windows NT Server is not able to communicate with the domain
+	  controller.
+	
+	5. After TCP/IP is installed, choose OK. The TCP/IP settings menu will be
+	  displayed. After entering the IP address and other TCP/IP- related
+	  information, choose the IMPORT LMHOSTS File button.
+	
+	6. Place the floppy disk containing the new LMHOSTS file in the floppy disk
+	  drive and specify the path for the LMHOSTS file in the IMPORT LMHOSTS File
+	  dialog box. Note that you need only specify the path, not the name of the
+	  file. For example, if the LMHOSTS file is located in the root directory of
+	  the floppy disk and the disk is in drive A, you need only specify "A:\" in
+	  the dialog box. Also note that the file must be named "LMHOSTS".
+	
+	7. Follow the instructions and answer the installation questions.
+	
+	Additional query words: prodnt TCP/IP Domains Advanced Server
+	
+	======================================================================
+	Keywords          : kbnetwork 
+	Technology        : kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS351search kbWinNTS350search kbWinNT310Search
+	Version           : 3.1
+	
+	=============================================================================
+	

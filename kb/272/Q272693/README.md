@@ -1,0 +1,139 @@
+---
+layout: page
+title: "Q272693: 0x80004005 ASP Error Occurs with Crystal Reports 8"
+permalink: kb/272/Q272693/
+---
+
+## Q272693: 0x80004005 ASP Error Occurs with Crystal Reports 8
+
+	Article: Q272693
+	Product(s): Internet Information Server
+	Version(s): 4.0,5.0
+	Operating System(s): 
+	Keyword(s): kbiis500prod2web kbProd2Web
+	Last Modified: 31-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Services version 5.0 
+	- Microsoft Internet Information Server 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you use a DSN to connect to a database, you may receive an Active Server
+	Pages (ASP) 0x80004005 error message. This can occur when you have installed
+	Crystal Reports 8.
+	
+	CAUSE
+	=====
+	
+	This is a known issue that occurs when IIS or any other application creates and
+	attempts to use a System DSN after the installation of Crystal Reports 8. For
+	more information, see the following Crystal Decisions Knowledge Base article:
+	
+	  http://support.crystaldecisions.net/library/kbase/articles/c2007581.asp
+	  (http://support.crystaldecisions.net/library/kbase/articles/c2007581.asp)
+	
+	The Crystal Reports installation modifies the permissions for the
+	HKEY_LOCAL_MACHINE\Software\ODBC\odbc.ini registry key and its subkeys. The
+	Everyone group's permissions are changed from Special Access to Full Control.
+	
+	When you create a new System DSN, it does not inherit the Windows NT default
+	permissions, or the new permissions created by the Crystal Reports 8
+	installation. Instead, the subkey for the new DSN receives permissions for two
+	user groups:
+	
+	- Local Machine\Administrators -- Full Control
+	
+	  SYSTEM -- Full Control
+	
+	Only the permissions for Administrators are set, and no permissions are set for
+	the Everyone group. Therefore, only users with Administrator rights can access
+	the System DSN.
+	
+	RESOLUTION
+	==========
+	
+	Download and run the fix from the following Web site:
+	
+	  http://support.seagatesoftware.com/communityCS/FilesAndUpdates/scr8_webregfix.exe
+	
+	MORE INFORMATION
+	================
+	
+	Description of the Fix:
+	
+	The Scr8_webregfix.exe update resets all existing permissions in the
+	HKEY_LOCAL_MACHINE\Software\ODBC\odbc.ini registry key (and all of its subkeys)
+	to the Windows NT default permissions. It also resets sections of the
+	HKEY_CLASSES_ROOT\Interface and HKEY_CLASSES_ROOT\Typelib subkeys to the Windows
+	NT default values. Any new and existing System ODBC DSNs now inherit the Windows
+	NT default permissions.
+	
+	Version 8.0.0.84 requires that the Everyone group is set to Full Control and
+	cannot connect to a System DSN by using a Special Access (default) registry
+	permission level. The updated P2sodbc.dll file (version 8.0.0.85) is required to
+	connect to a System DSN by using the Windows NT default registry permissions.
+	(For example, the Everyone group is set to Special Access.)
+	
+	NOTE: The P2sodbc.dll issue also applies when version 8.0.0.84 is distributed to
+	computers that do not have Crystal Reports installed (for example, as part of an
+	application previewing a Crystal Report). For more information, see the
+	following Crystal Decisions Knowledge Base article:
+	
+	  http://support.crystaldecisions.net/library/kbase/articles/c2007612.asp
+	  (http://support.crystaldecisions.net/library/kbase/articles/c2007612.asp)
+	
+	This fix also resolves the following SQL Server error messages if the System DSN
+	has been set after Crystal Reports was installed:
+	
+	  Infinite logon to the database
+	
+	  Error 20599 - Cannot open SQL Server
+	
+	  Error 599
+	
+	  Error - An error has occurred on the server in attempting to access datasource
+	
+	For more information, see the following Crystal Decisions Knowledge Base
+	articles:
+	
+	  http://support.crystaldecisions.net/library/kbase/articles/c2007612.asp
+	  (http://support.crystaldecisions.net/library/kbase/articles/c2007612.asp)
+	
+	  http://support.crystaldecisions.net/library/kbase/articles/c2007701.asp
+	  (http://support.crystaldecisions.net/library/kbase/articles/c2007701.asp)
+	
+	REFERENCES
+	==========
+	
+	For additional information, click the article numbers below to view the articles
+	in the Microsoft Knowledge Base:
+	
+	  Q266621 PRB: Error "Library Not Registered" with Crystal Reports 8.0
+	
+	  Q268553 PRB: Visual Studio Installation Problems Occur If Crystal Reports 8
+	  Is Installed
+	
+	See also the following Crystal Decisions Web sites:
+	
+	  http://support.crystaldecisions.net/homepage/
+	  (http://support.crystaldecisions.net/homepage/)
+	
+	  http://support.crystaldecisions.net/communityCS/FilesAndUpdates/P2sodbc8.zip.asp
+	  (http://support.crystaldecisions.net/communityCS/FilesAndUpdates/P2sodbc8.zip.asp)
+	
+	Additional query words: iis 5 crystal reports 80004005
+	
+	======================================================================
+	Keywords          : kbiis500prod2web kbProd2Web 
+	Technology        : kbiisSearch kbiis500 kbiis400
+	Version           : :4.0,5.0
+	Issue type        : kbprb
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

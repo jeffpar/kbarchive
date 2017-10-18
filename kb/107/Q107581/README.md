@@ -1,0 +1,73 @@
+---
+layout: page
+title: "Q107581: NET USE in VM with NetWare Diskless Workstation"
+permalink: kb/107/Q107581/
+---
+
+## Q107581: NET USE in VM with NetWare Diskless Workstation
+
+	Article: Q107581
+	Product(s): Microsoft Windows 3.x Retail Product
+	Version(s): WINDOWS:3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 09-OCT-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows for Workgroups version 3.11 
+	-------------------------------------------------------------------------------
+	
+	The following article contains information on the use of Windows for
+	Workgroups with third-party products or configurations that have not been
+	tested and are not supported by Microsoft.
+	
+	If the steps or procedures described in this article do not function
+	properly, contact the manufacturer of the third-party product for more
+	information or use a supported configuration.
+	
+	SUMMARY
+	=======
+	
+	If you install Windows for Workgroups 3.11 using the SETUP /N command on a
+	workstation without a hard disk (a "diskless" workstation), and you then run a
+	NET USE command in a Windows for Workgroups virtual machine (VM), all Novell
+	NetWare drive mappings, all Windows for Workgroups drive connections, and all
+	Windows for Workgroups printer connections are displayed (in that order).
+	
+	MORE INFORMATION
+	================
+	
+	On a computer with a hard disk drive and a SETUP /N configuration (or a local
+	installation of Windows for Workgroups with Novell NetWare), a NET USE command
+	in a Windows for Workgroups VM displays only the existing Windows for Workgroups
+	drive and printer connections.
+	
+	However, all network connections (both NetWare mappings and Windows for
+	Workgroups connections) are displayed in a Windows for Workgroups VM if the
+	following conditions are true:
+	
+	- You have a SETUP /N configuration on a diskless NetWare workstation as a
+	  second network under Windows for Workgroups.
+	
+	- All startup files are on a boot disk image.
+	
+	- All startup files are on the network.
+	
+	- The Windows directory is located on the network.
+	
+	- All Windows files are on the network.
+	
+	- All above directories and files must be in the NetWare search paths.
+	
+	
+	Additional query words: 3.11 environment map maproot net view 3rdparty
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+	Version           : WINDOWS:3.11
+	
+	=============================================================================
+	

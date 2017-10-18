@@ -1,0 +1,104 @@
+---
+layout: page
+title: "Q187834: HOWTO: Select and Unselect a Range of Cells in MSFlexGrid"
+permalink: kb/187/Q187834/
+---
+
+## Q187834: HOWTO: Select and Unselect a Range of Cells in MSFlexGrid
+
+	Article: Q187834
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbGrpDSVB
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article demonstrates how to select a range of cells and how to unselect a
+	range of selected cells using the MSFlexGrid control.
+	
+	MORE INFORMATION
+	================
+	
+	The Visual Basic documentation provides a good explanation in the Online Help of
+	how to select a range of cells in a MSFlexgrid control. However, there is no
+	such explanation for how to undo a selection that has already been made. The
+	example below demonstrates both.
+	
+	Step-by-Step Example
+	--------------------
+	
+	1. Start a new Standard EXE project. Form1 is created by default.
+	
+	2. Click Components on the Project menu, check "Microsoft FlexGrid Control," and
+	  then click OK.
+	
+	3. Add a MSFlexGrid control to Form1.
+	
+	4. Add two CommandButtons to Form1.
+	
+	5. Change the Caption property of Command1 to "UnSelect."
+	
+	6. Change the Caption property of Command2 to "Select."
+	
+	7. Add the following code to the module of Form1:
+	
+	        Private Sub Command1_Click()
+	        ' unselect a range
+	        With MSFlexGrid1
+	           ' cancel selection by setting end points to start points
+	           .RowSel = .Row
+	           .ColSel = .Col
+	           .SetFocus
+	        End With
+	        End Sub
+	
+	        Private Sub Command2_Click()
+	        ' select a range
+	        With MSFlexGrid1
+	           ' Row and Col properties must be set before RowSel and ColSel
+	           .Col = 0 ' start selection in this column
+	           .Row = 2 ' start selection in this row
+	           .ColSel = 1 ' end selection in this column
+	           .RowSel = 4 ' end selection in this row
+	           .SetFocus
+	        End With
+	        End Sub
+	
+	        Private Sub Form_Load()
+	        With MSFlexGrid1
+	           .Clear
+	           .FixedCols = 0
+	           .FixedRows = 0
+	           .AddItem "mike" & vbTab & 10, 0
+	           .AddItem "fred" & vbTab & 11, 1
+	           .AddItem "jack" & vbTab & 13, 2
+	           .AddItem "herman" & vbTab & 55, 3
+	           .AddItem "irene" & vbTab & 88, 4
+	           .AddItem "jane" & vbTab & 22, 5
+	        End With
+	        End Sub
+	
+	8. Press the F5 key to run the project. Click on the "Select" button. You should
+	  see the middle of the MSFlexGrid selected.
+	
+	9. Click on the "UnSelect" button, and note that the selection is undone.
+	
+	Additional query words: kbDSupport kbDSD flex grid kbVBp kbVBp500 kbCtrl kbVBp600
+	
+	======================================================================
+	Keywords          : kbGrpDSVB 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

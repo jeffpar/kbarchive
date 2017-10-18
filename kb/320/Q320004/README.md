@@ -1,0 +1,105 @@
+---
+layout: page
+title: "Q320004: BUG: &quot;Fatal Error C1001&quot; Err Msg Compiling Code with While Loop"
+permalink: kb/320/Q320004/
+---
+
+## Q320004: BUG: &quot;Fatal Error C1001&quot; Err Msg Compiling Code with While Loop
+
+	Article: Q320004
+	Product(s): Microsoft C Compiler
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kberrmsg kbCompiler
+	Last Modified: 11-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The C/C++ Compiler (CL.EXE), used with:
+	   - Microsoft Visual C++.NET (2002) 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you try to compile code that is similar to the sample code included in the
+	"Steps to Reproduce the Problem" section of this article, you may receive the
+	following error message:
+	
+	  "fatal error C1001: INTERNAL COMPILER ERROR
+	
+	  (compiler file 'f:\vs70builds\9466\vc\Compiler\Utc\src\P2\main.c', line 146)"
+	
+	CAUSE
+	=====
+	
+	This behavior occurs because the optimizing compiler cannot optimize the while
+	loop.
+	
+	RESOLUTION
+	==========
+	
+	To work around the issue, use one of the following methods:
+	
+	- Turn off the /Og switch for the function by using the following command:
+	
+	  #pragma optimize("g",off)
+	
+	  -or-
+	
+	- Declare the function parameter start to be volatile.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce the Problem
+	------------------------------
+	
+	Try to compile the following code:
+	
+	  //test.cpp
+	  // Compiler Option: cl /c /Og test.cpp
+	
+	  union Pixel{
+	      char code8;
+	  } ;
+	
+	  struct RGB {
+	      double r;
+	    };
+	  //#pragma optimize("g",off)//WORKAROUND 1
+	
+	  void func(   char *start, char *end)
+	  //void func(   volatile char *start, char *end) //WORKAROUND 2
+	  {
+	       RGB map[256];
+	       Pixel s[16];
+	
+	      while (start < end) {
+	        *start++ = s[(int)((map[*start].r))].code8;
+	
+	      }
+	  }
+	  #pragma optimize("",on) //WORKAROUND 1
+	
+	You receive the error message described in the "Symptoms" section of this
+	article.
+	
+	Additional query words: Og ICE KbCpp KbNative KBUnmanaged
+	
+	======================================================================
+	Keywords          : kberrmsg kbCompiler 
+	Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+	Version           : :
+	Issue type        : kbbug
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

@@ -1,0 +1,64 @@
+---
+layout: page
+title: "Q82037: Cannot Use Permanent Swap File with Squish"
+permalink: kb/082/Q82037/
+---
+
+## Q82037: Cannot Use Permanent Swap File with Squish
+
+	Article: Q82037
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 06-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you use the Squish disk-compression utility by Sundog Software, Microsoft
+	Windows is unable to recognize a permanent swap file in 386 enhanced mode.
+	
+	CAUSE
+	=====
+	
+	This problem is caused by an entry that Squish makes in the CONFIG.SYS file.
+	
+	Squish compresses a portion of the hard disk in order to free up more space.
+	Squish requires a line in the CONFIG.SYS file, similar to the following
+	
+	  DEVICE=[DRIVE]:[PATH]\SQUISH\SQPLUS.SYS EMS=0
+	
+	where "[DRIVE]" and "[PATH]" indicate the location of SQPLUS.SYS.
+	
+	If Windows creates a permanent swap file, it can't locate the swap file during
+	386 enhanced mode operation. The Windows Setup program indicates that a
+	temporary swap file is active.
+	
+	RESOLUTION
+	==========
+	
+	Remove the SQPLUS.SYS device driver from the CONFIG.SYS file so that Windows can
+	recognize the permanent swap file.
+	
+	MORE INFORMATION
+	================
+	
+	For more information, contact Sundog technical support.
+	
+	
+	Additional query words: 3.00 3.00a 3.0 3.0a 3.10 3.1 3.11
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+	Version           : WINDOWS:3.0,3.0a,3.1,3.11
+	
+	=============================================================================
+	

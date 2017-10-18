@@ -1,0 +1,355 @@
+---
+layout: page
+title: "Q189468: HOWTO: Create a Basic Add-in Using VB5 or VB6"
+permalink: kb/189/Q189468/
+---
+
+## Q189468: HOWTO: Create a Basic Add-in Using VB5 or VB6
+
+	Article: Q189468
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): WINDOWS:5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbActiveX kbAddIn kbVBp kbVBp500 kbVBp600 kbVS600 kbGrpDSVB kbDSupport
+	Last Modified: 29-OCT-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes how to create the basic framework of an Add-in for Visual
+	Basic 5.0 or 6.0. An Add-in utilizes the Visual Basic Extensibility object model
+	to customize and extend the Visual Basic environment.
+	
+	MORE INFORMATION
+	================
+	
+	In Visual Basic 5.0 or 6.0, you can create the code for a minimal Add-in project
+	with a single step. You simply double-click on the Add-in icon when you start a
+	new Visual Basic Project.
+	
+	A Visual Basic 5.0 or 6.0 Add-in can be either an ActiveX DLL or ActiveX EXE,
+	depending upon the project type setting in the Project Properties dialog.
+	
+	By default, an ActiveX EXE is created by the Add-in Wizard for Visual Basic 5.0
+	and an ActiveX DLL is created by default for Visual Basic 6.0. It is given the
+	name MyAddin.vbp. In Visual Basic 5.0, three files are added to this project,
+	connect.cls, frmAddin.frm, and Addin.bas. The contents of files are listed below
+	with additional comments.
+	
+	Visual Basic 5.0
+	----------------
+	
+	Connect.cls
+	-----------
+	
+	     Option Explicit
+	
+	     'The IDTExtensibility is used to gain access to the
+	     'necessary events in the extensibility model. These four
+	     'interface methods must be contained in this class
+	     'module and must contain at least one line of code. Even
+	     'if the line of code is a comment.
+	     '
+	     '   + OnConnection
+	     '   + OnDisconnection
+	     '   + OnStartUpComplete
+	     '   + OnAddInsUpdate
+	     '
+	     '
+	     Implements IDTExtensibility
+	
+	     'FormDisplayed keeps track of whether your form is displayed
+	     Public FormDisplayed As Boolean
+	
+	     'VBInstance is used to identify which Visual Basic IDE the
+	     'Addin belongs to. Because you can have multiple
+	     'IDEs open, this identifies the correct IDE.
+	     Public VBInstance As VBIDE.VBE
+	
+	     'mcbMenuCommandBar is a reference to the new menu item in the Addins
+	     'Menu.
+	     Dim mcbMenuCommandBar As Office.CommandBarControl
+	
+	     'mfrmAddIn is used to reference the addins form.
+	     Dim mfrmAddIn As New frmAddIn
+	
+	     'MenuHandler is the command bar event handler that gives
+	     'access to the command bar events that is used to notify the
+	     'addin that a menuitem was selected.
+	     Public WithEvents MenuHandler As CommandBarEvents
+	
+	     '  Hides the Addin Form
+	     '
+	     Sub Hide()
+	
+	        On Error Resume Next
+	
+	        FormDisplayed = False
+	        mfrmAddIn.Hide
+	
+	     End Sub
+	
+	     '  Shows the Addin Form
+	     '
+	     Sub Show()
+	
+	        On Error Resume Next
+	
+	        If mfrmAddIn Is Nothing Then
+	           Set mfrmAddIn = New frmAddIn
+	        End If
+	
+	        'Sets the forms Public VBInstance variable to the instance of Visual
+	        'Basic that the addin is being run under.
+	
+	        Set mfrmAddIn.VBInstance = VBInstance
+	
+	        'Sets the Forms Connect Variable to the instance of this class.
+	
+	        Set mfrmAddIn.Connect = Me
+	        FormDisplayed = True
+	        mfrmAddIn.Show
+	
+	     End Sub
+	
+	     'This method adds the Add-In to VB.
+	     '
+	     Private Sub IDTExtensibility_OnConnection(ByVal VBInst As Object, _
+	        ByVal ConnectMode As vbext_ConnectMode, _
+	        ByVal AddInInst As VBIDE.AddIn, custom() As Variant)
+	
+	        On Error GoTo error_handler
+	
+	        'save the vb instance
+	        Set VBInstance = VBInst
+	
+	        'This is a good place to set a breakpoint and
+	        'test various addin objects, properties and methods.
+	        Debug.Print VBInst.FullName
+	
+	        If ConnectMode = vbext_cm_External Then
+	           'Used by the wizard toolbar to start this wizard.
+	           Me.Show
+	        Else
+	           'Create the Menu Item in the AddinMenu and
+	           'return a reference to it in mcbMenuCommandBar.
+	           '(See AddToAddInCommandBar function below.)
+	           '
+	           Set mcbMenuCommandBar = AddToAddInCommandBar("My AddIn")
+	           'Sets this Classes MenuHandler Event to receive events from the
+	           'Menu Item that was just added to the AddInCommandBar
+	           '(mcbMenuCommandBar).
+	          Set Me.MenuHandler = _
+	              VBInst.Events.CommandBarEvents(mcbMenuCommandBar)
+	        End If
+	
+	        ' vbext_cm_AfterStartup indicates Addin is connected after IDE
+	        ' startup.
+	        '
+	        If ConnectMode = vbext_cm_AfterStartup Then
+	           'Checks in the Registry to see if it needs
+	           'to show the Addin when it connects.
+	           If GetSetting(App.Title, "Settings", "DisplayOnConnect", "0") = _
+	              "1" Then
+	              'Set this to display the form on connect.
+	              Me.Show
+	           End If
+	        End If
+	
+	     Exit Sub
+	
+	     error_handler:
+	
+	        MsgBox Err.Description
+	
+	     End Sub
+	
+	     'This method removes the Add-In from VB.
+	     '
+	     Private Sub IDTExtensibility_OnDisconnection(ByVal RemoveMode As _
+	             vbext_DisconnectMode, custom() As Variant)
+	
+	        On Error Resume Next
+	
+	        'Remove the Menu Item for the Add-in
+	        mcbMenuCommandBar.Delete
+	
+	        ' Shut down the Add-In and Save the Visible state of the
+	        ' addin form for the next time the addin is loaded.
+	        '
+	        If FormDisplayed Then
+	           SaveSetting App.Title, "Settings", "DisplayOnConnect", "1"
+	           FormDisplayed = False
+	        Else
+	           SaveSetting App.Title, "Settings", "DisplayOnConnect", "0"
+	        End If
+	
+	        Unload mfrmAddIn
+	        Set mfrmAddIn = Nothing
+	
+	     End Sub
+	
+	     Private Sub IDTExtensibility_OnStartupComplete(custom() As Variant)
+	
+	        If GetSetting(App.Title, "Settings", "DisplayOnConnect", "0") = _
+	           "1" Then
+	           'Set this to display the form on connect.
+	           Me.Show
+	        End If
+	     End Sub
+	
+	     'As it has been mentioned above, all four interfaces must be
+	     'implemented and must contain at least one line of code for your add-in
+	     'to function properly. If you don't have any particular code that you
+	     'want to put in these procedures, just insert a comment. If the
+	     'procedure is empty, it will be removed by the compiler.
+	
+	     Private Sub IDTExtensibility_OnAddInsUpdate(custom() As Variant)
+	     '
+	     End Sub
+	
+	     'This event fires when the menu is clicked in the IDE.
+	     Private Sub MenuHandler_Click(ByVal CommandBarControl As Object, _
+	        handled As Boolean, CancelDefault As Boolean)
+	        Me.Show
+	     End Sub
+	
+	     Function AddToAddInCommandBar(sCaption As String) As _
+	              Office.CommandBarControl
+	        Dim cbMenuCommandBar As Office.CommandBarControl  'command bar object
+	        Dim cbMenu As Object
+	
+	        On Error GoTo AddToAddInCommandBarErr
+	
+	        'See if the Add-Ins menu can be found.
+	        Set cbMenu = VBInstance.CommandBars("Add-Ins")
+	        If cbMenu Is Nothing Then
+	           'Add-Ins menu is not available so you fail.
+	           Exit Function
+	        End If
+	
+	       'Create a new menu item in the Add-Ins menu.
+	       '
+	       Set cbMenuCommandBar = cbMenu.Controls.Add(1)
+	
+	       'Set the menu caption.
+	       '
+	       cbMenuCommandBar.Caption = sCaption
+	
+	       ' Return a Reference to the New Menu Item.
+	       '
+	       Set AddToAddInCommandBar = cbMenuCommandBar
+	
+	     Exit Function
+	
+	     AddToAddInCommandBarErr:
+	
+	     End Function
+	
+	frmAddin.frm
+	------------
+	
+	     Public VBInstance As VBIDE.VBE
+	     Public Connect As Connect
+	
+	     Option Explicit
+	
+	     Private Sub CancelButton_Click()
+	        ' Hide the Form
+	        '
+	        Connect.Hide
+	     End Sub
+	
+	     Private Sub OKButton_Click()
+	        ' Place your specific Add-in code here
+	        '
+	        MsgBox "AddIn operation on: " & VBInstance.FullName
+	     End Sub
+	
+	Addin.bas
+	---------
+	
+	     Option Explicit
+	     Declare Function WritePrivateProfileString& Lib "Kernel32" Alias
+	        "WritePrivateProfileStringA" (ByVal AppName$, ByVal KeyName$, _
+	        ByVal keydefault$, ByVal FileName$)
+	
+	     '====================================================================
+	     'This sub should be executed from the Immediate window.
+	     'In order to get this app added to the VBADDIN.INI file,
+	     'you must change the name in the second argument to reflect
+	     'the correct name of your project.
+	     '====================================================================
+	     Sub AddToINI()
+	        Dim ErrCode As Long
+	        ErrCode = WritePrivateProfileString("Add-Ins32",
+	              "MyAddIn.Connect","0", "vbaddin.ini")
+	     End Sub
+	
+	Visual Basic 6.0
+	----------------
+	
+	Although the Add-in project code in Visual Basic 6.0 is very similar to the
+	Visual Basic 5.0 code, only two files are added to the MyAddin project; the
+	frmAddin.frm and an ActiveX Designer (connect.dsr). The ActiveX Designer is an
+	ActiveX component that has a programmable interface and a visual interface. The
+	Designer allows users to customize the Add-in for run-time use. The designer
+	also contains the necessary AddinInstance Interface, rather than needing to
+	implement the IDTExtensibility Interface.
+	
+	On the General tab, the designer lets you customize some basic information for
+	the Add-in such as the Display Name, Description, Host application and version,
+	Initial Load Behavior, and whether the Add-in contains a User Interface.
+	
+	On the Advanced tab, you have the option of selecting a Satellite DLL for
+	Localization and a Registry key to save additional Add-in specific data.
+	
+	You can add code to the add-in through code by editing the designer code and by
+	adding code to frmAddin.
+	
+	How to Run the Basic Add-in Using Visual Basic 5.0 or Visual Basic 6.0
+	----------------------------------------------------------------------
+	
+	1. Start a new project and select the AddIn icon.
+	
+	2. If you are using Visual Basic 5.0, press CTRL+G to open the Immediate Window.
+	  Type "addtoini" (without the quotation marks), and press return. (NOTE: This
+	  step is not required in Visual Basic 6.0.)
+	
+	3. Press F5 to run the Add-In. This loads and registers the Add-In.
+	
+	4. Create a new Standard EXE in a second instance of Visual Basic.
+	
+	5. From the Add-Ins menu, select Add-in Manager.
+	
+	6. In Visual Basic 5.0, select the My Addin check box.
+	
+	  In Visual Basic 6.0, select My Add-In from the list, and select the
+	  Loaded/Unloaded check box. Click OK.
+	
+	7. From the Add-Ins menu, select My AddIn.
+	
+	8. Click OK to run your specific Add-In code in frmAddin. (A messagebox appears
+	  by default.) Click Cancel to close the form.
+	
+	REFERENCES
+	==========
+	
+	MSDN Library Visual Studio 6.0
+	
+	Additional query words: beta99
+	
+	======================================================================
+	Keywords          : kbActiveX kbAddIn kbVBp kbVBp500 kbVBp600 kbVS600 kbGrpDSVB kbDSupport 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600
+	Version           : WINDOWS:5.0,6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

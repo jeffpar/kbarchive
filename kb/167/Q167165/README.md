@@ -1,0 +1,120 @@
+---
+layout: page
+title: "Q167165: FIX: Too Many Controls on a Form May Crash Visual Basic IDE"
+permalink: kb/167/Q167165/
+---
+
+## Q167165: FIX: Too Many Controls on a Form May Crash Visual Basic IDE
+
+	Article: Q167165
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): WINDOWS:5.0; winnt:
+	Operating System(s): 
+	Keyword(s): kbVBp kbVBp500bug kbVS97sp2fix kbOSWin98fix kbGrpDSVB kbDSupport
+	Last Modified: 05-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+	- Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+	- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When compiling, running, or showing a form with too many controls on it, the IDE
+	may fail (crash) with an error similar to one of the following on Windows 95:
+	
+	  "This program has caused an illegal operation and will be shut down. If
+	  the problem persists, contact the program vendor. VB5 caused an invalid
+	  page fault in module VB5.EXE"
+	
+	  -or-
+	
+	  "This program has caused an illegal operation and will be shut down. If
+	  the problem persists, contact the program vendor. VB5 caused an invalid
+	  page fault in module VBA5.DLL"
+	
+	  -or-
+	
+	  "Error encountered durring load"
+	
+	Under Windows NT 4.0, an error similar to one of the following may be
+	encountered:
+	
+	  "Application Error: The instruction at "0x00417DAA" referenced memory at
+	  "0x021E41FA". The memory could not be "read". Unhandled exception in
+	  VB5.EXE 0xC0000005: Access Violation"
+	
+	  -or-
+	
+	  "Application Error: The instruction at "0x0FAD85F8" referenced memory at
+	  "0x01EE0112". The memory could not be "read." Unhandled exception in
+	  VBA5.DLL 0xC0000005: Access Violation"
+	
+	The memory addresses above are just examples. The addresses encountered may
+	vary.
+	
+	It is also possible for this bug to simply cause the error:
+	
+	  Error encountered during load
+	
+	when opening a project that contains Forms with too many controls. This will be
+	most likely encountered when converting a Visual Basic 4.0 application.
+	
+	CAUSE
+	=====
+	
+	When a project with a form containing too many controls is loaded into Visual
+	Basic 5.0, you may encounter incorrect name space mapping of controls. This
+	includes controls that are elements of control arrays. The incorrect mappings
+	may lead to the above-noted problems in the IDE.
+	
+	RESOLUTION
+	==========
+	
+	To work around this bug, follow the steps below:
+	
+	1. Remove any forms that have too many controls from the project.
+	
+	
+	2. With the project loaded, re-add the forms to the project using the
+	  "Project\Add File" menu. When you re-add the file in this way, Visual Basic
+	  correctly handles the naming of the controls.
+	
+	NOTE: The forms will have to be added individually every time the project is
+	loaded. Trying to load the entire project will result in error.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article. This bug has been fixed in Windows 98.
+	
+	This bug has also been fixed in Visual Studio 97 Service Pack 2.
+	
+	For more information on the Visual Studio 97 Service Pack 2, please see the
+	following article in the Microsoft Knowledge Base:
+	
+	  Q170365 : INFO: Visual Studio 97 Service Packs - What, Where, and Why
+	
+	For a list of the Visual Basic 5.0 bugs that were fixed in the Visual Studio 97
+	Service Pack 2, please see the following article in the Microsoft Knowledge
+	Base:
+	
+	  Q171554 : INFO: Visual Basic 5.0 Fixes in Visual Studio 97 Service Pack 2
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbVBp kbVBp500bug kbVS97sp2fix kbOSWin98fix kbGrpDSVB kbDSupport 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500Search kbVBA500 kbVB500 kbZNotKeyword3
+	Version           : WINDOWS:5.0; winnt:
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

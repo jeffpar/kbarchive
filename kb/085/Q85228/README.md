@@ -1,0 +1,118 @@
+---
+layout: page
+title: "Q85228: BUG: Causes of A2042 During Data Initialization"
+permalink: kb/085/Q85228/
+---
+
+## Q85228: BUG: Causes of A2042 During Data Initialization
+
+	Article: Q85228
+	Product(s): Microsoft Macro Assembler
+	Version(s): MS-DOS:6.0,6.0a,6.0b,6.1,6.11,6.1a
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 06-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Macro Assembler (MASM), versions 6.0, 6.0a, 6.0b, 6.1, 6.1a, 6.11 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Attempting to initialize a STRUCT or an array with a single data statement may
+	generate the following error when too many initialization values are used:
+	
+	  error A2042: statement too complex
+	
+	CAUSE
+	=====
+	
+	The error is produced because the token limit for that particular line has been
+	exceeded. This limit may also be exceeded by lines that are extended using the
+	backslash ("\") character or the comma, as shown in the sample code below.
+	
+	RESOLUTION
+	==========
+	
+	Do not attempt to initialize a struct on a single line that contains more than
+	99 tokens, commas, numbers, and so forth.
+	
+	The data statement can be broken into several statements as shown by the array D2
+	in the sample below. Consecutive data items specified in this way are allocated
+	in memory exactly as they would be if they were in a single data declaration.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft Macro Assembler
+	(MASM) versions 6.x. We are researching this problem and will post new
+	information here in the Microsoft Knowledge Base as it becomes available.
+	
+	MORE INFORMATION
+	================
+	
+	Sample Code
+	-----------
+	
+	In the sample code below, there are 97 tokens in the line where test_struct0 is
+	declared on a single text line. This line assembles without a problem. The
+	initialization of test_struc1, however, causes error A2042 to be generated.
+	test_struc1 has 99 tokens, which causes the error A2042 to be produced.
+	test_struct2 and test_struct3 are multiple-line demonstrations of the same
+	problem.
+	
+	The array d1 illustrates the same problem for an array of WORD. Array d2 shows a
+	workaround.
+	
+	  ; assembly options needed: /c
+	  .MODEL SMALL,C
+	  .DATA
+	
+	  prob_struct STRUCT 2
+	  element WORD 60 DUP(0)
+	  prob_struct ENDS
+	
+	  ; test_struct0 and test_struct1 should be single lines; they were
+	  ; broken for readability. Reassemble them to a single line.
+	
+	  test_struct0 prob_struct { {0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,
+	                             1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,
+	                             2,3,4,5,6,7} } ; no error
+	
+	  test_struct1 prob_struct { {0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,
+	                             1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,
+	                             2,3,4,5,6,7,8} } ; error produced
+	
+	  test_struct2 prob_struct { {0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,
+	                             0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,
+	                             0,1,2,3,4,5,6,7} } ; no error
+	
+	  test_struct3 prob_struct { {0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,
+	                             0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,
+	                             0,1,2,3,4,5,6,7,8} } ; error produced
+	
+	  d1 WORD  1,2,3,4,5,6,7,8,9,10,11,2,3,4,5,6,7,8,9,20,
+	           21,2,3,4,5,6,7,8,9,30,31,2,3,4,5,6,7,8,9,
+	           40,41,2,3,4,5,6,7,8,9
+	  ;  error A2042: statement too complex
+	
+	  d2 WORD 1,2,3,4,5,6,7,8,9,10,11,2,3,4,5,6,7,8,9,20,
+	          21,2,3,4,5,6,7,8,9,30,31,2,3,4,5,6,7,8,9,40,
+	          41,2,3,4,5,6,7,8
+	     WORD 9
+	  ; same data as d1 but assembles without error
+	
+	  END
+	
+	Additional query words: 6.00 6.00a 6.00b 6.10 6.10a buglist6.00b buglist6.10 buglist6.10a buglist6.11 h_masm buglist6.00 buglist6.00a
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMASMsearch kbAudDeveloper kbMASM600 kbMASM610 kbMASM611 kbMASM610a kbMASM600a kbMASM600b
+	Version           : MS-DOS:6.0,6.0a,6.0b,6.1,6.11,6.1a
+	
+	=============================================================================
+	

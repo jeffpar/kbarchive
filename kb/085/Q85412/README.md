@@ -1,0 +1,205 @@
+---
+layout: page
+title: "Q85412: MS-DOS 5.0a Upgrade README.TXT: Network Compatibility"
+permalink: kb/085/Q85412/
+---
+
+## Q85412: MS-DOS 5.0a Upgrade README.TXT: Network Compatibility
+
+	Article: Q85412
+	Product(s): Microsoft Disk Operating System
+	Version(s): 5.0a
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 12-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft MS-DOS operating system version 5.0a 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The following information was taken from the Microsoft MS-DOS 5.0a Upgrade
+	README.TXT file.
+	
+	6. MAKING YOUR NETWORK COMPATIBLE WITH MS-DOS 5.0
+	-------------------------------------------------
+	
+	6.1 MS-DOS Shell and Networks
+	-----------------------------
+	
+	Most network software won't work correctly if you start it from a MS-DOS Shell
+	command prompt. Start your network before starting MS-DOS Shell.
+	
+	6.2 3+Share
+	-----------
+	
+	1. You cannot run a server with 3+Share version 1.6 or earlier and MS-DOS 5.0.
+	
+	2. If you installed 3Com 3+Share with minimal NetBIOS implementation, do one of
+	  the following:
+	
+	  1. Reinstall with a complete NetBIOS implementation.
+	
+	  2. Use the REDIR.400 file to replace the MSREDIR.EXE file on your hard disk.
+	
+	  3. Call Microsoft Sales Information Center (MSIC) and request the LAN Manager
+	     2.0 supplemental disk; see your registration card for the phone number.
+	
+	6.3 AT&T StarGroup
+	------------------
+	
+	Follow these instructions only if you cannot use the AT&T StarGroup network
+	after you upgrade to MS-DOS version 5.0 from MS-DOS version 3.x.
+	
+	1. Install MS-DOS 5 Upgrade.
+	
+	2. Type the following commands:
+	
+	  " SETVER SETUP.EXE 4.00
+	  SETVER ATTSTART.EXE 4.00 " (without the quotation marks)
+	
+	3. Restart your computer.
+	
+	4. Use your StarGroup installation disks to remove the existing network software
+	  from your computer.
+	
+	5. Reinstall StarGroup. When the StarGroup installation prompts you to indicate
+	  which version of MS-DOS you are using, choose MS-DOS version 4.0.
+	
+	6.4 Microsoft LAN Manager 2.0 Enhanced
+	--------------------------------------
+	
+	If you are running Microsoft LAN Manager 2.0 Enhanced or an OEM version of LAN
+	Manager 2.0 Enhanced, you may want to take advantage of any remaining space in
+	the upper memory area by loading LAN Manager services such as NETPOPUP in this
+	area. Call Microsoft Sales Information Center (MSIC) to request the LAN Manager
+	2.0 supplemental disk and technical notes. See your registration card for the
+	phone number.
+	
+	If you are running Microsoft LAN Manager 2.0 Enhanced and get a "NET3055"
+	message, do ONE of the following:
+	
+	- Use the RAM switch in the DEVICE command for EMM386 in your CONFIG.SYS file,
+	  and the LIM=YES command in the [workstation] section of your LANMAN.INI file.
+	
+	- Use the NOEMS switch in the DEVICE command for EMM386 in your CONFIG.SYS
+	  file, and the LIM=NO command in the [workstation] section of your LANMAN.INI
+	  file.
+	
+	6.5 Net/One PC
+	--------------
+	
+	If Ungermann-Bass Net/One PC does not load with MS-DOS 5.0, do one of the
+	following:
+	
+	- Contact your vendor to get an updated LOADNIU.EXE file.
+	
+	- Put a UBPAUSE command between the LOADNIU and XNSBIOS lines of the MSNET.INI
+	  file.
+	
+	- Issue network commands from a batch file that includes a PAUSE command
+	  between the LOADNIU and XNSBIOS lines.
+	
+	6.6 Novell Networks
+	-------------------
+	
+	NetWare Shell Version (NET5.COM):
+	
+	  The NetWare workstation shell software is Novell's basic DOS shell and is
+	  included with MS-DOS 5.0. You may require a different shell for a specific
+	  application. Contact your authorized Novell reseller if you believe another
+	  shell may be needed. EMSNET5.EXE and XMSNET5.EXE, alternate shells, are
+	  available from Novell.
+	
+	Novell Remote Workstations (RPLFIX.COM):
+	
+	  If you can't load MS-DOS 5.0 on your remote-boot workstation, contact Novell
+	  for the RPLFIX.COM file.
+	
+	Drive Mapping Utilities:
+	
+	  If you run LOGIN.EXE, MAP.EXE, and SESSION.EXE from MS- DOS Shell or while
+	  MS-DOS Shell is running, a search path is not added to the existing path. Use
+	  these programs before starting MS-DOS Shell.
+	
+	TBMI2.COM and Task Swapper:
+	
+	If you can't use Task Swapper in MS-DOS Shell when running a Novell network, do
+	the following:
+	
+	1. Expand and copy the IPX.OB_ and TBMI2.CO_ files from Disk 2 (5.25" disks) or
+	  from Disk 3 (3.5" disks) to IPX.OBJ and TBMI.COM on your hard disk.
+	
+	2. Use the IPX.OBJ file to create a new IPX.COM file. For information about
+	  creating an IPX.COM file, see your Novell documentation.
+	
+	3. Start your network, using the new IPX.COM and NET5.COM files.
+	
+	4. Start TBMI2.COM.
+	
+	5. Start the application that may be causing problems with Task Swapper. Run the
+	  application and then exit.
+	
+	6. Display diagnostic information by typing the following:
+	
+	  " tbmi2 /d " (without the quotation marks)
+	
+	7. If the value in the field named Far Call Usage is not 0, you need to run
+	  TBMI2.COM before using Task Swapper.
+	
+	  To get help with TBMI2.COM, type the following:
+	
+	  " tbmi2 /? " (without the quotation marks)
+	
+	  The default configuration for TBMI2.COM is correct for most applications. If
+	  you need help configuring the program, contact Novell.
+	
+	TBMI2.COM and Windows:
+	
+	  Don't run TBMI2.COM if you are using Windows 3.0.
+	
+	6.7 PC-NFS 3.0
+	--------------
+	
+	If you use PC-NFS 3.0 with MS-DOS Shell, MS-DOS Shell may display more drives
+	than you have currently enabled. To prevent this, use the PC-NFS /d switch to
+	specify the number of drives you are using. For more information, see your PC-
+	NFS documentation.
+	
+	If you can't use the COPY or XCOPY command on PC-NFS 3.01, contact your vendor to
+	get an updated version of the PCNFS.SYS device driver.
+	
+	6.8 TOPS Network
+	----------------
+	
+	If your system is a TOPS workstation, the MS-DOS Shell MOVE command may not
+	work.
+	
+	Don't use the LOADHIGH command with a TOPS network.
+	
+	6.9 IBM PC LAN 1.34
+	-------------------
+	
+	If you have problems with applications that use record locking or file locking,
+	you may need an updated REDIR50.EXE file included in ICO 3039. Contact IBM
+	Support Channel.
+	
+	6.10 DEC PATHWORKS for DOS
+	--------------------------
+	
+	To get support for MS-DOS Task Swapper, use PATHWORKS for DOS version 4.1 or
+	later.
+	
+	Additional query words: 5.00a update
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMSDOSSearch kbMSDOS500a
+	Version           : :5.0a
+	
+	=============================================================================
+	

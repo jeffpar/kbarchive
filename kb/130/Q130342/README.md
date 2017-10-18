@@ -1,0 +1,78 @@
+---
+layout: page
+title: "Q130342: PRB: Selecting Cancel Cancels User Code But Not Form Execution"
+permalink: kb/130/Q130342/
+---
+
+## Q130342: PRB: Selecting Cancel Cancels User Code But Not Form Execution
+
+	Article: Q130342
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:3.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 10-FEB-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 3.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The form runs and appears even though you clicked Cancel in the Program Error
+	dialog box. The form and all objects are not removed from memory.
+	
+	CAUSE
+	=====
+	
+	The Cancel button is supposed to cancel running code only. This is by design.
+	The form is not code, so clicking Cancel has no affect on the form. All Cancel
+	is supposed to do is cancel all the procedures, methods, and events currently in
+	the call stack. It is aware of the existence of objects.
+	
+	WORKAROUND
+	==========
+	
+	If you want to kill the object upon an occurrence of a program error, you can
+	suspend the program, release the object, and then cancel the program.
+	
+	STATUS
+	======
+	
+	This behavior is by design.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Create a new form.
+	
+	2. In the LOAD EVENT for the form, type "?MYTEST1()" (without the quotation
+	  marks) on one line, and "?MYTEST2()" (without the quotation marks) on the
+	  second line. (intentional errors)
+	
+	3. Open the Debug window from the Tools menu.
+	
+	4. Add _SCREEN.ACTIVEFORM to the Debug window.
+	
+	5. Run the Form.
+	
+	6. When the program error dialog appears, click the Cancel button. Notice that
+	  the user-defined code in the Load method is canceled. The second line is not
+	  executed, but the form object is created and displayed.
+	
+	
+	Additional query words: VFoxWin Suspend Ignore Help
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+	Version           : WINDOWS:3.0
+	
+	=============================================================================
+	

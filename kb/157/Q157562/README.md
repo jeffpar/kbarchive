@@ -1,0 +1,161 @@
+---
+layout: page
+title: "Q157562: XCLN: How To Merge Two .PST Files"
+permalink: kb/157/Q157562/
+---
+
+## Q157562: XCLN: How To Merge Two .PST Files
+
+	Article: Q157562
+	Product(s): Microsoft Exchange
+	Version(s): WINDOWS:4.0
+	Operating System(s): 
+	Keyword(s): kbusage
+	Last Modified: 08-APR-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Windows 3.x client, version 4.0 
+	- Microsoft Exchange Windows 95/98 client, version 4.0 
+	- Microsoft Exchange Windows NT client, version 4.0 
+	- Microsoft Exchange MS-DOS client, version 4.0 
+	- Microsoft Exchange Macintosh client, version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article outlines how to combine two Personal Information Stores (PST).
+	These steps may be needed for disaster recovery by merging a backup copy of a
+	PST file or for convenience when moving to a new computer.
+	
+	MORE INFORMATION
+	================
+	
+	A PST is a file that contains messages, files, and other items stored in
+	folders. When you create a PST, you can store it on your computer's hard disk
+	drive or on a file server that you have access to. You can create any number of
+	PSTs and can save, copy, and move them around just like any other file.
+	
+	The following example shows how to merge a PST file called Mailbox.pst with a
+	version from a backup also named Mailbox.pst. The scenario for this type of
+	restore could be that a new computer was brought online for a user and they
+	started using Microsoft Exchange with a default PST before obtaining their
+	original PST. In this example, the PSTs need to be combined with special
+	attention given to prevent overwriting the PSTs that have the same filename.
+	
+	Steps to Merge Files:
+	---------------------
+	
+	1. Make backup copies of both PST files.
+	
+	2. Rename the restored version of Mailbox.pst to Mailbox1.pst.
+	
+	3. Copy Mailbox1.pst to the directory that contains the working version of
+	  Mailbox.pst.
+	
+	4. Add Mailbox1.pst to your active profile using steps 5 through 8.
+	
+	5. From the Tools menu in the Viewer, click Options and then the Services tab.
+	
+	6. In the The Following Information Services Are Set Up In This Profile dialog
+	  box, click Personal Information Store, and then click Add. In the The
+	  Following Information Services Are Set Up In This Profile box, click Personal
+	  Information Store, and then click Add.
+	
+	7. In the Available Information Services box, click Mailbox1.pst and then click
+	  the OK.
+	
+	8. Keep clicking the OK button until all open dialog boxes are closed.
+	
+	You should now see two Personal Folders icons on the left pane of the Microsoft
+	Exchange client. The remaining steps outline how to move information from the
+	old PST (Mailbox1.pst) to the current PST (Mailbox.pst). When finished, you will
+	have your old mail merged with the current working file.
+	
+	Merging the Duplicate Inbox, Sent Mail, and Deleted Items Folders
+	-----------------------------------------------------------------
+	
+	The Inbox, Sent Mail, and Deleted Items folders cannot be moved from one PST to
+	another. Instead, the items inside of each folder must be moved to the
+	destination PST. Folders that exist in both PSTs can be moved to the other PST
+	but the folders will be renamed. The following steps outline how to move the
+	contents of these folders without creating new folders with different names.
+	These steps are required when merging the Inbox, Sent Mail, and Deleted Items
+	folders.
+	
+	Steps:
+	------
+	
+	1. Expand the subfolders in both sets of Personal Folders if they are not
+	  currently visible on the left view.
+	
+	2. Open the Inbox of Mailbox1.pst so the messages are visible on the right.
+	  Mailbox1.pst should be the second set of personal folders listed in the view
+	  pane since it was added last.
+	
+	3. Click on a single message in the Inbox of Mailbox1.pst.
+	
+	4. Select all messages by pressing CTRL-A or choose Select All from the Edit
+	  menu. All messages should be highlighted.
+	
+	5. Click on the list of messages and drag and drop the contents of Inbox on top
+	  of the destination Inbox (Mailbox.pst).
+	
+	6. Verify that the messages were copied into the current PST by opening the
+	  Inbox on Mailbox.pst.
+	
+	7. Repeat these steps for Sent Mail and Deleted Items and for any folder that
+	  exists in both PSTs.
+	
+	Merging Unique Folders
+	----------------------
+	
+	If a folder does not exist in both PST files, you can simply drag and drop a
+	folder to move its contents. These steps may be useful when restoring from a
+	backup if the new PST hasn't had the same folder names created yet. If the
+	folder exists with the same name, see the steps above.
+	
+	1. Expand the subfolders in both sets of Personal Folders if they are not
+	  currently visible on the left view.
+	
+	2. Choose a folder in Mailbox1.pst that you want moved to Mailbox.pst by
+	  single-clicking on the folder.
+	
+	3. Drag the folder to the destination PST file and drop it on top of Personal
+	  Folders. Your set of folders may be named something else. The top level of
+	  the PST file is the destination for the drag and drop.
+	
+	4. Repeat steps for each unique folder.
+	
+	Once you have completed these steps and have verified that the current PST is up
+	to date with all of your messages, you can remove the second PST from your
+	profile. The following steps outline this procedure. Note that the PST file is
+	not deleted from the disk during this procedure. The reference for the file is
+	only removed from the profile.
+	
+	1. From the Tools menu in the Viewer, click Options, and then click the Services
+	  tab.
+	
+	2. In The Following Information Services Are Set Up In This Profile box, click
+	  the second Personal Information Store, and then click the Delete button. If
+	  you need to confirm that this is the appropriate PST file, click Properties
+	  before Delete. In our example Mailbox1.pst should be the second PST.
+	
+	3. Click the OK button until all open dialog boxes are closed. The PST is now
+	  removed from the active profile.
+	
+	Note: For more information on moving and copying items and folders to the new
+	PST, see the Moving or Copying a Private Folder and Moving or Copying Items to
+	Other Folders topics in the Microsoft Exchange Help file.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbusage 
+	Technology        : kbHWMAC kbOSMAC kbExchangeSearch kbExchange400 kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange400DOS kbExchange400Mac kbExchange400NT kbExchange400Win95
+	Version           : WINDOWS:4.0
+	
+	=============================================================================
+	

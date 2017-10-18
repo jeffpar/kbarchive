@@ -1,0 +1,91 @@
+---
+layout: page
+title: "Q80747: Supported File Types for Windows 3.1 Clipboard"
+permalink: kb/080/Q80747/
+---
+
+## Q80747: Supported File Types for Windows 3.1 Clipboard
+
+	Article: Q80747
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:3.1,3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 05-OCT-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows versions 3.1, 3.11 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The Clipboard is the main data-exchange feature of Microsoft Windows. It is a
+	common area for storing data handles through which applications can exchange
+	formatted data. The Clipboard can hold a number of different data formats and
+	corresponding data handles, all representing the same data, but in many
+	different formats.
+	
+	For example, a pie chart might be held in the Clipboard as both a metafile
+	picture and a bitmap. An application receiving the pie chart from the Clipboard
+	would have to choose which representation matched its requirements. In general,
+	the format that provides the most information is the most desirable, as long as
+	the application understands that format.
+	
+	MORE INFORMATION
+	================
+	
+	Windows provides several predefined data formats for use in data interchange.
+	The following list describes the common formats:
+	
+	  Format          Description
+	  ------          -----------
+	
+	  BITMAP          Specifies a device-dependent bitmap
+	
+	  DIB             Specifies a device-independent bitmap
+	
+	  DIF             Specifies that the data is in the Software Arts'
+	                  data-interchange format (DIF)
+	
+	  METAFILEPICT    Specifies a metafile-picture structure
+	
+	  OEMTEXT         Specifies null-terminated text in the OEM
+	                  character set
+	
+	  RIFF            Specifies that the data is in any resource
+	                  interchange file (RIFF) format.
+	
+	  SYLK            Specifies that the data is in the Microsoft
+	                  symbolic link (SYLK) format.
+	
+	  TEXT            Specifies null-terminated text
+	
+	                  Windows supports two formats for text: TEXT and
+	                  OEMTEXT. TEXT is the default Windows Clipboard text
+	                  format. OEMTEXT is used by Windows for text within
+	                  non-Windows-based applications.
+	
+	  TIFF            Specifies that the data is in the tag image file
+	                  format (TIFF).
+	
+	  WAVE            Specifies that the data is a RIFF waveform file with
+	                  form type WAVE.
+	
+	NOTE: Clipboard data objects can be any size. The size of memory allocated for
+	Clipboard usage is determined by the application copying to the Clipboard and
+	the application receiving data from the Clipboard. You may receive an
+	application error message if your application does not allocate sufficient
+	memory.
+	
+	Additional query words: 3.10 3.1 KBOLE maximum max limit 3.11 win31
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+	Version           : WINDOWS:3.1,3.11
+	
+	=============================================================================
+	

@@ -1,0 +1,120 @@
+---
+layout: page
+title: "Q239875: HOW TO: Use ASP to Force SSL for Specific Pages"
+permalink: kb/239/Q239875/
+---
+
+## Q239875: HOW TO: Use ASP to Force SSL for Specific Pages
+
+	Article: Q239875
+	Product(s): Internet Information Server
+	Version(s): 4.0,5.0
+	Operating System(s): 
+	Keyword(s): kbHOWTOmaster
+	Last Modified: 02-JUL-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Server version 4.0 
+	- Microsoft Internet Information Services version 5.0 
+	-------------------------------------------------------------------------------
+	
+	
+	IN THIS TASK
+	------------
+	
+	- SUMMARY
+	
+	   - Prerequisites
+	- Forcing SSL using ASP
+	
+	- REFERENCES
+	
+	SUMMARY
+	=======
+	
+	It is frequently good security practice to require Secure Sockets Layer (SSL)
+	for certain pages on a Web site. Although this can be configured through the
+	Internet Services Manager (ISM) in the Microsoft Management Console (MMC), you
+	can also use Active Server Pages (ASP) to force SSL for specific pages without
+	making changes in the MMC.
+	
+	Prerequisites
+	-------------
+	
+	This article assumes the following conditions:
+	
+	- IIS is running on standard ports:
+	
+	   - HTTP = Port 80
+	
+	   - HTTPS = Port 443
+	
+	- IIS has a valid SSL certificate installed.
+	
+	- The Web site or virtual server that is used does not use HTTP/1.1 host
+	  headers for name resolution.
+	
+	Forcing SSL using ASP
+	---------------------
+	
+	To force SSL using ASP, follow these steps:
+	
+	1. Click Start, click Run, type "Notepad" (without the quotation marks), and
+	  then click OK.
+	
+	2. Paste the following code into a blank Notepad document. On the File menu,
+	  click Save As, and then save the following code in the root of your Web
+	  server as an include file named ForceSSL.inc:
+	
+	  <%
+	     If Request.ServerVariables("SERVER_PORT")=80 Then
+	        Dim strSecureURL
+	        strSecureURL = "https://"
+	        strSecureURL = strSecureURL & Request.ServerVariables("SERVER_NAME")
+	        strSecureURL = strSecureURL & Request.ServerVariables("URL")
+	        Response.Redirect strSecureURL
+	     End If
+	  %>
+	
+	3. For each page that requires SSL, paste the following code at the top of the
+	  page to reference the include file from the previous step:
+	
+	  <%@Language="VBSCRIPT"%>
+	  <!--#include virtual="/ForceSSL.inc"-->
+	
+	When each page is browsed, the ASP code that is contained in the include file
+	detects the port to determine if HTTP is used. If HTTP is used, the browser will
+	be redirected to the same page by using HTTPS.
+	
+	REFERENCES
+	==========
+	
+	For additional information about this topic, click the article numbers below to
+	view the articles in the Microsoft Knowledge Base:
+	
+	  Q171084 How to Install a Certificate
+	
+	  Q187504 HTTP 1.1 Host Headers Are Not Supported When You Use SSL
+	
+	  Q218445 How to Configure Certificate Server for Use with SSL on IIS
+	
+	  Q228991 How to Create and Install an SSL Certificate in Internet Information
+	  Server 4.0
+	
+	  Q228836 Installing a New Certificate with Certificate Wizard for Use in
+	  SSL/TLS
+	
+	  Q257591 Description of the Secure Sockets Layer (SSL) Handshake
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbHOWTOmaster 
+	Technology        : kbiisSearch kbiis500 kbiis400
+	Version           : :4.0,5.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

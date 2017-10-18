@@ -1,0 +1,65 @@
+---
+layout: page
+title: "Q163878: CreateBitmap() API - Bitmap Size Limits Introduced in WinNT 4.0"
+permalink: kb/163/Q163878/
+---
+
+## Q163878: CreateBitmap() API - Bitmap Size Limits Introduced in WinNT 4.0
+
+	Article: Q163878
+	Product(s): Microsoft Windows NT
+	Version(s): WinNT:4.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 09-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 4.0 
+	- Microsoft Windows NT Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If you have an application that uses the CreateBitmap() application programming
+	interface (API) to create bitmaps, you may find it impossible to create bitmaps
+	greater than 48 MB (or less, on computers with limited RAM) when you run the
+	application in Windows NT 4.0.
+	
+	This limit is not apparent when the application is run in Windows NT 3.51.
+	
+	CAUSE
+	=====
+	
+	This is a side effect of moving display drivers from user mode in Windows NT
+	3.51 to kernel mode in Windows NT 4.0.
+	
+	In Windows NT 3.51, the CreateBitmap() API allocates the bitmap in user- mode
+	paged memory, and it is therefore possible to create bitmaps up to the maximum
+	size of the pagefile. Bitmap size is therefore limited only by the amount of
+	disk space that you can allocate to your pagefile(s) in Windows NT 3.51.
+	
+	In Windows NT 4.0, the CreateBitmap() API allocates the bitmap in kernel- mode
+	paged memory. As Kernel-mode paged memory is a scarce resource, and exhausting
+	it can adversely affect system performance, application usage of Kernel-mode
+	paged memory is restricted to smaller allocations.
+	
+	RESOLUTION
+	==========
+	
+	To circumvent this limit, the application must be recoded to create bitmaps by
+	calling the CreateDIBSection() API instead of the CreateBitmap() API.
+	
+	CreateDIBSection() API allocates the bitmap in user-mode paged memory, and
+	bitmaps created using this API are therefore not affected by the limit imposed
+	on kernel-mode paged memory allocations.
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+	Version           : WinNT:4.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

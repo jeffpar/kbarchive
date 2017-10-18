@@ -1,0 +1,132 @@
+---
+layout: page
+title: "Q186645: Troubleshooting RDP Client Connection Problems"
+permalink: kb/186/Q186645/
+---
+
+## Q186645: Troubleshooting RDP Client Connection Problems
+
+	Article: Q186645
+	Product(s): Microsoft Windows NT
+	Version(s): 4.0
+	Operating System(s): 
+	Keyword(s): kbnetwork
+	Last Modified: 05-MAR-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article summarizes the various causes for Terminal Server Client connection
+	failures.
+	
+	MORE INFORMATION
+	================
+	
+	The Terminal Server Client connects to the Terminal Server through a TCP socket
+	connection over port 3389. The basic requirements for a connection are the
+	following:
+	
+	- The Client needs a functional connection to the network using TCP/IP.
+	- The Server connection needs to be functional.
+	- The user needs permissions to connect.
+	
+	If a Client cannot connect:
+	
+	1. Does the client computer have Microsoft TCP/IP installed? If not, install the
+	  TCP/IP protocol.
+	
+	2. If the client computer uses Windows For Workgroups 3.11, is TCP/IP-32b
+	  installed? This version of TCP/IP is required for WFW and is located on the
+	  Windows NT 3.51 or 4.0 Server CD-ROM as well as the Terminal Server 4.0
+	  CD-ROM in the Clients folder. Install the Windows for Workgroups Update files
+	  in this same folder also.
+	
+	3. Does the client computer have normal network connectivity over TCP/IP to the
+	  Terminal Server? If other protocols are installed on the client, you may want
+	  to remove them for testing purposes.
+	
+	   - Can you ping the Server?
+	   - Can you telnet to port 3389 from the Client to the Server?
+	   - Can you use the command "Net View \\computername" against the Terminal
+	     Server and get a list of shared resources available?
+	
+	     NOTE: While NetBIOS connectivity is not necessary for the Terminal Server
+	     Client, this can help you determine the state of your network
+	     connectivity.
+	
+	   - Can you connect to and use Terminal Server shared folders from the client
+	     computer?
+	
+	     NOTE: This is not necessary for Client functionality, but can help
+	     determine if your network is healthy.
+	
+	If these tests fail, you have a network connectivity problem, not a Terminal
+	Server Client problem. If you can do everything except telnet to port 3389,
+	perhaps you have a firewall blocking the port. This port is required for the
+	Terminal Server Client. Since the client protocol (RDP) is encapsulated within
+	TCP/IP, you can troubleshoot a network connectivity problem with the client
+	exactly as you would any TCP/IP connectivity issue.
+	
+	- Log on at the Terminal Server console as an administrator and install the
+	  Terminal Server Client on the Terminal Server. Start the Client directly on
+	  the Terminal Server console and try to connect to the same connection that
+	  the failing client is trying to reach. Does this work at the console?
+	  If so, then the connection is functioning.
+	
+	- Log on at the Terminal Server console as the user who is trying to use the
+	  client. Can you run the Terminal Server Client as this user at the console?
+	  If so, the connection is functional and the user has appropriate permissions
+	  to use the connection.
+	
+	If the previous tests fail, check the following:
+	
+	- In Terminal Server Connection Configuration, highlight the connection and
+	  check Security/Permissions on the menu. Does the user have at least guest
+	  access to the connection?
+	
+	- In Terminal Server Connection Configuration, view the properties for the
+	  connection. Has the Maximum Connection Count been set? Check the Unlimited
+	  box for testing purposes.
+	
+	- In Terminal Server Connection Configuration, view the properties for the
+	  connection and open the Advanced properties screen. Is the connection
+	  enabled? If this is disabled, no one is able to connect.
+	
+	- In Terminal Server License Manager check to see that you have available
+	  client licenses. This tool is for Client licenses.
+	
+	- In License Manager check to see that you have available Client Access
+	  Licenses. This tool is for Server access licenses.
+	
+	NOTE: Clients require both a Client (NT Workstation) license and a Client Access
+	License (Server access). These licenses are purchased separately.
+	
+	- If the user cannot log on at the Terminal Server console, the client is also
+	  unable to connect. The error message you receive is that the user is not
+	  allowed to log on interactively. The user must have the right to log on
+	  locally at the console. This is set in User Manager under Account
+	  Policies/Log on Locally. If the Terminal Server is a domain controller,
+	  policies are set at the PDC and are valid for all domain controllers in the
+	  domain.
+	
+	- If the user cannot logon at the Terminal Server console but has the right to
+	  do so in User Manager Account Policies, check the user's account. The ability
+	  to log on locally can be disabled on a per user basis in the Config screen
+	  for the user. Make sure "Allow logon to Terminal Server" is checked.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbnetwork 
+	Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+	Version           : :4.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

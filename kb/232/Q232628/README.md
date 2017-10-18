@@ -1,0 +1,185 @@
+---
+layout: page
+title: "Q232628: Err Msg: The Service Profile Is Damaged. Re-install the..."
+permalink: kb/232/Q232628/
+---
+
+## Q232628: Err Msg: The Service Profile Is Damaged. Re-install the...
+
+	Article: Q232628
+	Product(s): The Microsoft Network
+	Version(s): 2.5,2.51,2.52,2.6,5.0,5.4
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 31-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The Microsoft Network versions 2.5, 2.51, 2.52, 2.6, 5.0, 5.4 
+	- Microsoft Windows 95 
+	- Microsoft Windows 98 
+	- Microsoft Windows 98 Second Edition 
+	- Microsoft Windows Millennium Edition 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	After you double-click the MSN, Internet Explorer, or Outlook Express icons, you
+	may receive the following error message when the MSN dialer tool starts:
+	
+	  The Service Profile is damaged. Re-install the service profile.
+	
+	CAUSE
+	=====
+	
+	This problem can occur after you upgrade to Microsoft Windows 98 Second Edition.
+	When you do so, the following entry may not exist in the Msn.cms file or the
+	Msn.cmp file:
+	
+	  [Profile Format]
+	  Version=1
+	
+	This message can also occur if the AOL tray is being loaded at startup.
+	
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, use one of the following four methods:
+	
+	Uninstall and Reinstall MSN
+	---------------------------
+	
+	To uninstall MSN:
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click Add/Remove Programs, and then click MSN v2.5 or MSN v2.6 from
+	  the Install/Uninstall dialog box that appears.
+	
+	3. Click Add/Remove, and when asked if you want to remove MSN, click Yes.
+	
+	To upgrade to the current version of MSN you can download or order your free CD.
+	Go to http://free.msn.com/upgrade.asp.
+	
+	To reinstall MSN using your Windows 98 Second Edition CD:
+	
+	1. Click Start, point to Find, and then click "Files or Folders".
+	
+	2. Insert your Windows 98 Second Edition CD.
+	
+	3. In the Look in box, select your CD-ROM drive.
+	
+	4. In the Named box, type "rstormsn" (without the quotation marks), and then
+	  click Find Now.
+	
+	5. Double-click rstormsn to open, and then double-click rstormsn.exe to
+	  reinstall MSN.
+	
+	6. Once the installation process is complete, return to the desktop by closing
+	  all open windows, and then double-click the Setup MSN Internet Access icon to
+	  configure MSN.
+	
+	Rename msn.cmp and msn.cms and install MSN 5.0 or later.
+	
+	--------------------------------------------------------
+	
+	- This applies to MSN 5.0 only.
+	
+	To rename msn.cmp and msn.cms:
+	
+	1. Click Start, point to Find, and then click "Files or Folders".
+	
+	2. In the Named box, type "msn.cmp msn.cms" (without the quotation marks), and
+	  then click Find Now.
+	
+	3. Right click on msn.cmp, click Rename, type msn.cmp.old, and then hit ENTER.
+	
+	4. Right click on msn.cms, click Rename, type msn.cms.old, and then hit ENTER.
+	
+	5. Close the Find Files or Folders dialogue box.
+	
+	6. On the Windows 98 CD, in the \Tools\MTSutil\Rstormsn folder, double-click
+	  RSTORMSN.EXE.
+	
+	7. Click OK.
+	
+	Insert the Missing Text Into the Files
+	--------------------------------------
+	
+	1. Click Start, point to Find, and then click "Files or Folders".
+	
+	2. In the Named box, type "msn.cmp msn.cms" (without the quotation marks), and
+	  then click Find Now.
+	
+	3. To open the Msn.cms file, click once to select it, hold down the left SHIFT
+	  key, and then right-click the file.
+	
+	4. Click Open With.
+	
+	5. In the Open With dialog box, click Notepad, verify that the Always use this
+	  program to open this file check box is cleared, and then click OK.
+	
+	6. Verify that the following information is the first line in the opened text
+	  file, and if it is not, add it:
+	
+	  [Profile Format]
+	  Version=1
+	
+	7. Save the changes to this file, and then repeat steps 3-6 for the Msn.cmp
+	  file.
+	
+	If you do not want MSN installed, delete registry key: HKLM\Software\Microsoft\Connection Manager
+	-------------------------------------------------------------------------------------------------
+	
+	Remove the AOL Tray from the statup group by following these steps:
+	-------------------------------------------------------------------
+	
+	1. Click the Start button, then choose Programs \ Startup.
+	
+	2. Right-click the AOL Tray and choose Delete
+	
+	
+	WARNING: Using Registry Editor incorrectly can cause serious problems that may
+	require you to reinstall your operating system. Microsoft cannot guarantee that
+	problems resulting from the incorrect use of Registry Editor can be solved. Use
+	Registry Editor at your own risk.
+	
+	For information about how to edit the registry, view the "Changing Keys And
+	Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+	Information in the Registry" and "Edit Registry Data" Help topics in
+	Regedt32.exe. Note that you should back up the registry before you edit it.
+	
+	1. Click Start, point to Find, and then click Files or Folders.
+	
+	2. Type Reged and click Find Now.
+	
+	3. Double click on Regedt32.exe or Regedit.exe.
+	
+	4. Open the following folders in order: HKEY_LOCAL_MACHINE > SOFTWARE >
+	  MICROSOFT
+	
+	5. Delete the folder CONNECTION MANAGER
+	
+	6. Close the Registry editor.
+	
+	7. Shut down computer and restart.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products that are
+	listed at the beginning of this article.
+	
+	Additional query words: 2.50 2.60 5.00 w98hemjul
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinMEsearch kbWin95search kbWin98search kbWin98SEsearch kbMSNSearch kbZNotKeyword3 kbWin98 kbWinME kbWin98SE kbMSN500 kbMSN252 kbMSN251 kbMSN260 kbMSN250 kbMSN540
+	Version           : :2.5,2.51,2.52,2.6,5.0,5.4
+	Issue type        : kbprb
+	
+	=============================================================================
+	

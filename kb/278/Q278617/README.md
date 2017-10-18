@@ -1,0 +1,117 @@
+---
+layout: page
+title: "Q278617: Blank Pages or Access Violation with LU3 Print Jobs"
+permalink: kb/278/Q278617/
+---
+
+## Q278617: Blank Pages or Access Violation with LU3 Print Jobs
+
+	Article: Q278617
+	Product(s): Microsoft SNA Server
+	Version(s): 4.0 SP3
+	Operating System(s): 
+	Keyword(s): sna4 kbsna400sp3 kbSNA400sp4fix kbSNA400PreSP4fix kbhis2000kbbuglist kbfixlist
+	Last Modified: 12-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Host Integration Server 2000 
+	- Microsoft SNA Server, version 4.0 SP3 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	An LU3 print job may have blank or missing pages when it is printed with the
+	host print service that is included with SNA Server version 4.0 Service Pack 3
+	(SP3).
+	
+	The same LU3 print job may cause an Access Violation (AV) in the Snaprint.exe
+	file that is similar to the following when Host Integration Server (HIS) 2000 is
+	used:
+	
+	  Application exception occurred:
+	          App: obj\i386\snaprint.exe (pid=3024)
+	          When: 11/1/2000 @ 10:54:38.484
+	          Exception number: c0000005 (access violation)
+	  <lines removed for brevity>
+	  State Dump for Thread Id 0xc30
+	
+	  eax=ffff8000 ebx=0012f301 ecx=0f668000 edx=0f661c08 esi=002366b0 edi=00236760
+	  eip=60d8ed1f esp=0f61fef4 ebp=01f5d168 iopl=0         nv up ei pl zr ac po nc
+	  cs=001b  ss=0023  ds=0023  es=0023  fs=0038  gs=0000             efl=00000256
+	
+	  function: s3poordr
+	          60d8ecfe 0fbf561c         movsx   edx,word ptr [esi+0x1c]    ds:00ca3c87=????
+	          60d8ed02 c6040240         mov     byte ptr [edx+eax],0x40      ds:ffff8000=??
+	          60d8ed06 e8d50c0000       call    crank_wrap_or_stretch (60d8f9e0)
+	          60d8ed0b 84c0             test    al,al
+	          60d8ed0d 7406             jz      wrtinitattr+0x245 (60d91f15)
+	          60d8ed0f 32db             xor     bl,bl
+	          60d8ed11 c6471001         mov     byte ptr [edi+0x10],0x1      ds:00ca3d36=??
+	          60d8ed15 668b4e1c         mov     cx,[esi+0x1c]              ds:00ca3c87=????
+	          60d8ed19 8b5604           mov     edx,[esi+0x4]          ds:00ca3c86=????????
+	          60d8ed1c 0fbfc1           movsx   eax,cx
+	  FAULT ->60d8ed1f 803c0280         cmp     byte ptr [edx+eax],0x80      ds:ffff8000=??
+	          60d8ed23 0f8235ffffff     jb      s3poordr+0x8be (60d8ec5e)
+	          60d8ed29 668b461c         mov     ax,[esi+0x1c]              ds:00ca3c87=????
+	          60d8ed2d 33db             xor     ebx,ebx
+	          60d8ed2f 663bc3           cmp     ax,bx
+	          60d8ed32 750b             jnz     s3pr1dat+0x8ff (60d9773f)
+	          60d8ed34 8a4f10           mov     cl,[edi+0x10]                ds:00ca3d36=??
+	          60d8ed37 84c9             test    cl,cl
+	          60d8ed39 0f858d000000     jne     s3poordr+0xa2c (60d8edcc)
+	          60d8ed3f 0fbfc0           movsx   eax,ax
+	          60d8ed42 6a03             push    0x3
+	          60d8ed44 53               push    ebx
+	
+	  *----> Stack Back Trace <----*
+	
+	  FramePtr ReturnAd Param#1  Param#2  Param#3  Param#4  Function Name
+	  01F5D168 003A0036 11000B00 2037554C 806B0020 40E3C300 ppd3270!s3poordr
+	  00000000 00000000 00000000 00000000 00000000 00000000 <nosymbols>
+	
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, obtain the latest service pack for SNA Server 4.0. For
+	additional information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q215838 How to Obtain the Latest SNA Server Version 4.0 Service Pack
+	
+	
+	The English version of this fix should have the following file attributes or
+	later for Host Integration Server 2000:
+	
+	+--------------------------------+
+	| File name   | Date     | Time  | 
+	+--------------------------------+
+	| Ppd3270.dll | 11/02/00 | 12:00 | 
+	+--------------------------------+
+	
+	NOTE: Because of file dependencies, the most recent fix that contains the above
+	files may also contain additional files.
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft Host Integration
+	Server 2000 and Microsoft SNA Server, version 4.0 SP3.
+	
+	This problem was first corrected in SNA Server 4.0 Service Pack 4.
+	
+	Additional query words: DrWatson snaprint Ppd3270 sp pak
+	
+	======================================================================
+	Keywords          : sna4 kbsna400sp3 kbSNA400sp4fix kbSNA400PreSP4fix kbhis2000 kbbuglist kbfixlist
+	Technology        : kbAudDeveloper kbSNAServSearch kbHostIntegServ2000 kbSNAServ400SP3
+	Version           : :4.0 SP3
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

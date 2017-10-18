@@ -1,0 +1,94 @@
+---
+layout: page
+title: "Q136391: FIX: MessageBox with NULL Owner and MB_TASKMODAL"
+permalink: kb/136/Q136391/
+---
+
+## Q136391: FIX: MessageBox with NULL Owner and MB_TASKMODAL
+
+	Article: Q136391
+	Product(s): Microsoft C Compiler
+	Version(s): winnt:2.0,2.1,4.0,4.1
+	Operating System(s): 
+	Keyword(s): kbui kbnokeyword kbMFC kbVC200bug kbVC400bug kbVC410bug kbGrpDSMFCATL
+	Last Modified: 06-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The Microsoft Foundation Classes (MFC), used with:
+	   - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1, 4.0, 4.1 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Using ::MessageBox in an application built with the Software Development Kit
+	(SDK) with a NULL owner window and MB_TASKMODAL disables all top-level windows
+	belonging to a task, as if it were a modal dialog box.
+	
+	MFC, however, allows the main window to be re-enabled when clicked. For example,
+	if you use the following function call to bring up the message box, when you run
+	the application, if you click one of the application's windows, the main window
+	moves to the foreground and is enabled.
+	
+	     ::MessageBox(NULL,
+	                  "Test",
+	                  "Test",
+	                  MB_OK | MB_TASKMODAL);
+	
+	CAUSE
+	=====
+	
+	The problem is due to "enable on activate" code in CFrameWnd that activates a
+	window when it is clicked, even if it was disabled. This works around the
+	Windows bug where clicking on the owner of a modal dialog box doesn't activate
+	the dialog box instead.
+	
+	Because MFC doesn't recognize the MessageBox as a popup belonging to the
+	application, it will eventually call CWnd::EnableWindow(TRUE). This can be seen
+	in the relevant portions of the call stack below:
+	
+	  ...
+	  CWnd::EnableWindow(TRUE)
+	  _AfxHandleActivate(...)
+	  WM_ACTIVATE message is sent.
+	  ...
+	  CWnd::SetForegroundWindow()
+	  _AfxHandleSetCursor(...)           //popups checked here.
+	  WM_SETCURSOR message is sent.
+	  ...
+	
+	The most recently called function is at the top of the list.
+	
+	RESOLUTION
+	==========
+	
+	To work around this problem, use CWnd::MessageBox or AfxMessageBox instead of
+	::MessageBox. If you must use ::MessageBox, specify a window as the owner rather
+	than using NULL as the first parameter. For example, to specify the
+	application's main window as the owner, use this code:
+	
+	  ::MessageBox(AfxGetMainWnd()->m_hWnd,
+	               "Test",
+	               "Test",
+	               MB_OK | MB_TASKMODAL);
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article. This bug was fixed in Visual C++ versions 4.2 and
+	later.
+	
+	Additional query words: 2.00 2.10 3.00 3.10 4.00 4.10 MessageBox Modeless
+	
+	======================================================================
+	Keywords          : kbui kbnokeyword kbMFC kbVC200bug kbVC400bug kbVC410bug kbGrpDSMFCATL 
+	Technology        : kbAudDeveloper kbMFC
+	Version           : winnt:2.0,2.1,4.0,4.1
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

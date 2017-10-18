@@ -1,0 +1,439 @@
+---
+layout: page
+title: "Q129472: Bookshelf 1995: Manual Installation Instructions"
+permalink: kb/129/Q129472/
+---
+
+## Q129472: Bookshelf 1995: Manual Installation Instructions
+
+	Article: Q129472
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): 1995
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 11-AUG-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Bookshelf for Windows, 1991, 1992, 1993, 1994, 1995 editions 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article provides instructions to manually install Bookshelf 1995.
+	
+	This article does not include steps for the optional Word for Windows integration
+	feature. Please see the file Readme.txt on your Bookshelf 1995 CD-Rom for more
+	information on manually integrating Word and Bookshelf 1995.
+	
+	MORE INFORMATION
+	================
+	
+	These instructions assume:
+	
+	- Your hard disk is drive C.
+	
+	- Your destination folder is C:\Books95
+	
+	- Your Windows folder is C:\Windows
+	
+	- Your CD-Rom drive is drive D.
+	
+	If your hard disk drive, destination folder, Windows directory, or CD- ROM drive
+	letters are different, replace the drive letters and folder names throughout
+	this article with the drive letters and folder names on your computer.
+	
+	NOTE: The following instructions discuss copying, editing, and modifying folders
+	and files. For more information about accomplishing these tasks in Windows, see
+	your Windows printed documentation or online Help.
+	
+	Steps for Windows or Windows for Workgroups, Versions 3.x
+	---------------------------------------------------------
+	
+	If you are running Microsoft Windows 3.x, follow these steps. When copying files,
+	exit Windows and copy from the MS-DOS command prompt. Allow MS-DOS to overwrite
+	any files it finds already on your hard drive.
+	
+	1. Copy the following files from the D:\Aamsstp\System folder to the C:\Windows
+	  folder:
+	
+	   - Bshelf93.Exe
+	
+	   - Mplayer.exe
+	
+	   - Mplayer.hlp
+	
+	  For example, to copy Bshelf93.exe, type the following at the MS-DOS command
+	  prompt and press the ENTER key at the end of the line:
+	
+	     copy d:\aamsstp\system\bshelf93.exe c:\windows
+	
+	  NOTE: The file is called Bshelf93.exe for backward compatibility.
+	
+	2. Create a folder named C:\Books95 on your hard drive.
+	
+	  For example, type the following at the MS-DOS command prompt and press the
+	  ENTER key at the end of the line:
+	
+	     md c:\books95
+	
+	3. Copy all the files located in the D:\Aamsstp\App folder to the C:\Books95
+	  folder.
+	
+	4. Copy the file D:\Aamsstp\System\Mmp.dll to C:\Books95.
+	
+	5. Copy D:\Readme.txt to C:\Books95.
+	
+	6. Copy the following files from the D:\Aamsstp\System folder to
+	  C:\Windows\System folder:
+	   - ACMCMPRS.DLL
+	
+	   - INIUPD.DLL
+	
+	   - MSACM.DRV
+	
+	   - OLE2NLS.DLL
+	
+	   - AVICAP.DLL
+	
+	   - IR21_R.DLL
+	
+	   - MSADPCM.ACM
+	
+	   - OLE2PROX.DLL
+	
+	   - AVIFILE.DLL
+	
+	   - IR32.DLL
+	
+	   - MSGSM610.ACM
+	
+	   - STORAGE.DLL
+	
+	   - COMPOBJ.DLL
+	
+	   - MAP_WIN.HLP
+	
+	   - MSRLE.DRV
+	
+	   - TYPELIB.DLL
+	
+	   - CTL3DV2.DLL
+	
+	   - MCIAVI.DRV
+	
+	   - MSVIDC.DRV
+	
+	   - VER.DLL
+	
+	   - DISPDIB.DLL
+	
+	   - MCIMMP.DRV
+	
+	   - MSVIDEO.DLL
+	
+	   - VSHARE.386
+	
+	   - DVA.386
+	
+	   - MCIOLE.DLL
+	
+	   - OLE2.DLL
+	
+	   - ICCVID.DRV
+	
+	   - MMP.DLL
+	
+	   - OLE2CONV.DLL
+	
+	   - IMAADPCM.ACM
+	
+	   - MSACM.DLL
+	
+	   - OLE2DISP.DLL
+	
+	7. Create a folder named C:\Windows\Msapps\Msinfo.
+	
+	8. Copy the file D:\Aamsstp\System\Msinfo.exe to C:\Windows\Msapps\Msinfo
+	  folder.
+	
+	9. Use a text editor, such as Microsoft Notepad, to make the following changes
+	  to the Bshelf95.ini file, which is located in the Windows folder. If the
+	  Bshelf95.ini file does not already exist, create one in the Windows folder
+	  with these entries:
+	
+	  [Options]
+	  Drive=D:
+	  Sounds=1
+	  Tooltips=1
+	
+	  [Find]
+	  Near=8
+	
+	  [Colors]
+	  JumpColor=0 0 128
+	  PopUpColor=128 0 128
+	
+	  [GrabText]
+	  winfile=0
+	
+	10. Bookshelf 1995 installs special TrueType fonts. Perform the following steps
+	  to install the fonts manually:
+	
+	   - In the Windows Control Panel, double-click Fonts.
+	
+	   - Click the Add button.
+	
+	   - Change the drive to your CD-Rom drive.
+	
+	   - Double-click the AAMSSTP folder, and then the FONTS folder.
+	
+	   - Choose the Select All button to select the following:
+	
+	      Arial (TrueType)
+	      Arial Bold (TrueType)
+	      Arial Bold Italics (TrueType)
+	      Arial Italics (TrueType)
+	      Bookshelf Symbol 1 (TrueType)
+	      Bookshelf Symbol 2 (TrueType)
+	      Bookshelf Symbol 3 (TrueType)
+	      Symbol (TrueType)
+	
+	11. Click OK, and then click Close.
+	
+	12. Use a text editor to make the following changes to the Windows information
+	  files, which are located in the Windows folder:
+	
+	   Changes to the Win.ini File
+	   ---------------------------
+	
+	   [mci extensions]
+	   wav=wavaudio
+	   mid=sequencer
+	   avi=AVIVideo
+	   mmm=MMMovie
+	
+	   [MSAPPS]
+	   MSINFO=C:\WINDOWS\MSAPPS\MSINFO
+	
+	   [Microsoft System Info]
+	   MSINFO=C:\WINDOWS\MSAPPS\MSINFO\MSINFO.EXE
+	
+	   [Bookshelf]
+	   APP=C:\BOOKS95\BSHELF95.EXE
+	
+	   Changes to the System.ini File
+	   ------------------------------
+	
+	   [386Enh]
+	   DEVICE=VSHARE.386
+	   DEVICE=DVA.386
+	
+	   [mci]
+	   AVIVideo=mciavi.drv
+	   MMMovie=mcimmp.drv
+	
+	   [drivers]
+	   WaveMapper=msacm.drv
+	   MSACM.msadpcm=msadpcm.acm
+	   MSACM.imaadpcm=imaadpcm.acm
+	   MSACM.msgsm610=msgsm610.acm
+	   VIDC.CVID=iccvid.drv
+	   VIDC.MSVC=msvidc.drv
+	   VIDC.IV32=ir32.dll
+	   VIDC.IV31=ir32.dll
+	   VIDC.MRLE=msrle.drv
+	   VIDC.RT21=ir21_r.dll
+	   VIDC.YVU9=ir21_r.dll
+	
+	   [msacm.msgsm610]
+	   MaxRTDecodeSamplesPerSec=22050
+	
+	   Changes to the Control.ini File
+	   -------------------------------
+	
+	   [drivers.desc]
+	   msacm.drv=Microsoft Sound Mapper V2.00
+	   msadpcm.acm=Microsoft ADPCM Codec V2.00
+	   imaadpcm.acm=Microsoft IMA ADPCM Codec V2.00
+	
+	13. Choose Run from the File menu in Program Manager. Type in the following
+	  command, and then click OK:
+	
+	     d:\aamsstp\system\mplayer.reg
+	
+	  Repeat step 8 using the following command lines:
+	
+	     d:\aamsstp\system\ole2.reg
+	     d:\aamsstp\system\cleanup.reg
+	     d:\aamsstp\profdisp.exe.
+	
+	14. Add the Bookshelf 1995 icons to Program Manager by following the
+	  instructions at the end of this article.
+	
+	15. Exit Windows and restart the computer. The installation is now complete.
+	
+	Steps for Windows 95 or Windows NT
+	----------------------------------
+	
+	Follow these steps if you are using Microsoft Windows 95 or Microsoft Windows NT.
+	When copying files, DO NOT overwrite ANY existing files.
+	
+	CAUTION: Allowing the system files to be overwritten in Windows 95 or Windows NT
+	may cause improper system performance.
+	
+	1. Copy the file D:\Aamsstp\System\Bshelf93.exe to C:\Windows.
+	
+	2. Follow steps 2 through 5 in the Windows 3.x section above, to copy program
+	  files. DO NOT use step 6 above, which is for copying Windows 3.x system
+	  files.
+	
+	3. Follow step 9 in the Windows 3.x section above, to edit or create the
+	  Books95.ini file.
+	
+	4. Use a text editor to make the following changes to the Windows information
+	  files, which are located in the Windows folder:
+	
+	  Changes to the Win.ini File
+	  ---------------------------
+	
+	  [mci extensions]
+	  mmm=MMMovie
+	
+	  [Bookshelf]
+	  APP=C:\BOOKS95\BSHELF95.EXE
+	
+	  Changes to the System.ini File
+	  ------------------------------
+	
+	  [mci]
+	  MMMovie=mcimmp.drv
+	
+	5. Perform the following steps to install the special TrueType fonts:
+	
+	  a. In the Windows Control Panel, double-click Fonts.
+	
+	  b. On the File menu, click Install New Font.
+	
+	  c. Change the drive to your CD-Rom drive.
+	
+	  d. Double-click the Aamsstp folder, and then the Fonts folder.
+	
+	  e. Click the Select All button to select all the fonts.
+	
+	  f. Make sure the Copy font to... box is checked.
+	
+	  g. Click OK.
+	
+	6. If you are using Windows NT 3.1, copy the file
+	
+	  D:\Aamsstp\System\Msvideo.nt to C:\Windows\System32.
+	
+	  NOTE: After copying this file, it must be renamed to Msvideo.dll.
+	
+	7. Add the program icons or shortcuts using the appropriate section below as a
+	  guide.
+	
+	Create the Start Menu Shortcuts
+	-------------------------------
+	
+	If you are using Windows 95, add Bookshelf 1995 to the Start Menu by following
+	these instructions:
+	
+	1. Click the Start button, point to Settings, and then click the Taskbar.
+	
+	2. Click the Start Menu Programs tab.
+	
+	3. Click Add.
+	
+	4. Type the following in the Command Line box, and then click Next:
+	
+	     c:\books95\bshelf95.exe
+	
+	5. In the Select Program Folder dialog box, click on the Microsoft Multimedia
+	  folder to select it, and then click Next.
+	
+	  NOTE: If Microsoft Multimedia is not listed, create it as follows:
+	
+	  a. Click New Folder
+	
+	  b. Type in the following, and then click Next: Microsoft Multimedia
+	
+	6. In the Select A Title For The Program dialog box, type the following, and
+	  then click Finish:
+	
+	     Bookshelf 1995
+	
+	7. Repeat steps 3 through 6 to create the remaining shortcuts:
+	
+	  Command Line:         c:\books95\qshelf95.exe
+	  Select A Title:       QuickShelf 1995
+	
+	  Command Line:         c:\windows\notepad.exe c:\books95\readme.txt
+	  Select A Title:       Bookshelf 1995 Readme
+	
+	  Command line:         d:\mmcat\catppi.exe
+	  Select A Title:       Microsoft Multimedia Catalog
+	
+	8. If you desire QuickShelf to start whenever Windows starts, create a
+	  QuickShelf shortcut in the Startup folder. Repeat steps 3 through 6 using the
+	  information for Shortcut 2, but select the Startup folder instead of the
+	  Microsoft Multimedia folder.
+	
+	Create Program Manager Icons
+	----------------------------
+	
+	If you use the Windows Program Manager, create the Bookshelf 1995 icons as
+	follows:
+	
+	1. Open the Microsoft Multimedia group. If this group does not already exist,
+	  create it as follows:
+	
+	  a. On the File menu, click New.
+	
+	  b. Click Program Group, and then click OK.
+	
+	  c. In the Description box, type the following, and then click OK:
+	
+	     Microsoft Multimedia
+	
+	2. On the File menu, click New.
+	
+	3. Click Program Item, and then click OK.
+	
+	4. Type in the Description and Command Line as listed below, and then click OK:
+	
+	  Item 1:
+	  Description:       Bookshelf 1995
+	  Command Line:      c:\books95\bshelf95.exe
+	
+	5. Repeat steps 2 through 4 to create the remaining items:
+	
+	  Item 2:
+	  Description:       QuickShelf 1995
+	  Command Line:      c:\books95\qshelf95.exe
+	
+	  Item 3:
+	  Description:        Bookshelf 1995 Readme
+	  Command Line:       c:\windows\notepad.exe c:\books95\readme.txt
+	  Working Directory:  c:\books95
+	
+	  Item 4:
+	  Description:        Microsoft Multimedia Catalog
+	  Command Line:       d:\mmcat\catppi.exe
+	
+	6. If you desire QuickShelf to start whenever Windows starts, create a
+	  QuickShelf icon in the Startup group. Open the Startup group, and then repeat
+	  steps 2 through 4 using the information for Item 2.
+	
+	Additional query words: kbhowto 1995 multi media multimedia multi-media mmtitles kbmm install create setup set up
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbHomeMMsearch kbBookshelfSearch
+	Version           : 1995
+	
+	=============================================================================
+	

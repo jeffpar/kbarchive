@@ -1,0 +1,113 @@
+---
+layout: page
+title: "Q269214: ICA Browser Hangs with Windows NT 4.0 Terminal Server SP6"
+permalink: kb/269/Q269214/
+---
+
+## Q269214: ICA Browser Hangs with Windows NT 4.0 Terminal Server SP6
+
+	Article: Q269214
+	Product(s): Microsoft Windows NT
+	Version(s): 4.0 SP6
+	Operating System(s): 
+	Keyword(s): kb3rdparty kbenv kbWinNT400PreSP7Fix kbbpqfe1a kbgraphxlinkcritical
+	Last Modified: 08-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 4.0 SP6, Terminal Server Edition 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	After you apply Windows NT Server 4.0, Terminal Server Edition, Service Pack 6
+	(SP6), any of the following symptoms may occur:
+	
+	- Users may not be able to access information on servers by using either Citrix
+	  Server Administrator or Terminal Server Administrator. This behavior may
+	  occur sporadically.
+	
+	- Csrss.exe processes may not terminate properly after a client session logoff.
+	  These orphaned Csrss.exe processes stop responding (hang) until you reboot
+	  the server.
+	
+	
+	RESOLUTION
+	==========
+	
+	A supported fix is now available from Microsoft, but it is only intended to
+	correct the problem described in this article and should be applied only to
+	systems experiencing this specific problem. This fix may receive additional
+	testing at a later time, to further ensure product quality. Therefore, if you
+	are not severely affected by this problem, Microsoft recommends that you wait
+	for the next Windows NT 4.0 Server, Terminal Server Edition service pack that
+	contains this fix.
+	
+	To resolve this problem immediately, download the fix as instructed below or
+	contact Microsoft Product Support Services to obtain the fix. For a complete
+	list of Microsoft Product Support Services phone numbers and information on
+	support costs, please go to the following address on the World Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	NOTE: In special cases, charges that are normally incurred for support calls may
+	be canceled, if a Microsoft Support Professional determines that a specific
+	update will resolve your problem. Normal support costs will apply to additional
+	support questions and issues that do not qualify for the specific update in
+	question.
+	
+	
+	The following file is available for download from the Microsoft Download Center:
+	
+	  Download Download Q269214i.exe now
+	  (http://www.microsoft.com/downloads/release.asp?ReleaseID=24031)
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. After it is posted, the file is housed on
+	secure servers that prevent any unauthorized changes to the file.
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	  Date        Version         Size    File name    Platform
+	  ---------------------------------------------------------
+	  08/17/2000  4.0.1381.33402  12,600  Tdasync.sys  x86
+	  08/17/2000  4.0.1381.33402  18,488  Tdipx.sys    x86
+	  08/17/2000  4.0.1381.33402  17,016  Tdnetb.sys   x86
+	  08/17/2000  4.0.1381.33402  10,232  Tdpipe.sys   x86
+	  08/17/2000  4.0.1381.33402  16,152  Tdspx.sys    x86
+	  08/17/2000  4.0.1381.33402  18,360  Tdtcp.sys    x86
+	
+	
+	
+	WORKAROUND
+	==========
+	
+	As a workaround, you can reboot the server, or revert to Windows NT Server 4.0,
+	Terminal Server Edition, Service Pack 5.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Windows NT 4.0 Server, Terminal
+	Server Edition.
+	
+	Additional query words: WTS Independent Computing Architecture
+	
+	======================================================================
+	Keywords          : kb3rdparty kbenv kbWinNT400PreSP7Fix kbbpqfe1a kbgraphxlinkcritical 
+	Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400sp6 kbNTTermServSearch
+	Version           : :4.0 SP6
+	Hardware          : ALPHA x86
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

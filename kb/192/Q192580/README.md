@@ -1,0 +1,95 @@
+---
+layout: page
+title: "Q192580: SAMPLE: ADSfshare.exe Demonstrates Manipulating ADS File Shares"
+permalink: kb/192/Q192580/
+---
+
+## Q192580: SAMPLE: ADSfshare.exe Demonstrates Manipulating ADS File Shares
+
+	Article: Q192580
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:6.0; winnt:2.5
+	Operating System(s): 
+	Keyword(s): kbfile kbsample kbActiveX kbADSI kbvfp600
+	Last Modified: 12-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	ADSFshar.exe is a self-extracting executable file that contains the Visual
+	FoxPro form files, FileShare.scx and FileShare.sct. This sample demonstrates how
+	to find, add, and delete server file shares using the Active Directory Services
+	Interface (ADSI).
+	
+	MORE INFORMATION
+	================
+	
+	The following file is available for download from the Microsoft Download
+	Center:
+	
+	  ADSFshar.exe
+	
+	Release Date: Sep-11-1998
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. Once posted, the file is housed on secure
+	servers that prevent any unauthorized changes to the file.
+	
+	NOTE: In order to use the sample, the Active Directory Service Interfaces must be
+	installed from either the Microsoft Developer Network CD or the following Web
+	site:
+	
+	  http://www.microsoft.com/windows/server/Technical/directory/
+	
+	ADSI is a Component Object Model (COM) based interface for accessing directory
+	services. Each element of the network, such as users, printers and computers,
+	can be treated as an object.
+	
+	To use the FileShare form, run the ADSFshare.exe file and extract the form files.
+	Run the form from within Visual FoxPro by typing the following in the Command
+	window:
+	
+	     DO FORM fileshare
+	
+	Enter a domain name and a server name upon which to look for file shares. A
+	domain name is not required, but omitting the domain name increases the time of
+	the search. Once the server is found and the list box is populated, shares may
+	be selected from the list. When selected, properties for the share are listed in
+	the text boxes on the right. Clicking the Delete button deletes the selected
+	share, if the user has permissions to do so.
+	
+	Shares may be added by entering a path and a share name, then clicking the Add
+	button. The Exit button closes the form.
+	
+	REFERENCES
+	==========
+	
+	For more information about ADSI, please see the following Web site:
+	
+	  http://www.microsoft.com/windows/server/Deploy/
+	
+	(c) Microsoft Corporation 1998, All Rights Reserved.
+	Contributions by Mike A. Stewart, Microsoft Corporation
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbfile kbsample kbActiveX kbADSI kbvfp600 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+	Version           : WINDOWS:6.0; winnt:2.5
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

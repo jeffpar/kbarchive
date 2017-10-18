@@ -1,0 +1,79 @@
+---
+layout: page
+title: "Q231242: SMS: &quot;Right Now&quot; Crystal Reports Schedule Incorrectly"
+permalink: kb/231/Q231242/
+---
+
+## Q231242: SMS: &quot;Right Now&quot; Crystal Reports Schedule Incorrectly
+
+	Article: Q231242
+	Product(s): Microsoft Systems Management Server
+	Version(s): 2.0
+	Operating System(s): 
+	Keyword(s): kbinterop kbMMC kbServer kbsms200 kbsms200bug kbReport kbsmsUtil
+	Last Modified: 22-MAR-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server version 2.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When scheduling a report to run Right Now using the Crystal Info product that
+	ships with Systems Management Server 2.0, the report does not run for an
+	extended amount of time, or does not run at all.
+	
+	CAUSE
+	=====
+	
+	This behavior may occur when the computer running the Systems Management Server
+	Administrator Console is set to a time zone that does not support the
+	"Automatically adjust clock for daylight saving changes" option, while the Site
+	Server's time zone does support this option. This option, if available, can be
+	found within the Date/Time tool of Control Panel. The option will appear at the
+	bottom of the Time Zone tab if a time zone has been selected that supports this
+	option.
+	
+	
+	
+	WORKAROUND
+	==========
+	
+	Move the remote computer running the SMS Administrator Console to a time zone
+	that supports daylight savings.
+	
+	MORE INFORMATION
+	================
+	
+	If the system date and time of a remote SMS administrator console is set behind
+	the server time the report will never be scheduled. For example, if the remote
+	SMS administrator console is set at 3:00 P.M. and the Site Server it is
+	connecting to is set at 4:00 P.M., the report will not be scheduled.
+	Periodically verify the remote console computer is synchronized with the time
+	and date on the Site Server to which it is remotely connecting.
+	
+	Seagate has related information pertaining to their full version product at their
+	Web site:
+	
+	  http://support.crystaldecisions.net/library/kbase/articles/c2003120.asp
+	  (http://support.crystaldecisions.net/library/kbase/articles/c2003120.asp)
+	
+	The third-party contact information included in this article is provided to help
+	you find the technical support you need. This contact information is subject to
+	change without notice. Microsoft in no way guarantees the accuracy of this
+	third-party contact information.
+	
+	Additional query words: prodsms infoaps crystal info
+	
+	======================================================================
+	Keywords          : kbinterop kbMMC kbServer kbsms200 kbsms200bug kbReport kbsmsUtil 
+	Technology        : kbSMSSearch kbSMS200
+	Version           : :2.0
+	Issue type        : kbprb
+	Solution Type     : kbnofix
+	
+	=============================================================================
+	

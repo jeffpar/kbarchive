@@ -1,0 +1,232 @@
+---
+layout: page
+title: "Q81142: An Annotated Dr. Watson Log File"
+permalink: kb/081/Q81142/
+---
+
+## Q81142: An Annotated Dr. Watson Log File
+
+	Article: Q81142
+	Product(s): Microsoft Windows Software Development Kit
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kb16bitonly
+	Last Modified: 17-JUL-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows Software Development Kit (SDK) 3.1 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Dr. Watson is a utility that logs information about applications that fail. This
+	article presents a sample log file and explains what the various entries
+	signify. Comments in the log file start with pound sign (#).
+	
+	MORE INFORMATION
+	================
+	
+	This article annotates a log file for the BICHO application, which tests Windows
+	by faulting in the various ways. Bicho is Bolivian slang for "bug" or
+	"critter."
+	
+	# Dr. Watson writes the following line each time it starts execution
+	# unless the [dr. watson] section of the WIN.INI file contains the
+	# line SkipInfo=time:
+	
+	Start Dr. Watson 0.80 - Thu Sep 26 10:51:28 1991
+	
+	# These lines mark the beginning of a Dr. Watson failure report
+	# They report the version of Dr. Watson and the date and time of the
+	# reported event.
+	
+	**********************************************************************
+	Dr. Watson 0.80 Failure Report - Thu Sep 26 10:51:36 1991
+	
+	# The next line reports that an application named "BICHO" encountered
+	# an "Exceed Segment Bounds" fault while reading memory. The precise
+	# point of failure was also in BICHO, 0x6b bytes after the start of
+	# the DoCommand function.
+	
+	BICHO had a 'Exceed Segment Bounds (Read)' fault at BICHO
+	_DoCommand+006b
+	
+	# The following line repeats the previous information formatted for
+	# automatic parsing code. It also includes the instruction that caused
+	# the fault (a push instruction in this case).
+	
+	$tag$BICHO$Exceed Segment Bounds (Read)$BICHO _DoCommand+006b$push
+	word ptr [fffe]$Thu Sep 26 10:51:36 1991
+	
+	# The following lines report the contents of the CPU registers:
+	
+	CPU Registers (regs)
+	
+	# The 16-bit registers are listed first. This information can be
+	# useful to determine what address an instruction modified when the
+	# fault occurred.
+	
+	ax=1e54  bx=0014  cx=0d7f  dx=0111  si=1e54  di=0111
+	
+	# The next items are the instruction pointer (otherwise known as the
+	# program counter), stack pointer, and base pointer. This line also
+	# lists the state of the flag bits. In this example, the Overflow,
+	# Direction, Sign, Zero, and Carry bits are Clear (0), while the
+	# Interrupt, Auxcarry, and Parity bits are Set (1).
+	
+	ip=02fd  sp=230c  bp=237a  O- D- I+ S- Z- A+ P+ C-
+	
+	# The code segment selector is 0e57, linear address is 8059fbc0. The
+	# code segment's limit is 83f. (Enhanced mode linear addresses often
+	# start with 8xxx.) Accessing a code or data segment beyond its limit
+	# is a common cause of GP faults.
+	
+	cs = 0e57  8059fbc0:083f Code Ex/R
+	
+	# The next line provides information about the stack segment selector.
+	
+	ss = 0d7f  8059d5e0:25df Data R/W
+	
+	# The following line provides information about the data segment
+	# selector. Note that the limit is 25df, while the application
+	# attempted to read the value at fffe, which is beyond the segment's
+	# limit.
+	
+	ds = 0d7f  8059d5e0:25df Data R/W
+	
+	# The following line provides information about the extra segment
+	# selector:
+	
+	es = 0d7f  8059d5e0:25df Data R/W
+	
+	# The next lines provide information about the 32-bit registers.
+	# If a selector is 0, it corresponds to the null pointer. Attempting
+	# to use a null pointer is another common cause of GP faults.
+	
+	CPU 32 bit Registers (32bit)
+	eax = 00001e54  ebx = 00000014  ecx = ffff0d7f  edx = 00000111
+	esi = 00001e54  edi = 00000111  ebp = 0000237a  esp = 800422fc
+	fs = 0000         0:0000 Null Ptr
+	gs = 0000         0:0000 Null Ptr
+	eflag = 00000002
+	
+	# The next lines provide information about the Windows installation.
+	
+	System Info (info)
+	Windows version 3.10
+	Debug build  # The debug version of windows (from the SDK) was running
+	Windows Build 3.1.048 # This is a prerelease build of Windows, #48
+	Username Unknown User               # Your Name Here
+	Organization Unknown Organization   # Your Organization Here
+	
+	System Free Space 7131008
+	
+	# The following provides the stack size for the current task:
+	
+	Stack base 1122, top 9164, lowest 7504, size 8042
+	
+	# Dr. Watson records some statistics about the Windows environment:
+	
+	System resources:  USER: 87% free, seg 0777  GDI: 85% free, seg 05d7
+	LargestFree 6594560, MaxPagesAvail 1610, MaxPagesLockable 267
+	TotalLinear 1948, TotalUnlockedPages 274, FreePages 52
+	TotalPages 614, FreeLinearSpace 1611, SwapFilePages 7158
+	Page Size 4096
+	4 tasks executing.
+	WinFlags -
+	 Math coprocessor
+	 80386 or 80386 SX
+	 Enhanced mode
+	 Protect mode
+	
+	# The following records the contents of the stack to determine what
+	# code called the routine that failed:
+	
+	Stack Dump (stack)
+	
+	# Stack frame 0 indicates that the failure occurred in BICHO, 0x6b
+	# bytes after the start of the DoCommand function, as reported
+	# earlier.
+	
+	Stack Frame 0 is BICHO _DoCommand+006b        ss:bp 0d7f:237a
+	
+	# The offending instruction is disassembled in context, as follows:
+	
+	0e57:02f0  e9 02b9               jmp    near 05ac
+	0e57:02f3  6a 00                 push   00
+	0e57:02f5  9a 8db0 0477          callf  0477:8db0
+	0e57:02fa  e9 02af               jmp    near 05ac
+	(BICHO:_DoCommand+006b)
+	0e57:02fd  ff 36 fffe            push   word ptr [fffe]
+	0e57:0301  68 0110               push   0110
+	0e57:0304  e8 fe5d               call   near 0164
+	0e57:0307  83 c4 04              add    sp, 04
+	
+	# The application tried to read a value from memory at address DS:fffe
+	# and to push that value on the stack. However, the limit of the DS
+	# segment is 25df. The next stack frame documents that the BICHO
+	# application MainWndProc called DoCommand:
+	
+	Stack Frame 1 is BICHO MAINWNDPROC+0027       ss:bp 0d7f:2388
+	
+	0e57:0670  eb 16                 jmp    short 0688
+	0e57:0672  ff 76 0a              push   word ptr [bp+0a]
+	0e57:0675  56                    push   si
+	0e57:0676  e8 fc19               call   near 0292
+	(BICHO:MAINWNDPROC+0027)
+	0e57:0679  83 c4 04              add    sp, 04
+	0e57:067c  99                    cwd
+	0e57:067d  eb 1f                 jmp    short 069e
+	0e57:067f  6a 00                 push   00
+	
+	# "USER" in the next stack frame is the Windows module USER.EXE. It
+	# calls application window and dialog procedures. In this case, USER
+	# called the BICHO application's MainWndProc.
+	
+	Stack Frame 2 is USER IDISPATCHMESSAGE+007e   ss:bp 0d7f:239e
+	
+	# In the next stack frame, the BICHO application's WinMain function
+	# called DispatchMessage, which called MainWndProc.
+	
+	Stack Frame 3 is BICHO WINMAIN+0050           ss:bp 0d7f:23bc
+	
+	# In the last stack frame, the Windows start-up code calls the
+	# application's WinMain function.
+	
+	Stack Frame 4 is BICHO 1:00a3                 ss:bp 0d7f:23ca
+	
+	# The next lines list all the tasks running in the system when the
+	# fault occurred. Dr. Watson itself, the shell application, and the
+	# faulting application will always be included.
+	System Tasks (tasks)
+	
+	Task  WINEXIT, Handle 0daf, Flags 0001, Info    9248 08-09-90 16:52
+	 FileName C:\MS\WIN\DON\WINEXIT.EXE
+	Task DRWATSON, Handle 0ea7, Flags 0001, Info   26256 09-23-91 12:00
+	 FileName C:\WIN31\DRWATSON.EXE
+	Task  PROGMAN, Handle 060f, Flags 0001, Info  110224 09-23-91 12:02
+	 FileName C:\WIN31\PROGMAN.EXE
+	Task    BICHO, Handle 0da7, Flags 0001, Info   16537 09-11-91  8:45
+	 FileName D:\BICHO.EXE
+	
+	# The last part of a failure report is any information typed in the
+	# "Dr. Watson's Clues" dialog box.
+	
+	1> I ran a test app that accessed a value
+	2> beyond the limits of the segment bounds.
+	
+	# Dr. Watson writes this line when it shuts down.
+	
+	Stop Dr. Watson 0.80 - Thu Sep 26 10:52:10 1991
+	
+	Additional query words: 3.10
+	
+	======================================================================
+	Keywords          : kb16bitonly 
+	Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+	
+	=============================================================================
+	

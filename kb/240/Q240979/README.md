@@ -1,0 +1,92 @@
+---
+layout: page
+title: "Q240979: Unable to Create Folder on NTFS Partition"
+permalink: kb/240/Q240979/
+---
+
+## Q240979: Unable to Create Folder on NTFS Partition
+
+	Article: Q240979
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:95
+	Operating System(s): 
+	Keyword(s): kbenv kberrmsg kbnetwork kbui osr2 win95kbfixlist
+	Last Modified: 08-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 95 OEM Service Release, versions 2.0, 2.1, 2.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you try to use your Windows 95 OEM Service Release 2-based client computer
+	to create a folder on an NTFS partition, you may receive the following error
+	message:
+	
+	  Unable to create directory
+	
+	CAUSE
+	=====
+	
+	This problem occurs because to create a folder on a Microsoft Windows NT-based
+	server, Windows 95 (versions 4.00.950, retail, and 4.00.950A, Service Release 1)
+	submitted an SMB "C make directory" command to the server, which succeeded.
+	Instead of making a Create Directory application programming interface (API)
+	call which results in an SMB "C make directory" command, Windows 95 OEM Service
+	Release 2 (OSR2) first sends an SMB "C search directory" command to see if the
+	folder to create already exists. In the case where the new folder does not
+	exist, the server returns a NO_MORE_FILES error (no matching folder found), the
+	client does not issue the "C make directory" command, and then generates the
+	error message above.
+	
+	RESOLUTION
+	==========
+	
+	A supported fix is now available from Microsoft, but it is only intended to
+	correct the problem described in this article and should be applied only to
+	systems experiencing this specific problem.
+	
+	To resolve this problem, contact Microsoft Product Support Services to obtain the
+	fix. For a complete list of Microsoft Product Support Services phone numbers and
+	information on support costs, please go to the following address on the World
+	Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	NOTE: In special cases, charges that are normally incurred for support calls may
+	be canceled, if a Microsoft Support Professional determines that a specific
+	update will resolve your problem. Normal support costs will apply to additional
+	support questions and issues that do not qualify for the specific update in
+	question.
+	
+	The indicated versions of this fix should have the following file attributes or
+	later:
+	
+	  Date       Time      Version     Size    File name     Locale
+	  ---------------------------------------------------------------
+	  01/23/98   11:14am   4.00.1114   185,922 Ifsmgr.vxd    US
+	  01/23/98   11:14am   4.00.1114   185,926 Ifsmgr.vxd    Japanese
+	  01/23/98   11:14am   4.00.1114   185,926 Ifsmgr.vxd    NEC
+	
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Windows 95 OSR2, 2.1, and 2.5.
+	
+	
+	Additional query words: w95qfe
+	
+	======================================================================
+	Keywords          : kbenv kberrmsg kbnetwork kbui osr2 win95 kbfixlist
+	Technology        : kbWin95search kbOPKSearch kbWin95OPKOSR25 kbWin95OPKOSR210
+	Version           : WINDOWS:95
+	Issue type        : kbprb
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

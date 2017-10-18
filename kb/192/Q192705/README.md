@@ -1,0 +1,190 @@
+---
+layout: page
+title: "Q192705: PRB: Activation of VB MDI Child Window and ActiveX Control"
+permalink: kb/192/Q192705/
+---
+
+## Q192705: PRB: Activation of VB MDI Child Window and ActiveX Control
+
+	Article: Q192705
+	Product(s): Microsoft C Compiler
+	Version(s): winnt:5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbole kbActiveX kbCtrl kbMFC kbVC500 kbVC600 kbDSupport kbGrpDSMFCATL
+	Last Modified: 17-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The Microsoft Foundation Classes (MFC), used with:
+	   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+	   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+	   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+	   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+	   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The following two problems occur when embedding an ActiveX control in an MDI
+	application written in Visual Basic:
+	
+	- Clicking the ActiveX control that is embedded in the MDI child form does not
+	  activate the MDI child window; however, clicking other areas works correctly.
+	
+	- In Visual Basic 5.0, when focus is in the ActiveX control, pressing CTRL+TAB
+	  doesn't activate the next MDI child window in the MDI application.
+	
+	  NOTE: This problem has been corrected in Visual Basic 6.0.
+	
+	CAUSE
+	=====
+	
+	These problems are caused by the controls having the WS_EX_NOPARENTNOTIFY style.
+	Windows's MDI child activation is based on the MDI client window getting the
+	WM_PARENTNOTIFY message. However, this message is suppressed when the
+	WS_EX_NOPARENTNOTIFY style is specified. Visual Basic does not address this
+	scenario, which causes the problems to occur.
+	
+	RESOLUTION
+	==========
+	
+	Correcting these problems from the control site can be done in the following
+	ways:
+	
+	- Remove the WS_EX_NOPARENTNOTIFY extended style from the ActiveX control's
+	  window. This can be done by overriding PreCreateWindow() and unsetting the
+	  style bit.
+	
+	- For Visual Basic 5.0 clients, send a WM_MDINEXT message to the parent window
+	  of the MDI child window (for example, the MDI client window) so the next MDI
+	  child window can be activated.
+	
+	STATUS
+	======
+	
+	Microsoft is researching this problem and will post new information here in the
+	Microsoft Knowledge Base as it becomes available.
+	
+	MORE INFORMATION
+	================
+	
+	PreCreateWindow() is a CWnd virtual function that accesses the CREATESTRUCT
+	structure for the window just prior to its creation. The WS_EX_NOPARENTNOTIFY
+	window style is an extended style, and can be unset in the following manner:
+	
+	     BOOL CFocusCtrl::PreCreateWindow(CREATESTRUCT& cs)
+	     {
+	        cs.dwExStyle &= ~WS_EX_NOPARENTNOTIFY;
+	        return COleControl::PreCreateWindow(cs);
+	     }
+	
+	If Visual Basic 6.0 is used to create the MDI application, no further action
+	should be necessary. For Visual Basic 5.0 clients, you must provide custom
+	handling for the CTRL+TAB keystroke.
+	
+	OnKeyDown is a CWnd member function that has been overridden for this control
+	class. The code traps the CTRL+TAB keystroke and sends a WM_MDINEXT message to
+	the parent window. The parent window itself is determined by calling a new
+	function, GetMDIChildHwnd().
+	
+	GetMDIChildHwnd() tries to locate the window that has the style WS_EX_MDICHILD
+	(for example, an MDI child window of an MDI application). The window may be the
+	immediate parent window of the control, or the parent window of the immediate
+	parent of the control (for instance, an MDI child window with a frame control
+	that contains an embedded ActiveX control):
+	
+	     HWND CFocusCtrl::GetMDIChildHwnd()
+	     {
+	        // Get the window associated with the in-place site object,
+	        // which is connected to this ActiveX control.
+	        HWND hparent;
+	        if (m_pInPlaceSite != NULL)
+	           m_pInPlaceSite->GetWindow(&hparent);
+	
+	        // Loop until either an MDI child window or no parent window is
+	        // found. MDI child window will have a WS_EX_MDICHILD window
+	        // style.
+	        CWnd* parent = FromHandle(hparent);
+	        do
+	        {
+	           if (parent == NULL)
+	              break;
+	
+	           // Check to see whether or not it is an MDI child window.
+	           // Returns the HWND of the MDI child window to the caller.
+	           DWORD style = parent->GetExStyle();
+	           if (style & WS_EX_MDICHILD)
+	              return parent->GetSafeHwnd();
+	
+	           parent = parent->GetParent();
+	        }
+	        while (1);
+	
+	        return NULL;
+	     }
+	
+	     void CFocusCtrl::OnKeyDown(UINT nChar, UINT nRepCnt, UINT nFlags)
+	     {
+	        if ((GetKeyState(VK_CONTROL) < 0) && nChar == VK_TAB)
+	           {
+	              // Activate next MDI child window in the MDI application by
+	              // sending a message to the client window (the parent
+	              // of the MDI child window).
+	              CWnd* mdichild = CWnd::FromHandle(GetMDIChildHwnd());
+	              if (mdichild)
+	                 (mdichild->GetParent())->SendMessage(WM_MDINEXT);
+	           }
+	
+	        COleControl::OnKeyDown(nChar, nRepCnt, nFlags);
+	     }
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Create an MDI application in Visual Basic.
+	
+	2. Add an ActiveX control and a textbox control to the MDI child form in design
+	  mode.
+	
+	3. Run the MDI application. The MDI application will show an MDI child window
+	  during startup.
+	
+	4. On the File menu, click New to create another MDI child window. Tile both MDI
+	  child windows. You will notice that one MDI child window is active and the
+	  other is inactive.
+	
+	5. Click the ActiveX control of the inactive MDI child window; the MDI child
+	  window is not activated. Click another area other than the ActiveX control in
+	  the inactive MDI child window; the MDI child window changes from an inactive
+	  to an active state.
+	
+	In Visual Basic 5.0, when focus is in the textbox control, pressing CTRL+TAB
+	activates the inactive MDI child window. However, pressing CTRL+TAB has no
+	effect if focus is in the ActiveX control.
+	
+	REFERENCES
+	==========
+	
+	For information about creating an MDI application in Visual Basic, please refer
+	to Visual Basic's books online.
+	
+	For additional information about getting the actual parent of an ActiveX control,
+	please see the following article in the Microsoft Knowledge Base:
+	
+	  Q150204 HOWTO: Retrieve the Actual Parent Window of an ActiveX Control
+	
+	(c) Microsoft Corporation 1997, All Rights Reserved. Contributions by Yeong- Kah
+	Tam, Microsoft Corporation.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbole kbActiveX kbCtrl kbMFC kbVC500 kbVC600 kbDSupport kbGrpDSMFCATL 
+	Technology        : kbAudDeveloper kbMFC
+	Version           : winnt:5.0,6.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

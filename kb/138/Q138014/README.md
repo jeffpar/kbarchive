@@ -1,0 +1,139 @@
+---
+layout: page
+title: "Q138014: File May Be Truncated to Zero Bytes When Copied Onto Itself"
+permalink: kb/138/Q138014/
+---
+
+## Q138014: File May Be Truncated to Zero Bytes When Copied Onto Itself
+
+	Article: Q138014
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbfile kbnetwork msnets win95
+	Last Modified: 15-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 95 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you try to copy a file onto itself, you receive a Confirm File Replace
+	dialog box prompting you to confirm that you want to replace the existing file.
+	If you click Yes, the file may be truncated to zero bytes. If you click No, the
+	file is unchanged.
+	
+	This problem occurs only when you copy a file onto itself using two different
+	views of the same network resource (such as when you have two different drive
+	letters mapped to the same network resource, or when you have two UNC
+	connections to the same network resource), or when you copy a file onto itself
+	using a drive created with the SUBST command.
+	
+	NOTE: If you try to move (rather than copy) a file in this manner, the file may
+	be deleted.
+	
+	RESOLUTION
+	==========
+	
+	This issue is resolved by the following updated file for Windows 95, and later
+	versions of this file:
+	
+	  SHELL32.DLL  version 4.00.951  817,664 bytes
+	
+	To install this update, download the Windows 95 Service Pack 1 Update Setup.exe
+	file from one of the sources listed below.
+	
+	In addition to correcting the problem described in this article, the new version
+	of Shell32.dll provides the ability to browse printers from the Add Printer
+	Wizard for users of the Microsoft Service for NetWare Directory Services (NDS).
+	Users of the standard network clients included with Windows 95 can already
+	browse printers and do not require this update to browse for printers.
+	
+	Installation
+	------------
+	
+	To correct the problem described in this article, follow these steps:
+	
+	1. Download the Setup.exe file from one of the online services listed below to
+	  an empty folder.
+	
+	2. In My Computer or Windows Explorer, double-click the Setup.exe file.
+	
+	3. Follow the instructions on your screen.
+	
+	4. After the installation process is finished, shut down and then restart your
+	  computer.
+	
+	Instructions for Downloading
+	----------------------------
+	
+	To obtain this file, apply Microsoft Windows 95 Service Pack 1. For additional
+	information about applying Microsoft Windows 95 Service Pack 1, click the
+	article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q142794 Availability of Microsoft Windows 95 Service Pack 1
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft Windows 95. This issue
+	is resolved in Microsoft Windows 98.
+	
+	MORE INFORMATION
+	================
+	
+	This problem does not affect most users, because copying a file onto itself is
+	an unnecessary task. In addition, this problem occurs only in the following
+	circumstances:
+	
+	- The problem occurs only when you copy a file onto itself on a drive using
+	  drive mapping (such as a mapped network drive or a drive created with the
+	  SUBST command) or a UNC connection. Users in non-networked environments, and
+	  users who do not use the SUBST command, are not affected by this problem.
+	
+	- The problem occurs only if you use two views of the same network resource, or
+	  drive created with the SUBST command, and copy a file onto itself. For
+	  example, the problem may occur if you map drive X to the
+	  \\<server>\<folder> network resource, map drive Y to the same
+	  network resource, and then copy a file from the root folder of drive X to the
+	  root folder of drive Y.
+	
+	- The problem occurs only with files of a certain size. While preliminary
+	  testing indicates that only files smaller in size than approximately 234K are
+	  affected, the affected file size is also dependent on the size of the local
+	  and network buffers, and may vary based on configuration.
+	
+	For additional information about issues resolved by updates to this component,
+	please see the following articles in the Microsoft Knowledge Base:
+	
+	  Q161100 File May Be Truncated When Copied to a Full Network Drive
+	
+	  Q150215 Disabling Automatic Network Shortcut Resolution
+	
+	  Q138014 File May Be Truncated to Zero Bytes When Copied Onto Itself
+	
+	  Q136834 Error Copying Read-Only Files to Core SMB Server
+	
+	
+	  Q160807 Cannot Connect to Windows NT Server with Many Shares
+	
+	
+	For additional information about Windows 95 updates, please see the following
+	article in the Microsoft Knowledge Base:
+	
+	  Q161020 Implementing Windows 95 Updates
+	
+	
+	Additional query words: msnWin95misc pcweek servicepack1
+	
+	======================================================================
+	Keywords          : kbfile kbnetwork msnets win95 
+	Technology        : kbWin95search kbWin95
+	Version           : :
+	
+	=============================================================================
+	

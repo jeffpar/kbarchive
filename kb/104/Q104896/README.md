@@ -1,0 +1,96 @@
+---
+layout: page
+title: "Q104896: FIX: F6100 Reading Maximal Negative Integers"
+permalink: kb/104/Q104896/
+---
+
+## Q104896: FIX: F6100 Reading Maximal Negative Integers
+
+	Article: Q104896
+	Product(s): Microsoft Fortran Compiler
+	Version(s): 1.0,1.0a
+	Operating System(s): 
+	Keyword(s): kberrmsg kbFortranPS kbLangFortran
+	Last Modified: 24-MAR-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft FORTRAN PowerStation for MS-DOS, versions 1.0, 1.0a 
+	- Microsoft Fortran Powerstation 32 for Windows NT, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	For any integer data type, reading the smallest negative integer of that range
+	generates the run-time error F6100 indicating that there was an INTEGER overflow
+	on input.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products listed at
+	the beginning of this article. This problem was corrected in Microsoft FORTRAN
+	PowerStation 32, version 4.0.
+	
+	MORE INFORMATION
+	================
+	
+	The smallest negative integer for each integer data type is:
+	
+	  -128 Integer*1
+	  -32768 Integer*2
+	  -2147483648 Integer*4
+	
+	The sample code below generates the 6100 error for all integer types when
+	compiled with PowerStation, but only generates the 6100 error for integer*4 with
+	FORTRAN 5.1 and earlier.
+	
+	Sample Code
+	-----------
+	
+	  C No Compiler options needed
+	        integer*1 i
+	        integer*2 j
+	        integer*4 k
+	        open(1,file='test.dat')
+	        do 10 n=3,5
+	          write(1,*) -2**((2**n-1))
+	   10   continue
+	
+	        rewind(1)
+	        read(1,*,iostat=ierr) i
+	        if(ierr.eq.6100) then
+	          print*, 'error reading integer*1 was: ',ierr
+	        else
+	          print*, 'integer*1 input: ',i
+	        end if
+	
+	        read(1,*,iostat=ierr) j
+	        if(ierr.eq.6100) then
+	          print*, 'error reading integer*2 was: ',ierr
+	        else
+	          print*, 'integer*2 input: ',j
+	        end if
+	
+	        read(1,*,iostat=ierr) k
+	        if(ierr.eq.6100) then
+	          print*, 'error reading integer*4 was: ',ierr
+	        else
+	          print*, 'integer*4 input: ',k
+	        end if
+	
+	        end
+	
+	Additional query words: 1.00 5.10
+	
+	======================================================================
+	Keywords          : kberrmsg kbFortranPS kbLangFortran 
+	Technology        : kbAudDeveloper kbFortranSearch kbZNotKeyword2 kbZNotKeyword3 kbFORTRANPower32100NT kbFORTRANPower100DOS kbFORTRANPower100aDOS
+	Version           : :1.0,1.0a
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

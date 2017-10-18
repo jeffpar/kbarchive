@@ -1,0 +1,93 @@
+---
+layout: page
+title: "Q184858: SMS: CLIMON Consumes PDC lsass Resources When Password Expired"
+permalink: kb/184/Q184858/
+---
+
+## Q184858: SMS: CLIMON Consumes PDC lsass Resources When Password Expired
+
+	Article: Q184858
+	Product(s): Microsoft Systems Management Server
+	Version(s): winnt:1.2
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 03-SEP-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server version 1.2 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Lsass.exe on a primary domain controller (PDC) will show very high levels of CPU
+	usage (above 50 percent). If a backup domain controller (BDC) is promoted to
+	PDC, the problem will follow the new PDC. Using the checked version of Netlogon,
+	you will see one or more logon requests being issued from various client
+	computers every 60 seconds.
+	
+	CAUSE
+	=====
+	
+	When using the checked version of Netlogon.dll, you may see multiple lines in
+	Netlogon.log that have 0xC0000071 messages occurring within a second or so of
+	each other from one client. The 0xC0000071 means that STATUS_PASSWORD_EXPIRED,
+	so you will see this messages only from users that are still logged on, but
+	whose passwords have expired. If you do a Network Monitor trace from the client
+	computer, you will see an SMB Session Setup every 60 seconds for each Systems
+	Management Server site server that the CLIMONNT process has been configured
+	for.
+	
+	All of these logon requests are redirected back to the PDC from the validating
+	BDC because the BDC is not sure about the user's password, so the LSASS process
+	on the PDC starts growing. For example, consider 300 clients with expired
+	passwords are logged on and configured to look to six different Systems
+	Management Server site servers every 60 seconds. The number of logon requests
+	that the PDC must process each minute is: (6 * 300) = 1,800. All 1,800 will fail
+	and are wasted attempts.
+	
+	Normally, the CLIMONNT service wakes up every 24 hours to see if there are any
+	jobs to process. When a client's password has expired, CLIMONNT wakes up, then
+	tries each server in the list and each server will fail. CLIMONNT will then
+	sleep for another 60 seconds and try contacting each server again. This cycle
+	repeats every 60 seconds, until the user eventually logs off and logs back on,
+	forcing the user to change his or her password.
+	
+	WORKAROUND
+	==========
+	
+	To work around this problem, contact Microsoft Technical Support to obtain the
+	following fix, or wait for the next Systems Management Server service pack. The
+	hotfix should have the following timestamp:
+	
+	     04/22/98   08:18 PM        182KB      Climonnt.exe (Alpha)
+	     04/22/98   08:23 PM         80KB      Climonnt.exe (INTEL)
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Systems Management Server
+	version 1.2.
+	
+	
+	A supported fix is now available, but has not been fully regression- tested and
+	should be applied only to systems experiencing this specific problem. Unless you
+	are severely impacted by this specific problem, Microsoft recommends that you
+	wait for the next Service Pack that contains this fix. Contact Microsoft
+	Technical Support for more information.
+	
+	
+	Additional query words: prodsms CLIMON login netmon mon
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbSMSSearch kbSMS120
+	Version           : winnt:1.2
+	Hardware          : ALPHA x86
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

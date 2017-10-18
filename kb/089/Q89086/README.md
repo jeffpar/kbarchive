@@ -1,0 +1,156 @@
+---
+layout: page
+title: "Q89086: Using the DNA Network with Windows"
+permalink: kb/089/Q89086/
+---
+
+## Q89086: Using the DNA Network with Windows
+
+	Article: Q89086
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 28-SEP-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The following information applies to Microsoft Windows operating system running
+	with a DNA network. DNA is an unsupported network. This article includes the
+	following topics:
+	
+	- Setup for Microsoft or 100-percent compatible system
+	
+	- Network board software needs to be revision H for Windows 3.1
+	
+	- Installing on DNA's propriety boards
+	
+	- Persistent network connections
+	
+	MORE INFORMATION
+	================
+	
+	Setup for Microsoft or 100-Percent Compatible
+	---------------------------------------------
+	
+	Windows must be installed as "Microsoft or 100% Compatible" when prompted for the
+	network configuration.
+	
+	Network Board Software Needs to be Revision H for Windows 3.1
+	-------------------------------------------------------------
+	
+	Running Microsoft Windows operating system version 3.1 under the DNA Networks
+	software may produce some problems unless you have updated to version 3.38 (Rev.
+	H) of DNA Networks proprietary boards or to version 5.02 (Rev. H) of NetBIOS
+	boards.
+	
+	The following problems occur without the update:
+	
+	- When running Setup /N from a workstation without a hard drive, the "Install
+	  Applications" section of Setup can only modify the path, not the drive.
+	
+	- After entering either the graphical portion of Setup or when running Windows,
+	  floppy drive A no longer is accessible and may cause of the following error
+	  messages:
+	
+	   - Current drive is no longer valid.
+	
+	   - Cannot load COMMAND.COM.
+	
+	   - Insert disk with batch file.
+	
+	- Network directories may not display in the following applications' dialog
+	  boxes:
+	
+	   - AMI PRO version 2.0
+	
+	   - Versions 2.1d and 3.0 of Microsoft Excel for Windows
+	
+	   - Version 2.0 of Microsoft Word for Windows
+	
+	   - WordPerfect version 5.1
+	
+	Installing on DNA's Proprietary Boards
+	--------------------------------------
+	
+	If you are installing on DNA's proprietary boards (as opposed to NetBIOS boards
+	such as EtherNet), the following information applies:
+	
+	1. If you are using DNA's MegaNet board, Windows must be told not to use the
+	  same area in memory that the board uses for the MegaNet Window (a 16K page).
+	  To find out which page is being used, start the machine without loading any
+	  memory managers and read the DNA device driver banner. If it is says MegaNet,
+	  then note which page it says it is using. Exclude this page from Windows by
+	  adding an EMMEXCLUDE= entry to the [386Enh] section of the SYSTEM.INI file.
+	  For example, if the DNA banner reads
+	
+	  MegaNet, RAM Window=C000
+	
+	  then add EMMEXCLUDE=C000-C3FF to the SYSTEM.INI file.
+	
+	  If the DNA banner reads
+	
+	  MegaNet, RAM Window=C800
+	
+	  then add EMMEXCLUDE=C800-CBFF to the SYSTEM.INI file.
+	
+	2. Each machine that is running Windows should be using the DNA program
+	  WINFIX.COM. WINFIX.COM should be installed in the AUTOEXEC.BAT file and can
+	  be found on DNA distribution disk 1 in the FIXES subdirectory. This will keep
+	  DNA from displaying the error
+	
+	  Unsupported NetBIOS call
+	
+	  when Windows is executed. It will also allow Windows to properly detect
+	  network printers and drives that have been redirected over the DNA network.
+	
+	3. DNA networks do not support Windows running in 386 enhanced mode as the
+	  master (server) if a DNA MegaNet board is installed running in MegaNet mode
+	  (the board is using a RAM window). Windows can still be run in 386 enhanced
+	  mode at workstations.
+	
+	4. Print Manager functions are not supported. The DNA network utilities
+	  PRINT.SYS and SPOOL.SYS (together with the SPOOL command) provide the same
+	  functionality.
+	
+	Persistent Network Connections
+	------------------------------
+	
+	If you are using DNA network software on a machine without a hard disk, and you
+	are using persistent network connections under Windows 3.1, you may not be able
+	to use drive A after Windows is started. You will need to restart the computer
+	to gain access to drive A.
+	
+	DNA has confirmed this to be a problem with its network driver. An updated driver
+	can be obtained from DNA.
+	
+	To disable persistent network connections:
+	
+	1. Run Control Panel.
+	
+	2. Choose the Network icon.
+	
+	3. Clear the Restore All Connections At Startup check box.
+	
+	4. Choose the OK button to save your changes.
+	
+	The products included here (other than Excel, Windows, and Word) are manufactured
+	vendors independent of Microsoft; we make no warranty, implied or otherwise,
+	regarding these products' performance or reliability.
+	
+	Additional query words: 3.00 3.00a 3.10 3.11 winfest 3rdparty
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+	Version           : WINDOWS:3.0,3.0a,3.1,3.11
+	
+	=============================================================================
+	

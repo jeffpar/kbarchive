@@ -1,0 +1,98 @@
+---
+layout: page
+title: "Q284943: How to Create a Windows 95 Startup Disk in MS-DOS"
+permalink: kb/284/Q284943/
+---
+
+## Q284943: How to Create a Windows 95 Startup Disk in MS-DOS
+
+	Article: Q284943
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): 1,2,2.1,2.5
+	Operating System(s): 
+	Keyword(s): osr2 win95
+	Last Modified: 29-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 95 
+	- Microsoft Windows 95 OEM Service Release, versions 1, 2, 2.1, 2.5 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes how to create a Windows 95 Startup disk in MS-DOS.
+	
+	This article is based on the assumption that the system files on the hard drive
+	are in good condition, and are not corrupted, or that you have access to a
+	functioning Windows 95-based computer.
+	
+	MORE INFORMATION
+	================
+	
+	1. Restart the computer. When you see the "Starting Windows 95" message, press
+	  F8, and then choose Command Prompt Only on the Startup menu, or open an
+	  MS-DOS window inside of Windows 95.
+	
+	2. Insert a blank, non-write protected floppy disk in the floppy disk drive (if
+	  you use a disk that has any data on it, the data will be lost).
+	
+	3. Type the following commands, pressing ENTER after each command. Do not
+	  include the comments that are included in parentheses.
+	
+	  "format a: /s" (without the quotation marks) (this will copy over
+	  Command.com, IO.sys, Msdos.sys, and if the hard drive is compressed,
+	  Drvspace.bin)
+	
+	  "copy c:\windows\command\attrib.exe a:" (without the quotation marks)
+	
+	  "copy c:\windows\command\chkdsk.exe a:" (without the quotation marks)
+	
+	  "copy c:\windows\command\debug.exe a:" (without the quotation marks)
+	
+	  "copy c:\windows\command\edit.com a:" (without the quotation marks)
+	
+	  "copy c:\windows\command\fdisk.exe a:" (without the quotation marks)
+	
+	  "copy c:\windows\command\format.com a:" (without the quotation marks)
+	
+	  "copy c:\windows\command\scandisk.exe a:" (without the quotation marks)
+	
+	  "copy c:\windows\command\scandisk.ini a:" (without the quotation marks)
+	
+	  "copy c:\windows\command\sys.com a:" (without the quotation marks)
+	
+	  "copy c:\windows\command\drvspace.bin a:" (without the quotation marks)
+	  (format /s will copy this over if the drive is compressed)
+	
+	  "copy c:\windows\regedit.exe a:" (without the quotation marks)
+	
+	4. Uninstal.exe is found in the Win95_02.cab file, and it must be extracted.
+	  This file is only needed if you are planning on uninstalling Windows 95.
+	
+	For additional information about how to extract files, click the article number
+	below to view the article in the Microsoft Knowledge Base:
+	
+	  Q129605 How to Extract Original Compressed Windows Files
+	
+	5. Ebd.sys is an empty file that is included on the EBD made by Windows, but it
+	  is not necessary.
+	
+	For additional information about the contents of the Windows 95 Startup disk,
+	click the article number below to view the article in the Microsoft Knowledge
+	Base:
+	
+	  Q142943 Contents of Windows 95 and Microsoft Plus! Startup Disks
+	
+	Additional query words: ebd emergency boot disk
+	
+	======================================================================
+	Keywords          : osr2 win95 
+	Technology        : kbWin95search kbOPKSearch kbWin95 kbWin95OPKOSR2 kbWin95OPKOSR25 kbWin95OPKOSR1 kbWin95OPKOSR210
+	Version           : :1,2,2.1,2.5
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

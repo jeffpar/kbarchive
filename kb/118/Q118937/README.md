@@ -1,0 +1,146 @@
+---
+layout: page
+title: "Q118937: PRB: Files Copied from MS-DOS to Mac Have Wrong Icon and Type"
+permalink: kb/118/Q118937/
+---
+
+## Q118937: PRB: Files Copied from MS-DOS to Mac Have Wrong Icon and Type
+
+	Article: Q118937
+	Product(s): Microsoft FoxPro
+	Version(s): MACINTOSH:2.5b,2.5c,3.0b
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 04-AUG-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft FoxPro for Macintosh, versions 2.5b, 2.5c 
+	- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	After FoxPro files have been converted from MS-DOS format to the Macintosh
+	format, they do not display the correct FoxPro icons or file kind in a window.
+	Additionally, viewing the files with a resource editor, such as ResEdit, shows
+	that they have the wrong resource type and creator.
+	
+	CAUSE
+	=====
+	
+	Because MS-DOS files do not have resources, the tool used to transport them to
+	the Macintosh usually assigns its creator and file type to the files. Examples
+	are the Apple File Exchange utility and networks that support connections to
+	MS-DOS-based machines and Macintoshes, such as Microsoft Windows NT.
+	
+	WORKAROUND
+	==========
+	
+	To fix the files, do one of the following:
+	
+	- If only a few files are involved, use one of the techniques described in the
+	  "More Information" section below to change the creator and file types of the
+	  files.
+	
+	-or-
+	
+	- If many files are involved, you may want to use the programmatic workaround
+	  described in the following article in the Microsoft Knowledge Base:
+	
+	  Q114999 PRB: Creators and Types Are Reset After Transport to Macintosh
+	
+	STATUS
+	======
+	
+	This behavior is by design.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Change File Creator and Types by Using File, Save As
+	-------------------------------------------------------------
+	
+	NOTE: This technique does not work on file types, such as tables, that can't be
+	saved using the Save As command on the File menu.
+	
+	1. From the File menu, choose Open. Select the appropriate file type in the Type
+	  list box.
+	
+	2. Select the file you want to change, and then choose Open.
+	
+	  NOTE: If the file isn't visible, select the All Files check box.
+	
+	3. If prompted to transport the file, choose Transport.
+	
+	4. From the File menu, choose Save As. Keep the current filename and choose
+	  Save.
+	
+	5. When prompted to replace the existing file, choose Save.
+	
+	6. From the File menu, choose Close.
+	
+	Steps to Change File Creator and Types Using ResEdit
+	----------------------------------------------------
+	
+	CAUTION: This workaround uses Apple's resource editor, ResEdit. Because a file
+	may be damaged if incorrect changes are made, the use of ResEdit is recommended
+	for advanced Macintosh users only. As a precautionary step, you may want to make
+	backup copies of the FoxPro files before proceeding.
+	
+	NOTE: The instructions below are for ResEdit version 2.1.1. If you use a
+	different version of ResEdit, these instructions may vary slightly. ResEdit does
+	not come with the Macintosh operating system, but can be obtained from Macintosh
+	user groups or the Apple Programmers and Developers Association (APDA).
+	
+	
+	1. Start ResEdit. Press ESC to stop the animated opening screen.
+	
+	2. In the opening dialog box, choose Cancel.
+	
+	3. From the File menu, choose Get File/Folder Info.
+	
+	4. Select the file that needs its creator and type changed. Choose Get Info.
+	
+	5. Change the type to the appropriate type. Change the Creator to FOXX.
+	
+	  NOTE: For a list of FoxPro types, see the "Creator File Types" topic in the
+	  FoxPro online Help system.
+	
+	6. Close the window for the selected file. When prompted to "save info," choose
+	  Yes.
+	
+	7. If you need to change other files, repeat steps 3-6 for each file.
+	
+	8. From the File menu, choose Quit.
+	
+	NOTE: If the file kind/type and icon do not change, you will need to rebuild the
+	desktop. To do this, perform the following steps:
+	
+	1. While holding down the COMMAND and OPTION keys, choose Restart from the
+	  Special menu. Continue holding down the COMMAND and OPTION keys while the
+	  Macintosh restarts--this rebuilds the desktop.
+	
+	2. After the Macintosh restarts, it displays the following dialog box:
+	
+	  Are you sure you want to rebuild the
+	  desktop file on the disk "<disk_name>"?
+	  Comments in info windows will be lost.
+	
+	  Release the COMMAND and OPTION keys, and then choose OK.
+	
+	(c) Microsoft Corporation 2000, All Rights Reserved. Contributions by Kevin
+	Zollman, Microsoft Corporation.
+	
+	
+	Additional query words: VFoxMac FoxMac lan lanman os/2 text lman bina mdos translate import export port move platform pc akz
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro250bMac kbFoxPro250cMac kbVFP300bMac
+	Version           : MACINTOSH:2.5b,2.5c,3.0b
+	
+	=============================================================================
+	

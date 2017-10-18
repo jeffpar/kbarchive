@@ -1,0 +1,123 @@
+---
+layout: page
+title: "Q189928: WD97: Errors Attempting to Fax After Installing Outlook 98"
+permalink: kb/189/Q189928/
+---
+
+## Q189928: WD97: Errors Attempting to Fax After Installing Outlook 98
+
+	Article: Q189928
+	Product(s): Word 97 for Windows
+	Version(s): WINDOWS:97
+	Operating System(s): 
+	Keyword(s): kbinterop kbdta word97 kbmerge
+	Last Modified: 14-NOV-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	- Microsoft Outlook 98 
+	-------------------------------------------------------------------------------
+	
+	
+	
+	SYMPTOMS
+	========
+	
+	When you attempt to fax after installing Microsoft Outlook 98, one of the
+	following may occur:
+	
+	- When merging to Electronic Mail using the WinFax Starter Edition fax number
+	  format (Fax@<fax number>), you may receive the following error message
+	  when Outlook 98 sends the merged items to your Outbox:
+	
+	  Some errors occurred while processing the requested tasks. Please review the
+	  list of errors below for more details.
+	
+	  Unable to connect to the server. (Account: 'Symantec WinFax Starter Edition',
+	  SMTP Server: '127.0.0.1', Error Number: 0x800ccc0e).
+	
+	  NOTE: This error message will appear if Symantec WinFax Starter Edition is set
+	  as the default Internet Account in Outlook 98. To check the default account
+	  in Outlook 98, click Accounts on the Tools menu and then click the Mail tab.
+	
+	  -or-
+	
+	- When you try to merge to Electronic Mail using the Microsoft Fax fax number
+	  format (Fax:<fax number>), the following error message may appear:
+	
+	  This program has performed an illegal operation and will be shutdown. If the
+	  problem persists, contact the program vendor.
+	
+	  WINWORD caused an invalid page fault in module OLEAUT32.dll at 0137:6534b2dl.
+	
+	  -or-
+	
+	- In a Word document, when you point to Send To on the File menu and then click
+	  Mail Recipient, a new mail message appears. When you type the fax number
+	  using the [Fax:<fax number>] format in the To box and click Send, the
+	  Check Names dialog box appears with the "No Matches Found" message.
+	
+	  -or-
+	
+	- In a Word document, when you point to Send To on the File menu and then click
+	  Fax Recipient, the Fax Wizard tries to start but nothing happens or you
+	  receive the following error message:
+	
+	  This program has performed an illegal operation and will be shutdown. If the
+	  problem persists, contact the program vendor.
+	
+	  WINWORD caused an invalid page fault in module OLEAUT32.dll at 0137:6534b2dl.
+	
+	  -or-
+	
+	- When you try to send a fax from Microsoft Fax (on the Start menu, point to
+	  Programs, point to Accessories, point to Fax, and then click Compose New Fax,
+	  the following error message appears:
+	
+	  The profile you selected does not have fax capabilities. You can either add
+	  fax to this profile (through the Control Panel), or restart with a profile
+	  that contains fax.
+	
+	CAUSE
+	=====
+	
+	These errors occur if you selected the Internet Mail Only (IMO) option in the
+	Microsoft Outlook 98 Setup program and you have Microsoft Fax installed.
+	
+	RESOLUTION
+	==========
+	
+	To correct these problems, you need to remove Microsoft Fax and then reinstall
+	the Symantec WinFax Starter Edition in Outlook 98 setup.
+	
+	For additional information about how to remove Microsoft Fax and to reinstall the
+	Symantec WinFax Starter Edition, please see the following article in the
+	Microsoft Knowledge Base:
+	
+	  Q187978 OL98: (IMO) Can't Fax After Mail Merge from Microsoft Word
+	
+	
+	MORE INFORMATION
+	================
+	
+	For additional information, please see the following articles in the Microsoft
+	Knowledge Base:
+	
+	  Q184029 OL98: How to Tell What Type of Outlook Setup You Have
+	
+	
+	  Q189932 WD97: Merge To Electronic Fax Option Missing
+	
+	Additional query words: ol98 8.0
+	
+	======================================================================
+	Keywords          : kbinterop kbdta word97 kbmerge 
+	Technology        : kbWordSearch kbOutlookSearch kbWord97 kbWord97Search kbZNotKeyword2 kbOutlook98Search kbZNotKeyword3
+	Version           : WINDOWS:97
+	Hardware          : x86
+	Issue type        : kbprb
+	
+	=============================================================================
+	

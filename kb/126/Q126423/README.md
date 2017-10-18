@@ -1,0 +1,73 @@
+---
+layout: page
+title: "Q126423: STOP: 0x0000007B &quot;Inaccessible_Boot_Device&quot; - during setup disk2"
+permalink: kb/126/Q126423/
+---
+
+## Q126423: STOP: 0x0000007B &quot;Inaccessible_Boot_Device&quot; - during setup disk2
+
+	Article: Q126423
+	Product(s): Microsoft Windows NT
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbhw kbsetup kbHardware
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+	- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Many computers are equipped with both the 5.25-inch and 3.5-inch floppy drives
+	in one single unit. When you install Windows NT on a computer with this floppy
+	drive unit, the following error message may appear during Windows NT Setup Disk
+	2.
+	
+	  STOP: 0x0000007B
+	  Inaccessible_Boot_Device
+	
+	CAUSE
+	=====
+	
+	This problem occurs if the original path of the floppy drives has changed
+	through the BIOS configuration of the computer. Some computers that include the
+	two floppy drives in a single unit have a BIOS option to swap the floppy drives
+	logically without changing the hardware jumpers. This allows any one of the
+	floppy drives to become the "boot" floppy drive. When you install Windows NT,
+	this BIOS setting is ignored and the Windows NT kernel addresses the floppy
+	drives as configured with the jumpers.
+	
+	RESOLUTION
+	==========
+	
+	To correct this problem, do the following:
+	
+	1. Do not use the DRIVE SWAPPING option in the computer system BIOS to change
+	  the logical configuration of the floppy drive letters. If you have changed
+	  the configuration, change it back to the original settings.
+	
+	2. Make sure the jumpers on the floppy drive unit matches the drive types
+	  defined in the computer system BIOS.
+	
+	MORE INFORMATION
+	================
+	
+	This error may also occur on systems with a LS/120 floppy disk drive installed.
+	
+	For additional information, see the following article in the Microsoft Knowledge
+	Base:
+	
+	  Q172773: Problems Using LS/120 Floppy Disk Drive with Windows NT Setup
+	
+	Additional query words: cmos stop 0x7B
+	======================================================================
+	Keywords          : kbhw kbsetup kbHardware 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+	
+	=============================================================================
+	

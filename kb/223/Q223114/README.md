@@ -1,0 +1,126 @@
+---
+layout: page
+title: "Q223114: FIX: Scale and Line Methods Work Differently on Printer Object"
+permalink: kb/223/Q223114/
+---
+
+## Q223114: FIX: Scale and Line Methods Work Differently on Printer Object
+
+	Article: Q223114
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): WINDOWS:6.0
+	Operating System(s): 
+	Keyword(s): kbprint kbservicepack kbPrinting kbVBp600bug kbGrpDSVB kbVS600sp2 kbVS600SP1 kbVS600sp3
+	Last Modified: 11-SEP-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The Scale and Line methods are used to display a line on a form in a Visual
+	Basic project. When the same arguments for the Scale and Line methods are used
+	with the Printer object, the lines on the printed page are different from those
+	displayed on the form. The expected behavior is that the line printed on the
+	page will match the line displayed on the form.
+	
+	CAUSE
+	=====
+	
+	The Printer.Scale method does not properly handle the case where the value of
+	one of the XY coordinates in the second point is less than the value of
+	corresponding coordinate in the first point.
+	
+	For example, the following statement would behave incorrectly because the value
+	of the second Y coordinate is less than that of the first one.
+	
+	  Printer.Scale (0, 5)-(10, 0)
+	
+	RESOLUTION
+	==========
+	
+	Remove the call to the Scale method and replace it by setting the ScaleLeft,
+	ScaleTop, ScaleWidth, and ScaleHeight properties as shown in the sample in the
+	MORE INFORMATION section.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article.
+	
+	This bug was corrected in Visual Studio 6.0 Service Pack 3. For more information
+	about Visual Studio service packs, please see the following articles in the
+	Microsoft Knowledge Base:
+	
+	Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+	
+	Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+	
+	MORE INFORMATION
+	================
+	
+	This section illustrates how to create a Visual Basic project that demonstrates
+	this behavior. It assumes you are familiar with using the methods of the Printer
+	and Form objects.
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Start a new Standard EXE project in Visual Basic. Form1 is created by
+	  default.
+	
+	2. Add three CommandButton controls to Form1.
+	
+	3. Copy the following code to the General Declaration section of Form1:
+	
+	     Option Explicit
+	
+	     Private Sub Command1_Click()
+	        Scale (0, 5)-(10, 0)
+	        Line (0, 4)-(10, 3)
+	     End Sub
+	
+	     Private Sub Command2_Click()
+	        Printer.Scale (0, 5)-(10, 0)
+	        Printer.Line (0, 4)-(10, 3)
+	        Printer.EndDoc
+	     End Sub
+	
+	     Private Sub Command3_Click()
+	        Printer.ScaleLeft = 0
+	        Printer.ScaleTop = 5
+	        Printer.ScaleWidth = 10
+	        Printer.ScaleHeight = -5
+	        Printer.Line (0, 4)-(10, 3)
+	        Printer.EndDoc
+	     End Sub
+	
+	4. Run the project. Click Command1 to draw a line on Form1 then click Command2
+	  to print a line.
+	
+	  RESULT: The endpoint of the line on the right side of the printed page is
+	  higher than the starting point. On Form1 the endpoint is lower. The expected
+	  behavior is that the line on the printed page should match the line that
+	  appears on Form1.
+	
+	5. Click Command3 and compare the printed output to the screen image. The output
+	  now matches correctly.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbprint kbservicepack kbPrinting kbVBp600bug kbGrpDSVB kbVS600sp2 kbVS600SP1 kbVS600sp3fix 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+	Version           : WINDOWS:6.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

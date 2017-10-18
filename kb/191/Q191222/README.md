@@ -1,0 +1,90 @@
+---
+layout: page
+title: "Q191222: INFO: ActiveX Controls Supported by Visual FoxPro 6.0"
+permalink: kb/191/Q191222/
+---
+
+## Q191222: INFO: ActiveX Controls Supported by Visual FoxPro 6.0
+
+	Article: Q191222
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:6.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 29-JUL-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The table in the MORE INFORMATION section lists the ActiveX controls (.ocx
+	files) that are shipped with Visual FoxPro 6.0. These ActiveX controls have been
+	tested and are supported by Visual FoxPro 6.0.
+	
+	MORE INFORMATION
+	================
+	
+	Here is the list of the controls:
+	
+	  File              Controls                  OleClass
+	  -----------------------------------------------------------------
+	
+	  ComCtl232.ocx     Animation control         MSComCtl2.Animation.2
+	                    DateTimePicker control    MSComCtl2.DTPicker.2
+	                    MonthView control         MSComCtl2.MonthView.2
+	                    UpDown control            MSComCtl2.UpDown.2
+	
+	  SysInfo.ocx       SysInfo control           SysInfo.SysInfo.1
+	
+	  RichTx32.ocx      Rich Textbox control      RichText.RichTextCtrl.1
+	
+	  PicClp32.ocx      PicClip control           PicClip.PictureClip.1
+	
+	  MSWinSck.ocx      WinSock control           MSWinsock.Winsock.1
+	
+	  MSMask32.ocx      Masked Edit control       MsMask.MaskEdBox.1
+	
+	  MSMapi32.ocx      MAPI Message control      MSMAPI.MapiMessage.1
+	                    MAPI Session control      MSMAPI.MapiSession.1
+	
+	  MSInet.ocx        Microsoft Internet
+	                    Transfer control          InetCtls.Inet.1
+	
+	  MSComm32.ocx      MSComm control            MSCommLib.MSComm.1
+	
+	  MSComctl.ocx      ImageCombo control        MSComCtlLib.ImageComboCtl.2
+	                    ImageList control         MSComCtlLib.ImageListCtrl.2
+	                    ListView control          MSComCtlLib.ListViewCtrl.2
+	                    ProgressBar control       MSComCtlLib.ProgCtrl.2
+	                    Slider control            MSComCtlLib.Slider.2
+	                    StatusBar control         MSComCtlLib.SBarCtrl.2
+	                    Toolbar control           MSComCtlLib.Toolbar.2
+	                    TreeView control          MSComCtlLib.TreeCtrl.2
+	
+	  MSChrt20.ocx      MsChart control           MSChartLib.MSChart.2
+	
+	  MCI32.ocx         Multimedia MCI control    MCI.MMControl.1
+	
+	  Foxtlib.ocx       VFP FoxTlib control       FoxTlib.FoxTlibCtrl.1
+	
+	  Foxhwnd.ocx       VFP HWND control          FoxHwnd.FoxHwndCtrl.1
+	
+	NOTE: Any ActiveX control, not listed in the preceding table, has not been tested
+	and may or may not be supported by Visual Foxpro 6.0.
+	
+	
+	Additional query words: kbVFp600 kbActiveX kbCOMt
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+	Version           : WINDOWS:6.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

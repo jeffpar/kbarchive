@@ -1,0 +1,79 @@
+---
+layout: page
+title: "Q81710: 1 MB COMPAQ and AT&amp;T Machines Can't Run HIMEM.SYS"
+permalink: kb/081/Q81710/
+---
+
+## Q81710: 1 MB COMPAQ and AT&amp;T Machines Can't Run HIMEM.SYS
+
+	Article: Q81710
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 12-OCT-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	COMPAQ 286, 386, and 486 machines and the AT&T 6300 Plus, 6386 WGS, 6386/20
+	WGS implement a memory mapping scheme that does not allow for the installation
+	of HIMEM.SYS if the machine has only 384K of extended memory.
+	
+	This information applies to all versions of HIMEM.SYS.
+	
+	COMPAQ and AT&T computers with more than 1 MB of memory installed function
+	properly with HIMEM.SYS.
+	
+	MORE INFORMATION
+	================
+	
+	A COMPAQ 286, 386, or 486 with 1 megabyte (MB) installed has 640K base memory
+	and remaps the 384K extended memory to the 0FA0000 address mark (to the 16 MB
+	mark, not the 1 MB mark). Because the 384K of extended memory is not addressed
+	contiguously above the 1 MB line, there is no extended memory in HMA
+	(1024K-1088K). Therefore, MS-DOS has no place to load high. The
+	AT&T/Olivetti computer functions in a similar manner.
+	
+	This behavior occurs by design with COMPAQ and AT&T systems. The design
+	decision was made by these manufacturers long before HIMEM.SYS was created.
+	HIMEM.SYS relies on the capability of the 80286/80386/80486 processor to address
+	64K of extended memory at the 1024K line.
+	
+	Loading HIMEM.SYS may appear to be successful on some machines while failing to
+	load or causing system hangs on others. The success depends on the particular
+	model of COMPAQ or AT&T in use. Alternative machine switches on HIMEM.SYS
+	will not solve the problem.
+	
+	COMPAQ has its own OEM version of HIMEM.SYS extended memory manager called
+	HIMEM.EXE, which is included on the utilities disks with the COMPAQ Deskpro
+	80286, 80386, and 80486 based systems. It allows those systems with extended
+	memory to access this extended memory using the extend memory specification
+	(XMS). It also allows MS-DOS programs to use the 64K region of memory located
+	just above the 1 MB address.
+	
+	The version of HIMEM.EXE dated 6-14-90 works with Microsoft Windows version 3.0
+	and is recommended by COMPAQ for use on COMPAQ machines with less than 16 MB of
+	memory.
+	
+	For additional information, contact COMPAQ technical support or AT&T.
+	
+	The products included here are manufactured by vendors independent of Microsoft;
+	we make no warranty, implied or otherwise, regard these products' performance
+	and reliability.
+	
+	Additional query words: 3.00 3.00a 5.00 systempro 3rdparty 3.10 3.11 6.00 6.20 KBHW
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+	Version           : WINDOWS:3.0,3.0a,3.1,3.11
+	
+	=============================================================================
+	

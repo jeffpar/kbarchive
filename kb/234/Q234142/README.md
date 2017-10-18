@@ -1,0 +1,150 @@
+---
+layout: page
+title: "Q234142: Updating IIS After You Change the Computer Name"
+permalink: kb/234/Q234142/
+---
+
+## Q234142: Updating IIS After You Change the Computer Name
+
+	Article: Q234142
+	Product(s): Internet Information Server
+	Version(s): 4.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	When you change the name of the computer that Internet Information Server (IIS)
+	is installed on, most IIS functionality continues to work properly without any
+	intervention; however, the following functions of IIS need to be updated:
+	
+	- The Internet Information Server snap-in for the Microsoft Management Console
+	  (MMC).
+	- Microsoft Transaction Server (MTS) packages that run in a separate memory
+	  space (isolated process).
+	
+	This article explains how to make the MMC and isolated process MTS packages
+	perform properly after the computer has been renamed.
+	
+	Note: This article does not cover the scenario of having Site Server 3.0
+	installed. Changing the name of a computer with Site Server installed creates a
+	non-supportable environment. If the computer is renamed, full functionality may
+	only be restored by restoring the OS to its previous configuration from backup.
+	Limited functionality is possible; however, this configuration is not supported.
+	
+	MORE INFORMATION
+	================
+	
+	This article assumes that when the Windows NT Option Pack was installed, a
+	Remote administrative account was NOT selected for MTS; instead, the default of
+	Local user was accepted. It also assumes that no custom MTS packages have been
+	installed (other than the packages that are automatically created for ASP
+	applications). If these assumptions are not true in your case, MTS may need more
+	modification than what is described in this article.
+	
+	This article also assumes that the original IUSR and IWAM accounts
+	(IUSR_<Old_ComputerName> and IWAM_<Old_ComputerName> by default)
+	will continue to be used. Although they use the old computer name, these
+	accounts are still valid and usable.
+	
+	This article does not apply to Windows 2000, because Microsoft has simplified the
+	process for renaming a computer that is running Internet Information Services
+	5.0. To change the NetBIOS name of a computer that is running IIS 5.0, simply
+	rename the server and restart it. After you restart the server, Windows 2000
+	Compensating Resource Managers (CRM) correct the inconsistency in the System
+	COM+ Application and allow IIS 5.0 to function normally with the new NetBIOS
+	name. Note that the IUSR and IWAM account names are not changed, but are still
+	valid.
+	
+	Fixing the MMC:
+	
+	If no computer name is displayed under "Internet Information Server" in the Scope
+	(left hand) pane of the MMC, you need to create a new console (.msc) for the MMC
+	that includes the Internet Information Server and Microsoft Transaction Server
+	snap-ins.
+	
+	Note: The following error message may also occur:
+	
+	  Error connecting to <Old_ComputerName>: The RPC server is unavailable.
+	
+	To fix these problems, create a new console (.msc) for the MMC by performing the
+	following steps:
+	
+	IMPORTANT: Any customization that you previously performed to the original IIS
+	console will be lost.
+	
+	1. Start the Internet Service Manager (ISM), which loads the Internet
+	  Information Server and Microsoft Transaction Server snap-ins for the
+	  Microsoft Management Console (MMC).
+	
+	2. From the Console menu, click New.
+	
+	3. From the Console menu, click Add/Remove Snap-in.
+	
+	4. On the Standalone tab, click the Add button. Select the Internet Information
+	  Server snap-in, and then click OK.
+	
+	5. Click the Add button again, and then select the Microsoft Transaction Server
+	  snap-in.
+	
+	6. Click OK twice to return to the main MMC window.
+	
+	7. From the Console menu, click Save.
+	
+	8. To replace the console that is run from the "Internet Service Manager" Start
+	  menu, save the console file to %WinDir%\System32\Inetsrv\Iis.msc.
+	
+	Updating Isolated Process MTS Packages:
+	
+	1. In the MMC, open the following in the Scope (left side) pane:
+	
+	 Microsoft Transaction Server\ 
+	   Computers\ 
+	     My Computer\ 
+	       Packages Installed
+	
+	2. For every ASP application that has been set to run in a separate memory space
+	  (isolated process), there is a corresponding isolated process MTS package
+	  (called a "server package" in MTS terminology). In the MMC, the names of
+	  these isolated process packages begin with the text "IIS-" followed by the
+	  Web site name and path enclosed by braces {}, for example: "IIS-{Default Web
+	  Site//Root/Iissamples/Issamples/Oop}".
+	
+	  The user listed in the Identity property sheet of each isolated process
+	  package refers to the old computer name. These must be updated to the new
+	  computer name. To do this, perform the following steps for each isolated
+	  process package:
+	
+	  a. Right-click the isolated process package, and then click Properties.
+	
+	  b. Click the Identity tab.
+	
+	  c. For the "This user" option, change the User from
+	     <Old_ComputerName>\<IWAM_UserName> to
+	     <New_ComputerName>\<IWAM_UserName>, provide the account
+	     password, and then click OK.
+	
+	  d. Click OK if you receive the following warning:
+	
+	  The packages were created by one or more external products. Are you certain
+	  the changes you are about to make are supported by these products?
+	
+	Additional query words: machine host netbios computer server mtx package process isolation rename
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbiisSearch kbiis400
+	Version           : :4.0
+	Issue type        : kbhowto
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

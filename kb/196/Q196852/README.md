@@ -1,0 +1,143 @@
+---
+layout: page
+title: "Q196852: XCON: MTA Stops with Database Server Internal Processing Error"
+permalink: kb/196/Q196852/
+---
+
+## Q196852: XCON: MTA Stops with Database Server Internal Processing Error
+
+	Article: Q196852
+	Product(s): Microsoft Exchange
+	Version(s): winnt:5.0,5.5
+	Operating System(s): 
+	Keyword(s): kbFEA exc5 exc55 EXC55SP3Fea
+	Last Modified: 08-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 5.0, 5.5 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	The message transfer agent (MTA) stops with a database server internal
+	processing error. Before the MTA stops, it issues the following event in the
+	Ev0.log:
+	
+	  Message NMI2051: Internal Processing Error, severity 16
+	
+	  (BASE RTSE(47) Proc 70) mm-dd-yy hh:mm:sspm
+	  Illegal get from element 5CE90801 at offset 102
+	
+	The element address and offset in the event may vary, but the thread in question
+	is always RTSE.
+	
+	CAUSE
+	=====
+	
+	The MTA stopped because it had received a truncated checkpoint on this
+	association from the peer MTA, and this error was treated as unrecoverable.
+	
+	RESOLUTION
+	==========
+	
+	Exchange Server 5.0
+	-------------------
+	
+	A supported fix is now available from Microsoft, but it is only intended to
+	correct the problem described in this article and should be applied only to
+	systems experiencing this specific problem. This fix may receive additional
+	testing at a later time, to further ensure product quality. Therefore, if you
+	are not severely affected by this problem, Microsoft recommends that you wait
+	for the next Microsoft Exchange Server version 5.0 service pack that contains
+	this fix.
+	
+	To resolve this problem immediately, contact Microsoft Product Support Services
+	to obtain the fix. For a complete list of Microsoft Product Support Services
+	phone numbers and information about support costs, please go to the following
+	address on the World Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	NOTE: In special cases, charges that are normally incurred for support calls may
+	be canceled, if a Microsoft Support Professional determines that a specific
+	update will resolve your problem. Normal support costs will apply to additional
+	support questions and issues that do not qualify for the specific update in
+	question.
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	Component: Message Transfer Agent (MTA)
+	
+	+----------------------------+
+	| File name    | Version     | 
+	+----------------------------+
+	| Address.dll  | 5.0.1461.76 | 
+	+----------------------------+
+	| Dbserver.sch | N/A         | 
+	+----------------------------+
+	| Dcprods.cat  | N/A         | 
+	+----------------------------+
+	| Ems_rid.dll  | 5.0.1461.76 | 
+	+----------------------------+
+	| Emsmta.exe   | 5.0.1461.76 | 
+	+----------------------------+
+	| Infoblog.cfg | N/A         | 
+	+----------------------------+
+	| Infoplog.cfg | N/A         | 
+	+----------------------------+
+	| Infotlog.cfg | N/A         | 
+	+----------------------------+
+	| Infoxlog.cfg | N/A         | 
+	+----------------------------+
+	| Mmiext.dll   | 5.0.1461.76 | 
+	+----------------------------+
+	| Mtacheck.exe | 5.0.1461.76 | 
+	+----------------------------+
+	| Mtamsg.dll   | 5.0.1461.76 | 
+	+----------------------------+
+	| P2.xv2       | N/A         | 
+	+----------------------------+
+	| P3.tpl       | N/A         | 
+	+----------------------------+
+	| P772.tpl     | N/A         | 
+	+----------------------------+
+	| X400om.dll   | 5.0.1461.76 | 
+	+----------------------------+
+	| X400omv1.dll | 5.0.1461.76 | 
+	+----------------------------+
+	
+	
+	
+	Exchange Server 5.5
+	-------------------
+	
+	This feature is available in the latest service pack for Exchange Server version
+	5.5. For additional information, please see the following article in the
+	Microsoft Knowledge Base:
+	
+	  Q191014 XGEN: How to Obtain the latest Exchange Server 5.5 Service Pack
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+	versions 5.0 and 5.5.This feature was first included in Exchange Server 5.5
+	Service Pack 3.
+	
+	
+	Additional query words: dbserver
+	======================================================================
+	Keywords          : kbFEA exc5 exc55 EXC55SP3Fea 
+	Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+	Version           : winnt:5.0,5.5
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

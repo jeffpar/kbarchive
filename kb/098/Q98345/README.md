@@ -1,0 +1,104 @@
+---
+layout: page
+title: "Q98345: DoubleSpace and R6002 Run-Time Errors"
+permalink: kb/098/Q98345/
+---
+
+## Q98345: DoubleSpace and R6002 Run-Time Errors
+
+	Article: Q98345
+	Product(s): Microsoft Disk Operating System
+	Version(s): MS-DOS:6.0
+	Operating System(s): 
+	Keyword(s): kbenv kbtool
+	Last Modified: 23-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft MS-DOS operating system version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The MS-DOS 6.0 DoubleSpace disk-compression utility executes some floating point
+	(non-integer math) calculations and therefore may attempt to use a math
+	coprocessor (80x87 or equivalent) if one is present. If a machine's numeric
+	processing system is substandard or compromised due to the presence of device
+	drivers, TSRs, or faulty hardware, DoubleSpace may either report inaccurate time
+	estimates for completion or fail and generate the following errors:
+	
+	- Run-time error R6002 - floating-point support not loaded
+	
+	- Run-time error R6002 - floating-point error
+	
+	- Error: R6101 - Floating Point Divide by Zero
+	
+	MS-DOS 6.2 DoubleSpace does some floating point arithmetic, but it does not
+	attempt to use a math coprocessor even if one is present. This issue can occur
+	in other programs that do not use the math coprocessor.
+	
+	NOTE: In some cases, no runtime error(s) are displayed, and DoubleSpace stops
+	responding (hangs) early in the compression process.
+	
+	MORE INFORMATION
+	================
+	
+	IMPORTANT: Since DoubleSpace has detected a potential problem with your system,
+	perform a full system backup or make sure you can fully restore the machine from
+	removable media before you proceed with these steps.
+	
+	Use the following steps to troubleshoot DoubleSpace R6002 errors:
+	
+	1. Turn the machine off, then turn it on again. Press the F5 key when the
+	  "Starting MS-DOS" message appears to perform a "clean start." If your machine
+	  requires that a device driver is loaded in the CONFIG.SYS file to boot
+	  properly, press the F8 key to perform an "interactive start" and load ONLY
+	  the device driver(s) required. If the machine is rebooted at any point in the
+	  DoubleSpace process, be sure to use the EXACT same clean or interactive start
+	  each time. If DoubleSpace completes successfully, one or more of the device
+	  drivers or terminate-and-stay-resident (TSR) programs that were bypassed are
+	  probably causing the problem.
+	
+	2. If DoubleSpace still fails with the R6002 error, try adding the following
+	  line to the CONFIG.SYS file using MS-DOS Editor or another ASCII text editor:
+	  set no87=nomath Restart your computer to make this change take effect. The
+	  SET NO87 environment variable instructs DBLSPACE.EXE not to use the math
+	  coprocessor for floating-point calculations. The SET statement should be
+	  placed in the CONFIG.SYS file, not the AUTOEXEC.BAT file. (If DBLSPACE.EXE is
+	  restarted, it may not process the AUTOEXEC.BAT file completely.) It doesn't
+	  matter what you set NO87 to as long as the NO87 variable is in the MS-DOS
+	  environment. For example, you could set NO87=NO or NO87=MICROSOFT, and
+	  DoubleSpace would not use the math coprocessor. To remove the NO87
+	  environment variable, type "set no87=" (without the quotation marks) at the
+	  MS-DOS command prompt and then press ENTER.
+	
+	3. If DoubleSpace continues to fail, the coprocessor itself, the coprocessor
+	  subsystem, or some other hardware component may be causing the problem.
+	
+	
+	  In the case of 286, 386, and 486 SX machines, try removing the
+	  coprocessor for testing purposes. If the machine is a 486 DX, verify
+	  that the system's ROM BIOS is current and specifically designed for
+	  use with a 486 DX, not a 386 or 486 SX.
+	
+	  In rare cases, incorrect CMOS or system board DIP switch settings,
+	  faulty system RAM, or other hardware problems may cause R6002 errors.
+	  Contact your system vendor or manufacturer to verify the CMOS and DIP
+	  settings are correct. If the error persists, remove all system
+	  components not absolutely required to operate the machine (optional
+	  I/O adapters and so forth), use replacement parts (in the case of
+	  system RAM), or have the machine inspected by a hardware repair
+	  technician.
+	
+	
+	Additional query words: 6.00 FPU NDP dblspace double space runtime stop hang clean start
+	
+	======================================================================
+	Keywords          : kbenv kbtool 
+	Technology        : kbMSDOSSearch kbMSDOS600
+	Version           : MS-DOS:6.0
+	
+	=============================================================================
+	

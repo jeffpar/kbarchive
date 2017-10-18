@@ -1,0 +1,102 @@
+---
+layout: page
+title: "Q109269: PRB: Causes of Error CK1024"
+permalink: kb/109/Q109269/
+---
+
+## Q109269: PRB: Causes of Error CK1024
+
+	Article: Q109269
+	Product(s): Microsoft Programming Utilities
+	Version(s): 1.0,2.5,2.55,5.5,5.6
+	Operating System(s): 
+	Keyword(s): kberrmsg
+	Last Modified: 23-OCT-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft LINK for MS-DOS, versions 5.5, 5.6 
+	- Microsoft LINK for Windows NT, versions 1.0, 2.5, 2.55 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The LINK or CVPACK utilities shipped with Visual C++ for Windows and Visual C++
+	32-bit Edition may terminate and display this message:
+	
+	  fatal error CK1024: 'modulename' cannot use program database
+	  'pdbfile' : signatures do not match
+	
+	  -or-
+	
+	  LINK : error LNK1202: "<path>\<filename>.pdb" is missing
+	  debugging
+	  information for referencing module
+	
+	CAUSE
+	=====
+	
+	When source code is compiled using the /Zi option to generate debugging
+	information, the C/C++ compiler creates a .PDB file. The utilities check to make
+	sure that the .PDB file found is the one that was used when the object module(s)
+	was compiled. The error occurs when this version-check fails.
+	
+	Both LINK and CVPACK search for the .PDB file in the following locations in this
+	order:
+	
+	1. The absolute path written in the .OBJ file by the C/C++ compiler
+	
+	2. The current directory that LINK or CVPACK is running from
+	
+	3. Any directories specified in the LIB environment variable
+	
+	This error is more likely to occur when using the default .PDB name because of
+	the increased probability that if the .PDB file specified in the object module
+	is not found, the default PDB will be found in either location 2 or 3 above. If
+	the .PDB file cannot be found, the error "CK1022 cannot open program database"
+	is reported.
+	
+	RESOLUTION
+	==========
+	
+	One way to avoid the problem is to specify a unique name for the .PDB file using
+	the /Fd compiler option. This avoids possible confusion any default PDB files
+	the utilities might locate on the search path.
+	
+	It is also possible that the version of the .PDB file found is out-of-date with
+	respect to the object modules. You can resolve this problem by following the
+	suggestions from the error description in the Visual C++ documentation:
+	
+	  The .OBJ file modulename uses the .PDB file pdbfile, but the internal
+	  signature in pdbfile does not match the internal signature in modulename.
+	  Delete modulename, recompile, and relink. If a makefile is used, check the
+	  makefile dependencies.
+	
+	Another solution is to re-build using the /Z7 compiler option. This places all
+	debugging information into the modules themselves. A .PDB file will not be
+	referenced.
+	
+	MORE INFORMATION
+	================
+	
+	For more information on .PDB files, please see the Visual C++ documentation for
+	the /Zi option of CL, and either /CO or /DEBUG for LINK.
+	
+	If the CK1024 error occurs when linking to a library, please see the following
+	article in the Microsoft Knowledge Base that explains this problem in further
+	detail:
+	
+	  Q109270 PRB: CK1024 Error May Be Caused by Modules in Library
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kberrmsg 
+	Technology        : kbAudDeveloper kbZNotKeyword kbZNotKeyword3 kbLINKSearch kbLINK550DOS kbLINK560DOS kbLINK100NT kbLINK250NT kbLINK255NT
+	Version           : :1.0,2.5,2.55,5.5,5.6
+	Issue type        : kbprb
+	
+	=============================================================================
+	

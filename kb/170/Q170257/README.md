@@ -1,0 +1,158 @@
+---
+layout: page
+title: "Q170257: FIX: CRecordset::AddNew Inserts 32484 Into int Fields (RFX_INT)"
+permalink: kb/170/Q170257/
+---
+
+## Q170257: FIX: CRecordset::AddNew Inserts 32484 Into int Fields (RFX_INT)
+
+	Article: Q170257
+	Product(s): Microsoft C Compiler
+	Version(s): 5.0
+	Operating System(s): 
+	Keyword(s): kbDAOsearch kbDatabase kbMFC kbODBC kbVC kbVS97sp2fix
+	Last Modified: 17-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+	- Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	You may see one of the following problems when you update a newly-added record
+	using a CRecordset derived class that uses RFX_Int:
+	
+	- The value 32484 is saved in the table if the int data member was not
+	  modified.
+	
+	- If the int data member corresponds to an identity column in the table, an
+	  error message appears indicating that an attempt was made to save a value to
+	  it. Identity fields are automatically updated by the server, and cannot be
+	  modified by external applications without setting flags on the server.
+	
+	- Fields of type int that were not modified, and thus should contain NULL,
+	  contain 32484 instead. This may cause queries involving NULLs to return
+	  unexpected results.
+	
+	CAUSE
+	=====
+	
+	This problem is caused by a bug in the RFX_Int function which always causes it
+	to mark the int data member as dirty during AddNew. This problem occurs only if
+	the value of the int data member was not explicitly changed.
+	
+	When a record is added, all of the data members are set to pseudo null values.
+	The application then sets the values of any members that are to be changed.
+	Subsequently, any fields where the corresponding data member is not a pseudo
+	null are marked as dirty and an SQL statement including all of the dirty fields
+	is generated.
+	
+	In the RFX_Int::MarkForAddNew in Visual C++ 5.0, the if clause that checks for
+	the pseudo null value was removed. The code in 5.0 appears as follows:
+	
+	     case CFieldExchange::MarkForAddNew:
+	     // can force writing of psuedo-null value (as a non-null) by ...
+	     if (!pFX->m_prs->IsFieldStatusDirty(nField - 1))
+	     {
+	        pFX->m_prs->SetDirtyFieldStatus(nField - 1);
+	        pFX->m_prs->ClearNullFieldStatus(nField - 1);
+	     }
+	     return;
+	
+	The effect of the change is to force the field to be set as dirty (no matter what
+	value it has), and write that value out to the underlying table. If the
+	application has not changed that value since the AddNew, then it will be
+	AFX_RFX_INT_PSEUDO_NULL = 32484.
+	
+	RESOLUTION
+	==========
+	
+	The resolution depends on the application. The cleanest workaround is to change
+	the int data member to a long, and use the RFX_Long function. The code problem
+	above only exists with the int type, and most of the server data types that
+	might be mapped to an int, such as Integer, Numeric(9), etc., will map to a long
+	as well. This method also creates more portable code, since the size and max
+	value of the int data type varies from one platform and operating system to
+	another.
+	
+	Another solution is to create your own RFX_Int functions. To create your own
+	RFX_Int function, follow these steps:
+	
+	1. From file vc\mfc\src\DBRFX.CPP, copy the function RFX_Int.
+	
+	2. Create a new .cpp file and include the file in your project that uses ints.
+	  Place the copy of RFX_Int into this file and rename it RFX_Int1. Change the
+	  switch statement case for MarkForAddNew from the following code:
+	
+	        case CFieldExchange::MarkForAddNew:
+	        // Can force writing of psuedo-null value (as a non-null) by
+	        // setting field dirty.
+	        if (!pFX->m_prs->IsFieldStatusDirty(nField - 1))
+	        {
+	           pFX->m_prs->SetDirtyFieldStatus(nField - 1);
+	           pFX->m_prs->ClearNullFieldStatus(nField - 1);
+	        }
+	        return;
+	
+	  to:
+	
+	        case CFieldExchange::MarkForAddNew:
+	        // Can force writing of psuedo-null value (as a non-null) by
+	        // setting field dirty.
+	
+	        // comment out -> if (!pFX->m_prs->IsFieldStatusDirty(nField - 1))
+	        if (value != AFX_RFX_INT_PSEUDO_NULL)   // add in this line
+	        {
+	           pFX->m_prs->SetDirtyFieldStatus(nField - 1);
+	           pFX->m_prs->ClearNullFieldStatus(nField - 1);
+	        }
+	        return;
+	
+	3. Include the following header information in your new project file:
+	
+	        #include "stdafx.h"
+	
+	        #ifdef AFX_DB_SEG
+	        #pragma code_seg(AFX_DB_SEG)
+	        #endif
+	
+	        #ifdef _DEBUG
+	        #undef THIS_FILE
+	           static char THIS_FILE[] = __FILE__;
+	        #endif
+	
+	        #define new DEBUG_NEW
+	
+	4. Create a header file that declares your new RFX_INT1 function. Include it
+	  into any CRecordset-derived classes that need to use small integers.
+	
+	5. Change all of the calls in the DoFieldExchange functions of your
+	  CRecordset-derived classes from RFX_Int to RFX_Int1.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article. This bug has been fixed in Visual Studio 97 Service
+	Pack 3.
+	
+	For more information, please see the following article in the Microsoft Knowledge
+	Base:
+	
+	  Q170365 INFO: Visual Studio 97 Service Packs - What, Where, and Why
+	
+	Additional query words: AddNew identity Update
+	
+	======================================================================
+	Keywords          : kbDAOsearch kbDatabase kbMFC kbODBC kbVC kbVS97sp2fix 
+	Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC32bitSearch kbVC500Search
+	Version           : 5.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

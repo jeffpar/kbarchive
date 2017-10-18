@@ -1,0 +1,135 @@
+---
+layout: page
+title: "Q321372: SMS: SMS SP3 Support of  Windows XP Professional"
+permalink: kb/321/Q321372/
+---
+
+## Q321372: SMS: SMS SP3 Support of  Windows XP Professional
+
+	Article: Q321372
+	Product(s): Microsoft Systems Management Server
+	Version(s): 2.0 SP3
+	Operating System(s): 
+	Keyword(s): kbsms200 kbsms200bug
+	Last Modified: 14-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server version 2.0 SP3 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Systems Management Server (SMS) 2.0 Service Pack 3 (SP3) supports the Microsoft
+	Windows XP Professional operating system. This article describes issues to
+	consider if you want deploy Windows XP in your existing SMS site.
+	
+	MORE INFORMATION
+	================
+	
+	SMS 2.0 SP3 is the minimum requirement for supporting Windows XP Professional as
+	a client computer. You may also require additional Quick Fix Engineering (QFE)
+	updates or "hotfixes." QFE hotfixes will be integrated into future services
+	packs.
+	
+	NOTE: You can request SMS 2.0 SP3 QFE updates for 60 days after the release of
+	service pack 4 (SP4). After this date, SP4 is required for additional QFE
+	support for Windows XP (if you require additional support).
+	
+	Exclusions
+	----------
+	
+	Not all versions of Windows XP are supported by SMS, and not all versions of SMS
+	support Windows XP. Note the following exceptions:
+	
+	- Earlier service pack releases of SMS 2.0, including SP2, do not support
+	  Windows XP Professional as a client.
+	
+	- SMS 1.2 does not support Windows XP as a client.
+	
+	- No version of SMS supports Windows XP Home Edition as a client.
+	
+	- 64-bit versions of Windows XP are not currently supported as SMS 2.0 clients
+	  in either 32-bit or 64-bit mode.
+	
+	- Currently, no version of SMS supports Windows XP Embedded as a client.
+	
+	The following list describes the SMS features that are available to SMS-based
+	clients that are running Windows XP Professional.
+	
+	- Feature: Client installation
+	  Level of support: Fully supported
+	
+	- Feature: Hardware inventory
+	  Level of support: Qualified support
+	
+	For additional information about hardware inventory and Windows XP, click the
+	article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q310615 Hardware Inventory from Japanese Clients Is Not Added to the SMS
+	  Database
+	
+	- Feature: Software inventory
+	  Level of support: Fully supported
+	
+	- Feature: Network Monitor
+	  Level of support: Fully supported
+	
+	- Feature: Software distribution
+	  Level of Support: Qualified support
+	  Description: When you initially install SMS SP3 software distribution, you
+	  cannot target Windows XP-based clients. This is because Windows XP is not
+	  known to Windows Management Instrumentation (WMI).
+	
+	  To add Windows XP to the list of specified platforms that SMS uses to target
+	  software distribution, apply the SP3 hotfix that is described in the
+	  following Microsoft Knowledge Base article:
+	
+	  Q308271 How to Add Windows XP Professional as a Target Platform to SMS 2.0
+	  SP3
+	
+	- Feature: Remote tools
+	  Level of support: Qualified support
+	  Description: This feature is supported on SMS-based clients that are running
+	  Windows XP that have a new accelerated video driver. This driver is delivered
+	  when you either upgrade the client to SP3 or when you initially install an
+	  SP3 client.
+	
+	  Remote tools are supported by using the Run Length Encoding (RLE) compression
+	  method instead of the default LZH compression method. An SP3 QFE hotfix that
+	  addresses this problem is included in SP4.
+	
+	- Feature: Software metering
+	  Level of support: Qualified support
+	  Description: There is limited support for software metering of Windows XP. SMS
+	  cannot perform software metering of 16-bit programs on a Windows XP-based
+	  client.
+	
+	NOTE: The SMS 2.0 SP3 Remote Administrators Console (a server role) is also
+	supported on Windows XP Professional.
+	
+	REFERENCES
+	==========
+	
+	If you are not sure of the service pack that is applied to your SMS site, visit
+	the following Microsoft Web site:
+	
+	  http://www.microsoft.com/smserver/downloads/20/servicepacks/versions.asp
+	
+	For information about support for new operating systems and programs, visit the
+	following Microsoft Web site:
+	
+	  http://www.microsoft.com/smserver/techinfo/deployment/20/deployosapps/newsupport.asp
+	
+	Additional query words: prodsms
+	
+	======================================================================
+	Keywords          : kbsms200 kbsms200bug 
+	Technology        : kbSMSSearch kbSMS200SP3
+	Version           : :2.0 SP3
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

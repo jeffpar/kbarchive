@@ -1,0 +1,381 @@
+---
+layout: page
+title: "Q140343: WD97: How to Print Envelopes or Labels from a List of Addresses"
+permalink: kb/140/Q140343/
+---
+
+## Q140343: WD97: How to Print Envelopes or Labels from a List of Addresses
+
+	Article: Q140343
+	Product(s): Word 97 for Windows
+	Version(s): WINDOWS:97
+	Operating System(s): 
+	Keyword(s): kbdta kbenvelope word8 word97 kbmerge
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	When you click "Envelopes and Labels" on the Tools menu, Microsoft Word cannot
+	print a separate envelope or label for each address when your address
+	information is in one column, as in the following example:
+	
+	  Joe Howard
+	  123 Main Street
+	  Anytown, US 12345
+	
+	  Jane Clayton
+	  Microsoft
+	  456 Elm Street
+	  Sometown, US 67890
+	
+	  Leonard Zuvela
+	  789 Oak Road
+	  Mytown, US 54321
+	
+	Important Notes About Using the "Envelopes and Labels" Feature:
+	
+	- When your address information is in a single column (as in the preceding
+	  example), Word automatically uses the address that is selected or where the
+	  insertion point is located.
+	
+	- On the Envelopes tab, you can print the selected address to one envelope, or
+	  you can add an envelope to the current document that contains the selected
+	  address.
+	
+	- On the Labels tab, you can print a label sheet full of the same (selected)
+	  address, or you can print a single address to a specific label on the sheet.
+	
+	- The Envelopes and Labels feature in Microsoft Word is only intended to create
+	  a printout of a single address.
+	
+	To create a separate envelope or label for each address, Word requires the
+	address list to be in either a table or a delimited format. After the address
+	information is rearranged, you can merge the address list into separate
+	envelopes or labels for each address.
+	
+	The "More Information" section of this article describes several methods you can
+	use to print your address list to mailing labels or envelopes.
+	
+	MORE INFORMATION
+	================
+	
+	Use one of the following methods appropriate for your situation. For example,
+	
+	- If you are new to printing mailing labels or envelopes in Microsoft Word, and
+	  you want to keep your address list in a single-column format, use Method 1.
+	
+	  -or-
+	
+	- If you are familiar with printing mailing labels or envelopes by using the
+	  mail merge feature, and you want to convert your existing single-column
+	  address list into a table or delimited file, use Method 2.
+	
+	Method 1: Use Your Existing One-Column Address List
+	---------------------------------------------------
+	
+	This is the easiest method to print either mailing labels or envelopes, using an
+	address list that is in a one-column format similar to the example in the
+	"Symptoms" section of this article.
+	
+	NOTE: Close all other open Word documents before you follow these steps.
+	
+	1. Open the Word document that contains your single-column address list, and
+	  make sure there is no other text in the document (other than the actual
+	  addresses), and that the address list is arranged similar to the following
+	  example:
+	
+	  Joe Howard<B6>
+	  123 Main Street<B6>
+	  Anytown, US 12345<B6>
+	<B6>
+	  Jane Clayton<B6>
+	  Microsoft<B6>
+	  456 Elm Street<B6>
+	  Sometown, US 67890<B6>
+	<B6>
+	  Leonard Zuvela<B6>
+	  789 Oak Road<B6>
+	  Mytown, US 54321<B6>
+	
+	  NOTE: Each line in your address list must end with a paragraph mark (<B6>), and
+	  there must be one blank line between each address. To view the paragraph
+	  marks in your Word document, either click the Show/Hide button (<B6>) on the
+	  Standard toolbar, or click to select the All check box on the View tab (on
+	  the Tools menu, click Options).
+	
+	2. At the beginning of the address list, add a new line, and type "MergeRecords"
+	  (without the quotation marks). Then press ENTER to add another blank line
+	  between MergeRecords and the first address of your address list.
+	
+	3. At the end of the last address of your address list, press ENTER to add a
+	  blank line. Your address list should now look similar to the following
+	  example:
+	
+	  MergeRecords<B6>
+	<B6>
+	  Joe Howard<B6>
+	  123 Main Street<B6>
+	  Anytown, US 12345<B6>
+	<B6>
+	  Jane Clayton<B6>
+	  Microsoft<B6>
+	  456 Elm Street<B6>
+	  Sometown, US 67890<B6>
+	<B6>
+	  Leonard Zuvela<B6>
+	  789 Oak Road<B6>
+	  Mytown, US 54321<B6>
+	<B6>
+	
+	4. On the File menu, click Save to save the changes to your address list.
+	
+	  IMPORTANT NOTE: Continue with steps 5a through 5g to temporarily rearrange
+	  your address list, so that Word can create separate envelopes or labels for
+	  each address. If you save your address list after you perform steps 5a
+	  through 5g, it will be difficult to correctly add additional addresses to
+	  your address list in the future.
+	
+	5. Use the following steps to temporarily rearrange your address list into a
+	  format that Word can use to create your separate envelopes or labels:
+	
+	  a. On the Edit menu, click Replace.
+	
+	  b. On the Replace tab, click More to expand the Replace tab to show the
+	     additional options.
+	
+	  c. With the insertion point in the "Find what" box, click Special and then
+	     click Paragraph Mark. Repeat this step to add a second paragraph mark to
+	     the "Find what" box. The "Find what" box should contain the following
+	     text:
+	
+	  ^p^p
+	
+	  d. In the "Replace with" box, type an asterisk (press SHIFT+8). The "Replace
+	     with" box should contain the following text:
+	
+	  *
+	
+	  e. Click Replace All.
+	
+	  f. Click OK to the following message:
+	
+	  Word has completed its search of the document and has made nn replacements.
+	
+	     where nn is the number of replacements that Word made.
+	
+	     NOTE: Word replaced the occurrence of two paragraph marks with an asterisk.
+	
+	  g. Click Close to close the Find and Replace dialog box. Your address list
+	     should now look similar to the following example:
+	
+	  MergeRecords*Joe Howard<B6>
+	  123 Main Street<B6>
+	  Anytown, US 12345*Jane Clayton<B6>
+	  Microsoft<B6>
+	  456 Elm Street<B6>
+	  Sometown, US 67890*Leonard Zuvela<B6>
+	  789 Oak Road<B6>
+	  Mytown, US 54321*<B6>
+	
+	6. On the File menu, click New.
+	
+	7. On the General tab, click to select Blank Document, and then click OK to
+	  create a new Word document.
+	
+	8. On the Tools menu, click Mail Merge.
+	
+	9. In the Mail Merge Helper dialog box, click Create and then click either
+	  Mailing Labels or Envelopes. Then do one of the following:
+	
+	For Mailing Labels:
+	
+	  a. Click Active Window to the following message:
+	
+	  To create the Mailing labels, you can use the active document window <file
+	  name> or a new document window.
+	
+	     where <file name> is the name of the current unsaved new document
+	     that you created in steps 6 through 7.
+	
+	  b. In the Mail Merge Helper, click Get Data, and then click Open Data Source.
+	
+	  c. In the Open Data Source dialog box, click to select your Word document
+	     that contains your address list, and then click Open.
+	
+	  d. In the Header Records Delimiters dialog box, change the "Field delimiter"
+	     box to (none), change the "Record delimiter" box to * and then click OK.
+	
+	  e. Click "Set Up Main Document" to the following message:
+	
+	  Word needs to set up your main document. Choose the Set Up Main Document
+	  button to finish setting up your main document.
+	
+	  f. In the Label Options dialog box, click to select the type of label you
+	     want, and then click OK.
+	
+	  g. In the Create Labels dialog box, click Insert Merge Field, and then click
+	     Mergerecords.
+	
+	     Word places one MERGEFIELD in the "Sample label address" box. This looks
+	     similar to the following example:
+	
+	  <<Mergerecords>>
+	
+	  h. Click OK to close the Create Labels dialog box.
+	
+	  i. In the Mail Merge Helper, click Merge.
+	
+	  j. In the Merge dialog box, change the "Merge to" box to the way you want to
+	     complete creating your mailing labels.
+	
+	  k. Do one of the following:
+	
+	      - If you changed the "Merge to" box to "New document", click Merge. Word
+	        creates a new document that contains your address list, with each
+	        address on a separate label.
+	
+	        If this new document looks exactly like you want your labels to appear,
+	        click Print on the File menu to print your labels.
+	
+	        If you want to make additional changes to the labels (such as specific
+	        formatting or changes to the text on each label), make those changes
+	        before you click Print on the File menu.
+	
+	        -or-
+	
+	      - If you changed the "Merge to" box to Printer, click Merge. In the Print
+	        dialog box, click OK. Word prints your labels directly to the printer
+	        you selected in the Printer Name box.
+	
+	For Envelopes:
+	
+	  a. Click Active Window to the following message:
+	
+	  To create the envelopes, you can use the active document window <file
+	  name> or a new document window.
+	
+	     where <file name> is the name of the current unsaved new document
+	     that you created in steps 6 through 7.
+	
+	  b. In the Mail Merge Helper, click Get Data, and then click Open Data Source.
+	
+	  c. In the Open Data Source dialog box, click to select your Word document
+	     that contains your address list, and then click Open.
+	
+	  d. In the Header Records Delimiters dialog box, change the "Field delimiter"
+	     box to (none), change the "Record delimiter" box to * and then click OK.
+	
+	  e. Click "Set Up Main Document" to the following message:
+	
+	  Word needs to set up your main document. Choose the Set Up Main Document
+	  button to finish setting up your main document.
+	
+	  f. On the Envelope Options tab, change the "Envelope size" box to the size of
+	     your envelope, and then click OK.
+	
+	     NOTE: On the Envelope Options tab, you can make other changes to the
+	     delivery address and return address.
+	
+	  g. In the "Envelope address" dialog box, click Insert Merge Field, and then
+	     click to select Mergerecords.
+	
+	     Word places one MERGEFIELD in the "Sample envelope address" box. This looks
+	     similar to the following example:
+	
+	  <<Mergerecords>>
+	
+	  h. Click OK to close the Envelope address dialog box.
+	
+	  i. In the Mail Merge Helper, click Merge.
+	
+	  j. In the Merge dialog box, change the "Merge to" box to the way you want to
+	     complete creating your envelopes.
+	
+	  k. Do one of the following:
+	
+	      - If you changed the "Merge to" box to "New document", click Merge. Word
+	        creates a new document that contains your address list with each
+	        address on a separate envelope.
+	
+	        If this new document looks exactly like you want your envelopes to
+	        appear, click Print on the File menu to print your envelopes.
+	
+	        If you want to make additional changes to the envelopes (such as
+	        specific formatting or changes to the text on each envelope), make
+	        those changes before you click Print on the File menu.
+	
+	        -or-
+	
+	      - If you changed the "Merge to" box to Printer, click Merge. In the Print
+	        dialog box, click OK. Word prints your envelopes directly to the
+	        printer that you selected in the Printer Name box.
+	
+	10. After you print your mailing labels or envelopes, several documents remain
+	  open. Close each of these documents, and do not save the changes. To do
+	  this, click Close on the File menu. Then click No to the following message:
+	
+	  Do you want to save the changes you made to <file name>?
+	
+	11. Repeat step 10 for each open document, including the document that contains
+	  your address list.
+	
+	  NOTE: You previously saved the changes to your address list. Do not save the
+	  changes after you complete steps 5a through 5g, or you may have difficulty
+	  when you try to add new addresses to your address list in the future.
+	
+	Method 2: Convert Your One-Column Address List to a Table or Delimited File
+	---------------------------------------------------------------------------
+	
+	This is a more advanced method that refers to several articles in the Microsoft
+	Knowledge Base to print either mailing labels or envelopes by using an address
+	list that is initially in a one-column format similar to the example in the
+	"Symptoms" section of this article.
+	
+	NOTE: If you use this method, your single-column address list will be permanently
+	converted to either a table or a delimited address file.
+	
+	By default, Microsoft Word requires that the address information be laid out in a
+	table or in a delimited file format. Using an address file that is laid out in a
+	table (or as a delimited file) provides many more options for merging address
+	information, such as the ability to use one address file for merging to
+	different types of documents, or easily filtering and sorting your address
+	information.
+	
+	For additional information about converting address information into the table or
+	delimited format that Word requires, click the article number below to view the
+	article in the Microsoft Knowledge Base:
+	
+	  Q140344 WD97: How to Convert Data in One Column to a Table for Merging
+	
+	For additional information about completing a mail merge, click the article
+	numbers below to view the articles in the Microsoft Knowledge Base:
+	
+	  Q141922 WD97: How to Start a Mail Merge
+	
+	  Q195989 WD97: How to Create Envelopes Using Mail Merge
+	
+	  Q195609 WD97: How to Create Mailing Labels Using the Mail Merge Feature
+	
+	  Q142756 WD97: How to Design and Set Up Mail Merge Data Sources
+	
+	NOTE: The example companies, organizations, products, people, and events depicted
+	herein are fictitious. No association with any real company, organization,
+	product, person, or event is intended or should be inferred.
+	
+	Additional query words: mmh merging print merge howto label mailmerge
+	
+	======================================================================
+	Keywords          : kbdta kbenvelope word8 word97 kbmerge 
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : WINDOWS:97
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

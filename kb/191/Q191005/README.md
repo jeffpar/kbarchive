@@ -1,0 +1,88 @@
+---
+layout: page
+title: "Q191005: BUG: EXE Created Without File Extension on Windows 98"
+permalink: kb/191/Q191005/
+---
+
+## Q191005: BUG: EXE Created Without File Extension on Windows 98
+
+	Article: Q191005
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): WINDOWS:6.0
+	Operating System(s): 
+	Keyword(s): kbCompiler kbVBp kbVBp600bug kbGrpDSVB kbDSupport
+	Last Modified: 13-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, version 6.0, on platform(s):
+	   - the operating system: Microsoft Windows 98 
+	- Microsoft Visual Basic Professional Edition for Windows, version 6.0, on platform(s):
+	   - the operating system: Microsoft Windows 98 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0, on platform(s):
+	   - the operating system: Microsoft Windows 98 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Creating an EXE in Visual Basic on Windows 98 creates a file without a .EXE
+	extension. Attempting to run the application by clicking on the filename within
+	Windows Explorer opens a dialog asking you to "Open With...", providing a list
+	of installed applications.
+	
+	CAUSE
+	=====
+	
+	The .EXE file created does not have a .EXE extension, therefore Windows does not
+	know how to open the file. The file extension will not be created if the
+	following conditions are true:
+	
+	- The Windows Explorer setting "Hide File extensions for known file types" is
+	  set to the default value of True.
+	
+	- The Windows Explorer setting for Hidden Files is set to the default option of
+	  "Do not show hidden system files."
+	
+	- The above two settings have never been changed from their default values.
+	
+	RESOLUTION
+	==========
+	
+	To work around this problem, change the Windows Explorer setting for "Hide File
+	extensions for known file types" and change the Hidden Files option to something
+	other than "Do Not show hidden or system files."
+	
+	Step-by-Step Example
+	--------------------
+	
+	1. Open Windows Explorer. Choose Folder Options from the View menu.
+	
+	2. Select the View Tab. Deselect the "Hide Files extensions for known file
+	  types."
+	
+	3. Change the Hidden Files option to something other than "Do not show hidden or
+	  system files."
+	
+	  If you change the above two settings on Windows 98 from their defaults and
+	  then set them back again, this problem will no longer occur.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article. We are researching this bug and will post new
+	information here in the Microsoft Knowledge Base as it becomes available.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbCompiler kbVBp kbVBp600bug kbGrpDSVB kbDSupport 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2
+	Version           : WINDOWS:6.0
+	Issue type        : kbbug
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

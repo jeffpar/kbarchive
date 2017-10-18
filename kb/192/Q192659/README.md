@@ -1,0 +1,118 @@
+---
+layout: page
+title: "Q192659: XCLN: ODK Help Items Disabled Under Microsoft on the Web Menu"
+permalink: kb/192/Q192659/
+---
+
+## Q192659: XCLN: ODK Help Items Disabled Under Microsoft on the Web Menu
+
+	Article: Q192659
+	Product(s): Microsoft Exchange
+	Version(s): WINDOWS:98
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 22-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Outlook 98 Deployment Kit 
+	- Microsoft Exchange Server, version 5.5 
+	-------------------------------------------------------------------------------
+	
+	
+	IMPORTANT: This article contains information about editing the registry.
+	Before you edit the registry, make sure you understand how to restore it if
+	a problem occurs. For information about how to do this, view the "Restoring
+	the Registry" Help topic in Regedit.exe or the "Restoring a Registry Key"
+	Help topic in Regedt32.exe.
+	
+	SYMPTOMS
+	========
+	
+	After you install Microsoft Outlook 98 from an installation point created with
+	the Microsoft Outlook Deployment Wizard (ODW), the menu items listed under the
+	Microsoft on the Web Help menu may be disabled.
+	
+	CAUSE
+	=====
+	
+	The following line in Outlk98.adm, which is included with the Microsoft Outlook
+	98 Deployment Kit (ODK), is missing an ending quote:
+	
+	     OLDefSupport="Online &Support,,outlook,,,8.0,support
+	
+	This syntax error causes the following invalid entry to be added to the registry
+	of a client workstation:
+	
+	  HKEY_CURRENT_USER\Software\Microsoft\Office\8.0\Outlook\WebHelp
+	
+	  Value Name: Command4
+	  Value Data: Online &Support
+	
+	RESOLUTION
+	==========
+	
+	To resolve this behavior, perform the following steps from the computer on which
+	the ODK is installed:
+	
+	1. Locate Outlk98.adm in the \Program Files\ODK\Policies directory.
+	
+	2. Make a backup copy of the file.
+	
+	3. Open the file using Notepad or another text editor and add a double quotation
+	  mark (as shown below) to the end of the following line:
+	
+	        OLDefSupport="Online &Support,,outlook,,,8.0,support"
+	
+	4. Save the file and quit.
+	
+	Any new Outlook installation points created with the ODW will have the correct
+	string added to the registry. Existing Outlook 98 installation points must be
+	rebuilt in order for this change to take effect.
+	
+	To correct this problem on a client workstation, edit the registry using the
+	following steps:
+	
+	WARNING: Using Registry Editor incorrectly can cause serious problems that may
+	require you to reinstall your operating system. Microsoft cannot guarantee that
+	problems resulting from the incorrect use of Registry Editor can be solved. Use
+	Registry Editor at your own risk.
+	
+	For information about how to edit the registry, view the "Changing Keys And
+	Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+	Information in the Registry" and "Edit Registry Data" Help topics in
+	Regedt32.exe. Note that you should back up the registry before you edit it.
+	
+	1. Start the Registry Editor.
+	
+	2. Select the following registry key:
+	
+	     HKEY_CURRENT_USER\Software\Microsoft\Office\8.0\Outlook\WebHelp
+	
+	3. Select the Command4 value and enter the following string in the Value data
+	  field:
+	
+	     Online &Support,,outlook,,,8.0,support
+	
+	4. Quit the Registry Editor.
+	
+	5. Restart the Outlook 98 client.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products listed at
+	the beginning of this article.
+	
+	Additional query words: gray grey 8.5
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbOutlookSearch kbOutlookDeployKitSearch kbOutlook98DeployKit
+	Version           : WINDOWS:98
+	Issue type        : kbbug
+	Solution Type     : kbnofix
+	
+	=============================================================================
+	

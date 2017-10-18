@@ -1,0 +1,113 @@
+---
+layout: page
+title: "Q221643: FIX:Shortcut Menus Limited by Form Size, Have Up/Down Arrows"
+permalink: kb/221/Q221643/
+---
+
+## Q221643: FIX:Shortcut Menus Limited by Form Size, Have Up/Down Arrows
+
+	Article: Q221643
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:6.0
+	Operating System(s): 
+	Keyword(s): kbservicepack kbvfp600 kbvfp600bug kbXBase kbVS600sp2 kbVS600SP1 kbVS600sp3fix kbGrpDSF
+	Last Modified: 21-MAY-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	You have a form which allows display of a shortcut menu (this type of menu is
+	usually displayed via right mouse click and may be referred to as a popup or
+	context menu). If the menu height is greater than the height of the form which
+	displays it, the menu will be limited in size to the height of the form and
+	display scroll arrows at its top and/or bottom.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article.
+	
+	This bug was corrected in Visual Studio 6.0 Service Pack 3. For more information
+	about Visual Studio service packs, please see the following articles in the
+	Microsoft Knowledge Base:
+	
+	Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+	
+	Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Run the following code from a program (.PRG) file:
+	
+	  PUBLIC oForm
+	  oForm = CREATEOBJECT('form1')
+	  oForm.SHOW()
+	
+	  * This displays the menu with a rightclick
+	  MOUSE CLICK AT 5,5 PIXEL WINDOW 'form11' RIGHT
+	
+	  * This scrolls it to display the scroll arrows
+	  KEYBOARD '{dnarrow}{dnarrow}{dnarrow}{dnarrow}'
+	  KEYBOARD '{dnarrow}{dnarrow}{dnarrow}'
+	
+	  DEFINE CLASS form1 AS FORM
+	     HEIGHT = 110
+	     PROC RIGHTCLICK
+	        DO showmenu
+	     ENDPROC
+	  ENDDEFINE
+	
+	  PROC showmenu
+	     * The code in this procedure is similar to code generated
+	     * by the menu generator
+	     DEFINE POPUP shortcut SHORTCUT RELATIVE FROM MROW(),MCOL()
+	     DEFINE BAR 1 OF shortcut PROMPT "one"
+	     DEFINE BAR 2 OF shortcut PROMPT "two"
+	     DEFINE BAR 3 OF shortcut PROMPT "three"
+	     DEFINE BAR 4 OF shortcut PROMPT "four"
+	     DEFINE BAR 5 OF shortcut PROMPT "five"
+	     DEFINE BAR 6 OF shortcut PROMPT "six"
+	     DEFINE BAR 7 OF shortcut PROMPT "seven"
+	     DEFINE BAR 8 OF shortcut PROMPT "eight"
+	     DEFINE BAR 9 OF shortcut PROMPT "nine"
+	     DEFINE BAR 10 OF shortcut PROMPT "ten"
+	     DEFINE BAR 11 OF shortcut PROMPT "eleven"
+	     DEFINE BAR 12 OF shortcut PROMPT "twelve"
+	
+	     ACTIVATE POPUP shortcut
+	  ENDPROC
+	
+	2. The menu will appear with arrows at top and bottom of menu. Each arrow will
+	  be contained in a white box, and will not respond to mouse clicks. You may
+	  close the menu by pressing escape or clicking outside of it, and redisplay it
+	  by right-clicking on the form.
+	
+	REFERENCES
+	==========
+	
+	(c) Microsoft Corporation 1999, All Rights Reserved. Contributions by Jim
+	Saunders, Microsoft Corporation
+	
+	
+	Additional query words: KBDSE
+	
+	======================================================================
+	Keywords          : kbservicepack kbvfp600 kbvfp600bug kbXBase kbVS600sp2 kbVS600SP1 kbVS600sp3fix kbGrpDSFox 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+	Version           : WINDOWS:6.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

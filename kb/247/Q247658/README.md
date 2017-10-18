@@ -1,0 +1,129 @@
+---
+layout: page
+title: "Q247658: HOW TO: Configure SSL Server and Client Cache Elements"
+permalink: kb/247/Q247658/
+---
+
+## Q247658: HOW TO: Configure SSL Server and Client Cache Elements
+
+	Article: Q247658
+	Product(s): Internet Information Server
+	Version(s): 4.0,5.0
+	Operating System(s): 
+	Keyword(s): kbOSWin2000 kbDSupport kbIIS kbiis500 kbHOWTOmaster
+	Last Modified: 24-JUL-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Server version 4.0 
+	- Microsoft Internet Information Services version 5.0 
+	-------------------------------------------------------------------------------
+	
+	
+	IMPORTANT: This article contains information about modifying the registry. Before you 
+	modify the registry, make sure to back it up and make sure that you understand how to restore 
+	the registry if a problem occurs. For information about how to back up, restore, and edit the 
+	registry, click the following article number to view the article in the Microsoft Knowledge Base:
+	
+	  Q256986 Description of the Microsoft Windows Registry
+	
+	IN THIS TASK
+	------------
+	
+	- SUMMARY
+	
+	   - Modify the SChannel Cache
+	- Additional Notes
+	
+	- REFERENCES
+	
+	SUMMARY
+	=======
+	
+	When you access the Web server, Secure Sockets Layer (SSL) session IDs and other
+	SSL session information are kept in the Schannel cache. You must know the length
+	of time that the SSL session information is cached so that you can set the
+	appropriate length when you develop load-balancing applications that identify
+	separate users based on their SSL session number. You can modify the length of
+	time that the SSL session information is cached for Internet Information Server
+	(IIS) 4.0 and Internet Information Services (IIS) 5.0 with the registry entries
+	that are described in the Modify the SChannel Cache section of this article.
+	
+	Modify the SChannel Cache
+	-------------------------
+	
+	WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+	that may require you to reinstall your operating system. Microsoft cannot
+	guarantee that you can solve problems that result from using Registry Editor
+	incorrectly. Use Registry Editor at your own risk.
+	
+	To modify the length of time that the SSL session information is cached, follow
+	these steps:
+	
+	1. Open Registry Editor. To do this, click Start, click Run, type "regedt32"
+	  (without the quotation marks), and then click OK.
+	
+	2. Click to select the following key in the registry:
+	
+	  [HKEY_LOCAL_MACHINE][System][CurrentControlSet][Control][SecurityProviders][SCHANNEL]
+	
+	3. On the Edit menu, click Add Value, type "ClientCacheTime" (without the
+	  quotation marks) in the Value Name box, select REG_DWORD for Data Type, and
+	  then click OK.
+	
+	4. In the Data box, type a value in milliseconds, click Decimal, and then click
+	  OK.
+	
+	5. Repeat steps 3 and 4 to add the ServerCacheTime value.
+	
+	6. Exit Registry Editor.
+	
+	Additional Notes
+	----------------
+	
+	The following are the registry key locations and values:
+	
+	- [HKEY_LOCAL_MACHINE]
+	
+	- [System]
+	
+	- [CurrentControlSet]
+	
+	- [Control]
+	
+	- [SecurityProviders]
+	
+	- [SCHANNEL]
+	
+	- ClientCacheTime:REG_DWORD (the time to expire client side cache elements)
+	
+	- ServerCacheTime:REG_DWORD (the time to expire server side cache elements)
+	
+	Values are calibrated in milliseconds. The default is 120000 (2 minutes), and
+	keys do not appear in the registry unless they are changed from their default. A
+	value of 0 turns off the secure connection caching.
+	
+	The registry key locations and values apply to all versions of the Schannel. Keep
+	the server-side interval short for better management of the overall size of the
+	Schannel cache.
+	
+	REFERENCES
+	==========
+	
+	For additional information, click the article number below to view the article
+	in the Microsoft Knowledge Base:
+	
+	  Q265369 Internet Explorer Renegotiates Secure Sockets Layer Connection Every
+	  Two Minutes
+	
+	Additional query words: SSL cache Time Out Schannel
+	
+	======================================================================
+	Keywords          : kbOSWin2000 kbDSupport kbIIS kbiis500 kbHOWTOmaster 
+	Technology        : kbiisSearch kbiis500 kbiis400
+	Version           : :4.0,5.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

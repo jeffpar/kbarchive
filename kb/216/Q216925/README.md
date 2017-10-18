@@ -1,0 +1,220 @@
+---
+layout: page
+title: "Q216925: PRB: Single-User Concurrency Problems With ADO and Jet"
+permalink: kb/216/Q216925/
+---
+
+## Q216925: PRB: Single-User Concurrency Problems With ADO and Jet
+
+	Article: Q216925
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): WINDOWS:2.0,2.01,2.1,6.0
+	Operating System(s): 
+	Keyword(s): kbADO200 kbJET kbVBp kbVBp600 kbGrpDSVBDB
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+	- ActiveX Data Objects (ADO), versions 2.0, 2.01, 2.1 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When using ADO against a Microsoft Jet database, you may notice that saving
+	information via the ADO Data control or an ADO Recordset is not immediately
+	visible to other ADO Data controls or Recordsets. The data is visible after a
+	few seconds delay.
+	
+	CAUSE
+	=====
+	
+	Each object is opened on a different connection.
+	
+	RESOLUTION
+	==========
+	
+	Make all ADO Recordset objects and ADO Data controls use the same connection.
+	
+	STATUS
+	======
+	
+	This behavior is by design.
+	
+	MORE INFORMATION
+	================
+	
+	Microsoft Jet maintains a separate cache for each connection to the engine. By
+	default, the cache times out after five seconds, which means that changes made
+	to an MDB file on one connection may not be visible on another connection for up
+	to five seconds.
+	
+	This is different behavior than DAO, where all Connection or Database objects
+	default to share the same read cache.
+	
+	This article outlines some strategies that allow you to share connections between
+	Recordset objects and the ADO Data control.
+	
+	When opening an ADO Recordset object, it is easy to share a connection. You can
+	open a global connection object and reference it in the rs.Open method. This
+	method can provide application or form-wide connection sharing:
+	
+	  rs1.Open "Employees", cn
+	  rs2.Open "Employees", cn
+	
+	Another more limited method of connection sharing is to reference the
+	ActiveConnection property of an already open Recordset:
+	
+	  rs1.Open "Employees", "Provider=Microsoft.Jet.OLEDB.3.51;Data Source=NWIND.MDB"
+	  rs2.Open "Employees", rs1.ActiveConnection
+	
+	You can open a Recordset on the same connection as an ADO Data control by
+	referencing the ActiveConnection property of the Recordset property:
+	
+	  rs.Open "Employees", ADODC1.Recordset.ActiveConnection
+	
+	If the ADO Data control (ADODC2, ADODC3, and ADODC4 in the example below) is
+	using client-side cursors, then you can make it share an existing connection:
+	
+	  Set ADODC2.Recordset.ActiveConnection = cn
+	  Set ADODC3.Recordset.ActiveConnection = rs.ActiveConnection
+	  Set ADODC4.Recordset.ActiveConnection = ADODC1.Recordset.ActiveConnection
+	
+	The next technique allows ADO Data controls to share connections and use
+	server-side cursors. It involves setting the ADO Data control's Recordset
+	property to an existing Recordset that you create using a shared Connection
+	object.
+	
+	NOTE: You cannot substitute the connection if using server-side cursors (the
+	default):
+	
+	  rs.Open "Employees", cn
+	  Set ADODC1.Recordset = rs
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Open a new Project in Visual Basic 6.0 with a form (Form1).
+	
+	2. Add a reference to Microsoft ActiveX Data Objects 2.0 Library.
+	
+	3. Add the ADO Data Control (6.0) to the project.
+	
+	4. Add the ADO Data control to the form and set the following properties:
+	
+	  +----------------------------------------------------------------------------+
+	  | Property         | Value                                                   | 
+	  +----------------------------------------------------------------------------+
+	  | Name             | ADODC1                                                  | 
+	  +----------------------------------------------------------------------------+
+	  | CommandType      | adCmdTable                                              | 
+	  +----------------------------------------------------------------------------+
+	  | ConnectionString | Provider=Microsoft.Jet.OLEDB.3.51;Data Source=NWIND.MDB | 
+	  +----------------------------------------------------------------------------+
+	  | CursorLocation   | adUseServer                                             | 
+	  +----------------------------------------------------------------------------+
+	  | CursorType       | adOpenStatic                                            | 
+	  +----------------------------------------------------------------------------+
+	  | LockType         | adLockOptimistic                                        | 
+	  +----------------------------------------------------------------------------+
+	  | RecordSource     | Employees                                               | 
+	  +----------------------------------------------------------------------------+
+	
+	5. Add four textboxes to the form and set the following properties:
+	
+	  +------------------------+
+	  | Property   | Value     | 
+	  +------------------------+
+	  | Name       | FirstName | 
+	  +------------------------+
+	  | DataSource | ADODC1    | 
+	  +------------------------+
+	  | DataField  | FirstName | 
+	  +------------------------+
+	
+	  +-----------------------+
+	  | Property   | Value    | 
+	  +-----------------------+
+	  | Name       | LastName | 
+	  +-----------------------+
+	  | DataSource | ADODC1   | 
+	  +-----------------------+
+	  | DataField  | LastName | 
+	  +-----------------------+
+	
+	  +---------------------------+
+	  | Property | Value          | 
+	  +---------------------------+
+	  | Name     | SameConnection | 
+	  +---------------------------+
+	
+	  +--------------------------+
+	  | Property | Value         | 
+	  +--------------------------+
+	  | Name     | NewConnection | 
+	  +--------------------------+
+	
+	6. Add a CommandButton (Command1) to the form.
+	
+	7. Add the following code to the form:
+	
+	  Option Explicit
+	
+	  Private Sub Command1_Click()
+	  Dim rs As ADODB.Recordset
+	    Set rs = New ADODB.Recordset
+	
+	    ' Save the data if necessary 
+	    If ADODC1.Recordset.EditMode <> adEditNone Then
+	      ADODC1.Recordset.Update
+	    End If
+	
+	    ' Open Recordset on same connection as the data control
+	    rs.Open "Employees", ADODC1.Recordset.ActiveConnection, , , adCmdTable
+	    SameConnection.Text = rs!LastName
+	    rs.Close
+	
+	    ' Open recordset on a new connection
+	    rs.Open "Employees", ADODC1.ConnectionString, , , adCmdTable
+	    NewConnection.Text = rs!LastName
+	    rs.Close
+	  End Sub
+	
+	8. Run the project and edit the Employee's last name.
+	
+	9. Click on the CommandButton to save the data, and then read it. You should see
+	  the edited value displayed in the SameConnection textbox and the original
+	  value displayed in the NewConnection textbox.
+	
+	10. Wait a few seconds and click the CommandButton again. The edited value
+	  should now also show in the NewConnection text box. This is due to the cache
+	  timing out.
+	
+	  NOTE: When using the ADO Data control in the manner described above, avoid
+	  using the Refresh method:
+	
+	  ADODC1.Refresh
+	
+	  because this will result in a new connection. Use the Requery method of the
+	  Recordset property instead:
+	
+	  ADODC1.Recordset.Requery
+	
+	(c) Microsoft Corporation 1999, All Rights Reserved.
+	Contributions by Malcolm Stewart, Microsoft Corporation
+	
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbADO200 kbJET kbVBp kbVBp600 kbGrpDSVBDB 
+	Technology        : kbVBSearch kbAudDeveloper kbADOsearch kbADO210 kbADO201 kbADO200 kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+	Version           : WINDOWS:2.0,2.01,2.1,6.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

@@ -1,0 +1,186 @@
+---
+layout: page
+title: "Q133353: FAQs about E-mail on The Microsoft Network"
+permalink: kb/133/Q133353/
+---
+
+## Q133353: FAQs about E-mail on The Microsoft Network
+
+	Article: Q133353
+	Product(s): The Microsoft Network
+	Version(s): WINDOWS:2.5,2.6,5.0,5.1
+	Operating System(s): 
+	Keyword(s): kbfaq
+	Last Modified: 20-APR-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The Microsoft Network versions 2.5, 2.6, 5.0, 5.1 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article lists frequently asked question about e-mail on The Microsoft
+	Network.
+	
+	MORE INFORMATION
+	================
+	
+	STEPS
+	TYPE='ORDERED'> - Q. How does someone on the Internet address e-mail to me at my account on The
+	  Microsoft Network?
+	
+	  A. Your address is:
+	
+	  <your member ID>@email.msn.com
+	
+	  where <your member ID> is your member ID. For example, if your member ID
+	  was johndoe, your address would be:
+	
+	  johndoe@email.msn.com
+	
+	  NOTE: The address is not case sensitive.
+	
+	- Q. How do I address e-mail?
+	
+	  A. You have three options:
+	
+	- Enter an Internet address name listed in your personal address book in the
+	  To, Cc, or Bcc boxes.
+	
+	- Type the Internet address directly in the To, Cc, or Bcc boxes using the
+	  format:
+	
+	  alias@service.com
+	
+	  This address is processed as an SMTP (Simple Mail Transport Protocol) address,
+	  which The Microsoft Network supports for Internet mail.
+	
+	- Enter an Internet address in either the To, Cc, or Bc boxes in either of the
+	  following formats:
+	
+	  [INTERNET: alias@service.com]
+	
+	  The Microsoft Network supports the POP3 format.
+	
+	  The MSNINET format is guaranteed to be sent over The Microsoft Network because
+	  this type is unique to The Microsoft Network.
+	
+	- Q. If I have a problem sending e-mail from The Microsoft Network to other
+	  addresses, where can I get help?
+	
+	  A. Go to http://memberservices.msn.com/us. From there you can find Frequently
+	  Asked Questions, and contact information: e-mail, chat, and phone.
+	
+	- Q. Can I send attachments with outbound e-mail messages?
+	
+	  A. Yes. When you send mail from The Microsoft Network over the Internet,
+	  attachments included in the message are converted automatically to a
+	  UUENCODED format for transmission. When you receive mail from the Internet
+	  with UUENCODED attachments, the attachments are automatically converted to a
+	  standard Microsoft Network attachment.
+	
+	- Q. Is there a limit on the size of The Microsoft Network e-mail messages
+	  (including attachments)?
+	
+	  A. E-mail messages cannot be larger than 3 MB (including attachments). If a
+	  message is larger, it is sent back to your Inbox with an explanation.
+	
+	  Note that this measurement is based on the compressed size of the message as
+	  it is handled by The Microsoft Network. It is therefore possible to send a
+	  message with a large size as reported by Outlook Express's Outbox folder,
+	  because the message is not yet compressed. The parts compressed are the
+	  attachments, objects, and messages inserted using the Message command on the
+	  Insert menu. The text body is not compressed.
+	
+	  Internet messages received by The Microsoft Network are also limited to 3 MB.
+	  (Internet mail is not compressed because attachments are text encoded using
+	  UUENCODE.) If a message received from the Internet exceeds 3 MB, The
+	  Microsoft Network sends the appropriate error code to the sending service. It
+	  is that service's responsibility to inform the sender that the message was
+	  not sent.
+	
+	- Q. Is there a quick way to add a person who sent me e-mail to my personal
+	  address book?
+	
+	  A. Use the right mouse button to click the name in the From field, and then
+	  click Add To Personal Address Book on the menu that appears.
+	
+	- Q. How can different members of my family get different addresses for
+	  e-mail?
+	
+	  A. All members of your family will need separate accounts to send and receive
+	  mail in their own names. To keep the incoming mail separate (with more than
+	  one user on a computer), you need to set up a separate mail profile for each
+	  user.
+	
+	  Your family members can also sign up for free e-mail accounts using the
+	  Web-based Hotmail e-mail service. For more information about how to use
+	  Hotmail with MSN, see the following article in the Microsoft Knowledge Base:
+	
+	  Q185416 Frequently Asked Questions About Hotmail
+	
+	- Q. If I have more than one profile, can I make Outlook Express prompt me for
+	  the profile I want to use?
+	
+	  A. YOu can have multiple identities in Outlok Ecpress. It is possible to have
+	  a default identity and then switch identities during a session. It is also
+	  possible to have Outlook Express prompt you for an identity when it opens. To
+	  do this:
+	
+	  1. Click File, select Identities, and then click Manage Identities.
+	
+	  2. Make certain that the check box by Use this identity when starting a program
+	  is clear, and click Close.
+	
+	  3. When you exit Outlook Express, be sure to Log Off. Click File and then click
+	  Exit and Log Off Identity.
+	
+	  4. If the Outlook Express page is in the right window, you can also click
+	  Identities in the top right corner and then click Log Off Your_Identity.
+	
+	  If you do not log off, the identity you were using when you exited will appear
+	  when you re-start the program.
+	
+	- Q. Can I read mail from one computer but later retrieve that mail from
+	  another computer?
+	
+	  A. Yes. YOu need to leave a copy of your files on the server. Follow these
+	  steps:
+	
+	  1. Click Tools, and then Accounts.
+	
+	  2. Click the Mail tab, select the mail account, and then click Properties.
+	
+	  3. Click the Advanced tab, check the check box by Leave a copy of messages on
+	  server, and then click Apply.
+	
+	  4. Click OK, and then click Close.
+	
+	- Q. How can I add my signature to an e-mail message?
+	
+	  A. Follow these steps:
+	
+	  1. Compose a new mail message and create a signature in the body.
+	
+	  2. Highlight the signature.
+	
+	  3. On the Tools menu, click Auto Signature.
+	
+	- Q. What is the capacity of my mailbox on the MSN mail servers?
+	
+	1. A. 10 megabytes (regardless of the capacity of the mailbox, messages are
+	  deleted when they are more than 30 days old).
+	
+	Additional query words: Outlook Express
+	
+	======================================================================
+	Keywords          :  kbfaq
+	Technology        : kbMSNSearch kbMSN510 kbMSN500 kbMSN260 kbMSN250
+	Version           : WINDOWS:2.5,2.6,5.0,5.1
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

@@ -1,0 +1,1631 @@
+---
+layout: page
+title: "Q106153: Summary List of Windows NT 3.1 Bugs"
+permalink: kb/106/Q106153/
+---
+
+## Q106153: Summary List of Windows NT 3.1 Bugs
+
+	Article: Q106153
+	Product(s): Microsoft Windows NT
+	Version(s): 3.1
+	Operating System(s): 
+	Keyword(s): kbtoolkbbuglist kbfixlist
+	Last Modified: 22-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 3.1 
+	- Microsoft Windows NT Workstation version 3.1 
+	- Microsoft Windows NT Advanced Server, version 3.1 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The following is a list of bugs confirmed in version 3.1 of Windows NT and
+	Windows NT Advanced Server version 3.1. This is not a comprehensive list; this
+	list is current as of February 15, 1994.
+	
+	MORE INFORMATION
+	================
+	
+	For more information on the bug listed, query in the Microsoft Knowledge Base on
+	the article ID number.
+	
+	===========================
+	
+	BUG LISTING FOR VERSION 3.1
+	---------------------------
+	
+	- After Creating Backup Domain Controller Cannot Logon as Admin.
+	
+	- PRB: Anonymous FTP Access Fails When Access Reported Available
+	
+	- Cannot Boot Windows NT After Running OS/2
+	
+	- Disabled Servers Not Dimmed in Server Manager
+	
+	- Err Msg Promoting BDC to PDC: Network Request Not Accepted
+	
+	- Only 30 Characters of Local Group Name Shown in Properties
+	
+	- Windows NT Logon Sound May Be Distorted with SCSI Hard Drives
+	
+	- Terminal Cannot Save TRM Files with Capital Letters in NT
+	
+	- Network DDE Fails with Floating Profile from Other Computer
+	
+	- Cannot Access 8.3 Filename from MS-DOS-Based Application
+	
+	- F1 Key Displays Dr. Watson Help in a Virtual MS-DOS Machine
+	
+	- Cannot Access Clipbook Pages Created on Local Computer
+	
+	- Bus Mouse Does Not Work with Video 7 VRAM II
+	
+	- Corrupted Display on External Monitor with T4400SX
+	
+	- Migrated Icons May Appear Black When Minimized
+	
+	- NT Err Msg: Help Is Not Available for this Request...
+	
+	- Mouse Races and Jumps Across Screen
+	
+	- Full Screen MS-DOS Application Runs Slowly
+	
+	- Starting Applications with /REALTIME May Hang Windows NT
+	
+	- Diamond Viper Video Card Not Supported
+	
+	- Err Msg: Not enough memory for Write....
+	
+	- Err Msg: GROUP ERROR: Cannot Open Program Group....
+	
+	- Windows NT Terminal Does Not Use System Time Format
+	
+	- Floating-Point Calculations May Be Incorrect on Alpha and MIPS
+	
+	- Help Button Not Always Present When Disconnecting User
+	
+	- Server Manager: Computer Name Split on Two Lines
+	
+	- Network-Dependent Services Are Not Removed by Control Panel
+	
+	- Canceling Password Entry Generates Access Denied Error
+	
+	- Fastback: Can't Pause Backup with Mouse
+	
+	- Server Manager: Changing Share Path Resets Permissions
+	
+	- CD Player Doesn't Play Multiple CDs Randomly
+	
+	- NET: Password with Extended Characters Fails
+	
+	- Err Msg: \\<Server>\<Share> Is an Invalid Port Name
+	
+	- User Authentication Fails on LAN Manager Client
+	
+	- RAS and SFM Passwords Are Not Case Sensitive
+	
+	- NT Err Msg: There Is an Error in Modifying the Database
+	
+	- RASAdmin Err Msg: Exception: Access Violation....
+	
+	- Windows NT Help Copy to Clipboard May Truncate a Large Topic
+	
+	- Word for Windows Print to File May Be Ignored by Windows NT
+	
+	- Help May Print Duplicate Last Line on Following Page
+	
+	- SFM: Confirm Volume Removal Dialog Box Requires a Mouse
+	
+	- Cannot Install Driver From a Directory Name That Has a Space
+	
+	- Cannot Access Profile from Server with Share Level Security
+	
+	- Vector Fonts May Be Drawn Outside an Application's Window
+	
+	- Command Prompt Font Change May Cause Screen Redraw Problems
+	
+	- DEL /P Command on an NTFS Partition Uses MS-DOS 8.3 Filenames
+	
+	- NT Err Msg: System Error 67... While Connecting to Printshare
+	
+	- Extended Characters with AT Command May Display Incorrectly
+	
+	- Using Quotes with Filenames Causes Strange Errors
+	
+	- NT Err Msg: Incorrect Function... When Accessing a CD-ROM
+	
+	- Set Up of Applications in Directories with Spaces May Not Work
+	
+	- Command Prompt Cursor is Displaced by Four Spaces
+	
+	- Ntdocerr: Windows 3.1 Migration Occurs Only During Initial Logon
+	
+	- Extended Characters May Cause NET TIME to Give Incorrect Error
+	
+	- Long Filenames May Be Truncated in Windows NT Backup Display
+	
+	- Windows NT Backup May Lose Focus on Highlighted Files
+	
+	- Users Moved to Another Group May Lose Persistent Connections
+	
+	- Command Line Windows NT Backup Backs Up Files as Directories
+	
+	- Err Msg: Exception: Divide By Zero...
+	
+	- MODE Command May Not Work Properly When CMD is Minimized
+	
+	- Mouse Appears to Jump Around the Screen
+	
+	- NT May Be Unable to Use Files in Directories with Long Names
+	
+	- Windows NT Clipbook Viewer May Hang After Starting
+	
+	- SET Command May Truncate the List of Environment Variables
+	
+	- Setup Err Msg: STOP: C0000218 ...Registry Cannot Load the Hive
+	
+	- MS Draw Palettes May Disappear When Scrolled in Windows NT
+	
+	- Cannot Drag Multiple Files in File Manager Search Window
+	
+	- Adobe 52.3 Postscript Driver Doesn't Print with HP Laserjet II
+	
+	- WinMaster Attempts Illegal Access to Hard Disk
+	
+	- ALR Business Veisa Problem with CD-ROM Drive Toshiba 3401
+	
+	- 16-bit Windows-based Applications Fail w/o Scanner Attached
+	
+	- No Default Printer Selection in Printer Pool
+	
+	- Connect To Printer Option May Disappear After Group Change
+	
+	- Cursor May Disappear When Using Wagtail with ATI Ultra Pro
+	
+	- Current User May Lose Focus in Windows NT User Manager
+	
+	- ClipBook May Not Be Able to Save Files to Large Directory Name
+	
+	- Windows NT May Cause APC Smart UPS Battery to Discharge
+	
+	- Err Msg: File Manager Cannot Create Directory
+	
+	- Envelope Printing Problems with HP DeskJet 500c
+	
+	- Cannot Create Icons for Executables in Long Directories
+	
+	- Directory Share Disappears After Computer Restart
+	
+	- Windows NT Common Dialog Boxes May Not See Local Drive Z
+	
+	- Windows NT Backup May Restore Truncated Macintosh Folder Names
+	
+	- FIND.EXE Does Not Return the Proper Errorlevel in Windows NT
+	
+	- Breaking Out of GREP May Return You to Command Prompt
+	
+	- Deleted User Profiles Visable In Setup
+	
+	- EDIT Causes Cursor Misplacement in VDM
+	
+	- Local MS-DOS Printing Allowed to Single Parallel Port Only
+	
+	- Ntdocerr: The Os2LibPath Variable Requires "Set" to Change
+	
+	- Multiple Instances of File Manager and Print Manager
+	
+	- Browse List for Shared Printers is Not Available
+	
+	- Registry Spelled Incorrectly in Error Message
+	
+	- Windows NT Cannot Regenerate Stripe Set with Parity
+	
+	- Custom Forms Not Available in Print Manager
+	
+	- Windows NT TCP/IP Server Freezes
+	
+	- Event ID:2000 Errors in Event Log
+	
+	- DigiBoard 2Port Adapter Setup Fails with U.S. Service Pack 1
+	
+	- File Manager Error Copying Large Number of Files
+	
+	- SFM: Some Files Get Wrong Icon in Finder
+	
+	- Large File Copy Failures Using File Manager
+	
+	- Windows NT Resource Kit Repair Utility Error
+	
+	- Spool File Location is Not Configurable
+	
+	- Command Line NTBACKUP /B Omits Registry Files
+	
+	- Setup Doesn't Recognize CD-ROM Disc
+	
+	- NEC Pinwriter 3200 Doesn't Print Spaces from Notepad
+	
+	- Account Policy on New User Not Enforced
+	
+	- File Manager Doesn t Update Volume Label Correctly
+	
+	- CD-ROM Drive Icon Disappears from File Manager
+	
+	- No Text in Colored Boxes using HP1200C Under Windows NT
+	
+	- Err Msg: Cannot Update File...with FoxPro
+	
+	- WOW Doesn't Support More Than Four Serial Ports
+	
+	- Invalid EISA CFG File for Olicom Token Ring 16/4 Adapter
+	
+	- Help Button Fails for Olicom Token Ring 16/4 Adapter
+	
+	- Invalid Directory Structures with NTBACKUP after SP 2
+	
+	- Services for Macintosh Problems with Olicom 16/4 Token-Ring
+	
+	- GP Fault in Module EQNEDIT.EXE on Object Insert
+	
+	--------------------------------------------------------------
+	
+	After Creating Backup Domain Controller Cannot Logon as Admin.:
+	
+	Article ID: Q101784
+	
+	
+	You make a server a backup domain controller. After setup is complete, you
+	attempt to logon to the administrative account using the correct password. The
+	password validation fails. However, logging on with no password to the
+	administrative account is successful.
+	
+	--------------------------------------------------------------
+	
+	PRB: Anonymous FTP Access Fails When Access Reported Available:
+	
+	Article ID: Q101920
+	
+	
+	An attempt by a File Transfer Protocol (FTP) client to establish a session with a
+	Windows NT FTP server using Anonymous connections fails and the connection is
+	refused even though FTP reports that Anonymous connections are allowed.
+	
+	When this occurs, the client may receive the following message:
+	
+	  331 Anonymous access allowed, send identity (e-mail name) as password.
+	
+	When the client enters the password, the server returns the following message:
+	
+	  530 User anonymous cannot log in.
+	
+	-----------------------------------------
+	
+	Cannot Boot Windows NT After Running OS/2:
+	
+	Article ID: Q101964
+	
+	
+	You may not be able to boot Windows NT from an HPFS partition after running
+	OS/2.
+	
+	---------------------------------------------
+	
+	Disabled Servers Not Dimmed in Server Manager:
+	
+	Article ID: Q102534
+	
+	
+	If an Advanced Server (controller or server) is turned off or down, Server
+	Manager will not dim (gray out) the entry. Refreshing or reloading Server
+	Manager will not correct this problem.
+	
+	----------------------------------------------------------
+	
+	Err Msg Promoting BDC to PDC: Network Request Not Accepted:
+	
+	Article ID: Q102565
+	
+	
+	When you promote a server to a primary domain controller from a workstation, you
+	receive the following error message when Server Manager tries to refresh the
+	main window:
+	
+	  network request not accepted
+	
+	This error message is incorrect and can be ignored.
+	
+	NOTE: This error occurs only when you perform the promotion of the server from a
+	workstation; it does not occur when you perform the promotion of the server from
+	the server or from the primary domain controller.
+	
+	----------------------------------------------------------
+	
+	Only 30 Characters of Local Group Name Shown in Properties:
+	
+	Article ID: Q102899
+	
+	If you add a local group with a long name (30 or more characters), its name is
+	not shown correctly in the Properties dialog box. Anything beyond the thirtieth
+	character is not displayed.
+	
+	-------------------------------------------------------------
+	
+	Windows NT Logon Sound May Be Distorted with SCSI Hard Drives:
+	
+	Article ID: Q102905
+	
+	
+	If you have used the Sound option in the Control Panel to associate a sound with
+	Windows Logon, the sound may be distorted or choppy during the logon sequence.
+	
+	---------------------------------------------------------
+	
+	Terminal Cannot Save TRM Files with Capital Letters in NT:
+	
+	Article ID: Q103046
+	
+	
+	Windows NT Terminal cannot save a TRM file with uppercase letters even if it is
+	being saved to an NTFS or HPFS partition.
+	
+	-----------------------------------------------------------
+	
+	Network DDE Fails with Floating Profile from Other Computer:
+	
+	Article ID: Q103055
+	
+	
+	Users who have floating or mandatory user profiles cannot receive Chat
+	conversations on computers other than the one on which their original profile
+	was created. Similarly, they will not be able to successfully create Clipbook
+	Viewer pages or play Hearts. If a profile is created on the computer they will
+	use, these applications will function on their own computer, but not on other
+	computers. If their initial profile is created on an administrator's computer,
+	these applications will not work on any computer.
+	
+	--------------------------------------------------------
+	
+	Cannot Access 8.3 Filename from MS-DOS-Based Application:
+	
+	Article ID: Q103072
+	
+	
+	From an MS-DOS or 16-bit Windows-based application, you are unable to access a
+	filename on a FAT or NTFS (over the network) partition that has 8 characters
+	before the period and 3 after (8.3 file format).
+	
+	-----------------------------------------------------------
+	
+	F1 Key Displays Dr. Watson Help in a Virtual MS-DOS Machine:
+	
+	Article ID: Q103081
+	
+	If Dr. Watson is running and you press the F1 key for Help while you are in a
+	virtual MS-DOS machine (VDM), Dr. Watson for Windows NT Help displays instead.
+	
+	------------------------------------------------------
+	
+	Cannot Access Clipbook Pages Created on Local Computer:
+	
+	Article ID: Q103125
+	
+	
+	You cannot access Clipbook pages that were created on the computer to which you
+	are logged on unless you created them. If you try to copy a page, a message is
+	displayed telling you that the computer storing the page cannot be connected
+	to.
+	
+	--------------------------------------------
+	
+	Bus Mouse Does Not Work with Video 7 VRAM II:
+	
+	Article ID: Q103195
+	
+	
+	If you use a bus (inport) mouse with a Video 7 VRAM II video adapter, the mouse
+	becomes inoperative.
+	
+	--------------------------------------------------
+	
+	Corrupted Display on External Monitor with T4400SX:
+	
+	Article ID: Q103198
+	
+	
+	If you attach an external monitor to the Toshiba T4400SX computer, the display
+	becomes corrupted.
+	
+	----------------------------------------------
+	
+	Migrated Icons May Appear Black When Minimized:
+	
+	Article ID: Q103203
+	
+	
+	After you migrate a program item for an MS-DOS-based application using an icon
+	from Windows 3.1 PROGMAN.EXE, the icon may appear black when running minimized
+	in Windows NT.
+	
+	-----------------------------------------------------
+	
+	NT Err Msg: Help Is Not Available for this Request...:
+	
+	Article ID: Q103205
+	
+	
+	The following is a dialog box that may appear when you are using the Windows NT
+	Setup program:
+	
+	  The driver(s) for this <hardware> Device are already on the system. Do
+	  you want to use the currently installed driver(s) or install new one(s).
+	
+	If you choose the Help button in this dialog box, the following error message
+	will appear:
+	
+	  Help is not available for this request.
+	
+	-----------------------------------
+	
+	Mouse Races and Jumps Across Screen:
+	
+	Article ID: Q103332
+	
+	
+	Your mouse pointer races across the screen in sudden bursts. It is difficult to
+	control and often goes beyond what you aim for.
+	
+	------------------------------------------
+	
+	Full Screen MS-DOS Application Runs Slowly:
+	
+	Article ID: Q103406
+	
+	
+	At times, your graphical, MS-DOS - based application runs very slowly in
+	full-screen mode. You may notice this behavior is triggered by switching the
+	application between an icon and full screen state. Also, if you press a key, the
+	application speeds up for a short time.
+	
+	--------------------------------------------------------
+	
+	Starting Applications with /REALTIME May Hang Windows NT:
+	
+	Article ID: Q103475
+	
+	
+	From a Command Prompt (CMD.EXE), if you start an application with the /REALTIME
+	switch, Windows NT may appear to hang.
+	
+	--------------------------------------
+	
+	Diamond Viper Video Card Not Supported:
+	
+	Article ID: Q103496
+	
+	
+	If you are using a VESA 800x600 video driver with the Diamond Viper video card,
+	there may be some unusual behavior with the mouse, the keyboard and Program
+	Manager. You may be unable to select items with the mouse, the keyboard may be
+	disabled outside of the Main group, and you may not be able to move groups.
+	
+	----------------------------------------
+	
+	Err Msg: Not enough memory for Write....:
+	
+	Article ID: Q103618
+	
+	
+	When you start Write, the following message appears:
+	
+	  <drive>:\TEMP.WRI Cannot find this file.
+	
+	  Either something has happened to the network or possibly the file has been
+	  renamed or moved. Do you want to try again?
+	
+	This message is followed by another when you choose Cancel:
+	
+	  Not enough memory for Write to complete this operation.
+	
+	  Quit one or more applications to increase available memory, and then try
+	  again.
+	
+	---------------------------------------------------
+	
+	Err Msg: GROUP ERROR: Cannot Open Program Group....:
+	
+	Article ID: Q103622
+	
+	
+	When you log onto Windows NT after changing a user account from the
+	Administrator's group to a group other than Administrators the following error
+	message may appear:
+	
+	  GROUP ERROR: Cannot open program group [your group]. Do you want the Program
+	  Manager to still try to load it in the future?
+	
+	This only happens with accounts that were migrated while the user belonged to the
+	Administrator's group.
+	
+	---------------------------------------------------
+	
+	Windows NT Terminal Does Not Use System Time Format:
+	
+	Article ID: Q103651
+	
+	
+	Windows NT Terminal does not use the system time format specified in the
+	International Time settings of Control Panel when displaying the current time in
+	the Function Keys display.
+	
+	--------------------------------------------------------------
+	
+	Floating-Point Calculations May Be Incorrect on Alpha and MIPS:
+	
+	Article ID: Q103654
+	
+	
+	When you are using Calculator under Windows NT on the DEC Alpha computer or other
+	RISC-based computer, you may experience floating-point errors in your
+	calculations.
+	
+	This problem does not occur on x86-based computers.
+	
+	------------------------------------------------------
+	
+	Help Button Not Always Present When Disconnecting User:
+	
+	Article ID: Q103739
+	
+	
+	When you use Server Manager and disconnect a user from a share, sometimes no Help
+	button is displayed.
+	
+	------------------------------------------------
+	
+	Server Manager: Computer Name Split on Two Lines:
+	
+	Article ID: Q103740
+	
+	
+	If you have a computer name that contains spaces, the characters following the
+	spaces are dropped to a second line in various warning dialog boxes in Server
+	Manager.
+	
+	-----------------------------------------------------------
+	
+	Network-Dependent Services Are Not Removed by Control Panel:
+	
+	Article ID: Q103741
+	
+	
+	After removing a service like TCP/IP using the Network portion of Control Panel,
+	when you restart your system, you get several error messages logged in the event
+	log.
+	
+	------------------------------------------------------
+	
+	Canceling Password Entry Generates Access Denied Error:
+	
+	Article ID: Q103742
+	
+	
+	When you select an OS/2 share-level server from Server Manager, a password entry
+	dialog box is displayed. If you choose the Cancel button, another dialog box is
+	displayed with an "access denied" message.
+	
+	---------------------------------------
+	
+	Fastback: Can't Pause Backup with Mouse:
+	
+	Article ID: Q103743
+	
+	
+	During a backup, Fastback displays a Pause button. You cannot choose this button
+	with your mouse. However, the SPACEBAR and ENTER keys both activate the Pause
+	button, pausing the backup.
+	
+	------------------------------------------------------
+	
+	Server Manager: Changing Share Path Resets Permissions:
+	
+	Article ID: Q103744
+	
+	
+	In the Share Properties dialog box of Server Manager, if you change the path of
+	the share, the permissions are reset to Everyone with Full Control.
+	
+	--------------------------------------------
+	
+	CD Player Doesn't Play Multiple CDs Randomly:
+	
+	Article ID: Q103745
+	
+	
+	If you choose both Multidisk Play and Random Order, sometimes CD Player plays all
+	of the first CD before playing any songs on other CDs.
+	
+	--------------------------------------------
+	
+	NET: Password with Extended Characters Fails:
+	
+	Article ID: Q103746
+	
+	
+	Try to connect to a share on an OS/2 or Windows for Workgroups computer. Use the
+	NET command and let it prompt you for a password. If the password has any
+	extended characters, you are not able to gain access to the share.
+	
+	---------------------------------------------------
+	
+	Err Msg: \\<Server>\<Share> Is an Invalid Port Name:
+	
+	Article ID: Q103747
+	
+	
+	If you log on as a user without the necessary privileges to create a printer on a
+	particular share, instead of getting an "access denied" message, you receive a
+	message that says the port name is invalid.
+	
+	-----------------------------------------------
+	
+	User Authentication Fails on LAN Manager Client:
+	
+	Article ID: Q103826
+	
+	
+	Windows NT does not properly store passwords with extended characters in the
+	Microsoft LAN Manager-compatible password entry in the Security Accounts Manager
+	(SAM) database. This may cause your Microsoft LAN Manager, Remote Access Service
+	(RAS), or Macintosh clients to fail authentication if their passwords contain
+	extended characters.
+	
+	--------------------------------------------
+	
+	RAS and SFM Passwords Are Not Case Sensitive:
+	
+	Article ID: Q103827
+	
+	
+	Windows NT Remote Access Service (RAS) and Services for Macintosh (SFM) passwords
+	are not case sensitive.
+	
+	-------------------------------------------------------
+	
+	NT Err Msg: There Is an Error in Modifying the Database:
+	
+	Article ID: Q103844
+	
+	
+	When Microsoft Windows NT is installed over an existing version of Windows
+	version 3.1 or Windows for Workgroups version 3.1, running Registration Info
+	Editor (REGEDIT.EXE) fails to function. It produces the following error
+	message:
+	
+	  There is an error in modifying the database. The registration database may be
+	  corrupted.
+	
+	-------------------------------------------------
+	
+	RASAdmin Err Msg: Exception: Access Violation....:
+	
+	Article ID: Q103921
+	
+	
+	In Windows NT when exiting the Remote Access Administration utility
+	(RASADMIN.EXE) on a system with a computer name of 14 or more characters, the
+	following error message may appear:
+	
+	  RASADMIN.EXE Exception: access violation (<memaddress>), Address:
+	  <memaddress>
+	
+	------------------------------------------------------------
+	
+	Windows NT Help Copy to Clipboard May Truncate a Large Topic:
+	
+	Article ID: Q103922
+	
+	
+	When you attempt to copy a very large Help topic to the Windows NT Clipboard, the
+	topic text may be truncated in the Windows Help Copy dialog box. This problem
+	may occur if an application has a very large topic in its Help file.
+	
+	-----------------------------------------------------------
+	
+	Word for Windows Print to File May Be Ignored by Windows NT:
+	
+	Article ID: Q103924
+	
+	
+	Under Windows NT, the Word for Windows Print To File option may be ignored; after
+	you select Print To File, the print job still goes to the printer.
+	
+	NOTE: You may experience this problem under any application when printing to a
+	file.
+	
+	----------------------------------------------------
+	
+	Help May Print Duplicate Last Line on Following Page:
+	
+	Article ID: Q103926
+	
+	
+	When you are printing from the Windows NT Help system, if the topic to be printed
+	is going to take more than one printed page, the last line printed on each page
+	is repeated on at the top of the next page.
+	
+	-------------------------------------------------------
+	
+	SFM: Confirm Volume Removal Dialog Box Requires a Mouse:
+	
+	Article ID: Q103928
+	
+	
+	Under Windows NT Advanced Server Services for Macintosh (SFM), a mouse or other
+	pointing device is required to browse through connected users in the Confirm
+	Volume Removal dialog box.
+	
+	------------------------------------------------------------
+	
+	Cannot Install Driver From a Directory Name That Has a Space:
+	
+	Article ID: Q103929
+	
+	
+	When you install additional drivers in Windows NT from the Drivers section of
+	Control Panel, if the required files reside in a directory with a space in its
+	name, the files will not be found and the driver will not be able to install
+	correctly.
+	
+	-----------------------------------------------------------
+	
+	Cannot Access Profile from Server with Share Level Security:
+	
+	Article ID: Q103948
+	
+	
+	You cannot access a user profile from a LAN Manager OS/2 server with share level
+	security.
+	
+	---------------------------------------------------------
+	
+	Vector Fonts May Be Drawn Outside an Application's Window:
+	
+	Article ID: Q104015
+	
+	
+	In Windows NT, vector fonts may be drawn outside the window of the application in
+	which they should be displayed.
+	
+	-----------------------------------------------------------
+	
+	Command Prompt Font Change May Cause Screen Redraw Problems:
+	
+	Article ID: Q104016
+	
+	
+	In Windows NT, if you change the font size of a minimized full-screen Windows NT
+	command prompt (CMD.EXE), when you reopen the full-screen command prompt, the
+	screen may not redraw correctly.
+	
+	-------------------------------------------------------------
+	
+	DEL /P Command on an NTFS Partition Uses MS-DOS 8.3 Filenames:
+	
+	Article ID: Q104017
+	
+	
+	Under Windows NT, if you use the DEL /P command on an NTFS partition, it uses the
+	eight-character filename, three character extension (8.3) convention instead of
+	long filenames when prompting for confirmation.
+	
+	-------------------------------------------------------------
+	
+	NT Err Msg: System Error 67... While Connecting to Printshare:
+	
+	Article ID: Q104018
+	
+	
+	In Windows NT, if you attempt to connect to a shared printer attached to a print
+	server with a Computer Name of 13 characters or more using the following
+	command
+	
+	  NET USE <devicename> <\\computername\sharename>
+	
+	  where <devicename> is the port to be redirected and
+	  <\\computername\sharename> is the network name for the
+	  printing device.
+	
+	The following error message will appear:
+	
+	  System error 67 has occurred.
+	
+	  The network name cannot be found.
+	
+	-----------------------------------------------------------
+	
+	Extended Characters with AT Command May Display Incorrectly:
+	
+	Article ID: Q104019
+	
+	
+	If you use AT to specify a command with extended characters, the extended
+	characters may not be displayed properly in the command list generated by the AT
+	command.
+	
+	-------------------------------------------------
+	
+	Using Quotes with Filenames Causes Strange Errors:
+	
+	Article ID: Q104073
+	
+	
+	When you put quotes around a filenames in Command Prompt, the command does not
+	complete and error messages appear.
+	
+	---------------------------------------------------------
+	
+	NT Err Msg: Incorrect Function... When Accessing a CD-ROM:
+	
+	Article ID: Q104074
+	
+	
+	Under Windows NT, if there is an audio disc in a CD-ROM drive rather than a data
+	disc, the following misleading error message appears in File Manager when you
+	try to access the drive either locally or over a network:
+	
+	  Incorrect Function
+	
+	This error message may also appear in other applications trying to access the
+	CD-ROM drive, such as Windows NT Setup. From a virtual MS-DOS machine (VDM), a
+	different misleading error message appears:
+	
+	  The system cannot find the drive specified.
+	
+	--------------------------------------------------------------
+	
+	Set Up of Applications in Directories with Spaces May Not Work:
+	
+	Article ID: Q104076
+	
+	
+	If you use Windows NT Setup to set up existing applications, icons that are
+	created from applications that are in directory names with spaces will not work
+	correctly.
+	
+	-------------------------------------------------
+	
+	Command Prompt Cursor is Displaced by Four Spaces:
+	
+	Article ID: Q104098
+	
+	
+	After you run and exit MS-DOS Editor in a full-screen Command Prompt, you may
+	notice that the cursor is displaced by four spaces.
+	
+	--------------------------------------------------------------
+	
+	Ntdocerr: Windows 3.1 Migration Occurs Only During Initial Logon:
+	
+	Article ID: Q104126
+	
+	
+	Page 316 of the Microsoft Windows NT System Guide states that Windows NT will
+	read the WIN.INI, SYSTEM.INI, and REG.DAT files each time Windows NT is booted.
+	This is a documentation error. By default, Windows NT only performs migration of
+	program groups and settings once for each user. After that, Windows NT does not
+	make modifications to the registry for migration purposes. Also, changes made in
+	subsequent Windows 3.1 sessions are not migrated into Windows NT.
+	
+	--------------------------------------------------------------
+	
+	Extended Characters May Cause NET TIME to Give Incorrect Error:
+	
+	Article ID: Q104157
+	
+	
+	In Windows NT, if you use the NET TIME /DOMAIN command and your current domain
+	name contains extended characters and the Domain Controller is unavailable, the
+	domain name may be incorrectly mapped and/or truncated in the following error
+	message:
+	
+	  Could not find the domain controller for domain <domainname>.
+	
+	  More help is available by typing NET HELPMSG 3913
+	
+	------------------------------------------------------------
+	
+	Long Filenames May Be Truncated in Windows NT Backup Display:
+	
+	Article ID: Q104158
+	
+	
+	In the Windows NT Backup utility, when you restore files created under the HPFS
+	or NTFS file systems that have very long filenames, it is not possible to view
+	the entire filenames because there is no horizontal scroll bar. Long filenames
+	may extend past the edge of the window.
+	
+	NOTE: A similar problem may also occur in File Manager.
+	
+	-----------------------------------------------------
+	
+	Windows NT Backup May Lose Focus on Highlighted Files:
+	
+	Article ID: Q104159
+	
+	
+	In the Windows NT Backup program, if you highlight multiple files and then from
+	the View menu, switch the All File Details option on and then off, some of the
+	previously selected files may no longer be highlighted.
+	
+	------------------------------------------------------------
+	
+	Users Moved to Another Group May Lose Persistent Connections:
+	
+	Article ID: Q104161
+	
+	
+	While you are using Microsoft Windows NT, if you move a User from one User Group
+	to another User Group, this may cause the User's previous persistent connections
+	to be lost. Once in the new User Group, any network connection made may not be
+	persistent.
+	
+	For example: A user who starts out in the Administrators group and is then moved
+	to the Power Users group loses persistent connection functionality. The
+	connections while in the Power Users group will never be persistent.
+	
+	------------------------------------------------------------
+	
+	Command Line Windows NT Backup Backs Up Files as Directories:
+	
+	Article ID: Q104168
+	
+	
+	When issuing the following command
+	
+	  ntbackup backup o:\readme.txt
+	
+	Windows NT Backup will report that it "Backed up 0 files in 2 directories." The
+	file is backed up; however, it is backed up as a directory instead of a file.
+	
+	The following backup status report results from the above-mentioned example
+	command:
+	
+	  Backup Status
+	
+	  Tape Name: "Tape created on 8/31/93"
+	  Backup of "O: \\products2\release"
+	  Backup set #1 on tape #1
+	  Backup description: ""
+	  Backup started on 8/31/93 at 9:29:57 AM.
+	  Directory \ 
+	  Directory \README.TXT
+	  Backup completed on 8/31/93 at 9:29:58 AM.
+	  Backed up 0 files in 2 directories.
+	  Processed 903 bytes in  1 second.
+	
+	In the backup status report, "Directory \README.TXT" indicates that Windows NT
+	Backup considers README.TXT to be a directory, which is not the case.
+	
+	-------------------------------------
+	
+	Err Msg: Exception: Divide By Zero...:
+	
+	Article ID: Q104172
+	
+	
+	In Windows NT, when you attempt to perform a DIR /D on an NTFS volume with a very
+	long directory name, you may receive the following error message:
+	
+	  Exception: divide by zero (<memaddress>, Address: <memaddress>
+	
+	--------------------------------------------------------
+	
+	MODE Command May Not Work Properly When CMD is Minimized:
+	
+	Article ID: Q104173
+	
+	
+	In Windows NT, if you run a batch or command file and run a MODE command while
+	the batch file is running minimized, the window size of the Command Prompt
+	(CMD.EXE) may not change and the full screen prompt may not get the proper
+	settings.
+	
+	---------------------------------------
+	
+	Mouse Appears to Jump Around the Screen:
+	
+	Article ID: Q104176
+	
+	
+	Under Windows NT, when you switch an application between full screen and
+	restoring it to its previous size, the mouse may appear to jump around the
+	screen.
+	
+	------------------------------------------------------------
+	
+	NT May Be Unable to Use Files in Directories with Long Names:
+	
+	Article ID: Q104182
+	
+	In Windows NT, when you try to access or use a file on an NTFS partition in a
+	directory with a very long name, you may receive various error messages and be
+	unable to manipulate the file.
+	
+	--------------------------------------------------
+	
+	Windows NT Clipbook Viewer May Hang After Starting:
+	
+	Article ID: Q104183
+	
+	
+	Start Clipbook Viewer and open the Window menu before the Local Clipbook window
+	appears. After you close the Window menu by choosing an option or doing
+	something else, Clipbook Viewer appears to stop responding (hang). As long as
+	the Window menu is open, the Local Clipbook window never appears. The mouse is
+	dysfunctional, but keyboard commands like ALT+F still work.
+	
+	After approximately 30 seconds, the Local Clipbook window appears and Clipbook
+	Viewer will operate normally.
+	
+	----------------------------------------------------------
+	
+	SET Command May Truncate the List of Environment Variables:
+	
+	Article ID: Q104195
+	
+	
+	When you run the Windows NT SET command in Command Prompt, the list of
+	environment variables may be truncated if the size of the list of environment
+	variables you have exceeds 3.5 KB.
+	
+	--------------------------------------------------------------
+	
+	Setup Err Msg: STOP: C0000218 ...Registry Cannot Load the Hive:
+	
+	Article ID: Q104203
+	
+	
+	When installing Windows NT or Windows NT Advanced Server from a CD to a machine
+	whose C drive is a SCSI drive with a DTC3290 SCSI controller, Setup may fail,
+	displaying the following message:
+	
+	  STOP: c0000218 {Registry File Failure} The registry cannot load the hive
+	  (file): \SystemRoot\System32\Config\SOFTWARE or its log or alternate. It is
+	  corrupt, absent, or not writeable.
+	
+	----------------------------------------------------------
+	
+	MS Draw Palettes May Disappear When Scrolled in Windows NT:
+	
+	Article ID: Q104492
+	
+	
+	When you use Microsoft Draw version 1.0 in Windows NT, both the 47-color
+	(47COLORS.PAL) and 86-color (87COLORS.PAL) palettes may blank out after you try
+	to scroll the line or fill bars at the bottom of the screen.
+	
+	--------------------------------------------------------
+	
+	Cannot Drag Multiple Files in File Manager Search Window:
+	
+	Article ID: Q104575
+	
+	
+	After you search for particular files in the Windows NT File Manager, you may not
+	be able to select numerous files from the Search window and drag them to another
+	directory or to another drive.
+	
+	--------------------------------------------------------------
+	
+	Adobe 52.3 Postscript Driver Doesn't Print with HP Laserjet II:
+	
+	Article ID: Q104590
+	
+	
+	If you initiate a print job on a Hewlett-Packard Laserjet II with an Adobe 52.3
+	postscript cartridge, the printer Ready light flashes, the LCD reads
+	"Processing," and the Ready light comes back on. However, there is no output.
+	
+	----------------------------------------------
+	
+	WinMaster Attempts Illegal Access to Hard Disk:
+	
+	Article ID: Q104667
+	
+	
+	WinMaster by the PC-Kwik Corporation causes error messages when you attempt to
+	install and use it in Windows NT 3.1. The most serious error message occurs if
+	you try to use the PowerScope tool from the WinMaster utilities. After you
+	attempt to open the PowerScope icon in the WinMaster Toolbox, the following
+	error message appears in a dialog box titled "16 bit Windows Subsystem:"
+	
+	  PowerScope: An application has attempted to directly access the hard disk,
+	  which cannot be supported. This may cause the application to function
+	  incorrectly. Choose 'Close' to terminate application.
+	
+	This dialog box gives you the options of Close or Ignore. If you choose Ignore,
+	the PowerScope tool eventually causes a general protection (GP) fault.
+	
+	---------------------------------------------------------
+	
+	ALR Business Veisa Problem with CD-ROM Drive Toshiba 3401:
+	
+	Article ID: Q104700
+	
+	
+	Windows NT Setup stops on Disk 1 with the following error message:
+	
+	  Setup could not be started. Could not open multi(0)disk(0)
+	  fdisk(0)partition(0) ARC Status=13 Loader exited.
+	
+	  Setup was unable to load file system support. The distribution disk or CD-ROM
+	  may be damaged.
+	
+	-----------------------------------------------------------
+	
+	16-bit Windows-based Applications Fail w/o Scanner Attached:
+	
+	Article ID: Q105025
+	
+	
+	When you load the HPSCAN16.SYS scanner driver in CONFIG.NT but you do not have a
+	Hewlett-Packard (HP) ScanJet IIc scanner attached, 16-bit Windows-based
+	applications do not start. When you click the icon for an application such as
+	Write, Microsoft Word for Windows, or Microsoft Excel, the hourglass pointer
+	appears for about ten seconds, but the application does not start and the icon
+	remains closed. If you open an MS-DOS command prompt from within Windows NT and
+	attempt to start an MS-DOS application such as the MS-DOS Edit utility, the
+	application fails to start. The cursor temporarily freezes, and then eventually
+	begins blinking again at the command prompt.
+	
+	When you attempt to start the application Introducing Windows NT, you will
+	receive a temporarily blank screen.
+	
+	--------------------------------------------
+	
+	No Default Printer Selection in Printer Pool:
+	
+	Article ID: Q105092
+	
+	
+	You cannot select a default printer when you set up a printer pool.
+	
+	For example, suppose you want to set a local printer on LPT1 as the printer to
+	which the first job into the printer pool will be printed. To do this, you
+	specify LPT1 in the Print To option of the Printer Properties dialog box in
+	Print Manager. Then you choose two other printer ports in the Print To
+	Additional Ports option of the Printer Details dialog box. Accept the choices,
+	and close the Printer Properties dialog box. When you reopen Printer Properties,
+	LPT1 will no longer be the selected printer in the Print To option. You will not
+	be able to direct the first print job to LPT1 by default.
+	
+	----------------------------------------------------------
+	
+	Connect To Printer Option May Disappear After Group Change:
+	
+	Article ID: Q105193
+	
+	
+	When a User who was once a member of the Administrators group is changed to
+	another group (removed from the Administrators group), the Connect to Printer
+	option in Print Manager may disappear.
+	
+	If the User has never logged on to their account while a member of
+	Administrators, this problem does not occur. Once that account has been used at
+	least once and the User is then placed in another group, the Connect To Printer
+	option disappears.
+	
+	----------------------------------------------------------
+	
+	Cursor May Disappear When Using Wagtail with ATI Ultra Pro:
+	
+	Article ID: Q105233
+	
+	
+	When you use the Wagtail cursor provided with Windows NT on a system equipped
+	with an ATI Ultra Pro video adapter, the cursor may disappear entirely when
+	exiting a full screen Command Prompt. When you move the mouse, the cursor will
+	eventually reappear.
+	
+	------------------------------------------------------
+	
+	Current User May Lose Focus in Windows NT User Manager:
+	
+	Article ID: Q105240
+	
+	
+	In Windows NT, when you are editing the details for a particular user in the User
+	Manager, the focus (or highlight of the user name) may be lost and applied to
+	another user.
+	
+	--------------------------------------------------------------
+	
+	ClipBook May Not Be Able to Save Files to Large Directory Name:
+	
+	Article ID: Q105245
+	
+	
+	In Windows NT, if you attempt to save a file from ClipBook Viewer to an NTFS
+	directory with a 128-character or larger name, the file will not be saved and
+	you may receive the following error message:
+	
+	  An error has occurred. ClipBook Viewer cannot complete this procedure.
+	
+	-------------------------------------------------------
+	
+	Windows NT May Cause APC Smart UPS Battery to Discharge:
+	
+	Article ID: Q105308
+	
+	
+	When Windows NT is booted, if an American Power Conversions (APC) Smart UPS is
+	installed, its battery may be discharged or the UPS function may be shutdown.
+	
+	---------------------------------------------
+	
+	Err Msg: File Manager Cannot Create Directory:
+	
+	Article ID: Q106002
+	
+	
+	If you try to create a directory or subdirectory in File Manager whose total path
+	from the root, including backslashes (\), will be longer that 245 characters,
+	you will receive the following error message:
+	
+	  File Manager cannot create directory. The filename or extension is too long.
+	
+	You will not be able create the directory.
+	
+	-----------------------------------------------
+	
+	Envelope Printing Problems with HP DeskJet 500c:
+	
+	Article ID: Q106003
+	
+	
+	When an application running under Windows NT targets its output for a #10
+	envelope (4.125-by-9.5-inch) with the Hewlett-Packard (HP) DeskJet 500c printer
+	driver, the output is restricted to a square region 4.125 inches on each side,
+	located at the top left of the envelope. Output that extends beyond this region
+	is truncated (sometimes leaving partial characters) and does not print.
+	
+	-------------------------------------------------------
+	
+	Cannot Create Icons for Executables in Long Directories:
+	
+	Article ID: Q106104
+	
+	
+	Normally you should be able to drag and drop any program (executable file) from
+	File Manager to an active program group in Program Manager in order to create a
+	new icon in that group. If the directory in which the file resides has a 245
+	character-long name, the following error message appears:
+	
+	  Invalid Path: The Path is Invalid
+	
+	The icon is created, but the path is truncated. If you try to start the program
+	by double-clicking the icon, the following error message appears:
+	
+	  Application Execution Error: Cannot find file <drive><long-
+	  directory><file name> (or one of its components): check to ensure
+	  that the path and file name are correct and that all required libraries are
+	  available.
+	
+	-------------------------------------------------
+	
+	Directory Share Disappears After Computer Restart:
+	
+	Article ID: Q106112
+	
+	
+	You are able to configure the security of a sub-directory on an NTFS partition
+	such that if a share is created on the sub-directory, the share disappears the
+	next time you restart your computer.
+	
+	--------------------------------------------------------
+	
+	Windows NT Common Dialog Boxes May Not See Local Drive Z:
+	
+	Article ID: Q106201
+	
+	
+	The Windows NT Common Dialog boxes for handling files may not recognize a local
+	drive using drive Z as its drive letter.
+	
+	--------------------------------------------------------------
+	
+	Windows NT Backup May Restore Truncated Macintosh Folder Names:
+	
+	Article ID: Q106202
+	
+	
+	When you use the Windows NT Backup program to back up LAN Manager 2.x Services
+	for Macintosh files, restored folders may not have their proper names restored.
+	If the folder has a long filename, the restored folder name may be truncated to
+	an 8.3-character filename. However, files will be restored with their proper
+	names.
+	
+	------------------------------------------------------------
+	
+	FIND.EXE Does Not Return the Proper Errorlevel in Windows NT:
+	
+	Article ID: Q106203
+	
+	
+	The Find command (FIND.EXE) in Windows does not return the proper errorlevel.
+	Under MS-DOS, FIND.EXE returns a zero (0) or one (1), based on whether a string
+	is found in a file. It only returns a zero under Windows NT.
+	
+	-----------------------------------------------------
+	
+	Breaking Out of GREP May Return You to Command Prompt:
+	
+	Article ID: Q106212
+	
+	
+	If you run GREP--"Global Regular Expression Print," a POSIX-based tool included
+	in the Windows NT Resource Kit--using the command line parameter "/" (or the
+	more commonly attempted "/?" for help on the GREP command), the cursor is placed
+	on the next screen line without a prompt (GREP is waiting for input from you).
+	If you then attempt breaking out of the GREP command by using CTRL+C, you are
+	returned to the command prompt, but when you attempt to close the command prompt
+	window (such as when you type 'exit' and then press ENTER at the command
+	prompt), the command prompt window does not close and you are unable to close
+	the window using any other means (such as by choosing End Task from the Task
+	List, choosing Terminate from the Settings menu in the Control Box, or choosing
+	Logoff or Shutdown).
+	
+	Windows NT is unable to log off or shut down because this window is open,
+	resulting in the need to manually reset the computer if you want to log off or
+	shut down.
+	
+	--------------------------------------
+	
+	Deleted User Profiles Visable In Setup:
+	
+	Article ID: Q106217
+	
+	
+	When you choose Delete User Profiles from the Options menu in Setup, users may be
+	displayed with blank user names. These blank entries refer to accounts that have
+	been deleted using User Manager after the accounts have been logged onto
+	successfully at least once.
+	
+	--------------------------------------
+	
+	EDIT Causes Cursor Misplacement in VDM:
+	
+	Article ID: Q106221
+	
+	
+	If you run EDIT from a full screen Windows NT command window and then exit to the
+	command prompt, on certain brands of computers you will find that the cursor
+	appears four spaces to the right of where the actual letters are typed on the
+	screen. Dell computers with Phoenix BIOS tends to be one kind of computer that
+	exhibits this problem.
+	
+	----------------------------------------------------------
+	
+	Local MS-DOS Printing Allowed to Single Parallel Port Only:
+	
+	Article ID: Q107207
+	
+	
+	With machines with more than one parallel port, all printing attempts to ports
+	other than LPT1 results in the output always going to LPT1.
+	
+	--------------------------------------------------------
+	
+	Ntdocerr: The Os2LibPath Variable Requires "Set" to Change:
+	
+	Article ID: Q107369
+	
+	
+	Page 321 of the Microsoft Windows NT System Guide states the following:
+	
+	  "At the command prompt, you can change the library path for OS/2
+	  applications by using the "Os2libpath" command."
+	
+	This is a documentation error. The "Os2libpath" command must be used with the
+	"Set" command in order change the environment variable settings. Using the "Set"
+	command in an MS-DOS VDM only changes the variable in that particular MS-DOS
+	VDM.
+	
+	----------------------------------------------------
+	
+	Multiple Instances of File Manager and Print Manager:
+	
+	Article ID: Q107421
+	
+	
+	Multiple instances of File Manager and Print Manager can be started by very
+	quickly double-clicking on their respective icons at least twice.
+	
+	------------------------------------------------
+	
+	Browse List for Shared Printers is Not Available:
+	
+	Article ID: Q107543
+	
+	
+	The "Browse List for Shared Printers" option may not appear when you choose
+	Connect To Printer. You may be able to connect to the printer by typing the UNC
+	name for the printer. If you are able to connect, you should be able to print.
+	
+	Symptoms may include spooled jobs in the print queue. Deleting the spooled jobs
+	will not remove them from the print queue, although their status will change
+	from Spooling to Deleting. Removing the driver and reinstalling it will not
+	remove the jobs nor will deleting the spool files from
+	%SYSTEMROOT%\SYSTEM32\SPOOL\PRINTERS.
+	
+	---------------------------------------------
+	
+	Registry Spelled Incorrectly in Error Message:
+	
+	Article ID: Q107730
+	
+	
+	When you attempt to delete the key of a hive in use or a key you don't have
+	sufficient permissions to, you will receive the following error message
+	
+	  Registry Editor could not delete the key currently selected. The key, or one
+	  of its subkeys does not give you DELETE access.
+	
+	where the word "Registry" is misspelled.
+	
+	---------------------------------------------------
+	
+	Windows NT Cannot Regenerate Stripe Set with Parity:
+	
+	Article ID: Q108082
+	
+	
+	If you remove a drive from a stripe set with parity, deleting a stripe partition
+	on another computer, when you reinsert the drive back into the stripe set with
+	parity, the stripe set with parity is not allowed to regenerate.
+	
+	-------------------------------------------
+	
+	Custom Forms Not Available in Print Manager:
+	
+	Article ID: Q108083
+	
+	
+	A custom form created by a user may not be listed in the list of available forms
+	when the user attempts to assign the form to a source.
+	
+	--------------------------------
+	
+	Windows NT TCP/IP Server Freezes:
+	
+	Article ID: Q108255
+	
+	
+	A Windows NT server configured with the TCP/IP may have no CapsLock or NumLock
+	activity.
+	
+	---------------------------------
+	
+	Event ID:2000 Errors in Event Log:
+	
+	Article ID: Q108256
+	
+	
+	Windows NT logs between one and nine of the following messages per second in the
+	SYSTEM EventLog.
+	
+	   Date:     10/25/93          Event ID:  2000
+	   Time:     01:24:15 PM       Source:    Srv
+	   User:     N/A               Type:      Error
+	   Computer: <servername>      Category:  None
+	
+	   Description:
+	   The server's call to a system service failed unexpectedly.
+	
+	   Data (bytes):
+	   0000: 00 00 04 00 01 00 54 00   ......T.
+	   0008: 00 00 00 00 d0 07 00 c0   ....D..A
+	   0010: 00 00 00 00 0d 00 00 c0   .......A
+	   0018: 00 00 00 00 00 00 00 00   ........
+	   0020: 00 00 00 00 00 00 00 00   ........
+	   0028: c0 0b 00 00               A...
+	
+	------------------------------------------------------------
+	
+	DigiBoard 2Port Adapter Setup Fails with U.S. Service Pack 1:
+	
+	Article ID: Q108413
+	
+	
+	If you set up the DigiBoard 2Port Adapter, after installing U.S. Service Pack 1,
+	the Port Settings dialog box, used to enumerate and install additional COM
+	ports, is not displayed. Therefore, some of the configuration parameters are not
+	correctly written to the Registry. If you restart your computer, you receive an
+	error message. If you use the Network portion of Control Panel to remove the
+	driver, you still receive an error message.
+	
+	------------------------------------------------
+	
+	File Manager Error Copying Large Number of Files:
+	
+	Article ID: Q108420
+	
+	
+	If you have a directory with a large number of files (for example, 6500) and then
+	you attempt to delete or move or copy these files, you will receive an
+	application error in File Manager. This causes Dr. Watson to make a log.
+	
+	----------------------------------------
+	
+	SFM: Some Files Get Wrong Icon in Finder:
+	
+	Article ID: Q108504
+	
+	
+	When you are using Services for Macintosh (SFM) on a Windows NT Advanced Server,
+	some of the files may appear with incorrect icons to the Macintosh users.
+	
+	-------------------------------------------
+	
+	Large File Copy Failures Using File Manager:
+	
+	Article ID: Q109119
+	
+	
+	When you transfer files 20 megabytes (MB) or larger through File Manager, the
+	transfer takes a long time, and in some cases the transfer fails.
+	
+	--------------------------------------------
+	
+	Windows NT Resource Kit Repair Utility Error:
+	
+	Article ID: Q109523
+	
+	
+	When you run REPAIR /C to create a new Emergency Repair Disk, the utility starts
+	copying files to disks and may successfully create one or more disks. At some
+	point in the process, it starts prompting for new disks, reading them for a few
+	seconds without putting any files on the disk and then asking for another disk.
+	This continues as long as you insert new disks.
+	
+	---------------------------------------
+	
+	Spool File Location is Not Configurable:
+	
+	Article ID: Q109698
+	
+	
+	When you print from an application under Windows NT, the Spooler usually stores
+	the print job as a pair of files on your hard disk. The location of these files
+	is not configurable, the Spooler is hard-coded to store the files at
+	%SYSTEMROOT%\SYSTEM32\SPOOL\PRINTERS.
+	
+	---------------------------------------------
+	
+	Command Line NTBACKUP /B Omits Registry Files:
+	
+	Article ID: Q109785
+	
+	
+	When you run NTBACKUP from a command line, setting the parameter /B (backup the
+	registry) fails to properly back up the registry. The command excutes and
+	properly backs up the files in the path specified, but the registry files WILL
+	NOT be backed up.
+	
+	Using the Administrative Tools Backup program correctly backs up the registry
+	files.
+	
+	Additional query words: lfn prodnt readme.txt
+	
+	======================================================================
+	Keywords          : kbtool kbbuglist kbfixlist
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW310 kbWinNTSsearch kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+	Version           : :3.1
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

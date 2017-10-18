@@ -1,0 +1,146 @@
+---
+layout: page
+title: "Q237274: WD97: Err Msg: &quot;This Document May Be Corrupt&quot;"
+permalink: kb/237/Q237274/
+---
+
+## Q237274: WD97: Err Msg: &quot;This Document May Be Corrupt&quot;
+
+	Article: Q237274
+	Product(s): Word 97 for Windows
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbdta word8 word97
+	Last Modified: 11-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+	
+	  Q256986 Description of the Microsoft Windows Registry
+	
+	SYMPTOMS
+	========
+	
+	When you open a document in Word 97, you may receive the following error
+	message:
+	
+	  This document may be corrupt. To preserve the contents: Choose Select All
+	  from the Edit menu, then choose Copy from the Edit menu. Create a new
+	  document, then choose Paste from the Edit menu.
+	
+	CAUSE
+	=====
+	
+	This error may be caused by a build-up of List Templates in a document. A List
+	Template is a container for a customized numbering scheme. In the numbering
+	gallery (on the Format menu, click "Bullets and Numbering"), each number gallery
+	position displays a different List Template. As you use or change List
+	Templates, the number gallery changes, based on the active List Templates.
+	
+	The build-up can occur if you repeatedly switch between a bulleted list format
+	and a numbered list format for the same list.
+	
+	You can also see this message while editing Master Documents that contain
+	numbered or bulleted lists.
+	
+	NOTE: There are other known causes of a build-up in List Templates. Although this
+	update does not prevent the problem from occurring, it removes this form of
+	corruption and eliminates the error message.
+	
+	To determine whether you are receiving the error message because of excessive
+	List Templates, follow these steps:
+	
+	1. After you receive the error message, point to Macro on the Tools menu, and
+	  click Visual Basic Editor.
+	
+	2. In the Visual Basic Editor, click Immediate Window on the View menu.
+	
+	3. Type the following command in the Immediate window and press ENTER:
+	
+	  ?activedocument.listtemplates.count
+	
+	This problem is known to occur when the number of List Templates approaches
+	2,000.
+	
+	RESOLUTION
+	==========
+	
+	To correct this problem, you will need to obtain and install the fix listed in
+	Step 1 and then modify the Windows Registry as described in Step 2:
+	
+	NOTE: Before installing the fix and modifying the Windows Registry, exit all
+	windows applications.
+	
+	Step 1 - Obtain and Install the Latest Word 97 Fix:
+	
+	To resolve the problem described in this article, obtain and install the latest
+	Microsoft Word 97 update from the following Microsoft Web site:
+	
+	  http://office.microsoft.com/downloads/9798/Wd97mcrs.aspx
+	
+	IMPORTANT NOTE: Microsoft Word 97 post-service release fixes are cumulative. The
+	latest update contains all of the fixes since Service Release 2. If you install
+	the latest update for Word 97, you do not need to install any other updates
+	after Service Release 2.
+	
+	For additional information about the fixes included in the latest update for Word
+	97, click the article number below to view the article in the Microsoft
+	Knowledge Base:
+	
+	  Q265374 WD97: Post Service Release Fixes for Word 97
+	
+	Step 2 - Modify the Windows Registry:
+	
+	IMPORTANT NOTE: This is a Windows Registry activated fix and you must modify the
+	Windows Registry. To do this, follow these steps:
+	
+	WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+	that may require you to reinstall your operating system. Microsoft cannot
+	guarantee that you can solve problems that result from using Registry Editor
+	incorrectly. Use Registry Editor at your own risk.
+	
+	1. On the Windows Start menu, click Run.
+	
+	2. In the Open box, type "regedit" (without the quotation marks) and click OK.
+	
+	3. Select the following key in the Windows registry:
+	
+	  HKEY_CURRENT_USER\Software\Microsoft\Office\8.0\Word\Options
+	
+	4. On the Edit menu, point to New, and click String Value. Then, add the
+	  following registry value:
+	
+	  Value Name: LTOverflowRecovery
+	
+	  Value: 1
+	
+	5. On the Registry menu, click Exit.
+	
+	
+	
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products that are
+	listed at the beginning of this article. The fix for this problem is included in
+	the latest Microsoft Word 97 for Windows patch. Please see the "Resolution"
+	section of this article for more information.
+	
+	Additional query words: wd97 listtemplate errmsg error message corrupt 706
+	
+	======================================================================
+	Keywords          : kbdta word8 word97 
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : :
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

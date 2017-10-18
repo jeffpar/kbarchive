@@ -1,0 +1,94 @@
+---
+layout: page
+title: "Q151201: Unbind Hold Causes TN3270 Client 505 Error"
+permalink: kb/151/Q151201/
+---
+
+## Q151201: Unbind Hold Causes TN3270 Client 505 Error
+
+	Article: Q151201
+	Product(s): Microsoft SNA Server
+	Version(s): WINDOWS:2.11,2.11 SP1
+	Operating System(s): 
+	Keyword(s): kbnetwork
+	Last Modified: 13-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 2.11, 2.11 SP1, on platform(s):
+	   - the operating system: Microsoft Windows NT 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	When you log onto a host system through the SNA Server version 2.11sp1 TN3270E
+	service, the TN3270 user may receive a 505 error and lose his or her session.
+	
+	If this occurs, the SNA Server TN3270E service will log the following events into
+	the Microsoft Windows NT application event log:
+	
+	- Event 601
+	  TN3270(E) session established with client at xxx.xxx.xxx.xxx (port xxxx) using
+	  LU LAA9.
+	
+	- Event 309
+	  WRITE failed with LUA_STATE_CHECK / LUA_MODE_INCONSISTENCY for xxx.xxx.xxx.xxx
+	  (port xxxx).
+	
+	- Event 603
+	  TN3270(E) session with client at xxx.xxx.xxx.xxx (port xxxx) using LU LAA9
+	  terminated abnormally because: TN3270E Service Error 505
+	
+	- Event 3065
+	  A Bind sent by the host for a 3270 session was rejected
+	
+	- Event 902
+	  Logic error in module SNASessionTerminate identified by:.SNAWriteBuffersInUse
+	
+	CAUSE
+	=====
+	
+	When a 3270 user tries to access a host application through a host session
+	manager, the session manager typically sends an UNBIND(bind forthcoming, or
+	0x02) followed by a BIND from the host application that was requested.
+	
+	The TN3270 server was not properly handling the UNBIND, which was causing its LUA
+	RUI_WRITE call to fail. Therefore, it caused the TN3270 server to end the
+	session. However, the TN3270 server now correctly ignores this error.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in SNA Server versions 2.11 and
+	2.11.sp1.
+	This problem was corrected in the latest Microsoft SNA Server 2.11 U.S. Service
+	Pack. For information on obtaining the service pack, query on the following word
+	in the Microsoft Knowledge Base (without the spaces):
+	
+	  S E R V P A C K
+	
+	
+	MORE INFORMATION
+	================
+	
+	The host sends a data message, followed by an UNBIND (bind forthcoming). The
+	TN3270 Server issues a response to the data message. However, by that point the
+	RUI library has received the UNBIND (bind forthcoming) request, and has switched
+	states to Session Terminating state. In this state it rejects the response
+	message from the TN3270 Server, with the error LUA_STATE_CHECK /
+	LUA_MODE_INCONSISTENCY.
+	
+	Additional query words: prodsna sp1
+	
+	======================================================================
+	Keywords          : kbnetwork 
+	Technology        : kbAudDeveloper kbSNAServSearch
+	Version           : WINDOWS:2.11,2.11 SP1
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

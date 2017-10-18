@@ -1,0 +1,86 @@
+---
+layout: page
+title: "Q86054: How to Determine Amount of Extended Memory with DEBUG"
+permalink: kb/086/Q86054/
+---
+
+## Q86054: How to Determine Amount of Extended Memory with DEBUG
+
+	Article: Q86054
+	Product(s): Microsoft Disk Operating System
+	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 17-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article outlines a method to determine the amount of extended memory
+	installed on a computer using the MS-DOS DEBUG utility.
+	
+	MORE INFORMATION
+	================
+	
+	The amount of contiguous extended memory identified by software Interrupt 15,
+	function 88 (Int 15H/88H, get extended memory size) is the amount that HIMEM.SYS
+	uses to allocate XMS. In versions of MS-DOS earlier than 4.01, a utility was not
+	provided to display the amount of memory on a computer. To determine how much
+	extended memory is installed in a computer, do the following:
+	
+	1. Remove any memory managers from the CONFIG.SYS file, including HIMEM.SYS.
+	
+	2. Reboot the computer.
+	
+	3. At an MS-DOS command prompt, type "DEBUG" (without the quotation marks).
+	
+	4. When the DEBUG command prompt (a hyphen, [-]) is displayed, enter the DEBUG
+	  commands below:
+	
+	  DEBUG       Enter DEBUG
+	  Prompts     Commands            Comments
+	  -------     -----------         --------
+	
+	  -           A 100               Assemble from CS:0100.
+	  nnnn:0100   MOV AX, 8800        Set AX reg. for function 8800
+	                               (nnnn is segment address)
+	  nnnn:0103   INT 15              Call Interrupt 15
+	  nnnn:0105   <Press Enter>
+	  -           P 2                 Debug Proceed instruction
+	                               to execute interrupt request.
+	
+	  Information similar to the following will appear:
+	
+	  AX=8800  BX=0000  CX=0000  DX=0000  SP=FFEE  BP=0000  SI=0000  DI=0000
+	  DS=1D5B  ES=1D5B  SS=1D5B  CS=1D5B  IP=0102   NV UP EI PL NZ NA PO NC
+	  1D5B:0102 CD15          INT     15
+	
+	  AX=1D80  BX=0000  CX=0000  DX=0000  SP=FFEE  BP=0000  SI=0000  DI=0000
+	  DS=1D5B  ES=1D5B  SS=1D5B  CS=1D5B  IP=0104   NV UP EI PL NZ NA PO NC
+	  1D5B:0104 7E12          JLE     0118
+	
+	  -           Q                        Quit Debug
+	
+	The returned information is a dump of the CPU registers after each instruction.
+	The AX register of the second dump contains the hexadecimal value for the amount
+	of extended memory on the system. In the above example, AX=1D80. The hexadecimal
+	value 1D80 is 7552 in decimal. Multiply the decimal number by 1024 to obtain the
+	bytes available contiguous extended memory. In this example:
+	
+	  7552 * 1024 = 7733248 bytes total contiguous extended memory
+	
+	Additional query words: 6.22 5.00 5.00a 6.00 3.0 3.1 win31 6.20
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+	Version           : MS-DOS:5.x,6.0,6.2,6.21,6.22
+	
+	=============================================================================
+	

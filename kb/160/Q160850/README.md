@@ -1,0 +1,127 @@
+---
+layout: page
+title: "Q160850: XADM: DS_E_BUSY After Directory Service Restore"
+permalink: kb/160/Q160850/
+---
+
+## Q160850: XADM: DS_E_BUSY After Directory Service Restore
+
+	Article: Q160850
+	Product(s): Microsoft Exchange
+	Version(s): 4.0,5.0,5.5
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 18-FEB-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When a directory is restored from backup it attempts to get back copies of all
+	the objects that it last modified or added and that it replicated out to other
+	computers since it was backed up; this is called backsync. During backsync, you
+	can get into a situation where it is not possible to make directory changes for
+	up to 16 hours. When you attempt to modify the directory while it is in this
+	state, the Microsoft Exchange Server Administrator program will display the
+	following message:
+	
+	  The directory is busy. Wait a few minutes and try again.
+	
+	  Microsoft Exchange Directory
+	  ID no: DS_E_BUSY
+	
+	The following event ID will also be logged:
+	
+	  Event ID: 1173. A privileged operation (rights required = 0x4) on object
+	  failed because a non-security related error occurred.
+	
+	CAUSE
+	=====
+	
+	This will most often occur after the restoration of a directory on a server that
+	has the schedule on its connectors set to Never. The directory service agent
+	(DSA) is hardcoded to try to backsync for up to 16 hours even if it is unable to
+	do so.
+	
+	WORKAROUND
+	==========
+	
+	To work around this problem, do one of the following:
+	
+	- Make sure that the schedule on the connector of the remote Directory
+	  Replication Bridgehead is not set to Never. If it is, either set it to Always
+	  to allow for the proper delivery of directory replication messages, or wait
+	  for 16 or 4 hours respectively for this to time out.
+	
+	  -OR-
+	
+	- In Microsoft Exchange Server 5.0 SP1, it is possible to add a value to the
+	  registry that will control this timeout:
+	
+	  Under the HKEY_LOCAL_MACHINE subtree, add the value in minutes to the
+	  following subkey:
+	
+	     Key: System\CurrentControlSet\Services\MSExchangeDS\Parameters\ 
+	     Value: Replicator inter site backsync timeout
+	     Data Type: REG_DWORD
+	     Value data: <number-of-minutes-in-hex>
+	
+	  The hex value of "f" equals 15 minutes in the line above.
+	
+	  This value is case-sensitive and must be entered as shown above.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+	version 4.0. This problem has been corrected in the latest U.S. Service Pack for
+	Microsoft Exchange Server version 4.0. For information on obtaining the Service
+	Pack, query on the following word in the Microsoft Knowledge Base (without the
+	spaces):
+	
+	  S E R V P A C K
+	
+	Microsoft has confirmed this to be a problem in Microsoft Exchange Server version
+	5.0. This problem has been corrected in the latest U.S. Service Pack for
+	Microsoft Exchange Server version 5.0. For information on obtaining the Service
+	Pack, query on the following word in the Microsoft Knowledge Base (without the
+	spaces):
+	
+	  S E R V P A C K
+	
+	MORE INFORMATION
+	================
+	
+	When a directory is restored from backup it attempts to get back -- backsync --
+	copies of all the objects which it last modifed or added which it replicated out
+	to other computers since it was backed up. These computers can be in the same
+	site or another site. Backsync is necessary becuase normally changes made at a
+	DSA do not replicate back to that DSA, and also the Update Sequence Number (USN)
+	for a restored computer will be lower than the USN it had before being restored.
+	This means that if any changes are made at the restored computer before it has
+	backsync'ed, they will not replicate out until the USN climbs to the value it
+	was before the server was restored.
+	
+	If the backsync is overridden by reducing the timeout, there is a risk of this
+	replication loss. Therefore the backsync timeout should only be reduced or
+	eliminated when you are sure that no changes were made at the restored computer
+	since the computer was backed up."
+	
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+	Version           : :4.0,5.0,5.5
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

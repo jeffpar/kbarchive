@@ -1,0 +1,142 @@
+---
+layout: page
+title: "Q155516: How to Remove the Lexmark MarkVision Monitor"
+permalink: kb/155/Q155516/
+---
+
+## Q155516: How to Remove the Lexmark MarkVision Monitor
+
+	Article: Q155516
+	Product(s): Microsoft Windows NT
+	Version(s): winnt:3.5,3.51,4.0
+	Operating System(s): 
+	Keyword(s): kb3rdparty
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+	- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about editing the registry.
+	Before you edit the registry, make sure you understand how to restore it if
+	a problem occurs. For information about how to do this, view the "Restoring
+	Registry Key" Help topic in Regedt32.exe.
+	
+	SUMMARY
+	=======
+	
+	Lexmark MarkVision is a Windows program that provides printer configuration and
+	status information. MarkVision also gives you control over your Lexmark laser
+	printers by using the bidirectional communication capability of the printer.
+	MarkVision works with printers connected to your workstation through TCP/IP and
+	Data Link Control (DLC), and with printers in the Microsoft Network.
+	
+	MORE INFORMATION
+	================
+	
+	Occasionally it may be necessary to remove or re-install the MarkVisionMonitor.
+	Steps to remove the MarkVision monitor follow:
+	
+	DLC Monitor
+	-----------
+	
+	1. Click Start, point to Settings, click Control Panel and then double- click
+	  Services.
+	
+	2. Click Spooler, click Stop, and then click Close.
+	
+	3. Start Registry Editor (Regedt32.exe).
+	
+	4. Delete the following keys:
+	
+	  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print\ Monitors\Lexmark
+	  DLC Network Port
+	
+	  HKEY_LOCAL_MACHINE\SOFTWARE\Lexmark\Print Monitor Utility
+	
+	  HKEY_LOCAL_MACHINE\SOFTWARE\Lexmark\Network Printer Utility
+	
+	5. Exit Registry Editor.
+	
+	6. Delete the following files:
+	
+	  Lexmon.dll
+	  Lexlang.dll
+	  Lexmon.hlp
+	  Interact.exe
+	  Interact.dll
+	  Interact.hlp
+	  Lexcfg.cpl
+	  Lexcfg.hlp
+	
+	7. Shut down and restart your computer.
+	
+	WARNING: Using Registry Editor incorrectly can cause serious problems that may
+	require you to reinstall your operating system. Microsoft cannot guarantee that
+	problems resulting from the incorrect use of Registry Editor can be solved. Use
+	Registry Editor at your own risk.
+	
+	For information about how to edit the registry, view the "Changing Keys and
+	Values" Help topic in Registry Editor (Regedt32.exe) or the "Add and Delete
+	Information in the Registry" and "Edit Registry Data" Help topics in
+	Regedt32.exe. Note that you should back up the registry before you edit it.
+	
+	1. Click Start, point to Settings, click Control Panel, and then double- click
+	  Add/Remove Programs.
+	
+	2. Click MarkVision and then click Add/Remove.
+	
+	3. In Control Panel, double-click Services.
+	
+	4. Click Spooler, click Stop, and then click Close.
+	
+	5. Start Registry Editor (Regedt32.exe).
+	
+	6. Delete the following keys:
+	
+	  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print\Monitors\ Lexmark
+	  TCP/IP Network Port
+	
+	  HKEY_LOCAL_MACHINE\SOFTWARE\Lexmark\MarkVision
+	
+	  NOTE: The above registry key is one path; it has been wrapped for readability.
+	
+	7. Delete the following files:
+	
+	  Lexlmpm.dll
+	  Lexbcelm.dll
+	  Lexstart.exe
+	  Lexbce.dll
+	  Lexip32.dll
+	  Lexll32.dll
+	  Lexnetui.dll
+	  Lexnetui.hlp
+	  Mvuninst.exe
+	
+	8. Shut down and restart your computer.
+	
+	Note: Markvision adds the value "lexbce" to the following registry key:
+	
+	  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Spooler\
+	  DependsOnService
+	
+	If this entry is not removed before the Lexbce service is disabled, the Spooler
+	service may not start.
+	
+	MarkVision is manufactured by Lexmark, a vendor independent of Microsoft; we make
+	no warranty, implied or otherwise, regarding this product's performance or
+	reliability.
+	
+	Additional query words: ibm uninstall
+	
+	======================================================================
+	Keywords          : kb3rdparty 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+	Version           : winnt:3.5,3.51,4.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

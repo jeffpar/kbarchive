@@ -1,0 +1,99 @@
+---
+layout: page
+title: "Q185626: BUG: PictureBox Cannot be Made Transparent Using SetWindowLong"
+permalink: kb/185/Q185626/
+---
+
+## Q185626: BUG: PictureBox Cannot be Made Transparent Using SetWindowLong
+
+	Article: Q185626
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): WINDOWS:5.0
+	Operating System(s): 
+	Keyword(s): kbVC500bug kbGrpDSVB kbDSupport
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+	- Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+	- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Attempting to use the Windows SetWindowLong API function to set the window style
+	of a Visual Basic Picturebox to transparent does not work. However, this method
+	was successful with earlier versions of Visual Basic.
+	
+	RESOLUTION
+	==========
+	
+	There is not a solution that allows the API to work in this manner on the
+	intrinsic Visual Basic 5.0 PictureBox control. To work around this problem, you
+	can replace the PictureBox control with a custom or third party control that
+	offers the same basic functionality as the PictureBox control but does not
+	exhibit the same SetWindowLong limitation.
+	
+	With Visual Basic 6.0, you can build a Transparent UserControl that responds to
+	mouse events. For additional information, click the article number below to view
+	the article in the Microsoft Knowledge Base:
+	
+	  Q185882 HOWTO: Use the HitTest Event and HitBehavior Property
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Create a new Standard EXE project. Form1 is created by default.
+	
+	2. Add two PictureBox controls, named Picture1 and Picture2, to Form1.
+	
+	3. Set the BackColor property of Picture1 to red.
+	
+	4. Position Picture2 so that it partially overlaps the Picture1 control.
+	
+	5. Place the following code in the code module of Form1:
+	
+	        Option Explicit
+	        Const GWL_EXSTYLE = (-20)
+	        Const WS_EX_TRANSPARENT = &H20&
+	
+	        Private Declare Function SetWindowLong Lib "user32" Alias _
+	            "SetWindowLongA" (ByVal hwnd As Long, ByVal nIndex As Long, _
+	            ByVal dwNewLong As Long) As Long
+	
+	        Private Sub Form_Load()
+	            Dim result As Long
+	            Picture2.ZOrder
+	            result = SetWindowLong(Picture2.hwnd, GWL_EXSTYLE, _
+	               WS_EX_TRANSPARENT)
+	        End Sub
+	
+	6. Run the sample project.
+	
+	  RESULT: The Picture2 control is not made transparent so Picture1 is not
+	  completely revealed. In earlier versions of Visual Basic this code allowed
+	  Picture1 to be completely revealed.
+	
+	Additional query words: kbSDKWin32 kbAPI kbVBp kbdsd kbDSupport kbVBp500
+	
+	======================================================================
+	Keywords          : kbVC500bug kbGrpDSVB kbDSupport 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500Search kbVBA500 kbVB500 kbZNotKeyword3
+	Version           : WINDOWS:5.0
+	Issue type        : kbbug
+	
+	=============================================================================
+	

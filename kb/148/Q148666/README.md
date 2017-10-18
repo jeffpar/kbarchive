@@ -1,0 +1,255 @@
+---
+layout: page
+title: "Q148666: CONN: Manually Removing PC Side of a Connection 3.2 Gateway"
+permalink: kb/148/Q148666/
+---
+
+## Q148666: CONN: Manually Removing PC Side of a Connection 3.2 Gateway
+
+	Article: Q148666
+	Product(s): Microsoft Mail For PC Networks
+	Version(s): 3.2
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 11-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Mail Connection for PC and AppleTalk Networks, version 3.2 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes how to manually remove all traces of version 3.2
+	Microsoft Mail Connection for PC and AppleTalk Networks or the Access component
+	from a Microsoft Mail for PC Networks postoffice (PO).
+	
+	Occasionally a Microsoft Mail gateway installation or removal will crash leaving
+	the gateway in a state where the Setup program will no longer install or remove
+	the gateway. When this occurs, the following procedure can be used to manually
+	remove the gateway from the postoffice.
+	
+	MORE INFORMATION
+	================
+	
+	The Connection 3.2 Gateway is different from other Microsoft Gateways in that
+	two records are used in the Gateway POs NETWORK.GLB file. In addition, two
+	address lists can exist: a Native Format address list and a PROXYNET/PROXYPO
+	type list.
+	
+	To manually delete the Connection 3.2 Gateway from the Mail for PC Networks
+	postoffice, you may need to manually modify the MASTER.GLB and NETWORK.GLB
+	files. In addition, you may need to delete various files.
+	
+	To remove the Connection 3.2 gateway components at the byte level
+	-----------------------------------------------------------------
+	
+	1. Make two copies each of the MASTER.GLB and NETWORK.GLB files with *.BAK and
+	  *.TMP extensions.
+	
+	2. You may need to modify the MASTER.TMP file with debug as described below.
+	  Here is a sample debug sequence of the process.
+	
+	         M:\MAILDATA >debug glb\master.tmp
+	         -d193,193
+	         15BB:0190          71                                        q
+	         -e193
+	         15BB:0193  71.61
+	         -w
+	         Writing 000B0 bytes
+	         -q
+	
+	  After you type d193,193 to display only offset 193 as shown above, you will
+	  get a HEX value at 193; in this case, it is 71. If the first digit (7 in this
+	  case) is odd (1,3,5,7,9,B,D,F), you need to subtract HEX 10 from the full
+	  number (71 in this case) to get a replacement value (in this case HEX 61).
+	  The calculator that comes with Microsoft Windows will help if you switch it
+	  to the scientific view and then select Hex. Then you need to replace the HEX
+	  value at 193 with the calculated value using the -e (edit) command as shown
+	  above.
+	
+	  The -w (write) command following the -e (edit) command updates the MASTER.TMP
+	  file with the change. Another -d (display) command can be used to verify the
+	  correct change. The -q (quit) command is used to quit debug.
+	
+	3. Divide the size of the NETWORK.GLB file by 122 to determine how many records
+	  the NETWORK.GLB file contains. For example, a 5,490 byte NETWORK.GLB file
+	  contains 45 records.
+	
+	4. Use debug on the NETWORK.TMP file to look for both MSMAIL and the MAC Proxy
+	  Network name in the column displayed on the right of the debug screen.
+	
+	  Use d (display) along with the record addresses in the Delete Bit column in
+	  the table below at each debug prompt (-) until you find a record containing
+	  either MSMAIL or the MAC Proxy Network name (for example, -d100, -d17A,
+	  -d1F4, -d26E, ..., etc.). The name you are looking for will begin in the
+	  third position displayed in the right section of the debug screen display.
+	
+	  A sample debug screen is given in step 5 below.
+	
+	   122 bytes      00=Deleted
+	   per record     01=Active
+	
+	   Record #       Delete Bit   Type   Name     XTN     MBG
+	  -----------------------------------------------------------
+	    1             100          101     102     10D     121
+	    2             17A          17B     17C     187     19B
+	    3             1F4          1F5     1F6     201     215
+	    4             26E          26F     270     27B     28F
+	    5             2E8          2E9     2EA     2F5     309
+	    6             362          363     364     36F     383
+	    7             3DC          3DD     3DE     3E9     3FD
+	    8             456          457     458     463     477
+	    9             4D0          4D1     4D2     4DD     4F1
+	   10             54A          54B     54C     557     56B
+	   11             5C4          5C5     5C6     5D1     5E5
+	   12             63E          63F     640     64B     65F
+	   13             6B8          6B9     6BA     6C5     6D9
+	   14             732          733     734     73F     753
+	   15             7AC          7AD     7AE     7B9     7CD
+	   16             826          827     828     833     847
+	   17             8A0          8A1     8A2     8AD     8C1
+	   18             91A          91B     91C     927     93B
+	   19             994          995     996     9A1     9B5
+	   20             A0E          A0F     A10     A1B     A2F
+	   21             A88          A89     A8A     A95     AA9
+	   22             B02          B03     B04     B0F     B23
+	   23             B7C          B7D     B7E     B89     B9D
+	   24             BF6          BF7     BF8     C03     C17
+	   25             C70          C71     C72     C7D     C91
+	   26             CEA          CEB     CEC     CF7     D0B
+	   27             D64          D65     D66     D71     D85
+	   28             DDE          DDF     DE0     DEB     DFF
+	   29             E58          E59     E5A     E65     E79
+	   30             ED2          ED3     ED4     EDF     EF3
+	   31             F4C          F4D     F4E     F59     F6D
+	   32             FC6          FC7     FC8     FD3     FE7
+	   33             1040        1041    1042    104D    1061
+	   34             10BA        10BB    10BC    10C7    10DB
+	   35             1134        1135    1136    1141    1155
+	   36             11AE        11AF    11B0    11BB    11CF
+	   37             1228        1229    122A    1235    1249
+	   38             12A2        12A3    12A4    12AF    12C3
+	   39             131C        131D    131E    1329    133D
+	   40             1396        1397    1398    13A3    13B7
+	   41             1410        1411    1412    141D    1431
+	   42             148A        148B    148C    1497    14AB
+	   43             1504        1505    1506    1511    1525
+	   44             157E        157F    1580    158B    159F
+	   45             15F8        15F9    15FA    1605    1619
+	
+	  If you find the Proxy name first, write down the record number for use in step
+	  7, and continue until you find the MSMAIL record.
+	
+	5. Once you find MSMAIL, look for 01 10 4D 53 4D 41 49 4C in the middle section
+	  of the display. If the first displayed byte is 01 and the second is 10, you
+	  have one of the two records you are looking for. 01 indicates an active
+	  record, and 10 indicates an MSMAIL Connection type record. If the first byte
+	  is 00, then you are looking at a previously deleted record. This could
+	  indicate that the record was cleanly removed already or that there is still
+	  an active MSMAIL Connection type record you have not yet found.
+	
+	   NETWORK.GLB
+	
+	           01 10 .......                           ..MSMAIL
+	   Active /     \ MSMAIL Type Record
+	
+	            00 10 .......                          ..MSMAIL
+	   Deleted /     \ MSMAIL Type Record
+	
+	  If the record is Active (01), it needs to be changed to Deleted (00). To
+	  change the 01 to 00. You will need to use a -e### (e for Edit) command with
+	  the same address you just used with the -d### command.
+	
+	  Below is an example with record 12 of a sample NETWORK.TMP file:
+	
+	  -d63e
+	  15B7:0630                                           01 10               ..
+	  15B7:0640 4D 53 4D 41 49 4C 00 00-00 00 00 00 00 00 00 00 MSMAIL..........
+	  15B7:0650 00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 30 ...............0
+	  15B7:0660 30 30 30 30 30 32 45 00-00 00 00 00 00 00 00 00 000002E.........
+	  15B7:0670 00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00 ................
+	  15B7:0680 00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00 ................
+	  15B7:0690 00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00 ................
+	  15B7:06A0 00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00 ................
+	  15B7:06B0 00 00 00 00 00 00 00 00-65 74 65 20 61 20       ........ete a
+	  -e63e
+	  15B7:063E  01.00
+	  -w
+	  Writing 005B8 bytes
+	
+	  The -w (write) command following the -e (edit) command updates the NETWORK.TMP
+	  file with the change. Another -d (display) command can be used to verify the
+	  correct change (notice the first byte is now 00). Use the -q (quit) command
+	  to quit debug.
+	
+	  -d63e
+	  15B7:0630                                           00 10               ..
+	  15B7:0640 4D 53 4D 41 49 4C 00 00-00 00 00 00 00 00 00 00 MSMAIL..........
+	  15B7:0650 00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 30 ...............0
+	  15B7:0660 30 30 30 30 30 32 45 00-00 00 00 00 00 00 00 00 000002E.........
+	  15B7:0670 00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00 ................
+	  15B7:0680 00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00 ................
+	  15B7:0690 00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00 ................
+	  15B7:06A0 00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00 ................
+	  15B7:06B0 00 00 00 00 00 00 00 00-65 74 65 20 61 20       ........ete a
+	  -q
+	
+	6. Notice the eight digit hex ID following the MSMAIL name (in this case
+	  0000002E). This corresponds with a 0000002E.KEY and 0000002E.MBG file used as
+	  the outgoing queue for any mail sent from the PO using the Native Address
+	  format for the Macintosh servers. The KEY and MBG with matching file names
+	  need to be deleted.
+	
+	7. The NETWORK.TMP file needs any active PROXYNET records marked as deleted.
+	  Once you find the PROXYNET Name look for 01 64 in the middle section of the
+	  display. 01 indicates an active record, and 64 indicates a FFAPI Gateway type
+	  record.
+	
+	   NETWORK.GLB
+	
+	           01 64 .......                           ..PROXYNET
+	   Active /     \ FFAPI Type Record
+	
+	            00 64 .......                          ..PROXYNET
+	   Deleted /     \ MSMAIL Type Record
+	
+	  If the record is Active (01), it needs changed to Deleted (00).
+	
+	8. Notice the eight digit hex ID following the PROXYNET name. This corresponds
+	  with a <hex_id>.XTN file that will need deleted if it exists.
+	
+	  BEFORE deleting the XTN, run Debug on it, and enter a -d10C command. The first
+	  eight characters on the right will correspond with a new hex ID that matches
+	  a KEY and MBG file used as the outgoing queue for mail sent to the Macintosh
+	  server using a ProxyNet/ProxyPO/UserID type address. The matching KEY and MBG
+	  files need to be deleted.
+	
+	  In addition, there may also be USR and TPL of INF files with the same hex ID
+	  as the KEY and MBG files. If they exist, they should be deleted.
+	
+	9. If \MAILDATA\NME\MSMAIL.NME and \MAILDATAD\GLB\MSMAIL.GLB files exist, delete
+	  them. They make up the a Native format address list.
+	
+	10. If a MACGATE directory exists, remove it and all files in it.
+	
+	11. Make sure every user is signed out of Mail and that no Mail processes are
+	  running.
+	
+	12. Copy the two modified *.TMP files over the *.GLB ones.
+	
+	The Connection 3.2 Gateway is now fully removed. Make sure everything else works.
+	If not, immediately replace the two files from the *.BAK copies.
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMailSearch kbZNotKeyword3 kbMailConn320
+	Version           : :3.2
+	
+	=============================================================================
+	

@@ -1,0 +1,124 @@
+---
+layout: page
+title: "Q243751: HOWTO: Add Command Handlers for MRU Menu Items in MFC App"
+permalink: kb/243/Q243751/
+---
+
+## Q243751: HOWTO: Add Command Handlers for MRU Menu Items in MFC App
+
+	Article: Q243751
+	Product(s): Microsoft C Compiler
+	Version(s): 5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbMenu kbMFC KbUIDesign kbVC500 kbVC600 kbDSupport kbGrpDSMFCATL
+	Last Modified: 12-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The Microsoft Foundation Classes (MFC), included with:
+	   - Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+	   - Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+	   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+	   - Microsoft Visual C++.NET (2002) 
+	-------------------------------------------------------------------------------
+	
+	NOTE: Microsoft Visual C++ NET (2002) supported both the managed code model that is provided by the .NET Framework and the unmanaged native Windows code model. The information in this article applies to unmanaged Visual C++ code only.
+	
+	SUMMARY
+	=======
+	
+	AppWizard generated Microsoft Foundation Class (MFC) SDI/MDI applications (with
+	doc/view architecture support) have a Recent File menu item under the File menu
+	with ID_FILE_MRU_FILE1 as control ID. MFC framework replaces this menu item with
+	the names of the files the you most recently opened. It replaces the single menu
+	item ID_FILE_MRU_FILE1 with a sequence of menu items ID_FILE_MRU_FILE1,
+	ID_FILE_MRU_FILE2 and so on for as many file names there are in the list. MRU
+	support is enabled for an application automatically by calling
+	LoadStdProfileSettings in InitInstance method of application class and passing
+	the number of recent files you want to support as a parameter.
+	
+	CWinApp has a command handler, OnOpenRecentFile, for IDs ID_FILE_MRU_FILE1 to
+	ID_FILE_MRU_FILE16. When you select one of the MRU menu items, control passes to
+	CWinApp::OnOpenRecentFile, which tries to open the file by calling
+	OpenDocumentFile with the name of the document.
+	
+	You might want to override this behavior in order to have your own processing for
+	these menu items or to support more than 16 menu items. You can do this by
+	adding command handlers for ID_FILE_MRU_FILE1 to ID_FILE_MRU_FILEn in your
+	application class. ClassWizard lets you add handler for the first MRU menu item
+	only. You would have to add handlers for the remaining MRU menu items manually
+	or have the same command handler for all MRU menu items by using
+	ON_COMMAND_RANGE macro.
+	
+	MORE INFORMATION
+	================
+	
+	Following is the sample code for adding the command range handler for 20 MRU
+	file menu items. If you want a different handler for each MRU menu item, use
+	ON_COMMAND message map macro instead of ON_COMMAND_RANGE. If you want to have a
+	look at the way CWinApp handles it, look at Appcore.cpp (has message map macro)
+	and Appui.cpp (has handler defined) in the MFC/SRC directory.
+	
+	1. Add the following ID definitions for menu items after ID_FILE_MRU_FILE16 at
+	  the beginning of the AppClass file:
+	
+	  #define ID_FILE_MRU_FILE17 ID_FILE_MRU_FILE16 + 1
+	  #define ID_FILE_MRU_FILE18 ID_FILE_MRU_FILE17 + 1
+	  #define ID_FILE_MRU_FILE19 ID_FILE_MRU_FILE18 + 1
+	  #define ID_FILE_MRU_FILE20 ID_FILE_MRU_FILE19 + 1
+	
+	2. Add an ON_COMMAND_RANGE macro in your application's message map for
+	  ID_FILE_MRU_FILE1 to ID_FILE_MRU_FILE20 menu items.
+	
+	  ON_COMMAND_RANGE(ID_FILE_MRU_FILE1, ID_FILE_MRU_FILE20, MyMRUFileHandler)
+	
+	3. Add MyMRUFileHandler member function to your application class and add your
+	  code to that function. Here is an example.
+	
+	  #include <afxadv.h> //Has CRecentFileList class definition.
+	
+	  void CMRUApp::MyMRUFileHandler(UINT i)
+	  {
+	      ASSERT_VALID(this);
+	      ASSERT(m_pRecentFileList != NULL);
+	
+	      ASSERT(i >= ID_FILE_MRU_FILE1);
+	      ASSERT(i < ID_FILE_MRU_FILE1 + (UINT)m_pRecentFileList->GetSize());
+	
+	      CString strName, strCurDir, strMessage;
+	      int nIndex = i - ID_FILE_MRU_FILE1;
+	      ASSERT((*m_pRecentFileList)[nIndex].GetLength() != 0);
+	
+	     strName.Format("MRU: open file (%d) '%s'.\n", (nIndex) + 1,(LPCTSTR)(*m_pRecentFileList)[nIndex]);
+	
+	     if (OpenDocumentFile((*m_pRecentFileList)[nIndex]) == NULL)
+	  	m_pRecentFileList->Remove(nIndex);
+	     AfxMessageBox(strName);
+	  }
+	
+	REFERENCES
+	==========
+	
+	For more information look up the following in the Microsoft Developer's Network
+	(MSDN):
+	
+	- ON_COMMAND macros
+	- ON_COMMAND_RANGE macros
+	- AppCore.cpp files in MFC source directory
+	- AppUI.cpp files in MFC source directory
+	
+	(c) Microsoft Corporation 10/11/1999, All Rights Reserved.
+	Contributions by Sreedhar Pelluru, Microsoft Corporation
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbMenu kbMFC KbUIDesign kbVC500 kbVC600 kbDSupport kbGrpDSMFCATL 
+	Technology        : kbAudDeveloper kbMFC
+	Version           : :5.0,6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

@@ -1,0 +1,102 @@
+---
+layout: page
+title: "Q191959: FIX: Filer Cannot Find File in Read-Only or Hidden Folder"
+permalink: kb/191/Q191959/
+---
+
+## Q191959: FIX: Filer Cannot Find File in Read-Only or Hidden Folder
+
+	Article: Q191959
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 12-AUG-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Filer cannot search for and find a file if the file is in a directory where the
+	directory has read only or the hidden attribute.
+	
+	RESOLUTION
+	==========
+	
+	Make sure that the read only or hidden attribute is removed from the directory.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article. This bug has been corrected in Visual FoxPro, 6.0.
+	
+	MORE INFORMATION
+	================
+	
+	Filer is an ActiveX control component that provides a file and text search
+	engine. After the Filer.dll file is downloaded and is used to search for a file,
+	sometimes the search fails.
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Download the Filer.zip file from the following Microsoft Web site:
+	
+	  http://www.microsoft.com/vfoxpro/techmat/whitepapers/filer.htm
+	
+	2. Unzip the Filer.zip file and extract the files. You should see the following
+	  files:
+	
+	  Msvcrt.dll
+	  Filer.scx
+	  Filer.sct
+	  Filer.DLL
+	  Filer.ico
+	  Readme.txt
+	  Filer.htm
+	
+	3. Register the Filer.dll file using the following syntax:
+	
+	        REGSVR32 C:\VFP\Filer.dll
+	
+	4. Open Explorer and right-click the Visual FoxPro directory. In the Visual
+	  FoxPro properties dialog box, select the Properties tab and change the
+	  directory attribute to READ-ONLY.
+	
+	5. Run the Filer.scx form.
+	
+	6. In the File Finder dialog box, type the following information in the
+	  following fields:
+	
+	     Named: VFP.EXE
+	     Look In: c:\ 
+	
+	7. Click the Find Now button.
+	
+	After a few seconds, no results are returned in the Search result list box.
+	
+	REFERENCES
+	==========
+	
+	For additional information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q163804 SAMPLE: Filer.exe Contains Filer.dll for Visual FoxPro 5.0
+	
+	Additional query words: kbVFp600fix kbVFp500abug kbMiscTools kbXBase
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP500a
+	Version           : WINDOWS:3.0,3.0b,5.0,5.0a
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

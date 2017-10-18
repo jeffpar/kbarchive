@@ -1,0 +1,103 @@
+---
+layout: page
+title: "Q244925: Csrss.exe Stops Responding with a Stop 0xc000021A Error Message"
+permalink: kb/244/Q244925/
+---
+
+## Q244925: Csrss.exe Stops Responding with a Stop 0xc000021A Error Message
+
+	Article: Q244925
+	Product(s): Microsoft Windows NT
+	Version(s): winnt:4.0,4.0 SP4,4.0 SP5,4.0 SP6
+	Operating System(s): 
+	Keyword(s): kbenv kberrmsg kbWinNT400PreSP7Fixkbfixlist
+	Last Modified: 08-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server versions 4.0, 4.0 SP4, 4.0 SP5, 4.0 SP6 
+	- Microsoft Windows NT Server, Enterprise Edition versions 4.0, 4.0 SP4, 4.0 SP5, 4.0 SP6 
+	- Microsoft Windows NT Workstation versions 4.0, 4.0 SP4, 4.0 SP5, 4.0 SP6 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you receive an access violation in the Csrss.exe file, your computer may
+	generate a "stop 0xc000021a" error message (bugcheck). If you perform a user
+	dump, it displays the following register contents and the thread call stack at
+	the time of failure:
+	
+	> r
+	EAX=00000000 EBX=00297848 ECX=f000ff47 EDX=000000b0 ESI=00285ac8 EDI=00285ac8
+	EIP=5ffb5d04 ESP=0062feb8 EBP=0062fef8 EFL=00013246
+	CS=001b DS=0023 ES=0023 SS=0023 FS=0038 GS=0000
+	
+	> kb
+	FramePtr RetAddr Param1 Param2 Param3 Function Name
+	0062feb8 5ffc0f9a 00000000 00285ac8 00000cec WINSRV!AddProcessToList+0x24
+	0062fef8 5ff927a4 0062ff14 0062ffd0 00000005 WINSRV!SrvAllocConsole+0x18a
+	0062fff4 00000000 00000088 00000000 00000000 CSRSRV!CsrApiRequestThread+0x5a5
+	
+	CAUSE
+	=====
+	
+	This problem can occur under low memory conditions. When this occurs, creation
+	of the console window can fail, and the "FreeConsoleHandle" call is made without
+	locking the console handle table.
+	
+	RESOLUTION
+	==========
+	
+	A supported fix is now available from Microsoft, but it is only intended to
+	correct the problem described in this article and should be applied only to
+	systems experiencing this specific problem.
+	
+	To resolve this problem, contact Microsoft Product Support Services to obtain the
+	fix. For a complete list of Microsoft Product Support Services phone numbers and
+	information on support costs, please go to the following address on the World
+	Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	NOTE: In special cases, charges that are normally incurred for support calls may
+	be canceled, if a Microsoft Support Professional determines that a specific
+	update will resolve your problem. Normal support costs will apply to additional
+	support questions and issues that do not qualify for the specific update in
+	question.
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	  Date      Time                 Size      File name     Platform
+	  -------------------------------------------------------------
+	10/25/1999   4:14 pm              175,376   Winsrv.dll     x86
+	10/25/1999   4:13 pm              314,128   Winsrv.dll     Alpha
+	10/18/1999   4:41 pm            1,250,896   Win32k.sys     x86
+	10/18/1999   4:39 pm            2,049,904   Win32k.sys     Alpha
+	10/18/1999   6:54 pm              335,120   User32.dll     x86
+	10/18/1999   6:52 pm              577,296   User32.dll     Alpha
+	10/18/1999   6:53 pm              166,160   Gdi32.dll      x86
+	10/18/1999   6:52 pm              307,984   Gdi32.dll      Alpha
+	
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Windows NT 4.0.
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbenv kberrmsg kbWinNT400PreSP7Fix kbfixlist
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTW400sp5 kbWinNTW400sp4 kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400sp6 kbWinNTSEnt400sp5 kbWinNTSEnt400sp4 kbWinNTSEnt400 kbWinNTS400sp6 kbWinNTS400sp5 kbWinNTS400sp4 kbWinNTS400search kbWinNTS400 kbWinNTW400sp6
+	Version           : winnt:4.0,4.0 SP4,4.0 SP5,4.0 SP6
+	Hardware          : ALPHA x86
+	Issue type        : kbprb
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

@@ -1,0 +1,106 @@
+---
+layout: page
+title: "Q187889: WD97: Sample Macros to Turn a True or False Property On and Off"
+permalink: kb/187/Q187889/
+---
+
+## Q187889: WD97: Sample Macros to Turn a True or False Property On and Off
+
+	Article: Q187889
+	Product(s): Word 97 for Windows
+	Version(s): WINDOWS:97
+	Operating System(s): 
+	Keyword(s): kbdta kbdtacode kbmacroexample word8 kbwordvba word97
+	Last Modified: 13-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	
+	SUMMARY
+	=======
+	
+	This article demonstrates two ways to turn a property on or off, using Microsoft
+	Visual Basic for Applications macros.
+	
+	The macros in this article turn text boundaries on or off in a Microsoft Word
+	document while you are in page layout view.
+	
+	NOTE: To locate the Text Boundaries check box, click Options on the Tools menu,
+	and then click the View tab.
+	
+	MORE INFORMATION
+	================
+	
+	Microsoft provides programming examples for illustration only, without warranty
+	either expressed or implied, including, but not limited to, the implied
+	warranties of merchantability and/or fitness for a particular purpose. This
+	article assumes that you are familiar with the programming language being
+	demonstrated and the tools used to create and debug procedures. Microsoft
+	support professionals can help explain the functionality of a particular
+	procedure, but they will not modify these examples to provide added
+	functionality or construct procedures to meet your specific needs. If you have
+	limited programming experience, you may want to contact a Microsoft Certified
+	Partner or the Microsoft fee-based consulting line at (800) 936-5200. For more
+	information about Microsoft Certified Partners, please visit the following
+	Microsoft Web site:
+	
+	  http://www.microsoft.com/partner/referral/
+	
+	For more information about the support options that are available and about how
+	to contact Microsoft, visit the following Microsoft Web site:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	To turn the Text Boundaries property on and off, use either of the following
+	macros.
+	
+	NOTE: These methods also work well with other properties in Visual Basic that
+	return a value of True or False.
+	
+	Method 1: Using the Abs Function
+	--------------------------------
+	
+	This method uses the Abs function, which specifies the absolute value of a
+	number, where True equals -1 and False equals 0 (zero):
+	
+	     Sub ToggleTextBoundaries()
+	        n = ActiveWindow.View.ShowTextBoundaries
+	        ActiveWindow.View.ShowTextBoundaries = _
+	        Abs(ActiveWindow.View.ShowTextBoundaries = -n)
+	     End Sub
+	
+	Method 2: Using If Then...Else Statement
+	----------------------------------------
+	
+	This method uses the If Then...Else statement:
+	
+	     Sub ToggleAnyTrueFalseItem
+	        If ActiveWindow.View.ShowTextBoundaries = True Then
+	           ActiveWindow.View.ShowTextBoundaries = False
+	        Else
+	           ActiveWindow.View.ShowTextBoundaries = True
+	        End If
+	     End Sub
+	
+	REFERENCES
+	==========
+	
+	For more information about getting help with Visual Basic for Applications,
+	please see the following article in the Microsoft Knowledge Base:
+	
+	  Q163435 VBA: Programming Resources for Visual Basic for Applications
+	
+	Additional query words: wordcon vba toggle
+	
+	======================================================================
+	Keywords          : kbdta kbdtacode kbmacroexample word8 kbwordvba word97 
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : WINDOWS:97
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

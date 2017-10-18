@@ -1,0 +1,224 @@
+---
+layout: page
+title: "Q216231: FIX: VB6 App Setup Errors While Copying Files"
+permalink: kb/216/Q216231/
+---
+
+## Q216231: FIX: VB6 App Setup Errors While Copying Files
+
+	Article: Q216231
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 6.0
+	Operating System(s): 
+	Keyword(s): kbwizard kbtophit kbAppSetup kbVBp600bug kbOSWin95 kbOSWin98 kbGrpDSVB kbOSWinME
+	Last Modified: 04-JAN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you run a Setup that was created using the Package and Deployment Wizard
+	(PDW), you receive one of the following error messages:
+	
+	  Cannot start main setup program! (CreateProcess() returned error code
+	  0x000000C1H)
+	
+	  VB6stkit.dll is not a valid Windows NT image
+	
+	  The system could not locate the file '<Temp
+	  Folder>\Msftqws.pdw\Vb6stkit.dll'. Would you like to browse for the file
+	  yourself?
+	
+	  The system could not locate the file '<Temp
+	  Folder>\Windows\Temp\Msftqws.pdw\St6unst.exe'. Would you like to browse
+	  for the file yourself?
+	
+	where <Temp Folder> is the Windows\Temp folder on Windows 95, Windows 98,
+	or Windows Me or the folder specified by the TEMP environment variable on
+	Windows NT.
+	
+	
+	CAUSE
+	=====
+	
+	If the symptom occurs on all target computers where you run Setup, the cause of
+	the problem is most likely one of the following:
+	
+	- A damaged diskette.
+	
+	- A damaged setup file.
+	
+	If the symptom only occurs on some target computers, the cause may be one of the
+	following:
+	
+	- Left-over files from a previous installation attempt.
+	
+	- A machine-specific issue.
+	
+	RESOLUTION
+	==========
+	
+	Test for Damaged Diskette
+	-------------------------
+	
+	Try deploying the Setup package to a different set of diskettes, or use a disk
+	scanning utility, such as ScanDisk, to verify the integrity of the current set
+	of diskettes.
+	
+	NOTE: When using ScanDisk, select the Thorough option. The Standard option does
+	not detect all disk errors.
+	
+	Test for Damaged Files
+	----------------------
+	
+	1. Create a test folder on the hard drive of the target computer.
+	
+	2. Copy the files from the Setup diskettes to the test folder:
+	
+	  a. If you receive error messages indicating the copy failed, the diskette may
+	     be damaged (see the "Test for Damaged Diskettes" section of this article),
+	     or there may be a problem with the floppy disk drive.
+	
+	  b. If the copy succeeds, continue with the next step.
+	
+	3. Run Setup.exe from the test folder on the hard drive.
+	
+	  a. If the Setup succeeds when run from the hard drive, this indicates one of
+	     the diskettes may be damaged (see the "Test for Damaged Diskettes" section
+	     of this article), or there may be a problem with the floppy disk drive.
+	
+	  b. If the Setup fails with one of the error messages listed in the "Symptoms"
+	     section of this article, continue with the next step
+	
+	4. If the Setup succeeds when run from the hard drive, this indicates one of the
+	  diskettes may be damaged (see the "Test for Damaged Diskettes" section of
+	  this article), or there may be a problem with the floppy disk drive.
+	
+	5. If the Setup fails with one of the error messages listed in the SYMPTOMS
+	  article, continue with the next step.
+	
+	6. To determine whether a .cab file is corrupt, manually extract the files from
+	  the .cab file(s). To extract the contents of a cabinet file, you must use the
+	  Extract utility.
+	
+	  Extract.exe can be found in your Windows or Winnt folder or on your Windows
+	  95, Windows 98, Windows NT, or Windows 2000 installation CD or diskettes.
+	
+	  Extract.exe is a command-line utility. Therefore, it is used from an MS-DOS
+	  command prompt. To extract the files within a cabinet file, be sure the
+	  Extract.exe utility is in the MS-DOS path, or copy the Extract utility to the
+	  same folder as the cabinet file.
+	
+	  From the MS-DOS command prompt, you can run the following command to extract
+	  all of the files in a .cab file into the current directory:
+	
+	  extract.exe /e /a <File Name>.cab
+	
+	  where <File Name> is the name of your cabinet file. If there are
+	  multiple .cab files in the setup, <File Name> should be the first .cab
+	  in the series. If all the files extract successfully, the .cab file is not
+	  corrupted. However, the .cab file is corrupted if you receive the following
+	  error message:
+	
+	  ERROR: Cabinet file <File Name>.cab is corrupted
+	
+	  where <File Name> is the name of the .cab file you just extracted.
+	
+	  NOTE: In some cases, a .cab file may be damaged even though you are able to
+	  successfully extract the files from it. Try re-running the PDW or running the
+	  .bat file in the \Support folder to recreate the .cab file(s). After
+	  recreating the cabinet file(s), verify that they are not corrupt by manually
+	  extracting the files again, and then retrying the installation.
+	
+	  For additional information about rebuilding cabinet files by running a .bat
+	  file, please see the following article in the Microsoft Knowledge Base:
+	
+	  Q191212 HOWTO: Modify and Rebuild .CAB Files Built with PDW
+	
+	  For more information on using the Extract.exe utility, you can type the
+	  following command at an MS-DOS command prompt:
+	
+	  extract.exe /?
+	
+	  For even more information on Extract.exe, please see the ActiveX SDK
+	  documentation as referred to in the REFERENCES section of this article.
+	
+	Test for Setup Files Left on System
+	-----------------------------------
+	
+	If the symptom occurred after a previous installation attempt of the same
+	application failed (for example, the computer stopped responding during setup),
+	follow these steps:
+	
+	1. On the target computer, search for a copy of your application's .cab file(s)
+	  in the Windows folder (or Winnt folder on NT or Windows 2000). If found,
+	  delete the .cab file(s).
+	
+	  Setup places the .cab file(s) in the Windows or Winnt folder and removes them
+	  at the end of a successful Setup. However, if the installation program exits
+	  abnormally, the .cab files may be left on the system.
+	
+	2. In the Windows\Temp folder (or the folder specified by the TEMP environment
+	  variable on NT or Windows 2000), look for a subfolder named Msftqws.pdw. If
+	  found, delete the subfolder.
+	
+	3. On the target computer, locate the following files. If any of these files
+	  have a size of 0 bytes, delete the file:
+	
+	  \Windows\System\Vb6stkit.dll (or \Winnt\System32\Vb6stkit.dll)
+	
+	  \Windows\St6unst.exe (or \Winnt\St6unst.exe)
+	
+	4. Run Setup again.
+	
+	Machine-Specific Problem
+	------------------------
+	
+	If the troubleshooting suggestions in this article do not resolve the problem,
+	there may be something specific about the configuration of the target computer
+	that is causing the error.
+	
+	Please contact Microsoft Technical Support for further assistance.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article.
+	
+	This bug was corrected in Visual Studio 6.0 Service Pack 3.
+	
+	For more information about Visual Studio service packs, please see the following
+	articles in the Microsoft Knowledge Base:
+	
+	  Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+	
+	  Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+	
+	REFERENCES
+	==========
+	
+	For more information about using Extract.exe, please see the documentation found
+	in the ActiveX Software Development Kit (SDK). The ActiveX SDK is available for
+	download from the following location:
+	
+	  http://www.microsoft.c om/workshop/misc/activexsdk/default.asp
+	
+	Additional query words: find reboot kbfix
+	
+	======================================================================
+	Keywords          : kbwizard kbtophit kbAppSetup kbVBp600bug kbOSWin95 kbOSWin98 kbGrpDSVB kbOSWinME 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600
+	Version           : :6.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

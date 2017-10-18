@@ -1,0 +1,154 @@
+---
+layout: page
+title: "Q174301: HOWTO: Display Text on a Dithered Background in a TextBox"
+permalink: kb/174/Q174301/
+---
+
+## Q174301: HOWTO: Display Text on a Dithered Background in a TextBox
+
+	Article: Q174301
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbGrpDSVB
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+	- Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+	- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	When a dithered color is selected as the background of a TextBox, the background
+	around the text is displayed as a different, solid color when the display is set
+	for 256 colors or less. To work around this limitation, you must hook the
+	WM_CTLCOLOREDIT message and set the text background color to TRANSPARENT. This
+	is not a trivial alternative, and using a solid background color is recommended
+	if at all possible.
+	
+	MORE INFORMATION
+	================
+	
+	WARNING: ANY USE BY YOU OF THE SAMPLE CODE PROVIDED IN THIS ARTICLE IS AT YOUR
+	OWN RISK. Microsoft provides this sample code "as is" without warranty of any
+	kind, either express or implied, including but not limited to the implied
+	warranties of merchantability and/or fitness for a particular purpose.
+	
+	WARNING: Failure to unhook a window before its imminent destruction will result
+	in application errors, Invalid Page Faults, and data loss. This is due to the
+	fact that the new WindowProc function being pointed to no longer exists, but the
+	window has not been notified of the change. Always unhook the sub-classed window
+	upon unloading the sub-classed form or exiting the application. This is
+	especially important while debugging an application that uses this technique
+	within the Microsoft Visual Basic 5.0 Development Environment. Pressing the END
+	button or selecting End from the Run menu without unhooking will cause an
+	Invalid Page Fault and close Microsoft Visual Basic.
+	
+	A TextBox control cannot draw text with a dithered background color, but it can
+	draw text with a transparent background color. If the background of the control
+	is dithered, this achieves the same visual effect. (Note the distinction between
+	the background of the text and the background of the control. It is simple to
+	get the control's background dithered; the problem is getting the text
+	background dithered as well.)
+	
+	From the SDK perspective, the answer is simple; handle the WM_CTLCOLOREDIT
+	message in the parent and call SetBkMode() to set the background mode to
+	TRANSPARENT. This is less simple in Visual Basic.
+	
+	The following application consists of a form with a single Textbox control and a
+	code module:
+	
+	1. Create a new Visual Basic "Standard EXE" project.
+	
+	2. Add a Textbox to Form1.
+	
+	3. Paste the following code into Form1's code module:
+	
+	        Private Sub Form_Load()
+	           gHW = Me.hwnd
+	           Text1.BackColor = &HC0E0FF
+	           Hook
+	        End Sub
+	
+	        Private Sub Form_Unload(Cancel As Integer)
+	           Unhook
+	        End Sub
+	
+	4. Add a module.
+	
+	5. Paste the following code into this module:
+	
+	        Declare Function CallWindowProc Lib "user32" Alias _
+	           "CallWindowProcA" (ByVal lpPrevWndFunc As Long, ByVal hwnd As _
+	           Long, ByVal Msg As Long, ByVal wParam As Long, ByVal lParam As _
+	           Long) As Long
+	
+	        Declare Function SetWindowLong Lib "user32" Alias "SetWindowLongA" _
+	           (ByVal hwnd As Long, ByVal nIndex As Long, _
+	           ByVal dwNewLong As Long) As Long
+	
+	        Declare Function SetBkMode Lib "gdi32" _
+	           (ByVal hdc As Long, ByVal nBkMode As Long) As Long
+	
+	        Public Const WM_CTLCOLOREDIT = &H133
+	        Public Const TRANSPARENT = 1
+	        Public Const GWL_WNDPROC = -4
+	
+	        Global lpPrevWndProc As Long
+	        Global gHW As Long
+	
+	        Public Sub Hook()
+	           lpPrevWndProc = SetWindowLong(gHW, GWL_WNDPROC, _
+	           AddressOf WindowProc)
+	        End Sub
+	
+	        Public Sub Unhook()
+	           Dim temp As Long
+	           temp = SetWindowLong(gHW, GWL_WNDPROC, lpPrevWndProc)
+	        End Sub
+	
+	        Function WindowProc(ByVal hw As Long, ByVal uMsg As _
+	           Long, ByVal wParam As Long, ByVal lParam As Long) As Long
+	           If uMsg = WM_CTLCOLOREDIT Then
+	              i = SetBkMode(wParam, TRANSPARENT)
+	           End If
+	           WindowProc = CallWindowProc(lpPrevWndProc, hw, uMsg, wParam, _
+	              lParam)
+	        End Function
+	
+	6. Save the project, and then run it.
+	
+	  RESULT: When the form is displayed, you will see a TextBox with a dithered
+	  background. Type into the TextBox and the dithered background is maintained.
+	
+	7. To terminate the application, use Alt-F4, the control box menu, or click the
+	  close button on the form. If you click the stop button in the Visual Basic
+	  Design environment, the Unload event is not triggered to unhook the window
+	  and an IPF will occur.
+	
+	REFERENCES
+	==========
+	
+	For additional information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q168795 : HOWTO: Hook Into a Window's Messages Using AddressOf
+	
+	Additional query words: kbVBp500 kbVBp600 kbVBp kbdsd kbDSupport kbControl
+	
+	======================================================================
+	Keywords          : kbGrpDSVB 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbZNotKeyword3
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

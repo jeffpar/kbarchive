@@ -1,0 +1,258 @@
+---
+layout: page
+title: "Q175440: XFOR: Protocol Authentication on Exchange Server"
+permalink: kb/175/Q175440/
+---
+
+## Q175440: XFOR: Protocol Authentication on Exchange Server
+
+	Article: Q175440
+	Product(s): Microsoft Exchange
+	Version(s): WinNT:5.0, 5.5
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 11-MAR-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 5.0, 5.5 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Microsoft Exchange Server versions 5.0 and 5.5 support a variety of
+	Internet-focused protocols, including POP3, HTTP, LDAP, and NNTP. This article
+	explains the different authentication forms for each protocol.
+	
+	POP3
+	
+	POP3 allows for multiple types of user authentication. These can be configured
+	using the Authentication Property Page on the POP3 object located in the
+	Exchange Server Administrator program under Protocols. Specifically, three types
+	of authentication can be used: Basic (Clear Text), Windows NT
+	Challenge/Response, and Secure Sockets Layer (SSL).
+	
+	Basic (Clear Text)
+	------------------
+	
+	This authentication method sends the username and the password in an unencrypted
+	format. It connects using port 110.
+	
+	NTLM (Windows NT Challenge/Response)
+	------------------------------------
+	
+	The Windows NT Challenge/Response (NTLM) authentication method is much more
+	secure because it uses a randomization algorithm and an encrypted password to
+	authenticate users.
+	
+	The NTLM protocol is described by the following process:
+	
+	1. The client sends an AUTH NTLM command to the server on TCP/IP Port 110.
+	
+	2. The server responds with a +(space) response to indicate the port will accept
+	  commands.
+	
+	3. A Negotiate message is sent to the server with some random information.
+	
+	4. The server responds by creating a unique challenge with the random
+	  information.
+	
+	5. The client encrypts the challenge with its password and sends the response to
+	  the server.
+	
+	6. The server then looks up the user's password and also encrypts the challenge
+	  sent to the client. If the encrypted data matches the client response, then a
+	  Successful Acknowledge is sent to the client. Otherwise an Access Denied is
+	  returned again to the client.
+	
+	Secure Sockets Layer
+	--------------------
+	
+	The Secure Sockets Layer (SSL) authentication method uses public/private key
+	technology to ensure privacy. The SSL protocol resides at the Open Systems
+	Interconnection (OSI) presentation layer and moves data from the application
+	layer to the TCP transport layer. It is responsible for authentication,
+	encryption, and verification of data integrity.
+	
+	The authentication function assures the data is being sent to the correct server
+	and that the server is secure. Encryption ensures that data cannot be read by
+	anyone other than the target server. Data integrity ensures the data has not
+	been corrupted or altered in transit. All client/server communication occurs on
+	an SSL-encrypted channel on port 995.
+	
+	SSL functions in the following manner:
+	
+	1. The client obtains the server certificate.
+	
+	  The client and server introduce themselves to each other with HELLO messages
+	  and exchange information containing the encryption method to use, session
+	  information, server certificate (containing the server's public key), and
+	  random data.
+	
+	2. The client verifies the server.
+	
+	  The client verifies the server certificate is from a certifying authority and
+	  then uses the certificate to send a message to authenticate the server (to
+	  verify it is who it claims to be). If the server does not pass the
+	  authentication, the client will typically inform the user the server is not
+	  who it claims to be.
+	
+	3. The client and server determine the encryption key to use for this session.
+	
+	  If the server replies back successfully, the client and server create a random
+	  secret key (referred to as the Master Key in the SSL specification) from the
+	  random data exchanged and the encryption method specified (such as RSA).
+	
+	4. The data is encrypted with the agreed-upon key.
+	
+	  All data sent over the SSL channel is encrypted with the secret key.
+	
+	ACTIVE SERVER PAGES (HTTP)
+	
+	Access to the Microsoft Exchange Server computer through the Internet is provided
+	by logging on with a secure connection as a validated user or as an anonymous
+	user. Secure sockets layer (SSL) must be enabled on the Microsoft Internet
+	Information Server computer.
+	
+	Using an Internet browser (such as Internet Explorer or Netscape), a user
+	accesses the logon page and logs on to a Microsoft Exchange Server computer.
+	
+	During the logon process, an authenticated and encrypted session is established
+	between the browser and the Microsoft Internet Information Server computer. To
+	gain access to the Microsoft Exchange Server computer, the user's Microsoft
+	Windows NT domain account password must be validated before permission is
+	granted to use the program and its data.
+	
+	Validated User
+	--------------
+	
+	The Active Server Component uses Microsoft Windows NT authentication to grant
+	access to users' mailboxes. To log on, users must enter their Microsoft Windows
+	NT account name, password, and mailbox name. After validation is successfully
+	completed, users have the same permissions in their mailbox as they have when
+	they log on to a computer directly connected to the network.
+	
+	Anonymous User
+	--------------
+	
+	An anonymous user is a non-validated Web user who is not recognized by the
+	Microsoft Exchange Server computer. Users can log on to a Microsoft Exchange
+	Server computer anonymously but are restricted to viewing and accessing only the
+	published public folders and address lists. The administrator can specify which
+	folders and address lists to publish using the Microsoft Exchange Server
+	Administrator program.
+	
+	LDAP
+	
+	The Lightweight Directory Access Protocol (LDAP) provides a standard protocol for
+	accessing and updating directory information in a client- server model. The LDAP
+	standard describes how applications can add, delete, and modify objects and
+	their attributes within a directory. Exchange Server 5.0 only supports read
+	access to a limited subset of the Exchange Server directory, primarily the
+	Recipients containers.
+	
+	LDAP allows for Simple Authentication, Windows NT Challenge/Response, and MCIS
+	Membership System. Exchange Server 5.0 only supports Simple Authentication. Each
+	authentication protocol has an additional option to use an SSL- encrypted
+	channel for authentication and all session traffic. There are two modes of
+	Simple Authentication, one where the client provides a password and the other
+	where no password is provided. When no password is required, it is referred to
+	as anonymous access.
+	
+	The Authentication Property Page allows the administrator to choose the forms of
+	authentication that clients are allowed to use.
+	
+	Basic (Clear Text)
+	------------------
+	
+	Enables authentication through an unencrypted user name and password.
+	
+	Windows NT Challenge/Response (Exchange Server 5.5)
+	---------------------------------------------------
+	
+	Enables authentication through Windows NT network security and an encrypted
+	password. Microsoft Exchange Server attempts to access the directory objects
+	using the Windows NT user account that the user is logged on as. For example, if
+	you are logged on as Domain\Drewc, with Windows NT Challenge/Response enabled,
+	Microsoft Exchange Server will check the directory object's access control list
+	(ACL) for permissions granted to Domain\Drewc.
+	
+	MCIS Membership System (Exchange Server 5.5)
+	--------------------------------------------
+	
+	Enables authentication through Windows NT network security and the Microsoft
+	Commercial Information Server (MCIS) Membership System.
+	
+	Secure Sockets Layer
+	--------------------
+	
+	Enables authentication and all client-server communication to occur through an
+	SSL-encrypted channel on port 636. SSL is a protocol that provides secure data
+	communication using data encryption and decryption.
+	
+	Anonymous Access
+	----------------
+	
+	The Anonymous property page allows the administrator to permit or deny anonymous
+	access. When anonymous access is allowed, no password is required by the LDAP
+	client to retrieve information. The available attributes for a client that has
+	not been authenticated are typically a subset of those for clients that have
+	been authenticated. The administrator can control the Directory attributes that
+	are made available using the Attributes property page on the DS Site
+	Configuration object.
+	
+	NNTP
+	
+	NNTP specifies a protocol for the distribution, retrieval, and posting of news
+	articles using a stream-based transmission. NNTP is designed so that the news
+	articles are stored in a database allowing subscribers to select only those
+	items they wish to read. Indexing, cross-referencing, and expiration of aged
+	messages are also provided.
+	
+	In order for an NNTP client to log on to the Microsoft Exchange Server computer,
+	one of the authentication methods that the client supports must be enabled on
+	the server. Specifically, three types of authentication can be used: Basic
+	(Clear Text), Windows NT Challenge/Response, and Secure Sockets Layer (SSL).
+	
+	Basic (Clear Text)
+	------------------
+	
+	Enables authentication through an unencrypted user name and password. Most NNTP
+	clients support this method.
+	
+	Windows NT Challenge/Response
+	-----------------------------
+	
+	Enable authentication through Windows NT network security and an encrypted
+	password. This method is supported by Microsoft Internet Mail and News version
+	3.0 and later. With Windows NT Challenge/Response and Internet Mail and News, it
+	is not possible to specify the name of the Microsoft Exchange Server mailbox or
+	custom recipient you are using for authentication. By default, Microsoft
+	Exchange Server attempts to access the mailbox associated with the Windows NT
+	user account that the user is logged on as. For example, if you are logged on as
+	Domain\Drewc, with Windows NT Challenge/Response enabled, Microsoft Exchange
+	Server attempts to use the mailbox or custom recipient for Drewc.
+	
+	Secure Sockets Layer
+	--------------------
+	
+	Enables authentication and all client-server communication to occur through an
+	SSL-encrypted channel on port 563. SSL is a protocol that provides secure data
+	communication using data encryption and decryption.
+	
+	MORE INFORMATION
+	================
+	
+	For information on how to enable SSL, refer to the Knowledge Base article,
+	
+	  Q175439 Enabling SSL for Exchange Server
+	======================================================================
+	Keywords          :  
+	Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+	Version           : WinNT:5.0, 5.5
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

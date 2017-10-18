@@ -1,0 +1,306 @@
+---
+layout: page
+title: "Q101537: Windows Sound System Uncompressed Files"
+permalink: kb/101/Q101537/
+---
+
+## Q101537: Windows Sound System Uncompressed Files
+
+	Article: Q101537
+	Product(s): Miscellaneous Windows Products
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 19-SEP-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows Sound System, version 1.0a 
+	-------------------------------------------------------------------------------
+	
+	The following is a list of the uncompressed files and directories
+	installed by Windows Sound System. This article assumes that Microsoft
+	Windows and Window Sound System are installed into their default
+	directories on drive C.
+	
+	Directory of C:\WINDOWS
+	
+	MCIPLAY  EXE      6080 02/17/93   1:00a
+	SND      HLP     41210 02/17/93   1:00a
+	SNDCNTRL DLL     71952 02/17/93   1:00a
+	SNDSCAPE HLP     24763 02/17/93   1:00a
+	SNDSCAPE SCR     21696 02/17/93   1:00a
+	SNDSYS   HLP     17684 02/17/93   1:00a
+	
+	Directory of C:\WINDOWS\SYSTEM
+	
+	MIDIMAP  CFG     17514 02/17/93   1:00a
+	MSACM    DRV     28704 02/17/93   1:00a
+	MSADPCM  ACM     22992 02/17/93   1:00a
+	SND      CPL     20112 02/17/93   1:00a
+	SNDSYS   DRV     32368 02/17/93   1:00a
+	SNDSYS   PAT      7188 02/17/93   1:00a
+	SNDSYSW  CPL      5312 02/17/93   1:00a
+	VSNDSYS  386     14869 02/17/93   1:00a
+	
+	Directory of C:\SNDSYS
+	
+	.            <DIR>     03-29-93   4:41p
+	..           <DIR>     03-29-93   4:41p
+	SOUNDS       <DIR>     03-29-93   4:42p
+	ICONS        <DIR>     03-29-93   4:42p
+	DEMO         <DIR>     03-29-93   4:42p
+	SETUP    EXE     65344 02-17-93   1:00a
+	WSETUP   EXE    205568 02-17-93   1:00a
+	SETUP    INF     11770 02-17-93   1:00a
+	WCOMMON  DLL     28352 02-17-93   1:00a
+	WHELP    TXT     27278 02-17-93   1:00a
+	SNDWAVE  DLL     66272 02-17-93   1:00a
+	SNDVOL   EXE     30112 02-17-93   1:00a
+	SNDREC   EXE     34176 02-17-93   1:00a
+	CONTROL  INI       954 02-17-93   1:00a
+	SNDFINDR EXE     39984 02-17-93   1:00a
+	MUSICBOX EXE     36576 02-17-93   1:00a
+	QRECORD  EXE    112720 02-17-93   1:00a
+	GAMECNFG EXE     23049 02-17-93   1:00a
+	GAMES    PIF       545 02-17-93   1:00a
+	MUSICBOX HLP     54414 02-17-93   1:00a
+	QRECORD  HLP    177731 02-17-93   1:00a
+	SNDFINDR HLP     58352 02-17-93   1:00a
+	SNDREC   HLP     34791 02-17-93   1:00a
+	GAMECNFG HLP     22115 02-17-93   1:00a
+	SNDVOL   HLP     46507 02-17-93   1:00a
+	WSSPSS   HLP     19825 02-17-93   1:00a
+	CHK16-44 WAV     94636 02-17-93   1:00a
+	CHK4-11  WAV      5860 02-17-93   1:00a
+	CHK8-11  WAV     11308 02-17-93   1:00a
+	PARTIAL  WAV      3860 02-17-93   1:00a
+	README   TXT     21613 02-17-93   1:00a
+	DEINSTAL TXT      7136 02-17-93   1:00a
+	NUMBERS  DCT    294478 02-17-93   1:00a
+	OTHER    DCT    314024 02-17-93   1:00a
+	MONEY    DCT    365070 02-17-93   1:00a
+	NON-US   DCT       180 02-17-93   1:00a
+	USER     DCT        12 02-17-93   1:00a
+	RDR      DLL     67072 02-17-93   1:00a
+	XLATOR   DLL     45056 02-17-93   1:00a
+	TTSM     DLL     53760 02-17-93   1:00a
+	XLRDR    DLL     41984 02-17-93   1:00a
+	XLRDR    HLP     67200 02-17-93   1:00a
+	DATES    DCT    234504 02-17-93   1:00a
+	VOICEPIL HLP    118865 02-17-93   1:00a
+	VOICEPIL EXE     93088 02-17-93   1:00a
+	DEFAULT  USR    214402 02-17-93   1:00a
+	VOICEPIL INI       561 02-17-93   1:00a
+	VLAYER   DLL     54943 02-17-93   1:00a
+	VCOLLECT DLL     43552 02-17-93   1:00a
+	VPHOOK   DLL      4503 02-17-93   1:00a
+	VRECOG   DLL    385280 02-17-93   1:00a
+	ALL      VCB    107906 02-17-93   1:00a
+	DEFAPP   VCB     83330 02-17-93   1:00a
+	ALDUS    VCB    112002 02-17-93   1:00a
+	LOTUS123 VCB    140674 02-17-93   1:00a
+	NDW      VCB    112002 02-17-93   1:00a
+	MICRGRFX VCB    116098 02-17-93   1:00a
+	MSEXCEL  VCB    124290 02-17-93   1:00a
+	MSMAIL   VCB     95618 02-17-93   1:00a
+	MSMONEY  VCB     99714 02-17-93   1:00a
+	POWERPNT VCB    112002 02-17-93   1:00a
+	MSPROJ   VCB    116098 02-17-93   1:00a
+	MSPUB    VCB     99714 02-17-93   1:00a
+	WINWORD  VCB    136578 02-17-93   1:00a
+	MSWORKS  VCB    136578 02-17-93   1:00a
+	FILEMGR  VCB    107906 02-17-93   1:00a
+	WRITE    VCB     99714 02-17-93   1:00a
+	WDPRFWIN VCB    304514 02-17-93   1:00a
+	      68 file(s)    5744120 bytes
+	
+	Directory of C:\SNDSYS\SOUNDS
+	
+	.            <DIR>     03-29-93   4:42p
+	..           <DIR>     03-29-93   4:42p
+	TRON120A WAV     10170 02-17-93   1:00a
+	TRON120B WAV     12466 02-17-93   1:00a
+	TRON133  WAV     57668 02-17-93   1:00a
+	TRON212  WAV     38564 02-17-93   1:00a
+	BIRD1    WAV     25486 02-17-93   1:00a
+	BIRD2    WAV     40896 02-17-93   1:00a
+	BIRD3    WAV     19586 02-17-93   1:00a
+	BIRD4    WAV     41870 02-17-93   1:00a
+	CHIMES1  WAV    127408 02-17-93   1:00a
+	CHIMES2  WAV    108962 02-17-93   1:00a
+	CHIMES3  WAV     82798 02-17-93   1:00a
+	CRICKETS WAV     30596 02-17-93   1:00a
+	DOGBARK  WAV      8014 02-17-93   1:00a
+	ELEPHANT WAV      8012 02-17-93   1:00a
+	GIBBON   WAV     30476 02-17-93   1:00a
+	MONKEY   WAV     13758 02-17-93   1:00a
+	NITETRAN WAV     47572 02-17-93   1:00a
+	OWL      WAV     10682 02-17-93   1:00a
+	PARROT   WAV      7956 02-17-93   1:00a
+	RACHET   WAV     20818 02-17-93   1:00a
+	SIREN    WAV     70128 02-17-93   1:00a
+	SNORING  WAV     18420 02-17-93   1:00a
+	THUNDER  WAV     15790 02-17-93   1:00a
+	TICKTOCK WAV     11004 02-17-93   1:00a
+	CLASIC30 RMI      8714 02-17-93   1:00a
+	POPJAZ30 RMI      8964 02-17-93   1:00a
+	009THEME WAV     30950 02-17-93   1:00a
+	010THEME WAV     35456 02-17-93   1:00a
+	070THEME WAV     58810 02-17-93   1:00a
+	254THEME WAV     24786 02-17-93   1:00a
+	AHHH     WAV      7988 02-17-93   1:00a
+	APPLAUSE WAV     30604 02-17-93   1:00a
+	BELL1    WAV     13696 02-17-93   1:00a
+	BELL2    WAV      9416 02-17-93   1:00a
+	CHARGE   WAV     10844 02-17-93   1:00a
+	CLAPPING WAV     19300 02-17-93   1:00a
+	CONST1   WAV     13960 02-17-93   1:00a
+	CONST2   WAV     39062 02-17-93   1:00a
+	CONST3   WAV     26770 02-17-93   1:00a
+	CONST4   WAV     13656 02-17-93   1:00a
+	DRUMROLL WAV     27760 02-17-93   1:00a
+	FACTTOOT WAV      9440 02-17-93   1:00a
+	GONG     WAV     24830 02-17-93   1:00a
+	HARP1    WAV     16494 02-17-93   1:00a
+	HARP2    WAV     22114 02-17-93   1:00a
+	LAUGH    WAV     13668 02-17-93   1:00a
+	OOOH     WAV      7978 02-17-93   1:00a
+	TRON227  WAV      5958 02-17-93   1:00a
+	TRON314  WAV     13550 02-17-93   1:00a
+	WAGNER   WAV     57844 02-17-93   1:00a
+	      52 file(s)    1411712 bytes
+	
+	Directory of C:\SNDSYS\ICONS
+	
+	.            <DIR>     03-29-93   4:42p
+	..           <DIR>     03-29-93   4:42p
+	BARCHART ICO       766 02-17-93   1:00a
+	BELL     ICO       766 02-17-93   1:00a
+	BIRD     ICO       766 02-17-93   1:00a
+	BLANK    ICO       766 02-17-93   1:00a
+	BOOK     ICO       766 02-17-93   1:00a
+	BOOKS    ICO       766 02-17-93   1:00a
+	CARDFILE ICO       766 02-17-93   1:00a
+	CD       ICO       766 02-17-93   1:00a
+	CDPLAYER ICO       766 02-17-93   1:00a
+	CHIMES   ICO       766 02-17-93   1:00a
+	CLOCK    ICO       766 02-17-93   1:00a
+	COMPUTER ICO       766 02-17-93   1:00a
+	DISK1    ICO       766 02-17-93   1:00a
+	DISK2    ICO       766 02-17-93   1:00a
+	EAR      ICO       766 02-17-93   1:00a
+	ERASE    ICO       766 02-17-93   1:00a
+	EXCLAM   ICO       766 02-17-93   1:00a
+	FILES    ICO       766 02-17-93   1:00a
+	FM       ICO       766 02-17-93   1:00a
+	FOLDER   ICO       766 02-17-93   1:00a
+	GRNLIGHT ICO       766 02-17-93   1:00a
+	HAPPY    ICO       766 02-17-93   1:00a
+	HEAD     ICO       766 02-17-93   1:00a
+	JUNGLE   ICO       766 02-17-93   1:00a
+	KBD      ICO       766 02-17-93   1:00a
+	KEY      ICO       766 02-17-93   1:00a
+	KEYBOARD ICO       766 02-17-93   1:00a
+	LETTER   ICO       766 02-17-93   1:00a
+	LINE     ICO       766 02-17-93   1:00a
+	LINECHRT ICO       766 02-17-93   1:00a
+	LOCK     ICO       766 02-17-93   1:00a
+	MAGNET   ICO       766 02-17-93   1:00a
+	MEETING  ICO       766 02-17-93   1:00a
+	MEMO     ICO       766 02-17-93   1:00a
+	METER    ICO       766 02-17-93   1:00a
+	MIC      ICO       766 02-17-93   1:00a
+	NIGHT    ICO       766 02-17-93   1:00a
+	NOCOMM   ICO       766 02-17-93   1:00a
+	NOSMOKE  ICO       766 02-17-93   1:00a
+	NOTES    ICO       766 02-17-93   1:00a
+	OLDMIC   ICO       766 02-17-93   1:00a
+	PAPERCLP ICO       766 02-17-93   1:00a
+	PENCIL   ICO       766 02-17-93   1:00a
+	PIECHART ICO       766 02-17-93   1:00a
+	RADIO    ICO       766 02-17-93   1:00a
+	REDLIGHT ICO       766 02-17-93   1:00a
+	REDPEN   ICO       766 02-17-93   1:00a
+	SCOPE    ICO       766 02-17-93   1:00a
+	SPEAKER  ICO       766 02-17-93   1:00a
+	STOPSIGN ICO       766 02-17-93   1:00a
+	TAPE     ICO       766 02-17-93   1:00a
+	TELCALL  ICO       766 02-17-93   1:00a
+	TIMER    ICO       766 02-17-93   1:00a
+	TREBLE   ICO       766 02-17-93   1:00a
+	TUNING   ICO       766 02-17-93   1:00a
+	      57 file(s)      42130 bytes
+	
+	Directory of C:\SNDSYS\DEMO
+	
+	.            <DIR>     03-29-93   4:42p
+	..           <DIR>     03-29-93   4:42p
+	TOUR     EXE     28325 02-17-93   1:00a
+	CBTLIB4  DLL     18304 02-17-93   1:00a
+	TOUR     LES    535653 02-17-93   1:00a
+	PLAY     EXE    108688 02-17-93   1:00a
+	WSSTUTOR DEX      4127 02-17-93   1:00a
+	E1D1W1   WAV     13080 02-17-93   1:00a
+	E1D1W2   WAV      4038 02-17-93   1:00a
+	E1D1W3   WAV      7706 02-17-93   1:00a
+	E1D2W1   WAV     34430 02-17-93   1:00a
+	E1D2W2   WAV     19920 02-17-93   1:00a
+	E1D3W1   WAV     17796 02-17-93   1:00a
+	E1D4W1   WAV     10770 02-17-93   1:00a
+	E1S1W1   WAV     28404 02-17-93   1:00a
+	E2D1W1   WAV     40544 02-17-93   1:00a
+	E2D1W2   WAV     22704 02-17-93   1:00a
+	E2D2W1   WAV     59294 02-17-93   1:00a
+	E3D1W1   WAV     50226 02-17-93   1:00a
+	E3D1W2   WAV     58028 02-17-93   1:00a
+	E3D2W1   WAV     44292 02-17-93   1:00a
+	E3D2W2   WAV     38092 02-17-93   1:00a
+	E3D3W1   WAV     13266 02-17-93   1:00a
+	E4D1W1   WAV     16228 02-17-93   1:00a
+	E4D1W2   WAV     17992 02-17-93   1:00a
+	E4D1W3   WAV     20940 02-17-93   1:00a
+	E4D2W1   WAV      4342 02-17-93   1:00a
+	E4D2W2   WAV      3350 02-17-93   1:00a
+	E4D3W1   WAV     10808 02-17-93   1:00a
+	E5D1W1   WAV     11508 02-17-93   1:00a
+	E5D1W2   WAV      4344 02-17-93   1:00a
+	E5D1W3   WAV      4678 02-17-93   1:00a
+	E5D1W4   WAV      3106 02-17-93   1:00a
+	E5D2W1   WAV      7456 02-17-93   1:00a
+	E5D2W2   WAV      4454 02-17-93   1:00a
+	E5D2W3   WAV      4328 02-17-93   1:00a
+	E5D3W1   WAV      4224 02-17-93   1:00a
+	E5D3W2   WAV      3416 02-17-93   1:00a
+	E6D1W1   WAV     35280 02-17-93   1:00a
+	E6D1W2   WAV      9540 02-17-93   1:00a
+	E6D1W3   WAV      8578 02-17-93   1:00a
+	E6D2W1   WAV     22710 02-17-93   1:00a
+	E6D2W2   WAV     42472 02-17-93   1:00a
+	E6D3W1   WAV     56910 02-17-93   1:00a
+	      44 file(s)    1454351 bytes
+	
+	Directory of C:\EXCEL
+	
+	XLRDR    INI      1092 06/15/93   1:44p
+	       1 file(s)       1092 bytes
+	
+	Directory of C:\EXCEL\LIBRARY
+	
+	PROOF    XLA    118438 02/17/93   1:00a
+	       1 file(s)     118438 bytes
+	
+	Directory of C:\123W
+	
+	123RDR   INI      1092 02/17/93   1:00a
+	       1 file(s)       1092 bytes
+	
+	Additional query words: 1.0a
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinSoundSysSearch kbWinSoundSys100a
+	
+	=============================================================================
+	

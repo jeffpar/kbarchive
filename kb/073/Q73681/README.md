@@ -1,0 +1,83 @@
+---
+layout: page
+title: "Q73681: DDE.exe Demonstrates Dynamic-Data Exchange (DDE)"
+permalink: kb/073/Q73681/
+---
+
+## Q73681: DDE.exe Demonstrates Dynamic-Data Exchange (DDE)
+
+	Article: Q73681
+	Product(s): Microsoft Windows Software Development Kit
+	Version(s): 3.0,3.1
+	Operating System(s): 
+	Keyword(s): kbfile kbsample kbDDE kbGrpDSUser kb16bitonly
+	Last Modified: 23-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	DDE.exe is a sample file that demonstrates dynamic-data exchange (DDE) and how
+	it is programmed under Windows 3.0.
+	
+	MORE INFORMATION
+	================
+	
+	The following file is available for download from the Microsoft Download
+	Center:
+	
+	  DDE.exe
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. Once posted, the file is housed on secure
+	servers that prevent any unauthorized changes to the file.
+	
+	There are two separate applications in the DDE archive file: TICTAPE and
+	BARGRAPH. For each application, the archive holds a makefile, header file, C
+	source code, resources (.RC) file, segment definitions (.DEF) file, and an
+	icon.
+	
+	TICTAPE is a DDE server that randomly creates and transmits data about four
+	stocks. BARGRAPH is a DDE client that graphically illustrates the data from
+	TICTAPE. TICTAPE was demonstrated at "Windows on Wall Street," June 4, 1986.
+	
+	To use these applications, perform the following six steps:
+	
+	1. Download from the Microsoft Download Center and expand the DDE file.
+	
+	2. Build TICTAPE and BARGRAPH.
+	
+	3. Start Windows.
+	
+	4. Run TICTAPE.EXE.
+	
+	5. Run BARGRAPH.EXE.
+	
+	6. Activate TICTAPE and choose "Start Ticker Tape".
+	
+	The BARGRAPH application's main window will dynamically display the (random)
+	values of the four stocks.
+	
+	Additional information concerning DDE can be found in Chapter 22 of the
+	"Microsoft Windows Software Development Kit Guide to Programming" and in Chapter
+	15 of the "Microsoft Windows Software Development Kit Reference, Volume 2."
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbfile kbsample kbDDE kbGrpDSUser kb16bitonly 
+	Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+	Version           : :3.0,3.1
+	
+	=============================================================================
+	

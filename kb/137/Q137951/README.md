@@ -1,0 +1,95 @@
+---
+layout: page
+title: "Q137951: FIX: Can't Change the Title of the Validation Error Box"
+permalink: kb/137/Q137951/
+---
+
+## Q137951: FIX: Can't Change the Title of the Validation Error Box
+
+	Article: Q137951
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:3.0
+	Operating System(s): 
+	Keyword(s): kbbuglist kbfixlist
+	Last Modified: 24-MAR-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 3.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The title on the Validation Error text box cannot be changed.
+	
+	CAUSE
+	=====
+	
+	The dialog box title is being pulled from an internal resource of Visual FoxPro,
+	so it cannot be changed.
+	
+	WORKAROUND
+	==========
+	
+	Trap for the rule failure within the rule's code, and present a customized error
+	message. Let the rule return True (.T.) as in code in the "Workaround Example"
+	section in this article.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products listed at
+	the beginning of this article. This problem was corrected in Visual FoxPro 3.0b
+	for Windows.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Execute the following commands in the Command window:
+	
+	     CREATE DATABASE Test1
+	
+	     CREATE TABLE tbl1 (one c(3) CHECK !EMPTY(one) ;
+	        ERROR 'error message here')
+	
+	2. Browse the new table, and press CTRL+Y to append a blank record.
+	
+	3. The validation box will appear with "Microsoft Visual FoxPro" as the title.
+	
+	Workaround Example
+	------------------
+	
+	Change the rule from an expression to a program or procedure that is in the
+	Stored Procedures:
+	
+	     ALTER TABLE tbl1 ALTER COLUMN one SET CHECK myrule() NOVALIDATE
+	
+	  The procedure myrule may look as follows:
+	
+	     PROCEDURE myrule
+	     IF EMPTY(one)
+	        =MESSAGEBOX('The -one- FIELD CAN NOT BE EMPTY',0,'MY APPLICATION')
+	     ENDIF
+	
+	After the table is browsed and CTRL+Y is pressed, the customized dialog box will
+	appear with the new title.
+	
+	NOTE: A blank record will still be appended to the table. This issue of the rule
+	violation is best handled within the application's design.
+	
+	Additional query words: VFoxWin fixlist3.00b buglist3.00
+	
+	======================================================================
+	Keywords          :  kbbuglist kbfixlist
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+	Version           : WINDOWS:3.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

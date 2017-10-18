@@ -1,0 +1,173 @@
+---
+layout: page
+title: "Q175979: PRB: All Parameters of Choose Function Are Evaluated"
+permalink: kb/175/Q175979/
+---
+
+## Q175979: PRB: All Parameters of Choose Function Are Evaluated
+
+	Article: Q175979
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): WINDOWS:4.0,5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbGrpDSVB
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+	- Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+	- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+	- Microsoft Visual Basic Standard Edition for Windows, version 4.0 
+	- Microsoft Visual Basic Professional Edition for Windows, version 4.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you specify functions as the Choice arguments in a Choose function, all
+	functions are executed.
+	
+	CAUSE
+	=====
+	
+	The Choose function allows you to select a value from a list of choices based on
+	the value passed as the index. For example, the following statement would result
+	in x being assigned the value "b":
+	
+	     x = Choose(2, "a", "b", "c")
+	
+	The parameters passed to the Choose function do not need to be static values as
+	in the above example. You can use function names instead:
+	
+	     x = Choose(2, MyFunction1(), MyFunction2(), MyFunction3())
+	
+	In this situation, all of the functions referenced are executed regardless of the
+	index specified. In this example, the functions MyFunction1, MyFunction2, and
+	MyFunction3 are all executed even though the result of MyFunction2 is the value
+	returned by Choose.
+	
+	Choose is implemented as a function with a parameter array and every parameter
+	must be evaluated before it can be passed to the Choose function.
+	
+	Visual Basic's implementation of the Choose function can be duplicated with the
+	following function:
+	
+	     Public Function MyChoose(Index As Single, ParamArray Choice())
+	        On Error GoTo BadChoice
+	        If IsObject(Choice(Index - 1)) Then
+	           Set MyChoose = Choice(Index - 1)
+	        Else
+	           MyChoose = Choice(Index - 1)
+	        End If
+	        Exit Function
+	     BadChoice:
+	        MyChoose = Null
+	     End Function
+	
+	RESOLUTION
+	==========
+	
+	Because this behavior is by design, another approach must be taken to avoid all
+	parameters being evaluated. The logic of the Choose function can easily be
+	broken down into an equivalent "If...Then...ElseIf" statement or a "Select Case"
+	statement.
+	
+	Sample Choose Statement
+	-----------------------
+	
+	     result = Choose(MyIndex, MyFunction1(), MyFunction2(), MyFunction3())
+	
+	Equivalent 'If...Then...ElseIf' Statement
+	-----------------------------------------
+	
+	     If MyIndex = 1 Then
+	        result = MyFunction1()
+	     ElseIf MyIndex = 2 Then
+	        result = MyFunction2()
+	     ElseIf MyIndex = 3 Then
+	        result = MyFunction3()
+	     Else
+	        result = Null
+	     End If
+	
+	Equivalent 'Select Case' Statement
+	----------------------------------
+	
+	     Select Case MyIndex
+	        Case 1
+	           result = MyFunction1()
+	        Case 2
+	           result = MyFunction2()
+	        Case 3
+	           result = MyFunction3()
+	        Case Else
+	           result = Null
+	     End Select
+	
+	STATUS
+	======
+	
+	This behavior is by design.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Create a new Visual Basic project. Form1 is created by default.
+	
+	2. Add a Command button to Form1.
+	
+	3. Add the following code to Form1:
+	
+	        Option Explicit
+	
+	        Private Function MyFunction1() As Long
+	           Debug.Print "MyFunction1"
+	           MyFunction1 = 1
+	        End Function
+	
+	        Private Function MyFunction2() As Long
+	           Debug.Print "MyFunction2"
+	           MyFunction2 = 2
+	        End Function
+	
+	        Private Function MyFunction3() As Long
+	           Debug.Print "MyFunction3"
+	           MyFunction3 = 3
+	        End Function
+	
+	        Private Sub Command1_Click()
+	           Dim result
+	           result = Choose(2, MyFunction1(), MyFunction2(), MyFunction3())
+	        End Sub
+	
+	4. Save and run the project.
+	
+	5. Click the CommandButton. Note that the "Debug.Print" statements from the
+	  three user-defined functions are executed even though the result of
+	  MyFunction2 is the returned value.
+	
+	REFERENCES
+	==========
+	
+	Visual Basic's Online Help for the Choose function.
+	
+	Additional query words: kbVBp500 kbVBp600 kbVBp kbdsd kbDSupport kbVBp400 kbVBA
+	
+	======================================================================
+	Keywords          : kbGrpDSVB 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400 kbZNotKeyword3
+	Version           : WINDOWS:4.0,5.0,6.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

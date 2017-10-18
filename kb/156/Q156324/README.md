@@ -1,0 +1,98 @@
+---
+layout: page
+title: "Q156324: Device Failure Message with Microchannel Network Adapter"
+permalink: kb/156/Q156324/
+---
+
+## Q156324: Device Failure Message with Microchannel Network Adapter
+
+	Article: Q156324
+	Product(s): Microsoft Windows NT
+	Version(s): 4.0
+	Operating System(s): 
+	Keyword(s): kbhw kbnetwork kbHardware
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 4.0 
+	- Microsoft Windows NT Workstation version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you start Windows NT on a computer with a microchannel (MCA) network
+	adapter, you may receive the following error message:
+	
+	  At least one service or driver failed during system startup.
+	  Use Event Viewer to examine the event log for details.
+	
+	When you look at the event log, you see the following entry:
+	
+	  Event ID: 7000
+	  Source: Service Control Manager
+	  Description: A device connected to the system is not functioning.
+	
+	
+	After you log on to the computer, you may have no network access through one or
+	more of the microchannel network adapters.
+	
+	CAUSE
+	=====
+	
+	The MCA Setup program and the adapter's Oemsetup.inf file identify the slots on
+	an MCA bus differently than the Windows NT hardware abstraction layer (HAL). The
+	Windows NT HAL identifies the slots beginning with 0 (for example, physical slot
+	1 is SlotID 0), but the MCA setup program and the Oemsetup.inf file start with
+	1.
+	
+	RESOLUTION
+	==========
+	
+	This problem has been fixed in the file NDIS.SYS contained in Windows NT 4.0
+	Service Pack 2.0 and later service packs.
+	
+	If after applying Service Pack-2 you still have the failure please refer to
+	Knowledge base article:
+	
+	  ARTICLE-ID: Q167632
+	  TITLE : MCA Network adapter fails after applying NT V4.0 SP2
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Windows NT Version 4.0. This
+	problem has been corrected in the latest U.S. Service Pack for Windows NT
+	version 4.0. For information on obtaining the service pack, query on the
+	following word in the Microsoft Knowledge Base (without the spaces):
+	
+	  S E R V P A C K
+	
+	MORE INFORMATION
+	================
+	
+	Non-MCA buses are not affected by this problem. The following MCA network
+	adapters are known to be affected:
+	
+	- 3Com 3C527 Etherlink MC/32
+	
+	- IBM Streamer adapters
+	
+	- Cabletron F30xx FDDI
+	
+	- NCR Starlan TR, NCR Wavelan
+	
+	- SysKonnect FDDI
+	
+	
+	Additional query words: prodnt micro-channel netcard hotfix Dual Lan Token Ring STREAM.SYS lanstreamer
+	
+	======================================================================
+	Keywords          : kbhw kbnetwork kbHardware 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+	Version           : 4.0
+	
+	=============================================================================
+	

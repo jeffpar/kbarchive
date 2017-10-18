@@ -1,0 +1,73 @@
+---
+layout: page
+title: "Q125329: Deployment and Troubleshooting Outlook Web Access (OWA)"
+permalink: kb/125/Q125329/
+---
+
+## Q125329: Deployment and Troubleshooting Outlook Web Access (OWA)
+
+	Article: Q125329
+	Product(s): Microsoft Exchange
+	Version(s): 5.5
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 26-JUL-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Outlook Web Access, version 5.5 
+	- Microsoft Outlook Web Access, version 5.5 Service Pack 1 
+	- Microsoft Exchange Server, version 5.5 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Microsoft Outlook Web Access (OWA) for Microsoft Exchange Server provides users
+	access to e-mail, personal calendar, group scheduling, and collaboration
+	applications on Microsoft Exchange Server with only a Web browser. Outlook Web
+	Access is implemented by a combination of Microsoft Active Server Pages
+	technology on the Web server side, and Java controls and scripts downloaded on
+	demand to the user's Web browser.
+	
+	MORE INFORMATION
+	================
+	
+	Due to this lightweight client design, the only interface end-users must have is
+	a compatible Web browser, and all the workload of the client is then pushed up
+	to the Web server running the Outlook Web Access component. This design is
+	helpful to organizations and users who want a quick, easy access to an Exchange
+	Server mailbox, while requiring little to no additional software installed on
+	the client computer. OWA can be a great solution for a kiosk environment, or
+	simply for users who need quick access to their Exchange Server mailbox without
+	having a full MAPI client installed.
+	
+	However, these lightweight clients do force the Web server (which is actually the
+	computer running Internet Information Server 3.0 or 4.0 with the OWA component
+	installed), to be responsible for handling all the client connections. In
+	essence, each Web client to connect is another MAPI session to be created on the
+	OWA server, and in each of these sessions, we ask the OWA server to poll the
+	Exchange Server computer for the data, and then render results back to the Web
+	browser. This additional workload on a Web server should be planned for before
+	deploying OWA. Then after deployment, you should monitor your OWA server
+	workload to ensure user access to the Web server is not overwhelming the
+	server.
+	
+	For more information on deploying Microsoft Outlook Web Access, and for
+	troubleshooting an existing OWA deployment, please see the Outlook Deployment
+	and Troubleshooting Guide white paper on:
+	
+	  http://support.microsoft.com/support/exchange/content/whitepapers/whitepapers.asp
+	
+	
+	Additional query words: owa tshooter whitepaper
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbOutlookSearch kbZNotKeyword6 kbExchangeSearch kbExchange550 kbExchangeClientSearch kbZNotKeyword2 kbOWASearch kbOWA550 kbOWA550SP1
+	Version           : :5.5
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

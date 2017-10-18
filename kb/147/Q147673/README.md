@@ -1,0 +1,81 @@
+---
+layout: page
+title: "Q147673: HOWTO: Determine Selected Control from Array of Option Buttons"
+permalink: kb/147/Q147673/
+---
+
+## Q147673: HOWTO: Determine Selected Control from Array of Option Buttons
+
+	Article: Q147673
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbGrpDSVB
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes a function you can use to determine which option button
+	in a control array is selected.
+	
+	MORE INFORMATION
+	================
+	
+	A common programming task in Visual Basic, given a control array of option
+	buttons, is to determine which option button in the array is selected. The
+	option button that is selected will have its Value property set to True, while
+	all others will have Value properties of False. This article outlines a short
+	function that will return the index of the selected option button when it is
+	passed a reference to a control array of option buttons. It will work correctly
+	even when some indexes are skipped or not present in the control array. In
+	addition, to avoid logic errors in writing code, it will fail and return a -1 if
+	it is passed a control array of another type of object (like a check box). The
+	function was contributed by Bruce McKinney, author of Hardcore Visual Basic,
+	which is published by Microsoft Press.
+	
+	The code for the function is:
+	
+	  Function GetOption(opts As Object) As Integer
+	      On Error GoTo GetOptionFail
+	      Dim opt As OptionButton
+	      For Each opt In opts
+	          If opt.Value Then
+	              GetOption = opt.Index
+	              Exit Function
+	          End If
+	      Next
+	
+	  GetOptionFail:
+	      GetOption = -1
+	
+	  End Function
+	
+	This function can be called like this:
+	
+	  myVariable = GetOption(optMyButtons)   'Control syntax OK
+	  myVariable = GetOption(optMyButtons()) 'Array syntax OK
+	
+	
+	Additional query words: KBCONTROL kbVBp400 kbVBp500 kbVBp600 kbVBp kbdsd kbDSupport
+	
+	======================================================================
+	Keywords          : kbGrpDSVB 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400 kbVB16bitSearch
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

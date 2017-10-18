@@ -1,0 +1,95 @@
+---
+layout: page
+title: "Q165470: WD97: Outline Numbering Links to All Styles After Style Copy"
+permalink: kb/165/Q165470/
+---
+
+## Q165470: WD97: Outline Numbering Links to All Styles After Style Copy
+
+	Article: Q165470
+	Product(s): Word 97 for Windows
+	Version(s): WINDOWS:97
+	Operating System(s): 
+	Keyword(s): kbualink97 kbusage kbnumbering
+	Last Modified: 14-NOV-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If you create a numbering scheme that links to several heading styles and then
+	copy a few of those heading styles to a new document or template using the
+	Organizer, all of the heading style links will be copied to the new document or
+	template rather than just the heading style links pertaining to the heading
+	styles that were copied.
+	
+	CAUSE
+	=====
+	
+	The Numbering dialog box is showing incorrect information.
+	
+	WORKAROUND
+	==========
+	
+	To break the heading style numbering links so that only the links related to the
+	heading styles that were copied are available, follow these steps:
+	
+	1. Open the document or template that you copied the heading styles to.
+	
+	2. Position the insertion point in a paragraph that is formatted with a heading
+	  style.
+	
+	3. On the Format menu, click Bullets And Numbering.
+	
+	4. Click Customize, and then click OK.
+	
+	5. Undo the numbering by pressing CTRL+Z on the keyboard (or, on the Edit menu,
+	  click Undo).
+	
+	This breaks the numbering links to styles that were not copied over to the
+	document or template.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products that are
+	listed at the beginning of this article.
+	
+	This problem has been corrected in Word 2000.
+	
+	REFERENCES
+	==========
+	
+	For more information on using the Numbering feature, please see the following
+	article in the Microsoft Knowledge Base:
+	
+	  Q159943 WD97: General Information About Bullets and Numbering
+	
+	For more information about numbering, click the Office Assistant, type
+	"numbering," click Search, and then click one of the following topics:
+	
+	- Troubleshoot bulleted or numbered lists
+	- Add bullets or numbers to lists
+	- Modify bullet or number formats
+	- Learn about bullets and numbering on Web pages
+	- Number cells in a table
+	
+	Note: If the Assistant is hidden, click the Office Assistant button on the
+	Standard toolbar.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbualink97 kbusage kbnumbering 
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : WINDOWS:97
+	Issue type        : kbbug
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

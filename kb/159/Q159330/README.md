@@ -1,0 +1,92 @@
+---
+layout: page
+title: "Q159330: Map.exe Does Not Set Environment Variables Correctly"
+permalink: kb/159/Q159330/
+---
+
+## Q159330: Map.exe Does Not Set Environment Variables Correctly
+
+	Article: Q159330
+	Product(s): Microsoft Windows NT
+	Version(s): winnt:3.51
+	Operating System(s): 
+	Keyword(s): kbbuglist kbfixlist
+	Last Modified: 22-MAR-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft File and Print Services for NetWare version 3.51 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The MS-DOS-based programs included with FPNW, such as Map.exe and Login.exe,
+	that are supposed to modify environment variables do not work as expected when
+	run in a Virtual DOS Machine (VDM) under Windows, but do work as expected
+	outside of Windows.
+	
+	CAUSE
+	=====
+	
+	These programs, when shipped with FPNW, use an incorrect function call to modify
+	the program's environment space, rather than the environment space of the VDM.
+	
+	WORKAROUND
+	==========
+	
+	Use the Novell versions of these programs, as they work as expected. Or obtain
+	the update mentioned in the Status section.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft File and Print
+	Services for NetWare version 3.51. This problem was corrected in the latest
+	Microsoft Windows NT 4.0 U.S. Service Pack. For information on obtaining the
+	service pack, query on the following word in the Microsoft Knowledge Base
+	(without the spaces):
+	
+	  S E R V P A C K
+	
+	
+	MORE INFORMATION
+	================
+	
+	In MS-DOS, every process has a block of memory associated with it in which
+	environment variables are stored. When a new process is started, it inherits a
+	copy of the environment belonging to its parent process. By default, when an
+	application changes its own environment variables, those changes are not
+	reflected in the parent process's environment space. Rather, an application must
+	take explicit action to change the environment of its parent process.
+	
+	When running an MS-DOS prompt within a Windows environment, there are up to four
+	separate levels of environment spaces to be considered:
+	
+	1. The base environment of MS-DOS before Windows is started.
+	
+	2. The Windows environment, which will be inherited by any MS-DOS windows
+	  started by Windows.
+	
+	3. The environment of the VDM associated with the MS-DOS window.
+	
+	4. The environment of the application, such as Map.exe. This environment is
+	  destroyed when the application terminates.
+	
+	The problem with the files shipped with FPNW is that they were altering
+	environments 1 and 4 in the previous list. The fixed Map.exe described here and
+	the Map.exe provided by Novell also alter environment 3. Neither program
+	modifies environment 2.
+	
+	
+	Additional query words: search path 3.51 prodnt
+	
+	======================================================================
+	Keywords          :  kbbuglist kbfixlist
+	Technology        : kbServicesNetwareSearch kbFPNW351
+	Version           : winnt:3.51
+	Issue type        : kbbug
+	
+	=============================================================================
+	

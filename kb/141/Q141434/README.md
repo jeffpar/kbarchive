@@ -1,0 +1,231 @@
+---
+layout: page
+title: "Q141434: Encarta 96 and Windows 3.1: Manual Installation Instructions"
+permalink: kb/141/Q141434/
+---
+
+## Q141434: Encarta 96 and Windows 3.1: Manual Installation Instructions
+
+	Article: Q141434
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): WINDOWS:3.1,3.11,95
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 13-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Encarta 96 Encyclopedia for Windows 
+	- the operating system: Microsoft Windows versions 3.1, 3.11 
+	- the operating system: Microsoft Windows 95 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article provides instructions to manually install Encarta 1996 on a
+	computer system running Microsoft Windows 3.x. These instructions use the
+	Manual96.bat file located on the CD-ROM.
+	
+	MORE INFORMATION
+	================
+	
+	These instructions assume:
+	
+	- Your hard drive is drive C:
+	
+	- Your Windows folder is C:\Windows
+	
+	- Your CD-ROM drive is drive D
+	
+	- Your Destination folder is C:\Encarta
+	
+	If your hard disk drive, destination folder (subdirectory), Windows folder, or
+	CD-ROM drive letters are different, replace the drive letters and folder names
+	throughout this article with the drive letters and folder names on your
+	computer.
+	
+	NOTE: The following instructions discuss copying, editing, and modifying folders
+	and files. For more information about how to accomplish these tasks in Windows,
+	see your Windows printed documentation or online Help.
+	
+	It is recommended that you exit Windows before running Manual96.bat to prevent
+	possible conflicts resulting from replacement of some system files.
+	
+	1. Exit Windows.
+	
+	2. Make a backup copy of the file Commdlg.dll. At the MS-DOS command prompt,
+	  type the following commands, pressing ENTER at the end of each line:
+	
+	  "c:" (without the quotation marks)
+	  "cd \windows\system" (without the quotation marks)
+	  "ren commdlg.dll *.old" (without the quotation marks)
+	
+	3. Run the Manual96.bat file. The batch program copies the Encarta program files
+	  and system files to your hard drive. At the MS-DOS command prompt, type the
+	  following commands, pressing ENTER at the end of each line:
+	
+	  "d:" (without the quotation marks)
+	  "cd \aamsstp\manual" (without the quotation marks)
+	  "manual96.bat c:\windows c:\encarta" (without the quotation marks)
+	
+	4. Restore Commdlg.dll from your backup copy. At the MS-DOS command prompt, type
+	  the following commands, pressing ENTER at the end of each line:
+	
+	  "c:" (without the quotation marks)
+	  "cd \windows\system" (without the quotation marks)
+	  "copy commdlg.old *.dll /y" (without the quotation marks)
+	
+	5. Use a text editor, such as Microsoft Notepad, to make the following changes
+	  to the Encarta.ini file, which is located in the Windows folder.
+	
+	  NOTE: If the Encarta.ini file does not already exist, create one in the
+	  Windows folder with these same entries:
+	
+	        [96Options]
+	        ShowCloseDialog=1
+	        LastPosition=0,0
+	        CodePath=D:\encarta\ 
+	        DatPath=D:\encarta\ 
+	        InstPath=C:\Encarta\ 
+	        BookPath=D:\encyc96\ 
+	        UpdatesPath=C:\Encarta\Yearbook\ 
+	        ShowTitleScreen=1
+	        IntroPlaySounds=1
+	        SaveWindowLayout=0
+	        SetBookmarkOnExit=1
+	        WordProcessor=C:\WINDOWS\write.exe
+	        JumpColor=255
+	        ShowInfo=1
+	
+	6. Use a text editor to make the following changes to the Windows initialization
+	  files, which are located in the Windows folder:
+	
+	  Win.ini File Changes
+	  --------------------
+	
+	        [MCI Extensions]
+	        mmm=MMMovie
+	        avi=AVIVideo
+	
+	        [embedding]
+	        Mplayer=Media Clip, Media Clip, mplayer.exe, picture
+	
+	        [MSAPPS]
+	        MSAPPS=C:\Windows\Msapps
+	        MSINFO=C:\Windows\Msapps\Msinfo
+	
+	        [Microsoft System Info]
+	        Msinfo=C:\Windows\Msapps\Msinfo\Msinfo.exe
+	
+	  Changes to the System.ini File
+	  ------------------------------
+	
+	        [386enh]
+	        device=dva.386
+	        device=vshare.386
+	
+	        [mci]
+	        AVIVideo=mciavi.drv
+	        MMMovie=mcimmp.drv
+	
+	        [drivers]
+	        MSACM.msgsm610=msgsm610.acm
+	        MSACM.msadpcm=msadpcm.acm
+	        MSACM.imaadpcm=imaadpcm.acm
+	        VIDC.MSVC=msvidc.drv
+	        VIDC.RT21=indeov.drv
+	        VIDC.CVID=iccvid.drv
+	        VIDC.IV31=ir32.dll
+	        VIDC.MRLE=msrle.drv
+	        VIDC.YVU9=indeov.drv
+	        VIDC.IV32=ir32.dll
+	        WaveMapper=msacm.drv
+	
+	  Control.ini File Changes
+	  ------------------------
+	
+	        [drivers.desc]
+	        msacm.drv=Microsoft Sound Mapper V2.00
+	        msadpcm.acm=Microsoft ADPCM Codec V2.00
+	        imaadpcm.acm=Microsoft IMA ADPCM Codec V2.00
+	
+	7. Install the fonts included on the compact disc using the following steps:
+	  a. Open the Windows Control Panel, usually located in the Main program group
+	     of Program Manager.
+	
+	  b. On Settings menu, click Fonts.
+	
+	  c. Click Add.
+	
+	  d. Change the drive letter to match the letter of your CD-ROM drive.
+	
+	  e. In the Directories area, double-click the Aamsstp folder, then
+	     double-click the Fonts folder.
+	
+	  f. Click Select All, and then click OK.
+	
+	  g. Click OK if messages about the fonts already being installed are
+	     displayed.
+	
+	  h. Click Close.
+	
+	  i. Close the Control Panel.
+	
+	8. Add the Program icons. As a guide, use the Creating Program Manager Icons
+	  section listed after step 9.
+	
+	9. Restart Windows. Installation is complete.
+	
+	Creating Program Manager Icons
+	------------------------------
+	
+	1. Open the Microsoft Reference group. If this group does not already exist,
+	  create it as follows:
+	  a. On the File menu, click New.
+	
+	  b. Click Program Group, and then click OK.
+	
+	  c. In the Description box, type the following, and then click OK:
+	
+	  "Microsoft Reference" (without the quotation marks)
+	
+	2. On the File menu, click New.
+	
+	3. Click Program Item, and then click OK.
+	
+	4. Type the following Description and Command Line information, and then click
+	  OK:
+	
+	     Description:       Encarta 96 Encyclopedia
+	     Command Line:      C:\Encarta\Encart96.exe
+	
+	5. Repeat steps 2-4 for each of the following items:
+	
+	     Item 2
+	     ------
+	
+	     Description:       Encarta 96 Encyclopedia Information
+	     Command Line:      C:\Encarta\Readme.wri
+	
+	     Item 3
+	     ------
+	
+	     Description:       Microsoft Multimedia Catalog
+	     Command Line:      d:\mmcat\mmcat.exe
+	
+	For additional information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q139317 Encarta 1996: MSETUP.TXT Contents
+	
+	Additional query words: 96 1996 multi media multimedia multi-media mmtitles kbmm kbsetup subdir subdirectories directory directories install setup set up installation installer man 95core
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbOSWin95 kbOSWinSearch kbHomeProdSearch kbHomeMMsearch kbZNotKeyword6 kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1996 kbOSWin310 kbOSWin311
+	Version           : WINDOWS:3.1,3.11,95
+	
+	=============================================================================
+	

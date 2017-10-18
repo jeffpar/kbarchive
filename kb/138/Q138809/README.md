@@ -1,0 +1,149 @@
+---
+layout: page
+title: "Q138809: PRB: Update Conflict w/Remote View When WhereType Set to Time"
+permalink: kb/138/Q138809/
+---
+
+## Q138809: PRB: Update Conflict w/Remote View When WhereType Set to Time
+
+	Article: Q138809
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:2.5,3.0,5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbHWMAC kbvfp kbvfp300 kbvfp500 kbvfp600 kbMDAC250
+	Last Modified: 23-FEB-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 6.0 
+	- Microsoft Data Access Components version 2.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Calling TABLEUPDATE() on a SQL table does not succeed in the following
+	situation. A remote view on a SQL table contains a timestamp field, and the
+	WhereType property of the view is set to "Key & Timestamp." When updates are
+	sent to the remote SQL table, the first TABLEUPDATE() successfully updates
+	records. However, if changes are made to the local tables, and you call
+	TABLEUPDATE() a second time, the update is not successful, or the "Update
+	Conflict" error is displayed. However, the TimeStamp field is not modified in
+	the local cursor, and you expected the update to be successful.
+	
+	CAUSE
+	=====
+	
+	When the SQL Where clause or the WhereType properties are set to "Key and
+	TimeStamp," the update fails if the timestamp of the record on the remote table
+	has changed since you first retrieved it. The TimeStamp field of the remote
+	table is updated by the server. The first update to the table on the server
+	modifies the TimeStamp field. If the data is not refreshed on the local server,
+	the data on the cursor and the data on the remote server are not the same, and a
+	conflict occurs when TABLEUPDATE() is called a second time.
+	
+	The following example illustrates this. The TimeStamp values are fictitious in
+	this example, they are only for demonstration.
+	
+	DBKey     FIELD1    TimeStamp
+	-----------------------------
+	
+	1         "string1"    1
+	2         "string2"    2
+	3         "string3"    3
+	
+	Assume you've created a remote view against this table, and set all the fields to
+	be updatable. Additionally, the Wheretype is "Key & Timestamp."
+	
+	If you change record two to "changed" instead of "string2," the local FoxPro
+	cursor now looks like this:
+	
+	DBKey     FIELD1    TimeStamp
+	-----------------------------
+	
+	1         "string1"    1
+	2         "changed"    2
+	3         "string3"    3
+	
+	When you call TABLEUPDATE(), Visual FoxPro sends the change to the server. The
+	server, in turn, updates the timestamp value for that record:
+	
+	DBKey     FIELD1    TimeStamp
+	-----------------------------
+	 1       "string1"    1
+	 2       "changed"   10
+	 3       "string3"    3
+	
+	Now if you change record two again and try to update it, the "Update Conflict"
+	message appears.
+	
+	RESOLUTION
+	==========
+	
+	Use GO RECNO() and call REFRESH() to refresh the data on the local cursor before
+	the second update takes place. You can also call REQUERY() if you want to
+	recreate the cursor from the remote data. For more information about the
+	difference between the REQUERY() and the REFRESH() functions, please see the
+	following article in the Microsoft Knowledge Base:
+	
+	  Q130462 Difference Between REQUERY and REFRESH in Visual FoxPro
+	
+	With Visual FoxPro for Windows 3.0b, you do not need the GO RECNO(). REQUERY or
+	REFRESH should be sufficient.
+	
+	STATUS
+	======
+	
+	This behavior is by design.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Create a SQL Server table called Test that contains these fields:
+	
+	     DBKey      float
+	     FIELD1     char
+	     TimeStamp  timestamp
+	
+	  Add some records similar to the ones illustrated in the CAUSE section of this
+	  article. Using the ODBC manager, create a DataSource to access the Database
+	  of the table.
+	
+	2. Create a database in Visual FoxPro with a remote view called Rv, based on the
+	  datasource created in the previous step.
+	
+	3. In the remote view:
+	
+	   - Select the Add All button in the Fields tab.
+	
+	   - In the Update Criteria tab:
+	
+	     Select DBkey field as the key and make it updatable. Click the Update All
+	     button. Select the Send SQL Updates check box. In the SQL WHERE clause,
+	     select Key and Timestamp button.
+	
+	4. Close and save the view.
+	
+	5. Browse the Rv view.
+	
+	6. Change the FIELD1 field.
+	
+	7. Move to the second record, and change the FIELD1 field.
+	
+	8. Move back to the first field, and change FIELD1 again. The "Update Conflict"
+	  error appears.
+	
+	Additional query words: VFoxWin odbc
+	
+	======================================================================
+	Keywords          : kbHWMAC kbvfp kbvfp300 kbvfp500 kbvfp600 kbMDAC250 
+	Technology        : kbVFPsearch kbAudDeveloper kbMDACSearch kbMDAC250 kbVFP300 kbVFP500 kbVFP600
+	Version           : WINDOWS:2.5,3.0,5.0,6.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

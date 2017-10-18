@@ -1,0 +1,218 @@
+---
+layout: page
+title: "Q102716: User Authentication with Windows NT"
+permalink: kb/102/Q102716/
+---
+
+## Q102716: User Authentication with Windows NT
+
+	Article: Q102716
+	Product(s): Microsoft Windows NT
+	Version(s): WinNT:3.1
+	Operating System(s): 
+	Keyword(s): kbother
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 3.1 
+	- Microsoft Windows NT Workstation version 3.1 
+	- Microsoft Windows NT Advanced Server, version 3.1 
+	- Microsoft Windows NT Workstation versions 3.51, 4.0 
+	- Microsoft Windows NT Server versions 3.51, 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article discusses the following aspects of user authentication:
+	
+	- Storage of the Passwords in the SAM Database
+	
+	- User Authentication by the MSV1_0 Authentication Package
+	
+	- Pass-Through Authentication
+	
+	MORE INFORMATION
+	================
+	
+	Storage of the Passwords in the SAM Database
+	--------------------------------------------
+	
+	User records are stored in the security accounts manager (SAM) database. Each
+	user has two passwords with which it is associated: the LAN Manager compatible
+	password and the Windows NT password. Each password is stored doubly encrypted
+	in the SAM database. The first encryption is a one-way function (OWF) version of
+	the clear text generally considered to be non-decryptable. The second encryption
+	is an encryption of the user's relative ID (RID). The second encryption is
+	decryptable by anyone who has access to the double-encrypted password, the
+	user's RID, and the algorithm. The second encryption is used for obfuscation
+	purposes.
+	
+	The LAN Manager compatible password is 100 percent compatible with the password
+	used by LAN Manager. It is based on the original equipment manufacturer (OEM)
+	character set, not case sensitive (enforced by upper casing before encryption),
+	and up to 14 characters long. The OWF version (called the LAN Manager OWF or
+	ESTD version) of the password is computed by encrypting a constant with the
+	clear text password using DES encryption. The LAN Manager OWF password is 16
+	bytes long. The first 7 bytes of the clear text password are used to compute the
+	first 8 bytes of the LAN Manager OWF password. The second 7 bytes of the clear
+	text password are used to computer the second 8 bytes of the LAN Manager OWF
+	password.
+	
+	The Windows NT password is based on the Unicode character set, is case sensitive,
+	and can be up to 128 characters long. The OWF version (called the Windows NT OWF
+	password) is computed using the RSA MD-4 encryption algorithm, which computes a
+	16-byte "digest" of a variable length string of clear text password bytes.
+	
+	Any particular user account might be missing either the LAN Manager or Windows NT
+	password, however, every attempt is made to maintain both versions of the
+	password. For instance, only the LAN Manager version of the password exists if
+	the user account was ported from a LAN Manager UAS database using PortUas or if
+	the password was changed from a LAN Manager or Windows for Workgroups client.
+	Only the Windows NT version of the password exists if the password is set or
+	changed from a Windows NT client and the password has no LAN Manager
+	representation (that is, it is longer than 14 characters or the characters
+	cannot be represented in the OEM character set). All the existing user interface
+	limits do not allow Windows NT passwords to exceed 14 characters. The
+	implications of this are discussed below.
+	
+	NOTE: Altering of the SAM database by any means, manually or programmatically, is
+	unsupported by Microsoft.
+	
+	User Authentication by the MSV1_0 Authentication Package
+	--------------------------------------------------------
+	
+	All user authentication in Windows NT occurs using the LsaLogonUser API.
+	LsaLogonUser actually authenticates users by calling an authentication package.
+	The default authentication package that comes with Windows NT is the MSV1_0
+	Authentication Package. The MSV Authentication Package uses the SAM database as
+	its database of users, and it supports pass-through authentication of users in
+	other domains by using the Netlogon service.
+	
+	Internally, the MSV authentication package is split into two halves: a top half
+	and a bottom half. The top half executes on the machine being logged onto (or
+	connected to). The bottom half executes on the machine that contains the user
+	account. When both machines are the same machine, the MSV Authentication Package
+	top half simply calls the bottom half without involving the Netlogon service.
+	When the MSV authentication package top half recognizes that pass-through
+	authentication is needed (based on the fact that the domain name passed to it is
+	not its own domain name), MSV passes the request to the Netlogon service, which
+	routes the request to the Netlogon service on the appropriate machine, which in
+	turn passes the request to the bottom half of the MSV Authentication Package on
+	that machine.
+	
+	LsaLogonUser supports interactive logons, service logons, and network logons. All
+	forms of logon through the MSV Authentication Package pass the name of the
+	domain containing the user account, the name of the user account, and some
+	function of the user's password. These different types of logon differ in the
+	way the password is represented as it is passed to LsaLogonUser.
+	
+	For interactive logons and service logons, the client logging on is physically on
+	the machine running the top half of the MSV Authentication Package. In this
+	case, the clear text password is passed into LsaLogonUser and the top half of
+	the MSV Authentication Package. The top half of the MSV Authentication Package
+	converts the clear text password to both a LAN Manager OWF password and a
+	Windows NT OWF password before passing it on to either the Netlogon service or
+	the lower half. The lower half queries the OWF passwords from SAM and compares
+	the OWF passwords to ensure they are identical.
+	
+	For network logons, the client connecting to the machine was previously given a
+	16-byte challenge (or "nonce"). If the client is a LAN Manager client, the
+	client computed a 24-byte challenge response by encrypting the 16-byte challenge
+	with the 16-byte LAN Manager OWF password. This is the algorithm used by LAN
+	Manager. The LAN Manager client passes this "LAN Manager Challenge Response" to
+	the Windows NT server. If the client is an Windows NT client, the client
+	computed a LAN Manager Challenge Response, just as above. In addition, the
+	Windows NT client computes an "Windows NT Challenge Response" by using the
+	identical algorithm but using the 16-byte Windows NT OWF password instead of the
+	LAN Manager OWF password. The Windows NT client then passes both the LAN Manager
+	Challenge Response and the Windows NT Challenge Response to the Windows NT
+	server. In either case, the Windows NT server authenticates the user by passing
+	all of the following to LsaLogonUser: the domain name, the user name, the
+	original challenge, the LAN Manager Challenge Response, and the optional Windows
+	NT Challenge Response. The top half of the MSV Authentication Pack passes this
+	unchanged to the bottom half. The bottom half queries the OWF passwords from
+	SAM, computes the appropriate Challenge Response using the OWF password from SAM
+	and the passed in Challenge, then compares the computed challenge response to
+	the one passed in.
+	
+	As mentioned above, either the Windows NT password or LAN Manager password might
+	be missing from the SAM database. Also, either the Windows NT password (or a
+	function thereof) or the LAN Manager password might be missing from the call to
+	LsaLogonUser. This paragraph describes which passwords are compared in which
+	cases. If both the Windows NT version of password from SAM and the Windows NT
+	version of the password from LsaLogonUser are available, they are both used.
+	Otherwise, the LAN Manager version of the password is used to compare against.
+	This rule allows case sensitivity to be enforced when going Windows NT to
+	Windows NT, but it also allows backward compatibility.
+	
+	Pass-Through Authentication
+	---------------------------
+	
+	The NetLogon service implements pass-through authentication. Its role is three
+	fold: it selects the domain to pass the authentication request to, it selects
+	the server within the domain, and it actually passes the authentication request
+	through to the selected server.
+	
+	Selecting the domain is straightforward. The domain name is passed to
+	LsaLogonUser. The domain name is processed as follows:
+	
+	- If the domain name matches the name of the SAM database, the authentication
+	  is processed on that machine. The name of the SAM database on a Windows NT
+	  workstation that is a member of a domain is considered to the name of the
+	  Windows NT machine. The name of the SAM database on a Windows NT Advanced
+	  Server is the name of the domain. All logons to Windows NT machines that are
+	  not members of a domain process requests locally.
+	
+	- If the domain name specified is trusted by this domain, the authentication
+	  request is passed through to the trusted domain. On Windows NT Advanced
+	  Server, the list of trusted domains is readily available so this comparison
+	  is trivial. On a Windows NT workstation, the request is always passed through
+	  to the primary domain of the workstation, allowing the primary domain to
+	  determine if the specified domain is trusted.
+	
+	- If the domain name specified is not trusted by this domain, the
+	  authentication request is processed on the machine being connected to as if
+	  the domain name specified were that domain name. NetLogon does not
+	  differentiate between a nonexistent domain, an untrusted domain, and an
+	  incorrectly typed domain name.
+	
+	Some network clients don't specify the domain name. These clients include Windows
+	for Workgroups 3.1 and LAN Manager OS/2 version 2.2. A patch is available to LAN
+	Manager OS/2 2.2 that causes it to pass a domain name. A Windows NT workstation
+	handles this NULL domain name by checking to see if the account exists locally.
+	If so, the request is processed locally; otherwise, the request is passed to the
+	primary domain. The Windows NT Advanced Server also checks if the account exists
+	locally. If so, the request is processed locally; otherwise, the Advanced Server
+	tries to determine if a trusted domain has the account. If does this by sending
+	a second-class mailslot message to each trusted domain. Each trusted domain
+	responds indicating whether it defines the account specified. The request is
+	passed through to the first domain that responds affirmatively. If no domain
+	responds affirmatively, this NULL domain is treated as an untrusted domain (as
+	described above). If more than one domain responds affirmatively, only the first
+	response is used. (This is a strong argument for upgrading clients that pass
+	NULL domain names and having only a single account for any particular user in
+	the enterprise.)
+	
+	
+	NetLogon picks a server in the domain by a process called "discovery." A Windows
+	NT workstation "discovers" the name of one of the Windows NT Advanced Servers in
+	its primary domain. A Windows NT Advanced Server "discovers" the name of an
+	Windows NT Advanced Server in each trusted domain.
+	
+	Pass-through authentication is merely an I_NetLogonSamLogon API call over the
+	secure channel. If the logon call is an interactive logon, Netlogon encrypts the
+	OWF passwords with the secure channel session key before passing them to the
+	NetLogon service. The session key encrypted OWF passwords are decrypted before
+	they are passed to the bottom half of the MSV authentication package.
+	
+	Additional query words: wfw wfwg prodnt
+	======================================================================
+	Keywords          : kbother 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTW310 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS351search kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+	Version           : WinNT:3.1
+	
+	=============================================================================
+	

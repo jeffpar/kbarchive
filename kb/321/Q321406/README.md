@@ -1,0 +1,224 @@
+---
+layout: page
+title: "Q321406: Dungeon Siege: Known Sound Issues"
+permalink: kb/321/Q321406/
+---
+
+## Q321406: Dungeon Siege: Known Sound Issues
+
+	Article: Q321406
+	Product(s): Microsoft Home Games
+	Version(s): 1.0
+	Operating System(s): 
+	Keyword(s): kbimu
+	Last Modified: 19-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Dungeon Siege, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes known sound-related issues that you can experience when
+	you play Microsoft Dungeon Siege. The information in this article is first
+	broken out by general issues and then by issues that have only been known to
+	occur on specific types of sound hardware.
+	
+	MORE INFORMATION
+	================
+	
+	General Sound Issues
+	--------------------
+	
+	The following are general sound related issues that you may experience when
+	starting or playing Dungeon Siege:
+	
+	- You do not hear any sound during the opening movie or during the game.
+	
+	  To resolve this issue, follow these steps:
+	
+	  NOTE: Because there are several versions of Windows, the following steps may
+	  be different on your computer. If they are, please consult your product
+	  documentation to complete these steps.
+	
+	  Method 1: Turn On the Sound Function:
+	
+	  1. Start Dungeon Siege.
+	
+	  2. On the Startup menu, click Options.
+	
+	  3. On the Audio tab, to the right of Sound, click the On/Off button so that it
+	  the button is on.
+	
+	  4. Drag to set the volume slider bars, and then click OK.
+	
+	  If this does not resolve this issue, proceed to method 2.
+	
+	  Method 2: Set the Sound Playback Device:
+	
+	  1. Click Start, and then click Control Panel.
+	
+	  2. In Control Panel, double-click "Sounds and Audio Devices".
+	
+	  3. On the Audio tab, in the Sound playback area, click your sound card if it is
+	  not already selected.
+	
+	  4. Select the "Use only default devices" check box, and then click OK.
+	
+	  If this does not resolve this issue, proceed to method 3.
+	
+	  Method 3: Replace Preference Files:
+	
+	  1. On the desktop, double-click My Documents.
+	
+	  2. Right-click Dungeon Siege, and then click Rename.
+	
+	  3. Type "DungeonSiege.old" (without the quotation marks), and then press ENTER.
+	
+	  4. Start Dungeon Siege, and then exit Dungeon Siege. This creates a new Dungeon
+	  Siege folder in the My Documents folder.
+	
+	  5. Double-click Dungeon Siege.old.
+	
+	  6. In the DungeonSiege.old folder, right-click the Save folder, and then click
+	  Copy.
+	
+	  7. In the My Documents folder, double-click Dungeon Siege.
+	
+	  8. In the Dungeon Siege folder, right-click a blank space, and then click Paste.
+	
+	  9. When you are prompted, click Yes to All. The preference files are placed in
+	  the new Dungeon Siege folder.
+	
+	  10. Start Dungeon Siege.
+	
+	- Game hangs with a squealing sound from speakers.
+	
+	  To resolve this issue, lower hardwaresound acceleration:
+	
+	  1. Click Start, and then click Run.
+	
+	  2. In the Open box, type "dxdiag" (without the quotation marks), and then click
+	  OK.
+	
+	  3. On the Sound tab, in the DirectX Features section, change the "Hardware Sound
+	  Acceleration Level" to Basic acceleration, and then click Exit.
+	
+	Specific Sound Issues
+	---------------------
+	
+	The following specific sound cards and chip sets have known sound-related issues
+	in Dungeon Siege:
+	
+	Any sound card or chip set with EAX Support:
+	
+	- After you quit Dungeon Siege, your Windows sound setting may be reset to
+	  Desktop Stereo Speakers, even though before you played the game, the sound
+	  setting was set to Quadraphonic Speakers or another setting.
+	
+	  To work around this issue, turn off EAX support. To do this, follow these
+	  steps:
+	
+	  NOTE: Because there are several versions of Windows, the following steps may
+	  be different on your computer. If they are, please consult your product
+	  documentation to complete these steps.
+	
+	  1. On the Main menu in Dungeon Siege, click Options.
+	
+	  2. On the Audio tab, click the button to the right of EAX so it is labeled Off,
+	  and then click OK.
+	
+	  3. Click Exit.
+	
+	  4. Click Start, and then click Control Panel.
+	
+	  5. Double-click "Sounds and Audio Devices".
+	
+	  6. On the Volume tab, click Advanced under Speaker settings.
+	
+	  7. In the Speaker setup box, click Quadraphonic speakers or your preferred
+	  setting.
+	
+	- When you try to enable Environmental Audio Extensions (EAX) in the Microsoft
+	  Dungeon Siege 1.0 Audio properties dialog box, you may receive an error
+	  message similar to the following:
+	
+	  Cannot detect EAX(TM) Audio support. Please make sure your sound card
+	  supports EAX(TM) Audio, and that you have the latest drivers installed.
+	
+	  To resolve this issue, use one or more of the following methods:
+	
+	  Method 1: Change Hardware Acceleration Setting:
+	
+	  1. Click Start, and then click Run.
+	
+	  2. In the Open box, type "dxdiag" (without the quotation marks), and then click
+	  OK.
+	
+	  3. On the Sound tab, in the DirectX Features section, change the Hardware Sound
+	  Acceleration Level to Basic acceleration.
+	
+	  4. Click Exit.
+	
+	  If this does not resolve this issue, proceed to Method 2.
+	
+	  Method 2: Ensure that Your Sound Card Supports EAX:
+	
+	  Consult your product documentation to ensure that your sound card is able to
+	  support the EAX audio option.
+	
+	  If your sound card does support the EAX audio option, proceed to Method 3.
+	
+	  Method 3: Set Default Sound Device:
+	
+	  1. Click Start, point to Settings, and then click Control Panel.
+	
+	  2. In the Control Panel, double-click Sounds and Audio Devices.
+	
+	  3. In the Sound playback pane, in the Default device drop down menu, click the
+	  sound card that supports the EAX option.
+	
+	  4. Click Apply, and then click OK.
+	
+	  If this does not resolve this issue, proceed to Method 4.
+	
+	  Method 4: Update Sound Card Drivers:
+	
+	  To update your sound card driver, contact the manufacturer of your sound card
+	  to inquire about how to obtain and install the latest version of the sound
+	  card driver.
+	
+	  For information about how to contact , click the appropriate article number in
+	  the following list to view the article in the Microsoft Knowledge Base:
+	
+	  Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+	
+	  Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+	
+	  Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+	
+	Creative Labs Sound Blaster Live!
+	
+	- When you try to enable Environmental Audio Extensions (EAX) in the Microsoft
+	  Dungeon Siege 1.0 Audio properties dialog box, you may receive an error
+	  message similar to the following:
+	
+	  Cannot detect EAX(TM) Audio support. Please make sure your sound card
+	  supports EAX(TM) Audio, and that you have the latest drivers installed.
+	
+	  To resolve this issue, uninstall the drivers, install the Liveware! Software
+	  from Creative Labs, and then reinstall the latest drivers.
+	
+	Additional query words: msgame
+	
+	======================================================================
+	Keywords          : kbimu 
+	Technology        : kbHomeProdSearch kbGamesSearch _IK kbDungeonSiege
+	Version           : :1.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

@@ -1,0 +1,125 @@
+---
+layout: page
+title: "Q151238: SNA Server May Log Events 442, 443, 444, 445, and 446"
+permalink: kb/151/Q151238/
+---
+
+## Q151238: SNA Server May Log Events 442, 443, 444, 445, and 446
+
+	Article: Q151238
+	Product(s): Microsoft SNA Server
+	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 13-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 2.0, 2.1, 2.11, 2.11 SP1, on platform(s):
+	   - the operating system: Microsoft Windows NT 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	When you use the DCA IRMA Workstation for Windows 3270 emulator over the SNA
+	Server version 2.0 or 2.1 Windows 3.x client interface, the following event log
+	entries may be logged to the Microsoft Windows NT application event log:
+	
+	  Event ID 442, 443, 444, 445, 446
+	
+	CAUSE
+	=====
+	
+	The DCA IRMA Workstation product was originally developed to work with the
+	DCA/Microsoft OS/2 Communications Server gateway product (the predecessor to
+	Microsoft SNA Server), and called the internal event logging functions that were
+	still supported in the SNA Server 2.0 and 2.1 Windows 3.x client binaries. These
+	logging functions have been disabled if the SNA Server 2.11 Windows 3.x client
+	binaries are used, so the above events should no longer appear in the Windows NT
+	application event log.
+	
+	This article documents the meaning of the above events, and are not documented in
+	the SNA Server [ASCII 147]Reference Guide.[ASCII 148]
+	
+	STATUS
+	======
+	
+	
+	
+	MORE INFORMATION
+	================
+	
+	Here is the information regarding the preceding events, as described in the
+	DCA/Microsoft Communications Server Reference Guide:
+	
+	--------------------------------------------------------------------
+	
+	Event ID: 442
+	
+	Description:
+	
+	<Username> has started session with host application <applname>,
+	local LU name = <luname>, LU address = <luaddr>.
+	
+	The 3270 user session shown is started. No action is necessary
+	
+	--------------------------------------------------------------------
+	
+	Event ID: 443
+	
+	Description:
+	
+	<Username> has ended session with host application <applname>, local
+	LU name = <luname>, LU address = <luaddr>.
+	
+	The 3270 user session shown has ended No action is necessary
+	
+	--------------------------------------------------------------------
+	
+	Event ID: 444
+	
+	Description:
+	
+	<Username> session session with host application <applname> has
+	failed, local LU name = <luname>, LU address = <luaddr>.
+	
+	The 3270 user session has failed.
+	
+	Check for other messages indicating reasons for the failure and follow the action
+	specified for the messages.
+	
+	--------------------------------------------------------------------
+	
+	Event ID: 445
+	
+	Description:
+	
+	3270 emulation started.
+	
+	This is an informational message. No action is necessary.
+	
+	--------------------------------------------------------------------
+	
+	Event ID: 446
+	
+	Description:
+	
+	3270 emulation finished.
+	
+	This is an informational message. No action is necessary.
+	
+	--------------------------------------------------------------------
+	
+	Additional query words: 2.00 2.10 2.11
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbSNAServSearch
+	Version           : WINDOWS:2.0,2.1,2.11,2.11 SP1
+	Issue type        : kbbug
+	
+	=============================================================================
+	

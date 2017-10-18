@@ -1,0 +1,823 @@
+---
+layout: page
+title: "Q186498: Terminal Server Application Integration Information"
+permalink: kb/186/Q186498/
+---
+
+## Q186498: Terminal Server Application Integration Information
+
+	Article: Q186498
+	Product(s): Microsoft Windows NT
+	Version(s): winnt:4.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 11-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+	
+	  Q256986 Description of the Microsoft Windows Registry
+	
+	SUMMARY
+	=======
+	
+	This article describes the process of installing applications for multiuser use
+	on a Terminal Server computer. This article includes guidelines for application
+	integration, descriptions of installation and execution modes, and registry
+	settings for application control.
+	
+	MORE INFORMATION
+	================
+	
+	Log on as an Administrator to the Terminal Server computer, to install
+	applications. Back up the SYS and DLL files in your SystemRoot directory
+	(SystemRoot is the directory you selected to install the Terminal Server)
+	operating system and in %SystemRoot%\System32 directories before installation,
+	because some applications attempt to put their own DLL files into these
+	directories.
+	
+	If it is not possible to back up these files, type the following commands
+	
+	  DIR\%SystemRoot%\System32 > LPT1:
+	
+	  -OR-
+	
+	  DIR\%SystemRoot% \System32 > Sys32dir.txt
+	
+	-AND-
+	
+	  DIR\%SystemRoot%\System32 > LPT1:
+	
+	  -OR-
+	
+	  DIR \%SystemRoot% > Winntdir.txt
+	
+	If the installation replaces any of the original Terminal Server files that
+	specifically address the Terminal Server operating system, it could be the
+	source of application problems. After the installation is complete, compare the
+	directories and, if necessary, copy back some of the files.
+	
+	Application Integration
+	-----------------------
+	
+	When you integrate an application into a Terminal Server environment, your
+	primary areas of consideration are:
+	
+	- Application installation and configuration
+	
+	- Application network communications
+	
+	- Application video performance
+	
+	Some applications have characteristics that, although relatively benign in a
+	single-user environment, may lead to decreased performance, or application
+	incompatibilities, in a Terminal Server multiuser distributed presentation
+	environment. Understanding and avoiding (if possible) these characteristics
+	helps ensure the smooth integration of an application into a Terminal Server
+	environment.
+	
+	As a rule, follow the application guidelines below when selecting or developing
+	applications:
+	
+	- Win32 (32-bit Windows) applications are preferred over Win16 (16-bit Windows)
+	  applications. Terminal Server runs Win16 applications through a process
+	  called "Win16 on Win32," which causes Win16 applications to consume about 20
+	  percent more resources than comparable Win32 applications.
+	
+	- The Windows INI files must be accessed using the proper Windows NT APIs so
+	  that the INI file synchronization features of Terminal Server work properly.
+	
+	- Applications (primarily MS-DOS applications) that poll a hardware device or
+	  the keyboard, rather than waiting for an event can have an adverse effect on
+	  system performance. You can use the DOSKBD command to tune MS-DOS
+	  applications that perform excessive keyboard polling. Use the Windows NT APIs
+	  instead of building custom code, whenever possible. Many Windows NT APIs have
+	  Terminal Server MultiWin enhancements to seamlessly support a multi-user
+	  environment.
+	
+	- Avoid hard-coding paths and network identifiers.
+	
+	- NetWare applications must be able to run in bindery mode.
+	
+	- MS-DOS graphics are not supported on Terminal Server clients.
+	
+	- Avoid using bitmaps in graphics. Use vector-based graphics instead. Use the
+	  raster operator to brush graphics on the screen for best performance.
+	
+	- VxDs are not supported in a Windows NT or Terminal Server environment.
+	
+	The following sections discuss some of these guidelines in greater detail.
+	
+	Application Installation and Configuration
+	------------------------------------------
+	
+	In a multiuser environment such as Terminal Server, it is essential that all
+	users be able to make use of the same applications concurrently, without
+	interfering with each other's preference settings or data.
+	
+	The first and most important step is to assign each user a unique home directory
+	(for example, C:\Users\%Username%). Although a default home directory is
+	automatically created for each user in the user's profile, this can cause the
+	user's profile to grow tremendously, slowing the logon process, and increasing
+	system resource use.
+	
+	To avoid this problem, and to allow applications to work properly, use User
+	Manager for Domains to assign a separate home directory to each user.
+	
+	To configure existing users to use separate home directories, perform the
+	following steps:
+	
+	1. Log on as an Administrator and start User Manager for Domains.
+	
+	2. If you are logged on to the domain and want to change local users, on the
+	  User menu, click Select Domain, and then type in the name of the Terminal
+	  Server computer the user accounts are on.
+	
+	3. Select the users you want to change. To select multiple users, press and hold
+	  the SHIFT key while using the up and down arrow keys. To select all users in
+	  a specific group, on the User menu, click Select Users.
+	
+	4. On the User menu, click Properties.
+	
+	5. Click Profile.
+	
+	6. Click the option button next to Local Path and type
+	
+	     drive:\Users\%Username%
+	
+	  where "drive" is the drive on which Terminal Server is installed (usually
+	  drive C), and "Users" is the directory created by the system for home
+	  directories.
+	
+	  NOTE: Although Users is the directory created for home directories, any
+	  directory can be created and used.
+	
+	7. Click OK to return to the User Properties dialog box.
+	
+	8. Click OK to return to the User Manager for Domains main screen.
+	
+	MS-DOS and OS/2 text applications can generally be installed and used without
+	modification. MS-DOS applications that perform keyboard polling may need tuning
+	with the DOSKBD command to avoid excessive resource consumption.
+	
+	Windows applications often use Windows features, such as the system registry and
+	INI files. Some of the information in these files is common to all users, and
+	some information is user-specific, which may require some application
+	customization.
+	
+	There are two ways to install 16-bit or 32-bit Windows applications in a Terminal
+	Server environment: user-specific and user-global.
+	
+	User-Specific Installation
+	--------------------------
+	
+	User-specific means that a specific user installs the application for his or her
+	own use. The default installation is user-specific. Any INI files or other files
+	that the application tries to place in the default Windows directory are
+	installed to that user's home Windows directory. Even if the application is
+	installed to a network or shared directory, other users may not have access to
+	all the DLL and INI files needed to run the application. The user must do a
+	user-specific installation. In short, a separate installation must be done for
+	each user who wants to use the application. If an application is installed using
+	the user-specific method, no special considerations regarding the storage and
+	retrieval of data are needed. However, because each application must be
+	completely installed for each user, this method can consume a large amount of
+	disk space, and adds to administrative overhead in larger environments.
+	
+	Some applications offer the option of doing a network installation. This process
+	copies the installation disks or CD-ROM files to a common directory on the
+	network from which individual users can then run a setup or installation
+	utility. This copies the required INI files to their home Windows directory.
+	Although this process uses less space on the Terminal Server computer than
+	multiple user-specific installations, it still requires that a separate process
+	be run for each user.
+	
+	User-Global
+	-----------
+	
+	Microsoft recommends using the user-global method of installing Windows
+	Applications. With this method, an application is installed one time by an
+	Administrator, and can be run by anyone who logs on to that Terminal Server
+	computer. To perform a user-global installation, use the Control Panel
+	Add/Remove Programs tool, or type "change user /install" (without quotation
+	marks) at the command prompt to place the session into installation mode. Either
+	of these methods will ensure that any INI files are installed to the Terminal
+	Server system directory, instead of the user's home Windows directory.
+	
+	When the installation is complete, click FINISH if you used the Add/Remove
+	Programs tool, or use the Change User or Execute command, to place the session
+	back into execute mode. When a user starts the application for the first time,
+	the required user-specific files are automatically copied to the user's home
+	directory.
+	
+	Most Win32 applications install in a pseudo user-global fashion by default, even
+	when the session is not in installation mode. These applications make use of
+	Terminal Server's registry, where each user can have a unique set of registry
+	settings. Win16 applications use INI files for configuration settings. They must
+	be installed using installation mode so that multiple users have separate copies
+	of these files. It is recommended that you always install any Windows
+	application, whether 16-bit or 32-bit, using installation mode.
+	
+	NOTE: The most common mistake in application installation is to insert an
+	application compact disc, let it start with AutoRun, and bring up its
+	installation options, and then install it from the CD's startup options. This
+	installs the application only for the currently logged on user. Reinstall the
+	application using one of the two methods that follow. Microsoft recommends
+	installing applications through the Control Panel Add/Remove Programs tool.
+	
+	To perform a user-global installation using the Add/Remove Programs tool,
+	complete the following steps:
+	
+	1. Log on to the Terminal Server computer as an Administrator.
+	
+	2. Click Start, point to Settings, click Control Panel, and then double-click
+	  Add/Remove Programs.
+	
+	3. Click Install to start the installation process. It will automatically look
+	  for a setup program. If the Add/Remove Programs tool cannot find it, you can
+	  browse and select the setup program on your hard disk, compact disc, network
+	  share, and so forth. You will get the option to install for all users, or
+	  just for the currently logged on user.
+	
+	  Installing for All Users places the system in installation mode and allows
+	  Terminal Server to keep track of the user-specific application registry
+	  entries, INI files, and DLL files that the application adds to the Terminal
+	  Server system, during installation.
+	
+	4. Install the application according to its instructions. If you are prompted to
+	  type your name during the installation process, you may want to give a
+	  generic name, because the name will be the default for all users. Configure
+	  any default program settings you want all users to have.
+	
+	5. When installation is complete, click FINISH in the Add/Remove Programs tool,
+	  which returns the system to execute mode.
+	
+	It is okay to shut down and restart the server if you are prompted to. When the
+	server restarts, it always starts in execute mode. Proceed to step 6, below.
+	
+	To perform a user-global installation using the command prompt, complete the
+	following steps:
+	
+	1. Log on to the Terminal Server computer as Administrator.
+	
+	2. Click the START button, point to Programs, and then click Command Prompt.
+	
+	3. At an MS-DOS command prompt, type the following command: change user /install
+	  This command places the system in installation mode and allows Terminal
+	  Server to keep track of the user-specific application registry entries, INI
+	  files, and DLL files that the application adds to the Terminal Server system,
+	  during installation.
+	
+	4. Install the application according to its instructions. If you are prompted to
+	  type your name during the installation process, you may want to give a
+	  generic name, because the name will be the default for all users. Configure
+	  any default program settings you want all users to have.
+	
+	5. After the installation is complete, switch to the MS-DOS command prompt and
+	  type the following command: change user /execute This command returns the
+	  system to execute mode.
+	
+	It is okay to shut down and restart the computer if you are prompted to. When the
+	server restarts, it always starts in execute mode. Proceed to step 6, below.
+	
+	Steps Common to Both Installation Modes:
+	
+	6. Verify that any icon groups that the application created are located in the
+	  All Users profile (the equivalent of common groups in Citrix Winframe or
+	  Windows NT 3.51), which is located in the %SystemRoot%\Profiles
+	  directorySpecifically. Check that the icons were created in the Profiles\All
+	  Users\Start Menu\Programs directory. Icons created here will appear in the
+	  lower (common) portion of the user's Program menu on the START menu. Icons
+	  created in the user's profile, or in the Default User profile, appear in the
+	  upper (personal) portion of Programs menu on the START menu. Some
+	  applications are hard-coded to write to the user's profile only. Simply copy
+	  the icons to the All Users profile.
+	
+	7. Log off and log back on as a user to verify that the application works
+	  correctly. Make sure that any shared resources, such as network drives or
+	  printers, are set up for each user, before you run the application. Check the
+	  software documentation for any notes that may apply to the installation or
+	  the use of the application.
+	
+	8. Write-protect the application's directory from all non-Administrator users.
+	  This allows users to read the program files, and protects them from
+	  inadvertent changes or deletion.
+	
+	NOTE: If you installed to an NTFS partition, the security options in Windows NT
+	Explorer allow you to set the security for a wide array of Options. They
+	restrict access only to specific users or groups. If the application was
+	installed on a FAT partition, you can use the ATTRIB command to mark the files
+	and directories as read-only, but you cannot use the advanced security features
+	of NTFS. For this reason, it is recommended that you install Terminal Server,
+	and all applications, on NTFS partitions. Although using NTFS is not a
+	requirement, it does provide a wider range of security options. If the
+	applications reside on a NetWare file server, use the FILER program to set the
+	security options.
+	
+	If you need to determine whether the system is in execute or installation mode,
+	type the following at the MS-DOS command prompt:
+	
+	  change user /query
+	
+	You can tune the exact actions performed when a user-global application is
+	started and optimized by creating and setting compatibility bits in registry
+	variables associated with the application.
+	
+	The following sections describe what happens in installation mode and execute
+	mode.
+	
+	Installation Mode
+	-----------------
+	
+	Putting a user's session in installation mode before installing an application
+	causes the application to be installed in the %SystemRoot% directory, rather
+	than in the user's home directory. Whenever a user's session is in installation
+	mode, all changes made to an application's INI files are written to this central
+	location. Placing the session in installation mode allows Terminal Server to
+	keep track of the user-specific application registry entries and any INI files
+	that the application may install during installation. This allows Terminal
+	Server to automatically propagate these registry keys and files to each user as
+	they are needed by applications while in execute mode. After an application has
+	been installed, return the user's session to execute mode. This avoids writing
+	user-specific data to the initial user-global installation. When a session is in
+	installation mode, the following happens when installing an application:
+	WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+	that may require you to reinstall your operating system. Microsoft cannot
+	guarantee that you can solve problems that result from using Registry Editor
+	incorrectly. Use Registry Editor at your own risk.
+	
+	- All registry entries that are created for the current user are shadowed in
+	  the following subkey:
+	
+	     HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT
+	     \CurrentVersion\Terminal Server\Install
+	
+	  NOTE: The registry path above is one address. It has been wrapped for
+	  readability.
+	
+	- Registry keys added by an application to the HKEY_LOCAL_MACHINE hive are
+	  copied in the following subkey:
+	
+	     HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT
+	     \CurrentVersion\Terminal Server\Install\Machine
+	
+	  NOTE: The registry path above is one address. It has been wrapped for
+	  readability.
+	
+	- If an application queries the WINDOWS directory using the GetWindowsDirectory
+	  API, Terminal Server returns the %SystemRoot% Directory. If any INI file
+	  entries are added using the WritePrivateProfileString API, they are added to
+	  the INI files in the %SystemRoot% directory.
+	
+	- If the application does not use these APIs for modifying INI files, the
+	  results will be unpredictable, and can cause performance or usability
+	  problems.
+	
+	Execute Mode
+	------------
+	
+	Execute mode is the default mode when a user logs on. Terminal Server compares
+	the INI files in %SystemRoot% to the INI files in the user's home Windows
+	directory. What happens when a %SystemRoot% INI file is newer than the INI file
+	in the user's home directory is controlled by the 0x00000040 bit of the registry
+	value for the file, which is located in the following subkey:
+	
+	  HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion
+	  \Terminal Server\Compatibility\IniFiles
+	
+	NOTE: The registry path above is one address. It has been wrapped for
+	readability.
+	
+	If the bit is 0 (zero), or the value does not exist, the user's INI file is
+	over-written with the newer version of the INI file in %SystemRoot%. If the bit
+	is 1, the user's INI file is merged with the newer %SystemRoot% INI file.
+	
+	The user's previous version of the INI file is renamed to Inifile.ctx, where
+	Inifile is the name of the INI file.
+	
+	WARNING: You can read INI files with a text editor but do not save any changes.
+	Terminal Server has no way of knowing that the file has been updated. The
+	changes may be lost and the file may be damaged.
+	
+	The user's registry values are loaded from his or her user profile (or from the
+	default profile, if no user profile exists for them), and are stored in
+	HKEY_USERS\SID, where SID is the security identifier for the user's account. The
+	values are then compared with the system values stored in the following subkey:
+	
+	  HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT
+	  \CurrentVersion\Terminal Server\Install
+	
+	NOTE: The registry path above is one address. It has been wrapped for
+	readability.
+	
+	If the user's keys are older, they are deleted and replaced with the system
+	versions. Registry mapping is disabled if the 0x00000100 bit of the registry
+	value is set to 1 for the following subkey:
+	
+	  HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion
+	  \Terminal Server\Compatibility\Applications
+	
+	NOTE: The registry path above is one address. It has been wrapped for
+	readability.
+	
+	HKEY_CURRENT_USER will point to the HKEY_USERS path for the current user, when
+	there are multiple users on the Terminal Server computer.
+	
+	While an application is running, the following occurs:
+	
+	- When an application tries to read a registry entry under HKEY_CURRENT_USER
+	  that does not exist, Terminal Server checks for the key in the following
+	  location:
+	
+	     HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion
+	     \Terminal Server\Install
+	
+	  If the requested key exists, the key and its subkeys are copied to the
+	  appropriate location in HKEY_CURRENT_USER.
+	
+	- When an application uses the GetPrivateProfileString API to read an INI file
+	  that does not exist in the user's home Windows directory, Terminal Server
+	  checks for the INI file in %SystemRoot%. If the INI file exists in
+	  %SystemRoot%, the INI file is copied to the user's home directory. When an
+	  application queries the Windows directory path using the GetWindowsDirectory
+	  API, Terminal Server returns the user's home directory.
+	
+	Controlling Application Execution in Execute Mode
+	-------------------------------------------------
+	
+	Several compatibility bits can be set for an application, registry path, or INI
+	file to change how Terminal Server handles the merging of application
+	initialization data, when a session is in execute mode. These compatibility bits
+	are set in the registry in the following subkey:
+	
+	  HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT
+	  \CurrentVersion\Terminal Server\Compatibility
+	
+	NOTE: The registry path above is one address. It has been wrapped for
+	readability.
+	
+	There are three separate keys for applications, INI files, and registry entries
+	under this registry path. The default settings work for most applications, but
+	can be further tuned, using the compatibility bits described below.
+	
+	WARNING: These compatibility bits should only be changed if an application is not
+	working properly.
+	
+	The first set of compatibility bits indicates the version of the application that
+	the settings are for. Not all combinations are useful; for example, an MS-DOS
+	application will never make any registry calls. Because the path to the file is
+	not specified, and multiple applications may use the same filename (for example,
+	Setup.exe and Install.exe are now regularly used for installation programs),
+	specifying the application type will help ensure that the compatibility settings
+	do not affect other applications that have the same filename.
+	
+	Add the values of the bits you want to set, to get the String Value. For example,
+	to return the user name instead of the computer name for both 16- bit and 32-bit
+	versions of Myapp.exe, create a registry key in the following location:
+	
+	WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+	that may require you to reinstall your operating system. Microsoft cannot
+	guarantee that you can solve problems that result from using Registry Editor
+	incorrectly. Use Registry Editor at your own risk.
+	
+	1. Start Registry Editor (Regedt32.exe), and go to the following subkey:
+	
+	     HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion
+	     \Terminal Server\Compatibility\Applications\Myapp
+	
+	2. On the Edit menu, click Add Value and type the following information:
+	
+	     Value Name: Flags of
+	     Type:      REG_DWORD
+	
+	  Type the hex value of 11C (add 0x00000004 for 16-bit Windows applications,
+	  0x00000008 for 32-bit Windows applications , 0x00000010, to return the user
+	  name instead of the computer name, and 0x00000100 to disable registry
+	  mapping).
+	
+	Applications
+	------------
+	
+	The compatibility bits below affect the application when it is running. They are
+	located in the following registry subkey:
+	
+	  HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion
+	  \Terminal Server\Compatibility\Applications\Appname
+	
+	NOTE: Appname is the name of the application's executable file (for example, if
+	the executable file name for an application is Prog1.exe, the appname would be
+	PROG1).
+	
+	Compatibility Bits:
+	
+	- DOS application: 0x00000001
+	
+	- OS/2 application: 0x00000002
+	
+	- Windows 16-bit application: 0x00000004
+	
+	- Windows 32-bit application: 0x00000008
+	
+	- Return user name instead of computer name: 0x00000010
+	
+	- Return Terminal Server build number: 0x00000020
+	
+	- Disable registry mapping for this application: 0x00000100
+	
+	- Do not substitute user Windows directory: 0x00000400
+	
+	Use the "Return user name instead of computer name" flag for applications that
+	use the computer name as a unique identifier. This returns the user's name to
+	the application, thereby giving each user of the application a unique
+	identifier.
+	
+	Use "Disable registry mapping for this application" to retain only one global
+	copy of the registry variables used by the application.
+	
+	The "Do not substitute user Windows directory" bit, when set, retains the
+	SystemRoot directory for GetWindowsDirectory API calls. The default action, if
+	this bit is not set, is to replace all paths to the Windows directory with the
+	path to the user's Windows directory.
+	
+	INI Files
+	---------
+	
+	The compatibility bits below are located in the following registry path. They
+	control INI file propagation.
+	
+	  HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion
+	  \Terminal Server\Compatibility\IniFiles\Inifile
+	
+	NOTE: Inifile is the name of the INI file (for example, if the INI file name for
+	an application is Prog1.ini, the Inifile would be PROG1)
+	
+	Compatibility Bits:
+	
+	- Windows 16-bit application: 0x00000004
+	
+	- Windows 32-bit application: 0x00000008
+	
+	- Synchronize user INI file to system version: 0x00000040
+	
+	- Do not substitute user Windows directory: 0x00000080
+	
+	The "Synchronize user INI file to system version" bit, when set, adds new entries
+	from the system master INI file when the application is started, and does not
+	delete any existing data in the user's INI file. If this bit is not set, the
+	default action is to overwrite the user's INI file, if it is older than the
+	system master INI file.
+	
+	When set, the "Do not substitute user Windows directory" bit retains the
+	SystemRoot directory for file paths in the INI file when the system master
+	version of the INI file is copied to the user's Windows directory. If this bit
+	is not set, the default action is to replace all paths to the Windows directory,
+	with the path to the user's Windows directory.
+	
+	Registry Paths
+	--------------
+	
+	The compatibility bits below are located in the following registry subkey, and
+	control registry propagation.
+	
+	  HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion
+	  \Terminal Server\Compatibility\RegistryEntries\Pathname
+	
+	NOTE: Pathname is the registry path in the HKEY_CURRENT_USER\Software key (for
+	example, if the registry variable path for an application is
+	HKEY_CURRENT_USER\Software\BrandX\PROG1, the pathname would be Brandx\PROG1).
+	
+	Compatibility Bits:
+	
+	- Windows 32-bit application: 0x00000008
+	
+	- Disable registry mapping for application: 0x00000100
+	
+	When set, the "Disable registry mapping for application" bit adds new entries
+	from the system master registry image, when the application is started. It does
+	not delete any existing data in the user's registry. If this bit is not set, the
+	default action is to delete and write over the user's registry data if it is
+	older than the system master registry data.
+	
+	Required API Usage for Application Compatibility
+	------------------------------------------------
+	
+	To fully use the user-global installation feature of Terminal Server, an
+	application must use the proper APIs to read and write INI file and registry
+	information.
+	
+	16-bit Applications
+	-------------------
+	
+	The 16-bit applications must use the GetPrivateProfileString API to read an INI
+	file, and the WritePrivateProfileString API to write to an INI file.
+	
+	32-bit Applications
+	-------------------
+	
+	The 32-bit applications must use the registry APIs to update registry keys. These
+	APIs include:
+	
+	  RegOpenKeyEx RegCloseKeyEx RegEnumKeyEx RegDeleteKeyEx RegQueryValueEx
+	  RegSetValueEx
+	
+	Using these APIs in installation mode will time stamp the entry and cause an
+	update of each user's registry settings on his or her next logon attempt.
+	Manually editing the registry does not change the time stamp for the registry
+	entry, and the changes will not be propagated to users when they log on.
+	
+	Application Network Integration
+	-------------------------------
+	
+	In addition to the Windows NT environment requirements, the following
+	considerations may apply to network-aware applications in a Terminal Server
+	environment:
+	
+	  Unique network addresses Gateways NetWare NDS requirements
+	
+	Unique Network Addresses
+	------------------------
+	
+	Some applications are designed to require a unique network interface card (NIC)
+	address, for each instance of the application. An example of this design is a
+	client/server application that requires a unique IP address for each client
+	connecting to a server. An application designed to communicate in this way
+	allows only one concurrent instance of its client to run on a Terminal Server
+	computer. For an application to properly communicate in a Terminal Server
+	MultiWin environment, the application must be able to negotiate a unique
+	socket.
+	
+	The ability to negotiate a unique socket is a key component in the design of a
+	compatible network application. Hard-coding any part of the address scheme may
+	lead to incompatibilities. If two applications try to communicate through the
+	same address, incorrect operation and application failure may result.
+	
+	TCP/IP
+	------
+	
+	Some applications that use the TCP/IP protocol to communicate use the IP address
+	as a hard-coded identifier of the client. Multiple instances of these
+	applications will not run in a Terminal Server MultiWin environment. For an
+	application to properly communicate in a MultiWin environment, the application
+	must be able to negotiate a private socket. This allows the client and server to
+	communicate using a unique IP/PORT/SOCKET address.
+	
+	IPX
+	---
+	
+	Some applications that use IPX use a hard-coded socket for communications,
+	relying on a NIC address as the unique identifier. These applications will not
+	run in a Terminal Server MultiWin environment, because all users communicate
+	over the same NIC address, causing incorrect program operation.
+	
+	NetBEUI and NetBIOS
+	-------------------
+	
+	Some applications that use NetBEUI or NetBIOS use a specific name as the unique
+	identifier. These applications will not run in a Terminal Server MultiWin
+	environment, because all users communicate using the same specific name, causing
+	incorrect program operation.
+	
+	Gateways
+	--------
+	
+	Some mainframe connectivity products use the network address of the NIC as a
+	session and user identifier. These products are limited to one concurrent user
+	on a Terminal Server. In these cases, the only solution is to use a data
+	communications gateway between the Terminal Server and the minicomputer. The
+	terminal emulator can then use a virtual socket-based protocol (for example,
+	IPX) to communicate with the gateway, allowing multiple users on the Terminal
+	Server to use the product.
+	
+	Novell NetWare NDS Requirements
+	-------------------------------
+	
+	Terminal Server users can be authenticated by, and use resources in, a NetWare
+	NDS (NetWare 4.x) environment. Most applications running in the NDS environment
+	do not use the NDS-specific APIs. They run exactly as they would if they were in
+	a NetWare bindery (NetWare 3.x) environment. Applications running on a Terminal
+	Server computer must be able to operate in a NetWare bindery environment,
+	because NDS-specific APIs are not supported.
+	
+	Other Networking Considerations
+	-------------------------------
+	
+	For best performance, do not install the server component of client/server
+	software, such as Microsoft SQL Server, on the Terminal Server computer. These
+	components are very resource-intensive and may affect the performance of
+	multiple Terminal Server user sessions. Terminal Server is tuned to run multiple
+	user environments rather than a server environment. It may be helpful to think
+	of Terminal Server as a collection of virtual computers running Windows NT
+	Workstations. For example, computers running Windows NT Workstation allow
+	processes only a few cycles of CPU time before switching to other waiting
+	processes. This enhances the multitasking of user applications. Terminal Server
+	is tuned to handle processes the same way that Windows NT Server is tuned
+	differently, allowing server application (for example, SQL Server or Microsoft
+	Exchange Server) processes to use the CPU for much longer periods of time before
+	switching to other queued processes.
+	
+	If you use a COM server application for Terminal Server clients, the server
+	portion of the application cannot be installed on the same Terminal Server
+	computer to which clients connect. It can be placed on other Terminal Servers
+	(if necessary), or on other non-Terminal Server resources, which is recommended.
+	The limitation of COM applications is that the client and server portions cannot
+	run on the same Terminal Server computer.
+	
+	Terminal Server RDP Client and Citrix ICA Clients
+	-------------------------------------------------
+	
+	Microsoft's Remote Desktop Protocol (RDP) client and Citrix ICA clients have many
+	common features. Both are designed for high-performance Windows presentation
+	services over low-bandwidth connections.
+	
+	Microsoft's RDP client and Citrix ICA clients include the following:
+	
+	- Graphical Windows application screen presentation
+	
+	- Keyboard and mouse input
+	
+	- Session control
+	
+	- Error detection and recovery
+	
+	- Encryption
+	
+	- Data compression
+	
+	- Multiple security levels
+	
+	- General purpose Terminal Server browsing
+	
+	Citrix ICA clients add the following:
+	
+	- Full-screen text presentation
+	
+	- Framing for asynchronous connections
+	
+	- File system redirection
+	
+	- Print redirection
+	
+	- COM port redirection
+	
+	- Multiple generic virtual channels
+	
+	- Cut and paste across clients and servers
+	
+	- Multiple operating system platforms, including MS-DOS, Windows 3.1,
+	  Macintosh, UNIX
+	
+	To use the Citrix ICA client with Terminal Server, install the Citrix add- on
+	service, code-named Metaframe, currently in beta. Metaframe also allows
+	administrators to define SPX, NetBEUI, and asynchronous connections in Terminal
+	Server Connection Configuration. The initial release of Terminal Server uses
+	only a TCP/IP connection (RDP is encapsulated, using TCP for transport and
+	connecting at port 3389).
+	
+	Both the RDP and ICA clients are designed to efficiently transmit keyboard,
+	mouse, and video information. Microsoft and Citrix recommend the following
+	guidelines for graphics:
+	
+	Graphics and Font Considerations:
+	
+	- Use vector graphics instead of bit-mapped images for graphics.
+	
+	- Use the raster operator to brush graphics to the screen.
+	
+	Bitmaps require more bandwidth than vector graphics, because all of the image
+	data for each unique bitmap must be transmitted from the server at least one
+	time. RDP and ICA clients compensate for this by caching each unique bitmap on
+	the client system. When a bitmap is to be displayed, it is compared with the
+	client's locally cached bitmaps. If the displayed bitmap matches one that is
+	already cached at the client, a command is sent telling the client to redisplay
+	the local copy instead of sending the image over the network.
+	
+	The use of TrueType fonts is preferred because these fonts are stored on the
+	client. If an application must use custom or Adobe fonts, make sure the fonts
+	are configured as embedded Windows NT fonts to allow faster display. More font
+	technology is now being embedded in the Windows NT kernel; this will improve
+	performance in future versions of Terminal Server. For RDP clients, fonts are
+	the reason why full-screen MS-DOS mode has been disabled. To enable full-screen
+	MS-DOS, an entire font set must be downloaded, because TrueType fonts cannot be
+	used. This would cause performance to degrade severely, so the feature has been
+	disabled.
+	
+	Blinking cursors cause unnecessary bandwidth use, because every blink requires
+	data packets to be transmitted. Applications that do not use a blinking cursor,
+	or that allow the blinking cursor to be disabled, are preferred. This can be
+	configured with the Control Panel tool.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+	Version           : winnt:4.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

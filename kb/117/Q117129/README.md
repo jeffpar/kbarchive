@@ -1,0 +1,106 @@
+---
+layout: page
+title: "Q117129: Cannot Drag and Drop Icons in Program Manager"
+permalink: kb/117/Q117129/
+---
+
+## Q117129: Cannot Drag and Drop Icons in Program Manager
+
+	Article: Q117129
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): 3.1,3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 08-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows versions 3.1, 3.11 
+	- Microsoft Windows for Workgroups versions 3.1, 3.11 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	In Microsoft Windows and Windows for Workgroups, the application icons within
+	Program Manager cannot be moved.
+	
+	CAUSE
+	=====
+	
+	This problem occurs if any of the following conditions exist:
+	
+	- The group files are marked with the Hidden, System, and/or Read-Only
+	  attribute(s).
+	
+	  -or-
+	
+	- The EditLevel= entry in the PROGMAN.INI file is set to 2 or higher.
+	
+	  -or-
+	
+	- The active field for the icon is larger than the distance being moved.
+	
+	RESOLUTION
+	==========
+	
+	To correct this problem, use the appropriate method below.
+	
+	- Remove the Hidden, Read-Only, and/or System attribute(s) from the program
+	  group files by typing the command:
+	
+	  attrib c:\windows\*.grp -r -h -s
+	
+	  -or-
+	
+	- From the File menu, choose Move. If the Move command is unavailable, open the
+	  PROGMAN.INI file in an ASCII text editor and locate the EditLevel= entry in
+	  the [Restrictions] section. If the entry is set to 2, 3, or 4, change it to 0
+	  (zero), which is the default value.
+	
+	
+	  -or-
+	
+	- Decrease the active field area by opening the WIN.INI file in an ASCII text
+	  editor, locating the entries DoubleClickHeight= and DoubleClickWidth= in the
+	  [Windows] section, and reducing the values of either one or both these
+	  entries. Then restart Windows.
+	
+	MORE INFORMATION
+	================
+	
+	The active field of an icon is the area in which Windows accepts a double- click
+	for execution. The WIN.INI file contains entries that determine this active
+	field size:
+	
+	     [Windows]
+	     DoubleClickHeight=
+	     DoubleClickWidth=
+	
+	An icon's active field is extended to the Height and Width values listed above in
+	pixels. These values make an icon active (that is, able to be executed when
+	highlighted) for that area. An icon cannot be moved initially within its active
+	field. The default value for these settings is 4. If the active field is larger
+	than the display resolution, Windows gives the appearance that the icons cannot
+	be moved at all. Decreasing the active field area enables the icons to be moved
+	again.
+	
+	NOTE: If the program group icons cannot be moved from within Program Manager, the
+	EditLevel= value is set to 1 or above, or the active field is larger than the
+	distance being moved.
+	
+	REFERENCES
+	==========
+	
+	"Microsoft Windows Resource Kit" manual for version 3.1, pages 221 and 165
+	
+	Additional query words: 3.10 3.1 3.11 drag and drop greyed grayed out dimmed
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin310 kbWin311 kbWFW310 kbWFW311
+	Version           : :3.1,3.11
+	
+	=============================================================================
+	

@@ -1,0 +1,156 @@
+---
+layout: page
+title: "Q152294: HOWTO: Accessing Binary Data Using dbDao"
+permalink: kb/152/Q152294/
+---
+
+## Q152294: HOWTO: Accessing Binary Data Using dbDao
+
+	Article: Q152294
+	Product(s): Microsoft C Compiler
+	Version(s): winnt:4.0,4.1,4.2,4.2b,5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbcode kbole kbProgramming kbDAOsearch kbMFC kbVC400 kbVC500 kbVC600
+	Last Modified: 09-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual C++, versions 4.0, 4.1 
+	- Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 4.2b, 5.0, 6.0 
+	- Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 4.2b, 5.0, 6.0 
+	- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	When using the DAO SDK C++ classes to access binary data (such as a bitmap) you
+	will find that the data is returned in a COleVariant. COleVariant is an MFC
+	class that wraps the OLE VARIANT data type. Within the VARIANT, the data is
+	stored as an OLE SAFEARRAY.
+	
+	Extracting the binary data from the COleVariant requires some knowledge of
+	VARIANTs and SAFEARRAYs. The sample code below illustrates how to work with
+	these data types by providing a function for extracting binary data from a
+	COleVariant and a function for storing binary data in a COleVariant.
+	
+	MORE INFORMATION
+	================
+	
+	Sample Code
+	-----------
+	
+	     //Extensive error checking is left out to make the code more readable
+	
+	     BOOL GetBinaryFromVariant(COleVariant & ovData, BYTE ** ppBuf,
+	                                  unsigned long * pcBufLen)
+	     {
+	       BOOL fRetVal = FALSE;
+	
+	     //Binary data is stored in the variant as an array of unsigned char
+	       if(ovData.vt == (VT_ARRAY|VT_UI1))  // (OLE SAFEARRAY)
+	       {
+	         //Retrieve size of array
+	         *pcBufLen = ovData.parray->rgsabound[0].cElements;
+	
+	         *ppBuf = new BYTE[*pcBufLen]; //Allocate a buffer to store the data
+	         if(*ppBuf != NULL)
+	         {
+	           void * pArrayData;
+	
+	           //Obtain safe pointer to the array
+	           SafeArrayAccessData(ovData.parray,&pArrayData);
+	
+	           //Copy the bitmap into our buffer
+	           memcpy(*ppBuf, pArrayData, *pcBufLen);
+	
+	           //Unlock the variant data
+	           SafeArrayUnaccessData(ovData.parray);
+	           fRetVal = TRUE;
+	         }
+	       }
+	       return fRetVal;
+	     }
+	
+	     BOOL PutBinaryIntoVariant(COleVariant * ovData, BYTE * pBuf,
+	                                  unsigned long cBufLen)
+	     {
+	       BOOL fRetVal = FALSE;
+	
+	       VARIANT var;
+	       VariantInit(&var);  //Initialize our variant
+	
+	       //Set the type to an array of unsigned chars (OLE SAFEARRAY)
+	       var.vt = VT_ARRAY | VT_UI1;
+	
+	       //Set up the bounds structure
+	       SAFEARRAYBOUND  rgsabound[1];
+	
+	       rgsabound[0].cElements = cBufLen;
+	       rgsabound[0].lLbound = 0;
+	
+	       //Create an OLE SAFEARRAY
+	       var.parray = SafeArrayCreate(VT_UI1,1,rgsabound);
+	
+	       if(var.parray != NULL)
+	       {
+	         void * pArrayData = NULL;
+	
+	         //Get a safe pointer to the array
+	         SafeArrayAccessData(var.parray,&pArrayData);
+	
+	         //Copy bitmap to it
+	         memcpy(pArrayData, pBuf, cBufLen);
+	
+	         //Unlock the variant data
+	         SafeArrayUnaccessData(var.parray);
+	
+	         *ovData = var;  // Create a COleVariant based on our variant
+	         VariantClear(&var);
+	         fRetVal = TRUE;
+	       }
+	
+	       return fRetVal;
+	     }
+	
+	     //How you might call these functions
+	
+	     CdbRecordset rs;
+	
+	     //Code for initializing DAO and opening the recordset left out...
+	
+	     COleVariant ovData = rs.GetField(_T("MyBinaryField"));
+	
+	     BYTE * pBuf = NULL;
+	     unsigned long cBufLen;
+	
+	     if(GetBinaryFromVariant(ovData,&pBuf,&cBufLen))
+	     {
+	       //Do something with binary data in pBuf...
+	
+	       //Write back a new record containing the binary data
+	
+	       COleVariant ovData2;
+	       if(PutBinaryIntoVariant(&ovData2,pBuf,cBufLen))
+	       {
+	         rs.AddNew();
+	         rs.SetField(_T("MyBinaryField"), ovData2); //Write our COleVariant
+	     to the table
+	         rs.Update();
+	       }
+	       //Clean up memory allocated by GetBinaryFromVariant
+	       if(pBuf)
+	         delete pBuf;
+	     }
+	
+	Additional query words: kbgrpMFCOLE
+	
+	======================================================================
+	Keywords          : kbcode kbole kbProgramming kbDAOsearch kbMFC kbVC400 kbVC500 kbVC600 
+	Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC410 kbVC420 kbVC500 kbVC600 kbVC32bitSearch kbVC420b kbVC500Search
+	Version           : winnt:4.0,4.1,4.2,4.2b,5.0,6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

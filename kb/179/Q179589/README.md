@@ -1,0 +1,118 @@
+---
+layout: page
+title: "Q179589: How to Configure the Ascend Pipeline 25-Px to Work with MSN"
+permalink: kb/179/Q179589/
+---
+
+## Q179589: How to Configure the Ascend Pipeline 25-Px to Work with MSN
+
+	Article: Q179589
+	Product(s): The Microsoft Network
+	Version(s): WINDOWS:2.5
+	Operating System(s): 
+	Keyword(s): kbhw kbmsn kbHardware
+	Last Modified: 25-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The Microsoft Network version 2.5 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes how to configure the Ascend Pipeline 25-Px Integrated
+	Services Digital Network (ISDN) adapter to work with MSN, The Microsoft Network.
+	
+	MORE INFORMATION
+	================
+	
+	NOTE: These steps work with the Pipeline 25-Px version 4.6 drivers. To obtain
+	the latest Pipeline 25-Px drivers, please contact Ascend Communications, Inc.
+	
+	For information about how to contact Ascend Communications, please see the
+	following article in the Microsoft Knowledge Base:
+	
+	  Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+	
+	To configure the Ascend Pipeline 25-Px ISDN adapter for MSN, follow these steps:
+	
+	1. Configure your ISDN adapter according to the Ascend Pipeline 25-Px manual.
+	
+	2. Click Start, point to Programs, point to Accessories, and then click
+	  HyperTerminal.
+	
+	  NOTE: If you are using Microsoft Windows 98, click Start, point to Programs,
+	  point to Accessories, point to Communications, and then click HyperTerminal.
+	
+	3. Double-click Hypertrm.exe.
+	
+	  NOTE: Ascend suggests that you use a different terminal emulator. If you use a
+	  terminal emulator other than HyperTerminal, you need to use instructions for
+	  that terminal emulator.
+	
+	4. In the Name box, type "P25Px" (without quotation marks), and then click OK.
+	
+	5. In the Connect Using box, click the COM port your adapter is configured to
+	  use, and then click OK.
+	
+	6. In the Bits Per Second box, click 9600, and then click OK.
+	
+	7. Press CTRL+L, press ENTER, press ENTER, and then verify or change the
+	  following configuration entries.
+	
+	  NOTE: Use the ARROW keys to move between fields and change the entries.
+	
+	     Option         Entry
+	     -------------------------------------------------------------------
+	
+	     Switch Type    NI-1
+	     My Num A       The first ISDN line number
+	     My Num B       The second ISDN line number
+	     SPID A         The first SPID on your ISDN line
+	     SPID B         The second SPID on your ISDN line
+	     My Name        MSN/<MSN MemberID>
+	     Dial           MSN access number
+	     Send Auth      CHAP
+	     Send PW        <MSN password>
+	     My Addr        181.100.100.99/16
+	     Plug & Play    YES
+	     Data Svc       64k
+	     Link Comp      STAC
+	     Idle           Type a number to indicate how many seconds the
+	                    connection must be idle before it disconnects. Type
+	                    "0" (without quotation marks) if you do not want the
+	                    connection to automatically disconnect.
+	     Max Ch Count   2
+	
+	8. Press ESC, press the DOWN ARROW key to choose Save, and then press ENTER.
+	
+	9. To verify that your settings are correct press CTRL+D, and then click Dial.
+	  If your adapter connects, quit HyperTerminal, and then continue to the next
+	  step. If you cannot connect, repeat steps 1-8.
+	
+	  NOTE: The Ascend Pipeline 25-Px ISDN adapter uses a technology called MP+.
+	  Adapters that use this technology do not use the second channel until the
+	  bandwidth is high enough to require it. When the second channel is required
+	  it connects automatically.
+	
+	10. Right-click the MSN or The Microsoft Network icon on your desktop, and then
+	  click Properties.
+	
+	11. On the Connection tab, click "Connect to the Internet using a local area
+	  network."
+	
+	12. Click the "Access the Internet using a proxy server" check box to clear it,
+	  and then click OK.
+	
+	Additional query words: msnet msnetwork microsoft-net m.s.n.
+	
+	======================================================================
+	Keywords          : kbhw kbmsn kbHardware 
+	Technology        : kbMSNSearch kbMSN250
+	Version           : WINDOWS:2.5
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

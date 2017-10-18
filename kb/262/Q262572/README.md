@@ -1,0 +1,146 @@
+---
+layout: page
+title: "Q262572: BUG: FormSet from Functional Conversion Closes Unexpectedly"
+permalink: kb/262/Q262572/
+---
+
+## Q262572: BUG: FormSet from Functional Conversion Closes Unexpectedly
+
+	Article: Q262572
+	Product(s): Microsoft FoxPro
+	Version(s): 3.0,3.0b,5.0,5.0a,6.0
+	Operating System(s): 
+	Keyword(s): kbprint kbContainer kbCtrl kbvfp300 kbvfp300b kbvfp300bBUG kbvfp500 kbvfp500a kbvfp500a
+	Last Modified: 07-SEP-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	After a functional conversion of a FoxPro 2.x (for either MS-DOS or Microsoft
+	Windows) Screen is performed, the resulting formset closes unexpectedly after
+	printing a report or encountering an error that is handled by the default error
+	handler of Visual FoxPro.
+	
+	CAUSE
+	=====
+	
+	The FoxPro 2.x Screen contained code in the On Screen Deactivate section. The
+	Visual FoxPro functional conversion process places this code in the
+	ReadDeactivate event of the resulting formset. Any code or comments in the
+	ReadDeactivate event of the formset cause the form to unload when the Screen
+	loses focus to any of the following items:
+	
+	- The Error dialog box of the default Visual FoxPro error handler.
+	
+	- The Printing Report spooler dialog box that appears when printing a Visual
+	  FoxPro report.
+	
+	- The window created by a MODIFY COMMAND or MODIFY MEMO command.
+	
+	- Invoking a Visual FoxPro form with a Do FORM command.
+	
+	
+	RESOLUTION
+	==========
+	
+	To avoid this behavior, remove all code and comments from the ReadDeactivate
+	event of the formset. Generally, this code can be placed in the Destroy event of
+	the formset. Test the application to ensure that the code functions properly
+	once it is moved out of the ReadDeactivate event.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article.
+	
+	MORE INFORMATION
+	================
+	
+	The ReadDeactivate event is specific to a formset and it is used in conjunction
+	with other Read-related events to allow for the conversion of FoxPro 2.x Screens
+	to Visual FoxPro forms. While the behavior is present in the cases described in
+	the "Cause" section of this article, it is not easily reproduced with a formset
+	that is created apart from the functional conversion process.
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	In FoxPro 2.6:
+	
+	1. Using a table in Fox2x format, create a quick report, and then save and close
+	  it.
+	
+	2. Create a new screen.
+	
+	3. Add a button with the following information:
+	
+	   - Two Prompts: ("Print" and "Exit")
+	   - variable = m.what2do
+	   - VALID PROCEDURE CODE:
+	
+	  DO CASE
+	
+	     CASE m.what2do = 1
+	        REPORT FORM <reportname> NOCONSOLE TO PRINTER PROMPT
+	
+	     CASE m.what2do = 2
+	        CLEAR READ
+	
+	  ENDCASE
+	
+	4. From the Screen menu, choose Layout.
+	
+	5. On the Screen Layout window, choose Options, and then choose Code.
+	
+	6. In the On Screen Activate code section, add the following code:
+	
+	  PUSH KEY
+	
+	7. In the On Screen Deactivate code section, add the following code:
+	
+	  POP KEY
+	
+	8. Save the screen, generate the .spr code, and the run the code.
+	
+	9. Select to print the report. In the Prompt dialog box, click OK. Note that the
+	  screen is still in its READ wait state.
+	
+	10. Exit the screen.
+	
+	In Visual FoxPro:
+	
+	1. Open the screen created earlier, and perform a functional conversion. After
+	  conversion, it may be necessary to overcome the invalid ColorSource bug. Do
+	  this as follows:
+	
+	  1. USE the screen .scx file as a table.
+	  2. Issue the following commands:
+	
+	  REPLACE ALL properties WITH STRTRAN(properties,"ColorSource = 0","ColorSource = 4")
+	  REPLACE ALL properties WITH STRTRAN(properties,"ColorSource = 1","ColorSource = 4")
+	  REPLACE ALL properties WITH STRTRAN(properties,"ColorSource = 2","ColorSource = 4")
+	  REPLACE ALL properties WITH STRTRAN(properties,"ColorSource = 3","ColorSource = 4")
+	  REPLACE ALL properties WITH STRTRAN(properties,"ColorSource = 5","ColorSource = 4")
+	  REPLACE ALL properties WITH STRTRAN(properties,"ColorSource = 6","ColorSource = 4")
+	
+	2. Run the form and then print the report. When the Spooler dialog box closes,
+	  the form closes.
+	
+	Additional query words: disappear
+	
+	======================================================================
+	Keywords          : kbprint kbContainer kbCtrl kbvfp300 kbvfp300b kbvfp300bBUG kbvfp500 kbvfp500a kbvfp500aBUG kbvfp600 kbvfp600bug kbXBase kbGrpDSFox kbDSupport kbCodeSnippet 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+	Version           : :3.0,3.0b,5.0,5.0a,6.0
+	Issue type        : kbbug
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

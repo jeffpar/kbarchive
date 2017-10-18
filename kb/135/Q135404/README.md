@@ -1,0 +1,147 @@
+---
+layout: page
+title: "Q135404: Multihomed Master Browser May Cause Event ID 8021 and 8032"
+permalink: kb/135/Q135404/
+---
+
+## Q135404: Multihomed Master Browser May Cause Event ID 8021 and 8032
+
+	Article: Q135404
+	Product(s): Microsoft Windows NT
+	Version(s): 2000,3.5,3.51,4.0
+	Operating System(s): 
+	Keyword(s): kbnetwork
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+	- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+	- Microsoft Windows 2000 Advanced Server 
+	- Microsoft Windows 2000 Server 
+	- Microsoft Windows 2000 Professional 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	--------
+	
+	Your computer running Microsoft Windows NT or Windows 2000 may occasionally
+	log one or more of the following events in the Event Viewer System log:
+	
+	  Event id: 8021
+	  Source: Browser
+	  Description: The browser was unable to retrieve a list of servers from the
+	  browser master <PDC> on the network \device\<protocol_netcard>.
+	  The data is the error code.
+	
+	  -or-
+	
+	  Event id: 8032
+	  Source: Browser
+	  Description: The browser service has failed to retrieve the backup list too
+	  many times on transport of <protocol_netcard>. The backup browser is
+	  stopping.
+	
+	This symptom occurs if:
+	
+	- Your computer is a multihomed computer (that is, it may link simultaneously
+	  to two or more subnets using multiple network cards).
+	
+	- Your computer is a master browser.
+	
+	- Your computer is running the TCP/IP protocol.
+	
+	
+	CAUSE
+	=====
+	
+	The following situations can cause this symptom:
+	
+	- Your computer network cards are linked to the same subnet.
+	
+	- Your computer network cards are not linked directly to the same subnet, but
+	  are linked indirectly through other subnets that they are connected to.
+	
+	- The master browser is using an incorrect subnet mask.
+	
+	WORKAROUND
+	==========
+	
+	To work around this problem, do one of the following:
+	
+	- Unbind all but one of the TCP/IP subnet transport bindings from the
+	  workstation service.
+	
+	  -or-
+	
+	- Remove all but one of the network cards or RAS connections.
+	
+	  -or-
+	
+	- At the command prompt type the following command:
+	
+	  "net stop browser" (without the quotation marks)
+	
+	  NOTE: This option prevents you from receiving computer browse lists from other
+	  networks.
+	
+	After you perform these steps, wait at least 10 minutes to see if the errors
+	still occur. If they do, continue troubleshooting by cross- referencing 2 pieces
+	of information. First, check the transport that failed in the event log. For
+	example, error 8021 displays a message similar to the following:
+	
+	  The browser was unable to retrieve a list of servers from the browser master
+	  \\<server_name> on the network \Device\NetBT_<driver_name>. The
+	  data is the error code.
+	
+	The important data is NetBT_<driver_name>, which indicates the protocol and
+	netcard binding, also known as an "endpoint." The potential protocols you may
+	see are:
+	
+	  Nbf_netcard = NetBEUI NetBT_netcard = TCP/IP (or NetBIOS over TCP/IP)
+	  NwlnkIpx = IPX/SPX (NwLink) [will not indicate netcard] NwlnkNB = NetBIOS
+	  over NwLink [will not indicate netcard]
+	
+	After you have determined the failed protocol endpoint, check the working status
+	of the Browser service on all installed protocols with the Windows NT resource
+	kit program Browstat.exe. At a command prompt, type the following command:
+	
+	  browstat status
+	
+	This will enumerate the browser status on all endpoints. Look for the message
+	Browser is NOT active on domain under each endpoint. Disregard data about
+	endpoints that list "NdisWanX" (such as Device\NetBT_NdisWan5); these are RAS
+	endpoints and will usually list the error anyway.
+	
+	You should find a protocol match between these two steps. The next step is to
+	record any important information about the protocol from Protocol Setup in the
+	Network tool in Control Panel. Then, remove the protocol, restart the computer,
+	and see if the error no longer gets logged (remember to wait at least 10
+	minutes). Then, try reinstalling the protocol, checking for the error, and
+	reapplying the service pack that exists on the current Windows NT installation.
+	
+	If the error persists after a protocol reinstallation, you may have problems with
+	the network adapter card. Check with the vendor to see if there is an updated
+	driver, or try another network adapter card.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products that are
+	listed at the beginning of this article. We are researching this problem and
+	will post new information here in the Microsoft Knowledge Base as it becomes
+	available.
+	
+	
+	Additional query words: tcpip multi-homed multi homed
+	
+	======================================================================
+	Keywords          : kbnetwork 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWinNTS351search kbWinNTS350search kbWinAdvServSearch
+	Version           : :2000,3.5,3.51,4.0
+	Issue type        : kbbug
+	
+	=============================================================================
+	

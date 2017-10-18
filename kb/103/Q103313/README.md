@@ -1,0 +1,91 @@
+---
+layout: page
+title: "Q103313: Problems Running EMM386.EXE with Laptop Computers"
+permalink: kb/103/Q103313/
+---
+
+## Q103313: Problems Running EMM386.EXE with Laptop Computers
+
+	Article: Q103313
+	Product(s): Microsoft Disk Operating System
+	Version(s): MS-DOS:6.0,6.2,6.21,6.22
+	Operating System(s): 
+	Keyword(s): msdos
+	Last Modified: 19-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft MS-DOS operating system versions 6.0, 6.2, 6.21, 6.22 
+	-------------------------------------------------------------------------------
+	
+	
+	SUMMARY
+	=======
+	
+	Some laptop computers may experience problems associated with using Microsoft's
+	MS-DOS EMM386.EXE expanded memory manager.
+	
+	MORE INFORMATION
+	================
+	
+	EMM386.EXE allows MS-DOS to simulate expanded memory on computers with a 386 or
+	higher microprocessor. It also allows terminate-and-stay- resident (TSR)
+	programs and device drivers to be loaded into the upper memory area (UMA) to
+	free conventional memory for MS-DOS-based applications. You may experience
+	problems using EMM386.EXE on certain laptop computers.
+	
+	Toshiba
+	-------
+	
+	Symptoms
+	
+	Toshiba has confirmed that EMM386.EXE, included with the Microsoft MS-DOS 6 and
+	6.2 Retail Upgrade Package, is not compatible with the Resume mode on Toshiba
+	laptops.
+	
+	EMM386.EXE also disables the PopUp window on Toshiba laptops. If the EMM386.EXE
+	driver is loaded in the CONFIG.SYS file, the FN-PopUp key combination does not
+	cause the PopUp window to be displayed; therefore, you may be unable to view the
+	current battery charge or toggle the various battery options.
+	
+	
+	Resolution
+	
+	For further information concerning installing MS-DOS 6.0 on Toshiba computers,
+	call Toshiba Technical Support at (800) 456-8649.
+	
+	CompuAdd
+	--------
+	
+	Symptoms
+	
+	After running MEMMAKER.EXE or manually adding EMM386.EXE to the CONFIG.SYS file
+	on a CompuAdd 325TFX or 425TFX running LAP.SYS, the computer may stop responding
+	(hang) on startup.
+	
+	Cause
+	
+	This problem occurs because the LAP.SYS driver, which loads in the CONFIG.SYS
+	file, uses the upper memory address range C000-CFFF.
+	
+	Resolution
+	
+	To correct this problem, you must exclude the C000-CFFF range by adding the
+	parameter X=C000-CFFF to the EMM386.EXE line in the CONFIG.SYS file. For
+	example:
+	
+	  device=c:\dos\emm386.exe x=c000-cfff
+	
+	LAP.SYS is CompuAdd's power management system program. For more information, call
+	CompuAdd Technical Support at (800) 999-9901.
+	
+	Additional query words: 6.22 6.00 6.0 6 6.20 limulator hang hangs lockup compu add compu-add msdos ms dos power
+	
+	======================================================================
+	Keywords          : msdos 
+	Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600
+	Version           : MS-DOS:6.0,6.2,6.21,6.22
+	
+	=============================================================================
+	

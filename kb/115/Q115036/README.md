@@ -1,0 +1,115 @@
+---
+layout: page
+title: "Q115036: Description of the Mail Merge Wizard"
+permalink: kb/115/Q115036/
+---
+
+## Q115036: Description of the Mail Merge Wizard
+
+	Article: Q115036
+	Product(s): Microsoft FoxPro
+	Version(s): MS-DOS:2.6x; WINDOWS:2.6x,3.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 03-AUG-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 3.0 
+	- Microsoft FoxPro for Windows, version 2.6x 
+	- Microsoft FoxPro for MS-DOS, version 2.6x 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The information below describes the Mail Merge Wizard and how to use it to
+	create a mail merge.
+	
+	This information is also found in FoxPro online Help in the "Mail Merge Wizard"
+	topic.
+	
+	NOTE: The FoxPro for MS-DOS Mail Merge Wizard only performs steps 1, 2, and 5.
+	
+	MORE INFORMATION
+	================
+	
+	Using a Microsoft FoxPro table, the Mail Merge Wizard creates a data source that
+	your word processor can use in a mail merge. After completing the wizard, follow
+	your word processor's steps for merging this data source with a main document
+	such as a form letter, label, envelope, or catalog.
+	
+	NOTE: If you are using Microsoft Word 6.0 for Windows for the mail merge, you
+	must first clear the Exclusive check box in the Catalog Manager Settings dialog
+	(to turn exclusive OFF). If you don't clear the check box, a "File in Use" error
+	occurs before you can complete the wizard.
+	
+	MAIL MERGE WIZARD STEPS
+	-----------------------
+	
+	Step 1 of 5: Selecting a Table
+	------------------------------
+	
+	NOTE: This step is skipped in FoxPro 2.6x if you start the wizard from the
+	Catalog Manager, and a table is already in use. In Visual FoxPro, this step is
+	never skipped. It allows you to open a new table or select one from an open
+	database, and pick the fields you want to use for the mail merge.
+	
+	First select the table you want to use as a data source for your mail merge. The
+	list contains the tables that were open when you started the wizard. If you want
+	to use a table that is not currently open, choose the Open... button.
+	
+	Step 2 of 5: Specifying Your Word Processing Program
+	----------------------------------------------------
+	
+	From the list, select the word processing program you'll be using.
+	
+	If you choose the Word for MS-DOS, WordPerfect, or Other options, the wizard
+	skips to Step 5 of 5 so you can complete the mail merge.
+	
+	Step 3 of 5: Selecting or Creating a Main Document (Microsoft Word for Windows users)
+	-------------------------------------------------------------------------------------
+	
+	If you selected Microsoft Word version 2.0 or 6.0 for Windows, this screen
+	displays so you can either create a new main document or select a main document
+	you have already created.
+	
+	If you need to create a main document, select the Create new document option, and
+	choose Next to continue.
+	
+	If you have already created a main document, select the Use existing document
+	option and enter the file name, or choose the File... button to open the
+	document, then choose Next. The wizard will skip to Step 5 of 5.
+	
+	Step 4 of 5: Specifying the Type of Main Document (Microsoft Word 6.0 for Windows Users Only)
+	---------------------------------------------------------------------------------------------
+	
+	This step appears only if you choose to create a new Microsoft Word 6.0 for
+	Windows main document.
+	
+	Select the type of Microsoft Word 6.0 main document you want to create: form
+	letter, label, envelope, or catalog. Consult you Microsoft Word documentation
+	for more information about these options.
+	
+	Step 5 of 5: Completing the Mail Merge
+	--------------------------------------
+	
+	If you are using Microsoft Word version 2.0 or 6.0 for Windows, choosing the
+	Finish button starts up Microsoft Word so that you can continue with the mail
+	merge process.
+	
+	If you are using another word processor, choosing the Finish button displays the
+	Save As dialog, so that you can save your source document as a text file. Next,
+	start your word processor and use the document you created as a data source for
+	the mail merge.
+	
+	Additional query words: VFoxWin FoxDos FoxWin 2.60 2.60a foxhelp.hlp foxhelp.dbf akz
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbVFP300
+	Version           : MS-DOS:2.6x; WINDOWS:2.6x,3.0
+	
+	=============================================================================
+	

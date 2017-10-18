@@ -1,0 +1,169 @@
+---
+layout: page
+title: "Q192183: PRB: Accelerator Keys Fail to Work in MDI Child Forms"
+permalink: kb/192/Q192183/
+---
+
+## Q192183: PRB: Accelerator Keys Fail to Work in MDI Child Forms
+
+	Article: Q192183
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): WINDOWS:5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbGrpDSVB
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	In MDI child forms, accelerator keys such as CTRL+TAB, CTRL+F6, and CTRL+F4 will
+	not work when the focus is set to the following controls:
+	
+	Combobox
+	Tabstrip
+	Slider
+	Listview
+	Treeview
+	MaskedEdit Control
+	DBGrid
+	DBCombo
+	DBList
+	few non-intrinsic controls.
+	
+	The accelerator keys will work for the following controls:
+	
+	CommandButton
+	Textbox
+	Listbox
+	Picturebox
+	Checkbox
+	OptionButton
+	Vertical Scroll Bar
+	Horizontal Scroll Bar
+	DriveListBox
+	DirListBox
+	FileListBox
+	
+	RESOLUTION
+	==========
+	
+	The workaround is to trap the keys in the KeyDown event of each child form and
+	to simulate the right behavior by sending the WM_SYSCOMMAND message. See the
+	MORE INFORMATION section below for a step-by-step example that describes how to
+	implement this workaround if many forms are present in a project.
+	
+	STATUS
+	======
+	
+	This behavior is by design.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Create a new Standard EXE project in Visual Basic. Form1 is created by
+	  default.
+	
+	2. From the Project menu, add Form2 and a MDI Form. For Form1 and Form2, set the
+	  MDI child property to True.
+	
+	3. Place a CommandButton and a ComboBox in Form2. Add more controls in Form1 and
+	  Form2 as desired.
+	
+	4. Paste the following code in the MDI form's General Declaration section:
+	
+	        Private Sub MDIForm_Load()
+	           Form1.Show
+	           Form2.Show
+	        End Sub
+	
+	5. Run the application. When the focus is on CommandButton, the keys CTRL+TAB
+	  and CTRL+F4 work. But, when the focus is on a ComboBox, the above keys fail.
+	  Note that for a ComboBox, F4 and CTRL+F4 will drop the list as expected.
+	  Experiment with other controls.
+	
+	Steps to Resolve the Problem
+	----------------------------
+	
+	The following steps describe a generic solution that can be applied to any
+	project that has this problem:
+	
+	1. Paste the following code in any existing module. If there is no module, add a
+	  module from the Project menu, and paste in the following code:
+	
+	        Option Explicit
+	
+	        Declare Function SendMessage Lib "user32" Alias "SendMessageA" _
+	        (ByVal hwnd As Long, ByVal wMsg As Long, ByVal wParam As Long, _
+	        ByVal lParam As Long) As Long
+	
+	        Public Const SC_CLOSE = &HF060
+	        Public Const SC_NEXTWINDOW = &HF040
+	        Public Const WM_SYSCOMMAND = &H112
+	
+	        Public Sub NextWin(KeyCode As Integer, Shift As Integer, sCtl _
+	        As String, hWin As Long)
+	        If (KeyCode = vbKeyTab And (Shift And vbCtrlMask)) Or (KeyCode = _
+	              vbKeyF6 And (Shift And vbCtrlMask)) Then
+	            If Not (sCtl = "CommandButton" Or sCtl = "OptionButton" Or _
+	               sCtl = "TextBox" Or sCtl = "CheckBox" Or _
+	               sCtl = "ListBox") Then ' This line is to save CPU time. _
+	                  ' Code will work even without this If block
+	                  ' Modify the If block to include other controls as needed
+	               Call SendMessage(hWin, WM_SYSCOMMAND, SC_NEXTWINDOW, 0)
+	            End If
+	        ElseIf KeyCode = vbKeyF4 And (Shift And vbCtrlMask) Then
+	           Call SendMessage(hWin, WM_SYSCOMMAND, SC_CLOSE, 0)
+	        End If
+	        End Sub
+	
+	2. For each child form, change the KeyPreview property to True and add the
+	  following to their code windows:
+	
+	        Private Sub Form_KeyDown(KeyCode As Integer, Shift As Integer)
+	           ' Any key processing code specific to project.
+	           ' Check for CTRL+TAB, CTRL+F6 and
+	           ' CTRL+F4 here itself for Forms with intense key processing
+	           NextWin KeyCode, Shift, TypeName(Me.ActiveControl), Me.hwnd
+	        End Sub
+	
+	3. Run the project. All the forms should now function properly irrespective of
+	  which control has the focus.
+	
+	REFERENCES
+	==========
+	
+	For additional information, click the article numbers below to view the articles
+	in the Microsoft Knowledge Base:
+	
+	  Q189779 BUG: Enabling Accelerator Keys in Visual Basic ActiveX Controls
+	
+	  Q99688 How to Trap Keystrokes in the Form Instead of Form's Controls
+	
+	  Q113328 PRB: Form KeyDown Displays Inconsistent Behavior
+	
+	  Q189616 BUG: DateTimePicker Overrides ALT+F4 Key Combination
+	
+	  Q149273 BUG: Form Key Events Fire Twice with Some Controls
+	
+	
+	Additional query words: kbDSupport kbDSD kbVBp kbVBp500 kbVBp600 kbCtrl
+	
+	======================================================================
+	Keywords          : kbGrpDSVB 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+	Version           : WINDOWS:5.0,6.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

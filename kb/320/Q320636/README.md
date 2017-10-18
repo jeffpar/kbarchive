@@ -1,0 +1,137 @@
+---
+layout: page
+title: "Q320636: XIMS: Transport part in the Internet headers may be absent when"
+permalink: kb/320/Q320636/
+---
+
+## Q320636: XIMS: Transport part in the Internet headers may be absent when
+
+	Article: Q320636
+	Product(s): Microsoft Exchange
+	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 19-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 5.5, 5.5 SP1, 5.5 SP2, 5.5 SP3, 5.5 SP4 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	If you use a Post Office Protocol version 3 (POP3) client to open a message, and
+	you click Properties on the File menu, and then click Details, the Transport
+	information (hops) is missing at the beginning of the Internet headers. This
+	problem occurs in the following configuration:
+	
+	- An Exchange 2000 Server Service Pack 2 (SP2) computer exists in the same site
+	  as a Microsoft Exchange Server version 5.5 Service Pack 4 (SP4) server.
+	
+	- A Simple Mail Transfer Protocol (SMTP) connector is set up on the Exchange
+	  2000 server.
+	
+	- The message that you opened is an SMTP message from the Internet that was
+	  delivered to an Exchange Server 5.5 mailbox.
+	
+	The Internet headers are similar to:
+	
+	  Received: by jco.domjco.com
+	  id [01C1C5BB.A58CF840@jco.domjco.com]; Thu, 7 Mar 2002 10:37:07 +0100
+	  Message-ID:[21A05B34171FD611988100B0D02F77B40B2C@servertc2.europe.corp.microsoft.com]
+	  From: U1 [user1@srz020121000835.microsoftfrance.com]
+	  To: max [max@DOMJCO.Microsoft.com]
+	  Subject: test-070202-10h39
+	  Date: Thu, 7 Mar 2002 10:40:42 +0100
+	  MIME-Version: 1.0
+	  Content-Type: text/plain;
+	  charset="iso-8859-1"
+	
+	The expected headers are:
+	
+	  Received: from servertc2.domain-nt4 ([65.53.170.35]) by
+	  Recovery-1.horizon.com with Microsoft SMTPSVC(5.0.2195.2966);
+	  Thu, 14 Mar 2002 16:31:58 +0100
+	  Received: by servertc2.europe.corp.microsoft.com with Internet Mail Service
+	  (5.5.2653.19)
+	  id [GXM396ZL]; Thu, 14 Mar 2002 16:35:44 +0100
+	  Microsoft Mail Internet Headers Version 2.0
+	  Message-ID:[21A05B34171FD611988100B0D02F77B40B63@servertc2.europe.corp.microsoft.com]
+	  From: user1 [user1@SRZ020121000835.MICROSOFTFRANCE.com]
+	  To: max [max@domjco.microsoft.com]
+	  Subject: 16h32
+	  Date: Thu, 14 Mar 2002 16:35:40 +0100
+	  MIME-Version: 1.0
+	  X-Mailer: Internet Mail Service (5.5.2653.19)
+	  Content-Type: text/plain
+	  Return-Path: user1@SRZ020121000835.MICROSOFTFRANCE.com
+	  X-OriginalArrivalTime: 14 Mar 2002 15:31:58.0324 (UTC)
+	  FILETIME=[610D9B40:01C1CB6D]
+	
+	CAUSE
+	=====
+	
+	This problem may occur if Exchange Server 5.5 does not completely check the
+	stream for "Microsoft Mail."
+	
+	RESOLUTION
+	==========
+	
+	A supported fix is now available from Microsoft, but it is only intended to
+	correct the problem that is described in this article. Apply it only to systems
+	that are experiencing this specific problem.
+	
+	To resolve this problem, contact Microsoft Product Support Services to obtain the
+	fix. For a complete list of Microsoft Product Support Services phone numbers and
+	information about support costs, visit the following Microsoft Web site:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	NOTE: In special cases, charges that are ordinarily incurred for support calls
+	may be canceled if a Microsoft Support Professional determines that a specific
+	update will resolve your problem. The usual support costs will apply to
+	additional support questions and issues that do not qualify for the specific
+	update in question.
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	Component: Information store
+	
+	+-------------------------+
+	| File name | Version     | 
+	+-------------------------+
+	| Store.exe | 5.5.2656.17 | 
+	+-------------------------+
+	
+	NOTE: Because of file dependencies, this fix requires Microsoft Exchange Server
+	version 5.5 Service Pack 4.
+	
+	
+	
+	WORKAROUND
+	==========
+	
+	- Upgrade the 5.5 servers to E2K
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed that this is a problem in Microsoft Exchange Server
+	version 5.5.
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2 kbExchange550SP1 kbExchange550SP2 kbExchange550SP3 kbExchange550SP4
+	Version           : :5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

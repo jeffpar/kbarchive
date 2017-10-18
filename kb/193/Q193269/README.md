@@ -1,0 +1,320 @@
+---
+layout: page
+title: "Q193269: SMS: Remote Control to Win9x Clients Fails w/Winsock2, Using IP"
+permalink: kb/193/Q193269/
+---
+
+## Q193269: SMS: Remote Control to Win9x Clients Fails w/Winsock2, Using IP
+
+	Article: Q193269
+	Product(s): Microsoft Systems Management Server
+	Version(s): 1.2
+	Operating System(s): 
+	Keyword(s): kbtshoot kbsms120 kbsms120bug smsremtshoot kbRemoteProg
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server version 1.2 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you attempt to remotely control a Microsoft Windows 95 or Microsoft Windows
+	98 client using Winsock2 and having Internet Protocol (IP) as the default
+	protocol, Remote Control is unsuccessful. The client may experience a general
+	protection (GP) fault in Idisp16.dll.
+	
+	
+	CAUSE
+	=====
+	
+	In versions earlier than Winsock 2.0, WUSER (actually Idisp16.dll) is able to
+	call Winsock from the 16-bit display driver code and the packets are sent
+	without executing any 32-bit code. In Winsock 2.0, the work is done in 32-bit
+	code. If the display driver wants to send a packet, its Winsock call is called
+	through a thunk to the 32-bit code. Calling through the thunk releases the
+	"Win16 Mutex," which enables multiple threads to enter the Graphics Device
+	Interface (GDI) and USER at the same time. The results can include problems at
+	the viewer (scrambled screens or program halts), and even screen corruption on
+	the client.
+	
+	Windows 95 or Windows 98 with Winsock 1.1 (that is, the release version of
+	Windows 95, or Windows 98 with Winsock 2.0 support removed) has the following
+	architecture as interpreted by 16-bit applications and DLLs:
+	
+	 16-bit application or DLL
+	        |
+	  Winsock.dll    (16-bit winsock interface, pure 16-bit code)
+	        |           user
+	  ------------------------
+	        |           kernel
+	  Wsock.vxd
+	
+	In Windows 95 or Windows 98 with Winsock 2.0 (with only Microsoft TCP/IP provider
+	installed, the shipping configuration) it has changed to the following:
+	
+	
+	16-bit application or DLL
+	        |
+	  Winsock.dll    (16-bit winsock interface, pure 16-bit code)
+	        |
+	  Ws2thl.dll     (thunking layer between 16-bit and 32-bit code)
+	        |
+	  Ws2_32.dll     (Winsock2 broker library, 32-bit code)
+	        |
+	  Msafd.dll      (TCP/IP service provider, 32-bit code)
+	        |              user
+	  ---------------------------
+	        |              kernel
+	  Wsock2.vxd
+	
+	Wuser.exe (Idisp16.dll) is a 16-bit DLL being called inside a 32-bit process. It
+	makes 16-bit Winsock calls and relies on the Winsock 1.1 behavior of going
+	straight to kernel without thunking into 32-bit code. With Winsock 2.0, when
+	Winsock.dll thunks to 32-bit code, the 32-bit scheduler can (and very often
+	does) preempt a currently executing thread and then executes another 32-bit
+	thread in the same or different 32-bit process. When this occurs, the 16-bit DLL
+	code can get reentered and halt the program, because a 16-bit environment
+	assumes that no reentrancy will occur when it makes a Winsock call.
+	
+	RESOLUTION
+	==========
+	
+	A supported fix is now available from Microsoft, but it is only intended to
+	correct the problem that is described in this article. Only apply it to systems
+	that are experiencing this specific problem. This fix may receive additional
+	testing. Therefore, if you are not severely affected by this problem, Microsoft
+	recommends that you wait for the next Systems Management Server service pack
+	that contains this fix.
+	
+	To resolve this problem immediately, contact Microsoft Product Support Services
+	to obtain the fix. For a complete list of Microsoft Product Support Services
+	phone numbers and information about support costs, visit the following Microsoft
+	Web site:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	NOTE: In special cases, charges that are ordinarily incurred for support calls
+	may be canceled if a Microsoft Support Professional determines that a specific
+	update will resolve your problem. The usual support costs will apply to
+	additional support questions and issues that do not qualify for the specific
+	update in question.
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	  Date        Time     Version         Size     File name    Platform
+	  -------------------------------------------------------------------
+	   4/14/99   6:24pm                  202,476   Cli_Dos.exe   x86
+	  12/18/98   1:12am                   12,288  CoExst9x.dll   x86
+	   4/22/99   5:05pm                   98,777   IDisp9x.dll   x86
+	   4/22/99   5:05pm 2.00.1239.0029     8,464  IDispThk.dll   x86
+	   4/22/99   5:05pm 2.00.1239.0029    46,512     Imp9x.dll   x86
+	  12/18/98   1:12am                   75,968  Loc16VC0.dll   x86 
+	   4/22/99   5:05pm 2.00.1239.0014    84,112  MultPr9x.dll   x86
+	   4/22/99   5:05pm 2.00.1239.0029    38,320   Queue9x.dll   x86
+	   4/22/99   1:22pm                    8,024   VUser9x.vxd   x86
+	   4/22/99   5:05pm 2.00.1239.0029    27,424  WouDat9x.dll   x86
+	   4/22/99   1:21pm 2.00.1239.0029   287,744   Wuser9x.exe   x86
+	   4/28/99   1:50pm                    3,525    CL_W95.mod   x86
+	   4/22/99   5:06pm 2.00.1239.0029    36,800   WUMsg9x.dll   x86
+	   4/22/99   5:05pm 2.00.1239.0029     4,720  _IDisp9x.dll   x86
+	   4/22/99   5:05pm 2.00.1239.0029    91,584  _Wuser9x.dll   x86
+	   4/27/99   5:54pm                    2,451    System.ma_
+	    5/3/99   3:01pm                  935,197   Hf33216.exe
+	
+	NOTE: Due to file dependencies, the most recent hotfix or feature that contains
+	the above files may also contain additional files.
+	
+	
+	
+	WORKAROUND
+	==========
+	
+	To work around this problem, use either NetBIOS or IPX as the default protocol
+	for Systems Management Server Remote Control.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Systems Management Server
+	version 1.2.
+	
+	MORE INFORMATION
+	================
+	
+	Before applying this hotfix, back up the entire Systems Management Server site
+	server.
+	
+	NOTE: This hotfix requires Systems Management Server 1.2 Service Pack 4 to be
+	installed before the hotfix can be applied.
+	
+	To install the hotfix using the installation program provided, do the following
+	at the Systems Management Server site server:
+	
+	1. Run Q193269_ENU_i386_zip.exe.
+	
+	NOTE: To download this tool, click on the following:
+	
+	  ftp://hotfix.microsoft.com/sms/Systems_Management_Server_1.2/sp5/Q193269/
+	
+	2. This Systems Management Server Installer package installs the following new
+	  files in your Systems Management Server site server's
+	  <SMS_root>\Site.srv\Maincfg.box\Client.src\X86.bin directory:
+	
+	      Cli_dos.exe
+	     CoExst9x.dll
+	      IDisp9x.dll
+	     IDispThk.dll
+	        Imp9x.dll
+	     Loc16VC0.dll
+	     MultPr9x.dll
+	      Queue9x.dll
+	      VUser9x.vxd
+	     WouDat9x.dll
+	      Wuser9x.exe
+	
+	3. This package then installs the following new files in your Systems Management
+	  Server site server's
+	  <SMS_root>\Site.srv\Maincfg.box\Client.src\X86.bin\00000409 directory:
+	
+	       CL_W95.mod
+	      WUMsg9x.dll
+	     _IDisp9x.dll
+	     _Wuser9x.dll
+	
+	4. This package then modifies the System.map file to support the installation of
+	  these new files to the Windows 95 and Windows 98 clients.
+	
+	5. After the Systems Management Server services are restarted, the files are
+	  replicated by Maintenance Manager to all Systems Management Server logon
+	  servers to the SMS\Logon.srv\X86.bin directory. When that occurs, the clients
+	  can be updated.
+	
+	To update the clients, either manually run Upgrade.bat on each client or follow
+	the instructions in the following article in the Microsoft Knowledge Base:
+	
+	  Q166771 SMS: How to Force Site-Wide Client Updates
+	
+	To install the hotfix manually, perform the steps below at the Systems Management
+	Server site server.
+	
+	WARNING: This method involves making changes to the System.map file. Editing the
+	System.map file incorrectly can damage your site installation, and should only
+	be done according to this specific procedure or at the direction of Systems
+	Management Server Support.
+	
+	1. Stop the SMS_EXECUTIVE, SMS_SITE_CONFIG_MANAGER, and SMS_HIERARCHY_MANAGER
+	  services.
+	
+	2. Copy the following files into the
+	  <SMS_root>\Site.srv\Maincfg.box\Client.src\X86.bin directory:
+	
+	      Cli_dos.exe
+	     CoExst9x.dll
+	      IDisp9x.dll
+	     IDispThk.dll
+	        Imp9x.dll
+	     Loc16VC0.dll
+	     MultPr9x.dll
+	      Queue9x.dll
+	      VUser9x.vxd
+	     WouDat9x.dll
+	      Wuser9x.exe
+	
+	3. Copy the following files into the
+	  <SMS_root>\Site.srv\Maincfg.box\Client.src\X86.bin\00000409 directory:
+	
+	       CL_W95.mod
+	      WUMsg9x.dll
+	     _IDisp9x.dll
+	     _Wuser9x.dll
+	
+	4. Make a backup copy of the current System.map file.
+	
+	5. Remove 16-bit WUSER support for Windows 95 and Windows 98. To do this, search
+	  the System.map file, and look for the Wuser.exe entry in the section titled:
+	
+	  DIRECTORY "SITE.SRV\MAINCFG.BOX\CLIENT.SRC\X86.BIN"
+	  PLATFORM "INTEL X86" LANGUAGE "" SOURCE "X86\INTNL" FLAGS = 10
+	  UNIT = "INTEL CLIENT"
+	
+	6. Remove Wuser.exe from the WIN95 CopyList. To do this, look under the line for
+	  Wuser.exe; the following line needs to be changed from:
+	
+	  REMOTE=YES,   COPYLISTS("WIN16:REMOTE_CONTROL" = "SMS", "WIN95:REMOTE_CONTROL" = "SMS"), COMPRESS=NO, FLAGS = 5
+	
+	  To:
+	
+	  REMOTE=YES,   COPYLISTS("WIN16:REMOTE_CONTROL" = "SMS"), COMPRESS=NO, FLAGS = 5
+	
+	7. Remove Vuser.386 from the WIN95 CopyList. To do this, look under the line for
+	  Vuser.386; the following line needs to be changed from:
+	
+	   REMOTE=YES,   COPYLISTS("WIN16:REMOTE_CONTROL_386" = "WINDIR", "WIN95:REMOTE_CONTROL_386" = "WINDIR"), COMPRESS=NO, FLAGS = 1
+	
+	  To:
+	
+	   REMOTE=YES,   COPYLISTS("WIN16:REMOTE_CONTROL_386" = "WINDIR"), COMPRESS=NO, FLAGS = 1
+	
+	8. Search the System.map file looking for the _Wuser.dll entry in the section
+	  titled:
+	
+	  DIRECTORY "SITE.SRV\MAINCFG.BOX\CLIENT.SRC\X86.BIN\00000409"
+	  PLATFORM "INTEL X86" LANGUAGE "ENGLISH" SOURCE "X86\ENGLISH" FLAGS = 10
+	  UNIT = "INTEL CLIENT"
+	
+	9. Remove _Wuser.dll from the WIN95 CopyList. To do this, look under the line
+	  for _Wuser.dll; the following line needs to be changed from:
+	
+	  REMOTE=YES,   COPYLISTS("WIN16:REMOTE_CONTROL" = "SMS", "WIN95:REMOTE_CONTROL" = "SMS"), COMPRESS=NO, FLAGS = 5
+	
+	  To:
+	
+	  REMOTE=YES,   COPYLISTS("WIN16:REMOTE_CONTROL" = "SMS"), COMPRESS=NO, FLAGS = 5
+	
+	10. Merge the new additions that are located in the enclosed System.ma_ file.
+	  The headers for each section in the System.ma_ file are included for
+	  reference, but you only need to merge the new lines into the appropriate
+	  matching section in the System.map file. Pay attention to these headers
+	  because some do look similar, but are definitely not the same.
+	
+	  NOTE: Look for Wuser.exe in a X86 platform, and Wusermsg.dll for the same
+	  platform, and then merge into those areas.
+	
+	11. Restart the SMS_EXECUTIVE, SMS_SITE_CONFIG_MANAGER, and
+	  SMS_HIERARCHY_MANAGER services.
+	
+	12. Wait for the copylist files to be upgraded from the System.map and the new
+	  files to be replicated by Maintenance Manager to the SMS\Logon.srv\X86.bin
+	  directory on all Systems Management Server logon servers. When that occurs,
+	  the clients can be updated.
+	
+	To update the clients, either manually run Upgrade.bat on each client or follow
+	the instructions in the following article in the Microsoft Knowledge Base:
+	
+	  Q166771 SMS: How to Force Site-Wide Client Updates
+	
+	NOTE:
+	
+	For additional information about an updated fix, click the article number below
+	to view the article in the Microsoft Knowledge Base:
+	
+	  Q254228 SMS: Remote Control of Windows 95 or Windows 98 Clients Does Not Work
+	  with Winsock 2 with IP
+	
+	Additional query words: prodsms RemoteHelp HelpDesk GPF winsock2 RC
+	
+	======================================================================
+	Keywords          : kbtshoot kbsms120 kbsms120bug smsremtshoot kbRemoteProg 
+	Technology        : kbSMSSearch kbSMS120
+	Version           : :1.2
+	Hardware          : x86
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

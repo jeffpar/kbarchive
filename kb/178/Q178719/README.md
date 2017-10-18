@@ -1,0 +1,117 @@
+---
+layout: page
+title: "Q178719: HOWTO: Plot X/Y Coordinate Values on a Scatter Chart"
+permalink: kb/178/Q178719/
+---
+
+## Q178719: HOWTO: Plot X/Y Coordinate Values on a Scatter Chart
+
+	Article: Q178719
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbGrpDSVB
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The MS Chart control can create an XY Scatter chart that you can use to plot X/Y
+	coordinate data. This article shows you how to create a sample program that
+	displays X/Y coordinate data on a Scatter chart using the MS Chart control.
+	
+	MORE INFORMATION
+	================
+	
+	You can create an XY Scatter chart by treating your data points as a two-
+	dimensional grid. This grid comprised one or more data series. Each data series
+	in the grid takes two columns and as many rows as you have data points. For
+	example, the first and second columns make up the X and Y coordinates of the
+	first data series. The third and fourth columns make up the X and Y coordinates
+	of the second data series, and so on. The following shows a sample grid. In this
+	grid, the first data series is made up of the following 10 data points:
+	
+	  1,2  2,4  3,6  4,8  5,10  6,12  7,14  8,16  9,18  10,20
+	
+	The second data series is made up of the following 10 data points:
+	
+	  3,4  6,8  9,12  12,16  15,20  18,24  21,28  24,32  27,36  30,40
+	
+	First    Second
+	Series   Series
+	X   Y    X   Y
+	-----------------
+	01  02   03  04
+	02  04   06  08
+	03  06   09  12
+	04  08   12  16
+	05  10   15  20
+	06  12   18  24
+	07  14   21  28
+	08  16   24  32
+	09  18   27  36
+	10  20   30  40
+	
+	To fill the chart's data grid, you can use the Row and Column properties to
+	specify a cell in the grid and then use the Data property to plot that
+	coordinate:
+	
+	  MSChart1.Column = 1
+	  MSChart1.Row = 1
+	  MSChart1.Data = 1000
+	
+	The next section shows how to create a sample project that demonstrates plotting
+	X/Y coordinate data on a scatter chart.
+	
+	Step-by-Step Example
+	--------------------
+	
+	This project assumes you added the MS Chart Component to the project. The project
+	will plot the previously described data.
+	
+	1. Start a new Standard EXE project in Visual Basic. Form1 is created by
+	  default.
+	
+	2. Add a Chart control and a CommandButton to Form1.
+	
+	3. In the MS Chart property window, click the Custom property ellipses button to
+	  display the property pages. On the Chart Tab, check XY (Scatter) for the
+	  Chart type.
+	
+	4. Copy the following code to the Code window of Form1:
+	
+	        Private Sub Command1_Click()
+	           Dim x As Integer, y As Integer
+	
+	           MSChart1.RowCount = 10
+	           MSChart1.ColumnCount = 4
+	
+	           For y = 1 To 4
+	               MSChart1.Column = y
+	               For x = 1 To 10
+	                   MSChart1.Row = x
+	                   MSChart1.Data = x * y
+	               Next x
+	           Next y
+	        End Sub
+	
+	5. Press the F5 key to run the program. Click the CommandButton and the data is
+	  plotted.
+	
+	Additional query words: XY-Scatter x y kbVBp500 kbVBp600 kbVBp kbdsd kbDSupport kbControl
+	
+	======================================================================
+	Keywords          : kbGrpDSVB 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

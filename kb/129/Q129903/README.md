@@ -1,0 +1,182 @@
+---
+layout: page
+title: "Q129903: PRB: Setting Form to Nothing Does Not Unload Form"
+permalink: kb/129/Q129903/
+---
+
+## Q129903: PRB: Setting Form to Nothing Does Not Unload Form
+
+	Article: Q129903
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If you use the following code to set a Form variable to nothing, the form does
+	not unload:
+	
+	     Set Form1 = Nothing
+	
+	CAUSE
+	=====
+	
+	Setting a form to nothing releases the handle or reference that Visual Basic has
+	to the form, but it does not cause the underlying form to be unloaded. In fact,
+	if you set a form to nothing, this invalidates the form variable as a reference
+	to the form so that later calls such as this fail:
+	
+	     Unload Form1
+	
+	Then you have to reference the form via the Forms collection.
+	
+	RESOLUTION
+	==========
+	
+	Use the Unload statement to explicitly unload your forms.
+	
+	STATUS
+	======
+	
+	This behavior is by design.
+	
+	MORE INFORMATION
+	================
+	
+	The following syntax is perfectly valid for OLE Automation servers and objects
+	that are created in Visual Basic:
+	
+	     Dim Obj As Object
+	     Set Obj = Nothing
+	
+	OLE Automation servers automatically clean up and unload when their last instance
+	is set to Nothing. This is not true for forms.
+	
+	Rules for Instantiating, Loading, Unloading, and Uninstantiating Forms
+	----------------------------------------------------------------------
+	
+	The rules for instantiating, loading, unloading, and uninstantiating are as
+	follows:
+	
+	A form is instantiated when one of the following occurs:
+	
+	- It is used in a Set New statement such as Set x = New Form1. However, note
+	  that Dim As New does not cause instantiation.
+	
+	- Any member of the form is referenced.
+	
+	- It is passed as an argument.
+	
+	A form is loaded when one of the following occurs:
+	
+	- The Load statement is used on it.
+	
+	- One of the built-in (not user-defined) properties or methods is referenced.
+	
+	- A property or method of a control or a control array on the form is
+	  referenced.
+	
+	- A control that is a member of a control array is referenced.
+	
+	- It is the MDI form, and a child form is loaded (this causes a show of the MDI
+	  form too).
+	
+	A form is unloaded when:
+	
+	- The Unload statement is used on it.
+	
+	A form is uninstantiated when:
+	
+	- All references to it or any controls or control arrays on it are released,
+	  AND it is unloaded.
+	
+	The Forms collection contains all loaded forms, but not forms that are
+	instantiated yet unloaded.
+	
+	The Initialize event occurs when a form is instantiated. The Load event occurs
+	when it is loaded. The Unload event occurs when it is unloaded, and the
+	Terminate event occurs when it is uninstantiated.
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Start a new project in Visual Basic. Form1 is created by default.
+	
+	2. Add a Module (Module1.BAS) to your Project.
+	
+	3. Add the following code to the General Declarations section of Module1.Bas:
+	
+	     Global FormVar As Form
+	
+	     Sub Main()
+	        Set FormVar = New Form1
+	        Form1.Show
+	        Load FormVar
+	     End Sub
+	
+	4. Choose Options from the Tools menu. Choose the Project tab on the dialog and
+	  change the Startup Form to Sub Main.
+	
+	5. Add three Command buttons (Command1, Command2, and Command3) to Form1.
+	
+	6. Add the following code to the appropriate procedures:
+	
+	     Private Sub Command1_Click()
+	        Set Form1 = Nothing
+	        Set FormVar = Nothing
+	        Unload Form1
+	        ' Unload FormVar
+	        ' The above line generates an Error if executed.
+	           ' Error 91 is now:
+	           ' "Object variable or With block variable not set."
+	        Msgbox Forms.Count & " forms are still loaded!"
+	     End Sub
+	
+	     Sub Command2_Click ()
+	        For I = Forms.Count-1 to 0 Step -1
+	           Unload Forms(I)
+	        Next
+	     End Sub
+	
+	     Sub Command3_Click ()
+	        Unload Form1
+	        Set Form1 = Nothing
+	        Unload FormVar
+	        Set FormVar = Nothing
+	        Msgbox Forms.Count & " forms are still loaded!"
+	     End Sub
+	
+	7. Start the program by choosing Start from the Run menu or by pressing the F5
+	  key.
+	
+	8. Click the Command1 button. Note that although Form1 has been set to Nothing
+	  and explicitly unloaded on the next line, the form does not unload.
+	
+	9. Click the Command2 button to unload Form1 via the Forms collection.
+	
+	The Command3_Click procedure shows the correct sequence to use to avoid this
+	problem. Stop the program and re-run it. Then click only the Command3 button.
+	Both forms unload properly.
+	
+	Additional query words: 4.00 vb4win vb4all
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+	Issue type        : kbprb
+	
+	=============================================================================
+	

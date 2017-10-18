@@ -1,0 +1,125 @@
+---
+layout: page
+title: "Q178717: INF: Excel ODBC Driver and Text ODBC Driver Notes"
+permalink: kb/178/Q178717/
+---
+
+## Q178717: INF: Excel ODBC Driver and Text ODBC Driver Notes
+
+	Article: Q178717
+	Product(s): Open Database Connectivity (ODBC)
+	Version(s): WINDOWS:3.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 25-AUG-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Open Database Connectivity, version 3.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The primary documentation for both the Microsoft Excel and Text ODBC drivers is
+	the Microsoft Desktop Database Drivers Help file, invoked from the Help buttons
+	under ODBC Administrator. This article is intended to elaborate on the
+	functionality of both the Excel driver and the Text driver.
+	
+	MORE INFORMATION
+	================
+	
+	Excel Driver Characteristics
+	----------------------------
+	
+	- Reading:
+	  To use the ODBC catalog functions, an Excel table must have data in it.
+	
+	  The Excel driver supports Excel versions 3.0, 4.0, 5.0/7.0, and 97. Column
+	  names, if present, must be in the first row. Excel 3.0, 5.0, and 97 file
+	  formats must have a database range defined.
+	
+	- Writing:
+	  When creating a table, the driver will create:
+	
+	   - A 3.0 version if the version of the data source through which the
+	     connection was made is "Excel" (that is, Excel 3.0/4.0).
+	
+	   - A worksheet in the workbook to which it is connected if the version of the
+	     data source was "Excel 5.0/7.0" or "Excel 97".
+	
+	- Concurrency:
+	  By default, all tables are opened read-only. The user must explicitly choose
+	  to open exclusively by clicking to clear the Read Only check box in Excel
+	  Setup.
+	
+	- Maximum column name length:
+	  Column names over 64 characters will produce an error.
+	
+	- Delimited column names:
+	  The Excel driver will allow column names to contain any valid Excel
+	  characters, including spaces. Delimited Identifiers will have to be used in
+	  this case. Do not use an exclamation point character (!) in a column name,
+	  because it has a special meaning in Excel; if a column name contains an
+	  exclamation point, the Excel IISAM will internally convert it to a dollar
+	  sign ($) character.
+	
+	- Driver-generated column names:
+	  Unspecified (blank) column names will be replaced with driver-generated names
+	  (for example, Col1 for column 1, and so on).
+	
+	Excel Driver Limitations
+	------------------------
+	
+	- Inserting into table:
+	  Applications that want to use the Save As option for Excel data would issue a
+	  CREATE TABLE statement for the new table and then do subsequent INSERT
+	  operations into the new table. INSERT statements result in an append to the
+	  table. No other operations can be done on the table until it is closed and
+	  reopened the first time. After the table is closed the first time, no
+	  subsequent inserts can be done.
+	
+	- Unsupported SQL:
+	  The driver will not support DELETE, UPDATE, or ALTER TABLE statements. While
+	  it is possible to update values, DELETE statements will not remove a row from
+	  a table based on an Excel spreadsheet. These operations are not supported.
+	  Basically, you can only append (insert) to a table.
+	
+	- Treatment of zero-length strings:
+	  Because the underlying data format doesn't have any way to differentiate
+	  between an empty string and NULL data, a query with a search condition
+	  containing an empty string will not match any empty strings in the table.
+	  This is because the empty string is treated as a NULL in this case, and NULL
+	  never matches anything (not even another NULL).
+	
+	Text Driver Limitations
+	-----------------------
+	
+	- No HTML support
+	
+	- Unsupported SQL:
+	  The driver does not support DELETE, UPDATE, CREATE INDEX, DROP INDEX, or ALTER
+	  TABLE statements.
+	
+	- Maximum length of a text column recognized by "Guess":
+	  The Guess functionality of the Text driver only works on Text columns that are
+	  less than 64,513 bytes.
+	
+	- Treatment of zero-length strings:
+	  Because the underlying data format doesn't have any way to differentiate
+	  between an empty string and NULL data, a query with a search condition
+	  containing an empty string will not match any empty strings in the table.
+	  This is because the empty string is treated as a NULL in this case, and NULL
+	  never matches anything (not even another NULL).
+	
+	Additional query words: col colum
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbODBCSearch kbODBC300
+	Version           : WINDOWS:3.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

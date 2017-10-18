@@ -1,0 +1,156 @@
+---
+layout: page
+title: "Q201741: INFO: Differences of Behavior in Debug Mode and Compile Mode"
+permalink: kb/201/Q201741/
+---
+
+## Q201741: INFO: Differences of Behavior in Debug Mode and Compile Mode
+
+	Article: Q201741
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): WINDOWS:4.0,5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbCompiler kbDebug kbThread kbVBp kbVBp400 kbVBp500 kbVBp600 kbIDEProject kbGrpDSVB kbD
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+	- Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+	- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+	- Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	For the same piece of code, a Visual Basic application's behavior can be
+	different when running as a compiled EXE and when running in debug mode in the
+	IDE. This article explains the most common reasons why an application's behavior
+	can be different and recommend ways to handle these situations.
+	
+	MORE INFORMATION
+	================
+	
+	Focus issues
+	------------
+	
+	This is the most common reason for differences in behavior. While running in
+	Debug mode, the focus change exists between the forms and Visual Basic IDE, and
+	such foucs changes are not possible while running as an EXE. In addition, using
+	message boxes in focus intensive applications will cause huge differences in
+	behavior between compiled and debug modes.
+	
+	Recommendations:
+	
+	- Avoid using message boxes for debug purposes. Use "Debug.Print" statements
+	  instead. In the compiled EXE, use file input/output for debuging.
+	- When shifting focus between Visual Basic application and the Visual Basic
+	  IDE, make sure that the focus stays in the desired location.
+	
+	Interpreter Vs Compiler issues
+	------------------------------
+	
+	When running in Debug mode, the code is interpreted, while in run mode, the code
+	is compiled and executed. The behavior difference may be because of the
+	difference in the way the Interpreter and Compiler handle some code.
+	
+	Recommendations:
+	
+	- Compile the application in P-code instead of Native code. P-code bahavior is
+	  similar to that of interpreter while Native code may behave differently.
+	- If the application is compiled using Native code, use VC++ to debug your
+	  compiled application. See the first two articles in the REFERENCES section
+	  for a detailed description.
+	
+	Issues with yielding to other processes
+	---------------------------------------
+	
+	When running in Debug mode and stepping each line of code, the processor gets
+	enough time to yield to other processes and it is somewhat similar to calling
+	DoEvents each time you enter into Debug mode. A compiled application may not
+	yield to the processor at the expected line of code.
+	
+	Recommendations:
+	
+	- Put DoEvents before the line where the behavior is different for a compiled
+	  EXE. This may give the same bahavior as running in Debug mode.
+	- Avoid putting break points in lines of code, where you do not want to yield
+	  to other processes. Use Debug.print or file input/output to debug in such
+	  situations.
+	
+	Threading
+	---------
+	
+	The IDE has only two threads running at a time. A background thread allows Visual
+	Basic to process the Control-Break while running code that is not yielding time.
+	To be able to access DataMembers and allow for compile on demand Visual Basic
+	restricts all components running in Debug mode to a single thread of execution.
+	This is especially important when debugging ActiveX components. For example,
+	adding an ActiveX DLL project to a Standard EXE project for debugging may not
+	work the same as when you debug the EXE using the compiled DLL. This also
+	effects any programs that depend on name space seperation to function properly.
+	For example, if you reference a variable defined in a standard bas module, this
+	variable will be shared across every module running on the same thread. So in
+	the IDE, if you change this variable in one class other classes will also see
+	the change. This can lead to the mistaken impression that variables in base
+	modules are global when they are really only thread global. When your
+	application runs in compiled mode the variable may no longer be shared. To learn
+	more about how data is shared in a multithreaded environment, please look for
+	the topic "Apartment-Model Threading in Visual Basic" in MSDN Help or Books
+	Online.
+	
+	Recommendations:
+	
+	- Use Visual C++ to debug the compiled application. See the first two articles
+	  in the REFERENCES section for a detailed description.
+	- In addition to using the VC debugger, you can also debug ActiveX components
+	  by running the client in one session of the Visual Basic IDE and running the
+	  server in another session.
+	- Do not reply on Public variables in standard bas Modules when using multiple
+	  threads. If you need static shared variables, search MSDN Help, or Books
+	  Online, for the topic "Static Class Data."
+	
+	Other Causes:
+	-------------
+	
+	Usually, the issues with differences in bahavior can be resolved by following the
+	recommandations given earlier. You may experience differences due to other
+	reasons also. Contact developer support at this stage.
+	
+	
+	REFERENCES
+	==========
+	
+	For additional information, please click the article numbers below to view the
+	articles in the Microsoft Knowledge Base:
+	
+	  Q166275 HOWTO: Debug a Native Code Visual Basic Component in VC++
+	
+	  Q193133 HOWTO: Compile VB Programs with Debug Symbols Embedded
+	
+	  Q161153 HOWTO: Use the Assert Method for Debugging
+	
+	  Q192549 INFO: VBCE: Overview of Debugging VBCE Applications
+	
+	  Q138521 INFO: Program Compiles in Background w/Compile On Demand Set
+	
+	Additional query words: automation error F8 F5 interface development running outcome path
+	
+	======================================================================
+	Keywords          : kbCompiler kbDebug kbThread kbVBp kbVBp400 kbVBp500 kbVBp600 kbIDEProject kbGrpDSVB kbDSupport 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400 kbZNotKeyword3 kbVB16bitSearch
+	Version           : WINDOWS:4.0,5.0,6.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

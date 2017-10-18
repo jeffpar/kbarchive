@@ -1,0 +1,116 @@
+---
+layout: page
+title: "Q191997: BUG: BackColor/ForeColor of Grid Not Carried Over to Subclass"
+permalink: kb/191/Q191997/
+---
+
+## Q191997: BUG: BackColor/ForeColor of Grid Not Carried Over to Subclass
+
+	Article: Q191997
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:5.0,5.0a,6.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 19-AUG-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When changing the BackColor or ForeColor properties of a grid class's header in
+	the Class Designer to some other color, the grid header remains in the default
+	color after subclassing the class on to a new form.
+	
+	RESOLUTION
+	==========
+	
+	- Create the grid class definition through code, then add the grid to the form
+	  using the AddObject method. Please see step 1 in the Workaround section for
+	  further instruction.
+	
+	  -or-
+	
+	- Change the Backcolor or ForeColor properties of the Header in the subclassing
+	  grid.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article.
+	
+	MORE INFORMATION
+	================
+	
+	The behavior as described in the SYMPTOMS section, does not occur if the grid is
+	created through code rather than using the class designer.
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Create a Grid class in Class Designer, named the class mygrid and save the
+	  class in myclass library.
+	
+	2. Change the ColumnCount property of the grid to 1.
+	
+	3. Go to the header object of the grid and change the following properties of
+	  the header object:
+	
+	  " BackColor = 255,0,0 ForeColor = 0,255,0 " (without the quotation marks)
+	
+	4. Close the class designer.
+	
+	5. Create a new form in a form designer, named myform.
+	
+	6. Add the myclass class library to the Form Controls toolbar.
+	
+	7. Select mygrid from the toolbar and place it onto the form.
+	
+	The Header of the grid object shows up as default color, which is gray for the
+	backcolor and black for the forecolor.
+	
+	Workaround
+	----------
+	
+	1. Create a program (.prg) named Gridclass.prg and put the following code in the
+	  .prg file:
+	
+	        DEFINE CLASS grid1 AS Grid
+	           ADD OBJECT column11 AS column1
+	        ENDDEFINE
+	
+	        DEFINE CLASS column1 AS Column
+	           Width = 120
+	           ADD OBJECT header11 AS header1
+	        ENDDEFINE
+	
+	        DEFINE CLASS header1 AS Header
+	           ForeColor = rgb(0,255,0)
+	           BackColor=rgb(255,0,0)
+	        ENDDEFINE
+	
+	2. Create a form and in the Init event of the form place the following code:
+	
+	        SET PROCEDURE TO gridclass.prg
+	        Thisform.AddObject("mygrid","grid1")
+	        Thisform.mygrid.Visible = .T.
+	
+	3. Run the form and the grid header shows up with the backcolor and forecolor
+	  you expect.
+	
+	Additional query words: kbVFp600bug kbVFp500abug kbCtrl kbContainer kbDesigner kbOOP
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+	Version           : WINDOWS:5.0,5.0a,6.0
+	Issue type        : kbbug
+	Solution Type     : kbnofix
+	
+	=============================================================================
+	

@@ -1,0 +1,73 @@
+---
+layout: page
+title: "Q295402: Error Message: Error 2 Loading Registry Information"
+permalink: kb/295/Q295402/
+---
+
+## Q295402: Error Message: Error 2 Loading Registry Information
+
+	Article: Q295402
+	Product(s): Microsoft Windows NT
+	Version(s): 4.0
+	Operating System(s): 
+	Keyword(s): kbenv kberrmsg
+	Last Modified: 11-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+	
+	  Q256986 Description of the Microsoft Windows Registry
+	
+	SYMPTOMS
+	========
+	
+	When you remove the Transmission Control Protocol/Internet Protocol (TCP/IP)
+	protocol and restart the server, and then you attempt to reinstall the TCP/IP
+	protocol, you may receive the following error message:
+	
+	  Error 2 Loading Registry Information
+	
+	CAUSE
+	=====
+	
+	This behavior can occur if there is an invalid registry key (an orphaned network
+	adapter registry key).
+	
+	RESOLUTION
+	==========
+	
+	WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+	that may require you to reinstall your operating system. Microsoft cannot
+	guarantee that you can solve problems that result from using Registry Editor
+	incorrectly. Use Registry Editor at your own risk.
+	
+	To resolve this behavior:
+	
+	1. Locate the following registry key:
+	
+	  HKEY_LOCAL_MACHINE/Software/Microsoft/Windows NT/CurrentVersion/NetworkCards
+	
+	  NOTE: The adapters are displayed as numbered keys. This registry key may be
+	  missing all or some of its registry values.
+	
+	2. Locate the orphaned registry key by comparing it against the other adapter
+	  registry keys.
+	
+	3. Delete the invalid key, and then restart the server. The TCP/IP protocol is
+	  reloaded.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbenv kberrmsg 
+	Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+	Version           : :4.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

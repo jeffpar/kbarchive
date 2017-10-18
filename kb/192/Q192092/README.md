@@ -1,0 +1,76 @@
+---
+layout: page
+title: "Q192092: WD97: Graphics Imported from Mac Displayed as QuickTime Logo"
+permalink: kb/192/Q192092/
+---
+
+## Q192092: WD97: Graphics Imported from Mac Displayed as QuickTime Logo
+
+	Article: Q192092
+	Product(s): Word 97 for Windows
+	Version(s): WINDOWS:97
+	Operating System(s): 
+	Keyword(s): kbdta kbconversion word97
+	Last Modified: 14-NOV-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	When you insert a graphic that was created in PhotoShop 5.0 for the Macintosh
+	into Microsoft Word 97 for Windows, you may see one of the following message
+	boxes instead of the actual graphic:
+	
+	  QuickTime and a Photo - JPEG decompressor are needed to see this picture
+	
+	  -or-
+	
+	  QuickTime Logo that displays "QuickTime PICT"
+	
+	You may also see this message when you open a Word 98 Macintosh Edition document
+	that contains this type of graphic in Word 97 for Windows.
+	
+	CAUSE
+	=====
+	
+	This problem occurs with graphics that are created on the Macintosh platform.
+	The Windows PICT filter cannot translate Macintosh PICT files that use the
+	QuickTime or photo-JPEG compression method.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products listed at
+	the beginning of this article.
+	
+	MORE INFORMATION
+	================
+	
+	When you insert Macintosh PICT graphics into a document, Word uses the PICT
+	filter. If the filter is not installed or is damaged, the following message will
+	appear:
+	
+	  A graphics filter that can read this graphic file is not installed on your
+	  computer.
+	
+	Additionally the problem occurs when the graphic is saved as 32-bit or 16- bit
+	image with compression.
+	
+	
+	Additional query words: compress 8 upgrade mac conv
+	
+	======================================================================
+	Keywords          : kbdta kbconversion word97 
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : WINDOWS:97
+	Issue type        : kbbug
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

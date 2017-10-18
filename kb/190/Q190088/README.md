@@ -1,0 +1,91 @@
+---
+layout: page
+title: "Q190088: BUG: Icon Resource May Not Appear as Expected"
+permalink: kb/190/Q190088/
+---
+
+## Q190088: BUG: Icon Resource May Not Appear as Expected
+
+	Article: Q190088
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): WINDOWS:5.0
+	Operating System(s): 
+	Keyword(s): kbGrpDSVB
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	LoadResPicture functions differently when a Visual Basic project runs in the IDE
+	or as a compiled EXE. Loading a 16x16 Icon resource within the IDE will return
+	the proper icon, while in a compiled EXE it will result in an icon that is
+	"fuzzy."
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article. We are researching this bug and will post new
+	information here in the Microsoft Knowledge Base as it becomes available.
+	
+	MORE INFORMATION
+	================
+	
+	The instructions given below require that the Resource Editor Add-In is
+	installed. It is shipped with Visual Basic 6.0 and is available for download by
+	registered Visual Basic 5.0 owners at the following location:
+	
+	  http://www.microsoft.com/vstudio/owner/
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	NOTE: This example assumes that the Resource Editor has already been installed
+	and added to the Tools menu.
+	
+	1. Create a new Standard EXE project in Visual Basic. Form1 is created by
+	  default.
+	
+	2. Add an Image control (Image1) to Form1.
+	
+	3. Paste the following code into Form1's code window:
+	
+	        Private Sub Form_Load()
+	           Set Image1.Picture = LoadResPicture(101, vbResIcon)
+	        End Sub
+	
+	4. Select Resource Editor from the Tools menu.
+	
+	5. Select Add Icon from the Resource Editor's toolbar.
+	
+	6. In the "Open An Icon File" DialogBox, select a 16x16 icon to add to the
+	  resource file. The icon just added will have resource ID 101.
+	
+	7. Save the resource file as "Test.RES" and close the Resource Editor.
+	
+	8. Select Make Project1.exe from the File menu to compile the project.
+	
+	9. Press the F5 key to run the project within the IDE. Form1 will appear with
+	  the proper looking icon.
+	
+	10. Run the compiled Project1.exe. Form1 will appear with the icon looking
+	  different than the original.
+	
+	Additional query words: kbDSupport kbAddIn kbVBp kbVBp500bug kbVBp600bug kbdss
+	
+	======================================================================
+	Keywords          : kbGrpDSVB 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+	Version           : WINDOWS:5.0
+	Issue type        : kbbug
+	
+	=============================================================================
+	

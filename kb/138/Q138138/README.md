@@ -1,0 +1,143 @@
+---
+layout: page
+title: "Q138138: INFO: Late, ID, Early Binding Types Possible in VB for Apps"
+permalink: kb/138/Q138138/
+---
+
+## Q138138: INFO: Late, ID, Early Binding Types Possible in VB for Apps
+
+	Article: Q138138
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): WINDOWS:4.0
+	Operating System(s): 
+	Keyword(s): kbprogramming kbVBp400
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	There are three kinds of binding that Visual Basic for Applications supports:
+	
+	1. Late Binding.
+	
+	2. ID Binding.
+	
+	3. Early\Vtable Binding.
+	
+	MORE INFORMATION
+	================
+	
+	OLE Automation controllers can use the OLE IDispatch interface to gain access to
+	objects that implement this interface. Although programmers know object members
+	(methods and properties) by name, IDispatch keeps track of them internally by a
+	number -- the Dispatch ID (DISPID). Before an OLE Automation controller can find
+	a method or property, it must have the DISPID that maps to the name of the
+	member.
+	
+	Once it has the DISPID, it can then call IDispatch::Invoke to locate the property
+	or invoke the method, packaging the parameters for the property or method into
+	one of the IDispatch::Invoke parameters. The object's implementation of
+	IDispatch::Invoke must then unpack the parameters, call the property or method,
+	and handle any errors that might occur. When the property or method returns, the
+	object passes its return value back to the controller through an
+	IDispatch::Invoke parameter.
+	
+	Late Binding
+	------------
+	
+	DISPIDs are available at run time and, in some circumstances, at compile time. At
+	run time, controllers get DISPIDs by calling the IDispatch::GetIDsOfNames
+	function. This is called late binding (or late name binding) because the
+	controller binds to the property or method at run time.
+	
+	
+	Late Binding is the slowest and easiest to support, and it is the only mechanism
+	that Visual Basic version 3.0 supports. The target object must support the
+	IDispatch OLE interface for this to work. A typelib (a repository of object
+	property, object method, and object method parameter information) is not
+	required for the object as IDispatch::GetIDsOfNames is first called at run time
+	to bind the name to its DISPID and then IDispatch::Invoke is called again at run
+	time on the target object to actually execute the property or method. As a
+	result, there is no compile- time type checking. You get errors like "name not
+	found" only at run time.
+	
+	Here's an example of Visual Basic code that implements late binding:
+	
+	     Dim obj As Object
+	     Set obj = New Class1
+	     Call obj.somemethod
+	
+	Here the type of "Object" is not known until the Set statement is executed at run
+	time.
+	
+	ID Binding
+	----------
+	
+	The DISPID of each property or method is fixed and is part of the object's type
+	description. If the object is described in a type library, an OLE Automation
+	controller can read the DISPIDs from the type library at compile time, and thus
+	avoid calling IDispatch::GetIDsOfNames. This is called ID binding. Because it
+	requires only one call to IDispatch (that is, the call to invoke) rather than
+	the two calls required by late binding, it is generally about twice as fast.
+	
+	ID binding is actually a form of early binding, as GetIDsOfNames is logically
+	called at compile time, so a typelib is required. The target object must support
+	the OLE IDispatch interface, so that Invoke can be called at run time on the
+	target object. The advantages of this are that performance is better because no
+	binding is needed at run time, you get better compile-time type checking, and
+	you receive more informative error messages.
+	
+	Early Binding
+	-------------
+	
+	In early binding (also known as VTable binding), the target object need not
+	necessarily support IDispatch; it can support any custom interface. If the
+	object does support IDispatch, early binding works because the object now
+	supports a dual interface (a combination of an IDispatch and a VTable
+	interface). Early binding does not use DISPIDs and will not work on a straight
+	IDispatch interface implementation. A typelib for the object is required in
+	order get the DISPIDs. A compile-time binding generates code to call any of the
+	object's methods or properties through that object's VTable.
+	
+	The advantages of early binding are that you get compile-time type checking
+	benefits and the run-time performance is better, especially when an in-process
+	OLE Server is involved. This is because there is no need to indirect the call to
+	a member through an implementation of IDispatch::Invoke. Basically, with VTable
+	binding on an in-process server, function calls are direct function calls. If
+	the OLE server is an .exe file, then it will be slower due to the remoting code
+	that has to be accounted for.
+	
+	Here is an example of Visual Basic code that implements early binding:
+	
+	     Dim obj As Class1
+	     Set obj = New Class1
+	     Call obj.somemethod
+	
+	Note that it is up to the server object to determine whether it supports early
+	binding or not. All objects created in Visual Basic version 4.0 support all the
+	three styles of binding. Visual Basic for Applications will use early binding in
+	preference to ID binding, so an object that supports both will be early bound.
+	If, in the previous example, Class1 were implemented by an OLE server that
+	supported only ID binding, then ID binding would be used. There is no way to
+	tell from Visual Basic code whether you are using early binding or ID binding.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbprogramming kbVBp400 
+	Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+	Version           : WINDOWS:4.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

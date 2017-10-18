@@ -1,0 +1,89 @@
+---
+layout: page
+title: "Q194547: X400: ISO 6937 Message with Attachment Is Not Delivered"
+permalink: kb/194/Q194547/
+---
+
+## Q194547: X400: ISO 6937 Message with Attachment Is Not Delivered
+
+	Article: Q194547
+	Product(s): Microsoft Mail For PC Networks
+	Version(s): MS-DOS:3.2
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 20-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Mail Gateway to X.400, version 3.2 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you send a message with a message body that is encoded as an ISO 6937 body
+	part through the Microsoft Mail Gateway to X.400, and the message contains an
+	attachment, the message may not be delivered successfully, and the following
+	entry may appear in the X.400 log file:
+	
+	  ERROR 3 (AttachP2): ISO6937 conversion failed.
+	
+	Note that this problem typically occurs after 10 or more messages of this type
+	are sent through the Microsoft Mail Gateway to X.400. In addition, note that
+	messages sent through the gateway after this problem occurs may never be
+	delivered.
+	
+	CAUSE
+	=====
+	
+	When the body of a message is encoded as an ISO 6937 body part, and the message
+	contains an attachment, the attachment name body part is also encoded using ISO
+	6937. The Microsoft Mail Gateway to X.400 does not properly convert the
+	attachment name body part to ISO 6937, which may limit the amount of free memory
+	available on the computer. After this problem occurs repeatedly, the lack of
+	free memory may prevent the gateway from successfully delivering the message.
+	
+	RESOLUTION
+	==========
+	
+	A supported fix that corrects this problem is now available from Microsoft, but
+	has not been fully regression-tested and should be applied only to systems
+	experiencing this specific problem.
+	
+	To resolve this problem, contact Microsoft Product Support Services to obtain the
+	fix. For a complete list of Microsoft Product Support Services phone numbers and
+	information on support costs, please go to the following address on the World
+	Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	  File Name      Version
+	  ----------------------
+	  X400gate.exe   3.2.9
+	
+	This hotfix has been posted to the following Internet location as X400gy2k.exe:
+	
+	  ftp://ftp.microsoft.com/bussys/mail/gateways-public/All-Y2K/
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft Mail Gateway to X.400
+	version 3.2.
+	
+	Additional query words: bodypart
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGatex400320
+	Version           : MS-DOS:3.2
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

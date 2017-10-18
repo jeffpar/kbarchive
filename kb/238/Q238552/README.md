@@ -1,0 +1,132 @@
+---
+layout: page
+title: "Q238552: How to Install Hotfixes and Check Versions of Installed Hotfixes"
+permalink: kb/238/Q238552/
+---
+
+## Q238552: How to Install Hotfixes and Check Versions of Installed Hotfixes
+
+	Article: Q238552
+	Product(s): Microsoft Windows NT
+	Version(s): winnt:4.0
+	Operating System(s): 
+	Keyword(s): kberrmsg kbtool
+	Last Modified: 11-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 4.0 
+	- Microsoft Windows NT Server version 4.0 
+	- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+	- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+	
+	  Q256986 Description of the Microsoft Windows Registry
+	
+	SUMMARY
+	=======
+	
+	When you receive a hotfix from Microsoft Quick Fix Engineering (QFE), you have
+	three different options to implement this fix.
+	
+	MORE INFORMATION
+	================
+	
+	Method 1
+	--------
+	
+	Run the Hotfix.exe program, which is always included in the fix package you
+	receive from Microsoft. Hotfix.exe checks the version of the service pack you
+	are currently using, and then installs the hotfix automatically if the service
+	pack version is older than the provided hotfix and the language is the same. If
+	your service pack version is newer than the hotfix, the installation does not
+	work, and the following error message may be displayed:
+	
+	  Hotfix Setup has detected that the Service Pack version of the system
+	  installed is newer than the update you are applying to it.
+	
+	The Setup program is always interrupted if the language version of the installed
+	fix does not match the system's language. If there is no version conflict,
+	Hotfix.exe installs the fixed file(s) without any user intervention. Hotfix.exe
+	always reads out the Hotfix.ini file and registers the fix under the
+	HKLM\Software\Microsoft\Windows NT\CurrentVersion\Hotfix registry key.
+	
+	The registry entries differ from version to version of the Hotfix.ini file,
+	because there is no common rule about what entries must be stated in the
+	registry key, as these are just for information. The Installed key is the only
+	key that is always included under the hotfix entries, which is set to 1 when the
+	fix is installed on your computer. The Hofix.ini file should never be edited.
+	
+	Method 2
+	--------
+	
+	Hfx.exe may be the most comfortable way of managing hotfixes on your system. When
+	you start the Hfx.exe program, a pop-up menu is displayed, which enables you to
+	administer all fixes that are installed on your computer. This pop-up menu is
+	only displayed if you have previously installed all your fixes with the Hfx.exe
+	or the Hotfix.exe program. If you are installing a new hotfix, you must prompt
+	the path of the Hotfix.ini file, and then click OK. The hotfix is then installed
+	on your computer.
+	
+	With Hfx.exe you can install new hotfixes, delete old ones, or just view the
+	hotfixes installed on your computer. Running this program helps a great deal if
+	Microsoft Product Support needs information about the fixes currently installed
+	on your computer. Some fixes installed with older versions of Hotfix.exe or
+	Hfx.exe could possibly not be seen when you run Hfx.exe. If you are unsure about
+	which fixes are installed on your system, you can check the registry under
+	HKLM\Software\Microsoft\Windows NT\CurrentVersion\Hotfix and look at the
+	Installed key.
+	
+	NOTE: Microsoft strongly recommends that you use the Hfx.exe or the Hotfix.exe
+	program as it is the best way for administrators to perform hotfix management.
+	Using these programs also allows Microsoft Support Professionals the full range
+	of options available to retrieve important information about your currently
+	installed fixes when troubleshooting problems.
+	
+	Method 3 (Use only when advised by your Support Professional) 
+	-------------------------------------------------------------
+	
+	Search the path in %Systemroot% where the fixed file(s) are located. Save or
+	rename the old file(s), and then copy the new, fixed version in the same
+	location in the folder. When files are in use on the computer, write access to
+	these files is denied. In this case, you can use a tool from the Windows NT 4.0
+	Server Resource Kit called Mv.exe. For Windows NT, please use the Mv.exe
+	utility, which is located in the NTReskit folder, and not the NTReskit\Posix
+	folder.
+	
+	When you type Mv.exe /? at an MS-DOS command prompt, a list of all possible
+	parameters is displayed. Mv.exe exchanges system files when your computer is
+	restarted. For more information about replacing system files in use, please see
+	the following Microsoft Knowledge Base article:
+	
+	  Q184408 How to Replace In-Use Windows NT System Files
+	
+	This method is not recommended. After you implement the hotfix in the manner
+	described above, there is no registry information available and no way to track
+	or perform maintenance on your currently installed hotfixes.
+	
+	NOTE: Remember to reinstall all hotfixes or service packs after you add or change
+	any Windows NT system components. For example, you need to reapply a service
+	pack if you have added or changed services, drivers, and so forth. To avoid
+	conflicts with old drivers, always check the version of the drivers you are
+	using (Microsoft or third-party) to ensure they are the latest version and are
+	compatible with the operating system.
+	
+	After you install hotfixes, possible registry changes are made as described in
+	the following Microsoft Knowledge Base article:
+	
+	  Q194080 HFX Manager: What Is It and How Do You Use It
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kberrmsg kbtool 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch
+	Version           : winnt:4.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

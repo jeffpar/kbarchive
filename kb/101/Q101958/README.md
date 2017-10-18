@@ -1,0 +1,246 @@
+---
+layout: page
+title: "Q101958: Reinstalling MS-DOS 6 Upgrade When Using Stacker Version 3.1"
+permalink: kb/101/Q101958/
+---
+
+## Q101958: Reinstalling MS-DOS 6 Upgrade When Using Stacker Version 3.1
+
+	Article: Q101958
+	Product(s): Microsoft Disk Operating System
+	Version(s): MS-DOS:6.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 26-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft MS-DOS operating system version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If your boot drive is compressed with Stacker version 3.1, and you try to
+	reinstall MS-DOS 6 Upgrade or run SETUP /E or SETUP /Q, you receive one of the
+	following error messages:
+	
+	  Please label a floppy disk as follows:
+	
+	  msdos.sys
+	
+	  and insert it in drive C.
+	  When you are ready to continue,
+	  press ENTER.
+	  Caution: All existing files
+	  on this disk will be deleted.
+	
+	  -or-
+	
+	  There is not enough free space on drive C to install MS-DOS.
+	
+	  You cannot install MS-DOS unless your computer has at least 4,200,000 bytes of
+	  free disk space on drive C. Exit Setup, and move or delete unneeded files
+	  from the drive. For more information about freeing disk space, see
+	  'Diagnosing and Solving Problems.'
+	
+	  -or-
+	
+	  Setup cannot identify your system's startup partition
+	
+	  -or-
+	
+	  Please insert disk <xxxxxxxx> in drive C:
+	
+	where <xxxxxxxx> is unexpected text, usually containing ASCII characters
+	greater than 127.
+	
+	CAUSE
+	=====
+	
+	If you use Stacker version 3.1 with MS-DOS 6.0, the status of the Stacker-
+	compressed drive and the host drive are reported incorrectly. You can see this
+	by typing "stacker" (without the quotation marks) and pressing ENTER at the
+	MS-DOS command prompt. Stacker displays information indicating that drive C was
+	drive C at startup and then shows you the host drive letter and Stacker
+	compressed volume file. In fact, the machine actually booted from the host drive
+	and swapped the host letter with C at startup.
+	
+	RESOLUTION
+	==========
+	
+	Running SETUP /E
+	----------------
+	
+	If you are trying to run SETUP /E to reinstall the MS-DOS-based or Windows- based
+	versions of Microsoft Backup, Microsoft Anti-Virus, or Microsoft Undelete, use
+	the MS-DOS EXPAND command to expand the MS-DOS utilities from the disk instead.
+	Then, manually set up the MSTOOLS group and icons in Microsoft Windows. For more
+	information, query on the following words in the Microsoft Knowledge Base:
+	
+	  files and needed and msbackup.ex_ and msbackup.exe
+	
+	If you don't want to manually expand the files for Microsoft Backup, Microsoft
+	Anti-Virus, or Microsoft Undelete, you can use the following procedure:
+	
+	1. Reduce the size of the Stacker drive (drive C) to create enough room on the
+	  host drive for the MS-DOS files.
+	
+	   Space Required on the Uncompressed Host Drive
+	   -------------------------------------------------------
+	
+	   Full installation with both Windows-based and
+	     MS-DOS-based optional utilities:................7300K
+	   Full installation without optional utilities:.....4200K
+	   Full installation with MS-DOS-based utilities:....5500K
+	   Full installation with Windows-based utilities:...6200K
+	   SETUP /E with both Windows-based and
+	     MS-DOS-based optional utilities:................3100K
+	   SETUP /E with MS-DOS-based utilities:.............1300K
+	   SETUP /E with Windows-based utilities:............2000K
+	
+	2. If a DOS directory does not already exist on your host drive, create one. For
+	  example, if your host drive is H, type "md h:\dos" (without the quotation
+	  marks) at the MS-DOS command prompt and then press ENTER.
+	
+	3. If your DOS directory does not contain COMMAND.COM, SYS.COM, FORMAT.COM,
+	  DISKCOPY.COM, and ATTRIB.EXE, copy these files from the DOS directory on the
+	  compressed drive. For example, type the following at the MS-DOS command
+	  prompt, and press ENTER after each line:
+	
+	  " copy c:\command.com h:\dos
+	  copy c:\sys.com h:\dos
+	  copy c:\format.com h:\dos
+	  copy c:\diskcopy.com h:\dos
+	  copy c:\attrib.exe h:\dos" (without the quotation marks)
+	
+	4. If you need to install the Windows-based versions of Microsoft Backup,
+	  Microsoft Anti-Virus, and Microsoft Undelete, copy your SYSTEM.INI,
+	  WINFILE.INI, and PROGMAN.INI files from your Windows directory to your DOS
+	  directory on the host drive. For example, type the following at the MS-DOS
+	  command prompt, and press ENTER after each line:
+	
+	  " copy c:\windows\system.ini h:\dos
+	  copy c:\windows\winfile.ini h:\dos
+	  copy c:\windows\progman.ini h:\dos" (without the quotation marks)
+	
+	5. Use the ATTRIB command to clear the file attributes on the Stacker version of
+	  DBLSPACE.BIN on the host drive. For example, type "c:\dos\attrib -r -s -h
+	  h:\dblspace.bin" (without the quotation marks) at the MS-DOS command prompt
+	  and then press ENTER.
+	
+	6. Rename the Stacker version of DBLSPACE.BIN on the host drive. For example,
+	  type "ren h:\dblspace.bin stacker.bin" (without the quotation marks) at the
+	  MS-DOS command prompt and then press ENTER.
+	
+	7. Restart your computer so that the Stacker version of DBLSPACE.BIN is no
+	  longer loaded.
+	
+	  NOTE: Because the DBLSPACE.BIN file has been renamed, when you restart your
+	  computer, your Stacker compressed drives will not be accessible.
+	
+	8. Install MS-DOS 6 Upgrade (run SETUP) or the optional programs (run SETUP /E)
+	  to the uncompressed drive (now drive C).
+	
+	  NOTE: If you install the Windows-based versions of the optional programs,
+	  specify your DOS directory when Setup asks for your Windows directory.
+	
+	9. Rename the Stacker version of DBLSPACE.BIN (currently called STACKER.BIN on
+	  your system). For example, type "ren c:\stacker.bin dblspace.bin" (without
+	  the quotation marks) at the MS-DOS command prompt and then press ENTER.
+	
+	10. Restart the computer to load the Stacker version of DBLSPACE.BIN.
+	
+	11. Copy the DOS directory from the host drive to the DOS directory on drive C.
+	  For example, type "copy h:\dos\*.* c:\dos" (without the quotation marks) at
+	  the MS-DOS command prompt and then press ENTER.
+	
+	12. If you installed the Windows-based versions of the optional programs, use
+	  the MOVE program to move the SYSTEM.INI, WINFILE.INI, and PROGMAN.INI files
+	  from your DOS directory to your Windows directory. For example, type the
+	  following at the MS-DOS command prompt, pressing ENTER after each line:
+	
+	  " move c:\dos\system.ini c:\windows
+	  move c:\dos\winfile.ini c:\windows
+	  move c:\dos\progman.ini c:\windows" (without the quotation marks)
+	
+	13. Delete the DOS directory on the host drive. For example, type "deltree
+	  h:\dos" (without the quotation marks) at the MS-DOS command prompt and then
+	  press ENTER.
+	
+	Drive C Is Not Compressed and You Reinstalled MS-DOS 6.0
+	--------------------------------------------------------
+	
+	If Stacker version 3.1 has compressed a portion of the normal boot drive (that
+	is, drive C is not compressed), and you install MS-DOS 6.0 again, Setup
+	overwrites the Stacker version of DBLSPACE.BIN. After the computer is rebooted,
+	you do not have access to your compressed data.
+	
+	If you do not have a system disk that you created after installing Stacker 3.1,
+	you probably don't have a copy on your computer. However, if you have your
+	MS-DOS 6.0 Uninstall disk, you can use it to replace the MS-DOS 6.0 DBLSPACE.BIN
+	file with the Stacker version of DBLSPACE.BIN. To do so:
+	
+	To replace the MS-DOS 6.0 DBLSPACE.BIN file with the Stacker version of
+	DBLSPACE.BIN:
+	
+	1. Use the DELTREE command to delete the DBLSPACE.BIN file in the root of your C
+	  drive. For example, type "deltree c:\dblspace.bin" (without the quotation
+	  marks) at the MS-DOS command prompt and then press ENTER.
+	
+	2. Put your MS-DOS 6.0 Uninstall disk in drive A and copy DBLSPBIN.HST to your C
+	  drive (renaming it DBLSPACE.BIN in the process). For example, type "copy
+	  a:\dblspbin.hst c:\dblspace.bin" (without the quotation marks) at the MS-DOS
+	  command prompt and then press ENTER.
+	
+	Alternatively, if you created a system disk, you can use the SYS command to
+	transfer the MS-DOS system files and the Stacker version of DBLSPACE.BIN to
+	drive C. For example, type "sys a: c:" (without the quotation marks) at the
+	MS-DOS command prompt and then press ENTER.
+	
+	If you still cannot resolve this problem, contact STAC Electronics.
+	
+	MORE INFORMATION
+	================
+	
+	
+	Drive C Is Compressed and You Want to Reinstall the MS-DOS 6.0 System Files
+	---------------------------------------------------------------------------
+	
+	Before you alter your Stacker 3.1 system, you should make a backup boot disk that
+	includes the Stacker version of the DBLSPACE.BIN file. From your swapped drive
+	C, format a floppy disk in drive A as follows:
+	
+	  format a: /s
+	
+	To reinstall MS-DOS 6.0 system files without losing access to your
+	Stacker-compressed drive:
+	
+	1. Run Setup with the /F parameter to install MS-DOS 6.0 to a single floppy
+	  disk. For example, type "a:\setup /f" (without the quotation marks) at the
+	  MS-DOS command prompt and then press ENTER.
+	
+	2. Delete DBLSPACE.BIN from the startup disk you created in step 1. (You cannot
+	  use the MS-DOS 6.0 DBLSPACE.BIN file to access your Stacker-compressed
+	  drives.)
+	
+	3. Use the SYS command to transfer the MS-DOS system files to the host drive.
+	  For example, if your C drive is compressed and your host drive is H, type
+	  "sys a: h:" (without the quotation marks) at the MS-DOS command prompt and
+	  then press ENTER.
+	
+	Stacker is manufactured by STAC Electronics, a vendor independent of Microsoft;
+	we make no warranty, implied or otherwise, regarding this product's performance
+	or reliability.
+	
+	
+	Additional query words: 6 SETUP /Q /U stacker volume file SVF spade ascii character garbage
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMSDOSSearch kbMSDOS600
+	Version           : MS-DOS:6.0
+	
+	=============================================================================
+	

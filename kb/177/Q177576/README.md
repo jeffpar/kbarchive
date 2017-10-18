@@ -1,0 +1,100 @@
+---
+layout: page
+title: "Q177576: Color Printing Problems with Windows NT 4.0"
+permalink: kb/177/Q177576/
+---
+
+## Q177576: Color Printing Problems with Windows NT 4.0
+
+	Article: Q177576
+	Product(s): Microsoft Windows NT
+	Version(s): WinNT:4.0
+	Operating System(s): 
+	Keyword(s): kbprint
+	Last Modified: 07-SEP-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 4.0 
+	- Microsoft Windows NT Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you print in color under Windows NT 4.0, the color quality of the printed
+	output may not have the same consistency as what is viewed on the screen.
+	
+	CAUSE
+	=====
+	
+	The use of a color management procedure is needed for colors to be kept
+	consistent across hardware. Currently, Windows NT 4.0 does not have support for
+	a color management technique known as image color matching (ICM).
+	
+	To give the impression of continuous tone, Windows NT uses a process called
+	halftoning. The current version of Windows NT does not support halftoning on
+	24-bit (or higher) devices.
+	
+	MORE INFORMATION
+	================
+	
+	The number of colors that a device can display ranges from almost none
+	(monochrome devices) to virtually limitless (24-bit devices). About midway in
+	this range is a class of output devices that can support full-color resolution
+	(or near full-color resolution) but can concurrently display only a limited
+	number of those colors.
+	
+	Despite differences in imaging technologies and color capabilities between
+	devices, image color matching ensures that a color image will look the same, or
+	as close as possible to the same, when output to screen, paper, film, and other
+	media. Applications typically use image color matching to let users create color
+	images on the screen that can then be reproduced exactly on a printer or on
+	other screens.
+	
+	For more information on image color matching, please see the following
+	documentation at these web locations:
+	
+	http://www.microsoft.com/hwdev/devdes/icm.htm
+	
+	http://www.microsoft.com/windows/platform/icmwp.htm
+	
+	Halftoning is the process of grouping a number of adjacent pixel locations
+	together to form a cell. Within that cell, appropriate colors are placed
+	according to a defined algorithm, which the human eye integrates to produce the
+	desired color. This is also called dithering. For more information, please see
+	the following documentation at this web location:
+	
+	http://premium.microsoft.com/msdn/library/ddkdoc/ntddk/native/ddk/gg/src/ddioview_21.htm
+	
+	RESOLUTION
+	==========
+	
+	Use a monolithic printer driver from the printer manufacturer if available. A
+	monolithic driver is a driver that does not use common routines that can be
+	called from another file. The routines in the driver are written specifically
+	for the device. These monolithic drivers optimally use the printer by sometimes
+	using proprietary techniques only understood by that specific printer.
+	
+	Contact the printer manufacturer for more information on whether a monolithic
+	driver is available for Windows NT and whether it will improve the quality of
+	the printed output.
+	
+	STATUS
+	======
+	
+	Microsoft is researching this problem and will post new information here in the
+	Microsoft Knowledge Base as it becomes available.
+	
+	
+	Additional query words: print quality third party
+	======================================================================
+	Keywords          : kbprint 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+	Version           : WinNT:4.0
+	Hardware          : ALPHA PPC x86
+	Issue type        : kbbug
+	
+	=============================================================================
+	

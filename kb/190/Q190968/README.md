@@ -1,0 +1,184 @@
+---
+layout: page
+title: "Q190968: BUG: IntelliSense Limitations with C++ Classes"
+permalink: kb/190/Q190968/
+---
+
+## Q190968: BUG: IntelliSense Limitations with C++ Classes
+
+	Article: Q190968
+	Product(s): Microsoft C Compiler
+	Version(s): 6.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 05-MAR-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	This article discusses some of the limitations of IntelliSense when working with
+	classes. The following problems are addressed:
+	
+	- Class constructors do not activate Parameter Info.
+	
+	
+	- Private members display in Members list for an object outside of the class
+	  definition.
+	
+	
+	- IntelliSense may not recognize standard Win32 data types in member functions
+	  when default parameters are used.
+	
+	
+	- IntelliSense does not recognize the member functions of a few new MFC
+	  classes, such as CIPAddressCtrl, CMonthCalCtrl, CRebar, and CRebarCtrl.
+	
+	
+	- IntelliSense may not display the member list of a class in the constructor of
+	  a derived class if its virtual base class member is used inside the derived
+	  class constructor.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article. We are researching this bug and will post new
+	information here in the Microsoft Knowledge Base as it becomes available.
+	
+	MORE INFORMATION
+	================
+	
+	The following is a code sample that illustrates the limitations described in
+	this article. This sample should be placed into a header file:
+	
+	     // 
+	     // Test.h : IntelliSense Class Limitations
+	     // 
+	
+	     //void IntelliSenseFix(DWORD,UINT);
+	
+	     class CIntelliSense
+	     {
+	     public :
+	        CIntelliSense(int n=5) { Num = n; }
+	        void Win32Types(DWORD dw=10, UINT ui=6) {}
+	        void MFCProblem()
+	        {
+	           CMonthCalCtrl calCtrl;
+	        }
+	
+	     private :
+	        void PrivateFunction() {}
+	        int Num;
+	     }
+	
+	Create a Visual C++ MFC project, and include the header file above into a source
+	file.
+	
+	Class Constructors Do Not Activate Parameter Info
+	-------------------------------------------------
+	
+	Type the following line of code into the source file:
+	
+	     CIntelliSense CIs(
+	
+	Notice that no Parameter Info appears for the optional parameter "n" in the class
+	constructor.
+	
+	Private Members Display in Members List Outside the Class Definition
+	--------------------------------------------------------------------
+	
+	Type the following lines of code into the source file:
+	
+	     CIntelliSense CIs;
+	     CIs.
+	
+	The Members list for the CIntelliSense class should appear after typing the
+	period. Notice that it contains the PrivateFunction member function and the Num
+	member variable.
+	
+	Although these functions and variables appear in the Members list, they will
+	generate a compiler error C2248 if used. Private member variables and functions
+	can not be used outside of the class in which they are defined.
+	
+	IntelliSense May Not Recognize Standard Win32 Data Types in Member
+	
+	Functions When Default Parameters Are Used
+	------------------------------------------
+	
+	Type the following lines of code into the source file:
+	
+	     CIntelliSense CIs;
+	     CIs.Win32Types(
+	
+	Notice that only the first DWORD parameter appears in the Parameter Info for this
+	function. IntelliSense does not provide Parameter Info for the second parameter
+	of this function.
+	
+	When an unknown data type is used in a member function parameter list,
+	IntelliSense stops parsing the function at that point. At times, IntelliSense
+	does not recognize Win32 data types as valid data types when used in member
+	functions. This is related to the use of default parameters, and it causes
+	Parameter Info and Type Info to generate a truncated list of function
+	parameters. The only way to avoid this problem is to use the data type outside
+	of a default parameter list before it is used in the member function. This has
+	to occur in the same file that contains the class definition. The following is a
+	workaround:
+	
+	1. Identify all of the data types that are having this problem.
+	
+	2. Create a global function prototype above the class where the problem occurs.
+	
+	3. Place each of the data types that IntelliSense doesn't recognize in the
+	  function's parameter list.
+	
+	In the sample code, remove the comments from the global IntelliSenseFix prototype
+	function. The complete Parameter Info and Type Info now appears for the
+	Win32Types function.
+	
+	IntelliSense Does Not Recognize the Member Functions of a Few New MFC
+	
+	Classes, such as CIPAddressCtrl, CMonthCalCtrl, CRebar, and CRebarCtrl
+	----------------------------------------------------------------------
+	
+	In the CIntelliSense::MFCProblem function, enter a new line after the
+	instantiation of the CMonthCalCtrl object. Insert the following code:
+	
+	     calCtrl.
+	
+	The Members list will appear, but it does not include the member functions for
+	CmonthCalCtrl; however, it does include the members for the CWnd class.
+	
+	REFERENCES
+	==========
+	
+	For additional information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q153284 Limitations of IntelliSense in Visual C++ 6.0
+	
+	"About Automatic Statement Completion;" Visual C++ Documentation, Using Visual
+	C++, Visual C++ Users Guide, Text Editor, Overview: Text Editor, About Automatic
+	Statement Completion.
+	
+	"Automatically Completing Statements;" Visual C++ Documentation, Using Visual
+	C++, Visual C++ Users Guide, Text Editor, How do I ... Topics: Text Editor,
+	Automatically completing Statements.
+	
+	Additional query words: kbvc600
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch
+	Version           : :6.0
+	Issue type        : kbbug
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

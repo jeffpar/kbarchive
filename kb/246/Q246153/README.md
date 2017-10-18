@@ -1,0 +1,155 @@
+---
+layout: page
+title: "Q246153: XCLN: How to Recover Items That Have Been Hard Deleted"
+permalink: kb/246/Q246153/
+---
+
+## Q246153: XCLN: How to Recover Items That Have Been Hard Deleted
+
+	Article: Q246153
+	Product(s): Microsoft Exchange
+	Version(s): 5.5,8.01,8.02,8.03
+	Operating System(s): 
+	Keyword(s): kbenv kbfile
+	Last Modified: 09-JUL-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.5 
+	- Microsoft Outlook 97, versions 8.01, 8.02, 8.03 
+	- Microsoft Outlook 98 
+	- Microsoft Outlook 2000 
+	- Microsoft Outlook 2002 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about modifying the registry. Before you 
+	modify the registry, make sure to back it up and make sure that you understand how to restore 
+	the registry if a problem occurs. For information about how to back up, restore, and edit the 
+	registry, click the following article number to view the article in the Microsoft Knowledge Base:
+	
+	  Q256986 Description of the Microsoft Windows Registry
+	
+	SUMMARY
+	=======
+	
+	This article describes how to recover items that have been "hard deleted"; for
+	example, if you do not move items to the Deleted Items folder before you delete
+	them, these items have been hard deleted.
+	
+	MORE INFORMATION
+	================
+	
+	WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+	that may require you to reinstall your operating system. Microsoft cannot
+	guarantee that you can solve problems that result from using Registry Editor
+	incorrectly. Use Registry Editor at your own risk.
+	
+	When you delete items from a folder in a mailbox, the items first are shifted to
+	the Deleted Items folder in the mailbox. You can then delete these items from
+	the Deleted Items folder. This functionality protects you from accidentally
+	deleting an item. After you delete the items from the Deleted Items folder,
+	these items can still be recovered if the Exchange Server 5.5 computer has been
+	configured to retain deleted items. To determine if the server has been
+	configured in this manner, open the properties of the public and private
+	information store objects under the Server object.
+	
+	For additional information, click the article number about how to configure the
+	server to retain deleted items below to view the article about how to configure
+	the server to retain deleted items in the Microsoft Knowledge Base:
+	
+	  Q246283 XADM: Set Deleted Mail Message Retention Time in Exchange Server 5.5
+	
+	It is also possible to permanently delete items without first moving them to the
+	Deleted Items folder. This procedure is called a "hard delete" as opposed to a
+	"soft delete".
+	
+	Messages are hard deleted in the following scenarios:
+	
+	- You are using Microsoft Outlook, and you press SHIFT+DELETE to delete a
+	  message.
+	
+	- You are working an Internet Message Access Protocol 4 (IMAP4) client or
+	  another type of client that does not first move the message to the Deleted
+	  Items folder.
+	
+	By default, the Recover Deleted Items functionality is only enabled on the
+	Deleted Items folder in a user's private folders; items that are hard deleted
+	cannot be recovered. To enable the Recover Deleted Items functionality on mail
+	folders other than Deleted Items (for example, for Sent Items, Drafts, Outbox
+	and Inbox folders), you must make the following changes to the registry:
+	
+	1. Start Registry Editor (Regedt32.exe).
+	
+	2. Locate and click the following key in the registry:
+	
+	  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Exchange\Client\Options
+	
+	3. On the Edit menu, click Add Value, and then add the following registry value:
+	
+	  Value name: DumpsterAlwaysOn
+	  Data type: DWORD
+	  Value data: 1
+	
+	4. Quit Registry Editor.
+	
+	You can use an administrator's computer or a user's computer to make this change
+	to the registry. After you change the registry, start Outlook, and then click
+	Deleted Item Recovery on the Tools menu. A list of items that have been hard
+	deleted during the retention time set on the server is displayed.
+	
+	If you are an administrator, you can set this functionality for all user
+	workstations. To do so, use your computer to change the registry for all user
+	workstations, and then open the affected user's mailbox as an additional
+	mailbox. You can then recover deleted items from the user's mailbox mail
+	folders.
+	
+	NOTE: If you are an administrator, and you want to open another user's mailbox to
+	recover items in the user's private folders, your Windows NT account must have
+	User permissions for that user's mailbox object. You must also add that user's
+	mailbox to your own profile:
+	
+	1. Open Control Panel, and then double-click Mail.
+	
+	2. Open the Services properties, and then double-click Microsoft Exchange
+	  Server.
+	
+	3. Click the Advanced tab, and then click Add to add the mailbox to your
+	  profile.
+	
+	The Recover Deleted Items functionality in Outlook 98, Outlook 2000, Outlook 2002
+	---------------------------------------------------------------------------------
+	
+	In Outlook 98, the Recover Deleted Items functionality is available only for mail
+	folders (for example, Deleted Items, Drafts, Inbox, Outbox and Sent Items
+	folders). Therefore, items that are hard-deleted from non-mail folders (for
+	example, Contacts and Notes folders) cannot be recovered. However, in Outlook
+	2000 and Outlook 2002, the Recover Deleted Items functionality is available for
+	all folders; if you make the registry change described earlier in this article,
+	you can recover hard-deleted items from non-mail folders.
+	
+	For additional information, click the article number below to view the article in
+	the Microsoft Knowledge Base:
+	
+	  Q228934 XCLN: Understanding Deleted Item Recovery
+	
+	  Q180117 XADM: Recovering Deleted Items from a Public Folder
+	
+	  Q175263 XADM: Clients Cannot Recover Items After Item Recovery Is Enabled
+	
+	  Q188637 XADM: How to Determine the Size of Recoverable Items in the
+	  Information Store
+	
+	  Q178630 XADM: How to Recover Items That Do Not Touch the Deleted Items Folder
+	
+	Additional query words: Dumpster
+	
+	======================================================================
+	Keywords          : kbenv kbfile 
+	Technology        : kbOutlookSearch kbExchangeSearch kbExchange550 kbOutlook2002 kbZNotKeyword2 kbOutlook2000Search kbOutlook2002Search kbOutlook97Search kbOutlook98Search kbZNotKeyword3 kbOutlook801 kbOutlook802 kbOutlook803
+	Version           : :5.5,8.01,8.02,8.03
+	Hardware          : x86
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

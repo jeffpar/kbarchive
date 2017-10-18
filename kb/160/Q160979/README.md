@@ -1,0 +1,69 @@
+---
+layout: page
+title: "Q160979: TN3270 Server Does Not Handle Models 3, 4, and 5 Correctly"
+permalink: kb/160/Q160979/
+---
+
+## Q160979: TN3270 Server Does Not Handle Models 3, 4, and 5 Correctly
+
+	Article: Q160979
+	Product(s): Microsoft SNA Server
+	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
+	Operating System(s): 
+	Keyword(s): kbnetwork
+	Last Modified: 12-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 2.0, 2.1, 2.11, 2.11 SP1 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	Various terminal types are supported by the TN3270/e Service. However, if the
+	emulator requests a 3270 model 3, 4, or 5, the screen may appear to be truncated
+	or missing characters.
+	
+	CAUSE
+	=====
+	
+	The TN3270 Server does not format SSCP data correctly for models 3, 4, and 5; it
+	has the following three problems:
+	
+	- For models 3, 4, and 5 the TN3270 Server should never send the ERASE- WRITE
+	  command. Instead, it should send the ERASE-WRITE-ALTERNATE command.
+	
+	- The TN3270 Server has an array containing the 3270 screen addresses.
+	  Unfortunately, this array is not large enough for model 3 and model 4
+	  screens.
+	
+	- There should be a different array for model 5 screens.
+	
+	RESOLUTION
+	==========
+	
+	The TN3270 Server's handling of models 3, 4, and 5 was incorrect. The TN3270
+	Server now formats these screens correctly. To resolve this problem, obtain the
+	hotfix mentioned below.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in SNA Server versions 2.0, 2.1,
+	2.11, and 2.11 Service Pack 1. This problem was corrected in the latest
+	Microsoft SNA Server 2.11 U.S. Service Pack. For information on obtaining the
+	service pack, query on the following word in the Microsoft Knowledge Base
+	(without the spaces): S E R V P A C K
+	
+	Additional query words: prodsna
+	
+	======================================================================
+	Keywords          : kbnetwork 
+	Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ200 kbSNAServ211 kbSNAServ210 kbSNAServ211SP1
+	Version           : WINDOWS:2.0,2.1,2.11,2.11 SP1
+	
+	=============================================================================
+	

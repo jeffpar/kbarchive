@@ -1,0 +1,150 @@
+---
+layout: page
+title: "Q68902: How to Set the KX-P1124 Printer Emulation Modes"
+permalink: kb/068/Q68902/
+---
+
+## Q68902: How to Set the KX-P1124 Printer Emulation Modes
+
+	Article: Q68902
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:3.0,3.0a
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 08-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows versions 3.0, 3.0a 
+	-------------------------------------------------------------------------------
+	
+	
+	SUMMARY
+	=======
+	
+	There is a new printer driver available for the Panasonic KX-P1124. This driver
+	was written by Microsoft and is available from Microsoft Product Support Support
+	Services or from Panasonic.
+	
+	If you do not have the proper driver, you can use one of the two emulation modes
+	the printer supports and print using the corresponding Microsoft Windows printer
+	driver.
+	
+	1. Epson LQ-2500
+	
+	   - Epson LQ-2500 Italic
+	
+	   - Epson LQ-2500 Graphic Set 2
+	
+	2. IBM Proprinter X24
+	
+	   - IBM X24 Graphic Set 1
+	
+	   - IBM X24 Graphic Set 2
+	
+	The Panasonic KX-P1124 is shipped using the Epson LQ-2500 Italic mode as the
+	default. This emulation does not support the extended character set (that is,
+	single and double box outlines, and Greek characters).
+	
+	MORE INFORMATION
+	================
+	
+	The following examples explain how to set up the KX-P1124 for the IBM Proprinter
+	X24 and Epson LQ-2500 emulation modes.
+	
+	INITIAL SETUP MODE
+	------------------
+	
+	To begin selecting the appropriate emulation, perform the following steps to get
+	into the initial setup mode:
+	
+	1. Turn the printer off.
+	
+	2. Press and hold the FUNCTION key on the printer.
+	
+	3. Turn the printer on.
+	
+	4. Release the FUNCTION key.
+	
+	NOTE: The ON-LINE light should begin flashing, indicating that you are operating
+	in the initial setup mode.
+	
+	The printer's front panel includes the following arrangement:
+	
+	               Col1   Col2   Col3   Col4   Col5   Col6
+	              [LED]  [LED]  [LED]  [LED]  [LED]  [LED]
+	  Row1 [LED]
+	  Row3 [LED]
+	  Row5 [LED]
+	
+	At this point, Row1 should be lit and one of the LEDs in columns 1 through 4
+	should be lit. Below is a quick reference to what emulation is active:
+	
+	Emulation                               Column Indicator
+	---------                               ----------------
+	Epson LQ-2500 Italic                    Col 1
+	Epson LQ-2500 Graphic Set 2             Col 2
+	IBM Proprinter X24 Graphic Set 1        Col 3
+	IBM Proprinter X24 Graphic Set 2        Col 4
+	
+	Setting an Emulation Mode
+	-------------------------
+	
+	For Epson LQ-2500 (Italic):
+	
+	1. Press the ROW button until Row1 is lit.
+	
+	2. Press the COLUMN button until Col1 is lit.
+	
+	3. Press the SET button.
+	
+	4. Press the ON-LINE button; the printer resets with the new configuration.
+	
+	For Epson LQ-2500 (Graphic Set 2):
+	
+	1. Press the ROW button until Row1 is lit.
+	
+	2. Press the COLUMN button until Col2 is lit.
+	
+	3. Press the SET button.
+	
+	4. Press the ON-LINE button; the printer resets with the new configuration.
+	
+	For IBM Proprinter X24 (Graphic Set 1):
+	
+	1. Press the ROW button until Row1 is lit.
+	
+	2. Press the COLUMN button until Col3 is lit.
+	
+	3. Press the SET button.
+	
+	4. Press the ON-LINE button (the printer resets with the new configuration.
+	
+	For IBM Proprinter X24 (Graphic Set 2):
+	
+	1. Press the ROW button until Row1 is lit.
+	
+	2. Press the COLUMN button until Col4 is lit.
+	
+	3. Press the SET button.
+	
+	4. Press the ON-LINE button; the printer resets with the new configuration.
+	
+	With the printer configured, install the corresponding printer driver in the
+	Control Panel or through the MS-DOS application's printer setup.
+	
+	The products included here are manufactured by vendors independent of Microsoft;
+	we make no warranty, implied or otherwise, regarding these products' performance
+	or reliability.
+	
+	
+	Additional query words: 3rdparty 3.0 3.0a 3.00a KXP 1124 win30 windrvr
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+	Version           : WINDOWS:3.0,3.0a
+	
+	=============================================================================
+	

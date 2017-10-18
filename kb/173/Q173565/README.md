@@ -1,0 +1,118 @@
+---
+layout: page
+title: "Q173565: SMS: Err: &quot;Cannot Establish a Security Context with the Client&quot;"
+permalink: kb/173/Q173565/
+---
+
+## Q173565: SMS: Err: &quot;Cannot Establish a Security Context with the Client&quot;
+
+	Article: Q173565
+	Product(s): Microsoft Systems Management Server
+	Version(s): winnt:1.2
+	Operating System(s): 
+	Keyword(s): kbnetwork kbtshoot smsremtshoot kbRemoteProg
+	Last Modified: 31-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server version 1.2 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When a person running the Systems Management Server Administrator program
+	attempts to establish a Remote Control session with a client computer running
+	Windows NT, the message "Cannot establish a security context with the client" is
+	returned. If the Remote Control button is clicked again, another window
+	containing the following message appears:
+	
+	  The currently logged in user does not have rights to access the client
+	  machine. Please provide the username, domain, and password of an account that
+	  is allowed to access the client.
+	
+	Regardless of what user name, domain, and password is supplied, the "Cannot
+	establish security context" message is always returned.
+	
+	CAUSE
+	=====
+	
+	This particular problem has two possible causes. One possible cause is that
+	there is no valid entry in the Permitted Viewers registry key on the Systems
+	Management Server client that is to be controlled remotely.
+	
+	The other possible cause is that this is an Administrator program problem where
+	the Workstation service is not functioning correctly on the system running the
+	Systems Management Server Administrator program. If this is the case, the system
+	running the Administrator program will be unable to remotely control any other
+	computer running Windows NT.
+	
+	To determine which of these two possibilities may be causing your problem, try to
+	use Remote Control on the target client from another computer running the
+	Systems Management Server Administrator program. If the workstation can be
+	successfully controlled remotely from another system running the Systems
+	Management Server Administrator program, then this is probably not a problem
+	with the client computer.
+	
+	WORKAROUND
+	==========
+	
+	To work around this problem, follow the steps below, depending on whether the
+	cause of the problem is with the client computer or the computer running the
+	Systems Management Server Administrator program:
+	
+	Client Problem
+	--------------
+	
+	1. If the client computer running Windows NT cannot be remotely controlled from
+	  any system running the Systems Management Server Administrator program,
+	  examine the following registry key on the Windows NT client that you want to
+	  use Remote Control on:
+	
+	     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SMS\Client Services\Remote
+	     Control\Parameters
+	
+	2. Ensure that the Permitted Viewers value (REG_MULTI_SZ) contains a valid
+	  Windows NT user account or group (such as Administrators).
+	
+	You can define the site-wide setting for the permitted viewers in the Systems
+	Management Server Administrator program. To do this, click Clients on the Site
+	Properties menu, and then click Options.
+	
+	Administrator Problem
+	---------------------
+	
+	1. If the system running the Systems Management Server Administrator program is
+	  unable to use Remote Control on any client computer running Windows NT (that
+	  can be controlled remotely from other stations running the Systems Management
+	  Server Administrator program), first try applying (or reapplying) the latest
+	  service pack for Windows NT. This has proven to correct some of these
+	  problems. If the problem remains, remove and reinstall the Workstation
+	  service on the system running the Systems Management Server Administrator
+	  program. You can do this by using the Network tool in Control Panel. If the
+	  system is a domain controller, the workstation service cannot be removed.
+	
+	  WARNING: Removing this service will not allow the workstation to connect to a
+	  remote location to reinstall the service. Make certain the system has a
+	  CD-ROM drive and the Windows NT CD-ROM, or has copied the Windows NT I386 (or
+	  other platform) folder to its local hard disk before removing this service.
+	
+	2. Reapply any Windows NT service packs that were previously applied to the
+	  system.
+	
+	3. Restart the system.
+	
+	The system should now be able to use Remote Control on any remote client
+	computers running Windows NT.
+	
+	Additional query words: prodsms utility tool admin
+	
+	======================================================================
+	Keywords          : kbnetwork kbtshoot smsremtshoot kbRemoteProg 
+	Technology        : kbSMSSearch kbSMS120
+	Version           : winnt:1.2
+	Issue type        : kbprb
+	
+	=============================================================================
+	

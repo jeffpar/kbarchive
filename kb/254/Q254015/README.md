@@ -1,0 +1,122 @@
+---
+layout: page
+title: "Q254015: SNA Server Access Violation During Single Sign-On Processing"
+permalink: kb/254/Q254015/
+---
+
+## Q254015: SNA Server Access Violation During Single Sign-On Processing
+
+	Article: Q254015
+	Product(s): Microsoft SNA Server
+	Version(s): WINDOWS:4.0,4.0 SP1,4.0 SP2,4.0 SP3
+	Operating System(s): 
+	Keyword(s): sna4 kbsna400sp1 kbsna400sp2 kbsna400sp3 kbSNA400sp4fix kbSNA400PreSP4fix
+	Last Modified: 13-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The SNA Server service (Snaservr.exe) may stop unexpectedly with an Access
+	Violation error message in the s1plssof function or s1plsnd function while
+	handling a single sign-on request following a restart of the service. When this
+	occurs, the following Windows NT application event is logged:
+	
+	  Event ID: 624
+	  Source: SNA Server
+	
+	If the Drwtsn32.exe file is configured as the default Windows NT debugger, a
+	Drwtsn32.log entry is also created. The following is an example of an entry that
+	may be created (note the function names):
+	
+	  
+	
+	  Application exception occurred:
+	       App: exe\snaservr.dbg (pid)
+	       When: date time
+	       Exception number: c0000005 (access violation)
+	
+	  function: s1plssof
+	       0103a52d c744243003000000 mov   dword ptr [esp+0x30],0x3 ss:023de837=????????
+	       0103a535 8b1485945f1801                                  ds:002c64b0=00000000
+	                                 mov     edx,[sbbufrsv+0x54 (01185f94)+eax*4]
+	       0103a53c 0fbfc1           movsx   eax,cx
+	       0103a53f 8bc8             mov     ecx,eax
+	       0103a541 89542418         mov     [esp+0x18],edx         ss:023de837=????????
+	       0103a545 0fbf942414010000 movsx   edx,word ptr [esp+0x114]   ss:00bcff44=0006
+	       0103a54d c1e103           shl     ecx,0x3
+	       0103a550 2bc8             sub     ecx,eax
+	       0103a552 8d044a           lea     eax,[edx+ecx*2]        ds:0002c648=????????
+	       0103a555 c1e003           shl     eax,0x3
+	  FAULT ->0103a558 668b88b8d30601   mov     cx,[eax+0x106d3b8]         ds:01333868=????
+	       0103a55f 8d80bad30601     lea     eax,[eax+0x106d3ba]    ds:0133386a=????????
+	
+	-or-
+	
+	  
+	
+	  Application exception occurred:
+	       App: exe\snaservr.dbg (pid)
+	       When: date time
+	       Exception number: c0000005 (access violation)
+	
+	  function: s1plsnd
+	       010398cb e8d0110000       call    s1plssoq (0103aaa0)
+	       010398d0 0fbf05425a1801                                      ds:01185a42=028c
+	                                 movsx   eax,word ptr [sncurrnt (01185a42)]
+	       010398d7 8d0c40           lea     ecx,[eax+eax*2]        ds:01317748=01317748
+	       010398da 8b048d945f1801                                  ds:000007a4=????????
+	                                 mov     eax,[sbbufrsv+0x54 (01185f94)+ecx*4]
+	       010398e1 89442414         mov     [esp+0x14],eax         ss:023de957=????????
+	       010398e5 85c0             test    eax,eax
+	       010398e7 0f8437040000     je      s1plsnd+0x484 (01039d24)
+	       010398ed 668b6810         mov     bp,[eax+0x10]              ds:02b2614f=????
+	       010398f1 0fbffd           movsx   edi,bp
+	       010398f4 8b14bd9ce40e01                                  ds:00000000=????????
+	                                 mov     edx,[s1rcb+0xe25c (010ee49c)+edi*4]
+	  FAULT ->010398fb 668b0a           mov     cx,[edx]                   ds:00000000=????
+	       010398fe 6689480c         mov     [eax+0xc],cx               ds:02b2614f=????
+	
+	CAUSE
+	=====
+	
+	The SNA Server service is attempting to process an internal single sign-on
+	message that contains an incorrect destination index field, which leads to an
+	Access Violation error message.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, obtain the latest service pack for SNA Server 4.0. For
+	additional information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q215838 How to Obtain the Latest SNA Server Version 4.0 Service Pack
+	
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft SNA Server 4.0, 4.0
+	SP1, 4.0 SP2, and 4.0 SP3.
+	
+	This problem was first corrected in SNA Server 4.0 Service Pack 4.
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : sna4 kbsna400sp1 kbsna400sp2 kbsna400sp3 kbSNA400sp4fix kbSNA400PreSP4fix 
+	Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3
+	Version           : WINDOWS:4.0,4.0 SP1,4.0 SP2,4.0 SP3
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

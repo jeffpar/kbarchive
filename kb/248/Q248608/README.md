@@ -1,0 +1,166 @@
+---
+layout: page
+title: "Q248608: INFO: SQL SELECT Optimization Levels and Performance"
+permalink: kb/248/Q248608/
+---
+
+## Q248608: INFO: SQL SELECT Optimization Levels and Performance
+
+	Article: Q248608
+	Product(s): Microsoft FoxPro
+	Version(s): 3.0,3.0b,5.0,5.0a,6.0,7.0
+	Operating System(s): 
+	Keyword(s): kbDatabase kbSQL kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600 KbDBFDBC kbGrpDSFox kbD
+	Last Modified: 08-APR-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0, 7.0 
+	- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	To fully optimize your queries, it is necessary to add index tags matching the
+	WHERE and JOIN clauses. In addition, if you have SET DELETED ON, you must have
+	an index on DELETED() to fully optimize your query. However, creating the
+	indexes required for a SELECT to be fully optimized might not improve query
+	performance, and might actually hinder it in some cases.
+	
+	MORE INFORMATION
+	================
+	
+	For a query to be optimized, the SELECT statement must have a WHERE clause. The
+	expression on the left of the equal sign must match an index expression exactly.
+	For example, if the clause is WHERE UPPER(cName) = <some value>, you must
+	have an index with an expression of UPPER(cName) for Rushmore to optimize the
+	query.
+	
+	In Visual FoxPro 5.0, Microsoft introduced the SYS(3054) function to report the
+	Rushmore optimization level of SELECT statements. If the SELECT statement's
+	WHERE clause is performing a join (... WHERE tableA.keyValue = tableB.keyValue),
+	or the SELECT uses the JOIN syntax, this displays differently than a filtering
+	WHERE clause. If the join is optimized, it says, "Joining tableA and tableB
+	using index tag <tag>." Otherwise, it says, "...using temp index."
+	
+	NOTE: Optimization does not always mean faster performance than non-optimization.
+	You must test on a query-by-query basis.
+	
+	The following sample code demonstrates this. It uses the testdata database in the
+	Samples directory.
+	
+	  SET DELETED OFF
+	  CLEAR
+	  *!* VFP 3.0 and 5.0
+	  *!* CD HOME() + 'samples\data'
+	  *!* VFP 6.0
+	  CD HOME(2) + 'data'  && Tools:Options:File Locations:Samples directory must
+	                       && be set for HOME(2) to work.
+	
+	  = SYS(3054, 11)  && Display optimization information for joins in VFP 5     
+	                   && and later. In VFP 3.0, this function will be ignored.
+	
+	  ? "Query 1:"
+	  lnStart = SECONDS()
+	  SELECT orders.* ;
+	      FROM orders, customer ;
+	      WHERE orders.cust_id = customer.cust_id ;
+	      INTO CURSOR crsrTemp
+	  *!* Under VFP 5.0 and above, the preceding statement could be written as:
+	  *!* SELECT * ;
+	  *!*    FROM orders JOIN customer ;
+	  *!*        ON orders.cust_id = customer.cust_id ;
+	  *!*    INTO CURSOR crsrTemp
+	
+	  ? SECONDS() - lnStart, _TALLY
+	  ?
+	
+	  ? "Query 2:"
+	  lnStart = SECONDS()
+	  SELECT orders.* ;
+	      FROM orders, customer ;
+	      WHERE orders.cust_id = customer.cust_id ;
+	        AND customer.cust_id = "BONAP" ;
+	      INTO CURSOR crsrTemp
+	
+	  ? SECONDS() - lnStart, _TALLY
+	  ?
+	
+	  ? "Query 3:"
+	  lnStart = SECONDS()
+	  SELECT orders.* ;
+	      FROM orders, customer ;
+	      WHERE orders.cust_id = customer.cust_id ;
+	        AND customer.cust_id = "BONAP" ;
+	        AND orders.order_id > ' 10000' ;
+	      INTO CURSOR crsrTemp
+	
+	  ? SECONDS() - lnStart, _TALLY
+	
+	The first query returns all of the records from orders. Execution time is ~.017
+	seconds on a particular test computer. Neither table reports as optimized, since
+	the WHERE clause does not filter either table. The join is optimized.
+	
+	The second query returns 19 records from orders. Execution time is ~.005 seconds
+	on the same computer. The customer table reports as optimized, because the WHERE
+	clause has a filter that matches an index expression in the table. The order
+	table is not optimized, but the join is, as in the first query.
+	
+	The third query returns 19 records from orders. Execution time is also ~.005
+	seconds on the same computer. Both the orders and customer tables report as
+	optimized, as well as the join. Note that although this query is fully
+	optimized, the execution time is the same as in the second query.
+	
+	If you run the above code example with SET DELETED ON, each query that was fully
+	optimized is now partially optimized. However, the execution times are the
+	same.
+	
+	It is usually better for performance not to create a DELETED() tag, even though
+	it causes the query to be only partially optimized if SET DELETED is ON. The
+	reason for this behavior is that if you are operating over a network and few
+	records are deleted, bringing the DELETED() tag over the wire can take a
+	non-negligible amount of time for very little gain when compared to just testing
+	the deleted status of the fewer records in the result set.
+	
+	When writing queries, you should:
+	
+	- Avoid unnecessary joins.
+	- Make sure your joins are optimized.
+	- Add index tags for frequently-used non-join WHERE condition expressions. You
+	  won't usually get any performance gain from indexes on 1-byte or logical
+	  fields, or DELETED(), even though this may change the optimization level from
+	  partial to full.
+	- Test, test, and test to make sure you have what you need for indexes. If you
+	  get equal performance with and without an index tag, and you don't need the
+	  tag for SEEKs or ordering, don't create it.
+	
+	A technique you can use in Visual FoxPro 5.0 or later to isolate performance
+	bottlenecks is to create a coverage log with SET COVERAGE. Visual FoxPro 6.0
+	adds the Coverage Profiler, which assists in analyzing the coverage results. You
+	should focus on all slow code sections, not just SELECTs, to improve their
+	performance.
+	
+	(c) Microsoft Corporation 2000, All Rights Reserved. Contributions by Jim
+	Saunders, Microsoft Corporation.
+	
+	
+	REFERENCES
+	==========
+	
+	For additional information on optimizing queries, click the article number below
+	to view the article in the Microsoft Knowledge Base:
+	
+	  Q155788 HOWTO: Optimize SQL Using the FORCE Clause and SYS(3054)
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbDatabase kbSQL kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600 KbDBFDBC kbGrpDSFox kbDSupport kbSQLProg 
+	Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP700 kbVFP500a
+	Version           : :3.0,3.0b,5.0,5.0a,6.0,7.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

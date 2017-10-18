@@ -1,0 +1,216 @@
+---
+layout: page
+title: "Q155483: Music Central 96 Update Contents: August 96"
+permalink: kb/155/Q155483/
+---
+
+## Q155483: Music Central 96 Update Contents: August 96
+
+	Article: Q155483
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): 1996 edition
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 19-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Music Central for Windows 1996 edition 
+	- Microsoft Music Central for the Macintosh 1996 edition 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The following article lists the album titles and artist names included in the
+	August 96 update of Music Central 1996:
+	
+	Album Titles and Artists
+	------------------------
+	
+	About To Burst (Danielle Howle), After Dark (Engelbert), Alternate Currents: A
+	Gramavision Sampler (Various Artists), Amrita...All These And The Japanese Soup
+	Warriors (Loop Guru), And So It Goes.. (Steve Tilston), Apostles, The (The
+	Apostles), Are You With Me? (Cowboy Mouth), At Town Hall (Junior Mance), Atlanta
+	Blues Legend (Buddy Moss), Atlanta Rhythm Section '96 (Atlanta Rhythm Section),
+	Backsaturday (Prolapse), Bad And The Beautiful, The (Original Soundtrack), Banda
+	Macho (The Figgs), Bao Bao (Manu Dibango), Beast, The (Original TV Soundtrack),
+	Beat The Bastards (The Exploited), Bed & Sofa (Original Cast), Below The
+	Bassline (Ernest Ranglin), Berlin, 1962 (Ray Charles), Best Of Blues Guitar
+	(Various Artists), Best Of Nellie Lutcher, The (Nellie Lutcher), Best Of The
+	Brothers Four, The (The Brothers Four), Best Of: The Singles Collection (Theatre
+	Of Hate), Better Days Ahead (Norman Brown), Big Things (Molly & The
+	Heymakers), Black Lion Presents Ben Webster (Ben Webster), Blue Beat Years, The
+	(Laurel Aitken), Blue Morning (Toni Brown), Blue Rambler #2 (Laurel Canyon
+	Ramblers), Blue Skies: The Irving Berlin (Various Artists), Blues For Allah
+	Project, The (Joe Gallant & Illuminati), Blues Groove (Jimmy McGriff &
+	Hank Crawford Quartet), Blues Interaction: Live In Japan 1986 With Break Down
+	(Otis Rush), Blues Legend (John Lee Hooker), Blues Thang! (Rufus Thomas), Blues,
+	Dues And Love News (Ernestine Anderson), Bluesilian (Tania Maria), Bluestreak
+	(Tom Scott & The L.A. Express), Book Of Shadows (Zakk Wylde), Borders &
+	Boundaries (Marty Haggard), Boyfriend/Me And My Girl, The (Original Cast
+	Recordings), Braver Newer World (Jimmie Dale Gilmore), Broken Arrow (Neil
+	Young/Crazy Horse), Brother To Brother (Michael Card/John Michael Talbot),
+	Brussels And Paris (Django Reinhardt), Burning Out The Inside (Dashboard
+	Prophets), Cajun & Zydeco Classics (Various Artists), Calling (Noa), Calling
+	Card (Arthur Blythe), Calm Before The Storm (Paul Brandt), Camelot/My Fair Lady
+	(Original Cast Recordings), Capitol Years, The (Dean Martin), Carnegie Hall Jazz
+	Band, The (The Carnegie Hall Jazz Band), Chant Down Babylon: The Island
+	Anthology (Burning Spear), Chaos And Disorder (Prince), Cinema Paradiso: The
+	Classic Film Music Of Ennio Morricone (Ennio Morricone), Classic Moody Blues
+	(Classical Rock Orchestra/Justin Hayward), Classic Toto Hits (Classical Rock
+	Orchestra/Bobby Kimball), Cleaning House (Saffire-The Uppity Blues Women),
+	Clutter Of Pop, The (Dave Allen & The Elastic Purejoy), Come On Back (Billy
+	& Sarah Gaines), Composer (Cedar Walton), Conversations With A Goose (Jimmy
+	Giuffre/Paul Bley/Steve Swallow), Conversin' With The Elders (James Carter),
+	Cool World/Dizzy Goes Hollywood, The (Dizzy Gillespie), Could It Be (Dennis
+	Brown), Coyote Shivers (Coyote Shivers), Crime Rate (J-Mack), DA dA dA (Nits),
+	Dancing With Nature Spirits (Jack DeJohnette/Michael Cain & Steve Gorn),
+	Dangerous (Marlena Shaw), Dark Shadows: 30th Anniversary Collection (Original
+	Soundtracks), Daydreamer (Priscilla Herdman), Dead Spy Report (Craig Ross),
+	Death Mix (Christian Death), Double Trouble (Sheep On Drugs), Downtown America
+	(Dave Sharp), DragonHeart (Original Soundtrack), Dream Music 2 - Movie Music
+	Composed By Tangerine Dream (Tangerine Dream), Dreamin' Out Loud (Trace Adkins),
+	Drift Away With Dobie Gray: His Very Best (Dobie Gray), Duncan Sheik (Duncan
+	Sheik), Eagle & The Poodle, The (Mecca Normal), Ears To The Wall (The Dirty
+	Dozen), Easy To Love - The Songs Of Cole Porter (Susannah McCorkle), Edison
+	Recordings-1928 (Ernest V. Stoneman), ESPN Presents X Games, Vol. 1 (Various
+	Artists), Fanny (Original Cast Recording), Fargo/Barton Fink (Original
+	Soundtracks), Finest Hour (Jackopierce), Folk On 2 (Ewan MacColl/Peggy Seeger),
+	Four Now (World Saxophone Quartet With African Drums),French Cough Syrup (Jeff
+	Dahl), Funny Thing Happened On The Way To The Forum, A (Original 1996 Cast),
+	Gene Kelly At Metro- Goldwyn-Mayer: 'S Wonderful (Gene Kelly), Get U Open (Skin
+	Deep), Getchertiktz (Ric Ocasek/Alan Vega/Gillian McCain), Gone With The Wind
+	(RCA) (Original Soundtrack), Gossip (T Lavitz), Gravity!!! (Howard Johnson &
+	Gravity), Great Guitar Hits (Duane Eddy), Great Vocalists Of Our Time (Benny
+	Goodman), Greatest Hits (Burl Ives), Grooving At Studio One (Various Artists),
+	Gus (Gus), Hacia El Amor (John Santos/Kindembo), Hammer (Zoe), Hang Up Sorrow
+	& Care (Maddy Prior & The Carnival Band), Hard And Heavy* (*With
+	Marshmallow) (Lava Sutra), Hard Bop Grandpop, The (Horace Silver), Having It
+	Both Ways [ECD] (Tom Robinson), He's Everywhere (Andrae Crouch), Heartkeys: The
+	AIDS Memorial Album (Various Artists), Heaven And Earth (Jah Wobble), Heavy
+	(Original Soundtrack), Hellraiser 4: Bloodline (Original Soundtrack), Heroes Of
+	Country Music, Vol. 1: Legends Of Western Swing (Various Artists), Heroes Of
+	Country Music, Vol. 2: Legends Of Honky Tonk (Various Artists),Heroes Of Country
+	Music, Vol. 3: Legends Of Nashville (Various Artists), Heroes Of Country Music,
+	Vol. 4: Legends Of The West Coast (Various Artists), Heroes Of Country Music,
+	Vol. 5: Legends Of Country Rock (Various Artists), Higher Octave Music:
+	Evolution: 1986-1996 (Various Artists), Hip Hop Essence: A Celebration Of The
+	Music Of Freddie Hubbard (Hub Art), His Masters' Voice (Fabulous Poodles),
+	History Of Dot Volume 1: Young Love, The (Various Artists), History Of Dot
+	Volume 2: Come Go With Me, The (Various Artists), Honeydogs, The (The
+	Honeydogs), Hoopsnakes (Hoopsnakes), Hopkins (The Witchfinder General) [EP]
+	(Cathedral), Hot [ECD] (Squirrel Nut Zippers), How Sweet It Is!: The Jackie
+	Gleason Velvet Brass Collection (Jackie Gleason), I Am Woman (Various Artists),
+	I Hope It Lands (Thinking Fellers Union Local 2), I Stoled This Record (Cledus
+	T. Judd), I'll See You In The Rapture (Mississippi Mass Choir), I'm Here For You
+	(Ann Nesby), Icon (Nico), In Search Of Freedom (Martin Luther King, Jr.),
+	Inanition (Controlled Bleeding), Independence Day (Original Soundtrack), Into
+	The Woods: The Best Of Phil Woods (Phil Woods), Introducing The E-Types
+	(E-Types), Israel's King (Cocoa Tea), It's A Blues Thing - Live (Ray Charles),
+	It's About Time (Jack McDuff/Joey DeFrancesco), It's The Real Soul (Gene Harris
+	Quartet), Jack Is Back! (Jack Sheldon),Jack Sheldon Sings (Jack Sheldon),
+	Jazzin' (Tito Puente/India), Journey To Next (Benny Carter/Dizzy Gillespie),
+	Just Like You [CD-Extra] (Keb' Mo'), Just Rockin' & Rollin' (Ronnie Dawson),
+	Kevin Mahogany (Kevin Mahogany), Keys To The Heart (Brian Auger's Oblivion
+	Express), Kingpin (Original Soundtrack), Kiss And Punch (Immaculate Fools),
+	Kitaro's World Of Music Featuring Yu-Xiao Guang (Yu-Xiao Guang), Knitting
+	Factory (Piano/Quartet) 1994, Vol.1 (Anthony Braxton), L'Univers Symphonique
+	(Jacques Brel), L. Ron (Barkmarket), Laid Back (Doc Powell), Lasting Impression
+	Of Ooga Booga, The (Hugh Masekela), Late Shift, The (Original Soundtrack), Let
+	Me Clear My Throat (DJ Kool), Lip Up Fatty (Bad Manners), Listen Up! (Les
+	McCann), Live At McKissick Museum (Danielle Howle), Live At Yoshi's Nitespot
+	(Marian McPartland Trio), Live For The Record (Tom Paxton), Lone Star (Original
+	Soundtrack), Lost Generation, The (Shyheim), Love Me Or Leave Me (Ruth Etting),
+	MacArthur Park (Buddy Greco), Magic Moments - Classic Hits Revisited (Gerry
+	& The Pacemakers), Magnificent Void, The (Steve Roach), Man's World
+	(Mountain), Mark Wills (Mark Wills), Masters Of Jazz, Vol. 3: Big Bands Of The
+	'30s & '40s (Various Artists), Mata Leao (Biohazard), Mendo Hotel (Wayne
+	Perkins), Metropolitan Freestyle...Vol. 6 (Various Artists), Mexican Passport
+	(Howard Rumsey's Lighthouse), Midnight In Memphis (Preston Shannon), Mission
+	Impossible: Cult TV Themes Of The Atomic Age And Beyond (Original TV
+	Soundtracks), Moods...Moments (Monifah), Mouth To Mouth (The Blackeyed Susans),
+	Mugzy's Move (Royal Crown Revue), Music Forever & Beyond: The Selected Works
+	Of Chick Corea (Chick Corea), Music From And Inspired By John Carpenter's Escape
+	From L.A (Original Soundtrack), My Daughter The Broad (The Frogs), My Early
+	Country Favorites (Hank Snow), My Romance (Scott Hamilton), Nervous Sooner
+	Changes (Dead Moon), New Jazz Sounds: The Urbane Sessions (Benny Carter), New
+	Lows (Social Unrest), New Wave Hits, Vol. 1 (Various Artists), New Wave Hits,
+	Vol. 2 (Various Artists), New Wave Hits, Vol. 3 (Various Artists), New York
+	Girls' Club, The (Rebecca Pidgeon), Night Is Still Young, The (Alphonse
+	Mouzon),No Kinder Room (Wagon), No Love Lost (Sam Baker), No Offence
+	Meant...Plenty Taken (Headcleaner), Nothin' But The Swing (Black/Note), Nothing
+	Else Matters (Linda Smith), Old-Time Fiddle Tunes And Songs From North Georgia
+	(Skillet Lickers), Olive Juicy (Juicy), On A Good Night (Wade Hayes), On The
+	Road To Glory (Albertina Walker), On Your Toes/Pal Joey (Original Cast
+	Recordings), One Stone (Culture), Owflower (Suncatcher), People (Babe The Blue
+	Ox), Pet Sounds Sessions: A 30th Anniversary Collection, The (Beach Boys), Peter
+	And The Wolf (Original Soundtrack), Piano Magic Of Floyd Cramer: Vol. 2, The
+	(Floyd Cramer), Pickwick/Scrooge (Original Cast Recordings), Pioneer Soundtracks
+	(Jack), Pioneering Women Of Bluegrass (Hazel Dickens & Alice Gerrard),
+	Portrait Of A Silk Thread: Newly Discovered Works Of Billy Strayhorn (Dutch Jazz
+	Orchestra), Portraits In Blue (Marcus Roberts), Portraits Of Cuba (Paquito
+	D'Rivera), Presents The U.S. Of A., Volume 2 (Stan Freberg), Presents The U.S.
+	Of A., Volumes 1 & 2 (Stan Freberg), Pride And Prejudice (Original TV
+	Soundtrack), Professor Longhair Foundation Presents Piano Night At Tipitina's
+	1995 (Various Artists), Psychoanalysis (Prince Paul), Pursuance: The Music Of
+	John Coltrane (Kenny Garrett), Putumayo Presents A Celtic Collection (Various
+	Artists), Putumayo Presents A World Instrumental Collection (Various Artists),
+	Putumayo Presents: The Toure Kunda Collection (Toure Kunda), Raw Heat (The
+	Heaters), Re- Vertebrate (Loudspeaker), Rendezvous (Doug Cameron), Retribution
+	(Theatre Of Hate), Rock Boppin' Baby!: Sun Rockabilly Volume 3 (Various
+	Artists), Rockin' In Rhythm: The Best Of Ruth Brown (Ruth Brown), Rodgers &
+	Hammerstein's State Fair (Original Broadway Cast), Sacred System (Bill Laswell),
+	Salute To America (John Williams/Boston Pops), Samba Swing! (Walter Wanderley),
+	Sanctuary: 20 Years Of Windham Hill (Various Artists), Say You Love Me (D.J.
+	Rogers), Scenarios Of Violence (Kreator), Scenery And Fish [ECD] (I Mother
+	Earth), Secession 96 (Magic Hour), Second Helpings (Threadgill's Supper
+	Session), Seed In The Sahara (Disappear Fear), Seven Brides For Seven Brothers
+	(Original Soundtrack), Silent Knowledge (Elton Dean Quintet), Singing In The
+	Shadow Of Frankie Lymon, Vol. 2 (Various Artists), Singing The Storm (Savourna
+	Stevenson/June Tabor/Danny Thompson), Sings Gordon Lightfoot (Tony Rice),
+	Sinner's Prayer (Lowell Fulson), Smile (Tia), Some Of My Best Friends Are...The
+	Sax Players (Ray Brown Trio), Song Is You: The Best Of The Verve Songbooks, The
+	(Oscar Peterson), Songs From And Inspired By Mission: Impossible (Various
+	Artists), Songs From The Trial Of The Century (Nick Turner), Songs Of A Dead
+	Dreamer (D.J. Spooky), Songs Of West Side Story, The (Various Artists), Sonny
+	Burgess (Sonny Burgess), Sons Of Intemperance Offering, The (Phil Cody), Soul
+	Almighty - The Formative Years, Vol. 1 (Bob Marley), Space Ship: Best Of Pt. 1
+	(Guru Guru), State Of Grace (Jeff Lorber), Still Sensitive (Chico Freeman),
+	Stonewall (Original Soundtrack), Straight, No Chaser (Joe Henderson with the
+	Wynton Kelly Trio), Strangelanguage (Charlie Peacock), Sturm Und Twang! A
+	Private Collection Of German Underground Pop (Various Artists), Sunshine In The
+	Shadows: Their Complete Victor Recordings 1931-32 (The Carter Family), Sweet
+	Sounds Of Muscle Shoals Vol. 3: You Better Believe It, The (Various Artists),
+	Sweet Sounds Of Muscle Shoals Vol. 4: More Power To Ya!, The (Various Artists),
+	Swell & Super (Charlie Barnet & His Orchestra), Swing (Fitz Of
+	Depression), Swing Is Here (Dick Hyman), Swingin' (Arturo Sandoval), Take My
+	Hand, Precious Lord (Clara Ward Singers), Talkin' Verve: Roots Of Acid Jazz (Cal
+	Tjader), Tangerine Ambience: A Tribute To Tangerine Dream (Various Artists),
+	Tell Me I'm Not Dreamin' (Sara K.), Thank God It's Friday (Original Soundtrack),
+	That's Truckdrivin' (The Cowslingers), This Is Jazz #6 (Charles Mingus), Time
+	And Circumstance (Marcus Roberts Trio), Time Tough: The Anthology (Toots &
+	The Maytals), Tonight, The Lion Dances (Esta Noche, El Leon Baila) (The Tokens),
+	Travel On (Julian Dawson), Trip 66 (Trip 66), Turn It On! Turn It Up! [ECD]
+	(Roomful Of Blues), Twister (Original Soundtrack), Ultimate Collection, The
+	(Mutabaruka), Unsupervised (Mono Puff), Unwrapped Undressed & Unplugged
+	(Oriental Spas), Vile (Cannibal Corpse), Vinnie Smokin' In The Big Room (The
+	Hazies), Viva! Los Straitjackets (Los Straitjackets), Way Down In North Carolina
+	(Mike Seeger/Paul Brown), Wedge (The Wedge), Westworld (Theatre Of Hate),
+	Winds-Gentle Whisper (Peadar O Riada), With A Song On My Lips (And A Prayer In
+	My Heart) (Blackwood Brothers Quartet), Xtort (KMFDM), Ya Think I'd Know Better
+	(Coco Montoya), You Are Never Far Away (Perry Como), You Can Say That Again
+	(Johnny Rodriguez), You're Gonna Miss Me (When I'm Dead & Gone) (Muddy
+	Waters Tribute Band), Young At Heart (James Moody), Zero [EP] (Smashing
+	Pumpkins)
+	
+	Additional query words: 1996 multi media multimedia multi-media mmtitles kbmm information infomation udate updates muscen96 mc96
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbMusicCentral kbMusicCentralMacSearch kbMusicCentralMac1996 kbMusicCentral1996
+	Version           : :1996 edition
+	
+	=============================================================================
+	

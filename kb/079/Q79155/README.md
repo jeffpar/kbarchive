@@ -1,0 +1,80 @@
+---
+layout: page
+title: "Q79155: L2022, L2029 Errors Linking Application with a .DEF File"
+permalink: kb/079/Q79155/
+---
+
+## Q79155: L2022, L2029 Errors Linking Application with a .DEF File
+
+	Article: Q79155
+	Product(s): Microsoft Programming Utilities
+	Version(s): MS-DOS:5.0x,5.1x,5.2,5.3x,5.5,5.6; OS/2:5.0x,5.1,5.11,5.13,5.15
+	Operating System(s): 
+	Keyword(s): kb16bitonly
+	Last Modified: 24-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft LINK for MS-DOS, versions 5.0x, 5.1x, 5.2, 5.3x, 5.5, 5.6 
+	- Microsoft LINK for OS/2, versions 5.0x, 5.1, 5.11, 5.13, 5.15 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	An attempt to link an application fails and Microsoft LINK generates the
+	following messages
+	
+	  error L2022: <name> (alias <internalname>): export undefined
+	  error L2029: <name>: unresolved external
+	
+	CAUSE
+	=====
+	
+	A function name specified in the EXPORTS section of an application's module
+	definition (.DEF) file does not match the actual function name.
+	
+	RESOLUTION
+	==========
+	
+	Modify the function name in the .DEF file to match the name of the function in
+	the code.
+	
+	MORE INFORMATION
+	================
+	
+	The text below presents two situation in which the errors above occur when
+	Microsoft LINK creates an application for the Microsoft Windows or the OS/2
+	Presentation Manager operating systems.
+	
+	- An application defines a MainWndProc() window procedure with the _pascal
+	  attribute. The .DEF file contains an "EXPORTS MainWndProc" statement. The
+	  LINK command line includes the /NOI[GNORECASE] option switch. Because
+	  MainWndProc() has the _pascal attribute, its true name is MAINWNDPROC().
+	  Further, because the /NOI switch specifies case sensitivity, MainWndProc()
+	  and MAINWNDPROC() are not equivalent and the exported function name is not
+	  defined.
+	
+	  To work around this situation, either remove /NOI from the linker command line
+	  or modify the .DEF file to specify the function name in upper-case letters.
+	
+	- An application defines a ClientWndProc() procedure with the _cdecl attribute.
+	  The .DEF file contains an "EXPORTS ClientWndProc" statement. Because
+	  ClientWndProc() has the _cdecl attribute, its true name is _ClientWndProc().
+	  ClientWndProc() and _ClientWndProc() are not equivalent and the export is
+	  undefined.
+	
+	  To work around this situation, modify the .DEF file to prepend the procedure
+	  name with an underscore. Be sure to preserve the case of the function name in
+	  the file.
+	
+	Additional query words: kbinf 5.01.20 5.01.21 5.02 5.03 5.05 5.10 5.11 5.13 5.15 5.20 5.30 5.31.009 5.50 5.60
+	
+	======================================================================
+	Keywords          : kb16bitonly 
+	Technology        : kbAudDeveloper kbZNotKeyword3 kbLINKSearch kbLINK50xDOSSearch kbLINK510xDOSSearch kbLINK530xDOSSearch kbLINK50xOS2Search kbLINK520DOS kbLINK550DOS kbLINK560DOS kbLINK510OS2 kbLINK511OS2 kbLINK513OS2 kbLINK515OS2
+	Version           : MS-DOS:5.0x,5.1x,5.2,5.3x,5.5,5.6; OS/2:5.0x,5.1,5.11,5.13,5.15
+	
+	=============================================================================
+	

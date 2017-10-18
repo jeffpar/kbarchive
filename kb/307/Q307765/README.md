@@ -1,0 +1,163 @@
+---
+layout: page
+title: "Q307765: Troubleshooting 'RPC Server Too Busy to Complete Operation' Err."
+permalink: kb/307/Q307765/
+---
+
+## Q307765: Troubleshooting 'RPC Server Too Busy to Complete Operation' Err.
+
+	Article: Q307765
+	Product(s): Microsoft Windows NT
+	Version(s): 4.0
+	Operating System(s): 
+	Keyword(s): kbenv kberrmsg kbtool kbtshoot
+	Last Modified: 11-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+	- Microsoft Windows NT Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes how to troubleshoot and diagnose remote procedure call
+	(RPC) error messages.
+	
+	You may encounter any one of the following symptoms:
+	
+	- When you open Event Viewer or any program that relies on RPC, you receive the
+	  following error message:
+	
+	  RPC is too busy to complete the transaction
+	
+	- The computer is very slow to log on to or off from.
+	
+	- You cannot ping the server from the network.
+	
+	- RPC-related requests fail.
+	
+	These symptoms continue to occur even after you apply the RPCrt4.dll hotfix that
+	is described in the following Microsoft Knowledge Base article:
+	
+	  Q277776 Services Access Violation Because of Heap Damage
+	
+	MORE INFORMATION
+	================
+	
+	Troubleshooting
+	---------------
+	
+	1. Follow the directions in the "Troubleshooting RPC" section in the following
+	  article in the Microsoft Knowledge Base:
+	
+	  Q197814 HOWTO: Troubleshoot RPC Errors
+	
+	2. Disable all third-party services.
+	
+	3. Attempt to ping the computer from the network.
+	
+	4. Attempt to open Event Viewer, or the Control Panel Services program.
+	
+	If you cannot successfully complete each of these steps, an invalid string entry
+	in the SRVCOMMENT value may exist.
+	
+	This registry value is not present by default; the key and value may be added by
+	any service and the added values are not recognized by the operating system
+	until the next reboot, which is typically when this behavior is first noticed.
+	
+	WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+	that may require you to reinstall your operating system. Microsoft cannot
+	guarantee that you can solve problems that result from using Registry Editor
+	incorrectly. Use Registry Editor at your own risk.
+	
+	To resolve this behavior:
+	
+	1. Start Registry Editor (Regedt32.exe).
+	
+	2. Locate the following key in the registry:
+	
+	  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters
+	
+	3. On the Security menu, click Permissions. Make sure that the Everyone group
+	  has only read-only permissions, check for any other accounts other than
+	  System and set those to read only, and then click OK.
+	
+	4. Open the value and make sure that a valid character exists. Also, check by
+	  backspacing across any entry to find out if a valid character or empty field
+	  is in the string. This string can be an empty string. By following these
+	  steps, you can monitor event logging to capture the failed write attempt by a
+	  third-party program.
+	
+	5. Quit Registry Editor.
+	
+	6. Restart the computer.
+	
+	Sample Registry Values
+	----------------------
+	
+	  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters
+	   "NullSessionPipes"=hex(7):43,4f,4d,4e,41,50,00,43,4f,4d,4e,4f,44,45,
+	  00,53,51,4c,5c,51,55,45,52,59,00,53,50,4f,4f,4c,53,53,00,4c,4c,53,52,50,43,
+	  00,45,50,4d,41,50,50,45,52,00,4c,4f,43,41,54,4f,52,00,00,61,6c,65,72,74,
+	  6d,61,6e,61,67,65,72,00,00
+	   "NullSessionShares"=hex(7):43,4f,4d,43,46,47,00,44,46,53,24,00,00
+	   "Size"=dword:00000003
+	   "Lmannounce"=dword:00000000
+	   "IRPStackSize"=dword:00000007
+	   "CachedOpenLimit"=dword:00000000
+	   "srvcomment""" <<== THIS VALUE IS NOT INSTALLED BY DEFAULT
+	
+	Notes:
+	
+	NullSessionShares
+	
+	  The hex value varies depending on the configuration of the server or third-
+	  party programs that are installed. The registry sample represents what may be
+	  in the strings value, but is not true for all configurations.
+	
+	"SRVCOMMENT"
+	
+	  The /SRVCOMMENT:"text" section is a descriptive comment about the server. The
+	  comment can have as many as 48 characters. Enclose the text in quotation
+	  marks.
+	
+	Additional Troubleshooting Information:
+	
+	In troubleshooting this symptom, you would typically want to save the specified
+	registry key by exporting the key. In this scenario, if you do not have a tape
+	backup of the entire registry, you will not be able to import the key to
+	reproduce the issue after testing.
+	
+	A tape backup copies the registry and keeps all malformed characters intact,
+	whereas exporting the registry key from another source allows the value to be
+	corrected to a valid character.
+	
+	When you troubleshoot this issue, navigate to the specified registry location. In
+	the default view in Registry Editor, you may observe that the string value for
+	SRVCOMMENT seems to be only an open quote followed by a closed quote. No value
+	appears to be specified.
+	
+	When you double-click the SRVCOMMENT key, you access the string editor, and it is
+	at this point the malformed character in the string may become visible.
+	
+	REFERENCES
+	==========
+	
+	For additional information, click the article number below to view the article
+	in the Microsoft Knowledge Base:
+	
+	  Q143351 How to Check Network Connectivity Using Net Diagnostics
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbenv kberrmsg kbtool kbtshoot 
+	Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400
+	Version           : :4.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

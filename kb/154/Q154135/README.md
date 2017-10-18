@@ -1,0 +1,76 @@
+---
+layout: page
+title: "Q154135: How To Control Hours of Web Site Availability"
+permalink: kb/154/Q154135/
+---
+
+## Q154135: How To Control Hours of Web Site Availability
+
+	Article: Q154135
+	Product(s): Internet Information Server
+	Version(s): 2.0
+	Operating System(s): 
+	Keyword(s): kbenv
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Server 2.0 
+	- Microsoft Windows NT Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	You can manage user access to Internet Information Server (IIS) servers by time
+	of day. By default, all users (as anonymous guests) have accesses to IIS servers
+	at all hours of the day. The available hours can be limited through the User
+	Manager for Domains program on a domain controller.
+	
+	MORE INFORMATION
+	================
+	
+	To control accessibility to published web pages at any given hour for all users,
+	following the steps below:
+	
+	1. On a domain controller, start the User Manager for Domains.
+	
+	2. Double-click the user IUSR_<computername>.
+	
+	  NOTE: This account controls all user access to IIS responses, including named
+	  users in the domain and administrators, unless anonymous logon is revoked
+	  then all IIS users must be domain users.
+	
+	3. Click the Hours icon at the bottom of the user properties screen.
+	
+	4. The Logon Hours grid presents all seven days of the week with hourly boxes
+	  Midnight to 11:59 P.M. The default is all hours allowed. To change the status
+	  of an hour or range of hours, click the selected hour and select a range of
+	  hours.
+	
+	5. With the hour or range selected, click the Allow or Disallow button to change
+	  the status. Disallowed hours will cause a break in the hours of service line.
+	
+	
+	When correctly configured, an HTTP request will receive the following error
+	message during the disallowed hours:
+	
+	  HTTP/1.0 500 Server Error (Logon failure: account logon time
+	  restriction violation.)
+	
+	To completely block IIS availability, disable the account in the User Properties
+	dialog box for IUSR_<computername>.
+	
+	When the account is disabled, an HTTP request will receive the following error:
+	
+	  HTTP/1.0 500 Server Error (Logon failure: account currently disabled.)
+	
+	======================================================================
+	Keywords          : kbenv 
+	Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbiisSearch kbiis200
+	Version           : 2.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

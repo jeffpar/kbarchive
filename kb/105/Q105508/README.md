@@ -1,0 +1,1516 @@
+---
+layout: page
+title: "Q105508: INFO: List of Windows SDK Version 3.1 Bugs"
+permalink: kb/105/Q105508/
+---
+
+## Q105508: INFO: List of Windows SDK Version 3.1 Bugs
+
+	Article: Q105508
+	Product(s): Microsoft Windows Software Development Kit
+	Version(s): 3.1
+	Operating System(s): 
+	Keyword(s): kbfile kbList
+	Last Modified: 22-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows Software Development Kit (SDK) 3.1 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article contains a summary of individual articles in the Microsoft
+	Knowledge Base. These articles can be found by querying on the article's ID
+	number or on words in the title and text. The Microsoft Knowledge Base can be
+	accessed on the Internet (www.microsoft.com). A compiled help file containing
+	the bug list information can be found in the Microsoft Software Library.
+	
+	MORE INFORMATION
+	================
+	
+	The following file is available for download from the Microsoft Download
+	Center:
+	
+	  SDKBugs.exe
+	  (http://download.microsoft.com/download/win31/buglist/1/W31/EN-US/SDKBugs.exe)
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. Once posted, the file is housed on secure
+	servers that prevent any unauthorized changes to the file.
+	
+	BUG LISTING
+	-----------
+	
+	- BUG: No WM_SETFONT to Custom Controls
+	
+	- BUG: RC Error RW1008 If NULL Entry in PATH
+	
+	- BUG: Complex Graphics Image Partially Printed
+	
+	- BUG: FatalExit() Interacts Through Terminal Only
+	
+	- BUG: MapVirtualKey() Maps Keypad Keys Incorrectly
+	
+	- BUG: Crash with frexp() in Small or Medium Model DLL
+	
+	- BUG: Combo Boxes in DS_SYSMODAL Dialog Boxes
+	
+	- BUG: PostScript Driver Version 3.4 Returns Incorrect Page Size
+	
+	- BUG: Protected-Mode GlobalCompact() Return Not Free Memory
+	
+	- BUG: Text Formatting Lost When Edit Text Dialog Box Used
+	
+	- BUG: Common Dialog GP-Fault on ESC Key with Mouse Button Down
+	
+	- BUG: Data Errors on 14400 Baud Serial Communications
+	
+	- BUG: GlobalPageLock() Moves Memory Fixed by GlobalFix()
+	
+	- BUG: GetModuleFileName() Returns Relative File Path
+	
+	- BUG: System Menu Wrong for CS_NOCLOSE-Style MDI Child
+	
+	- BUG: Buttons Painted Incorrectly After Color Changed
+	
+	- BUG: SETCOLORTABLE Escape Disables Dithering
+	
+	- BUG: GetGlyphOutline() Returns Blank Bitmap
+	
+	- BUG: Input Focus Lost When Control Returns From Windows Help
+	
+	- BUG: LIBENTRY.ASM Missing Include File Error
+	
+	- BUG: MDI More Windows Dialog Activates Wrong Child
+	
+	- BUG: PrintForm() Does Not Print Ink from Control
+	
+	- BUG: Dictionary Receives No DIRQ_SYMBOLGRAPH Message
+	
+	- BUG: Help Compiler Hangs When .HPJ File [MAP] Section Too Big
+	
+	- BUG: OpenFile() API Fails on Novell Temp Drive
+	
+	- BUG: HPPCL Driver Reports SETABORTPROC Not Supported
+	
+	- BUG: Color PostScript Drivers Report Incorrect Data
+	
+	- BUG: GetGlyphOutline() Returns Partial Glyph
+	
+	- BUG: Scrolling DIB DC Fails
+	
+	- BUG: Setup CreateProgmanItem Does Not Overwrite Item
+	
+	- BUG: BitBlt() Bitmap on VGA Display Causes GP Fault
+	
+	- BUG: HC Error 2050 from #include in Help Project File (.HPJ)
+	
+	- BUG: No Dr. Watson Log File in Drive's Root Directory
+	
+	- BUG: Minimized Windows Help Yields Incorrect Icon
+	
+	- BUG: Complex Clipping Region Might Cause UAE/GP Fault
+	
+	- BUG: Cannot Map TT Font to Same Name PostScript Device Font
+	
+	- BUG: CreatePatternBrush() with Large Bitmap GP Fault
+	
+	- BUG: Superclassed Scroll Bar's Parent Not Sent WM_CTLCOLOR Msg
+	
+	- BUG: ProgMan DDE Reload() Command Does Not Work Properly
+	
+	- BUG: PostScript Handles lfItalic Field Incorrectly
+	
+	- BUG: Graphics Operations Consume GDI Memory
+	
+	- BUG: ETO_CLIPPED Does Not Clip Rotated Text
+	
+	- BUG: Application Errors From Long Text in the Dialog Editor
+	
+	- BUG: RC /fe Switch Does Not Work
+	
+	- BUG: UngetCommChar() Causes Character Loss or GP Faults
+	
+	- BUG: StretchDIBits() Prints Wrong Part of DIB with PSCRIPT.DRV
+	
+	- BUG: OpenFile() Fails When UNC Name Longer than 11 Chars
+	
+	- BUG: Extra CN_RECEIVE/CN_TRANSMIT Events
+	
+	- BUG: DDESPY GP Faults Upon Return of CBR_BLOCK
+	
+	- BUG: 32K Limit on Input/Output Queues in COMM.DRV
+	
+	- BUG: AddAtom Causes Divide by Zero Error
+	
+	- BUG: EV_RLSDS Event Does Not Indicate Current RLSD State
+	
+	- BUG: Iconic MDI Application Titles Do Not Update Properly
+	
+	- BUG: SetDIBitsToDevice Faults on 24-BPP PM-Style DIBs
+	
+	- BUG: StretchDIBits Faults on 24-BPP PM-Style DIBs
+	
+	- BUG: PALETTEINDEX Not Working for Thin Lines on HP PaintJet
+	
+	- BUG: SelectClipRgn() Does Not Update Properly on Printer
+	
+	- BUG: SetPixel() Doesn't Work Properly on a PS Printer
+	
+	- BUG: System-Wide WH_DEBUG Hook Causes a GP Fault
+	
+	- BUG: Resolutions for DBWIN Utility Continuous Beeping
+	
+	- BUG: Menu Bar Covered By Main Window Client Area
+	
+	- BUG: SetAbortProc() Incorrectly Returns Failure
+	
+	- BUG: GP Fault in LoadLibrary() with C++ DLL
+	
+	- BUG: Problem with DrawText Statement
+	
+	- BUG: Palettes Realized in a Memory DC May Corrupt Screen
+	
+	- BUG: SystemParametersInfo() Does Not Modify WIN.INI
+	
+	- BUG: DDEML Fails to Free Item Name HSZ on a LATEACK
+	
+	- BUG: Ampersand in Menu Item Is Not Converted
+	
+	- BUG: SetWindowPlacement and ptMin.x or ptMax.x = -1
+	
+	- BUG: MDI Child Window's "Minimize" System Menu Disabled
+	
+	- BUG: DDE Warning Message: Invalid Value: -32767
+	
+	- BUG: MoveTo/LineTo Causes Divide by 0 Error
+	
+	- BUG: Gaps Between Wedges Drawn with Pie()
+	
+	- BUG: DDE Warning Message: Invalid Value: -32767
+	
+	- BUG: Nonscrolling Region in Help File Topic Does Scroll
+	
+	- BUG: Size of Owner-Draw Drop-Down Combo Box in Dialog Is Wrong
+	
+	- BUG: Screen Saver Does Not Start
+	
+	- BUG: SetWindowPos() on an Iconic Window and its Caption
+	
+	- BUG: R2_XORPEN Binary ROP Code Ignored for Wide Pens
+	
+	- BUG: Pie() and Arc() Functions Fail with a Wide Pen
+	
+	- BUG: Vector Font Rotation Skewed with Non-Top-Left Alignment
+	
+	- BUG: Text Truncated in Edit Control
+	
+	- BUG: LineTo() Endcaps Misaligned with Large Pen Width
+	
+	- BUG: Rotated TrueType Font Repaints Many Times
+	
+	- BUG: Some ROP Codes Cause Inconsistent Polygon() Line Segments
+	
+	- BUG: Pie() Vertex Not Drawn Completely with Wide Pen
+	
+	- BUG: Arc() Not Drawn Completely with a Wide Pen
+	
+	- BUG:SelectPalette in Metafile Ignores Force-to-Background Flag
+	
+	- BUG: Occasional Gap Between Adjacent Pie() Wedges
+	
+	- BUG: GetRasterizerCaps Returns Zero When TrueType Is Disabled
+	
+	- BUG: _lread() Functions Incorrectly When No Floppy in Drive
+	
+	- BUG: OpenFile() Doesn't Handle Forward Slash ("/") Character
+	
+	- BUG: Brush Misaligned in PaintRgn()
+	
+	- BUG: Some TrueType Character Pairs Run Together on VGA
+	
+	- BUG: IsBadStringPtr() Reports Bad String as Valid
+	
+	- BUG: DeleteObject() Generates Debug Errors in WEP
+	
+	- BUG: DPMI Function 0203h Does Not Report Error
+	
+	- BUG: FreeSelector() Frees More Than One Selector
+	
+	- BUG: Dr. Watson Fails to Write Log File
+	
+	- BUG: Debug Kernel Ignores Fatal Exits When OutputTo=
+	
+	- BUG: Opaque Rectangle Too Small on Rotated TrueType Fonts
+	
+	- BUG: Character Background Is Not Painted Correctly
+	
+	- BUG: Polygons Drawn with Pens of Odd Width (> 5) Misalign
+	
+	- BUG: Misleading Default Pushbutton Painting
+	
+	- BUG: GetPrivateProfileInt() May Not Read Correct Value
+	
+	- BUG: GlobalCompact() May Return an Inaccurate Value
+	
+	- BUG: Explicitly Loaded Modules Not Removed from Memory
+	
+	- BUG: LoadResource() GP Faults When Passed an Invalid HRSRC
+	
+	- BUG: ROP2 Code Applied Incorrectly in Pie() Function
+	
+	- BUG: LB_SETTOPINDEX Doesn't Conform to Documentation
+	
+	- BUG: EM_CANUNDO Returns Zero After EM_REPLACESEL
+	
+	- BUG: Left Part of Character Is Clipped with ExtTextOut/TextOut
+	
+	- BUG: DrawFocusRect Fails in MM_LOMETRIC or MM_ISOTROPIC Mode
+	
+	- BUG: GetGlyphOutline() with GGO_BITMAP Fails with Large Scale
+	
+	- BUG: Edit Controls and WS_CLIPCHILDREN Function Differently
+	
+	- BUG: Printer Driver Receives "bigfonts" When Not Supported
+	
+	- BUG: StretchDIBits Not Correctly Stretching RLE DIBs w/ Jumps
+	
+	- BUG: StretchBlt() Does Not Perform Palette Translations
+	
+	- BUG: TabbedTextOut() in Metric Mapping Mode Incorrect
+	
+	- BUG: Driver vs. GDI-Simulated Styled Lines Don't Match
+	
+	- BUG: GP Fault When Drawing on a Memory-Based DC
+	
+	- BUG: StretchBlt()/StretchDIBits() Fail with Very Large Stretch
+	
+	- BUG: Outline of a Pie() Slice May Not Be Completely Smooth
+	
+	- BUG: GetTimerResolution not in LIBW.LIB
+	
+	- BUG: General Protection Fault When Accessing an HFONT
+	
+	- BUG: DDESPY and Ctrl Key Cause GP Fault in Windows NT
+	
+	- BUG: Caching GDI Objects Causes Temporary GDI Resource Leak
+	
+	- BUG: MCIWndClass Popup Window Palette Flashes
+	
+	BUG: No WM_SETFONT to Custom Controls:
+	
+	  Q70818BUG: No WM_SETFONT to Custom Controls
+	
+	In the Dialog Editor, when the font of the dialog box is changed, the text of
+	custom controls that process WM_SETFONT messages does not change.
+	===============================================================================
+	
+	BUG: RC Error RW1008 If NULL Entry in PATH:
+	
+	  Q71022BUG: RC Error RW1008 If NULL Entry in PATH
+	
+	The resource compiler (RC) exits with the message "fatal error RW1008: RCPP.EXE
+	not found."
+	===============================================================================
+	
+	BUG: Complex Graphics Image Partially Printed:
+	
+	  Q72493BUG: Complex Graphics Image Partially Printed
+	
+	When an application uses the clipping functions to print a complex graphics image
+	on a high resolution output device, the printed output is incomplete; portions
+	of the image are missing.
+	===============================================================================
+	
+	BUG: FatalExit() Interacts Through Terminal Only:
+	
+	  Q72497BUG: FatalExit() Interacts Through Terminal Only
+	
+	Under the debugging version of Windows, when a debugger is not in use and the
+	FatalExit() function interacts with the user, the interaction is through a
+	terminal connected to the AUX port and not through the console keyboard and a
+	secondary monitor if one is installed.
+	===============================================================================
+	
+	BUG: MapVirtualKey() Maps Keypad Keys Incorrectly:
+	
+	  Q72583BUG: MapVirtualKey() Maps Keypad Keys Incorrectly
+	
+	When MapVirtualKey() is passed valid virtual key codes for the keys on the
+	numeric keypad, invalid scan codes and ASCII codes are returned.
+	===============================================================================
+	
+	BUG: Crash When frexp() in Small or Medium Model DLL:
+	
+	  Q73184BUG: Crash When frexp() in Small or Medium Model DLL
+	
+	Although the C run-time function frexp() is included in the Windows version
+	libraries for dynamic-link libraries (DLLs), when it is called from a Windows
+	small model or medium model DLL, the application crashes.
+	===============================================================================
+	
+	BUG: Combo Boxes in DS_SYSMODAL Dialog Boxes:
+	
+	  Q74507BUG: Combo Boxes in DS_SYSMODAL Dialog Boxes
+	
+	When a combo box with the CBS_DROPDOWN or CBS_DROPDOWNLIST style is used inside a
+	system modal dialog box, it causes the following problem in Windows versions 3.0
+	and 3.1:
+	
+	  An item cannot be selected from the drop-down list box by clicking it with
+	  the mouse. The original selection remains in the edit control or static-text
+	  control.
+	
+	Using a combo box with the CBS_DROPDOWN or CBS_DROPDOWNLIST style within a system
+	modal dialog box in Windows version 3.0 causes the following problems:
+	
+	1. The drop-down list box cannot be closed by clicking on a part of the list box
+	  that lies outside the dialog box.
+	
+	2. The parts of the drop-down list box that lie outside the dialog box are not
+	  erased when the drop-down list box is closed.
+	
+	===============================================================================
+	
+	BUG: PostScript Driver Version 3.4 Returns Incorrect Page Size:
+	
+	  Q76364BUG: PostScript Driver Version 3.4 Returns Incorrect Page Size
+	
+	In version 3.4 of the PostScript printer driver, when the DC_PAPERSIZE index is
+	specified in the DeviceCapabilities function, the width of the paper is returned
+	for both the x and y coordinates in each POINT structure. This function should
+	return the height and width of each supported paper size.
+	===============================================================================
+	
+	BUG: Protected-Mode GlobalCompact() Return Not Free Memory:
+	
+	  Q76686BUG: Protected-Mode GlobalCompact() Return Not Free Memory
+	
+	When Windows is running in one of its protected modes, the value returned by the
+	GlobalCompact() API does not accurately reflect the amount of free memory
+	available in the system.
+	
+	In enhanced mode, Windows can swap memory objects to disk. This process takes a
+	long time relative to accessing an object in memory. Therefore, GlobalCompact()
+	returns the amount of memory available without performing any paging.
+	
+	In standard mode, GlobalCompact() never reports more than 1 megabyte (MB) of
+	memory free because of a memory allocation limit on the 80286 chip.
+	===============================================================================
+	
+	BUG: Text Formatting Lost When Edit Text Dialog Box Used:
+	
+	  Q80143BUG: Text Formatting Lost When Edit Text Dialog Box Used
+	
+	When the Edit Text dialog box is used to edit formatted text in an application
+	developed for Microsoft Windows for Pen Computing, formatting is lost.
+	===============================================================================
+	
+	BUG: Common Dialog GP-Fault on ESC Key with Mouse Button Down:
+	
+	  Q83009BUG: Common Dialog GP-Fault on ESC Key with Mouse Button Down
+	
+	In an application that uses the File Open or Save As dialog box from the Common
+	Dialogs dynamic-link library (DLL), when the user opens a combo box with the
+	mouse, holds down the left mouse button, and then presses the ESC key to close
+	the dialog box, a GP-fault occurs.
+	
+	
+	===============================================================================
+	
+	BUG: GlobalPageLock Moves Memory Fixed by GlobalFix:
+	
+	  Q85329BUG: GlobalPageLock Moves Memory Fixed by GlobalFix
+	
+	When an application calls the GlobalPageLock() function specifying the handle to
+	a block of memory that has been fixed in place by the GlobalFix() function, the
+	address of the memory block can change.
+	===============================================================================
+	
+	BUG: GetModuleFileName Returns Relative File Path:
+	
+	  Q85330BUG: GetModuleFileName Returns Relative File Path
+	
+	When the GetModuleFileName() function returns a reference to a dynamic-link
+	library (DLL) file, the reference is relative (not fully qualified) under the
+	following circumstances:
+	
+	- One of the directory references in the MS-DOS PATH environment variable is
+	  relative. Assume that the relative directory reference refers to drive X.
+	
+	- An application is implicitly linked to a DLL. The DLL is installed in the
+	  current (default) directory of drive X.
+	
+	- The application is installed in a directory other than the one in which the
+	  DLL is installed.
+	
+	===============================================================================
+	
+	BUG: System Menu Wrong for CS_NOCLOSE-Style MDI Child:
+	
+	  Q85331BUG: System Menu Wrong for CS_NOCLOSE-Style MDI Child
+	
+	When an application registers a window class with the CS_NOCLOSE style and
+	creates a multiple document interface (MDI) child window using the class, the
+	menu items in the child window's system menu are incorrect. Specifically, the
+	Switch To option appears where the Next option belongs. Choosing Switch To
+	activates the Windows Task Manager.
+	===============================================================================
+	
+	BUG: Buttons Painted Incorrectly After Color Changed:
+	
+	  Q85593BUG: Buttons Painted Incorrectly After Color Changed
+	
+	When the Colors application in the Control Panel is used to change the button
+	shadow color to white, all push button windows are painted incorrectly.
+	Specifically, the Button Shadow and Button Highlight colors are not painted at
+	all.
+	===============================================================================
+	
+	BUG: SETCOLORTABLE Escape Disables Dithering:
+	
+	  Q85596BUG: SETCOLORTABLE Escape Disables Dithering
+	
+	When the VGAPAL video driver is installed on a system, once an application calls
+	the SETCOLORTABLE escape to change an entry in the color table associated with a
+	device context, Windows does not create any dithered brushes for that device
+	context. Instead, Windows returns the solid brush that most closely matches the
+	requested color.
+	===============================================================================
+	
+	BUG: GetGlyphOutline Returns Blank Bitmap:
+	
+	  Q85598BUG: GetGlyphOutline Returns Blank Bitmap
+	
+	In the Microsoft Windows graphical environment, when an application calls the
+	GetGlyphOutline() function to retrieve the bitmap for a glyph and the lpmat2
+	parameter points to a matrix that magnifies the glyph, a blank bitmap is
+	returned.
+	===============================================================================
+	
+	BUG: Input Focus Lost When Control Returns From Windows Help:
+	
+	  Q85896BUG: Input Focus Lost When Control Returns From Windows Help
+	
+	When an application calls the WinHelp function and specifies HELP_CONTEXTPOPUP as
+	the value for the fuCommand parameter, the input focus disappears. When the user
+	presses the ALT key, the system menu appears for a hidden copy of the Windows
+	Help application.
+	===============================================================================
+	
+	BUG: LIBENTRY.ASM Missing Include File Error:
+	
+	  Q86409BUG: LIBENTRY.ASM Missing Include File Error
+	
+	An attempt to assemble the LIBENTRY.ASM file distributed with version 3.1 of the
+	Microsoft Windows SDK fails with the following message:
+	
+	  Include file not found: CONVDLL.INC.
+	
+	===============================================================================
+	
+	BUG: MDI More Windows Dialog Activates Wrong Child:
+	
+	  Q86412BUG: MDI More Windows Dialog Activates Wrong Child
+	
+	In a multiple document interface (MDI) application developed for Microsoft
+	Windows version 3.1, when the application creates more than nine MDI child
+	windows, the user chooses More Windows from the Window menu, and selects an MDI
+	child window to activate from the list displayed in the Select Window dialog
+	box, the application activates a different window.
+	===============================================================================
+	
+	BUG: PrintForm() Does Not Print Ink from Control:
+	
+	  Q86874BUG: PrintForm() Does Not Print Ink from Control
+	
+	When an application developed using the Visual Basic controls provided in version
+	1.0 of Microsoft Windows for Pen Computing calls the Visual Basic PrintForm()
+	function, ink entered into the control does not print.
+	===============================================================================
+	
+	BUG: Dictionary Receives No DIRQ_SYMBOLGRAPH Message:
+	
+	  Q87006BUG: Dictionary Receives No DIRQ_SYMBOLGRAPH Message
+	
+	In an application developed for Microsoft Windows for Pen Computing, the
+	dictionary function does not receive a DIRQ_SYMBOLGRAPH message for a given
+	recognition session.
+	===============================================================================
+	
+	BUG: Help Compiler Hangs When .HPJ File [MAP] Section Too Big:
+	
+	  Q87007BUG: Help Compiler Hangs When .HPJ File [MAP] Section Too Big
+	
+	Compiling a help project (HPJ) file with the Microsoft Windows Help Compiler
+	causes the system to hang, reboot, or cause a system integrity violation.
+	===============================================================================
+	
+	BUG: OpenFile Function Fails on Novell Temp Drive:
+	
+	  Q87347BUG: OpenFile Function Fails on Novell Temp Drive
+	
+	In the Microsoft Windows graphical environment, when an application uses the
+	OpenFile() function to open a file on a Novell network temporary drive, the
+	function returns the value HFILE_ERROR to indicate failure.
+	===============================================================================
+	
+	BUG: HPPCL Driver Reports SETABORTPROC Not Supported:
+	
+	  Q87348BUG: HPPCL Driver Reports SETABORTPROC Not Supported
+	
+	When an application for the Microsoft Windows environment sends the
+	QUERYESCSUPPORT printer escape to the Hewlett-Packard (HP) LaserJet (HPPCL)
+	printer driver to determine whether the SETABORTPROC escape is supported, the
+	Escape function returns the value 0 (zero), indicating that the escape is not
+	supported. However, an application can successfully send the SETABORTPROC escape
+	to the HPPCL printer driver.
+	===============================================================================
+	
+	BUG: Color PostScript Drivers Report Incorrect Data:
+	
+	  Q87349BUG: Color PostScript Drivers Report Incorrect Data
+	
+	In the Microsoft Windows graphical environment, when an application creates a
+	printer device context (DC) for a QMS ColorScript 100 printer or for a Seiko
+	ColorPoint PS printer, and specifies the DC in a call to the GetDeviceCaps()
+	function, each driver reports the following information about itself:
+	
+	  BITSPIXEL  = 1
+	  PLANES     = 1
+	  NUMCOLORS  = 8
+	
+	At least one of these numbers is incorrect in each case.
+	===============================================================================
+	
+	BUG: GetGlyphOutline Returns Partial Glyph:
+	
+	  Q87350BUG: GetGlyphOutline Returns Partial Glyph
+	
+	In the Microsoft Windows graphical environment, when an application calls the
+	GetGlyphOutline function to retrieve the bitmap for a rotated glyph (the lpmat2
+	matrix points to a nonidentity rotation matrix) and the glyph is larger than 75
+	pixels, the returned bitmap contains a partial, nonrotated, glyph.
+	===============================================================================
+	
+	BUG: Scrolling DIB DC Fails:
+	
+	  Q87351BUG: Scrolling DIB DC Fails
+	
+	When an application developed for version 3.1 of the Microsoft Windows graphical
+	environment uses the BitBlt() or ScrollDC() functions to scroll a device context
+	created using the DIB (device-independent bitmap) driver, the process fails with
+	a variety of symptoms including a general protection (GP) fault, a page fault,
+	or random data appearing in the DIB.
+	===============================================================================
+	
+	BUG: Setup CreateProgmanItem Does Not Overwrite Item:
+	
+	  Q87493BUG: Setup CreateProgmanItem Does Not Overwrite Item
+	
+	In the Microsoft Setup Toolkit for Windows, when the setup script calls the
+	CreateProgmanItem() subroutine to replace an existing item in a Microsoft
+	Windows Program Manager group with cmo% set to cmoOverwrite and with szOther$
+	set to a nonempty string, the setup driver does not replace the existing item.
+	Instead, it creates a new item.
+	===============================================================================
+	
+	BUG: BitBlt Bitmap on VGA Display Causes GP Fault:
+	
+	  Q87494BUG: BitBlt Bitmap on VGA Display Causes GP Fault
+	
+	When an application for the Microsoft Windows environment calls the BitBlt
+	function to copy a large (640 x 480) bitmap to the VGA screen, the application
+	experiences a general protection (GP) fault.
+	===============================================================================
+	
+	BUG: HC Error 2050 from #include in Help Project File (.HPJ):
+	
+	  Q88126BUG: HC Error 2050 from #include in Help Project File (.HPJ)
+	
+	When you are building a Help file with the Microsoft Windows Help Compiler, the
+	process stops with the following error message:
+	
+	  Error 2050: line <number> of <filename>.HPJ : Invalid #include
+	  syntax
+	
+	===============================================================================
+	
+	BUG: No Dr. Watson Log File in Drive's Root Directory:
+	
+	  Q88127BUG: No Dr. Watson Log File in Drive's Root Directory
+	
+	In the Microsoft Windows operating system, when the Dr. Watson fault- logging
+	application is installed and an application execution error occurs, the Dr.
+	Watson's Clues dialog box does not appear. Opening the Dr. Watson application
+	reveals that an error exists in the <logical drive>:\\DRWATSON.LOG file.
+	===============================================================================
+	
+	BUG: Minimized Windows Help Yields Incorrect Icon:
+	
+	  Q88128BUG: Minimized Windows Help Yields Incorrect Icon
+	
+	In a Microsoft Windows Help file, when a topic is displayed in a secondary
+	window, the icon specified in the ICON statement in the [OPTIONS] section of the
+	Help project (.HPJ) file does not appear when the user minimizes the Help
+	application. This condition persists even after the user closes the secondary
+	window.
+	===============================================================================
+	
+	BUG: Complex Clipping Region Might Cause UAE/GP Fault:
+	
+	  Q89641BUG: Complex Clipping Region Might Cause UAE/GP Fault
+	
+	Drawing lines to a memory DC containing a complex clipping region causes an
+	unrecoverable application error (UAE) or general protection (GP) fault.
+	===============================================================================
+	
+	BUG: Cannot Map TT Font to Same Name PostScript Device Font:
+	
+	  Q92411BUG: Cannot Map TT Font to Same Name PostScript Device Font
+	
+	If a TrueType (TT) font and a PostScript (PS) printer font have the same name,
+	the TT font cannot be mapped to a different printer font. The mapping works
+	correctly for TT fonts whose names are different than the fonts on the printer.
+	
+	For example, the TrueType Symbol font can be mapped only to the Symbol font
+	resident on the PostScript printer.
+	===============================================================================
+	
+	BUG: CreatePatternBrush with Large Bitmap GP Fault:
+	
+	  Q92531BUG: CreatePatternBrush with Large Bitmap GP Fault
+	
+	On a machine with an 8514/a video adapter running the Microsoft Windows graphical
+	environment with the standard 8514/a video driver, when an application calls the
+	CreatePatternBrush() function to create a brush based on a bitmap larger than 8
+	pixels by 8 pixels, Windows terminates the application with an application
+	execution error.
+	===============================================================================
+	
+	BUG: Superclassed Scroll Bar's Parent Not Sent WM_CTLCOLOR Msg:
+	
+	  Q95391BUG: Superclassed Scroll Bar's Parent Not Sent WM_CTLCOLOR Msg
+	
+	Controls normally send WM_CTLCOLOR messages to their parents so applications can
+	modify the control background color. However, under Windows 3.0 and 3.1, when a
+	scroll bar is superclassed, its parent is not sent WM_CTLCOLOR messages.
+	===============================================================================
+	
+	BUG: ProgMan DDE Reload() Command Does Not Work Properly:
+	
+	  Q95981BUG: ProgMan DDE Reload() Command Does Not Work Properly
+	
+	Attempting to use the Reload() command in Windows version 3.1 for a particular
+	GroupName causes that Program Manager group to disappear. On the other hand, not
+	specifying any GroupName, which supposedly instructs the Program Manager to
+	unload all groups and reload the [Groups] section of PROGMAN.INI, causes all the
+	groups to disappear.
+	===============================================================================
+	
+	BUG: PostScript Handles lfItalic Field Incorrectly:
+	
+	  Q96542BUG: PostScript Handles lfItalic Field Incorrectly
+	
+	In the Microsoft Windows environment, when the Windows version 3.1 PostScript
+	printer driver is installed and an application specifies a nonzero value in the
+	lfItalic member of a LOGFONT data structure to create an italic font, text
+	prints in a normal (nonitalic) font.
+	===============================================================================
+	
+	BUG: Graphics Operations Consume GDI Memory:
+	
+	  Q98058BUG: Graphics Operations Consume GDI Memory
+	
+	In the Microsoft Windows graphical operating environment, when a device driver
+	has rectangle capabilities (such as the 8514/a display driver) and an
+	application draws many large graphic objects, memory in the GDI data segment is
+	lost. Eventually, GDI runs out of memory and Windows crashes.
+	===============================================================================
+	
+	BUG: ETO_CLIPPED Does Not Clip Rotated Text:
+	
+	  Q99110BUG: ETO_CLIPPED Does Not Clip Rotated Text
+	
+	In Microsoft Windows version 3.1, text output with a rotated TrueType font is not
+	clipped when the ETO_CLIPPED flag and a clipping rectangle are specified in
+	ExtTextOut().
+	===============================================================================
+	
+	BUG: Application Errors From Long Text in the Dialog Editor:
+	
+	  Q99134BUG: Application Errors From Long Text in the Dialog Editor
+	
+	An attempt to use the Dialog Editor provided with version 3.1 of the Microsoft
+	Windows Software Development Kit (SDK) fails and an application error occurs
+	under either of the following circumstances:
+	
+	- Choose Order/Group from the Arrange menu when the dialog box contains two or
+	  more controls, one control is a static text control, and the title of the
+	  text control is 256 characters long (the limit). (Setting a 256 character
+	  title may also generate a general protection [GP] fault.)
+	
+	- In test mode, enter more than 175 characters into a multiline edit control,
+	  then press BACKSPACE. A GP fault also occurs.
+	
+	===============================================================================
+	
+	BUG: RC /fe Switch Does Not Work:
+	
+	  Q99670BUG: RC /fe Switch Does Not Work
+	
+	Specifying the /fe filename does not create a new executable file with the
+	specified filename. The Resource Compiler (RC) doesn't return an error message
+	indicating there is a problem. For example, when you specify GENERIC.EXE to be
+	renamed to BLAND.EXE with the following command line
+	
+	  RC /fe BLAND.EXE GENERIC.RC GENERIC.EXE
+	
+	BLAND.EXE is not created. Furthermore, the Resource Compiler doesn't tell you
+	that it encountered any problems.
+	===============================================================================
+	
+	BUG: UngetCommChar Causes Character Loss or GP Faults:
+	
+	  Q100183BUG: UngetCommChar Causes Character Loss or GP Faults
+	
+	An application that uses the UngetCommChar() function in Microsoft Windows
+	version 3.1 loses characters or experiences general protection (GP) faults.
+	===============================================================================
+	
+	BUG: StretchDIBits() Prints Wrong Part of DIB with PSCRIPT.DRV:
+	
+	  Q100354BUG: StretchDIBits() Prints Wrong Part of DIB with PSCRIPT.DRV
+	
+	When using StretchDIBits() to print a section of a device-independent bitmap
+	(DIB) with the Windows version 3.1 PostScript printer driver, in some cases the
+	wrong part of the DIB is printed. When printing the entire DIB, StretchDIBits()
+	works correctly.
+	===============================================================================
+	
+	BUG: OpenFile Fails When UNC Server Name Longer than 11 Chars:
+	
+	  Q101414BUG: OpenFile Fails When UNC Server Name Longer than 11 Chars
+	
+	OpenFile() successfully opens files with universal naming convention (UNC) names
+	when the server portion of the name is 11 characters or shorter, but fails to
+	open files when the server name is longer than 11 characters. Error code number
+	2, "File not found," is placed in the nErrCode member of the OFSTRUCT structure
+	passed to OpenFile.
+	===============================================================================
+	
+	BUG: Extra CN_RECEIVE/CN_TRANSMIT Events:
+	
+	  Q101420BUG: Extra CN_RECEIVE/CN_TRANSMIT Events
+	
+	Using EnableCommNotification() to enable WM_COMMNOTIFY messages for CN_RECEIVE or
+	CN_TRANSMIT events can cause spurious WM_COMMNOTIFY messages. At higher baud
+	rates, this problem can cause a system to crash and reboot.
+	
+	WM_COMMNOTIFY messages are received with a 0 (zero) value for the NotifyStatus
+	parameter. The system crashes and reboots while receiving or transmitting data.
+	===============================================================================
+	
+	BUG: DDESPY GP Faults Upon Return of CBR_BLOCK:
+	
+	  Q102549BUG: DDESPY GP Faults Upon Return of CBR_BLOCK
+	
+	DDESPY GP faults when a DDEML server application's dynamic data exchange (DDE)
+	callback function returns CBR_BLOCK from a transaction of XCLASS_DATA class.
+	
+	
+	===============================================================================
+	
+	BUG: AddAtom Causes Divide by Zero Error:
+	
+	  Q103036BUG: AddAtom Causes Divide by Zero Error
+	
+	Calling the AddAtom function in the Windows 3.x environment with a string that
+	begins with the pound (#) character causes the system to display the following
+	error message in a system modal dialog:
+	
+	  Application Error
+	
+	  integer divide by 0
+	
+	This error occurs if the first AddAtom call in the application passes a string
+	containing a # as the first character, and passes non-numeric characters in the
+	rest of the string. For example, the first call to AddAtom with the string
+	"#string" will cause the error to occur.
+	===============================================================================
+	
+	BUG: EV_RLSDS Event Does Not Indicate Current RLSD State:
+	
+	  Q103636BUG: EV_RLSDS Event Does Not Indicate Current RLSD State
+	
+	If SetCommEventMask() is used to enable the EV_RLSDS event, when
+	GetCommEventMask() is called, the EV_RLSDS bit will always be 0 (zero).
+	===============================================================================
+	
+	BUG: Iconic MDI Application Titles Do Not Update Properly:
+	
+	  Q104137BUG: Iconic MDI Application Titles Do Not Update Properly
+	
+	In a Windows 3.1 multiple document interface (MDI) application, the icon title of
+	the MDI frame window does not update when the SetWindowText function is used to
+	change the text of the icon title.
+	===============================================================================
+	
+	BUG: SetDIBitsToDevice Faults on 24-BPP PM-Style DIBs:
+	
+	  Q104334BUG: SetDIBitsToDevice Faults on 24-BPP PM-Style DIBs
+	
+	SetDIBitsToDevice faults inside GDI when passed a 24-bpp Presentation Manager
+	(PM) style device-independent bitmap (DIB) on a device that supports
+	RC_DIBTODEV.
+	===============================================================================
+	
+	BUG: StretchDIBits Faults on 24-BPP PM-Style DIBs:
+	
+	  Q104395BUG: StretchDIBits Faults on 24-BPP PM-Style DIBs
+	
+	StretchDIBits faults inside GDI when passed a 24-bpp Presentation Manager (PM)
+	style device-independent bitmap (DIB) on a device that supports RC_STRETCHDIB.
+	===============================================================================
+	
+	BUG: PALETTEINDEX Not Working for Thin Lines on HP PaintJet:
+	
+	  Q104962BUG: PALETTEINDEX Not Working for Thin Lines on HP PaintJet
+	
+	In a Windows 3.1 printing application, calling the PALETTEINDEX macro to select a
+	color when drawing lines 1 pixel wide results in the printer drawing black lines
+	no matter what color index was selected from the logical palette.
+	===============================================================================
+	
+	BUG: SelectClipRgn Does Not Update Properly on Printer:
+	
+	  Q104963BUG: SelectClipRgn Does Not Update Properly on Printer
+	
+	In a Windows 3.1 printing application, calling SelectClipRgn with the second
+	parameter set to NULL to reset the clipping region to clip output to the printer
+	page does not reset the clipping region. Clipping on the printer device context
+	is still set to the clipping region specified in the previous call to
+	SelectClipRgn.
+	===============================================================================
+	
+	BUG: SetPixel Command Doesn't Work Properly on a PS Printer:
+	
+	  Q106018BUG: SetPixel Command Doesn't Work Properly on a PS Printer
+	
+	In a Windows 3.1 printing application, calling the SetPixel() command on a device
+	context created for the Windows PostScript printer driver version 3.56 or
+	earlier causes the pixel that is drawn to be larger than expected if a line with
+	a thickness greater than 1 was drawn previously.
+	===============================================================================
+	
+	BUG: System-Wide WH_DEBUG Hook Causes a GP Fault:
+	
+	  Q106077BUG: System-Wide WH_DEBUG Hook Causes a GP Fault
+	
+	Installing a system-wide hook of WH_DEBUG type causes a general protection (GP)
+	fault in the Windows SDK version 3.1.
+	===============================================================================
+	
+	BUG: Resolutions for DBWIN Utility Continuous Beeping:
+	
+	  Q108364BUG: Resolutions for DBWIN Utility Continuous Beeping
+	
+	While running an application that has been compiled under debug mode, with the
+	DBWIN application running, the system may beep continuously causing the computer
+	to hang. This can happen when running the debug version of an executable file in
+	the debugger, or by just executing it.
+	===============================================================================
+	
+	BUG: Menu Bar Covered By Main Window Client Area:
+	
+	  Q109539BUG: Menu Bar Covered By Main Window Client Area
+	
+	In an application, the lower half of the menu bar is covered by the client area
+	of the main window.
+	
+	
+	===============================================================================
+	
+	BUG: GP Fault in LoadLibrary() with C++ DLL:
+	
+	  Q110180BUG: GP Fault in LoadLibrary() with C++ DLL
+	
+	When loading a dynamic-link library (DLL) developed with Microsoft C/C++ 7.0 or
+	Visual C++ with a large number of exports not listed in the module definition
+	(.DEF) file, LoadLibrary() will cause a general protection (GP) fault in Kernel
+	with the message:
+	
+	  Application Error
+	
+	  MYAPP caused a General Protection Fault in module KRNL386.EXE at 0002:0E8D
+	
+	===============================================================================
+	
+	BUG: Problem with DrawText Statement:
+	
+	  Q110487BUG: Problem with DrawText Statement
+	
+	When the mapping mode is set to MM_LOMETRIC, DrawText does not properly handle
+	the "&" (ampersand) prefix character. The underscore character that should
+	go beneath the character that follows the "&" in the string is appearing
+	either elsewhere in the client area or not appearing at all.
+	===============================================================================
+	
+	BUG: Palettes Realized in a Memory DC May Corrupt Screen:
+	
+	  Q110636BUG: Palettes Realized in a Memory DC May Corrupt Screen
+	
+	On a 256-color display, when a palette is realized into a memory device context
+	(DC), its colors are entered into the system palette, which may corrupt the
+	current screen.
+	===============================================================================
+	
+	BUG: SystemParametersInfo() Does Not Modify WIN.INI:
+	
+	  Q110662BUG: SystemParametersInfo() Does Not Modify WIN.INI
+	
+	When a program uses the SystemParametersInfo() function with the
+	SPI_SETMOUSEBUTTONSWAP and SPIF_UPDATEINIFILE flags to reverse the mouse
+	buttons' orientation and modify WIN.INI, the appropiate changes to WIN.INI are
+	not made. The next time Windows starts, the buttons are back to the default
+	orientation.
+	===============================================================================
+	
+	BUG: DDEML Fails to Free Item Name HSZ on a LATEACK:
+	
+	  Q110664BUG: DDEML Fails to Free Item Name HSZ on a LATEACK
+	
+	On an advise loop started with the XTYPF_ACKREQ flag, the item name string is
+	mistakenly removed from the global atom table after a certain period of time
+	causing a subsequent call to DdePostAdvise() on that item name string to fail.
+	===============================================================================
+	
+	BUG: Ampersand in Menu Item Is Not Converted:
+	
+	  Q110713BUG: Ampersand in Menu Item Is Not Converted
+	
+	If a menu item has tabbed or right-justified text that contains a mnemonic access
+	character, an ampersand ("&") will appear in front of the desired access
+	character and the character will not be underlined.
+	
+	If the menu item has a cascading menu associated with it, the right- justified
+	text may partially overwrite the arrow that indicates the presence of a
+	submenu.
+	===============================================================================
+	
+	BUG: SetWindowPlacement and ptMin.x or ptMax.x = -1:
+	
+	  Q110793BUG: SetWindowPlacement and ptMin.x or ptMax.x = -1
+	
+	Passing an X coordinate value of -1 to SetWindowPlacement causes the parameter to
+	be ignored. If ptMinPosition.x is set to -1, SetWindowPlacement won't reset the
+	minimized window coordinate; this is also true for ptMaxPosition.x. This was
+	undocumented in the Windows 3.1 SDK documentation.
+	===============================================================================
+	
+	BUG: MDI Child Window's "Minimize" System Menu Disabled:
+	
+	  Q110795BUG: MDI Child Window's "Minimize" System Menu Disabled
+	
+	After creating a new multiple document interface (MDI) child window in an MDI
+	application, the child window's Minimize System menu option will be disabled
+	after the following actions:
+	
+	1. The MDI child window is created and in the topmost z-order.
+	
+	2. The user accesses the MDI child window's System menu through the shortcut
+	  keys: ALT+SPACE, RIGHT ARROW.
+	
+	These actions will cause the child window's System menu to appear with the
+	Minimize menu option disabled. This behavior can be demonstrated with File
+	Manager. From File Manager's Window menu, choose New Window. Next, press
+	ALT+SPACE and then press the RIGHT ARROW key to bring up the new window's System
+	menu. The Minimize option will be disabled.
+	
+	NOTE: The Minimize menu item is not disabled if the System menu is accessed
+	through the ALT+"-" (minus) shortcut key or the mouse. Also, the Minimize menu
+	item is not disabled if the window is moved.
+	===============================================================================
+	
+	BUG: MoveTo/LineTo Causes Divide by 0 Error:
+	
+	  Q111007BUG: MoveTo/LineTo Causes Divide by 0 Error
+	
+	Using MoveTo and LineTo with a delta X or delta Y greater than 16K to draw within
+	a complex clipping region, causes the system to display the following error
+	message in a system modal dialog box:
+	
+	  Application Error
+	
+	  integer divide by 0
+	
+	===============================================================================
+	
+	BUG: Gaps Between Wedges Drawn with The Pie Function:
+	
+	  Q111008BUG: Gaps Between Wedges Drawn with The Pie Function
+	
+	Under certain circumstances, the Windows SDK Pie function will leave gaps between
+	pie wedges when there should be a solid line.
+	===============================================================================
+	
+	BUG: DDE Warning Message: Invalid Value: -32767:
+	
+	  Q111013BUG: DDE Warning Message: Invalid Value: -32767
+	
+	When executing a call to DdeClientTransaction() from a Microsoft Foundation Class
+	(MFC) Library application in the debug version of Windows 3.1, the following
+	warning message is displayed in the debug monitor:
+	
+	  wn CLIENTAPP CallNextHookEx + 2C: Invalid value: -32767"
+	
+	===============================================================================
+	
+	BUG: Nonscrolling Region in Help File Topic Does Scroll:
+	
+	  Q111095BUG: Nonscrolling Region in Help File Topic Does Scroll
+	
+	A Windows Help file topic that has been formatted to provide a nonscrolling
+	region does scroll.
+	===============================================================================
+	
+	BUG: Size of Owner-Draw Drop-Down Combo Box in Dialog Is Wrong:
+	
+	  Q111096BUG: Size of Owner-Draw Drop-Down Combo Box in Dialog Is Wrong
+	
+	When creating an owner-draw drop-down combo box in a dialog box, the size of the
+	static portion is not the same as a non-owner-draw combo box in the same dialog
+	box. WM_MEASUREITEM is not being processed, and therefore the size of the
+	owner-draw combo box and non-owner-draw combo box should be the same.
+	
+	
+	===============================================================================
+	
+	BUG: SetWindowPos() on an Iconic Window and its Caption:
+	
+	  Q111335BUG: SetWindowPos() on an Iconic Window and its Caption
+	
+	SetWindowPos() is called on a minimized window to either move or hide the window.
+	When moving, the window is moved but the caption is left behind. When Hiding,
+	the window is hidden but the caption is still visible.
+	===============================================================================
+	
+	BUG: R2_XORPEN Binary ROP Code Ignored for Wide Pens:
+	
+	  Q111336BUG: R2_XORPEN Binary ROP Code Ignored for Wide Pens
+	
+	If a wide pen is selected in a device context and SetROP2() is called to set the
+	binary raster-operation (ROP) code to R2_XORPEN, the desired effect is not
+	achieved for ellipses, arcs, roundrects, or rectangles. The ROP is basically
+	ignored.
+	===============================================================================
+	
+	BUG: Pie() and Arc() Functions Fail with a Wide Pen:
+	
+	  Q111337BUG: Pie() and Arc() Functions Fail with a Wide Pen
+	
+	When creating a wide (multiple pixel) pen and drawing a reasonably large object,
+	the drawing function returns 0 (zero) or does not draw anything. Choosing a thin
+	(single pixel) pen or choosing a pen smaller than X pixels corrects the
+	problem.
+	===============================================================================
+	
+	BUG: Vector Font Rotation Skewed with Non-Top-Left Alignment:
+	
+	  Q111338BUG: Vector Font Rotation Skewed with Non-Top-Left Alignment
+	
+	Vector fonts do not rotate properly with a text alignment set to other than the
+	top left.
+	
+	To reproduce this problem, create a logical font for the Script vector font. Call
+	SetTextAlign() to set the text alignment to TA_BASELINE and TA_CENTER. Rotate
+	the font, perhaps in a whirl pattern as the FONTEST sample does. Note that the
+	rotation axis is skewed in the northwest- southeast direction. This problem
+	occurs in all mapping modes.
+	===============================================================================
+	
+	BUG: Text Truncated in Edit Control:
+	
+	  Q111341BUG: Text Truncated in Edit Control
+	
+	Copying and pasting a very large block of text in a multiline edit control may
+	result in part of the text being truncated or some of the text being misaligned.
+	This problem is more likely to happen when using a large size font instead of
+	the default font for the edit control.
+	===============================================================================
+	
+	BUG: LineTo() Endcaps Misaligned with Large Pen Width:
+	
+	  Q111576BUG: LineTo() Endcaps Misaligned with Large Pen Width
+	
+	If LineTo() is used with a wide pen selected, the endcaps are misaligned with the
+	line; they are skewed at an angle relative to the line.
+	===============================================================================
+	
+	BUG: Rotated TrueType Font Repaints Many Times:
+	
+	  Q111579BUG: Rotated TrueType Font Repaints Many Times
+	
+	Drawing a rotated TrueType font into a nonrectangular clipping region causes the
+	font to be drawn many (perhaps a hundred) times.
+	===============================================================================
+	
+	BUG: Some ROP Codes Cause Inconsistent Polygon() Line Segments:
+	
+	  Q111580BUG: Some ROP Codes Cause Inconsistent Polygon() Line Segments
+	
+	When a ROP (raster operation) such as R2_XORPEN or R2_NOT is used with the
+	Polygon() function, the line segments may be inconsistent; they may appear
+	highlighted or ragged when they should appear smooth. This may be more apparent
+	when the polygon is filled with a gray brush (80h).
+	===============================================================================
+	
+	BUG: Pie() Vertex Not Drawn Completely with Wide Pen:
+	
+	  Q111581BUG: Pie() Vertex Not Drawn Completely with Wide Pen
+	
+	When calling Pie() with a wide pen selected, the vertex of the pie slice is not
+	drawn correctly. The wide lines do not meet at the vertex.
+	===============================================================================
+	
+	BUG: Arc() Not Drawn Completely with a Wide Pen:
+	
+	  Q111582BUG: Arc() Not Drawn Completely with a Wide Pen
+	
+	When calling Arc() with a wide pen selected, occasionally there will be an
+	unfilled line in the third quadrant of the arc.
+	
+	
+	===============================================================================
+	
+	BUG: Occasional Gap Between Adjacent Pie() Wedges:
+	
+	  Q111584BUG: Occasional Gap Between Adjacent Pie() Wedges
+	
+	If the Pie() function is used to draw two pie wedges with the same bounding
+	rectangle and the end point of the first wedge is equal to the start point of
+	the second wedge, there can be a gap between adjacent wedges. This gap only
+	occurs occasionally, and with certain pie sizes and start-and-end points.
+	===============================================================================
+	
+	BUG: GetRasterizerCaps Returns Zero When TrueType Is Disabled:
+	
+	  Q111586BUG: GetRasterizerCaps Returns Zero When TrueType Is Disabled
+	
+	When TrueType is disabled from the Control Panel, GetRasterizerCaps() returns
+	zero (failure) instead of clearing the TT_ENABLED flag in the RASTERIZER_STATUS
+	structure.
+	===============================================================================
+	
+	BUG: _lread() Functions Incorrectly When No Floppy in Drive:
+	
+	  Q111587BUG: _lread() Functions Incorrectly When No Floppy in Drive
+	
+	Using the function _lread() to read a floppy disk when there is no disk in the
+	floppy drive results in the System error-message box "Cannot Read from Drive..."
+	with Retry and Cancel buttons. If the Cancel button is clicked, _lread()
+	returns, indicating incorrectly that it read the number of bytes requested.
+	Instead, it should return -1, indicating failure.
+	===============================================================================
+	
+	BUG: OpenFile() Doesn't Handle Forward Slash ("/") Character:
+	
+	  Q111588BUG: OpenFile() Doesn't Handle Forward Slash ("/") Character
+	
+	OpenFile() does not correctly handle paths beginning with a forward slash
+	character ("/") (for example, as in "x:/").
+	===============================================================================
+	
+	BUG: Brush Misaligned in PaintRgn():
+	
+	  Q111589BUG: Brush Misaligned in PaintRgn()
+	
+	In a mapping mode other than MM_TEXT with the background mode set to TRANSPARENT,
+	when calling PaintRgn() to paint a nonrectangular region with a hatched brush,
+	the brush is misaligned.
+	===============================================================================
+	
+	BUG: Some TrueType Character Pairs Run Together on VGA:
+	
+	  Q111590BUG: Some TrueType Character Pairs Run Together on VGA
+	
+	On some displays such as the standard VGA display that ships with Windows 3.1,
+	certain TrueType font character pairs do not have any space between them and run
+	together. For example, when using the Arial TrueType font at a point size of 14
+	or greater, the characters "f7" don't have any space between them.
+	===============================================================================
+	
+	BUG: IsBadStringPtr() Reports Bad String as Valid:
+	
+	  Q111591BUG: IsBadStringPtr() Reports Bad String as Valid
+	
+	Under a particular condition, IsBadStringPtr() will report that a bad string is
+	valid. If the pointer passed to IsBadStringPtr() refers to a block of memory of
+	size 0xFFFF and is filled with all nonzero data, IsBadStringPtr() returns 0.
+	===============================================================================
+	
+	BUG: DeleteObject() Generates Debug Errors in WEP:
+	
+	  Q111592BUG: DeleteObject() Generates Debug Errors in WEP
+	
+	Freeing GDI objects in the Windows Exit Procedure (WEP) of a dynamic-link library
+	(DLL) will generate errors from the debug version of Windows 3.1. The errors are
+	incorrectly generated if the application has an implicit link to the DLL and the
+	application is terminating.
+	===============================================================================
+	
+	BUG: DPMI Function 0203h Does Not Report Error:
+	
+	  Q111593BUG: DPMI Function 0203h Does Not Report Error
+	
+	Using the DOS Protected Mode Interface (DPMI) function 0203h (set processor
+	exception handler vector) to set an exception handler does not report an error
+	(carry flag set) if the selector:offset pair is invalid.
+	===============================================================================
+	
+	BUG: Dr. Watson Fails to Write Log File:
+	
+	  Q111596BUG: Dr. Watson Fails to Write Log File
+	
+	Assume that the drive for the Windows directory is substituted using the MS- DOS
+	SUBST command. For example:
+	
+	  subst w: c:\win31
+	
+	Under this condition, Dr. Watson fails to write to its log file, either the
+	default DRWATSON.LOG or any other changed log filename. In fact, when the Dr.
+	Watson icon is double-clicked, the message box that follows shows the log
+	filename as W:\\DRWATSON.LOG, which is incorrect.
+	===============================================================================
+	
+	BUG: Debug Kernel Ignores Fatal Exits When OutputTo=:
+	
+	  Q111597BUG: Debug Kernel Ignores Fatal Exits When OutputTo=
+	
+	By default, the Windows debugging kernel sends its debug messages to the AUX
+	device (which maps to the COM1 port). When the debug output from the Windows
+	kernel is redirected by using OutputTo=NUL or OutputTo=<filename> in the
+	[DEBUG] section of the SYSTEM.INI file, Fatal Exit messages are ignored
+	automatically.
+	===============================================================================
+	
+	BUG: Opaque Rectangle Too Small on Rotated TrueType Fonts:
+	
+	  Q111598BUG: Opaque Rectangle Too Small on Rotated TrueType Fonts
+	
+	When a TrueType font is rotated, the text background is too small to completely
+	enclose the glyphs; the same text unrotated is enclosed.
+	===============================================================================
+	
+	BUG: Character Background Is Not Painted Correctly:
+	
+	  Q111599BUG: Character Background Is Not Painted Correctly
+	
+	When text is displayed on a window with a background different than the
+	background of the DC (used to display the text), slivers will display between
+	the characters. The slivers seem to occur only between certain character
+	combinations, such as "Th".
+	
+	This problem is only evident with some drivers, such as the standard VGA.
+	===============================================================================
+	
+	BUG: Polygons Drawn with Pens of Odd Width (> 5) Misalign:
+	
+	  Q111600BUG: Polygons Drawn with Pens of Odd Width (> 5) Misalign
+	
+	When drawing frames with Polygon(), if the pen width results in an odd number of
+	pixels (and therefore cannot be centered exactly on its coordinates), the extra
+	pixel of width goes up and/or to the left for widths greater than 5 pixels,
+	whereas it correctly goes down and to the right for widths less than or equal to
+	5 pixels.
+	===============================================================================
+	
+	BUG: Misleading Default Pushbutton Painting:
+	
+	  Q111601BUG: Misleading Default Pushbutton Painting
+	
+	Under some conditions in Windows 3.0 and Windows 3.1, more than one pushbutton
+	(or Command button)(style BS_PUSHBUTTON) may be painted with the dark border
+	used to designate a default pushbutton. A default pushbutton is the pushbutton
+	designated to be activated when the user presses the ENTER key.
+	===============================================================================
+	
+	BUG: GetPrivateProfileInt() May Not Read Correct Value:
+	
+	  Q111602BUG: GetPrivateProfileInt() May Not Read Correct Value
+	
+	If GetPrivateProfileInt() is used to read a number that has preceding white
+	space, the value returned may be incorrect. For example, if the .INI file entry
+	is as follows, GetPrivateProfileInt() may return 0 (zero):
+	
+	  MyValue= 5
+	
+	===============================================================================
+	
+	BUG: GlobalCompact() May Return an Inaccurate Value:
+	
+	  Q111603BUG: GlobalCompact() May Return an Inaccurate Value
+	
+	GlobalCompact() may return a very inaccurate value when paging is enabled.
+	===============================================================================
+	
+	BUG: Explicitly Loaded Modules Not Removed from Memory:
+	
+	  Q111604BUG: Explicitly Loaded Modules Not Removed from Memory
+	
+	Modules that are loaded via LoadModule() are not removed from memory when a GP
+	(general protection) fault causes the application that loaded it to terminate.
+	You must exit Windows to unload the module.
+	===============================================================================
+	
+	BUG: LoadResource() GP Faults When Passed an Invalid HRSRC:
+	
+	  Q111605BUG: LoadResource() GP Faults When Passed an Invalid HRSRC
+	
+	Passing an invalid handle as the HRSRC parameter for LoadResource() may result in
+	a general protection (GP) fault.
+	===============================================================================
+	
+	BUG: ROP2 Code Applied Incorrectly in Pie() Function:
+	
+	  Q111606BUG: ROP2 Code Applied Incorrectly in Pie() Function
+	
+	When calling the Windows SDK function Pie() using a ROP2 code other than the
+	default R2_COPYPEN, and using a pen with a width greater than 1 (one), you may
+	notice that the pie border is not drawn correctly.
+	===============================================================================
+	
+	BUG: LB_SETTOPINDEX Doesn't Conform to Documentation:
+	
+	  Q111647BUG: LB_SETTOPINDEX Doesn't Conform to Documentation
+	
+	Code written to handle a return of LB_ERR does not function properly.
+	
+	The online documentation for LB_SETTOPINDEX states that the result is LB_ERR if
+	an error occurs. However, when an error occurs, LB_SETTOPINDEX returns with a
+	value of 0 (zero) rather than LB_ERR.
+	===============================================================================
+	
+	BUG: EM_CANUNDO Returns Zero After EM_REPLACESEL:
+	
+	  Q111648BUG: EM_CANUNDO Returns Zero After EM_REPLACESEL
+	
+	EM_CANUNDO returns 0 (zero) after text in an edit control has been set or
+	replaced using EM_REPLACESEL. EM_CANUNDO should return nonzero, and EM_UNDO
+	should undo the change.
+	===============================================================================
+	
+	BUG: Left Part of Character Is Clipped with ExtTextOut/TextOut:
+	
+	  Q111649BUG: Left Part of Character Is Clipped with ExtTextOut/TextOut
+	
+	The left part of a TrueType character such as an italic "f" is clipped.
+	===============================================================================
+	
+	BUG: DrawFocusRect() Doesn't Work in MM_LOMETRIC Mode:
+	
+	  Q111650BUG: DrawFocusRect() Doesn't Work in MM_LOMETRIC Mode
+	
+	If DrawFocusRect() is called when the mapping mode is MM_LOMETRIC, no rectangle
+	is drawn.
+	
+	DrawFocusRect() is documented to take logical units and works properly in MM_TEXT
+	mapping mode. However, if the mapping mode is changed to MM_LOMETRIC, as in the
+	following code fragment, DrawFocusRect() called with an appropriate rectangle
+	(logical units) does not work. Calling Rectangle() with the same rectangle does
+	work.
+	
+	     case WM_PAINT:
+	           hDC = BeginPaint(hWnd, &ps);
+	
+	              SetRect(&rc, 0,0,100,100);
+	              DrawFocusRect(hDC, &rc);      // Works as documented.
+	
+	              SetMapMode(hDC, MM_LOMETRIC);
+	              SetRect(&rc, 1,-200,100,-300);
+	              DrawFocusRect(hDC, &rc);     // Doesn't do anything.
+	         Rectangle(hDC, rc.left, rc.top, rc.right, rc.bottom); // Works
+	
+	              EndPaint(hWnd, &ps);
+	              break;
+	
+	===============================================================================
+	
+	BUG: GetGlyphOutline() with GGO_BITMAP Fails with Large Scale:
+	
+	  Q111651BUG: GetGlyphOutline() with GGO_BITMAP Fails with Large Scale
+	
+	Calling GetGlyphOutline() for a bitmap and passing a large X or Y scaling factor
+	in the transformation matrix causes the return value to not properly track the
+	bitmap size.
+	
+	For example, Times New Roman Regular 72 point "1", with a scaling factor of 4.0
+	in eM11 of the transformation matrix, returns a black box of 100,64. This
+	requires a bitmap of at least 800 bytes but GetGlyphOutline() only returns 256.
+	The native buffer is returned with no problems.
+	===============================================================================
+	
+	BUG: Edit Controls and WS_CLIPCHILDREN Function Differently:
+	
+	  Q111652BUG: Edit Controls and WS_CLIPCHILDREN Function Differently
+	
+	Unnecessary painting is done when an edit control window is created with the
+	WS_CLIPCHILDREN style bit set.
+	===============================================================================
+	
+	BUG: Printer Driver Receives "bigfonts" When Not Supported:
+	
+	  Q111653BUG: Printer Driver Receives "bigfonts" When Not Supported
+	
+	If the installed display driver of a Windows 3.1 installation supports raster
+	fonts that are greater than 64K, then any printer driver on the system is
+	expected to support the fonts, even if [GetDeviceCaps(hPrnDC, RASTERCAPS) &
+	RC_BIGFONT] returns NULL for the printer driver.
+	===============================================================================
+	
+	BUG: StretchDIBits Not Correctly Stretching RLE DIBs w/ Jumps:
+	
+	  Q111654BUG: StretchDIBits Not Correctly Stretching RLE DIBs w/ Jumps
+	
+	Calling StretchDIBits() to stretch an RLE device-independent bitmap (DIB) with
+	jumps in it results in random garbage being displayed.
+	===============================================================================
+	
+	BUG: StretchBlt() Does Not Perform Palette Translations:
+	
+	  Q111729BUG: StretchBlt() Does Not Perform Palette Translations
+	
+	Normally, the StretchBlt() function performs a palette translation when the
+	destination and source bitmaps do not contain the same color format or palette.
+	When the destination rectangle is the exact size of the source rectangle (no
+	stretching is performed), the palette translation is not performed.
+	===============================================================================
+	
+	BUG: TabbedTextOut in Metric Mapping Mode Working Incorrectly:
+	
+	  Q111862BUG: TabbedTextOut in Metric Mapping Mode Working Incorrectly
+	
+	When using TabbedTextOut() in one of the metric mapping modes, a rectangle is
+	displayed in the current background color above the text that is displayed. This
+	rectangle is the width and height of the line of text. The text is displayed
+	with a background that is the current background color. However, the space
+	between the text (where the tab is) is not displayed with a backgrou
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbfile kbList 
+	Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+	Version           : :3.1
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

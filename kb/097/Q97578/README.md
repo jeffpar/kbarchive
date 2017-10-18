@@ -1,0 +1,86 @@
+---
+layout: page
+title: "Q97578: DoubleSpace Does Not Mount Hardcard Drive Automatically"
+permalink: kb/097/Q97578/
+---
+
+## Q97578: DoubleSpace Does Not Mount Hardcard Drive Automatically
+
+	Article: Q97578
+	Product(s): Microsoft Disk Operating System
+	Version(s): MS-DOS:6.0,6.2,6.22
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 26-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft MS-DOS operating system versions 6.0, 6.2, 6.22 
+	-------------------------------------------------------------------------------
+	
+	This information applies to both Microsoft DoubleSpace and Microsoft
+	DriveSpace. For MS-DOS 6.22, use DRVSPACE in place of DBLSPACE for commands
+	and filenames.
+	
+	SUMMARY
+	=======
+	
+	DoubleSpace can be used to compress a Hardcard drive (other than the startup
+	drive) that requires a driver in the CONFIG.SYS file. However, DoubleSpace may
+	not automatically mount such a drive at system startup because the DoubleSpace
+	driver (DBLSPACE.BIN) is loaded with IO.SYS before MS-DOS processes the
+	CONFIG.SYS file.
+	
+	MORE INFORMATION
+	================
+	
+	If a special device driver is necessary to use a drive (other than your startup
+	drive), you can compress that drive with DoubleSpace. However, when you start
+	your computer, DoubleSpace does not automatically mount the drive because
+	DoubleSpace cannot access the drive at system startup.
+	
+	If you cannot access your compressed drive after installing DoubleSpace on your
+	Hardcard, try one of the following:
+	
+	- Edit your AUTOEXEC.BAT file to add the DBLSPACE /MOUNT command to mount the
+	  compressed volume file on the Hardcard each time you start your computer.
+	
+	- Verify that your CONFIG.SYS file loads at least one device driver (for
+	  example, ANSI.SYS) after the device driver for your Hardcard but before the
+	  DBLSPACE.SYS driver.
+	
+	For more information, see section 4.2c of the README.TXT file.
+	
+	NOTE: If your startup drive requires a device driver in CONFIG.SYS, do not
+	compress that drive. If you compress the startup drive, your computer cannot
+	start properly because DoubleSpace cannot access the startup drive.
+	
+	To install DoubleSpace on a computer where the startup drive requires a special
+	device driver, use DoubleSpace Setup to compress a drive other than your startup
+	drive, or use DoubleSpace Setup to create a new compressed drive using free
+	space on any existing drive.
+	
+	For more information on using DoubleSpace to compress a startup drive that
+	requires a driver in CONFIG.SYS, query on the following words in the Microsoft
+	Knowledge Base:
+	
+	  "hardcard" (without the quotation marks) and "startup" (without the quotation
+	  marks) and "compressed" (without the quotation marks) and "dblspace" (without
+	  the quotation marks)
+	
+	REFERENCES
+	==========
+	
+	Microsoft MS-DOS 6.0 README.TXT Section 4.2c
+	
+	
+	Additional query words: 6.00 hard card xl atDOSxl.sys plusdrv.sys Dblspace double space 6.20
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMSDOSSearch kbMSDOS622 kbMSDOS620 kbMSDOS600
+	Version           : MS-DOS:6.0,6.2,6.22
+	
+	=============================================================================
+	

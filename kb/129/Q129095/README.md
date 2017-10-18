@@ -1,0 +1,230 @@
+---
+layout: page
+title: "Q129095: INFO: Format of the Document Template String"
+permalink: kb/129/Q129095/
+---
+
+## Q129095: INFO: Format of the Document Template String
+
+	Article: Q129095
+	Product(s): Microsoft C Compiler
+	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,4.0,4.1,4.2,5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbProgramming kbusage kbDocView kbMFC kbVC kbVC100 kbVC150 kbVC152 kbVC200 kbVC410 kbVC
+	Last Modified: 12-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The Microsoft Foundation Classes (MFC), used with:
+	   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5, 1.51, 1.52 
+	   - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1, 4.0, 4.1 
+	   - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+	   - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+	   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+	   - Microsoft Visual C++.NET (2002) 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article explains the format of the document template string.
+	
+	MORE INFORMATION
+	================
+	
+	The document template string is a string resource consisting of up to nine
+	Sub-strings separated by the \n character. Each sub-string contains information
+	specific to the document template. The document template string is contained in
+	the document template and can be edited by the Resource Editor (AppStudio).
+	
+	Format of the Document Template String
+	--------------------------------------
+	
+	NOTE: If a sub-string is not wanted and therefore not included in the complete
+	document template string, you must still use the \n character as a delimiter.
+	However, trailing \n characters are not necessary.
+	
+	        IDR_MAINFRAME <windowTitle>\n<docName>\n<fileNewName>\n
+	                      <filterName>\n <filterExt>\n<regFileTypeID>\n
+	                      <regFileTypeName>\n <filterMacExt(filterWinExt)>\n
+	                      <filterMacName(filterWinName)>
+	
+	The following table defines each of the substrings:
+	
+	+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	| Substring         | Definition                                                                                                                                                                                                                                                                                                                                                                                                 | 
+	+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	| <windowTitle>     | Name that appears in the application window's title bar
+	                  (for example, "Microsoft Excel"). Present only in the
+	                  document template for SDI applications.                                                                                                                                                                                                                | 
+	+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	| <docName>         | Root for the default document name (for example,
+	                  "Sheet"). This root plus a number is used for
+	                  the default name of a new document of this type
+	                  whenever the user chooses the New command from the
+	                  File menu (for example, "Sheet1" or "Sheet2"). If not
+	                  specified, "Untitled" is used as the default.       | 
+	+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	| <fileNewName>     | Name of this document type. If the application supports
+	                  more than one type of document, this string is
+	                  displayed in the File New dialog box (for example,
+	                  "Worksheet"). If not specified, the document type is
+	                  inaccessible using the File New command.                                                                        | 
+	+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	| <filterName>      | Description of the document type and a wildcard filter
+	                  matching documents of this type. This string is
+	                  displayed in the List Files Of Type drop-down list in
+	                  the File Open dialog box (for example, "Worksheets
+	                  (*.XLS)"). If not specified, the document type is
+	                  inaccessible using the File Open command. | 
+	+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	| <filterExt>       | Extension for documents of this type (for example,
+	                  ".XLS"). If not specified, the document type is
+	                  inaccessible using the File Open command.                                                                                                                                                                                                                         | 
+	+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	| <regFileTypeId>   | Identifier for the document type to be stored in the
+	                  registration database maintained by Windows. This
+	                  string is for internal use only (for example,
+	                  "ExcelWorksheet").If not specified, the document type
+	                  cannot be registered with the Windows File Manager.                                                                 | 
+	+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	| <regFileTypeName> | Name of the document type to be stored in the
+	                  registration database. This string may be
+	                  displayed in dialog boxes of applications that
+	                  access the registration database (for example,
+	                  "Microsoft Excel Worksheet").                                                                                                            | 
+	+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	
+	The final two sub-strings are defined conditionally. When _MAC is defined, the
+	sub-strings are assigned to <filterName> and <filterExt>, while the
+	two sub-strings that normally have these names are defined as
+	<filterWinName> and <filterWinExt>. When _MAC is not defined, the
+	two new sub-strings are assigned the names <filterMacName> and
+	<filterMacExt>.
+	
+	These last two sub-strings allow references to filename extensions to be removed
+	from filterName and allow the four-character Macintosh file type for your
+	application to be specified in filterExt.
+	
+	Example
+	-------
+	
+	This example is the document template string used in the Scribble step 4 example
+	provided with Visual C++, version 2.1 and later.
+	
+	NOTE: _MAC is not defined. Also, the first sub-string is not used in MDI
+	applications. Therefore, a document template string for an MDI application
+	begins with the \n character.
+	
+	        IDR_SCRIBTYPE \nScrib\nScrib\nScrib Files (*.scr)\n.SCR
+	                      \nScribble.Document.1\nScrib Document
+	                      \nSCRI\nscri Files
+	
+	        <windowTitle>      Not used due to MDI application.
+	        <docName>          Scrib
+	        <fileNewName>      Scrib
+	        <filterName>       Scrib Files (*.scr)
+	        <filterExt>        .SCR
+	        <regFileTypeId>    Scribble.Document.1
+	        <regFileTypeName>  Scrib Document
+	        <filterMacExt>     SCRI
+	        <filterMacName>    scri Files
+	
+	Platform Differences
+	--------------------
+	
+	The string resource is parsed into the following sub-strings based on the
+	platform:
+	
+	Win16
+	-----
+	
+	+-------------------------------------------------------------------+
+	| windowTitle     | default window title                            | 
+	+-------------------------------------------------------------------+
+	| docName         | user visible name for default document          | 
+	+-------------------------------------------------------------------+
+	| fileNewName     | user visible name for FileNew                   | 
+	+-------------------------------------------------------------------+
+	| filterName      | user visible name for FileOpen                  | 
+	+-------------------------------------------------------------------+
+	| filterExt       | user visible extension for FileOpen             | 
+	+-------------------------------------------------------------------+
+	| regFileTypeId   | REGEDIT visible registered file type identifier | 
+	+-------------------------------------------------------------------+
+	| regFileTypeName | Shell visible registered file type name         | 
+	+-------------------------------------------------------------------+
+	
+	Win32
+	-----
+	
+	+-------------------------------------------------------------------+
+	| windowTitle     | default window title                            | 
+	+-------------------------------------------------------------------+
+	| docName         | user visible name for default document          | 
+	+-------------------------------------------------------------------+
+	| fileNewName     | user visible name for FileNew                   | 
+	+-------------------------------------------------------------------+
+	| filterName      | user visible name for FileOpen                  | 
+	+-------------------------------------------------------------------+
+	| filterExt       | user visible extension for FileOpen             | 
+	+-------------------------------------------------------------------+
+	| regFileTypeId   | REGEDIT visible registered file type identifier | 
+	+-------------------------------------------------------------------+
+	| regFileTypeName | Shell visible registered file type name         | 
+	+-------------------------------------------------------------------+
+	| filterMacExt    | Macintosh file type for FileOpen                | 
+	+-------------------------------------------------------------------+
+	| filterMacName   | user visible name for Macintosh FileOpen        | 
+	+-------------------------------------------------------------------+
+	NOTE: The last two are not documented in Visual C++ 5.0.
+	
+	Win32 Mac
+	---------
+	
+	+-------------------------------------------------------------------+
+	| windowTitle     | default window title                            | 
+	+-------------------------------------------------------------------+
+	| docName         | user visible name for default document          | 
+	+-------------------------------------------------------------------+
+	| fileNewName     | user visible name for FileNew                   | 
+	+-------------------------------------------------------------------+
+	| filterWinName   | user visible name for FileOpen                  | 
+	+-------------------------------------------------------------------+
+	| filterWinExt    | user visible extension for FileOpen             | 
+	+-------------------------------------------------------------------+
+	| regFileTypeId   | REGEDIT visible registered file type identifier | 
+	+-------------------------------------------------------------------+
+	| regFileTypeName | Shell visible registered file type name         | 
+	+-------------------------------------------------------------------+
+	| filterExt       | Macintosh file type for FileOpen                | 
+	+-------------------------------------------------------------------+
+	| filterName      | user visible name for Macintosh FileOpen        | 
+	+-------------------------------------------------------------------+
+	
+	REFERENCES
+	==========
+	
+	Search in MSDN Documentation for the following topics:
+	
+	- CDocTemplate
+	
+	- Resource Editors
+	
+	- CDocTemplate::GetDocString
+	
+	- CSingleDocTemplate::CSingleDocTemplate
+	
+	- CMultiDocTemplate::CMultiDocTemplate
+	
+	Additional query words: appstudio resource
+	
+	======================================================================
+	Keywords          : kbProgramming kbusage kbDocView kbMFC kbVC kbVC100 kbVC150 kbVC152 kbVC200 kbVC410 kbVC420 kbVC500 kbVC600 kbVS600 kbGrpDSMFCATL 
+	Technology        : kbAudDeveloper kbMFC
+	Version           : :1.0,1.5,1.51,1.52,2.0,2.1,4.0,4.1,4.2,5.0,6.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

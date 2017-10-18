@@ -1,0 +1,173 @@
+---
+layout: page
+title: "Q145877: XLCN: Err Msg: Setup.ini Forced to Quit Product"
+permalink: kb/145/Q145877/
+---
+
+## Q145877: XLCN: Err Msg: Setup.ini Forced to Quit Product
+
+	Article: Q145877
+	Product(s): Microsoft Exchange
+	Version(s): 3.2 4.0
+	Operating System(s): 
+	Keyword(s): kbsetup
+	Last Modified: 12-MAR-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Windows 3.x client, version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you use a network administrative setup, (setup /a), to install the
+	Microsoft Exchange client for Windows 3.x source files on a network drive from a
+	Microsoft Windows for Workgroups 3.11 workstation, you might receive the
+	following error message:
+	
+	  Setup.ini Forced to Quit product.
+	
+	CAUSE
+	=====
+	
+	You will receive one of the error messages if either of the following is true:
+	
+	- The Microsoft Exchange client Setup program is unable to change the
+	  attributes of the file to READ-ONLY. This might be because you don't have the
+	  appropriate write privileges to do this.
+	
+	  -or-
+	
+	- The Microsoft Exchange client Setup program is able to change the attributes
+	  of the file to READ-ONLY, but the network returns the message that the change
+	  was not successful.
+	
+	WORKAROUND
+	==========
+	
+	If you receive this error message, do the following to correct the problem:
+	
+	- Delete the original Setup.ini from your drive.
+	
+	  If you receive the error message above, restart the workstation and rerun the
+	  Microsoft Exchange client Setup program. If it continues to fail, it may be
+	  because the original Setup.ini file is still present as a Read-Only file. To
+	  resolve this problem, delete the original Setup.ini file from your hard disk.
+	
+	- Modify the Net.cfg or Shell.cfg files, Novell workstations only:
+	
+	  1. Locate the Shell.cfg or Net.cfg on the workstation from which you are
+	     running the administrative setup of Office 4.0. If this file does not
+	     exist, create it using a text editor and place it in the same directory as
+	     Netx.com.
+	
+	  2. Open the Shell.cfg or Net.cfg file in a text editor. In the DOSREQUESTER
+	     section, change the line that reads:
+	
+	        READ ONLY COMPATIBILITY=ON
+	
+	     to
+	
+	        READ ONLY COMPATIBILITY=OFF
+	
+	     If this line does not exist, create it. The entry must be indented (default
+	     3 spaces) or it will be seen as an invalid section heading and not be
+	     used.
+	
+	     For example:
+	
+	        NETWARE DOSREQUESTER
+	           READ ONLY COMPATIBILITY=OFF
+	
+	
+	     Read Only Compatibility = Off | On (default Off)
+	
+	     This is not a new parameter, but the default has been changed with release
+	     1.20 of the DOS Requester. In the last major release of the Requester this
+	     parameter defaulted to On. However, this default setting caused problems
+	     with a number of applications, so the parameter is now set to Off by
+	     default.
+	
+	  3. If the workstation is using the NetWare VLM shell version 1.1, (Netware
+	     3.11), continue with the steps in the following section "VLM version 1.1".
+	     If you are not running VLM version 1.1, continue with steps 4-6 below.
+	
+	     NOTE: In many cases, the procedure described in the section "VLM Version
+	     1.1" will not be required. This process is time consuming. Continue with
+	     steps 4 through 6 below and perform the VLM procedure only if the problem
+	     persists.
+	
+	  4. Log off of the network, restart the workstation, and connect to the server
+	     again.
+	
+	  5. Log on to the network, start Windows, and run setup /a from the client
+	     source disk to establish the client setup share point to install the
+	     application.
+	
+	  6. When the application is installed, change the option in the Shell.cfg or
+	     Net.cfg file back to =ON in case there are applications on the system that
+	     require this setting.
+	
+	- VLM Version 1.1
+	
+	  If you are using VLM version 1.1, you can obtain this updated version of the
+	  VLM shell. Novell has made these files available on CompuServe in the
+	  NOVFILES forum and on FTP.NOVELL.COM. VLMUP2.EXE (a self-extracting file)
+	  contains all the updated VMS (Pre-release v1.20), the updated ODI
+	  drivers(LSL.COM and IPXODI.COM), the updated Mills, and other associated
+	  files.
+	
+	  To find the version of VLM that you are using, type the following at the
+	  MS-DOS prompt:
+	
+	  VLM /d
+	
+	If this command presents too much information at one time, type the following:
+	
+	  VLM /d | more
+	
+	If you are running VLM version 1.1, use the following steps to resolve this
+	problem (Note that these steps should be taken after you complete the first two
+	steps in the Modify NET.CFG or SHELL.CFG Files section above):
+	
+	  1. Remove the VLM shell and use the NETX shell to complete the administrative
+	     setup. If you cannot use NETX, you can install the VLM shell version 1.0.
+	     However, because reinstalling VLM version 1.0 is very time consuming,
+	     using NETX is the preferred method.
+	
+	  2. Log off of the network, restart the workstation and connect to the server
+	     again.
+	
+	  3. Log on to the network, start Windows, and run setup /a from the client
+	     source disk to establish the client setup share point to install the
+	     application.
+	
+	  4. When the application is installed, change the option in the Shell.cfg or
+	     Net.cfg file back to =ON in case there are applications on the system that
+	     require this setting.
+	
+	MORE INFORMATION
+	================
+	
+	READ ONLY COMPATIBILITY is an option used by the Novell workstation redirector,
+	Netx.com. This option determines whether or not an attempt to open a read-only
+	file for write access fails. Prior to Novell network version 2.1x, a program
+	could open a read-only file for write access without generating an error
+	message. With network version 2.1 and later versions, write access is not
+	granted when opening a read-only file. With the READ ONLY COMPATIBILITY option
+	in the Shell.cfg or Net.cfg file set to ON, the workstation redirect allows
+	write access to a read-only file without generating an error message.
+	
+	The products included here are manufactured by vendors independent of Microsoft;
+	we make no warranty, implied or otherwise, regarding these products' performance
+	or reliability.
+	
+	======================================================================
+	Keywords          : kbsetup 
+	Technology        : kbExchangeSearch kbExchange400 kbExchangeClientSearch kbZNotKeyword3
+	Version           : 3.2 4.0
+	
+	=============================================================================
+	

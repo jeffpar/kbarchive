@@ -1,0 +1,95 @@
+---
+layout: page
+title: "Q117217: HOWTO: Search for Specific Text in a Memo Field"
+permalink: kb/117/Q117217/
+---
+
+## Q117217: HOWTO: Search for Specific Text in a Memo Field
+
+	Article: Q117217
+	Product(s): Microsoft FoxPro
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbDatabase kbDesigner kbHWMAC kbvfp300 kbvfp500 kbvfp600 kbvfp260
+	Last Modified: 21-AUG-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 6.0 
+	- Microsoft FoxPro for MS-DOS, versions 2.0, 2.5, 2.5a, 2.5b, 2.6 
+	- Microsoft FoxPro for Windows, versions 2.5, 2.5a, 2.5b, 2.6 
+	- Microsoft FoxPro for Macintosh, versions 2.5b, 2.5c 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article demonstrates the two methods you can use to search for specific
+	text in a memo field. The first method uses the Query Designer. The second
+	method programmatically searches a memo field of a database and highlights a
+	specific word or phrase. The program continues searching and highlighting all
+	occurrences within a memo field until all the matches are located.
+	
+	MORE INFORMATION
+	================
+	
+	Method 1
+	--------
+	
+	This example uses the CLIENTS database in the SAMPLE\ORGANIZE\DBFS subdirectory
+	interactively using the Query Designer. Open the Query Designer (File, New,
+	Query), and select the drop-down box under fField Name in the Selection Criteria
+	dialog. Scroll to the bottom of the list of fields, and select
+	<EXPRESSION...>. In the Expression window, enter the following:
+	"ATC("msrchstr", Notes)."
+	
+	In the Criteria drop-down box, select "More Than." In the Example textbox, type
+	"0" (zero). When the query is performed, the cursor returns the set of records
+	where the searched-for string occurs in the specified field at any location.
+	
+	Method 2
+	--------
+	
+	This code example uses the CLIENTS database in the SAMPLE\ORGANIZE\DBFS
+	subdirectory. Before executing the code, open the memo field of the first record
+	and type the following text:
+	
+	  "This is a test of memo field text search program. If the test is successful,
+	  two occurrences will be found.."
+	
+	After executing the program, type "test" (without the quotation marks) in the @
+	... GET field, and press the RETURN key. The program will open the Notes memo
+	field and highlight each occurrence of the word "test." The program will find
+	two instances of the string "test" within the memo field:
+	
+	     SET TALK OFF
+	     msrchstr=SPACE(5)   && This variable can be any size. &&
+	     USE clients
+	     GO TOP
+	     @ 1,10 GET msrchstr
+	     READ
+	        msrchstr=ALLTRIM(msrchstr)
+	        m.occurrence=1
+	        DO WHILE .t.
+	        mfound=AT(msrchstr,Notes,m.occurrence)
+	           IF mfound > 0
+	              m.occurrence=m.occurrence+1
+	              MODI MEMO notes NOWAIT RANGE mfound,mfound+LEN(msrchstr)
+	              WAIT WINDOW 'Press any key to find next occurrence'
+	           ELSE
+	              WAIT WINDOW 'No more'
+	              EXIT
+	              ENDIF
+	        ENDDO
+	     SET TALK ON
+	
+	Additional query words: highlight search find locate text string
+	
+	======================================================================
+	Keywords          : kbDatabase kbDesigner kbHWMAC kbvfp300 kbvfp500 kbvfp600 kbvfp260 
+	Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro250bMac kbFoxPro250cMac kbFoxPro200DOS kbFoxPro250DOS kbFoxPro250aDOS kbFoxPro250bDOS kbFoxPro260DOS kbFoxPro260 kbFoxPro250 kbFoxPro250a kbFoxPro250b kbVFP300 kbVFP500 kbVFP600
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

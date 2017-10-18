@@ -1,0 +1,209 @@
+---
+layout: page
+title: "Q323435: Dungeon Siege: Game Performance Is Slower Than Expected"
+permalink: kb/323/Q323435/
+---
+
+## Q323435: Dungeon Siege: Game Performance Is Slower Than Expected
+
+	Article: Q323435
+	Product(s): Microsoft Home Games
+	Version(s): 1.0
+	Operating System(s): 
+	Keyword(s): kbimu
+	Last Modified: 25-JUL-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Dungeon Siege, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you play Microsoft Dungeon Siege, game performance may be slower than you
+	expected.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, use the following methods in the order that they are
+	presented.
+	
+	Method 1: Install the Dungeon Siege Update
+	------------------------------------------
+	
+	Install the latest Dungeon Siege Update. For additional information about the
+	Dungeon Siege Update, click the article number below to view the article in the
+	Microsoft Knowledge Base:
+	
+	  Q324477 Dungeon Siege 1.0: Availability of the Dungeon Siege Update and the
+	  Fixes Included in the Update
+	
+	Method 2: Add a Parameter to the Desktop Shortcut Properties
+	------------------------------------------------------------
+	
+	If you set Bltonly to True, it forces blt mode instead of flip mode, which works
+	around problems with earlier video cards.
+	
+	NOTE: If the slow performance does not occur when you try to save or start a
+	game, skip this method and continue to method 2.
+	
+	1. On the desktop, right-click the Dungeon Siege shortcut, and then click
+	  Properties.
+	
+	2. Click the Shortcut tab.
+	
+	3. In the Target box, click the end of the line of text, press the SPACEBAR one
+	  time, type "bltonly=true" (without the quotation marks), click Apply, and
+	  then click OK.
+	
+	NOTE: This procedure only affects the performance of Dungeon Siege if you start
+	it by using the shortcut on the desktop. If you start the game by using a
+	different shortcut, such as the shortcut on the Start menu, performance is
+	unaffected by this procedure.
+	
+	Method 3: Check the Minimum Video, Processor, and RAM Requirements
+	------------------------------------------------------------------
+	
+	Make sure that your computer exceeds the minimum video, processor, and RAM
+	requirements that you need to play Dungeon Siege. For additional information
+	about the minimum system requirements for Dungeon Siege, click the article
+	number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q320018 Dungeon Siege: Minimum System Requirements for Version 1.0
+	
+	Method 4: Quit Unnecessary Programs
+	-----------------------------------
+	
+	1. Quit all unnecessary programs by right-clicking each program on the task bar
+	  and then clicking Close.
+	
+	2. Quit programs that are running in the background by pressing CTRL+ALT+DELETE
+	  to start the Task Manager.
+	
+	  Click each program in the list, and then click End Task.
+	
+	NOTE: Do not quit Dungeon Siege, Explorer, or Systray when performing these
+	steps.
+	
+	Method 5: Update Video Card and Sound Card Drivers
+	--------------------------------------------------
+	
+	1. Contact your video hardware manufacturer to obtain and install the latest
+	  version of the driver for your video adapter.
+	
+	2. Contact your audio hardware manufacturer to obtain and install the latest
+	  version of the driver for your sound card.
+	
+	For information about how to contact your video or sound card manufacturer, see
+	the "References" section of this article.
+	
+	Method 6: Raise the Dungeon Siege Priority Option
+	-------------------------------------------------
+	
+	1. Start Dungeon Siege.
+	
+	2. On the Main menu, click Options.
+	
+	3. Click the Game tab.
+	
+	4. Click the Raise App Priority On/Off button to the On position.
+	
+	5. Click OK.
+	
+	This sets Dungeon Siege to highest priority in Windows.
+	
+	Method 7: Edit Video Settings
+	-----------------------------
+	
+	1. Start Dungeon Siege.
+	
+	2. On the Main menu, click Options, and then click the Video tab.
+	
+	3. In the Screen Resolution list, click 640x480x16.
+	
+	4. In the Shadows list, click None.
+	
+	5. In the Filtering list, click Bilinear Filtering.
+	
+	6. Click OK.
+	
+	NOTE: If this method does not improve performance, leave the modified video
+	settings in place until you have tried methods 7 and 8. If none of the methods
+	succeeds, you can restore the default settings, or select the settings that you
+	prefer.
+	
+	Method 8: Add Parameters to the Desktop Shortcut Properties
+	-----------------------------------------------------------
+	
+	Setting Asynccursor to False disables the asynchronous cursor. This increases the
+	frame rate but slows mouse response time. Setting Vsync to False improves the
+	video performance.
+	
+	NOTE: You do not have to delete the parameter that you added in method 1 before
+	you add these parameters.
+	
+	1. On the desktop, right-click the Dungeon Siege shortcut, and then click
+	  Properties.
+	
+	2. Click the Shortcut tab.
+	
+	3. In the Target box, click the end of the line of text, press the SPACEBAR one
+	  time, type "asynccursor=false vsync=false" (without the quotation marks),
+	  click Apply, and then click OK.
+	
+	NOTE: This procedure only affects the performance of Dungeon Siege if you start
+	it by using the shortcut on the desktop. If you start the game by using a
+	different shortcut, such as the shortcut on the Start menu, performance is
+	unaffected by this procedure.
+	
+	Method 9: Install the VIA 4-in-1 Driver
+	---------------------------------------
+	
+	If you have a motherboard that is based on the VIA Technologies chip set
+	installed on your computer, make sure that you have the most recent VIA 4-in-1
+	driver for your motherboard installed.
+	
+	NOTE: Contact your hardware manufacturer before you install the latest VIA 4-in-1
+	driver on your computer or make any modifications to your computer's BIOS
+	settings.
+	
+	REFERENCES
+	==========
+	
+	For additional information about how to contact your hardware manufacturer,
+	click the article number below to view the article in the Microsoft Knowledge
+	Base:
+	
+	  Q274629 Games: Multiple Issues on AMD System with Via Chipset
+	
+	For additional information about how to contact your hardware manufacturer, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+	
+	  Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+	
+	  Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+	
+	Microsoft provides third-party contact information to help you find technical
+	support. This contact information may change without notice. Microsoft does not
+	guarantee the accuracy of this third-party contact information.
+	
+	The third-party products that are discussed in this article are manufactured by
+	companies that are independent of Microsoft. Microsoft makes no warranty,
+	implied or otherwise, regarding the performance or reliability of these
+	products.
+	
+	Additional query words: msgame
+	
+	======================================================================
+	Keywords          : kbimu 
+	Technology        : kbHomeProdSearch kbGamesSearch _IK kbDungeonSiege
+	Version           : :1.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

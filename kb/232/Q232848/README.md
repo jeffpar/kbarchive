@@ -1,0 +1,89 @@
+---
+layout: page
+title: "Q232848: How to Create a WinMSD Report"
+permalink: kb/232/Q232848/
+---
+
+## Q232848: How to Create a WinMSD Report
+
+	Article: Q232848
+	Product(s): Microsoft Windows NT
+	Version(s): winnt:4.0
+	Operating System(s): 
+	Keyword(s): kbtool
+	Last Modified: 10-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 4.0 
+	- Microsoft Windows NT Workstation version 4.0 
+	- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Windows NT Diagnostics, also known as WinMSD, is a utility used to gather
+	detailed configuration information about computers running Windows NT. It can be
+	beneficial for Microsoft Support Professionals to use this information to
+	troubleshoot issues. End users can also use this utility to record current
+	configuration information on each of their computers for archival purposes.
+	WinMSD can be run from the graphical user interface (GUI) or at an MS-DOS
+	command prompt.
+	
+	MORE INFORMATION
+	================
+	
+	WinMSD usage:
+	
+	winmsd [\\computername] [/a /s /f /p]
+	/a  Causes a complete system report to be generated
+	/s  Causes a summary system report to be generated
+	/f  Causes the system report to be sent to a file
+	/p  Causes the system report to be send to the current printer
+	
+	If you run the utility from the command prompt without switches, a GUI appears,
+	which has multiple tabs that allow you to view specific information. The default
+	tab is the Version tab, which indicates the version, service pack, and serial
+	number.
+	
+	WinMSD can be run from a command prompt or from the Start Menu.
+	
+	For troubleshooting purposes, a common command would be:
+	
+	  "winmsd /a /f " (without the quotation marks)
+	
+	This queries the local computer and creates a text file (computername.txt) in the
+	current directory.
+	
+	Another common usage is:
+	
+	  "winmsd \\computername /a /f" (without the quotation marks)
+	
+	This queries a remote computer (computername) and creates a text file
+	(Computername.txt) in the current directory.
+	
+	To use the GUI version:
+	
+	1. From the Start menu, point to Programs, point to Administrative Tools, and
+	  then click Windows NT Diagnostics.
+	
+	2. Click Print.
+	
+	3. Set the following option:
+	
+	  Scope = All Tabs, Detail Level = Complete, Destination = File
+	
+	4. You can name and locate the file anywhere you wish.
+	
+	Additional query words: winnt 4.0 winmsd msd windows diagnostic report
+	
+	======================================================================
+	Keywords          : kbtool 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400
+	Version           : winnt:4.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

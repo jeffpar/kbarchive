@@ -1,0 +1,112 @@
+---
+layout: page
+title: "Q184333: XADM: Message Class Changed during Forward from Public Folder"
+permalink: kb/184/Q184333/
+---
+
+## Q184333: XADM: Message Class Changed during Forward from Public Folder
+
+	Article: Q184333
+	Product(s): Microsoft Exchange
+	Version(s): WINDOWS:5.0,5.5
+	Operating System(s): 
+	Keyword(s): exc55sp2fix
+	Last Modified: 20-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 5.0, 5.5 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	A public folder is set up with a Folder Assistant rule that specifies that mail
+	be forwarded (with the "Leave message intact" method) to another mailbox or
+	folder. A post with a message class of IPM.Post or IPM.Post.<Custom Name>
+	(where <Custom Name> is a user-defined form name), is changed to IPM.Note
+	when received. This causes the standard message form to be displayed for the
+	message, instead of the Post form (or custom Post form).
+	
+	CAUSE
+	=====
+	
+	A logic error changes the message class for messages that are forwarded with the
+	"Leave message intact" method.
+	
+	
+	RESOLUTION
+	==========
+	
+	Exchange Server 5.0
+	-------------------
+	
+	A supported fix that corrects this problem is now available from Microsoft, but
+	has not been fully regression-tested and should be applied only to systems
+	experiencing this specific problem. If you are not severely affected by this
+	specific problem, Microsoft recommends that you wait for the next Microsoft
+	Exchange Server version 5.0 service pack that contains this fix.
+	
+	To resolve this problem immediately, contact Microsoft Product Support Services
+	to obtain the fix. For a complete list of Microsoft Product Support Services
+	phone numbers and information on support costs, please go to the following
+	address on the World Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	  Component: Information Store
+	
+	  File Name    Version
+	  ------------------------
+	  Store.exe    5.0.1461.30
+	  Mdbmsg.dll   5.0.1461.30
+	
+	This fix has been posted to the following Internet location:
+	
+	  ftp://ftp.microsoft.com/bussys/exchange/exchange-public/fixes/Eng/Exchg5.0/Post-SP2-STORE/
+	
+	
+	Exchange Server 5.5
+	-------------------
+	
+	To resolve this problem, obtain the latest service pack for Exchange Server
+	version 5.5. For more information, please see the following article in the
+	Microsoft Knowledge Base:
+	
+	  Q191014 XGEN: How to Obtain the Latest Exchange Server 5.5 Service Pack
+	
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	  Component: Information Store
+	
+	  File Name    Version
+	  -----------------------
+	  Store.exe    5.5.2428.0
+	  Mdbmsg.dll   5.5.2428.0
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+	versions 5.0 and 5.5. This problem was first corrected in Exchange Server 5.5
+	Service Pack 2.
+	
+	
+	Additional query words: Design Outlook Forms Publish POST
+	
+	======================================================================
+	Keywords          : exc55sp2fix 
+	Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+	Version           : WINDOWS:5.0,5.5
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

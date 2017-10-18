@@ -1,0 +1,77 @@
+---
+layout: page
+title: "Q191006: DOC: FlexGrid Control Is Limited to 350,000 Total Cells"
+permalink: kb/191/Q191006/
+---
+
+## Q191006: DOC: FlexGrid Control Is Limited to 350,000 Total Cells
+
+	Article: Q191006
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbdocerr kbCtrl kbVBp kbVBp500 kbVBp600 kbGrpDSVB kbDSupport
+	Last Modified: 09-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The FlexGrid control is limited to 350,000 total cells. This limitation differs
+	from the limitation that is documented in the FlexGrid Help file. The Help file
+	states the following:
+	
+	  "The minimum number of rows and columns is 0. The maximum number is limited
+	  by the memory available on your computer."
+	
+	Although this statement is true for the Hierarchical FlexGrid control
+	(MSHFLXGD.OCX), it is incorrect for the FlexGrid control (MSFLXGRD.OCX).
+	
+	MORE INFORMATION
+	================
+	
+	This limitation of 350,000 cells occurs on any computer, regardless of the
+	memory that is available. Thus, if you have two columns, the maximum amount of
+	rows that you can have is 175,000. Similarly, if you have five columns, the
+	maximum amount of rows that you can have is 70,000. If any combination of rows
+	and columns exceeds 350,000 total cells, you receive the following error
+	message:
+	
+	  Unable to Allocate Memory for FlexGrid
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Create a new Standard EXE project. Form1 is created by default.
+	
+	2. Click Components on the Project menu, and then select the "Microsoft FlexGrid
+	  Control 6.0" check box.
+	
+	3. Add a FlexGrid control to Form1.
+	
+	4. Set the Cols property of MSFlexGrid1 to 2 in the Properties window.
+	
+	5. Set the Rows property of MSFlexGrid1 to 175,001 in the Properties window (the
+	  maximum it allows in this case is 175,000). You receive the following error
+	  message:
+	
+	  Unable to Allocate Memory for FlexGrid
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbdocerr kbCtrl kbVBp kbVBp500 kbVBp600 kbGrpDSVB kbDSupport 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+	Version           : :5.0,6.0
+	Issue type        : kbbug
+	Solution Type     : kbnofix
+	
+	=============================================================================
+	

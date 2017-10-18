@@ -1,0 +1,192 @@
+---
+layout: page
+title: "Q302674: Advertisement Does Not Run with Unavailable Distribution Point"
+permalink: kb/302/Q302674/
+---
+
+## Q302674: Advertisement Does Not Run with Unavailable Distribution Point
+
+	Article: Q302674
+	Product(s): Microsoft Systems Management Server
+	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
+	Operating System(s): 
+	Keyword(s): kbsms200 kbsms200bug kbAdvertisement kbSoftwareDist kbsms200preSP4fix
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server versions 2.0, 2.0 SP1, 2.0 SP2, 2.0 SP3 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	After an advertised program does not run because of a network problem in
+	reaching the distribution point, Smsapm32.exe initially schedules and attempts a
+	retry of the program, but later unschedules the program after the Offer Data
+	provider's next polling cycle.
+	
+	This is a brief summary of events that describes how the problem occurs:
+	
+	- The System Offer Data provider (Odpsys32.exe) notifies Smsapm32.exe that an
+	  advertisement is ready to run.
+	
+	- Smsapm32.exe attempts to run the advertisement but cannot because of a
+	  network error in reaching the distribution point.
+	
+	- Smsapm32.exe reschedules the advertisement to run again in 10 minutes.
+	
+	- The next time that Odpsys32.exe performs its work cycle, the Smsapm32.exe
+	  thread that it creates unschedules the pending advertisement. You can see
+	  this in the Smsapm32.log file by searching on "Unscheduling program."
+	
+	The number of times that the program attempts to retry the advertisement depends
+	on the Offer Data provider polling interval. If the interval is set to 15
+	minutes, Smsapm32.exe has time to attempt the retry twice. If the interval is
+	set to the default value of 60 minutes, it retries approximately 6 times.
+	
+	CAUSE
+	=====
+	
+	When Smsapm32.exe finds pending programs, they are correctly unscheduled. In
+	this situation, the problem occurs if the program does not meet enough of the
+	criteria required to be rescheduled.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, obtain the latest service pack for Systems Management
+	Server version 2.0. For additional information, click the following article
+	number to view the article in the Microsoft Knowledge Base:
+	
+	  Q236325 How to Obtain the Latest Systems Management Server 2.0 Service Pack
+	
+	WORKAROUND
+	==========
+	
+	Because the problem occurs after the next polling cycle by the Offer Data
+	provider, the longer this interval is, the more times the program will be
+	attempted by Advertised Program Monitor (APM).
+	
+	You adjust this interval in the site settings or on each individual client
+	computer. The site-wide setting is the "Check for new programs every x minutes"
+	value, which is defined on the General tab of the Advertised Program Client
+	agent. If the site-wide settings are allowed to be overridden, you can set the
+	individual client setting in the Advertised Programs Monitor tool in Control
+	Panel. Click System, and then Options to define a custom polling interval that
+	applies to this computer only.
+	
+	Because APM waits 10 minutes before another attempt, adding 10 minutes to the
+	polling interval equates to another retry attempt by Smsapm32.exe.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed that this is a problem in the Microsoft products that
+	are listed at the beginning of this article. This problem was first corrected in
+	Systems Management Server 2.0 Service Pack 4.
+	
+	MORE INFORMATION
+	================
+	
+	A variety of network conditions and errors can cause this behavior. However,
+	defining User Connection limits on the distribution point shares (SMSPKGx$) also
+	results in this behavior.
+	
+	The following entries from the Smsapm32.log file show some of the Smsapm32.exe
+	behavior that is associated with this problem:
+	
+	SCHED DATA  : Return code = 0x35; The network path was not found.~~; IsExecutePossible returned error 53 for program 'testapp.exe'~ 
+	SCHED DATA  : Reporting status : APA_JOB_STATUS_NETWORK_DOWN~  
+	SCHED DATA  : Setting job status to 0xc.~  
+	SCHED DATA  : Handling an error condition (0x35) for program Run TestApp in package Test Application.~ 
+	SCHED DATA  : Beginning with a job run status set to APA_RUNSTATUS_NOT_RUNNING.~ 
+	SCHED DATA  : *** UNRECOGNISED JOB COMPLETION RETURN CODE. ASSUMING UNSUCCESSFUL EXECUTION~ 
+	SCHED DATA  : The error requires that some type of reschedule action be taken.~ 
+	
+	--Later--
+	
+	SCHED DATA  : For program Run TestApp in package Test Application compiling all offers in order to get its schedule time and attributes.~  
+	SCHEDULER   : Determining whether to unschedule or schedule the next time the program will run ...~ 
+	SCHEDULER   : Unscheduling program Run TestApp in package Test Application for DOMAINTEST\USER1.~
+	
+	The problem that is described in this article and the problem that is described
+	in the following Microsoft Knowledge Base article are very similar:
+	
+	  Q302535 SMS: Problems with Smsapm32.exe When No Distribution Points Are
+	  Available
+	
+	If the "Assignments are not mandatory over slow links" check box is not selected
+	for a mandatory advertisement, the symptoms that are described in this article
+	occur. If the check box is selected, the systems that are described in article
+	Q302535 occur. The hotfix for the problem that is described in this article also
+	contains the hotfix for the problem that is described in article Q302535.
+	
+	How to Install the Hotfix
+	-------------------------
+	
+	Install this fix on all of the primary sites and secondary sites in the SMS
+	hierarchy. Install the hotfix only on the site servers; the clients will receive
+	the updated client files automatically. To install the fix, use one of the
+	following methods.
+	
+	How to Use the Hotfix Installer:
+	
+	NOTE: You can use this method only for Intel-based computers.
+	
+	1. Copy the hotfix folder structure to a local folder on your site server or to
+	  a share on your network. The I386 and Alpha subfolders are required and must
+	  also be downloaded from the Microsoft FTP site. It is important to keep the
+	  folder structure intact. The Q302674.exe file is a Microsoft SMS Installer
+	  file that updates specific files on your site server.
+	
+	2. Log on to your site server by using an account with administrative
+	  privileges.
+	
+	3. On the site server, quit the SMS Administrator console.
+	
+	4. Run the Q302674.exe file and follow the instructions in the wizard. You can
+	  run this file in Quiet mode by using the /s switch. The SMS services are
+	  stopped and restarted as part of the installation process.
+	
+	How to Manually Install the Hotfix:
+	
+	You can use this method for both Intel-based and Alpha-based site servers.
+	Substitute I386 or Alpha for your platform type where <Platform> is used
+	in the following steps:
+	
+	1. Copy the hotfix folder structure to a local folder on your site server or to
+	  a share on your network. The I386 and Alpha subfolders are required and must
+	  also be downloaded from the Microsoft FTP site. It is important to keep the
+	  folder structure intact.
+	
+	2. Quit the SMS Administrator console and stop all SMS services in Control
+	  Panel. If the SMS_SITE_BACKUP service is running, stop it also.
+	
+	3. Copy the Apasetup.exe file from the hotfix <Platform> folder to the
+	  <Drive>:\Sms\Inboxes\Clicomp.src\Smsapm32\<Platform> folder on
+	  the SMS site server.
+	
+	4. Replace the Compver.ini file in the
+	  <Drive>:\Sms\Inboxes\Clicomp.src\Smsapm32 folder with the
+	  Compversmsapm32.ini file from the hotfix I386 or Alpha (both files are the
+	  same) source folder after renaming the file to Compver.ini.
+	
+	5. Copy the Smsapm32.exe file from the hotfix <Platform> folder to the
+	  <Drive>:\Sms\Bin\<Platform> folder.
+	
+	6. Restart the SMS_SITE_COMPONENT_MANAGER service on the site server. This
+	  automatically restarts the SMS_EXECUTIVE service.
+	
+	Additional query words: prodsms
+	
+	======================================================================
+	Keywords          : kbsms200 kbsms200bug kbAdvertisement kbSoftwareDist kbsms200preSP4fix 
+	Technology        : kbSMSSearch kbSMS200 kbSMS200SP1 kbSMS200SP2 kbSMS200SP3
+	Version           : :2.0,2.0 SP1,2.0 SP2,2.0 SP3
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

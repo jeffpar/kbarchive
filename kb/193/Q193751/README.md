@@ -1,0 +1,102 @@
+---
+layout: page
+title: "Q193751: FIX: Do Not Use Commas in Step 4 of Setup Wizard Dialog Box"
+permalink: kb/193/Q193751/
+---
+
+## Q193751: FIX: Do Not Use Commas in Step 4 of Setup Wizard Dialog Box
+
+	Article: Q193751
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:6.0
+	Operating System(s): 
+	Keyword(s): kbservicepack kbwizard kbAppSetup kbvfp600 kbvfp600bug kbVS600sp2 kbVS600SP1 kbVS600sp3
+	Last Modified: 19-JUN-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Placing a comma in the text you type into the "Setup dialog box caption" text
+	box in step 4 of the Setup Wizard causes the following error:
+	
+	  <setup name> Setup was not completed successfully.
+	
+	RESOLUTION
+	==========
+	
+	Do not use a comma character in the "Setup dialog box caption" text box in step
+	4 of the Setup Wizard.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article.
+	
+	This bug has been fixed in the updated version of the Setup Wizard Vfp6swiz.exe
+	dated 10/08/1998. This bug was corrected in Visual Studio 6.0 Service Pack 3.
+	
+	For more information about Visual Studio service packs, please see the following
+	articles in the Microsoft Knowledge Base:
+	
+	Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+	
+	Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+	
+	MORE INFORMATION
+	================
+	
+	When you run the Setup Wizard and place a comma in the "Setup dialog box
+	caption" text box, the Setup Wizard continues and builds the disk images.
+	However, when you run the Setup routine and select OK in the "Change Folder"
+	window, the error occurs.
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. From the Tools menu, point to Wizards and then choose Setup. In the Microsoft
+	  Visual FoxPro dialog box, click Locate Directory and then in step 1 select a
+	  folder that has an .exe or .app file.
+	
+	2. Make any selection in step 2 and then, in step 3, point to the folder in
+	  which you want the distribution disks created.
+	
+	3. In step 4, type "Mysetup, Files" (without the quotes) in the "Setup dialog
+	  box caption" text box and type anything in the Copyright information text
+	  box.
+	
+	4. Click Finish twice to create the setup disks.
+	
+	5. Go to the destination folder and run the Setup.exe file in the Disk 1 folder.
+	
+	6. Continue through the setup routine by selecting the Continue and OK buttons,
+	  and note that the error occurs.
+	
+	7. Run the Setup Wizard again, taking the comma out of the "Setup dialog box
+	  caption" text box, and note that the distribution installation completes
+	  successfully.
+	
+	REFERENCES
+	==========
+	
+	For more information on the updated Setup Wizard, please see the following URL:
+	
+	http://msdn.microsoft.com/vfoxpro/downloads/updates.asp
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbservicepack kbwizard kbAppSetup kbvfp600 kbvfp600bug kbVS600sp2 kbVS600SP1 kbVS600sp3fix 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+	Version           : WINDOWS:6.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

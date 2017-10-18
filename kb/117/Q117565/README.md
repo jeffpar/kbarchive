@@ -1,0 +1,116 @@
+---
+layout: page
+title: "Q117565: HOWTO: Getting the Current Printer Settings in MFC"
+permalink: kb/117/Q117565/
+---
+
+## Q117565: HOWTO: Getting the Current Printer Settings in MFC
+
+	Article: Q117565
+	Product(s): Microsoft C Compiler
+	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,4.0,4.1
+	Operating System(s): 
+	Keyword(s): kbprint kbCmnDlgPrint kbMFC kbPrinting kbGrpDSMFCATL
+	Last Modified: 11-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The Microsoft Foundation Classes (MFC), used with:
+	   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5, 1.51, 1.52 
+	   - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1, 4.0, 4.1 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	MFC provides a great deal of information on the current printer in the framework
+	printing functions. However, information on the current printer is limited
+	outside of these functions.
+	
+	MORE INFORMATION
+	================
+	
+	The only way to gain access to the current printers settings is through the
+	m_hDevMode and m_hDevNames structures stored in CWinApp. These members are
+	accessed through a PRINTDLG structure whose pointer is passed to the
+	GetPrinterDeviceDefaults() member function of a class derived from CWinApp
+	class. Because the return values, hDevMode and hDevNames, are HGLOBAL variables,
+	::GlobalLock() must be called to return a pointer to the structures. Using this
+	pointer, you can extract information from the structure to determine the current
+	state of the printer. Please see DEVMODE and DEVNAMES in the SDK online Help for
+	more information on the contents of these structures.
+	
+	The sample code below is a member function of a CView-derived class that returns
+	the current page size of the printer by using GetDeviceCaps() on a CDC object
+	created with the printer settings:
+	
+	Sample Code
+	-----------
+	
+	     /* Compile options needed: none
+	     */ 
+	
+	        BOOL CMyView::GetPageSize(CSize &nRetVal)
+	        {
+	           PRINTDLG FAR * pPrintDlg = new PRINTDLG;
+	           BOOL bRet = FALSE;
+	
+	        // Get the current printer's settings.
+	
+	           if(AfxGetApp()->GetPrinterDeviceDefaults(pPrintDlg))
+	           {
+	
+	        // Get pointers to the two setting structures.
+	
+	              DEVNAMES FAR *lpDevNames =
+	              (DEVNAMES FAR *)::GlobalLock(pPrintDlg->hDevNames);
+	
+	              DEVMODE FAR *lpDevMode =
+	              (DEVMODE FAR *)::GlobalLock(pPrintDlg->hDevMode);
+	
+	        // Get the specific driver information.
+	
+	              CString szDriver((LPTSTR)lpDevNames +
+	                                   lpDevNames->wDriverOffset);
+	              CString szDevice((LPTSTR)lpDevNames +
+	                                   lpDevNames->wDeviceOffset);
+	              CString szOutput((LPTSTR)lpDevNames +
+	                                   lpDevNames->wOutputOffset);
+	
+	        // Create a CDC object according to the current settings.
+	
+	              CDC pDC;
+	              pDC.CreateDC(szDriver, szDevice, szOutput, lpDevMode);
+	
+	        // Query this CDC object for the width and height of the current
+	        // page.
+	
+	              nRetVal.cx = pDC.GetDeviceCaps(HORZSIZE);
+	              nRetVal.cy = pDC.GetDeviceCaps(VERTSIZE);
+	
+	        // Get rid of the CDC object.
+	
+	              pDC.DeleteDC();
+	
+	        // Unlock the pointers to the setting structures.
+	
+	              ::GlobalUnlock(pPrintDlg->hDevNames);
+	              ::GlobalUnlock(pPrintDlg->hDevMode);
+	
+	            bRet = TRUE;
+	           }
+	         delete pPrintDlg;
+	         return bRet;
+	     }
+	
+	Additional query words: kbNoUpdate
+	
+	======================================================================
+	Keywords          : kbprint kbCmnDlgPrint kbMFC kbPrinting kbGrpDSMFCATL 
+	Technology        : kbAudDeveloper kbMFC
+	Version           : :1.0,1.5,1.51,1.52,2.0,2.1,4.0,4.1
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

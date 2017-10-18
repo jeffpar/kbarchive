@@ -1,0 +1,145 @@
+---
+layout: page
+title: "Q193502: PRB: Cannot Quit VFP End Task Causes Application Error"
+permalink: kb/193/Q193502/
+---
+
+## Q193502: PRB: Cannot Quit VFP End Task Causes Application Error
+
+	Article: Q193502
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a
+	Operating System(s): 
+	Keyword(s): kbvfp kbvfp500 kbvfp500a kbvfp500aBUG kbvfp600 kbvfp600fix kbXBase
+	Last Modified: 08-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, on platform(s):
+	   - the operating system: Microsoft Windows NT 
+	   - the operating system: Microsoft Windows 95 
+	   - the operating system: Microsoft Windows 98 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Running a Visual FoxPro form through a READ EVENTS command without a CLEAR
+	EVENTS command, produces an error dialog box, which contains an OK button. The
+	following text displays in the error dialog box:
+	
+	  Cannot Quit Visual FoxPro
+	
+	If the OK button is not selected and the error dialog box remains on the Visual
+	FoxPro screen, when End Task is selected from the Task Manager, one of the
+	following system errors appear (depending on the version of the operating
+	system):
+	
+	- In Windows 95, and in Windows 98, using Visual FoxPro 5.0x, the following
+	  error displays:
+	
+	  This program has performed an illegal operation and will be shut down.
+	
+	  Clicking the Details button reveals the following message:
+	
+	  VFP caused an invalid page fault in module <unknown> at <memory
+	  address>.
+	
+	- In Windows 95 and in Windows 98, using Visual FoxPro 6.0, the following error
+	  appears:
+	
+	  This program has performed an illegal operation and will be shut down.
+	
+	  Clicking the Details button reveals the following message:
+	
+	  VFP caused an invalid page fault in module KERNEL32.DLL at <memory
+	  address>.
+	
+	- In Windows NT 4.0, using Visual FoxPro 5.0x, the following error appears:
+	
+	  An application error has occurred and an application error log is being
+	  generated.
+	
+	  VFP.exe
+	  Exception: access violation <error number>, Address: <memory
+	  address>.
+	
+	- In Windows NT 4.0, using Visual FoxPro 6.0, the problem does not occur.
+	
+	CAUSE
+	=====
+	
+	Not clearing the "Cannot Quit Visual FoxPro" error dialog box by selecting the
+	OK button prior to selecting End Task from the Task Manager.
+	
+	RESOLUTION
+	==========
+	
+	Clear the "Cannot Quit Visual FoxPro" error dialog box by selecting the OK
+	button prior to using End Task and the error does not occur.
+	
+	STATUS
+	======
+	
+	Microsoft is researching this problem and will post new information here in the
+	Microsoft Knowledge Base as it becomes available.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	WARNING: The following steps cause Visual FoxPro to crash and you may not be able
+	to restart Visual FoxPro unless you turn your computer off and on (perform a
+	cold boot).
+	
+	NOTE: The following example would not normally be performed by a programmer using
+	Visual FoxPro, however it is used here because it is the easiest way to
+	demonstrate the problem.
+	
+	1. Create a program with the following FoxPro command:
+	
+	  
+	
+	  READ EVENTS
+	
+	2. Save and run the program.
+	
+	3. Try to quit Visual FoxPro, by closing the Visual FoxPro window.
+	
+	4. The following error displays in a dialog box, which contains an OK button:
+	
+	  Cannot Quit Visual FoxPro.
+	
+	5. Do NOT select the OK button and keep the error dialog box on the screen.
+	
+	6. Invoke the Windows Task Manager and select the End Task button.
+	
+	  NOTE: You may need to select End Task more than once.
+	
+	7. One of the error messages listed in the SYMPTOMS section occurs.
+	
+	REFERENCES
+	==========
+	
+	For more information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q172455 SAMPLE: Exitfox.exe Overcomes "Cannot Quit Visual FoxPro" Error
+	
+	(c) Microsoft Corporation 1998. All Rights Reserved. Contributions by Perry
+	Newton, Microsoft Corporation.
+	
+	
+	Additional query words: exit close quit
+	
+	======================================================================
+	Keywords          : kbvfp kbvfp500 kbvfp500a kbvfp500aBUG kbvfp600 kbvfp600fix kbXBase 
+	Technology        : kbVFPsearch kbAudDeveloper
+	Version           : WINDOWS:3.0,3.0b,5.0,5.0a
+	Issue type        : kbprb
+	
+	=============================================================================
+	

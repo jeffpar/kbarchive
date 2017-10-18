@@ -1,0 +1,407 @@
+---
+layout: page
+title: "Q266729: Netlogon Behavior in Windows NT 4.0"
+permalink: kb/266/Q266729/
+---
+
+## Q266729: Netlogon Behavior in Windows NT 4.0
+
+	Article: Q266729
+	Product(s): Microsoft Windows NT
+	Version(s): 4.0
+	Operating System(s): 
+	Keyword(s): kberrmsg kbnetwork
+	Last Modified: 26-JAN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 4.0 
+	- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+	- Microsoft Windows NT Workstation version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The Netlogon service performs a variety of actions on all Windows NT 4.0-based
+	domain member servers, and additional functions on domain controllers. This
+	article describes basic operations for domain servers, workstations, and domain
+	controllers.
+	
+	MORE INFORMATION
+	================
+	
+	Member Servers and Workstations
+	-------------------------------
+	
+	Netlogon performs similar functions on Windows NT 4.0-based member servers and
+	workstations. Netlogon has the following responsibilities:
+	
+	- Locate a domain controller with which to set up a secure channel
+	- Retrieve a list of users when adding permissions
+	- Non-local (domain) account authentication
+	- Change the machine account password
+	
+	NOTE: The terms "workstation" and "member server" are used interchangeably in
+	this article.
+	
+	Secure Channel:
+	
+	Upon starting, Netlogon attempts to find a domain controller (DC) for the domain
+	in which its machine account exists. After locating the appropriate DC, the
+	machine account password from the workstation is authenticated against the
+	password on the DC. After the machine account is verified, the workstation
+	establishes a secure channel with that DC.
+	
+	Secure channels are not stagnant. Netlogon routinely checks the status and
+	responsiveness of the secure channel. If the secure channel partner does not
+	meet certain criteria, Netlogon attempts to find a new secure channel partner.
+	If at this point a domain controller cannot be found, you may see the following
+	error message in the System log in Event Viewer:
+	
+	  Event ID 5719
+	
+	If a machine account cannot be found, you may see the following error message in
+	the System log in Event Viewer:
+	
+	  Event ID 5721
+	
+	If the password does not match, you may see the following error message in the
+	System log in Event Viewer:
+	
+	  Event ID 3210
+	
+	Retrieving a List of Users for Permissions:
+	
+	When you attempt to add users to a list of permissions, such as adding a user to
+	the permissions for a file, Netlogon is responsible for pulling the list from
+	its secure channel partner. However, if your user list is large and your secure
+	channel partner is located over a slow link, there may be a significant delay in
+	displaying permissions because the list is not displayed until the entire list
+	is retrieved.
+	
+	Non-Local Domain Authentication
+	-------------------------------
+	
+	When you log on locally or attempt to establish a network connection to a
+	workstation, Netlogon can play a role in the authentication. During a logon
+	attempt, Local Security Authority (LSA) receives the credentials offered. If the
+	credentials that are provided are not part of the workstation's local Security
+	Accounts Manager (SAM), Netlogon forwards the credentials to its secure channel
+	partner. That DC then attempts to validate the credentials and responds back to
+	the workstation. Netlogon then passes the return information back to LSA, which
+	permits or denies the logon attempt.
+	
+	Machine Account Passwords
+	-------------------------
+	
+	Netlogon is also responsible for changing the machine account password. By
+	default, this password is reset every seven days. The workstation sends the
+	request to the secure channel partner. The secure channel partner passes the
+	request to the PDC. If the response from the PDC is no "access denied" or
+	"refusepasswordchange," the Netlogon service considers the password change
+	successful. Netlogon remembers the last password as well as the new password. If
+	the machine account is not validated when it is setting up a secure channel
+	using the new password, Netlogon attempts to use the old password, and if
+	successful, uses only the old password from this point on.
+	
+	For additional information about machine account passwords, click the article
+	numbers below to view the articles in the Microsoft Knowledge Base:
+	
+	  Q154501 How to Disable Automatic Machine Account Password Changes
+	
+	  Q175468 Effects of Machine Account Replication on a Domain
+	
+	  Q250877 Problem Changing Domains Without Rebooting Within 10 Minutes
+	
+	Domain Controllers
+	------------------
+	
+	In addition to the workstation and member server responsibilities listed earlier
+	in this article, Netlogon manages the following additional tasks on domain
+	controllers:
+	
+	- Secure channel
+	- Domain and pass-through authentication
+	- Machine account and trust relationship password changes
+	- SAM database synchronization
+	
+	NOTE: Netlogon functions vary based on whether the DC is a PDC or a backup domain
+	controller (BDC).
+	
+	Secure Channels:
+	
+	When you start a PDC, Netlogon builds a list of all the BDCs in the domain, and a
+	list of trusted domains. At this time, Netlogon attempts to set up a secure
+	channel with a DC from each trusted domain, and if this attempt does not
+	succeed, Netlogon does not make another attempt until a secure channel with that
+	domain is explicitly needed.
+	
+	The BDC's behavior is similar. While Netlogon on a BDC does not enumerate other
+	BDCs, it does contact the PDC and sets up secure channels with trusted domains
+	as needed.
+	
+	Pass-Through Authentication:
+	
+	Secure channels with other domains are used for pass-through authentication. For
+	example, if domain A trusts domain B, and a workstation is a member of domain A,
+	at startup Netlogon tries to locate a DC for domain A. After a DC is located,
+	the machine account password from the workstation is authenticated against the
+	password on the DC in domain A. After the machine account is verified, the
+	workstation establishes a secure channel with that DC. If a user from domain A
+	or domain B attempts to log on to the workstation, LSA determines that this
+	needs to be handled by Netlogon. Netlogon on the workstation passes the
+	credentials to its secure channel partner. If the account does not exist in
+	domain A, the secure channel partner (the DC in domain A) uses its secure
+	channel to domain B to pass the credentials to that DC. The DC in domain B
+	responds to the DC in domain A, which passes the information back to the
+	workstation. Note that Netlogon handles the authentication process on all three
+	computers.
+	
+	For additional information about this issue, click the article number below to
+	view the article in the Microsoft Knowledge Base:
+	
+	  Q165202 WinNT Client Logon in Resource and Master Domain Environment
+	
+	Trust Account Passwords:
+	
+	The Netlogon service on the PDC manages the trust relationship passwords, and
+	this process is very similar to the machine account password process. Once the
+	trust is setup or changed, the PDC passes the trust information to the BDCs
+	during SAM account replication.
+	
+	For additional information about this issue, click the article number below to
+	view the article in the Microsoft Knowledge Base:
+	
+	  Q128489 Inter-Domain Trust Account Passwords
+	
+	SAM Synchronization:
+	
+	The major role that Netlogon plays on domain controllers is in SAM
+	synchronization. Only the PDC has a writeable copy of the SAM (with the
+	exception of Last Logon Time), and all changes that are made to the SAM need to
+	be written to the BDCs. Any change to a user, group, machine account, trust, and
+	so on, is recorded on the PDC.
+	
+	The Netlogon service on the PDC records each change to the Netlogon.chg file. The
+	Netlogon.chg file has three sections: SAM, Built-in, and LSA, and each section
+	has its own serial number. Every change that is recorded in the change log
+	updates the serial number in the appropriate section. Each BDC maintains a list
+	of the three serial numbers from the last synchronization.
+	
+	Netlogon manages this process. By default, if there are changes, the PDC sends a
+	"pulse" message every 5 minutes to all BDCs. When a BDC receives a "pulse"
+	message, it contacts the PDC and then compares each of the serial numbers. If
+	the serial numbers do not match, the BDC requests the changes made since the
+	synchronization, and this process is known as a partial synchronization.
+	
+	If the change log filled up and restarted (wrapped), the BDC requests a full
+	synchronization. By default, the change log holds about 2,000 changes. Usually,
+	you should not wrap the change log, but adding accounts by using the Portuas
+	utility (the LAN Manager upgrade utility) or by scripting can cause the change
+	log to wrap.
+	
+	When synchronization is complete, the BDC sets its serial numbers to the same
+	serial number as the PDC. If no changes are made, there are no pulses, and the
+	BDC performs periodic checks to verify that the PDC is still available. Note
+	that no synchronization occurs if the BDC determines that the serial numbers
+	match.
+	
+	Netlogon on the domain controllers manages the size of the change log, the
+	frequency rate of the "pulse" messages, and the number of BDCs that can
+	synchronize at one time.
+	
+	For additional information about SAM synchronization, click the article numbers
+	below to view the articles in the Microsoft Knowledge Base:
+	
+	  Q102717 Windows NT UAS Replication (Windows NT and LAN Manager)
+	
+	  Q244382 Windows NT 4.0 Security Account Manager Replication
+	
+	  Q185952 Information from BDC Sent to PDC, and Then Replicated to Domain
+	
+	  Q238191 Partial Replication May Take a Long Time with Very Large Groups
+	
+	  Q173882 Netlogon Synchronization Errors
+	
+	  Q197985 PDC Performs Only Full Synchronizations to BDCs
+	
+	  Q244396 Determining if Full Syncs Are Caused By Wrapping the Change Log
+	
+	  Q158148 Domain Secure Channel Utility -- Nltest.exe
+	
+	Netlogon.log and Netlogon.chg Files from a PDC:
+	
+	****PDC Netlogon initializing
+	[INIT] Following are the effective values after parsing
+	[INIT]    ScriptsParameter = C:\WTS\system32\repl\import\scripts
+	[INIT]    Pulse = 300 (0x12c)
+	[INIT]    Randomize = 1 (0x1)
+	[INIT]    PulseMaximum = 7200 (0x1c20)
+	[INIT]    PulseConcurrency = 10 (0xa)
+	[INIT]    PulseTimeout1 = 10 (0xa)
+	[INIT]    PulseTimeout2 = 300 (0x12c)
+	[INIT]    ReplicationGovernor = 100 (0x64)
+	[INIT]    MaximumMailslotMessages = 500 (0x1f4)
+	[INIT]    MailslotMessageTimeout = 10 (0xa)
+	[INIT]    MailslotDuplicateTimeout = 2 (0x2)
+	[INIT]    ExpectedDialupDelay = 0 (0x0)
+	[INIT]    ScavengeInterval = 900 (0x384)
+	[INIT]    MaximumPasswordAge = 7 (0x7)
+	[INIT]    DBFlag = 545325055 (0x2080ffff)
+	[INIT]    MaximumLogFileSize = 20000000 (0x1312d00)
+	[INIT]    Update = FALSE
+	[INIT]    DisablePasswordChange = FALSE
+	[INIT]    RefusePasswordChange = FALSE
+	[INIT]    SignSecureChannel = TRUE
+	[INIT]    SealSecureChannel = TRUE
+	[INIT]    RequireSignOrSeal = FALSE
+	[INIT] Command line parsed successfully ...
+	
+	****PDC setting the Serial Numbers
+	[SYNC] NlInitDbSerialNumber: LSA: Serial number is 0 2c
+	[SYNC] NlInitDbSerialNumber: SAM: Serial number is 0 3a
+	[SYNC] NlInitDbSerialNumber: BUILTIN: Serial number is 0 b
+	
+	****PDC enumerating DC's 
+	[SESSION] NlAddBdcServerSession: BDC01: Added NT BDC account
+	[SESSION] NlAddBdcServerSession: BDC02: Added NT BDC account
+	[SESSION] NlAddBdcServerSession: BDC03: Added NT BDC account
+	[SESSION] NlAddBdcServerSession: PDC:   Skipping add of ourself
+	[SESSION] NlAddBdcServerSession: BDC04: Added NT BDC account
+	[SESSION] NlAddBdcServerSession: BDC05: Added NT BDC account
+	[SESSION] NlAddBdcServerSession: BDC06: Added NT BDC account
+	
+	****PDC getting trust info (from LSA)
+	[SESSION] NlInitTrustList: OTHER_DOMAIN_01 in LSA
+	[SESSION] NlUpdateTrustListBySid: OTHER_DOMAIN_01: Added to local trust list
+	[SESSION] NlDcDiscoveryMachine: OTHER_DOMAIN_01: Start Discovery
+	[SESSION] NlInitTrustList: OTHER_DOMAIN_02 in LSA
+	[SESSION] NlUpdateTrustListBySid: OTHER_DOMAIN_02: Added to local trust list
+	[SESSION] NlDcDiscoveryMachine: OTHER_DOMAIN_02: Start Discovery
+	
+	****PDC finishing up the netlogon intialization
+	[INIT] The netlogon share (NETLOGON) already exists. 
+	[INIT] The netlogon share current path is C:\WTS\system32\repl\import\scripts
+	[INIT] Path to be shared is C:\WTS\debug
+	
+	****PDC checking to see if a Full Sync was in progress when machine shutdown
+	[SYNC] Setting SAM Full Sync Key: not in progress
+	[SYNC] Setting BUILTIN Full Sync Key: not in progress
+	[SYNC] Setting LSA Full Sync Key: not in progress
+	
+	****PDC responding to a BDC requesting a Full Sync
+	[SYNC] NetrDatabaseSync: SAM full sync called by BDC04 State: 0 Context: 0x0.
+	[SYNC] Packing Domain Object
+	[SYNC] Packing Group Object 200
+	[SYNC]       Group Object name Domain Admins
+	[SYNC] Packing Group Object 201
+	[SYNC]       Group Object name Domain Users
+	[SYNC] Packing Group Object 202
+	[SYNC]       Group Object name Domain Guests...
+	
+	****BDC requesting partial synchronization
+	[SYNC] NetrDatabaseDeltas: SAM partial sync called by BDC02 SerialNumber:d0 d4b9c.
+	[SYNC] Packing User Object 4fec...
+	
+	****BDC checking serial numbers - No changes
+	[SYNC] NetrDatabaseDeltas: BUILTIN partial sync called by BDC01 SerialNumber:d0 86e.
+	[SYNC] NetrDatabaseDeltas: BUILTIN returning (0x0) to BDC01
+	[SYNC] NetrDatabaseDeltas: LSA partial sync called by BDC01 SerialNumber:d0 4c2828.
+	[SYNC] NetrDatabaseDeltas: LSA returning (0x0) to BDC01
+	[SYNC] NetrDatabaseDeltas: SAM partial sync called by BDC01 SerialNumber:d0 d4ba0.
+	[SYNC] NetrDatabaseDeltas: SAM returning (0x0) to BDC01
+	
+	****BDC checking serial numbers - Changes in SAM ONLY
+	[SYNC] NetrDatabaseDeltas: SAM partial sync called by BDC02 SerialNumber:d0 d4b9c.
+	[SYNC] Packing User Object 4fec
+	[SYNC]       User Object name xxxx
+	[SYNC] NetrDatabaseDeltas: Modified count of the packed record: d0 d4b9d
+	[SYNC] Packing User Object 4f25
+	[SYNC]       User Object name xxxx
+	[SYNC] NetrDatabaseDeltas: Modified count of the packed record: d0 d4b9e
+	[SYNC] Packing User Object 38f4
+	[SYNC]       User Object name xxxx
+	[SYNC] NetrDatabaseDeltas: Modified count of the packed record: d0 d4b9f
+	[SYNC] Packing User Object 42b2
+	[SYNC]       User Object name xxxx
+	[SYNC] NetrDatabaseDeltas: Modified count of the packed record: d0 d4ba0
+	[SYNC] NetrDatabaseDeltas: SAM returning (0x0) to BDC02 
+	[SYNC] NetrDatabaseDeltas: BUILTIN partial sync called by BDC02 SerialNumber:d0 86e.
+	[SYNC] NetrDatabaseDeltas: BUILTIN returning (0x0) to BDC02 
+	[SYNC] NetrDatabaseDeltas: LSA partial sync called by BDC02 SerialNumber:d0 4c2828.
+	[SYNC] NetrDatabaseDeltas: LSA returning (0x0) to BDC02 
+	
+	****Netlogon writing changes to the change log (PDC)
+	[CHANGELOG] DeltaType AddOrChangeUser (5) SerialNumber: 0 36e7 Rid: 0x1f5
+	[CHANGELOG] DeltaType ChangeAliasMembership (12) SerialNumber: 0 17 Rid: 0x220
+	[CHANGELOG] DeltaType AddOrChangeUser (5) SerialNumber: 0 36e2 Rid: 0x404
+	[CHANGELOG] DeltaType AddOrChangeUser (5) SerialNumber: 0 36e3 Rid: 0x404
+	[CHANGELOG] DeltaType ChangeAliasMembership (12) SerialNumber: 0 18 Rid: 0x220
+	[CHANGELOG] DeltaType AddOrChangeUser (5) SerialNumber: 0 36e4 Rid: 0x404
+	[CHANGELOG] DeltaType ChangeGroupMembership (8) SerialNumber: 0 36e5 
+	           Rid: 0x200 Name: 'Domain Admins'
+	[CHANGELOG] DeltaType AddOrChangeUser (5) SerialNumber: 0 36e8 
+	           Rid: 0x401 Immediately PasswordChanged
+	[CHANGELOG] DeltaType AddOrChangeUser (5) SerialNumber: 0 36e9 
+	           Rid: 0x3ed PasswordChanged
+	
+	********Using NLTEST /LIST_DELTAS to view change log on PDC
+	FILE SIGNATURE : NT CHANGELOG 4 
+	
+	Deltas of SAM DATABASE 
+	
+	Order: 1 DeltaType AddOrChangeDomain (1) SerialNumber: 0 8
+	Order: 4 DeltaType DeleteUser (6) SerialNumber: 0 9 
+	      Rid: 0x3e9 Name: 'IE4AutoInstall'
+	Order: 12 DeltaType AddOrChangeUser (5) SerialNumber: 0 a Rid: 0x3ea
+	Order: 13 DeltaType AddOrChangeUser (5) SerialNumber: 0 b 
+	      Rid: 0x3ea PasswordChanged
+	<SNIP>
+	Order: 183 DeltaType AddOrChangeUser (5) SerialNumber: 0 93 Rid: 0x400
+	Order: 184 DeltaType AddOrChangeUser (5) SerialNumber: 0 94 
+	      Rid: 0x400 Immediately PasswordChanged
+	Order: 185 DeltaType DeleteUser (6) SerialNumber: 0 95 
+	      Rid: 0x400 Name: 'MACHINE$'
+	-----------------------------------------------
+	
+	Deltas of BUILTIN DATABASE 
+	
+	Order: 2 DeltaType AddOrChangeDomain (1) SerialNumber: 0 2
+	Order: 9 DeltaType ChangeAliasMembership (12) SerialNumber: 0 3 Rid: 0x220
+	Order: 10 DeltaType AddOrChangeAlias (9) SerialNumber: 0 4 Rid: 0x220
+	<SNIP>
+	Order: 174 DeltaType ChangeAliasMembership (12) SerialNumber: 0 14 Rid: 0x220
+	-----------------------------------------------
+	
+	Deltas of LSA DATABASE 
+	
+	Order: 3 DeltaType AddOrChangeLsaPolicy (13) SerialNumber: 0 1a 
+	      Name: 'Policy'
+	Order: 5 DeltaType AddOrChangeLsaPolicy (13) SerialNumber: 0 1b 
+	      Name: 'Policy'
+	Order: 6 DeltaType AddOrChangeLsaSecret (18) SerialNumber: 0 1c Immediately 
+	      Name: 'G$$I'
+	Order: 7 DeltaType AddOrChangeLsaSecret (18) SerialNumber: 0 1d Immediately
+	      Name: 'G$$I'
+	Order: 8 DeltaType AddOrChangeLsaTDomain (14) SerialNumber: 0 1e Rid: 0x2725376d
+	      Sid:  S-1-5-21-1855076321-3829873465-656750445
+	<SNIP>
+	S-1-5-21-1855076321-3829873465-656750445
+	Order: 150 DeltaType AddOrChangeLsaSecret (18) SerialNumber: 0 30
+	      Immediately Name: 'G$$I'
+	Order: 151 DeltaType AddOrChangeLsaSecret (18) SerialNumber: 0 31 
+	      Immediately Name: 'G$$I'
+	-----------------------------------------------
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kberrmsg kbnetwork 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400
+	Version           : :4.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

@@ -1,0 +1,58 @@
+---
+layout: page
+title: "Q153578: PGC Does Not Remove Some Icons from SMS Program Groups"
+permalink: kb/153/Q153578/
+---
+
+## Q153578: PGC Does Not Remove Some Icons from SMS Program Groups
+
+	Article: Q153578
+	Product(s): Microsoft Systems Management Server
+	Version(s): winnt:1.0,1.1
+	Operating System(s): 
+	Keyword(s): kbui kbPGC smspgc
+	Last Modified: 30-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server versions 1.0, 1.1 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	
+	In some situations, it is possible for Program Group Control (PGC) to create an
+	icon for a program group, then later not remove that icon when the program is
+	removed from the group through the SMS Administrator.
+	
+	Another problem can arise when a user adds a non-SMS icon to an SMS program
+	group. PGC will not remove that icon the next time it updates the program group.
+	
+	CAUSE
+	=====
+	
+	This problem can occur when both the NAD database and the registry no longer
+	contain a reference to the icon, yet the icon still exists in the program group.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in SMS versions 1.0 and 1.1. A fix
+	to this problem is in development, but has not been regression-tested and may be
+	destabilizing in production environments. Microsoft does not recommend
+	implementing this fix at this time. Contact Microsoft Product Support Services
+	for more information on the availability of this fix.
+	
+	
+	Additional query words: DDE Program Manager PROGMAN SHARED APP
+	
+	======================================================================
+	Keywords          : kbui kbPGC smspgc 
+	Technology        : kbSMSSearch kbSMS100 kbSMS110
+	Version           : winnt:1.0,1.1
+	Issue type        : kbbug
+	
+	=============================================================================
+	

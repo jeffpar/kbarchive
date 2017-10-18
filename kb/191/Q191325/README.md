@@ -1,0 +1,104 @@
+---
+layout: page
+title: "Q191325: FIX: Connection Designer Closes if Verify Connection Fails"
+permalink: kb/191/Q191325/
+---
+
+## Q191325: FIX: Connection Designer Closes if Verify Connection Fails
+
+	Article: Q191325
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:2.5,5.0,5.0a
+	Operating System(s): 
+	Keyword(s): kbMDAC250
+	Last Modified: 22-FEB-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a 
+	- Microsoft Data Access Components version 2.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you create or edit a connection in the Connection Designer and try to test
+	the connection with the Verify Connection button, the Connection Designer
+	closes.
+	
+	RESOLUTION
+	==========
+	
+	As a work around, you can save your connection within the Connection Designer
+	before clicking the Verify Connection button. You can accomplish this by
+	clicking the OK button in the Connection Designer, giving the connection a name
+	if you have not yet saved it, and then click the Modify button in the
+	Connections dialog box after selecting the connection from the list.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article. This has been corrected in Visual FoxPro 6.0.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Run the following code from a program (.prg) file:
+	
+	        CLOSE DATA ALL
+	        SET SAFETY OFF
+	        CREATE DATABASE testdb
+	        CREATE TABLE testtab (f1 c(10), f2 N(10))
+	        CLOSE DATABASE ALL
+	        SET SAFETY ON
+	        OPEN DATABASE testdb EXCLUSIVE
+	        MODI DATABASE testdb NOWAIT
+	        KEYBOARD '{shift+f10}{o}{alt+n}{alt+n}'
+	
+	2. In the ODBC Data Source Administrator, click the System DSN tab and then
+	  click the Add button.
+	
+	3. From the list in the Create New Data Source dialog box, select "Microsoft
+	  Visual FoxPro Driver" and then click the Finish button.
+	
+	4. In the ODBC Visual FoxPro Setup dialog box, enter a data source name, such as
+	  "Vfptest", without the quotes.
+	
+	5. Enter the path to the .dbc you created in the program in Step 1. This, in
+	  effect, will be the default directory when the program runs, and the file
+	  will be called Testdb.dbc.
+	
+	6. Click OK then click OK again.
+	
+	7. You will now be back in the Connection Designer. Select the data source you
+	  just created from the Data Source drop-down.
+	
+	8. Click the Verify Connection button.
+	
+	The Connection Designer closes. The connection fails because Testdb.dbc was
+	opened exclusively by the program. If the database opens shared, the connection
+	succeeds.
+	
+	REFERENCES
+	==========
+	
+	(c) Microsoft Corporation 1998, All Rights Reserved.
+	Contributions by Jim Saunders, Microsoft Corporation
+	
+	
+	Additional query words: kbVFp500abug kbVFp600fix kbODBC kbDesigner
+	
+	======================================================================
+	Keywords          : kbMDAC250 
+	Technology        : kbVFPsearch kbAudDeveloper kbMDACSearch kbMDAC250 kbVFP500 kbVFP500a
+	Version           : WINDOWS:2.5,5.0,5.0a
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

@@ -1,0 +1,90 @@
+---
+layout: page
+title: "Q122052: Logical Block Addressing (LBA) Defined"
+permalink: kb/122/Q122052/
+---
+
+## Q122052: Logical Block Addressing (LBA) Defined
+
+	Article: Q122052
+	Product(s): Microsoft Disk Operating System
+	Version(s): MS-DOS:6.0,6.2,6.21,6.22; WINDOWS:95
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 17-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft MS-DOS operating system versions 6.0, 6.2, 6.21, 6.22 
+	- Microsoft Windows 95 
+	-------------------------------------------------------------------------------
+	
+	
+	SUMMARY
+	=======
+	
+	Logical Block Addressing (LBA) is a method of accessing hard disk drives. This
+	allows IDE disks larger than 504 megabytes (1024 cylinders) in size to be fully
+	partitioned using the MS-DOS fdisk command. Prior to this technology, ROM BIOS
+	limitations prevented the fdisk command from using an entire hard disk that was
+	larger than 504 megabytes (MB) in size, except by using other controller ROM
+	routines that effectively translate the hard disk's native geometry.
+	
+	MORE INFORMATION
+	================
+	
+	LBA is a run-time function of the system BIOS. The BIOS uses LBA for the
+	following commands: read (with and without retries), read verify, read long,
+	write (with and without retries), write verify, write long, read multiple, write
+	multiple, read DMA, write DMA, seek, and format track.
+	
+	As with non-LBA systems, information about the hard disk's true geometry is
+	stored in the system CMOS. When reporting information about the hard disk to
+	MS-DOS, however, a system employing LBA essentially depicts a hard disk with
+	fewer than 1024 cylinders and the LBA BIOS performs a translation from the
+	MS-DOS track, head, and sector to logical block numbers used by the drive,
+	allowing the entire disk to be used without special drivers or third- party disk
+	utilities.
+	
+	The LBA standard specifies the following two types of drive parameter tables:
+	
+	- Automatic (recommended for Novell NetWare and Unix).
+	
+	- Translation (recommended for MS-DOS, Windows, OS/2 2.x, and Windows NT).
+	
+	The following sections provide information about the use of LBA with various BIOS
+	chip sets, including the specific versions of these BIOS chip sets that support
+	LBA.
+	
+	American Megatrends Inc.
+	------------------------
+	
+	American Megatrends, Inc. has confirmed that versions of its BIOS dated 4-25-94
+	and later are compatible with LBA. For more information, contact American
+	Megatrends.
+	
+	Phoenix
+	-------
+	
+	Micro Firmware, the sole provider of BIOS upgrades for Phoenix BIOS chip sets,
+	has confirmed that BIOS versions 4.03 and later are compatible with LBA.
+	However, various computer and system board manufacturers may be using specific
+	revisions of the version 4.03 BIOS that do not support LBA. In these cases, the
+	hardware manufacturer should be contacted for an appropriate BIOS upgrade. For
+	more information, contact Micro Firmware.
+	
+	
+	This article refers to products manufactured by vendors independent of Microsoft;
+	we make no warranty, implied or otherwise, regarding these products' performance
+	or reliability.
+	
+	Additional query words: ata eide translation gb gigabyte ami
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWin95search kbZNotKeyword3 kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600
+	Version           : MS-DOS:6.0,6.2,6.21,6.22; WINDOWS:95
+	
+	=============================================================================
+	

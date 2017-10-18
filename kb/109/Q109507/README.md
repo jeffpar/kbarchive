@@ -1,0 +1,419 @@
+---
+layout: page
+title: "Q109507: README.WRI from Windows for Workgroups 3.11 (Part 2 of 4)"
+permalink: kb/109/Q109507/
+---
+
+## Q109507: README.WRI from Windows for Workgroups 3.11 (Part 2 of 4)
+
+	Article: Q109507
+	Product(s): Microsoft Windows 3.x Retail Product
+	Version(s): WINDOWS:3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 24-SEP-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows for Workgroups version 3.11 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The following information was taken from the Microsoft Windows for Workgroups
+	version 3.11 README.WRI file.
+	
+	MORE INFORMATION
+	================
+	
+	6.0  Using SMARTDrive Version 5.0
+	
+	This section describes some solutions to problems that you might
+	encounter when using SMARTDrive version 5.0 (provided with Windows
+	for Workgroups) with specific applications or hardware.
+	
+	6.1  Accessing Floppy Disk Drives on Older COMPAQ DESKPROS
+	
+	On some COMPAQ DESKPRO 386/16 and 386/20 computers, you might
+	experience problems accessing floppy disk drives when SMARTDrive
+	version 5.0 is installed. To work around the problem, you can try one
+	of the following solutions:
+	
+	- Place the SMARTDrive buffer into low memory by adding the following
+	  option to the smartdrv command line in your AUTOEXEC.BAT file:
+	
+	     smartdrv /L
+	
+	- Disable the caching on floppy disk drives by adding the following
+	  options to the smartdrv command line in your AUTOEXEC.BAT file:
+	
+	     smartdrv a- b-
+	
+	For more information about these options, see "Managing Memory and
+	Performance" in your Windows or Windows for Workgroups user's guide.
+	
+	6.2  Using SMARTDrive with Double Buffering
+	
+	Most expanded-memory emulators attempt to optimize SMARTDrive by
+	configuring it to load into upper memory blocks (UMBs). This will
+	cause problems if you are running Windows for Workgroups with double
+	buffering. If you need to use double buffering with SMARTDrive, make
+	sure that SMARTDrive is configured to load into low memory. The
+	SMARTDrive command line in your CONFIG.SYS file should look like
+	this:
+	
+	  device=smartdrv.exe  /double_buffer
+	
+	You do not need to change the references to SMARTDrive in your
+	AUTOEXEC.BAT file.
+	
+	If you're using a SCSI device, some vendors provide a driver (such as
+	ASPI4DOS) that supplies double-buffering already. You should not use
+	SMARTDrive double-buffering in this case. Check your SCSI device
+	documentation, or contact your SCSI device vendor to determine
+	whether your driver has its own double-buffering. If it does, use the
+	following command line:
+	
+	  device=smartdrv.exe  /double_buffer+
+	
+	This command line should also be used if your system hangs when
+	starting Windows, or if you are using a SCSI drive with a UNIX
+	partition.
+	
+	For more information about using double buffering with SMARTDrive,
+	see "Managing Memory and Performance" in your Windows or Windows for
+	Workgroups user's guide.
+	
+	6.3  Using SMARTDrive with Norton Utilities Version 6.0 Disk Monitor
+	
+	Do not use the Disk Protect feature in Norton Utilities Version 6.0
+	Disk Monitor with SMARTDrive version 5.0. If you try to write to the
+	protected drive, you will encounter an error and your system will
+	fail. If you want to write to and cache a protected drive, add the
+	drive letter to the smartdrv command line in your AUTOEXEC.BAT file.
+	For example, if drive D is a protected drive, you would add the
+	following:
+	
+	  smartdrv d
+	
+	Or you can use the Norton cache program instead of SMARTDrive when
+	you are using Disk Monitor.
+	
+	6.4 Using SMARTDrive with SuperStor Disk-Compression Utility
+	
+	- Do not use the Create Mountable Drive, Mount, and Dismount features
+	  of SuperStor after SMARTDrive is loaded. You must configure your
+	  SuperStor partitions before loading SMARTDrive. Windows for
+	  Workgroups Setup places the smartdrv command line first in your
+	  AUTOEXEC.BAT file. If your AUTOEXEC.BAT file includes "mount"
+	  configuration commands, make sure that the smartdrv command line
+	  follows the SuperStor configuration command lines.
+	
+	- Also, you will receive read-write errors if you use SMARTDrive to
+	  cache a SuperStor compressed drive. To prevent SMARTDrive from
+	  caching the compressed drive, you must include the drive letter-
+	  option on the smartdrv command line.
+	
+	  For example, if drive C is the uncompressed drive, and drives E and F
+	  are the compressed SuperStor drives, you would include the following
+	  command line in your AUTOEXEC.BAT file:
+	
+	     smartdrv e- f-
+	
+	6.5  Using SMARTDrive with Copy-Protected Games and Applications
+	
+	When using SMARTDrive, you may encounter problems starting a
+	copy-protected application that requires you to place the master disk
+	in the floppy disk drive. To solve this problem, you need to disable
+	caching on the floppy disk drive by using the drive letter- option
+	when you load SMARTDrive. For example, if you load SMARTDrive from
+	your AUTOEXEC.BAT file and you are using drive A, you need to include
+	the following command line in your AUTOEXEC.BAT file:
+	
+	  smartdrv a-
+	
+	7.0  Using Multimedia Extensions Version 1.0 with Windows for Workgroups
+	
+	This section covers information that is specific to using the
+	Multimedia Extensions version 1.0 with Windows for Workgroups. It
+	also covers additional tasks you need to perform to configure your
+	system properly for use with the Multimedia Extensions.
+	
+	7.1  Upgrading to Windows for Workgroups
+	
+	To use the Multimedia Extensions with Windows for Workgroups, first
+	set up Windows with Multimedia  Extensions version 1.0. Then upgrade
+	to Windows for Workgroups by installing it into the same directory.
+	If you set up Windows for Workgroups before setting up Multimedia
+	Extensions, not all the files will be properly installed.
+	
+	7.2  Configuring MIDI Setups
+	
+	When you set up Windows for Workgroups, Setup does not overwrite an
+	existing Multimedia Extensions MIDI-setup file MIDIMAP.CFG. If the
+	port settings in your original setups refer to the Ad Lib or Sound
+	Blaster ports and you are using different drivers, then you need to
+	change the port settings to match the output ports used by your sound
+	device. To do this, use the MIDI Mapper option in Control Panel.
+	
+	For more information about using MIDI Mapper to modify MIDI setups,
+	see "Customizing Windows" or "Customizing Windows for Workgroups" in
+	your Windows or Windows for Workgroups user's guide.
+	
+	7.3  Configuring Your Display
+	
+	The Multimedia Extensions Display icon in Control Panel is not
+	available when you upgrade from Windows with Multimedia version 1.0
+	to Windows for Workgroups. If you need to change options for your
+	display, run Windows Setup from the Main group in Program Manager to
+	make these changes.
+	
+	7.4  Sample MIDI File
+	
+	The sample MIDI file CANYON.MID included with Windows for Workgroups,
+	which you can play with Windows Media Player, is provided by Passport
+	Designs, Inc.
+	
+	7.5  Using HyperGuide
+	
+	The information in HyperGuide refers to Windows version 3.0, not Windows
+	for Workgroups. If you need to use Windows documentation, see the Microsoft
+	Workgroup Add-on "User's Guide" that comes with Windows for Workgroups.
+	
+	7.6  Using Music Box
+	
+	Music Box is not fully compatible with Windows for Workgroups.
+	Although your compact discs will play correctly, you will encounter
+	problems when using the Save Info button in the Program dialog box to
+	save disc-title and track-title information. If you want to modify
+	this information, you must do so manually by editing the MUSICBOX.INI
+	file. To add a new disc to the file, you can determine the disc ID
+	number by viewing the information in the About dialog box.
+	
+	7.7  Using Alarm Clock
+	
+	The Alarm Clock in the Multimedia Extensions version 1.0 is not fully
+	compatible with Windows for Workgroups. If you are using the digital
+	display, the time may appear slanted or a system error may occur,
+	depending on the size of the Alarm Clock window.
+	
+	8.0  Running Specific MS-DOS-Based Applications
+	
+	This section provides information about running specific MS-DOS-based
+	applications with Windows for Workgroups.
+	
+	8.1  Creative Labs JukeBox
+	
+	If you are using a Sound Blaster sound card, do not set up or use the
+	JukeBox application included in your Sound Blaster package with
+	Windows for Workgroups. JukeBox interferes with the Windows for
+	Workgroups driver for the Ad Lib synthesizer and causes errors when
+	you try to install the drivers for the Sound Blaster card.
+	
+	8.2  Games or Timing-Sensitive Applications
+	
+	Some games or applications that rely on the computer's timer may
+	perform poorly in Windows for Workgroups. You can try increasing the
+	performance by turning off the TrapTimerPorts setting in the [386Enh]
+	section of the SYSTEM.INI file, as follows:
+	
+	TrapTimerPorts=OFF
+	
+	Note: The TrapTimerPorts setting is on by default. Turning it off may cause
+	errors or a loss of data when you transfer files by using a communications
+	application. It is recommended that you leave this setting turned on when
+	using a communications application.
+	
+	8.3  Third-Party Expanded-Memory Emulators with MS-DOS Version 5.0 and 6.0
+	
+	Many expanded-memory emulators will cause problems if you use them to
+	provide upper memory blocks (UMBs) for the MS-DOS version 5.0 or 6.0
+	loadhigh and devicehigh commands. If you want to use these MS-DOS
+	commands to load drivers or applications high, use the Windows
+	EMM386.EXE expanded-memory emulator to provide UMBs instead. If you
+	must use a third-party expanded-memory emulator, use the load high
+	feature provided with the emulator instead of using the MS-DOS
+	commands.
+	
+	8.4  PC Tools Applications
+	
+	If you run a PC Tools MS-DOS-based application in a window, the
+	display might be garbled, because PC Tools applications use a
+	graphics font that is not displayed correctly. (This problem does not
+	occur if you run the application in a full screen).
+	
+	To correct the problem, start your PC Tools MS-DOS-based applications
+	by using the /NF option. If these applications are included in a
+	Program Manager group, use the Properties command to add the /NF
+	option to the command line for each application. For more information
+	about changing application properties, see Help for Program Manager.
+	
+	You can also include the /NF option in the application's program
+	information file (PIF) by typing it in the Optional Parameters text
+	box in PIF Editor, or you can use the PC Tools PC Config program to
+	specify that PC Tools applications should use the Text Font to
+	display information. For more information about changing an
+	application's PIF, see your Windows or Windows for Workgroups user's
+	guide.
+	
+	8.5  WordPerfect Version 5.1
+	
+	When you run WordPerfect version 5.1 in a window, the Windows mouse
+	pointer and the WordPerfect mouse pointer do not appear in the same
+	place.
+	
+	To fix this problem, carry out the following procedure.
+	
+	1. In WordPerfect, press SHIFT+F1.
+	
+	2. Press M for Mouse and A for Acceleration Factor.
+	
+	3. Set the Acceleration Factor to 1.
+	
+	4. Press ENTER three times to return to your document.
+	
+	5. Enlarge the WordPerfect window to fill the entire screen.
+	
+	6. Move the Windows mouse pointer into the WordPerfect window, and
+	  then move it to the far-right edge of the window.
+	
+	7. Move the mouse pointer to the far-left edge of the window.
+	
+	8. Move the pointer back to the center of the window, and then move
+	it down to the bottom edge.
+	
+	9. Finally, move the pointer up to the upper-left corner of the window.
+	
+	The Windows mouse pointer and the WordPerfect mouse pointer should
+	now be in the same location.
+	
+	8.6   3270-Emulation Applications
+	
+	You may encounter problems using certain 3270-emulation applications with
+	Windows for Workgroups. If you are using one of these applications, it is
+	recommended that you purchase the Microsoft Windows for Workgroups Resource
+	Kit (Version 3.1). For information about ordering the resource kits, see
+	section 17 in this file.
+	
+	8.7  C/C++ Version 7.0
+	
+	If you are running Microsoft C/C++ Version 7.0 with Windows for
+	Workgroups and your system locks up when compiling a file, add the
+	following line to the [386Enh] section of your SYSTEM.INI file:
+	
+	MAXBPS=400
+	
+	This command increases the number of breakpoints the system uses.
+	
+	For more information about this setting, see the Microsoft Windows
+	for Workgroups Resource Kit (Version 3.1). For information about
+	ordering resource kits, see section 17 of this file.
+	
+	9.0  Running Communications Applications
+	
+	This section provides information on using communications
+	applications with Windows for Workgroups.
+	
+	9.1  General Guidelines
+	
+	The maximum bit rate possible when running your communications
+	program with Windows is determined by your CPU speed in addition to
+	your port and modem capabilities. RTS/CTS or hardware handshaking may
+	also be required.
+	
+	To communicate at 9600 bits per second (BPS) or faster, follow these
+	guidelines:
+	
+	- Use Windows-based communications applications when possible.
+	
+	- Use 16550AF-compatible serial ports and modems. To determine if
+	  your serial port is 16550AF-compatible, you can run the Microsoft
+	  Diagnostics program (MSD.EXE) included with Windows for Workgroups.
+	  To run MSD, quit Windows, and then type msd at the command prompt
+	  (not from an MS-DOS prompt within Windows). Then press ENTER.
+	
+	- Avoid closing MS-DOS-based applications during a background download.
+	
+	- Use a PIF file to run MS-DOS-based communications applications.
+	  Use the PIF Editor to select the "Background Execution" and "Lock
+	  Application Memory" check boxes.
+	
+	- When you are running an MS-DOS-based communications application in
+	  the background, reduce it to an icon rather than running it in a
+	  window.
+	
+	- SMARTDrive may cause download errors when it clears the
+	  write-behind cache. If this happens, disable the SMARTDrive
+	  write-behind cache during high-speed downloads. This can be done
+	  easily using the SmartMon utility included in the Microsoft Windows
+	  for Workgroups Resource Kit (Version 3.1), and in MS-DOS 6.0. For
+	  information about ordering resource kits, see section 17 of this
+	  file.
+	
+	9.2  Using an Intel CAS Modem with 32-Bit File Access
+	
+	You cannot use an Intel CAS modem with 32-bit file access. If you are
+	using an Intel CAS modem, from Control Panel, select the 386 Enhanced
+	icon, choose the Virtual Memory button, and then choose the Change
+	button. Make sure the Use 32-Bit File Access check box is not
+	checked, and select OK. If it was checked, you must exit and restart
+	Windows.
+	
+	10.0  Using Specific Display Adapters with Windows for Workgroups
+	
+	This section describes some problems you might encounter when you use
+	specific display adapters or drivers with Windows for Workgroups.
+	
+	10.1  Installing Display Adapters by Following the Manufacturer's
+	Instructions
+	
+	The installation procedures that are provided by display-adapter
+	manufacturers may require you to replace or modify the SETUP.INF file
+	in the Windows SYSTEM directory. This will cause problems in Windows
+	for Workgroups.
+	
+	If your third-party display-adapter installation replaces or modifies
+	the SETUP.INF file, use the following procedure instead.
+	
+	To install the display-adapter drivers:
+	
+	1. Rename the SETUP.INF file provided with your display-adapter
+	  package to OEMSETUP.INF, and place it on the disk or in the directory
+	  containing the third-party display-driver files.
+	
+	2. From the Main group, run Windows Setup.
+	
+	3. Choose Change System Settings from the Options menu.
+	
+	4. From the list of Display options, choose Other Display (Requires
+	  disk from OEM).
+	
+	5. Insert the disk that contains the OEMSETUP.INF file and the
+	  driver files for your display adapter. Or, if these files are located
+	  on your hard disk, type the path to the directory that contains the
+	  files, and then choose the OK button.
+	
+	6. Select the type of display adapter you want to use, and then
+	  choose the OK button.
+	
+	  Setup copies all necessary files from the driver disk and may request
+	  files from the Windows for Workgroups disks.
+	
+	7. Insert any additional disks that are requested, and then choose
+	  the OK button.
+	
+	If you accidentally overwrite the original SETUP.INF file, you can
+	copy it from Windows for Workgroups version 3.11 Disk 1 back into
+	your Windows SYSTEM directory.
+	
+	Additional query words: wfw wfwg 3.11
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+	Version           : WINDOWS:3.11
+	
+	=============================================================================
+	

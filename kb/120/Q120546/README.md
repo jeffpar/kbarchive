@@ -1,0 +1,126 @@
+---
+layout: page
+title: "Q120546: Artist: Saved Documents Are Black"
+permalink: kb/120/Q120546/
+---
+
+## Q120546: Artist: Saved Documents Are Black
+
+	Article: Q120546
+	Product(s): Microsoft Home Kids Products
+	Version(s): WINDOWS:1.0,1.1,1.1a
+	Operating System(s): 
+	Keyword(s): kbdisplay kbusage kbimukbfaq
+	Last Modified: 27-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Fine Artist for Windows, versions 1.0, 1.1, 1.1a 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you save a picture Fine Artist and then open it, the picture may be solid
+	black.
+	
+	CAUSE
+	=====
+	
+	This behavior can occur if the display color palette is set to High Color
+	(16-bit) or True Color (24-bit or 32-bit).
+	
+	NOTE: In Microsoft Windows 3.1x, a High Color driver may also be labeled as a
+	32,768 (32k) color or a 65536 (64k or 65k) color driver, and a True Color driver
+	may also be labeled as a 16.7 million color driver.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, change the display color palette to 256 colors. To do so,
+	use the appropriate method for your version of Microsoft Windows.
+	
+	Windows 95/98
+	-------------
+	
+	To change the display color palette to 256 colors in Microsoft Windows 98, follow
+	these steps:
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click Display.
+	
+	3. In the Colors box on the Settings tab, click 256 Colors.
+	
+	4. Click OK.
+	
+	5. When you are prompted to restart the computer, click Yes.
+	
+	Windows 95
+	----------
+	
+	To change the display color palette to 256 colors in Microsoft Windows 95, follow
+	these steps:
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click Display.
+	
+	3. In the Color Palette box on the Settings tab, click 256 Colors.
+	
+	4. Click OK.
+	
+	5. When you are prompted to restart the computer, click Yes.
+	
+	Windows 3.1x
+	------------
+	
+	To change the display color palette to 256 colors in Windows 3.1x, follow these
+	steps:
+	
+	1. Make a copy of the SYSTEM.INI file. This file is located in the Windows
+	  folder. To do so, follow these steps:
+	  a. In the Main group in Program Manager, double-click MS-DOS Prompt.
+	
+	  b. At the MS-DOS prompt, type "copy system.ini system.mts" (without the
+	     quotation marks), and then press ENTER.
+	
+	  c. At the MS-DOS prompt, type "exit" (without the quotation marks), and then
+	     press ENTER.
+	
+	2. In the Main group in Program Manager, double-click Windows Setup.
+	
+	3. On the Display line, note the current video driver.
+	
+	4. On the Options menu, click Change System Settings.
+	
+	5. In the list of video drivers, click the 256 color version of the driver you
+	  noted in step 3, and then click OK.
+	
+	6. Follow the directions on the screen to install the new video driver.
+	
+	7. When you are prompted to restart Windows, do so.
+	
+	For additional information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q127913 Artist: Saved Documents Are Black with ATI Mach 64
+	
+	MORE INFORMATION
+	================
+	
+	To restore a picture that appears on your monitor in solid black, use the Vacuum
+	too in Fine Artist to remove the black color.
+	
+	
+	Additional query words: 1.00 1.10 1.10a win mskids white background kids mczee millions 16M 16 million maggie save
+	
+	======================================================================
+	Keywords          : kbdisplay kbusage kbimu kbfaq
+	Technology        : kbHomeProdSearch kbZNotKeyword2 kbFineArtist100 kbFineArtist110 kbFineArtist110a
+	Version           : WINDOWS:1.0,1.1,1.1a
+	Issue type        : kbprb
+	
+	=============================================================================
+	

@@ -1,0 +1,151 @@
+---
+layout: page
+title: "Q142213: WD97: How to Create an Automated Form with Fill-in Fields"
+permalink: kb/142/Q142213/
+---
+
+## Q142213: WD97: How to Create an Automated Form with Fill-in Fields
+
+	Article: Q142213
+	Product(s): Word 97 for Windows
+	Version(s): WINDOWS:97
+	Operating System(s): 
+	Keyword(s): kbdta kbfield word97kbfaq
+	Last Modified: 14-NOV-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	
+	SUMMARY
+	=======
+	
+	This article describes how to create a simple form that automatically prompts a
+	user to fill in information.
+	
+	MORE INFORMATION
+	================
+	
+	Follow these steps to create a template with automatic fill-in fields:
+	
+	1. On the File menu, click New.
+	
+	2. Select Blank Document.
+	
+	3. Under Create New, select Template. Click OK.
+	
+	4. Create the Fill-in Fields.
+	
+	  There are two methods you can use to create fill-in fields: menus and
+	  keystrokes. Select the method best suited for you.
+	
+	  Method 1: Creating a Field Using the Menus:
+	
+	  a. Position the insertion point where you want to insert the text field.
+	
+	  b. On the Insert menu, click Field.
+	
+	  c. In the Categories list, select Mail Merge.
+	
+	  d. In the Field Names list, select Fill-in.
+	
+	  e. The FILLIN field is displayed in the Field Codes text box below the
+	     Categories list. Click inside of the text box to the right of the word
+	     FILLIN and type quotation marks around the prompt you want to display. For
+	     example, use the following syntax to display a prompt asking the user to
+	     enter their name:
+	
+	  FILLIN "Please enter your first and last name."
+	
+	  f. Click OK. You will see a sample of the prompt. Click OK to return to your
+	     document.
+	
+	     NOTE: To view the field code you just inserted, press ALT+F9.
+	
+	  g. Repeat steps a-f for every place in the document where you want a fill-in
+	     field.
+	
+	Method 2: Creating a Field Using Keystrokes.
+	
+	  a. Position the insertion point where you want to insert the field.
+	
+	  b. Press CTRL+F9. Field braces, { }, appear in the document.
+	
+	  c. Position the insertion point inside the field braces.
+	
+	  d. Type the following, where <prompt> is what Word asks the user to
+	     type:
+	
+	  FILLIN "<prompt>"
+	
+	     NOTE: If you press F9 while the insertion point is still on the field, you
+	     can see a sample of the prompt that will be displayed. This step is not
+	     necessary to create the fill-in.
+	
+	5. On the File menu, click Save As.
+	
+	6. Name the template appropriately.
+	
+	Using the Template
+	------------------
+	
+	To create new documents based on the new template, follow these steps.
+	
+	1. On the File menu, click New.
+	
+	2. Click to select your template.
+	
+	3. Click OK.
+	
+	Word creates a new document, automatically searches for all fill-in fields in the
+	document and begins to prompt the user for input.
+	
+	Additional Information
+	----------------------
+	
+	For additional information about creating online forms with form fields, please
+	see the following article in the Microsoft Knowledge Base:
+	
+	  Q141990 WD97: How to Create an Online Form Using Form Fields
+	
+	You can also use SET and ASK fields in conjunction with fill-in fields.
+	
+	REFERENCES
+	==========
+	
+	For more information about SET fields, click Contents And Index on the Help
+	menu, click the Index tab in Word Help, type the following text
+	
+	  SET (bookmark) field
+	
+	and then double-click the selected text to go to the "SET field" topic. If you
+	are unable to find the information you need, ask the Office Assistant.
+	
+	For more information about ASK fields, click Contents And Index on the Help menu,
+	click the Index tab in Word Help, type the following text
+	
+	  ASK field
+	
+	and then click Show Topics. Select the "Examples of ASK and FILLIN fields" topic,
+	and click Go To. If you are unable to find the information you need, ask the
+	Office Assistant.
+	
+	NOTE: If the Assistant is hidden, click the Office Assistant button on the
+	Standard toolbar. If Word Help is not installed on your computer, please see the
+	following article in the Microsoft Knowledge Base:
+	
+	  Q120802 Office: How to Add/Remove a Single Office Program or Component
+	
+	Additional query words: fillin field fields forms auto keyboard merge automatic automatically vba
+	
+	======================================================================
+	Keywords          : kbdta kbfield word97 kbfaq
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : WINDOWS:97
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

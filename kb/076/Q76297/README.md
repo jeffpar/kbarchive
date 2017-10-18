@@ -1,0 +1,727 @@
+---
+layout: page
+title: "Q76297: LAN Manager/MS-DOS 5.0 Supplemental Disks README File"
+permalink: kb/076/Q76297/
+---
+
+## Q76297: LAN Manager/MS-DOS 5.0 Supplemental Disks README File
+
+	Article: Q76297
+	Product(s): Microsoft Disk Operating System
+	Version(s): MS-DOS:5.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 26-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft MS-DOS operating system version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The following is the README file from the Microsoft LAN Manager / MS-DOS 5.0
+	Supplemental Disks. The Supplemental Disks can be obtained by calling the
+	Microsoft Sales Information Center at (800) 426-9400.
+	
+	************************************************************
+	*                                                          *
+	*   The phone number in the README file shipped with the   *
+	*   LAN Manager MS-DOS 5.0 Supplemental Disks is wrong     *
+	*   and has been corrected in this copy of the README file *
+	*                                                          *
+	************************************************************
+	
+	NOTE: There is no paper documentation accompanying the Supplemental Disks.
+	
+	MORE INFORMATION
+	================
+	
+	  LAN Manager Supplemental Disks for MS-DOS 5.0
+	   ---------------------------------------------
+	
+	Note about this document's contents and intended audience:
+	
+	   This document contains instructions for updating network
+	   software for use with MS-DOS 5.0. While it attempts to
+	   give complete instructions (and hints where necessary), your
+	   networking software configuration may differ from the
+	   examples provided. The information contained herein
+	   supplements the instructions in the "Updating Networks for MS-DOS
+	   Version 5.0" chapter of the MS-DOS 5.0 "Getting Started" guide, so
+	   refer to that documentation in addition to following these
+	   instructions. The files on the Supplemental Disks supersede the
+	   files on the MS-DOS 5.0 disks.
+	
+	   Please see your network administrator or call Microsoft Product
+	   Support at (425) 637-7095 if you have any questions about how to
+	   update your networking software. Remember to back up files before
+	   copying over them, just in case.
+	
+	This document is long and detailed. You will probably want to print a
+	copy and work from the printout. Type the following at the command
+	prompt to print a copy of README.:
+	
+	   PRINT A:README.
+	
+	LAN Manager Supplemental Disks for MS-DOS 5.0
+	---------------------------------------------
+	The LAN Manager Supplemental Disks for MS-DOS 5.0 contain updated
+	network files for Microsoft LAN Manager and OEM versions of MS-Net and
+	LAN Manager networks. These files contain DOS 5.0-aware versions of
+	software, allowing you take advantage of MS-DOS 5.0, and in some cases,
+	make a significant amount of conventional memory available for
+	applications.  Note that some of these files may be identical to files
+	you have received through other means, but as of the date of production
+	(June 1991), they are the most up-to-date files available, and thus, you
+	are encouraged to replace your existing files with the files on these
+	disks.  (Of course, you should make backup copies of the existing files
+	before applying updates of any kind.)
+	
+	There are 4 steps to updating your computer with the files on these
+	disks:
+	1. Determine the networking product and version you are using
+	2. Make backup copies of the files you will replace
+	3. Copy the files off these disks, replacing existing files
+	4. Modify your configuration files to take advantage of the new software
+	
+	Each of these steps is explained in detail below.
+	
+	1. Determining the networking product and version you are using
+	
+	The files on these disks apply to several different versions of
+	networking software.  Use the following procedures to determine which
+	set of instructions apply to your installation:
+	
+	Microsoft LAN Manager (and 100-percent compatible):
+	---------------------------------------------------
+	If you are using one of the following networks, follow the instructions
+	for LAN Manager:
+	
+	.    Microsoft LAN Manager, version 2.0 or earlier
+	.    3Com 3+Open, version 1.1 through 2.0
+	.    Hewlett-Packard LAN Manager, version A.02.00 or earlier
+	.    NCR LAN Manager, all versions
+	.    Olivetti Olinet-LM, version 2.0 or earlier
+	.    Ungermann-Bass Net/One LM, version 1.1 through 2.0
+	
+	The updating procedure differs depending on which version of the network
+	you are using.  Follow the instructions in the appropriate section.  If
+	you are not sure which version you have, see the following section.
+	
+	Determining which version of LAN Manager you are using
+	------------------------------------------------------
+	To determine the version you are using, type the following at the
+	command prompt:
+	
+	   net
+	
+	If you see a full-screen user-interface, you are using an Enhanced
+	version.
+	
+	If you receive an error message when you type the command, you have a
+	Basic version (or an MS-Net version, so go on to the next section;
+	check for a subdirectory named BASIC in your C:\LANMAN.DOS directory.)
+	To find out whether you have Basic version 2.0 or Basic version 1.x, check
+	the creation dates of the files in your LAN Manager program directory
+	(typically C:\LANMAN.DOS\BASIC).  If the files are dated before June
+	1990, you have version 1.x.  Files dated after June 1990 are typically
+	version 2.0.
+	
+	Microsoft MS-Net (and 100-percent compatible):
+	----------------------------------------------
+	If you are using one of the following networks, follow the instructions
+	for MS-Net:
+	
+	.    Microsoft MS-Net, all versions
+	.    Hewlett-Packard Office Works, all versions
+	.    NCR PC LAN, all versions
+	.    Olivetti Olinet-LAN, version 1.23 or earlier
+	.    Ungermann-Bass Net/One PC, version 2.0 through 2.1
+	
+	Other networks:
+	---------------
+	IBM PC LAN, IBM DOS LAN Requestor, DEC PATHWORKS and PCSA, and 3Com
+	3+Share networks require special procedures to update the networking
+	software for DOS 5.0.  See the "Updating Networks" chapter in your
+	MS-DOS 5.0 "Getting Started" documentation, or contact your networking
+	vendor for more information.
+	
+	2. Making backup copies of the files you will replace
+	
+	Now that you have determined the type and version of your network, you
+	should make backup copies of the files that you will replace.  Do this
+	by copying the files listed below to another diskette or create a
+	directory on your hard disk and copy the files there.  To create a
+	directory on your hard disk, type the following at the command prompt:
+	
+	   MKDIR C:\OLDNET
+	
+	This creates a directory named OLDNET on your hard disk.
+	
+	To copy files, type a command like the following, replacing
+	C:\LANMAN.DOS\NETPROG\NETWKSTA.EXE with the file you want to copy, and
+	A: with the destination (A: for a floppy in drive A:, C:\OLDNET if you
+	created a directory on your hard disk).
+	
+	   COPY C:\LANMAN.DOS\NETPROG\NETWKSTA.EXE A:
+	
+	If you are unsure of where to find your networking program's files, the
+	following table should give some hints.  Otherwise, look in your
+	CONFIG.SYS DEVICE= statement, AUTOEXEC.BAT PATH= statement, or for the
+	AUTOEXEC.BAT command that loads your network software.
+	
+	Network            Directory
+	-------            ---------
+	LAN Manager         C:\LANMAN.DOS, C:\3OPEN
+	MS-Net              C:\MSNET, C:\UBNET
+	
+	These are the files you should backup:
+	
+	LAN Manager 2.0 Enhanced
+	------------------------
+	C:\LANMAN.DOS\NETPROG\NETWKSTA.EXE
+	C:\LANMAN.DOS\NETPROG\NET.EXE
+	C:\LANMAN.DOS\NETPROG\NET.MSG
+	C:\LANMAN.DOS\DRIVERS\PROTMAN\NETBIND.EXE
+	C:\LANMAN.DOS\SERVICES\ENCRYPT.EXE
+	C:\LANMAN.DOS\SERVICES\MSRV.EXE
+	C:\LANMAN.DOS\SERVICES\NETPOPUP.EXE
+	C:\LANMAN.DOS\DRIVERS\PROTOCOL\NETBEUI\NETBEUI.DOS
+	
+	LAN Manager 2.0 Basic
+	---------------------
+	C:\LANMAN.DOS\BASIC\NET.EXE
+	C:\LANMAN.DOS\BASIC\REDIR.EXE
+	C:\LANMAN.DOS\DRIVERS\PROTOCOL\NETBEUI\NETBEUI.DOS
+	
+	LAN Manager 1.x Enhanced
+	------------------------
+	C:\LANMAN.DOS\NETPROG\NETWKSTA.EXE
+	
+	LAN Manager 1.x Basic
+	---------------------
+	C:\LANMAN.DOS\BASIC\NET.EXE
+	C:\LANMAN.DOS\BASIC\REDIR.EXE
+	
+	MS-Net
+	------
+	C:\MSNET\NET.EXE
+	C:\MSNET\REDIR.EXE
+	C:\MSNET\SETNAME.EXE
+	
+	3Com 3+Share (partial NetBIOS configuration)
+	--------------------------------------------
+	C:\3PLUS\MSREDIR.EXE
+	
+	3. Copying the files off the LAN Manager Supplemental disks, replacing
+	  existing files
+	
+	You are now ready to update your networking software with the files on
+	these disks.  Check your backup copies first, just to be sure.  Type the
+	following command at the command prompt (assuming you used a diskette in
+	drive A: to hold your backup copies):
+	
+	   DIR A:
+	
+	Compare the output to the list of files above.  If you used a diskette,
+	remove it and keep it in a safe place.
+	
+	Next, copy the files off the LAN Manager Supplemental disks onto your
+	hard disk, replacing the old copies.  The lists below indicate the
+	directory and destination directory of the files.  For example,
+	A:\LM\NET.EXE should be copied to C:\LANMAN.DOS\NETPROG\NET.EXE using
+	the following command:
+	
+	   COPY A:\LM\NET.EXE C:\LANMAN.DOS\NETPROG\NET.EXE
+	
+	LAN Manager 2.0 Enhanced
+	------------------------
+	A:\LM\NET.EXE       -> C:\LANMAN.DOS\NETPROG\NET.EXE
+	A:\LM\NET.MSG       -> C:\LANMAN.DOS\NETPROG\NET.MSG
+	A:\LM\NETBIND.EXE   -> C:\LANMAN.DOS\DRIVERS\PROTMAN\NETBIND.EXE
+	A:\LM\ENCRYPT.EXE   -> C:\LANMAN.DOS\SERVICES\ENCRYPT.EXE
+	A:\LM\MSRV.EXE      -> C:\LANMAN.DOS\SERVICES\MSRV.EXE
+	A:\LM\NETPOPUP.EXE  -> C:\LANMAN.DOS\SERVICES\NETPOPUP.EXE
+	A:\LM\NETWKSTA.EXE  -> C:\LANMAN.DOS\NETPROG\NETWKSTA.EXE
+	A:\LM\NETBEUI.DOS   ->
+	            C:\LANMAN.DOS\DRIVERS\PROTOCOL\NETBEUI\NETBEUI.DOS
+	
+	LAN Manager 2.0 Basic
+	---------------------
+	A:\LM.20B\NET.EXE      -> C:\LANMAN.DOS\BASIC\NET.EXE
+	A:\LM.20B\REDIR.EXE    -> C:\LANMAN.DOS\BASIC\REDIR.EXE
+	A:\LM\NETBEUI.DOS  ->
+	            C:\LANMAN.DOS\DRIVERS\PROTOCOL\NETBEUI\NETBEUI.DOS
+	
+	LAN Manager 1.x Enhanced
+	------------------------
+	A:\LM.1XE\NETWKSTA.EXE -> C:\LANMAN.DOS\NETPROG\NETWKSTA.EXE
+	
+	LAN Manager 1.x Basic
+	---------------------
+	A:\LM.20B\NET.EXE      -> C:\LANMAN.DOS\BASIC\NET.EXE
+	A:\LM.1XB\REDIR.EXE    -> C:\LANMAN.DOS\BASIC\REDIR.EXE
+	
+	MS-Net
+	------
+	A:\LM.20B\NET.EXE      -> C:\MSNET\NET.EXE
+	A:\LM.20B\REDIR.EXE    -> C:\MSNET\REDIR.EXE
+	A:\MSNET\SETNAME.EXE   -> C:\MSNET\SETNAME.EXE
+	
+	3Com 3+Share (partial NetBIOS configuration)
+	--------------------------------------------
+	A:\3PLUS\MSREDIR.EXE   -> C:\3PLUS\MSREDIR.EXE
+	
+	4. Modifying your configuration files to take advantage of the new
+	  software
+	
+	In most cases, you do not need to make any changes to your configuration
+	files.  (There are required changes in some cases; see below.)  However,
+	you may wish to tune your configuration using the directions below.  See
+	the "Optimizing Your System" and "Commands" chapters in your MS-DOS 5.0
+	documentation for more details on EMM386.EXE, HIMEM.SYS, the DEVICEHIGH=
+	statement, the LOADHIGH command, the MEM /C command, and the EDIT
+	editor.  The directions in this section assume a higher level of
+	technical knowledge than the directions in the previous sections.
+	
+	Note that some networking products include their own versions of
+	EMM386.EXE (sometimes EMM386.SYS) and HIMEM.SYS.  When using DOS 5.0,
+	you should use the DOS 5.0 versions of these programs.  Be sure your
+	CONFIG.SYS and AUTOEXEC.BAT refer to the correct versions (usually found
+	in the C:\DOS subdirectory).
+	
+	LAN Manager 2.0 Enhanced
+	------------------------
+	All pieces of your networking software (as enumerated below) may be
+	placed in upper memory, leaving a 0K conventional memory footprint.
+	Your hardware and software configuration may not offer sufficient upper
+	memory space to do this, however.  By modifying your configuration and
+	using programs supplied on the Supplemental Disks, you can control which
+	pieces of LAN Manager are loaded into UMBs.
+	
+	Each file is described below:
+	
+	NETWKSTA.EXE (required for DOS 5.0)
+	
+	   a DOS 5.0-aware, UMBable version of the network redirector.
+	   Controlled via the UMB parameter in LANMAN.INI.  For example, to
+	   prevent loading the redirector into UMBs, add the following
+	   command to the [workstation] section of LANMAN.INI
+	
+	       UMB=NO
+	
+	   By default, the redirector attempts to load into UMBs, then
+	   LIM, then HMA, depending on the settings of the UMB, LIM, and
+	   HIMEM parameters in the [workstation] section of LANMAN.INI.
+	
+	   Note: Do not use the LOADHIGH command (i.e., LOADHIGH NET START
+	   WORKSTATION) to load the workstation into UMBs.  This would cause
+	   the NET.EXE program to occupy UMB space, potentially preventing
+	   the workstation from loading there.  NETWKSTA.EXE handles loading
+	   into UMBs without using LOADHIGH.
+	
+	NET.EXE
+	
+	   a version of NET.EXE (the NET command) that supports the control
+	   of individual services being loaded into UMBs via the    [loadopts]
+	   section in LANMAN.INI.  See the ENCRYPT.EXE section below.
+	
+	NET.MSG
+	
+	   the messages that are displayed by NET.EXE
+	
+	NETBIND.EXE
+	
+	   a UMBable version of the Protocol Manager binding program.  This
+	   program is only memory-resident if you are using more than one
+	   transport protocol or network adapter.  Use the LOADHIGH
+	   command in AUTOEXEC.BAT to cause NETBIND to load into UMBs:
+	
+	       LOADHIGH C:\LANMAN.DOS\DRIVERS\PROTMAN\NETBIND
+	
+	   Note that transport protocols and network adapter drivers are
+	   typically loaded into UMBs either by use of the DEVICEHIGH=
+	   statement in CONFIG.SYS or by the LOADHIGH command in
+	   AUTOEXEC.BAT.
+	
+	ENCRYPT.EXE
+	MSRV.EXE
+	NETPOPUP.EXE
+	
+	   UMBable versions of the ENCRYPT, MESSENGER, and NETPOPUP
+	   services.  The ENCRYPT, MESSENGER, and NETPOPUP services and
+	   NETBIND.EXE supplied with LAN Manager 2.0 (prior to LAN Manager
+	   2.00C) do not support loading into UMBs, so the versions provided
+	   on the Supplemental Disks should be used if you wish to do this.
+	   These services automatically load into UMBs, but you can control
+	   this on a service-by-service basis.  For example, to prevent
+	   loading the MESSENGER into UMBs, create a    new [loadopts] section
+	   in LANMAN.INI and add MESSENGER=LOW to this section.  For example:
+	
+	       [loadopts]
+	         messenger=low
+	
+	   If you want a service to load into UMBs, use the UMB parameter,
+	   e.g., MESSENGER=UMB.  This is not necessary, though, as
+	   the MESSENGER, NETPOPUP, and ENCRYPT services attempt to load into
+	   UMBs by default.  NETPOPUP will use LIM memory, if necessary,
+	   but in general, services cannot be loaded into LIM or HMA.
+	
+	NETBEUI.DOS (required for DOS 5.0)
+	
+	   a DOS 5.0-aware, UMBable version of the NETBEUI transport
+	   protocol.  Use the DEVICEHIGH= statement in CONFIG.SYS to load
+	   NETBEUI into UMBs:
+	
+	   DEVICEHIGH=C:\LANMAN.DOS\DRIVERS\PROTOCOL\NETBEUI\NETBEUI.DOS
+	
+	Taking advantage of upper memory
+	
+	By using the EMM386 and MEM /C commands, you can see which drivers and
+	applications are loaded into conventional memory and UMBs, how much
+	space they need, and how much space is available in each area.  Note
+	that UMBs are allocated in largest-available first order, so you
+	typically want to load larger things into UMBs first (but always load
+	PROTMAN.DOS before transport protocols and net card drivers in
+	CONFIG.SYS).  Some experimentation with the various commands
+	(DEVICEHIGH, LOADHIGH, and UMB=NO in LANMAN.INI) and load order may be
+	necessary on machines with lower amounts of UMB space.  MEM /D is more
+	cryptic than MEM /C, but it gives more information and more clearly
+	shows how NETWKSTA may be broken up into 3 separate pieces to take
+	advantage of smaller UMB blocks, LIM, etc., depending on the hardware
+	and configuration.
+	
+	Example configuration
+	
+	Here are the CONFIG.SYS, AUTOEXEC.BAT, and LANMAN.INI from a machine
+	with 160K of UMB space, along with the output of MEM /C showing where
+	everything is loaded and how much space is used.  Note that NETPOPUP and
+	MESSENGER are not started and DOS is slightly modified in CONFIG.SYS,
+	giving a 0K conventional memory footprint for LAN Manager and over 610K
+	for apps.  You will have differing results based on hardware and how you
+	configure DOS and LAN Manager.
+	
+	CONFIG.SYS
+	
+	files=20
+	buffers=20
+	lastdrive=z
+	stacks=0,0
+	break=off
+	dos=high,umb
+	shell=c:\dos\command.com c:\dos /e:1024 /p
+	device=c:\dos\himem.sys
+	device=c:\dos\emm386.exe NOEMS
+	devicehigh=c:\lanman.dos\drivers\protman\protman.dos /i:c:\lanman.dos
+	devicehigh=c:\lanman.dos\drivers\ethernet\elnkii\elnkii.dos
+	devicehigh=c:\lanman.dos\drivers\protocol\netbeui\netbeui.dos
+	
+	AUTOEXEC.BAT
+	
+	set TMP=c:\tmp
+	set TEMP=%TMP%
+	set COMSPEC=c:\dos\command.com
+	set PATH=c:\dos;c:\lanman.dos\netprog
+	loadhigh doskey
+	c:\lanman.dos\netprog\drivers\protman\netbind
+	net start workstation
+	
+	LANMAN.INI
+	
+	[networks]
+	 netservices = chknet, minses
+	
+	[workstation]
+	 charcount = 16
+	 chartime = 250
+	 charwait = 128
+	 computername = cname
+	 domain = domain
+	 himem = no
+	 keepapis = yes
+	 keepconn = 600
+	 keepsearch = 600
+	 lanroot = c:\lanman.dos
+	 lim = no
+	 mailslots = yes
+	 maxcmds = 11
+	 numbigbuf = 0
+	 numcharbuf = 2
+	 numdgrambuf = 11
+	 nummailslots = 5
+	 numresources = 9
+	 numservers = 9
+	 numservices = 5
+	 numviewedservers = 50
+	 numworkbuf = 15
+	 othdomains =
+	 sizbigbuf = 4096
+	 sizcharbuf = 128
+	 sizworkbuf = 1024
+	 wrkheuristics = 111121001221000000000000000000000
+	 wrknets = 0
+	 wrkservices =
+	
+	
+	[messenger]
+	 nummsgnames   = 2
+	 sizmessbuf = 256
+	 logfile = messages.log
+	
+	[netshell]
+	 saveconnections = no
+	 autorestore = no
+	 username = user
+	
+	[services]
+	 chknet      = netprog\chknet.exe
+	 minses      = netprog\minses.exe
+	 workstation = netprog\netwksta.exe
+	 netwksta    = netprog\netwksta.exe
+	 messenger   = services\msrv.exe
+	 netpopup    = services\netpopup.exe
+	 encrypt     = services\encrypt.exe
+	
+	Output of MEM /C:
+	
+	Conventional Memory :
+	
+	 Name                Size in Decimal       Size in Hex
+	-------------      ---------------------   -------------
+	 MSDOS              13552      ( 13.2K)       34F0
+	 HIMEM               1184      (  1.2K)        4A0
+	 EMM386              9424      (  9.2K)       24D0
+	 COMMAND             3392      (  3.3K)        D40
+	 FREE                  64      (  0.1K)         40
+	 FREE              627552      (612.8K)      99360
+	
+	Total  FREE :       627616      (612.9K)
+	
+	Upper Memory :
+	
+	 Name                Size in Decimal       Size in Hex
+	-------------      ---------------------   -------------
+	 SYSTEM            163840      (160.0K)      28000
+	 PROTMAN               96      (  0.1K)         60
+	 ELNKII             13280      ( 13.0K)       33E0
+	 NETBEUI            35488      ( 34.7K)       8AA0
+	 DOSKEY              4128      (  4.0K)       1020
+	 MINSES              1760      (  1.7K)        6E0
+	 NETWKSTA           96544      ( 94.3K)      17920
+	 FREE                 848      (  0.8K)        350
+	 FREE                 864      (  0.8K)        360
+	 FREE               10656      ( 10.4K)       29A0
+	
+	Total  FREE :        12368      ( 12.1K)
+	
+	Total bytes available to programs (Conventional+Upper):  639984 (625.0K)
+	Largest executable program size :                        626864 (612.2K)
+	Largest available upper memory block :                    10656 ( 10.4K)
+	
+	  7340032 bytes total contiguous extended memory
+	        0 bytes available contiguous extended memory
+	  7285760 bytes available XMS memory
+	          MS-DOS resident in High Memory Area
+	
+	LAN Manager 2.0 Basic
+	---------------------
+	The network redirector, transport protocol, and network adaptor driver
+	may be placed in upper memory, leaving a 0K conventional memory
+	footprint.  Your hardware and software configuration may not offer
+	sufficient upper memory space to do this, however.  By modifying your
+	configuration and using programs supplied on the Supplemental Disks, you
+	can control which pieces of LAN Manager are loaded into UMBs.
+	
+	Each file is described below:
+	
+	REDIR.EXE  (required for DOS 5.0)
+	
+	   a DOS 5.0-aware, UMBable version of the network redirector.
+	   Controlled via the UMB parameter in LANMAN.INI.  For example, to
+	   prevent loading the redirector into UMBs, add the following
+	   command to LANMAN.INI immediately after the START RDR $1 line:
+	
+	       UMB=NO
+	
+	   By default, the redirector attempts to load into UMBs.
+	
+	   Note: Do not use the LOADHIGH command (i.e., LOADHIGH NET START
+	   WORKSTATION) to load the redirector into UMBs.  This would cause
+	   the NET.EXE program to occupy UMB space, potentially preventing
+	   the redirector from loading there.  NET.EXE handles loading
+	   REDIR.EXE into UMBs without using LOADHIGH.
+	
+	NET.EXE  (required for DOS 5.0)
+	
+	   a DOS 5.0-aware version of NET.EXE (the NET command) that supports
+	   loading the redirector into UMBs.
+	
+	NETBEUI.DOS (required for DOS 5.0)
+	
+	   a DOS 5.0-aware, UMBable version of the NETBEUI transport
+	   protocol.  Use the DEVICEHIGH= statement in CONFIG.SYS to load
+	   NETBEUI into UMBs:
+	
+	   DEVICEHIGH=C:\LANMAN.DOS\DRIVERS\PROTOCOL\NETBEUI\NETBEUI.DOS
+	
+	See the LAN Manager 2.0 Enhanced section above for more information
+	about taking advantage of upper memory.  Note that Basic workstations do
+	not have NETPOPUP and MESSENGER services.
+	
+	LAN Manager 1.x Enhanced
+	------------------------
+	The NETWKSTA.EXE file is described below:
+	
+	NETWKSTA.EXE (required for DOS 5.0)
+	
+	   a DOS 5.0-aware version of the network redirector.  The LAN
+	   Manager 1.x Enhanced redirector cannot be loaded into UMBs.
+	
+	See the LAN Manager 2.0 Enhanced section above for more information
+	about taking advantage of upper memory.  Do not attempt to load any LAN
+	Manager 1.x Enhanced pieces into UMBs, except for the network adapter
+	driver.  The redirector, transport protocol, and services do not support
+	loading into UMBs.
+	
+	LAN Manager 1.x Basic
+	---------------------
+	The network redirector and network adapter driver may be placed in upper
+	memory.  Your hardware and software configuration may not offer
+	sufficient upper memory space to do this, however.  By modifying your
+	configuration and using programs supplied on the Supplemental Disks, you
+	can control which pieces of LAN Manager are loaded into UMBs.
+	
+	Each file is described below:
+	
+	REDIR.EXE  (required for DOS 5.0)
+	
+	   a DOS 5.0-aware, UMBable version of the network redirector.
+	   Controlled via the UMB parameter in LANMAN.INI.  For example, to
+	   prevent loading the redirector into UMBs, add the following
+	   command to LANMAN.INI immediately after the START RDR $1 line:
+	
+	       UMB=NO
+	
+	   By default, the redirector attempts to load into UMBs.
+	
+	   Note: Do not use the LOADHIGH command (i.e., LOADHIGH NET START
+	   WORKSTATION) to load the redirector into UMBs.  This would cause
+	   the NET.EXE program to occupy UMB space, potentially preventing
+	   the redirector from loading there.  NET.EXE handles loading
+	   REDIR.EXE into UMBs without using LOADHIGH.
+	
+	NET.EXE  (required for DOS 5.0)
+	
+	   a DOS 5.0-aware version of NET.EXE (the NET command) that supports
+	   loading the redirector into UMBs.
+	
+	See the LAN Manager 2.0 Enhanced section above for more information
+	about taking advantage of upper memory.  The LAN Manager 1.x NETBEUI
+	transport protocol cannot be loaded into UMBs.
+	
+	MS-Net
+	------
+	The network redirector and network adapter driver may be placed in upper
+	memory.  Your hardware and software configuration may not offer
+	sufficient upper memory space to do this, however.  By modifying your
+	configuration and using programs supplied on the Supplemental Disks, you
+	can control which pieces of MS-Net are loaded into UMBs.
+	
+	In order to use the files described below, you must rename your
+	MSNET.INI file to LANMAN.INI.  (e.g., RENAME MSNET.INI LANMAN.INI)
+	
+	Each file is described below:
+	
+	REDIR.EXE  (required for DOS 5.0)
+	
+	   a DOS 5.0-aware, UMBable version of the network redirector.
+	   Controlled via the UMB parameter in LANMAN.INI.  For example, to
+	   prevent loading the redirector into UMBs, add the following
+	   command to LANMAN.INI immediately after the START RDR $1 line:
+	
+	       UMB=NO
+	
+	   By default, the redirector attempts to load into UMBs.
+	
+	   Note: Do not use the LOADHIGH command (i.e., LOADHIGH NET START
+	   WORKSTATION) to load the redirector into UMBs.  This would cause
+	   the NET.EXE program to occupy UMB space, potentially preventing
+	   the redirector from loading there.  NET.EXE handles loading
+	   REDIR.EXE into UMBs without using LOADHIGH.
+	
+	NET.EXE  (required for DOS 5.0)
+	
+	   a DOS 5.0-aware version of NET.EXE (the NET command) that supports
+	   loading the redirector into UMBs.
+	
+	SETNAME.EXE  (required for DOS 5.0)
+	
+	   a DOS 5.0-aware version of SETNAME.EXE (which sets your
+	   computer name into memory).
+	
+	   Review your LANMAN.INI file to ensure that redir appears
+	   before setname each time both commands appear in the same
+	   command set.  For example, suppose one of your commands in
+	   LANMAN.INI appears as follows:
+	
+	       start rdr $1
+	           chknet
+	           loadniu -r -d -m:d -i:5 exniuw.xfm stdlc
+	           xnsbios -m:d -i:5
+	           session
+	           setname $1
+	           redir /l:26 /s:9
+	           prtsc
+	
+	   You would reverse the order of setname and redir commands so the
+	   command set appears as follows:
+	
+	       start rdr $1
+	           chknet
+	           loadniu -r -d -m:d -i:5 exniuw.xfm stdlc
+	           xnsbios -m:d -i:5
+	           session
+	           redir /l:26 /s:9
+	           setname $1
+	           prtsc
+	
+	On certain configurations, PRINT.COM and SHARE.COM are copied to the
+	MSNET subdirectory.  These versions do not work in all cases with DOS
+	5.0.  Rename them (to PRINT.OLD and SHARE.OLD, for example), and copy
+	the PRINT.EXE and SHARE.EXE files from your DOS 5.0 subdirectory into
+	the MSNET directory.  Similarly, you should use the EMM386.EXE and
+	HIMEM.SYS from DOS 5.0, rather than the versions supplied with MS-Net.
+	
+	See the LAN Manager 2.0 Basic section above for more information
+	about taking advantage of upper memory.  MS-Net transport protocols
+	typically cannot be loaded into UMBs.
+	
+	3Com 3+Share partial NetBIOS configuration
+	------------------------------------------
+	3Com 3+Share networks provide the option to load with a partial
+	NetBIOS configuration (NB.COM).  To use this configuration with DOS 5.0,
+	you must use the redirector provided on the Supplemental Disks.
+	This file is described below:
+	
+	MSREDIR.EXE  (required for DOS 5.0)
+	
+	   A DOS 4.0-aware version of the partial NetBIOS redirector.  This
+	   redirector should not be loaded into UMBs.  Because this
+	   redirector is not DOS 5.0-aware, use the SETVER command to cause
+	   DOS to report version 4.0 to MSREDIR.EXE.
+	
+	If you are using the complete NetBIOS configuration, follow the
+	instructions for MS-Net, above.
+	
+	Additional query words: 5.00
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMSDOSSearch kbMSDOS500
+	Version           : MS-DOS:5.0
+	
+	=============================================================================
+	

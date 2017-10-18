@@ -1,0 +1,137 @@
+---
+layout: page
+title: "Q93260: WFWG: Cannot Connect to Local Postoffice"
+permalink: kb/093/Q93260/
+---
+
+## Q93260: WFWG: Cannot Connect to Local Postoffice
+
+	Article: Q93260
+	Product(s): Microsoft Windows 3.x Retail Product
+	Version(s): WINDOWS:3.1,3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 29-SEP-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows for Workgroups versions 3.1, 3.11 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If a Windows for Workgroups mail administrator sets up the Workgroup Postoffice
+	(WGPO) on another Workgroup user's machine, that other user cannot connect to
+	the postoffice, and receives one of the following error messages:
+	
+	  The selected network path cannot be found
+	
+	-or-
+	
+	  This operation is not supported on this machine
+	
+	For example, if the mail administrator, working at a machine named "Admin",
+	creates the WGPO on a machine called "Machine1," the user of Machine1 is unable
+	to connect to the WGPO.
+	
+	CAUSE
+	=====
+	
+	WFWG Mail defaults to uniform naming conventions (UNC) to specify the location
+	of the postoffice. UNC cannot be used to connect a user to a share on his/her
+	local machine. Browsing for the WGPO share on the local machine results in the
+	"not supported" error message. Manually typing in the UNC name of the share
+	(<machinename>\WGPO) results in the path not being found, as does typing
+	in the local path (F:\WGPO).
+	
+	WORKAROUND
+	==========
+	
+	Use one of the following workaround options to edit or reconstruct the user's
+	MSMAIL.INI file, allowing the user to logon to the postoffice on his/her local
+	machine.
+	
+	Option 1
+	--------
+	
+	1. Copy the MSMAIL.INI file from a machine that is already connected to the
+	  WGPO.
+	
+	2. Edit the MSMAIL.INI file for Machine1:
+	
+	  a. Change the "serverpath=" statement to reflect the local path.
+	
+	  b. Change the "login=" statement to reflect the Machine1 mailbox (as setup by
+	     the Mail Administrator).
+	
+	3. Copy the newly edited MSMAIL.INI file to the WINDOWS directory on Machine1.
+	
+	Note that you can use the Mail Administrator's MSMAIL.INI file as the source for
+	the MSMAIL.INI file for Machine1. If you use this file, be sure to remove all
+	references to the WGPOMGR.DLL file.
+	
+	Option 2
+	--------
+	
+	To create the Machine1 MSMAIL.INI file from scratch:
+	
+	1. Create a file in a text editor (such as note pad).
+	
+	2. Type the following:
+	
+	  [Microsoft Mail]
+	  WG=1
+	  LocalMMF=1
+	  NoServerOptions=1
+	  DemosEnabled=0
+	  NetBios=1
+	  ;the following line should reflect the local path to the WGPO
+	  ;subdirectory (e.g. ServerPath=F:\WGPO)
+	  ServerPath=<pathname>
+	  ;the following line should reflect the mailbox for the user of Machine1
+	  ;(as setup by Mail Administrator)
+	  Login=<mailboxname>
+	  OfflineMessages=C:\WINDOWS\MSMAIL.MMF
+	  MAPIHELP=C:\WINDOWS\MSMAIL.HLP
+	  Window=96 96 638 406 1 1 1 0
+	
+	  [Custom Commands]
+	  IMEX=3.0;File;;10
+	  ;Please note that the following set of lines should be typed as two
+	  ;lines -- one beginning EXF= and one beginning IMF=
+	  EXF=3.0;File;&Export Folder...;11;IMPEXP.DLL;0;;Exports folders to a
+	  backup file;MSMAIL.HLP;2860
+	  IMF=3.0;File;&Import Folder...;12;IMPEXP.DLL;1;;Imports folders from a
+	  backup file;MSMAIL.HLP;2861
+	
+	  [Custom Messages]
+	  ;Please note that the following set of lines should be typed as a
+	  ;total of 5 lines, each beginning IPM.Microsoft Schedule.
+	  IPM.Microsoft
+	  Schedule.MtgReq=3.0;;;;SchedMsg.DLL;;1111100000000000;;;;
+	  IPM.Microsoft
+	  Schedule.MtgRespP=3.0;;;;SchedMsg.DLL;;1100100000000000;;;;
+	  IPM.Microsoft
+	  Schedule.MtgRespN=3.0;;;;SchedMsg.DLL;;1100100000000000;;;;
+	  IPM.Microsoft
+	  Schedule.MtgRespA=3.0;;;;SchedMsg.DLL;;1100100000000000;;;;
+	  IPM.Microsoft
+	  Schedule.MtgCncl=3.0;;;;SchedMsg.DLL;;1100100000000000;;;;
+	
+	3. Save the file as MSMAIL.INI in the WINDOWS subdirectory of the postoffice
+	  machine.
+	
+	NOTE: For the MSMAIL.INI file to work correctly, this text should be typed
+	exactly as it appears above.
+	
+	Additional query words: 3.10 3.11 schedule
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbWFWSearch kbWFW310 kbWFW311
+	Version           : WINDOWS:3.1,3.11
+	
+	=============================================================================
+	

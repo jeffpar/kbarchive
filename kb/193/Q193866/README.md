@@ -1,0 +1,150 @@
+---
+layout: page
+title: "Q193866: HOWTO: Use the VB 6.0 DataEnvironment with Parameterized Queries"
+permalink: kb/193/Q193866/
+---
+
+## Q193866: HOWTO: Use the VB 6.0 DataEnvironment with Parameterized Queries
+
+	Article: Q193866
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 6.0
+	Operating System(s): 
+	Keyword(s): kbGrpDSVBDB
+	Last Modified: 01-MAR-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The Visual Basic 6.0 DataEnvironment simplifies the process of building
+	parameterized queries. However, using these queries with bound controls may not
+	behave the way you would expect. This article is designed to explain how these
+	queries interact with the bound controls and to help ensure that you can utilize
+	these queries in your application.
+	
+	NOTE: This article assumes that you are working with a SQL Server database. The
+	DataEnvironment makes a number of OLE DB API calls at design-time in order to
+	retrieve data about the parameters in your query. Not all OLE DB providers or
+	ODBC drivers return information about the name, data type and direction for the
+	query's parameters. As a result, using parameterized queries with the
+	DataEnvironment is not supported for all drivers and providers. This
+	functionality is supported for the SQL Server and Oracle OLE DB providers and
+	ODBC drivers that are included with Microsoft Visual Basic 6.0.
+	
+	MORE INFORMATION
+	================
+	
+	If you are using a parameterized query in the DataEnvironment with bound
+	controls, you may notice that the controls appear empty when you run the form,
+	and that running the query via code does not populate your controls. This
+	behavior is by design.
+	
+	When you display a form with a control bound to the DataEnvironment and you have
+	not yet run that query, the DataEnvironment will automatically run that query.
+	In the case of a parameterized query, the DataEnvironment may not have all of
+	the information necessary to run the query. The attempt to run the query fails
+	and no data is returned. Thus, the control does not contain data.
+	
+	If you then run the query via code, the DataEnvironment will retrieve the results
+	of the query. This data will not appear in the bound control until it is
+	re-bound.
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Create a Standard EXE project in Visual Basic. Form1 is created by default.
+	
+	2. Add a DataEnvironment to the project. Connection1 is created by default.
+	
+	3. Set Connection1 to use the SQLOLEDB provider to connect to the your server's
+	  Pubs database.
+	
+	4. Add a command to Connection1 based on the following query, and name the
+	  command GetAnAuthor:
+	
+	        SELECT * FROM Authors WHERE Au_ID = ?
+	   
+	
+	5. Right-click and drag the command onto Form1 and choose "Data Grid."
+	
+	6. Add a textbox to Form1 from the toolbox and name it txtParameter.
+	
+	7. Add a CommandButton to Form1 from the toolbox and name it cmdRunQuery. Set
+	  its Caption property to "Run Query."
+	
+	8. Add the following code to the cmdRunQuery_Click event:
+	
+	         With DataEnvironment1
+	             If .rsGetAnAuthor.State = adStateOpen Then
+	                 .rsGetAnAuthor.Close
+	             End If
+	             .GetAnAuthor txtParameter.Text
+	             If .rsGetAnAuthor.RecordCount > 0 Then
+	                 MsgBox "Found " & .rsGetAnAuthor.Fields("Au_LName").Value
+	             Else
+	                 MsgBox "No author found"
+	             End If
+	         End With
+	
+	  The If block closes the recordset if it was previously open before running the
+	  parameterized query.
+	
+	9. Run the project, and place an author ID in the textbox. "172-32-1176" and
+	  "213-46-8915" are the first two author ID values in the original table.
+	  (Viewing the contents of the table via the DataView window may be helpful.)
+	  Once you've entered an existing author ID in the textbox, click the command
+	  button. A dialog box is displayed to tell you whether the query returned an
+	  author. Note that even if the query did return an author, the record does not
+	  appear in the grid.
+	
+	10. Add the following line to the end of the cmdRunQuery_Click event:
+	
+	         Set DataGrid1.DataSource = DataEnvironment1
+	
+	11. Run the project again. Place a valid author ID in the textbox and click on
+	  the command button. If your query returned data, you will see that data in
+	  the grid once you close the dialog box.
+	
+	ADDITIONAL INFORMATION
+	----------------------
+	
+	There are other ways to use parameterized queries with the DataEnvironment"
+	
+	- Supply a value for the parameter at design-time. For example, in the sample
+	  above, you could return to the GetAnAuthor command in the DataEnvironment,
+	  click on the Parameters tab, and supply a value for the parameter in the
+	  textbox marked Value. If you run this project with a value for the parameter
+	  set at design-time, you'll see the results of that query using that parameter
+	  when the form loads because the bound control forced an initial execution of
+	  that query. If you re-run the command with a new value for the parameter, you
+	  will not see the new data in the bound controls until you re-bind them as
+	  shown above.
+	
+	- Make sure that you explicitly execute the query prior to displaying the
+	  controls bound to that query. For example, you can use one form to ask the
+	  user for the value of the parameter. Then you can execute the query and
+	  display a form that will show the results of the query. Keep in mind that if
+	  you want to show that same form with the results of multiple executions of
+	  the query, you will need to make sure the recordset object is closed prior to
+	  executing the query, and then re-bind the controls (as shown above).
+	
+	(c) Microsoft Corporation 1998. All Rights Reserved.
+	Contributions by David Sceppa, Microsoft Corporation
+	
+	Additional query words: kbDSupport kbdse DataEnvironment Parameterized Bound kbVBp600 kbDataBinding kbDataEnv kbDatabase kbVBp kbVS600
+	
+	======================================================================
+	Keywords          : kbGrpDSVBDB 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600
+	Version           : :6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

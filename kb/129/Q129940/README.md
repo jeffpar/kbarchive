@@ -1,0 +1,130 @@
+---
+layout: page
+title: "Q129940: PRB: Out of Stack Space Error Caused by Property Procedure"
+permalink: kb/129/Q129940/
+---
+
+## Q129940: PRB: Out of Stack Space Error Caused by Property Procedure
+
+	Article: Q129940
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Using a non-reserved Visual Basic keyword within a Property Procedure of the
+	same name creates a recursive call to that Property statement resulting in this
+	error:
+	
+	  Out of Stack Space Error.
+	
+	CAUSE
+	=====
+	
+	Visual Basic allows you to define Properties and Methods that have the same name
+	as non-reserved keywords because many keywords (such as Left) in previous
+	versions of Visual Basic are used frequently by OLE servers. If you take
+	advantage of this in your own Class, an "Out of Stack Space error" can occur in
+	a Property Get Procedure when both of the following conditions are met:
+	
+	- A call to the non-reserved keyword with the same name as the Property is
+	  located within a Property Get Procedure.
+	
+	- The Property Get Procedure returns a Variant or Object.
+	
+	RESOLUTION
+	==========
+	
+	Typically, if one of the following conditions is true, Visual Basic can
+	determine whether to call the Property Get procedure or the non-reserved
+	keyword:
+	
+	- The Property Get procedure doesn't return a Variant or Object.
+	
+	-or-
+	
+	- The call to the non-reserved keyword takes a different number of parameters
+	  then the Property Get procedure takes.
+	
+	For example, given the following Property Get Property procedure, the Visual
+	Basic Left function would be called instead of the Property Get procedure:
+	
+	     Property Get Left() as String
+	        Left = Left("Hello World",10)  ' Visual Basic Left function called
+	     End Property
+	
+	Because the Property Get Procedure expects 0 parameters and the Visual Basic
+	function expects 2, the Visual Basic Left function is called.
+	
+	If, however, the Property Get Procedure returns either a Variant or an Object,
+	the Property Get Procedure is called, regardless of the number of Parameters the
+	Property Procedure expects. This occurs because Objects, which are now supported
+	in Variants, can have a default property, which can take parameters themselves.
+	When you call a function that returns a Variant or Object, and you pass the
+	incorrect number of parameters, Visual Basic realizes that you intended to pass
+	the parameters to the default property of the Object, so it generates a call to
+	the default property with those parameters. In this case, the "Incorrect Number
+	of Parameters" message is not generated because it is not necessarily known how
+	many parameters are expected by the default property.
+	
+	STATUS
+	======
+	
+	This behavior is by design.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Start a new project in Visual Basic. Form1 is created by default.
+	
+	2. Add a Command Button (Command1) to Form1.
+	
+	3. Add the following code to the Command1_Click procedure:
+	
+	     Sub Command1_Click()
+	        Dim clsClass1 As New Class1
+	        MsgBox clsClass1.Left
+	     End Sub
+	
+	4. Insert a Class Module (Class1) by choosing Class Module from the Insert Menu
+	  (ALT, I, C).
+	
+	5. Add the following code to the Class1 module:
+	
+	     Property Get Left() ' This returns a Variant by default
+	        Const cTempStr = "Summer"
+	        Left = Left(cTempStr, 3)
+	     End Property
+	
+	6. Press the F5 key to run the program.
+	
+	7. Click the Command1 button. An 'Out of Stack Space' Error message appears at
+	  this point, where you might expect to see a Message Box with the phrase
+	  "Sum."
+	
+	Additional query words: 4.00 vb4win vb4all
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+	Issue type        : kbprb
+	
+	=============================================================================
+	

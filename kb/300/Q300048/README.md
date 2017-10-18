@@ -1,0 +1,88 @@
+---
+layout: page
+title: "Q300048: XCON: MTA Event ID 57 on Bridgehead Servers"
+permalink: kb/300/Q300048/
+---
+
+## Q300048: XCON: MTA Event ID 57 on Bridgehead Servers
+
+	Article: Q300048
+	Product(s): Microsoft Exchange
+	Version(s): 5.5
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 11-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.5 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+	
+	  Q256986 Description of the Microsoft Windows Registry
+	
+	SYMPTOMS
+	========
+	
+	You may see slow mail flow on message transfer agent (MTA) or connector
+	bridgehead servers. In addition, you may see the following event logged in the
+	Application event log:
+	
+	  Source: MSExchangeMTA
+	  Category: X.400 Service
+	  Event:57
+	  User: N/A
+	  Description:
+	  The limit on the number of associations allowed to and from entity
+	  /O=ORGANIZATION/OU=SITENAME/CN=CONFIGURATION/CN=SERVERS/CN=SERVERNAME/CN=MICROSOFT
+	  MTA has been reached. The limit is 9. [MTA MAIN BASE 1 43] (14)
+	
+	RESOLUTION
+	==========
+	
+	WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+	that may require you to reinstall your operating system. Microsoft cannot
+	guarantee that you can solve problems that result from using Registry Editor
+	incorrectly. Use Registry Editor at your own risk.
+	
+	To improve the performance on the bridgehead servers, change the following
+	entries in this registry key to a value of 8. To do this, follow these steps:
+	
+	1. Start Registry Editor (Regedt32.exe).
+	
+	2. Locate the "Dispatcher threads", "Kernel threads", "RTS threads", and
+	  "Transfer threads" values under the following key in the registry:
+	
+	  HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeMTA\Parameters
+	
+	  NOTE: The above registry key is one path; it has been wrapped for readability.
+	
+	3. On the Edit menu, click DWORD, type "8" (without the quotation marks), and
+	  then click OK.
+	
+	4. Quit Registry Editor.
+	
+	MORE INFORMATION
+	================
+	
+	The default value for Dispatcher threads and RTS threads is 2. The default value
+	for Kernel threads and Transfer threads is 3.
+	
+	For additional information, click the article number below to view the article in
+	the Microsoft Knowledge Base:
+	
+	  Q234280 XCON: Increasing MTA Ability to Pass Mail over Slow Connections
+	
+	
+	Additional query words: 290 ndr 9318 9322
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+	Version           : :5.5
+	Issue type        : kbprb
+	
+	=============================================================================
+	

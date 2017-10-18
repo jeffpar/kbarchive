@@ -1,0 +1,81 @@
+---
+layout: page
+title: "Q275468: XCON: Events 9318 and 9322 Are Logged During RPC Communication"
+permalink: kb/275/Q275468/
+---
+
+## Q275468: XCON: Events 9318 and 9322 Are Logged During RPC Communication
+
+	Article: Q275468
+	Product(s): Microsoft Exchange
+	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3
+	Operating System(s): 
+	Keyword(s): exc55 exc55sp1 exc55sp2 exc55sp3
+	Last Modified: 02-NOV-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 5.5, 5.5 SP1, 5.5 SP2, 5.5 SP3 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The Microsoft Exchange Server Message Transfer Agent (MTA) does not deliver
+	messages over a dynamic Remote Access Service (RAS) connector, an X.400
+	connector, or a site connector or during intra-site communication. When you set
+	the MTA diagnostic logging level to Maximum for Field Engineering and X.400
+	Service categories, the following events are reported in the application event
+	log (numbers in the descriptions may vary):
+	
+	  Event ID: 9322
+	  Source: MSExchangeMTA
+	  Description: An interface error has occurred. An MtaBindBack over RPC has
+	  failed. Locality Table (LTAB) index: %1, NT/MTA error code:14. Comms error
+	  %3, Bind error %4,Remote Server Name %5, Protocol String %6 [%7 %8 %9 %10].
+	
+	  Event ID: 9318
+	  Source: MSExchangeMTA
+	  Description: An RPC communications error occurred. Unable to bind over RPC.
+	  Locality Table (LTAB) index: %1, NT/MTA error code: 14. Comms error %3, Bind
+	  error %4...,
+	
+	When you attempt to troubleshoot using the RPC ping command, the following
+	message is logged:
+	
+	  -RpcServerUseProtSeqEp returned a status 0xE
+	
+	CAUSE
+	=====
+	
+	This issue can occur if your computer does not have enough available Random
+	Access Memory (RAM).
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, check the computer's available RAM with either
+	Performance Monitor or Task Manager, and then close programs to make more RAM
+	available. After you restart the computer, if the computer still does not have
+	enough RAM, you have to add more RAM to your computer.
+	
+	MORE INFORMATION
+	================
+	
+	To determine the meaning of the error message, type "Net Helpmsg 14" (without
+	the quotation marks) at a command prompt. (The hex value 0xE is equal to a
+	decimal value of 14.) The Windows NT error is translated as: "Not enough storage
+	is available to complete this operation." The word "storage" in this message
+	refers to RAM.
+	
+	Additional query words: "remote procedure call"
+	
+	======================================================================
+	Keywords          : exc55 exc55sp1 exc55sp2 exc55sp3 
+	Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2 kbExchange550SP1 kbExchange550SP2 kbExchange550SP3
+	Version           : :5.5,5.5 SP1,5.5 SP2,5.5 SP3
+	Issue type        : kbprb
+	
+	=============================================================================
+	

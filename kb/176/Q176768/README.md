@@ -1,0 +1,103 @@
+---
+layout: page
+title: "Q176768: SNA Server PU/LU Reactivation Fails After VTAM Z NET CANCEL"
+permalink: kb/176/Q176768/
+---
+
+## Q176768: SNA Server PU/LU Reactivation Fails After VTAM Z NET CANCEL
+
+	Article: Q176768
+	Product(s): Microsoft SNA Server
+	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2
+	Operating System(s): 
+	Keyword(s): kbnetwork
+	Last Modified: 13-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 3.0, 3.0 SP1, 3.0 SP2 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When Microsoft SNA Server is configured with one or more channel connections
+	over the Polaris Escon channel adapter, not all of the PUs and LUs reactivate if
+	VTAM is shut down quickly using the VTAM command:
+	
+	  z net, cancel
+	
+	If VTAM is shut down in an orderly manner, the PUs and LUs do reactivate
+	properly.
+	
+	This problem was observed when SNA Server was configured with 15 PUs and 250 LUs
+	each (3750 total LUs). Some LUs failed to reactivate when VTAM was restarted.
+	
+	CAUSE
+	=====
+	
+	There are two different problems contributing to the reactivation problems:
+	
+	- SNA Server is not efficiently processing a large number of DACTLU messages
+	  from the host, causing slow performance in responding to DACTLU requests.
+	  This may cause the host to experience channel timeout errors during LU
+	  deactivation. This problem was fixed in SNA Server 3.0 Service Pack 2 (SP2),
+	  though was not listed in the 3.0 SP2 fix list Help file.
+	
+	- The Polaris link service is not responding quickly to SNA Server Close(Link)
+	  requests, causing the host to experience channel errors when attempting to
+	  reactivate the PUs and LUs when the host was brought back up again.
+	
+	WORKAROUND
+	==========
+	
+	To work around this problem, do one of the following:
+	
+	- Stop VTAM using an orderly shutdown method, instead of using the "z net,
+	  cancel" option.
+	
+	  -OR-
+	
+	- Try disabling the channel PUs first
+	
+	  v net, id=xxxx,inact,f
+	
+	  before issuing the "z net, cancel ..." command.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the SNA Server version 3.0, 3.0
+	Service Pack 1 (SP1) and 3.0 SP2.
+	
+	This problem was corrected in the latest SNA Server version 3.0 U.S. Service
+	Pack. For information on obtaining this Service Pack, query on the following
+	word in the Microsoft Knowledge Base (without the spaces):
+	
+	  S E R V P A C K
+	
+	
+	MORE INFORMATION
+	================
+	
+	With this fix applied, SNA Server 3.0 was successfully tested with 15,000 LUs
+	(the maximum LU capacity supported by SNA Server 3.0) over a single Polaris
+	ESCON adapter (60 PUs, each with 250 LUs).
+	
+	The fix described in the following Microsoft Knowledge Base article should also
+	be applied when using SNA Server with thousands of 3270 or LUA LUs:
+	
+	  Q176020 SNA Server Starts Slowly When Configured with 15000 3270 LUs
+	
+	Additional query words: znet barr
+	
+	======================================================================
+	Keywords          : kbnetwork 
+	Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ300SP1 kbSNAServ300SP2
+	Version           : WINDOWS:3.0,3.0 SP1,3.0 SP2
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

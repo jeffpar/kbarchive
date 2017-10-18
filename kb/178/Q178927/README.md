@@ -1,0 +1,143 @@
+---
+layout: page
+title: "Q178927: XADM: How to Rehome Public Folders in Exchange"
+permalink: kb/178/Q178927/
+---
+
+## Q178927: XADM: How to Rehome Public Folders in Exchange
+
+	Article: Q178927
+	Product(s): Microsoft Exchange
+	Version(s): WINDOWS:4.0,5.0
+	Operating System(s): 
+	Keyword(s): kbusage
+	Last Modified: 22-MAR-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 4.0, 5.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes two methods for rehoming public folders to a desired
+	server: using the PFAdmin.exe utility version 1.1.1, and moving the public
+	folder to another server by using a .Pst file as an intermediate location.
+	
+	MORE INFORMATION
+	================
+	
+	Using PFADMIN 1.1.1
+	-------------------
+	
+	The PFADMIN utility 1.1.1 is located in the Pftools folder on the Microsoft
+	BackOffice Resource Kit (BORK) Part Two, at Exchange\Winnt\I386\Pftools\PFADMIN.
+	Installing the Exchange tools of the resource kit does not automatically install
+	the PFADMIN utility; you must copy the Pfadmin.exe and the Aclcls.dll files
+	(both located in the PFADMIN folder) to the drive where Exchange Server is
+	installed. The files can be placed at the root of the drive, in the Windows NT
+	directory, the System32 directory, or in the location of the Microsoft
+	BackOffice Resource Kit.
+	
+	Before running the utility, do the following:
+	
+	1. Make sure that you are logged on to Windows NT as an account with Service
+	  Account Administrator Permissions at the Organization, Site, and
+	  Configuration levels. Make sure this account has a profile created on the
+	  computer. Also, ensure that the Exchange Server computer on which the folder
+	  or folders are currently homed is running and the information store service
+	  is running.
+	
+	2. From a command prompt, type:
+	
+	  Pfadmin <name of your profile> <Enter>
+	
+	  You should now see:
+	
+	     PFAdmin  1.1.1
+	     Enter commands:
+	
+	3. At the > prompt type the following:
+	
+	  rehome,<folder name>,<site name>\<server name>,Yes
+	
+	  You should see the following message indicating that the operation was
+	  successful:
+	
+	     Replica list reset for folder: <folder name>
+	
+	4. If the process fails, the error messages will contain:
+	
+	  SetProps failed, error.
+	
+	  -or-
+	
+	  MAPISession:: Logon: MAPILogonEx Failed, error = 0x80070XXX
+	
+	5. At the > prompt, type quit <Enter> to exit the program.
+	
+	NOTE: In the above commands:
+	
+	  <Folder name>= the name of the folder that you want to rehome.
+	  <Site name>= the name of the site that you are moving the folder to.
+	  <Server name>= the name of server in the site that you are moving the
+	  folder to.
+	
+	There are no spaces in the syntax; commas are used. In the command to rehome the
+	folder, enter "YES" for the last argument if you want to include all sub-folders
+	and "NO" if you only want to move the specified folder.
+	
+	After you run the PFAdmin utility, the folder will continue to indicate that it
+	belongs to the same server. You must run the DS/IS Consistency Adjustment on the
+	server that you are homing the folder to. Before running the DS/IS adjustment,
+	verify that no directory replication connectors are broken. Running the DS/IS
+	adjustment with a directory replication connector disconnected can cause public
+	folders to be rehomed when the directory replication connector is rejoined.
+	
+	For additional information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q156705 Site Tear-Down Causes Public Folders to Be Re-homed
+	
+	For any additional help with the PFADMIN utility, type PFADMIN ? REHOME.
+	
+	A newer version of PFADMIN has been released; the version number is 1.1.2.
+	Although this version does not contain the Rehome option, it allows you to
+	rehome public folders with the SetReplicas option.
+	
+	Using the .Pst Method
+	---------------------
+	
+	Perform the following procedure on the server that is to become the new owner of
+	the folder:
+	
+	1. Create a personal folder for your administrator's mailbox on the client (if
+	  it does not already exist).
+	
+	2. Choose the public folder that you want to gain ownership of, and copy its
+	  contents into your personal folder.
+	
+	3. Remove the public folder from the public folder structure by deleting it.
+	  Deleting the folder removes all replicas of the folder from other servers.
+	
+	4. Allow replication to take place so this folder is deleted from all servers in
+	  the organization.
+	
+	5. Log on to a mailbox on the server where you wish to rehome the public folder.
+	
+	6. Create a new public folder.
+	
+	7. Copy the information from your .Pst to the new public folder.
+	
+	8. Assign the appropriate permissions.
+	
+	======================================================================
+	Keywords          : kbusage 
+	Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbZNotKeyword2
+	Version           : WINDOWS:4.0,5.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

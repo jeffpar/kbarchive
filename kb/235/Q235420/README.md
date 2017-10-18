@@ -1,0 +1,216 @@
+---
+layout: page
+title: "Q235420: FILE: VBRun60sp4.exe Installs Visual Basic 6 SP4 Run-Time Files"
+permalink: kb/235/Q235420/
+---
+
+## Q235420: FILE: VBRun60sp4.exe Installs Visual Basic 6 SP4 Run-Time Files
+
+	Article: Q235420
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 6.0
+	Operating System(s): 
+	Keyword(s): kbfile kbtophit kbAppSetup kbDeployment kbVBp600 kbVS600sp4
+	Last Modified: 25-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	VBRun60sp4.exe is a self-extracting executable file that installs the latest
+	versions of the Microsoft Visual Basic run-time files required by all
+	applications created with Visual Basic 6.0. The files include the fixes shipped
+	with Visual Studio 6.0 Service Pack 4.
+	
+	MORE INFORMATION
+	================
+	
+	The following file is available for download from the Microsoft Download
+	Center:
+	
+	  VBRun60sp4.exe
+	  (http://download.microsoft.com/download/vb60pro/Redist/sp4/win98/EN-US/VBRun60sp4.exe)
+	
+	Release Date: June 30, 2000
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. Once posted, the file is housed on secure
+	servers that prevent any unauthorized changes to the file.
+	
+	VBRun60sp4.exe installs the following core files, which ship with Visual Studio
+	6.0, Service Pack 4. These files are the base dependencies for any component or
+	application created in Visual Basic 6.0:
+	
+	+--------------------------------------------------------+
+	| FileName     | Version     | Size                      | 
+	+--------------------------------------------------------+
+	| Asycfilt.dll | 2.40.4275.1 | 145KB (147,728 bytes)     | 
+	+--------------------------------------------------------+
+	| comcat.dll   | 4.71.1460.1 | 21.7 KB (22,288 bytes)    | 
+	+--------------------------------------------------------+
+	| msvbvm60.dll | 6.00.8877   | 1.32 MB (1,388,544 bytes) | 
+	+--------------------------------------------------------+
+	| oleaut32.dll | 2.40.4275.1 | 584 KB (598,288 bytes)    | 
+	+--------------------------------------------------------+
+	| olepro32.dll | 5.0.4275.1  | 160 KB (164,112 bytes)    | 
+	+--------------------------------------------------------+
+	| stdole2.tlb  | 2.40.4275.1 | 17.5 KB (17,920 bytes)    | 
+	+--------------------------------------------------------+
+	
+	In addition, the following files are also installed by VBRun60sp4.exe. These are
+	supporting files for the VBRun60sp4.exe self-extracting file:
+	
+	+--------------------------------------------------------+
+	| File         | Version        | Size                   | 
+	+--------------------------------------------------------+
+	| ADVPack.dll  | 4.71.1015.0    | 73.2 KB (74,960 bytes) | 
+	+--------------------------------------------------------+
+	| W95Inf16.dll | 4.71.704.0     | 2.21KB (2,272 bytes)   | 
+	+--------------------------------------------------------+
+	| W95Inf32.dll | 4.71.0016.0    | 4.50KB (4,608 bytes)   | 
+	+--------------------------------------------------------+
+	| vbrun60.inf  | Not Applicable | 1.04 KB (1,069 bytes)  | 
+	+--------------------------------------------------------+
+	
+	For information about the command-line arguments available for VBRun60sp4.exe,
+	enter the the following at the command line:
+	
+	  
+	
+	  <USERINPUT>VBRun60sp4.exe /?</USERINPUT>
+	
+	NOTE: You may need to specify the complete path to the VBrun60sp4.exe file in the
+	command.
+	
+	For additional information about command line arguments for this file, click the
+	article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q189520 XCLN: Outlook Deployment Kit (ODK) Setup Command-Line Options
+	
+	Do I Need VBRun60sp4.exe File?
+	------------------------------
+	
+	The VBRun60sp4.exe file is not intended to replace the Package and Deployment
+	Wizard (PDW) for distributing Visual Basic applications. For example, if your
+	application includes components such as ActiveX controls or DLLs, you should use
+	the PDW or a third-party setup package for distribution. However, if your Visual
+	Basic application only depends upon the files included in the VBRun60sp4.exe
+	file, you can distribute your application by providing end users with the
+	executable (.exe) file and VBRun60sp4.exe.
+	
+	To determine whether your application requires additional files for distribution,
+	you can use the PDW to create a set of setup files as a test. When the PDW
+	creates a setup package, the PDW also creates a Setup.lst file. You can open the
+	Setup.lst file in any text editor (for example, Notepad). If the [Setup1 Files]
+	section of the resulting Setup.lst file only lists your .exe file, end users
+	should be able to run your application after running VBRun60sp4.exe to install
+	the core run-time files. However, if the [Setup1 Files] section contains
+	multiple files, you should consider using the PDW or a third-party setup package
+	for distribution instead.
+	
+	In addition to distributing simple executables, you can also use the
+	VBRun60sp4.exe file for the following:
+	
+	- To minimize the size of Internet downloads of Visual Basic applications
+	
+	  By running the Vbrun60sp4.exe file ahead of time, users can download your
+	  application from the Web faster.
+	
+	- As a troubleshooting step when an installation of Visual Basic or a Visual
+	  Basic application fails
+	
+	  If Setup fails with an error message that mentions one of the core files or if
+	  registration of a component fails during Setup, the core files on the target
+	  computer might be mismatched. If the versions of the files in the
+	  VBRun60sp4.exe file are newer than the versions on the target computer, you
+	  might resolve the problem by running the VBRun60sp4.exe file before you run
+	  Setup.
+	
+	For additional information about a specific example of a Setup problem that is
+	resolved by running VBRun60.exe, click the article number below to view the
+	article in the Microsoft Knowledge Base:
+	
+	  Q194754 SETUP.EXE File Linked to Missing Export OLEAUT32.DLL:185
+	
+	You can also obtain the VBRun60.exe file by extracting it from the VBRun60.cab
+	file available on the Visual Basic and Visual Studio CDs. The VBRun60.cab file
+	is located in the following folder on the Visual Basic 6.0 CD (Disk 1):
+	
+	  \common\tools\vb\cabinets
+	
+	On the Visual Studio 6.0 Professional CDs, the VBRun60.cab file is located in the
+	same relative path on Disk 2. On the Visual Studio 6.0 Enterprise CDs, it is
+	located on Disk 3.
+	
+	NOTE: The version of the VBRun60sp4.exe file included in this Knowledge Base
+	article differs from the one on the installation CD. The version included in
+	this article is the latest version that ships with Visual Studio 6.0 Service
+	Pack 4.
+	
+	You can use the Extract utility to extract the VBRun60.exe file from the cabinet
+	file, VBRun60.cab. The Extract.exe file is located in your Windows folder or on
+	your Windows 95, Windows 98, or Windows NT installation CD. From an MS-DOS
+	command prompt, you can run the following command to extract the file in the
+	cabinet file into the current directory:
+	
+	  Extract Vbrun60.cab
+	
+	For additional information about using the Extract utility, click the article
+	number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q129605 How to Extract Original Compressed Windows Files
+	
+	REFERENCES
+	==========
+	
+	For additional information, click the article numbers below to view the articles
+	in the Microsoft Knowledge Base:
+	
+	  Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+	
+	  Q180071 FILE: Msvbvm50.exe Installs Visual Basic 5.0 Run-Time Files
+	
+	For additional information about the runtime files without the Service pack
+	updated files, click the article number below to view the article in the
+	Microsoft Knowledge Base:
+	
+	  Q192461 Visual Basic 6.0 Sample Installs Run-time Files
+	
+	For additional information about documentation on command-line arguments, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q189520 XCLN: Outlook Deployment Kit (ODK) Setup Command-Line Options
+	
+	For additional information about a specific example of a Setup problem that is
+	resolved by running VBRun60.exe, click the article number below to view the
+	article in the Microsoft Knowledge Base:
+	
+	  Q194754 SETUP.EXE File Linked to Missing Export OLEAUT32.DLL:185
+	
+	For additional information about using the Extract utility, click the article
+	number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q129605 How to Extract Original Compressed Windows Files
+	
+	Additional query words: VBRun60sp4 Asycfilt comcat msvbvm60 oleaut32 olepro32 stdole2 ADVPack W95Inf16 W95Inf32 vbrun60 run-time run time runtime vb6
+	
+	======================================================================
+	Keywords          : kbfile kbtophit kbAppSetup kbDeployment kbVBp600 kbVS600sp4 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600
+	Version           : :6.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

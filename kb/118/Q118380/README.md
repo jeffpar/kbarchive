@@ -1,0 +1,75 @@
+---
+layout: page
+title: "Q118380: Windows NT 3.5 and Windows 95 on the Same Computer"
+permalink: kb/118/Q118380/
+---
+
+## Q118380: Windows NT 3.5 and Windows 95 on the Same Computer
+
+	Article: Q118380
+	Product(s): Microsoft Windows NT
+	Version(s): 3.5
+	Operating System(s): 
+	Keyword(s): kbinterop
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 3.5 
+	- Microsoft Windows NT Server version 3.5 
+	- Microsoft Windows 95 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Windows NT version 3.5 and Windows 95 can reside on the same computer, but they
+	will not work properly if they are installed into the same directory. If Windows
+	NT is installed over Windows 95, the Windows 95 installation will be unusable.
+	
+	Installing these operating systems in the same directory is not supported.
+	
+	MORE INFORMATION
+	================
+	
+	Windows NT version 3.5 installed into the same directory as Windows 95
+	----------------------------------------------------------------------
+	
+	Windows NT cannot be installed into the same directory as Windows 95. Doing so
+	will render the Windows 95 installation un-bootable. Windows NT will replace
+	some of the new Windows 95 .DLL files (version 4.x) in the \SYSTEM directory
+	with old Windows 3.x .DLL files which are needed for the WOW subsystem. Without
+	the newer .DLL files, Windows 95 will not boot.
+	
+	Windows 95 installed into the same directory as Windows NT version 3.5
+	----------------------------------------------------------------------
+	
+	Windows 95 detects the presence of a Windows NT boot sector and it will not
+	overwrite it, if you select MS-DOS from the Windows NT Boot menu, Windows 95
+	will then load. However, Windows 95 will make several changes to the directory
+	structure and the files in the \SYSTEM directory which will affect the operation
+	of Windows NT.
+	
+	Windows 95 rewrites the Windows 3.x default .DLL files (such as SHELL.DLL) in the
+	SYSTEM directory. This is by design so that Windows 95 can run both 16 and
+	32-bit Windows applications. However, Windows NT Windows on Windows (WOW)
+	subsystem relies on the original Win16 DLL's to run Win16 applications. If
+	Windows 95 is installed, some Win16 applications may not run under Windows NT,
+	such as some of Microsoft's Setup programs and WinBUG.
+	
+	Windows 95 moves all the screen fonts to a newly created \FONTS directory. Since
+	Windows NT uses the screen fonts normally present in the \SYSTEM directory, it
+	will be forced to use a default Courier-type font rather than the normal system
+	font. This default font is not proportioned correctly for Windows NT's dialog
+	boxes, and some text will be unreadable.
+	
+	Additional query words: prodnt
+	
+	======================================================================
+	Keywords          : kbinterop 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search kbWin95search kbZNotKeyword3
+	Version           : 3.5
+	
+	=============================================================================
+	

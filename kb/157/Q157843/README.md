@@ -1,0 +1,264 @@
+---
+layout: page
+title: "Q157843: WD97: Adding AutoText to the AutoText Menu"
+permalink: kb/157/Q157843/
+---
+
+## Q157843: WD97: Adding AutoText to the AutoText Menu
+
+	Article: Q157843
+	Product(s): Word 97 for Windows
+	Version(s): WINDOWS:97
+	Operating System(s): 
+	Keyword(s): kbualink97 kbdta kbfield word97
+	Last Modified: 14-NOV-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	
+	This article describes how to add AutoText submenus (groupings), how to add
+	AutoText entries to the AutoText drop-down lists, and how to use the
+	AutoTextList field for easy access to these AutoText entries.
+	
+	MORE INFORMATION
+	================
+	
+	Microsoft Word provides a set of predefined AutoText submenus (groupings). Each
+	of these submenus is defined by a style name. The following table lists the
+	predefined AutoText submenus and their drop-down lists.
+	
+	  AutoText submenu         AutoText drop-down menu
+	  ------------------------------------------------
+	
+	  Attention Line           Attention:, ATTN:
+	
+	  Closing                  Best regards, Best wishes, Cordially, Love,
+	                           Regards, Respectfully yours, Respectfully,
+	                           Sincerely yours, Sincerely, Take care,
+	                           Thank you, Thanks, Yours truly
+	
+	  Header/Footer            -Page-, Author Page # Date, Confidential Page #
+	                           Date, Created by, Created on, Filename,
+	                           Filename and path, Last printed, Last saved by,
+	                           Page X of Y
+	
+	  Mailing Instructions     CERTIFIED MAIL, CONFIDENTIAL, PERSONAL,
+	                           REGISTERED MAIL, SPECIAL DELIVERY, VIA
+	                           AIRMAIL, VIA FACSIMILE, VIA OVERNIGHT MAIL
+	
+	  Reference Initials       Author's initials. Taken from Initials box on
+	                           the User Information tab (click Options on
+	                           the Tools menu).
+	
+	  Reference Line           In reply to:, RE:, Reference:
+	
+	  Salutation               Dear Mom and Dad, Dear Sir or Madam:,
+	                           Ladies and Gentlemen:, To Whom It May Concern:
+	
+	  Signature                Author's name. Taken from Name box on the User
+	                           Information tab (click Options on the Tools
+	                           menu).
+	
+	  Signature Company        Author's company; Taken from Mailing Address
+	                           box on the User Information tab (click
+	                           Options on the Tools menu).
+	
+	  Subject Line             Subject:
+	
+	The AutoText submenus are created with styles. To add a new AutoText submenu,
+	create a new style name.
+	
+	The AutoText drop-down lists are created with text that has been formatted with
+	the appropriate style name and saved as an AutoText entry.
+	
+	For example: The submenu "Subject Line" is a style name. The drop-down "Subject:"
+	is text that has the "Subject Line" style applied to it.
+	
+	To create AutoText entries that appear in the AutoText drop-down list, first
+	create a style, and then create an AutoText entry using the new style.
+	
+	To Create a New AutoText Entry in the AutoText Drop-Down List
+	-------------------------------------------------------------
+	
+	NOTE: The following steps will add a new AutoText entry to the AutoText drop-down
+	list in your Normal.dot template (the default template in Word). If you want
+	your AutoText entry available only when you are working from a particular
+	template, then open the template file before proceeding with the following
+	steps.
+	
+	1. You can use either an existing style, or you can use the following steps to
+	  create a new style for your AutoText entry:
+	
+	  a. On the Format menu, click Style.
+	
+	  b. Click the New button.
+	
+	  c. In the Name box, type a name for your new AutoText style, and then click
+	     to select the Add To Template check box.
+	
+	  d. Use the Format button to make any formatting changes, and then click OK.
+	
+	  e. Click Close.
+	
+	2. To create a new AutoText drop-down list with one entry, follow these steps:
+	
+	  a. Type the item you want to add to the AutoText drop-down list.
+	
+	  b. Select the item.
+	
+	  c. Apply the style you created in Step 1, or use an existing style.
+	
+	  d. On the Insert menu, point to AutoText, and click New.
+	
+	  e. Type a unique name for the AutoText entry and click OK.
+	
+	The style you created in step 1 appears on the AutoText submenu, and the AutoText
+	entry you created in step 2 appears in the AutoText drop-down list. To add
+	additional entries to your AutoText submenu, repeat steps 2a- 2e for each new
+	entry.
+	
+	To Change the Name of an Existing AutoText Submenu
+	--------------------------------------------------
+	
+	When you add a new AutoText submenu (for example, when you use the steps in the
+	"To Create a New AutoText Entry in the AutoText Drop-Down List" section of this
+	article), the submenu is created as a result of a style. This style is actually
+	stored as part of the AutoText entry, and will remain as part of the AutoText
+	entry even if the style is renamed or deleted from the document or template.
+	Note that the AutoText submenu does not appear on the AutoText list in the
+	Organizer. It is not possible to rename the AutoText submenu. You must delete
+	the AutoText entries that reside under the AutoText submenu, and you must then
+	create a new AutoText submenu using a different or renamed style.
+	
+	To Delete an Existing AutoText Submenu and Its Entries
+	------------------------------------------------------
+	
+	To delete an AutoText submenu and its entries, follow these steps:
+	
+	1. On the Insert menu, point to AutoText, and then click AutoText.
+	
+	2. On the AutoText tab, click to select the AutoText entry that appears under
+	  the AutoText submenu, and then click Delete. Repeat this step for each of the
+	  AutoText entries that appear on the AutoText submenu, and then click OK.
+	
+	NOTE: Once you have deleted the last AutoText entry under an AutoText submenu,
+	the submenu will be removed from the AutoText drop-down list.
+	
+	To Use the AutoTextList Field
+	-----------------------------
+	
+	The AutoTextList field is a new field in Word 97 that displays a list of AutoText
+	entries formatted with the same style as the field code. The field uses the
+	following syntax:
+	
+	  {AUTOTEXTLIST "<LiteralText>" \s ["<StyleName>"] \t ["<TipText>"]}
+	
+	  Instruction         Explanation
+	  -------------------------------
+	
+	  "<LiteralText>"     Text that appears in the document before the user
+	                      displays the drop-down list. If the text contains
+	                      spaces, enclose it in quotation marks.
+	
+	  "<StyleName>"       The name of the style of the AutoText entries that
+	                      you want to appear in the list. If the style name
+	                      contains spaces, enclose it in quotation marks.
+	
+	  "<TipText>"         Text that appears in the screen tip when the mouse
+	                      pointer hovers over the field result. Enclose the
+	                      text in quotation marks.
+	
+	  Switches            Explanation
+	  --------            -----------
+	
+	  \s                  Specifies that the list will contain entries based
+	                      on a specific style. Without this switch, AutoText
+	                      entries of the current paragraph style appear. If
+	                      there are no entries for the current style, all
+	                      AutoText entries appear.
+	
+	  \t                  Specifies unique text to show in the screen tip
+	                      instead of the default tip.
+	
+	To Create the AutoTextList Field
+	--------------------------------
+	
+	To create the AutoTextList field, follow these steps:
+	
+	1. On the Insert menu, click Field.
+	
+	2. Under Categories, click Links And References.
+	
+	3. Under Field Names, click AutoTextList.
+	
+	4. Click after the field name in the Field Codes box, and then type the text you
+	  want to appear on the screen within quotation marks, for example, type:
+	
+	  "Sign Here"
+	
+	5. Click the Options button.
+	
+	6. Click the Field Specific Switches tab.
+	
+	7. Under Switches, select the \s switch and click Add To Field.
+	
+	8. Click OK.
+	
+	9. In the Field Code box, type the name of the style in quotation marks--for
+	  example, type:
+	
+	  "Signature"
+	
+	10. Click Options.
+	
+	11. Click the Field Specific Switches tab.
+	
+	12. Under Switches, select the \t switch and click Add To Field.
+	
+	13. In the Field Code box, type the tip text within quotation marks, for
+	  example, "Right-click to display list of Signature AutoText." The tip text
+	  will appear when the mouse pointer hovers over the AutoTextList field.
+	
+	14. Click OK twice
+	
+	When you right-click the AutoTextList field, Word displays a list of AutoText
+	entries formatted in the style you specified for the field. If you do not
+	specify a style when you create the AutoTextList field, Word displays all
+	AutoText entries.
+	
+	Notes
+	-----
+	
+	- To display the AutoText toolbar, point to AutoText on the Insert menu, click
+	  AutoText, and then click Show Toolbar.
+	
+	- If you delete all of the AutoText entries using a specific style, the submenu
+	  for these AutoText entries will be removed from the AutoText menu.
+	
+	ScreenTips
+	----------
+	
+	To enable ScreenTips, follow these steps:
+	
+	1. On the Tools menu, click AutoCorrect, and then click the AutoText tab.
+	
+	2. Click to select the "Show AutoComplete tip for AutoText and dates" check box,
+	  and then click OK.
+	
+	Additional query words: 8.0 automatic auto text list group grouping
+	
+	======================================================================
+	Keywords          : kbualink97 kbdta kbfield word97 
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : WINDOWS:97
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

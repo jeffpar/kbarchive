@@ -1,0 +1,85 @@
+---
+layout: page
+title: "Q160709: Length = 0 in BIND Causes SNA Server to Reject BIND"
+permalink: kb/160/Q160709/
+---
+
+## Q160709: Length = 0 in BIND Causes SNA Server to Reject BIND
+
+	Article: Q160709
+	Product(s): Microsoft SNA Server
+	Version(s): WINDOWS:2.0,2.1,2.11,3.0
+	Operating System(s): 
+	Keyword(s): kbnetwork
+	Last Modified: 13-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 2.0, 2.1, 2.11, 3.0, on platform(s):
+	   - the operating system: Microsoft Windows NT 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	When a host initiated BIND is sent to the SNA Server where the following two
+	conditions obtain
+	
+	- there is an incorrect field in the BIND
+	
+	  and
+	
+	- one of the User Data Structured Subfields' length field is 0,
+	
+	SNA Server will appropriately reject the BIND's incorrect field with a 0835xxxx
+	sense code, but the last 4 hexadecimal digits will be incorrect. The 0835xxxx
+	will appear in the event log as:
+	
+	  Event ID 17
+	
+	  APPC session activation failure: BIND negative response sent
+	
+	  Sense data = 0835xxxx
+	  connection = <value>
+	  Session ID = <value>
+	  LFSID = <value>
+	  TH = <value>
+	  RH = <value>
+	  RU = <value>
+	
+	The last four hexadecimal digits (xxxx) of the sense data correspond to an offset
+	within the BIND command that points to the parameter that was not recognized or
+	supported by the BIND receiver, in this case SNA Server.
+	
+	CAUSE
+	=====
+	
+	The SNA Server service gets confused because of the 0 length field. It therefore
+	reports an incorrect offset in the 0835 sense code.
+	
+	RESOLUTION
+	==========
+	
+	There is no current workaround. When using the 0835 sense code in diagnosis, be
+	aware that if there are User Data Subfields whose length field is 0, the offset
+	value may point to a perfectly legitimate subfield.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in SNA Server versions 2.0, 2.1,
+	2.11, 2.11 SP1, and 3.0. We are researching this problem and will post new
+	information here in the Microsoft Knowledge Base as it becomes available.
+	
+	Additional query words: prodsna
+	
+	======================================================================
+	Keywords          : kbnetwork 
+	Technology        : kbAudDeveloper kbSNAServSearch
+	Version           : WINDOWS:2.0,2.1,2.11,3.0
+	Issue type        : kbbug
+	
+	=============================================================================
+	

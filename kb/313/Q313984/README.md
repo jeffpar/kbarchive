@@ -1,0 +1,138 @@
+---
+layout: page
+title: "Q313984: INFO: Winsock Control Run-Time Error 429 and Scalability"
+permalink: kb/313/Q313984/
+---
+
+## Q313984: INFO: Winsock Control Run-Time Error 429 and Scalability
+
+	Article: Q313984
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 5.0,6.0,6.0 SP3,6.0 SP4,6.0 SP5
+	Operating System(s): 
+	Keyword(s): kbnetwork kbAPI kbCtrl kbSDKPlatform kbVBp500 kbVBp600 kbWinsock kbDSupport kbGrpDSNet
+	Last Modified: 31-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0, 6.0 SP3, 6.0 SP4, 6.0 SP5 
+	- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The Microsoft Winsock control (Mswinsck.ocx) was not designed to be created
+	dynamically at run time. To use this control, place it on a form at design time.
+	Otherwise, you may get run-time error 429, "ActiveX component can't create
+	object."
+	
+	Also, do not use the Winsock control in server environments, such as with
+	Microsoft Internet Information Server (IIS) and Microsoft COM+, where
+	scalability may be required.
+	
+	MORE INFORMATION
+	================
+	
+	Run-Time Error 429
+	------------------
+	
+	An application that creates the Winsock control dynamically at run time through
+	the use of early binding runs at design time may fail at run time with error 429
+	if the application runs on a nondevelopment computer (a computer that does not
+	have Visual Basic installed):
+	
+	  Run-time error '429':
+	  ActiveX component can't create object
+	
+	The error occurs because the target computer is missing the license information
+	for the control objects that are used in the application. You might attempt to
+	set the project reference to point to MSWINSCK.ocx, and then generate a
+	deployment package through the use of the Package and Deployment Wizard. This
+	would generate a setup package that contains the correct version of the Winsock
+	control. However, the license key for the control will not be compiled into the
+	application unless an instance of the control is placed on a form. When you try
+	to instantiate the objects at run time, the application has no way to provide
+	the license key, and the code will fail. For example, the following code will
+	run properly at design time, but will fail at run time on computers that do not
+	have Visual Basic installed:
+	
+	  Dim myWinSock As MSWinsockLib.Winsock
+	
+	  Sub Main()
+	      ' Early binding does not work
+	      Set myWinSock = New MSWinsockLib.Winsock
+	
+	      myWinSock.LocalPort = 5432
+	      
+	      myWinSock.Listen
+	      
+	      MsgBox ("Listening!")
+	      
+	      myWinSock.Close
+	  End Sub
+	
+	Therefore, you must provide an instance of the Winsock control on a form so that
+	Visual Basic can compile the license information into the application. You can
+	make the form hidden if necessary. To do this, set the form's Visible property
+	to "False." You can then prepare for deployment. The following code snippet
+	demonstrates the method:
+	
+	  Dim myWinsock As MSWinsockLib.Winsock
+	
+	  Sub Main()
+	      ' Form1 is hidden
+	      Set myWinsock = Form1.myWinsock
+	
+	      myWinsock.LocalPort = 5432
+	      
+	      myWinsock.Listen
+	      
+	      MsgBox ("Listening!")
+	      
+	      myWinsock.Close
+	  End Sub
+	
+	As an alternative, you can place a Winsock control object on the visual designer
+	of a UserControl object as a constituent control, which is usually done to
+	extend the functionality of the Winsock control or to subclass. However, this
+	approach does not address the licensing requirement. For an application to use
+	the wrapper object to run successfully at run time, the wrapper object must
+	ultimately be on a form.
+	
+	Scalability
+	-----------
+	
+	The Winsock control is designed for use in client or light-load server
+	applications. Microsoft does not support the use of the control in multithreaded
+	server environments, especially in IIS and COM+, where scalability may be
+	important. Using this control in such an environment may cause unpredicatible
+	issues including deadlocks. Microsoft recommends that you consider use of
+	alternative technologies such as the Winsock API and the IO Completion Port
+	(IOCP) in these cases.
+	
+	
+	REFERENCES
+	==========
+	
+	For additional information, click the article numbers below to view the articles
+	in the Microsoft Knowledge Base:
+	
+	  Q274754 INFO: Licensing Issues Related to User Controls Created with Visual
+	  Basic
+	
+	  Q241126 INFO: Dynamically Add UserControls That Require Run-Time Licenses
+	
+	  Q192800 INFO: Design Issues When Using IOCP in a Winsock Server
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbnetwork kbAPI kbCtrl kbSDKPlatform kbVBp500 kbVBp600 kbWinsock kbDSupport kbGrpDSNet 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600 kbVB600SP3 kbVB600SP4 kbVB600SP5
+	Version           : :5.0,6.0,6.0 SP3,6.0 SP4,6.0 SP5
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

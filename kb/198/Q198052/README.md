@@ -1,0 +1,199 @@
+---
+layout: page
+title: "Q198052: FIX: &quot;Out-of-Date Dependency&quot; Warning in Setup Wizard and PDW"
+permalink: kb/198/Q198052/
+---
+
+## Q198052: FIX: &quot;Out-of-Date Dependency&quot; Warning in Setup Wizard and PDW
+
+	Article: Q198052
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbservicepack kbwizard kbAppSetup kbVBp kbVBp500bug kbVBp600bug kbGrpDSVB kbFAQ kbVS600
+	Last Modified: 18-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When running the Visual Basic 5.0 Setup Wizard, you receive the following
+	warning message:
+	
+	  < Project Name > - Setup Wizard - Out of Date Dependencies
+	  The dependency file for the following component(s) is out of date.
+	  You should exit the wizard now and rebuild each of the dependency files for
+	  these components, using this wizard.
+	
+	NOTE: You can choose to ignore this for now by clicking Next, but your setup and
+	application may not work correctly.
+	
+	When running the Visual Basic 6.0 Package and Deployment Wizard (PDW), you
+	receive the following warning message:
+	
+	  Out-of-Date Dependency Information
+	  The wizard found dependency information for the listed files, but the
+	  information is out of date. To proceed with the out-of-date information,
+	  click OK.
+	
+	CAUSE
+	=====
+	
+	Each component listed below the warning message has a dependency (.dep) file
+	that contains information about all the files required by that component.
+	However, the version number of the component as specified in the .dep file does
+	not match the version number of the component itself.
+	
+	In other words, the .dep file was created for a different version of the
+	component, so the wizard is unable to determine which files the component
+	requires.
+	
+	RESOLUTION
+	==========
+	
+	If the indicated file comes from a third party, contact that party for the
+	updated .dep files.
+	
+	If the indicated file is a Visual Basic component that you created, follow these
+	steps to create a .dep file:
+	
+	1. Restart the Setup Wizard or PDW.
+	
+	2. In the Setup Wizard, select the project file for this component, the Generate
+	  Dependency File Only option, and continue through all the steps to create the
+	  dependency file.
+	
+	  -or-
+	
+	  In the PDW, select the project file for this component, and choose the
+	  Dependency File option on the Package Type screen. Continue through all the
+	  steps to create the dependency file.
+	
+	  NOTE: Save the .dep file in the same folder as the component file.
+	
+	3. Restart the Setup Wizard or PDW and try the current project again.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article.
+	
+	This bug was corrected in Visual Studio 6.0 Service Pack 3.
+	
+	For additional information about Visual Studio service packs, click the article
+	numbers below to view the articles in the Microsoft Knowledge Base:
+	
+	  Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+	
+	  Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+	
+	MORE INFORMATION
+	================
+	
+	If you are unable to obtain a .dep file for the component(s) indicated in the
+	warning message, you can ignore the warning message in the following two cases:
+	
+	- You are confident that no other files are required by the component.
+	
+	-or-
+	
+	- You know which files are required and can add them manually in the File
+	  Summary screen in the Setup Wizard or the Included Files screen in the PDW.
+	
+	NOTE: Check the end-user license agreement and redistributable files list for
+	information about which files are redistributable. (In Visual Basic 5.0, check
+	the License.txt and Redist.txt files, both located in the "Program
+	files\DevStudio\VB" folder. In Visual Basic 6.0, check the Eula.txt file in the
+	"Program Files\Microsoft Visual Studio\Common\Setup\1033" folder and the
+	Redist.txt file in the "Program Files\Microsoft Visual Studio" folder.)
+	
+	You can use a utility, such as Dependency Walker, to determine file dependencies.
+	However, it is important to note the following when using Dependency Walker:
+	
+	- You do not need to distribute all the files listed as dependencies in the
+	  utility. Many of the listed files are operating system files. If you are
+	  unsure about which files to distribute, check the end-user license agreement
+	  (License.txt in 5.0, Eula.txt in 6.0) and Redist.txt files.
+	
+	- The utility cannot determine dynamic module dependencies. For example, if
+	  Module A dynamically loads Module B via a LoadLibrary-type technique, Module
+	  B becomes a run-time dependency of Module A, but will not be listed in Module
+	  A's import table. Because Dependency Walker depends on information in the
+	  import table to determine dependencies, it will not detect that Module A is
+	  dependent upon Module B.
+	
+	If you have Microsoft Visual Studio 6.0 and installed the Win32 SDK Tools, you
+	can start Dependency Walker using the following steps:
+	
+	1. Click the Start button, point to Programs, point to Microsoft Visual Studio
+	  6.0, and then point to Microsoft Visual Studio 6.0 Tools.
+	
+	2. Click Depends.
+	
+	If you do not have the Win32 SDK Tools installed, follow these steps to install
+	them:
+	
+	1. Click the Start button, point to Settings, and then click Control Panel.
+	
+	2. Double-click the Add/Remove Programs icon.
+	
+	3. Click the Install/Uninstall tab, and then double-click Microsoft Visual
+	  Studio 6.0.
+	
+	4. In the Setup dialog box, click Add/Remove.
+	
+	5. In the Options list, select Tools (do not click the check box), and then
+	  click Change Option.
+	
+	6. Click the Win32 SDK Tools check box to select it, and then click OK.
+	
+	7. Click Continue.
+	
+	If you have the standalone Visual Basic 6.0 product, you can find Dependency
+	Walker in the COMMON\TOOLS\VB\UNSUPPRT\DEPEND folder on Disk 1. If you do not
+	have Visual Studio 6.0 or Visual Basic 6.0, you can obtain Dependency Walker by
+	downloading the Platform SDK from the Microsoft Web site at the following
+	address:
+	
+	  Microsoft Platform SDK:
+	  http://msdn.microsoft.com/library/psdk/portals/mainport.htm
+	
+	The Dependency Walker, among other tools, is included with the Platform SDK under
+	the Tools\Platform SDK Tools in the installer. After installing the needed
+	portions of the SDK, you can find Depends.exe on the Start menu under Microsoft
+	Platform SDK\Tools\Depends. (The utility works on Microsoft Windows 95,
+	Microsoft Windows 98, Microsoft Windows Millennium, Microsoft Windows NT, and
+	Microsoft Windows 2000.) The documentation for the utility is in Depends.hlp,
+	which can be found in \Program Files\Microsoft Platform SDK\Bin.
+	
+	REFERENCES
+	==========
+	
+	For additional information, click the article numbers below to view the articles
+	in the Microsoft Knowledge Base:
+	
+	  Q178354 INFO: How Setup Wizard and PDW Uses Dependency Files
+	
+	  Q172888 PRB: ComCtl32.ocx - The Dependency File is Out of Date
+	
+	  Q190777 BUG: PDW: Out-of-Date Dependency Information COMCT332.OCX
+	
+	Additional query words: kbfix
+	
+	======================================================================
+	Keywords          : kbservicepack kbwizard kbAppSetup kbVBp kbVBp500bug kbVBp600bug kbGrpDSVB kbFAQ kbVS600sp3fix kbfix kbVBp600FAQ 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600
+	Version           : :5.0,6.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

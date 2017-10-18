@@ -1,0 +1,69 @@
+---
+layout: page
+title: "Q172707: File Manager Shows Incorrect Date for Year 2000 or Later"
+permalink: kb/172/Q172707/
+---
+
+## Q172707: File Manager Shows Incorrect Date for Year 2000 or Later
+
+	Article: Q172707
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:95
+	Operating System(s): 
+	Keyword(s): kbfile kbtool kbYear2000 osr2 win95kbfixlist
+	Last Modified: 17-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 95 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	File Manager displays an incorrect date for files created with a date of
+	01-01-2000 or later.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, obtain and install the Windows 95 Year 2000 Update.
+	Microsoft also recommends that you obtain and install the Windows 95 Year 2000
+	Corporate Update. For additional information concerning these updates, please
+	refer to the "References" section below. You can obtain these updates from the
+	following Microsoft Web site:
+	
+	  http://www.microsoft.com/windows95/downloads
+	
+	MORE INFORMATION
+	================
+	
+	For information about a similar issue with Windows 3.1 and Windows for
+	Workgroups, please see the following article in the Microsoft Knowledge Base:
+	For additional information about , please see the following article(s) in the
+	Microsoft Knowledge Base:
+	
+	  Q85557 File Manager Shows Garbled Date for Year 2000 or Later
+	
+	This problem does not occur in Windows 98.
+	
+	REFERENCES
+	==========
+	
+	
+	For additional information about the Windows 95 Year 2000 Update, please see the
+	following article in the Microsoft Knowledge Base:
+	
+	  Q225050 Availability of the Windows 95 Year 2000 Update
+	
+	Additional query words: y2k
+	
+	======================================================================
+	Keywords          : kbfile kbtool kbYear2000 osr2 win95 kbfixlist
+	Technology        : kbWin95search kbZNotKeyword3
+	Version           : WINDOWS:95
+	Issue type        : kbprb
+	
+	=============================================================================
+	

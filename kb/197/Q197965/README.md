@@ -1,0 +1,242 @@
+---
+layout: page
+title: "Q197965: XGEN: FAQs on High and Low Encryption in Exchange Server"
+permalink: kb/197/Q197965/
+---
+
+## Q197965: XGEN: FAQs on High and Low Encryption in Exchange Server
+
+	Article: Q197965
+	Product(s): Microsoft Exchange
+	Version(s): WINDOWS:8.0,8.01,8.02,8.03,8.5; winnt:4.0,5.0,5.5,5.5 SP1
+	Operating System(s): 
+	Keyword(s): exc4 exc5 exc55 exc55sp1
+	Last Modified: 06-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 4.0, 5.0, 5.5, 5.5 SP1 
+	- Microsoft Outlook 97, versions 8.0, 8.01, 8.02, 8.03, used with:
+	   - the operating system: Microsoft Windows NT 
+	- Microsoft Outlook 98, version 8.5, used with:
+	   - the operating system: Microsoft Windows NT 
+	- Microsoft Outlook 97, versions 8.0, 8.01, 8.02, 8.03, used with:
+	   - the operating system: Microsoft Windows 98 
+	   - the operating system: Microsoft Windows 95 
+	- Microsoft Outlook 98, version 8.5, used with:
+	   - the operating system: Microsoft Windows 98 
+	   - the operating system: Microsoft Windows 95 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This FAQ addresses the differences between high and low encryption, the types of
+	encryption available in the various Microsoft messaging products, and other
+	issues that are often asked regarding encryption in Microsoft messaging
+	technologies.
+	
+	If after reading this FAQ, you still have questions about encryption in Microsoft
+	Messaging products, please visit our Web site at the following URL:
+	
+	  http://www.microsoft.com/security/
+	
+	MORE INFORMATION
+	================
+	
+	Notes on Terminology
+	--------------------
+	
+	In this document, the term Microsoft Exchange Server program refers to the
+	software that provides the messaging services on a Microsoft Exchange Server
+	computer. It does not refer to client programs that allow users to access the
+	messaging services running on the Microsoft Exchange Server computer.
+	
+	The term Microsoft Exchange Server package refers to a collection of CDs that can
+	be ordered by customers. Such a package might include a newly released version
+	of Microsoft Exchange Server (such as version 5.5), or a service pack (such as
+	Service Pack 1). The package may include other programs in addition to the
+	Microsoft Exchange Server program, such as the Microsoft Outlook98 messaging and
+	collaboration client, which themselves may be new or updated.
+	
+	Questions and Answers
+	---------------------
+	
+	- Q. Is the Microsoft Exchange Server program available in high and low
+	  encryption versions?
+	
+	- A. No. There is no separate high and low encryption code for the Microsoft
+	  Exchange Server program. Microsoft Exchange Server code is the same
+	  worldwide.
+	
+	- Q. Is the Microsoft Outlook 98 program available in high and low encryption
+	  versions?
+	
+	- A. Yes. The Outlook 98 messaging client does come in High and Low encryption
+	  versions.
+	
+	  With Microsoft Exchange Server 4.0, 5.0, or 5.5, the high encryption version
+	  of the client software can encrypt mail using a 64-bit key. The low
+	  encryption version is restricted to a 40-bit key because of US export
+	  regulations. (The terms 40-bit and 64-bit refer to the strength of the
+	  encryption algorithms used by the Outlook client.)
+	
+	  Starting with Microsoft Exchange Server 5.5 Service Pack 1, Microsoft now
+	  includes Outlook 98 for Win32, where the high-encryption version is available
+	  with a 128-bit key for S/MIME. The low encryption version is still restricted
+	  to a 40-bit key.
+	
+	  Microsoft Exchange Books Online provides information to help administrators
+	  select the most suitable encryption algorithms for their clients running
+	  Outlook.
+	
+	- Q. Can customers order the Microsoft Exchange Server program with 128-bit
+	  encryption?
+	
+	- A. No. The term 128-bit refers to the level of encryption provided by the
+	  underlying Microsoft Windows NT operating system. For more information about
+	  128-bit encryption, refer to the following Microsoft Knowledge Base article:
+	
+	  Q176820 Differences Between 128-bit and 40-bit versions of SP3 and SP4
+	
+	- Q. Why does it seem that customers can order a high encryption version of the
+	  Exchange Server program, or service pack, from Microsoft?
+	
+	- A. This is a misconception. All SKUs of Microsoft Exchange Server include a
+	  client (Outlook) CD in the package. Because the Microsoft Outlook 98 client
+	  is available in high and low encryption versions, the Microsoft Exchange
+	  Server package (orderable SKU) is available in high and low encryption
+	  versions too. There are separate part numbers for high- encryption and
+	  low-encryption Microsoft Exchange Server packages. Customers who order a
+	  package will need to specify if they want a high or low encryption version.
+	
+	  Remember, the designation high or low for the Microsoft Exchange Server
+	  package refers to the encryption level of the client bundled in the package,
+	  and not to any Microsoft Exchange Server program code or files.
+	
+	- Q. I am about to download an Exchange Server service pack from the Web,
+	  rather than ordering it. Is there anything I need to know about encryption in
+	  products downloaded from the Internet?
+	
+	- A. Starting with Exchange Server 5.5 Service Pack 1 (downloadable from
+	  ftp://ftp.microsoft.com/bussys/exchange/
+	  exchange-public/fixes/Eng/Exchg5.5/SP1), the client and server portions of
+	  the service pack are packaged into separate download files.
+	
+	  For Exchange Server 5.5 Service Pack 1, customers can individually download
+	  the following:
+	
+	   - The Microsoft Exchange Server program update
+	
+	   - The Windows 16-bit client update
+	
+	   - The Microsoft Exchange client support files
+	
+	   - Service Pack 1 for the Microsoft Exchange Macintosh client
+	
+	  The client download available on the Web is the exportable, low encryption
+	  (40-bit) version. If customers want the high encryption version, they must
+	  order the high encryption Microsoft Exchange Server package (SKU #312-00943
+	  CRYPTO), which includes the high encryption version of Outlook 98.
+	  Information on how to order Microsoft Exchange Server 5.5 Service Pack 1 is
+	  available from the following URL:
+	
+	  http://www.microsoft.com/downloads/search.asp
+	
+	  Because the Microsoft Exchange Server program contains no restricted
+	  encryption software, the version available on the Microsoft FTP site can be
+	  downloaded & installed on any Microsoft Exchange version 5.5 Server
+	  worldwide.
+	
+	- Q. What happens if I update the Microsoft Exchange Server program that was
+	  installed from a high encryption package using a CD included in a low
+	  encryption package, or using program files downloaded from Microsoft's FTP
+	  site?
+	
+	- A. Nothing. Encryption settings will remain the same, since there are no
+	  encryption-specific files in the Microsoft Exchange Server program.
+	
+	  However, if you update a copy of Microsoft Outlook 98 that was installed from
+	  a high encryption package using a CD included in a low-encryption package, or
+	  using program files downloaded from Microsoft's FTP site, the encryption
+	  level will be downgraded to the lower encryption level.
+	
+	- Q. Where is the encryption actually performed?
+	
+	- A. An in-depth discussion of encryption is outside the scope of this
+	  document. However, in brief, encryption can be classified into two main
+	  areas: e-mail content encryption and network session packet encryption.
+	
+	  E-mail content encryption is handled entirely by the e-mail client. Message
+	  text and attachments are encrypted by the sending client before the message
+	  is sent to the server. The message is decrypted locally by the receiving
+	  client after downloading it from the server. The strength of encryption used
+	  is dependent on the version of Outlook client software (low or high
+	  encryption). In order to encrypt mail using this method, the users must have
+	  public-private key pairs.
+	
+	  In Microsoft Exchange 5.5 Service Pack 1, the Key Management Server service
+	  provides the following services:
+	
+	   - Creates the public and private encryption keys (which use either the
+	     CAST-40, CAST-64, or DES encryption algorithms).
+	
+	   - Maintains backups of the private encryption keys and public signing keys.
+	
+	   - Generates temporary keys.
+	
+	   - Maintains the original copy of the certificate revocation list
+	
+	   - Issues certificates for certification authorities (CAs) in other
+	     organizations.
+	
+	  The Microsoft Exchange Key Management Server service uses Microsoft
+	  Certificate Server to generate user certificates. Service Pack 1 is the first
+	  release in which Certificate Server can act as the certification authority
+	  for the organization. If you use only version 3 (V3) certificates in your
+	  organization, Key Management Server no longer acts as the certification
+	  authority. (For information about Microsoft Certificate Server, please see
+	  the documentation for Microsoft Internet Information Server version 4.0.)
+	
+	  In addition to the CAST and DES encryption algorithms, administrators also
+	  have the option of allowing users to sign and encrypt their e-mail using
+	  S/MIME. In Microsoft Exchange 5.5 Service Pack 1, the algorithms available
+	  with S/MIME are RC2-40, RC2-64, or RC2-128. Administrators can view these
+	  options from the Algorithm tab on the Site Encryption Configuration
+	  properties page in the Configuration container for a site.
+	
+	  Network session packet encryption is provided by the underlying Windows NT
+	  operating system. Microsoft Exchange Server makes use of this for RPC or SSL
+	  encryption. Note that when enabled, RPC and SSL encryption will encrypt any
+	  information within an RPC or SSL session; this type of encryption is not
+	  limited to Microsoft Exchange Server traffic. The strength of encryption
+	  available is dependent on the version of Windows NT on your server (low or
+	  high encryption).
+	
+	- Q. Where can I find more information about security and Microsoft products?
+	
+	- A. For more information about security and Microsoft products, please go to
+	  the following URL:
+	
+	  http://www.microsoft.com/security/.
+	
+	  The site provides white papers, links to key resources, information on
+	  specific security concerns, and more.
+	
+	- Q. What is the Security Notification Service?
+	
+	- A. The Microsoft Security Notification Service is a free e-mail-based "push"
+	  notification service that sends information and advisories about security in
+	  Microsoft products to our customers.
+	
+	Additional query words: kms
+	
+	======================================================================
+	Keywords          : exc4 exc5 exc55 exc55sp1 
+	Technology        : kbOutlookSearch kbExchangeSearch kbZNotKeyword2 kbOutlook97Search kbZNotKeyword3
+	Version           : WINDOWS:8.0,8.01,8.02,8.03,8.5; winnt:4.0,5.0,5.5,5.5 SP1
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

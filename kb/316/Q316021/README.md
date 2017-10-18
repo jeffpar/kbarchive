@@ -1,0 +1,465 @@
+---
+layout: page
+title: "Q316021: SMS: SMSAPM32 Does Not Remove Software or Create Status Messages"
+permalink: kb/316/Q316021/
+---
+
+## Q316021: SMS: SMSAPM32 Does Not Remove Software or Create Status Messages
+
+	Article: Q316021
+	Product(s): Microsoft Systems Management Server
+	Version(s): 2.0 SP2,2.0 SP3,2.0 SP4
+	Operating System(s): 
+	Keyword(s): kbenv kberrmsg kbsetup kbsms200 kbsms200bug kbsms120 kbsms120bug
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server versions 2.0 SP2, 2.0 SP3, 2.0 SP4 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you use the "Remove software when no longer advertised" advanced SMS
+	program property, the following SMS Status messages may not be generated during
+	software removal by SMSAPM32. Additionally, SMSAPM32 may not remove software
+	that is no longer advertised in the three documented scenarios for software
+	deinstallation (see the "More Information" section of this article for a
+	description of these scenarios).
+	
+	SMSAPM32 Software Uninstall Status Messages
+	-------------------------------------------
+	
+	  10012 - Uninstall started for advertisement "XXXnnnnn" ("<package
+	  name>" - "<program name>"). Command line: "......." Working
+	  Directory: "......."
+	
+	  10013 - The uninstall program for advertisement "XXXnnnnn" failed
+	  ("<package name>" - "<program name>"). A non-zero exit code of n
+	  was returned.
+	  Possible cause: SMS Advertised Program Manager (APM) determines status for
+	  each program it executes. If APM cannot find or correlate any install status
+	  Management Information Format (MIF) files for the program, it uses the
+	  program's exit code to determine status. A non-zero exit code is considered a
+	  failure.%nSolution: For more information about the exit code, refer to the
+	  documentation for the program you are distributing.
+	
+	  10014 - The uninstall program for advertisement "XXXnnnnn" failed
+	  ("<package name>" - "<program name>"). The failure description
+	  was ".......".
+	  Possible cause: The uninstall program generated an install status Management
+	  Information Format (MIF) file with a status value of Failed.%nSolution: For
+	  more information about the failure, refer to the documentation for the
+	  program you are distributing.
+	
+	  10015 - The uninstall program for advertisement "XXXnnnnn" completed
+	  successfully ("<package name>" - "<program name>"). An exit code
+	  of zero was returned.
+	  SMS Advertised Program Manager (APM) determines status for each program it
+	  executes. If APM cannot find or correlate any install status Management
+	  Information Format (MIF) files for the program, it uses the program's exit
+	  code program to determine status. An exit code of zero is considered
+	  successful.
+	
+	  10016 - The uninstall program for advertisement "XXXnnnnn" completed
+	  successfully ("<package name>" - "<program name>"). The success
+	  description was "........".
+	  The program generated an install status Management Information Format (MIF)
+	  file with a status value of Success. For more information, see the
+	  documentation for the program you are distributing.
+	
+	CAUSE
+	=====
+	
+	A regression in the software uninstall with SMSAPM32 was introduced in Systems
+	Management Server (SMS) 2.0 Service Pack 2 (SP2).
+	
+	RESOLUTION
+	==========
+	
+	A supported fix is now available from Microsoft, but it is only intended to
+	correct the problem that is described in this article. Only apply it to systems
+	that are experiencing this specific problem. This fix may receive additional
+	testing. Therefore, if you are not severely affected by this problem, Microsoft
+	recommends that you wait for the next Systems Management Server service pack
+	that contains this fix.
+	
+	To resolve this problem immediately, contact Microsoft Product Support Services
+	to obtain the fix. For a complete list of Microsoft Product Support Services
+	phone numbers and information about support costs, visit the following Microsoft
+	Web site:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	NOTE: In special cases, charges that are ordinarily incurred for support calls
+	may be canceled if a Microsoft Support Professional determines that a specific
+	update will resolve your problem. The usual support costs will apply to
+	additional support questions and issues that do not qualify for the specific
+	update in question.
+	
+	The English post-SMS 2.0 Service Pack 3 version of this fix should have the
+	following file attributes or later:
+	
+	  Date       Time   Version        Size       File name           Platform
+	  ------------------------------------------------------------------------
+	  02-Mar-01  00:30  2.0.92.9         394,290  Apasetup.exe         Intel
+	  01-Mar-01  13:00  2.0.1493.3125    259,936  Bindclin.dll         Intel
+	  01-Mar-01  22:20  2.0.1493.3216    181,584  Ccim32.dll           Intel
+	  02-Mar-01  00:30  2.0.92.9       1,324,075  Ccmcore.exe          Intel
+	  02-Mar-01  00:30  2.0.1493.3242  1,225,120  Clibase.dll          Intel
+	  02-Mar-01  00:30  2.0.1493.3242  3,401,914  Clicore.exe          Intel
+	  02-Mar-01  00:10  2.0.1493.3238     88,432  Clisvcl.exe          Intel
+	  02-Mar-01  00:30  2.0.1493.3242      8,512  Cliver.exe           Intel
+	  02-Mar-01  00:30                        67  Compverbase.ini      Intel
+	  02-Mar-01  00:30                        67  Compversmsapm32.ini  Intel
+	  02-Mar-01  00:30                        67  Compverswdist.ini    Intel
+	  01-Mar-01  22:20  2.0.1493.3216     39,264  Cqmgr32.dll          Intel
+	  01-Mar-01  13:00  2.0.1493.3125    338,272  Mslmclin.dll         Intel
+	  01-Mar-01  13:00  2.0.1493.3125    269,664  Ndsclin.dll          Intel
+	  02-Mar-01  00:00  2.0.1493.3236     54,128  Odpsys32.exe         Intel
+	  02-Mar-01  00:00  2.0.1493.3236     60,272  Odpusr32.exe         Intel
+	  02-Mar-01  00:30  2.0.1493.3242    289,136  Smsapm32.exe         Intel
+	  02-Mar-01  00:00  2.0.92.9         639,507  Swdist32.exe         Intel
+	  02-Mar-01  00:30  2.0.92.9         654,799  Apasetup.exe         Alpha
+	  01-Mar-01  22:20  2.0.1493.3216    293,648  Ccim32.dll           Alpha
+	  02-Mar-01  00:30  2.0.92.9       1,925,229  Ccmcore.exe          Alpha
+	  02-Mar-01  00:30  2.0.1493.3242  1,940,240  Clibase.dll          Alpha
+	  02-Mar-01  00:30  2.0.1493.3242  4,442,598  Clicore.exe          Alpha
+	  02-Mar-01  00:10  2.0.1493.3238    125,712  Clisvcl.exe          Alpha
+	  02-Mar-01  00:30  2.0.1493.3242     13,584  Cliver.exe           Alpha
+	  02-Mar-01  00:30                        67  Compverbase.ini      Alpha
+	  02-Mar-01  00:30                        67  Compversmsapm32.ini  Alpha
+	  02-Mar-01  00:30                        67  Compverswdist.ini    Alpha
+	  01-Mar-01  22:20  2.0.1493.3216     66,832  Cqmgr32.dll          Alpha
+	  01-Mar-01  13:00  2.0.1493.3125    578,832  Mslmclin.dll         Alpha
+	  02-Mar-01  00:00  2.0.1493.3236     75,024  Odpsys32.exe         Alpha
+	  02-Mar-01  00:00  2.0.1493.3236     83,728  Odpusr32.exe         Alpha
+	  02-Mar-01  00:30  2.0.1493.3242    384,272  Smsapm32.exe         Alpha
+	  02-Mar-01  00:00  2.0.92.9         693,008  Swdist32.exe         Alpha
+	
+	The German post-SMS 2.0 Service Pack 3 version of this fix should have the
+	following file attributes or later:
+	
+	  Date       Time   Version        Size       File name           Platform
+	  ------------------------------------------------------------------------
+	  11-Apr-01  00:30  2.0.92.9         394,903  Apasetup.exe         Intel   
+	  01-Mar-01  13:00  2.0.1493.3125    259,936  Bindclin.dll         Intel 
+	  01-Mar-01  22:20  2.0.1493.3216    181,584  Ccim32.dll           Intel 
+	  11-Apr-01  00:30  2.0.92.9       1,324,326  Ccmcore.exe          Intel 
+	  02-Mar-01  00:30  2.0.1493.3242  1,225,120  Clibase.dll          Intel 
+	  11-Apr-01  00:30  2.0.1493.3242  3,667,431  Clicore.exe          Intel 
+	  02-Mar-01  00:10  2.0.1493.3238     88,432  Clisvcl.exe          Intel 
+	  02-Mar-01  00:30  2.0.1493.3242      8,512  Cliver.exe           Intel 
+	  02-Mar-01  00:30                        67  Compverbase.ini      Intel
+	  02-Mar-01  00:30                        67  Compversmsapm32.ini  Intel
+	  02-Mar-01  00:30                        67  Compverswdist.ini    Intel
+	  01-Mar-01  22:20  2.0.1493.3216     39,264  Cqmgr32.dll          Intel
+	  01-Mar-01  13:00  2.0.1493.3125    338,272  Mslmclin.dll         Intel 
+	  01-Mar-01  13:00  2.0.1493.3125    269,664  Ndsclin.dll          Intel 
+	  02-Mar-01  00:00  2.0.1493.3236     54,128  Odpsys32.exe         Intel 
+	  02-Mar-01  00:00  2.0.1493.3236     60,272  Odpusr32.exe         Intel 
+	  25-Sep-01  23:14  2.0.1250.7       762,688  Preinst.exe          Intel 
+	  02-Mar-01  00:30  2.0.1493.3242    289,136  Smsapm32.exe         Intel 
+	  11-Apr-01  00:00  2.0.92.9         691,485  Swdist32.exe         Intel 
+	  11-Apr-01  00:30  2.0.92.9         655,325  Apasetup.exe         Alpha
+	  01-Mar-01  22:20  2.0.1493.3216    293,648  Ccim32.dll           Alpha
+	  11-Apr-01  00:30  2.0.92.9       1,925,461  Ccmcore.exe          Alpha
+	  02-Mar-01  00:30  2.0.1493.3242  1,940,240  Clibase.dll          Alpha
+	  11-Apr-01  00:30  2.0.1493.3242  4,803,510  Clicore.exe          Alpha
+	  02-Mar-01  00:10  2.0.1493.3238    125,712  Clisvcl.exe          Alpha
+	  02-Mar-01  00:30  2.0.1493.3242     13,584  Cliver.exe           Alpha
+	  02-Mar-01  00:30                        67  Compverbase.ini      Alpha
+	  02-Mar-01  00:30                        67  Compversmsapm32.ini  Alpha
+	  02-Mar-01  00:30                        67  Compverswdist.ini    Alpha
+	  01-Mar-01  22:20  2.0.1493.3216     66,832  Cqmgr32.dll          Alpha
+	  01-Mar-01  13:00  2.0.1493.3125    578,832  Mslmclin.dll         Alpha
+	  02-Mar-01  00:00  2.0.1493.3236     75,024  Odpsys32.exe         Alpha
+	  02-Mar-01  00:00  2.0.1493.3236     83,728  Odpusr32.exe         Alpha
+	  02-Mar-01  00:30  2.0.1493.3242    384,272  Smsapm32.exe         Alpha
+	  11-Apr-01  00:00  2.0.92.9         744,974  Swdist32.exe         Alpha
+	
+	The ICP1 post-SMS 2.0 Service Pack 3 version of this fix should have the
+	following file attributes or later:
+	
+	  Date       Time   Version        Size       File name           Platform
+	  ------------------------------------------------------------------------
+	  13-Apr-01  00:30  2.0.92.9         394,289  Apasetup.exe         Intel   
+	  01-Mar-01  13:00  2.0.1493.3125    259,936  Bindclin.dll         Intel
+	  01-Mar-01  22:20  2.0.1493.3216    181,584  Ccim32.dll           Intel
+	  13-Apr-01  00:30  2.0.92.9       1,324,076  Ccmcore.exe          Intel
+	  02-Mar-01  00:30  2.0.1493.3242  1,225,120  Clibase.dll          Intel
+	  13-Apr-01  00:30  2.0.1493.3442  4,409,037  Clicore.exe          Intel
+	  02-Mar-01  00:10  2.0.1493.3238     88,432  Clisvcl.exe          Intel
+	  13-Apr-01  00:30  2.0.1493.3442      8,512  Cliver.exe           Intel
+	  13-Apr-01  00:30                        67  Compverbase.ini      Intel
+	  13-Apr-01  00:30                        67  Compversmsapm32.ini  Intel
+	  13-Apr-01  00:30                        67  Compverswdist.ini    Intel
+	  01-Mar-01  22:20  2.0.1493.3216     39,264  Cqmgr32.dll          Intel
+	  01-Mar-01  13:00  2.0.1493.3125    338,272  Mslmclin.dll         Intel
+	  01-Mar-01  13:00  2.0.1493.3125    269,664  Ndsclin.dll          Intel
+	  02-Mar-01  00:00  2.0.1493.3236     54,128  Odpsys32.exe         Intel
+	  02-Mar-01  00:00  2.0.1493.3236     60,272  Odpusr32.exe         Intel
+	  25-Sep-01  23:14  2.0.1250.7       762,688  Preinst.exe          Intel
+	  02-Mar-01  00:30  2.0.1493.3242    289,136  Smsapm32.exe         Intel
+	  13-Apr-01  00:00  2.0.92.9         838,614  Swdist32.exe         Intel
+	  13-Apr-01  00:30  2.0.92.9         654,804  Apasetup.exe         Alpha
+	  01-Mar-01  22:20  2.0.1493.3216    293,648  Ccim32.dll           Alpha
+	  13-Apr-01  00:30  2.0.92.9       1,925,231  Ccmcore.exe          Alpha
+	  02-Mar-01  00:30  2.0.1493.3242  1,940,240  Clibase.dll          Alpha
+	  13-Apr-01  00:30  2.0.1493.3442  5,836,309  Clicore.exe          Alpha
+	  02-Mar-01  00:10  2.0.1493.3238    125,712  Clisvcl.exe          Alpha
+	  13-Apr-01  00:30  2.0.1493.3442     13,584  Cliver.exe           Alpha
+	  13-Apr-01  00:30                        67  Compverbase.ini      Alpha
+	  13-Apr-01  00:30                        67  Compversmsapm32.ini  Alpha
+	  13-Apr-01  00:30                        67  Compverswdist.ini    Alpha
+	  01-Mar-01  22:20  2.0.1493.3216     66,832  Cqmgr32.dll          Alpha
+	  01-Mar-01  13:00  2.0.1493.3125    578,832  Mslmclin.dll         Alpha
+	  02-Mar-01  00:00  2.0.1493.3236     75,024  Odpsys32.exe         Alpha
+	  02-Mar-01  00:00  2.0.1493.3236     83,728  Odpusr32.exe         Alpha
+	  02-Mar-01  00:30  2.0.1493.3242    384,272  Smsapm32.exe         Alpha
+	  13-Apr-01  00:00  2.0.92.9         892,490  Swdist32.exe         Alpha
+	
+	The ICP4 post-SMS 2.0 Service Pack 3 version of this fix should have the
+	following file attributes or later:
+	
+	  Date       Time   Version        Size       File name           Platform
+	  ------------------------------------------------------------------------
+	  15-Apr-01  00:30  2.0.92.9         394,283  Apasetup.exe        Intel 
+	  01-Mar-01  13:00  2.0.1493.3125    259,936  Bindclin.dll        Intel
+	  01-Mar-01  22:20  2.0.1493.3216    181,584  Ccim32.dll          Intel
+	  15-Apr-01  00:30  2.0.92.9       1,324,076  Ccmcore.exe         Intel
+	  02-Mar-01  00:30  2.0.1493.3242  1,225,120  Clibase.dll         Intel
+	  15-Apr-01  00:30  2.0.1493.3642  8,664,572  Clicore.exe         Intel
+	  02-Mar-01  00:10  2.0.1493.3238     88,432  Clisvcl.exe         Intel
+	  15-Apr-01  00:30  2.0.1493.3642      8,512  Cliver.exe          Intel
+	  15-Apr-01  00:30                        67  Compverbase.ini     Intel
+	  15-Apr-01  00:30                        67  Compversmsapm32.ini Intel
+	  15-Apr-01  00:30                        67  Compverswdist.ini   Intel
+	  01-Mar-01  22:20  2.0.1493.3216     39,264  Cqmgr32.dll         Intel
+	  01-Mar-01  13:00  2.0.1493.3125    338,272  Mslmclin.dll        Intel
+	  01-Mar-01  13:00  2.0.1493.3125    269,664  Ndsclin.dll         Intel
+	  02-Mar-01  00:00  2.0.1493.3236     54,128  Odpsys32.exe        Intel
+	  02-Mar-01  00:00  2.0.1493.3236     60,272  Odpusr32.exe        Intel
+	  25-Sep-01  23:14  2.0.1250.7       762,688  Preinst.exe         Intel
+	  02-Mar-01  00:30  2.0.1493.3242    289,136  Smsapm32.exe        Intel
+	  15-Apr-01  00:00  2.0.92.9       1,659,025  Swdist32.exe        Intel
+	  15-Apr-01  00:30  2.0.92.9         654,800  Apasetup.exe        Alpha
+	  01-Mar-01  22:20  2.0.1493.3216    293,648  Ccim32.dll          Alpha
+	  15-Apr-01  00:30  2.0.92.9       1,925,230  Ccmcore.exe         Alpha
+	  02-Mar-01  00:30  2.0.1493.3242  1,940,240  Clibase.dll         Alpha
+	  15-Apr-01  00:30  2.0.1493.3642 11,734,473  Clicore.exe         Alpha
+	  02-Mar-01  00:10  2.0.1493.3238    125,712  Clisvcl.exe         Alpha
+	  15-Apr-01  00:30  2.0.1493.3642     13,584  Cliver.exe          Alpha
+	  15-Apr-01  00:30                        67  Compverbase.ini     Alpha
+	  15-Apr-01  00:30                        67  Compversmsapm32.ini Alpha
+	  15-Apr-01  00:30                        67  Compverswdist.ini   Alpha
+	  01-Mar-01  22:20  2.0.1493.3216     66,832  Cqmgr32.dll         Alpha
+	  01-Mar-01  13:00  2.0.1493.3125    578,832  Mslmclin.dll        Alpha
+	  02-Mar-01  00:00  2.0.1493.3236     75,024  Odpsys32.exe        Alpha
+	  02-Mar-01  00:00  2.0.1493.3236     83,728  Odpusr32.exe        Alpha
+	  02-Mar-01  00:30  2.0.1493.3242    384,272  Smsapm32.exe        Alpha
+	  15-Apr-01  00:00  2.0.92.9       1,714,529  Swdist32.exe        Alpha
+	
+	The ICP5 post-SMS 2.0 Service Pack 3 version of this fix should have the
+	following file attributes or later:
+	
+	  Date       Time   Version        Size       File name           Platform
+	  ------------------------------------------------------------------------
+	  15-Apr-01  00:30  2.0.92.9         394,283  Apasetup.exe         Intel 
+	  01-Mar-01  13:00  2.0.1493.3125    259,936  Bindclin.dll         Intel
+	  01-Mar-01  22:20  2.0.1493.3216    181,584  Ccim32.dll           Intel
+	  15-Apr-01  00:30  2.0.92.9       1,324,076  Ccmcore.exe          Intel
+	  02-Mar-01  00:30  2.0.1493.3242  1,225,120  Clibase.dll          Intel
+	  15-Apr-01  00:30  2.0.1493.3642  8,664,572  Clicore.exe          Intel
+	  02-Mar-01  00:10  2.0.1493.3238     88,432  Clisvcl.exe          Intel
+	  15-Apr-01  00:30  2.0.1493.3642      8,512  Cliver.exe           Intel
+	  15-Apr-01  00:30                        67  Compverbase.ini      Intel
+	  15-Apr-01  00:30                        67  Compversmsapm32.ini  Intel
+	  15-Apr-01  00:30                        67  Compverswdist.ini    Intel
+	  01-Mar-01  22:20  2.0.1493.3216     39,264  Cqmgr32.dll          Intel
+	  01-Mar-01  13:00  2.0.1493.3125    338,272  Mslmclin.dll         Intel
+	  01-Mar-01  13:00  2.0.1493.3125    269,664  Ndsclin.dll          Intel
+	  02-Mar-01  00:00  2.0.1493.3236     54,128  Odpsys32.exe         Intel
+	  02-Mar-01  00:00  2.0.1493.3236     60,272  Odpusr32.exe         Intel
+	  25-Sep-01  23:14  2.0.1250.7       762,688  Preinst.exe          Intel
+	  02-Mar-01  00:30  2.0.1493.3242    289,136  Smsapm32.exe         Intel
+	  15-Apr-01  00:00  2.0.92.9       1,659,025  Swdist32.exe         Intel
+	  15-Apr-01  00:30  2.0.92.9         654,800  Apasetup.exe         Alpha
+	  01-Mar-01  22:20  2.0.1493.3216    293,648  Ccim32.dll           Alpha
+	  15-Apr-01  00:30  2.0.92.9       1,925,230  Ccmcore.exe          Alpha
+	  02-Mar-01  00:30  2.0.1493.3242  1,940,240  Clibase.dll          Alpha
+	  15-Apr-01  00:30  2.0.1493.3642 11,734,473  Clicore.exe          Alpha
+	  02-Mar-01  00:10  2.0.1493.3238    125,712  Clisvcl.exe          Alpha
+	  15-Apr-01  00:30  2.0.1493.3642     13,584  Cliver.exe           Alpha
+	  15-Apr-01  00:30                        67  Compverbase.ini      Alpha
+	  15-Apr-01  00:30                        67  Compversmsapm32.ini  Alpha
+	  15-Apr-01  00:30                        67  Compverswdist.ini    Alpha
+	  01-Mar-01  22:20  2.0.1493.3216     66,832  Cqmgr32.dll          Alpha
+	  01-Mar-01  13:00  2.0.1493.3125    578,832  Mslmclin.dll         Alpha
+	  02-Mar-01  00:00  2.0.1493.3236     75,024  Odpsys32.exe         Alpha
+	  02-Mar-01  00:00  2.0.1493.3236     83,728  Odpusr32.exe         Alpha
+	  02-Mar-01  00:30  2.0.1493.3242    384,272  Smsapm32.exe         Alpha
+	  15-Apr-01  00:00  2.0.92.9       1,714,529  Swdist32.exe         Alpha
+	
+	NOTE: Due to file dependencies, the most recent hotfix or feature that contains
+	the above files may also contain additional files.
+	
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed that this is a problem in the Microsoft products that
+	are listed at the beginning of this article. This problem was first corrected in
+	the Systems Management Server 2.0 Service Pack 4 Hotfix Rollup Package (HRP).
+	
+	For additional information about the SMS 2.0 SP4 HRP, click the article number
+	below to view the article in the Microsoft Knowledge Base:
+	
+	  Q323206 SMS: List of Bugs Fixed in the Systems Management Server 2.0 SP4 HRP
+	
+	MORE INFORMATION
+	================
+	
+	The SMS Administrators online manual describes the scenarios under which
+	software will be removed when the advertisement is considered to be revoked on a
+	32-bit client. The scenarios are:
+	
+	1. The client is not longer a member of the collection that is specified in the
+	  advertisement.
+	
+	2. The advertisement is deleted.
+	
+	3. The advertisement expires.
+	
+	Without the application of the hotfix that is described in this article, software
+	uninstall with the "Remove software when it is no longer advertised" option only
+	occurs consistently when the advertisement has expired and the advertisement
+	target is a computer-based collection. If the advertisement target is removed
+	from the collection, or the advertisement is deleted, software uninstall and the
+	associated status messages will not occur as you expect. If the collection to
+	which the advertisement is targeted is made up of User or User Group resources,
+	software uninstall and associated uninstall status messages do not occur.
+	
+	Application of the hotfix that is described in this article provides software
+	uninstall under the three previously described scenarios, whether the
+	advertisement is targeted at a Systems, User, or User Group-based collection.
+	Advertisement status messages for software uninstall are also correctly
+	generated.
+	
+	For more descriptions of the "Remove software when it is no longer advertised"
+	feature, view the SMS Administrator online help under "Distributing software to
+	clients", "Using Programs in Packages", "Create a Program" and then click the
+	Advanced Tab link.
+	
+	How to Install the Hotfix
+	-------------------------
+	
+	Apply this fix on all of the sites in the SMS hierarchy. To install the fix, use
+	one of the following methods.
+	
+	How to Use the Hotfix Installer:
+	
+	NOTE: You can use this method only on Intel-based computers.
+	
+	1. Copy the hotfix folder structure to a local folder on your site server or to
+	  a share on your network. The I386 and Alpha subfolders are required; you must
+	  also download them from the Microsoft FTP site. It is important to keep the
+	  folder structure intact. The Q316021.exe file is a Microsoft Windows
+	  Installer file that updates specific files on your site server.
+	
+	2. Log on to your site server by using an account with administrator rights.
+	
+	3. On the site server, quit the SMS Administrator console.
+	
+	4. Run the Q316021.exe file and follow the instructions in the wizard. The
+	  Systems Management Server services are stopped and restarted as part of the
+	  installation process.
+	
+	How to Manually Install the Hotfix:
+	
+	1. Copy the update program file (Q316021.exe) and platform folders to a new
+	  folder. The folder structure must be such that the program file is located
+	  one folder "above" the platform folders.
+	
+	2. Quit the SMS Administrator console and stop all SMS services in Control
+	  Panel. If the SMS_SITE_BACKUP service is running, stop it.
+	
+	3. Replace the Clicore.exe file that is located in the
+	  SMS\Inboxes\Clicomp.src\Base\<platform> folder with the version that is
+	  located in the hotfix <platform> folder.
+	
+	4. Replace the Compver.ini that is located in the SMS\Inboxes\Clicomp.src\Base
+	  folder with the Compverbase.ini file that is located in the hotfix
+	  <platform> folder. The file must maintain its original name of
+	  Compver.ini.
+	
+	5. Replace the Ccmcore.exe file that is located in the
+	  SMS\Inboxes\Clicomp.src\Base\<platform> folder with the version that is
+	  located in the hotfix <platform> folder.
+	
+	6. Replace the Apasetup.exe file that is located in the
+	  SMS\Inboxes\Clicomp.src\smsapm32\<platform> folder with the version
+	  that is located in the hotfix <platform> folder.
+	
+	7. Replace the Compver.ini file that is located in the
+	  SMS\Inboxes\Clicomp.src\Smsapm32 folder with the Compversmsapm32.ini file
+	  that is located in the <platform> folder. The file must maintain its
+	  original name of Compver.ini.
+	
+	8. Replace the Swdist32.exe file that is located in the
+	  SMS\Inboxes\Clicomp.src\SWDist\<platform> folder with the version that
+	  is located in the hotfix <platform> folder.
+	
+	9. Replace the Compver.ini file that is located in the
+	  SMS\Inboxes\Clicomp.src\SWDist folder with the Compverswdist.ini file that is
+	  located in the hotfix <platform> folder. The file must maintain its
+	  original name of Compver.ini.
+	
+	10. Replace the Bindclin.dll file that is located in the
+	  SMS\Bin\<platform> folder with the version that is located in the
+	  hotfix <platform> folder.
+	
+	11. Replace the Ccim32.dll file that is located in the SMS\Bin\<platform>
+	  folder with the version that is located in the hotfix <platform>
+	  folder.
+	
+	12. Replace the Clisvcl.exe file that is located in the SMS\Bin\<platform>
+	  folder with the version that is located in the hotfix <platform>
+	  folder.
+	
+	13. Replace the Mslmclin.dll file that is located in the
+	  SMS\Bin\<platform> folder with the version that is located in the
+	  hotfix <platform> folder.
+	
+	14. Replace the Ndsclin.dll file that is located in the SMS\Bin\<platform>
+	  folder with the version that is located in the hotfix <platform>
+	  folder.
+	
+	15. Replace the Odpsys32.exe file that is located in the
+	  SMS\Bin\<platform> folder with the version that is located in the
+	  hotfix <platform> folder.
+	
+	16. Replace the Odpusr32.exe file that is located in the
+	  SMS\Bin\<platform> folder with the version that is located in the
+	  hotfix <platform> folder.
+	
+	17. Replace the SMSAPM32.EXE file that is located in the
+	  SMS\Bin\<platform> folder with the version that is located in the
+	  hotfix <platform> folder.
+	
+	18. Restart the SMS site services.
+	
+	Additional query words: prodsms
+	
+	======================================================================
+	Keywords          : kbenv kberrmsg kbsetup kbsms200 kbsms200bug kbsms120 kbsms120bug 
+	Technology        : kbSMSSearch kbSMS200SP2 kbSMS200SP3 kbSMS200SP4
+	Version           : :2.0 SP2,2.0 SP3,2.0 SP4
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

@@ -1,0 +1,201 @@
+---
+layout: page
+title: "Q141414: HOWTO: Enumerate OLE and VB Controls from an OLE Control"
+permalink: kb/141/Q141414/
+---
+
+## Q141414: HOWTO: Enumerate OLE and VB Controls from an OLE Control
+
+	Article: Q141414
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 2.0,2.1,2.2,4.0,5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbActiveX kbCOMt kbCtrlCreate kbMFC kbVBp400 kbVBp500 kbVBp600 kbVC200 kbVC400 kbVC500
+	Last Modified: 07-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+	- Microsoft Visual C++, versions 2.0, 2.1, 2.2, 4.0 
+	- Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+	- Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+	- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	For an OLE control to communicate with another control placed on the same Visual
+	Basic form, the OLE control needs access to at least one interface pointer of
+	the other control. This article illustrates a technique you can use to enumerate
+	both OLE and Visual Basic controls present on a particular form and retrieve an
+	interface pointer to these controls. Note that the same technique could be
+	applied to enumerate controls placed on other control containers, provided that
+	container exposes the functionality required to implement the technique.
+	
+	MORE INFORMATION
+	================
+	
+	Given a pointer to IOleClientSite, it is possible to enumerate through all of
+	the other controls on a form by making use of the following interfaces:
+	
+	  IOleClientSite
+	  IOleContainer
+	  IEnumUnknown
+	  IUnknown
+	  IOleObject
+	  IOleClientSite
+	  IOleControlSite
+	
+	Note that most of these interfaces are container-side interfaces, so the
+	technique mentioned here is container dependent. For this method to work, the
+	container must provide support for IOleContainer, which is currently defined as
+	a mandatory interface in the OLE control container guidelines. Both MFC version
+	4.0 and greater and Visual Basic version 4.0 and greater OLE control containers
+	provide support for this interface. Before using this method with another
+	control container, ensure that it provides support for IOleContainer.
+	
+	The method itself is illustrated by the sample code listed in this article. You
+	can incorporate the code into an OLE control generated using ControlWizard. Use
+	the code to enumerate all the controls, internal Visual Basic controls as well
+	OLE controls, by calling IOleContainer::EnumObjects, and passing the following
+	flags as its first parameter:
+	
+	     OLECONTF_EMBEDDINGS: is used to retrieve OLE Controls.
+	     OLECONTF_OTHERS    : is used to retrieve other objects such as Visual
+	                          Basic internal controls.
+	
+	     hr = lpContainer->EnumObjects(OLECONTF_EMBEDDINGS | OLECONTF_OTHERS,
+	                                &lpEnumUnk);
+	
+	The differentiating aspect between OLE controls and other objects such as
+	internal Visual Basic controls is that only OLE controls support the IOleObject
+	interface. Hence, if a QueryInterface for IID_IOleObject fails for an object,
+	then it is a different type of object. Also, if the control container provides
+	support for Extended controls as does Visual Basic 4.0, the Extended control for
+	a particular OLE control can also be retrieved using the method illustrated by
+	the sample code.
+	
+	Note that most of the functionality provided by the following sample code depends
+	solely on the extent of the functionality exposed by the control container
+	itself.
+	
+	Also note that the LPOLECLIENTSITE pointer can be obtained through a call to
+	COleControl::GetClientSite().
+	
+	Sample Code
+	-----------
+	
+	  void EnumAllControlNames(LPOLECLIENTSITE lpSite)
+	  {
+	     LPOLECONTAINER lpContainer;
+	     LPENUMUNKNOWN lpEnumUnk;
+	
+	     // Note that the IOleContainer interface is currently defined as
+	     // mandatory. It must be implemented by control containers,
+	     // in the OLE Control Containers Guidelines.
+	     HRESULT hr = lpSite->GetContainer(&lpContainer);
+	     if(FAILED(hr)) {
+	        OutputDebugString(_T("Unable to get to the container.\n"));
+	        return;
+	     }
+	
+	     // OLECONTF_EMBEDDINGS is used to retrieve OLE Controls.
+	     // OLECONTF_OTHERS is used to retrieve other objects such as
+	     // Visual Basic internal controls
+	     hr = lpContainer->EnumObjects(
+	                         OLECONTF_EMBEDDINGS | OLECONTF_OTHERS,
+	                         &lpEnumUnk);
+	     if(FAILED(hr)) {
+	        lpContainer->Release();
+	        return;
+	     }
+	
+	     LPUNKNOWN lpUnk;
+	     while (lpEnumUnk->Next(1, &lpUnk, NULL) == S_OK) {
+	        LPOLEOBJECT lpObject = NULL;
+	        LPOLECONTROLSITE lpTargetSite = NULL;
+	        LPOLECLIENTSITE lpClientSite = NULL;
+	        LPDISPATCH lpDisp;
+	
+	        hr = lpUnk->QueryInterface(
+	                      IID_IOleObject, (LPVOID*)&lpObject);
+	        if(SUCCEEDED(hr)) {
+	           // This is an OLE control.
+	           // Navigate to the Extended Control because Visual Basic 4.0 uses
+	           // Extended controls.
+	           hr = lpObject->GetClientSite(&lpClientSite);
+	           if(SUCCEEDED(hr)) {
+	              // You have the IOleClientSite interface
+	              hr = lpClientSite->QueryInterface(
+	                         IID_IOleControlSite, (LPVOID*)&lpTargetSite);
+	              if(SUCCEEDED(hr)) {
+	                 // You have the IOleControlSite interface
+	                 // Get the IDispatch for the extended control.
+	                 // Note that Extended controls are optional in the OLE
+	                 // specifications for OLE Control Containers.
+	                 hr = lpTargetSite->GetExtendedControl(&lpDisp);
+	              }
+	           }
+	        }
+	        else {
+	           // This is either an internal VB control or the
+	           // VB form itself.
+	           hr = lpUnk->QueryInterface(
+	                         IID_IDispatch, (LPVOID*)&lpDisp);
+	        }
+	
+	        if(SUCCEEDED(hr)) {
+	           VARIANT va;
+	           VariantInit(&va);
+	           DISPID dispid;
+	           DISPPARAMS dispParams = { NULL, NULL, 0, 0 };
+	
+	           // Get the names of all the controls present in a VB form.
+	           LPWSTR lpName[1] = { (WCHAR *)L"Name" };
+	           hr = lpDisp->GetIDsOfNames(IID_NULL, lpName, 1,
+	                                        LOCALE_SYSTEM_DEFAULT, &dispid);
+	
+	           if(SUCCEEDED(hr)) {
+	              hr = lpDisp->Invoke(dispid/*0x80010000*/, IID_NULL,
+	                                    LOCALE_SYSTEM_DEFAULT,
+	                                    DISPATCH_PROPERTYGET |
+	                                    DISPATCH_METHOD,
+	                                    &dispParams, &va, NULL, NULL);
+	              if(SUCCEEDED(hr)) {
+	                 CString szTmp((LPCWSTR)va.bstrVal);
+	                 // szTmp now has the name.
+	                 OutputDebugString(_T("And the name is ... ") + szTmp +
+	                                   _T("\n"));
+	              }
+	           }
+	           lpDisp->Release();
+	        }
+	
+	        // Release interface pointers.
+	        if(lpObject)     lpObject->Release();
+	        if(lpTargetSite) lpTargetSite->Release();
+	        if(lpClientSite) lpClientSite->Release();
+	
+	        lpUnk->Release();
+	     }    // End of While statement
+	
+	     // Final clean up
+	     lpEnumUnk->Release();
+	     lpContainer->Release();
+	  }
+	
+	Additional words: VB VC visualc cdk ocx
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbActiveX kbCOMt kbCtrlCreate kbMFC kbVBp400 kbVBp500 kbVBp600 kbVC200 kbVC400 kbVC500 kbVC600 kbGrpDSMFCATL 
+	Technology        : kbVCsearch kbVC400 kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600 kbVC220 kbVC500 kbVC600 kbVC200 kbVC210 kbVC32bitSearch kbVC500Search
+	Version           : :2.0,2.1,2.2,4.0,5.0,6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

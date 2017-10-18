@@ -1,0 +1,146 @@
+---
+layout: page
+title: "Q177534: XFOR: LME-PROFS-MEXDIA Crashes Processing a Long File Extension"
+permalink: kb/177/Q177534/
+---
+
+## Q177534: XFOR: LME-PROFS-MEXDIA Crashes Processing a Long File Extension
+
+	Article: Q177534
+	Product(s): Microsoft Exchange
+	Version(s): 5.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 18-MAR-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.0 
+	- LinkAge Message Exchange, version 3.2 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	The Microsoft Exchange to OV/VM transform (LME-PROFS-MEXDIA) process may
+	terminate unexpectedly with an access violation. The resulting Drwtsn32.log
+	and/or User.dmp may have a stack back trace similar to the following:
+	
+	  function: XFMDOSFEMFind
+	          0037defe 837de800         cmp   dword ptr [ebp-0x18],0x0
+	ss:018cdca6=????????
+	          0037df02 0f850b000000     jne     XFMDOSFEMFind+0xc0 (0037df13)
+	          0037df08 66c745e40200     mov     word ptr [ebp-0x1c],0x2
+	ss:018cdca7=????
+	          0037df0e e916000000       jmp     XFMDOSFEMFind+0xd6 (0037df29)
+	          0037df13 8b45e8           mov     eax,[ebp-0x18]
+	ss:018cdca6=????????
+	          0037df16 83c008           add     eax,0x8
+	          0037df19 8945fc           mov     [ebp-0x4],eax
+	ss:018cdca6=????????
+	          0037df1c 8b45fc           mov     eax,[ebp-0x4]
+	ss:018cdca6=????????
+	          0037df1f 668b4004         mov     ax,[eax+0x4]
+	ds:0236ea15=????
+	          0037df23 8b4d0c           mov     ecx,[ebp+0xc]
+	ss:018cdca6=????????
+	  FAULT ->0037df26 668901           mov     [ecx],ax
+	ds:20202020=????
+	          0037df29 668b45e4         mov     ax,[ebp-0x1c]
+	ss:018cdca7=????
+	          0037df2d e900000000       jmp     XFMDOSFEMFind+0xdf (0037df32)
+	          0037df32 5f               pop     edi
+	          0037df33 5e               pop     esi
+	          0037df34 5b               pop     ebx
+	          0037df35 c9               leave
+	          0037df36 c3               ret
+	          0037df37 55               push    ebp
+	          0037df38 8bec             mov     ebp,esp
+	          0037df3a 83ec0c           sub     esp,0xc
+	          0037df3d 53               push    ebx
+	
+	  *----> Stack Back Trace <----*
+	
+	  FramePtr ReturnAd Param#1  Param#2  Param#3  Param#4  Function Name
+	  0012f2a0 20202020 20202020 20202020 20202020 20202020
+	LSXFM!XFMDOSFEMFind
+	
+	  *----> Raw Stack Dump <----*
+	  0012f278  30 00 00 00 70 0c ab 00 - 00 f0 fd 7f 00 00 00 00
+	0...p...........
+	  0012f288  47 89 bd 00 30 3d 38 00 - 43 53 43 20 20 20 20 20  G...0=8.CSC
+	  0012f298  20 20 20 20 4f 89 bd 00 - 20 20 20 20 20 20 20 20      O...
+	  0012f2a8  20 20 20 20 20 20 20 20 - 20 20 20 20 20 20 20 20
+	  0012f2b8  20 20 20 20 00 53 43 20 - 20 20 20 20 20 20 20 20      .SC
+	  0012f2c8  20 20 20 20 20 20 20 20 - 20 20 20 20 20 20 20 20
+	  0012f2d8  20 20 20 20 20 20 20 20 - 20 20 20 20 20 20 20 20
+	  0012f2e8  00 00 00 00 70 0c ab 00 - 00 00 00 00 05 00 00 00
+	....p...........
+	  0012f2f8  50 f3 12 00 5a d2 00 10 - 70 ba bd 00 dc f2 12 00
+	P...Z...p.......
+	  0012f308  01 00 00 00 b0 ff 12 00 - 48 b0 f3 77 40 ca f3 77
+	........H..w@..w
+	  0012f318  ff ff ff ff 4c f3 12 00 - 50 d5 00 10 a4 01 00 00
+	....L...P.......
+	  0012f328  b4 f3 12 00 05 00 00 00 - 78 f3 12 00 af 13 f0 77
+	........x......w
+	  0012f338  a4 01 00 00 cb d4 00 10 - 30 00 00 00 70 0c ab 00
+	........0...p...
+	  0012f348  00 f0 fd 7f 00 00 fd 7f - 38 c6 02 10 14 00 12 00
+	........8.......
+	  0012f358  88 f3 12 00 b9 ea 00 10 - 30 00 00 00 70 0c ab 00
+	........0...p...
+	  0012f368  00 f0 fd 7f 00 f0 fd 7f - 00 00 fd 7f 10 c5 02 10
+	................
+	  0012f378  05 00 00 00 00 00 00 00 - 30 00 00 00 02 00 12 00
+	........0.......
+	  0012f388  bc f3 12 00 11 6a 37 00 - 02 5a 40 00 01 00 00 00
+	.....j7..Z@.....
+	  0012f398  30 00 00 00 30 00 00 00 - 70 0c ab 00 00 f0 fd 7f
+	0...0...p.......
+	  0012f3a8  94 f7 12 00 c4 f3 12 00 - 0a 12 40 00 30 00 00 00
+	..........@.0...
+	
+	This occurs on a message with an attachment sent from Exchange to an OV/VM user.
+	
+	CAUSE
+	=====
+	
+	The LME-PROFS-MEXDIA process allocated a buffer to hold an file attachment
+	extension name up to 8 characters long. When the process encountered a file
+	extension longer that 8 characters, it overwrote the buffer and wrote onto the
+	stack, causing an access violation and process termination.
+	
+	WORKAROUND
+	==========
+	
+	Manually delete the message using the Queue Viewer extension of the Linkage
+	Exchange - Office Vision/VM Connector. The message will be the first in the
+	Outbound from Exchange queue (READY-OUT).
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Linkage Message Exchange,
+	version 3.2.
+	
+	
+	A supported fix is now available, but has not been fully regression-tested and
+	should be applied only to systems experiencing this specific problem. Unless you
+	are severely impacted by this specific problem, Microsoft recommends that you
+	wait for the next Service Pack that contains this fix. Contact Microsoft
+	Technical Support for more information.
+	
+	
+	Additional query words: crash hang GPF general protection fault linkage
+	======================================================================
+	Keywords          :  
+	Technology        : kbZNotKeyword6 kbExchangeSearch kbExchange500 kbZNotKeyword2 kbLinkAgeSearch kbLinkAge320
+	Version           : 5.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

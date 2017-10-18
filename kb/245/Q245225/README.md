@@ -1,0 +1,181 @@
+---
+layout: page
+title: "Q245225: HOW TO: Configure and Test a PERL Script with IIS 4.0, 5.0, 5.1"
+permalink: kb/245/Q245225/
+---
+
+## Q245225: HOW TO: Configure and Test a PERL Script with IIS 4.0, 5.0, 5.1
+
+	Article: Q245225
+	Product(s): Internet Information Server
+	Version(s): 4.0,5.0
+	Operating System(s): 
+	Keyword(s): kbIIS kbiis400 kbiis500 kbHOWTOmaster
+	Last Modified: 07-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Server version 4.0 
+	- Microsoft Internet Information Services version 5.0 
+	- Microsoft Internet Information Services version 5.1 
+	-------------------------------------------------------------------------------
+	
+	
+	The third-party products that are discussed in this article are manufactured by companies that are independent of Microsoft. Microsoft makes no warranty, implied or otherwise, regarding the performance or reliability of these products.
+	
+	IN THIS TASK
+	------------
+	
+	- SUMMARY
+	
+	   - Create a Test PERL Script
+	   - Configure PERL Script Mapping for IIS 4.0
+	   - Configure PERL Script Mapping for IIS 5.0 and 5.1
+	
+	- REFERENCES
+	
+	SUMMARY
+	=======
+	
+	This step-by-step article describes how to configure and test a PERL script with
+	Internet Information Server (IIS) version 4.0 and Internet Information Services
+	(IIS) versions 5.0 and 5.1.
+	
+	The following PERL script can be used with IIS to test for the correct
+	installation and execution of both Common Gateway Interface (CGI) and Internet
+	Server Application Programming Interface (ISAPI) PERL script language
+	interpreters, such as ActiveState PERL and PERL for ISAPI.
+	
+	For more information about ActiveState PERL interpreters, visit the following
+	ActiveState Web site:
+	
+	  http://www.activestate.com/
+	
+	Create a Test PERL Script
+	-------------------------
+	
+	In Notepad, save the following lines of code in the Scripts directory as
+	Helloworld.pl:
+	
+	  $url = "http://$ENV{SERVER_NAME}$ENV{URL}";
+	  $ip = "$ENV{REMOTE_ADDR}";
+	  print <<ENDOFTEXT;
+	  HTTP/1.0 200 OK
+	  Content-Type: text/html
+	
+	  <HTML>
+	  <HEAD><TITLE>Hello World!</TITLE></HEAD>
+	  <BODY>
+	  <H4>Hello World!</H4>
+	  <P>You have reached <a href="$url">$url</a></P>
+	  <P>Your IP Address is $ip</P>
+	  <H5>Have a nice day!</H5>
+	  </BODY>
+	  </HTML>
+	  ENDOFTEXT
+	  exit(0);
+	
+	NOTE: The PERL language permits no spaces at the beginning of a line.
+	
+	NOTE: After you create the file, you must configure PERL to run securely with
+	IIS. Do not put Perl.exe in any of the directories that are accessible by a user
+	with a browser.
+	
+	By using the Internet Service Manager (ISM) Microsoft Management Console (MMC)
+	snap-in, you can put the Perl.exe or PerlIS.dll files outside the typical Web
+	directory structure that a user has access to, and you can use the Script
+	Mapping feature of IIS to configure execution of PERL scripts.
+	
+	Configure PERL Script Mapping for IIS 4.0
+	-----------------------------------------
+	
+	1. Click Start, click Programs, click Windows NT 4.0 Option Pack, click
+	  Microsoft Internet Information Server, and then click Internet Service
+	  Manager.
+	
+	2. Right-click a Web site that you want to enable PERL for, and then click
+	  Properties.
+	
+	3. Click the Home Directory tab.
+	
+	4. Click Configuration.
+	
+	5. Click Add.
+	
+	6. Type the following for Executable:
+	
+	  "<full path to perlis.dll>\perlis.dll" (without the quotation marks)
+	
+	You can also type the following:
+	
+	  "<full path to perl.exe>\perl.exe %s %s" (without the quotation marks)
+	
+	NOTE: The "%s %s" is case-sensitive (for example, "%S %S" does not work).
+	
+	7. For Extension, type ".pl" (without the quotation marks).
+	
+	NOTE: Make sure that the All Verbs option is selected for full functionality, and
+	that the Script Engine check box is selected.
+	
+	8. Click OK to return to the ISM.
+	
+	With the default scripts directory with IIS, the URL is the following:
+	
+	  http://<Server Name>/scripts/helloworld.pl
+	
+	Configure PERL Script Mapping for IIS 5.0 and 5.1
+	-------------------------------------------------
+	
+	1. Click Start, click Programs, click Administrative Tools, and then click
+	  Internet Information Services.
+	
+	2. Right-click a Web site that you want to enable PERL for, and then click
+	  Properties.
+	
+	3. Click the Home Directory tab.
+	
+	4. Click Configuration.
+	
+	5. Click Add.
+	
+	6. Type the following for Executable:
+	
+	  "<full path to perlis.dll>\perlis.dll" (without the quotation marks)
+	
+	You can also type the following:
+	
+	  "<full path to perl.exe>\perl.exe %s %s" (without the quotation marks)
+	
+	NOTE: The "%s %s" is case-sensitive (for example, "%S %S" does not work).
+	
+	7. For Extension, type ".pl" (without the quotation marks).
+	
+	NOTE: Make sure that the All Verbs option is selected for full functionality, and
+	that the Script Engine check box is selected.
+	
+	8. Click OK to return to the ISM.
+	
+	With the default scripts directory with IIS, the URL is the following:
+	
+	  http://<Server Name>/scripts/helloworld.pl
+	
+	REFERENCES
+	==========
+	
+	For additional information about PERL Script in IIS 1.0, 2.0, and 3.0, click the
+	article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q150629 Configuring and Testing a PERL Script with Internet Information
+	  Server (IIS)
+	
+	Additional query words: iis
+	
+	======================================================================
+	Keywords          : kbIIS kbiis400 kbiis500 kbHOWTOmaster 
+	Technology        : kbiisSearch kbiis500 kbiis400 kbiis510
+	Version           : :4.0,5.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

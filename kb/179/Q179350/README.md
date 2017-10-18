@@ -1,0 +1,217 @@
+---
+layout: page
+title: "Q179350: How to Optimize Performance in Combat Flight Simulator"
+permalink: kb/179/Q179350/
+---
+
+## Q179350: How to Optimize Performance in Combat Flight Simulator
+
+	Article: Q179350
+	Product(s): Microsoft Home Games
+	Version(s): WINDOWS:1.0
+	Operating System(s): 
+	Keyword(s): kbenv kbui kbusage fs98 kbimu msgame
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Combat Flight Simulator: WWII Europe Series, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article discusses how to optimize game performance in Microsoft Combat
+	Flight Simulator.
+	
+	MORE INFORMATION
+	================
+	
+	To optimize performance in Combat Flight Simulator, find a balance between the
+	number of sound and display features you enable and the frame rate you can
+	maintain. The frame rate is the speed at which images or frames are drawn on the
+	screen, and is often measured in frames per second (fps). The appearance of
+	realistic motion improves as the frame rate increases.
+	
+	Performance in Combat Flight Simulator depends on both the features that you
+	select and the configuration of your computer. A set of features that you select
+	on one computer may not result in the same level of performance as an identical
+	set of features on a different computer.
+	
+	A computer that has a fast Pentium processor, sufficient memory, a 3D video
+	accelerator card, and more recent device drivers can maintain a higher level of
+	performance than a computer that barely meets the minimum system requirements.
+	
+	To optimize performance in Combat Flight Simulator, you must optimize your
+	hardware configuration, configure Combat Flight Simulator for the best
+	performance, and then monitor the frame rate when you select your preferred
+	features and settings.
+	
+	To do this, use the following methods.
+	
+	Quit Unnecessary Programs
+	-------------------------
+	
+	To increase the amount of available system resources, quit all unnecessary
+	programs that are running on your computer before you start Flight Simulator 98
+	or Flight Simulator 2000.
+	
+	To quit all unnecessary programs, use the appropriate method for your version of
+	Microsoft Windows.
+	
+	Microsoft Windows 95 or Microsoft Windows 98:
+	
+	1. Press CTRL+ALT+DELETE.
+	
+	2. In the Close Program dialog box, click any program except Explorer or Systray
+	  (which are components of Microsoft Windows), and then click End Task.
+	
+	  If you receive a message stating that the program is busy or not responding,
+	  click End Task again.
+	
+	3. Repeat steps 1 and 2 to quit all unnecessary programs that are running on
+	  your computer.
+	
+	Microsoft Windows 2000:
+	
+	1. Press CTRL+SHIFT+ESC.
+	
+	2. On the Applications tab, click any program, and then click End Task.
+	
+	  Repeat this step to quit all unnecessary programs that are running on your
+	  computer.
+	
+	3. Quit Windows Task Manager.
+	
+	NOTE: Some programs start automatically every time you restart your computer. For
+	information about how to disable these programs, see the printed or online
+	documentation for the program.
+	
+	Optimize Your Hardware Configuration
+	------------------------------------
+	
+	To optimize your hardware configuration:
+	
+	1. Contact your video hardware manufacturer to inquire about how to obtain and
+	  install the latest version of the video driver for your video adapter.
+	
+	2. Contact your audio hardware manufacturer to inquire about how to obtain and
+	  install the latest version of the sound driver for your sound card.
+	
+	Set the display color palette to 256 colors:
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click Display.
+	
+	3. Click the Settings tab.
+	
+	4. In the Colors or Color Palette box, click 256 Colors, and then click OK.
+	
+	5. If you are prompted to restart the computer, click Yes.
+	
+	Configure the Program for the Best Performance
+	----------------------------------------------
+	
+	To configure Combat Flight Simulator for the best performance:
+	
+	1. Disable stereo sound and reduce the audio sample rate in the program. To do
+	  this:
+	
+	  a. Quit Combat Flight Simulator.
+	
+	  b. Click Start, point to Programs, point to Accessories,and then click
+	     Notepad.
+	
+	  c. On the File menu, click Open.
+	
+	  d. Type the line listed below (including the quotation marks), and then click
+	     OK
+	
+	  "<drive>:\Program Files\Microsoft Games\Combat Flight
+	  Simulator\Combatfs.cfg"
+	
+	     where <drive> is the letter of the hard disk on which Combat Flight
+	     Simulator is installed.
+	
+	  e. Type the following lines, pressing ENTER after you type each line, and
+	     then press ENTER again after you type the last line:
+	
+	  [SOUND]
+	  Channels=1
+	  SamplesPerSec=11025
+	
+	  f. On the File menu, click Save.
+	
+	  g. On the File menu, click Exit.
+	
+	     NOTE: To restore stereo sound, type a SEMICOLON (;) at the beginning of the
+	     Channels=1 line. To restore the default audio sample rate, type a
+	     SEMICOLON (;) at the beginning of the SamplesPerSec=11025 line.
+	
+	2. Disable weather options in Combat Flight Simulator. To do this:
+	
+	  a. Start Combat Flight Simulator, and then click Fly Now.
+	
+	  b. On the World menu, click Time And Weather.
+	
+	  c. Click Haze in the Clouds box, and then click None in the Wind box.
+	
+	  d. Click OK.
+	
+	3. Reduce scenery complexity and display preferences in Combat Flight Simulator
+	  to their minimum settings. To do this:
+	
+	  a. On the Options menu, click Settings.
+	
+	  b. In the Image Complexity box, click Very Sparse.
+	
+	  c. Click Advanced Display Settings.
+	
+	  d. Click to clear all selected check boxes under Aircraft and Scenery.
+	
+	  e. In the Full Screen Resolution box, click 320x200x16.
+	
+	  f. Click OK.
+	
+	  g. Under Display, click to select the Enable Hardware Acceleration check
+	     box.
+	
+	     NOTE: Hardware acceleration may affect performance in different ways,
+	     depending on the video adapter that is installed in the computer. If you
+	     disable hardware acceleration in Flight Simulator 2000, performance may
+	     improve with some video adapters, and it may decline with other video
+	     adapters. If the Enable Hardware Acceleration check box is unavailable,
+	     your video adapter may not support 3D hardware acceleration. Contact your
+	     hardware manufacturer for more information.
+	
+	  h. Click OK.
+	
+	  i. If Combat Flight Simulator is running in Window mode, press ALT+ENTER to
+	     switch to Full Screen mode.
+	
+	Enable Features or Increase Settings in the Program
+	---------------------------------------------------
+	
+	To finish optimizing performance in Combat Flight Simulator, use the previous
+	methods to enable features or increase settings one at a time. Start with your
+	favorite features, and stop before the minimum frame rate decreases to a level
+	that you consider unacceptable. To display the frame rate, press and hold down
+	SHIFT as you press Z twice.
+	
+	NOTE: The frame rate in Full Screen mode is faster than the frame rate in Window
+	mode. If you want to enable more features in Flight Simulator, switch to Full
+	Screen mode. To switch between Full Screen mode and Window mode, press
+	ALT+ENTER.
+	
+	Additional query words: msgame combatfs cfs flightsim fltsim
+	
+	======================================================================
+	Keywords          : kbenv kbui kbusage fs98 kbimu msgame 
+	Technology        : _IKkbbogus kbGamesSearch kbCombatFlightSim kbCombatFlightSimSearch kbSimSearch
+	Version           : WINDOWS:1.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

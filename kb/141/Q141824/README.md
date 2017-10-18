@@ -1,0 +1,265 @@
+---
+layout: page
+title: "Q141824: INFO: Common Remote OLE Automation Errors"
+permalink: kb/141/Q141824/
+---
+
+## Q141824: INFO: Common Remote OLE Automation Errors
+
+	Article: Q141824
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 4.0
+	Operating System(s): 
+	Keyword(s): kberrmsg kbList kbProgramming kbVBp400
+	Last Modified: 13-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Errors raised when working with the Remote OLE Automation feature of Visual
+	Basic 4.0, Enterprise Edition often do not include a full error description.
+	This article gives more detail on a number of the most common errors, including
+	possible causes and resolutions.
+	
+	MORE INFORMATION
+	================
+	
+	-2147023143 (&H800706d9)
+	
+	There are no more endpoints available from the endpoint mapper
+	---------------------------------------------------------------------------------------
+	
+	Common causes for this error are:
+	
+	- The Automation Manager isn't running on the server machine. Double check to
+	  make sure the server has a running instance of the Automation Manager.
+	
+	- If your server is running Windows 95, then set The Remote Automation
+	  Connection Manager's Authentication Level to "No Authentication." This is the
+	  only available setting on Windows 95.
+	
+	- The protocol specified may not be installed correctly on both the client and
+	  server machines. Determine whether the problem persists with other protocols
+	  and/or reinstall, or ensure that the protocol used is installed correctly on
+	  both machines.
+	
+	- The protocol may suffer a transient failure, even though the protocol
+	  specified was installed correctly on both machines. Rebooting the system
+	  eliminates the problem. If the problem occurs frequently, you should change
+	  protocols.
+	
+	-2147418111 (&H80010001)
+	
+	Call was rejected by callee
+	----------------------------------------------------
+	
+	This error usually occurs when the server application is too busy to respond to
+	the client. When a call comes into the Automation Manager, it will try to get
+	the attention of the OLE thread for the target object. If the thread refuses the
+	request (normally because it is busy with another request), the Automation
+	Manager will pause and then try again. The Automation Manager will continue
+	retrying until it succeeds or times out.
+	
+	
+	VBA error 5
+	
+	Illegal Procedure Call
+	----------------------------------
+	
+	Visual Basic maps several OLE errors to this single error message, so there are
+	many potential causes of this error. The most likely cause of this problem is
+	that the registry information on the client machine is wrong. Or the registry
+	information currently cached by the Visual Basic development environment is
+	wrong.
+	
+	For speed, Visual Basic will cache certain TypeLib and registry information. This
+	can lead to problems in the development environment, where you are frequently
+	building and rebuilding (and reregistering) classes.
+	
+	To fix problems with the registry, shut down both the client, the server, and
+	also the Automation Manager, and ensure that their registry entries are correct.
+	For more information on cleaning the registry entries see the section on
+	cleaning Registry entries at the end of this article.
+	
+	This error can also occur if an application calls the Error function after
+	getting an error. Error only understands the old 16-bit error codes and does not
+	know how to handle 32-bit error codes. It was included in Visual Basic 4.0 to
+	retain compatibility. Apps should use Err.Description to get the true
+	description string, and Err.Number to get the error code.
+	
+	-2147023152 (&H800706d0)
+	
+	The RPC protocol sequence was not found
+	----------------------------------------------------------------
+	
+	This can occur any time the client specifies a protocol that is not supported by
+	the client or server machines. Most frequently this error occurs when trying to
+	use Named Pipes to communicate with a Windows 95 server.
+	
+	VBA error 429
+	
+	Can't create object
+	---------------------------------
+	
+	This error, like VBA error 5, is a catch-all for a lot of problems and could be
+	caused by any of the situations listed above. Most frequently, the problem is:
+	
+	- The server is not registered on the client machine.
+	
+	- The server is not correctly registered on the remote computer.
+	
+	- Remote Automation is not correctly installed on the remote computer.
+	
+	- The Remote Automation proxy is not installed correctly on the client machine.
+	
+	VBA error 70
+	
+	Permission denied
+	------------------------------
+	
+	This error occurs when the Automation Manager refuses to create an object because
+	of a security violation. Check the system security policy on the server machine;
+	if it is set to the Allow by Key (2) or Allow by ACL (3), then make sure that
+	the appropriate CLSID has the right subkey or ACL.
+	
+	Winsock TSR not started
+	-----------------------
+	
+	On Win 3.1 machines running LanMAN, the Winsock TSR must be started before RPC
+	can use TCP/IP. If the TSR is not started, a system modal dialog box will appear
+	when the client tries to connect to the server. To fix this, run Sockets.exe
+	before starting Windows.
+	
+	Object does not support OLE Automation
+	--------------------------------------
+	
+	This error can occur when:
+	
+	1. An application has a reference to an object on a remote computer, and
+	
+	2. is trying to pass a reference to local object as a parameter of a method of
+	  the remote object, and
+	
+	3. the Automation Manager is not installed properly on the local machine.
+	
+	When a reference to a local object is passed to an application on another
+	computer, the local computer becomes a Remote Automation server, and the
+	Automation proxy must start the Automation Manager on the local machine. If the
+	Automation Manager is on the machine, try starting it with the command line
+	AUTMGR32 /REGSERVER to register it.
+	
+	-2147220998 (&H800401FA)
+	
+	Wrong OS or OS version for application
+	----------------------------------------------------------------
+	
+	The "Wrong OS version" error is caused by an incorrectly set InprocServer key.
+	Each public class in a Visual Basic server has an entry in the CLSID section of
+	the HKEY_CLASSES_ROOT registry key. Remote objects have their InprocServer (or
+	InprocServer32) subkey set to the automation proxy. The automation proxy is
+	Autprx32.dll for a 32-bit client on a 32-bit OS, Autprx16.dll for a 16-bit
+	client on a 32-bit OS, and Autprx.dll for a 16- bit client on a 16-bit OS. This
+	error can be raised when the InprocServer key is set to Autprx.dll on a 32-bit
+	system. Because of a bug in the 16-bit Remote Automation Connection Manager on
+	Windows 95, when an object is made remote, the InprocServer key is set
+	incorrectly in this manner. To fix this problem, do one of the following:
+	
+	- Manually edit the InprocServer key of each affected class so that it
+	  correctly points to Autprx16.dll.
+	
+	-or-
+	
+	- Use the 16-bit client registration tool (Clireg16.exe) to remote your server
+	  instead of RacMan16. CliReg16 correctly detects what OS it is running under
+	  and will set the InprocServer key accurately. CliReg16 can be run from the
+	  command line with this syntax:
+	
+	  clireg16 server.vbr -t server.tlb.
+	
+	-2146959355 (&H80080005)
+	
+	Server Execution Failed
+	------------------------------------------------
+	
+	This error is caused by an incorrectly registered Autprx16.dll. Although Setup
+	Wizard-generated setup programs will register Autprx16.dll completely, the
+	Visual Basic 4.0 16-bit installation does not. To fix this problem, unregister
+	and reregister Autprx16.dll with Regsvr.exe (or Regsvr16.exe).
+	
+	Other Errors
+	------------
+	
+	Many errors encountered while working with Remote OLE Automation are
+	characterized by a decimal error number that is both negative and longer than a
+	usual error number. Errors that fit this description are most commonly OLE
+	errors that are not mapped to a specific Visual Basic error. The corresponding
+	text for an error number like this can be found by searching for the hexadecimal
+	equivalent of the number in the winerror.h header file that is included with
+	Visual C++ and the Windows SDK.
+	
+	The Unregister and Reregister Method of Cleaning the Registry
+	-------------------------------------------------------------
+	
+	Generally you can clean the registry entries for a specific server by
+	unregistering and reregistering the relevant program. However, the method used
+	to perform these registry operations varies according to the location of the
+	server, its bit-type, and whether it is an in-process or out-of- process server.
+	This section will give a brief description of the tools and methods that can be
+	used to clean the registry entries for a specific application.
+	
+	Server Exe on the Server Machine
+	--------------------------------
+	
+	All out-of-process servers created by Visual Basic recognize the command line
+	switches UNREGSERVER and REGSERVER. These switches can be used for servers that
+	are run locally or remotely. To clean the registry entries for a server exe on
+	the server machine:
+	
+	1. Run the server with the command line switch /UNREGSERVER.
+	
+	2. Run the server with the command line switch /REGSERVER.
+	
+	Server Exe on a Client Machine
+	------------------------------
+	
+	If the server application doesn't reside physically on a client machine, the
+	CliRegXX tool should be used to unregister and reregister the server. The .vbr
+	file and the .tlb file for the relevant server are needed for both operations.
+	CliReg16 should be used for any 16-bit clients, regardless of the bit-type of
+	the OS, and CliReg32 should be used for all 32-bit clients. To use the client
+	registration tool to unregister and register a remote server:
+	
+	1. Run CliRegXX -u server.vbr -t server.tlb.
+	
+	2. Run CliRegXX server.vbr -t server.tlb. A dialog box will appear to prompt for
+	  the name of the remote machine and the network protocol.
+	
+	Server DLL (must be local)
+	--------------------------
+	
+	DLL servers do not recognize the UNREGSERVER and REGSERVER parameters. To perform
+	registry operations with in-process servers you must use the REGSVR32.EXE tool.
+	RegSvr32 will query the DLL for the registry information needed and perform the
+	operation specified (either a register or an unregister). To use:
+	
+	1. Run RegSvr32 -u server.dll.
+	
+	2. Run RegSvr32 server.dll.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kberrmsg kbList kbProgramming kbVBp400 
+	Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+	Version           : :4.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

@@ -1,0 +1,88 @@
+---
+layout: page
+title: "Q100537: Using MS-DOS 6 with IBM Lan Server 2.0 Remote Boot"
+permalink: kb/100/Q100537/
+---
+
+## Q100537: Using MS-DOS 6 with IBM Lan Server 2.0 Remote Boot
+
+	Article: Q100537
+	Product(s): Microsoft Disk Operating System
+	Version(s): MS-DOS:6.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 26-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft MS-DOS operating system version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	IBM Lan Server 2.0 does not directly support Remote Boot with MS-DOS 6.0. It was
+	released before MS-DOS 6.0 and supports MS-DOS through version 5.0 only.
+	However, the procedure in this article should allow you to use MS-DOS 6 with IBM
+	Lan Server 2.0 Remote Boot.
+	
+	MORE INFORMATION
+	================
+	
+	Follow these steps to enable IBM Lan Server 2.0 Remote Boot to work with MS-DOS
+	6:
+	
+	1. Using a machine that has a floppy disk drive, run SETUP /F to create a MS-DOS
+	  6 Startup disk. For more information, see page 178 in the "User's Guide."
+	
+	2. To free additional disk space, delete DBLSPACE.EXE from the Startup disk you
+	  created in step 1.
+	
+	3. Expand RAMDRIVE.SYS to this Startup disk. For example, type "expand
+	  b:\ramdrive.sy_ a:\ramdrive.sys" (without the quotation marks) at the MS-DOS
+	  command prompt and then press ENTER.
+	
+	4. At the OS/2 remote boot server, install the DOS Remote IPL Service as
+	  outlined in your IBM Lan Server manuals.
+	
+	5. When you are prompted for the programs to copy to the fixed disk choose
+	  MS-DOS 5.0, even though you will actually be using MS-DOS 6.
+	
+	6. When asked to specify the total number of MS-DOS disks, press 1.
+	
+	7. When prompted for MS-DOS disks, insert the MS-DOS 6 Startup disk created in
+	  step 1.
+	
+	8. Complete your installation of DOS Remote IPL Service as normal. Your remote
+	  boot workstation should boot from MS-DOS 6.
+	
+	9. Install the rest of the MS-DOS 6 files in the directory on the server (the
+	  default name for this directory is IBMLAN\DOSLAN\DOS) with one of the
+	  following methods:
+	
+	   - On a machine with a hard disk drive running MS-DOS 6, run SETUP /Q to a
+	     directory on the local hard disk drive and then copy the resulting files
+	     in this directory (and all the MS-DOS 6 files) to the IBMLAN\DOSLAN\DOS
+	     directory on the server.
+	
+	  -or-
+	
+	   - Expand the MS-DOS 6 files from the floppy disks into your
+	     IBMLAN\DOSLAN\DOS directory on the server.
+	
+	  -or-
+	
+	   - If the server is configured for dual boot, boot into MS-DOS and run SETUP
+	     to the IBMLAN\DOSLAN\DOS directory on the server.
+	
+	
+	Additional query words: 6.00
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMSDOSSearch kbMSDOS600
+	Version           : MS-DOS:6.0
+	
+	=============================================================================
+	

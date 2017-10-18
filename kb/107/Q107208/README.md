@@ -1,0 +1,57 @@
+---
+layout: page
+title: "Q107208: Adaptec 1740/1742 May Require BIOS Version 1.4"
+permalink: kb/107/Q107208/
+---
+
+## Q107208: Adaptec 1740/1742 May Require BIOS Version 1.4
+
+	Article: Q107208
+	Product(s): Microsoft Windows NT
+	Version(s): 3.1
+	Operating System(s): 
+	Keyword(s): kbhw kbHardware
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 3.1 
+	- Microsoft Windows NT Workstation version 3.1 
+	- Microsoft Windows NT Advanced Server, version 3.1 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you attempt to set up Windows NT 3.1 on a SCSI hard disk drive chained off
+	of an Adaptec 1740/1742 SCSI host adapter, you may receive the following error
+	message:
+	
+	  Disk I/O Error Status=00008000
+	
+	This error message occurs after the following message is displayed:
+	
+	  NTDETECT Version 1.0 Checking Hardware...
+	
+	NOTE: This problem may also occur when you use an Adaptec 2740 SCSI host adapter.
+	
+	STATUS
+	======
+	
+	According to Adaptec, you must upgrade the BIOS to version 1.4. To order this
+	BIOS revision, call Adaptec Product Fulfillment at (800) 442-7274.
+	
+	The Adaptec products discussed here are manufactured by Adaptec, Inc., a vendor
+	independent of Microsoft; we make no warranty, implied or otherwise, regarding
+	these products' performance or reliability.
+	
+	Additional query words: prodnt
+	
+	======================================================================
+	Keywords          : kbhw kbHardware 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW310 kbWinNTSsearch kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+	Version           : 3.1
+	
+	=============================================================================
+	

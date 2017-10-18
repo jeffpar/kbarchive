@@ -1,0 +1,87 @@
+---
+layout: page
+title: "Q119668: PRB: Linker Produces 2-MB Executables Under Windows NT 3.5"
+permalink: kb/119/Q119668/
+---
+
+## Q119668: PRB: Linker Produces 2-MB Executables Under Windows NT 3.5
+
+	Article: Q119668
+	Product(s): Microsoft Programming Utilities
+	Version(s): 1.0
+	Operating System(s): 
+	Keyword(s): kbfile kbinterop
+	Last Modified: 11-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Fortran Powerstation 32 for Windows NT, version 1.0 
+	- The Microsoft Linker (LINK.EXE), version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	LINK.EXE included with Visual C++ for Windows NT, version 1.0, or FORTRAN
+	PowerStation for Windows NT, version 1.0 produces 2 MB executable files when
+	used on Windows NT version 3.5.
+	
+	CAUSE
+	=====
+	
+	The linker uses a memory-mapped file for the output file that is generated. The
+	initial file size is 2 MB and it is increased in 2-MB increments as the output
+	size grows. When the linker is finished, it truncates the file to its proper
+	size. It does this by truncating the file then unmapping it from memory, whereas
+	it makes more sense to do the reverse. (Windows NT version 3.1 produces the
+	expected output anyway, but Windows NT version 3.5 does not. Under Windows NT
+	version 3.5, the truncation is not successful and the output remains 2 MB for
+	even the simplest "Hello, World" program.)
+	
+	RESOLUTION
+	==========
+	
+	The next releases of these products will contain linkers that do not have this
+	problem. Until then, the Win32SDK version 3.5 CD contains a version of LINK.EXE
+	that corrects this problem in the \support\linker\32bit directory. Replace the
+	Visual C++ version 1.0 linker with the linker included on the Win32 SDK version
+	3.5 CD.
+	
+	STATUS
+	======
+	
+	This problem was corrected with Windows NT, version 3.51, and FORTRAN
+	PowerStation, version 4.0.
+	
+	MORE INFORMATION
+	================
+	
+	The following files are available for download from the Microsoft Download
+	Center:
+	
+	  lnk100.exe
+	  (http://download.microsoft.com/download/fortranps10bnt/Utility/1/NT4/EN-US/lnk100.exe)
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. Once posted, the file is housed on secure
+	servers that prevent any unauthorized changes to the file.
+	
+	This linker is available on the Windows for NT version 3.5 CD in the
+	\support\linker\32bit directory. It is not available on the floppy disk set.
+	
+	Additional query words: daytona megabyte huge patch
+	
+	======================================================================
+	Keywords          : kbfile kbinterop 
+	Technology        : kbVCsearch kbAudDeveloper kbFortranSearch kbZNotKeyword2 kbLINKSearch kbLINK100 kbFORTRANPower32100NT
+	Version           : :1.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

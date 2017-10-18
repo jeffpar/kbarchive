@@ -1,0 +1,313 @@
+---
+layout: page
+title: "Q258206: XFOR: Installing Internet Mail Service Extension Imsext.dll"
+permalink: kb/258/Q258206/
+---
+
+## Q258206: XFOR: Installing Internet Mail Service Extension Imsext.dll
+
+	Article: Q258206
+	Product(s): Microsoft Exchange
+	Version(s): 5.5
+	Operating System(s): 
+	Keyword(s): exc55
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.5 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about modifying the registry. Before you 
+	modify the registry, make sure to back it up and make sure that you understand how to restore 
+	the registry if a problem occurs. For information about how to back up, restore, and edit the 
+	registry, click the following article number to view the article in the Microsoft Knowledge Base:
+	
+	  Q256986 Description of the Microsoft Windows Registry
+	
+	SUMMARY
+	=======
+	
+	The Internet Mail Service Extension, the Imsext.dll file, that is included in
+	the Microsoft BackOffice Resource Kit adds the capability for inbound
+	journaling, outbound journaling, per-recipient Journaling, prepending text to
+	inbound e-mail, appending text to inbound e-mail, prepending text to outbound
+	e-mail, and appending text to outbound e-mail.
+	
+	MORE INFORMATION
+	================
+	
+	Installation and Configuration
+	------------------------------
+	
+	WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+	that may require you to reinstall your operating system. Microsoft cannot
+	guarantee that you can solve problems that result from using Registry Editor
+	incorrectly. Use Registry Editor at your own risk.
+	
+	To install and configure the Internet Mail Service Extension:
+	
+	1. Copy the Internet Mail Service Extension, the Imsext.dll file, to the
+	  <drive>\Exchsrvr\Connect\Msexcimc\Bin folder.
+	
+	2. At a command prompt in the Exchsrvr\Connect\Msexcimc\Bin folder, run
+	  "regsvr32 imsext.dll" (without the quotation marks).
+	
+	3. To enable Internet Mail Service Extension in Exchange Server 5.5 Service Pack
+	  1 (SP1) or later without losing routing table capability, you need to create
+	  a registry value:
+	
+	NOTE: Microsoft recommends the following method to enable Internet Mail Service
+	Extension.
+	
+	  a. Start Registry Editor (Regedt32.exe).
+	
+	  b. Locate the following key in the registry:
+	
+	  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\
+	  MSExchangeIMC\Parameters
+	
+	     NOTE: The above registry key is one path; it has been wrapped for
+	     readability.
+	
+	  c. On the Edit menu, click Add Value, and then add the following registry
+	     value:
+	
+	  Value Name: NonRoutingExtensionDll
+	  Data Type: REG_SZ
+	  String Value: The full path of the Internet Mail Service Extension utility DLL
+	
+	     You can also enable Internet Mail Service Extension in the Exchange Server
+	     Administrator program by opening the Internet Mail Service properties,
+	     click the Routing tab, and then select "Internet Mail Service Extension"
+	     as the custom routing program.
+	
+	     IMPORTANT: Microsoft does not recommend this method. You lose routing table
+	     capability.
+	
+	4. Create a registry key to house the data that is passed to the Internet Mail
+	  Service Extension DLL:
+	
+	  a. Start Registry Editor (Regedt32.exe).
+	
+	  b. Locate the following key in the registry:
+	
+	  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\
+	  MSExchangeIMC\Parameters
+	
+	     NOTE: The above registry key is one path; it has been wrapped for
+	     readability.
+	
+	  c. On the Edit menu, click Add Key, and then type "Extension" (without the
+	     quotation marks).
+	
+	  d. Quit Registry Editor.
+	
+	5. Stop and restart the Internet Mail Service.
+	
+	You can use the capabilities of the Internet Mail Service Extension together or
+	separately by adding the appropriate registry value or values. You can add or
+	delete all values in the Extension key that you added as part of the
+	installation and configuration. You must restart the Internet Mail Service any
+	time that you change one of the registry values, with the exception of the
+	per-recipient journaling recipient's journal property.
+	
+	Inbound Journaling
+	------------------
+	
+	To journal inbound Simple Mail Transfer Protocol (SMTP) e-mail, create a registry
+	string value named InboundJournal in the Extension key. Set the InboundJournal
+	value to the e-mail address of the mailbox that will act as the journal mailbox.
+	If you use a distribution list (DL) as the journal mailbox, you can journal mail
+	to multiple mailboxes and it is very easy to change the journal mailbox.
+	Microsoft recommends that you also remove the SMTP address, so that the mailbox
+	cannot be attacked from the outside, and hide the mailbox from the address book,
+	so that the mailbox is difficult to attack from the inside. You can then set the
+	address to the X.500 address of the DL.
+	
+	If you enable inbound journaling, you must also create a registry string value
+	named InboundJournalNDR in the Extension key. Set the InboundJournalNDR value to
+	the e-mail address to which you want non-delivery reports (NDRs) that are
+	generated by journaled inbound e-mail delivered. As with the InboundJournal
+	value, remove the InboundJournalNDR value's SMTP address and hide the mailbox
+	from the address book. Microsoft recommends that this recipient reside on the
+	same server as the Internet Mail Service Extension.
+	
+	Example:
+	
+	  InboundJournal=/O=ACME/OU=EASTCOAST/CN=RECIPIENTS/CN=globalarchdl
+	  InboundJournalNDR=/O=ACME/OU=EASTCOAST/CN=RECIPIENTS/CN=injournalndr
+	
+	Outbound Journaling
+	-------------------
+	
+	To journal outbound SMTP e-mail, create a registry string value named
+	OutboundJournal in the Extension key. Set the OutboundJournal value to the
+	e-mail address to which you want the journal e-mail delivered. If you use a DL
+	as the journal mailbox, you can journal mail to multiple mailboxes and it is
+	very easy to change the journal mailbox. Microsoft recommends that you also
+	remove the SMTP address, so that this mailbox cannot be attacked from the
+	outside, and hide the mailbox from the address book so that the mailbox is
+	difficult to attack from the inside. You can then set the address to the X.500
+	address of the DL. If you enable outbound journaling, you must also create a
+	registry string value named OutboundJournalNDR in the Extension key. Set the
+	OutboundJournalNDR value to the e-mail address to which you want NDRs that are
+	generated by journaled outbound mail delivered. As with the OutboundJournal
+	value, you should remove the OutboundJournalNDR value SMTP address and hide the
+	mailbox from the address book. Microsoft recommends that the recipient reside on
+	the same server as the Internet Mail Service Extension.
+	
+	NOTE: If you use the same value for the InboundJournal and OutboundJournal
+	registry values, you can use one mailbox for all journaling.
+	
+	Example:
+	
+	  OutboundJournal=/O=ACME/OU=EASTCOAST/CN=RECIPIENTS/CN=globalarchdl
+	  OutboundJournalNDR=/O=ACME/OU=EASTCOAST/CN=RECIPIENTS/CN=outjournalndr
+	
+	Per-Recipient Journaling
+	------------------------
+	
+	The InboundJournal and OutboundJournal values journal all inbound and outbound
+	e-mail, respectively. If you want to journal based on recipient, you can enable
+	per-recipient journaling, which enables you to specify the journal address on a
+	for-each-recipient basis. This capability is useful if you want to send a copy
+	of a user's SMTP e-mail to that user's branch manager, for example. As with
+	inbound journaling and outbound journaling, you can set per-recipient journaling
+	for each direction: inbound and outbound.
+	
+	To enable per-recipient journaling, you must specify a property on the recipient
+	that contains the journal address. You can use the Custom Attributes properties
+	of the recipient to do this. As with the InboundJournal and OutboundJournal
+	values, it is recommended that you set the recipient's custom attribute to a DL.
+	In addition, Microsoft recommends that you secure the mailboxes in that DL, as
+	well as the DL itself, by removing the SMTP address and hiding the objects from
+	the Address Book. After you decide what recipient property you want to use to
+	store the journal address, you must create a registry DWORD value named
+	InboundRecipJournalProp or OutboundRecipJournalProp, as appropriate, for inbound
+	or outbound journaling, and then set the InboundRecipJournalProp or
+	OutboundRecipJournalProp value to the property that you want.
+	
+	Example:
+	
+	  The Custom Attribute 10 is value 0x8036. This must be specified as the high
+	  word of the InboundRecipJournalProp value with a low word of 0. Therefore,
+	  the value of InboundRecipJournalProp in this example is 0x80360000.
+	
+	The values of the Custom Attributes can be found in the Emsabtag.h file in the VC
+	include folder. If you enable per-recipient inbound journaling or per-recipient
+	outbound journaling, you must also create a registry string value named
+	InboundJournalNDR or OutboundJournalNDR, as applicable, for per-recipient
+	outbound journaling. Set the InboundJournalNDR or OutboundJournalNDR value to
+	the e-mail address to which you want NDRs that are generated by journaled
+	inbound or outbound mail for per-recipient journaling delivered. As with the
+	InboundRecipJournalProp value, Microsoft recommends that you remove the
+	InboundJournalNDR or OutboundJournalNDR SMTP address and hide the mailbox from
+	the Address Book. Microsoft recommends that the recipient reside on the same
+	server the Internet Mail Service Extension.
+	
+	NOTE: You can use per-recipient journaling in conjunction with inbound journaling
+	and outbound journaling. You can also set the InboundRecipJournalProp and
+	OutboundRecipJournalProp values to the same value to journal both inbound and
+	outbound per-recipient mail to the same location.
+	
+	Example:
+	
+	  InboundRecipJournalProp=(DWORD) 0x80360000 (Custom Attribute 10)
+	  OutboundRecipJournalProp=(DWORD) 0x80360000 (Custom Attribute 10)
+	  Custom Attribute 10 (of some recipient)
+	  =/O=ACME/OU=EASTCOAST/CN=RECIPIENTS/CN=branch1archdl
+	  InboundJournalNDR=/O=ACME/OU=EASTCOAST/CN=RECIPIENTS/CN=injournalndr
+	  OutboundJournalNDR=/O=ACME/OU=EASTCOAST/CN=RECIPIENTS/CN=outjournalndr
+	
+	Prepending Text to Inbound E-Mail
+	---------------------------------
+	
+	To add prepended text to the body of an inbound SMTP message, create a registry
+	string value named InboundPrepend. Set the InboundPrepend value to the text that
+	you want to prepend to the message. You must enter this text as Rich Text Format
+	(RTF).
+	
+	+-----------------------------------------+
+	| Command | Result                        | 
+	+-----------------------------------------+
+	| \b      | Bold on                       | 
+	+-----------------------------------------+
+	| \b0     | Bold off                      | 
+	+-----------------------------------------+
+	| \i      | Italics on                    | 
+	+-----------------------------------------+
+	| \i0     | Italics off                   | 
+	+-----------------------------------------+
+	| \ul     | Underline on                  | 
+	+-----------------------------------------+
+	| \ulo    | Underline off                 | 
+	+-----------------------------------------+
+	| \plain  | Plaintext--All formatting off | 
+	+-----------------------------------------+
+	| \par    | New line or new paragraph     | 
+	+-----------------------------------------+
+	| \tab    | Tab in five spaces            | 
+	+-----------------------------------------+
+	
+	NOTE: You can specify both InboundPrepend and InboundAppend values.
+	
+	Example:
+	
+	  InboundPrepend=This is the inbound prepended disclaimer.
+	  This is the second line.
+	
+	Appending Text to Inbound E-Mail
+	--------------------------------
+	
+	To add appended text to the body of an inbound SMTP message, create a registry
+	string value named InboundAppend in the Extension key. Set the InboundAppend
+	value to the text that you want to append to the message. You must enter this
+	text as RTF.
+	
+	NOTE: You can specify both InboundPrepend and InboundAppend values.
+	
+	Example:
+	
+	  InboundAppend=This is the inbound appended disclaimer.\par
+	  This is the second line.
+	
+	Prepending Text to Outbound E-Mail
+	----------------------------------
+	
+	To add prepended text to the body of an outbound SMTP message, create a registry
+	string value named OutboundPrepend. Set the OutboundPrepend value to the text
+	that you want to prepend to the message. You must enter this text as RTF.
+	
+	NOTE: You can specify both OutboundPrepend and OutboundAppend values.
+	
+	Example:
+	
+	  OutboundPrepend= This is the first line of the prepended disclaimer.
+	  This is the second line of the prepended disclaimer.
+	
+	Appending Text to Outbound E-Mail
+	---------------------------------
+	
+	To add appended text to the body of an outbound SMTP message, create a registry
+	string value named OutboundAppend. Set the OutboundAppend value to the text that
+	you want to append to the message. You must enter this text as RTF.
+	
+	NOTE: You can specify both OutboundPrepend and OutboundAppend values.
+	
+	Example:
+	
+	  OutboundAppend=This is the first line of the outbound appended disclaimer.
+	  This is the second line of the outbound appended disclaimer.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : exc55 
+	Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+	Version           : :5.5
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

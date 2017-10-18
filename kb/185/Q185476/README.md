@@ -1,0 +1,380 @@
+---
+layout: page
+title: "Q185476: HOWTO: Search Directories to Find or List Files"
+permalink: kb/185/Q185476/
+---
+
+## Q185476: HOWTO: Search Directories to Find or List Files
+
+	Article: Q185476
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 4.0,5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbAPI KbVBA kbVBp kbVBp500 kbVBp600 kbOSWin32s kbDSupport
+	Last Modified: 20-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	When looking for files, it is often necessary to search through subdirectories.
+	This article demonstrates two methods for recursively searching directories and
+	retrieving file information.
+	
+	MORE INFORMATION
+	================
+	
+	While Visual Basic provides methods for retrieving information about files and
+	directories, you may also use Windows API functions for these tasks. Using the
+	API is not faster than the built in methods, but the two methods work a little
+	differently. So, this article demonstrates both techniques for retrieving this
+	information. If you test both methods, try using the same starting path and
+	search string. You should get similar results.
+	
+	Visual Basic for Applications (VBA) includes an Application.FileSearch object
+	that can be used to find and list files. While not directly available in Visual
+	Basic, you can use it from a Microsoft Office 97 product. More information and
+	examples can be found in the Online Help, and by searching the Microsoft
+	Knowledge Base for "FileSearch."
+	
+	Please note that the following examples do not include full error trapping, but
+	Method 2 does catch a special case where the VB GetAttr() function fails on
+	Pagefile.sys, which is the Windows NT virtual memory paging file. Also,
+	depending on the search string, the API version lists and counts directory names
+	by default, where the VB version does not. Please note that the following
+	examples do not include full error trapping, but Method 2 does catch a special
+	case where the VB GetAttr() function fails on Pagefile.sys, which is the Windows
+	NT virtual memory paging file. The only difference in results between these two
+	methods is that the VB code does not return the file create dates.
+	
+	Method 1: Using the Windows API
+	-------------------------------
+	
+	1. Start a new Standard EXE project in Visual Basic. Form1 is created by
+	  default.
+	
+	2. Add a CommandButton named Command1, four TextBoxes named Text1, Text2, Text3
+	  and Text4 and a ListBox to Form1.
+	
+	3. Add a Module from the Projects menu and insert the following:
+	
+	     Declare Function FindFirstFile Lib "kernel32" Alias _
+	     "FindFirstFileA" (ByVal lpFileName As String, lpFindFileData _
+	     As WIN32_FIND_DATA) As Long
+	
+	     Declare Function FindNextFile Lib "kernel32" Alias "FindNextFileA" _
+	     (ByVal hFindFile As Long, lpFindFileData As WIN32_FIND_DATA) As Long
+	
+	     Declare Function GetFileAttributes Lib "kernel32" Alias _
+	     "GetFileAttributesA" (ByVal lpFileName As String) As Long
+	
+	     Declare Function FindClose Lib "kernel32" (ByVal hFindFile As Long) _
+	     As Long
+	
+	     Declare Function FileTimeToLocalFileTime Lib "kernel32" _
+	     (lpFileTime As FILETIME, lpLocalFileTime As FILETIME) As Long
+	       
+	     Declare Function FileTimeToSystemTime Lib "kernel32" _
+	     (lpFileTime As FILETIME, lpSystemTime As SYSTEMTIME) As Long
+	
+	     Public Const MAX_PATH = 260
+	     Public Const MAXDWORD = &HFFFF
+	     Public Const INVALID_HANDLE_VALUE = -1
+	     Public Const FILE_ATTRIBUTE_ARCHIVE = &H20
+	     Public Const FILE_ATTRIBUTE_DIRECTORY = &H10
+	     Public Const FILE_ATTRIBUTE_HIDDEN = &H2
+	     Public Const FILE_ATTRIBUTE_NORMAL = &H80
+	     Public Const FILE_ATTRIBUTE_READONLY = &H1
+	     Public Const FILE_ATTRIBUTE_SYSTEM = &H4
+	     Public Const FILE_ATTRIBUTE_TEMPORARY = &H100
+	
+	     Type FILETIME
+	       dwLowDateTime As Long
+	       dwHighDateTime As Long
+	     End Type
+	
+	     Type WIN32_FIND_DATA
+	       dwFileAttributes As Long
+	       ftCreationTime As FILETIME
+	       ftLastAccessTime As FILETIME
+	       ftLastWriteTime As FILETIME
+	       nFileSizeHigh As Long
+	       nFileSizeLow As Long
+	       dwReserved0 As Long
+	       dwReserved1 As Long
+	       cFileName As String * MAX_PATH
+	       cAlternate As String * 14
+	     End Type
+	
+	     Type SYSTEMTIME
+	       wYear As Integer
+	       wMonth As Integer
+	       wDayOfWeek As Integer
+	       wDay As Integer
+	       wHour As Integer
+	       wMinute As Integer
+	       wSecond As Integer
+	       wMilliseconds As Integer
+	     End Type
+	
+	     Public Function StripNulls(OriginalStr As String) As String
+	        If (InStr(OriginalStr, Chr(0)) > 0) Then
+	           OriginalStr = Left(OriginalStr, _
+	            InStr(OriginalStr, Chr(0)) - 1)
+	        End If
+	        StripNulls = OriginalStr
+	     End Function
+	
+	4. Copy the following code into Form1's module:
+	
+	     Option Explicit
+	
+	     Function FindFilesAPI(path As String, SearchStr As String, _
+	      FileCount As Integer, DirCount As Integer)
+	     Dim FileName As String   ' Walking filename variable...
+	     Dim DirName As String    ' SubDirectory Name
+	     Dim dirNames() As String ' Buffer for directory name entries
+	     Dim nDir As Integer   ' Number of directories in this path
+	     Dim i As Integer      ' For-loop counter...
+	     Dim hSearch As Long   ' Search Handle
+	     Dim WFD As WIN32_FIND_DATA
+	     Dim Cont As Integer
+	     Dim FT As FILETIME
+	     Dim ST As SYSTEMTIME
+	     Dim DateCStr As String, DateMStr As String
+	       
+	     If Right(path, 1) <> "\" Then path = path & "\"
+	     ' Search for subdirectories.
+	     nDir = 0
+	     ReDim dirNames(nDir)
+	     Cont = True
+	     hSearch = FindFirstFile(path & "*", WFD)
+	     If hSearch <> INVALID_HANDLE_VALUE Then
+	        Do While Cont
+	           DirName = StripNulls(WFD.cFileName)
+	           ' Ignore the current and encompassing directories.
+	           If (DirName <> ".") And (DirName <> "..") Then
+	              ' Check for directory with bitwise comparison.
+	              If GetFileAttributes(path & DirName) And _
+	               FILE_ATTRIBUTE_DIRECTORY Then
+	                 dirNames(nDir) = DirName
+	                 DirCount = DirCount + 1
+	                 nDir = nDir + 1
+	                 ReDim Preserve dirNames(nDir)
+	                 ' Uncomment the next line to list directories
+	                 'List1.AddItem path & FileName
+	              End If
+	           End If
+	           Cont = FindNextFile(hSearch, WFD)  ' Get next subdirectory.
+	        Loop
+	        Cont = FindClose(hSearch)
+	     End If
+	
+	     ' Walk through this directory and sum file sizes.
+	     hSearch = FindFirstFile(path & SearchStr, WFD)
+	     Cont = True
+	     If hSearch <> INVALID_HANDLE_VALUE Then
+	        While Cont
+	           FileName = StripNulls(WFD.cFileName)
+	              If (FileName <> ".") And (FileName <> "..") And _
+	                ((GetFileAttributes(path & FileName) And _
+	                 FILE_ATTRIBUTE_DIRECTORY) <> FILE_ATTRIBUTE_DIRECTORY) Then
+	              FindFilesAPI = FindFilesAPI + (WFD.nFileSizeHigh * _
+	               MAXDWORD) + WFD.nFileSizeLow
+	              FileCount = FileCount + 1
+	              ' To list files w/o dates, uncomment the next line
+	              ' and remove or Comment the lines down to End If
+	              'List1.AddItem path & FileName
+	              
+	             ' Include Creation date...
+	             FileTimeToLocalFileTime WFD.ftCreationTime, FT
+	             FileTimeToSystemTime FT, ST
+	             DateCStr = ST.wMonth & "/" & ST.wDay & "/" & ST.wYear & _
+	                " " & ST.wHour & ":" & ST.wMinute & ":" & ST.wSecond
+	             ' and Last Modified Date
+	             FileTimeToLocalFileTime WFD.ftLastWriteTime, FT
+	             FileTimeToSystemTime FT, ST
+	             DateMStr = ST.wMonth & "/" & ST.wDay & "/" & ST.wYear & _
+	                " " & ST.wHour & ":" & ST.wMinute & ":" & ST.wSecond
+	             List1.AddItem path & FileName & vbTab & _
+	                Format(DateCStr, "mm/dd/yyyy hh:nn:ss") _
+	                & vbTab & Format(DateMStr, "mm/dd/yyyy hh:nn:ss")
+	            End If
+	           Cont = FindNextFile(hSearch, WFD)  ' Get next file
+	        Wend
+	        Cont = FindClose(hSearch)
+	     End If
+	
+	     ' If there are sub-directories...
+	      If nDir > 0 Then
+	        ' Recursively walk into them...
+	        For i = 0 To nDir - 1
+	          FindFilesAPI = FindFilesAPI + FindFilesAPI(path & dirNames(i) _
+	           & "\", SearchStr, FileCount, DirCount)
+	        Next i
+	     End If
+	     End Function
+	
+	     Private Sub Command1_Click()
+	     Dim SearchPath As String, FindStr As String
+	     Dim FileSize As Long
+	     Dim NumFiles As Integer, NumDirs As Integer
+	
+	     Screen.MousePointer = vbHourglass
+	     List1.Clear
+	     SearchPath = Text1.Text
+	     FindStr = Text2.Text
+	     FileSize = FindFilesAPI(SearchPath, FindStr, NumFiles, NumDirs)
+	     Text3.Text = NumFiles & " Files found in " & NumDirs + 1 & _
+	      " Directories"
+	     Text4.Text = "Size of files found under " & SearchPath & " = " & _
+	     Format(FileSize, "#,###,###,##0") & " Bytes"
+	     Screen.MousePointer = vbDefault
+	     End Sub
+	
+	5. Run the Project. Enter a starting path into Text1, a search string in Text2
+	  (like *.* or *.txt) and then click Command1.
+	
+	You will see a list of the files found display in the ListBox with the create
+	date and the last modified date, the actual number of files found displays in
+	Text3, and the total size of the files found under the starting directory
+	appears in Text4.
+	
+	Method 2: Using Built-In Visual Basic Functions
+	-----------------------------------------------
+	
+	These instructions build on the sample described prior, but can also be used in a
+	new Project.
+	
+	1. Open the Project by using the steps described in Method1
+	
+	2. Add another CommandButton named Command2, two more TextBoxes named Text5 and
+	  Text6 and another ListBox, List2, to Form1.
+	
+	3. Copy the following code into Form1's module:
+	
+	     Function FindFiles(path As String, SearchStr As String, _
+	         FileCount As Integer, DirCount As Integer)
+	        Dim FileName As String   ' Walking filename variable.
+	        Dim DirName As String    ' SubDirectory Name.
+	        Dim dirNames() As String ' Buffer for directory name entries.
+	        Dim nDir As Integer      ' Number of directories in this path.
+	        Dim i As Integer         ' For-loop counter.
+	
+	        On Error GoTo sysFileERR
+	        If Right(path, 1) <> "\" Then path = path & "\"
+	        ' Search for subdirectories.
+	        nDir = 0
+	        ReDim dirNames(nDir)
+	        DirName = Dir(path, vbDirectory Or vbHidden Or vbArchive Or vbReadOnly _
+	  Or vbSystem)  ' Even if hidden, and so on.
+	        Do While Len(DirName) > 0
+	           ' Ignore the current and encompassing directories.
+	           If (DirName <> ".") And (DirName <> "..") Then
+	              ' Check for directory with bitwise comparison.
+	              If GetAttr(path & DirName) And vbDirectory Then
+	                 dirNames(nDir) = DirName
+	                 DirCount = DirCount + 1
+	                 nDir = nDir + 1
+	                 ReDim Preserve dirNames(nDir)
+	                 'List2.AddItem path & DirName ' Uncomment to list
+	              End If                           ' directories.
+	     sysFileERRCont:
+	           End If
+	           DirName = Dir()  ' Get next subdirectory.
+	        Loop
+	
+	        ' Search through this directory and sum file sizes.
+	        FileName = Dir(path & SearchStr, vbNormal Or vbHidden Or vbSystem _
+	        Or vbReadOnly Or vbArchive)
+	        While Len(FileName) <> 0
+	           FindFiles = FindFiles + FileLen(path & FileName)
+	           FileCount = FileCount + 1
+	           ' Load List box
+	           List2.AddItem path & FileName & vbTab & _
+	              FileDateTime(path & FileName)   ' Include Modified Date
+	           FileName = Dir()  ' Get next file.
+	        Wend
+	
+	        ' If there are sub-directories..
+	        If nDir > 0 Then
+	           ' Recursively walk into them
+	           For i = 0 To nDir - 1
+	             FindFiles = FindFiles + FindFiles(path & dirNames(i) & "\", _
+	              SearchStr, FileCount, DirCount)
+	           Next i
+	        End If
+	
+	     AbortFunction:
+	        Exit Function
+	     sysFileERR:
+	        If Right(DirName, 4) = ".sys" Then
+	          Resume sysFileERRCont ' Known issue with pagefile.sys
+	        Else
+	          MsgBox "Error: " & Err.Number & " - " & Err.Description, , _
+	           "Unexpected Error"
+	          Resume AbortFunction
+	        End If
+	        End Function
+	
+	        Private Sub Command2_Click()
+	        Dim SearchPath As String, FindStr As String
+	        Dim FileSize As Long
+	        Dim NumFiles As Integer, NumDirs As Integer
+	
+	        Screen.MousePointer = vbHourglass
+	        List2.Clear
+	        SearchPath = Text1.Text
+	        FindStr = Text2.Text
+	        FileSize = FindFiles(SearchPath, FindStr, NumFiles, NumDirs)
+	        Text5.Text = NumFiles & " Files found in " & NumDirs + 1 & _
+	         " Directories"
+	        Text6.Text = "Size of files found under " & SearchPath & " = " & _
+	        Format(FileSize, "#,###,###,##0") & " Bytes"
+	        Screen.MousePointer = vbDefault
+	        End Sub
+	
+	     Private Sub Form_Load()
+	        Command1.Caption = "Use API code"
+	        Command2.Caption = "Use VB code"
+	        ' start with some reasonable defaults
+	        Text1.Text = "C:\My Documents\"
+	        Text2.Text = "*.*"
+	     End Sub
+	
+	4. Run the Project. Enter a starting path into Text1, a search string in Text2
+	  (like *.* or Myfile?.txt, and so forth) and then click Command2.
+	
+	You see a list of the files found appear in List2 with the last modified date,
+	the number of files found in Text5, and the total size of the files found under
+	the starting directory in Text6. By combining these two methods on one form you
+	can verify that both methods return matching information.
+	
+	Method 3: Use the FileSystem Object with Visual Basic
+	-----------------------------------------------------
+	
+	For information about using the FileSystemObject with Visual Basic to find or
+	list files, please see the following article in the Microsoft Knowledge Base:
+	
+	  Q185601 HOWTO: Recursively Search Directories Using FileSystemObject
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbAPI KbVBA kbVBp kbVBp500 kbVBp600 kbOSWin32s kbDSupport 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400
+	Version           : :4.0,5.0,6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

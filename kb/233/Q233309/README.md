@@ -1,0 +1,100 @@
+---
+layout: page
+title: "Q233309: Error Message When Using IPX/SPX to Dial into RAS or RRAS"
+permalink: kb/233/Q233309/
+---
+
+## Q233309: Error Message When Using IPX/SPX to Dial into RAS or RRAS
+
+	Article: Q233309
+	Product(s): Microsoft Windows NT
+	Version(s): winnt:4.0
+	Operating System(s): 
+	Keyword(s): kberrmsg kbnetwork kbtool
+	Last Modified: 10-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 4.0 
+	- Microsoft Routing and Remote Access Service Update for Windows NT Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you use your Windows NT 4.0-based server to try to dial into a Remote
+	Access Service (RAS) or Routing and Remote Access Service (RRAS) server that is
+	a primary domain controller (PDC), you may receive a "no domain controller
+	found" error message.
+	
+	CAUSE
+	=====
+	
+	This behavior occurs when the Windows NT 4.0 Server-based computer is running
+	and you choose "Log on using dial up networking", the connection is established
+	and the netlogon requests are sent over the dial-up networking (DUN) connection
+	with a source IPX network that corresponds to the Internal Network ID configured
+	on the server.
+	
+	When the Windows NT 4.0 Server-based computer uses DUN, it sends its logon
+	requests with the Internal Network ID for the source IPX address. The RAS or
+	RRAS server has already pre-configured an IPX network for all DUN clients which
+	it will use to handle netlogon requests. When it receives a netlogon request
+	from the Windows NT 4.0 Server-based computer with a source IPX network number
+	that is unaware of, it ignores these netlogon queries.
+	
+	Because of this, the Windows NT 4.0 client computer never receives a netlogon
+	reply, and you may not be logged on, or you may be logged on using cached
+	credentials from a previous successful logon.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue for a Windows NT 4.0 Server-based computer, you must
+	change the internal network ID (or number) back to all zeroes in IPX/SPX
+	Properties. Note that after you do so, when you are dialing into the RAS or RRAS
+	server, your Windows NT 4.0 Server-based computer will use the IPX network
+	number that it received from the RAS or RRAS server as the source for the
+	packet.
+	
+	MORE INFORMATION
+	================
+	
+	When you install IPX on a Windows NT 4.0 Server-based computer, you receive a
+	message indicating you should not leave the Internal Network ID as all zeroes
+	for routing purposes. You do not receive this message when you install IPX on a
+	Windows NT 4.0 Workstation-based computer because it does not need an Internal
+	Network ID configured.
+	
+	The reason that Windows NT 4.0 Server-based computers use the Internal Network ID
+	by default is that they are usually intended to be IPX routers. When an Windows
+	NT 4.0 Server-based computer is dialing another location, it interprets that it
+	is still acting as an IPX router. However, the RAS or RRAS server that it is
+	dialing does not support IPX routing over normal DUN connections. Because of
+	this, the RAS or RRAS server does not attempt to discover the Windows NT 4.0
+	Server-based computer Internal Network ID.
+	
+	To route IPX packets from one network to another, you must install the Routing
+	and Remote Access Update on the Windows NT 4.0 Server-based computer and
+	configure it for IPX routing and demand dial interfaces. For additional
+	information about routing IPX packets from one network to another, click the
+	article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q175640 How To Configure Nwlink LAN-to-LAN Routing Using RRAS
+	
+	NOTE: Only in the case where you are using your Windows NT 4.0 Server-based
+	computer as a DUN client and you want to log on to the domain will it be
+	necessary to change your internal network ID to all zeroes. Otherwise, you can
+	leave it configured as it is.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kberrmsg kbnetwork kbtool 
+	Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbAudDeveloper kbRRASNTSearch kbRRASNT400
+	Version           : winnt:4.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

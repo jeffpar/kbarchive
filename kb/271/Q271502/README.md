@@ -1,0 +1,60 @@
+---
+layout: page
+title: "Q271502: Golf 2001: Game Quits When You Return to the Game from Desktop"
+permalink: kb/271/Q271502/
+---
+
+## Q271502: Golf 2001: Game Quits When You Return to the Game from Desktop
+
+	Article: Q271502
+	Product(s): Microsoft Home Games
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbenv kbimu msgame
+	Last Modified: 22-OCT-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Golf 2001 Edition 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you play Microsoft Golf 2001 Edition, the game may quit when you exit to
+	the Windows desktop and then return to the game.
+	
+	CAUSE
+	=====
+	
+	This behavior can occur if both of the following conditions are true:
+	
+	- Golf 2001 Edition is installed on a Microsoft Windows 2000-based computer.
+	
+	- You press CTRL+ESC or ALT+ESC in Golf 2001 Edition to exit to the Windows
+	  desktop.
+	
+	RESOLUTION
+	==========
+	
+	To prevent this issue from occurring, do not press CTRL+ESC or ALT+ESC in Golf
+	2001 Edition to exit to the Windows desktop when you play Golf 2001 Edition on a
+	Windows 2000-based computer.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft Golf 2001 Edition .
+	
+	Additional query words: msgame golf2001 msgolf hot key re-enter win2k
+	
+	======================================================================
+	Keywords          : kbenv kbimu msgame 
+	Technology        : kbHomeProdSearch kbGamesSearch kbGolfSearch
+	Version           : :
+	Issue type        : kbbug
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

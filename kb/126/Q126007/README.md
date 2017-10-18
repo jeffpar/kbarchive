@@ -1,0 +1,73 @@
+---
+layout: page
+title: "Q126007: Cannot Modify Workgroup Box in Network Utility"
+permalink: kb/126/Q126007/
+---
+
+## Q126007: Cannot Modify Workgroup Box in Network Utility
+
+	Article: Q126007
+	Product(s): Microsoft Windows 3.x Retail Product
+	Version(s): WINDOWS:3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 03-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows for Workgroups version 3.11 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you are using Windows for Workgroups version 3.11, you cannot modify the
+	Workgroup box in the Control Panel Network utility.
+	
+	CAUSE
+	=====
+	
+	This behavior occurs if the [Options] section of the WRKGRP.INI file in the
+	Windows\SYSTEM subdirectory contains a line that reads:
+	
+	  Required=true
+	
+	RESOLUTION
+	==========
+	
+	To be able to modify the Workgroup box in the Network utility, rename or delete
+	the WRKGRP.INI file.
+	
+	STATUS
+	======
+	
+	This behavior is by design.
+	
+	MORE INFORMATION
+	================
+	
+	The WRKGRP.INI file is created by a system administrator to restrict users to a
+	predefined set of workgroup names. These predefined workgroup names are listed
+	in the [Workgroups] section of the file. Settings in this file should appears as
+	follows (note that the workgroup names are samples only):
+	
+	  [Options]
+	  Required=true
+	
+	  [Workgroups]
+	  Finance=
+	  Marketing=
+	
+	Note that if you omit the equal sign (=) from the end of a workgroup name, that
+	workgroup name will not be available.
+	
+	Additional query words: change unable WFW 3.11
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+	Version           : WINDOWS:3.11
+	
+	=============================================================================
+	

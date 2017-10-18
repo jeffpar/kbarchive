@@ -1,0 +1,325 @@
+---
+layout: page
+title: "Q303074: Academic Learning Series Microsoft Windows 2000 Network Security"
+permalink: kb/303/Q303074/
+---
+
+## Q303074: Academic Learning Series Microsoft Windows 2000 Network Security
+
+	Article: Q303074
+	Product(s): Microsoft Press
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 12-DEC-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- MSPRESS Academic Learning Series Microsoft Windows 2000 Network Security ISBN 0-7356-1269-2 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article contains comments, corrections, and information about known errors
+	relating to the Microsoft Press book Academic Learning Series Microsoft Windows
+	2000 Network Security, ISBN 0-7356-1269-2.
+	
+	The following topics are covered:
+	
+	- Lab Manual, page iii: Incorrect Number of Core Elective Exams
+	
+	- Page 72: Incorrect URL In Note
+	
+	- Page 180: Graphics Users Permissions Should Be "Change"
+	
+	- Page 183: Missing Checkmark In Table 6.1
+	
+	- Page 233: Correction To Question 1
+	
+	- Page 252: Ocfiles.inf Should Be Ocfiless.inf
+	
+	- Page 310: Incorrect Description For None and Notify Rights
+	
+	- Page 440: "Original" Should Be "New" In Figure 12.10
+	
+	- Page 449: Corrections For Entries In Table 12.6
+	
+	- Page 489: Incorrect URL In Note
+	
+	- Page 492: Incorrect URL In Note
+	
+	- Page 572: Table 14.15 Change Internal To External
+	
+	- Pages 575 - 577 And 618: "Passive" Should Be "Active"
+	
+	- Page 642: Table 15-18 Correction For "Log Date" Entry
+	
+	- Page 714: Incorrect URL
+	
+	- Page 736: Incomplete Answer To Question 4
+	
+	MORE INFORMATION
+	================
+	
+	Lab Manual, page iii: Incorrect Number of Core Elective Exams
+	-------------------------------------------------------------
+	
+	On page iii, in the third paragraph,
+	
+	Change:
+	"The new certification program is composed of four core requirement exams and
+	three core elective exams."
+	
+	To:
+	"The new certification program is composed of four core requirement exams and
+	four core elective exams."
+	
+	
+	Page 72: Incorrect URL In Note
+	------------------------------
+	
+	On page 72, in the Note near the middle of the page, the URL www.ieft.org/rfc is
+	referenced. It should be "ietf" rather than "ieft".
+	
+	Change:
+	www.ieft.org/rfc
+	
+	To:
+	www.ietf.org/rfc
+	
+	
+	Page 180: Graphics Users Permissions Should Be "Change"
+	-------------------------------------------------------
+	
+	On page 180, in the third bulleted item, the Graphics Users permissions should be
+	"Change" instead of "Read".
+	
+	Change:
+	"Graphics Users: Read"
+	
+	To:
+	"Graphics Users: Change"
+	
+	
+	Page 183: Missing Checkmark In Table 6.1
+	----------------------------------------
+	
+	On page 183, in Table 6.1, under the "Write" column, there should be a checkmark
+	for the "Create Files/Write Data" special permission.
+	
+	
+	Page 233: Correction To Question 1
+	----------------------------------
+	
+	On page 233, in question 1,
+	
+	Change:
+	"...meet the requirements to hide the Control Panel for all network user."
+	
+	To:
+	"...meet the requirements to hide the Entire Network icon."
+	
+	
+	Page 252: Ocfiles.inf Should Be Ocfiless.inf
+	--------------------------------------------
+	
+	On page 252, in the second bulleted item from the bottom,
+	
+	Change:
+	"...Ocfiles.inf"
+	
+	To:
+	"...Ocfiless.inf"
+	
+	
+	Page 310:  Incorrect Description For None and Notify Rights
+	-----------------------------------------------------------
+	
+	On page 310, in the first bulleted item under "Restricting Management to Specific
+	SNMP Communities", the explanation for None or Notify is incorrect.
+	
+	Change:
+	"None or Notify. The SNMP agent won't discard any requests from management
+	stations in the community where the right is assigned."
+	
+	To:
+	"None or Notify. The SNMP agent does not process the request. When the agent
+	receives an SNMP message from a management system in this community, it discards
+	the request and generates an authentication trap."
+	
+	
+	Page 440: "Original" Should Be "New" In Figure 12.10
+	----------------------------------------------------
+	
+	On page 440, in Figure 12.10, in the first box of "Signed portion of the
+	packet",
+	
+	Change:
+	"Original IP Header"
+	
+	To:
+	"New IP Header"
+	
+	
+	Page 449: Corrections For Entries In Table 12.6
+	-----------------------------------------------
+	
+	On page 449, in Table 12.6, the third entry in the left column should be
+	"Negotiate Security" instead of "Negotiate". The fourth entry in the left column
+	should be "Allow Unsecured Communication With Non-IPSec-Aware Computer", instead
+	of "Enable Fallback To No Security".
+	
+	Change the third and fourth entry in the left column from:
+	Negotiate
+	Enable Fallback To No Security
+	
+	To:
+	Negotiate Security
+	Allow Unsecured Communication With Non-IPSec-Aware Computer
+	
+	
+	Page 489: Incorrect URL In Note
+	-------------------------------
+	
+	On page 489, in the Note near the middle of the page, the URL www.ieft.org/rfc is
+	referenced. It should be "ietf" rather than "ieft".
+	
+	Change:
+	www.ieft.org/rfc
+	
+	To:
+	www.ietf.org/rfc
+	
+	
+	Page 492: Incorrect URL In Note
+	-------------------------------
+	
+	On page 492, in the Note near the top of the page, the URL www.ieft.org/rfc is
+	referenced. It should be "ietf" rather than "ieft".
+	
+	Change:
+	www.ieft.org/rfc
+	
+	To:
+	www.ietf.org/rfc
+	
+	
+	Page 572: Table 14.15 Change Internal To External
+	-------------------------------------------------
+	
+	On page 572, the title for Table 14.15 should say External instead of Internal.
+	
+	Change:
+	"Internal Firewall Rules to Restrict DNS Usage"
+	
+	To:
+	"External Firewall Rules to Restrict DNS Usage"
+	
+	
+	Pages 575 - 577 And 618: "Passive" Should Be "Active"
+	-----------------------------------------------------
+	
+	On pages 575, 576, 577, and 618, multiple references to "passive FTP clients"
+	should be changed to "active FTP clients".
+	
+	On page 575, in the third paragraph under "Securing FTP Traffic",
+	
+	Change:
+	"Some FTP clients, known as passive FTP clients, require..."
+	
+	To:
+	"Some FTP clients, known as active FTP clients, require..."
+	
+	On page 576, in the paragraph under Table 14.19,
+	
+	Change:
+	"The last two packet filters enable the FTP server to establish connections to
+	passive FTP clients."
+	
+	To:
+	"The last two packet filters enable the FTP server to establish connections to
+	active FTP clients."
+	
+	On page 576, in the Note paragraph,
+	
+	Change:
+	"The packet filters listed in Table 14.19 assume that passive FTP clients..."
+	
+	To:
+	"The packet filters listed in Table 14.19 assume that active FTP clients..."
+	
+	On page 577, in the first bulletted item,
+	
+	Change:
+	"If passive FTP clients exist"
+	
+	To:
+	"If active FTP clients exist"
+	
+	On page 577, in the paragraph under Table 14.20,
+	
+	Change:
+	"The last two packet filters allow the MFFTP server to initiate data transfers
+	with passive FTP clients."
+	
+	To:
+	"The last two packet filters allow the MFFTP server to initiate data transfers
+	with active FTP clients."
+	
+	On page 618, in the last bulletted item,
+	
+	Change:
+	"Passive FTP clients require data transfers from..."
+	
+	To:
+	"Active FTP clients require data transfers from..."
+	
+	
+	Page 642: Table 15-18 Correction For "Log Date" Entry
+	-----------------------------------------------------
+	
+	On page 642, in Table 15.8, the eleventh entry down is "Log Date." Change the
+	parenthetical information immediately following it from "LogTime" to "LogDate."
+	
+	
+	Page 714: Incorrect URL
+	-----------------------
+	
+	The second bullet on page 714 references an incorrect URL. The URL should begin
+	with "news" rather than "nntp" and there should be no "/" at the end of the
+	path.
+	
+	Change:
+	nntp://msnews.microsoft.com/microsoft.public.win2000.security/
+	
+	To:
+	news://msnews.microsoft.com/microsoft.public.win2000.security
+	
+	
+	Page 736:  Incomplete Answer To Question 4
+	------------------------------------------
+	
+	On page 736, at the top of the page, the answer to question 4 from page 237 does
+	not list the local computer as a point of Group Policy implementation. Add the
+	following additional bulleted item to the end of the list:
+	
+	- The computer's local GPO
+	
+	
+	Microsoft Press is committed to providing informative and accurate books. All
+	comments and corrections listed above are ready for inclusion in future
+	printings of this book. If you have a later printing of this book, it may
+	already contain most or all of the above corrections.
+	
+	Additional query words: ALS TKBOOK 0-7356-1269-2 KOMAR
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMSPressSearch
+	Version           : :
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

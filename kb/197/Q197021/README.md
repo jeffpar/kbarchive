@@ -1,0 +1,69 @@
+---
+layout: page
+title: "Q197021: WD97: Saving Form Data as Text Does Not Change Document Name"
+permalink: kb/197/Q197021/
+---
+
+## Q197021: WD97: Saving Form Data as Text Does Not Change Document Name
+
+	Article: Q197021
+	Product(s): Word 97 for Windows
+	Version(s): WINDOWS:97
+	Operating System(s): 
+	Keyword(s): kbdta kbfield word97
+	Last Modified: 14-NOV-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	
+	SUMMARY
+	=======
+	
+	When you work with a document designed for forms data entry and "Save Data Only
+	for Forms" is selected, saving the data does not reflect the name change in the
+	forms document. To locate the "Save Data..." option, click Options on the Tools
+	menu, and then click the Save tab.
+	
+	MORE INFORMATION
+	================
+	
+	When working with forms fields, if you try to save data, Word prompts you for a
+	file name with .TXT as the default extension and Text Only as the default
+	conversion for the data file. The current forms document does not adopt the name
+	given this data-only file and this file name is not reflected in the Word title
+	bar if the "Save Data Only for Forms" option is selected.
+	
+	By design, two entirely separate files exist:
+	
+	- The original forms document for entering the data.
+	
+	  -and-
+	
+	- A text-only, comma-delimited file containing the data extracted from the
+	  forms fields.
+	
+	This text-only data document contains no link to the original forms data entry
+	document.
+	
+	This situation occurs because the current forms document you are working with is
+	used for form data entry only and the data is saved separately to a different
+	file, which can be used in data processing programs accepting comma-delimited,
+	text-only data format or for printing.
+	
+	Currently there is no data link to the forms document. To create a link, you must
+	create a macro to extract the data from the original data document to fill the
+	form fields with the data.
+	
+	Additional query words: forms
+	
+	======================================================================
+	Keywords          : kbdta kbfield word97 
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : WINDOWS:97
+	
+	=============================================================================
+	

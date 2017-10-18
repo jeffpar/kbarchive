@@ -1,0 +1,71 @@
+---
+layout: page
+title: "Q181806: Services Configured with an Account and Password May Not Start"
+permalink: kb/181/Q181806/
+---
+
+## Q181806: Services Configured with an Account and Password May Not Start
+
+	Article: Q181806
+	Product(s): Microsoft Windows NT
+	Version(s): WinNT:4.0
+	Operating System(s): 
+	Keyword(s): kbenv kbnetwork
+	Last Modified: 09-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 4.0 
+	- Microsoft Windows NT Server version 4.0 
+	- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If you configure a service to start with a specific account and password within
+	a domain, certain conditions may prevent the service from starting.
+	
+	CAUSE
+	=====
+	
+	The service may not start for any of the following reasons:
+	
+	- A domain controller for that domain is not available.
+	
+	- You used the wrong service account or password for the service.
+	
+	- The password for the service account has changed or expired.
+	
+	- The service account is disabled or does not have rights to log on as a
+	  service.
+	
+	- The problem may be network related if the computer that runs the service is
+	  not a domain controller.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, make sure you use the correct account and password for
+	the service and check network connectivity with the domain and domain
+	controllers.
+	
+	If the computer uses the Windows Internet Name Service (WINS) for name
+	resolution, make sure the appropriate WINS servers are available. Also, make
+	sure all applicable network routes exist to allow connectivity with a domain
+	controller. If the computer uses dynamic Routing Information Protocol (RIP)
+	routing, on some networks the service may try to start without having received
+	the dynamic routing table. To help avoid this issue, use a default gateway or a
+	persistent route to at least one domain controller on the domain.
+	
+	Additional query words: startup
+	
+	======================================================================
+	Keywords          : kbenv kbnetwork 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400
+	Version           : WinNT:4.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

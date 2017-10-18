@@ -1,0 +1,90 @@
+---
+layout: page
+title: "Q187926: Use of the SAP Agent Service on a Windows NT Server"
+permalink: kb/187/Q187926/
+---
+
+## Q187926: Use of the SAP Agent Service on a Windows NT Server
+
+	Article: Q187926
+	Product(s): Microsoft Windows NT
+	Version(s): WinNT:3.51,4.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 09-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server versions 3.51, 4.0 
+	- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+	- Microsoft File and Print Services for NetWare version 3.51 
+	- Microsoft Services for NetWare version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes the use of the SAP Agent service in Windows NT Server.
+	
+	MORE INFORMATION
+	================
+	
+	The SAP Agent service will listen for network clients' SAP requests for IPX
+	based services that are installed and running on the server.
+	
+	Software that is designed to be advertised as a service over the network by means
+	of a SAP broadcast will issue the SAP announcements every 60 seconds, without
+	having the SAP Agent installed. However, in order for network clients to quickly
+	locate an IPX network service, a server that maintains a service database must
+	be available on the network, to respond to the service location request.
+	
+	This service database is usually maintained by a Novell NetWare or by a NetWare
+	compatible server. Microsoft File and Print Services for NetWare will also
+	maintain an IPX network service database.
+	
+	If there are no servers capable of maintaining an IPX network service database
+	installed on the network, clients will have to wait for the periodic
+	announcements issued by the service, to be able to locate the service on the
+	network. When you install the SAP Agent, the Windows NT Server will be able to
+	respond to queries for the service that is being advertised, decreasing the
+	amount of time necessary for network clients to locate the service.
+	
+	The SAP Agent will only maintain a database of IPX based services that the
+	Windows NT Server advertises. Windows NT will not respond to SAP requests for
+	other services unless File and Print Services for NetWare is installed.
+	Additionally, since SAP broadcasts are not forwarded by IPX routers to other IPX
+	subnets, the SAP Agent will not respond to service queries by network clients
+	located on remote IPX subnets.
+	
+	To install the SAP Agent, follow these steps:
+	
+	1. Click Start, point to Setting, click Control Panel, and double-click Network.
+	
+	2. Select the Services tab.
+	
+	3. Click Add and select SAP agent from the list.
+	
+	4. Verify path information to the Windows NT installation files (Windows NT
+	  CD-ROM, hard drive, or network drive).
+	
+	5. Click Continue.
+	
+	6. After binding, click Close.
+	
+	7. When prompted to restart the computer, click No.
+	
+	8. Re-apply the latest service pack currently installed.
+	
+	9. Restart the server for the change to take effect.
+	
+	Additional query words: gsnw fpnw sfn
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNT351search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search kbServicesNetware400 kbServicesNetwareSearch kbFPNW351
+	Version           : WinNT:3.51,4.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

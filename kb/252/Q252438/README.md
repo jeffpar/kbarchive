@@ -1,0 +1,156 @@
+---
+layout: page
+title: "Q252438: HOWTO: Modify Visual Data Manager to Work with Access 2000"
+permalink: kb/252/Q252438/
+---
+
+## Q252438: HOWTO: Modify Visual Data Manager to Work with Access 2000
+
+	Article: Q252438
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 2.1,2.1 SP2,2.5,2.6,5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbATLComposite kbAccess kbDatabase kbVBp500 kbVBp600 kbGrpDSVBDB kbDSupport kbMDACNoSwe
+	Last Modified: 23-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Microsoft Visual Basic ships with an add-in utility known as the Visual Data
+	Manager (VISDATA) for which source code is also provided in the form of a sample
+	project named Visdata.vbp. Visdata.vbp is installed with other Visual Basic
+	samples as part of the MSDN Library installation.
+	
+	This article describes how to modify the source code for the Visual Data Manager
+	add-in in order to use the add-in with Microsoft Access 2000 format database
+	files.
+	
+	MORE INFORMATION
+	================
+	
+	Adapting VISDATA to work with Microsoft Access 2000 format databases requires
+	changing only one project reference, adding one menu item, and adding one line
+	of code to process the new menu item.
+	
+	1. Update the DAO Reference from DAO 3.51 to DAO 3.60. (This step alone is
+	  sufficient to allow you to open and work with Access 2000 files.)
+	
+	  a. Open Visdata.vbp in the Visual Basic design environment.
+	
+	  b. On the Project menu, open the list of References.
+	
+	  c. Deselect the existing reference to Microsoft Data Access Objects 3.51, and
+	     then locate and select Microsoft Data Access Objects 3.60. If you are
+	     using Visual Basic 6.0, be sure to move the DAO 3.6 reference above the
+	     ADO library reference in the list.
+	
+	2. Add a new menu item and code to allow creating a new Access 2000 database.
+	
+	  a. Open the main form, frmMDI, in the design environment.
+	
+	  b. From the Tools menu, open the Menu Editor.
+	
+	  c. In the Menu Editor window, scroll down in the existing menu items to File
+	     / New / Microsoft Access.
+	
+	  d. In order to insert the new menu item after the existing entry for Access
+	     Version 7.0 MDB files, select the following entry: dBase. Click the Insert
+	     button, and then click the RIGHT ARROW button to make the new, blank entry
+	     a subitem under the Microsoft Access heading. Enter "Access 2000" (without
+	     the quotation marks) as the Caption and "mnuDBNMDB2K" (without the
+	     quotation marks) as the Name. Close the Menu Editor by clicking OK.
+	
+	  e. Open the frmMDI code module and select the mnuDBNMDB2K_Click event
+	     procedure in the drop-down list. Enter the following line of code:
+	
+	  NewMDB dbVersion40
+	
+	3. In Visual Basic 6.0 only, update ADO connection strings to support Access
+	  2000. VisData uses both DAO and ADO. Use the Search function on the Visual
+	  Basic Edit menu to locate all references in the project to the Microsoft Jet
+	  OLE DB Provider version 3.51 and update 3.51 to 4.0.
+	
+	4. In Visual Basic 6.0 only, add code that will enable the Grid toolbar button,
+	  which displays a table of records in a DBGrid control rather than one record
+	  per form.
+	
+	  a. Open the module modVisData and find the OpenTable procedure. After the
+	     lines:
+	
+	          If gsDataType = gsMSACCESS Then
+	            .ConnectionString = "PROVIDER=Microsoft.Jet.OLEDB.4.0;Data Source=" & gsDBName
+	
+	     insert the additional line:
+	
+	            .CursorLocation = adUseClient
+	
+	  b. Then open frmDataGrid and find the Form_Load event procedure. After the
+	     line:
+	
+	    Set datDataCtl.Recordset = mrsFormRecordset
+	
+	     insert the additional lines:
+	
+	    datDataCtl.Refresh
+	    Set grdDataGrid.DataSource = datDataCtl
+	    grdDataGrid.Refresh
+	
+	     If you were to omit this step, you might see an empty grid; or the grid may
+	     display with the very first cell empty.
+	
+	5. Recompile the VISDATA project and copy the compiled executable to the Visual
+	  Basic directory (which is \Program Files\Microsoft Visual Studio\Vb98 by
+	  default in Visual Basic 6.0).
+	
+	Starting with Microsoft Data Access Components (MDAC) version 2.6, MDAC no longer
+	contains the following Jet components:
+	
+	- Microsoft Jet
+	- Microsoft Jet OLE DB Provider
+	- ODBC Desktop Database Drivers
+	
+	For additional information, click the article number below to view the article in
+	the Microsoft Knowledge Base:
+	
+	  Q239114 ACC2000: Updated Version of Microsoft Jet 4.0 Available in Download
+	  Center
+	
+	The "MDAC 2.5 Stack and Windows File Protection" white paper contains a full list
+	of the components that are shipped with MDAC 2.5, along with a discussion of
+	Windows File Protection. Refer to this white paper for more information about
+	the Jet dynamic-link libraries (DLLs) that are included in MDAC 2.5, which are
+	no longer a part of MDAC 2.6.
+	
+	For more information about MDAC 2.5 and Windows File Protection, see the
+	following Microsoft Web site:
+	
+	  http://www.microsoft.com/data/mdacwfp.htm
+	
+	REFERENCES
+	==========
+	
+	For additional information, click the article numbers below to view the articles
+	in the Microsoft Knowledge Base:
+	
+	  Q238401 PRB: Getting Unrecognized Database Format Error Message When
+	  Upgrading to Access 2000
+	
+	  Q242010 PRB: The Data Form Wizard May Not Open an Access 2000 Database
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbATLComposite kbAccess kbDatabase kbVBp500 kbVBp600 kbGrpDSVBDB kbDSupport kbMDACNoSweep kbATM 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600
+	Version           : :2.1,2.1 SP2,2.5,2.6,5.0,6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

@@ -1,0 +1,174 @@
+---
+layout: page
+title: "Q136983: No Sound, MMSystem or MCI Errors In Windows 95/98"
+permalink: kb/136/Q136983/
+---
+
+## Q136983: No Sound, MMSystem or MCI Errors In Windows 95/98
+
+	Article: Q136983
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): 1.0,1.0a,1994 edition,2.0,6.0
+	Operating System(s): 
+	Keyword(s): kbdisplay kbenv kberrmsg kbmm kbsound kbtlc kbimukbfaq
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Age of Empires, version 1.0 
+	- Microsoft Age of Empires II: The Age of Kings, version 2.0 
+	- Microsoft Age of Empires II Expansion: The Conquerors 
+	- Microsoft Allegiance, version 1.0 
+	- Microsoft Ancient Lands for Windows, version 1.0 
+	- Microsoft Art Gallery for Windows, version 1.0 
+	- Microsoft Asheron's Call, version 1.0 
+	- Microsoft Baseball 2001 
+	- Microsoft Bookshelf 1996-97 for Windows 
+	- Microsoft Bookshelf '95 for Windows 95 
+	- Microsoft Bookshelf for Windows, 1991, 1992, 1993, 1994, 1995 editions 
+	- Microsoft Casino 
+	- Microsoft Cinemania for Windows, 1992, 1993, 1994, 1995, 1996, 1997 editions 
+	- Microsoft Classic Board Games 
+	- Microsoft Close Combat: A Bridge Too Far, version 2.0 
+	- Microsoft Combat Flight Simulator 2: WWII Pacific Theater, version 1.0 
+	- Microsoft Complete Baseball Guide for Windows 1994 edition 
+	- Microsoft Complete Baseball Guide for Windows, 1995 edition 
+	- Microsoft Complete Gardening for Windows, version 1.0 
+	- Microsoft Complete NBA Basketball for Windows, 1994-1995, 1995-1996 editions 
+	- Microsoft Creative Writer for Windows, versions 1.0, 2.0 
+	- Microsoft Crimson Skies 
+	- Microsoft Dangerous Creatures for Windows, version 1.0 
+	- Microsoft Dinosaurs for Windows, version 1.0 
+	- Microsoft Encarta Encyclopedia 97 Deluxe for Windows 
+	- Microsoft Encarta 97 Encyclopedia for Windows 
+	- Microsoft Encarta 96 Encyclopedia for Windows 
+	- Microsoft Encarta 1994 The Complete Multimedia Encyclopedia 
+	- Microsoft Encarta 95 The Complete Interactive Multimedia Encyclopedia 
+	- Microsoft Encarta 96 World Atlas for Windows 
+	- Microsoft Fine Artist for Windows, version 1.0 
+	- Microsoft Flight Simulator for Windows 95, version 6.0 
+	- Microsoft Flight Simulator 2000 
+	- Microsoft Flight Simulator 2002 
+	- Microsoft Flight Simulator 2002 Professional Edition 
+	- Microsoft Golf 2001 Edition 
+	- Microsoft Links 2001 
+	- Microsoft MechWarrior 4: Vengeance 
+	- Microsoft Metal Gear Solid 
+	- Microsoft Midtown Madness 2, version 2.0 
+	- Microsoft Motocross Madness 2, version 2.0 
+	- Microsoft Multimedia Mozart for Windows, version 1.0 
+	- Microsoft Multimedia Schubert for Windows, version 1.0 
+	- Microsoft Multimedia Strauss for Windows, version 1.0 
+	- Microsoft Multimedia Stravinsky for Windows, version 1.0 
+	- Microsoft Music Central for Windows, 1996, 1997 edition 
+	- Microsoft Musical Instruments for Windows, version 1.0 
+	- Microsoft NBA Inside Drive 2000, version 1.0 
+	- Microsoft NFL Fever 2000, version 1.0 
+	- Microsoft Pandora's Box, version 1.0 
+	- Microsoft Plus! Game Pack: Cards and Puzzles 
+	- Microsoft Reader's Digest Complete Do-It-Yourself Guide for Windows, version 1.0 
+	- Microsoft Return of Arcade for Windows, version 1.0 
+	- Microsoft SoundBits (all collections) 
+	- Microsoft StarLancer, version 1.0 
+	- the operating system: Microsoft Windows 95 
+	- Microsoft Wine Guide for Windows, versions 1.0, 1.0a, 2.0 
+	- Microsoft World of Flight for Windows, version 1.0 
+	- Scholastic's Magic School Bus series: Explores Inside the Earth for Windows, version 1.0 
+	- Scholastic's Magic School Bus series: Explores the Human Body for Windows, version 1.0 
+	- Scholastic's Magic School Bus series: Explores the Ocean for Windows, version 1.0 
+	- Scholastic's Magic School Bus series: Explores the Solar System for Windows, version 1.0 
+	- Microsoft Encarta 97 World Atlas for Windows 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you run one of the programs listed at the top of this article on a computer
+	running Microsoft Windows 95 or Microsoft Windows 98, you may experience one of
+	the following symptoms:
+	
+	- You do not hear any sounds in Microsoft Art Gallery or Encarta 1997.
+	
+	- Sound or video controls in the Media Gallery are not available.
+	
+	- When you attempt to play a video clip, the cursor briefly changes to an
+	  hourglass and the program does not play the video clip.
+	
+	- Some sounds may play while others may not.
+	
+	- You may receive one of the following error messages:
+	
+	      - MMSYSTEM263 This is not a registered MCI device.
+	
+	         - device:WaveAudio
+	
+	         - device:Sequencer
+	
+	         - file: <drive>:\<path>\<file name>.avi
+	
+	      - Wave Error 10: MMSYSTEM263 This is not a registered MCI device.
+	
+	      - Wave Error 7: MMSYSTEM263 This is not a registered MCI device.
+	
+	      - MMSYSTEM281 This file could not be played. Check file or install a driver
+	     that supports this type of file.
+	
+	      - Failed to open Sound/Wave device driver. Please check that Sound/Wave is
+	     installed. For more information see Read Me.
+	
+	      - Video not available.
+	
+	      - The correct CD must be in drive D: to continue.
+	
+	      - There is not enough memory available to play videos. Try closing other
+	     applications, or consult "Troubleshooting" from the Help screen.
+	
+	      - Encarta World Atlas cannot provide access to the audio content in the
+	     product, because audio compression codecs are disabled or not installed.
+	     Try enabling the codec in the multimedia control panel, or install the
+	     driver if it is not present.
+	
+	CAUSE
+	=====
+	
+	This behavior can occur if one of the Media Control Interface (MCI) Devices is
+	disabled, not installed, or the line for the device is missing in the Win.ini
+	file.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue:
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click the Multimedia icon.
+	
+	3. On the Advanced tab in Windows 95, or on the Devices tab in Windows 98,
+	  double-click Media Control Devices.
+	
+	4. Click Wave Audio Device (Media Control), and then click Properties.
+	
+	5. Click Use This Media Control Device, and then click OK.
+	
+	6. Repeat steps 4-5 for MIDI Sequencer Device (Media Control) and Motion Video
+	  Device (Media Control), and then click OK.
+	
+	7. Close Control Panel, and then restart Windows 95.
+	
+	If one of the media control devices is missing, or if the issue continues to
+	occur, please see the following article in the Microsoft Knowledge Base:
+	
+	  Q141349 Error Message: MMSYSTEM281 This File Could Not Be Played
+	
+	Additional query words: rise of rome expansion pack mmviewer 95 multi media multimedia mmtitles kbmm sound bits blaster mmsystem281 mmsystem262 win95x win95 mmsystem326 fs6 fs95
+	
+	======================================================================
+	Keywords          : kbdisplay kbenv kberrmsg kbmm kbsound kbtlc kbimu kbfaq
+	Technology        : kbOSWin95 kbOSWinSearch kbHomeProdSearch kbLinkGolfSearch kbAllegianceSearch kbMetalGearSearch kbPlusSearch kbStarlancerSearch kbSoundBitsSearch kbCrimsonSkiesSearch kbAsheronSearch kbCloseCombatSearch kbBaseballSearch kbMidtownMadSearch kbAOESearch kbArcadeRet kbZNotKeyword kbGolf2001 kbGolfSearch kbNFLFever2000 kbNFLSearch kbArcadeSearch kbMSNSearch kbZNotKeyword2 kbKidsSearch kbBookshelfSearch kbPandoraSearch kbMotocrossSearch kbEncartaEncycSearch kbSimSearch kbZNotKeyword3 kbCineManiaSearch kbAllegiance kbAsheron100 kbStarlancer kbAOE2ExpConquerors kbPandorasBox kbAOE2Kings kbAncientLands kbBaseBall2001 kbCloseCombat2 kbCombatFlightSim2 kbCompleteBaseballSearch kbCombatFlightSimSearch kbFlightSim2000 kbFlightSim95 kbCompleteBasketballSearch kbCreativeWriter100 kbCreativeWriter200 kbClassicBoardGames kbMetalGearSolid kbMidtownMadness2 kbMMStrauss kbMMSchubert kbMMStravinsky kbMMMozart100 kbMotocrossM2 kbBookShelf1995 kbBookShelf1996 kbBookShelf1997 kbCasino kbCompleteBaseball1994 kbCompleteBaseball1995 kbCompleteGardening kbCrimsonSkies kbDangerousCreatures kbDinosaurs100 kbFineArtist100 kbLinks2001 kbMusicCentral kbMusicalInst kbNBAInsideDrive2000 kbSoundBits kbWine100 kbWine100a kbWine200 kbWorldofFlight kbScholasticHuman kbScholasticOcean kbScholasticSolar kbScholasticEarth kbArtGallery _IKkbbogus kbHomeMMsearch kbAOE kbEncartaSearch kbGamesSearch kbFlightSimSearch kbMusicCentral1996 kbMusicCentral1997 kbDoItYourself kbMSBSearch kbFlightSim2002 kbFlightSim2002Pro kbCompleteNBABasketball1994 kbEncarta1995 kbEncartaEnCyc1996 kbEncartaEnCyc1997 kbEncartaEnCyc1997Del kbPlusGamePk kbEncartaEnCyc1994 kbEncartaWorldAtlas1996
+	Version           : :1.0,1.0a,1994 edition,2.0,6.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

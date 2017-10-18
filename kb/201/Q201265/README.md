@@ -1,0 +1,147 @@
+---
+layout: page
+title: "Q201265: Troubleshooting Directory Service Manager for NetWare"
+permalink: kb/201/Q201265/
+---
+
+## Q201265: Troubleshooting Directory Service Manager for NetWare
+
+	Article: Q201265
+	Product(s): Microsoft Windows NT
+	Version(s): winnt:3.51,4.0
+	Operating System(s): 
+	Keyword(s): kbenv kbnetwork
+	Last Modified: 10-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft File and Print Services for NetWare version 3.51 
+	- Microsoft Windows NT Server versions 3.51, 4.0 
+	- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Directory Service Manager for NetWare (DSMN) comes with three utilities that are
+	useful for troubleshooting: DSMPACK, DSMCHK, and DSMDUMP.
+	
+	MORE INFORMATION
+	================
+	
+	NOTE: DSMPACK is installed by default; DSMCHK and DSMDUMP must be manually
+	expanded from the installation medium.
+	
+	DSMPACK
+	-------
+	
+	DSMPACK is a utility similar to Jetpack (for WINS) and is used to repair and
+	compress the DSMN database. This utility can be used if a system crash or power
+	outage causes unexpected errors or the DSMN Service fails to start. To use it,
+	follow these steps:
+	
+	1. Open a command prompt.
+	
+	2. Change to the DSMN database path (%systemroot%\system32\syncagnt).
+	
+	3. Stop the DMSN service (for example, by typing "net stop mssync" (without the
+	  quotation marks)).
+	
+	4. Type "dsmpack /r" (without the quotation marks) to defragment and repair the
+	  database.
+	
+	5. Restart the DSMN service.
+	
+	Sample output:
+	
+	  Microsoft (R) DSMN Database Compaction Utility 
+	  Version 4.0
+	  Copyright (C) Microsoft Corporation 1996.  All Rights Reserved.
+	
+	  Initiating DEFRAGMENTATION mode (with REPAIR option)...
+	
+	          Database: C:\WINNT40\System32\SyncAgnt\mssync.mdb
+	         Log files: C:\WINNT40\System32\SyncAgnt
+	      System files: C:\WINNT40\System32\SyncAgnt
+	    Temp. Database: C:\WINNT40\System32\SyncAgnt\mssync.tmp
+	   Backup Database: C:\WINNT40\System32\SyncAgnt\mssync.bkp
+	
+	                       Repair Status  ( % complete )
+	
+	            0    10   20   30   40   50   60   70   80   90  100
+	            |----|----|----|----|----|----|----|----|----|----|
+	            ...................................................
+	
+	  Operation completed successfully in 6.28 seconds.
+	
+	DSMCHK
+	------
+	
+	DSMCHK can be used to check the synchronization state of a user (for example, in
+	the logon script). The syntax is:
+	
+	  Usage: dsmchk -d DomainName -u UserName
+	               [-n NetWareServerName] [-r Number1:Number2]
+	         where Number1 : The number of retries
+	               Number2 : The interval in seconds between the retries
+	
+	NOTE: Use %USERDOMAIN% and %USERNAME% in a logon script.
+	
+	For additional information in greater detail about DSMCHK, please see the
+	following article(s) in the Microsoft Knowledge Base:
+	
+	  Q154760 How to Use the DSMN Utility to Verify Synchronized Passwords
+	
+	DSMDUMP
+	-------
+	
+	DSMDUMP dumps the database used by DSMN to the screen. This utility is useful to
+	verify that all your accounts and groups are replicated correctly. To use it,
+	follow these steps:
+	
+	1. Open a command prompt.
+	
+	2. Change to the DSMN database path (%systemroot%\system32\syncagnt).
+	
+	3. Stop the DMSN service (for example, by typing "net stop mssync" (without the
+	  quotation marks)).
+	
+	4. Type "dsmdump" (without the quotation marks).
+	
+	5. Restart the DSMN service.
+	
+	NOTE: If might be useful to redirect dsmdump's output to a file, by typing
+	something such as "dsmdump >db.txt" (without the quotation marks).
+	
+	Sample output:
+	
+	  ---------------------   SERVER TABLE   ---------------------
+	
+	  ------------------------------------------------------------
+	
+	  --------------------   ACCOUNT TABLE   ---------------------
+	
+	  1)   DOMAIN ADMINS
+	     Rid = 512   Type = Global Group   State = Normal
+	     Local groups containing this global group = 544
+	     Propagated to servers = NULL
+	     LOCAL:      Version = 1
+	
+	  2)   DOMAIN USERS
+	     Rid = 513   Type = Global Group   State = Normal
+	     Local groups containing this global group = NULL
+	     Propagated to servers = NULL
+	     LOCAL:      Version = 1
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbenv kbnetwork 
+	Technology        : kbWinNTsearch kbWinNT351search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search kbServicesNetwareSearch kbFPNW351
+	Version           : winnt:3.51,4.0
+	Hardware          : ALPHA x86
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

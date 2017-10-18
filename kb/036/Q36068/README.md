@@ -1,0 +1,169 @@
+---
+layout: page
+title: "Q36068: INFO: IEEE Floating-Point Representation and MS Languages"
+permalink: kb/036/Q36068/
+---
+
+## Q36068: INFO: IEEE Floating-Point Representation and MS Languages
+
+	Article: Q36068
+	Product(s): Microsoft Programming Utilities
+	Version(s): 1.0,1.0a,1.5,1.51,1.52,2.0,2.1,4.0,6.0,6.0a,6.0ax,7.0
+	Operating System(s): 
+	Keyword(s): kbFortranPS kbLangC kbLangFortran kbVC100 kbVC150 kbVC151 kbVC152 kbVC200 kbVC210 kbVC4
+	Last Modified: 02-NOV-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft C for MS-DOS, versions 6.0, 6.0a, 6.0ax 
+	- Microsoft C/C++ for MS-DOS, version 7.0 
+	- Microsoft Visual C++, versions 1.0, 1.5, 1.51, 1.52, 2.0, 2.1, 4.0 
+	- Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+	- Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+	- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+	- Microsoft FORTRAN PowerStation for MS-DOS, versions 1.0, 1.0a 
+	- Microsoft Fortran Powerstation 32 for Windows NT, version 1.0 
+	- Microsoft Macro Assembler (MASM) 
+	-------------------------------------------------------------------------------
+	
+	The information in this article is included in the documentation starting
+	with Visual C++ 5.0. Look there for future revisions.
+	
+	SUMMARY
+	=======
+	
+	The following information discusses how real*4 (single precision) and real*8
+	(double precision) numbers are stored internally by Microsoft languages that use
+	the IEEE floating-point format.
+	
+	MORE INFORMATION
+	================
+	
+	There are three internal varieties of real numbers. Microsoft is consistent with
+	the IEEE numeric standards. Real*4 and real*8 are used in all of our languages.
+	Real*10 is used with MASM and in the 16-bit versions of the C compiler. In
+	16-bit applications, Real* 10 is the internal floating-point format used in the
+	numerical processors and coprocessors for the Intel 80x86 processor family and
+	also in the emulator math package which emulates the Intel processors.
+	
+	In FORTRAN, real*4 is declared using the words "REAL" or "REAL*4." The words
+	"DOUBLE PRECISION" or "REAL*8" are used to declare a real*8 number. Real*10
+	variables cannot be specified in FORTRAN.
+	
+	In C, real*4 is declared using the word "float." Real*8 is declared using the
+	word "double". Real*10 is declared using the words "long double".
+	
+	In MASM, real*4 is declared with the "DD" directive, real*8 is declared with the
+	"DQ" directive, and real*10 is declared with the "DT" directive.
+	
+	The values are stored as follows:
+	
+	  real*4  sign bit, 8  bit exponent, 23 bit mantissa
+	  real*8  sign bit, 11 bit exponent, 52 bit mantissa
+	  real*10 sign bit, 15 bit exponent, 64 bit mantissa
+	
+	In real*4 and real*8 formats, there is an assumed leading 1 in the mantissa that
+	is not stored in memory, so the mantissas are actually 24 or 53 bits, even
+	though only 23 or 52 bits are stored. The real*10 format actually stores this
+	bit.
+	
+	The exponents are biased by half of their possible value. This means you subtract
+	this bias from the stored exponent to get the actual exponent. If the stored
+	exponent is less than the bias, it is actually a negative exponent.
+	
+	The exponents are biased as follows:
+	
+	  8-bit  (real*4)  exponents are biased by 127
+	  11-bit (real*8)  exponents are biased by 1023
+	  15-bit (real*10) exponents are biased by 16383
+	
+	These exponents are not powers of ten; they are powers of two, that is, 8-bit
+	stored exponents can be up to 127. 2**127 is roughly equivalent to 10**38, which
+	is the actual limit of real*4.
+	
+	The mantissa is stored as a binary fraction of the form 1.XXX... . This fraction
+	has a value greater than or equal to 1 and less than 2. Note that real numbers
+	are always stored in normalized form, that is, the mantissa is left-shifted such
+	that the high-order bit of the mantissa is always 1. Because this bit is always
+	1, it is assumed (not stored) in the real*4 and real*8 formats. The binary (not
+	decimal) point is assumed to be just to the right of the leading 1.
+	
+	The format, then, for the various sizes is as follows:
+	
+	             BYTE 1    BYTE 2    BYTE 3    BYTE 4   ...  BYTE n
+	  real*4    SXXX XXXX XMMM MMMM MMMM MMMM MMMM MMMM
+	  real*8    SXXX XXXX XXXX MMMM MMMM MMMM MMMM MMMM ... MMMM MMMM
+	  real*10   SXXX XXXX XXXX XXXX 1MMM MMMM MMMM MMMM ... MMMM MMMM
+	
+	S represents the sign bit, the X's are the exponent bits, and the M's are the
+	mantissa bits. Note that the leftmost bit is assumed in real*4 and real*8
+	formats, but present as "1" in BYTE 3 of the real*10 format.
+	
+	To shift the binary point properly, you first un-bias the exponent and then move
+	the binary point to the right or left the appropriate number of bits.
+	
+	The following are some examples in real*4 format:
+	
+	                   SXXX XXXX XMMM MMMM ... MMMM MMMM
+	2   =  1  * 2**1  = 0100 0000 0000 0000 ... 0000 0000 = 4000 0000
+	
+	  Note the sign bit is zero, and the stored exponent is 128, or 100 0000 0 in
+	  binary, which is 127 plus 1. The stored mantissa is (1.) 000 0000 ... 0000
+	  0000, which has an implied leading 1 and binary point, so the actual mantissa
+	  is one.
+	
+	-2  = -1  * 2**1  = 1100 0000 0000 0000 ... 0000 0000 = C000 0000
+	
+	  Same as +2 except that the sign bit is set. This is true for all IEEE format
+	  floating-point numbers.
+	
+	4  =  1  * 2**2  = 0100 0000 1000 0000 ... 0000 0000 = 4080 0000
+	
+	  Same mantissa, exponent increases by one (biased value is 129, or 100 0000 1
+	  in binary.
+	
+	6  = 1.5 * 2**2  = 0100 0000 1100 0000 ... 0000 0000 = 40C0 0000
+	
+	  Same exponent, mantissa is larger by half--it's (1.) 100 0000 ... 0000 0000,
+	  which, since this is a binary fraction, is 1 1/2 (the values of the
+	  fractional digits are 1/2, 1/4, 1/8, and so forth.).
+	
+	1  = 1   * 2**0  = 0011 1111 1000 0000 ... 0000 0000 = 3F80 0000
+	
+	  Same exponent as other powers of two, mantissa is one less than two at 127,
+	  or 011 1111 1 in binary.
+	
+	.75 = 1.5 * 2**-1 = 0011 1111 0100 0000 ... 0000 0000 = 3F40 0000
+	
+	  The biased exponent is 126, 011 1111 0 in binary, and the mantissa is (1.)
+	  100 0000 ... 0000 0000, which is 1 1/2.
+	
+	2.5 = 1.25 * 2**1 = 0100 0000 0010 0000 ... 0000 0000 = 4020 0000
+	
+	  Exactly the same as two except that the bit that represents 1/4 is set in the
+	  mantissa.
+	
+	0.1 = 1.6 * 2**-4 = 0011 1101 1100 1100 ... 1100 1101 = 3DCC CCCD
+	
+	  1/10 is a repeating fraction in binary. The mantissa is just shy of 1.6, and
+	  the biased exponent says that 1.6 is to be divided by 16 (it is 011 1101 1 in
+	  binary, which is 123 in decimal). The true exponent is 123 - 127 = -4, which
+	  means that the factor by which to multiply is 2**-4 = 1/16. Note that the
+	  stored mantissa is rounded up in the last bit -- an attempt to represent the
+	  unrepresentable number as accurately as possible. (The reason that 1/10 and
+	  1/100 are not exactly representable in binary similar to the reason that 1/3
+	  is not exactly representable in decimal.)
+	
+	0  = 1.0 * 2**-128 = all zero's--a special case.
+	
+	Additional query words: kbinf 1.00 1.50 2.00 2.10 4.00 5.10 6.00 6.00a 6.00ax 7.00 8.00 8.00c 9.00 9.10 floating point 8087 80287 80387 80486 pentium \* swept by: v-aarod, 9/8/95
+	
+	======================================================================
+	Keywords          : kbFortranPS kbLangC kbLangFortran kbVC100 kbVC150 kbVC151 kbVC152 kbVC200 kbVC210 kbVC400 kbVC600 
+	Technology        : kbVCsearch kbVC400 kbMASMsearch kbAudDeveloper kbZNotKeyword8 kbFortranSearch kbvc150 kbvc100 kbZNotKeyword2 kbCCompSearch kbZNotKeyword3 kbCComp600DOS kbCComp600aDOS kbCComp600axDOS kbCVC700DOS kbVC600 kbVC151 kbVC200 kbVC210 kbFORTRANPower32100NT kbFORTRANPower100DOS kbFORTRANPower100aDOS kbVC32bitSearch kbVC152
+	Version           : :1.0,1.0a,1.5,1.51,1.52,2.0,2.1,4.0,6.0,6.0a,6.0ax,7.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

@@ -1,0 +1,163 @@
+---
+layout: page
+title: "Q197487: BUG: MSChart EditCopy Sends Incorrect Legends To Clipboard"
+permalink: kb/197/Q197487/
+---
+
+## Q197487: BUG: MSChart EditCopy Sends Incorrect Legends To Clipboard
+
+	Article: Q197487
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): WINDOWS:5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbAPI kbCtrl kbGrpDSUser kbVBp kbVBp500bug kbVBp600bug kbGrpDSVB
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The EditCopy method of the MSChart control is used to send a copy of the chart
+	to the clipboard. When the clipboard contents are pasted or saved, any chart
+	legends display only their default values ("C1", "C2", and so forth) instead of
+	the values that were specified by the program.
+	
+	RESOLUTION
+	==========
+	
+	Create an image of the chart using a PictureBox control and send the image to
+	the clipboard.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Create a Visual Basic Standard EXE project. Form1 is created by default.
+	
+	2. From the Project menu, choose Components, which opens the Components dialog
+	  box. Click "Microsoft Chart Control", and then click OK.
+	
+	3. Add a Chart control to Form1 and set the chart's ShowLegend property to True.
+	
+	4. Add the following code to the General Declarations section of Form1:
+	
+	        Option Explicit
+	
+	        Private Sub Form_Load()
+	           ' Set the chart legends to some text value
+	           MSChart1.Plot.SeriesCollection.Item(1).LegendText = "Total Space"
+	           MSChart1.Plot.SeriesCollection.Item(2).LegendText = "Used Space"
+	           ' Call the EditCopy method to send the chart to the clipboard
+	           MSChart1.EditCopy
+	           ' Save the data on the clipboard as a bitmap
+	           ' you can also use clipboard viewer to see everything
+	           SavePicture Clipboard.GetData, "c:\test1.bmp"
+	        End Sub
+	
+	5. Run the program and the bitmap image of the chart control is stored in the
+	  file C:\test1.bmp.
+	
+	6. Open the file test1.bmp using Paint, the Clipboard Viewer, or another image
+	  editor. The default values of the legend text were used rather than the
+	  values set by the sample program.
+	
+	Steps to Workaround the Problem
+	-------------------------------
+	
+	1. Create a Visual Basic Standard EXE project. Form1 is created by default.
+	
+	2. From the Project menu, choose Components, which opens the Components dialog
+	  box. Click "Microsoft Chart Control", and then click OK.
+	
+	3. Add a Chart, a CommandButton, and a PictureBox control to Form1.
+	
+	4. Set the ShowLegend property of MSChart1 to True.
+	
+	5. Add the following code to the General Declarations section of Form1:
+	
+	        Option Explicit
+	
+	        Private Declare Function SendMessage Lib "user32" Alias _
+	         "SendMessageA" (ByVal hwnd As Long, ByVal wMsg As Long, _
+	          ByVal wParam As Long, ByVal lParam As Long) As Long
+	
+	        Private Const WM_PAINT = &HF
+	        Private Const WM_PRINT = &H317
+	        Private Const PRF_CLIENT = &H4&    ' Draw the window's client area.
+	        Private Const PRF_CHILDREN = &H10& ' Draw all visible child windows.
+	        Private Const PRF_OWNED = &H20&    ' Draw all owned windows.
+	
+	        Private Sub Command1_Click()
+	           Dim rv As Long
+	           ' Make sure picturebox is same size as the chart.
+	           With Picture1
+	              .Height = MSChart1.Height
+	              .Width = MSChart1.Width
+	           End With
+	
+	           Picture1.AutoRedraw = True
+	           rv = SendMessage(MSChart1.hwnd, WM_PAINT, Picture1.hDC, 0)
+	           Picture1.Picture = Picture1.Image
+	           Picture1.AutoRedraw = False
+	
+	           ' Sent the picture to the clipboard.
+	           Clipboard.Clear
+	           Clipboard.SetData Picture1.Picture
+	
+	           ' Save the picture on disk.
+	           SavePicture Form1.Picture1.Picture, "c:\testpic.bmp"
+	        End Sub
+	
+	        Private Sub Form_Load()
+	           ' Set our legends.
+	           With MSChart1
+	              .Plot.SeriesCollection.Item(1).LegendText = "Total Disk Space"
+	              .Plot.SeriesCollection.Item(2).LegendText = "Used Disk Space"
+	           End With
+	           Picture1.Visible = False
+	        End Sub
+	
+	6. Run the program and click Command1 to store the bitmap image of the chart
+	  control in the file C:\testpic.bmp.
+	
+	7. Open the file testpic.bmp using Paint or another image editor. You can also
+	  use the clipboard viewer to directly view the clipboard contents. Since the
+	  bitmap was created using the image on the screen, the legend text appears
+	  correctly as part of the image.
+	
+	REFERENCES
+	==========
+	
+	For additional information, please see the following articles in the Microsoft
+	Knowledge Base:
+	
+	  Q188006 BUG: EditCopy Incorrectly Copies Series Edge/Line Color of Chart
+	
+	  Q178076 HOWTO: Use a PictureBox to Control Orientation Printing a Form
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbAPI kbCtrl kbGrpDSUser kbVBp kbVBp500bug kbVBp600bug kbGrpDSVB 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+	Version           : WINDOWS:5.0,6.0
+	Issue type        : kbbug
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

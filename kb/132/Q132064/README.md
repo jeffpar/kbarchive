@@ -1,0 +1,81 @@
+---
+layout: page
+title: "Q132064: REGEDIT May Not Be Able to Import Registry with Large Keys"
+permalink: kb/132/Q132064/
+---
+
+## Q132064: REGEDIT May Not Be Able to Import Registry with Large Keys
+
+	Article: Q132064
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): 95
+	Operating System(s): 
+	Keyword(s): kberrmsg kbtool kbusage win95
+	Last Modified: 17-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 95 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about editing the registry.
+	Before you edit the registry, make sure you understand how to restore it
+	if a problem occurs. For information about how to do this, view the
+	"Restoring the Registry" Help topic in Regedit.exe or the "Restoring a
+	Registry  Key" Help topic in Regedt32.exe.
+	
+	SYMPTOMS
+	========
+	
+	When you try to import the registry using Registry Editor (Regedit.exe) in real
+	mode, you may receive either of the following error messages:
+	
+	- Unable to open registry (14) - System.dat
+	
+	- Error accessing the registry: The file may not be complete.
+	
+	CAUSE
+	=====
+	
+	The real-mode stub of Regedit.exe has the ability to export, import, and create
+	registry files. Regedit.exe uses the internal real-mode registry library to
+	accomplish these tasks. The real-mode code in this library has certain problems
+	with large registry files.
+	
+	For example, if there are many applications installed, HKEY_CLASSES_ROOT may be
+	quite large. If one of the structures in the System.dat file takes up too much
+	space in conventional memory, the registry cannot be accessed.
+	
+	RESOLUTION
+	==========
+	
+	WARNING: Using Registry Editor incorrectly can cause serious problems that may
+	require you to reinstall your operating system. Microsoft cannot guarantee that
+	problems resulting from the incorrect use of Registry Editor can be solved. Use
+	Registry Editor at your own risk.
+	
+	For information about how to edit the registry, view the "Changing Keys And
+	Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+	Information in the Registry" and "Edit Registry Data" Help topics in
+	Regedt32.exe. Note that you should back up the registry before you edit it.
+	
+	To work around this problem, use Registry Editor in protected mode.
+	
+	For information about how to import the registry, view the "Importing the
+	Registry" Help topic in Registry Editor (Regedit.exe).
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft Windows 95. We are
+	researching this problem and will post new information here in the Microsoft
+	Knowledge Base as it becomes available.
+	
+	======================================================================
+	Keywords          : kberrmsg kbtool kbusage win95 
+	Technology        : kbWin95search kbZNotKeyword3
+	Version           : 95
+	
+	=============================================================================
+	

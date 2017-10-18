@@ -1,0 +1,99 @@
+---
+layout: page
+title: "Q69967: Automating Network Groups and Items via SETUP.INF"
+permalink: kb/069/Q69967/
+---
+
+## Q69967: Automating Network Groups and Items via SETUP.INF
+
+	Article: Q69967
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:3.0,3.0a
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 29-OCT-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows versions 3.0, 3.0a 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	When Windows 3.0 is set up on a network workstation via the SETUP /N command, at
+	least three default program groups, Main, Games, and Accessories, are created.
+	Each of these groups have a certain number of default program items.
+	
+	It is possible to have custom new groups created with selected program items or
+	change the contents of the default program groups by editing the SETUP.INF
+	before running SETUP /N on the individual workstations.
+	
+	MORE INFORMATION
+	================
+	
+	Use the following outline to create custom groups via the SETUP.INF file.
+	
+	1. Edit SETUP.INF with a standard ASCII text editor and locate the line:
+	
+	        [progman.groups]
+	
+	2. Add a blank line directly under Games, and, on this line, type the name of
+	  the new group you want to have built:
+	
+	        [progman.groups]
+	        Main,1
+	        Accessories
+	        Games
+	        MyWork
+	
+	  The ",1" parameter indicates which group will be the default "open" group upon
+	  starting Windows.
+	
+	3. Add a new section header after the listing of groups and a list of what
+	  program items you want to appear in this group:
+	
+	        [MyWork]
+	        "Solitaire",   SOL.EXE
+	        "StyleSheet",  "NOTEPAD.EXE STYLESH.TXT"
+	        "GammaWrite",  GW.EXE
+	
+	The new group "MyWork" will have three program items in it. "Solitaire" is the
+	word that appears under the icon and the executable file is SOL.EXE.
+	"StyleSheet" is a text file on company style that will be represented as an icon
+	for quick reference. The command line is in quotation marks because there is a
+	space between the two filenames. "GammaWrite" is a third-party utility program
+	item. Because it does not come with Windows, it is necessary to add GW.EXE to
+	the end of two other sections of the SETUP.INF, [dontfind] and [win.apps]. If
+	this program is not located in the shared Windows directory, supply a full path
+	description to the executable file.
+	
+	The SETUP.INF file is a comma-delineated text file formatted for 160 columns that
+	supplies customized directions to the SETUP.EXE.
+	
+	Preferred Workstation Setup Method
+	----------------------------------
+	
+	Install Windows 3.0 on a network (see pages 543-556 of the "Microsoft Windows
+	User's Guide"), and then run the SETUP /N command on each workstation. In some
+	instances (for example, large workstation groups) it may not be efficient to do
+	this and then customize each workstation individually. By editing the SETUP.INF
+	file with a text editor, it is possible to enhance the SETUP /N command so that
+	it customizes each workstation to a company standard.
+	
+	REFERENCES
+	==========
+	
+	"Microsoft Windows User's Guide." Version 3.00, "Networks and Windows," pages
+	543-556.
+	
+	Additional query words: 3.00 3.0 3.0a 3.00a kbsetup SETUP.INF NETWORKS.TXT
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+	Version           : WINDOWS:3.0,3.0a
+	
+	=============================================================================
+	

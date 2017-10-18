@@ -1,0 +1,122 @@
+---
+layout: page
+title: "Q192441: Expedia Err Msg: Internet Explorer Cannot Open the Internet Site"
+permalink: kb/192/Q192441/
+---
+
+## Q192441: Expedia Err Msg: Internet Explorer Cannot Open the Internet Site
+
+	Article: Q192441
+	Product(s): Microsoft Automap
+	Version(s): WINDOWS:1.0
+	Operating System(s): 
+	Keyword(s): kbenv kberrmsg kbsetup kbimu
+	Last Modified: 26-AUG-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Expedia Streets 98 
+	- Microsoft Expedia Streets 98 Deluxe, version 1.0 
+	- Microsoft Expedia Trip Planner 98 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you attempt to use the Travel Guide or other Internet features in the
+	Microsoft products listed in the applies to section of this article, you may
+	receive an error message similar to the following:
+	
+	  Microsoft Internet Explorer
+	
+	  Internet Explorer cannot open the Internet Site
+	  mk:@MSITStore:E:\Data\USArt.ITS::/0409/DefTOC_1.htm
+	
+	  Invalid Syntax
+	
+	CAUSE
+	=====
+	
+	This behavior can occur if Microsoft Internet Explorer is not installed on your
+	computer.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, follow these steps:
+	
+	1. Clean the CD-ROM for the program. To do so, gently wipe the silver side of
+	  the CD-ROM with a soft, lint-free cotton cloth. Do not use paper cloth which
+	  can scratch the plastic and leave streaks. When you clean the CD-ROM, wipe
+	  from the center of the disc outward; do not use a circular motion.
+	
+	2. Remove Streets 98 and Trip Planner 98. To do so, follow these steps:
+	  a. Click Start, point to Settings, and then click Control Panel.
+	
+	  b. Double-click Add/Remove Programs.
+	
+	  c. If Microsoft Expedia Streets 98 or Microsoft Expedia Streets 98 Deluxe is
+	     installed, click Microsoft Expedia Streets 98 or Microsoft Expedia Streets
+	     98 Deluxe, and then click Add/Remove. If neither of these programs is
+	     installed, proceed to step E.
+	
+	  d. Click Remove All, and then follow the instructions on the screen to finish
+	     removing the program.
+	
+	  e. If Microsoft Expedia Trip Planner 98 is installed, click Microsoft Expedia
+	     Trip Planner 98, and then click Add/Remove.
+	
+	  f. Click Remove All, and then follow the instructions on the screen to finish
+	     removing the program.
+	
+	  g. Restart the computer.
+	
+	3. Run ScanDisk to check the hard disk for errors, and fix any problems it
+	  finds. To do so, follow these steps:
+	  a. Click Start, point to Programs, point to Accessories, point to System
+	     Tools, and then click ScanDisk.
+	
+	  b. Click your hard disk. If more than one hard disk is installed in the
+	     computer, press and hold down the CTRL key and then click to select all of
+	     the hard disks.
+	
+	  c. Click Thorough, and then click Start.
+	
+	4. Reinstall the program or programs you removed. To do this, insert the
+	  installation CD-ROM for the program into the CD-ROM drive, and then follow
+	  the instructions on the screen to finish reinstalling the program.
+	
+	  NOTE: Repeat this step for each program you removed.
+	
+	  If the installation program does not start automatically, follow these steps:
+	  a. Click Start, and then click Run.
+	
+	  b. In the Open box, type the following line, and then click OK
+	
+	  " <drive>:\setup.exe " (without the quotation marks)
+	
+	     where <drive> is the letter of the CD-ROM drive that contains the
+	     installation CD-ROM for the program.
+	
+	  c. Follow the instructions on the screen to finish installing the program.
+	
+	MORE INFORMATION
+	================
+	
+	The installation programs for Streets and Trip Planner install Microsoft
+	Internet Explorer 3.02 by default. Expedia Streets, Expedia Trip Planner, and
+	Encarta Virtual Globe use Internet Explorer to display all Web-based content.
+	
+	NOTE: Reinstalling Internet Explorer 3.02 does not resolve this issue.
+	
+	Additional query words: multi multi-media media mm amap automap
+	
+	======================================================================
+	Keywords          : kbenv kberrmsg kbsetup kbimu 
+	Technology        : kbHomeProdSearch kbExpediaSearch kbExpediaStreets98del
+	Version           : WINDOWS:1.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

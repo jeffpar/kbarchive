@@ -1,0 +1,81 @@
+---
+layout: page
+title: "Q190873: WD97: Entries in Text Box/Callouts Missing from TOC"
+permalink: kb/190/Q190873/
+---
+
+## Q190873: WD97: Entries in Text Box/Callouts Missing from TOC
+
+	Article: Q190873
+	Product(s): Word 97 for Windows
+	Version(s): WINDOWS:97
+	Operating System(s): 
+	Keyword(s): kbdta kbfield word97
+	Last Modified: 14-NOV-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	When you create or update a table of contents, the resulting table of contents
+	is missing some entries. If Microsoft Word finds no entries to use in the table
+	of contents, the following error message appears in the document:
+	
+	  Error! No table of contents entries found
+	
+	CAUSE
+	=====
+	
+	When Word builds a table of contents, it does not look in the drawing layer for
+	text to include in the table of contents. Word looks only in the document
+	layer.
+	
+	Text boxes and callouts are placed in the drawing layer. Therefore, Word ignores
+	any TC fields or heading styles that appear in text boxes or callouts when it
+	builds or updates the table of contents.
+	
+	WORKAROUND
+	==========
+	
+	To work around this problem, use either of the following methods:
+	
+	- Place the text or TC field that you want included in the table of contents in
+	  the document layer instead of the drawing layer.
+	
+	  NOTE: If you have selected an object in the drawing layer prior to inserting a
+	  caption, the caption will also be in the drawing layer. If the insertion
+	  point is outside the object, then the caption will be on the text layer.
+	
+	  -or-
+	
+	- Place the text or TC field in a frame instead of in a text box or callout.
+	
+	  NOTE: In Word 97 for Windows, frames are not readily available. You need to
+	  enter the information into either a text box or caption and then convert that
+	  object to a frame by following these steps:
+	
+	  1. Click once on either the text box or caption to select it.
+	
+	  2. On the Format menu, select either Text Box or AutoShape, and then select
+	     the Text Box tab.
+	
+	  3. Click the Convert To Frame button. Click Yes to confirm that you want to
+	     convert it to a frame. Note that you may lose some formatting, especially
+	     if you are converting a caption.
+	
+	Additional query words: skip miss linked textbox textboxes caption
+	
+	======================================================================
+	Keywords          : kbdta kbfield word97 
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : WINDOWS:97
+	Issue type        : kbprb
+	
+	=============================================================================
+	

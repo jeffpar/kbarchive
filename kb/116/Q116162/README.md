@@ -1,0 +1,69 @@
+---
+layout: page
+title: "Q116162: QuickShelf: Toolbar Has Large Buttons in Large Font Mode"
+permalink: kb/116/Q116162/
+---
+
+## Q116162: QuickShelf: Toolbar Has Large Buttons in Large Font Mode
+
+	Article: Q116162
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): 1994 edition; WINDOWS:3.x
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 13-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Bookshelf for Windows 1994 edition 
+	- the operating system: Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If you are using a large fonts video mode with Windows 3.x, the QuickShelf
+	toolbar will, by default, come up as large buttons centered on the screen.
+	QuickShelf should come up in small buttons at the upper-left corner of the
+	screen.
+	
+	RESOLUTION
+	==========
+	
+	To format the QuickShelf toolbar to display in small buttons at the upper-left
+	corner of the screen, follow these steps:
+	
+	1. Click the down-arrow button at the end of the QuickShelf toolbar.
+	
+	2. Choose Customize.
+	
+	3. Choose the View Tab.
+	
+	4. Choose Small Buttons radio button, and choose OK.
+	
+	The QuickShelf toolbar should now switch to small buttons and snap to position in
+	the upper-left corner of the screen.
+	
+	MORE INFORMATION
+	================
+	
+	The problem does not occur in Windows 95.
+	
+	When QuickShelf starts, it checks to see if your video resolution is greater than
+	or equal to 1024 x 768, and if you are in large font mode, in which case it uses
+	large buttons.
+	
+	When QuickShelf is in large button mode, the toolbar is movable, and you can use
+	the mouse to drag it to any part of the screen. When it is in small button mode,
+	it snaps to position in the upper left-hand corner of the screen.
+	
+	Additional query words: 1994 bshelf book shelf default wfw 3.1 3.11
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbOSWinSearch kbHomeMMsearch kbZNotKeyword6 kbBookshelfSearch kbBookShelf1994 kbOSWin310 kbOSWin311 kbOSWin300 kbOSWin300a
+	Version           : :1994 edition; WINDOWS:3.x
+	
+	=============================================================================
+	

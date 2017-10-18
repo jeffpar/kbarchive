@@ -1,0 +1,117 @@
+---
+layout: page
+title: "Q264082: SNA Client or DLS Cannot Connect as Guest User on Windows 2000"
+permalink: kb/264/Q264082/
+---
+
+## Q264082: SNA Client or DLS Cannot Connect as Guest User on Windows 2000
+
+	Article: Q264082
+	Product(s): Microsoft SNA Server
+	Version(s): 3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3,SP1
+	Operating System(s): 
+	Keyword(s): kbWin2000SP2Fix
+	Last Modified: 15-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 3.0 SP1, 3.0 SP2, 3.0 SP3, 3.0 SP4, 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, used with:
+	   - the operating system: Microsoft Windows 2000 SP1 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If an SNA Windows NT client attempts to connect to an SNA Server that is running
+	on a non-trusted Windows 2000 Server-based computer with the Guest account
+	enabled, the SNA client fails to connect, and you receive the following error
+	message:
+	
+	  ERROR #1003
+	  SnaBase could not open a sponsor connection to server [Servername]
+	
+	However, if an SNA Windows 95 or Windows 98 client is used, and the Guest account
+	is explicitly used on the same non-trusted Windows 2000 Server-based computer,
+	the connection succeeds.
+	
+	If an SNA Server Distributed Link Service (for example, SnaRem1) attempts to
+	connect through an SNA Server link service that is running on a non-trusted
+	Windows 2000 Server-based computer, the connection may stay in a pending state,
+	and the following event is logged:
+	
+	  Event ID: 705
+	  Source: SNA DLC Link Service
+	  Description: Logon Failed
+	  EXPLANATION
+	  Connection request failed due to data security.
+	  Access denied -- Error Code: 43
+	
+	On the Windows 2000-based computer, the SnaBase Service logs the following event
+	whenever the Distributed Link Service attempts to connect (approximately every
+	10-20 seconds):
+	
+	  Event ID: 705
+	  Source: SNA Base Service
+	  Description: Logon Failed.
+	  EXPLANATION
+	  Access denied on client-server or Distributed Link Service connection
+	  request.
+	
+	  Unknown user name or bad password from client [computername] --- Error Code :
+	  4097
+	
+	  ACTION
+	  Contact your network support personnel.
+	
+	CAUSE
+	=====
+	
+	Windows 2000 implements stricter Windows NT Challenge/Response (NTLM) security
+	during client logon than Windows NT 4.0, which prevents failover to the Guest
+	account if the ISC_REQ_INTEGRITY option is requested during the Security Support
+	Provider Interface (SSPI) logon process. Because the SNA client requests this
+	option, a non-trusted user's NTLM logon fails on Windows 2000 even when the
+	Guest account is enabled. However, if the Guest account is explicitly specified
+	(by using the SNA Windows 95 or Windows 98 client Advanced options, which are
+	not available in the SNA Windows NT client), the logon succeeds because it is
+	clear that Guest access is being requested.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, obtain the latest service pack for Windows 2000. For
+	additional information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q260910 How to Obtain the Latest Windows 2000 Service Pack
+	
+	To work around the problem, the SNA client or Distributed Link Service must use a
+	user account and password that exists in the target Windows 2000 domain. Or, if
+	you are using the SNA Windows 95 or Windows 98 client, you can configure the
+	client to connect explicitly as the Guest user.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products that are
+	listed at the beginning of this article. This problem was first corrected in
+	Windows 2000 Service Pack 2. The English version of this fix should have the
+	following file attributes or later:
+	
+	  Date       Time    Size          File name
+	  -------------------------------------------
+	  7/21/2000  09:02a  99,792 bytes  msv1_0.dll
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbWin2000SP2Fix 
+	Technology        : kbAudDeveloper kbSNAServSearch
+	Version           : :3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3,SP1
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

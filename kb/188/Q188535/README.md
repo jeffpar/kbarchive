@@ -1,0 +1,226 @@
+---
+layout: page
+title: "Q188535: HOWTO: Sharing Data Between Processes Using Memory-Mapped Files"
+permalink: kb/188/Q188535/
+---
+
+## Q188535: HOWTO: Sharing Data Between Processes Using Memory-Mapped Files
+
+	Article: Q188535
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:5.0,5.0a
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 03-AUG-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	While using shared tables is generally the simplest and most efficient way to
+	share data between two processes, it is possible to use memory-mapped files to
+	accomplish the same task. The following example uses the Win32 functions
+	CreateFileMapping, MapViewOfFile and UnmapViewOfFile to use the Windows NT
+	pagefile as a memory-mapped file and pass a string between two copies of Visual
+	FoxPro.
+	
+	NOTE: This example is intended for use only under Windows NT, and was written and
+	tested using Windows NT 4.0.
+	
+	MORE INFORMATION
+	================
+	
+	1. Start one instance of Visual FoxPro.
+	
+	2. Create and run a program containing the following code:
+	
+	  
+	
+	        DECLARE INTEGER CreateFileMapping IN kernel32.DLL INTEGER hFile, ;
+	           INTEGER lpFileMappingAttributes, INTEGER flProtect, ;
+	           INTEGER dwMaximumSizeHigh, INTEGER dwMaximumSizeLow, ;
+	           STRING lpName
+	
+	        DECLARE INTEGER MapViewOfFile IN kernel32.DLL ;
+	           INTEGER hFileMappingObject, INTEGER dwDesiredAccess, ;
+	           INTEGER dwFileOffsetHigh, INTEGER dwFileOffsetLow, ;
+	           INTEGER dwNumberofBytesToMap
+	
+	        DECLARE INTEGER GetLastError IN kernel32.DLL
+	
+	        DECLARE INTEGER lstrcpy IN kernel32.DLL ;
+	           INTEGER lpString1, STRING @lpString2
+	
+	        DECLARE INTEGER UnmapViewOfFile IN kernel32.DLL ;
+	           INTEGER lpBaseAddress
+	
+	        DECLARE INTEGER CloseHandle IN kernel32.DLL INTEGER hObject
+	
+	        #DEFINE page_writeread 4
+	        #DEFINE page_readwrite 4
+	        #DEFINE file_map_read 4
+	        #DEFINE file_map_write 2
+	
+	        * FFFFFFFF (2^32) means: Use the Windows NT pagefile as the memory-
+	        * mapped file.
+	        * Otherwise, you could substitute a handle that you have created.
+	        #DEFINE usepagefile 2^32
+	
+	        * Arbitrary name for the file mapping.
+	        szename = "hello"
+	
+	        * This says: Create a file-mapping object from the pagefile,
+	        * using a default security descriptor, giving Read/Write access
+	        * to the committed region, with a maximum size of 4096 bytes,
+	        * named szeName, and return the handle to this file-mapping
+	        * object in variable 'handle'.
+	        handle = createfilemapping(usepagefile, 0, page_readwrite, 0, ;
+	           4096, szename)
+	        IF handle = 0
+	           WAIT WINDOW "CreateFileMapping failed - LastError: " ;
+	              + LTRIM(STR(getlasterror()))
+	           RETURN
+	        ENDIF
+	
+	        * This says: Given the handle obtained above, give full access
+	        * to the file-mapping object, starting at offset 0, and map the
+	        * entire file into my process' address space.
+	        addhandle = mapviewoffile(handle, file_map_write, 0, 0, 0)
+	        IF handle = 0
+	           WAIT WINDOW "MapViewOfFile failed - LastError: " ;
+	              + LTRIM(STR(getlasterror()))
+	           RETURN
+	        ENDIF
+	
+	        * Now, the file can be treated just like a memory address.
+	        * Use lstrcpy to copy the FoxPro string to addhandle, the
+	        * starting address of the mapped view.
+	
+	        * The text you want to write to the shared memory-mapped
+	        * file goes here.
+	        stxt1 = "Hello world, I'm writing to a shared page file."
+	        ret = lstrcpy(addhandle, @stxt1)
+	
+	        * When the message box appears, run the corresponding program
+	        * to read the memory-mapped file in a second instance of FoxPro.
+	        * Unmapping the file view and closing the handle removes the text
+	        * from the file.
+	        = MESSAGEBOX("Now switch to the other application")
+	
+	        * When we've finished with it, unmap the file-mapping object
+	        * from our address space and release the handle.
+	        =UnmapViewOfFile (addhandle)
+	        =CloseHandle(handle)
+	
+	3. When the message box containing the text "Now switch to the other
+	  application" appears, run a second instance of Visual FoxPro, create and run
+	  a program containing the following code:
+	
+	  
+	
+	        DECLARE INTEGER CreateFileMapping IN kernel32.DLL INTEGER hFile, ;
+	           INTEGER lpFileMappingAttributes, INTEGER flProtect, ;
+	           INTEGER dwMaximumSizeHigh, INTEGER dwMaximumSizeLow, ;
+	           STRING lpName
+	
+	        DECLARE INTEGER MapViewOfFile IN kernel32.DLL ;
+	           INTEGER hFileMappingObject, INTEGER dwDesiredAccess, ;
+	           INTEGER dwFileOffsetHigh, INTEGER dwFileOffsetLow, ;
+	           INTEGER dwNumberofBytesToMap
+	
+	        DECLARE INTEGER GetLastError IN kernel32.DLL
+	
+	        DECLARE INTEGER lstrcpy IN kernel32.DLL ;
+	           STRING @lpString1, INTEGER lpString2
+	
+	        DECLARE INTEGER UnmapViewOfFile IN kernel32.DLL ;
+	           INTEGER lpBaseAddress
+	
+	        DECLARE INTEGER CloseHandle IN kernel32.DLL INTEGER hObject
+	
+	        #DEFINE page_writeread 4
+	        #DEFINE page_readwrite 4
+	        #DEFINE file_map_read 4
+	        #DEFINE file_map_write 2
+	
+	        * FFFFFFFF (2^ 32) means: Use the Windows NT pagefile as the memory-
+	        * mapped file. Otherwise, you could substitute a handle that you
+	        * have created.
+	        #DEFINE usepagefile 2^32
+	        #DEFINE maxbuffersize 254
+	
+	        * Arbitrary name for the file mapping.
+	        szename = "hello"
+	
+	        * This says: Create a file-mapping object from the pagefile,
+	        * using a default security descriptor, giving Read/Write access
+	        * to the committed region, with a maximum size of 4096 bytes,
+	        * named szeName, and return the handle to this file-mapping
+	        * object in variable handle.
+	        handle = createfilemapping(usepagefile, 0, page_readwrite, ;
+	           0, 4096, szename)
+	        IF handle = 0
+	           WAIT WINDOW "CreateFileMapping failed - LastError: " ;
+	              + LTRIM(STR(getlasterror()))
+	           RETURN
+	        ENDIF
+	
+	        * This says: Given the handle obtained above, give full
+	        * access to the file-mapping object, starting at offset 0,
+	        * and map the entire file into my process' address space.
+	        addhandle = mapviewoffile(handle, file_map_write, 0, 0, 0)
+	        IF handle = 0
+	           WAIT WINDOW "MapViewOfFile failed - LastError: " ;
+	              + LTRIM(STR(getlasterror()))
+	           RETURN
+	        ENDIF
+	
+	        * Now, the file can be treated just like a memory address.
+	        * Use lstrcpy to copy the Foxpro string to the Foxpro
+	        * string stxt2 from the starting address of the mapped view.
+	
+	        * Buffer to receive passed string.
+	        stxt2 = SPACE(254)
+	        ret = lstrcpy(@stxt2, addhandle)
+	
+	        =MESSAGEBOX ("String I read was: " + stxt2)
+	
+	        * When we've finished with it, unmap the file-mapping object
+	        * from our address space and release the handle.
+	
+	        =UnmapViewOfFile(addhandle)
+	        =CloseHandle (handle)
+	
+	4. The second instance of Visual FoxPro should display the string written to the
+	  pagefile by the first instance. To unmap the pagefile and release all the
+	  handles, press OK on the message boxes in both instances of Visual FoxPro.
+	
+	The sample code presented here is complex. Answers to questions regarding this
+	example may require that Microsoft Product Support Engineers spend some time
+	familiarizing themselves with the code.
+	
+	REFERENCES
+	==========
+	
+	Win32 SDK Help; topic: "CreateFileMapping"; "MapViewOfFile"; "UnmapViewOfFile"
+	
+	For further background on the uses of memory-mapped files:
+	
+	"Advanced Windows: The Developer's Guide to the Win32 API for Windows NT 3.5 and
+	Windows 95," Jeffry Richter, Chapter 7, Microsoft Press
+	
+	Additional query words: kbDSupport memory-mapped file CreateFileMapping MapViewOfFile UnmapViewOfFile page file kbnokeyword
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP500a
+	Version           : WINDOWS:5.0,5.0a
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

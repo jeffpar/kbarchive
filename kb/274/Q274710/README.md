@@ -1,0 +1,109 @@
+---
+layout: page
+title: "Q274710: XGEN: How to Remove Attachments with ExClean"
+permalink: kb/274/Q274710/
+---
+
+## Q274710: XGEN: How to Remove Attachments with ExClean
+
+	Article: Q274710
+	Product(s): Microsoft Exchange
+	Version(s): 5.5
+	Operating System(s): 
+	Keyword(s): kberrmsg exc55
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.5 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes the how to use the ExClean utility to remove attachments.
+	
+	MORE INFORMATION
+	================
+	
+	You may want to remove all instances of a message attachment from an Exchange
+	Server 5.5 computer. For example, if there has been an outbreak of a new e-mail
+	virus strain, but the antivirus vendors have not updated their signature files,
+	if you are an administrator, you may need to remove an infected attachment
+	completely before you restart Exchange Server. In another scenario, you may want
+	to remove a classified attachment from servers to prevent further transmission
+	and exposure.
+	
+	You can use the ExClean utility to remove attachments from the attachment table
+	and quarantine transitory messages that have text that matches the attachment
+	name. ExClean is not a replacement for commercial antivirus software.
+	
+	ExClean uses the ISScan utility to remove attachments from the attachment table
+	according to the names and attachment sizes that you specify in the graphical
+	user interface (GUI). ExClean also scans the Imcdata and Mtadata folders for
+	data files that contain the attachment name that you specified. These files are
+	moved to the ExClean subfolder of their respective data folders. As an
+	administrator, you can examine the files in the subfolders to determine if those
+	data files are infected with a virus, or if the files only have the attachment
+	name in their contents.
+	
+	NOTE: Before you use ExClean, update Exchange Server 5.5 to Exchange Server 5.5
+	Service Pack 4 (SP4), and install the latest version of ISScan. For more
+	information about ISScan, please contact the Microsoft Product Support Services
+	(PSS) at the following Microsoft Web site:
+	
+	  http://support.microsoft.com/support/webresponse.asp
+	  (http://support.microsoft.com/support/webresponse.asp)
+	
+	For additional information, click the article number below to view the article in
+	the Microsoft Knowledge Base:
+	
+	  Q158693 XGEN: How to Obtain Exchange Server 4.0 Service Pack 4
+	
+	To use ExClean to remove an attachment:
+	
+	1. Double-click the ExClean icon, and then run the utility from the command
+	  prompt. Run the program from a local drive (for example,
+	  C:\<Dir>\Exclean), and not with a UNC name
+	  (<\\servername\sharepoint>\exclean).
+	
+	  NOTE: You receive an error message if ExClean does not find Exchange Server on
+	  the local computer.
+	
+	2. Read the introduction and click Next.
+	
+	3. Enter the databases that you want to scan, and then click Next.
+	
+	  NOTE: If a database is unavailable, a message is displayed in the Remarks box.
+	
+	4. Type the attachment name and a size range, and then click Next.
+	
+	  The size range is only used when the information store is scanned, and not
+	  during the MTA and IMS scan.
+	
+	5. Click Finish. If the Finish button is unavailable, the Remarks section
+	  contains an explanation. Use the Back button to correct any errors.
+	
+	ExClean verifies ISScan and store version compatibility, stops the Exchange
+	Server services (if necessary), calls ISScan with parameters that are specified
+	in the GUI, and then scans the Imcdata and Mtadata files for a match with the
+	attachment name. If matches are found in the Imcdata or Mtadata folders, the
+	utility creates subfolders and moves the suspicious files. ExClean does not
+	restart any services. After ExClean is finished, a dialog box is displayed that
+	reports either a success or error message. After you finish ExClean, restart the
+	information store service.
+	
+	ExClean is available from Microsoft PSS.
+	
+	
+	Additional query words: macro Melissa Prelissa IMS
+	
+	======================================================================
+	Keywords          : kberrmsg exc55 
+	Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+	Version           : :5.5
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

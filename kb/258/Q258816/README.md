@@ -1,0 +1,443 @@
+---
+layout: page
+title: "Q258816: Microsoft Windows 2000 Server Resource Kit Comments and Correcti"
+permalink: kb/258/Q258816/
+---
+
+## Q258816: Microsoft Windows 2000 Server Resource Kit Comments and Correcti
+
+	Article: Q258816
+	Product(s): Microsoft Press
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbdocfix kbdocerr
+	Last Modified: 16-APR-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- MSPRESS Microsoft Windows 2000 Server Resource Kit ISBN 1-57231-805-8 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article contains comments, corrections, and information about known errors
+	relating to the Microsoft Press book Microsoft Windows 2000 Server Resource Kit,
+	ISBN 1-57231-805-8.
+	
+	The following topics are covered:
+	
+	- CD-ROM
+	  Incorrect Error Message When Running IE 6
+	
+	- Deployment Planning Guide
+	  Page 612: MetaFrame Upgrade Information Is Incorrect
+	
+	- Internet Explorer 5 Resource Kit
+	  Page 109: Restricted Site Zones Are Not Trusted
+	
+	- Operations Guide
+	  Page 130: CDFS Does Support Lowercase File Names
+	
+	- Server Distributed Systems Guide
+	  Page 319: In Figure 6.4 Local USN And usnCreated Should Be 4711
+	
+	- Server Distributed Systems Guide
+	  Page 388: Change Forest to Domain
+	
+	- Server Distributed Systems Guide
+	  Page 714: Reference Does Not Lead To Default Permissions
+	
+	- Server Distributed Systems Guide
+	  Page 729: DACLs For Newly Created Objects Correction
+	
+	- Server Distributed Systems Guide
+	  Page 1007: Change First Bullet
+	
+	- Server Distributed System Guide
+	  Pages 1070 & 1071: Figures 18.3 And 18.4 Are Reversed
+	
+	- Server Distributed System Guide
+	  Page 1251: Regivew.exe Not Included On CD
+	
+	- Server Distributed System Guide
+	  Page 1364: Incorrect Minimum Memory Requirement For Client Hardware
+	
+	- TCP/IP Core Networking Guide
+	  Page 205: Figure 4.3 Message Names Need Updating
+	
+	- TCP/IP Core Networking Guide
+	  Page 215: Figure 4.11 Labeled Incorrectly
+	
+	- TCP/IP Core Networking Guide
+	  Page 217: Multiple Corrections
+	
+	- TCP/IP Core Networking Guide
+	  Page 271: Incorrect Subnet Mask
+	
+	- TCP/IP Core Networking Guide
+	  Page 319: Record Type Label Missing For ISDN
+	
+	- TCP/IP Core Networking Guide
+	  Pages 436-449: Figures Labeled Incorrectly
+	
+	- TCP/IP Core Networking Guide
+	  Page 712: DLL Files Are In Windows 2000 Directory
+	
+	- TCP/IP Core Networking Guide
+	  Page 738: Perf2MIB Utility Has Been Discontinued
+	
+	MORE INFORMATION
+	================
+	
+	CD-ROM
+	
+	Incorrect Error Message When Running IE 6
+	------------------------------------------------
+	
+	For systems running Internet Explorer 6, upon opening the Resource Kit online
+	documentation, the following message is displayed:
+	
+	"You are using an old browser. Help may not display correctly. Please upgrade to
+	the most recent version of IE."
+	
+	You can continue without error by selecting the "OK" button.
+	
+	
+	Deployment Planning Guide
+	
+	Page 612: MetaFrame Upgrade Information Is Incorrect
+	------------------------------------------------------------------------------
+	
+	On page 612, under "Terminal Server 4.0 with MetaFrame", there is incorrect
+	information regarding upgrading with MetaFrame. MetaFrame 1.8 for Windows 2000
+	will not install on Terminal Server 4.0 and MetaFrame 1.8 for Windows 2000
+	requires Windows 2000 Terminal Services.
+	
+	Change:
+	"Upgrading from Terminal Services 4.0 with MetaFrame is similar to upgrading from
+	Terminal Server 4.0, but first you need to upgrade to the MetaFrame version for
+	Windows 2000. After MetaFrame is upgraded, you can follow the same procedure for
+	upgrading from Terminal Server 4.0 without MetaFrame."
+	
+	To:
+	"With MetaFrame for Terminal Server 4.0 installed, you must first install Windows
+	2000 with Terminal Services, then you should install the latest version of
+	MetaFrame for Windows 2000."
+	
+	
+	Internet Explorer 5 Resource Kit
+	
+	Page 109: Restricted Site Zones Are Not Trusted
+	--------------------------------------------------------------------------------
+	
+	In the Internet Explorer 5 Resource Kit, on page 109, the wording in the fourth
+	bulleted item, which describes the Restricted sites zone should be changed to
+	indicate that it is for sites that are not trusted.
+	
+	Change:
+	"Restricted sites zone - The Restricted sites zone can include all sites that you
+	know are trusted."
+	
+	To:
+	"Restricted sites zone - The Restricted sites zone can include all sites that you
+	know are not trusted."
+	
+	
+	Operations Guide
+	
+	Page 130: CDFS Does Support Lowercase File Names
+	-----------------------------------------------------------------
+	
+	In the Windows 2000 Server Operations Guide, on page 130, the statement about
+	CDFS not supporting lowercase file names is incorrect.
+	
+	Change:
+	Windows 2000 provides support for the ISO 9660-compliant CDFS, which supports
+	long file names as listed in the ISO 9660 Level 2 standards.
+	
+	When creating a CD-ROM to be used on Windows 2000, you must adhere to the
+	following standards:
+	
+	- All directory and file names must have fewer than 32 characters.
+	
+	- All directory and file names must be in capital letters.
+	
+	- The directory tree cannot exceed 8 levels from the root.
+	
+	- File name extensions are not mandatory.
+	
+	Important: CDFS adheres to ISO 9660 standards and therefore does not support
+	lowercase file names. When you use CDFS to access a file or directory with a
+	lowercase file name on a CD-ROM, you get a "File not found" error message.
+	
+	To:
+	Windows 2000 provides support for the ISO 9660-compliant CDFS, which supports
+	long file names as listed in the ISO 9660 Level 2 standards.
+	
+	When creating a CD-ROM to be used on Windows 2000, you must adhere to the
+	following standards:
+	
+	- All directory and file names must have fewer than 32 characters.
+	
+	- The directory tree cannot exceed 8 levels from the root.
+	
+	- File name extensions are not mandatory.
+	
+	
+	Server Distributed Systems Guide
+	
+	Page 319: In Figure 6.4 Local USN And usnCreated Should Be 4711
+	------------------------------------------------------------------------------------------------
+	
+	On page 319 in Figure 6.4, the local USN numbers as well as usnCreated should be
+	changed from 1746 to 4711.
+	
+	
+	Server Distributed Systems Guide
+	
+	Page 388: Change Forest to Domain
+	------------------------------------------------------------------
+	
+	On page 388, under Replication of Password Changes, there are errors in the first
+	and second paragraphs.
+	
+	In the last sentence in the first paragraph, change:
+	"...to a single domain controller in the forest, the PDC emulator."
+	
+	To:
+	"...to a single domain controller in the domain, the PDC emulator."
+	
+	Similarly, in the first sentence of the second paragraph, change:
+	"...a single domain controller per forest holds the role of PDC emulator."
+	
+	To:
+	"...a single domain controller per domain holds the role of PDC emulator."
+	
+	
+	Server Distributed Systems Guide
+	
+	Page 714: Reference Does Not Lead To Default Permissions
+	-----------------------------------------------------------------------------------------
+	
+	On page 714, the first paragraph under the Table indicates that you can find
+	information on default permissions supplied by each object manager, in the topic
+	"Objects and Object Managers" in Windows 2000 Server Help. The Help topic has no
+	such information.
+	
+	This reference should be omitted.
+	
+	
+	Server Distributed Systems Guide
+	
+	Page 729: DACLs For Newly Created Objects Correction
+	-------------------------------------------------------------------------------------
+	
+	On page 729, DACLs for Newly Created Objects is incorrectly described.
+	
+	Step 3 of the process says that if the parent object does not have inheritable
+	ACEs, the object manager supplies a default DACL. Actually, this is true only
+	for Active Directory objects, in which case the default DACL is taken from the
+	Default-Security-Descriptor attribute for the object class in the Active
+	Directory schema. No other object manager supplies a default DACL.
+	
+	Thus for non-Active Directory objects, such as file or registry objects,
+	permissions can be set by the creating process, inherited from the parent
+	object, or they are acquired from the subject's access token.
+	
+	Step 3 should read:
+	"If the parent object has no inheritable ACEs, permissions are acquired from the
+	subject's access token. The default DACL in an access token gives Full Control
+	to Creator Owner and System."
+	
+	
+	Server Distributed Systems Guide
+	
+	Page 1007: Change First Bullet
+	---------------------------------------------------------------
+	
+	On page 1007, the first bulleted item incorrectly states that a domain-based Dfs
+	root has to be hosted on a Windows 2000 domain controller.
+	
+	Change:
+	"It must be hosted on a Windows 2000 domain controller."
+	
+	To:
+	"It must be hosted on a Member Server in a Windows 2000 domain."
+	
+	
+	Server Distributed Systems Guide
+	
+	Pages 1070 & 1071: Figures 18.3 And 18.4 Are Reversed
+	--------------------------------------------------------------------------------------
+	
+	On pages 1070 and 1071, in the Server Distributed Systems Guide, figures 18.3 and
+	18.4 have been reversed. Figure 18.4 should be changed to Figure 18.3 and placed
+	on page 1070, and Figure 18.3 should be changed to Figure 18.4 and placed on
+	page 1071.
+	
+	
+	Server Distributed System Guide
+	
+	Page 1251: Regivew.exe Not Included On CD
+	-------------------------------------------------------------------------
+	
+	In Server Distributed Systems Guide, on page 1251, in the second paragraph from
+	the bottom, it states:
+	
+	"To view .pol files without applying them to the registry, use the Regview.exe
+	tool located on the Microsoft Windows 2000 Server Resource Kit companion CD."
+	
+	The Regview.exe tool is not included in the companion CD. To obtain this tool,
+	please refer to the Microsoft Knowledge Base article Q178665:
+	
+	http://support.microsoft.com/support/kb/articles/q178/6/65.asp
+	(http://support.microsoft.com/support/kb/articles/q178/6/65.asp)
+	
+	
+	Server Distributed Systems Guide
+	
+	Page 1364:  Incorrect Minimum Memory Requirement For Client Hardware
+	-----------------------------------------------------------------------------------------------------
+	
+	On page 1364, under "Client Hardware Requirements",
+	
+	Change:
+	"32 MB of RAM minimum (64 MB recommended)."
+	
+	To:
+	"64 MB of RAM minimum"
+	
+	
+	TCP/IP Core Networking Guide
+	
+	Page 205: Figure 4.3 Message Names Need Updating
+	-----------------------------------------------------------------------------
+	
+	Change:
+	
+	DHCP Discover
+	DHCP Offer
+	DHCP Request
+	DHCP Pack
+	
+	To:
+	DHCPDiscover
+	DHCPOffer
+	DHCPRequest
+	DHCPAck
+	* Note "P" is deleted and "A" is capitalized in the last name listed.
+	
+	
+	TCP/IP Core Networking Guide
+	
+	Page 215: Figure 4.11 Labeled Incorrectly
+	----------------------------------------------------------------------
+	
+	On page 215, in Figure 4.11 which depicts the 80/20 Rule Model, the DHCP servers
+	are reversed. In this figure, DHCP server 1 is labeled 2, and DHCP server 2 is
+	labeled 1.
+	
+	
+	TCP/IP Core Networking Guide
+	
+	Page 217: Multiple Corrections
+	-----------------------------------------------------------
+	
+	On page 217, in the Figure 4.12 "DHCP Servers Using Single Scopes", the label
+	Subnet 1 is incorrect. It should be Subnet A as stated in the paragraph above
+	the figure.
+	
+	Also on page 217, the last sentence incorrectly calls out Figure 4.12 instead of
+	4.13.
+	
+	On Pages 217-19, in figures 4.12-4.14, the example shown is a Class C address, so
+	all the example subnet masks are incorrect. The ranges 192.168.1.x, 192.168.2.x,
+	and 192.168.3.x would actually be entirely different networks, not just subnets.
+	This can be fixed by changing the example to a Class B address, then change the
+	subnet mask to 255.255.255.0.
+	
+	
+	TCP/IP Core Networking Guide
+	
+	Page 271: Incorrect Subnet Mask
+	------------------------------------------------------------
+	
+	Page 271 lists an incorrect default subnet mask of 255.255.255.255 at the bottom
+	of page. The default subnet mask for a class C address is 255.255.255.0.
+	
+	
+	TCP/IP Core Networking Guide
+	
+	Page 319: Record Type Label Missing For ISDN
+	-------------------------------------------------------------------------
+	
+	In table 5.3, on page 319, "ISDN" is missing from the Record Type column. It
+	should be placed adjacent to RFC 1183.
+	
+	
+	TCP/IP Core Networking Guide
+	
+	Pages 436-449: Figures Labeled Incorrectly
+	-----------------------------------------------------------------------
+	
+	On pages 436-449, in Figures 6.27, 6.28, 6.29, 6.31, 6.33, 6.34, and 6.35, the
+	zone acquired.com should not be labeled as a secondary zone. Instead, the zone
+	reskit.com on server.acquired01-int.com should be labeled as a secondary zone.
+	
+	
+	TCP/IP Core Networking Guide
+	
+	Page 712: DLL Files Are In Windows 2000 Directory
+	------------------------------------------------------------------------------
+	
+	On page 712, the section titled "Monitoring 802.1p" indicates that the files
+	Parser.dll and Mac.dll are located in the Windows 2000 Resource Kit Tools Help
+	tools directory. However, these tools are part of Windows 2000 Server and are
+	not included with the Resource Kit.
+	
+	The Tools Help topics for Wins.dll and Windows Load Balancing Server Network
+	Monitor Parsers both refer to "Parser.ini in the \Netmon subdirectory." In
+	Windows 2000 Server, this is a sub-directory of %windir%\system32. Mac.ini is in
+	the %windir%\system32\netmon\parsers directory. Parser.dll and Mac.dll are in
+	the same directories as their respective .ini files (%windir%\system32\netmon
+	and %windir%\system32\netmon\parsers).
+	
+	The steps outlined in the following paragraph from page 712 are not necessary.
+	
+	"To monitor 802.1p tags, copy the Parser.dll file from the Microsoft(r)
+	Windows(r) 2000 Resource Kit Tools Help tools directory to the root directory of
+	your Netmon installation directory. Next, copy the Mac.dll file from the same
+	tools directory to the Parsers subdirectory under your Netmon installation
+	directory. Once these files have been copied, restart Netmon."
+	
+	
+	TCP/IP Core Networking Guide
+	
+	Page 738: Perf2MIB Utility Has Been Discontinued
+	-----------------------------------------------------------------------------
+	
+	On page 738, under "Using System Monitor", the text states that the Perf2MIB tool
+	is provided on the Windows 2000 Resource Kit companion CD.
+	
+	This tool is not included on the Resource Kit CD. It has been discontinued.
+	Microsoft will make no further fixes to this utility, nor will Microsoft release
+	it again.
+	
+	
+	Microsoft Press is committed to providing informative and accurate books. All
+	comments and corrections listed above are ready for inclusion in future
+	printings of this book. If you have a later printing of this book, it may
+	already contain most or all of the above corrections.
+	
+	Additional query words: RKBOOK WIN2K 1-57231-805-8
+	
+	======================================================================
+	Keywords          : kbdocfix kbdocerr 
+	Technology        : kbMSPressSearch
+	Version           : :
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

@@ -1,0 +1,164 @@
+---
+layout: page
+title: "Q155749: FIX: Trigger Failed Error When Updating a Compound Primary Key"
+permalink: kb/155/Q155749/
+---
+
+## Q155749: FIX: Trigger Failed Error When Updating a Compound Primary Key
+
+	Article: Q155749
+	Product(s): Microsoft FoxPro
+	Version(s): 3.00 3.00b
+	Operating System(s): 
+	Keyword(s): kbvfp kbvfp300bBUG kbvfp500fixkbbuglist kbfixlist
+	Last Modified: 24-MAR-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you make a change to a column in a table that makes up a portion of a
+	primary key or a compound primary key, and the Referential Integrity Builder has
+	referential integrity in place, the Cascade Update to the Child table fails with
+	a "Trigger Failed."
+	
+	CAUSE
+	=====
+	
+	The following REPLACE command in the RIUPDATE procedure improperly evaluates out
+	to "FieldName1+FieldName2":
+	
+	REPLACE (tcFieldName) WITH tcNewValue
+	
+	This is why looking at the GaError array, which is filled by the Referential
+	Integrity Builder, reveals the trigger failed because of a syntax error.
+	
+	WORKAROUND
+	==========
+	
+	To work around this problem, go into the Stored Procedures and modify the call
+	to the RIUPDATE routine in the procedure called "__RI_UPDATE_your_table_name" so
+	that it sends an additional argument of "lcParentWkArea." It should then read
+	the following:
+	
+	llRetVal=riupdate("<fieldname1>+<fieldname2>",lcParentID,lcParentWkArea)
+	
+	instead of the following:
+	
+	llRetVal=riupdate("ONE+TWO",lcParentID)
+	
+	Make the following modifications to the RIUPDATE routine:
+	
+	1. Add the following additional parameter to the Parameters statement:
+	  PARAMETERS tcFieldName,tcNewValue, tcParentWkArea
+	
+	2. Add the following variables to the LOCAL declaration line:
+	
+	     tcParentTable
+	     ncount
+	
+	3. Add the following immediately after the LOCAL statement:
+	
+	     tcParentTable=ALIAS(tcParentWkArea)
+	
+	4. Remark out the current REPLACE command.
+	
+	5. Add the following code immediately after the commented REPLACE command:
+	
+	     ncount=OCCURS('+',tcFieldName)+1
+	     FOR i = 1 TO ncount
+	       DO CASE
+	        CASE i = 1 && First occurrence of "+"
+	         REPLACE (SUBSTR(tcFieldName,i,AT("+",tcFieldName,i)-1));
+	         WITH EVAL(tcParentTable+'.'+;
+	         SUBSTR(tcFieldName,i,AT("+",tcFieldName,i)-1))
+	        CASE i = ncount && Last occurrence of "+"
+	         REPLACE (SUBSTR(tcFieldName,AT('+',tcFieldName,ncount-1)+1)) ;
+	         WITH EVAL(tcParentTable+'.'+ ;
+	         SUBSTR(tcFieldName,AT('+',tcFieldName,ncount-1)+1))
+	        OTHERWISE && Any number of occurrences of + in between.
+	         REPLACE (SUBSTR(tcFieldName,AT('+',tcFieldName,(i-1))+1, ;
+	         ((AT('+',tcFieldName,i)-AT('+',tcFieldName,(i-1)))-1))) ;
+	         WITH EVAL(tcParentTable+'.'+SUBSTR(tcFieldName, ;
+	         AT('+',tcFieldName,(i-1))+1,((AT('+',tcFieldName,i)- ;
+	         AT('+',tcFieldName,(i-1)))-1)))
+	       ENDCASE
+	     NEXT i
+	
+	  The above code works with any number of columns in a compound key.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products listed at
+	the beginning of this article. This problem has been fixed in Visual FoxPro 5.0
+	for Windows.
+	
+	MORE INFORMATION
+	================
+	
+	This problem is limited to FOREIGN KEYs, based on expressions that use the
+	concatenation character, "+", or complex expressions in the RIUPDATE routine.
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Copy and Paste the following into a program and run it:
+	
+	      CREATE DATABASE test
+	      CREATE TABLE xparent (half1 c(3), half2 c(3), other c(5))
+	      ALTER TABLE xparent ADD PRIMARY KEY half1+half2 TAG pkey
+	      CREATE TABLE xchild (half1 c(3), half2 c(3), other c(5), ;
+	         FOREIGN KEY half1+half2 TAG fkey REFERENCES xparent )
+	      CLOSE TABLES ALL
+	      USE xparent
+	      INSERT INTO xparent (half1, half2, other) VALUES ('aaa','111','a1')
+	      INSERT INTO xparent (half1, half2, other) VALUES ('bbb','222','b2')
+	      INSERT INTO xparent (half1, half2, other) VALUES ('ccc','333','c3')
+	      USE xchild
+	      INSERT INTO xchild (half1, half2, other) VALUES ('aaa','111','a1')
+	      INSERT INTO xchild (half1, half2, other) VALUES ('bbb','222','b1')
+	      INSERT INTO xchild (half1, half2, other) VALUES ('ccc','333','c1')
+	      INSERT INTO xchild (half1, half2, other) VALUES ('bbb','222','b2')
+	      INSERT INTO xchild (half1, half2, other) VALUES ('aaa','111','a2')
+	      INSERT INTO xchild (half1, half2, other) VALUES ('aaa','111','a3')
+	      MODIFY DATA NOWAIT
+	
+	2. When the Database Designer appears, select persistent relationship.
+	
+	3. Alternate click the persistent relationship and choose the Referential
+	  Integrity Builder.
+	
+	4. Set the UPDATE to CASCADE.
+	
+	5. Click OK on the dialog boxes.
+	
+	6. Return to the Database Designer and Browse the xparent.
+	
+	7. Modify the contents of either the "half1" or the "half2" field.
+	
+	8. Press the Down Arrow to move off the record to invoke the Update Trigger.
+	
+	9. Choose Revert in the Trigger Failed message box.
+	
+	10. In the Command window issue a DISPLAY MEMORY LIKE GAERRORS.
+	
+	11. Look on the Visual FoxPro desktop, note the error that caused the Trigger to
+	  fail is a syntax error.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbvfp kbvfp300bBUG kbvfp500fix kbbuglist kbfixlist
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+	Version           : 3.00 3.00b
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

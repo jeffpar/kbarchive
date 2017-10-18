@@ -1,0 +1,393 @@
+---
+layout: page
+title: "Q167802: EXCEPTEX Traps MFC and Win32 Structured Exceptions"
+permalink: kb/167/Q167802/
+---
+
+## Q167802: EXCEPTEX Traps MFC and Win32 Structured Exceptions
+
+	Article: Q167802
+	Product(s): Microsoft C Compiler
+	Version(s): WINDOWS:4.2,5.0; winnt:4.0,4.1,4.2,5.0
+	Operating System(s): 
+	Keyword(s): kbfile kbSample kbnokeyword kbDAOsearch kbDatabase kbMFC kbODBC kbVC
+	Last Modified: 13-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0 
+	- Microsoft Visual C++, versions 4.0, 4.1 
+	- Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	EXCEPTEX is a sample that demonstrates techniques for trapping of both Win32
+	Structured Exceptions and C++ Exceptions. For C++ exceptions, various helper
+	functions are provided that demonstrate how to crack open the more commonly used
+	exception classes. For Win32 Structured Exceptions, a helper function is
+	provided that identifies the type of Win32 exception thrown.
+	
+	The following files are available for download from the Microsoft Download
+	Center:
+	
+	Exceptex.exe
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. Once posted, the file is housed on secure
+	servers that prevent any unauthorized changes to the file.
+	
+	
+	MORE INFORMATION
+	================
+	
+	Merging Win32 and C++ Exception Handling
+	----------------------------------------
+	
+	C++ Exception handling and Win32 Structured Exception Handling use different
+	syntax to trap exceptions.
+	
+	      // C++ Exception Handler
+	      try
+	      {
+	          // Do something that may raise an exception
+	      }
+	      catch( <class name> <instance of class> )
+	      {
+	          // handle exception
+	      }
+	
+	      // Win32 Structured Exception Handler
+	      __try
+	      {
+	          // Do something that may raise an exception
+	      }
+	      __except( expression )
+	      {
+	          // handle exception
+	      }
+	
+	The fundamental difference being that C++ exception handling expects to catch an
+	instance of a type, whereas Win32 Structured Exception Handling catches only
+	three unsigned ints.
+	
+	You can, however, merge both C++ and Win32 Exception handling via the
+	_set_se_translator() function. This causes a Win32 exception to be passed to the
+	handler function of your choice, which can wrap Win32 Exception information in a
+	class, and "throw" it as a C++ exception. This happens automatically when a
+	Win32 Exception occurs, and appears seamlessly to the program as a C++ exception
+	(see Exception Handling Differences in the VC 5.0 infoviewer). This is done for
+	you automatically if you use the LOG macros and related support Log()
+	functions.
+	
+	      // Class for containing information on a Win32 Structured Exception
+	      class SEH_Exception {
+	      private:
+	          SEH_Exception() {}
+	          unsigned int m_uSECode;
+	      public:
+	          SEH_Exception(unsigned int uSECode) : m_uSECode(uSECode) {}
+	          ~SEH_Exception() {}
+	          unsigned int getSeHNumber() { return m_uSECode; }
+	      };
+	
+	      // Handler function that passes on Win32 Exception information in the
+	      // C++ class SEH_Exception
+	      void MappingSEHtoCPPExceptions( unsigned int uExceptionCode,
+	                                                    _EXCEPTION_POINTERS* )
+	      {
+	          throw SEH_Exception( uExceptionCode );
+	      }
+	
+	      // Initialize Exception Handling
+	      void LogEnable( ... )
+	      {
+	          // Set Win32 Exceptions to be handled as C++ typed exceptions
+	          _set_se_translator(MappingSEHtoCPPExceptions);
+	
+	          ...
+	      }
+	
+	In this case, LogEnable would be called once, early in the program's execution,
+	and any Win32 exceptions raised could be caught with C++ syntax. The EXCEPTEX
+	sample demonstrates this using the code given above.
+	
+	Types of C++ Exceptions
+	-----------------------
+	
+	There are several categories of C++ exceptions that can be caught by an MFC-
+	based program:
+	
+	- Instances of classes derived from MFC's CException
+	- Instances of a class encapsulating a Win32 Exception
+	- Instances of a class _com_error which is raised by Visual C++ 5.0 native COM
+	  support available via the #import directive.
+	
+	For each of these, EXCEPTEX offers a function called LogException, overloaded for
+	the specific type of exception being caught. In each case, an exception raises
+	an instance or a pointer of a specific type, typically a C++ class. There are
+	over-loaded versions of LogException for each of the types of C++ Exception
+	listed above.
+	
+	Below is an example of the declaration for the overloaded LogException function
+	that catches a pointer to the MFC CException class.
+	
+	      // Crack open and log details of different types of exceptions
+	      extern void LogException( CException    *e,
+	                                LPCSTR        lpszTimeStamp,
+	                                LPCSTR        lpszFile,
+	                                int           nLine        );
+	
+	LogException also tracks the file name and line number where the exception macro
+	was last used in the call stack (if used with a helper LOG macro).
+	
+	Each of these helper functions cracks open the exception and stores the results
+	in a string array that you can process as necessary. The function for dumping
+	the contents of this string array to the TRACE() macro is LogDisplay().
+	
+	Simplifying try/catch Blocks with Helper Macros
+	-----------------------------------------------
+	
+	Littering try/catch blocks in your code can get messy after a while. However, it
+	is possible to simplify exception blocks through the use of macros. EXCEPTEX
+	provides three macros to simplify this process, and each offers different
+	functionality for logging/handling of exceptions. Each of the macros are also
+	written to work for both Visual C++ 4.X and Visual C++ 5.0, so they must check
+	the version of the compiler you are using.
+	
+	Below is the simplest of the macros, LOGQ (quiet Exception Handling with no
+	logging). It expects that a Boolean variable named bRetVal is available in your
+	code. It must be true so that the macro can allow execution of the code that may
+	raise an exception, and it sets it to FALSE if an exception is raised.
+	
+	      #if _MSC_VER < 1100    // For version VC++ 4.2 or earlier
+	
+	          #define LOGQ( f ) if( bRetVal == TRUE )                \ 
+	                            {                                    \ 
+	                               try                               \ 
+	                               {                                 \ 
+	                                   f;                            \ 
+	                               }                                 \ 
+	                               catch( CException *e )            \ 
+	                               {                                 \ 
+	                                  bRetVal = FALSE;               \ 
+	                                   e->Delete();                  \ 
+	                               }                                 \ 
+	                               catch( SEH_Exception )            \ 
+	                               {                                 \ 
+	                                  bRetVal = FALSE;               \ 
+	                               }                                 \ 
+	                               catch(...)                        \ 
+	                               {                                 \ 
+	                                  bRetVal = FALSE;               \ 
+	                               }                                 \ 
+	                            }
+	
+	      #else
+	
+	          #define LOGQ( f ) if( bRetVal == TRUE )                \ 
+	                            {                                    \ 
+	                               try                               \ 
+	                               {                                 \ 
+	                                  f;                             \ 
+	                               }                                 \ 
+	                               catch( CException *e )            \ 
+	                               {                                 \ 
+	                                  bRetVal = FALSE;               \ 
+	                                  e->Delete();                   \ 
+	                               }                                 \ 
+	                               catch( _com_error )               \ 
+	                               {                                 \ 
+	                                  bRetVal = FALSE;               \ 
+	                                }                                \ 
+	                               catch( SEH_Exception )            \ 
+	                               {                                 \ 
+	                                  bRetVal = FALSE;               \ 
+	                               }                                 \ 
+	                               catch(...)                        \ 
+	                               {                                 \ 
+	                                  bRetVal = FALSE;               \ 
+	                               }                                 \ 
+	                            }
+	
+	      #endif
+	
+	The #ifdef _MSC_VER restricts the definition of the macro to be specific to
+	either Visual C++ 4.X or 5.0. The 5.0 version includes a catch for the newly
+	introduced _com_error exception (generated by code created from #import).
+	
+	You would use LOGQ as shown below:
+	
+	      int     i = 0;
+	      int     j;
+	      BOOL    bRetVal = TRUE;
+	
+	      // This code is not safe
+	      j = 1 / i;        // Raises Win32 Divide By Zero exception
+	
+	      // This code is safe
+	      LOGQ( j = 1 / i; )
+	
+	There are two other versions of the LOG macros provided by EXCEPTEX. The second
+	LOG macro uses the overloaded LogException() helpers described above.
+	
+	      #define LOGE( f ) try                               \ 
+	                        {                                 \ 
+	                            f;                            \ 
+	                        }                                 \ 
+	                        catch( CException *e )            \ 
+	                        {                                 \ 
+	                            LogException( e,              \ 
+	                                          __TIMESTAMP__,  \ 
+	                                          __FILE__,       \ 
+	                                          __LINE__      );\ 
+	                        }                                 \ 
+	                        ...
+	
+	This macro does not make use of the flag bRetVal. It will always execute the code
+	encapsulated by the macro, catch any exceptions raised and log their contents.
+	
+	The final LOG macro provided by EXCEPTEX, LOGR, combines both LOGQ and LOGE. It
+	checks to see if it should execute the code and log any exception that is
+	raised.
+	
+	      #define LOGR( f ) if( bRetVal == TRUE )                 \ 
+	                        {                                     \ 
+	                            try                               \ 
+	                            {                                 \ 
+	                                f;                            \ 
+	                            }                                 \ 
+	                            catch( CException *e )            \ 
+	                            {                                 \ 
+	                                LogException( e,              \ 
+	                                              __TIMESTAMP__,  \ 
+	                                              __FILE__,       \ 
+	                                              __LINE__      );\ 
+	                                bRetVal = FALSE;              \ 
+	                            }                                 \ 
+	                            ...
+	                          }
+	
+	Other Useful Functions
+	----------------------
+	
+	The EXCEPTEX sample provides three more functions to assist exception handling:
+	
+	  LogDisplay() Dumps contents of all logged exceptions out via TRACE macros.
+	
+	  LogDisplay( ... ) Dumps contents of all logged exceptions out to an instance
+	  of CListBox.
+	
+	  LogSaveToFile( ... ) Dumps contents of all logged exceptions out to a file.
+	
+	LOG.H and LOG.CPP
+	-----------------
+	
+	LOG.H and LOG.CPP contain all of the code in EXCEPTEX to handle exceptions. The
+	remainder of the sample is to demonstrate the macros/functions found in LOG.H
+	and LOG.CPP. These two files can be easily added to an existing project, and
+	have been written to compile in either Visual C++ 4.X or 5.0 under both ANSI and
+	UNICODE builds. To use them, add #include "log.h" to the files that will be
+	using the LOGE or LOGR macro. If you want to crack Win32 Structured Exceptions
+	also, you must call LogEnable once near the beginning of your program.
+	
+	     // One time initialization of data
+	      LogEnable(false);     // false to verbose mode
+	
+	Add the LOG macro in code you want to get exception data from.
+	
+	     ...
+	     LOGE(myFunction())
+	     ...
+	
+	Note that the file and line number reported will be the last LOG macro on the
+	stack. If myFunction() calls myFun1() and myFun2(), you will have to wrap each
+	function call with a LOG macro for the output to display which call the
+	exception occurred in.
+	
+	You may not always want to use the LOG macros or even the LogException() helpers
+	as provided. They are offered both as a convenience and as well as to
+	demonstrate comprehensive exception handling, and for logging the results of any
+	exception caught. They are not provided as the end-all, be- all for exception
+	handling in every production environment.
+	
+	Troubleshooting
+	---------------
+	
+	The following code shows how not to use the helper macros
+	
+	      LOGQ( int i = 0; )
+	      LOGQ( int j = 1 / i; )    // Will this raise a divide by zero?
+	
+	This code generates a compiler error as i is only defined in the scope of the
+	first LOGQ macro. Remember that LOGQ expands to:
+	
+	  >
+	      ...
+	      try
+	      {
+	          int i = 0;
+	      }
+	      ...
+	
+	      ...
+	      try
+	      {
+	          int j = 1 / i;  // error C2065: 'i' : undeclared
+	      }
+	      ...
+	
+	/W4 and #import
+	---------------
+	
+	If you are using the /W4 flag in Visual C++ and #import, you will see 8 warnings
+	generated off the include files that #import utilizes.
+	
+	  comutil.h(905) : warning C4310: cast truncates constant value
+	  comutil.h(928) : warning C4310: cast truncates constant value
+	  comutil.h(1030) : warning C4310: cast truncates constant value
+	  comutil.h(1281) : warning C4310: cast truncates constant value
+	  comutil.h(1307) : warning C4310: cast truncates constant value
+	  comutil.h(1476) : warning C4310: cast truncates constant value
+	  comdef.h(242) : warning C4244: 'return' : conversion from 'int' to 'unsigned
+	  short', possible loss of data
+	
+	These error messages can be ignored and should not affect your code.
+	
+	For More Information
+	--------------------
+	
+	The following VC++ 5.0 infoviewer topic present a good introduction to exception
+	handling techniques:
+	
+	  Exception Handling: Frequently Asked Questions
+	  mk:@ivt:vccore/F26/D2A/S31BE4.HTM
+	
+	  Exception Handling Differences
+	  mk:@ivt:vccore/F26/D2B/S4CC99.HTM
+	
+	The following article demonstrates techniques that could be used to expand the
+	EXCEPTEX sample to handle DAO SDK exceptions.
+	
+	  Q152695 How to Catch and Decipher DAO SDK-Based Exceptions
+	
+	A definitive source on Win32 Exception Handling can be found in:
+	
+	"Advanced Windows" by Jeffrey Richter, ISBN 1-57231-548-2
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbfile kbSample kbnokeyword kbDAOsearch kbDatabase kbMFC kbODBC kbVC 
+	Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC410 kbVC420 kbVC500 kbVC32bitSearch kbVC500Search
+	Version           : WINDOWS:4.2,5.0; winnt:4.0,4.1,4.2,5.0
+	
+	=============================================================================
+	

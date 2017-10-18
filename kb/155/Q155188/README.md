@@ -1,0 +1,90 @@
+---
+layout: page
+title: "Q155188: BUG:Tabbing into Option Group Does Not Select Correct Option"
+permalink: kb/155/Q155188/
+---
+
+## Q155188: BUG:Tabbing into Option Group Does Not Select Correct Option
+
+	Article: Q155188
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 20-JAN-1999
+	
+	3.00 3.00b
+	WINDOWS
+	kbother kbdisplay
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Tabbing into an Option group does not select the highlighted Option. Rather, it
+	will always go to the first option when you use the TAB key or the last option
+	when you use the SHIFT+TAB KEY combination.
+	
+	WORKAROUND
+	==========
+	
+	The following steps show how to create an Option group that will always select
+	the highlighted Option when tabbing or shift-tabbing into the Option group:
+	(This will allow developers to create Visual FoxPro Forms with Option groups
+	that work the same as Option groups on Visual Basic or Access forms. If you are
+	not familiar with creating and using Visual Classes in Visual FoxPro, please see
+	Chapter 10 in the Microsoft Visual FoxPro Developer's Guide.)
+	
+	1. Create a new class named Myoption based on Container.
+	
+	2. Set the following properties for the Container: Width = 100 Height = 100
+	  BackStyle = 0 BorderWidth = 0
+	
+	3. Add an Option Group to the Container and set the following properties:
+	  ButtonCount = 3 Height = 95 Width = 95 Left = 2 Top = 2
+	
+	4. Add the following code to the GotFocus of the Container: * Check to see if
+	  the TAB or SHIFT+TAB key was used to enter the * container. IF LASTKEY() = 9
+	  OR LASTKEY() = 15 This.OptionGroup1.Buttons(This.OptionGroup1.Value).SetFocus
+	  ENDIF
+	
+	5. Save and close the class.
+	
+	6. Create a form and place two Text Boxes and the Myoption class on it.
+	
+	7. Run the form, select the middle option in the Option Group, and then use the
+	  TAB key to leave and reenter the Option Group.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products listed at
+	the beginning of this article.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Problem
+	--------------------------
+	
+	1. Create a form and place two Text Boxes and an Option Group on it.
+	
+	2. Set the ButtonCount in the Option Group to three.
+	
+	3. Run the form, select the middle option in the Option Group, and then use the
+	  TAB key to leave and reenter the Option Group.
+	
+	Additional query words: kbdsd vfoxwin kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+	Version           : WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+	
+	=============================================================================
+	

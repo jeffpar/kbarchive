@@ -1,0 +1,473 @@
+---
+layout: page
+title: "Q179844: XCLN: Client for Macintosh Release Notes, Version 5"
+permalink: kb/179/Q179844/
+---
+
+## Q179844: XCLN: Client for Macintosh Release Notes, Version 5
+
+	Article: Q179844
+	Product(s): Microsoft Exchange
+	Version(s): 5.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 27-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Macintosh client, version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Microsoft Exchange Client and Microsoft Schedule+ for Macintosh Version 5.0
+	Release Notes.
+	
+	Copyright (c) Microsoft Corp. 1997
+	
+	Information in this document is subject to change without notice.
+	Companies, names, and data used in examples herein are fictitious unless
+	otherwise noted. No part of this document may be reproduced or transmitted
+	in any form or by any means, electronic or mechanical, for any purpose,
+	without the express written permission of Microsoft Corporation.
+	
+	(c) 1985 - 1997 Microsoft Corporation. All rights reserved.
+	
+	Microsoft, MS-DOS, Visual Basic, Windows, and Windows NT are
+	registered trademarks and Outlook is a trademark of Microsoft
+	Corporation in the USA and other countries.
+	
+	All other companies and product names are trademarks or registered
+	trademarks of their respective holders.
+	
+	About This Document
+	===================
+	
+	This document contains information not available in the Microsoft
+	Exchange Client documentation, as well as information about changes
+	that occurred after publication.
+	
+	Contents
+	--------
+	
+	1.0 Microsoft Exchange Client and Microsoft Schedule+ on the Macintosh
+	
+	1.1 Installation
+	
+	1.2 Microsoft Exchange Client and Schedule+ as an Integrated
+	   Application
+	
+	1.3 Upgrading from a Previous Release of the Macintosh Client
+	
+	1.4 Memory Problems When Using 24-Bit Color Display
+	
+	1.5 Supported Protocols
+	
+	1.6 Personal Folder Files, Personal Address Book Files, and Message
+	   Files
+	
+	1.7 Using Forms
+	
+	1.8 Macintosh Printing Issues
+	
+	1.9 Dayna CommuniCard Ethernet Adapter
+	
+	1.10 Sending Messages with Embedded OLE Objects Between Windows and
+	    Macintosh Platforms
+	
+	1.11 Unable to View Appointment Description in the Schedule+ Planner
+	    Tab
+	
+	1.12 Using the Microsoft Exchange Client on a Localized Macintosh
+	    Operating System
+	
+	1.13 Using Rules
+	
+	1.14 Working with Folders
+	
+	1.15 Repairing Offline Folder Files
+	
+	1.16 Working with Attachments
+	
+	1.17 Working with Messages Without an .epf File
+	
+	1.18 Unable to Copy a Message with Digital Signature Enabled
+	
+	1.19 Delivery Receipt Issues
+	
+	1.20 Add to Favorites Button Does Not Appear on the Toolbar
+	
+	1.21 Security Key Exchange E-form
+	
+	1.22 Assigning Custom Permissions
+	
+	1.23 Reading the Received Time on a Meeting Request Form
+	
+	1.24 Previewing Internet Assistant Files
+	
+	1.0 Microsoft Exchange Client and Microsoft Schedule+ on the Macintosh
+	
+	1.1 Installation
+	
+	1.1.1 Setting Up the Microsoft Exchange Client on Your Macintosh
+	
+	Your Macintosh must have at least 12 MB of RAM or at least 16 MB of
+	virtual memory to run the Microsoft Exchange Client and Schedule+.
+	You will be able to install only the Microsoft Exchange Client if you
+	have 8 MB of RAM. If you have only 8 MB of RAM and the system
+	consumes more than 3 MB, you need to remove some extensions for the
+	Microsoft Exchange Client to run.
+	
+	Before you start:
+	
+	1. In Control Panel, double-click the Date & Time icon.
+	
+	2. Select the appropriate local time zone and verify that the system
+	  time is correct.
+	
+	3. To adjust for daylight saving time, in the Date & Time dialog box,
+	  select the Daylight Savings Time check box.
+	
+	For older M68000-based Macintosh computers:
+	
+	1. In Control Panel, double-click the Memory icon.
+	
+	2. Select 32-bit addressing.
+	
+	We recommend that you use the Macintosh operating system 7.6 or later.
+	Additionally, on the Power Macintosh, we recommend that virtual memory
+	be set to ON and set to a minimum of 1 MB more than the installed
+	physical memory. For example, if your Power Macintosh has 16 MB of
+	memory installed, you should set virtual memory to 17 MB.
+	
+	To install the Macintosh client:
+	
+	1. Place the Macintosh client compact disc into your Macintosh
+	  compact disc drive or connect to a share on your network.
+	
+	2. Open the folder for the language you want to install, if necessary.
+	
+	3. Open the first installation disk.
+	
+	4. Double-click Microsoft Exchange Setup and follow the instructions.
+	
+	5. Run Microsoft Exchange Client and Schedule+ or Microsoft Exchange
+	  Client only. The Profile Wizard guides you through the process of
+	  creating a new profile.
+	
+	1.1.2 Creating a Floppy Disk Setup Version of the Macintosh Client
+	
+	The files on the client compact disc have been arranged so that users
+	can create a floppy disk version of the client Setup program. To do
+	so, copy the contents of each installation directory found on the
+	compact disc to a separate disk and name each disk with the
+	corresponding directory name. To set up the client from the floppy
+	disk, insert the disk named "Install Disk 1" in the disk drive and
+	run Microsoft Exchange Client Setup.
+	
+	1.1.3 Connecting Macintosh Clients Through AppleTalk or Using TCP/IP
+	
+	If your Macintosh clients will be connecting through AppleTalk:
+	
+	Run Windows NT Services for Macintosh on your Microsoft Exchange
+	Server computer and establish a zone for that computer.
+	
+	Tell your users what AppleTalk zone they will be connecting through.
+	
+	Make sure to verify that your Windows NT MacFile name is the same as
+	your Microsoft Exchange Server name.
+	
+	If your Macintosh clients are connecting using TCP/IP, verify that the
+	Macintosh client can ping the Microsoft Exchange Server IP Address and
+	NetBIOS name.
+	
+	1.2 Microsoft Exchange Client and Schedule+ as an Integrated
+	   Application
+	
+	Microsoft Exchange Client 5.0 includes the group scheduling component
+	for the Macintosh client. The scheduling functionality is integrated
+	into a single program file with the Macintosh Microsoft Exchange
+	Client, in contrast to the Windows client, where Schedule+ is a
+	separate application. To use this functionality, run the client and
+	select Schedule+ from the toolbar.
+	
+	1.3 Upgrading from a Previous Release of the Macintosh Client
+	
+	If you upgrade from a previous release of the Macintosh client, the
+	Show Schedule button may not be displayed on the toolbar. If this
+	problem occurs, from the Tools menu, choose Customize Toolbar, and
+	then choose Reset.
+	
+	1.4 Memory Problems When Using 24-Bit Color Display
+	
+	If the Macintosh display is using 24-bit color, out of memory problems
+	can occur when using the Print Preview command in Schedule+.
+	
+	1.5 Supported Protocols
+	
+	Both AppleTalk and TCP/IP are supported. If you are using TCP for the
+	Macintosh, use MacTCP version 2.06 or Open Transport version 1.0 or
+	later. Open Transport 1.1 or later is recommended for environments
+	running dynamic host configuration protocol (DHCP).
+	
+	1.6 Personal Folder Files, Personal Address Book Files, and Message
+	   Files
+	
+	The file format for personal folders (.pst), personal address books
+	(.pab), and message files (.msg) is different for Macintosh and
+	Windows. If you create the folder, personal address book, or a
+	message file using the Macintosh client, you won't be able to read it
+	using a Windows client. The reverse is also true. However, you can
+	move messages from Macintosh to Windows and back by placing them in a
+	server store and retrieving them on the appropriate operating system.
+	
+	1.7 Using Forms
+	
+	To help users know which forms can be used on the Macintosh client
+	without having to open every message, the Viewer displays symbols for
+	all messages that should have usable message contents (standard
+	messages, post notes, resend notes, send and read receipts, signed
+	messages, and out-of-office messages). Forms that cannot be displayed
+	on the Macintosh appear with a different symbol.
+	
+	1.8 Macintosh Printing Issues
+	
+	1.8.1 Schedule+ Headers and Appointments Print Without Shading
+	
+	With some printer drivers, Schedule+ headers and appointments print
+	without shading.
+	
+	1.8.2 Printing from Microsoft Exchange Client for Macintosh
+	
+	If printer errors occur while printing from Microsoft Exchange Client
+	for the Macintosh, disable Background Printing.
+	
+	1.9 Dayna CommuniCard Ethernet Adapter
+	
+	When attempting to run Microsoft Exchange Client and Schedule+ on an
+	Apple PowerBook 5300c that contains a Dayna CommuniCard Ethernet
+	Adapter, Microsoft Exchange Client or Schedule+ can fail and display
+	an error 11 as the cause of failure. This problem is caused by an
+	incompatibility between Microsoft Exchange Client and the Dayna
+	CommuniCard Ethernet Adapter. You may need to use a different LAN card
+	to resolve this problem.
+	
+	1.10 Sending Messages with Embedded OLE Objects Between Windows and
+	    Macintosh Platforms
+	
+	When sending messages containing embedded OLE objects between Windows
+	and Macintosh platforms, the embedded object may not display correctly
+	when you open the file.
+	
+	1.11 Unable to View Appointment Description in the Schedule+ Planner
+	    Tab
+	
+	When you press CTRL and click an appointment in the Schedule+ Planner
+	tab, the pop-up window does not stay open for you to view the
+	description. Instead, you must double-click the appointment to view
+	the description in the pop-up window.
+	
+	1.12 Using the Microsoft Exchange Client on a Localized Macintosh
+	    Operating System
+	
+	The English, French, and German Microsoft Exchange Clients for the
+	Macintosh were designed to be run on English and most Western
+	European languages of the Macintosh operating system (those that
+	support the Windows code page 10000, Macintosh Roman).
+	
+	The Japanese Microsoft Exchange Client for the Macintosh was designed
+	to be run on the Japanese Macintosh operating system (which supports
+	the Windows code page 10001, Macintosh Japanese).
+	
+	1.13 Using Rules
+	
+	1.13.1 Using the Reply With Template with Personal Distribution Lists
+	
+	You cannot use personal distribution lists (PDLs) with any rules that
+	use the reply template. This will cause a rule to fail.
+	
+	1.13.2 Saving a Reply With Template Rule with Security Enabled
+	
+	If you have security enabled by default, you cannot save a Reply
+	Template rule.
+	
+	To create and save a Reply Template rule
+	
+	1. From the Tools menu, choose Options.
+	
+	2. Select the Security tab.
+	
+	3. Under Options, clear the Encrypt message contents and attachments
+	  and Add digital signature to message check boxes.
+	
+	4. Set up your rule.
+	
+	5. Return to the Security tab and select the Encrypt message contents
+	  and attachments and Add digital signature to message check boxes.
+	
+	1.13.3 Using the Reply Template with Public Folders
+	
+	In order to use a reply template in the folder assistant of a public
+	folder, you must first grant the user Send As permission for that
+	folder. This is also required to use a custom template response for
+	a folder that is set up as a moderated folder.
+	
+	1.14 Working with Folders
+	
+	1.14.1 Opening Files in Folders
+	
+	If you cannot open a file in a Microsoft Exchange Client folder,
+	highlight it, save it to your hard disk, and then use the appropriate
+	application to open it.
+	
+	1.14.2 Deleting Items in Public Folders
+	
+	The following error message can occur when you are deleting an item in
+	a public folder:
+	
+	There was a problem deleting the form: You need more memory or system
+	resources. Close some windows and try again.
+	
+	If closing some windows doesn't work, you may not have the correct
+	permissions to delete the item. Contact the owner of the public
+	folder.
+	
+	1.14.3 Copying a Moderated Folder From Microsoft Exchange Server 5.0
+	      to 4.0a Retains Message Rules and Invokes Reply Template
+	
+	When you copy a moderated folder containing forward and moderated
+	message rules, you cannot delete rules from the copy. The use of
+	moderated folders is intended for users running Microsoft Exchange
+	Server 5.0 so you should not copy folders with these rules already
+	set up. Also, because the moderated folder was set up on the folder
+	before it was copied, the Reply Template dialog box is invoked when
+	you perform a drag and drop action, or copy, move, post, or send to
+	the copied folder.
+	
+	1.15 Repairing Offline Folder Files
+	
+	The Inbox Repair Tool can be used to scan and repair offline folder
+	files as well as personal folder files.
+	
+	1.16 Working with Attachments
+	
+	1.16.1 Encrypted Messages with Message Files
+	
+	If you save an encrypted message with an attached file to the file
+	system and you open the saved message from the file system, you
+	cannot do the following:
+	
+	Make changes to the message and save it.
+	
+	Print or forward the open message.
+	
+	Use the Save As command.
+	
+	Get properties for the message.
+	
+	If you attempt to perform these actions, the attachment can disappear.
+	If this occurs, do not save the message because the attachment will be
+	lost permanently.
+	
+	To perform these actions, move the message from the file system to the
+	Microsoft Exchange Client and edit it there.
+	
+	1.16.2 Using Files Without Extensions
+	
+	Some Windows programs do not save their files with file extensions and
+	can appear without an extension in Microsoft Exchange Client. If you
+	try to open these messages in Microsoft Exchange Client, you will
+	receive an error message. However, you can open these files by
+	highlighting the attachment and saving it to your hard disk where you
+	can rename it and open it with the appropriate application.
+	
+	1.17 Working with Messages Without a Security Profile
+	
+	If you do not have access to your security profile (.epf file) and you
+	want to reply to a digitally signed message, you must turn off the
+	digital signature by clicking the Digitally sign message button on
+	the toolbar. If you want to copy a message, use the File menu in the
+	Viewer (not the File menu in the message).
+	
+	1.18 Unable to Copy a Message with Digital Signature Enabled
+	
+	If a profile is created for a roving user and the location of the .epf
+	file is not specified, the user cannot copy any messages sent with
+	digital signature enabled using the Copy command from the File menu of
+	a Read Message form. Instead, the user can do one of the following to
+	copy a message with digital signature enabled.
+	
+	Press and hold down the Option key and drag the message to a folder.
+	
+	Select the message from the Viewer, and then choose Copy from the
+	File menu.
+	
+	1.19 Delivery Receipt Issues
+	
+	1.19.1 Sending Delivery Receipt Requests Across X.400 Links
+	
+	If you send a message with a delivery receipt request across an X.400
+	link that does not support TNEF or MDBEF, the delivery receipt is
+	sent, but the message properties do not indicate that a delivery
+	receipt was requested.
+	
+	1.19.2 Receiving Conflicting Delivery Receipts
+	
+	If you send a message to multiple recipients (local and remote) and
+	request a delivery receipt, you will receive a delivery receipt
+	indicating that the message was received. Depending on how some
+	remote e-mail agents function, there may be a delay in receiving a
+	non-delivery receipt or you may never receive a non-delivery receipt.
+	
+	1.20 Add to Favorites Button Does Not Appear on the Toolbar
+	
+	The Add to Favorites button can disappear from the toolbar after the
+	user logs on or off the Microsoft Exchange Client. If this problem
+	occurs, from the Tools menu, choose Customize Toolbar, and then choose
+	Reset.
+	
+	1.21 Security Key Exchange E-form
+	
+	The Security Key Exchange E-form is not available on Microsoft
+	Exchange Client for the Macintosh.
+	
+	1.22 Assigning Custom Permissions
+	
+	When you give another user custom permissions to modify or read your
+	appointments, that user may be able to see partial details of other
+	parts of your schedule. If that user exports your schedule file, he
+	or she may be able to view partial details of the following:
+	
+	Items in your To Do list. These may show up as incomplete when they
+	have actually been marked as finished.
+	
+	Limited details of contacts, events, annual events, and tasks.
+	
+	The end date and duration of scheduled items.
+	
+	1.23 Reading the Received Time on a Meeting Request Form
+	
+	When you receive a meeting request form that was sent from a location
+	outside of your time zone, the Received Time indicator reflects the
+	time zone of the sender, not your local time.
+	
+	1.24 Previewing Internet Assistant Files
+	
+	If you choose Preview in the Internet Assistant dialog box and the
+	command fails, verify that your browser is correctly installed by
+	double-clicking an .htm file in the Finder. If your browser is not
+	installed correctly, configure your browser to correctly invoke .htm
+	files.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbHWMAC kbOSMAC kbExchangeSearch kbExchangeClientSearch kbExchange500Mac
+	Version           : :5.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

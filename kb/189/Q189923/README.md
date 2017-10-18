@@ -1,0 +1,142 @@
+---
+layout: page
+title: "Q189923: PRB: No Validate Event When Activating CommandButton"
+permalink: kb/189/Q189923/
+---
+
+## Q189923: PRB: No Validate Event When Activating CommandButton
+
+	Article: Q189923
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): WINDOWS:6.0
+	Operating System(s): 
+	Keyword(s): kbGrpDSVB
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	On a form in Visual Basic, you have a CommandButton whose CausesValidation
+	property is True. Also, the CommandButton's Default or Cancel properties are
+	True. The Default and Cancel properties allow you to activate the CommandButton
+	by pressing the ENTER or ESC keys. When you activate the CommandButton by
+	pressing ENTER or ESC, the Validate event for the current control does not occur
+	and the Click event of the CommandButton fires. This may cause undesirable
+	results if you need the Validate event for the current control to occur before
+	the Click event of the CommandButton.
+	
+	If you activate the CommandButton using the mouse or the CommandButton's
+	accelerator key, the Validate event for the current control occurs as expected.
+	
+	CAUSE
+	=====
+	
+	When you activate a "default" or "cancel" CommandButton by pressing the ENTER or
+	ESC keys, focus does not change to the CommandButton. Because Focus remains in
+	the current control, the Validate event for the current control does not occur.
+	In short, the CausesValidation property for a Default or Cancel CommandButton is
+	ignored when you activate the CommandButton by pressing the ENTER or ESC keys.
+	
+	RESOLUTION
+	==========
+	
+	To work around this limitation when using Default or Cancel CommandButtons, you
+	must add your validation code to the Click event of the CommandButton.
+	
+	STATUS
+	======
+	
+	This behavior is by design.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Start a new Standard EXE project in Visual Basic. Form1 is created by
+	  default.
+	
+	2. Add a TextBox control.
+	
+	3. Add a CommandButton control.
+	
+	4. Set the following properties of Command1:
+	
+	        Caption = Command&1
+	        Cancel = True
+	        CausesValidation = True
+	        Default = True
+	
+	5. Add the following code to the Form1 module:
+	
+	        Option Explicit
+	
+	        Private Sub Text1_Validate(Cancel As Boolean)
+	           ' Ensure Text1 has data else keep focus in Text1:
+	           If Trim(Text1.Text) = "" Then Cancel = True
+	        End Sub
+	
+	        Private Sub Command1_Click()
+	           Unload Me
+	        End Sub
+	
+	        Private Sub Form_Load()
+	           Text1.Text = ""
+	        End Sub
+	
+	6. Run the project. Text1 has focus and is empty.
+	
+	7. Click Command1 or press the ALT+1 key combination. The Validate event occurs
+	  for Text1 as Expected. Because Text1 is empty, the Validate event keeps focus
+	  in Text1 and prevents the CommandButton from closing the form.
+	
+	8. With focus still in Text1, press the ENTER key or the ESC key to activate
+	  Command1. The Validate event for Text1 does not occur and the Command1_Click
+	  event occurs, causing the form to close.
+	
+	  To work around this problem so that you can validate the Text1 control when
+	  you activate the CommandButton via the ENTER or ESC keys, add validation code
+	  to the Command1_Click event. The following example shows one way in which you
+	  could validate the Text1 control:
+	
+	        Private Sub Command1_Click()
+	           Dim ctl As Control
+	
+	           ' Validation code for all controls that need validating:
+	
+	           ' Set ctl to current control in which to validate:
+	           Set ctl = Screen.ActiveControl
+	           If TypeOf ctl Is TextBox Then
+	              If ctl.Name = "Text1" Then
+	                 ' Validation code for Text1:
+	                 If Trim(Text1.Text) = "" Then
+	                    ' Exit this procedure. Focus remains in Text1
+	                    Exit Sub
+	                 End If
+	              End If
+	           End If
+	
+	           ' If Validation passes for all controls, the following
+	           ' code will execute:
+	           Unload Me
+	        End Sub
+	
+	Additional query words: kbDSD kbDSupport kbVBp kbVBp600 kbCtrl
+	
+	======================================================================
+	Keywords          : kbGrpDSVB 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+	Version           : WINDOWS:6.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

@@ -1,0 +1,137 @@
+---
+layout: page
+title: "Q235169: Reducing SMS Accounts Required for Installation on Large Domains"
+permalink: kb/235/Q235169/
+---
+
+## Q235169: Reducing SMS Accounts Required for Installation on Large Domains
+
+	Article: Q235169
+	Product(s): Microsoft Systems Management Server
+	Version(s): winnt:2.0
+	Operating System(s): 
+	Keyword(s): kbsms200 kbsms200bug kbsms120 kbsms120bug kbsms200sp2fix
+	Last Modified: 25-JUN-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server version 2.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	In Systems Management Server configurations where many sites share the same
+	domain, a large number of Systems Management Server accounts are created. For
+	each Systems Management Server site, a unique client connection account
+	(SMSClient_XXX) and server connection account (SMSServer_XXX) is created. For
+	example, in a domain where 500 Systems Management Server primary and secondary
+	sites exist, 1,000 client connection and server connection accounts are
+	created.
+	
+	In such a configuration, you may want to limit the creation of such a large
+	number of accounts.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, obtain the latest service pack for Systems Management
+	Server version 2.0. For additional information, please see the following article
+	in the Microsoft Knowledge Base:
+	
+	  Q236325 How to Obtain the Latest Systems Management Server 2.0 Service Pack
+	
+	WORKAROUND
+	==========
+	
+	To resolve this problem, obtain the latest service pack for Systems Management
+	Server 2.0. For additional information, please see the following article in the
+	Microsoft Knowledge Base:
+	
+	  Q236325 How to Obtain the Latest Systems Management Server 2.0 Service Pack
+	
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Systems Management Server 2.0.
+	This problem was first corrected in Systems Management Server 2.0 Service Pack
+	Service Pack 1.
+	
+	MORE INFORMATION
+	================
+	
+	Systems Management Server 2.0 Service Pack 1 provides a Setup command-line
+	method of manually specifying the client connection and server connection
+	accounts that are used in the domain. The accounts must already exist and have
+	the appropriate rights. When the accounts are manually specified, the Setup
+	program does not create the default SMSServer_XXX and SMSClient_XXX accounts.
+	
+	The following example shows the syntax of the Setup command:
+	
+	setup /ServerAccount DOMAIN\<account> /ServerPassword <password> /ClientAccount DOMAIN\<account> /ClientPassword <password>
+	
+	For example, when you install a site, you want the Setup program to use
+	MyDomain\SMSServerAcct (password Elvis1) as the server connection account and
+	MyDomain\SMSClientAcct (password Elvis2) as the client connection account. You
+	can invoke the Setup program using the following syntax:
+	
+	setup /ServerAccount MyDomain\SMSServerAcct /ServerPassword Elvis1 /ClientAccount MyDomain\SMSClientAcct /ClientPassword Elvis2
+	
+	However, to use the command-line argument, you must run the Setup program
+	directly from the CD-ROM. Therefore, specifying a pre-created server and client
+	connection account is not possible for remote secondary site Setup.
+	
+	To specify accounts for a secondary site, create an .ini file called
+	SMSAccountSetup.ini in the %Winnt%\System32 folder of the targeted secondary
+	site server. The .ini file lists the server and client account information in
+	the following format:
+	
+	[ServerAccount]
+	Name=SMSServer
+	Password=Elvis1
+	
+	[ClientAccount]
+	Name=SMSClient
+	Password=Elvis2
+	
+	When the Setup program starts, it reads the SMSAccountSetup.ini file from the
+	%Winnt%\system32 folder. The accounts specified in the .ini file are treated the
+	same as the /ServerAccount and the /ClientAccount command-line arguments and the
+	default SMSServer_XXX and SMSClient_XXX accounts are not created.
+	
+	If there is any need to reset a site, run the Setup program with the same command
+	line to manually specify the accounts again:
+	
+	setup /ServerAccount DOMAIN\<account> /ServerPassword <password> /ClientAccount DOMAIN\<account> /ClientPassword <password>.
+	
+	Otherwise, the default server and client connection accounts are created.
+	
+	To change the password for the pre-created server or client connection account,
+	run the Setup program with the same command line as the initial installation
+	(this time specify the new passwords).
+	
+	NOTE: This installation method only supports passwords up to 14 characters or
+	less in length, even though it is possible to create accounts and passwords that
+	exceed this limit at a command line in Microsoft Windows NT or in the graphical
+	user interface (GUI) with Microsoft Windows 2000.
+	
+	
+	For additional information about accounts, click the article number below to view
+	the article in the Microsoft Knowledge Base:
+	
+	  Q237759 Avoiding Client Lockouts When Using Client Connection Accounts
+	
+	Additional query words: prodsms account
+	
+	======================================================================
+	Keywords          : kbsms200 kbsms200bug kbsms120 kbsms120bug kbsms200sp2fix 
+	Technology        : kbSMSSearch kbSMS200
+	Version           : winnt:2.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

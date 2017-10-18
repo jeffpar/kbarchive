@@ -1,0 +1,380 @@
+---
+layout: page
+title: "Q302515: HOWTO: Find all Extended Rights for a Schema Class Object"
+permalink: kb/302/Q302515/
+---
+
+## Q302515: HOWTO: Find all Extended Rights for a Schema Class Object
+
+	Article: Q302515
+	Product(s): Microsoft C Compiler
+	Version(s): 2000,6.0
+	Operating System(s): 
+	Keyword(s): kbADSI kbDSupport kb32bitOnly
+	Last Modified: 31-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Active Directory Services Interface, System Component 
+	- Microsoft Active Directory Client Extension 
+	- Microsoft Windows 2000 Server 
+	- Microsoft Windows 2000 Advanced Server 
+	- Microsoft Visual C++, 32-bit Editions, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article provides an example of how to use a Lightweight Directory Access
+	Protocol (LDAP) dialect query to locate all the "controlAccessRight" objects
+	(extended right) whose "appliesTo" property matches the "SchemaIDGUID" of a
+	given "SchemaClass" object. This article demonstrate how to determine all the
+	extended rights that apply to the user class. You can substitute any existing
+	schema class in step 15 of the procedure.
+	
+	MORE INFORMATION
+	================
+	
+	How to Use the Code Provided in this Article
+	--------------------------------------------
+	
+	1. Create an empty Windows 32 console application in Visual Studio.
+	
+	2. Click the "FileView" tab.
+	
+	3. From the "File" menu, click "New" and then click "C++ Source File".
+	
+	4. In the "File name" edit control, type "main.cpp" (without the quotation
+	  marks), and then click "OK".
+	
+	5. Copy the code provided later in this article under "Main.cpp File Contents"
+	  and paste it into the Main.cpp file in the Visual C++ project.
+	
+	6. From the "File" menu, click "New", and then click "C++ Source File".
+	
+	7. In the "File name" edit control, type "util.cpp" (without the quotation
+	  marks), and then click "OK".
+	
+	8. Copy the code provided later in this article under "Util.cpp File Contents"
+	  and paste it into the Util.cpp file in the Visual C++ project.
+	
+	9. From the "File" menu, click "New", and then click "C/C++ Header File".
+	
+	10. In the "File Name" edit control, type "util.h" (without the quotation
+	  marks), and then click "OK".
+	
+	11. Copy the code provided later in this article under "Util.h File Contents"
+	  and paste it into the Util.h file in the Visual C++ project.
+	
+	12. From the "Project" menu, clicking "Settings", and then click the "Link" tab.
+	
+	13. Add "Adsiid.lib" and "Activeds.lib" to the "Object/library modules".
+	
+	14. Click the "Debug" tab.
+	
+	15. In the "Program Arguments" edit control, type "cn=user" (without the
+	  quotation marks), and then click "OK".
+	
+	16. Press CTRL+F5 to build and execute the project.
+	
+	Visual C++ Code
+	---------------
+	
+	Main.cpp File Contents:
+	
+	  // 
+	  // The following code segment illustrates how to enumerate all of the controlAccessRight objects
+	  // whose appliesTo property matches the SchemaIDGUID of the given SchemaClass object
+	  // 
+	  #define _WIN32_WINNT 0x0500
+	  #define UNICODE
+	
+	  #include <windows.h>
+	  #include <stdio.h>
+	  #include <wchar.h>
+	  #include <stdio.h>
+	  #include <atlbase.h>
+	  #include <objbase.h>
+	  #include <activeds.h>
+	  #include <winnt.h>
+	  #include <sddl.h>
+	  #include "util.h"
+	
+	  int wmain( int argc, wchar_t *argv[ ], wchar_t *envp[ ] )
+	
+	  {
+	     // 
+	     // NO error checking is performed.  If a call fails, the code
+	     // will end ungracefully.  Do not use this code as an example of how
+	     // to properly handle COM errors.
+	     // 
+	     // The program expects 1 argument, a CN for a schemaClass object.
+	     // if the object name  is missing, the code will terminate very ungracefully.
+	     // a sample command line would like:
+	     // 
+	     //  code_executable "cn=SchemaClass_Object_Common_Name"
+	     // 
+	     // Assuming of course, that this code was compiled into an executable called 
+	     // code_executable.exe
+	     // 
+	     // Be sure to include:
+	     // ActiveDS.lib
+	     // Adsiid.lib
+	     // on the Link tab of the project.
+	     // 
+	     HRESULT hr = E_FAIL;
+	     // 
+	     // Very Important for ADSI interfaces to work proper, must initialize COM
+	     // 
+	     CoInitialize(NULL);
+	     // 
+	     // Check for the correct number of arguments
+	     // 
+	     if( argc < 2 )
+	     {
+	        PrintUsage();
+	        return E_FAIL;
+	     }
+	     // 
+	     // Need to bind to the RootDSE to locate the Schema and Configuration Containers
+	     // 
+	     CComPtr<IADs> oRootDSE;
+	     VARIANT vData;
+	     VariantInit(&vData);
+	     CComBSTR bConfigurationNamingContext;
+	     CComBSTR bSchemaNamingContext;
+	     CComBSTR bDefaultNamingContext;
+	     hr = ADsGetObject(  L"LDAP://RootDSE", IID_IADs, (LPVOID *)&oRootDSE );
+	     if( FAILED( hr ) )
+	     {
+	        printf("Error %d occured opening RootDSE object\nTerminating Program\n");
+	        return E_FAIL;
+	     }
+	     hr = oRootDSE->Get(L"defaultNamingContext", &vData);
+	     bDefaultNamingContext.AppendBSTR( vData.bstrVal );
+	     VariantClear(&vData);
+	     hr = oRootDSE->Get(L"SchemaNamingContext", &vData);
+	     bSchemaNamingContext.AppendBSTR( vData.bstrVal);
+	     VariantClear(&vData);
+	     hr = oRootDSE->Get(L"ConfigurationNamingContext", &vData);
+	     bConfigurationNamingContext.AppendBSTR(vData.bstrVal);
+	     VariantClear(&vData );
+	     oRootDSE.Release();
+	     // 
+	     // Build the  ControlAccessRight object path from the given Extended Right 
+	     // passed as the first argument
+	     // 
+	     CComBSTR bArg = argv[1];
+	     CComBSTR bSchemaClassPath = L"LDAP://";
+	     bSchemaClassPath.AppendBSTR( bArg );
+	     bSchemaClassPath.Append( L",");
+	     bSchemaClassPath.AppendBSTR( bSchemaNamingContext);
+	     CComPtr <IADs> oSchemaClass;
+	     hr = ADsGetObject( bSchemaClassPath.m_str, IID_IADs, (LPVOID *) &oSchemaClass);
+	     if( FAILED(hr) )
+	     {
+	        printf("Unable to open SchemaClass object :\n%S\nReceived error %d\nTerminating Program\n",
+	           bSchemaClassPath.m_str, hr);
+	        // 
+	        // CleanUp and exit
+	        // 
+	        oRootDSE.Release();
+	        CoUninitialize();
+	        return hr;
+	     }
+	     // 
+	     // Retrieve the SchemaIDGUID of the SchemaClass object.
+	     // The GUID must be converted into the form of an AppliesTo
+	     // attribute GUID.  
+	     // 
+	     // Convert the GUID to a string, and strip the "{}"'s
+	     // 
+	     oSchemaClass->Get(L"SchemaIDGUID", &vData );
+	     oSchemaClass = NULL;
+	     WCHAR wszGUID[40];
+	     WCHAR *pwsz;
+	     SAFEARRAY *pRefGUID;
+	     SafeArrayAccessData( vData.parray, (VOID **)&pRefGUID);
+	     StringFromGUID2( (REFGUID)*pRefGUID, wszGUID, 40 );
+	     for( pwsz = wszGUID; *pwsz; pwsz++)
+	     {
+	        switch (*pwsz)
+	        {
+	        case '{':
+	           break;
+	        case '}':
+	           *(pwsz-1) = (WCHAR)NULL;
+	           break;
+	        default:
+	           *(pwsz-1) = *pwsz;
+	        }
+	     }
+	     CComBSTR bAppliesToGUID = wszGUID;
+	     // 
+	     // Time to do a bit of clean up.  We are done with
+	     // the safe array, the schemaIDGuid variant (vData) and
+	     // the Schema Class object SO:
+	     // 
+	     // Be sure to release the raw GUIDs safe array.
+	     // Clear the variant AND
+	     // Release the SchemaClass object
+	     // 
+	     SafeArrayUnaccessData( pRefGUID );
+	     VariantClear(&vData);
+	     oSchemaClass.Release();
+	     // 
+	     //  Now, bind to the Extended Rights Container and retrieve an IDirectorySearch
+	     //  interface to prepare for the LDAP search....
+	     // 
+	     CComBSTR bExtendedRightBindString = L"LDAP://CN=Extended-Rights,";
+	     bExtendedRightBindString.AppendBSTR( bConfigurationNamingContext);
+	     CComPtr <IADs> oIADsExtendedRights;
+	     hr = ADsGetObject( bExtendedRightBindString.m_str, IID_IADs, (LPVOID *)&oIADsExtendedRights);
+	     CComQIPtr <IDirectorySearch, &IID_IDirectorySearch> oSearch( oIADsExtendedRights );
+	     oIADsExtendedRights.Release();
+	     // 
+	     // Build the LDAP query string that will look something like:
+	     // LDAP Server : bDefaltNamingContext
+	     // LDAP Query String: (&(objectclass=controlAccessRight)(AppliesTo=MODIFIED_SCHEMAIDGUID))
+	     // LDAP Properties to return: CN
+	     // Search Properties: Paged Search
+	     // Search Scope: Sub Tree ( from the schema container and beyond)
+	     // 
+	     // 
+	     // Build the query string...
+	     // 
+	     CComBSTR bLDAPQueryStr;
+	     bLDAPQueryStr = L"(&(objectclass=controlAccessRight)(AppliesTo=";
+	     bLDAPQueryStr.Append( bAppliesToGUID );
+	     bLDAPQueryStr.Append(L"))");
+	     // 
+	     // Setup the Attributes and search preferences
+	     // 
+	     // Perform a subtree search
+	     // 
+	     ADS_SEARCHPREF_INFO prefInfo[2];
+	     prefInfo[0].dwSearchPref = ADS_SEARCHPREF_SEARCH_SCOPE;
+	     prefInfo[0].vValue.dwType = ADSTYPE_INTEGER;
+	     prefInfo[0].vValue.Integer = ADS_SCOPE_SUBTREE;
+	     // 
+	     // Set the maximum records returned to 1000 ( maximum for AD )
+	     // 
+	     prefInfo [1].dwSearchPref = ADS_SEARCHPREF_PAGESIZE ;
+	     prefInfo [1].vValue.dwType = ADSTYPE_INTEGER;
+	     prefInfo [1].vValue.Integer = 1000;
+	     // 
+	     // bind the search preferences with the IDirectorySearch object...
+	     // 
+	     hr = oSearch->SetSearchPreference( prefInfo, 2);
+	     // 
+	     // Prepare a list of attributes to return in the query...
+	     // in our case, we want the Common Name only...
+	     // 
+	     LPWSTR pszAttr[] = { L"cn"};
+	     ADS_SEARCH_HANDLE hSearch;
+	     DWORD dwCount= sizeof(pszAttr)/sizeof(LPWSTR);
+	     // 
+	     // Execute the LDAP Query....
+	     // 
+	     hr=oSearch->ExecuteSearch(bLDAPQueryStr.m_str, pszAttr, dwCount, &hSearch );
+	     if (!SUCCEEDED(hr))
+	     {
+	        printf("LDAP Search failed with error %d\nTerminating program\n", hr );
+	        // 
+	        // Clean up
+	        // 
+	        oSearch.Release();
+	        return hr;
+	     }
+	     // 
+	     // Now enumerate the result
+	     // 
+	     ADS_SEARCH_COLUMN col;
+	     //     "0---------1---------2---------3----5"
+	     BOOL bFirstTime = TRUE;
+	     while( oSearch->GetNextRow(hSearch) != S_ADS_NOMORE_ROWS )
+	     {
+	        // Get attributes
+	        // 
+	        // CN
+	        // 
+	        hr = oSearch->GetColumn( hSearch, pszAttr[0], &col );
+	        if ( SUCCEEDED(hr) )
+	        {
+	           if( bFirstTime )
+	           {
+	              printf("controlAccessRight ( Extended Rights) objects associated with SchemaClass object: %S\n", argv[1]);
+	              bFirstTime = FALSE;
+	           }
+	           printf("%S\n",(LPWSTR)col.pADsValues->CaseIgnoreString);
+	           oSearch->FreeColumn( &col );
+	        }
+	     }
+	     oSearch->CloseSearchHandle( hSearch );
+	     oSearch.Release();
+	     CoUninitialize();
+	     
+	     return 0;
+	  }
+	
+	Util.cpp File Contents:
+	
+	  #include <stdio.h>
+	  // 
+	  // UTIL.CPP
+	  // 
+	  // Implementation of some global helper functions
+	  // 
+	  void PrintUsage( void )
+	  {
+	      printf("Usage:\nexecutable_name SchemClassCN\nWhere:\n\tSchemaClassCN-> Common Name for a SchmaClass Object\n");
+	      printf("\nie: executable_name \"cn=user\" \n\n");
+	      printf("This utility will perform an LDAP search using the IDirectorySearch\n");
+	      printf("interface against the Extended Rights container to retrieve all of the \n");
+	      printf("controlAccessRight objects whose appliesTo property matches the \n");
+	      printf("SchemaIDGuid of the specified SchemaClass object.\n\n");
+	  }
+	
+	Util.h File Contents:
+	
+	  // 
+	  // This header file contains helper functions definitions for
+	  // used by the main ADSI program
+	  // 
+	
+	  #ifndef _UTIL_H
+	  #define _UTIL_H
+	     // 
+	     // Function Stubs
+	     // 
+	     void PrintUsage( void );
+	
+	  #endif  // end of defintion for _UTIL_H header
+	
+	REFERENCES
+	==========
+	
+	For additional information, click the article numbers below to view the articles
+	in the Microsoft Knowledge Base:
+	
+	  Q302250 HOWTO: Enumerate Properties Associated with an Extended Right Using
+	  Visual C++ and ATL
+	
+	  Q301920 HOWTO: Search for a RightsGUID or a ShemaIDGuid
+	
+	For more information on extended rights, see the following MSDN Library topic:
+	
+	  Control Access Rights
+	  http://msdn.microsoft.com/library/default.asp?url=/library/en-us/netdir/ad/control_access_rights.asp
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbADSI kbDSupport kb32bitOnly 
+	Technology        : kbVCsearch kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbVSsearch kbAudDeveloper kbADSIActiveDirectory kbADSISearch kbWinAdvServSearch kbVC600 kbADSISysComp kbVC32bitSearch kbVS600 kbVS600Search
+	Version           : :2000,6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

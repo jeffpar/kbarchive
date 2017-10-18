@@ -1,0 +1,145 @@
+---
+layout: page
+title: "Q296398: SMS: Spoolsv.exe Consumes Memory During Inventory"
+permalink: kb/296/Q296398/
+---
+
+## Q296398: SMS: Spoolsv.exe Consumes Memory During Inventory
+
+	Article: Q296398
+	Product(s): Microsoft Systems Management Server
+	Version(s): 2.0
+	Operating System(s): 
+	Keyword(s): kbinterop kbClient kbConfig kbsms200 kbsms200bug kbOSNovell
+	Last Modified: 21-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server version 2.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	After you install Systems Management Server (SMS) 2.0 Service Pack 3 (SP3) on a
+	client that is running Intranetware 4.71 or 4.8, the Spoolsv.exe utility starts
+	to consume a lot of memory during a hardware inventory cycle. Eventually, you
+	receive an error message that states that the workstation is running low on
+	virtual memory.
+	
+	CAUSE
+	=====
+	
+	This behavior occurs because of a known issue that is caused by the Novell file,
+	Nwspool.dll.
+	
+	WORKAROUND
+	==========
+	
+	To work around this behavior, obtain and install an updated version of
+	Nwspool.dll, which you can obtain in following two Novell knowledge base
+	articles:
+	
+	  Novell TID 10059191
+	
+	  Novell TID 10053738
+	
+	The third-party contact information included in this article is provided to help
+	you find the technical support you need. This contact information is subject to
+	change without notice. Microsoft in no way guarantees the accuracy of this
+	third-party contact information.
+	
+	The following information is an excerpt from Novell TID 10053738:
+	
+	  This issue has been addressed in NWSPOOL.DLL build 28NOV2000 or later 
+	  for the Novell Client 4.8 for Windows NT/2000. Currently the NWSPOOL.DLL
+	  28NOV2000 build for the Novell Client 4.8 for Windows NT/2000 is available
+	  as 250903.EXE from the Novell Support Connection file finder. Note this
+	  file is available as-is and is continuing to receive regression testing.
+	
+	Note: In SMS SP3, the Sms_def.mof file enumerates the Win32_VideoController class
+	by default to enable hardware inventory to capture video card information for
+	all multiple-video card clients. If you need to resolve this issue to upgrade
+	your Nwspool.dll file, disable the Win32_VideoController class within the
+	Sms_def.mof file, which you can find on the site server prior to the Nwspool.dll
+	upgrade.
+	
+	You can find the Sms_def.mof file in the Sms\Inboxes\Clifiles.src\Hinv folder on
+	the site server.
+	
+	MORE INFORMATION
+	================
+	
+	To modify the Sms_def.mof file, use the Mofman.exe utility that is included in
+	the Support.exe bundle in SMS SP2, or make the following modifications by using
+	a text editor, such as NotePad:
+	
+	To Use Mofman.exe
+	-----------------
+	
+	1. Make a backup copy of your present Sms_def.mof file.
+	
+	2. Run the Mofman utility.
+	
+	3. Open the Sms_def.mof file, which you can find in the
+	  Sms\Inboxes\Clifiles.src\Hinv folder on the site server.
+	
+	4. Expand \\root\\cimv2\\sms.
+	
+	5. Scroll down to Win32_VideoController and then click it once.
+	
+	6. After it is selected, click No next to Report.
+	
+	7. Save the file.
+	
+	To Make the Changes in NotePad
+	------------------------------
+	
+	1. Make a backup copy of your present Sms_def.mof file.
+	
+	2. In NotePad, open the Sms_def.mof file.
+	
+	3. Search for Win32_VideoController.
+	
+	4. Four lines above Win32_VideoController, you see an SMS_REPORT statement;
+	  change the TRUE value to FALSE.
+	
+	5. Save the file. The modified section should look like the following sample:
+	
+	  [SMS_Report(false),
+	  SMS_Group_Name("Video Controller"),
+	  ResID(7200),ResDLL("SMS_RXPL.dll"),
+	  SMS_Class_ID("MICROSOFT|VIDEO_CONTROLLER|1.0")]
+	  class Win32_VideoController : SMS_Class_Template
+	
+	6. Run the following command from a command prompt in the
+	  Sms\Inboxes\Clifiles\Hinv path to check the integrity of the changes:
+	
+	  mofcomp -check sms_def.mof
+	
+	For additional information about the error message that you receive when you use
+	Mofman.exe from Back Office Resource kit, click the article number below to view
+	the article in the Microsoft Knowledge Base:
+	
+	  Q237495 SMS Err Msg: ERROR 2 Failed to Run MofComp
+	
+	For additional information about the Sms_def.mof file, click the article number
+	below to view the article in the Microsoft Knowledge Base:
+	
+	  Q199318 SMS: How SMS Uses the SMS_DEF.MOF in Hardware Inventory
+	
+	The third-party products discussed in this article are manufactured by vendors
+	independent of Microsoft; we make no warranty, implied or otherwise, regarding
+	these products' performance or reliability.
+	
+	Additional query words: prodsms
+	
+	======================================================================
+	Keywords          : kbinterop kbClient kbConfig kbsms200 kbsms200bug kbOSNovell 
+	Technology        : kbSMSSearch kbFunImagination200
+	Version           : :2.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

@@ -1,0 +1,269 @@
+---
+layout: page
+title: "Q139995: FIX: Duplicate Column Names Improperly Qualified by Wizards"
+permalink: kb/139/Q139995/
+---
+
+## Q139995: FIX: Duplicate Column Names Improperly Qualified by Wizards
+
+	Article: Q139995
+	Product(s): Microsoft C Compiler
+	Version(s): 4.0
+	Operating System(s): 
+	Keyword(s): kbDAOsearch kbDatabase kbMFC kbODBC kbVC kbVC410fix
+	Last Modified: 30-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The AppWizard 
+	- The ClassWizard 
+	
+	as they apply to:
+	
+	- Microsoft Visual C++, version 4.0 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	If you use AppWizard or ClassWizard to join tables that contain columns that
+	have identical names in an MFC application, you may receive an exception when
+	the recordset is opened. The exception indicates that there has been an:
+	
+	  Ambiguous field reference '[column]'
+	
+	where column corresponds to the name of a column that appears in multiple tables
+	of the join.
+	
+	When you try to modify a record in an MFC DAO application that uses a recordset
+	based on a join and that was created by AppWizard or ClassWizard, the
+	application may throw an exception on the update. Specifically, the exception
+	indicates:
+	
+	  Item not found in this collection.
+	
+	CAUSE
+	=====
+	
+	AppWizard and ClassWizard apply too many constraints when comparing column names
+	of joined tables for duplication. Column names should be considered duplicate
+	and should therefore be qualified with the appropriate table name (for example,
+	[Table].[Column]) based solely on the name string. However, the wizards
+	additionally check the type and, in the case where the type can have a variable
+	length (such as the Text type), the maximum length of the field. As a result, if
+	columns in joined tables share the same name but are of different types or have
+	different maximum sizes, table name qualifiers are not applied and the column
+	names constitute ambiguous references.
+	
+	When the wizards generate references to columns that have names that appear in
+	multiple tables of the join, the wizards will precede the column name with the
+	name of the table as a qualifier. Both the table name qualifier and column name
+	are enclosed in brackets in the DFX functions of the CDaoRecordset-derived
+	class's DoFieldExchange. For example:
+	
+	  [Table].[Column]
+	
+	The presence of the brackets combined with the use of the table name qualifier
+	causes the search for the specified field in the collection of fields maintained
+	by the database engine to fail.
+	
+	NOTE: The presence of brackets around unqualified column names does not interfere
+	with the field name search and is thus acceptable. This explains why some fields
+	will be updatable while attempts to update others throws the exception; the
+	updatable fields are likely unique and therefore unqualified.
+	
+	RESOLUTION
+	==========
+	
+	In those cases where AppWizard or ClassWizard have mistakenly omitted table name
+	qualifiers, add them manually. How you do it depends on whether your application
+	is an ODBC or a DAO database application.
+	
+	ODBC Applications
+	-----------------
+	
+	Add the table qualifiers to the ambiguous references in the RFX functions of your
+	CRecordset-derived class's DoFieldExchange. Be sure to enclose the table
+	qualifier in square brackets [] if the name is a reserved word or contains
+	spaces as in this example:
+	
+	  [Table 1].[Column 1]
+	
+	DAO Applications
+	----------------
+	
+	Add the table qualifiers to the ambiguous references in the DFX functions of your
+	CDaoRecordset-derived class's DoFieldExchange. Follow this procedure:
+	
+	1. Add qualifiers only to those columns that are duplicates. Qualifying columns
+	  where no ambiguity exists will result in errors as described in the following
+	  article in the Microsoft Knowledge Base:
+	
+	  Q139994 Specifying Table Name with Column Name in MFC DAO
+	
+	2. Add the appropriate table name qualifier to any column that appears in more
+	  than one of the joined tables. The exact form to use is described in detail
+	  in the following article in the Microsoft Knowledge Base:
+	
+	  Q139997 "Item not found in this collection" with MFC DAO Join
+	
+	  NOTE: The content of Q139997 has been copied into the "References" of this
+	  article for your convenience.
+	
+	To work around this problem, use one of the following two techniques depending on
+	the names of the affected tables and columns (the ones for which table
+	qualifiers are necessary).
+	
+	If Table and Column Names Contain No Spaces
+	-------------------------------------------
+	
+	Remove the brackets that enclose the table and column names. The resulting
+	reference should be of this form:
+	
+	  Table.Column
+	
+	If Table and/or Column Names Contain Spaces
+	-------------------------------------------
+	
+	Don't remove the bracket delimiters or your application will throw an exception
+	that indicates:
+	
+	  Syntax error in query expression 'table name.column name'.
+	
+	Instead, you must override one of the existing overloads of the virtual function
+	CDaoRecordset::SetFieldValue() as follows (assuming your CDaoRecordset is named
+	CMyDaoRecordset):
+	
+	     void CMyDaoRecordset::SetFieldValue(LPCTSTR lpszName,
+	                                    const COleVariant& varValue)
+	     {
+	          CString strNewName(lpszName);
+	          StripBrackets(strNewName, strNewName.GetBuffer(0));
+	          strNewName.ReleaseBuffer();
+	          CDaoRecordset::SetFieldValue(strNewName, varValue);
+	     }
+	
+	This override uses the StripBrackets member function of CDaoRecordset to remove
+	the offending brackets and allows the search for the field in the field
+	collection to succeed.
+	
+	NOTE: You can easily add this override to your application by using the Visual
+	C++ ClassView Add Member Function command. Please refer to the online
+	documentation and Help files for more details about this command.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article. This bug was corrected in Visual C++ 4.1.
+	
+	REFERENCES
+	==========
+	
+	Content of Q139997
+	------------------
+	
+	---------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- AppWizard and ClassWizard included with:
+	  Microsoft Visual C++, 32-bit Edition, version 4.0
+	---------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you try to modify a record in an MFC DAO application that uses a
+	recordset based on a join and that was created by AppWizard or ClassWizard,
+	the application may throw an exception on the update. Specifically, the
+	exception indicates:
+	
+	  Item not found in this collection.
+	
+	CAUSE
+	=====
+	
+	When the wizards generate references to columns that have names that appear
+	in multiple tables of the join, the wizards will precede the column name
+	with the name of the table as a qualifier. Both the table name qualifier
+	and column name are enclosed in brackets in the DFX functions of the
+	CDaoRecordset-derived class's DoFieldExchange. For example:
+	
+	  [Table].[Column]
+	
+	The presence of the brackets combined with the use of the table name
+	qualifier causes the search for the specified field in the collection of
+	fields maintained by the database engine to fail.
+	
+	Note that the presence of brackets around unqualified column names does not
+	interfere with the field name search and is thus acceptable. This explains
+	why some fields will be updatable while attempts to update others throws
+	the exception; the updatable fields are likely unique and therefore
+	unqualified.
+	
+	RESOLUTION
+	==========
+	
+	To work around this problem, use one of the following two techniques
+	depending on the names of the affected tables and columns (the ones for
+	which table qualifiers are necessary).
+	
+	If Table and Column Names Contain No Spaces
+	-------------------------------------------
+	
+	Remove the brackets that enclose the table and column names. The resulting
+	reference should be of this form:
+	
+	  Table.Column
+	
+	If Table and/or Column Names Contain Spaces
+	-------------------------------------------
+	
+	Don't remove the bracket delimiters or your application will throw an
+	exception that indicates:
+	
+	  Syntax error in query expression 'table name.column name'.
+	
+	Instead, you must override one of the existing overloads of the virtual
+	function CDaoRecordset::SetFieldValue() as follows (assuming your
+	CDaoRecordset is named CMyDaoRecordset):
+	
+	  void CMyDaoRecordset::SetFieldValue(LPCTSTR lpszName,
+	                                 const COleVariant& varValue)
+	  {
+	       CString strNewName(lpszName);
+	       StripBrackets(strNewName, strNewName.GetBuffer(0));
+	       strNewName.ReleaseBuffer();
+	       CDaoRecordset::SetFieldValue(strNewName, varValue);
+	  }
+	
+	This override uses the StripBrackets member function of CDaoRecordset to
+	remove the offending brackets and allows the search for the field in the
+	field collection to succeed.
+	
+	NOTE: You can easily add this override to your application by using the
+	Visual C++ ClassView Add Member Function command. Please refer to the
+	online documentation and Help files for more details about this command.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products
+	listed at the beginning of this article. This bug was corrected in
+	Visual C++ 4.1.
+	
+	********************* End of Included Article *********************
+	
+	Additional query words: kbVC400bug 4.10
+	
+	======================================================================
+	Keywords          : kbDAOsearch kbDatabase kbMFC kbODBC kbVC kbVC410fix 
+	Technology        : kbVCsearch kbVC400 kbAudDeveloper kbAppWizard kbClassWizard
+	Version           : 4.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

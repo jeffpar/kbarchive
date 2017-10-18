@@ -1,0 +1,94 @@
+---
+layout: page
+title: "Q236130: Slow Network Performance May Occur When Using Tsadmin.exe"
+permalink: kb/236/Q236130/
+---
+
+## Q236130: Slow Network Performance May Occur When Using Tsadmin.exe
+
+	Article: Q236130
+	Product(s): Microsoft Windows NT
+	Version(s): winnt:4.0,4.0 SP4
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server versions 4.0, 4.0 SP4, Terminal Server Edition 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you use Terminal Server Administration (Tsadmin.exe) to view all computers
+	running Terminal Server, you may experience slow network performance. The server
+	running Tsadmin.exe may also be unresponsive for short periods of time.
+	
+	
+	CAUSE
+	=====
+	
+	This behavior occurs because the view in Terminal Server Administration is
+	refreshed every five seconds by default. Network problems can occur because of
+	the amount of traffic that is generated when the view is refreshed.
+	
+	For example, Citrix Metaframe clustering creates a virtual connection among
+	numerous Terminal Server-based computers for load balancing. Terminal
+	Server-based computers in trusted domains are also visible. The number of
+	servers in the environment can grow until, for example, dozens of Terminal
+	Server-based computers are contacted every five seconds.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, use any of the following methods:
+	
+	- Quit Terminal Server Administration when it is not in use.
+	  Terminal Server Administration is not designed to run continuously. It is
+	  designed to let administrators view current settings for troubleshooting or
+	  to take a snapshot of the Terminal Server-based environment.
+	
+	- Change the detail level for the Terminal Server Administration view.
+	  On the View menu, click the appropriate view for the level of detail you want.
+	  For example, if you want to see if all Terminal Server-based computers are
+	  running, click the "Collapse to Server" view. When you want more detail on a
+	  server, click the server, and then click the plus sign (+) next to the name
+	  of the server. To conceal the supporting detail, click the minus sign (-).
+	
+	- Change the Terminal Server Administration refresh rate:
+	
+	  1. On the Options menu, click Preferences.
+	
+	  2. In the Processes List Refresh section, click the appropriate value in the
+	     "Refresh every n seconds" box, where n represents the number of seconds
+	     between refreshes.
+	
+	NOTE: If Tsadmin.exe is running for longer than a snapshot view, set the "Refresh
+	every n seconds" value to a higher number. Slower networks or slower Terminal
+	Server-based computers should be set to 30 seconds or higher to avoid the high
+	volume of network traffic every five seconds.
+	
+	STATUS
+	======
+	
+	This behavior is by design.
+	
+	MORE INFORMATION
+	================
+	
+	You can use Terminal Server Administration to view all of the Terminal
+	Server-based computers on the network for the current domain and trusted
+	domains.
+	
+	Additional query words: administrator
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServ400sp4 kbNTTermServSearch
+	Version           : winnt:4.0,4.0 SP4
+	Issue type        : kbprb
+	
+	=============================================================================
+	

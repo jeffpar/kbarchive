@@ -1,0 +1,103 @@
+---
+layout: page
+title: "Q295592: BUG: PDW Limits 'Add Files' String to 256 Characters"
+permalink: kb/295/Q295592/
+---
+
+## Q295592: BUG: PDW Limits 'Add Files' String to 256 Characters
+
+	Article: Q295592
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 6.0
+	Operating System(s): 
+	Keyword(s): kbwizard kbAppSetup kbVBp kbVBp600bug kbGrpDSVB kbDSupport
+	Last Modified: 15-APR-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you attempt to add multiple files to a package that you create with the
+	Package and Deployment Wizard (PDW), and the list of files creates a string that
+	is greater than 256 characters in length, you see that the files are not listed
+	when you scroll through the file list. If you continue to build the package,
+	these files are not included and the wizard gives no indication of the failure.
+	
+	CAUSE
+	=====
+	
+	The Add File dialog box returns the selected file(s) as a single string that is
+	limited to 256 characters.
+	
+	RESOLUTION
+	==========
+	
+	Add the files individually or add them a few at a time.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article.
+	
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. In Visual Basic version 6.0, create a new Standard EXE project.
+	
+	2. On the File menu, click Save to save the project, and then click Make
+	  Project1.exe.
+	
+	3. Start the PDW and select the project that you just created.
+	
+	4. Click Package and step through the screens, accepting the defaults, until you
+	  reach the Included Files screen.
+	
+	5. Click Add, change Files of type to All Files, and browse to a folder that
+	  contains several files, such as C:\Program Files\Microsoft Visual
+	  Studio\Common\Graphics\Bitmaps\Assorted\. (Note that this particular folder
+	  is only present if graphics were installed with Visual Basic.)
+	
+	6. Select all of the files and click Open. This dismisses the dialog box and
+	  should add these files to the list.
+	
+	7. Scroll through the list of included files and note that none of the added
+	  files are listed. Also note that no error message of any kind is raised to
+	  indicate the failure.
+	
+	8. Click Add again, browse to the same folder, and add 2-3 files. Note that
+	  these files do appear in the list.
+	
+	REFERENCES
+	==========
+	
+	For additional information, click the article number below to view the article
+	in the Microsoft Knowledge Base:
+	
+	  Q216119 FIX: PDW Add Files Dialog Doesn't Allow Selecting Multiple Files
+	
+	(c) Microsoft Corporation 2001, All Rights Reserved.
+	Contributions by Chris E. Jolley, Microsoft Corporation
+	
+	
+	Additional query words: Adding PDW
+	
+	======================================================================
+	Keywords          : kbwizard kbAppSetup kbVBp kbVBp600bug kbGrpDSVB kbDSupport 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+	Version           : :6.0
+	Issue type        : kbbug
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

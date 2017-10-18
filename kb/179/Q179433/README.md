@@ -1,0 +1,115 @@
+---
+layout: page
+title: "Q179433: Cache Manager May Cause Data Corruption on SMB Servers on FAT"
+permalink: kb/179/Q179433/
+---
+
+## Q179433: Cache Manager May Cause Data Corruption on SMB Servers on FAT
+
+	Article: Q179433
+	Product(s): Microsoft Windows NT
+	Version(s): WinNT:4.0
+	Operating System(s): 
+	Keyword(s): kbWinNT400sp4fix
+	Last Modified: 10-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 4.0 
+	- Microsoft Windows NT Server version 4.0 
+	- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	You may encounter corrupted files if Windows NT is installed on a FAT partition
+	or shared CDFS volume that has a file system filter driver running on that
+	volume.
+	
+	CAUSE
+	=====
+	
+	This problem is caused by Memory Descriptor List (MDL) interactions between the
+	Cache Manager, the SMB server, the file system filter driver, and FAT. There is
+	an error in the Windows NT Cache Manager that may cause data corruption when the
+	following conditions are true:
+	
+	- Windows NT file server (Srv.sys) is running and sharing data on a local
+	  FAT-based file system (Fastfat.sys).
+	
+	  NOTE: This problem does not occur if the server is sharing data on NTFS
+	  systems. However, the problem may exist with other third-party file systems
+	  or other code that exercises MDL I/O in ways similar to Srv.sys.
+	
+	- Windows NT is using a file system filter driver. The filter driver must be
+	  aware of the Fast MDL routines and it must filter I/O on the FAT-based file
+	  system.
+	
+	  For more information on file system filter drivers, please see the following
+	  article in the Microsoft Knowledge Base:
+	
+	  ARTICLE-ID: Q168513
+	  TITLE : Windows NT Installable File System Kit (IFS) Description
+	
+	  NOTE: Windows NT 4.0 does not include any file system filter drivers.
+	
+	For example, when a filter driver filters data I/O on an SMB server, which is
+	shared on a FAT file system, the I/O requests that flow from the network system
+	through the server, to the filter driver, and into the FAT partition may cause
+	data corruption.
+	
+	RESOLUTION
+	==========
+	
+	An updated version of the Windows NT kernel (which includes Cache Manager) no
+	longer ignores returns from the filter driver that indicate the filter did not
+	write the data or free the MDL. Cache Manager now takes system- defined default
+	actions.
+	
+	To resolve this problem, obtain the latest service pack for Windows NT 4.0 or
+	Windows NT Server 4.0, Terminal Server Edition. For additional information,
+	please see the following article in the Microsoft Knowledge Base:
+	
+	  Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+	
+	
+	For your convenience, the English version of this post-SP3 hotfix has been posted
+	to the following Internet location. However, Microsoft recommends that you
+	install Windows NT 4.0 Service Pack 4 to correct this problem.
+	
+	  ftp://ftp.microsoft.com/bussys/winnt/winnt-public/fixes/usa/NT40/hotfixes-postSP3/getadmin-fix
+	
+	NOTE: Service Pack 3 must be applied to Windows NT 4.0 prior to applying this
+	fix.
+	
+	Mdl-fix has been superseded by Getadmin-fix. You can find the original hotfix at
+	the following Microsoft ftp site:
+	
+	  ftp://ftp.microsoft.com/bussys/winnt/winnt-public/fixes/usa/NT40/hotfixes-postSP3/archive/mdl-fix
+	
+	You can work around this problem by using NTFS partitions for SMB server-based
+	shares instead of FAT partitions or by not using any file system filter drivers
+	that filter I/O on top of FAT-based server volumes.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Windows NT 4.0 and Windows NT
+	Server 4.0, Terminal Server Edition. This problem was first corrected in Windows
+	NT 4.0 Service Pack 4.0 and Windows NT Server 4.0, Terminal Server Edition
+	Service Pack 4.
+	
+	
+	Additional query words: CcMdlWriteComplete IRP_MN_MDL_COMPLETE IFS Kit NO_MORE_SYSTEM_PTES
+	======================================================================
+	Keywords          : kbWinNT400sp4fix 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch
+	Version           : WinNT:4.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

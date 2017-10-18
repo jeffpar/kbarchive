@@ -1,0 +1,235 @@
+---
+layout: page
+title: "Q112638: WEPs, Windows, and Microsoft Visual C/C++ Compilers"
+permalink: kb/112/Q112638/
+---
+
+## Q112638: WEPs, Windows, and Microsoft Visual C/C++ Compilers
+
+	Article: Q112638
+	Product(s): Microsoft Windows Software Development Kit
+	Version(s): WINDOWS:3.1
+	Operating System(s): 
+	Keyword(s): kb16bitonly
+	Last Modified: 12-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows Software Development Kit (SDK) 3.1 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Every Windows dynamic-link library (DLL) should include a termination function
+	called as a Windows Exit Procedure (WEP) to perform general purpose cleanup
+	operations when Windows unloads a DLL from memory. Under Windows version 3.0,
+	WEPs are not implemented properly; however, under Windows version 3.1, the
+	design of WEPs is enhanced to perform cleanup operations. Also, Microsoft C/C++
+	versions 7.0 and later provide a default WEP for DLLs in the standard C run-time
+	libraries. This article discusses some issues that relate to WEPs in the various
+	Windows environments.
+	
+	MORE INFORMATION
+	================
+	
+	As mentioned earlier, every Windows DLL typically includes a Windows Exit
+	Procedure (WEP), which should be the last function called in the last reference
+	to a DLL before the DLL is removed from memory.
+	
+	WEPs under Windows Version 3.0
+	------------------------------
+	
+	WEPs were introduced in Windows version 3.0 to allow each DLL that hooked
+	interrupts and/or modified I/O ports to clean up when the DLL was unloaded.
+	However, because the initial implementation is flawed and the limitations not
+	well documented, the use of WEPs in Windows version 3.0 is very much limited.
+	
+	
+	WEPs Under Windows Version 3.1
+	------------------------------
+	
+	Here are some general rules in building WEPs:
+	
+	- All DLLs must have a WEP. Even if the WEP does not do anything, the WEP must
+	  still be defined. An exception to this rule is when you are using any of the
+	  C/C++ compilers from Microsoft. This exception is discussed in a later
+	  section of this article.
+	
+	- A WEP must be declared as a FAR PASCAL function.
+	
+	- A WEP must be exported by listing it in the EXPORTS section of the DLL's DEF
+	  file. The RESIDENTNAME keyword and any ordinal reference must be associated
+	  with it (so that Windows can find the WEP routine, even when there is little
+	  available memory, without loading anything from disk). For example:
+	
+	     EXPORTS
+	       WEP     @1     RESIDENTNAME
+	
+	  NOTE: It is not necessary to use 1 as the ordinal reference; any number can be
+	  used.
+	
+	Changes to WEPs Under Windows Version 3.1
+	-----------------------------------------
+	
+	Several changes were made to the implementation of WEPs under Windows version
+	3.1. The following comprehensive list of changes compares the implementation in
+	Windows 3.0 to that in Windows 3.1:
+	
+	- In Windows version 3.0, the WEP is called on a very small stack located in
+	  the Windows Kernel module, which will overflow if the WEP function calls
+	  Windows APIs and MS-DOS functions. The reason for this is that the WEP was
+	  originally designed to allow a DLL that hooked an interrupt to unhook it
+	  before termination, and not as a general purpose cleanup routine. The small
+	  Kernel stack was enough to unhook an interrupt, however.
+	
+	  In Windows version 3.1, the WEP is called on a 4K stack in Kernel, which
+	  provides enough room to call Windows APIs and MS-DOS functions, and perform
+	  any cleanup operation.
+	
+	- In Windows version 3.0, if a DLL uses another DLL (which is implicitly
+	  referenced), the DLL's WEP function can be called after the associated DLL is
+	  freed. If the segment that contains the WEP is discarded while containing
+	  references to the associated DLL, the system crashes when the WEP's segment
+	  is reloaded. This happens when Windows attempts to fix up the external
+	  references to the already freed DLL. The fix for this problem was to keep the
+	  WEP routine in a FIXED segment.
+	
+	  In Windows version 3.1, all affected WEPs are called before any DLLs are freed
+	  or discarded. Thus, WEPs can reside in discardable segments in DLLs written
+	  explicitly for Windows version 3.1.
+	
+	- For the same reason mentioned above, in Windows version 3.1, a WEP can also
+	  call functions in other DLLs. The caveat here is that a DLL must not rely on
+	  library unload order on its own implicitly link DLLs. The Windows loader may
+	  have unloaded your DLL making the function call result in a general
+	  protection (GP) fault. The safe functions to call are any that reside in the
+	  core libraries such as USER, KERNEL, and GDI.
+	
+	- In Windows version 3.0, under some low memory situations, the WEP can be
+	  called before the library initialization routine has been called.
+	
+	  In Windows version 3.1, Windows calls a WEP only if the library entry point
+	  function has been called. The WEP code, for DLLs written specifically for
+	  Windows version 3.1, no longer needs to track this itself.
+	
+	- In Windows version 3.0, under some low memory situations, the WEP can be
+	  called before the library's DGROUP has been created.
+	
+	  Windows version 3.1 ensures that the automatic data segment is allocated
+	  before the WEP is called. The WEP code can assume that DS is valid and that
+	  it contains the selector to the DLL's data segment.
+	
+	- Under rare circumstances, the WEP for a DLL can be called more than once in
+	  Windows version 3.0. In Windows version 3.1, the WEP is never called more
+	  than once.
+	
+	- In Windows version 3.0, the USER module is notified that a DLL is freed
+	  before the WEP is called. Thus, any resources, such as registered classes,
+	  are freed by the USER module before the WEP is called. In Windows 3.1, USER
+	  is notified after the WEP is called.
+	
+	- Because the Microsoft Windows version 3.0 SDK documentation is unclear
+	  concerning the return value from a WEP, the WEP code in some existing DLLs
+	  does not do a RETF 2. Windows version 3.1 saves and restores the value of SP
+	  around the call to the WEP.
+	
+	WEPs Under Microsoft C/C++ Versions 7.0 and Later
+	-------------------------------------------------
+	
+	As mentioned earlier, beginning with Microsoft C/C++, the standard C run- time
+	libraries that support DLLs for Windows (xDLLCyW.LIB) contain a default Windows
+	exit procedure WEP(), a default entry-point procedure LibEntry() in the
+	LIBENTRY.OBJ file, and a default library initialization procedure LibMain().
+	Therefore, if you link to one of the C run-time libraries provided with
+	Microsoft C/C++ versions 7.0 and later, you no longer need to provide your own
+	WEP() or LibMain() routine or link to a LIBENTRY.OBJ file.
+	
+	The LibEntry() procedure in the DLL C run-time libraries performs all the
+	necessary initialization required by the WEPs they contain. The LibEntry()
+	procedure in the default LIBENTRY.OBJ file will call a default LibMain()
+	procedure. The default LibMain() procedure returns and does nothing useful.
+	Remember that no initialization will be done if you use the default LibMain().
+	However, your DLL could define its own LibMain() function so as to perform any
+	type of additional initialization processing that it needs (for example,
+	registering custom control classes or allocate global memory, and so forth). In
+	such a case, the LibMain() in your DLL will be called instead of the default
+	LibMain() in the run-time library.
+	
+	To use the default run-time library's LibEntry() procedure, just do not link to a
+	LIBENTRY.OBJ file. To use the default run-time library's LibMain() function, do
+	not provide a LibMain() function in your DLL.
+	
+	Similarly, the C run-time libraries call a default version of the WEP function at
+	the time a DLL needs to be unloaded from memory. The source code for the default
+	WEP routine is included in a file called WEP.ASM in the SOURCE\STARTUP\WIN
+	directory of Microsoft C/C++ version 7.0 or later. This default WEP routine just
+	returns and does nothing useful [other than performing some C exit processing by
+	calling _cexit()].
+	
+	To use the default run-time library's WEP routine, just include the following
+	lines in the .DEF file:
+	
+	  SEGMENTS 'WEP_TEXT' FIXED PRELOAD
+	  EXPORTS
+	      WEP @1 RESIDENTNAME
+	
+	Because the WEP's code is very small, making the WEP_TEXT segment fixed in memory
+	should not adversely impact Windows's performance.
+	
+	However, in certain cases there is a need to link into your own WEP routine
+	instead of the default WEP routine provided by the Microsoft C/C++ compiler.
+	This is possible, because the default WEP calls an optional user termination
+	function _WEP. Therefore, to add your own processing to the default WEP
+	function, add a _WEP function as follows:
+	
+	     int FAR PASCAL _WEP (int ExitCode)
+	     {
+	       // 
+	       // Include exit cleanup code here
+	       // 
+	       return ExitCode;
+	     }
+	
+	NOTE: Unlike the default WEP routine, the name of your routine must begin with a
+	leading underscore. If a _WEP routine is not provided in a DLL, the default WEP
+	routine will call the default _WEP routine, which simply returns a 1. In the
+	case where you define your own _WEP routine, LINK.EXE will resolve references to
+	_WEP to your _WEP instead of the default _WEP that exists in the DLL C run-time
+	library (as long as you put the object file that contains your _WEP to the left
+	of the DLL run-time library in the LINK command line).
+	
+	NOTE: The default WEP routine provided by the run-time libraries assumes
+	protected-mode operation only because it calls the LAR instruction in its source
+	code, which is a protected-mode instruction only, and therefore will not work in
+	real mode (for example, under Windows 3.0).
+	
+	NOTE: The default WEP provided by the Microsoft C/C++ run-time libraries calls a
+	routine in WIN87EM.DLL, which is the Windows 80x87 floating-point emulation
+	library. Under certain situations, the WIN87EM library might have been unloaded
+	from memory by the time the default WEP routine is called. If this causes
+	problems, copying WIN87EM.DLL to WIN87EM.EXE and placing it on the LOAD= line of
+	WIN.INI will ensure the usage count of WIN87EM will never reach zero.
+	
+	NOTE: Avoid making recursive calls or calling MS-DOS functions or using file I/O
+	in the _WEP routine, if you provide one in the DLL.
+	
+	NOTE: Because the initialization and termination operations performed by the
+	LibEntry and WEP functions in the C run-time libraries are correlated, you
+	should use them both, or neither. If you use your own WEP, then you should link
+	to LIBENTRY.OBJ; if you use the C run-time library's WEP, you should use its
+	LibEntry as well.
+	
+	For more information, refer to the DETAILS.TXT file that is shipped with
+	Microsoft C/C++ version 7.0 or later.
+	
+	Additional query words: 3.10
+	
+	======================================================================
+	Keywords          : kb16bitonly 
+	Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+	Version           : WINDOWS:3.1
+	
+	=============================================================================
+	

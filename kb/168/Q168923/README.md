@@ -1,0 +1,158 @@
+---
+layout: page
+title: "Q168923: WD97: Invalid Page Fault Using DOCVARIABLE Field"
+permalink: kb/168/Q168923/
+---
+
+## Q168923: WD97: Invalid Page Fault Using DOCVARIABLE Field
+
+	Article: Q168923
+	Product(s): Word 97 for Windows
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kberrmsg kbdta word8 kbfield word97
+	Last Modified: 08-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you use the DOCVARIABLE field in a header, footer, or text box, you may
+	receive the following error message:
+	
+	  This program has performed an illegal operation and will be shut down.
+	
+	  If the problem persists, contact the program vendor.
+	
+	When you click Details (on Microsoft Windows Millennium Edition, press ALT+D),
+	you receive the following message:
+	
+	  WINWORD caused an invalid page fault in WINWORD.EXE at 0137:3037f1db.
+	
+	NOTE: The actual memory address may vary.
+	
+	RESOLUTION
+	==========
+	
+	To resolve the problem described in this article, obtain and install the latest
+	Microsoft Word 97 update from the following Microsoft Web site:
+	
+	  http://office.microsoft.com/downloads/9798/Wd97mcrs.aspx
+	
+	IMPORTANT NOTE: Microsoft Word 97 post-service release fixes are cumulative. The
+	latest update contains all of the fixes since Service Release 2. If you install
+	the latest update for Word 97, you do not need to install any other updates
+	after Service Release 2.
+	
+	For additional information about the fixes included in the latest update for Word
+	97, click the article number below to view the article in the Microsoft
+	Knowledge Base:
+	
+	  Q265374 WD97: Post Service Release Fixes for Word 97
+	
+	
+	
+	
+	WORKAROUND
+	==========
+	
+	To work around this problem, use custom document properties (on the File menu,
+	click Properties, and then click the Custom tab) to set custom document
+	variables and then use the DOCPROPERTY field to use the values in a header,
+	footer, or text box.
+	
+	To Create a Custom Document Property
+	------------------------------------
+	
+	1. On the File menu, click Properties, and then click the Custom tab.
+	
+	2. In the Name box, type a name for the custom property, or select a name from
+	  the list.
+	
+	3. In the Type box, click the type of property you want.
+	
+	4. In the Value box, type a value for the property.
+	
+	  The value you enter must match the selection in the Type box. For example, if
+	  you click Number in the Type box, you must type a number in the Value box.
+	  Values that don't match the property type are stored as text.
+	
+	5. Click Add.
+	
+	6. Click OK.
+	
+	To Insert the DOCPROPERTY Field in the Document
+	-----------------------------------------------
+	
+	1. Click where you want to insert the DOCPROPERTY field.
+	
+	2. On the Insert menu, click Field.
+	
+	3. Click to select Document Information in the Categories list, and then click
+	  to select DocProperty in the "Field names" list.
+	
+	4. To add a custom document property to the field, click Options.
+	
+	5. From the Property list, select the custom property you want.
+	
+	6. Click "Add to Field".
+	
+	7. In the Field Options dialog box, click OK.
+	
+	8. In the Field dialog box, click OK.
+	
+	NOTE: For more information about a specific field or option, while in the Field
+	dialog box, select the field name or option, and then press F1.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products that are
+	listed at the beginning of this article.
+	This problem was corrected in Microsoft Word 2000.
+	
+	MORE INFORMATION
+	================
+	
+	If you insert a blank DOCVARIABLE field into a header or footer, that is, when
+	you insert the field with no reference to a stored document variable, and then
+	you later add the document variable reference and update the field, you do not
+	receive the error described in the "Symptoms" section of this article. However,
+	when you update the DOCVARIABLE field, the field remains blank.
+	
+	Performing these same steps in a text box causes the error described in the
+	"Symptoms" section of this article to occur when you update the field.
+	
+	REFERENCES
+	==========
+	
+	For additional information about the DOCVARIABLE field, click the article number
+	below to view the article in the Microsoft Knowledge Base:
+	
+	  Q166098 WD97: DOCVARIABLE Field Is AUTOINDEX Field After Conversion
+	
+	For more information about the DOCVARIABLE field, click "Contents and Index" on
+	the Help menu, click the Index tab in Microsoft Word Help, type the following
+	text
+	
+	  docvariable
+	
+	and then double-click the selected text to go to the "DOCVARIABLE field" topic.
+	If you are unable to find the information you need, ask the Office Assistant.
+	
+	Additional query words: 8.0
+	
+	======================================================================
+	Keywords          : kberrmsg kbdta word8 kbfield word97 
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : :
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

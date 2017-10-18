@@ -1,0 +1,86 @@
+---
+layout: page
+title: "Q162299: PRB: Icons on Controls Have Garbled White Area to Right/Below"
+permalink: kb/162/Q162299/
+---
+
+## Q162299: PRB: Icons on Controls Have Garbled White Area to Right/Below
+
+	Article: Q162299
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:5.0
+	Operating System(s): 
+	Keyword(s): kbenv kbvfp500
+	Last Modified: 05-FEB-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you use icons on command buttons, graphical-style checkboxes, or
+	graphical-style radio buttons, a garbled area appears to the right and/or below
+	the icon. The icon looks OK, but to the right and/or below a white area usually
+	appears.
+	
+	CAUSE
+	=====
+	
+	This happens when you use a Windows video driver that is set up to use large
+	fonts.
+	
+	RESOLUTION
+	==========
+	
+	Use a bitmap file instead of an icon file. Bitmap files show up correctly. The
+	other option is to set the video driver to use small fonts.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products listed at
+	the beginning of this article.
+	
+	MORE INFORMATION
+	================
+	
+	The white area to the right and/or below the icon can vary in size and shape.
+	Resizing the object usually changes the shape of the white area. Sometimes the
+	white area has vertical lines in it. Other times, the white area shows up as
+	white horizontal lines to the right and/or below the icon. The same icon file
+	appears properly when it is placed on an object in Visual FoxPro 3.0.
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. In Windows 95 or Windows NT, open the Display control panel and click the
+	  Settings tab. Make sure that the Font Size is set to Large Fonts. Restart the
+	  computer, if necessary, to make this change take effect. Typically, the video
+	  resolution needs to be set to at least 600x800 for the font size option to be
+	  available.
+	
+	2. In Visual FoxPro, create a new form.
+	
+	3. Place a command button on the new form.
+	
+	4. Set the Caption property of the command button to blank (nothing).
+	
+	5. Set the Picture property of the command button to an icon file. Some good
+	  icon files to use can be found in the HOME() + Samples\Graphics\Icons
+	  directory.
+	
+	6. Resize the button as necessary to see the white area.
+	
+	Additional query words: vfoxwin kbdsd
+	
+	======================================================================
+	Keywords          : kbenv kbvfp500 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP500
+	Version           : WINDOWS:5.0
+	
+	=============================================================================
+	

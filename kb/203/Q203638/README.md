@@ -1,0 +1,292 @@
+---
+layout: page
+title: "Q203638: HOWTO: Return Information About SQL Server Linked Servers"
+permalink: kb/203/Q203638/
+---
+
+## Q203638: HOWTO: Return Information About SQL Server Linked Servers
+
+	Article: Q203638
+	Product(s): Microsoft FoxPro
+	Version(s): MACINTOSH:3.0b; WINDOWS:2.5,3.0,3.0b,5.0,5.0a,6.0; winnt:7.0
+	Operating System(s): 
+	Keyword(s): kbClient KbClientServer kbDatabase kbHWMAC kbSQL kbSQLServ kbvfp300b kbvfp500 kbvfp500a
+	Last Modified: 27-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+	- Microsoft SQL Server version 7.0 
+	- Microsoft Data Access Components version 2.5 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	SQL Server 7.0 allows the addition of external data sources as linked servers.
+	This feature provides access to distributed, heterogeneous queries against OLE
+	DB data sources. When connecting to SQL Server, a cursor listing available
+	tables can be returned with the SQLTables(file_handle) command. The SQLTables()
+	command, however, does not return information about tables available in Linked
+	Servers. Information regarding linked servers is returned by three different SQL
+	Server 7.0 stored procedures. This article describes how to use those stored
+	procedures to return information regarding tables available from Linked Servers.
+	
+	MORE INFORMATION
+	================
+	
+	SQL Server 7.0 linked servers are defined as mappings against a specific linked
+	server. Therefore, a linked server may not necessarily be part of a SQL Server
+	database.
+	
+	SQL Server 7.0 linked servers are defined using the sp_addlinkedserver system
+	stored procedure. The linked server definition contains all the information
+	needed to locate the OLE DB data source. Remote tables from the linked server
+	name can then be referenced in two ways:
+	
+	- The linked server name can be used as the server name in a four-part name
+	  used as a table or view reference in a Transact-SQL statement. The other
+	  three parts of the name reference an object in the linked server that is
+	  exposed as a rowset.
+	
+	- The linked server name can be used as an input parameter to an OPENQUERY
+	  function. OPENQUERY sends the OLE DB provider a command to execute. The
+	  returned rowset can then be used as a table or view reference in a
+	  Transact-SQL statement.
+	
+	The SQL Server 7.0 stored procedures used to return information about linked
+	servers are:
+	
+	- sp_linkedservers
+	- sp_tables_ex
+	- sp_columns_ex
+	
+	Each of the SQL Server 7.0 stored procedures return a different level of detail
+	related to linked servers.
+	
+	sp_linkedservers returns the following columns:
+	
+	  SRV_NAME             Name of the linked server.
+	
+	  SRV_PROVIDERNAME     Friendly name of the OLE DB provider managing
+	                       access to the specified linked server.
+	
+	  SRV_PRODUCT          Product name of the linked server.
+	
+	  SRV_DATASOURCE       OLE DB datasource property corresponding to the
+	                       specified linked server.
+	
+	  SRV_PROVIDERSTRING   OLE DB provider string property corresponding to
+	                       the specified linked server.
+	
+	  SRV_LOCATION         OLE DB location property corresponding to the
+	                       specified linked server.
+	
+	  SRV_CAT              OLE DB catalog property corresponding to the
+	                       specified linked server.
+	
+	sp_tables_ex returns information on the tables from the specified linked server.
+	This stored procedure accepts the following arguments:
+	
+	  TABLE_SERVER         Name of the linked server for which to return table
+	                       information, with no default.
+	
+	  TABLE_NAME           Name of the table for which to return data type
+	                       information, with a default of NULL.
+	
+	  TABLE_SCHEMA         Is the table schema, with a default of NULL.
+	
+	  TABLE_CATALOG        Catalog Name of the database in which the specified
+	                       table resides, with a default of NULL. 
+	
+	  TABLE_TYPE           Type of the table to return, with a default of                         NULL.
+	
+	sp_tables_ex returns the following columns:
+	
+	  TABLE_CAT            Table qualifier name. (May be null)
+	
+	  TABLE_SCHEM          Table or view owner name.
+	
+	  TABLE_NAME           Table name.
+	
+	  TABLE_TYPE           Table, system table, or view. 
+	
+	  REMARKS              SQL Server does not return a value for this column. 
+	
+	sp_columns_ex returns column information, one row per column, for the given
+	linked server table(s). sp_columns_ex returns column information only for the
+	given column if column is specified. This stored procedure accepts the following
+	arguments:
+	
+	  TABLE_SERVER        Name of the linked server for which to return column
+	                      information, with no default. 
+	
+	  TABLE_NAME          Name of the table for which to return column
+	                      information, with a default of NULL. 
+	
+	  TABLE_SCHEMA        Name of the table for which to return column 
+	                      information, with a default of NULL. 
+	
+	  TABLE_CATALOG       Catalog name of the table for which to return column 
+	                      information, with a default of NULL. 
+	
+	  COLUMN              Name of the database column for which to provide
+	                      information, with a default of NULL. 
+	
+	  ODBCVer             The version of ODBC being used. ODBCVer is an
+	                      integer, with a default value of 2, indicating ODBC
+	                      Version 2. Valid values are 2 or 3.
+	
+	sp_columns_ex returns the following columns:
+	
+	  TABLE_CAT           Table or view qualifier name. (May be null)
+	
+	  TABLE_SCHEM         Table or view owner name.
+	
+	  TABLE_NAME          Table or view name.
+	
+	  COLUMN_NAME         Column name, for each column of the specified table.
+	
+	  DATA_TYPE           Integer value corresponding to ODBC type indicators.
+	
+	  TYPE_NAME           String representing a data type.
+	
+	  COLUMN_SIZE         Number of significant digits.
+	
+	  BUFFER_LENGTH       Transfer size of the data.  
+	
+	  DECIMAL_DIGITS      Number of digits to the right of the decimal point. 
+	
+	  NUM_PREC_RADIX      Is the base for numeric data types. 
+	
+	  NULLABLE            Specifies nullability. 
+	
+	  REMARKS             This field always returns NULL. 
+	
+	  COLUMN_DEF          Default value of the column. 
+	
+	  SQL_DATA_TYPE       Value of the SQL data type as it appears in the TYPE 
+	                      field of the descriptor.
+	
+	  SQL_DATETIME_SUB    Subtype code for datetime and SQL-92 interval data
+	                      types. For other data types, this column returns
+	                      NULL. 
+	
+	  CHAR_OCTET_LENGTH   Maximum length in bytes of a character or integer
+	                      data type column. For all other data types, this
+	                      column returns NULL. 
+	
+	  ORDINAL_POSITION    Ordinal position of the column in the table.
+	  IS_NULLABLE         Nullability of the column in the table. This column 
+	                      returns a zero-length string if nullability is 
+	                      unknown. The value returned for this column is
+	                      different from the value returned for the NULLABLE
+	                      column.
+	
+	  SS_DATA_TYPE SQL    Server data type, used by Open Data Services 
+	                      extended stored procedures. 
+	
+	1. Open the ODBC Administrator and create an ODBC DataSource named "LINKSRV".
+	
+	  NOTE: Because linked servers are listed under the SQL Server 7.0 Security Tab,
+	  it is not necessary to set a default database when creating the DS.
+	
+	2. Create a program file named "SP_tables.prg" using the following code:
+	
+	     * NOTE: This code is based on the following assumptions:
+	     *  A DSN named LINKSRV pointing to a SQL Server 7.0 data source exists.
+	     *  A Linked Server has been defined in SQL Server 7.0.
+	     Connect_String="'LINKSRV','SA',''"
+	     * Connect to SQL Server
+	     gnConnHandle=SQLCONNECT(&Connect_String)
+	     IF gnConnHandle>0
+	        * Create a command string to pass to SQL Server via SQLExec.
+	        CREATE CURSOR SQLSRVDAT (Server c(128),Table_Name c(128), ;
+	           Column_name c(128))
+	        * Create a command string to pass to SQL Server via SQLExec.
+	        SQLCommand="sp_linkedservers"
+	        * Return a cursor with the names of available linked servers.
+	        QRYVal=SQLExec(gnConnHandle,SQLCommand,'SQLSvr')
+	        IF QRYVal>0
+	           SELECT SQLSvr
+	           DO WHILE !EOF()
+	              * Build a command to pass to SQL Server to return a cursor
+	              * of tables available from the linked server.
+	              SQLCommand="sp_tables_ex '"+ALLTRIM(SQLSvr.SRV_NAME)+"'"
+	              * Return a cursor with the names of tables available from
+	              * the specified linked server.
+	              tables_val=SQLExec(gnConnHandle,SQLCommand,'SQLTabs')
+	              IF tables_val>0
+	                 SELECT sqltabs
+	                 LOCA
+	                 DO WHILE !EOF()
+	                    * Build a command to pass to SQL Server to return a
+	                    * cursor with the fields from the specified
+	                    * table of the defined linked server.
+	                    SQLCommand="sp_columns_ex '"+ALLTRIM(SQLSvr.SRV_NAME) + ;
+	                       "','"+ALLTRIM(sqltabs.Table_Name)+"'"
+	                    * Return a cursor with the names of the columns
+	                    * in the specified table of the linked server.
+	                    ColVal=SQLExec(gnConnHandle,SQLCommand,'sqlcols')
+	                    IF ColVal>0
+	                       SELECT sqlcols
+	                       DO WHILE !EOF()
+	                          INSERT INTO SQLSRVDAT VALUES ;
+	                             (SQLSvr.SRV_NAME,sqltabs.Table_Name, ;
+	                             sqlcols.Column_name)
+	                          SELECT sqlcols
+	                          SKIP
+	                       ENDDO
+	                    ENDIF
+	                    SELECT sqltabs
+	                    SKIP
+	                 ENDDO
+	              ENDIF
+	              SELECT SQLSvr
+	              SKIP
+	           ENDDO
+	        ELSE
+	           =AERROR(L_Server)
+	           =MESSAGEBOX(L_Server[1,2]+CHR(13)+L_Server[1,3],32,'Query Failed')
+	        ENDIF
+	        =SQLDISCONN(gnConnHandle)
+	        SELECT SQLSRVDAT
+	        IF RECCOUNT()=0
+	           =MESSAGEBOX('No Linked Servers Detected',64,'Linked Servers')
+	        ELSE
+	           CALCULATE MAX(LEN(ALLTRIM(SQLSRVDAT.column_Name))) TO max_wide
+	           BROW TITLE "Linked Server Information" WIDTH max_wide
+	        ENDIF
+	     ELSE
+	        =AERROR(s_failed)
+	        * The linked server doesn't exist, so display a message.
+	        =MESSAGEBOX(s_failed[1,2]+CHR(13)+ ;
+	           IIF(!ISNULL(s_failed[1,3]),s_failed[1,3],"null"),32,'Failed')
+	     ENDIF
+	     RETURN
+	     * End Code.
+	
+	3. In the Command window, type the following:
+	
+	  DO SP_TABLES
+	
+	REFERENCES
+	==========
+	
+	Transact - SQL Reference Help; search on: "sp_addlinkedserver"; "sp_tables_ex";
+	"sp_linkedservers"; "sp_columns_ex" (c) Microsoft Corporation 1999, All Rights
+	Reserved. Contributions by John R. Desch, Microsoft Corporation.
+	
+	
+	Additional query words: kbDSupport kbDSE
+	
+	======================================================================
+	Keywords          : kbClient KbClientServer kbDatabase kbHWMAC kbSQL kbSQLServ kbvfp300b kbvfp500 kbvfp500a kbvfp600 KbDBFDBC kbMDAC250 kbSQLProg 
+	Technology        : kbHWMAC kbOSMAC kbVFPsearch kbSQLServSearch kbAudDeveloper kbSQLServ700 kbMDACSearch kbMDAC250 kbVFP300bMac kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+	Version           : MACINTOSH:3.0b; WINDOWS:2.5,3.0,3.0b,5.0,5.0a,6.0; winnt:7.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

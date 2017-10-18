@@ -1,0 +1,115 @@
+---
+layout: page
+title: "Q141820: 3D Movie Maker: Error Messages When Trying to Save a Movie"
+permalink: kb/141/Q141820/
+---
+
+## Q141820: 3D Movie Maker: Error Messages When Trying to Save a Movie
+
+	Article: Q141820
+	Product(s): Microsoft Home Kids Products
+	Version(s): WINDOWS:1.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 08-NOV-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft 3D Movie Maker for Windows, version 1.0 
+	- Microsoft Nickelodeon 3D Movie Maker for Windows, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you attempt to save a movie, you may receive the following error message:
+	
+	  Due to technical difficulties, we can't save your movie right now
+	
+	-or-
+	
+	  Oops, we can't save your movie right now. This may mean you don't have
+	  permission to change this movie, or that there isn't enough memory or space
+	  to save it
+	
+	RESOLUTION
+	==========
+	
+	These messages may occur for several reasons. To resolve this problem, check for
+	one or more of the following:
+	
+	- Make sure that you have at least one scene in the movie you are trying to
+	  save.
+	
+	- Make sure that your computer's available memory is sufficient. (Try closing
+	  all other programs.)
+	
+	- Make sure that you have sufficient hard disk space. (Delete unnecessary
+	  files.)
+	
+	- Make sure that Virtual Memory is in use, and that the swap file is of
+	  sufficient size.
+	
+	- Make sure that you have sufficient privileges to write to the location on the
+	  disk or file server.
+	
+	For more information on how to perform these tasks in Windows, see your Windows
+	on-line help or documentation.
+	
+	If you are attempting to save a movie to a floppy disk, also check the
+	following:
+	
+	- Make sure that you have sufficient room on your floppy disk. (Delete
+	  unnecessary files.)
+	
+	- Check to see if you can save to a different floppy disk.
+	
+	After you check for and correct any of the above issues, you should be able to
+	save your 3D Movie Maker file.
+	
+	MORE INFORMATION
+	================
+	
+	When 3D Movie Maker saves files, it works with a temporary storage file which is
+	always saved first to the hard disk. It then copies the temporary file to the
+	specified folder or disk after the temporary file has been written correctly.
+	
+	For additional information regarding the requirements for 3D Movie Maker, please
+	see the following article in the Microsoft Knowledge Base:
+	
+	  Q138982 3D Movie Maker: Minimum System Requirements
+	
+	
+	The following are the error messages you receive, verbatim:
+	
+	  Due to technical difficulties, we can't save your movie right now. Try these
+	  suggestions, and then try saving again.
+	  * Be sure you have at least one scene in your movie.
+	  * Your computer's memory may be low. Switch to Windows (press (CTRL+ESC) and
+	  close other programs.
+	  * Your computer's hard drive may be full. Switch to Windows (press (CTRL+ESC)
+	  and move or delete unnecessary files.
+	  * If you're saving to a floppy disk, be sure the disk is in the drive.
+	
+	-or-
+	
+	  Oops, we can't save your movie right now. This may mean you don't have
+	  permission to change this movie, or that there isn't enough memory or space
+	  to save it.
+	  Try these suggestions.
+	  * If the movie is "Read Only," click Portfolio, click Save As, and then type a
+	  different name for the movie.
+	  * Switch to Windows (press CTRL+ESC) and close other programs. Also, move or
+	  delete unnecessary files.
+	  * If you're saving to a floppy disk, be sure the disk is in the drive.
+	
+	Additional query words: kids mczee kbmm director animated movies melanie 3-d three dimensional saving difficulty doesn't can't kberrmsg errmsg 3dmm problems
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbHomeProdSearch kbZNotKeyword kbKidsSearch kb3dMovieMaker
+	Version           : WINDOWS:1.0
+	
+	=============================================================================
+	

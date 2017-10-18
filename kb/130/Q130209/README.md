@@ -1,0 +1,232 @@
+---
+layout: page
+title: "Q130209: List and Description of Windows NT 3.5 Information Files (&#42;.INF)"
+permalink: kb/130/Q130209/
+---
+
+## Q130209: List and Description of Windows NT 3.5 Information Files (&#42;.INF)
+
+	Article: Q130209
+	Product(s): Microsoft Windows NT
+	Version(s): 3.5
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 13-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 3.5 
+	- Microsoft Windows NT Server version 3.5 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article provides a list of Windows NT and Original Equipment Manufacturer
+	(OEM) information (.INF) files with a description of each file. These files are
+	included with the Windows NT Server and Workstation version 3.5 compact disc and
+	floppy disk set.
+	
+	MORE INFORMATION
+	================
+	
+	Filename        Description
+	---------------------------
+	APP.INF         Used when searching the hard drive for existing
+	               applications and for automatically configuring MS-DOS
+	               application program information files (PIFs).
+	DOSNET.INF      Contains the list of files copied to your local hard disk
+	               during WINNT or WINNT32 Setup. Used by the MS-DOS portion
+	               of WINNT, and by WINNT32 Setup.
+	FILELIST.INF    Used to create a network share for WINNT.EXE Setup.
+	HARDWARE.INF    Hardware configuration file used by Windows NT Setup.
+	INITIAL.INF     Use by Setup for Graphical-mode installation of additional
+	               Windows NT components.
+	IPINFOR.INF     TCP/IP default IP address.
+	KEYBOARD.INF    Setup information for keyboards.
+	LANGUAGE.INF    Setup information for installing language-specific support
+	               files.
+	LAYOUT.INF      Setup information to install specific keyboard layout
+	               support.
+	MMDRIVER.INF    Multimedia drivers setup information.
+	MODEM.INF       Remote Access Server modem setup information file.
+	MONITOR.INF     Monitors setup information file.
+	NBINFO.INF      NetBIOS setup information file.
+	NCPARAM.INF     Network card parameters setup information file.
+	NCPASHEL.INF    Control Panel Network shell setup information file.
+	NETDTECT.INF    Network card autodetection setup information file.
+	NTLANMAN.INF    Windows NT LAN Manager setup information file.
+	NTLMINST.INF    Network installation setup information file.
+	OEMNADAM.INF    Network adapter setup script for Advanced Micro Devices
+	               AM2100, AM1500T, and PCnet adapters; also Novell/Anthem
+	               NE1500T, and NE2100 adapters.
+	OEMNADAR.INF    Network adapter setup script for Advanced Micro Devices
+	               (AM2100, AM1500T, and PCnet adapters); also for
+	               Novell/Anthem NE1500T and Novell/Anthem NE2100 adapters.
+	OEMNADD1.INF    Network driver setup script for DEC EtherWORKS LC adapter
+	               and Turbo/LC adapter cards.
+	OEMNADD2.INF    Network driver setup script for DEC EtherWORKS Turbo
+	               adapter.
+	OEMNADD4.INF    Network driver setup script for DEC EtherWORKS Turbo EISA
+	               adapter.
+	
+	OEMNADDE.INF    Network driver setup script for DEC Turbo Channel Ethernet
+	               adapter.
+	OEMNADDI.INF    Network driver setup script for Digiboard PCIMAC (ISA,
+	               PCIMAC) MC, and PCIMAC/4 adapters (Digiboard ISDN
+	               adapters).
+	OEMNADDP.INF    Network driver setup script for DEC Etherworks DEPCA
+	               adapter.
+	OEMNADDS.INF    Digiboard C/X, PC/Xem, PC/8i, PC/2e, PC/4e, PC/8e adapter
+	               setup script.
+	OEMNADE1.INF    Network driver setup script for 3Com Etherlink 16 TP
+	               adapter.
+	OEMNADE2.INF    Network driver setup script for 3Com Etherlink II adapter.
+	OEMNADE3.INF    Network driver setup script for 3Com Etherlink III adapter.
+	OEMNADEE.INF    Network driver setup script for 3Com Etherlink III EISA
+	               adapter.
+	OEMNADEM.INF    Network driver setup script for 3Com 3C523 Etherlink/MC
+	               adapter.
+	OEMNADEN.INF    Network driver setup script for 3Com Etherlink III MCA
+	               adapter.
+	OEMNADFD.INF    Network Peripherals FDDI, MCA network adapter setup script.
+	OEMNADIN.INF    Network driver setup script for Intel EtherExpress 16 LAN
+	               adapter.
+	OEMNADLB.INF    Network driver setup script for MS Loopback adapter.
+	OEMNADLM.INF    Network driver setup script for DayStar Digital LocalTalk
+	               adapter (MCA).
+	OEMNADLT.INF    Network driver setup script for DayStar Digital LocalTalk
+	               adapter.
+	OEMNADN1.INF    Network driver setup script for Novell NE1000 adapter.
+	OEMNADN2.INF    Network driver setup script for Novell NE2000 adapter.
+	OEMNADNE.INF    Network driver setup script for Novell NE3200 EISA adapter.
+	OEMNADNF.INF    Network driver setup script for COMPAQ NetFlex/DualSpeed
+	               Token Ring adapter.
+	OEMNADNM.INF    Network driver setup script for Novell NE2000 adapter and
+	               compatible MC adapter.
+	OEMNADNP.INF    Network driver setup script for Network Peripherals FDDI
+	               EISA adapter.
+	OEMNADP3.INF    Network driver setup script for Proteon P1390 adapter.
+	OEMNADP9.INF    Network driver setup script for Proteon P1990 adapter.
+	OEMNADPM.INF    Network driver setup script for Proteon MCA adapter.
+	OEMNADS1.INF    Network driver setup script for Sonic EISA adapter.
+	OEMNADT2.INF    Network driver setup script for IBM Token Ring Network
+	               16/4 ISA Adapter II.
+	OEMNADTE.INF    Network driver setup script for IBM Token Ring EISA
+	               adapter.
+	OEMNADTK.INF    Network driver setup script for IBM Token Ring adapter.
+	OEMNADTM.INF    Network driver setup script for IBM Token Ring adapter/A.
+	OEMNADUB.INF    Network driver setup script for Ungermann-Bass Ethernet
+	               NIUpc, NIUpc/EOTP, NIUps adapters.
+	OEMNADUM.INF    Network driver setup script for Ungermann-Bass Ethernet
+	               NIUps adapter.
+	OEMNADWD.INF    Network driver setup script for SMC (Western Digital)
+	               ISA adapter.
+	OEMNADWM.INF    Network driver setup script for SMC (Western Digital)
+	               adapters: 8003E /A, 8003W /A, 8013WP /A, 8013EP /A.
+	OEMNADXM.INF    Network adapter setup script for Ungermann-Bass Ethernet
+	               NIUps adapter (XNS).
+	OEMNADXN.INF    Network adapter setup script for Ungermann-Bass Ethernet
+	               NIUpc and Ethernet NIUpc/EOTP adapters (XNS).
+	OEMNSVBH.INF    Network service setup script for Network Monitor Agent.
+	OEMNSVCU.INF    Network service setup script for TCP/IP utilities.
+	OEMNSVDH.INF    Network service setup script for Microsoft DHCP Server.
+	OEMNSVFT.INF    Network service setup script for FTP Server.
+	OEMNSVNB.INF    Network service setup script for NetBIOS Transport
+	               Interface.
+	OEMNSVNW.INF    Network service setup script for Client Service for
+	               NetWare.
+	OEMNSVRA.INF    Network service setup script for Remote Access Server,
+	               NetBIOS Gateway, API Layer, RAS Hub, and AsyMAC driver.
+	OEMNSVRC.INF    Network service setup script for Remote Command Server.
+	OEMNSVRI.INF    Network service setup script for Remoteboot Service.
+	OEMNSVRP.INF    Network service setup script for Remote Procedure Call
+	               Locator service.
+	OEMNSVSA.INF    Network service setup script for SAP Agent.
+	OEMNSVSM.INF    Network service setup script for AppleTalk protocol.
+	OEMNSVSP.INF    Network service setup script for Simple TCP/IP Services.
+	OEMNSVSV.INF    Network service setup script for Windows NT LAN Manager
+	               Server.
+	OEMNSVTP.INF    Network service setup script for TCP/IP Print Server.
+	OEMNSVWI.INF    Network service setup script for Windows Internet Name
+	               Service.
+	OEMNSVWK.INF    Network service setup script for Windows NT LAN Manager
+	               Workstation.
+	OEMNXPDL.INF    Network transport setup script for DLC protocol.
+	OEMNXPIP.INF    Network transport setup script for NWLink Transport driver
+	               and NWLink NetBIOS driver.
+	OEMNXPNB.INF    Network transport setup script for NetBEUI 3.0 Transport.
+	OEMNXPS1.INF    Network transport setup script for SNMP Service.
+	OEMNXPSM.INF    Network transport setup script for Service for Macintosh,
+	               including the AppleTalk protocol, File Server for
+	               Macintosh, Kernel driver, and Print Server for Macintosh.
+	OEMNXPSN.INF    Network transport setup script for SNMP Network Management
+	               Service.
+	OEMNXPST.INF    Network transport setup script for Streams environment.
+	OEMNXPTC.INF    Network transport setup script for TCP/IP protocol,
+	               including TCP/IP NetBIOS, Telnet, Loop Support Environment,
+	               and TCP/IP NetBIOS helper.
+	OEMNXPTP.INF    Network transport setup script for ISO TP4/CLNP Stack.
+	OEMNXPXN.INF    Network transport setup script for MCS XNS.
+	OEMNXPXS.INF    Network transport setup for Ungermann-Bass XNS 1.0.
+	OTHER.INF       Setup script for "Other Driver" selections.
+	PAD.INF         PAD script information for Remote Access Server
+	               configuration (X.25).
+	PARTIAL.INF     Graphical-mode installation of optional Windows NT
+	               components and creation of Program Manager groups. Used by
+	               Setup for CD, floppy disk, WINNT, or WINNT32 installation.
+	POINTER.INF     Pointing devices setup script (including mouse).
+	PRINTER.INF     Printer setup script file; specific printer driver
+	               information.
+	PRNSETUP.INF    Printer setup script file.
+	REGISTRY.INF    Registry setup script file.
+	REPAIR.INF      Repair disk setup script file.
+	SCSI.INF        SCSI installation setup script.
+	SETUP.INF       Windows NT Setup script file.
+	SETUP16.INF     Win16 SETUP.INF file.
+	SFMICONS.INF    Services for Macintosh icon information.
+	SFMMAP.INF      Services for Macintosh Type Creator mappings information
+	               file.
+	SUBROUTN.INF    Windows NT Setup common subroutines script file.
+	SWITCH.INF      Remote Access Server switch configuration information file.
+	TAPE.INF        Setup script for tape devices.
+	UPDATE.INF      Used to update HAL.DLL, NTOSKRNL.EXE, NTBOOTDD.SYS, or
+	               NTDETECT.COM when a one file is selected from a set of
+	               files and the selected file is copied under a generic name.
+	UTILITY.INF     Utility script used for network setup.
+	VIDEO.INF       Video driver setup script.
+	VIRTUAL.INF     Setup information for configuring the Windows NT paging
+	               file.
+	XPORTS.INF      Transport customization.
+	OEMCPTyy.INF   Information file for Computer.
+	OEMDRVyy.INF   Information file for Driver.
+	OEMKBDyy.INF   Information file for Keyboard.
+	OEMLAyyY.INF   Information file for Layout.
+	OEMLNGyy.INF   Information file for Language.
+	OEMNADyy.INF   Information file for NetAdapter.
+	OEMNDRyy.INF   Information file for NetDriver.
+	OEMNPRyy.INF   Information file for NetProvider.
+	OEMPTRyy.INF   Information file for Pointer.
+	OEMNSVyy.INF   Information file for NetService.
+	OEMNWKyy.INF   Information file for Network.
+	OEMNXPyy.INF   Information file for NetTransport.
+	OEMPRNyy.INF   Information file for Printer.
+	OEMSCSyy.INF   Information file for SCSI.
+	OEMSNDyy.INF   Information file for Sound.
+	OEMTAPyy.INF   Information file for Tape.
+	OEMVIOyy.INF   Information file for Video.
+	
+	NOTE: For the OEM information files, the yy represents the specific device(s)
+	included with the Windows NT 3.5 compact disc and floppy disk set.
+	
+	Additional query words: prodnt change media cd cd-rom share point ub auto detection remote boot rpl
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+	Version           : :3.5
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

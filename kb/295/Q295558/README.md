@@ -1,0 +1,153 @@
+---
+layout: page
+title: "Q295558: HOWTO: Add Delegate To Exchange Folder w/ ACL Component and CDO"
+permalink: kb/295/Q295558/
+---
+
+## Q295558: HOWTO: Add Delegate To Exchange Folder w/ ACL Component and CDO
+
+	Article: Q295558
+	Product(s): Microsoft Exchange
+	Version(s): 1.21,5.5
+	Operating System(s): 
+	Keyword(s): kbMsg kbGrpDSMsg kbDSupport
+	Last Modified: 03-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.5 
+	- Microsoft Exchange 2000 Server 
+	- Collaboration Data Objects (CDO), version 1.21 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	You can use the Access Control List (ACL) component that ships with the Exchange
+	Developer's Kit and CDO 1.21 to give a user delegate-like access to an Exchange
+	folder. This is similar to using the Microsoft Outlook user interface to add a
+	delegate.
+	
+	MORE INFORMATION
+	================
+	
+	To add users as delegates on an Exchange folder, you just need to grant them the
+	proper permissions.
+	
+	Note that using the Outlook user interface produces the following results, but
+	that this method does not:
+	
+	- The delegate is listed in the Outlook user interface. To verify this, on the
+	  Tools menu, click Options, and then click the Delegates tab.
+	
+	- You can automatically send a message to new delegates, informing them of
+	  their permissions.
+	
+	- You can indicate that this delegate can view your private items.
+	
+	Sample Code:
+	
+	NOTE: For information on the ACL component and how to acquire it, see the
+	following Microsoft Developer Network (MSDN) Web site:
+	
+	  ACL Component
+	  http://msdn.microsoft.com/library/default.asp?URL=/library/psdk/exchserv/comcpnts_8f04.htm
+	
+	This sample gives UserA delegate-like access to UserB's Calendar folder. In this
+	instance, UserA is given the role of Reviewer by using the ROLE_REVIEWER
+	enumeration value. The other delegate roles are Author (ROLE_AUTHOR) and Editor
+	(ROLE_EDITOR).
+	
+	To add a delegate to an Exchange folder, follow these steps:
+	
+	1. In Microsoft Visual Basic version 6.0, create a Standard EXE project.
+	
+	2. Add a reference to the Microsoft Exchange 5.5 ACL Type Library version 1.0.
+	
+	3. Add a button to the default form. In the button's Click event, paste the
+	  following code:
+	
+	  NOTE: Make sure that you modify the items that are marked "To do."
+	
+	  ' To do: Change this to the user you want to give delegate access.
+	  Const UserA = "John Smith"
+	  ' To do: Change this to the user whose calendar you want to give UserA delegate access to.
+	  Const UserB = "Jane Smith"
+	
+	  Dim oSession As MAPI.Session                    ' Session object
+	  Dim oCalendar As MAPI.Folder                    ' Folder object
+	  Dim oAddrBook As MAPI.AddressList               ' Address list
+	  Dim oDelegate As MAPI.AddressEntry              ' Address entry for UserA
+	  Dim oACLObject As MSExchangeACLLib.ACLObject    ' ACL object
+	  Dim oACEs As MSExchangeACLLib.IACEs             ' ACEs collection
+	  Dim oNewACE As MSExchangeACLLib.ACE             ' ACE object
+	  Dim strProfile As String                        ' String to hold profile information
+	      
+	  ' Create a new session and log on.
+	  Set oSession = CreateObject("MAPI.Session")
+	      
+	  ' To do: Change ServerName to the name of your Exchange server.
+	  strProfile = "ServerName" & vbLf & UserB
+	  oSession.Logon , , False, True, , True, strProfile
+	      
+	  ' Get the GAL so we can get the address entry for UserA.
+	  Set oAddrBook = oSession.AddressLists("Global Address List")
+	      
+	  ' Get the address entry for UserA.
+	  Set oDelegate = oAddrBook.AddressEntries.Item(UserA)
+	      
+	  ' Get the Calendar folder.
+	  Set oCalendar = oSession.GetDefaultFolder(CdoDefaultFolderCalendar)
+	      
+	  ' Create a new ACL Object.
+	  Set oACLObject = CreateObject("MSExchange.ACLObject")
+	
+	  ' Link the ACL Object to the Calendar folder.
+	  oACLObject.CDOItem = oCalendar
+	      
+	  ' Get the ACEs collection for the Calendar.
+	  Set oACEs = oACLObject.ACEs
+	      
+	  ' Create a new ACE.
+	  Set oNewACE = CreateObject("MSExchange.ACE")
+	      
+	  ' Set the user for this ACE to UserA.
+	  oNewACE.ID = oDelegate.ID
+	      
+	  ' Set the rights to the "Reviewer" rights.
+	  oNewACE.Rights = ROLE_REVIEWER
+	      
+	  ' Add this ACE to the ACEs collection.
+	  oACEs.Add oNewACE
+	      
+	  ' Update the ACL Object.
+	  oACLObject.Update
+	
+	  ' Log off
+	  oSession.Logoff
+	      
+	  ' Indicate the process is finished.
+	  MsgBox "Done!"
+	      
+	  ' Clean up memory.
+	  Set oNewACE = Nothing
+	  Set oACEs = Nothing
+	  Set oACLObject = Nothing
+	  Set oDelegate = Nothing
+	  Set oAddrBook = Nothing
+	  Set oCalendar = Nothing
+	  Set oSession = Nothing
+	
+	4. Run the project. Click the button to execute the code.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbMsg kbGrpDSMsg kbDSupport 
+	Technology        : kbAudDeveloper kbCDOsearch kbExchangeSearch kbExchange550 kbZNotKeyword2 kbExchange2000Search kbCDO121 kbExchange2000Serv
+	Version           : :1.21,5.5
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

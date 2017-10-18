@@ -1,0 +1,148 @@
+---
+layout: page
+title: "Q132419: Problems Sending Fax after Installing Bookshelf"
+permalink: kb/132/Q132419/
+---
+
+## Q132419: Problems Sending Fax after Installing Bookshelf
+
+	Article: Q132419
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): 1995 edition; WINDOWS:3.0,3.0a,3.0b,6.0,6.0a,6.0c
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 11-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Bookshelf for Windows 1995 edition 
+	- Microsoft Bookshelf '95 for Windows 95 
+	- Microsoft Bookshelf 1996-97 for Windows 
+	- Microsoft Word for Windows, versions 6.0, 6.0a, 6.0c 
+	- Microsoft Works, versions 3.0, 3.0a, 3.0b 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you attempt to send a fax using WinFax Pro version 4.0 from Word for
+	Windows, version 6.0 or Works for Windows, version 3.0, the computer exhibits
+	one of the following behaviors:
+	
+	- Stops responding (hangs) and requires a restart
+	
+	- Stack fault error occurs
+	
+	- General protection (GP) fault error occurs
+	
+	- The error message "Application error: msworks caused a stack fault in
+	  Wfxhelp.dll module at 0002:00cf" occurs
+	
+	This problem has also been reported to occur when using Bit Fax Pro, a product of
+	Cheyenne Software.
+	
+	CAUSE
+	=====
+	
+	Many products, including Bookshelf, install a version of CTL3DV2.DLL that is
+	incompatible with Delrina WinFax Pro 4.0. Delrina WinFax Pro 4.0 requires
+	version 2.05 of CTL3DV2.DLL with a file date of 4/19/94 and a decompressed file
+	size of 21,648 bytes.
+	
+	RESOLUTION
+	==========
+	
+	Remove CTL3DV2.DLL from your Windows System folder and replace it with the one
+	from the Microsoft Word 6.0 disks or the one from the Works 3.0 disks. The
+	required CTL3DV2.DLL is version 2.05 with a file date of 4/19/94 and a
+	decompressed file size of 21,648 bytes.
+	
+	Replacing CTL3DV2.DLL from Your Word 6.0 Disks
+	----------------------------------------------
+	
+	Insert Disk 1 of the Word 6.0 disks, type the following at an MS-DOS command
+	prompt and press ENTER:
+	
+	  "extract <drive>:\word1.cab /L c:\windows\system ctl3dv2.dll" (without
+	  the quotation marks)
+	
+	where <drive> is the drive containing the Word disk 1 and c:\windows is
+	your Windows folder.
+	
+	Replacing CTL3DV2.DLL from Your Office Disks or CD-ROM
+	------------------------------------------------------
+	
+	1. Insert the Office 4.3 Professional disk 24, or the Office 4.3 Professional
+	  CD-ROM.
+	
+	2. Change to the directory containing Extract.exe. Extract.exe is on disk 1 of
+	  the Office disks and in the \Setup.adm\Disk1 subdirectory of the Office
+	  CD-ROM.
+	
+	3. Type the following at an MS-DOS command prompt and press ENTER:
+	
+	  "extract <path>\msoff24.cab /L c:\windows\system ctl3dv2.dll" (without
+	  the quotation marks)
+	
+	  where <path> is the path to the Msoff24.cab file, and c:\windows is your
+	  Windows subdirectory. On the disk-based version of Office 4.3, this will be
+	  the floppy disk drive containing disk 24. On the Office 4.3 CD-ROM, this will
+	  be the \Setup.adm\Disk24 folder of the CD-ROM.
+	
+	Replacing CTL3DV2.DLL from Your Works 3.0 Disks
+	-----------------------------------------------
+	
+	Use one of the following methods.
+	
+	Method 1:
+	
+	1. Change to the directory containing Decomp.exe.
+	
+	  NOTE: In a complete installation, Decomp.exe is installed into the
+	  \Msworks\Setup folder.
+	
+	2. Insert Disk 3 if you are using Works 3.0, or Disk 4 if you are using Works
+	  version 3.0a or 3.0b, and type the following at an MS-DOS command prompt and
+	  press ENTER:
+	
+	  "decomp -f <drive>:\ctl3dv2.dl_ c:\windows\system\ctl3dv2.dll" (without
+	  the quotation marks)
+	
+	  where <drive> is the drive letter where the Works disk is located, and
+	  c:\windows is your Windows folder.
+	
+	Method 2:
+	
+	Rename the CTL3DV2.DLL file and run the Works maintanence mode installation. For
+	information about renaming files in Windows, see your Windows printed
+	documentation or online Help.
+	
+	MORE INFORMATION
+	================
+	
+	Microsoft Word for Windows may correct itself if the file Fonttool.wll is
+	removed from the \Winword\Startup folder. However, removing this file disables
+	the Font Assistant functionality.
+	
+	After you replace the Bookshelf-installed CTL3DV2.DLL with version 2.05, you are
+	able to use WinFax Pro 4.0 from Works and from Microsoft Word, even with
+	Fonttool.wll installed.
+	
+	Bookshelf 1995 and 1996-97 use CTL3DV2.DLL for the System Info application,
+	MSINFO.EXE. Bookshelf and System Info work with CTL3DV2.DLL version 2.05.
+	
+	The third-party products discussed here are manufactured by vendors independent
+	of Microsoft; we make no warranty, implied or otherwise, regarding these
+	product's performance or reliability.
+	
+	
+	Additional query words: 1995 1996 mmtitles kbmm hangs hanging hanged crashed crash crashes freeze frozen locked locked-up lock hang bombed bomb down publisher wfxhelp.dll w_works fax illegal printing
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWordSearch kbHomeProdSearch kbWorksSearch kbHomeMMsearch kbZNotKeyword2 kbBookshelfSearch kbWord600 kbWord600a kbWord600c kbWorks300 kbWorks300a kbWorks300b kbBookShelf1995 kbBookShelf1996 kbBookShelf1997
+	Version           : :1995 edition; WINDOWS:3.0,3.0a,3.0b,6.0,6.0a,6.0c
+	
+	=============================================================================
+	

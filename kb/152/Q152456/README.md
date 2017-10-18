@@ -1,0 +1,228 @@
+---
+layout: page
+title: "Q152456: Automating SMC Adapter Setup"
+permalink: kb/152/Q152456/
+---
+
+## Q152456: Automating SMC Adapter Setup
+
+	Article: Q152456
+	Product(s): Microsoft Windows NT
+	Version(s): 3.5 3.51
+	Operating System(s): 
+	Keyword(s): kbsetup
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation versions 3.5, 3.51 
+	- Microsoft Windows NT Server versions 3.5, 3.51 
+	- MSPRESS Microsoft Windows NT Resource Kit, versions 3.5, 3.51 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	Unattended Setup and Computer Profile Setup (CPS) fail to install the SMC 9332
+	EtherPower 10/100 PCI Fast Ethernet Adapter.
+	
+	Following the instructions on "Profiling systems with OEM netcards" in the
+	Cpsread.txt file in the Windows NT version 3.5 Resource Kit or the Cps.hlp file
+	in the Windows NT version 3.51 Resource Kit is not sufficient.
+	
+	CAUSE
+	=====
+	
+	The Oemsetup.inf file for the SMC 9332 EtherPower10/100 PCI Fast Ethernet
+	Adapter is not designed to work with Unattended Setup or Computer Profile Setup.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, follow the instructions for the kind of Setup you are
+	doing, either CPS or Unattended.
+	
+	Computer Profile Setup
+	----------------------
+	
+	1. Before you run Uplodprf.exe, modify Cps.ini as described in the following
+	  note, which is included in both the Cpsread.txt in the Windows NT 3.5
+	  Resource Kit and the Cps.hlp in the Windows NT 3.51 Resource Kit:
+	
+	     [Registry]
+	      FindInstalledServicesAt =
+	      SOFTWARE\Microsoft,SOFTWARE\StandardMicrosystemsCorporation
+	
+	2. Run Uplodprf.exe.
+	
+	3. After running Uplodprf.exe, on the Distribution System back up
+	  %Systemroot%\System32\Ntlanman.inf to Ntlanman.bak.
+	
+	WARNING: Modification of Setup files can cause serious, system-wide problems
+	before and after Setup and may require you to reinstall Windows NT to correct
+	them. Microsoft cannot guarantee that any problems resulting from the
+	modification of Setup files can be solved. Make Setup file modifications at your
+	own risk.
+	
+	4. On the Distribution System modify %Systemroot%\System32\Ntlanman.inf:
+	
+	  ; Original Line below with exclamation point
+	  ;            set AdapterSrcDir = $(OEMNetDrive)
+	  ; Corrected syntax with exclamation point
+	               set AdapterSrcDir = $(!OEMNetDrive)
+	
+	5. On the Distribution system, modify %Systemroot%\System32\Defaults.inf:
+	
+	     [NetworkAdapterData]
+	     !AutoNetOption = SMC9332
+	     !OEMNetOption = YES
+	     !OEMNetDrive = C:\SMC\ 
+	     !OEMNetInfFile = C:\SMC\oemsetup.inf
+	
+	6. On Distribution System, disable the Read-Only attribute on
+	  %Systemroot%\System32\Oemnad0.inf.
+	
+	7. On the Target system, create a directory called SMC on the partition where
+	  Windows NT will be installed.
+	
+	8. Copy the OEM files to the SMC directory created in the previous step. These
+	  OEM files may be located on the Windows NT compact disc in the
+	  \DRVLIB\NETCARD directory or may be available from the network card
+	  manufacturer.
+	
+	9. Modify \SMC\Oemsetup.inf to avoid dialog boxes, as shown below in steps a and
+	  b.
+	
+	WARNING: Modification of Setup files can cause serious, system-wide problems
+	before and after Setup and may require you to reinstall Windows NT to correct
+	them. Microsoft cannot guarantee that any problems resulting from the
+	modification of Setup files can be solved. Make Setup file modifications at your
+	own risk.
+	
+	  a. First OEMSETUP.INF modification:
+	
+	  installadapter = +
+	  ;; The below IF statement was added to avoid setup dialogs during
+	  CPS/Unattended Setup
+	  ifstr(i) $(!STF_GUI_UNATTENDED) == "YES"
+	
+	     goto installproduct
+	
+	  endif
+	  ;; The above IF statement was added to avoid setup dialogs during
+	  CPS/Unattended Setup
+	
+	  b. Second Oemsetup.inf modification:
+	
+	   The code fragment below can be found at the end of the installproduct
+	   section.
+	
+	     ;; Below lines added to retrieve netcard parameters from answer file during
+	     CPS/Unattended Setup
+	     ifstr(i) $(!STF_GUI_UNATTENDED) == "YES"
+	
+	      Shell $(UtilityInf),AddDefaultNetCardParameters,$(HardParameterKey)
+	
+	     endif
+	     ;; Above lines added to retrieve netcard parameters from answer file during
+	     CPS/Unattended Setup
+	
+	        CloseRegKey $(HardNetCardKey)
+	        CloseRegKey $(HardNetRuleKey)
+	        CloseRegKey $(HardParameterKey)
+	
+	   EndForListDo
+	   EndWait
+	   goto successful
+	
+	     updateparameters =+
+	
+	NOTE: Similar modifications should work for the SMC 8432 and 8434 Ethernet
+	adapters.
+	
+	10. Run Winntp.exe
+	
+	For more information, please see the following articles in the Microsoft
+	Knowledge Base:
+	
+	Q143134OEMSETUP.INF Modifications for Automated Windows NT Setup
+	
+	Q139897Automating Intel EtherExpress Pro Setup
+	
+	You can also refer to the "Programmer's Guide" included in the Windows NT Device
+	Driver Kit (DDK), or contact Microsoft Consulting Services or a Microsoft
+	Solution Provider. Microsoft Product Support Services, Corporate Network
+	Systems, does not support the modification of Oemsetup.inf files. It is
+	recommended that you perform a test run of Winntp.exe to verify whether your
+	Oemsetup.inf file supports Unattended or Computer Profile Setup.
+	
+	Unattended Setup
+	----------------
+	
+	1. Copy the \I386 directory from the Windows NT compact disc to your hard disk
+	  drive.
+	
+	2. Expand I386\Ntlanman.in_ to Ntlanman.inf. The Expand.exe file is located in
+	  the %SystemRoot%\System32 directory.
+	
+	3. Rename I386\Ntlanman.in_ to Ntlanman.bk_
+	
+	WARNING: Modification of Setup files can cause serious, system-wide problems
+	before and after Setup and may require you to reinstall Windows NT to correct
+	them. Microsoft cannot guarantee that any problems resulting from the
+	modification of Setup files can be solved. Make Setup file modifications at your
+	own risk.
+	
+	4. Modify I386\Ntlanman.inf as follows:
+	
+	  ; Original Line below with exclamation point
+	  ;            set AdapterSrcDir = $(OEMNetDrive)
+	  ; Corrected syntax with exclamation point
+	               set AdapterSrcDir = $(!OEMNetDrive)
+	
+	NOTE: It is not necessary to rename Ntlanman.inf to Ntlanman.in_. Windows NT
+	Setup does not require the file to be compressed or named with an .in_
+	extension.
+	
+	5. Modify the [NetworkAdapterData] section in your "Answer File" as follows:
+	
+	  [NetworkAdapterData]
+	  !AutoNetOption = SMC9332
+	  !OEMNetOption = YES
+	  !OEMNetDrive = C:\SMC\
+	  !OEMNetInfFile = C:\SMC\oemsetup.inf
+	
+	6. Create a directory called SMC on the partition to which Windows NT will be
+	  installed.
+	
+	7. Copy the OEM files to the SMC directory created in the previous step. These
+	  OEM files may be located on the Windows NT compact disc in the
+	  \DRVLIB\NETCARD directory or may be available from the network card
+	  manufacturer.
+	
+	8. Modify \SMC\Oemsetup.inf to avoid dialog boxes as shown in Step 9 in the
+	  above Computer Profile Setup section.
+	
+	9. Run Unattended Setup.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Windows NT version 3.51. We are
+	researching this problem and will post new information here in the Microsoft
+	Knowledge Base as it becomes available.
+	
+	The third-party products discussed here are manufactured by vendors independent
+	of Microsoft; we make no warranty, implied or otherwise, regarding these
+	products' performance or reliability.
+	
+	Additional query words: automate
+	======================================================================
+	Keywords          : kbsetup 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbMSPressSearch kbWinNTS351search kbWinNTS350search kbZNotKeyword6 kbZNotKeyword2 kbZNotKeyword5
+	Version           : 3.5 3.51
+	
+	=============================================================================
+	

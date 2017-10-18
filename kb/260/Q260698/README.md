@@ -1,0 +1,239 @@
+---
+layout: page
+title: "Q260698: XADM: Demotion of Domain Controller Disables Exchange Server"
+permalink: kb/260/Q260698/
+---
+
+## Q260698: XADM: Demotion of Domain Controller Disables Exchange Server
+
+	Article: Q260698
+	Product(s): Microsoft Exchange
+	Version(s): WINDOWS:2000; winnt:4.0,5.0,5.5
+	Operating System(s): 
+	Keyword(s): exc4 exc5 exc55
+	Last Modified: 11-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+	- Microsoft Windows 2000 Server 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+	
+	  Q256986 Description of the Microsoft Windows Registry
+	
+	SYMPTOMS
+	========
+	
+	If you run the Dcpromo utility to demote the final domain controller in a domain
+	to a member server, all of the domain accounts are lost. This includes the
+	accounts that are used for the Exchange Server services. After you restart after
+	the demotion, the following error message is displayed:
+	
+	  At least one service or driver failed during system startup. Use Event Viewer
+	  to examine the event log for details.
+	
+	The following error messages are logged in the system log:
+	
+	   - Event ID: 7001
+	  Source: Service Control Manager
+	  Type: Error
+	  Description:
+	  The Microsoft Exchange Event Service service depends on the Microsoft Exchange
+	  Information Store service which failed to start because of the following
+	  error:
+	
+	  The dependency service or group failed to start.
+	
+	   - Event ID: 7001
+	  Source: Service Control Manager
+	  Type:Error
+	  Description:
+	  The Microsoft Exchange Message Transfer Agent service depends on the Microsoft
+	  Exchange Directory service which failed to start because of the following
+	  error:
+	
+	  The dependency service or group failed to start.
+	
+	   - Event ID: 7001
+	  Source: Service Control Manager
+	  Type: Error
+	  Description:
+	  The Microsoft Exchange Information Store service depends on the Microsoft
+	  Exchange Directory service which failed to start because of the following
+	  error:
+	
+	  The dependency service or group failed to start.
+	
+	   - Event ID: 7001
+	  Source: Service Control Manager
+	  Type:Error
+	  Description:
+	  The Microsoft Directory service depends on the Microsoft Exchange System
+	  Attendant service which failed to start because of the following error:
+	
+	  The dependency service or group failed to start.
+	
+	   - Event ID: 7000
+	  Source: Service Control Manager
+	  Type:Error
+	  Description:
+	  The Microsoft Exchange Message Transfer Agent service depends on the Microsoft
+	  Exchange Directory service which failed to start because of the following
+	  error:
+	
+	  The service did not start due to a logon failure.
+	
+	CAUSE
+	=====
+	
+	This issue can occur because when you demote the last domain controller in a
+	Windows 2000 domain, you remove all of the user accounts from that domain,
+	including the account that is used as the Exchange Server service account. When
+	Exchange Server is initially installed, permissions are given to the service
+	account by means of the Windows NT Security Identifier (SID) of the account.
+	
+	Because of this, even if you run the dcpromo command again, recreate the domain
+	controller with the same domain name, and create an account that is identical to
+	the original service account (with the same user name and password), the system
+	attendant and directory service may start, but no account will have Service
+	Account Administrator permissions in Exchange Server.
+	
+	Because no account can start the Exchange Server Administrator program to assign
+	permissions, the only option available is to remove Exchange Server and
+	reinstall it by using a new service account. You can successfully import the
+	databases that were previously used, Priv.edb and Pub.edb, to the new
+	installation of Exchange Server to minimize data loss.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, restore the existing databases (Priv.edb and Pub.edb) to
+	a new installation of Exchange Server on the computer running Windows 2000
+	Server:
+	
+	1. If you have not already done so, run the "dcpromo" (without the quotation
+	  marks) command to create a new Windows 2000 domain.
+	
+	2. Copy the Priv.edb and Pub.edb files from the Exchsrvr\Mdbdata folder to a
+	  temporary folder.
+	
+	3. Manually remove the existing Exchange Server installation:
+	
+	  a. Stop all of the Exchange Server services by using the Services Microsoft
+	     Management Console (MMC) snap-in.
+	
+	  b. Delete all of the Exchsrvr folders on all of the drives.
+	
+	  c. Delete the Exchange Server information from the registry:
+	
+	WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+	that may require you to reinstall your operating system. Microsoft cannot
+	guarantee that you can solve problems that result from using Registry Editor
+	incorrectly. Use Registry Editor at your own risk.
+	
+	     1. Start Registry Editor (Regedt32.exe).
+	
+	     2. Locate the following key in the registry:
+	
+	  HKEY_LOCAL_MACHINE/System/CurrentControlSet/Services
+	
+	     3. Delete all of the installed Exchange Server services. These services
+	        include the following:
+	
+	         - MSExchangeDS
+	         - MSExchangeDX
+	         - MSExchangeFB
+	         - MSExchangeIMC
+	         - MSExchangeIS
+	         - MSExchangeKMS
+	         - MSExchangeMSMI
+	         - MSExchangeMTA
+	         - MSExchangePCMTA
+	         - MSExchangeSA
+	
+	     4. Locate the following key in the registry:
+	
+	  HKEY_LOCAL_MACHINE/SOFTWARE/Microsoft/Exchange
+	
+	     5. Delete Exchange. When the following message is displayed
+	
+	  Registry Editor will delete the currently selected key and all its subkeys.
+	
+	        Click Yes.
+	
+	     6. Locate the following key in the registry:
+	
+	  HKEY_LOCAL_MACHINE/SOFTWARE/Microsoft/EDB
+	
+	     7. Delete EDB. When the following message is displayed
+	
+	  Registry Editor will delete the currently selected key and all its subkeys.
+	
+	        Click Yes.
+	
+	  d. Restart the server.
+	
+	4. Reinstall Exchange Server by using a newly created service account. Be sure
+	  to install Exchange Server by using the exact same organization and site name
+	  that you used in the previous installation (if the organization and site
+	  names are not exactly the same, you cannot use the Priv.edb and Pub.edb
+	  databases from the previous installation).
+	
+	5. If you were previously running Exchange Server 5.5 Service Pack 3, when the
+	  installation is finished apply Exchange Server 5.5 Service Pack 3.
+	
+	6. Delete all of the items (.edb files and all .log and .chk files) in the
+	  Exchsrvr\Mdbdata folder, and copy the original Priv.edb and Pub.edb databases
+	  (from previous installation) to the Mdbdata folder.
+	
+	7. Start the Exchange Server Information Store service.
+	
+	  NOTE: If the following error message is displayed
+	
+	  Windows could not start the Microsoft Exchange Information Store on Local
+	  Computer. For more information, review the System Event log. If this is a
+	  non-Microsoft service, contact the service vendor, and refer to
+	  service-specific error code 1011.
+	
+	  run the "isinteg -patch" (without the quotation marks) command at a command
+	  prompt in the Exchsrvr\Bin folder, and then restart the Exchange Server
+	  Information Store service.
+	
+	8. Start the Exchange Server Administrator program and in the left pane, locate
+	  the server name of the server on which you are installing Exchange Server.
+	
+	9. Click the server name, and click Properties on the File menu.
+	
+	10. Click the Advanced tab, and then click Consistency Adjuster.
+	
+	  NOTE: This creates entries in the Exchange Server directory for each mailbox
+	  in the Priv.edb database.
+	
+	11. In the DS/IS Consistency Adjuster dialog box, under Private Information
+	  Store, click to select the first two check boxes.
+	
+	12. Under Filter, click to select the "All inconsistencies" check box, and then
+	  click OK.
+	
+	13. When the following message is displayed:
+	
+	  The DS/IS consistency adjuster will take ownership and change permissions on
+	  all public folders from unknown sites; the implications should be fully
+	  understood before continuing this operation. Choose Help for a more detailed
+	  explanation.
+	
+	  click OK.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : exc4 exc5 exc55 
+	Technology        : kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+	Version           : WINDOWS:2000; winnt:4.0,5.0,5.5
+	Issue type        : kbprb
+	
+	=============================================================================
+	

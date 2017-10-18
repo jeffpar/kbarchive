@@ -1,0 +1,135 @@
+---
+layout: page
+title: "Q267984: HOWTO: Create and Use Custom Styles with Automation"
+permalink: kb/267/Q267984/
+---
+
+## Q267984: HOWTO: Create and Use Custom Styles with Automation
+
+	Article: Q267984
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:2000,2000, Service Release 1 (SR-1),6.0,97
+	Operating System(s): 
+	Keyword(s): kbole kbAutomation kbvfp600 kbGrpDSFox kbDSupport kbWord97 kbword2000
+	Last Modified: 06-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 6.0, used with:
+	   - Microsoft Word 2000 Service Release 1 (SR-1) 
+	   - Microsoft Word for Windows 95 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	
+	Styles in Word make it easy to apply the same formatting to different parts of a
+	document. A style contains information about the font, paragraph formatting,
+	borders, shading, tabs, and more. There are a number of styles built into Word,
+	but it's also possible to define custom styles.
+	
+	Every style is based on another style (the "base style") and inherits its
+	characteristics from that style. To customize the new style, change its
+	properties.
+	
+	Once you create a custom style, any changes to the base style are reflected in
+	it.
+	
+	MORE INFORMATION
+	================
+	
+	To create a new style:
+	
+	1. Create an instance of the Word application server:
+	
+	  oWord = CreateObject("Word.Application")
+	
+	2. Create a new document:
+	
+	  oDocument = oWord.Documents.Add()
+	
+	Alternatively, you can open an existing document using the Open method, passing
+	the full path to the document:
+	
+	  oDocument = oWord.Documents.Open(<full path>)
+	
+	3. Use the Add method of the Document's Styles collection, passing the name for
+	  the new style and a constant that indicates whether the new style is a
+	  paragraph style (wdStyleTypeParagraph = 1) or a character style
+	  (wdStyleTypeParagraph = 2):
+	
+	  oStyle = oDocument.Styles.Add(<style name>, <style type>)
+	
+	4. Set the base style for the new style to an existing style:
+	
+	  oStyle.BaseStyle = oDocument.Styles[ <style name> | <built-in style constant> ]
+	
+	5. Set properties of the new style that are different than those of the base
+	  style.
+	
+	6. To apply the new style to a range in the document, refer to it by the name
+	  assigned when it was created or by using an existing object reference:
+	
+	  oRange.Style = oDocument.Styles[ <style name> ]
+	
+	-or-
+	
+	  oRange.Style = oStyle
+	
+	7. When the document is saved, the new style is saved with it.
+	
+	This example creates a new paragraph style based on the built-in Normal style.
+	The new style is identical to the Normal style, except that it is italic and
+	centered. Then, the new style is used.
+	
+	  #DEFINE wdStyleTypeParagraph 1
+	  #DEFINE wdStyleNormal -1
+	  #DEFINE wdAlignParagraphCenter 1
+	  #DEFINE wdCollapseEnd 0
+	
+	  LOCAL oWord, oDocument, oItalicStyle
+	
+	  * Instantiate Word and create a document
+	  oWord = CreateObject("Word.Application")
+	  oWord.Visible = .T.
+	
+	  oDocument = oWord.Documents.Add()
+	
+	  * Create a new style
+	  oItalicStyle = ;
+	     oDocument.Styles.Add("CenteredItalic", wdStyleTypeParagraph)
+	
+	  * Set style properties
+	  WITH oItalicStyle
+	     .BaseStyle = oDocument.Styles[ wdStyleNormal ]
+	     .Font.Italic = .T.
+	     .ParagraphFormat.Alignment = wdAlignParagraphCenter
+	  ENDWITH
+	
+	  * Add some text in the new style
+	  oRange = oDocument.Range(0, 0)
+	  oRange.Style = oItalicStyle
+	  oRange.InsertAfter("This uses the CenteredItalic style")
+	  oRange.InsertParagraphAfter()
+	  oRange.Collapse( wdCollapseEnd )
+	
+	  * Now add some text in the Normal style
+	  oRange.End = oRange.End + 1 && so Style change won't affect previous text
+	  oRange.Style = oDocument.Styles[ wdStyleNormal ]
+	  oRange.InsertAfter("This uses the Normal style")
+	  oRange.InsertParagraphAfter()
+	
+	  RETURN 
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbole kbAutomation kbvfp600 kbGrpDSFox kbDSupport kbWord97 kbword2000 
+	Technology        : kbVFPsearch kbAudDeveloper
+	Version           : WINDOWS:2000,2000, Service Release 1 (SR-1),6.0,97
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

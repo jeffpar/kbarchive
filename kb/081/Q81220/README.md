@@ -1,0 +1,111 @@
+---
+layout: page
+title: "Q81220: How to Use More than One Type of Font in Picture Box"
+permalink: kb/081/Q81220/
+---
+
+## Q81220: How to Use More than One Type of Font in Picture Box
+
+	Article: Q81220
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 1.0,2.0,3.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 02-NOV-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Professional Edition for Windows, versions 2.0, 3.0 
+	- Microsoft Visual Basic Standard Edition for Windows, versions 1.0, 2.0, 3.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The text box control in Visual Basic for Windows displays the entire text box
+	with either the FontUnderline, FontBold, FontItalic, or FontStrikethru fonts,
+	but with only one font at a time. This behavior is by design.
+	
+	However, you may want to display a box with all four fonts at the same time with
+	separate words displayed in different fonts. Below is an example of displaying
+	the fonts FontBold, FontItalic, FontStrikethru, and FontUnderline fonts in a
+	picture box control in Visual Basic for Windows to work around the limitation in
+	text boxes.
+	
+	MORE INFORMATION
+	================
+	
+	The example below is one way of simulating a text box's contents in a variety of
+	fonts.
+	
+	1. Run Visual Basic for Windows, or from the File menu, choose New Project
+	  (press ALT, F, N) if Visual Basic for Windows is already running. Form1 is
+	  created by default.
+	
+	2. Place a picture box on Form1, and double-click the picture box to open the
+	  Code window. Add the following code to the Click event. Notice that the font
+	  properties are a Boolean type (that is, -1 = True and 0 = False).
+	
+	  Sub Picture1_Click ( )
+	
+	  '** The word "Hello, " will be in FontBold.
+	          temp$ = "Hello, "
+	          Picture1.FontBold = -1
+	          Picture1.FontItalic = 0
+	          Picture1.FontStrikethru = 0
+	          Picture1.FontUnderline = 0
+	          Picture1.Print temp$
+	
+	  '** Need to program the next location to print in FontItalic.
+	          Picture1.Currentx = 500
+	          Picture1.Currenty = 0
+	          Picture1.FontBold = 0
+	          Picture1.FontItalic = -1
+	          Picture1.FontStrikethru = 0
+	          Picture1.FontUnderline = 0
+	          temp$ = " there!"
+	          Picture1.Print temp$
+	
+	  '** Need to program location to print in FontStrikethru.
+	          Picture1.Currentx = 1100
+	          Picture1.Currenty = 0
+	          Picture1.FontBold = 0
+	          Picture1.FontItalic = 0
+	          Picture1.FontUnderline = 0
+	          Picture1.FontStrikethru = -1
+	          temp$ = "This"
+	          Picture1.Print temp$
+	
+	  '** Need to program location to print in FontUnderline.
+	          Picture1.Currentx = 0
+	          Picture1.Currenty = 200
+	          Picture1.FontBold = 0
+	          Picture1.FontItalic = 0
+	          Picture1.FontStrikethru = 0
+	          Picture1.FontUnderline = -1
+	          temp$ = "is a test."
+	          Picture1.Print temp$
+	
+	  End Sub
+	
+	Notice that the CurrentX and CurrentY properties are used to place the text at a
+	certain location in the picture box. This example is rather simple, but its
+	purpose is to give you an idea on how to simulate a text box in Visual Basic for
+	Windows to be more flexible with a mix of the different types of fonts
+	available.
+	
+	
+	The same method can be used to print more than one type of font to a printer. To
+	do this, modify the Picture1_Click Sub procedure by changing Picture1. to
+	Printer.
+	
+	Additional query words: 2.00 3.00
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB300Search kbVB300 kbVB200
+	Version           : :1.0,2.0,3.0
+	
+	=============================================================================
+	

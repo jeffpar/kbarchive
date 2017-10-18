@@ -1,0 +1,240 @@
+---
+layout: page
+title: "Q268309: HOWTO: Associate an Icon with an eVB Application"
+permalink: kb/268/Q268309/
+---
+
+## Q268309: HOWTO: Associate an Icon with an eVB Application
+
+	Article: Q268309
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 3.0
+	Operating System(s): 
+	Keyword(s): kbOSWinCEsearch kbGrpDSVB kbDSupport kbVBM300
+	Last Modified: 21-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft eMbedded Visual Basic, version 3.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes how to distribute an eMbedded Visual Basic (eVB)
+	application and associate a custom icon with it.
+	
+	MORE INFORMATION
+	================
+	
+	eVB applications are not compiled to executable files but to binary files that
+	the Pvbload.exe executable interprets. Thus, eVB applications use the icon from
+	Pvbload.exe in the same way that Microsoft Excel worksheets use the icon from
+	Excel.exe. To allow for a customized application icon, you must create an
+	eMbedded Visual C++ (eVC) application that only shells out to the operating
+	system to run the application. The operating system recognizes that there is a
+	file association with Pvbload.exe.
+	
+	You must perform four main procedures to distribute an eMbedded Visual Basic
+	application with a custom icon:
+	
+	1. Associate the icon with the eVB application.
+	2. Distribute the eVC application that is required for step 1 with the eVB
+	  distribution package.
+	3. Place the eVC application that is required for step 1 in the Start menu.
+	4. Distribute all files successfully to multiple CPUs.
+	
+	Step-by-Step Example
+	--------------------
+	
+	Create eVB Application:
+	
+	1. Start a new Windows CE project in eMbedded Visual Basic for your preferred
+	  target platform.
+	
+	2. From the File menu, click Make Project1.vb, and compile the project.
+	
+	3. Save the project.
+	
+	4. Close the project, and exit eVB.
+	
+	Create eVC Application:
+	
+	1. Start eMbedded Visual C++.
+	
+	2. From the File menu, click New.
+	
+	3. On the Project tab, click WCE Application, and provide a project name. In
+	  this example, the project is named StubLauncher.
+	
+	4. When prompted, select the option to create a simple Windows CE application.
+	
+	5. Paste the following code over the existing WinMain function:
+	
+	  // StubLauncher.cpp : Defines the entry point for the application.
+	  // 
+	
+	  #include "stdafx.h"
+	  #include "shellapi.h"
+	
+	  LPTSTR szAppName = _T("Project1.vb");
+	  LPTSTR szStubName = _T("StubLauncher.exe");
+	      
+	  int WINAPI WinMain(	HINSTANCE hInstance,
+	  			HINSTANCE hPrevInstance,
+	  			LPTSTR    lpCmdLine,
+	  			int       nCmdShow)
+	  {
+	     long retVal;
+	     TCHAR szPath[128];
+	     LPTSTR Instr;
+	     LPTSTR szVerb = _T("open");
+	
+	     //Start the Visual Basic application and exit.
+	     SHELLEXECUTEINFO lpExecInfo;
+	     memset(&lpExecInfo, 0, sizeof(SHELLEXECUTEINFO));
+	
+	     lpExecInfo.cbSize = sizeof(SHELLEXECUTEINFO);
+	
+	     // Get the path to the current directory.
+	     retVal = GetModuleFileName(hInstance, szPath, 128);
+	     if (retVal) {
+	        // Remove the stubs file name to get just the path.
+	        Instr = wcsstr(szPath, szStubName);
+	
+	        if (Instr != NULL)
+	           // Add the target file to the resulting path.
+	           wcscpy(Instr, szAppName);
+	  		
+	        //MessageBox(0, szPath, _T("This is the path I got"), 0);
+	
+	        // Now use this to start the application.
+	        lpExecInfo.lpFile = szPath;
+	        
+	        lpExecInfo.nShow = SW_SHOWNORMAL;
+	        lpExecInfo.fMask = SEE_MASK_NOCLOSEPROCESS;
+	        lpExecInfo.lpVerb = szVerb ;
+	  		
+	        ShellExecuteEx(&lpExecInfo);
+	        return(0);
+	     }
+	
+	     return(-1);
+	  }
+	
+	6. Make sure that the necessary platform is selected in the WCE Configuration
+	  toolbar.
+	
+	7. From the Insert menu, click Resource, and add or import an icon for your
+	  application.
+	
+	8. Make sure that the resource window for your icon is open.
+	
+	9. Save the resource as an .rc file.
+	
+	10. From the Build menu, click Batch Build, and compile for the necessary
+	  platforms.
+	
+	11. Save all files, and exit eVC.
+	
+	Prepare and Configure eVB Distribution Package:
+	
+	1. Start the Application Install Wizard. Use the steps in the following
+	  Microsoft Knowledge Base article to complete steps 1 through 6 of the wizard:
+	
+	  Q194837 HOWTO: Distribute a Visual Basic Windows CE Application
+	
+	2. In Step 7 of the Application Install Wizard, select the CPU-specific .exe
+	  file that you want to distribute with the eVB application.
+	
+	3. Complete the Application Install Wizard.
+	
+	4. Open the .inf file, and make the following changes:
+	
+	  a. In the [DefaultInstall] section, change the value for CEShortcuts from
+	     "Shortcuts" to "AddlShortcut" (or whatever name you choose) as follows:
+	
+	[DefaultInstall]
+	CopyFiles=Files.App, Files.Windows
+	CEShortcuts=AddlShortcut
+	
+	  b. Add a new [AddlShortcut] section as follows:
+	
+	[AddlShortcut]
+	%AppName%,0,"StubLauncher.exe"
+	
+	  c. In the [DestinationDirs] section, add the following line:
+	
+	AddlShortcut=,%CE11%
+	
+	NOTE On PocketPC devices, add the following line:
+	
+	AddlShortcut=,%CE2%\Start Menu
+	
+	5. Save and close the .inf file.
+	
+	6. Use the command line that is provided in the Readme.txt file to repackage the
+	  .cab file. The Readme.txt file is in the same location as the .inf file.
+	
+	7. Replace the original .cab file in the CD1 directory with the newly compiled
+	  .cab file.
+	
+	Steps to Accommodate Multiple CPUs:
+	
+	After you complete the preceding steps to prepare the distribution package,
+	follow these steps:
+	
+	1. Copy the compiled CPU-specific .exe files to the CPU-specific directories
+	  where the package was created.
+	
+	2. Remove the compiled StubLauncher.exe from the App folder (which is in the
+	  same location where the package was created).
+	
+	3. Open the .inf file, and remove StubLauncher.exe from the [SourceDisksFiles]
+	  section.
+	
+	4. Add StubLauncher.exe to all of the CPU sections. For example:
+	
+	[SourceDisksFiles.SH 3 (1k) v3.00]
+	[SourceDisksFiles.Mips 4000 (4k) v3.00]
+	
+	5. Change the disk-ordinal to the appropriate setting. For example, if the
+	  [SourceDisksNames.SH 3 (1k) v3.00] section appears as follows:
+	
+	  3=,"SH 3 (1k) v3.00 Files",,SH 3 (1k) v3.00
+	
+	  modify the [SourceDisksFiles.SH 3 (1k) v3.00] section as follows:
+	
+	StubLauncher.exe=3
+	
+	6. Use the command line that is provided in the Readme.txt file to repackage the
+	  .cab file. The Readme.txt file is in the same location as the .inf file.
+	
+	7. Replace the original .cab in the CD1 directory with the newly compiled .cab
+	  file.
+	
+	Now you should be able to test the installation package successfully.
+	
+	REFERENCES
+	==========
+	
+	For more information, see Chapter 21 of Microsoft Windows CE Programmer's
+	Guide.
+	
+	See also the following article on the following Microsoft Mobile Devices Web
+	site:
+	
+	  "Assign an Icon to an eMbedded Visual Basic Application"
+	  http://www.microsoft.com/pocketpc/stepbystep/vbicon.asp
+	
+	Additional query words: icon wce vbce evb evc shortcut
+	
+	======================================================================
+	Keywords          : kbOSWinCEsearch kbGrpDSVB kbDSupport kbVBM300 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword2 kbVBeMbSearch kbVBeMb300
+	Version           : :3.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

@@ -1,0 +1,220 @@
+---
+layout: page
+title: "Q319306: FP: Web Site Message Says the Mail Server Is Unavailable"
+permalink: kb/319/Q319306/
+---
+
+## Q319306: FP: Web Site Message Says the Mail Server Is Unavailable
+
+	Article: Q319306
+	Product(s): Word Front Page
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbdta
+	Last Modified: 03-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- FrontPage 2002 Server Extensions from Microsoft 
+	- FrontPage 2000 Server Extensions from Microsoft 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When users of your Web site try to submit e-mail messages by clicking a form on
+	your Web site, they may receive an error message that says that the mail server
+	is unavailable.
+	
+	CAUSE
+	=====
+	
+	This behavior may occur if you used FrontPage Server Extensions to configure
+	your Web site mail server and your mail server is unavailable. All attempts to
+	send e-mail from the site will be unsuccessful until the mail server becomes
+	available.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, configure the FrontPage Server Extensions to use the
+	local Simple Mail Transfer Protocol (SMTP) Virtual Server that can be installed
+	with Internet Information Server (IIS) versions 4.0 and 5.0.
+	
+	You can configure the SMTP Virtual Server to forward the e-mail to your primary
+	mail server. If the mail server is unavailable, the local SMTP Virtual Server
+	queues the e-mail and tries to forward it to your primary mail server at
+	configurable intervals.
+	
+	To configure the Web site to use the local SMTP Virtual Server to relay e-mail to
+	your mail server, follow these steps in the order in which they are presented.
+	
+	Part 1: Configure the IIS Web Site to Use the Local SMTP Server
+	---------------------------------------------------------------
+	
+	Use one of the following procedures, as appropriate for your version of IIS.
+	
+	If Your Computer Runs IIS 5.0:
+	
+	1. Click Start, point to Programs, point to Administrative Tools, and then click
+	  Internet Services Manager.
+	
+	2. Double-click the computer node.
+	
+	3. Right-click the Web site that hosts the e-mail form, and then click
+	  Properties.
+	
+	4. Click the Server Extensions tab, and then click the Settings button next to
+	  "Specify how mail should be sent".
+	
+	5. In the "SMTP mail server" box, type the IP address for the local SMTP mail
+	  server, click OK, and then click OK.
+	
+	6. Quit Internet Services Manager.
+	
+	If Your Computer Runs IIS 4.0:
+	
+	1. Click Start, point to Programs, point to "Windows NT 4.0 Option Pack", click
+	  "Microsoft Internet Information Server", and then click Internet Service
+	  Manager.
+	
+	2. Double-click the computer node.
+	
+	3. Right-click the Web site that hosts the e-mail form, and then click
+	  Properties.
+	
+	4. Click the Server Extensions 2002 tab, and then click Settings.
+	
+	5. In the "SMTP mail server" box, type the IP address for the local SMTP mail
+	  server.
+	
+	6. In the "From address" and "Reply-to address" boxes, type the appropriate
+	  text, and then click Submit.
+	
+	7. Close the Change Configuration Settings window.
+	
+	8. Close all dialog boxes, and then quit Internet Service Manager.
+	
+	Part 2: Configure the IIS SMTP Server to Relay the E-mail
+	---------------------------------------------------------
+	
+	Use one of the following procedures, as appropriate for your version of IIS.
+	
+	If Your Computer Runs IIS 5.0:
+	
+	1. Click Start, point to Programs, point to Administrative Tools, and then click
+	  Internet Services Manager.
+	
+	2. Double-click the computer node.
+	
+	3. Right-click the SMTP virtual server, and then click Properties.
+	
+	4. Click the Access tab, and then click Connection.
+	
+	5. Click "All except the list below".
+	
+	6. If the Computer list contains any entries, click Remove until the list is
+	  empty, and then click OK.
+	
+	7. Click Relay.
+	
+	8. Click "All except the list below".
+	
+	9. If the Computer list contains any entries, click Remove until the list is
+	  empty.
+	
+	10. Click to select the "Allow all computers which successfully authenticate to
+	  relay, regardless of the list above" check box, and then click OK.
+	
+	11. Click the Delivery tab, and then click Advanced.
+	
+	12. Verify that the value in the "Fully-qualified domain name" box is correct.
+	
+	13. In the "Smart host" box, type the name of your mail server, and then click
+	  OK.
+	
+	14. Quit Internet Services Manager.
+	
+	If Your Computer Runs IIS 4.0:
+	
+	1. Click Start, point to Programs, point to "Windows NT 4.0 Option Pack", click
+	  "Microsoft Internet Information Server", and then click Internet Service
+	  Manager.
+	
+	2. Double-click the computer node.
+	
+	3. Right-click Default SMTP Site, and then click Properties.
+	
+	4. Click the Directory Security tab, and then click the Edit button next to "IP
+	  Address and Domain Name Restrictions".
+	
+	5. Click Granted Access.
+	
+	6. If the "Except those listed below" list contains any entries, click Remove
+	  until the list is empty, and then click OK.
+	
+	7. Click the Edit button next to Relay Restrictions.
+	
+	8. In the Relay Restrictions dialog box, click "Allowed to relay".
+	
+	9. If the "Except those listed below" list contains any entries, click Remove
+	  until the list is empty.
+	
+	10. Click to select the "Allow any computer that successfully authenticates to
+	  relay" check box, and then click OK.
+	
+	11. Click the Delivery tab, and verify that the value in the "Fully qualified
+	  domain name" box is correct.
+	
+	12. In the "Smart host" box, type the name of your mail server, and then click
+	  OK.
+	
+	13. Quit Internet Service Manager.
+	
+	Part 3: Configure the Form Properties
+	-------------------------------------
+	
+	For instructions about how to set the form properties for e-mail submissions,
+	click the article number below to view the article in the Microsoft Knowledge
+	Base:
+	
+	  Q196461 How to Set Up a Form to Post Results by E-mail
+	
+	MORE INFORMATION
+	================
+	
+	Some of the benefits to using the SMTP Virtual Server to relay e-mail from the
+	site to the mail server are the following:
+	
+	- Mail Handling Options: The Web site administrator can modify outbound and
+	  local retry intervals and can delay notification and expiration time-out
+	  messages.
+	
+	- Non-Delivery Email: The Web site administrator can receive notification that
+	  the e-mail server is unavailable, instead of being informed by a user.
+	
+	- Non-Delivery Report (NDR): If a message cannot be delivered, an NDR can be
+	  returned to the sender and copied to other SMTP addresses for review by the
+	  Web site administrator. NDRs are also placed in the Badmail folder for
+	  administrative review and troubleshooting.
+	
+	NOTE: You can configure all of these options on the Messages tab of the Default
+	SMTP Virtual Server.
+	
+	For additional information about how to use FrontPage Server Extensions to send
+	e-mail, click the article number below to view the article in the Microsoft
+	Knowledge Base:
+	
+	  Q305675 How to Use Server Side Settings to Use E-Mail Features
+	
+	Additional query words: front page prb FPSE
+	
+	======================================================================
+	Keywords          : kbdta 
+	Technology        : kbFrontPageSearch kbFrontPageServXSearch kbZNotKeyword2 kbFrontPage2000Search kbFrontPage2002Search kbFrontPage2000ServX kbFrontPage2002ServX
+	Version           : :
+	Issue type        : kbprb
+	
+	=============================================================================
+	

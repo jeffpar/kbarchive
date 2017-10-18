@@ -1,0 +1,244 @@
+---
+layout: page
+title: "Q170756: Available Switch Options for Windows NT Boot.ini File"
+permalink: kb/170/Q170756/
+---
+
+## Q170756: Available Switch Options for Windows NT Boot.ini File
+
+	Article: Q170756
+	Product(s): Microsoft Windows NT
+	Version(s): 3.51,4.0
+	Operating System(s): 
+	Keyword(s): kbsetup
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation versions 3.51, 4.0 
+	- Microsoft Windows NT Server versions 3.51, 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	When you start Windows NT, there are many different switches that can be added
+	to the Boot.ini file that will modify the way Windows NT loads. For additional
+	information about the Boot.ini file, click the article number below to view the
+	article in the Microsoft Knowledge Base:
+	
+	  Q102873 Boot.ini and ARC Path Naming Conventions and Usage
+	
+	
+	MORE INFORMATION
+	================
+	
+	The following are the different switches that can be added to the Boot.ini
+	file:
+	
+	/3GB
+	----
+	
+	Enables user-mode programs to access 3 GB of memory instead of the usual 2 GB
+	that Windows NT normally allocates to user-mode programs. It moves the starting
+	point of kernel memory to 3 GB. This switch is used only in the Windows NT
+	Server Enterprise Edition of Windows NT with Service Pack 3.
+	
+	For additional information, click the article number below to view the article in
+	the Microsoft Knowledge Base:
+	
+	  Q171793 Information on Application Use of 4GT RAM Tuning
+	
+	/BASEVIDEO
+	----------
+	
+	The /basevideo switch forces the system into standard 640x480 16-color VGA mode.
+	This is used to enable the system to load if the wrong video resolution or
+	refresh rate had been selected.
+	
+	For more information, please see the following Microsoft Knowledge Base article:
+	
+	  Q126690 Windows NT 4.0 Setup Troubleshooting Guide
+	
+	/BAUDRATE=nnnn
+	--------------
+	
+	This switch sets baudrate of the debug port. If you do not set the baud rate, the
+	default baud rate is 19,200. 9,600 is the normal rate for remote debugging over
+	a modem. This also enables the /debug switch. For example, /BAUDRATE=9600
+	
+	For more information on modem configuration, please see the following Microsoft
+	Knowledge Base article:
+	
+	  Q148954 How to Set Up a Remote Debug Session Using a Modem
+	
+	For more information on null modem configuration, please see the following
+	Microsoft Knowledge Base article:
+	
+	  Q151981 How to Set Up a Remote Debug Session Using a Null Modem Cable
+	
+	/CRASHDEBUG
+	-----------
+	
+	Enables the COM port for debugging in the event that Windows NT crashes. This
+	enables you to use the COM port for normal operations while Windows NT is
+	running, but converts the port to a debug port if Windows NT crashes (to enable
+	remote debugging).
+	
+	For more information, please see the following Microsoft Knowledge Base article:
+	
+	  Q151981 How to Set Up a Remote Debug Session Using a Null Modem Cable
+	
+	/DEBUG
+	------
+	
+	The /debug switch enables the kernel debugger. This enables live remote debugging
+	of a Windows NT system through the COM ports. Unlike /crashdebug, /debug uses
+	the COM port whether or not you are debugging.
+	
+	For more information on remote debugging, please see the following Microsoft
+	Knowledge Base article:
+	
+	  Q121543 Setup for Remote Debugging
+	
+	/DEBUGPORT=comx
+	---------------
+	
+	The /debugport=comx switch selects a COM port for the debug port (com1, com2,
+	com3...) DEBUGPORT defaults to COM2 if it exists, otherwise it uses COM1. This
+	also enables the /debug switch. For example, /DEBUGPORT=COMx where x is the com
+	port.
+	
+	For more information, please see the following Microsoft Knowledge Base article:
+	
+	  Q151981 How to Set Up a Remote Debug Session Using a Null Modem Cable
+	
+	/HAL=filename
+	-------------
+	
+	Enables you to define the actual hardware abstraction layer (HAL) to be loaded at
+	startup. This switch is useful in trying out a different HAL before renaming it
+	to hal.dll. This switch is also useful when you want to try booting between
+	multiprocessor and single processor mode when used in conjunction with the
+	/kernel switch. For example, /HAL=halmps.dll this loads the Halmps.dll in the
+	System32 directory.
+	
+	/KERNEL=filename
+	----------------
+	
+	The /kernel=filename switch enables you to define the actual KERNEL to be loaded
+	at startup. This is useful in switching between a debug enabled kernel full of
+	debugging code and a regular kernel. It is also useful for forcing Windows NT to
+	load a specific kernel. For example, /KERNEL=ntkrnlmp.exe. This switch command
+	loads the Ntkrnlmp.exe in the System32 directory.
+	
+	/MAXMEM=nn
+	----------
+	
+	The /maxmem=nn switch selects the amount of memory Windows NT detects and can use
+	at startup. This setting should never be set to less than 12. This option is
+	good for checking for bad memory chips. For example, /MAXMEM=12
+	
+	For more information, please see the following Microsoft Knowledge Base article:
+	
+	  Q108393 MAXMEM Option in Windows NT Boot.ini File
+	
+	/NODEBUG
+	--------
+	
+	This switch disables the kernel debugger. The switch turns off debugging. This
+	can cause a blue screen if a piece of code has a debug hardcoded breakpoint in
+	its software.
+	
+	/NOSERIALMICE:comx
+	------------------
+	
+	This switch disables the mouse port check for this com port. For example,
+	/noserialmice:comx, where X is the number of the serial port. Ports may be
+	separated with commas to disable more than one port. If no serial port is given
+	then all ports are disabled for mouse devices.
+	
+	This is used with uninterruptible power supply (UPS), like those from American
+	Power Conversion brand (APC), that connects to a serial port. If this option is
+	not available when Windows NT starts, and Windows NT tries to detect a mouse on
+	this port, then the UPS will accidentally start its shutdown mode.
+	
+	For more information, please see the following Microsoft Knowledge Base article:
+	
+	  Q131976 How to Disable Detection of Devices on Serial Ports
+	
+	/NOLOWMEM
+	---------
+	
+	This loads the entire system (drivers, pools, programs, etc.) above 4 GB. This
+	only works for Windows 2000 Advanced Server and Datacenter Server.
+	
+	/NUMPROC=
+	---------
+	
+	This switch sets the number of processors that Windows NT will run at startup.
+	This will help test out performance problems and defective CPUs. For example,
+	/NUMPROC=3
+	
+	/PAE
+	----
+	
+	Enables support for 8 GB of memory for Windows 2000 Advanced Server and for 32 GB
+	of memory for Windows 2000 Datacenter Server.
+	
+	/PCILOCK
+	--------
+	
+	This switch prevents the HAL from moving anything on the PCI bus. The I/O and
+	Memory resources are to be left exactly as they were set by the BIOS.
+	
+	For additional information, click the article number below to view the article in
+	the Microsoft Knowledge Base:
+	
+	  Q148501 Preventing PCI Resource Conflicts on Intel-Based Computers
+	
+	/SOS
+	----
+	
+	The /sos switch causes the loader to print the name of loaded modules. When
+	Windows NT comes up instead of displaying dots while the devices load, Windows
+	NT will show the actual names of the drivers as they load.
+	
+	For more information, please see the following Microsoft Knowledge Base article:
+	
+	  Q99743 Purpose of the Boot.ini File
+	
+	/ONECPU
+	-------
+	
+	This switch is part of Compaq's HAL. The switch tells Windows NT to use only 1
+	CPU at startup. This will enable you to run a single CPU in a multikernel
+	configuration. For example, /ONECPU.
+	
+	For more information on other Boot.ini switches that do not relate to Windows NT,
+	please see the following Microsoft Knowledge Base article:
+	
+	  Q157992 How to Triple Boot to Windows NT, Windows 95, and MS-DOS
+	
+	/WIN95
+	------
+	
+	The /win95 switch loads bootsec.dos.
+	
+	/WIN95DOS
+	---------
+	
+	The /wind95dos switch loads bootsec.w40.
+	
+	
+	Additional query words: boot switches
+	
+	======================================================================
+	Keywords          : kbsetup 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+	Version           : :3.51,4.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

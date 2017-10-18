@@ -1,0 +1,119 @@
+---
+layout: page
+title: "Q195836: PRB: Visual C++ Integration: &quot;Specify Working Directory&quot; Dialog"
+permalink: kb/195/Q195836/
+---
+
+## Q195836: PRB: Visual C++ Integration: &quot;Specify Working Directory&quot; Dialog
+
+	Article: Q195836
+	Product(s): Microsoft SourceSafe
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbinterop kbSSafe600 kbVC600
+	Last Modified: 18-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual SourceSafe for Windows, version 6.0 
+	- Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you add a project to Visual SourceSafe in the Visual C++ integrated
+	development environment a dialog box appears that prompts you to specify a
+	working directory.
+	
+	CAUSE
+	=====
+	
+	The Visual C++ project contains a file that is not in the Visual C++ project
+	directory (the directory containing the .dsp file) or a subdirectory underneath
+	it.
+	
+	RESOLUTION
+	==========
+	
+	To work around this problem, do one of the following:
+	
+	- Keep all files in the Visual C++ project either in the project directory or
+	  in a subdirectory underneath it.
+	
+	- Create a project structure in Visual SourceSafe that mirrors the directory
+	  structure on your hard drive before adding the Visual C++ project to Visual
+	  SourceSafe. In this situation, the Specify Working Directory dialog box
+	  appears, but the second dialog box described in the MORE INFORMATION section
+	  below does not appear.
+	
+	STATUS
+	======
+	
+	This behavior is by design.
+	
+	MORE INFORMATION
+	================
+	
+	By default, the Specify Working Directory dialog box suggests the Visual C++
+	project directory. After you click OK and choose to add all files in the Visual
+	C++ project to Visual SourceSafe, another dialog box appears with the following
+	message:
+	
+	  File <filename> could not be mapped to the SourceSafe project
+	  <project name>
+	
+	  Copy the file to <VC project directory> ?
+	
+	You only have the option of copying the file to the Visual C++ project directory,
+	which may not be the desired location if the Visual C++ project has a
+	subdirectory structure with different subdirectories for source files, header
+	files, and so forth. In this case, you need to copy or move the files into the
+	appropriate directories using Windows Explorer and then add them to the Visual
+	C++ project.
+	
+	The relative path in Visual C++ is listed in the "Persist as" field on the
+	General tab of the Source File Properties dialog box. This is the path that
+	Visual SourceSafe attempts to resolve relative to the .dsp file in its
+	database.
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Create a directory structure similar to the following:
+	
+	     C:\ 
+	         projects\ 
+	                   dsphome\ 
+	                   dspother\ 
+	
+	2. Create a file (for example, file1.cpp) in the dspother subdirectory.
+	
+	3. In Visual C++, create a project (for example, proj1.dsp) in the dsphome
+	  subdirectory.
+	
+	4. In the Visual C++ File View, add file1.cpp from step 2 to the .dsp.
+	
+	5. Add the .dsp to Visual SourceSafe, and create a new project to store the
+	  .dsp.
+	
+	RESULT: The Specify Working Directory dialog box appears.
+	
+	REFERENCES
+	==========
+	
+	For additional information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q164684 PRB: VFP/VSS File Could Not Be Mapped to SourceSafe Project
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbinterop kbSSafe600 kbVC600 
+	Technology        : kbVCsearch kbSSafeSearch kbAudDeveloper kbVC600 kbVC32bitSearch kbSSafe600
+	Issue type        : kbprb
+	
+	=============================================================================
+	

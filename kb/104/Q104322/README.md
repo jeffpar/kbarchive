@@ -1,0 +1,481 @@
+---
+layout: page
+title: "Q104322: How to Troubleshoot WFWG Network Connection Problems"
+permalink: kb/104/Q104322/
+---
+
+## Q104322: How to Troubleshoot WFWG Network Connection Problems
+
+	Article: Q104322
+	Product(s): Microsoft Windows 3.x Retail Product
+	Version(s): 3.1,3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 22-FEB-2002
+	
+	3.10
+	
+	WINDOWS
+	
+	kbnetwork kb3rdparty kbtshoot kbsetup
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows for Workgroups versions 3.1, 3.11 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	In a Microsoft Windows for Workgroups version 3.1 or 3.11 network, hardware- and
+	software-related problems can cause one or more computers to lose the ability to
+	browse or communicate with other computers. These problems range from no network
+	functionality at all to random errors when transmitting data across the
+	network.
+	
+	This article provides troubleshooting steps that you can use to diagnose and
+	resolve workstation communication problems in a Windows for Workgroups network.
+	Note that troubleshooting communication problems is not always a
+	straight-forward process. If one of the procedures outlined below doesn't work,
+	go on to the next until the problem is fixed. To increase your knowledge of the
+	major issues, you may want to read this entire article before you proceed. (This
+	may also reduce the time needed to solve the problem.)
+	
+	BEFORE YOU BEGIN
+	----------------
+	
+	Before proceeding with the troubleshooting steps, consider the following:
+	
+	- Has this configuration ever worked before, or did this just start happening?
+	  If it just started, what has changed between the time this configuration was
+	  working and the time it stopped working?
+	
+	- Has new hardware, cabling, or software been added? If this new addition is
+	  removed, does the problem go away?
+	
+	- Is this problem occurring on one computer, several, or all of them? If the
+	  problem is happening on all computers, it may be cabling or connector
+	  related. If the problem is happening on only one or a few computers, it may
+	  be software or hardware related.
+	
+	- Is the connection to the computer active? (If the card has transmit/ receive
+	  data lights, are they blinking?)
+	
+	IMPORTANT: Make backup copies of the following system configuration files before
+	doing any troubleshooting:
+	
+	  CONFIG.SYS
+	  AUTOEXEC.BAT
+	  PROTOCOL.INI
+	  SYSTEM.INI
+	  WIN.INI
+	
+	TROUBLESHOOTING STEPS
+	---------------------
+	
+	Check Setup and Startup:
+	
+	1. Check for any error messages while the computer is booting. To prevent error
+	  messages from scrolling off the screen, place a PAUSE statement at the
+	  beginning and the end of your AUTOEXEC.BAT file.
+	
+	2. Verify that the computer you are trying to view is in 386 enhanced mode and
+	  has sharing enabled. To check this, open Control Panel, choose Network, and
+	  make sure the Sharing Enabled box is selected.
+	
+	3. If this is a new network (that is, another network was NOT previously used),
+	  verify that the network card settings in the Network dialog box of Control
+	  Panel are correct.
+	
+	  If Windows for Workgroups was installed over Windows 3.1 and another network
+	  (such as Novell NetWare), it is possible that the Windows for Workgroups
+	  Setup program did not detect the previous network, which may be conflicting
+	  with Windows for Workgroups. You probably need to remove changes the previous
+	  network made to Windows configuration files (primarily the SYSTEM.INI file).
+	
+	4. Run CHKDSK on the drive where Windows is installed. If Windows system files
+	  are corrupted, Windows is unstable and may need to be reinstalled. If CHKDSK
+	  shows errors, repair the errors by running CHKDSK with the /F parameter or by
+	  using a disk utility to repair the files on the hard disk drive. If there is
+	  data corruption, it may be necessary to reinstall Windows for Workgroups.
+	
+	5. Clean boot each computer (that is, load only those drivers necessary to start
+	  the computer). For more information about performing a clean boot, query on
+	  the following words in the Microsoft Knowledge Base:
+	
+	  wfwg and clean boot
+	
+	Browse Other Machines:
+	
+	Attempt to view other computers on the network in File Manager. Choose the
+	Connect Net Drive button or choose Connect Net Drive from the Disk menu, and
+	type the computer name preceded by two backslashes, for example
+	
+	  \\<computername>
+	
+	in the Path box, and then press ENTER.
+	
+	If you can view other computers on the network by manually entering computer
+	names but you cannot view these computers during normal operations, consider the
+	following possible causes:
+	
+	- A "browse server" may not have been selected on the network. In Windows for
+	  Workgroups, a computer that maintains a list of Workgroups servers is
+	  selected. Sometimes this takes from 5 to 15 minutes to establish. If no
+	  browse server exists, you cannot browse servers on the network. Wait a few
+	  minutes and try again.
+	
+	  If the local workstation name (but no other computer name) appears in the Show
+	  Shared Directories On dialog box, the network card is probably configured
+	  correctly, but the problem may be in the network cabling or the other
+	  computer's network card configuration.
+	
+	The following possible cause applies to only Windows for Workgroup version 3.1
+	(all previous and following information applies to Windows for Workgroup version
+	3.1 and 3.11):
+	
+	- The entry for VBROWSE.386 may not be on the network= line in the [386Enh]
+	  section of the SYSTEM.INI file, or VBROWSE.386 may be missing from the
+	  Windows SYSTEM directory, or VBROWSE.386 may be corrupted. If the network=
+	  line is missing, use a text editor (such as Windows Notepad) to add the
+	  following to the [386Enh] section of the SYSTEM.INI:
+	
+	  network=VBROWSE.386
+	
+	  If necessary, reinstall the VBROWSE.386 file in the Windows SYSTEM
+	  subdirectory.
+	
+	Check Cabling:
+	
+	Make sure the network cabling is connected to both the computer you are using AND
+	the computer you are trying to communicate with. Most network problems are
+	caused by faulty cabling and/or connectors.
+	
+	Check the cabling and connectors on each workstation. If the network is using
+	Thin Ethernet, connect two computers with a single cable, T- connectors, and
+	terminators that are known to work properly. If the network is using
+	twisted-pair (RJ-45) cable, you must use a HUB or concentrator. Windows for
+	Workgroups does not support direct connections of RJ-45 cable between computers.
+	This check isolates possible cabling and/or connector problems that may not be
+	clearly visible.
+	
+	NOTE: It may also be necessary to reroute network cabling away from sources of
+	electrical interference (such as fluorescent lights).
+	
+	If the network topology is 10Base2 (Thin Ethernet or Thinwire), place a 50 Ohm
+	terminator on the network card. If the local computer name now appears in the
+	Show Shared Directories On dialog box (but not when the regular cabling is
+	attached), some type of cabling and/or connector problem exists.
+	Examples include an electrical short in the cabling, improper termination, and
+	using the wrong type of cabling. Check to ensure that each computer's T-
+	connector is secured on each network card, that 50 Ohm terminators are at each
+	end of the network, and that RG-58 cabling (not RG-59 or RG-62) is being used.
+	
+	If the local computer name does not appear in the Show Shared Directories On
+	dialog box, the problem is with the local network card's configuration (either
+	hardware or software). (Refer to "Test the Network Card," later in this
+	article.)
+	
+	If your wiring is 10Base2 (Thin Ethernet), a quick test to see if the cabling is
+	the problem is to remove the T-connector and place a terminator directly on the
+	BNC connector on the network card. If doing so causes the machine to be able to
+	"see itself" in File Manager, the problem is most likely with the existing
+	cabling.
+	
+	If placing a terminator on the network card doesn't identify the problem (or your
+	cabling is other than 10Base2), try the following steps:
+	
+	1. Change the IRQ and/or I/O address that the network card is using.
+	  To do so with software-configurable network cards:
+	
+	  a. Open Control Panel, then choose the Network icon.
+	
+	  b. Choose Adapters, then choose Setup.
+	
+	  c. Select a different IRQ and/or I/O address. You may need to try several
+	     selections if you do not know what your other hardware is configured to
+	     use.
+	
+	2. Reinstall the network card drivers as follows:
+	
+	  a. Clean boot your system. To do this, remove the Windows for Workgroups
+	     network drivers and any unnecessary entries from the CONFIG.SYS and
+	     AUTOEXEC.BAT files. For more information about a clean boot, query on the
+	     following words in the Microsoft Knowledge Base:
+	
+	  wfwg and clean boot
+	
+	  b. Rename the PROTOCOL.INI file, which is usually in the Windows directory
+	     unless you are using disk-compression software. If disk- compression
+	     software (such as SuperStor) is used, the PROTOCOL.INI file should be in
+	     the root directory.
+	
+	  c. Restart the computer and start Windows for Workgroups. You will receive at
+	     least one error message about the network drivers being loaded; this is to
+	     be expected.
+	
+	  d. In Control Panel, choose Network, then choose Adapters. The list of
+	     Currently Installed Adapters should be blank. Choose Add and select your
+	     network card from the list that appears.
+	
+	     NOTE: If the network card is hardware-configurable (with jumpers or DIP
+	     switches), the settings on this screen need to match the actual settings
+	     of the jumpers or switches on the card, unless they say "Automatic or
+	     unused."
+	
+	     If the card is software-configurable, you may need to select a different
+	     IRQ, I/O Address, or RAM Address to resolve a connectivity problem. For
+	     example, some disk controllers come configured using I/O 300h, which is
+	     also the default for some network cards.
+	
+	  e. Restart the computer and attempt to communicate with other computers on
+	     the network as described in "Browse Other Machines" above.
+	
+	3. Check the SYSTEM.INI file for the following lines and remark them out if they
+	  exist. To remark out a line from the SYSTEM.INI file, place a semicolon (;)
+	  at the beginning of the line.
+	
+	        InDOSPolling=True
+	        TimerCriticalSection=<any value>
+	        V86ModeLanas=<any value>
+	
+	4. Rebuild the Windows startup files (WIN.INI and SYSTEM.INI). For more
+	  information about rebuilding the SYSTEM.INI file, query on the following
+	  words in the Microsoft Knowledge Base:
+	
+	  system.sr_ and wfw
+	
+	  To rebuild the default WIN.INI file, expand WIN.SR_ from Windows for
+	  Workgroups Disk 3. To do this, place Disk 3 in a floppy disk drive, type the
+	  following, and press ENTER:
+	
+	  c:\windows>expand x:win.sr_ -r
+	
+	If Windows for Workgroups is still not working after you complete the steps
+	above, and it has worked previously, the next step is to reinstall Windows for
+	Workgroups in another directory.
+	
+	Reinstalling Windows for Workgroups in a clean directory should restore the
+	configuration to the point at which it was working when first installed. When
+	you start the Windows for Workgroups Setup program, choose Custom Setup, and
+	enter a new directory name, such as C:\WFWTEST.
+	
+	If Windows for Workgroups still is not working correctly, it is most likely that
+	some type of problem with your cabling, connectors, or network card exists.
+	
+	Test the Real Mode Redirector:
+	
+	The following test uses the Windows for Workgroups network components to generate
+	a NetBIOS name conflict on the network (each computer must have a unique
+	computer name on the network). To do this test, set two computers to the same
+	computer name and check to see if an error message is generated. If an error
+	message is displayed, the computers are communicating. If no error occurs, a
+	hardware problem exists on the network.
+	
+	1. To change the computer name, do one of the following:
+	   - Change the value for Computername in the Network dialog box of Control
+	     Panel.
+	
+	     -or-
+	
+	   - Edit the SYSTEM.INI file and change the setting for ComputerName= in the
+	     [Network] section to the name of another computer.
+	
+	2. Reboot the computer, then start the real mode redirector by typing the
+	  following at the MS-DOS command prompt:
+	
+	  net start workstation
+	
+	3. The following error should appear:
+	
+	  LANA 0 reported error 52: A duplicate workgroup or computer name exists on
+	  the network.
+	  For information about LANA numbers, type NET HELP 3280.
+	
+	  If the error message is displayed, the two computers are communicating.
+	
+	  If the error message is not displayed, a hardware problem exists with one or
+	  more of the following:
+	
+	   - The network card configuration is incorrect on one or more of the
+	     computers (hardware, input/output, IRQ, UMB conflict, and so on).
+	
+	   - One or more of the network cards is malfunctioning.
+	
+	   - There is some problem with the cabling or connectors. This could be an
+	     electrical short; interference; or a cable, connector, or terminator that
+	     is not the correct specification for your network.
+	
+	  To troubleshoot shorts and interference problems, either test the cabling with
+	  a testing device, or replace it with cables and connectors that are known to
+	  work correctly.
+	
+	  For more information about cable and connector specifications, query on the
+	  following words in the Microsoft Knowledge Base:
+	
+	  wfw and lan and cable and specifications
+	
+	4. Change the computer name back to its original, unique name.
+	
+	5. Restart the computer. Start the real mode redirector by typing the following
+	  at the MS-DOS command prompt:
+	
+	  net start workstation
+	
+	6. Try to view another computer (which must be in Windows for Workgroups 386
+	  enhanced mode) by typing the following:
+	
+	  net view \\<computername>
+	
+	  If you can communicate with other computers using the real mode redirector,
+	  the problem may be related to an upper memory block (UMB) conflict, a
+	  hardware conflict, or a virtual device driver (VxD) that is interfering with
+	  Windows for Workgroups.
+	
+	7. If you can view another computer's shared resources using the real mode
+	  redirector, type the following to stop the real mode redirector:
+	
+	  net stop
+	
+	If the problem still occurs, use the WIN /D:X switch, as described in the next
+	section.
+	
+	Use the WIN /D:X Switch:
+	
+	1. Start Windows for Workgroups by typing the following at the MS-DOS command
+	  prompt:
+	
+	  win /d:x
+	
+	2. Try to view other computers in File Manager.
+	
+	  If using the WIN /D:X switch corrects the problem, the network card's memory
+	  address needs to be excluded with a UMB provider (such as EMM386.EXE) or by
+	  adding an "EMMEXCLUDE=memoryaddress" (without the quotation marks) to the
+	  [386Enh] section of the SYSTEM.INI file. For example, if your network uses a
+	  UMA address from C800-CFFF, add the following line to the [386Enh] section of
+	  your SYSTEM.INI file:
+	
+	  EMMExclude=C800-CFFF
+	
+	  If using WIN /D:X doesn't allow you to view any other computers in File
+	  Manager, but you could view other computers when you quit Windows and started
+	  the real mode redirector, the problem may be caused by one of the following:
+	
+	   - An IRQ, DMA channel, I/O, or RAM address conflict exists between the
+	     network card and another hardware device.
+	
+	     -or-
+	
+	   - The settings in the Network dialog box of Control Panel do not match the
+	     actual hardware settings on the network card.
+	
+	Change the Network Card Settings:
+	
+	To change the IRQ, DMA, I/O, and/or RAM address settings, proceed as follows:
+	
+	1. Open Control Panel, and choose the Network icon.
+	
+	2. Choose Adapters, then choose Setup.
+	
+	3. Select a different setting (or the actual hardware setting) for your network
+	  card.
+	
+	4. With some network cards, you must also change jumpers or switch settings on
+	  the card to match the settings in Control Panel. For information about
+	  configuring jumpers and switches on your network card, check the
+	  documentation that came with the card, or contact your network card
+	  manufacturer.
+	
+	5. Save your changes and exit Control Panel.
+	
+	NOTE: If you cannot start Windows to open Control Panel, edit the PROTOCOL.INI
+	file and change the settings for Interrupt=, RamAddress=, DMAChannel=, and
+	IOBase= to unused values (for software-configurable cards) or to the actual
+	hardware settings (for hardware-configurable cards).
+	
+	When you change hardware settings (such as IRQ and I/O addresses) on
+	software-configurable network cards (such as the Intel EtherExpress 16), you
+	must either quit Windows, turn the computer completely off, and then restart it,
+	or select the Restart Computer option in Windows for the new settings to take
+	effect.
+	
+	Test the Network Card Drivers:
+	
+	Run the Maintenance Mode of Windows for Workgroups Setup program to reinstall the
+	network card drivers.
+	
+	If reinstalling the network card drivers does not enable the local computer to
+	"see itself" in File Manager or view other computers on the network using the
+	real mode redirector, there are several other possible causes:
+	
+	- The correct Media Access Control (MAC) network card driver is not being used.
+	  If the card is emulating another card (such as the NE2000), it may be
+	  necessary to change jumpers or switches on the card to allow the driver to
+	  work properly. For more information about configuring the network card and
+	  obtaining updated drivers, contact your network card manufacturer.
+	
+	- The card may be in a slot that is functioning incorrectly. To verify this,
+	  try putting the network card in another slot in the computer or install the
+	  network card in another computer to determine if the card itself is
+	  defective.
+	
+	- The network card may be malfunctioning. Try using a different network card or
+	  run diagnostic tests that may have come with the card.
+	
+	- The bus speed on the computer may be too fast for the network card. Most
+	  network cards are designed to work at ISA (8.33 mHz) bus speed; setting the
+	  bus speed any faster may cause unreliable performance.
+	
+	  The bus speed setting is usually changed in the computer's CMOS setup. Try
+	  lowering the computer's bus speed if intermittent problems occur.
+	
+	- There may be a bad or missing connection. Some network cards, such as the
+	  Intel EtherExpress 16, come with a utility that checks the integrity of
+	  wiring and connectors between two computers. If one of these utilities is
+	  available, use it to determine whether or not the two computers are
+	  physically connected. (Refer to the "Use a Network Card Diagnostic Test"
+	  section below.)
+	
+	Use a Network Card Diagnostic Test:
+	
+	You can run a diagnostic test on the network card to ensure it is functioning
+	correctly. Some network card diagnostic programs can also test communication
+	between computers and the network (this tests the card and the cabling). If this
+	test works, then Windows for Workgroups should also work, provided the correct
+	drivers are being used. If this low-level test does not allow two network cards
+	to communicate, some type of hardware problem exists with a network card, the
+	cabling, or the connectors. Contact your hardware vendor if either the network
+	card diagnostic test or the network test fails.
+	
+	NOTE: If you have the Windows for Workgroups Resource Kit, you can use the
+	NETSTAT program included with the kit. This program tests (from MS-DOS or
+	Windows) the status of a remote network card. This requires that the correct
+	network card drivers be loaded on each network card and (at least) the real mode
+	redirector be started on each computer.
+	
+	If you have Intel EtherExpress network cards (which come with the Windows for
+	Workgroups Starter and User Kits), you can use the SOFTSET utility available
+	from the Intel bulletin board service [BBS]) to troubleshoot both the network
+	card, as well as test the integrity of the network cabling (with the Test
+	Network option).
+	
+	If your network card is not on the supported network card list, you may want to
+	contact the network card manufacturer for information on the correct emulation
+	or for an updated Media Access Control (MAC) network card driver. The
+	manufacturer may also have information on jumpers and switches that may need to
+	be reconfigured for a particular emulation mode, for example NE2000 emulation.
+	
+	For more information about diagnosing problems with your network card or cabling,
+	contact your hardware vendor.
+	
+	Additional query words: tshoot 3.10
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbWFWSearch kbWFW310 kbWFW311
+	Version           : :3.1,3.11
+	
+	=============================================================================
+	

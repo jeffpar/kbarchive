@@ -1,0 +1,79 @@
+---
+layout: page
+title: "Q156179: HOWTO: Use the BoundTo Property to Store Numeric Values"
+permalink: kb/156/Q156179/
+---
+
+## Q156179: HOWTO: Use the BoundTo Property to Store Numeric Values
+
+	Article: Q156179
+	Product(s): Microsoft FoxPro
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbDesigner kbvfp500 kbvfp600
+	Last Modified: 20-AUG-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	In Visual FoxPro 3.0, when the ControlSource property of a combo box or list box
+	evaluates to a numeric value, the ControlSource property stores the index number
+	(position) in the list instead of the actual numeric value that is displayed.
+	However, a new property named BoundTo has been introduced in Visual FoxPro 5.0
+	to solve this problem.
+	
+	MORE INFORMATION
+	================
+	
+	The RowSource property of a combo box or list box specifies the source of the
+	values; that is, it indicates where the data is coming from.
+	
+	The ControlSource property of a combo box specifies the data that is modified
+	when a selection is made. It indicates where the data is going to.
+	
+	When a combo box or a list box is bound to a ControlSource property with
+	character data type, the character value is stored to the ControlSource property
+	as it shows in the list. However, if it is bound to a ControlSource property
+	with numeric data, the numeric value stores differently, depending on the
+	setting of the BoundTo property. Below is a step-by-step example that shows you
+	how to store the actual numeric value to the ControlSource property of a combo
+	box or a list box:
+	
+	1. Create a new form.
+	
+	2. On the View menu, click Data Environment and add the \Samples\Data\Orditems
+	  table to the DataEnvironment object. In Visual FoxPro 6.0, the Orditems table
+	  can be found in home(2)+"Data".
+	
+	3. Add a combo box control to the new form, then set combo box properties as
+	  follows:
+	
+	        RowSource = 10,20,30,40,50,60,70,80,90,100
+	        RowSourceType = 1-Value
+	        ControlSource = orditems.quantity
+	        BoundTo = .T.
+	
+	4. Save and Run the form.
+	
+	Now, when you click any item in the combo box, the actual numeric value stores to
+	the quantity field. You can verify this by browsing the orditems table while you
+	are making changes to the combo box.
+	
+	However, if you set the BoundTo property to .F., the index number (position) of
+	the list is stored to the quantity field instead.
+	
+	Additional query words: combobox listbox
+	
+	======================================================================
+	Keywords          : kbDesigner kbvfp500 kbvfp600 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

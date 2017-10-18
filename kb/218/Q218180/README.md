@@ -1,0 +1,187 @@
+---
+layout: page
+title: "Q218180: Internet Information Server Returns IP Address in HTTP Header"
+permalink: kb/218/Q218180/
+---
+
+## Q218180: Internet Information Server Returns IP Address in HTTP Header
+
+	Article: Q218180
+	Product(s): Internet Information Server
+	Version(s): 4.0,5.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 11-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Server version 4.0 
+	- Microsoft Internet Information Services version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you use static HTML pages (for example, Default.htm), a Content-Location
+	header is added to the response. By default, in Internet Information Server
+	(IIS) 4.0, the Content-Location references the IP address of the server rather
+	than the Fully Qualified Domain Name (FQDN) or Hostname.
+	
+	This header may expose internal IP addresses that are usually hidden or masked
+	behind a Network Address Translation (NAT) Firewall or proxy server.
+	
+	Example:
+	
+	  HTTP/1.1 200 OK
+	  Server: Microsoft-IIS/4.0
+	  Content-Location: http://10.1.1.1/Default.htm
+	  Date: Thu, 18 Feb 1999 14:03:52 GMT
+	  Content-Type: text/html
+	  Accept-Ranges: bytes
+	  Last-Modified: Wed, 06 Jan 1999 18:56:06 GMT
+	  ETag: "067d136a639be1:15b6"
+	  Content-Length: 4325
+	
+	In this example, the Content-Location specifies the private internal address of
+	the IIS computer within the header. This header is then unchanged when it passes
+	through a firewall or proxy server. Therefore, the security of the internal
+	network may be compromised by exposing the network addresses that are being
+	used.
+	
+	RESOLUTION
+	==========
+	
+	There is a value that can be modified in the IIS metabase to change the default
+	behavior from exposing IP addresses to send the FQDN instead. This allows the IP
+	address to be masked by the domain name.
+	
+	Example:
+	
+	  HTTP/1.1 200 OK
+	  Server: Microsoft-IIS/4.0 or Microsoft-IIS/5.0
+	  Content-Location: http://www.domain.com/Default.htm
+	  Date: Thu, 18 Feb 1999 15:08:44 GMT
+	  Content-Type: text/html
+	  Accept-Ranges: bytes
+	  Last-Modified: Mon, 30 Nov 1998 15:40:15 GMT
+	  ETag: "f07f84b9771cbe1:3068"
+	  Content-Length: 4739
+	
+	WARNING: Using the Adsutil.vbs file incorrectly causes serious problems that
+	requires you to reinstall Internet Information Server 4.0. Microsoft cannot
+	guarantee that problems resulting from the incorrect use of the Adsutil.vbs file
+	can be solved. Use the Adsutil.vbs file at your own risk. To set the value on an
+	IIS 4.0 server, do the following:
+	
+	1. Open a command window (cmd).
+	
+	2. Change directory to: winnt\system32\inetsrv\adminsamples.
+	
+	  NOTE: This may vary depending on your installation of Internet Information
+	  Server.
+	
+	3. Type the following syntax:
+	
+	  adsutil set w3svc/UseHostName True
+	
+	  By default, this value is set to False, so it returns only the IP address of
+	  the IIS computer. Setting this value to True returns the Fully Qualified
+	  Domain Name (FQDN) for the IIS computer.
+	
+	4. It is recommended that the Inetinfo service is restarted after making this
+	  modification. To stop the Inetinfo process, type the following at the command
+	  line:
+	
+	  net stop iisadmin /y
+	
+	  NOTE: Make a note of what services are being stopped so that they can be
+	  restarted.
+	
+	5. Type the following:
+	
+	  Net start w3svc
+	
+	  NOTE: This is the mininum to allow the Web server to operate again. Any other
+	  services depends on what is installed for IIS/SiteServer that was taken note
+	  of in step 4.
+	
+	To set the value on an IIS 5.0 server, do the following:
+	
+	1. Open a command window (cmd).
+	
+	2. Change the directory to: inetpub\adminscripts.
+	
+	  NOTE: This may vary depending on your installation of Internet Information
+	  Server.
+	
+	3. Type the following syntax:
+	
+	  adsutil set w3svc/UseHostName True
+	
+	  By default, this value is set to False, so it returns only the IP address of
+	  the IIS computer. Setting this value to True returns the Fully Qualified
+	  Domain Name (FQDN) for the IIS computer.
+	
+	4. It is recommended that the Inetinfo service be restarted or reboot after
+	  making this modification. To stop the Inetinfo process type the following at
+	  the command line:
+	
+	  net stop iisadmin /y
+	
+	  NOTE: Make a note of what services are being stopped so that they may also be
+	  restarted.
+	
+	5. Type the following:
+	
+	  Net start w3svc
+	
+	  NOTE: This is the mininum to allow the Web server to operate again. Any other
+	  services will depend on what is installed for IIS/SiteServer that was taken
+	  note of in step 4.
+	
+	WORKAROUND
+	==========
+	
+	Another way to work around this issue is to use Active Server Pages instead of
+	static html pages (.htm or .html) and create a custom header that sends back a
+	specific Content-Location. The Active Server Pages (ASP) engine does not return
+	a Content-Location when the response is built, so the ability to add a custom
+	one is there.
+	
+	To implement this workaround, follow these steps:
+	
+	1. Rename all static pages (for example, htm or html) to .asp. This will force
+	  the pages through the ASP engine.
+	
+	2. Start the Internet Service Manager (ISM) to load the IIS snap-in for the
+	  Microsoft Management Console (MMC).
+	
+	3. Click the plus sign (+) next to Internet Information Server to expand it.
+	
+	4. Click the plus sign (+) next to ServerName.
+	
+	5. Right-click Default Web Site, and then click Properties.
+	
+	6. Click the HTTP Headers tab.
+	
+	7. In the Custom HTTP Headers section, click Add.
+	
+	8. Type "Content Location" (without the quotation marks) in the Custom Header
+	  Name.
+	
+	9. Type "http://www.domain.com/" (example only) (without the quotation marks) in
+	  Custom Header Value
+	
+	10. Click OK twice.
+	
+	Additional query words: IIS Content-Location Header HTTP adsutil.vbs
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbiisSearch kbiis500 kbiis400
+	Version           : :4.0,5.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

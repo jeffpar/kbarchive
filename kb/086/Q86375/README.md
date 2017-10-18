@@ -1,0 +1,243 @@
+---
+layout: page
+title: "Q86375: PC DB: Global Address List Definition and Details"
+permalink: kb/086/Q86375/
+---
+
+## Q86375: PC DB: Global Address List Definition and Details
+
+	Article: Q86375
+	Product(s): Microsoft Mail For PC Networks
+	Version(s): WINDOWS:3.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 28-OCT-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Mail for PC Networks, version 3.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article provides information about the following topics:
+	
+	- What is the Global Address List (GAL)?
+	
+	- Support for Groups
+	
+	- Administration
+	
+	- Installation
+	
+	- International Issues
+	
+	- User Agent Modifications
+	
+	- Global Address List Index
+	
+	- Performance
+	
+	- Search Performance
+	
+	- Rebuild Performance
+	
+	- Additional Details
+	
+	What Is the Global Address List (GAL)?
+	--------------------------------------
+	
+	The GAL is a single flat address list that contains all addresses defined at a
+	Microsoft Mail postoffice. For Mail users, the GAL's main purpose is to provide
+	a single list where users can find all the addresses they can send mail to.
+	Users do not need to know the location (network, postoffice, or gateway) of the
+	user to whom they want to send mail. The GAL will accommodate more than 500,000
+	user names.
+	
+	Once it is installed at the postoffice, the GAL is supported by any Microsoft
+	Mail version 3.0 or later clients. To see the GAL, users require External Mail
+	privileges. Most users configure the GAL as their primary address list. Finding
+	an address located in the GAL is very fast because a binary search algorithm is
+	used.
+	
+	The GAL is not administered in the same way as the other lists. Instead, it is
+	periodically rebuilt from scratch. Between the time the postoffice administrator
+	makes a change to one of the GAL's constituent lists and the time the GAL is
+	rebuilt, any change will not be reflected in the GAL. For example, if the
+	administrator creates a new user at the postoffice, this user will not appear in
+	the GAL until it is rebuilt.
+	
+	If the name services distribution agent (for example, directory synchronization)
+	is installed at the postoffice, that agent will rebuild the GAL as part of its
+	normal cycle. This rebuild can occur as frequently as once per day. Optionally,
+	the postoffice administrator can rebuild the GAL at any time by running a
+	command-line utility. There is no explicit support for the GAL planned for the
+	Mail Administrator program.
+	
+	Support for Groups
+	------------------
+	
+	In the same way external postoffice user lists contain group aliases, so does the
+	GAL. This means that group names belonging to external postoffices (or gateways)
+	are not distinguishable from regular aliases except by inference. Remember, you
+	cannot resolve the members of groups that are defined at other postoffices.
+	
+	Local postoffice groups can be displayed in the GAL but they cannot be created,
+	modified, or deleted. The postoffice administrator creates, modifies, and
+	deletes postoffice groups in the postoffice address list (POL). When the GAL is
+	rebuilt, any newly created local group aliases are added.
+	
+	Currently, postoffice groups can only be created from members of the POL.
+	Similarly, personal groups can only be created from members of Personal Address
+	Lists (PALs). From a usability point of view, this means that even with the GAL
+	installed, it is still difficult for an administrator to define groups that
+	contain large numbers of members.
+	
+	While it would be convenient to be able to create groups arbitrarily from any set
+	of address lists or, in particular, from members of the GAL, this capability
+	would require overwhelming changes in both the Mail client's and administration
+	client's directory interface code. Furthermore, certain architectural changes
+	would need to take place to solve group mail delivery problems.
+	
+	Administration
+	--------------
+	
+	The GAL becomes out of date when the administrator creates or deletes a local
+	user or group and when the name services distribution agent updates the
+	postoffice with external address transactions. Rather than maintain the GAL
+	incrementally, since this is considered inefficient, the GAL is periodically
+	rebuilt from scratch.
+	
+	There are two ways the GAL can be rebuilt:
+	
+	- The name services distribution agent automatically rebuilds the GAL during
+	  its normal directory synchronization cycle. In most cases, this is done once
+	  per day.
+	
+	- A postoffice administrator can manually run a utility that rebuilds the GAL.
+	  You can code an Administrator interface that allows the administrator to
+	  trigger a GAL rebuild from the Administrator program.
+	
+	When the GAL is being built, duplicate full names may be encountered. Duplicate
+	aliases are supported in the GAL.
+	
+	Installation
+	------------
+	
+	Installation of the GAL is part of the server version 3.0 installation/update
+	program. During installation, all the tools needed to create a GAL are
+	installed, but an actual list is not created. The Administrator program has an
+	interface that allows the administrator to enable or disable the GAL. By
+	default, the GAL is disabled unless it is specifically enabled through the
+	Administrator program.
+	
+	International Issues
+	--------------------
+	
+	Other than normal translation of client and administration screen data, there are
+	no issues that affect international versions of Mail. If, for some reason, the
+	GAL's sort order is wrong (that is, clients start using a different code page),
+	you can resolve the problem by simply rebuilding the GAL with the correct code
+	page loaded. This means there is no need for the re-sort utility to support the
+	GAL.
+	
+	User Agent Modifications
+	------------------------
+	
+	All Microsoft Mail user agents need to be modified to support the GAL. These
+	modifications include code to detect the existence of the GAL and a binary
+	search mechanism for the alias files. Additional and significant code changes
+	are required to extend support from 32K users to an unlimited number of users.
+	Additional code changes will be necessary to support local group names on the
+	GAL.
+	
+	Global Address List Index
+	-------------------------
+	
+	The GAL is the largest address list in the Mail for PC Networks database. It is
+	sorted on the Full Name field to allow fast access. For Mail for Windows'
+	Ambiguous Names Resolution feature, it is necessary to support an index on the
+	GAL because the names being searched for (first, last, and so on) are not
+	accessible except by linear search.
+	
+	The GAL index consists of two parts: a sorted Offset Records list and an index to
+	the index. The index of the index consists of 52 file offsets into the GAL index
+	file--one for each letter of the alphabet, uppercase and lowercase, because
+	these are the most likely characters to start the search on. The Offset Records
+	list consists of a WORD specifying which word the index points in the Full Name
+	field and a DWORD pointer to the GAL.NME file.
+	
+	To search the GAL Index file, the following steps are performed:
+	
+	1. Open the GAL Index file and the GAL.NME file.
+	
+	2. Find the offset of the first letter in the word being searched for in the
+	  index.
+	
+	3. Read in the Offset Record from that position in the file, then read in the
+	  Alias record from the GAL.NME file and determine if it is before or after the
+	  word being searched for.
+	
+	4. A simple binary search finds the correct alias record.
+	
+	The GAL.NME file should be of size 45*n bytes, where n is the number of records.
+	If we assume that there are on average 2.5 "words" per Full Name, then the size
+	of the GAL index file will be 2.5*6*n + 52*4. Therefore, for an 80,000 user list
+	then the GAL.NME file will be 3,600,000 bytes and the GALINDEX.GLB file will be
+	1,200,208 bytes.
+	
+	Performance
+	-----------
+	
+	Because the GAL is much larger than any other list normally supported at the
+	Microsoft Mail postoffice, performance is an important concern. Two issues are
+	important: the time it takes to search for an address using a client, and the
+	time it takes to rebuild the GAL so that it reflects all changes in the name
+	service domain. The former issue is important to the average user and the latter
+	issue is important to administrators.
+	
+	Search Performance
+	------------------
+	
+	The GAL is searched using a binary search. This is an extremely efficient method
+	of searching large lists. The theoretical performance is log (base 2) times the
+	number of addresses.
+	
+	Rebuild Performance
+	-------------------
+	
+	The GAL is rebuilt by reading through all the hierarchical address lists and
+	merging them into a single flat list. The native Microsoft Mail addresses have
+	their physical addresses duplicated while foreign addresses reference a single
+	shared physical address record.
+	
+	Additional Details
+	------------------
+	
+	- The GAL can display up to 231 entries.
+	
+	- You can select entries for the TO or CC recipient lists.
+	
+	- You can select non-group entries and move them to the Personal Address List.
+	
+	- Custom addressing from the GAL is NOT supported.
+	
+	- The GAL can be selected as the default address list.
+	
+	- If the GAL files are missing, the client hides all references to the Global
+	  Address List and the functionality it provides.
+	
+	- The address search feature (MS-DOS) will not work with the GAL.
+	
+	
+	Additional query words: 3.00 Admin Dir-Sync DirSync
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN300
+	Version           : WINDOWS:3.0
+	
+	=============================================================================
+	

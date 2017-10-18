@@ -1,0 +1,915 @@
+---
+layout: page
+title: "Q187879: Networking Essentials 2nd. Ed. Corrections Part 2"
+permalink: kb/187/Q187879/
+---
+
+## Q187879: Networking Essentials 2nd. Ed. Corrections Part 2
+
+	Article: Q187879
+	Product(s): Microsoft Press
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbdocfix kbdocerr
+	Last Modified: 09-MAR-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- MSPRESS Networking Essentials, Second Edition ISBN 1-57231-527-X 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article is the second of two articles containing corrections, comments, and
+	information on known errors relating to the Microsoft Press book "Networking
+	Essentials, Second Edition," ISBN 1-57231-527-X.
+	
+	This article concerns itself strictly with known errors in the text of the book.
+	For information about known errors relating to the companion CD-ROM or its
+	contents, please see the following article in the Microsoft Knowledge Base:
+	
+	  Q177704 Networking Essentials 2nd. Ed. Corrections Part 1
+	
+	For information about known errors and corrections in the first edition of
+	"Networking Essentials," please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q153970 NETWORKING FUNDAMENTALS TRAINING Corrections and Comments
+	
+	Contents:
+	
+	- Page xxxvi: Support Section Missing
+	
+	- Page 30: Lab 2 Directions Are Incorrect
+	
+	- Page 80: Thicknet Cable Does Not Use BNC Connectors
+	
+	- Page 93: Typographical Errors
+	
+	- Page 97: Clarification For Question 3
+	
+	- Page 99 Contradicts Page 103
+	
+	- Errors In Cable Summary On Page 102 And CD-ROM Demo6
+	
+	- More Errors In Cable Summary On Page 102
+	
+	- Page 144: Text Error
+	
+	- Page 147: Correction To The Answer For Exercise 3, Part 2
+	
+	- Page 149: Diagram Correction
+	
+	- Page 150: The Distance From J To The Hub Exceeds 328 Feet
+	
+	- Page 171: Information Under Wrong Heading
+	
+	- Page 176: Error in OSI Information
+	
+	- Page 208: Sequencing Information Is Under Transport Layer
+	
+	- Page 210: APPC Listed As Application Protocol, S/B Transport Protocol
+	
+	- Page 212: Some Acronyms In Figure 3.20 Are Not Defined
+	
+	- Page 219: Screen Shot From NT 3.51
+	
+	- Page 229: Last Paragraph Confuses Wire And Wire Pair
+	
+	- Page 230: Demand Priority is Non-contention
+	
+	- Page 256: Illustration Of 10BT UTP Shows Coax/BNC
+	
+	- Page 266: Text Errors Confusing 100BVG With 100BT
+	
+	- Page 266: Correction To Specifications
+	
+	- Page 276: Text Error
+	
+	- Page 281: Text Incorrect
+	
+	- Page 282: Cable Lengths Expressed Inconsistently in Meters or Feet
+	
+	- Pages 300, 323, 335, 507, 617, 834: Minor Text Errors
+	
+	- Pages 328: Minor Text Errors
+	
+	- Pages 432, 547: Minor Text Errors
+	
+	- Page 396: Description Of Centralized Computing Unclear
+	
+	- Page 443: Text Corrections
+	
+	- Page 444: Invalid Information
+	
+	- Page 537: International Standards Text Error
+	
+	- Page 556: Error In Bridge Definition
+	
+	- Page 565: Fig. 7.14, Lower Left Router C Not Labeled
+	
+	- Pages 567-569: Missing Page
+	
+	- Page 615: ISDN Is Digital Connectivity At About 128Kbps
+	
+	- Page 617: Correction For Question 10
+	
+	- Page 659: HP Network Advisor Has Been Replaced
+	
+	- Page 690: Starting Point URL Is Wrong
+	
+	- Page 777: Corrections For Description of Gateway & Frame Relay
+	
+	- Page 822: Index Listing For Multiplexing Also See Page 587
+	
+	MORE INFORMATION
+	================
+	
+	Page xxxvi: Support Section Missing
+	-----------------------------------
+	
+	On page xxxvi, the following Support information should be added to the bottom of
+	page:
+	
+	Every effort has been made to ensure the accuracy of this book and the contents
+	of the companion disc. Microsoft Press provides corrections for books through
+	the World Wide Web at the following address:
+	
+	  http://mspress.microsoft.com/support/
+	
+	If you have comments, questions, or ideas regarding this book or the companion
+	disc, please send them to Microsoft Press using either of the following
+	methods:
+	
+	E-mail:
+	
+	  TKINPUT@MICROSOFT.COM
+	
+	Postal Mail:
+	
+	  Microsoft Press
+	  Attn: Editor, Networking Essentials, Second Edition
+	  One Microsoft Way
+	  Redmond, WA 98052-6399
+	
+	Please note that product support is not offered through the above mail addresses.
+	For further information regarding Microsoft software support options, please
+	connect to http://www.microsoft.com/support/ or call Microsoft Technical Support
+	Priority Support Sales at (800) 936-3500.
+	
+	
+	Page 30: Lab 2 Directions Are Incorrect
+	---------------------------------------
+	
+	Use the following directions to correctly proceed through Lab 2:
+	
+	Exercise 1: Sharing a Directory:
+	
+	1. From the Start Menu, open Windows Explorer. Open the Networking Essentials
+	  directory and select Lab2.exe.
+	
+	2. Right-click the My Computer icon, and then select Explore. This opens the
+	  Windows NT Explorer.
+	
+	3. In the left pane, click the C: drive to open it.
+	
+	4. Now right-click the DOS directory and select Sharing.
+	
+	  NOTE: For purposes of this simulation, DOS is the only directory that can be
+	  shared.
+	
+	  The DOS Properties window appears. Select the Sharing tab and click Shared As:
+	
+	5. Notice that you have several options in the Shared As: section.
+	
+	  Share Name -- Shows the name users specify to connect to the shared directory.
+	  In order for Microsoft MS-DOS-based computers to connect, the name must
+	  conform to the MS-DOS 8.3 naming convention. On a Windows NT-based network,
+	  the name can be up to 12 characters long.
+	
+	  By default, the share name is the name of the selected directory.
+	
+	  NOTE: Normally, you can type a different name in the Share Name: box. However,
+	  if you change the name of the share, when someone accesses the share, they
+	  will use the share name and not the directory name.
+	
+	  Comment -- The comment is optional and is displayed with the Share Name in the
+	  Connect Network Drive dialog box.
+	
+	  User Limit -- Sets the maximum number of users who can connect to the shared
+	  directory at one time. By default, no limit is set.
+	
+	  Permissions Button -- You can control access to a shared directory by setting
+	  permissions on it. Permissions are covered in a later lesson.
+	
+	6. Accept the default name DOS for the share by clicking OK.
+	
+	  Notice the small hand holding the DOS folder. This indicates that the folder
+	  is shared.
+	
+	Exercise 2: Stop Sharing a Directory
+	
+	1. Right-click the DOS directory and click on Sharing.
+	
+	  The DOS Properties window appears. Select the Sharing tab and click Not
+	  Shared:
+	  Notice that the small hand holding the DOS folder has disappeared.
+	
+	2. On the File menu, click Exit Lab 2.
+	
+	
+	Page 80: Thicknet Cable Does Not Use BNC Connectors
+	---------------------------------------------------
+	
+	On page 80, in the first paragraph, first sentence change:
+	"Both thinnet and thicknet cable use connection components, known as a BNC
+	(British Naval Connector), to make the connections between the cable and the
+	computers."
+	
+	To:
+	"Thinnet cable uses connection components, known as a BNC (British Naval
+	Connector), to make the connections between the cable and the computers."
+	
+	
+	Page 93: Typographical Errors
+	-----------------------------
+	
+	a. On page 93, under Fiber-Optic Considerations, the statement is made:
+	  "Do not use fiber-optic cable if you:
+	  ...are under a tight budget. (Note: pricing for fiber optic cable is
+	  competitive to hi-end copper cabling.)"
+	
+	  Change: 'competitive to hi-end'
+	
+	  To: 'competitive with high-end'
+	
+	b. Also on Page 93, the statement is made:
+	  "...Do not have the expertise to properly install it and connect devices
+	  to it. (Note: fiber optic cable is increasingly easier to work with.
+	  Polishing and terminating techniques require fewer parts and less
+	  expertise.)"
+	
+	  Change: 'teminating'
+	
+	  To: 'terminating'
+	
+	
+	Page 97: Clarification For Question 3
+	-------------------------------------
+	
+	On page 97, question 3 should specify "some devices" rather than "each", as the
+	documentation indicates on page 95.
+	
+	Change:
+	"3. Each device on a _________ network can transmit and receive at the same
+	time."
+	
+	To:
+	"3. Some devices on a _________ network can transmit and receive at the same
+	time."
+	
+	
+	Page 99 Contradicts Page 103
+	----------------------------
+	
+	Page 99 has a table entitled "IBM Cabling System". It indicates: "IBM Type 3"
+	"Voice Grade Cable" "Consists of four solid, unshielded, twisted-pair 22 or 24
+	AWG cables".
+	
+	Page 103 States: "IBM has its own cabling system complete with its own types. IBM
+	Type 3 cabling, for example, is a voice grade, shielded twisted-pair cable
+	otherwise known as STP."
+	
+	Microsoft Press is aware of this contradiction and will post further information
+	when available.
+	
+	
+	Errors in Cable Summary on Page 102 and CD-ROM Demo6
+	----------------------------------------------------
+	
+	Slide 11 of Demo 6 (located in the CD-ROM /Demos folder) shows a Cable Comparison
+	Summary chart which is also displayed on page 102 of the book. There are several
+	discrepancies between the text in the two different charts.
+	
+	Specifically:
+	
+	Under category Thinnet coaxial (10Base2):
+	Usable cable length:
+	in book: "185 m or about 607 feet"
+	in CD: "185 m (600 feet)"
+	The actual conversion is 607 feet.
+	
+	Under category Twisted-Pair (10BaseT):
+	Usable cable length:
+	in book: "100 m or about 328 feet"
+	on CD: "100 m (330 feet)"
+	The actual conversion is 328.08 feet. The book is correct.
+	
+	Transmission rates:
+	in book: "10MBps, 4-100 MBps"
+	on CD: "4-100 MBps"
+	The actual range is 4-100 MBps.
+	
+	Ease of installation:
+	in book: "very easy; possibly already installed"
+	on CD: "very easy"
+	The book is correct. Many buildings already include twisted-pair cable.
+	
+	Under category Fiber-optic:
+	
+	Cable cost:
+	in book: "More expensive"
+	on CD: "Most expensive"
+	Both should read "most expensive."
+	
+	Usable cable length:
+	in book: "2k or about 6562 feet"
+	on CD: "2k (6500 feet)"
+	The actual figure is 6561.68 feet.
+	
+	Transmission rates:
+	in book: "100 MBps or more (>1GBps)"
+	on CD: "100 MBps or more"
+	Both should read "100 MBps to 2 GBps"
+	
+	Flexibility:
+	in book: "Very Flexible"
+	on CD: "Not flexible"
+	Both should read "Not Flexible".
+	
+	Ease of installation:
+	in book: "Easy to install"
+	on CD: "Difficult to install"
+	Both should read "Difficult to install."
+	
+	
+	More Errors In Cable Summary On Page 102
+	----------------------------------------
+	
+	The Twisted-pair (10BaseT) column needs to be broken into to two separate
+	categories: Unshielded Twisted-pair (UTP) and Shielded Twisted-pair (STP).
+	
+	Unshielded Twisted-pair
+	
+	Cable cost: Least expensive
+	Usable cable length: 100 meters or about 328 feet
+	Transmission rates: 4 - 100 Mbps
+	Flexibility: Most flexible
+	Ease of installation: Very easy; possibly already installed
+	Susceptibility to interference: Very susceptible to interference
+	Special features: Same as telephone wire; often pre-installed in buildings
+	Preferred uses: Smaller sites on budget
+	
+	Shielded Twisted-pair
+	
+	Cable cost: More than Thinnet coaxial
+	Usable cable length: 100 meters or about 328 feet
+	Transmission rates: 16 - 500 Mbps
+	Flexibility: Less flexible
+	Ease of installation: Moderately easy to install
+	Susceptibility to interference: Good resistance to interference
+	Special features: Supports higher transmission rates than UTP
+	Preferred uses: Token Ring in any size
+	
+	A couple of other corrections are also needed:
+	
+	Under the Thinnet coaxial column, change the Cable Cost from:
+	"More than twisted-pair"
+	
+	To:
+	"More than UTP"
+	
+	Under the Thicknet coaxial column, change the Ease of Installation from:
+	"Easy to install"
+	
+	To:
+	"Moderately easy to install"
+	
+	
+	Page 144: Text Error
+	--------------------
+	
+	Page 144, under the subheading Exercise 1: Matching:
+	
+	Change: "One item in Column B will not be used..."
+	
+	To: "Two items in Column B will not be used..."
+	
+	
+	Page 147: Correction To The Answer For Exercise 3, Part 2
+	---------------------------------------------------------
+	
+	Page 147, Exercise 3, part 2:
+	Add "f. Onboard microprocessor" to the list of possible answers.
+	
+	
+	Page 149: Diagram Correction
+	----------------------------
+	
+	In the diagram on page 149, computer G should be connected to the Hub as
+	outlined
+	on page 148. However, the line that connects G to the Hub was left off the
+	diagram.
+	
+	
+	Page 150: The Distance From J To The Hub Exceeds 328 Feet
+	---------------------------------------------------------
+	
+	Page 150, first sentence:
+	
+	Change:
+	"The distances for A, B, C, D, E, F, and G to the hub all exceed the maximum
+	cable length of 328 feet specified by 10BaseT."
+	
+	To:
+	"The distances for A, B, C, D, E, F, G, and J to the hub all exceed the maximum
+	cable length of 328 feet specified by 10BaseT."
+	
+	
+	Page 171: Information Under Wrong Heading
+	-----------------------------------------
+	
+	Page 171, under the heading "Presentation Layer", paragraph 2:
+	Move the following text to page 170, under the "Application Layer" heading.
+	
+	"A utility known as the redirector operates at this layer. The purpose of the
+	redirector is to redirect input/output (I/O) operations to resources on a
+	server."
+	
+	
+	Page 176: Error in OSI Information
+	----------------------------------
+	
+	Correction:
+	Page 176:
+	Under "Enhancements to the OSI Model," the information about the LLC and the MAC
+	should include the following information:
+	
+	  Logical Link Control (LLC)--establishing and terminating links,
+	  controlling frame traffic, sequencing frames and acknowledging frames
+	
+	  Media Access Control (MAC)--managing media access, delimiting frames,
+	  checking frame errors and recognizing frame addresses
+	
+	
+	Page 208: Sequencing Information Is Under Transport Layer
+	---------------------------------------------------------
+	
+	On page 208, Figure 3.18 incorrectly shows that sequencing and address
+	information is added to the packet at the Network layer.
+	
+	Sequencing information is added to the packet at the Transport layer.
+	
+	
+	Page 210: APPC Listed as Application Protocol, S/B Transport Protocol
+	---------------------------------------------------------------------
+	
+	Page 210 bullets a number of Application Protocols. The list includes the first
+	bullet:
+	"APPC (advanced program-to-program communication)--IBM's peer-to-peer SNA
+	protocol, mostly used on SNA/400(R)s."
+	
+	However, on pages 218 and 220, APPC is listed as a Transport Protocol.
+	
+	On page 210, APPC should be removed from the bulleted list of Application
+	Protocols. On page 211, APPC should be added to the bulleted list of Transport
+	protocols.
+	
+	Please note: APPC uses the LU 6.2 protocol that works in both the Transport and
+	Session layers of the OSI model, which is why it can be considered a Transport
+	protocol. However, APPC can also be defined as an application protocol since it
+	also works in the Presentation layer of the OSI model. The terms APPC and LU 6.2
+	are often used interchangeably.
+	
+	
+	Page 212: Some Acronyms In Figure 3.20 Are Not Defined
+	------------------------------------------------------
+	
+	Some of the acronyms referenced in Figure 3.20 are not defined in the text of
+	this book.
+	
+	TDI: Transport Driver Interface
+	NBT: NetBIOS over TCP/IP
+	DLC: Data Link Control
+	
+	Also note: NDIS 3.0 is no longer used. NDIS 3.0 should be changed to 4.0.
+	
+	
+	Page 219: Screen Shot From NT 3.51
+	----------------------------------
+	
+	Page 219, Figure 3.22:
+	The third screen shot seen in Demo21.exe is from Microsoft Windows NT 3.51, not
+	Microsoft Windows NT 4.0. This screen shot will be updated with the equivalent
+	Microsoft Windows NT 4.0 screen shot in future reprints and editions.
+	
+	
+	Page 229: Last Paragraph Confuses Wire And Wire Pair
+	----------------------------------------------------
+	
+	On Page 229 the last paragraph confuses wire and wire pair. First stating demand
+	priority uses four pairs of wires (8 wires total), then stating the four wires
+	enable quartet signaling.
+	
+	Change:
+	"Four pairs of wires are used. The four wires enable quartet signaling, which
+	transmits..."
+	
+	To:
+	"Four pairs of wires are used. These wires enable quartet signaling, which
+	transmits..."
+	
+	
+	Page 230: Demand Priority is Non-contention
+	-------------------------------------------
+	
+	On page 230, in the Access Methods Summary chart, change the second row in the
+	Demand Priority column from "Contention" to "Non-contention"
+	
+	
+	Page 256: Illustration of 10BT UTP Shows Coax/BNC
+	-------------------------------------------------
+	
+	The illustration in figure 4.3 shows a repeater being used to extend maximum
+	cable length beyond 100m. This is in an ethernet system using unshielded,
+	twisted-pair cable. Two segments of cable with BNC-type connectors are shown at
+	the repeater.
+	
+	This illustration should use RJ-45 connectors.
+	
+	
+	Page 266: Text Errors Confusing 100BVG With 100BT
+	-------------------------------------------------
+	
+	Page 266, paragraph 3, sentences 2 and 3:
+	
+	Change: "100BaseT"
+	
+	To: "100BaseVG"
+	
+	
+	Page 266: Corrections To Specifications
+	---------------------------------------
+	
+	Change second item under specifications from:
+	"Ability to support a cascaded star topology over Category 3, 4 and 5 twisted
+	pair and fiber-optic cable."
+	
+	To:
+	"Ability to support a cascaded star topology over Category 5 twisted pair and
+	fiber-optic cable."
+	
+	Category 3 and 4 twisted pair do not support data transmission rates of 100
+	Mbps.
+	
+	
+	Page 276: Text Error
+	--------------------
+	
+	Question 3. on page 276 states:
+	
+	"3. In a token ring frame the Media Access Control field indicates whether the
+	frame is a _____ frame or a _______ frame."
+	
+	The answer given afterwards is :
+	
+	token or data
+	
+	The sentence should read:
+	"In a token ring frame the Access Control field indicates whether the frame is a
+	_____ frame or a _______ frame."
+	
+	Note that in the table on the previous page, there is a field called an Access
+	control field, which not only indicates frame priority, but also indicates
+	whether the frame is a data frame or a token frame.
+	
+	
+	Page 281: Text Incorrect
+	------------------------
+	
+	Page 281:
+	The last sentence of the second paragraph is incorrect. Up to 33 MSAUs can be
+	connected together to form a Token Ring.
+	
+	
+	Page 282: Cable Lengths Expressed Inconsistently in Meters or Feet
+	------------------------------------------------------------------
+	
+	On pages 282 and 283, cable lengths are given in text and in a figure. In the
+	first two paragraphs, lengths are expressed in meters (with feet in
+	parentheses).
+	
+	In the figure, only meters are given. In the third and fourth paragraphs, only
+	feet are given. On page 283, only feet are given.
+	
+	Corrections for this situation appear below:
+	
+	Figure 4.16:
+	101 meters
+	change to: "101 meters (330 feet)"
+	100 meters
+	change to: "100 meters (328 feet)"
+	45 meters
+	change to: "45 meters (148 feet)"
+	
+	3rd paragraph:
+	150 feet
+	change to: "150 feet (46 meters)"
+	500 feet
+	change to: "500 feet (152 meters)"
+	
+	Fourth paragraph:
+	500-foot limit
+	change to: "500-foot (152-meter) limit"
+	
+	Page 283:
+	First paragraph:
+	150 feet
+	change to: "150 feet (46 meters)"
+	45 meters (150 feet)
+	change to: "46 meters (150 feet)"
+	
+	
+	Pages 300, 323, 335, 507, 617, 834: Minor Text Errors
+	-----------------------------------------------------
+	
+	Page 300: Exercise 1: Matching
+	Column B, Item B) "Uses bus star topology with UTP."
+	should read: "Uses star bus topology with UTP."
+	
+	Page 323: Text of Figure 5.6 indicates a directory as:
+	"F:\=\Network server\Data directory"
+	should read: "F:\\Network server\Data directory"
+	
+	Page 335: Last sentence reads: "For those services that are set to Manual
+	startup, you can use the above window and the Startup... button to change them
+	to start automatically."
+	should read: "Start... button"
+	
+	Page 507: Exercise 3, Question 2), second paragraph reads: "Local groups consists
+	of individual user accounts that have rights and permissions on the local
+	computer and other group accounts."
+	should read: "other Global group accounts".
+	
+	Page 617: Exercise 2: Matching, Column B, Item K, reads "SDN".
+	should read: "ISDN"
+	
+	Page 834 (Index):
+	Under T:
+	"T1 Service, 586-587, 799"
+	should read: "T1 Service, 587-588, 801"
+	
+	
+	Pages 328: Minor Text Errors
+	----------------------------
+	
+	Page 328: Under IP Address, 4th sentence, "The ID identifies a specific host on a
+	network."
+	Should read "host ID identifies".
+	
+	
+	Pages 432, 547: Minor Text Errors
+	---------------------------------
+	
+	Page 432, 1st paragraph, 4th sentence, states: "Access permissions are rules
+	associated with a resource, usually a directory file or printer."
+	Should read "directory, file or printer".
+	
+	Page 547, 2nd paragraph, 1st sentence, states: "PPTP provides a way to route IP,
+	IPX, or NetBEUI PPP *pckets* over a TCP/IP network."
+	Should read "packets".
+	
+	
+	Page 396: Description Of Centralized Computing Unclear
+	------------------------------------------------------
+	
+	Page 396, under the Centralized Computing subheading:
+	
+	Second paragraph, first sentence:
+	
+	Change:
+	"The entire database travels in message-sized pieces..."
+	
+	To:
+	"The requested information travels in message-sized pieces..."
+	
+	Fourth paragraph, second sentence:
+	
+	Change:
+	"If it is a large database, moving what could be vast amounts of data takes time
+	and ties up the network."
+	
+	To:
+	"Moving vast amounts of data takes time and ties up the network."
+	
+	
+	Page 443: Text Corrections
+	--------------------------
+	
+	a. Page 443, third bullet:
+	
+	  Change: "System Groups"
+	
+	  To: "Special Groups"
+	
+	b. Page 443, section "Built-in Groups," second paragraph:
+	  Sentence should refer to three types of built-in groups, not four.
+	
+	
+	Page 444: Invalid Information
+	-----------------------------
+	
+	On page 444, in the "Server Operators" row of the table:
+	
+	Change: "Lock or override the lock of a server."
+	To: "Lock a server."
+	
+	
+	Page 537: International Standards Text Error
+	--------------------------------------------
+	
+	On Page 537, under the section titled "International Standards", the definition
+	and origin of the word "terbo" are incorrect, and the definition of "bis" is
+	technically incorrect as well.
+	
+	Terbo is not French for third. The word "bis" is French, but it does not actually
+	mean second. It is more likely to be interpreted to mean again or twice.
+	
+	Change:
+	"Sometimes it also includes the word 'bis,' which means second in French."
+	
+	To:
+	"Sometimes it also includes the word 'bis'."
+	
+	Also change:
+	"If the standard also contains the word 'terbo,' which is French for third, it
+	indicates that the second, or bis, standard was also modified."
+	
+	To:
+	"If the standard also contains the word 'terbo,' it indicates that the second, or
+	bis, standard was also modified."
+	
+	
+	Page 556: Error In Bridge Definition
+	------------------------------------
+	
+	The list on page 556 outlines the abilities of a network bridge. The last bullet
+	is incorrect.
+	
+	Change:
+	"Link unlike network segments such as Ethernet and Token Ring, and forward
+	packets between them."
+	
+	To:
+	"A translation bridge can link unlike network segments such as Ethernet and Token
+	Ring, and forward packets between them."
+	
+	
+	Page 565: Fig. 7.14, Lower Left Router C Not Labeled
+	----------------------------------------------------
+	
+	Figure 7.14 on page 565 shows a diagram of routers. In the text box for A's table
+	routing, Adjacent Router C is described; however, there is no router labeled as
+	C in the figure.
+	
+	Line 2 of the small text box states:
+	Dest. Adjacent router Hops
+	H C 5
+	
+	Instead, the text should state:
+	Dest. Adjacent router Hops
+	H F 4
+	
+	
+	Pages 567-569: Missing Page
+	---------------------------
+	
+	In some copies of the "Networking Essentials, Second Edition" text, a printing
+	error resulted in problems with pages 567-569. In the affected books, The
+	content on page 567 is duplicated on page 568, the material on 569 should be on
+	page 568, and the material that should be on page 569 is missing.
+	
+	Microsoft Press has prepared a set of correction pages that contain the proper
+	content for pages 568 and 569. These pages are in Microsoft Word 95 format and
+	can be viewed using Microsoft Word 95, Word 97, or Microsoft Wordpad.
+	
+	The following file is available for download from the Microsoft Download Center:
+	
+	  Ne568-9.exe
+	  (http://download.microsoft.com/download/MSPressPub/MSPRESS/2.0/WIN98Me/EN-US/Ne568-9.exe)
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. Once posted, the file is housed on secure
+	servers that prevent any unauthorized changes to the file.
+	
+	
+	Page 615: ISDN Is Digital Connectivity At About 128Kbps
+	-------------------------------------------------------
+	
+	Page 615, fifth sentence:
+	
+	Change:
+	"ISDN is digital connectivity that divides bandwidth into three channels to
+	transmit voice, data, and imaging at about 150 Kbps."
+	
+	To:
+	"ISDN is digital connectivity that divides bandwidth into three channels to
+	transmit voice, data, and imaging at about 128 Kbps."
+	
+	
+	Page 617: Correction For Question 10
+	------------------------------------
+	
+	On page 617, Exercise 2, Question 10:
+	Change: "52.84 Mbps"
+	To: "51.84 Mbps"
+	
+	
+	Page 659: HP Network Advisor Has Been Replaced
+	----------------------------------------------
+	
+	Page 659, Figure 8.6 caption:
+	
+	Change: "HP Network Advisor"
+	
+	To: "HP Internet Advisor"
+	
+	Page 661, 4th bullet point:
+	Change to:
+	* Hewlett-Packard Internet Advisor
+	
+	The Internet Advisor is actually a 386-based computer that includes a color LCD
+	screen, interfaces designed for data acquisition for a LAN, WAN, or ATM, and an
+	artificial intelligence (AI) portion called Expert Analyzer.
+	
+	
+	Page 690: Starting Point URL Is Wrong
+	-------------------------------------
+	
+	On page 690, the URL for Starting Point, listed in question 4 is wrong.
+	
+	Change:
+	http://www.stp.com
+	
+	To:
+	http://www.stpt.com
+	
+	
+	Page 777: Corrections For Description of Gateway & Frame Relay
+	--------------------------------------------------------------
+	
+	On page 777, the description of Gateway is incorrect.
+	
+	Change:
+	"Gateways functions at the Network layer of the OSI model."
+	
+	To:
+	"Gateways typically function at the application layer of the OSI model. However,
+	the level of functionality varies widely between different types of gateways."
+	
+	Also on page 777, the acronym for PVC used in the Frame Relay description is
+	incorrect.
+	
+	Change:
+	"It is a point-to-point system that uses a private virtual circuit (PVC)..."
+	
+	To:
+	"It is a point-to-point system that uses a permanent virtual circuit (PVC)..."
+	
+	
+	Page 822: Index Listing For Multiplexing Also See Page 587
+	----------------------------------------------------------
+	
+	Index, Page 822:
+	
+	The listing for Multiplexing should include page 587 which gives the definition
+	of multiplexing.
+	Change the listing:
+	Multiplexing (muxing) 588, 785
+	
+	To:
+	Multiplexing (muxing) 587-588, 785
+	
+	
+	Microsoft Press is committed to providing informative and accurate books. All
+	comments and corrections listed above are ready for inclusion in future
+	printings of this book. If you have a later printing of this book, it may
+	already contain most or all of the above corrections.
+	
+	Additional query words: 1-57231-527-X TKBOOK
+	
+	======================================================================
+	Keywords          : kbdocfix kbdocerr 
+	Technology        : kbMSPressSearch
+	Version           : :
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

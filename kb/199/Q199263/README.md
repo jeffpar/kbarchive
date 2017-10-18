@@ -1,0 +1,67 @@
+---
+layout: page
+title: "Q199263: SMS: &quot;Remove software when it is no longer advertised&quot; Operation"
+permalink: kb/199/Q199263/
+---
+
+## Q199263: SMS: &quot;Remove software when it is no longer advertised&quot; Operation
+
+	Article: Q199263
+	Product(s): Microsoft Systems Management Server
+	Version(s): winnt:2.0
+	Operating System(s): 
+	Keyword(s): kbsms200 kbPCM kbsmsInst smsinst smspcm
+	Last Modified: 30-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server version 2.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The "Remove software when it is no longer advertised" option allows programs to
+	be automatically uninstalled when the program is no longer advertised to a
+	client. This option is only available to programs that register through Control
+	Panel (double-click the Add/Remove Programs icon). This option is set on the
+	Advanced tab of Program properties. To set this option, the administrator must
+	provide the name of the Uninstall registry key created by the application during
+	installation. Note that this registry key is not necessarily the same string you
+	see in the actual Add/Remove Programs dialog box.
+	
+	MORE INFORMATION
+	================
+	
+	Advertisements are considered no longer advertised when a client is no longer a
+	member of the target collection, the advertisement is deleted, or the
+	advertisement expires.
+	
+	To determine when software is no longer adverstised to a client, Advertised
+	Programs Monitor (APM) keeps a list of known advertisements and the next time
+	this list is successfully read from the client access point (CAP), APM evaluates
+	the two lists to determine which advertisments may be eligible for this option.
+	Note that all advertisements to a client for a particular program must be
+	removed before APM will attempt to uninstall.
+	
+	Programs that register through Add/Remove Programs in Control Panel do so by
+	adding a new key to the
+	HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall registry
+	key. This key contains the values that Add/Remove Programs uses to perform
+	uninstallation. Specifically, the UninstallString and/or QuietUninstallString
+	values contain the appropriate commands to start the uninstallation of the
+	program. These values can be up to 127 characters in length. When APM checks the
+	given registry key, it first looks for the QuietUninstallString value and then
+	the UninstallString value.
+	
+	Additional query words: deinstall apm installer prodsms
+	
+	======================================================================
+	Keywords          : kbsms200 kbPCM kbsmsInst smsinst smspcm 
+	Technology        : kbSMSSearch kbSMS200
+	Version           : winnt:2.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

@@ -1,0 +1,142 @@
+---
+layout: page
+title: "Q281335: How to Isolate DLL into a Separate Process Using Component Srvcs"
+permalink: kb/281/Q281335/
+---
+
+## Q281335: How to Isolate DLL into a Separate Process Using Component Srvcs
+
+	Article: Q281335
+	Product(s): Internet Information Server
+	Version(s): 5.0
+	Operating System(s): 
+	Keyword(s): kbDSupport
+	Last Modified: 24-DEC-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Services version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	When you troubleshoot Internet Information Server (IIS), it is a common practice
+	to isolate Web applications by running them in a separate memory space, which is
+	referred to as Out-of-Process (OOP). However, sometimes if a component is used
+	on multiple ASP pages, and in multiple Web applications, it can be difficult to
+	isolate the module (DLL) that contains the object from the rest of the Web site.
+	Sometimes you must isolate a COM DLL into a separate process to determine if it
+	contributes to problems that affect Web server performance. Component Services
+	(COM+) 1.0, in Microsoft Windows 2000, provides the ability to isolate a COM DLL
+	into a separate process.
+	
+	MORE INFORMATION
+	================
+	
+	The steps that follow provide a procedure for isolating a DLL. After the DLL is
+	isolated, any process that uses the isolated DLL makes RPC calls to the
+	Dllhost.exe process that contains the isolated DLL, rather than loading the DLL
+	within its own process space.
+	
+	How to Isolate a COM DLL in Windows 2000
+	
+	1. On the Taskbar click Start, point to Programs, point to Administrative Tools,
+	  and then click Component Services.
+	
+	2. Expand the Computers folder, expand My Computer, and then select the COM+
+	  Applications folder.
+	
+	3. Right-click the COM+ Applications folder, click New, and then click
+	  Application. This creates a new Application.
+	
+	4. Click Next.
+	
+	5. Click Create Empty Application.
+	
+	6. Assign a Name to the application (that is, the same name as the COM DLL). Do
+	  not include any periods.
+	
+	7. Select Server Application.
+	
+	8. Click Next.
+	
+	9. Set the Security Context required by the DLL by:
+	
+	   - Selecting either the Interactive (Logged on) user.
+	
+	     -or-
+	
+	   - Specify credentials to impersonate This user.
+	
+	10. Click Next.
+	
+	11. Click Finish.
+	
+	12. To add the DLL to the new COM+ Application, right-click the Components
+	  folder that is inside the new COM+ Application.
+	
+	13. Click New | Component.
+	
+	14. Click Next.
+	
+	15. Select Install new component(s).
+	
+	16. Browse to the folder that contains the DLL to isolate.
+	
+	17. Select the DLL to isolate.
+	
+	18. Click Open.
+	
+	NOTE: You must select a COM or COM+ DLL, otherwise this error message occurs:
+	
+	  One or more files do not contain components or type libraries. These files
+	  can not be installed.
+	
+	19. Click Next.
+	
+	20. Click Finish.
+	
+	21. Reset the IISADMIN service to ensure that the DLL was not in use by the
+	  InetInfo.exe process. To do this:
+	
+	  1. On the Taskbar click Start, and then click Run.
+	
+	  2. In the Run dialog box type:
+	
+	     "iisreset" (without the quotation marks)
+	
+	  3. Click OK.
+	
+	After the DLL is called you should see your new component spinning in the
+	window.
+	
+	REFERENCES
+	----------
+	
+	For more information about configuring your COM+ Application, see the Platform
+	SDK Web site at:
+	
+	  http://msdn.microsoft.com/library/psdk/cossdk/pgcreatingapplications_creatingapplications_45tf.htm
+	
+	For additional information about isolating a COM DLL in Microsoft Windows NT 4.0,
+	click the article number below to view the article in the Microsoft Knowledge
+	Base:
+	
+	  Q281434 How to isolate a DLL into a separate process using Microsoft
+	  Transaction Server (MTS)
+	
+	  Q290884 HOWTO: Determine Which Application Is Running Within a COM+ or
+	  Transaction Server Package
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbDSupport 
+	Technology        : kbiisSearch kbiis500
+	Version           : :5.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

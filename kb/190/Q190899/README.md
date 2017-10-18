@@ -1,0 +1,150 @@
+---
+layout: page
+title: "Q190899: How to Determine the OS Type in a Logon Script"
+permalink: kb/190/Q190899/
+---
+
+## Q190899: How to Determine the OS Type in a Logon Script
+
+	Article: Q190899
+	Product(s): Windows for Workgroups and Windows NT Networking Issues
+	Version(s): 3.51,4.0
+	Operating System(s): 
+	Keyword(s): kbenv
+	Last Modified: 22-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server versions 3.51, 4.0 
+	- Microsoft Windows NT Workstation versions 3.51, 4.0 
+	- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+	- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+	- Microsoft Windows 98 
+	- Microsoft Windows 95 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Often, administrators would like to run software on only their Windows 95 or
+	Windows 98 clients, or their Windows NT Workstation clients. They may not want
+	to run some logon script commands on their Windows NT Server computers or domain
+	controllers.
+	
+	MORE INFORMATION
+	================
+	
+	Using a simple batch file and a small executable file, you can tell if the
+	client is a:
+	
+	- Windows 95 or Windows 98 client
+	- Windows NT workstation
+	- Windows 2000 Professional installation
+	- Windows NT Server non-domain controller
+	- Windows 2000 Server non-domain controller
+	- Windows NT Server domain controller
+	- Windows 2000 Server domain controller
+	- Windows NT Enterprise/Terminal Server domain controller
+	- Windows NT Enterprise/Terminal Server non-domain controller
+	
+	Copy the following text to a batch file:
+	
+	  @echo off
+	  REM Batch file to detect OS
+	  REM ----------------------------------
+	  if Windows_NT == %OS% goto WINNT
+	  echo You are not running Windows NT (Windows 95/98 perhaps?)
+	  goto END
+	
+	  :WINNT
+	  gettype.exe
+	
+	  if errorlevel=9 goto FILENOTFOUND
+	
+	  echo You are running Windows NT.
+	  echo More Specifically:
+	  echo.
+	
+	  if ERRORLEVEL=8 goto EIGHT
+	  if ERRORLEVEL=7 goto SEVEN
+	  if ERRORLEVEL=6 goto SIX
+	  if ERRORLEVEL=5 goto FIVE
+	  if ERRORLEVEL=4 goto FOUR
+	  if ERRORLEVEL=3 goto THREE
+	  if ERRORLEVEL=2 goto TWO
+	  if ERRORLEVEL=1 goto ONE
+	
+	  :FILENOTFOUND
+	  echo.
+	  echo Gettype not found.
+	  echo.
+	  goto END
+	
+	  :EIGHT
+	  echo Windows NT Enterprise/Terminal Server Non-Domain Controller
+	  goto END
+	
+	  :SEVEN
+	  echo Windows NT Enterprise/Terminal Server Domain Controller
+	  goto END
+	
+	  :SIX
+	  echo Windows 2000 Server Domain Controller
+	  goto END
+	
+	  :FIVE
+	  echo Windows NT Server Domain Controller
+	  goto END
+	
+	  :FOUR
+	  echo Windows 2000 Server Non-Domain Controller
+	  goto END
+	
+	  :THREE
+	  echo Windows NT Server Non-Domain Controller
+	  goto END
+	
+	  :TWO
+	  echo Windows 2000 Professional installation
+	  goto END
+	
+	  :ONE
+	  echo Windows NT Workstation
+	  goto END
+	
+	  :END
+	  pause
+	
+	Copy the Gettype.exe file and the batch file to the target workstations and run
+	the batch file.
+	
+	You can obtain Gettype.exe version 4.0 from by installing the Windows 2000
+	Resource Kit Tools.
+	
+	
+	Gettype.exe works by querying the registry for the installation type and setting
+	the DOS ERRORLEVEL appropriately:
+	
+	- Returns 1 for Windows NT Workstation.
+	- Returns 2 for Windows 2000 Professional.
+	- Returns 3 for Windows NT Server non-domain controller.
+	- Returns 4 for Windows 2000 Server non-domain controller.
+	- Returns 5 for Windows NT Server domain controller.
+	- Returns 6 for Windows 2000 Server domain controller.
+	- Returns 7 for Windows NT Enterprise/Terminal Server domain controller.
+	- Returns 8 for Windows NT Enterprise/Terminal Server non-domain controller.
+	
+	Silent mode can be set with the /s parameter. This tool can also be run against
+	remote computers.
+	
+	Additional query words: batch file logon script login
+	
+	======================================================================
+	Keywords          : kbenv 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400 kbWinNTS351 kbNTTermServ400 kbNTTermServSearch kbWinNTS351search kbWin95search kbWin98search kbZNotKeyword3 kbWin98
+	Version           : :3.51,4.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

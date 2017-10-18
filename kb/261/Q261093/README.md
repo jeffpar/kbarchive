@@ -1,0 +1,297 @@
+---
+layout: page
+title: "Q261093: XADM: Readme Document for the Pfinfo.exe Program"
+permalink: kb/261/Q261093/
+---
+
+## Q261093: XADM: Readme Document for the Pfinfo.exe Program
+
+	Article: Q261093
+	Product(s): Microsoft Exchange
+	Version(s): winnt:5.5
+	Operating System(s): 
+	Keyword(s): exc55
+	Last Modified: 02-AUG-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.5 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The Microsoft Exchange Public Folder Information Program (PFInfo.Exe) is a
+	program that extracts information about the Public Folders in a Microsoft
+	Exchange Site. This information is saved into a delimited file, which can be
+	viewed in a spreadsheet like Microsoft Excel. The data can then be manipulated
+	in any way desired. PFInfo.exe can also generate a file, with information on
+	public folder permissions and replicas, that can be used in conjunction with the
+	PFAdmin.exe utility shipped in the BackOffice Resource kit. To use this file
+	with PFAdmin.exe, you must have PFAdmin.exe, version 1.3 or higher.
+	
+	You can obtain the PFInfo.exe utility by calling Microsoft Product Support
+	Services.
+	
+	COMMAND LINE OPTIONS
+	====================
+	
+	PFINFO.EXE supports the following command line options:
+	
+	-S Indicates that the program is being running from a service, like the Windows
+	NT Schedule service.
+	
+	-LogMin Set the logging level to minimum
+	
+	-LogMed Set the logging level to medium
+	
+	-LogMax Set the logging level to maximum
+	
+	RUNNING THE PROGRAM
+	===================
+	
+	To run the program, double click on PFINFO.EXE from the Windows NT Explorer or
+	File Manager. Select the desired output file and the separator to be used when
+	writing data to the output file.
+	
+	To generate an import file for PFAdmin.exe, select the option, "Create file for
+	use with PFAdmin.exe". By default this information is written to a file called
+	PFAdmDat.txt. To change the filename as well as configure what information is
+	written out to the import file,click the button labelled "Options".
+	
+	To start the program, click on the button labeled 'Start'. Now the program should
+	list all the Microsoft Exchange profiles available on the local machine. Select
+	a profile that has the Microsoft Exchange Server service listed and is
+	configured with a mailbox on a server in the site from which you wish to extract
+	Public Folder information.
+	
+	The program will now step through all the available Public Folders and extract
+	data on these folders, writing this data to the specified output file. Any
+	errors will be logged in the specified log file. It is recommended that you are
+	logged into Windows NT as the Microsoft Exchange Service Account.
+	
+	To speed up operation of this program, it is recommended that you select the
+	"Only extract data for public folders homed in the current site" option. This
+	will cause the program to not try and connect to any folders that are not homed
+	in the site it is connected to. This is the site containing the mailbox
+	specified in the profile selected. Hence in order to extract information about
+	all public folders in an Exchange organization, it is recommended that
+	PFInfo.exe be run in each site.
+	
+	Version 3.1 and higher of PFINFO.EXE, supports the use of an .INI file. The
+	program will read the settings in a file called PFINFO.INI, which should be
+	present in the same directory as the executable. The .INI file, allows
+	PFINFO.EXE to be run in batch mode, possibly in a scheduled manner.
+	
+	For more information on the INI file settings available, please refer to the INI
+	file.
+	
+	USING PFINFO.EXE TO RECOVER LOST PUBLIC FOLDER PERMISSION
+	===========================================================
+	
+	In some circumstances, the permissions on all (or some) public folders in an
+	organisation may be lost. In these situations, PFINFO.EXE can be used to easily
+	recover public folder permissions. If a current version of the PFADMDAT.TXT
+	file, created by PFINFO.EXE for use with PFADMIN.EXE, is available, this file
+	can be imported to restore the permissions. This assumes that the file was
+	created, before the loss of public folder permissions.
+	
+	If a valid PFADMDAT.TXT file is not available, follow the steps below:
+	
+	1) On a recovery server, install Microsoft Exchange Server.
+	
+	  a) Select the option to create a NEW SITE.
+	  b) Use the same Organization and Site names as the production servers.
+	
+	2) Upgrade the server to the same service pack as the production server.
+	
+	3) Restore the Public Information Store, from Backup, onto the recovery server.
+	
+	4) DO NOT run the DS/IS Consistency Adjuster. If you do, you will lose all Public
+	Folder permissions.
+	
+	5) Create a test user, on the recovery server.
+	
+	6) Install the Exchange client or Outlook on the recovery server.
+	
+	7) Create a profile for the test user created in step 5.
+	
+	8) Run PFINFO.EXE
+	
+	  a) Do not select the option "Only extract data for public folders homed in
+	  the current site".
+	  b) Click on the Options button to display the PFAdmin Output File Option
+	  dialog. Make sure that the option to include Public Folder Permissions is
+	  selected. Click OK.
+	  c) Click on Start and select the profile created in step 7.
+	
+	9) Once PFINFO.EXE has completed, use the file PFADMDAT.TXT created by
+	PFINFO.EXE, as input for PFADMIN.EXE
+	
+	REQUIREMENTS
+	============
+	The program requires that the Microsoft Exchange client be installed on the
+	machine on which it is run. The program also requires the following DLL files,
+	most of which should be installed when you install the Microsoft Exchange Client
+	and Administrator programs.
+	
+	ACLCLS.Dll
+	ADVAPI32.dll
+	COMCTL32.dll
+	COMDLG32.dll
+	GAPI32.dll
+	GDI32.dll
+	KERNEL32.dll
+	LZ32.dll
+	MAPI32.dll
+	MFC42.DLL
+	MPR.dll
+	MSVCIRT.dll
+	MSVCRT.dll
+	MSVCRT40.dll
+	NTDLL.dll
+	OLE32.dll
+	RPCRT4.dll
+	SHELL32.dll
+	USER32.dll
+	VERSION.dll
+	
+	DATA EXTRACTED BY THE PROGRAM
+	=============================
+	The current version of the program will extract the following information to the
+	delimited output file.
+	
+	1) Folder Name
+	2) Folder Path
+	3) Permissions
+	4) List of Public Folder Replicas
+	5) Number of Replicas of the Public Folder
+	6) Number of Items in the Public Folder
+	7) Size in KiloBytes of the contents of the folder, not including sub-folders
+	8) Age Limit
+	9) Replication Message Priority
+	10) Replication Schedule
+	11) Alias
+	12) Storage Limit (K)
+	13) Date the Public Folder was Created
+	14) Date the Public Folder was last modified (As seen in the Exchange
+	Administrator program)
+	15) Home Site
+	16) Home Server
+	17) E-mail Addresses
+	
+	AUTOMATING THE EXTRACTION OF PUBLIC FOLDER INFORMATION, USING WINAT
+	===================================================================
+	
+	It is possible to run PFINFO.EXE in a batch process. This will allow the program
+	to be run from a scheduler and hence it is possible to run the program every
+	night to make a backup of the public folder permissions. This can be extremely
+	useful in case of an emergency where all public folder permissions are lost, as
+	explained above.
+	
+	To extract public folder information in batch mode, you must be running PFINFO,
+	Version 3.5 or later. With this release the capability to read configuration
+	information from an INI file was added to the program. This allows the program
+	to be run without any user intervention, using the Windows NT AT Scheduler.
+	
+	Instead of using the Windows NT AT command to schedule a task from a command
+	prompt, it is easier to use the WINAT.EXE program that uses to GUI to schedule
+	tasks. The WINAT.EXE program ships in the Microsoft Windows NT Resource Kit.
+	
+	Running PFINFO.EXE using WINAT.EXE
+	-----------------------------------
+	
+	1) Start the Windows NT Schedule Service. Use the Exchange Service Account as the
+	startup account. If the Schedule service is started using the Local System
+	Account, PFINFO.EXE will fail with a MAPI Logon Error.
+	
+	2) Set the following settings in the PFINFO.INI file. This file should be in the
+	same directory as the PFINFO.EXE file.
+	
+	[PFINFO]
+	ProfileName="Any Valid Profile"
+	
+	Where "Any Valid Profile" is a profile containing the Exchange Server service.
+	The Exchange Server service should be configured with a server in the site that
+	you wish to extract public folder data from, as well as a mailbox on the server
+	specified. In addition to the above settings, you can also configure the names
+	of the output files, log file and other settings using the .INI file. For more
+	information on the INI file settings available, please refer to the section
+	below.
+	
+	3) Run WINAT.EXE
+	
+	4) From the Edit menu, select Add. This will bring up the Add Command dialog.
+	
+	5) In the Command edit box, enter
+	
+	"Path"\PFINFO -S
+	
+	Where "Path" is the full path to the PFINFO.EXE file.
+	
+	The -S command line option specifies that the program will be executed from a
+	service. If the -S option is specified, the program will execute without
+	displaying any user interface and not wait for any user input. However, you must
+	make sure that the ProfileName entry in the .INI file has a valid profile
+	specified and that this profile is not configured for offline use. Otherwise the
+	program will not be able to successfully perform a MAPI login and will fail.
+	
+	The -S option should only be specified when running PFINFO from the Windows NT
+	Scheduler. When running PFINFO interactively (from a command prompt or Windows
+	Explorer), the -S command line option should NOT be specified. When the -S
+	command line option is specified, the program assumes that it is being called
+	from a Service and initializes MAPI differently.
+	
+	6) Configure when you wish the program to be executed.
+	
+	7) Click on OK.
+	
+	8) Exit WINAT
+	
+	9) The Windows NT Scheduler will automatically execute PFINFO at the time
+	specified and the output files will be generated in the locations specified in
+	the PFINFO.INI file.
+	
+	Note:
+	The INI file with all the configuration information must be present in the same
+	directory as the executable and must be called PFINFO.INI
+	
+	TROUBLESHOOTING
+	===============
+	The program generates a log that contains all errors that the program encounters.
+	It also supports the following command line options that increase the amount of
+	information logged.
+	
+	-logmin
+	-logmed
+	-logmax
+	
+	KNOWN ISSUES
+	============
+	Error getting folder properties: Error E_FAIL - Unknown Failure "Folder Name"
+	---------------------------------------------------------------
+	This error is noticed when trying there are no accessible replicas of the folder.
+	The error may be noticed when a Public Store (PUB.EDB) is restored on a recovery
+	server with a different name from the server from which the PUB.EDB was
+	obtained.
+	
+	To resolve this problem, go to the Instances page of the Public Information Store
+	on the recovery server and add an instance of every public folder to the local
+	server.
+	
+	PFINFO.EXE crashes with a Dr. Watson dump
+	-----------------------------------------
+	Check the version of the ACLCLS.DLL file. The time stamp should be 1/15/96 or
+	later.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : exc55 
+	Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+	Version           : winnt:5.5
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

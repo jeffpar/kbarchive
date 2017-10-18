@@ -1,0 +1,114 @@
+---
+layout: page
+title: "Q82747: How Windows Prints to a Network"
+permalink: kb/082/Q82747/
+---
+
+## Q82747: How Windows Prints to a Network
+
+	Article: Q82747
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:3.1,3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 24-SEP-1999
+	
+	3.10 3.11
+	
+	WINDOWS
+	
+	kbprint kb3rdparty kbnetwork
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows versions 3.1, 3.11 
+	-------------------------------------------------------------------------------
+	
+	
+	SUMMARY
+	=======
+	
+	Microsoft Windows version 3.1 uses a network device driver to manage printing to
+	network servers by integrating many network printing utilities into Windows.
+	Printing enhancements that are not supported by the network driver and that rely
+	on hooking MS-DOS calls or ROM BIOS calls may not work correctly when Windows
+	prints directly to the port. Using LPT1.DOS (or LPT1.OS2) passes printer output
+	through MS-DOS to these enhancements; however, being terminate-and-stay-resident
+	(TSR), these enhancements may create problems in Windows unless the program
+	takes the usual precautions necessary to make a TSR program compatible with
+	Windows.
+	
+	MORE INFORMATION
+	================
+	
+	The most common MS-DOS enhancement for printing is the network printer
+	redirection, which allows a network user to print documents on a printer
+	attached to a server. Examples of printer redirection utilities include the NET
+	USE command in Microsoft LAN Manager and the CAPTURE command in Novell NetWare.
+	
+	Windows handles network redirections using a Windows network driver, a program
+	that Windows uses to manage the network. These drivers make printing over the
+	network transparent to the user and also allow the user to connect and
+	disconnect to network printers.
+	
+	If you have a network for which a network driver is not installed by Windows
+	Setup, contact your network vendor to determine if a Windows driver is
+	available. Windows 3.1 installs a driver for all major networks, including
+	Novell Netware, Microsoft LAN Manager, Microsoft MS-Net, Banyan Vines, 3Com
+	3+Share and 3+Open, Artisoft LANtastic, and IBM DOS LAN Requester. In some
+	cases, the driver ships with the network software and not Windows itself.
+	
+	When you print a document on a network, Windows calls the network driver to
+	determine if the port in use is connected to a network printer. If so, the
+	network driver is expected to open a file handle to the network device. If the
+	network driver reports that the device is not connected to the network, Windows
+	prints to the port using the Windows COMM driver. The COMM driver does direct
+	port input/output (I/O); it does not call MS-DOS or the BIOS. Therefore, a
+	printing enhancement not supported by the network driver is bypassed by Windows.
+	Printing enhancements work by hooking either INT 21h writes or INT 17h, the BIOS
+	functions to control the printer. The COMM driver cannot use INT 17h because of
+	performance considerations; calling INT 17h from Windows would require multiple
+	protected-to-real mode transitions for each byte of output.
+	
+	Remote spooling enhancements such as Novell's RPRINTER do not require any special
+	support on the machine that creates the printout; the network driver supports
+	connections to network printers whether they are on a server or on another
+	workstation. There are known problems with earlier versions of RPRINTER that
+	were corrected by Novell. If you encounter problems with RPRINTER in Windows
+	3.1, contact Novell for the latest version.
+	
+	The only caution for using RPRINTER or LANSpool is not to print to the same port
+	as a local port through the Windows COMM driver. This causes the output to be
+	mixed randomly with the output from RPRINTER. If the workstation running
+	RPRINTER needs to print to the same printer, connect the port over the network.
+	Printing is not as fast in this case, but the output is correctly sequenced.
+	
+	There is no explicit support in Windows for non-network printing enhancements
+	that hook MS-DOS or ROM BIOS function calls. In general, the way to use these
+	enhancements is to cause Windows to use MS-DOS calls instead of the Windows COMM
+	driver. This is the reason for LPT1.DOS and LPT1.OS2 (new Windows 3.1 users see
+	the former). Connecting to these ports causes Windows to print using MS-DOS
+	calls instead of the Windows COMM driver. Alternately, you can turn off the Fast
+	Printing Direct To Port check box in the Connect dialog box. (To access this
+	dialog box, open Printers icon in Control Panel.) In general, printing
+	performance and error condition handling are poorer; however, printing
+	enhancements see the output to the printer when they are passed through MS-DOS.
+	
+	Printing enhancements are TSR programs. Like all TSR programs, they require
+	special precautions to avoid problems in Windows. If a printing enhancement
+	fails in Windows, by crashing or causing incorrect output, it may be
+	incompatible with Windows because it does not handle multiple MS-DOS Virtual
+	Machines (VMs) or critical sections. Some enhancements may work if no MS-DOS VMs
+	are open; try printing from a Windows application without any MS-DOS
+	applications or MS-DOS prompts running.
+	
+	Additional query words: 3.10 3.11
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+	Version           : WINDOWS:3.1,3.11
+	
+	=============================================================================
+	

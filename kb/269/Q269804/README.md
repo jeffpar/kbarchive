@@ -1,0 +1,106 @@
+---
+layout: page
+title: "Q269804: Magic School Bus: Slow Performance with Network Installation"
+permalink: kb/269/Q269804/
+---
+
+## Q269804: Magic School Bus: Slow Performance with Network Installation
+
+	Article: Q269804
+	Product(s): Microsoft Home Kids Products
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbnetwork kbsetup mskids kbimu
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Scholastic's The Magic School Bus in Concert 
+	- Scholastic's The Magic School Bus Lands on Mars 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you run Microsoft Scholastic's The Magic School Bus in Concert or Microsoft
+	Scholastic's The Magic School Bus Lands on Mars from a shared CD-ROM drive over
+	your network, you may experience any of the following symptoms:
+	
+	- Sound playback in the program may pause or skip.
+	
+	- Animation playback in the program may pause or skip.
+	
+	- Scene transitions may be unexpectedly slow.
+	
+	- You may experience other symptoms of slow performance.
+	
+	CAUSE
+	=====
+	
+	This behavior can occur if you used a Universal Naming Convention (UNC) network
+	path to the shared CD-ROM drive to install The Magic School Bus in Concert or
+	The Magic School Bus Lands on Mars.
+	
+	When you install The Magic School Bus in Concert or The Magic School Bus Lands on
+	Mars from a shared CD-ROM drive over your network, you must map a network drive
+	to the shared CD-ROM drive before you install the program.
+	
+	RESOLUTION
+	==========
+	
+	To prevent this issue from occurring, map a network drive to the shared CD-ROM
+	drive, and then install the program from the mapped network drive.
+	
+	To resolve this issue, uninstall the program, map a network drive to the shared
+	CD-ROM drive, and then reinstall the program from the mapped network drive. To
+	do this:
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click Add/Remove Programs.
+	
+	3. Click "Scholastic's The Magic School Bus in Concert" or "Scholastic's The
+	  Magic School Bus
+	  Lands on Mars", and then click Add/Remove.
+	
+	4. Follow the instructions on the screen to remove the program.
+	
+	5. Right-click Start, and then click Explore.
+	
+	6. On the Tools menu, click Map Network Drive.
+	
+	7. Note the drive letter in the Drive box.
+	
+	8. In the Path box, type the following line
+	
+	  \\<server>\<share>
+	
+	  where <server> is the name of the server on which the program CD-ROM is
+	  located, and <share> is the name of the shared folder in which the
+	  program CD-ROM is located.
+	
+	9. Click to select the "Reconnect at logon" check box, and then click OK.
+	
+	10. Click Start, and then click Run.
+	
+	11. In the Open box, type <drive>:\, where <drive> is the drive
+	  letter of the network drive that you mapped in steps 5 through 9, and then
+	  click OK.
+	
+	12. If necessary, browse to the folder on the mapped network drive that contains
+	  the program CD-ROM.
+	
+	13. Double-click the MSBCAuto.exe file or the MSBMAuto.exe file, and then follow
+	  the instructions on the screen to reinstall the program.
+	
+	Additional query words: kids mskids msbconcert msbmars jerky jumpy lag drag
+	
+	======================================================================
+	Keywords          : kbnetwork kbsetup mskids kbimu 
+	Technology        : kbHomeProdSearch kbKidsSearch kbMSBSearch
+	Version           : :
+	Issue type        : kbprb
+	
+	=============================================================================
+	

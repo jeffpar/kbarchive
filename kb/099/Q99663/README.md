@@ -1,0 +1,87 @@
+---
+layout: page
+title: "Q99663: PC Forms: Installing E-Forms Designer on Remote Clients"
+permalink: kb/099/Q99663/
+---
+
+## Q99663: PC Forms: Installing E-Forms Designer on Remote Clients
+
+	Article: Q99663
+	Product(s): Microsoft Mail For PC Networks
+	Version(s): WINDOWS:1.0,3.0,3.2
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 31-OCT-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Electronic Forms Designer, version 1.0, used with:
+	   - Microsoft Mail for PC Networks, versions 3.0, 3.2 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The Server and User Setup programs provided with Microsoft Electronic Forms
+	Designer assume that form users can connect to a network to run the User Setup
+	program, and that users can access the sample E-forms from a shared location on
+	the network. Some users, such as those using version 3.2 of Microsoft Mail
+	Remote for Windows, may not be able to connect to the network to run User Setup
+	or to access shared E-forms.
+	
+	MORE INFORMATION
+	================
+	
+	If you do not connect to the network, you can install the E-form run-time files
+	and sample E-forms by using the Microsoft Electronic Forms Designer disks and
+	following these steps:
+	
+	1. Insert Disk 1 of the Electronic Forms Designer into the floppy disk drive of
+	  the remote machine.
+	
+	2. From the Windows File Manager, run the SETUP.EXE program from the root
+	  directory of Disk 1. When the first dialog box appears, choose the Server
+	  Setup option.
+	
+	3. In the third dialog box, specify the local Windows directory as the location
+	  for files (for example, C:\WINDOWS). Follow the prompts to complete Server
+	  Setup.
+	
+	4. From the Windows File Manager, run the SETUP.EXE program that Server Setup
+	  created in the local WINDOWS\EFORMS directory. This adds form commands to
+	  MSMAIL.EXE and makes the local copies of the sample forms available when you
+	  are offline from the network.
+	
+	5. To save disk space, use the Windows File Manager to remove unnecessary files
+	  created by Server Setup. To do this, delete the WINDOWS\RUNTIME directory
+	  along with all the files it contains, and delete all files in the
+	  WINDOWS\EFORMS directory. DO NOT delete the PHONE and ROUTE directories or
+	  the files they contain, because they allow you to work with the phone and
+	  routing forms when you are not connected to the network.
+	
+	6. In step 4 above, User Setup created a SharedExtensionsDir entry in the
+	  MSMAIL.INI file that references the local Windows directory. If you also need
+	  access to forms or other Microsoft Mail extensions stored in a shared
+	  location, copy the custom message declarations in the SHARED.INI file into
+	  the [Custom Messages] section of the MSMAIL.INI file. In each declaration
+	  copied to MSMAIL.INI, replace <ExtsDir> with C:\WINDOWS\ and change the
+	  SharedExtensionsDir entry to reference the shared location on the network.
+	
+	7. In step 4 above, User Setup created an entry in the Custom Commands section
+	  of the local MSMAIL.INI file. The entry adds a Select E-Form command to the
+	  Mail menu. The access key for the Select E-Form command is "S." The Microsoft
+	  Mail Remote client also uses "S" as the access key for the remote "Settings"
+	  command. You can change the access key for the Select E-Form command by
+	  repositioning the ampersand (&) character in the custom command
+	  declaration.
+	
+	Additional query words: 1.00 3.00 3.20 eform
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbZNotKeyword2 kbMailSearch kbZNotKeyword3
+	Version           : WINDOWS:1.0,3.0,3.2
+	
+	=============================================================================
+	

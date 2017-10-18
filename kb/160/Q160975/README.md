@@ -1,0 +1,117 @@
+---
+layout: page
+title: "Q160975: Photo Editor: Problems Controlling Resolution of PCD File"
+permalink: kb/160/Q160975/
+---
+
+## Q160975: Photo Editor: Problems Controlling Resolution of PCD File
+
+	Article: Q160975
+	Product(s): Microsoft PowerPoint for Windows
+	Version(s): 3.0; WINDOWS:97
+	Operating System(s): 
+	Keyword(s): kberrmsg kbgraphic kbtshoot kbusage
+	Last Modified: 21-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Photo Editor for Windows 95, version 3.0 
+	- Microsoft PowerPoint 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If you try to import a Kodak Photo-CD (.pcd) file into Photo Editor, and use the
+	Options button in the Open dialog box to change the size and/or color depth of
+	the image, you may receive one of the following error messages:
+	
+	  Could not read file
+	
+	  -or-
+	
+	  This program has performed an illegal operation and will be shut down. If the
+	  problem persists, contact the program vendor.
+	
+	If you click the Details button, you see the following additional information:
+	
+	  PHOTOED caused an Invalid Page Fault in module PHOTOED.EXE at
+	  <address>.
+	
+	If you don't receive an error message, the imported image may be cropped, or you
+	may see multiple copies of the image.
+	
+	CAUSE
+	=====
+	
+	This problem occurs if you click the Preview button in the Open dialog box
+	before you click the Options button to change the resolution.
+	
+	If you don't click the Preview button, the image imports correctly.
+	
+	
+	RESOLUTION
+	==========
+	
+	If you want to control the resolution and color depth a .pcd of a file when you
+	import it into Photo Editor, do not use the Preview button to see what the image
+	looks like. Use the Options button instead. When you click the Options button,
+	the Photo CD dialog box appears. This dialog box provides a thumbnail image of
+	the .pcd file.
+	
+	If you really want to use the Preview button, you can do the following:
+	
+	1. In Photo Editor, click Open on the File menu.
+	
+	2. Open the folder that contains the .pcd file you wish to import.
+	
+	3. Click the Preview button to see what the .pcd file looks like.
+	
+	4. Click the Close button to close the Preview dialog box.
+	
+	5. Click the name of a different .pcd file.
+	
+	6. Click the name of the .pcd file you actually want to import.
+	
+	7. Click the Options button.
+	
+	8. In the Photo CD dialog box, choose the resolution, color depth, and
+	  orientation that you want to use. Click the OK button.
+	
+	9. Click Open.
+	
+	STATUS
+	======
+	
+	Microsoft is researching this problem and will post new information here in the
+	Microsoft Knowledge Base as it becomes available.
+	
+	MORE INFORMATION
+	================
+	
+	Each .pcd file contains the same picture in several different sizes. For
+	example, a single .pcd file may contain the same picture in the following
+	dimensions:
+	
+	  192 x  128 pixels
+	  384 x  256 pixels
+	  768 x  512 pixels
+	 1536 x 1024 pixels
+	
+	When you open a .pcd file in Photo Editor, you can choose which of these picture
+	sizes to extract. You can also choose whether the picture imports in 24-bit
+	colors, or in 8-bit (256) colors. You can additionally choose to import the
+	picture right-side up, upside down, rotated left, or rotated right.
+	
+	Additional query words: 3.00 97 8.00 powerpt office word ppt8 word8 word97 shared components photoed.exe compact disc, scan ipf kbconvert
+	
+	======================================================================
+	Keywords          : kberrmsg kbgraphic kbtshoot kbusage 
+	Technology        : kbOfficeSearch kbHomeProdSearch kbPowerPtSearch kbPowerPt97 kbOffice97Search kbPowerPt97Search kbOffice97 kbVFP300
+	Version           : :3.0; WINDOWS:97
+	Hardware          : x86
+	Issue type        : kbprb
+	
+	=============================================================================
+	

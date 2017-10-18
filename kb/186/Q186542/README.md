@@ -1,0 +1,396 @@
+---
+layout: page
+title: "Q186542: Terminal Server Error Messages: 2500 to 2999"
+permalink: kb/186/Q186542/
+---
+
+## Q186542: Terminal Server Error Messages: 2500 to 2999
+
+	Article: Q186542
+	Product(s): Microsoft Windows NT
+	Version(s): WinNT:4.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 11-DEC-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes Terminal Server error messages 2500 to 2999.
+	
+	MORE INFORMATION
+	================
+	
+	Error 2500
+	----------
+	
+	  The program below returned an MS-DOS error code:
+	
+	Error 2501
+	----------
+	
+	  The program below needs more memory:
+	
+	Error 2502
+	----------
+	
+	  The program below called an unsupported MS-DOS function:
+	
+	Error 2503
+	----------
+	
+	  The workstation failed to boot.
+	
+	Error 2504
+	----------
+	
+	  The file below is corrupt.
+	
+	Error 2505
+	----------
+	
+	  No loader is specified in the boot-block definition file.
+	
+	Error 2506
+	----------
+	
+	  NetBIOS returned an error: The NCB and SMB are dumped above.
+	
+	Error 2507
+	----------
+	
+	  A disk I/O error occurred.
+	
+	Error 2508
+	----------
+	
+	  Image parameter substitution failed.
+	
+	Error 2509
+	----------
+	
+	  Too many image parameters cross disk sector boundaries.
+	
+	Error 2510
+	----------
+	
+	  The image was not generated from an MS-DOS diskette formatted with /S.
+	
+	Error 2511
+	----------
+	
+	  Remote boot will be restarted later.
+	
+	Error 2512
+	----------
+	
+	  The call to the Remoteboot server failed.
+	
+	Error 2513
+	----------
+	
+	  Cannot connect to the Remoteboot server.
+	
+	Error 2514
+	----------
+	
+	  Cannot open image file on the Remoteboot server.
+	
+	Error 2515
+	----------
+	
+	  Connecting to the Remoteboot server...
+	
+	Error 2516
+	----------
+	
+	  Connecting to the Remoteboot server...
+	
+	Error 2517
+	----------
+	
+	  Remote boot service was stopped; check the error log for the cause of the
+	  problem.
+	
+	Error 2518
+	----------
+	
+	  Remote boot startup failed; check the error log for the cause of the problem.
+	
+	Error 2519
+	----------
+	
+	  A second connection to a Remoteboot resource is not allowed.
+	
+	Error 2550
+	----------
+	
+	  The browser service was configured with MaintainServerList=No.
+	
+	Error 2610
+	----------
+	
+	  Service failed to start since none of the network adapters started with this
+	  service.
+	
+	Error 2611
+	----------
+	
+	  Service failed to start due to bad startup information in the registry.
+	
+	Error 2612
+	----------
+	
+	  Service failed to start because its database is absent or corrupt.
+	
+	Error 2613
+	----------
+	
+	  Service failed to start because RPLFILES share is absent.
+	
+	Error 2614
+	----------
+	
+	  Service failed to start because RPLUSER group is absent.
+	
+	Error 2615
+	----------
+	
+	  Cannot enumerate service records.
+	
+	Error 2616
+	----------
+	
+	  Workstation record information has been corrupted.
+	
+	Error 2617
+	----------
+	
+	  Workstation record was not found.
+	
+	Error 2618
+	----------
+	
+	  Workstation name is in use by some other workstation.
+	
+	Error 2619
+	----------
+	
+	  Profile record information has been corrupted.
+	
+	Error 2620
+	----------
+	
+	  Profile record was not found.
+	
+	Error 2621
+	----------
+	
+	  Profile name is in use by some other profile.
+	
+	Error 2622
+	----------
+	
+	  There are workstations using this profile.
+	
+	Error 2623
+	----------
+	
+	  Configuration record information has been corrupted.
+	
+	Error 2624
+	----------
+	
+	  Configuration record was not found.
+	
+	Error 2625
+	----------
+	
+	  Adapter id record information has been corrupted.
+	
+	Error 2626
+	----------
+	
+	  An internal service error has occured.
+	
+	Error 2627
+	----------
+	
+	  Vendor id record information has been corrupted.
+	
+	Error 2628
+	----------
+	
+	  Boot block record information has been corrupted.
+	
+	Error 2629
+	----------
+	
+	  The user account for this workstation record is missing.
+	
+	Error 2630
+	----------
+	
+	  The RPLUSER local group could not be found.
+	
+	Error 2631
+	----------
+	
+	  Boot block record was not found.
+	
+	Error 2632
+	----------
+	
+	  Chosen profile is incompatible with this workstation.
+	
+	Error 2633
+	----------
+	
+	  Chosen network adapter id is in use by some other workstation.
+	
+	Error 2634
+	----------
+	
+	  There are profiles using this configuration.
+	
+	Error 2635
+	----------
+	
+	  There are workstations, profiles or configurations using this boot block.
+	
+	Error 2636
+	----------
+	
+	  Service failed to backup remoteboot database.
+	
+	Error 2637
+	----------
+	
+	  Adapter record was not found.
+	
+	Error 2638
+	----------
+	
+	  Vendor record was not found.
+	
+	Error 2639
+	----------
+	
+	  Vendor name is in use by some other vendor record.
+	
+	Error 2640
+	----------
+	
+	  (boot name, vendor id) is in use by some other boot block record.
+	
+	Error 2641
+	----------
+	
+	  Configuration name is in use by some other configuration.
+	
+	Error 2660
+	----------
+	
+	  The internal database maintained by the Dfs service is corrupt
+	
+	Error 2661
+	----------
+	
+	  One of the records in the internal Dfs database is corrupt
+	
+	Error 2662
+	----------
+	
+	  There is no volume whose entry path matches the input Entry Path
+	
+	Error 2663
+	----------
+	
+	  A volume with the given name already exists
+	
+	Error 2664
+	----------
+	
+	  The server share specified is already shared in the Dfs
+	
+	Error 2665
+	----------
+	
+	  The indicated server share does not support the indicated Dfs volume
+	
+	Error 2666
+	----------
+	
+	  The operation is not valid on a non-leaf volume
+	
+	Error 2667
+	----------
+	
+	  The operation is not valid on a leaf volume
+	
+	Error 2668
+	----------
+	
+	  The operation is ambiguous because the volume has multiple servers
+	
+	Error 2669
+	----------
+	
+	  Unable to create a junction point
+	
+	Error 2670
+	----------
+	
+	  The server is not Dfs Aware
+	
+	Error 2671
+	----------
+	
+	  The specified rename target path is invalid
+	
+	Error 2672
+	----------
+	
+	  The specified Dfs volume is offline
+	
+	Error 2673
+	----------
+	
+	  The specified server is not a server for this volume
+	
+	Error 2674
+	----------
+	
+	  A cycle in the Dfs name was detected
+	
+	Error 2675
+	----------
+	
+	  The operation is not supported on a server-based Dfs
+	
+	Error 2690
+	----------
+	
+	  Dfs internal error
+	
+	Error 2999
+	----------
+	
+	  This is the last error in NERR range.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+	Version           : WinNT:4.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

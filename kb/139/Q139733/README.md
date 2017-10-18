@@ -1,0 +1,951 @@
+---
+layout: page
+title: "Q139733: Windows NT 3.5x Setup Troubleshooting Guide"
+permalink: kb/139/Q139733/
+---
+
+## Q139733: Windows NT 3.5x Setup Troubleshooting Guide
+
+	Article: Q139733
+	Product(s): Microsoft Windows NT
+	Version(s): 3.5 3.51
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation versions 3.5, 3.51 
+	- Microsoft Windows NT Server versions 3.5, 3.51 
+	-------------------------------------------------------------------------------
+	
+	     Microsoft(R) Windows NT(TM) 3.5x Setup Troubleshooting Guide
+	
+	-----------------------------------------------------------------------
+	| INFORMATION PROVIDED IN THIS DOCUMENT IS PROVIDED "AS IS" WITHOUT     |
+	| WARRANTY  OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT |
+	| LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS   |
+	| FOR A PARTICULAR PURPOSE. The user assumes the entire risk as to the  |
+	| accuracy and the use of this information. This information may be     |
+	| copied and distributed subject to the following conditions:           |
+	| 1) All text must be copied without modification and all pages must be |
+	| included;  2) All components of this information must be distributed  |
+	| together; and  3) This information may not be distributed for profit. |
+	|                                                                       |
+	| Copyright (C) 1995 Microsoft Corporation.  All Rights Reserved.       |
+	| Microsoft, MS-DOS, and Windows are registered trademarks and Windows  |
+	| NT is a trademark of Microsoft Corporation.                           |
+	| COMPAQ is a registered trademark of Compaq Computer Corporation.      |
+	| Intel and Pentium are registered trademarks of Intel Corporation.     |
+	| MIPS is a registered trademark of MIPS Computer Systems, Inc.         |
+	| OS/2, and PS/2 are registered trademarks of International Business    |
+	| Machines Corporation.                                                 |
+	| Panasonic is a registered trademark of Matsushita Electric Co., Ltd.  |
+	| SONY is a registered trademark of Sony Corporation.                   |
+	-----------------------------------------------------------------------
+	
+	Table of Contents
+	=================
+	
+	1. Introduction
+	2. Pre-setup and Text-mode Setup Issues
+	3. Setup Failure During Reboot from Character-based to GUI-based Mode
+	4. GUI-Based Setup to First Boot Issues
+	
+	1. Introduction
+	===============
+	
+	This Troubleshooting Guide describes how to overcome problems installing
+	Windows NT on Intel(R) architecture (x86) computers. These techniques may
+	work for computers that are on the Windows NT Hardware Compatibility List
+	(HCL) and for computers that are not on the HCL, that is, not certified by
+	Microsoft to be Windows NT compatible.
+	
+	The HCL is a compilation of computers and system hardware that have been
+	extensively tested with Windows NT for stability and compatibility. It is
+	the guide used by Microsoft Product Support Services to determine whether
+	or not a computer is supported for use with the Windows NT operating
+	system.
+	
+	If you are installing a computer system which is mission critical, please
+	see the HCL included in the Support directory of the Windows NT CD-ROM for
+	a list of computers which are currently certified by Microsoft to be
+	Windows NT compliant. If your system is not included on the list, contact
+	Microsoft for an updated Windows NT HCL.
+	
+	MICROSOFT DOES NOT MAKE ANY GUARANTEES THAT WINDOWS NT WILL INSTALL OR
+	MAINTAIN DATA INTEGRITY AFTER FOLLOWING THE INSTRUCTIONS AND SUGGESTIONS
+	CONTAINED HEREIN
+	
+	2. Pre-setup and Text-mode Setup Issues
+	=======================================
+	
+	Architecture of Character-based Setup
+	-------------------------------------
+	
+	During the first part of Setup (referred to as character-based Setup)
+	Windows NT examines your system architecture for foundation level
+	information and drivers. This information includes:
+	
+	  CPU type (x86, MIPS(R), ALPHA or PPC),
+	  Motherboard type (PCI, VESA, MCA, EISA, or ISA)
+	  Hard Drive Controllers
+	  File Systems
+	  Free Space on Hard Drives
+	  Memory
+	
+	Windows NT looks for any devices that must be initialized at system start
+	up in order for your computer to run. Windows NT also constructs a "mini"
+	version of Windows NT, which is used to reboot the system into the GUI-mode
+	(Graphical User Interface mode) portion of Setup. Therefore, it is critical
+	that the information which Windows NT gathers at this point is accurate.
+	
+	Windows NT may incorrectly detect controllers and settings if the system is
+	using non-standard or proprietary bus components or enhancements which do
+	not follow industry set standards, these "non-standard" enhancements
+	include SMP1.1, PCI 2.1, special bus drivers, or caching chips for burst
+	mode transfer. If the information gathered is incorrect, Setup will most
+	likely fail at a later stage. Incorrect detection is often a symptom of a
+	hardware or configuration problem that ma also cause the installation to
+	fail.
+	
+	Before You Begin Installation of Windows NT
+	-------------------------------------------
+	
+	HARDWARE:
+	
+	Windows NT is a 32-bit operating system and is very hardware intensive. In
+	MS-DOS(R) and most 16-bit operating systems, hardware is not accessed until
+	it is required. Under Windows NT, hardware drivers are written to and
+	polled much more heavily for input/output (I/O) instructions. Hardware
+	problems that have gone unnoticed or have appeared minor under other
+	operating systems, are likely to be amplified when running under Windows
+	NT.
+	
+	Minimum Hardware Requirements:
+	
+	  Windows NT Workstation:
+	
+	     12MB of RAM
+	     VGA level video support
+	     Keyboard
+	     IDE, EIDE, SCSI or ESDI hard drive
+	     386 or 486/25 processor or better
+	     CD-ROM, floppy or active network connection
+	
+	  Windows NT Server:
+	
+	     16MB of RAM
+	     VGA level video support
+	     Keyboard
+	     IDE, EIDE, SCSI or ESDI hard drive
+	     386 or 486/25 processor or better
+	     CD-ROM, 1.44 MB or 1.2 MB floppy or active network connection
+	
+	  Note: On Windows NT Server, 16MB of RAM affords minimal functionality,
+	  Microsoft highly recommends 32MB of RAM or more. Microsoft also
+	  recommends the following preferred hardware:
+	
+	     486DX2/50  processor or better
+	     28.8 v.34 external modem, for remote debugging and troubleshooting
+	     Windows NT compatible CD-ROM drive
+	
+	Minimum Space Requirements for Windows NT Workstation and Server:
+	
+	  Standard Installation          90 MB free drive space
+	  WINNT /b                       94 MB free drive space
+	  Copying I386 directory to HD   125 MB free drive space
+	
+	NOTE: For ease of supportability, Microsoft recommends at least a 300 MB
+	FAT system partition for systems that do not require security. This space
+	is used for Windows NT installation, pagefile and MS-DOS 6.22 or Windows(R)
+	95 installation. The advantage of this configuration is the ability to copy
+	over drivers or boot files in the event of virus, file corruption or
+	upgrade problems.
+	
+	Disk Format:
+	
+	To access a disk from Windows NT, the drive must be uncompressed or
+	compressed with NTFS file compression included in Windows NT 3.51. Windows
+	NT is not compatible with Microsoft DoubleSpace, Stacker or any other
+	compression software or hardware. A Windows NT installation requires the
+	boot drive be formatted with the FAT file system.
+	
+	Windows NT supports only the following EIDE addressing schemes:
+	
+	  LBA, Logical Block Addressing
+	  ONTrack Disk Manager
+	  EZDrive
+	  ECHS, Extended Cylinder Head Sector
+	
+	If you use one of the above methods, some implementations require special
+	partitioning utilities and disk preparation utilities. Do not format these
+	drives under Windows NT.
+	
+	Hardware Configuration:
+	
+	Prior to installing Windows NT, you should record configuration information
+	on all adapter cards in your computer. This should include memory addresses
+	and IRQ?s. Windows NT, as opposed to MS-DOS, does not install properly if
+	adapter cards share IRQ?s. Windows NT often detects an adapter card, but
+	not its memory address or IRQ. Use the following list as a starting point:
+	
+	  Adapter Card      Required information
+	  ---------------   -----------------------------------------------------
+	  Video             Adapter or chipset type
+	  Network Card      IRQ, I/O address, DMA (if used)
+	                    connector type (BNC, twisted pair, etc)
+	  SCSI Controller   Adapter model or chipset, IRQ and bus type
+	  Mouse             Mouse type, port (COM1, COM2, bus or PS/2(R))
+	  I/O Port          IRQ, I/0 address, DMA (if used) for each I/O port
+	  Sound Card        IRQ, I/O address, DMA
+	  External Modem    Port connections (COM1, COM2, etc).
+	  Internal Modem    Port connections or
+	                    IRQ and I/0 address (for non-standard configurations)
+	
+	NOTE: Windows NT currently does not support the following controller and
+	BIOS enhancements:
+	
+	  32 bit I/O BIOS switch
+	  Enhanced Drive Access
+	  Multiple Block addressing or Rapid IDE
+	  Write Back Cache on disk controllers
+	  Power Management features
+	
+	On some computers, Shadow RAM and L2 Write Back Cache cause detection and
+	hardware problems, including hangs and STOP Messages (blue screens). These
+	features must be disabled at the BIOS level. Check your computer user
+	manual for information on disabling these features.
+	
+	Verify that there are no POST (Power On Self Test) errors prior to starting
+	Setup, and make certain that each adapter and peripheral device is  set to
+	an independent IRQ, memory address and DMA channel.
+	
+	CHOOSING THE CORRECT SETUP METHOD:
+	
+	Standard Setup:
+	
+	Installing directly from the CD-ROM or floppy installation disks is almost
+	always the best method of setting up your Windows NT system. It offers the
+	best support for alternate hardware application layers (HALs), timing and
+	third party drivers. If you have a supported CD-ROM drive, you should
+	choose this install method.
+	
+	NOTE: If you lose or misplace the setup disks for the standard install, run
+	either "WINNT /OX" or "WINNT32 /OX" to create new boot disks for a
+	standard installation.
+	
+	WINNT or WINNT32 Setup:
+	
+	This method of installation was designed for network installations or for
+	computers with unsupported CD-ROM drives. It builds the boot disks and
+	performs a file copy of the installation directory to the hard drive before
+	the install procedure begins. It is the second best choice.
+	
+	  Network installs:
+	
+	  For networks where the Windows NT installation files are kept on a
+	  central server, network installations can be accomplished using winnt or
+	  by copying the entire "i386" directory from the install CD-ROM to the
+	  hard drive and then running WINNT from the local drive, this can reduce
+	  network traffic and dependency.
+	
+	NOTE: The method of copying the i386 directory can also be used when there
+	are hard drive or driver issues that otherwise block the use of the CD-ROM.
+	
+	Unsupported Setup Methods:
+	
+	"WINNT /B: or "WINNT32 /B" is used for floppyless installation. It copies
+	the boot files to the root of the C: drive and then uses the hard disk as
+	if it were the boot disk. If you have timing issues on your computer, such
+	as problems accessing the hard drive or similar error messages this method
+	can be used but "WINNT" is much more reliable.  Please note that this
+	method will fail if you are running BIOS level virus protection.
+	
+	"WINNT /W" allows you to install Windows NT from within Windows, bypassing
+	the drive locking and enhanced driver issues involved with a Microsoft
+	Windows install. Again, this bypasses many of the Windows NT install safety
+	features and is not recommended.
+	
+	"WINNT /U" is the command for unattended installation. This can only be
+	used on systems where all the components are standard and no user input
+	is required. If there are any problems the install will stop until the
+	problem is resolved.
+	
+	Troubleshooting: Pre-Setup and Text-Mode Setup Issues
+	-----------------------------------------------------
+	
+	Problem 1:
+	
+	When I put the boot disk in I get an error "Operating System not found"
+	and setup does not begin.
+	
+	Resolution 1:
+	
+	Check the system BIOS to make certain the A: drive is available as a boot
+	drive. If it is and the error still occurs this is an indication of a bad
+	boot floppy or a drive which is out of calibration. To create new floppies,
+	format 3 disks on the computer where you are planning to install Windows
+	NT, then from the CD-ROM \i386 directory type "WINNT /OX." This builds a
+	fresh set of install floppy disks.
+	
+	Problem 2:
+	
+	Right after I boot the install disk, my system hangs and the floppy drive
+	light stays lit, and it never goes any further.
+	
+	Resolution 2:
+	
+	This is an indication of a corrupt boot disk or a disk controller problem.
+	Please run "WINNT /OX," as above, to create new floppy disks. The disks
+	created will not be for a WINNT installation but for a standard floppy
+	boot installation.  If you are using a SCSI controller for your floppy
+	disks,
+	make certain that all internal and external devices are properly
+	terminated.
+	
+	Problem 3:
+	
+	When Setup inspects the hard drive the error "Setup did not find any hard
+	drives on your computer" appears.
+	
+	Resolution 3:
+	
+	Make sure all disk hard drives are powered up and properly connected to
+	your computer. If you are certain that the hard drives are properly
+	connected, check the following:
+	
+	1. Scan the drive for viruses, if the Master Boot Record is infected
+	  Windows NT may not see the hard drive properly. Please use a commercial
+	  scan program, in addition to MS Virus scan. Even if the drive is NTFS,
+	  the Master Boot Record can become infected.
+	
+	2. If the hard drive is SCSI, check the following:
+	
+	  a) Is there a valid boot sector on the drive?
+	  b) Are all SCSI devices properly terminated?
+	  c) If you are using a passive terminator, upgrade to an active
+	     terminator.
+	  d) Is the BIOS on the boot (initiating) SCSI adapter enabled?
+	  e) Are the BIOS?s on all non-initiating SCSI adapters disabled?
+	     When the BIOS on a non-initiating SCSI adapter is enabled it can
+	     error at bootup and/or interfere with hardware interrupt 13 calls to
+	     the initiating hard drive controller, resulting in the inability to
+	     boot or random hangs during installation.
+	  f) Was the hard drive partitioned and formatted using this SCSI adapter?
+	     If not, re-partitioning the drive or possibly low-level formatting
+	     the drive may be required.
+	  g) Verify that you SCSI configuration adheres to the following
+	     standards:
+	
+	     Standard    Bit    Cable  Pin   Max. x-fer    Max SCSI   Description
+	                 Width  Name   Cnt.  Rate MB/sec   Devices
+	     ---------------------------------------------------------------------
+	     SCSI-1      8      A     50       5           8          Asynchronous
+	     SCSI-2      8      A     50       10          8          fast
+	     SCSI-2      16     A+B   50+68    20          8          fast+wide **
+	     SCSI-2      32     A+B   50+68    40          8          fast+wide **
+	     SCSI-3      8      A     50       10          8          fast
+	     SCSI-3      16     P     68       20          16         fast+wide *
+	     SCSI-3      32     P+Q   68+68    40          32         fast+wide **
+	
+	     *  = with 1 cable
+	     ** = with 2 cables
+	
+	     NOTE: Windows NT currently supports only eight SCSI IDs, including
+	     the adapter ID.
+	
+	     Standard: The name of the SCSI standard as defined by ANSI.
+	
+	     Bit width: The number of bits that are transferred by the SCSI bus
+	     during the data transfer phase.
+	
+	     Cable Names: A is most common, P is getting more popular, A+B is
+	     currently not popular due to cost and space issues.
+	
+	     Pin Count: The number of pins in the cable. Refer to the above table
+	     for specific numbers.
+	
+	     Max Transfer Rate (MB/sec): Number of bits transferred over the SCSI
+	     bus in one second.
+	
+	     Max SCSI Devices: The Maximum number of devices that can be connected
+	     to the SCSI bus with one host adapter installed.
+	
+	     Descriptions
+	     ------------
+	
+	     Asynchronous: A handshaking protocol that requires a handshake for
+	                   every byte transferred (Synchronous transfers a  series
+	                   of bytes before handshaking occurs, increasing the data
+	                   transfer rate)
+	
+	     Fast:         Fast SCSI is an option that doubles the synchronous
+	                   data transfer speed. The speed is achieved by removing
+	                   excess margins from certain times and delays. To use
+	                   the fast SCSI option, high quality cables are required.
+	                   This option is compatible with normal synchronous SCSI
+	                   and has:
+	
+	                    - Up to 10 (megabytes) MB/second over an 8 bit bus.
+	
+	                    - Synchronous Data transfer negotiation required.
+	
+	                    - Single-ended implementation recommendations: maximum
+	                      cable length of 3 meters and active terminators.
+	
+	     Wide:         Wide SCSI is an option that adds a second SCSI cable of
+	                   68 conductors. This cable provides a data path for 16-
+	                   or 32-bit data. This path has separate handshake
+	                   signals and is for data transfer only. The transfer
+	                   rate is two or four times the present transfer rate of
+	                   SCSI-1. With the second cable, SCSI-2 remains
+	                   compatible with the 8-bit SCSI.
+	
+	  Check the Hardware Compatibility List for notes regarding SCSI adapters
+	  and any limitations with specific adapter cards.
+	
+	3. If the hard drive is EIDE, check the following:
+	
+	  a. Verify that the system drive is the first drive on the first IDE
+	     controller on the motherboard.
+	
+	  b. In the system BIOS, verify that file I/O and/or disk access are
+	     set to standard. Most computers ship with access set to either 32-bit
+	     or enhanced access.
+	
+	4. If the drive is IDE or ESDI, check the following:
+	
+	  a. Verify the controller is functional in a different computer if
+	     possible.
+	
+	  b. If the drive is larger than 1024 cylinders, make certain you are
+	     using a supported disk configuration utility.
+	
+	  c. Verify the drive is jumpered correctly for master, slave, or single
+	     drive.
+	
+	Problem 4:
+	
+	Windows NT gives me an error that I do not have a valid partition.
+	
+	Resolution 4:
+	
+	Refer to "Resolution 3" for hard drive troubleshooting information. Make
+	certain that you have a valid primary MS-DOS partition on the drive. You
+	can create one using Windows NT Setup or MS-DOS FDISK if necessary.
+	
+	Problem 5:
+	
+	When I try to format the partition, Windows NT gets to x% and then hangs.
+	
+	Resolution 5:
+	
+	Refer to "Resolution 3" for hard drive troubleshooting information. Make
+	certain that your hard drives do not have caching enabled. Set drive
+	controllers that have caching capabilities to Write Through, not Write
+	Back. If necessary, format the drive to approximately 5-10 MB less than the
+	actual size of the partition first selected.
+	
+	Problem 6:
+	
+	Setup hangs while copying files to the hard drive.
+	
+	Resolution 6:
+	
+	This is indicates one of 2 problems:
+	
+	1. The incorrect HAL being loaded.
+	
+	  Restart Setup. As soon as the message appears "Windows NT is examining
+	  your hardware configuration," press F5. This takes you to a menu with
+	  various HAL?s listed. If you are running on a Pentium(R) computer with a
+	  single processor, choose the single processor HAL, if you are running on
+	  a Compaq(R) or Sequent computer using an OEM HAL, select other and
+	  insert the disk provided by that manufacturer.
+	
+	2. Setup is using memory reserved memory.
+	
+	  Disable "Video Shadow RAM" and/or "32-bit Enhanced File Throughput" in
+	  the computer's BIOS.
+	
+	3. Setup Failure During Reboot from Character-based to GUI-based Mode
+	=====================================================================
+	
+	Architecture
+	------------
+	
+	During the reboot from Character-based to GUI-based Setup, Windows NT is
+	loaded for the first time. Windows NT tries to find a valid hard drive and
+	partition, poll the adapters and test the bus. This is the most likely
+	point of failure, when the drivers are loaded into memory and multi-
+	threading is initialized.
+	
+	STOP Messages (Blue Screens)
+	----------------------------
+	
+	Text mode STOP Messages or "blue screens" are used to identify and debug
+	hardware and software problems that occur while loading or running Windows
+	NT. When a mission critical operating system fails, is preferable to
+	generate an obvious error message, such as the blue screen, rather than to
+	simply fail in an "invisible" manner and possibly corrupt data. The blue
+	screen consists of a STOP message, the text translation, the addresses of
+	the violating call, and the drivers loaded at the time of the stop screen.
+	The STOP screen give you and a Product Support Services Engineer the
+	necessary information to locate and identify problem areas.
+	
+	STOP Messages indicate where the error has occurred at both the address and
+	driver levels, for example:
+	
+	  *** STOP: 0x0000001E (0xC0000047,0xFA8418B4,0x8025ea21,0xfd6829e8)
+	  Unhandled Kernel exception c0000047 from fa8418b4 (8025ea21,fd6829e8)
+	  *** Address fa8418b4 has base at fa840000 - i8042prt.SYS
+	  *** Address 8025ea21 has base at 8025c000 - SCSIPORT.SYS
+	
+	The STOP Message identifies the type of exception, the exception indicates
+	where the problem occurred, that is, whether it was user mode (involving
+	user mode operating system software) or kernel mode (involving operating
+	system, third-party drivers or hardware). The third and fourth line
+	describe which components were immediately involved and at what addresses.
+	For example, if the above error occurred during Setup, the problem might be
+	in the driver which involves the SCSI portion of the operating system. If
+	you receive this error during Setup, you should make certain that the SCSI
+	controller you are using is compatible with Windows NT and that the IRQ?s,
+	SCSI ID?s and termination are correct on the computer. If you are sure all
+	of the above are correctly configured, then you can try swapping out the
+	SCSI controller card for another and try installing again.
+	
+	For more information on STOP Messages, see the Windows NT Resource Kit.
+	
+	Troubleshooting: Character-based to GUI-based Mode Setup Failures
+	-----------------------------------------------------------------
+	
+	Problem 1:
+	
+	After removing the third setup disk from my computer and rebooting, a blue
+	screen saying "STOP: 0x0000007b Inaccessible Boot Device" appears and Setup
+	stops there.
+	
+	Resolution 1:
+	
+	See "Resolution 3" of Part 1: Troubleshooting: Pre-setup and Text-mode
+	Setup Issues.
+	
+	Problem 2:
+	
+	After removing the third setup disk from the computer and rebooting, a blue
+	screen with the location, "0x4,0,0,0" appears and Setup stops there.
+	
+	Resolution 2:
+	
+	See "Resolution 3" of Part 1: Troubleshooting: Pre-setup and Text-mode
+	Setup Issues, this is a variation of the problem above.
+	
+	Problem 3:
+	
+	Setup does not boot and displays the following error message:
+	
+	  Setup is unable to locate the hard drive partition prepared by
+	  the MS-DOS portion of Setup.
+	
+	  When you run the MS-DOS Windows NT Setup program, you must specify a
+	  temporary drive that is supported by Windows NT. See your System
+	  Guide for more information.
+	
+	Resolution 3:
+	
+	You are using Setup boot disks which were created while running the "WINNT"
+	variation of the install and trying to install from a CD-ROM. Create Setup
+	boot disks using "WINNT /OX" or simply use the original Setup boot disks to
+	install.
+	
+	Problem 4:
+	
+	Instead of rebooting from text-mode into GUI-mode, the error message
+	"NTOSKRNL.EXE is missing or corrupt" appears.
+	
+	Resolution 4:
+	
+	If you are installing to a drive other than C: and the primary drive is
+	FAT, edit your BOOT.INI file and change the partition information by doing
+	the following:
+	
+	1. Remove the Read Only and System File attributes from the BOOT.INI file.
+	     At an MS-DOS or OS/2(R) command line, type:
+	     ATTRIB -S -R C:\BOOT.INI
+	
+	2. Edit the BOOT.INI file and change the partition number for Windows NT.
+	  Change the Windows NT line to the following:
+	
+	     multi(0)disk(0)rdisk(x)partition(y)\winnt="Windows NT on ?:"
+	
+	        -or-
+	
+	     scsi(0)disk(x)rdisk(0)partition(y)\winnt="Windows NT on ?:"
+	
+	  where x is the drive number, y is the partition number, and ? is the
+	  drive letter where Windows NT resides.
+	
+	If you are using the Special Step-Up CD-ROM for Windows NT, note the
+	following:
+	
+	The Special Step-Up Edition of Windows NT 3.51 can be used to upgrade from
+	Windows NT 3.5 to Windows NT 3.51. You can also use the Special Step-Up
+	Edition to install Windows NT 3.51 into a new directory. The Special Step-
+	Up Edition cannot be used to upgrade or install over Windows NT version
+	3.1.
+	
+	Problem 5:
+	
+	During the reboot from text-mode setup to GUI-mode Setup the error message
+	"HAL.DLL is missing or corrupt" appears.
+	
+	Resolution 5:
+	
+	This error message occurs when a computer that is not listed on the Windows
+	NT HCL is using an ASUSTECH (ASUS) dual-processor motherboard with only one
+	processor present. NOTE: HCL certifies complete systems, not individual
+	motherboards.
+	
+	You can work around this problem by setting the J14 jumper (on the
+	motherboard) for a dual-processor computer, even though the computer has
+	only one processor.
+	
+	Problem 6:
+	
+	When you install Windows NT on a multi-processor computer, the following
+	error message:
+	
+	  HAL: Bad APIC version. HAL: This HAL.DLL requires an MPS version 1.1
+	  system. Replace HAL.DLL which the correct HAL for this system. The
+	  system is halting.
+	
+	Resolution 6:
+	
+	This error message occurs when a computer attempts to boot with a symmetric
+	multi-processing (SMP) hardware abstraction layer (HAL) on a computer with
+	Multi-Processor Specification (MPS) architecture that currently has only a
+	single processor.
+	
+	- To work around this problem, install Windows NT using Custom Setup and
+	  verify that the computer type is not identified as an MPS machine. If
+	  setup detects the system as an MPS machine, change the machine type to
+	  AT Compatible.
+	
+	  -or-
+	
+	- Edit the TXTSETUP.SIF file on the Setup boot disk. In the [HAL] section
+	  change:
+	
+	     mps11_mp    = halmps.dll  ,2,hal.dll
+	
+	  to read:
+	
+	     mps11_mp    = hal.dll  ,2,hal.dll
+	
+	  This forces the standard ISA/EISA HAL to be loaded.
+	
+	  -or-
+	
+	- If you are running Windows NT 3.51, select a different kernel and HAL
+	  when you boot Windows NT. If a second processor is added later, you may
+	  need to manually copy and rename the correct HAL file.
+	
+	Problem 7:
+	
+	You need to install other files during the reboot between text-based and
+	GUI-based Setup, but cannot catch the boot menu when Windows NT reboots to
+	GUI-mode Setup.
+	
+	Resolution 7:
+	
+	Boot from a system disk. If you need to access the previous operating
+	system multiple times, boot from the previous operating system and with a
+	text editor modify the BOOT.INI to pause indefinitely by changing the
+	timeout value to "-1" as follows:
+	
+	1. Remove the Read Only and System File attributes from the BOOT.INI file.
+	
+	2. At an MS-DOS or OS/2 command line, type:
+	
+	     ATTRIB -S -R C:\BOOT.INI
+	
+	3. Edit the BOOT.INI file and change the timeout line to look like this:
+	
+	     [boot loader]
+	     timeout=-1
+	     default=multi(0)disk(0)rdisk(0)partition(1)\WINNT35
+	
+	This change cannot be made through Control Panel, because valid values are
+	0-999.
+	
+	After making this value a negative number, the  following error message
+	appears:
+	
+	     Invalid Timeout Entry
+	
+	You can disregard this error message.
+	
+	Problem 8:
+	
+	An error message appears when rebooting into GUI-mode Setup. If the error
+	is hardware related, you may receive an error message  from the BIOS, or
+	from Windows NT in the form of a blue screen with a stop error message
+	containing a hexadecimal number at the top of the screen such as:
+	
+	0x00000080, 0x0000007f, 0x0000007a, 0x00000077,
+	0x00000077,0x00000051, 0x0000002f, 0x0000002e, or, 0x0000002d.
+	
+	Resolution 8:
+	
+	Check your system for viruses, or for hard drive corruption. In the case of
+	a virus scan please use any available commercial virus scan which examines
+	the Master Boot Record (MBR) of the drive.  Viruses can infect both FAT and
+	NTFS file systems.
+	
+	These errors may also be a result of hard drive corruption, if you are
+	using the FAT file system, use Scandisk, or other MS-DOS based hard drive
+	utilities. If you are using the NTFS file system, try to reboot a previous
+	version of Windows NT to run "CHKDSK /F /R".  If you cannot boot from a
+	previous version of Windows NT, try to install to a parallel directory to
+	run "CHKDSK /F /R."
+	
+	Another common cause of the above STOP Message is failing RAM memory. Use a
+	diagnostic utility to test the RAM in your computer.
+	
+	Check that all adapter cards in your computer are properly seated. You can
+	use an ink eraser or Stabilant-22 to clean the adapter card contacts.
+	
+	Finally, if all the above fail to correct the issue, take the system
+	motherboard to a repair facility for diagnostic testing. A crack,
+	scratched trace or bad component on the motherboard can also cause these
+	problems.
+	
+	Problem 9:
+	
+	On rebooting from character-based to GUI-based Setup the screen shows that
+	NTOSKRNL is loading and then before or at the blue screen either of the
+	following stop codes appear: "0x0000000A" or "0x0000001E".
+	
+	Resolution 9:
+	
+	This may indicate the presence of a third party driver at the system level
+	which is incompatible with the version of Windows NT you are upgrading to
+	or a corrupt driver that did not get copied correctly during the text-mode
+	of Setup.
+	
+	Try installing Windows NT into a clean directory. If this installs
+	correctly, try to access the first tree and replace the corrupt file or
+	remove the files associated with any suspect third party drivers.
+	
+	If you are unable to install Windows NT into a separate tree, check all
+	essential hardware, including adapter cards, drive controllers, etc. If you
+	have non-essential adapter cards in the system, remove them and try the
+	install again.
+	
+	Also verify that the essential hardware in use is Windows NT certified and
+	has up to date firmware, if applicable.
+	
+	Problem 10:
+	
+	After you reboot, the video does not come back, that is, it stays "black"
+	or the video is skewed.
+	
+	Resolution 10:
+	
+	This normally occurs if either the video is not resetting correctly during
+	the reboot or the video is sharing an IRQ.
+	
+	Power your computer down and bring it up again, if the video works, you
+	will probably need to power the computer down each time you restart Windows
+	NT. This problem is video and system BIOS related.
+	
+	If the system comes back after power down in an unusable state, check for
+	IRQ and memory conflicts with other cards on your system. If you are using
+	a PCI based system make certain that the video is not using IRQ?s 2, 9, or
+	12.
+	
+	4. GUI-Based Setup to First Boot Issues
+	=======================================
+	
+	Architecture
+	------------
+	
+	During the GUI portion of Setup, Windows NT is installing the drivers,
+	creating accounts, configuring the network settings and building the system
+	tree. If there are hardware problems, or conflicting hardware settings,
+	Windows NT will probably not succeed in installing or upgrading.
+	
+	Problems after the final reboot of Windows NT Setup are normally due to
+	incorrect information either in the BOOT.INI file or in the hardware
+	configuration.
+	
+	Troubleshooting: GUI-based Setup to First Boot Issues
+	-----------------------------------------------------
+	
+	Problem 1:
+	
+	The following error message appears during the GUI-mode Setup:
+	
+	  External library procedure NtPathToDosPath reported the following error.
+	  'Unable to open the specified symbolic link object.'
+	
+	Resolution 1:
+	
+	This error indicates that the path to the installation media is no longer
+	accessible. This error occurs when you have added new hardware to the
+	computer (for example, a SCSI controller, a SCSI CD-ROM drive, or a ATAPI
+	compatible CD-ROM drive) before running Setup, but without adding the
+	device drivers in the original Windows NT installation first.
+	
+	When Windows NT Setup reboots the computer to continue the GUI-mode Setup,
+	Windows NT finds only devices installed under the previous version of
+	Windows NT (because you are running in the context of the original Windows
+	NT installation.)
+	
+	To correct the problem, reboot to the original installation if possible,
+	and add the appropriate driver.
+	
+	If no hardware has been added, make certain that the hardware is accessible
+	under the original version. If the hardware was not supported under the
+	previous version, remove the hardware, complete the install and then add
+	the device once setup has completed.
+	
+	Problem 2:
+	
+	When you attempt to install a driver located in the \DRVLIB directory on
+	the Windows NT version 3.5 CD-ROM during GUI-mode Setup, the following
+	error message appears:
+	
+	  NONCRITICAL ERROR
+	
+	  The external library procedure, CopySingleFile, reported the following
+	  error:  Unable to do the specified file copy operation.
+	
+	You may continue (ignoring the error), retry the operation, or exit Setup.
+	If you choose to ignore the error, Setup may not be able to completely
+	and/or correctly install the software. If you exit, you will have to repeat
+	the Setup process from the beginning.
+	
+	Resolution 2:
+	
+	This problem occurs when you install Windows NT from an unsupported CD-ROM
+	or a network drive.
+	
+	Setup copies contents of the \I386 directory from the Windows NT CD-ROM to
+	the local hard disk. When you reach GUI-mode Setup, communication to the
+	unsupported media or the network drive is terminated.
+	
+	To work around this problem, copy the required drivers from the \DRVLIB
+	directory on the Windows NT CD-ROM to the local hard disk or to a floppy
+	disk before running "WINNT."
+	
+	Problem 3:
+	
+	When starting GUI-mode Setup with multiple CD-ROM drives, one of the
+	following messages appear:
+	
+	  Please insert Windows NT Workstation/Server disk # <disk number>
+	
+	  -or-
+	
+	  Please insert Windows NT Workstation/Server CD-ROM.
+	
+	Resolution 3:
+	
+	To set up Windows NT 3.51 on a computer with multiple CD-ROM drives
+	installed:
+	
+	- Choose the CD-ROM drive that has first priority. You cannot view which
+	  CD-ROM drive has priority on your computer, but you can follow this list
+	  of priority:
+	
+	     SCSI devices
+	     IDE (ATAPI) devices
+	     Non-SCSI devices in the following order:  Sony(R), Panasonic(R),
+	     Mitsumi
+	
+	  -or-
+	
+	- Place the Windows NT 3.51 CD-ROM in each CD-ROM drive until the CD-ROM
+	  drive that has priority on your computer accepts it for copying files.
+	
+	Problem 4:
+	
+	During the network portion of Setup, you do not want to install an adapter
+	card but want to install the protocols to preserve bindings and settings
+	(This might be due to requiring a newer driver for your network card, or
+	the use of a third party driver for Remote Access Service (RAS) or server
+	capabilities).
+	
+	Resolution 4:
+	
+	If the computer is only a Server or Workstation, not a Primary or Secondary
+	Domain Controller, when prompted for a network adapter choose the
+	MSLoopback adapter and proceed with the installation of the networking as
+	normal. Once the system is operational, you can go back and remove the
+	MSLoopback adapter and install the correct adapter or third party driver.
+	
+	Problem 5:
+	
+	Should I create an Emergency Repair Disk (ERD) when requested?
+	
+	Resolution 5:
+	
+	In most cases an Emergency Repair Disk and a tape back-up are your primary
+	tools for disaster recovery. If you choose not to create an Emergency
+	Repair Disk you are greatly diminishing the chances of recovering an
+	installation in the event of hardware or software failure.
+	
+	Problem 6:
+	
+	During the GUI-mode Setup, the system hangs at random intervals, either
+	during file copies or between screens.
+	
+	Resolution 6:
+	
+	This usually indicates a problems with computer interrupt conflicts,
+	problems with video or problems with the SCSI bus.
+	
+	1. Reconfirm hardware configuration if the problem appears to be hardware
+	  interrupt related. For example, you install the network card and the
+	  system stops responding (hangs).
+	
+	2. If the video appears to be failing after reboot during an upgrade, you
+	  should:
+	
+	  a. Power down the system and then try again to boot into the GUI-mode
+	     Setup
+	
+	  b. Modify the BOOT.INI file to boot to the VGA only mode during GUI-mode
+	     Setup as follows:
+	
+	     1. Remove the Read Only and System File attributes from the BOOT.INI
+	        file.
+	        At an MS-DOS or OS/2 command line, type:
+	
+	           ATTRIB -S -R -H C:\BOOT.INI
+	
+	     3. Open BOOT.INI with a text editor and change the default line to
+	        include the flag. "/basevideo."
+	
+	The information contained in this document represents the current view of
+	Microsoft Corporation on the issues discussed as of the date of
+	publication. Because Microsoft must respond to changing market conditions,
+	it should not be interpreted to be a commitment on the part of Microsoft,
+	and Microsoft cannot guarantee the accuracy of any information presented
+	after the date of publication.
+	
+	This document is for informational purposes only.
+	MICROSOFT MAKES NO WARRANTIES, EXPRESS OR IMPLIED, IN THIS DOCUMENT.
+	
+	Additional query words: prodnt 3.5 tshoot
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+	Version           : 3.5 3.51
+	
+	=============================================================================
+	

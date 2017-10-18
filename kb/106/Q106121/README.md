@@ -1,0 +1,506 @@
+---
+layout: page
+title: "Q106121: Sleeping Server Stops Responding to Requests"
+permalink: kb/106/Q106121/
+---
+
+## Q106121: Sleeping Server Stops Responding to Requests
+
+	Article: Q106121
+	Product(s): Microsoft LAN Manager
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 22-FEB-2002
+	
+	SUMMARY
+	=======
+	
+	LAN Manager servers may fail or "sleep" under extreme operating stress, refusing
+	to initiate new sessions while allowing active sessions to continue for a while.
+	Three problems cause the following stress-related symptoms:
+	
+	- SCSI bid time-out failures
+	
+	- Kernel failures
+	
+	- NETAPI.DLL or SCSI bid time-out problems
+	
+	This article discusses these three problems and several other topics in this
+	order:
+	
+	
+	- Causes of Server Stress
+	
+	- Server-Stress-Related Problems
+	
+	- Non-Server-Stress-Related Problems
+	
+	- Problem 1: SCSI Bid Time-out Failures
+	
+	- Problem 2: Kernel Failures
+	
+	- Problem 3: NETAPI.DLL or SCSI Bid Time-out Problems
+	
+	- Procedures for Installing the Fixes
+	
+	- Configuration (of servers prone to these problems)
+	
+	- Tuning Recommendations
+	
+	- Utilities and Diagnostics
+	
+	Each problem section is organized in the standard style: Symptoms, Cause,
+	Resolution/Workaround.
+	
+	You can obtain Microsoft OS/2 LAN Manager updates from Microsoft PSS, Corporate
+	Network Systems. Fixes are scheduled for inclusion in the LAN Manager 2.2b
+	Patch.
+	
+	MORE INFORMATION
+	================
+	
+	CAUSES OF SERVER STRESS
+	-----------------------
+	
+	Several system conditions can create server stress: a large number of
+	workstations with active sessions accessing the file server, or problems with
+	foreground processes such as ring 3 services (SQL Server, the NetLogon service,
+	and backup operations).
+	
+	  SERVER-STRESS-RELATED PROBLEMS
+	------------------------------
+	
+	Stress failures can disrupt some server processes while other OS/2 processes
+	continue unaffected. Even when critical ring 0 or kernel-level failures affect
+	the server, trap error messages are not always displayed on the server monitor
+	or through an OS/2 kernel debugger, and some OS/2 processes can continue to
+	operate for a while (for instance, the HPFS386 cache and operations serviced by
+	it) although the Program Manager cannot be accessed and keyboard input is not
+	responded to.
+	
+	          NON-SERVER-STRESS-RELATED PROBLEMS
+	----------------------------------
+	
+	Complete server hangs are often caused by something other than sleeping servers:
+	
+	- System CPU hardware failures that hang the server and require a cold boot.
+	
+	- A system device or ring 0 device driver that shuts down interrupts and does
+	  not re-enable them, locking the server and stoppping response to keyboard I/O
+	
+	- Network adapters that halt all server processing.
+	
+	- A tight I/O-bound application loop such as a process that continuously writes
+	  to the screen, starving other processes on the server. If a process remains
+	  at high priority in a PM screen group, it blocks other processes. It is a
+	  good idea to avoid running local processes involving continuous screen or
+	  other device I/O on an OS/2 LAN Manager file server. Run only specifically
+	  designed server applications, and avoid running applications such as tape
+	  backup software during peak hours.
+	
+	PROBLEM 1: SCSI BID TIME-OUT FAILURES
+	-------------------------------------
+	
+	Sleeping or comatose server; disk access blocked.
+	
+	
+	SYMPTOMS
+	========
+	
+	There are many possible symptoms. When a SCSI bid time-out occurs for disk drive
+	requests, drive access is blocked even though network I/O does not stop and
+	users can connect to the server by the NET USE or NET ADMIN commands. If primary
+	disk drive access is blocked and SWAPPER.DAT is located there, local OS/2
+	foreground processes may become inaccessible, the system may not respond to
+	keyboard input, and Task Manager may fail. No operation can write to the blocked
+	disk drive. Only operations serviced by HPFS386 cache continue to operate. A
+	PSTAT listing reveals all processes blocked except those serviced by cache.
+	
+	If server performance falls, access to CD-ROM drives may fail if time-outs occur.
+	Attempting to access a logical drive letter from the server console associated
+	with a CD-ROM hangs that OS/2 screen group. Also, if multiple CD-ROM devices
+	containing large amounts of data are attached to the server, this failure can
+	result in a sleeping server hang:
+	
+	  Net start server
+	  The server is starting.....................................
+	
+	The server slows or halts. CPU utilization increases and workstations receive
+	poor server response.
+	
+	Servers with a NETAPI.DLL failure respond to console keyboard commands. Using the
+	servers' workstation service allows network access to other servers by means of
+	NET USE for users logged on at the server. Because a NETAPI.DLL failure leads to
+	a NetLogon service failure, users cannot log on if the server is a domain
+	controller. PSTAT may also reveal a NetLogon announcer thread failure if it
+	becomes stuck in a critical section.
+	
+	If the server is experiencing SCSI bid time-outs and disk access is blocked, the
+	server service degrades gradually. As long as an HPFS386 server is servicing
+	requests from cache, it maintains existing sessions. For new sessions, NetBIOS
+	session-alive traffic remains active but workstations cannot connect to the
+	server. Before long, the only continuing traffic is LLC, NetBEUI low-level
+	transport operations.
+	
+	Both NETAPI.DLL and SCSI bid time-out failures can cause the ring 3 server
+	scavenger thread to fail. Workstations attempting new connections receive error
+	51. Error 53 is sometimes returned, but this actually is error 51 erroneously
+	reported by LAN Manager. Likewise, error net3779, sometimes returned to users
+	attempting to log on to a sleeping primary domain controller (PDC), is incorrect
+	and should be reported as error 51. No new listens are posted by the ring 3
+	server, Netservr Scavenger thread. Net session at the server reports existing
+	sessions, but the ring 3 server revokes new requests.
+	
+	Possible error messages:
+	
+	  Error 51: The remote computer is not available.
+	  Error 53: The network path was not found.
+	  Error 240: The network connection is disconnected.
+	  Net3779: Your logon attempt has failed due to an incorrect user name or
+	  password.
+	
+	Attempting to shut down the server may return the following messages:
+	
+	  Net Stop Server
+	  Net2190: The service ended abnormally
+	
+	  Net Stop Workstation
+	  Net2189: The service cannot be controlled in its present state
+	  OS/2 shutdown may cause the server to hang.
+	
+	CAUSE
+	=====
+	
+	This often is caused by a lack of time-out handling code in the OS/2 bid, which
+	in turn causes disk requests to time-out due to server stress and slow responses
+	from I/O devices. Requests (called RCBs) are passed through the file system to
+	the SCSI bid through IOS$, which provides I/O access to the bid from file
+	systems. The requests include time-out values. For SCSI bids, this value is
+	passed as a SCSI request block (SRB) parameter for time-out. Time-outs cannot be
+	handled properly unless the bid monitors the SRB time-out value for all I/O
+	queues. If a request expires, you should reset the SCSI bus and I/O queue
+	time-outs, and let operations retry. If operations are not allowed to retry,
+	threads involved with the I/O process hang.
+	
+	Certain hardware components and data transfer quantities can cause or contribute
+	to these problems:
+	
+	- Slow SCSI devices
+	
+	- Multiple devices
+	
+	- Multiple large hard-disk drives
+	
+	- Multiple tape drives
+	
+	- CD-ROM drives
+	
+	Some kernel memory-management routines for CSD5050 and subsequent revisions have
+	been updated from 286-specific code to 386-specific code. Memory compaction on a
+	386 does not take advantage of the 386 processor double word capability,
+	resulting in poor performance, especially with memory- intensive operations.
+	
+	
+	Primary domain controller ring 3 server threads can hang if a backup domain
+	controller causes a semaphore deadlock by calling NetAccountSync(). The symptoms
+	indicate that the ring 3 server Scavenger thread has failed. If the ring 3
+	server fails, active sessions continue operating but new connections are
+	refused. The scavenger thread also checks disk drives for free space, and hangs
+	if a SCSI bid time-out failure occurs while the check is in progress.
+	
+	
+	The ring 3 server (Netservr) provides all file services for FAT partitions only.
+	On an OS/2 LAN Manager HPFS386 server, only new server connection requests are
+	handled by the ring 3 server. The ring 0 HPFS386 server is optimized for
+	performance, and it--not the ring 3 server--handles file service. As a result,
+	if the ring 3 server fails, HPFS386 continues to service requests although new
+	connections are refused and the server appears to sleep.
+	
+	RESOLUTION
+	==========
+	
+	Update SCSI bids to address the lack of time-out code. Following are
+	instructions for current SCSI bids divided into four classes.
+	
+	  A. SCSI controller bids for which updates are available
+	  B. SCSI controller bids without time-out handling code that can be replaced
+	  with monolithic drivers
+	  C. SCSI controller bids without time-out handling code or currently available
+	  monolithic drivers
+	  D. SCSI bids with time-out code and shipped in OS/2 1.301 LAN Manager 2.2.
+	
+	A. SCSI controller bids for which updates are available:
+	
+	- COMPAQ Cpq710 bid *
+	
+	- UltraStor Ultra24 bid *
+	
+	- Adaptec 174x bid
+	
+	  * installed as BOOTBID.BID, not preinstalled with OS/2 LAN Manager; these will
+	  not be included in LAN Manager 2.2b
+	
+	Updates are available from Microsoft PSS, and on the PSS internet server in
+	Bussys\LANMAN\UNSUP-ED (see GOWINNT.MICROSOFT.COM). Use FTP to get the files.
+	
+	
+	B. SCSI controller bids without time-out handling code which can be replaced with
+	monolithic drivers:
+	
+	- IBM PS/2 ABIOS.BID (Replace with OS/2 1.3 CSD5050 or later drivers)
+	
+	- COMPAQ CPQARRAY BID (Replace with OS/2 1.21 or later drivers)
+	
+	To work around the problem, replace these with monolithic drivers. Monolithic
+	drivers do not support LADDR-specific features such as FT or CdRomIfs, but
+	proper time-out code is available for hard disk drives.
+	
+	
+	NOTE: Monolithic drivers have not been certified or exhaustively tested with OS/2
+	1.301 CSD5015 LAN Manager 2.2.
+	
+	C. SCSI controller bids without time-out handling code or currently available
+	monolithic drivers:
+	
+	- Adaptec 154X and 164X
+	
+	- Future Domain WD7000EX and FD16-700 bids
+	
+	- Dell001 bid
+	
+	To work around the problem, install an adapter and driver that support time-outs
+	until the manufacturer provides a fix.
+	
+	D. SCSI bids with time-out code and shipped in OS/2 1.301 LAN Manager 2.2:
+	
+	- ESDI-506 bid used for IDE, ESDI, and WD ST-506 compatible controllers
+	
+	- DPT201X bid
+	
+	- NCRC700, NCRC710 and NCRC90
+	
+	 PROBLEM 2: KERNEL FAILURES
+	--------------------------
+	
+	Server slows down (OS2KRNL).
+	
+	
+	Update the OS/2 kernel and redirector using the following:
+	
+	  OS2KRNL           OS2 1.301 CSD01.001
+	  NETWKSTA.SYS      LM22 CSD00.013
+	
+	PROBLEM 3: NETAPI.DLL OR SCSI BID TIME-OUT PROBLEMS
+	---------------------------------------------------
+	
+	Server rejects new sessions. (NETAPI.DLL, SCSI bid, or resource problems).
+	
+	
+	Update NETAPI.DLL and NETLOGON.EXE CSD00.036. Following are procedures for
+	installing the fixes on a LAN Manager 2.2 OS/2 1.301 server:
+	
+	PROCEDURES FOR INSTALLING THE FIXES
+	-----------------------------------
+	
+	NOTE: The fixes provided have not yet been released as part of an OS/2 LAN
+	Manager update. As a result, they have not been subjected to exhaustive release
+	testing. Please test the fixes prior to implementing them on a production server
+	to assure that the fixes operate properly.
+	
+	Procedure 1: Installing OS2KRNL:
+	
+	1. From the OS/2 File Manager, do the following:
+	
+	  a. Select these options:
+	
+	      - View
+	
+	      - Include
+	
+	      - All File Flags (Hidden)
+	
+	      - Set View
+	
+	      - Select OS2KRNL
+	
+	      - File
+	
+	      - Change Flags
+	
+	  b. Cancel the selection of these options:
+	
+	      - System
+	
+	      - Hidden
+	
+	      - Read Only
+	
+	2. Issue a NET STOP command on the workstation.
+	
+	3. Shut down the server from the OS/2 desktop.
+	
+	4. Use an HPFS386 recovery disk to boot the server.
+	
+	5. Use OS/2 Disk 1 to perform the following command:
+	
+	  chkdsk c: /f:386
+	
+	6. Issue the following commands:
+	
+	  rename c:\OS2KRNL c:\OS2KRNL.old
+	  copy a:\OS2KRNL c:\OS2KRNL (USE CAPITAL LETTERS ONLY)
+	  rename c:\lanman\netprog\netwksta.sys *.old
+	  copy a:\netwksta.sys c:\lanman\netprog
+	
+	7. Restart the server.
+	
+	Procedure 2: Installing monolithic drivers
+	on a LAN Manager 2.2 OS/2 1.301 server:
+	
+	1. In the root directory, issue the following commands:
+	
+	  md laddr
+	  copy *.sys laddr (EXCEPT CONFIG.SYS)
+	  copy *.bid laddr
+	  copy *.tsd laddr
+	  copy *.vsd laddr
+	
+	2. Copy the following files from OS/2 1.21 or 1.3 installation Disk 1 (ISA
+	  computers) or Disk 2 (PS/2--Micro Channel computers) to the root directory
+	
+	  BASEDD0X.SYS
+	  DISK0X.SYS
+	
+	  where X = 1 for ISA computers and 2 for PS/2--Micro Channel.
+	
+	3. Rem out the lines in the CONFIG.SYS file from DEVICE=DENON.VSD to
+	  IFS=CDROM.IFS.
+	
+	4. Reboot the machine.
+	
+	Procedure 3: Installing updated NETAPI.DLL and NETLOGON.EXE:
+	
+	1. Type the following and press ENTER:
+	
+	  " copy c:\config.sys c:\config.sav" (without the quotation marks)
+	
+	2. Make this TEMPORARY change to the CONFIG.SYS file:
+	
+	  E Config.sys
+	  Libpath=c:\lanman\netlib;...
+	  (remove c:\lanman\netlib)
+	  Libpath=...
+	
+	3. Shut down the server.
+	
+	4. Restart the server.
+	
+	5. Issue the following commands:
+	
+	  rename c:\lanman\netlib\netapi.dll c:\lanman\netlib\netapi.old
+	  copy a:\netapi.dll c:\lanman\netlib
+	  rename c:\lanman\services\netlogon.exe c:\lanman\services\netlogon.old
+	  copy a:\netlogon.exe c:\lanman\services
+	  copy c:\config.sav c:\config.sys
+	
+	       CONFIGURATION
+	-------------
+	
+	Common configuration for servers exhibiting "sleeping" problems:
+	
+	- 486 (> 33 mhz) PC server
+	
+	- SCSI controller or IDE controller (16-bit ISA or 32-bit EISA or MCA)
+	
+	- LAN Manager 2.1, 2.1a, 2.2
+	
+	- Microsoft OS/2 1.301
+	
+	- HPFS386 partitions
+	
+	- Primary domain controller operation NetLogon service
+	
+	- Ifs ...... /cache:4096 or larger cache size
+	
+	- OS/2 ring 3 applications such as NetLogon or SQL Server
+	
+	  TUNING RECOMMENDATIONS
+	----------------------
+	
+	Check the server error log for the following error
+	
+	  Net3101: The system ran out of a resource controlled by the *** option
+	
+	where *** is the numbigbuf or numreqbuf parameter.
+	
+	  LANMAN.INI
+	  [Server]
+	  Numbigbuf = x    (1-80)
+	  Numreqbuf = x    (1-300)
+	
+	If you find this error, edit LANMAN.INI and increase the corresponding parameters
+	to correct the problem and prevent future server failures. LAN Manager allocates
+	request and big buffers statically at server startup. Under high-stress
+	operating conditions, these resources can be depleted, causing the ring 3 server
+	threads (including the Scavenger) to fail.
+	
+	UTILITIES AND DIAGNOSTICS
+	-------------------------
+	
+	PSTAT: PSTAT reports made before or after the failure verify that one or more
+	NetLogon threads became stuck in a critical section, or Netservr threads,
+	including the Scavenger thread, have been terminated.
+	
+	Process and Thread Information on a sample PSTAT screen:
+	
+	Process   Thread
+	Name       ID    Priority   Block ID   State
+	NETLOGON   04      06FF     00000000  CritSec
+	
+	Sniffer protocol analyzer traces will reveal that the server has no listen
+	commands outstanding. As the workstation repeatedly fails to connect, it
+	receives this packet and returns error 51 to the user.
+	
+	Sample detail of a Sniffer screen:
+	
+	                       - Frame 1 -
+	  SUMMARY  Delta T     Destination   Source        Summary
+	  M        1           Workstation   Server  NETB Name Server
+	  Recognized
+	  NETB: ----- NETBIOS Name Recognized -----
+	  NETB:
+	  NETB: Header length = 44, Data length = 0
+	  NETB: Delimiter = EFFF (NETBIOS)
+	  NETB: Command = 0E
+	  NETB: No LISTEN command outstanding for this name.
+	  NETB: Caller's name type = 00 (Unique name)
+	  NETB: Transmit correlator = 000D
+	  NETB: Response correlator = 0000
+	  NETB: Receiver's name = Workstation<00>
+	  NETB: Sender's name = Server
+	  NETB:
+	
+	If the SCSI bid time-out failures occur, then HPFS386 will stop providing SMB
+	service if the request cannot be serviced from cache. Sessions are eventually
+	dropped and only LLC and NETB traffic remain active. The NETB traffic may
+	eventually end as well.
+	
+	Sample from a Sniffer summary report:
+	
+	   98    0.0369  SERVER        WORKSTATION   SMB C Open  \test.cmd
+	   99    0.0429  WORKSTATION   SERVER        NETB D=68 S=05 Data ACK
+	  100    0.0011  SERVER        WORKSTATION   LLC R D=F0 S=F0 RRNR=117
+	  101   15.5651  SERVER        WORKSTATION   NETB Session alive
+	  102    0.2152  WORKSTATION   SERVER        LLC R D=F0 S=F0 RR NR=36
+	  103    2.0314  WORKSTATION   SERVER        NETB Session alive
+	  104    0.0008  SERVER        WORKSTATION   LLC R D=F0 S=F0 RRNR=118
+	
+	
+	Additional query words: sleeping, 51 2.00 2.0 2.10 2.1 2.10a 2.1a 2.2 2.20
+	
+	======================================================================
+	Keywords          :  
+	
+	=============================================================================
+	

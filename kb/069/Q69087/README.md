@@ -1,0 +1,132 @@
+---
+layout: page
+title: "Q69087: Information on Windows 3.0 Font Scaling Technology"
+permalink: kb/069/Q69087/
+---
+
+## Q69087: Information on Windows 3.0 Font Scaling Technology
+
+	Article: Q69087
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:3.0,3.0a
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 11-OCT-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows versions 3.0, 3.0a 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article contains information on third-party font scaling technology for
+	Microsoft Windows version 3.0.
+	
+	MORE INFORMATION
+	================
+	
+	Several manufacturers supply font scaling packages for the Windows 3.0. A font
+	scaling package uses a scalable font outline to produce various sizes of bitmap
+	fonts for the display and/or printer. This is a major advantage in that it is
+	only necessary to install a single font outline to produce a wide range of sizes
+	of a given typeface.
+	
+	Windows screen fonts, the default fonts supplied with the Windows 3.00 package,
+	cover a useful range but are somewhat basic. These include Times Roman,
+	Helvetica, and Symbol at 8 through 24 point sizes; and Courier at 10 through 15
+	points. You may have found instances where Windows did not have a suitable
+	screen font to correspond to the printer font you chose. This prevents true
+	WYSIWYG (what you see is what you get) implementation.
+	
+	The use of a font scaling package can greatly enhance both your printed output
+	and the WYSIWYG capability. This is especially useful when doing heavy word
+	processing or desktop publishing. There are two major types of font scaling
+	packages:
+	
+	- The fixed-size font creation package
+	
+	- The real-time font scaling package
+	
+	The Fixed-Size Font Creation Package
+	------------------------------------
+	
+	Examples of this type of package include Bitstream Fontware for Windows, Hewlett
+	Packard/Compugraphic Type Director, and ZSoft SoftType. These packages allow you
+	to create fixed-size downloadable fonts for Hewlett-Packard (HP) LaserJet
+	compatibles, and fixed-size Windows screen font (.FON) files that may also be
+	used for dot-matrix or InkJet printing. Both LaserJet downloadables and Windows
+	.FON files are fixed-size bitmap fonts. Some packages are able to create
+	PostScript downloadable outline fonts as well, which, like all PostScript fonts,
+	may be scaled by the printer itself.
+	
+	When using a fixed-size font creation package, you first install one or more
+	scalable outline fonts, usually in a format that is proprietary to the font
+	package manufacturer. You then choose specific fixed sizes of screen and printer
+	fonts to create. The package generates the requested bitmap fonts by scaling the
+	outlines to the appropriate sizes.
+	
+	In the case of packages that support PostScript printers, the process is slightly
+	different. First, the proprietary outline font is converted to a downloadable
+	PostScript outline. Then, you may create specific fixed sizes of Windows screen
+	fonts to correspond to the PostScript font.
+	
+	The fixed-size font creation package is best for situations that require a small
+	number of additional fonts in specific sizes. If you create a number of
+	fixed-size downloadable fonts and/or Windows .FON screen fonts, it's fairly easy
+	to consume a great deal of hard disk space. Also, downloadable fonts can be
+	difficult to manage in a network environment. On the plus side, fixed-size fonts
+	are very fast.
+	
+	The Real-Time Font Scaling Package
+	----------------------------------
+	
+	This fairly recent technology is represented by packages such as Adobe Type
+	Manager, Atech Publisher's Powerpak, Bitstream FaceLift, and Zenographics
+	SuperPrint. These packages provide true real-time screen and printer font
+	scaling. They are somewhat slower than the use of fixed-size fonts, but provide
+	the best WYSIWYG feature across a wide range of sizes and type styles without
+	consuming much disk space. For desktop publishing, such a package is quite
+	helpful.
+	
+	Each real-time font scaling package accepts one or more scalable outline font
+	formats. At the time that you choose a given font, the package renders it as a
+	bitmap on the screen in real-time at whatever size you specified (up to 127
+	points, a Windows internal limitation). The same outline font can also be scaled
+	and sent to the printer, which produces a direct correlation between the screen
+	and printed output -- true WYSIWYG.
+	
+	Some printers, such as the Hewlett-Packard LaserJet III series and PostScript
+	compatibles, include printer-resident font scaling technology. In such cases, it
+	is not necessary to have a software package provide this functionality. However,
+	real-time scaled screen fonts are still quite helpful. Some packages can provide
+	scalable screen fonts that correspond to the resident fonts of these printers.
+	In this case, the package does not do the printer font scaling. It allows the
+	printer to scale the printer fonts, while it scales only for the display. The
+	combination of hardware print scaling and corresponding scaled screen fonts is
+	an attractive solution.
+	
+	Most real-time scaling packages will work with any display, and any printer that
+	can accept raster (bitmap) input (that is, almost anything but a plotter). This
+	means you can use your existing copy of Windows, with any Windows display or
+	printer driver, in combination with the package to produce a WYSIWYG
+	environment. However, some real-time scaling packages use their own display and
+	printer drivers. This is not much of a disadvantage as long as the drivers
+	support your hardware. Check with the package manufacturer to determine if your
+	desired printer and display are supported, before you purchase any package.
+	
+	The products included here are manufactured by vendors independent of Microsoft;
+	we make no warranty, implied or otherwise, regarding these products' performance
+	or reliability.
+	
+	Additional query words: 3.00 3.0 3.0a 3.00a win30 3rdparty
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+	Version           : WINDOWS:3.0,3.0a
+	
+	=============================================================================
+	

@@ -1,0 +1,111 @@
+---
+layout: page
+title: "Q74516: Binding a TSR to a VxD"
+permalink: kb/074/Q74516/
+---
+
+## Q74516: Binding a TSR to a VxD
+
+	Article: Q74516
+	Product(s): Microsoft Windows Device Driver Kit
+	Version(s): 3.0,3.1
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 03-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows Device Development Kit (DDK) for Windows, versions 3.0, 3.1 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Note: This article assumes familiarity with the Interrupt 2FH Call-Out Interface
+	defined by the Microsoft Windows enhanced mode. For information on the Interrupt
+	2FH interface, refer to Appendix C of the "Microsoft Windows Device Driver Kit:
+	Device Driver Adaptation Guide" for Windows 3.1 and Appendix D of the "Microsoft
+	Windows Device Development Kit Virtual Device Adaptation Guide" for Windows
+	3.0.
+	
+	A terminate-and-stay-resident program (TSR) that loads a virtual device (VxD)
+	when Windows enhanced mode starts must specify the fully-qualified filename to
+	the virtual device file. This may not be convenient for end users because the
+	virtual device file must be placed at a fixed place on the disk.
+	
+	It is better to combine the TSR and the VxD together when the VxD is built
+	because the TSR can obtain the fully-qualified filename from MS-DOS and provide
+	the name to Windows at startup. The final product is one EXE file that holds
+	both the TSR and the VxD. The TSR is the stub program with the VxD appended as
+	an extended part of the EXE file. This article describes the steps necessary to
+	perform this binding.
+	
+	Please note, the binding method does not work if the TSR is in binary (COM)
+	format rather than EXE format. The TSR filename extension (EXE or COM) is
+	irrelevant. Therefore, while the TSR must be built in EXE format, the filename
+	may have either the EXE or the COM extension, as desired.
+	
+	The technique described here is used by the "Loadhi" program that deals with EMM
+	drivers. However, that program is too involved to be used as an example here to
+	demonstrate the binding process.
+	
+	MORE INFORMATION
+	================
+	
+	The following three steps must be performed to bind the TSR and VxD:
+	
+	1. In the TSR, fill the SIS_Virt_Dev_File_Ptr field of the
+	  Win386_Startup_Info_Struc data structure with a pointer to a string
+	  containing the fully-qualified filename of the load file. Obtain this
+	  fully-qualified filename from the location starting at three bytes beyond the
+	  end of the environment block. A code segment resembling the following could
+	  be used:
+	
+	            mov     ah, 62h
+	          int     21h             ; bx -> psp
+	          mov     es, bx
+	          mov     bx, 2ch         ; offset of environment block pointer
+	          mov     es, es:[bx]
+	          xor     di, di          ; es:di -> environment block
+	          mov     cx, -1
+	          xor     al, al          ; search for null's
+	          cld
+	  env_search_loop:
+	          repne   scasb           ; get past one null and stop
+	          cmp     byte ptr es:[di], 0     ; Q: end of env block?
+	          jnz     env_search_loop         ;   N: continue
+	          add     di, 3                   ;   Y: skip the last null &
+	                                          ;      the word before
+	                                          ;      the name.
+	          lea     si, InfoData            ; a Win386_Startup_Info_Struc
+	          mov     word ptr [si].SIS_Virt_Dev_File_Ptr, di
+	          mov     word ptr [si][2].SIS_Virt_Dev_File_Ptr, es
+	
+	  More information about PSP and the environment block is available in Ray
+	  Duncan's book "Advanced MS-DOS Programming" (Microsoft Press).
+	
+	2. In the module definition (DEF) file for the virtual device, specify the
+	  filename for the TSR file in the STUB statement, as follows:
+	
+	  STUB <TSR file name>
+	
+	  For example, if the TSR is named TSRPRG.EXE, use the following line:
+	
+	  STUB TSRPRG.EXE
+	
+	3. In the MAKE file for the virtual device, build virtual device file with an
+	  EXE extension instead of a 386 extension. For example:
+	
+	     link386 $(OBJS), VTSRPRGD.EXE $(LINKOPTIONS),,,VTSRPRGD.DEF
+	     addhdr VTSRPRGD.EXE
+	
+	Additional query words: 3.00 3.10 DDKVXD
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbWin3xSearch kbWinDDKSearch kbWinDDK300 kbWinDDK310
+	Version           : :3.0,3.1
+	
+	=============================================================================
+	

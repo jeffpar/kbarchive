@@ -1,0 +1,231 @@
+---
+layout: page
+title: "Q186525: Terminal Server Commands: DOSKBD"
+permalink: kb/186/Q186525/
+---
+
+## Q186525: Terminal Server Commands: DOSKBD
+
+	Article: Q186525
+	Product(s): Microsoft Windows NT
+	Version(s): WinNT:4.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 11-DEC-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	DOSKBD tunes the MS-DOS keyboard polling detection algorithm for a specific
+	MS-DOS execution environment (window). After optimum values are selected for the
+	application, you can set up a batch file that runs automatically before the
+	application is started.
+	
+	Syntax
+	------
+	
+	doskbd
+	
+	doskbd /defaults
+	
+	doskbd [/DetectProbationCount:nnn] [/InProbationCount:nnn] [/msAllowed:nnn]
+	[/msSleep:nnn] [/BusymsAllowed:nnn] [/msProbationTrial:nnn]
+	[/msGoodProbationEnd:nnn] [/DetectionInterval:nnn] [/StartMonitor [appname]
+	| /StopMonitor] [/query] [/?]
+	
+	Parameters
+	----------
+	
+	none
+	
+	The valid range for all values represented by nnn is 0 to 32767.
+	
+	/defaults
+	
+	  Resets all tuning parameters to their default values.
+	
+	/DetectProbationCount:nnn
+	
+	  Specifies the number of peeks in a system tick required to force the
+	  application into the probation state and to sleep the application (default
+	  value: 80).
+	
+	/InProbationCount:nnn
+	
+	  Specifies the number of peeks in a system tick required to sleep the
+	  application when the application is in the probation state. Should be less
+	  than or equal to the DetectProbationCount value (default value: 35).
+	
+	/msAllowed:nnn
+	
+	  Specifies the number of milliseconds the application is allowed to be in the
+	  probation state before the system starts sleeping the application (default
+	  value: 0).
+	
+	/msSleep:nnn
+	
+	  Specifies the number of milliseconds that the application is put to sleep
+	  (default value: 100).
+	
+	/BusymsAllowed:nnn
+	
+	  When the application is detected as "busy," the application cannot be put
+	  into the probation state for this number of milliseconds (default value: 60).
+	
+	/msProbationTrial:nnn
+	
+	  When the application is in probation, DetectProbationCount is used instead of
+	  InProbationCount every msProbationTrial milliseconds (default value: 2500).
+	
+	/msGoodProbationEnd:nnn
+	
+	  When the application is in probation, it must avoid being put to sleep for
+	  this number of milliseconds in order to be removed from probation (default
+	  value: 2500).
+	
+	/DetectionInterval:nnn
+	
+	  Specifies the time interval (in timer ticks) used to count the number of
+	  polling events.
+	
+	/StartMonitor [appname]
+	
+	  Executes appname and gathers polling statistics.
+	
+	/StopMonitor
+	
+	  Stops gathering application statistics.
+	
+	/query (quick)
+	
+	  Suppresses the display of information about the actions being performed.
+	
+	/? (help)
+	
+	  Displays the syntax for the command and information about the command's
+	  options.
+	
+	DOSKBD -- Additional Notes
+	--------------------------
+	
+	DOSKBD changes the default settings for a single MS-DOS session. Each MS- DOS
+	session can have different settings. To find out the current tuning settings
+	(the system default settings), type doskbd.
+	
+	The poll detection algorithm is driven by how many keyboard polls happen within a
+	detection interval. All units of time are rounded to a detection interval. If
+	too many keyboard polls happen within a detection interval, the application is
+	put into probation state and made eligible to be paused for some amount of time.
+	Once the application is on probation, the algorithm can be set up to pause the
+	application after a smaller number of polls. Applications can perform actions
+	that cause the system to mark the application as busy; that is, take it out of
+	the probation state. When the application is determined to be busy, it is
+	awakened. In addition, the application is taken off probation. Examples of
+	things that cause the application to be busy include (but are not limited to)
+	updating the screen, doing file I/O, and getting keyboard or mouse input.
+	
+	If an application polls DetectProbationCount number of times within a given
+	detection interval, the application is put into probation if BusymsAllowed
+	number of milliseconds have elapsed since the last time the application was
+	detected as busy. After the application is put into probation for msAllowed
+	milliseconds, if it exceeds the allowed number of polls within a detection
+	interval, it is put to sleep for msSleep number of milliseconds.
+	
+	While the application is on probation, the number of polls it is allowed is
+	reduced to InProbationCount from DetectProbationCount. If it exceeds the allowed
+	number of polls, it is put to sleep as long as msAllowed milliseconds have
+	elapsed since the application was first put on probation. The application is
+	taken off probation if msGoodProbationEnd milliseconds have elapsed since the
+	application was last punished. In addition, every msProbationTrial milliseconds,
+	the allowed number of polls in a detection interval is increased to
+	DetectProbationCount. As long as the application is not punished, the allowed
+	number of polls stays at the higher level. If the application exceeds that
+	level, the allowed level of polls is reduced to InProbationCount.
+	
+	If doskbd is invoked with no parameters, the current tuning values are
+	displayed.
+	
+	DOSKBD -- Examples
+	------------------
+	
+	When adjusting the parameters, you should consider the current behavior of the
+	application with the current settings. To observe this, start an inactive system
+	with a user on the console and a remote user close to the console. Only you and
+	these users should be running on the system. Set up Performance Monitor to
+	display total system CPU% every second. Doskbd can also be used to generate
+	polling statistics to give baseline values for DetectProbationCount,
+	InProbationCount, and DetectionInterval by using the /StartMonitor option. You
+	should run the performance monitor on the console and the DOS application
+	remotely. The performance monitor should be set up to display the total system
+	CPU every second.
+	
+	In the first scenario, the MS-DOS application is running fine for a single user
+	but the system slows down when more users start using the application. In this
+	scenario, it is possible that the polling detection is not being aggressive
+	enough to put the application into probation. Observe how much CPU the
+	application is using while doing nothing and while doing common operations. Then
+	exit the application and use doskbd to refine the polling parameters. The new
+	parameters apply to the command line that you have just run doskbd from.
+	Changing parameters by about 30 percent per try is recommended. This scenario
+	takes the CPU away from the application more aggressively. The first thing to
+	try is lowering DetectProbationCount and InProbationCount. If that does not help
+	or does not help enough, try lowering BusymsAllowed 10 milliseconds per try. The
+	default of msAllowed is already zero. Assuming polling is being detected, the
+	CPU should be significantly below 100 percent by now. At this point, it is
+	important to make sure that the application is still responsive in all the ways
+	that it will be used. If it is not responsive, you have gone too far and you
+	must back off some of the settings. To further reduce the CPU used, msSleep can
+	be increased. Use caution while increasing msSleep because some applications
+	become unresponsive or jerky if this value is increased too much.
+	
+	Now that you have reduced the amount of CPU that the application is using (while
+	ensuring that the application is still responsive), the system should be able to
+	support more concurrent users. Some applications may use close to 100 percent
+	CPU regardless of how aggressive you make the polling detection. These
+	applications are probably not polling the keyboard or they are doing something
+	that causes the application to be marked busy very frequently.
+	
+	Another approach can be used to control how much CPU the application gets. The
+	PIF editor contains Advanced Options called Multitasking Options. By lowering
+	the Priority numbers, the total processor time that the application gets can be
+	reduced. This approach is recommended only as a last resort because it is not
+	adaptive and will limit the amount of CPU that the application gets even when it
+	is trying to do useful work. These priority settings should never be changed if
+	polling detection is being used.
+	
+	In the second scenario, too much CPU is being taken away from the application and
+	the application is not responsive. It is also possible that the default polling
+	detection parameters work fine for 99 percent of an application's use but
+	occasionally you do something that does not work well with the polling
+	detection. In that case, it is probably a mistake to change the polling
+	parameters for all usage of the application because the change could
+	significantly affect how many concurrent users are supportable. Instead, create
+	a special Icon/PIF/autoexec for the infrequent scenario. This will enable
+	maximum productivity on your system.
+	
+	If an application is not getting enough CPU, the polling detection is probably
+	too aggressive or the application needs more time to run before being punished.
+	DetectProbationCount and InProbationCount can be increased to lengthen the time
+	it takes to detect that the application is polling. msAllowed can be increased
+	from zero to give the application additional execution time before it is
+	punished for being on probation. Another way to give the application more CPU
+	while it is being punished is to reduce the value of msSleep. All these
+	possibilities increase the amount of CPU that the application gets, which
+	reduces the number of users who can simultaneously do useful work on the system.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+	Version           : WinNT:4.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

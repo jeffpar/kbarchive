@@ -1,0 +1,92 @@
+---
+layout: page
+title: "Q168379: BUG: Debugger Does Not Step Over to &#95;&#95;finally Code Block"
+permalink: kb/168/Q168379/
+---
+
+## Q168379: BUG: Debugger Does Not Step Over to &#95;&#95;finally Code Block
+
+	Article: Q168379
+	Product(s): Microsoft C Compiler
+	Version(s): 5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbtool kbVC500bug kbVC600bugkbbuglist
+	Last Modified: 13-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The Integrated Debugger, used with:
+	   - Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+	   - Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+	   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+	   - Microsoft Visual C++.NET (2002) 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The debugger does not Step-Over to code in __finally block from a __try block.
+	
+	CAUSE
+	=====
+	
+	The __finally code is executed via a "call" instead of a "jmp instruction.
+	
+	RESOLUTION
+	==========
+	
+	The workaround is to do a Step-Into (F11 key) instead of Step-Over (F10 key) in
+	the debugger.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	Compile the following code with debug information.
+	
+	      #include <iostream.h>
+	
+	      void main ()
+	      {
+	     int counter=0;
+	
+	      __try {
+	
+	     counter++;//SET A BREAKPOINT HERE
+	     cout << "In try block" << endl;
+	
+	            }
+	
+	      __finally
+	            {
+	        counter++;
+	        cout << "In finally block" << endl;
+	            }
+	
+	      cout << "Exit, counter=" << counter << endl;
+	
+	      }
+	
+	Set a breakpoint on the line shown above. Start the debugger with Debug Go or by
+	pressing the F5 key. Step-Over (or, press F10) from that point onward. The
+	debugger exits the program without going to the __finally block.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbtool kbVC500bug kbVC600bug kbbuglist
+	Technology        : kbVCsearch kbAudDeveloper kbIntegratedDebugger
+	Version           : :5.0,6.0
+	Issue type        : kbbug
+	
+	=============================================================================
+	

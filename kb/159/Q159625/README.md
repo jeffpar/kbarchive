@@ -1,0 +1,123 @@
+---
+layout: page
+title: "Q159625: WD97: Docerr: Message Box Refers to Multilevel Not Outline List"
+permalink: kb/159/Q159625/
+---
+
+## Q159625: WD97: Docerr: Message Box Refers to Multilevel Not Outline List
+
+	Article: Q159625
+	Product(s): Word 97 for Windows
+	Version(s): WINDOWS:97
+	Operating System(s): 
+	Keyword(s): kbualink97
+	Last Modified: 14-NOV-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	When you apply page numbering to include chapter numbering, you get the
+	following message:
+	
+	  There is no chapter numbering to include in the caption or page number. To
+	  apply chapter numbers use the Bullets and Numbering command on the Format
+	  menu and select a multilevel list style that is linked to the Heading styles.
+	
+	The word "multilevel" in the preceding message should be "outline numbered."
+	
+	In Microsoft Word 97 for Windows, outline numbering replaces heading numbering.
+	This message is displayed when you apply page numbering and include chapter
+	numbering, but it does not affect functionality.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products that are
+	listed at the beginning of this article.
+	
+	
+	MORE INFORMATION
+	================
+	
+	NOTE: Heading styles must be applied in the document for these features to
+	work.
+	
+	Including Chapter Numbers with Page Numbers
+	-------------------------------------------
+	
+	To include chapter numbers with page numbers, do the following:
+	
+	1. On the Insert menu, click Page Numbers.
+	
+	2. Select the desired position and alignment for your page numbering.
+	
+	3. In the Page Numbers dialog box, click Format.
+	
+	4. In the Page Number Format dialog box, click to select the Include Chapter
+	  Number check box, and then click OK.
+	
+	  If the message in the "Symptoms" section appears, click OK.
+	
+	5. Click Close.
+	
+	6. Go to the "Linking a Numbering Level to a Style" section.
+	
+	Including Chapter Numbers with Captions
+	---------------------------------------
+	
+	To include chapter numbers with captions, do the following:
+	
+	1. On the Insert menu, click Caption.
+	
+	2. From the Label drop-down list, select a label type. In the Caption box, type
+	  a new caption.
+	
+	3. Click Numbering.
+	
+	4. In the Caption Numbering dialog box, click to select the Include Chapter
+	  Number check box, and then click OK.
+	
+	  If the message in the "Symptoms" section appears, click OK.
+	
+	5. Click Close.
+	
+	6. Go to the "Linking a Numbering Level to a Style" section.
+	
+	Linking a Numbering Level to a Style
+	------------------------------------
+	
+	To link a heading style to an outline level, do the following:
+	
+	1. On the Format menu, click Bullets And Numbering.
+	
+	2. Click the Outline Numbered tab.
+	
+	3. Select one of the heading numbering presets (bottom row) and click Customize.
+	
+	4. In the Level list, click the level you want.
+	
+	5. Click More.
+	
+	6. In the Link Level To Style box, type or select the style you want to link to
+	  the current level.
+	
+	7. Repeat steps 4 through 6 for each level that you want to use.
+	
+	8. Click OK.
+	
+	Additional query words: 8.0 word8 word97 multi-level out-line multi level numbers numbered
+	
+	======================================================================
+	Keywords          : kbualink97 
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : WINDOWS:97
+	
+	=============================================================================
+	

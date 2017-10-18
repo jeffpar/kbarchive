@@ -1,0 +1,96 @@
+---
+layout: page
+title: "Q197019: WD97: How to Convert Between IBM's DCF Text Processor and Word"
+permalink: kb/197/Q197019/
+---
+
+## Q197019: WD97: How to Convert Between IBM's DCF Text Processor and Word
+
+	Article: Q197019
+	Product(s): Word 97 for Windows
+	Version(s): WINDOWS:97
+	Operating System(s): 
+	Keyword(s): kbdta word97
+	Last Modified: 14-NOV-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	
+	SUMMARY
+	=======
+	
+	This article discusses conversion solutions that allow you to convert between
+	IBM's Document Composition Facility (DCF) Version 1 Release 4 and Microsoft
+	Word.
+	
+	MORE INFORMATION
+	================
+	
+	To convert data between IBM's Document Composition Facility (DCF) Version 1
+	Release 4 and Word, use either of the following methods.
+	
+	Method 1: Contact IBM Direct
+	----------------------------
+	
+	
+	Contact IBM Direct at (800) 426-2255 and order the Office Document Feature (ODF)
+	for use with product number 5748-XX9 (the Document Composition Facility).
+	
+	When the Office Document Feature (ODF) is installed, DCF can convert a
+	Revisable-Form Text Document Content Architecture (RFT-DCA) file into an RFT/GML
+	file for formatting by SCRIPT/VS. ODF can also convert an RFT/GML file back into
+	an RFT-DCA file.
+	
+	Word 97 can both read and save as RFT-DCA format created by ODF.
+	
+	NOTE: Be sure to order the appropriate version of ODF for your processor type.
+	See the environments under which DCF and ODF can be used in the "More
+	Information" section later in this article.
+	
+	Method 2: Contact a Third-Party Conversion Product Vendor
+	---------------------------------------------------------
+	
+	Contact a third-party conversion product vendor that supports conversion between
+	DCF and Word. For more information about third-party conversion products, please
+	see the following article in the Microsoft Knowledge Base:
+	
+	  Q174813 WD: Third-Party Conversion Solutions
+	
+	IBM's Document Composition Facility (DCF) is a host-based word processing program
+	available for IBM's mainframe environments as well as for the OS/2 and Windows
+	platforms. In addition to the OS/2 and Windows environments, DCF operates in the
+	interactive environments of CMS, TSO, and Customer Information Control System
+	(CICS) and the processors they operate with, when the appropriate Foreground
+	Environment Feature (FEF) is installed. It can also be run in the batch
+	environment under MVS and VSE.
+	
+	DCF Version 1 Release 4 provides a text formatter called SCRIPT/VS. SCRIPT/VS
+	processes documents marked up with its own control words and documents marked up
+	with Generalized Markup Language (GML) tags.
+	
+	Other IBM applications, such as BookMaster releases 3 and 4, write and save data
+	in GML format that can be formatted using the Document Composition Facility
+	(DCF) and subsequently exported from DCF in RFT-DCA format for use in Word.
+	
+	GML tags, a type of shorthand text markup, describe the parts or elements of the
+	document being formatted; they can be used instead of explicit SCRIPT/VS control
+	words to achieve the same results.
+	
+	The third-party products discussed here are manufactured by vendors independent
+	of Microsoft; we make no warranty, implied or otherwise, regarding these
+	products' performance or reliability.
+	
+	Additional query words: convert converted converts converting conversion transfer transferred transfers transferring translate translated translates translating translation book master
+	
+	======================================================================
+	Keywords          : kbdta word97 
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : WINDOWS:97
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

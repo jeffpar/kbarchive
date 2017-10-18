@@ -1,0 +1,134 @@
+---
+layout: page
+title: "Q267932: Secure Communication Shows Key Manager Button, But No Edit"
+permalink: kb/267/Q267932/
+---
+
+## Q267932: Secure Communication Shows Key Manager Button, But No Edit
+
+	Article: Q267932
+	Product(s): Internet Information Server
+	Version(s): 4.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 13-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you attempt to secure a Web site, the Edit button is not available and only
+	a Key Manager button appears. This does not allow you the option to select
+	Require Secure Channel when accessing this resource (for example, adding or
+	removing secure communication(s) to a site or virtual directory).
+	
+	
+	CAUSE
+	=====
+	
+	The Web server requires that at least one key is installed in order to make
+	modifications to SSL settings. If a Web site is set to use SSL and the only key
+	in Key Manager under WWW is deleted, then the Edit button is removed and
+	replaced with a Key Manager button.
+	
+	This problem generally occurs when an attempt to use SSL has failed. When the
+	steps are reversed that were followed to secure a site or virtual directory,
+	this problem is duplicated. Prior to removing any Key from Key Manager, the site
+	must have the Requires Secure Channel when accessing this resource check box
+	cleared and must also have the Encryption Settings Require 128-bit encryption
+	check box cleared. If no key exists, then all Web sites that are set to use SSL
+	are unreachable and receive a "403 Forbidden" error message.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, follow these steps:
+	
+	1. Click Start, click Run, type "Cmd" (without the quotation marks), and then
+	  click OK.
+	
+	2. Type "cd \" (without the quotation marks), and then press ENTER.
+	
+	3. Type "cd winnt\system32\inetsrv\adminsamples" (without the quotation marks),
+	  and then press ENTER.
+	
+	4. Type "cscript adsutil.vbs set w3svc/1/root/accessssl false" (without the
+	  quotation marks), and then press ENTER.
+	
+	NOTE: Step 4 assumes that SSL was being Required on the Default Web Site and not
+	at a virtual directory level. If a Virtual Directory or file required it only,
+	then the command would look like the following:
+	
+	  "cscript adsutil.vbs set w3svc/x/root/y/z false" (without the quotation
+	  marks)
+	
+	where x is the Site Number (1,2,3,etc.), y is the VirtualDirName (if exists), and
+	z is the FileName (if exists).
+	
+	
+	WORKAROUND
+	==========
+	
+	A key request must be generated in order to have the option of editing SSL
+	Settings. The steps to correct this problem are as follows:
+	
+	1. In Key Manager, right-click WWW, and then select Create New Key.
+	
+	2. Choose the option to save to a text file, and then give the file a name.
+	
+	3. Type in the answers to the questions regarding Organization, Organizational
+	  Unit, Common Name, City, State, and Country.
+	
+	4. After the key request is created, close Key Manager, and Committ All Changes.
+	
+	5. Close the MMC, and then re-open the Internet Service Manager.
+	
+	6. Right-click the site or virtual directory that you want to secure or
+	  unsecure, and then click Properties.
+	
+	7. Click the Directory Security tab to see an Edit button.
+	
+	8. Return to any Web site where the "403 Forbidden" error message is being
+	  displayed, select Directory Security, select Secure Communications, and then
+	  click Edit.
+	
+	9. Click to uncheck the Requires Secure Channel when accessing this resource
+	  check box, and make sure that the Require 128-bit encryption check box under
+	  the Encryption Settings is not selected (checked).
+	
+	NOTE: For secure communications (SSL) to work correctly, a key request must be
+	completed and the key successfully installed. For additional information on
+	completing the key request and correctly setting up SSL, click the article
+	number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q171084 How to Install a Certificate
+	
+	You can also open Key Manager by clicking the Start menu, clicking Run, and
+	typing "Keyring" (without the quotation marks).
+	
+	MORE INFORMATION
+	================
+	
+	This problem does not occur when you use IIS 5.0 in Windows 2000. In IIS 5.0,
+	the functions of the Key Manager have been ported to the Certificate Server. To
+	secure a Web site in IIS 5.0, a Server Certificate must be installed and
+	validated. If this is not the case, then the Edit button is not available
+	(grayed) and all SSL Settings are removed.
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbiisSearch kbiis400
+	Version           : :4.0
+	Issue type        : kbprb
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

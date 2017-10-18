@@ -1,0 +1,195 @@
+---
+layout: page
+title: "Q173945: How To Install The Windows NT Server 4.0 Evaluation Edition"
+permalink: kb/173/Q173945/
+---
+
+## Q173945: How To Install The Windows NT Server 4.0 Evaluation Edition
+
+	Article: Q173945
+	Product(s): Microsoft Press
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 11-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft TCP/IP Training 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes the procedure for installing Microsoft Windows NT Server
+	4.0 Evaluation Edition, included with the Microsoft TCP/IP Training kit.
+	
+	MORE INFORMATION
+	================
+	
+	Use the following steps to install the Windows NT Server software on your
+	computer.
+	
+	NOTE: These steps assume that you are using two computers on a LAN. If other
+	computers are present on the LAN as well, these steps may need to be modified to
+	avoid network conflicts. Your system may also require additional steps to
+	configure your network card or other hardware.
+	
+	
+	Create the Windows NT Server Setup Disks
+	----------------------------------------
+	
+	These steps will create three Windows NT Server setup disks that you will then
+	use to install Windows NT Server to your system.
+	
+	NOTE: It is possible to run Setup directly from the Windows NT Server CD-ROM
+	without first creating the setup disks. However, this could cause your system to
+	become unusable if the Windows NT Server installation process is interrupted.
+	Microsoft Press recommends that you do not run Setup directly from the CD-ROM.
+	
+	1. Insert the Microsoft Windows NT Server Evaluation Edition compact disc into
+	  the CD-ROM drive.
+	
+	  NOTE: A Microsoft Windows NT CD-ROM Autorun window may appear when you insert
+	  the compact disc. The Setup button in this window will run Setup directly
+	  from the Windows NT CD-ROM. Do not click the Setup button in this window.
+	  Instead, click the Close button to close this window.
+	
+	2. Click the Start button, point to Programs, and then click MS-DOS Prompt or
+	  Command Prompt. Type the command for your operating system:
+	
+	  MS-DOS, Windows 3.1, Windows for Workgroups, or Windows 95:
+	
+	  " D:\i386\winnt /ox " (without the quotation marks)
+	
+	  and then press ENTER.
+	
+	  NOTE: Replace the "D" with the letter of your CD-ROM drive if necessary.
+	
+	  Windows NT:
+	
+	  " D:\i386\winnt32 /ox " (without the quotation marks)
+	
+	  and then press ENTER.
+	
+	  NOTE: Replace the "D" with the letter of your CD-ROM drive if necessary.
+	
+	3. If the path to your compact disc does not already appear, type
+	
+	  " D:\i386 " (without the quotation marks)
+	
+	  and then click Continue.
+	
+	  NOTE: Replace the "D" with the letter of your CD-ROM drive if necessary.
+	
+	4. When prompted, label a blank disk as Windows NT Server Setup Disk #3, insert
+	  the disk into drive A, and then press ENTER.
+	
+	5. When prompted, label a blank disk as Windows NT Server Setup Disk #2, insert
+	  the disk into drive A, and then press ENTER.
+	
+	6. When prompted, label a blank disk as Windows NT Server Boot Disk, insert the
+	  disk into drive A, and then press ENTER.
+	
+	7. Close the Command Prompt, and remove the CD-ROM from the CD-ROM drive.
+	
+	8. With the Windows NT Server Setup Boot Disk in drive A, restart the computer.
+	
+	To Install the Evaluation Copy of Windows NT Server
+	---------------------------------------------------
+	
+	1. At the Welcome To Setup screen, press ENTER to install Windows NT Server.
+	
+	2. Press ENTER and follow the directions on your screen to allow Setup to detect
+	  your disk controllers.
+	
+	3. If asked if you are upgrading or installing a new version of Windows NT
+	  Server, type "N" (without the quotation marks) for new version.
+	
+	4. Select a partition that has enough free disk space to install Windows NT
+	  Server.
+	
+	5. Click "Leave Current File System Intact".
+	
+	6. When prompted for a location to install Windows NT files, if you are
+	  installing the evaluation copy of Windows NT Server on the same computer as
+	  another version of Windows NT, type a different name (for example, \NTEval or
+	  \120Eval); otherwise, accept \Winnt.
+	
+	7. Restart the computer when prompted to do so.
+	
+	8. Type your name and your organization's name when prompted to do so.
+	
+	9. When prompted for a CD-key, type "040" followed by "0048126" (without the
+	  quotation marks).
+	
+	10. In the Per Server For box, type 10 for the maximum number of client access
+	  licenses provided with the evaluation copy of Windows NT Server.
+	
+	11. If you are installing Windows NT Server onto your first computer, type
+	  Server1 as the name for your computer. If you are installing Windows NT
+	  Server on your second computer, type Server2.
+	
+	12. If you are installing Windows NT Server on your first computer, click
+	  Primary Domain Controller. Click Backup Domain Controller if you are
+	  installing Windows NT Server on your second computer.
+	
+	13. Type a password for the default Administrator account. Keep in mind that
+	  passwords are case sensitive.
+	
+	14. If asked about the floating-point workaround, click "Do Not Enable The
+	  Floating-Point Workaround."
+	
+	15. When asked about the Emergency Repair Disk, click "No, Do Not Create An
+	  Emergency Repair Disk."
+	
+	  NOTE: You may want to create an Emergency Repair Disk for your computer, but
+	  it will not be used in the book.
+	
+	16. Make sure that the default components to install are selected, and then
+	  click OK.
+	
+	17. When asked how this computer should participate on the network, select
+	  "Wired To The Network."
+	
+	18. Click the Microsoft Internet Information Server check box to clear it, and
+	  then click Next.
+	
+	19. When asked about the Network Adapter, click Start Search. If Setup cannot
+	  detect the installed network adapter, click Select From List, and select
+	  your network adapter.
+	
+	20. When asked about network protocols, accept TCP/IP Protocol and "NWLink
+	  IPX/SPX Compatible Transport."
+	
+	21. When asked whether you want to use DHCP, click No.
+	
+	22. For now, accept the default values for your network settings by clicking
+	  Next. You will change these settings in Lesson 1 of Chapter 2 in the "TCP/IP
+	  Training" text.
+	
+	23. Accept the default values for your network bindings by clicking Next.
+	
+	24. Type "Domain1" (without the quotation marks) as the name of your domain.
+	
+	25. In the Date/Time Properties window, select your time zone and then click
+	  Close.
+	
+	26. In the Display Properties window, set the color palette for 256 colors and
+	  the desktop area for 800 x 600 pixels.
+	
+	27. Restart the computer when prompted to do so.
+	
+	28. If you have not already done so, repeat steps 1-27 for your second computer.
+	
+	Additional query words: press ms_press bookbug prodnt eval evaluation 1- 57231-623-3
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbTCPIPSearch
+	Version           : :
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

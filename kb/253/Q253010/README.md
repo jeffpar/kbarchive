@@ -1,0 +1,301 @@
+---
+layout: page
+title: "Q253010: FIX: Busy Connections Leave Cursors Open"
+permalink: kb/253/Q253010/
+---
+
+## Q253010: FIX: Busy Connections Leave Cursors Open
+
+	Article: Q253010
+	Product(s): Open Database Connectivity (ODBC)
+	Version(s): 2.1,2.1 (GA),2.1 SP1,2.1 SP2,2.5,3.6,3.7
+	Operating System(s): 
+	Keyword(s): kbMDAC kbODBC kbGrpDSVCDB kbGrpDSMDAC kbMDAC210SP2fix kbMDAC250 kbMDAC260fix kbMDACNoSw
+	Last Modified: 08-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft ODBC Driver for SQL Server, versions 3.6, 3.7 
+	- Microsoft Data Access Components versions 2.1, 2.1 (GA), 2.1 SP1, 2.1 SP2, 2.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When using the Microsoft SQL Server ODBC driver (sqlsrv32.dll) in a manner that
+	permits multiple concurrent statement handles on a single connection, a busy
+	connection may leave cursors open in the SQL Server database with no warnings or
+	notifications to the user. This happens primarily under circumstances where one
+	or more of the statement handles are working in firehose (Forward-Only,
+	Read-Only cursor) mode.
+	
+	This can have two rather serious side effects. The first side effect is that
+	cursors can be left open on the database server that consumes memory and may
+	leave locks open against records. The second side effect is that subsequent
+	attempts to execute statements on the non-firehose ODBC statement handles may
+	generate the following error for no apparent reason:
+	
+	  SQLState: 24000 [Microsoft][ODBC SQL Server Driver]Invalid cursor state
+	
+	This behavior occurs with the sqlsrv32.dll driver versions 3.70.0690 (Microsoft
+	Data Access Components [MDAC] 2.1 SP2) and earlier, and with sqlsrv32.dll driver
+	version 3.70.820 (MDAC 2.5/Windows 2000).
+	
+	
+	CAUSE
+	=====
+	
+	When the SQL Server ODBC driver is busy with a firehose-mode operation, no other
+	activity can occur on the connection until the operation is complete. This
+	includes the sp_cursorclose calls the driver issues when calling SQLFreeStmt or
+	SQLCloseCursor.
+	
+	When the driver fails to close a cursor, SQLFreeStmt and SQLCloseCursor both
+	return SQL_SUCCESS, no errors are posted to ODBC, and no indication of the
+	failure is available to the application or user. However, the cursor remains
+	open in SQL Server and the statement handle still has a cursor identifier
+	associated with it.
+	
+	WORKAROUND
+	==========
+	
+	You can use these steps to work around the behavior:
+	
+	1. Execute all firehose operations on their own connection.
+	
+	2. Make sure all results from firehose operations are completed before closing
+	  cursors.
+	
+	NOTE: In a multithreaded environment, this will frequently not be possible.
+	
+	3. Do not use firehose operations. Instead, set the properties of all statement
+	  handles so that cursors are generated. This may include setting rowset size
+	  to something greater than one, setting SQL_ATTR_CURSOR_TYPE to something
+	  other than SQL_CURSOR_FORWARD_ONLY, and/or setting SQL_ATTR_CONCURRENCY to
+	  something other than SQL_CONCUR_READ_ONLY.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article.This problem was corrected in MDAC 2.6.
+	
+	This problem has been corrected in U.S. Service Pack 3 for Microsoft SQL Server
+	version 7.0. For information about how to download and install the latest SQL
+	Server Service Pack, see the following Microsoft Web site at:
+	
+	  http://support.microsoft.com/view/dev.asp?ID=hl&pg=sql.asp
+	
+	For more information, contact your primary support provider.
+	
+	MORE INFORMATION
+	================
+	
+	
+	Note that this "silent failure" behavior occurs only when the application is
+	attempting to close a cursor at the same time the connection is busy with a
+	firehose operation. Operations other than sp_cursorclose generally return the
+	following error message:
+	
+	  SQLState: HY000 [Microsoft][ODBC SQL Server Driver]Connection is busy with
+	  results for another hstmt
+	
+	It is possible to call SQLFreeStmt or SQLCloseCursor again after the firehose
+	statement has been closed, and this permits the call to sp_cursorclose to go
+	through. However, doing so generally requires that the application have
+	knowledge of the fact that the cursor did not close in the first place, and
+	therefore does not constitute a good workaround.
+	
+	This hotfix contains changes that permit an application to detect and trap for
+	this situation. SQLFreeStmt and SQLCloseCursor have been modified to return
+	SQL_SUCCESS_WITH_INFO when the sp_cursorclose call failed to execute. Trapping
+	for this return code allows the application to retry the
+	SQLCloseCursor/SQLFreeStmt call until it succeeds.
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Copy the following code into a console application and then compile it.
+	  Please note that you need to change your ODBC datasource name, user id and
+	  password.
+	
+	  #include "stdafx.h"
+	
+	  #include <windows.h>
+	  #include <stdio.h>
+	  #include <stdlib.h>
+	  #include <sql.h>
+	  #include <sqlext.h>
+	
+	  int StmtError(HSTMT);
+	  int ConnError(HDBC);
+	
+	  main()
+	  {
+	  	RETCODE rc;
+	  	HENV henv;
+	  	HDBC hdbc;
+	  	HSTMT hstmtCursor, hstmtFirehose;
+	  	
+	
+	  	char * dsn = "Pubs";
+	  	char * uid = "sa";
+	  	char * pwd = "";
+	  	char * SQLStr1 = "select au_lname from authors";
+	  	char * SQLStr2 = "select au_id from titleauthor";
+	
+	  //	The UPDLOCK hint below can be used instead to further verify that locks are 
+	  //	being held even after the statement has been closed.
+	  //	char * SQLStr1 = "select au_lname from authors (UPDLOCK)";
+	
+	  	rc = SQLAllocEnv(&henv);
+	  	rc = SQLAllocConnect(henv, &hdbc);
+	
+	  	rc = SQLConnect(hdbc, (unsigned char *)dsn,
+	  		SQL_NTS, (unsigned char *)uid,
+	  		SQL_NTS, (unsigned char *)pwd, SQL_NTS);
+	  	if (rc != SQL_SUCCESS && rc != SQL_SUCCESS_WITH_INFO)
+	  	{
+	  		ConnError (hdbc);
+	  		SQLFreeEnv(henv);
+	  		printf("\nDo the \"Press any key\" thing...");
+	  		getchar();
+	  		return(FALSE);
+	  	}
+	
+	  	rc = SQLAllocStmt(hdbc, &hstmtCursor);
+	  	rc = SQLAllocStmt(hdbc, &hstmtFirehose);
+	
+	  //	Set statement attributes so server-side cursor is generated
+	  	rc = SQLSetStmtAttr(hstmtCursor, SQL_ROWSET_SIZE, 
+	  		(void *) 2, SQL_NTS);
+	  	rc = SQLSetStmtAttr(hstmtCursor, SQL_ATTR_CURSOR_TYPE, 
+	  		(void *) SQL_CURSOR_KEYSET_DRIVEN, SQL_NTS);
+	  	rc = SQLSetStmtAttr(hstmtCursor, SQL_ATTR_CONCURRENCY, 
+	  		(void *) SQL_CONCUR_LOCK, SQL_NTS);
+	
+	  //	Execute the first statement and fetch a couple of records
+	  	rc = SQLExecDirect(hstmtCursor, (unsigned char *)SQLStr1, SQL_NTS);
+	  	if (rc != SQL_SUCCESS )
+	  	{
+	  		StmtError (hstmtCursor);
+	  		SQLFreeStmt(hstmtCursor, SQL_CLOSE);
+	  		SQLFreeStmt(hstmtFirehose, SQL_CLOSE);
+	  		SQLDisconnect(hdbc);
+	  		SQLFreeConnect(hdbc);
+	  		SQLFreeEnv(henv);
+	  		printf("\nDo the \"Press any key\" thing...");
+	  		getchar();
+	  		return(FALSE);
+	  	}
+	
+	  	rc = SQLFetch(hstmtCursor);
+	  	rc = SQLFetch(hstmtCursor);
+	
+	  //	Prepare and execute the second statement in firehose mode (using default properties)
+	  	rc = SQLPrepare(hstmtFirehose, (unsigned char *) SQLStr2, SQL_NTS);
+	  	rc = SQLExecute(hstmtFirehose);
+	  	rc = SQLFetch(hstmtFirehose);
+	  	rc = SQLFetch(hstmtFirehose);
+	
+	  //	Close the cursor on the first statement handle.
+	  //	This statement will not make it to the server, even though
+	  //	SQL_SUCCESS will be returned.
+	  	rc = SQLCloseCursor(hstmtCursor);
+	  	rc = SQLFreeStmt(hstmtCursor, SQL_CLOSE);
+	
+	  //	Execute a statement on the first statement handle again.
+	  //	This will fail with "Invalid cursor state" errors.
+	  	rc = SQLExecDirect(hstmtCursor, (unsigned char *) SQLStr1, SQL_NTS);
+	  	if (rc != SQL_SUCCESS || rc != SQL_SUCCESS_WITH_INFO)
+	  		StmtError(hstmtCursor);
+	
+	  	
+	  	printf("\n\nDo the \"Press any key\" thing...");
+	  	getchar();	
+	
+	  	SQLFreeStmt(hstmtCursor, SQL_CLOSE);
+	  	SQLFreeStmt(hstmtFirehose, SQL_CLOSE);
+	
+	  //	If the UPDLOCK hint was used, use Query Analyzer to run "sp_lock" here and 
+	  //	verify that locks are still held, even though all statement handles are closed.
+	  //	The locks will be freed during SQLDisconnect.
+	  	SQLDisconnect(hdbc);
+	  	SQLFreeConnect(hdbc);
+	  	SQLFreeEnv(henv);
+	  	return(TRUE);
+	  };
+	
+	  //=================================================================
+	  StmtError(HSTMT hstmt)
+	  {
+	  // variables for SQLDiagRec   
+	  	RETCODE rc = 0;
+	  	char mstate[6] = "\0";
+	  	long native = 0;
+	  	char mtext[300] = "\0";
+	  	short mlength = 0;
+	  	short i = 0;
+	
+	  	while ((rc = SQLGetDiagRec(SQL_HANDLE_STMT, hstmt, ++i, (unsigned char *)&mstate, 
+	  		&native, (unsigned char *)&mtext, 300, &mlength)) != SQL_NO_DATA)
+	  	printf("\nODBC Error:\t%s\n",mtext);
+	
+	  return(0);
+	  };
+	
+	  //=================================================================
+	
+	  ConnError(HDBC hdbc)
+	  {
+	  // variables for SQLDiagRec   
+	  	RETCODE rc = 0;
+	  	char mstate[6] = "\0";
+	  	long native = 0;
+	  	char mtext[300] = "\0";
+	  	short mlength = 0;
+	  	short i = 0;
+	
+	  	while ((rc = SQLGetDiagRec(SQL_HANDLE_DBC, hdbc, ++i, (unsigned char *)&mstate, 
+	  		&native, (unsigned char *)&mtext, 300, &mlength)) != SQL_NO_DATA)
+	  	printf("\nODBC Error:\t%s\n",mtext);
+	
+	  return(0);
+	  };
+	
+	2. Start SQL Profiler, and then connect to the same server to which the console
+	  application connects. Make sure that the following events are being monitored
+	  in SQL Profiler:
+	
+	   - CursorOpen
+	   - CursorClose
+	   - CursorPrepare
+	   - CursorUnprepare
+	   - RPC:Completed
+	
+	3. Run the code and examine the output in SQL Profiler. Notice that after the
+	  sp_prepare and sp_execute on the second statement handle, there is no call to
+	  sp_cursorclose even though both SQLCloseCursor and SQLFreeStmt have been
+	  called for that statement handle.
+	
+	4. Also notice that no CursorClose event has been triggered.
+	
+	NOTE: As an additional check, the UPDLOCK hint can be added to the first
+	statement (the cursor-generating statement), and sp_lock can then be run in
+	Query Analyzer to show locks are still being held even after the call to
+	SQLCloseCursor and SQLFreeStmt. This must be checked before the call to
+	SQLDisconnect because SQLDisconnect frees the locks open on the connection.
+	
+	Additional query words: odbc sp_cursorclose close cursor sqlfreestmt sqlclosecursor leave open busy connection invalid state
+	
+	======================================================================
+	Keywords          : kbMDAC kbODBC kbGrpDSVCDB kbGrpDSMDAC kbMDAC210SP2fix kbMDAC250 kbMDAC260fix kbMDACNoSweep 
+	Technology        : kbSQLServSearch kbAudDeveloper kbODBCSearch kbMDACSearch kbMDAC210 kbMDAC210SP1 kbMDAC210SP2 kbMDAC250 kbODBCSQLServ360 kbODBCSQLServ370
+	Version           : :2.1,2.1 (GA),2.1 SP1,2.1 SP2,2.5,3.6,3.7
+	Hardware          : ALPHA x86
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

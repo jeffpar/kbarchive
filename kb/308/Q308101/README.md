@@ -1,0 +1,106 @@
+---
+layout: page
+title: "Q308101: Update Resolves Error When Running SBSI Training Program on Wind"
+permalink: kb/308/Q308101/
+---
+
+## Q308101: Update Resolves Error When Running SBSI Training Program on Wind
+
+	Article: Q308101
+	Product(s): Microsoft Press
+	Version(s): 3.0
+	Operating System(s): 
+	Keyword(s): kbbuglist kbfaq kbfixlist kbchackingthereallylongkeywordshereinthisapplicationcanIaddth
+	Last Modified: 15-OCT-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- MSPRESS Microsoft OfficeXP Small Business Edition Step By Step Interactive, version 3.0 
+	- MSPRESS Microsoft OfficeXP Professional Step By Step Interactive, version 3.0 
+	- MSPRESS Microsoft OfficeXP Personal Step By Step Interactive (Japanese), version 3.0 
+	- MSPRESS Microsoft Office 2000 Step By Step Interactive, version 3.0 
+	- MSPRESS Microsoft Windows 2000 Professional Step By Step Interactive, version 3.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The following error message may occur when running the previously mentioned Step
+	by Step Interactive (SBSI) training programs and when the training is installed
+	on an NTFS partition and you are not logged on with Owner, Administrator or
+	Power User privileges:
+	
+	  Cannot open your DBF database files: Please verify that the path is correct
+	  and that the files are not read-only.
+	  Database Path: .\Database\ or C:\Program Files\MSPress\Training\Database\
+	
+	CAUSE
+	=====
+	
+	This error occurs when the SBSI training program is installed on an NTFS
+	partition and you are not logged on with Owner, Administrator, or Power User
+	privileges. The SBSI training program requires that all users have write access
+	to the location where SBSI stores a number of .dbf files, typically in the
+	C:\Program Files\MSPress\Training\Database folder.
+	
+	RESOLUTION
+	==========
+	
+	An update is available that allows all user groups to successfully run the
+	training program on their local computers. The update should be run after the
+	installation of any of the Step by Step Interactive titles listed above. Saved
+	information such as custom users, progress and assessment information may be
+	lost when applying the patch on top of an already installed Step by Step
+	Interactive title.
+	
+	The following file is available for download from the Microsoft Download Center:
+	
+	  DownloadDownload Q308101.exe now
+	  (http://www.microsoft.com/downloads/release.asp?releaseid=33008)
+	
+	Release Date:
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. Once posted, the file is housed on secure
+	servers that prevent any unauthorized changes to the file.
+	
+	Q308101.exe launches Q308101.vbs which in turn copies the database files from
+	C:\ProgramFiles\MSPress\Training\Database to C:\Documents and Settings\All
+	Users\Application Data\sbsi\lrun, or to the equivalent location on localized
+	versions of Microsoft Windows. The database files combined consume approximately
+	100 kb. The script then calls the Windows Cacls.exe tool to ensure that the
+	USERS group has write permissions added to the files copied.
+	
+	Userid.exe provides the USERS alias as it is defined for the operating system
+	(localized or not). Finally, the script modifies the database path in the
+	lrun32.ini file which is located in the %windir% folder.
+	
+	Q308101.exe is applicable for the following language versions of SBSI: English,
+	Brazilian Portuguese, Dutch, French, German, Italian, Japanese, Spanish and
+	Swedish.
+	
+	Original Equipment Manufacturers (OEMs) can view the ReadMe for instructions on
+	how to apply this update via the OEM Preinstall Kit (OPK).
+	
+	STATUS
+	======
+	
+	
+	
+	Additional query words: MELL Enterprise Learning Library, SBSI OfficeXP Training, Interactive Step by Interactive, MSPress
+	
+	======================================================================
+	Keywords          :  kbbuglist kbfaq kbfixlist kbchackingthereallylongkeywordshereinthisapplicationcanIaddthis
+	Technology        : kbMSPressSearch
+	Version           : :3.0
+	Issue type        : kbprb
+	Solution Type     : kbfix kbpending kbnofix
+	
+	=============================================================================
+	

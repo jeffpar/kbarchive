@@ -1,0 +1,247 @@
+---
+layout: page
+title: "Q91182: Differences Between Windows 3.1 Setup and WFWG Setup"
+permalink: kb/091/Q91182/
+---
+
+## Q91182: Differences Between Windows 3.1 Setup and WFWG Setup
+
+	Article: Q91182
+	Product(s): Microsoft Windows 3.x Retail Product
+	Version(s): WINDOWS:3.1
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 22-SEP-1999
+	
+	3.10
+	
+	WINDOWS
+	
+	kbdisplay kbsound kb3rdparty kbnetwork
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows for Workgroups version 3.1 
+	- Microsoft Windows 3.1 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article covers the changes between Microsoft Windows version 3.1 Setup and
+	Microsoft Windows for Workgroups (WFWG) version 3.1 Setup. The following topics
+	are covered:
+	
+	- Disk Space Requirements
+	
+	- Device Drivers No Longer Provided with the Product
+	
+	- New Video Driver
+	
+	- Network Drivers No Longer Provided with Windows for Workgroups
+	
+	- Compatible Networks
+	
+	- New Network Drivers and Files
+	
+	- New Windows Drivers (Controls, Mail, NetDDE, VxDs)
+	
+	- New Applications and Utilities
+	
+	- Windows 3.1 Programs/Files Not Included in Windows for Workgroups
+	
+	- Changes to the MS-DOS-Based Portion of Setup
+	
+	- Changes to the Graphics-Based Portion of Setup
+	
+	- Changes to Maintenance Mode of Setup
+	
+	MORE INFORMATION
+	================
+	
+	Disk Space Requirements
+	-----------------------
+	
+	Installation Type                             Windows 3.0     WFWG 3.1
+	
+	Full Install on 286 machine                      8.6 MB        13.2 MB
+	Upgrade of Windows 2.x on 286 machine            8.6 MB        13.2 MB
+	Upgrade of Windows 3.0 or 3.1 on 286 machine     5.2 MB         5.2 MB
+	
+	Full Install on 386 machine                      9.5 MB        14.3 MB
+	Upgrade of Windows 2.x on 386 machine            9.5 MB        14.3 MB
+	Upgrade of Windows 3.0 or 3.1 on 386 machine     5.5 MB         9.5 MB
+	
+	Network Administrator Setup (SETUP /A)          15.3 MB        20.0 MB
+	Network Setup (SETUP /N)                         0.3 MB         1.2 MB
+	
+	Device Drivers No Longer Provided with the Product
+	--------------------------------------------------
+	
+	The following devices drivers were provided with Windows 3.1 but are NOT provided
+	with Windows for Workgroups version 3.1.
+	
+	- QuadVGA
+	
+	- ATI VIP VGA
+	
+	- 82C441 VGA
+	
+	- Olivetti/AT&T Keyboard Mouse
+	
+	New Video Driver
+	----------------
+	
+	Windows for Workgroups provides a new video driver: the ET 4000. This video card
+	is not automatically detected during Setup. You must install the driver for this
+	card manually.
+	
+	Network Drivers No Longer Provided with Windows for Workgroups
+	--------------------------------------------------------------
+	
+	- No Network Installed
+	
+	- 3Com 3+Open (all versions)
+	
+	- 3Com 3+Share (all versions)
+	
+	- Artisoft LANtastic (all versions)
+	
+	- Banyan VINES (all versions)
+	
+	- IBM OS/2 LAN Server (all versions)
+	
+	- IBM PC LAN Program (all versions)
+	
+	- Microsoft LAN Manager (version 2.0 and below)
+	
+	- Microsoft Network or compatible (all versions)
+	
+	- Digital Equipment Corporation (DEC) Pathworks (all versions)
+	
+	- TCS 10Net (all versions)
+	
+	If you have one of these networks, Setup warns you to remove it before you
+	continue and then replaces it with Windows for Workgroups.
+	
+	Compatible Networks
+	-------------------
+	
+	- Microsoft Workgroup Client (all versions)
+	
+	- Microsoft LAN Manager (version 2.1)
+	
+	- Novell NetWare (all versions)
+	
+	New Network Drivers and Files
+	-----------------------------
+	
+	WFWNET.DRV         WFWNET.HLP         VNETBIOS.386       VNETSUP.386
+	VREDIR.386         VSERVER.386        VBROWSE.386        VWC.386
+	NETAPI.DLL         PMSPL.DLL          NETDDE.EXE         NDDENB.DLL
+	WFWSETUP.CPL       NETWORK.INF        LM21DRV.UPD
+	
+	New Windows Drivers (Controls, Mail, NetDDE, VxDs)
+	--------------------------------------------------
+	
+	COMMCTRL.DLL       AB.DLL             DEMILAYR.DLL       FRAMEWRK.DLL
+	MAILMGR.DLL        MAILSPL.EXE        MAPI.DLL           MSSFS.DLL
+	PABNSP.DLL         SENDFILE.DLL       STORE.DLL          VFORMS.DLL
+	NDDEAPI.DLL        VSHARE.386         VCD.386            VDMAD.386
+	VPICD.386          VPD.386
+	
+	New Applications and Utilities
+	------------------------------
+	
+	CLIPBRD.EXE          ClipBook Viewer
+	CLIPSRV.EXE          ClipBook Server
+	WINCHAT.EXE          Chat
+	WINMETER.EXE         WinMeter
+	MSMAIL.EXE           Mail
+	SCHDPLUS.EXE         Schedule+
+	NETWATCH.EXE         NetWatcher
+	MSHEARTS.EXE         Hearts
+	
+	Windows 3.1 Programs/Files Not Included in Windows for Workgroups
+	-----------------------------------------------------------------
+	
+	CALENDAR.EXE         Calendar
+	SSMYST.SCR           Mystify Screen Saver
+	ARCHES.BMP           Arches Wallpaper
+	CHITZ.BMP            Chitz Wallpaper
+	FLOCK.BMP            Flock Wallpaper
+	MARBLE.BMP           Marble Wallpaper
+	TARTAN.BMP           Tartan Wallpaper
+	CHORD.WAV            Chord Sound
+	TADA.WAV             Trumpet Sound
+	APPS.HLP             Application Compatibility Help
+	
+	Changes to the MS-DOS-Based Portion of Setup
+	--------------------------------------------
+	
+	The Workgroup upgrade for Microsoft Windows version 3.0 users and the Workgroup
+	upgrade for Microsoft Windows version 3.1 users perform a version check and
+	require a previous version of Windows installed on the system. Setup looks for
+	the WIN.COM file.
+	
+	During hardware detection, networks supported for Windows 3.1 are detected to
+	determine compatibility with Windows for Workgroups. Only Workgroup Connections,
+	NetWare, and Microsoft LAN Manager version 2.1 are compatible with Windows for
+	Workgroups.
+	
+	The networks list is not shown in the system settings; WFWNET.DRV is the only
+	supported primary network for this version. NetWare can be added as a secondary
+	network later in the Windows-based portion of Setup.
+	
+	SETUP /I disables hardware detection, including network software detection, and
+	initiates Custom Setup instead of Express Setup by default.
+	
+	Changes to the Graphics-Based Portion of Setup
+	----------------------------------------------
+	
+	The first event in the graphics-based portion of Windows for Workgroups Setup is
+	network card detection (NCD). If the system stops responding (hangs) at the
+	transition from the MS-DOS-based portion of Setup to the Windows-based portion
+	of Setup (at the blue "Windows Setup" screen), it is probably because of NCD.
+	
+	To recover from this situation, restart the computer and run Setup again. Setup
+	leaves a flag in the SYSTEM.INI file so that NCD is not run the second time.
+	Running Setup with the /I parameter also disables NCD.
+	
+	The user-information dialog box now contains computer name and workgroup in
+	addition to the user's name and company.
+	
+	If MCSDEX.EXE or TBMI2.COM are in the AUTOEXEC.BAT file, Setup copies a new
+	version of these files to the WINDOWS directory and replaces the lines calling
+	these files in the AUTOEXEC.BAT file. The /y parameter is also added to the
+	MSCDEX line. The mouse is handled in a similar fashion.
+	
+	Network adapters, protocols, and secondary network drivers are added right after
+	printer installation.
+	
+	The Exit Setup dialog box no longer contains the Restart Windows option because
+	the network drivers (WORKGRP.SYS and so forth) must be loaded by restarting the
+	computer.
+	
+	Changes to Maintenance Mode of Setup
+	------------------------------------
+	
+	The networks list is not shown in the system settings; WFWNET.DRV is the only
+	supported primary network for this version. The Network Adapter and Compatible
+	Networks dialog boxes are available from the Control Panel Networks option and
+	are not available from Setup in maintenance mode.
+	
+	The products included here are manufactured by vendors independent of Microsoft;
+	we make no warranty, implied or otherwise, regarding these products' performance
+	or reliability.
+	
+	Additional query words: 3.10 wonderware wonder ware
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin310 kbWFW310
+	Version           : WINDOWS:3.1
+	
+	=============================================================================
+	

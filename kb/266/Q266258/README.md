@@ -1,0 +1,80 @@
+---
+layout: page
+title: "Q266258: Computer Stops Responding During First Restart After You Apply S"
+permalink: kb/266/Q266258/
+---
+
+## Q266258: Computer Stops Responding During First Restart After You Apply S
+
+	Article: Q266258
+	Product(s): Microsoft Windows NT
+	Version(s): winnt:4.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you have restarted for the first time after applying Service Pack 4 on a
+	computer running Windows NT Workstation 4.0, you may find that the computer
+	stops responding (hangs). At the point where it hangs, the computer may be
+	having trouble processing a driver or the hardware abstraction layer (HAL).
+	
+	RESOLUTION
+	==========
+	
+	To resolve this behavior, do a parallel installation, and then copy the
+	program's files from the new installation to the old installation.
+	
+	MORE INFORMATION
+	================
+	
+	1. Start a parallel installation of Windows NT Workstation 4.0.
+	
+	2. Install Service Pack 4.
+	
+	3. Restart to the new parallel installation and make sure it is working
+	  correctly.
+	
+	4. Move the files (not the subfolder) from \%SystemRoot%\System32\ of the old
+	  installation to a backup folder.
+	
+	5. Move the Drivers folder from \%SystemRoot%\System32\Drivers\ of the old
+	  installation to a backup folder.
+	
+	6. Copy the files (not the subfolder) from the \%SystemRoot%\System32\ folder of
+	  the new installation to the \%SystemRoot%\System32\ folder of the old
+	  installation.
+	
+	7. Copy the Drivers folder from the \%SystemRoot%\System32\Drivers\ folder of
+	  the new installation to the \%SystemRoot%\System32\Drivers\ folder of the old
+	  installation.
+	
+	8. Restart the computer to the original installation.
+	
+	9. Once you can gain access to the original installation, copy over only the
+	  backup files (not the subfolder) of the \%SystemRoot%\System32\ folder.
+	
+	10. When you are prompted to replace the files, click No.
+	
+	NOTE: This should restore most program .dll files, unless a program has replaced
+	an original Windows NT 4.0 .dll file with its own version. In that case, you may
+	need to reinstall the program.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search
+	Version           : winnt:4.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

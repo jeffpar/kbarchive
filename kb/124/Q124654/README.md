@@ -1,0 +1,89 @@
+---
+layout: page
+title: "Q124654: Event ID 8006: The Browser Has Received an Illegal Datagram..."
+permalink: kb/124/Q124654/
+---
+
+## Q124654: Event ID 8006: The Browser Has Received an Illegal Datagram...
+
+	Article: Q124654
+	Product(s): Microsoft Windows NT
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 3.5 
+	- Microsoft Windows NT Server version 3.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	After you upgrade from Windows NT version 3.1 to Windows NT version 3.5, the
+	following message appears in Event Viewer:
+	
+	  Event ID: 8006
+	  Source: SRV
+	  Type: Error
+	  Description: The browser has received an illegal datagram from the
+	  remote computer <computer name> to name <domain name> on transport
+	  Nbf_Elnk31. The data is the datagram.
+	
+	CAUSE
+	=====
+	
+	This problem occurs when an illegally formed Netlogon frame is received from the
+	client computer. Windows NT version 3.5 correctly identifies the illegal frame
+	and reports it in the System Log.
+	
+	
+	RESOLUTION
+	==========
+	
+	To correct this problem, do one or all of the following:
+	
+	- Upgrade to LAN Manager 2.2c or later.
+	
+	- Upgrade to Network Client version 3.0 for MS-DOS (available from the Windows
+	  NT Server version 3.5 CD).
+	
+	- Upgrade to Windows for Workgroups version 3.11 (available from the Windows NT
+	  Server version 3.5 CD).
+	
+	MORE INFORMATION
+	================
+	
+	Hexadecimal information from Event ID 8006:
+	
+	  0000: 002c0000 00740004 00000000 80001f46
+	  0010: 00000000 c00000d0 00000116 00000000
+	  0020: 00000000 00000000 424d53ff 00000025
+	  0030: 00000000 00000000 00000000 00000000
+	  0040: 57670000 056102d4 30000011 00000000
+	  0050: 02000000
+	
+	  0000: 00 00 2c 00 04 00 74 00   ..,...t.
+	  0008: 00 00 00 00 46 1f 00 80   ....F..
+	  0010: 00 00 00 00 d0 00 00 c0   ....-..+
+	  0018: 16 01 00 00 00 00 00 00   ........
+	  0020: 00 00 00 00 00 00 00 00   ........
+	  0028: ff 53 4d 42 25 00 00 00   SMB%...
+	  0030: 00 00 00 00 00 00 00 00   ........
+	  0038: 00 00 00 00 00 00 00 00   ........
+	  0040: 00 00 67 57 d4 02 61 05   ..gW+.a.
+	  0048: 11 00 00 30 00 00 00 00   ...0....
+	  0050: 00 00 00 02               ....
+	
+	
+	Additional query words: wfw wfwg prodnt reskit
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+	
+	=============================================================================
+	

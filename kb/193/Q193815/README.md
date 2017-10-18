@@ -1,0 +1,133 @@
+---
+layout: page
+title: "Q193815: Improved APPC/CPIC Performance on SNA Client Computer"
+permalink: kb/193/Q193815/
+---
+
+## Q193815: Improved APPC/CPIC Performance on SNA Client Computer
+
+	Article: Q193815
+	Product(s): Microsoft SNA Server
+	Version(s): WINDOWS:4.0,4.0 SP1
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 22-OCT-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 4.0, 4.0 SP1 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about editing the registry.
+	Before you edit the registry, make sure you understand how to restore it if
+	a problem occurs. For information about how to do this, view the "Restoring
+	the Registry" Help topic in Regedit.exe or the "Restoring a Registry Key"
+	Help topic in Regedt32.exe.
+	
+	SUMMARY
+	=======
+	
+	When an APPC application calls TP_ENDED (to end the last conversation) from an
+	SNA Server Windows NT or Windows 95 or Windows 98 client computer, the
+	underlying LAN session to the SNA Server is dropped. If the application
+	immediately calls TP_STARTED and [MC_]ALLOCATE to invoke a new conversation, a
+	new LAN session is established to the SNA Server, and the user is authenticated
+	again by the server. This can significantly reduce APPC application performance
+	if the program continuously starts, ends, and restarts new conversation
+	requests.
+	
+	MORE INFORMATION
+	================
+	
+	An update to Snadmod.dll for SNA Server 4.0 is available which improves
+	performance. Instead of closing a client-server connection immediately after the
+	last conversation ends, Snadmod.dll now waits a short period before it closes
+	the LAN connection. The idea is that if the application starts a new
+	conversation within this period, the snadmod.dll can avoid expensive logon
+	validations and resource allocations by reusing the existing connection. The
+	delay is configurable through the following registry parameter.
+	
+	WARNING: Using Registry Editor incorrectly can cause serious problems that may
+	require you to reinstall your operating system. Microsoft cannot guarantee that
+	problems resulting from the incorrect use of Registry Editor can be solved. Use
+	Registry Editor at your own risk.
+	
+	For information about how to edit the registry, view the "Changing Keys And
+	Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+	Information in the Registry" and "Edit Registry Data" Help topics in
+	Regedt32.exe. Note that you should back up the registry before you edit it. If
+	you are running Windows NT, you should also update your Emergency Repair Disk
+	(ERD).
+	
+	SNA Server Windows NT Client
+	----------------------------
+	
+	1. Apply the hotfix.
+	
+	2. Start the Windows NT Registry Editor (Regedt32.exe) and find the following
+	  key:
+	
+	  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SnaBase
+	      \Parameters\ 
+	
+	3. Add the following entry to this key:
+	
+	      Value Name: CloseTimeout
+	      Data Type: REG_DWORD
+	      Data (Decimal): <value>
+	
+	  Where value is the number of seconds. If this entry is not specified, the
+	  CloseTimeout value internally defaults to 10 seconds.
+	
+	SNA Server Windows 95 or Windows 98 Client
+	------------------------------------------
+	
+	1. Apply the hotfix.
+	
+	2. Start the Windows 95/98 Registry Editor (Regedit.exe) and find the following
+	  key:
+	
+	  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SnaBase
+	      \Parameters\ 
+	
+	3. Add the following new DWORD value:
+	
+	      CloseTimeout
+	      Value Data (Decimal): <value>
+	
+	  Where value is the number of seconds. If this entry is not specified, the
+	  CloseTimeout value internally defaults to 10 seconds.
+	
+	This update applies to any SNA Server Windows NT, Windows 95, or Windows 98
+	client which runs an APPC or CPIC application to connect through an SNA Server
+	running on a separate computer. The SNA Server does not need to be updated, and
+	can remain at SNA Server 4.0 or a prior release. If the application is running
+	on the server itself, it may still establish a LAN session to use resources
+	provided by another SNA Server in the subdomain. In this case, this update
+	should be applied to the server (that is, the computer where the application is
+	running).
+	
+	
+	RESOLUTION
+	==========
+	
+	Microsoft has produced an update to SNA Server 4.0 which improves performance,
+	as described in this article. This update is in included in the latest SNA
+	Server version 4.0 U.S. Service Pack. For information on obtaining this Service
+	Pack, query on the following word in the Microsoft Knowledge Base (without the
+	spaces):
+	
+	  S E R V P A C K
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400 kbSNAServ400SP1
+	Version           : WINDOWS:4.0,4.0 SP1
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

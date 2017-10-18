@@ -1,0 +1,81 @@
+---
+layout: page
+title: "Q255740: &quot;Invalid Connector DN&quot; Error Message Trying to Run Exchange MA"
+permalink: kb/255/Q255740/
+---
+
+## Q255740: &quot;Invalid Connector DN&quot; Error Message Trying to Run Exchange MA
+
+	Article: Q255740
+	Product(s): Microsoft Windows NT
+	Version(s): 2.1
+	Operating System(s): 
+	Keyword(s): kbenv kberrmsg
+	Last Modified: 15-APR-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Metadirectory Services, version 2.1 
+	- Zoomit VIA, version 2.1 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	If an you copy a Management Agent (MA) control script from an existing,
+	functional Microsoft Exchange MA to a new Exchange MA, you may receive an
+	"Invalid Connector DN" error message when you run the script.
+	
+	This behavior may occur if you create the MA in the following manner:
+	
+	1. Copy the templates from the existing MA.
+	
+	2. Update the new MA.
+	
+	3. Change information related to the second Exchange site.
+	
+	The discovery of the connected directory succeeds, but the synchronization with
+	the metadirectory does not succeed and generates numerous "Invalid Connector DN"
+	and possibly also "Skip Unknown Line" messages in the log file.
+	
+	MORE INFORMATION
+	================
+	
+	This behavior can occur if your import file and Add Parsing template are out of
+	synchronization. The metadirectory synchronization process is sensitive to the
+	order of the lines in the parsing templates.
+	
+	Each line in the import file should have a corresponding line in the Add Parsing
+	template, and the corresponding lines in the two files should be in the same
+	order.
+	
+	It is possible to specify "no order" for the lines in the parsing template, but
+	there is significant cost in terms of performance when doing this. For further
+	information, see the following article in the Microsoft Knowledge Base:
+	
+	  Q252997 How to Specify No Order in Parsing Templates
+	
+	To determine the problem location in the template, follow these steps:
+	
+	1. Go to the Operator's log and find the first record with skipped lines.
+	
+	2. Note the record before it also.
+	
+	3. Open the import file and find the record.
+	
+	4. Compare it with the previous record and find the extra attribute(s).
+	
+	Your add templates need to have these attributes included so that it does not
+	start skipping lines.
+	
+	Additional query words: metadirectory, via, zoomit, exchange
+	
+	======================================================================
+	Keywords          : kbenv kberrmsg 
+	Technology        : kbZoomitSearch kb3rdpartySearch kbMMSSearch kbMMS210 kbZoomit210
+	Version           : :2.1
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

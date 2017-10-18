@@ -1,0 +1,144 @@
+---
+layout: page
+title: "Q98512: DoubleSpace User Interface Text Not Visible on Plasma Display"
+permalink: kb/098/Q98512/
+---
+
+## Q98512: DoubleSpace User Interface Text Not Visible on Plasma Display
+
+	Article: Q98512
+	Product(s): Microsoft Disk Operating System
+	Version(s): MS-DOS:6.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 22-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft MS-DOS operating system version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you run DoubleSpace on some plasma display screens, some highlighted
+	screens and some color combinations are not viewable. For example, when you
+	select a menu, you may be unable to see the selected command.
+	
+	There is no way to directly change the default colors or the video display.
+	
+	WORKAROUND
+	==========
+	
+	You can work around this problem by using Debug to edit DBLSPACE.EXE and change
+	the default colors.
+	
+	NOTE: This procedure works for the DBLSPACE.EXE file provided with MS-DOS 6.0
+	(dated 3-10-93 with a size of 274484 bytes). It does not work with the
+	DBLSPACE.EXE file provided on the Conversion Disk for Users of Stacker.
+	
+	1. Make a backup copy of your DBLSPACE.EXE file. To do this, type the following
+	  at the MS-DOS command prompt and then press ENTER:
+	
+	  " copy c:\dos\dblspace.exe c:\dos\dblspexe.sav " (without the quotation
+	  marks)
+	
+	2. Rename DBLSPACE.EXE before running Debug. To do this, type the following at
+	  the MS-DOS command prompt and then press ENTER:
+	
+	  " ren dblspace.exe dblspace.bw " (without the quotation marks)
+	
+	3. Run Debug and edit the DBLSPACE.BW file. To do this, type the following at
+	  the MS-DOS command prompt and then press ENTER:
+	
+	  " debug dblspace.bw " (without the quotation marks)
+	
+	4. Follow the steps shown in the table below. Press ENTER after each command
+	  shown in the "Command to ENTER:" column.
+	
+	  NOTE: Debug displays a segment address in place of the "xxxx" shown below. For
+	  example, if the segment address is 2C0E, Debug displays the following after
+	  you enter the first edit command:
+	
+	  2C0E:0BA4 74.
+	
+	  In the commands where this segment address is represented with a "Yxxx", use a
+	  segment address that is calculated as follows:
+	
+	  Add 3 to the left digit shown in the segment address (represented by "xxxx")
+	  that appears after you enter the first edit command. For example, if "xxxx"
+	  is equal to 2C0E, use 5C0E for the segment address in all commands that
+	  specify "Yxxx".
+	
+	  Debug                  Command to
+	  Prompts                Enter                 Comment
+	  -----------------------------------------------------------------
+	
+	  -                      e 0ba4                Edit 0BA4
+	  xxxx:0BA4   74.        90                      Replace 74 with 90
+	  -                      e 0ba5                Edit 0BA5
+	  xxxx:0BA5   07.        90                      Replace 07 with 90
+	  -                      e Yxxx:a097           Edit Yxxx:A097
+	  Yxxx:A097   07.        00                      Replace 07 with 00
+	  -                      e Yxxx:a098           Edit Yxxx:A098
+	  Yxxx:A098   00.        07                      Replace 00 with 07
+	  -                      e Yxxx:a0a7           Edit Yxxx:A0A7
+	  Yxxx:A0A7  00.         07                      Replace 00 with 07
+	  -                      e Yxxx:a0a8           Edit Yxxx:A0A8
+	  Yxxx:A0A8  07.         00                      Replace 07 with 00
+	  -                      e Yxxx:a0b7           Edit Yxxx:A0B7
+	  Yxxx:A0B7  00.         07                      Replace 00 with 07
+	  -                      e Yxxx:a0b8           Edit Yxxx:A0B8
+	  Yxxx:A0B8  07.         00                      Replace 07 with 00
+	  -                      w                       Write file to disk.
+	  Writing 43034 bytes
+	  -                      q                       Quit Debug
+	
+	5. Rename DBLSPACE.BW so that it can be used. To do this, type the following at
+	  the MS-DOS command prompt and then press ENTER:
+	
+	  " ren dblspace.bw dblspace.exe " (without the quotation marks)
+	
+	Patch Locations in DBLSPACE.EXE
+	-------------------------------
+	
+	The following are patch locations that are changed using the above Debug script.
+	If you prefer, you can use a hex editor to make these changes.
+	
+	           Original    New
+	OFFSET:    Value       Value
+	-------------------------------------------------------
+	
+	00000AA4:    74         90    ; force monochrome colors
+	00000AA5:    07         90    ; force monochrome colors
+	00039F97:    07         00    ; change menu highlight
+	00039F98:    00         07    ; change menu highlight
+	00039FA7:    00         07    ; change list box color for options
+	00039FA8:    07         00    ; change list box color for options
+	00039FB7:    00         07    ; change hot key highlight when selected
+	00039FB8:    07         00    ; change hot key highlight when selected
+	
+	Other Options
+	-------------
+	
+	You can also work around this problem by using the command-line interface or by
+	pressing the PRINT SCREEN key to view the DoubleSpace screens. Although the
+	screens don't display with viewable colors, they do print correctly.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the MS-DOS 6.0 DoubleSpace user
+	interface. We are researching this problem and will post new information here in
+	the Microsoft Knowledge Base as it becomes available.
+	
+	Additional query words: 6.00 video monitor card board double space
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMSDOSSearch kbMSDOS600
+	Version           : MS-DOS:6.0
+	
+	=============================================================================
+	

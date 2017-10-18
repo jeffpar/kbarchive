@@ -1,0 +1,113 @@
+---
+layout: page
+title: "Q165503: Description of the File System Troubleshooting Options"
+permalink: kb/165/Q165503/
+---
+
+## Q165503: Description of the File System Troubleshooting Options
+
+	Article: Q165503
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): 95
+	Operating System(s): 
+	Keyword(s): kbenv kbtool diskmem win95 kbDiskMemory
+	Last Modified: 28-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 95 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The System tool in Control Panel contains a set of options for changing file
+	system performance settings. You can use these options when you experience
+	hardware or software compatibility problems.
+	
+	NOTE: Enabling any of the file system troubleshooting options may seriously
+	degrade system performance.
+	
+	MORE INFORMATION
+	================
+	
+	To display the file system troubleshooting options, follow these steps:
+	
+	1. In Control Panel, double-click System.
+	
+	2. Click the Performance tab.
+	
+	3. Click File System.
+	
+	4. Click the Troubleshooting tab.
+	
+	The following table describes the settings on the Troubleshooting tab:
+	
+	  File system option    Description
+	  -----------------------------------------------------------------------
+	  Disable New File      This option alters the internal rules for file
+	  Sharing And           sharing and locking on hard disks, governing
+	  Locking Semantics     whether certain processes can have access to
+	                        open files in certain share modes that guarantee
+	                        a file will not be modified. This option should
+	                        be checked only in the rare case that an
+	                        MS-DOS-based application has problems sharing
+	                        under Windows 95. This sets SoftCompatMode=0 in
+	                        the registry.
+	
+	  Disable Long Name     This option turns off the tunneling feature,
+	  Preservation For      which preserves long filenames when files are
+	  Old Programs          opened and saved by applications that do not
+	                        recognize long filenames. This option should be
+	                        checked in the rare case that an important legacy
+	                        application is not compatible with long
+	                        filenames. This sets PreserveLongNames=0 in the
+	                        registry.
+	
+	  Disable Protected-    This option prevents Windows 95 from terminating
+	  Mode Hard Disk        interrupts from the hard disk controller and
+	  Interrupt Handling    bypassing the ROM routine that handles these
+	                        interrupts. Some hard disk drives might require
+	                        this option to be checked in order for interrupts
+	                        to be processed correctly. If this option is
+	                        checked, the ROM routine handles the interrupts,
+	                        which slows system performance. This sets
+	                        VirtualHDIRQ=0 in the registry. (This setting is
+	                        off by default for all computers in Windows 95,
+	                        which is the reverse of Windows 3.x.)
+	
+	  Disable All 32-Bit,   This option ensures that no 32-bit disk drivers
+	  Protected-Mode        are loaded in the system, except the floppy
+	  Disk Drivers          driver. Typically, you would check this option
+	                        if the computer does not start due to disk
+	                        peripheral I/O problems. If this option is
+	                        enabled, all I/O will go through real-mode
+	                        drivers or the BIOS. Notice that in this case,
+	                        all disk drives that are visible only in
+	                        protected mode will no longer be visible. This
+	                        sets ForceRMIO=1 in the registry.
+	
+	  Disable Write-        This option ensures that all data is flushed
+	  Behind Caching        continually to the hard disk, removing any
+	  For All Drives        performance benefits gained from disk caching.
+	                        This option should be checked only in the rare
+	                        cases where you are performing risky operations
+	                        and must ensure prevention of data loss. For
+	                        example, a software developer who is debugging
+	                        data at Ring 0 while creating a virtual device
+	                        driver would check this option. This sets
+	                        DriveWriteBehind=0 in the registry.
+	
+	Each option sets a value in the following registry key:
+	
+	  Hkey_Local_Machine\System\CurrentControlSet\Control\FileSystem
+	
+	======================================================================
+	Keywords          : kbenv kbtool diskmem win95 kbDiskMemory 
+	Technology        : kbWin95search kbZNotKeyword3
+	Version           : 95
+	Hardware          : x86
+	
+	=============================================================================
+	

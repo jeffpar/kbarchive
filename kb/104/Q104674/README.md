@@ -1,0 +1,142 @@
+---
+layout: page
+title: "Q104674: Chaining Interrupts Using MASM"
+permalink: kb/104/Q104674/
+---
+
+## Q104674: Chaining Interrupts Using MASM
+
+	Article: Q104674
+	Product(s): Microsoft Macro Assembler
+	Version(s): 6.0,6.0a,6.0b,6.1,6.11,6.1a
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 06-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Macro Assembler (MASM), versions 6.0, 6.0a, 6.0b, 6.1, 6.1a, 6.11 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Interrupt handlers in assembler may either stand alone or use the old interrupt
+	handler for functions not covered by the new handler. Using the old handler is
+	called chaining, and is needed for many MS-DOS and BIOS interrupts. A handler
+	that does not chain uses an IRET (interrupt return) statement rather than a
+	normal return statement (RET, RETN, RETF).
+	
+	There are two ways to chain to an old interrupt handler:
+	
+	- Jumps are used when the chain is the last thing in your new handler, and in
+	  this case your handler's IRET statement is never executed.
+	
+	-or-
+	
+	- Calling the old handler is done when you need to return to your handler for
+	  further processing after the original handler has finished. In this case,
+	  your return statement is very important.
+	
+	The difference between IRET and RET is that IRET pops an extra 2 bytes off the
+	stack (the flags register is popped). An interrupt call always pushes the flags
+	onto the stack before pushing on the far return address. In general, hardware
+	interrupt handlers use an IRET statement while software interrupt handlers use a
+	RETF 2 (far return) statement.
+	
+	MORE INFORMATION
+	================
+	
+	Interrupt handlers that chain to Interrupt 21h are special cases because they
+	always chain to the old interrupt. If they didn't chain, they would need to
+	provide replacements for all of the MS-DOS functions, which would essentially
+	involve rewriting the operating system. If the chaining is done at the end of
+	the new handler using a JMP instruction, no special return is needed. In fact,
+	the return statement in the new handler is never executed.
+	
+	Most software interrupts, including interrupt 21h functions, set the flags to
+	particular values, and those values are used as part of the returned information
+	from the handler. The original values are not restored from the stack when the
+	interrupt returns. IRET is not used. Instead, a RETF 2 statement is used to do a
+	far return and pop 2 bytes off the stack.
+	
+	If an Interrupt 21h handler chains to the original handler using a CALL
+	statement, it must not use IRET. The system will probably hang if you have an
+	IRET in the handler because some functions may be called repeatedly by MS-DOS
+	until a certain flag is returned. Executing IRET restores the prior values of
+	the flags and destroys any values set by the Interrupt 21h call. Thus, it
+	appears as if the flags never get set, so an infinite loop results.
+	
+	If the code after the CALL in your Interrupt 21h handler modifies the flags, you
+	may need to put a PUSHF ... POPF around that code. The sample code below creates
+	a "do-nothing" replacement for Interrupt 21h and illustrates these points. If
+	the "RETF 2" is replaced with an IRET, a system hang will result.
+	
+	Sample Code
+	-----------
+	
+	  ; assembly options needed: none
+	     .MODEL tiny, pascal, os_dos
+	     .STACK
+	     .CODE
+	     .STARTUP
+	
+	  FPFUNC  TYPEDEF FAR PTR
+	  Old_INT_21   FPFUNC  ?     ; Data in code segment
+	                             ; holds old interrupt address.
+	
+	     jmp SetNewInterrupt     ; Skip the new handler.
+	  New_INT_21 PROC    FAR
+	     ; May do some work here.
+	     ; If nothing needs to be done after the old
+	     ; handler is called, a jump can be used as follows:
+	     ;    jmp cs:Old_INT_21
+	     ; If the jump is used, the remaining code is not executed.
+	     cli                          ; Interrupts off.
+	     pushf
+	     call    cs:Old_INT_21        ; Call original handler.
+	     pushf
+	     ; Chance to do other things.
+	     popf
+	     retf 2
+	  New_INT_21 ENDP
+	
+	  SetNewInterrupt PROC
+	     mov     ax, 3521h
+	     int     21h                     ; Get addr of Interrupt 21 handler.
+	     mov     WORD PTR cs:Old_INT_21[0], bx  ; Save offset of 21 handler.
+	     mov     WORD PTR cs:Old_INT_21[2], es  ; Save seg of 21 handler.
+	
+	     push    ds
+	     mov     ax, cs
+	     mov     ds, ax                  ; Seg of new handler into ds.
+	     mov     dx, OFFSET New_INT_21   ; Offset of new handler into dx.
+	     mov     ax, 2521h
+	     int     21h                     ; Install new 21h handler.
+	     pop     ds                      ; Restore ds.
+	
+	        ; calc paragraphs to retain
+	
+	     mov     dx, OFFSET SetNewInterrupt
+	     mov     cl, 4
+	     shr     dx, cl
+	     inc     dx
+	     mov     ax, 3100h               ; Make new handler resident.
+	     int 21h
+	
+	     .EXIT
+	
+	  SetNewInterrupt ENDP
+	
+	     END
+	
+	Additional query words: 6.00 6.00a 6.00b 6.10
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMASMsearch kbAudDeveloper kbMASM600 kbMASM610 kbMASM611 kbMASM610a kbMASM600a kbMASM600b
+	Version           : :6.0,6.0a,6.0b,6.1,6.11,6.1a
+	
+	=============================================================================
+	

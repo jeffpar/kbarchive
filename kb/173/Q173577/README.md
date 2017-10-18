@@ -1,0 +1,135 @@
+---
+layout: page
+title: "Q173577: WD97: Some View Options Change Between Views"
+permalink: kb/173/Q173577/
+---
+
+## Q173577: WD97: Some View Options Change Between Views
+
+	Article: Q173577
+	Product(s): Word 97 for Windows
+	Version(s): WINDOWS:97
+	Operating System(s): 
+	Keyword(s): winword word97
+	Last Modified: 14-NOV-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you switch between views, the following view options may change their
+	current settings:
+	
+	- Horizontal Scroll Bar
+	
+	- Wrap to Window
+	
+	CAUSE
+	=====
+	
+	The Horizontal Scroll Bar and Wrap To Window settings in online layout view are
+	independent of the same settings in normal, page layout, outline and master
+	document views.
+	
+	MORE INFORMATION
+	================
+	
+	This behavior is by design. Online layout view optimizes the layout of your
+	document to make it easier to read online. The text appears larger than it would
+	be printed, and also wraps to fit the window. To switch to online layout view,
+	click Online Layout on the View menu.
+	
+	Horizontal Scroll Bar
+	---------------------
+	
+	The horizontal scroll bar option is turned off by default because Word
+	automatically sizes the document to optimize the amount of text shown with the
+	Document Map. When you turn this option on, it has no effect on the appearance
+	of the document.
+	
+	Wrap to Window
+	--------------
+	
+	The Wrap to Window option is turned off by default because the width of the text
+	is automatically sized based on the width of the document window in online
+	layout view. When you turn this option on, your document may appear slightly
+	different because the space around the document is hidden.
+	
+	What View Options Are Available?
+	--------------------------------
+	
+	The following table shows the view options that are available in each view, and
+	which options stay the same when you switch between views.
+	
+	Legend:
+	
+	A = This option is available in this view.
+	S = This option stays the same between views.
+	
+	                                  Normal  Online  Page    Outline Master
+	  View option                     view    layout  layout  view    document
+	  ------------------------------------------------------------------------
+	  Draft font                      A S                     A S     A S
+	  Drawings                                A S     A S
+	  Object anchors                          A S     A S
+	  Text boundaries                         A S     A S
+	  Picture placeholders             A S    A S     A S     A S     A S
+	  Animated text                    A S    A S     A S     A S     A S
+	  Screen Tips                      A S    A S     A S     A S     A S
+	  Highlight                        A S    A S     A S     A S     A S
+	  Bookmarks                        A S    A S     A S     A S     A S
+	  Field codes                      A S    A S     A S     A S     A S
+	  Field shading                    A S    A S     A S     A S     A S
+	  Tab characters                   A S    A S     A S     A S     A S
+	  Spaces                           A S    A S     A S     A S     A S
+	  Paragraph marks                  A S    A S     A S     A S     A S
+	  Optional hyphens                 A S    A S     A S     A S     A S
+	  Hidden text                      A S    A S     A S     A S     A S
+	  All                              A S    A S     A S     A S     A S
+	  Vertical ruler                                  A
+	  Status bar                       A S    A S     A S     A S     A S
+	  Horizontal scroll bar            A S    A       A S     A S     A S
+	  Vertical scroll bar              A S    A S     A S     A S     A S
+	  Wrap to window                   A S    A               A S     A S
+	  Enlarge fonts less than                 A
+	  Style area width                 A S                    A S     A S
+	
+	NOTE: Master document view uses the same view options as outline view.
+	
+	To access the view options, follow these steps:
+	
+	1. On the View menu, click the name of the view you want.
+	
+	2. On the Tools menu, click Options.
+	
+	3. Click the View tab and then click to select the options you want.
+	
+	4. Click OK.
+	
+	REFERENCES
+	==========
+	
+	For more information about view options, click the Office Assistant, type "view
+	options," click Search, and then click to view "Change the view options."
+	
+	NOTE: If the Assistant is hidden, click the Office Assistant button on the
+	Standard toolbar. If Microsoft Help is not installed on your computer, please
+	see the following article in the Microsoft Knowledge Base:
+	
+	  Q120802 Office: How to Add/Remove a Single Office Program or Component
+	
+	Additional query words: 8.0 8.00
+	
+	======================================================================
+	Keywords          : winword word97 
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : WINDOWS:97
+	Issue type        : kbprb
+	
+	=============================================================================
+	

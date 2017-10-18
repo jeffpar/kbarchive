@@ -1,0 +1,88 @@
+---
+layout: page
+title: "Q137434: Mandatory User Profiles: Random Default Printers Selected"
+permalink: kb/137/Q137434/
+---
+
+## Q137434: Mandatory User Profiles: Random Default Printers Selected
+
+	Article: Q137434
+	Product(s): Microsoft Windows NT
+	Version(s): 3.1,3.5,3.51
+	Operating System(s): 
+	Keyword(s): kbprint kbPrinting
+	Last Modified: 13-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server versions 3.1, 3.5, 3.51 
+	- Microsoft Windows NT Workstation versions 3.1, 3.5, 3.51 
+	- Microsoft Windows NT Advanced Server, version 3.1 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When users of then same server-based Mandatory User Profile log on from various
+	different locations, different default printers may be selected at different
+	workstations.
+	
+	A roving user of a Mandatory User Profile may see different printers selected as
+	the default printer as the user moves from workstation to workstation.
+	
+	It can be difficult to predict exactly which printer will be selected as the
+	default.
+	
+	CAUSE
+	=====
+	
+	This is caused by incorrect configuration of the server-based Mandatory User
+	Profile. Specifically, the default printer named in the profile is a printer set
+	up in Print Manager via "Create Printer" (as opposed to "Connect to Printer") on
+	the workstation where the profile administrator last edited the profile, but a
+	printer with this name has not been created on all the workstations where the
+	profile may be used.
+	
+	If a user of the profile logs on at a workstation where the same printer name is
+	defined, that printer name is selected as the default printer as expected.
+	However, if a user of the profile logs on at a workstation where the same
+	printer name is NOT defined, another printer name is selected instead.
+	
+	If different printer names are configured on different workstations, the printer
+	name selected as the default printer varies from workstation to workstation.
+	
+	RESOLUTION
+	==========
+	
+	Modify the Mandatory User Profile to specify a default printer name that is set
+	up via Print Manager's "Create Printer" facility, and ensure that this printer
+	name is present on all workstations where the profile is used.
+	
+	-or-
+	
+	Modify the Mandatory User Profile to specify a default printer that is set up via
+	Print Manager's "Connect to Printer" facility. If you choose this option, bear
+	in mind that, for example, a connection to a printer in Seattle may not be very
+	useful when the user is in New York, and users of the profile will need to be
+	educated appropriately.
+	
+	NOTE: Printer settings in a User Profile can be changed by logging on as a user
+	of the profile who is also an Administrator, making the required changes in
+	Print Manager and then using User Profile Editor to save the changes.
+	
+	For more information on Print Manager, User Profile Editor, and setting up and
+	modifying Mandatory User Profiles, refer to the Concepts and Planning Guide and
+	the System Guide provided with Windows NT Advanced Server version 3.1 and the
+	Windows NT Server versions 3.5 and 3.51.
+	
+	
+	Additional query words: prodnt
+	
+	======================================================================
+	Keywords          : kbprint kbPrinting 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTW310 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS351search kbWinNTS350search kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+	Version           : :3.1,3.5,3.51
+	
+	=============================================================================
+	

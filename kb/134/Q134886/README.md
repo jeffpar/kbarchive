@@ -1,0 +1,162 @@
+---
+layout: page
+title: "Q134886: Flight Simulator 5.1: Troubleshooting General Sound Problems"
+permalink: kb/134/Q134886/
+---
+
+## Q134886: Flight Simulator 5.1: Troubleshooting General Sound Problems
+
+	Article: Q134886
+	Product(s): Microsoft Home Games
+	Version(s): MS-DOS:5.1
+	Operating System(s): 
+	Keyword(s): kb3rdparty kbenv kberrmsg kbsound kbimu
+	Last Modified: 07-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Flight Simulator for MS-DOS, version 5.1 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Microsoft Flight Simulator version 5.1 supports Sound Blaster Compatible 16-bit
+	sound cards. When you complete Setup, you may experience one or more of the
+	following symptoms:
+	
+	- Stuttering sounds
+	- Static
+	- No Sound
+	- Computer stops responding (hangs)
+	- Memory parity error
+	
+	CAUSE
+	=====
+	
+	This behavior can occur if the correct IRQ and DMA channels have not been
+	detected.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, verify your sound card settings and compare them to the
+	settings in Microsoft Flight Simulator version 5.1. Correct your sound card
+	settings if necessary.
+	
+	Verifying Setting in MS-DOS
+	---------------------------
+	
+	To verify the sound card setting in MS-DOS, do the following:
+	
+	1. At the MS-DOS command prompt, type the following and press ENTER
+	
+	  edit autoexec.bat
+	
+	  Search for the Set Blaster or Set Sound line and make note the entries for the
+	  I: and D: lines.
+	
+	2. Exit the editor by choosing File, and then Exit.
+	
+	3. Run Flight Simulator.
+	
+	4. Click Options, and then click Preferences.
+	
+	5. Click Sound.
+	
+	6. Change the IRQ and DMA settings to match those recorded in your Set Blaster
+	  or Set Sound line of the Autoexec.bat file.
+	
+	If you are using a Sound Blaster 16 sound card and version 3.04 of the Sound
+	Blaster 16 sound driver, you can use the Diagnose program (located in the SB16
+	subdirectory) to change the hardware configuration HDMA and DMA settings.
+	
+	Changing HDMA and DMA Settings from MS-DOS
+	------------------------------------------
+	
+	To change HDMA and DMA settings, do the following:
+	
+	1. At the MS-DOS command prompt, change to the SB16 subdirectory. Type the
+	  following and press ENTER two times.
+	
+	  diagnose
+	
+	2. Select the Base I/O Port option and use the arrow keys to select Autoscan.
+	  Press ENTER.
+	
+	3. Select the MPU-401 MIDI Port option and use the arrow keys to select
+	  Autoscan. Press ENTER twice.
+	
+	4. Select the IRQ option and use the arrow keys to select Current. Press ENTER.
+	
+	5. Select the Low DMA Channel option and use the arrow keys to select Current.
+	  Press ENTER.
+	
+	6. Select the High DMA Channel and use the arrow keys to select Low DMA. Press
+	  ENTER.
+	
+	7. Press F10 to update the system files.
+	
+	The Diagnose program restarts the computer and configuration is complete.
+	
+	Early versions of the Sound Blaster SB16 sound card use an MS-DOS program called
+	Sbconfig.exe to change DMA and HDMA.
+	
+	Changing HDMA and DMA Settings on Early Versions of SB16
+	--------------------------------------------------------
+	
+	To change the HDMA and DMA settings, do the following:
+	
+	1. At the MS-DOS command prompt, change to the SB16 subdirectory and run
+	  Sbconfig.exe.
+	
+	2. Follow the instructions provided by the configuration program. The program
+	  utility assists you in selecting and testing the following variables:
+	
+	     Variable                  Select
+	     --------                  ------
+	
+	     Base I/O port             Autoscan
+	     MidiPort address          Autoscan
+	     DMA interrupt             Current
+	     8-bit DMA                 Current
+	     16-bit DMA                Use 8-bit DMA
+	
+	After you have finished making these selections, Sbconfig.exe restarts your
+	computer.
+	
+	Changing Settings in Microsoft Windows 95/98
+	--------------------------------------------
+	
+	If the Sound Blaster icon is present in Windows 95 or Windows 98, use the
+	instructions provided by Sound Blaster. The MS-DOS instructions do not work in
+	Windows 95/98.
+	
+	MORE INFORMATION
+	================
+	
+	Flight Simulator Setup uses the Set Blaster and Set Sound environment variable
+	lines in the Autoexec.bat file in MS-DOS or the MS-DOS Mode of Windows 95/98 to
+	configure its IRQ and DMA settings.
+	
+	If you are running Windows 95/98 in normal Mode, Flight Simulator Setup uses the
+	registry to determine the IRQ and DMA settings and may not read the IRQ or DMA
+	settings from the Autoexec.bat file properly. If Flight Simulator Setup does not
+	read the IRQ or DMA settings properly, one or more of the symptoms listed in the
+	symptoms section of this article may occur.
+	
+	The third-party products discussed in this article are manufactured by vendors
+	independent of Microsoft; we make no warranty, implied or otherwise, regarding
+	these products' performance or reliability.
+	
+	Additional query words: 5.10 fs5 flightsim fltsim flt sim crash lock
+	
+	======================================================================
+	Keywords          : kb3rdparty kbenv kberrmsg kbsound kbimu 
+	Technology        : kbGamesSearch kbFlightSimSearch kbFlightSim510DOS kbSimSearch
+	Version           : MS-DOS:5.1
+	Issue type        : kbprb
+	
+	=============================================================================
+	

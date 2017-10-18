@@ -1,0 +1,84 @@
+---
+layout: page
+title: "Q166384: PRB: IME Always Active in Browse Window at VFP Run-Time"
+permalink: kb/166/Q166384/
+---
+
+## Q166384: PRB: IME Always Active in Browse Window at VFP Run-Time
+
+	Article: Q166384
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:5.0,5.0a,6.0
+	Operating System(s): 
+	Keyword(s): kbenv kbvfp kbvfp500 kbvfp500a kbvfp600
+	Last Modified: 11-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	"Browse IME Control" can be controlled under General Tab, Option Dialog Box of
+	the System menu during development. This option specifies that Visual FoxPro
+	displays an Input Method Editor (IME) when you navigate to a text box in the
+	Browse window, a TextBox control, or a Grid control under Double- Byte Character
+	Set (DBCS) operating system environment. But this option is always enabled
+	during runtime, which means, the IME window is always active when a TextBox
+	control get its focus, regardless whether the content of the text box is
+	double-byte characters or not. In Visual FoxPro 6.0, you may use the new
+	introduced "Set BrowseIME" to determine your desired behavior.
+	
+	NOTE: By default, "Set BrowseIME" is set to "ON" under Triditional/Simplified
+	Chinese windows, and "OFF" under Korean Windows.
+	
+	RESOLUTION
+	==========
+	
+	1. The TextBox control: Specifies the <Control>.IMEMode property to
+	  desired setting of the IME status. 0(Default) - No control, 1 - open IME and
+	  2 - Close IME.
+	
+	2. TextBox in a Grid control: Specifies IMEStatus() function in Column.Gotfocus
+	  event to control the proper setting of the input field. Imestatus(0) turns
+	  the IME window off and Imestatus(1) turns the IME back on.
+	
+	STATUS
+	======
+	
+	This behavior is by design.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Start Visual FoxPro 5.0 or higher under an operating system that supports
+	  DBCS.
+	
+	2. Select Options from the Tool menu.
+	
+	3. Click the General Tab. Clear the "Browse IME Control" check box.
+	
+	4. Click Set as Defaults or OK.
+	
+	5. Write a simple program to browse a table.
+	
+	6. Build a project containing the program you created into an executable file.
+	
+	7. Run the .exe file and you will see the IME windows during run time.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbenv kbvfp kbvfp500 kbvfp500a kbvfp600 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+	Version           : WINDOWS:5.0,5.0a,6.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

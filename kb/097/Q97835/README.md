@@ -1,0 +1,634 @@
+---
+layout: page
+title: "Q97835: COMMANDS.TXT: Supplemental Disk Commands (Part 2 of 2)"
+permalink: kb/097/Q97835/
+---
+
+## Q97835: COMMANDS.TXT: Supplemental Disk Commands (Part 2 of 2)
+
+	Article: Q97835
+	Product(s): Microsoft Disk Operating System
+	Version(s): MS-DOS:6.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 19-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft MS-DOS operating system version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The MS-DOS 6 Supplemental Disk includes a file called COMMANDS.TXT. This file
+	contains descriptions for all the files on the supplemental disk and
+	instructions for using them.
+	
+	Note: This file was split into two articles in the Microsoft Knowledge Base. This
+	is the second article.
+	
+	MORE INFORMATION
+	================
+	
+	EDLIN-----------------------------------------------------------------
+	
+	  Note: The EDLIN instructions have not been included in this KB
+	  article due to their large size. If you need these instructions,
+	  obtain the COMMANDS.TXT supplemental disk images on :
+	
+	     \\PRODUCTS1\RELEASE\SYS\MSDOS6.DOS\DISKS\SUPPDISK
+	
+	EGA.CPI---------------------------------------------------------------
+	
+	A corrected version of the EGA.CPI file included with MS-DOS 6.
+	
+	This file is corrected to support the Eastern European Codepage
+	properly.
+	
+	EXE2BIN---------------------------------------------------------------
+	
+	Converts .EXE (executable) files to binary format.
+	
+	EXE2BIN is included with MS-DOS as a courtesy to software developers.
+	It is not useful for general users.
+	
+	SYNTAX
+	------
+	EXE2BIN [drive1:][path1]input-file [[drive2:][path2]output-file]
+	
+	PARAMETERS
+	----------
+	[drive1:][path1]input-file
+	  Specifies the location and name of the input file.
+	
+	[drive2:][path2]output-file
+	  Specifies the location and name of the output file.
+	
+	NOTES
+	-----
+	
+	Restrictions on using EXE2BIN
+	-----------------------------
+	The following restrictions apply when you use the EXE2BIN command:
+	o The input file must be in valid .EXE format produced by the linker
+	 and must not be packed.
+	
+	o The resident, or actual, code and data portions of the file combined
+	 must be less than 64K.
+	
+	o There must be no STACK segment.
+	
+	Default values for parameters
+	-----------------------------
+	EXE2BIN takes specific actions, depending upon the values you use for
+	the input-file and output-file parameters.
+	
+	o The default filename extension for the filename you specify for
+	 input-file is .EXE. EXE2BIN converts the input .EXE file to an
+	 output file in .BIN format (a memory image of the program) and uses
+	 the location and filename you specify for [drive2:][path2]output-
+	 file to store that output file.
+	
+	o If you do not specify drive2 or path2, EXE2BIN writes the output
+	 file to the current drive and directory.
+	
+	o If you do not specify an output filename, EXE2BIN uses the input
+	 filename.
+	
+	o The default extension for the filename specified for the output-file
+	 parameter is .BIN.
+	
+	Types of conversion available with EXE2BIN
+	------------------------------------------
+	Two types of conversion are possible, depending upon whether the
+	initial CS:IP (Code Segment:Instruction Pointer) is specified in the
+	.EXE file. The following list presents the two types:
+	
+	o If the CS:IP is not specified in the .EXE file, EXE2BIN performs a
+	 pure binary conversion. If segment fixups are necessary (that is, if
+	 the program contains instructions requiring segment relocation),
+	 EXE2BIN prompts you for the fixup value. This value is the absolute
+	 segment at which the program is to be loaded. The resulting program
+	 is usable only when loaded at the absolute memory address specified
+	 by your program. The command interpreter cannot load the program.
+	
+	o If the CS:IP is specified as 0000:100H, the file runs as a .COM file
+	 with the instruction pointer set at 100H by the assembler statement
+	 ORG. Include the .COM extension in the output-file parameter. No
+	 segment fixups are allowed, because .COM files must be segment-
+	 relocatable; that is, they must assume the entry conditions
+	 explained in the Microsoft Macro Assembler manuals. The command
+	 interpreter can then load and run the program in the same way as it
+	 loads and runs the .COM programs supplied on your MS-DOS disk.
+	
+	FAKEMOUS--------------------------------------------------------------
+	
+	An IBM PS/2 mouse utility used with AccessDOS.
+	
+	See ADOS.TXT for information about using FAKEMOUS.
+	
+	GRAFTABL--------------------------------------------------------------
+	
+	Enables MS-DOS to display the extended characters of a specified code
+	page in graphics mode.
+	
+	Most monitors can display extended characters (ASCII characters 128
+	through 255) without the GRAFTABL command. Use this command only if
+	your monitor does not properly display these characters in graphics
+	mode.
+	
+	SYNTAX
+	------
+	GRAFTABL [xxx]
+	
+	GRAFTABL /STATUS
+	
+	PARAMETERS
+	----------
+	xxx
+	  Specifies the code page for which you want MS-DOS to define the
+	  appearance of extended characters in graphics mode. The following
+	  list shows each valid code-page identification number and its
+	  country or language:
+	
+	437
+	  United States
+	
+	850
+	  Multilingual (Latin I)
+	
+	852
+	  Slavic (Latin II)
+	
+	860
+	  Portuguese
+	
+	863
+	  Canadian-French
+	
+	865
+	  Nordic
+	
+	SWITCH
+	------
+	/STATUS
+	  Identifies the code page selected for use by GRAFTABL.
+	
+	NOTES
+	-----
+	
+	GRAFTABL does not change the active code page
+	---------------------------------------------
+	GRAFTABL affects only the appearance of extended characters of the
+	code page you specify. To change the code page you are using, use the
+	MODE or CHCP command.
+	
+	GRAFTABL exit codes
+	-------------------
+	The following list shows each exit code and a brief description of its
+	meaning:
+	
+	0
+	  Character set was loaded successfully; no previous code page was
+	  loaded.
+	
+	1
+	  Character set was already loaded and replaced by new table.
+	
+	2
+	  A file error occurred.
+	
+	3
+	  An incorrect parameter was specified; no action was taken.
+	
+	4
+	  An incorrect version of MS-DOS is in use; version 5.0 is required.
+	
+	You can use the ERRORLEVEL parameter on the IF command line in a batch
+	program to process exit codes returned by GRAFTABL. For an example of
+	a batch program that processes exit codes, see the BACKUP command.
+	
+	Effect on memory
+	----------------
+	The GRAFTABL command decreases the amount of available conventional
+	memory by about 1K.
+	
+	EXAMPLE
+	-------
+	To load the graphics character set for code page 437 (United States)
+	into memory, type the following command:
+	
+	  graftabl
+	
+	To load the graphics character set for code page 860 (Portuguese) into
+	memory, type the following command:
+	
+	  graftabl 860
+	
+	JOIN------------------------------------------------------------------
+	
+	Joins a disk drive to a directory on another disk drive.
+	
+	When you use the JOIN command, MS-DOS treats the directories and files
+	on a disk drive as the contents of the other drive and path you
+	specify.
+	
+	SYNTAX
+	------
+	JOIN [drive1: [drive2:]path]
+	
+	JOIN drive: /D
+	
+	PARAMETERS
+	----------
+	drive1:
+	  Specifies the floppy disk drive or logical drive that you want to
+	  join to a different drive and directory.
+	
+	drive2:
+	  Specifies the floppy disk drive or logical drive to which you want
+	  to join drive1.
+	
+	path
+	  Specifies the directory to which you want to join drive1. This
+	  directory must be empty before you join drive1 to it. It must also
+	  be a directory other than the root directory.
+	
+	drive:
+	  Specifies a floppy disk drive or logical drive that was previously
+	  specified in a JOIN command that you are now canceling.
+	
+	SWITCH
+	------
+	/D
+	   Cancels any previous JOIN commands for the drive you specify.
+	
+	Drive1 becomes invalid
+	----------------------
+	After you use the JOIN command, the drive1 you specify becomes
+	invalid.
+	If you then try to use it, MS-DOS displays the following message:
+	
+	  Invalid drive specification
+	
+	Limitations on path
+	-------------------
+	If the directory specified by path already exists before you use the
+	JOIN command, you cannot use that directory for any other purpose
+	while JOIN is in effect. If the directory is not empty, MS-DOS does
+	not complete the join operation and displays the following message:
+	
+	  Directory not empty
+	
+	If the directory does not exist, MS-DOS tries to create it.
+	
+	Limitations on using JOIN with other commands
+	---------------------------------------------
+	The following commands do not work with drives formed by the JOIN
+	command:
+	ASSIGN      BACKUP     CHKDSK     DISKCOMP
+	DISKCOPY    FDISK      FORMAT     LABEL
+	MIRROR      MIRROR     RESTORE    SYS
+	
+	Using JOIN with no parameters
+	-----------------------------
+	You can use the JOIN command with no parameters to see a list of the
+	currently joined drives.
+	
+	EXAMPLES
+	--------
+	You can join any directory or subdirectory in a tree structure. For
+	example, the following commands are valid:
+	
+	  join d: c:sales
+	
+	  join d: c:salesoctober
+	
+	To reverse either of the previous JOIN commands, type the drive1 value
+	followed by the /D switch, as follows:
+	join d: /d
+	
+	KBDBUF.SYS------------------------------------------------------------
+	
+	Specifies the number of keystrokes that can be held in your keyboard
+	buffer.
+	
+	SYNTAX
+	------
+	DEVICE=KBDBUF.SYS nnnn
+	
+	PARAMETER
+	---------
+	nnnn
+	  Specifies the number of keystrokes that can be held in the keyboard
+	  buffer. The acceptable range is 16 to 1024
+	
+	NOTES
+	-----
+	The KBDBUF.SYS driver should be loaded with the DEVICE command early
+	in your CONFIG.SYS file. In addition, you cannot load the KBDBUF.SYS
+	driver into the upper memory area. If you run MemMaker, choose Custom,
+	and exclude the driver from the optimization process.
+	
+	EXAMPLE
+	-------
+	If you want to specify a keyboard buffer that allows you to type ahead
+	25 keystrokes beyond what has been displayed on your screen, add
+	the following command to your CONFIG.SYS file:
+	
+	DEVICE=KBDBUF.SYS 25
+	
+	KEYB.COM--------------------------------------------------------------
+	
+	An enhanced version of the KEYB.COM file included with MS-DOS 6.
+	
+	Enhancements include support for the French Canadian dual keyboard.
+	
+	KEYBOARD.SYS----------------------------------------------------------
+	
+	An enhanced version of the KEYBOARD.SYS file included with MS-DOS 6.
+	
+	Enhancements include support the French Canadian, Romanian, Brazilian,
+	and Icelandic keyboards, as well as a correction to the German
+	keyboard.
+	
+	LCD.CPI---------------------------------------------------------------
+	
+	Code-page information file for IBM PC Convertible liquid crystal
+	display.
+	
+	MIRROR----------------------------------------------------------------
+	
+	Starts the MIRROR program, which records information about one or more
+	disks; the UNFORMAT and UNDELETE commands can use this information to
+	restore a reformatted disk or to recover deleted files.
+	
+	SYNTAX
+	------
+	MIRROR [drive:[ ...]] [/1] [/Tdrive[-entries][ ...]]
+	
+	MIRROR [/u]
+	
+	MIRROR [/partn]
+	
+	To save information about the disk in the current drive, use the
+	following syntax:
+	
+	MIRROR
+	
+	PARAMETER
+	---------
+	drive:
+	  Specifies the drive containing the disk for which you want MIRROR
+	  to save information. This information is used by the UNFORMAT
+	  command to restore a disk.
+	
+	SWITCHES
+	--------
+	/1
+	  Retains only the latest information about the disk. If you do not
+	  specify this switch, MIRROR makes a backup copy of the existing
+	  disk-information file before recording the current information.
+	
+	/Tdrive[-entries]
+	  Loads a terminate-and-stay-resident deletion-tracking program that
+	  records information used by the UNDELETE command to recover deleted
+	  files. The required drive parameter specifies the drive containing
+	  the disk for which you want MIRROR to save information about
+	  deleted files. The optional entries parameter, which must be a
+	  value in the range 1 through 999, specifies the maximum number of
+	  entries in the deletion-tracking file (PCTRACKR.DEL). The default
+	  value for entries is dependent upon the type of disk being tracked.
+	  The following list shows each disk size, its default number of
+	  entries, and its corresponding file size:
+	
+	Disk size          Entries       File size
+	360K                  25            5K
+	720K                  50            9K
+	1.2 megabyte (MB)     75           14K
+	1.44 MB               75           14K
+	20 MB                101           18K
+	32 MB                202           36K
+	32 MB                303           55K
+	
+	CAUTION  Do not use deletion tracking for any drive that has been
+	redirected by using the JOIN or SUBST command. If you intend to use
+	the ASSIGN command, you must do so before using MIRROR to install
+	deletion tracking.
+	
+	/U
+	  Unloads the deletion-tracking program from memory, disabling
+	  deletion tracking. You cannot unload the tracking program if you
+	  loaded any other memory-resident programs after it.
+	
+	/PARTN
+	  Saves system information about how a hard disk is partitioned. The
+	  switch saves the information in a file on a floppy disk. The
+	  UNFORMAT command can use this file later to rebuild the partitions
+	  of a disk.
+	
+	Saving information about a disk
+	-------------------------------
+	The MIRROR program saves a copy of the file allocation table and the
+	root directory of the disk in the specified drive. The UNFORMAT
+	command can use this information to rebuild a disk that has been
+	unintentionally formatted, or it can use the information to recover
+	files and subdirectories in the disk's root directory.
+	
+	Because UNFORMAT restores the disk?s system area to the condition it
+	was in when you last used MIRROR, you should save this information
+	frequently for every hard disk drive in your system. To ensure that
+	the information is saved each time you turn on your computer, you may
+	want to add a MIRROR command to your AUTOEXEC.BAT file.
+	
+	Removing the deletion-tracking program from memory
+	--------------------------------------------------
+	You may need to remove the deletion-tracking program from memory. To
+	do so, remove all memory-resident programs that you loaded after the
+	deletion-tracking program, and then use the MIRROR command with the /U
+	switch. Since this turns off deletion tracking, any files deleted
+	after you remove the tracking program can be recovered only by using
+	information in the directory.
+	
+	Saving information about hard-disk partitions
+	---------------------------------------------
+	Every formatted hard disk drive has at least one partition. To
+	identify a hard disk drive, MS-DOS uses information stored in a
+	special disk partition table. If this table is corrupted, MS-DOS
+	cannot locate the hard disk.
+	
+	You can save partition-table information for a hard disk by using the
+	MIRROR command with the /PARTN switch. This switch creates a file
+	named PARTNSAV.FIL, which the UNFORMAT command can use to rebuild the
+	partition table. Because MS-DOS cannot gain access to your hard disk
+	if the partition table is damaged, you should not put this file on the
+	hard disk itself. Instead, you should put the file on a floppy disk
+	(which you should keep in a safe place) or on another hard disk drive,
+	such as a network server.
+	
+	EXAMPLES
+	--------
+	To save a copy of the file allocation table and the root directory of
+	drive C and to install deletion tracking for drives A and C, type the
+	following command:
+	
+	  mirror c: /ta /tc
+	
+	Suppose you want to save a copy of the file allocation table and the
+	root directory of the disk in the current drive, and you want to
+	install the deletion-tracking program for drive C. To do this and to
+	set the maximum number of deletions to be tracked to 500, type the
+	following command. (Note that since no drive parameter is specified,
+	MIRROR saves the information about the disk in the current drive.)
+	
+	  mirror /tc-500
+	
+	To save a copy of the partition table for your hard disk drive, type
+	the
+	following command:
+	
+	  mirror /partn
+	
+	The MIRROR program displays the following information:
+	
+	  Disk Partition Table saver.
+	  The partition information from your hard drive(s) has been read.
+	  Next, the file PARTNSAV.FIL will be written to a floppy disk.
+	  Please insert a formatted diskette and enter the name of the
+	  diskette drive. What drive? A
+	
+	The default disk drive is drive A. If you want to use a different
+	drive, type the drive letter (making sure it does not identify a
+	partition on the hard disk drive), insert a formatted floppy disk in
+	the drive (if necessary), and press ENTER.
+	
+	MSHERC----------------------------------------------------------------
+	
+	Installs support for Qbasic programs that use the Hercules graphics
+	card.
+	
+	SYNTAX
+	------
+	MSHERC [/HALF]
+	
+	SWITCH
+	------
+	/HALF
+	  Use this switch when a color adapter is also installed.
+	
+	PRINTER.SYS-----------------------------------------------------------
+	
+	Supports code-page switching for the parallel ports PRN, LPT1, LPT2,
+	and LPT3.
+	
+	SYNTAX
+	------
+	DEVICE=[drive:][path]PRINTER.SYS LPTx=(type[,[hwcp][,n]])
+	
+	PARAMETERS
+	----------
+	[drive:][path]
+	  Specifies the location of the PRINTER.SYS file.
+	
+	LPTx
+	   Specifies the number of the parallel port for which you want to
+	support
+	   code-page switching.
+	
+	type
+	   Specifies the printer in use. The following list shows valid
+	values for
+	   type and the printers represented by each value:
+	
+	   4201    IBM Proprinters II and III Model 4201
+	      IBM Proprinters
+	II and III XL Model 4202
+	   4208    IBM Proprinter X24E Model 4207
+	      IBM Proprinter
+	XL24E Model 4208
+	   5202    IBM Quietwriter III Model 5202
+	
+	hwcp
+	   Specifies the code page your hardware supports. The following list
+	   shows the code pages that MS-DOS supports and the country or
+	language
+	   for each:
+	
+	   437    United States
+	   850    Multilingual (Latin I)
+	   852    Slavic (Latin II)
+	   860    Portuguese
+	   863    Canadian-French
+	   865    Nordic
+	
+	n
+	   Specifies the number of code pages your hardware can support in
+	   addition to the code page specified in the hwcp parameter.
+	
+	EXAMPLE
+	-------
+	The following command loads the PRINTER.SYS device driver for use with
+	the IBM Proprinter X24E Model 4207, loads code page 850, and prepares
+	PRINTER.SYS to support two additional code pages:
+	
+	  device=c:\dos\printer.sys lpt1:=(4208,850,2)
+	
+	PRINTFIX--------------------------------------------------------------
+	------
+	
+	Prevents MS-DOS from checking the status of your printer. Use this
+	command only if you have had problems printing since you installed
+	MS-DOS 6.
+	
+	SYNTAX
+	------
+	PRINTFIX
+	
+	SETUP-----------------------------------------------------------------
+	
+	Installs the commands and files on the Supplemental disks to your
+	hard drive.
+	
+	SYNTAX
+	------
+	SETUP [drive:][path]
+	
+	PARAMETERS
+	----------
+	[drive:][path]
+	  The drive and directory to which you want to install the
+	Supplemental
+	  disk commands and files
+	
+	NOTES
+	-----
+	You can run the Setup program from a floppy drive, your hard disk, or
+	from a network drive--just make sure the Setup program is in the same
+	drive and directory that contains your Supplemental disk files.
+	
+	If you install any of the Utilities from MS-DOS 5.0, such as the
+	Backup program, you must restart your computer before using them. This
+	is because the Setup program modifies your SETVER table, and you must
+	restart your computer for the modifications to take effect.
+	
+	SPATCH.BAT------------------------------------------------------------
+	
+	If your computer uses a Windows 3.0 permanent swap file, run
+	the SPATCH.BAT program to make the swap file compatible with MS-DOS 6.
+	
+	For more information, see the README.TXT file included with MS-DOS 6.
+	
+	Note: This file is included on the Supplemental disks because some
+	versions of MS-DOS 6.0 did not include the file.
+	
+	Additional query words: 6.00 handicaps disability disabilities accessibility
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMSDOSSearch kbMSDOS600
+	Version           : MS-DOS:6.0
+	
+	=============================================================================
+	

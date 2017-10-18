@@ -1,0 +1,150 @@
+---
+layout: page
+title: "Q177736: HOWTO: Retrieve Identity Column After Insert Using ODBCDirect"
+permalink: kb/177/Q177736/
+---
+
+## Q177736: HOWTO: Retrieve Identity Column After Insert Using ODBCDirect
+
+	Article: Q177736
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): WINDOWS:5.0
+	Operating System(s): 
+	Keyword(s): kbVBp500 kbGrpDSVBDB kbhowto
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	SQL Server Identity columns automatically increment their value when a new
+	record is added to the table, which makes them very useful for a unique primary
+	key. SQL Server maintains an environment variable named @@IDENTITY that stores
+	the value of the last Identity column added and can be queried several different
+	ways. This article demonstrates how the value of the Identity column is
+	retrieved from the SQL Server Pubs database using ODBCDirect.
+	
+	MORE INFORMATION
+	================
+	
+	The following code example demonstrates two different ways to retrieve the
+	Identity column. One calls a stored procedure, MyInsert, to insert a row, and
+	returns the value of @@IDENTITY in an OUTPUT parameter; the other, issues a
+	Select @@IDENTITY with an OpenRecordset after inserting a row without creating a
+	stored procedure on the SQL server.
+	
+	Step 1: Create Test Table in SQL Server
+	---------------------------------------
+	
+	For testing purpose, table IColTest, is created in Pubs database with one
+	Identity column and one VarChar column. To create a table and index in SQL
+	Server, select Pubs database, then place the following Create Table T-SQL in the
+	SQL window of ISQL/W and execute it:
+	
+	     Create Table IColTest
+	             (Id_Col int Identity, F2 VarChar(30) Null)
+	     Create Unique Index IIndex on IColTest(Id_Col)
+	
+	Step 2: Create Visual Basic Code
+	--------------------------------
+	
+	1. Start a new project in Visual Basic and choose "Standard EXE." Form1 is
+	  created by default.
+	
+	2. From the Project menu, select References, and then place a check next to
+	  Microsoft DAO 3.5 Object Library.
+	
+	3. Add two CommandButtons, Command1, and Command2, to Form1.
+	
+	4. Paste the following code into the code window of Form1:
+	
+	     Dim wk As Workspace
+	     Dim cn As Connection
+	
+	     Private Sub Command1_Click()
+	        'This procedure creates a stored procedure on a remote
+	        'data source, creates a querydef to call the stored
+	        'procedure, supplies values for the stored procedure's input,
+	        'parameters and returns the value of an Identity column.
+	        Dim qd As QueryDef
+	        Dim strSQL As String
+	
+	        On Error Resume Next
+	        ' If stored procedure MyInsert exists on the server, drop it
+	        ' and recreate.
+	        strSQL = "DROP PROCEDURE MyInsert;"
+	        cn.Execute strSQL
+	
+	        On Error GoTo 0
+	        ' Create stored procedure on the server.
+	        strSQL = "Create Procedure MyInsert @FieldVal Varchar(30), _
+	        @id Int OUTPUT AS "
+	        strSQL = strSQL & "Insert Into IColTest (F2) Values(@FieldVal) "
+	        strSQL = strSQL & "Select @id = @@Identity"
+	        cn.Execute strSQL
+	
+	        Set qd = cn.CreateQueryDef("qry", "{ call MyInsert(?, ?) }")
+	        qd.Parameters(0).Direction = dbParamInput
+	        qd.Parameters(1).Direction = dbParamOutput
+	        qd.Parameters(0).Value = "RainBow"
+	        qd.Execute
+	
+	        Debug.Print qd.Parameters(1)
+	        qd.Close
+	     End Sub
+	
+	     Private Sub Command2_Click()
+	        Dim rs As Recordset
+	        Set rs = cn.OpenRecordset("SET NOCOUNT ON INSERT INTO _
+	        IColTest(F2) VALUES('Balloon')SELECT @@IDENTITY SET NOCOUNT OFF")
+	        Debug.Print rs(0)
+	        rs.Close
+	     End Sub
+	
+	     Private Sub Form_Load()
+	        Dim strConnect As String
+	        Set wk = DBEngine.CreateWorkspace("ODBCDirect", "", "", dbUseODBC)
+	        strConnect = "ODBC;SERVER=MyServer;DRIVER={SQLServer}; _
+	        DATABASE=pubs;UID=sa;PWD=;"
+	        Set cn = wk.OpenConnection("", dbDriverNoPrompt, False, strConnect)
+	     End Sub
+	
+	     Private Sub Form_Unload(Cancel As Integer)
+	        cn.Close
+	        wk.Close
+	     End Sub
+	
+	5. Note that you must change your SERVER, UID, and PWD parameters in the connect
+	  string.
+	
+	6. Start the program or press the F5 key.
+	
+	7. Click Command1, or Command2 to insert a row and display the value of
+	  @@IDENTITY in the debug window.
+	
+	REFERENCES
+	==========
+	
+	For additional information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q170147 : HOWTO: Retrieve Identity Column After Insert Using RDO
+	
+	(c) Microsoft Corporation 1997, All Rights Reserved.
+	Contributions by Adrian Chiang, Microsoft Corporation
+	
+	
+	======================================================================
+	Keywords          : kbVBp500 kbGrpDSVBDB kbhowto 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500 kbVB500
+	Version           : WINDOWS:5.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

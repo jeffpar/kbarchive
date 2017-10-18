@@ -1,0 +1,143 @@
+---
+layout: page
+title: "Q216189: HOWTO: Right Justify the Help Menu Item in Visual Basic"
+permalink: kb/216/Q216189/
+---
+
+## Q216189: HOWTO: Right Justify the Help Menu Item in Visual Basic
+
+	Article: Q216189
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): WINDOWS:5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbAPI kbMenu kbGrpDSUser kbVBp kbVBp500 kbVBp600 kbGrpDSVB
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Many applications (especially older, 16-bit programs) have the Help menu item
+	right-justified on the menu bar. That is, "Help" appears all the way to the
+	right instead of the left, grouped with the other top level menu items. The
+	Visual Basic Menu Editor does not supply this functionality, but it is fairly
+	easy to implement this feature with a few WIN32 API calls, as demonstrated in
+	this example.
+	
+	NOTE: The use of a right-justified Help menu in an application is not the
+	recommended style for creating Windows applications. This article provides this
+	information without recommending its use.
+	
+	MORE INFORMATION
+	================
+	
+	Step-by-Step Example
+	--------------------
+	
+	1. Open a new Standard EXE project. Form1 is created by default.
+	
+	2. On the Tools menu, click Menu Editor. Create a menu with "Help" as the last
+	  top level menu item.
+	
+	3. Add the following code to the General Declarations section of Form1:
+	
+	  Option Explicit
+	
+	  Private Type MENUITEMINFO
+	     cbSize As Long
+	     fMask As Long
+	     fType As Long
+	     fState As Long
+	     wID As Long
+	     hSubMenu As Long
+	     hbmpChecked As Long
+	     hbmpUnchecked As Long
+	     dwItemData As Long
+	     dwTypeData As String
+	     cch As Long
+	  End Type
+	
+	  Private Const MF_STRING = &H0&
+	  Private Const MF_HELP = &H4000&
+	  Private Const MFS_DEFAULT = &H1000&
+	
+	  Private Const MIIM_ID = &H2
+	  Private Const MIIM_SUBMENU = &H4
+	  Private Const MIIM_TYPE = &H10
+	  Private Const MIIM_DATA = &H20
+	
+	  Private Declare Function GetMenu Lib "user32" (ByVal hwnd As Long) As Long
+	
+	  Private Declare Function GetMenuItemInfo Lib "user32" _
+	     Alias "GetMenuItemInfoA" _
+	     (ByVal hMenu As Long, ByVal un As Long, ByVal B As Boolean, _
+	     lpMenuItemInfo As MENUITEMINFO) As Long
+	   
+	  Private Declare Function SetMenuItemInfo Lib "user32" _
+	     Alias "SetMenuItemInfoA" _
+	     (ByVal hMenu As Long, ByVal un As Long, ByVal bool As Boolean, _
+	     lpcMenuItemInfo As MENUITEMINFO) As Long
+	
+	  Private Declare Function DrawMenuBar Lib "user32" (ByVal hwnd As Long) _
+	     As Long
+	
+	  Private Sub Form_Load()
+	     Dim mnuItemInfo As MENUITEMINFO, hMenu As Long
+	     Dim BuffStr As String * 80   ' Define as largest possible menu text.
+	
+	     hMenu = GetMenu(Me.hwnd)   ' Retrieve the menu handle.
+	     BuffStr = Space(80)
+	     With mnuItemInfo   ' Initialize UDT
+	           .cbSize = Len(mnuItemInfo)   ' 44
+	           .dwTypeData = BuffStr & Chr(0)
+	           .fType = MF_STRING
+	           .cch = Len(mnuItemInfo.dwTypeData)   ' 80
+	           .fState = MFS_DEFAULT
+	           .fMask = MIIM_ID Or MIIM_DATA Or MIIM_TYPE Or MIIM_SUBMENU
+	     End With
+	     ' Use the desired item's position for the '3' below (zero-based list).
+	     If GetMenuItemInfo(hMenu, 3, True, mnuItemInfo) = 0 Then
+	        MsgBox "GetMenuItemInfo failed. Error: " & Err.LastDllError, , _
+	               "Error"
+	     Else
+	        mnuItemInfo.fType = mnuItemInfo.fType Or MF_HELP
+	        If SetMenuItemInfo(hMenu, 3, True, mnuItemInfo) = 0 Then
+	           MsgBox "SetMenuItemInfo failed. Error: " & Err.LastDllError, , _
+	                  "Error"
+	        End If
+	     End If
+	     DrawMenuBar (Me.hwnd)   ' Repaint top level Menu
+	  End Sub
+	
+	4. Run the project. Notice that "Help" is right-justified at the far right-side
+	  of the menu bar and is completely functional.
+	
+	REFERENCES
+	==========
+	
+	For additional information about manipulation menus in Visual Basic, please see
+	the following article in the Microsoft Knowledge Base:
+	
+	Q216185 HOWTO: Create Multi-Column Menus in Visual Basic Using the WIN32 API
+	
+	(c) Microsoft Corporation 1999, All Rights Reserved. Contributions by Chris E.
+	Jolley, Microsoft Corporation.
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbAPI kbMenu kbGrpDSUser kbVBp kbVBp500 kbVBp600 kbGrpDSVB 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+	Version           : WINDOWS:5.0,6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

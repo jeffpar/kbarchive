@@ -1,0 +1,85 @@
+---
+layout: page
+title: "Q142580: BUGLIST: List of Problems in Visual SourceSafe 4.0"
+permalink: kb/142/Q142580/
+---
+
+## Q142580: BUGLIST: List of Problems in Visual SourceSafe 4.0
+
+	Article: Q142580
+	Product(s): Microsoft SourceSafe
+	Version(s): 4.0
+	Operating System(s): 
+	Keyword(s): kbSSafe kbSSafe400bugkbbuglist
+	Last Modified: 18-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual SourceSafe for Windows, version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This single article lists confirmed bugs in Visual SourceSafe version 4.0. This
+	is not a comprehensive list, but it is current as of January 12, 1996. Each of
+	these bugs is completely described in an article in the Microsoft Knowledge
+	Base. The article identification numbers (Q numbers) and titles are listed
+	below. For more information on any of these bugs, please see the complete
+	article in the Microsoft Knowledge Base.
+	
+	MORE INFORMATION
+	================
+	
+	SUMMARY LIST FOR VISUAL SOURCESAFE VERSION 4.0
+	
+	+--------------------------------------------------------------------------+
+	| ARTICLE | TITLE                                                          | 
+	+--------------------------------------------------------------------------+
+	| Q129189 | BUG: SourceSafe Suddenly Terminates After Running a Long Time  | 
+	+--------------------------------------------------------------------------+
+	| Q136541 | PRB: Visual SourceSafe Books Online Help Viewer Crashes        | 
+	+--------------------------------------------------------------------------+
+	| Q138480 | BUG: Using the Keyboard in SourceSafe Administrator May Fail   | 
+	+--------------------------------------------------------------------------+
+	| Q139299 | BUG: Ampersand (&) Appears as Underscore (_) in the Explorer   | 
+	+--------------------------------------------------------------------------+
+	| Q139672 | BUG: Initialization Var Shadow_SetTime Set to Invalid Value    | 
+	+--------------------------------------------------------------------------+
+	| Q139729 | BUG: Visual SourceSafe Can't Associate File that Has 2 Periods | 
+	+--------------------------------------------------------------------------+
+	| Q140319 | BUG: Can't Save 'Assume Proj Based on Working Dir' Setting     | 
+	+--------------------------------------------------------------------------+
+	| Q140361 | BUG: Comment_Template Setting Doesn't Work in Srcsafe.ini File | 
+	+--------------------------------------------------------------------------+
+	| Q140362 | BUG: PVCS_SS Does Not Work with PVCS for Windows NT            | 
+	+--------------------------------------------------------------------------+
+	| Q140363 | BUG: Visual SourceSafe Slows as It Increases Processor Usage   | 
+	+--------------------------------------------------------------------------+
+	| Q141016 | BUG: Visual SourceSafe Books Online Help Is For Visual Basic   | 
+	+--------------------------------------------------------------------------+
+	| Q141058 | BUG: Visual Basic .FRX File Not Added to SourceSafe            | 
+	+--------------------------------------------------------------------------+
+	| Q141209 | BUG: Delete User Help Error: "No Additional Help Is Available" | 
+	+--------------------------------------------------------------------------+
+	| Q141398 | BUG: "Source Control" Does Not Appear in Tools Menu w/ MIPS    | 
+	+--------------------------------------------------------------------------+
+	| Q141547 | BUG: Visual SourceSafe Help System Searches for Wrong HLP File | 
+	+--------------------------------------------------------------------------+
+	| Q142092 | BUG: Report to File "Access to File Denied" Error Message      | 
+	+--------------------------------------------------------------------------+
+	| Q142157 | BUG: Merge Branches Option Doesn't Work at Project Level       | 
+	+--------------------------------------------------------------------------+
+	| Q142463 | BUG: Non SourceSafe Visual Test Files Show Up as Checked Out   | 
+	+--------------------------------------------------------------------------+
+	
+	Additional query words: 4.00
+	
+	======================================================================
+	Keywords          : kbSSafe kbSSafe400bug kbbuglist
+	Technology        : kbSSafeSearch kbAudDeveloper kbSSafe400
+	Version           : :4.0
+	
+	=============================================================================
+	

@@ -1,0 +1,104 @@
+---
+layout: page
+title: "Q165790: INFO: Microsoft Visual Database Tools Readme"
+permalink: kb/165/Q165790/
+---
+
+## Q165790: INFO: Microsoft Visual Database Tools Readme
+
+	Article: Q165790
+	Product(s): Microsoft C Compiler
+	Version(s): winnt:5.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 31-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+	- Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This document provides late-breaking or other information that supplements the
+	Microsoft Visual Database Tools documentation.
+	
+	Contents:
+	
+	Database Designer
+	Query Designer
+	Installation Issues
+	Handling Communication and TDS Protocol errors in Microsoft SQL Server
+	
+	MORE INFORMATION
+	================
+	
+	Database Designer
+	-----------------
+	
+	You can print a database diagram on any printer that supports raster graphics.
+	Diagrams print at the current zoom level. If you want to enlarge or reduce your
+	diagram, select a different zoom setting.
+	
+	To print a database diagram:
+	
+	1. On the File menu, click Print.
+	
+	2. In the Print dialog box, select a printer from the Name list set any of the
+	  other available print options. For information about each option, click
+	  What's This in the top-right corner of the dialog box, and then click the
+	  field that you want to see information about.
+	
+	3. Click OK.
+	
+	The tables and relationships that appear in your diagram will print exactly as
+	shown on the screen with one exception--all of the tables in your diagram appear
+	in their selected state in your printout for better contrast.
+	
+	Query Designer
+	--------------
+	
+	You can update data in the Results pane of the Query Designer if:
+	
+	- The primary key column(s) have been included in your query for output.
+	
+	  CAUTION: If a table in your query uses a compound key (more than one column is
+	  used to make up the unique key for each row), you must include all parts of
+	  the key in the query. If the result set does not include all columns required
+	  for the compound key, any updates that you make in the Results pane might
+	  change more than one row in the table without warning.
+	
+	- The ODBC driver for the data source that you are querying against supports
+	  SQLPrimaryKeys(). Such drivers include Microsoft SQL Server, Microsoft
+	  Access, Microsoft Visual FoxPro version 3.0 and later, and Oracle.
+	
+	Installation Issues
+	-------------------
+	
+	You must install the Microsoft SQL Server 6.5 Service Pack 1 or later to run the
+	Database Designer. For best performance, we recommend Service Pack 2.
+	
+	Handling Communication and TDS Protocol Errors in Microsoft SQL Server
+	----------------------------------------------------------------------
+	
+	You can get a TDS Protocol error or a Communications Link Failure when you're
+	working against Microsoft SQL Server under certain conditions, including running
+	SQL Trace against the server.
+	
+	If such a problem occurs, right-click the data connection in Data View and choose
+	Refresh from the shortcut menu. If you find that the problem is caused by SQL
+	Trace, close SQL Trace and then refresh the connection.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC32bitSearch kbVC500Search
+	Version           : winnt:5.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

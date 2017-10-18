@@ -1,0 +1,132 @@
+---
+layout: page
+title: "Q140653: PRB: Cursor-Based Grid Goes Blank If SQL SELECT Resets Cursor"
+permalink: kb/140/Q140653/
+---
+
+## Q140653: PRB: Cursor-Based Grid Goes Blank If SQL SELECT Resets Cursor
+
+	Article: Q140653
+	Product(s): Microsoft FoxPro
+	Version(s): 3.00 | 3.00b
+	Operating System(s): 
+	Keyword(s): kbvfp300 kbvfp500 kbvfp600
+	Last Modified: 06-AUG-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 5.0a, 6.0 
+	- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If a grid's RecordSource property is set to a cursor, and then the SQL SELECT
+	command resets the cursor, the grid appears blank if the RecordSource property
+	is not set back to itself.
+	
+	The following command will refresh the grid properly if a SQL SELECT is run to
+	rebuild the cursor, but if the grid's column or header properties have been
+	customized, these customized changes will be lost and the grid's column and
+	header properties will change back to their default settings:
+	
+	     THISFORM.GRID1.RECORDSOURCE=THISFORM.GRID1.RECORDSOURCE
+	
+	Such customization could be headers with different names, longer column lengths,
+	and code placed in the events of columns or headers. For more information,
+	please see the following article in the Microsoft Knowledge Base:
+	
+	  Q131836 PRB: Grid Not Refreshing Displaying a Cursor from Query
+	
+	CAUSE
+	=====
+	
+	When you rebuild the cursor that the grid is based on with the SQL SELECT
+	command, the original cursor has to be destroyed before the new cursor can be
+	created. When this happens, the grid columns and headers are also cleared and
+	then recreated. Even when the grid's RecordSource is set back to itself, the
+	custom settings of the grid's columns and headers are lost.
+	
+	RESOLUTION
+	==========
+	
+	To refresh the grid without losing the custom properties of the columns and
+	headers, set the RecordSource property to a dummy cursor that already has been
+	created with the same fields as the cursor the grid is based on. After the SQL
+	SELECT is run, change the RecordSource property back to the rebuilt cursor. This
+	allows the properties of the columns and headers to remain intact while the
+	cursor is being rebuilt.
+	
+	STATUS
+	======
+	
+	This behavior is by design.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Open the Customer.dbf table located in the \Vfp\Samples\Data directory, and
+	  create a form called GridForm.
+	
+	2. Place the following code in the Load event of the form:
+	
+	     SELECT cust_id, city, country FROM customer INTO CURSOR Temp1
+	     SELECT cust_id, city, country FROM customer WHERE country = "" ;
+	        INTO CURSOR Temp2
+	
+	3. Place the following code in the Destroy event of the form:
+	
+	     SELECT Temp1
+	     USE
+	     SELECT Temp2
+	     USE
+	
+	4. Place a grid on the form, and give the grid the following property settings:
+	
+	     ColumnCount=3
+	     RecordSourceType=Alias
+	     RecordSource=Temp1
+	
+	5. Change the caption of the grid1.Column1.header1 to Customer Id and the
+	  Column1 Width property to 100.
+	
+	6. Add a text box to the form.
+	
+	7. Add a command button, and place the following code in its Click event:
+	
+	     THISFORM.GRID1.RECORDSOURCE = "Temp2"
+	     SELECT cust_id, city, country FROM customer ;
+	        WHERE country = Thisform.text1.value ;
+	        INTO CURSOR Temp1
+	     THISFORM.GRID1.RECORDSOURCE = "Temp1"
+	
+	8. Run the Form. Type Spain in the text box, and then click the command button.
+	  The grid should display all records where the country field is equal to
+	  Spain. Note that the name of the header of column 1 stays the same and the
+	  width of the column doesn't change. By changing the RecordSource of the grid
+	  to the cursor called Temp2, the properties of the columns and headers are not
+	  reset when the Temp1 cursor is rebuilt.
+	
+	9. Change the two THISFORM.GRID1.RECORDSOURCE lines in the Click event of the
+	  command button into comments and add the following as the last line of code:
+	
+	     THISFORM.GRID1.RECORDSOURCE = THISFORM.GRID1.RECORDSOURCE
+	
+	  After running the form, typing a country name in the text box, and clicking
+	  the command button, note that the column name changes and the width is
+	  smaller.
+	
+	Additional query words: VFoxMac VFoxWin
+	
+	======================================================================
+	Keywords          : kbvfp300 kbvfp500 kbvfp600 
+	Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac kbVFP300 kbVFP500 kbVFP600 kbVFP500a
+	Version           : 3.00 | 3.00b
+	
+	=============================================================================
+	

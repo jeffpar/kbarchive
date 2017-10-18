@@ -1,0 +1,86 @@
+---
+layout: page
+title: "Q120739: Raising Max SFM Volume Size Reported to System 7.5 Mac Users"
+permalink: kb/120/Q120739/
+---
+
+## Q120739: Raising Max SFM Volume Size Reported to System 7.5 Mac Users
+
+	Article: Q120739
+	Product(s): Microsoft Windows NT
+	Version(s): 3.50
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 08-AUG-2001
+	
+	3.50
+	
+	WINDOWS
+	
+	kbnetwork kbenv
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	A registry flag controls the maximum volume size and free space reported by the
+	Services for Macintosh (SFM) file server. Since System 7.5 now allows
+	Macintoshes to support volumes up to 4GB-1 (0xFFFFFFFF), administrators may want
+	to use this flag to help Macintosh clients if all clients are running System 7.5
+	and the SFM volume resides on a disk partition greater than 2018MB.
+	
+	MORE INFORMATION
+	================
+	
+	Pre-System 7.5 Macintoshes support volume sizes up to 2GB-1 (although tests have
+	shown the actual limit to be around 2018MB). Because of this, SFM restricts the
+	values it reports for total and free space on SFM volumes to 2018MB, when the
+	actual size of the SFM volume's disk partition is larger.
+	
+	System 7.5 can handle volumes up to 4GB-1, and you may find it useful to raise
+	the maximum values reported for SFM volumes to this new limit.
+	
+	WARNING: ALL Macs connected to the volume must be System 7.5; reporting a volume
+	size greater than 2GB-1 to a pre-System 7.5 Macintosh crashes Macintosh Finder.
+	
+	You can raise the maximum reported size for SFM volumes to 4GB-256 (0xFFFFFF00)
+	by creating the SFM volume, then editing the registry entry:
+	
+	  HKEY_LOCAL_MACHINES\System\CurrentControlSet\Services
+	  \MacFile\Parameters\Volumes\<VolumeName>
+	
+	  Properties=xxxxx
+	
+	  by adding 262144 (0x00040000) to the number xxxxx.
+	
+	  WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+	  problems that may require you to reinstall Windows NT to correct them.
+	  Microsoft cannot guarantee that any problems resulting from the use of
+	  Registry Editor can be solved. Use this tool at your own risk.
+	
+	Stop and restart Macfile to make this change take effect on the SFM volume.
+	
+	In Windows NT 3.51 you can change this value globally for all volumes. To do
+	this, add bit 0x10 to the following section of the registry and every volume
+	will be 4GB enabled:
+	
+	  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MacFile\Parameters
+	  ServerOptions: REG_DWORD: 0x13
+	
+	NOTE: The ServerOptions value has a default value of 0x03, after adding 0x10 to
+	0x03 the result becomes 0x13. After making this change every volume will be 4GB
+	enabled.
+	
+	Additional query words: prodnt
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+	Version           : 3.50
+	
+	=============================================================================
+	

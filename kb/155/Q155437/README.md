@@ -1,0 +1,89 @@
+---
+layout: page
+title: "Q155437: PRB: &quot;Invalid DOS Path&quot; Error Message"
+permalink: kb/155/Q155437/
+---
+
+## Q155437: PRB: &quot;Invalid DOS Path&quot; Error Message
+
+	Article: Q155437
+	Product(s): Microsoft SourceSafe
+	Version(s): 4.00 5.00
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 08-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual SourceSafe, 16-bit, for Windows, versions 4.0, 5.0 
+	- Microsoft Visual SourceSafe, 32-bit, for Windows 4.0 
+	- Microsoft Visual SourceSafe for Windows, version 5.0 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	While doing a GET or VIEW from the Show History dialog, a Check In of a large
+	file, or a Difference on a large file, the user gets the following message:
+	
+	  "Invalid DOS path <drive>:<path>"
+	
+	CAUSE
+	=====
+	
+	The Temp_Path setting in the SRCSAFE.INI file is set to an invalid directory.
+	
+	RESOLUTION
+	==========
+	
+	Edit the SRCSAFE.INI file and change the Temp_Path setting to an existing
+	directory.
+	
+	If Temp_Path is set to a network drive make sure that the network connection is
+	stable.
+	
+	STATUS
+	======
+	
+	This behavior is by design.
+	
+	MORE INFORMATION
+	================
+	
+	The SRCSAFE.INI file has an initialization variable called Temp_Path. This tells
+	Visual SourceSafe where to put its temporary files. If Temp-Path is set to a
+	non-existent location, an error will occur when Visual SourceSafe attempts to
+	access the non-existent location.
+	
+	Visual SourceSafe will use a temporary directory when any one of the following
+	actions is performed:
+	
+	1. Doing a GET of an older version of a file from the Show History dialog that
+	  it can't fit into memory. This is more likely to happen with binary files.
+	
+	2. Doing a VIEW of an older version of a file from the Show History dialog.
+	
+	3. Doing a Check In of a large file that it can't fit into memory. This is more
+	  likely to happen with binary files.
+	
+	4. Doing a Difference on a large file that it can't fit into memory. This is
+	  more likely to happen with binary files.
+	
+	If the Temp_Path in the SRCSAFE.INI file is invalid, it may corrupt the file when
+	any of the previously-mentioned actions are performed. By default, Temp_Path is
+	set to a directory called "temp" that is created by the server installation.
+	Therefore, this situation should only arise if a user has edited the SRCSAFE.INI
+	file.
+	
+	Additional query words: 5.00
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbSSafeSearch kbAudDeveloper kbSSafe400 kbSSafe500 kbSSafe16bitSearch kbSSafe32bitSearch
+	Version           : 4.00 5.00
+	Issue type        : kbprb
+	
+	=============================================================================
+	

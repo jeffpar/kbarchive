@@ -1,0 +1,176 @@
+---
+layout: page
+title: "Q190288: SecHole Lets Non-administrative Users Gain Debug Level Access"
+permalink: kb/190/Q190288/
+---
+
+## Q190288: SecHole Lets Non-administrative Users Gain Debug Level Access
+
+	Article: Q190288
+	Product(s): Microsoft Windows NT
+	Version(s): WinNT:4.0
+	Operating System(s): 
+	Keyword(s): kbWinNT400sp4fix
+	Last Modified: 20-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server versions 3.51, 4.0 
+	- Microsoft Windows NT Workstation versions 3.51, 4.0 
+	- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+	- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	A utility, Sechole.exe, is being circulated on the Internet that performs a very
+	sophisticated set of steps that allows a non-administrative user to gain
+	debug-level access on a system process. Using this utility, the non-
+	administrative user is able to run some code in the system security context and
+	thereby grant himself or herself local administrative privileges on the system.
+	
+	CAUSE
+	=====
+	
+	Sechole.exe locates the memory address of a particular API function
+	(OpenProcess) and modifies the instructions at that address in a running image
+	of the exploit program on the local system. Sechole.exe requests debug rights
+	that gives it elevated privileges. The request is successful because the access
+	check for this right is expected to be done in the API that was successfully
+	modified by the exploit program. Sechole.exe can now add the user who invoked
+	Sechole.exe to the local Administrators group.
+	
+	RESOLUTION
+	==========
+	
+	Windows NT 4.0
+	--------------
+	
+	To resolve this problem, obtain the latest service pack for Windows NT version
+	4.0. For more information, please see the following article in the Microsoft
+	Knowledge Base.
+	
+	  ARTICLE-ID: Q152734
+	  TITLE : How To Obtain the Latest Windows NT 4.0 Service Pack
+	
+	
+	While this hotfix is included with Service Pack 4, it is also available
+	individually. This hotfix ensures that the access check to grant any rights is
+	done by the server and not the client. This fix has been posted as Privfixi.exe
+	(x86) and Privfixa.exe (Alpha). For your convenience, the English version of
+	this post-SP3 hotfix has been posted to the following Internet location.
+	However, Microsoft recommends that you install Windows NT 4.0 Service Pack 4 to
+	correct this problem.
+	
+	  ftp://ftp.microsoft.com/bussys/winnt/winnt-public/fixes/usa/NT40/hotfixes-postSP3/priv-fix/
+	
+	
+	Windows NT Server version 4.0, Terminal Server Edition
+	------------------------------------------------------
+	
+	To resolve this problem, obtain the latest service pack for Windows NT Server
+	4.0, Terminal Server Edition. For additional information, please see the
+	following article in the Microsoft Knowledge Base:
+	
+	  Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+	
+	
+	This hotfix ensures that the access check to grant any rights is done by the
+	server and not the client. This fix has been posted to the following Internet
+	location as Privfixi.exe (x86) and Privfixa.exe (Alpha):
+	
+	  ftp://ftp.microsoft.com/bussys/winnt/winnt-public/fixes/usa/NT40TSE/hotfixes-postSP3/priv-fix/
+	
+	Windows NT 3.51
+	---------------
+	
+	Microsoft has confirmed this problem could result in some degree of security
+	vulnerability in Windows NT version 3.51. A fully supported fix is now
+	available, but it has not been fully regression tested and should only be
+	applied to systems determined to be at risk of attack. Please evaluate your
+	system's physical accessibility, network and Internet connectivity, and other
+	factors to determine the degree of risk to your system. If your system is
+	sufficiently at risk, Microsoft recommends you download the fix as described
+	below and apply this fix.
+	
+	For a complete list of Microsoft Technical Support phone numbers and information
+	on support costs, please go to the following address on the World Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	This fix should have the following file attributes:
+	
+	+----------------------------------------------------+
+	| Date     | Time   | Size   | File Name  | Platform | 
+	+----------------------------------------------------+
+	| 07/31/98 | 02:47p | 31,184 | Csrsrv.dll | x86      | 
+	+----------------------------------------------------+
+	| 07/31/98 | 02:48p | 4,400  | Csrss.exe  | x86      | 
+	+----------------------------------------------------+
+	| 07/31/98 | 05:47p | 48,400 | Csrsrv.dll | Alpha    | 
+	+----------------------------------------------------+
+	| 07/31/98 | 05:48p | 5,904  | Csrss.exe  | Alpha    | 
+	+----------------------------------------------------+
+	
+	This hotfix ensures that the access check to grant any rights is done by the
+	server and not the client. This fix has been posted to the following Internet
+	location as Privfixi.exe (x86) and Privfixa.exe (Alpha):
+	
+	  ftp://ftp.microsoft.com/bussys/winnt/winnt-public/fixes/usa/NT351/hotfixes-postSP5/priv-fix/
+	
+	
+	MORE INFORMATION
+	================
+	
+	This exploit can potentially allow a non-administrative user to gain local
+	administrative access to the system and thereby elevate his or her privileges on
+	the system. To perform this attack, the user has to have a valid local account
+	on the system and has to have physical access to the computer to log on locally
+	to the system.
+	
+	Sensitive systems, such as the Windows NT domain controllers where non-
+	administrative users do not have any local log on rights by default, are not
+	susceptible to this threat. The attack cannot be used over the network to get
+	domain administrative privileges remotely.
+	
+	For more information, please see the following Microsoft Security Bulletin at:
+	
+	  http://www.microsoft.com/security/bulletins/ms98-009.asp
+	
+	For additional security-related information about Microsoft products, please go
+	to:
+	
+	  http://www.microsoft.com/security/
+	
+	STATUS
+	======
+	
+	Windows NT 4.0 and Windows NT Server version 4.0, Terminal Server Edition
+	-------------------------------------------------------------------------
+	
+	Microsoft has confirmed this problem could result in some degree of security
+	vulnerability in Windows NT version 4.0 and Windows NT Server version 4.0,
+	Terminal Server Edition. This problem was first corrected in Windows NT 4.0
+	Service Pack 4.0 and Windows NT Server 4.0, Terminal Server Edition Service Pack
+	4.
+	
+	Windows NT 3.51
+	---------------
+	
+	Microsoft has confirmed this problem could result in some degree of security
+	vulnerability in Windows NT version 3.51.
+	
+	Additional query words: Windows NT Privilege Elevation attack getadmin tse wts
+	
+	======================================================================
+	Keywords          : kbWinNT400sp4fix 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400 kbWinNTS351 kbNTTermServ400 kbNTTermServSearch kbWinNTS351search
+	Version           : WinNT:4.0
+	Hardware          : ALPHA x86
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

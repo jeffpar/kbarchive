@@ -1,0 +1,105 @@
+---
+layout: page
+title: "Q132679: Local System Account and Null Sessions in Windows NT"
+permalink: kb/132/Q132679/
+---
+
+## Q132679: Local System Account and Null Sessions in Windows NT
+
+	Article: Q132679
+	Product(s): Microsoft Windows NT
+	Version(s): 3.1,3.5,3.51,4.0
+	Operating System(s): 
+	Keyword(s): kbusage
+	Last Modified: 10-DEC-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server versions 3.1, 3.5, 3.51, 4.0 
+	- Microsoft Windows NT Workstation versions 3.1, 3.5, 3.51, 4.0 
+	- Microsoft Windows NT Advanced Server, version 3.1 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article discusses the Local System account and its security implications,
+	as well as a useful way to run applications in Local System security context.
+	
+	MORE INFORMATION
+	================
+	
+	Background
+	----------
+	
+	The shell application, which is typically Progman.exe, runs under the Domain\User
+	security context. Most processes that start from the shell process inherit the
+	same security context.
+	
+	When you set up Windows NT services, you choose a security context for the
+	service to be started under (because these services are typically not started by
+	a user). To check the security being used by a service:
+	
+	1. Click Start, click Run, type "control panel" (without the quotation marks),
+	  and then double click Services.
+	
+	2. Select a service, and then click Startup.
+	
+	The security context of the service is set in the Log On As window pane.
+	
+	Services Using The System Account
+	---------------------------------
+	
+	Services that use the system account start in the system context (without
+	credentials). In Windows NT 3.5 and later, Windows NT services with no
+	credentials (no domain name, user name, or password) that attempt to connect to
+	network resources are denied access because they have no credentials and they
+	are using a null session. For additional information, click the article number
+	below to view the article in the Microsoft Knowledge Base:
+	
+	  Q122702 Using the System Account as a Service in Windows NT 3.5
+	
+	NOTE: System Account and This Account: Local System use the same account.
+	
+	
+	A null session is only established when there are no credentials for a process to
+	start under (no user name or password). Typically, only the operating system
+	itself runs as system.
+	
+	On the local computer, the operating system is known as:
+	
+	  Default Owner:   Administrators    local group
+	  User:            System            pseudo group - local group scope
+	  Groups:          Administrators    local group
+	                   Everyone          pseudo group - local group scope
+	
+	When this context is used to access the network, a null session is used. This
+	produces the following context on remote computers:
+	
+	  Default Owner:   Everyone
+	  User:            Everyone
+	  Groups:          AnonymousLogon    pseudo group - local group scope
+	                   Network           pseudo group - local group scope
+	
+	Only three identifiers can provide the null session access (Everyone,
+	AnonymousLogon, and Network). The local system context and null session context
+	have only the identifier Everyone in common. To configure Windows NT so that a
+	service can access objects on its own computer directly, as well as over the
+	network, use the Everyone identifier.
+	
+	The default owners of these two contexts (as well as their default DACLs) are
+	different. Any files you created in these contexts will be owned by
+	Administrators. Any files you create through a null session will be owned by
+	Everyone.
+	
+	
+	Additional query words: prodnt localsystem username
+	
+	======================================================================
+	Keywords          : kbusage 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTW310 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS351search kbWinNTS350search kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+	Version           : :3.1,3.5,3.51,4.0
+	
+	=============================================================================
+	

@@ -1,0 +1,167 @@
+---
+layout: page
+title: "Q91088: HIMEM.SYS Memory Allocation Scheme"
+permalink: kb/091/Q91088/
+---
+
+## Q91088: HIMEM.SYS Memory Allocation Scheme
+
+	Article: Q91088
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:3.1,3.11
+	Operating System(s): 
+	Keyword(s): win31
+	Last Modified: 20-SEP-1999
+	
+	3.10 3.11
+	
+	WINDOWS
+	
+	kbother
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows versions 3.1, 3.11 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	When you start your computer, HIMEM.SYS allocates all available extended memory
+	by default. It then manages the use of this memory by other applications with
+	the extended memory specification (XMS).
+	
+	How HIMEM.SYS Allocates Memory for Itself
+	-----------------------------------------
+	
+	HIMEM.SYS uses IBM ROM BIOS interrupt 15h to determine how much extended memory
+	is available. It then uses the same interrupt to set the available extended
+	memory to zero. This prevents other applications from allocating extended memory
+	once HIMEM.SYS has started managing memory. (If you run other programs that
+	allocate extended memory by using interrupt 15h, use the /INT15= switch. For
+	more information, refer to the "User's Guide" for Windows 3.1.)
+	
+	After setting the available extended memory to zero, HIMEM.SYS assigns handles to
+	each free memory block. On a machine with 4 megabytes (MB) of random-access
+	memory (RAM), the memory starting at 1 MB up to the 4-MB boundary is usually
+	contiguous. In this situation, HIMEM.SYS assigns only one handle to this memory
+	block. More handles are assigned on machines with multiple memory blocks, such
+	as Compaq machines that have a small amount of memory starting at the 16-MB
+	boundary.
+	
+	Note: HIMEM.SYS does not allocate any memory until another program makes an XMS
+	function call. SMARTDrive and RAMDrive make XMS function calls when they are
+	loaded. The "DOS=HIGH" statement in the CONFIG.SYS file also makes an XMS call.
+	This call requests the use of the high memory area (HMA) and forces HIMEM.SYS to
+	allocate extended memory.
+	
+	How HIMEM.SYS Allocates Memory for Programs
+	-------------------------------------------
+	
+	HIMEM.SYS gives memory to programs that request it by making a call to an XMS
+	function. It first looks for a large enough block to serve the memory request.
+	Because some machines have more than one block, there is no way to determine
+	which block will be used first.
+	
+	When HIMEM.SYS finds a large enough block of memory, it divides the memory block
+	into two, which allows the program to use the memory it requested and leave the
+	remainder as a new smaller memory block. The memory allocated to the program
+	starts from the bottom of the block and extends until the memory request is
+	fulfilled. The new block, created from the extra memory, starts where the memory
+	request stopped.
+	
+	Interrupt 15h Memory
+	--------------------
+	
+	Interrupt (or function) 15h always allocates memory starting from the top of
+	memory moving downwards. Before HIMEM.SYS starts, interrupt 15h sets the
+	starting location or address of extended memory at the top or highest extended
+	memory address. When the amount of available extended memory lowers, the
+	starting address also lowers. After HIMEM.SYS starts, if no interrupt 15h memory
+	was allocated, HIMEM.SYS sets the starting address to the 1-MB boundary (the
+	bottom of extended memory).
+	
+	Interrupt 15h does not manage memory the same way that HIMEM.SYS does. Interrupt
+	15h is a large group of several functions for accessing extended memory.
+	Programs actually take control of interrupt 15h by inserting a small piece of
+	code into a table that tells the system where interrupt 15h is located. This is
+	known as creating a hook. Each program that wants extended memory creates a hook
+	and adds some code to report how much memory is available. Programs report the
+	initial available memory minus the amount they decided to use. HIMEM.SYS, when
+	it starts, is no different. It adds a hook that tells all other programs that no
+	extended memory is left. HIMEM.SYS then doles out memory to those programs that
+	know how to use XMS functions, such as SMARTDrive, RAMDrive, and Windows.
+	
+	Isolating Memory Areas with SMARTDRV.SYS and RAMDRIVE.SYS
+	---------------------------------------------------------
+	
+	By using SMARTDrive from Microsoft MS-DOS 5.0 and RAMDrive from either Windows or
+	MS-DOS, you can roughly determine whether or not a block of RAM is causing
+	problems. This can be very useful for tracking down problems such as memory
+	parity errors.
+	
+	Although the HIMEM.SYS memory allocation scheme does not allow you to determine
+	which memory it allocates at any given time, you can use features of SMARTDrive
+	and RAMDrive to perform a rough memory test. SMARTDrive allows you to create a
+	cache limited only by the amount of extended memory available. It also lets you
+	set two sizes for the cache, one for MS-DOS and one for Windows. RAMDrive also
+	allows you to allocate a large amount of extended memory, but it does not have
+	the dual size capabilities of SMARTDrive.
+	
+	By using SMARTDrive from MS-DOS 5.0, you can load SMARTDrive before RAMDrive in
+	the CONFIG.SYS file. You can then tell SMARTDrive to create an MS-DOS cache size
+	of some large amount of memory and a Windows cache size of zero. When you start
+	Windows, SMARTDrive reduces its cache size to zero. Because RAMDrive installs
+	after SMARTDrive, this leaves a gap of unused memory at the bottom, which
+	enables you to test the lower half of extended memory. You can check the top
+	half by simply installing RAMDrive and nothing else.
+	
+	To clarify this process, review the following step-by-step example, which
+	explains what happens in extended memory as Windows and the various device
+	drivers load. This example is for a machine with 4 MB of memory that is running
+	MS-DOS 5.0 and Windows 3.1 and has frequent memory parity errors:
+	
+	1. Add the following two lines, in the order given, to your CONFIG.SYS file:
+	
+	  DEVICE=C:\DOS\SMARTDRV.SYS 2048 0
+	  DEVICE=C:\WINDOWS\RAMDRIVE.SYS 2048 /e
+	
+	  Check your AUTOEXEC.BAT file to ensure SMARTDrive is not being loaded from
+	  AUTOEXEC.BAT.
+	
+	2. Restart your computer. At this point, SMARTDrive occupies the lower two
+	  megabytes of extended memory, and RAMDrive occupies the upper two.
+	
+	3. Start Windows by typing "win" (without the quotation marks). SMARTDrive
+	  reduces its cache size to zero, leaving two megabytes free for Windows to
+	  use. RAMDrive still occupies the upper two megabytes of extended memory.
+	
+	4. Perform the steps necessary to reproduce the memory parity error. If you can
+	  reproduce the error, you can be fairly certain that the problem is in the
+	  lower two megabytes.
+	
+	5. Exit Windows and edit your CONFIG.SYS file again. This time, remove the
+	  SMARTDrive statement.
+	
+	6. Restart your computer. Now RAMDrive occupies the lower two megabytes of
+	  extended memory, and Windows can use the remainder.
+	
+	7. Again, go through the steps to reproduce the memory parity error. If you
+	  cannot reproduce the error, the problem is probably in the lower two
+	  megabytes of extended memory.
+	
+	To narrow down the memory range, you can manipulate the SMARTDrive settings so
+	that you can determine a more accurate memory range and repeat these steps. In
+	the case of a memory parity error, you can then simply replace the memory
+	causing the error.
+	
+	Additional query words: 3.10 3.11
+	
+	======================================================================
+	Keywords          : win31 
+	Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+	Version           : WINDOWS:3.1,3.11
+	
+	=============================================================================
+	

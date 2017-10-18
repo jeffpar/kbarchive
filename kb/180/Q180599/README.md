@@ -1,0 +1,260 @@
+---
+layout: page
+title: "Q180599: WD97: How to Use Query to Merge Two Excel Files for Data Source"
+permalink: kb/180/Q180599/
+---
+
+## Q180599: WD97: How to Use Query to Merge Two Excel Files for Data Source
+
+	Article: Q180599
+	Product(s): Word 97 for Windows
+	Version(s): WINDOWS:8.0,97
+	Operating System(s): 
+	Keyword(s): kbinterop kbdta word8 word97 kbmerge
+	Last Modified: 26-SEP-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	- Microsoft Excel 97 for Windows 
+	- Microsoft Query 
+	-------------------------------------------------------------------------------
+	
+	
+	SUMMARY
+	=======
+	
+	The information in this article describes how to use Microsoft Query to merge
+	two Excel 97 files. You may want to do this so that you can combine related
+	information into a single file and use it in a mail merge.
+	
+	MORE INFORMATION
+	================
+	
+	Merging two Excel files allows you to combine related information into a single
+	file. Note that there are a number of other ways to create a mail merge data
+	source.
+	
+	For more information about mail merge data sources, click "Contents and Index" on
+	the Help menu, click the Index tab in Microsoft Word Help, type the following
+	text
+	
+	  mail merge, data sources
+	
+	and then double-click the selected text to go to the "mail merge data sources"
+	topic. If you are unable to find the information you need, ask the Office
+	Assistant.
+	
+	The following is an example of merging two Excel files:
+	-------------------------------------------------------
+	
+	One Excel file (workbook) could contain a list of ID numbers, first names, last
+	names, and positions, while another Excel file (workbook) could contain a list
+	of ID numbers, addresses, and salaries.
+	
+	If the ID numbers in both files are the same, you can link the two files by using
+	the similar ID field. This allows you to create a mail merge that contains
+	contain the ID numbers, first names, last names, addresses, positions, and
+	salaries. To put the files together inside Microsoft Query they need to be in
+	the correct format in Excel. Each column of information needs to have a heading
+	name (do not use spaces, quotation marks, apostrophes, or hyphens in the heading
+	name).
+	
+	Here are two sample Excel files. In File1, cell A1 contains the word IDNumber,
+	cell B1 contains the word Firstname, cell C1 is Lastname, and cell D1 is
+	Position. In File2, cell A1 contains the word IDNumber, cell B1 is Address, and
+	cell C1 is Salary.
+	
+	File1:
+	
+	  A1: IDNumber B1: Firstname C1: Lastname   D1: Position
+	  A2: 1        B2: James     C2: Jones      D2: Clerk
+	  A3: 2        B3: Harry     C3:  Anderson  D3: Administration
+	
+	File2:
+	
+	  A1: IDNumber   B1: Address        C1:  Salary
+	  A2: 1          B2: 333 3rd Ave.   C2: $20,000
+	  A3: 2          B3: 444 4th St.    C3: $25,000
+	
+	The IDNumber column in File1 should be similar to the IDNumber column in File2.
+	That is, the column heading should be the same and the information in File1
+	should correspond to the information in File2. That is, IDNumber 1 should
+	represent the same employee in both sheets. That is James Jones (IDNumber 1 in
+	File1) should live at 333 3rd Ave (IDNumber 1 in File 2). When you connect the
+	two files using Microsoft Query, you can retrieve all of the information about
+	James Jones into a single data source.
+	
+	Modifying the Files in Excel:
+	
+	After the files have been created, name the ranges of information in each sheet.
+	To do this, follow these steps:
+	
+	1. Start Microsoft Excel.
+	
+	2. Open the first workbook and select the sheet that contains the information
+	  you want to use in the mail merge. Select the portion of the file containing
+	  the text.
+	
+	3. On the Insert menu, point to Name, and then click Define. Type a name, click
+	  Add and then click OK.
+	
+	4. Save the file.
+	
+	5. Repeat steps 1-4 for the second file. (Be sure to save the files in the same
+	  directory.)
+	
+	6. Close Excel.
+	
+	After modifying the files in Excel, you can start the mail merge in Word.
+	
+	Starting the Mail Merge:
+	
+	To start the mail merge, follow these steps:
+	
+	1. Open Word.
+	
+	2. On the File menu, click New, and then click OK.
+	
+	3. On the Tools menu, click Mail Merge.
+	
+	4. Click Create, click Form Letters, and click Active Window.
+	
+	Now you're ready to create the Data Source.
+	
+	Creating a Microsoft Query Data Source:
+	
+	To create the Microsoft Query Data Source, follow these steps:
+	
+	1. In the Word Mail Merge Helper, click Get Data, and click Create Data Source.
+	  Click the MS Query button.
+	
+	2. With <New Data Source> selected, click to select the "Use the Query
+	  Wizard to create/edit queries" check box, and click OK.
+	
+	3. Type any name for your data source.
+	
+	4. Under "Select A Driver", select "Microsoft Excel Driver (*.xls)".
+	
+	5. Click Connect.
+	
+	6. Select the Database Version (for example, Excel 97), and click Select
+	  Workbook.
+	
+	7. Locate and select the first Excel file.
+	
+	8. Click OK to close the Select Workbook dialog box.
+	
+	9. Click OK to close the "ODBC Microsoft Excel Setup" dialog box.
+	
+	10. Click OK to close the "Create New Data Source" dialog box.
+	
+	Creating the Query:
+	
+	To create the query, follow these steps:
+	
+	1. Your newly created data source should be highlighted in the Choose Data
+	  Source dialog box. If not, click to select it, and then click OK.
+	
+	2. In the "Query Wizard - Choose Columns" dialog box, under "Available Tables
+	  And Columns", double-click the named range that appears.
+	
+	  This will reveal your column titles.
+	
+	3. One at a time, select the column names you want to use to create the mail
+	  merge data source and click the ">" button (note that you must select a
+	  field that both sheets have in common--in this case IDNumber).
+	
+	4. Click Next Three times (ignore filtering and sorting unless you want to
+	  filter or sort your data).
+	
+	5. Select the "View Data Or Edit Query In Microsoft Query" option and click
+	  Finish.
+	
+	Microsoft Query will be started and the information from the first Excel file
+	will be available.
+	
+	Adding the Second File and Joining the Data in Microsoft Query:
+	
+	To join the data in Microsoft Query, follow these steps:
+	
+	1. In Microsoft Query, click Add Tables on the Table menu.
+	
+	2. At the bottom of the Add Tables dialog box, change the Workbook box to the
+	  other Excel file you want to use in the merge. (Note that this file must be
+	  located in the same directory as the file you added in the Query Wizard.)
+	
+	3. Click Add and then click Close.
+	
+	4. In the first Excel table, click the field you want to join (for example, the
+	  IDNumber field) and drag the pointer to the similar field in the second Excel
+	  table.
+	
+	  A join line should appear.
+	
+	  NOTE: The field names from the first table will appear in the query pane (the
+	  big white rectangle under the tables). You can use these fields, or you can
+	  delete the fields you do not want to use by positioning the insertion point
+	  over the field name until a down arrow is displayed. To delete the field,
+	  click to select the column, and press then DELETE.
+	
+	Selecting the Fields You Want to Use in the Mail Merge:
+	
+	To select the fields from the second table you want to use in the mail merge,
+	follow these steps:
+	
+	1. In the second table, click the first field name that you want to use.
+	
+	2. Drag and drop the field to the appropriate location in the query pane.
+	
+	3. Repeat steps 1-2 for each field that you want to use from each table.
+	
+	4. On the File menu, click "Return Data To Microsoft Word".
+	
+	Creating the Mail Merge Main Document:
+	
+	To create the mail merge main document, follow these steps:
+	
+	1. After returning to Microsoft Word, click Edit Main Document when you will
+	  receive the following message:
+	
+	  Word found no merge fields in your main document. Choose the Edit Main
+	  Document button to insert merge fields into your main document.
+	
+	  The merge fields from both Excel files are now available on the Insert Merge
+	  Field button on your Mail Merge toolbar.
+	
+	2. To insert the merge fields in your document, click the Insert Merge Field on
+	  the Mail Merge toolbar.
+	
+	3. On the Tools menu, click Mail Merge.
+	
+	4. In the Mail Merge Helper, click Merge.
+	
+	5. In the Merge dialog box, click to select New document in the "Merge to" box
+	  and click Merge.
+	
+	The merged data should now include information from both Excel tables.
+	
+	For additional information, click the article numbers below to view the articles
+	in the Microsoft Knowledge Base:
+	
+	  Q142756 WD: How to Design and Set Up Mail Merge Data Sources
+	
+	  Q155179 WD: How to Use a Microsoft Excel Data Source for Word Mail Merge
+	
+	  Q159817 WD97: Can't Connect, Insert Database with ODBC and MSQuery
+	
+	  Q141922 WD: How to Start a Mail Merge
+	
+	Additional query words: options DDE
+	
+	======================================================================
+	Keywords          : kbinterop kbdta word8 word97 kbmerge 
+	Technology        : kbWordSearch kbExcelSearch kbWord97 kbWord97Search kbZNotKeyword2 kbExcel97Search kbZNotKeyword3 kbQuerySearch kbExcelWinSearch
+	Version           : WINDOWS:8.0,97
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

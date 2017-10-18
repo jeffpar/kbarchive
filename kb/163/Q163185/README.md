@@ -1,0 +1,271 @@
+---
+layout: page
+title: "Q163185: PRB: Error with FILTER or WHERE Including This or Thisform"
+permalink: kb/163/Q163185/
+---
+
+## Q163185: PRB: Error with FILTER or WHERE Including This or Thisform
+
+	Article: Q163185
+	Product(s): Microsoft FoxPro
+	Version(s): 3.0 3.0b 5.0 6.0
+	Operating System(s): 
+	Keyword(s): kbvfp300 kbvfp500 kbvfp600
+	Last Modified: 26-AUG-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Upon browsing or skipping through a table with a filter condition set, or
+	through a cursor created with SQL SELECT and a WHERE condition, you may see one
+	of several errors:
+	
+	  Object is not contained in a FORM.
+	
+	  -or-
+	
+	  Object is not contained in a FORMSET.
+	
+	  -or-
+	
+	  THIS can only be used within a method.
+	
+	  -or-
+	
+	  THISFORM can only be used within a method.
+	
+	  -or-
+	
+	  Property <form or formset property holding filter value> is not found.
+	
+	CAUSE
+	=====
+	
+	These errors are caused by the record pointer being moved or the table being
+	browsed outside of the object where the FILTER or WHERE condition has been
+	stored in a form or object property. Regardless of where the FILTER condition is
+	set, or how the record pointer is being moved, the FILTER condition is
+	reevaluated each time the record pointer is moved. If the table or cursor is
+	being accessed outside the form or other object where THISFORM.<property>
+	or THIS.<property> is a valid reference, one of these errors occurs.
+	
+	RESOLUTION
+	==========
+	
+	To prevent these errors, use macro substitution, or store or reference the
+	FILTER or WHERE condition in a manner where it is always a valid reference.
+	
+	You can do this in several ways:
+	
+	- Set the FILTER condition with macro substitution, for example:
+	
+	        THISFORM.cfilterstring = "cust_id = 'A'"
+	        lcFilterstring = THISFORM.cfilterstring
+	        SET FILTER TO &lcFilterstring
+	
+	- Store the FILTER condition to a public variable, for example:
+	
+	        PUBLIC gcFilterString
+	        gcFilterString = "cust_id = 'A'"
+	        SET FILTER TO (gcFilterString)
+	
+	- Store the FILTER condition in a property of an object with a reference in a
+	  public variable. There is an example of this below in MORE INFORMATION.
+	
+	- If the error is caused by a WHERE condition in a cursor created with SELECT -
+	  SQL, the NOFILTER keyword may be used in Visual FoxPro 5.0 to force a
+	  temporary table to be used, rather than a filtered subset of the full table.
+	  Here, the WHERE is never reevaluated after the SELECT is executed, for
+	  example:
+	
+	        SELECT * FROM customer WHERE cust_id = "A" ;
+	          INTO CURSOR custcursor NOFILTER
+	
+	  In Visual FoxPro 3.0, this can be forced by adding a calculated field to the
+	  SELECT, such as the following:
+	
+	        SELECT *, SPACE(1) FROM customer WHERE cust_id = "A" ;
+	           INTO CURSOR custcursor
+	
+	STATUS
+	======
+	
+	This behavior is by design.
+	
+	MORE INFORMATION
+	================
+	
+	Within a particular object or form references can be made, within that object's
+	code, to the object itself or the form or formset containing it, with THIS,
+	THISFORM, or THISFORMSET. These references are valid only within code that is
+	contained within these objects or their members. Because of the nature of SET
+	FILTER or a SELECT - SQL WHERE condition (when the returned records are a
+	filtered set of records), when either of these is the case the FILTER or WHERE
+	condition must contain references that are always valid.
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Run the following code from a program (.prg) file:
+	
+	        * Beginning of code example
+	        *
+	        PUBLIC oNavClass, oform
+	        oNavClass=CREATEOBJECT('navclass')
+	        oform=CREATEOBJECT("form1")
+	        oform.SHOW
+	
+	        DEFINE CLASS navclass AS CUSTOM
+	           * This class does skipping and browsing in currently
+	           *  selected table
+	           cfilterstring = ""
+	
+	           PROCEDURE DoBrowse
+	              BROWSE NOWAIT
+	           ENDPROC
+	
+	           PROCEDURE DoSkip
+	              LPARAMETER ndirection
+	              SKIP (ndirection)
+	              IF EOF()
+	                 GO BOTTOM
+	              ENDIF
+	              IF BOF()
+	                 GO TOP
+	              ENDIF
+	           ENDPROC
+	        ENDDEFINE
+	
+	        DEFINE CLASS form1 AS FORM
+	           cfilterstring = ""
+	           AUTOCENTER = .T.
+	           HEIGHT = 200
+	           WIDTH = 300
+	           CAPTION = "Form1"
+	           NAME = "FORM1"
+	
+	           ADD OBJECT combo1 AS COMBOBOX WITH ;
+	              HEIGHT = 24, ;
+	              LEFT = 12, ;
+	              STYLE = 2, ;
+	              TOP = 72, ;
+	              WIDTH = 100, ;
+	              NAME = "Combo1", ;
+	              ROWSOURCE = "SELECT DISTINCT SUBSTR(cust_id,1,1) ;
+	                 FROM customer ORDER BY 1 INTO CURSOR curTemp", ;
+	              ROWSOURCETYPE = 3
+	
+	           ADD OBJECT command1 AS COMMANDBUTTON WITH ;
+	              TOP = 120, ;
+	              LEFT = 60, ;
+	              HEIGHT = 27, ;
+	              WIDTH = 84, ;
+	              CAPTION = "Skip", ;
+	              NAME = "Command1"
+	
+	           ADD OBJECT text1 AS TEXTBOX WITH ;
+	              CONTROLSOURCE = "customer.cust_id", ;
+	              HEIGHT = 23, ;
+	              LEFT = 180, ;
+	              TOP = 72, ;
+	              WIDTH = 100, ;
+	              NAME = "Text1"
+	
+	           ADD OBJECT command2 AS COMMANDBUTTON WITH ;
+	              TOP = 120, ;
+	              LEFT = 168, ;
+	              HEIGHT = 27, ;
+	              WIDTH = 84, ;
+	              CAPTION = "Skip -1", ;
+	              NAME = "Command2"
+	
+	           ADD OBJECT command3 AS COMMANDBUTTON WITH ;
+	              TOP = 170, ;
+	              LEFT = 110, ;
+	              HEIGHT = 27, ;
+	              WIDTH = 84, ;
+	              CAPTION = "Browse", ;
+	              NAME = "Command3"
+	
+	           PROCEDURE LOAD
+	              USE HOME()+'samples\data\customer'
+	           ENDPROC
+	
+	           PROCEDURE UNLOAD
+	              SET FILTER TO
+	              USE IN customer
+	              RELEASE oNavClass
+	           ENDPROC
+	
+	           PROCEDURE combo1.INIT
+	              THIS.VALUE = THIS.LIST(1)
+	           ENDPROC
+	
+	           PROCEDURE combo1.VALID
+	              THISFORM.cfilterstring = "cust_id = '"+THIS.VALUE+"'"
+	              SET FILTER TO EVAL(THISFORM.cfilterstring)
+	
+	              * Comment out above 2 lines and remove comments from lines
+	              *   below to demonstrate workaround. ONavClass is public
+	              *   and its properties will always be in scope
+	
+	              * oNavClass.cfilterstring = 'cust_id = "'+THIS.VALUE+'"'
+	              * SET FILTER TO EVAL(oNavClass.cfilterstring)
+	              GO BOTTOM
+	              GO TOP
+	              THISFORM.REFRESH
+	           ENDPROC
+	
+	           PROCEDURE command1.CLICK
+	              oNavClass.DoSkip(1)
+	              THISFORM.REFRESH
+	           ENDPROC
+	
+	           PROCEDURE command2.CLICK
+	              oNavClass.DoSkip(-1)
+	              THISFORM.REFRESH
+	           ENDPROC
+	
+	           PROCEDURE command3.CLICK
+	              oNavClass.DoBrowse
+	           ENDPROC
+	
+	        ENDDEFINE
+	        *
+	        * End of code example
+	
+	2. A form appears. Make a selection from the drop-down list. The first record
+	  matching the condition is displayed in the text box.
+	
+	3. Press any of the three command buttons to navigate through the records or
+	  browse the filtered list. The following error occurs:
+	
+	  Object is not contained in a FORM.
+	
+	4. Ignore the error, close the form, and edit the .prg file. As noted in the
+	  comments within the combo1.VALID procedure, comment out the lines storing the
+	  filter condition as a property of the form, and uncomment the lines storing
+	  the filter condition into a property of oNavClass.
+	
+	5. Rerun the form, repeat steps 2 and 3 above, and no error will occur.
+	
+	REFERENCES
+	==========
+	
+	Visual FoxPro 5.0 Help File
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbvfp300 kbvfp500 kbvfp600 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600
+	Version           : 3.0 3.0b 5.0 6.0
+	
+	=============================================================================
+	

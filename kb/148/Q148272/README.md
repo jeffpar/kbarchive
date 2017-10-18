@@ -1,0 +1,86 @@
+---
+layout: page
+title: "Q148272: XADM: Exchange Server Setup Halts Copying MAPI32.DLL"
+permalink: kb/148/Q148272/
+---
+
+## Q148272: XADM: Exchange Server Setup Halts Copying MAPI32.DLL
+
+	Article: Q148272
+	Product(s): Microsoft Exchange
+	Version(s): winnt:4.0,5.0
+	Operating System(s): 
+	Keyword(s): kbsetup exc4 exc5
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 4.0, 5.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The Microsoft Exchange Server Setup program may pause with a dialog box stating
+	the following:
+	
+	  STOP Setup cannot copy <cd>:\SETUP\<platform>\MAPI32.DLL: The
+	  file cannot be overwritten because it is in use by another process.
+	
+	CAUSE
+	=====
+	
+	The Microsoft Exchange Server Setup program tries to install Mapi32.dll to the
+	<winnt>\System32 directory during installation. It is possible that some
+	mail-aware application or Microsoft Windows NT service is running that has
+	already loaded this DLL file; therefore, the file is in use and cannot be
+	overwritten.
+	
+	RESOLUTION
+	==========
+	
+	Close all running applications except for the Setup program. Stop all services
+	that are mail-aware (capable of sending e-mail) such as anti-virus software,
+	Compaq Insights Agents, Simple Network Management Protocol (SNMP), and so on.
+	Click Retry.
+	
+	If this does not allow the Setup program to continue, or if the application or
+	service cannot be determined at this time, click Ignore. The Setup program
+	should finish.
+	
+	At this point, the application or service using Mapi32.dll must be determined and
+	temporarily halted so that <cd>\Setup\<platform>\Mapi32.dll can be
+	manually copied to the <winnt>\System32 directory.
+	
+	You need to be aware of some less obvious MAPI-aware applications, specifically,
+	some uninterruptible power supplies, include monitoring software that runs as a
+	Windows NT service. This software may be mail-aware and configured to send
+	e-mail to a system administrator under specific monitored conditions.
+	
+	STATUS
+	======
+	
+	In Microsoft Exchange Server version 4.0, this behavior is by design and will
+	not be changed.
+	
+	Microsoft has confirmed this to be an issue in Microsoft Exchange Server version
+	5.0. This has been corrected in the latest U.S. Service Pack for Microsoft
+	Exchange Server version 5.0. For information on obtaining the Service Pack,
+	query on the following word in the Microsoft Knowledge Base (without the
+	spaces):
+	
+	  S E R V P A C K
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbsetup exc4 exc5 
+	Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbZNotKeyword2
+	Version           : winnt:4.0,5.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

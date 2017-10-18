@@ -1,0 +1,88 @@
+---
+layout: page
+title: "Q214755: BUG: VB 6 DLL Settings Cause Access Error During Shutdown"
+permalink: kb/214/Q214755/
+---
+
+## Q214755: BUG: VB 6 DLL Settings Cause Access Error During Shutdown
+
+	Article: Q214755
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): WINDOWS:6.0,6.0 SP2
+	Operating System(s): 
+	Keyword(s): kbInternet kbMTS200 kbVBp600bug kbVS600bug kbVS600sp2bug kbVS600sp3fix kbWinDNA kbIISkb
+	Last Modified: 18-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Using the Unattended Execution, Retain in Memory, and Single Threaded Threading
+	Model options with a Visual Basic DLL installed in Microsoft Transaction Server
+	(MTS) causes an access violation when the MTS package times out.
+	
+	NOTE: The Access Violation can occur when a Visual Basic DLL is used with these
+	settings in any multithreaded environment, such as MTS, IIS, Internet Explorer
+	and so on.
+	
+	RESOLUTION
+	==========
+	
+	Ensure that Visual Studio 6, Service Pack 3 is installed.
+	
+	Settings other than those specified in the SYMPTOMS section do not cause this
+	error. Specifically, the Apartment Threaded Threading Model option, which is
+	recommended for use with MTS, is safe to use.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article.
+	
+	This bug was corrected in Visual Studio 6, Service Pack 3.
+	
+	MORE INFORMATION
+	================
+	
+	To reproduce this problem, do the following:
+	
+	1. Create a Visual Basic 6 DLL with the Unattended Execution, Single Threaded,
+	  and Retain In Memory project properties set.
+	
+	2. Install the DLL in a Microsoft Transaction Server package.
+	
+	3. Run a client application that uses the DLL. This causes the package to start
+	  up.
+	
+	4. Close the client application.
+	
+	5. The access violation occurs when the package times out.
+	
+	REFERENCES
+	==========
+	
+	For additional information on using components built in Visual Basic in
+	multithreaded environments, click the article number below to view the article
+	in the Microsoft Knowledge Base:
+	
+	  Q186273 BUG: AV Running VB-Built Component in Multi-Threaded Environment
+	
+	
+	Additional query words: multithread multi-thread
+	
+	======================================================================
+	Keywords          : kbInternet kbMTS200 kbVBp600bug kbVS600bug kbVS600sp2bug kbVS600sp3fix kbWinDNA kbIIS kbbuglist
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600
+	Version           : WINDOWS:6.0,6.0 SP2
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

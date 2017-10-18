@@ -1,0 +1,68 @@
+---
+layout: page
+title: "Q161047: Compaq Insight Manager may Cause TN3270 Event ID 903"
+permalink: kb/161/Q161047/
+---
+
+## Q161047: Compaq Insight Manager may Cause TN3270 Event ID 903
+
+	Article: Q161047
+	Product(s): Microsoft SNA Server
+	Version(s): WINDOWS:2.0,2.1,2.11 SP1;2.11 SP2,3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 12-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 2.0, 2.1, 2.11 SP1, 2.11 SP2, 3.0 SP1, 3.0 SP2, 3.0 SP3, 3.0 SP4, 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The Windows NT Event Viewer Application log of a Windows NT Server running the
+	TN3270 service may show repeated Event ID 903s. The event description is as
+	follows:
+	
+	  Windows API ReadFileEx failed with error code 233L (No process is on the
+	  other end of the pipe.) in function TCPRecv.
+	
+	  EXPLANATION
+	  An unexpected error was encountered on an Windows API call.
+	
+	  ACTION
+	  Record message and contact technical support.
+	
+	The TNServer traces will show a TN session initiated, but the response, DO TERM
+	TYPE, finds nothing to receive the message.
+	
+	CAUSE
+	=====
+	
+	This can be caused by Compaq Insight Manager's use of the standard TCP/IP
+	(Telnet) port 23.
+	
+	RESOLUTION
+	==========
+	
+	The TN3270 service can be configured to use a different port by editing the
+	<ntroot>\SYSTEM32\DRIVERS\ETC\SERVICES. For example, to configure the
+	TN3270 service to use Port 24, add the following line and restart the TN3270
+	service:
+	
+	  telnet             23/tcp
+	  tn3270           24/tcp   #  TN3270 Service
+	
+	NOTE: This also requires the TN clients to be configured to use this same port.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ200 kbSNAServ400 kbSNAServ210 kbSNAServ211SP1 kbSNAServ211SP2 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3 kbSNAServ300SP2 kbSNAServ300SP4
+	Version           : WINDOWS:2.0,2.1,2.11 SP1;2.11 SP2,3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
+	
+	=============================================================================
+	

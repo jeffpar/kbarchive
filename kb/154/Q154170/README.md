@@ -1,0 +1,161 @@
+---
+layout: page
+title: "Q154170: BUG: @...SAY Prints Gray Background"
+permalink: kb/154/Q154170/
+---
+
+## Q154170: BUG: @...SAY Prints Gray Background
+
+	Article: Q154170
+	Product(s): Microsoft FoxPro
+	Version(s): MS-DOS:2.6a; WINDOWS: 3.0,3.0b,5.0,5.0a,6.0
+	Operating System(s): 
+	Keyword(s): kbprint kbPrinting kbvfp kbvfp300bBUG kbvfp500aBUGkbbuglist
+	Last Modified: 07-SEP-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+	- Microsoft FoxPro for Windows, version 2.6a 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	It is possible that @...SAYs prints with a gray or dark-shaded background when
+	printed from Windows 95 or Windows NT 4.0 using either Microsoft Visual FoxPro
+	for Windows or FoxPro for Windows 2.6. This problem can be encountered with all
+	versions of Windows. However, it appears more often under Windows 95 and Windows
+	NT 4.0.
+	
+	CAUSE
+	=====
+	
+	There are several reasons why @...SAYS may print a shaded background. It could
+	be because the window color is set to a color other than white in the Windows 95
+	or Windows NT 4.0 Display Properties. In Microsoft Visual FoxPro and FoxPro for
+	Windows 2.6, the background color of the desktop will affect the @...SAYs used
+	in programs. Also, if the @...SAY code is executed from a form in Microsoft
+	Visual FoxPro or a screen in Microsoft FoxPro for Windows 2.6, the background
+	color of these objects will affect printout
+	
+	WORKAROUND
+	==========
+	
+	To change the background color of all windows under Windows 95 or Windows NT
+	4.0, the Window color must be changed in the Appearance tab of the Display
+	Properties. To change this property, alternate-click on the Windows 95 or
+	Windows NT 4.0 desktop and select Properties from the Shortcut menu. This will
+	bring up the Display Properties window. Click on the Appearance tab, and then
+	select Window in the drop-down list under Item. From the color picker, choose
+	white.
+	
+	This option may not be desirable because users will have to keep the window color
+	white anytime they print in @..SAYs from FoxPro under Windows 95 or Windows NT
+	4.0. A better way to implement this is to check the background color of the
+	window or desktop from the code, the form, or the screen prior to issuing the
+	@...SAY. Below are the steps to implement this with Microsoft Visual FoxPro 3.0
+	and Microsoft FoxPro for Windows 2.6.
+	
+	If the @...SAY code is executed from a program in Visual FoxPro for Windows, the
+	window color can be changed with the following code:
+	
+	     IF _Screen.BackColor != 16777215    &&Is color value white?
+	        _Screen.LockScreen = .T.         &&Keep screen from flashing
+	        cOldbackcolor = _Screen.BackColor      &&Save background color
+	        _Screen.BackColor = RGB(255,255,255)   &&Set BackColor to RGB white,
+	                             &&Same as color value 16777215
+	        SET DEVICE TO PRINTER
+	        @1,1 say 'This is a test.'
+	        SET DEVICE TO SCREEN
+	        SET PRINTER TO
+	        _Screen.BackColor = cOldbackcolor
+	        _Screen.LockScreen = .F.
+	     ENDIF
+	
+	If the @...SAY code is executed from a form in Visual FoxPro for Windows, the
+	form's background color can be modified with the following code:
+	
+	     IF ThisForm.BackColor != 16777215
+	        ThisForm.LockScreen = .T.
+	        SET DEVICE TO PRINTER
+	        cOldbackcolor = ThisForm.BackColor
+	        ThisForm.BackColor = RGB(255,255,255)
+	        @1,1 SAY 'This is a test'
+	        SET DEVICE TO SCREEN
+	        SET PRINTER TO
+	        ThisForm.BackColor = cOldbackcolor
+	        ThisForm.LockScreen = .F.
+	     ENDIF
+	
+	NOTE: This code may be placed in the Click event of a Command button.
+	
+	In FoxPro for Windows 2.6, use the following code to change the window color:
+	
+	     cOldscheme = SET('Color of Scheme 1')        &&Obtain old color
+	     MODIFY WINDOW SCREEN COLOR RGB(0,0,0,255,255,255)  &&Set color white
+	     SET DEVICE TO PRINTER
+	     @1,1 say ' This is a test.'
+	     SET DEVICE TO SCREEN
+	     SET PRINTER TO
+	     MODIFY WINDOW SCREEN COLOR &cOldscheme
+	
+	NOTE: In FoxPro 2.6a for Windows, issuing the following command after the SET
+	DEVICE TO PRINTER command eliminates the gray background:
+	
+	     SET PRINT FONT "some font name", 10
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products listed at
+	the beginning of this article. We are researching this problem and will post new
+	information here in the Microsoft Knowledge Base as it becomes available.
+	
+	MORE INFORMATION
+	================
+	
+	If the @...SAY code is executed from Visual FoxPro for Windows with Windows 95
+	or Windows NT 4.0 as the operating system, all printed pages will be shaded.
+	
+	Using FoxPro for Windows 2.6 and Windows 95 or Windows NT 4.0, only the first
+	page is shaded. All others print normally.
+	
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. In Windows 95 or Windows NT 4.0, right-click the desktop. From the Shortcut
+	  menu, select Properties.
+	
+	2. In the Display Properties dialog box, click the Appearance tab. In the Item
+	  drop-down list, select Window.
+	
+	3. Click the Color drop-down list, and change the color to gray or any color
+	  other than white.
+	
+	4. Open Visual FoxPro for Windows or FoxPro for Windows 2.6, and create a
+	  program with the following code:
+	
+	     SET DEVICE TO PRINTER
+	     FOR i = 1 TO 2       &&Loop shows different output from VFP &FPW26
+	        @1,1 SAY 'This is a printing test' FONT 'Arial',14
+	        @3,1 SAY 'From '+VERSION() + ' under ' + OS(1) FONT 'Courier New'
+	     ENDFOR
+	     SET DEVICE TO SCREEN
+	     SET PRINTER TO
+	
+	  NOTE: The above code can be executed in a FoxPro for Windows 2.6 screen, as
+	  well as in a Visual FoxPro for Windows 3.0 form.
+	
+	Additional query words: kbvfp300 kbvfp500 kbvfp600
+	
+	======================================================================
+	Keywords          : kbprint kbPrinting kbvfp kbvfp300bBUG kbvfp500aBUG kbbuglist
+	Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro260a kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+	Version           : MS-DOS:2.6a; WINDOWS: 3.0,3.0b,5.0,5.0a,6.0
+	Issue type        : kbbug
+	
+	=============================================================================
+	

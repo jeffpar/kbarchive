@@ -1,0 +1,81 @@
+---
+layout: page
+title: "Q164733: PPT7: Embedded Word Tables Show Unequal Borders"
+permalink: kb/164/Q164733/
+---
+
+## Q164733: PPT7: Embedded Word Tables Show Unequal Borders
+
+	Article: Q164733
+	Product(s): Microsoft PowerPoint for Windows
+	Version(s): WINDOWS:7.0,7.0a
+	Operating System(s): 
+	Keyword(s): kbinterop kbole kbformat
+	Last Modified: 16-APR-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft PowerPoint for Windows 95, version 7.0 
+	- Microsoft Word for Windows 95, versions 7.0, 7.0a 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	If you insert a Word table into a PowerPoint slide, and you apply borders to
+	some or all of the table cells, the borders appear the same width while you are
+	editing the table, but they change to unequal widths when you click outside of
+	the table. This symptom is a display effect. When you print the slide, all of
+	the borders print with the same thickness.
+	
+	CAUSE
+	=====
+	
+	When you insert a Word table into a PowerPoint slide, Word provides a picture of
+	the table that has an action associated with it. (For example, when you
+	double-click it, PowerPoint starts Word, and tells Word to create a table that
+	is a certain size and that contains certain information.) When you perform that
+	action, Word takes over and replaces the picture of the table with the actual
+	table. When you are finished editing the table, Word closes the table and
+	PowerPoint displays the picture of the table.
+	
+	While the table is displayed in Word, the borders are described as lines.
+	However, once Word closes the table and PowerPoint displays the picture of the
+	table, the borders are described as very thin rectangles instead of lines.
+	
+	Thin rectangles use different display code than lines do. If several lines have
+	the same thickness, PowerPoint always displays them in the same thickness.
+	However, if several rectangles have the same width, they are displayed with
+	slightly different widths depending on where they appear on screen.
+	
+	NOTE: This is not a problem with Microsoft PowerPoint. The same symptoms appear
+	if you insert a Word table into an Excel worksheet, a Publisher publication, or
+	another Word document.
+	
+	WORKAROUND
+	==========
+	
+	To work around this problem, enlarge or reduce the table slightly. You may need
+	to experiment to find the best scale percentage so that the Word table looks
+	best during a slide show. NOTE: If you hold the SHIFT key while you resize the
+	table, you will avoid stretching the table disproportionately.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products listed at
+	the beginning of this article.
+	
+	Additional query words: 7.00 7.0a word winword word95 ppt95 word7 ppt7 margin thicker thinner uneven row column outline
+	
+	======================================================================
+	Keywords          : kbinterop kbole kbformat 
+	Technology        : kbWordSearch kbPowerPtSearch kbWord700Search kbPowerPt700 kbZNotKeyword2 kbPowerPt700Search kbWord700 kbWord700a
+	Version           : WINDOWS:7.0,7.0a
+	Hardware          : x86
+	Issue type        : kbprb
+	
+	=============================================================================
+	

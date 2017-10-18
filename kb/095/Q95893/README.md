@@ -1,0 +1,299 @@
+---
+layout: page
+title: "Q95893: Summary of CD-ROM Drives and Their Capabilities"
+permalink: kb/095/Q95893/
+---
+
+## Q95893: Summary of CD-ROM Drives and Their Capabilities
+
+	Article: Q95893
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kb3rdparty kbhw kbmm kbimu
+	Last Modified: 30-JUL-2001
+	
+	SUMMARY
+	=======
+	
+	This article describes the capabilities of several CD-ROM drives that are
+	currently available.
+	
+	
+	MORE INFORMATION
+	================
+	
+	The third-party products discussed in this article are manufactured by vendors
+	independent of Microsoft; we make no warranty, implied or otherwise, regarding
+	these products' performance or reliability.
+	
+	Company         Model     Capacity  Interface  Buffer Access D.T.R. Int/Ext
+	---------------------------------------------------------------------------
+	
+	CD-ROM Inc.     CRI-1000    660       SCSI, AT  64K    350    150   Int/Ext
+	                                     IDE,
+	                                     Prop*
+	
+	CD Technology   CD Porta-   600-683   SCSI-2    64K    325    150   Int/Ext
+	               Drive
+	
+	Chinon America  CDA-431     680       SCSI      32K    350    150     Ext
+	
+	Chinon America  CDA-435     600       SCSI      64K    350    150     Ext
+	
+	Chinon America  DC-431      680       SCSI      32K    350    150     Ext
+	
+	Chinon America  DC-435      600       SCSI      64K    350    150   Int/Ext
+	
+	Chinon America  DS-431      680       SCSI      32K    350    150     Ext
+	               Bundle
+	
+	Chinon America  DS-435      600       SCSI      64K    350    150     Ext
+	
+	Chinon America  DX-431      680       SCSI      32K    350    150     Ext
+	
+	Chinon America  DX-435      600       SCSI      64K    350    150     Ext
+	
+	Dataware        Series 500  660       SCSI      64K    350    150   Int/Ext
+	Technologies
+	
+	Freeport Data   CD-Shuttle  599-683   Parallel         325    150     Ext
+	               CS-600
+	
+	Genesis         GenSTAR     680       Prop*     32K    450    150-170 Ext
+	Integrated      2000 Series
+	Systems Inc.
+	
+	Genesis         GenSTAR     680       Prop*            600  150-180 Int/Ext
+	Integrated      3000 Series
+	Systems Inc.
+	
+	Hard Drives     PowerDrive  550-680   SCSI             350    150     Ext
+	Intl.           CD-ROM
+	
+	Hewlett-Packard 50720A      500       Prop             500            Int
+	
+	Hitachi         CDR-1503SMC 552       SCSI             800    150     Ext
+	
+	Hitachi         CDR-1503SPC 552       IDE              800    154     Ext
+	
+	Hitachi         CDR-1700SPC 682-778   Prop*     32K    320    154     Ext
+	
+	Hitachi         CDR-1700SMC 682-778   Prop*     32K    320    150     Ext
+	
+	Hitachi         CDR-1750S   682-778   SCSI      64K    320    150     Ext
+	
+	Hitachi         CDR-3600    682-778   Prop*     32K    450    150     Int
+	
+	Hitachi         CDR-3600PC  682-778   SCSI      32K    450    150     Int
+	
+	Hitachi         CDR-3700    682-778   Prop*            320    150     Int
+	
+	Hitachi         CDR-3750    682-778   SCSI      64K    300    150   Int/Ext
+	
+	IBM             PS/2 CD-ROM 600       SCSI             380    150   Int/Ext
+	
+	IBM             PS/2 CD-ROM 600       SCSI             330    150     Int
+	               II
+	
+	JVC Information WO CD-ROM   540       SCSI             300            Int
+	Products
+	
+	Laser Magnetic  CM 205      553-635   SCSI      32K    375  150-180 Int/Ext
+	Storage Intl.
+	
+	Laser Magnetic  CM 225      553-635   SCSI      32K    375  150-180 Int/Ext
+	Storage Intl.
+	
+	Liberty Systems 115 Series  680       SCSI      64K    380    150     Ext
+	               115CD                 Parallel
+	
+	MacProducts USA Magic CD-ROM594       SCSI             350    150     Ext
+	
+	Micro Design    LaserBank   600       SCSI      64K    350    150   Int/Ext
+	Intl.           600CD
+	
+	Mitsumi         CRMC-FR     540-630   Prop*            600    150-180 Int
+	
+	Mitsumi         CRMC-LU     540-630   Prop*            600    150-180 Int
+	
+	Mitsumi         CRS-UF      540-630   Prop*            700    150-180 Ext
+	
+	Mitsumi         CRS-XP      540-630   Prop*            900    150-180 Ext
+	
+	NCR Corp.       Safari      680       Prop*            325            Ext
+	               Portable CD-ROM
+	
+	NEC             CDR-36      620-670   SCSI      64K    500    150     Ext
+	               Portable
+	
+	NEC             CDR-36M     680                        450    150     Ext
+	
+	NEC             CDR-37      680       SCSI      64K    450    150     Ext
+	
+	NEC             CDR-73M     680       SCSI      64K    280    150     Ext
+	
+	NEC             CDR-74      680       SCSI      64K    280    150   Int/Ext
+	
+	NEC             CDR-84      680       SCSI      64K    280    150   Int/Ext
+	
+	NEC             CDR-83M     680       SCSI      64K    280    150     Ext
+	
+	Nth Group       Nth CD-ROM  680       SCSI             350            Ext
+	
+	Optical Access  Access CD   600       SCSI             400    150     Ext
+	
+	Optical Access  Access CD/  599-683   SCSI-2           310    150     Ext
+	               Allegro
+	
+	Optical Access  Access CD/  540       SCSI-2           500    150     Ext
+	               Performer
+	
+	Optical Media   OMI CDP-1B  130       SCSI      64K    380    150     Ext
+	
+	Panasonic       LK-MC501S/B 540       SCSI             500    150   Int/Ext
+	
+	Parallel        PC-5683s    600       SCSI             350            Ext
+	Peripherals                           Parallel
+	Technology Inc.
+	
+	Peripheral      PC CD-ROM   654-680   SCSI      64K    380    150   Int/Ext
+	Land Inc.
+	
+	Periperal       PV-CD ROM   638       SCSI             350            Ext
+	Vision
+	Storage
+	Systems
+	
+	Philips         CM202XRS    600       Serial           350    150-180 Int
+	
+	Philips         CM202XBK    600       Serial           350    150-180 Int
+	
+	Philips         CDD401      635       Prop*            500    150-180 Ext
+	(Magnavox)
+	
+	Philips         CDD461      645-757   Prop*            700    150-180 Ext
+	(Magnavox)
+	
+	Philips         CDD461RS    645-757   Prop*            700    150-180 Ext
+	(Magnavox)
+	
+	Pinnacle Micro  PCD-100     540-635   Prop*            600          Int/Ext
+	
+	Procom          MacCD/LX    683       SCSI      64K    350    150     Ext
+	Technology
+	
+	Procom          MCD-ROM650/E683       SCSI      64K    325    150     Ext
+	Technology
+	
+	Procom          MCD-ROM650/M683       SCSI             325    150     Ext
+	Technology
+	
+	Procom          PICD650S    650       Prop*     64K    340    150     Ext
+	Technology
+	
+	Procom          PXCD650S    650       Prop*     64K    340    150     Ext
+	Technology
+	
+	Refcorp         Premiere    552       ESDI                          Ext/Int
+	               CD-ROM
+	Sony            CDU-31A     680       Prop*     64k    430    150     Int
+	
+	Sony            CDU-33A,
+	                  Mode I   550       Prop*     64k    320    300     Int
+	                  Mode II  680
+	
+	Sony            CDU-510     540                        500    150     Int
+	
+	Sony            CDU-520     540                        500    150     Int
+	
+	Sony            CDU-535     680-777   Prop*     8K     340    150     Int
+	
+	Sony            CDU-541     640       SCSI      64K    380    150     Int
+	
+	Sony            CDU-561     640       SCSI-2    256K   300    150     Ext
+	
+	Sony            CDU-6100    640       SCSI             500    150     Ext
+	
+	Sony            CDU-6110    640       SCSI             500    150     Ext
+	
+	Sony            CDU-7101    640       SCSI             500    150     Ext
+	
+	Sony            CDU-6205    640       Prop*            340    150     Ext
+	
+	Sony            CDU-7211    680-777   SCSI      64K    380    150     Ext
+	
+	Storage Devices SCD-683     599-683   SCSI             300    150     Ext
+	Inc.                                  Parallel
+	
+	Sun Moon Star   Internal    680       IDE       8K     340    150     Int
+	               CD-ROM kit
+	
+	Sun Moon Star   91-015      553       IDE       32K    450    150     Int
+	
+	Sun Moon Star   Internal    680       IDE                             Int
+	               SCSI CD-ROM Kit
+	
+	Tandy           CDR-1000    540-630   IDE              900    150   Ext/Int
+	
+	Tandy           CDR-3000    540-630   IDE              900    150   Ext/Int
+	
+	Tass Optical    CD-ROM 650  650       SCSI             350    150   Ext/Int
+	World Inc.
+	
+	Texel America   DM-3011     550       SCSI      64k    340    150     Int
+	
+	Texel America   DM-3021     550       SCSI      64k    340    150     Int
+	
+	Texel America   DM-3024     680                 64k    265    150   Ext/Int
+	
+	Texel America   DM-5024     600                 64k    265    150   Ext/Int
+	
+	Texel America   DM-3120     550       SCSI      64k    700    150     Int
+	
+	Texel America   DM-3110     550       SCSI      64k    700    150     Int
+	
+	Texel America   DM-5011     550       SCSI      64k    340    150   Ext/Int
+	
+	Texel America   DM-5021     550       SCSI      64k    340    150   Ext/Int
+	
+	Texel America   DM-5110     550       SCSI      64k    700    150     Ext
+	
+	Texel America   DM-5120     550       SCSI      64k    700    150     Ext
+	
+	Texel America   DM-7120A    550       SCSI      64k    700    150     Ext
+	               (Portable)
+	
+	Texel America   DM-7120B    550       SCSI      64k    700    150     Ext
+	               (Portable)
+	
+	Todd            TCDR3600    553       SCSI             450    150   Ext/Int
+	Enterprises Inc.
+	
+	Todd            TCDR6000    600       SCSI      64K    390    150     Ext
+	Enterprises Inc.
+	
+	Todd            TCDR6050    600       SCSI      64K    390    150     Ext
+	Enterprises Inc.
+	
+	Toshiba         TXM-3301A1  599-683   SCSI      64K    325    150     Ext
+	                                     SCSI-2
+	
+	Toshiba         XM-3301B1   599-683   SCSI      64K    325    150     Ext
+	                                     SCSI-2
+	
+	Toshiba         TXM-3301E1  599-683   SCSI      64K    325    150     Ext
+	                                     SCSI-2
+	
+	Toshiba         TXM-3301P   599-683   SCSI             325    150     Ext
+	
+	Toshiba         XM-3300     599-683   SCSI             325    150     Int
+	
+	Additional query words: multi multi-media media mm capability ability speed kbmm info capacity specification summary model timline.m20 cdrom
+	
+	======================================================================
+	Keywords          : kb3rdparty kbhw kbmm kbimu 
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

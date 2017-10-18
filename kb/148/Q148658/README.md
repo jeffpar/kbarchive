@@ -1,0 +1,273 @@
+---
+layout: page
+title: "Q148658: How to Load Windows NT MEMORY.DMP File Using I386KD.EXE"
+permalink: kb/148/Q148658/
+---
+
+## Q148658: How to Load Windows NT MEMORY.DMP File Using I386KD.EXE
+
+	Article: Q148658
+	Product(s): Microsoft Windows NT
+	Version(s): 3.50 3.51
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation versions 3.5, 3.51 
+	- Microsoft Windows NT Server versions 3.5, 3.51 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The I386KD.EXE utility is used to load a MEMORY.DMP file created by a computer
+	running Windows NT. This article explains the basics required to load a
+	MEMORY.DMP file using the I386KD.EXE debugging utility.
+	
+	The article contents are organized into the following subsections:
+	
+	- What is a MEMORY.DMP File?
+	
+	- Checking the Integrity of a MEMORY.DMP File
+	
+	- What is I386KD.EXE?
+	
+	- Setting Up for Debugging
+	
+	- Setting Up and Running I386KD.EXE
+	
+	- Using I386KD.EXE with REMOTE.EXE
+	
+	- Common Errors Loading a MEMORY.DMP File
+	
+	- KD Environment variables
+	
+	- KD Options
+	
+	- Additional Information Resources
+	
+	The utilities described in this article are from the Windows NT 3.51 Server
+	compact disc. These utilities will work on a MEMORY.DMP from a computer running
+	Windows NT 3.5. The utilities located on the Windows NT 3.5 Server compact disc
+	will not load a MEMORY.DMP file and are used only for remote sessions.
+	
+	MORE INFORMATION
+	================
+	
+	What is a MEMORY.DMP File?
+	--------------------------
+	
+	When the recovery option is set in the System option dialog box to write
+	debugging information, the physical disk a program called SAVEDUMP.EXE is
+	invoked during a fatal system error which writes the entire contents of memory
+	to the system paging file. When the system is rebooted Windows NT copies the
+	paging file to a file called MEMORY.DMP.
+	
+	Windows NT writes the entire contents of RAM into the paging file. The paging
+	file must be at least as large as the amount of physical memory installed in the
+	system for a MEMORY.DMP file to be created. Also, the paging file must reside on
+	the system partition of the physical disk.
+	
+	The advantage of a MEMORY.DMP file is that it is possible to determine why the
+	system failed without removing the system from service.
+	
+	The disadvantage is that the MEMORY.DMP is an image of memory at the exact time
+	of the failure. Many failures are caused by events that happened prior to the
+	system failure and to identify these problems it may be necessary to use a real
+	time remote debugging session.
+	
+	Checking the Integrity of a MEMORY.DMP File
+	-------------------------------------------
+	
+	The debugging tools rely on the information stored in the MEMORY.DMP file which
+	makes it important to verify the integrity of the file. Windows NT Server ships
+	with the DUMPCHK.EXE utility located in the \SUPPORT\DEBUG\[Machine
+	Type]\Directory. The DUMPCHK.EXE utility will display the stop screen
+	information, processor information, and checks the MEMORY.DMP file for errors.
+	Run the DUMPCHK.EXE file on the MEMORY.DMP as follows:
+	
+	1. Copy the MEMORY.DMP file to the C:\DUMP directory.
+	
+	2. Run the DUMPCHK utility:
+	
+	  [CD Drive]:\SUPPORT\DEBUG\DUMPCHK.EXE C:\DUMP\MEMORY.DMP
+	
+	If any errors are reported, the MEMORY.DMP file is unreliable. A system that
+	consistently produces a corrupt MEMORY.DMP file usually indicates that there are
+	problems with the disk controller or the physical disk.
+	
+	What is I386KD.EXE?
+	-------------------
+	
+	The I386KD.EXE is a command line utility for debugging kernel mode memory dump
+	files. The kernel debugger parses the MEMORY.DMP file and displays various
+	information about the MEMORY.DMP file. It gives you a glimpse into what was
+	loaded on the system and what was happening at the time of the system failure.
+	I386KD is capable of displaying memory usage, a trace of the functions running
+	and queued to run, and lots of valuable clues to the state of the system at the
+	time of the failure. I386KD.EXE is located in the \Support\Debug\I386\ directory
+	of the Windows NT Server compact disc.
+	
+	Located in the same directory are ALPHAKD.EXE, MIPSKD.EXE and PCKD.EXE. These
+	command line utilities are used for kernel debugging the Alpha, MIPS and the
+	PowerPC platforms from an I386 based machine. If you are debugging from a
+	platform other than the I386 then you must use the utilities in the directory
+	specific to the platform you are using to run the debugger from.
+	
+	NOTE: This article discusses the I386KD, but the methods are interchangeable with
+	the methods you should use with the other kernel debuggers.
+	
+	Setting Up for Debugging
+	------------------------
+	
+	The recommended way to run I386KD is to copy all of the files located in the
+	\Support\Debug\I386\ directory to a directory on the hard drive, change to that
+	directory and set up the environment variables for the debugging session.
+	
+	The I386KD relies on environment variables for information necessary to run
+	successfully. I386KD uses many environment variables, the minimal needed to load
+	the MEMORY.DMP file is the _NT_SYMBOL_PATH variable. This variable points to the
+	path of the symbols file that the debugger will use for the debug session. After
+	setting the path, the kernel debugger can be started.
+	
+	I386KD has several command line parameters. The -z parameter specifies the path
+	to the MEMORY.DMP file that will be used for the debugging session. At the
+	command prompt, type:
+	
+	" I386KD -z <path_to_MEMORY.DMP>. " (without the quotation marks)
+	
+	This will invoke I386KD and load the MEMORY.DMP file into the kernel debugger.
+	
+	Setting Up and Running I386KD.EXE
+	---------------------------------
+	
+	1. Set up the Windows NT symbols in C:\SYMBOLS. To properly set up symbols,
+	  please see the following article in the Microsoft Knowledge Base:
+	
+	  ARTICLE-ID: Q148660
+	  TITLE : How to Verify Windows NT Debug Symbols
+	
+	2. From the command prompt make a directory on the C drive named DEBUG:
+	
+	  mkdir c:\debug
+	
+	3. Copy all of the files in the \Support\Debug\I386\ directory to the
+	
+	  C:\DEBUG directory: xcopy [cd drive]:\support\debug\i386 c:\debug
+	
+	4. Set up the symbols path environment variable:
+	
+	  set _nt_symbol_path=d:\symbols
+	
+	5. Copy the MEMORY.DMP to the C:\DUMP directory.
+	
+	6. Run the kernel debugger.
+	
+	  i386kd -z c:\dump\memory.dmp
+	
+	7. Verify the symbols and start debugging by referencing the article mentioned
+	  in step 1 above.
+	
+	Using I386KD with REMOTE.EXE
+	----------------------------
+	
+	The REMOTE.EXE is a command line utility which allows you to run command-line
+	programs on remote computers. REMOTE.EXE uses two parts, the server component
+	and the client component. To use Remote, you must first start the server end on
+	the computer where you are debugging from. This allows other users to connect to
+	your debugging session using the client portion of Remote. This is very useful
+	to Product Support Services Engineers who commonly use the client end of Remote
+	over a Remote Access link to debug a customer's system. The REMOTE.EXE comes
+	with the Resource Kit. For more details and the command syntax of this utility,
+	refer to the Resource Kit online help.
+	
+	Running I386KD with REMOTE
+	
+	1. Copy the REMOTE.EXE command from the Resource Kit directory to the C:\DEBUG
+	  directory.
+	
+	2. Start the remote debugging session:
+	
+	  remote /s "i386kd -z c:\dump\memory.dmp" debug1
+	
+	Common Errors Loading a MEMORY.DMP File
+	---------------------------------------
+	
+	There are many pitfalls on the road to a successful debug session. There are many
+	reasons why a MEMORY.DMP file will not load. Here are a couple common errors and
+	solutions:
+	
+	  Error:
+	
+	     [ syntax ]
+	     Symbol search path is: *** Invalid *** : Verify _NT_SYMBOL_PATH
+	       setting
+	     kd: crash dump initialized [C:\Dump\MEMORY.DMP]
+	     KD: Unable to load debug information for ntoskrnl.exe
+	     could not get the KiProcessorBlock address
+	
+	  Solution:
+	
+	     This error can be generated because of an improper symbols
+	     path. To solve this, check your symbols path and reset your
+	     environment. Possibly the MEMORY.DMP file is corrupted; run
+	     DUMPCHK.EXE on this file to verify its integrity.
+	
+	  Error:
+	
+	     [ syntax ]
+	     Microsoft(R) Windows NT Kernel Debugger
+	     Version 3.51
+	     (C) 1991-1995 Microsoft Corp.
+	     Symbol search path is: C:\SYMBOLS
+	     Remote:Parent exiting. Child(i386kd -z C:\Dump\MEMOR.DMP) dead..
+	
+	  Solution:
+	
+	     This can be due to an improper path to the MEMORY.DMP file.
+	     Check your path and reload the file.
+	
+	KD Environment Variables
+	------------------------
+	
+	_NT_DEBUG_PORT                Serial port used by the debugger
+	_NT_DEBUG_BAUD_RATE           Baud rate used by the debugger
+	_NT_SYMBOL_PATH               Location of the symbols files
+	_NT_ALT_SYMBOL_PATH           Additional symbol path which is searched first
+	_NT_DEBUG_CACHE_SIZE          Debugger cache size
+	_NT_DEBUG_LOG_FILE_OPEN       Specifies a file for logging the debug session
+	_NT_DEBUG_LOG_FILE_APPEND     Appends to a debug log file if one exists
+	
+	KD Options
+	----------
+	
+	-b    - Causes a running kernel to stop as soon as possible.
+	-c    - Causes a resync of a modem connection
+	-n    - Symbols load as soon as the module is loaded
+	-v    - Verbose mode
+	-m    - Causes the debugger enter the terminal mode
+	-x    - The debugger will break on first chance exceptions
+	-y    - Path to the symbols
+	-z    - Path to the crash dump file
+	
+	Additional Information Resources
+	--------------------------------
+	
+	- Windows NT Resource Kit
+	
+	- The Driver Development Kit Online help
+	
+	- The Kernel-Debug How-To series of articles can be found by searching on the
+	  keyword "debugref" here in the Microsoft Knowledge Base.
+	
+	Additional query words: prodnt debugref
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+	Version           : 3.50 3.51
+	
+	=============================================================================
+	

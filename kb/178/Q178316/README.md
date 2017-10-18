@@ -1,0 +1,104 @@
+---
+layout: page
+title: "Q178316: SNA 4.0 Backup Server Logs Numerous 670 Events With 3.0 Primary"
+permalink: kb/178/Q178316/
+---
+
+## Q178316: SNA 4.0 Backup Server Logs Numerous 670 Events With 3.0 Primary
+
+	Article: Q178316
+	Product(s): Microsoft SNA Server
+	Version(s): WINDOWS:4.0,4.0 SP1
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 20-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 4.0, 4.0 SP1 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	After you upgrade an SNA Server backup configuration server to version 4.0 (or
+	4.0 SP1) in a subdomain containing an SNA Server 3.0 primary configuration
+	server, the 4.0 (or 4.0 SP1) server may continuously copy the Com.cfg file from
+	the primary server even though the configuration file has not changed. Each time
+	the configuration file is copied, the following event is logged in the Windows
+	NT application log:
+	
+	  Event ID: 670
+	  Source: SnaBase
+	  Description:
+	  The primary configuration file <filename> was successfully copied to
+	  <servername>
+	
+	Normally, this event should only be logged on a backup server when the SNA Server
+	configuration file is changed.
+	
+	Over time, this may significantly degrade performance on the SNA Server 4.0 (or
+	4.0 SP1) backup server, and under heavy client load, may cause the backup server
+	to "beep" whenever the configuration file is copied.
+	
+	
+	CAUSE
+	=====
+	
+	This problem occurs in a mixed domain with an SNA Server 3.0 primary
+	configuration file. The SNA Server 4.0 (or 4.0 SP1) Snacfg.dll file is not
+	locating the configuration file time properly in the SNA Server 3.0
+	configuration file, which causes the 4.0 (or 4.0 SP1) backup server to copy the
+	file even though it has not changed.
+	
+	
+	RESOLUTION
+	==========
+	
+	A supported fix that corrects this problem is now available from Microsoft, but
+	has not been fully regression-tested and should be applied only to systems
+	experiencing this specific problem. If you are not severely affected by this
+	specific problem, Microsoft recommends that you wait for the next Microsoft SNA
+	Server version 4.0 service pack that contains this fix.
+	
+	To resolve this problem immediately, contact Microsoft Product Support Services
+	to obtain the fix. For a complete list of Microsoft Product Support Services
+	phone numbers and information on support costs, please go to the following
+	address on the World Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	  File Name     Date       Time
+	  ------------------------------
+	  Snacfg.dll   08/12/98  11:32AM
+	
+	NOTE: Due to file dependencies, the most recent fix that contains the above files
+	may also contain additional files.
+	
+	
+	WORKAROUND
+	==========
+	
+	Upgrade the primary SNA Server to version 4.0.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in SNA Server versions 4.0 and 4.0
+	SP1.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400 kbSNAServ400SP1
+	Version           : WINDOWS:4.0,4.0 SP1
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

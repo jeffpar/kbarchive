@@ -1,0 +1,87 @@
+---
+layout: page
+title: "Q245630: Event 560 Failures Appears When File and Object Auditing Enabled"
+permalink: kb/245/Q245630/
+---
+
+## Q245630: Event 560 Failures Appears When File and Object Auditing Enabled
+
+	Article: Q245630
+	Product(s): Microsoft Windows NT
+	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6
+	Operating System(s): 
+	Keyword(s): kberrmsg kbtool
+	Last Modified: 12-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4, 4.0 SP5, 4.0 SP6 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When File and Object auditing is enabled in Windows NT 4.0, you may receive
+	Event 560 failures in the event log.
+	
+	CAUSE
+	=====
+	
+	This behavior can occur when the task manager is polling, or is going out
+	through the computer and reading objects.
+	
+	This error also occurs on computers running Windows 2000. The registry key is set
+	to 1 by enabling the group policy item. Audit access to global system objects
+	and auditing on object access. Disabling this setting the group policy requires
+	a reboot of the machine after the group policy item is updated.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Windows NT 4.0.
+	
+	MORE INFORMATION
+	================
+	
+	The audit failure occurs when the AuditBaseObjects value is enabled in the
+	following registry key:
+	
+	  HKEY_LOCAL_MACHINE\system\CurrentControlSet\Control\Lsa
+	
+	The event log that appears during each polling interval of Task Manager appears
+	like this:
+	
+	  User = cso_admin
+	  Event ID = 560
+	  Source = Security
+	  Type = Failure Audit
+	  Category = Object Access
+	  Description:
+	  Object Open:
+	  Object Server: Security
+	  Object Type: Desktop
+	  Object Name: \Winlogon
+	  New Handle ID: -
+	  Operation ID: {0,57614}
+	  Process ID: 2157796800
+	  Primary User Name: cso_admin
+	  Primary Domain: BNTEMP
+	  Primary Logon ID: (0x0,0x5ED9)
+	  Client User Name: -
+	  Client Domain: -
+	  Client Logon ID: -
+	  Accesses MAX_ALLOWED
+	  Read Objects
+	  Write objects
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kberrmsg kbtool 
+	Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400sp6 kbWinNTS400sp5 kbWinNTS400sp4 kbWinNTS400sp3 kbWinNTS400sp2 kbWinNTS400sp1 kbWinNTS400search kbWinNTS400
+	Version           : :4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6
+	Issue type        : kbprb
+	
+	=============================================================================
+	

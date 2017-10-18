@@ -1,0 +1,85 @@
+---
+layout: page
+title: "Q179456: Extensible Counters in Performance Monitor"
+permalink: kb/179/Q179456/
+---
+
+## Q179456: Extensible Counters in Performance Monitor
+
+	Article: Q179456
+	Product(s): Microsoft Windows NT
+	Version(s): winnt:3.5,3.51,4.0
+	Operating System(s): 
+	Keyword(s): kbtool
+	Last Modified: 09-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+	- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Extensible counters are additions to the base Performance Monitor counters.
+	Programs like SQL and Exchange add extensible counters to Performance Monitor.
+	Custom counters can also be programmatically written and implemented into
+	Performance Monitor. For more information on writing extensible counters, see
+	Windows NT Resource Kit 3.51, Volume 4 chapter 13.
+	
+	
+	MORE INFORMATION
+	================
+	
+	Extensible counter information is stored in both of the following places:
+	
+	- HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\Current Version\Perflib\009
+	
+	- %Systemroot\system32\Perfc009.dat and Perfh009.dat.
+	
+	NOTE: All extensible counters are listed after number 1846 END MARKER.
+	
+	The service that loads the extensible counter stores the information in the
+	following location:
+	
+	HKEY_LOCAL_MACHINE\System\Currentcontrolset\Services\<service name>
+	\Performance
+	
+	  where <service name> is the name of the service that is loading the
+	  extensible counters.
+	
+	Under the Performance key, the significant values are:
+	
+	FIRST COUNTER:
+	LAST COUNTER:
+	LIBRARY:
+	
+	FIRST COUNTER:
+	
+	The entry has a hex value. If we change this hex value to decimal it gives us the
+	location the extensible counters start in the Perfc009.dat file.
+	
+	NOTE: This value only applies to the service that is loading the counter
+	
+	LAST COUNTER:
+	
+	The entry has a hex value. If we change the hex value to decimal it gives the
+	location in the .dat file of the last counter for this service.
+	
+	LIBRARY:
+	
+	This entry indicates which .dll file is being used to load the counters.
+	
+	Additional query words: prodnt perfmon perf objects
+	
+	======================================================================
+	Keywords          : kbtool 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+	Version           : winnt:3.5,3.51,4.0
+	Hardware          : ALPHA x86
+	Issue type        : kbhowto kbinfo
+	
+	=============================================================================
+	

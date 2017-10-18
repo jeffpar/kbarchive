@@ -1,0 +1,74 @@
+---
+layout: page
+title: "Q135917: Cannot Connect to Novell Drive - Account is Locked Out"
+permalink: kb/135/Q135917/
+---
+
+## Q135917: Cannot Connect to Novell Drive - Account is Locked Out
+
+	Article: Q135917
+	Product(s): Microsoft Windows NT
+	Version(s): 3.5 3.51 4.0
+	Operating System(s): 
+	Keyword(s): kbnetwork
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+	- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	Your NetWare account is locked out when you try to establish a connection to a
+	Novell server from File Manager using Client Services for NetWare (CSNW) or
+	Gateway Services for Netware (GSNW).
+	
+	CAUSE
+	=====
+	
+	This problem occurs when the NetWare and Windows NT user accounts have the same
+	username, but different passwords, and the NetWare account is restricted to
+	"Lock out after three (or up to six) bad logons."
+	
+	When you log on, Windows NT tries to establish a connection to the default
+	preferred server using the Windows NT credentials (Windows NT username and
+	Windows NT password). When this fails, you are prompted to select a preferred
+	NetWare server and enter a password. If you enter the correct NetWare password,
+	the connection is established and you can connect to shares through File Manager
+	with no problems.
+	
+	If you choose not to logon to the Novell server by choosing Cancel or by
+	selecting None for the preferred server, Windows NT still tries to connect to
+	the Novell server several times using the Windows NT credentials. Each attempt
+	by Windows NT to establish a connection is counted as a failed logon attempt. If
+	you later attempt to connect to the NetWare drive from File Manager, the attempt
+	fails as the account is locked out.
+	
+	WORKAROUND
+	==========
+	
+	To work around this problem, make sure the Windows NT and NetWare account
+	passwords match.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Windows NT Workstation and
+	Server versions 3.5, 3.51, and 4.0. We are researching this problem and will
+	post new information here in the Microsoft Knowledge Base as it becomes
+	available.
+	
+	Additional query words: prodnt user name
+	
+	======================================================================
+	Keywords          : kbnetwork 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+	Version           : 3.5 3.51 4.0
+	
+	=============================================================================
+	

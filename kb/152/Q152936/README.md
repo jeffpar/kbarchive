@@ -1,0 +1,124 @@
+---
+layout: page
+title: "Q152936: XADM: Admin Doesn't Browse for Exchange Server Computers"
+permalink: kb/152/Q152936/
+---
+
+## Q152936: XADM: Admin Doesn't Browse for Exchange Server Computers
+
+	Article: Q152936
+	Product(s): Microsoft Exchange
+	Version(s): 4.0,5.0,5.5
+	Operating System(s): 
+	Keyword(s): kberrmsg kbnetwork kbusage exc4 exc5 exc55
+	Last Modified: 30-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	You install the Exchange Server Administrator program on a computer that is not
+	running Exchange Services. When you press the Browse button, the following error
+	message may be returned if no Exchange Server name is provided.
+	
+	  Microsoft Exchange Administrator
+	
+	  The list of Microsoft Exchange Server computers is not available because no
+	  Microsoft Exchange Server computer could be located.
+	
+	  Microsoft Exchange Administrator
+	  ID no c10312c8
+	
+	CAUSE
+	=====
+	
+	The most common reason for this error message is that the primary domain
+	controller (PDC) for the domain the computer is a member of is not in the same
+	network segment as an Exchange server.
+	
+	WORKAROUND
+	==========
+	
+	To ensure reliable browsing, do one of the following:
+	
+	- Provide a default server name before pressing the Browse button.
+	
+	  -OR-
+	
+	- Locate an Exchange Server computer on the same network segment as the PDC.
+	
+	MORE INFORMATION
+	================
+	
+	When the Browse button is pressed, Microsoft Exchange Administrator performs the
+	following actions in an effort to return the Exchange Organization hierarchy.
+	
+	- If a server name was specified in the Administrator program's Connect to
+	  Server dialog box before the Browse button was pressed, the Administrator
+	  program attempts to use this server name.
+	
+	- If no server name was specified, the Administrator program tries to find the
+	  Exchange Server computer on the local system.
+	
+	- If it fails to find the Exchange Server computer on the local system, the
+	  Administrator program tries the default server name in the registry (if one
+	  was entered previously through the Administrator program user interface).
+	
+	- The Administrator program then tries the RPC Locator service, requesting that
+	  it "find" an Exchange Server computer.
+	
+	The RPC Locator takes the following actions in an effort to find the requested
+	RPC service (Exchange). The following behavior is for Windows NT 4.x.
+	
+	- The RPC Locator looks in the local RPC Locator cache to see if it has already
+	  successfully performed this lookup for an Exchange Server computer. If it
+	  has, The RPC Locator returns the answer from cache.
+	
+	- If the local computer is a Windows NT Workstation in a Windows NT domain, the
+	  RPC Locator then finds a Windows NT domain controller (DC). It looks for a
+	  PDC first, and then for backup domain controllers (BDCs).
+	
+	  1. If a DC is found, the RPC Locator asks it to find an Exchange Server
+	     (consult step 3 to see how a DC finds Exchange Server computer). If the DC
+	     returns a success, the RPC Locator adds the response to the RPC Locator
+	     cache. The RPC Locator returns the response from the DC (success or
+	     failure) to the requesting application (the Exchange Server Administrator
+	     program).
+	
+	  2. If no DC is found, the RPC Locator issues a local broadcast looking for
+	     any Exchange Server computers. If any responses are returned from the
+	     network, the RPC Locator adds them to the cache and returns the answer to
+	     the requesting application.
+	
+	- If the local computer is a Windows NT Domain Controller, or a Windows NT
+	  Workstation in a Workgroup, the RPC Locator issues a local broadcast looking
+	  for any Exchange Server computers. If any responses are returned from the
+	  network, the RPC Locator adds them to the cache and returns the answer to the
+	  Exchange Server Administrator program (or the Windows NT Workstation if this
+	  request came from a Windows NT Workstation in a Windows NT domain).
+	
+	When the Exchange Server Administrator program fails to find any Exchange Server
+	computers to obtain the Exchange Organization Hierarchy, it is usually because
+	the PDC is located on a network segment where no Exchange servers exist. Because
+	the Locator Service uses a broadcast-based discovery mechanism, routable
+	protocols such at TCP/IP fail to discover Exchange Server computers unless they
+	are on the same network segment. To ensure reliable browsing, a default server
+	name should be provided prior to hitting the browse button, or an Exchange
+	server should be located on the same network segment as the PDC.
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kberrmsg kbnetwork kbusage exc4 exc5 exc55 
+	Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+	Version           : :4.0,5.0,5.5
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

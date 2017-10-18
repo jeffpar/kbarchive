@@ -1,0 +1,124 @@
+---
+layout: page
+title: "Q271308: Err Installing HIS 2000 on Windows 2000 Using Terminal Server"
+permalink: kb/271/Q271308/
+---
+
+## Q271308: Err Installing HIS 2000 on Windows 2000 Using Terminal Server
+
+	Article: Q271308
+	Product(s): Microsoft SNA Server
+	Version(s): ; WINDOWS:2000,2000 SP1
+	Operating System(s): 
+	Keyword(s): _IK kbsna
+	Last Modified: 28-OCT-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Host Integration Server 2000 
+	- Microsoft Windows versions 2000, 2000 SP1 Server 
+	- Microsoft Windows versions 2000, 2000 SP1 Advanced Server 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you run the Host Integration Server 2000 Setup.exe program on a computer
+	that is running Windows 2000 with Terminal Services enabled, you may receive the
+	following error message:
+	
+	  A terminal server must be in install mode before you can install a program.
+	  When you use Add/Remove Programs in the Control Panel to install a program,
+	  this automatically puts a terminal server in install mode.
+	
+	Note: If you install the server or client by running the package installation
+	(for example, HIServer.msi, HIClient.msi, or HIAdmin.msi), this error message
+	does not occur.
+	
+	CAUSE
+	=====
+	
+	This error message can occur under either one of the following circumstances:
+	
+	- On a new installation of Windows 2000, you select Application Server Mode,
+	  which defaults to execute mode during Terminal Services setup.
+	
+	- If you previously upgraded from Microsoft Windows Server 4.0 Terminal Server
+	  Edition, Terminal Services will automatically be put into Application Server
+	  mode, execute mode.
+	
+	When you install HIS 2000 (or any application) on a computer that is running
+	Windows 2000 with Terminal Server enabled, Terminal Server must be in global
+	mode (also known as install mode) before you run Setup. For additional
+	information, click the article number below to view the article in the Microsoft
+	Knowledge Base:
+	
+	  Q248340 Installing and Using Programs in Windows 2000 Terminal Services
+	
+	RESOLUTION
+	==========
+	
+	Use either one of the following methods to resolve this problem:
+	
+	Method 1
+	--------
+	
+	1. On the Start menu, click Run, type "cmd" (without the quotation marks), and
+	  then click OK.
+	
+	2. Type the following command, and then press ENTER:
+	
+	  "change user /install" (without the quotation marks)
+	
+	3. Run Setup.exe again and complete the Host Integration Server 2000
+	  installation.
+	
+	Method 2
+	--------
+	
+	1. Open the Add/Remove Programs application by double-clicking the Add/Remove
+	  Programs icon in Control Panel or by clicking the link from the pop-up error
+	  message.
+	
+	2. Click Add New Programs, and then click CD or Floppy.
+	
+	3. Locate the Setup.exe file from the HIS 2000 CD, and then click Next. The
+	  Microsoft Host Integration Server 2000 menu appears and you can continue with
+	  your installation.
+	
+	NOTE: To determine whether the server is in install mode or execute mode, type
+	the following at a command prompt:
+	
+	  "change user /query" (without the quotation marks)
+	
+	To return to execute mode, type the following at a command prompt:
+	
+	  "change user /execute" (without the quotation marks)
+	
+	NOTE: When a server is restarted, it automatically defaults to execute mode.
+	
+	STATUS
+	======
+	
+	This behavior is by design.
+	
+	MORE INFORMATION
+	================
+	
+	For additional information about installing SNA Server on Windows NT 4.0
+	Terminal Server or Windows 2000 Terminal Server, click the article number below
+	to view the article in the Microsoft Knowledge Base:
+	
+	  Q271283 Install SNA Server or HIS 2000 on Windows Terminal Server
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : _IK kbsna 
+	Technology        : kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbAudDeveloper kbWinAdvServSearch kbHostIntegServ2000 kbWin2000AdvServSP1 kbwin2000ServSP1
+	Version           : :; WINDOWS:2000,2000 SP1
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

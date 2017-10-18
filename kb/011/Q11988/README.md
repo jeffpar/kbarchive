@@ -1,0 +1,105 @@
+---
+layout: page
+title: "Q11988: Windows File I/O vs. C Run-time File I/O"
+permalink: kb/011/Q11988/
+---
+
+## Q11988: Windows File I/O vs. C Run-time File I/O
+
+	Article: Q11988
+	Product(s): Microsoft Windows Software Development Kit
+	Version(s): WINDOWS:3.0,3.1
+	Operating System(s): 
+	Keyword(s): kb16bitonly
+	Last Modified: 06-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The following functions are provided by the Microsoft C Run-time Library (CRT)
+	and the Windows API to create a file:
+	
+	  Return Type    API or Function   Category
+	  --------------------------------------------
+	  HFILE          OpenFile          Windows API
+	  HFILE          _lopen/_lcreat    Windows API
+	  int            _open/_creat      CRT
+	  FILE *         fopen             CRT
+	
+	These return types (HFILE, int, and FILE *) are not compatible, so they can not
+	be used in a function which is expecting the other type. The HFILEs are handles
+	to operating system files (MS-DOS file handles), the ints are CRT file handles,
+	and the FILE *s are pointers to structures which represent a CRT stream.
+	
+	For files opened with OpenFile(), _lopen, and _lcreat, the common file
+	manipuluation routines that you should use are:
+	
+	  _lclose
+	  _llseek
+	  _lread
+	  _lwrite
+	
+	For files opened with _open() and _creat(), the common file manipulation routines
+	that you should use are:
+	
+	  _close
+	  _lseek
+	  _read
+	  _write
+	
+	For files opened with fopen, the common file manipulation routines that you
+	should use are:
+	
+	  fclose
+	  fseek
+	  fread
+	  fwrite
+	
+	For other input and output functions, please check the documentation for
+	information on whether they are intended for use with MS-DOS handles (HFILE),
+	streams (FILE *), or low-level I/O (int).
+	
+	MORE INFORMATION
+	================
+	
+	An application should use the OpenFile() API any time an MS-DOS file handle is
+	required.
+	
+	The open functions do not necessarily open a file in binary raw mode; the
+	application is required to set the binary attribute explicitly. The OpenFile()
+	function automatically performs this step.
+	
+	If the filename parameter specifies only a filename and extension, the open
+	functions search for a matching file only in the current directory.
+	
+	In Windows, the OpenFile() API creates an MS-DOS file handle through which an
+	application can access Windows-specific files. OpenFile() initially opens the
+	file in binary raw mode by performing an MS-DOS Interrupt 21h Function 3Dh. If
+	the lpFileName parameter specifies only a filename and an extension, OpenFile()
+	searches for a matching file in the following directories:
+	
+	- The current directory.
+	
+	- The Windows directory. The GetWindowsDirectory() API returns the path to this
+	  directory.
+	
+	- The Windows system directory . The GetSystemDirectory() API returns the path
+	  to this directory.
+	
+	- The directories listed in the PATH environment variable.
+	
+	Additional query words: 3.00 3.10
+	
+	======================================================================
+	Keywords          : kb16bitonly 
+	Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+	Version           : WINDOWS:3.0,3.1
+	
+	=============================================================================
+	

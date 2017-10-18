@@ -1,0 +1,68 @@
+---
+layout: page
+title: "Q159620: SMS: Setup Only Allows 22 Characters for Service Account"
+permalink: kb/159/Q159620/
+---
+
+## Q159620: SMS: Setup Only Allows 22 Characters for Service Account
+
+	Article: Q159620
+	Product(s): Microsoft Systems Management Server
+	Version(s): winnt:1.0,1.1,1.2
+	Operating System(s): 
+	Keyword(s): kbnetwork kbsetup smssetup
+	Last Modified: 27-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	When you specify the Service Account in Systems Management Server Setup, there
+	is not enough room to define a full <domain>\<username> if the
+	combined account information exceeds 22 characters.
+	
+	When the Systems Management Server Service Account resides in a trusted domain,
+	it is necessary to define both the domain name and user name.
+	
+	The maximum length of a domain name is 15 characters, and the maximum length of a
+	user name is 20 characters. Adding a character for the backslash ("\"), the
+	field should allow a total of 36 characters.
+	
+	WORKAROUND
+	==========
+	
+	To work around this problem, shorten the user name used for the Systems
+	Management Server service account.
+	
+	If a specific account must be used, install Systems Management Server with an
+	account that is short enough to fit within the 22 character limit. After Systems
+	Management Server is installed, do the following:
+	
+	1. Run Setup again.
+	
+	2. Click Operations, then click SMS Service Account.
+	
+	3. Configure Systems Management Server to use the desired account.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Systems Management Server
+	versions 1.0, 1.1, and 1.2. We are researching this problem and will post new
+	information here in the Microsoft Knowledge Base as it becomes available.
+	
+	Additional query words: prodsms userid
+	
+	======================================================================
+	Keywords          : kbnetwork kbsetup smssetup 
+	Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+	Version           : winnt:1.0,1.1,1.2
+	
+	=============================================================================
+	

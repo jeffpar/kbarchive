@@ -1,0 +1,144 @@
+---
+layout: page
+title: "Q248315: PRB: Memo Fields No Longer Stretch with Overflow"
+permalink: kb/248/Q248315/
+---
+
+## Q248315: PRB: Memo Fields No Longer Stretch with Overflow
+
+	Article: Q248315
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:5.0,5.0a,6.0
+	Operating System(s): 
+	Keyword(s): kbprint kbDesigner kbPrinting kbReportWriter kbvfp500 kbvfp500a kbvfp600 kbGrpDSFox kbD
+	Last Modified: 11-SEP-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Memo fields in reports created in the Report Designer do not stretch even though
+	the "Stretch with overflow" checkbox is selected in the Report Expression dialog
+	box for the field.
+	
+	CAUSE
+	=====
+	
+	If the report was made to be a multiple column report and the Print Order was
+	changed from vertical to horizontal and then back, this behavior occurs.
+	
+	RESOLUTION
+	==========
+	
+	If you are comfortable with opening the report .frx file as a table, the
+	following steps can be used to fix the report. Assume the report is named
+	Myreport.frx.
+	
+	1. Make a backup copy of the .frx and .frt files.
+	
+	2. Issue the following commands from the Command window:
+	
+	" USE myreport.frx BROWSE " (without the quotation
+	marks)3. Look for records that have a nine in the objtype field and replace true
+	  values in the objtype field with false:
+	
+	" REPLACE ALL plain WITH .F. FOR objtype=9 " (without the quotation
+	marks)4. Close the Browse window and the .frx file.
+	
+	5. Open the report and try previewing it. The memo fields should now stretch.
+	
+	MORE INFORMATION
+	================
+	
+	Report .frx files are tables (.dbf's) with a different file extension. It is
+	possible to open the .frx file by issuing the following command:
+	
+	" USE myreport.frx " (without the quotation marks)
+	
+	The information in the .frx table can then be viewed by issuing the Browse
+	command. Microsoft does not recommend changing values in the .frx file in this
+	manner unless there is a backup of the .frx and .frt files, and the person
+	making the changes has some idea of the consequences.
+	
+	For more information on the structure of report .frx files, see the following
+	Visual FoxPro report files in the \Filespec subdirectory of the Visual FoxPro
+	directory in both versions 5 and 6:
+	
+	- 60frx1.frx or 50frx1.frx
+	- 60frx2.frx or 50frx2.frx
+	- 26frx1.frx
+	- 26frx2.frx
+	
+	  Example: REPORT form "d:\program files\microsoft visual studio\vfp98\filespec\60frx2.frx" preview
+	
+	When the Print Order of the report is changed, Visual FoxPro places a .T. in the
+	Plain field of the .frx file for objtypes of 9. According to the 60frx1.frx
+	report, the Plain field is not used by Visual FoxPro.
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	The following steps make use of the sample Employee.dbf table that is included
+	with Visual FoxPro. In Visual FoxPro 5.0, this table is located in the
+	\samples\data subdirectory under the Visual FoxPro directory. With Visual FoxPro
+	6.0, this table is found in the C:\Program Files\Microsoft Visual
+	Studio\MSDN\99OCT\1033\SAMPLES\VFP98\data directory.
+	
+	1. Create a new report. Do not use the Report Wizard.
+	
+	2. Add the Employee table to the report's data environment.
+	
+	3. Drag the Notes field from the employee table in the data environment and into
+	  the detail band of the report.
+	
+	4. Reduce the width of the Notes field to about two inches. The width can be
+	  selected by going to the View menu and choosing the Show Position command.
+	  The width along with the other position information shows in the Visual
+	  FoxPro status bar if "set status bar on" is true. Keep the field on the
+	  left-side of the detail band.
+	
+	5. Double-click the field to display the Report Expression dialog box. Select
+	  the Stretch with overflow checkbox and click OK.
+	
+	6. Preview the report. The memo field should be stretching. Close the Preview
+	  window.
+	
+	7. Open the Page Setup dialog box from the File menu. Change the number of
+	  columns to two. Note that the Print Order is vertical
+	   - Data prints down the left-side of the report and then it prints down the
+	     right-side of the report. Click OK.
+	
+	8. Preview the report. The memo field should be stretching. Close the Preview
+	  window.
+	
+	9. Open Page Setup dialog box from the File menu. Change the Print Order to
+	  horizontal. Click OK.
+	
+	10. Preview the report. The memo field should not be stretching this time. Close
+	  the Preview window.
+	
+	11. Go back into Page Setup and change the Print Order back to vertical. Click
+	  OK.
+	
+	12. Preview the report. The memo field should not be stretching this time
+	  either. Close the Preview window.
+	
+	13. Open the Report Expression dialog box for the field. Note that Stretch with
+	  overflow is still selected.
+	
+	Additional query words: kbDSE
+	
+	======================================================================
+	Keywords          : kbprint kbDesigner kbPrinting kbReportWriter kbvfp500 kbvfp500a kbvfp600 kbGrpDSFox kbDSupport 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+	Version           : WINDOWS:5.0,5.0a,6.0
+	Issue type        : kbprb
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

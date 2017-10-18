@@ -1,0 +1,247 @@
+---
+layout: page
+title: "Q165630: ODE97: Files Added to the Disk Images by the ODE Setup Wizard"
+permalink: kb/165/Q165630/
+---
+
+## Q165630: ODE97: Files Added to the Disk Images by the ODE Setup Wizard
+
+	Article: Q165630
+	Product(s): Microsoft Access Distribution Kit
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbsetup
+	Last Modified: 01-JUL-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Office 97 Developer Edition 
+	-------------------------------------------------------------------------------
+	
+	Moderate: Requires basic macro, coding, and interoperability skills.
+	
+	SUMMARY
+	=======
+	
+	When you create a custom application using the Microsoft Office 97 Professional
+	Edition Tools (ODE) Setup Wizard, some files are automatically copied to your
+	disk images. These are considered to be the core files for your custom
+	application. These files enable to run Microsoft Access on another computer
+	without the retail version.
+	
+	Any other files that are added to the disk images are added so that they can
+	accompany all other options you select in the Setup Wizard.
+	
+	For example, if you add the Microsoft Excel ISAM component to your custom
+	application, the Setup Wizard will add the files needed for that component to
+	your disk images.
+	
+	MORE INFORMATION
+	================
+	
+	This article lists the files that are automatically copied to your disk images
+	and the additional files that are added when you add files to the Add Files page
+	or you add components on the Redistributable components page of the Setup
+	Wizard.
+	
+	The following files are added automatically to the disk images created by the
+	Setup Wizard program when you add the Microsoft Access run-time version and
+	Workgroup Administrator components:
+	
+	Acmsetup.ex_
+	acmsetup.hl_
+	admin.IN_
+	expand.exe
+	Msacc8.ol_
+	msacccah.dl_
+	msodeusa.dl_
+	mssetup.dl_
+	msvcrt20.dl_
+	msvcrt40.dl_
+	Selfreg.dl_
+	setup.exe
+	setup.IN_
+	setup.ini
+	setup.LST
+	setup.ST_
+	setup.tdf
+	Stdole2.tl_
+	wrkgadm.ex_
+	Ctl3d32.dl_
+	Dao350.dl_
+	Mfcans32.dl_
+	Misc2.sr_
+	Msjet35.dl_
+	oleaut32.dl_
+	mso97rt.dl_
+	Msaccess.e1_
+	misc.sr_
+	mrt7enu.dl_
+	Msacnv30.ex_
+	Vba332.dl_
+	Winsspi.dl_
+	Dao2535.tl_
+	hlink.sr_
+	mso97rt.d2_
+	msoffice.sr_
+	Msrepl35.dl_
+	Soa800.dl_
+	Msaccess.e2_
+	Msjint35.dl_
+	Vbacv20.dl_
+	wininet.dl_
+	comcat.dl_
+	Hlink.dl_
+	Hlinkprx.dl_
+	Msaccess.sr_
+	Msacnv30.dl_
+	Msaexp30.dl_
+	Msain800.dl_
+	Msjter35.dl_
+	MSRDx35.DL_
+	tahoma.tt_
+	tahomabd.tt_
+	Urlmon.dl_
+	Utility.md_
+	Vba3en.dl_
+	W95fiber.dl_
+	
+	The files that follow are added to the disk images if you add a particular
+	component to the Setup Wizard program.
+	
+	Microsoft Excel ISAM
+	--------------------
+	
+	msexcl35.dl_
+	oleaut32.dl_
+	
+	Paradox ISAM
+	------------
+	
+	Mspdox35.dl_
+	
+	Text and HTML ISAM
+	------------------
+	
+	mstext35.dl_
+	
+	Lotus ISAM
+	----------
+	
+	Msltus35.dl_
+	
+	Xbase ISAM
+	----------
+	
+	msxbse35.dl_
+	
+	Microsoft Graph 97 Run-Time Version Component
+	---------------------------------------------
+	
+	gr8galry.gr_
+	graph8.ol_
+	scp32.dl_
+	gr8409.dl_
+	graph8rt.sr_
+	Grintl32.ol_
+	mrt7enu.dl_
+	oleaut32.dl_
+	Graph.ex_
+	
+	Replication Manager Component
+	-----------------------------
+	
+	mstran35.ex_
+	Hlink.sr_
+	Hlp95en.dl_
+	mfcans32.dl_
+	mfcuia32.dl_
+	msoffice.sr_
+	msremr35.dl_
+	msrpf535.dl_
+	mstrai35.ex_
+	replman.ex_
+	rplman35.cn_
+	rplman35.hl_
+	vbajet32.dl_
+	vbar332.dl_
+	winnet.dl_
+	winsspi.dl_
+	
+	ODBC Support with SQL Server
+	----------------------------
+	
+	12520850.cp_
+	odbcad32.ex_
+	odbccp32.dl_
+	odbcinst.hl_
+	odbcinst.dl_
+	odbckey.in_
+	odbcstf.dl_
+	odbctrac.dl_
+	12520437.cp_
+	Ctl3d32.dl_
+	dbnmpntw.dl_
+	drvssrvr.hl_
+	ds16gt.dl_
+	ds32gt.dl_
+	mscpxl32.dl_
+	odbc16gt.dl_
+	odbc32.dl_
+	odbc32gt.dl_
+	odbccp32.cp_
+	odbccr32.dl_
+	odbcjet.hl_
+	odbcji32.dl_
+	odbcjt32.dl_
+	odbcjtnw.hl_
+	odbctl32.dl_
+	oleaut32.dl_
+	sqlsrv32.dl_
+	
+	Microsoft Exchange and Outlook ISAM
+	-----------------------------------
+	
+	msexch35.dl_
+	
+	ODBCDIRECT Component
+	--------------------
+	
+	msrdo20.dl_
+	rdocurs.dl_
+	
+	NOTE: When you are including the ODBC or ISAM components in your custom
+	application, you will also need to add the driver files for those components to
+	the List Of Files box in the Setup Wizard. For more information about the driver
+	files that you will need to add, please see the following article in the
+	Microsoft Knowledge Base:
+	
+	  Q163106 ODE97: ODBC Desktop Database Drivers Needed by ODE Setup Wizard
+	
+	For information about the files that will be included when you add ActiveX
+	control files to your custom setup program, please see the following article in
+	the Microsoft Knowledge Base:
+	
+	  Q163183 ODE97: Supporting Files for ActiveX Controls in ODE
+	
+	For more information about files that cannot be redistributed in your run-time
+	application, please see the following article in the Microsoft Knowledge Base:
+	
+	  Q169813 OFF97: Not All Files Can Be Distributed Using Setup Wizard
+	
+	REFERENCES
+	==========
+	
+	For more information about the files that are included by the ODE Setup Wizard,
+	search the ODE Help Index for "adding files to Setup Wizard."
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbsetup 
+	Technology        : kbOfficeSearch kbAudDeveloper kbOffice97Search kbOffice97 kbOffice97DevSearch
+	Hardware          : x86
+	
+	=============================================================================
+	

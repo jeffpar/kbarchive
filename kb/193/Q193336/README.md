@@ -1,0 +1,94 @@
+---
+layout: page
+title: "Q193336: HOWTO: Install Crystal Reports for Use in Visual Basic 6.0"
+permalink: kb/193/Q193336/
+---
+
+## Q193336: HOWTO: Install Crystal Reports for Use in Visual Basic 6.0
+
+	Article: Q193336
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): WINDOWS:6.0
+	Operating System(s): 
+	Keyword(s): kbGrpDSVB kbFAQ kbVBp600FAQ
+	Last Modified: 18-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+	- Microsoft Visual Studio 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	
+	Crystal Reports is not part of the Visual Basic or Visual Studio setup. However,
+	you can install it from the Visual Basic and Visual Studio CDs.
+	
+	NOTE: Starting with Visual Basic 6.0, Microsoft has included a new report
+	generator called the Microsoft Data Report Designer. You may use either the new
+	Report Designer or Crystal Reports. For more information about the new Report
+	Designer, please search the MSDN Library included within Visual Studio 6.0 on
+	the phrase "Microsoft Data Report Designer."
+	
+	MORE INFORMATION
+	================
+	
+	To install Crystal Reports, run Crystl32.exe. The location of Crystl32.exe
+	depends on which version of Visual Basic or Visual Studio you own. In all cases,
+	it is in the following relative path:
+	
+	  \Common\Tools\VB\CrysRept\Crystl32.exe
+	
+	Use the following table to determine which CD to use:
+	
+	  Product                        Disk
+	  -----------------------------------
+	   Visual Basic Professional      1
+	   Visual Basic Enterprise        1
+	   Visual Studio Professional     2
+	   Visual Studio Enterprise       3
+	
+	NOTES:
+	
+	- The Learning Edition does not include Crystal Reports.
+	
+	- The version of Crystal Reports is 4.6.1.0, which is the same version that
+	  comes with Visual Basic 5.0.
+	
+	- Where the Help file (Crw.hlp) refers to Visual Basic 5.0, you can assume the
+	  same applies to Visual Basic 6.0.
+	
+	- The setup program (Crystl32.exe) does not add a shortcut to the Programs menu
+	  in Windows. To start Crystal Reports, run Crw.exe in the installed folder or
+	  click Report Designer on the Add-Ins menu in Visual Basic.
+	
+	- Microsoft supports installation of the version of Crystal Reports that ships
+	  with Visual Basic. For usage issues, please contact Seagate Software. For
+	  additional information, please see the following article in the Microsoft
+	  Knowledge Base:
+	
+	  Q100368 : HOWTO: Get Help with Crystal Reports - International and U.S.
+	
+	REFERENCES
+	==========
+	
+	MSDN Library Visual Studio 6.0: Visual Basic Documentation; What's New in Visual
+	Basic 6.0; What's New in Data Access; Data Report
+	
+	"Crystal Reports for Visual Basic 6.0 Readme" file (ReadMe.txt) located in the
+	\Common\Tools\VB\CrysRept folder
+	
+	Additional query words: kbdss kbDSupport kbVBp kbVBp600 kbSetup kb3rdparty kbReportWriter kbVS600 kbvbp600faq
+	
+	======================================================================
+	Keywords          : kbGrpDSVB kbFAQ kbVBp600FAQ 
+	Technology        : kbVSsearch kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600 kbVS600 kbVS600Search
+	Version           : WINDOWS:6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

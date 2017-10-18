@@ -1,0 +1,74 @@
+---
+layout: page
+title: "Q107432: PRB: Inline Assembly C++ Function May Need Return Statement"
+permalink: kb/107/Q107432/
+---
+
+## Q107432: PRB: Inline Assembly C++ Function May Need Return Statement
+
+	Article: Q107432
+	Product(s): Microsoft C Compiler
+	Version(s): MS-DOS:7.0; :1.0,1.5,2.0
+	Operating System(s): 
+	Keyword(s): kbprb
+	Last Modified: 26-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft C/C++ for MS-DOS, version 7.0 
+	- Microsoft Visual C++, versions 1.0, 1.5 
+	- Microsoft Visual C++, version 2.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	
+	C++ functions containing inline assembly routines that store the return value in
+	the AX register may need a return statement added to the function. If the
+	function does not have a return statement, the following error is generated:
+	
+	  C2561: 'function name' function must return a value
+	
+	RESOLUTION
+	==========
+	
+	To resolve this error, create a temporary variable and move the AX register to
+	this variable for the return statement. This will work around the C++
+	type-checking syntax. If you are using C++ version 8.0 that ships with Visual
+	C++ for Windows NT, then the EAX register must be used instead.
+	
+	Sample Code
+	-----------
+	
+	  /* Compile options needed: none
+	  */ 
+	
+	  int func(void)
+	  {
+	    //int a;         //Remove this comment to eliminate the error.
+	    __asm
+	    {
+	      mov ax, 02h
+	      ;mov a, ax         //Remove this comment to eliminate the error.
+	    }
+	    //return a;         //Remove this comment to eliminate the error.
+	  }
+	
+	  void main(void)
+	  {
+	    int a;
+	    a = func();
+	  }
+	
+	Additional query words: 7.00 8.00 8.00c 9.00 1.00 1.50 2.00
+	
+	======================================================================
+	Keywords          : kbprb 
+	Technology        : kbVCsearch kbAudDeveloper kbZNotKeyword8 kbvc150 kbvc100 kbZNotKeyword3 kbCVC700DOS kbVC200
+	Version           : MS-DOS:7.0; :1.0,1.5,2.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

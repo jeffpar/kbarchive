@@ -1,0 +1,153 @@
+---
+layout: page
+title: "Q194029: INFO: How to Specify the Number of PPTP Ports During Unattended"
+permalink: kb/194/Q194029/
+---
+
+## Q194029: INFO: How to Specify the Number of PPTP Ports During Unattended
+
+	Article: Q194029
+	Product(s): Microsoft Windows NT
+	Version(s): winnt:4.0
+	Operating System(s): 
+	Keyword(s): kbnetwork kbOPK kbSBK
+	Last Modified: 11-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 4.0 
+	- Microsoft Windows NT Workstation version 4.0 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about editing the registry.
+	Before you edit the registry, make sure you understand how to restore it if
+	a problem occurs. For information about how to do this, view the "Restoring
+	the Registry" Help topic in Regedit.exe or the "Restoring a Registry Key"
+	Help topic in Regedt32.exe.
+	
+	SUMMARY
+	=======
+	
+	When you perform an unattended installation of Windows NT 4.0 and install the
+	Point to Point Tunneling Protocol (PPTP), you have no means of specifying the
+	number of PPTP ports in the Unattend.txt file. This article will provide a
+	detailed explanation of how you can set the number of PPTP ports during an
+	unattended installation.
+	
+	MORE INFORMATION
+	================
+	
+	To set the number of PPTP ports during an unattended installation, follow these
+	steps:
+	
+	1. Copy all the Windows NT system files needed, usually the I386 directory and
+	  all its subdirectories, from the compact disc to the distribution server,
+	  which is a network share devoted to network client setup. The directory name
+	  of this network share is usually also I386.
+	
+	2. Create the Unattend.txt file with any parameters that you feel are necessary
+	  including RASPPTP and RAS. In your Unattend.txt file, make sure Oempreinstall
+	  is set to "Yes".
+	
+	  For additional information, please see the following articles in the Microsoft
+	  Knowledge Base:
+	
+	  Q155197 Unattended Setup Parameters for Unattend.txt File
+	
+	  Q166149 RAS Reserves DHCP Addresses for Dial-Out Only Clients
+	
+	3. Create a directory named $oem$ under the I386 directory (the directory of the
+	  network share on the distribution server).
+	
+	4. In the $oem$ directory, create a text file named Cmdlines.txt that contains
+	  the following two lines:
+	
+	        [Commands]
+	        ".\regedit /s pptp.reg"
+	
+	5. Also in the $oem$ directory, create a text file named Pptp.reg that contains
+	  the following four lines:
+	
+	        REGEDIT4
+	
+	        [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RASPPTPE
+	         \Parameters\Configuration]
+	        "NumberLineDevices"=dword:00000007
+	
+	  NOTE: The second line is blank, but it must be present; line 3 above wraps to
+	  the next line for readability, but it should be all on one line in the
+	  Pptp.reg file, with no spaces between RASPPTPE and \Parameters (that is,
+	  ...\RASPPTPE\Parameters\Configuration]). Also please note, the value
+	  "00000007" is the number of ports you want to install. Please change this
+	  value to your preferred number of PPTP ports.
+	
+	  WARNING: Using Registry Editor incorrectly can cause serious problems that may
+	  require you to reinstall your operating system. Microsoft cannot guarantee
+	  that problems resulting from the incorrect use of Registry Editor can be
+	  solved. Use Registry Editor at your own risk.
+	
+	  For information about how to edit the registry, view the "Changing Keys And
+	  Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+	  Information in the Registry" and "Edit Registry Data" Help topics in
+	  Regedt32.exe. Note that you should back up the registry before you edit it.
+	  If you are running Windows NT, you should also update your Emergency Repair
+	  Disk (ERD).
+	
+	6. Place a copy of the Regedit.exe file (from the I386 directory) in the $oem$
+	  directory. At this point, there should be three files in the $oem$ directory:
+	  Cmdlines.txt, Pptp.reg, and Regedit.exe.
+	
+	7. On your distribution share, expand the Oemnxppp.in_ file by typing the
+	  following at the command prompt:
+	
+	  Expand Oemnxppp.in_ Oemnxppp.inf
+	
+	8. Rename the compressed Oemnxppp.in_ file to Oemnxppp.sav.
+	
+	  This step is required because this not only offers a backup copy of the file
+	  but the setup program will always use the compressed version of the file if
+	  both are present.
+	
+	9. Use any text editor to modify the following section of the .inf file:
+	
+	   - Before modifications are made:
+	
+	           Set NumberOfLineDevices = *($(Result), 1)
+	           FreeLibrary $(RASPPTPDLGHANDLE)
+	           ifstr(i) $(NumberOfLineDevices) == "EXITSETUP"
+	
+	   - After modification are made:
+	
+	           Set NumberOfLineDevices = *($(Result), 1)
+	           ;**************Modifications begin here**************
+	           Ifstr(i) $(!STF_GUI_UNATTENDED) == YES
+	               Set NumberOfLineDevices = 7
+	           endif
+	           ;**************Modifications end here****************
+	           FreeLibrary $(RASPPTPDLGHANDLE)
+	           ifstr(i) $(NumberOfLineDevices) == "EXITSETUP"
+	
+	  NOTE: The value "NumberOfLineDevices = 7" is the number of ports you wish to
+	  install. Please change this to your desired value. This should match the
+	  setting above.
+	
+	10. Save the file and begin your unattended setup.
+	
+	  NOTE: The steps above will allow you to specify the number of PPTP ports to
+	  add to Windows NT 4.0. However, this does not allow you to add these ports
+	  as RAS-capable devices during unattended setup. Currently, the only way to
+	  perform that action is to manually add the PPTP ports after the unattended
+	  installation has completed.
+	
+	Additional query words: unattend ras raspptp Unattended Setup
+	
+	======================================================================
+	Keywords          : kbnetwork kbOPK kbSBK 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+	Version           : winnt:4.0
+	Hardware          : ALPHA x86
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

@@ -1,0 +1,88 @@
+---
+layout: page
+title: "Q192462: SMS: Client Stops Responding Using DisableFailedServerDialog"
+permalink: kb/192/Q192462/
+---
+
+## Q192462: SMS: Client Stops Responding Using DisableFailedServerDialog
+
+	Article: Q192462
+	Product(s): Microsoft Systems Management Server
+	Version(s): winnt:1.2
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 04-SEP-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server version 1.2 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If a mobile computer is disconnected from the network during the SMSRUN server
+	selection process, the connection timeout, in conjunction with the number of
+	servers in the [Servers] section, may give the appearance that the computer has
+	stopped responding. However, control will be returned to the user after SMSRUN16
+	has completed its server selection process.
+	
+	New versions of SMSRUN32 and SMSRUN16 support a new Sms.ini entry,
+	MaxLogonServerSearch. This entry allows the user to limit the number of logon
+	servers the Systems Management Server client will attempt to contact.
+	
+	CAUSE
+	=====
+	
+	A dialog box was added to Systems Management Server 1.2 Service Pack 3 that
+	allows the user to stop the search for a logon server which returns control of
+	the system to the user more quickly.
+	
+	In Systems Management Server 1.2 Service Pack 4, support was added for the
+	[Local] section entry DisableFailedServerDialog in Sms.ini, which allows the
+	user to disable the dialog box.
+	
+	When DisableFailedServerDialog is set to true, the dialog box is suppressed.
+	However, a delay would be experienced as the SMSRUN16 or SMSRUN32 server
+	selection process continues. This delay may give the appearance that the
+	computer has stopped responding.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft Systems Management
+	Server version 1.2.
+	
+	
+	A supported fix is now available, but has not been fully regression- tested and
+	should be applied only to systems experiencing this specific problem. Unless you
+	are severely impacted by this specific problem, Microsoft recommends that you
+	wait for the next Service Pack that contains this fix. Contact Microsoft
+	Technical Support for more information.
+	
+	
+	MORE INFORMATION
+	================
+	
+	Using MaxLogonServerSearch with the DisableFailedServerDialog set to true,
+	allows a mobile user to start up the computer without the "Logon Server Not
+	Found" message and without the delay that may occur when several logon servers
+	are listed in the Sms.ini file. The following is an example of a [Local] section
+	that includes these settings:
+	
+	     [Local]
+	     DisableFailedServerDialog=true
+	     MaxLogonServerSearch=1
+	
+	Additional query words: prodsms sp3 sp4 sp5 hang hung
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbSMSSearch kbSMS120
+	Version           : winnt:1.2
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

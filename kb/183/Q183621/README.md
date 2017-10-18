@@ -1,0 +1,142 @@
+---
+layout: page
+title: "Q183621: HOWTO: Administer SQL Server Security via RDO and ADO"
+permalink: kb/183/Q183621/
+---
+
+## Q183621: HOWTO: Administer SQL Server Security via RDO and ADO
+
+	Article: Q183621
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 1.5,2.0,2.1 SP2,2.5,2.6,5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbATM kbRDO kbVBp kbVBp500 kbVBp600 kbGrpDSVBDB kbGrpDSMDAC kbDSupport kbMDAC250 kbMDAC
+	Last Modified: 22-OCT-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+	- ActiveX Data Objects (ADO), versions 1.5, 2.0, 2.1 SP2, 2.5, 2.6 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes how to use RDO and ADO via Visual Basic to do basic SQL
+	Server security administration for a SQL Server that is configured with standard
+	security (as opposed to the integrated or mixed security models). Specifically,
+	this article demonstrates how to add a login to a SQL Server, how to add a user
+	to a SQL Server database, how to add a group to a SQL Server database, and how
+	to add a user to a group. Other security-related functions (such as dropping a
+	user from a database and dropping a login from an SQL Server) can be
+	accomplished by applying similar techniques to those discussed below.
+	
+	It is assumed that the person connecting to SQL Server to manipulate the security
+	settings is either the system administrator (SA) or has a login that is aliased
+	to the SA.
+	
+	MORE INFORMATION
+	================
+	
+	The following code samples demonstrate how to connect to a SQL Server, how to
+	add a login to the SQL Server, how to assign that login to the Pubs database as
+	a user, how to add a group to the Pubs database, and, finally, how to add the
+	user to that group. This is demonstrated using both RDO and ADO data access
+	methods. To run this code you will need to create a new Visual Basic Standard
+	EXE project and add a reference to either Microsoft Remote Data Object 2.0 (RDO)
+	or Microsoft ActiveX Data Objects (ADO). Also, to make this code work, you must
+	substitute the name of your server, a userID, and a password into the ConString
+	string.
+	
+	Note the use of the statement "On Error Resume Next." This is included to prevent
+	an error from occurring if you attempt to create duplicate logins, users, or
+	groups.
+	
+	Using RDO
+	---------
+	
+	     Dim Con as rdoConnection
+	     Dim ConString As String
+	
+	     On Error Resume Next
+	
+	     'establish the connection to the database
+	
+	     ConString = "UID=<your userID>;PWD=<your password>;DATABASE=Pubs;"
+	     ConString = ConString & "SERVER=<your server name>;"
+	     ConString = ConString & "DRIVER={SQL Server};DSN='';"
+	
+	     Set Con = rdoEnvironments(0).OpenConnection(dsname:="", _
+	        prompt:=rdDriverNoPrompt, connect:=ConString)
+	
+	     'make the Master database the current database
+	
+	     Con.Execute "use Master"
+	
+	     'add a login called "TestLogin", which has a password equal to
+	     '"password"; Pubs is specified as the default database for this login
+	
+	     Con.Execute "exec sp_addlogin TestLogin, password, Pubs"
+	
+	     'make Pubs the current database and add TestLogin as a user to Pubs
+	     'by default, TestLogin will be added to the Public group
+	
+	     Con.Execute "use Pubs"
+	     Con.Execute "exec sp_adduser TestLogin"
+	
+	     'now add a group called TestGroup to Pubs and add the TestLogin user to
+	     'the TestGroup group
+	
+	     Con.Execute "exec sp_addgroup TestGroup"
+	     Con.Execute "exec sp_changegroup TestGroup, TestLogin"
+	
+	     Con.Close
+	
+	Using ADO
+	---------
+	
+	     Dim Con As New ADODB.Connection
+	     Dim ConString As String
+	
+	     On Error Resume Next
+	
+	     ConString = "UID=<your userID>;PWD=<your password>;DATABASE=Pubs;"
+	     ConString = ConString & "SERVER=<your server name>;"
+	     ConString = ConString & "DRIVER={SQL Server};DSN='';"
+	
+	     With Con
+	        .Open ConString
+	        .Execute "use Master"
+	
+	        'add a login called "TestLogin," which has a password equal to
+	        '"password"; Pubs is specified as the default database for this login
+	
+	        .Execute "exec sp_addlogin TestLogin, password, Pubs"
+	
+	        'make Pubs the current database and add TestLogin as a user to Pubs
+	        'by default, TestLogin will be added to the Public group
+	
+	        .Execute "use Pubs"
+	        .Execute "exec sp_adduser TestLogin"
+	
+	        'now add a group called TestGroup to Pubs and add the TestLogin user
+	        'to the TestGroup group
+	
+	        .Execute "exec sp_addgroup TestGroup"
+	        .Execute "exec sp_changegroup TestGroup, TestLogin"
+	
+	        .close
+	
+	     End With
+	
+	Additional query words: SQLserver
+	
+	======================================================================
+	Keywords          : kbATM kbRDO kbVBp kbVBp500 kbVBp600 kbGrpDSVBDB kbGrpDSMDAC kbDSupport kbMDAC250 kbMDAC260 
+	Technology        : kbVBSearch kbAudDeveloper kbADOsearch kbADO150 kbADO200 kbADO210sp2 kbADO250 kbADO260 kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600
+	Version           : :1.5,2.0,2.1 SP2,2.5,2.6,5.0,6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

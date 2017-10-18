@@ -1,0 +1,151 @@
+---
+layout: page
+title: "Q192075: HOWTO: Making Coolbar Interface Using Toolbar ActiveX Control"
+permalink: kb/192/Q192075/
+---
+
+## Q192075: HOWTO: Making Coolbar Interface Using Toolbar ActiveX Control
+
+	Article: Q192075
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:5.0,5.0a,6.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 29-JUL-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes how to create a Coolbar like interface using the
+	Microsoft Toolbar Version 6.0 ActiveX control.
+	
+	MORE INFORMATION
+	================
+	
+	The Coolbar interface is an interface where the buttons highlight only when the
+	user moves the mouse over them, like the behavior in Internet Explorer version
+	4.0.
+	
+	The main property to make a Coolbar like button is the Style property of the
+	Toolbar active control. The default value of the Style property is "0 [ASCII
+	150] Standard" button. Changing this property to "1 [ASCII 150] Transparent"
+	provides Coolbar like button behavior.
+	
+	Example
+	-------
+	
+	1. Create a program file and place the following code in the file:
+	
+	  
+	
+	        PUBLIC x
+	        x=CREATEOBJECT("myform")
+	        x.SHOW
+	
+	        **************************************************
+	        * myform - Class Definition
+	        **************************************************
+	        DEFINE CLASS myform as Form
+	           ADD OBJECT myclass1 AS myclass
+	           ADD OBJECT check1 AS checkbox WITH;
+	              Top = 150,;
+	              Left = 50,;
+	              Height = 50,;
+	              Caption = "CoolBar"
+	
+	           PROCEDURE check1.Click
+	              DO CASE
+	                 CASE This.value = 0
+	                    && Changing the Toolbar to look like Coolbar.
+	                    Thisform.myclass1.OBJECT.Style = 0
+	                 CASE This.value = 1
+	                    && Changeing the Toolbar to Standard Toolbar.
+	                    Thisform.myclass1.OBJECT.Style = 1
+	              ENDCASE
+	           ENDPROC
+	
+	           PROCEDURE myclass1.ButtonClick
+	           *** ActiveX Control Event ***
+	           LPARAMETERS button
+	              DO CASE
+	                 CASE Button.key = "One"
+	                    WAIT WINDOW "Test1"
+	                 CASE Button.key = "Two"
+	                    WAIT WINDOW "Test2"
+	                 CASE Button.key = "Three"
+	                    WAIT WINDOW "Test3"
+	              ENDCASE
+	           ENDPROC
+	
+	           PROCEDURE myclass1.ButtonMenuClick
+	           *** ActiveX Control Event ***
+	           LPARAMETERS buttonmenu
+	              DO CASE
+	                 CASE buttonmenu.key = "One"
+	                    WAIT WINDOW "SubOne"
+	                 CASE buttonmenu.key = "Two"
+	                    WAIT WINDOW "SubTwo"
+	              ENDCASE
+	           ENDPROC
+	
+	        ENDDEFINE
+	
+	        *-- EndDefine: myform
+	        **************************************************
+	
+	        **************************************************
+	        * myclass - Class Definition
+	        **************************************************
+	        DEFINE CLASS myclass AS olecontrol
+	
+	           #DEFINE tbrDEFAULT 0      && (Defaul) Button
+	           #DEFINE tbrCHECK   1      && CheckBox
+	           #DEFINE tbrBUTTONGROUP 2  && ButtonGroup
+	           #DEFINE tbrSEPARATOR 3    && Separator
+	           #DEFINE tbrPLACEHOLDER 4  && Placeholder
+	           #DEFINE tbrDROPDOWN 5     && MenuButton DropDown
+	
+	           Top = 0
+	           Left = 0
+	           Height = 38
+	           Width = 375
+	           Align = 1
+	           Name = "Olecontrol1"
+	           OleClass = "MSComCtlLib.Toolbar.2"
+	
+	           PROCEDURE Init
+	             This.Buttons.Add(,"One","Test1",,)
+	             This.Buttons.Add(,"Two","Test2",,)
+	             This.Buttons.Add(,"Spr",,tbrSEPARATOR,)
+	             This.Buttons.Add(,"Three","Test3",tbrDROPDOWN,)
+	             This.Buttons(4).ButtonMenus.Add(1,"One","SubOne")
+	             This.Buttons(4).ButtonMenus.Add(2,"Two","SubTwo")
+	           ENDPROC
+	
+	        ENDDEFINE
+	
+	        *-- EndDefine: myclass
+	        **************************************************
+	
+	REFERENCES
+	==========
+	
+	Refer to Toolbar Active Control help in Cmctl198.chm for additional information
+	about Toolbar Active Control.
+	
+	Additional query words: kbVFp500a kbVFp500 kbVFp600 kbActiveX
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+	Version           : WINDOWS:5.0,5.0a,6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

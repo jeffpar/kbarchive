@@ -1,0 +1,91 @@
+---
+layout: page
+title: "Q183929: XCLN: Err Msg: Not a full Exchange system. Cannot continue..."
+permalink: kb/183/Q183929/
+---
+
+## Q183929: XCLN: Err Msg: Not a full Exchange system. Cannot continue...
+
+	Article: Q183929
+	Product(s): Microsoft Exchange
+	Version(s): 4.0,4.0 SP3,5.0,5.5
+	Operating System(s): 
+	Keyword(s): kbusage
+	Last Modified: 22-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Windows 95/98 client, versions 4.0, 5.0 
+	- Microsoft Exchange Windows NT client, versions 4.0, 5.0 
+	- Microsoft Exchange Server, versions 4.0 SP3, 5.5 
+	- Microsoft Exchange, version 4.0 
+	- Microsoft Exchange Server, version 5.0 Service Packs 1, 2 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you try to apply any of the above service packs, the following error
+	message appears:
+	
+	  Not a full Exchange system. Cannot continue with update.
+	
+	CAUSE
+	=====
+	
+	The Microsoft Exchange Windows 95 or Windows NT client is actually the installed
+	Windows Messaging client rather than the retail version of the Exchange client.
+	
+	WORKAROUND
+	==========
+	
+	To work around this problem, remove the Exchange Windows 95 or Windows NT
+	Messaging client completely and install the retail version of the Microsoft
+	Exchange client by following the steps below:
+	
+	NOTE: These steps are for installing Service Pack 3 on the Microsoft Exchange
+	client version 4.0. You must make adjustments for installing other versions and
+	service packs.
+	
+	1. Go to Add/Remove Programs in Control Panel.
+	
+	2. Select the Windows 95 Setup tab or the Windows NT Setup tab.
+	
+	3. Select the Windows Messaging option in the Component List.
+	
+	4. Click the Details button.
+	
+	5. Clear the Windows Messaging option check box.
+	
+	6. Click OK to confirm your selection.
+	
+	7. Click OK on the Add/Remove Programs Property page to finalize the changes.
+	
+	8. Install the retail version of the Exchange client.
+	
+	9. Install Service Pack 2, following instructions in the Exchange Service Pack
+	  Readme.txt file.
+	
+	10. Install Service Pack 3, following instructions in the Exchange Service Pack
+	  Readme.txt file.
+	
+	MORE INFORMATION
+	================
+	
+	If the Exchange Windows 95 or Windows NT client does not completely uninstall,
+	see the following Microsoft Knowledge Base article:
+	
+	  Q165961 How to Fully Remove the Exchange Windows 95 and Exchange Windows NT
+	  Client
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbusage 
+	Technology        : kbZNotKeyword8 kbZNotKeyword6 kbExchangeSearch kbExchange550 kbExchange400 kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange500SP1 kbExchange400SP3 kbExchange400NT kbExchange500NT kbExchange400Win95 kbExchange500Win95
+	Version           : :4.0,4.0 SP3,5.0,5.5
+	Issue type        : kbprb
+	
+	=============================================================================
+	

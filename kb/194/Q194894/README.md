@@ -1,0 +1,120 @@
+---
+layout: page
+title: "Q194894: PRB: Date Comparison Can fail Using Arithmetic Operators"
+permalink: kb/194/Q194894/
+---
+
+## Q194894: PRB: Date Comparison Can fail Using Arithmetic Operators
+
+	Article: Q194894
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): WINDOWS:4.0,5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbcode kbDateTime KbVBA kbVBp400 kbVBp500 kbVBp600 kbGrpDSVB kbCodeSam
+	Last Modified: 24-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic for Applications version 5.0 
+	- Microsoft Visual Basic Standard Edition for Windows, version 4.0 
+	- Microsoft Visual Basic Professional Edition for Windows, version 4.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Comparing two apparently identical dates using the standard comparison operators
+	produces anomalous results.
+	
+	CAUSE
+	=====
+	
+	The Visual Basic Date data type is stored internally as a Double (64 bit
+	floating point). Performing operations on Date variables is subject to the same
+	rounding problems as any other floating point value. This is true even if most
+	of the intrinsic functions, such as DateAdd, are used.
+	
+	RESOLUTION
+	==========
+	
+	1. Use the DateDiff intrinsic function to compare date and time values. DateDiff
+	  rounds the input values to the specified tolerance, eliminating floating
+	  point errors.
+	
+	2. Take the difference between two variables of type Date and compare the
+	  absolute value of the result to a tolerance value such as 10E-11. If the
+	  difference is less than the tolerance, the values may be considered
+	  identical.
+	
+	STATUS
+	======
+	
+	This behavior is by design.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Create a Standard EXE project in Visual Basic. Form1 is created by default.
+	
+	2. Add the following code to the General Declarations section of Form1:
+	
+	        Option Explicit
+	
+	        Private Sub Form_Load()
+	           Dim Date1 As Date
+	           Dim Date2 As Date
+	           Dim Date3 As Date
+	           Dim Date4 As Date
+	           Me.Width = 6500
+	           Me.Height = 3000
+	           Me.Show
+	           Date1 = #10/21/1998 8:00:00 AM#
+	           Date2 = #10/21/1998 8:20:00 AM#
+	           Date3 = DateAdd("n", 20#, Date1)
+	           Date4 = Date1 + TimeSerial(0, 20, 0)
+	           Print "The results are visually identical..."
+	           Print
+	           Print "Date2 = "; Date2
+	           Print "Date3 = "; Date3
+	           Print "Date4 = "; Date4
+	           Print
+	           Print "but the actual values are not"
+	           Print
+	           Print Tab(20), "=", "DateDiff", "Actual Difference"
+	           Print "Date2 = Date3?", Date2 = Date3,
+	           Print DateDiff("s", Date2, Date3), Date2 - Date3
+	           Print "Date2 = Date4?", Date2 = Date4,
+	           Print DateDiff("s", Date2, Date4), Date2 - Date4
+	           Print "Date3 = Date4?", Date3 = Date4,
+	           Print DateDiff("s", Date3, Date4), Date3 - Date4
+	        End Sub
+	
+	3. Run the application and examine the results on the form.
+	
+	REFERENCES
+	==========
+	
+	For additional information, please see the following articles in the Microsoft
+	Knowledge Base:
+	
+	  Q130514 : ACC: Storing, Calculating, and Comparing Date/Time Data
+	
+	
+	  Q42980 : (Complete) Tutorial to Understand IEEE Floating-Point Errors
+	
+	======================================================================
+	Keywords          : kbcode kbDateTime KbVBA kbVBp400 kbVBp500 kbVBp600 kbGrpDSVB kbCodeSam 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVB500 kbVB600 kbVB400Search kbVB400 kbVBASearch kbZNotKeyword3
+	Version           : WINDOWS:4.0,5.0,6.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

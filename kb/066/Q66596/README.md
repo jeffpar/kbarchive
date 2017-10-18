@@ -1,0 +1,127 @@
+---
+layout: page
+title: "Q66596: Installing MS-DOS with Incorrect Disks for Drive A"
+permalink: kb/066/Q66596/
+---
+
+## Q66596: Installing MS-DOS with Incorrect Disks for Drive A
+
+	Article: Q66596
+	Product(s): Microsoft Disk Operating System
+	Version(s): MS-DOS:3.x,4.x,5.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 17-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft MS-DOS operating system versions 3.1, 3.2, 3.21, 3.3, 3.3a, 4.0, 4.01, 5.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	If you have the Microsoft MS-DOS 5 Upgrade in the proper disk format for drive A
+	or B, you can install it with no special steps. For more information, query on
+	the following words in the Microsoft Knowledge Base:
+	
+	  " which and drives and getting and started " (without the quotation marks)
+	
+	If the MS-DOS 5 Upgrade is in the proper format for a floppy drive on your
+	system, but not drive A or B, you may be able to make usable copies of the
+	disks. For more information, query on the following words in the Microsoft
+	Knowledge Base:
+	
+	  " copy and different and size and msdos and upgrade " (without the quotation
+	  marks)
+	
+	If you have Microsoft MS-DOS (not the Upgrade), it is recommended that you obtain
+	the correct size disks for drive A. For more information, query on the following
+	words:
+	
+	  " get and correct and disk and size and msdos " (without the quotation marks)
+	
+	It is possible, though, in most versions of MS-DOS, to install a new version of
+	MS-DOS to the hard disk without booting the new version first. That is, if the
+	disk format is correct for drive B but not drive A, installation may still be
+	possible. See below for information about your particular situation.
+	
+	MORE INFORMATION
+	================
+	
+	In the following examples, it is assumed that MS-DOS version 3.2 is already
+	installed on the hard drive. However, upgrading from MS-DOS version 3.21, 3.3,
+	or later can be done in much the same way.
+	
+	Upgrading to MS-DOS 3.21 or 3.3
+	-------------------------------
+	
+	Boot MS-DOS 3.2 from the hard disk. Place the program disk in drive B and change
+	the default drive to drive B. The SYS command currently on the hard disk may now
+	be able to transfer the system files from the floppy disk in drive B to a blank,
+	formatted floppy disk in drive A. However, the boot sector on the floppy will be
+	the version 3.2 boot sector, and therefore, the floppy may not be bootable. Use
+	the SYS command on the floppy disk, not on the hard disk. For example, if the
+	version 3.2 SYS.COM is located in the C:\DOS directory, use the following
+	commands:
+	
+	  B:\>c:\dos\sys a:
+	
+	  B:\>copy command.com a:
+	
+	Try to reboot the machine with the resulting boot disk. If the machine boots, you
+	can install MS-DOS on the hard disk. If the CHKDSK command verifies that the new
+	version of MS-DOS accesses the hard drive properly, you can place the Program
+	disk in drive B and enter the following command:
+	
+	  " B:\>sys c: " (without the quotation marks)
+	
+	to transfer the new MS-DOS system files to the hard drive. Because the new
+	version of SYS.COM is being used, the boot sector on the hard disk will be
+	updated from version 3.2 as well. If the new version of MS-DOS does not access
+	the hard drive properly, reformatting and/or repartitioning will be required.
+	
+	Upgrading to MS-DOS 4.0 or 4.01
+	-------------------------------
+	
+	You can use the SYS.COM on the Install disk to transfer the system files to a
+	floppy that can then be used to boot 4.0x. This technique can also be used to
+	transfer the system files to the hard disk without booting MS-DOS 4.0/4.01;
+	however, disk corruption can result if an OEM modified the method by which the
+	previous MS-DOS version accesses the hard disk.
+	
+	Because the MS-DOS version 4.0/4.01 SYS.COM is being used, it will update the
+	boot sector on the floppy. To use the MS-DOS version 4.0/4.01 SYS command, type
+	the following:
+	
+	  " B:\>sys a: " (without the quotation marks)
+	
+	Copy COMMAND.COM to the SYS[tem] disk and reboot from the resulting boot disk. If
+	CHKDSK (located on the 5.25-inch Operating 1 disk or the 3.5-inch Operating
+	disk) verifies that you can correctly access each hard drive, then you can use
+	the SYS command to transfer the 4.0 system files to drive C. To do this, the
+	Install disk should be in drive B, and the current drive must be B. Type the
+	following command:
+	
+	  " B>sys c: " (without the quotation marks)
+	
+	Copy COMMAND.COM to drive C, delete the previous MS-DOS files, and copy the
+	remaining MS-DOS 4.0 files to the DOS directory.
+	
+	If 4.0 does not properly access the hard drive, you will have to repartition it.
+	
+	For more information on how to manually install MS-DOS version 4.0, query on the
+	following words:
+	
+	  " prod(msdos) and select and manually and how " (without the quotation marks)
+	
+	Additional query words: 3.2 3.20 3.3 3.30 3.3a 3.30a 4.0 4.00 4.01 4.01a 5.00 5.00a
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMSDOSSearch kbMSDOS321 kbMSDOS400 kbMSDOS320 kbMSDOS330a kbMSDOS310 kbMSDOS500 kbMSDOS330 kbMSDOS401
+	Version           : MS-DOS:3.x,4.x,5.0
+	
+	=============================================================================
+	

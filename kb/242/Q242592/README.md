@@ -1,0 +1,123 @@
+---
+layout: page
+title: "Q242592: How to Configure Peer Networking In Windows NT 4.0"
+permalink: kb/242/Q242592/
+---
+
+## Q242592: How to Configure Peer Networking In Windows NT 4.0
+
+	Article: Q242592
+	Product(s): Microsoft Windows NT
+	Version(s): winnt:4.0
+	Operating System(s): 
+	Keyword(s): kbenv kbnetwork
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 4.0 
+	- Microsoft Windows NT Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes how to install a small network (less than 10 computers)
+	that does not require a Windows NT-based server or access to the Internet.
+	
+	MORE INFORMATION
+	================
+	
+	Windows NT is designed with built-in networking features that allow Windows
+	NT-based computers to share resources such as files, printers, and some
+	programs. A peer network is a network of computers that allows each user to
+	control his or her own desktop settings, resource sharing, and security. There
+	is no centralized control of security, no single logon environment, and no
+	ability to maintain a roaming desktop environment (this requires a client/server
+	network environment).
+	
+	Windows NT 4.0-based workstations and servers have similar network interfaces.
+	You can install a Windows NT-based server as a primary domain controller (PDC),
+	a member server, or a stand-alone server. As a member server or a stand-alone
+	server, a Windows NT Server-based computer acts as a peer with Windows NT-based
+	workstations. When you install a Windows NT Server-based computer as a PDC, you
+	can configure it to control network security and other settings for all the
+	other Windows-based computers on the network. However, unless security is a
+	priority, a PDC is generally not required until it becomes difficult to maintain
+	the various security and resource settings configured on each peer computer.
+	Windows NT-based computers can communicate with Microsoft Windows 98-based,
+	Microsoft Windows 95-based, and Microsoft Windows 3.x-based computers when they
+	have at least one common protocol installed and are using a Microsoft-compliant
+	network redirector.
+	
+	This article assumes that there is no network program that requires a specific
+	protocol and that all the computers exist on one physical network, so that a
+	router is not required. In this configuration, the NetBEUI protocol is
+	appropriate
+	
+	Installing a Simple NetBEUI Network
+	-----------------------------------
+	
+	To install a basic network with Windows NT-based computers:
+	
+	1. Determine that all the network adapters have Windows NT 4.0 drivers
+	  available. Use similar network adapters across the network, if possible.
+	
+	2. Install Windows NT. During Setup, click to select the "Yes, I am going to
+	  participate on a network" and "Wired to the network" check boxes.
+	
+	3. When Windows NT prompts you to search for the network adapter, click Select
+	  From A List, click Have Disk, place the floppy disk containing the network
+	  driver in drive A, and then click OK.
+	
+	4. When you are prompted to select the protocols to install, click to clear the
+	  TCP/IP check box, and then click to select the NetBEUI check box.
+	
+	5. Type a meaningful computer name when you are prompted, and then continue with
+	  the installation of Windows NT.
+	
+	6. Repeat these steps for each computer on your network, typing a different and
+	  meaningful computer name for each computer.
+	
+	7. Double-click Network Neighborhood to view other computers. Note that it may
+	  take up to several minutes for the computers to see each other the first
+	  time.
+	
+	Setting Up Shares
+	-----------------
+	
+	After you set up your computers to see each other, set up shares and users to be
+	able to access computers on your network. If you are not concerned about
+	security, enable the Guest account in User Manager and allow full control in
+	Windows NT Explorer:
+	
+	1. Click Start, point to Programs, point to Administrative Tools (Common), and
+	  then click User Manager.
+	
+	2. Double-click Guest, click to clear the Account Disabled check box, and then
+	  click OK.
+	
+	3. Click Start, point to Programs, and then click Windows NT Explorer.
+	
+	4. Right-click the drive that you want to share, click Properties, click the
+	  Sharing tab, click New Share, type the name of the drive, and then click OK.
+	
+	5. Click Permissions, click Everyone, and then click Add. Note that the default
+	  rights for the Everyone group is Full Control. To change the rights for the
+	  Everyone group, click the appropriate rights in the Rights box.
+	
+	6. Double-click one of the computers in Network Neighborhood to see the shares
+	  listed for that computer. If you share a drive, all the folders on the drive
+	  are also available.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbenv kbnetwork 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+	Version           : winnt:4.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

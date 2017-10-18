@@ -1,0 +1,150 @@
+---
+layout: page
+title: "Q251394: How to Use the Net User Command"
+permalink: kb/251/Q251394/
+---
+
+## Q251394: How to Use the Net User Command
+
+	Article: Q251394
+	Product(s): Microsoft Windows NT
+	Version(s): WINDOWS:2000; winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server, Enterprise Edition versions 4.0, 4.0 SP4, 4.0 SP5, 4.0 SP6, 4.0 SP6a 
+	- Microsoft Windows 2000 Advanced Server 
+	- Microsoft Windows 2000 Datacenter Server 
+	- Microsoft Windows 2000 Professional 
+	- Microsoft Windows 2000 Server 
+	- Microsoft Windows NT Workstation versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4, 4.0 SP5, 4.0 SP6, 4.0 SP6a 
+	- Microsoft Windows NT Server versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4, 4.0 SP5, 4.0 SP6, 4.0 SP6a 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes how to use the net user command.
+	
+	MORE INFORMATION
+	================
+	
+	The following example shows the syntax of the net user command:
+	
+	net user [username [password | *] [options]] [/domain]
+	        username {password | *} /add [options] [/domain]
+	        username [/delete] [/domain]
+	
+	You can use the net user command to create and modify user accounts on computers.
+	When you use this command without command-line switches, the user accounts for
+	the computer are listed. The user account information is stored in the user
+	accounts database. This command works only on servers.
+	
+	You can use the following parameters with the net user command:
+	
+	- username
+	  Is the name of the user account you want to add, delete, modify, or view. The
+	  name of the user account can have as many as 20 characters.
+	
+	- password
+	  Assigns or changes a password for the user's account. A password must satisfy
+	  the minimum length set with the /minpwlen option of the net accounts command.
+	  It can contain as many as 14 characters.
+	
+	- *
+	  Produces a prompt for the password. The password is not displayed when you
+	  type it at a password prompt.
+	
+	- /domain
+	  Performs the operation on the primary domain controller (PDC) of the current
+	  domain. This parameter applies only to computers running Windows NT
+	  Workstation that are members of a Windows NT Server domain. By default,
+	  Windows NT Server-based computers perform operations on the PDC.
+	
+	- /add
+	  Adds a user account to the user accounts database.
+	
+	- /delete
+	  Removes a user account from the user accounts database.
+	
+	Options for the Net User Command
+	--------------------------------
+	
+	- /active:{yes | no}
+	  Activates or deactivates the account. If the account is not active, the user
+	  cannot gain access to the server. The default is yes.
+	
+	- /comment:"text"
+	  Provides a descriptive comment about the user's account (maximum of 48
+	  characters). Be sure to put quotation marks around the text you use.
+	
+	- /countrycode:<nnn>
+	  Uses the operating system country code to implement the specified language
+	  files for a user's help and error messages. A value of 0 signifies the
+	  default country code.
+	
+	- /expires:{date | never}
+	  Causes the account to expire if date is set. The never option sets no time
+	  limit on the account. An expiration date is in the form mm/dd/yy or dd/mm/yy,
+	  depending on the country code. Months can be a number, spelled out, or
+	  abbreviated with three letters. Year can be two or four numbers. Use slashes
+	  (/) with no spaces to separate parts of the date.
+	
+	- /fullname:"<name>"
+	  Is a user's full name (rather than a user name). Enclose the name in quotation
+	  marks.
+	
+	- /homedir:<pathname>
+	  Sets the path for the user's home directory. The path must exist.
+	
+	- /passwordchg:{yes | no}
+	  Specifies whether users can change their own password. The default is yes.
+	
+	- /passwordreq:{yes | no}
+	  Specifies whether a user account must have a password. The default is yes.
+	
+	- /profilepath[:path]
+	  Sets a path for the user's logon profile.
+	
+	- /scriptpath:<pathname>
+	  Is the location of the user's logon script.
+	
+	- /times:{times | all}
+	  Is the logon hours. The times option is expressed as
+	  day[-day][,day[-day]],time[-time][,time [-time]], and is limited to 1-hour
+	  increments. Days can be spelled out or abbreviated. Hours can be 12-hour or
+	  24-hour notation. For 12-hour notation, use am, pm, a.m., or p.m. The all
+	  option specifies that a user can always log on, and a blank value specifies
+	  that a user can never log on. Separate day and time entries with a comma, and
+	  separate multiple day and time entries with a semicolon.
+	
+	- /usercomment:"text"
+	  Lets an administrator add or change the user comment for the account.
+	
+	- /workstations:{computername[,...] | *}
+	  Lists as many as eight computers from which a user can log on to the network.
+	  If the /workstations option has no list or if the list is *, the user can log
+	  on from any computer.
+	
+	- net help user | more
+	  Displays Help one screen at a time.
+	
+	NOTE: You can obtain all of the information contained in this article by typing
+	the following command:
+	
+	  net help user
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000DataServ kbwin2000DataServSearch kbwin2000Serv kbWinNTW400sp5 kbWinNTW400sp4 kbWinNTW400sp3 kbWinNTW400sp2 kbWinNTW400sp1 kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400sp6 kbWinNTSEnt400sp5 kbWinNTSEnt400sp4 kbWinNTSEnt400 kbWinNTS400sp6 kbWinNTS400sp5 kbWinNTS400sp4 kbWinNTS400sp3 kbWinNTS400sp2 kbWinNTS400sp1 kbWinNTS400search kbWinNTS400 kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWinNTW400sp6 kbWinAdvServSearch kbWinDataServSearch kbWinNTSEnt400SP6a kbWinNTW400SP6a
+	Version           : WINDOWS:2000; winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

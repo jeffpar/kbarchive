@@ -1,0 +1,87 @@
+---
+layout: page
+title: "Q183597: XCLN: Outbound Mail Stuck In Client Outbox"
+permalink: kb/183/Q183597/
+---
+
+## Q183597: XCLN: Outbound Mail Stuck In Client Outbox
+
+	Article: Q183597
+	Product(s): Microsoft Exchange
+	Version(s): WINDOWS:4.0,5.0,5.5
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 08-APR-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you have more than one information service in your user profile that
+	supports the same address type and the highest listed information service is
+	either offline or not functioning, outbound messages may appear to be stuck in
+	the outbox.
+	
+	This problem is usually seen with Internet (SMTP) messages.
+	
+	CAUSE
+	=====
+	
+	Recipient addresses for outbound messages are processed by information services
+	that are stored in the client profile and listed under Tools/Services/Delivery.
+	When an e-mail message is addressed, the client checks the Delivery list to see
+	which services match the address type of the message.
+	
+	For Internet (SMTP) messages, there are three possible information services that
+	could be matched for sending mail. They are:
+	
+	- Microsoft Exchange Transport (and Microsoft Exchange Remote Transport)
+	
+	- Microsoft Mail if there is an SMTP or AT&T mail gateway installed on the
+	  Mail server.
+	
+	- Internet Mail if the client is used to connect to a POP3 server to read mail
+	  and an SMTP server to send mail.
+	
+	WORKAROUND
+	==========
+	
+	If you have a profile that has more than one information service that can
+	process the same message, you need to confirm that the service is functioning
+	properly or change the order in which the service is chosen.
+	
+	Example:
+	
+	You have a profile that has both Microsoft Exchange Server and Microsoft Mail
+	information services and you want outbound Internet mail to go through Exchange
+	Server and not the Microsoft Mail SMTP Gateway.
+	
+	1. From the Tools menu, choose Services and then Delivery.
+	
+	2. Use the up and down arrows to move the Microsoft Exchange Transport so that
+	  it is higher than the Microsoft Mail service.
+	
+	Outbound SMTP mail should now default to the Exchange server and not Microsoft
+	Mail.
+	
+	Note: This behavior is not limited only to SMTP. Other protocols such as X.400
+	can also have multiple paths.
+	
+	If you have a need to use two different information services at different times
+	you can create additional profiles for each service that you wish to use.
+	
+	Additional query words: xclnt, xfor, xcon, xadm, migration wizard, migrate
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+	Version           : WINDOWS:4.0,5.0,5.5
+	Issue type        : kbprb
+	
+	=============================================================================
+	

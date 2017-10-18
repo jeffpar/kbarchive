@@ -1,0 +1,86 @@
+---
+layout: page
+title: "Q199977: XFOR: Common LinkAge V3.2 Exchange-Notes Connector Problem"
+permalink: kb/199/Q199977/
+---
+
+## Q199977: XFOR: Common LinkAge V3.2 Exchange-Notes Connector Problem
+
+	Article: Q199977
+	Product(s): Microsoft Exchange
+	Version(s): winnt:4.0,5.0
+	Operating System(s): 
+	Keyword(s): exc4 exc5
+	Last Modified: 22-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 4.0, 5.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This articles provides a guide to common LinkAge V3.2 Exchange-Notes Connector
+	problems.
+	
+	Most common Exchange-Notes Connector problems can be easily solved if their
+	causes are narrowed down. In most cases, the automatically generated LinkAge
+	logs will contain the information needed to find the problem. Use the following
+	points to further investigate and possibly solve the problem:
+	
+	- What versions of Windows NT, Microsoft Exchange and Lotus Notes (build and
+	  language) are you using? Make sure the LinkAge Connector is certified against
+	  the foreign language products, if other than English.
+	
+	- The Notes Connector should be set as Admin Service Account in Exchange
+	  Server.
+	
+	- The Connector's user ID (as created in Notes) should be the one used to
+	  establish a session to the Notes server. Check this user ID by quiting any
+	  Notes clients on the Connector computer. Use Task Manager to stop the
+	  Nlnotes.exe process (if it is running). Then launch the Notes client and
+	  verify the userid.
+	
+	- Verify that you only have one NNOTES.DLL file in the \NOTES\DATA directory
+	  and nowhere else on the Connector box. The \NOTES\DATA directory may need to
+	  be added to the system path. You can modify the system path through Control
+	  Panel-System-Environment. The machine might need to be rebooted for the new
+	  path to take effect.
+	
+	- The Connector's Access Control on Exchange.box and Exchange.bad databases in
+	Notes should be set to MANAGER with DELETE permission. The Access Control should
+	be set to DEPOSITOR on Mail.box. ith older version of Notes (earlier than
+	Release 4.5.1), setting the access control on Mail.box to MANAGER with DELETE
+	permissions will solve mail delivery/routing problems.
+	
+	- Have you applied the latest patch- Check the patches.txt file found in the
+	LINKAGE directory.
+	
+	- Confirm that you have the driver RPCDCE4.DLL in your system path. If not, copy
+	this DLL from any NT 3.51 machine or from the LINKAGE directory to the
+	\WINNT\SYSTEM32 directory (or any other one in the path).
+	
+	- In case you see MAPI-related errors in the LinkAge log. Delete the MAPI profile
+	for the connector by logging into the NT account that is used to run the LinkAge
+	Connector, run REGEDT32 and delete the following hive:
+	
+	  HKEY_CURRENT_USER\Software\Microsoft\Windows NT\Current Version \Windows
+	  Messaging Subsystem\Profiles\<servername>-LME-NOTES V3.
+	
+	Recycle all MAPI-based services (i.e. Exchange Server) and Connector. MAPI
+	profiles are not deleted on a machine until all MAPI clients are stopped. That
+	is, stop the LinkAge services, then stop Exchange services. Now start Exchange,
+	then LinkAge.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : exc4 exc5 
+	Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbZNotKeyword2
+	Version           : winnt:4.0,5.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

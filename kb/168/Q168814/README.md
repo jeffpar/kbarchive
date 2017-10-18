@@ -1,0 +1,217 @@
+---
+layout: page
+title: "Q168814: Installing WinNT 4.0 Service Packs During Unattended Install"
+permalink: kb/168/Q168814/
+---
+
+## Q168814: Installing WinNT 4.0 Service Packs During Unattended Install
+
+	Article: Q168814
+	Product(s): Microsoft Windows NT
+	Version(s): winnt:4.0
+	Operating System(s): 
+	Keyword(s): kbsetup kbOPK kbSBK
+	Last Modified: 09-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 4.0 
+	- Microsoft Windows NT Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	There are several ways to install service packs during an unattended
+	installation/deployment of Windows NT 4.0. Starting with Service Pack 1, the
+	specification for quiet/unattended installation was added to Update.exe.
+	
+	NOTE: Sysdiff cannot be used to apply a service pack. For additional information,
+	please see the following article in the Microsoft Knowledge Base:
+	
+	  Q163303 Sysdiff Cannot Be Used to Apply Service Pack
+	
+	To install Service Pack 3 via an unattended installation, the files must be
+	extracted into a directory from the self-extracting file downloaded off the web.
+	To extract the files without applying, type the following command:
+	
+	  NT4SP3_I.EXE /X
+	
+	You will then be prompted for the directory that you want the files extracted
+	to.
+	
+	Update.exe supplied with Service Pack 1 supports the following command line
+	parameters:
+	
+	  -u for unattended installation
+	
+	Update.exe supplied with Service Pack 2 supports the following command line
+	parameters:
+	
+	  -u for unattended installation
+	  -c for create uninstall directory
+	  -z for do not restart (used when installing during GUI mode setup)
+	
+	Update.exe supplied with Service Pack 3 supports the following command line
+	parameters:
+	
+	  -f for force application close
+	  -u for unattended installation
+	  -n for do not create uninstall directory
+	  -z for do not restart (used for installing during GUI mode setup)
+	  -q for quiet mode. Does not show User Interface for service pack install
+	  -y for perform uninstall (only with /u or /q)
+	
+	The version of the service pack that is being used may determine the installation
+	method desired.
+	
+	MORE INFORMATION
+	================
+	
+	The installation of Windows NT service packs during unattended
+	installation/deployment can be accomplished with the methods described later in
+	this article. There is not a right or wrong way to install the service pack. The
+	methods presented are to tailor the installation to meet the needs of your
+	environment. There are basically three installation options available.
+	
+	Installation Option 1 - Manual
+	------------------------------
+	
+	Manual installation is the normal installation method used to install the service
+	back after Windows NT is installed. All command line switches are valid with
+	manual installation. User interaction is required for this method.
+	
+	Installation Option 2 - Using RUNONCE incorporated with unattended
+	installation when the service pack is either local or on a network share
+	-------------------------------------------------------------------------------------------------------------------------------------------
+	
+	Windows NT 4.0 supports the use of the RUNONCE command, which is executed on
+	first logon to the system only. In many cases, the RUNONCE option is used for
+	various other customizing options used for deploying Windows NT 4.0.
+	
+	Option 2 consists of two steps. The first step is to enable Administrator
+	Automatic Logon. The second step is to configure the RUNONCE registry value for
+	the command that is to be executed at logon.
+	
+	For detailed instructions on using the RUNONCE option consult the Microsoft
+	Windows NT 4.0 "Deployment Guide," Chapter 5, and refer to the section on
+	Executing a Batch File on First Logon to Customize Windows NT. The Deployment
+	Guide may be viewed from the following Web site:
+	
+	  http://www.microsoft.com/ntworkstation
+	
+	Installation Option 3 - Using Cmdlines.txt when the service pack is either
+	local or on a network share
+	------------------------------------------------------------------------------------------------------
+	
+	(This option is only supported with Service Pack 2 and Service Pack 3.)
+	
+	Windows NT 4.0 supports the installation of the service pack through the
+	CMDLINES.TXT file by either copying the service pack to the $OEM$ directory or
+	by calling a batch job to connect to the share. Note that with CMDLINES.TXT, the
+	-Z option will need to be specified in order to prevent the service pack from
+	trying to restart the system.
+	
+	Using the $OEM$ directory as the source for the service pack:
+	
+	1. Copy the entire Windows NT 4.0 service pack to the $OEM$ directory.
+	
+	2. Add the following line to CMDLINES.TXT:
+	
+	  ".\UPDATE.EXE -U -Z"
+	
+	The installation of the service pack will occur during setup, but from the local
+	drive. This method will increase the amount of time it takes for the Text Mode
+	portion of setup to be completed, since the entire contents of $OEM$ are copied
+	to the local drive.
+	
+	Using a Network share requires more configuration, but will install the service
+	pack during the GUI portion of setup and will not add any additional overhead to
+	the Text Mode phase of setup.
+	
+	For simplification, the Primary Domain Controller (PDC) has the GUEST account
+	enabled with no password assigned to the account.
+	
+	1. Create a directory on a server, and then copy the contents of the service
+	  pack for your platform to the directory. For example, the directory is called
+	  SP2 on the server, and is shared out as SP2.
+	
+	2. Create a batch file and place it in the $OEM$ directory.
+	
+	  The batch file should contain something similar to the following example,
+	  called SP.CMD.
+	
+	  NET USE Z: \\Server\SP2 /PERSISTENT:NO /USER:<domain name>\guest <
+	  password.txt
+	  Z:\UPDATE.EXE -U -Z
+	
+	NOTE: A valid domain name and account are required because Windows NT setup runs
+	in the context of the user SYSTEM which is only understood by the local system.
+	Make sure to use the /PERSISTENT:NO option so that the share is not reconnected
+	on first logon.
+	
+	3. The file PASSWORD.TXT that is piped back to NET USE is required to respond to
+	  the prompt that is presented for the password. The file PASSWORD.TXT is
+	  copied to the local computer during setup. It is then deleted so there no is
+	  concern of leaving a file containing a password for an account on the local
+	  computer. The use of the Guest account is sufficient since all that is needed
+	  is READ access by default.
+	
+	  To create Password.txt, run the following command from an MS-DOS prompt:
+	
+	  COPY CON PASSWORD.TXT
+	
+	After the command is executed, press ENTER once, and then use CTRL+Z to save the
+	file. The file contains a carriage return, which is all that is needed. If you
+	have a password assigned to the account being used, you would type the password
+	followed by ENTER then CTRL+Z.
+	
+	4. Copy the PASSWORD.TXT to the $OEM$ directory.
+	
+	5. Add the following line to the end CMDLINES.TXT:
+	
+	  ".\SP.CMD"
+	
+	Below is an example of a functioning CMDLINES.TXT using the SP.CMD.
+	
+	  [Commands]
+	  ".\regedit.exe /s .\autolog.reg"
+	  "rundll32 setupapi,InstallHinfSection DefaultInstall 128 .\CMDHERE.INF"
+	  "rundll32 setupapi,InstallHinfSection DefaultInstall 128 .\RSHXMENU.INF"
+	  "rundll32 setupapi,InstallHinfSection DefaultInstall 128 .\RUNEXT.INF"
+	  "rundll32 setupapi,InstallHinfSection DefaultInstall 128 .\TWEAKUI.INF"
+	  "rundll32 setupapi,InstallHinfSection DefaultInstall 128 .\diffile.INF"
+	  ".\SP.CMD"
+	
+	Update.exe supplied with Service Pack 4 supports the following command line
+	parameters:
+	
+	  -f for Force other applications to close at shutdown
+	  -u for unattended installation
+	  -n for do not create uninstall directory
+	  -z for do not restart (used for installing during GUI mode setup)
+	  -q for quiet mode. Does not show User Interface for service pack install
+	  -o for overwriting OEM files without prompting
+	
+	For additional information on the Windows NT 4.0 Power Toys, consult the Windows
+	NT 4.0 Supplement I Server online documentation.
+	
+	For additional information on Windows NT 4.0 deployment/unattended installation,
+	consult the Microsoft Knowledge Base at http://www.microsoft.com/kb and download
+	the Windows NT 4.0 Deployment Guide from
+	http://www.microsoft.com/ntworkstation.
+	
+	NOTE: The Deployment Guide is valid for both Windows NT Workstation and Windows
+	NT Server.
+	
+	Additional query words: unattended SBK OPK Install
+	
+	======================================================================
+	Keywords          : kbsetup kbOPK kbSBK 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+	Version           : winnt:4.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

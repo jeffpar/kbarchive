@@ -1,0 +1,85 @@
+---
+layout: page
+title: "Q182597: WinNT 3.51 FTP Service Displays Incorrect Date for Year 2000"
+permalink: kb/182/Q182597/
+---
+
+## Q182597: WinNT 3.51 FTP Service Displays Incorrect Date for Year 2000
+
+	Article: Q182597
+	Product(s): Microsoft Windows NT
+	Version(s): WinNT:3.51
+	Operating System(s): 
+	Keyword(s): kbYear2000
+	Last Modified: 20-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 3.51 
+	- Microsoft Windows NT Server version 3.51 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The FTP service in Windows NT 3.51 may report the year incorrectly for files
+	created on or after Jan 1, 2000. For example, January 1, 2000 is displayed as
+	01/01/100.
+	
+	CAUSE
+	=====
+	
+	The FTP service in Windows NT 3.51 incorrectly formats directory displays as
+	requested by FTP clients.
+	
+	RESOLUTION
+	==========
+	
+	A supported fix that corrects this problem is now available from Microsoft, but
+	has not been fully regression tested and should be applied only to systems
+	experiencing this specific problem.
+	
+	To resolve this problem immediately, download the fix as described below. For a
+	complete list of Microsoft Product Support Services phone numbers and
+	information on support costs, please go to the following address on the World
+	Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	+----------------------------------------------------+
+	| Date     | Time   | Size   | File Name  | Platform | 
+	+----------------------------------------------------+
+	| 03/12/98 | 05:39p | 51,376 | Ftpsvc.dll | (x86)    | 
+	+----------------------------------------------------+
+	| 03/12/98 | 05:36p | 75,536 | Ftpsvc.dll | (Alpha)  | 
+	+----------------------------------------------------+
+	
+	NOTE: Y2k351-i.exe and Y2k351-a.exe were updated on November 5, 1998.
+	
+	This hotfix has been posted to the following Internet location as Y2k351-i.exe
+	(x86) and Y2k351-a.exe (Alpha):
+	
+	  ftp://ftp.microsoft.com/bussys/winnt/winnt-public/fixes/usa/NT351/hotfixes-postSP5/y2k-fix/
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Windows NT version 3.51.
+	
+	Additional query words: IIS Y2K
+	
+	======================================================================
+	Keywords          : kbYear2000 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+	Version           : WinNT:3.51
+	Hardware          : ALPHA x86
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

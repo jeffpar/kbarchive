@@ -1,0 +1,78 @@
+---
+layout: page
+title: "Q150835: Troubleshooting CGI Error"
+permalink: kb/150/Q150835/
+---
+
+## Q150835: Troubleshooting CGI Error
+
+	Article: Q150835
+	Product(s): Internet Information Server
+	Version(s): winnt:1.0
+	Operating System(s): 
+	Keyword(s): kbsetup
+	Last Modified: 12-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Server 1.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you submit an HTML form or click a link to a script from the web browser,
+	you may receive an error similar to the following:
+	
+	  CGI Error
+	
+	  The specified CGI application misbehaved by not returning a complete
+	  set of HTTP headers. The headers it did return are:
+	
+	  Can't open perl script "c:\inetsrv\wwwroot\scripts\test.pl":
+	  No such file or directory
+	
+	CAUSE
+	=====
+	
+	This error is caused by missing or malformed CGI header information. In this
+	case the headers are missing because the script file could not be run, resulting
+	in that error message being displayed instead of the output from the script.
+	
+	MORE INFORMATION
+	================
+	
+	The Common Gateway Interface (CGI) Specification calls for the script file to
+	return at least one header. These headers fill out the remainder of the HTTP
+	headers as required by the HTTP protocol. The HTTP protocol also requires a
+	blank line between the end of the headers and the start of the document. The
+	only headers currently supported by the CGI specification are:
+	
+	  Content-type:
+	  Location:
+	  STATUS
+	
+	Additional information about these headers can be found in the HTTP Protocol and
+	CGI Protocol draft specifications available at http://www.w3.org.
+	
+	You can also see the following Microsoft Knowledge Base article:
+	
+	  Q150629 : Configuring and Testing a PERL Script with Internet Information
+	  Server (IIS)
+	
+	REFERENCES
+	==========
+	
+	  Q238788 How to Debug CGI Applications Running Under IIS
+	
+	Additional query words: cgi prodiis1
+	
+	======================================================================
+	Keywords          : kbsetup 
+	Technology        : kbiisSearch kbiis100
+	Version           : winnt:1.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

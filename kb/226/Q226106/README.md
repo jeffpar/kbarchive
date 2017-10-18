@@ -1,0 +1,169 @@
+---
+layout: page
+title: "Q226106: MS Commerce Solutions: Some Figures Printed Incorrectly"
+permalink: kb/226/Q226106/
+---
+
+## Q226106: MS Commerce Solutions: Some Figures Printed Incorrectly
+
+	Article: Q226106
+	Product(s): Microsoft Press
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbfile
+	Last Modified: 16-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- MSPRESS Microsoft Commerce Solutions ISBN 0-7536-0579-3 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Several pages in "Microsoft Commerce Solutions" include incorrect figures.
+	
+	Microsoft Press has created a self-extracting patch file containing the corrected
+	figures in .JPG format. These .JPG files can be viewed using Microsoft Internet
+	Explorer or most other Internet browsers.
+	
+	The following file is available for download from the Microsoft Download Center:
+	
+	  MCSFIGS.EXE (
+	  http://download.microsoft.com/download/MSPressPub/Patch/2.0/WIN98Me/EN-US/MCSFIGS.EXE)
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. Once posted, the file is housed on secure
+	servers that prevent any unauthorized changes to the file.
+	
+	MORE INFORMATION
+	================
+	
+	The Readme.txt for MCSFIGS.EXE appears below:
+	
+	              ---------------------------------------
+	               Microsoft Press Support Web Site Readme
+	
+	                               for
+	
+	                   MICROSOFT COMMERCE SOLUTIONS
+	
+	                 by Micro Modeling Associates, Inc.
+	
+	         Copyright <A9> 1999 by Micro Modeling Associates, Inc.
+	           Portions copyright <A9> by Microsoft Corporation
+	                       All Rights Reserved
+	
+	               ---------------------------------------
+	
+	README CONTENTS
+	- OVERVIEW
+	- LIST OF CORRECTED FIGURES IN MCSFIGS.EXE
+	- EXTRACTING THE CONTENTS OF MCSFIGS.EXE
+	- VIEWING AND PRINTING THE CORRECTED FIGURES
+	- MICROSOFT PRESS SUPPORT INFORMATION
+	
+	OVERVIEW
+	========
+	In the first printing of Microsoft Commerce Solutions (printed 
+	March 1999), seven figures were incorrectly represented. The seven 
+	correct figures are contained as JPEG files in the self-extracting 
+	file named MCSFIGS.EXE on the Microsoft Press Support Web site. 
+	To extract, view, and print these files, follow the instructions below. 
+	You do not need special software to extract the files. You will need a 
+	Web browser to view and print the files.
+	
+	LIST OF CORRECTED FIGURES IN MCSFIGS.EXE
+	========================================
+	The filenames for the corrected figures are listed below along with 
+	their corresponding page numbers, figure numbers, and captions.
+	
+	F02xx02.jpg
+	Page 31, Figure 2-2
+	Caption: User view as a Web application.
+	
+	F05XX06x.jpg
+	Page 134, Figure 5-6
+	Caption: Specify the project destinations.
+	
+	F06XX15.jpg
+	Page 198, Figure 6-15
+	Caption: The Site Builder Wizard Site Type frame.
+	
+	F06XX17.jpg
+	Page 201, Figure 6-17
+	Caption: The Site Builder Wizard Site Style frame.
+	
+	F07xx02.jpg
+	Page 265, Figure 7-2
+	Caption: Internet Service Manager.
+	
+	F07xx03.jpg
+	Page 266, Figure 7-3
+	Caption: Web Site Properties page.
+	
+	F11xx02.jpg
+	Page 424, Figure 11-2
+	Caption: An improved COM architecture.
+	
+	EXTRACTING THE CONTENTS OF MCSFIGS.EXE
+	======================================
+	 1. Double-click the file MCSFIGS.EXE, and then click Yes.
+	 2. Specify the destination for the new figure files, and then
+	    click OK.  (You can also use the Browse button to specify
+	    a destination.)
+	 3. After the files have been extracted successfully, click OK.
+	
+	VIEWING AND PRINTING THE CORRECTED FIGURES
+	==========================================
+	To view the corrected figures, try double-clicking each figure file. 
+	The figure should display in your Web browser, To manually open and 
+	view the figures in your Web browser, follow these steps:
+	 1. Open your browser.
+	 2. Select Open from the File menu and specify the location and 
+	    name of the figure you want to open.
+	 3. Click OK.
+	Once the figure is open in your Web browser, you can choose Print 
+	from the File menu to print it.
+	
+	MICROSOFT PRESS SUPPORT INFORMATION
+	===================================
+	Every effort has been made to ensure the accuracy of the book 
+	Microsoft Commerce Solutions and of these corrections to that book. 
+	Microsoft Press provides corrections for books through the World Wide 
+	Web at
+	
+	    http://mspress.microsoft.com/support/ 
+	
+	If you have comments, questions, or ideas regarding this book or
+	these corrections, please send them to Microsoft Press via 
+	e-mail to:
+	
+	   MSPINPUT@MICROSOFT.COM
+	   
+	or via postal mail to:
+	
+	   Microsoft Press
+	   Attn:  Microsoft Commerce Solutions Editor
+	   One Microsoft Way
+	   Redmond, WA  98052-6399
+	
+	Please note that product support is not offered through the
+	above addresses.
+	
+	Additional query words: kbfile 0-7356-0579-3 ms_press EUBook
+	
+	======================================================================
+	Keywords          : kbfile 
+	Technology        : kbMSPressSearch
+	Version           : :
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

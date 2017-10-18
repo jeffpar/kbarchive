@@ -1,0 +1,77 @@
+---
+layout: page
+title: "Q135857: Err Msg: Invalid Parameter Specified After Configuring EMM386"
+permalink: kb/135/Q135857/
+---
+
+## Q135857: Err Msg: Invalid Parameter Specified After Configuring EMM386
+
+	Article: Q135857
+	Product(s): Microsoft Windows NT
+	Version(s): 3.5,3.51
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 04-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server versions 3.5, 3.51 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you configure memory for a Windows remoteboot workstation using EMM386.EXE
+	as stated in page 136 of the Windows NT Server Installation Guide for both
+	Windows NT 3.5 and 3.51, the following error message appears:
+	
+	  Invalid parameter specified.
+	
+	RESOLUTION
+	==========
+	
+	To correct this problem, manually determine and reconfigure the lowest
+	acceptable memory range for the remoteboot workstation.
+	
+	For example, if the MS-DOS MEM.EXE reports that you have 512,000 bytes of
+	available conventional memory, the hexadecimal value is 7D00. However, when you
+	exclude the range from 7D00 to 9FFF, the above error message appears. After
+	further testing, you determine that the lowest acceptable value is 516,096 bytes
+	of available conventional memory. The hexadecimal equivalent value is 7E00. The
+	memory range that you must use is different for each network interface card.
+	
+	MORE INFORMATION
+	================
+	
+	Page 136 of the Windows NT Server Installation Guide for Windows NT Server 3.5
+	and 3.51 states the following:
+	
+	1. Find out how much conventional memory the workstation has (in decimal terms)
+	  by typing mem at the MS-DOS prompt.
+	
+	2. Convert this number to hexadecimal format and drop the rightmost digit. To
+	  convert, you can use the dectohex command in the
+	  \systemroot\RPL\RPLFILES\BINFILES\BINR directory.
+	
+	3. Edit the device=EMM386.EXE line in the CONFIG.SYS file:
+	
+	  a. Remove the REM designation at the beginning of the line. Check that the
+	     path specified for the file is the root (C:\) directory, not the C:\DOS
+	     directory.
+	
+	  b. Use the remaining four digits of the hexadecimal value for the first x=
+	     value. (The second x= value is 9FFF and should not be changed.)
+	
+	     For example, if conventional memory is 598016, the hexadecimal value is
+	     92000. In this case, use x=9200-9FFF.
+	
+	Additional query words: prodnt win3x remote boot rpl
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+	Version           : :3.5,3.51
+	
+	=============================================================================
+	

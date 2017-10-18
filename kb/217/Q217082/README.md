@@ -1,0 +1,224 @@
+---
+layout: page
+title: "Q217082: PRB: Connection Busy Message w/Remote Views of SQL Server Tables"
+permalink: kb/217/Q217082/
+---
+
+## Q217082: PRB: Connection Busy Message w/Remote Views of SQL Server Tables
+
+	Article: Q217082
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:2.5,3.0,3.0b,5.0,5.0a,6.0
+	Operating System(s): 
+	Keyword(s): kbSQL kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600 kbMDAC250 kbSQLProg
+	Last Modified: 27-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+	- Microsoft Data Access Components version 2.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When attempting to open a Remote View using a shared connection to access SQL
+	Server tables, the following error message may appear:
+	
+	  Connection "connection name" is busy
+	
+	RESOLUTION
+	==========
+	
+	Set the FETCHSIZE property of remote views using shared connections to a value
+	of -1.
+	
+	  OPEN DATABASE MYDATA
+	  =DBSETPROP('MyView','View','FetchSize',-1)
+	
+	-or-
+	
+	  OPEN DATABASE MYDATA
+	  USE MyView IN 0
+	  SELECT MyView
+	  =CURSORSETPROP('FetchSize',-1)
+	
+	Setting the FetchSize Property of the remote view to -1 causes Visual FoxPro to
+	retrieve the complete result set (within the limits set by the MaxRecords
+	setting).
+	
+	MORE INFORMATION
+	================
+	
+	The default FetchSize Property value for remote views is 100.
+	
+	The error message indicates that the shared remote connection is in use by
+	another executing statement. This behavior occurs when multiple remote views
+	have been defined with the following characteristics:
+	
+	- Using a shared remote connection to the server.
+	
+	- Accessing the same base table(s).
+	
+	- The number of records being returned is greater than or equal to the
+	  FETCHSIZE property of the view.
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. From the Windows Control Panel, open ODBC Data Source Administrator, and add
+	  a DSN named MyDSN, using the SQL Server ODBC Driver.
+	
+	2. Create a program file named "REMOVIEW.PRG" using the following code: (NOTE:
+	  This program will create a new SQL Server table in the database that the DSN
+	  specifies as the default, and necessitates appropriate permissions.)
+	
+	  lcsafestat=SET('SAFETY')
+	  lcexclstat=SET('EXCLUSIVE')
+	  lcMultiLocks=SET('MULTILOCKS')
+	  SET SAFETY OFF
+	  SET EXCLUSIVE ON
+	  SET MULTILOCKS ON
+	  gnConnHandle=SQLCONNECT('MyDSN','sa','')
+	  lnCreate=0
+	  lnUseDB=0
+	  IF gnConnHandle > 0
+	     * Use the SQL Server PUBS database
+	     SQLCommand="USE PUBS"
+	     lnUseDB=sqlexec(gnConnHandle,SQLCommand)
+	     IF lnUseDB > 0
+	        * Create table TEST_A in the PUBS database
+	        SQLCommand="CREATE TABLE TEST_A (VAR1 CHAR(10) NULL, " + ;
+	           "VAR2 VARCHAR(20) NULL)"
+	        lnCreate=sqlexec(gnConnHandle,SQLCommand)
+	     ENDIF
+	     * Disconnect from SQL Server
+	     =sqldisconn(gnConnHandle)
+	  ENDIF
+	  IF lnCreate > 0
+	     * Create a Visual FoxPro database named TESTA
+	     CREATE DATABASE testa
+	     * Create a remote connection to SQL Server
+	     CREATE CONNECTION test1 DATASOURCE 'MyDSN' USERID 'SA' PASSWORD '' ;
+	        DATABASE 'PUBS'
+	     * Create three remote views to SQL Server
+	     IF lnUseDB > 0
+	        CREATE SQL VIEW testa REMOTE CONNECTION test1 SHARE ;
+	           AS SELECT * FROM dbo.test_a test_a
+	        CREATE SQL VIEW testb REMOTE CONNECTION test1 SHARE ;
+	           AS SELECT * FROM dbo.test_a test_a
+	        CREATE SQL VIEW testc REMOTE CONNECTION test1 SHARE ;
+	           AS SELECT * FROM dbo.test_a test_a
+	     ENDIF
+	     * Set Properties for the three remote views
+	     FOR i=1 TO 3
+	        ViewName="TEST"+CHR(64+i)
+	        =DBSETPROP(ViewName,'View','UpdateType',1)
+	        =DBSETPROP(ViewName,'View','WhereType',3)
+	        =DBSETPROP(ViewName,'View','UseMemoSize',255)
+	        =DBSETPROP(ViewName,'View','FetchSize',100)
+	        =DBSETPROP(ViewName,'View','MaxRecords',-1)
+	        =DBSETPROP(ViewName,'View','Tables','dbo.test_a')
+	        =DBSETPROP(ViewName,'View','Prepared',.T.)
+	        =DBSETPROP(ViewName,'View','FetchMemo',.T.)
+	        =DBSETPROP(ViewName,'View','SendUpdates',.T.)
+	        =DBSETPROP(ViewName,'View','BatchUpdateCount',1)
+	        =DBSETPROP(ViewName,'View','CompareMemo',.T.)
+	        =DBSETPROP(ViewName,'View','FetchAsNeeded',.F.)
+	        =DBSETPROP(ViewName,'View','ShareConnection',.T.)
+	     NEXT
+	     USE testa
+	     testb=AFIELDS(viewflds)
+	     FOR i=1 TO ALEN(viewflds,1)
+	        fld_name=viewflds[i,1]
+	        viewfield='TESTA'+"."+ALLTRIM(fld_name)
+	        IF i=1
+	           =DBSETPROP(viewfield,'Field','KeyField',.T.)
+	        ELSE
+	           =DBSETPROP(viewfield,'Field','KeyField',.F.)
+	        ENDIF
+	        =DBSETPROP(viewfield,'Field','Updatable',.T.)
+	        =DBSETPROP(viewfield,'Field','UpdateName',"dbo.test_a" + ;
+	           "."+ALLTRIM(fld_name))
+	     NEXT
+	     * Insert 100 records into the base table via remote view TESTA
+	     FOR j=1 TO 100
+	        INSERT INTO testa VALUES ; 
+	           (REPLICATE('0',6)+ALLTRIM(STR(j)),TTOC(DATETIME()+j))
+	     NEXT
+	     =TABLEUPDATE(.T.)
+	     SELECT testa
+	     USE testb IN 0
+	     * Get a Connection 'TEST1' is Busy message on next line
+	     * Select Ignore.
+	     USE testc IN 0
+	     CLOSE ALL
+	     gnConnHandle=SQLCONNECT('MyDSN','sa','')
+	     lnUseDB=0
+	     IF gnConnHandle > 0
+	        * Use the SQL Server PUBS database
+	        SQLCommand="USE PUBS"
+	        lnUseDB=sqlexec(gnConnHandle,SQLCommand)
+	        IF lnUseDB > 0
+	           * Drop Table TEST_A from the PUBS database
+	           SQLCommand="DROP TABLE TEST_A"
+	           =sqlexec(gnConnHandle,SQLCommand)
+	        ENDIF
+	        =sqldisconn(gnConnHandle)
+	     ENDIF
+	  ELSE
+	     =MESSAGEBOX('Unable to Create SQL Server Table',16)
+	  ENDIF
+	  SET SAFETY &lcsafestat
+	  SET EXCLUSIVE &lcexclstat
+	  SET MULTILOCKS &lcMultiLocks
+	  RETURN
+	
+	3. From the Command window, type "DO REMOVIEW," and observe that the program
+	  runs with no error messages.
+	
+	4. From the Command window, type "DO REMOVIEW," and observe that an error occurs
+	  when the program attempts to open the view named TESTC.
+	
+	5. When the error message appears, select the Ignore option.
+	
+	6. Change the following line of code:
+	
+	  =DBSETPROP(ViewName,'View','FetchSize',100)
+	
+	to read as follows:
+	
+	  =DBSETPROP(ViewName,'View','FetchSize',-1)
+	
+	7. From the Command window, type "DO REMOVIEW," and observe that the program
+	  runs with no error messages.
+	
+	REFERENCES
+	==========
+	
+	For additional information about Remote Views, please see the following articles
+	in the Microsoft Knowledge Base:
+	
+	Q137944 How to Create a Remote Connection or View Programmatically
+	
+	Q174807 HOWTO: Edit the SQL Statement of a Remote or Local View
+	
+	Q191343 PRB: Connection Busy Error with a Shared Connection
+	
+	Q191344 PRB: Base Table Fields Changed with Remote View
+	
+	(c) Microsoft Corporation 1999, All Rights Reserved. Contributions by John Desch,
+	Microsoft Corporation.
+	
+	
+	Additional query words: KBDSE
+	
+	======================================================================
+	Keywords          : kbSQL kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600 kbMDAC250 kbSQLProg 
+	Technology        : kbVFPsearch kbAudDeveloper kbMDACSearch kbMDAC250 kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+	Version           : WINDOWS:2.5,3.0,3.0b,5.0,5.0a,6.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

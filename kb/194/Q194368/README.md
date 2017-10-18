@@ -1,0 +1,200 @@
+---
+layout: page
+title: "Q194368: FIX: Operators Do Not Recursively Call Object Default Properties"
+permalink: kb/194/Q194368/
+---
+
+## Q194368: FIX: Operators Do Not Recursively Call Object Default Properties
+
+	Article: Q194368
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 6.0
+	Operating System(s): 
+	Keyword(s): kbGrpDSVB kbVS600sp3fix
+	Last Modified: 04-MAR-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	In Microsoft Visual Basic 5.0, the following code calls the default property of
+	obj:
+	
+	  Dim obj As Object
+	  If obj = 5 Then
+	
+	If the Object's default property returns an object, it recursively calls the
+	default property of that object until it finally finds a non-object property.
+	
+	Prior to Visual Basic 6.0 Service Pack 3 (SP3), Visual Basic 6.0 only invoked the
+	default property of the second level, at most. If the default property is also
+	an object, Visual Basic 6.0 generates the following error message:
+	
+	  Type Mismatch
+	
+	CAUSE
+	=====
+	
+	The way the comparison operators (=, >, <, etc.) evaluate objects was
+	changed in Visual Basic 6.0. However, the behavior was changed back in Visual
+	Basic 6.0 SP3.
+	
+	NOTE: Visual Basic 5.0 behavior for this case is undocumented and programmers
+	should not rely on this feature.
+	
+	RESOLUTION
+	==========
+	
+	- Install Visual Basic 6.0 SP3 or later.
+	
+	  -or-
+	
+	- Use the following workaround:
+	
+	  1. Add the following function to your project:
+	
+	        Public Function EvaluateObjToLong(obj As Object) As Long
+	              EvaluateObjToLong = obj
+	           End Function
+	
+	  2. Replace the following line:
+	
+	        if obj = 5 then
+	
+	  with:
+	
+	        if EvaluateObjToLong(obj) = 5 then
+	
+	NOTE: This is only a workaround for migrating from Visual Basic 5.0 to Visual
+	Basic 6.0. Programmers should not rely on this feature. The recursive evaluation
+	of the default property of the assignment operator may change in future
+	versions.
+	
+	The use of default properties, especially non-parameterized default properties,
+	is discouraged for the following reasons:
+	
+	- The code is harder to read because the person who reads your code must know
+	  exactly which property is the default to understand what you are really
+	  doing.
+	
+	- The code might not work the way you think it should and the behavior might
+	  change between different versions of Visual Basic.
+	
+	- If you forget to write the property name when you use an object that has a
+	  default property, Visual Basic considers that you are using the default
+	  property and you will not get an error message when you compile the code.
+	  However, if your object does not support a non-parameterized default
+	  property, the compiler generates an error message.
+	
+	STATUS
+	======
+	
+	This bug was corrected in Visual Studio 6.0 Service Pack 3.
+	
+	For more information about Visual Studio 6.0 Service Packs, please see the
+	following articles in the Microsoft Knowledge Base:
+	
+	  Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+	
+	  Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+	
+	NOTE: This behavior change is by design. The reasons for this are:
+	
+	- This change makes the behavior of late bound objects more closely match that
+	  of early bound objects.
+	
+	- The behavior of Visual Basic 5.0 permits the possibility of an infinite loop,
+	  which was determined to be much worse than this restriction.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Create a new ActiveX DLL project in Visual Basic 5. Class1 is created by
+	  default.
+	
+	2. From the Project menu, add two additional classes named Class2 and Class3 to
+	  the project.
+	
+	3. Add following code to Class1:
+	
+	        Public Property Get DefProp() As Object
+	           Set DefProp = New Class2
+	        End Property
+	
+	4. From the Tools menu, select Procedure Attributes. In the Procedure Attributes
+	  dialog box, click the Advanced >> command button, and then change the
+	  Procedure ID to "<Default>."
+	
+	5. Add the following code to Class2:
+	
+	        Public Property Get DefProp() As Object
+	           Set DefProp = New Class3
+	        End Property
+	
+	6. Set the DefProp of Class2 to be the default property, as in step 4.
+	
+	7. Add the following code to Class3:
+	
+	        Public Property Get DefProp() As Long
+	           DefProp = 5
+	        End Property
+	
+	8. Set the DefProp of Class3 to be the default property, as in step 4.
+	
+	9. From the File menu, add a Standard EXE project to the project group as
+	  Project2. Form1 is created by default. Set Project2 as the start up project.
+	
+	10. Add the following code to the General Declarations section of Form1:
+	
+	        Public Function EvaluateObjToLong(obj As Object) As Long
+	              EvaluateObjToLong = obj
+	           End Function
+	
+	           Private Sub Form_Load()
+	              Dim obj As Object
+	              Set obj = CreateObject("project1.Class1")
+	              If obj = 5 Then MsgBox "work"
+	           End Sub
+	
+	11. Press the F5 key to run the project, and note that a message box displays
+	  the word "work."
+	
+	12. Stop the project and save the project group.
+	
+	13. Open the project group in Visual Basic 6.0 (without Service Pack 3) and run
+	  the project. The following error message displays:
+	
+	  Run Time Error '13':
+	  Type Mismatch
+	
+	14. Change the line:
+	
+	        If obj = 5 Then MsgBox "work"
+	
+	to:
+	
+	         If EvaluateObjToLong(obj) = 5 Then MsgBox "work"
+	
+	15. Run the project again, and note that the Message box displays "work."
+	
+	Additional query words: kbDSupport kbDSD kbVBp kbVBp600 kbActiveX kbVBp500
+	
+	======================================================================
+	Keywords          : kbGrpDSVB kbVS600sp3fix 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600
+	Version           : :6.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

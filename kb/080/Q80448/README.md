@@ -1,0 +1,146 @@
+---
+layout: page
+title: "Q80448: What Is a Clean Boot for Windows 3.0?"
+permalink: kb/080/Q80448/
+---
+
+## Q80448: What Is a Clean Boot for Windows 3.0?
+
+	Article: Q80448
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:3.0,3.0a
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 01-OCT-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows versions 3.0, 3.0a 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	A "clean boot" is used for testing purposes and may reveal possible conflicts
+	between Windows and terminate-and-stay-resident (TSR) programs or device
+	drivers. There are different types of clean boot configurations listed below,
+	depending on the MS-DOS version being used, and whether Windows has been
+	installed.
+	
+	NOTE: This article explains how to clean boot your system up to the point when
+	you start Windows. To start Windows without loading any third-party programs,
+	you must clear the StartUp group, clear the LOAD= and RUN= entries in the
+	WIN.INI file, and ensure the SHELL= entry in the SYSTEM.INI file is loading
+	PROGMAN.EXE. Also, make sure the SYSTEM.INI file does not include third-party
+	virtual device drivers (VxDs) or other third-party Windows components.
+	
+	MORE INFORMATION
+	================
+	
+	To make changes to the CONFIG.SYS or AUTOEXEC.BAT files, use a text editor such
+	as the Notepad application packaged with Windows.
+	
+	If you have used third-party software to partition the hard drive (for example,
+	using Disk Manager) or to compress the hard drive (for example, using Stacker),
+	make sure that the appropriate device driver is installed in the CONFIG.SYS
+	file. Also, make sure that any necessary hardware (for example, a hard card)
+	device drivers are in the CONFIG.SYS file.
+	
+	Be sure to create backups of the AUTOEXEC.BAT and CONFIG.SYS files before making
+	any changes.
+	
+	ALWAYS make sure that a system disk is available before making any changes to the
+	CONFIG.SYS file. Refer to your MS-DOS manual for instructions on making a system
+	disk.
+	
+	Pre-Installation
+	----------------
+	
+	CONFIG.SYS                      AUTOEXEC.BAT
+	----------                      ------------
+	
+	BUFFERS=20                      PROMPT $P$G
+	FILES=30
+	<third-party disk partitioner>
+	<third-party disk compressor>
+	
+	MS-DOS Versions Earlier Than 5.0
+	--------------------------------
+	
+	CONFIG.SYS                      AUTOEXEC.BAT
+	----------                      ------------
+	
+	DEVICE=C:\HIMEM.SYS             PROMPT $P$G
+	FILES=60                        PATH C:\WINDOWS;C:\DOS;C:\ 
+	BUFFERS=20                      SET TEMP=C:\WINDOWS\TEMP
+	<third-party disk partitioner>
+	<third-party disk compressor>
+	
+	MS-DOS 5.0
+	----------
+	
+	CONFIG.SYS                      AUTOEXEC.BAT
+	----------                      ------------
+	
+	DEVICE=C:\DOS\SETVER.EXE        PROMPT $P$G
+	DEVICE=C:\DOS\HIMEM.SYS         PATH C:\WINDOWS;C:\DOS;C:\ 
+	FILES=60                        SET TEMP=C:\WINDOWS\TEMP
+	BUFFERS=20
+	<third-party disk partitioner>
+	<third-party disk compressor>
+	SHELL=C:\DOS\COMMAND.COM C:\DOS\ /P /E:512
+	
+	If the purpose of a device driver or command is unknown, DO NOT remove it. Most
+	device drivers and commands will display a message describing their purpose when
+	they are initialized.
+	
+	A clean boot DOES NOT include:
+	
+	- DOS=HIGH,UMB
+	
+	- EMM386.EXE
+	
+	- INSTALL=SHARE.EXE
+	
+	- INSTALL=FASTOPEN.EXE
+	
+	- Third-party memory managers
+	
+	- RAM disk devices
+	
+	- JOIN, GRAPHICS, PRINT, SUBST, APPEND
+	
+	- MODE for printer redirection
+	
+	- multiple path statements
+	
+	- MS-DOS-level mouse drivers
+	
+	- Third-party disk caches
+	
+	- Various third-party TSRs
+	
+	- LOGIMENU, CLICK
+	
+	- Virus checkers
+	
+	- Drivers for scanners/fax
+	
+	- Drivers for CD ROM/network
+	
+	- Tape backup spoolers/redirectors/buffers
+	
+	- Data acquisition units
+	
+	- Keyboard accelerators/buffers
+	
+	Additional query words: tshoot 3.0 3.0a clean boot print.com ramdrive.sys join.exe print.exe mode.com graphics.com subst.exe cleanboot
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+	Version           : WINDOWS:3.0,3.0a
+	
+	=============================================================================
+	

@@ -1,0 +1,85 @@
+---
+layout: page
+title: "Q173934: WD97: No Outlook Address Book File to Open on Hard Disk Drive"
+permalink: kb/173/Q173934/
+---
+
+## Q173934: WD97: No Outlook Address Book File to Open on Hard Disk Drive
+
+	Article: Q173934
+	Product(s): Word 97 for Windows
+	Version(s): WINDOWS:97
+	Operating System(s): 
+	Keyword(s): kbinterop word97
+	Last Modified: 14-NOV-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	In the Open dialog box (on the File menu, click Open) in Microsoft Word 97, you
+	can select "Outlook Address Book (*.olk)" in the Files Of Type list. However,
+	Microsoft Outlook does not create files with that file name extension, so there
+	are no files to open.
+	
+	CAUSE
+	=====
+	
+	Outlook does not create a separate .olk file to store addresses.
+	
+	WORKAROUND
+	==========
+	
+	To access an Outlook address book in Word, use either of the following methods.
+	
+	Export the Address Book from Outlook
+	------------------------------------
+	
+	To export the addresses from Outlook, follow these steps:
+	
+	1. On the File menu, click Import And Export.
+	
+	2. In the Import and Export Wizard dialog box, click to select Export To A File
+	  and then click Next.
+	
+	3. Click to select the folder you want to export from (for example, select the
+	  Contacts folder), and then click Next.
+	
+	4. In the "Create a file of type" list, click to select either "Comma Separated
+	  Values (Windows)" or "Tab Separated Values (Windows)," and then click Next.
+	
+	5. Type a name for the new file in the Save Exported File As box, and click
+	  Next.
+	
+	6. Click Map Custom Fields. Select the default map, and then click OK.
+	
+	7. Click Finish.
+	
+	After Outlook creates the .csv or .tsv file, you can open the file in Word.
+	
+	Use the Outlook Address Book as a Data Source for a Mail Merge
+	--------------------------------------------------------------
+	
+	For additional information about how to Use the Outlook address book as a data
+	source in Microsoft Word 97, click the article numbers below to view the
+	articles in the Microsoft Knowledge Base:
+	
+	  Q168236 WD97: Outlook Address Book Not Available in Mail Merge Helper
+	
+	  Q221178 WD97: Unable to Use Mail Merge with Outlook Address Book
+	
+	Additional query words: 8.0 8.00
+	
+	======================================================================
+	Keywords          : kbinterop word97 
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : WINDOWS:97
+	Issue type        : kbbug
+	
+	=============================================================================
+	

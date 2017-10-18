@@ -1,0 +1,88 @@
+---
+layout: page
+title: "Q237816: BUG: MSFLEXGRID Prints as Black Box After Installing VS SP3"
+permalink: kb/237/Q237816/
+---
+
+## Q237816: BUG: MSFLEXGRID Prints as Black Box After Installing VS SP3
+
+	Article: Q237816
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 6.0,6.0 SP3,6.0 SP5
+	Operating System(s): 
+	Keyword(s): kbprint kbActiveX kbOSWinNT400 kbOSWin2000 kbPrinting kbVBp kbVBp600 kbVS600sp3bug
+	Last Modified: 17-DEC-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Professional Edition for Windows, version 6.0, on platform(s):
+	   - the operating system: Microsoft Windows NT 
+	   - the operating system: Microsoft Windows 2000 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0, on platform(s):
+	   - the operating system: Microsoft Windows NT 
+	   - the operating system: Microsoft Windows 2000 
+	- Microsoft Visual Studio versions 6.0 SP3, 6.0 SP5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you use the PrintForm method of the Form object, if the Form contains a
+	Microsoft FlexGrid (MSFlexGrid) control, the MSFlexGrid control prints as a
+	black box. This only occurs on Windows NT and Windows 2000. The control prints
+	correctly on Windows 95 and Windows 98.
+	
+	RESOLUTION
+	==========
+	
+	To work around this problem, use the Microsoft Hierarchical FlexGrid
+	(MSHFlexGrid) control, which appears as "Microsoft Hierarchical FlexGrid Control
+	(SP3) (OLEDB)" in the Components dialog box. Switching to this control should
+	not require coding changes.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Visual Basic 6.0 running in
+	Visual Studio 6.0 Service Pack 3 (SP3) or SP5 under Windows NT 4.0 and Windows
+	2000.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Start a new Standard EXE project. Form1 is created by default.
+	
+	2. On the Project menu, click Components.
+	
+	3. In the Components dialog box, click "Microsoft FlexGrid Control 6.0 (SP3)".
+	  The name of the control is Msflexgrid.ocx. Click OK. Notice that a new icon
+	  is added to your toolbox for the FlexGrid control.
+	
+	4. Double-click the FlexGrid icon in the toolbox to add the control to Form1.
+	
+	5. In the General Declarations section of Form1, add the following code:
+	
+	  Private Sub Form_Load()
+	     Me.PrintForm
+	  End Sub
+	
+	6. Make sure that you have a default printer set up, and then press the F5 key
+	  to run the project. On the printout, notice that a solid black box appears
+	  where the FlexGrid should appear.
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbprint kbActiveX kbOSWinNT400 kbOSWin2000 kbPrinting kbVBp kbVBp600 kbVS600sp3bug 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2
+	Version           : :6.0,6.0 SP3,6.0 SP5
+	Issue type        : kbbug
+	Solution Type     : kbnofix
+	
+	=============================================================================
+	

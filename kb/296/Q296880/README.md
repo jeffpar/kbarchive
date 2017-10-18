@@ -1,0 +1,135 @@
+---
+layout: page
+title: "Q296880: XFOR: Messages Sent by Lotus Notes to Exchange Appear in Badmail"
+permalink: kb/296/Q296880/
+---
+
+## Q296880: XFOR: Messages Sent by Lotus Notes to Exchange Appear in Badmail
+
+	Article: Q296880
+	Product(s): Microsoft Exchange
+	Version(s): 5.5
+	Operating System(s): 
+	Keyword(s): kbExchange550
+	Last Modified: 26-JUL-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you send messages from any Lotus Notes client of Domino Server version
+	R5.0.4 through the Microsoft Exchange Connector for Lotus Notes to Exchange
+	Server 5.5 Service Pack 3 or 4 (SP3 or SP4) recipients, the messages may be
+	redirected to the Badmail folder.
+	
+	This situation can occur if the Lotus Notes client is installed on the Exchange
+	5.5 Server that is hosting the connector, and you are mailing from Lotus Notes
+	through Domino Server version R5.0.4 to the connector-hosting Exchange 5.5
+	server while the server is running McAfee GroupShield Exchange 4.5.
+	
+	This situation occurs only if you have downloaded and installed the post-SP3
+	Exchange Connector for Lotus Notes hotfix, q256032engi.exe, or if you have
+	installed SP4 for Exchange Server.
+	
+	When messages pass through the connector and arrive in the Exchange Server
+	Badmail folder, the following information may be recorded in the connectivity
+	administrator's Browse log:
+	
+	  08-Aug-2000 22:39:17- LME-NOTES-NTSMEX(01f9) 4 41255:Successfully acquired
+	  the next inbound next message
+	
+	  Ntshcs(4658) 08-Aug-2000 22:39:17- LME-NOTES-MEXIN(01e8) 2 31200:Exchange
+	  Server has returned the condition: 80004005
+	
+	  Mexint(218) 08-Aug-2000 22:39:17- LME-NOTES-MEXIN(01e8) 2 31201:Microsoft
+	  Package
+	  ID: General Error
+	
+	  Mexint(226) 08-Aug-2000 22:39:17- LME-NOTES-MEXIN(01e8) 2 31202:Extended MAPI
+	  information: Error: ????????????????
+	
+	  Mexint(238) 08-Aug-2000 22:39:17- LME-NOTES-MEXIN(01e8) 2 31202:a
+	
+	  Mexint(238) 08-Aug-2000 22:39:17- LME-NOTES-MEXIN(01e8) 2 31202:
+	  Component: No additional information available
+	  Version: 0
+	  Low Level Error: 50a
+	  Context: 501
+	
+	  Mexint(238)
+	  08-Aug-2000 22:39:17- LME-NOTES-MEXIN(01e8) 2 31203:Extended NT information:
+	  Unspecified error
+	
+	  Mexint(262) 08-Aug-2000 22:39:17- LME-NOTES-MEXIN(01e8) 2 31053:Message
+	  content contains invalid information
+	
+	  Mexe(2371) 08-Aug-2000 22:39:17- LME-NOTES-MEXIN(01e8) 2 31053:Message
+	  content contains invalid information
+	
+	  Mexe(2901) 08-Aug-2000 22:39:17- LME-NOTES-MEXIN(01e8) 2 31074:Moving message
+	  with invalid syntax to Bad Mail Folder
+	
+	CAUSE
+	=====
+	
+	This behavior can occur if you run McAfee GroupShield Exchange 4.5 on the
+	Exchange Server while GroupShield is scanning the Exchange Notes Connector's
+	x.400 Application Programming Interface (XAPI) mailbox.
+	
+	WORKAROUND
+	==========
+	
+	To work around this behavior, do one of the following:
+	
+	- Turn off GroupShield Exchange 4.5.
+	
+	- Apply the latest version of GroupShield Exchange.
+	
+	- Configure GroupShield to exclude the Exchange Notes Connector's XAPI mailbox
+	  from scans.
+	
+	MORE INFORMATION
+	================
+	
+	You can view the contents of the Badmail folder on the Queues tab of the
+	properties dialog box for Exchange Notes Connector. You can view more detailed
+	message properties if you open the Badmail folder with the GWClient utility.
+	
+	The affected versions of the Exchange Notes Connector include versions 2652.0
+	through 2653.11. Check the properties of the Lsdxa.exe file to determine the
+	version.
+	
+	The third-party products that are discussed in this article are manufactured by
+	companies that are independent of Microsoft. Microsoft makes no warranty,
+	implied or otherwise, regarding the performance or reliability of these
+	products.
+	
+	Microsoft provides third-party contact information to help you find technical
+	support. This contact information may change without notice. Microsoft does not
+	guarantee the accuracy of this third-party contact information.
+	
+	For information about how to contact Lotus Development Corporation and Network
+	Associates' McAfee, click the appropriate article number in the following list
+	to view the article in the Microsoft Knowledge Base:
+	
+	  Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+	
+	  Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+	
+	  Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbExchange550 
+	Technology        : kbZNotKeyword6 kbExchangeSearch kbExchange550 kbExchangeClientSearch kbZNotKeyword2
+	Version           : :5.5
+	Issue type        : kbprb
+	
+	=============================================================================
+	

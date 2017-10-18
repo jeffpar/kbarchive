@@ -1,0 +1,210 @@
+---
+layout: page
+title: "Q126054: Location of Windows NT Multimedia Drivers in the Registry"
+permalink: kb/126/Q126054/
+---
+
+## Q126054: Location of Windows NT Multimedia Drivers in the Registry
+
+	Article: Q126054
+	Product(s): Microsoft Windows NT
+	Version(s): 3.5
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 3.5 
+	- Microsoft Windows NT Workstation version 3.5 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article contains the path to the 16-bit and 32-bit sound and video drivers
+	in the Registry used by Microsoft Windows NT version 3.5.
+	
+	MORE INFORMATION
+	================
+	
+	The Registry Editor looks similar to SysEdit. The Registry windows are labeled
+	as follows:
+	
+	HKEY_LOCAL_MACHINE
+	------------------
+	
+	This contains information about the local computer system, including hardware and
+	operating system data such as bus type, system memory, device drivers, and
+	startup control data.
+	
+	HKEY_CLASSES_ROOT
+	-----------------
+	
+	This contains OLE and file-class association data (equivalent to the registry in
+	Windows for MS-DOS).
+	
+	HKEY_CURRENT_USER
+	-----------------
+	
+	Contains the user profile for the user who is currently logged on, including
+	environment variables, personal program groups, desktop settings, network
+	connections, printers, and application preferences.
+	
+	HKEY_USERS
+	----------
+	
+	Contains all actively loaded user profiles, including HKEY_CURENT_USER, which
+	always refers to a child of HKEY_USERS, and the default profile.
+	
+	HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Drivers
+	-----------------------------------------------------------------------
+	
+	Contains VIDC options, SndEvnts, Wave, and Timer drivers. It is similar to the
+	[drivers] section in the SYSTEM.INI file.
+	
+	HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows
+	
+	NT\CurrentVersion\drivers.desc
+	------------------------------
+	
+	Shows installed drivers and the associated name. For example,
+	iccvid.dll:REG_SZ:Cinepak Codec by SuperMatch. It is similar to the
+	[drivers.desc] section in the CONTROL.INI file.
+	
+	HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Drivers32
+	-------------------------------------------------------------------------
+	
+	Contains the 32-bit drivers associated with wavemapper, wave1 and wave2,
+	msacm.imaadpcm, .msadpcm, .msgsm610, and vidc. Similar to the [drivers] section
+	in the SYSTEM.INI file.
+	
+	HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\MCI
+	-------------------------------------------------------------------
+	
+	Contains the 16-bit sound drivers. Similar to [mci] section of the SYSTEM.INI.
+	
+	HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\MCI
+	
+	Extensions
+	----------
+	
+	Similar to the [mci extensions] section in the WIN.INI file.
+	
+	HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\MCI32
+	---------------------------------------------------------------------
+	
+	Contains 32-bit mci drivers. For example, CDAudio:REG_SZ:mcicda.dll.
+	
+	HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Midimap
+	-----------------------------------------------------------------------
+	
+	Contains the name of the MIDI Synth driver.
+	
+	HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\
+	
+	CurrentVersion\Userinstallable.drivers
+	--------------------------------------
+	
+	Indicates which wave channel the sound card uses.
+	
+	HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\WOW
+	-------------------------------------------------------------------
+	
+	Options for 16-bit Windows applications running under Windows NT.
+	
+	NOTE: These settings should be maintained only by the system.
+	
+	HKEY_CURRENT_USER\Software\Microsoft\Multimedia\Audio Compression
+	
+	Manager\NewPriority
+	-------------------
+	
+	Contains driver priority settings from Sound Mapper.
+	
+	HKEY_CURRENT_USER\Software\Microsoft\Multimedia\MCIAVI
+	------------------------------------------------------
+	
+	Contains video playback options. For example, "Zoom by 2", and "Skip Video Frames
+	if Behind."
+	
+	HKEY_CURRENT_USER\Software\Microsoft\Multimedia\msacm.imaadpcm
+	--------------------------------------------------------------
+	
+	Contains the encode and decode rates set in Control Panel, Drivers, for IMA
+	ADPCM.
+	
+	HKEY_CURRENT_USER\Software\Microsoft\Multimedia\msacm.msgsm610
+	--------------------------------------------------------------
+	
+	Contains the encode and decode rates set in Sound Mapper.
+	
+	HKEY_CURRENT_USER\Software\Microsoft\Multimedia\Sound Mapper
+	------------------------------------------------------------
+	
+	Contains the settings from the Sound Mapper Sound Device Preferences.
+	
+	HKEY_CURRENT_USER\Software\Microsoft\Multimedia\Sounds
+	------------------------------------------------------
+	
+	Contains the Sound Events settings.
+	
+	HKEY_USERS\S-1-5-...\Software\Microsoft\Multimedia\Audio Compression
+	
+	Manager \NewPriority
+	--------------------
+	
+	Contains driver priority settings from Sound Mapper.
+	
+	HKEY_USERS\S-1-5-...\Software\Microsoft\Multimedia\MCIAVI
+	---------------------------------------------------------
+	
+	Contains video playback options. For example, "Zoom by 2", and "Skip Video Frames
+	if Behind."
+	
+	HKEY_USERS\S-1-5-...\Software\Microsoft\Multimedia\msacm.imaadpcm
+	-----------------------------------------------------------------
+	
+	Contains the setting from Sound Mapper. Valid settings for MaxRTDecodeSetting and
+	MaxRTEncodeSetting are:
+	
+	  0--      No rates.
+	  0x1--   8000 Hz mono.
+	  0x2--   11025 Hz mono.
+	  0x3--   8000 Hz stereo.
+	  0x4--   22050 Hz mono / 11025 Hz stereo.
+	  0x5--   44100 Hz mono / 22050 Hz stereo.
+	  0x6--   All rates.
+	
+	NOTE: It is possible to manually adjust these values from the Registry Editor.
+	
+	HKEY_USERS\S-1-5-...\Software\Microsoft\Multimedia\msacm.msgsm610
+	-----------------------------------------------------------------
+	
+	Contains the setting from Sound Mapper. Valid settings for MaxRTDecodeSetting and
+	MaxRTEncodeSetting are:
+	
+	  0--      No rates.
+	  0x1--   8000 Hz mono.
+	  0x2--   11025 Hz mono.
+	  0x3--   22050 Hz mono.
+	  0x4--   44100 Hz mono.
+	  0x5--   All rates.
+	
+	NOTE: It is possible to manually adjust these values from the Registry Editor.
+	
+	HKEY_USERS\S-1-5-...\Software\Microsoft\Multimedia\Sound Mapper
+	---------------------------------------------------------------
+	
+	Contains the settings from the Sound Mapper Sound Device Preferences.
+	
+	Additional query words: kbhowto multi media multimedia multi-media mmtitles
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+	Version           : :3.5
+	
+	=============================================================================
+	

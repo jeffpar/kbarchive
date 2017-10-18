@@ -1,0 +1,376 @@
+---
+layout: page
+title: "Q194434: HOWTO: Using the Setup Wizard in Visual FoxPro 6.0"
+permalink: kb/194/Q194434/
+---
+
+## Q194434: HOWTO: Using the Setup Wizard in Visual FoxPro 6.0
+
+	Article: Q194434
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:2.5,6.0
+	Operating System(s): 
+	Keyword(s): kbAppSetup kbvfp600 kbMDAC250
+	Last Modified: 22-FEB-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 6.0 
+	- Microsoft Data Access Components version 2.5 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes the use of the Visual FoxPro 6.0 Setup Wizard. The Setup
+	Wizard creates distributions from the files in your distribution tree, along
+	with necessary system files.
+	
+	MORE INFORMATION
+	================
+	
+	Starting the Setup Wizard
+	-------------------------
+	
+	To start the Setup Wizard from the Tools menu, choose Wizards and then click
+	Setup. If this is the first time the Setup Wizard has run since your Visual
+	FoxPro 6.0 installation, it prompts you for a Distribution directory location.
+	Please select the "Create directory" button when this prompt displays.
+	
+	Step 1 - Locate Files
+	---------------------
+	
+	This step requires that you select a directory for your distribution tree.
+	Consider this as the source of the files you wish to distribute. The
+	distribution directory tree should already exist before you run the Setup
+	Wizard. All files and subdirectories of this directory are created when the
+	application installs on the user's computer. Be sure to include all files the
+	user requires, but do not include any files the user does not require, or files
+	that you do not wish the user to install.
+	
+	Please refer to the section "Preparing to Make Distribution Disks" in Chapter 25:
+	"Building an Application for Distribution" in the Visual FoxPro Programmers
+	Guide for details.
+	
+	The Setup Wizard records the options you set for each distribution tree and uses
+	them as default values the next time you create a setup routine from the same
+	distribution tree. This information is stored in the Wzsetup.ini file in the
+	distribution directory. There is also a Wzsetup.ini file in the Visual FoxPro
+	home directory, which enables the Setup Wizard to default to the distribution
+	directory from the previous run.
+	
+	NOTE: Do not attempt to use the DISTRIB directory that the Wizard creates in the
+	step "Starting the Setup Wizard" as the directory for your distribution tree. In
+	addition, it is a good idea to place your source tree outside the Visual FoxPro
+	directory.
+	
+	Step 2 - Specify Components
+	---------------------------
+	
+	Select the system features your application uses. The Setup Wizard creates a
+	setup routine that includes all necessary system files for the system features
+	you specify.
+	
+	The following table lists the sizes of files that you can include with your setup
+	routine.
+	
+	                                            Select this option if
+	   Option                         Size      your application...
+	   ---------------------------------------------------------------------
+	
+	   Visual FoxPro 6.0 Run-time     4 MB      Requires the Visual FoxPro
+	                                            Run-time file, Vfp6r.dll to
+	                                            execute. This .dll file
+	                                            is automatically included with
+	                                            your application's files, and
+	                                            installs correctly on the
+	                                            user's computer.
+	
+	   Microsoft 8.0 Graph Run-time   2.2 MB    Includes forms that use Graph
+	                                            8.0 controls.
+	
+	   ODBC Drivers                   4.3 MB    Communicates with tables other
+	                                            than Visual FoxPro .dbf files.
+	                                            Displays the ODBC Drivers
+	                                            dialog box so you can select
+	                                            the necessary drivers
+	                                            your application requires.
+	
+	   COM Components                 (varies)  Includes a Component Object
+	                                            Model (COM) component
+	                                            consisting of an .exe or .dll
+	                                            file. Displays the
+	                                            "Adding COM Components"
+	                                            dialog box. Please see the Add
+	                                            COM Components section for
+	                                            details. This was the "Add
+	                                            OLE Servers" dialog box in
+	                                            Visual FoxPro 5.0.
+	
+	   ActiveX Controls               (varies)  Requires support for multiple
+	                                            in-process servers, or
+	                                            enhanced internet and Web page
+	                                            functionality through
+	                                            installation of ActiveX
+	                                            controls. Displays the "Add
+	                                            ActiveX Controls" dialog box.
+	                                            See the ActiveX Controls
+	                                            section for details. This is
+	                                            new to Visual FoxPro 6.0.
+	
+	   HTML help engine               700 KB    Requires the Microsoft HTML
+	                                            Help engine for the custom
+	                                            Help file in your application.
+	                                            For details, see Creating
+	                                            Graphical Help and the
+	                                            online Help for the HTML Help
+	                                            Workshop. This is new to
+	                                            Visual FoxPro 6.0.
+	
+	The sizes listed in the preceding table represent the approximate bytes used
+	after the files install on the user's hard disk.
+	
+	Add COM Components Dialog Box
+	-----------------------------
+	
+	1. To add a COM Component, choose the Add button.
+	
+	2. In the Open dialog box, select the .exe or .dll file for the server, and then
+	  click the OK button. The component's accompanying .tlb and .vbr (.exe only)
+	  files must be available in the same location as the file you select. The
+	  component file and accompanying files can exist either inside or outside the
+	  distribution source directory.
+	
+	3. If your COM component is an .exe file, you must register it as local or
+	  remote. Please see the "Adding COM Components" section of the Help topic
+	  "Setup Wizard: Step 2 - Specify Components" for details.
+	
+	Add ActiveX Controls Dialog Box
+	-------------------------------
+	
+	This provides a list of the ActiveX controls registered on your computer. You
+	need to select any ActiveX controls that you want to include with your
+	application.
+	
+	In previous versions of Visual FoxPro, to distribute an ActiveX control you had
+	to copy the .ocx file to your distribution directory, and select the ActiveX
+	check box next to the .ocx file name in the Grid of Step 6. This is no longer
+	required, although you can still use this method if you wish. Here are the
+	differences in the two approaches.
+	
+	- You must register controls included through the Add ActiveX Controls dialog
+	  box in order for them to appear in the list, but you do not need to copy them
+	  to the distribution directory. If you install new ActiveX controls, you must
+	  click the Refresh button in the Add ActiveX Controls dialog box to include
+	  the new controls in the list.
+	
+	- You do not need to register controls included through the grid in Step 6, but
+	  you must place them in the distribution directory.
+	
+	We recommend the first approach because it does not require that you copy your
+	.ocx files into each distribution directory. This can be difficult if you have
+	multiple applications and want to upgrade a control to a newer version. Do not
+	include the same ActiveX controls using both approaches. Use the approach you
+	prefer, but only that one approach.
+	
+	Step 3 - Create Disk Image Directory
+	------------------------------------
+	
+	The Setup Wizard creates a disk image directory tree containing images for each
+	type you specify. If you select the Websetup option, the Setup Wizard creates a
+	single directory to hold all the files in compressed form. If you select the
+	Netsetup option, the Setup Wizard creates a single directory to hold all the
+	files in uncompressed form.
+	
+	   Image                   Usage
+	  ------------------------------------------------------------------------
+	
+	  1.44 MB 3.5-inch        When distributing to users that install from
+	                          diskette.
+	
+	  Websetup (compressed)   When distributing to users that install through
+	                          low speed connections like from intranet or
+	                          Internet. If you want to create a Web executable
+	                          (see Step 7 for details), you must select this
+	                          type.
+	
+	  Netsetup (uncompressed) When distributing to users that install through
+	                          a Local Area Network (LAN) or Wide Area Network
+	                          (WAN) network connection.
+	
+	You can create the disk image directory before you run the Setup Wizard. If you
+	want the Setup Wizard to create the directory for you, type a directory name in
+	the text box.
+	
+	Step 4 - Setup Options
+	----------------------
+	
+	The Setup Wizard creates installation dialog boxes with the title you specify in
+	the Dialog Caption box. It also places the copyright statement in the About
+	Setup dialog box that the user can access from the About command on the Setup
+	application's control menu. Entries are required in the Dialog Caption and Setup
+	Copyright boxes. The Post-Setup Executable entry is optional. If the Post-Setup
+	executable is a Visual FoxPro executable, it functions correctly but may cause
+	the setup program to hang when installed under Windows NT.
+	
+	NOTE: To advance to Step 5, you must enter text in both the "Setup dialog box
+	caption" and "Copyright information" text boxes. If you do not want to copyright
+	your application, enter None for Copyright information.
+	
+	Step 5 - Specify Default Destination
+	------------------------------------
+	
+	The setup routine places your application in the directory you specify in the
+	Default directory text box. The directory and file structure tree created in the
+	default directory by the setup program mimic the directory tree in the
+	distribution directory from Step 1. You should enter the default Start menu
+	program group in the Program group text box. The option buttons determine
+	whether the user can change both the destination directory and the program
+	group, or only the destination directory at install.
+	
+	Step 6 - Change File Settings
+	-----------------------------
+	
+	NOTE: To create a Start menu program group and icon for your application, you
+	must select the PM Item option, providing the information described in the
+	following table.
+	
+	The Setup Wizard lists your files in a grid. You can change the settings for the
+	listed files by clicking the item you want to change. Only the files contained
+	in your distribution directory structure are listed here. System files added
+	through Step 2 do not display in the list. The following table describes the
+	settings displayed in each column:
+	
+	  Column       Description
+	  ------------------------------------------------------------------------
+	
+	  File         The file name as created on the user's computer. You cannot
+	               edit the file name here but it depends on the file name as
+	               it appears in the distribution directory.
+	
+	  Target Dir   Selects the file directory. You can install the file on the
+	               user's computer into the Application directory (AppDir in
+	               the drop-down), Windows directory (WinDir), or Windows
+	               System directory (WinSysDir).
+	
+	  PM Item      If you select this option, the wizard displays the Program
+	               Group Menu Item dialog box so you can specify program item
+	               Properties such as, Description, Command Line, and Icon.
+	
+	               The Description is the text that appears with the program
+	               icon in the Start Menu.
+	
+	               The Command Line is the path to the file you want to
+	               display in the Start Menu. You should use an embedded %s
+	               sequence to replace the application directory. The "s" must
+	               be lowercase. Using the %s sequence ensures that the
+	               program item points to the files correctly even if your
+	               users specify a name for the application directory other
+	               than the default name. The following example specifies a
+	               command line for an executable called MyExe.exe, located in
+	               the distribution directory:
+	
+	                  %s\MyExe.exe
+	
+	               If you are creating a Menu Item for your executable, and
+	               you add an icon to your executable, you do not need to add
+	               an icon in this step. You can add the icon to your
+	               executable by right-clicking in the Project Manager window
+	               and selecting Project Info. Click the Attach Icon in the
+	               Project page of the Project Information dialog box. Make
+	               sure you add an icon with 16 x 16 and 32 x 32 images so the
+	               image displays correctly in all Explorer views.
+	
+	               If you specify an icon that is outside your source tree,
+	               the setup routine installs the icon in your application
+	               directory.
+	
+	  ActiveX      If you select the check box here, the setup generated
+	               registers the ActiveX control when you install the control
+	               on a user's computer. As mentioned earlier, for the control
+	               to appear in the list here, you must add it to your
+	               distribution directory. The preferred approach is to add
+	               the controls as in Step 2, which requires no action here in
+	               Step 6.
+	
+	Step 7 - Finish
+	---------------
+	
+	There are two check boxes at this point.
+	
+	The "Generate a Web executable file" check box enables only if you select the
+	Websetup check box in Step 3.
+	
+	If you select "Generate a Web executable file", the Setup Wizard creates a single
+	executable file from your distribution files, called Webapp.exe. This file is
+	located in the directory specified in Step 3. Use this option with the Websetup
+	option of Step 3 to maximize compression for fast Web download of your
+	application. This option can be time-consuming if you have specified many setup
+	options. The actual creation of the Web executable is done through a command
+	prompt application, and displays a MS- DOS or Command Prompt box that shows the
+	status.
+	
+	The "Create a dependency (.DEP) file" specifies that the Setup Wizard create
+	dependency files (an .ini-style file with a .dep extension). This file contains
+	not only dependency files needed by a component, but also any necessary
+	registration and localization information. This file is also located in the
+	directory specified in Step 3.
+	
+	When you choose Finish, the Setup Wizard records the configuration for use the
+	next time you create distribution disks from the same distribution tree. It then
+	starts creating the application disk or Net/Websetup images.
+	
+	A progress dialog box displays as the wizard moves through its required
+	functions.
+	
+	After the Setup Wizard has completes, the Setup Wizard Disk Statistics dialog box
+	displays. Here you find a list of files and their sizes, disk location if
+	applicable, and so forth. Select Done to close the dialog box and complete the
+	wizard.
+	
+	Now that you have created the images you specified, you may use them for
+	installation. If you chose the 1.44 MB 3.5 option to make disk images, copy the
+	images to diskettes. Note that you must copy the contents of the Disk<n>
+	directory to each disk, not the directory itself. This means that the files
+	themselves from each Disk<n> are in the root directory of the diskette,
+	rather than having the Disk<n> directory in the root directory of each
+	diskette. Then copy and combine the disks with the rest of your distribution
+	package.
+	
+	The Websetup and Netsetup directories contain Setup.exe, some other files
+	required by setup, and a file named Setup1.cab. Setup1.cab contains your
+	application files. The only difference between the two is that the files in
+	Setup1.cab are in a compressed form for the Websetup.
+	
+	To distribute a Netsetup or Websetup, place the contents of the Netsetup or
+	Websetup directories in a network share and allow users to connect and run
+	Setup.exe from there.
+	
+	To distribute a Web executable, allow users to download the Webapp.exe and run it
+	to install. You can rename this file to a more descriptive name if you wish, but
+	be sure to retain the .exe extension.
+	
+	REFERENCES
+	==========
+	
+	Visual FoxPro 6.0 Programmers Guide
+	
+	Visual FoxPro Programmers Guide in the Microsoft Developer Network CD; Chapter
+	13: "Compiling an Application"; Chapter 25: "Building an Application for
+	Distribution"; Chapter 26: "Creating Distribution Disks".
+	
+	(c) Microsoft Corporation 1998. All Rights Reserved. Contributions by Jim
+	Saunders, Microsoft Corporation
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbAppSetup kbvfp600 kbMDAC250 
+	Technology        : kbVFPsearch kbAudDeveloper kbMDACSearch kbMDAC250 kbVFP600
+	Version           : WINDOWS:2.5,6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

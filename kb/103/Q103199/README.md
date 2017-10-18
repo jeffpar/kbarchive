@@ -1,0 +1,215 @@
+---
+layout: page
+title: "Q103199: PC Mac: Cannot See Postoffice on Pathworks Server"
+permalink: kb/103/Q103199/
+---
+
+## Q103199: PC Mac: Cannot See Postoffice on Pathworks Server
+
+	Article: Q103199
+	Product(s): Microsoft Mail For PC Networks
+	Version(s): WINDOWS:3.0,3.2
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 26-OCT-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Mail for PC Networks, versions 3.0, 3.2, on platform(s):
+	   - the operating system: Mac OS (ALL) 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	After installing the Macintosh workstation, the user is not able to select the
+	Mail postoffice when the postoffice database files are on a Pathworks server.
+	
+	The most common symptom of this is when the user sees all the folders
+	(directories) that comprise the postoffice, and sees the files within the
+	folders, but the Macintosh client cannot find the postoffice.
+	
+	Usually, when the Macintosh client is first installed, a dialog box appears with
+	the following text:
+	
+	  The Preferences file could not be found.
+	  Where is your postoffice located?
+	
+	Selecting "Find PO" lets the user search for the postoffice data files. After
+	selecting the drive and the folder where the postoffice data files are located,
+	the Macintosh client responds with:
+	
+	  Select <postoffice name>?
+	
+	With the postoffice on the Pathworks server, the Macintosh client may not
+	recognize the folder with the postoffice as a valid Mail postoffice, and the
+	dialog box for selecting a drive and the folders remains active.
+	
+	CAUSE
+	=====
+	
+	The README.TXT file on the version 3.0 of Mail for PC Networks Server disk
+	(paragraph B.5) states the following:
+	
+	  Using a Non-PC-based Network Operating System
+	
+	  The Macintosh client assumes that the file path to the postoffice is either
+	  all uppercase or all lowercase letters. If your network operating system uses
+	  pathnames that are case sensitive (such as DEC Pathworks or NFS), make sure
+	  that for the Macintosh client, the path to the postoffice does not contain a
+	  mixture of uppercase and lowercase letters.
+	
+	Another possible difficulty when using a non-PC-based network operating system is
+	automatic file translation from PC text format to Macintosh text format by the
+	operating system. File translation must not occur for any postoffice data file.
+	
+	To confirm the problem is in the configuration of the Pathworks server, verify
+	the following:
+	
+	1. The Macintosh can mount the Pathworks share that contains the postoffice data
+	  files.
+	
+	2. The Macintosh views all directory and filenames in UPPERCASE. Lowercase or
+	  mixed case names are incorrect.
+	
+	3. The Macintosh can Get Info on the MASTER.GLB file, and this file's size is
+	  176 bytes. If the file is 174 bytes, then invalid file translation is
+	  occurring.
+	
+	4. A file can be copied from the Macintosh to the postoffice directory, and this
+	  file, when checked at the MS-DOS level, has the same size and date stamp that
+	  correspond to the Macintosh's Get Info on this file. If MS-DOS reports the
+	  file as 0 bytes, no date/time stamp, then the permissions for the PC are
+	  incorrect.
+	
+	If any of these steps fail, then the Pathworks server will need to be
+	reconfigured.
+	
+	NOTE: For more information regarding problem 1 listed above, please consult your
+	Pathworks manual for Macintosh connectivity.
+	
+	RESOLUTION
+	==========
+	
+	To reconfigure the Pathworks server for problems 2, 3, and 4, it will be
+	necessary to do the following:
+	
+	- Change a filename conversion and the file translation control file.
+	
+	-and-
+	
+	- Change the permissions for the clients.
+	
+	If the postoffice directories and files are already on the Pathworks server, then
+	they will need to be copied to an MS-DOS drive and deleted from the Pathworks
+	server. This is because the changes to the filename conversion and the
+	translations only affect new files, not existing files on the Pathworks server.
+	
+	To Change the Filename Conversion (Problem 2)
+	---------------------------------------------
+	
+	The DCL command required to define the filename conversion logical is:
+	
+	LOWERCASE     Filename is converted to all lowercase.
+	
+	MIXEDCASE     Filename is converted to mixed case. First letter
+	             of each word is capitalized and the remaining letters
+	             display in lowercase.
+	
+	UPPERCASE     Filename is converted to uppercase.
+	
+	Values for rule2:
+	
+	SPACES         Underscores are replaced with spaces.
+	
+	UNDERSCORES    Underscores are displayed as underscores.
+	
+	Mail for PC Networks, Macintosh client, and version 1.0b of Microsoft Mail
+	Connection Gateway both require all uppercase and underscores in the names of
+	the files that they access. The correct logical definition for this is:
+	
+	  DEFINE/SYS/EXEC MSAF$SERVER_VMS_NAME_CONVERSION "UPPERCASE,UNDERSCORES"
+	
+	For Invalid File Translation (Problem 3)
+	----------------------------------------
+	
+	The FILE_TYPES.DAT file in the SYS$COMMON:[MSA] directory on the VAX running
+	Pathworks needs to be edited. The file is a text file and any text editor can
+	modify it. The file translations defined in FILE_TYPES.DAT are
+	position-sensitive, meaning only the first translation that matches the MS-DOS
+	extension is used. The translations for the postoffice files should, therefore,
+	be placed as close to the beginning of the file as possible.
+	
+	NOTE: MICROSOFT CANNOT ASSIST IN PROBLEMS WITH MODIFICATION TO THE FILE_TYPES.DAT
+	FILE. It is up to the Administrator to rectify any problems on the Pathworks
+	Server. If there is a problem with modification to the file, please refer to
+	your Pathworks support provider.
+	
+	Each file extension used in the Microsoft Mail database must be defined in the
+	MSAF$FILE_TYPES.DAT file; thus, the entries in the MSAF$FILE_TYPES.DAT file for
+	the Mail postoffice must look like this:
+	
+	!Format   Attr   Semantic   "EXT"    Creator   Type    Translation
+	
+	*         *      *           ATT     mdos      BINA    none
+	*         *      *           GLB     mdos      BINA    none
+	*         *      *           GRP     mdos      BINA    none
+	*         *      *           HLP     mdos      BINA    none
+	*         *      *           INF     mdos      BINA    none
+	*         *      *           IDX     mdos      BINA    none
+	*         *      *           KEY     mdos      BINA    none
+	*         *      *           MAI     mdos      BINA    none
+	*         *      *           MBG     mdos      BINA    none
+	*         *      *           MEM     mdos      BINA    none
+	*         *      *           NME     mdos      BINA    none
+	*         *      *           TPL     mdos      BINA    none
+	*         *      *           USR     mdos      BINA    none
+	*         *      *           XTN     mdos      BINA    none
+	
+	NOTE: If the Mail Connection Gateway is installed and the Connection Store
+	directory structure is defined on a Pathworks volume, the following extension
+	must also be added to the MSAF$FILE_TYPES.DAT file.
+	
+	*         *      *           MSG     mdos      BINA    none
+	
+	Any time the filename conversion logical is defined and/or changed, or the
+	MSAF$FILE_TYPES.DAT file is changed, all file servers in Pathworks should be
+	stopped and restarted for the changes to take effect.
+	
+	To stop and restart the file server, as SYSTEM type:
+	
+	  " ADMIN/MSA FILE_SERVER STOP
+	  ADMIN/MSA FILE_SERVER START" (without the quotation marks)
+	
+	Default Permissions Not Correct for the User (Problem 4)
+	--------------------------------------------------------
+	
+	The Macintosh is able to read MS-DOS files, but the PC cannot read Macintosh
+	files. This is NOT a Macintosh file problem but a Pathworks permissions problem.
+	Use the Pathworks Administrator's Guide to grant all users of the postoffice
+	share full Read Write permissions to all levels of the postoffice directory
+	structure and all files within the directories.
+	
+	After all these steps have been accomplished and verified, copy the postoffice
+	directories back to the Pathworks server, and verify the Macintosh can correctly
+	view the directories, files, MASTER.GLB, and can write files the PC can read.
+	Then run the Macintosh client and connect to the postoffice.
+	
+	If problems still occur, delete the database and do all the steps above again,
+	but instead of restarting the file server, reboot the Pathworks server by typing
+	as SYSTEM:
+	
+	  "REBOOT" (without the quotation marks)
+	
+	Then reinstall the postoffice directories and files.
+	
+	Additional query words: 3.00 3.20
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMailSearch kbZNotKeyword3
+	Version           : WINDOWS:3.0,3.2
+	
+	=============================================================================
+	

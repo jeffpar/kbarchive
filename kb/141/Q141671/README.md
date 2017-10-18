@@ -1,0 +1,77 @@
+---
+layout: page
+title: "Q141671: Searching for Computer Industry Sites on the Internet"
+permalink: kb/141/Q141671/
+---
+
+## Q141671: Searching for Computer Industry Sites on the Internet
+
+	Article: Q141671
+	Product(s): Microsoft Product Support Information
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 30-JUL-2001
+	
+	SUMMARY
+	=======
+	
+	There are several search services on the Internet that allow you to enter
+	keywords, such as a company or product name, and receive a list of sites that
+	contain information on those keywords. This article provides the addresses of
+	two of the most popular sites.
+	
+	To search for a company site, enter the complete name of the company on the query
+	line; if you fail to use the complete company name, you may receive unexpected
+	results. For example, if you query on the word "apple," the query returns hits
+	not only on Apple Computer, but also any hits on sites concerned with growing,
+	selling, or cooking with apples.
+	
+	MORE INFORMATION
+	================
+	
+	Lycos can be accessed at http://www.lycos.com/reference/faq.html. Lycos
+	considers the Internet a massive catalog of information, data, and documents.
+	They provide a catalog for this wealth of information and a means to search the
+	catalog. The Lycos FAQ page (at the http address above) provides a complete
+	introduction to the services and history of Lycos in the form of an FAQ.
+	
+	The Lycos Home Page provides a query line, several Search options, and several
+	Display options, all of which you can choose from a list box. To query the Lycos
+	catalog, enter your query terms or keywords on the query line, and then click
+	Search. The /reference/search-help.html page provides instructions on how to use
+	the search features.
+	
+	When your search is complete, Lycos displays the results of the search by number
+	of URLs containing your search terms, the number of documents containing your
+	search terms, and a relevancy ranking with the most relevant listings at the top
+	of the list.
+	
+	There are also News, Hot Lists, Point Reviews, and Help jumps, each containing
+	current information on the subject category. Lycos claims to index over 90% of
+	the World Wide Web, and it includes FTP and Gopher sites.
+	
+	YAHOO, or Yet Another Hierarchical Officious Oracle, is one of the most popular
+	Web search sites and can be accessed at http://www.yahoo.com.
+	
+	On the YAHOO Home Page you find a hierarchical listing of categories by subject,
+	a query line, and a Search button. To query on all listings, enter your search
+	terms on the query line and click the search button. To query in one subject
+	category only, click the category title and jump to the category page; then, use
+	the query line on that page. Near the Search button is the Options jump-text. If
+	you jump to this page, you can compose Boolean searches using AND and OR
+	operators.
+	
+	When your search is complete, YAHOO displays the results of the search, organized
+	by category. Appended at the bottom of each search is an Other Search Engines
+	list that includes Lycos, Web Crawler, Inforseek, and DejaNews. Clicking on one
+	of these names takes you to that search service; these services are smaller, or
+	index a limited range of topics.
+	
+	Additional query words: URL websites WWW WEBpage resource vendor
+	
+	======================================================================
+	Keywords          :  
+	
+	=============================================================================
+	

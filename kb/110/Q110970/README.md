@@ -1,0 +1,80 @@
+---
+layout: page
+title: "Q110970: INFO: Use of the ON SHUTDOWN Command"
+permalink: kb/110/Q110970/
+---
+
+## Q110970: INFO: Use of the ON SHUTDOWN Command
+
+	Article: Q110970
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:2.5,2.5a,2.5b,3.0,5.0,6.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 03-AUG-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 6.0 
+	- Microsoft FoxPro for Windows, versions 2.5, 2.5a, 2.5b 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The ON SHUTDOWN command specifies a command that executes when you try to exit
+	FoxPro for Windows or Microsoft Windows.
+	
+	MORE INFORMATION
+	================
+	
+	The command specified in ON SHUTDOWN is executed if you try to exit FoxPro for
+	Windows by double-clicking the FoxPro Control-menu box, by choosing Exit from
+	the FoxPro Control menu, or by issuing the QUIT command in the Command window or
+	in a program.
+	
+	If you try to exit Microsoft Windows from the Windows Program Manager while
+	FoxPro for Windows is open, control is returned to FoxPro for Windows and the
+	command you specify in ON SHUTDOWN is executed.
+	
+	The ON SHUTDOWN command is typically a DO command that executes a routine to
+	display a dialog box. The dialog box asks if you are sure you want to exit the
+	current application and FoxPro for Windows. If you want to exit the application,
+	the routine can close any open files, clean up the FoxPro for Windows
+	environment, and then execute the QUIT command. If you don't want to exit the
+	current application, the routine can return control to the application.
+	
+	NOTE: If you cannot exit the development version of FoxPro for Windows, try
+	typing "ON SHUTDOWN" (without the quotation marks) in the Command window to
+	clear the current ON SHUTDOWN command and allow FoxPro for Windows to exit
+	normally.
+	
+	Command Window Example
+	----------------------
+	
+	1. Type the following in the Command window:
+	
+	        ON SHUTDOWN DO cleanup.prg
+	
+	2. Create a program named CLEANUP.PRG containing the following code:
+	
+	        WAIT WINDOW "Performing clean-up tasks" NOWAIT
+	        * Place the code here that you want FoxPro to execute when it
+	        * quits.
+	        QUIT  && Force FoxPro to quit
+	
+	3. Quit FoxPro using any method.
+	
+	Note that the WAIT WINDOW message is displayed when you try to quit FoxPro.
+	
+	Additional query words: VFoxWin FoxWin 2.50 akz
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro250 kbFoxPro250a kbFoxPro250b kbVFP300 kbVFP500 kbVFP600
+	Version           : WINDOWS:2.5,2.5a,2.5b,3.0,5.0,6.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

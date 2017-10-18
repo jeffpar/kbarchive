@@ -1,0 +1,77 @@
+---
+layout: page
+title: "Q171035: Modem Connection Remains After You Disconnect from MSN"
+permalink: kb/171/Q171035/
+---
+
+## Q171035: Modem Connection Remains After You Disconnect from MSN
+
+	Article: Q171035
+	Product(s): The Microsoft Network
+	Version(s): WINDOWS:1.3,2.0,2.5
+	Operating System(s): 
+	Keyword(s): kbenv kbtoolkbfaq
+	Last Modified: 31-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The Microsoft Network versions 1.3, 2.0, 2.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you try to disconnect from MSN, The Microsoft Network, the modem may remain
+	connected to MSN.
+	
+	CAUSE
+	=====
+	
+	This behavior can occur if you connect to MSN using an Internet service provider
+	other than MSN, and you do not have the correct Dial-Up Networking options
+	enabled.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, use either of the following methods:
+	
+	Method 1
+	--------
+	
+	NOTE: This method works only if you are using Windows 95 OEM Service Release 2,
+	Microsoft ISDN 1.1 Accelerator Pack, or MSN 2.5.
+	
+	1. Double-click My Computer, and then double-click Dial-Up Networking.
+	
+	2. Click Connections, and then click Settings.
+	
+	3. Click the following check boxes to select them, and then click OK:
+	   - Show An Icon On Taskbar After Connected
+	
+	   - Prompt For Information Before Dialing
+	
+	   - Show A Confirmation Dialog After Connected
+	
+	
+	Method 2
+	--------
+	
+	1. Click Start, point to Programs, point to Accessories, and then click Dial-Up
+	  Networking.
+	
+	2. Double-click the Dial-Up Networking connection you use to connect to MSN.
+	
+	3. If the connection is open, click Disconnect.
+	
+	Additional query words: 1.20
+	
+	======================================================================
+	Keywords          : kbenv kbtool kbfaq
+	Technology        : kbMSNSearch kbMSN200 kbMSN130 kbMSN250
+	Version           : WINDOWS:1.3,2.0,2.5
+	Issue type        : kbprb
+	
+	=============================================================================
+	

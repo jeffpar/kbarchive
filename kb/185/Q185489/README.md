@@ -1,0 +1,76 @@
+---
+layout: page
+title: "Q185489: WinNT HP DJ600 Plotter Driver Requires Plotter Firmware 3.40"
+permalink: kb/185/Q185489/
+---
+
+## Q185489: WinNT HP DJ600 Plotter Driver Requires Plotter Firmware 3.40
+
+	Article: Q185489
+	Product(s): Microsoft Windows NT
+	Version(s): WinNT:4.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 09-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 4.0 
+	- Microsoft Windows NT Workstation version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you print to a Hewlett-Packard DJ600 plotter, output is reversed or
+	contains scrambled images.
+	
+	CAUSE
+	=====
+	
+	The plotter firmware required for this printer is revision 3.40. Previous
+	versions do not work with the Windows NT driver. Because this is an older
+	plotter, users may not be aware of the updated firmware.
+	
+	RESOLUTION
+	==========
+	
+	To obtain the updated firmware, contact Hewlett-Packard Technical Support or
+	your local Hewlett-Packard reseller and request the following firmware update:
+	
+	  Part number (U.S. only); match with your model:
+	  HP PN C2847-600889
+	  HP PN C2848-600889
+	
+	MORE INFORMATION
+	================
+	
+	For information about how to contact Hewlett-Packard, query in the Knowledge
+	Base for one of the following articles:
+	
+	  ARTICLE-ID: Q65416
+	  TITLE : Hardware and Software Third-Party Vendor Contact List, A-K
+	
+	  ARTICLE-ID: Q60781
+	  TITLE : Hardware and Software Third-Party Vendor Contact List, L-P
+	
+	  ARTICLE-ID: Q60782
+	  TITLE : Hardware and Software Third-Party Vendor Contact List, Q-Z
+	
+	
+	The third-party contact information included in this article is provided to help
+	you find the technical support you need. This contact information is subject to
+	change without notice. Microsoft in no way guarantees the accuracy of this
+	third-party contact information.
+	
+	Additional query words: garbage character characters print printing plot plotters designjet
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+	Version           : WinNT:4.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

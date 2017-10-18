@@ -1,0 +1,105 @@
+---
+layout: page
+title: "Q243419: Setpass Does Not Update the NetWare Password with SYSKEY"
+permalink: kb/243/Q243419/
+---
+
+## Q243419: Setpass Does Not Update the NetWare Password with SYSKEY
+
+	Article: Q243419
+	Product(s): Microsoft Windows NT
+	Version(s): winnt:4.0
+	Operating System(s): 
+	Keyword(s): kbnetwork kbtool kbWinNT400PreSP7Fix
+	Last Modified: 08-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	File and Print Services for NetWare (FPNW) server includes the setpass
+	command-line tool (located in SYSVOL volume) to change users' password.
+	
+	If both SYSKEY and RestrictAnonymous are used on the server, only the Security
+	Accounts Manager (SAM) password is updated and not the NetWare password. The
+	next time you log on, the NetWare connection against the FPNW server does not
+	work and you must type your old password.
+	
+	CAUSE
+	=====
+	
+	When the system starts, it tries to load all password notification packages.
+	When SYSKEY is used, Fpnwclnt.dll (the notification package installed by FPNW)
+	does not initialize because it tries to gain access to data encrypted with
+	SYSKEY, but the key is not yet initialized by the system.
+	
+	
+	RESOLUTION
+	==========
+	
+	A supported fix is now available from Microsoft, but it is only intended to
+	correct the problem described in this article and should be applied only to
+	systems experiencing this specific problem.
+	
+	To resolve this problem, contact Microsoft Product Support Services to obtain the
+	fix. For a complete list of Microsoft Product Support Services phone numbers and
+	information on support costs, please go to the following address on the World
+	Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	NOTE: In special cases, charges that are normally incurred for support calls may
+	be canceled, if a Microsoft Support Professional determines that a specific
+	update will resolve your problem. Normal support costs will apply to additional
+	support questions and issues that do not qualify for the specific update in
+	question.
+	
+	The English-language version of this fix should have the following file
+	attributes or later:
+	
+	  Date       Time      Size     File name    Platform
+	  ---------------------------------------------------
+	  09/23/99   9:08:03   169 KB   SamSrv.Dll   I386
+	  09/23/99   9:08:54   282 KB   SamSrv.Dll   Alpha
+	
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Windows NT 4.0.
+	
+	MORE INFORMATION
+	================
+	
+	For additional information about SYSKEY and RestrictAnonymous, click the article
+	numbers below to view the articles in the Microsoft Knowledge Base:
+	
+	  Q143475 Windows NT System Key Permits Strong Encryption of the SAM
+	
+	  Q143474 Restricting Information Available to Anonymous Logon Users
+	
+	FPNW includes a password notification package (Fpnwclnt.dll) which is called on
+	users passwords changes so that it can update the NetWare password. For more
+	information about this feature, refer to the following Microsoft Knowledge Base
+	article:
+	
+	  Q151082 HOWTO: Password Change Filtering & Notification in Windows NT
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbnetwork kbtool kbWinNT400PreSP7Fix 
+	Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+	Version           : winnt:4.0
+	Hardware          : ALPHA x86
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

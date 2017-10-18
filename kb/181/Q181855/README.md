@@ -1,0 +1,78 @@
+---
+layout: page
+title: "Q181855: HOWTO: Create HotKey to Start EXE in Windows 95 or Windows NT"
+permalink: kb/181/Q181855/
+---
+
+## Q181855: HOWTO: Create HotKey to Start EXE in Windows 95 or Windows NT
+
+	Article: Q181855
+	Product(s): Microsoft FoxPro
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbnokeyword kbvfp300 kbvfp500 kbvfp600
+	Last Modified: 12-AUG-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0b, 5.0, 5.0a, 6.0 
+	- Microsoft FoxPro for Windows, version 2.6a 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes how to start any .exe or FoxPro program from a Hot Key
+	within an application or from the Windows Desktop under either Windows 95 or
+	Windows NT 4.0.
+	
+	MORE INFORMATION
+	================
+	
+	Customers often want to enter an application more quickly or open additional
+	applications from within FoxPro like Calc.exe (the Windows calculator program)
+	or Winword.exe. This method can also be used to open unrelated Help files or
+	Docs Online without searching the Desktop or folders.
+	
+	The following steps can be used to open most programs with hot keys.
+	
+	WARNING: Hot Keys are global and may interfere with other applications' Hot
+	Keys.
+	
+	1. Click the Windows Start button.
+	
+	2. Highlight Settings and then select Taskbar.
+	
+	3. In the Taskbar Properties dialog box select the Start Menu Programs tab.
+	
+	4. Click the Advanced button.
+	
+	5. Click the "+" to expand the Programs Folder, if required, under the Start
+	  Menu folder.
+	
+	6. Open the folder of your choice.
+	
+	7. Right-click a short cut, select Properties and then select the Shortcut tab.
+	
+	8. Click inside the Shortcut Key text box and press CTRL+ALT+A.
+	
+	9. Click the Apply button and then click OK.
+	
+	10. Close all open windows and use the Hot Key to open an application.
+	
+	NOTE: This Hot Key will be global throughout Windows.
+	
+	(c) Microsoft Corporation 1998, All Rights Reserved. Contributions by Mike
+	Fernald, Microsoft Corporation
+	
+	
+	Additional query words: Increases performance starting speed slow heads data entry faster another
+	
+	======================================================================
+	Keywords          : kbnokeyword kbvfp300 kbvfp500 kbvfp600 
+	Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro260a kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

@@ -1,0 +1,171 @@
+---
+layout: page
+title: "Q131035: Updated Network Client Files Included with Windows NT 3.51"
+permalink: kb/131/Q131035/
+---
+
+## Q131035: Updated Network Client Files Included with Windows NT 3.51
+
+	Article: Q131035
+	Product(s): Microsoft Windows NT
+	Version(s): 2.2c,3.0,3.11,3.51
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 04-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 3.51 
+	- Microsoft Windows NT Server version 3.51 
+	- Microsoft Network Client for MS-DOS version 3.0 
+	- Microsoft Windows for Workgroups version 3.11 
+	- Microsoft TCP/IP-32 for Windows for Workgroups, version 3.11 
+	- Microsoft LAN Manager, version 2.2c 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The Windows NT Server version 3.51 compact disc contains updated modules for the
+	following client network operating systems:
+	
+	- Microsoft Network Client for MS-DOS, version 3.0
+	
+	- Windows for Workgroups version 3.11
+	
+	- LAN Manager for MS-DOS, version 2.2c
+	
+	- TCP/IP-32 for Windows for Workgroups, version 3.11
+	
+	- Remoteboot Service for Windows NT Server version 3.51
+	
+	- Additional Network Interface Card (NIC) Drivers from the Windows Driver
+	  Library (WDL)
+	
+	MORE INFORMATION
+	================
+	
+	Microsoft Network Client for MS-DOS Updated Files
+	-------------------------------------------------
+	
+	The following files have been updated and are located in \CLIENTS\MSCLIENT
+	directory on the Windows NT Server 3.51 compact disc:
+	
+	  Name           Size (Bytes)    Date
+	  --------------------------------------
+	  DNR.EXE         31,312         5/26/95
+	  MSDLC.EXE       31,284         5/26/95
+	  NET.EXE        450,342         5/26/95
+	  TINYRFC.EXE     37,024         5/26/95
+	  WINSOCK.DLL     48,288         5/26/95
+	
+	The updated files above address specific problems related to Microsoft Network
+	Client for MS-DOS and provide the following:
+	
+	- Logon across routers to #DOM domain.
+	
+	- DNR option available in Network Client Setup.
+	
+	- A fix to prevent the system from hanging when DLC is used on a Pentium
+	  computer.
+	
+	
+	Windows for Workgroups Version 3.11 Update Files
+	------------------------------------------------
+	
+	The following files have been updated and are located in \CLIENTS\WFW directory
+	on the Windows NT Server 3.51 compact disc:
+	
+	  Name           Size (Bytes)    Date
+	  --------------------------------------
+	  NDIS.386        27,846         5/26/95
+	  NET.EXE        462,650         5/26/95
+	  NET.MSG         76,234         5/26/95
+	  NETAPI.DLL     109,120         5/26/95
+	  NWNBLINK.386    37,964         5/26/95
+	  VNETSUP.386     14,647         5/26/95
+	  VREDIR.386      90,354         5/26/95
+	  VSERVER.386    101,566         5/26/95
+	
+	The updated files address specific problems related to Windows for Workgroups
+	version 3.11 and provide the following:
+	
+	- Support for inter-network browsing (they allow browsing to Windows NT domains
+	  from subnets that have only Windows for Workgroups clients).
+	
+	- A fix for problems using the NWLink protocol with the Ethernet_II frame type
+	  when connecting to a Windows NT Server.
+	
+	
+	
+	LAN Manager for MS-DOS Version 2.2c Update Files
+	------------------------------------------------
+	
+	The following files have been updated and are located in \CLIENTS\LANMAN
+	directory on the Windows NT Server 3.51 compact disc:
+	
+	  Name           Size (Bytes)    Date
+	  -------------------------------------
+	  DNR.EXE         31,312         5/26/95
+	  LMSETUP.EXE    234,016         5/26/95
+	  MSDLC.EXE       31,284         5/26/95
+	  WINSOCK.DLL     48,288         5/26/95
+	
+	The updated files above address specific problems related to LAN Manager for
+	MS-DOS version 2.2c and provide the following:
+	
+	- A DNR IP address is not required if you are a DHCP-enabled client.
+	
+	- A fix to prevent the system from hanging when using DLC on a Pentium
+	  computer.
+	
+	
+	TCP/IP-32 for Windows for Workgroups, Version 3.11 Updated Files
+	----------------------------------------------------------------
+	
+	The version located in the \CLIENTS\TCP32WFW directory on the Windows NT Server
+	3.51 compact disc is TCP/IP-32 for Windows for Workgroups, version 3.11b.
+	
+	Remoteboot Service for Windows NT Server Version 3.51
+	-----------------------------------------------------
+	
+	The following files have been updated and are located in \CLIENTS\RPL\UPDATE
+	directory on the Windows NT Server 3.51 compact disc:
+	
+	  Name           Size (Bytes)    Date
+	  --------------------------------------
+	  ELNKII.RPL       246           5/26/95
+	  EPRO.RPL         694           5/26/95
+	  MADGE.RPL        125           5/26/95
+	  RPLUPD.BAT     2,531           5/26/95
+	
+	Additional Network Interface Card (NIC) Drivers
+	-----------------------------------------------
+	
+	The following new files have been added to the \CLIENTS\WDL\UPDATE directory on
+	the Windows NT Server 3.51 compact disc:
+	
+	  NIC Driver Name                     New Files
+	  -----------------------------------------------
+	  Intel EtherExpress Pro              EPRO.DOS
+	  DEC Etherworks 3                    EWRK3.DOS
+	  IBM Token Ring II                   IBMTOK.DOS
+	  Madge 16/4 Smart Ringnode           SMARTND.DOS
+	  Novell/National/Eagle NE2000 plus   ETHAT2.DOS
+	  PCNet Ethernet Adapter v 1.1        PCNTND.DOS
+	  Proteon 1346/47 v 1.0               PRO4AT.DOS
+	  Racore 16/4                         TR2KNDIS.DOS
+	  SMC Ethercard 8216 series           SMC8000.DOS
+	  SMC Toekncard Plus (SMC8115T)       SMC8100.DOS
+	  3COM Token Link III                 TLNK3.DOS
+	
+	Additional query words: prodnt 2.20 3.11 wfw wfwg lm
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS351search kbAudDeveloper kbZNotKeyword kbTCPIPSearch kbLanManSearch kbWFWSearch kbZNotKeyword3 kbNetworkClientSearch kbWFW311 kbLanMan220c kbNetworkClient300DOS kbTCPIP311
+	Version           : :2.2c,3.0,3.11,3.51
+	
+	=============================================================================
+	

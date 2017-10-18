@@ -1,0 +1,96 @@
+---
+layout: page
+title: "Q81854: Using Edlin to Edit Files Too Large to Fit in Memory"
+permalink: kb/081/Q81854/
+---
+
+## Q81854: Using Edlin to Edit Files Too Large to Fit in Memory
+
+	Article: Q81854
+	Product(s): Microsoft Disk Operating System
+	Version(s): MS-DOS:3.x,4.x,5.0,5.0a
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 17-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft MS-DOS operating system versions 3.1, 3.2, 3.21, 3.3, 3.3a, 4.0, 4.01, 5.0, 5.0a 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Edlin can be used to edit files that are of any size. Using the write (W) and
+	append (A) commands within Edlin, you are able to load and edit portions of a
+	file one at a time (that is, load, edit, write to disk, load another segment,
+	edit, write to disk, and so on).
+	
+	MORE INFORMATION
+	================
+	
+	When you start Edlin in MS-DOS 5.0, it reads lines from your file until memory
+	is 75 percent full. (Many previous versions of MS-DOS restrict the amount of the
+	file that can be read to about 64K minus the size of the Edlin program file.) To
+	edit the remainder of the file, you first have to write an equivalent amount of
+	lines in memory to disk and then load the rest of the file, as follows:
+	
+	1. Write a set amount of lines to the disk, using the W command. W will write
+	  all of the current lines to disk, clearing them from the memory buffer. Once
+	  written, the lines are no longer in memory to modify. If you want to specify
+	  a certain number of lines to be written, use "nW", where n is the amount of
+	  lines to be written from memory to disk.
+	
+	2. Use the Append command to load the rest of the file [or as much as can be
+	  read]. To specify a certain number of lines to be read, specify "nA", where
+	  where n is the number of lines to be loaded from disk to memory.
+	
+	Repeat these two commands until you are finished editing the entire file.
+	
+	Tips
+	----
+	
+	- Whenever you write to the disk, it renumbers the lines of the file that are
+	  in memory, starting with 1.
+	
+	  For example, writing 2 lines of a 10 line file from memory to disk:
+	
+	  Ten lines of the         Write to disk          Only eight lines of the
+	  file in memory  ->          2W          ->      file remain in memory
+	                                               starting at 1.
+	
+	  1: @echo off                                    1: prompt $p$g
+	  2: path=c:\dos                                  2: set temp=c:\dos
+	  3: prompt $p$g                                     ..
+	  4: set temp=c:\dos                                 ..
+	
+	- Specify the same number of lines that will be written to disk as will be
+	  appended to memory. This way, you can keep track of where you are in a file.
+	  (Try writing and appending 50 or 100 lines, for example, 50W and 50A.)
+	
+	- After Edlin reads the last line of the file into memory, the message "End of
+	  input file" is displayed. After editing that portion, you can use the Exit
+	  command to exit Edlin and save the rest of the file.
+	
+	- Remember that this process is one way, from the front to the end of the file.
+	  To edit a portion that has already been written to disk, you have to quit the
+	  session of Edlin and start from the beginning again.
+	
+	When the MS-DOS 5.0 Editor is started using the EDIT command, it occupies about
+	289K of RAM. The largest size file that can be edited using Editor is about the
+	largest executable program size (as reported by MEM or CHKDSK) minus 289K. For
+	more information on the largest size file that Editor can modify, query on the
+	following words in the Microsoft Knowledge Base:
+	
+	  "largest document size" (without the quotation marks)
+	
+	Additional query words: 3.x 4.x 5.00 5.00a
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMSDOSSearch kbMSDOS321 kbMSDOS400 kbMSDOS320 kbMSDOS330a kbMSDOS310 kbMSDOS500 kbMSDOS330 kbMSDOS401 kbMSDOS500a
+	Version           : MS-DOS:3.x,4.x,5.0,5.0a
+	
+	=============================================================================
+	

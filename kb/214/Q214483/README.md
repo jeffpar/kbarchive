@@ -1,0 +1,154 @@
+---
+layout: page
+title: "Q214483: Implements Statement Requires Interface Derived from IDispatch"
+permalink: kb/214/Q214483/
+---
+
+## Q214483: Implements Statement Requires Interface Derived from IDispatch
+
+	Article: Q214483
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): WINDOWS:5.0,6.0; winnt:5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbVBp kbVBp500 kbVBp600 kbVC kbVC500 kbVC600 kbGrpDSVB
+	Last Modified: 07-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+	- Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+	- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If you create an interface, which is derived from an interface other than
+	IUnknown or IDispatch, this interface cannot be implemented using the Implements
+	statement in Visual Basic. Doing so causes the following compile error:
+	
+	  Compiler error
+	  Bad interface for Implements: interface is derived from another pure interface
+	  with non-restricted methods.
+	
+	CAUSE
+	=====
+	
+	In the Visual Basic documentation for "Implements Statement", the following is
+	stated:
+	
+	  "Visual Basic does not implement derived classes or interfaces."
+	
+	RESOLUTION
+	==========
+	
+	Change your interface definition of the class, deriving it from either IDispatch
+	or IUnknown.
+	
+	STATUS
+	======
+	
+	This behavior is by design.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce the Behavior
+	-------------------------------
+	
+	Create an ATL COM project in Visual C++:
+	
+	1. Create a new Visual C++ project named ATLTest specifying the project category
+	  to be ATL COM AppWizard.
+	
+	2. In the ATL COM AppWizard dialog box, select "Dynamic Link Library" as the
+	  server type, and then click Finish.
+	
+	3. From the Visual C++ Insert menu, select New Class.
+	
+	4. In the New Class dialog box, type "CMyobj" as the class name, specify "Dual"
+	  as the interface type, and increase the "Number of interfaces" to 2. Two
+	  interfaces named IMyobj and IMyobjInt2 appear in the interface Names dialog
+	  box. Click OK.
+	
+	5. Select the ClassView tab, expand the ATLTest classes node, right-click the
+	  "IMyobj" interface, and select Add Method. In the Add Method to Interface
+	  dialog box, type "Test" in the Method Name field and click OK.
+	
+	6. Right-click the "IMyobjInt2" interface and select Add Method. In the Add
+	  Method to Interface dialog box, type "Bar" in the Method Name field and click
+	  the OK button.
+	
+	7. Click the FileView tab, expand the ATLTest files node, and then expand the
+	  Source Files node. Open the ATLTest.idl file and locate the interface
+	  definition for IMyobjInt2. Delete the existing interface and replace it with
+	  the following:
+	
+	     interface IMyobjInt2 : IMyobj
+	        {
+	           [id(2), helpstring("method Bar")] HRESULT Bar();
+	        };
+	
+	8. Expand the Header Files node and open the Myobj.h file. Comment out the
+	  following line from the "CMyobj" class definition:
+	
+	     public IDispatchImpl<IMyobj, &IID_IMyobj, &LIBID_ATLTESTLib>,
+	
+	9. From the Build menu, choose Rebuild All to create the DLL.
+	
+	Create a Visual Basic Client Program:
+	
+	1. Create a Visual Basic Standard EXE project. Form1 is created by default.
+	
+	2. From the Project menu, choose References, and add a reference to ATLTest.
+	
+	3. From the Project menu, choose Add Class Module to add Class1 to the project.
+	
+	4. Paste the following code in the General Declarations section of Class1:
+	
+	     Implements IMyobjInt2
+	
+	5. Run the project. The following error occurs:
+	
+	  Compiler error
+	  Bad interface for Implements: interface is derived from another pure interface
+	  with non-restricted methods.
+	
+	Steps to Resolve the Problem:
+	
+	1. Close the Visual Basic client program.
+	
+	2. Open the ATLtest project in Visual C++.
+	
+	3. In the FileView of the project, open the ATLTest.idl file, find the interface
+	  "IMyobjInt2" definition, and replace the reference to IMyobj with IDispatch.
+	
+	4. Open the Myobj.h file and remove the comment you added to the "CMyobj" class
+	  definition:
+	
+	5. From the Build menu, choose Build All.
+	
+	6. Go back to the Visual Basic client program. If you attempt to run the project
+	  at this point you will receive the following error message:
+	
+	  Compiler error
+	  Object module needs to implement 'Bar' for interface 'IMyobjInt2'
+	
+	7. Drop down the left hand combo box of Class1's Code window and select
+	  IMyobjInt2 to implement the Bar method. Then the sample no longer generates
+	  an error.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbVBp kbVBp500 kbVBp600 kbVC kbVC500 kbVC600 kbGrpDSVB 
+	Technology        : kbVCsearch kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600 kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+	Version           : WINDOWS:5.0,6.0; winnt:5.0,6.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

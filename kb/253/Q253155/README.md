@@ -1,0 +1,134 @@
+---
+layout: page
+title: "Q253155: HOWTO: Review Visual Basic WebClasses for CSSI Vulnerability"
+permalink: kb/253/Q253155/
+---
+
+## Q253155: HOWTO: Review Visual Basic WebClasses for CSSI Vulnerability
+
+	Article: Q253155
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): WINDOWS:6.0
+	Operating System(s): 
+	Keyword(s): kbVBp kbVBp600 kbDSupport
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes how to identify and correct Visual Basic WebClass (IIS
+	Applications) that are susceptible to cross-site scripting security issues
+	(CSSI). Only input that is not correctly validated or formatted makes your
+	application vulnerable to attack.
+	
+	This article focuses on Visual Basic 6.0 Webclass functionality (for example,
+	replacement tags). For general guidelines regarding Active Server Pages (ASP)
+	code, please see the following article in the Microsoft Knowledge Base:
+	
+	  Q253119 HOWTO: Review ASP Code for CSSI Vulnerability
+	
+	MORE INFORMATION
+	================
+	
+	Visual Basic Webclass developers should follow the guidelines for ASP code.
+	These include:
+	
+	- Set the CHARSET for the page through the use of either a <META> tag or
+	  Response.Charset.
+	
+	- Use Server.HTMLEncode() to encode any output that is generated from user
+	  input.
+	
+	- Use Server.URLEncode() to encode any output that is generated from user input
+	  that is included as part of a URL.
+	
+	The following sample code is an example of how you can use Server.HTMLEncode()
+	and Server.URLEncode() in a Visual Basic 6.0 Webclass application to protect
+	against the cross-site scripting vulnerability. It contains an HTML template
+	(with replacement tags) and the associated Webclass source code. User-generated
+	output that is included in the page source is encoded through the use of
+	Server.HTMLEncode(). User-generated output that is included in the URL is
+	encoded though the use of Server.URLEncode():
+	
+	Template1.htm
+	
+	  <HTML>
+	  <HEAD>
+	  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset= ISO-LATIN-1">
+	  <TITLE>Webclass Sample</TITLE>
+	  </HEAD>
+	  <BODY background=CSSIDSR.ASP?WCI=Template1&WCE=Body1&WCU>
+	  <P>
+	  Here is some user generated output: <WC@UserOutput></WC@UserOutput>
+	  </P>
+	  <P>
+	  Here is a URL that contains user generated output: <a href="<WC@URLFor></WC@URLFor>&userdata=<WC@UserOutputURL></WC@UserOutputURL>">Click here!</a>
+	  </P>
+	  </BODY>
+	  </HTML>
+	
+	WebClass Code
+	
+	  Option Explicit
+	  Option Compare Text
+	
+	  Private Sub WebClass_Start()
+	    Set NextItem = Template1
+	  End Sub
+	
+	  Private Sub Template1_Respond()
+	    Template1.WriteTemplate
+	  End Sub
+	
+	  Private Sub Template1_ProcessTag(ByVal TagName As String, TagContents As String, SendTags As Boolean)
+	    Select Case TagName
+	      Case "WC@UserOutput"
+	        TagContents = Server.HTMLEncode("User Generated Output Here")
+	      Case "WC@URLFor"
+	        TagContents = URLFor(Template1)
+	      Case "WC@UserOutputURL"
+	        TagContents = Server.URLEncode("User Generated Output for URL Here")
+	    End Select
+	  End Sub
+	
+	REFERENCES
+	==========
+	
+	For more information, see the following advisory from the Computer Emergency
+	Response Team (CERT) at Carnegie Mellon University:
+	
+	  CERT(r) Advisory CA-2000-02 Malicious HTML Tags Embedded in Client Web
+	  Requests (http://www.cert.org/advisories/CA-2000-02.html)
+	
+	For additional information, click the article numbers below to view the articles
+	in the Microsoft Knowledge Base:
+	
+	  Q252985 HOWTO: Prevent Cross-Site Scripting Security Issues
+	
+	  Q253119 HOWTO: Review ASP Code for CSSI Vulnerability
+	
+	  Q253121 HOWTO: Review MTS/ASP Code for CSSI Vulnerability
+	
+	  Q253120 HOWTO: Review Visual InterDev Generated Code for CSSI Vulnerability
+	
+	  Q253117 Preventing Internet Explorer and Outlook Express Cross-Site Scripting
+	  Security Issues
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbVBp kbVBp600 kbDSupport 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+	Version           : WINDOWS:6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

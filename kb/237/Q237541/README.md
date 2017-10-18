@@ -1,0 +1,202 @@
+---
+layout: page
+title: "Q237541: XADM: Exchange Perfmon Counters Not Visible on Cluster"
+permalink: kb/237/Q237541/
+---
+
+## Q237541: XADM: Exchange Perfmon Counters Not Visible on Cluster
+
+	Article: Q237541
+	Product(s): Microsoft Exchange
+	Version(s): 5.5
+	Operating System(s): 
+	Keyword(s): exc55
+	Last Modified: 08-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.5 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	Microsoft Exchange Server Performance Monitor counters may not be available
+	after the Exchange Server services have moved to the second node of a Windows NT
+	cluster. The counters may not be available using the Exchange Server virtual
+	name or the actual computer name when you select the computer in Performance
+	Monitor.
+	
+	CAUSE
+	=====
+	
+	The behavior occurs when the order of software installed on the Cluster Server
+	nodes is different. The performance key for each of the Exchange Server services
+	contains the index in the
+	HKEY_LOCAL_MACHINE\Software\Microsoft\WindowsNT\CurrentVersion\Perflib\009\Counters
+	registry key, where the first and last counters for the Exchange Server services
+	exist. If you install software into a cluster in a different order, the values
+	for each service are different for each server in the cluster. The registry
+	replication in a cluster is currently set to replicate all subkeys for the
+	particular service key, including the performance key. This overwrites the
+	values of one server with the values of another server in the cluster. Hence,
+	the values in the Counters key on the second node no longer match the indices in
+	performance keys of the services.
+	
+	RESOLUTION
+	==========
+	
+	A supported fix is now available from Microsoft, but it is only intended to
+	correct the problem described in this article and should be applied only to
+	systems experiencing this specific problem.
+	
+	To resolve this problem, contact Microsoft Product Support Services to obtain the
+	fix. For a complete list of Microsoft Product Support Services phone numbers and
+	information on support costs, please go to the following address on the World
+	Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	NOTE: In special cases, charges that are normally incurred for support calls may
+	be canceled, if a Microsoft Support Professional determines that a specific
+	update will resolve your problem. Normal support costs will apply to additional
+	support questions and issues that do not qualify for the specific update in
+	question.
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	Component: Setup Program
+	
+	+---------------------------+
+	| File name   | Version     | 
+	+---------------------------+
+	| Srvrmax.exe | 5.5.1960.10 | 
+	+---------------------------+
+	
+	
+	
+	After you obtain the fix, follow these steps to apply it:
+	
+	1. Create a new folder on your hard disk, and then copy the contents of the
+	  Server\Setup\I386 folder from the Exchange Server 5.5 CD-ROM to this new
+	  folder.
+	
+	2. Rename the Setup.exe file in the folder on the hard disk to Setup.old, and
+	  then rename the Srvrmax.exe file to Setup.exe.
+	
+	3. Run Setup.exe from the folder on the hard disk.
+	
+	4. When the installation process is finished, apply the latest service pack for
+	  Exchange Server 5.5, even if it was already applied previously. For
+	  additional information about how to obtain the latest service pack for
+	  Exchange Server 5.5, click the article number below to view the article in
+	  the Microsoft Knowledge Base:
+	
+	  Q191014 XGEN: How to Obtain the Latest Exchange Server 5.5 Service Pack
+	
+	WORKAROUND
+	==========
+	
+	The available fix only corrects the behavior on new installations of Exchange
+	Server into a cluster environment. If you have already installed Exchange
+	Server, perform the following steps to manually correct the behavior:
+	
+	1. In Microsoft Windows NT Cluster Administrator, right-click the directory
+	  service.
+	
+	  NOTE: You must be at the console itself to run the Windows NT Cluster
+	  Administrator program; you cannot run the program from a remote location.
+	
+	2. Click the Registry Replication tab, remove all of the existing entries, and
+	  then click Apply to apply these changes.
+	
+	  NOTE: It is very important that you remove ALL of the existing entries in the
+	  the Registry Replication tab before you proceed to the next step.
+	
+	3. Add the following entries for the directory service:
+	
+	  SYSTEM\CurrentControlSet\Services\MSExchangeDS\Diagnostics
+	
+	  SYSTEM\CurrentControlSet\Services\MSExchangeDS\Parameters
+	
+	4. Repeat the above steps to add the specified entries for each of the following
+	  Exchange Server services:
+	
+	   - The system attendant:
+	
+	  SYSTEM\CurrentControlSet\Services\MSExchangeSA\Diagnostics
+	
+	  SYSTEM\CurrentControlSet\Services\MSExchangeSA\Parameters
+	
+	   - The message transfer agent:
+	
+	  SYSTEM\CurrentControlSet\Services\MSExchangeMTA\Diagnostics
+	
+	  SYSTEM\CurrentControlSet\Services\MSExchangeMTA\Parameters
+	
+	   - The information store:
+	
+	  SYSTEM\CurrentControlSet\Services\MSExchangeIS\Diagnostics
+	
+	  SYSTEM\CurrentControlSet\Services\MSExchangeIS\ParametersPublic
+	
+	  SYSTEM\CurrentControlSet\Services\MSExchangeIS\ParametersPrivate
+	
+	  SYSTEM\CurrentControlSet\Services\MSExchangeIS\ParametersSystem
+	
+	  SYSTEM\CurrentControlSet\Services\MSExchangeIS\ParametersNetIF
+	
+	     NOTE: Make sure that you do NOT replicate the root keys for each service
+	     (For example, the SYSTEM\CurrentControlSet\Services\MSExchangeDS key).
+	
+	5. You must now reload the Performance Monitor counters on each node in the
+	  cluster, after you make the changes to registry replication. You need to
+	  locate the following .ini files. These files are located in the Exchsrvr\Bin
+	  directory by default.
+	
+	  Dsactrs.ini
+	  Mtaperf.ini
+	  Mdbperf.ini
+	
+	  This file is located in the %Winnt%\System32 directory by default:
+	
+	  Eseperf.ini
+	
+	  To reload the counters, at a command prompt in the directory that contains the
+	  .ini files, enter the following commands:
+	
+	  unlodctr MSExchangeDS
+	  lodctr dsactrs.ini
+	  unlodctr MSExchangeMTA
+	  lodctr mtaperf.ini
+	  unlodctr MSExchangeIS
+	  lodctr mdbperf.ini
+	  unlodctr ESE97
+	  lodctr eseperf.ini
+	
+	  The Lodctr.exe and Unlodctr.exe files are included in the %Winnt%\System32
+	  folder.
+	
+	
+	6. Restart both nodes of the Exchange Server cluster.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products that are
+	listed at the beginning of this article.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : exc55 
+	Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+	Version           : :5.5
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

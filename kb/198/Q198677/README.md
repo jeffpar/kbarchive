@@ -1,0 +1,400 @@
+---
+layout: page
+title: "Q198677: XFOR: Troubleshooting Common Exchange Notes Connector Problems"
+permalink: kb/198/Q198677/
+---
+
+## Q198677: XFOR: Troubleshooting Common Exchange Notes Connector Problems
+
+	Article: Q198677
+	Product(s): Microsoft Exchange
+	Version(s): 5.5
+	Operating System(s): 
+	Keyword(s): exc55
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.5 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article contains suggestions to help you troubleshoot the most common
+	problems that can occur with the Microsoft Exchange Connector for Lotus Notes.
+	
+	MORE INFORMATION
+	================
+	
+	Initial Installation and Configuration
+	--------------------------------------
+	
+	- Make sure that the customer has installed the Exchange Notes Connector and
+	  configured it. The initial installation of the Exchange Notes Connector only
+	  copies the files to the correct locations on the hard disk. You need to
+	  configure the Exchange Notes Connector after you install it. Depending on the
+	  version of the Exchange Notes Connector (version 3.2 or 5.5), you either run
+	  the Setup program from the Linkage folder or the Notes Configuration utility
+	  from the Exchange Connectivity folder.
+	
+	- Make sure that if you are running the Exchange Notes Connector version 3.2,
+	  that you have the latest patch installed. The latest patch can be found at
+	  the following location:
+	
+	  ftp://ftp.microsoft.com/bussys/exchange/exchange-public/fixes/Eng/Linkage/Patch827/
+	
+	  You can download the Lspatch.exe file, which is simply a compressed executable
+	  file. Copy and run the lspatch -o -d command in the Linkage folder.
+	
+	- There is a known problem that can occur if you run more than seven Exchange
+	  Server-related services. The following error message is displayed:
+	
+	  Initialization of the dynamic link library D:\WINNT\system32\USER32.dll has
+	  failed. The process is terminating abnormally.
+	
+	For additional information about the workaround for this problem, click the
+	article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q158308 XFOR: Err Msg: Initialization of Dynamic Link Library Failed
+	
+	- The default location for the Notes.ini file is in the Winnt folder. This file
+	  is most likely used by the Exchange Notes Connector, barring any changes to
+	  the system path or manual modifications of the Notes Client INI file
+	  location. You can check this in the Linkage.ini or Exchconn.ini files, or in
+	  the properties for the Exchange Notes Connector.
+	
+	- Ensure that the Notes folder is in the Windows NT System path, or the
+	  Exchange Notes Connector will not work. However, if the Exchange Notes
+	  Connector seems to start even though the Notes folder is not specified, there
+	  may be multiple copies of the Nnotes.dll file on your disk. Remove all copies
+	  of this file, except the copy that is in your Notes folder. You must restart
+	  the computer for this change to take effect.
+	
+	- Ensure that the Notes Client can make a successful connection to the target
+	  Notes server. Open up the Mail.box (Notes Mail Router) file on the Notes
+	  server. Check to make sure that you do not open databases on Local.
+	
+	- Make sure that the Notes Client 4.52 or later is installed properly with the
+	  correct Notes ID assigned to that client. To check this; start the Notes
+	  Client, and check in the menu "File" [ASCII 150] "Tools" [ASCII 150] "User
+	  Id". When you start the Notes Client and open any Notes database, you should
+	  not be presented with the option to specify a password. Note that although
+	  other 4.x version Notes Clients might work, they are not supported.
+	
+	- The permissions on the Mail.box file should theoretically be set to
+	  Depositor. However, there may be cases where you need to set the permissions
+	  to Manager level, with Delete permissions. The most common way to set the
+	  permissions on the Mail.box file is to start the Notes Client on the Notes
+	  server with the Notes Server ID or as the administrator, and open the
+	  Mail.box file locally. The Remote.exe utility can also simulate a Notes open
+	  session that can determine if those databases are accessible from the
+	  Exchange Notes Connector server.
+	
+	- If the Notes Client is unable to make a connection to the Notes server, check
+	  the following:
+	
+	   - Make sure that other Notes users are able to connect.
+	
+	   - Check the Location document, which is located on the bottom right corner
+	     in the Notes Client. It should say "Office," as opposed to "Home." There
+	     are also other names possible, edit the Location document to confirm the
+	     names.
+	
+	   - If the Notes server name is different than its Microsoft Windows NT server
+	     name, the problem is very likely a name resolution problem. Check all the
+	     usual host and network basic input/output system (NetBIOS) name resolution
+	     mechanisms.
+	
+	   - Check the Person document for the Exchange Notes Connector ID as well.
+	     Make sure that the mail or home server actually points to the correct
+	     Notes server. In some cases, during the creation of the Exchange Notes
+	     Connector ID, the mail or home server may be incorrect.
+	
+	- After you start the Exchange Notes Connector, start the LinkAge Administrator
+	  (version 3.2) or Connectivity Administrator (version 5.5). Check the
+	  processes to make sure that they are all idle. Check the log browser for
+	  information and possible error messages that may be logged by the Exchange
+	  Notes Connector.
+	
+	- Another common problem occurs because of the name of the Notes server that is
+	  specified in the Exchange Notes Connector configuration. In Notes, all
+	  configuration assumes a fully qualified Notes address, for example,
+	  <Notes_server>/<Notes_domain>. A common symptom of this problem
+	  is the logging of the following entries in the Browse log:
+	
+	  1998/03/02 05:23:28-LME-NOTES-NTSMEX(0157) 1 41217:Error opening Notes Mail
+	  Box: notessna/Dns!!exchange.box
+	
+	  To try to resolve this problem, simply specify the Notes server name without
+	  the Notes domain in the Exchange Notes Connector property [ASCII 150]
+	  options. However, use this method with caution. This method is not guaranteed
+	  to resolve the problem; there may be other issues occurring concurrently, and
+	  this method may cause the resolution of Notes doclinks to Uniform Resource
+	  Locator (URL) links to stop working.
+	
+	- When the Exchange Notes Connector starts, two mail files are created, the
+	  Exchange.box and Exchange.bad files (if the Notes server and the Exchange
+	  Notes Connector use the default configuration). If the files were created
+	  manually, check to make sure that the Exchange Notes Connector ID has Manager
+	  level access. Microsoft strongly recommends that you let the Exchange Notes
+	  Connector create these files during startup; this eliminates any possible
+	  permission or access control list (ACL) errors.
+	
+	- When a message is sent from Notes to the Exchange Server domain, you may
+	  receive an error message that states that a route could not be found for a
+	  domain. Check the Foreign Domain document and ensure that the Notes server
+	  has been recycled as well.
+	
+	- There is a small possibility that the Notes domain may actually be the same
+	  as the Exchange Server foreign domain. This can only occur with a first time
+	  Notes server installation in which the Notes domain is given as "Exchange."
+	  Obviously this would conflict with the "Exchange" Foreign Domain. This
+	  results in very strange behavior between Exchange Server and Notes,
+	  especially with directory synchronization (dirsync).
+	
+	- If you have checked all of the items above and the Exchange Notes Connector
+	  processes are not all "Idle," reset the Notes.ini file. The Notes.ini file is
+	  generally located in the Winnt folder. To reset the Notes.ini file, locate
+	  the following lines in the file, and delete all the lines in the Notes.ini
+	  file except these lines (note that you can also reset the Notes server by
+	  changing the KitType to 2):
+	
+	  [Notes]
+	
+	  KitType=1 Directory=d:\notes\data WinNTIconPath=d:\notes\data\W32
+	
+	  Then start the Notes Client again; it prompts you to supply the usual initial
+	  Notes Client configuration information.
+	
+	- Make sure that if there are other Exchange Server sites that are connected by
+	  using an Exchange connector (an X.400 Connector, a Site Connector, and so
+	  on), those sites have the Notes Proxy Address Generator installed. In
+	  general, you need to do this for all of the users in downstream sites who
+	  want to communicate to Notes users. There are currently two ways to do this:
+	
+	   - Run the Exchange Connectivity (version 5.5) or Linkage (version 3.2) Setup
+	     program that is installed on the Exchange Server with the Exchange Notes
+	     Connector, and select the option to install a downstream Notes proxy
+	     address. You are prompted for a server in that particular site.
+	
+	     -or-
+	
+	   - Manually run the executables in either the Exchconn\Install or
+	     Linkage\Install folders.
+	
+	  Some users, generally custom recipients, may be missing the Notes proxy
+	  address in their list of e-mail addresses. You can force the Notes proxy
+	  address for all of the users in the site by issuing the following command
+	  from either the C:\Linkage\Install or C:\Exchsrvr\Connect\Exchconn\Install
+	  folder, as applicable:
+	
+	  MEXUPADD /Server= MEXServerName /Org= MEXOrganization /Site= MEXSite
+	  /Machine=<i386 or alpha> /Addrtype=NOTES /UPDATE /SF
+	
+	  NOTE: The above command is one path; it has been wrapped for readability.
+	
+	Mail Flow Problems
+	------------------
+	
+	- The two most important files in Notes are the Exchange.box and Mail.box
+	  files. Most mail flow problems are related to these two files. The most
+	  common problems are permissions or ACL settings problems. Select the Notes
+	  database, then from the Notes menu, select, "File" [ASCII 150] "Database"
+	  [ASCII 150] "Access Control." Make sure that the Exchange Notes Connector ID
+	  has been granted Manager access with Delete Documents selected.
+	
+	- There is also a small possibility that either or both of the Exchange.box and
+	  Mail.box files are corrupted. To correct these mail files, run "Database
+	  Tools" from "File" [ASCII 150] "Tools" [ASCII 150] "Server Administration."
+	  You can select the database and "Tool." Select "DB Fixup." Consult the Notes
+	  administrator for further details before you start this tool. You can start
+	  the DB Fixup tool by issuing a command on the Notes server console as well,
+	  for example:
+	
+	  LOAD FIXUP EXCHANGE.BOX
+	
+	- The easiest way to test mail flow is to send e-mail to an Exchange Server
+	  user from another Notes client, and have the Exchange Server user reply to
+	  the e-mail. Check the Notes proxy address in the Site Addressing properties
+	  in Exchange Server to determine the default naming convention that is used
+	  for Exchange Server mailboxes. The default naming convention is the
+	  following:
+	
+	  &d/"<Exchange_Server_site>"/"<Exchange_Server_
+	  organization>"@"<foreign_domain_for_Exchange_Server_in_Notes>"
+	
+	  NOTE: The above naming convention is one path; it has been wrapped for
+	  readability.
+	
+	  This may be changed to simply &d@"<foreign_domain_for
+	  Exchange_Server_in_Notes>", for example, &d@exchange.
+	
+	- The Exchange Notes Connector can send Notes doclinks from Notes to Exchange
+	  Server as OLE objects, as well as in a Rich Text Format RTF attachment.
+	  However, for this to work the Notes Client must also be installed and work
+	  properly on the workstation of the target Exchange Server user. The Exchange
+	  Notes Connector simply passes OLE links along to the recipient, because there
+	  is no mechanism for the Exchange Notes Connector to verify whether the
+	  recipient has the capability to access the OLE link.
+	
+	- However, the Exchange Notes Connector checks RTF links for validity on each
+	  message that is processed. If the Exchange Notes Connector is not able to
+	  access this RTF link, it sends an error message in the message. This can
+	  occur if you send a "Database or View Link" that is not a doclink from Notes
+	  to Exchange Server with the RTF setting selected. The Exchange Notes
+	  Connector does not convert "Database or View Link" objects to any type of RTF
+	  attachment.
+	
+	- There is a third option in the Exchange Server 5.5 Exchange Notes Connector
+	  that converts the Notes doclink to a URL shortcut (this option is only
+	  applicable for a Notes Domino server). If the Notes server name (the Domain
+	  Name System (DNS) entry defined in the Notes server document) cannot be
+	  properly resolved, then an RTF link is issued. The rules for problems with
+	  RTF links apply as usual.
+	
+	  The following error message may be logged when you attempt to send a Notes
+	  doclink from Notes to Exchange Server with the Exchange Notes Connector
+	  configured to convert Notes doclinks to URLs:
+	
+	  1998/08/25 14:30:08- LME-NOTES-NTSMEX(0202) 3 41419:Cannot locate HTTP Server
+	  name for CN=snanotes/O=XFOR in HTTP Server section of Notes Address Book,
+	  searching Notes Server Network Configuration for enabled TCPIP port
+	
+	  Note that by default, the Hypertext Transfer Protocol (HTTP) task for the
+	  Notes Domino server is not properly configured to allow the Exchange Notes
+	  Connector to resolve and convert doclinks to URLs. Open the server document
+	  in Notes. Under Network Configuration, there should be an entry for port
+	  Transmission Control Protocol/Internet Protocol (TCP/IP) enabled, if not, add
+	  or enable the port with the correct Net address. Next check the HTTP Server
+	  section; under the Basics section, "Bind to host name" is disabled by
+	  default. Change "Bind to host name" to enabled. Save the server document. You
+	  do not need to restart the task. Also check the Exchange Notes Connector
+	  properties to make sure that the Notes server name is the fully qualified
+	  name.
+	
+	
+	- You may experience problems when you send OLE links across the Exchange Notes
+	  Connector. In general, these problems occur when a Notes user sends a Notes
+	  doclink to an Exchange Server user, and when the Exchange Server user opens
+	  the doclink, either the window does not open properly or the window is not
+	  displayed properly.
+	
+	  The Exchange Notes Connector does not do anything to doclinks that are sent
+	  from Notes, except put a "wrapper" (moniker) around the DOC or OLE object.
+	  The Exchange Notes Connector then passes the doclink to Exchange Server. To
+	  find out whether problems originate in the Exchange Notes Connector, copy
+	  this doclink to the clipboard, and then paste it to your desktop. This forces
+	  Notes to generate the first layer of the wrapper, which is what the Exchange
+	  Notes Connector passes. Close the Notes Client, and then double-click the
+	  link shortcut, which starts Notes and opens the Notes database. If this link
+	  shortcut works, but the message link does not work when you send it to
+	  Exchange Server, the Exchange Notes Connector may be processing the link
+	  incorrectly. However, that is unlikely.
+	
+	- In some cases, the From header may appear strange, for example:
+	
+	  From: Ward, Bryan On Behalf Of Bryan Ward/DISA/REGIONB@REGION_B
+	
+	  This is the result of a problem in the Notes Client configuration of the
+	  mailbox. The Notes Client should not send a message on behalf of itself. Open
+	  the Notes Client, and open the mail database. Click Calendar to open the
+	  calendar. Click Actions, click Calendar Tools, and then click Calendar
+	  Profile to find the mail file owner. Make sure that the mail file owner is
+	  the fully qualified Notes address of the actual user, and not the user's
+	  alias or some other name. It is best to select the mail file owner from the
+	  primary name and address book. After you correct the Notes Client
+	  configuration, the From header will appear as it usually does.
+	
+	- The Exchange Notes Connector has built-in message loop detection that is
+	  enabled by default. There may be cases where the message looping is
+	  intentional, and in these cases you should disable this feature. Under the
+	  LME-NOTES section of the .ini file, add the following:
+	
+	  DISABLETRACECHECKEX = YES | NO
+	
+	Miscellaneous
+	-------------
+	
+	- When the Exchange Notes Connector starts, a dialog box is displayed that
+	  indicates that the Exchange Notes Connector cannot find the Rpcdce4.dll file.
+	  Make sure that the file is in the System path. By default, the LinkAge Setup
+	  program installs this .dll file in the Microsoft Windows system folder.
+	
+	- When the Exchange Notes Connector starts, the following error message may be
+	  logged in the Browse log:
+	
+	  Warning {Not found} - Could not obtain the value of the <INI PARAMETER>
+	  keyword in the <LME PROCESS> section. Using the default value
+	  '<DEFAULT>'
+	
+	  You can safely ignore this error message, it simply states that the default
+	  values will be used for common settings for the Exchange Notes Connector.
+	
+	- Sometimes you may be unable to see error messages in the Browse logs. Open
+	  "Browse Log," then go to "Options" [ASCII 150] "Set Message Level." Make sure
+	  that the "4 Trouble Shooting Messages" option is set.
+	
+	- The Notes Client version 4.6 has not been fully tested with the Exchange
+	  Notes Connector. There may be compatibility issues between the Exchange Notes
+	  Connector and the Notes Client and its application programming interface
+	  (API). If you use the Notes Client 4.6 and you still experience problems
+	  after you have performed the checks in this article, use the Notes Client
+	  version 4.52 instead, which has been certified to work with the Exchange
+	  Notes Connector.
+	
+	- Messages that contain graphics that are defined as Notes inline bitmaps are
+	  sometimes converted to Monochrome. This is a limitation of the Notes RTF
+	  conversion.
+	
+	- Incoming SMTP mail that is addressed to the SMTP proxy address of a Notes
+	  recipient may return an NDR, and the following entries may be logged:
+	
+	  1998/04/06 13:20:33- LME-NOTES-MEXOUT(01ec) 3 31500:Sender: ed@dd.com, Size:
+	  605, Message ID: c=US;a= ;p=Microsoft;l=LME-OSMIUM98040620202NR1B1YB
+	  1998/04/06 13:20:28 NOTES Transform >> mexe(2916) 1998/04/06 13:20:34-
+	  LME-NOTES-MEXOUT(01ec) 2 31040:No valid message recipients in message
+	  >> mexout(2366) 1998/04/06 13:20:34- LME-NOTES-MEXOUT(01ec) 3
+	  31501:Report Generated: Sender: System Administrator, Message ID: c=US;a=
+	  ;p=Microsoft;l=LME-OSMIUM98040620202NR1B1YB 1998/04/06 13:20:34 >>
+	  mexe(3539) 1998/04/06 13:20:36- LME-NOTES-MEXIN(0241) 3 31500:Sender: System
+	  Administrator, Size: 817, Message ID: c=US;a=
+	  ;p=Microsoft;l=LME-OSMIUM98040620202NR1B1YB 1998/04/06 13:20:34 Microsoft
+	  Exchange >> mexe(3247)
+	
+	  This issue is the result of a missing P2 or 822 header. Although most mail
+	  systems do not require the 822 header in an SMTP message, all of the LinkAge
+	  (SNADS, Profs, and Notes) connectors expect both a P1 and P2 header.
+	
+	- After you install the Notes Client, you may receive the following error
+	  message:
+	
+	  DDE server window: NLNOTES.EXE - Application Error
+	  The instruction at "0x00e3e268" referenced memory at "0xfffffff8". The memory
+	  could not be "read".
+	  Click on OK to terminate the application
+	  Click on CANCEL to debug the application
+	
+	  The Notes Client reads the registry for Internet settings. Look for the
+	  following registry key:
+	
+	  HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet
+	  Settings\ProxyOverride
+	
+	  NOTE: The above registry key is one path; it has been wrapped for
+	  readability.
+	
+	  If there is a semicolon (;) along with other information in this value, delete
+	  the semicolon from this value, and restart the Notes Client.
+	
+	Additional query words: NotesMC
+	
+	======================================================================
+	Keywords          : exc55 
+	Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+	Version           : :5.5
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

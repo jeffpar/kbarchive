@@ -1,0 +1,61 @@
+---
+layout: page
+title: "Q167322: PRB: Cannot Load Een0swt.dll When Installing Visual C++ 4.x"
+permalink: kb/167/Q167322/
+---
+
+## Q167322: PRB: Cannot Load Een0swt.dll When Installing Visual C++ 4.x
+
+	Article: Q167322
+	Product(s): Microsoft C Compiler
+	Version(s): winnt:4.0,4.1,4.2
+	Operating System(s): 
+	Keyword(s): kbsetup
+	Last Modified: 04-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual C++, versions 4.0, 4.1 
+	- Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+	- Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you install Visual C++ 4.x after uninstalling Fortran Power Station by
+	using "del *.*" command, the following error message appears when you start
+	Developer Studio:
+	
+	  EEN0SWT.DLL This required file cannot be loaded. Please re-install Microsoft
+	  Developer Studio -- OK
+	
+	RESOLUTION
+	==========
+	
+	The proper procedure of uninstalling Fortran Power Station(FPS) is to proceed
+	from the "Microsoft Fortran Power Station Setup" icon in the program group and
+	click Remove all. This way the necessary files and the proper registry keys are
+	removed.
+	
+	Or, if the "del *.*" command is used on the FPS installation directory, the
+	registry keys are not deleted. Under this circumstance, the error message
+	appears when you install Visual C++ 4.x and start Developer Studio. Click OK to
+	start Developer Studio.
+	
+	To prevent this error message, close Developer Studio and open the Registry
+	editor. Under HKEY_CURRENT_USER\Software\Microsoft, delete the Developer key.
+	Restart Developer Studio. The error message does not appear and the Developer
+	Registry key is properly restored.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbsetup 
+	Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC410 kbVC420 kbVC32bitSearch
+	Version           : winnt:4.0,4.1,4.2
+	Issue type        : kbprb
+	
+	=============================================================================
+	

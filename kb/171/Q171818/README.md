@@ -1,0 +1,99 @@
+---
+layout: page
+title: "Q171818: FIX: IDE Crashes When Repeatedly Placing a Control on a Form"
+permalink: kb/171/Q171818/
+---
+
+## Q171818: FIX: IDE Crashes When Repeatedly Placing a Control on a Form
+
+	Article: Q171818
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 5.0
+	Operating System(s): 
+	Keyword(s): kbVBp500 kbVS97sp2fix kbGrpDSVB kbvbp500sp2fix
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+	- Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+	- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you select a control from the Toolbox with the mouse, immediately press the
+	ENTER key to create the control instance on a form, UserDocument, or property
+	page, and then quickly click on the Toolbox again, the following error may
+	occur:
+	
+	  "VB5 has created an invalid page fault in module VB5.EXE at 0137:00568412"
+	
+	CAUSE
+	=====
+	
+	The problem is that the Toolbox registers the two single clicks as a double
+	click. It then assumes that the control to be created has already been selected
+	by the first click. However, when the ENTER key was pressed between the two
+	clicks, the control selection was set back to 0, so the correct control is no
+	longer selected when the second click occurs.
+	
+	RESOLUTION
+	==========
+	
+	Install the Visual Studio 97 Service Pack 2 or allow time for the control to be
+	created before clicking on the Toolbox again.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article. This bug has been fixed in Visual Studio 97 Service
+	Pack 2.
+	
+	For more information on the Visual Studio 97 Service Pack 2, please see the
+	following article in the Microsoft Knowledge Base:
+	
+	  Q170365 INFO: Visual Studio 97 Service Packs - What, Where, and Why
+	
+	For a list of the Visual Basic 5.0 bugs that were fixed in the Visual Studio 97
+	Service Pack 2, please see the following article in the Microsoft Knowledge
+	Base:
+	
+	  Q171554 INFO: Visual Basic 5.0 Fixes in Visual Studio 97 Service Pack 2
+	
+	MORE INFORMATION
+	================
+	
+	This behavior occurs whenever you click a control on the Toolbox, hit the ENTER
+	key to create the control, and then click on the Toolbox again within the space
+	and time limit of a double-click.
+	
+	NOTE: This is easier to reproduce if the 'double-click' time set via the Control
+	Panel is increased (set to slower).
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Create a new Visual Basic 5.0 Standard EXE project.
+	
+	2. Click on a control in the Toolbox, immediately press the ENTER key and then
+	  quickly click on the same control in the Toolbox.
+	
+	An invalid page fault may occur if the second click occurs within the space and
+	time limit of the double-click setting.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbVBp500 kbVS97sp2fix kbGrpDSVB kbvbp500sp2fix 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500Search kbVBA500 kbVB500 kbZNotKeyword3
+	Version           : 5.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

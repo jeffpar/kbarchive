@@ -1,0 +1,140 @@
+---
+layout: page
+title: "Q156996: XFOR: Postoffice Lists Disappearing from GAL"
+permalink: kb/156/Q156996/
+---
+
+## Q156996: XFOR: Postoffice Lists Disappearing from GAL
+
+	Article: Q156996
+	Product(s): Microsoft Exchange
+	Version(s): winnt:4.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 04-APR-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Entire postoffice lists disappear from the Global Address List (GAL) after you
+	introduce Microsoft Exchange Server as a Directory Synchronization (dir- sync)
+	Requestor to the dir-sync process.
+	
+	CAUSE
+	=====
+	
+	If a Custom Recipient (CR) is manually defined on the Microsoft Exchange Server
+	for a user that resides on one of the Microsoft Mail postoffices, the Microsoft
+	Exchange Server where the CR was created believes it is responsible for dir-sync
+	for that address and that postoffice.
+	
+	Please see the MORE INFORMATION section for a detailed explanation of the
+	reproduction scenario.
+	
+	WORKAROUND
+	==========
+	
+	A supported fix is now available for Microsoft Exchange Server version 4.0 that
+	provides a new registry entry setting to correct this behavior.
+	
+	Add a registry value RequireValidImpFrom of type REG_DWORD to:
+	
+	  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSExchangeDX
+	
+	and set it to 1.
+	
+	When dir-sync creates a list of transactions to send to a dir-sync Server, if it
+	finds a CR with the target address of type MS and the ImportedFrom field has a
+	value of NULL, it will silently drop that transaction and continue. The
+	ImportedFrom field for a record in the Directory is NULL only if the CR was
+	created manually or imported by the Microsoft Exchange Administrator program. If
+	a CR is created by means of dir-sync , the ImportedFrom field will have the name
+	of the Requestor Object in it.
+	
+	If you set this value to 0, or if this value is not present, the Directory
+	Synchronization service (DXA) will behave as it did prior to the fix.
+	
+	NOTE: This fix is only for address type MS. If CR of another type (SMTP, SNADS,
+	and so forth) is imported from a Microsoft Mail postoffice later, the behavior
+	of the DXA will be the same as before the fix.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+	version 4.0. This problem was corrected in the latest Microsoft Exchange Service
+	Pack. For information on obtaining the Service Pack, query on the following word
+	in the Microsoft Knowledge Base (without the spaces):
+	
+	  S E R V P A C K
+	
+	MORE INFORMATION
+	================
+	
+	In this scenario, the Microsoft Mail postoffices are MSM1, MSM2, and MSM3. MSM1
+	is the dir-sync server and dir-sync is fully working between these three
+	postoffices.
+	
+	Now add a Microsoft Exchange Server as a requester to the dir-sync server (MSM1)
+	and manually add a CR to the Microsoft Exchange server with an address that
+	resides on any of the Microsoft Mail postoffices, in other words,
+	Network/Msm3/Testuser. Allow one dir-sync cycle to occur.
+	
+	Upon completion of dir-sync, the Microsoft Exchange Server, MSM1, and MSM2 have
+	all addresses from MSM1 and MSM2 but no addresses from MSM3.
+	
+	Because of the CR that was created on the Microsoft Exchange Server, the
+	Microsoft Exchange Server will send out the following transactions to the
+	dir-sync server along with its normal Add transactions for the Microsoft
+	Exchange users that exist on the Microsoft Exchange Server.
+	
+	R NETWORK\MSM3            Tells the dir-sync  Server to discard all
+	                         addresses for MSM3
+	A NETWORK\MSM3\TESTUSER   Tells the dir-sync  Server to add TESTUSER
+	                         R NETWORK\SHADOW
+	A NETWORK\SHADOW\USER1
+	A NETWORK\SHADOW\USER2
+	
+	and so forth.
+	
+	During a normal dir-sync cycle, when a requestor requests a full export, a
+	Replace transaction will be sent only for its own postoffice. For example:
+	
+	R NETWORK\PO          Tells the dir-sync  Server to discard all addresses
+	                     for postoffice
+	A NETWORK\PO\USER1    Tells the dir-sync  Server to add USER1
+	A NETWORK\PO\USER2
+	A NETWORK\PO\USER3
+	
+	To get the addresses from MSM3 back into the dir-sync stream, the administrator
+	must request that a full export be sent from the Microsoft Mail postoffice
+	(MSM3). You can achieve this by following these steps:
+	
+	1. Start Admin.exe against MSM3.
+	
+	2. Choose Config-DirSync-Requester-Export and answer Yes to continue.
+	
+	3. Exit Admin.exe
+	
+	On the next dir-sync cycle, T1, MSM3's full list will be resent to the dir-sync
+	server and therefore propagated out to the other requestors.
+	
+	The fix for this should be applied and the aforementioned registry setting should
+	be set, or the Export Custom Recipients option should be cleared on the dir-sync
+	Requester object on the Export Containers' property page.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+	Version           : winnt:4.0
+	
+	=============================================================================
+	

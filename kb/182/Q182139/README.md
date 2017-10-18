@@ -1,0 +1,103 @@
+---
+layout: page
+title: "Q182139: LUA Pool Cannot Be Assigned to Two TN3270 Servers"
+permalink: kb/182/Q182139/
+---
+
+## Q182139: LUA Pool Cannot Be Assigned to Two TN3270 Servers
+
+	Article: Q182139
+	Product(s): Microsoft SNA Server
+	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 02-APR-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 3.0, 3.0 SP1, 3.0 SP2, 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	SNA Server Manager does not allow a single LUA Pool to be assigned to more than
+	one TN3270 service in an SNA Server subdomain. This prevents multiple TN3270
+	servers from sharing a large pool of LUA sessions across more than one SNA
+	Server computer, limiting flexibility in some fail-over configurations.
+	
+	CAUSE
+	=====
+	
+	SNA Server Manager was not originally designed to allow a single LUA Pool to be
+	assigned to more than one TN3270 server in an SNA Server subdomain.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft SNA Server version 3.0
+	(all service packs) and SNA Server 4.0.
+	
+	A new feature that allows you to assign a single LUA pool to two TN3270 servers
+	is now available, but due to the complexity of the configuration changes it has
+	only been implemented in SNA Server 4.0. Customers using SNA Server 3.0 must
+	first upgrade to SNA Server 4.0 and then request this enhancement from
+	Microsoft.
+	
+	This feature has been released in the latest SNA Server version 4.0 U.S. Service
+	Pack. For information on obtaining this Service Pack, query on the following
+	word in the Microsoft Knowledge Base (without the spaces):
+	
+	  S E R V P A C K
+	
+	MORE INFORMATION
+	================
+	
+	The following SNA Server 4.0 modules have been updated to support this new
+	capability:
+	
+	  <snaroot>\system\snaadmin.dll
+	  <snaroot>\system\snaole.dll
+	  <snaroot>\system\snacfg.exe
+	
+	
+	An LUA Pool can now be assigned to more than one TN3270 server. However, all the
+	TN3270 properties associated with the LUA Pool must be identical for all TN3270
+	servers.
+	
+	When an LUA Pool is assigned to a second TN3270 server, it inherits all the same
+	properties (including Port number, IP addresses, and so on) that already exist
+	for that LUA Pool. If any properties are modified on the Pool, then they are
+	modified for all the TN3270 servers.
+	
+	A new message is displayed when you try to assign a second instance of an LUA
+	Pool to a TN3270 server. The message is: "Pool already assigned to this TN3270
+	Server."
+	
+	The SNACFG.EXE command-line configuration utility has been updated to reflect
+	this new capability. There is no new syntax. However, the "tn3session
+	<name> /ADD" command is now allowed if the name matches an LUA Pool name
+	and that pool is not already assigned to the TN3270 server. Entering the
+	"tn3session /DELETE" command will delete the session from all the TN3270 servers
+	that it is assigned to. Modifying a tn3session will cause all the sessions of
+	that name to be modified in the same way. For this reason, the /TN3Server option
+	is no longer valid for the modify operation.
+	
+	The SNACFG.EXE file is also modified so that a TNIPID /LIST will now show all the
+	TNIPID records. Entering "TNIPID <name> /ADD /SESSION:<tn3sess>"
+	will add the record to all the TN3270 sessions with the same name. Entering
+	TNIPID modify or /DELETE will operate on all the TNIPID records with the same
+	name.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ400 kbSNAServ300SP1 kbSNAServ300SP2
+	Version           : WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

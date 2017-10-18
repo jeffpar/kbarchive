@@ -1,0 +1,123 @@
+---
+layout: page
+title: "Q168414: BUG: Binary Compatibility Leaves Source File in Open State"
+permalink: kb/168/Q168414/
+---
+
+## Q168414: BUG: Binary Compatibility Leaves Source File in Open State
+
+	Article: Q168414
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 5.0
+	Operating System(s): 
+	Keyword(s): kberrmsg kbVBp500 kbGrpDSVB
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+	- Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+	- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When compiling an ActiveX Server (EXE or DLL), you may get the following error
+	at the end of compiling:
+	
+	  "An unexpected error occurred during compiling or linking"
+	
+	If you choose to view the error details, the following message will be
+	displayed:
+	
+	  "LINK : fatal error LNK1104: cannot open file <filename>"
+	
+	CAUSE
+	=====
+	
+	When the Binary Compatibility property is set for an ActiveX Server component
+	(.EXE or .DLL), Microsoft Visual Basic 5.0 leaves the compatible source file in
+	an open state until the Visual Basic 5.0 environment is closed.
+	
+	NOTE: The behavior can also surface randomly with other types of Visual Basic
+	projects when Binary Compatibility is used.
+	
+	RESOLUTION
+	==========
+	
+	There are a few workarounds to this behavior:
+	
+	- When using the Binary Compatibility property, do not set the compatible
+	  source file to the same filename and location as the compiled component's
+	  destination file.
+	
+	-or-
+	
+	- Use the Project Compatibility option or the No Compatibility option whenever
+	  possible.
+	
+	-or-
+	
+	- Close and re-open the Microsoft Visual Basic environment when it is necessary
+	  to delete and/or overwrite the file which is locked in the open state.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article. We are researching this bug and will post new
+	information here in the Microsoft Knowledge Base as it becomes available.
+	
+	MORE INFORMATION
+	================
+	
+	In Microsoft Visual Basic 5.0's development environment, the user has the option
+	to select the following compatible component options:
+	
+	- No Compatibility
+	
+	- Project Compatibility
+	
+	- Binary Compatibility
+	
+	This is done from the Component Tab of the Project Properties Dialog. The set of
+	options on the dialog box determines how the project is to be compiled. (For
+	more details on Compatibility, select the Component Tab and then press the Help
+	button on the dialog.)
+	
+	Selecting Project Compatibility or Binary Compatibility enables the file location
+	textbox. The user can then select the source file for the compatibility during
+	the compile process.
+	
+	During compilation of the project, Visual Basic opens the compatible source file,
+	reads specific information, and then writes the compiled compatible file to the
+	destination specified on the Make Project dialog.
+	
+	If the user selects Binary Compatibility, Visual Basic does not close the source
+	file for an ActiveX EXE Server until Visual Basic itself is closed. This is not
+	the case for the Project Compatibility option, nor is it the case for ActiveX
+	Control projects.
+	
+	The result of leaving the file open is not an issue for the user unless the user
+	selects the same filename and location for the destination file. If they are the
+	same, the user will encounter an error.
+	
+	REFERENCES
+	==========
+	
+	For more information on this problem, please refer to the ReadMe.TXT file
+	enclosed on the Microsoft Visual Basic 5.0 CD-ROM.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kberrmsg kbVBp500 kbGrpDSVB 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500Search kbVBA500 kbVB500 kbZNotKeyword3
+	Version           : 5.0
+	Issue type        : kbbug
+	
+	=============================================================================
+	

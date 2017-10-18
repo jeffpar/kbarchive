@@ -1,0 +1,99 @@
+---
+layout: page
+title: "Q182010: XADM: Auto Receipt Is Always from POSTMASTER@&lt;local_domain.ext&gt;"
+permalink: kb/182/Q182010/
+---
+
+## Q182010: XADM: Auto Receipt Is Always from POSTMASTER@&lt;local_domain.ext&gt;
+
+	Article: Q182010
+	Product(s): Microsoft Exchange
+	Version(s): WinNT:5.0,5.5
+	Operating System(s): 
+	Keyword(s): kbusage
+	Last Modified: 02-APR-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 5.0, 5.5 
+	-------------------------------------------------------------------------------
+	
+	
+	IMPORTANT: This article contains information about editing the registry.
+	Before you edit the registry, make sure you understand how to restore it if
+	a problem occurs. For information about how to do this, view the "Restoring
+	the Registry" Help topic in Regedit.exe or the "Restoring a
+	Registry Key" Help topic in Regedt32.exe.
+	
+	SYMPTOMS
+	========
+	
+	When you send a message to a recipient on a remote Exchange Server computer, via
+	an SMTP address, the automated delivery receipt will always be from
+	POSTMASTER@<local_domain.ext>.
+	
+	STATUS
+	======
+	
+	The behavior has been changed in the latest service packs for Exchange Server
+	version 5.0.
+	
+	
+	A supported fix is now available, but has not been fully regression-tested and
+	should be applied only to systems experiencing this specific problem. Unless you
+	are severely impacted by this specific problem, Microsoft recommends that you
+	wait for the next Service Pack that contains this fix. Contact Microsoft
+	Technical Support for more information.
+	
+	This fix has been posted to the following Internet location:
+	
+	  ftp://ftp.microsoft.com/bussys/exchange/exchange-public/fixes/Eng/Exchg5.0/Post-SP2-STORE/
+	
+	
+	Microsoft has confirmed this to be a problem in Microsoft Exchange Server version
+	5.5. This problem has been corrected in the latest U.S. Service Pack for
+	Microsoft Exchange Server version 5.5. For information on obtaining the Service
+	Pack, query on the following word in the Microsoft Knowledge Base (without the
+	spaces):
+	
+	  S E R V P A C K
+	
+	MORE INFORMATION
+	================
+	
+	WARNING: Using Registry Editor incorrectly can cause serious problems that may
+	require you to reinstall your operating system. Microsoft cannot guarantee that
+	problems resulting from the incorrect use of Registry Editor can be solved. Use
+	Registry Editor at your own risk.
+	
+	For information about how to edit the registry, view the "Changing Keys And
+	Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+	Information in the Registry" and "Edit Registry Data" Help topics in
+	Regedt32.exe. Note that you should back up the registry before you edit it.
+	
+	After the above hotfix or Service Pack is applied, you can set the registry
+	parameter to override the postmaster address.
+	
+	1. Specify the SMTP address identified as the postmaster by setting the
+	  following registry value:
+	
+	  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSExchangeIS
+	     \ParametersSystem
+	
+	  Name: System Administrator's SMTP Addr
+	  Type: REG_SZ
+	
+	2. Set the value to the SMTP address you want to use in place of
+	  Postmaster@localDomain.ext.
+	
+	Additional query words: IMC POSTMASTER
+	======================================================================
+	Keywords          : kbusage 
+	Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+	Version           : WinNT:5.0,5.5
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

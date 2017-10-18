@@ -1,0 +1,173 @@
+---
+layout: page
+title: "Q189667: HOWTO: List the Drives in a System Using the FileSystemObject"
+permalink: kb/189/Q189667/
+---
+
+## Q189667: HOWTO: List the Drives in a System Using the FileSystemObject
+
+	Article: Q189667
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): WINDOWS:5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbCtrl kbVBp kbVBp500 kbVBp600 kbVS600 kbGrpDSVB kbDSupport
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article shows you how to list all the drives in a computer system using the
+	FileSystemObject. The article shows how to create a sample project that lists
+	all the drives in a system as well as the properties of each drive.
+	
+	MORE INFORMATION
+	================
+	
+	This article assumes you are familiar with using objects, collections, and
+	object models in Visual Basic. The FileSystemObject allows you to perform a
+	number tasks on the file system of a computer. This object is available to your
+	project by making a reference to the Microsoft Script Runtime file scrrun.dll.
+	This file ships with Windows 98 and the following products:
+	
+	  Windows Script Host
+	  Windows NT Option Pack
+	  Microsoft Internet Information Server 3.0
+	  Scripting 3.1 upgrade
+	  Visual Studio 6.0
+	  Visual Basic 6.0
+	
+	After making a reference to the Script Runtime file, you create an instance of
+	the FileSystemObject using the CreateObject method or by creating a variable as
+	a new FileSystemObject. The object allows you to access each Drive object in the
+	Drives collection. Each Drive has a number of properties that you can query to
+	determine the drive type, the total space, the free space, and the file system.
+	
+	The next section shows you how to create a sample project that displays all the
+	drives in a system and the properties of each drive.
+	
+	Step-by-Step Example
+	--------------------
+	
+	1. Start a new Standard EXE project in Visual Basic. Form1 is created by
+	  default.
+	
+	2. Add a reference to the Microsoft Script Runtime by completing the following
+	  steps:
+	
+	  a. From the Project menu, click References to display the References dialog
+	     box.
+	
+	  b. Click Browse to open the Add Reference dialog box.
+	
+	  c. Select the file scrrun.dll and click OK to close the Add Reference dialog
+	     box. This file is installed in your system directory. Microsoft Scripting
+	     Runtime appears with a check in the Available Referenced list box of the
+	     References dialog box.
+	
+	  d. Click OK to close the References dialog box.
+	
+	3. Add a CommandButton, ListBox, and Label to Form1.
+	
+	4. Copy the following code to the Code window of Form1:
+	
+	        Option Explicit
+	        Dim fso As New FileSystemObject
+	        Dim fsoDrives As Drives
+	        Dim fsoDrive As Drive
+	
+	        Private Sub Form_Load()
+	           Label1.AutoSize = True
+	           Command1.Caption = "List All Drives"
+	           List1.Enabled = False
+	        End Sub
+	
+	        Private Sub Command1_Click()
+	           Dim sDrive As String
+	           Dim sDriveType As String
+	
+	           Set fsoDrives = fso.Drives
+	
+	           List1.Enabled = True
+	           For Each fsoDrive In fsoDrives
+	              sDrive = "Drive " & fsoDrive.DriveLetter & ": "
+	
+	              Select Case fsoDrive.DriveType
+	                 Case 0: sDriveType = "Unknown"
+	                 Case 1: sDriveType = "Removable Drive"
+	                 Case 2: sDriveType = "Fixed Disk"
+	                 Case 3: sDriveType = "Remote Disk"
+	                 Case 4: sDriveType = "CDROM Drive"
+	                 Case 5: sDriveType = "RAM Disk"
+	              End Select
+	
+	              sDrive = sDrive & sDriveType
+	              List1.AddItem (sDrive)
+	           Next
+	           Set fsoDrives = Nothing
+	        End Sub
+	
+	        Private Sub List1_Click()
+	           Dim sDriveSpec As String
+	           Dim sSelDrive As String
+	
+	           sSelDrive = List1.List(List1.ListIndex)
+	           sSelDrive = Mid(sSelDrive, 7, 1)
+	
+	           Set fsoDrive = fso.GetDrive(sSelDrive)
+	
+	           With fsoDrive
+	              If .IsReady = True Then
+	                 sDriveSpec = "Drive " & .DriveLetter & _
+	                             " Specifications" & vbLf
+	                 sDriveSpec = sDriveSpec & "Free Space: " & _
+	                                .FreeSpace & " bytes" & vbLf
+	                 sDriveSpec = sDriveSpec & "File System: " & _
+	                                .FileSystem & vbLf
+	                 sDriveSpec = sDriveSpec & "Serial Number: " & _
+	                                .SerialNumber & vbLf
+	                 sDriveSpec = sDriveSpec & "Total Size: " & _
+	                                .TotalSize & " bytes" & vbLf
+	                 sDriveSpec = sDriveSpec & "Volume Name: " & _
+	                                .VolumeName
+	                 Label1.Caption = sDriveSpec
+	              Else
+	                 MsgBox ("Drive Not Ready")
+	              End If
+	           End With
+	
+	           Set fsoDrive = Nothing
+	        End Sub
+	
+	5. On the Run menu, select Start, or press the F5 key to start the program.
+	  Click the "List All Drives" button to display all the drives in your system
+	  in the ListBox. Click on a drive in the ListBox to display the properties of
+	  the drive.
+	
+	REFERENCES
+	==========
+	
+	For additional information, please see the following articles in the Microsoft
+	Knowledge Base:
+	
+	  Q186118 : HOWTO: Use FileSystemObject with Visual Basic
+	
+	  Q185601 : HOWTO: Recursively Search Directories Using FileSystemObject
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbCtrl kbVBp kbVBp500 kbVBp600 kbVS600 kbGrpDSVB kbDSupport 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+	Version           : WINDOWS:5.0,6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

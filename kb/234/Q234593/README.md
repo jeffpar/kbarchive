@@ -1,0 +1,110 @@
+---
+layout: page
+title: "Q234593: WinNT 4.0 Tcpip.sys Hotfixes Dated 4/28/99 to 5/28/99 Replaced"
+permalink: kb/234/Q234593/
+---
+
+## Q234593: WinNT 4.0 Tcpip.sys Hotfixes Dated 4/28/99 to 5/28/99 Replaced
+
+	Article: Q234593
+	Product(s): Microsoft Windows NT
+	Version(s): winnt:4.0 SP5
+	Operating System(s): 
+	Keyword(s): kbWinNT4sp6fix
+	Last Modified: 20-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+	- Microsoft Windows NT Server version 4.0 SP5 
+	- Microsoft Windows NT Workstation version 4.0 SP5 
+	- Microsoft Windows NT Server, Enterprise Edition version 4.0 SP5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Post-SP5 hotfixes for the Tcpip.sys driver dated April 28, 1999 to May 28, 1999
+	contain a regression that could cause your multiprocessor computer to stop
+	responding (hang).
+	
+	CAUSE
+	=====
+	
+	This problem occurs because of changes made in earlier hotfixes included an
+	error in locking code. This error can cause your multiprocessor computer to
+	"deadlock" or hang.
+	
+	RESOLUTION
+	==========
+	
+	Windows NT Server or Workstation 4.0
+	------------------------------------
+	
+	To resolve this problem, obtain the latest service pack for Windows NT 4.0 or the
+	individual software update. For information on obtaining the latest service
+	pack, please go to:
+	
+	- http://www.microsoft.com/Windows/ServicePacks/
+	
+	-or-
+	
+	- Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+	
+	For information on obtaining the individual software update, contact Microsoft
+	Product Support Services. For a complete list of Microsoft Product Support
+	Services phone numbers and information on support costs, please go to the
+	following address on the World Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	
+	Windows NT Server 4.0, Terminal Server Edition
+	----------------------------------------------
+	
+	To resolve this problem, obtain the latest service pack for Windows NT Server
+	4.0, Terminal Server Edition. For additional information, please see the
+	following article in the Microsoft Knowledge Base:
+	
+	  Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Windows NT 4.0 and Windows NT
+	Server 4.0, Terminal Server Edition.
+	
+	This problem was first corrected in Windows NT Server 4.0 Service Pack 6 and
+	Windows NT Server 4.0, Terminal Server Edition Service Pack 6.
+	
+	MORE INFORMATION
+	================
+	
+	These hotfix files should be replaced with the newer files.
+	
+	Affected hotfixes are described by the following articles:
+	
+	  Q223450 TCP Initial Retransmission Timer Adjustment Added to Windows NT
+	
+	  Q224585 TCB Hash Function Modified to Improve Network Performance
+	
+	  Q230307 Slow Performance in TCP/IP When Reconnecting
+	
+	  Q230381 TCP/IP Dead Gateway Detection May Not Work if ARP Cache Empty
+	
+	  Q232512 TCP/IP May Retransmit Packets Prematurely
+	
+	Additional query words: multi processor multi-processor
+	
+	======================================================================
+	Keywords          : kbWinNT4sp6fix 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400search kbWinNT400search kbWinNTW400sp5 kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400sp5 kbWinNTS400sp5 kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+	Version           : winnt:4.0 SP5
+	Hardware          : ALPHA x86
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

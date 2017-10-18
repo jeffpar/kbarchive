@@ -1,0 +1,440 @@
+---
+layout: page
+title: "Q109506: NETWORKS.WRI from Windows for Workgroups 3.11 (Part 3 of 4)"
+permalink: kb/109/Q109506/
+---
+
+## Q109506: NETWORKS.WRI from Windows for Workgroups 3.11 (Part 3 of 4)
+
+	Article: Q109506
+	Product(s): Microsoft Windows 3.x Retail Product
+	Version(s): WINDOWS:3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 25-SEP-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows for Workgroups version 3.11 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The following information was taken from the Microsoft Windows for Workgroups
+	version 3.11 NETWORKS.WRI file.
+	
+	MORE INFORMATION
+	================
+	
+	3.0  Using Banyan VINES
+	
+	Windows for Workgroups 3.11 works with Banyan VINES network versions
+	4.11(5), 5.00(5), and 5.52(5). It can work with both the Microsoft
+	Windows Network and the Banyan VINES network. Before you install your
+	specific version of VINES, see "Special Information about Specific
+	Versions of VINES," later in this document.
+	
+	Before you set up Windows for Workgroups 3.11 to work with VINES, set
+	up VINES on your computer according to the directions in your VINES
+	documentation. Then run PCCONFIG to choose the appropriate drivers
+	for your network, and make sure you can connect to a VINES server
+	from MS-DOS. For more information on installing VINES support in
+	Windows for Workgroups, see Chapter 9, "Using Other Networks," in the
+	Microsoft Workgroup Add-On "User's Guide."
+	
+	3.1 Changes to System Files when You Install Support for Banyan VINES
+	
+	When you install Banyan VINES support in Windows for Workgroups, the
+	following lines are added to your AUTOEXEC.BAT file:
+	
+	C:\<Windows directory>\NET INITIALIZE
+	CD <VINES directory>
+	BAN /NC
+	NDISBAN
+	REDIRALL
+	C:\<Windows directory>\NET START
+	ARSWAIT
+	Z:LOGIN
+	
+	The following line is added to your CONFIG.SYS file:
+	
+	LASTDRIVE=Y
+	
+	The following lines are added to the PROTOCOL.INI file:
+	
+	[network.setup]
+	  transport=ban$vines,BAN$VINES
+	  lana0=<network adapter>,1,ban$vines
+	[Ban$Vines]
+	  drivername=NDISBAN$
+	  bindings=<network adapter>
+	
+	The following lines are added to the SYSTEM.INI file:
+	
+	[boot]
+	  secondnet.drv=vines.drv       <- z:vines.drv for VINES 4.11
+	                             and VINES 5.00;
+	vines.drv for
+	VINES 5.52
+	
+	[386Enh]
+	  secondnet=vvinesd.386      <- z:vvines.386 for VINES 4.11
+	                             and VINES 5.00;
+	vvines.386 for
+	VINES 5.52
+	
+	[network]
+	  multinet=vines500          <- vines411 or vines550 for
+	                             different VINES versions
+	
+	3.2 Special Information about Specific Versions of VINES
+	
+	Vines 4.10
+	If your network runs VINES 4.10, you must upgrade to VINES 4.11 (5)
+	before you install support for Windows for Workgroups.
+	
+	Vines 4.11
+	If your network runs VINES 4.11 (5), your network administrator must
+	apply the (5)-FW-1 and (5)-GN-1 software patches before you install
+	support for Windows for Workgroups.
+	
+	Vines 5.00
+	If your network runs VINES 5.00 (5), your network administrator must
+	apply the (5)-EA-1 and (5)-ER-1 software patches before you install
+	support for Windows for Workgroups.
+	
+	If your network runs VINES 5.00 (6), install VINES support for 5.00
+	(5) according to the installation instructions.  When you are
+	prompted to restart your workstation at the end of the installation
+	procedure, do so.
+	
+	After you restart your workstation:
+	
+	1. Back up the PROTMAN.DOS and NDISBAN.COM files to another directory
+	  before you run NEWREV.
+	
+	2. From the MS-DOS prompt, run the NEWREV command to upgrade to VINES
+	  5.00 (6).
+	
+	Note: Make sure you back up the PROTMAN.DOS and NDISBAN.COM files,
+	because as the NEWREV program overwrites the PROTMAN.DOS and
+	NDISBAN.COM files located in the Windows for Workgroups directory.
+	
+	3. Copy the PROTMAN.DOS and NDISBAN.COM files back to the Windows for
+	  Workgroups directory.
+	
+	4. Restart your workstation.
+	
+	This procedure ensures that you are using the correct versions of
+	these two files.
+	
+	VINES 5.52 (5) Networks
+	If your network runs VINES 5.52 (5), you must copy NDISBAN.COM to
+	your local VINES directory that contains your VINES network software.
+	Use the PCCOPY command to copy this file from your VINES 5.52 (5)
+	server to your workstation.
+	
+	3.3 Banyan VINES Troubleshooting Tips
+	
+	This section provides solutions to some common problems you might
+	encounter when you run Windows for Workgroups on a Banyan VINES
+	network.
+	
+	Cannot run VINES commands from AUTOEXEC.BAT
+	You may already have a line that says CD \<Banyan directory>, but it
+	may not be in the correct place in the file. Open the AUTOEXEC.BAT
+	file using a text editor and move the command to the line above the
+	BAN /NC command.
+	
+	Environment Variables Overwritten
+	When you install VINES support for Windows for Workgroups, the VINES LOGIN
+	command is placed near the beginning of your AUTOEXEC.BAT file. PATH (and
+	other environment variables) in your VINES user profile are overwritten by
+	the environment variables in your AUTOEXEC.BAT file.
+	
+	To work around this problem, carry out one of the following steps:
+	
+	- Place all the environment variables, including PATH, only in your
+	  user profile
+	
+	  -or-
+	
+	- Place all environment variables after the LOGIN command in your
+	  AUTOEXEC.BAT file.
+	
+	If you want to add the user profile PATH environment variable to the
+	PATH environment variable in your AUTOEXEC.BAT file, type %path%
+	after the LOGIN command at the end of your AUTOEXEC.BAT file.
+	
+	For example, the following statement appends the user profile PATH
+	values (%path%) to the existing PATH values (C:\C:\WINWG) in your
+	AUTOEXEC.BAT file:
+	
+	  PATH=c:\;c:\winwg;%path%
+	
+	Cannot Access the VINES Network
+	If you cannot access the VINES network, make sure the SYSTEM.INI file
+	includes these lines:
+	
+	   network.drv=wfwnet.drv
+	   secondnet.drv=VINES.DRV   <-  z:vines.drv for VINES
+	                                  4.11 and
+	VINES 5.00; vines.drv
+	    for VINES 5.52
+	
+	In a Windows for Workgroups environment, the NETWORK.DRV statement
+	specifies the Windows for Workgroups network driver (WFWNET.DRV). The
+	SECONDNET.DRV statement specifies the VINES network driver
+	(VINES.DRV).
+	
+	4.0 Using Windows for Workgroups 3.11 with DEC PATHWORKS
+	
+	If you want to use the DEC PATHWORKS network with Windows for Workgroups,
+	you can use it instead of the Microsoft Windows Network. You cannot use the
+	two networks together unless you manually edit your files.
+	
+	Before you begin, install the DEC PATHWORKS network software on your
+	computer according to the directions in your PATHWORKS documentation.
+	Then make sure you can connect to a PATHWORKS server from MS-DOS. For
+	more information on installing PATHWORKS support in Windows for
+	Workgroups, see Chapter 9, "Using Other Networks," in the Microsoft
+	Workgroup Add-On "User's Guide."
+	
+	Once you have installed PATHWORKS support, Windows for Workgroups can
+	be used to connect to PATHWORKS servers, but you will not be able to
+	use Windows for Workgroups to share resources on your local machine.
+	
+	4.1 Changes to System Files When You Install Support for DEC
+	   PATHWORKS Instead of the Microsoft Windows Network
+	
+	When you install DEC PATHWORKS support in Windows for Workgroups, the
+	following lines are added to your SYSTEM.INI file.
+	
+	[boot]
+	network.drv=pcsa.drv
+	
+	[boot.description]
+	network.drv=DEC PATHWORKS
+	
+	[386Enh]
+	network=*dosnet, decnet.386, decnb.386
+	TimerCriticalSection=10000
+	
+	4.2  DEC PATHWORKS Support to Work With the Microsoft Windows Network
+	
+	Windows Setup does not set up DEC PATHWORKS to work along with the
+	Microsoft Windows Network. If you want to use both networks together,
+	you must edit your SYSTEM.INI, PROTOCOL.INI, STARTNET.BAT, and
+	AUTOEXEC.BAT files by hand.
+	
+	For information on setting up both networks to work together, see the
+	Windows for Workgroups 3.11 Resource Kit.
+	
+	5.0 Using Windows for Workgroups 3.11 with Artisoft LANtastic
+	
+	You can use Windows for Workgroups with Artisoft LANtastic instead of
+	the Microsoft Windows Network. However, you cannot use the two
+	networks together.
+	
+	5.1 Changes to System Files When You Install Artisoft LANtastic Drivers
+	
+	Before you install LANtastic 5.0 for Windows, install the LANtastic
+	MS-DOS-level drivers. Make sure that all connections between the
+	machines are correctly set up.
+	
+	The MS-DOS-level drivers will install into the following directory:
+	
+	  c:\lantasti
+	
+	The installation will make the following changes to your CONFIG.SYS file:
+	
+	  files=75
+	  buffers=32
+	  lastdrive=z
+	  fcbs=32,8
+	
+	No changes will be made to your AUTOEXEC.BAT file.
+	
+	The LANtastic network will be started by a file called STARTNET.BAT,
+	which looks similar to the following:
+	
+	  @echo off
+	  Set LAN_DIR=C:\LANTASTI.NET
+	  SET LAN_CFG=C:\LANTASTI
+	  PATH C:\LANTASTI;%PATH%
+	  SHARE /L:200
+	
+	  3C503MM IRQ=3 IOBASE=300 TRANSCEIVER_TYPE=ON-BORAD VERBOSE
+	  AILANBIO
+	  REDIR MACHINENAME LOGINS=3
+	  SERVER
+	
+	  NET LOGIN/WAIT
+	  NET LPT TIMEOUT 10
+	  NET POSTBOX
+	
+	5.2 Changes to System Files When You Install Support for Artisoft LANtastic
+	
+	After you have installed the correct net card driver and can
+	communicate with other LANtastic machines, you can install LANtastic
+	for Windows.
+	
+	To install LANtastic for Windows, go to Networks Setup and choose to
+	install support for LANtastic 5x. Setup will prompt you for the
+	following drivers:
+	
+	  LANTASTI.386
+	  LANTNET.DRV
+	
+	These drivers are provided by LANtastic and will either be in the
+	LANTASTI subdirectory or on the vendor-provided disks.
+	
+	The PROTOCOL.INI file will include the following changes:
+	
+	  [network.setup]
+	  version=0x3110
+	
+	The SYSTEM.INI file will include the following changes:
+	
+	  [boot]
+	  network.drv=lantnet.drv
+	
+	  [boot description]
+	  network.drv=Artisoft LANtastic (version 5.X)
+	
+	  [386Enh]
+	  network=*vnetbios,lantasti.386
+	  netmisc=
+	  netcard=
+	  transport=
+	
+	  [network]
+	 =LANtastic/xx050000
+	
+	  [LANtastic]
+	  Network_IRQ=XX
+	
+	After you have finished installing support for LANtastic 5x, run the
+	LANtastic 5x installation program. The program will install in a
+	directory named C:\LANI. The installation program will also create a
+	LANtastic group in Program Manager and add the following line to the
+	WIN.INI file:
+	
+	load=C:\LANI\WNET.EXE
+	
+	5.3 More Information about Using Artisoft LANtastic with Windows for
+	Workgroups 3.11
+	
+	Do not use the net use command to redirect the name of the drive
+	where Windows for Workgroups is installed. If you do, Windows for
+	Workgroups will not be able to run.
+	
+	6.0 Using Windows for Workgroups 3.11 with SunSelect  PC-NFS
+	
+	Windows for Workgroups 3.11 works with SunSelect PC-NFS version 5.00.
+	
+	If you are installing PC-NFS for use with Windows for Workgroups for the
+	first time, you should run both the installation and configuration programs
+	according to the directions in your PC-NFS documentation. Then install
+	Windows for Workgroups 3.11 without support for a secondary network
+	operating system.
+	
+	Once Windows for Workgroups is installed, you will need to run the
+	WINSTALL.EXE program from the PC-NFS disk number 3. Insert disk number 3
+	into a diskette drive and then from inside Windows for Workgroups select
+	the File menu choose Run, and type A:WINSTALL.EXE (substitute B: if that is
+	the drive being used). This will install the PC-NFS utilities for Windows
+	as well as several Windows support files which are required for proper
+	functionality.
+	
+	Once you have finished this procedure you can set up Windows for Workgroups
+	3.11 to work with both the Microsoft Windows Network and PC-NFS. In the
+	Network group, choose Network Setup. Choose the Networks button and then
+	select "SunSelect PC-NFS (version 5.0)" from the list of Other additional
+	Networks. Click on OK. Changes will be made to the PROTOCOL.INI and
+	SYSTEM.INI files. Changes will also be required to your AUTOEXEC.BAT file.
+	These changes should have been performed during the installation and
+	configuration of the PC-NFS software. Restart the computer for these
+	changes to take effect.
+	
+	If you are upgrading Windows for Workgroups 3.11 over an existing Windows
+	for Workgroups 3.1 you can select PC-NFS as the secondary network during
+	the initial setup procedure.
+	
+	For more information on installing PC-NFS support in Windows for
+	Workgroups, see Chapter 9, "Using Other Networks," in the Microsoft
+	Workgroup Add-On User's Guide.
+	
+	6.1 Changes to System Files When You Install Support for PC-NFS
+	
+	Once Windows for Workgroups is installed, you will need to run the
+	WINSTALL.EXE program from the PC-NFS disks to install the PC-NFS utilities
+	for Windows.
+	
+	The PC-NFS installation process makes the following changes to your
+	AUTOEXEC.BAT, PROTOCOL.INI, and SYSTEM.INI files:
+	
+	It adds the following lines to your AUTOEXEC.BAT file:
+	
+	  Set TZ=EST5EDT
+	  Set NFSDRIVE=C
+	  Set NFSPATH=C:\NFS
+	  NET INIT
+	  Set TN_DIR=C:\NFS\TELNET
+	  C:\NFS\PRT *
+	  C:\NFS\NET INIT
+	  C:\NFS\RTM
+	
+	Note: The SET statements vary with each installation.
+	
+	It adds the following line to your CONFIG.SYS file:
+	
+	  Device=C:\WINDOWS\IFSHLP.SYS
+	
+	It removes the following line from your CONFIG.SYS file:
+	
+	  Device=C:\NFS\SOCKDRV.SYS
+	
+	PROTOCOL.INI File
+	
+	  [network.setup]
+	
+	  transport=nfs-ndis,NFS-NDIS
+	
+	  [NFS-NDIS]
+	  DriverName=NFSLINK$
+	  Bindings=MS$ELNKII
+	  LanaBase=Lana<number>
+	
+	SYSTEM.INI File
+	
+	  [Boot]
+	  secondnet.drv=pcnfs.drv
+	
+	  [boot.description]
+	  secondnet.drv=SunSelect PC-NFS (version 5.0)
+	
+	  [386Enh]
+	  secondnet=pcnfs.386
+	
+	  [Network]
+	  multinet=pcnfs
+	
+	  [network drivers]
+	  netcard=elnkii.dos
+	  transport=ndishlp.sys,*netbeui,nfs-ndis.sys,pcnfs.sys, sockdrv.sys
+	  devdir=C:\WIN31
+	  LoadRMDrivers=Yes
+	  pcnfs.sys='/F30 /C^'
+	
+	Additional query words: wfw wfwg 3.11
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+	Version           : WINDOWS:3.11
+	
+	=============================================================================
+	

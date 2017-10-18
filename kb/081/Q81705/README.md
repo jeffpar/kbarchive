@@ -1,0 +1,426 @@
+---
+layout: page
+title: "Q81705: Reading List for Developers of Windows-Based Applications"
+permalink: kb/081/Q81705/
+---
+
+## Q81705: Reading List for Developers of Windows-Based Applications
+
+	Article: Q81705
+	Product(s): Microsoft Windows Software Development Kit
+	Version(s): WINDOWS:3.0,3.1
+	Operating System(s): 
+	Keyword(s): kb16bitonly
+	Last Modified: 05-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The listing below is intended to demonstrate the variety of books and
+	periodicals on the market today that discuss programming for the Microsoft
+	Windows operating system. The publications are listed in alphabetical order by
+	title. None of these publications is recommended over any other, nor over any
+	that are absent from the list. Each of the publications has its own strengths
+	and weaknesses. Before making any purchase, examine the publication to see if it
+	meets your needs. All prices listed were copied from the cover.
+	
+	You may distribute this list freely, provided that you do not make any changes to
+	it.
+	
+	Please send any additions, updates, or corrections to the author at one of the
+	following email addresses:
+	
+	  Matt Leber
+	  Internet:mattle@microsoft.com
+	
+	Some of the products included here are manufactured by vendors independent of
+	Microsoft; we make no warranty, implied or otherwise, regarding these products'
+	performance or reliability.
+	
+	MORE INFORMATION
+	================
+	
+	Last update: 31 July 1992
+	
+	 BOOKS
+	-----
+	
+	                            
+	Advanced Windows Programming
+	----------------------------
+	
+	Author:     Martin Heller
+	Publisher:  John Wiley & Sons, Inc.
+	ISBN:       0-471-54711-5
+	Price:      $32.95 (U.S.)
+	Contents:   Displaying and Printing DIBs, Exploiting the Clipboard,
+	           Exploiting DDE (Dynamic Data Exchange) and OLE (Object
+	           Linking and Embedding), Debugging, Custom Edit Controls, A
+	           Rich Text Edit Control, Tiling a Bitmap, Porting.
+	
+	Borland C++ Programming for Windows
+	-----------------------------------
+	
+	Authors:    Peter Norton and Paul Yao
+	Publisher:  Bantam Computer Books
+	ISBN:       0-553-35143-5
+	Price:      $29.95 (U.S.)
+	Subjects:   Borland Application Framework for Windows (OWL -- Object
+	           Windows Library). Assumes knowledge of C++ and teaches the
+	           organization of the OWL libraries and making OWL work with
+	           Windows.
+	
+	Developing Windows 3.1 Applications with Microsoft C/C++ - Second Ed.
+	---------------------------------------------------------------------
+	
+	Author:    Brent Rector
+	Publisher: SAMS
+	ISBN:      0-672-30166-0
+	Price:     $39.95 (U.S.), $49.95 (Canada)
+	Subjects:  Text Output, Graphical Output, Keyboard Input, Mouse Input,
+	          Timer Input, controls, Dialog Boxed, Menus and
+	          Accelerators, Icons, String Resources, Printing, Memory
+	          Management, Fonts, Dynamic-Link Libraries (DLLs), Custom
+	          Controls, Multiple Document Interface (MDI), Dynamic Data
+	          Exchange (DDE), Dynamic Data Exchange Management Library
+	          (DDEML).
+	
+	DLLs and Memory Management
+	--------------------------
+	
+	Author:    Mike Klein
+	Publisher: SAMS
+	ISBN:      0-672-30236-5
+	Price:     $34.95 (U.S.), $43.95 (Canada)
+	Subjects:  Windows Fundamentals, Processor and Memory Fundamentals
+	          Program and Module Fundamentals, Memory Management,
+	          Library Design Ideas, Dialog and Custom Control Design.
+	
+	High Performance C Graphics Programming for Windows
+	---------------------------------------------------
+	
+	Author:    Lee Adams
+	Publisher: Windcrest/McGraw-Hill
+	ISBN:      0-8306-3790-7
+	Price:     $24.95
+	Subjects:  Windows Programming, Graphics, Mouse, Color, Fonts,
+	          Clipboard and Metafiles, Printer Programming,
+	          Principals of 3D Programming, Interactive 3D Programming,
+	          Animation, Principles of Image Processing, Practical
+	          Image Processing Techniques.
+	
+	Microsoft C/C++ Class Libraries User's Guide
+	--------------------------------------------
+	
+	Author:     Microsoft
+	Publisher:  Microsoft
+	ISBN:       N/A
+	Price:      Included with version 7.0 of the Microsoft C/C++
+	           Optimizing Compiler.
+	Subjects:   The Microsoft Foundation Class Library Tutorial, The
+	           Microsoft Foundation Class Library Cookbook (General-
+	           Purpose Classes, The CObject Class, Collections, Files and
+	           Serialization, Diagnostics, Exceptions, Application
+	           Design, Window Management, Dialogs and Control Windows,
+	           Graphics, User Input), Microsoft iostream Class Library
+	           Tutorial.
+	
+	Microsoft C/C++ Class Libraries Reference
+	-----------------------------------------
+	
+	Author:     Microsoft
+	Publisher:  Microsoft
+	ISBN:       N/A
+	Price:      Included with version 7.0 of the Microsoft C/C++
+	           Optimizing Compiler.
+	Subjects:   Introduction to the Microsoft Foundation Class Library
+	           (Windows Development with the Microsoft Foundation
+	           Classes, General-Purpose Foundation Classes, Macros and
+	           Global Functions, Diagnostic Services, Exception
+	           Processing, Message Map Cross-Reference, Structures and
+	           Enumerated Values for Windows), The Microsoft Foundation
+	           Class Library Reference, The Microsoft iostream Class
+	           Library Reference.
+	
+	Microsoft Windows 3 Developer's Workshop
+	----------------------------------------
+	
+	Author:     Richard Wilton
+	Publisher:  Microsoft Press
+	ISBN:       1-55615-244-2
+	Price:      $24.95 (U.S.)
+	Subjects:   Windows Design, Debugging, Dynamic-Link Libraries (DLLs),
+	           Custom Controls, Dynamic Data Exchange (DDE), Subclassing.
+	
+	Microsoft Windows 3.1 Guide to Programming
+	------------------------------------------
+	
+	Author:     Microsoft
+	Publisher:  Microsoft Press
+	ISBN:       1-55615-452-6
+	Price:      Included with the Microsoft Windows Software Development
+	           Kit or available separately for $29.95 (U.S.).
+	Subjects:   A helpful introduction to the Windows API in version 3.1
+	           for the experienced C programmer. Detailed instruction and
+	           examples. Topics include processing input and output,
+	           creating the necessary components of a Windows-based
+	           application, managing memory, using dynamic-link libraries
+	           (DLLs) and dynamic data exchange (DDE), and working with
+	           fonts and printers.
+	
+	Microsoft Windows 3.1 Programmer's Reference, Volume 1: Overview
+	----------------------------------------------------------------
+	
+	Author:     Microsoft
+	Publisher:  Microsoft Press
+	ISBN:       1-55615-453-4
+	Price:      Included with the Microsoft Windows Software Development
+	           Kit or available separately for $29.95 (U.S.).
+	Subjects:   An examination of all the Windows management, graphics,
+	           and system services as well as the extension libraries
+	           that are a part of the API. In addition, there is
+	           instruction on modifying specific Microsoft Windows 3.1-
+	           based applications: Control Panel, File Manager, and
+	           others.
+	
+	Microsoft Windows 3.1 Programmer's Reference, Volume 2: Functions
+	-----------------------------------------------------------------
+	
+	Author:     Microsoft
+	Publisher:  Microsoft Press
+	ISBN:       1-55615-463-1
+	Price:      Included with the Microsoft Windows Software Development
+	           Kit or available separately for $39.95 (U.S.).
+	Subjects:   A detailed reference to the API functions. Includes
+	           information on various function groups as well as an
+	           alphabetic reference to each function. Data includes
+	           syntax, statement of purpose, input parameters, return
+	           values, and comments.
+	
+	Microsoft Windows 3.1
+	Programmer's Reference, Volume 3: Messages, Structures, and Macros
+	------------------------------------------------------------------
+	
+	Author:     Microsoft
+	Publisher:  Microsoft Press
+	ISBN:       1-55615-464-X
+	Price:      Included with the Microsoft Windows Software Development
+	           Kit or available separately for $29.95 (U.S.).
+	Subjects:   Comprehensive review of additional elements of the API:
+	           data types; structures; macros, printer escape codes; DDE
+	           transactions; and File Manager, Control Panel, common
+	           dialog boxes, and installable driver messages.
+	
+	Microsoft Windows 3.1 Programmer's Reference, Volume 4: Resources
+	-----------------------------------------------------------------
+	
+	Author:     Microsoft
+	Publisher:  Microsoft Press
+	ISBN:       1-55615-494-1
+	Price:      Included with the Microsoft Windows Software Development
+	           Kit or available separately for $22.95 (U.S.).
+	Subjects:   Descriptions of the many Microsoft Windows file formats in
+	           version 3.1 as well as reference pages for several built-
+	           in tools. Reference-page topics include resource-
+	           definition statements, assembly language macros, and
+	           Windows Help statements and macros.
+	
+	Microsoft Windows 3.1 Programming Tools
+	---------------------------------------
+	
+	Author:     Microsoft
+	Publisher:  Microsoft Press
+	ISBN:       1-55615-454-2
+	Price:      Included with the Microsoft Windows Software Development
+	           Kit or available separately for $22.95 (U.S.).
+	Subjects:   Detailed information and instruction for using built-in
+	           software development tools that are part of the Microsoft
+	           Windows SDK. Topics include creating and compiling
+	           resources, debugging applications, analyzing data, and
+	           compressing and decompressing data.
+	
+	Object Oriented Programming for Windows
+	---------------------------------------
+	
+	Author:     Ernest R. Tello
+	Publisher:  Wiley
+	ISBN:       0-471-52754-8
+	Price:      $29.95
+	Subjects:   Introduction to Windows, Object Oriented Programming -
+	           What is it?, Object-Oriented Languages and Development
+	           Tools, Windows 3.0 Software Development, Introduction
+	           to the Actor Programming System, Object-Oriented User
+	           Interfaces for Windows, Object-Oriented Graphics
+	           Programming for Windows, Programming with Object
+	           Graphics.
+	
+	Peter Norton's Windows 3.1 Power Programming Techniques, 2nd Edition
+	--------------------------------------------------------------------
+	
+	Authors:    Peter Norton and Paul Yao
+	Publisher:  Bantam Computer Books
+	ISBN:       0-553-37062-6
+	Price:      $34.95 (U.S), $43.95 (Canada), L31.99 (Great Britain)
+	Subjects:   Text Output, Messaging, Graphical Output, Keyboard Input,
+	           Mouse Input, Controls, Dialog Boxes, Menus and
+	           Accelerators, Icons, String Resources, Printing, Memory
+	           Management, Far Heap Management, Dynamic-Link Libraries
+	           (DLLs).
+	
+	Programming Windows 3.0
+	-----------------------
+	
+	Author:     Charles Petzold
+	Publisher:  Microsoft Press
+	ISBN:       1-55615-264-7
+	Price:      $29.95 (U.S.)
+	Subjects:   Text Output, Graphical Output, Keyboard Input, Mouse
+	           Input, Timer Input, Controls, Dialog Boxes, Menus and
+	           Accelerators, Icons, Bitmaps, String Resources, Printing,
+	           Window Subclassing, Memory Management, Fonts, Dynamic-Link
+	           Libraries (DLLs), Multiple Document Interface (MDI),
+	           Dynamic Data Exchange (DDE).
+	
+	Undocumented Windows
+	--------------------
+	
+	Authors:    Andrew Schulman, David Maxey, Matt Pietrek
+	Publisher:  Addison-Wesley
+	ISBN:       0-201-60834-0
+	Price:      $39.95
+	Subjects:   General Use of Undocumented Windows APIs, Examining
+	           Windows Executables, Disassembling Windows, Tools for
+	           Exploring Windows, KERNEL: Windows System Services,
+	           USER: Microsoft Windows User Interface, Undocumented
+	           Windows Messages, GDI, SYSTEM, ToolHelp: A Partial
+	           Replacement for Undocumented Windows.
+	
+	Windows++
+	---------
+	
+	Author:     Paul Dilascia
+	Publisher:  Addison-Wesley
+	ISBN:       0-201-60891-X
+	Price:      $29.95 (U.S.), $38.95 (Canada)
+	Subtitle:   Writing Reusable Windows Code in C++
+	
+	Windows 3: A Developer's Guide
+	------------------------------
+	
+	Author:     Jeffrey M. Richter
+	Publisher:  M&T Books
+	ISBN:       1-55851-164-4
+	Price:      $39.95 (U.S.)
+	Subjects:   Anatomy of a Window, Subclassing and Superclassing,
+	           Controls, Dialog Boxes, Printing, Custom Controls,
+	           Multiple Document Interface (MDI), Dynamic Data Exchange
+	           (DDE) with Program Manager, Tasks, Message Queues, Message
+	           Hooks.
+	
+	Windows 3.1 Programmer's Reference
+	----------------------------------
+	
+	Author:     James W. McCord
+	Publisher:  Que
+	ISBN:       0-88022-787-7
+	Price:      $39.95 (U.S.)
+	Contents:   A complete reference to all SDK functions, Windows
+	           Programming Basics, GDI, Resources, The Keyboard and
+	           Windows, The Mouse and Windows, Windows and Child Windows,
+	           Memory Management and Windows, MDI, and DLLs.
+	
+	Windows 3.0 Programming Primer
+	------------------------------
+	
+	Author:     Alan Southerton
+	Publisher:  Addison-Wesley
+	ISBN:       0-201-55078-4
+	Price:      $34.95 (U.S.)
+	Subjects:   Windows, Menus, Dialog Boxes, GDI Graphics, GDI Text,
+	           General GDI.
+	
+	Windows Programmer's Guide to OLE/DDE
+	-------------------------------------
+	
+	Author:     Jeffrey D. Clark
+	Publisher:  SAMS
+	ISBN:       0-672-30226-8
+	Price:      $34.95
+	Subject:    Dynamic Data Exchange Concepts, DDEML Conversation
+	           Management, DDEML Transaction Management, DDEML Monitor
+	           Applications, Object Linking and Embedding Concepts, OLE
+	           Server Applications, OLE Client Applications, Ojbect
+	           Handlers.
+	
+	Windows System Programming
+	--------------------------
+	
+	Authors:    Peter Wilken and Dirk Honekamp
+	Publisher:  Abacus
+	ISBN:       1-55755-116-2
+	Price:      $39.95 (U.S.)
+	Subjects:   Windows-Based Application Basics, Text Output, Dialog Boxes,
+	           Displaying Graphics, Colors and Bitmaps, Multiple Document
+	           Interface (MDI), Clipboard, Timer, Dynamic Data Exchange
+	           (DDE), Hooks, Printing, The Serial Interface, Dynamic-Link
+	           Libraries (DLLs), Windows Memory Management.
+	
+	Writing Windows Device Drivers
+	------------------------------
+	
+	Author:     Daniel A. Norton
+	Publisher:  Addison-Wesley
+	ISBN:       0-201-57795-X
+	Price:      $29.92 (U.S.), $38.95 (Canada)
+	Subjects:   Windows Operating Modes, GDI-The Graphics Display
+	           Interface, Printer and Plotter Drivers, Display Drivers,
+	           System Drivers, Virtual Device Drivers, Virtual Driver
+	           Services, System Virtual Drivers, Nonstandard Device
+	           Drivers, Driver Installation.
+	
+	  PERIODICALS
+	-----------
+	
+	Microsoft Systems Journal
+	-------------------------
+	
+	ISSN:       0889-9932
+	Address:    Circulation Department
+	           P.O. Box 1903
+	           Marion, OH  44305
+	           Phone: (800) 669-1002
+	
+	Windows/MS-DOS Developer's Journal
+	----------------------------------
+	
+	ISSN:
+	Address:    1601 West 23rd Street, Suite 200
+	           P.O. Box 3127
+	           Lawrence, KS  66046-0127
+	           Phone: (913) 841-1631
+	           Fax: (913) 841-2624
+	
+	Windows Tech Journal
+	--------------------
+	
+	ISSN:
+	Address:    P.O. Box 70167
+	           Eugene, OR  97401-0110
+	           Phone: (800) 234-0386
+	           Fax: (503) 746-0071
+	
+	Additional query words: 3.00 3.10
+	
+	======================================================================
+	Keywords          : kb16bitonly 
+	Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+	Version           : WINDOWS:3.0,3.1
+	
+	=============================================================================
+	

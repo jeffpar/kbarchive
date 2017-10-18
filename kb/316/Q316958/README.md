@@ -1,0 +1,248 @@
+---
+layout: page
+title: "Q316958: Flight Simulator 2002: Blank Screen Starting Flight Simulator"
+permalink: kb/316/Q316958/
+---
+
+## Q316958: Flight Simulator 2002: Blank Screen Starting Flight Simulator
+
+	Article: Q316958
+	Product(s): Microsoft Home Games
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbimu
+	Last Modified: 16-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Flight Simulator 2002 Professional Edition 
+	- Microsoft Flight Simulator 2002 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When using Microsoft Flight Simulator 2002, you attempt to start the program,
+	the splash screen appears, a blank screen appears, and then your computer stops
+	responding (hangs).
+	
+	CAUSE
+	=====
+	
+	This issue can occur if the Riched20.dll or riched32.dll file on your computer
+	is infected with the Nimda worm virus.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, use the methods listed below in the order in which they
+	are presented.
+	
+	Method 1: Run Anti-virus Software and replace Riched20.dll
+	----------------------------------------------------------
+	
+	1. Run anti-virus software that contains the latest virus signature file, and
+	  perform a complete scan of your computer. Support for this particular virus
+	  is available from several different anti-virus programs. For additional
+	  information about third-party antivirus vendors and products, click the
+	  article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q49500 List of Antivirus Software Vendors
+	
+	  Once you have successfully removed the Nimda worm virus from your computer
+	  proceed to the next step.
+	
+	2. Quit all Microsoft Windows programs.
+	
+	3. Insert the Windows CD into the CD-ROM drive and press and hold down SHIFT to
+	  prevent Windows CD from starting automatically.
+	
+	4. Click Start, click Run, and then type:
+	
+	  "<cd-rom>:\MSI" (without the quotation marks)
+	
+	  where <cd-rom> is the drive letter of the CD-ROM drive.
+	
+	5. Click OK, and then install Windows Installer engine.
+	
+	   - If you are running Microsoft Windows 95, Microsoft Windows 98, or
+	     Microsoft Windows Millennium Edition (Me), double-click Instmsi.exe.
+	
+	  -or-
+	
+	   - If you are running Microsoft Windows NT 4.0 or Microsoft Windows 2000,
+	     double-click Instmsiw.exe.
+	
+	  The Instmsiw.exe and Instmsi.exe are Windows Installer engines that install a
+	  new version of Riched20.dll.
+	
+	6. Once the installer is finished, close all open windows and start Flight
+	  Simulator 2002.
+	
+	NOTE: If you have Flight Simulator 2002 Professional, the Instmsiw.exe and
+	Instmi.exe files are located in FS2002 folder on your hard disk. The location
+	is:
+	
+	  <drive:>\Program Files\Microsoft Games\FS2002\gmax\msi
+	
+	where <drive:> is the drive letter of the hard disk.
+	If the problem continues to occur, proceed to the next Method.
+	
+	Method 2: Extract Riched32.dll Files
+	------------------------------------
+	
+	To resolve this issue, extract a copy of Riched32.dll from your Microsoft Windows
+	CD-ROM. To do this, follow these steps.
+	
+	NOTE: Because there are several versions of Windows, the following steps may be
+	different on your computer. In this case, please contact your product
+	documentation to complete these steps.
+	
+	Locate the Riched32.dll File
+	----------------------------
+	
+	1. Click Start, point to Search, and then click For Files or Folders.
+	
+	2. In the Named box, type "riched32.dll" (without the quotation marks), and then
+	  click Search Now.
+	
+	  NOTE: If you do not see Riched32.dll in the list of found files, proceed
+	  directly to the next section, "Extract the Riched32.dll File".
+	
+	  If you do see Riched32.dll in the list of found files, continue.
+	
+	3. In the list of found files, right-click Riched32.dll, and then click Rename.
+	
+	4. In the box that appears, type "riched32.old" (without the quotation marks),
+	  and then press ENTER.
+	
+	  NOTE: If you receive an error message that states that "access is denied" when
+	  you try to rename the Riched32.dll file, follow these steps:
+	
+	  a. Click Start, and then click Shut Down.
+	
+	  b. In the Shut Down Windows dialog box, click Restart in MS-DOS mode, and
+	     then click OK.
+	
+	  c. At the command prompt, type the following commands, and press ENTER after
+	     each:
+	
+	  
+	      - "cd\windows\system" (without the quotation marks)
+	
+	      - "ren Riched32.dll Riched32.old" (without the quotation marks)
+	
+	      - "exit" (without the quotation marks)
+	
+	Extract the Riched32.dll File
+	-----------------------------
+	
+	Follow the steps for your version of Windows.
+	
+	Microsoft Windows 98:
+	
+	1. Insert your Windows CD-ROM into your CD-ROM drive.
+	
+	2. Click Start, and then click Run.
+	
+	3. Type "sfc" (without the quotation marks), and then press ENTER.
+	
+	4. Click "Extract one file from installation disk".
+	
+	5. In the "Specify the system file you want to restore" box, type "Riched32.dll"
+	  (without the quotation marks), and then click Start.
+	
+	6. In the Extract File dialog box, click Browse next to the Restore from box,
+	  and then locate your CD-ROM drive.
+	
+	7. In the Save file in box, type the following, and then click OK:
+	
+	  "<drive>:\Windows\System" (without the quotation marks)
+	
+	  where <drive> refers to the letter of the drive where your \Windows
+	  folder is located.
+	
+	8. In the Backup File dialog box, click Skip, and then click OK.
+	
+	Microsoft Windows Millennium Edition:
+	
+	1. Click Start, and then click Run.
+	
+	2. Type msconfig, and then press ENTER.
+	
+	3. In the System Configuration Utility dialog box, click the General tab, and
+	  then click Extract File.
+	
+	4. In the "Extract one file from installation disk" dialog box, type
+	  "Riched32.dll" (without the quotation marks), and then click Start.
+	
+	5. In the Restore from box, type "<drive>:\Windows\options\install"
+	  (without the quotation marks), where <drive> refers to the letter of
+	  the drive where the \Windows folder is located.
+	
+	  NOTE: If the .cab files are not present on your hard disk, insert the Windows
+	  Millennium Edition CD, and then type "<drive>:\Win9x" (without the
+	  quotation marks), where <drive> refers to the drive letter of you
+	  CD-ROM drive.
+	
+	6. In the Save file in box, type the following, and then click OK:
+	
+	  "<drive>:\Windows\system" (without the quotation marks)
+	
+	  where <drive> refers to the letter of the drive where the \Windows
+	  folder is located.
+	
+	7. In the Backup File dialog box, click Skip.
+	
+	8. Click OK, and then click OK to close System Configuration Utility.
+	
+	Microsoft Windows 2000:
+	
+	Log on to your computer as an administrator.
+	
+	1. Click Start, and then click Run.
+	
+	2. Type "cmd" (without the quotation marks), and then press ENTER.
+	
+	3. At the command prompt, type the following command, and then press ENTER:
+	
+	  "sfc /scannow" (without the quotation marks)
+	
+	  This command invokes the System File Checker, which replaces the missing or
+	  renamed Riched32.dll file.
+	
+	Windows XP:
+	
+	1. Click Start, and then click Run.
+	
+	2. In the Open box, type "msconfig" (without the quotation marks), and then
+	  press ENTER.
+	
+	3. In the System Configuration Utility dialog box, on the General tab, click
+	  Expand File.
+	
+	4. In the File to restore box, type "Riched32.dll" (without the quotation
+	  marks).
+	
+	5. In the Restore from box, type <drive>:\Windows\options\install""
+	  (without the quotation marks), where <drive> refers to the letter of
+	  the drive where the \Windows folder.
+	
+	6. In the Save file in box, type the following, and then click OK:
+	
+	  "<drive>:\Windows\system" (without the quotation marks)
+	
+	  where <drive> refers to the letter of the drive where the \Windows
+	  folder.
+	
+	Additional query words: msgame
+	
+	======================================================================
+	Keywords          : kbimu 
+	Technology        : kbGamesSearch kbFlightSimSearch kbFlightSim2002 kbFlightSim2002Pro kbSimSearch
+	Version           : :
+	Issue type        : kbprb
+	
+	=============================================================================
+	

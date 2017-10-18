@@ -1,0 +1,71 @@
+---
+layout: page
+title: "Q129231: Digiboard PC/Xem on AT&amp;T Globalyst 600 ISA Causes Errors"
+permalink: kb/129/Q129231/
+---
+
+## Q129231: Digiboard PC/Xem on AT&amp;T Globalyst 600 ISA Causes Errors
+
+	Article: Q129231
+	Product(s): Microsoft Windows NT
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 3.5 
+	- Microsoft Windows NT Server version 3.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	After you install the Digiboard PC/Xem on an AT&T Globalyst 600 ISA computer
+	and initialize the Digiboard driver in Windows NT version 3.5, one or all of the
+	following error messages may appear:
+	
+	  Digiboard FEP failed because no serial device was successfully loaded. The
+	  driver will unload.
+	
+	  Unable to properly access NT XEM2's memory. Check for device conflicts or
+	  valid memory ranges.
+	
+	  Digiboard adapter NT XEM2 was unable to initialize properly.
+	
+	  Unable to reset NT XEM2. Wait confirmation failed.
+	
+	CAUSE
+	=====
+	
+	The AT&T Globalyst 600 ISA computer is Plug-n-Play compliant. No memory
+	address for non-Plug-n-Play compliant device was reserved on the computer's
+	advanced BIOS setup.
+	
+	RESOLUTION
+	==========
+	
+	To correct this problem, configure the AT&T Global 600 ISA advanced BIOS
+	settings. The following changes are recommended:
+	
+	1. Create a 32K window.
+	
+	2. Reserve a memory address for the Digiboard PC/Xem (for example, C800, (D000,
+	  or D800).
+	
+	For further assistance, contact Digiboard Technical Support at (612) 943-9020.
+	
+	The products discussed here are manufactured by AT&T and Digiboard, vendors
+	independent of Microsoft; we make no warranty, implied or otherwise, regarding
+	these products' performance or reliability.
+	
+	Additional query words: prodnt pentium 3356 cmos
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+	
+	=============================================================================
+	

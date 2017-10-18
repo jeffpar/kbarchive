@@ -1,0 +1,63 @@
+---
+layout: page
+title: "Q149262: XCLN: Rights to Folder Require Reviewer Rights on Mailbox"
+permalink: kb/149/Q149262/
+---
+
+## Q149262: XCLN: Rights to Folder Require Reviewer Rights on Mailbox
+
+	Article: Q149262
+	Product(s): Microsoft Exchange
+	Version(s): WINDOWS:4.0,5.0
+	Operating System(s): 
+	Keyword(s): kbusage
+	Last Modified: 24-MAR-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Windows 95/98 client, versions 4.0, 5.0 
+	- Microsoft Exchange Windows 3.x client, versions 4.0, 5.0 
+	- Microsoft Exchange Windows NT client, versions 4.0, 5.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Granting Author rights to a folder within a Mailbox requires that the Mailbox
+	have at least Reviewer rights. Without Reviewer rights, the user will receive
+	one of the following messages when attempting to view the folder:
+	
+	  The set of folders could not be opened. You do not have sufficient permission
+	  to perform this operation on this object. See the folder contact or the
+	  system Administrator.
+	
+	-or-
+	
+	  The set of folders could not be opened. The client operation failed.
+	
+	MORE INFORMATION
+	================
+	
+	For example, if User1 wants to grant User2 rights to a folder named Projects,
+	User1 must grant User2 at least Reviewer privilege to his Mailbox. By granting
+	User2 Reviewer privilege to the Mailbox, User2 will be able to see all Top-Level
+	folders. Also by granting Reviewer privilege to User2 on the Mailbox, User2 will
+	be able to see any Sub-Folders contained in Projects.
+	
+	This behavior is by design. Microsoft Exchange clients may consider it a security
+	risk if the Microsoft Exchange user is only wanting to provide access to a
+	particular folder and not to their Mailbox. If this is the case, Microsoft
+	Exchange users should consider using public folders as a workaround for
+	providing access to specific folders.
+	
+	
+	Additional query words: faq OL97 OL98
+	
+	======================================================================
+	Keywords          : kbusage 
+	Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange400NT kbExchange500NT kbExchange400Win95 kbExchange500Win95
+	Version           : WINDOWS:4.0,5.0
+	
+	=============================================================================
+	

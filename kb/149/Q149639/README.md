@@ -1,0 +1,82 @@
+---
+layout: page
+title: "Q149639: PRB: Network DDE Requests Fail from Visual FoxPro"
+permalink: kb/149/Q149639/
+---
+
+## Q149639: PRB: Network DDE Requests Fail from Visual FoxPro
+
+	Article: Q149639
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS: 3.0,3.0b,5.0,5.0a,6.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 21-AUG-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	From Visual FoxPro, you can use Network DDE to make a connection to a dynamic
+	data exchange (DDE) enabled application over the network, but all requests are
+	ignored by the application. The conversation cannot be terminated.
+	
+	CAUSE
+	=====
+	
+	Visual FoxPro DDE commands are designed to talk only to local DDE servers, not
+	DDE servers located over a network.
+	
+	STATUS
+	======
+	
+	This behavior is by design.
+	
+	WORKAROUND
+	==========
+	
+	Use Network DDE by way of Windows API calls, such as DDEInitiate.
+	
+	MORE INFORMATION
+	================
+	
+	The following example requires use of Chat which is located in the Network group
+	in Windows for Workgroups.
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	The following example tries to start a Network DDE conversation with Winchat,
+	which is located on a remote computer. Before starting the conversation, load
+	Winchat on both client and server computers to enable NetDDE. On the client
+	computer, close down Winchat. On the server computer, minimize Winchat. Starting
+	a Network DDE conversation in Visual Basic 4.0 Enterprise Edition will 'ring'
+	the WINCHAT phone.
+	
+	1. In the Visual FoxPro Command window, type:
+	
+	        nsyschan=DdeInitiate("\\server\ndde$\chat$","chat")
+	
+	  The command is accepted and returns a positive channel number but the WINCHAT
+	  phone doesn't ring.
+	
+	2. In the Command window, type:
+	
+	        ltermchan=DdeTerminate(nsyschan)
+	
+	  The command returns false (.F.), and you cannot close the channel.
+	
+	Additional query words: VfoxWin kbvfp300 kbvfp500a kbvfp500 kbvfp600
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+	Version           : WINDOWS: 3.0,3.0b,5.0,5.0a,6.0
+	
+	=============================================================================
+	

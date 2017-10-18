@@ -1,0 +1,175 @@
+---
+layout: page
+title: "Q130357: Baseball 95: National League Schedule Changes Caused By Strike"
+permalink: kb/130/Q130357/
+---
+
+## Q130357: Baseball 95: National League Schedule Changes Caused By Strike
+
+	Article: Q130357
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): WINDOWS:
+	Operating System(s): 
+	Keyword(s): win31
+	Last Modified: 11-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Complete Baseball Guide for Windows, 1995 edition 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The following is a list of National League schedule changes for the 1995
+	season.
+	
+	Some games have been added and others deleted. Because last minute changes may
+	occur, no game times are listed.
+	
+	HOME          VISITOR         DATE          TIME           ADD/DEL
+	----          -------         ----          ----           -------
+	
+	Fla           LA              4/25/95       7:35             Add
+	Stl           Fla             4/25/95       7:05             Del
+	Chi           Phi             4/26/95       7:05             Del
+	Cin           Chi             4/26/95       2:05             Add
+	Fla           LA              4/26/95       7:05             Add
+	LA            Cin             4/26/95       7:05             Del
+	Pit           Mon             4/26/95       7:35             Chg
+	Stl           Phi             4/26/95       8:05             Add
+	Stl           Fla             4/26/95      12:35             Del
+	Atl           SF              4/27/95       2:10             Add
+	Chi           Mon             4/27/95       1:20             Del
+	Cin           Chi             4/27/95      12:35             Add
+	Col           NY              4/27/95       3:05             Add
+	Hou           Col             4/27/95       7:05             Del
+	LA            Atl             4/27/95       7:05             Del
+	Pit           Mon             4/27/95       3:05             Add
+	SD            Hou             4/27/95       5:05             Add
+	SD            Cin             4/27/95       7:05             Del
+	SF            Fla             4/27/95       1:05             Del
+	Stl           Phi             4/27/95       1:35             Add
+	Mon           Fla             5/22/95       7:35             Add
+	Chi           Cin             5/25/95       8:05             Add
+	Atl           LA              6/01/95       5:40             Add
+	Mon           Stl             6/01/95       1:35             Add
+	Phi           Chi             6/01/95       1:05             Add
+	Fla           NY              6/26/95       7:05             Add
+	Cin           SF              7/03/95       7:35             Add
+	NY            Chi             7/03/95       7:40             Add
+	Hou           SD              7/08/95       8:05             Dbl-Hdr
+	Mon           Chi             7/12/95       7:35             Add
+	Phi           Stl             7/12/95       7:35             Add
+	Pit           Atl             7/12/95       3:05             Add
+	LA            Hou             7/19/95       4:05             Add
+	SF            Fla             7/19/95       3:35             Add
+	Col           Phi             7/20/95       5:05             Add
+	Cin           LA              8/17/95       7:35             Add
+	Stl           SD              9/7/95        8:05             Add
+	Stl           SD              9/10/95       1:15             Add
+	SD            Stl             9/12/95      10:05             Add
+	Cin           SD              9/14/95      12:35             Add
+	Pit           Phi             9/14/95       7:35             Add
+	
+	Schedule Changes by Team
+	------------------------
+	
+	TEAM       LOCATION     OPPONENT    DATE      TIME       ADD/CHG
+	----       --------     --------    ----      ----       -------
+	
+	Atl        Home         SF        4/27/95     2:10         Add
+	Atl        Visitor      LA        4/27/95     7:05         Del
+	Atl        Home         LA        6/01/95     5:40         Add
+	Atl        Visitor      Pit       7/12/95     3:05         Add
+	Chi        Visitor      Cin       4/26/95     2:05         Add
+	Chi        Home         Phi       4/26/95     7:05         Del
+	Chi        Visitor      Cin       4/27/95    12:35         Add
+	Chi        Home         Mon       4/27/95     1:20         Del
+	Chi        Home         Cin       5/25/95     8:05         Add
+	Chi        Visitor      Phi       6/01/95     1:05         Add
+	Chi        Visitor      NY        7/3/95      7:40         Add
+	Chi        Visitor      Mon       7/12/95     7:35         Add
+	Cin        Home         Chi       4/26/95     2:05         Add
+	Cin        Visitor      LA        4/26/95     7:05         Del
+	Cin        Home         Chi       4/27/95    12:35         Add
+	Cin        Visitor      SD        4/27/95     7:05         Del
+	Cin        Visitor      Chi       5/25/95     8:05         Add
+	Cin        Home         SF        7/03/95     7:35         Add
+	Cin        Home         LA        8/17/95     7:35         Add
+	Cin        Home         SD        9/14/95    12:35         Add
+	Col        Home         NY        4/27/95     3:05         Add
+	Col        Visitor      Hou       4/27/95     7:05         Del
+	Col        Home         Phi       7/20/95     5:05         Add
+	Fla        Home         LA        4/25/95     7:35         Add
+	Fla        Visitor      Stl       4/25/95     7:05         Del
+	Fla        Home         LA        4/26/95     7:05         Add
+	Fla        Visitor      Stl       4/26/95    12:35         Del
+	Fla        Visitor      SF        4/27/95     1:05         Del
+	Fla        Visitor      Mon       5/22/95     7:35         Add
+	Fla        Home         NY        6/26/95     7:05         Add
+	Fla        Visitor      SF        7/19/95     3:35         Add
+	Hou        Visitor      SD        4/27/95     5:05         Add
+	Hou        Home         Col       4/27/95     7:05         Del
+	Hou        Home         SD        7/8/95      8:05         Dbl-Hdr
+	Hou        Visitor      LA        7/19/95     4:05         Add
+	LA         Visitor      Fla       4/25/95     7:35         Add
+	LA         Visitor      Fla       4/26/95     7:05         Add
+	LA         Home         Cin       4/26/95     7:05         Del
+	LA         Home         Atl       4/27/95     7:05         Del
+	LA         Visitor      Atl       6/01/95     5:40         Add
+	LA         Home         Hou       7/19/95     4:05         Add
+	LA         Visitor      Cin       8/17/95     7:35         Add
+	Mon        Visitor      Pit       4/26/95     7:35         Chg
+	Mon        Visitor      Pit       4/27/95     3:05         Add
+	Mon        Visitor      Chi       4/27/95     1:20         Del
+	Mon        Home         Fla       5/22/95     7:35         Add
+	Mon        Home         Stl       6/01/95     1:35         Add
+	Mon        Home         Chi       7/12/95     7:35         Add
+	NY         Visitor      Col       4/27/95     3:05         Add
+	NY         Visitor      Fla       6/26/95     7:05         Add
+	NY         Home         Chi       7/03/95     7:40         Add
+	Phi        Visitor      Stl       4/26/95     8:05         Add
+	Phi        Visitor      Chi       4/26/95     7:05         Del
+	Phi        Visitor      Stl       4/27/95     1:35         Add
+	Phi        Home         Chi       6/01/95     1:05         Add
+	Phi        Home         Stl       7/12/95     7:35         Add
+	Phi        Visitor      Col       7/20/95     5:05         Add
+	Phi        Visitor      Pit       9/14/95     7:35         Add
+	Pit        Home         Mon       4/26/95     7:35         Chg
+	Pit        Home         Mon       4/27/95     3:05         Add
+	Pit        Home         Atl       7/12/95     3:05         Add
+	Pit        Home         Phi       9/14/95     7:35         Add
+	SD         Home         Hou       4/27/95     5:05         Add
+	SD         Home         Cin       4/27/95     7:05         Del
+	SD         Visitor      Hou       7/08/95     8:05         Dbl-Hdr
+	SD         Visitor      Stl       9/07/95     8:05         Add
+	SD         Visitor      Stl       9/10/95     1:15         Add
+	SD         Home         Stl       9/12/95    10:05         Add
+	SD         Visitor      Cin       9/14/95    12:35         Add
+	SF         Visitor      Atl       4/27/95     2:10         Add
+	SF         Home         Fla       4/27/95     1:05         Del
+	SF         Visitor      Cin       7/03/95     7:35         Add
+	SF         Home         Fla       7/19/95     3:35         Add
+	Stl        Home         Fla       4/25/95     7:05         Del
+	Stl        Home         Phi       4/26/95     8:05         Add
+	Stl        Home         Fla       4/26/95    12:35         Del
+	Stl        Home         Phi       4/27/95     1:35         Add
+	Stl        Visitor      Mon       6/01/95     1:35         Add
+	Stl        Visitor      Phi       7/12/95     7:35         Add
+	Stl        Home         SD        9/7/95      8:05         Add
+	Stl        Home         SD        9/10/95     1:15         Add
+	Stl        Visitor      SD        9/12/95    10:05         Add
+	
+	The information is provided by Baseball Weekly as of May 1, 1995.
+	
+	Additional query words: kbhowto 1.00 1995 strike altered mmtitles
+	
+	======================================================================
+	Keywords          : win31 
+	Technology        : kbHomeProdSearch kbGamesSearch kbBaseballSearch kbCompleteBaseballSearch kbCompleteBaseball1995
+	Version           : WINDOWS:
+	
+	=============================================================================
+	

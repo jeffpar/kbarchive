@@ -1,0 +1,96 @@
+---
+layout: page
+title: "Q180439: Encarta 95 Err Msg: Cannot Open Encart95.stf"
+permalink: kb/180/Q180439/
+---
+
+## Q180439: Encarta 95 Err Msg: Cannot Open Encart95.stf
+
+	Article: Q180439
+	Product(s): Microsoft Home Kids Products
+	Version(s): 1995 edition
+	Operating System(s): 
+	Keyword(s): kbenv kberrmsg kbmm
+	Last Modified: 26-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Encarta 95 The Complete Interactive Multimedia Encyclopedia for Macintosh 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you attempt to start Microsoft Encarta for Windows, 1995 edition, you may
+	receive the following error message:
+	
+	  Cannot open Encart95.stf.
+	
+	CAUSE
+	=====
+	
+	This behavior can occur if the Encarta.ini file contains one or more invalid
+	entries.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, use the appropriate method for your version of Windows:
+	
+	Windows 95/98
+	-------------
+	
+	If you use Microsoft Windows 95/98, follow these steps:
+	
+	1. Click Start, point to Find, and then click Files Or Folders.
+	
+	2. In the Named box, type "encarta.ini" (without the quotation marks), and then
+	  click Find Now.
+	
+	3. In the list of found files, right-click the Encarta.ini file, and then click
+	  Delete.
+	
+	4. Close the Find: Files Named Encarta.ini window.
+	
+	5. Reinstall Encarta 1995 for Windows.
+	
+	Windows 3.1x
+	------------
+	
+	If you use Microsoft Windows 3.1x, follow these steps:
+	
+	1. Start File Manager.
+	
+	2. On the File menu, click Search.
+	
+	3. In the Search For box, type "encarta.ini" (without the quotation marks).
+	
+	4. In the Start From box, type the following
+	
+	  "<drive>:/<windows>" (without the quotation marks)
+	
+	  where <drive> is the drive on which Windows is installed and
+	  <windows> is the folder in which Windows is installed.
+	
+	5. Click the Search All Subdirectories check box to clear it, and then click OK.
+	
+	6. In the Search Results window, click the Encarta.ini file to select it.
+	
+	7. On the File menu, click Delete. When you are prompted to confirm the
+	  deletion, click OK.
+	
+	8. Close the Search Results window, and then quit File Manager.
+	
+	9. Reinstall Encarta 1995 for Windows.
+	
+	Additional query words: 1995 multi media multimedia multi-media mmtitles
+	
+	======================================================================
+	Keywords          : kbenv kberrmsg kbmm 
+	Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbEncartaSearch kbEncartaEnCyc1995Mac
+	Version           : :1995 edition
+	Issue type        : kbprb
+	
+	=============================================================================
+	

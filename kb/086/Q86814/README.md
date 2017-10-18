@@ -1,0 +1,89 @@
+---
+layout: page
+title: "Q86814: BUG: NMAKE TOOLS.INI Commands Ignore Environment Variables"
+permalink: kb/086/Q86814/
+---
+
+## Q86814: BUG: NMAKE TOOLS.INI Commands Ignore Environment Variables
+
+	Article: Q86814
+	Product(s): Microsoft Programming Utilities
+	Version(s): MS-DOS:1.2,1.3,1.4; NT:1.4,1.5
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 24-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft NMAKE Utility for MS-DOS, versions 1.2, 1.3, 1.4 
+	- Microsoft NMAKE Utility for Windows NT, versions 1.4, 1.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Commands placed in the TOOLS.INI file may not recognize an environment variable
+	macro and proceed as if the macro was undefined.
+	
+	RESOLUTION
+	==========
+	
+	There are two methods to work around this problem, as follows:
+	
+	- Define the macro on the command line instead of as an environment variable.
+	
+	-or-
+	
+	- Place the commands that depend on the environment variable in the makefile
+	  rather than in the TOOLS.INI file.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in NMAKE versions 1.2, 1.3, and
+	1.4. We are researching this problem and will post new information here in the
+	Microsoft Knowledge Base as it becomes available.
+	
+	MORE INFORMATION
+	================
+	
+	Perform the following four steps to demonstrate this problem.
+	
+	1. Edit your TOOLS.INI file to add the following section:
+	
+	        [NMAKE]
+	        TEST=okay
+	        !IFDEF ENV_VAR                        #  Place these commands in
+	        TEST = $(TEST) Environment is defined #  the makefile to resolve
+	        !ENDIF                                #  the problem.
+	
+	2. At the MS-DOS command prompt, type the following to define the ENV_VAR
+	  environment variable:
+	
+	  " SET ENV_VAR=1" (without the quotation marks)
+	
+	3. Create a file named makefile that contains the following:
+	
+	  " ALL:
+	  @echo $(TEST)" (without the quotation marks)
+	
+	4. At the MS-DOS prompt, type "NMAKE" (without the quotation marks).
+	
+	NMAKE displays the following on the screen:
+	
+	  okay
+	
+	instead of the following expected output:
+	
+	  okay Environment is defined
+	
+	Additional query words: 1.20 1.30 1.40 1.50
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbVCsearch kbAudDeveloper kbNMAKESearch kbNMAKE120DOS kbNMAKE130DOS kbNMAKE140DOS kbNMAKE140NT kbNMAKE150NT
+	Version           : MS-DOS:1.2,1.3,1.4; NT:1.4,1.5
+	
+	=============================================================================
+	

@@ -1,0 +1,134 @@
+---
+layout: page
+title: "Q168493: PPT: Narration Does Not Play From Unpacked PPT97 Presentation"
+permalink: kb/168/Q168493/
+---
+
+## Q168493: PPT: Narration Does Not Play From Unpacked PPT97 Presentation
+
+	Article: Q168493
+	Product(s): Microsoft PowerPoint for Windows
+	Version(s): WINDOWS:7.0,97
+	Operating System(s): 
+	Keyword(s): kberrmsg kbinterop kbdta kbpng
+	Last Modified: 10-NOV-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft PowerPoint 97 for Windows 
+	- Microsoft PowerPoint for Windows 95, version 7.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If you use the Pack and Go Wizard to pack a PowerPoint 97 presentation that has
+	a recorded narration, unpack it on another computer, and try to run the slide
+	show in PowerPoint 7.0 or the 32-bit PowerPoint viewer, the following symptoms
+	may occur:
+	
+	- As each slide appears, a dialog box with a title similar to the following
+	  appears:
+	
+	  Locate Media Clip ppt292.tmp
+	
+	  No matter which folder you open, you cannot find a file with that name.
+	
+	  -and-
+	
+	- When you click Cancel, you receive an error message similar to the following:
+	
+	  Ppt292.tmp
+	
+	  This file cannot be found. Make sure the correct path and filename are given.
+	
+	If you run the same presentation as a slide show in PowerPoint 97, it plays
+	without error.
+	
+	CAUSE
+	=====
+	
+	When you pack a PowerPoint 97 presentation, the Pack and Go Wizard saves the
+	presentation as a "PowerPoint 95 & 97" presentation--a special dual-format
+	presentation that both PowerPoint 7.0 and PowerPoint 97 can open directly.
+	Because the Record Narration feature is new to PowerPoint 97, the Pack and Go
+	Wizard tries to convert the recorded narration to a series of sound (.wav) files
+	which it links to the individual slides. However, it actually converts the
+	recorded narration to a series of temporary (.tmp) files which it does not
+	actually include in the packed presentation.
+	
+	NOTE: In Microsoft Office 97 Service Release 1 (SR-1), the Pack and Go Wizard in
+	PowerPoint 97 can pack presentations as PowerPoint 97 presentations instead of
+	PowerPoint 7.0 and 97 dual-format presentations. As a result, packing a
+	presentation requires fewer disks. For additional information about obtaining
+	Office 97 SR-1, click the article number below to view the article in the
+	Microsoft Knowledge Base:
+	
+	  Q172475 OFF97: How to Obtain and Install MS Office 97 SR-1
+	
+	RESOLUTION
+	==========
+	
+	Method 1. Create Sound Files That Will Be Packed with the Presentation
+	----------------------------------------------------------------------
+	
+	When you use the Record Narration feature on a presentation that you may need to
+	pack, use the following steps to link the sound files instead of embedding
+	them:
+	
+	1. On the Slide Show menu, click Record Narration.
+	
+	2. Click to select the Link Narrations In check box.
+	
+	3. Click Browse.
+	
+	4. In the Choose Directory dialog box, select the folder where you want to save
+	  your recorded narration sound files, and then click OK.
+	
+	5. Record the narration.
+	
+	When you use this method, PowerPoint saves the recorded narration as a series of
+	sound (.wav) files that are separate from the presentation. When you pack the
+	presentation, the Pack and Go Wizard includes these files in the package.
+	
+	Method 2. Copy the .tmp Files to the Destination Computer
+	---------------------------------------------------------
+	
+	1. Unpack the presentation on the destination computer.
+	
+	2. Run the presentation. Write down the name of each .tmp file you are asked to
+	  find.
+	
+	3. Go to the computer on which you packed the presentation.
+	
+	4. Search for the .tmp files you wrote down in step 2. If you can find these
+	  files, copy them to one or more floppy disks or to a network drive and then
+	  copy them to the destination computer. When you copy them to the destination
+	  computer, put them in the same folder that contains the unpacked
+	  presentation.
+	
+	5. Open the unpacked presentation in PowerPoint 7.0.
+	
+	6. Run the slide show. Every time the Locate Media Clip dialog box appears,
+	  select the folder that contains the .tmp file it wants.
+	
+	7. When you finish the slide show, click Save on the File menu.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products that are
+	listed at the beginning of this article.
+	
+	Additional query words: 97 8.00 8.0 ppt95 ppt97 7.0 PNG pres0.ppz sound linked embed embedding can't
+	
+	======================================================================
+	Keywords          : kberrmsg kbinterop kbdta kbpng 
+	Technology        : kbPowerPtSearch kbPowerPt700 kbPowerPt97 kbZNotKeyword2 kbPowerPt97Search kbPowerPt700Search
+	Version           : WINDOWS:7.0,97
+	Hardware          : x86
+	Issue type        : kbprb
+	
+	=============================================================================
+	

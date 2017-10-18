@@ -1,0 +1,80 @@
+---
+layout: page
+title: "Q192660: SMS: Login Scripts Do Not Run from Subfolder in Netlogon Share"
+permalink: kb/192/Q192660/
+---
+
+## Q192660: SMS: Login Scripts Do Not Run from Subfolder in Netlogon Share
+
+	Article: Q192660
+	Product(s): Microsoft Systems Management Server
+	Version(s): winnt:1.2
+	Operating System(s): 
+	Keyword(s): kbInventory smsinv
+	Last Modified: 25-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server version 1.2 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If you create a subfolder in the Export share (also known as the REPL$ share,
+	this share is the WINNT\System32\Repl\Export\Scripts directory), and place your
+	existing login scripts within this subfolder, Systems Management Server will
+	modify the login scripts. However, the login scripts may fail when run. You may
+	also see the following error message:
+	
+	  The name specified is not recognized as an internal or external command,
+	  operable program or batch file.
+	
+	WORKAROUND
+	==========
+	
+	To work around this problem, remove the login scripts from the subdirectory and
+	place them into the REPL$ share of the PDC. The REPL$ share can be found as the
+	following directory:
+	
+	  WINNT\System32\Repl\Export\Scripts
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Systems Management Server
+	version 1.2.
+	
+	MORE INFORMATION
+	================
+	
+	When using the "Automatically Configure Workstation Logon Scripts" option for a
+	Systems Management Server site, depending on the client's domain, Systems
+	Management Server takes the following actions:
+	
+	- Systems Management Server automatically modifies all client logon scripts so
+	  that the SMSLS batch file is included. The SMSLS batch file will therefore
+	  run each time a user logs on to the site's domain.
+	
+	- Logon script files should be located under the Scripts directory in the Repl$
+	  share on the primary domain controller (PDC). The Repl$ share is the
+	  Winnt\System32\Repl\Export directory.
+	
+	- Systems Management Server only modifies user logon scripts with file
+	  extensions of .bat or .cmd. For example, a logon script called User.bat will
+	  be modified, but a logon script called User will not be modified. If there is
+	  no logon script specified in the account properties, Systems Management
+	  Server specifies Smsls.bat to be the user's login script.
+	
+	Additional query words: prodsms
+	
+	======================================================================
+	Keywords          : kbInventory smsinv 
+	Technology        : kbSMSSearch kbSMS120
+	Version           : winnt:1.2
+	Issue type        : kbbug
+	Solution Type     : kbnofix
+	
+	=============================================================================
+	

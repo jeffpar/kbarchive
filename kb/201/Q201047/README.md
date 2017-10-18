@@ -1,0 +1,109 @@
+---
+layout: page
+title: "Q201047: XADM: Errors When You Attempt to Access Public Folders"
+permalink: kb/201/Q201047/
+---
+
+## Q201047: XADM: Errors When You Attempt to Access Public Folders
+
+	Article: Q201047
+	Product(s): Microsoft Exchange
+	Version(s): 4.0,5.0,5.5
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you attempt to access replicas of Microsoft Exchange Public Folders from a
+	Microsoft Exchange Client (Microsoft Exchange Client - Microsoft Outlook), you
+	may receive one of the following error messages:
+	
+	  The folder could not be opened. The contents of this public folder are
+	  currently unavailable. Either the Microsoft Exchange Server computer
+	  servicing this public folder is down or the public folder has not been
+	  replicated to this site. See your administrator.
+	
+	  -or-
+	
+	  Unable to display the folder. The contents of this public folder are
+	  currently unavailable. Either the Microsoft Exchange Server computer
+	  servicing this public folder is down or the public folder has not been
+	  replicated to this site. See your administrator.
+	
+	  -or-
+	
+	  Unable to expand the folder. The set of folders could not be opened. The
+	  contents of this public folder are currently unavailable. Either the
+	  Microsoft Exchange Server computer servicing the public folder is down or the
+	  public folder has not been replicated to this site. See your administrator.
+	
+	You may receive the following error message when you attempt to access the
+	properties of the Public Folder(s) from the Microsoft Exchange Administrator
+	program:
+	
+	  The folder could not be opened. The contents of this public folder are
+	  currently unavailable. Either the Microsoft Exchange Server Computer
+	  servicing this public folder is down or the public folder has not been
+	  replicated to this site. See your administrator.
+	
+	When you view the replicas on the Instances of the Public Information Store, the
+	Public Folder(s) generating the error(s) appear on the right side in the
+	"Folders on this Information Store" dialog box.
+	
+	CAUSE
+	=====
+	
+	Replication between the Home Server and the Public Folder has not completed or
+	Replication has failed. Running Mtacheck.exe from the
+	<drive>:\Exchsrvr\Bin directory (where <drive> is the drive letter
+	where the Exchange System Files are located) with a /RP parameter on a server in
+	the organization might also cause this behavior because one of the functions
+	Mtacheck.exe performs is to remove public folder replication messages from the
+	Message Transfer Agent (MTA).
+	
+	WORKAROUND
+	==========
+	
+	To work around this problem, after replication schedules have been confirmed and
+	the normal replication cycle has passed, if the replicas are still unavailable,
+	examine the Event Viewer application log first for public folder replication
+	errors. If there are no errors, try removing and re-creating a replica of this
+	public folder on your server. To do this, perform the following steps:
+	
+	1. Choose the "Public Information Store" on the Replica Server.
+	
+	2. From the File menu, click Properties.
+	
+	3. Click the Instance tab, remove the replica(s) of that folder(s) on your
+	  server, and then click OK.
+	
+	4. Wait until the replica of the Public Folder(s) has been removed.
+	
+	5. Click the "Public Information Store" on the Replica Server.
+	
+	6. From the File menu, click Properties.
+	
+	7. Click the Instance tab, add the replica(s) of that folder on your server, and
+	  then click OK.
+	
+	The properties of the Public Folders should now be accessible from the Microsoft
+	Exchange Administrator program and from the client.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+	Version           : :4.0,5.0,5.5
+	Issue type        : kbprb
+	
+	=============================================================================
+	

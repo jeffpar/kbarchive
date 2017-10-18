@@ -1,0 +1,141 @@
+---
+layout: page
+title: "Q69704: How to Write Advisor Library Callback Routines Under MS-DOS"
+permalink: kb/069/Q69704/
+---
+
+## Q69704: How to Write Advisor Library Callback Routines Under MS-DOS
+
+	Article: Q69704
+	Product(s): Microsoft Programming Utilities
+	Version(s): MS-DOS:1.0
+	Operating System(s): 
+	Keyword(s): kb16bitonly
+	Last Modified: 31-OCT-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft HELPMAKE Utility for MS-DOS and OS/2, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The Microsoft Professional Advisor Library version 1.0 includes a sample program
+	(MHTEST.EXE) that demonstrates basic use of the help system API. However, this
+	program example was written for OS/2 and there is no MS-DOS example included in
+	the package. The sample code provided below demonstrates how to use the help
+	system functions under MS-DOS.
+	
+	MORE INFORMATION
+	================
+	
+	The MHTEST.EXE example is built from two source files, HTEST.C and HELPBACK.C.
+	HTEST.C is a sample front-end application that interfaces with the library
+	functions. HELPBACK.C is a sample set of call-back functions, which the library
+	functions require you to have in your code. Both of these files are written for
+	OS/2 (utilizing OS/2 API calls) and will not compile and link explicitly for
+	MS-DOS; however, the program will run under either MS-DOS or OS/2 if it is
+	compiled and linked for OS/2 and then bound for MS-DOS.
+	
+	If an unbound, MS-DOS-only version of the program is desired, the sample code
+	below illustrates how to write MS-DOS-specific versions of the seven call-back
+	functions needed by the library. The nature of these call-back functions is best
+	described in the following paragraph from the article "Adding Hypertext-Based
+	Help to Your Application Using the Microsoft Help System" from the "Microsoft
+	Systems Journal," May 1990:
+	
+	  If you are developing an MS-DOS application, you must provide some call-back
+	  functions. These call-back functions are involved with opening and closing
+	  files, reading data from a file, allocating and deallocating memory, and
+	  locking and unlocking memory. The help library imposes this burden upon the
+	  programmer because of the limited resources available under MS-DOS. If the
+	  help engine were to use the standard malloc or _dos_allocmem functions to
+	  obtain memory for itself, it would probably find itself running out of memory
+	  if it were embedded into a large program, or possibly conflicting with the
+	  program's own memory management scheme. For example, many large programs
+	  manage their memory using a virtual memory management scheme. By forcing the
+	  application to provide call-back functions to control memory allocation, the
+	  help engine never intrudes on the application's own memory management scheme.
+	
+	It is important to note that the sample routines provided below are only simple
+	templates for the type of functions needed; they do not include any error
+	checking or error-handling capabilities. The sample routines are written for use
+	with the large and compact memory models and will require some minor
+	modifications to avoid compiler warnings under the small or medium models.
+	
+	Sample Code
+	-----------
+	
+	  /* Compile options needed: /AL
+	  */ 
+	
+	  #include <stdio.h>
+	  #include <fcntl.h>
+	  #include <io.h>
+	  #include <sys\types.h>
+	  #include <sys\stat.h>
+	  #include <dos.h>
+	
+	  #include "help.h"
+	
+	  int pascal far OpenFileOnPath(char far *file_name, int mode)
+	  {
+	     return(open(file_name, O_RDONLY | O_BINARY));
+	  }
+	
+	  void pascal far HelpCloseFile(int fh)
+	  {
+	     close(fh);
+	  }
+	
+	  unsigned long pascal far ReadHelpFile(unsigned fh, unsigned long fpos,
+	                                     char far *pdest, unsigned short cb)
+	  {
+	     unsigned long cRet = 0;
+	
+	     if(pdest)
+	        {
+	        if(lseek(fh, fpos, SEEK_SET) != -1L)
+	            cRet = (unsigned long)read(fh, pdest, cb);
+	        }
+	     else
+	        cRet = (unsigned long)filelength(fh);
+	
+	     return(cRet);
+	  }
+	
+	  unsigned pascal far HelpAlloc(unsigned mem_size)
+	  {
+	     unsigned sel;
+	
+	     _dos_allocmem((mem_size / 16) + 1, &sel);
+	     return(sel);
+	  }
+	
+	  void pascal far HelpDealloc(unsigned seg)
+	  {
+	     if(seg)
+	        _dos_freemem(seg);
+	  }
+	
+	  void far * pascal far HelpLock(unsigned seg)
+	  {
+	     return((char far *) (((unsigned long)seg) << 16) );
+	  }
+	
+	  void pascal far HelpUnlock(unsigned seg)
+	  {
+	     seg;
+	  }
+	
+	Additional query words: kbinf 1.00 helpmake callback TlsMisc
+	
+	======================================================================
+	Keywords          : kb16bitonly 
+	Technology        : kbAudDeveloper kbZNotKeyword2 kbHELPMAKE kbZNotKeyword3
+	Version           : MS-DOS:1.0
+	
+	=============================================================================
+	

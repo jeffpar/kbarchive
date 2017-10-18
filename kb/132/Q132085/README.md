@@ -1,0 +1,59 @@
+---
+layout: page
+title: "Q132085: Applications Hang When Opening Files when CSNW is Installed"
+permalink: kb/132/Q132085/
+---
+
+## Q132085: Applications Hang When Opening Files when CSNW is Installed
+
+	Article: Q132085
+	Product(s): Microsoft Windows NT
+	Version(s): 3.5,3.51
+	Operating System(s): 
+	Keyword(s): kbnetwork
+	Last Modified: 06-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation versions 3.5, 3.51 
+	- Microsoft Windows NT Server versions 3.5, 3.51 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If you run Windows NT 3.5 or 3.51, start Client Services for NetWare (CSNW), and
+	run an application that opens files on the network, the application may stop
+	responding (hang). Also, if a drive is redirected to point to the local drive,
+	and the application opens files on the redirected drive, the application may
+	hang. For example, if you use SUBST to redirect the C:\TEST directory to drive
+	Z:, the application may hang when it opens files on drive Z. Once the problem
+	occurs, any NET USE command will also hang.
+	
+	
+	RESOLUTION
+	----------
+	
+	To correct this problem, upgrade to Windows NT 3.51 (if you have not already done
+	so) and install the latest U.S. Service Pack for Windows NT version 3.51.
+	
+	STATUS
+	------
+	
+	Microsoft has confirmed this to be a problem in Windows NT versions 3.5 and 3.51.
+	This problem has been corrected in the latest U.S. Service Pack for Windows NT
+	version 3.51. For information on obtaining the Service Pack, query on the
+	following word in the Microsoft Knowledge Base (without the spaces):
+	
+	  S E R V P A C K
+	
+	Additional query words: prodnt
+	
+	======================================================================
+	Keywords          : kbnetwork 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+	Version           : :3.5,3.51
+	
+	=============================================================================
+	

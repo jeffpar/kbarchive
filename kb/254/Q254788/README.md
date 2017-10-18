@@ -1,0 +1,101 @@
+---
+layout: page
+title: "Q254788: XFOR: Schedule+ 7.5 Users Always Prompted for a Password"
+permalink: kb/254/Q254788/
+---
+
+## Q254788: XFOR: Schedule+ 7.5 Users Always Prompted for a Password
+
+	Article: Q254788
+	Product(s): Microsoft Schedule+ for Windows
+	Version(s): 7.5
+	Operating System(s): 
+	Keyword(s): kbExchange550preSP4fix kbExchange550sp4Fix
+	Last Modified: 11-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Schedule+, version 7.5 
+	-------------------------------------------------------------------------------
+	
+	
+	IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+	
+	  Q256986 Description of the Microsoft Windows Registry
+	
+	SYMPTOMS
+	========
+	
+	Every time that you open Schedule+ data, you may be prompted to type a password.
+	When you try to change the password, the New Password dialog box is displayed
+	first. If you try to change the password after that, the Change Password dialog
+	box is displayed. However, every time you start Schedule+, you are still
+	prompted for your password.
+	
+	CAUSE
+	=====
+	
+	This issue can occur if you previously used Microsoft Mail (MS Mail) and you
+	entered a password for your Schedule+ file. After your mailbox is migrated to
+	Microsoft Exchange Server, you need to type this password every time that you
+	start Schedule+ 7.5.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, obtain the latest service pack for Exchange Server 5.5.
+	For additional information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q191014 XGEN: How to Obtain the latest Exchange Server 5.5 Service Pack
+	
+	
+	WORKAROUND
+	==========
+	
+	To work around this issue, perform the following steps in Schedule+:
+	
+	1. On the File menu, point to Export, and then click Schedule+ Interchange.
+	
+	2. Type the file name, and then click OK to export all Schedule+ data.
+	
+	3. On the File menu, click "Exit and Log Off" to quit Schedule+.
+	
+	4. In Windows Explorer, press and hold CTRL+SHIFT while you double-click the
+	  Schedule+ icon. A dialog box confirms that you want to clear your Schedule+
+	  data.
+	
+	5. Click Yes to continue. If you are prompted for the profile, click the
+	  appropriate profile, and then click OK. Schedule+ starts with a new local and
+	  server schedule.
+	
+	6. On the File menu, point to Import, and then click Schedule+ Interchange.
+	
+	7. Locate the Schedule+ export file that you saved in step 1. Click the file,
+	  and then click Open.
+	
+	For additional information, click the article number below to view the article in
+	the Microsoft Knowledge Base:
+	
+	  Q170587 XCLN: Schedule+ Always Prompts for Shared Schedule Password
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+	version 5.5 Service Pack 3. This problem was first corrected in Exchange Server
+	5.5 Service Pack 4.
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbExchange550preSP4fix kbExchange550sp4Fix 
+	Technology        : kbZNotKeyword2 kbScheduleSearch kbSchedule750
+	Version           : :7.5
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

@@ -1,0 +1,141 @@
+---
+layout: page
+title: "Q145592: I/O Channel Ready Settings on the Intel EtherExpress 16"
+permalink: kb/145/Q145592/
+---
+
+## Q145592: I/O Channel Ready Settings on the Intel EtherExpress 16
+
+	Article: Q145592
+	Product(s): Microsoft Windows NT
+	Version(s): 3.11 3.50 3.51
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation versions 3.5, 3.51 
+	- Microsoft Windows NT Server versions 3.5, 3.51 
+	- Microsoft Windows for Workgroups version 3.11 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	When you install the driver for the Intel EtherExpress 16 local area network
+	adapter, one of the configuration fields is I/0 Channel Ready. This option can
+	have three possible values: Late, Early, and Never. Typically, Windows NT will
+	only allow the user to set this field to Later or Never. This article includes
+	configuration information for both Windows NT and Windows for Workgroups.
+	
+	MORE INFORMATION
+	================
+	
+	The I/O Channel Ready settings optimize the timing of 16-bit data transfers. The
+	Never value forces the card into 8-bit mode; the Late and Early values both
+	allow the card to work in 16-bit mode. The setting that works on most computers
+	is Late, although a few computers require Early to function in 16-bit mode.
+	
+	Some computers will experience problems when the card is set to Early. These
+	problems can range from data loss when transferring large files to computer
+	hangs that require removing the card, transferring it to another computer and
+	using the Softset utility to reset the network adapter.
+	
+	Windows NT
+	----------
+	
+	Because of the potential for serious problems, Windows NT setup does not offer
+	Early as one of the options unless one of the following is true:
+	
+	- Setup detects that the card is already set to Early. -or-
+	
+	- The .INF file for the Intel EtherExpress has been modified to allow the early
+	  setting.
+	
+	Even when the Early option is available, if you select it, you will receive the
+	following error message:
+	
+	  Use of the Early setting may cause system failure in some machines. Are you
+	  sure you want to continue?
+	
+	While those computers that require Early will not function when the card is set
+	to Late, the EtherExpress driver is capable of detecting this case and it will
+	default the card to Never, which is always safe. Unfortunately, there is no way
+	to detect when Early is not safe without experiencing the problems mentioned
+	above.
+	
+	If you have a computer that requires the Early setting and it is not displayed as
+	an option in Windows NT, you can add Early to the list by doing the following:
+	
+	1. Open the OEMNADIN.INF file in the %systemroot%\SYSTEM32 subdirectory with a
+	  text editor.
+	
+	2. Find the line that reads "AllowEarly =" and change the value after the equal
+	  sign from 0 to 1.
+	
+	3. Save the file.
+	
+	4. Use the network applet in Control Panel to configure the network adapter
+	  settings. Early should then show up as an option for I/O Channel Ready.
+	
+	Windows for Workgroups
+	----------------------
+	
+	When you install the network adapter and run the Softset utility in Windows for
+	Workgroups, both the Softset and Windows for Workgroups stop responding (hang).
+	
+	If your network adapter has the Early setting and you want to change it to the
+	Late setting:
+	
+	1. Obtain E16LATE.EXE, a self-extracting file, from one of the following
+	  locations:
+	
+	   - Intel World Wide Web site
+	     (http://www-cs.intel.com/all/selfhelp/6263.HTM)
+	
+	   - Intel FTP server
+	     (ftp://ftp.intel.com/pub/PCandNetworkSupport/EtherExpress)
+	
+	   - Intel Bulletin Board Service at (503) 264-7999
+	
+	2. In the CONFIG.SYS file, remark out the following line with REM using a text
+	  editor, such as EDIT.COM:
+	
+	  REM DEVICE=<drive>:<path>\EXP16.DOS
+	
+	3. Save CONFIG.SYS and reboot your computer.
+	
+	4. Using a text editor, modify the lines in PROTOCOL.INI file to the following:
+	
+	  IOCHRDY=LATE
+	  IOADDRESS=<Correct I/O Port Address>
+	
+	5. Save PROTOCOL.INI.
+	
+	6. Run LATE.EXE (one of the files extracted from E16LATE.EXE) utility. This
+	  utility resets the EEPROM of the Etherexpress NIC I/O Channel Ready to the
+	  current IOCHRDY information from PROTOCOL.INI.
+	
+	7. In the CONFIG.SYS file, remove REM for EXP16.DOS, as follows:
+	
+	  DEVICE=<drive>:<path>\EXP16.DOS
+	
+	8. Power down the computer and wait a few seconds.
+	
+	9. Turn the computer on restart Windows for Workgroups.
+	
+	The third-party products discussed here are manufactured by vendors independent
+	of Microsoft; we make no warranty, implied or otherwise, regarding these
+	products' performance or reliability.
+	
+	Additional query words: prodnt 3.11 ether express
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search kbAudDeveloper kbWFWSearch kbWFW311
+	Version           : 3.11 3.50 3.51
+	
+	=============================================================================
+	

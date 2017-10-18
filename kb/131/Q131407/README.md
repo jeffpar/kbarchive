@@ -1,0 +1,100 @@
+---
+layout: page
+title: "Q131407: Check for Long File Names in Windows 3.x w/ Visual FoxPro"
+permalink: kb/131/Q131407/
+---
+
+## Q131407: Check for Long File Names in Windows 3.x w/ Visual FoxPro
+
+	Article: Q131407
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:3.0
+	Operating System(s): 
+	Keyword(s): kbcode kbnetwork
+	Last Modified: 15-FEB-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 3.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	When you connect to a Windows NT server and try to access a file that has a long
+	file name, Windows version 3.x uses the PC-NFS standards to truncate the name of
+	the file to eight characters placing tilde (~) in the seventh position followed
+	by a number.
+	
+	Developers can use the generic code listed in this article to make sure no long
+	file names exist on the server.
+	
+	MORE INFORMATION
+	================
+	
+	NOTE: The following code returns TRUE (.T.) if no long file names exist on the
+	default directory. Otherwise, it returns FALSE (.F.).
+	
+	      SET DEFAULT TO <NET DRIVE>:<PATH>
+	     X=CREATEOBJECT("CustTrackLongName")
+	     Do While (X.FINDLONG())
+	       .
+	       .
+	     <REST OF CODE TO MODIFY FILES>
+	       .
+	       .
+	     ENDDO
+	
+	     *********************************************
+	     *   This is a class that will track         *
+	     *   any long file name  in the default      *
+	     *   directory.                            *
+	     *   The class define is a property that is  *
+	     *   set to true if no long file names       *
+	     *   exist and false if a long file name     *
+	     *   does exist. In addition, the class      *
+	     *   defines a member(method) called         *
+	     *   FindLong that will check to see         *
+	     *   if a long filename was returned by the  *
+	     *   ADIR function.                        *
+	     *                                           *
+	     * Algorithm:                                *
+	     *      Input/Parameters:    NONE            *
+	     *      Output/Return Value: .T. No LFN      *
+	     *                           .F. LFN         *
+	     *LFN=Long File Name                         *
+	     *********************************************
+	     DEFINE CLASS CustTrackLongName AS Custom
+	       Flag=.T. &&New property
+	       PROCEDURE FindLong
+	          iDirLength=ADIR(aMyarray)
+	          DIMENSION aiNewarray(iDirLength)
+	          FOR i=1 TO iDirLength
+	             aiNewarray(i)=aMyarray(i,1)
+	             Temp=aiNewarray(i)
+	             TempLen=LEN(ALLTRIM(TEMP))
+	             cOneChar=SUBSTR(Temp,7,1)  && read the 7th position
+	                                        && for ~
+	                     IF cOneChar="~"
+	                           This.Flag=.F.
+	                           EXIT
+	                     ENDIF
+	          NEXT I
+	          IF This.Flag=.F.
+	            RETURN .F.
+	          Else
+	            Return .T.
+	          ENDIF
+	       ENDPROC
+	     ENDDEFINE
+	
+	Additional query words: VFoxWin
+	
+	======================================================================
+	Keywords          : kbcode kbnetwork 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+	Version           : WINDOWS:3.0
+	
+	=============================================================================
+	

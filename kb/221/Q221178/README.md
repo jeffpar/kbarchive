@@ -1,0 +1,232 @@
+---
+layout: page
+title: "Q221178: WD97: Unable to Use Mail Merge with Outlook Address Book"
+permalink: kb/221/Q221178/
+---
+
+## Q221178: WD97: Unable to Use Mail Merge with Outlook Address Book
+
+	Article: Q221178
+	Product(s): Word 97 for Windows
+	Version(s): WINDOWS:97
+	Operating System(s): 
+	Keyword(s): kbdta word8 word97
+	Last Modified: 08-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	When you create a mail merge main document in Word and then attach the Microsoft
+	Outlook Address Book as a data source, the following error message may appear:
+	
+	  Word was unable to open the data source.
+	
+	When you close the mail merge main document, the following error message may also
+	appear:
+	
+	  Microsoft Word: Word cannot open the document.
+	  Try one or more of the following
+	  * On the File menu, click open to open the document
+	  * Make sure the document has a .Doc extension
+	  (Outlook Address Book)
+	
+	CAUSE
+	=====
+	
+	Organizations having multiple sites, servers, address book views, and other
+	containers can experience this problem due to the extent of hierarchy
+	information retained by the client. This information is cached in the profile
+	and can prevent Word from finding the Outlook contacts information when the
+	profile is searched.
+	
+	This problem can also be caused when the Outlook Address Book does not contain
+	contacts.
+	
+	RESOLUTION
+	==========
+	
+	A supported fix is now available from Microsoft, but it is only intended to
+	correct the problem described in this article and should be applied only to
+	systems experiencing this specific problem.
+	
+	To resolve this problem, contact Microsoft Product Support Services to obtain the
+	fix. For a complete list of Microsoft Product Support Services phone numbers and
+	information on support costs, please go to the following address on the World
+	Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	NOTE: In special cases, charges that are normally incurred for support calls may
+	be canceled, if a Microsoft Support Professional determines that a specific
+	update will resolve your problem. Normal support costs will apply to additional
+	support questions and issues that do not qualify for the specific update in
+	question.
+	
+	
+	
+	
+	
+	WORKAROUND
+	==========
+	
+	If the fix mentioned above is not available, the following methods may allow you
+	to perform the mail merge with your Outlook Address Book. Use the following
+	methods appropriate for your situation.
+	
+	Method 1: Export the Outlook Address Book
+	-----------------------------------------
+	
+	To export a list of contacts to use as a data source in a Word mail merge, follow
+	these steps:
+	
+	1. In Outlook, create a new folder for the contacts you want to export.
+	
+	2. If the Folder List is not visible, click the View menu, and then click Folder
+	  List.
+	
+	3. On the Tools menu, click Find to group the contacts you want to export.
+	
+	4. Press and hold down CTRL and drag the contacts to the new contacts folder to
+	  copy them.
+	
+	5. On the File menu, click Import and Export to export the new contacts folder.
+	
+	6. Click "Export to a file".
+	
+	7. Follow the instructions in the "Import and Export Wizard".
+	
+	  NOTE: If you export to a file for use in Microsoft Word, choose either the Tab
+	  Separated Values or the Comma Separated Values file type.
+	
+	Method 2: Create a Profile
+	--------------------------
+	
+	Create the profile manually. Make sure the Outlook Address Book is added first to
+	the profile.
+	
+	To configure the profile manually, perform the following steps:
+	
+	1. Click the Start button, point to Settings, click Control Panel, and then
+	  double-click Mail. Click the Show Profiles button if it appears in the dialog
+	  box that is displayed. If a Show Profiles button does not appear, proceed to
+	  step 2.
+	
+	2. Click Add.
+	
+	3. Click Manually Configure Information Services, and then click Next.
+	
+	4. Type a name for the profile in the Profile Name box, and then click Next.
+	
+	5. Click Add, click Outlook Address Book in the list of available information
+	  services, and then click OK.
+	
+	6. Click Add, click Microsoft Exchange Server in the list of available
+	  information services, and then click OK.
+	
+	7. In the Microsoft Exchange Server box, type the name of the Microsoft Exchange
+	  Server computer to which you want to connect. Type a mailbox name in the
+	  Mailbox box, and then click Next. Note that you can click Check Name before
+	  you click OK to verify the server and mailbox names.
+	
+	After the Outlook Address Book and Microsoft Exchange Server services are added,
+	additional services may be added to the profile by selecting Add, selecting
+	other services in the list of available information services, and then clicking
+	OK.
+	
+	After the profile is created, start Outlook and ensure the Contacts folder or
+	folders is included in the Outlook Address Book. To do this, perform the
+	following steps:
+	
+	1. On the View menu, click Folder List.
+	
+	2. In the Folder List, right-click the Contacts folder, and on the
+	  context-sensitive menu, click Properties.
+	
+	3. Click the Outlook Address Book tab, and click to select "Show this folder as
+	  an e-mail Address Book".
+	
+	  NOTE: Your contacts should appear in the "Name of the address book" box.
+	
+	4. Click OK.
+	
+	When a Mail profile is created in the Control Panel Mail tool and "Manually
+	configure information services" is selected, services can be added in any order.
+	With the Outlook Address Book included in the profile in front of the Exchange
+	server, the Contacts address book may be found by Word during the mail merge.
+	
+	If a new profile is created through the Control Panel Mail tool and the Profile
+	Generation Wizard is used (default), there is no option of adding an Outlook
+	Address Book; the first dialog box includes the Exchange Server service and
+	other services and the Outlook Address Book is automatically added to the
+	profile. A Microsoft Word Mail Merge with Outlook Address Book using this type
+	of profile may fail with the error message above.
+	
+	Method 3: Add a Contact to the Outlook Address Book
+	---------------------------------------------------
+	
+	Before you can use the Microsoft Outlook Address Book as a data source in a Word
+	mail merge, you need to type a contact listing in the Address Book. To do this,
+	follow these steps:
+	
+	1. Start Microsoft Outlook.
+	
+	2. On the Tools menu, click Services. On the Services tab, make sure Outlook
+	  Address Book is in the profile list. If Outlook Address Book is not in the
+	  list, click Add and add Outlook Address Book.
+	
+	For additional information if your contact information does not appear correctly,
+	please click the article numbers below to view the articles in the Microsoft
+	Knowledge Base:
+	
+	  Q161349 OL97: Contact Information Does Not Appear in Address Book
+	
+	  Q180830 OL98: (CW) Contact Information Does Not Appear in Address Book
+	
+	
+	3. On the Outlook bar, which is on the left, click Contacts. If the Outlook bar
+	  is not visible, click Outlook Bar on the View menu.
+	
+	4. On the File menu, click New, and click Contact on the New menu.
+	
+	5. Type the information for the new contact entry.
+	
+	6. On the Contact toolbar, click Save, and then click Close.
+	
+	7. On the Outlook bar, right-click the Contacts button. Click Properties on the
+	  shortcut menu, and then click the Outlook Address Book tab.
+	
+	8. Click to select the "Show this folder as an e-mail Address Book" check box,
+	  and click OK.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products that are
+	listed at the beginning of this article.
+	
+	MORE INFORMATION
+	================
+	
+	The original Wwpab.cnv file was limited in the amount of information it read
+	from the profile. When it reached the limit without finding the Contacts address
+	book, it reported that the data source could not be found. This is corrected in
+	the newer Wwpab.cnv file.
+	
+	Additional query words: contacts addressbook
+	
+	======================================================================
+	Keywords          : kbdta word8 word97 
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : WINDOWS:97
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

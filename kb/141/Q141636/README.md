@@ -1,0 +1,151 @@
+---
+layout: page
+title: "Q141636: How to Set Up a Grid as a Destination for Drag and Drop"
+permalink: kb/141/Q141636/
+---
+
+## Q141636: How to Set Up a Grid as a Destination for Drag and Drop
+
+	Article: Q141636
+	Product(s): Microsoft FoxPro
+	Version(s): 3.00 3.00b
+	Operating System(s): 
+	Keyword(s): kbcode
+	Last Modified: 20-AUG-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	By default, if a grid is used for the destination of a drag and drop operation,
+	the DragDrop method of the grid is called. This does not allow dropping into an
+	individual grid cell, because the DragDrop method of the cell control is never
+	called. This article shows how to calculate the destination cell coordinates,
+	and call the DragDrop method of the appropriate destination.
+	
+	MORE INFORMATION
+	================
+	
+	The following code demonstrates how a grid can be set up as the destination of a
+	drag and drop operation. This example uses the Customer table from the
+	\VFP\Samples\Data\Testdata database.
+	
+	Step-by-Step Example
+	--------------------
+	
+	1. Run the following commands in the Command window to create a table to use as
+	  the RecordSource of the grid that will be the destination of the drag and
+	  drop operation.
+	
+	     USE HOME()+"samples\data\customer.dbf"
+	     COPY TO cust_tmp.dbf
+	
+	2. Create a new form. Add the Testdata!Customer and Cust_tmp tables to the Data
+	  Environment of the form.
+	
+	3. Place the source grid on the form by dragging the Customer table from the
+	  Data Environment. Set the ColumnCount of this grid to 5.
+	
+	4. Place the following code in the MouseDown event for the text box in each of
+	  the columns in the source grid:
+	
+	     THIS.Drag(1)    && Starts Drag
+	
+	5. Place the following code in the MouseUp event for the text box in each of the
+	  columns in the source grid:
+	
+	     THIS.Drag(0)    && Ends Drag if mouse button is released
+	
+	6. Place the destination grid on the form by dragging the Cust_tmp table from
+	  the Data Environment. Set its ColumnCount property to 5.
+	
+	7. Place the following code in the DragDrop event for the destination grid. The
+	  LPARAMETERS statement will already be present.
+	
+	     LPARAMETERS oSource, nXCoord, nYCoord
+	     PRIVATE nPrevColwidths, nGridLeftwall, nGridRightwall, nRowlevel, ;
+	        nGridBottomEdge, nColCount
+	
+	     * Check destination grid for DeleteMark and RecordMark
+	     nGridLeftWall=1+THIS.Left+IIF(THIS.DeleteMark and THIS.RecordMark,18, ;
+	        IIF(THIS.DeleteMark or THIS.RecordMark,9,0))
+	
+	     * Check destination grid for Vertical Scroll bar
+	     nGridRightWall=THIS.Left+THIS.Width-IIF(THIS.ScrollBars>1,14,0)
+	
+	     * Check destination grid for Horizontal Scroll bar
+	     nGridBottomEdge=THIS.Top+THIS.Height-IIF(THIS.ScrollBars=1 or ;
+	        THIS.ScrollBars=3, 12 ,0)
+	
+	     * Hold sum of ColumnWidths of columns to left of current column
+	     nPrevColwidths=0
+	
+	     * Find out which destination row
+	     nRowlevel=CEILING((nYcoord-THIS.Top-THIS.HeaderHeight)/THIS.RowHeight)
+	
+	     * Necessary if grid RecordSource table is not currently selected
+	     SELECT EVAL('THIS.RecordSource')
+	
+	     * Loop through all visible columns
+	     FOR ni=THIS.LeftColumn to THIS.ColumnCount
+	
+	        * Determine if current column is drop destination
+	        IF BETWEEN(nXCoord, nGridLeftwall+nPrevColWidths, nGridLeftwall + ;
+	
+	           nPrevColwidths+THIS.Columns(ni).Width) and nRowlevel>0 and ;
+	              nYCoord < nGridBottomEdge and nXCoord < nGridRightWall
+	
+	           * If correct column, call DragDrop of textbox in the column
+	           THIS.Columns(ni).Text1.DragDrop(oSource,0,nYCoord, ;
+	              ni+1-THIS.LeftColumn,nRowlevel)
+	           EXIT       && After drop, no need to check additional columns
+	
+	        ENDIF
+	
+	        * Add width of current column to sum of widths of previous columns
+	        * and proceed to calculate if next column is drop destination
+	        nPrevColWidths=nPrevColWidths+THIS.Columns(ni).Width
+	     ENDFOR
+	
+	8. Place the following code in the DragDrop event's method code for the text box
+	  control in each of the columns of the destination grid (Note the two added
+	  parameters in the LPARAMETERS statement).
+	
+	     LPARAMETERS oSource, nXCoord, nYCoord, nDropCol, nDropRow
+	     * Activate cell which is destination for drop
+	     THIS.PARENT.PARENT.ActivateCell(nDropRow,nDropCol)
+	
+	     * Replace ControlSource field with value of dragged object
+	     REPLACE (THIS.ControlSource) WITH oSource.Value
+	
+	9. Run the form, and drag from the source grid to the destination grid. The
+	  value present in the source grid cell will appear in the destination grid
+	  cell.
+	
+	Notes
+	-----
+	
+	1. The form ScaleMode property needs to be 3 - Pixels for the determination of
+	  the destination column and row to work properly.
+	
+	2. If the data types of the source and destination are different, a "Data type
+	  mismatch" error will occur.
+	
+	3. This example uses a text box in a grid column as the source of the drag
+	  operation, but a text box on a form will work as well, as should any source
+	  where the data type is the same as that of the destination.
+	
+	Additional query words: VFoxWin
+	
+	======================================================================
+	Keywords          : kbcode 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+	Version           : 3.00 3.00b
+	
+	=============================================================================
+	

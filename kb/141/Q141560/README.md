@@ -1,0 +1,88 @@
+---
+layout: page
+title: "Q141560: Writer/Artist: UNCONF: Screen Colors Change After Printing"
+permalink: kb/141/Q141560/
+---
+
+## Q141560: Writer/Artist: UNCONF: Screen Colors Change After Printing
+
+	Article: Q141560
+	Product(s): Microsoft Home Kids Products
+	Version(s): WINDOWS:1.0,1.1,1.1a,1.1b
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 29-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Creative Writer for Windows, versions 1.0, 1.1, 1.1a, 1.1b 
+	- Microsoft Fine Artist for Windows, versions 1.0, 1.1, 1.1a, 1.1b 
+	-------------------------------------------------------------------------------
+	
+	*****************************************************************
+	**                          - WARNING -                        **
+	**    THE INFORMATION BELOW IS PRELIMINARY AND HAS NOT BEEN    **
+	**    CONFIRMED, EDITED OR TESTED BY MICROSOFT.  USE ONLY      **
+	**    WITH DISCRETION.                                         **
+	*****************************************************************
+	
+	SYMPTOMS
+	========
+	
+	
+	When you print from Creative Writer in Windows 95, the screen changes colors
+	(re-palettizes) after the snake finishes moving across the screen (the snake
+	signals the progress of the print job).
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, use an emulation printer driver for your printer.
+	
+	For example, if you are using the Canon BubbleJet 600, use the Epson LQ 860 or
+	Epson LQ 2550 printer driver.
+	
+	Installing A New Printer in Windows 95
+	--------------------------------------
+	
+	1. Click the Start Button, point to Settings, and then click Printers.
+	
+	2. Double-click Add Printer.
+	
+	3. The Add Printer Wizard will start. Follow the on-screen instructions to
+	  install your printer.
+	
+	For additional information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q130255 Windows 95: Installing or Setting a Default Printer Driver
+	
+	
+	If this does not resolve the problem, follow standard troubleshooting steps to
+	minimize the amount of memory used when printing.
+	
+	MORE INFORMATION
+	================
+	
+	It appears that the Canon printer driver uses a lot of memory and can cause
+	video corruption in Creative Writer (and possibly Fine Artist). The Epson
+	printer driver does not require as much memory to print.
+	
+	The colors in other programs running at the same time look fine. Switching from
+	Creative Writer to another application and back again (to force the screen to
+	redraw) does not resolve the problem.
+	
+	The third-party products discussed here are manufactured by vendors independent
+	of Microsoft; we make no warranty, implied or otherwise, regarding these
+	products' performance or reliability.
+	
+	Additional query words: 1.00 1.10 1.10a 1.10b kids mskids artist maggie max writer mczee palette re-draw colors
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbHomeProdSearch kbZNotKeyword2 kbCreativeWriter100 kbCreativeWriter110 kbCreativeWriter110a kbCreativeWriter110b kbFineArtist100 kbFineArtist110 kbFineArtist110a kbFineArtist110b
+	Version           : WINDOWS:1.0,1.1,1.1a,1.1b
+	
+	=============================================================================
+	

@@ -1,0 +1,139 @@
+---
+layout: page
+title: "Q129732: INFO: Data Access Objects Have Properties Based on Database Type"
+permalink: kb/129/Q129732/
+---
+
+## Q129732: INFO: Data Access Objects Have Properties Based on Database Type
+
+	Article: Q129732
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbGrpDSVBDB
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+	- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Certain Visual Basic Data Access Objects (DAO), such as the Field, Recordset,
+	and TableDef objects, each have a Properties collection that uniquely
+	characterizes an instance of the object. You can use the default (built-in)
+	properties in the collection or you can create user-defined properties by using
+	the CreateProperty method.
+	
+	The default properties available in the collection vary depending on the database
+	type. A set of extended properties, referred to as application- defined
+	properties, are available with Microsoft Access databases.
+	
+	MORE INFORMATION
+	================
+	
+	The built-in properties are available in the Properties collection for all
+	databases including Microsoft Access, Btrieve, dBASE, Microsoft FoxPro, Paradox,
+	and ODBC client-server databases such as SQL Server. For example, the following
+	built-in properties are available in the Properties collection of the TableDef
+	object (using DAO version 3.0):
+	
+	   Name            SourceTableName
+	   Updatable       RecordCount
+	   DateCreated     ValidationRule
+	   LastUpdated     ValidationText
+	   Connect         ConflictTable
+	   Attributes
+	
+	Additional application-defined properties are available for Microsoft Access
+	databases. For a complete list of built-in and application-defined properties,
+	please see the following topics in the Microsoft Access Help menu:
+	
+	  Field Object, Fields Collection - Summary
+	  RecordSet Object, Recordsets Collection - Summary
+	  TableDef Object, TableDefs Collection - Summary
+	
+	The application-defined properties will not be a part of the DAO's Properties
+	collection until the values are changed from their default values. You can
+	change an application-defined property default value by using Visual Basic code
+	or by using the Microsoft Access design environment. In Visual Basic code, use
+	the CreateProperty method just as you would to create user-defined properties.
+	
+	Steps to Display the Properties Collection
+	------------------------------------------
+	
+	1. Start a new project in Visual Basic. Form1 is created by default.
+	
+	2. If using Visual Basic 5.0, establish a reference to DAO 3.5 by clicking
+	  References from the Project menu.
+	
+	3. Add the following code to the Form1_Click procedure:
+	
+	        Dim MyDB As Database
+	        Dim MySet As Recordset
+	        Dim MyProperty As Property
+	        Dim MyTableDef as TableDef
+	
+	        ' Access database
+	        Set MyDB = DBEngine.Workspaces(0).OpenDatabase("biblio.mdb")
+	        Set MySet = MyDB.OpenRecordset("Authors", dbOpenTable)
+	        Set MyTableDef = MyDB("Authors")
+	
+	        'display properties collection for Field
+	        For Each MyProperty In MySet(0).Properties
+	           List1.AddItem MyProperty.Name
+	        Next
+	
+	        'display properties collection for Recordset
+	        For Each MyProperty In Myset.Properties
+	           List2.AddItem MyProperty.Name
+	        Next
+	
+	        'display properties collection for Tabledef
+	        For Each MyProperty In MyTableDef.Properties
+	           List3.AddItem MyProperty.Name
+	        Next
+	
+	        'Append an application-defined TableDef property by
+	        'changing its default value so it appears in the list
+	        On Error GoTo myerr:     'if RowHeight property exists trap error
+	        Set MyProperty = MyTableDef.CreateProperty("RowHeight")
+	        MyProperty.Type = dbinteger
+	        MyProperty.Value = 9
+	        MyTableDef.Properties.Append MyProperty
+	
+	        myerr:
+	        MsgBox("RowHeight Property already exists, Please create another")
+	
+	        'Print list again to see that RowHeight is displayed
+	        For Each MyProperty In MyTableDef.Properties
+	           List4.AddItem MyProperty.Name
+	        Next
+	        MySet.Close
+	        MyDb.Close
+	        On Error GoTo 0
+	
+	4. Add four list boxes (List1, List2, List3, and List4) to Form1.
+	
+	5. Run the program.
+	
+	Additional query words: kbVBp400 kbVBp500 kbVBp600 kbdse kbDSupport kbVBp
+	
+	======================================================================
+	Keywords          : kbGrpDSVBDB 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400 kbVB16bitSearch
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

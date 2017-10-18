@@ -1,0 +1,91 @@
+---
+layout: page
+title: "Q151644: The New MSN Questions &amp; Answers"
+permalink: kb/151/Q151644/
+---
+
+## Q151644: The New MSN Questions &amp; Answers
+
+	Article: Q151644
+	Product(s): The Microsoft Network
+	Version(s): WINDOWS:1.3,2.0,2.5,95
+	Operating System(s): 
+	Keyword(s): kbmsn
+	Last Modified: 16-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The Microsoft Network versions 1.3, 2.0, 2.5 
+	-------------------------------------------------------------------------------
+	
+	
+	SUMMARY
+	=======
+	
+	This article contains the complete text of the "The New MSN Questions &
+	Answers" fax script.
+	
+	This fax script is available to customers who call the Microsoft Network Member
+	Support Line at (888) 676-8477.
+	
+	MORE INFORMATION
+	================
+	
+	1. Q. What exactly is the New MSN?
+	
+	  A. The New MSN is an entirely new product with new content and a new user
+	  interface. The new user interface will allow MSN Members to use MSN as a
+	  program viewer for viewing the MSN content and as a browser for viewing sites
+	  on the Internet.
+	
+	2. Q. Is it possible to use the Old MSN and the New MSN at the same time?
+	
+	  A. Yes, it is possible to access both the Old MSN and the New MSN
+	  simultaneously, because the New MSN acts exactly like any other Web site and
+	  is a separate software product.
+	
+	  To find the Old MSN:
+	  1. Click Essentials in the Program Viewer.
+	
+	  2. Click MSN Classic and Custom Page.
+	
+	  3. Click Classic Categories.
+	
+	  In the near future, we will be discontinuing the old MSN in order to make room
+	  for other interesting programs.
+	
+	3. Q. Which of the old MSN files can I delete from my hard drive now that I have
+	  installed the new MSN?
+	
+	  A. We do not recommend that you delete any of the old MSN files at this time.
+	  The removal of these files may interfere with the functionality of the new
+	  MSN.
+	
+	4. Q. What are MSN Premier Memberships?
+	
+	  A. These are subscription plans that include access to communications services
+	  and additional exclusive content. Premier Memberships are available both with
+	  or without Internet access from Microsoft.
+	
+	  The pricing plans are as follows:
+	  1. MSN Premier Plan $6.95/month 5 hours/month included $2.50 each additional
+	     hour
+	
+	  2. MSN Premier Unlimited Plan $19.95/month Unlimited usage
+	
+	  3. MSN Premier ISDN Unlimited Plan $49.95/month Unlimited usage
+	
+	  4. MSN Premier Destinations Plan (for people who already have Internet
+	     access) $6.95/month Unlimited access to MSN content
+	
+	Additional query words: msn
+	
+	======================================================================
+	Keywords          : kbmsn 
+	Technology        : kbMSNSearch kbMSN200 kbMSN130 kbMSN250
+	Version           : WINDOWS:1.3,2.0,2.5,95
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

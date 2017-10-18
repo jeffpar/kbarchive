@@ -1,0 +1,72 @@
+---
+layout: page
+title: "Q120956: PPT: Presentation Using Template Ignores Default Setting"
+permalink: kb/120/Q120956/
+---
+
+## Q120956: PPT: Presentation Using Template Ignores Default Setting
+
+	Article: Q120956
+	Product(s): Microsoft PowerPoint for Windows
+	Version(s): 4.0,4.0a,4.0c,7.0
+	Operating System(s): 
+	Keyword(s): kbusage
+	Last Modified: 12-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft PowerPoint for Windows 95, version 7.0 
+	- Microsoft PowerPoint for Windows, versions 4.0, 4.0a, 4.0c 
+	- Microsoft PowerPoint for Macintosh, version 4.0 
+	-------------------------------------------------------------------------------
+	
+	For a Microsoft PowerPoint 2002 version of this article, see Q291930.
+	
+	For a Microsoft PowerPoint 2000 version of this article, see Q212305.
+	
+	SYMPTOMS
+	========
+	
+	If you format the default presentation (called Blank Presentation.pot in
+	PowerPoint 7.0, and Default.ppt in PowerPoint 4.0) with a custom orientation
+	and/or size, and save your changes, when you choose a new presentation with a
+	specific template, the presentation does not use the new default slide settings.
+	
+	RESOLUTION
+	==========
+	
+	To keep your custom slide setup, choose Blank Presentation, then add the desired
+	template rather than selecting the Template option in the New Presentation
+	dialog box.
+	
+	On the File menu, click New, and then click Blank Presentation. The new
+	presentation follows the default template. Click the Template button in the
+	lower-right corner of the PowerPoint window, or click Presentation Template on
+	the Format menu and select the desired template. The template is added without
+	changing the desired orientation and size.
+	
+	MORE INFORMATION
+	================
+	
+	If you create a presentation based on a template, the size of the presentation
+	is determined by the template. If you create a presentation based on the
+	AutoContent Wizard, the size of the slide is determined by the Wizard.
+	
+	PowerPoint uses the saved information in the default presentation file only when
+	you choose the blank presentation option.
+	
+	
+	`
+	
+	Additional query words: 4.00 4.00a 4.00c power point powerpt 7.00 winppt ppt95
+	
+	======================================================================
+	Keywords          : kbusage 
+	Technology        : kbHWMAC kbOSMAC kbPowerPtSearch kbPowerPt95 kbZNotKeyword2 kbPowerptMacSearch kbPowerPt95Search kbPowerPt400 kbPowerPt400Mac kbPowerPt400c kbPowerPt400a
+	Version           : :4.0,4.0a,4.0c,7.0
+	Hardware          : MAC x86
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

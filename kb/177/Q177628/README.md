@@ -1,0 +1,162 @@
+---
+layout: page
+title: "Q177628: HOWTO: Use OLE_TRISTATE Property Data Type"
+permalink: kb/177/Q177628/
+---
+
+## Q177628: HOWTO: Use OLE_TRISTATE Property Data Type
+
+	Article: Q177628
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbnokeyword kbVBp500 kbVBp600 kbGrpDSVBDB
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Control Creation Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	An ActiveX control property can be any valid data type, such as long or string.
+	Visual Basic provides some special data types for ActiveX control properties,
+	such as OLE_TRISTATE. This article demonstrates how to use the OLE_TRISTATE data
+	type.
+	
+	MORE INFORMATION
+	================
+	
+	The OLE_TRISTATE is an enumerated data type with three possible values:
+	
+	  0 - Unchecked
+	  1 - Checked
+	  2 - Gray
+	
+	When you create a property of this type, Visual Basic provides a drop-down list
+	with the above three choices in the property window. Visual Basic will not
+	verify that the values assigned to the OLE_TRISTATE property are valid;
+	therefore, a program or user can assign a value beyond 2 or less than zero to
+	the property. This behavior should be considered in code.
+	
+	The steps below describe how to create a simple ActiveX control with a property
+	of type OLE_TRISTATE.
+	
+	Create ActiveX Control
+	----------------------
+	
+	The following steps describe how to create an ActiveX control with a property
+	named YesNoMaybe of type OLE_TRISTATE.
+	
+	1. In Visual Basic, create a new ActiveX Control project. UserControl1 will be
+	  created by default.
+	
+	2. From the Project menu, choose Project1 Properties. In the Project Name field,
+	  type "OleTriState" without the quotes. Click OK.
+	
+	3. Create a Checkbox control on UserControl1 and set its Caption property to
+	  "TriState Value."
+	
+	4. Add four CommandButtons to UserControl1. Set the CommandButton properties as
+	  follows;
+	
+	     Command1
+	        (Name):  cmdUnChecked
+	        Caption: No
+	
+	     Command2
+	        (Name):  cmdChecked
+	        Caption: Yes
+	
+	     Command3
+	        (Name):  cmdGray
+	        Caption: Maybe
+	
+	     Command4
+	        (Name):  cmdInvalid
+	        Caption: Invalid
+	
+	5. Add the following code to Usercontrol1:
+	
+	        Option Explicit
+	        Private CurrentValue As OLE_TRISTATE
+	
+	        Public Property Get YesNoMaybe() As OLE_TRISTATE
+	           'Retrieve the current value of the YesNoMaybe property
+	
+	           YesNoMaybe = CurrentValue
+	
+	        End Property
+	
+	        Public Property Let YesNoMaybe(ByVal NewValue As OLE_TRISTATE)
+	           'Because Visual Basic does not check for valid values assigned to
+	           'an enumerated type, such as OLE_TRISTATE, you must first check
+	           'for values outside the range of 0-2.
+	
+	           If NewValue > 2 or NewValue < 0 Then
+	              Msgbox "Invalid Value: Valid Values are 0, 1, or 2."
+	              Exit Property
+	           End If
+	
+	           CurrentValue = NewValue
+	           PropertyChanged "YesNoMaybe"
+	        End Property
+	
+	        Private Sub cmdUnChecked_Click()
+	           Me.YesNoMaybe = UnChecked
+	           Check1.Value = Me.YesNoMaybe
+	        End Sub
+	
+	        Private Sub cmdChecked_Click()
+	           Me.YesNoMaybe = Checked
+	           Check1.Value = Me.YesNoMaybe
+	        End Sub
+	
+	        Private Sub cmdGray_Click()
+	           Me.YesNoMaybe = Gray
+	           Check1.Value = Me.YesNoMaybe
+	        End Sub
+	
+	        Private Sub cmdInvalid_Click()
+	           Me.YesNoMaybe = 3
+	           Check1.Value = Me.YesNoMaybe
+	        End Sub
+	
+	6. Save the Project and compile the OleTriState.Ocx.
+	
+	Creating the Test Container
+	---------------------------
+	
+	The test container is designed to test the OleTriState control created in the
+	steps above.
+	
+	1. Create a new Standard EXE project in Visual Basic. Form1 is created by
+	  default.
+	
+	2. From the Project menu, choose Components. Select the OleTriState control
+	  created in the above steps.
+	
+	3. Add an OleTriState control to Form1.
+	
+	4. Run the Project.
+	
+	When you run the Project you can click on each of the CommandButtons and watch
+	the corresponding behavior in the TriState Value check box. If you select the
+	Invalid CommandButton, a message box will appear and the value will not be
+	changed.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbnokeyword kbVBp500 kbVBp600 kbGrpDSVBDB 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbZNotKeyword3
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

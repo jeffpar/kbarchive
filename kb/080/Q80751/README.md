@@ -1,0 +1,140 @@
+---
+layout: page
+title: "Q80751: MS-DOS EXPAND.EXE Functionality"
+permalink: kb/080/Q80751/
+---
+
+## Q80751: MS-DOS EXPAND.EXE Functionality
+
+	Article: Q80751
+	Product(s): Microsoft Disk Operating System
+	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 17-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Most of the Microsoft MS-DOS operating system files are compressed on disk. The
+	MS-DOS Setup program decompresses these files when you install MS-DOS.
+	
+	The MS-DOS EXPAND command is available to decompress and copy files individually.
+	EXPAND is described in the "Microsoft MS-DOS User's Guide and Reference" for
+	versions 5.x and in online help for MS-DOS versions 6.0 and later.
+	
+	The following increased functionality was added to the EXPAND command beginning
+	with MS-DOS version 5.0a:
+	
+	- Displays two status messages
+	
+	- Allows multiple source file arguments
+	
+	- Has interactive user input
+	
+	- Wildcard capability for the last character of an extension
+	
+	MORE INFORMATION
+	================
+	
+	When you decompress a file in MS-DOS 5.0a or later, EXPAND prints two status
+	messages: one that details the full path of the source and target files, and one
+	that details how many files were expanded.
+	
+	In MS-DOS 5.0, if you enter the command "EXPAND" (without the quotation marks)
+	with no parameters, it displays the same help information as if you had entered
+	the command "EXPAND /?" (without the quotation marks). However, in versions 5.0a
+	and later, EXPAND is interactive. It prompts for the name of the compressed file
+	and the name it should have in expanded form. For example:
+	
+	  c:\>EXPAND
+	  Type the location and name of the
+	  compressed file you want to expand.
+	  (Example: A:\EGA.SY_)
+	
+	  Compressed file: a:\himem.sy_
+	
+	  Type the location and/or name you
+	  want to give the expanded file.
+	  (Example: C:\DOS\EGA.SYS)
+	
+	  Expanded file: c:\dos\himem.sys
+	
+	  A:\HIMEM.SY_  ->  C:\DOS\HIMEM.SYS
+	     1 file expanded
+	
+	Although the MS-DOS asterisk (*) and question mark (?) wildcards are not
+	supported by the EXPAND command, a limited but useful form of wildcards has been
+	introduced. If the specified source file does not exist, EXPAND attempts to find
+	a file with the same name and extension, except that it changes the last
+	character of the extension to an underscore (_). For example, if the file
+	A:\EXAMPLE.BIN does not exist, the command
+	
+	  expand a:\example.bi_ c:\example.bin
+	
+	has the same effect as:
+	
+	  expand a:\example.bin c:\example.bin
+	
+	  -or-
+	
+	  expand a:\example.bin c:\ 
+	
+	If the target file is not specified, the EXPAND command in versions 5.0a and
+	later uses the same name as the source.
+	
+	Multiple source parameters are allowed. If multiple source parameters are used,
+	the target must specify a single drive or directory. You can still use the
+	following commands to re-expand the entire Shell for a VGA system in MS-DOS
+	5.0:
+	
+	  a:\>expand dosshell.co_         c:\dos\dosshell.com
+	  a:\>expand dosshell.ex_         c:\dos\dosshell.exe
+	  a:\>expand dosswap.ex_          c:\dos\dosswap.exe
+	  a:\>expand vga.vi_              c:\dos\dosshell.vid
+	  a:\>expand vga.gr_              c:\dos\dosshell.grb
+	  a:\>expand ega.in_              c:\dos\dosshell.ini
+	
+	However, you can also use the following sequence with 5.0a and later as follows:
+	
+	1. At the A: prompt, enter the following command on a single line:
+	
+	  " expand dosshell.com dosshell.exe dosswap.exe vga.vid vga.grb
+	  ega.ini c:\dos " (without the quotation marks)
+	
+	  The following is displayed:
+	
+	       DOSSHELL.CO_  ->  C:\DOS\DOSSHELL.COM
+	     DOSSHELL.EX_  -> C:\DOS\DOSSHELL.EXE
+	     DOSSWAP.EX_  ->  C:\DOS\DOSSWAP.EXE
+	     VGA.VI_  ->  C:\DOS\VGA.VID
+	     VGA.GR_  ->  C:\DOS\VGA.GRB
+	     EGA.IN_  ->  C:\DOS\EGA.INI
+	             6 files expanded
+	
+	2. At the A: prompt, enter the following command
+	
+	  " copy c:\dos\?ga.* c:\dos\dosshell.* " (without the quotation marks)
+	
+	  and the following is displayed:
+	
+	     C:\DOS\VGA.VID
+	     C:\DOS\VGA.GRB
+	     C:\DOS\EGA.INI
+	        3 file(s) copied
+	
+	Additional query words: 6.22 5.00 5.00a 6.00 6.20 uncompress
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+	Version           : MS-DOS:5.x,6.0,6.2,6.21,6.22
+	
+	=============================================================================
+	

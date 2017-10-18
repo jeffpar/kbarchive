@@ -1,0 +1,2148 @@
+---
+layout: page
+title: "Q96060: PC DirSync: Directory Synchronization (Dir-Sync)"
+permalink: kb/096/Q96060/
+---
+
+## Q96060: PC DirSync: Directory Synchronization (Dir-Sync)
+
+	Article: Q96060
+	Product(s): Microsoft Mail For PC Networks
+	Version(s): WINDOWS:3.0,3.2,3.5
+	Operating System(s): 
+	Keyword(s): kbfile kbgraphxlinkcritical
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Mail for PC Networks, versions 3.0, 3.2, 3.5 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	TABLE OF CONTENTS
+	-----------------
+	
+	Introduction
+	History
+	General Description of Directory Synchronization
+	Quick Setup Guide
+	Steps for Choosing Dir-Sync Times
+	Typical Dir-Sync Scenarios
+	Gateway Names and Dir-Sync
+	Moving the Dir-Sync Server
+	Automatically Creating Postoffices via Dir-Sync
+	The TimeZone Variable
+	The Dir-Sync Process
+	Manual Dir-Sync
+	The Dir-Sync Protocol
+	Dir-Sync Utilities
+	Troubleshooting Dir-Sync
+	Appendix: .INI File Settings for Dispatch and External
+	Glossary
+	
+	MORE INFORMATION
+	================
+	
+	INTRODUCTION
+	------------
+	
+	This document is designed for the Mail administrator and outlines the procedures
+	directory synchronization (Dir-Sync) performs during normal operation. The
+	network administrator can use these procedures to examine Dir-Sync files, to
+	reset these files, or to perform a manual Dir-Sync process to fully synchronize
+	the postoffice address lists (POLs). This document is a supplement to the
+	Microsoft Mail Administrator's Guide.
+	
+	HISTORY
+	-------
+	
+	In versions of Microsoft Mail for PC Networks earlier than 3.0, Dir- Sync was
+	accomplished manually: each time a change was made to the address list, each
+	Mail administrator performed an External-Admin, Export. As a result, many large
+	messages would be sent to all the postoffices as *SPECIAL messages. This was
+	inefficient; the External Mail program could be fully occupied with delivering
+	and incorporating the address changes instead of delivering user messages.
+	
+	To perform synchronization with versions of Mail earlier than 3.0, the number of
+	system messages is N * (N - 1), where N is the number of postoffices in your
+	network. For example, with six postoffices, you would have 6 * 5 = 30 system
+	messages, as pictured below:
+	
+	  <Graphic deleted>
+	
+	With Dir-Sync, the number of system messages is 2 * N, or, in this example, 6 * 2
+	= 12, as pictured below:
+	
+	  <Graphic deleted>
+	
+	In mathematical notation, versions 3.0 and later of Mail performs an O(N2)
+	operation, whereas Dir-Sync performs an O(N) operation, which is much more
+	efficient. For versions 2.x of Mail, doubling the number of postoffices
+	quadruples the number of messages; however, for Dir-Sync the messages are only
+	doubled. Thus, the number of messages that need to be exchanged is substantially
+	reduced. In addition, the sizes of the messages are smaller because Dir-Sync
+	only sends the changes to the address list, not the full address list, as
+	required by External-Admin, Export. This means that with Dir-Sync, the External
+	Mail program is not occupied with delivering complete directories, nor are you
+	forced to manually send your address list to the other postoffices when a single
+	user is added or deleted.
+	
+	GENERAL DESCRIPTION OF DIRECTORY SYNCHRONIZATION
+	------------------------------------------------
+	
+	Dir-Sync is a method of propagating local postoffice address list changes to
+	other postoffices that are participating in the Dir-Sync process. Dir-Sync is
+	meant to be invisible to both administrators and users; the changes are
+	distributed automatically after the administrator has configured Dir-Sync.
+	
+	To accomplish synchronization, one postoffice is defined as the directory server.
+	This "server" postoffice maintains the master list of all changes from the
+	"requestor" postoffices. When a change is made to a requestor's address list,
+	the change is sent to the Dir-Sync server, which incorporates the change into
+	the master list and sends updates to the requestors. These updates have only the
+	changes a postoffice needs to update its Global Address List (GAL).
+	
+	QUICK SETUP GUIDE
+	-----------------
+	
+	NOTE: For efficient and complete configuration of Dir-Sync, it is highly
+	recommended that you designate a global administrator, who has access to all the
+	postoffices. Although Dir-Sync does not require this, it will make
+	administration much easier.
+	
+	To initialize Dir-Sync easily and quickly, complete the following nine steps in
+	the order listed:
+	
+	NOTE: These steps are expanded below. Perform all the steps on the Dir-Sync
+	server, and perform steps 1 and 5-9 on all the requestors.
+	
+	1. Ensure that mail can be sent between the postoffices.
+	
+	2. Designate one postoffice as the Dir-Sync server.
+	
+	3. Register all other postoffices as requestors with the server.
+	
+	4. Set up the server's process time.
+	
+	5. Register the server with all the other postoffices participating in Dir-Sync.
+	
+	6. Set up the two times for the requestors' processes.
+	
+	7. Export the user lists to the server by selecting Config, Dir- Sync,
+	  Requestor, Export (not External-Admin, Export).
+	
+	8. Turn on the Global Address List (GAL).
+	
+	9. Run the Dispatch program and run the External Mail program or a message
+	  transfer agent (MTA).
+	
+	10. Ensure that mail can be sent from each postoffice to all other postoffices
+	  that will be participating in Dir-Sync, by sending mail from each
+	  postoffice's Administrator account to every other postoffice's Administrator
+	  account. This step is required because Dir-Sync uses the mail system to
+	  transfer the address list updates, so regular mail must be able to be sent
+	  and received before Dir-Sync will function.
+	
+	  NOTE: Do not assume that because messages can go from one postoffice to
+	  another, the reverse is true. Be sure to test both sides of the connection
+	  before proceeding.
+	
+	11. Decide which postoffice will be the Dir-Sync server. On that postoffice, run
+	  the Mail Administrator program and select Config, Dir-Sync, Options, Yes to
+	  make that postoffice the Dir-Sync server. There can only be one Dir-Sync
+	  server in your mail system. For more assistance in selecting the Dir-Sync
+	  server, see the Microsoft Mail Administrator's Guide.
+	
+	12. Select Config, Dir-Sync, Server, Requestors, Create to register each
+	  requestor postoffice on the server postoffice. These external postoffice
+	  definitions must have been created on the postoffice via External-Admin,
+	  Create before you register the requestor(s). You can leave the Requestor
+	  Password field blank; it is an extra security feature that is not related to
+	  any other password used by Mail. If you decide to use this password, the
+	  requestors must have the same password as well.
+	
+	13. Select Config, Dir-Sync, Server, Schedule to schedule the time for the
+	  server to process the updates into the master list. For the Dir-Sync server
+	  only, skip step 5 and go to step 6.
+	
+	14. For each requestor, select Config, Dir-Sync, Requestor, Registration to
+	  designate the server postoffice. Specify the same postoffice that was
+	  designated in step 3 so that the requestor knows which postoffice to send
+	  the updates to. This external postoffice definition must have been created
+	  via External-Admin, Create before you can register it. If the Dir-Sync
+	  server has a password for the requestor's configuration, type the same
+	  password in the Requestor Password field (see step 3 above).
+	
+	  NOTE: This step is not required for the Dir-Sync server; it is automatically
+	  registered when you perform step 2 above.
+	
+	15. On each postoffice, run the Mail Administrator program and select Config,
+	  Dir-Sync, Requestor, Schedule to set the Send Requests and Process Updates
+	  times. The requestor sends updates to the server at the specified Send
+	  Requests time, and it processes updates coming from the server at the
+	  Process Updates time. Make sure the requestor sends its requests to the
+	  server prior to the server's scheduled time to process requests, and make
+	  sure the requestor processes updates after the server's scheduled time to
+	  send updates. Also, when setting the schedule for the requestor, add the
+	  additional time the MTA (such as the External Mail program or a gateway)
+	  needs to deliver the Dir-Sync mail. For more information, see the "Steps for
+	  Choosing Dir-Sync Times" section below.
+	
+	16. Select Local-Admin, Modify and select the postoffice users who will be
+	  participating in Dir-Sync. When the option appears for participating in
+	  Dir-Sync, select Yes or No as appropriate. Then select Config, Dir-Sync,
+	  Requestor, Export to send the address list to the server postoffice. The
+	  server will build the master list and send all the postoffice lists to the
+	  participating postoffices. This step is a "kick-start" to get the lists up
+	  to the server quickly.
+	
+	17. Select Config, Global-List, Yes to enable the GAL.
+	
+	18. To create the Dir-Sync mail and update the GAL automatically, the Dispatch
+	  and External Mail programs must be running and must be able to access each
+	  postoffice participating in Dir-Sync. The Dispatch program polls each
+	  postoffice. When the designated time for Dir-Sync to run has passed, the
+	  Dispatch program will create a mail message that contains the directory
+	  changes as an attachment. The External Mail program must be running on the
+	  requestor postoffice to move the Dir-Sync message into the proper outbound
+	  postoffice queue, then either the External Mail program or a gateway MTA can
+	  deliver the message from the requestor to the server postoffice. The
+	  Dispatch program creates the update message, but the External Mail program
+	  or MTA must deliver it.
+	
+	You can run the Dispatch program and the External Mail program or MTA on the same
+	computer by using the Idle (-i) option of the Dispatch program. By using the
+	External MTA as the idle process, you can deliver mail and perform Dir-Sync from
+	one computer. The two executables share time on the computer because the
+	Dispatch program starts the External Mail program with a Break Relative time.
+	When the External Mail program exits, the Dispatch program can poll the
+	requestors for Dir-Sync process times, and either run the Dir-Sync processes or
+	restart the External Mail program. For more information, see the Microsoft Mail
+	Administrator's Guide.
+	
+	STEPS FOR CHOOSING DIR-SYNC TIMES
+	---------------------------------
+	
+	In general, setting the process times for Dir-Sync requires that you analyze your
+	network and determine how long it will take the Dispatch program to cycle
+	through the postoffices participating in Dir-Sync, and how quickly the External
+	Mail program or MTA can deliver mail between postoffices.
+	
+	To determine how long Dir-Sync will take on your network, start the Administrator
+	program and select Config, Dir-Sync. Then perform the following steps:
+	
+	1. Configure the Send Requests and Process Updates times for all requestors so
+	  that they are four hours apart (for example, if the "Send Requests" time is 2
+	  A.M., make the Process Updates time 6 A.M.). To configure these times, select
+	  the Requestor Schedule option.
+	
+	2. On the Dir-Sync server, set the Process Updates time halfway between the Send
+	  Requests and Process Updates times for the requestor (in this example, at 4
+	  A.M.).
+	
+	  NOTE: Process Updates for the server is not the same as Process Updates for
+	  the requestors. The former is located under Config, Dir-Sync, Server,
+	  Schedule; the latter under Config, Dir-Sync, Requestor, Schedule. Because of
+	  the identical names given the two distinct times, this is a point of
+	  confusion for many people.
+	
+	3. Enable the SENT.LOG and RECV.LOG files by running the External Mail program
+	  with the -MS and -MR options.
+	
+	4. Let the Dispatch program complete one cycle overnight.
+	
+	5. Examine the DISPATCH.LOG file on the Dir-Sync server. Search for the line
+	  Running "NSDA -RT". This is the Send Requests time for the postoffice whose
+	  name is shown on the line directly above the "NSDA -RT" line. There will be
+	  two lines for each requestor postoffice. Record each time NSDA -RT runs.
+	
+	6. Search for the line Running "NSDA -S". This is the server's Process Updates
+	  time and must occur only on the Dir-Sync server. Record this time.
+	
+	7. Search for the lines Running "NSDA -RR". These are the Process Updates times
+	  for each requestor. Record this time for each requestor.
+	
+	8. Examine the SENT.LOG and RECV.LOG files for $SYSTEM messages. These are the
+	  Dir-Sync updates being exchanged. For each postoffice, record the time the
+	  $SYSTEM message was transmitted to the Dir-Sync server, when the Dir-Sync
+	  server sent a reply message, and when the update was received by the
+	  requestor.
+	
+	9. For the Dir-Sync server, each $SYSTEM message must arrive at the Dir-Sync
+	  server before the Process Updates time for the server. For each requestor,
+	  the $SYSTEM message must arrive before the Process Updates time for each
+	  requestor. If any of the messages do not satisfy these criteria, you need to
+	  adjust the Process Updates times.
+	
+	Alternatively, run the Dispatch program for two cycles and then examine the
+	CENTRAL.LOG file. This log file contains the previous status of Dir-Sync on each
+	requestor. It is one cycle late because it uses the status messages the
+	requestors send to the Dir-Sync server, and these messages are sent at the Send
+	Requests time of the next cycle; thus the CENTRAL.LOG file shows what happened
+	in the previous cycle. The benefits of this method are that each requestor is
+	summarized in a single location and you can easily view the Dir-Sync times. The
+	drawback is that the file is old, and, therefore, two cycles of the Dispatch
+	program are required.
+	
+	For an example of the log files, see Appendix B of the Microsoft Mail
+	Administrator's Guide.
+	
+	TYPICAL DIR-SYNC SCENARIOS
+	--------------------------
+	
+	This section is a guide for setting up an efficient Dir-Sync configuration
+	involving the postoffice, the MTA, and the Dispatch program. In the following
+	scenarios, assume that drive mappings start with the Dir-Sync server at drive M,
+	and that the Dispatch program and the MTA are run from the same computer.
+	
+	  IMPORTANT: When a gateway is used to transfer the Dir-Sync messages, the
+	  External Mail program must be run in order to properly process the Dir-Sync
+	  messages. See "The Dir-Sync Process" section later in this document for the
+	  technical reasons why the External Mail program is needed.
+	
+	A. STANDARD CONFIGURATION
+	-------------------------
+	
+	The following scenario shows multiple requestors sending directories to the
+	Dir-Sync server. The Dispatch program and the External MTA can have direct
+	access via LAN or WAN to each postoffice.
+	
+	Server           Requestor 1
+	
+	     \\              // 
+	      \\            // 
+	       \\          // 
+	        ------------
+	        | External |
+	        ---------------
+	           | Dispatch |
+	           ------------
+	        //            \\ 
+	       //              \\ 
+	      //                \\ 
+	
+	  Requestor 2      Requestor 3
+	
+	The command line for the computer running the Dispatch and External Mail programs
+	is:
+	
+	  "dispatch -dmp -i"external -dmp -a"" (without the quotation marks)
+	
+	For Dispatch 3.2 and External 3.2, the corresponding .INI files are included in
+	the Appendix of this document. The command line for Dispatch 3.2 and External
+	3.2 is:
+	
+	  "dispatch /instancename=Normal" (without the quotation marks)
+	
+	If you use a gateway as the MTA, this command line will change. See the
+	administrator's guide for the gateway you are using to determine the best
+	approach for running the Dispatch program and the gateway MTA together. Also, it
+	is important that you still run the External Mail program to process the
+	Dir-Sync messages.
+	
+	B. DYNAMIC DRIVE MAPPING
+	------------------------
+	
+	In the following scenario, dynamic drive mappings connect Requestors 2 and 3 to
+	the Dir-Sync server. Both the Dispatch and External programs from Mail 3.0x use
+	the same dynamic drive table, so any postoffice the External Mail program
+	delivers mail to should be included in Dir-Sync. Mail 3.2 handles dynamic
+	connections differently, and the Dispatch program does not need to use the same
+	Dynadmin table (although it can if you want to use the same table).
+	
+	Server           Requestor 1
+	
+	     \\              // 
+	      \\            // 
+	       \\          // 
+	        ------------
+	        | External |
+	        ---------------
+	           | Dispatch |
+	           ------------
+	         /            \ 
+	        /              \ 
+	       /                \ 
+	
+	  Requestor 2      Requestor 3
+	
+	The command line for the computer running Dispatch and External is:
+	
+	  "dispatch -dmn -f -i"external -dmn -fop -a"" (without the quotation marks)
+	
+	Note that the Dispatch program does not need to designate which drives to use for
+	the dynamic connections because it uses the first available drive designation;
+	however, the External Mail program does need this information. Thus, the
+	Dispatch program requires the -F option, while the External Mail program
+	requires -FOP (for example) to use drives O through P for dynamic connections.
+	This configuration is not possible when you use a gateway as an MTA because
+	gateways do not use dynamic drives.
+	
+	The corresponding .INI files for Dispatch 3.2 and External 3.2 are included in
+	the Appendix. For Dispatch 3.2 and External 3.2, the command line is:
+	
+	  "dispatch /instancename=Dynamic" (without the quotation marks)
+	
+	C. MODEM CONNECTIONS
+	--------------------
+	
+	In the following scenario, modems are used to connect two networks. Because the
+	Dispatch program cannot run over the modem connection, two copies of the
+	Dispatch program must be running simultaneously. Dispatch 1 controls the server
+	and one requestor, while Dispatch 2 controls the other two requestors. Note that
+	there is still only one Dir-Sync server, not two.
+	
+	Server           Requestor 1
+	
+	     \\              //              ______
+	      \\            //              /modem \ 
+	       \\          //              /        \ 
+	        --------------            /      --------------
+	        | External 1 |           /       | External 2 |
+	        -----------------       /        -----------------
+	           | Dispatch 1 |      /            | Dispatch 2 |
+	           --------------     /             --------------
+	                    \        /             //            \\ 
+	                     \______/             //              \\ 
+	                      modem             //                \\ 
+	                                     Requestor 2      Requestor 3
+	
+	The command line for running Dispatch and the External MTA on both networks is
+	the same for both computers:
+	
+	  "dispatch -dmn -i"external -dmn [<any modem specific options>]" "
+	  (without the quotation marks)
+	
+	The corresponding .INI files for Dispatch 3.2 and External 3.2 are included in
+	the Appendix. For Dispatch 3.2 and External 3.2, the command line is:
+	
+	  " dispatch /instancename=Modem" (without the quotation marks)
+	
+	D. INDIRECT ROUTING
+	-------------------
+	
+	In the following routing, Requestor 3 is indirect via Requestor 2. As with the
+	modem connection scenario, the Dispatch program cannot process the indirect
+	postoffices unless the Dispatch program is configured to connect directly to the
+	requestor postoffice. In this case, the routing of messages is indirect but the
+	Dispatch program processes the postoffice directly. If Dispatch 1 cannot reach
+	Requestor 3 (as in the diagram below), a second copy of the Dispatch program
+	must be running in order for Dir-Sync to work.
+	
+	Server           Requestor 1
+	
+	     \\              // 
+	      \\            // 
+	       \\          // 
+	        --------------                  --------------
+	        | External 1 |                  | External 2 |
+	        -----------------            -----------------
+	           | Dispatch 1 |            | Dispatch 2 |
+	           --------------\\          --------------
+	                          \\        //            \\ 
+	                           \\      //              \\ 
+	                            \\    //                \\ 
+	                          Requestor 2            Requestor 3
+	
+	The command line for the computer running Dispatch 1 and External MTA 1 is:
+	
+	  "dispatch -dmo -i"external -dmo -a"" (without the quotation marks)
+	
+	The command line for the computer running Dispatch 2 and External MTA 2 is:
+	
+	  "dispatch -dm -i"external -dmn -a"" (without the quotation marks)
+	
+	The corresponding INI files for Dispatch 3.2 and External 3.2 are included in the
+	Appendix. For Dispatch 3.2 and External 3.2, the command line for Dispatch 1
+	is:
+	
+	  "dispatch /instancename=Indirect1" (without the quotation marks)
+	
+	For Dispatch 2, the command line is:
+	
+	  "dispatch /instancename=Indirect2" (without the quotation marks)
+	
+	GATEWAY NAMES AND DIR-SYNC
+	--------------------------
+	
+	You can use Dir-Sync to distribute gateway names to all the requestor
+	postoffices. However, this is not as simple to do as it is with Mail
+	postoffices.
+	
+	To begin, each requestor postoffice must have either the gateway or the access
+	(also known as downstream) component of the gateway installed. When this is
+	done, use the Administrator program to accept gateway addresses by selecting
+	Config, Dir-Sync, Requestor, Types. Normally, the Types option has only
+	Microsoft Mail enabled, but installing the gateway places the gateway type in
+	the Types list with that type set to No. Select the gateway and respond Yes; the
+	gateway names will be accepted by the requestor postoffice for inclusion in the
+	gateway address list and in the GAL.
+	
+	At this point, the requestors will accept gateway names; however, there is no
+	process to get these names into the Dir-Sync cycle. There are three ways to do
+	this:
+	
+	- Register the gateway on the Dir-Sync server as a requestor, then write an
+	  application that will send the gateway address changes to the Dir-Sync
+	  server. The format for Dir-Sync mail is published in" Directory
+	  Synchronization with Foreign Mail Systems", which is available from Microsoft
+	  Customer Service.
+	
+	-or-
+	
+	- Manually generate a text file that contains the gateway address changes to be
+	  entered in Dir-Sync. Use the import format described in "The Import Utility"
+	  section of the Microsoft Mail Administrator's Guide. On any requestor
+	  postoffice, run the Import utility as follows:
+	
+	  "import admin -p<password> -e -f<filename>" (without the
+	  quotation marks)
+	
+	  The -E option makes the Import utility add the names in <filename> to
+	  the REQTRANS.GLB file instead of to the gateway address list, as would occur
+	  without the -E option. The next Dir-Sync cycle will take these names, as it
+	  does with regular Mail for PC Networks names, and send them to the Dir-Sync
+	  server and hence to the requestors.
+	
+	-or-
+	
+	- Add the new names and delete the out-of-date names via the Administrator
+	  program's Gateway List menu, then extract the gateway address list by using
+	  the Import utility as follows:
+	
+	  "import admin -p<password> -x -g<gatewaytype> -f<filename>"
+	  (without the quotation marks)
+	
+	  where -X specifies that Import is to extract addresses and -G specifies that
+	  gateway names defined under the <gatewaytype>are to be extracted. This
+	  list cannot be used by Dir-Sync without a slight modification, however. The
+	  list as generated contains all Add commands, and none of the Delete or Modify
+	  commands. To make this list usable so that the deleted names are deleted from
+	  the other postoffices and modified names are modified, you must add the
+	  following line at the beginning of the file to tell Dir-Sync to replace the
+	  existing gateway list with the new gateway list:
+	
+	  "R <gatewaytype>:" (without the quotation marks)
+	
+	  Note that some gateways (for example, PROFS(R)) need several such lines, one
+	  for each node. Once you add the Replace lines to the beginning of the gateway
+	  list, use the IMPORT -E line given above to send the file to the Dir-Sync
+	  server. You can easily incorporate this process into a batch file: create a
+	  file that contains the R commands, copy this file to a temporary file, use
+	  Import to extract the gateway list to the temporary file, and then send the
+	  file to the Dir-Sync server. Therefore, the batch file would look like the
+	  following:
+	
+	        copy start.txt temp.txt
+	        import admin -p<password> -x -g<gatewaytype> -ftemp.txt
+	        import admin -p<password> -e -ftemp.txt
+	        del temp.txt
+	
+	Run this batch file before the time when the requestor postoffice sends its
+	updates to the server, or the gateway list will not be incorporated into the GAL
+	until the next Dir-Sync cycle is run.
+	
+	MOVING THE DIR-SYNC SERVER
+	--------------------------
+	
+	Moving the Dir-Sync server from one postoffice to another involves several steps
+	that maintain the database integrity:
+	
+	1. Select which postoffice will be the new Dir-Sync server postoffice.
+	
+	2. If this postoffice is not registered as a requestor on the current Dir-Sync
+	  server, run the Administrator program on the current Dir- Sync server and
+	  register the new postoffice as a requestor.
+	
+	3. Make the postoffice the new Dir-Sync server via the Administrator program, by
+	  selecting Config, Dir-Sync, Options, Yes.
+	
+	4. Save a copy of the PROCESS.GLB file from the GLB directory on the new server
+	  postoffice. Copy the PROCESS.GLB file from the old Dir- Sync server to the
+	  GLB directory on the new server. This will maintain the current schedule of
+	  server processes. Alternatively, use the Administrator program and schedule
+	  the T2 time by selecting Config, Dir-Sync, Server, Schedule. If this
+	  postoffice has not participated in Dir-Sync, schedule the T1 and T3 times as
+	  well, under Config, Dir-Sync, Requestor, Schedule.
+	
+	5. Copy the SRVCONF.GLB and MSTTRANS.GLB files from the current Dir- Sync
+	  server's GLB directory to the new server's GLB directory, overwriting the
+	  existing (new) files.
+	
+	6. Turn off the old server via the Administrator program, by selecting Config,
+	  Dir-Sync, Options, No.
+	
+	7. Copy the PROCESS.GLB file you saved in step 4 to the GLB directory of the old
+	  (inactive) server. This will ensure that no scheduled server processes will
+	  be remaining on the inactive server.
+	
+	8. Compress the mailbags on the old (inactive) server via the Administrator
+	  program, by selecting Local-Admin, Storage, Compression. Check the size of
+	  the SYSTEM.MBG file on the inactive server. If it is not zero bytes, complete
+	  the following steps to clear out any Dir-Sync messages:
+	
+	  a. Run the following MS-DOS command in the MBG directory:
+	
+	  "type nul > system.mbg" (without the quotation marks)
+	
+	  b. Go to the KEY directory and run debug system.key. At the dash prompt, type
+	     the following and press ENTER after each line:
+	
+	  " F,100,L 230,0
+	  W
+	  Q " (without the quotation marks)
+	
+	     This will flush out any Dir-Sync messages that did not get processed.
+	     Dir-Sync will recover from the missing messages as part of its fault
+	     tolerance.
+	
+	9. Register the old server (now a requestor) with the new server, and change the
+	  registration of all the requestors to the new Dir-Sync server via the
+	  Administrator program, by selecting Config, Dir- Sync, Requestor,
+	  Registration.
+	
+	AUTOMATICALLY CREATING POSTOFFICES VIA DIR-SYNC
+	-----------------------------------------------
+	
+	When Dir-Sync receives an address from a postoffice that isn't currently defined
+	on the requestor postoffice, Dir-Sync will automatically create that postoffice.
+	However, the Dir-Sync server cannot do the same because the server must know the
+	requestor's name before it can accept address updates from that postoffice.
+	
+	This feature is very handy for the administrator because the main problem with
+	adding postoffices is ensuring that the spelling is correct. However, there is
+	one caveat: Dir-Sync uses the same routing for the automatically created
+	postoffice as that used to route messages to the Dir-Sync server. This may not
+	be the correct routing for the new postoffice. It is likely that the new
+	postoffice is routed differently, but you must correct the routing manually.
+	Dir-Sync has no foreknowledge of the structure of your mail system, so it uses
+	the only information it has when automatically creating a postoffice.
+	
+	For example, if the Dir-Sync server's route is via a modem, all automatically
+	created postoffices will be routed via modem as well. If the Dir-Sync server is
+	routed indirectly via a hub postoffice, then all automatically created
+	postoffices will be routed indirectly via the same hub postoffice.
+	
+	Therefore, there are two scenarios where Autocreate will function without your
+	having to make any changes:
+	
+	- All postoffices are routed directly. Because the Dir-Sync server is routed
+	  directly as well, the routing for all postoffices will be correct.
+	
+	- All postoffices are routed indirectly via a hub postoffice. Because the
+	  Dir-Sync server is routed indirectly as well, the requestor already knows
+	  that the hub postoffice is routed directly and the Dir-Sync server is routed
+	  indirectly. All other postoffices will be created as routing indirectly via
+	  the hub postoffice.
+	
+	The optimal setup is to manually create all directly routed postoffices (unless
+	the first case above applies), route the Dir-Sync server indirectly via a hub
+	postoffice, and automatically create the other indirectly routed postoffices via
+	the hub postoffice.
+	
+	NOTE: When a requestor's name is changed on the requestor and on the Dir-Sync
+	server, and autocreate Postoffice is enabled, duplicate entries will be created
+	in all the other requestors because Dir-Sync does not know how to rename a
+	postoffice. It will create the new postoffice name without deleting the existing
+	name, and will build a GAL with duplicate entries. You must manually remove the
+	obsolete postoffice via External-Admin, Delete, or rename the postoffice via
+	External-Admin, Modify, prior to Dir-Sync processing the change.
+	
+	THE TIMEZONE VARIABLE
+	---------------------
+	
+	The TimeZone (TZ) variable is used to adjust the Dir-Sync times to what the
+	Dispatch computer is using. This sounds more awkward than what actually happens.
+	An example is the best approach to explaining TZ:
+	
+	Assume that the Dispatch computer is in St. Louis (the Central U.S. time zone
+	EST6) and that the postoffice is in Sydney, Australia (so the time zone is
+	aus14, since TZ considers locations west of Greenwich to have positive time
+	offsets). The format for the MS-DOS TZ environment variable is SET
+	TZ=<xxx>-]<nnyyy>, where <xxx> is a designation for the time
+	zone (any three characters will work--they are not checked for validity);
+	<nn> is the time from Greenwich calculated as the number of hours
+	difference, where moving westward is positive and eastward negative; and
+	<yyy> is for daylight saving time; and any character after the hours
+	(<nn> will adjust the time by one hour.
+	
+	When TZ is set, several MS-DOS time functions are updated to the current time
+	zone. When the administrator sets the Dir-Sync times, the TZ variable is
+	incorporated into the time written to the PROCESS.GLB file. Dispatch reads this
+	time and adjusts it according to the local TZ variable on the computer running
+	Dispatch. This time is used to schedule Dir-Sync. Therefore, it is important
+	that you set TZ on both the computer running the Administrator program and on
+	the computer running the Dispatch program, or the correct offsets will not be
+	used.
+	
+	For example, let the time be 3 A.M. (03:00) in Australia. When the Dispatch
+	program reads the PROCESS.GLB file, it takes the set time (03:00), adds the
+	stored time zone (14) to convert to Universal Time, then subtracts its own time
+	zone (6) to convert the time into local time. Thus the Dispatch program sees the
+	process time as 03:00 + 14 - 6 = 11:00, and that is the local time when the
+	Dir-Sync process will be run in Australia. The time in Australia will still be
+	03:00.
+	
+	When the administrator in Australia views the Dir-Sync schedule, the time will be
+	03:00. If the administrator from the Dispatch machine views the same schedule,
+	the time will reflect the change in time zone and so will be 11:00. This can be
+	confusing to the administrators, but it is perfectly normal behavior.
+	
+	There are five scenarios that involve the TZ variable:
+	
+	- All postoffices are in the same time zone, and the Administrator and Dispatch
+	  programs are run from this time zone. TZ is not needed.
+	
+	- Postoffices are in different time zones, but the Administrator and Dispatch
+	  programs are run from one time zone. TZ is not needed because the stored
+	  times are all using the same TZ offset.
+	
+	- Postoffices are in different time zones and the Administrator program is run
+	  from different time zones, but the Dispatch program is run in only one time
+	  zone. TZ is helpful in this setup because the offsets are calculated
+	  automatically. Set the TZ variable on the computer running the Administrator
+	  program and on the computer running Dispatch. If you are using Dispatch 3.0,
+	  set the TZ variable from the MS-DOS prompt. If you are running Dispatch 3.2,
+	  use the DISPATCH.INI file's TimeZone option.
+	
+	- Postoffices are in different time zones, and multiple copies of both the
+	  Administrator and Dispatch programs are run from different time zones. This
+	  scenario is awkward; TZ will not really help in this case because each copy
+	  of Dispatch will be reading TZ offsets, and there is no way to coordinate
+	  several Dispatches.
+	
+	- The Administrator program is run from one time zone, and Dispatch is run from
+	  another time zone. TZ will not help in this case: Dispatch will incorrectly
+	  adjust the time set by the Administrator program because Dispatch believes
+	  the postoffice is located in the same time zone as the Administrator program.
+	
+	The alternative to TZ is to manually adjust the times for the difference. If the
+	time zones are close to one another (less than three hours' difference), TZ may
+	not be of help and manual adjustment may be easier.
+	
+	One situation that can cause difficulties (although it is not directly related to
+	the TimeZone variable) arises with daylight saving time (DST). When Dispatch
+	updates the time to run the next Dir-Sync process, it does so by adding one
+	week's worth of seconds to that day's time. It maintains a complete weekly list
+	of Dir-Sync times, along with the next time to run, and simply copies the next
+	time to run into the place for the current time to run. The problem occurs when
+	Dispatch runs a process in the week before DST takes effect. When it adds the
+	week's worth of seconds, MS-DOS compensates for the impending arrival of DST by
+	interpreting the stored time to have one extra hour in it. Thus the time
+	recorded in the PROCESS.GLB is one hour greater than before. The opposite is
+	true when DST ends; the extra hour is removed.
+	
+	Dispatch continues to add the week's worth of seconds, so the change in time
+	propagates until DST ends. This is NOT the fault of Dispatch. It knows nothing
+	about the change; it compares the time to run with what MS-DOS reports. Because
+	the two are off by one hour, Dir-Sync occurs one hour later (or earlier,
+	depending on DST) than expected.
+	
+	The solution is simple: always set the TZ variable on the machine that sets the
+	process times (be it ADMIN.EXE or DSSCHED.EXE, described below). When TZ is set,
+	MS-DOS does not add the extra hour when DST occurs. Note that you don't want to
+	use SET TZ=PST8DST, or MS-DOS will add the extra hour when the change to or from
+	DST occurs. Therefore, the three cases are:
+	
+	+-------------------------------------------------------------------------------------------------------+
+	| Command                          | Explanation                                                        | 
+	+-------------------------------------------------------------------------------------------------------+
+	| No TZ setting                    | Times are adjusted by 1 hour at both the start and the end of DST. | 
+	+-------------------------------------------------------------------------------------------------------+
+	| SET TZ=xxxnnyour_local_time_zone | Times are not adjusted.                                            | 
+	+-------------------------------------------------------------------------------------------------------+
+	| SET TZ=xxxnnDST                  | Times are adjusted by 1 hour at both the start and the end of DST. | 
+	+-------------------------------------------------------------------------------------------------------+
+	
+	THE DIR-SYNC PROCESS
+	--------------------
+	
+	Dir-Sync can be divided into four distinct times. Time 0 (T0) is when the
+	postoffice administrator uses the Administrator program to create or modify a
+	user or group that is participating in Dir-Sync, or when Import is used to add
+	names to the Dir-Sync process. When these changes are made, a record is added to
+	the REQTRANS.GLB file. The REQTRANS.GLB file is the entry point for all Dir-Sync
+	names.
+	
+	Time 1 (T1) is the Send Updates time, when the requestors create mail messages
+	for the Dir-Sync server. These messages contain the status of the requestor and
+	any updates of the requestor's address list that are sent to the server.
+	
+	Time 2 (T2) is the Process Updates time for the server, when the server takes all
+	the updates from all the requestors, adds them to the master transaction list,
+	and creates mail messages that are sent to the requestors with the updates each
+	requestor needs to have an updated GAL.
+	
+	Time 3 (T3) is the Process Updates time for the requestors, when each requestor
+	takes the updates from the server and incorporates them into its local GAL.
+	
+	To ensure that a Dir-Sync process will not run long after it is scheduled to (as
+	would be the case if DISPATCH.EXE did not connect to the postoffice for some
+	reason, such as a server that is down), there is a "window" of time in which the
+	Dir-Sync process will be run, and after which it will not. This is the run
+	window for the process. For version 3.0 of the Administrator program the run
+	window is four hours, and for version 3.2 of the Administrator program it is
+	eight hours. If this amount of time passes and Dispatch then connects to the
+	postoffice and reads the scheduled processes, a "<Process name> missed its
+	run window" error is generated and is placed in the DISPATCH.LOG file (where
+	<Process Name>is either NSDA -RR, NSDA -S, or NSDA -RT, corresponding to
+	T1, T2, and T3). When this error occurs, you should determine if Dispatch could
+	not connect to the server in question, or if Dispatch is running out of time
+	because it is running Dir-Sync on too many postoffices. The first condition is
+	temporary; the second will occur frequently. The solution is to either have more
+	copies of Dispatch running on different sets of postoffices (so that only one
+	copy of Dispatch can perform Dir-Sync on a postoffice), or increase the amount
+	of time between T1, T2, and T3.
+	
+	In more detail, the exact steps Dir-Sync follows are: TIME 1 (T1)
+	
+	T1 steps are:
+	
+	1. Dispatch polls the PROCESS.GLB file at each postoffice to determine when to
+	  proceed with Dir-Sync.
+	
+	2. When T1 has been reached or exceeded, dispatch spawns NSDA -RT.
+	
+	3. The NSDA program in turn spawns REQMAIN -T to transmit the updates.
+	
+	4. The REQMAIN program opens the REQCONF.GLB file to get the requestor's current
+	  synchronization numbers.
+	
+	5. The REQMAIN program creates a mail message and an attachment, which contains
+	  the previous Dir-Sync status of the requestor, and places the message header
+	  in the P1 directory for the server.
+	
+	6. The REQMAIN program reads the REQTRANS.GLB file to see if any additions or
+	  changes to the requestor's address list are waiting to be sent to the server.
+	
+	7. The REQMAIN program creates a second mail message with the requestor's
+	  commands to the Dir-Sync server, creates an attachment to the message that
+	  contains the contents of the REQTRANS.GLB file (if any updates need to be
+	  sent to the Dir-Sync server), and places the message header in the P1
+	  directory.
+	
+	8. The REQMAIN program writes the status of the sent updates to the DIRSYNC.LOG
+	  file.
+	
+	Because the mail messages for the server are in the P1 directory, the External
+	MTA must run to first move them into the mailbag for the Dir- Sync server and
+	then actually deliver them to the Dir-Sync server. Because gateways do not use
+	the P1 directory, External is required even on postoffices that only use a
+	gateway to communicate with other Microsoft Mail postoffices. For assistance on
+	how to properly use a gateway as the MTA, contact Microsoft Product Support.
+	
+	TIME 2 (T2)
+	
+	T2 steps are:
+	
+	1. Dispatch polls the PROCESS.GLB file.
+	
+	2. When T2 has been reached or exceeded, Dispatch spawns NSDA -S for the
+	  Dir-Sync server only.
+	
+	3. The NSDA program spawns SRVMAIN -R to receive the updates.
+	
+	4. The SRVMAIN program reads the Dir-Sync mail messages (the mailbag for the
+	  Dir-Sync mail is SYSTEM.MBG) and incorporates them into the MSTTRANS.GLB
+	  file. MSTTRANS.GLB is the master list of all updates that are sent to the
+	  Dir-Sync server. This list is routinely purged of old directory entries,
+	  which you configure via the Administrator program by selecting Config,
+	  Dir-Sync, Server, Options, Keep Updates.
+	
+	5. After incorporating the updates into the MSTTRANS.GLB file, SRVMAIN updates
+	  the SRVCONF.GLB file to reflect the current status of the Dir-Sync process
+	  for each requestor.
+	
+	6. The NSDA program spawns SRVMAIN -T to transmit updates to the requestors.
+	  Only those postoffices that send an update at the T1 time (and were
+	  successfully received by the Dir-Sync server) are sent an update.
+	
+	7. For each requestor, SRVMAIN reads the SRVCONF.GLB and MSTTRANS.GLB files and
+	  creates Dir-Sync messages that contain the entries in MSTTRANS.GLB that are
+	  numbered greater than the sync number stored in SRVCONF.GLB for that
+	  requestor. If templates are exchanged, SRVMAIN reads the various .TPL
+	  (template) and .INF (information) files and incorporates the information into
+	  the attachments. SRVMAIN places these messages, like the ones during T1, in
+	  the P1 directory for later delivery to the requestors.
+	
+	The External MTA is again required to transfer the Dir-Sync messages from the P1
+	directory to the outbound queues for the requestor postoffices and then to
+	deliver the mail to the requestors.
+	
+	TIME 3 (T3)
+	
+	T3 is the most complex step in the entire Dir-Sync cycle. It is at T3 that the
+	Dir-Sync updates are received and the GAL and the GALINDEX.GLB file are rebuilt
+	from scratch. This step is complex because of the time required to rebuild the
+	various files. For large GALs (for example, more than 100,000 names), the
+	rebuild process can take several hours. Even for small GALs (about 10,000 names)
+	the rebuild process can take almost an hour to complete, depending on the type
+	of computer used to run the Dispatch program. The faster the computer running
+	Dispatch, the more quickly the process will complete.
+	
+	T3 steps are:
+	
+	1. Dispatch polls the PROCESS.GLB file again.
+	
+	2. When T3 has been reached or exceeded, Dispatch spawns NSDA -RR on each
+	  postoffice.
+	
+	3. NSDA in turn spawns REQMAIN -R to receive the updates.
+	
+	4. REQMAIN reads the SYSTEM.MBG file for Dir-Sync mail, reads the attachments
+	  and transfers the names to the SRVTRANS.GLB file, and then exits.
+	
+	5. NSDA spawns the Import program to move the names in the SRVTRANS.GLB file
+	  into the various .USR files (the address lists for each postoffice). The
+	  Import program does this by reading the SRVTRANS.GLB file and then sorting
+	  the names into three separate queues (USRTRANS.GLB, NMETRANS.GLB, and
+	  GWTRANS.GLB). USRTRANS.GLB holds names that are network or postoffice type
+	  names (SNADS, PROFS, OfficeVision(R)). NMETRANS.GLB holds Mail for PC
+	  Networks names that are to be deleted or modified. GWTRANS.GLB holds gateway
+	  names.
+	
+	6. If template exchange is enabled, each postoffice template and information
+	  file is modified. If templates are enabled but no templates have been sent to
+	  the requestor postoffice, a warning is generated that states there are no
+	  templates. This is a very common warning, but it is not critical to Dir-Sync.
+	
+	7. The Import program combines the names from the temporary queues and the
+	  templates into the .USR or .NME files. Then it clears the queues and exits.
+	
+	8. NSDA spawns REBUILD -F.
+	
+	9. Rebuild reads the local postoffice list (ADMIN.NME), each gateway's NME list,
+	  the network list, and each external postoffice's USR list into a temporary
+	  GAL. This temporary file is sorted and a temporary GAL index is built. This
+	  step is by far the most time-consuming part of the process.
+	
+	10. Rebuild deletes the old GAL and GAL index files, renames the temporary GAL
+	  index to GALINDEX.GLB, and renames the temporary GAL to GAL.NME.
+	
+	11. Rebuild places all external postoffice and gateway names in the GALNETPO.GLB
+	  file. This file is used to speed up the time required to resolve an external
+	  name to a corresponding mailbag.
+	
+	12. Rebuild exits, NSDA exits, and the Dir-Sync cycle is complete.
+	
+	MANUAL DIR-SYNC
+	---------------
+	
+	At times it may be necessary to check on the status of Dir-Sync and verify that
+	all parts and executable programs are running correctly. A manual Dir-Sync cycle
+	can accomplish this.
+	
+	  IMPORTANT: Manual Dir-Sync is intended as a debugging and verification
+	  procedure when problems with Dir-Sync are encountered or suspected, and NOT
+	  as the primary means for performing Dir- Sync. There are several internal
+	  error messages that are processed only by Dispatch, and a manual Dir-Sync
+	  cycle does not pass these error messages to the Administrator program or to
+	  MS-DOS.
+	
+	Manual Dir-Sync follows the same process as the Dispatch program follows, so
+	similar notation is used below.
+	
+	Turn off all MTAs, if possible. Investigating the status of Dir-Sync will be much
+	easier if no External Mail programs or MTAs are running during the manual
+	Dir-Sync cycle.
+	
+	Add or modify a user on each postoffice so you can follow the flow of Dir-Sync
+	mail from the requestors to the server and back again.
+	
+	1. On every postoffice involved in Dir-Sync, including the server postoffice,
+	  type the following command:
+	
+	  "reqmain -t -d<drive>" (without the quotation marks)
+	
+	  This step generates the outgoing Dir-Sync mail message and places it in the P1
+	  directory.
+	
+	2. On the computer that all the postoffices are mapped to, type the following
+	  command:
+	
+	  "external -0 -d<driverange>" (without the quotation marks)
+	
+	  NOTE: The -0 option is a zero, not the letter O.
+	
+	  IMPORTANT: This step is required even if a gateway is used to deliver the mail
+	  because External is required to move the Dir-Sync message from the P1
+	  directory to the outbound mailbag. Gateways do not examine the P1 directory,
+	  so Dir-Sync messages will be stranded and Dir-Sync will not take place
+	  without External.
+	
+	  This step transfers the mail into the outbound queue for the Dir- Sync server.
+	  Use the Administrator program on each requestor postoffice to check the queue
+	  for the Dir-Sync server postoffice. There should be at least two $SYSTEM
+	  messages in the queue. One will be a status report, the other will have a
+	  subject line that looks like the following
+	
+	  $SYSTEM ReqTx R=R# (was r#), S = S#, I = I# ## sent
+	
+	  where:
+	
+	  Message      | Description
+	  ---------------------------------------------------------------------
+	
+	  ReqTx        | Indicates this is the requestor update to the
+	            | Dir-Sync server.
+	  R=R#         | The current requestor sync number from REQTRANS.GLB.
+	  (was r#)     | The old requestor sync number from REQCONF.GLB.
+	  S=S#         | The requestor's server sync number from REQCONF.GLB.
+	  I=I#         | The number of imports requested to date from
+	            | REQCONF.GLB.
+	  ## sent      | The number of address updates contained in the
+	            | attachment.
+	
+	  NOTE: If another External Mail program or MTA is still active, the mail may
+	  have been delivered before the queue was checked.
+	
+	3. On the computer that all the postoffices are mapped to, type the following
+	  command:
+	
+	  "external -0 -d<driverange>" (without the quotation marks)
+	
+	  This invocation of the External Mail program actually delivers the outgoing
+	  Dir-Sync mail. If you are using a gateway as the MTA, type the appropriate
+	  gateway command to deliver the message.
+	
+	4. On the Dir-Sync server, type the following command:
+	
+	  "nsda -s -d<drive>" (without the quotation marks)
+	
+	  Alternatively, you can enter the two commands that comprise NSDA - S:
+	
+	  "srvmain -r -d<drive>" (without the quotation marks)
+	
+	  "srvmain -t -d<drive>" (without the quotation marks)
+	
+	  The SRVMAIN -R command receives the updates and places them in the
+	  MSTTRANS.GLB file. The SRVMAIN -T command reads the SRVCONF.GLB file,
+	  determines which updates need to be sent to each requestor postoffice, reads
+	  the MSTTRANS.GLB file to create the updates, generates a mail message back to
+	  each postoffice that sent a request to the server, and places this outgoing
+	  mail in the P1 directory.
+	
+	5. On the computer that all the postoffices are mapped to, type the following
+	  command:
+	
+	  " external -0 -d<driverange>" (without the quotation marks)
+	
+	  This command again moves the mail to the outbound queues. The server's queues
+	  for the requestor postoffices should show the following $SYSTEM message
+	
+	  $SYSTEM SrvTx R=R# S=S# (was s#) I = I# ## sent
+	
+	  where:
+	
+	  Message   | Description
+	  SrvTx     | Indicates this is the server's update to the requestor.
+	  R=R#      | The requestor sync number that was sent from the
+	         | requestor. This is an acknowledgment of the updates
+	         | received by the server.
+	  S=S#      | The new server sync number for the requestor.
+	  (was s#)  | The old server sync number for the requestor.
+	  I=I#      | The number of imports requested to date by the requestor.
+	  ## sent   | The number of updates sent back to the requestor.
+	
+	6. On the computer that all the postoffices are mapped to, type the following
+	  command:
+	
+	  "external -0 -d<driverange>" (without the quotation marks)
+	
+	  This delivers the updates to the requestor postoffices. If a gateway is used
+	  as the MTA, type the appropriate command to deliver the messages.
+	
+	7. On every postoffice involved in Dir-Sync, type the following command:
+	
+	  " reqmain -r -d<drive>" (without the quotation marks)
+	
+	  "import admin -p<password> -q -y -d<drive>" (without the quotation
+	  marks)
+	
+	  "rebuild -f -d<drive>" (without the quotation marks)
+	
+	  The REQMAIN -R command receives the updates and moves them into the
+	  SRVTRANS.GLB file.
+	
+	  The IMPORT command takes the SRVTRANS.GLB records and moves them into the
+	  temporary transaction files depending on what types of addresses they
+	  contain. Then the Import command moves the names into the .USR and .NME
+	  files. The -Q option tells Import to use the SRVTRANS.GLB file for the
+	  update, and the -Y option tells Import to run without asking for permission
+	  to continue.
+	
+	  The REBUILD -F command takes the network names, the .NME files, and the .USR
+	  files to build the GAL and the GAL index file. The -F option is the same as
+	  the -Y option for import. This concludes the manual Dir-Sync cycle.
+	
+	  It is important that you run all three commands on all postoffices
+	  participating in Dir-Sync, especially the Dir-Sync server, or errors may
+	  occur the next time Dispatch is run because of the Dir- Sync requests waiting
+	  to be processed.
+	
+	WARNING: If you run the Rebuild utility when Mail users are active, Rebuild may
+	fail with Error 203 because the GAL.NME file may be open for address resolution
+	at the time Rebuild is run. If this error occurs under version 3.0 of the
+	Rebuild utility, messages may be misdirected because the GALINDEX.GLB file will
+	not match the correct GAL.NME file. With Mail 3.0, you should only perform
+	manual Dir-Sync when users are not signed in to Mail. Rebuild 3.2 uses a
+	different algorithm to delete the GAL files, and messages cannot be misdirected
+	if Error 203 occurs.
+	
+	THE DIR-SYNC PROTOCOL
+	---------------------
+	
+	Dir-Sync uses seven numbers in four files to control the updates sent to a
+	requestor postoffice. Both the requestor and the server have sets of stored
+	numbers. The requestor stores its copy of ReqSync (requestor sequence number,
+	also known as ReqSeq, which is the cumulative total of all updates sent to the
+	server) and SrvSync (server sequence number, also known as SrvSeq, which is the
+	cumulative total of all updates received from the server) in the REQCONF.GLB
+	file. The requestor also stores the ReqSync number in the REQTRANS.GLB file.
+	This copy of ReqSync records the last update sent to the server, as well as any
+	additional changes since the last update. The ReqSync number in the REQTRANS.GLB
+	file must be equal to or greater than the ReqSync number stored in the
+	REQCONF.GLB file, or Dir-Sync will ignore the updates in the REQTRANS.GLB file.
+	
+	For the Dir-Sync server, the SRVCONF.GLB file stores Sync (the last known
+	position in the MSTTRANS.GLB file), and copies of ReqSync and SrvSync for each
+	requestor. Also, the MSTTRANS.GLB file stores sequence numbers for each
+	transaction sent to the Dir-Sync server.
+	
+	The following table summarizes the important Dir-Sync numbers:
+	
+	Sync number      | Location             |Description
+	ReqSync          | Requestor:           | Cumulative total of all
+	                | REQCONF.GLB          | updates sent to the server.<7F>
+	SrvSync          | Requestor:           | Cumulative total of all
+	                | REQCONF.GLB          | updates received from the
+	                |                      | server.
+	Transaction sync | Requestor:           | Individual sync numbers for
+	numbers          | REQTRANS.GLB         | each transaction waiting to
+	                |                      | be sent to the server.
+	                |                      | Always equal to or greater
+	                |                      | than ReqSync.
+	Sync             | Server: SRVCONF.GLB  | Last known record position
+	                |                      | in the MSTTRANS.GLB file.
+	ReqSync          | Server: SRVCONF.GLB  | Server copy of the
+	                |                      | requestor's number of
+	                |                      | updates. Used to
+	                |                      | determine if the update
+	                |                      | from the requestor is
+	                |                      | valid.
+	SrvSync          | Server: SRVCONF.GLB  | Server copy of the
+	                |                      | requestor's server updates.
+	                |                      | Used as acknowledgment of
+	                |                      | requestor's receipt of
+	                |                      | updates.
+	Transaction sync | Server:              | Individual sync numbers for
+	numbers          | MSTTRANS.GLB         | each transaction. Used to
+	                |                      | control which transactions
+	                |                      | are sent to the requestors.
+	
+	One consequence of the protocol (and a very easy test of Dir-Sync's status) is
+	that the requestor's ReqSync number is always less than or equal to SrvSync.
+	This is because the sequence numbers are cumulative totals: because more than
+	one postoffice is (usually) involved in Dir- Sync, more updates will be received
+	by the requestors than are sent to the server from any one requestor.
+	
+	In explaining the protocol, the same terminology that describes the Dir-Sync flow
+	will be used, starting at time T0:
+	
+	T0:
+	
+	The administrator adds, deletes, or modifies a user, and includes the change in
+	Dir-Sync. The ReqSync stored in the REQTRANS.GLB file is incremented, and the
+	entry is added to the REQTRANS.GLB file.
+	
+	T1:
+	
+	The REQMAIN program reads the ReqSync number in the REQCONF.GLB file and compares
+	it to the numbers in the REQTRANS.GLB file. Any updates that have sequence
+	numbers less than that stored in the REQCONF.GLB file are rejected as obsolete
+	transactions. Any updates that have sequence numbers greater than that stored in
+	the REQCONF.GLB file are placed in a mail message as an attachment, and the body
+	of the message contains the Dir-Sync transaction. The exact format of the
+	Dir-Sync message can be found in the Directory Synchronization with Foreign Mail
+	Systems manual.
+	
+	  NOTE: If you delete and then re-create the REQTRANS.GLB file, you must reset
+	  Dir-Sync on that postoffice so that the updates will be accepted. On a
+	  requestor, this is not difficult because the Dir- Sync utilities will reset
+	  the REQCONF.GLB file; however, for a server, this problem is very difficult
+	  to correct. In this case, it is best to call Microsoft Product Support
+	  Services for assistance.
+	
+	T2:
+	
+	On the server, the incoming message is read and the sequence numbers for the
+	transactions are compared to the SRVCONF.GLB file's stored sequence numbers. Any
+	transactions that are numbered less than the stored ReqSync number are rejected
+	as old information, and the remaining transactions are added to the MSTTRANS.GLB
+	file. The Sync number in the SRVCONF.GLB file is updated to reflect the new size
+	of the MSTTRANS.GLB file. These steps are done for each Dir-Sync message sent to
+	the server.
+	
+	During the transmit stage of T2, the updates from the SrvSeq number (sent in the
+	requestor's message) to the Sync number (at the end of the MSTTRANS.GLB file)
+	are placed in an attachment, and the message is sent as a reply to the
+	requestor. The text of the message contains the new SrvSync number (which is
+	equal to the Sync number), and it also echoes back to the requestor the ReqSync
+	number sent to the server. These new sequence numbers are stored in the
+	SRVCONF.GLB file for the next Dir-Sync cycle.
+	
+	The implication of this method is that only those requestors whose messages were
+	received by the server by time T2 will receive an update. Requestors whose
+	messages were delayed will not receive an update in the current Dir-Sync cycle,
+	but will receive the updates in the next Dir-Sync cycle.
+	
+	If the requestor sends a message with ReqSync = 0 and SrvSync = 0, the server
+	assumes the requestor needs all address lists and generates an Import Reply
+	message. You can request an import by selecting Config, Dir-Sync, Requestor,
+	Import from the Administrator program. When the server receives an Import
+	Request message, the process is slightly different. The server scans all of its
+	current address lists, as well as the MSTTRANS.GLB file, and sends these
+	addresses to the requestor. This has two major effects: 1) The Dir-Sync message
+	sent to the requestor can be very large, and 2) Any existing address list on the
+	requestor postoffice is replaced by the update.
+	
+	NOTE: If the requestor Admin has created his or her own gateway address list, and
+	then sets that gateway type to Yes for Dir-Sync and asks for an Import, the
+	addresses will be lost when Dir-Sync replaces the old list with the new list.
+	
+	T3:
+	
+	The requestor processes the updates in much the same manner as the server
+	processed its updates. The message is examined for the sequence numbers. If the
+	ReqSeq number in the message matches the ReqSync number stored in the
+	REQCONF.GLB file, the requestor knows the server received its updates and
+	processed them correctly. At that point, the REQTRANS.GLB file is cleared of the
+	old transactions and a dummy transaction is placed at the last position, in
+	order to keep the ReqSync number current. The SrvSeq number is stored for the
+	next Dir-Sync cycle, so the server will be informed that the update was
+	received. The transactions are moved from the attachment to the SRVTRANS.GLB
+	file for further processing by the Import and Rebuild utilities. These processes
+	do not affect the sequence numbers, only the address lists, so they will not be
+	covered further in this document.
+	
+	This protocol is fault-tolerant: the information (either the updates themselves
+	or the need for updates) is not changed until the acknowledgment is received.
+	Thus the requestor does not remove updates until the server notifies it that the
+	updates were received, and the server does not delete updates until the
+	requestor confirms it has received them as well.
+	
+	Foreign requestors work somewhat differently and are beyond the scope of this
+	document. For more information, see the Directory Synchronization with Foreign
+	Mail Systems manual.
+	
+	DIR-SYNC UTILITIES
+	------------------
+	
+	There are three utilities (DSSCHED.EXE, LISTDS.EXE, and LISTQ.EXE) included with
+	this document that are designed to aid you in controlling Dir- Sync. These
+	utilities are intended only for administrators and are not useful for any other
+	user.
+	
+	DSSCHED.EXE
+	-----------
+	
+	Summary
+	
+	The DSSCHED utility lists the PROCESS.GLB file and displays the various processes
+	and the times when they are to be run. It can also save the times in a formatted
+	file, and use that file to set the process times.
+	
+	Syntax
+	
+	  dssched admin -p<password> -d<drive> [-i<file>]
+	  [-x<file>] [-v] [-?]
+	
+	Where:
+	
+	  Parameter    | Description
+	---------------------------------------------------------------------
+	  admin        | The administrator for the postoffice (required).
+	  -P<password> | The administrator's password (required).
+	  -D<drive>    | The postoffice drive. This can be a drive letter or
+	               | a full path to the database. The default value is
+	               | drive M.
+	  -I<file>     | Import the times in <file> to set the process
+	               | times.
+	  -X<file>     | Export the process times to <file>.
+	  -V           | Verbose mode (displays additional information to
+	               | the console).
+	  -?           | Displays the Help and About screens.
+	
+	Example
+	
+	  dssched admin -ppassword -xmytimes.txt
+	
+	Sample output:
+	
+	  Microsoft Mail for the PC v3.2, DSSched v3.2
+	  (C) Microsoft Corp. 1993-1994. All rights reserved
+	
+	  Examining POLYNOMIAL/MONTGOMERY Dir-Sync process times
+	
+	     Record number 1
+	  Requestor sends updates (Dispatch runs NSDA -RT)
+	  Current time to run NSDA -RT: Sat Feb 26 13:45:00 1994
+	
+	     Record number 2
+	  Requestor processes updates (Dispatch runs NSDA -RR)
+	  Current time to run NSDA -RR: Mon Feb 28 15:00:00 1994
+	
+	     Record number 3
+	  Server process (Dispatch runs NSDA -S)
+	  Current time to run NSDA -S: Mon Feb 28 14:55:00 1994
+	
+	In this example, the file MYTIMES.TXT contains the following entries:
+	
+	  T1 Sat 13:45
+	  T3 Mon 15:00
+	  T2 Mon 14:55
+	
+	The format of the output file, which is also used when DSSCHED is used to change
+	the Dir-Sync times, is as follows:
+	
+	  T<x> <Day> <HH>:<MM>
+	
+	where <x> can be 1, 2, or 3 (corresponding to the notation for Dir- Sync
+	processes T1, T2, and T3), <Day> is the day of the week (in the format of
+	Sun, Mon, Tue, Wed, Thu, Fri, or Sat), and <HH>:<MM> is the hour and
+	the minute for the process (based on a 24-hour clock, thus 11 P.M. is 23:00).
+	Only the Dir-Sync server will accept T2 times; requestors will ignore these
+	times if they are in the file.
+	
+	LISTDS.EXE
+	----------
+	
+	Summary
+	
+	The LISTDS utility displays the server configuration file (SRVCONF.GLB) and the
+	requestor configuration file (REQCONF.GLB). It can also reset the REQCONF.GLB
+	file for the requestors, but not for the Dir-Sync server because this option is
+	not valid for the server.
+	
+	Syntax
+	
+	  listds admin -p<password> -d<drive> [-s or -r [-z]] [-v] [-?]
+	
+	Where:
+	
+	Parameter    | Description
+	---------------------------------------------------------------------
+	admin        | The Administrator account for the postoffice
+	            | (required).
+	-P<password> | The administrator's password (required).
+	-D<drive>    | The postoffice location. This can be a drive letter
+	            | or a full path to the database. The default value is
+	            | drive M.
+	-S           | Show the contents of SRVCONF.GLB.
+	-R           | Show the contents of REQCONF.GLB.
+	-Z           | Reset the configuration file. This functions only for
+	            | the requestor's postoffice.
+	  -V        | Verbose mode (displays additional information).
+	  -?        | Display the Help screen.
+	
+	Example 1
+	
+	  listds admin -ppassword -s
+	
+	Sample output for the SRVCONF.GLB file:
+	
+	  Microsoft Mail for the PC v3.2, ListDS v3.2
+	  (C) Microsoft Corp. 1993-1994. All rights reserved
+	
+	  Examining POLYNOMIAL/MONTGOMERY Server Configuration Record
+	  Highest SrvSync is 80, Current Dirsync Cycle is 11
+	
+	       Server Requestor Record #1
+	  Requestor name: PCM:POLYNOMIAL/MONTGOMERY
+	  ReqSync = 17, SrvSync = 80, Last Cycle = 11
+	  Last update received Fri Feb 18 13:11:58 1994
+	
+	       Server Requestor Record #2
+	  Requestor name: PCM:POLYNOMIAL/NOVEMBER
+	  ReqSync = 18, SrvSync = 0, Last Cycle = 9
+	  Last update received Thu Feb 17 08:52:45 1994
+	
+	       Server Requestor Record #3
+	  Requestor name: PCM:POLYNOMIAL/OCTOBER
+	  ReqSync = 12, SrvSync = 71, Last Cycle = 9
+	  Last update received Thu Feb 17 08:52:45 1994
+	
+	The various fields (as described in "The Dir-Sync Protocol" section of this
+	document) are as follows:
+	
+	  Field              | Description
+	---------------------------------------------------------------------
+	  Highest SrvSync    | The current maximum SrvSync. This is the
+	                     | number for the last entry in the
+	                     | MSTTRANS.GLB file.
+	  Current Cycle      | The current Dir-Sync cycle number.
+	  PCM:xx/xx          | The requestor postoffice for this record.
+	  ReqSync            | The requestor's synchronization number.
+	  SrvSync            | The requestor's current server
+	                     | synchronization number.
+	  Last Cycle         | The last Dir-Sync cycle that requestor
+	                     | participated in.
+	
+	Example 2
+	
+	  listds admin -ppassword -r
+	
+	Sample output for the REQCONF.GLB file:
+	
+	  Microsoft Mail for the PC v3.2, ListDS v3.2.0.2
+	  (C) Microsoft Corp. 1993-1994. All rights reserved
+	
+	  Examining POLYNOMIAL/MONTGOMERY Requestor Configuration Record
+	
+	  Dir-Sync Server: POLYNOMIAL/MONTGOMERY
+	  ReqSync = 17, SrvSync = 80
+	
+	LISTQ.EXE
+	---------
+	
+	The LISTQ utility shows the Dir-Sync queue files. This utility will show any file
+	in the GLB directory that ends with TRANS, as well as the RESYNC.GLB file
+	(created with the IMPORT.EXE utility). View these files to see the effects of
+	adding users, to monitor the inclusion of names, and to pinpoint problems with
+	the queue files.
+	
+	Syntax
+	
+	  listq admin -p<password> -d<drive> -f<file> [-t] [-c] [-?]
+	
+	Parameter    | Description
+	---------------------------------------------------------------------
+	admin        | The Administrator account for the postoffice
+	            | (required).
+	-P<password> | The administrator's password (required).
+	-D<drive>    | The postoffice location. This can be a drive letter
+	            | or a full path to the database. The default value is
+	            | drive M.
+	-F<file>     | Dump the specified file.
+	-T           | Display the transaction date stamp.
+	-C           | Calculate and verify transaction checksum.
+	-?           | Display the Help screen.
+	
+	The -T option displays the date stamp for the entry. Dir-Sync uses the date stamp
+	to know when to purge transactions from the MSTTRANS.GLB file. Normally,
+	examining the date stamp is not helpful, but it is in LISTQ for compatibility
+	with earlier versions of the utility.
+	
+	The -C option calculates the checksum for each Dir-Sync transaction in the file
+	and compares it to the stored checksum. If they do not match, an error message
+	is displayed. This option can be helpful when you are looking for corrupt
+	transactions in the file, but mainly it is in LISTQ for compatibility with
+	earlier versions of the utility.
+	
+	Example
+	
+	  listq admin -ppassword -c -t -freqtrans
+	
+	Sample output:
+	
+	  Microsoft Mail for the PC v3.2, LISTQ v3.2.0.1
+	  (C) Microsoft Corp. 1993-1994. All rights reserved
+	
+	  Examining POLYNOMIAL/MONTGOMERY Dirsync transaction file: REQTRANS
+	
+	  Checking CRC...
+	
+	  CRC  Date stamp               Sync#  Transaction
+	  FB16 Thu Apr 07 12:13:52 1994 000001 R PCM:POLYNOMIAL/MONTGOMERY
+	  B4A2 Thu Apr 07 12:13:52 1994 000002 A able is he who knows his
+	  limit<tab>PCM:POLYNOMIAL/MONTGOMERY/able
+	  2FC1 Thu Apr 07 12:13:52 1994 000003 A apple
+	  <tab>PCM:POLYNOMIAL/MONTGOMERY/apple
+	  D2CD Thu Apr 07 12:13:52 1994 000004 A Paul
+	  <tab>PCM:POLYNOMIAL/MONTGOMERY/paul
+	  6D23 Thu Apr 07 12:13:52 1994 000005 A Bryan
+	  <tab>PCM:POLYNOMIAL/MONTGOMERY/bryan
+	  16F9 Thu Apr 07 12:13:52 1994 000006 A Mark
+	  <tab>PCM:POLYNOMIAL/MONTGOMERY/mark
+	
+	The various fields in the transaction queues are as follows:
+	
+	  Field          | Description
+	---------------------------------------------------------------------
+	  CRC            | The checksum value for the entry, as computed by
+	                 | LISTQ.
+	  Date stamp     | The date when the entry was placed in the file.
+	  Sync #         | The transaction's internal counter.
+	  Transaction    | The transaction. The format is that of an Import
+	                 | file, which is described in the "Import Utility"
+	                 | section of the Microsoft Mail "Administrator's
+	                 | Guide."
+	
+	TROUBLESHOOTING DIR-SYNC
+	------------------------
+	
+	Troubleshooting Dir-Sync begins with examining the DIRSYNC.LOG and DISPATCH.LOG
+	files. The DIRSYNC.LOG file is located on each postoffice and reflects the
+	status of Dir-Sync on that postoffice only. The DISPATCH.LOG file is located
+	only on the Dir-Sync server and reflects the status of all postoffices that have
+	sent updates to the server.
+	
+	In general, the log files can point you to any problems with Dir-Sync. Microsoft
+	Product Support Services will ask you to send them the log files, so it is best
+	to enable the DISPATCH.LOG file when you suspect a problem with Dir-Sync.
+	
+	  NOTE: Because Dir-Sync is time and network dependent, it is important that
+	  you do not assume that Dir-Sync has failed if a requestor misses a cycle.
+	  Because Dir-Sync is fault-tolerant, any updates that are missed will be
+	  recovered in the next Dir-Sync cycle. You should only take preventative
+	  action if a problem persists across several Dir-Sync cycles.
+	
+	Several problems can arise with Dir-Sync; the following list of common problems
+	is designed to help you quickly troubleshoot and fix the problem.
+	
+	PROBLEM 1: THE GAL ON A POSTOFFICE DOES NOT
+	HAVE ALL OTHER POSTOFFICE ADDRESS LISTS
+	-----------------------------------------------------------------------------------
+	
+	When updates are not being added to the GAL, you must troubleshoot the Dir-Sync
+	process to determine where the problem lies. Follow the troubleshooting
+	guidelines below to quickly isolate the problem. Be sure to stop after each
+	procedure to determine if the problem has been solved. There is no need to do
+	more work than necessary!
+	
+	1. Verify that no problems exist with the general Dir-Sync process
+	
+	  Open the Administrator accounts on the server postoffice and the requestor
+	  postoffices to see if any error messages have been sent to you. If an error
+	  message stating "requestor not registered" is present, verify that the server
+	  is registered with the requestor<7F> and vice versa. Other error messages may
+	  indicate a temporary condition that will be corrected by continuing with
+	  these<7F> troubleshooting steps.
+	
+	  Enable the log files for Dir-Sync if this is not done already. Examine the
+	  CENTRAL.LOG (on the Dir-Sync server only) and DIRSYNC.LOG files for the
+	  status of Dir-Sync on all the requestor postoffices. Verify that each
+	  postoffice is participating in Dir- Sync, that updates are being sent and
+	  received, and that the GAL is being rebuilt. If these steps are not occurring
+	  on a postoffice, verify that Dispatch can reach the postoffice and that the
+	  External Mail program or MTA can deliver mail to it from the server
+	  postoffice. Examine the DISPATCH.LOG file to verify that NSDA -RT and NSDA
+	  -RR complete successfully on the requestors, and that NSDA -S completes
+	  successfully on the server. Verify that the time for the requestor's NSDA -RT
+	  is before the server's NSDA -S, and that the requestor's NSDA -RR is after
+	  the server's NSDA -S. Be sure to allow time for the External Mail program or
+	  MTA to transfer the Dir-Sync messages between the requestors and the server.
+	
+	  Determine which postoffices do not have the full GAL:
+	
+	  a. If a single requestor postoffice does not have all other postoffice
+	     address lists, run the Administrator program on that postoffice and select
+	     Config, Dir-Sync, Requestor, Import to have the server send down the
+	     complete list of addresses. Note that this replaces all address lists on
+	     the requestor with the ones from the server, including gateway lists. If
+	     the local administrator has created a special Fax address list and the
+	     server has its own Fax list, and the requestor last asked for Fax updates,
+	     then the requestor's Fax list will be deleted and will be replaced by the
+	     server's list.
+	
+	  b. If the server does not have the complete address list, determine which
+	     requestor postoffice is not in the server's list. From the Administrator
+	     program on that requestor postoffice, select Config, Dir-Sync, Requestor,
+	     Export to send the address list to the server.
+	
+	  c. If the requestors don't have a single postoffice's address list, run the
+	     Administrator program on the missing postoffice and select Config,
+	     Dir-Sync, Requestor, Export to send the address list to the Dir-Sync
+	     server.
+	
+	  d. On all postoffices, delete these temporary files if they are present in
+	     the GLB directory: IGWTRANS.GLB, INMETRAN.GLB, IUSRTRAN.GLB, SRVUPDS.GLB,
+	     REQUPDS.GLB, and any SORT<xxxx> files, where <xxxx> is a
+	     number. Verify that SRVTRANS.GLB, GWTRANS.GLB, NMETRANS.GLB, and
+	     USRTRANS.GLB are zero bytes in length. If not, truncate these files by
+	     deleting the file(s) and running the following MS-DOS command
+	
+	  "type nul > <filename>" (without the quotation marks)
+	
+	     where <filename> is the name of the file to be truncated.
+	
+	Wait for Dispatch to run the Dir-Sync cycle. If this does not clear up the
+	problem, the sync numbers may be invalid.
+	
+	2. Reset the requestor sync numbers.
+	
+	  If step 1 is unsuccessful, one of the requestor postoffices may be out of
+	  sync. Examine the ReqSync numbers on the requestor by running LISTDS -R and
+	  LISTQ -FREQTRANS. If the ReqSync number in the REQCONF.GLB file is greater
+	  than the one in the REQTRANS.GLB file, reset the requestor's ReqSync numbers
+	  by performing the following steps:
+	
+	  a. To reset the sync numbers on the requestor postoffices, generate the
+	     RESYNC.GLB file. On the server postoffice, run the following command:
+	
+	  " import admin -p<password> -s -d<drive>" (without the quotation
+	  marks)
+	
+	     This will create a file in the server postoffice's GLB directory called
+	     RESYNC.GLB.
+	
+	  b. Copy this RESYNC.GLB file to the postoffices that do not have the full
+	     GAL, and delete it from the server postoffice (otherwise, Import will
+	     generate an error message when it tries to process the file on the
+	     server).
+	
+	  c. On the requestor postoffices that contain the RESYNC.GLB file, run the
+	     following commands:
+	
+	  " import admin -p<password> -q -y -d<drive>
+	  rebuild -f -d<drive>" (without the quotation marks)
+	
+	     Import looks for the RESYNC.GLB file and processes it before any other
+	     Dir-Sync mail. The RESYNC.GLB file contains new sync numbers for the
+	     requestor that reflect what the server has recorded in the SRVCONF.GLB
+	     file. This will clear any sync number conflicts.
+	
+	Wait for the Dispatch program to run the Dir-Sync cycle. The sync numbers should
+	be correct now and Dir-Sync will proceed on that postoffice. Occasionally, the
+	RESYNC.GLB file will not reset the sync numbers. If this occurs, create a
+	zero-length REQTRANS.GLB file by typing the following MS-DOS command in the GLB
+	directory:
+	
+	  " type nul > reqtrans.glb" (without the quotation marks)
+	
+	Regenerate the RESYNC.GLB file, move it to the requestor's GLB directory, and
+	wait an additional Dir-Sync cycle. If this step still does not correct the
+	problem, you may need to reset the Dir- Sync files.
+	
+	3. Reset the Dir-Sync files.
+	
+	  If the RESYNC.GLB file is unsuccessful in resetting the ReqSync numbers, use
+	  the LISTDS utility to reset the REQCONF.GLB file by following the steps
+	  below. These steps collectively are called a "local reset."
+	
+	  CAUTION: Do not perform this procedure on the Dir-Sync server--you will not be
+	  able to recover from the damage to the server's REQCONF.GLB file! If the
+	  Dir-Sync server (acting as a requestor) is not being propagated, proceed to
+	  the global reset section below.
+	
+	On the server:
+	  a. Delete the requestor record. From the Administrator program, select
+	     Config, Dir-Sync, Server, Requestors, Delete, and select the requestor
+	     postoffice.
+	
+	  b. Re-create the same requestor postoffice. This will reset that postoffice's
+	     record in the SRVCONF.GLB file.
+	
+	On the requestor:
+	  c. Reset the REQCONF.GLB file by running the following command:
+	
+	  " listds admin -p<password> -d<drive> -r -z" (without the
+	  quotation marks)
+	
+	  d. Verify that the REQCONF.GLB file is reset by running the following
+	     command:
+	
+	  " listds admin -p<password> -d<drive> -r" (without the quotation
+	  marks)
+	
+	     The ReqSync and SrvSync numbers should both be zero (0).
+	
+	  e. Reset the types of names propagated by Dir-Sync by selecting Config,
+	     Dir-Sync, Requestor, Types. This step is necessary only if gateways are
+	     installed and gateway names are included in Dir-Sync.
+	
+	     If you use an older version of the LISTDS utility, the Dir-Sync server's
+	     name will be reset as well. If this is so, reregister the Dir-Sync server
+	     by selecting Config, Dir-Sync, Requestor, Registration.
+	
+	  f. Select Config, Dir-Sync, Requestor, Export to reexport the address list.
+	     If confirmation is requested, respond Yes.
+	
+	  g. Wait for the Dispatch program to carry out the Dir-Sync cycle.
+	
+	If the server postoffice must be reset, or if Dir-Sync is not working for all
+	postoffices involved, a "global reset" may be needed. This should only be done
+	after the previous troubleshooting steps have been performed, and only after
+	consultation with Microsoft Product Support Services. This procedure entails a
+	substantial amount of work on the Dir-Sync administrator's part that may be
+	unnecessary if one of the above procedures fixes the problem.
+	
+	On the server postoffice:
+	
+	  a. From the Administrator program, select Config, Dir-Sync, Options, No, and
+	     reply Yes to the warning. This step deletes the SRVCONF.GLB and
+	     MSTTRANS.GLB files from the server. Once you complete this step, you must
+	     complete all the other steps below.
+	
+	  b. Reset the REQCONF.GLB file on the Dir-Sync server by running the following
+	     command:
+	
+	  " listds admin -p<password> -dm -r -z" (without the quotation marks)
+	
+	  c. Verify that the REQCONF.GLB file is reset properly by running the
+	     following command:
+	
+	  " listds admin -p<password> -dm -r" (without the quotation marks)
+	
+	     The ReqSync and SrvSync numbers should both be zero (0).
+	
+	  d. Enable the Dir-Sync server by running the Administrator program and
+	     selecting Config, Dir-Sync, Options, Yes.
+	
+	  e. Select Config, Dir-Sync, Server, Requestors, Create to redefine all the
+	     requestors.
+	
+	  f. Select Config, Dir-Sync, Requestor, Types to reset the types of names
+	     propagated by Dir-Sync. This step is only necessary if gateways are
+	     installed and gateway names are included in Dir- Sync.
+	
+	  g. Select Config, Dir-Sync, Requestor, Export to send the list to the other
+	     postoffices.
+	
+	On each requestor postoffice:
+	
+	  h. Reset the REQCONF.GLB file by running the following command:
+	
+	  " listds admin -p<password> -dm -r -z" (without the quotation marks)
+	
+	  i. Verify that the REQCONF.GLB file is reset properly by running the
+	     following command:
+	
+	  " listds admin -p<password> -dm -r" (without the quotation marks)
+	
+	     The ReqSync and SrvSync numbers should both be zero (0).
+	
+	  j. Select Config, Dir-Sync, Requestor, Types to reset the types of names
+	     propagated by Dir-Sync. This step is only necessary if gateways are
+	     installed and gateway names are included in Dir- Sync.
+	
+	     If you use an older version of the LISTDS utility, the Dir-Sync server's
+	     name will be reset as well. If this is so, reregister the Dir-Sync server
+	     by selecting Config, Dir-Sync, Requestor, Registration.
+	
+	  k. Select Config, Dir-Sync, Requestor, Export, to send the list to the other
+	     postoffices.
+	
+	Now all the Dir-Sync files will be reset. Wait for Dispatch to complete the
+	Dir-Sync cycle.
+	
+	PROBLEM 2: NAMES IN GAL WHEN
+	ADMINISTRATOR HAS SPECIFIED NOT TO INCLUDE THEM
+	----------------------------------------------------------------------------
+	
+	The most common cause of this problem is when External-Admin, Export is selected
+	from the Administrator program. This command places a complete address list,
+	regardless of any Dir-Sync settings, in the other postoffice's .USR file for
+	that postoffice. Dir-Sync reads this file as part of the T3 step and the names
+	will be in the GAL. To restore the GAL, go to the postoffice whose names are
+	incorrect, run the Administrator program and select Config, Dir-Sync, Requestor,
+	Export. After the next Dir-Sync cycle, the GAL will contain the correct names.
+	If this procedure is unsuccessful, perform a Config, Dir-Sync, Requestor, Import
+	on the requestors that have the bad address list.
+	
+	PROBLEM 3: FATAL ERROR 161: SERVER
+	CONFIGURATION BUSY ON A REQUESTOR POSTOFFICE:
+	
+	This error occurs when a server postoffice was turned into a requestor while
+	Dir-Sync mail was still waiting to be processed, or when a requestor sends
+	Dir-Sync updates to another requestor. Although the message states this is a
+	fatal error, the Dir-Sync process is fine.
+	
+	To clear the error from the requestor postoffice:
+	
+	1. Set the SYSTEM.MBG file to zero bytes by running the following command:
+	
+	  " type nul > m:\mbg\system.mbg" (without the quotation marks)
+	
+	2. Clear the SYSTEM.KEY file by running the DEBUG utility:
+	
+	  " debug m:\key\system.key" (without the quotation marks)
+	
+	  At the hyphen (-) prompt, type the following and press ENTER after each line:
+	
+	  " -F, 100,L 230, 0
+	  -W
+	  -Q " (without the quotation marks)
+	
+	This may not be sufficient to clear the problem if the requestor was once a
+	server. The PROCESS.GLB file may contain a deferred server process time. Check
+	the DIRSYNC.LOG file on the requestor postoffice for an error of "NSDA -S missed
+	its run window." If this occurs, reset the PROCESS.GLB file by running the
+	DSSCHED utility:
+	
+	  " dssched admin -p<password> -dm -xfile.txt" (without the quotation
+	  marks)
+	
+	Examine FILE.TXT and delete any T2 entries, then import the file back to the
+	postoffice:
+	
+	  " dssched admin -p<password> -dm -ifile.txt" (without the quotation
+	  marks)
+	
+	PROBLEM 4: ERROR 203: GAL REBUILD PROBLEM ACCESSING FILES:
+	
+	This error occurs when the GAL.NME or GALINDEX.GLB file is locked open and the
+	Rebuild utility attempts to replace it with the updated GAL. Unlock these files
+	and run the Rebuild utility to restore the GAL. This must be done as soon as the
+	error occurs; otherwise, one of the files may be replaced but not the other,
+	which will lead to misdirected mail.
+	
+	One cause of the GAL.NME file being held open is that the Windows client is
+	running with MSSFS.DLL version 4046 through 4061. These versions of MSSFS.DLL
+	resolved a problem with duplicate names in the Personal Address Book; however,
+	this fix resulted in the GAL.NME file being held open after sending mail to an
+	external user. Version 4062 of the DLL fixes this problem. To find the version
+	number, run MSD 2.0 or later and press ALT+F, Find File, and search the Windows
+	SYSTEM subdirectory for the MSSFS.DLL file. The version number is displayed as
+	3.2.0.<xxxx>.
+	
+	Because Mail can find older versions of the DLL and use them, this problem can
+	reoccur. To resolve the problem of MSSFS.DLL holding open the GAL.NME file, all
+	Windows clients must have MSSFS.DLL version 4062 placed in their Windows SYSTEM
+	subdirectory and all other versions of MSSFS.DLL must be deleted from the
+	workstation.
+	
+	PROBLEM 5: DIR-SYNC REPORTS "REQUESTOR NOT REGISTERED,"
+	YET THE REQUESTOR IS THE DIR-SYNC SERVER
+	------------------------------------------------------------------------------------------------
+	
+	This problem occurs when version 3.2 or earlier of the Administrator program
+	corrupts the SRVCONF.GLB file. This corruption occurs only on workstations with
+	certain network cards (notably, NE2000's and EtherExpress(TM) 16's). Another
+	symptom of this problem is when the SRVCONF.GLB file does not grow by 1K after
+	another requestor is added.
+	
+	Versions 3.2.2 and later of the Administrator program do not corrupt the file,
+	but they also do not fix the file. To add the server as a requestor, follow
+	these steps:
+	
+	1. Go to another postoffice, run the Administrator program, and make the
+	  postoffice a temporary Dir-Sync server by selecting Config, Dir-Sync,
+	  Options, Yes.
+	
+	2. Exit the Administrator program and go to the real Dir-Sync server. Copy the
+	  SRVCONF.GLB file from the real Dir-Sync server's GLB directory to the
+	  temporary Dir-Sync server's GLB directory.
+	
+	3. Run the Administrator program again and register the real Dir-Sync server
+	  with the temporary Dir-Sync server, by selecting Config, Dir-Sync, Requestor,
+	  Registration.
+	
+	4. Exit the Administrator program and copy the SRVCONF.GLB file from the
+	  temporary server to the real Dir-Sync server's GLB directory.
+	
+	5. Run the Administrator program again on the temporary server and make it a
+	  requestor, then register the real Dir-Sync server on it.
+	
+	6. Let Dir-Sync cycle.
+	
+	PROBLEM 6: ERRORS 157 AND 161 TOGETHER
+	--------------------------------------
+	
+	This error occurs only with certain network cards and network protocols, most
+	often with EtherExpress 16's with the Ethernet_II protocol. This problem relates
+	to corruption in the SRVCONF.GLB file caused by version 3.0.4 or earlier of the
+	SRVMAIN utility. To verify the problem, run the LISTDS utility:
+	
+	  " listds admin -p<password> -dm -s" (without the quotation marks)
+	
+	If the SRVCONF.GLB file is corrupt, LISTDS will alert you to the problem. At this
+	point, call Microsoft Product Support Services for assistance because the
+	circumstances of the corruption must be identified and eliminated before
+	Dir-Sync can be performed successfully.
+	
+	PROBLEM 7: ERROR 133 INVALID SERVER REQUEST
+	-------------------------------------------
+	
+	This error occurs when the server is running the NSDA -S process at time T2, but
+	there is a T3 ReqTx message waiting to be processed. The most likely cause of
+	this problem is an incomplete manual Dir-Sync cycle. The second most likely
+	cause is incorrect times for T1 and T2. To resolve the problem, you must reset
+	the SYSTEM.KEY and SYSTEM.MBG files as described in Problem 3 above.
+	
+	PROBLEM 8: ERROR 150
+	--------------------
+	
+	This problem can occur for several reasons: corrupt files, lack of disk space, or
+	improper access rights to the postoffice.
+	
+	To determine if corrupt files are the cause, ensure that the USRTRANS.GLB,
+	NMETRANS.GLB, and GWTRANS.GLB files in the GLB directory are zero (0) bytes in
+	length. If any are not zero bytes, run the following MS-DOS command to set them
+	to zero bytes:
+	
+	  " type nul > <filename>" (without the quotation marks)
+	
+	Ensure also that the IUSRTRAN.GLB, INMETRAN.GLB, IGWTRANS.GLB, REQUPDS.GLB, and
+	SRVUPDS.GLB files are not present in the GLB directory. These are temporary
+	files that should not normally exist if Dir-Sync is not active on that
+	postoffice.
+	
+	Space problems can be harder to find, especially on Novell(R) networks, because
+	the amount of free space is misleading. Novell saves files that are deleted and
+	this space is not reported as used, but REQMAIN can return the Error 150 when
+	the "true" amount of free space is too low. As a rule of thumb, Dir-Sync can use
+	up to three times the amount of disk space than what the update size is, for all
+	the temporary files that are created during the REQMAIN process. To recover
+	enough space for REQMAIN, run the PURGE command on the Novell server and
+	permanently remove all deleted files.
+	
+	Proper access rights for the account that Dispatch uses to access servers must
+	allow for Read, Write, Create, and Delete rights on all directories and
+	subdirectories of the postoffice. For Novell servers, the rights are RWCEM; for
+	UNIX, the permissions on the entire directory structure should be world, group,
+	and user rwx.
+	
+	PROBLEM 9: DIR-SYNC SERVER RESTORED FROM BACKUP COPY
+	----------------------------------------------------
+	
+	When the Dir-Sync server is restored from a backup copy that does not contain the
+	latest Dir-Sync cycle, problems arise because the SRVCONF.GLB file (where the
+	requestor's status is stored on the server) does not match the requestor's
+	stored information (in the REQCONF.GLB file). Worse still, the sync numbers in
+	SRVCONF.GLB are less than the sync numbers on the requestors, and the
+	MSTTRANS.GLB file does not have the updates that occurred later than the backup.
+	When SRVMAIN -R is processed, the current updates from the requestors are
+	processed successfully; however, when SRVMAIN -T occurs, the server attempts to
+	send updates numbered from SrvSync to Sync, and these updates don't exist in the
+	MSTTRANS.GLB file. Thus the server reports two error messages, Fatal 138 and
+	Fatal 139, that together report the missing sync number. Normally, a missing
+	sync number is not a problem because the requestor's SrvSync number is less than
+	the lowest position in the MSTTRANS.GLB file, and the server can send the
+	updates available. With the requestor's SrvSync number greater than the maximum
+	in the MSTTRANS.GLB file, the server cannot send any updates to the requestor,
+	and so the requestor receives no updates until its SrvSync number is less than
+	the maximum in the MSTTRANS.GLB file. If the disparity in numbers is large (for
+	example, the backup is an old one), address updates will not be received by the
+	requestor for a long time, and when they are received, there will be missing
+	transactions that were never sent.
+	
+	To update Dir-Sync with the new configuration, run the Administrator program and
+	select Config, Dir-Sync, Requestor, Export on each requestor postoffice. Let
+	Dir-Sync cycle to completion, then run the Import utility to generate a
+	RESYNC.GLB file by running the following MS-DOS command:
+	
+	  " import admin -p<password> -ddrive -s -y" (without the quotation
+	  marks)
+	
+	Then copy the RESYNC.GLB file from the Dir-Sync server's GLB directory to all the
+	requestors' GLB directories, delete the RESYNC.GLB file from the server's GLB
+	directory, and run Import to process the updates:
+	
+	  " import admin -p<password> -ddrive -q -y" (without the quotation
+	  marks)
+	
+	This will update the address lists and update the REQTRANS.GLB and REQCONF.GLB
+	Dir-Sync configuration files, and Dir-Sync will operate properly.
+	
+	APPENDIX: .INI FILE SETTINGS FOR DISPATCH AND EXTERNAL
+	------------------------------------------------------
+	
+	The DISPATCH.INI file can contain the following:
+	
+	[Dispatch]
+	; Global settings for all instances
+	DriveHomePO=m ; Home postoffice is assumed on drive M.
+	IdleTime=1800 ; Let dispatch cycle every 1800 seconds = 30 minutes.
+	LogSession    ; Keep track of Dir-Sync's progress.
+	
+	[Dispatch-Normal]
+	DrivesDirectPO=mp   ; Use drive connections M through P.
+	IdleProcess = "external /instancename=Normal"
+	
+	[Dispatch-Dynamic]
+	DrivesDirectPO=mn ; Get the two static connections.
+	; Use ONE of these options, not both!
+	DrivesDynamic ; Needs the Dynadmin table set up for the postoffices.
+	;
+	; or use
+	DrivesUNC=\\server3\po3\maildata ; Assumes postoffices are in the
+	MAILDATA directory. (Continues from previous line)
+	DrivesNovell=server4/volume:\maildata ; Example of a Novell dynamic
+	connection. (Continues from previous line)
+	IdleProcess="external /instancename=Dynamic"
+	
+	[Dispatch-Modem]
+	; Note that both Dispatches use the same instance.
+	DrivesDirectPO=mn
+	IdleProcess="external /instancename=Modem"
+	
+	[Dispatch-Indirect1]
+	; Note also that each postoffice is touched by only ONE copy of
+	Dispatch, not two. (Continues from previous line)
+	DrivesDirectPO=mn
+	IdleProcess="external /instancename=Indirect1"
+	
+	[Dispatch-Indirect2]
+	; Note the only difference between the indirect instances is which
+	instance of External is run. (Continues from previous line)
+	DrivesDirectPO=mn
+	IdleProcess="external /instancename=Indirect2"
+	
+	The EXTERNAL.INI file settings can contain the following:
+	
+	[External]
+	; Global settings for External
+	DriveHomePO=m    ; Assumes the home postoffice is on drive M.
+	MinKDiskFull=500 ; Stop delivering mail if space is less than 500K.
+	MinKDiskNotFull=1000 ; Start delivering mail when space is above 1000K.
+	(Continues from previous line)
+	;              These two are OPTIONAL.
+	LogSession          ; Log external.
+	LogReceive          ; Save received mail.
+	LogSent             ; Save sent mail.
+	
+	[External-Normal]
+	CommDisable         ; Don't need the modem.
+	DrivesDirectPO=mp   ; Set up for drives M through P.
+	
+	[External-Dynamic]
+	CommDisable         ; Don't need the modem.
+	DrivesDirectPO=mn   ; Only two static connections.
+	; Use ONE of the following dynamic connections:
+	DrivesDynamic=op    ; Needs the Dynadmin table set up first.
+	; or directory.
+	DrivesNovell=server4/volume:\maildata ; Example of a Novell dynamic
+	connection. (Continues from previous line)
+	
+	[External-Modem]
+	DrivesDirectPO=mn        ; Two drives needed in this example.<7F>
+	CommScript=scriptname    ; Script file for External.
+	AsyncCommPort=COM1  ; Assumes COM1.
+	; External needs to have Admin set up the parameters for connecting to
+	the other postoffices (Continues from previous line)
+	; before this instance will work!
+	
+	[External-Indirect1]
+	DrivesDirectPO=mp   ; Note that we need three drive letters here.
+	CommDisable         ; We aren't using the modem.
+	
+	[External-Indirect2]
+	DrivesDirectPO=mn   ; Only two drives needed.
+	CommDisable         ; We aren't using the modem.
+	
+	GLOSSARY
+	--------
+	
+	+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	| Directory synchronization (Dir-Sync) | The automatic process of transferring address
+	    lists from one postoffice to another
+	        postoffice.                                                                                                                                                                           | 
+	+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	| Dispatch                             | The program that controls the Dir-Sync
+	                   process.                                                                                                                                                                                                                    | 
+	+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	| External                             | The program that delivers mail between
+	                   postoffices.                                                                                                                                                                                                                | 
+	+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	| GAL                                  | See "Global Address List."                                                                                                                                                                                                                                                             | 
+	+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	| GAL.NME                              | The actual file for the GAL. This file is in
+	                   the NME subdirectory of the Mail database.                                                                                                                                                                            | 
+	+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	| GALINDEX.GLB                         | The index to the GAL. This file is meant to
+	                   decrease the time that the GAL is searched for
+	                   a name. It is located in the GLB directory of
+	                   the Mail database.                                                                | 
+	+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	| GALNETPO.GLB                         | The list of all external user addresses added
+	                   in the Dir-Sync process.                                                                                                                                                                                             | 
+	+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	| Global Address List (GAL)            | The single address list containing all
+	             addresses participating in Dir-Sync.                                                                                                                                                                                              | 
+	+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	| Import                               | A utility that allows for batch processing of
+	                   user and gateway names. It is used to
+	                   incorporate gateway names into the Dir-Sync
+	                   cycle.                                                                                     | 
+	+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	| Message transfer agent (MTA)         | The External Mail program or a gateway that
+	       delivers mail from one postoffice to another.                                                                                                                                                                                      | 
+	+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	| MSTTRANS.GLB                         | The master list of all addresses that are
+	                   participating in Dir-Sync. It is maintained by
+	                   the Dir-Sync server postoffice.                                                                                                                       | 
+	+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	| MTA                                  | See "message transfer agent."                                                                                                                                                                                                                                                          | 
+	+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	| NSDA                                 | Name Service Directory agent. It is spawned by
+	                   the Dispatch program to run the appropriate
+	                   step of the Dir-Sync cycle.                                                                                                                         | 
+	+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	| PROCESS.GLB                          | The storage file for the times defined in the
+	                   Administrator program for Dir-Sync to send,
+	                   process, and receive updates to the GAL.                                                                                                             | 
+	+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	| Rebuild                              | The utility that re-creates the GAL from the
+	                   local postoffice list, external postoffice
+	                   lists, and gateway name files.                                                                                                                         | 
+	+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	| REQCONF.GLB                          | The requestor configuration record file.                                                                                                                                                                                                                                               | 
+	+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	| REQMAIN                              | The primary requestor process. It creates and
+	                   receives mail messages that contain the
+	                   updates to the GAL.                                                                                                                                      | 
+	+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	| REQTRANS.GLB                         | The requestor transaction file. It contains a
+	                   record of the current updates that need to be
+	                   sent to the Dir-Sync server for incorporation
+	                   into the MSTTRANS.GLB file and the external
+	                   postoffice GALs. | 
+	+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	| Requestor                            | A postoffice that sends and receives Dir-Sync
+	                   requests but does not maintain the master Dir-
+	                   Sync files.                                                                                                                                       | 
+	+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	| Server                               | A postoffice that sends, receives, and
+	                   maintains the database of address lists.                                                                                                                                                                                    | 
+	+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	| SRVCONF.GLB                          | The server configuration record file.                                                                                                                                                                                                                                                  | 
+	+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	| SRVMAIN                              | The server process. It accepts the updates
+	                   from the requestors, maintains the
+	                   MSTTRANS.GLB file, and creates mail messages
+	                   containing updates to the requestors' GALs.                                                     | 
+	+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	| SRVTRANS.GLB                         | The server transaction file. It is a temporary
+	                   storage place on all requestors and is used in
+	                   the processing of updates from the Dir-Sync
+	                   server.                                                                          | 
+	+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	| SYSTEM.MBG                           | The mailbag that receives the Dir-Sync mail
+	                   messages.                                                                                                                                                                                                              | 
+	+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	
+	TO OBTAIN THIS DOCUMENT
+	-----------------------
+	
+	The following file is available for download from the Microsoft Download Center:
+	
+	  DownloadDownload Wa0725.exe now
+	  (http://download.microsoft.com/download/pcmail/Utility/23/WIN/EN-US/Wa0725.exe)
+	
+	For additional information about how to download Microsoft Support files, click
+	the following article number to view the article in the Microsoft Knowledge
+	Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft scanned this file for viruses. Microsoft used the most current
+	virus-detection software that was available on the date that the file was
+	posted. The file is stored on secure servers that prevent any unauthorized
+	changes to the file.
+	
+	
+	
+	Additional query words: 3.00 3.20 3.50 wga appnotes
+	
+	======================================================================
+	Keywords          : kbfile kbgraphxlinkcritical 
+	Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN300 kbMailPCN350
+	Version           : WINDOWS:3.0,3.2,3.5
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

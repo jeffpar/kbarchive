@@ -1,0 +1,101 @@
+---
+layout: page
+title: "Q133255: WFWFILES.TXT: Windows for Workgroups Update Files"
+permalink: kb/133/Q133255/
+---
+
+## Q133255: WFWFILES.TXT: Windows for Workgroups Update Files
+
+	Article: Q133255
+	Product(s): Microsoft Windows 3.x Retail Product
+	Version(s): 3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 13-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows for Workgroups version 3.11 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	WFWFILES.EXE is a self-extracting file that includes the same update files for
+	the Windows for Workgroups version 3.11 client as those found in the
+	\CLIENTS\WFW\UPDATE directory on the Windows NT Server version 3.51 CD-ROM.
+	
+	Download WFWFILES.EXE from the Microsoft Download Center on the following
+	services:
+	
+	- Microsoft's World Wide Web Site on the Internet
+	  On the www.microsoft.com home page, click the Support icon
+	  Click Knowledge Base, and select the appropriate product area
+	  Enter kbfile WFWFILES.EXE, and click GO!
+	  Open the article, and click the button to download the file
+	
+	- Internet (anonymous FTP)
+	  ftp ftp.microsoft.com
+	  Change to the SOFTLIB/MSFILES directory
+	  Get WFWFILES.EXE
+	
+	
+	MORE INFORMATION
+	================
+	
+	The following text duplicates the Microsoft Windows for Workgroups 3.11
+	WFWFILES.TXT file.
+	
+	
+	  Windows for Workgroups version 3.11
+	  Update Files
+	
+	Introduction
+	------------
+	
+	WFWFILES.EXE is a self-extracting file that includes the same update files for
+	the Windows for Workgroups version 3.11 client as those found in the
+	\CLIENTS\WFW\UPDATE directory on the Windows NT Server version 3.51 CD-ROM.
+	
+	NOTE: This update is necessary to log on to a Windows NT domain over routers when
+	using TCP/IP-32 for Windows for Workgroups version 3.11b.
+	
+	Installation Instructions
+	-------------------------
+	
+	1. Download the WFWFILES.EXE file to a formatted empty 3.5-inch floppy disk or a
+	  new directory on your hard drive.
+	
+	2. Change to that disk or directory and type the command, "WFWFILES" (without
+	  the quotation marks).
+	
+	3. Close Windows for Workgroups.
+	
+	4. From MS-DOS, copy the following files to your Windows root directory (this is
+	  C:\WINDOWS by default):
+	
+	       NET.EXE        462,650   05/26/95  10:57a
+	       NET.MSG         76,234   05/26/95  10:57a
+	
+	5. From MS-DOS, copy the following files to your Windows System directory (this
+	  is C:\WINDOWS\SYSTEM by default):
+	
+	       NDIS.386        27,846   05/26/95  10:57a
+	       NETAPI.DLL     109,120   05/26/95  10:57a
+	       NWNBLINK.386    37,964   05/26/95  10:57a
+	       VNETSUP.386     14,647   05/26/95  10:57a
+	       VREDIR.386      90,354   05/26/95  10:57a
+	       VSERVER.386    101,566   05/26/95  10:57a
+	
+	6. Restart Windows for Workgroups.
+	
+	Additional query words: 3.11 wfw wfwg readme.txt
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+	Version           : :3.11
+	
+	=============================================================================
+	

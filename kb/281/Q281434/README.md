@@ -1,0 +1,131 @@
+---
+layout: page
+title: "Q281434: How to Isolate a DLL Into a Separate Process Using MTS"
+permalink: kb/281/Q281434/
+---
+
+## Q281434: How to Isolate a DLL Into a Separate Process Using MTS
+
+	Article: Q281434
+	Product(s): Internet Information Server
+	Version(s): 4.0
+	Operating System(s): 
+	Keyword(s): kbDSupport
+	Last Modified: 29-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Server 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	When you troubleshoot with Internet Information Server (IIS), it is a common
+	practice to isolate Web applications by running them in a separate memory space,
+	which is referred to as Out-of-Process (OOP). However, if a component is used on
+	multiple ASP pages, and in multiple Web applications, it can be difficult to
+	isolate the module (DLL) that contains the object from the rest of the Web site.
+	Then you must isolate a COM DLL into a separate process to determine if it
+	contributes to problems that affect Web server performance. Microsoft
+	Transaction Server (MTS) 2.0, in the Microsoft Windows NT 4.0 Option Pack
+	(NTOP), provides the ability to isolate a COM DLL into a separate process.
+	
+	MORE INFORMATION
+	================
+	
+	The steps that follow provide a procedure that you can use to isolate a DLL.
+	After you isolate the DLL, any processes that use the isolated DLL make RPC
+	calls to the Mtx.exe process that contains the isolated DLL, rather than loading
+	the DLL within its own process space.
+	
+	HOW TO ISOLATE A COM DLL IN MICROSOFT WINDOWS NT 4.0
+	
+	1. On the Taskbar, click Start, point to Programs, point to Windows NT Option
+	  Pack, point to Microsoft Internet Information Server, and then click Internet
+	  Service Manager.
+	
+	2. Expand the Microsoft Transaction Server folder, expand Computers, expand My
+	  Computer, and then select the Packages Installed folder.
+	
+	3. Create a new Package. Right-click the Packages Installed, and then select New
+	  | Package.
+	
+	4. Click Create an empty package.
+	
+	5. Assign a Name to the package (that is, the same name as the COM DLL). Do not
+	  use any periods in the name.
+	
+	6. Click Next.
+	
+	7. Set the Security Context required by the DLL by:
+	
+	   - Selecting either the Interactive (Logged on) user.
+	
+	     -or-
+	
+	   - Specify the credentials to impersonate This user
+	.
+	
+	8. Click Next.
+	
+	9. Click Finish.
+	
+	10. Expand the new Package, right-click the Components folder, and then add the
+	  DLL to the new Package.
+	
+	11. Click New | Component.
+	
+	12. Click Install new component(s).
+	
+	13. Click Add files....
+	
+	14. Browse to the folder that contains the DLL to isolate.
+	
+	15. Select the DLL to isolate.
+	
+	16. Click Open.
+	
+	NOTE: The isolated DLL must be a COM DLL. Otherwise, this error message occurs:
+	
+	  "One or more files do not contain components or type libraries. These files
+	  can not be installed"
+	
+	17. Click Finish.
+	
+	18. Reset the IISADMIN service to ensure that the DLL was not in use by the
+	  InetInfo.exe process. To do this, from a command prompt type:
+	
+	" net stop iisadmin /y
+	net start w3svc " (without the quotation marks)
+	After the isolated DLL is invoked you should see your new component spinning.
+	
+	REFERENCES
+	----------
+	
+	For more information about configuring MTS Applications, see the Platform SDK Web
+	site at:
+	
+	  http://msdn.microsoft.com/library/psdk/mts20sp1/create_4hbn.htm
+	
+	For additional information about isolating a COM DLL in Windows 2000 using
+	Component Services, click the article number below to view the article in the
+	Microsoft Knowledge Base:
+	
+	  Q281335 How to Isolate a DLL Into a Separate Process By Using Component
+	  Services
+	
+	  Q290884 HOWTO: Determine Which Application Is Running Within a COM+ or
+	  Transaction Server Package
+	
+	Additional query words: iis 5
+	
+	======================================================================
+	Keywords          : kbDSupport 
+	Technology        : kbiisSearch kbiis400
+	Version           : :4.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

@@ -1,0 +1,205 @@
+---
+layout: page
+title: "Q181730: WD97: How to Use Mail Merge to Create a List Sorted by Category"
+permalink: kb/181/Q181730/
+---
+
+## Q181730: WD97: How to Use Mail Merge to Create a List Sorted by Category
+
+	Article: Q181730
+	Product(s): Word 97 for Windows
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbdta kbfield word97 kbmerge kblayout
+	Last Modified: 16-NOV-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	You can use the Mail Merge feature in Word to create a list of data sorted and
+	separated by a category. This article contains instructions and a sample you can
+	use to create such a list.
+	
+	MORE INFORMATION
+	================
+	
+	Setting Up the Data File
+	------------------------
+	
+	Sort your data file so that all records with the same value for the key field
+	(category, the field upon which you base the sort) are together, as shown in the
+	sample data file below. The following sample list is sorted by the CITY field
+	(CITY is the key field in this example):
+	
+	     CITY        EMPLOYEE      SALES
+	     Atlanta     Smith        $3,000
+	     Atlanta     Gates       $50,000
+	     Atlanta     Henderson   $10,000
+	     Houston     Jones        $8,000
+	     Houston     Kelley       $9,000
+	     Houston     Peterson         $0
+	
+	For additional information, click the article number below to view the article in
+	the Microsoft Knowledge Base:
+	
+	  Q142756 WD: How to Design and Set Up Mail Merge Data Sources
+	
+	Setting Up the Main Document
+	----------------------------
+	
+	NOTE: Paragraph marks in the following examples are designated as <B6>. To type a
+	paragraph mark, press ENTER. To show the paragraph marks in your Word document,
+	click the Show/Hide button on the Standard toolbar.
+	
+	To set up your main document as a catalog, follow these steps:
+	
+	1. From a new blank document, click Mail Merge on the Tools menu.
+	
+	2. In the Mail Merge Helper, click the Create button and then click Catalog.
+	
+	3. Click New Main Document when prompted.
+	
+	4. In the Mail Merge Helper, click Get Data and then click Open Data Source to
+	  attach the data file (use the sample file you created in the "Setting Up the
+	  Data File" section of this article.
+	
+	5. In the main document, insert the following fields to compare the contents of
+	  each key field record with the contents of the next key field record, to
+	  determine whether the key field contents change from one data record to the
+	  next.
+	
+	  NOTE: This example uses the sample data from the "Setting Up the Data File"
+	  section of this article. To insert the field braces, press CTRL+F9.
+	
+	  {If {MergeSeq} = "1" "{Mergefield City}<B6>
+	  " ""}{Set Place1 {Mergefield City} }<B6>
+	  {If {Place2} <> {Place1}"<B6>
+	  {Mergefield City}<B6>
+	<B6>
+	  {Mergefield Employee}{Mergefield Sales}" "{Mergefield
+	  Employee}{Mergefield Sales}"}{Set Place2 {Mergefield City} }<B6>
+	
+	  NOTE: To insert the {MergeSeq} field in the mail-merge main document, click
+	  Insert Word Field on the Mail Merge toolbar.
+	
+	  The fields laid out in this example produce a catalog listing on the same page
+	  as follows:
+	
+	  Atlanta
+	
+	  Smith $3,000
+	  Gates $50,000
+	  Henderson $10,000
+	
+	  Houston
+	
+	  Jones $8,000
+	  Kelley $9,000
+	  Peterson $0
+	
+	Forcing Each New Category to a New Page
+	---------------------------------------
+	
+	The key field in this example is {Mergefield City}. When the value of City
+	changes in the data file to a different city, then a new page is added to the
+	merged results and the merge is continued at the top of the next page. To insert
+	the field braces, press CTRL+F9.
+	
+	  {If {MergeSeq} = "1" "{Mergefield City}<B6>
+	  " ""}{Set Place1 {Mergefield City} }<B6>
+	  {If {Place2} <> {Place1}"
+	  ----------------------------Page Break--------------------------------
+	  {Mergefield City}<B6>
+	<B6>
+	  {Mergefield Employee}{Mergefield Sales}" "{Mergefield
+	  Employee}{Mergefield Sales}"}{Set Place2 {Mergefield City} }<B6>
+	
+	NOTE: A page break is inserted either by pressing CTRL+ENTER or by clicking Break
+	on the Insert menu, selecting Page Break, and then clicking OK.
+	
+	The fields laid out in this example produce a catalog listing on separate pages
+	as follows:
+	
+	  Atlanta
+	
+	  Smith $3,000
+	  Gates $50,000
+	  Henderson $10,000
+	  ----------------------------Page Break--------------------------------
+	  Houston
+	
+	  Jones $8,000
+	  Kelley $9,000
+	  Peterson $0
+	
+	Formatting the Key Field
+	------------------------
+	
+	The key field in this example is {Mergefield City}. To format the results of the
+	{Mergefield City} as all capital letters, you can use the formatting switch of
+	"\* Upper". To insert the field braces, press CTRL+F9.
+	
+	  {If {MergeSeq} = "1" "{Mergefield City \* Upper}<B6>
+	  " ""}{Set Place1 {Mergefield City} }<B6>
+	  {If {Place2} <> {Place1}"<B6>
+	  {Mergefield City \* Upper}<B6>
+	<B6>
+	  {Mergefield Employee}{Mergefield Sales}" "{Mergefield
+	  Employee}{Mergefield Sales}"}{Set Place2 {Mergefield City} }<B6>
+	
+	The fields laid out in this example produce a catalog listing on the same page
+	with the city in all capital letters as follows:
+	
+	  ATLANTA
+	
+	  Smith $3,000
+	  Gates $50,000
+	  Henderson $10,000
+	
+	  HOUSTON
+	
+	  Jones $8,000
+	  Kelley $9,000
+	  Peterson $0
+	
+	For more information about general field formatting switches, click "Contents and
+	Index" on the Help menu, click the Index tab in Microsoft Word Help, type the
+	following text
+	
+	  fields, formatting
+	
+	and then double-click the selected text to go to the "Help Topics: Microsoft
+	Word" topic. If you are unable to find the information you need, ask the Office
+	Assistant.
+	
+	NOTE: You can apply different formatting to the key field {Mergefield City} by
+	selecting the entire field (including the field braces ({}) and formatting the
+	field as you want. For example, to format the field, click Font on the Format
+	menu.
+	
+	REFERENCES
+	==========
+	
+	For additional information, click the article numbers below to view the articles
+	in the Microsoft Knowledge Base:
+	
+	  Q141922 WD97: How to Start a Mail Merge
+	
+	  Q194747 WD97: Mail Merge Tutorial and Help File Available
+	
+	Additional query words: invoice catalog phone directory conditional mailmerge howto how-to how to
+	
+	======================================================================
+	Keywords          : kbdta kbfield word97 kbmerge kblayout 
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : :
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

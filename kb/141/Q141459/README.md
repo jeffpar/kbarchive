@@ -1,0 +1,94 @@
+---
+layout: page
+title: "Q141459: PRB: Can't Export from Static Libraries w/_declspec(dllexport)"
+permalink: kb/141/Q141459/
+---
+
+## Q141459: PRB: Can't Export from Static Libraries w/_declspec(dllexport)
+
+	Article: Q141459
+	Product(s): Microsoft Programming Utilities
+	Version(s): 1.0,2.0,2.1,2.2,4.0,5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbcode kbtshoot kbVC200 kbVC210 kbVC220 kbVC400 kbVC500 kbVC600
+	Last Modified: 01-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The Microsoft Linker (LINK.EXE), version 1.0, used with:
+	   - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1, 2.2, 4.0, 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you build a DLL from component libraries (.lib files) that have functions
+	declared with _declspec(dllexport) to export them from the DLL, the functions
+	aren't exported or even included in the DLL. If you use the linker /warn option,
+	the linker will display the LNK4005 warning to indicate that no .obj files were
+	included from the static libraries.
+	
+	RESOLUTION
+	==========
+	
+	For the functions to be exported and included in the DLL, you must list the
+	functions to be exported in a .def file, or use the linker /export option when
+	building the DLL.
+	
+	NOTE: This is only necessary when the functions are contained in .lib files that
+	are used to build a DLL.
+	
+	The following sample code illustrates this scenario, and shows how you can make
+	sure the exported functions are included.
+	
+	Sample Code
+	-----------
+	
+	     /* Compile options needed: none
+	     */ 
+	
+	     /* EXPORT.C */ 
+	
+	     __declspec( dllexport ) void func()
+	     {
+	     }
+	
+	     @rem **** Buildit.bat
+	
+	     cl /MT /c export.c
+	
+	     @rem **** build static library
+	
+	     link /lib /out:static.lib export.obj
+	
+	     @rem **** build DLL
+	
+	     link /dll /machine:ix86 /warn /out:export.dll static.lib
+	
+	     @rem **** using the following link line instead of the previous one
+	     @rem **** solves the problem: have to force a reference to func so it is
+	          **** included
+	
+	     @rem link /dll /machine:ix86 /warn /export:func /out:export.dll
+	     static.lib
+	
+	     dumpbin /exports export.dll
+	
+	     rem **** DUMPBIN should have reported func as exported
+	
+	STATUS
+	======
+	
+	This behavior is by design.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbcode kbtshoot kbVC200 kbVC210 kbVC220 kbVC400 kbVC500 kbVC600 
+	Technology        : kbVCsearch kbAudDeveloper kbLINKSearch
+	Version           : :1.0,2.0,2.1,2.2,4.0,5.0,6.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

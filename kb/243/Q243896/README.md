@@ -1,0 +1,195 @@
+---
+layout: page
+title: "Q243896: Dual Boot Windows 98/Windows NT 4.0 with FAT16 or NTFS Volumes"
+permalink: kb/243/Q243896/
+---
+
+## Q243896: Dual Boot Windows 98/Windows NT 4.0 with FAT16 or NTFS Volumes
+
+	Article: Q243896
+	Product(s): Microsoft Windows NT
+	Version(s): WINDOWS:; winnt:4.0
+	Operating System(s): 
+	Keyword(s): kbenv win98
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 98 
+	- Microsoft Windows NT Server version 4.0 
+	- Microsoft Windows NT Workstation version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes how to dual boot between Windows NT 4.0 using an NTFS
+	partition of any size, while allowing Windows 98 to reside on a large volume
+	using FAT32.
+	
+	For Windows 98 to coexist with Windows NT 4.0 on a large NTFS partition, a small
+	FAT active partition must exist at the beginning of the drive. Currently, FAT16
+	using the 32-KB cluster size is the only common file system that both operating
+	systems can address from Power On Self-Test (POST). Therefore, making a FAT
+	drive C partition that is 2 GB in size or less, ensures the proper cluster size
+	is used.
+	
+	If the active partition is NTFS or large FAT16 using the 64-KB cluster size,
+	Windows 98 does not boot because these file systems are not accessible to the
+	boot code that Windows 98 uses. Likewise, if the active partition is FAT32,
+	Windows NT does not boot.
+	
+	
+	MORE INFORMATION
+	================
+	
+	You can use the following procedure to define the partitions you need using the
+	Fdisk tool. After you install Windows NT, you should avoid formatting logical
+	drives as NTFS within the extended partition. Although you can do this from Disk
+	Administrator, it is not supported because Fdisk cannot recognize NTFS logical
+	drives within an extended partition. You should note that if you make NTFS
+	logical drives, any future deletion of a FAT logical drive under Fdisk results
+	in the accidental deletion of the first NTFS logical drive instead. To prevent
+	the accidental deletion of a NTFS logical drive, you should create all logical
+	drives within Fdisk and delete them from Disk Administrator. You should then
+	format the RAW logical drives from within the operating system that you want to
+	have access to that logical drive.
+	
+	To prevent cumbersome workarounds to recover boot sectors and to ensure the
+	successful installation of Windows NT 4.0 to an NTFS partition while still being
+	able to dual boot with Windows 98, use the following steps:
+	
+	1. Install Windows NT 4.0 from the floppy disks or CD-ROM.
+	
+	2. In Windows NT Setup, create a primary drive C partition that is at least 300
+	  MB in size. Select FAT as the file system and proceed with a minimal
+	  installation of Windows NT (this installation of Windows NT will not exist
+	  later).
+	
+	  NOTE: If you are installing Windows NT to an IDE drive that is larger than 7.8
+	  GB, you need to install Windows NT 4.0 Service Pack 4 (SP4) or later after
+	  Setup is finished. This is because the updated Atapi.sys driver from SP4
+	  enables Windows NT to view large IDE drives correctly.
+	
+	3. Restart the computer using the Windows 98 startup disk. Run Fdisk and click
+	  Yes when you receive a prompt about Large Disk Support.
+	
+	4. Create an extended partition that is as large as you want. Be sure to leave
+	  room at the end of the disk for the Windows NT boot partition that you will
+	  create later from the temporary installation of Windows NT on drive C.
+	
+	  NOTE: When you create the extended partition, you must subtract the amount of
+	  space you want for Windows NT from the total space available for the extended
+	  partition. If Windows NT will ultimately reside on an NTFS partition, you can
+	  make the primary partition as large as you want. If you want to install
+	  Windows NT on a FAT16 partition, the partition must not exceed 2,048 MB in
+	  size. Exceeding 2,048 MB for a Windows NT FAT volume forces the use of 64-KB
+	  clusters, which is unsupported when dual booting Windows NT with Windows 95
+	  and Windows 98 (and causes Windows 95/98 Setup to be unsuccessful). For this
+	  reason, you should use NTFS when volumes greater than 2 GB are needed for
+	  Windows NT.
+	
+	5. Fdisk prompts you to create a logical drive. You should make the logical
+	  drive for the Windows 98 installation the full length of the extended
+	  partition. If you intend on making more than one logical drive, the first
+	  drive should be your Windows 98 installation partition.
+	
+	
+	6. After your logical drive is created, quit Fdisk.
+	
+	7. Restart the computer using the Windows 98 Startup disk and select CD-ROM
+	  support.
+	
+	8. Change to the CD-ROM drive where the Windows 98 CD-ROM is located and go to
+	  the Win98 folder. Type "format <driveletter>" (without the quotation
+	  marks) (where <driveletter> is the logical drive on which you want to
+	  install Windows 98.
+	
+	9. When format finishes, reboot into Windows NT 4.0 and run Disk Administrator.
+	
+	10. At the end of the disk behind the extended partition, right-click in the
+	  free space and click Create to make a primary partition. This partition is
+	  the permanent location of Windows NT 4.0. Click "Commit the Changes Now" and
+	  format the partition as appropriate.
+	
+	11. Restart the computer using the Windows 98 Startup disk and select CD-ROM
+	  support.
+	
+	12. Change to the CD-ROM drive where the Windows 98 CD-ROM is located and go to
+	  the Win98 folder. Type "format c: /s" (without the quotation marks).
+	
+	  NOTE: This action formats over the current installation of Windows NT 4.0,
+	  and creates the Bootsect.dos and Boot.ini entries for Windows when Windows
+	  NT 4.0 is installed to the new primary partition in the next step.
+	
+	13. Run Windows NT 4.0 Setup from the floppy disks or CD-ROM.
+	
+	  NOTE: If you are installing Windows NT 4.0 to a large IDE drive and the
+	  partition on which you are installing Windows NT resides on or past the
+	  first 7.8 GB of the hard disk, you should obtain the Atapi.exe file and
+	  follow the steps outlined in the following Microsoft Knowledge Base article
+	  before you install Windows NT:
+	
+	  Q197667 Installing Windows NT on a Large IDE Hard Disk
+	
+	  You can download the Atapi.exe file from the following Microsoft Web site:
+	
+	  ftp://ftp.microsoft.com/bussys/winnt/winnt-unsup-ed/fixes/nt40/atapi/atapi.exe
+	
+	14. In the text-mode portion of Windows NT Setup you can see your partitions.
+	  Highlight the last partition and press ENTER to continue the installation.
+	  This is your production installation of Windows NT.
+	
+	15. When you are prompted, click Leave Current File System Intact.
+	
+	  NOTE: If the boot partition on which you are installing Windows NT 4.0 is
+	  beyond the reach of INT13 BIOS calls, the controller driver is copied to the
+	  root of the C drive and named Ntbootdd.sys. This means the ARC path in the
+	  Boot.ini file uses SCSI syntax to address the drive. Using SCSI syntax to
+	  address the drive at POST can cause a 20-30 second delay after the Boot.ini
+	  (where the screen is black).
+	
+	16. Finish installing Windows NT 4.0. Restart the computer using the Windows 98
+	  Startup disk and select CD-ROM support.
+	
+	17. Change to the CD-ROM drive where the Windows 98 CD-ROM is located. Go to the
+	  Win98 folder and type "setup" (without the quotation marks) from the same
+	  location.
+	
+	
+	18. During Setup, do not install to the C:\Windows folder. Click Other and
+	  install to <driveletter>:\Windows (where <driveletter> is the
+	  logical drive on which you want to install Windows 98).
+	
+	After Windows 98 Setup is finished, both operating systems boot normally and the
+	Boot.ini file is updated to show Windows 98 as a valid choice.
+	
+	REFERENCES
+	==========
+	
+	For additional information about partition types and Windows NT Setup, click the
+	article numbers below to view the articles in the Microsoft Knowledge Base:
+	
+	  Q224526 Windows NT 4.0 Supports Maximum of 7.8-GB System Partition
+	
+	  Q197667 Installing Windows NT on a Large IDE Hard Disk
+	
+	  Q119497 Boot Partition Created During Setup Limited to 4 Gigabytes
+	
+	  Q127851 Problems Access FAT16 Drives Larger Than 2 GB
+	
+	  Q151414 Windows 95 Partition Types Not Recognized by Windows NT
+	
+	  Q179144 Cannot View NTFS Logical Drive After Using Fdisk
+	
+	Additional query words: winnt NT4 win9x dual-boot how to fail fails
+	
+	======================================================================
+	Keywords          : kbenv win98 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWin98search kbWin98
+	Version           : WINDOWS:; winnt:4.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

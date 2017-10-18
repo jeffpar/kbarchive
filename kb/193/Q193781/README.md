@@ -1,0 +1,84 @@
+---
+layout: page
+title: "Q193781: Cache Manager May Cause Data Corruption"
+permalink: kb/193/Q193781/
+---
+
+## Q193781: Cache Manager May Cause Data Corruption
+
+	Article: Q193781
+	Product(s): Microsoft Windows NT
+	Version(s): WinNT:4.0
+	Operating System(s): 
+	Keyword(s): kbWinNT400sp4fix
+	Last Modified: 10-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 4.0 
+	- Microsoft Windows NT Workstation version 4.0 
+	- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+	- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Data corruption can happen on a file located on a server when using test
+	applications that do the following:
+	
+	- Test Application One:
+	
+	  Service running under a user account that has no access to the file server
+	  directory where the file is located.
+	
+	  Try to obtain file attributes of a file located on the file server in an
+	  infinite loop.
+	
+	- Test Application Two:
+	
+	  Application that has rights to the file in the directory that Test Application
+	  One is attempting to use.
+	
+	  Open/creates file, writes 20 bytes of data, closes file, wait 500 ms, open
+	  file, read data, close file, compare Data, wait 500 ms, and start the loop
+	  again.
+	
+	This application will soon detect data corruption in application data files
+	during the compare operation of the loop.
+	
+	CAUSE
+	=====
+	
+	A zero length condition in the cache manager was not accounted for and caused
+	the data to be flushed.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, obtain the latest service pack for Windows NT 4.0 or
+	Windows NT Server 4.0, Terminal Server Edition. For additional information,
+	please see the following article in the Microsoft Knowledge Base:
+	
+	  Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+	
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Windows NT 4.0 and Windows NT
+	Server 4.0, Terminal Server Edition. This problem was first corrected in Windows
+	NT 4.0 Service Pack 4.0 and Windows NT Server 4.0, Terminal Server Edition
+	Service Pack 4.
+	======================================================================
+	Keywords          : kbWinNT400sp4fix 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch
+	Version           : WinNT:4.0
+	Hardware          : ALPHA x86
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

@@ -1,0 +1,103 @@
+---
+layout: page
+title: "Q312987: Write Operations Slow Using Windows Services for UNIX 2.2"
+permalink: kb/312/Q312987/
+---
+
+## Q312987: Write Operations Slow Using Windows Services for UNIX 2.2
+
+	Article: Q312987
+	Product(s): Microsoft Windows NT
+	Version(s): 2.2 OEM Only
+	Operating System(s): 
+	Keyword(s): kbenv w2000sfu
+	Last Modified: 11-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows Services for UNIX, version 2.2 OEM Only 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+	
+	  Q256986 Description of the Microsoft Windows Registry
+	
+	SYMPTOMS
+	========
+	
+	Some write operations may seem slow when you use Windows Services for UNIX 2.2.
+	
+	RESOLUTION
+	==========
+	
+	WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+	that may require you to reinstall your operating system. Microsoft cannot
+	guarantee that you can solve problems that result from using Registry Editor
+	incorrectly. Use Registry Editor at your own risk.
+	
+	A supported fix is now available from Microsoft, but it is only intended to
+	correct the problem described in this article and should be applied only to
+	systems experiencing this specific problem. This fix may receive additional
+	testing at a later time, to further ensure product quality. Therefore, if you
+	are not severely affected by this problem, Microsoft recommends that you wait
+	for the next Windows Services for UNIX service pack that contains this fix.
+	
+	To resolve this problem immediately, contact Microsoft Product Support Services
+	to obtain the fix. For a complete list of Microsoft Product Support Services
+	phone numbers and information about support costs, please go to the following
+	address on the World Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	NOTE: In special cases, charges that are normally incurred for support calls may
+	be canceled, if a Microsoft Support Professional determines that a specific
+	update will resolve your problem. Normal support costs will apply to additional
+	support questions and issues that do not qualify for the specific update in
+	question.
+	
+	The English-language version of this fix should have the following file
+	attributes or later:
+	
+	  Date         Time   Version        Size     File name     
+	  ------------------------------------------------------
+	  03-Dec-2001  16:16  5.3000.2073.6  265,824  Nfssvr.sys
+	
+	
+	
+	To add the WriteHandleCacheSizePerVolume value to the registry:
+	
+	1. Click Start, click Run, type "regedit32" (without the quotation marks) in the
+	  Open box, and then press ENTER.
+	
+	2. Locate and click the following registry key:
+	
+	  HKEY_LOCAL_MACHINE\CurrentControlSet\Services\Nfssvr\Parameters
+	
+	3. Click Add Value on the Edit menu, and then add the following registry value:
+	
+	  Value name: WriteHandleCacheSizePerVolume
+	  Data type: REG_DWORD
+	  Radix: Decimal
+	  Value: The number of write cache handles to be cached per volume. The default
+	  value is 64.
+	
+	4. Quit Registry Editor.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products that are
+	listed at the beginning of this article.
+	
+	Additional query words: sfu
+	
+	======================================================================
+	Keywords          : kbenv w2000sfu 
+	Technology        : kbWinServiceUNIXSearch kbWinServiceUNIX220OEM
+	Version           : :2.2 OEM Only
+	Hardware          : ALPHA x86
+	Issue type        : kbprb
+	
+	=============================================================================
+	

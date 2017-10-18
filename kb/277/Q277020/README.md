@@ -1,0 +1,64 @@
+---
+layout: page
+title: "Q277020: Encarta: How to Order Headset Replacement Parts"
+permalink: kb/277/Q277020/
+---
+
+## Q277020: Encarta: How to Order Headset Replacement Parts
+
+	Article: Q277020
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kb3rdparty kbhw kbimu kbHardware
+	Last Modified: 25-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Encarta Language Learning French 
+	- Microsoft Encarta Language Learning French Deluxe 
+	- Microsoft Encarta Language Learning Spanish 
+	- Microsoft Encarta Language Learning Spanish Deluxe 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The programs listed at the beginning of this article include a headset that is
+	manufactured by Andrea Electronics.
+	
+	If you have an issue with the headset, please contact Andrea Electronics at the
+	following phone number to obtain a replacement headset or additional parts:
+	
+	  (800) 707-5779
+	
+	MORE INFORMATION
+	================
+	
+	Common issues include a broken earpiece or a broken microphone.
+	
+	In addition, your sound card may not provide the required voltage for the headset
+	to work.
+	
+	Microsoft does not stock replacement parts for the headset.
+	
+	The model number of the microphone is NC-110.
+	
+	The model number of the power adapter that you need if your sound card does not
+	provide the microphone with 1.25 volts is the ALPS-100.
+	
+	The third-party products discussed in this article are manufactured by vendors
+	independent of Microsoft; we make no warranty, implied or otherwise, regarding
+	these products' performance or reliability.
+	
+	Additional query words: multi multi-media media mm ellf ells headphone mike
+	
+	======================================================================
+	Keywords          : kb3rdparty kbhw kbimu kbHardware 
+	Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbHLangSpanish kbHLangFrench
+	Version           : :
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

@@ -1,0 +1,208 @@
+---
+layout: page
+title: "Q248788: Files to Patch FoxPro 2.6 to FoxPro 2.6a"
+permalink: kb/248/Q248788/
+---
+
+## Q248788: Files to Patch FoxPro 2.6 to FoxPro 2.6a
+
+	Article: Q248788
+	Product(s): Microsoft FoxPro
+	Version(s): MS-DOS:2.6; WINDOWS:2.6
+	Operating System(s): 
+	Keyword(s): kbfile kbpatch kbGrpDSFox kbDSupport
+	Last Modified: 10-NOV-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft FoxPro for Windows, version 2.6 
+	- Microsoft FoxPro for MS-DOS, version 2.6 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article contains a series of patch files that are used to upgrade FoxPro
+	2.6 for Windows and FoxPro 2.6 for MS-DOS to version 2.6a. The files in this
+	article are divided into three groups.
+	
+	- FoxPro 2.6 for MS-DOS patch files
+	- FoxPro 2.6 for Windows patch files
+	- Patch files common to both the Windows and MS-DOS versions
+	
+	MORE INFORMATION
+	================
+	
+	Before downloading any of the specific patch files, please download the
+	P26Readme.exe that contains a file named Readme.1st. This file contains
+	instructions on how to determine what patch files you need and how to apply
+	them.
+	
+	The following files are available for download from the Microsoft Download
+	Center:
+	
+	  P26Readme.exe
+	  (http://download.microsoft.com/download/fox26win/Patch/1/WIN98/EN-US/P26readme.exe)
+	
+	Release Date: Oct-25-1999
+	
+	NOTE: For users upgrading so that the patch in the following Microsoft Knowledge
+	Base article can be applied:
+	
+	  Q240982 PATCH: Patch_26.exe Fixes Divide by Zero Error on Fast Computers
+	
+	  Download Fpw.exe if you have the standard version of FoxPro 2.6 for Windows;
+	  download Fpw_dk.exe if you need to upgrade both the FoxPro 2.6 for Windows
+	  development environment and the run-time support library, Foxw2600.esl.
+	  Follow the instructions in the Readme.1st and Readme.txt files.
+	
+	Patch FoxPro 2.6 for MS-DOS
+	---------------------------
+	
+	Files needed to patch FoxPro 2.6 for MS-DOS to version 2.6a:
+	
+	  Fpd.exe (://download.microsoft.com/download
+	  /fox26dos/patch7/1/DOS/EN-US/Fpd.exe)
+	
+	Release Date: Oct-26-1999
+	
+	  Fpd_dk.exe
+	  (http://download.microsoft.com/download/fox26dos/AppNote/1/DOS/EN-US/fpd_dk.exe)
+	
+	Release Date: Oct-26-1999
+	
+	  Dbhlpd.exe
+	  (http://download.microsoft.com/download/fox26win/Patch/4/WIN98/EN-US/dbhlpd.exe)
+	
+	Release Date: Oct-26-1999
+	
+	Patch FoxPro 2.6 for Windows
+	----------------------------
+	
+	Files needed to patch FoxPro 2.6 for Windows to version 2.6a:
+	
+	  Fpw.exe
+	  (http://download.microsoft.com/download/fox26dos/patch4/1/DOS/EN-US/Fpw.exe)
+	
+	Release Date: Oct-26-1999
+	
+	  Fpw_dk.exe
+	  (http://download.microsoft.com/download/fox26dos/patch5/1/DOS/EN-US/fpw_dk.exe)
+	
+	Release Date: Oct-26-1999
+	
+	  Fpwhlp.exe
+	  (http://download.microsoft.com/download/fox26dos/patch6/1/DOS/EN-US/fpwhlp.exe)
+	
+	Release Date: Oct-26-1999
+	
+	  Dbhlpw.exe
+	  (http://download.microsoft.com/download/fox26win/Patch/5/WIN98/EN-US/dbhlpw.exe)
+	
+	Release Date: Oct-26-1999
+	
+	Patch Files Common to Both MS-DOS and Windows
+	---------------------------------------------
+	
+	Patch files common to both the MS-DOS and Windows versions of FoxPro 2.6:
+	
+	  Chg26a.txt
+	  (http://download.microsoft.com/download/fox26win/Patch/2/WIN98/EN-US/chg26a.txt)
+	
+	Release Date: Oct-26-1999
+	
+	  Apps.exe
+	  (http://download.microsoft.com/download/fox26dos/Patch/2.6a/DOS/EN-US/Apps.exe)
+	
+	Release Date: Oct-26-1999
+	
+	  Ck.exe
+	  (http://download.microsoft.com/download/fox26win/Patch/3/WIN98/EN-US/ck.exe)
+	
+	Release Date: Oct-26-1999
+	
+	  FoxApp.exe
+	  (http://download.microsoft.com/download/fox26dos/patch2/1/DOS/EN-US/foxapp.exe)
+	
+	Release Date: Oct-26-1999
+	
+	  Genpd.exe
+	  (http://download.microsoft.com/download/fox26dos/Patch/1/DOS/EN-US/Genpd.exe)
+	
+	Release Date: Oct-26-1999
+	
+	  Gens.exe
+	  (http://download.microsoft.com/download/fox26dos/patch1/1/DOS/EN-US/Gens.exe)
+	
+	Release Date: Oct-26-1999
+	
+	  Wizcat.exe
+	  (http://download.microsoft.com/download/fox26dos/patch14/1/DOS/EN-US/wizcat.exe)
+	
+	Release Date: Oct-26-1999
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. Once posted, the file is housed on secure
+	servers that prevent any unauthorized changes to the file.
+	
+	The patch files are as follows:
+	
+	+------------------------------------------------------------------------------------------------------------------------------+
+	| File                                                     | Description                                                       | 
+	+------------------------------------------------------------------------------------------------------------------------------+
+	| Readme.1st                                               | *Explains how to patch FoxPro from 2.6 to 2.6a*                   | 
+	+------------------------------------------------------------------------------------------------------------------------------+
+	| FoxPro for MS-DOS Patch Files                            |                                                                   | 
+	+------------------------------------------------------------------------------------------------------------------------------+
+	| Fpd.exe                                                  | Used to patch FPD (see Readme.1st)                                | 
+	+------------------------------------------------------------------------------------------------------------------------------+
+	| Fpd_dk.exe                                               | Used to patch FPD & DK (see Readme.1st)                           | 
+	+------------------------------------------------------------------------------------------------------------------------------+
+	| fw0844.exe                                               | FoxDoc default template files.                                    | 
+	+------------------------------------------------------------------------------------------------------------------------------+
+	| Dbhlpd.exe                                               | Used to replace the .dbf help file for FPD (see Readme.1st)       | 
+	+------------------------------------------------------------------------------------------------------------------------------+
+	| FoxPro for Windows Patch Files                           |                                                                   | 
+	+------------------------------------------------------------------------------------------------------------------------------+
+	| Fpw.exe                                                  | Used to patch FPW (see Readme.1st)                                | 
+	+------------------------------------------------------------------------------------------------------------------------------+
+	| Fpw_dk.exe                                               | Used to patch FPW & DK (see Readme.1st)                           | 
+	+------------------------------------------------------------------------------------------------------------------------------+
+	| Fpwhlp.exe                                               | Used to replace the FoxPro for Windows help file (see Readme.1st) | 
+	+------------------------------------------------------------------------------------------------------------------------------+
+	| Dbhlpw.exe                                               | Used to replace the .dbf help file for FPW (see Readme.1st)       | 
+	+------------------------------------------------------------------------------------------------------------------------------+
+	| Patch Files Common to Both FoxPro for Windows and MS-DOS |                                                                   | 
+	+------------------------------------------------------------------------------------------------------------------------------+
+	| Chg26a.txt                                               | Change log for FoxPro 2.6a                                        | 
+	+------------------------------------------------------------------------------------------------------------------------------+
+	| Apps.exe                                                 | Used to replace certain .app files (see Readme.1st)               | 
+	+------------------------------------------------------------------------------------------------------------------------------+
+	| Ck.exe                                                   | Used to patch the CK (see Readme.1st)                             | 
+	+------------------------------------------------------------------------------------------------------------------------------+
+	| Foxapp.exe                                               | Used to replace FoxApp (see Readme.1st)                           | 
+	+------------------------------------------------------------------------------------------------------------------------------+
+	| Genpd.exe                                                | Used to replace printer driver files (see Readme.1st)             | 
+	+------------------------------------------------------------------------------------------------------------------------------+
+	| Gens.exe                                                 | Used to replace GEN* files (see Readme.1st)                       | 
+	+------------------------------------------------------------------------------------------------------------------------------+
+	| Wizcat.exe                                               | Used to replace the Catalog Manager and Wizards (see Readme.1st)  | 
+	+------------------------------------------------------------------------------------------------------------------------------+
+	
+	
+	Additional query words: kbDSE fpd fpd_dk dbhlpd fpw fpw_dk fpwhlp fpwhlp dbhlpw chg26a apps ck fowapp genpd gens wizcat fw0844 p26readme
+	
+	======================================================================
+	Keywords          : kbfile kbpatch kbGrpDSFox kbDSupport 
+	Technology        : kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro260DOS kbFoxPro260
+	Version           : MS-DOS:2.6; WINDOWS:2.6
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

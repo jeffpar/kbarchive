@@ -1,0 +1,80 @@
+---
+layout: page
+title: "Q137610: SMS: Senders Do Not Check for Sufficient Disk Space"
+permalink: kb/137/Q137610/
+---
+
+## Q137610: SMS: Senders Do Not Check for Sufficient Disk Space
+
+	Article: Q137610
+	Product(s): Microsoft Systems Management Server
+	Version(s): winnt:1.0,1.1,1.2
+	Operating System(s): 
+	Keyword(s): kbnetwork smssenders kbSMSSender
+	Last Modified: 31-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	The Systems Management Server senders do not check for free disk space before
+	sending a package. As a result, if the destination site does not have a
+	sufficient amount of space to store the package, the job is retried and
+	eventually fails. If you are using the LAN sender, Win32 error 112 is logged in
+	the Lansend.log file with the following text:
+	
+	  There is not enough space on the disk.
+	
+	If you are using the SNA Batch sender, an entry similar to the following is
+	logged in the Snabatch.log file:
+	
+	  ~Attempt to write 65523 bytes to 1_06XCEN.PCK
+	  ~Wrote 65523 bytes to 1_06XCEN.PCK
+	  ~Attempt to write 65523 bytes to 1_06XCEN.PCK
+	  ~Closing remote file
+	  Error, trying to write beyond the end of the file.~
+	  ~Deleting remote file 1_06XCEN.PCK
+	  ~We have 0 active connections
+	
+	Other senders will have similar errors.
+	
+	WORKAROUND
+	==========
+	
+	To work around this problem, ensure that the destination site has enough space
+	for the package. When determining how much disk space is needed for a package,
+	take into account the amount of space required for the despooler to decompress
+	the package after the sender has completed sending. If the job is presently in a
+	retrying state, it should complete when sufficient space is made available. If
+	the job has failed, delete it and create a new job.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Systems Management Server
+	version 1.0, 1.1, and 1.2.
+	
+	MORE INFORMATION
+	================
+	
+	For more information on using SMSTRACE to view Systems Management Server log
+	files, see Appendix J of the Systems Management Server "Administrator's Guide"
+	or query on SMSTRACE in the Microsoft Knowledge Base.
+	
+	Additional query words: prodsms secondary site installation upgrade bootstrap child
+	
+	======================================================================
+	Keywords          : kbnetwork smssenders kbSMSSender 
+	Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+	Version           : winnt:1.0,1.1,1.2
+	Issue type        : kbbug
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

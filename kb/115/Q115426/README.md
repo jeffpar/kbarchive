@@ -1,0 +1,90 @@
+---
+layout: page
+title: "Q115426: Indexing on a Character and Numeric Field Together"
+permalink: kb/115/Q115426/
+---
+
+## Q115426: Indexing on a Character and Numeric Field Together
+
+	Article: Q115426
+	Product(s): Microsoft FoxPro
+	Version(s): MACINTOSH:2.5x,2.6a; MS-DOS:2.0,2.5x,2.6x; WINDOWS:2.5x,2.6x,3.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 10-FEB-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 3.0 
+	- Microsoft FoxPro for Windows, versions 2.5x, 2.6x 
+	- Microsoft FoxPro for MS-DOS, versions 2.0, 2.5x, 2.6x 
+	- Microsoft FoxPro for Macintosh, versions 2.5x, 2.6a 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	It is sometimes desirable to create an index on combined fields. Doing this
+	becomes more difficult when one of the fields is numeric, and may contain
+	negative numbers. The following example shows how this may be accomplished.
+	
+	MORE INFORMATION
+	================
+	
+	NOTE: This can also be accomplished by using the SQL SELECT command with its
+	ORDER clause.
+	
+	The following table is in physical order. The CHAR field is a character field
+	with a length of 10, and the NUM field is a numeric field with a width of 5.
+	
+	  CHAR                         NUM
+	  ---------------------------------
+	
+	  Apple                        -299
+	  Apple                        -298
+	  Zebra                        3900
+	  Yankee                         -9
+	  Octopus                       237
+	  Frank                        -222
+	  Yankee                          1
+	  Zebra                       -4000
+	  Apple                        2200
+	  Apple  a                     2200
+	
+	The difficulty here is how to index on a string negative number. In a
+	character-based ascending index scheme, -004 doesn't come before -003. FoxPro
+	orders the data using the ASCII equivalents. To have the numbers appear in
+	ascending order, the numeric value must first be added to the largest possible
+	value for that field (99999 in this example) and then converted to a string. For
+	example, the following INDEX command creates a compound index named COMBO that
+	is in ascending order when the numeric field is five spaces wide:
+	
+	     INDEX ON Char+STR(99999+Num) TAG Combo
+	
+	The following table contains the same data as above. However, it is now in
+	ascending order based on the COMBO index:
+	
+	  CHAR                         NUM
+	  ---------------------------------
+	
+	  Apple                        -299
+	  Apple                        -298
+	  Apple                        2200
+	  Apple  a                     2200
+	  Frank                        -222
+	  Octopus                       237
+	  Yankee                         -9
+	  Yankee                          1
+	  Zebra                       -4000
+	  Zebra                        3900
+	
+	Additional query words: VFoxWin FoxDos FoxWin 2.50 2.50a 2.50b 2.50c 2.60 sort alphabetical combination
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro260aMac kbFoxPro200DOS kbVFP300
+	Version           : MACINTOSH:2.5x,2.6a; MS-DOS:2.0,2.5x,2.6x; WINDOWS:2.5x,2.6x,3.0
+	
+	=============================================================================
+	

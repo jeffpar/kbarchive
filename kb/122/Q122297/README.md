@@ -1,0 +1,229 @@
+---
+layout: page
+title: "Q122297: Comparison of MS-DOS Clients for Windows NT Version 3.5"
+permalink: kb/122/Q122297/
+---
+
+## Q122297: Comparison of MS-DOS Clients for Windows NT Version 3.5
+
+	Article: Q122297
+	Product(s): Microsoft Windows NT
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 15-DEC-2000
+	
+	3.00 2.20c
+	
+	MS-DOS
+	
+	kbnetwork
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Network Client for MS-DOS version 3.0 
+	- Microsoft LAN Manager, version 2.2c 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	MS-DOS - based computers without Microsoft Windows for Workgroups version 3.11
+	must install an MS-DOS client to access Windows NT servers. The Windows NT
+	Server version 3.5 CD-ROM includes two MS-DOS clients in the CLIENTS directory:
+	
+	- Microsoft Network Client for MS-DOS, version 3.0
+	
+	- Microsoft LAN Manager for MS-DOS, version 2.2c
+	
+	Microsoft Network Client version 3.0 replaces Microsoft Workgroup Add-On for
+	MS-DOS and Microsoft Workgroup Connection. It is the preferred MS-DOS client,
+	except for remoteboot configurations. Microsoft will continue to make the
+	Microsoft Workgroup Add-On for MS-DOS available for customers who want its file
+	and print server capabilities.
+	
+	
+	This article discusses the key differences between these two MS-DOS - based
+	clients, to assist users in selecting the appropriate client.
+	
+	MORE INFORMATION
+	================
+	
+	Both clients include basic and full redirectors. The full redirectors are faster
+	and provide more functions, but they use more memory and disk space.
+	
+	System Requirements
+	-------------------
+	
+	Both clients have the following minimum requirements:
+	
+	- Intel 8088 or higher processor (80286 for full redirectors)
+	
+	- 640 kilobytes (K) RAM
+	
+	- 1 megabyte (MB) free hard disk space
+	
+	- Supported network interface card
+	
+	- MS-DOS version 3.3 or higher
+	
+	- Windows version 3.1x is optional (should not be used with Windows for
+	  Workgroups)
+	
+	Clients that have additional requirements are annotated in the following
+	sections.
+	
+	Identical TCP/IP on Both Clients
+	--------------------------------
+	
+	The same TCP/IP binaries ship with both MS-DOS - based clients. These MS- DOS -
+	based clients provide Dynamic Host Configuration Protocol (DHCP) client support,
+	WINS resolution, and Windows Sockets support. However, they do not have the
+	following features that are provided by TCP/IP-32 for Windows for Workgroups
+	version 3.11 and Windows NT Server and Workstation version 3.5:
+	
+	- Support DNS resolution using WINS.
+	
+	- Support WINS resolution using DNS.
+	
+	- Name registration with the WINS database. (MS-DOS -based computers are
+	  clients, not servers, and do not generally need registration.)
+	
+	- Act as a WINS proxy node.
+	
+	- Have multihomed support.
+	
+	- Support IGMP.
+	
+	- DHCP command-line switches for the IPCONFIG command. (Must use the DHCP
+	  Administration Utility instead.)
+	
+	Microsoft Network Client Version 3.0
+	------------------------------------
+	
+	Microsoft has optimized this client to work with Windows NT version 3.5 servers,
+	and will be the focus of future development efforts for MS-DOS - based clients
+	for Windows NT.
+	
+	This client includes MS-DOS TCP/IP, MS-IPX, NetBEUI and Microsoft DLC protocols.
+	Both full and basic redirectors can load any three of these four protocols.
+	
+	This client is faster and easier to install than LAN Manager for MS-DOS version
+	2.2c, even when you upgrade from a previous version of the LAN Manager client.
+	
+	Over-the-network installation onto a clean MS-DOS - based computer is available
+	for this client through Windows NT Server's Network Client Administrator.
+	
+	This client is derived from the Workgroup Add-On for MS-DOS version 3.11 product,
+	but does not include the following:
+	
+	- MS-Mail client
+	
+	- Real mode server (that is, it cannot share files)
+	
+	Full redirector
+	
+	- Required if using Microsoft Windows or Remote Access Service (RAS)
+	
+	- Supports LAN Manager APIs, including domain logons
+	
+	- Uses 88K RAM, plus memory for protocols
+	
+	- Requires Intel 80286 or later processor
+	
+	- Is the default redirector
+	
+	Basic redirector
+	
+	- Supports connecting to shared files and printers
+	
+	- Uses 10K RAM, plus memory for protocols
+	
+	- Required for 8088 processors
+	
+	This client does not support RemoteBoot.
+	
+	This client does not support SPX, nor asynchronous-named pipes when the client is
+	running Windows in enhanced mode. It does support all other client APIs,
+	including NetBIOS, TCP/IP, and IPX.
+	
+	This client does not provide a Browse Master. In order to browse the network, a
+	computer running Windows for Workgroups or Windows NT must be on the network and
+	belong to the same workgroup as the computer running Network Client.
+	
+	This client only supports the inventory capabilities of Microsoft Systems
+	Management Server version 1.0. This limitation is due to a restriction in the
+	NetBIOS interface. For additional information, please see the following article
+	in the Microsoft Knowledge Base:
+	
+	  ARTICLE-ID: Q121852
+	  TITLE : Network Client Support for Systems Management Server
+	
+	
+	Microsoft LAN Manager for MS-DOS, Version 2.2c
+	----------------------------------------------
+	
+	This client adds DHCP and WINS client support and bug fixes to the LAN Manager
+	version 2.2b client. This client does not provide any advantages over Microsoft
+	Network Client, except for its RemoteBoot capability.
+	
+	This client includes MS-DOS TCP/IP, NetBEUI, and Microsoft DLC protocols. A
+	NetWare Connectivity disk is also available.
+	
+	This client does not support over-the-network installation.
+	
+	There is no automatic upgrade available from an earlier version of LAN Manager
+	for this client. Users must save configuration information for reference
+	purposes, remove the earlier version, and then install version 2.2c.
+	
+	This client supports RemoteBoot.
+	
+	Full redirector
+	
+	- Allows multiple protocols and adapters on one computer
+	
+	- Uses 100K RAM, plus memory for protocols
+	
+	- Requires 4 MB disk space
+	
+	- Supports named pipes
+	
+	Basic redirector
+	
+	- Uses 59K RAM, plus memory for protocols
+	
+	- Allows single protocol and adapter on one computer
+	
+	REFERENCES
+	==========
+	
+	README.TXT for Microsoft LAN Manager for MS-DOS, version 2.2c
+	README.TXT for Microsoft Network Client for MS-DOS, version 3.0
+	Microsoft Windows NT Server Installation Guide
+	
+	- Chapter 9: Network Client Administrator
+	
+	- Appendix A: Microsoft Network Client for MS-DOS
+	
+	The following articles in the Microsoft Knowledge Base:
+	
+	  ARTICLE-ID: Q122123
+	  TITLE : Redirector Memory Requirements
+	
+	  ARTICLE-ID: Q121852
+	  TITLE : Network Client Support for Systems Management Server
+	
+	
+	The third-party products discussed here are manufactured by vendors independent
+	of Microsoft; we make no warranty, implied or otherwise, regarding these
+	products' performance or reliability.
+	
+	Additional query words: wfw wfwg prodnt 3.10
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbZNotKeyword kbLanManSearch kbNetworkClientSearch kbLanMan220c kbNetworkClient300DOS
+	
+	=============================================================================
+	

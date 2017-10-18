@@ -1,0 +1,159 @@
+---
+layout: page
+title: "Q308998: Print Server Access Violation in Function MonitorThread"
+permalink: kb/308/Q308998/
+---
+
+## Q308998: Print Server Access Violation in Function MonitorThread
+
+	Article: Q308998
+	Product(s): Microsoft SNA Server
+	Version(s): 4.0
+	Operating System(s): 
+	Keyword(s): kbDSupport sna4 kbsna400sp1 kbsna400sp2 kbsna400sp3 kbsna400sp4
+	Last Modified: 08-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The SNA Print service (Snaprint.exe) may fail unexpectedly with an access
+	violation, causing all print sessions to end abnormally when the Request
+	Definite Response option is enabled for 3270 print sessions. When this problem
+	occurs, SNA Server may log the following event:
+	
+	  Event ID: 624
+	  Source: SNA Server
+	  Description: Creating dump file SNADUMP.LOG for snaprint.exe
+	
+	If Drwtsn32.exe is configured as the default debugger on the system, the
+	Drwtsn32.log file will indicate an access violation fault in function
+	MonitorThread. The log entry will appear similar to the following:
+	
+	Application exception occurred:
+	       App: exe\snaprint.dbg (pid=546)
+	       When: 9/18/2001 @ 8:44:29.876
+	       Exception number: c0000005 (access violation)
+	
+	[...]
+	
+	State Dump for Thread Id 0x5f7
+	
+	eax=00000001 ebx=0000000a ecx=00000000 edx=6020fcfc esi=00000000 edi=00000000
+	eip=61c81e51 esp=0faefb04 ebp=602012b0 iopl=0         nv up ei pl nz na pe nc
+	cs=001b  ss=0023  ds=0023  es=0023  fs=0038  gs=0000             efl=00000202
+	
+	function: MonitorThread
+	       61c81e31 8d542418         lea     edx,[esp+0x18]         ss:108ee50b=????????
+	       61c81e35 51               push    ecx
+	       61c81e36 8b743818         mov     esi,[eax+edi+0x18]     ds:00dfea07=????????
+	       61c81e3a 8b443814         mov     eax,[eax+edi+0x14]     ds:00dfea07=????????
+	       61c81e3e 52               push    edx
+	       61c81e3f 50               push    eax
+	       61c81e40 e83b070000       call    isMyJob_i (61c82580)
+	       61c81e45 85c0             test    eax,eax
+	       61c81e47 0f8447030000     je      MonitorThread+0x994 (61c82194)
+	       61c81e4d 8b4c2414         mov     ecx,[esp+0x14]         ss:108ee50b=????????
+	FAULT ->61c81e51 f681dc02000002   test    byte ptr [ecx+0x2dc],0x2     ds:000002dc=??
+	       61c81e58 0f8436030000     je      MonitorThread+0x994 (61c82194)
+	       61c81e5e 8bc6             mov     eax,esi
+	       61c81e60 c644245400       mov     byte ptr [esp+0x54],0x0      ss:108ee50b=??
+	       61c81e65 83e001           and     eax,0x1
+	       61c81e68 89442450         mov     [esp+0x50],eax         ss:108ee50b=????????
+	       61c81e6c 741c             jz      MonitorThread+0x68a (61c81e8a)
+	       61c81e6e 8d7c2454         lea     edi,[esp+0x54]         ss:108ee50b=????????
+	       61c81e72 83c9ff           or      ecx,0xff
+	       61c81e75 33c0             xor     eax,eax
+	       61c81e77 8b159464c961                                    ds:61c96494=53554150
+	                                 mov edx,[_NULL_IMPORT_DESCRIPTOR+0x1964 (61c96494)]
+	       61c81e7d f2ae             repne   scasb                        es:00000000=??
+	
+	*----> Stack Back Trace <----*
+	
+	FramePtr ReturnAd Param#1  Param#2  Param#3  Param#4  Function Name
+	0faeffb8 77f04ede 00000370 00000211 0cadfbd0 00000370 winvprt!MonitorThread  (FPO: [EBP 0x00000211] [1,298,4])
+	00000211 00000000 00000000 00000000 00000000 00000000 kernel32!lstrcmpiW 
+	
+	NOTE: This problem does not occur in Host Integration Server 2000.
+	
+	CAUSE
+	=====
+	
+	A small timing window exists in the print server when the Request Definite
+	Response option is enabled for 3270 print sessions that results in the deletion
+	of an internal print job control block. This in turn results in an access
+	violation that terminates the print server service.
+	
+	Due to the nature of the small timing window, the access violation is more likely
+	to occur on multiprocessor systems.
+	
+	RESOLUTION
+	==========
+	
+	A supported fix is now available from Microsoft, but it is only intended to
+	correct the problem described in this article and should be applied only to
+	systems experiencing this specific problem. This fix may receive additional
+	testing at a later time, to further ensure product quality. Therefore, if you
+	are not severely affected by this problem, Microsoft recommends that you wait
+	for the next Microsoft SNA Server version 4.0 service pack that contains this
+	fix.
+	
+	To resolve this problem immediately, contact Microsoft Product Support Services
+	to obtain the fix. For a complete list of Microsoft Product Support Services
+	phone numbers and information about support costs, please go to the following
+	address on the World Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	NOTE: In special cases, charges that are normally incurred for support calls may
+	be canceled, if a Microsoft Support Professional determines that a specific
+	update will resolve your problem. Normal support costs will apply to additional
+	support questions and issues that do not qualify for the specific update in
+	question.
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	+----------------------------------+
+	| File name   | Date       | Time  | 
+	+----------------------------------+
+	| Winvprt.dll | 11/02/2001 | 07:45 | 
+	+----------------------------------+
+	
+	NOTE: Because of file dependencies, the most recent fix that contains the above
+	files may also contain additional files.
+	
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft SNA Server version
+	4.0.
+	
+	MORE INFORMATION
+	================
+	
+	The Request Definite Response option is selected in SNA Manager on the
+	Transparency/GDI tab of the 3270 Print Session's Properties dialog box. This is
+	an advanced option that should be enabled for applications that require a high
+	level of assurance that the print job completed. This feature allows the print
+	server to send a message to the host system to indicate that the print job
+	completed.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbDSupport sna4 kbsna400sp1 kbsna400sp2 kbsna400sp3 kbsna400sp4 
+	Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400
+	Version           : :4.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

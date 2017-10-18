@@ -1,0 +1,169 @@
+---
+layout: page
+title: "Q309461: IIS: Applications That Require or Use IIS"
+permalink: kb/309/Q309461/
+---
+
+## Q309461: IIS: Applications That Require or Use IIS
+
+	Article: Q309461
+	Product(s): Internet Information Server
+	Version(s): 4.0,5.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 24-APR-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Services version 5.0 
+	- Microsoft Internet Information Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article outlines a cumulative list of Microsoft software that either
+	requires or may use Internet Information Services (IIS). This list will help you
+	to identify an IIS server that needs to be patched in order to be protected from
+	security vulnerabilities and possible worm viruses, such as Code Red or the
+	Nimda virus.
+	
+	MORE INFORMATION
+	================
+	
+	This article is for general purposes and is not intended for detailed
+	information regarding how these applications work with IIS. This article also
+	specifies whether IIS is required or optional for each listed product.
+	
+	Windows 2000:
+	-------------
+	
+	- Microsoft Proxy Server (Required): This product requires that IIS already be
+	  installed because key components of Proxy Server install into the IIS
+	  metabase. This includes Proxy Server 2.0.
+	
+	- Microsoft Exchange Server 2000 (Required): Exchange 2000 requires that not
+	  only IIS, but also specific services such as Simple Mail Transfer Protocol
+	  (SMTP) and Network News Transfer Protocol (NNTP) be installed. If these
+	  services are not installed, Exchange 2000 fails to install.
+	
+	- Microsoft Site Server 3.0, Site Server 3.0 Commerce Edition (Required): This
+	  application uses the basic Web publishing functionality that is provided by
+	  IIS. If IIS is not installed, neither the legacy Site Server 3.0 nor the new
+	  Commerce Server 2000 install.
+	
+	- Microsoft SharePoint Portal Server 2000 (Required): The purpose of SharePoint
+	  is to provide Web collaboration and management of documents. The underlying
+	  component that drives SharePoint is IIS.
+	
+	- SharePoint Team Services from Microsoft (Required): Also known as the Office
+	  Web Server, this product requires that IIS already be installed.
+	
+	- Microsoft Small Business Server (Required): This product requires IIS because
+	  its management interface is an application within IIS.
+	
+	- Microsoft Passport Software Development Kit (SDK) (Required): This product
+	  requires that IIS already be installed.
+	
+	- Microsoft Application Center 2000 (Required): This application uses
+	  load-balancing technology and Web publishing features that were first
+	  introduced into the Site Server line of products. It copies metabase and COM+
+	  components to multiple cluster nodes. This product requires IIS already be
+	  installed.
+	
+	- Microsoft BizTalk Server 2000 (Required): BizTalk uses Web Distributed
+	  Authoring and Versioning (WebDAV) and also creates a virtual directory within
+	  IIS. This application allows heterogeneous systems to interface with a common
+	  language.
+	
+	- Microsoft Commercial Internet Server (MCIS) 2.0 and later (Required): This
+	  product provides integral integration for Internet Service Providers (ISPs).
+	
+	- Microsoft Mobile Information Server 2000 (Required): IIS is the backbone of
+	  this product.
+	
+	- Microsoft Operations Manager (MOM) 2000 (Required): This product is a
+	  centralized manager for all Microsoft products that are running within an
+	  enterprise.
+	
+	- Microsoft Content Management Server 2001 (Required): This product extends IIS
+	  functionality and requires the use of IIS and Microsoft SQL Server in order
+	  to install properly.
+	
+	- Microsoft Certificate Server versions 1.0 and 2.0 (Optional): It is possible
+	  to create and issue digital certificates without having IIS installed.
+	  However, some installations of Certificate Services may accidentally install
+	  IIS as well. For example, Certificate Services 1.0 is installed from the NT
+	  Option Pack and thus may install IIS 4.0. In Certificate Services 2.0, the
+	  installation is separate from IIS, but its underlying function is to produce
+	  certificates for use with IIS or Exchange.
+	
+	- Microsoft Project Central (Optional): If you are using the Web component
+	  piece of Project Central, IIS must be installed. However, this involves
+	  special setup requirements and does not run on every client computer.
+	
+	- Microsoft SQL Server 2000 (Optional): IIS is not required with a standard
+	  installation, but IIS is required if the optional SQL Extensible Markup
+	  Language (XML) Support in IIS is installed.
+	
+	Windows NT 4.0
+	--------------
+	
+	1. Microsoft Commercial Internet Server (MCIS) 2.0 and later (Required): This
+	  product provides integral integration for ISPs.
+	
+	2. Microsoft Passport SDK (Required): This product requires that IIS already be
+	  installed.
+	
+	3. Microsoft Proxy Server (Required): This product requires that IIS already be
+	  installed, because key components of Proxy Server install into the IIS
+	  metabase. This includes Proxy Server 2.0.
+	
+	4. Microsoft Site Server 3.0, Site Server Commerce Edition (Required): This
+	  legacy product requires that IIS already be installed.
+	
+	5. Microsoft Proxy 2.0 (Required): This product requires that IIS already be
+	  installed because key components of Proxy Server install into the IIS
+	  metabase. This includes Proxy Server 2.0.
+	
+	6. Microsoft Small Business Server (SBS) 4.5 (or NTOP applied to SBS 4.0)
+	  (Required): The management interface for this product is Web-based and
+	  requires that IIS be installed.
+	
+	7. Microsoft Visual Studio 6.0 Enterprise Edition (Optional): If you are
+	  designing Web applications using the tools that are included in Visual
+	  Studio, IIS may be installed on the computer on which Visual Studio is
+	  installed.
+	
+	8. FrontPage Server Extensions from Microsoft (Optional): When Web publishing is
+	  required, such as when you are using FrontPage or Visual InterDev publishing
+	  feature, IIS must first be installed and working.
+	
+	9. Microsoft Exchange 5.5 (Optional): Exchange 5.5 does not require IIS unless
+	  you are using Exchange's Outlook Web Access (OWA). If OWA is needed or
+	  Exchange is installed on a server on which IIS is already installed, Exchange
+	  interacts with IIS.
+	
+	REFERENCES
+	==========
+	
+	From the list above, if the application requires IIS, please ensure that you are
+	current with security patches.
+	
+	  Microsoft Securty Web Page
+	
+	The latest security patch as of the writing of this article:
+	
+	  Q301625 Internet Information Server Service Rollup Patch (SRP)
+	
+	Additional query words: iis 5 4 nimda worm security patch howto sts spts
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbiisSearch kbiis500 kbiis400
+	Version           : :4.0,5.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

@@ -1,0 +1,62 @@
+---
+layout: page
+title: "Q170664: Index Server Cannot Index a Virtual Directory with Require SSL"
+permalink: kb/170/Q170664/
+---
+
+## Q170664: Index Server Cannot Index a Virtual Directory with Require SSL
+
+	Article: Q170664
+	Product(s): Internet Information Server
+	Version(s): WINNT: 1.1
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 23-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Index Server version 1.1 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If you select the Require SSL option for a virtual directory, the Index Server
+	does not index that virtual directory.
+	
+	CAUSE
+	=====
+	
+	Index Server does not index a virtual directory if either the directory is an
+	exclusive executable directory or you select the Require SSL check box.
+	
+	RESOLUTION
+	==========
+	
+	Upgrade to Index Server version 2.0 or later.
+	
+	WORKAROUND
+	==========
+	
+	Use secure https:// links to the virtual directories that you would like
+	indexed, but do not select the Require SSL check box.
+	
+	If the first workaround is not acceptable, you can write an ISAPI filter that
+	redirects all non-secure requests to https:// instead of http://
+	
+	NOTE: When you install a filter that redirects all non-SSL connections to SSL
+	connections, it forces all pages on the site to be served securely. As an
+	alternative, you can include logic in your filter that checks to see if a
+	specified virtual directory is requested and then redirects to a secure
+	connection.
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbIdxServSearch kbAudDeveloper kbIdxServ110
+	Version           : WINNT: 1.1
+	Hardware          : ALPHA x86
+	Issue type        : kbprb
+	
+	=============================================================================
+	

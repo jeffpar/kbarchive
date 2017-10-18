@@ -1,0 +1,98 @@
+---
+layout: page
+title: "Q139449: How to Create Individual Home Directories"
+permalink: kb/139/Q139449/
+---
+
+## Q139449: How to Create Individual Home Directories
+
+	Article: Q139449
+	Product(s): Microsoft Windows NT
+	Version(s): 3.1,3.5,3.51,4.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Advanced Server, version 3.1 
+	- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article provides specific instructions, through an example, on how to
+	create and assign each new user a Home Directory in a Windows NT domain. That
+	is, each user will connect to a share that contains only their files and
+	directories and nothing else.
+	
+	MORE INFORMATION
+	================
+	
+	In the following example, the user ID is referred to as HomeUser and the server
+	where the home directories reside is referred to as \\HomeSrv.
+	
+	1. Create a directory and share on the server:
+	
+	  a. On \\HomeSrv, create a directory called HomeUser. This directory can be in
+	     any location on the server hard drive, but user home directories are
+	     typically created under the C:\Users directory.
+	
+	  b. Share the HomeUser directory as HOMEUSER. Each user subdirectory must be
+	     shared separately.
+	
+	2. Create the user ID:
+	
+	  a. From User Manager for Domains, choose New User from the User menu.
+	
+	  b. Enter a valid user name, description, and password. For the example, the
+	     username is HomeUser.
+	
+	  c. Click Profile.
+	
+	  d. In the Home Directory box, click the option button next to Connect and
+	     choose a drive letter. This drive letter will be used only by Windows NT
+	     clients. For this example, choose H.
+	
+	  e. In the To box, enter the UNC path where this user's home directory will
+	     reside. For example, \\HomeSrv\%username%.
+	
+	3. Secure the \\HomeSrv\HomeUser share so only HomeUser has access to it.
+	
+	  a. Run File Manager, select C:\Users\HomeUser, and choose Share As from the
+	     Disk menu.
+	
+	  b. Click Permissions and then click Add.
+	
+	  c. Select the HomeUser name and click Add.
+	
+	  d. Set the type of access that this user should have to the share. Because
+	     this is the user's home directory, they should either have Full Control or
+	     Change access to the share.
+	
+	  e. Click OK.
+	
+	  f. Click Everyone and then click Remove.
+	
+	4. Create a logon script if needed.
+	
+	  If this user will be logging on from different clients (Windows NT, Windows
+	  95, or Windows for Workgroups) then assign a logon script that issues a NET
+	  USE H: /HOME command. On Windows NT, the command will simply fail because the
+	  home directory has already been assigned. On the other clients it will
+	  connect drive H: to the \\HomeSrv\HomeUser share.
+	
+	  For more information on creating and assigning logon scripts, see the Windows
+	  NT documentation and the Knowledge Base.
+	
+	Additional query words: 3.10 3.11 home drive user name
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS351search kbWinNTS350search kbWinNT310Search
+	Version           : :3.1,3.5,3.51,4.0
+	
+	=============================================================================
+	

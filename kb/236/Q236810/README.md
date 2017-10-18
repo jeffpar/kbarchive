@@ -1,0 +1,138 @@
+---
+layout: page
+title: "Q236810: FIX: Command Line GET Fails with &quot;Unable to finish writing&quot; Err"
+permalink: kb/236/Q236810/
+---
+
+## Q236810: FIX: Command Line GET Fails with &quot;Unable to finish writing&quot; Err
+
+	Article: Q236810
+	Product(s): Microsoft SourceSafe
+	Version(s): WINDOWS:5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbCommandLine kbSSafe500bug kbSSafe600fix kbDSupport kbSSafe600qfe kbVS600sp4fix kbVS60
+	Last Modified: 26-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual SourceSafe for Windows, versions 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When trying to perform a recursive command line GET on the root of a SourceSafe
+	project, you receive the following message:
+	
+	  SourceSafe was unable to finish writing a file. Check your available disk
+	  space, and ask the administrator to analyze your SourceSafe database.
+	
+	This stops the command and the GET never finishes.
+	
+	RESOLUTION
+	==========
+	
+	This feature is available in the latest service pack for Visual Studio 6.0. For
+	additional information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+	
+	Also, a supported fix for Visual SourceSafe 6.0 that corrects this problem is now
+	available from Microsoft, but it has not been fully regression tested and should
+	be applied only to systems experiencing this specific problem.
+	
+	To resolve this problem immediately, contact Microsoft Product Support Services
+	to obtain the fix. For a complete list of Microsoft Product Support Services
+	phone numbers and information on support costs, please go to the following
+	address on the World Wide Web:
+	
+	  http://support.microsoft.com/directory/phone.asp
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	+-------------------------------------------------------------------------+
+	| Name         | Size      | Date       | Time     | Version#  | Platform | 
+	+-------------------------------------------------------------------------+
+	| analyze.exe  |   211,968 | 10/22/1999 | 01:27 AM | 6.0.86.60 | x86      | 
+	| ddconv.exe   |   310,784 | 10/22/1999 | 12:55 AM | none      | x86      | 
+	| ddupd.exe    |   443,392 | 10/22/1999 | 12:58 AM | none      | x86      | 
+	| ss.exe       |   415,744 | 10/22/1999 | 12:48 AM | none      | x86      | 
+	| ssapi.dll    |   591,360 | 10/22/1999 | 12:52 AM | 6.0.86.60 | x86      | 
+	| ssarc.exe    |   528,384 | 10/22/1999 | 01:02 AM | 6.0.86.60 | x86      | 
+	| ssrestor.exe |   526,336 | 10/22/1999 | 01:05 AM | 6.0.86.60 | x86      | 
+	| ssscc.dll    | 1,501,696 | 10/22/1999 | 01:38 AM | 6.0.86.60 | x86      | 
+	+-------------------------------------------------------------------------+
+	
+	All files are contained in a self-extracting EXE.
+	
+	+-------------------------------------------------------------+
+	| Name         | Size      | Date       | Time     | Platform | 
+	+-------------------------------------------------------------+
+	| VSS8660.EXE  | 2,178,219 | 10/31/1999 | 11:31 AM | x86      | 
+	+-------------------------------------------------------------+
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article. This bug was corrected in the latest service pack for
+	Visual Studio 6.0.
+	
+	For additional information about Visual Studio service packs, click the article
+	numbers below to view the articles in the Microsoft Knowledge Base:
+	
+	  Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+	
+	  Q194295 HOWTO: Tell That a Visual Studio Service Pack Is Installed
+	
+	You can download the latest Visual Studio service pack from the following
+	Microsoft Web site:
+	
+	  Visual Studio Product Updates
+	  (http://msdn.microsoft.com/vstudio/downloads/updates.asp)
+	
+	MORE INFORMATION
+	================
+	
+	This problem occurs with users that have Read only permission in the Visual
+	SourceSafe (VSS) Administrator. Setting the "Act on projects recursively" option
+	in the VSS Explorer does not alleviate the problem.
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Create project test1 ($/test1).
+	
+	2. Add file "test.txt" to $/test1 ($/test1/test.txt).
+	
+	3. Label the Root ($/) "Label1".
+	
+	4. Create project test2 inside test1 ($/test1/test2).
+	
+	5. Create user "aaguest" in the VSS Administrator with Read only permission.
+	
+	6. From the command line, enter the following:
+	
+	  " ss get $/test -vlLabel1 -r -yaaguest
+	  " (without the quotation marks)
+	
+	REFERENCES
+	==========
+	
+	  Q138479 INFO: Required Rights for SourceSafe Commands
+	
+	Additional query words: sp4
+	
+	======================================================================
+	Keywords          : kbCommandLine kbSSafe500bug kbSSafe600fix kbDSupport kbSSafe600qfe kbVS600sp4fix kbVS600sp5fix 
+	Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe500
+	Version           : WINDOWS:5.0,6.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

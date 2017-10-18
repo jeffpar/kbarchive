@@ -1,0 +1,99 @@
+---
+layout: page
+title: "Q183350: XCON: Inserted Bitmap Image Appears As Attached .Att File"
+permalink: kb/183/Q183350/
+---
+
+## Q183350: XCON: Inserted Bitmap Image Appears As Attached .Att File
+
+	Article: Q183350
+	Product(s): Microsoft Exchange
+	Version(s): WINDOWS:5.5
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 05-APR-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.5 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	When you insert a bitmap image into a message, and then send the message to a
+	Microsoft Exchange Server computer, the image may appear as an attached file
+	with a .att extension when it is received by an e-mail client.
+	
+	CAUSE
+	=====
+	
+	This problem occurs when the Multipurpose Internet Mail Extensions (MIME)
+	database does not contain an entry for the "image/bmp" content type. This entry
+	is not added to the database by default.
+	
+	WORKAROUND
+	==========
+	
+	To work around this problem, add an entry for the "image/bmp" content type
+	manually. To do so, follow these steps:
+	
+	1. Click Start, point to Programs, point to Microsoft Exchange, and then click
+	  Microsoft Exchange Administrator.
+	
+	2. In the left pane, click the Protocols object under the appropriate Exchange
+	  Server computer, and then click Properties on the File menu.
+	
+	   - If the Use Site Defaults For All Properties check box on the General tab
+	     is not selected, proceed to step 3.
+	
+	   - If the Use Site Defaults For All Properties check box is selected, follow
+	     these steps, and then proceed to step 3:
+	
+	  a. Click Cancel to close the Protocols property page.
+	
+	  b. In the left pane of the Administrator window, click the Protocols object
+	     under the appropriate site, and then click Properties on the File menu.
+	     Note that the Protocols object appears under the Configuration object.
+	
+	3. Click the MIME Types tab, and then click New.
+	
+	4. In the MIME Content Type box, type "image/bmp" (without quotation marks).
+	
+	5. In the Associated Extension box, type "bmp" (without quotation marks).
+	
+	6. Click OK, and then click OK again.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+	version 5.5. We are researching this problem and will post additional
+	information here in the Microsoft Knowledge Base as it becomes available.
+	
+	MORE INFORMATION
+	================
+	
+	For additional information about receiving unexpected or incorrect attachments
+	in messages, please see the following articles in the Microsoft Knowledge Base:
+	
+	  Q146263 XFOR: IMC Packages Failed Messages in ATT, DAT, or TXT
+	
+	  Q153464 XFOR: Unexpected Text Attachment in Mail Received from Internet
+	
+	  Q161044 Internet Mail Message Delivered as Attached Text File
+	
+	
+	  Q181955 DAT Extension Appears on Inbound Internet Mail Attachments
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+	Version           : WINDOWS:5.5
+	Issue type        : kbbug
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

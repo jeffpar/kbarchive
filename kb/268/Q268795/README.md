@@ -1,0 +1,162 @@
+---
+layout: page
+title: "Q268795: Lack of Proper SQL Indexes Causes Slow Software Inventorying"
+permalink: kb/268/Q268795/
+---
+
+## Q268795: Lack of Proper SQL Indexes Causes Slow Software Inventorying
+
+	Article: Q268795
+	Product(s): Microsoft Systems Management Server
+	Version(s): 2.0 SP2
+	Operating System(s): 
+	Keyword(s): kbDatabase kbsms200 kbsms200bug kbsms200fix kbInventory kbsms200preSP3fix kbsms200SP3fi
+	Last Modified: 06-FEB-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server version 2.0 SP2 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	After you install Systems Management Server (SMS) 2.0 Service Pack 2 (SP2) on a
+	primary site, the Software Inventory Processor component may experience poor
+	performance when it processes software inventory data. This poor performance is
+	usually noticeable by observing a backlog of .sic and .sid files in the
+	\SMS\Inboxes\Sinv.box folder.
+	
+	Also, custom queries that you create in the SMS Administrator console that use
+	software inventory data may take a long time to be processed.
+	
+	CAUSE
+	=====
+	
+	This problem is caused by a combination of events. If you installed the hotfix
+	described in Microsoft Knowledge Base article Q238762 while the site server was
+	running SMS 2.0 Service Pack 1 (SP1), this could result in a large number of
+	records in the SoftwareFile and SoftwareProduct tables in the SMS site server's
+	database.
+	
+	For additional information, click the article number below to view the article in
+	the Microsoft Knowledge Base:
+	
+	  Q238762 Software Inventory Creation Date Is Incorrect in SMS Database
+	
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, obtain the latest service pack for Systems Management
+	Server version 2.0. For additional information, please see the following article
+	in the Microsoft Knowledge Base:
+	
+	  Q288239 SMS: How to Obtain the Latest Systems Management Server 2.0 Service
+	  Pack
+	
+	
+	
+	WORKAROUND
+	==========
+	
+	The SMS 2.0 SP2 Release Notes specifically state that the software inventory
+	tables should be truncated before you apply the service pack. Because installing
+	the service pack forces all clients to generate a complete software inventory
+	record, this action does not have an adverse effect on the processing that is
+	performed on the site server.
+	
+	You can truncate the necessary tables by using the following SQL query:
+	
+	  TRUNCATE TABLE SoftwareInventoryStatus
+	  TRUNCATE TABLE SoftwareInventory
+	  TRUNCATE TABLE SoftwareFile
+	  TRUNCATE TABLE SoftwareProduct
+	
+	If you perform this action a long time after you install SP2, it will result in
+	Software Inventory resynchronization commands being generated at the site server
+	for each SMS client. The site will recover in time, but it may take some time
+	before the clients receive the resynchronization commands and then generate
+	complete inventory records.
+	
+	If you use this method to correct the problem, it may not be necessary to install
+	the hotfix because the hotfix will provide only marginal performance increases
+	if the software inventory tables remain small. However, the more file types (for
+	example, .dll, .exe, .vxd, files, etc.) that are returned by software inventory,
+	the larger the tables will become. Installing the hotfix should also speed
+	performance of custom queries that query the software inventory data.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products that are
+	listed at the beginning of this article. This problem was first corrected in
+	Systems Management Server 2.0 Service Pack 3.
+	
+	MORE INFORMATION
+	================
+	
+	To determine if your primary site server is affected by this problem, run the
+	following SQL queries to examine the nature of the records in the SoftwareFile
+	table.
+	
+	The following query shows the total number of records in the SoftwareFile table:
+	
+	  SELECT COUNT(*) FROM SoftwareFile
+	
+	Compare the total number of records to the number of records returned by this
+	query:
+	
+	  SELECT DISTINCT FileName, FileDescription, FileVersion, FileSize FROM
+	  SoftwareFile
+	
+	The second number of records should match the first. If they do not, there are
+	records in the table that are not needed. For example, if the total number of
+	records is ten or twenty times the number of records returned by the second
+	query, the performance of the Software Inventory Processor component is probably
+	being affected by this this difference.
+	
+	The additional indexes provided with the hotfix increase the performance of SQL
+	queries on the SoftwareFile and SoftwareProduct tables. However, they may not
+	resolve all performance problems in which the numbers of records in the tables
+	are too large. In this situation, it might be necessary to use the method in the
+	"Workaround" section to resolve any long-term performance problems that are
+	caused by an excessive number of records in the SoftwareFile table.
+	
+	In cases in which the total number of records is not that much larger than the
+	results returned in the second query, the database maintenance performed by the
+	SMS SQL Monitor service can eliminate the extra data.
+	
+	To take advantage of this, enable both the Delete Aged Discovery Data and Delete
+	Aged Collected Files tasks in the SMS Administrator console. The Software
+	Inventory data is deleted in the following manner:
+	
+	- Delete Aged Discovery Data task:
+	  When this task is performed, the SMS SQL Monitor component removes old systems
+	  and related inventory from the SoftwareInventory and SoftwareInventoryStatus
+	  tables.
+	
+	- Delete Aged Collected Files task:
+	  When this task is performed, the SMS SQL Monitor component removes
+	  non-referenced data from the SoftwareFile and SoftwareProduct tables.
+	  Specifically, records that are not referenced by a record in the
+	  SoftwareInventory table are deleted.
+	
+	Because installing SP2 forces all clients to submit complete inventory records,
+	this should result in a complete refresh of the data in the Software Inventory
+	tables.
+	
+	
+	Additional query words: prodsms
+	
+	======================================================================
+	Keywords          : kbDatabase kbsms200 kbsms200bug kbsms200fix kbInventory kbsms200preSP3fix kbsms200SP3fix 
+	Technology        : kbSMSSearch kbSMS200SP2
+	Version           : :2.0 SP2
+	Hardware          : x86
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

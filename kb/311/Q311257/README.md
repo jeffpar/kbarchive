@@ -1,0 +1,104 @@
+---
+layout: page
+title: "Q311257: SMS: Resources Not Discovered if Anonymous Connections Off"
+permalink: kb/311/Q311257/
+---
+
+## Q311257: SMS: Resources Not Discovered if Anonymous Connections Off
+
+	Article: Q311257
+	Product(s): Microsoft Systems Management Server
+	Version(s): 2.0
+	Operating System(s): 
+	Keyword(s): kbnetwork kbtool kbui kbsms200 kbsms200bug
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server version 2.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you are using the Network Discovery method in Systems Management Server
+	(SMS) 2.0 and Remote Client Installation with the "Topology, client, and client
+	operating systems" Network Discovery option is turned on, computers may be
+	discovered, but may not be installed. The following entry in the NetDisc.log
+	file may show that Network Discovery could not connect to the computer to
+	determine the operating system name and version:
+	
+	  ADM: NtBrowser: Failed to create an anonymous connection to device computer
+	  name due to insufficient access.
+	
+	CAUSE
+	=====
+	
+	This problem may occur if anonymous connections are turned off on the discovered
+	computer.
+	
+	WORKAROUND
+	==========
+	
+	To work around this problem, turn on anonymous connections, either manually
+	through the registry, or by using a group policy.
+	
+	Registry Method
+	---------------
+	
+	For additional information manual configuration of anonymous connections by using
+	the registry, click the article numbers below to view the articles in the
+	Microsoft Knowledge Base:
+	
+	  Q143474 Restricting Information Available to Anonymous Logon Users
+	
+	  Q246261 How to Use the RestrictAnonymous Registry Value in Windows 2000
+	
+	Group Policy Method
+	-------------------
+	
+	For group policies that are defined at either the local, site, domain, or
+	organizational unit level, either turn off or change the setting to "None. Rely
+	on default permissions" in the Group Policy editor under:
+	
+	  Computer Configuration \ Windows Settings \ Security Settings \ Local
+	  Policies \ Additional restrictions for anonymous connections
+	
+	RESOLUTION
+	
+	This problem has been corrected in the fix that is described in the following
+	Microsoft Knowledge Base article:
+	
+	  Q312512 SMS: Network Discovery Cannot Connect Anonymously to Client After
+	  Remote Client Installation
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Systems Management Server
+	version 2.0.
+	
+	MORE INFORMATION
+	================
+	
+	SMS Network Discovery uses an anonymous connection to determine what operating
+	system and version a computer has. SMS Network Discovery does not use the SNMP
+	SysDescr value, it makes an RPC call even if SNMP is turned on. If SMS Network
+	Discovery cannot determine the operating system, it cannot write that property
+	to the resulting Discovery Data Record (DDR). Because SMS Discovery Data Manager
+	(DDM) only writes Client Configuration Requests (CCRs) for computers that are
+	running Microsoft Windows NT, Microsoft Windows 2000, or Microsoft Windows XP,
+	DDM is designed to not create CCRs unless it can determine the operating system
+	from the DDR.
+	
+	Additional query words: prodsms
+	
+	======================================================================
+	Keywords          : kbnetwork kbtool kbui kbsms200 kbsms200bug 
+	Technology        : kbSMSSearch kbSMS200
+	Version           : :2.0
+	Issue type        : kbbug
+	
+	=============================================================================
+	

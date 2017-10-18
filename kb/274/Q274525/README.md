@@ -1,0 +1,152 @@
+---
+layout: page
+title: "Q274525: MSN Companion sets up automatically to other member ID"
+permalink: kb/274/Q274525/
+---
+
+## Q274525: MSN Companion sets up automatically to other member ID
+
+	Article: Q274525
+	Product(s): The Microsoft Network
+	Version(s): 1.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 12-NOV-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- MSN Companion, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When the customer turns on the device for the first time, it automatically sets
+	the wrong member id. Typically, it either sets the member id of another account
+	that this customer has, or it sets the member id of another person in the
+	current house.
+	
+	-or-
+	
+	After the MSN Companion device goes through the MURMUR process, which discards
+	the old username and password, the user goes through Setup without being
+	prompted to type a new user name. After Setup, the device displays the user's
+	"new" e-mail name, which is actually the "old" e-mail name that the user
+	attempted to discard via MURMUR.
+	
+	CAUSE
+	=====
+	
+	When the device first dials the 1-800 number during Setup, the MSN Internet
+	access server uses Automatic Number Identification (ANI) detection to find out
+	what number the user is calling (similar to Caller ID). MSN then compares this
+	number to its list of home numbers for all of its users.
+	
+	If there are two accounts in the database that have the same home phone number,
+	then MSN Companion will ask the user to type in their member ID and password.
+	
+	If there is only one account associated with that phone number, then MSN
+	Companion automatically takes the matched member ID and password and fills this
+	information in the appropriate boxes. Normally, this is a helpful feature; it
+	automatically fills in a new user's account info.
+	
+	However, there are two cases when this can cause the wrong member ID to get set.
+	
+	Case 1. Two accounts in your home.
+	----------------------------------
+	
+	1. You opened a first account - account A#, and when you signed up for it listed
+	  home phone #A as the home phone number for that account.
+	
+	2. You also have a second account, either a replacement account or a second
+	  simultaneous account - account #B. When you signed up for it you listed a
+	  different home phone number - home phone #B.
+	
+	3. You then plugged one of these accounts into the phone jack of the phone line
+	  what had been associated with the other account. Account #B into home phone
+	  #A or visa versa.
+	
+	4. When MSN Companion dialed up and MSN detected which number it was dialing
+	  from, the MSN Companion was told to use the member id that matched up to the
+	  other account.
+	
+	Case 2. In a friend's or relative's home
+	----------------------------------------
+	
+	1. You sign up for an account when you buy the MSN Companion.
+	
+	2. You take the MSN Companion to a friend's house, who also has an MSN Companion
+	  account, and set up the MSN Companion there.
+	
+	3. During Setup, the phone number detection automatically matches the line that
+	  the MSN Companion is dialing from to the friend's account and the member ID
+	  of the friend appears instead of their own member ID.
+	
+	RESOLUTION
+	==========
+	
+	Case 1. Two accounts in your home.
+	----------------------------------
+	
+	Resolution 1
+	
+	1. Plug the MSN Companion into a different phone line and reset the device by
+	  using the MURMUR code. See Q279037 - MSN Companion Troubleshooting Tool
+	  MURMUR
+	
+	2. Re-run Setup and when the MSN Companion dials the 1-800 number in Setup, ANI
+	  detection should pick up this new home phone line, and it should match up
+	  with the correct account.
+	
+	3. If this was the wrong phone line and the account information comes up wrong,
+	  then repeat these steps for each other phone line in the house.
+	
+	4. Once the device has been successfully run through Setup and the right account
+	  information is in place, feel free to unplug it and move it to any line in
+	  the house.
+	
+	Resolution 2
+	
+	You can also fix the problem by calling Customer Service at (888) 765-2411 and
+	having them update the home phone number for the account that you want to use
+	with your MSN Companion. Make sure they update your home phone number to match
+	the line you're currently trying to dial out of.
+	
+	Case 2. In a friend's or relative's home
+	----------------------------------------
+	
+	It's best to wait until you take your MSN Companion to your own home before you
+	set it up, so that you can be sure the dialing settings are correct from your
+	home's area code. But if you need to set up the device right now at someone
+	else's house, you can use the following steps.
+	
+	1. Call Customer Service at (888) 765-2411 and have them update the home phone
+	  number for your account to match the line that you're trying to dial out
+	  from.
+	
+	2. Plug the MSN Companion into a phone line and reset the device by using the
+	  MURMUR code. See Q279037 - MSN Companion Troubleshooting Tool MURMUR
+	
+	3. Run Setup and when MSN Companion dials the 1-800 number in Setup, ANI
+	  detection will see that there are two accounts for this home number, yours,
+	  and your friend's, and it will ask for your member ID.
+	
+	4. When you enter your Member ID the MSN Companion will be set up correctly for
+	  your account.
+	
+	5. Once the device has been successfully set up and the right account
+	  information is in place, when you take the device home call Customer Service
+	  again and have them change the phone number on your account back to your home
+	  number.
+	
+	Additional query words: kbimu
+	
+	======================================================================
+	Keywords          :  
+	Technology        : _IKkbbogus kbMSNSearch kbMSNCompanion
+	Version           : :1.0
+	Issue type        : kbprb kbinfo
+	
+	=============================================================================
+	

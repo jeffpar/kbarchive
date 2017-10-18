@@ -1,0 +1,105 @@
+---
+layout: page
+title: "Q216585: WINS 1C Records are Tombstoned and Are Scavenged out of Database"
+permalink: kb/216/Q216585/
+---
+
+## Q216585: WINS 1C Records are Tombstoned and Are Scavenged out of Database
+
+	Article: Q216585
+	Product(s): Microsoft Windows NT
+	Version(s): winnt:4.0
+	Operating System(s): 
+	Keyword(s): kbWinNT400sp5fix
+	Last Modified: 16-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 4.0 
+	- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	In an environment that relies on Windows Internet Name Service (WINS) to resolve
+	NetBIOS names, Windows clients can experience logon problems and the following
+	error message will appear:
+	
+	  There are no logon servers available to service the logon request
+	
+	The WINS [1C] domain records may be missing from some WINS server databases.
+	
+	CAUSE
+	=====
+	
+	Through replication and convergence, the [1C] record ownership will change from
+	WINS server to WINS server. Eventually, you may many end up with a scenario
+	where a WINS server that owns a [1C] record and its direct replication partner
+	has a replica of the [1C] record but does not own the record. The problem occurs
+	when no domain controllers refresh the [1C] record on the remote WINS server,
+	the records will expire, become tombstoned, and be scavenged out of the
+	database. The following is an example of what could happen:
+	
+	1. The version ID for the tombstoned [1C] record will be increased and will be
+	  flagged for replication during the next replication cycle.
+	
+	2. WINS cannot increment the version ID of a replica record (record owned by
+	  another WINS server); only the owner of a record is allowed to increment the
+	  version ID of the record. When replication occurs the tombstoned [1C] record
+	  will not be replicated to its replication partner if the partner does not own
+	  the [1C] record.
+	
+	3. The tombstoned [1C] Record will then be scavenged out of the database.
+	
+	In the case of pull-only replication, the servers that are only pulling records
+	should not have ownership of any of the [1C] records as no servers should be
+	refreshing or registering with the servers.
+	
+	RESOLUTION
+	==========
+	
+	A change has been made to WINS so that, if a [1C] record should become
+	tombstoned on a WINS server, ownership will change to that of the tombstoning
+	WINS server. The tombstoned [1C] record will continue to replicate to all
+	replication partners as tombstoned with the ownership being set to that of the
+	tombstoning server. When an active [1C] record is encountered, the ownership of
+	the [1C] record will be changed to that of the WINS server that owns the active
+	[1C] record and will then be replicated as active to all replication partners.
+	
+	There was also an additional change made to Wins.exe where a WINS server will
+	send a "Push with Propagation" trigger when the tombstoned [1C] record is
+	encountered. The "Push with Propagation" trigger will propagate the trigger to
+	all replication partners after it has pulled in the latest information from the
+	source WINS server. This will ensure that the tombstoned [1C] record is replaced
+	with and active [1C] record expediently if there is truly and active owner of
+	the [1C] record in the replication network. To resolve this problem, obtain the
+	latest service pack for Windows NT 4.0. For additional information, please see
+	the following article in the Microsoft Knowledge Base:
+	
+	  Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+	
+	
+	This hotfix supercedes all hotfixes referenced in the following Microsoft
+	Knowledge Base article:
+	
+	  Q190506 WINS Replication Problem Events 4262, 4261, and 1c Replication
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Windows NT 4.0.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbWinNT400sp5fix 
+	Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400
+	Version           : winnt:4.0
+	Hardware          : ALPHA x86
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

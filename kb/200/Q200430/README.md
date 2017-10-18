@@ -1,0 +1,122 @@
+---
+layout: page
+title: "Q200430: SMS: Explanations of Remote Control Screen Acceleration"
+permalink: kb/200/Q200430/
+---
+
+## Q200430: SMS: Explanations of Remote Control Screen Acceleration
+
+	Article: Q200430
+	Product(s): Microsoft Systems Management Server
+	Version(s): winnt:2.0
+	Operating System(s): 
+	Keyword(s): kbtshoot kbsms200 smsremtshoot kbRemoteProg
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server version 2.0 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about modifying the registry. Before you 
+	modify the registry, make sure to back it up and make sure that you understand how to restore 
+	the registry if a problem occurs. For information about how to back up, restore, and edit the 
+	registry, click the following article number to view the article in the Microsoft Knowledge Base:
+	
+	  Q256986 Description of the Microsoft Windows Registry
+	
+	SUMMARY
+	=======
+	
+	Before the current upgrades to Windows NT, capturing video for use in a Remote
+	Control session was a simple matter of capturing video from the driver itself.
+	Later versions of Windows NT have video hooks moved into the operating system
+	kernel.
+	
+	CAUTION: Loading new video driver names into the Windows NT Accelerated Drivers
+	List may result in unexpected Blue Screen error messages. Test the compatibility
+	of each new video driver name on a single client with a matching version of the
+	video driver before adding a new name to the accelerated list. Be sure that
+	testing has been performed on a smaller scale before implementing acceleration
+	of a new driver across your enterprise.
+	
+	MORE INFORMATION
+	================
+	
+	Video Acceleration is determined by two items: 1) whether the video card is
+	"resolved" to be similar enough to be accelerated by a driver in the "Video
+	Accelerator" and 2) Video acceleration is turned ON. The list of video cards and
+	drivers that can be accelerated is located on the Systems Management Server
+	primary site under the following tree structure:
+	
+	1. Start Systems Management Server Administrator Console.
+	
+	2. In the Administrator UI, locate SITES, select your site
+	  <site_code>:<site_name>, click Site Settings, and then click
+	  Client Agents.
+	
+	3. Right-click Remote Control Client Configuration in the Results pane.
+	
+	4. Click Properties on the shortcut menu.
+	
+	5. Click the Advanced tab and select "Install accelerated transfer on Windows NT
+	  clients".
+	
+	6. Click Apply and then click OK.
+	
+	The Advanced tab also contains the list of video cards that can be accelerated.
+	You can theoretically add to this list. Deleting items on this list removes them
+	from video cards that will be accelerated -- even if acceleration is enabled
+	globally.
+	
+	Acceleration on computers running Windows NT is accomplished with either the
+	Idisntkm.sys (for Windows NT 4.0) or Idisnt.sys (for Windows 3.51). The
+	appropriate driver for the operating system is loaded into the appropriate
+	<Winroot>\System32 directory (<Winroot>\System32\Drivers for Windows
+	NT 4.0) and installed as a service to manage video acceleration during a Remote
+	Control session. At no other time is the acceleration a factor in the Windows NT
+	computer. Although the driver is loaded and running, it is not "used" except
+	during an accelerated Remote Control session.
+	
+	The actual "evaluation" process to determine whether a client's video card can be
+	accelerated happens at the time Remote Control is installed to the client. To
+	see if acceleration is enabled on a particular client, check the registry key
+	below.
+	
+	WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+	that may require you to reinstall your operating system. Microsoft cannot
+	guarantee that you can solve problems that result from using Registry Editor
+	incorrectly. Use Registry Editor at your own risk.
+	
+	1. Using either Regedt32.exe or Regedit.exe, locate the following key:
+	
+	  HKEY_LOCAL_MACHINE\Hardware\Devicemap\Video
+	
+	2. Check each of the "\Device\Video0" keys (note that there may be one or two of
+	  these) and take note of the Services\<video driver>\Device0 key on
+	  each.
+	
+	3. Using the previous key(s) as pointers, now go to the following key:
+	
+	  HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\<key value from Step 2 above>\Device0
+	
+	4. Make sure the InstalledDisplayDrivers key is set to either an entry by itself
+	  (as in "VGA") or multiple entries separated by a single space (as in "idisnt
+	  vga idisnt vga256").
+	
+	Alternatively, if it is present and visible on the client's desktop, double-click
+	the Remote Control indicator icon to get the status display window. If
+	acceleration is loaded, the Remote Control status window will show that
+	acceleration is loaded in the appropriate status line.
+	
+	Additional query words: prodsms
+	
+	======================================================================
+	Keywords          : kbtshoot kbsms200 smsremtshoot kbRemoteProg 
+	Technology        : kbSMSSearch kbSMS200
+	Version           : winnt:2.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

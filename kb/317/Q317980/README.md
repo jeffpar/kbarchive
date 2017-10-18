@@ -1,0 +1,132 @@
+---
+layout: page
+title: "Q317980: FIX: Inserting Records with Buffering can Cause VFP to Hang"
+permalink: kb/317/Q317980/
+---
+
+## Q317980: FIX: Inserting Records with Buffering can Cause VFP to Hang
+
+	Article: Q317980
+	Product(s): Microsoft FoxPro
+	Version(s): 7.0
+	Operating System(s): 
+	Keyword(s): kbDatabase KbDBFDBC kbGrpDSFox kbDSupport kbCodeSnippet kbvfp700 _IK283 kbVFP700sp1fix
+	Last Modified: 30-MAR-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 7.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If you use optimistic table buffering, and you insert a large number of records
+	that use transactions into the table, Visual FoxPro may stop responding.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, obtain the latest service pack for Visual FoxPro for
+	Windows 7.0. For additional information, please see the following article in the
+	Microsoft Knowledge Base:
+	
+	  Q316964 How to Obtain the Latest Visual FoxPro for Windows 7.0 Service Pack
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft Visual FoxPro for
+	Windows 7.0.
+	
+	This problem was first corrected in Visual FoxPro for Windows 7.0 Service Pack 1.
+	
+	MORE INFORMATION
+	================
+	
+	Steps To Reproduce Behavior
+	---------------------------
+	
+	1. Paste the following code in a program (.prg) file, and then run the program
+	  from the Command window:
+	
+	  #DEFINE NUMRECORDS 600
+	
+	  LOCAL i, n,nRecNo
+	
+	  CLEAR ALL
+	  CLEAR
+	  SET TALK OFF
+	  SET SAFETY OFF
+	  SYS(3050,1,100)
+	  SYS(3050,2,100)
+	
+	  * Close any open databases.
+	  CLOSE DATABASES ALL
+	  CREATE DATABASE Test
+	
+	  ERASE Test.dbf
+	  CREATE TABLE Testx (name c(100),aa c(100))
+	  CREATE SQL VIEW Test AS SELECT * FROM Testx
+	  USE Test
+	  REQUERY()
+	  SET MULTILOCKS ON
+	  INDEX ON name TAG name
+	  CURSORSETPROP("buffering",5)
+	
+	  * Add 600 records to the table.
+	  FOR i = 1 TO NUMRECORDS
+	    INSERT INTO Test (name) VALUES (TRANSFORM(i))
+	  ENDFOR
+	
+	  * Generate a random number between 0 and 1.
+	  RAND(1)
+	
+	  FOR i = 1 to RECCOUNT()
+	     n=INT(RAND()*RECCOUNT()+1)
+	     GOTO n
+	     REPLACE name WITH TRANSFORM(RECCOUNT()-i)
+	
+	     * Display the records at 100, 200, and so on.
+	     IF MOD(i,100) = 0
+	     ? i
+	     ENDIF
+	  ENDFOR
+	
+	  * Insert another record in the table.
+	  BEGIN TRANSACTION 
+	    INSERT INTO Test (name) VALUES ("test")
+	  END TRANSACTION
+	
+	  *Locate the first logical record in the table.
+	  LOCATE
+	  nRecNo = 0
+	  * Run through all of the records in the table.
+	  SCAN
+	     * Display the record number and the contents of the name field. 
+	     * The record number is negative because the record has been appended in 
+	     * a buffer. FoxPro will lock up on record number 573. It happens when it 
+	     * is scanning through records after they have been inserted.
+	     ? RECNO(), ALLTRIM(name)
+	     nRecNo = nRecNo + 1
+	  ENDSCAN
+	  * Display final stats
+	  ? nRecNo, NUMRECORDS
+	
+	Note that Visual FoxPro stops responding while the program is running.
+	
+	2. Press CTRL+ALT+DELETE to open Windows Task Manager, and then click End Task
+	  to close Visual FoxPro.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbDatabase KbDBFDBC kbGrpDSFox kbDSupport kbCodeSnippet kbvfp700 _IK283 kbVFP700sp1fix 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP700
+	Version           : :7.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

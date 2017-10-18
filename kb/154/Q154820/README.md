@@ -1,0 +1,99 @@
+---
+layout: page
+title: "Q154820: FIX: Common Dialog May Not Display the Current Font"
+permalink: kb/154/Q154820/
+---
+
+## Q154820: FIX: Common Dialog May Not Display the Current Font
+
+	Article: Q154820
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbGrpDSVB
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you have set the common dialog controls FontName property, displaying the
+	Font common dialog can result in the selected font being blank.
+	
+	CAUSE
+	=====
+	
+	The problem is caused by setting the FontName property before setting the Flags
+	property. It also occurs when the Flags property has already been set.
+	
+	RESOLUTION
+	==========
+	
+	Set the Flags property to 0 before setting the FontName property. Then set the
+	Flags property to the desired combination of flags after setting the FontName
+	property.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article. This bug has been fixed in Visual Basic 5.0.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Problem
+	--------------------------
+	
+	1. Start a project in Visual Basic. Form1 is created by default.
+	
+	2. Place two Command buttons on the form.
+	
+	3. Place a common dialog control onto the form.
+	
+	4. Add the following to the Command1_Click event:
+	
+	     Private Sub Command1_Click()
+	
+	       'This method will fail
+	       CommonDialog1.Flags = cdlCFBoth + cdlCFEffects
+	       CommonDialog1.FontName = "MS Sans Serif"
+	       CommonDialog1.ShowFont
+	
+	     End Sub
+	
+	5. Add the following to the Command2_Click event:
+	
+	     Private Sub Command2_Click()
+	
+	       'This method will work
+	       CommonDialog1.Flags = 0   'Required before setting FontName
+	       CommonDialog1.FontName = "MS Sans Serif"
+	       CommonDialog1.Flags = cdlCFBoth + cdlCFEffects
+	       CommonDialog1.ShowFont
+	
+	     End Sub
+	
+	6. Choose Start from the Run menu, or press the F5 key to start the program.
+	
+	7. Click the Command buttons and observe the behavior.
+	
+	Additional query words: kbVBp400bug kbVBp500fix kbVBp kbdsd kbDSupport kbControl
+	
+	======================================================================
+	Keywords          : kbGrpDSVB 
+	Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

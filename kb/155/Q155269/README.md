@@ -1,0 +1,222 @@
+---
+layout: page
+title: "Q155269: XADM: Microsoft Exchange Administrators' FAQ"
+permalink: kb/155/Q155269/
+---
+
+## Q155269: XADM: Microsoft Exchange Administrators' FAQ
+
+	Article: Q155269
+	Product(s): Microsoft Exchange
+	Version(s): 4.0,5.0,5.5
+	Operating System(s): 
+	Keyword(s): kbusage exc4 exc5 exc55
+	Last Modified: 13-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This document contains some of the most commonly asked questions and answers
+	regarding Microsoft Exchange administration.
+	
+	MORE INFORMATION
+	================
+	
+	Q. Where is circular logging enabled or disabled?
+	A. To enable or disable circular logging on a Microsoft Exchange Server, get
+	Properties on the Server and select the Advanced tab. There are two check boxes
+	for circular logging, one for the Directory and the other for the Information
+	Store.
+	
+	Q. To enable or disable circular logging, do you need to restart the server?
+	A. The server will not need to be restarted. When this option is changed from
+	enabling or disabling circular logging, the Directory or Information Store will
+	be stopped and started again, which will enable the logging option specified.
+	
+	Q. How do you back up the Microsoft Exchange Server from another computer?
+	A. Install the Microsoft Exchange Administrator program on the computer so that
+	backup is Microsoft Exchange-aware. Then you will need backup permissions on the
+	Microsoft Exchange Server computer that you wish to back up.
+	
+	Q. Why would the Microsoft Exchange options be missing from the backup utility?
+	A. The Microsoft Exchange option is provided by the Ntbackup.exe that ships with
+	Microsoft Exchange. If a Windows NT service pack is installed on a working
+	Microsoft Exchange Server computer, the Ntbackup for the service pack will be
+	copied over and you will lose the Microsoft Exchange option. You can copy the
+	Ntbackup.exe and Backup.hlp from the Microsoft Exchange Server compact disc to
+	resolve the problem.
+	
+	Q. The Microsoft Exchange Administrator program is not showing the correct
+	message count or size in the store. Why does this happen?
+	A. There is a latency issue when the Information Store (IS) is cleaned up. If a
+	message is deleted from a user's mailbox, it may take until the next day for the
+	IS to be updated and this will be reflected in the Microsoft Exchange
+	Administrator program. This issue has been addressed in service packs for
+	Exchange 4.0, 5.0, and 5.5.
+	
+	Q. What are the capabilities of LoadSim?
+	A. LoadSim simulates any amount of users sending and receiving mail messages on
+	any number of Microsoft Exchange Servers. It can also create the users and
+	folders for this purpose. This is useful for performance and load balance
+	testing. For additional information, please see the Loadsim.doc on the Microsoft
+	Exchange Server compact disc.
+	
+	
+	Q. How do you get Books Online?
+	A. Books Online can be installed from the Microsoft Exchange Server compact disc.
+	To add the Books Online after Exchange has been installed, rerun Exchange setup
+	and choose the "Add/Remove" option. Place a check mark in the box next to "Books
+	Online" on the next dialog box and click on "Continue" to proceed with the
+	install. Reapply your current Exchange service pack after setup completes.
+	
+	Q. The Information Store gets error 1011 when starting. What does this mean?
+	A. Run ISINTEG - PATCH. For additional information, please see the following
+	article in the Microsoft Knowledge Base:
+	
+	  Q149238 XADM: Information Store Fails to Start with -1011 Error
+	
+	Q. How can you configure the Microsoft Exchange Server for better performance?
+	A. Please see the Performance white paper located on Microsoft TechNet. For
+	information about Microsoft TechNet, please visit
+	http://www.microsoft.com/ithome/default.htm
+	
+	Q. Can you merge two Microsoft Exchange Sites together?
+	A. You might be able to use the Move Server Wizard; for additional information,
+	please refer to:
+	
+	  http://www.microsoft.com/Exchange/55/downloads/Sp2.htm
+	
+	The Move Server Wizard can be obtained from the following Microsoft Web site:
+	
+	  http://www.microsoft.com/Exchange/downloads/55/MoveServer.asp
+	
+	Q. Why is SP4 required on the primary domain controller (PDC)?
+	A. Either Windows NT 3.51 SP4 (Exchange Server 4.0) or Windows NT 4.0 SP3
+	(Exchange Server 5.0 and 5.5) is required for Novell clients to change their
+	passwords.
+	
+	Q. Can I send mail to a Public Folder?
+	A. Yes, you can send mail provided you know the e-mail address of the Public
+	Folder (PF). You might need to Unhide the public folder by unchecking the Hide
+	from Address Book option on the Advanced page of the PF properties in the
+	Microsoft Exchange Administrator program. The PF should now be visible in the
+	GAL and can be mailed to like any other mailbox.
+	
+	Q. How do I restrict users from creating top-level PFs?
+	A. From the Microsoft Exchange Administrator program, choose Configuration,
+	Information Store Site Configuration Properties, Top Level Folder Creation.
+	
+	Q. How do you give another person Administrator rights?
+	A. From the Microsoft Exchange Administrator program, add the user's Windows NT
+	account to the Permissions on the Organization, Site and Configuration
+	containers.
+	
+	Q. How do you delete a PF?
+	A. Public Folders can be deleted from Microsoft Outlook and the Microsoft
+	Exchange Client.
+	
+	Q. How do you run the Microsoft Exchange Administrator program from an untrusted
+	domain?
+	A. Please see the following article in the Microsoft Knowledge Base:
+	
+	  Q150880 XADM: Running Administrator From Untrusted NT Domain
+	
+	Q. How can users change their own mailbox details?
+	A. There is no built-in support to do this. The users will have to develop a
+	solution on their own. One possible solution is:
+	
+	1. Create a E-Form to allow the user to make changes.
+	
+	2. The E-Form should be mailed to a particular mailbox.
+	
+	3. Create a mailbox agent that monitors this mailbox.
+	
+	4. The mailbox agent runs BIMPORT or directly imports the data by calling DAPI
+	  functions. Details are available in the Exchange Developers Kit.
+	
+	Q. How do you rename the Microsoft Exchange Server computer name?
+	A. Note that this will only work if there is only one Microsoft Exchange Server
+	in the Site. This information can also be found in the Microsoft Exchange
+	Resource Kit.
+	
+	Caution: When you rename a server you lose:
+	
+	- All connector/DXA configurations on the server.
+	
+	- All non-recipient configurations on the server.
+	
+	- All profiles for users that connect to the server.
+	
+	To rename the computer running Microsoft Exchange Server:
+	
+	1. Disconnect all clients from the server.
+	
+	2. In the Microsoft Exchange Server Administrator program, select the Server
+	  name - Advanced tab.
+	
+	3. Under IS/DS Consistency Adjustment, select a method for adjusting
+	  inconsistencies. This step ensures that the information store is up-to-date.
+	
+	4. From the Tools menu, choose Directory Export.
+	
+	5. Ensure that the Assoc-NT-Account field has been exported. You use this file
+	  to restore the mailbox, distribution list, and customer recipient
+	  permissions.
+	
+	6. Quit all Microsoft Exchange Server services.
+	
+	7. Back up \dsadata\dir.edb.
+	
+	8. Back up \mdbdata\priv.edb and pub.edb.
+	
+	9. Run the Microsoft Exchange Server Setup program, and choose Remove All.
+	
+	10. Restart your computer. and delete \exchsrvr.
+	
+	11. In the Main program group, double-click Control Panel.
+	
+	12. Double-click Server and then rename the server.
+	
+	13. Restart your computer.
+	
+	14. Run the Microsoft Exchange Server Setup program. Choose the same
+	  organization and site names as before.
+	
+	15. Restart your computer.
+	
+	16. Quit all Microsoft Exchange Server services.
+	
+	17. Delete *.log from \dsadata and \mdbdata.
+	
+	18. Restore \mdbdata\priv.edb and pub.edb. If offline copy, run isinteg -patch.
+	
+	  IMPORTANT: Do not restore the files from \dsadata.
+	
+	19. Restart the Microsoft Exchange Server services.
+	
+	20. Run the IS/DS Consistency Adjustment again on the private and public
+	  Information Stores. The consistency adjustment will re-create the directory
+	  without any permissions.
+	
+	21. Import the directory file created in step 4. Be sure to select Append in the
+	  Multi-Valued Properties box.
+	
+	  Your server should now be running with the same mailboxes and Public Folders
+	  but it will have a new server name.
+	
+	Additional query words: faq
+	
+	======================================================================
+	Keywords          : kbusage exc4 exc5 exc55 
+	Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+	Version           : :4.0,5.0,5.5
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

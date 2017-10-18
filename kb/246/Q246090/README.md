@@ -1,0 +1,76 @@
+---
+layout: page
+title: "Q246090: Excessive LSASS CPU Usage with Multiple SMS Sites in Same Domain"
+permalink: kb/246/Q246090/
+---
+
+## Q246090: Excessive LSASS CPU Usage with Multiple SMS Sites in Same Domain
+
+	Article: Q246090
+	Product(s): Microsoft Systems Management Server
+	Version(s): winnt:2.0,2.0 SP1
+	Operating System(s): 
+	Keyword(s): kbsms200 kbsms200bug kbsms200sp2fix
+	Last Modified: 25-JUN-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server versions 2.0, 2.0 SP1 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If multiple Systems Management Server (SMS) site servers share the same
+	Microsoft Windows NT-based domain, high amounts of network usage may occur at
+	the beginning of each hour, on the hour. The CPU usage on the primary domain
+	controller may also peak on the hour (with high usage by the LSASS process).
+	
+	CAUSE
+	=====
+	
+	This behavior occurs because Collection Evaluator on a primary site erroneously
+	calls GetUserGroups a number of times during collection processing. Creating,
+	deleting, or modifying a collection causes GetUserGroups to be called numerous
+	times in quick succession (possibly up to 15 times).
+	
+	If many SMS primary sites share the same domain and there is a lot of collection
+	activity, the primary domain controller may experience peaks in processor
+	activity while it is handling multiple GetUserGroups calls.
+	
+	WORKAROUND
+	==========
+	
+	You can reduce the number of GetUserGroups calls that are sent to the domain
+	controllers by extending the collection refresh times or by disabling collection
+	refreshes altogether.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, obtain the latest service pack for Systems Management
+	Server version 2.0. For additional information, please see the following article
+	in the Microsoft Knowledge Base:
+	
+	  Q236325 How to Obtain the Latest Systems Management Server 2.0 Service Pack
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Systems Management Server
+	version 2.0. This problem was first corrected in Systems Management Server
+	version 2.0 Service Pack 2.
+	
+	
+	Additional query words: prodsms colleval
+	
+	======================================================================
+	Keywords          : kbsms200 kbsms200bug kbsms200sp2fix 
+	Technology        : kbSMSSearch kbSMS200 kbSMS200SP1
+	Version           : winnt:2.0,2.0 SP1
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

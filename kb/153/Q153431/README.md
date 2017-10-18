@@ -1,0 +1,179 @@
+---
+layout: page
+title: "Q153431: Explorapedia People: Listing of Files Installed and Modified"
+permalink: kb/153/Q153431/
+---
+
+## Q153431: Explorapedia People: Listing of Files Installed and Modified
+
+	Article: Q153431
+	Product(s): Microsoft Home Kids Products
+	Version(s): WINDOWS:1.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 23-DEC-1999
+	
+	1.0
+	WINDOWS
+	kbref
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Explorapedia series: World of People for Windows, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The following files and folders are created and/or installed onto the hard drive
+	of your computer during installation of Explorapedia, World of People:
+	
+	C:\MSKIDS
+	
+	.              <DIR>        06-15-96  3:22p .
+	..             <DIR>        06-15-96  3:22p ..
+	USERS          <DIR>        06-15-96  3:22p USERS
+	SHARED         <DIR>        06-15-96  3:22p SHARED
+	EXPLORA        <DIR>        06-15-96  3:22p EXPLORA
+	1 file(s)              0 bytes
+	
+	Directory of C:\MSKIDS\EXPLORA
+	
+	.              <DIR>        06-15-96  3:22p .
+	..             <DIR>        06-15-96  3:22p ..
+	PEOPLE         <DIR>        06-15-96  3:22p PEOPLE
+	PEOPLE   LST        94,590  03-31-95  1:01a PEOPLE.LST
+	PEOPLE   MDF        27,360  03-31-95  1:01a PEOPLE.MDF
+	PEOPLE   TBL         1,915  03-31-95  1:01a PEOPLE.TBL
+	PEOPLE   TOP         1,472  03-31-95  1:01a PEOPLE.TOP
+	PEOPLE   MEN         9,546  03-31-95  1:01a PEOPLE.MEN
+	EXPLORA  DLL     1,688,416  03-31-95  1:01a EXPLORA.DLL
+	        6 file(s)      1,823,299 bytes
+	
+	Directory of C:\MSKIDS\EXPLORA\PEOPLE
+	
+	.              <DIR>        06-15-96  3:22p .
+	..             <DIR>        06-15-96  3:22p ..
+	PEOPLE   EXE        48,640  03-31-95  1:01a PEOPLE.EXE
+	PEOPLE   TDF       423,424  03-31-95  1:01a PEOPLE.TDF
+	PEOPLE   DLL       569,984  03-31-95  1:01a PEOPLE.DLL
+	MSPAM    DLL       321,344  03-31-95  1:01a MSPAM.DLL
+	MSPAM    REG         7,741  03-31-95  1:01a MSPAM.REG
+	PEOPLE   INI         1,065  03-31-95  1:01a PEOPLE.INI
+	README   WRI        21,760  03-31-95  1:01a README.WRI
+	EXPLORA  DLL             1  03-31-95  1:01a EXPLORA.DLL
+	        8 file(s)      1,393,959 bytes
+	
+	Directory of C:\MSKIDS\SHARED
+	
+	.              <DIR>        06-15-96  3:22p .
+	..             <DIR>        06-15-96  3:22p ..
+	USERS          <DIR>        06-15-96  3:22p USERS
+	STUFF          <DIR>        06-15-96  3:22p STUFF
+	        0 file(s)              0 bytes
+	
+	Directory of C:\MSKIDS\SHARED\STUFF
+	
+	.              <DIR>        06-15-96  3:22p .
+	..             <DIR>        06-15-96  3:22p ..
+	KIDSCAT  EXE        11,264  09-12-94  1:00a KIDSCAT.EXE
+	        1 file(s)         11,264 bytes
+	
+	Directory of C:\MSKIDS\SHARED\USERS
+	
+	.              <DIR>        06-15-96  3:22p .
+	..             <DIR>        06-15-96  3:22p ..
+	        0 file(s)              0 bytes
+	
+	In addition, the following files are installed into the \WINDOWS
+	and \WINDOWS\SYSTEM directories, and the noted files are
+	modified.
+	
+	C:\WINDOWS\EXPLORA.INI
+	
+	C:\WINDOWS\SYSTEM\ARIALN.TTF
+	C:\WINDOWS\SYSTEM\ACMCMPRS.DLL
+	C:\WINDOWS\SYSTEM\DVA.386
+	C:\WINDOWS\SYSTEM\MEDV12.DLL
+	C:\WINDOWS\SYSTEM\MVFS12.DLL
+	C:\WINDOWS\SYSTEM\MVBRKR12.DLL
+	C:\WINDOWS\SYSTEM\MVSRCH12.DLL
+	C:\WINDOWS\SYSTEM\MVTTL12.DLL
+	C:\WINDOWS\SYSTEM\IMAADPCM.ACM
+	C:\WINDOWS\SYSTEM\MAP_WIN.HLP
+	C:\WINDOWS\SYSTEM\MSADPCM.ACM
+	C:\WINDOWS\SYSTEM\ICCVID.DRV
+	C:\WINDOWS\SYSTEM\IR21_R.DLL
+	C:\WINDOWS\SYSTEM\IR32.DLL
+	C:\WINDOWS\SYSTEM\MSRLE.DRV
+	C:\WINDOWS\SYSTEM\MSVIDC.DRV
+	C:\WINDOWS\SYSTEM\WING.DLL
+	C:\WINDOWS\SYSTEM\WINGDE.DLL
+	C:\WINDOWS\SYSTEM\WINGDIB.DRV
+	C:\WINDOWS\SYSTEM\WINGPAL.WND
+	C:\WINDOWS\SYSTEM\ARIALN.FOT
+	
+	*** FILES AND DIRECTORIES CHANGED ***
+	
+	SYSTEM.INI
+	WAVEMIX.INI
+	POWERPNT.INI
+	WIN.INI
+	CONTROL.INI
+	WIN386.SWP
+	
+	*** SECTIONS ADDED OR CHANGED IN WIN.INI ***
+	
+	[fonts]
+	Arial Narrow (TrueType)=ARIALN.FOT
+	
+	[Microsoft Kids Catalog]
+	CatalogNum=2
+	Path=D:\KIDSCAT\ 
+	ParentCD=The World of People
+	
+	[DrawDib]
+	pnpdrvr.drv 1024x768x8(0)=55,0,0,0
+	
+	*** SECTIONS ADDED OR CHANGED IN SYSTEM.INI ***
+	
+	[drivers]
+	MSACM.imaadpcm=imaadpcm.acm
+	MSACM.msadpcm=msadpcm.acm
+	VIDC.IV32=ir32.dll
+	VIDC.IV31=ir32.dll
+	VIDC.MRLE=msrle.drv
+	VIDC.RT21=ir21_r.dll
+	VIDC.YVU9=ir21_r.dll
+	VIDC.MSVC=msvidc.drv
+	
+	*** SECTIONS ADDED TO THE REGISTRY (Windows 95) ***
+	HKEY_CLASSES_ROOT\MSPAMArena
+	HKEY_CLASSES_ROOT\MSPAMSpriteElement
+	HKEY_CLASSES_ROOT\MSPAMTimeEvent
+	HKEY_CLASSES_ROOT\MSPAMOutputBuffer
+	HKEY_CLASSES_ROOT\MSPAMMediaObjectManager
+	HKEY_CLASSES_ROOT\MSPAMPibList
+	HKEY_CLASSES_ROOT\MSPAMTransEffPib
+	HKEY_CLASSES_ROOT\MSPAMVideo
+	HKEY_CLASSES_ROOT\MSPAMActMan
+	HKEY_CLASSES_ROOT\MSPAMSound
+	HKEY_CLASSES_ROOT\MSPAMTransEffPal
+	HKEY_CLASSES_ROOT\MSPAMPalette
+	HKEY_CLASSES_ROOT\MSPAMPibMD
+	HKEY_CLASSES_ROOT\MSPAMPibListMD
+	HKEY_CLASSES_ROOT\MSPAMPaletteMD
+	HKEY_CLASSES_ROOT\MSPAMTransEffCumPib
+	HKEY_CLASSES_ROOT\MSPAMExploraNatureTitle
+	HKEY_CLASSES_ROOT\MSPAMExploraPeopleTitle
+	
+	Additional query words: kids mskids kbmm multimedia multi-media multi media file files directory directories setup install installed explorapedia people folder folders homekids homekid explora tad
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbHomeMMsearch kbZNotKeyword2 kbExplorapediaPeople100
+	Version           : WINDOWS:1.0
+	
+	=============================================================================
+	

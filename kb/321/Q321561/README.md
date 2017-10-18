@@ -1,0 +1,151 @@
+---
+layout: page
+title: "Q321561: Phantom Connection Count When Keep-Alive Conns Switch HostHeader"
+permalink: kb/321/Q321561/
+---
+
+## Q321561: Phantom Connection Count When Keep-Alive Conns Switch HostHeader
+
+	Article: Q321561
+	Product(s): Internet Information Server
+	Version(s): 4.0,5.0
+	Operating System(s): 
+	Keyword(s): kbCOMIS kbWin2000sp3fix
+	Last Modified: 15-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Server version 4.0 
+	- Microsoft Internet Information Services version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	After you install the fix from the following Microsoft Knowledge Base article
+	
+	  Q319733 MS02-018: April 2002 Cumulative Patch for Internet Information
+	  Services
+	
+	a Web site may return the following error message:
+	
+	  HTTP 403.9: Access Forbidden
+	
+	CAUSE
+	=====
+	
+	If a single site is mapped to multiple Domain Name System (DNS) names and
+	multiple users switch between different DNS names in that site, the connection
+	count is distorted when a keep-alive connection connects to different host
+	headers that are mapped to a single site. A phantom connection count is
+	enumerated each time a connection switches host headers.
+	
+	RESOLUTION
+	==========
+	
+	IIS 4.0:
+	
+	A supported fix is now available from Microsoft, but it is only intended to
+	correct the problem that is described in this article. Apply it only to
+	computers that are experiencing this specific problem.
+	
+	To resolve this problem immediately, download the fix by clicking the download
+	link later in this article or contact Microsoft Product Support Services to
+	obtain the fix. For a complete list of Microsoft Product Support Services phone
+	numbers and information about support costs, visit the following Microsoft Web
+	site:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	NOTE: In special cases, charges that are ordinarily incurred for support calls
+	may be canceled if a Microsoft Support Professional determines that a specific
+	update will resolve your problem. The usual support costs will apply to
+	additional support questions and issues that do not qualify for the specific
+	update in question.
+	
+	The English version of this fix has the file attributes (or later) that are
+	listed in the following table. The dates and times for these files are listed in
+	coordinated universal time (UTC). When you view the file information, it is
+	converted to local time. To find the difference between UTC and local time, use
+	the Time Zone tab in the Date and Time tool in Control Panel.
+	
+	  Date         Time   Version       Size  File name
+	  ----------------------------------------------------
+	  30-Apr-2002  07:31  4.2.776.1  214,544  Adsiis.dll       
+	  30-Apr-2002  07:32  4.2.776.1  330,672  Asp.dll          
+	  30-Apr-2002  07:32  4.2.776.1   34,384  Clusiis4.dll     
+	  30-Apr-2002  07:31  4.2.776.1   55,392  Httpodbc.dll     
+	  30-Apr-2002  07:31  4.2.776.1   98,912  Iischema.dll     
+	  30-Apr-2002  07:30  4.2.776.1   63,984  Iislog.dll       
+	  30-Apr-2002  07:30  4.2.776.1  185,792  Infocomm.dll     
+	  30-Apr-2002  07:30  4.2.776.1   29,520  Iscomlog.dll     
+	  30-Apr-2002  07:31  4.2.776.1   38,256  Ssinc.dll        
+	  30-Apr-2002  07:31  4.2.776.1   25,360  Sspifilt.dll     
+	  30-Apr-2002  07:31  4.2.776.1  231,104  W3svc.dll        
+	  30-Apr-2002  07:30  4.2.776.1   88,032  Wam.dll
+	
+	
+	
+	IIS 5.0:
+	
+	To resolve this problem, obtain the latest service pack for Windows 2000. For
+	additional information, click the following article number to view the article
+	in the Microsoft Knowledge Base:
+	
+	  Q260910 How to Obtain the Latest Windows 2000 Service Pack
+	
+	The English version of this fix has the file attributes (or later) that are
+	listed in the following table. The dates and times for these files are listed in
+	coordinated universal time (UTC). When you view the file information, it is
+	converted to local time. To find the difference between UTC and local time, use
+	the Time Zone tab in the Date and Time tool in Control Panel.
+	
+	  Date         Time   Version        Size     Filename
+	  ------------------------------------------------------
+	  19-Apr-2002  23:08  5.0.2195.5624  348,944  W3svc.dll       
+	
+	
+	WORKAROUND
+	==========
+	
+	To work around this problem if you have already applied MS02-018 to your Web
+	server, follow these steps:
+	
+	1. Click Start, point to Programs, point to Administrative Tools, and then click
+	  Internet Services Manager.
+	
+	2. Right-click the Web site, and then click Properties.
+	
+	3. On the Web Site tab, click to select Unlimited Connections.
+	
+	NOTE: Make sure that you consider any licensing implications that may be involved
+	when you change this property.
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed that this is a problem in IIS 4.0 and 5.0. This problem
+	was first corrected in Windows 2000 Service Pack 3.
+	
+	MORE INFORMATION
+	================
+	
+	For additional information, click the article number below to view the article
+	in the Microsoft Knowledge Base:
+	
+	  Q272235 Internet Connector License Types for Windows 2000
+	
+	Additional query words: kbIISCom
+	
+	======================================================================
+	Keywords          : kbCOMIS kbWin2000sp3fix 
+	Technology        : kbiisSearch kbiis500 kbiis400
+	Version           : :4.0,5.0
+	Hardware          : x86
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

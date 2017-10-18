@@ -1,0 +1,53 @@
+---
+layout: page
+title: "Q74851: Different Default Modes for EMM386.EXE and EMM386.SYS"
+permalink: kb/074/Q74851/
+---
+
+## Q74851: Different Default Modes for EMM386.EXE and EMM386.SYS
+
+	Article: Q74851
+	Product(s): Microsoft Disk Operating System
+	Version(s): MS-DOS:5.0,5.0a,6.0,6.2,6.21,6.22; WINDOWS:3.0,3.0a
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 03-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+	- Microsoft Windows versions 3.0, 3.0a 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Microsoft Windows version 3.0's EMM386.SYS always defaults to OFF mode, whereas
+	MS-DOS version 5.0, 6.0, or 6.2's EMM386.EXE defaults to ON mode. If you want to
+	compare the behavior of these two versions, either specify ON in the EMM386.SYS
+	command line or specify OFF in the EMM386.EXE command line. The command line
+	arguments ON and OFF activate and suspend the operation of the EMM386.EXE device
+	driver.
+	
+	MORE INFORMATION
+	================
+	
+	Certain non-VCPI aware applications may fail when attempting to enter protected
+	mode with EMM386 enabled. These programs cannot sense that EMM386 has already
+	placed the CPU in protected mode and, thus, cause an "EMM386 Privileged
+	operation error" when they attempt to switch into protected mode.
+	
+	Applications that function properly with EMM386.SYS but encounter problems with
+	EMM386.EXE may function properly if EMM386.EXE is loaded with the mode specified
+	as OFF.
+	
+	Additional query words: 6.22 5.00 5.00a 6.00 6.20 3.00 3.00a win
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+	Version           : MS-DOS:5.0,5.0a,6.0,6.2,6.21,6.22; WINDOWS:3.0,3.0a
+	
+	=============================================================================
+	

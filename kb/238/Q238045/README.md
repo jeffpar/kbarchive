@@ -1,0 +1,87 @@
+---
+layout: page
+title: "Q238045: Encarta Reference Suite 2000: Setup Stops Responding"
+permalink: kb/238/Q238045/
+---
+
+## Q238045: Encarta Reference Suite 2000: Setup Stops Responding
+
+	Article: Q238045
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): WINDOWS:
+	Operating System(s): 
+	Keyword(s): kb3rdparty kbsetup kbimu
+	Last Modified: 25-JUN-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Encarta Reference Suite 2000 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you attempt to install Microsoft Encarta Reference Suite 2000, Setup may
+	stop responding (hang).
+	
+	CAUSE
+	=====
+	
+	This behavior can occur if McAfee Nuts & Bolts 98 is installed on your
+	computer.
+	
+	RESOLUTION
+	==========
+	
+	To work around this issue, remove McAfee Nuts & Bolts 98, install Encarta
+	Reference Suite 2000, and then reinstall McAfee Nuts & Bolts 98. To do
+	this:
+	
+	1. Press CTRL+ALT+DELETE to open the Close Program dialog box.
+	
+	2. Click Setup.exe, and then click End Task.
+	
+	  If you receive a message stating that the program is busy or not responding,
+	  click End Task again.
+	
+	  NOTE: If the program does not quit, press the restart button on the front of
+	  your computer.
+	
+	3. Click Start, point to Settings, and then click Control Panel.
+	
+	4. Double-click Add/Remove Programs.
+	
+	5. In the list of installed programs, click McAfee Nuts & Bolts 98, and then
+	  click Add/Remove.
+	
+	6. Click OK, and then click OK again.
+	
+	7. Close Control Panel.
+	
+	8. Insert the Encarta Reference Suite 2000 Installation and Resources Disc
+	  CD-ROM into the CD-ROM or DVD-ROM drive.
+	
+	9. Follow the instructions on the screen to install Encarta Reference Suite
+	  2000.
+	
+	10. Reinstall McAfee Nuts & Bolts 98.
+	
+	MORE INFORMATION
+	================
+	
+	The third-party products discussed in this article are manufactured by vendors
+	independent of Microsoft; we make no warranty, implied or otherwise, regarding
+	these products' performance or reliability.
+	
+	Additional query words: multi multi-media media mm ers2k hang freeze lock
+	
+	======================================================================
+	Keywords          : kb3rdparty kbsetup kbimu 
+	Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaReference2000
+	Version           : WINDOWS:
+	Issue type        : kbprb
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

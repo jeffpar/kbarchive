@@ -1,0 +1,249 @@
+---
+layout: page
+title: "Q166090: MSN Support in Windows NT"
+permalink: kb/166/Q166090/
+---
+
+## Q166090: MSN Support in Windows NT
+
+	Article: Q166090
+	Product(s): The Microsoft Network
+	Version(s): 2.5,2.6,2000,3.5,3.51,4.0,5.0,5.1
+	Operating System(s): 
+	Keyword(s): kberrmsg kbhowtokbfaq
+	Last Modified: 15-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- the operating system: Microsoft Windows NT, versions 3.5, 3.51, 4.0 
+	- the operating system: Microsoft Windows 2000 
+	- The Microsoft Network versions 2.5, 2.6, 5.0, 5.1 
+	-------------------------------------------------------------------------------
+	
+	
+	NOTE: MSN, The Microsoft Network, is not currently supported with Windows NT. Although the information in this article should work as described, use this information at your own risk. There is no formal product support available from Microsoft for using MSN with Windows NT.
+	
+	SUMMARY
+	=======
+	
+	This article discusses the following topics concerning support for MSN in
+	Windows NT:
+	
+	- Does the MSN Software Work in Windows NT?
+	
+	- Can I Access My MSN E-mail from Windows NT?
+	
+	- Does the Internet Connection Wizard Work in Windows NT?
+	
+	- How Do I Sign Up for an MSN Account Using Windows NT?
+	
+	- How Do I Configure Windows NT to Use an MSN Account for Internet Access?
+	
+	- How Do I Troubleshoot Connections to MSN in Windows NT?
+	
+	MORE INFORMATION
+	================
+	
+	Does the MSN Software Work in Windows NT?
+	-----------------------------------------
+	
+	MSN 5.1 software is designed for use in Windows 95, 98, 98SE, and Windows 2000.
+	MSN 5.1 is available on a CD-ROM that you can order or downloaded from MSN at
+	http://free.msn.com/.
+	
+	Although the MSN software does not currently run in Windows NT, you can still use
+	your MSN account to access the Internet from Windows NT (see the section titled
+	"How Do I Configure Windows NT to Use an MSN Account for Internet Access?" in
+	this article).
+	
+	Can I Access My MSN E-mail from Windows NT?
+	-------------------------------------------
+	
+	You can access your MSN e-mail from Windows NT when you have migrated your MSN
+	e-mail account to the MSN POP3/SMTP mail servers. You cannot access your MSN
+	e-mail from Windows NT if you are using the Classic MSN mail servers. You can
+	migrate your MSN e-mail account using MSN version 2.5 or higher on a computer
+	running Windows 95, 98, or 98SE. Once the account has been successfully migrated
+	then you can access your MSN e-mail from Windows NT using an Internet mail
+	program. Future versions of MSN may be compatible with Windows NT.
+	
+	For additional information about migrating your MSN e-mail account, see the
+	following article in the Microsoft Knowledge Base:
+	
+	  ARTICLE-ID: Q176276
+	  TITLE : Frequently Asked Questions About Mail Migration on MSN
+	
+	
+	Does the Internet Connection Wizard Work in Windows NT?
+	-------------------------------------------------------
+	
+	The Internet Connection Wizard (ICW) is part of the Internet Starter Kit (ISK)
+	and is also included with some versions of Microsoft Internet Explorer for
+	Windows NT. The ICW included with the ISK does not work in Windows NT 4.0. The
+	ICW that ships with Internet Explorer 4.0 or 4.01 works properly on Windows NT
+	4.0. For information about running the ICW in Windows NT 3.51, see the following
+	article in the Microsoft Knowledge Base:
+	
+	  ARTICLE-ID: Q159686
+	  TITLE : Manual Setup for Internet Explorer 3x. and 4.x in Windows 95/98
+	
+	For additional information, see the Readme.txt file included with your version of
+	the ISK.
+	
+	
+	How Do I Sign Up for an MSN Account Using Windows NT?
+	-----------------------------------------------------
+	
+	MSN accounts can be obtained or established using the MSN software that is
+	available in Windows 95 or by obtaining an MSN CD by calling 1 (800) FREE-MSN ,
+	or by calling The Microsoft Network Customer Service at (800) 386-5550 and
+	requesting that an account for Internet PPP access be set up manually.
+	
+	How Do I Configure Windows NT to Use an MSN Account for Internet Access?
+	------------------------------------------------------------------------
+	
+	The following information is for users who already have an MSN account. MSN
+	offers direct dial-up Point-to-Point Protocol (PPP) support for accessing the
+	Internet. The following steps describe how to access the Internet using the
+	Windows NT Remote Access Service (RAS) to connect to an MSN PPP server.
+	
+	To connect to an MSN PPP server using Windows NT 4.0, use the following steps:
+	
+	1. Install RAS as a network service using the Network tool in Control Panel.
+	
+	2. Double-click My Computer, and then double-click Dial-Up Networking.
+	
+	3. Click OK (or the New button) to add a new phone book entry. Configure the
+	  entry as follows:
+	
+	  a. Type a description in the "Name the new phone book entry" box, and then
+	     click Next.
+	
+	  b. Click the I Am Calling The Internet check box to select it, and then click
+	     Next.
+	
+	  c. Click the Use Telephony Dialing Properties check box to select it, type
+	     your local MSN access number, and then click Next.
+	
+	  d. Click Finish, click More, and then click Edit Entry And Modem Properties.
+	
+	  e. Click the Server tab, and then click the Enable PPP LCP Extensions check
+	     box to clear it. See the "How Do I Troubleshoot Connections to MSN in
+	     Windows NT?" section in this article for more information about this step.
+	
+	  f. Click the Security tab, click "Accept any authentication including clear
+	     text", and then click OK.
+	
+	4. Click Dial.
+	
+	  a. Use "MSN/<your MSN user ID>" (without quotation marks) as your user
+	     name. See the "How Do I Troubleshoot Connections to MSN in Windows NT?"
+	     section in this article for information about user name requirements.
+	
+	  b. Use your MSN password as your password.
+	
+	  c. Leave the Domain box blank.
+	
+	To connect to an MSN PPP server using Windows NT 3.5x, use the following steps:
+	
+	1. Install RAS in Windows NT.
+	
+	2. Start the Remote Access client software (Rasphone.exe).
+	
+	3. Create a new RAS phone book entry, using the following steps:
+	
+	  a. Click Add to create a new entry.
+	
+	  b. Type the entry name, phone number (same local dial-up number normally used
+	     to access MSN, and a description.
+	
+	  c. Clear the "Authenticate using current user name and password" check box
+	     and then click Advanced (if you have not done so already).
+	
+	  d. Click Network.
+	
+	  e. Click the PPP and TCP/IP check boxes to select them. Clear the NetBEUI and
+	     IPX check boxes if they are not already cleared.
+	
+	  f. Clear the "Request LCP extensions (RFC 1570)" check box.
+	
+	  g. Click TCP/IP Settings, and enable the Server Assigned IP Address and
+	     Server Assigned Name Server Addresses options. Also, make sure the "Use
+	     default gateway on remote network" check box is selected. Click OK, and
+	     then click OK.
+	
+	  h. In the Add Phone Book Entry dialog box, click Security.
+	
+	  i. Enable the "Accept any authentication including clear text" option.
+	
+	  j. Accept these settings by clicking OK. Click OK in the Add Phone Book Entry
+	     dialog box.
+	
+	4. Click the new phone book entry, and then click Dial.
+	
+	  a. Use "MSN/<your MSN user ID>" (without quotation marks) as your user
+	     name. See the "How Do I Troubleshoot Connections to MSN in Windows NT?"
+	     section in this article for information about user name requirements.
+	
+	  b. Use your MSN password as your password.
+	
+	  c. Leave the Domain box blank.
+	
+	  d. Click OK to dial.
+	
+	How Do I Troubleshoot Connections to MSN in Windows NT?
+	-------------------------------------------------------
+	
+	"Access Is Denied" Error Message:
+	
+	There are two causes for the above message as follows:
+	
+	- If you attempt to dial into a MSN account and this account is already in use
+	  you will get the error. MSN does not allow concurrent connections.
+	
+	  -or-
+	
+	- If you have incorrectly entered your user name or password when you are
+	  dialing in to MSN, you receive the error. Check your user name and password
+	  entries when dialing. The "MSN" prefix must be capitalized, and the MSN
+	  account name is case sensitive. The combination of "MSN/" and your user name
+	  cannot exceed 20 characters.
+	
+	"Bad IP Address" Error Message or No Connectivity:
+	
+	If Windows NT Dial-Up Networking attempts to negotiate the Multilinking Protocol
+	(MP) with the MSN PPP server, you may receive the following error message when
+	you try to connect to Internet resources:
+	
+	  Bad IP Address
+	
+	Or, you may simply be unable to connect to Internet resources. Make sure that you
+	have cleared the Enable PPP LCP Extensions check box or, if you have Service
+	Pack 2 installed, see the following article in the Microsoft Knowledge Base:
+	
+	  ARTICLE-ID: Q161368
+	  TITLE : Service Pack 2 May Cause Loss of Connectivity in Remote Access
+	
+	For more information about issues with Windows NT 4.0, LCP extensions, and the
+	Multilinking Protocol, see the following article in the Microsoft Knowledge
+	Base:
+	
+	  ARTICLE-ID: Q161986
+	  TITLE : Troubleshooting Internet Service Provider Login Problems
+	
+	For more information about issues with MSN support when using Windows 2000, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q238510 Using MSN Internet Services on Windows 2000
+	
+	Additional query words: dial up isp provider dun ntfaqipr
+	
+	======================================================================
+	Keywords          : kberrmsg kbhowto kbfaq
+	Technology        : kbOSWin2000 kbOSWinSearch kbOSWinNT350 kbOSWinNT400 kbOSWinNT351 kbMSNSearch kbMSN510 kbMSN500 kbMSN260 kbMSN250 kbOSWinNTSearch
+	Version           : :2.5,2.6,2000,3.5,3.51,4.0,5.0,5.1
+	Issue type        : kbhowto kbinfo
+	
+	=============================================================================
+	

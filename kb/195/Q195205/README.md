@@ -1,0 +1,74 @@
+---
+layout: page
+title: "Q195205: Outlook/Schedule+ Error &quot;req32.cfg could not be opened&quot;"
+permalink: kb/195/Q195205/
+---
+
+## Q195205: Outlook/Schedule+ Error &quot;req32.cfg could not be opened&quot;
+
+	Article: Q195205
+	Product(s): Microsoft Schedule+ for Windows
+	Version(s): WINDOWS:7.0,7.5,97
+	Operating System(s): 
+	Keyword(s): kbinterop
+	Last Modified: 27-OCT-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Schedule+, versions 7.0, 7.5 
+	- Microsoft Outlook 97 
+	- Microsoft Outlook 98 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When using Microsoft Schedule+ as your primary calendar in Microsoft Outlook,
+	you may receive the following error message when attempting to start Schedule+
+	from within Outlook:
+	
+	  The file '<drive>:\<OS>\forms\configs\req32.cfg' could not be
+	  opened.
+	  Microsoft Exchange Forms Registry.
+	
+	The Configs folder does not exist and the Req32.cfg file resides in a different
+	folder.
+	
+	CAUSE
+	=====
+	
+	The Microsoft Exchange client is not installed on this computer.
+	
+	WORKAROUND
+	==========
+	
+	Include the Exchange client during the installation of Schedule+.
+	
+	MORE INFORMATION
+	================
+	
+	The Exchange client controls the workgroup functionality of Schedule+. Without
+	it Schedule+ is installed in standa-lone mode. Outlook does not detect whether
+	Schedule+ has workgroup capabilities when being configured to use Schedule+ as
+	its primary calendar. It only requires that Schedule+ be installed and
+	operational.
+	
+	If you start Schedule+ from the Start, Programs menu, you are not presented the
+	dialog box to choose the options to work in group-enabled mode or to work alone.
+	It provides the options to create a new schedule file or to use and existing
+	schedule file but does not offer the option to NOT have a schedule file on this
+	machine. This is because Schedule+ does not have online capabilities without
+	Exchange client being installed.
+	
+	
+	Additional query words: OL98 OL97 Sched+
+	
+	======================================================================
+	Keywords          : kbinterop 
+	Technology        : kbOutlookSearch kbZNotKeyword2 kbScheduleSearch kbSchedule700 kbOutlook97Search kbOutlook98Search kbZNotKeyword3 kbSchedule750
+	Version           : WINDOWS:7.0,7.5,97
+	Issue type        : kbprb
+	
+	=============================================================================
+	

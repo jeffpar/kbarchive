@@ -1,0 +1,260 @@
+---
+layout: page
+title: "Q232340: Zone Err Msg: Failed to Download &lt;Filename&gt;"
+permalink: kb/232/Q232340/
+---
+
+## Q232340: Zone Err Msg: Failed to Download &lt;Filename&gt;
+
+	Article: Q232340
+	Product(s): Microsoft Home Games
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kberrmsg kbimu msgamekbfaq
+	Last Modified: 30-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Zone.com 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	While the Zone is downloading new software, you may receive one of the following
+	error messages:
+	
+	  Failed to download http://fdl.msn.com/zone/dir/filename
+	
+	where dir is the name of a subdirectory in the zone directory. and where filename
+	is the name of an Zone file.
+	
+	When you click OK, you may receive the following error message:
+	
+	  ZSetup was started, but rejected the component data.
+	  Please verify that your Zone installation is valid.
+	
+	CAUSE
+	=====
+	
+	This behavior can occur if any of the following conditions are true:
+	
+	- You are using outdated Zone Web pages.
+	
+	- Certain Zone data files are missing or damaged.
+	
+	- The Hosts file on your computer contains an incorrect or outdated entry for
+	  fdl.msn.com.
+	
+	- Conditions on the Internet temporarily prevent you from downloading the new
+	  files.
+	
+	- You are using America Online's (AOL's) Parental Controls feature.
+	
+	- You connect to the Internet through a proxy server or firewall.
+	- The Zone.com game room or lobby you are connecting to is not accessing the
+	  correct files.
+	
+	- The Zone software is not installed properly.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, use the following methods in the order in which they are
+	presented. If the issue continues to occur, proceed to the next method.
+	
+	Join a Different Game Room or Lobby
+	-----------------------------------
+	
+	If the game you are play has multiple game rooms or lobbies, try joining a
+	different one.
+	
+	Ensure That You Are Using the Latest Zone Web Pages
+	---------------------------------------------------
+	
+	To ensure that you are using the latest Zone Web pages, empty the Temporary
+	Internet Files folder on your computer.
+	
+	For additional information about how to empty the Temporary Internet Files folder
+	on your computer, click the article number below to view the article in the
+	Microsoft Knowledge Base:
+	
+	  Q310731 Zone: Error Message When You Attempt to Connect to a Secure Zone Web
+	  Page: The Page Cannot Be Displayed
+	
+	Remove and Reinstall the Zone.zat File and the Zsetup Folder
+	------------------------------------------------------------
+	
+	To remove and reinstall the Zone.zat file and the Zsetup folder:
+	
+	1. Click Start, point to Find, and then click Files Or Folders.
+	
+	2. In the Named box, type "zone.za?"zsetup"" (without the quotation marks).
+	
+	3. In the Look In box, click My Computer, and then click Find Now.
+	
+	4. On the Edit menu, click Select All.
+	
+	5. On the File menu, click Delete. When you receive a prompt to confirm the file
+	  deletion, click Yes.
+	
+	  NOTE: By default, this file is located in the following folder:
+	
+	  C:\Program Files\MSN Gaming Zone
+	
+	6. Close the "Find: Files Named Zone.za? "Zsetup"" window.
+	
+	7. To reinstall the Zone.zat file and the ZSetup folder, connect to Zone.com at
+	  the following Web site:
+	
+	  http://zone.msn.com
+	
+	  The missing files are installed automatically the next time you connect to a
+	  game room.
+	
+	Remove Outdated fdl.msn.com Entries in Your Hosts File
+	------------------------------------------------------
+	
+	For additional information about how to remove outdated fdl.msn.com entries from
+	your Hosts file, click the article number below to view the article in the
+	Microsoft Knowledge Base:
+	
+	  Q221125 Cannot Connect to the Zone Servers
+	
+	Reconnect to the Zone at a Later Time
+	-------------------------------------
+	
+	If the issue continues to occur, disconnect from the Zone and attempt to
+	reconnect at a later time.
+	
+	Many files on the Zone are updated frequently. However, older Zone files may be
+	cached on servers throughout the Internet. As a result, it may take up to
+	several hours for the new Zone files to replace the cached files.
+	
+	Adjust the Parental Controls Settings
+	-------------------------------------
+	
+	To resolve this issue, configure the AOL Parental Controls Web Control component
+	to allow access to the Zone:
+	
+	1. On the My AOL button, click Parental Controls.
+	
+	2. Click Set Parental Controls.
+	
+	3. In the Edit controls for box, click the account you want to change.
+	
+	4. Click Web Control.
+	
+	5. Click Access all Web Sites (recommended for adults only).
+	
+	6. Click Save, and then click OK.
+	
+	7. Close the Parental Controls windows.
+	
+	Configure the Proxy Server
+	--------------------------
+	
+	For additional information how to configure a proxy server for use with the Zone,
+	click the article number below to view the article in the Microsoft Knowledge
+	Base:
+	
+	  Q159031 Zone: Connecting to the Zone Through a Firewall or Proxy Server
+	
+	Clear the 'Use a Proxy Server' Checkbox
+	---------------------------------------
+	
+	To clear the Use a Proxy Server checkbox, follow the steps appropriate to your
+	version of Internet Explorer:
+	
+	Internet Explorer 5.0
+	
+	1. On the Tools menu in Internet Explorer, click Internet Options.
+	
+	2. On the Connection tab then click Lan Settings.
+	
+	3. Click to clear the Use a proxy server check box, and then click OK.
+	
+	Internet Explorer 4.0
+	
+	1. On the Tools menu in Internet Explorer, click Internet Options.
+	
+	2. Click the Connection tab then click Lan Settings.
+	
+	3. Click to clear the Use a proxy server check box, and then click OK.
+	
+	Remove and Reinstall Zone
+	-------------------------
+	
+	To remove and reinstall the Zone software:
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click Add/Remove Programs.
+	
+	3. Click the Install/Uninstall tab. Click Microsoft Zone.com, and then click
+	  Add/Remove.
+	
+	4. Follow the instructions on the screen to remove the Zone.
+	
+	5. Remove the Zone Heartbeat ActiveX control or plug-in.
+	
+	For additional information about how to do this, click the article number below
+	to view the article in the Microsoft Knowledge Base:
+	
+	  Q225041 Zone: How to Remove the Heartbeat ActiveX Control
+	
+	6. Connect to the following Zone Web site:
+	
+	  http://zone.msn.com
+	
+	  The first time you connect to the Zone Web site, the Zone automatically
+	  installs the basic Zone software. Additional software is installed when you
+	  visit game rooms and chat rooms.
+	
+	Copy Zone Files From Another Computer
+	-------------------------------------
+	
+	Copy the file(s) referenced in the message from another computer that has
+	downloaded them successfully:
+	
+	1. On another PC, click Start, click Find, and then click Files or Folders.
+	
+	2. Type the file name in the Named box.
+	
+	3. In the Look In box, click to select My Computer.
+	
+	4. Click Find Now.
+	
+	5. Insert a floppy disk into drive A.
+	
+	6. Right-click the file(s), and then click "Send To 3 1/2 Floppy (A)".
+	
+	7. Stretch the In Folder column to see the whole folder name, until '...' is no
+	  longer visible. Write the folder name(s) down.
+	
+	8. Insert the floppy into the PC that received the message.
+	
+	9. Right-click My Comptuer, and then click Explore.
+	
+	10. Click "3 1/2 Floppy (A)".
+	
+	11. Right click the File(s), then click Copy.
+	
+	12. Click the plus signs (+) to the left of the hard disks and folders to
+	  navigate to the folder name(s) you wrote down in step 7.
+	
+	13. Click the yellow folder for the name.
+	
+	14. From the Edit menu, click Paste.
+	
+	Additional query words: msgame igz msngz master.dat zone.dat Asherons Call
+	
+	======================================================================
+	Keywords          : kberrmsg kbimu msgame kbfaq
+	Technology        : kbGamesSearch kbMSNSearch kbZone
+	Version           : :
+	Issue type        : kbprb
+	
+	=============================================================================
+	

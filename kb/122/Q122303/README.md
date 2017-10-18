@@ -1,0 +1,187 @@
+---
+layout: page
+title: "Q122303: FIX: &#95;&#95;declspec(dllimport) Classes Are Not Caught Correctly"
+permalink: kb/122/Q122303/
+---
+
+## Q122303: FIX: &#95;&#95;declspec(dllimport) Classes Are Not Caught Correctly
+
+	Article: Q122303
+	Product(s): Microsoft C Compiler
+	Version(s): 2.0
+	Operating System(s): 
+	Keyword(s): kbCompiler kbCPPonly kbVCkbbuglist kbfixlist
+	Last Modified: 13-NOV-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual C++, 32-bit Editions, version 2.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	C++ Exception Handling (EH) can be used to throw and catch objects of a
+	specified type. If a class declared with the __declspec(dllimport) keyword is
+	thrown, it will not be recognized by the catch handler for that type.
+	
+	If a handler for unspecified types, catch (...), is present, the
+	__declspec(dllimport) object will be caught in that handler. Otherwise, it will
+	not be handled, and an exception will terminate the application or cause a
+	general protection (GP) fault.
+	
+	RESOLUTION
+	==========
+	
+	To work around this problem, derive a class from the __declspec(dllimport)
+	class, and throw or catch an object of the derived class.
+	
+	If you are throwing the derived object in one .DLL or .EXE, and catching it in
+	another, you must do the same derivation in each module.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article. This problem was fixed in Microsoft Visual C++,
+	32-bit Edition, version 4.0.
+	
+	MORE INFORMATION
+	================
+	
+	The following sample application demonstrates the problem with catching
+	__declspec(dllimport) classes and the workaround of using a derived class.
+	
+	Here's the output:
+	
+	  In the EXE.
+	  In the DLL.
+	  In the EXE again.
+	  Throwing ExceptionI...
+	  DLL: ExceptionI was not caught as correct type.
+	  Throwing ExceptionII...
+	  EXE: Class ExceptionII caught: code = 0.
+	
+	Sample Code
+	-----------
+	
+	  /* dllsamp.cpp : Defines the implementation routines for the DLL
+	  *  Compile options needed: /GX dllsamp.cpp /link /DLL
+	  */ 
+	
+	  #include <iostream.h>
+	
+	  // ExceptionI is declared with _declspec(dllimport), and will not be
+	  // caught correctly
+	  class __declspec(dllexport) ExceptionI {
+	     int code;
+	   public:
+	     ExceptionI();
+	     ExceptionI(int i);
+	     ~ExceptionI() {};
+	     int GetCode(void);
+	  };
+	
+	  ExceptionI::ExceptionI (void)
+	  { code = 0; }
+	
+	  ExceptionI::ExceptionI (int i)
+	  { code = i; }
+	
+	  int ExceptionI::GetCode(void)
+	  { return code; }
+	
+	  // ExceptionII is derived from ExceptionI, and will be caught correctly
+	  class ExceptionII : public ExceptionI {};
+	
+	  __declspec(dllexport) void dllfunc(void (*exefunc)(void))
+	  {
+	   try
+	     {
+	     cout << "In the DLL." <<endl;
+	     exefunc();
+	     }
+	   catch (ExceptionI x)
+	     {
+	     cout << "DLL: Class ExceptionI caught: code = " << x.GetCode() <<
+	  "." << endl;
+	     cout << "Throwing ExceptionII..." << endl;
+	     throw ExceptionII();
+	     }
+	   catch (...)
+	     {
+	     cout << "DLL: ExceptionI was not caught as correct type." << endl;
+	     cout << "Throwing ExceptionII..." << endl;
+	     throw ExceptionII();
+	     }
+	  }
+	
+	  /* exesamp.cpp : Defines the implementation routines for the EXE
+	  *  Compile options needed: /GX exesamp.cpp /link dllsamp.lib
+	  */ 
+	
+	  #include <iostream.h>
+	
+	  __declspec(dllimport) void dllfunc(void (*exefunc)(void));
+	
+	  class __declspec(dllimport) ExceptionI {
+	     int code;
+	   public:
+	     ExceptionI();
+	     ExceptionI(int i);
+	     ~ExceptionI() {};
+	     int GetCode(void);
+	  };
+	
+	  // ExceptionII needs to be defined in both modules to be caught correctly
+	  class ExceptionII : public ExceptionI {};
+	
+	  void exefunc(void);
+	
+	  void main(void)
+	  {
+	   try
+	     {
+	     cout << "In the EXE." << endl;
+	     dllfunc(exefunc);
+	     }
+	   catch (ExceptionII x)
+	     {
+	     cout << "EXE: Class ExceptionII caught: code = " << x.GetCode() <<
+	  "." << endl;
+	     }
+	   catch (...)
+	     {
+	     cout << "EXE: ExceptionII was not caught as correct type." << endl;
+	     }
+	  }
+	
+	  void exefunc(void)
+	  {
+	   try
+	     {
+	      cout << "In the EXE again." << endl;
+	      cout << "Throwing ExceptionI..." << endl;
+	      throw ExceptionI(-1);
+	     }
+	   catch (ExceptionI x)
+	     {
+	     cout << "EXE: Class ExceptionI caught: code = " << x.GetCode() <<
+	  "." << endl;
+	     cout << "Throwing ExceptionI..." << endl;
+	     throw ExceptionI(-1);
+	     }
+	  }
+	
+	Additional query words: 2.00 9.00 gpf gpfault buglist2.00 compiler
+	
+	======================================================================
+	Keywords          : kbCompiler kbCPPonly kbVC kbbuglist kbfixlist
+	Technology        : kbVCsearch kbAudDeveloper kbVC200 kbVC32bitSearch
+	Version           : :2.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

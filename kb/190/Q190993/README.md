@@ -1,0 +1,99 @@
+---
+layout: page
+title: "Q190993: XADM: Events Service Fails to Start with MAPI 0x80040107"
+permalink: kb/190/Q190993/
+---
+
+## Q190993: XADM: Events Service Fails to Start with MAPI 0x80040107
+
+	Article: Q190993
+	Product(s): Microsoft Exchange
+	Version(s): 5.5
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 13-APR-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you attempt to start the Events Service in the Windows NT Control Panel
+	Services, the service does not start and the following error message occurs:
+	
+	  Could not start the Microsoft Exchange Event Service service on
+	  <servername>
+	  Error 2140: An internal Windows NT error occurred.
+	
+	Also, the following event will be logged in the application log of the Event
+	Viewer:
+	
+	  Event ID   : 5
+	  Source     : MSExchangeES
+	  Type       : Error
+	  Category   : General
+	  Description: An unexpected MAPI error occurred. Error returned
+	               was [0x80040107].
+	
+	CAUSE
+	=====
+	
+	One of the .dlls use by the Events Service is corrupt.
+	
+	The EventConfig public folder for the server is invalid or there are multiple
+	copies of this public folder.
+	
+	WORKAROUND
+	==========
+	
+	Stop the Exchange Server services and copy the following DLLs from the original
+	Exchange Server 5.5 disc:
+	
+	- emsmdb32.dll
+	
+	- mapi32.dll
+	
+	The location on the disc is: Server\Setup\<Platform>
+	
+	In case there are multiple copies of the EventConfig public folder for this
+	server, following the steps in the following article to get rid of the duplicate
+	public folders.
+	
+	  Q187523 XADM: How to Remove Duplicate EventConfig Folders
+	
+	MORE INFORMATION
+	================
+	
+	MAPI error 0x80040107 is "Invalid EntryID." Removing and reinstalling the Events
+	Service will not resolve this issue because those files will not be replaced
+	with the originals.
+	
+	Other files included in the Events Service program include the following:
+	
+	- Events.exe
+	
+	- Eventmsg.dll
+	
+	- Esconf.dll
+	
+	- Ss.dll
+	
+	- Scripto.dll
+	
+	- Exflow.dll
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+	Version           : :5.5
+	Issue type        : kbprb
+	
+	=============================================================================
+	

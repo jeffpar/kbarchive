@@ -1,0 +1,126 @@
+---
+layout: page
+title: "Q197192: HOWTO: Find the Full Path of an Executable Given the Extension"
+permalink: kb/197/Q197192/
+---
+
+## Q197192: HOWTO: Find the Full Path of an Executable Given the Extension
+
+	Article: Q197192
+	Product(s): Microsoft FoxPro
+	Version(s): 2.6,2.6a,3.0,3.0b,5.0,5.0a,6.0
+	Operating System(s): 
+	Keyword(s): kbAPI kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600
+	Last Modified: 01-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft FoxPro for Windows, versions 2.6, 2.6a 
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Sometimes you might need to determine the full pathname to a Windows executable
+	file, such as Microsoft Word or Excel. Passing a file with the desired
+	extension, be it .DOC, .XLS, .PPT, etc. to the Windows API function
+	FindExecutable is one easy way to do this. You can use this function in both
+	16-bit FoxPro for Windows and 32-bit Visual FoxPro.
+	
+	MORE INFORMATION
+	================
+	
+	Save and execute the following program, FindExec.prg. FindExec.prg creates a
+	dummy file named Sample.doc and uses this file to find the full path to
+	Microsoft Word. The filename can be altered to find the executable associated
+	with any registered file type.
+	
+	FindExecutable returns an integer value greater than 32 when it is successful.
+	Other error codes indicate that no association exists, that the specified file
+	or path does not exist, or that the function failed because of insufficient
+	memory.
+	
+	Sample Code
+	-----------
+	
+	     * FindExec.prg
+	     *
+	     * This example demonstrates Visual FoxPro and FPW2.6 code to find the
+	     * location of Word for Windows based on a file association.
+	     *
+	     * A file with the specific association must already exist for
+	     * FindExecutable to work correctly. Therefore, the sample creates
+	     * a fictitious file with a .DOC extension.
+	     *
+	     * If an association is not present, FindExecutable will
+	     * return an empty string.
+	
+	     * Modify this string to SAMPLE.XLS to find the path to Excel.
+	     lcSampleDoc = "SAMPLE.DOC"
+	     lihandle = FCREATE(lcSampleDoc)
+	     =FCLOSE(lihandle)
+	
+	     lpFile = lcSampleDoc
+	     lpDirectory = ''
+	     lpResults = SPACE(128)
+	
+	     * Any VFP version.
+	     IF ("VISUAL FOXPRO" $ UPPER(VERSION()))
+	        DECLARE INTEGER FindExecutable IN SHELL32 ;
+	           STRING@lpFile, STRING@lpDirectory, ;
+	           STRING @lpResults
+	
+	        liReturnValue = FindExecutable(@lpFile, @lpDirectory,@lpResults)
+	
+	     ELSE
+	     * FPW 2.x version.
+	        SET LIBRARY TO HOME() + "foxtools.fll"
+	        lfFindExe = RegFn("FindExecutable", "@C@C@C", "I", ;
+	           "SHELL.DLL")
+	
+	        liReturnValue = CallFn(lfFindExe, @lpFile, @lpDirectory, @lpResults)
+	     ENDIF
+	
+	     * Interpret the return code.
+	     DO CASE
+	     CASE liReturnValue = 0
+	        ? "FindExecutable failed: Out of memory or resources"
+	     CASE liReturnValue = 31
+	        ? "FindExecutable failed: No association for file type"
+	     CASE liReturnValue = 2
+	        ? "FindExecutable failed: Specified file not found"
+	     CASE liReturnValue = 3
+	        ? "FindExecutable failed: Specified path not found"
+	     CASE liReturnValue = 11
+	        ? "FindExecutable failed: Invalid EXE format"
+	     OTHERWISE
+	     * Read out to the null terminator.
+	        lpResults = LEFT(lpResults, AT(CHR(0), lpResults) - 1)
+	        ? "Full path of application: " + lpResults
+	     ENDCASE
+	
+	     * Delete the dummy file you created.
+	     DELETE FILE (lcSampleDoc)
+	
+	REFERENCES
+	==========
+	
+	Win32 SDK Help; topic: FindExecutable
+	
+	For additional information, click the article number below to view the article in
+	the Microsoft Knowledge Base:
+	
+	  Q140724 PRB: FindExecutable() Truncates Result at First Space in LFN
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbAPI kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600 
+	Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro260 kbFoxPro260a kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+	Version           : :2.6,2.6a,3.0,3.0b,5.0,5.0a,6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

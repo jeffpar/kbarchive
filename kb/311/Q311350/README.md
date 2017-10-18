@@ -1,0 +1,133 @@
+---
+layout: page
+title: "Q311350: HOW TO: Create a Custom Server Type for Use with the IIS Lockdow"
+permalink: kb/311/Q311350/
+---
+
+## Q311350: HOW TO: Create a Custom Server Type for Use with the IIS Lockdow
+
+	Article: Q311350
+	Product(s): Internet Information Server
+	Version(s): 4.0,5.0
+	Operating System(s): 
+	Keyword(s): kbAudITPro kbHOWTOmaster
+	Last Modified: 01-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Server version 4.0 
+	- Microsoft Internet Information Services version 5.0 
+	-------------------------------------------------------------------------------
+	
+	
+	IN THIS TASK
+	------------
+	
+	- SUMMARY
+	
+	   - Description of the Technique
+	- Create the Custom Server Type Template
+	
+	- REFERENCES
+	
+	SUMMARY
+	=======
+	
+	This step-by-step article describes how to create a custom server type for use
+	with the Internet Information Services (IIS) Lockdown Wizard.
+	
+	Description of the Technique
+	----------------------------
+	
+	The latest version of the IIS Lockdown Wizard provides administrators with the
+	ability to create custom server type templates.
+	
+	In the Iislockd.ini file, administrators can create custom server type templates
+	for use with the IIS Lockdown Wizard. A custom server type template appears in
+	the Lockdown Wizard as a configurable server type and can also be used when you
+	run Iislockd.exe unattended.
+	
+	Create the Custom Server Type Template
+	--------------------------------------
+	
+	1. In the [Info] section of the Iislockd.ini file, add the name of the custom
+	  server type to the list for the appropriate variable (either ServerTypesNT4
+	  or ServerTypes). In this example, MyCustomServerType is used.
+	
+	2. As a guide for the new custom server type template, copy the [sbs4.5]
+	  template and paste the text at the bottom of the file.
+	
+	3. Change [sbs4.5] in the copied text to reflect the custom server type name
+	  that you entered in step 1. For this example, the text is
+	  [MyCustomServerType].
+	
+	4. Change the label value to something meaningful for the custom server type.
+	
+	5. Configure the feature settings of the server template to TRUE or FALSE.
+	
+	6. If you install URLScan, change the UrlScan_IniFileLocation value to point to
+	  a custom URLScan .ini file that is used for this custom server type. You can
+	  also use a Urlscan.ini file from another server type.
+	
+	7. Save the Iislockd.ini file.
+	
+	After you perform these steps, Iislockd.exe can be run in the GUI mode, and the
+	custom server type appears in the available server types list. You can also use
+	this new custom server type to run the IIS Lockdown Wizard unattended.
+	
+	After you create the custom server type template, the Iislockd.ini file may
+	resemble the following:
+	
+	  [Info]
+	  ServerTypesNT4=sbs4.5, exchange5.5, frontpage, proxy, staticweb, dynamicweb , other, iis_uninstalled
+	  ServerTypes=MyCustomServerType, sbs2000, exchange5.5, exchange2k, sharepoint_portal, frontpage, biztalk, commerce, proxy, _
+	  staticweb, dynamicweb, other, iis_uninstalled
+	  UnattendedServerType=MyCustomServerType
+	  Unattended=TRUE
+	  Undo=FALSE
+	
+	  [MyCustomServerType]
+	  label="My Custom Server Type Template"
+	
+	  Enable_iis_http=TRUE
+	  Enable_iis_ftp= TRUE
+	  Enable_iis_smtp= FALSE
+	  Enable_iis_nntp= FALSE
+	  Enable_asp= TRUE
+	  Enable_index_server_web_interface= FALSE
+	  Enable_server_side_includes= FALSE
+	  Enable_internet_data_connector= FALSE
+	  Enable_internet_printing= FALSE
+	  Enable_HTR_scripting= FALSE
+	  Enable_webDAV= FALSE
+	  Disable_Anonymous_user_system_utility_execute_rights= TRUE
+	  Disable_Anonymous_user_content_directory_write_rights= TRUE
+	  Remove_iissamples_virtual_directory=TRUE
+	  Remove_scripts_directory=TRUE
+	  Remove_MSADC_virtual_directory=TRUE
+	  Remove_iisadmin_virtual_directory=TRUE	
+	  Remove_iishelp_virtual_directory=TRUE
+	  UrlScan_Install=DISABLED
+	  UrlScan_IniFileLocation=
+	  AdvancedSetup =
+	  UninstallServices=TRUE
+	
+	REFERENCES
+	==========
+	
+	For additional information, click the article number below to view the article
+	in the Microsoft Knowledge Base:
+	
+	  Q310725 HOW TO: Run the IIS Lockdown Wizard Unattended
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbAudITPro kbHOWTOmaster 
+	Technology        : kbiisSearch kbiis500 kbiis400
+	Version           : :4.0,5.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

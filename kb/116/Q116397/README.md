@@ -1,0 +1,184 @@
+---
+layout: page
+title: "Q116397: MS-DOS 6.22 SCANDISK.INI File"
+permalink: kb/116/Q116397/
+---
+
+## Q116397: MS-DOS 6.22 SCANDISK.INI File
+
+	Article: Q116397
+	Product(s): Microsoft Disk Operating System
+	Version(s): MS-DOS:6.22
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 18-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft MS-DOS operating system version 6.22 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article contains a complete listing of the MS-DOS 6.22 SCANDISK.INI file.
+	
+	MORE INFORMATION
+	================
+	
+	; SCANDISK.INI
+	;
+	; This file contains settings you can use to customize the ScanDisk
+	; program.
+	
+	; -------------------------------------------------------------------
+	; The [ENVIRONMENT] section contains the following settings, which
+	; determine general aspects of ScanDisk's behavior:
+	;
+	; Display      Configures ScanDisk to run with a particular type of
+	;              display. The default display type is Auto (ScanDisk
+	;              adjusts to the current display).
+	;
+	; Mouse        Enables or disables mouse support. The default value is On.
+	;
+	; ScanTimeOut  Determines whether ScanDisk should detect disk timeouts
+	;              while performing a surface scan. The default value is Off.
+	;
+	; NumPasses    Determines how many times ScanDisk should check each
+	;              cluster during a surface scan. The default value is 1.
+	;
+	; LabelCheck   Determines whether ScanDisk should check volume labels
+	;              for invalid characters. The default is Off.
+	;
+	; LfnCheck     Enables support for long filenames. The default value is On.
+	;              If LfnCheck is On, ScanDisk leaves any long filenames
+	;              unchanged. If LfnCheck is Off, ScanDisk validates
+	;              all filenames, including long filenames, to ensure that
+	;              they conform to the "8.3" file-naming convention used by
+	;              MS-DOS versions 6.22 and earlier.
+	;
+	
+	[ENVIRONMENT]
+	  Display     = Auto   ; Auto, Mono, Color, Off
+	  Mouse       = On     ; On, Off
+	  ScanTimeOut = Off    ; On, Off
+	  NumPasses   = 1      ; 1 through 65,535 (anything over 10 is slow)
+	  LabelCheck  = Off    ; On, Off
+	  LfnCheck    = On     ; On, Off
+	
+	; -------------------------------------------------------------------
+	; The [CUSTOM] section determines ScanDisk's behavior when ScanDisk is
+	; started with the /CUSTOM switch. You can adjust these settings to
+	; create a customized "version" of ScanDisk. This can be especially
+	; useful for running ScanDisk from a batch file. The [CUSTOM] settings are:
+	;
+	; DriveSummary  Determines whether ScanDisk displays full-screen
+	;               summary information after checking each drive.
+	;               The default is Auto (ScanDisk displays the summary
+	;               only if it encounters errors on that drive).
+	;
+	; AllSummary    Determines whether ScanDisk displays full-screen
+	;               summary information after checking all drives.
+	;               The default is Auto (ScanDisk displays the summary
+	;               only if it encounters errors on any drive).
+	;
+	; Surface       Determines whether ScanDisk will perform a surface scan:
+	;                  Never    (Default) Does not perform a surface scan.
+	;                  Always   Performs a surface scan without prompting
+	;                           first.
+	
+	;                  Prompt   Prompts before performing a surface scan.
+	;               The /SURFACE command-line switch overrides this setting.
+	;
+	; CheckHost     Determines whether ScanDisk will first check a host drive
+	;               before checking any compressed drives located on that
+	;               drive.
+	
+	;                  Never    (Default) Does not check the host drive.
+	;                  Always   Checks the host drive without prompting first.
+	;                  Prompt   Prompts before checking the host drive.
+	;
+	; SaveLog       Determines what ScanDisk does with the repair log file:
+	;                  Off        (Default) Does not save the repair log.
+	;                  Append     Appends the log to the previous log, if any.
+	;                  Overwrite  Replaces the previous log with the new log.
+	;
+	; Undo          Determines whether ScanDisk creates an Undo floppy disk.
+	;               The default is Never (ScanDisk does not create an Undo
+	;               disk).
+	
+	;               The Prompt value causes ScanDisk to prompt you for a disk.
+	
+	[CUSTOM]
+	  DriveSummary  = Auto         ; Auto, On, Off
+	  AllSummary    = Auto         ; Auto, On, Off
+	  Surface       = Never        ; Never, Always, Prompt
+	  CheckHost     = Never        ; Never, Always, Prompt
+	  SaveLog       = Off          ; Off, Append, Overwrite
+	  Undo          = Prompt       ; Prompt, Never
+	
+	; The following settings determine the corrective action ScanDisk will
+	; take if it was started with the /CUSTOM switch and finds a disk error.
+	
+	; The next five settings accept any of the following values:
+	;    Prompt     Causes ScanDisk to prompt you before fixing this problem.
+	;    Fix        Causes ScanDisk to fix the problem without prompting you.
+	;    Quit       Causes ScanDisk to terminate if it encounters this problem.
+	
+	  DS_Header     = Prompt       ; Damaged compressed volume file header
+	  FAT_Media     = Prompt       ; Missing or invalid FAT media byte
+	  Okay_Entries  = Prompt       ; Damaged, but repairable,
+	                               ; directories/files
+	
+	  Bad_Chain     = Prompt       ; Files or directories which should be
+	                               ; truncated
+	  Crosslinks    = Prompt       ; FAT-level crosslinks
+	
+	; The next seven settings accept any of the following values:
+	;    Prompt     Causes ScanDisk to prompt you before fixing this problem.
+	;    Fix        Causes ScanDisk to fix the problem without prompting you.
+	;    Quit       Causes ScanDisk to terminate if it encounters this problem.
+	;    Skip       Causes ScanDisk to skip fixing this problem, but continue
+	;               checking the disk.
+	
+	  Boot_Sector   = Prompt       ; Damaged boot sector on compressed drive
+	  Invalid_MDFAT = Prompt       ; Invalid MDFAT entries
+	  DS_Crosslinks = Prompt       ; Internal (MDFAT-level) crosslinks
+	  DS_LostClust  = Prompt       ; Internal lost clusters
+	  DS_Signatures = Prompt       ; Missing compressed volume file signatures
+	  Mismatch_FAT  = Prompt       ; Mismatched FATs on non-compressed drives
+	  Bad_Clusters  = Prompt       ; Physical damage or decompression errors
+	
+	; The next setting accepts any of the following values:
+	;
+	;    Prompt     Causes ScanDisk to prompt you before fixing this problem.
+	;    Delete     Causes ScanDisk to delete the damaged directory entries
+	;               without prompting you first.
+	;    Quit       Causes ScanDisk to terminate if it encounters this problem.
+	
+	  Bad_Entries   = Prompt       ; Damaged and irreparable directories or
+	                               ; files
+	
+	; The next setting accepts any of the following values:
+	;
+	;    Prompt     Causes ScanDisk to prompt you before fixing this problem.
+	;    Save       Causes ScanDisk to save the lost clusters as files in the
+	;               root directory without prompting you first.
+	;    Delete     Causes ScanDisk to delete the contents of the lost clusters
+	;               without prompting you first.
+	;    Quit       Causes ScanDisk to terminate if it encounters this problem.
+	;    Skip       Causes ScanDisk to skip fixing this problem, but continue
+	;               checking the disk.
+	
+	  LostClust     = Prompt       ; Lost clusters
+	
+	Additional query words: 6.22
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMSDOSSearch kbMSDOS622
+	Version           : MS-DOS:6.22
+	
+	=============================================================================
+	

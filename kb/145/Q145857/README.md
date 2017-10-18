@@ -1,0 +1,127 @@
+---
+layout: page
+title: "Q145857: How to Use Multiple Menus in MFC App That Uses GetDefaultMenu"
+permalink: kb/145/Q145857/
+---
+
+## Q145857: How to Use Multiple Menus in MFC App That Uses GetDefaultMenu
+
+	Article: Q145857
+	Product(s): Microsoft C Compiler
+	Version(s): 1.50 1.51 1.52 | 2.00 2.10 2.20
+	Operating System(s): 
+	Keyword(s): kbcode
+	Last Modified: 05-FEB-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The Microsoft Foundation Classes (MFC), included with:
+	   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.5, 1.51, 1.52 
+	   - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1, 2.2, 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	In an MFC application, you may occasionally find it useful to switch between
+	menus within the same frame window, such as when using static splitter windows
+	or objects in a view requiring a whole new menu. Because the framework provides
+	automatic support for only one menu per document template (hence per frame),
+	additional code must be added to switch automatically between multiple menu
+	resources. MFC provides the undocumented virtual function
+	CDocument::GetDefaultMenu() to allow the document to determine which menu to
+	display.
+	
+	MORE INFORMATION
+	================
+	
+	When AppWizard generates an SDI or MDI application, it creates a menu resource
+	by using IDR_MAINFRAME as its resource ID. This menu is displayed at all times
+	for an SDI application and only when there are no active documents in an MDI
+	application. For an MDI application, AppWizard also generates a menu resource
+	for the one multidoc template it creates using IDR_xxxxTYPE as its resource ID.
+	Additional menu resources can be used by creating them using the resource editor
+	and associating them with another multidoc template (see CMultiDocTemplate). The
+	framework will display the menu resource associated with each multidoc template
+	automatically. This method limits you one menu per document template. To bypass
+	this limitation, you can override CDocument::GetDefaultMenu() and perform some
+	calls to display the menu.
+	
+	MFC uses CMDIChildWnd::m_hMenuShared and CFrameWnd::m_hMenuDefault data members
+	to determine which menu to display. In an MDI application, the menu resource
+	associated with each document template is loaded during the construction of the
+	document templates and copied into CMDIChildWnd::m_hMenuShared. This menu is
+	then used in CMDIChildWnd::OnUpdateFrameMenu() to set the menu of the MDI Frame
+	window when there is an active MDI child window.
+	CMDIChildWnd::OnUpdateFrameMenu() uses CFrameWnd::m_hMenuDefault, which is
+	loaded during CFrameWnd construction using IDR_MAINFRAME when there are no
+	active child windows. An SDI program calls CFrameWnd::OnUpdateFrameMenu(), which
+	uses CFrameWnd::m_hMenuDefault for its menu.
+	
+	In both an SDI and MDI application, the menu you need to display is obtained from
+	two other sources before using the m_hMenuShared or m_hMenuDefault menus. The
+	framework first checks CFrameWnd::m_hMenuAlt. This is used in OLE supported
+	programs with in-place activated objects that provide its own menus. The second
+	source it checks is CDocument::GetDefaultMenu(), which is also virtual. The
+	default implementation of it is to return NULL. This function can be overridden
+	to allow the program to select the menu to display.
+	
+	Changing the menus manually is done by calling OnUpdateFrameMenu() and
+	DrawMenuBar(). You must call CFrameWnd::OnUpdateFrameMenu(NULL) or
+	CMDIFrameWnd::OnUpdateFrameMenu(NULL) in order to set the new menu into the
+	window. Call DrawMenuBar() to redraw the menu. Use the following code to
+	implement for both MDI and SDI:
+	
+	1. Create a new menu resource (IDR_MYMENU1) in the resource editor.
+	
+	2. Add an HMENU data member to CMyDocument and override GetDefaultMenu() to
+	  return this data member:
+	
+	     // .h file
+	     //    HMENU m_hMyMenu;
+	     //    virtual HMENU GetDefaultMenu(); // get menu depending on state
+	     HMENU CMyDocument::GetDefaultMenu()
+	     {
+	        return m_hMyMenu;    // just use original default
+	     }
+	
+	  Remember to initialize this member variable to NULL either in the constructor
+	  or CDocument::OnNewDocument().
+	
+	3. Change and redraw the menu at the desired times. For example, when switching
+	  between splitter panes, this is normally done in CView::OnActivateView(). The
+	  following code shows how to implement it in that function.
+	
+	     // example within CView member function
+	     ((CMyDocument*)GetDocument())->m_hMyMenu = ::LoadMenu(
+	         AfxGetResourceHandle(), MAKEINTRESOURCE(IDR_MYMENU1));
+	     ((CFrameWnd*)AfxGetMainWnd())->OnUpdateFrameMenu(NULL);
+	     AfxGetMainWnd()->DrawMenuBar();
+	
+	Be sure to destroy the menu upon exiting the application, and avoid having too
+	many menus loaded at once.
+	
+	Menus can also be switched simply by changing the value of
+	CMDIChildWnd::m_hMenuShared (MDI) or CFrameWnd::m_hMenuDefault (SDI). However,
+	using GetDefaultMenu() allows a safer method of changing the menus.
+	
+	For more information about how to share menus between MDI child windows, please
+	see the following article in the Microsoft Knowledge Base:
+	
+	  Q118435 Sharing Menus Between MDI Child Windows.
+	
+	REFERENCES
+	==========
+	
+	MFC Source Code.
+	
+	Additional query words: kbinf 1.00 1.50 1.51 1.52 1.10 2.00 2.10 2.20 2.5 2.50 2.51 2.52 2.52b 3.0 3.00 3.1 3.10 3.2 3.20 4.0 4.00
+	
+	======================================================================
+	Keywords          : kbcode 
+	Technology        : kbAudDeveloper kbMFC
+	Version           : 1.50 1.51 1.52 | 2.00 2.10 2.20
+	
+	=============================================================================
+	

@@ -1,0 +1,231 @@
+---
+layout: page
+title: "Q286467: MechWarrior 4 Err Msg: STOP: Cannot Create Options.ini"
+permalink: kb/286/Q286467/
+---
+
+## Q286467: MechWarrior 4 Err Msg: STOP: Cannot Create Options.ini
+
+	Article: Q286467
+	Product(s): Microsoft Home Games
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kberrmsg kbimu
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft MechWarrior 4: Vengeance 
+	- Microsoft MechWarrior 4: Black Knight 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you start Microsoft MechWarrior 4, you may receive one of the following
+	error messages:
+	
+	  STOP: Cannot create "options.ini"
+	
+	  -or-
+	
+	  STOP: This is isn't a database.
+	
+	CAUSE
+	=====
+	
+	This behavior can occur if the Options.ini file is missing.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, run the Autoconfig configuration utility before you start
+	the game:
+	
+	1. Click Start, and then click Run.
+	
+	2. In the Open box, type the following line, and then click OK
+	
+	  <drive>:\program files\microsoft games\mechwarrior
+	  vengeance\autoconfig.exe
+	
+	  where <drive> is the letter of the hard disk on which MechWarrior 4 is
+	  installed.
+	
+	3. Click Continue.
+	
+	4. Restart MechWarrior 4.
+	
+	If the problem continues to occur, remove and then reinstall the game. To do
+	this, use the following methods in the order in which they are presented.
+	
+	Uninstall MechWarrior 4
+	-----------------------
+	
+	To uninstall MechWarrior 4:
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click Add/Remove Programs.
+	
+	3. Click Microsoft MechWarrior 4: Vengeance, and then click Add/Remove or
+	  Change/Remove.
+	
+	4. Click Uninstall.
+	
+	5. Click "Remove saved games files".
+	
+	6. Click OK.
+	
+	7. Follow the instructions on the screen to uninstall MechWarrior 4.
+	
+	Delete the MechWarrior Vengeance Folder
+	---------------------------------------
+	
+	To delete the MechWarrior Vengeance folder:
+	
+	1. Click Start, point to Find, and then click "Files or Folders".
+	
+	2. In the Named box, type "MechWarrior Vengeance" (without the quotation marks).
+	
+	3. In the "Look in" box, click My Computer.
+	
+	4. Make sure that the "Include subfolders" check box is selected.
+	
+	5. Click Find Now.
+	
+	6. Right-click the MechWarrior Vengeance folder, click Delete, and then click
+	  Yes.
+	
+	7. Close the Find: Files Named MechWarrior Vengeance window.
+	
+	Clean Boot the Computer
+	-----------------------
+	
+	To clean boot the computer, use the appropriate method for your version of
+	Microsoft Windows.
+	
+	Microsoft Windows Me:
+	
+	1. Click Start, click Run, type "msconfig" (without the quotation marks) in the
+	  Open box, and then click OK.
+	
+	2. On the General tab, click Selective startup.
+	
+	3. Click to clear all of the check boxes under Selective startup.
+	
+	4. On the Startup tab, click to select the *StateMgr check box.
+	
+	
+	5. Click OK. When you see the prompt to restart your computer, click Yes. After
+	  the computer restarts, click Start, click Run, type "msconfig" (without the
+	  quotation marks) in the Open box, and then click OK.
+	
+	IMPORTANT: Ensure that the check boxes you cleared in the General tab are still
+	cleared. Proceed to step 6 if all of the check boxes are cleared. If you see a
+	disabled or gray check box, your computer is not clean-booted and you may need
+	assistance from the manufacturer of the program that places a check mark back
+	into Msconfig.
+	
+	6. After you verify that your computer is clean-booted in step 5, you can
+	  isolate the issue. If the original issue does not reoccur after the clean
+	  boot, select one item at a time under Selective startup, and then restart the
+	  computer to see if the additional entry reproduces the original issue.
+	
+	Microsoft Windows 98:
+	
+	1. Click Start, and then click Run.
+	
+	2. In the Open box, type "msconfig" (without the quotation marks), and then
+	  click OK.
+	
+	3. On the General tab, click Selective Startup, and then click to clear the
+	  following check boxes:
+	
+	   - Process Config.sys File
+	   - Process Autoexec.bat File
+	   - Process Winstart.bat File (if available)
+	   - Process Win.ini File
+	   - Load Startup Group Items
+	
+	4. Click OK. When you are prompted to restart the computer, do so.
+	
+	For additional information about how to clean boot Windows 98, click the article
+	number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q192926 How to Perform Clean-Boot Troubleshooting for Windows 98
+	
+	
+	NOTE: To restore your original Startup options, click Normal Startup on the
+	General tab in System Configuration Utility.
+	
+	Microsoft Windows 95:
+	
+	1. Restart the computer. When you see the "Starting Windows 95" message, press
+	  the F8 key, and then select Command Prompt Only from the Startup menu.
+	
+	2. At the command prompt, type "win" (without the quotation marks), and then
+	  press ENTER. Press and hold down the SHIFT key until the Windows startup
+	  sequence is complete.
+	
+	3. Disable any anti-virus or disk tool programs installed on the computer.
+	
+	  For information about how to disable these programs, see the printed or online
+	  documentation for the program.
+	
+	4. Quit all running programs except Explorer and Systray. To do this, press
+	  CTRL+ALT+DELETE, click the program that you want to quit, and then click End
+	  Task. If you receive a message that the program is busy or not responding,
+	  click End Task again. Repeat this step to quit all programs except Explorer
+	  and Systray.
+	
+	For additional information about how to clean boot Windows 95, click the article
+	number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q177604 Multimedia: Troubleshooting Using Clean Boot of Windows 95
+	
+	NOTE: To restore your original Startup options, restart the computer normally,
+	and then enable any anti-virus or disk tool programs installed on the computer.
+	For information about how to enable these programs, see the printed or online
+	documentation for the program.
+	
+	Install MechWarrior 4 into a New Folder
+	---------------------------------------
+	
+	1. Insert the MechWarrior compact disc into your computer's CD-ROM or DVD-ROM
+	  drive, and then follow the Setup Wizard instructions on your screen. If the
+	  Setup Wizard does not appear, complete steps 2 and 3 below. Otherwise, skip
+	  to step 4.
+	
+	2. Click Start, click Run, and then type "<drive>:setup" (without the
+	  quotation marks), where <drive> is the drive letter of your computer's
+	  CD-ROM or DVD-ROM drive.
+	
+	3. Click Install, click Next, and then click Change.
+	
+	4. In the Path box, delete the existing path, and then type the following line:
+	
+	  "<drive>:\Program Files\Microsoft Games\MechWarrior 4" (without the
+	  quotation marks)
+	
+	  where <drive> is the drive letter of the hard disk on which you want to
+	  install MechWarrior Vegeance.
+	
+	5. Click OK. When you are prompted to create the folder, click Yes.
+	
+	6. Click OK, and then follow the instructions on the screen to reinstall
+	  MechWarrior Vengeance.
+	
+	7. Restart if prompted.
+	
+	Additional query words: msgame mech4 database options.ini
+	
+	======================================================================
+	Keywords          : kberrmsg kbimu 
+	Technology        : kbGamesSearch
+	Version           : :
+	Issue type        : kbprb
+	
+	=============================================================================
+	

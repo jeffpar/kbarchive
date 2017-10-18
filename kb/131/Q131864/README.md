@@ -1,0 +1,158 @@
+---
+layout: page
+title: "Q131864: Mail Err Msg: The Postoffice is Already Being Managed By..."
+permalink: kb/131/Q131864/
+---
+
+## Q131864: Mail Err Msg: The Postoffice is Already Being Managed By...
+
+	Article: Q131864
+	Product(s): Microsoft Windows NT
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 3.1 
+	- Microsoft Windows NT Workstation version 3.1 
+	- Microsoft Windows NT Advanced Server, version 3.1 
+	- Microsoft Windows NT Workstation versions 3.5, 3.51 
+	- Microsoft Windows NT Server versions 3.5, 3.51 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The following error message appears when you run Microsoft Mail and choose
+	Postoffice Manager from the Mail menu.
+	
+	  The postoffice is already being managed by. Try again later.
+	
+	CAUSE
+	=====
+	
+	The Mail Postoffice Manager attempts to open FLAG.GLB for exclusive access
+	before displaying the Postoffice Manager window to determine if the postoffice
+	is already being managed. Any one of the following conditions can cause the
+	error noted above:
+	
+	- Another Mail user has already opened this file for exclusive access by
+	  running another instance of the Postoffice Administrator, or is in the
+	  process of creating a new account on the workgroup postoffice as part of the
+	  Mail initialization procedure.
+	
+	- You do not have the appropriate file permissions to open the FLAG.GLB file.
+	  The workgroup postoffice is on an Windows NT file system (NTFS) partition and
+	  you do not have the appropriate permissions to open FLAG.GLB file. All
+	  Microsoft Mail users must have Full Control permission to the workgroup
+	  postoffice directory (WGPO by default) and all of its subdirectories and
+	  files.
+	
+	- The read-only file attribute is set on FLAG.GLB.
+	
+	- FLAG.GLB is locked by the workgroup postoffice server, because there is
+	  another exclusive open request against this file that has not yet been
+	  closed.
+	
+	RESOLUTION
+	==========
+	
+	Another Mail User is Using the Postoffice for Administrative Purposes
+	---------------------------------------------------------------------
+	
+	If another Mail user is using the postoffice for administrative purposes, either
+	wait for the other Mail user to complete the postoffice administrative session,
+	or have the other Mail user terminate the administrative session. To find out
+	who currently has this file open:
+	
+	- Run File Manager, select the FLAG.GLB file, choose Properties from the File
+	  menu, and then choose Open By.
+	
+	  -or-
+	
+	- Run Control Panel, choose Server, and then choose In Use.
+	
+	You Do Not Have the Appropriate File Permissions to Open the FLAG.GLB File
+	--------------------------------------------------------------------------
+	
+	If you do not have the appropriate file permissions to open FLAG.GLB:
+	
+	1. Run File Manager on the workgroup postoffice server
+	
+	2. Select FLAG.GLB.
+	
+	3. From the Security menu, choose Permissions.
+	
+	4. Add your user account or a group to which you belong (for example,
+	  Mailusers). The account of group must have the Full Control permission. Make
+	  sure the user account or group does not have the No Access permission
+	  assigned to FLAG.GLB.
+	
+	5. Choose OK.
+	
+	The Read-Only File Attribute is Set on FLAG.GLB
+	-----------------------------------------------
+	
+	If read-only file attribute is set on the FLAG.GLB file:
+	
+	1. Run File Manager on the workgroup postoffice server.
+	
+	2. Select FLAG.GLB.
+	
+	3. From the File menu, choose Properties.
+	
+	4. Clear the Read-Only check box.
+	
+	5. Choose OK.
+	
+	FLAG.GLB is Locked
+	------------------
+	
+	If the FLAG.GLB file is currently locked:
+	
+	1. Run File Manager.
+	
+	2. Select FLAG.GLB and choose Properties from the File menu
+	
+	3. Choose Open By.
+	
+	4. Contact the user whose name is in the Open By list. Make sure an active
+	  session is not established to the file. You can corrupt files if you close
+	  them while they are being used.
+	
+	5. In the Network Properties window, choose Open By for the user who has this
+	  file open.
+	
+	6. Choose Close Selected to close the file.
+	
+	7. Choose OK.
+	
+	-or-
+	
+	1. Run Control Panel and choose Server.
+	
+	2. Choose In Use.
+	
+	3. In the Open Resources window, select Opened By for the user who currently has
+	  the file open.
+	
+	4. Contact the user whose name is in the Open By list. Make sure an active
+	  session is not established to the file. You can corrupt files if you close
+	  them while they are being used.
+	
+	5. Choose Close Resource to close the file.
+	
+	6. Choose Close and then choose OK.
+	
+	
+	Additional query words: 3.10 prodnt
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTW310 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS351search kbWinNTS350search kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+	
+	=============================================================================
+	

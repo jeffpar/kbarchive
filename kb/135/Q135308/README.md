@@ -1,0 +1,152 @@
+---
+layout: page
+title: "Q135308: Disk Administrator Corrupts Partitions"
+permalink: kb/135/Q135308/
+---
+
+## Q135308: Disk Administrator Corrupts Partitions
+
+	Article: Q135308
+	Product(s): Microsoft Windows NT
+	Version(s): 3.51
+	Operating System(s): 
+	Keyword(s): kbother
+	Last Modified: 04-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 3.51 
+	- Microsoft Windows NT Server version 3.51 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	When you install Windows NT 3.51 and start Disk Administrator for the first
+	time, Windows NT will write a disk signature to the drives before opening the
+	Disk Administrator window.
+	
+	The first time Disk Administrator is opened, drives and partitions appear
+	correctly, but if you close and reopen it, some of the partitions are lost and
+	incorrect information is displayed on the others. Alternatively, Disk
+	Administrator can hang during initialization or the error message, "The
+	parameter is incorrect" appears.
+	
+	This only happens if there are more than two logical drives in an extended
+	partition when Disk Administrator attempts to write a fault tolerance
+	signature.
+	
+	This problem will not occur if a signature is already present.
+	
+	Another symptom of this problem is that any partition formatted as Windows NT
+	File System (NTFS) will show 0 bytes available and 0 bytes free after the
+	signature was written by WINDISK, but before the first reboot after the
+	signature was written.
+	
+	
+	CAUSE
+	=====
+	
+	Windows NT Disk Administrator writes a fault tolerance signature to each
+	physical drive's master boot record, if one is not already present, when it is
+	run for the first time. Faulty calculations result in the corruption of logical
+	drives in an existing extended partition.
+	
+	NOTE: It is possible for a system to remain functional after the partition table
+	is corrupted. The nature of the corruption is such that partition table data is
+	written to incorrect locations on the disk which may lie in the middle of user
+	or file system data. Provided this information is not overwritten, the partition
+	table entries may still identify the layout of the drives sufficiently well that
+	Windows NT can continue to access the drives. However, this is an unstable
+	situation and access to the partitions will be lost when the table entries are
+	eventually overwritten.
+	
+	If the table entries overwrite existing data, user data or file system integrity
+	are compromised immediately.
+	
+	If you suspect that your partition table is compromised, immediately back up
+	critical data, then re-partition your disk and restore the backed up data to the
+	system.
+	
+	RESOLUTION
+	==========
+	
+	To correct this problem:
+	
+	- Install the latest U.S. Service Pack for Windows NT version 3.51.
+	
+	  -or-
+	
+	- If your system has already been corrupted, but Windows NT still boots, obtain
+	  the file CORRECT.EXE to correct the partition table whenever possible.
+	
+	  CORRECT.EXE does not guarantee recovery of user data, it just means that the
+	  partition table is put back in its original state if possible, or at least a
+	  consistent state if there is not enough information to put it back in its
+	  original state. In the mean time, critical user or file system data may still
+	  have been irretrievably lost.
+	
+	  This program is also being distributed with the hotfix and both the fixed
+	  kernel and CORRECT.EXE are being posted to our external FTP server as well.
+	  Again, this is an unusual step that we are taking due to the seriousness of
+	  the problem.
+	
+	  For more information read the README.TXT file posted with CORRECT.EXE.
+	
+	  All files discussed here are publicly available from ftp.microsoft.com under:
+	
+	  \bussys\winnt\winnt-unsup-ed\fixes\nt351\windisk
+	
+	To Prevent Partition Table Corruption
+	-------------------------------------
+	
+	If Disk Administrator has not been run, you can prevent partition table
+	corruption by any of these 3 procedures:
+	
+	- If there are not already more than two logical drives in an extended
+	  partition, simply use Disk Administrator normally. The signature will be
+	  written correctly and no corruption should ensue. If there are more than two
+	  logical drives, perform a full system backup of data on all drives prior to
+	  running Disk Administrator. Then be prepared to delete and recreate the
+	  partition structure prior to restoring the previously backed up data.
+	
+	- If an earlier version of Windows NT is available, boot that version and run
+	  its Disk Administrator so that a fault tolerance signature is written to the
+	  disk. The 3.5 version of WINDISK.EXE may be run directly on Windows NT
+	  version 3.51 in order to write the initial fault tolerance signature, but is
+	  not recommended for systems using third-party partitioning software to
+	  support large IDE drives.
+	
+	- If you have the tools and knowledge to edit the disk at the sector level, you
+	  may manually enter a disk signature so that Disk Administrator will not try
+	  to do so. The 4-byte signature is located at offset 0x1b8 from the start of
+	  the Master Boot Record (physical sector 0). The value written is not
+	  important provided that it is non-zero, but if there are multiple disks in
+	  the system, each should have a distinct signature value. If this field is
+	  already non-zero, it is not necessary to change it.
+	
+	CAUTION: Use this option at your own risk. Incorrectly editing physical disk
+	sectors can result in corruption of the entire physical volume, resulting in
+	loss of data and may require a complete reinstallation of the operating system.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Windows NT version 3.51. This
+	problem has been corrected in the latest U.S. Service Pack for Windows NT
+	version 3.51. For information on obtaining the Service Pack, query on the
+	following word in the Microsoft Knowledge Base (without the spaces):
+	
+	  S E R V P A C K
+	
+	Additional query words: prodnt fdisk mbr
+	
+	======================================================================
+	Keywords          : kbother 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+	Version           : :3.51
+	
+	=============================================================================
+	

@@ -1,0 +1,111 @@
+---
+layout: page
+title: "Q94896: WFWG Err Msg: &quot;Failure: Hardware Not Found...&quot; with Intel EE16"
+permalink: kb/094/Q94896/
+---
+
+## Q94896: WFWG Err Msg: &quot;Failure: Hardware Not Found...&quot; with Intel EE16
+
+	Article: Q94896
+	Product(s): Microsoft Windows 3.x Retail Product
+	Version(s): WINDOWS:3.1,3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 10-OCT-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows for Workgroups versions 3.1, 3.11 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	If an Intel EtherExpress 16 is installed on a machine and there is a hardware
+	conflict, such as an I/O Port address or an interrupt request line (IRQ) being
+	duplicated on two devices, the following error message may occur during
+	startup:
+	
+	  Failure: EtherExpress 16 Hardware Not Found, Driver not loaded.
+	  Failure: NDIS environment invalid, Driver not loaded.
+	
+	WORKAROUND
+	==========
+	
+	Because the Intel EtherExpress 16 is a software-configured network card, the
+	only workaround to this error message is to put the card into another machine
+	and use the following steps to reconfigure it.
+	
+	NOTE: This message may occur if the network card isn't seated properly in the
+	machine. Check to be sure that this isn't the problem before reconfiguring the
+	card as discussed below.
+	
+	1. On the first machine, load Windows for Workgroups.
+	
+	2. Run Control Panel.
+	
+	3. In the Control Panel window, choose the Network icon.
+	
+	4. Choose the Adapters option to remove the driver for the Intel EtherExpress 16
+	  network card.
+	
+	5. When prompted to Restart Computer or Continue, choose Continue, then exit
+	  Windows and turn off the machine.
+	
+	6. Remove the Intel card from the first machine, turn off a second machine which
+	  doesn't have a hardware conflict, remove any network cards from the second
+	  machine, and place the Intel card into the second machine.
+	
+	7. Turn on the second machine and load Windows for Workgroups.
+	
+	8. Run Control Panel.
+	
+	9. In the Control Panel window, choose the Network icon, and choose the Adapters
+	  option to remove any other network card drivers and install the driver for
+	  the Intel EtherExpress 16.
+	
+	10. Change either the I/O Port address or the IRQ to an unused value on the
+	  first machine.
+	
+	11. When prompted to Restart Computer or Continue, choose Restart Computer and
+	  then let the machine restart. Once it has restarted, turn the second machine
+	  off and remove the Intel card.
+	
+	12. Place the card back into the first machine, turn it on, and load Windows for
+	  Workgroups.
+	
+	13. Run Control Panel.
+	
+	14. In the Control Panel window, choose the Network icon and choose the Adapters
+	  option to add the driver for the Intel EtherExpress 16. Use Setup to
+	  configure it for the new settings, which were set up on the second machine.
+	
+	15. When prompted to Restart Computer or Continue, choose Restart Computer and
+	  then let the machine restart. The error message should no longer occur and
+	  Windows for Workgroups should operate normally.
+	
+	16. If the error message still occurs, there may still be a hardware conflict
+	  and the above steps should be repeated until it is resolved.
+	
+	The Intel EtherExpress 16 network interface card is set up exclusively with
+	software, either with Windows for Workgroups or Intel's Softset utility. If
+	there is a hardware conflict, the options changed by the Setup software are
+	never written to the card because the software can't communicate with it due to
+	the I/O Port address or IRQ conflict. Because there is no other way to adjust
+	the hardware settings on the Intel EtherExpress 16, it has to be configured in
+	another machine and then moved back to the original machine.
+	
+	KBCategory: kbnetwork kb3rdparty kbhw
+	KBSubcategory: wfw wfwg
+	
+	Additional query words: 3.10 3.11 Ether Express 3rdparty boot bootup software configured
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbWFWSearch kbWFW310 kbWFW311
+	Version           : WINDOWS:3.1,3.11
+	
+	=============================================================================
+	

@@ -1,0 +1,148 @@
+---
+layout: page
+title: "Q156792: &quot;Visual FoxPro 3 Step by Step&quot; Lesson 9 notes &amp; corrections"
+permalink: kb/156/Q156792/
+---
+
+## Q156792: &quot;Visual FoxPro 3 Step by Step&quot; Lesson 9 notes &amp; corrections
+
+	Article: Q156792
+	Product(s): Microsoft Press
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbdocerr
+	Last Modified: 17-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- MSPRESS Microsoft Visual FoxPro 3 for Windows Step by Step ISBN 1-55615-846-7 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article contains a list of known corrections and comments for chapter 9 of
+	the Microsoft Press book titled "Microsoft Visual FoxPro 3 for Windows Step by
+	Step."
+	
+	MORE INFORMATION
+	================
+	
+	PAGE      STEP      SEVERITY
+	-----     ----      --------  -----------------------------------------
+	160       3         Minor     Problem: BufferMode property is already
+	                             set to pessimistic (though pessimistic is
+	                             NOT VFP default).
+	                             Fix: None necessary; but step 3 is
+	                             redundant. In future releases/patches,
+	                             BufferMode should be 0 (None) at the start
+	                             of Lesson 9.
+	
+	162       2         Minor     Problem: Putting the Delete & Save buttons
+	                             on the screen covers up the "Total Cost"
+	                             label.
+	                             Fix: All command buttons (including Add,
+	                             on page 161) should be placed so that top
+	                             of button is one-and-a-half grid boxes
+	                             below the grid (or half a grid box below
+	                             the bottom of "Total Cost").
+	
+	163       6         Medium    Problem: Step 6 says to close the custordr
+	                             form, but next set of steps requires the
+	                             form open and does not say to reopen it.
+	                             Fix: Step 6 should say, "Close the
+	                             custordr form and save changes."
+	                             Increase the number of the second set of
+	                             steps by 1, then add the following steps:
+	                             1  Open the custordr form.
+	                             7  Close the custordr form and save
+	                             changes.
+	
+	164       2/Scrn    Minor     Problem: The word "Sorry" is misspelled
+	                             - missing an "r".
+	                             This is true in code & in screen shot.
+	                             Fix: Change the spelling in code and book.
+	
+	165       3/Scrn    Serious   Problem: Misspelled variable: "lgOldTalk"
+	                             should be "glOldTalk."
+	
+	166       Para 2    Minor     Missing hyphen at end of first line
+	                             between "in" and "definitely".
+	
+	166       3         Medium    Problem: Screen shot is wrong. It shows
+	                             only one line of code (which was just
+	                             added in step 3), but code already should
+	                             be there from earlier steps in this
+	                             lesson.
+	                             Fix: remove screen shot on page 166.
+	
+	167       2         Medium    Problem: Lines 2, 4, and 25 are
+	                             continuations of previous comment lines
+	                             but look like new lines. If typed in as
+	                             is, the code will cause an error when the
+	                             program is run.
+	                             Fix: Precede lines with comment character
+	                             "*" (as other commented lines).
+	
+	167       2         Severe    Problem: Missing the code line ENDIF. This
+	                             will cause runtime errors.
+	                             Fix: After the following lines:
+	                                  STORE .f. TO llAllOk
+	                                  EXIT
+	                             Add line:
+	                                  ENDIF
+	
+	168       2         Severe    Problem: Missing parentheses.
+	                             Fix: Fourth line of code should read:
+	                                  =MESSAGEBOX("Order Could Not Be
+	                             Saved")
+	
+	168       2         Severe    Problem: Extra space.
+	                             Fix: Last line of code should read:
+	                                  THISFORM.Release()
+	
+	168       6         ?         After step 6, add the following step:
+	                             7.  Set the Data Sessions to Private
+	                             This prevents the error "Alias CUSTOMER not
+	                             found" from occurring after closing the first
+	                             copy of the form in step 6 on page 169.
+	
+	                             This error would be caused by the
+	                             customer table being closed when the first
+	                             form is closed and the open form attempting
+	                             to access it.
+	
+	
+	OTHER: Running form CUSTORDR from CUSTDATA and then clicking the Save button
+	might produce an error on the "RLOCK(0)" line. This is a legal operation
+	(attempt to lock a table header) and should not cause an error. There might be
+	other circumstances causing this, and this error does not occur in the revised
+	code from patch #1.
+	
+	NOTE THAT A PATCH HAS BEEN CREATED AND RELEASED FOR LESSON 9. NO CHANGES WERE
+	MADE TO USER-ENTERED CODE. For more information regarding this patch, including
+	download instructions, please see the following Knowledge Base article:
+	
+	  Q126498 FILE: Visual FoxPro 3 Step by Step Correction Files
+	
+	
+	The following occurrences of "Click Method" should be replaced with the phrase
+	"Click event method" (as on page 158, step 3):
+	
+	Page      Step
+	-----     -----
+	161       4
+	162       4
+	162       4(second set of steps)
+	163       4
+	
+	Additional query words: BookBug mspress ms press vfp sbs 3.0 3.00
+	
+	======================================================================
+	Keywords          : kbdocerr 
+	Technology        : kbMSPressSearch
+	Version           : :
+	
+	=============================================================================
+	

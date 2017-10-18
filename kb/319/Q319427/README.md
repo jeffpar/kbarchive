@@ -1,0 +1,159 @@
+---
+layout: page
+title: "Q319427: SMS: File Time Stamp Is Changed During Software Distribution"
+permalink: kb/319/Q319427/
+---
+
+## Q319427: SMS: File Time Stamp Is Changed During Software Distribution
+
+	Article: Q319427
+	Product(s): Microsoft Systems Management Server
+	Version(s): 2.0
+	Operating System(s): 
+	Keyword(s): kbsms200 kbsms200bug kbPackage kbSoftwareDist
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server version 2.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If a package is distributed from one site to another, and the sites are in
+	different time zones, the time stamp on the package's source files may be
+	changed.
+	
+	For example, assume that you have a package source file with a time of 8:30 P.M.
+	on a Systems Management Server (SMS) site in the U.S. Eastern time zone (GMT
+	-5:00). In Windows Explorer, the file shows a time stamp of 8:30 P.M when you
+	view the file locally. After the package that contains this file is distributed
+	to a site in the U.S. Pacific time zone (GMT -8:00), the file also shows an 8:30
+	P.M. time stamp when it is viewed locally at the destination site. However, the
+	file should show a time stamp of 5:30 P.M. when it is viewed locally. If you
+	view the same file remotely from the originating site, it shows a time stamp of
+	11:30 P.M.
+	
+	Other than the time-stamp difference, there is no difference between the files at
+	the originating site and the files at the destination site.
+	
+	CAUSE
+	=====
+	
+	The compressed package file that is used to transmit the package source files
+	from one site to another does not store the time-zone information for the
+	originating site. When the package file is decompressed at the destination site,
+	the source files are stored with the same date and time as on the originating
+	site. There is no compensation for the time-zone differences.
+	
+	RESOLUTION
+	==========
+	
+	A supported fix is now available from Microsoft, but it is only intended to
+	correct the problem that is described in this article. Only apply it to systems
+	that are experiencing this specific problem. This fix may receive additional
+	testing. Therefore, if you are not severely affected by this problem, Microsoft
+	recommends that you wait for the next Systems Management Server service pack
+	that contains this fix.
+	
+	To resolve this problem immediately, contact Microsoft Product Support Services
+	to obtain the fix. For a complete list of Microsoft Product Support Services
+	phone numbers and information about support costs, visit the following Microsoft
+	Web site:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	NOTE: In special cases, charges that are ordinarily incurred for support calls
+	may be canceled if a Microsoft Support Professional determines that a specific
+	update will resolve your problem. The usual support costs will apply to
+	additional support questions and issues that do not qualify for the specific
+	update in question.
+	
+	The post-Service Pack 3 version of this fix should have the following file
+	attributes or later:
+	
+	  Date        Time   Version         Size     File name     Platform
+	  ------------------------------------------------------------------
+	  1-Mar-2001  19:25  2.00.1493.3253  811,792  Baseutil.dll  Alpha
+	  1-Mar-2001  19:25  2.00.1493.3253  527,296  Baseutil.dll  I386
+	
+	NOTE: Because of file dependencies, the most recent hotfix or feature that
+	contains the above files may also contain additional files.
+	
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed that this is a problem in the Microsoft products that
+	are listed at the beginning of this article. This problem was first corrected in
+	the Systems Management Server 2.0 Service Pack 4 Hotfix Rollup Package (HRP).
+	
+	For additional information about the SMS 2.0 SP4 HRP, click the article number
+	below to view the article in the Microsoft Knowledge Base:
+	
+	  Q323206 SMS: List of Bugs Fixed in the Systems Management Server 2.0 SP4 HRP
+	
+	MORE INFORMATION
+	================
+	
+	To determine if the problem that is described in this article has occurred, use
+	one computer to view the details of the files in a package. Use one instance of
+	Windows Explorer to view the files at the originating site, and use another
+	instance of Windows Explorer to view the files at the destination site's
+	distribution point. If the package's source files show a difference in time (a
+	difference of hours for most time zones), the package source files at the
+	destination site have been affected by this problem.
+	
+	Hotfix Installation Instructions
+	--------------------------------
+	
+	Apply the fix to all of the sites in the SMS hierarchy. After you apply the
+	hotfix, the date and time stamps are handled correctly for any new package, or
+	any package that you redistribute. To correct existing packages, use the Manage
+	Distribution Points Wizard. In SMS Administrator, right-click a package, and
+	then use the "Update all distribution points with a new package source version"
+	option.
+	
+	How to Use the Hotfix Installer:
+	
+	NOTE: You can use this method only on Intel-based computers.
+	
+	1. Copy the hotfix folder structure to a share on your network. Note that
+	  Q319427.exe is a Microsoft SMS Installer file that updates specific files on
+	  your site server.
+	
+	2. Log on to the site server by using an account with administrator permissions.
+	
+	3. On the site server, quit the SMS Administrator console.
+	
+	4. Run the Q319427.exe tool and then follow the instructions in the wizard. You
+	  can run the file in Quiet mode by using the /s switch.
+	
+	How to Manually Install the Hotfix:
+	
+	1. On the site server, quit the SMS Administrator console.
+	
+	2. Stop the SMS Site Component Manager, SMS Executive, Windows Management, and
+	  SMS SQL Monitor services on the site server.
+	
+	3. Replace the Baseutil.dll file in the
+	  <Sms_root_folder>\Bin\<Platform> folder with the version of the
+	  file from the hotfix.
+	
+	4. Restart the SMS Site Component Manager, SMS Executive, Windows Management,
+	  and SMS SQL Monitor services.
+	
+	Additional query words: prodsms
+	
+	======================================================================
+	Keywords          : kbsms200 kbsms200bug kbPackage kbSoftwareDist 
+	Technology        : kbSMSSearch kbSMS200
+	Version           : :2.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

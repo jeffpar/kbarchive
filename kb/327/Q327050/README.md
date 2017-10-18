@@ -1,0 +1,176 @@
+---
+layout: page
+title: "Q327050: Microsoft ADO.NET (Core Reference) Comments And Corrections"
+permalink: kb/327/Q327050/
+---
+
+## Q327050: Microsoft ADO.NET (Core Reference) Comments And Corrections
+
+	Article: Q327050
+	Product(s): Microsoft Press
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbdocfix kbdocerr
+	Last Modified: 06-AUG-2002
+	
+	SUMMARY
+	=======
+	
+	This article contains comments, corrections, and information about known errors
+	relating to the Microsoft Press book Microsoft ADO.NET (Core Reference), ISBN
+	0-7356-1423-7.
+	
+	The following topics are covered:
+	
+	- Page 8: Incorrect Reference To SQL Client
+	
+	- Page 34: ContactTitle Should Be ContactName
+	
+	- Page 77: Incorrect Reference To Figure 3-9
+	
+	- Page 218: ReadOnly Mentioned Twice
+	
+	- Page 273: DataSet Should Be DataTable
+	
+	- Page 276: DataSet Should Be DataTable
+	
+	- Page 365: Incorrect Event
+	
+	- Page 457: Scale Property Is Omitted
+	
+	- Pages 470-471: UpdatedDataSource Should Be UpdatedRowSource
+	
+	- Page 550: XLST Should Be XSLT
+	
+	- Page 571: Incorrect Word
+	
+	MORE INFORMATION
+	================
+	
+	Page 8: Incorrect Reference To SQL Client
+	-----------------------------------------
+	
+	On page 8, in the Visual Basic .NET code sample, the first comment references the
+	SQL Client .NET Data Provider.
+	
+	Change:
+	"Open and close a connection using the SQL Client .NET Data Provider."
+	
+	To:
+	"Open and close a connection using the OLE DB .NET Data Provider.
+	
+	
+	Page 34: ContactTitle Should Be ContactName
+	-------------------------------------------
+	
+	On page 34, in the final paragraph of the Selecting Columns to Display section,
+	
+	Change:
+	"... select just the CustomerID, CompanyName, ContactTitle, and Phone fields
+	..."
+	
+	To:
+	"... select just the CustomerID, CompanyName, ContactName, and Phone fields ..."
+	
+	
+	Page 77: Incorrect Reference To Figure 3-9
+	------------------------------------------
+	
+	On page 77, in the final paragraph of the section Creating Connections Using the
+	Toolbox,
+	
+	Change:
+	"(Figure 3-9 shows an example.)"
+	
+	To:
+	
+	"(Figure 3-10 shows an example.)"
+	
+	
+	Page 218: ReadOnly Mentioned Twice
+	----------------------------------
+	
+	On page 218, in the last sentence of the first paragraph under the "Try This at
+	Home..." box, the ReadOnly property is listed twice. The second instance should
+	be removed.
+	
+	
+	Page 273: DataSet Should Be DataTable
+	-------------------------------------
+	
+	On page 273, in the BeginInit and EndInit Methods section, all references to the
+	DataSet object should be changed to the DataTable object.
+	
+	
+	Page 276: DataSet Should Be DataTable
+	-------------------------------------
+	
+	On page 276, in the GetChanges Method section, the two references to DataSet
+	objects should be changed to DataTable objects.
+	
+	
+	Page 365: Incorrect Event
+	-------------------------
+	
+	On page 365, in the first sentence of the The ListChanged Event of the DataView
+	Object section, change:
+	
+	"The DataView object has one event, ListEvent..."
+	
+	To:
+	"The DataView object has one event, ListChanged..."
+	
+	
+	Page 457: Scale Property Is Omitted
+	-----------------------------------
+	
+	On page 457, in the paragraph immediately before the Note box, change:
+	
+	"...Size, Precision, and Size properties, ..."
+	
+	To:
+	"...Size, Precision, and Scale properties,..."
+	
+	
+	Pages 470-471: UpdatedDataSource Should Be UpdatedRowSource
+	-----------------------------------------------------------
+	
+	On page 470, the header for the section The Command Object's UpdatedDataSource
+	Property should be The Command Object's UpdatedRowSource Property.
+	
+	In addition, on pages 470 and 471, the four references to UpdatedDataSource in
+	the section following table 11-1should be changed to UpdatedRowSource.
+	
+	
+	Page 550: XLST Should Be XSLT
+	-----------------------------
+	
+	On page 550, in the section Applying an XSLT Transform, second paragraph, there
+	is a reference to XLST. Change this to XSLT.
+	
+	
+	Page 571: Incorrect Word
+	------------------------
+	
+	On page 571, in the third paragraph of the section Step 5: Adding Add and Delete
+	Buttons, change:
+	
+	"If you remove add an item..."
+	
+	To:
+	"If you add an item..."
+	
+	
+	Microsoft Press is committed to providing informative and accurate books. All
+	comments and corrections listed above are ready for inclusion in future
+	printings of this book. If you have a later printing of this book, it may
+	already contain most or all of the above corrections.
+	
+	Additional query words: 0-7356-1423-7 Sceppa
+	
+	======================================================================
+	Keywords          : kbdocfix kbdocerr 
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

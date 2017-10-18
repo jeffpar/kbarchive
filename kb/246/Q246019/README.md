@@ -1,0 +1,109 @@
+---
+layout: page
+title: "Q246019: Localstart.asp Not Display Browsing Local Computer With Netscape"
+permalink: kb/246/Q246019/
+---
+
+## Q246019: Localstart.asp Not Display Browsing Local Computer With Netscape
+
+	Article: Q246019
+	Product(s): Internet Information Server
+	Version(s): winnt:5.0
+	Operating System(s): 
+	Keyword(s): kbOSWin2000 kbIIS kbiis500
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Services version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When using Netscape Navigator or Communicator to browse the default Web page on
+	the local computer, the Localstart.asp page is not displayed. Instead, one of
+	the following errors occurs, depending on the URL used.
+	
+	Browsing http://localhost/
+	--------------------------
+	
+	Attempting to browse http://localhost causes a message box to appear, containing
+	the following error message:
+	
+	  Document contains no data
+	
+	Browsing http://<ServerName>/
+	---------------------------
+	
+	Attempting to browse the site using the host name of the local computer causes
+	the following error message to be displayed in the browser:
+	
+	  Under Construction
+	
+	  The site you were trying to reach does not currently have a default page. It
+	  may be in the process of being upgraded.
+	
+	  Please try this site again later. If you still experience the problem, try
+	  contacting the Web site administrator.
+	
+	CAUSE
+	=====
+	
+	The site is being browsed through a proxy, rather than browsing the local host
+	directly, which causes the Iisstart.asp file to determine that the browser is
+	not local.
+	
+	WORKAROUND
+	==========
+	
+	Change the settings so that Navigator or Communicator does not use the proxy
+	when browsing the local computer.
+	
+	For example, in Netscape Navigator version 4.08, perform the following:
+	
+	1. On the Edit menu, click Preferences.
+	
+	2. In the Category tree, click Advanced, and then Proxies.
+	
+	3. In the area to the right, if Automatic proxy configuration is currently
+	  selected, click Manual proxy configuration.
+	
+	4. Next to Manual proxy configuration, click View.
+	
+	5. Verify that the information needs is provided in the Servers section (at a
+	  minimum, the name of the HTTP server, using port 80, is typically needed).
+	
+	6. In the Exceptions text box, type "localhost" (without the quotation marks)
+	  and the host name of your computer, separated by a comma.
+	
+	7. Click OK twice to close the dialog box.
+	
+	NOTE: You will be prompted for your user name and password before being allowed
+	access to Localstart.asp. Provide the user name in the form of Domain\UserName
+	if you are in a domain.
+	
+	MORE INFORMATION
+	================
+	
+	The third-party products that are discussed in this article are manufactured by
+	companies that are independent of Microsoft. Microsoft makes no warranty,
+	implied or otherwise, regarding the performance or reliability of these
+	products.
+	
+	(c) Microsoft Corporation 2000, All Rights Reserved. Contributions by Kevin
+	Zollman, Microsoft Corporation.
+	
+	
+	Additional query words: iis wwwroot page akz
+	
+	======================================================================
+	Keywords          : kbOSWin2000 kbIIS kbiis500 
+	Technology        : kbiisSearch kbiis500
+	Version           : winnt:5.0
+	Issue type        : kbprb
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

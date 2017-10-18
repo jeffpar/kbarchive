@@ -1,0 +1,141 @@
+---
+layout: page
+title: "Q263159: How to Troubleshoot Extension Conflicts on the Macintosh"
+permalink: kb/263/Q263159/
+---
+
+## Q263159: How to Troubleshoot Extension Conflicts on the Macintosh
+
+	Article: Q263159
+	Product(s): Microsoft Tips for the Macintosh System
+	Version(s): 7.5 and later,98
+	Operating System(s): 
+	Keyword(s): kb3rdparty kbtshoot kbdta macword98 kbdtatshoot
+	Last Modified: 22-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Apple Macintosh System Software 7.5 and later 
+	- Microsoft Office 98 Macintosh Edition 
+	- Microsoft Office 2001 for Mac (Setup) 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	An extension conflict is one of the most common issues that appear with programs
+	on the Macintosh. However, the range of behaviors that may occur with an
+	extension conflict is varied. Behaviors can be as simple as menu commands
+	appearing as unavailable, or as complex as a crash or freeze with an error
+	message.
+	
+	Testing for an extension conflict is one of the easiest tests available. To test
+	for an extension conflict, follow these steps:
+	
+	1. Quit all programs.
+	
+	2. On the Special menu, click Restart and then press SHIFT.
+	
+	3. Continue holding SHIFT until a message appears stating that the extensions
+	  have been disabled or turned off.
+	
+	  NOTE: This process temporarily turns off add-on components (extensions and
+	  control panels) of the operating system that can conflict with one another or
+	  other programs. To turn the extensions back on, restart the computer
+	  normally.
+	
+	4. Start the program, and perform the same steps that resulted in the original
+	  problem.
+	
+	If the problem continues to occur, the cause is probably not an extension
+	conflict. You must continue troubleshooting the operating system.
+	
+	For additional information about troubleshooting the operating system, click the
+	article numbers below to view the articles in the Microsoft Knowledge Base:
+	
+	  Q272766 OFF2001: How to Troubleshoot Macintosh System Errors on OS 9.x and
+	  Earlier
+	
+	  Q272766 OFF2001: How to Troubleshoot Macintosh System Errors
+	
+	If the problem no longer occurs with extensions turned off, an extension or
+	control panel is interfering with either the operating system or with Office.
+	You must locate the file that is causing this behavior. To do that, use the
+	process of elimination.
+	
+	An excellent tool for this process is the Extension Manager control panel, which
+	lists most of the extensions and control panels that are installed in the
+	operating system. To start the process of elimination, follow these steps:
+	
+	1. On the Apple menu, click Control Panels, and then click Extension Manager.
+	
+	2. In the Extension Manager, make sure that you save the current set of
+	  extensions that are running and then switch to the Base Set.
+	
+	  NOTE: The Base Set is located either at the top of the dialog box with a
+	  drop-down menu or on the File menu.
+	
+	3. Scroll through the list, and turn on all the extensions that start with the
+	  word "Microsoft". Restart the computer.
+	
+	4. Test the program for the previous behavior.
+	
+	If the behavior continues, you know that it is with one of the extensions or
+	control panels that is turned on. You must start eliminating files from the list
+	of those currently turned on in the Extension Manager.
+	
+	If the behavior does not occur with the Base Set + Microsoft extensions turned
+	on, you know that the file that is causing the behavior is not part of that set.
+	You must add extensions to that set (note which extensions or control panels you
+	add), restart the computer, and test for the behavior until it occurs again.
+	After that, you must test the extensions or control panels that were recently
+	added to find one that is causing the behavior.
+	
+	After you locate the file that is causing the behavior, contact the manufacturer
+	of the software to see whether an updated version is available.
+	
+	However, if the behavior does not occur when the computer is started with
+	extensions temporarily turned off, but you do not locate the file after you
+	troubleshoot extensions with the Extension Manager, please contact Apple
+	Technical Support for further assistance.
+	
+	For information about how to contact Apple, click the appropriate article number
+	below to view the article in the Microsoft Knowledge Base:
+	
+	  Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+	
+	  Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+	
+	  Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+	
+	MORE INFORMATION
+	================
+	
+	The third-party contact information included in this article is provided to help
+	you find the technical support you need. This contact information is subject to
+	change without notice. Microsoft in no way guarantees the accuracy of this
+	third-party contact information.
+	
+	The third-party products discussed in this article are manufactured by vendors
+	independent of Microsoft; we make no warranty, implied or otherwise, regarding
+	these products' performance or reliability.
+	
+	REFERENCES
+	==========
+	
+	For additional information about known third-party extension conflicts, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q184594 WD98: Summary of Known Third-Party Extension Conflicts
+	
+	Additional query words: hang crash freeze error system word WD excel XL powerpoint PPT internet explorer IE outlook Express OE 3rd-party Troubleshoot Extensions Ext How to Mac Macin Off98 Off2001 WD98 WD2001 XL98 XL2001 PPT98 PPT2001 ENT Ent2001 Conflict Test damaged Shift Manager Folder INIT Catcher
+	
+	======================================================================
+	Keywords          : kb3rdparty kbtshoot kbdta macword98 kbdtatshoot 
+	Technology        : kbHWMAC kbOSMAC kbMSNonProductSearch kbOfficeMacSearch kbOffice98Search kbOffice2001Search kbOffice98 kbOffice2001Setup kbMac75xSearch
+	Version           : :7.5 and later,98
+	Issue type        : kbbug
+	
+	=============================================================================
+	

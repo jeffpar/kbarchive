@@ -1,0 +1,70 @@
+---
+layout: page
+title: "Q110598: PRB: Spontaneous Assembly and MASM 6.11 Errors"
+permalink: kb/110/Q110598/
+---
+
+## Q110598: PRB: Spontaneous Assembly and MASM 6.11 Errors
+
+	Article: Q110598
+	Product(s): Microsoft Macro Assembler
+	Version(s): 6.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 04-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Macro Assembler (MASM), version 6.11 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Using the Spontaneous Assembly version 3.0 include files with MASM 6.11 may
+	cause numerous A2006 (undefined symbol) or A2008 (syntax error) errors to be
+	generated.
+	
+	CAUSE
+	=====
+	
+	These errors occur because Spontaneous Assembly code incorrectly sets up the
+	include files to use MASM 5.1 syntax. This problem occurs with code that
+	assembles cleanly using MASM 6.0 or 6.1. Earlier versions of Spontaneous
+	Assembly may have similar problems.
+	
+	MORE INFORMATION
+	================
+	
+	The Spontaneous Assembly include files check for the version of assembler being
+	used. These files do not specifically check for MASM 6.11, and therefore end up
+	setting it for MASM 5.1, which causes the errors. The version checking is done
+	in the Spontaneous Assembly file UTIL.INC, which can easily be corrected to work
+	with MASM 6.11 by making the following change:
+	
+	Line 6 of UTIL.INC reads:
+	
+	  ELSEIF ((@Version EQ 600) OR (@Version EQ 610))
+	
+	Change it to read as follows:
+	
+	  ELSEIF ((@Version EQ 600) OR (@Version EQ 610) OR (@Version EQ 611))
+	
+	This adds the version test specifically for MASM 6.11. You can also change line 6
+	to the following
+	
+	  ELSEIF (@Version GE 600)
+	
+	to permit all versions of MASM 6.0 and later to be used.
+	
+	
+	Additional query words: 6.1x
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMASMsearch kbAudDeveloper kbMASM611
+	Version           : :6.11
+	
+	=============================================================================
+	

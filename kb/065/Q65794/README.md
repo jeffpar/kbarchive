@@ -1,0 +1,159 @@
+---
+layout: page
+title: "Q65794: Using Quarterdeck QEMM386 with Windows 3.0"
+permalink: kb/065/Q65794/
+---
+
+## Q65794: Using Quarterdeck QEMM386 with Windows 3.0
+
+	Article: Q65794
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:3.0,3.0a
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 24-OCT-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows versions 3.0, 3.0a 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article provides information about the use of Quarterdeck QEMM386 with
+	Microsoft Windows version 3.0. However, Microsoft has not officially tested
+	Windows 3.0 with QEMM386. If the tips contained in this article do not prove
+	helpful in resolving a problem, contact Quarterdeck Technical Support for
+	assistance.
+	
+	MORE INFORMATION
+	================
+	
+	Quarterdeck's QEMM386 is a 386 expanded/extended memory manager that provides a
+	"loadhigh" capability.
+	
+	QEMM386 versions 5.10 and later support Windows 3.0 in all of its modes (real,
+	standard, and enhanced). QEMM386 versions earlier than 5.10 may be used with
+	Windows 3.0 only in its real mode of operation.
+	
+	The version of QEMM386 that you have can be identified by the version number it
+	displays during the system boot, or by the presence of a QEMM386.SYS statement
+	in the CONFIG.SYS file. Versions of QEMM386 earlier than 5.10 use the filename
+	QEMM.SYS rather than QEMM386.SYS.
+	
+	QEMM386 versions 5.10 and later provide functionality that duplicates the Windows
+	3.0 HIMEM.SYS driver. In effect, QEMM386 replaces HIMEM.SYS. Loading both
+	QEMM386 and HIMEM should cause no problems, but does waste the 2.8K of
+	conventional memory occupied by HIMEM. It is necessary to load only QEMM386 for
+	operation in any Windows mode.
+	
+	The QEMM386 upgrade booklet gives some specific instructions for the setup of
+	QEMM386 to ensure Windows compatibility. If you follow these instructions you
+	should find that Windows 3.0 operates correctly with QEMM386 in all three modes.
+	Quarterdeck reports that for the most part, QEMM386 setup demonstrates no
+	problems when run in real or standard modes. However, due to the broad range of
+	hardware and software that can be combined in some systems, Quarterdeck has
+	encountered configurations that have experienced various problems when trying to
+	run QEMM386 with Windows 3.0 in enhanced mode.
+	
+	These problems include the following:
+	
+	- Failure of Windows to start up in enhanced mode
+	
+	- System crashes when exiting Windows in enhanced mode
+	
+	- Problems while running Windows, which do not occur when QEMM386 is not used
+	
+	Use the following troubleshooting techniques if you experience problems using
+	QEMM386 with Windows 3.0 in enhanced mode. Note that if you receive memory
+	paging errors from Windows, an upgrade to QEMM386 version 5.11 or later may be
+	necessary, especially on IBM PS/2 machines.
+	
+	Windows Will Not Start in Enhanced Mode, or Crashes on Exit
+	-----------------------------------------------------------
+	
+	Check your system to be sure that it has been set up as suggested in the "QEMM
+	5.10 Upgrade Booklet." The following are some items that are important to
+	enhanced mode operation:
+	
+	1. Be sure the QEMM386 statement in the CONFIG.SYS file includes the RAM
+	  command-line parameter. Or if the RAM parameter is not used, the parameter
+	  "X=B000-B7FF" must be used to exclude QEMM386's use of the monochrome video
+	  area.
+	
+	2. If you have a machine that has different speeds of memory, you need to use
+	  the NOSORT parameter. Examples of such configurations include 386 machines
+	  that use 16-bit memory boards (such as the Intel Above Board or AST RAMPage),
+	  in addition to 32-bit motherboard memory. If you are not sure, use the
+	  parameter; it has no negative effect.
+	
+	3. If you are running on a machine that would normally have less than 640K
+	  conventional memory (such as the original Intel SYP302, which is limited to
+	  512K conventional memory), you must use the NOFILL parameter to prevent
+	  QEMM386 from backfilling conventional memory to 640K. If you are not sure,
+	  use the parameter; it has no negative effect.
+	
+	4. If you have a machine such as an IBM PS/2, HP Vectra, or micro channel bus
+	  compatible, which has an extended BIOS data area (EBIOS), you must use the
+	  NOXBDA parameter so that the extended BIOS data area isn't moved. QEMM386
+	  versions 5.11 and later do not require this parameter.
+	
+	Problems or Crashes While Running Windows in Enhanced Mode
+	----------------------------------------------------------
+	
+	QEMM386 is mostly disabled while enhanced mode Windows is running. However,
+	QEMM386 may have made changes to the system before being disabled which may
+	later cause problems for Windows. If you suspect QEMM386, first try disabling
+	QEMM386 entirely by making a backup copy of your CONFIG.SYS file and temporarily
+	removing the QEMM386.SYS line for testing purposes.
+	
+	If removing QEMM386 seems to correct the problem, restore QEMM and try undoing
+	some of the changes to the system that QEMM has made.
+	
+	1. Try loading QEMM386, but not loading any of your resident programs or drivers
+	  into high memory.
+	
+	2. If you are using Quarterdeck's FILES.COM and/or BUFFERS.COM, try loading
+	  normal files and buffers instead.
+	
+	3. If the system has shadow RAM, try the QEMM386 NOSHADOWRAM parameter.
+	
+	4. Try using the QEMM386 X=F000-FFFF parameter to exclude any mapping in the
+	  F000-FFFF area.
+	
+	5. If, when starting Windows 3.0 in enhanced mode, unreadable characters appear
+	  on the display, the computer beeps, and you are returned to the MS-DOS
+	  prompt, verify that the file WINHIRAM.VXD is present in the QEMM directory on
+	  your hard disk. Make sure this file is the same version as present on the
+	  distribution disks for the QEMM386 version that you are running. New versions
+	  of this file are shipped with each QEMM386 update.
+	
+	6. Windows 3.00 enhanced mode will not function with an EMS page frame located
+	  at 9000 hex. Check the location of the page frame by running QEMM.COM. If the
+	  frame is at 9000, see if you can move it somewhere between C000 and E000
+	  hexadecimal. If you have a page frame at 9000, problems may occur when
+	  running DOS programs that use expanded memory under Windows 3.0.
+	
+	7. If you are running QEMM386 5.10 and have trouble running Novell's XMSNET, or
+	  anything that uses XMS memory before entering Windows 3.0 enhanced mode,
+	  update to QEMM386 version 5.11.
+	
+	8. In some cases, adding the following line to the [386Enh] section of the
+	  Windows 3.0 SYSTEM.INI file may be helpful in resolving memory conflicts
+	  between Windows and QEMM386:
+	
+	        [386Enh]
+	        EMMExclude=E000-EFFF
+	        DualDisplay=true
+	
+	Additional query words: 3.00 3.0 3.0a 3.00a 3rdparty QEMM 386 quarter deck 5.1 5.0 XMS winmem win30
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+	Version           : WINDOWS:3.0,3.0a
+	
+	=============================================================================
+	

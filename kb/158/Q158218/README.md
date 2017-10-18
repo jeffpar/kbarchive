@@ -1,0 +1,178 @@
+---
+layout: page
+title: "Q158218: INFO: Support Options for Visual SourceSafe"
+permalink: kb/158/Q158218/
+---
+
+## Q158218: INFO: Support Options for Visual SourceSafe
+
+	Article: Q158218
+	Product(s): Microsoft SourceSafe
+	Version(s): WINDOWS:4.0,4.0a,5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbSSafe400 kbSSafe500 kbSSafe600
+	Last Modified: 31-OCT-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual SourceSafe for Windows, versions 4.0, 4.0a, 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The purpose of this article is to inform customers of the support options
+	available for Visual SourceSafe.
+	
+	MORE INFORMATION
+	================
+	
+	
+	The Online Help, Readme.wri file, and product manuals are supplied with Visual
+	SourceSafe and contain a wealth of information that could help to answer
+	questions you may have or resolve problems you may encounter. Additional sources
+	of information or support are listed below.
+	
+	Readme.wri
+	----------
+	
+	The Readmi.wri is located in the root of the SourceSafe directory. This file
+	contains helpful information about installation, documentation notes, new
+	features, and additional tips. If you do not have this Readme.wri, it is
+	available in sections from the Microsoft Knowledge base. These articles can be
+	found by entering "Readme.wri" as the words to search for on the Microsoft
+	SourceSafe Knowledge Base Web page.
+	
+	Microsoft Knowledge Base
+	------------------------
+	
+	The Microsoft Knowledge Base is available on the following Web site:
+	
+	  http://msdn.microsoft.com/support
+	
+	This is a database of informative technical articles written by Microsoft Support
+	Engineers addressing product support issues.
+	
+	For additional information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q129725 Obtaining Knowledge Base Articles on the World Wide Web
+	
+	
+	SourceSafe Home Page
+	--------------------
+	
+	Go to the SourceSafe home page at www.microsoft.com/SSafe for many support
+	options such as frequently asked questions (FAQs), Knowledge Base articles, and
+	product and technical information. Additionally, go to:
+	
+	  http://support.microsoft.com/support/ssafe/
+	
+	to view Visual SourceSafe buglists, fixlists, error messages, bug reporting Web
+	pages, and other helpful support tools.
+	
+	Peer-to-Peer Newsgroups
+	-----------------------
+	
+	Peer-to-Peer Newsgroups (news:Microsoft.public.visualsourceSafe) are online
+	conversations among users of Visual SourceSafe.
+	
+	Microsoft Developers Network (MSDN) CD-ROM
+	------------------------------------------
+	
+	MSDN is a paid subscription service and contains developer product Knowledge Base
+	articles, selected Microsoft Software Library files, and other technical
+	documentation. MSDN is distributed quarterly.
+	
+	For additional information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q110105 How to Join Microsoft Developer Network (MSDN)
+	
+	
+	TechNet CD-ROM
+	--------------
+	
+	Microsoft TechNet is the front-line resource for fast, complete answers to
+	technical questions on Microsoft products. On each Microsoft TechNet CD-ROM, you
+	will find the Microsoft Knowledge Base, Microsoft Software Library, white
+	papers, networking information, and other valuable resources. TechNet is
+	distributed monthly and is available by paid annual subscription. For TechNet
+	ordering information, call (800) 344-2121.
+	
+	Suggestions for Product Improvement
+	-----------------------------------
+	
+	Suggestions for product improvement can be submitted by doing one of the
+	following:
+	
+	- Submit your feedback through the Web by choosing the feedback button on
+	  www.microsoft.com/SSafe.
+	
+	- Fax the suggestion to us at (425) 936-7329.
+	
+	- Send a letter to:
+	
+	  Attn: Microsoft Wish
+	  One Microsoft Way
+	  Redmond WA, 98052
+	
+	- Contact the Microsoft Wish Line at (425) 936-WISH (9474).
+	
+	Microsoft Press and Other Third Party Books
+	-------------------------------------------
+	
+	Books are generally a good source of technical and "how to" information. Contact
+	Microsoft Press at www.msdn.microsoft.com/mspress or call (800) MS-PRESS
+	(677-7377) for a complete listing of available books. Currently, there are no
+	books from Microsoft Press that deal exclusively with SourceSafe, but you may
+	find Visual C++ or Visual Basic books helpful if you are dealing with
+	integration issues. If you are using SourceSafe integration under Visual Basic,
+	there are several books that may be helpful. Two books are:
+	
+	  "Database Developer's Guide with Visual Basic 4"
+	  by Roger Jennings
+	  Copyright 1996, Sams Publishing
+	  ISBN: 0-672-30652-2
+	  Chapter 24 is Managing Large Projects with Visual SourceSafe 4.0, pp.815-843
+	
+	  "Visual Basic 4 Enterprise Development"
+	  by Craig Goren, James Schmelzer and Jeffrey Smith
+	  Copyright 1996, Que Publishing
+	  ISBN: 0-7897-0099-9
+	  Chapter 19 is Version Control and Team Development, pp. 643-726
+	
+	The books included here have been authored by writers independent of Microsoft;
+	we make no warranty, implied or otherwise, regarding the information contained
+	in these books.
+	
+	
+	Support Professionals can be reached at (425) 635-7014. Currently, two free
+	support incidents are offered to SourceSafe customers. Numerous paid support
+	options are available. They can be explained by a Microsoft Service
+	Representative at (425) 635-7014. These support options are subject to change.
+	
+	For more information on your support options for this product, please refer to
+	Support Options by Product online at:
+	
+	  http://www.msdn.microsoft.com/support
+	
+	Bug Reporting
+	-------------
+	
+	Visual SourceSafe anomalies can be submitted by using the Online form on the
+	following Web site:
+	
+	  http://support.microsoft.com/support/ssafe
+	
+	Additional query words: kbdss
+	
+	======================================================================
+	Keywords          : kbSSafe400 kbSSafe500 kbSSafe600 
+	Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe400 kbSSafe400a kbSSafe500
+	Version           : WINDOWS:4.0,4.0a,5.0,6.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

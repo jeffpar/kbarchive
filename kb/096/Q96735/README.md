@@ -1,0 +1,131 @@
+---
+layout: page
+title: "Q96735: Hardware/Software Requirements for Fault Tolerance"
+permalink: kb/096/Q96735/
+---
+
+## Q96735: Hardware/Software Requirements for Fault Tolerance
+
+	Article: Q96735
+	Product(s): Microsoft LAN Manager
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbnetwork
+	Last Modified: 19-FEB-2002
+	
+	SUMMARY
+	=======
+	
+	This article discusses basic requirements for fault tolerance. It also addresses
+	specific hardware issues such as IDE drives, Micro Channel and Compaq EISA
+	machine configurations, as well as some less common software issues such as
+	third party .BID files, LAN Manager's Network Productivity Pack, and unique boot
+	mirroring options.
+	
+	IDE DRIVES
+	----------
+	
+	The system must have at least two hard drives, preferably not IDE. (IDE =
+	integrated device electronics: a type of disk drive that does not need a
+	separate adapter card because it has resident controller electronics.) IDE
+	drives can hang the server if they experience a massive failure such as loss of
+	data cable or power connection.
+	
+	NO PROPRIETARY DRIVE USE
+	------------------------
+	
+	The system must not be using the drives in a proprietary manner. For example: IBM
+	Micro Channel machines apparently place IML microcode required for booting on
+	the boot drive. This conflicts with fault tolerance and makes it impossible to
+	boot from the mirror of the boot drive. On these types of machines, fault
+	tolerance seems to install and work successfully, but in the event of failure
+	the mirror will not boot.
+	
+	EISA CONFIGURATION PARTITION
+	----------------------------
+	
+	Compaq's EISA machines have a special partition for storing EISA configuration
+	information, and although fault tolerance has been successfully implemented on a
+	Prosignia using an Adaptec 1742 controller, and the mirror made bootable with
+	FTBOOT, this EISA configuration partition was not mirrored. Testing indicates
+	that you can reinstall the EISA configuration partition onto the former mirror
+	from diskette.
+	
+	However, in testing with the Systempro/XL, FTSETUP's "View" option reported the
+	status of the C: drive as "Cannot mirror" when the EISA Configuration Partition
+	was installed. Removing this partition allowed the boot drive to be mirrored
+	successfully.
+	
+	MIRRORING DRIVE MUST BE RAW
+	---------------------------
+	
+	The drive becoming the mirror must be raw (not formatted, not partitioned). In
+	cases where setting up fault tolerance interferes with drive lettering, it often
+	is the case that a second drive has been installed and then
+	partitioned/formatted. If you create a primary partition on a new drive in
+	FDISKPM, drive letters are reassigned if there are extended partitions on the
+	other drives.
+	
+	OS/2 1.3 AND LADDR
+	------------------
+	
+	The system must be running OS/2 version 1.3 and using a LADDR disk driver either
+	supplied with it or by a third party source. HPFS must be on the partition to be
+	mirrored (FAT drives can be selected for mirroring but the process reformats
+	them to HPFS). The partition(s) to be mirrored/duplexed must not take 100
+	percent of the drive. For smaller drives, 2 MB of leftover unpartitioned space
+	may be enough. For larger drives, 2 to 5 percent free space would be a better
+	amount to use. OS/2 installation does not prompt for a partition size if the
+	disk is already partitioned, so if a disk's partition already uses 100 percent
+	of its capacity you must either delete the partition or repartition the disk
+	using MS-DOS before starting the installation process.
+	
+	3RD PARTY .BID FILES
+	--------------------
+	
+	If third party .BID files are being used for the disk, then copy them to the HPFS
+	recovery disks as well as to the installation disks--they are needed during the
+	recovery process.
+	
+	LM VERSIONS EARLIER THAN 2.2
+	----------------------------
+	
+	For versions of LAN Manager earlier than 2.2, the mirror of the boot partition
+	must end up with only one partition on it. A disk with an HPFS boot partition
+	and an additional FAT partition has been successfully mirrored and the boot
+	partition recovered when the primary drive was removed from the system.
+	Mirroring a boot partition onto a smaller drive is possible, but this requires
+	that the boot partition be smaller than the mirror drive--small enough to fit
+	onto it and leave room for fault tolerance (2 MB of unpartitioned space for
+	smaller drives, 2% - 5% for larger). Once the boot partition has been mirrored,
+	the remaining space on the primary drive can be partitioned. Because fault
+	tolerance makes decisions about what raw space to use for mirroring, you must
+	make sure that the boot mirror contains only one partition. As a result, these
+	configurations are generally not recommended unless you have a thorough
+	understanding of how mirroring is done.
+	
+	For these versions of LAN Manager, a boot drive with two HPFS partitions will
+	seem to mirror successfully, but attempting FTBOOT after removing the primary
+	drive returns a message that the disk was improperly configured for recovery.
+	
+	LM VERSIONS 2.2 AND LATER
+	-------------------------
+	
+	For LAN Manager 2.2, mirroring of the boot drive with more than one partition is
+	possible.
+	
+	If you are using the Network Productivity Pack, copy FTBOOT.EXE from the LAN
+	Manager 2.1 disks to the HPFS recovery disks. FTBOOT.EXE was not included on the
+	distribution disks of the Network Productivity Pack.
+	
+	If you have LAN Manager 2.2 and the date of FTBOOT.EXE is earlier than March
+	1993, then you need to get a newer version that fixed a bug causing Trap Ds and
+	Cs on reboot after using FTBOOT. This fix was included in the LM22 Patch.
+	
+	Additional query words: 2.10 2.10a 2.20 2.1 2.1a 2.2
+	
+	======================================================================
+	Keywords          : kbnetwork 
+	
+	=============================================================================
+	

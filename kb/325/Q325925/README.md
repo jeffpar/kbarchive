@@ -1,0 +1,177 @@
+---
+layout: page
+title: "Q325925: FIX: Event 25 Error Message When You Print by Using SNACFG"
+permalink: kb/325/Q325925/
+---
+
+## Q325925: FIX: Event 25 Error Message When You Print by Using SNACFG
+
+	Article: Q325925
+	Product(s): Microsoft SNA Server
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kberrmsg kbhis2000 kbhis2000bug
+	Last Modified: 12-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Host Integration Server 2000 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you print a host print job through a print session that you create by using
+	the Host Integration Server 2000 command line configuration utility
+	(Snacfg.exe), you may receive an Event 25 error message similar to the following
+	in the Application Event Log:
+	
+	  Event ID: 25
+	  Source: SNA Virtual Print Driver
+	  Description: If your print output is correct, this warning can be ignored.
+	
+	  If your session has "Printer Language is Hewlett-Packard (HP) PCL" selected,
+	  then the SNA Virtual Print Driver has not recognised your PaperSize (1) or
+	  Orientation (1) setting. If your job output has incorrect PaperSize or
+	  Orientation, use GDI printing or put the definitions in the START_JOB macro
+	  in your PDT file.
+	
+	  If your session is not configured for HP PCL, the SNA Virtual Print Driver
+	  cannot automatically apply PaperSize and Orientation Admin settings. If your
+	  job output has incorrect PaperSize or Orientation, use GDI printing or put
+	  the definitions in the START_JOB macro in your PDT file.
+	
+	  Print Session: <Print Session Name>.
+	  Printer: <Printer Name>.
+	
+	This problem also occurs when a print session is created by using the Host
+	Integration Server 2000 Windows Management Instrumentation (WMI) provider.
+	
+	CAUSE
+	=====
+	
+	This problem occurs because the DEVMODE structure for the printer is not
+	initialized correctly when you create a print session by using Snacfg.exe. An
+	Event 25 occurs because the paper source in the DEVMODE structure is not
+	recognized by the Host Integration Server 2000 print service.
+	
+	RESOLUTION
+	==========
+	
+	A supported fix is now available from Microsoft, but it is only intended to
+	correct the problem that is described in this article. Apply it only to
+	computers that are experiencing this specific problem. This fix may receive
+	additional testing. Therefore, if you are not severely affected by this problem,
+	Microsoft recommends that you wait for the next Microsoft Host Integration
+	Server 2000 service pack that contains this fix.
+	
+	To resolve this problem immediately, contact Microsoft Product Support Services
+	to obtain the fix. For a complete list of Microsoft Product Support Services
+	phone numbers and information about support costs, visit the following Microsoft
+	Web site:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	NOTE: In special cases, charges that are ordinarily incurred for support calls
+	may be canceled if a Microsoft Support Professional determines that a specific
+	update will resolve your problem. The typical support costs will apply to
+	additional support questions and issues that do not qualify for the specific
+	update in question.
+	
+	The English version of this fix has the file attributes (or later) that are
+	listed in the following table. The dates and times for these files are listed in
+	coordinated universal time (UTC). When you view the file information, it is
+	converted to local time. To find the difference between UTC and local time, use
+	the Time Zone tab in the Date and Time tool in Control Panel.
+	
+	  Date          Time    Version     Size      File name
+	  ------------------------------------------------------
+	  09-Aug-2002   13:44   5.0.0.900   250,128   Snacfg.exe
+	
+	NOTE: Because of file dependencies, the most recent fix that contains the above
+	files may also contain additional files.
+	
+	
+	
+	
+	WORKAROUND
+	==========
+	
+	To prevent this problem, create the print sessions by using SNA Manager.
+	
+	To prevent the Event 25 error for those print sessions that you created by using
+	Snacfg.exe, follow these steps:
+	
+	1. Open SNA Manager.
+	
+	2. Expand Microsoft SNA Manager.
+	
+	3. Expand the configured SNA Subdomain.
+	
+	4. Expand the Host Integration Server 2000 server where the affected print
+	  sessions are defined.
+	
+	5. Click to select Print Service in the left pane.
+	
+	6. Double-click an affected print session in the right pane (or right-click the
+	  print session, and then click Properties).
+	
+	7. In the Properties dialog box, click Printer.
+	
+	8. In the Print Setup dialog box, click OK.
+	
+	9. In the Properties dialog box, click Apply.
+	
+	10. Click OK to close Properties.
+	
+	11. Save the Host Integration Server 2000 configuration.
+	
+	12. Repeat these steps for each print session that is logging an Event 25 error
+	  message.
+	
+	If the print service is already started when you follow these steps, restart the
+	print service.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed that this is a problem in Microsoft Host Integration
+	Server 2000.
+	
+	MORE INFORMATION
+	================
+	
+	Because the print job may print correctly, the only symptom that this problem is
+	occurring may be the Event 25 error message in the Application Event log. In
+	this case, ignore the error message.
+	
+	If the Event 25 error message is logged for print sessions that you created in
+	SNA Manager, the SNA virtual print driver cannot recognize the paper size or
+	orientation that you specified in the print job or in the print session. In this
+	case, follow the instructions that appear in the Event 25 error message.
+	
+	REFERENCES
+	----------
+	
+	For additional information about the Event 25 error messages, click the article
+	numbers below to view the articles in the Microsoft Knowledge Base:
+	
+	  Q327359 FIX: Event 25 Error Message Is Logged When the Printer Is Configured
+	  to Use the Upper Paper Tray
+	
+	  Q327356 FIX: Event 25 Error Messages Are Logged for Each Print Job in a Print
+	  Session
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kberrmsg kbhis2000 kbhis2000bug 
+	Technology        : kbAudDeveloper kbHostIntegServ2000
+	Version           : :
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

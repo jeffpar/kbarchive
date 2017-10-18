@@ -1,0 +1,70 @@
+---
+layout: page
+title: "Q89336: &quot;Write Protected Disk&quot; Errors in WinLogin SETUP"
+permalink: kb/089/Q89336/
+---
+
+## Q89336: &quot;Write Protected Disk&quot; Errors in WinLogin SETUP
+
+	Article: Q89336
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:3.1,3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 11-OCT-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows versions 3.1, 3.11 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The following error messages occur at the end of the WinLogin setup process if
+	you install a WinLogin database from the WinLogin 1.0 master disks
+	
+	  System Error
+	  Write-protected disk in drive X:
+	
+	  -and-
+	
+	  Unable to write new INF file 'X:\stfsetup.in_'.
+	
+	where X: is the floppy drive containing the master disk.
+	
+	MORE INFORMATION
+	================
+	
+	After successfully completing the setup process, the WinLogin Setup program
+	writes the location of the newly installed database to the STFSETUP.IN_ file on
+	the master disk, so it can use this as the default database location during
+	reinstalls. The above error messages occur because the WinLogin master disk is
+	write-protected. The only side effect of this error is that the newly installed
+	database location will not be the default database location if you reinstall
+	WinLogin. This error has no effect on the installed copy of WinLogin.
+	
+	WORKAROUND
+	==========
+	
+	To avoid this problem, install WinLogin from a backup copy of the master disk,
+	and do not write-protect the backup copy until you finish running the WinLogin
+	Setup program. An alternative is to copy all of the files from the master disk
+	to a network drive, and write-protect all these files except STFSETUP.IN_.
+	
+	STATUS
+	======
+	
+	Microsoft is researching this problem and will post new information here as it
+	becomes available.
+	
+	Additional query words: 3.1 3.10 WinLogin win login
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+	Version           : WINDOWS:3.1,3.11
+	
+	=============================================================================
+	

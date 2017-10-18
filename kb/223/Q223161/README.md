@@ -1,0 +1,150 @@
+---
+layout: page
+title: "Q223161: XADM: Information on ESE Zeroing"
+permalink: kb/223/Q223161/
+---
+
+## Q223161: XADM: Information on ESE Zeroing
+
+	Article: Q223161
+	Product(s): Microsoft Exchange
+	Version(s): winnt:5.5
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 11-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.5 
+	-------------------------------------------------------------------------------
+	
+	
+	IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+	
+	  Q256986 Description of the Microsoft Windows Registry
+	
+	SUMMARY
+	=======
+	
+	This article explains ESE Zeroing, a feature first included in Microsoft
+	Exchange Server, version 5.5 Service Pack 2.
+	
+	MORE INFORMATION
+	================
+	
+	ESE Zeroing is a feature designed to overwrite unused pages in the Exchange
+	Server databases with zeroes so that the data within these unused pages cannot
+	be recovered using conventional means. When an item is deleted from the Exchange
+	Server (with Deleted Item Retention disabled), such as when a user deletes a
+	message from their mailbox, the item is dereferenced and the pages that item was
+	occupying are marked as unused.
+	
+	When ESE Zeroing is enabled, the data that is contained in unused pages is
+	overwritten with various characters (either 'z', 'd', 'l', or 'u', depending on
+	the type of page being overwritten) during an online backup. As each database
+	page is written to the tape, the page is overwritten with zeroes in the database
+	on the hard disk one time. After the backup has completed, the deleted data is
+	on the tape, but is no longer in the database and cannot be recovered using
+	conventional means.
+	
+	
+	To enable ESE zeroing during online backups with Microsoft Exchange Server
+	Service Pack 2, you must add the following registry entry:
+	
+	1. Start Registry Editor (Regedt32.exe).
+	
+	2. Go to the following registry subkey:
+	
+	  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSExchangeIS\ParametersSystem
+	
+	3. Add the following entry:
+	
+	  Name: "Zero Database During Backup" (without quotes)
+	  Type: REG_DWORD
+	  Value: 0x00000001.
+	
+	4. Quit Registry Editor.
+	
+	After this change has been applied, the Microsoft Exchange Information Store
+	service must be stopped and restarted for these changes to take effect.
+	
+	You will now receive ESE Zeroing notifications in the Windows NT Event Viewer's
+	Application log after an online backup. Additionally, you will receive an Event
+	ID 197 and 198 for each Information Store database on the server.
+	
+	Event ID 197 from ESE97 is logged when the database zeroing operation starts.
+	
+	Event ID 198 from ESE97 is logged when database zeroing is completed. This event
+	will give details about the operation. The output will resemble the following:
+	
+	  MSExchangeIS ((###) ) Online zeroing of database
+	  D:\EXCHSRVR\MDBDATA\PRIV.EDB finished after # seconds with err #
+	  #### pages
+	  # blank pages
+	  #### pages unchanged since last zero
+	  ### unused pages zeroed
+	  ##### used pages seen
+	  ## deleted records zeroed
+	  # unreferenced data chunks zeroed
+	
+	where the #'s are numbers that will vary from system to system.
+	
+	An additional switch has been added to ESEUTIL as of Microsoft Exchange Server,
+	version 5.5 Service Pack 2. ESEUTIL /z will perform the zeroing of unused
+	database pages in the same manner as explained above, by running an offline
+	command-line database utility. It will also detect and zero orphaned long
+	values. For more information about orphaned long values, see the following
+	Microsoft Knowledge Base article:
+	
+	  Q185271 XADM: Orphaned LV Errors Running ESEUTIL Consistency Checker."
+	
+	  SECURE:
+	  DESCRIPTION: Removes all deleted records from database.
+	  SYNTAX: ESEUTIL /z (database name)
+	  PARAMETERS: (database name) - filename of database to compact, or one of
+	  /ispriv, /ispub, or /ds (see NOTES below)
+	  NOTES: 1. The switches /ispriv, /ispub, and /ds use the Registry to
+	  automatically set the database name for the appropriate Exchange store.
+	
+	Running ESEUTIL /z against the Exchange Server databases will yield an output
+	similar to the following:
+	
+	Microsoft(R) Windows NT(TM) Server Database Utilities
+	Version 5.5
+	Copyright (C) Microsoft Corporation 1991-1999.  All Rights Reserved.
+	
+	Initiating SECURE mode...
+	       Database: priv.edb
+	
+	                   Scanning Status  ( % complete )
+	
+	         0    10   20   30   40   50   60   70   80   90  100
+	         |----|----|----|----|----|----|----|----|----|----|
+	         ...................................................
+	
+	#### pages seen
+	#### blank pages seen
+	#### unchanged pages seen
+	#### unused pages zeroed
+	#### used pages seen
+	#### pages with unknown objid
+	#### nodes seen
+	#### flag-deleted nodes zeroed
+	#### flag-deleted nodes not zeroed
+	#### version bits reset seen
+	#### orphaned LVs
+	Operation completed successfully in ##.### seconds.
+	
+	where the #'s will be actual numbers that will vary from system to system.
+	
+	Additional query words: scrub scrubbing
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+	Version           : winnt:5.5
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

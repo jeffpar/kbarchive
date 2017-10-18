@@ -1,0 +1,87 @@
+---
+layout: page
+title: "Q90896: WinLogin Err Msg: &quot;An Error Occurred While Saving Changes...&quot;"
+permalink: kb/090/Q90896/
+---
+
+## Q90896: WinLogin Err Msg: &quot;An Error Occurred While Saving Changes...&quot;
+
+	Article: Q90896
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:3.1,3.11; :1.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 16-OCT-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows versions 3.1, 3.11 
+	- Microsoft WinLogin, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you run Microsoft WinLogin on a workstation (client) and exit or save the
+	current configuration, you may receive the following error message:
+	
+	  An error occurred while saving changes to Win.ini
+	
+	CAUSE
+	=====
+	
+	This error is displayed if the Microsoft TrueType Font Pack is installed on the
+	workstation running WinLogin. It is caused by the large number of long font
+	names placed in the WIN.INI file by the Microsoft TrueType Font Pack
+	installation.
+	
+	This error may also occur if a large number of long key entries (on the left side
+	of the equal sign) exist in any section of any .INI file that is being managed
+	by WinLogin.
+	
+	If the sum of all the characters in all the key entries within a given section,
+	plus one character for each key, exceeds 2046, you receive the following error
+	message when WinLogin saves a standard .INI file:
+	
+	  An error occurred while saving changes to <filename>.ini
+	
+	This condition is likely to occur when a large number of font entries are added
+	to the [fonts] section of WIN.INI, although if the limit is exceeded in any
+	section of any .INI file managed by WinLogin, the error occurs.
+	
+	WORKAROUND
+	==========
+	
+	To avoid this error, reduce the length or number of entries in the appropriate
+	section of the appropriate .INI file.
+	
+	MORE INFORMATION
+	================
+	
+	This error prevents updated information in the offending section and any section
+	that follows that section from being saved to the configuration files maintained
+	by WinLogin on the designated network server. Also, if the WinLogin client
+	software is configured to "Log Unknown Settings," these settings are not logged
+	in the appropriate .DIF file. At this time, there are no other known
+	consequences resulting from this error. Moving the offending section to the end
+	of the .INI file minimizes the impact of this error.
+	
+	Microsoft is researching this problem and will post new information here as it
+	becomes available.
+	
+	For more information on WinLogin .INI file limitations, query on the following
+	words in the Microsoft Knowledge Base:
+	
+	  winlogin and ini and limit
+	
+	
+	Additional query words: 3.10 3.1 winlogin win login ini long limit limitation jet
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWin3xSearch kbWinLoginSearch kbZNotKeyword3 kbWin310 kbWin311 kbWinLogin100
+	Version           : WINDOWS:3.1,3.11; :1.0
+	
+	=============================================================================
+	

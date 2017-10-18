@@ -1,0 +1,116 @@
+---
+layout: page
+title: "Q75294: The Netlogon Service and How It Works"
+permalink: kb/075/Q75294/
+---
+
+## Q75294: The Netlogon Service and How It Works
+
+	Article: Q75294
+	Product(s): Microsoft LAN Manager
+	Version(s): 2.0c
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 28-OCT-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft LAN Manager, version 2.0c 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The Netlogon service is executed to replicate the user accounts subsystem (UAS)
+	database between a primary domain controller (PDC), a backup domain controller
+	(BDC), and member servers, and to validate logons to the logical domain that the
+	servers are in. Changes to the UAS are allowed only from the primary domain
+	controller once the Netlogon service is started. Any attempt to modify the UAS
+	on a backup domain controller or member server will result in an error stating
+	that the UAS has been replicated and cannot be modified.
+	
+	When Netlogon is started on a BDC or a member server, a request will be made to
+	do a full update of the UAS from the PDC by making a NetAccountSync() call. This
+	can be avoided by using the /update:no parameter at Netlogon start-up time to
+	stop the full update. Other switches include:
+	
+	  /PULSE      (60 - 3600) Seconds            Defaults : 300
+	  /RANDOMIZE  (5 - 120) Seconds              Defaults : 30
+	  /SCRIPTS    path of Netlogon Share
+	
+	BDCs and member servers look at the /UPDATE and SCRIPTS path, but PDCs ignore an
+	/UPDATE switch.
+	
+	There are three types of Netlogon updates:
+	
+	1. Authentication - Replicated server challenges the PDC
+	
+	  API Calls: I_NetServerReqChallenge()
+	             I_NetServerAuthenticate()
+	             I_NetServerPasswordSet()
+	
+	2. Steady State Replication - Normal change by changing updating of the UAS.
+	
+	  API Calls: I_NetWriteChangeLog() <-List of Deltas Maintained
+	             I_NetAccountDeltas()
+	
+	3. Synchronization - Replicated server must copy the entire UAS.
+	
+	  API Calls: I_NetAccountDeltas()
+	             I_NetAccountSync()
+	
+	The PDC maintains the list of account deltas in a circular list of 64 entries
+	(the buffer holding 4096 bytes). These entries are account deltas of three
+	types:
+	
+	- User Delta: changes to user accounts
+	
+	- Group Delta: changes to group accounts
+	
+	- Delta Mod: changes to security settings in Net Admin
+	
+	Each entry in this list has a update value corresponding to it. Once the Netlogon
+	service is running, the following sequence is issued to make updates to the
+	UAS:
+	
+	1. The PDC issues a /PULSE onto the network as a second class mailslot message
+	  (\\*\MAILSLOT\NET\NETLOGON). The /PULSE parameter is ignored unless the
+	  server is a PDC. This message contains the value of the most recent update
+	  made to the UAS (known as the Y value), the date and time of the notice, the
+	  name of the domain, and the values for /PULSE and /RANDOMIZE. A BDC or member
+	  server may miss this call since its delivery is not guaranteed.
+	
+	2. When a BDC or member server receives this message from the PDC, it compares
+	  this Y value to its current updated value (known as X). If X+1 < Y, it
+	  implies that the BDC's or member's UAS needs to be updated. The BDC or member
+	  then issues an I_NetAccountDeltas() call and sends an Server Message Block
+	  (SMB) to the PDC requesting that a null session be established and a UAS
+	  update commence. BDCs and members use the /RANDOMIZE parameter to determine
+	  how long they should wait before requesting updates from the PDC. This is to
+	  prevent the PDC from receiving a flood of requests from all the replicated
+	  UAS systems. If, however, Y < X, the BDC issues an I_NetAccountSync()
+	  call, requesting that the entire UAS be replicated since the BDC thinks that
+	  it has missed a change in the delta list. BDCs and members NEVER poll the PDC
+	  for updates--they always wait for update notices from the PDC.
+	
+	  Note: Members and BDCs assume the PDC has crashed if they don't receive a
+	  pulse from the PDC within one minute of the time they expect a pulse. To
+	  confirm this failure, the BDC or member attempts an I_NetAccountDeltas()
+	  call. If the failure is confirmed, a message is posted in the error log
+	  reporting the PDC crash. After 60 minutes, the service clears the primary
+	  flag and treats the next pulse as a new failure.
+	
+	3. The PDC can then grant a null session to the requesting server and start
+	  transmitting the account deltas to that server until X+1 < Y becomes
+	  false.
+	
+	Additional query words: 2.00c prodlm
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbLanManSearch kbLanMan200c
+	Version           : :2.0c
+	
+	=============================================================================
+	

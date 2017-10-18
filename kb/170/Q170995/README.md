@@ -1,0 +1,199 @@
+---
+layout: page
+title: "Q170995: How to Install Third-Party Network Adapter Drivers"
+permalink: kb/170/Q170995/
+---
+
+## Q170995: How to Install Third-Party Network Adapter Drivers
+
+	Article: Q170995
+	Product(s): Microsoft Windows NT
+	Version(s): WINDOWS:4.0
+	Operating System(s): 
+	Keyword(s): kbenv kbhw kbhowto kbHardwarekbfaq
+	Last Modified: 09-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 4.0 
+	- Microsoft Windows NT Workstation version 4.0 
+	-------------------------------------------------------------------------------
+	
+	
+	SUMMARY
+	=======
+	
+	This article describes how to install, configure, and troubleshoot third- party
+	OEM network adapter drivers.
+	
+	NOTE: This article contains information about using Windows NT 4.0 with
+	third-party products or configurations that have not been tested and are not
+	supported by Microsoft. If the steps described in this article do not function
+	properly, use a supported configuration or contact the manufacturer of your
+	third-party product for more information.
+	
+	Windows NT 4.0 includes Microsoft-supported drivers for many network adapters.
+	The Windows NT 4.0 CD-ROM also contains third-party drivers for many other
+	network adapters that may or may not be on the Windows NT 4.0 Hardware
+	Compatibility List (HCL). These drivers are supported by the OEM, not by
+	Microsoft. You can locate these drivers in the following two folders on the
+	Windows NT 4.0 CD-ROM:
+	
+	  Drvlib\Netcard\<platform>
+	  <platform>\Drvlib.nic
+	
+	where <platform> is your computer's processor type (Alpha, I386, MIPS, or
+	PPC).
+	
+	Other Windows NT 4.0 network adapter drivers are created by OEMs. These drivers
+	may be available in any of the following ways:
+	
+	- Included on a floppy disk or CD-ROM with a new network adapter.
+	
+	- Accessible from the Internet or the OEM's electronic bulletin board service
+	  (BBS).
+	
+	- By mail from the OEM.
+	
+	MORE INFORMATION
+	================
+	
+	This section discusses the following topics:
+	
+	- Before installing the driver in Windows NT
+	
+	- General installation
+	
+	- Troubleshooting tips
+	
+	Before Installing the Driver in Windows NT
+	------------------------------------------
+	
+	Before installing the driver, verify that the network adapter is configured
+	properly by running any configuration or Setup program included with the
+	adapter. The configuration program may also include a diagnostic test to verify
+	that the hardware is working correctly.
+	
+	If no configuration program is available for the network adapter, check the
+	documentation for the adapter to determine how to verify the adapter's
+	settings.
+	
+	Configuration information you should note before installing the driver includes
+	the following:
+	
+	- I/O port address setting
+	
+	- Interrupt request (IRQ) line
+	
+	- Direct memory access (DMA) channel
+	
+	- Transceiver type
+	
+	- Bus type
+	
+	In addition, there may be settings for the Windows NT driver that are specific to
+	your network adapter. You may need to consult the documentation for your
+	adapter.
+	
+	General Installation
+	--------------------
+	
+	To install the network adapter driver, follow these steps:
+	
+	1. In Control Panel, double-click Network.
+	
+	2. On the Adapters tab, click Add.
+	
+	3. Click Have Disk.
+	
+	4. Type the path to the third-party network adapter driver files in the Insert
+	  Disk box. If the driver files are on a floppy disk, verify that the disk is
+	  inserted in the floppy disk drive before proceeding. Click OK.
+	
+	5. Click the network adapter driver for your network card in the Select OEM
+	  Option box, and then click OK.
+	
+	6. Choose the configuration settings for your network adapter, and then click
+	  OK.
+	
+	7. Choose or type any other necessary network configuration options on the
+	  Identification, Services, and Protocols tabs, and then click Close.
+	
+	8. If any additional network software options are installed, you may be prompted
+	  for additional information about these settings.
+	
+	9. Click Yes when you are prompted to restart your computer.
+	
+	Troubleshooting Tips
+	--------------------
+	
+	If Windows NT does not detect or initialize the network adapter, you may receive
+	the following error message after Windows NT starts:
+	
+	  At least one service or driver failed during system startup. Use Event Viewer
+	  to examine the event log for details.
+	
+	Event Viewer may display the following information:
+	
+	  Event ID: 7000
+	  The <your network adapter> Driver service failed to start due to the
+	  following error: A device attached to the system is not functioning.
+	
+	To troubleshoot this problem, use the following steps:
+	
+	1. Verify that the I/O address and IRQ line that you specified for the network
+	  adapter is correct. You may need to run the Setup program for the adapter, or
+	  you may need to consult the network adapter's documentation to check these
+	  settings. If the I/O address or IRQ line is different from the value you
+	  specified when you installed the driver in Windows NT, change the value to
+	  match the settings you specified in Windows NT.
+	
+	2. Verify that the I/O address and IRQ line being used by the network adapter
+	  are not being used by any other device in your computer.
+	
+	3. Verify that the network adapter passes all diagnostic tests included with the
+	  Setup program. If the network adapter fails the diagnostic tests, it does not
+	  function correctly in Windows NT.
+	
+	If the adapter passes all of the diagnostic tests, you have verified that its
+	configuration matches the configuration specified in Windows NT, and the
+	settings cause no conflict with any other hardware installed in your computer,
+	there could be a problem with your Windows NT network configuration.
+	
+	If you have made several attempts to configure the network adapter or you had
+	another network adapter installed before the adapter you are currently
+	installing, it may be necessary to restore the Windows NT network configuration
+	to the default settings and then reinstall the network adapter driver. To do so,
+	use the following steps:
+	
+	1. In Control Panel, double-click Network.
+	
+	2. Click the network adapter on the Select Adapters tab, and then click Remove.
+	
+	3. Click Close, and then click Yes when you are prompted to restart your
+	  computer.
+	
+	4. Reinstall the network adapter driver.
+	
+	If these steps do not resolve the problem, there may be settings in the registry
+	that are not removed when the adapter is uninstalled. Repeat steps 1-3 above,
+	and then before step 4, follow the procedures in the following articles in the
+	Microsoft Knowledge Base:
+	
+	  Q147797 Manually Removing Network Adapter Entries from the Registry
+	
+	  Q146333 How to Remove Network Adapters from the Registry
+	
+	If the network adapter still does not work, contact the manufacturer of the
+	network adapter for an updated driver.
+	
+	Additional query words: netcard nic interface
+	
+	======================================================================
+	Keywords          : kbenv kbhw kbhowto kbHardware kbfaq
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+	Version           : WINDOWS:4.0
+	
+	=============================================================================
+	

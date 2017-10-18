@@ -1,0 +1,133 @@
+---
+layout: page
+title: "Q236618: Users With Read (View Only) Permissions Can Save Com.cfg"
+permalink: kb/236/Q236618/
+---
+
+## Q236618: Users With Read (View Only) Permissions Can Save Com.cfg
+
+	Article: Q236618
+	Product(s): Microsoft SNA Server
+	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2
+	Operating System(s): 
+	Keyword(s): kbsna400sp3fix kbsna300sp1 kbsna300sp2 kbsna300sp3 kbsna300sp4 sna4 kbsna400sp1 kbsna40
+	Last Modified: 08-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 3.0 SP4, 4.0, 4.0 SP1, 4.0 SP2 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	Windows NT users or groups that have been assigned Read (View Only) rights to
+	the SNA Server Configuration file (Com.cfg) by SNA Server Manager may still be
+	able to perform the following functions:
+	
+	- Update and save changes to the SNA Server configuration.
+	- Start and Stop SNA Server services.
+	
+	NOTE: SNA Server Manager indicates that it is opened with "View Only" mode in the
+	lower right-hand corner of the Manager status line when it is opened by one of
+	these users.
+	
+	These users can also use the SNA Server Command Line Configuration utility
+	(Snacfg.exe) to make changes to the SNA Server configuration.
+	
+	Users and groups with Read (View Only) permissions are only supposed to be able
+	to view (or read) the SNA Server configuration using SNA Server Manager or
+	Snacfg.exe.
+	
+	CAUSE
+	=====
+	
+	The SNA Server Manager components do not correctly check security settings to
+	prevent users from getting Read/Write access to the SNA Server configuration
+	file.
+	
+	This problem occurs when the Windows NT users or groups that have been assigned
+	Read (View Only) rights for SNA Server administration also have the "Manage
+	auditing and security log" user right assigned to them in Windows NT User
+	Manager for Domains.
+	
+	RESOLUTION
+	==========
+	
+	SNA Server 4.0
+	--------------
+	
+	To resolve this problem, obtain the latest service pack for SNA Server version
+	4.0. For additional information, please see the following article in the
+	Microsoft Knowledge Base:
+	
+	  Q215838 How to Obtain the Latest SNA Server Version 4.0 Service Pack
+	
+	
+	SNA Server 3.0
+	--------------
+	
+	A supported fix is now available from Microsoft, but it is only intended to
+	correct the problem described in this article and should be applied only to
+	systems experiencing this specific problem. This fix may receive additional
+	testing at a later time, to further ensure product quality. Therefore, if you
+	are not severely affected by this problem, Microsoft recommends that you wait
+	for the next Microsoft SNA Server version 3.0 service pack that contains this
+	fix.
+	
+	To resolve this problem immediately, contact Microsoft Product Support Services
+	to obtain the fix. For a complete list of Microsoft Product Support Services
+	phone numbers and information about support costs, please go to the following
+	address on the World Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	NOTE: In special cases, charges that are normally incurred for support calls may
+	be canceled, if a Microsoft Support Professional determines that a specific
+	update will resolve your problem. Normal support costs will apply to additional
+	support questions and issues that do not qualify for the specific update in
+	question.
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	+-----------------------------------+
+	| File name    | Date     | Time    | 
+	+-----------------------------------+
+	| Snaadmin.dll | 06/29/99 | 12:06PM | 
+	+-----------------------------------+
+	| Snacfg.dll   | 06/29/99 | 12:05PM | 
+	+-----------------------------------+
+	
+	NOTE: Because of file dependencies, the most recent fix that contains the above
+	files may also contain additional files.
+	
+	
+	
+	WORKAROUND
+	==========
+	
+	Remove the "Manage auditing and security log" user right from the users or
+	groups that are assigned Read (View Only) permissions for the SNA Server
+	configuration file.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products that are
+	listed at the beginning of this article. This problem was first corrected in SNA
+	Server version 4.0 Service Pack 3.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbsna400sp3fix kbsna300sp1 kbsna300sp2 kbsna300sp3 kbsna300sp4 sna4 kbsna400sp1 kbsna400sp2 
+	Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ400 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ300SP2 kbSNAServ300SP4
+	Version           : WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

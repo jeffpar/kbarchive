@@ -1,0 +1,163 @@
+---
+layout: page
+title: "Q28473: Detailed Information on What APPEND Does"
+permalink: kb/028/Q28473/
+---
+
+## Q28473: Detailed Information on What APPEND Does
+
+	Article: Q28473
+	Product(s): Microsoft Disk Operating System
+	Version(s): MS-DOS:3.3,3.3a,4.x,5.x,6.0,6.2,6.21,6.22
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 17-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft MS-DOS operating system versions 3.3, 3.3a, 4.0, 4.01, 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article clarifies some of the more commonly raised issues regarding the
+	APPEND command supplied with MS-DOS versions 3.x, and later.
+	
+	MORE INFORMATION
+	================
+	
+	The APPEND command is meant to trick MS-DOS-based applications, telling them
+	that files are not where they actually are. This is useful if you have an
+	application that expects a file to be in the current directory and it is
+	actually in some other subdirectory or drive. Programs like this usually use
+	FCBs internally to manipulate files (which do not relate to subdirectories), or
+	they have overlay or data files that are associated with the executable file and
+	have no mechanism for letting you specify where these files are located
+	(environment variables, command-line options, initialization files, installation
+	programs that modify the executable, etc.). The most commonly used example of
+	this is WordStar. Its WS.COM file looks for the file WS.OVL in the current
+	directory. If you have WS.COM in your \BIN directory, WS.OVL stored in your \WS
+	directory, and \BIN in your PATH, WordStar will not be able to find its overlay
+	unless you are in the subdirectory \WS when you invoke WS.COM. Other programs
+	can benefit from APPEND in similar ways.
+	
+	APPEND tricks these programs by intercepting the following MS-DOS services:
+	
+	  interrupt 21H service 0FH: FcbOpen
+	  interrupt 21H service 3DH: HandleOpen
+	  interrupt 21H service 23H: FcbGetFileSize
+	
+	If you specify the /X option when you invoke APPEND, it will also intercept the
+	following services:
+	
+	  interrupt 21H service 4BH: Exec
+	  interrupt 21H service 11H: FcbFindFirst
+	  interrupt 21H service 4EH: HandleFindFirst
+	
+	When a program issues one of the calls that APPEND is trapping by trying to open
+	or find a file and the file does not exist, APPEND will look in its path
+	(specified by you when you invoke APPEND, optionally stored in the environment
+	table), and if it finds this file in any of the APPENDed locations, it will
+	return a successful open/find, tricking the application into thinking that the
+	file is in the current directory.
+	
+	This works in our example, where WS.COM is looking for WS.OVL. However, APPEND
+	does distort the system. APPEND is very useful if you have it pointing to a
+	directory that contains only overlay and supplementary (read- only) files and
+	template and skeleton documents, which you intend to use as a form for new
+	files.
+	
+	For example, you have the file MAKEFILE in many directories on your system, and
+	you try to create this file in your current directory with your favorite editor
+	(let's assume that you have APPEND pointing to one or more of the directories in
+	which the file MAKEFILE already exists). When your editor invokes the MS-DOS
+	system service HandleOpen for the file MAKEFILE in the current directory, it
+	will not find it. However, then APPEND starts to work and distorts the view of
+	the system and finds this file in another location, one of the directories in
+	the APPEND path.
+	
+	Your editor assumes this file exists in your current directory (let's also assume
+	that you don't realize that this file shouldn't have existed in your current
+	directory). When you edit the file and then save this file, it will be saved in
+	the current directory, not in the directory that APPEND really got it from. Now,
+	depending on what you're editing, this may or may not seem beneficial. In this
+	case, it might have been useful to have a skeleton MAKEFILE to base your new one
+	on. But let's say that instead of a MAKEFILE, you were editing your list of
+	things to do, TODO.DOC. If you edit this file from many different places on your
+	system (being in different subdirectories when you edit it each time), you will
+	have many copies of this file, each one being different, which is most likely
+	what you did NOT intend to do.
+	
+	Application programmers who would like to know what is going on "underneath"
+	APPEND have a few options. If the application is robust enough that it does not
+	need APPEND's talents, you could recommend that APPEND not be used with the
+	application. This is a good idea in most cases, since APPEND does distort the
+	application's view of files, and you can run into problems.
+	
+	Unfortunately, there is no MS-DOS system service designed to return the FULL file
+	specification that APPEND returns, so if you use any of the MS- DOS services
+	that are intercepted by APPEND, you have to gamble that these are in the current
+	directory.
+	
+	Many system-level programmers would like access to this. One method of gaining
+	more insight into what the system is doing is to determine if APPEND is
+	installed. This can be accomplished by using MS- DOS interrupt 2FH. The
+	following is a code fragment written in C that demonstrates its usage:
+	
+	
+	      /* get install status of APPEND */ 
+	
+	      int GetAppendStatus()
+	      {
+	
+	          union REGS regs;  /* input/output registers */ 
+	
+	          regs.h.al = 0x00;  /* get install status */ 
+	          regs.h.ah = 0xB7;  /* talking to the APPEND */ 
+	          int86(0x2F, &regs, &regs);  /* invoke interrupt 2FH */ 
+	          return (regs.h.al);  /* return status code */ 
+	
+	      } /* GetAppendStatus */ 
+	
+	
+	This MS-DOS service has the following usage:
+	
+	  AL = 00H
+	  AH = B7H
+	  invoke INT 2FH
+	  examine AL return code
+	
+	The valid return codes for this service are as follows:
+	
+	  AL = 00H: Not installed, OK to install
+	  AL = 01H: Not installed, NOT OK to install
+	  AL = FFH: Installed
+	
+	Once you have determined if APPEND is installed, you can then obtain the APPEND
+	path by looking for the MS-DOS environment variable APPEND. Unfortunately, if
+	APPEND is invoked without the /E option, this data will not be stored in the
+	MS-DOS environment. In this case, the only recourse for an application that
+	requires this information would be to terminate, telling you that if APPEND is
+	to be used, the /E option is required (this is not unreasonable, since this is
+	the only method for an application to access the APPEND path). Then, once you
+	have the value of this environment variable, you can look into the possible ways
+	that APPEND is altering your view of the system.
+	
+	In summary, APPEND is a very useful tool if you have programs that can't find
+	their supplementary files. It is an annoyance to other programs, the degree of
+	which depends on how much is pointed to by the APPEND path. Programs that are
+	very critical can avoid possible problems that are raised by APPEND by checking
+	for its existence and warning you of possible problems that may occur due to
+	APPEND's system distortion.
+	
+	Additional query words: 3.30 3.30a 4.00 4.01 4.01a 5.00 5.00a 6.00 6.20 6.21 6.22
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMSDOSSearch kbMSDOS400 kbMSDOS330a kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS330 kbMSDOS401 kbMSDOS500a
+	Version           : MS-DOS:3.3,3.3a,4.x,5.x,6.0,6.2,6.21,6.22
+	
+	=============================================================================
+	

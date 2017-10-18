@@ -1,0 +1,104 @@
+---
+layout: page
+title: "Q157147: FP: TCP/IP Test Fails But Other Internet Programs Run"
+permalink: kb/157/Q157147/
+---
+
+## Q157147: FP: TCP/IP Test Fails But Other Internet Programs Run
+
+	Article: Q157147
+	Product(s): Word Front Page
+	Version(s): ; WINDOWS:1.0,1.1
+	Operating System(s): 
+	Keyword(s): kb3rdparty kbnetwork kbusage kbdta
+	Last Modified: 04-OCT-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft FrontPage 97 for Windows with Bonus Pack 
+	- Microsoft FrontPage for Windows, versions 1.0, 1.1 
+	-------------------------------------------------------------------------------
+	
+	For a Microsoft FrontPage 2000 version of this article, see Q205466.
+	
+	For a Microsoft FrontPage 98 version of this article, see Q194353.
+	
+	SYMPTOMS
+	========
+	
+	When you run the Network Test (FrontPage 97) or the TCP/IP Test (FrontPage 1.1),
+	"No" is returned on one or more tests even though other Internet applications
+	run without error. The FrontPage 1.0 TCP/IP Test returns:
+	
+	  "Fail" under similar circumstances.
+	
+	CAUSE
+	=====
+	
+	This problem occurs because FrontPage uses more of the Winsock features than
+	most Internet applications. Unlike most Internet applications, FrontPage not
+	only browses and retrieves files via Winsock, it also requires your computer to
+	act as a Web server.
+	
+	Not every third party TCP/IP stack includes all of the industry standard Winsock
+	API calls. Therefore, if the TCP/IP test fails, FrontPage will be unable to work
+	with that particular stack.
+	
+	MORE INFORMATION
+	================
+	
+	When the TCP/IP Test or Network Test begins, it loads the Wsock32.dll and then
+	it looks for clear entry points. If the test does not locate any clear entry
+	points, the test calls the WSAStartup startup routine, which is one of the entry
+	points found, and it requests version 1.1 or higher of the Winsock API.
+	
+	The TCP/IP test or Network Test then attempts to execute the following Winsock
+	API calls:
+	
+	  WSACleanup
+	  socket
+	  inet_addr
+	  inet_ntoa
+	  bind
+	  listen
+	  getsockname
+	  connect
+	  accept
+	  send
+	  recv
+	  closesocket
+	  gethostname
+	  gethostbyname
+	
+	FrontPage will work only with third-party TCP/IP stacks that properly support all
+	of these API calls.
+	
+	For more information about the Microsoft TCP/IP stack, please see the following
+	articles in the Microsoft Knowledge Base:
+	
+	  Q122928 Description of the WINSOCK.DLL File
+	
+	
+	  Q138789 How to Connect to the Internet in Windows 95
+	
+	
+	Winsock is the common name for the Windows Sockets Interface Specification. This
+	specification defines a network programming interface for Microsoft Windows
+	which is based on the "socket" paradigm popularized in the Berkeley Software
+	Distribution (BSD) from the University of California at Berkeley. It encompasses
+	both Berkeley socket style routines and a set of Windows specific extensions
+	designed to allow a programmer to take advantage of the message-driven nature of
+	Windows.
+	
+	Additional query words: frontpg 97
+	
+	======================================================================
+	Keywords          : kb3rdparty kbnetwork kbusage kbdta 
+	Technology        : kbFrontPageSearch kbFrontPage1xSearch kbFrontPage97Search kbZNotKeyword3 kbFrontPage100 kbFrontPage110
+	Version           : :; WINDOWS:1.0,1.1
+	Hardware          : x86
+	Issue type        : kbprb
+	
+	=============================================================================
+	

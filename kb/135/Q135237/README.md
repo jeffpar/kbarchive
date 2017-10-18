@@ -1,0 +1,131 @@
+---
+layout: page
+title: "Q135237: Windows 95 Hangs at Hourglass Starting SNA Server Win 3.x App"
+permalink: kb/135/Q135237/
+---
+
+## Q135237: Windows 95 Hangs at Hourglass Starting SNA Server Win 3.x App
+
+	Article: Q135237
+	Product(s): Microsoft SNA Server
+	Version(s): WINDOWS:2.0,2.1,2.11,3.0,4.0
+	Operating System(s): 
+	Keyword(s): kbinterop kbnetwork sna4
+	Last Modified: 12-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 2.0, 2.1, 2.11, 3.0, 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The SNA Server Windows 3.x client software is supported on Windows 95. However,
+	if the SNA Server client software is configured to use the "Microsoft Networking
+	(named pipes)" interface and Windows 95 is configured with Microsoft
+	IPX/SPX-compatible protocol (the default), starting an SNA Server Windows 3.x
+	client application will cause Windows 95 to hang with an hourglass.
+	
+	At that point, you must enter CTRL+ALT+DEL to bring up the Windows 95 Close
+	Program dialog, highlight the task named "SNA Server (Not responding)", choose
+	"End Task", and confirm the selection by choosing "End Task" again.
+	
+	This causes the Windows 95 hourglass to disappear and the SNA Server Windows 3.x
+	client process, WNAP.EXE, is stopped After that, the SNA Server Windows 3.x
+	application can be stopped using the "End Task" option.
+	
+	
+	CAUSE
+	=====
+	
+	When the SNA Server Windows 3.x client software is configured to use the named
+	pipes interface, the SNA Server client software always posts a
+	DosReadAsyncNmPipe API call on the named pipe. This causes a Read request to
+	always be posted to the server. While the Read request is outstanding, the SNA
+	client software also may write data down the named pipe as well, so the SNA
+	client makes use of the full-duplex nature of the named pipe API, supported over
+	any LAN protocol provided by Windows 95 (that is, NetBEUI, IPX/SPX, TCP/IP, RAS,
+	etc).
+	
+	However, if the Microsoft IPX/SPX-compatible transport is installed and the
+	"direct-host" feature is enabled on Windows 95, this network interface only
+	allows a single command to be outstanding on the client-server LAN session (that
+	is, this only provides a half-duplex communication channel to the server). So,
+	the SNA Server client named pipe interface does not work properly.
+	
+	To contrast, Windows 95 file and print redirection and SQL Server named pipe
+	clients do work over "direct-host" IPX/SPX connections because only a single
+	command is outstanding at a time (that is, the DosReadAsyncNmPipe call is not
+	used).
+	
+	WORKAROUND
+	==========
+	
+	Any of the following three workarounds can be used to resolve this problem:
+	
+	- If you wish to keep the Microsoft IPX/SPX Compatible protocol installed, the
+	  IPX/SPX NetBIOS interface must be enabled and the directhost feature must be
+	  disabled (see below for instructions),
+	
+	  To enable the NWLINK NetBIOS interface:
+	  1. Click the Start button, point to Settings, and click Control Panel. The
+	     Control Panel folder opens.
+	
+	  2. Double-click Network. The Network dialog box appears.
+	
+	  3. Select IPX/SPX-Compatible Protocol Properties, then choose the Properties
+	     button. The IPX/SPX-Compatible Protocol Properties dialog box appears.
+	
+	  4. Choose (check) the I Want To Enable NetBIOS Over IPX/SPX check box. and
+	     choose OK.
+	
+	  This change will take effect when you next start Windows 95.
+	
+	  To disable the IPX/SPX DirectHost feature:
+	  1. Click the Start button, then click on Run. The Run dialog box appears.
+	
+	  2. Type "regedit" and choose OK. Registry Editor starts.
+	
+	  3. Open (click on the + next to) HKEY_LOCAL_MACHINE, then open System,
+	     CurrentControlSet, Services, and then finally open VxD.
+	
+	  4. Select VNETSUP.
+	
+	  5. From the Edit menu, select New, then choose String Value. A new value
+	     appears in the right pane.
+	
+	  6. If necessary, right click on the new item and choose Rename from the
+	     context menu. Type DirectHost and press ENTER.
+	
+	  7. Right click on DirectHost and choose Modify. The Edit String dialog
+	     appears.
+	
+	  8. Type 0 (zero) and choose OK.
+	
+	  9. Click on Registry then Exit to end the Registry Editor.
+	
+	  This change will take effect when you next start Windows 95
+	
+	  -or-
+	
+	- Keep the SNA Server named pipes interface enabled, remove the Microsoft
+	  IPX/SPX-compatible transport and install a different Microsoft transport
+	  (such as NetBEUI or TCP/IP) using the Windows 95 network control panel.
+	
+	  -or-
+	
+	- Configure the SNA Server Windows 3.x client software to use an interface
+	  other than named pipes, by running the SNA Server client setup program
+	  installed in the SNA Server client program group.
+	
+	Additional query words: prodsna Win95 directhost hang
+	
+	======================================================================
+	Keywords          : kbinterop kbnetwork sna4 
+	Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ200 kbSNAServ211 kbSNAServ400 kbSNAServ210
+	Version           : WINDOWS:2.0,2.1,2.11,3.0,4.0
+	
+	=============================================================================
+	

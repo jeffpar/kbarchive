@@ -1,0 +1,136 @@
+---
+layout: page
+title: "Q195063: Common User ID Problem when Using Associated Printer Feature"
+permalink: kb/195/Q195063/
+---
+
+## Q195063: Common User ID Problem when Using Associated Printer Feature
+
+	Article: Q195063
+	Product(s): Microsoft SNA Server
+	Version(s): 3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 25-OCT-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 3.0 SP1, 3.0 SP2, 3.0 SP3, 4.0, 4.0 SP1 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	A user is able to access a 3270 display logical unit (LU) from a client
+	workstation even though its associated printer LU is in use on a different
+	client workstation. This problem occurs in the following scenarios:
+	
+	- Users connect to SNA Server using a common User ID.
+	
+	-or-
+	
+	- Users are validated using Windows NT's Guest account.
+	
+	The Common User ID Scenario
+	---------------------------
+	
+	SNA Server is configured with a 3270 LU pool. Each 3270 display LU in the pool is
+	configured to have an associated printer LU assigned to it.
+	
+	All of the users that connect to the SNA Server for access to the 3270 LU pool
+	use a common user ID called SNAUSER.
+	
+	When a user connects to the SNA Server using the SNAUSER ID and gets a 3270
+	display LU from the 3270 LU pool called DISP1 and its associated printer called
+	PRT1, if this user closes the DISP1 display session in the 3270 emulator but
+	leaves the PRT1 printer session open, another user from a different workstation
+	using the SNAUSER ID may get the DISP1 display session when they request a 3270
+	display LU even though this display LU's associated printer is still in use on
+	the first client workstation.
+	
+	The Guest Account Scenario
+	--------------------------
+	
+	SNA Server is configured with a 3270 LU pool. Each 3270 display LU in the pool is
+	configured to have an associated printer LU assigned to it. The 3270 LU pool is
+	assigned to the Everyone group in SNA Server Manager.
+	
+	If users connect to the SNA Server system using the Guest account, or an account
+	that is not defined on the Windows NT Server or Domain, the user will be
+	validated using the Guest account if it is enabled on the Windows NT system. At
+	this point, all of the users are using the same user account, therefore, the
+	problem described in the earlier example can occur.
+	
+	CAUSE
+	=====
+	
+	Starting with SNA Server 3.0 Service Pack 2 (SP2), the SNA Server would not
+	allow a user to open a 3270 display LU if its associated printer was in use by
+	another user. However, this did not take into account cases where multiple users
+	connect to an SNA Server using a common user ID. SNA Server only checks the user
+	ID requesting access to a 3270 display LU, and not where the request was being
+	made from.
+	
+	The change made in SNA Server 3.0 SP2 is described in the following Knowledge
+	Base article:
+	
+	  Q172637 User Able to Open Display Session If Associated Printer in Use
+	
+	Prior to SNA Server 3.0 SP2, any user could open a 3270 display LU even though
+	the associated printer LU was in use.
+	
+	RESOLUTION
+	==========
+	
+	SNA Server 3.0
+	--------------
+	
+	To resolve this problem, obtain the latest service pack for SNA Server version
+	3.0. For additional information, please see the following article in the
+	Microsoft Knowledge Base:
+	
+	  Q184307 How to Obtain the Latest SNA Server Version 3.0 Service Pack
+	
+	
+	
+	SNA Server 4.0
+	--------------
+	
+	This problem was corrected in the latest SNA Server version 4.0 U.S. Service
+	Pack. For information on obtaining this Service Pack, query on the following
+	word in the Microsoft Knowledge Base (without the spaces):
+	
+	  S E R V P A C K
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in SNA Server versions 3.0, 3.0
+	Service Pack 1, 3.0 Service Pack 2, 3.0 Service Pack 3, 4.0 , and 4.0 Service
+	Pack 1. This problem was first corrected in SNA Server 3.0 Service Pack 4.
+	
+	MORE INFORMATION
+	================
+	
+	After applying the update, SNA Server will not assign the user a 3270 display LU
+	from a pool with an associated printer session that is currently in use, unless
+	the printer session is in use by the same user, connected from the same client
+	workstation.
+	
+	Please refer to the SNA Server documentation for more details on the Associated
+	Printer feature.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ300SP2
+	Version           : :3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

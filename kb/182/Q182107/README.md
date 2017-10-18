@@ -1,0 +1,81 @@
+---
+layout: page
+title: "Q182107: XADM: Store Shuts Down When Replicating Public Folders"
+permalink: kb/182/Q182107/
+---
+
+## Q182107: XADM: Store Shuts Down When Replicating Public Folders
+
+	Article: Q182107
+	Product(s): Microsoft Exchange
+	Version(s): 5.0
+	Operating System(s): 
+	Keyword(s): kbusage
+	Last Modified: 03-APR-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.0 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	When you are running Store.exe under a debugger, the information store shuts
+	itself down with the following stack dump information:
+	
+	FramePtr  RetAddr   Param1   Param2   Param3   Function Name
+	0207f5b4  0052d1fb  01256274 00000000 01262b1c
+	STORE!StrcpyWszToWsz+0x22(0x0207F7D8, 0x02080000, 0x0052D1FB)
+	0207f5d0  0052d421  0207f63c 0207f5fc 0207f61c
+	STORE!MidszFromPrv+0xfb(0x0207F7D8, 0x0052D421, 0x0207F63C, 0x0207F5FC,
+	0x0207F61C, 0x0207F60C, 0x02080000)
+	0207f648  0052da44  00000000 0207f814 0207f89c
+	STORE!EcMidszFromJtab+0x1b1(0x01256A9C, 0x02080000)
+	0207f7b4  0052bdea  00000001 01258bec 1071cd24
+	STORE!EcWszFromRgmid+0xc4(0x01256A9C, 0x0052bdea, 0x00000001, 0x01256a9c)
+	0207f830  00490052  00310030 0045004b 004e0059
+	STORE!EcMchszFromFolderMessagesHeader+0x6a(0x02080000, 0x01256A9C,
+	0x00490052)
+	
+	CAUSE
+	=====
+	
+	When the Store replicates Public Folder information, a number that exceeds the
+	storage limit for a variable is passed to the memcpy function. This causes an
+	exception, which shuts the Store down. The stack dump will look like the Store
+	passed a negative number to the memcpy function.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, obtain the following fix or wait for the next Exchange
+	Server service pack.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Exchange Server version 5.0.
+	
+	
+	A supported fix is now available, but has not been fully regression-tested and
+	should be applied only to systems experiencing this specific problem. Unless you
+	are severely impacted by this specific problem, Microsoft recommends that you
+	wait for the next Service Pack that contains this fix. Contact Microsoft
+	Technical Support for more information.
+	
+	This fix has been posted to the following Internet location:
+	
+	  ftp://ftp.microsoft.com/bussys/exchange/exchange-public/fixes/Eng/Exchg5.0/Post-SP2-STORE/
+	
+	======================================================================
+	Keywords          : kbusage 
+	Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+	Version           : 5.0
+	Issue type        : kbbug
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

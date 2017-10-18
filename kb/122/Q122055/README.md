@@ -1,0 +1,96 @@
+---
+layout: page
+title: "Q122055: Systems Management Server Tracing and Log Capabilities"
+permalink: kb/122/Q122055/
+---
+
+## Q122055: Systems Management Server Tracing and Log Capabilities
+
+	Article: Q122055
+	Product(s): Microsoft Systems Management Server
+	Version(s): winnt:1.0,1.1,1.2
+	Operating System(s): 
+	Keyword(s): kbnetwork kbInventory kbHMan kbMaintMan kbPCM kbScheduler kbSCMan smsinv smshierman sms
+	Last Modified: 31-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Because Microsoft Systems Management Server is based on a sophisticated set of
+	transactions that are processed throughout the site hierarchy, it is often
+	difficult to predict the time in which a command will complete. These commands
+	can range from a package distribution to a logon server configuration update.
+	Systems Management Server builds in to each Windows NT service component the
+	ability to write status and diagnostic information to log files for historical
+	or interactive review. There are also several client-side log files created by
+	Program Group Control, AppStart, and so on.
+	
+	It is strongly recommended that tracing remain active; however, for performance
+	tuning, you may disable trace logging with Systems Management Server Service
+	Manager, and activate tracing during diagnostics and setup/upgrade. This feature
+	is on by default so that any recent problems will be recorded.
+	
+	MORE INFORMATION
+	================
+	
+	Along with the ability to write log information to a file, Systems Management
+	Server includes the Server Service Manager (SMSVCMGR.EXE) and Trace
+	(SMSTRACE.EXE) that you can use to control and display and review these
+	diagnostic log files.
+	
+	By default, tracing (the process of writing to the log files) will be enabled for
+	the Windows NT service components of Systems Management Server but can easily be
+	deactivated (for performance improvements) with the SMS Service Manager. Once
+	activated for a particular component, you can use SMS Trace (run from
+	SITE.SRV\<ARCHITECTURE>.BIN\SMSTRACE.EXE) to open the log file and monitor
+	it in real time.
+	
+	Log files are located in the SMS\LOGS directory by default. You can use Systems
+	Management Server Service Manager to set log file locations and maximum sizes.
+	Following is a list of Systems Management Server components and the relevant log
+	files:
+	
+	Site Configuration Manager:   SCMAN.LOG
+	Hierarchy Manager:            HMAN.LOG
+	Inventory Agent NT:           INVAGENT.LOG
+	PCM Service:                  PACMAN.LOG
+	SMS_Executive:                SMSEXEC.LOG
+	Alerter:                      ALERTER.LOG
+	Applications Manager:         APPMAN.LOG
+	Inventory Data Loader:        DATALODR.LOG
+	Despooler:                    DESPOOL.LOG
+	Inventory Processor:          INVPROC.LOG
+	Senders:                      LANSEND.LOG, RASASYNC.LOG, and so on
+	Maintenance Manager:          MAINTMAN.LOG
+	Job Scheduler:                SCHED.LOG
+	Site Reporter:                SITEREPT.LOG
+	Package Command Manager:      No log file used; see note below.
+	Program Group Controller:     <WINROOT>\SMSLOG.TXT
+	AppStart:                     <WINROOT>\SMSLOG.TXT
+	
+	Information included in a log file usually includes the time of day, error codes,
+	a description, and identification of the component and thread ID. Because of the
+	specialization of each component, each log file contains slightly different
+	text. If you need to see what is happening with a particular task, and there is
+	insufficient information reported by Systems Management Server Administrator,
+	you can check the log files to see how things are progressing.
+	
+	NOTE: The Package Command Manager does not use a log file; instead, it can be run
+	with a /debug switch that causes PCM to write diagnostic information to a
+	special window up to a maximum of 64 kilobytes (K).
+	
+	Additional query words: config sms prodsms
+	
+	======================================================================
+	Keywords          : kbnetwork kbInventory kbHMan kbMaintMan kbPCM kbScheduler kbSCMan smsinv smshierman smsmaintman smspcm smsscheduler smssiteconfigman 
+	Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+	Version           : winnt:1.0,1.1,1.2
+	
+	=============================================================================
+	

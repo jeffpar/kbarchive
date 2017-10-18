@@ -1,0 +1,92 @@
+---
+layout: page
+title: "Q112336: FIX: &quot;fatal error U1073: don't know how to make"
+permalink: kb/112/Q112336/
+---
+
+## Q112336: FIX: &quot;fatal error U1073: don't know how to make
+
+	Article: Q112336
+	Product(s): Microsoft C Compiler
+	Version(s): WINDOWS:1.0
+	Operating System(s): 
+	Keyword(s): kbide kbVCkbbuglist kbfixlist
+	Last Modified: 22-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Workbench for Windows, version 1.0, used with:
+	   - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Using the Visual WorkBench to build an internal project or to compile a file may
+	cause the following error message to be generated:
+	
+	  Internal make: fatal error U1073: don't know how to make '<filename>'.
+	
+	<filename> could be the currently loaded file name or the name of any file
+	that is part of the current project. Loading the project as an external makefile
+	allows the files in the project to be successfully compiled. Also, individual
+	source files that show the problem can be successfully compiled from the command
+	line outside the Visual WorkBench.
+	
+	Different symptoms occur with Visual C++ 2.0 and 2.1. For more information,
+	please see the following article in the Microsoft Knowledge Base:
+	
+	  Q125494 BUG: Visual C++ Gives GP Fault If System Date past 18-Jan-2038
+	
+	CAUSE
+	=====
+	
+	This problem can be caused by having the system date and time set to a value
+	after January 19, 2038, 3:14:07 A.M.
+	
+	RESOLUTION
+	==========
+	
+	Set the system date and time to the current date and time.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Visual WorkBench version 1.1.
+	This problem was fixed in Microsoft Visual C++, 32-bit Edition, version 4.0
+	
+	MORE INFORMATION
+	================
+	
+	The problem has to do with the fact that the time-related C run-time functions
+	use a type of time_t to represent time values. Currently time_t is defined to be
+	a signed long. The maximum number of seconds that can be stored in a signed long
+	is 2,147,483,647. Because the time- related functions use 00:00:00 (midnight),
+	January 1, 1970 as their base, the maximum time and date that can be represented
+	with a time_t type is January 19, 2038, 3:14:07 A.M.
+	
+	The internal build engine used by the Visual Workbench attempts to check the last
+	modification time and date when doing a compile or a build. If the modification
+	time and date are past the January 19, 2038, 3:14:07 A.M. value, the Visual
+	WorkBench generates the U1073 error.
+	
+	Only files that have been saved on the system with the incorrect time and date
+	exhibit this problem. For example, files that are included with the samples
+	provided with the compiler can be successfully compiled and built from within
+	the Visual WorkBench. This is because their last modification time and date was
+	set when they were initially created. However, once the files have been modified
+	and saved on the system with the invalid time and date, they can no longer be
+	compiled from within the Visual WorkBench.
+	
+	Additional query words: Gateway cmos 1.00 1.10
+	
+	======================================================================
+	Keywords          : kbide kbVC kbbuglist kbfixlist
+	Technology        : kbVSsearch kbAudDeveloper
+	Version           : WINDOWS:1.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

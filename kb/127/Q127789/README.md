@@ -1,0 +1,162 @@
+---
+layout: page
+title: "Q127789: LAN Manager Clients Cannot See Windows NT Computers"
+permalink: kb/127/Q127789/
+---
+
+## Q127789: LAN Manager Clients Cannot See Windows NT Computers
+
+	Article: Q127789
+	Product(s): Microsoft Windows NT
+	Version(s): 3.5 4.0
+	Operating System(s): 
+	Keyword(s): kbnetwork
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+	- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you run NET VIEW on a LAN Manager client, the list of Windows NT
+	workstations and servers in the domain is not available for several minutes.
+	
+	CAUSE
+	=====
+	
+	This problem occurs due to the Windows NT broadcast design.
+	
+	NOTE: To make Windows NT workstations and servers visible to LAN Manager clients,
+	you must configure the Windows NT computers to broadcast server announcements to
+	LAN Manager clients. To do this, run Control Panel, choose Network, select
+	Server, choose Configure, the select "Make Browser Broadcast to LAN Manager 2.x
+	clients," and choose OK.
+	
+	On Windows NT 4.0 machines, use REGEDT32.EXE to set the * entry in
+	HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LanManServer\Parameter s\
+	to 1.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Windows NT version 3.5. This
+	problem has been corrected in the latest U.S. Service Pack for Windows NT
+	version 3.5. For information on obtaining the Service Pack, query on the
+	following word in the Microsoft Knowledge Base (without the spaces):
+	
+	  S E R V P A C K
+	
+	MORE INFORMATION
+	================
+	
+	Original Design
+	---------------
+	
+	LAN Manager clients rely on server announcements that are broadcast over second
+	class mailslots. The LAN Manager clients pickup server announcements and store
+	them (for 1.5 times the announcement rate). If you run NET VIEW and the stored
+	server announcement is still valid, the server name and server comments are
+	displayed. If the next server announcement is not received by the client within
+	1.5 times the announcement rate, the server is dropped from the list. So if a
+	client receives a server announcement at one minute intervals, it is likely to
+	drop the server from the list if it does not receive another announcement in 1.5
+	minutes.
+	
+	Here is a sample server announcement from USER1STA to LAN Manager clients:
+	
+	  USER1STA *NETBIOS Multicast SMB C transact, File = \MAILSLOT\LANMAN
+	  NETBIOS: Datagram (0x08), USER1STA         -> USER1DOM       <00>
+	
+	        -----
+	
+	  NETBIOS: Destination Name = USER1DOM       <00>
+	
+	      NETBIOS: SMB Name Type = Workstation (00)
+	      NETBIOS: Source Name = USER1STA
+	      NETBIOS: SMB Name Type = Server (20)
+	      NETBIOS: NetBIOS Data: Number of data bytes remaining = 115
+	
+	  SMB: C transact, File = \MAILSLOT\LANMAN
+	
+	     ------
+	
+	  SMB: Command = C transact
+	
+	     ------
+	
+	  SMB: Mailslot class = Unreliable (broadcast)
+	
+	          SMB: Byte count = 46
+	          SMB: Byte parameters
+	          SMB: Path name  = \MAILSLOT\LANMAN
+	          SMB: Transaction data
+	          SMB: Server announce opcode = Server announcement
+	          SMB: Service Flags Summary = 4097 (0x1001)
+	           SMB: .....................1 = Workstation service running
+	           SMB: ......................0. = Server service not available
+	          SMB: Major version = 3
+	          SMB: Minor version = 50
+	          SMB: Server announce rate = 720
+	          SMB: Computer name = USER1STA
+	          SMB: Server comment = User1's System;
+	
+	NOTE: USER1STA sends a Multicast datagram to destination NetBIOS group name
+	USER1DOM<00>. All LAN Manager clients post a NetBIOS Receive on their own
+	domain, as well as other domains listed in their LANMAN.INI file, during
+	initialization.
+	
+	The server announce rate is set is seconds. Therefore, the server announce rate
+	of 720 in the above example, it equates to 12 minutes. In Windows NT 3.1, the
+	announce LAN Manager Server parameter in the registry could be used to set the
+	announcement interval. However, in Windows NT workstation and Windows NT Server
+	version 3.5, a new algorithm was developed. The server announcements are made
+	during the start of the server service, and at the following approximate
+	intervals:
+	
+	  .5, 1, 1.5, 4, 8, 12, remain at 12 minutes].
+	
+	For example:
+	
+	  #  Time     Src         Description
+	  1  27.390   USER1STA    C transact, File = \MAILSLOT\LANMAN (30sec)
+	  2  50.303   USER1STA    C transact, File = \MAILSLOT\LANMAN (~20).
+	  3  79.151   USER1STA    C transact, File = \MAILSLOT\LANMAN (~30)
+	  4  348.700  USER1STA    C transact, File = \MAILSLOT\LANMAN (~260)
+	  5  861.290  USER1STA    C transact, File = \MAILSLOT\LANMAN (~520)
+	  6  1586.99  USER1STA    C transact, File = \MAILSLOT\LANMAN (~720)
+	  7  2312.10  USER1STA    C transact, File = \MAILSLOT\LANMAN (~720)
+	  8  3033.39  USER1STA    C transact, File = \MAILSLOT\LANMAN (~720)
+	  9  3758.56  USER1STA    C transact, File = \MAILSLOT\LANMAN (~720)
+	
+	The announce parameter is ignored.
+	
+	As a result, you may not see Windows NT workstation and server names when you run
+	NET VIEW on LAN Manager clients, right after you boot the computer. The longest
+	wait time, if you just miss a server announcement, would be 12 minutes. Once you
+	receive the server announcement, it is valid for 18 minutes.
+	
+	New Design
+	----------
+	
+	The default initial announce frequency for LAN Manager clients is now four
+	minutes, and increases to once every 12 minutes.
+	
+	The AnnDelta delta parameter, although adjustable, defaults to 3000 milliseconds.
+	This parameter specifies the time by which the announcement period can vary.
+	This helps to prevent several servers from continuously announcing
+	simultaneously, thereby reducing network load peaks.
+	
+	Additional query words: prodnt browsing mail slots server message block
+	
+	======================================================================
+	Keywords          : kbnetwork 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+	Version           : 3.5 4.0
+	
+	=============================================================================
+	

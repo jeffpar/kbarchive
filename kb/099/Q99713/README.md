@@ -1,0 +1,146 @@
+---
+layout: page
+title: "Q99713: SMTP: How Reply Chooses a From Address"
+permalink: kb/099/Q99713/
+---
+
+## Q99713: SMTP: How Reply Chooses a From Address
+
+	Article: Q99713
+	Product(s): Microsoft Mail For PC Networks
+	Version(s): MS-DOS:2.1,3.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 07-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Mail Gateway to SMTP, versions 2.1, 3.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Microsoft Mail Gateway to SMTP saves the From field seen in the envelope part
+	(RFC-821) of an incoming message to use in case the Microsoft Mail recipient
+	wants to reply to the message.
+	
+	MORE INFORMATION
+	================
+	
+	The Microsoft Mail postoffice database has one From field. This causes the SMTP
+	gateway to choose one of the four possible SMTP From fields to save in the
+	postoffice database. The four possible From fields are explained in the
+	Background section below.
+	
+	By default, the gateway saves the RFC-821 Mail From information in order to
+	ensure that non-delivery replies will always work properly. In most cases, this
+	information is the same as the RFC-822 From field. All four From fields can be
+	viewed in the SMTP gateway log file, SMTPGATE.LOG. You can see the RFC-821 From
+	field in the beginning of a message transmission, on the line that begins:
+	
+	  [rx] MAIL From:...
+	
+	The RFC-822 From field is recorded later in the Header lines, and looks like
+	this:
+	
+	  Header: From:...
+	
+	Background
+	----------
+	
+	SMTP From information is covered by two RFCs: RFC-821 and RFC-822. RFC-821 keeps
+	From information in the Mail From field. This "gives the reverse-path which can
+	be used to report errors." (RFC-821 Section 3.1). RFC-822 has From information
+	in three fields:
+	
+	- Sender: for "notices of any problems in transport or delivery....NEVER in a
+	  reply." (This field is only present if its contents are different from the
+	  From field below.)
+	
+	- Reply-To: for replies.
+	
+	- From: for replies if no Reply-To field exists. (RFC-822 Section 4.4.4)
+	
+	The four From fields can be organized into two categories: those for replies, and
+	those for non-delivery notices, arranged in the order they should be used.
+	
+	For Replies:
+	
+	- Reply-To
+	
+	- From
+	
+	For Non-Delivery Notices:
+	
+	- Sender
+	
+	- From
+	
+	- Mail From
+	
+	RESOLUTION
+	==========
+	
+	Version 3.0.9 of SMTPGATE.EXE adds a switch to give an SMTP gateway
+	administrator the choice of which From field to use. If you use the -F switch,
+	the gateway will save the From field in the RFC-822 headers, rather than in the
+	Mail From field. This means replies will always work properly. However, a
+	non-delivery notice might not work if the RFC-821 From field is different from
+	the RFC-822 From field.
+	
+	The RFC-822 From field was chosen because if the Reply-To field is saved in the
+	From field, the recipient will never know who actually sent the mail. To prevent
+	misleading the recipient, you can use the -F switch to save the From
+	information.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be problem in version 3.0 of Microsoft Mail
+	Gateway to SMTP. This problem was corrected in version 3.0.9 of SMTPGATE.EXE. If
+	you do not have version 3.0.9 (or later), you can obtain the latest version from
+	the Microsoft Software Library (MSL). Download SMTPGW.EXE (S14223), a
+	self-extracting file, from any of the following services:
+	
+	- Microsoft's World Wide Web Site on the Internet
+	  On the www.microsoft.com home page, click the Support icon.
+	  Click Knowledge Base, and select the product.
+	  Enter kbfile SMTPGW.EXE, and click GO!
+	  Open the article, and click the button to download the file.
+	
+	- Internet (anonymous FTP)
+	  ftp ftp.microsoft.com
+	  Change to the Softlib/Mslfiles folder.
+	  Get SMTPGW.EXE
+	
+	- The Microsoft Network
+	  On the Edit menu, click Go To, and then click Other Location.
+	  Type "mssupport" (without the quotation marks).
+	  Double-click the MS Software Library icon.
+	  Find the appropriate product area.
+	  Locate and Download SMTPGW.EXE.
+	
+	
+	For additional information about downloading, please see the following article in
+	the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	
+	REFERENCES
+	==========
+	
+	RFC 821, SIMPLE MAIL TRANSFER PROTOCOL RFC 822, Standard for ARPA Internet Text
+	Messages
+	
+	Additional query words: 2.10 SMTPGATE.EXE -f
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateSMTP300 kbMailGateSMTP210
+	Version           : MS-DOS:2.1,3.0
+	
+	=============================================================================
+	

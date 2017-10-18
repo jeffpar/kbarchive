@@ -1,0 +1,84 @@
+---
+layout: page
+title: "Q103833: Using Alternate Character Sets Provided by Code Pages"
+permalink: kb/103/Q103833/
+---
+
+## Q103833: Using Alternate Character Sets Provided by Code Pages
+
+	Article: Q103833
+	Product(s): Microsoft FoxPro
+	Version(s): 2.50 2.50a 2.50b | 2.50 2.50a 2
+	Operating System(s): 
+	Keyword(s): kbsetup
+	Last Modified: 13-AUG-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 3.0 
+	- Microsoft FoxPro for MS-DOS, versions 2.5, 2.5a, 2.5b 
+	- Microsoft FoxPro for Windows, versions 2.5, 2.5a, 2.5b 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	You can use different character sets in FoxPro and other programs by changing
+	the code page, as described below. The default code page for U.S. English is
+	437.
+	
+	MORE INFORMATION
+	================
+	
+	Pressing the ALT key in conjunction with the numbers on the numeric keypad will
+	create extended, or special, characters. Extended characters are those
+	characters above ASCII 127. Different code pages support different extended
+	characters. For example, when you are using code page 437, pressing ALT+157
+	produces a Y with two short horizontal lines through it. With code page 850,
+	these keys produce a zero with a line through it.
+	
+	To use different code pages, add the following commands to the CONFIG.SYS and
+	AUTOEXEC.BAT files:
+	
+	- In the CONFIG.SYS file, add:
+	
+	        country=001,,c:\dos\country.sys
+	        device=c:\dos\display.sys con=(ega,437,2)
+	
+	- In the AUTOEXEC.BAT file, add:
+	
+	        chcp 850
+	        REM change to the 859 character set
+	        keyb us,,c:\dos\keyboard.sys
+	        REM need only for keyboard change
+	
+	Please note that the "EGA" in the above commands is used for both EGA and VGA
+	monitors.
+	
+	You can also change the code page at the MS-DOS prompt by issuing the following
+	command:
+	
+	     chcp 437
+	
+	The code page change issued after a RUN command does not affect the current
+	session of FoxPro because the RUN command starts another MS-DOS session.
+	
+	In Windows, the default code page is 1252; you can change it to 850 or some other
+	code page by quitting Windows and running the Windows Setup program.
+	
+	REFERENCES
+	==========
+	
+	Microsoft MS-DOS "User's Guide," version 6.0, pages 238-242, 271-276
+	Microsoft MS-DOS "User's Guide," version 5.0, pages 352-353, 632-637
+	
+	Additional query words: VFoxWin FoxDos FoxWin foreign ascii codepage
+	
+	======================================================================
+	Keywords          : kbsetup 
+	Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro250DOS kbFoxPro250aDOS kbFoxPro250bDOS kbFoxPro250 kbFoxPro250a kbFoxPro250b kbVFP300
+	Version           : 2.50 2.50a 2.50b | 2.50 2.50a 2
+	
+	=============================================================================
+	

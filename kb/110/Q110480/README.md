@@ -1,0 +1,86 @@
+---
+layout: page
+title: "Q110480: Table &amp; Alias Names Not Always the Same in FoxPro for Mac"
+permalink: kb/110/Q110480/
+---
+
+## Q110480: Table &amp; Alias Names Not Always the Same in FoxPro for Mac
+
+	Article: Q110480
+	Product(s): Microsoft FoxPro
+	Version(s): MACINTOSH:2.5b,3.0b
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 05-FEB-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+	- Microsoft FoxPro for Macintosh, version 2.5b 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	In FoxPro for Windows and FoxPro for MS-DOS, the alias of a table is often the
+	same as the name of the table. Therefore, many FoxPro commands and functions
+	appear to work on the table name even though they actually work on the alias
+	name. (These commands are listed below.) This can cause confusion for FoxPro for
+	Macintosh users because alias and table names are sometimes different in FoxPro
+	for Macintosh.
+	
+	To verify a database's alias name in FoxPro for Macintosh, use the ALIAS()
+	function. For example:
+	
+	     USE "Macintosh HD:Long Database Name.DBF"
+	     ? ALIAS()
+	
+	The above program will print "LONG_DATAB" as the alias name.
+	
+	MORE INFORMATION
+	================
+	
+	FoxPro transforms Macintosh-like table names to Windows/MS-DOS-like aliases,
+	with an underscore (_) substituted for the spaces allowed in Macintosh
+	filenames. For example, in FoxPro for Macintosh, the table name "my table" would
+	have the alias "my_table".
+	
+	Several functions that use work area aliases work only on alias names as rendered
+	by FoxPro. For example, "my table" has the alias "my_table"; thus,
+	FLOCK("my_table") works, but FLOCK("my table") generates an error.
+	
+	In addition to the underscore substitution for spaces, filenames longer than 10
+	characters are truncated to the first 10 characters.
+	
+	The following is a list of FoxPro functions and commands that operate with alias
+	names rather than table names:
+	
+	  ALIAS()                         ORDER()
+	  BOF()                           RECCOUNT()
+	  CDX()                           RECNO()
+	  DBF()                           RECSIZE()
+	  DELETED()                       RELATION()
+	  EOF()                           RLOCK()
+	  FCOUNT()                        SEEK()
+	  FIELD()                         SELECT <specified work area>
+	  FILTER()                        SET RELATION
+	  FSIZE()                         SET SKIP
+	  FLOCK()                         SKIP
+	  GO/GOTO                         SYS(14)
+	  JOIN                            SYS(2021)
+	  KEY()                           TAG()
+	  LOCK()                          TARGET()
+	  LUPDATE()                       UNLOCK
+	  MDX()                           USED()
+	  NDX()
+	
+	Additional query words: vFoxMac FoxMac converted conversion naming substituted automatic
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro250bMac kbVFP300bMac
+	Version           : MACINTOSH:2.5b,3.0b
+	
+	=============================================================================
+	

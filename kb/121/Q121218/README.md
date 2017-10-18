@@ -1,0 +1,110 @@
+---
+layout: page
+title: "Q121218: FIX: pvarResult Should Be NULL When vtRet==VT_EMPTY"
+permalink: kb/121/Q121218/
+---
+
+## Q121218: FIX: pvarResult Should Be NULL When vtRet==VT_EMPTY
+
+	Article: Q121218
+	Product(s): Microsoft C Compiler
+	Version(s): 1.5,1.51,2.0
+	Operating System(s): 
+	Keyword(s): kbole kbMFC kbVCkbbuglist kbfixlist
+	Last Modified: 25-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Foundation Classes (MFC), used with:
+	   - Microsoft Visual C++, versions 1.5, 1.51, 2.0 
+	   - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, version 2.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	A call to COleDispatchDriver::InvokeHelper causes the server to generate an
+	error when the return type is VT_EMPTY. The nature of the error depends on the
+	automation server. For example, the Word.Basic automation server causes the
+	following error on some methods that have a return type of void (_DEBUG build):
+	
+	  Assertion Failed Line 315, OLEDISP2.CPP
+	
+	By using the debugger to examine the excepInfo structure, you'll see that the
+	btrDescription member contains this message:
+	
+	  Non Function called as function.
+	
+	CAUSE
+	=====
+	
+	The OLE version 2.0 documentation indicates that in a call to IDispatch-
+	>Invoke the pvarResult parameter should be NULL if the caller does not expect
+	a return value. However the MFC implementation always passes a non- NULL pointer
+	to an empty variant structure. In most cases an automation server will simply
+	ignore pvarResult when it doesn't intend to return a value. But some servers
+	will actually perform error checking on this parameter and will generate an
+	error if it is non-NULL.
+	
+	RESOLUTION
+	==========
+	
+	To work around this problem, derive your own class from COleDispatchDriver, such
+	as CMyOleDispatchDriver, and create your own InvokeHelperVoid function. Then
+	call your own InvokeHelperVoid function instead of InvokeHelper when you need to
+	call a method that has no return value.
+	
+	To implement this work around, create two new functions in your
+	COleDispatchDriver derived class:
+	
+	     CMyOleDispatchDriver::InvokeHelperVVoid
+	     CMyOleDispatchDriver::InvokeHelperVoid
+	
+	Implement these functions by copying the implementations of InvokeHelperV and
+	InvokeHelper from OLEDISP2.CPP.
+	
+	Then modify the following line in InvokeHelperVoid from:
+	
+	     InvokeHelperV(dwDispID, wFlags, vtRet, pvRet, pbParamInfo,
+	       argList);
+	
+	  to:
+	
+	     InvokeHelperVVoid(dwDispID, wFlags, vtRet, pvRet, pbParamInfo,
+	       argList);
+	
+	Then modify the following lines in InvokeHelperVVoid from:
+	
+	     HRESULT hr = m_lpDispatch->Invoke(dwDispID, IID_NULL, 0, wFlags,
+	        &dispparams, &vaResult, &excepInfo, &nArgErr);
+	
+	  to:
+	
+	     HRESULT hr = m_lpDispatch->Invoke(dwDispID, IID_NULL, 0, wFlags,
+	              &dispparams, NULL, &excepInfo, &nArgErr);
+	
+	On some servers, you may also need to re-implement the
+	COleDispatchDriver::SetProperty function and replace it with your own
+	SetPropertyVoid function by copying the implementation from OLEDISP2.CPP. Just
+	as for the InvokeHelper function, you will need to change it to call
+	InvokeHelperVVoid instead of InvokeHelperV.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the products listed at the beginning
+	of this article. This bug was corrected in Visual C++ 1.52 and Visual C++ 2.1.
+	
+	
+	Additional query words: 1.50 2.00 2.50 2.51 3.00
+	
+	======================================================================
+	Keywords          : kbole kbMFC kbVC kbbuglist kbfixlist
+	Technology        : kbAudDeveloper kbMFC
+	Version           : :1.5,1.51,2.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

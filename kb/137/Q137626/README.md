@@ -1,0 +1,126 @@
+---
+layout: page
+title: "Q137626: How to Use DBC Field Captions on Visual FoxPro Forms &amp; Reports"
+permalink: kb/137/Q137626/
+---
+
+## Q137626: How to Use DBC Field Captions on Visual FoxPro Forms &amp; Reports
+
+	Article: Q137626
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:3.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 11-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 3.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The Database Container allows you to enter captions for the fields of a table.
+	However, there is no FieldCaption control that you can place on a form to
+	display a field's caption or to automatically update a field's label on the form
+	should you choose to change the field's caption in the database header. The
+	examples in this article show you how to use DBGETPROP to create a link between
+	field labels on a form and the field captions in the database so that changes
+	propagate.
+	
+	MORE INFORMATION
+	================
+	
+	Example One: Setting the Label for a Standard Text Box Field
+	------------------------------------------------------------
+	
+	1. Create a database that contains a table.
+	
+	2. Add a caption to one or more of the table's fields.
+	
+	3. Create a new form. Place a label and a text box on it.
+	
+	4. Add the table to the data environment of the form, and set the ControlSource
+	  property of the text box to a field that has a caption.
+	
+	5. Add the following code to the Load event of the form:
+	
+	     OPEN DATABASE <<insert databasename here>>
+	
+	6. Add the following code to the Init event of the Label object:
+	
+	     WITH This
+	        .Caption = ;
+	            DBGETPROP( .Parent.Text1.ControlSource, ;
+	            "FIELD", "CAPTION" )
+	     ENDWITH
+	
+	7. Save and run the form. Note that the caption you assigned to the field is
+	  displayed by the label control.
+	
+	Example Two: Setting Headings of a Grid
+	---------------------------------------
+	
+	Normally, a grid with a ColumnCount of -1 will use the Caption property to
+	detrmine the headings used for columns. However, if you specify the number of
+	columns, the headings are determined by the Caption of the header object, not by
+	the Caption property of the ControlSource field. The following code placed in a
+	grid's Init event will set the grid headings when an instance of the grid is
+	created:
+	
+	     LOCAL iLoop, iMax, cSource
+	
+	     SET DATABASE TO <<insert databasename here>>
+	
+	     WITH This
+	        && Determine Number of Columns in Grid
+	        iMax = .ColumnCount
+	
+	        && Get the Table Name used by the Grid
+	        && This is necessary because unlike a text box control,
+	        && the ControlSource property of a column does not preface
+	        && the field name with the table name, so the code must
+	        && do this manually. Note that "." is included.
+	        cSource = .RecordSource + "."
+	
+	        && Loop through each column
+	        FOR iLoop = 1 TO iMax
+	           WITH .Columns(iLoop)
+	
+	              && Set Header Caption
+	              .Header1.Caption = ;
+	                 DBGETPROP( cSource + .ControlSource, ;
+	                 "FIELD", "CAPTION" )
+	           ENDWITH
+	        NEXT iLoop
+	     ENDWITH
+	
+	Example Three: Using Captions in Report Headers
+	-----------------------------------------------
+	
+	To use field captions in reports, create a field (not a text label) whose
+	expression is DBGETPROP("tablename.fieldname","FIELD","CAPTION").
+	
+	NOTE: Here tablename.fieldname is the actual name of the table and field.
+	
+	When the report runs, the expression will evaluate to the proper caption.
+	
+	REFERENCES
+	==========
+	
+	For additional information, please see the Visual FoxPro Help file, the
+	Developer's Guide, and the following article in the Microsoft Knowledge Base:
+	
+	  Q130997 How to Use the Caption Fields of a Table in a Form
+	
+	Additional query words: VFoxWin
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+	Version           : WINDOWS:3.0
+	
+	=============================================================================
+	

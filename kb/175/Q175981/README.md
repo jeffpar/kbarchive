@@ -1,0 +1,127 @@
+---
+layout: page
+title: "Q175981: WinNT Err: Event ID 3206 Replicator Cannot Update Directory"
+permalink: kb/175/Q175981/
+---
+
+## Q175981: WinNT Err: Event ID 3206 Replicator Cannot Update Directory
+
+	Article: Q175981
+	Product(s): Microsoft Windows NT
+	Version(s): WinNT:3.5,3.51,4.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 09-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+	- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The Replicator Service of a directory replication import computer posts the
+	following Event 3206 error.
+	
+	  Event ID: 3206
+	  Source: Replicator
+	  Type: error
+	  Description: The replicator can not update directory
+	  C:\Winnt\System32\Repl\Import (or (C:\Winnt\System32\Repl\Import
+	  \Scripts)(by default). It has tree integrity and is the current
+	  directory for some processes.
+	
+	You may also encounter No Sync errors in the Directory Replication Properties
+	dialog box.
+	
+	CAUSE
+	=====
+	
+	Possible causes include:
+	
+	- The NETLOGON share is accessed/connected by a user or process at the times
+	  when replication tries to run.
+	
+	- The import folder is in use by another process at the times the errors are
+	  occurring.
+	
+	- The import directory is locked.
+	
+	- This message also gets generated when the Wait Until Stabilized check box is
+	  selected in the Replicator service, and a process, such as Windows NT
+	  Explorer is opening and viewing that directory.
+	
+	RESOLUTION
+	==========
+	
+	Check the NETLOGON share and the REPL$ share to ensure no one, except the
+	Replicator Service Account has a connection to the share.
+	
+	From the Control Panel Server tool, click In Use to check any invalid connections
+	to the NETLOGON Share and REPL$ share. Or from Server Manager for Domains,
+	select the import server and the click In Use to check any invalid connections
+	to either share.
+	
+	1. Click the Start button, point to Settings, click Control Panel, then
+	  double-click the Server icon.
+	
+	2. Click In Use to check any invalid connections to the NETLOGON share and REPL$
+	  share.
+	
+	  -or-
+	
+	1. From Server Manager for Domains, select the Import Server and then click In
+	  Use to check any invalid connections to either share.
+	
+	2. Check the lock status by clicking Manage under Import Directories in the
+	  Directory Replication dialog box. Remove Lock if a lock is posted.
+	
+	MORE INFORMATION
+	================
+	
+	The Directory Replicator service requires exclusive use of resources, such as
+	directories and all of their subdirectories being imported or exported, and
+	files on the REPL$ and NETLOGON shares. Any violation of this exclusive use,
+	such as File Manager having one of these directories open, or users connected to
+	the NETLOGON share, can cause this problem, plus they can cause Event ID 3216
+	and Event ID 3208 to occur.
+	
+	For more information on Event ID 3216 and Event ID 3208, please see the following
+	article in the Microsoft Knowledge Base.
+	
+	ARTICLE-ID: Q132950
+	TITLE : Event ID 3216 and 3208 Logged For Replicator Service
+	
+	You should NOT use File Manager or Windows NT Explorer to examine the permissions
+	on the %SystemRoot%\System32\Repl\Import directory, or else the special
+	permissions initially set there will be lost. These initial permissions enable
+	directory replication to work.
+	
+	For more information on the default permissions to the directory trees, see the
+	following article in the Microsoft Knowledge Base.
+	
+	ARTICLE-ID: Q148437
+	TITLE : Default NTFS Permissions in Windows NT
+	
+	REFERENCES
+	==========
+	
+	- Windows NT Server 4.0 Concepts and Planning, Chapter 4, page 124, 133-136,
+	  (See [Caution] in Page 136), Page 145-154 Managing Directory Replication,
+	  (See the Lost Permissions on System32\Repl\Import section in page 154).
+	
+	- Windows NT Server 3.5x Concepts and Planning, Chapter 5, see the [Caution] in
+	  Page 118.
+	
+	Additional query words: repluser replacct access denied
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+	Version           : WinNT:3.5,3.51,4.0
+	Hardware          : x86
+	
+	=============================================================================
+	

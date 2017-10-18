@@ -1,0 +1,135 @@
+---
+layout: page
+title: "Q174251: FS98/2000: How to Enable 3D Hardware Acceleration"
+permalink: kb/174/Q174251/
+---
+
+## Q174251: FS98/2000: How to Enable 3D Hardware Acceleration
+
+	Article: Q174251
+	Product(s): Microsoft Home Games
+	Version(s): WINDOWS:
+	Operating System(s): 
+	Keyword(s): kbdisplay kbenv kbtlc fs98 kbimu msgamekbfaq
+	Last Modified: 07-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Flight Simulator 2000 
+	- Microsoft Flight Simulator 2000 Professional Edition 
+	- Microsoft Flight Simulator 98 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes how to enable Direct3D hardware acceleration in Flight
+	Simulator 2000 or Flight Simulator 98.
+	
+	Flight Simulator is not configured to run in Direct3D mode automatically, even if
+	a DirectX-enabled 3D video adapter or accelerator card is installed in the
+	computer with a compatible driver.
+	
+	Microsoft does not supply the drivers for Direct3D-enabled video adapters.
+	However, DirectX Setup may install an updated version of your video driver when
+	you install Flight Simulator.
+	
+	NOTE: Not all Direct3D-enabled video adapters support Direct3D hardware
+	acceleration in Flight Simulator 2000 or Flight Simulator 98. To run Flight
+	Simulator 2000 in Direct3D mode, your 3D video adapter must be fully compatible
+	with Direct3D 7.0 or later. To run Flight Simulator 98 in Direct3D mode, your 3D
+	video adapter must be fully compatible with Direct3D 5.0 or later.
+	
+	You may need to change certain driver settings to configure your 3D video adapter
+	to support Direct3D hardware acceleration in Flight Simulator. For information
+	about how to do this, please contact the manufacturer of your video adapter.
+	
+	MORE INFORMATION
+	================
+	
+	To enable your 3D video adapter to run in Direct 3D mode, use the appropriate
+	method for your version of Flight Simulator.
+	
+	Flight Simulator 2000
+	---------------------
+	
+	1. Read the Readme.txt file located on the Flight Simulator 2000 CD-ROM to learn
+	  any last minute information about your video adapter.
+	
+	2. Start Flight Simulator 2000.
+	
+	3. Change the view to Full Screen mode. To do this, press ALT+ENTER, or on the
+	  View menu, click Full Screen.
+	
+	4. On the Options menu, point to Settings, and then click Display.
+	
+	5. On the Hardware tab, click to select the "Enable hardware acceleration" check
+	  box.
+	
+	6. In the Device box, click the 3D video driver you want to use.
+	
+	  NOTE: If no Direct3D driver is available, DirectX does not recognize your 3D
+	  video adapter. If this is the case, reinstall the video driver for your
+	  Direct3D-compatible video adapter, or reinstall DirectX 7.0 or later.
+	
+	7. In the Resolution box, click the screen resolution you want to use, and then
+	  click the CHECK MARK button to return to the cockpit.
+	
+	Flight Simulator 98
+	-------------------
+	
+	1. Read the Readme.txt file located on the Flight Simulator 98 CD-ROM to learn
+	  any last minute information about your video adapter.
+	
+	2. Start Flight Simulator 98.
+	
+	3. Change the view to Full Screen mode. To do this, press ALT+ENTER, or on the
+	  View menu, click Full Screen.
+	
+	4. On the Options menu, click Preferences.
+	
+	5. Click the Display tab.
+	
+	6. Click Display Options.
+	
+	7. Click the Hardware Acceleration tab.
+	
+	8. Click to select the "Enable hardware acceleration" check box.
+	
+	9. In the "Fullscreen device" box, click Primary Display Driver (Direct3D) or
+	  the 3D video adapter or accelerator card you want to use.
+	
+	  NOTE: If no Direct3D driver is available, DirectX does not recognize your 3D
+	  video adapter. If this is the case, reinstall the video driver for your
+	  Direct3D-compatible video adapter, or reinstall DirectX 5.0 or later.
+	
+	10. In the "Fullscreen mode" box, click the screen resolution you want to use,
+	  and then click OK until you return to the cockpit.
+	
+	In certain versions of DirectX, you can use the DirectX Setup tool (Dxsetup.exe)
+	to turn Direct3D hardware acceleration on or off. To do this:
+	
+	1. Click Start, point to Find, and then click "Files or Folders."
+	
+	2. In the Named box, type "dxsetup.exe" (without the quotation marks).
+	
+	3. In the "Look in" box, click My Computer, and then click Find Now.
+	
+	4. In the list of found files, double-click the Dxsetup.exe file to start the
+	  program.
+	
+	5. Click to select the "Direct3D hardware acceleration enabled" check box, and
+	  then click OK.
+	
+	Additional query words: flightsim fs98 fs2000 fs2k 3-d
+	
+	======================================================================
+	Keywords          : kbdisplay kbenv kbtlc fs98 kbimu msgame kbfaq
+	Technology        : kbGamesSearch kbFlightSimSearch kbFlightSim2000 kbFlightSim98 kbSimSearch
+	Version           : WINDOWS:
+	Issue type        : kbhowto
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

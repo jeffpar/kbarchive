@@ -1,0 +1,205 @@
+---
+layout: page
+title: "Q173407: HOWTO: Register Your Custom ActiveX DLL from a Client"
+permalink: kb/173/Q173407/
+---
+
+## Q173407: HOWTO: Register Your Custom ActiveX DLL from a Client
+
+	Article: Q173407
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kberrmsg kbnokeyword kbVBp500 kbVBp600 kbGrpDSVB
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	If a compiled client application attempts to reference an object contained in an
+	ActiveX DLL that is not currently or correctly registered on the machine, the
+	following run-time error appears:
+	
+	  ActiveX component can't create object or return reference to this object
+	  (Error 429)
+	
+	This error will not occur when testing in the Visual Basic IDE. In the
+	development environment Visual Basic will one of the following compile errors:
+	
+	  User-defined type not defined
+	
+	  Can't find project or library
+	
+	This article details a method that can be used to ensure that your client
+	application correctly traps for and resolves error 429 at run-time if the
+	ActiveX DLL is present on the machine but not correctly registered.
+	
+	MORE INFORMATION
+	================
+	
+	Below are steps for creating both an ActiveX DLL server and a client
+	application. The client application is designed to trap for error 429. If the
+	error occurs, the ActiveX server will be registered through code.
+	
+	In this example, MyServerObject.DLL is the ActiveX server. MyClient.Exe is the
+	client application.
+	
+	Step-by-Step Instructions for Creating MyServerObject.DLL
+	---------------------------------------------------------
+	
+	1. In Visual Basic, create a new ActiveX DLL project. Class1 is created by
+	  default.
+	
+	2. From the Project menu, choose Project1 Properties and change the Project Name
+	  property to MyServerObject.
+	
+	3. Set the following properties for Class1:
+	
+	     Property            Value
+	     ---------------------------------
+	     (Name)              MyObject
+	     Instancing          5 - MultiUse
+	
+	4. Add the following code to the General Declarations section of MyObject
+	  class:
+	
+	        Public MyProperty As String
+	
+	5. Save the Project as MyServerObject.VBP and the MyObject class as
+	  MyObject.CLS.
+	
+	6. Build the MyServerObject.DLL.
+	
+	Step-by-Step Instructions for Creating MyClient.Exe
+	---------------------------------------------------
+	
+	1. In Visual Basic, start a new standard EXE. Form1 is created by default.
+	
+	2. From the Project menu, choose Project1 Properties. Change the Project Name to
+	  MyClient.
+	
+	3. Select the Project\References menu item to bring up the References dialog
+	  box. Go down the Available References list and check MyServerObject.
+	
+	4. Add a new module (Module1) to the project.
+	
+	5. In Module1, add the following code to the General Declarations section:
+	
+	        Public Declare Function RegMyServerObject Lib _
+	        "<Path>\MyServerObject.DLL" _
+	        Alias "DllRegisterServer" () As Long
+	
+	  where <Path> is the full path to MyServerObject.Dll. The
+	  "DllRegisterServer" portion of the above declaration is case-sensitive. NOTE:
+	  For more information on this API function see Programmatic Registration at
+	  the end of this article.
+	
+	6. Add a CommandButton (Command1) to Form1.
+	
+	7. Add the following code to the Load event procedure of Form1:
+	
+	        Private Sub Form_Load()
+	           On Error GoTo Err_DLL_Not_Registered
+	           Dim RegMyDLLAttempted As Boolean
+	           Dim MyObj As New MyServerObject.MyObject
+	
+	           'The following statement will fail at run-time
+	           'if MyServerObject is not registered.
+	           MyObj.MyProperty = "Hello"
+	           Set MyObj = Nothing
+	           Exit Sub
+	
+	           Err_DLL_Not_Registered:
+	           ' Check to see if error 429 occurs
+	           If Err.Number = 429 Then
+	              MsgBox "Attempting To Register MyServerObject"
+	
+	              'RegMyDLLAttempted is used to determine whether an
+	              'attempt to register the ActiveX DLL has already been
+	              'attempted. This helps to avoid getting stuck in a loop if
+	              'the ActiveX DLL cannot be registered for some reason.
+	              If RegMyDLLAttempted Then
+	                 MsgBox "Unable to Register MyServerObject"
+	                 Resume Next
+	              Else
+	                 RegMyServerObject   'Declared in Module1
+	                 RegMyDLLAttempted = True
+	                 MsgBox "Registration of MyServerObject attempted."
+	                 Resume
+	              End If
+	           Else
+	
+	  MsgBox "An Error Occurred"
+	           End If
+	        End Sub
+	
+	8. Add the following code to the Click event procedure of Command1:
+	
+	        Private Sub Command1_Click()
+	           Dim MyObj As New MyObject
+	           MyObj.MyProperty = "Hello"
+	           MsgBox MyObj.MyProperty
+	        End Sub
+	
+	9. Save the project and make the MyClient.Exe executable file.
+	
+	10. Exit Visual Basic. Test MyClient.Exe by double-clicking on the file in
+	  Windows Explorer.
+	
+	11. For testing purposes, unregister MyServerObject.Dll using RegSvr32.Exe. From
+	  the Start menu, choose Run, and in the Run dialog, type the following
+	  command:
+	
+	  RegSvr32.Exe /U <Path>\MyServerObject.Dll
+	
+	  where <Path> is the full path to MyServerObject.Dll.
+	
+	12. Run the MyClient.Exe program again. This time you should be notified that
+	  registration of MyServerObject.dll is being attempted because it is not
+	  already registered.
+	
+	As demonstrated with the example above, when working with your own client
+	application there are two basic tasks that must be accomplished. First, you need
+	to publicly declare the DllRegisterServer function:
+	
+	     Public Declare Function RegMyServerObject Lib _
+	     "<Path>\MyServerObject.DLL" _
+	     Alias "DllRegisterServer" () As Long
+	
+	Second, you need to trap for error 429 in the error handling routine of the Form1
+	Load event and attempt to recover from the error by calling the function
+	declaration for DllRegisterServer.
+	
+	Programmatic Registration
+	-------------------------
+	
+	All ActiveX DLLs created with Visual Basic export the DllRegisterServer and
+	DllUnregisterServer functions. These functions can be declared in a Visual Basic
+	client and called to self-register or unregister an ActiveX DLL. For example,
+	the following declaration could be used to declare a function which would
+	register the custom ActiveX DLL MyServerObject.DLL:
+	
+	     Public Declare Function RegMyServerObject Lib _
+	     "MyServerObject.DLL" _
+	     Alias "DllRegisterServer" () As Long
+	
+	In code, the "RegMyServerObject" could be called to register the DLL:
+	
+	     Call RegMyServerObject
+	
+	Additional query words: register registry unregister unregistered
+	
+	======================================================================
+	Keywords          : kberrmsg kbnokeyword kbVBp500 kbVBp600 kbGrpDSVB 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

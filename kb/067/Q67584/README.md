@@ -1,0 +1,113 @@
+---
+layout: page
+title: "Q67584: Active Code Page Versus Selected Code Page"
+permalink: kb/067/Q67584/
+---
+
+## Q67584: Active Code Page Versus Selected Code Page
+
+	Article: Q67584
+	Product(s): Microsoft Disk Operating System
+	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 17-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft MS-DOS operating system versions 3.1, 3.2, 3.21, 3.3, 3.3a, 4.0, 4.01, 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The COUNTRY command in CONFIG.SYS can be used to specify a code page that CHCP
+	then reports. However, the code page is not really made active. The MODE command
+	reports "No code page has been selected" and KEYB reports "Active code page not
+	available from CON device."
+	
+	This behavior is a result of the difference in the definitions of an "active"
+	code page and a "selected" code page. The system has a global "active" code page
+	that it attempts to use when accessing any code page supported device.
+	Additionally, each of these devices has a "selected" code page. The global
+	(active) code page and the individual device code page (selected) do not
+	necessarily match.
+	
+	MORE INFORMATION
+	================
+	
+	The COUNTRY command sets the initial active "global" code page, but does not
+	select that code page for each device. The CHCP command reports and changes the
+	global code page, and also attempts to select that code page for each of the
+	code page devices. You can bypass the CHCP command and change a device's
+	selected code page directly by using the MODE command as follows:
+	
+	  MODE CON CODEPAGE SELECT=xxx
+	
+	This selects code page xxx for the CONsole device without affecting the code page
+	used by the other devices or the global active code page.
+	
+	In summary:
+	
+	- COUNTRY sets the country information, and sets the initial global code page,
+	  but does not set code pages in the device drivers.
+	
+	- MODE [CON PRN] CODEPAGE SELECT sets the code page used by a device driver,
+	  but does not affect the global active code page.
+	
+	- CHCP sets the global code page, and issues the equivalent of a MODE [CON PRN]
+	  CODEPAGE SELECT command for each device it finds.
+	
+	Complete code page installation includes use of a COUNTRY command, and the
+	loading of the CON and/or PRN device in the CONFIG.SYS, plus loading of NLSFUNC,
+	a MODE CON/PRN CODEPAGE PREPARE command, and a CHCP command in the
+	AUTOEXEC.BAT.
+	
+	The following example (from page 331 of the "Microsoft MS-DOS User's Reference"
+	version 4.0) demonstrates the interactions of COUNTRY, MODE, and CHCP:
+	
+	  CONFIG.SYS
+	  ----------
+	  country=049,,a:\country.sys
+	  device=display.sys con:=(ega,437,1)
+	
+	  AUTOEXEC.BAT
+	  ------------
+	  nlsfunc
+	  mode con codepage prepare=((850)a:\ega.cpi)
+	  chcp 437
+	
+	1. After booting:
+	
+	   - CHCP reports 437 as the active code page.
+	
+	   - MODE CON CODEPAGE reports that 437 is the active ("selected") code page
+	     for the CON device.
+	
+	2. After issuing a CHCP 850 command:
+	
+	   - CHCP reports 850 as the active code page.
+	
+	   - MODE CON CODEPAGE reports 850 is the active code page for the CON device.
+	
+	3. After issuing a MODE CON CODEPAGE SELECT=437 command:
+	
+	   - CHCP reports 850 as the active code page.
+	
+	   - MODE CON CODEPAGE reports 437 as the active code page for the CON device.
+	
+	The "No code page has been selected" error occurs because a code page has not yet
+	been selected for the device with CHCP or a MODE CON CODEPAGE SELECT= command.
+	KEYB also suffers from the same problem: it requires that a code page be
+	selected for the device.
+	
+	Additional query words: 6.22 3.30 3.30a 4.00 4.01 5.00 5.00a 6.00 6.20
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMSDOSSearch kbMSDOS321 kbMSDOS400 kbMSDOS320 kbMSDOS330a kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS310 kbMSDOS500 kbMSDOS330 kbMSDOS401 kbMSDOS500a
+	Version           : MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22
+	
+	=============================================================================
+	

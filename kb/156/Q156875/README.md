@@ -1,0 +1,89 @@
+---
+layout: page
+title: "Q156875: PRB: Empty Bars Appear in Shortcut Menu"
+permalink: kb/156/Q156875/
+---
+
+## Q156875: PRB: Empty Bars Appear in Shortcut Menu
+
+	Article: Q156875
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbvfp500 kbvfp600
+	Last Modified: 14-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Empty bars appear within a shortcut menu after creating the menu with the DEFINE
+	POPUP command.
+	
+	CAUSE
+	=====
+	
+	The DEFINE POPUP command did not include the RELATIVE clause.
+	
+	RESOLUTION
+	==========
+	
+	Add the RELATIVE clause to the DEFINE POPUP command. This clause prevents blank
+	spaces from appearing within the shortcut menu. Change the DEFINE POPOP command
+	to read:
+	
+	     DEFINE POPUP Test SHORTCUT RELATIVE
+	
+	STATUS
+	======
+	
+	This behavior is by design.
+	
+	MORE INFORMATION
+	================
+	
+	If the DEFINE POPUP command lacks the RELATIVE clause, the order of a particular
+	menu bar depends on its bar number. In the example below, the shortcut menu
+	contains three system menu bars and a bar defined as "BAR 4." Bars 1, 2, and 3
+	are not defined; therefore, three spaces appear between the "Paste" and "Date"
+	bar items.
+	
+	The Menu Builder automatically places the RELATIVE clause on the DEFINE POPUP
+	command it uses to create shortcut menus.
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Create a program that contains the following code:
+	
+	        DEFINE POPUP Test SHORTCUT
+	        DEFINE BAR _MED_CUT OF Test PROMPT "Cut"
+	        DEFINE BAR _MED_COPY OF Test PROMPT "Copy"
+	        DEFINE BAR _MED_PASTE OF Test PROMPT "Paste"
+	        DEFINE BAR 4 OF Test PROMPT "Date"
+	        ON SELECTION BAR 4 OF Test KEYBOARD DTOC(DATE())
+	        ACTIVATE POPUP Test AT MROW(),MCOL()
+	
+	2. Run the program. The shortcut menu contains several blanks lines within it.
+	
+	3. Click the mouse and the shortcut menu disappears.
+	
+	REFERENCES
+	==========
+	
+	Visual FoxPro 5.0; search on: DEFINE POPUP command
+	
+	Additional query words: kbdsd VFoxWin
+	
+	======================================================================
+	Keywords          : kbvfp500 kbvfp600 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600
+	Version           : WINDOWS:5.0,6.0
+	
+	=============================================================================
+	

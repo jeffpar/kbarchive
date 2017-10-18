@@ -1,0 +1,86 @@
+---
+layout: page
+title: "Q102467: HOWTO: Use MAPI.DLL to Invoke MS Mail from FoxPro for Windows"
+permalink: kb/102/Q102467/
+---
+
+## Q102467: HOWTO: Use MAPI.DLL to Invoke MS Mail from FoxPro for Windows
+
+	Article: Q102467
+	Product(s): Microsoft FoxPro
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbinterop kbvfp300 kbvfp500 kbvfp600
+	Last Modified: 20-AUG-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 6.0 
+	- Microsoft FoxPro for Windows, versions 2.5, 2.5a 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	In FoxPro for Windows, you can use FOXTOOLS.FLL with MAPI.DLL to invoke
+	Microsoft Mail version 3.0 so that you can send Mail messages while running your
+	FoxPro program.
+	
+	MORE INFORMATION
+	================
+	
+	By using the RegFn() and CallFn() functions in FOXTOOLS.FLL to access the
+	MAPI.DLL from Mail 3.0, you can send attachments or messages from within a
+	FoxPro for Windows application.
+	
+	The following sample code calls Microsoft Mail to bring up a Send Note dialog box
+	and attaches the AUTOEXEC.BAT file to the Mail message that is going to be
+	sent:
+	
+	     SET LIBRARY TO SYS(2004) + "FOXTOOLS.FLL" ADDITIVE
+	     GetSysDir = RegFn("GetSystemDirectory","@CI","I")
+	     bigstr = REPLICATE(chr(0),144) &&creates a big string
+	     retlen = CallFn(GetSysDir, @bigstr,144)
+	     winsys = LEFT(bigstr,retlen)
+	     SendMail=RegFn("MAPISendDocuments","L@C@C@CL", ;
+	        "L", winsys+"\MAPI.DLL")
+	     T1=";"
+	     T2="C:\AUTOEXEC.BAT"
+	     T3=""
+	     X=CallFn(SendMail,0,@T1,@T2,@T3,0)
+	     RELEASE LIBRARY SYS(2004) + "FOXTOOLS.FLL"
+	
+	GetSystemDirectory() is a Microsoft Windows application programming interface
+	(API) function used to retrieve the Windows SYSTEM subdirectory. RegFn() returns
+	a function handle to GetSysDir so that the handle can be accessed by CallFn().
+	CallFn() is used to determine the length of GetSysDir and assigns the numeric
+	value to retlen. It also puts the string value of GetSysDir in the variable
+	bigstr. At this point, the location of the MAPI.DLL file is known, and the
+	MAPISendDocuments() function is used to send a standard Microsoft Mail message.
+	
+	Now that MAPISendDocuments() has been registered, the SendMail variable can be
+	used to start Mail. T1 refers to the delimiter between filenames. T2 is the list
+	of files that you would like to send. T3 is a null character and is not
+	necessary for this program. Therefore, if you want to send both the AUTOEXEC.BAT
+	and CONFIG.SYS files in your Mail message, you would use
+	T2="C:\AUTOEXEC.BAT;C:\CONFIG.SYS". For more information on the
+	MAPISendDocuments() function, see the Microsoft Mail "Technical Reference"
+	manual.
+	
+	REFERENCES
+	==========
+	
+	FOXTOOLS.WRI file
+	
+	Microsoft Mail "Technical Reference," version 3.0, pages 76-81
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbinterop kbvfp300 kbvfp500 kbvfp600 
+	Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro250 kbFoxPro250a kbVFP300 kbVFP500 kbVFP600
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

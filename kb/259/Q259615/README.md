@@ -1,0 +1,99 @@
+---
+layout: page
+title: "Q259615: PRB: &quot;Access Denied&quot; When You Configure Identity of COM Server"
+permalink: kb/259/Q259615/
+---
+
+## Q259615: PRB: &quot;Access Denied&quot; When You Configure Identity of COM Server
+
+	Article: Q259615
+	Product(s): Microsoft Programming Utilities
+	Version(s): 4.0
+	Operating System(s): 
+	Keyword(s): kbCOMt kbGrpDSCom kbDSupport
+	Last Modified: 12-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft COM, used with:
+	   - the operating system: Microsoft Windows 2000 
+	   - the operating system: Microsoft Windows NT 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	After you programmatically set the identity of a Component Object Model (COM)
+	server to a specific user account, when you attempt to activate the server, you
+	may receive an "Access Denied" error message. The following event appears in the
+	event log:
+	
+	  EventID 10004 Source DCOM DCOM got error "Logon failure: unknown user name or
+	  bad password. " and was unable to logon redmond\comstud in order to run the
+	  server: {5e9ddec7-5767-11cf-beab-00aa006c3606}
+	
+	This problem does not occur when you use DCOMCNFG.exe to configure the identity
+	of a COM server.
+	
+	CAUSE
+	=====
+	
+	When you programmatically set the identity of a COM server to a specific user
+	account, it stores the password of this account in a secure part of the
+	registry. This requires a call to the LsaStorePrivateData function.
+	
+	The second argument to this function takes a LSA_UNICODE_STRING structure, which
+	is the name of the registry key where the private data is stored. One member of
+	this structure is Length. The LSA_UNICODE_STRING documentation states that the
+	length should not include the null terminator.
+	
+	However, for COM to work, you must include the null terminator in the length.
+	When COM calls the LsaRetrievePrivateData function, the null terminator is
+	included as part of the key name where the private data is stored in the
+	registry. If the null terminator is not included in the length of the string,
+	the error occurs when you attempt to activate the COM server.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, make sure that the null terminator is included in the
+	length of the LSA_UNICODE_STRING structure that represents the KeyName where the
+	password is stored.
+	
+	The DCOMPerm sample illustrates how to programmatically set the identity of a COM
+	server to a specific account. Specifically, the SrvcMgmt.cpp file contains the
+	SetRunAsPassword function, which illustrates how to correctly set the password.
+	
+	The DCOMPerm sample is included in the Platform Software Development Kit (SDK) in
+	the Samples\COM\Fundamentals\DCOM\DCOMPerm subfolder. This sample is also
+	located at the following Microsoft Developer Network (MSDN) Web site:
+	
+	  http://msdn.microsoft.com/library/devprods/vs6/visualc/vcsample/vcsmpdcompermpermissionsforcomserver.htm
+	
+	REFERENCES
+	==========
+	
+	For more information, see the following topics in the Platform SDK documentation
+	at the following Microsoft Developer Network (MSDN) Web sites:
+	
+	  LsaStorePrivateData
+	  http://msdn.microsoft.com/library/psdk/lsapol/lsapol_1e5d.htm
+	
+	  LsaRetrievePrivateData
+	  http://msdn.microsoft.com/library/psdk/lsapol/lsapol_8dlt.htm
+	
+	  LSA_UNICODE_STRING
+	  http://msdn.microsoft.com/library/psdk/lsapol/lsapol_91wn.htm
+	
+	Additional query words: 10004
+	
+	======================================================================
+	Keywords          : kbCOMt kbGrpDSCom kbDSupport 
+	Technology        : kbAudDeveloper kbCOM kbCOMPlusSearch
+	Version           : :4.0
+	Issue type        : kbprb
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

@@ -1,0 +1,99 @@
+---
+layout: page
+title: "Q140400: GSNW/CSNW Creates 8.3-Format Directory Names in Uppercase Only"
+permalink: kb/140/Q140400/
+---
+
+## Q140400: GSNW/CSNW Creates 8.3-Format Directory Names in Uppercase Only
+
+	Article: Q140400
+	Product(s): Microsoft Windows NT
+	Version(s): 2000,2000 SP1,2000 SP2,3.51,4.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 11-JUL-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation versions 3.51, 4.0 
+	- Microsoft Windows NT Server versions 3.51, 4.0 
+	- Microsoft Windows versions 2000, 2000 SP1, 2000 SP2 Professional 
+	- Microsoft Windows versions 2000, 2000 SP1, 2000 SP2 Server 
+	-------------------------------------------------------------------------------
+	
+	
+	IMPORTANT: This article contains information about modifying the registry. Before you 
+	modify the registry, make sure to back it up and make sure that you understand how to restore 
+	the registry if a problem occurs. For information about how to back up, restore, and edit the 
+	registry, click the following article number to view the article in the Microsoft Knowledge Base:
+	
+	  Q256986 Description of the Microsoft Windows Registry
+	
+	SYMPTOMS
+	========
+	
+	Files or directories created in 8.3 file format on a NetWare server using Client
+	Services for NetWare (CSNW) or Gateway Service for NetWare (GSNW) appear in
+	uppercase only when the OS/2 Name Space service is installed.
+	
+	CAUSE
+	=====
+	
+	If OS/2 Name Space is installed on a NetWare server, CSNW or GSNW should allow
+	you to create files or directories in any character case. This works correctly
+	for files or directories in long filename convention.
+	
+	RESOLUTION
+	==========
+	
+	WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+	that may require you to reinstall your operating system. Microsoft cannot
+	guarantee that you can solve problems that result from using Registry Editor
+	incorrectly. Use Registry Editor at your own risk.
+	
+	To correct this problem, apply the fix mentioned below and then do the
+	following:
+	
+	1. Run the Registry Editor (REGEDT32.EXE).
+	
+	2. From the HKEY_LOCAL_MACHINE subtree, go to the following key:
+	
+	  \System\CurrentControlSet\Services\NWRDR\parameters
+	
+	3. From the Edit menu, choose Add Value.
+	
+	4. Add the following:
+	
+	  Value Name: FavourLongNames
+	  Data Type: REG_DWORD
+	  Data: 0x1 (Hex)
+	
+	  NOTE: The default data value is 0 (which favors 8.3 file format)
+	
+	
+	1. Choose OK and quit Registry Editor.
+	
+	2. Shut down and restart Windows NT.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Windows NT version 3.51. This
+	problem was corrected in the latest Windows NT 3.51 U.S. Service Pack. For
+	information on obtaining the Service Pack, query on the following word in the
+	Microsoft Knowledge Base (without the spaces):
+	
+	  S E R V P A C K
+	
+	
+	Additional query words: prodnt nbipx NWCS Novell LFN fpnw 4.0
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbwin2000Serv kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWinNTS351search kbWin2000ProSP2 kbWin2000ProSP1 kbwin2000ServSP1 kbwin2000ServSP2
+	Version           : :2000,2000 SP1,2000 SP2,3.51,4.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

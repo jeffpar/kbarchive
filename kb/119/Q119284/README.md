@@ -1,0 +1,100 @@
+---
+layout: page
+title: "Q119284: HOWTO: Distribute a Large Database with an Application"
+permalink: kb/119/Q119284/
+---
+
+## Q119284: HOWTO: Distribute a Large Database with an Application
+
+	Article: Q119284
+	Product(s): Microsoft FoxPro
+	Version(s): 3.0,5.0,6.0
+	Operating System(s): 
+	Keyword(s): kb3rdparty kberrmsg kbvfp300 kbvfp500 kbvfp600
+	Last Modified: 01-NOV-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	It is often desirable to ship large databases with applications. However, the
+	Setup Wizard is not designed to split large files and may not be able to
+	compress large database files, possibly resulting in the error message
+	"Incorrect number of bytes written to disk - source file or destination disk may
+	be corrupted - use ChkDsk."
+	
+	To work around the size limitations of the Setup Wizard, you can use a number of
+	third-party compression utilities, such as PKZIP, LHARC, StuffIt, and so on, to
+	compress large database files. Many of these compression utilities are available
+	on bulletin board services.
+	
+	This article demonstrates how to use one of these utilities, PKZIP, to compress a
+	large database so that it can be shipped with an application.
+	
+	MORE INFORMATION
+	================
+	
+	To ship a large database with your application, compress the database file,
+	convert it to a self-extracting executable file, and then execute some code to
+	expand (decompress) the compressed file.
+	
+	For example, suppose you want to compress the files PICFILES.DBF and
+	PICFILES.FPT. If you are using PKWare's PKZIP utility, you can compress these
+	files into a self-extracting executable file named PICDBF.EXE by typing the
+	following commands at the MS-DOS command prompt:
+	
+	     PKZIP picdbf picfiles.dbf
+	     PKZIP picdbf picfiles.fpt
+	     ZIP2EXE picdbf
+	
+	Move the newly-created PICDBF.EXE file to your source files directory. Do NOT put
+	the PICFILES.DBF or PICFILES.FPT file in this directory.
+	
+	Add the following code to the first program in your project:
+	
+	     * This code assumes the data file to be extracted is named
+	     * PICFILES.DBF. The example tested for this article was over 5 MB,
+	     * and compressed to 1.3 MB. The K value of 240 used in the RUN
+	     * command is an empirical value that has proven successful in our
+	     * tests, but your results may vary. A lower value may be possible.
+	
+	     IF !FILE('picfiles.dbf') OR !FILE('picfiles.fpt')
+	
+	        * The data is shipped as a self-extracting executable with the
+	        * name PICDBF.EXE. It may be wise to include the -o parameter to
+	        * overwrite files when extracting databases.
+	
+	        RUN /240 picdbf.exe -o
+	
+	        * The WAIT window below will keep FoxPro from continuing in
+	        * multithreaded operating systems such as Microsoft Windows NT.
+	
+	        DO WHILE !FILE('picfiles.fpt')
+	           WAIT WINDOW 'Extracting files...' TIMEOUT 5
+	        ENDDO
+	
+	     ENDIF
+	
+	IMPORTANT: The compression software that you decide to use may require additional
+	licensing for distribution in a commercial application. Contact the compression
+	vendor for licensing details.
+	
+	The file-compression utilities mentioned above are manufactured by vendors
+	independent of Microsoft; we make no warranty, implied or otherwise, regarding
+	these products' performance or reliability.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kb3rdparty kberrmsg kbvfp300 kbvfp500 kbvfp600 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP500 kbVFP600
+	Version           : :3.0,5.0,6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

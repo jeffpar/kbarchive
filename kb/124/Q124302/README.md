@@ -1,0 +1,70 @@
+---
+layout: page
+title: "Q124302: BUG: Setup of Data Source in Use Causes Sharing Violation Err."
+permalink: kb/124/Q124302/
+---
+
+## Q124302: BUG: Setup of Data Source in Use Causes Sharing Violation Err.
+
+	Article: Q124302
+	Product(s): Open Database Connectivity (ODBC)
+	Version(s): WINDOWS:2.0
+	Operating System(s): 
+	Keyword(s): kbBug kbISS
+	Last Modified: 27-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Open Database Connectivity, version 2.0 
+	-------------------------------------------------------------------------------
+	
+	BUG# QJET: 1845 (2.00.2316)
+	
+	SYMPTOMS
+	========
+	
+	Setting up a Microsoft Access data source to point to an .MDB file on the
+	network that is already being accessed by another application causes a sharing
+	violation. The sharing violation does not occur if the application using the
+	.MDB file is on the same machine as the .MDB file and the data source setup is
+	also being run on the same machine.
+	
+	For the purposes of this description, WS1 and WS2 are two workstations and FS is
+	a file server. Suppose an .MDB file is on FS, and WS1 has a data source setup to
+	point to this .MDB file. App1 running on WS1 is connected to the .MDB file and
+	is using it in non-exclusive mode. Now, a user on WS2 tried to setup a data
+	source and points the data source to the .MDB file on FS. When the user clicks
+	OK on the ODBC Microsoft Access 2.0 Setup dialog box, the following error
+	occurs,
+	
+	  Sharing Violation on Driver <x>
+	
+	where <x> is the driver letter on WS2 connected to FS.
+	
+	The problem also occurs when WS1 and FS are the same machine. For example, App1
+	is accessing a local .MDB file, and WS2 is trying to set up a data source to
+	point to it.
+	
+	The problem does not occur if the data source setup is being run on the same
+	machine that App1 is being run on. That is, if App1 and the setup are running on
+	WS1, then no problems occur, regardless of whether the data source is local or
+	on the network.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in ODBC Access Driver versions
+	2.00.2316 and 2.00.2318. We are researching this problem and will post new
+	information here in the Microsoft Knowledge Base as it becomes available.
+	
+	Additional query words: 2.00.2316 ODBC MFC VISUAL C++ MSVC SETUP DATA SOURCE
+	
+	======================================================================
+	Keywords          : kbBug kbISS 
+	Technology        : kbAudDeveloper kbODBCSearch kbODBC200
+	Version           : WINDOWS:2.0
+	Issue type        : kbbug
+	
+	=============================================================================
+	

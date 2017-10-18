@@ -1,0 +1,109 @@
+---
+layout: page
+title: "Q136257: Microsoft Systems Journal: October 1995"
+permalink: kb/136/Q136257/
+---
+
+## Q136257: Microsoft Systems Journal: October 1995
+
+	Article: Q136257
+	Product(s): Miscrosoft Systems Journal
+	Version(s): for October 1995
+	Operating System(s): 
+	Keyword(s): kbfile
+	Last Modified: 20-MAY-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Journal (MSJ) for October 1995 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	NOTE: "Microsoft Systems Journal" does not make any representation or warranty,
+	expressed or implied, with respect to any code or other information herein.
+	"Microsoft Systems Journal" disclaims any liability whatsoever for any use of
+	such code or other information.
+	
+	This article lists the filenames and Snumbers for files available from online
+	services that contain the source code described in articles published in the
+	October 1995 issue of the "Microsoft Systems Journal."
+	
+	FILES AVAILABLE FROM ONLINE SERVICES
+	------------------------------------
+	
+	Item ID  Filename        Description
+	-------  --------        -----------
+	
+	S15530   GMMFSRC.EXE     Add Growable Memory-Mapped Files to Your App
+	                        with Our Exclusive GMMF API. Memory-mapped
+	                        files are cool-you can make an entire file
+	                        appear to be in RAM, allowing you to
+	                        manipulate its contents without any file I/O.
+	                        However, growing the size of your MMF on the
+	                        fly is a major pain, unless you take advantage
+	                        of our new GMMF API. By Jeffrey Richter
+	
+	S15531  VB40.EXE         Visual Basic 4.0 Provides Easy Entry to the
+	                        Advanced Features of Windows 95. Visual Basic
+	                        4.0 adds many facilities that make it easy to
+	                        exploit new 32-bit technologies. It is 32-bit
+	                        click-and-go enabled; can create in-proc,
+	                        local, and remote OLE servers; transparently
+	                        supports RPC; and supports the new Windows 95
+	                        controls. By Joshua Trupin.
+	
+	S15532  UNDR1095.EXE     The UNDR1095.EXE file contains the code for the
+	                        article named "Under the Hood," by Matt Pietrek
+	                        page 83.
+	
+	S15533  CPPQ1095.EXE     The CPPQ1095.EXE file contains the code for the
+	                        C/C++ Q & A, by Paul DiLascia, page 99.
+	
+	S15534  OLEQ1095.EXE     the OLEQ1095.EXE file contains the code for the
+	                        OLE Q & A, Don Box, page 91
+	
+	INSTRUCTIONS FOR DOWNLOADING
+	----------------------------
+	
+	You can download any of these self-extracting files from the following services:
+	
+	- Microsoft's World Wide Web Site on the Internet
+	  On the http://www.microsoft.com home page, click the Support icon.
+	  Click Knowledge Base, and select the product.
+	  Enter kbfile <FILENAME>.EXE, and click GO!
+	  Open the article, and click the button to download the file.
+	
+	- Internet (anonymous FTP)
+	  ftp ftp.microsoft.com
+	  Change to the Softlib/Mslfiles directory.
+	  Get <FILENAME>.EXE
+	
+	- The Microsoft Network
+	  On the Edit menu, click Go To, and then click Other Location.
+	  Type "mssupport" (without the quotation marks).
+	  Double-click the MS Software Library icon.
+	  Find the appropriate product area.
+	  Download <FILENAME>.EXE.
+	
+	- Microsoft Download Service (MSDL)
+	  Dial (425) 936-6735 to connect to MSDL
+	  Download <Filename>.exe
+	
+	
+	For additional information about downloading, please see the following article in
+	the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Additional query words: msj Oct
+	
+	======================================================================
+	Keywords          : kbfile 
+	Technology        : kbMSJSearch
+	Version           : :for October 1995
+	
+	=============================================================================
+	

@@ -1,0 +1,130 @@
+---
+layout: page
+title: "Q205539: WD97: Recorded Macro Doesn't Insert Frame Contained in AutoText"
+permalink: kb/205/Q205539/
+---
+
+## Q205539: WD97: Recorded Macro Doesn't Insert Frame Contained in AutoText
+
+	Article: Q205539
+	Product(s): Word 97 for Windows
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbmacroexample word8 kbwordvba kbautotext word97 kbframe
+	Last Modified: 13-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you record a macro to insert an AutoText entry containing a frame,
+	Microsoft Word does not insert the frame when you run the macro.
+	
+	For example, the following recorded macro does not insert the frame contained in
+	the specified AutoText entry:
+	
+	  Sub InsertMyAutoText()
+	
+	      Application.DisplayAutoCompleteTips = True
+	      NormalTemplate.AutoTextEntries("AutoTextName").Insert _
+	         Where:=Selection.Range
+	
+	  End Sub
+	
+	NOTE: "AutoTextName" is the name of your AutoText entry.
+	
+	CAUSE
+	=====
+	
+	The RichText property is not recorded automatically when you record the macro.
+	You must manually add the RichText property to your macro code and set it to
+	True.
+	
+	For more information about the RichText property, from the Visual Basic Editor,
+	click the Office Assistant, type "richtext" (without the quotation marks), click
+	Search, and then click to view "RichText Property."
+	
+	WORKAROUND
+	==========
+	
+	Microsoft provides programming examples for illustration only, without warranty
+	either expressed or implied, including, but not limited to, the implied
+	warranties of merchantability and/or fitness for a particular purpose. This
+	article assumes that you are familiar with the programming language being
+	demonstrated and the tools used to create and debug procedures. Microsoft
+	support professionals can help explain the functionality of a particular
+	procedure, but they will not modify these examples to provide added
+	functionality or construct procedures to meet your specific needs. If you have
+	limited programming experience, you may want to contact a Microsoft Certified
+	Partner or the Microsoft fee-based consulting line at (800) 936-5200. For more
+	information about Microsoft Certified Partners, please visit the following
+	Microsoft Web site:
+	
+	  http://www.microsoft.com/partner/referral/
+	
+	For more information about the support options that are available and about how
+	to contact Microsoft, visit the following Microsoft Web site:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	For more information about how to use the sample code in this article, click the
+	article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q173707 OFF97: How to Run Sample Code from Knowledge Base Articles
+	
+	To correct this problem, add the RichText property to your recorded macro. Your
+	macro code should look similar to the following example:
+	
+	  Sub InsertMyAutoText()
+	
+	     Application.DisplayAutoCompleteTips = True
+	     Normaltemplate.Autotextentries("AutoTextName").Insert _
+	        Where:=Selection.Range, RichText:=True
+	
+	  End Sub
+	
+	MORE INFORMATION
+	================
+	
+	For more information about creating and storing AutoText entries, click
+	"Contents and Index" on the Help menu, click the Index tab in Word Help, type
+	the following text
+	
+	  autotext
+	
+	and then double-click the selected text to go to the "Use shortcuts to insert
+	frequently used text and graphics" topic. If you are unable to find the
+	information you need, ask the Office Assistant.
+	
+	For more information about recording a macro, click "Contents and Index" on the
+	Help menu, click the Index tab in Word Help, type the following text
+	
+	  macros, creating
+	
+	and then double-click the selected text to go to the "Create a macro" topic. If
+	you are unable to find the information you need, ask the Office Assistant.
+	
+	For additional information about getting help with Visual Basic for Applications,
+	click the article numbers below to view the articles in the Microsoft Knowledge
+	Base:
+	
+	  Q163425 WD97: Macro Programming Resources
+	
+	  Q163435 VBA: Programming Resources for Visual Basic for Applications
+	
+	
+	Additional query words: vb vba vbe
+	
+	======================================================================
+	Keywords          : kbmacroexample word8 kbwordvba kbautotext word97 kbframe 
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : :
+	Issue type        : kbprb
+	
+	=============================================================================
+	

@@ -1,0 +1,125 @@
+---
+layout: page
+title: "Q260852: StarLancer: Error Message When You Quit Game in Windows 2000"
+permalink: kb/260/Q260852/
+---
+
+## Q260852: StarLancer: Error Message When You Quit Game in Windows 2000
+
+	Article: Q260852
+	Product(s): Microsoft Home Games
+	Version(s): 1.0
+	Operating System(s): 
+	Keyword(s): kbdisplay kbenv kberrmsg kbimu msgame
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft StarLancer, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you quit Microsoft StarLancer on a Microsoft Windows 2000-based computer,
+	you may receive an error message.
+	
+	CAUSE
+	=====
+	
+	This behavior can occur if the following conditions are true:
+	
+	- A video adapter based on the nVIDIA RIVA TNT2 chip set is installed in the
+	  computer.
+	
+	- You did not install the Windows 2000 Compatibility Update before you
+	  installed StarLancer.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, uninstall StarLancer, install the Windows 2000
+	Compatibility Update, and then reinstall StarLancer.
+	
+	To uninstall StarLancer:
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click Add/Remove Programs.
+	
+	3. Click Microsoft Starlancer, and then click Add/Remove.
+	
+	4. Click Uninstall, and then click OK.
+	
+	5. Click OK.
+	
+	To install the Windows 2000 Compatibility Update:
+	
+	1. Log on to the computer as an Administrator.
+	
+	2. Click Start, and then click Windows Update.
+	
+	3. On the Microsoft Windows Update Web page, click the Product Updates Web link.
+	
+	4. Under Recommended Updates, click to select the Windows 2000 Compatibility
+	  Updates check box.
+	
+	5. Click Download.
+	
+	6. Click Start Download.
+	
+	7. When you are prompted to accept the Supplemental End User License Agreement,
+	  click Yes.
+	
+	8. When you are prompted to restart the computer, click Yes.
+	
+	To reinstall StarLancer:
+	
+	1. Log on to the computer as an Administrator.
+	
+	2. Insert the StarLancer CD-1 CD-ROM into the CD-ROM drive.
+	
+	  If StarLancer Setup does not start automatically:
+	
+	  a. Click Start, and then click Run.
+	
+	  b. In the Open box, type the following line, and then click OK
+	
+	  <cd-rom>:\setup.exe
+	
+	     where <cd-rom> is the drive letter of the CD-ROM drive.
+	
+	3. Follow the instructions on the screen to install StarLancer.
+	
+	If the issue continues to occur, contact your hardware manufacturer to inquire
+	about how to obtain and install the latest version of the video driver for your
+	video adapter.
+	
+	To view a page that contains Web links to the manufacturers of nVIDIA RIVA
+	TNT2-based video adapters, go to the following nVIDIA Web site:
+	
+	  http://www.nvidia.com
+	
+	MORE INFORMATION
+	================
+	
+	Microsoft provides third-party contact information to help you find technical
+	support. This contact information may change without notice. Microsoft does not
+	guarantee the accuracy of this third-party contact information.
+	
+	The third-party products that are discussed in this article are manufactured by
+	companies that are independent of Microsoft. Microsoft makes no warranty,
+	implied or otherwise, regarding the performance or reliability of these
+	products.
+	
+	Additional query words: 1.00 msgame star lancer win2k drwatson dr watson debug assert
+	
+	======================================================================
+	Keywords          : kbdisplay kbenv kberrmsg kbimu msgame 
+	Technology        : _IKkbbogus kbGamesSearch kbStarlancerSearch kbStarlancer
+	Version           : :1.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

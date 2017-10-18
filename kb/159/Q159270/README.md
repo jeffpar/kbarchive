@@ -1,0 +1,115 @@
+---
+layout: page
+title: "Q159270: INFO: How the Merge Process Works in Visual SourceSafe"
+permalink: kb/159/Q159270/
+---
+
+## Q159270: INFO: How the Merge Process Works in Visual SourceSafe
+
+	Article: Q159270
+	Product(s): Microsoft SourceSafe
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbSSafe400 kbSSafe500 kbSSafe600
+	Last Modified: 04-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual SourceSafe for Windows, versions 5.0, 6.0 
+	- Microsoft Visual SourceSafe, 16-bit, for Windows, version 4.0 
+	- Microsoft Visual SourceSafe, 32-bit, for Windows 4.0 
+	- Microsoft Visual SourceSafe, 16-bit, for Windows, version 4.0a 
+	- Microsoft Visual SourceSafe, 32-bit, for Windows 4.0a 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article explains how the merge process works in Visual SourceSafe. The
+	merge process requires three files: an original, and two modified versions of
+	the original. During the merge process, Visual SourceSafe makes two comparisons:
+	one between the original file and the first modified version, and another
+	between the original file and the second modified version. If a change is made
+	in only one file, the change is inserted into the merged file. If there are
+	changes in both files in the same location, then a conflict exists. The user
+	must resolve a conflict manually.
+	
+	MORE INFORMATION
+	================
+	
+	The first file is a snapshot of the file at the point it was branched. This file
+	is maintained by Visual SourceSafe. The second and third files are the current
+	versions of the original file that are located in the two branches that you want
+	to merge, for example:
+	
+	Branch1     Branch2
+	-------     -------
+	
+	A           A
+	B           B
+	C           D
+	D           E
+	E
+	
+	Visual SourceSafe determines whether "C" was added to Branch1 or deleted from
+	Branch2 by looking at the first file and determining whether a deletion or
+	addition occurred.
+	
+	To understand how the merge process works, assume that the file looked like the
+	following when it was branched:
+	
+	Original
+	--------
+	
+	A
+	B
+	C
+	D
+	E
+	
+	If you merge Branch1 into Branch2, the result is as follows:
+	
+	Branch1     Branch2
+	-------     -------
+	A           A
+	B           B
+	C           D
+	D           E
+	E
+	
+	During the merge, Visual SourceSafe moves any changes in Branch1 into Branch2. No
+	changes were made in Branch1. Therefore, both files remain unchanged.
+	
+	If you merge Branch2 into Branch1, the result is as follows:
+	
+	Branch1      Branch2
+	-------      -------
+	A            A
+	B            B
+	D            D
+	E            E
+	
+	During the merge, Visual SourceSafe moves any changes in Branch2 into Branch1.
+	"C" was deleted from Branch2. Therefore, the change is reflected in Branch1.
+	
+	NOTE: Visual SourceSafe assumes incremental changes were made to both of the
+	changed files. When you merge files that are entirely different, you might get
+	unexpected results.
+	
+	REFERENCES
+	==========
+	
+	Visual SourceSafe version 6.0 Help: Merge Branches
+	
+	"Microsoft Visual SourceSafe User's Guide," versions 4 and 5, Chapter 6.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbSSafe400 kbSSafe500 kbSSafe600 
+	Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe400 kbSSafe400a kbSSafe500 kbSSafe16bitSearch kbSSafe32bitSearch
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

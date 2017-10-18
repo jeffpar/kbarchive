@@ -1,0 +1,454 @@
+---
+layout: page
+title: "Q185591: Guide To Windows NT 4.0 Profiles and Policies (Part 6 of 6)"
+permalink: kb/185/Q185591/
+---
+
+## Q185591: Guide To Windows NT 4.0 Profiles and Policies (Part 6 of 6)
+
+	Article: Q185591
+	Product(s): Windows for Workgroups and Windows NT Networking Issues
+	Version(s): 4.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 27-SEP-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 4.0 
+	- Microsoft Windows NT Workstation version 4.0 
+	- Microsoft Windows 95 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article is the sixth in a series of articles that provides information and
+	procedures for implementing Microsoft Windows NT 4.0 Profiles and Policies on
+	client workstations and servers.
+	
+	A whitepaper is available that contains all of this information and additional
+	flowcharts, diagrams and examples and can be downloaded from the following web
+	page:
+	
+	  http://www.microsoft.com/ntserver/techresources/management/prof_policies.asp
+	
+	For the other sections of this guide, please see the following article(s) in the
+	Microsoft Knowledge Base:
+	
+	  Q161334 Guide to Windows NT 4.0 Profiles & Policies Part 1 of 6
+	
+	  Q185587 Guide to Windows NT 4.0 Profiles & Policies Part 2 of 6
+	
+	  Q185588 Guide to Windows NT 4.0 Profiles & Policies Part 3 of 6
+	
+	  Q185589 Guide to Windows NT 4.0 Profiles & Policies Part 4 of 6
+	
+	  Q185590 Guide to Windows NT 4.0 Profiles & Policies Part 5 of 6
+	
+	MORE INFORMATION
+	================
+	
+	                  Windows NT Server Operating System
+	                            White Paper
+	        Guide to Microsoft Windows NT 4.0 Profiles and Policies
+	
+	Copyright 1997 Microsoft Corporation. All rights reserved.
+	
+	The information contained in this document represents the current view of
+	Microsoft Corporation on the issues discussed as of the date of
+	publication. Because Microsoft must respond to changing market conditions,
+	it should not be interpreted to be a commitment on the part of Microsoft,
+	and Microsoft cannot guarantee the accuracy of any information presented
+	after the date of publication.
+	
+	This White Paper is for informational purposes only. MICROSOFT MAKES NO
+	WARRANTIES, EXPRESS OR IMPLIED, IN THIS DOCUMENT.
+	
+	Microsoft, the BackOffice logo, MS-DOS, Windows, and Windows NT are
+	registered trademarks of Microsoft Corporation.
+	
+	Other product or company names mentioned herein may be the trademarks of
+	their respective owners.
+	
+	Microsoft Corporation
+	One Microsoft Way
+	Redmond, WA 98052-6399
+	USA
+	0997
+	
+	FOR MORE INFORMATION
+	====================
+	
+	For more information when configuring your network, refer to the following:
+	
+	- Windows NT Server Concepts and Planning Guide ( Chapter 3, "Managing
+	  User Work Environments" (part of the Windows NT Server product
+	  documentation).
+	
+	- Kixtart Resource Kit Utility available in the Windows NT Server Resource
+	  Kit for version 4.0.
+	
+	For the latest information on Windows NT Server, check out our World Wide
+	Web site at http://www.microsoft.com/backoffice or the Windows NT Server
+	Forum on the Microsoft Network (GO WORD: MSNTS).
+	
+	APPENDIX A - FLOWCHARTS
+	<Flowcharts included in whitepaper referenced at the beginning of this
+	article>
+	
+	APPENDIX B - IMPLEMENTING USER PROFILES
+	The following are typical user profile scenarios that you may encounter in
+	the future or may have already encountered. Each of these scenarios
+	includes a brief description of the situation, the current status of the
+	profiles on the server, actions that you need to take to administer the
+	profile properly, any required user action, references to sections of this
+	guide that have more detailed information, and any applicable usage notes.
+	
+	EXISTING WINDOWS NT 3.5X ROAMING PROFILE
+	========================================
+	
+	A domain user has an existing Windows NT 3.5x roaming profile and will
+	continue to log on to Windows NT 3.5x-based computers only.
+	
+	- What currently exists: A Myuser.usr file exists in the folder
+	  \\myserver\myshare.
+	
+	- Administrator action: None.
+	
+	- User action: None.
+	
+	EXISTING WINDOWS NT 3.5X ROAMING PROFILE
+	========================================
+	
+	A domain user has an existing Windows NT 3.5x mandatory profile and will
+	continue to log on to Windows NT 3.5x-based computers only.
+	
+	- What currently exists: A Myuser.man file exists in the folder
+	  \\myserver\myshare.
+	
+	- Administrator action: None.
+	
+	- User action: None.
+	
+	MIGRATING WINDOWS NT 3.5X ROAMING PROFILE TO WINDOWS NT 4.0 ROAMING PROFILE
+	===========================================================================
+	
+	A domain user has an existing Windows NT 3.5x roaming profile and moves to
+	a Windows NT 4.0-based computer.
+	
+	- What currently exists: A Myuser.usr file exists in the folder
+	  \\myserver\myshare.
+	
+	- Administrator action: None.
+	
+	- User action: To automatically upgrade the profile, log on to the
+	  Windows NT 4.0-based computer and then log off. The automatic upgrade
+	  creates a new folder with the name Myuser.pds in the existing directory
+	  \\myserver\myshare. Inside the new folder is the upgraded User Profile
+	  for the domain user.
+	
+	- For more information: See the section "Upgrading 3.5x Server-Based
+	  Profiles to 4.0 Roaming Profiles."
+	
+	MIGRATING WINDOWS NT 3.5X MANDATORY
+	PROFILE TO WINDOWS NT 4.0 MANDATORY PROFILE
+	===========================================
+	
+	A domain user has an existing Windows NT 3.5x mandatory profile and moves
+	to a Windows NT 4.0-based computer where the user will have a mandatory
+	profile.
+	
+	- What currently exists: A Myuser.man file exists in the folder
+	  \\myserver\myshare.
+	
+	- Administrator action: Create a folder with the name Myuser.pdm in the
+	  existing folder \\myserver\myshare, and then place the desired mandatory
+	  profile into the new folder.
+	
+	- User action: None.
+	
+	- NOTES: Once this procedure is performed, the Windows NT 3.5x profile is
+	  still available to the user should he or she ever log on to a Windows NT
+	  3.5x-based computer again. The Windows NT 4.0 User Profile is maintained
+	  separately. The administrator can remove the Windows NT 3.5x profile if
+	  the user will only be using Windows NT 4.0-based computers.
+	
+	- For more information: See the section "Upgrading 3.5x Mandatory Profiles
+	  to 4.0 Mandatory Profiles."
+	
+	MIGRATING WINDOWS NT 3.5X MANDATORY
+	PROFILE TO WINDOWS NT 4.0 ROAMING PROFILE
+	=========================================
+	
+	A domain user has an existing Windows NT 3.5x mandatory profile and moves
+	to a Windows NT 4.0-based computer where they will have a roaming profile.
+	
+	- What currently exists: A Myuser.man file exists in the folder
+	  \\myserver\myshare.
+	
+	- Administrator action: Change the user's profile path to
+	  \\myserver\myshare\myuser, and then allow the user to log on and log
+	  off.
+	
+	- User action: When instructed to do so, log on to the Windows NT 4.0-
+	  based computer and then log off. This creates the folder
+	  \\myserver\myshare\myuser on the server containing the user's new
+	  roaming profile.
+	
+	- For more information: See the section "Creating a New Roaming User
+	  Profile for Windows NT 4.0."
+	
+	CREATING A NEW WINDOWS NT 4.0 ROAMING PROFILE
+	=============================================
+	
+	A new user will be logging onto Windows NT 4.0-based computers only, and
+	will be using a roaming profile.
+	
+	- What currently exists: Nothing currently exists for the user in
+	  \\myserver\myshare.
+	
+	- Administrator action: In User Manager, specify the User Profile path
+	  without an extension. For example, use \\myserver\myshare\myuser.
+	
+	- User action: Log on and then log off. This creates the folder on the
+	  server \\myserver\myshare\myuser that contains the user's new roaming
+	  profile.
+	
+	- For more information: See the section "Creating a New Roaming User
+	  Profile for Windows NT 4.0."
+	
+	CREATING A NEW WINDOWS NT 4.0 MANDATORY PROFILE
+	===============================================
+	
+	A new user will be logging onto Windows NT 4.0-based computers only, and
+	will be using a mandatory profile.
+	
+	- What currently exists: Nothing currently exists for the user in
+	  \\myserver\myshare.
+	
+	- Administrator action: In User Manager, specify the User Profile path
+	  with the extension .man. For example, use \\myserver\myshare\myuser.man.
+	  Then manually create the myuser.man folder manually in the
+	  \\myserver\myshare directory. Places the mandatory profile for the user
+	  in this new folder.
+	
+	- User action: None.
+	
+	- For more information: See the section "Creating a New Mandatory User
+	  Profile for Windows NT 4.0."
+	
+	UPDATING AND CHANGING A ROAMING PROFILE TO A MANDATORY PROFILE
+	==============================================================
+	
+	A domain user has an existing Windows NT 4.0 roaming User Profile that was
+	not upgraded from Windows NT 3.5x, and the administrator is going to
+	mandate that the profile be read or logon will denied.
+	
+	- What currently exists: A myuser folder containing the user's roaming
+	  profile exists in \\myserver\myshare.
+	
+	- Administrator action: Use User Manager to add the .man extension to the
+	  User Profile path, thus changing the path to
+	  \\myserver\myshare\myuser.man. Then, rename the existing folder that
+	  contains the user's roaming profile from myuser to Myuser.man. Finally,
+	  rename the Ntuser.dat file, which is located in the root of the user's
+	  profile folder, to Ntuser.man.
+	
+	- User action: None.
+	
+	- For more information: See the section "Making a Roaming Profile
+	  Mandatory in Windows NT 4.0."
+	
+	CHANGING A ROAMING PROFILE TO A MANDATORY PROFILE
+	=================================================
+	
+	A domain user has an existing Windows NT 4.0 roaming User Profile that was
+	upgraded from Windows NT 3.5x, and the administrator is going to mandate
+	that the profile be read or logon will denied.
+	
+	- What currently exists: A Myuser.pds folder containing the user's roaming
+	  profile exists in \\myserver\myshare.
+	
+	- Administrator action: Use User Manager to change the extension of the
+	  User Profile path to .man, changing the path to
+	  \\myserver\myshare\myuser.man. Then rename the existing folder that
+	  contains the user's roaming profile from Myuser.pds to Myuser.pdm.
+	  Finally, rename the Ntuser.dat file, which is located in the root of the
+	  user's profile folder, to Ntuser.man.
+	
+	- User action: None.
+	
+	- For more information: See the section "Making a Roaming Profile
+	  Mandatory in Windows NT 4.0."
+	
+	APPENDIX C - USAGE NOTES
+	========================
+	
+	Important Information for Administrators
+	Regarding User Logons and User Logoffs
+	----------------------------------------
+	
+	- Changes that you make to server-based profiles can be lost if you do not
+	  modify the last modification date/time stamp. When a locally cached
+	  version of a profile is compared with the server-based profile, only the
+	  time/date stamp of the Ntuser.xxx file is compared. If the stamps are
+	  the same, the local copy is used. If you have made modifications to
+	  other folders within the profile, these changes can be lost. Utilities
+	  are available to update the last modified date.
+	
+	- If the Default User profile directory (including the Ntuser.xxx file) is
+	  not available at log on, a new user who does not have a server-based
+	  Default User Profile will be unable to log on. When troubleshooting
+	  logon problems or if a user receives a message stating that the profile
+	  could not be loaded, always check for the existence of the Default User
+	  profile.
+	
+	- If the locally cached copy of the User Profile is more current than the
+	  server-based profile, and if it is not mandatory, the user will be
+	  prompted to select which profile to use.
+	
+	- If the user does not successfully receive a profile when he or she logs
+	  on, the user should check to see if the profile path can be reached by
+	  connecting to that resource with Explorer, File Manager, or Start\Run.
+	
+	- Users who are members of both the Domain Users and Guests group or who
+	  are members of just the Guests group will have their local profiles
+	  deleted automatically at logoff.
+	
+	Recent Updates to Profiles Since Retail Release
+	-----------------------------------------------
+	
+	- In the original retail release of Windows NT Server 4.0, if the
+	  administrator creates a mandatory profile that ends with .man and the
+	  user is denied access to the profile, the user is still able to log on
+	  locally, rather than being denied access. This problem was resolved in
+	  Service Pack 3.
+	
+	- Under certain conditions, sharing violations when accessing roaming or
+	  mandatory profiles could occur. Before this problem was resolved, if
+	  multiple users tried to log on at the exact same time, a sharing
+	  violation could result on the files making up the User Profile because
+	  Windows NT was attempting to get exclusive access to the profile. This
+	  was resolved in Service Pack 2.
+	
+	- Administrators creating shortcuts on one machine for use on a central
+	  server have run into problems on user's workstations where a password
+	  prompt is displayed asking for credentials to the machine that
+	  originally created the shortcut. This is due to the default behavior of
+	  Windows NT using the "absolute path" (the path to the original location
+	  where the shortcut was created), to start an application even if the
+	  application is available in the specified path of the shortcut
+	  properties. In Service Pack 2, support was added to give the
+	  administrator the ability to disable this behavior and use the path
+	  specified in the shortcut properties. For more information, reference
+	  Microsoft Knowledge Base article Q158682.
+	
+	Recent Updates to Policies Since Retail Release
+	-----------------------------------------------
+	
+	The following changes have been made to System Policies support since the
+	initial retail release of Windows NT 4.0.
+	
+	- When a policy file was to be downloaded, if the validating domain
+	  controller name was 13 characters or longer, the policy would not be
+	  applied. This has been resolved in Service Pack 3.
+	
+	- NoNetConnectDisconnect, NoTrayContextMenu, NoViewContextMenu,
+	  NoFileMenu, and DisableTaskMgr were added in Service Pack 2. For more
+	  information on these, see the section, "Registry Keys Modified by the
+	  System Policy Editor Default Templates."
+	
+	- In Service Pack 2 and later, the policy file is no longer cached. This
+	  change was made to increase security. Instead of being cached, the
+	  policy file is downloaded at each logon, written to a temporary file,
+	  and applied.
+	
+	- When the NoViewContextMenu policy was introduced, it did not support the
+	  tree view on the left-hand side of Explorer. This was corrected in
+	  Service Pack 3. If this option is turned on, context menus for both the
+	  list view and the tree view are disabled.
+	
+	- Manual mode policy path expansion support was added in Service Pack 3.
+	  If you specify a policy path in the registry (rather than using
+	  Automatic mode), Windows NT now supports paths in the form of
+	  \\someserver\share\ntconfig.pol.
+	
+	- If the administrator created a new policy file and turned on synchronous
+	  logon scripts, saved it to disk, and reloaded the policy file, the
+	  policy setting would be lost because the .adm file needed modification
+	  in three different places. This was corrected in Service Pack 3.
+	
+	- Changing the location of a user's Start menu caused duplicate Programs
+	  items. If you used the System Policy Editor to change the Custom Start
+	  Menu to point to a different directory (even an empty one), the user
+	  would receive the normal Programs menu item and a Programs menu item
+	  above it that pointed to the All Users programs directory. This has been
+	  corrected in Service Pack 3.
+	
+	- The Microsoft Office 97 Resource Kit contains .adm files that
+	  administrators can use when configuring the Office environment for their
+	  users. This is available now from Microsoft.
+	
+	APPENDIX D - RELATED KNOWLEDGE BASE ARTICLES
+	============================================
+	
+	The articles below can be referenced either on TechNet or by using the
+	Microsoft Knowledge Base on Microsoft's Web site.
+	
+	Profiles
+	Q141714  How to Use %LOGONSERVER% to Distribute User Profiles
+	Q154120  Debugging User Profiles and System Policies in Windows NT 4.0
+	Q156568  How to Assign the Administrator Profile to Other Users
+	Q156697  Updating Permissions for User Profiles
+	Q158398  Automating Network Printer Setup
+	Q142682  How to Create and Copy Roaming User Profiles in Windows NT 4.0
+	Q146050  Modifying Ntuser.dat Hive So New Users Get Defined Settings
+	Q160546  No User Profiles Were Found
+	Q161070  Step-by-Step Roaming Profiles Configuration
+	Q157069  Can't Access this Folder Path Is Too Long Error
+	Q161809  How to Create Mandatory Profiles for Windows 95/98 
+	         Users in Windows NT Domain
+	Q165398  Profiles for Members of Guests Group are Deleted
+	Q164133  Logon Allowed When Access Denied to Mandatory User Profile
+	Q162790  "Auto Arrange" Activates Itself in Copied User Profiles
+	Q162717  Autodial Settings Lost When Using Roaming Profiles
+	Q159927  Cannot Delete Certain User Profiles
+	Q160840  Sharing Violation When Accessing User Profiles
+	Q146192  How Windows NT Chooses Between Roaming and Local Profiles
+	Q158899  Prompted for Password When Restoring Persistent Connections
+	Q158682  Shortcuts Created Under Windows NT 4.0 Resolve to UNC Paths
+	Q155587  No Administrative Tools or Common Folders Available
+	Q157621  Personal Groups Not Visible If %Systemroot% Is Read-Only
+	Q156695  Locating Windows NT 4.0 Profile Directories for Duplicate User
+	         Accounts
+	Q138321  Err Msg at Logon: Unable To Log You On Because Your Profile...
+	         Policies
+	Q151176  Policy Registry Entries (Default User)
+	Q154120  Debugging User Profiles and System Policies in Windows NT 4.0
+	Q156365  Hidden Shares Are no Longer Available After Using System Policy
+	Q156689  How to Change Print Job Priority in Windows NT 4.0
+	Q156699  Limitations of "Run Only Allowed Windows Application"
+	Q162774  Policy Editor Crashes When Using Large Custom ADM Files
+	Q162331  Internet Explorer May Not Run with System Policies
+	Q159936  Using the Windows NT 4.0 or Windows 95 System Policy Editor
+	Q160793  Additional Desktop Restrictions Available through Registry
+	         Modification
+	Q143164  INF: How to Protect Windows NT Desktops in Public Areas
+	Q158398  Automating Network Printer Setup
+	Q156698  Disabling Access to Network Resources Using System Policies
+	Q156432  Windows NT 4.0 Policy Restriction Error at Logon
+	Q155956  Cannot Restore Default Setting for Shutdown Button
+	Q163215  System Policies May Not Work With Third-Party GINA DLLs
+	
+	Additional query words: wpaper
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWin95search kbZNotKeyword3
+	Version           : :4.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

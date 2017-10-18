@@ -1,0 +1,133 @@
+---
+layout: page
+title: "Q102782: Troubleshooting RAS Problems and Using the DEVICE.LOG File"
+permalink: kb/102/Q102782/
+---
+
+## Q102782: Troubleshooting RAS Problems and Using the DEVICE.LOG File
+
+	Article: Q102782
+	Product(s): Microsoft Windows NT
+	Version(s): 3.1 3.5 3.51
+	Operating System(s): 
+	Keyword(s): kbnetwork
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 3.1 
+	- Microsoft Windows NT Workstation version 3.1 
+	- Microsoft Windows NT Advanced Server, version 3.1 
+	- Microsoft Windows NT Server versions 3.5, 3.51 
+	- Microsoft Windows NT Workstation versions 3.5, 3.51 
+	-------------------------------------------------------------------------------
+	
+	For information on Windows NT version 4.0, see the following article in the
+	Microsoft Knowledge base:
+	
+	  ARTICLE-ID: Q162694
+	  TITLE : How to Capture Modem Commands in Windows NT 4.0
+	
+	WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+	problems that may require you to reinstall Windows NT to correct them.
+	Microsoft cannot guarantee that any problems resulting from the use of
+	Registry Editor can be solved. Use this tool at your own risk.
+	
+	If you experience problems connecting to Remote Access Services (RAS),
+	try to identify the specific problem by doing the following:
+	
+	1. If you are receiving error messages, choose Help and follow the suggested
+	  steps.
+	
+	2. Check to see if you can access your modem from the Terminal program. If the
+	  modem works with Terminal, do the following:
+	
+	  a. Make sure your modem is on the list of modems supported by Windows NT
+	  Remote Access. (See the Windows NT Hardware Compatibility List.)
+	
+	  b. Make sure you have the correct cabling required by Remote Access. For more
+	  information on RAS cabling requirements, check Remote Access Help. (Search
+	  on: Cabling Requirements.)
+	
+	3. Enable device logging on Remote Access by doing the following:
+	
+	  a. Start Registry Editor.
+	
+	  b. Go to the following subkey:
+	
+	  hkey_local_machine\system\currentcontrolset \services\rasman\parameters
+	
+	  c. If the value does not exist, choose Add Value from the Edit menu.
+	
+	  d. For the following fields, enter these values:
+	
+	        Value Name: logging<BR/>
+	        Data Type: REG_DWORD<BR/>
+	        String: 1
+	
+	  e. Stop and start Remote Access Service and Phone Book to enable the
+	  DEVICE.LOG file.
+	
+	  The RAS DEVICE.LOG file will be created in the SYSTEM32\RAS subdirectory. See
+	  the next section for information on using DEVICE.LOG.
+	
+	Using DEVICE.LOG
+	----------------
+	
+	The DEVICE.LOG file contains the strings that are sent to and received
+	from the serial device (either a modem or an X.25 PAD). DEVICE.LOG is
+	useful for troubleshooting problems with serial devices, and for
+	testing new entries added to the MODEM.INF or PAD.INF files.
+	
+	NOTE: You may want to view the DEVICE.LOG file in a text editor that
+	can display both character and hexadecimal output as some of the
+	information will not be printable characters. Also, DEVICE.LOG
+	contains a carriage return (h0D) and line feed (h0A) byte at the end
+	of each line. These bytes are provided by the program that creates the
+	DEVICE.LOG file and do not represent information communicated from or
+	to the device.
+	
+	The DEVICE.LOG file contains:
+	
+	- The command string sent to the device.
+	
+	- The echo of the command.
+	
+	- The response from the device.
+	
+	- The connect and carrier bps (bits per second) (modems only).
+	
+	For each bps pair, there may be several sets of command, echo, and
+	response data. If the command and echo (on a modem) do not match, a
+	hardware error message will be generated.
+	
+	The Connect string from the modem (the last response string from the
+	modem when a connection is established) will normally contain the
+	connect bps, the carrier bps, or both. If the Connect string contains
+	both, the connect bps and the carrier bps lines will give the values
+	from the Connect string. If the Connect string does not have one of
+	the bps values, a best estimate of the actual bps value is given. Both
+	of these values are used by RAS; for this reason, RAS initializes the
+	modem to include both values in its response.
+	
+	NOTE: "Connect bps" refers to the DTE (data terminal equipment) speed
+	of the modem. This information is required by RAS. The "carrier bps"
+	refers to the DCE (data communication equipment) or modem-to-modem
+	speed. This value is not used internally by RAS, but is displayed if
+	available.
+	
+	If your modem cannot return both the DTE and DCE speeds, configure it
+	to at least return the DTE speed. Without knowledge of the DTE speed,
+	RAS cannot reset the port appropriately, thus resulting in
+	transmission errors.
+	
+	Additional query words: prodnt
+	
+	======================================================================
+	Keywords          : kbnetwork 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTW310 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS351search kbWinNTS350search kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+	Version           : 3.1 3.5 3.51
+	
+	=============================================================================
+	

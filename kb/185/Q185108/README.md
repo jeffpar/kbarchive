@@ -1,0 +1,93 @@
+---
+layout: page
+title: "Q185108: XFOR: Event ID 4132 When Using the IMC for Directory Replication"
+permalink: kb/185/Q185108/
+---
+
+## Q185108: XFOR: Event ID 4132 When Using the IMC for Directory Replication
+
+	Article: Q185108
+	Product(s): Microsoft Exchange
+	Version(s): 4.0,5.0,5.5
+	Operating System(s): 
+	Keyword(s): exc4 exc5 exc55
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you use the Internet Mail Connector (Exchange Server 4.0) or Internet Mail
+	Service (Exchange Server 5.0 and 5.5) for directory replication with another
+	site, the following error may be generated in the application log, even if the
+	Internet Mail Connector diagnostic logging is set to None.
+	
+	  Event ID 4132
+	  Source MSExchangeIMC
+	  Type Error
+	  Category Internal Processing
+	
+	  Description: The Internet Mail Service has failed attempting to deliver a
+	  report or system message and is deleting it, the spool file name can be found
+	  in the data section of this Event and this file can be found in the ARCHIVE
+	  directory.
+	
+	NOTE: If Message Transfer logging on the Internet Mail Connector is set to
+	Maximum you will receive the following event:
+	
+	  Event ID 2001
+	  Source MSExchangeIMC
+	  Type Information
+	  Category Message Transfer
+	
+	  Description: Deliver of message <Message Tracking number@Computer
+	  Name.DNS.Org.com> from <Computer Name-DSA@Site.org.com> in temporary
+	  file "Spool File Name" was attempted to host(s) <unknown> [For Remote
+	  Domain.com] with 0 recipients delivered and 1 undeliverable.
+	
+	NOTE: There will be no data in the Data field.
+	
+	  Event ID 2006
+	  Source MSExchangeIMC
+	  Type Warning
+	  Category SMTP Interface Events
+	
+	  Description: Can't resolve the Host <unknown> [for remote Domain.com] in
+	  order to deliver one or more messages.
+	
+	CAUSE
+	=====
+	
+	One possible cause may be incorrect information in the Routing Address tab of
+	the Connected Sites property page of the Internet Mail Connector. These errors
+	may also be logged when the Internet Mail Connector is not able to resolve the
+	remote Internet Mail Connector domain name or IP address. You should try
+	verifying entries in DNS Manager.
+	
+	WORKAROUND
+	==========
+	
+	To work around this problem, perform the following:
+	
+	- Verify that the Routing Address tab in the Connected Sites property page of
+	  the Internet Mail Connector includes the correct information.
+	
+	- Make sure the DNS entries, "A record and MX record" are correct for the
+	  Exchange sites.
+	
+	
+	Additional query words: 4.0 5.0 dirrep
+	
+	======================================================================
+	Keywords          : exc4 exc5 exc55 
+	Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+	Version           : :4.0,5.0,5.5
+	Issue type        : kbprb
+	
+	=============================================================================
+	

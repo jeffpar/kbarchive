@@ -1,0 +1,239 @@
+---
+layout: page
+title: "Q102966: Registry Entries for Printing"
+permalink: kb/102/Q102966/
+---
+
+## Q102966: Registry Entries for Printing
+
+	Article: Q102966
+	Product(s): Microsoft Windows NT
+	Version(s): 3.1,3.5,3.51,4.0
+	Operating System(s): 
+	Keyword(s): kbother
+	Last Modified: 27-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server versions 3.1, 3.5, 3.51, 4.0 
+	- Microsoft Windows NT Workstation versions 3.1, 3.5, 3.51, 4.0 
+	- Microsoft Windows NT Advanced Server, version 3.1 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The article contains REGISTRY entries for Printing. These subgroups are
+	included:
+	
+	- Printing Entries for Users
+	
+	- Control\Print Entries for the Computer
+	
+	- Print Environments Entries
+	
+	- Print Monitors Entries
+	
+	- Printers Entries
+	
+	- Print Providers Entries
+	
+	MORE INFORMATION
+	================
+	
+	Registry Entries for Printing:
+	
+	The Registry contains printer information in these locations:
+	
+	The per-user settings for the current default printer are stored under this key:
+	
+	  HKEY_CURRENT_USER\Printers
+	
+	The hardware-specific information about drivers and print processors is stored
+	under this key, where Hardware represents the subkey for a specific Windows NT
+	platform, such as Windows NT x86 or Windows NT R4000:
+	
+	  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print
+	
+	Always use Print Manager or the Printers folder to change configuration settings
+	for all printers.
+	
+	Printing Entries for Users:
+	
+	The following Registry path contains a description of the default printer, as
+	selected by the current user:
+	
+	  HKEY_CURRENT_USER\Printers
+	
+	The following Registry paths contain the user preferences for print devices in
+	Windows NT 4.0:
+	
+	  HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\Devices
+	
+	  HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion \PrinterPorts
+	
+	  NOTE: The above registry key is one path; it has been wrapped for
+	  readability.
+	
+	The Device value in the following Registry path contains the user's default
+	printer:
+	
+	  HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\Windows
+	
+	The following Registry path contains the user preferences for Print Manager in
+	Windows NT 3.51 and earlier:
+	
+	  HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion \Print Manager
+	
+	  NOTE: The above Registry key is one path; it has been wrapped for
+	  readability.
+	
+	These standard entries appear:
+	
+	  Network   REG_DWORD
+	  Default:   0x1
+	
+	  Print Manager   REG_BINARY
+	  Default:
+	
+	  Save Settings   REG_DWORD
+	  Default:   0x1
+	
+	Control\Print Entries for the Computer:
+	
+	The principal information for printers appears under the following Registry
+	path:
+	
+	  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print
+	
+	This path contains additional subkeys that define supporting DLLs, drivers, and
+	other necessary information for installed printers. These subkeys can include
+	Environments, Forms, Monitors, Printers, and Providers. An OEM print provider
+	might also add subkeys under this Registry path.
+	
+	Print Environments Entries:
+	
+	The following Registry path contains these subkeys, each of which can contain a
+	value entry defining the directory that contains the appropriate drivers:
+	
+	  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print\Environments
+	  \Windows NT Alpha_AXP
+	  \Windows NT Alpha_AXP\Drivers
+	  \Windows NT Alpha_AXP\Print Processors
+	  \Windows NT R4000
+	  \Windows NT R4000\Drivers
+	  \Windows NT R4000\Print Processors
+	  \Windows NT x86
+	
+	  NOTE: The above Registry key is one path; it has been wrapped for
+	  readability.
+	
+	A PrinterDriverName subkey under the related Drivers subkey can contain these
+	values:
+	
+	  Configuration File   REG_SZ
+	  Default:   Installed DLL filename
+	
+	  Data File            REG_SZ
+	  Default:   Installed .PPD filename
+	
+	  Driver               REG_SZ
+	  Default:   Installed driver DLL filename
+	
+	  Version              REG_DWORD
+	  Default:   Version number
+	
+	A Print Processors subkey (and subsequent subkeys) under this same Registry path
+	contains an entry of the following type:
+	
+	  Driver               REG_SZ
+	  Default:   winprint.dll
+	
+	Print Monitors Entries:
+	
+	The entry in the following path defines the DLL filename for the appropriate
+	print monitor:
+	
+	  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print\Monitors
+	  \<Provider Network Port>
+	
+	  NOTE: The above Registry key is one path; it has been wrapped for
+	  readability.
+	
+	Driver   REG_SZ   DLL filename:
+	
+	The Options subkey for the Hewlett-Packard Network Port contains the following
+	entries, all of which are REG_DWORD:
+	
+	  Adapter=0
+	  ConnectionType=0x1
+	  DlcBufferSize=0x27100
+	  DlcT1Timer=0x5
+	  DlcT2Timer=0x2
+	  DlcTiTimer=0x3
+	  EventLogging=0x7
+	  LinkStationsUsed=0x40
+	  StatusUpdateInterval=0x3c
+	
+	Printers Entries:
+	
+	Each installed printer has a subkey in the following Registry path:
+	
+	  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print\Printers
+	  \<printer name>
+	
+	  NOTE: The above registry key is one path; it has been wrapped for
+	  readability.
+	
+	The following entries can appear under such a subkey:
+	
+	  Attributes : REG_DWORD: 0x1
+	  Datatype : REG_SZ: RAW
+	  Default DevMode : REG_BINARY:
+	  Description : REG_SZ: driver description on port
+	  Location : REG_SZ  :
+	  Name : REG_SZ : user defined
+	  Parameters : REG_SZ :
+	  Port : REG_SZ : port name
+	  Print Processor : REG_SZ: WinPrint
+	  Printer Driver : REG_SZ : driver name selected in Setup
+	  Priority : REG_DWORD: 0x1
+	  Security : REG_BINARY :
+	  Separator File : REG_SZ :
+	  Share Name : REG_SZ :
+	  StartTime : REG_DWORD : 0
+	  Status : REG_DWORD: 0
+	  UntilTime : REG_DWORD: 0
+	
+	Print Providers Entries:
+	
+	Each print service provider has a subkey in the following Registry path:
+	
+	  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print\Providers
+	  \<Print Services Name>
+	
+	  NOTE: The above registry key is one path; it has been wrapped for
+	  readability.
+	
+	The default subkey for a Windows NT network is LanMan Print Services. Such a
+	subkey contains the following entry:
+	
+	  Name   REG_SZ   DLL filename
+	  Default:   win32spl.dll
+	
+	REFERENCE
+	---------
+	
+	"The Windows NT Resource Kit for Operating System Version 3.1".
+	
+	Additional query words: data type
+	
+	======================================================================
+	Keywords          : kbother 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTW310 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS351search kbWinNTS350search kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+	Version           : :3.1,3.5,3.51,4.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

@@ -1,0 +1,203 @@
+---
+layout: page
+title: "Q150933: Acmsetup Caused an Exception 03H in Module Msvfw32.dll"
+permalink: kb/150/Q150933/
+---
+
+## Q150933: Acmsetup Caused an Exception 03H in Module Msvfw32.dll
+
+	Article: Q150933
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): WINDOWS:1.0,2.0,99
+	Operating System(s): 
+	Keyword(s): kberrmsg kbsetup kbimukbfaq
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- DreamWorks Interactive, Scholastic's Goosebumps Series: Escape from Horrorland, version 1.0 
+	- DreamWorks Interactive, The Neverhood, version 1.0 
+	- Microsoft 3D Movie Maker for Windows, version 1.0 
+	- Microsoft Age of Empires, version 1.0 
+	- Microsoft Close Combat for Windows 1.0 
+	- Microsoft Close Combat: A Bridge Too Far, version 2.0 
+	- Microsoft Encarta 96 World Atlas for Windows 
+	- Microsoft Explorapedia series: World of Nature for Windows, version 1.0 
+	- Microsoft Flight Simulator for Windows 95 
+	- Microsoft Flight Simulator 98 
+	- Microsoft Graphics Studio Greetings 99 
+	- Microsoft Graphics Studio Home Publishing 99 
+	- Microsoft Motocross Madness, version 1.0 
+	- Microsoft Nickelodeon 3D Movie Maker for Windows, version 1.0 
+	- Microsoft World of Flight for Windows, version 1.0 
+	- Scholastic's Magic School Bus series: Explores the Rainforest for Windows, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you attempt to install one of the programs listed at the beginning of this
+	article on a Microsoft Windows 95-based or Microsoft Windows 98-based computer,
+	you may receive the following error message:
+	
+	  This program has performed an illegal operation and will be shut down.
+	
+	If you click Details, you receive the following error message:
+	
+	  Acmsetup caused an exception 03H in module Msvfw32.dll.
+	
+	In addition, when you attempt to start one of the programs listed at the
+	beginning of this article, you may receive one of the following error messages:
+	
+	   - Error Starting Program.
+	
+	   - A required .dll, Msvfw32.dll, was not found.
+	
+	   - The C:\Windows\System\Msvfw32.dll file appears to be corrupt. Reinstall the
+	  file, and then try again.
+	
+	   - Homepub caused an exception O3H in module Msvfw32.dll
+	
+	CAUSE
+	=====
+	
+	This behavior can occur if one or more of the following files are missing,
+	damaged, or the incorrect version.
+	
+	- Msvfw32.dll
+	- Msvideo.dll
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, delete the Msvfw32.dll and Msvideo.dll files on the hard
+	disk, and then extract new copies of the files from the Windows 95/98 CD-ROM or
+	installation disks. To do this, use the appropriate method for your version of
+	Windows.
+	
+	Windows 98
+	----------
+	
+	1. Click Start, and then click Run.
+	
+	2. In the Open box, type "sfc" (without the quotation marks), and then click OK.
+	
+	3. Click "Extract one file from installation disk," and then type "msvfw32.dll"
+	  (without the quotation marks) in the "Specify the system file you would like
+	  to restore" box.
+	
+	4. In the Restore From box, type the following line
+	
+	  <cd-rom>:\Win98
+	
+	  where <cd-rom> is the drive letter of the CD-ROM drive that contains the
+	  Windows 98 CD-ROM.
+	
+	5. In the Destination Folder box, type the following line, and then click OK
+	
+	  <drive>:\<windows>\System
+	
+	  where <drive> is the hard disk on which Windows 98 is installed and
+	  <windows> is the folder in which Windows 98 is installed.
+	
+	6. When you are prompted to restart the computer, click No.
+	
+	7. Repeat steps 3-5 to extract the Msvideo.dll file.
+	
+	8. When you are prompted to restart the computer, click Yes.
+	
+	Windows 95
+	----------
+	
+	1. Click Start, click Shut Down, and then click "Restart in MS-DOS mode."
+	
+	2. At the command prompt, type the following lines, pressing ENTER after you
+	  type each line:
+	
+	  cd system
+	  del msvfw32.dll
+	  del msvideo.dll
+	
+	3. Extract new copies of the Msvfw32.dll and Msvideo.dll files to the
+	  Windows\System folder. To do this, use the appropriate method for your
+	  version of Windows 95.
+	
+	  Windows 95 CD-ROM:
+	
+	  a. Insert the Windows 95 CD-ROM into the CD-ROM drive.
+	
+	  b. At the command prompt, type the following lines, pressing ENTER after you
+	     type each line
+	
+	  extract <cd-rom>:\win95\win95_08.cab msvfw32.dll
+	  extract <cd-rom>:\win95\win95_08.cab msvideo.dll
+	  exit
+	
+	  where <cd-rom> is the letter of the CD-ROM drive.
+	
+	  Windows 95 OEM Service Release 2 (OSR2) CD-ROM:
+	
+	  a. Insert the Windows 95 CD-ROM into the CD-ROM drive.
+	
+	  b. At the command prompt, type the following lines, pressing ENTER after you
+	     type each line
+	
+	  extract <cd-rom>:\win95\win95_12.cab msvfw32.dll
+	  extract <cd-rom>:\win95\win95_12.cab msvideo.dll
+	  exit
+	
+	  where <cd-rom> is the letter of the CD-ROM drive.
+	
+	  Windows 95 DMF disks:
+	
+	  a. Insert Windows 95 Disk 8 into the floppy disk drive.
+	
+	  b. At the command prompt, type the following lines, pressing ENTER after you
+	     type each line
+	
+	  extract <floppy>:\win95_08.cab msvfw32.dll
+	  extract <floppy>:\win95_08.cab msvideo.dll
+	  exit
+	
+	     where <floppy> is the letter of the floppy disk drive.
+	
+	  Windows 95 non-DMF disks:
+	
+	  a. Insert Windows 95 Disk 13 into the floppy disk drive.
+	
+	  b. At the command prompt, type the following lines, pressing ENTER after you
+	     type each line
+	
+	  extract <floppy>:\win95_13.cab msvfw32.dll
+	  extract <floppy>:\win95_13.cab msvideo.dll
+	  exit
+	
+	     where <floppy> is the letter of the floppy disk drive.
+	
+	MORE INFORMATION
+	================
+	
+	For additional information about how to use the Extract tool, please see the
+	following article in the Microsoft Knowledge Base:
+	
+	  Q129605 How to Extract Original Compressed Windows Files
+	
+	If you continue to receive this error message, you can resolve the issue by
+	reinstalling Windows 95/98. However, this should only be used as a last resort.
+	Reinstalling Windows resets many of your custom settings to the Windows
+	defaults.
+	
+	For information about how to reinstall Windows, please see your Windows printed
+	documentation or online Help.
+	
+	Additional query words: multi multi-media media mmtitles ror aoe dream works dwi mm
+	
+	======================================================================
+	Keywords          : kberrmsg kbsetup kbimu kbfaq
+	Technology        : kbHomeProdSearch _IKkbbogus kbHomeMMsearch kbAOE kbEncartaSearch kbGamesSearch kbFlightSimSearch kbZNotKeyword kbGraphicsStGreet kbGraphicsStHome kbZNotKeyword2 kbKidsSearch kbMotocrossSearch kbCloseCombatSearch kbGraphicsStHomeSearch kbAOESearch kbZNotKeyword3 kbCloseCombat2 kbCloseCombat kbFlightSim98 kbFlightSim95 kbMotocrossM kbDIGoosebumpEscape kbDINeverhood kbExplorapediaNature100 kb3dMovieMaker kbWorldofFlight kbScholasticRainForest kbEncartaWorldAtlas1996 kbDISearch kbDIGoosebumpsSearch kbMSBSearch kbSimSearch
+	Version           : WINDOWS:1.0,2.0,99
+	Issue type        : kbprb
+	
+	=============================================================================
+	

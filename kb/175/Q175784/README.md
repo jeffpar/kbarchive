@@ -1,0 +1,113 @@
+---
+layout: page
+title: "Q175784: INFO: Replacing #import's Exception Raising Mechanism"
+permalink: kb/175/Q175784/
+---
+
+## Q175784: INFO: Replacing #import's Exception Raising Mechanism
+
+	Article: Q175784
+	Product(s): Microsoft C Compiler
+	Version(s): 5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbATM kbDatabase kbMDAC kbGrpDSVCDB kbGrpDSMDAC kbDSupport
+	Last Modified: 12-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+	- Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+	- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+	- Microsoft Visual C++.NET (2002) 
+	-------------------------------------------------------------------------------
+	
+	NOTE: Microsoft Visual C++ NET (2002) supported both the managed code model that is provided by the .NET Framework and the unmanaged native Windows code model. The information in this article applies to unmanaged Visual C++ code only.
+	
+	SUMMARY
+	=======
+	
+	Using #import to create your client application introduces exception handling
+	through the _com_error exception class when a wrapper for an object's method
+	encounters a failed HRESULT. You might have valid reasons to replace this
+	mechanism with your own implementation.
+	
+	MORE INFORMATION
+	================
+	
+	There are two ways to use #import and not have it raise exceptions for failed
+	HRESULTS. The first is to use the raw_interfaces_only clause with the #import
+	statement. However, this negates some of the advantages of the wrapper classes
+	that #import provides.
+	
+	The second technique is by providing your own implementation for
+	_com_raise_error, which has the following prototype and default implementation:
+	
+	  void __stdcall _com_raise_error(HRESULT hr, IErrorInfo* perrinfo = 0)
+	     throw(_com_error);
+	
+	     void __stdcall
+	     _com_raise_error(HRESULT hr, IErrorInfo* perrinfo ) throw(_com_error)
+	     {
+	         throw _com_error(hr, perrinfo);
+	     } 
+	
+	This function is declared but not implemented in the COMDEF.H file. If you
+	provide your own implementation in an .OBJ, the linker uses that as opposed to
+	bringing it in from COMSUPP.LIB. _com_raise_error exists in its own object in
+	COMSUPP.LIB just so it can be easily replaced by your code.
+	
+	Below is an example of implementation of #import's exception raising function:
+	
+	  Note: Currently our compiler ignores a function exception-specification and
+	  generates the warning:
+	
+	  warning C4290: C++ Exception Specification ignored.
+	
+	  According to C++ WP if any declaration of a function has an exception-
+	  specification, all declarations, including the definition, of that function
+	  shall have an exception-specification with the same set of type- ids.
+	
+	  void __stdcall
+	     _com_raise_error(HRESULT hr, IErrorInfo* perrinfo ) throw(_com_error)
+	         {
+	             //this message box is for demonstration purpose only
+	            AfxMessageBox( "_com_raise_error (HRESULT, IErrorInfo*)" );
+	             //your own error handling code or just an abort
+	         }
+	  #import "C:\Program Files\Common Files\System\ado\msado15.dll" no_namespace rename("EOF", "adoEOF" )
+	
+	         _bstr_t     bstrEmpty(L"");
+	         _ConnectionPtr  Conn1 = NULL;
+	         Conn1.CreateInstance( __uuidof( Connection ) );
+	         Conn1->Open( bstrEmpty, bstrEmpty, bstrEmpty,0 ); 
+	
+	This code attempts to open an ADO connection object without providing any valid
+	connection information. By replacing _com_raise_error, you prevented the
+	_com_error from being raised.
+	
+	However, just because you have replaced this function, you may still need to trap
+	for exceptions. Consider the code snippet below.
+	
+	  #import "C:\Program Files\Common Files\System\ado\msado15.dll" no_namespace rename("EOF", "adoEOF" )
+	      _ConnectionPtr  Conn1 = NULL;
+	      // Conn1.CreateInstance( __uuidof( Connection ) );
+	      Conn1->Open( bstrEmpty, bstrEmpty, bstrEmpty ,0); 
+	
+	In this case, Conn1 is not a valid object and the interface pointer to this
+	non-existent object is NULL, resulting in _com_raise_erro being called. However,
+	the overloaded -> operator method will return a null interface, on which the
+	compiler then attempts to invoke the Open() method, resulting in a Win32
+	exception. Testing Conn1 for NULL first before calling Open() would prevent this
+	exception.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbATM kbDatabase kbMDAC kbGrpDSVCDB kbGrpDSMDAC kbDSupport 
+	Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC600 kbVC32bitSearch kbVCNET kbVC500Search
+	Version           : :5.0,6.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

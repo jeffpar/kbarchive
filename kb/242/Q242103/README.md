@@ -1,0 +1,75 @@
+---
+layout: page
+title: "Q242103: Err Msg: You Already Have a Connection to the Domain"
+permalink: kb/242/Q242103/
+---
+
+## Q242103: Err Msg: You Already Have a Connection to the Domain
+
+	Article: Q242103
+	Product(s): Microsoft Windows NT
+	Version(s): winnt:4.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 10-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you attempt to join a workstation to a domain, the following error message
+	may appear:
+	
+	  You already have a connection to the domain. You must disconnect before
+	  joining the domain.
+	
+	CAUSE
+	=====
+	
+	This behavior can occur if a persistent connection already exists between the
+	workstation and the primary domain controller (PDC). A persistent connection
+	between a workstation that does not belong to the domain and the domain
+	controller itself is possible if you connect to a share by using a
+	domain-authenticated user account and password.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, delete all connections to the domain by using the NET USE
+	command at a command prompt, or use the Disconnect network drive command in
+	Windows NT Explorer, and then join the domain by using the Network dialog box.
+	
+	The following are the specific steps:
+	
+	1. To disconnect from all network drives, type the following line at a command
+	  prompt, and then press ENTER:
+	
+	  NET USE * /DELETE
+	
+	  This command lists all the connections, and then prompts for whether the
+	  connections should be broken.
+	
+	2. To join the domain, at the workstation to be added to the domain,
+	  double-click the Network icon in Control Panel, and then click Change.
+	
+	  NOTE: You must be a domain administrator to add the workstation to the domain.
+	
+	3. Click Domain, and then type the appropriate domain name.
+	
+	4. Click OK, and then click OK.
+	
+	Additional query words: authenticate
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+	Version           : winnt:4.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

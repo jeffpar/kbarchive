@@ -1,0 +1,105 @@
+---
+layout: page
+title: "Q174789: Perl Script Gets Access Denied Error on IIS"
+permalink: kb/174/Q174789/
+---
+
+## Q174789: Perl Script Gets Access Denied Error on IIS
+
+	Article: Q174789
+	Product(s): Internet Information Server
+	Version(s): 2.00 3.00
+	Operating System(s): 
+	Keyword(s): kbprogramming
+	Last Modified: 30-APR-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Server versions 2.0, 3.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you run a Perl script on a "secure" web page, Internet Information Server
+	(IIS) returns the following error message:
+	
+	  Access Denied.
+	
+	However, the Perl script will work correctly if the page were allowed Anonymous
+	Access.
+	
+	CAUSE
+	=====
+	
+	If the web server has a "secured" section where only authorized users have been
+	granted access, and you set up a Perl script to run in that area, it will fail.
+	
+	The IIS server will first try to access the page as the anonymous user. When the
+	application or page is denied access, it must return a request to the web server
+	for the authorized user information. However, the Perl interpreter does not do
+	this; therefore, the script fails.
+	
+	RESOLUTION
+	==========
+	
+	Run one copy of the Perl interpreter for the Anonymous Access section of the web
+	site and another copy of the Perl interpreter for the Secured Access section of
+	the web site.
+	
+	1. Create two directories in the \perl5\ directory named \bin-anonymous\ and
+	  \bin-secure\.
+	
+	2. Copy the contents of the \perl5\bin\ directory to the \bin-anonymous\ and the
+	  \bin-secure\ directories.
+	
+	3. Give the IUSR_machine-name account Read (RX) permissions to the
+	  \bin-anonymous\ directory.
+	
+	4. Give the Secured Access user accounts Read (RX) permissions to the
+	  \bin-secure\ directory.
+	
+	5. Open your registry and add the following values.
+	
+	  WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+	  problems that may require you to reinstall Windows NT to correct them.
+	  Microsoft cannot guarantee that any problems resulting from the use of
+	  Registry Editor can be solved. Use this tool at your own risk.
+	
+	  HKEY_LOCAL_MACHINE\System
+	  \CurrentControlSet
+	  \Services
+	  \W3SVC
+	  \Parameters
+	  \Script Map
+	  .pla, REG_SZ: C:\Program Files\perl5\bin-anonymous\perl300.dll
+	  "Anonymous Access" scripts will be given this extension.
+	  .pls, REG_SZ: C:\Program Files\perl5\bin-secure\perl300.dll
+	  "Secured Access" scripts will be given this extension.
+	
+	6. Stop and restart your IIS services.
+	
+	7. Rename the Perl scripts in your Anonymous Access directories to the *.pla
+	  extension.
+	
+	8. Rename the Perl scripts in your Secured Access directories to the *.pls
+	  extension.
+	
+	9. Modify your links.
+	
+	MORE INFORMATION
+	================
+	
+	For further information on Perl please refer to
+	http://www.yahoo.com/Computers_and_Internet/Programming_Languages/Perl/.
+	
+	======================================================================
+	Keywords          : kbprogramming 
+	Technology        : kbiisSearch kbiis300 kbiis200
+	Version           : 2.00 3.00
+	Hardware          : ALPHA x86
+	Issue type        : kbprb
+	
+	=============================================================================
+	

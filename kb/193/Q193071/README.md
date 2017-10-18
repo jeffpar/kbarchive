@@ -1,0 +1,100 @@
+---
+layout: page
+title: "Q193071: Encarta 98: How to Update Yearbook with No Internet Connection"
+permalink: kb/193/Q193071/
+---
+
+## Q193071: Encarta 98: How to Update Yearbook with No Internet Connection
+
+	Article: Q193071
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): WINDOWS:
+	Operating System(s): 
+	Keyword(s): kbtool kbui kbimu
+	Last Modified: 15-AUG-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Encarta 98 Encyclopedia for Windows 
+	- Microsoft Encarta 98 DVD-ROM Reference Suite for Windows 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes how to obtain content updates for Encarta 98 Encyclopedia
+	if your computer does not have a connection to the Internet.
+	
+	MORE INFORMATION
+	================
+	
+	To obtain content updates for Encarta 98 Encyclopedia, use a computer with an
+	Internet connection to download an Encarta yearbook update file onto a floppy
+	disk, and then copy the file from the floppy disk to your computer. To do this,
+	follow these steps:
+	
+	1. On a computer that has an Internet connection, connect to the following MSN,
+	  The Microsoft Network, Web site:
+	
+	  http://encarta.msn.com/downloads/downld98.asp
+	
+	2. If you use Encarta 98 Deluxe, click Encarta 98 Deluxe 3-CD Edition. If you
+	  use Encarta 98 Standard, click Encarta 98 2-CD Edition.
+	
+	3. Insert a blank, formatted floppy disk into the floppy disk drive.
+	
+	4. Click the link for the yearbook update file you want, and then download and
+	  save the file to the floppy disk drive.
+	
+	5. When the download is complete, eject the floppy disk. If you want to download
+	  more yearbook update files, repeat steps 3 - 5 for each file you want.
+	
+	  NOTE: Each floppy disk can store only one yearbook update file.
+	
+	6. On the computer you use to run Encarta 98, click Start, and then click Run.
+	
+	7. In the Open box, type the following line (with quotation marks), and then
+	  click OK
+	
+	     "<drive>:\Program Files\Microsoft Reference\Encarta Encyclopedia"
+	
+	  where <drive> is the letter of the hard disk on which Encarta 98 is
+	  installed.
+	
+	8. Insert the floppy disk that contains the yearbook update file into the floppy
+	  disk drive.
+	
+	9. Click Start, and then click Run.
+	
+	10. In the Open box, type "<drive>:" (without the quotation marks), and
+	  then click OK, where <drive> is the letter of the floppy disk drive
+	  that contains the yearbook update file.
+	
+	11. In the floppy disk drive window, right-click the yearbook update file, click
+	  Copy, and then close the floppy disk drive window.
+	
+	12. In the Encarta Encyclopedia window, click Paste on the Edit menu.
+	
+	13. When the copy process is complete, eject the floppy disk from the floppy
+	  disk drive. If you want to copy any additional yearbook update files, repeat
+	  steps 8-13.
+	
+	14. Close the Encarta Encyclopedia window.
+	
+	15. Start Encarta 98.
+	
+	16. Click Online Features, and then click Downloads.
+	
+	17. Click Troubleshoot, and then click Integrate.
+	
+	Additional query words: multimedia multi-media mmtitles ybk eyb
+	
+	======================================================================
+	Keywords          : kbtool kbui kbimu 
+	Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbZNotKeyword4 kbEncartaEncycSearch kbEncartaEnCyc1998 kbEncartaReference98
+	Version           : WINDOWS:
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

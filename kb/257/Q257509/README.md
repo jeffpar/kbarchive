@@ -1,0 +1,91 @@
+---
+layout: page
+title: "Q257509: Hardware Inventory May Cause Third-Party Win32 Services to Stop"
+permalink: kb/257/Q257509/
+---
+
+## Q257509: Hardware Inventory May Cause Third-Party Win32 Services to Stop
+
+	Article: Q257509
+	Product(s): Microsoft Systems Management Server
+	Version(s): winnt:2.0
+	Operating System(s): 
+	Keyword(s): kbsms200 smsinst
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server version 2.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	During the enumeration of the Win32_Service class by the Hardware Inventory
+	agent (Hinv32) on Microsoft Windows NT-based clients, some third-party Win32
+	services may stop or log the following event:
+	
+	  Event ID: 7016
+	  Source: Service Control Manager
+	  Type: Error
+	  Category: None
+	  Description: The <ServiceName> service has reported an invalid current
+	  state 0.
+	
+	CAUSE
+	=====
+	
+	Hinv32 makes standard Win32 calls to enumerate services. Third-party services
+	may stop or log event ID 7016 when Hinv32 makes a call to the Win32
+	ControlService function and passes it a SERVICE_CONTROL_ INTERROGATE control
+	code. This control code requests the service to update its current status
+	information immediately to Service Control Manager.
+	
+	WORKAROUND
+	==========
+	
+	To work around this behavior, you can disable the enumeration of the
+	Win32_Service class by modifying the Sms_def.mof file and setting the reporting
+	for the Win32_Service class to False.
+	
+	WARNING: Exercise caution when you edit .mof files. Create a backup copy of the
+	.mof file before you edit it.
+	
+	Modify the master Sms_def.mof file on each site server in turn, or modify it on
+	one server and then copy it to all others. The Sms_def.mof file is located in
+	the <Sms_root>\Inboxes\Clifiles.src\Hinv folder. You can edit the file by
+	using a text editor (such as Notepad). To disable Win32_Service class
+	enumeration, locate the following entry:
+	
+	  
+	
+	  [SMS_Report(TRUE),
+		SMS_Group_Name("Services"),
+		ResID(5000),ResDLL("SMS_RXPL.dll"),
+		SMS_Class_ID("MICROSOFT|SERVICE|1.0")]
+	  class Win32_Service : SMS_Class_Template<BR/>
+	
+	Change "TRUE" to "FALSE" in the first line to disable the entire class
+	enumeration.
+	
+	MORE INFORMATION
+	================
+	
+	Third-party services that exhibit this behavior with Hinv32 may also stop when
+	you use the Sc.exe tool from the Microsoft Windows NT Resource Kit and pass it
+	the interrogate command. For example:
+	
+	  sc interrogate <third-party service name>
+	
+	
+	Additional query words: prodsms
+	
+	======================================================================
+	Keywords          : kbsms200 smsinst 
+	Technology        : kbSMSSearch kbSMS200
+	Version           : winnt:2.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

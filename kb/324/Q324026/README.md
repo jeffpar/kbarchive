@@ -1,0 +1,182 @@
+---
+layout: page
+title: "Q324026: XCON: Error 2140 and Event IDs, MTA Does Not Start"
+permalink: kb/324/Q324026/
+---
+
+## Q324026: XCON: Error 2140 and Event IDs, MTA Does Not Start
+
+	Article: Q324026
+	Product(s): Microsoft Exchange
+	Version(s): 5.5
+	Operating System(s): 
+	Keyword(s): kberrmsg
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.5 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about modifying the registry. Before you 
+	modify the registry, make sure to back it up and make sure that you understand how to restore 
+	the registry if a problem occurs. For information about how to back up, restore, and edit the 
+	registry, click the following article number to view the article in the Microsoft Knowledge Base:
+	
+	  Q256986 Description of the Microsoft Windows Registry
+	
+	SYMPTOMS
+	========
+	
+	If you try to start the Microsoft Exchange Message Transfer Agent (MTA) service,
+	you may receive the following error message:
+	
+	  Could not start the Microsoft Exchange Message Transfer Agent service on
+	  \\<ServerName>. Error 2140: An internal Windows NT error occurred.
+	
+	If you try to run the MTA Database Integrity Checker Utility (Mtacheck.exe), you
+	may receive the following error message:
+	
+	  Database contains serious errors and cannot be automatically repaired.
+	
+	Additionally, you may see the following events in the Application event log of
+	Windows NT Event Viewer:
+	
+	  Event ID: 2152:
+	  Event Type: Warning
+	  Event Source: MSExchangeMTA
+	  Event Category: Operating System
+	  Description:
+	
+	  MSExchangeMTA - A fatal database error occurred, the database recovery
+	  operation was not successful and manual correction will be required. Details
+	  can be found in the file: <drive>
+	  :\Exchsrvr\Mtadata\.\MTACHECK.OUT\MTACHECK.LOG. Please contact Microsoft
+	  Product Support Services. [DB Server MAIN BASE 1 14] (16)
+	
+	  Event ID:2127
+	  Event Type: Warning
+	  Event Source: MSExchangeMTA
+	  Event Category: Operating System
+	  Description:
+	
+	  An MTA database server error was encountered. Error accessing object attribute
+	  (AAT) on a Read/Write operation. Filename:
+	  <drive>:\Exchsrvr\Mtadata\.\DB000068.DAT. File operation: 0. Operating
+	  system error: 2127. Referenced object: OPEN (00000000 => N/A). Referenced
+	  object error 00000000. [0 DB Server OPERATOR 22] (14)
+	
+	  Event ID:2155
+	  Event Type: Warning
+	  Event Source: MSExchangeMTA
+	  Event Category: Internal Processing
+	  Description:
+	
+	  An MTA database server error was encountered. Failed to read attribute
+	  information (AAT) for object 01000068. Database server error code: 2127. [DB
+	  Server OPERATOR 22 29] (14)
+	
+	  Event: 2187
+	  Source: MTA
+	  Type: Warning
+	  Cat: Internal Processing
+	
+	  Description: An MTA database server error was encountered while attempting to
+	  unlock an object which is not locked. Called from MTA. Procedure 460. Object
+	  at fault: 06000174. [DB Server DISP:ROUTER 16 58] (14)
+	
+	  Event ID: 2219
+	  Source: MSExchangeMTA
+	  Category: Field Engineering
+	  Description:
+	
+	  The MTA is running recovery on the internal message database because the MTA
+	  was not shut down cleanly. This operation may take some time. Status updates
+	  will be written to the Windows NT Event Log. [%1 %2 %3 %4] (14)
+	
+	CAUSE
+	=====
+	
+	This issue may occur if incorrect values exist for the location of the MTA
+	database path in the registry.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this behavior, edit the registry to refer to the correct location for
+	the MTA database files. To do so, follow these steps:
+	
+	WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+	that may require you to reinstall your operating system. Microsoft cannot
+	guarantee that you can solve problems that result from using Registry Editor
+	incorrectly. Use Registry Editor at your own risk.
+	
+	1. Click Start, and then click Run.
+	
+	2. In the Open box, type "regedit" (without the quotation marks), and then click
+	  OK.
+	
+	3. Locate the following registry entry:
+	
+	  HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeMTA\Parameters\MTA
+	  Database Path
+	
+	4. Double-click the registry entry that you located in step 3, and then type the
+	  correct path to the MTA database files in the "Value data" box. For example,
+	  "<drive>:\exchsrvr\mtadata" (without the quotation marks).
+	
+	5. Locate the following registry entry:
+	
+	  HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeMTA\Parameters\MTA
+	  Run Directory
+	
+	6. Double-click the entry that you located in step 5, and then verify that the
+	  correct location for the MTA Run Directory is displayed in the "Value data"
+	  box. For example, "<drive>:\exchsrvr\mtadata" (without the quotation
+	  marks).
+	
+	7. On the Registry menu, click Exit to quit Registry Editor.
+	
+	NOTE:You can also use Microsoft Exchange Server Performance Optimizer to move the
+	MTA database files. To start Performance Optimizer, click Start, point to
+	Programs, point to Microsoft Exchange, and then click Microsoft Exchange
+	Optimizer. If you want to run Performance Optimizer in verbose mode, follow the
+	steps in the following Microsoft Knowledge Base article:
+	
+	  Q246125 XADM: Exchange Server 5.5 Performance Optimizer Verbose Mode
+	
+	MORE INFORMATION
+	================
+	
+	For additional information about the Message Transfer Agent (MTA), click the
+	article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q282780 XCON: MTA Database Format and Structure
+	
+	For additional information about the Mtacheck utility, click the article numbers
+	below to view the articles in the Microsoft Knowledge Base:
+	
+	  Q163326 XCON: How and Why to Run Mtacheck
+	
+	  Q148284 XCON: When and How to Use the Mtacheck Utility
+	
+	  Q175495 Performing An MTACHECK
+	
+	For additional information about the Microsoft Exchange Server Performance
+	Optimizer, click the article number below to view the article in the Microsoft
+	Knowledge Base:
+	
+	  Q266051 XADM: The "Understanding the Microsoft Exchange Server Performance
+	  Optimizer White Paper" Is Available
+	
+	Additional query words: front page
+	
+	======================================================================
+	Keywords          : kberrmsg 
+	Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+	Version           : :5.5
+	Issue type        : kbprb
+	
+	=============================================================================
+	

@@ -1,0 +1,167 @@
+---
+layout: page
+title: "Q166163: XCLN: Err Msg: No Transport Provider Was Available"
+permalink: kb/166/Q166163/
+---
+
+## Q166163: XCLN: Err Msg: No Transport Provider Was Available
+
+	Article: Q166163
+	Product(s): Microsoft Exchange
+	Version(s): WinNT:4.0; Win95:4.0;WINDOWS:4.0
+	Operating System(s): 
+	Keyword(s): kbusage
+	Last Modified: 18-APR-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Windows 3.x client, version 4.0 
+	- Microsoft Exchange Windows 95/98 client, version 4.0 
+	- Microsoft Exchange Windows NT client, version 4.0 
+	-------------------------------------------------------------------------------
+	
+	
+	IMPORTANT: This article contains information about editing the registry.
+	Before you edit the registry, make sure you understand how to restore it
+	if a problem occurs. For information on how to do this, view the "Restoring
+	the Registry" online Help topic in Regedit.exe or the "Restoring a Registry
+	Key" online Help topic in Regedt32.exe.
+	
+	SYMPTOMS
+	========
+	
+	This problem occurs with Microsoft Exchange Client in offline mode. When you
+	reply to an SMTP message for which a custom recipient exists in the Exchange
+	Server Global Address List (GAL), the following non-delivery report (NDR) is
+	returned immediately:
+	
+	  No transport provider was available for delivery to this recipient.
+	
+	CAUSE
+	=====
+	
+	The Microsoft Exchange Server Internet Mail Connector (IMC) resolves the
+	reply-to address as an internal Exchange Server mailbox when receiving mail from
+	the Internet. When the IMC does a directory look-up and finds the sender's
+	e-mail address in the directory, it replaces the SMTP address with the X.500
+	address. This makes the message appear as though it has been sent internally,
+	and confuses the client when offline.
+	
+	RESOLUTION
+	==========
+	
+	WARNING: Using Registry Editor incorrectly can cause serious problems that may
+	require you to reinstall Windows. Microsoft cannot guarantee that problems
+	resulting from the incorrect use of Registry Editor can be solved. Use Registry
+	Editor at your own risk.
+	
+	For information about how to edit the registry, view the "Changing Keys And
+	Values" online Help topic in Registry Editor (Regedit.exe) or the "Add and
+	Delete Information in the Registry" and "Edit Registry Data" online Help topics
+	in Regedt32.exe. Note that you should back up the registry before you edit it.
+	
+	To resolve this problem, you must perform these steps on the computer running
+	Microsoft Exchange Server (not on the client computer). There are different
+	resolutions for Exchange Server versions 4.0 and 5.0:
+	
+	Exchange Server 4.0
+	-------------------
+	
+	This fix allows verification of messages sent by certain Exchange users. The FROM
+	address is compared to a list of users. If the address matches, the message is
+	not delivered and an event log message is generated. It is also possible to save
+	the message in order to identify the first SMTP host that was contacted.
+	
+	1. Install Service Pack 3 and perform the following:
+	
+	2. Stop the IMC.
+	
+	3. Start Registry Editor (Regedt32.exe).
+	
+	4. Go to the following key in the registry:
+	
+	     HKEY_LOCAL_MACHINE/SYSTEM/CurrentControlSet/Services
+	     /MSExchangeIMC/Parameters
+	
+	5. On the Edit menu, click Add Value and add the following entry:
+	
+	     Value Name: TurfDir
+	     Data Type: REG_SZ
+	
+	6. A dialog box entitled String Editor will be presented. Add the following
+	  information:
+	
+	     C:\EXCHSRVR\IMCDATA\TURFDIR
+	
+	
+	7. On the Edit menu, click Add value and add the following entry:
+	
+	     Value Name: TurfTable
+	     Data Type: REG_MULTI_SZ
+	
+	8. A dialog box entitled Multi-String Editor will be presented. Add the
+	  following information :
+	
+	     user1@site.domain
+	     user2@site.domain
+	 
+	
+	  The Turf Table contains a list of e-mail addresses used to verify the FROM
+	  address on incoming Internet mail. They should be entered one per line with
+	  no extra spaces or delimiters. They are case insensitive. If a match is
+	  found, the message will be saved to the directory specified in the TURFDIR
+	  value.
+	
+	9. Exit Registry Editor.
+	
+	10. Restart the Internet Mail Connector service.
+	
+	Exchange Server 5.0
+	-------------------
+	
+	1. Stop the Internet Mail Service.
+	
+	2. Start Registry Editor (Regedt32.exe).
+	
+	3. Go to the following key in the registry:
+	
+	     HKEY_LOCAL_MACHINE/SYSTEM/CurrentControlSet/Services
+	     /MSExchangeIMC/Parameters
+	
+	4. Edit the registry using Regedt32.exe and change the value for ResolveP2
+	  registry key.
+	
+	5. Highlight the value ResolveP2.
+	
+	6. On the Edit menu, click DWORD and change the value from 0 to 1.
+	
+	7. Exit Registry Editor.
+	
+	MORE INFORMATION
+	================
+	
+	The following are further aspects of the symptom:
+	
+	- If Exchange Client is started online, and the same message is replied to, the
+	  "no transport provider" NDR does not occur.
+	
+	- If you are offline and you reply to the message, and then retype the SMTP
+	  message exactly as it appears on the To line, the NDR does not occur
+	
+	- Adding entries to the PAB or OAB does not change this behavior.
+	
+	- If, after you click Reply, the properties of the To line are brought up, the
+	  properties show up as a Distinguished Name (it looks like any other native
+	  Exchange Client user), not as a PAB-type (SMTP) entry.
+	
+	
+	Additional query words: spoof table
+	
+	======================================================================
+	Keywords          : kbusage 
+	Technology        : kbExchangeSearch kbExchange400 kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange400NT kbExchange400Win95
+	Version           : WinNT:4.0; Win95:4.0;WINDOWS:4.0
+	
+	=============================================================================
+	

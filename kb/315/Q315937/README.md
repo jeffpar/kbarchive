@@ -1,0 +1,292 @@
+---
+layout: page
+title: "Q315937: HOW TO: Trap Stack Overflow in a Visual C++ Application"
+permalink: kb/315/Q315937/
+---
+
+## Q315937: HOW TO: Trap Stack Overflow in a Visual C++ Application
+
+	Article: Q315937
+	Product(s): Microsoft C Compiler
+	Version(s): 6.0
+	Operating System(s): 
+	Keyword(s): kbDSupport kbAudDeveloper kbHOWTOmaster
+	Last Modified: 22-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual C++ Standard Edition, version 6.0 
+	- Microsoft Visual C++, 32-bit Editions, version 6.0 
+	- Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+	- Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	IN THIS TASK
+	
+	- SUMMARY
+	
+	   - Requirements
+	- Creating a Test Program to Demonstrate Stack Overflow
+	- Trapping the Exception with __try and __except (Partial Solution)
+	- Trapping the Exception with __try and __except (Full Solution)
+	- Verifying That It Works
+	- Troubleshooting
+	
+	- REFERENCES
+	
+	SUMMARY
+	=======
+	
+	A thread that exceeds its stack allocation will raise an exception. This
+	exception can be trapped with the __try and __except keywords in Microsoft
+	Visual C++. However, without correct handling, subsequent stack overflows will
+	raise access violation exceptions. This article shows you how to handle stack
+	overflows more robustly.
+	
+	Requirements
+	------------
+	
+	The following items describe the recommended hardware, software, network
+	infrastructure, skills, and knowledge and service packs that you need.
+	
+	- Microsoft Windows NT, Microsoft Windows 2000, or Microsoft Windows XP
+	
+	Prior knowledge required:
+	
+	- You must have a good knowledge of Visual C++ programming, including exception
+	  handling.
+	
+	Creating a Test Program to Demonstrate Stack Overflow
+	-----------------------------------------------------
+	
+	1. Start Microsoft Visual C++ 6.0, and then create a new Win32 Console
+	  Application named StackOverflowDemo. In the Win32 Console Application wizard,
+	  select "A simple application", and then click Finish. Click OK to create the
+	  new application.
+	
+	2. In the Workspace window, click the FileView tab. Expand the StackOverflowDemo
+	  files node, and then expand the Source Files node. Double-click
+	  StackOverflowDemo.cpp to edit this file in the Code window.
+	
+	3. In StackOverflowDemo.cpp, add the following #include directives after the
+	  existing #include "stdafx.h" directive:
+	
+	  #include <windows.h>
+	  #include <stdio.h>
+	
+	4. After the #include directives, type the following function. This deliberately
+	  causes a stack overflow:
+	
+	  void StackOverflow(int depth)
+	  {
+	      char blockdata[10000];
+	      printf("Overflow: %d\n", depth);
+	      StackOverflow(depth+1);
+	  }
+	
+	5. Edit the main function as follows: int main(int argc, char * argv[])
+	
+	  {
+	      StackOverflow(0);
+	      return 0;
+	  }
+	
+	6. Press F5 to run the program in the debugger. The program displays a series of
+	  messages to the console. These messages have the form "Overflow: n". Each
+	  message indicates a recursive call to the StackOverflow function. Eventually,
+	  a message box appears that displays the following error message:
+	
+	  Unhandled exception in StackOverflowDemo.exe: 0xC00000FD: Stack Overflow.
+	
+	7. Press OK to dismiss the dialog box. Depending on your configuration, the IDE
+	  may try to find the source for CHKSTK.ASM. If this dialog box appears, press
+	  Cancel. Click the Debug menu, and then click Stop Debugging to close the
+	  program.
+	
+	Trapping the Exception with __try and __except (Partial Solution)
+	-----------------------------------------------------------------
+	
+	In this section, you trap the stack overflow exception using __try and __except.
+	This solution is incomplete. The first stack overflow will raise a stack
+	overflow exception. However, subsequent stack overflows cause access violation
+	exceptions.
+	
+	1. Modify the main function as follows: int main(int argc, char * argv[])
+	
+	  {
+	      for (;;)
+	      {    
+	          __try
+	          {
+	              StackOverflow(0);
+	          }
+	          __except (EXCEPTION_EXECUTE_HANDLER)
+	          {
+	              printf("Exception handler %lX\n", _exception_code()); 
+	              Sleep(2000);
+	          }
+	      }
+	      return 0;
+	  }
+	
+	2. Press F5 to run the program in the debugger.
+	
+	3. The console output proceeds as before, until the stack overflow occurs. The
+	  exception handler message is then printed out. The loop makes sure that the
+	  StackOverflow function is retried.
+	
+	4. The program displays the following output:
+	
+	  Overflow: 0
+	  Overflow: 1
+	  Overflow: 2
+	  .
+	  .
+	  Exception Handler C00000FD
+	  Overflow: 0
+	  Overflow: 1
+	  Overflow: 2
+	  .
+	  .
+	  Exception Handler C0000005
+	  Overflow: 0
+	  Overflow: 1
+	  Overflow: 2
+	  .
+	  .
+	  Exception Handler C0000005
+	
+	  The first exception is a stack overflow (C00000FD), but subsequent calls to
+	  the StackOverflow function cause an access violation exception (C0000005).
+	
+	5. Click the Debug menu in Visual C++, and then click Stop Debugging to close
+	  the program.
+	
+	Trapping the Exception with __try and __except (Full Solution)
+	--------------------------------------------------------------
+	
+	If a thread in your application causes an EXCEPTION_STACK_OVERFLOW exception,
+	then your thread has left its stack in a damaged state. This is in contrast to
+	other exceptions such as EXCEPTION_ACCESS_VIOLATION or
+	EXCEPTION_INT_DIVIDE_BY_ZERO, where the stack is not damaged. This is because
+	the stack is set to an arbitrarily small value when the program is first loaded.
+	The stack then grows on demand to meet the needs of the thread. This is
+	implemented by placing a page with PAGE_GUARD access at the end of the current
+	stack. When your code causes the stack pointer to point to an address on this
+	page, an exception occurs. The system then does the three following things:
+	
+	1. Remove the PAGE_GUARD protection on the guard page, so that the thread can
+	  read and write data to the memory.
+	
+	2. Allocate a new guard page that is located one page below the last one.
+	
+	3. Rerun the instruction that raised the exception.
+	
+	In this way, the system can grow the stack for your thread automatically. Each
+	thread in a process has a maximum stack size. The stack size is set at compile
+	time by the /STACK:reserve[,commit] linker switch, or by the STACKSIZE statement
+	in the .def file for the project. When this maximum stack size is exceeded, the
+	system does the three following things:
+	
+	- Remove the PAGE_GUARD protection on the guard page, as described earlier.
+	- Try to allocate a new guard page below the last one. However, this fails
+	  because the maximum stack size has been exceeded.
+	- Raise an exception, so that the thread can handle it in the exception block.
+	
+	Notice an important point here: Your stack no longer has a guard page. The next
+	time that your program grows the stack all the way to the end (where there
+	should be a guard page), your program writes beyond the end of the stack and
+	causes an access violation.
+	
+	You can repair the guard page in the exception handler by using the example shown
+	in this section.
+	
+	Modify the main function as follows:
+	
+	  int main(int argc, char* argv[])
+	  {
+	      for (;;)
+	      {
+	          __try
+	          {
+	              StackOverflow(0);
+	          }
+	          __except(EXCEPTION_EXECUTE_HANDLER)
+	          {
+	              LPBYTE lpPage;
+	              static SYSTEM_INFO si;
+	              static MEMORY_BASIC_INFORMATION mi;
+	              static DWORD dwOldProtect;
+	
+	              // Get page size of system
+	              GetSystemInfo(&si);
+	              
+	              // Find SP address
+	              _asm mov lpPage, esp;
+	
+	              // Get allocation base of stack
+	              VirtualQuery(lpPage, &mi, sizeof(mi));
+	
+	              // Go to page beyond current page
+	              lpPage = (LPBYTE)(mi.BaseAddress)-si.dwPageSize;
+	
+	              // Free portion of stack just abandoned
+	              if (!VirtualFree(mi.AllocationBase,
+	                              (LPBYTE)lpPage - (LPBYTE)mi.AllocationBase,
+	                               MEM_DECOMMIT))
+	  				{
+	                  // If we get here, exit
+	                  exit(1);
+	              }
+	
+	  				// Reintroduce the guard page
+	  				if (!VirtualProtect(lpPage, si.dwPageSize, 
+	                                  PAGE_GUARD | PAGE_READWRITE, 
+	                                  &dwOldProtect))
+	  				{
+	                  exit(1);
+	              }
+	  				printf("Exception handler %lX\n", _exception_code()); 
+	              Sleep(2000);
+	          }
+	  	}
+	  	return 0;
+	  }
+	
+	Verifying That It Works
+	-----------------------
+	
+	1. Press F5 to run the program in the debugger.
+	
+	2. Observe the output from your program. Make sure that all of the exceptions
+	  are stack overflow exceptions (C00000FD). This output shows that you have
+	  successfully replaced the guard page as part of the exception-handling
+	  mechanism.
+	
+	3. Select the Debug menu in Visual C++, and then click Stop Debugging to close
+	  the program.
+	
+	Troubleshooting
+	---------------
+	
+	This solution uses in-line assembly statements. This means that the solution is
+	valid only for Intel (x86) versions of Microsoft Windows. It is not suitable for
+	implementations of Windows on non-Intel architectures (MIPS or Alpha).
+	
+	REFERENCES
+	
+	For more detailed information, see Advanced Windows, 3rd Edition, Chapter 7 and
+	Chapter 16, by Jeffrey Richter, available through Microsoft Press on the
+	following Web page:
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbDSupport kbAudDeveloper kbHOWTOmaster 
+	Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch
+	Version           : :6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

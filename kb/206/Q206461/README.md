@@ -1,0 +1,80 @@
+---
+layout: page
+title: "Q206461: PRB: Query Designer Expression Builder Uses Wrong MIN() / MAX()"
+permalink: kb/206/Q206461/
+---
+
+## Q206461: PRB: Query Designer Expression Builder Uses Wrong MIN() / MAX()
+
+	Article: Q206461
+	Product(s): Microsoft FoxPro
+	Version(s): 5.0,5.0a,6.0
+	Operating System(s): 
+	Keyword(s): kbBuilder kbDesigner kbvfp500 kbvfp500a kbvfp600 kbXBase kbQuery kbGrpDSFox kbDSupport
+	Last Modified: 31-OCT-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Selecting the MIN(,) and MAX(,) functions in the expression builder of the Query
+	Designer gives the incorrect format of the command. This results in the
+	following error when trying to verify the expression:
+	
+	  Function Name is Missing ).
+	
+	CAUSE
+	=====
+	
+	The expression builder incorrectly adds a comma to the function. The MIN() and
+	MAX() functions used in SQL receive only one parameter, while the native Visual
+	FoxPro MIN(,) and MAX(,) functions compare multiple parameters passed. For more
+	information on the differences between the commands, please see the "References"
+	section below.
+	
+	RESOLUTION
+	==========
+	
+	After you select either the MIN() or MAX() command in the expression builder,
+	remove the comma and use only one parameter.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Open Query Designer.
+	
+	2. Click the Expression Builder at the Functions and Expressions box in the
+	  lower left corner.
+	
+	3. From the Math drop-down list box, select MIN(,) or MAX(,).
+	
+	4. Place a numeric expression on each side of the comma.
+	
+	5. Click the Verify button (which causes the error mentioned above) or try
+	  adding the expression to the Selected fields list box (which places quotes
+	  around the expression).
+	
+	REFERENCES
+	==========
+	
+	  Q98362 INFO: Differences Between MIN(), MAX(), and SQL SELECT MIN/MAX
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbBuilder kbDesigner kbvfp500 kbvfp500a kbvfp600 kbXBase kbQuery kbGrpDSFox kbDSupport 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+	Version           : :5.0,5.0a,6.0
+	Issue type        : kbprb
+	Solution Type     : kbnofix
+	
+	=============================================================================
+	

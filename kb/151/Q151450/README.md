@@ -1,0 +1,199 @@
+---
+layout: page
+title: "Q151450: MSB Earth: ErrMsg: The System Is Unable to Play CD Audio"
+permalink: kb/151/Q151450/
+---
+
+## Q151450: MSB Earth: ErrMsg: The System Is Unable to Play CD Audio
+
+	Article: Q151450
+	Product(s): Microsoft Home Kids Products
+	Version(s): WINDOWS:1.0
+	Operating System(s): 
+	Keyword(s): kbenv kberrmsg kbmm kbsoundkbfaq
+	Last Modified: 08-NOV-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Scholastic's Magic School Bus series: Explores Inside the Earth for Windows, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you start Magic School Bus Explores Inside the Earth (MSB Earth), you may
+	receive the following error message:
+	
+	  MSB Earth
+	
+	  The system is unable to play CD Audio. You can continue running this program
+	  but some background audio will not play.
+	
+	CAUSE
+	=====
+	
+	The error message occurs if the appropriate CD Audio device driver is not
+	installed, or if the audio driver is damaged. This error message can also occur
+	if the CD Audio device is disabled.
+	
+	After you receive this error message, the program starts and runs, but the CD
+	Audio driver must be installed correctly in order for you to hear all of the
+	audio features in MSB Earth.
+	
+	RESOLUTION
+	==========
+	
+	If You Are Using Windows 95/98
+	------------------------------
+	
+	Use the following steps to verify that the CD Audio Device is installed and
+	enabled:
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click Multimedia.
+	
+	3. Click the Advanced or Devices tab, and then double click Media Control
+	  Devices.
+	
+	4. Click CD Audio Device (Media Control), and then click Properties.
+	
+	  NOTE: This device is only visible in the list of Media Control Devices when it
+	  is properly installed.
+	
+	5. Verify that the Use This Media Control Device option is selected and that the
+	  status of the device is shown as "Status: Driver is enabled." If the status
+	  of the device is disabled, click the Use This Media Control Device option to
+	  enable the device.
+	
+	6. Click OK.
+	
+	7. If you enabled the device using the steps above, click OK when you receive
+	  the following message:
+	
+	  These changes may not take effect until you restart Windows.
+	
+	8. Click OK to close the Multimedia Properties dialog box.
+	
+	9. Click Start, click Shut Down, click "Restart the Computer", and then click
+	  Yes.
+	
+	To install the MCI CD Audio driver, use the appropriate method below for your
+	version of Windows:
+	
+	Windows 95/98
+	-------------
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click Add New Hardware.
+	
+	3. In the Add New Hardware dialog box, click Next.
+	
+	  NOTE: If you are using Windows 98, click Next, and then click Next.
+	
+	4. When the Add New Hardware Wizard asks if you want Windows to search for new
+	  hardware, click No, and then click Next.
+	
+	5. Click Sound, Video And Game Controllers, and then click Next.
+	
+	6. In the Manufacturers box, click Microsoft MCI. In the Models box, click CD
+	  Audio Device (Media Control), and then click Next.
+	
+	7. Click Finish to install the driver.
+	
+	8. Restart Windows.
+	
+	NOTE: For more information about installing the CD Audio driver in Windows,
+	please see the following article in the Microsoft Knowledge Base:
+	
+	  Q139659 MSB Ocean: ErrMsg: CD Audio MCI Driver Not Installed
+	
+	If You Are Using Windows 3.x
+	----------------------------
+	
+	If you are using Windows 3.x, use one of the methods described below to install
+	the MCI CD Audio driver.
+	
+	Method 1
+	--------
+	
+	Install the CD Audio driver from your Windows disks.
+	
+	Method 2
+	--------
+	
+	Install the MCI CD Audio driver from the Magic School Bus Explores Inside the
+	Earth compact disc:
+	
+	1. In Program Manager, go to the Main group and click Control Panel.
+	  Double-click Drivers.
+	
+	2. Click Add.
+	
+	3. In the List Of Drivers, click Unlisted Or Updated Driver and click OK.
+	
+	4. In the dialog box where it says, "Insert the disk with the unlisted, updated,
+	  or vendor-provided driver in:", type
+	
+	  D:\Pss\Drivers
+	
+	  where D: is the drive letter for your CD ROM, and click OK.
+	
+	5. Make sure [MCI] CD Audio Driver is selected and click OK.
+	
+	  The computer should respond with:
+	
+	  Redbook CD Audio Configuration:
+	  One CDROM drive was detected. Installation was complete.
+	
+	6. Click OK.
+	
+	7. Click Close and restart Windows.
+	
+	After you follow the instructions above, you should be able to run Magic School
+	Bus Explores Inside the Earth and hear all of the background music.
+	
+	Method 3
+	--------
+	
+	The MCI CD Audio driver file may be damaged. See the following article in the
+	Microsoft Knowledge Base:
+	
+	  Q139659 MSB Ocean: ErrMsg: CD Audio MCI Driver Not Installed
+	
+	Method 4
+	--------
+	
+	Download the MCI CD Audio driver. For instructions on how to download the driver
+	from Microsoft, please see the instructions in the following article in the
+	Microsoft Knowledge Base:
+	
+	  Q148798 Windows 3.1 [MCI] CD Audio Driver Available
+	
+	MORE INFORMATION
+	================
+	
+	Immediately underneath this error message there is a check box that reads "don't
+	display this message in the future" and there is a Continue button and a Cancel
+	button. If you click Continue, the program continues to run without any
+	difficulty; however, the CD Audio portion (background music) of the program does
+	not play. If you click Cancel, the application does not run and you are returned
+	to Windows.
+	
+	Magic School Bus Explores in the Age of Dinosaurs (MSB Dinosaurs) does not
+	utilize CD Audio the same way MSB Ocean and MSB Earth do. MSB Dinosaurs uses
+	wave files for sound output. As a result, MSB Dinosaurs does not generate the
+	error message described in this article.
+	
+	Additional query words: 1.00 frizz kbmm multimedia multi-media multi media mcicda mcicda.drv start msbearth winmsbearth msbocean winmsbocean cdaudio errmsg error message dinosaurs msbdinos winmsbdinos
+	
+	======================================================================
+	Keywords          : kbenv kberrmsg kbmm kbsound kbfaq
+	Technology        : kbHomeProdSearch kbZNotKeyword kbKidsSearch kbScholasticEarth kbMSBSearch
+	Version           : WINDOWS:1.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

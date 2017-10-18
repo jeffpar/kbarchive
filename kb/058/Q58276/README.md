@@ -1,0 +1,68 @@
+---
+layout: page
+title: "Q58276: 8514-VGA: Switch to MS-DOS Prompt Gives White Screen"
+permalink: kb/058/Q58276/
+---
+
+## Q58276: 8514-VGA: Switch to MS-DOS Prompt Gives White Screen
+
+	Article: Q58276
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 05-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	If you are using an 8514 video adapter with a secondary VGA adapter on a 386
+	system (also referred to as a passthrough VGA), you may encounter problems when
+	switching between MS-DOS virtual machines (VMs) in full screen mode.
+	
+	MORE INFORMATION
+	================
+	
+	The problem can be easily identified with the following default configuration
+	(using Program Manager as your shell):
+	
+	1. Start Windows in 386 enhanced mode.
+	
+	2. In Program Manager, start an MS-DOS virtual machine (VM) by selecting MS-DOS
+	  Prompt in the Main Group and pressing the ENTER key.
+	
+	3. The MS-DOS VM starts full screen and presents you with the standard prompt.
+	
+	4. Press ALT+ESC. The MS-DOS VM is reduced to an icon, and Program Manager is
+	  now the active application.
+	
+	5. Press ALT+TAB (releasing the ALT key first). The icon for the MS-DOS Prompt
+	  is highlighted. When you releasing the ALT key, the MS-DOS VM appears in full
+	  screen mode.
+	
+	If the screen for the MS-DOS VM is all white, then the VGA card may have a
+	problem with the DAC (digital-to-analog converter). You may want to either
+	remove the VGA card from your system or contact the board manufacturer to see if
+	there is a way for you to update your VGA adapter.
+	
+	NOTE: The display is correct if you run the MS-DOS VM in a Window (ALT+ENTER). To
+	restore the display, type the following MS-DOS command at the MS-DOS command
+	prompt, and then press ENTER:
+	
+	  MODE CO80
+	
+	Additional query words: 3.00 win30 3.00a 3.10 3.11
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+	Version           : WINDOWS:3.0,3.0a,3.1,3.11
+	
+	=============================================================================
+	

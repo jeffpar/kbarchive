@@ -1,0 +1,464 @@
+---
+layout: page
+title: "Q232213: How to Use the Dhcpcmd.exe Tool Included with Support Tools"
+permalink: kb/232/Q232213/
+---
+
+## Q232213: How to Use the Dhcpcmd.exe Tool Included with Support Tools
+
+	Article: Q232213
+	Product(s): Microsoft Windows NT
+	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+	Operating System(s): 
+	Keyword(s): kbtool
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4 
+	- Microsoft Windows NT Server, Enterprise Edition versions 4.0, 4.0 SP4 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Administrators can use the Dhcpcmd.exe tool to manage a Dynamic Host
+	Configuration Protocol (DHCP) server from a command line, and is included in the
+	Windows NT 4.0 Service Pack 4 Support Tools. This article describes the syntax
+	of the Dhcpcmd.exe tool in detail.
+	
+	MORE INFORMATION
+	================
+	
+	Downloading the Support Tools
+	-----------------------------
+	
+	To download the Windows NT 4.0 Support tools, see the following Microsoft Web
+	site:
+	
+	  http://www.microsoft.com/ntserver/nts/downloads/recommended/ntkit/default.asp
+	
+	
+	Dhcpcmd.exe Syntax
+	------------------
+	
+	The syntax of the Dhcpcmd.exe tool is
+	
+	  dhcpcmd srvipaddress <command> [command parameters]
+	
+	Where <command> is one of the following commands:
+	
+	General Commands
+	----------------
+	
+	- AddReservedIp
+	- RemoveReservedIp
+	- GetVersion
+	- MibCounts
+	- ServerConfig
+	- CheckDB
+	
+	Subnet Commands
+	---------------
+	
+	- CreateSubnet
+	- DeleteSubnet
+	- SetSubnetState
+	
+	Range Commands
+	--------------
+	
+	- AddIpRange
+	- AddExcludeRange
+	- RemoveExcludeRange
+	
+	Active-Lease Commands
+	---------------------
+	
+	   - EnumClients
+	
+	Superscope Commands
+	-------------------
+	
+	- SetSuperScope
+	- DeleteSuperScope
+	- GetSuperScopeTable
+	- RemoveSubScope
+	
+	Option Commands
+	---------------
+	
+	- EnumOptions
+	- CreateOption
+	- DeleteOption
+	- SetGlobalOptionValue
+	- SetGlobalOptionValues
+	- RemoveGlobalOptionValue
+	- SetSubnetOptionValue
+	- RemoveSubnetOptionValue
+	- SetReservedOptionValue
+	- RemoveReservedOptionValue
+	
+	General Commands
+	----------------
+	
+	AddReservedIp:
+	
+	Description: Adds a reserved Transport Control Protocol/Internet Protocol
+	(TCP/IP) address to an already existing scope.
+	
+	Command syntax: "Dhcpcmd ServerIpAddress AddReservedIp ScopeAddress ReserveIp
+	HardwareString [Clientname] [ClientComment] [DHCP|Bootp|Both]" (without the
+	quotation marks)
+	
+	Example: "dhcpcmd 127.0.0.1 addreservedip 11.101.0.0 11.101.13.53 08002B30369B
+	nursvd1 dhcp" (without the quotation marks)
+	
+	RemoveReservedIp:
+	
+	Description: Removes a reserved TCP/IP address from the existing scope it belongs
+	to.
+	
+	Command syntax: "Dhcpcmd ServerIpAddress RemoveReservedIp ScopeAddress ReserveIp
+	HardwareString" (without the quotation marks)
+	
+	Example: "dhcpcmd 127.0.0.1 removereservedip 11.101.0.0 11.101.13.53
+	08002B30369B" (without the quotation marks)
+	
+	GetVersion:
+	
+	Description: Displays the DHCP server version
+	
+	Command syntax: "Dhcpcmd ServerIpAddress GetVersion" (without the quotation
+	marks)
+	
+	Example: "dhcpcmd 127.0.0.1 getversion" (without the quotation marks)
+	
+	MibCounts:
+	
+	Description: Displays DHCP server statistic information for the current DHCP
+	server.
+	
+	Command syntax: "Dhcpcmd ServerIpAddress MibCounts" (without the quotation
+	marks)
+	
+	Example: "dhcpcmd 127.0.0.1 mibcounts" (without the quotation marks)
+	
+	ServerConfig:
+	
+	Description: Displays and sets server parameters.
+	
+	Command syntax: "Dhcpcmd ServerIpAddress ServerConfig [<ConfigParameter>]
+	[<Value>]" (without the quotation marks)
+	
+	Where <ConfigParameter> is any of the DHCP server parameters, and
+	<Value> is the value you want to set that parameter to.
+	
+	NOTE: Type "dhcpcmd serveripaddress serverconfig" (without the quotation marks)
+	to display a list of the DHCP server parameters.
+	
+	Examples: "dhcpcmd 127.0.0.1 serverconfig" (without the quotation marks)
+	
+	"dhcpcmd 127.0.0.1 serverconfig backupinterval 15" (without the quotation marks)
+	
+	The first example displays DHCP server parameters, and the second example sets
+	the BackupInterval parameter to 15.
+	
+	Checkdb:
+	
+	Description: Displays the DHCP scope information database.
+	
+	Command syntax: "Dhcpcmd ServerIpAddress checkdb scope_address [Fix]" (without
+	the quotation marks)
+	
+	Example: "dhcpcmd 127.0.0.1 checkdb 11.101.0.0 fix" (without the quotation
+	marks)
+	
+	NOTE: The Fix parameter reconciles the database. If you do not use the Fix
+	parameter, only the DHCP server version and the "command successfully completed"
+	informational message are displayed.
+	
+	Subnet Commands
+	---------------
+	
+	CreateSubnet:
+	
+	Description: Creates a new subnet, and should be immediately followed by the
+	AddIpRange command. If not, your computer can be inconsistent and the server may
+	not behave as expected.
+	
+	Command syntax: "Dhcpcmd server_IP_address CreateSubnet scope_address scope_mask
+	scope_name" (without the quotation marks)
+	
+	Example: "dhcpcmd 127.0.0.1 createsubnet 10.0.0.0 255.0.0.0 mysubnet" (without
+	the quotation marks)
+	
+	DeleteSubnet:
+	
+	Description: Deletes an existing subnet.
+	
+	Command syntax: "Dhcpcmd ServerIpAddress DeleteSubnet scope_address <
+	force_flag>" (without the quotation marks)
+	
+	Where <force_flag> = dhcpfullforce or dhcpnoforce
+	
+	If you use dhcpfullforce, all clients with active leases in that scope are
+	deleted before the scope is deleted. If there are clients with active leases in
+	a scope, dhcpfullforce must be specified or deletesubnet does not work.
+	
+	Example: "dhcpcmd 127.0.0.1 deletesubnet 10.0.0.0 dhcpfullforce" (without the
+	quotation marks)
+	
+	This command deletes the subnet 10.0.0.0 and any leases that are present for this
+	subnet.
+	
+	SetSubnetState:
+	
+	Description: Enables and disables a subnet.
+	
+	Command syntax: "Dhcpcmd ServerIpAddress setsubnetstate scope_address state"
+	(without the quotation marks)
+	
+	Where state has a value of 0 if the scope is to be enabled and a value of non-0
+	if the scope is to be disabled.
+	
+	Example: "dhcpcmd 127.0.0.1 setsubnetstate 10.0.0.0 0" (without the quotation
+	marks)
+	
+	Range Commands
+	--------------
+	
+	AddIPRange:
+	
+	Description: Adds another IP range to an already existing scope.
+	
+	Command syntax: "Dhcpcmd ServerIpAddress AddIPRange ScopeAddress StartIpRange
+	EndIpRange" (without the quotation marks)
+	
+	Example: "dhcpcmd 127.0.0.1 addiprange 11.101.0.0 11.101.4.1 11.101.4.254"
+	(without the quotation marks)
+	
+	AddExcludeRange:
+	
+	Description: Adds a range of exclusion addresses to the scope.
+	
+	Command syntax: "Dhcpcmd ServerIpAddress AddExcludeRange scope_address start_excl
+	end_excl" (without the quotation marks)
+	
+	Example: "dhcpcmd 127.0.0.1 addexcluderange 10.0.0.0 10.0.0.1 10.0.0.10" (without
+	the quotation marks)
+	
+	This command excludes IP addresses between 10.0.0.1 and 10.0.0.10.
+	
+	RemoveExcludeRange:
+	
+	Description: Removes an existing exclusion range.
+	
+	Command syntax: "Dhcpcmd ServerIpAddress RemoveExcludeRange scope_address
+	start_excl end_excl" (without the quotation marks)
+	
+	Example: "dhcpcmd 127.0.0.1 removeexcluderange 10.0.0.0 10.0.0.1 10.0.0.10"
+	(without the quotation marks)
+	
+	This command removes an existing exclusion of IP addresses from 10.0.01 to
+	10.0.0.10
+	
+	Active-Lease Commands
+	---------------------
+	
+	EnumClients:
+	
+	Description: Lists the lease information in a different format.
+	
+	Command syntax: "Dhcpcmd ServerIpAddress EnumClients ScopeAddress [-v | -h]"
+	(without the quotation marks)
+	
+	Where -v displays detailed lease information and -h displays lease and hardware
+	information.
+	
+	Example: "dhcpcmd 127.0.0.1 enumclients 11.101.0.0 -h" (without the quotation
+	marks)
+	
+	Superscope Commands
+	-------------------
+	
+	SetSuperScope:
+	
+	Description: Sets the superscope that a scope belongs to, creating the superscope
+	if it does not already exist.
+	
+	Command syntax: "Dhcpcmd ServerIpAddress SetSuperScope superscope_name
+	scope_address {1/0}" (without the quotation marks)
+	
+	If the value of the last parameter is 1, the superscope is changed even if the
+	scope belongs to some another scope. If the value is 0, an error message is
+	returned if the scope belongs to another superscope.
+	
+	Example: "dhcpcmd 127.0.0.1 setsuperscope newsuperscope 10.0.0.0 1" (without the
+	quotation marks)
+	
+	DeleteSuperScope:
+	
+	Description: Deletes a superscope and optionally converts all subordinate
+	elements to a different superscope. If the target superscope does not exist, it
+	is created.
+	
+	Command syntax: "Dhcpcmd ServerIpAddress DeleteSuperScope
+	[different_superscope_name]" (without the quotation marks)
+	
+	Example: "dhcpcmd 127.0.0.1 deletesuperscope newsuperscope" (without the
+	quotation marks)
+	
+	GetSuperScopeTable:
+	
+	Description: Retrieves the full superscope information.
+	
+	Command syntax: "Dhcpcmd ServerIpAddress GetSuperScopeTable" (without the
+	quotation marks)
+	
+	Example: "dhcpcmd 127.0.0.1 getsuperscopetable" (without the quotation marks)
+	
+	RemoveSubScope:
+	
+	Description: Removes a particular scope from its current superscope.
+	
+	Command syntax: "Dhcpcmd ServerIpAddress RemoveSubScope subscope_address"
+	(without the quotation marks)
+	
+	Example: "dhcpcmd 127.0.0.1 removesubscope 10.0.0.0" (without the quotation
+	marks)
+	
+	Option Commands
+	---------------
+	
+	EnumOptions:
+	
+	Description: Lists all option information.
+	
+	Command syntax: "Dhcpcmd ServerIpAddress EnumOptions" (without the quotation
+	marks)
+	
+	Example: "dhcpcmd 127.0.0.1 enumoptions" (without the quotation marks)
+	
+	CreateOption:
+	
+	Description: Creates a new option definition.
+	
+	Command syntax: "Dhcpcmd ServerIpAddress CreateOption
+	<option_id><option_name> [default_value_type default_value]"
+	(without the quotation marks)
+	
+	Where <option_id> is a number less than or equal to 255 and
+	<value_type> is one of the following values:
+	
+	- Byte - An 8-bit unsigned integer
+	- Word - A 16-bit unsigned integer
+	- String - An ASCII text string
+	- IPAddress - A TCP/IP address in dotted-decimal w.x.y.z format
+	
+	
+	Example: "dhcpcmd 127.0.0.1 createoption 255 switchednetwkID string 0" (without
+	the quotation marks)
+	
+	
+	DeleteOption:
+	
+	Description: Deletes an existing option.
+	
+	Command syntax: "Dhcpcmd ServerIpAddress DeleteOption option_id" (without the
+	quotation marks)
+	
+	Example: "dhcpcmd 127.0.0.1 deleteoption 253" (without the quotation marks)
+	
+	SetGlobalOptionValue:
+	
+	Description: Sets a global option value.
+	
+	Command syntax: "Dhcpcmd ServerIpAddress SetGlobalOptionValue option_id
+	option_type option_value" (without the quotation marks)
+	
+	Example: "dhcpcmd 127.0.0.1 setglobaloptionvalue 255 string 111222333" (without
+	the quotation marks)
+	
+	SetGlobalOptionValues:
+	
+	Description: Sets several global option values at a time.
+	
+	Command syntax: "Dhcpcmd ServerIpAddress SetGlobalOptionValues option_id
+	option_type option_value [option_id option_type option_value] [...] " (without
+	the quotation marks)
+	
+	Example: "dhcpcmd 127.0.0.1 setglobaloptionvalues 255 string 123 254 ipaddress
+	10.10.10.254" (without the quotation marks)
+	
+	RemoveGlobalOptionValue:
+	
+	Description: Removes the global option value. Note that this is not the same as
+	removing the option itself.
+	
+	Command syntax: "Dhcpcmd ServerIpAddress RemoveGlobalOptionValue option_id"
+	(without the quotation marks)
+	
+	Example: "dhcpcmd 135.1.1.1 removeglobaloptionvalue 255" (without the quotation
+	marks)
+	
+	The value is removed but the global option also disappears from the Option
+	Configuration window and the option is put back in the unused option list. If
+	you manually move it to the active option list, this option shows a value of 0
+	in the Option Configuration window.
+	
+	SetSubnetOptionValue:
+	
+	Description: Adds an option value to a scope option.
+	
+	Syntax: "Dhcpcmd ServerIpAddress SetSubnetOptionValue subnet_address option_id
+	option_type option_value" (without the quotation marks)
+	
+	Example: "dhcpcmd 137.1.1.254 setsubnetoptionvalue 120.1.1.0 255 string 123"
+	(without the quotation marks)
+	
+	RemoveSubnetOptionValue:
+	
+	Description: Removes a subnet option.
+	
+	Command syntax: "Dhcpcmd ServerIpAddress RemoveSubnetOptionValue subnet_address
+	option_id" (without the quotation marks)
+	
+	Example: "dhcpcmd 12.1.1.1 removesubnetoptionvalue 13.1.1.0 254" (without the
+	quotation marks)
+	
+	The value is changed to 0 and the option is still shown in the Option
+	Configuration window.
+	
+	SetReservedOptionValue:
+	
+	Description: Sets the option value for a reservation.
+	
+	Command syntax: "Dhcpcmd ServerIpAddress SetReservedOptionValue reserved_subnet
+	reserved_IP_address option_id option_type option_value" (without the quotation
+	marks)
+	
+	Example: "dhcpcmd 1.2.3.4 setreservedoptionvalue 12.1.1.0 12.1.1.1 255 string
+	777" (without the quotation marks)
+	
+	RemoveReservedOptionValue:
+	
+	Description: Removes an option defined for a reservation.
+	
+	Command syntax: "Dhcpcmd ServerIpAddress RemoveReservedOptionValue
+	reserved_subnet reserved_IP_address option_id" (without the quotation marks)
+	
+	Example: "dhcpcmd 1.2.3.4 removereservedoptionvalue 12.1.1.0 12.1.1.1 255"
+	(without the quotation marks)
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbtool 
+	Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400sp4 kbWinNTSEnt400 kbWinNTS400sp4 kbWinNTS400sp3 kbWinNTS400sp2 kbWinNTS400sp1 kbWinNTS400search kbWinNTS400
+	Version           : winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

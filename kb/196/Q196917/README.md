@@ -1,0 +1,109 @@
+---
+layout: page
+title: "Q196917: Err Msg: The Wininet.dll File Is Linked to Missing Export..."
+permalink: kb/196/Q196917/
+---
+
+## Q196917: Err Msg: The Wininet.dll File Is Linked to Missing Export...
+
+	Article: Q196917
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): WINDOWS:95
+	Operating System(s): 
+	Keyword(s): kberrmsg kbinterop kbimu
+	Last Modified: 13-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Encarta 98 Encyclopedia for Windows 
+	- Microsoft Encarta Encyclopedia 99 
+	- Microsoft Encarta Reference Suite 99 
+	- the operating system: Microsoft Windows 95 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you start Microsoft Encarta Encyclopedia, you may receive the following
+	error message:
+	
+	  The Wininet.dll file is linked to missing export Shlwapi.dll.
+	
+	CAUSE
+	=====
+	
+	This behavior can occur if Microsoft Internet Explorer is not installed
+	correctly.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, follow these steps:
+	
+	NOTE: Before you follow these steps, verify that you are able to reinstall
+	Internet Explorer, either from a CD-ROM or using an executable file that you
+	downloaded from the Internet. Note that Internet Explorer is not provided with
+	Encarta Encyclopedia Standard Edition.
+	
+	IMPORTANT: Do not use this method on a computer running Microsoft Windows 98 or
+	later.
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click Add/Remove Programs.
+	
+	3. On the Install/Uninstall tab, click Microsoft Encarta 98 Encyclopedia or
+	  Encarta Encyclopedia 99, and then click Add/Remove.
+	
+	4. Follow the instructions on the screen to remove the program. If you are
+	  prompted to restart the computer, do so.
+	
+	5. Restart the computer. When you see the "Starting Windows 95" message, press
+	  the F8 key, and then choose Safe Mode Command Prompt Only from the Startup
+	  menu.
+	
+	6. At the command prompt, type each of the following commands, and then press
+	  ENTER after you type each command.
+	
+	  NOTE: When you press ENTER after you type each of the following deltree
+	  commands, you should be prompted to confirm that you want to delete the
+	  folder. If this prompt is not displayed, you may have typed the deltree
+	  command incorrectly.
+	
+	  cd\windows
+	  smartdrv
+	  deltree tempor~1
+	  deltree history
+	  cd system
+	  ren actxprxy.dll actxprxy.old
+	  ren cachevu.dll cachevu.old
+	  ren inetcfg.dll inetcfg.old
+	  ren inetcpl.cpl inetcpl.old
+	  ren mshtml.dll mshtml.old
+	  ren shdocvw.dll shdocvw.old
+	  ren shlwapi.dll shlwapi.old
+	  ren url.dll url.old
+	  ren urlmon.dll urlmon.old
+	  ren wininet.dll wininet.old
+	  ren wsock32n.dll wsock32n.old
+	
+	7. Press CTRL+ALT+DELETE to restart the computer and start Microsoft Windows
+	  normally.
+	
+	  NOTE: To restore Web browser functionality, you must reinstall Internet
+	  Explorer or another Web browser.
+	
+	8. Reinstall Encarta Encyclopedia.
+	
+	
+	Additional query words: multi multi-media media mm enc98 enc99 msie
+	
+	======================================================================
+	Keywords          : kberrmsg kbinterop kbimu 
+	Technology        : kbOSWin95 kbOSWinSearch kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1999 kbEncartaEnCyc1998 kbEncartaReference99
+	Version           : WINDOWS:95
+	Issue type        : kbprb
+	
+	=============================================================================
+	

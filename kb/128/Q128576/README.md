@@ -1,0 +1,84 @@
+---
+layout: page
+title: "Q128576: PC WSPlus: Schedule+ Access Library Error Codes"
+permalink: kb/128/Q128576/
+---
+
+## Q128576: PC WSPlus: Schedule+ Access Library Error Codes
+
+	Article: Q128576
+	Product(s): Microsoft Schedule+ for Windows
+	Version(s): WINDOWS:1.0,1.0a
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 12-SEP-1999
+	
+	1.00 1.00a
+	WINDOWS
+	kbref
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Schedule+ for Windows, versions 1.0, 1.0a 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	While an application written using the Schedule+ API is running, it may return a
+	numeric error code such as:
+	
+	  Application failed with Error #xxxxx
+	
+	The following are the Schedule+ API result codes, and the errors they can return.
+	This information is taken from the SPLUS.DLL file included with the Schedule+
+	Access Libraries:
+	
+	Error                                 Number
+	
+	SPLUS_E_INVALID_SENT_FOR            = 10000
+	SPLUS_E_NOT_INSTALLED               = 10005
+	SPLUS_E_NO_ITEMS                    = 10010
+	SPLUS_E_NO_SCHEDULE                 = 10015
+	SPLUS_E_NO_PRIVILEGE                = 10020
+	SPLUS_E_INVALID_ADDRESS_FORMAT      = 10025
+	SPLUS_E_INVALID_USER                = 10030
+	SPLUS_E_INVALID_ITEM                = 10035
+	SPLUS_E_INVALID_TYPE                = 10040
+	SPLUS_E_INVALID_FLAGS               = 10045
+	SPLUS_E_INVALID_ASSOC               = 10050
+	SPLUS_E_INVALID_ORGANIZER           = 10055
+	SPLUS_E_INVALID_ORGANIZER_ID        = 10060
+	SPLUS_E_INVALID_ATTENDEES           = 10065
+	SPLUS_E_INVALID_TIME                = 10070
+	SPLUS_E_INVALID_PRIORITY            = 10075
+	SPLUS_E_INVALID_MONTH               = 10080
+	SPLUS_E_INVALID_RESTRICTION         = 10085
+	SPLUS_E_ALARM_RING_IN_PAST          = 10090
+	SPLUS_E_NOT_ONLINE                  = 10095
+	SUCCESS_NO_SCHEDULE                 = 10100
+	
+	MORE INFORMATION
+	================
+	
+	If the returned error code is other than the ones listed above, then the error
+	number is a reference to the MAPI error result code. These can be found in the
+	MAPI.H file, or see the following MAPI error codes article in the Microsoft
+	Knowledge Base:
+	
+	  Q119647 PC MAPI: List of MAPI Error Codes
+	
+	For additional information, consult the documentation that comes with the
+	Schedule+ Libraries, and the specific function call being made that is returning
+	the error.
+	
+	Additional query words: schedule plus 1.00 1.00a SAPI
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbScheduleSearch kbSchedule100 kbSchedule100a
+	Version           : WINDOWS:1.0,1.0a
+	
+	=============================================================================
+	

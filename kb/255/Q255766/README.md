@@ -1,0 +1,102 @@
+---
+layout: page
+title: "Q255766: XADM: MSExchangeMTA Stops Unexpectedly with &quot;Access Violation&quot;"
+permalink: kb/255/Q255766/
+---
+
+## Q255766: XADM: MSExchangeMTA Stops Unexpectedly with &quot;Access Violation&quot;
+
+	Article: Q255766
+	Product(s): Microsoft Exchange
+	Version(s): winnt:5.5
+	Operating System(s): 
+	Keyword(s): kbenv kberrmsg kbExchange550preSP4fix kbExchange550sp4Fix
+	Last Modified: 10-NOV-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.5 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	The MSExchangeMTA service may stop unexpectedly with an "access violation" error
+	message and cannot be restarted. When you manually start the service, it stops
+	responding with the following call stack in the dump file:
+	
+	FramePtr  RetAddr   Param1   Param2   Param3   Function Name
+	010cf0f4  00410e6f  010cf11c 00000000 00000000 EMSMTA!odpinaat+0x6b
+	010cf134  0040b5fd  012cfd70 00000000 00000001 EMSMTA!odpbcfra+0x9a
+	010cf168  0048d959  010cf270 00000001 00000000 EMSMTA!odplfarb+0x12c
+	010cf268  0048d406  00270001 010cf288 010cfa67 EMSMTA!odpgique+0x157({...})
+	010cfa70  0048c5f7  00676639 010cfee5 00000004 EMSMTA!odpgimai+0xc50
+	010cfc30  0048ba7d  010cff14 00688dda 00000000 EMSMTA!odpinday+0x2cf
+	010cff2c  00482cd9  77f0178b 77f1c661 00134ea8 EMSMTA!odpgmtin+0xb0c
+	010cff94  0048225a  77f9d850 00134ea8 0000017c EMSMTA!sbpwinit+0xa77
+	010cffa8  77dd8bec  00000001 00134eb0 ffffffff EMSMTA!sbpisvep+0xcf
+	
+	In addition, MTACHECK does not recover the issue when it occurs. Mtacheck.exe
+	stops with the following call stack in the dump file:
+	
+	FramePtr  RetAddr   Param1   Param2   Param3   Function Name
+	0012e72c  77f8e2f6  77f7e952 0124f5e8 0012e778 NTDLL!DbgBreakPoint
+	0012e730  77f7e952  0124f5e8 0012e778 0124f5e8 NTDLL!RtlpBreakPointHeap+0x24
+	0012e748  77f8d873  0124f5e8 0012e7b8 00d40000 NTDLL!RtlpCheckBusyBlockTail+0x76
+	0012e778  77f8e13c  00d40000 010f0000 12e80c03 NTDLL!RtlpValidateHeapSegment+0xd6
+	0012e7cc  77f8321b  00d40000 00000001 00000000 NTDLL!RtlpValidateHeap+0x35b
+	0012e80c  77f12e09  00d40000 40000064 00000000 NTDLL!RtlValidateHeap+0xad
+	0012e820  6fff12e5  00d40000 00000064 00000000 KERNEL32!HeapValidate+0x13
+	0012e830  00402995  00d40000 00000064 00000000 EXCHMEM!ExchHeapValidate+0x15 [ exchmem.c @ 283 ]
+	0012f060  0044a08a  00000000 00001000 7ffdf000 MTACHECK!HeapCheckValid+0x215 [ clib.c @ 1993 ]
+	0012f3cc  0044b035  78037c68 00000000 00001000 MTACHECK!sbpiwdmp+0x49a [ sbnilnt.c @ 1048 ]
+	0012f3e0  00401c57  00000000 0012f3f8 0041cd56 MTACHECK!sbpiwter+0x45 [ sbnilnt.c @ 2626 ]
+	0012f3ec  0041cd56  000004f5 0012f428 00427108 MTACHECK!t_newerr+0x17 [ clib.c @ 768 ]
+	0012f3f8  00427108  0012f424 00000001 00000001 MTACHECK!obpinoda+0x46 [ obnind.c @ 94 ]
+	0012f428  0043ac24  0012f458 00000002 0012f45c MTACHECK!odpbcgfa+0x1f8 [ odnb2.c @ 1066 ]
+	0012f474  00439f46  00270001 0012f760 0012f4e4 MTACHECK!odpgique+0x2d4({...}) [ odngi.c @ 1579 ]
+	0012fcd4  00446179  00004244 00000000 00000000 MTACHECK!odpgimai+0x8d6 [ odngi.c @ 835 ]
+	0012fecc  0041235f  00000000 00120035 4f464e49 MTACHECK!odpgmtin+0xc39 [ odnx.c @ 5482 ]
+	0012ff44  00414028  00000000 00000000 7ffdf000 MTACHECK!sbpwinit+0x70f [ sbnw.c @ 3754 ]
+	0012ff70  0044b55f  00000001 004c07f0 004c01a0 MTACHECK!main+0x118(...) [ sbnw.c @ 6298 ]
+	0012ffc0  77f1ba06  00000000 00000000 7ffdf000 MTACHECK!mainCRTStartup+0xff(...) [ crtexe.c @ 338 ]
+	
+	CAUSE
+	=====
+	
+	This behavior occurs because the working queue object (usually 00000027) is
+	damaged. When the recovery procedure attempts to recover the object, the object
+	is wrongly regarded as a damaged message. This occurs because the property array
+	of a queue object is different than that of a message object. The later
+	reference to the property array causes the "access violation" error message.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, obtain the latest service pack for Exchange Server 5.5.
+	For additional information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q191014 XGEN: How to Obtain the latest Exchange Server 5.5 Service Pack
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+	version 5.5. This problem was first corrected in Exchange Server 5.5 Service
+	Pack 4.
+	
+	Additional query words: corrupt corrupted fail fails failed crash
+	
+	======================================================================
+	Keywords          : kbenv kberrmsg kbExchange550preSP4fix kbExchange550sp4Fix 
+	Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+	Version           : winnt:5.5
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

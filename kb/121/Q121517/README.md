@@ -1,0 +1,279 @@
+---
+layout: page
+title: "Q121517: How to Recover From a Corrupt NTFS Boot Sector"
+permalink: kb/121/Q121517/
+---
+
+## Q121517: How to Recover From a Corrupt NTFS Boot Sector
+
+	Article: Q121517
+	Product(s): Microsoft Windows NT
+	Version(s): 3.1,3.5,3.51,4.0
+	Operating System(s): 
+	Keyword(s): kbnetworkkbfaq
+	Last Modified: 12-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server versions 3.1, 3.5, 3.51, 4.0 
+	- Microsoft Windows NT Workstation versions 3.1, 3.5, 3.51, 4.0 
+	- Microsoft Windows NT Advanced Server 
+	-------------------------------------------------------------------------------
+	
+	
+	SUMMARY
+	=======
+	
+	When a Windows NT system with a Windows NT File System (NTFS) partition has a
+	corrupt boot sector, you may never get the Windows NT boot menu selections, or
+	the following error message may appear at the boot loader screen:
+	
+	  Windows NT could not start because the following file is missing or corrupt
+	  <%SYSTEMROOT%>\SYSTEM32\NTOSKRNL.EXE
+	
+	  If you start the emergency repair process, the following message appears
+	  before the emergency repair disk restores any data:
+	
+	  Setup has determined that your file system is corrupt
+	
+	Booting with an MS-DOS system disk and using the command fdisk /MBR does not
+	resolve the problem. The purpose of this article is to describe a method of
+	recovering from a corrupt NTFS boot sector. Before proceeding with this method,
+	make sure that you have the hard disk information backed up.
+	
+	Additionally, if any NTFS partition is showing as UNKNOWN in Disk Administrator
+	and the volume is NOT part of any FT Fault Tolerant sets, this, too, can be
+	caused by a corrupted NTFS boot sector. Following the procedure described below
+	should allow you to run a CHKDSK against the volume and recover the data.
+	
+	MORE INFORMATION
+	================
+	
+	The Windows NT version 3.xx file system keeps a duplicate copy of the NTFS boot
+	sector at the logical center of the volume, whereas Windows NT version 4.0 keeps
+	a duplicate copy at the end of the partition. The Norton Utilities DiskEdit
+	program can help find the duplicate boot sector and restore it over the original
+	boot sector. You may be able to recover one NTFS partition for each hard disk or
+	multiple NTFS and FAT-combination partitions for each hard disk.
+	
+	If the partitions on the disk were created with Windows NT 4.0 and you can
+	successfully boot into Windows NT V4.0 but have UNKNOWN partitions, please see
+	the following Microsoft Knowledge Base article:
+	
+	  Q153973 Recovering NTFS Boot Sector on NTFS Partitions
+	
+	NOTE: This article assumes you have knowledge of Primary and Extended
+	partitions.
+	
+	The following procedure describes the process of recovering one NTFS partition on
+	a 1 gigabyte (GB) hard disk:
+	
+	1. From an MS-DOS boot disk, run Norton Utilities (Diskedit.exe).
+	
+	2. On the Tools menu, select Configuration.
+	
+	3. Clear the read-only check box, and then click OK.
+	
+	4. From the Object menu, select Drive, select the Physical disk option, select
+	  the Hard disk in question, and then click OK.
+	
+	  Norton Utilities DiskEdit should read the hard disk you selected and display
+	  Data from Cyl 0, Side 0, Sector 1.
+	
+	5. On the View menu, select As Partition Table, and note the starting and ending
+	  cylinder, sector, and side information for the corrupt partition. If the
+	  corrupt NTFS partition is contained on a logical drive in an Extended
+	  partition, you will need to walk the partition table to get to the logical
+	  drive in question.
+	
+	6. On the Object menu, select Physical sector.
+	
+	7. Input the starting cylinder, side, and sector, select the maximum amount of
+	  sectors, and then click OK. You will be at the beginning of the corrupt
+	  partition.
+	
+	8. The Primary NTFS boot sector will be found one side up. For example, if you
+	  are looking at Cyl 0, Side 0, Sector 1, go to Cyl 0, Side 1, Sector 1. You
+	  should see something similar to the following on a good NTFS partition:
+	
+	  00000000: EB 5B 00 4E 54 46 53 20 - 20 20 20 00 02 01 00 00
+	  .[.NTFS.........
+	
+	  00000010: 00 00 00 00 00 F8 00 00 - 3E 00 0E 00 3E 00 00 00
+	  ........>...>...
+	
+	  00000020: 00 00 00 00 80 00 80 00 - D6 57 0A 00 00 00 00 00
+	  .........W......
+	
+	  00000030: 1D 10 00 00 00 00 00 00 - EC 2B 05 00 00 00 00 00
+	  .........+......
+	
+	  00000040: 02 00 00 00 04 00 00 00 - FD 1E 6F 0C 65 6F 0C 76
+	  ..........o.eo.v
+	
+	  00000050: 00 00 00 00 00 00 00 00 - 00 00 00 00 00 FA 33 C0
+	  ..............3.
+	
+	  00000060: 8E D0 BC 00 7C FB B8 C0 - 07 8E D8 C7 06 54 00 00
+	  ....|........T..
+	
+	  00000070: 00 C7 06 56 00 00 00 C7 - 06 5B 00 10 00 B8 00 0D
+	  ...V.....[......
+	
+	  00000080: 8E C0 2B DB E8 07 00 68 - 00 0D 68 56 02 CB 50 53
+	  ..+....h..hV..PS
+	
+	  00000090: 51 52 06 66 A1 54 00 66 - 03 06 1C 00 66 33 D2 66
+	  QR.f.T.f....f3.f
+	
+	  000000A0: 0F B7 0E 18 00 66 F7 F1 - FE C2 88 16 5A 00 66 8B
+	  .....f......Z.f.
+	
+	  000000B0: D0 66 C1 EA 10 F7 36 1A - 00 88 16 25 00 A3 58 00
+	  .f....6....%..X.
+	
+	  000000C0: A1 18 00 2A 06 5A 00 40 - 3B 06 5B 00 76 03 A1 5B
+	  ...*.Z.@;.[.v..[
+	
+	  000000D0: 00 50 B4 02 8B 16 58 00 - B1 06 D2 E6 0A 36 5A 00
+	  .P....X......6Z.
+	
+	  000000E0: 8B CA 86 E9 8A 36 25 00 - B2 80 CD 13 58 72 25 01
+	  .....6%.....Xr%.
+	
+	  000000F0: 06 54 00 83 16 56 00 00 - 29 06 5B 00 76 0B C1 E0
+	  .T...V..).[.v...
+	
+	  00000100: 05 8C C2 03 D0 8E C2 EB - 8A 07 5A 59 5B 58 C3 BE
+	  ..........ZY[X..
+	
+	  00000110: 54 01 EB 03 BE 34 01 E8 - 09 00 BE A8 01 E8 03 00
+	  T....4..........
+	
+	  00000120: FB EB FE AC 3C 00 74 09 - B4 0E BB 07 00 CD 10 EB
+	  ....<.t.........
+	
+	  00000130: F2 C3 1D 00 41 20 64 69 - 73 6B 20 72 65 61 64 20
+	  ....A disk read
+	
+	  00000140: 65 72 72 6F 72 20 6F 63 - 63 75 72 72 65 64 2E 0D
+	  error occurred..
+	
+	  00000150: 0A 00 29 00 41 20 6B 65 - 72 6E 65 6C 20 66 69 6C
+	  ..).A kernel fil
+	
+	  00000160: 65 20 69 73 20 6D 69 73 - 73 69 6E 67 20 66 72 6F
+	  e is missing fro
+	
+	  00000170: 6D 20 74 68 65 20 64 69 - 73 6B 2E 0D 0A 00 25 00
+	  m the disk....%.
+	
+	  00000180: 41 20 6B 65 72 6E 65 6C - 20 66 69 6C 65 20 69 73
+	  A kernel file is
+	
+	  00000190: 20 74 6F 6F 20 64 69 73 - 63 6F 6E 74 69 67 75 6F
+	  too discontiguo
+	
+	  000001A0: 75 73 2E 0D 0A 00 33 00 - 49 6E 73 65 72 74 20 61
+	  us....3.Insert a
+	
+	  000001B0: 20 73 79 73 74 65 6D 20 - 64 69 73 6B 65 74 74 65
+	  system diskette
+	
+	  000001C0: 20 61 6E 64 20 72 65 73 - 74 61 72 74 0D 0A 74 68
+	  and restart..th
+	
+	  000001D0: 65 20 73 79 73 74 65 6D - 2E 0D 0A 00 00 00 00 00
+	  e system.......
+	
+	  000001E0: 00 00 00 00 00 00 00 00 - 00 00 00 00 00 00 00 00
+	  ................
+	
+	  000001F0: 00 00 00 00 00 00 00 00 - 00 00 00 00 00 00 55 AA
+	  ..............U.
+	
+	  This is a valid NTFS boot sector. The offset (the first column on the left) is
+	  00000000. When you have found the original NTFS boot sector, note the
+	  location (Cyl ___, Side___, Sect___). Then, you must look for the backup NTFS
+	  boot sector.
+	
+	  NOTE: Below are two separate sections on locating the backup copy of the NTFS
+	  boot sector. Follow Section 1 if the partition was created under Windows NT
+	  version 3.xx or Section 2 if the partition was created under Windows NT
+	  version 4.0.
+	
+	Section 1: To Locate the Backup Copy for a Partition Created by Windows NT version 3.xx:
+	
+	  a. Divide the total number of cylinders for the partition by two. In the
+	     example above, the total number of cylinders is 1014. Therefore, the
+	     target would be cylinder 507. It is recommended that you subtract five
+	     cylinders from that number because NTFS puts it at the logical center.
+	
+	  b. On the Object menu, select Physical sector.
+	
+	  c. Input your cylinder number (502 for this example), side 0, sector 1,
+	     maximum number of sectors, and then click OK. You will be at that
+	     location.
+	
+	  d. On the Tools menu, select Find.
+	
+	  e. Input the hex string 4E 54 46 53 20, and then start a search for that
+	     string. When you find one, note the Cyl, Side, and Sector numbers. Make
+	     sure it is at the beginning of that sector. If it is not, continue the
+	     search until you find the string that is at the beginning. After you find
+	     the string at the beginning of the sector (and it looks similar to the
+	     original boot sector), you are ready to copy the sector.
+	
+	     NOTE: It may be necessary to select As Hex from the View menu after
+	     selecting the search string if the data displayed does not appear to be in
+	     the same format.
+	
+	  f. On the Object menu, select Physical sector.
+	
+	  g. Input the Cyl, Side, and Sector information for the backup boot sector.
+	     This time, select ONLY ONE sector (this is very important), and then click
+	     OK. You will be back at the backup boot sector. If you page down, you
+	     should only see that sector. If you are able to see more sectors after
+	     that, stop and reselect the Physical sector as one sector.
+	
+	Go to Step 9 below and continue to the end.
+	
+	Section 2: To Locate the Backup Copy for a Partition Created by Windows NT version 4.0:
+	
+	  a. Using the partition table information found is step 2 above, note the
+	     ending cylinder, sector, and side information for the corrupt partition.
+	
+	  b. Select Physical sector from the Object menu. Input the ending cylinder,
+	     side, and sector, and select only one sector to read (this is very
+	     important). When you click OK, you will be at the backup NTFS boot sector.
+	     If you page down, you should only see that sector. If you are able to see
+	     more sectors after that, stop and reselect the Physical sector as one
+	     sector.
+	
+	Go to Step 9 and continue to the end.
+	
+	9. Select Mark from the Edit menu and use the arrow keys to select the whole
+	  sector.
+	
+	10. Select Write To from the Tools menu and input the location of the original
+	  boot sector (as noted in Step 4 above). When you click OK, it will ask if
+	  you are sure. Click OK again and it will write the backup sector to the
+	  original boot sector.
+	
+	11. Quit the Norton Utilities DiskEdit program, and then restart the computer.
+	
+	If your original boot sector was indeed corrupt, your computer should start now,
+	or if it was showing as UNKNOWN in disk administrator, you should be able to run
+	chkdsk /F against the partition to make it accessible once again.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbnetwork kbfaq
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTW310 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS310 kbWinNTAdvSerSearch kbWinNTS351search kbWinNTS350search kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+	Version           : :3.1,3.5,3.51,4.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

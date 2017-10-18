@@ -1,0 +1,228 @@
+---
+layout: page
+title: "Q128038: Using Novell's ODINSUP with Network Client 3.0 TCP/IP"
+permalink: kb/128/Q128038/
+---
+
+## Q128038: Using Novell's ODINSUP with Network Client 3.0 TCP/IP
+
+	Article: Q128038
+	Product(s): Microsoft Windows NT
+	Version(s): 3.0 3.5 4.0
+	Operating System(s): 
+	Keyword(s): kb3rdparty kbnetwork
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server versions 3.5, 4.0 
+	- Microsoft Network Client for MS-DOS version 3.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article provides instructions on how to install the Novell ODINSUP
+	(ODI/NDIS) driver to work with the TCP/IP protocol included with Microsoft
+	Network Client for MS-DOS, version 3.0. This article discusses the following
+	using the Intel EtherExpress 16 TP network card as an example:
+	
+	- Network Client and ODINSUP Setup Instructions
+	
+	- Sample PROTOCOL.INI
+	
+	- Sample SYSTEM.INI
+	
+	- Sample CONFIG.SYS
+	
+	- Sample AUTOEXEC.BAT
+	
+	- Sample NET.CFG
+	
+	For additional information regarding the Novell ODINSUP.COM driver, contact
+	Novell Technical Support at (800) 638-9273. ODINSUP.COM and other Netware
+	drivers are available on CompuServe (Go NOVLIB/NOVFILES) or on Novell's FTP
+	server.
+	
+	Network Client And ODINSUP Setup Instructions
+	---------------------------------------------
+	
+	Because this configuration requires the Novell IPXODI driver, make sure you can
+	connect to a NetWare server using the IPXODI driver and NETX.EXE or VLM.
+	
+	1. From the CLIENTS\MSCLIENT\DISKS subdirectory of the Windows NT Server version
+	  3.5 CD, copy the contents of DISK1 and DISK2 to blank floppy disks. Label the
+	  disks Disk 1 and Disk 2.
+	
+	2. Run SETUP from Disk 1 to install Microsoft Network Client.
+	
+	3. Specify the location of the Network Client installation and press ENTER.
+	
+	4. For the adapter driver, select the ODI/NDIS support driver.
+	
+	
+	1. Enter the user name. In the next screen, verify or change the computer name,
+	  workgroup name, and domain name.
+	
+	2. Change the setup options if necessary. This screen enables you to change your
+	  redirector, startup, logon and network pop-up options.
+	
+	3. Select Change Network Configuration. You should see the ODI/NDIS Support
+	  Driver as your adapter name. Remove the default protocol by selecting NWLink
+	  and then choosing Remove.
+	
+	4. When Setup prompts you to select a protocol, select Microsoft TCP/IP. This
+	  returns you to the Network Configuration screen. The upper box should now
+	  show the ODI/NDIS Support Driver and Microsoft TCP/IP.
+	
+	5. Highlight Microsoft TCP/IP and select Change Settings. If you are using
+	  Dynamic Host Configuration Protocol (DHCP), set Disable Automatic
+	  Configuration to 0 (zero). If not, it should equal to 1. If you are not using
+	  DHCP, you need to add your IP address, subnet mask and default gateway
+	  information. Make sure that the IP addresses use a space and not a period to
+	  separate segments for any IP addresses.
+	
+	  NOTE: If you use DHCP, you can leave your IP address at 0 0 0 0 and the other
+	  fields blank.
+	
+	6. After the configuration for Network Client is complete, insert the disk with
+	  Novell's ODINSUP.COM (when requested).
+	
+	  Setup continues to copy files from Disk 1 and may prompt you for Disk 2.
+	
+	7. When Setup finishes, restart your computer. You should then be able to login
+	  to your Netware server and then logon to Microsoft Network resources.
+	
+	Sample PROTOCOL.INI
+	-------------------
+	
+	[network.setup]
+	version=0x3110
+	netcard=odinsupmac,1,ODINSUPMAC,1
+	transport=tcpip,TCPIP
+	lana0=odinsupmac,1,tcpip
+	
+	[TCPIP]                 (Setup to use DHCP)
+	frame=Ethernet_SNAP
+	NBSessions=6
+	SubNetMask0=0 0 0 0
+	IPAddress0=0 0 0 0
+	DisableDHCP=0
+	DriverName=TCPIP$
+	BINDINGS=exp16odi       (Protocol should bind to the ODI MLID)
+	LANABASE=0
+	
+	[MS$EWTRBTP]
+	RamAddress=0xD000
+	IOAddress=0x300
+	Interrupt=5
+	
+	[protman]
+	DriverName=PROTMAN$
+	PRIORITY=MS$NDISHLP
+	
+	[ODINSUPMAC]
+	
+	[Link Driver]
+	data=FRAME Ethernet_802.3
+	data=FRAME Ethernet_802.2
+	data=FRAME Ethernet_II
+	data=FRAME Ethernet_SNAP
+	
+	Sample SYSTEM.INI
+	-----------------
+	
+	[network]
+	filesharing=no
+	printsharing=no
+	autologon=yes
+	computername=<computer name>
+	lanroot=C:\NET
+	username=<user name>
+	workgroup=<workgroup name>
+	reconnect=yes
+	dospophotkey=N
+	lmlogon=0
+	logondomain=<domain name>
+	preferredredir=full
+	autostart=full
+	maxconnections=8
+	maxnwsess=8
+	
+	[network drivers]
+	transport=tcpdrv.dos,nemm.dos
+	devdir=C:\NET
+	LoadRMDrivers=yes
+	
+	[386enh]
+	TimerCriticalSection=5000
+	UniqueDosPSP=TRUE
+	PSPIncrement=2
+	
+	[Password Lists]
+	*Shares=C:\NET\Shares.PWL
+	<user name>=C:\NET\<user name>.PWL
+	
+	Sample CONFIG.SYS
+	-----------------
+	
+	DEVICE=C:\DOS\HIMEM.SYS
+	DEVICE=C:\DOS\EMM386.EXE NoEMS x=d000-d3ff
+	dos=high,umb
+	Files=30
+	LASTDRIVE=e
+	BUFFERS=10,0
+	SHELL=C:\DOS\COMMAND.COM C:\DOS\ /e:512 /p
+	DEVICE=C:\NET\ifshlp.sys
+	STACKS=9,256              (if using Windows)
+	
+	Sample AUTOEXEC.BAT
+	-------------------
+	
+	PATH C:\NET;C:\WINDOWS;C:\DOS;C:\ 
+	SET TEMP=C:\WINDOWS\TEMP
+	C:\NET\net initialize
+	c:\NOVELL\lsl.com
+	c:\NOVELL\exp16odi        (This is the ODI MAC driver)
+	C:\NET\odinsup
+	C:\NET\netbind.com
+	C:\NET\umb.com
+	C:\NET\tcptsr.exe
+	C:\NET\tinyrfc.exe
+	C:\NET\nmtsr.exe
+	C:\NET\emsbfr.exe
+	C:\NET\net start
+	c:\NOVELL\ipxodi
+	c:\NOVELL\netx            (or vlm)
+	
+	Sample NET.CFG
+	--------------
+	
+	Preferred server=<NetWare server>
+	SHOWDOTS=ON
+	PB BUFFERS 7
+	Link support
+	max boards 4
+	max stacks 8
+	Link Driver exp16odi
+	
+	     int 5
+	     port 300
+	     frame Ethernet_802.3
+	     frame Ethernet_802.2
+	     frame Ethernet_II
+	     frame Ethernet_SNAP
+	
+	The ODINSUP.COM and NetWare products discussed here are manufactured by Novell,
+	Inc., a vendor independent of Microsoft; we make no warranty, implied or
+	otherwise, regarding these products' performance or reliability.
+	
+	Additional query words: prodnt
+	======================================================================
+	Keywords          : kb3rdparty kbnetwork 
+	Technology        : kbWinNTsearch kbWinNT350search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS350 kbWinNTS350search kbAudDeveloper kbZNotKeyword kbNetworkClientSearch kbNetworkClient300DOS
+	Version           : 3.0 3.5 4.0
+	
+	=============================================================================
+	

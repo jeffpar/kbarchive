@@ -1,0 +1,105 @@
+---
+layout: page
+title: "Q194362: Encarta 99: No Sound in Home Screen, Animations, Interactivities"
+permalink: kb/194/Q194362/
+---
+
+## Q194362: Encarta 99: No Sound in Home Screen, Animations, Interactivities
+
+	Article: Q194362
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): WINDOWS:
+	Operating System(s): 
+	Keyword(s): kb3rdparty kbsetup kbsound kbimukbfaq
+	Last Modified: 06-MAY-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Encarta Encyclopedia 99 
+	- Microsoft Encarta Reference Suite 99 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you run Encarta Encyclopedia 99, you may not hear any sounds on the Encarta
+	Home Screen, or when you play animations or interactivities.
+	
+	CAUSE
+	=====
+	
+	This behavior can occur if you install a program that uses Macromedia Shockwave
+	Director 6.0 after you install Encarta 99.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, use one of the following methods.
+	
+	Reinstall Macromedia Director 6.0.1 from the Installation CD-ROM
+	----------------------------------------------------------------
+	
+	To reinstall Macromedia Director 6.0.1 from the installation CD-ROM, follow these
+	steps:
+	
+	1. Insert the Encarta Encyclopedia Deluxe 99 or Encarta Reference Suite 99
+	  Installation and Resources CD-ROM into your CD-ROM drive. Press and hold down
+	  the SHIFT key when you insert the CD-ROM to prevent Encarta 99 from starting
+	  automatically.
+	
+	2. Click Start, and then click Run.
+	
+	3. In the Open box, type the following line, and then click OK:
+	
+	  <drive>:\support\shkwave\Sw61inst.exe
+	
+	  where <drive> is the drive letter of the CD-ROM drive.
+	
+	Remove and Reinstall Encarta Encyclopedia 99
+	--------------------------------------------
+	
+	To remove and reinstall Encarta Encyclopedia 99, follow these steps:
+	
+	1. Insert the Encarta Encyclopedia Deluxe 99 or Encarta Reference Suite 99
+	  Installation and Resources CD-ROM into your CD-ROM drive. Press and hold down
+	  the SHIFT key when you insert the CD-ROM to prevent Encarta 99 from starting
+	  automatically.
+	
+	2. Click Start, point to Settings, and then click Control Panel.
+	
+	3. Double-click Add/Remove Programs.
+	
+	4. Click Encarta Encyclopedia Deluxe 99, and then click Add/Remove.
+	
+	5. Follow the instructions on the screen to remove Encarta Encyclopedia 99.
+	
+	6. Click Start, and then click Run.
+	
+	7. In the Open box, type the following line, and then click OK:
+	
+	  <drive>:\setup.exe
+	
+	  where <drive> is the drive letter of the CD-ROM drive.
+	
+	8. Follow the instructions on the screen to reinstall Encarta Encyclopedia 99.
+	
+	MORE INFORMATION
+	================
+	
+	Encarta 99 Setup installs Macromedia Shockwave Director 6.0.1, and Encarta 98
+	Setup installs Macromedia Shockwave Director 6.0. If you install Encarta 98
+	after you install Encarta 99, the Macromedia Shockwave Director 6.0 installation
+	program in Encarta 98 Setup overwrites some of the Macromedia Shockwave Director
+	6.0.1 files installed by Encarta 99 Setup.
+	
+	Additional query words: multi multi-media media mm
+	
+	======================================================================
+	Keywords          : kb3rdparty kbsetup kbsound kbimu kbfaq
+	Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1999 kbEncartaReference99
+	Version           : WINDOWS:
+	Issue type        : kbprb
+	
+	=============================================================================
+	

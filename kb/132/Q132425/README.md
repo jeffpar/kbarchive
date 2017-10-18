@@ -1,0 +1,85 @@
+---
+layout: page
+title: "Q132425: Extra Page Printed with Each Print Job"
+permalink: kb/132/Q132425/
+---
+
+## Q132425: Extra Page Printed with Each Print Job
+
+	Article: Q132425
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): Win2000:95
+	Operating System(s): 
+	Keyword(s): win95
+	Last Modified: 17-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 95 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	When you print to a Hewlett-Packard (HP) printer (or a printer that emulates an
+	HP printer) that is connected to a computer using a PS/2-style parallel port,
+	you may receive an extra page before each print job. The extra page contains PJL
+	codes or a single character in the upper left corner of the page. The output on
+	this page depends on whether you have enabled bi-directional communications.
+	
+	NOTE: This problem does not occur with the Generic/Text Only printer driver.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, use either of the following methods:
+	
+	- Configure the port in your computer's CMOS settings to a non-PS/2 mode (for
+	  example, use standard LPT mode, or ECP or EPP mode).
+	
+	  NOTE: This option is not supported on all computers.
+	
+	- There is an updated Lpt.vxd file on the Windows 95 CD-ROM that corrects this
+	  problem. To install the updated file, follow these steps:
+	
+	  1. Use Windows Explorer to rename the Lpt.vxd file in the Windows\System
+	     folder to Lpt.old.
+	
+	  2. Copy the Lpt.vxd file from the Drivers\Printer\LPT folder on the Windows
+	     95 CD-ROM to the Windows\System folder on the hard disk.
+	
+	  3. Restart Windows 95.
+	
+	  NOTE: If you do not have the CD-ROM version of Windows 95, you can obtain the
+	  alternate Lpt.vxd file from Microsoft Windows 95 Service Pack 1. For
+	  information about obtaining Microsoft Windows 95 Service Pack 1, please see
+	  the following article in the Microsoft Knowledge Base:
+	
+	  Q142794 Availability of Microsoft Windows 95 Service Pack 1
+	
+	MORE INFORMATION
+	================
+	
+	For additional information about the Lpt.vxd file, please see the Readme.txt
+	file in the Drivers\Printer\LPT folder on the Windows 95 CD-ROM.
+	
+	The Lpt.vxd file from the Windows 95 CD-ROM is version 4.00.503. To check the
+	version number of your Lpt.vxd file in Windows Explorer, click the file, click
+	Properties on the File menu, and in the File Properties dialog box click the
+	Version tab.
+	
+	Note that the symptoms described in this article can also be caused by a printer
+	switchbox. If you are using a printer switchbox, you may want to disconnect the
+	switchbox to see if the problem persists.
+	
+	Additional query words: banner 4p 4M 4L 4si laserjet pjl pcl hp4p hp4l pub3 w95print
+	
+	======================================================================
+	Keywords          : win95 
+	Technology        : kbWin95search kbZNotKeyword3
+	Version           : Win2000:95
+	
+	=============================================================================
+	

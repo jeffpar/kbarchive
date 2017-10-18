@@ -1,0 +1,175 @@
+---
+layout: page
+title: "Q252388: How to Add a Default Printer for All New Users"
+permalink: kb/252/Q252388/
+---
+
+## Q252388: How to Add a Default Printer for All New Users
+
+	Article: Q252388
+	Product(s): Microsoft Windows NT
+	Version(s): winnt:4.0
+	Operating System(s): 
+	Keyword(s): kbenv kbprint
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 4.0 
+	- Microsoft Windows NT Server version 4.0 
+	- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about modifying the registry. Before you 
+	modify the registry, make sure to back it up and make sure that you understand how to restore 
+	the registry if a problem occurs. For information about how to back up, restore, and edit the 
+	registry, click the following article number to view the article in the Microsoft Knowledge Base:
+	
+	  Q256986 Description of the Microsoft Windows Registry
+	
+	SUMMARY
+	=======
+	
+	NOTE: This article describes how to edit the default user Ntuser.dat file on a
+	Windows NT workstation. You can use the same steps to edit existing profiles or
+	to create an Ntuser.dat file for distribution with mandatory or roaming
+	profiles. However, the security and administration issues raised by these other
+	uses of this information are beyond the scope of this article. Use the
+	information in this article at your own risk.
+	
+	
+	When you are installing a printer for users on a Windows NT workstation, you may
+	want that printer to be used as the default printer for all users of the
+	workstation without adding all of those users to groups that have the right to
+	add printers. New users can use an installed printer if the Default User profile
+	has been correctly edited to add the correct information for that printer.
+	
+	The Default User profile is created when Windows NT is installed. The first time
+	a user logs on to a workstation (or domain), the default user profile is copied
+	to the user profile. Therefore, only new users are affected by changing the
+	Default User profile as described in this article.
+	
+	MORE INFORMATION
+	================
+	
+	WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+	that may require you to reinstall your operating system. Microsoft cannot
+	guarantee that you can solve problems that result from using Registry Editor
+	incorrectly. Use Registry Editor at your own risk.
+	
+	To add a default printer for all new users:
+	
+	1. Log on with the Administrator account and install the appropriate default
+	  printer.
+	
+	2. Start Registry Editor (Regedt32.exe).
+	
+	3. Locate the following key:
+	
+	  HKEY_CURRENT_USER\Software\Microsoft\Windows NT\Current Version\Devices
+	
+	Note the information for the value of the key that represents the default printer
+	that you created in step 1. For example, "Generic / Text Only : REG_SZ :
+	winspool,LPT1:" is the printer named "Generic / Text Only" that is installed as
+	a local printer using printer port LPT1. Network printers are listed as
+	\\<servername>\<sharename> with a REG_SZ value similar to
+	"winspool,Ne00:".
+	
+	4. On the Window menu, click HKEY_USERS.
+	
+	5. On the Registry menu, click Load Hive.
+	
+	6. In the %SystemRoot%\Profiles\Default User folder, click the Ntuser.dat file,
+	  and then click Open.
+	
+	7. In the Key Name box, type "ntuser" (without the quotation marks), and then
+	  click OK.
+	
+	8. Open the following key:
+	
+	  NTUSER\Software\Microsoft\Windows NT\Current Version\Devices
+	
+	9. On the Edit menu, click Add Value. Create the same value you noted earlier.
+	  For example, if you are using the sample printer mentioned earlier, "Generic
+	  / Text Only" is the value name, "REG_SZ" is the data type, and
+	  "winspool,LPT1:" is the string.
+	
+	10. Locate the following key:
+	
+	  HKEY_CURRENT_USER\Software\Microsoft\Windows NT\Current Version\PrinterPorts
+	
+	11. Note the information for the value of the key that represents the default
+	  printer that you created in step 1. For example, "Generic / Text Only :
+	  REG_SZ : winspool,LPT1:,15,45".
+	
+	12. Locate the following key:
+	
+	  HKEY_USERS\NTUSER\Software\Microsoft\Windows NT\Current Version\PrinterPorts
+	
+	13. On the Edit menu, click Add Value. Create the same value you noted in the
+	  previous step. For example, if you are using the sample printer mentioned
+	  earlier, "Generic / Text Only" is the value name, "REG_SZ" is the data type,
+	  and "winspool,LPT1:,15,45" is the string.
+	
+	14. Locate the following key:
+	
+	  HKEY_CURRENT_USER\Software\Microsoft\Windows NT\Current Version\Windows
+	
+	15. Note the information for the Device value. For example, "Generic / Text
+	  Only,winspool,LPT1:".
+	
+	16. Double-click the Device value in the following key:
+	
+	  HKEY_USERS\NTUSER\Software\Microsoft\Windows NT\Current Version\Windows
+	
+	17. Edit the Device value to reflect the information you noted in the previous
+	  step. For the sample printer, use "Generic / Text Only,winspool,LPT1:" for
+	  the string.
+	
+	18. Locate the following key:
+	
+	  HKEY_CURRENT_USER\Printers
+	
+	19. Make a note of all the values contained in this key and any subkeys. You may
+	  want to use the Save Key command on the Registry menu.
+	
+	20. Select the following key:
+	
+	  HKEY_USERS\NTUSER
+	
+	21. On the Edit menu, click Add Key. Type "Printers" (without the quotation
+	  marks) for the new key name.
+	
+	22. Click the following key:
+	
+	  HKEY_USERS\NTUSER\Printers
+	
+	23. Add all the values that you noted in the step 19. You may want to restore
+	  the key that you previously saved. To do this, click the key, and then click
+	  Restore Key on the Registry menu.
+	
+	24. In the HKEY_USERS window, click the NTUSER key.
+	
+	25. On the Registry menu, click Unload Hive.
+	
+	26. Quit Registry Editor.
+	
+	After you follow these steps, the Ntuser.dat file contains the same installed
+	printers and default printer as the Administrator account. New users who log on
+	to the computer do not need the right to add a printer to use the device. For
+	additional information about editing the default Ntuser.dat file, click the
+	article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q146050 Modifying Ntuser.dat Hive So New Users Get Defined Settings
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbenv kbprint 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch
+	Version           : winnt:4.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

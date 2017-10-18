@@ -1,0 +1,171 @@
+---
+layout: page
+title: "Q115787: Configuring PC/TCP for Windows for Workgroups 3.11"
+permalink: kb/115/Q115787/
+---
+
+## Q115787: Configuring PC/TCP for Windows for Workgroups 3.11
+
+	Article: Q115787
+	Product(s): Windows for Workgroups and Windows NT Networking Issues
+	Version(s): WINDOWS:3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows for Workgroups version 3.11 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article explains the configuration procedure of FTP Software's PC/TCP
+	version 2.3 for Windows for Workgroups version 3.11.
+	
+	MORE INFORMATION
+	================
+	
+	There are three configuration options available of running PC/TCP version 2.3 in
+	Windows for Workgroups version 3.11, which are with NetBEUI only, NetBEUI and
+	NetBIOS, and NetBIOS only.
+	
+	NetBEUI Only
+	------------
+	
+	1. Choose Real Mode NDIS Driver (NDIS2) during the Windows for Workgroups Setup
+	  procedure.
+	
+	2. Make the following changes to the CONFIG.SYS file:
+	
+	   - Verify the following line:
+	
+	  "Device=<drive>:\<path>\ifshlp.sys" (without the quotation marks)
+	
+	   - Remove any entries that load the Protocol manager or an NDIS-specific NIC
+	     driver.
+	
+	3. Make the following changes to the AUTOEXEC.BAT file:
+	
+	   - Make sure that the NET START command precedes any TSRs (Terminate and Stay
+	     Resident programs).
+	
+	     NOTE: Remove the NETBIND command if it exists.
+	
+	   - Add the following line to load the PC/TCP kernel after the NET START
+	     command:
+	
+	  "<drive>:\<path>\Kernel" (without the quotation marks)
+	
+	4. Make the following changes to the SYSTEM.INI file:
+	
+	   - Verify and add the following line to the [Boot] section:
+	
+	  "Network.drv=wfwnet.drv
+	  Secondnet.drv=<drive>:\<path>\pctcpnet.drv" (without the quotation
+	  marks)
+	
+	   - Add the following line to the [386Enh] section:
+	
+	  "Secondnet=drive:\path\vpctcp.386" (without the quotation marks)
+	
+	   - If you are going to use PC-NFS to mount remote drivers or printers, add
+	     the following line to the [386Enh] section:
+	
+	  "Device=drive:\path\wfwftp.386" (without the quotation marks)
+	
+	     NOTE: You must use the WFWFTP.386 file available through FTP Software
+	     Technical Support BBS at (508) 659-6240. The filename is WFW311.EXE. The
+	     WFWFTP.386 file created for Windows for Workgroups 3.11 will also work
+	     with Windows for Workgroups 3.1, but not the other way around.
+	
+	   - Verify and add the following entries are in the [network drivers] section:
+	
+	  "Netcard=<NDIS driver>
+	  Transport=ndishlp.sys,*netbeui, <drive>:\<path>\dis_pkt.gup
+	  LoadRMDrivers=Yes" (without the quotation marks)
+	
+	5. Make the following changes to the PROTOCOL.INI file:
+	
+	   - Add a [PKTDRV] section and the following entries:
+	
+	  "[PKTDRV] DriverName=PKTDRV$ Bindings=<Windows for Workgroups driver
+	  section nam> IntVec=<Available Software Interrupt>
+	  ChainVec=<Available Software Interrupt>" (without the quotation marks)
+	
+	     NOTE: Common interrupts available for entries IntVec and ChainVec are 0x60
+	     and 0x65, respectively.
+	
+	6. Restart your computer to start running Windows for Workgroups over the
+	  NetBEUI stack.
+	
+	NetBEUI and NetBIOS
+	-------------------
+	
+	1. Follow steps 1 - 5 from the previous section of NetBEUI Only.
+	
+	2. Add the following line to the AUTOEXEC.BAT file:
+	
+	  "<drive>:\<path>\Netbios" (without the quotation marks)
+	
+	3. Make the following changes to the PROTOCOL.INI file:
+	
+	   - In the [network.setup] section, change the lana0= entry to lanax= (where x
+	     is the next available adapter number).
+	
+	   - In the [NETBEUI] section, change LANABASE=0 to LANABASE=x (where x is the
+	     same number as the adapter number in the previous bullet).
+	
+	4. Make the following changes to the PCTCP.INI file:
+	
+	   - In the [pctcp netbios] section, include the following NetBIOS specific
+	     parameters:
+	
+	  "[pctcp netbios]
+	  Ncbs=64
+	  Names=32
+	  Sessions=n (where n equals the same value that is assigned to the
+	  Tcp-Connections= entry in the [pctcp kernel] section of the PCTCP.INI file)."
+	  (without the quotation marks)
+	
+	5. Restart your computer to start running Windows for Workgroups over the
+	  NetBEUI and NetBIOS stacks.
+	
+	NetBIOS Only
+	------------
+	
+	1. Follow all the steps in the two previous sections of NetBEUI Only and NetBEUI
+	  and NetBIOS.
+	
+	2. Comment out the NetMisc= and Transport= entries in the [386Enh] section of
+	  the SYSTEM.INI file by placing a semicolon (;) in front of each entry.
+	
+	  For example:
+	
+	  " ;NetMisc= <entry>
+	  ;Transport= <entry>" (without the quotation marks)
+	
+	3. Restart your computer to start running Windows for Workgroups over the
+	  NetBIOS stack.
+	
+	The third-party products that are discussed in this article are manufactured by
+	companies that are independent of Microsoft. Microsoft makes no warranty,
+	implied or otherwise, regarding the performance or reliability of these
+	products.
+	
+	REFERENCES
+	==========
+	
+	FTP Software, Inc. Technical Support, (800) 382-4387.
+	
+	Additional query words: wfw wfwg dos 3rdparty
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+	Version           : WINDOWS:3.11
+	
+	=============================================================================
+	

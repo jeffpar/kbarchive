@@ -1,0 +1,73 @@
+---
+layout: page
+title: "Q185579: XADM: Duplicating a Mailbox That Belongs to DL in Another Site"
+permalink: kb/185/Q185579/
+---
+
+## Q185579: XADM: Duplicating a Mailbox That Belongs to DL in Another Site
+
+	Article: Q185579
+	Product(s): Microsoft Exchange
+	Version(s): WINDOWS:4.0,5.0,5.5
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 12-APR-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you attempt to duplicate a mailbox in a site that is a member of a
+	distribution list which is homed in another site, the following error message
+	appears after the associated Microsoft Windows NT account has been selected.
+	
+	  This object has not yet been completely replicated or cannot be changed
+	  from this connection. Try connecting to a Microsoft Exchange Server
+	  computer in the same site as this object.
+	
+	  Microsoft Exchange Directory
+	  id c1010ac1
+	
+	When you click OK or Apply, the following error message appears:
+	
+	  The object "<Mailbox name>" with directory name "<alias>"
+	  already
+	  exists. Enter a unique name on the general property page for this mail
+	  recipient.
+	
+	Cancel is the only acceptable response to avoid the previous error messages. The
+	mailbox has already been created. It will function as a normal mailbox but will
+	not be on the foreign distribution list.
+	
+	CAUSE
+	=====
+	
+	The problem occurs because one site tries to write to an object in another site
+	that it does not own. The Microsoft Exchange Administrator program that is
+	connected to the site where the mailbox is being created cannot modify the
+	distribution list because it is owned by another site.
+	
+	WORKAROUND
+	==========
+	
+	To work around the problem, create the mailboxes and manually add them to the
+	distribution in the other site.
+	
+	As an alternative, you can create a Comma Separated Value (CSV) file for the
+	distribution list and import that file into the other site after the mailboxes
+	have been created.
+	
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+	Version           : WINDOWS:4.0,5.0,5.5
+	Issue type        : kbprb
+	
+	=============================================================================
+	

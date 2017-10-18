@@ -1,0 +1,109 @@
+---
+layout: page
+title: "Q322824: XADM: Directory Replication Fails with Event ID 1102"
+permalink: kb/322/Q322824/
+---
+
+## Q322824: XADM: Directory Replication Fails with Event ID 1102
+
+	Article: Q322824
+	Product(s): Microsoft Exchange
+	Version(s): 5.5
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 26-JUL-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	In a Microsoft Exchange Server 5.5 environment, you may experience the following
+	behavior:
+	
+	- Intersite directory replication is unsuccessful.
+	
+	  -and-
+	
+	- The following event is logged in the application log of the Microsoft Windows
+	  NT Event Viewer when diagnostics logging is turned on for the directory
+	  service object, the logging level for the Replication Events category is set
+	  to Maximum, and the logging level for the Internal Processing category is set
+	  to Minimum:
+	
+	  Event Type: Warning
+	  Event Source: MSExchangeDS
+	  Event Category: (5)
+	  Event ID: 1102
+	  Description:
+	
+	  During intersite replication, the directory replication agent (DRA) closed the
+	  connection to the mail service in response to error 80450102. Will attempt to
+	  connect again later.
+	
+	CAUSE
+	=====
+	
+	This behavior may occur if the antivirus program that is installed on your
+	computer is configured to block all attachments that use the .dat extension.
+	
+	This behavior has been reported to occur with Trend Micro's ScanMail for
+	Microsoft Exchange product.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, configure your antivirus program to turn off (disable)
+	blocking for .dat files. For more information about how to turn off the blocking
+	of specific file types in your antivirus program, see the program documentation
+	or contact the software manufacturer.
+	
+	For information about how to contact Trend Micro or your antivirus program
+	manufacturer, click the appropriate article number in the following list to view
+	the article in the Microsoft Knowledge Base:
+	
+	  Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+	
+	  Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+	
+	  Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+	
+	MORE INFORMATION
+	================
+	
+	For additional information about how to troubleshoot intersite directory
+	replication issues, click the article number below to view the article in the
+	Microsoft Knowledge Base:
+	
+	  Q183669 XADM: Troubleshooting Intersite Directory Replication
+	
+	For additional information about how to troubleshoot an Exchange Server computer
+	with antivirus software installed, click the article number below to view the
+	article in the Microsoft Knowledge Base:
+	
+	  Q245822 XGEN: Recommendations for Troubleshooting an Exchange Computer with
+	  Antivirus Software Installed
+	
+	Microsoft provides third-party contact information to help you find technical
+	support. This contact information may change without notice. Microsoft does not
+	guarantee the accuracy of this third-party contact information.
+	
+	The third-party products that are discussed in this article are manufactured by
+	companies that are independent of Microsoft. Microsoft makes no warranty,
+	implied or otherwise, regarding the performance or reliability of these
+	products.
+	
+	Additional query words: front page
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbZNotKeyword6 kbExchangeSearch kbExchange550 kbExchangeClientSearch kbZNotKeyword2
+	Version           : :5.5
+	Issue type        : kbprb
+	
+	=============================================================================
+	

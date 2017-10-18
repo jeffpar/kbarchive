@@ -1,0 +1,109 @@
+---
+layout: page
+title: "Q86175: Environment Lost in Enhanced Mode on Novell Network"
+permalink: kb/086/Q86175/
+---
+
+## Q86175: Environment Lost in Enhanced Mode on Novell Network
+
+	Article: Q86175
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 02-OCT-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+	- Microsoft Windows for Workgroups versions 3.1, 3.11 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you run MS-DOS Prompt under Microsoft Windows or Windows for Workgroups in
+	386 enhanced mode on a Novell network, you may lose your environment parameters.
+	You can view your MS-DOS environment settings by issuing the SET command at the
+	MS-DOS command prompt before you start Windows, or at the MS-DOS Prompt under
+	Windows.
+	
+	WORKAROUND
+	==========
+	
+	If you are losing your MS-DOS environment variables, use the following
+	troubleshooting steps to ensure a consistent MS-DOS environment:
+	
+	1. Make sure the correct Novell NetWare drivers are selected in Windows Setup.
+	  There are five NetWare selections under Windows 3.1 Setup:
+	
+	  Novell NetWare (shell versions 3.21 and above)
+	  Novell NetWare (shell versions 3.26 and above)
+	  Novell NetWare (shell versions below 3.01)
+	  Novell NetWare (shell versions below 3.21)
+	  Novell NetWare 2.10 or above, or Novell NetWare 386
+	
+	  To check which shell version you are currently using, issue the following
+	  command at the MS-DOS command prompt (you must be logged onto the network to
+	  issue this command):
+	
+	  NETX I
+	
+	  -or-
+	
+	  NVER
+	
+	  NOTE: If you are using NetWare version 3.32 (released for MS-DOS 6 support),
+	  use NETX.
+	
+	2. Verify that the VIPX.386 file is located in the Windows/SYSTEM directory.
+	
+	3. Ensure that the COMSPEC environmental variable is being set correctly in the
+	  CONFIG.SYS file. The following line should be present in the CONFIG.SYS
+	  file:
+	
+	        SHELL=C:\DOS\COMMAND.COM C:\DOS\ /e:2048 /p
+	
+	  NOTE: The above line assumes that the COMMAND.COM file is located in the
+	  C:\DOS directory.
+	
+	4. Update the NETX and IPX to the most recent version. Windows version 3.1
+	  supplies NETX.COM version 3.26 and an IPX.OBJ file that you can use to
+	  generate a Windows 3.1 compatible version of IPX.COM. Be sure to select
+	
+	  Novell NetWare (shell versions 3.26 and above)
+	
+	  in the Windows Setup.
+	
+	5. Update any supporting Novell files such as LOGIN.EXE to the most current
+	  version available.
+	
+	MORE INFORMATION
+	================
+	
+	The MS-DOS environment can also be lost or garbled if multiple protocols are
+	installed on a single workstation. For example, a workstation might have drivers
+	for the IBM DOS LAN Requester network and drivers for Novell NetWare installed.
+	This allows the workstation to access both OS/2 LAN Servers and Novell NetWare
+	servers. However, if the Windows Setup is configured for "IBM OS/2 Lan Server"
+	instead of "Novell NetWare (shell version)", then the DOS environment will be
+	lost or garbled when you run MS-DOS Prompt from Windows in 386 enhanced mode.
+	
+	To correct this problem, make sure that the Novell NetWare drivers are loading,
+	and that the LAN Server drivers are not. The Windows NetWare drivers need to be
+	loaded for the Novell Network to run properly in 386 enhanced mode Windows.
+	
+	The Novell products included here are manufactured by Novell, a vendor
+	independent of Microsoft; we make no warranty, implied or otherwise, regarding
+	these products' performance or reliability.
+	
+	Additional query words: 3.00 3.00a 3.10 3.11 3rdparty man VM net ware path
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311 kbWFW310 kbWFW311
+	Version           : WINDOWS:3.0,3.0a,3.1,3.11
+	
+	=============================================================================
+	

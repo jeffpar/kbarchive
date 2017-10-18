@@ -1,0 +1,179 @@
+---
+layout: page
+title: "Q131008: How to Use Logevent.exe to Log Events From a Batch File"
+permalink: kb/131/Q131008/
+---
+
+## Q131008: How to Use Logevent.exe to Log Events From a Batch File
+
+	Article: Q131008
+	Product(s): Microsoft Windows NT
+	Version(s): WinNT:3.51,4.0
+	Operating System(s): 
+	Keyword(s): kbnetwork
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation versions 3.51, 4.0 
+	- Microsoft Windows NT Server versions 3.51, 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Logevent.exe, a command line utility, can be used to log an event ID provided by
+	the user into the Application event log. This allows the user to log errors and
+	informational data from batch files, login scripts, and Performance Monitor. The
+	application event log can then be viewed and manipulated with the standard tools
+	used for dealing with event logs.
+	
+	Under Windows NT 4.0, LOGEVENT can also be used to make entries to the Windows NT
+	Event Log on a local or remote computer. It is particularly useful for storing
+	historical information from the execution of batch programs run from logon
+	scripts or the AT command. Its ability to store entries into the event log of
+	other computers allows this data to be collected centrally, if required.
+	
+	MORE INFORMATION
+	================
+	
+	Windows NT 3.51
+	---------------
+	
+	Install Logevent.exe by copying it to the %SystemRoot%\system32 directory.
+	
+	LOGEVENT requires that the Registry be modified with an additional key. Run
+	LOGEVENT without any parameters to create the required key in the Registry. The
+	following key will be created:
+	
+	  \HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EventLog
+	  \Application\CommandLog
+	
+	and will create the following values under this key:
+	
+	  EventMessageFile
+	  TypesSupported
+	
+	All events logged by LOGEVENT will show CommandLog as the source of the event
+	when viewed in Event Viewer.
+	
+	The syntax for the Logevent.exe command is:
+	
+	  LOGEVENT xxxxx string1 string2 string3 string4 string5
+	
+	where xxxxx is the event ID you want to register (in decimal) and string1 through
+	string5 are 1 to 5 insertion strings
+	
+	If LOGEVENT is run without any parameters it will create the required key in the
+	Registry (as described above). If it is run without any parameters and the
+	Registry key already exists then the following usage will be given:
+	
+	[e:\ntbin]logevent
+	  Usage: LogEvent xxxx string1 string2 string3 string4 string5
+	  Where xxxx = numeric ID and stringX is "multiple word string" | single_word
+	
+	Only 5 insertion strings are allowed, but this should be sufficient for most
+	applications because the double quote (") character can be used to pass as much
+	information as needed in a single string. The case where the additional strings
+	are useful is where environment variables will be passed as parameters from a
+	batch file. The Event ID must ALWAYS be provided otherwise the utility will
+	provide the usage for the command and will exit without logging anything to the
+	log.
+	
+	For example, LOGEVENT could be used from a batch file to report the successful
+	execution of a command and log it to the Application Event log with the
+	following example commands:
+	
+	  LOGEVENT 9876 "program failure in batch file" %0
+	     (to report failure of program execution from a batch file)
+	
+	  LOGEVENT 1234 "Program CAPTURE.EXE" "ran successfully to completion"
+	     (from the batch file after successful execution of the program)
+	
+	  LOGEVENT 2222 "Program failed for user" %USERNAME% "with a path of" %PATH%
+	     (from a batch file showing use of environment variables)
+	
+	Another example is the use of LOGEVENT from Performance Monitor. If PerfMon has
+	been set up to generate alerts, it is possible to have these alerts logged in
+	the Event Log. However, the current version of PerfMon logs all events generated
+	by an Alert as the same Event ID in the Application Event Log. If several alerts
+	are being monitored the event Id in the log cannot be used to distinguish which
+	alert caused the event (although the detail for the event will show this
+	information).
+	
+	If the NVAlert feature of SNA server is being used to pass these alerts on to
+	NetView (on a mainframe) then it is necessary to be able to use the Event ID to
+	distinguish which alert generated the Event in the log. By using LOGEVENT it is
+	possible to do this. For example, from PerfMon, you would set up the alert you
+	want to monitor and then put in the following command to be executed when the
+	alert is triggered:
+	
+	  LOGEVENT 2001 "Alert generated from Perfmon" "disk usage on D: exceeded 70%%"
+	
+	When you view the Event log for the this example, you will see the following:
+	
+	  Date:      4/13/95      Event ID:  2001
+	  Time:      9:16:40 AM   Source:    CommandLog
+	  User:      N/A          Type:      Information
+	  Computer:  SPYMASTER    Category:  None
+	
+	  Description:
+	  The description for Event ID ( 2001 ) in Source ( CommandLog ) could not
+	  be found. It contains the following insertion string(s): Alert generated
+	  from  Perfmon, disk usage on D: exceeded 70%.
+	
+	The strings that are provided will be passed first and then the parameters
+	provided by PerfMon will be passed. The parameters passed from PerfMon are
+	actually the same as the information logged to PerfMon itself. If all parameters
+	passed from PerfMon are to be logged into the event log use the same line as
+	above but put a ," (comma and double quote) or , (comma) on the end of the line
+	(for NT 3.5 and NT 3.51 respectively). In this case only 1-4 insertion strings
+	should be passed along with the ," or , on the end. For example:
+	
+	  LOGEVENT 2001 "Alert generated from Perfmon" "disk usage on D: exceeded 70%%"
+	
+	will pass the 2 stings provided to LOGEVENT and will then pass all of the info
+	from Perfmon as the 3rd insertion string. Note the comma (,) at the end of the
+	line (this is for NT 3.51). For NT 3.1 or NT 3.5 use the ," characters.
+	
+	As seen in the event log, it will be reported that the description could not be
+	found for this Event ID. This is because there is no file containing the
+	description strings for Logevent.exe since there is no way to know what Event
+	IDs the user will be putting in the Event Log. The EventMessageFile in the
+	Registry will point to the Logevent.exe program itself. However, this is really
+	just a placeholder entry in the Registry as Logevent.exe does not contain any
+	description strings.
+	
+	The Event IDs logged will really only have meaning for the user or app that will
+	be monitoring the Event Log (such as NV Alert). Also, in this example the %% is
+	required in order for the % to appear in the event log (this is because of the
+	special meaning of the % character in the insertion string handling).
+	
+	In addition, because these Events are generated by the user, it was felt that it
+	is sufficient to put these in the log as Information Type messages only. There
+	is currently no way (or need) to log Warning or Error type events using this
+	utility.
+	
+	Windows NT 4.0
+	--------------
+	
+	To allow the Event Log Viewer to properly display the entry, the application
+	should be installed onto the computer being used to view the event log.
+	Installation is automatically performed when the LOGEVENT program is used for
+	the first time.
+	
+	The syntax for Logevent.exe is:
+	
+	  LOGEVENT [-m \\MACHINENAME] [-s SIWEF] [-c CategoryNumber] "Event Text"
+	  Severity is one of (S)uccess, (I)nformation, (W)arning, (E)rror or
+	  (F)ailure.
+	
+	======================================================================
+	Keywords          : kbnetwork 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+	Version           : WinNT:3.51,4.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

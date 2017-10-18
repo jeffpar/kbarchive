@@ -1,0 +1,272 @@
+---
+layout: page
+title: "Q263047: Games: How to Troubleshoot Sound Related Issues"
+permalink: kb/263/Q263047/
+---
+
+## Q263047: Games: How to Troubleshoot Sound Related Issues
+
+	Article: Q263047
+	Product(s): Microsoft Home Games
+	Version(s): 1.0,2.0
+	Operating System(s): 
+	Keyword(s): kbsound kbimu msgame
+	Last Modified: 18-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Age of Empires II: The Age of Kings, version 2.0 
+	- Microsoft Age of Empires II Expansion: The Conquerors 
+	- Microsoft Baseball 2001 
+	- Microsoft Combat Flight Simulator 2: WWII Pacific Theater, version 1.0 
+	- Microsoft Flight Simulator 2000 
+	- Microsoft Flight Simulator 2002 
+	- Microsoft Flight Simulator 2000 Professional Edition 
+	- Microsoft Flight Simulator 2002 Professional Edition 
+	- Microsoft International Soccer 2000, version 1.0 
+	- Microsoft Links 2001 
+	- Microsoft MechWarrior 4: Black Knight 
+	- Microsoft MechWarrior 4: Vengeance 
+	- Microsoft Midtown Madness, version 1.0 
+	- Microsoft Midtown Madness 2, version 2.0 
+	- Microsoft Motocross Madness 2, version 2.0 
+	- Microsoft NBA Inside Drive 2000, version 1.0 
+	- Microsoft NFL Fever 2000, version 1.0 
+	- Microsoft Pandora's Box, version 1.0 
+	- Microsoft Plus! Game Pack: Cards and Puzzles 
+	- Microsoft StarLancer, version 1.0 
+	- Microsoft Train Simulator, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article explains how to troubleshoot the following sound related issues in
+	the Microsoft games listed at the beginning of this article:
+	
+	- No sound in the game.
+	
+	- Sounds in the game are too quiet.
+	
+	- Sounds in the game are distorted.
+	
+	- Sounds in the game are scratchy.
+	
+	- Computer stops responding (hangs) when sounds are played in the game.
+	
+	MORE INFORMATION
+	================
+	
+	To troubleshoot sound related issues in Microsoft games, use the following
+	methods in the order in which they are presented.
+	
+	Disable Real-Mode (16-bit) Sound Driver
+	---------------------------------------
+	
+	Disable any real-mode (16-bit) sound driver lines in the Autoexec.bat file or the
+	Config.sys file on your computer. To do this, use the appropriate method for
+	your version of Microsoft Windows.
+	
+	Microsoft Windows 98:
+	
+	1. Click Start, and then click Run.
+	
+	2. In the Open box, type "msconfig" (without the quotation marks), and then
+	  click OK.
+	
+	3. Click the Config.sys tab.
+	
+	4. Click to clear the check box for each line that refers to your sound driver.
+	
+	5. Click the Autoexec.bat tab.
+	
+	6. Click to clear the check box for each line that refers to your sound driver.
+	
+	7. Click OK.
+	
+	8. Restart the computer.
+	
+	Microsoft Windows 95:
+	
+	1. Click Start, and then click Run.
+	
+	2. In the Open box, type "sysedit" (without the quotation marks), and then click
+	  OK.
+	
+	3. In the Autoexec.bat window, type "REM" (without the quotation marks) at the
+	  beginning of each line that refers to your sound driver.
+	
+	4. On the Window menu, click C:\Config.sys.
+	
+	5. In the Config.sys window, type "REM" (without the quotation marks) at the
+	  beginning of each line that refers to your sound driver.
+	
+	6. On the File menu, click Exit.
+	
+	  If you are prompted to save the changes, click Yes for each prompt.
+	
+	7. Restart the computer.
+	
+	If the issue continues to occur, proceed to the next method.
+	
+	Quit Unnecessary Programs
+	-------------------------
+	
+	To quit all unnecessary programs, use the appropriate method for your version of
+	Microsoft Windows:
+	
+	Windows 95 or Windows 98:
+	
+	1. Press CTRL+ALT+DELETE.
+	
+	2. In the Close Program dialog box, highlight the program, except Explorer or
+	  Systray, you want to quit, and then click End Task. If you receive a message
+	  stating that the program is busy or not responding, click End Task again.
+	
+	3. Repeat steps 1 and 2 to quit all unnecessary programs that are running on
+	  your computer.
+	
+	Windows 2000 or Windows XP:
+	
+	1. Press CTRL+SHIFT+ESC.
+	
+	2. On the Applications tab, click any program, and then click End Task. Repeat
+	  this step to quit all unnecessary programs that are running on your computer.
+	
+	3. Quit Windows Task Manager.
+	
+	NOTE: Some programs start automatically every time you restart your computer. For
+	information about how to disable these programs, see the printed or online
+	documentation for the program.
+	
+	Install the Latest Version of Microsoft DirectX
+	-----------------------------------------------
+	
+	Download and install the latest version of DirectX from the following Microsoft
+	Web site:
+	
+	  http://www.microsoft.com/directx/homeuser/downloads/default.asp
+	
+	For additional information about how to obtain and install the latest version of
+	DirectX, click the article number below to view the article in the Microsoft
+	Knowledge Base:
+	
+	  Q179113 How to Download and Install DirectX
+	
+	If the issue continues to occur, proceed to the next method.
+	
+	Update Sound Drivers
+	--------------------
+	
+	Contact the manufacturer of your sound card to inquire about how to obtain and
+	install the latest version of the sound driver for your sound card.
+	
+	For information about how to contact the manufacturer of your sound card, click
+	the appropriate article number in the following list to view the article in the
+	Microsoft Knowledge Base:
+	
+	  Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+	
+	  Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+	
+	  Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+	
+	If the issue continues to occur, proceed to the next method.
+	
+	Turn Off DirectSound Hardware Acceleration
+	------------------------------------------
+	
+	If Microsoft DirectX 6.0 or later is installed on your computer, turn off
+	DirectSound hardware acceleration. To do this:
+	
+	1. Click Start, and then click Run.
+	
+	2. In the Open box, type "dxdiag" (without the quotation marks), and then click
+	  OK.
+	
+	3. Click the Sound tab.
+	
+	4. Under DirectX Features, move the Hardware Sound Acceleration Level slider all
+	  the way to the left (the "No acceleration" setting).
+	
+	5. Click Exit and then start the game. If sounds can be heard, repeat these
+	  steps and increase the hardware sound acceleration level setting a notch at a
+	  time.
+	
+	  If the issue continues to occur, proceed to the next method.
+	
+	Change the Preferred Playback Device to the Game Compatible Device
+	------------------------------------------------------------------
+	
+	To change the preferred playback device to the Game Compatible device:
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click Multimedia.
+	
+	3. Under Playback on the Audio tab, click Game Compatible Device in the
+	  "Preferred device" box.
+	
+	  NOTE: If Game Compatible Device is not listed in the "Preferred device" box,
+	  install the Game Compatible Device. To do this:
+	
+	  a. Click Start, point to Settings, and then click Control Panel.
+	
+	  b. Double-click Modems.
+	
+	  c. If a modem is not already installed in your computer, proceed to step D.
+	
+	     If a modem is installed in your computer, click Add in the Modems
+	     Properties dialog box.
+	
+	  d. Click to select the "Don't detect my modem; I will select it from a list"
+	     check box, and then click Next.
+	
+	  e. In the Manufacturers box, click 3X.
+	
+	     NOTE: 3X is not included with some versions of Microsoft Windows.
+	
+	  f. In the Models box, click 3X 14.4 Data Fax Modem Voice.
+	
+	  g. Click Next.
+	
+	  h. Click any port, and then click Next.
+	
+	  i. Follow the instructions on the screen to finish installing the Game
+	     Compatible Device.
+	
+	  j. Click Finish, and then click Close.
+	
+	4. Click to select the "Use only preferred devices" check box, and then click
+	  OK.
+	
+	5. Close Control Panel.
+	
+	6. Restart the computer.
+	
+	The third-party products that are discussed in this article are manufactured by
+	companies that are independent of Microsoft. Microsoft makes no warranty,
+	implied or otherwise, regarding the performance or reliability of these
+	products.
+	
+	REFERENCES
+	==========
+	
+	For additional information about sound issues, click the article numbers below
+	to view the articles in the Microsoft Knowledge Base:
+	
+	  Q136983 No Sound, MMSystem or MCI Errors In Windows 95/98
+	
+	  Q133365 Windows 95/98: Troubleshooting Problems with Compressed Audio
+	
+	Additional query words: 1.00 msgame tshoot trouble shoot audio problems
+	
+	======================================================================
+	Keywords          : kbsound kbimu msgame 
+	Technology        : kbHomeProdSearch _IKkbbogus kbLinkGolfSearch kbGamesSearch kbFlightSimSearch kbGolfSearch kbNFLFever2000 kbNFLSearch _IK kbPandoraSearch kbPlusSearch kbMotocrossSearch kbStarlancerSearch kbBaseballSearch kbMidtownMadSearch kbAOESearch kbMidtownMadness kbStarlancer kbAOE2ExpConquerors kbAOE2Kings kbBaseBall2001 kbCombatFlightSim2 kbCombatFlightSimSearch kbFlightSim2000 kbMidtownMadness2 kbPandorasBox kbMotocrossM2 kbLinks2001 kbNBAInsideDrive2000 kbIntlSoccer2000 kbPlusGamePk kbTrainSim kbFlightSim2002 kbFlightSim2002Pro kbSimSearch
+	Version           : :1.0,2.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

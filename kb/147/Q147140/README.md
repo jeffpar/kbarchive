@@ -1,0 +1,223 @@
+---
+layout: page
+title: "Q147140: Macintosh Ultimate Frank Lloyd Wright: ReadMe Contents"
+permalink: kb/147/Q147140/
+---
+
+## Q147140: Macintosh Ultimate Frank Lloyd Wright: ReadMe Contents
+
+	Article: Q147140
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): MACINTOSH:1.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 08-NOV-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft The Ultimate Frank Lloyd Wright for the Macintosh, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The following article contains a complete copy of the Readme file included on
+	The Ultimate Frank Lloyd Wright compact disc.
+	
+	MORE INFORMATION
+	================
+	
+	------------------------------------------------------------
+	
+	The Ultimate Frank Lloyd Wright Read Me:
+	
+	------------------------------------------------------------
+	
+	This file contains information on the following topics:
+	
+	1. SYSTEM REQUIREMENTS FOR RUNNING THE ULTIMATE FRANK LLOYD WRIGHT
+	   - What you need to run The Ultimate Frank Lloyd Wright
+	
+	2. MEMORY USE
+	   - The Ultimate Frank Lloyd Wright memory usage
+	   - How to make it run on low-memory machines
+	
+	3. PERFORMANCE
+	   - Tips on what to do if The Ultimate Frank Lloyd Wright is
+	     running slowly
+	
+	4. SCREEN SIZE AND COLOR CONFIGURATION
+	   - What makes The Ultimate Frank Lloyd Wright look best
+	
+	5. SOUND PROBLEMS
+	   - Common problems playing sounds and how to fix them
+	
+	------------------------------------------------------------------
+	1. SYSTEM REQUIREMENTS FOR RUNNING THE ULTIMATE FRANK LLOYD WRIGHT
+	------------------------------------------------------------------
+	
+	To run The Ultimate Frank Lloyd Wright you need:
+	
+	- Any Macintosh computer that supports a 256-color, 640 x 480 (13-
+	  inch) or higher resolution monitor
+	- System 7.0 or later
+	- 8 MB of random-access memory (RAM)
+	- At least 2 MB of available hard disk space
+	- CD-ROM drive (double-speed recommended)
+	
+	The Installer on the CD will add any necessary files to your System
+	Folder. It will also copy The Ultimate Frank Lloyd Wright applications
+	to a folder titled "Frank Lloyd Wright" on your hard disk; this makes
+	the programs load a little faster when they're launched. The text,
+	sounds and images remain on the CD, so you will still need to insert
+	the CD to run The Ultimate Frank Lloyd Wright.
+	
+	You can launch The Ultimate Frank Lloyd Wright applications directly
+	from the CD. However, to play the movies and hear the sounds,
+	QuickTime 2.0 or later must be installed in your System Folder. If The
+	Ultimate Frank Lloyd Wright can't find these critical files, it will
+	ask you to run the Installer. You can also install QuickTime manually
+	by dragging the files from the System Files folder on the CD onto your
+	System Folder icon and then restarting your computer.
+	
+	-------------
+	2. MEMORY USE
+	-------------
+	
+	The Ultimate Frank Lloyd Wright should run on any Macintosh with at
+	least 8 MB of RAM. However, if 2,600K of memory is not free when you
+	select Modeling Wright from the main menu, a warning message will be
+	displayed indicating there is insufficient memory available to launch
+	the Modeling Wright application. Most users with 8 MB of RAM will not
+	experience problems, but if your system takes up more than 2 MB, you
+	may need to adjust memory usage using one of the following techniques:
+	
+	- Run only one application at a time. If other applications are
+	  running, close them and re-launch The Ultimate Frank Lloyd Wright.
+	
+	- Reduce the amount of memory being used by your system software. To
+	  do this, return to the Finder and select About This Macintosh...
+	  from the Apple menu at the top left corner of your screen. The
+	  Largest Unused Block needs to be greater than 6,000K to run The
+	  Ultimate Frank Lloyd Wright and Modeling Wright. If the only item
+	  listed in the About This Macintosh dialog is System Software, and
+	  the Largest Unused Block is less than 6,000K, you need to reduce
+	  the amount of memory consumed by your system software. Refer to
+	  your Macintosh documentation for detailed instructions on how to
+	  reduce system RAM usage, but some general suggestions follow:
+	
+	     a. Open the Memory control panel and check the Disk Cache
+	     setting. To free up the most memory for The Ultimate Frank Lloyd
+	     Wright, set the cache to 32K.
+	
+	     b. Large numbers of fonts and sounds consume excessive amounts
+	     of system memory. Removing those that you aren't using will make
+	     more memory available.
+	
+	     c. Third party system extensions such as screen savers, fax
+	     software, desktop pictures, menu-modifying utilities and other
+	     system enhancements increase the amount of memory consumed by
+	     your system. Removing some or all of these extensions will
+	     increase the amount of memory available to applications. Be sure
+	     to save anything you remove from your System Folder and place it
+	     in a separate folder on your disk so that you can replace it
+	     later.
+	
+	- The Ultimate Frank Lloyd Wright application is pre-set to a
+	  preferred memory size of 3,400K. You can change the amount of
+	  memory the program uses by clicking on The Ultimate Frank Lloyd
+	  Wright icon, choosing Get Info from the File menu, and then typing
+	  a new value for Preferred Size. If you don't have enough memory to
+	  launch The Ultimate Frank Lloyd Wright with the default settings,
+	  you can set the application to use less memory.
+	
+	NOTE: Be warned that a low memory setting may cause the program to
+	perform poorly. For example, The Ultimate Frank Lloyd Wright may not
+	play sounds or display pop-up windows if it runs out of memory. If you
+	allocate less than 3,000K, these problems are likely to result.
+	
+	- If you find that you do not have enough available memory to run
+	  Modeling Wright from the main menu, you can quit The Ultimate Frank
+	  Lloyd Wright and launch Modeling Wright as a stand-alone
+	  application.
+	
+	--------------
+	3. PERFORMANCE
+	--------------
+	
+	If The Ultimate Frank Lloyd Wright seems to run slowly or its sounds
+	are interrupted, check the following:
+	
+	- Are you running on a Macintosh with low memory? Check the previous
+	  section, MEMORY USE.
+	
+	- Are you using Virtual Memory? You may find that movies and other
+	  sounds are choppy or interrupted. For best performance, turn off
+	  Virtual Memory by opening the Memory control panel, disabling the
+	  Virtual Memory option, and then restarting your computer.
+	
+	- Is File Sharing enabled? Although File Sharing itself should not
+	  cause a problem, any network activity may cause The Ultimate Frank
+	  Lloyd Wright (as well as other applications) to run more slowly.
+	  For best performance, turn off File Sharing in the Sharing Setup
+	  control panel.
+	
+	- The Ultimate Frank Lloyd Wright is designed to work properly on
+	  single-speed CD-ROM drives with 150K/sec or faster transfer rates.
+	  Double-speed CD-ROM drives (or ones with even faster transfer
+	  rates) will provide much better performance in some sections of the
+	  product. If your CD-ROM drive has a sustained transfer rate of less
+	  than 150K/sec, it may be not be able to supply audio and video
+	  information to the Macintosh at the speed required for smooth
+	  playback. Contact your CD-ROM vendor for details on your CD-ROM
+	  drive's transfer rate and information on improving the performance
+	  of your CD-ROM drive.
+	
+	--------------------------------------
+	4. SCREEN SIZE AND COLOR CONFIGURATION
+	--------------------------------------
+	
+	On startup, The Ultimate Frank Lloyd Wright checks your monitor
+	configuration. If your monitor settings can be adjusted to display 256
+	colors, the program will ask you for permission to switch the
+	settings.  Your previous configuration will be automatically restored
+	when you quit the application.
+	
+	The Ultimate Frank Lloyd Wright is not designed to run in color modes
+	other than 256 colors or on monitors displaying less than 640 x 480
+	pixels (e.g., Color Classics or 12" monitors).
+	
+	-----------------
+	5. SOUND PROBLEMS
+	-----------------
+	
+	Sounds may be inaudible if the sound level is turned down. To set the
+	sound level, open the Sound control panel and experiment with the
+	speaker volume setting until you find a comfortable sound level. If
+	you set the sound level to maximum, you may get some sound distortion.
+	Ensure external speakers are connected properly and turned on; you
+	will generally be able to adjust sound level with the external speaker
+	volume knob as well as with the Sound control panel.
+	
+	If your Macintosh is running with Virtual Memory turned on, you may
+	find that sounds will break up. For best performance, turn off Virtual
+	Memory by opening the Memory control panel, disabling the Virtual
+	Memory option, and then restarting your computer.
+	
+	If sounds do not play at all and you are running The Ultimate Frank
+	Lloyd Wright on a PowerPC, check to see if you are running RAM Doubler
+	version 1.5.1.  If you are, disable RAM Doubler, remove it from the
+	Extensions Folder in your System Folder, and restart your computer.
+	Contact the manufacturer of RAM Doubler for information on updated
+	versions.
+	
+	Additional query words: multi media multimedia multi-media mmtitles kbmm read-me read me cd-disc
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbHWMAC kbOSMAC kbGamesSearch kbZNotKeyword kbUltimateFLWMac
+	Version           : MACINTOSH:1.0
+	
+	=============================================================================
+	

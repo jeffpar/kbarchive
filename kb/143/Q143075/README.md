@@ -1,0 +1,93 @@
+---
+layout: page
+title: "Q143075: FIX: Error When Attempting to Rename Class in Class Browser"
+permalink: kb/143/Q143075/
+---
+
+## Q143075: FIX: Error When Attempting to Rename Class in Class Browser
+
+	Article: Q143075
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:3.0
+	Operating System(s): 
+	Keyword(s): kbbuglist kbfixlist
+	Last Modified: 24-MAR-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 3.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When attempting to rename a class in the Class Browser, you may receive the
+	error message:
+	
+	  Class <classname> is not found in the class library.
+	  Browser: classbrowser1
+	  Object: classbrowser1
+	  Method: renameclass
+	
+	where <classname> is the name of the class that you are attempting to
+	rename.
+	
+	CAUSE
+	=====
+	
+	You will receive this message if all of the following conditions exist:
+	
+	- You are running Visual FoxPro 3.0.
+	
+	- You are using the Class Browser to rename a class.
+	
+	- The name of the class that you are attempting to rename contains extended
+	  ASCII characters.
+	
+	WORKAROUND
+	==========
+	
+	- Use the Rename Class command in the Command window to rename the class.
+	
+	-or-
+	
+	- Upgrade to Visual FoxPro version 3.0b.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft product listed at
+	the beginning of this article. This problem was corrected in Microsoft Visual
+	FoxPro 3.0b for Windows.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Problem
+	--------------------------
+	
+	1. Open or switch to Microsoft Visual FoxPro 3.0.
+	
+	2. Type Create Class in the Command window and press ENTER. This will open the
+	  New Class dialog box.
+	
+	3. Type "ALT+0244" (without the quotation marks) into the Class Name text box
+	  (this will create an extended ASCII character). Base the class on a check box
+	  (default) and store it in C:\Myclass.vcx.
+	
+	4. Choose Class Browser from the Tools menu and open C:\Myclass.vcx.
+	
+	5. Highlight the class and attempt to rename it. The error will now occur.
+	
+	Additional query words: VFoxWin buglist3.00 fixlist3.00b
+	
+	======================================================================
+	Keywords          :  kbbuglist kbfixlist
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+	Version           : WINDOWS:3.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

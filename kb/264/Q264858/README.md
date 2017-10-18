@@ -1,0 +1,79 @@
+---
+layout: page
+title: "Q264858: StarLancer: Minimum System Requirements"
+permalink: kb/264/Q264858/
+---
+
+## Q264858: StarLancer: Minimum System Requirements
+
+	Article: Q264858
+	Product(s): Microsoft Home Games
+	Version(s): 1.0
+	Operating System(s): 
+	Keyword(s): kbref kbimu msgame
+	Last Modified: 12-NOV-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft StarLancer, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article contains a list of the minimum system requirements that are needed
+	to play Microsoft StarLancer.
+	
+	MORE INFORMATION
+	================
+	
+	To play Microsoft StarLancer, you need:
+	
+	- Multimedia PC with a Pentium 200 MHz or higher processor (Pentium II 300 MHz
+	  with 3D accelerator card recommended.)
+	
+	- Microsoft Windows 95 or higher operating system with DirectX 7.0 API
+	
+	- 32 megabytes (MB) of RAM.
+	
+	- 300 MB of available hard disk space; additional 100 MB of hard disk space for
+	  swap file
+	
+	- 8X or faster CD-ROM drive
+	
+	- Microsoft mouse or compatible pointing device (joystick recommended)
+	
+	- Super-VGA, 256-bit color monitor supporting 640x480 or higher resolution
+	  (800x600 screen resolution recommended)
+	
+	- Local bus video with 2 MB or more of video memory (3D accelerated video
+	  recommended)
+	
+	- Microsoft DirectSound 7.0 API-compatible sound card with speakers or
+	  headphones for audio
+	
+	- Recommended: Graphics accelerator card compatible with Direct3D API
+	
+	Requirements for multiplayer play:
+	
+	- 28.8 Kbps modem (or higher recommended), local area network with TCP/IP or
+	  IPX protocol, or null-modem cable required for connection to other systems
+	
+	- Internet access required for Internet play. May require payment of a separate
+	  fee to an Internet service provider (ISP). Connect time charges may apply.
+	
+	- To play on Zone.com, you need to have one of the following Web browsers:
+	  Microsoft Internet Explorer 3.02 or later or Netscape Communicator 4.0 or
+	  later
+	
+	Additional query words: 1.00 msgame star lancer requires sysreqs
+	
+	======================================================================
+	Keywords          : kbref kbimu msgame 
+	Technology        : _IKkbbogus kbGamesSearch kbStarlancerSearch kbStarlancer
+	Version           : :1.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

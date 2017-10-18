@@ -1,0 +1,78 @@
+---
+layout: page
+title: "Q76218: SWAPFILE.EXE May Not Recognize Logical Drives in Windows"
+permalink: kb/076/Q76218/
+---
+
+## Q76218: SWAPFILE.EXE May Not Recognize Logical Drives in Windows
+
+	Article: Q76218
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 21-SEP-1999
+	
+	3.00 3.00a 3.10 3.11
+	
+	WINDOWS
+	
+	kbref kbtool
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The Swapfile program included with Microsoft Windows may not recognize disk
+	drives with drive letters greater than C if disk partitioning methods other than
+	FDISK have been used, such as Disk Manager (DMDRVR.BIN), SpeedStor (SSTOR.SYS),
+	EDRVR.SYS, and so on. The Swapfile menu's Next Drive command is unavailable
+	(dimmed) if no drive other than drive C is recognized by Swapfile.
+	
+	The Swapfile program allows you to create a swap file on a particular partition
+	if that partition contain 512 byte sectors. A nonstandard hard drive may have a
+	drive C that is standard (512 byte sectors), but all drives after C (D and
+	greater) are nonstandard (sector size other than 512).
+	
+	It is possible for a temporary swap file to exist on logical drives such as drive
+	D or E if Windows is installed on one of those drives.
+	
+	MORE INFORMATION
+	================
+	
+	The Swapfile program's 512 bytes per sector requirement is inherited from the
+	BIOS of the personal computer. Third-party partitioning utilities (such as
+	Ontrack's Disk Manager and Storage Dimensions' SpeedStor) circumvent this
+	limitation by translating all communication between the disk and the BIOS. To
+	ensure compatibility with the industry standard of 512 bytes per sector,
+	SWAPFILE.EXE was written to not support any type of disk translation.
+	
+	NOTE: If you use OEM versions of the FDISK command earlier than version 4.01,
+	which allow partitions greater than 32 MB, you encounter this problem. These OEM
+	versions of MS-DOS include Wyse DOS 3.21, NEC DOS 3.31, and Zenith DOS 3.3
+	Plus.
+	
+	If the drive has been partitioned using a third-party partitioning method, do not
+	use the Swapfile program. Corruption of the file allocation table (FAT) can
+	occur, resulting in data loss. Using FDISK is the recommended partitioning
+	method when you plan to use Windows utilities.
+	
+	REFERENCES
+	==========
+	
+	"Microsoft Windows User's Guide," pages 520-531
+	
+	Additional query words: 3.00 third party 3rd-party 3rd grey grayed non-standard swapfile swap file
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+	Version           : WINDOWS:3.0,3.0a,3.1,3.11
+	
+	=============================================================================
+	

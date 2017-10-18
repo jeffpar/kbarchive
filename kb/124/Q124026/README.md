@@ -1,0 +1,74 @@
+---
+layout: page
+title: "Q124026: DHCP Requests Fail on Logically Multihomed Server (Single NIC)"
+permalink: kb/124/Q124026/
+---
+
+## Q124026: DHCP Requests Fail on Logically Multihomed Server (Single NIC)
+
+	Article: Q124026
+	Product(s): Microsoft Windows NT
+	Version(s): 3.5,3.51,4.0
+	Operating System(s): 
+	Keyword(s): kbnetwork
+	Last Modified: 04-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+	- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Windows NT Dynamic Host Configuration Protocol (DHCP) client IP address lease
+	requests fails on a multihomed server configured with multiple logical IP
+	networks on a single network interface card (NIC).
+	
+	This logical multihomed system is a Windows NT Server with a single NIC
+	configured with multiple IP addresses for one physical segment. If this server
+	is also functioning as a DHCP server with active scopes configured for each
+	logical IP network, DHCP client requests are filled until the scope defining the
+	first logical IP address pool is exhausted. Further DHCP client requests fail to
+	be filled from the pool of IP addresses available from the second or higher
+	logical IP network scopes.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, install a NIC in the DHCP server for each logical
+	segment. Each NIC should be connected to the same physical segment and assigned
+	only one logical IP address. As DHCP scopes are created they will be made
+	available to the clients via the network interface card at this IP network. Also
+	verify that IP routing has been enabled on this multihomed DHCP server.
+	
+	STATUS
+	======
+	
+	This is by design. This forces clients residing on a physical segment to acquire
+	IP addresses that are within the same IP network scope.
+	
+	MORE INFORMATION
+	================
+	
+	Microsoft Windows NT Server 4.0 Service Pack 2 includes the ability to create
+	DHCP superscopes, which allows the administrator to group scopes together. This
+	eliminates the need of multiple adapters to service multiple scopes.
+	
+	For more information on superscopes, please see the following article in the
+	Microsoft Knowledge Base:
+	
+	Article : Q161571 Description: Using DHCP "Superscopes" to Serve Multiple Logical
+	Subnets
+	
+	Additional query words: prodnt adapter wfw wfwg tcp ip multinet
+	
+	======================================================================
+	Keywords          : kbnetwork 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+	Version           : :3.5,3.51,4.0
+	
+	=============================================================================
+	

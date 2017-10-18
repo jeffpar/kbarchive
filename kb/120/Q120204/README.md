@@ -1,0 +1,276 @@
+---
+layout: page
+title: "Q120204: Mozart: Manual Installation Instructions"
+permalink: kb/120/Q120204/
+---
+
+## Q120204: Mozart: Manual Installation Instructions
+
+	Article: Q120204
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): WINDOWS:1.0,1.0a
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 10-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Multimedia Mozart for Windows, versions 1.0, 1.0a 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article provides instructions to manually install Microsoft Mozart,
+	versions 1.0 and 1.0a.
+	
+	MORE INFORMATION
+	================
+	
+	These instructions assume:
+	
+	- Your hard disk is drive C
+	
+	- Your destination folder is C:\Mozart
+	
+	- Your Windows folder is C:\Windows
+	
+	- Your CD-ROM drive is drive D
+	
+	If your hard disk drive, destination folder, Windows folder, or CD-ROM drive
+	letters are different, replace the drive letters and folder names throughout
+	this article with the drive letters and folder names on your computer.
+	
+	NOTE: The following instructions discuss copying, editing, and modifying folders
+	and files. For more information about accomplishing these tasks in Windows, see
+	your Windows printed documentation or online Help.
+	
+	Steps for Windows or Windows for Workgroups, Versions 3.x
+	---------------------------------------------------------
+	
+	If you are running Microsoft Windows 3.x, follow these steps. When copying files,
+	exit Windows and copy from the MS-DOS command prompt. Allow MS-DOS to overwrite
+	any files it finds on your hard drive.
+	
+	1. Create a folder on your hard disk called C:\Mozart.
+	
+	  For example, type the following at the MS-DOS command prompt and press ENTER
+	  at the end of the line:
+	
+	  "md c:\mozart" (without the quotation marks)
+	
+	2. Copy all the files from the D:\Mozart folder to C:\Mozart. The files are:
+	   - Glossary.idx
+	
+	   - Index.nam
+	
+	   - Mozart.map
+	
+	   - Index.dat
+	
+	   - Mozart.exe (1.0 Only)
+	
+	   - Mozart mgf
+	
+	   - Index.map
+	
+	   - Msmozart.exe (1.0a Only)
+	
+	   - Mozart.mpf
+	
+	   - Readme.txt
+	
+	  For example, to copy Mozart.exe, type the following at the MS-DOS command
+	  prompt and press ENTER at the end of the line:
+	
+	  "copy d:\mozart\mozart.exe c:\mozart" (without the quotation marks)
+	
+	  IMPORTANT: Media Vision's Mozart sound card also uses a file named Mozart.exe.
+	  If you are using a Media Vision Mozart sound card, rename the Microsoft
+	  Mozart 1.0 Mozart.exe file to Msmozart.exe to prevent problems running
+	  Microsoft Mozart. To make sure you rename the correct Mozart.exe file, use
+	  the file dates and size to distinguish between the files. The Microsoft
+	  Mozart.exe file is 248,343 bytes and is dated 9-3-93. Remember to replace the
+	  file Mozart.exe with Msmozart.exe as it pertains in the following
+	  instructions.
+	
+	  NOTE: On the Mozart 1.0a CD, Mozart.exe has been renamed to Msmozart.exe and
+	  avoids this problem.
+	
+	3. Create a folder in C:\Mozart called either Illus256 or Illus16, depending on
+	  the video resolution you are using:
+	   - If you are using a 16-color video driver, use C:\Mozart\Illus16
+	
+	   - If you are using a 256-color video driver, use C:\Mozart\Illus256
+	
+	4. Create a folder named Hd in the folder created in step 3.
+	   - For 16-color settings, use C:\Mozart\Illus16\Hd
+	
+	   - For 256-color settings, use C:\Mozart\Illus256\Hd
+	
+	5. Copy all the files from either D:\Mozart\Illus16\Hd folder or
+	  D:\Mozart\Illus256\Hd folder to the matching folder on drive C.
+	
+	6. Copy all the files in the D:\Mozart\Msstp\Shared folder to the
+	  C:\Windows\System folder.
+	
+	7. Copy all the files in the D:\Mozart\Msstp\System folder to the
+	  C:\Windows\System folder.
+	
+	8. Install the fonts through Control Panel using the following steps:
+	  a. Double-click on the Fonts icon.
+	
+	  b. Click the Add button.
+	
+	  c. From the C:\Windows\System folder, click on the following fonts while
+	     holding down the CTRL key on your keyboard:
+	
+	  Millicent 10,12,14,16
+	  Millicent Bold 12,14
+	
+	  d. Click OK.
+	
+	9. Use a text editor, such as Microsoft Notepad, to make the following changes
+	  to the Mozart.ini file, which is located in the Windows folder. If the
+	  Mozart.ini file does not already exist, create one in the Windows folder with
+	  these entries:
+	
+	     [Mozart]
+	     CDPath=D:\Mozart
+	     HDPath=C:\Mozart
+	
+	10. Use a text editor to make the following changes to the Windows information
+	  files, which are located in the Windows folder:
+	
+	  Changes to the Win.ini File
+	  ---------------------------
+	
+	      [MCI EXTENSIONS]
+	      wav=waveaudio
+	
+	  Changes to the System.ini File
+	  ------------------------------
+	
+	      [Drivers]
+	      Wavemapper=msacm.drv
+	
+	      [MSACM]
+	      Install=msadpcm.acm
+	
+	      [MCI]
+	      cdaudio=mcicda.drv
+	      waveaudio=mciwave.drv
+	
+	11. Add the Mozart icons to Program Manager by following the instructions at the
+	  end of this article.
+	
+	12. Exit Windows and restart the computer. The installation is now complete.
+	
+	Steps for Windows 95
+	--------------------
+	
+	Follow these steps if you are using Microsoft Windows 95. When copying files, DO
+	NOT overwrite ANY existing files.
+	
+	CAUTION: Allowing the system files to be overwritten in Windows 95 may cause
+	improper system performance.
+	
+	1. Follow steps 1 through 6 in the Windows 3.x section above to copy program and
+	  shared files.
+	
+	2. DO NOT follow step 7 above. Step 7 is for Windows 3.x system files.
+	
+	3. Install the fonts with Control Panel using the following steps:
+	  a. From the Control Panel window, double-click Fonts.
+	
+	  b. On the File menu, click Install New Font.
+	
+	  c. Change the drive to your CD-ROM drive.
+	
+	  d. Double-click the Mozart folder, and then the Msstp folder, and then the
+	     Shared folder.
+	
+	  e. Click Select All to select both Millicent fonts.
+	
+	  f. Make sure the "Copy fonts to..." box is checked.
+	
+	  g. Click the OK button.
+	
+	4. Follow Step 9 above to Edit or Create the Mozart.ini file.
+	
+	5. Add the program icons or shortcuts using the appropriate section below as a
+	  guide.
+	
+	Create the Start Menu Shortcuts
+	-------------------------------
+	
+	If you are using Windows 95, add Mozart to the Start Menu by following these
+	instructions:
+	
+	1. Click the Start button, point to Settings, and then click Taskbar.
+	
+	2. Click the Start Menu Programs tab.
+	
+	3. Click Add.
+	
+	4. Type the following in the Command Line box, and then click Next:
+	
+	  "c:\mozart\mozart.exe (or c:\mozart\msmozart.exe for Mozart 1.0a)" (without
+	  the quotation marks)
+	
+	5. In the Select Program Folder dialog box, click on the Microsoft Multimedia
+	  folder to select it, and then click Next.
+	
+	  NOTE: If Microsoft Multimedia is not listed, create it as follows:
+	  a. Click New Folder
+	
+	  b. Type in the following, and then click Next:
+	
+	  "Microsoft Multimedia" (without the quotation marks)
+	
+	6. In the Select A Title For The Program dialog box, type the following, and
+	  then click Finish:
+	
+	  "Microsoft Mozart" (without the quotation marks)
+	
+	Create Program Manager Icons
+	----------------------------
+	
+	If you use the Windows Program Manager, create the Mozart icons as follows:
+	
+	1. Open the Microsoft Multimedia group. If this group does not already exist,
+	  create it as follows:
+	  a. On the File menu, click New.
+	
+	  b. Click Program Group, and then click OK.
+	
+	  c. In the Description box, type the following, and then click OK:
+	
+	  "Microsoft Multimedia" (without the quotation marks)
+	
+	2. On the File menu, click New.
+	
+	3. Click Program Item, and then click OK.
+	
+	4. Type in the Description and Command Line as listed below, and then click OK:
+	
+	     For Mozart 1.0:
+	     Description:       Microsoft Mozart
+	     Command Line:      c:\mozart\mozart.exe
+	
+	  -or-
+	
+	     For Mozart 1.0a:
+	     Description:       Microsoft Mozart
+	     Command Line:      c:\mozart\msmozart.exe
+	
+	Additional query words: kbhowto 1.0multi media multimedia multi-media mmtitles kbmm install create
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbHomeProdSearch kbHomeMMsearch kbMMMozart100 kbMMMozart100a
+	Version           : WINDOWS:1.0,1.0a
+	
+	=============================================================================
+	

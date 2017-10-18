@@ -1,0 +1,92 @@
+---
+layout: page
+title: "Q126960: How to Disable TabWorks as the Windows Shell"
+permalink: kb/126/Q126960/
+---
+
+## Q126960: How to Disable TabWorks as the Windows Shell
+
+	Article: Q126960
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:3.1,3.11
+	Operating System(s): 
+	Keyword(s): win31
+	Last Modified: 24-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows versions 3.1, 3.11 
+	- Microsoft Windows for Workgroups versions 3.1, 3.11 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	TabWorks from XSOFT is an application that can be used to replace Microsoft's
+	Program Manager as the Windows shell program. Many Compaq computers are shipped
+	with TabWorks installed as the default Windows shell.
+	
+	It may be necessary to disable TabWorks when you are troubleshooting problems.
+	This article describes how to disable or enable TabWorks.
+	
+	
+	MORE INFORMATION
+	================
+	
+	How to Disable TabWorks
+	-----------------------
+	
+	To disable TabWorks as the Windows shell and use Program Manager, follow these
+	steps:
+	
+	1. From the Options menu, choose Set Shell To/From Program Manager.
+	
+	2. In the Set Windows Shell dialog box, select the Program Manager option button
+	  and then choose the OK button.
+	
+	3. When you are prompted to, choose the Restart Windows button. TabWorks
+	  replaces the line
+	
+	     SHELL=C:\TABWORKS\PROGRAMS\TABWORKS.EXE
+	
+	  in the SYSTEM.INI file with the line
+	
+	     SHELL=PROGMAN.EXE
+	
+	  and restarts Windows using Program Manager as the Windows shell.
+	
+	How to Enable TabWorks
+	----------------------
+	
+	To use TabWorks as the Windows shell, follow these steps:
+	
+	1. In Program Manager, double-click the TabWorks icon in the TabWorks program
+	  group.
+	
+	2. From the Options menu, choose Set Shell To/From Program Manager.
+	
+	3. Select the TabWorks option button and then choose the OK button.
+	
+	4. When you are prompted to, choose the Restart Windows button.
+	
+	CAUTION: The TabWorks program group also contains an icon to remove TabWorks from
+	your computer. Choose this icon only if you want to permanently remove TabWorks
+	from your computer.
+	
+	The third-party products discussed here are manufactured by a vendor independent
+	of Microsoft; we make no warranty, implied or otherwise, regarding these
+	products' performance or reliability.
+	
+	For more information about TabWorks, contact XSOFT technical support at (800)
+	428-2995.
+	
+	Additional query words: kbhowto 3.10 3.11 tab works w_works tab-works turn off magic school bus explores the humany body explore solar system msb kids homekids
+	
+	======================================================================
+	Keywords          : win31 
+	Technology        : kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin310 kbWin311 kbWFW310 kbWFW311
+	Version           : WINDOWS:3.1,3.11
+	
+	=============================================================================
+	

@@ -1,0 +1,107 @@
+---
+layout: page
+title: "Q192712: SBS Err Msg: Unable to Display This Folder"
+permalink: kb/192/Q192712/
+---
+
+## Q192712: SBS Err Msg: Unable to Display This Folder
+
+	Article: Q192712
+	Product(s): Windows for Workgroups and Windows NT Networking Issues
+	Version(s): 5.0,8.03,8.5
+	Operating System(s): 
+	Keyword(s): EXC55SP3Fix
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Windows NT client, version 5.0 
+	- Microsoft Exchange Windows 95/98 client, version 5.0 
+	- Microsoft Outlook 97, version 8.03, used with:
+	   - the operating system: Microsoft Windows NT 
+	   - the operating system: Microsoft Windows 98 
+	   - the operating system: Microsoft Windows 95 
+	- Microsoft Outlook 98, version 8.5, used with:
+	   - the operating system: Microsoft Windows NT 
+	   - the operating system: Microsoft Windows 98 
+	   - the operating system: Microsoft Windows 95 
+	- Microsoft Outlook 2000 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	When you use the Microsoft Exchange Client and/or Microsoft Outlook 97/98 and
+	connect to an Exchange Server hosted on a computer running Microsoft Small
+	Business Server, the client logon attempt may fail with the following error:
+	
+	  Unable to display this folder, there are no additional Microsoft Exchange
+	  client licenses available.
+	
+	In addition, the following event may appear in the Exchange Server's event log:
+	
+	  Event ID: 201
+	  Source: LicenseService
+	  Type: Error
+	  Description: No license was available for user <domain>\<username>
+	  using product MSExchangeIS.
+	
+	This may happen even though there are licenses available.
+	
+	CAUSE
+	=====
+	
+	During the logon process from a client to the server, there are three
+	connections that are made: one for the actual client (Outlook or Exchange) and
+	two (see NOTE below) for the MAPI spooler. The client connects first and creates
+	a mapped file with the name derived from the server that it is connecting to.
+	The information contained in this file allows multiple connections to be linked
+	and only count as one user. When the MAPI spooler logs on and tries to open this
+	mapped file created by the client connect, the open failed because the file
+	handle was erroneously closed.
+	
+	This caused the MAPI spooler to create a new mapped file and, therefore,
+	incremented the user count to 2 for every client logon attempt. The MAPI spooler
+	then makes a second connection to the server and tries again to open the mapped
+	file created by the client connect. This open failed as well, leading the MAPI
+	spooler to create yet another mapped file and, therefore, incrementing the user
+	count to 3 for every client logon attempt. As a result, using a 5-user license
+	for Small Business Server would only allow 2 Outlook or Exchange client logon
+	attempts before running out of licenses.
+	
+	NOTE: The MAPI spooler opening 2 connections to the server was introduced in
+	Exchange Server 5.5 SP1; previous to this, it only opened one. So the number of
+	user connections seen as a result of this problem may fluctuate between 2 or 3,
+	depending on client versions. The number of User Connections can be seen by
+	using Performance Monitor and selecting the User Count counter under the
+	MSExchangeIS object.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, install Microsoft Outlook 2000.
+	
+	
+	
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed that this is a problem in the Microsoft products that
+	are listed at the beginning of this article. This problem was first corrected in
+	Exchange Server 5.5 Service Pack 3.
+	
+	Additional query words: sbsfaqtop XADM XCLN sbs hang SmallBiz Small Business Server 4.5
+	
+	======================================================================
+	Keywords          : EXC55SP3Fix 
+	Technology        : kbOutlookSearch kbExchangeSearch kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbOutlook97Search kbZNotKeyword3
+	Version           : :5.0,8.03,8.5
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

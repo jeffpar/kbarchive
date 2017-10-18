@@ -1,0 +1,106 @@
+---
+layout: page
+title: "Q221743: FIX: NVL() Releases Object Ref and Causes Fatal Error C0000005"
+permalink: kb/221/Q221743/
+---
+
+## Q221743: FIX: NVL() Releases Object Ref and Causes Fatal Error C0000005
+
+	Article: Q221743
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:5.0,5.0a,6.0
+	Operating System(s): 
+	Keyword(s): kberrmsg kbservicepack kbOOP kbvfp500aBUG kbvfp600 kbvfp600bug kbVS600sp2 kbVS600SP1 kb
+	Last Modified: 27-JUL-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Calling the NVL() function multiple times in Visual FoxPro 5.0 causes the
+	following error message:
+	
+	  Property <property name> is not method or event.
+	
+	If you click the Ignore button in the error dialog box and run the program again,
+	you normally see the following error:
+	
+	  An application error has occurred and an application log is being generated.
+	  VFP.exe
+	  Exception: access violation (0x0000005), Address: <memory address>
+	
+	In some instances, the first error message is skipped and the second error is
+	displayed.
+	
+	The following error can also occur:
+	
+	  The instruction at "0x00401e44" referenced memory at "0x010bb018". The memory
+	  could not be "read".
+	
+	In Visual FoxPro 6.0, the following error often appears after calling the NVAL()
+	function the third time:
+	
+	  Fatal error: Exception code: C0000005
+	
+	CAUSE
+	=====
+	
+	The NVL() function saved the handle, but it released the object reference.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article.
+	
+	This bug was corrected in Visual Studio 6.0 Service Pack 3.
+	
+	For more information about Visual Studio service packs, please see the following
+	articles in the Microsoft Knowledge Base:
+	
+	  Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+	
+	  Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Create a program that contains the following code:
+	
+	  ox = CreateObject("Lbltest")
+	  ox.Test()
+	  ox.Test()
+	  ox.Test()
+	
+	  Define Class Lbltest as Label
+	   Procedure Test
+	   oObj = NVL(.NULL.,This)
+	   ?oObj.name
+	   EndProc
+	   
+	  Enddefine
+	
+	2. Run the program.
+	
+	After accessing the Test procedure the third time, one of the errors listed in
+	the SYMPTOMS section above appears.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kberrmsg kbservicepack kbOOP kbvfp500aBUG kbvfp600 kbvfp600bug kbVS600sp2 kbVS600SP1 kbVS600sp3fix kbGrpDSFox 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+	Version           : WINDOWS:5.0,5.0a,6.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

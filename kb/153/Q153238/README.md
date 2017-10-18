@@ -1,0 +1,325 @@
+---
+layout: page
+title: "Q153238: HOWTO: Use GetChunk and AppendChunk Methods of RDO/ADO Object"
+permalink: kb/153/Q153238/
+---
+
+## Q153238: HOWTO: Use GetChunk and AppendChunk Methods of RDO/ADO Object
+
+	Article: Q153238
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 4.0,5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbGrpDSVBDB
+	Last Modified: 15-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 6.0, 5.0 
+	- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes how to use the GetChunk and AppendChunk methods of an RDO
+	and ADO column object. Included is the code for a working example of how to
+	implement this behavior.
+	
+	The GetChunk and AppendChunk methods work with the LongVarChar and LongVarBinary
+	column types, also known as TEXT and IMAGE columns, in Microsoft SQL Server. To
+	identify these column types in RDO, use the <Column Object>.Type property
+	that will return the constants rdLongVarChar or rdLongVarBinary, or use the
+	<Column object>.ChunkRequired property to determine if you need to use the
+	Get/AppendChunk methods to access the column. Each of these column types is
+	commonly referred to as Binary Large Objects (BLOBs), so the term BLOB will be
+	used for the remainder of this article.
+	
+	Following are some suggestions for using BLOBs with RDO:
+	
+	- Using BLOB columns in a SQL table will cause performance degradation at your
+	  server and add an extra layer of complexity in your application code that you
+	  can avoid. If you are storing files such as Paintbrush (.bmp), Microsoft Word
+	  (.doc), or just text (.txt) files, it is more efficient to store these files
+	  in your file system than in your table. You can do this by storing the UNC
+	  path for the file in a column of your table, then letting your Visual Basic
+	  code read the path and handle the file appropriately.
+	
+	- When selecting a result set containing BLOB columns, you should place the
+	  BLOB columns at the end of the select list. If you usually use the "Select *
+	  from table" syntax, you should change this to "Select char1, text1, image1
+	  from table" to explicitly reference each column and place the BLOB columns at
+	  the end.
+	
+	- When editing a BLOB column using the AppendChunk method, you should select at
+	  least one other editable non-BLOB column in your result set and edit the
+	  non-BLOB column as well as the BLOB column. If you do not edit the non-BLOB
+	  column, RDO will not raise an error but the data may not be saved back to the
+	  base table.
+	
+	- You cannot bind a BLOB value to a parameter marker because the AppendChunk
+	  method is not available on the rdoParameter object. If you want to pass a
+	  BLOB as an input parameter to a stored procedure, you will have to utilize
+	  the ODBC handle from RDO to process this through ODBC API calls. Fortunately,
+	  the ability to do this will be implemented in all future versions of RDO
+	  following version 1.0x.
+	
+	- If you are trying to display a bitmap image in a Picture control that is
+	  stored in a LongVarBinary column, keep in mind that the Picture control in
+	  Visual Basic does not have the capability of taking in a stream of bits via
+	  Visual Basic Applications (VBA) code. The only way to place a picture into
+	  the Picture control through code, or get the bits back out of a Picture
+	  control through code, is to use a file on the disk. You can also use the RDC
+	  and bind the Picture box to the BLOB column. This works well for reads
+	  (displaying the Picture), but updates are unstable in Visual Basic 4.0 due to
+	  problems in Visual Basic's binding manager. To perform updates, you should
+	  use code, rather than the RDC.
+	
+	With the ODBC cursor library, it is not possible to use the GetChunk or
+	AppendChunk methods on a resultset returned from a stored procedure. This is
+	because the BLOB data does not come across the pipe with the rest of the
+	resultset. RDO has to go back and use the SQLGetData or SQLPutData ODBC AP
+	functions on the column when you request it with the RDO GetChunk or AppendChunk
+	methods. When a stored procedure creates a result set that is returned to your
+	application, RDO can use the data in the result set, but it cannot go back to
+	the base tables and columns and perform the SQLGetData/SQLP tData because all it
+	knows is that the SQL Statement was something like "{call myproc(...)}", and
+	there is no way for the cursor library to know how to ask for the BLOB data
+	because there is no base table or column expressed there.
+	
+	With server side cursors, it is possible to get at your BLOB data. The
+	server-side cursor knows the content of the stored procedure and can thus get at
+	the base table. A limitation of this is that you can't create a server-side
+	cursor based on a stored procedure that has anything besides just one single
+	select statement in it (a SQL Server restriction), so it is pretty limiting and
+	doubtful that you would be able to use this as your primary technique.
+	
+	The fact that users want to update their BLOB column demands that they expose
+	their base tables and create the cursor by using a standard select statement
+	from that base table. This would be true even if you were coding directly to
+	ODBC (not an RDO thing), as well as dbLibary (a proprietary SQL Server API). If
+	you use Jet, you can't update cursors based on stored procedures at all because
+	they always become read-only.
+	
+	MORE INFORMATION
+	================
+	
+	The following example is divided into three separate procedures, Command1_Click,
+	ColumnToFile, and FileToColumn. ColumnToFile and FileToColumn are two
+	self-contained procedures that you should be able to paste directly into your
+	code if you are moving BLOB data back and forth from your table to files on
+	disk. Each of the procedures accept parameters that can be provided by your
+	application. Command1_Click contains the example code that makes the connection
+	to your database, creates the table CHUNKTABLE if it does not exist, and calls
+	ColumnToFile and FileToColumn procedures with the proper parameters.
+	
+	1. Start a new project in Visual Basic. Form1 is created by default.
+	
+	2. Add a Command button, Command1, to Form1.
+	
+	3. Paste the following code into the General Declarations section of Form1:
+	
+	     Private Sub Command1_Click()
+	       MousePointer = vbHourglass
+	       Dim cn As rdoConnection
+	       Dim rs As rdoResultset, TempRs As rdoResultset
+	       Dim cnstr As String, sqlstr As String
+	       cnstr = "Driver={SQLServer};Server=myserver;Database=pubs;Uid=sa;Pwd="
+	       sqlstr = "Select int1, char1, text1, image1 from chunktable"
+	
+	       rdoEnvironments(0).CursorDriver = rdUseServer
+	       Set cn = rdoEnvironments(0).OpenConnection( _
+	         "", rdDriverNoPrompt, False, cnstr)
+	       On Error Resume Next
+	       If cn.rdoTables("chunktable").Updatable Then
+	         'table exists
+	       End If
+	       If Err > 0 Then
+	         On Error GoTo 0
+	         Debug.Print "Creating new table..."
+	         cn.Execute "Create table chunktable(int1 int identity, " & _
+	                    "char1 char(30), text1 text, image1 image)"
+	         cn.Execute "create unique index int1index on chunktable(int1)"
+	       End If
+	       On Error GoTo 0
+	       Set rs = cn.OpenResultset(Name:=sqlstr, _
+	         Type:=rdOpenDynamic, _
+	         LockType:=rdConcurRowver)
+	       If rs.EOF Then
+	         rs.AddNew
+	         rs("char1") = Now
+	         rs.Update
+	         rs.Requery
+	       End If
+	       Dim currec As Integer
+	       currec = rs("int1")
+	       rs.Edit
+	       FileToColumn rs.rdoColumns("text1"), App.Path & "\README.TXT", 102400
+	       FileToColumn rs.rdoColumns("image1"), App.Path & "\SETUP.BMP", 102400
+	       rs("char1") = Now  'need to update at least one non-BLOB column
+	       rs.Update
+	
+	       'this code gets the columnsize of each column
+	       Dim text1_len As Long, image1_len As Long
+	       If rs("text1").ColumnSize = -1 Then
+	         'the function Datalength is SQL Server specific
+	         'so you may have to change this for your database
+	         sqlstr = "Select Datalength(text1) As text1_len, " & _
+	                  "Datalength(image1) As image1_len from chunktable " & _
+	                  "Where int1=" & currec
+	         Set TempRs = cn.OpenResultset(Name:=sqlstr, _
+	           Type:=rdOpenStatic, _
+	           LockType:=rdConcurReadOnly)
+	         text1_len = TempRs("text1_len")
+	         image1_len = TempRs("image1_len")
+	         TempRs.Close
+	       Else
+	         text1_len = rs("text1").ColumnSize
+	         image1_len = rs("image1").ColumnSize
+	       End If
+	
+	       ColumnToFile rs.rdoColumns("text1"), App.Path & "\text1.txt",  _
+	         102400, text1_len
+	       ColumnToFile rs.rdoColumns("image1"), App.Path & "\image1.bmp",  _
+	         102400, image1_len
+	       MousePointer = vbNormal
+	    End Sub
+	
+	     Sub ColumnToFile(Col As rdoColumn, ByVal DiskFile As String, _
+	       BlockSize As Long, ColSize As Long)
+	       Dim NumBlocks As Integer
+	       Dim LeftOver As Long
+	       Dim byteData() As Byte   'Byte array for LongVarBinary
+	       Dim strData As String    'String for LongVarChar
+	       Dim DestFileNum As Integer, i As Integer
+	
+	       ' Remove any existing destination file
+	       If Len(Dir$(DiskFile)) > 0 Then
+	         Kill DiskFile
+	       End If
+	
+	       DestFileNum = FreeFile
+	       Open DiskFile For Binary As DestFileNum
+	
+	       NumBlocks = ColSize \ BlockSize
+	       LeftOver = ColSize Mod BlockSize
+	       Select Case Col.Type
+	         Case rdTypeLONGVARBINARY
+	           byteData() = Col.GetChunk(LeftOver)
+	           Put DestFileNum, , byteData()
+	           For i = 1 To NumBlocks
+	             byteData() = Col.GetChunk(BlockSize)
+	             Put DestFileNum, , byteData()
+	           Next i
+	         Case rdTypeLONGVARCHAR
+	           For i = 1 To NumBlocks
+	             strData = String(BlockSize, 32)
+	             strData = Col.GetChunk(BlockSize)
+	             Put DestFileNum, , strData
+	           Next i
+	           strData = String(LeftOver, 32)
+	           strData = Col.GetChunk(LeftOver)
+	           Put DestFileNum, , strData
+	         Case Else
+	           MsgBox "Not a ChunkRequired column."
+	       End Select
+	       Close DestFileNum
+	
+	     End Sub
+	
+	     Sub FileToColumn(Col As rdoColumn, DiskFile As String, _
+	     BlockSize As Long)
+	       'moves a disk file to a ChunkRequired column in the table
+	       'A Byte array is used to avoid a UNICODE string
+	       Dim byteData() As Byte   'Byte array for LongVarBinary
+	       Dim strData As String    'String for LongVarChar
+	       Dim NumBlocks As Integer
+	       Dim filelength As Long
+	       Dim LeftOver As Long
+	       Dim SourceFile As Integer
+	       Dim i As Integer
+	       SourceFile = FreeFile
+	       Open DiskFile For Binary Access Read As SourceFile
+	       filelength = LOF(SourceFile) ' Get the length of the file
+	       If filelength = 0 Then
+	         Close SourceFile
+	         MsgBox DiskFile & " empty or not found."
+	       Else
+	         ' Calculate number of blocks to read and left over bytes
+	         NumBlocks = filelength \ BlockSize
+	         LeftOver = filelength Mod BlockSize
+	         Col.AppendChunk Null
+	
+	         Select Case Col.Type
+	           Case rdTypeLONGVARCHAR
+	             ' Read the 'left over' amount of LONGVARCHAR data
+	             strData = String(LeftOver, " ")
+	             Get SourceFile, , strData
+	             Col.AppendChunk strData
+	             strData = String(BlockSize, " ")
+	             For i = 1 To NumBlocks
+	               Get SourceFile, , strData
+	               Col.AppendChunk strData
+	             Next i
+	             Close SourceFile
+	           Case rdTypeLONGVARBINARY
+	             ' Read the left over amount of LONGVARBINARY data
+	             ReDim byteData(0, LeftOver)
+	             Get SourceFile, , byteData()
+	             Col.AppendChunk byteData()
+	             ReDim byteData(0, BlockSize)
+	             For i = 1 To NumBlocks
+	               Get SourceFile, , byteData()
+	               Col.AppendChunk byteData()
+	             Next i
+	             Close SourceFile
+	           Case Else
+	             MsgBox "not a chunkrequired column."
+	         End Select
+	       End If
+	
+	     End Sub
+	
+	4. You will need to change the Server, Database, UID, and PWD values in the
+	  cnstr variable in order to connect to your database.
+	
+	5. The code in the Command1_Click event expects to find two files named
+	  README.TXT and SETUP.BMP in the current directory. These files are usually
+	  found in the Windows directory. You can either move these files to your
+	  current directory or change the path to match another bitmap and text file on
+	  your hard drive.
+	
+	6. Press the F5 key to start the program.
+	
+	7. Click the Command1 button to execute the RDO code. The code will
+	  automatically create a table named chunktable, if it does not already exist,
+	  and move the text and bitmap files into and out of the BLOB columns.
+	
+	For information on ADO object, click the link below:
+	
+	  http://msdn.microsoft.com/library/default.asp?url=/library/en-us/off2000/html/acmthAppendChunkADOX.asp
+	
+	REFERENCES
+	==========
+	
+	Hitchhiker's Guide to Visual Basic and SQL Server, Microsoft Press. ISBN:
+	1-55615-906-4.
+	
+	For additional information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q152715 : RDO 1.0b Release Now Available
+	
+	Additional query words: kbVBp400 kbVBp600 kbdse kbDSupport kbVBp kbRDO kbVBp500
+	
+	======================================================================
+	Keywords          : kbGrpDSVBDB 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600 kbVB400Search kbVB400
+	Version           : :4.0,5.0,6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

@@ -1,0 +1,89 @@
+---
+layout: page
+title: "Q119353: UNCONF: PRB:GETS Disabled When All Records Are Deleted"
+permalink: kb/119/Q119353/
+---
+
+## Q119353: UNCONF: PRB:GETS Disabled When All Records Are Deleted
+
+	Article: Q119353
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:2.6
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 12-FEB-2000
+	
+	*****************************************************************
+	**                          - WARNING -                        **
+	**    THE INFORMATION BELOW IS PRELIMINARY AND HAS NOT BEEN    **
+	**    CONFIRMED, EDITED OR TESTED BY MICROSOFT.  USE ONLY      **
+	**    WITH DISCRETION.                                         **
+	*****************************************************************
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft FoxPro for Windows, version 2.6 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	All data-entry fields (gets) are disabled when all records are deleted from a
+	screen that was created through the ScreenWizard.
+	
+	CAUSE
+	=====
+	
+	The CASE structure that is used in the ScreenWizard disables the GET fields and
+	doesn't enable them when the ADD push-button is selected.
+	
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Enter the following into the Command window to create a new table:
+	
+	     CREATE TABLE DATA (code1 c(1), code2 c(1), code3 c(1))
+	
+	     INSERT INTO DATA (code1, code2, code3) ;
+	     VALUES ("A","B","C")
+	
+	     INSERT INTO DATA (code1, code2, code3) ;
+	     VALUES ("B","C","A")
+	
+	     INSERT INTO DATA (code1, code2, code3) ;
+	     VALUES ("C","A","B")
+	
+	     INSERT INTO DATA (code1, code2, code3) ;
+	     VALUES ("A","C","A")
+	
+	2. Run the ScreenWizard using the table called DATA.DBF. Add all the fields;no
+	  sorting, choose 'Save and run screen'. Name the screen DATA.SCX.
+	
+	3. On the new screen select the DELETE push-button. Delete the four(4) records
+	  inserted. When the last record is deleted, the ADD and CLOSE push-buttons
+	  will be active.
+	
+	4. Push the ADD push-button and try to enter something into the fields.
+	
+	All the get fields are disabled.
+	
+	RESOLUTION
+	==========
+	
+	Add the following line to the WHEN snippet for the ADD button:
+	
+	     SHOW GETS ENABLE
+	
+	or, close and reopen the screen.
+	
+	Additional query words: FoxWin screen window won't open edit unconfirmed
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbFoxproSearch kbFoxPro260
+	Version           : WINDOWS:2.6
+	
+	=============================================================================
+	

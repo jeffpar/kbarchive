@@ -1,0 +1,72 @@
+---
+layout: page
+title: "Q148744: Return of Arcade: How to Create Desktop Icons"
+permalink: kb/148/Q148744/
+---
+
+## Q148744: Return of Arcade: How to Create Desktop Icons
+
+	Article: Q148744
+	Product(s): Microsoft Home Games
+	Version(s): WINDOWS:1.0
+	Operating System(s): 
+	Keyword(s): kbenv kbusagekbfaq
+	Last Modified: 08-NOV-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Return of Arcade for Windows, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The following article tells how to create desktop icons, known as shortcuts, for
+	Return of Arcade.
+	
+	MORE INFORMATION
+	================
+	
+	To create desktop icons for Return of Arcade, do the following.
+	
+	NOTE: The following instructions use the game Dig Dug as an example. The item
+	name for Pole Position is PP.exe. For Pac Man it is Pacman.exe. For Galaxian it
+	is Galaxian.exe. To use these instructions to create icons for a game other than
+	Dig Dug, substitute the new item name in Step 3.
+	
+	1. With your right mouse button, click your desktop, point to New, and then
+	  click Shortcut.
+	
+	2. In the Command line box, enter the location name and name of the item,
+	  surrounded by quotation marks. The item name for Dig Dug is Digdug.exe.
+	
+	  For example, in the Command line box type the following:
+	
+	  "C:\Program Files\Microsoft Games\Return of arcade\Digdug.exe"
+	
+	  NOTE: You must include the quotation marks.
+	
+	  Where C is the letter of your hard drive, where you installed Return of Arcade
+	  and DigDug.exe is the item name of the game you are creating the shortcut
+	  for.
+	
+	3. Click Next.
+	
+	4. Enter the name of the shortcut, and then click Finish. For example, enter the
+	  following name and click Finish.
+	
+	  Dig Dug
+	
+	5. To start Dig Dug, double-click the shortcut.
+	
+	Additional query words: 1.00 short cut start 95 roa icon icons
+	
+	======================================================================
+	Keywords          : kbenv kbusage kbfaq
+	Technology        : kbGamesSearch kbArcadeRet kbZNotKeyword kbArcadeSearch kbZNotKeyword3
+	Version           : WINDOWS:1.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

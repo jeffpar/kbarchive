@@ -1,0 +1,125 @@
+---
+layout: page
+title: "Q134670: PC Gen: 3.5 Mail for PC Networks Disks 5-7 [3.5]"
+permalink: kb/134/Q134670/
+---
+
+## Q134670: PC Gen: 3.5 Mail for PC Networks Disks 5-7 [3.5]
+
+	Article: Q134670
+	Product(s): Microsoft Mail For PC Networks
+	Version(s): WINDOWS:3.5
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 04-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Mail for PC Networks, version 3.5 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The following are the directory listings of the version 3.5 Microsoft Mail for
+	PC Networks 3.5-inch [1.44MB] Disks 5 through 7.
+	
+	Disk 5 - Windows-based Client, Windows-based and OS/2
+	        Presentation Manager Workstation Software
+	--------------------------------------------------------------------------------------------------------
+	
+	Volume in drive A is MAIL35___05
+	Volume Serial Number is 0C2E-0411
+	Directory of A:\ 
+	
+	AB       DL$        52,231  06-09-95 12:00a AB.DL$
+	CONVERT  EX$        13,843  06-09-95 12:00a CONVERT.EX$
+	DEMILAYR DL$        28,783  06-09-95 12:00a DEMILAYR.DL$
+	DEMIWLO  DL$         3,318  06-09-95 12:00a DEMIWLO.DL$
+	FAXVIEW  EX$        49,089  06-09-95 12:00a FAXVIEW.EX$
+	FAXVIEW  HL$        26,157  06-09-95 12:00a FAXVIEW.HL$
+	FRAMEWRK DL$       123,183  06-09-95 12:00a FRAMEWRK.DL$
+	GDI      DL$        61,896  06-09-95 12:00a GDI.DL$
+	IMPEXP   DL$        31,507  06-09-95 12:00a IMPEXP.DL$
+	KERNEL   DL$        31,954  06-09-95 12:00a KERNEL.DL$
+	KEYBOARD DL$         2,950  06-09-95 12:00a KEYBOARD.DL$
+	MAILMGR  DL$        23,825  06-09-95 12:00a MAILMGR.DL$
+	MAILSPL  EX$        26,284  06-09-95 12:00a MAILSPL.EX$
+	MAPI     DL$        30,086  06-09-95 12:00a MAPI.DL$
+	MSMAIL3  FO$         2,640  06-09-95 12:00a MSMAIL3.FO$
+	MSSFS    DL$       150,662  06-09-95 12:00a MSSFS.DL$
+	PABNSP   DL$        23,272  06-09-95 12:00a PABNSP.DL$
+	SCHEDMSG DL$        36,644  06-09-95 12:00a SCHEDMSG.DL$
+	SENDFILE DL$         3,504  06-09-95 12:00a SENDFILE.DL$
+	SMI      XL$         2,139  06-09-95 12:00a SMI.XL$
+	SMIAUTO  DO$         1,924  06-09-95 12:00a SMIAUTO.DO$
+	SMIINST  DO$         3,686  06-09-95 12:00a SMIINST.DO$
+	STORE    DL$       128,973  06-09-95 12:00a STORE.DL$
+	TRNSCHED DL$         7,996  06-09-95 12:00a TRNSCHED.DL$
+	       24 file(s)        866,546 bytes
+	        0 dir(s)         584,704 bytes free
+	
+	Disk 6 - Windows-based Client, Windows-based and OS/2
+	        Presentation Manager Workstation Software
+	--------------------------------------------------------------------------------------------------------
+	
+	Volume in drive A is MAIL35___06
+	Volume Serial Number is 0100-0511
+	Directory of A:\ 
+	
+	CBTLIB3  DL$        10,106  06-09-95 12:00a CBTLIB3.DL$
+	CLKLIB   DE$         4,549  06-09-95 12:00a CLKLIB.DE$
+	MAILSPL  IC$           467  06-09-95 12:00a MAILSPL.IC$
+	MSMAIL   HL$       184,972  06-09-95 12:00a MSMAIL.HL$
+	MSMAIL   IC$           485  06-09-95 12:00a MSMAIL.IC$
+	MSMAIL   LE$       322,963  06-09-95 12:00a MSMAIL.LE$
+	PLAY     EX$        64,256  06-09-95 12:00a PLAY.EX$
+	USER     DL$       138,138  06-09-95 12:00a USER.DL$
+	WINHELP  EX$       142,018  06-09-95 12:00a WINHELP.EX$
+	WINHELP  HL$        17,863  06-09-95 12:00a WINHELP.HL$
+	       10 file(s)        885,817 bytes
+	        0 dir(s)         570,368 bytes free
+	
+	Disk 7 - MS-DOS-based Client Workstation Programs
+	-------------------------------------------------
+	
+	Volume in drive A is MSMAIL32
+	Volume Serial Number is 252E-07CE
+	Directory of A:\ 
+	
+	DISPLAY  EX$        67,573  03-24-93 12:00a DISPLAY.EX$
+	ENGDIS   HL$         4,389  03-24-93 12:00a ENGDIS.HL$
+	ENGMAI   GL$         3,709  03-24-93 12:00a ENGMAI.GL$
+	ENGMAI   HL$        60,793  03-24-93 12:00a ENGMAI.HL$
+	ENGMON   GL$         1,093  03-24-93 12:00a ENGMON.GL$
+	ENGMON   HL$         9,982  03-24-93 12:00a ENGMON.HL$
+	ENGOPE   HL$         3,393  03-24-93 12:00a ENGOPE.HL$
+	FLAGDOWN CO$            26  03-24-93 12:00a FLAGDOWN.CO$
+	HOTKEY   EX$         5,686  03-24-93 12:00a HOTKEY.EX$
+	MAIL     EX$       144,970  03-24-93 12:00a MAIL.EX$
+	MICRO    EX$         8,470  03-24-93 12:00a MICRO.EX$
+	MONITOR  EX$        43,084  03-24-93 12:00a MONITOR.EX$
+	MSCAPT   EX$        18,885  03-24-93 12:00a MSCAPT.EX$
+	MSHOTKEY EX$         5,920  03-24-93 12:00a MSHOTKEY.EX$
+	OPERATOR EX$        32,489  03-24-93 12:00a OPERATOR.EX$
+	PIVIEW   EX$        42,505  03-24-93 12:00a PIVIEW.EX$
+	POPUP    CO$            26  03-24-93 12:00a POPUP.CO$
+	PPB      EX$        31,958  03-24-93 12:00a PPB.EX$
+	REMOVEIT CO$            26  03-24-93 12:00a REMOVEIT.CO$
+	REMOVEOP CO$            26  03-24-93 12:00a REMOVEOP.CO$
+	SNAPSHOT &$            429  03-24-93 12:00a SNAPSHOT.&$
+	SNAPSHOT BI$        21,450  03-24-93 12:00a SNAPSHOT.BI$
+	VIEW     EX$         5,533  03-24-93 12:00a VIEW.EX$
+	       23 file(s)        512,415 bytes
+	        0 dir(s)         938,496 bytes free
+	
+	Additional query words: 3.50 dirmail
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN350
+	Version           : WINDOWS:3.5
+	
+	=============================================================================
+	

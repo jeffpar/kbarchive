@@ -1,0 +1,81 @@
+---
+layout: page
+title: "Q245465: XFOR: Configuring Message Filtering on the Internet Mail Service"
+permalink: kb/245/Q245465/
+---
+
+## Q245465: XFOR: Configuring Message Filtering on the Internet Mail Service
+
+	Article: Q245465
+	Product(s): Microsoft Exchange
+	Version(s): winnt:5.5 SP2
+	Operating System(s): 
+	Keyword(s): exc55sp2
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.5 SP2 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The Internet Mail Service in Microsoft Exchange Server 5.5 with Service Pack 2
+	(SP2) or later installed has message filtering capabilities that you can
+	configure within the Exchange Server Administrator program. Use the Message
+	Filtering feature to add domains or users who are not allowed to deliver SMTP
+	messages to your site.
+	
+	MORE INFORMATION
+	================
+	
+	To configure Message Filtering to restrict delivery of SMTP messages to your
+	site:
+	
+	1. Open the Internet Mail Service properties, and click the Connections tab.
+	
+	2. Click Message Filtering.
+	
+	3. Click Add.
+	
+	4. To prevent a specific user from delivering messages to your site, type the
+	  user's alias and domain name in the following format:
+	
+	  "<username>@<domainname>.com" (without the quotation marks)
+	
+	5. To prevent all users in a specific domain from delivering messages to your
+	  site, type the domain name in the following format:
+	
+	  "@<domainname>.com" (without the quotation marks)
+	
+	6. If you want the Internet Mail Service to automatically delete junk e-mail
+	  messages, click to select the "Delete messages instead of moving to turf
+	  directory" check box.
+	
+	7. If you want the messages to be saved in a "turf" folder, click to clear the
+	  "Delete messages instead of moving to turf directory" check box, and manually
+	  create the turf folder.
+	
+	8. Save the changes, then start and restart the Internet Mail Service for the
+	  changes to take effect.
+	
+	For additional information, click the article numbers below to view the articles
+	in the Microsoft Knowledge Base:
+	
+	  Q193926 XFOR: TURFDIR Must Be Manually Created for Message Filtering
+	
+	  Q197289 XFOR: Internet Mail Service May Not Save Turfed Messages or Saves
+	  Them to an Unexpected Location
+	
+	Additional query words: spam, spamming, filter, prevent, imc, IMS
+	
+	======================================================================
+	Keywords          : exc55sp2 
+	Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange550SP2
+	Version           : winnt:5.5 SP2
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

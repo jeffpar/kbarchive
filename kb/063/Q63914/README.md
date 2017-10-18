@@ -1,0 +1,91 @@
+---
+layout: page
+title: "Q63914: Definition of SMARTDrive Double Buffering"
+permalink: kb/063/Q63914/
+---
+
+## Q63914: Definition of SMARTDrive Double Buffering
+
+	Article: Q63914
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:3.0,3.0a
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 08-OCT-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows versions 3.0, 3.0a 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Microsoft Windows version 3.0 does not run properly in enhanced mode on machines
+	equipped with Bus Master cards unless SMARTDrive is also running. The new SCSI
+	drive controllers are an example of such a system. If SMARTDrive is not running,
+	Windows 3.0 may stop responding (hang or crash) in enhanced mode on these
+	systems.
+	
+	SMARTDrive provides double buffering when Windows is running in enhanced mode,
+	which resolves this problem.
+	
+	MORE INFORMATION
+	================
+	
+	Double buffering is a concept that addresses some problems with certain types of
+	hardware. The definition of double buffering, in the case of SMARTDrive, is as
+	follows:
+	
+	  ALL read/write operations to any SMARTDrive managed drive will always be done
+	  through the SMARTDrive-managed low- memory buffer regardless of any other
+	  parameters of the read/write. In other words, the read/write address for the
+	  operation passed to the hardware will ALWAYS be the address of a buffer
+	  inside SMARTDrive. The data is transferred from/to the real address for the
+	  operation, to/from the SMARTDrive buffer at an appropriate time (before or
+	  after the request) for the operation.
+	
+	This is important because a Bus Master DMA hard disk controller does NOT use the
+	system DMA controller, (that's why it's called a BUS master card). For Windows
+	enhanced mode, this would normally be a problem. Since the Bus Master hardware
+	is not "virtualized," like the system DMA controller is, the correct linear to
+	physical address mapping isn't performed for the read/write operation.
+	
+	This means that the read/write may be performed to the incorrect physical address
+	and the system will crash. By turning on double buffering in SMARTDrive (this is
+	done automatically by enhanced-mode Windows), all read/write operations to the
+	drive are transferred through a low-memory SMARTDrive buffer where the following
+	is true:
+	
+	  linear address = physical address
+	
+	As a result the Bus Master disk hardware needs to be virtualized because it's
+	been arranged, through SMARTDrive double buffering, for all read/write
+	operations to the disk to occur at an address where Linear=Physical. Most of the
+	new SCSI drive controllers are examples of such Bus Master Cards. If you don't
+	load SMARTDrive, these disks do NOT work with enhanced-mode Windows. If you load
+	SMARTDrive, they DO work. The reason is the double buffering that SMARTDrive is
+	told to do when enhanced mode is operating.
+	
+	Double buffering has a performance impact on overall disk performance. This cost
+	is judged to be "worth the benefit" of getting the product to work on a broader
+	range of MS-DOS platforms.
+	
+	If you want to learn more about the importance/relevance of Linear versus
+	Physical addresses, and how this impacts the operation of transfers to/from a
+	hardware device in the MS-DOS context, check the local bookstore for a book on
+	the operation of virtual memory, in paging operating systems, that uses an
+	operating system operating on the Intel 80386 processor as its standard "working
+	example." An example is "The 80386 Book," by Ross P. Nelson, published by
+	Microsoft Press.
+	
+	Additional query words: 3.00 3.0 3.0a 3.00a SmartDrive.sys winmem win30
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+	Version           : WINDOWS:3.0,3.0a
+	
+	=============================================================================
+	

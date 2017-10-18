@@ -1,0 +1,151 @@
+---
+layout: page
+title: "Q297521: DB2OLEDB Provider Overlaps Meta Data After Column 84"
+permalink: kb/297/Q297521/
+---
+
+## Q297521: DB2OLEDB Provider Overlaps Meta Data After Column 84
+
+	Article: Q297521
+	Product(s): Microsoft SNA Server
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbhis2000 kbhis2000bug
+	Last Modified: 08-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Host Integration Server 2000 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The OLE DB Provider for DB2 that is included with Host Integration Server (HIS)
+	2000 returns incorrect meta data for tables that contain more than 84 columns.
+	For example, the meta data for column 85 overwrites the meta data for column 1
+	when the OLE DB Provider returns the columns.
+	
+	CAUSE
+	=====
+	
+	Distributed Relational Database Architecture (DRDA) returns late column
+	descriptors in groups. Each group can have a maximum of 84 column descriptors.
+	If there are more than 84 columns in a table, the late column descriptors are
+	sent in additional groups. The OLE DB Provider for DB2 in HIS 2000 incorrectly
+	restarts the column count for each descriptor group that it receives. The result
+	is that the first column descriptor is overwritten by the 85th column
+	descriptor, the second column descriptor is overwritten by the 86th column
+	descriptor, and so forth. This repeats for each additional group of 84 column
+	descriptors, so that the first column descriptor is overwritten by the 169th
+	column descriptor.
+	
+	
+	RESOLUTION
+	==========
+	
+	A supported fix is now available from Microsoft, but it is only intended to
+	correct the problem described in this article and should be applied only to
+	systems experiencing this specific problem. This fix may receive additional
+	testing at a later time, to further ensure product quality. Therefore, if you
+	are not severely affected by this problem, Microsoft recommends that you wait
+	for the next Microsoft Host Integration Server 2000 service pack that contains
+	this fix.
+	
+	To resolve this problem immediately, contact Microsoft Product Support Services
+	to obtain the fix. For a complete list of Microsoft Product Support Services
+	phone numbers and information about support costs, please go to the following
+	address on the World Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	NOTE: In special cases, charges that are normally incurred for support calls may
+	be canceled, if a Microsoft Support Professional determines that a specific
+	update will resolve your problem. Normal support costs will apply to additional
+	support questions and issues that do not qualify for the specific update in
+	question.
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	+---------------------------------+
+	| File name    | Date     | Time  | 
+	+---------------------------------+
+	| MSEIDRDA.DLL | 01/25/01 | 12:00 | 
+	+---------------------------------+
+	| MSEIDB2D.DLL | 01/25/01 | 12:00 | 
+	+---------------------------------+
+	
+	NOTE: Because of file dependencies, the most recent fix that contains the above
+	files may also contain additional files.
+	
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Micrsoft Host Integration Server
+	2000.
+	
+	MORE INFORMATION
+	================
+	
+	The following illustrates one example of how this problem can be reproduced:
+	
+	1. Create a table in SQL Server that has more than 84 columns. The following is
+	  an example:
+	
+	COL01 CHAR(10)
+	COL02 CHAR(10)
+	COL03 CHAR(10)
+	...
+	COL84 CHAR(10)
+	COL85 INT
+	COL86 VARCHAR(20)
+	
+	2. Create a new DTS package.
+	
+	3. Create a new connection for SQL Server in the DTS package.
+	
+	4. Create a new connection for the AS/400 in the DTS package by using the OLE DB
+	  Provider for DB2.
+	
+	5. Create a new Transform Data Task between (2) and (3).
+	
+	- Source : Connection (2)
+	- Destination : Connection (3)
+	
+	6. Set the property of (4):
+	
+	- Select the [Source] tab and select (1) as the table.
+	- Select the [Destination] tab and click the [Create...] button to create a new
+	table on the AS/400.
+	
+	NOTE: If the Default Schema of the DB2OLEDB data source differs from the current
+	library of the AS/400 user account, the schema name should be added to the SQL
+	statement manually.
+	
+	The column information appears, but the metadata for columns 1 and 2 are
+	incorrect:
+	
+	COL01 INT
+	COL02 VARCHAR(20)
+	COL03 CHAR(10)
+	...
+	COL84 CHAR(10)
+	COL85 INT
+	COL86 VARCHAR(20)
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbhis2000 kbhis2000bug 
+	Technology        : kbAudDeveloper kbHostIntegServ2000
+	Version           : :
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

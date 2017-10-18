@@ -1,0 +1,215 @@
+---
+layout: page
+title: "Q235048: Quick Course in Microsoft Internet Explorer 5"
+permalink: kb/235/Q235048/
+---
+
+## Q235048: Quick Course in Microsoft Internet Explorer 5
+
+	Article: Q235048
+	Product(s): Microsoft Press
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbdocfix kbdocerr
+	Last Modified: 07-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- MSPRESS Quick Course in Microsoft Internet Explorer 5 ISBN 1-57231-989-5 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article contains comments, corrections, and information about known errors
+	relating to the Microsoft Press book Quick Course in Microsoft Internet Explorer
+	5, ISBN 1-57231-989-5.
+	
+	The following topics are covered:
+	
+	- LOC Page: Name And Address Of Online Press Have Changed
+	
+	- Pages 12 & 13: My Computer Window Incorrect
+	
+	- Page 38: Step 1 Is Incorrect
+	
+	- Page 47: Graphic And Procedure Have Changed
+	
+	- Page 48: Graphic And Procedure Have Changed
+	
+	- Page 51: Organize Favorites Dialog Box Needs More Links
+	
+	- Page 67: No Junk Mail Folder In Outlook Express
+	
+	- Page 73: Procedure And Graphics Are Incorrect
+	
+	- Pages 76, 86, 91, 97, 101, 104, 117: Junk Mail Folder Not In Inbox
+	
+	- Page 107: Graphic Will Not Match Computer Screen
+	
+	- Page 121: Name Of Directory Server Is Incorrect
+	
+	- Pages 144-146: Procedures Are Incorrect
+	
+	- Page 113: Step 3 Is Incomplete
+	
+	MORE INFORMATION
+	================
+	
+	LOC Page: Name And Address Of Online Press Have Changed
+	-------------------------------------------------------
+	
+	Online Press has merged with another company and now has a new name and address.
+	Please replace the text in green on the LOC page with the following text:
+	
+	"A Quick Course Education/Training Edition for this title is published by Online
+	Training Solutions, Inc. (OTSI). For information about supplementary workbooks,
+	contact OTSI at 15422 Bel-Red Road, Redmond, WA 98052, USA. 1-800-854-3344.
+	E-mail: quickcourse@otsiweb.com."
+	
+	
+	Pages 12 & 13: My Computer Window Incorrect
+	-------------------------------------------
+	
+	The three graphics that depict the My Computer window may not match your computer
+	screen.
+	
+	
+	Page 38: Step 1 Is Incorrect
+	----------------------------
+	
+	On page 38, step 1 should read as follows:
+	
+	"Here you type what you want to search for, and you specify the database, or
+	search provider, you want to use by selecting it from a drop-down list. Clicking
+	Go initiates the search. (Don't worry if your screen looks different. The site
+	may have changed, but it should still work essentially the same way.)"
+	
+	
+	Page 47: Graphic And Procedure Have Changed
+	-------------------------------------------
+	
+	This Web site has changed so the graphics on this page will not match what you
+	see on your computer screen. Therefore, the procedure needs to be modified as
+	follows:
+	
+	  2. Click Senate Homepage under Legislative Branch to display the Senate Web
+	  site...
+	
+	  3. Find the Senators hyperlink and click it to display a list of hyperlinks to
+	  Senator information.
+	
+	  4. In the Directory of Senators, click the name of one of your US Senators...
+	
+	
+	Page 48: Graphic And Procedure Have Changed
+	-------------------------------------------
+	
+	This Web site has changed so the graphic on this page is no longer correct.
+	Therefore, the sentence in parentheses following the graphic is also incorrect.
+	
+	Step 2 should be reworded as follows:
+	
+	"Scroll through the Thomas home page to get an idea of the information you can
+	access here, and then explore the Bills category, and check out the details of
+	one specific bill."
+	
+	
+	Page 51: Organize Favorites Dialog Box Needs More Links
+	-------------------------------------------------------
+	
+	Internet Explorer 5 contains more links than are pictured here.
+	
+	
+	Page 67: No Junk Mail Folder In Outlook Express
+	-----------------------------------------------
+	
+	There is no Junk Mail folder in the Inbox in Outlook Express.
+	
+	
+	Page 73: Procedure And Graphics Are Incorrect
+	---------------------------------------------
+	
+	Change the last sentence in step 2 to read:
+	
+	"If you are not automatically connected to an e-mail server on your
+	organization's network, you may see this dialog box:"
+	
+	Change step 3 to read:
+	
+	"Click the Work Offline button. Then click the Close button to close the
+	error-reporting dialog box."
+	
+	The last graphic on the page will not match your screen, as it will not have the
+	Junk Mail folder in the Inbox.
+	
+	
+	Pages 76, 86, 91, 97, 101, 104, 117: Junk Mail Folder Not In Inbox
+	------------------------------------------------------------------
+	
+	The Inbox in Outlook Express does not contain a folder for Junk Mail.
+	
+	
+	Page 107: Graphic Will Not Match Computer Screen
+	------------------------------------------------
+	
+	The graphic on page 107 will not match your computer screen.
+	
+	
+	Page 121: Name Of Directory Server Is Incorrect
+	-----------------------------------------------
+	
+	In the second graphic on this page, the information in the directory server text
+	box should say:
+	
+	"uls.microsoft.com"
+	
+	
+	Pages 144-146: Procedures Are Incorrect
+	---------------------------------------
+	
+	The procedure that begins on page 144 and continues to page 145 is incorrect.
+	
+	On page 144 change step 2 to read: "Click the View button at the top of the
+	Explorer bar..."
+	
+	On page 145, in step 3, italicize the word "Inter-Links" in the second sentence
+	only.
+	
+	The graphic appearing in the procedure beginning on page 145 and continuing on
+	page 146 is also incorrect.
+	
+	The sentence after the graphic on page 145 should read: " ...and has moved the
+	Standard toolbar into the space formerly occupied by the title bar at the top of
+	the screen." This sentence should be followed by a new step 2 that reads: "2.
+	Right-click the toolbar and choose Menu Bar from the shortcut menu."
+	
+	On page 146, re-number steps 2 and 3 to be 3 and 4.
+	
+	In the new step 3, on page 146, change the text to read: "Right-click the toolbar
+	again and choose Address Bar..."
+	
+	
+	Page 113: Step 3 Is Incomplete
+	------------------------------
+	
+	Please add the following sentence at the end of step 3:
+	
+	"(You may have to choose this command twice.)"
+	
+	
+	Microsoft Press is committed to providing informative and accurate books. All
+	comments and corrections listed above are ready for inclusion in future
+	printings of this book. If you have a later printing of this book, it may
+	already contain most or all of the above corrections.
+	
+	Additional query words: EUBOOK IE5
+	
+	======================================================================
+	Keywords          : kbdocfix kbdocerr 
+	Technology        : kbMSPressSearch
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

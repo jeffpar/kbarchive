@@ -1,0 +1,124 @@
+---
+layout: page
+title: "Q87269: Windows Err Msg: Unable to Start Enhanced Mode...Back Fill"
+permalink: kb/087/Q87269/
+---
+
+## Q87269: Windows Err Msg: Unable to Start Enhanced Mode...Back Fill
+
+	Article: Q87269
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): 3.0,3.0a,3.1,3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 06-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The following error message is displayed when you try to start Windows in 386
+	enhanced mode:
+	
+	  EMM386: Unable to start Enhanced Mode Windows due to base memory back fill
+	
+	CAUSE
+	=====
+	
+	This message appears if either of the following conditions is true:
+	
+	- Your memory manager is configured to back fill base memory.
+	
+	  -or-
+	
+	- Conventional memory is improperly set in the CMOS settings; that is,
+	  conventional memory is set to 512 kilobytes (K) instead of 640K.
+	
+	RESOLUTION
+	==========
+	
+	To correct this problem, reconfigure your CMOS settings or disable base memory
+	back fill.
+	
+	MORE INFORMATION
+	================
+	
+	On systems with CGA or Hercules video cards, the A000-AFFF memory range is
+	available for base memory back fill or as upper memory blocks. If the memory is
+	used to back fill base memory, the MEM and CHKDSK commands generally report more
+	than 640K conventional memory available. 386 enhanced mode is not compatible
+	with base memory back fill.
+	
+	When using EMM386.EXE, consider the following:
+	
+	- Do not include the A000-AFFF memory range by removing the I=A000-AFFF
+	  statement on the EMM386 device line in the CONFIG.SYS file. EMM386.EXE does
+	  not use the A000 range by default.
+	
+	  -or-
+	
+	- Include only A0FF-AFFF and use it with the NOEMS or RAM switch to load
+	  devices high with MS-DOS version 5.0 or later. For example:
+	
+	  DEVICE=C:\WINDOWS\EMM386.EXE NOEMS I=A0FF-AFFF
+	
+	  -or-
+	
+	- Run Windows 3.1 in standard mode by typing "win /s" (without the quotation
+	  marks) at the MS-DOS command prompt.
+	
+	OTHER MEMORY MANAGERS
+	---------------------
+	
+	386MAX:
+	
+	If you use 386MAX by Qualitas to back fill base memory, the following error
+	message is displayed:
+	
+	  386MAX VxD Error: NOLOW option required. 386MAX VxD not loaded. Windows
+	  initialization terminated. Press any key to return to DOS.
+	
+	To eliminate this problem, edit the 386MAX.PRO file in the 386MAX directory and
+	add the line "NOLOW" (without the quotation marks). This includes the A000 range
+	as upper memory address space as opposed to back filling.
+	
+	For more information on the NOLOW feature and 386MAX.PRO, consult your 386MAX
+	documentation or contact Qualitas.
+	
+	QEMM386:
+	
+	If you back fill with Quarterdeck's QEMM386, the following error message is
+	displayed:
+	
+	  Either memory is insufficient to run KRNL386.EXE or the value of the
+	  Windowmemsize entry in the SYSTEM.INI is too large. You need to run the Setup
+	  program again.
+	
+	To work around the problem, use QEMM to disable the base memory back fill by not
+	including the A000 range or by only including A0FF-AFFF.
+	
+	NOTE: Increasing available memory, adjusting the Windowmemsize value in the
+	[386Enh] section of the SYSTEM.INI file, or running the Windows Setup program
+	will have no effect on the error message.
+	
+	For more information about including memory ranges, please refer to your QEMM
+	documentation or contact Quarterdeck.
+	
+	The products included here are manufactured by vendors independent of Microsoft;
+	we make no warranty, implied or otherwise, regarding these products' performance
+	or reliability.
+	
+	Additional query words: 3.00 3.00a 3.10 3.11 err msg backfill Compuadd
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+	Version           : :3.0,3.0a,3.1,3.11
+	
+	=============================================================================
+	

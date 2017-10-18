@@ -1,0 +1,235 @@
+---
+layout: page
+title: "Q177463: The Basics of Reading SPX Traces"
+permalink: kb/177/Q177463/
+---
+
+## Q177463: The Basics of Reading SPX Traces
+
+	Article: Q177463
+	Product(s): Microsoft Windows NT
+	Version(s): WinNT:4.0
+	Operating System(s): 
+	Keyword(s): kbnetwork kbhowto
+	Last Modified: 09-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 4.0 
+	- Microsoft Windows NT Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article covers some basic concepts and tips needed for reading SPX traces.
+	The trace analysis is done with Network Monitor, so you may see different
+	results with Network General Sniffer.
+	
+	MORE INFORMATION
+	================
+	
+	SPX is connection-oriented network protocols that ride on top of IPX. Programs
+	that need connection oriented data connection can use this protocol.
+	
+	A good example is Lotus Notes.
+	
+	SPX Header
+	----------
+	
+	The SPX header is 12 bytes long. A packet type of 0x5 in the IPX packet indicates
+	that the packet uses SPX for transport.
+	
+	SPX header has the following fields:
+	
+	+---------------------------------------+
+	| Connection Control        | (1 Byte)  | 
+	+---------------------------------------+
+	| DataStream Type           | (1 Byte)  | 
+	+---------------------------------------+
+	| Source Connection ID      | (2 Bytes) | 
+	+---------------------------------------+
+	| Destination Connection ID | (2 Bytes) | 
+	+---------------------------------------+
+	| Sequence Number           | (2 Bytes) | 
+	+---------------------------------------+
+	| Acknowledgment Number     | (2 Bytes) | 
+	+---------------------------------------+
+	| Allocation Number         | (2 Bytes) | 
+	+---------------------------------------+
+	
+	Connection Control
+	------------------
+	
+	Connection Control is equivalent to the TCP flags in functionality. Connection
+	control controls the bi-directional flow of data, congestion control, and so
+	forth. The connection control field can have the following values. These values
+	can be logical or together to set multiple flags.
+	
+	End-of-Message (0x10):
+	
+	Indicates the end of message to the transmission partner. Because SPX is a
+	message-based transport protocol, the sending side sets this flag to indicate
+	the message is complete. After the receiving side gets this packet, it will pass
+	the data in the message buffer to the application above. This flag is also set
+	during a session disconnection.
+	
+	Acknowledgment required (0x40):
+	
+	Data has been sent and acknowledgment is required. This is an indication to the
+	transmission partner that an acknowledgment is needed for this packet before
+	more data can be sent.
+	
+	System Packet (0x80):
+	
+	This is an acknowledgment packet. It is used internally by the SPX protocol to
+	confirm if the session partner is up and running on an idle session.
+	
+	DataStream Type
+	---------------
+	
+	This field indicates the type of data contained within the packet. It can be set
+	to a defined number by the application through Winsock. The main purpose of this
+	field is to provide a mechanism for graceful session disconnection. By default,
+	it has one of the following values:
+	
+	End-of-Connection (0xFE):
+	
+	Generated to indicate that a session partner wishes to terminate a session
+	
+	End-of-Connection (0xFF):
+	
+	Transmitted upon receipt of an End-of-Connection request.
+	
+	Source and Destination Connection ID
+	------------------------------------
+	
+	These are two bytes fields, they are used to de-multiplex SPX sessions over a
+	single socket at the IPX level. Because the sender does not know the destination
+	connection ID during the initial connection, the destination connection ID will
+	be set to 0XFFFF.
+	
+	Sequence Number
+	---------------
+	
+	Sequence number is a 2 byte field that contains the count of data packets
+	transmitted. This number will increase only after receiving an acknowledgment
+	for a data packet transmitted.
+	
+	Acknowledge Number
+	------------------
+	
+	The acknowledge number field indicates the value of the sequence number expected
+	in the next SPX packet from the SPX partner.
+	
+	Allocation Number
+	-----------------
+	
+	The allocation number field indicates the number of receive buffers available at
+	a workstation. Normally, you should see the allocation number larger then the
+	acknowledge number. The number of free buffers available is calculated as Window
+	size.
+	
+	  Window size = Allocation number - Acknowledge Number + 1.
+	
+	This field is used as a flow control mechanism. When the receiving side sends an
+	allocation number that is lower than the acknowledgment number, the sender
+	should not send any more data and wait until the receiving side sends a packet
+	with an allocation number greater than the acknowledge number.
+	
+	Example of Establishing a Connection
+	------------------------------------
+	
+	The Network Monitor trace shown below shows the sequence for a successful session
+	initialization. Notice that the destination connection ID is set to 0xFFFF, and
+	the allocation number is 0xFFFF. This sequence of packets is called an SPX
+	handshake.
+	
+	SPX: ConCtrl = 0xC0, DtaStrm = 0x00, 0xE8A2 -> 0xFFFF, Seq = 0, Ack = 0, Alloc
+	= 65535
+	
+	SPX: ConCtrl = 0x80, DtaStrm = 0x00, 0x9774 -> 0xE8A2, Seq = 0, Ack = 0, Alloc
+	= 3
+	
+	Example of Normal Data Flow
+	---------------------------
+	
+	The Network Monitor trace shown below, shows a successful data transmission.
+	Notice, how the Seq and ACK relate, also notice that the allocation number
+	(Alloc) is always more than the ACK.
+	
+	SPX: ConCtrl = 0x80, DtaStrm = 0x00, 0xE8A2 -> 0x9774, Seq = 7, Ack = 8, Alloc
+	= 9
+	SPX: ConCtrl = 0x50, DtaStrm = 0x00, 0x9774 -> 0xE8A2, Seq = 8, Ack = 7, Alloc
+	= 10
+	SPX: ConCtrl = 0x80, DtaStrm = 0x00, 0xE8A2 -> 0x9774, Seq = 7, Ack = 9, Alloc
+	= 10
+	SPX: ConCtrl = 0xC0, DtaStrm = 0x00, 0x9774 -> 0xE8A2, Seq = 9, Ack = 7, Alloc
+	= 10
+	
+	Example of a Graceful Session Closed
+	------------------------------------
+	
+	The Network Monitor trace shown below shows a successful session termination
+	sequence. Notice that the DtaStrm field is set to indicate the end of connection
+	request and response.
+	
+	SPX: ConCtrl = 0x50, DtaStrm = End of Connection Req., 0xE8A2 -> 0x9774, Seq =
+	10, Ack = 10, Alloc = 12
+	
+	SPX: ConCtrl = 0x00, DtaStrm = End of Connection Resp., 0x9774 -> 0xE8A2, Seq
+	= 10, Ack = 11, Alloc = 14
+	
+	General Tips for Reading SPX Traces
+	-----------------------------------
+	
+	The tips below can be helpful to narrow down problems.
+	
+	- You may see multiple session ID coming from the same computer. Try to isolate
+	  the trace for a particular session ID to verify if it is normal.
+	
+	- Look for the number of hops and the physical layer Ethernet vs Token Ring.
+	  The problem may be related to routers in between or the packet size. Remember
+	  that SPX does not do packet negotiation.
+	
+	- Look for the allocation number and verify that it is larger then the
+	  acknowledge number. This to verify that we are not running any of the buffer
+	  overflow problem. This mostly happens with 16-bit real-mode clients.
+	
+	- Check for any retransmission of data packets. Normally a retransmission
+	  problem will show up as a performance issue. Check for the Time Delta in
+	  between the Data and ACK packet to check if there is time latency.
+	
+	Limitations of the SPX protocol
+	-------------------------------
+	
+	Although SPX provides a connection-oriented transport, SPX does have several
+	limitations.
+	
+	- Only one packet can be outstanding at any time.
+	
+	- SPX-based communication does not do any packet negotiation.
+	
+	NOTE: The above limitations apply only to the SPX protocol. SPX II is an advanced
+	version of SPX with the following improvements:
+	
+	- SPX II uses the maximum packet size allowable on the network. Example 1518
+	  bytes on Ethernet (SPX has a 576-byte maximum).
+	
+	- SPX II Windowing allows multiple outstanding packets and is able to transmit
+	  a negative acknowledgment (NAK) to indicate some packets were not received.
+	
+	- SPX II allows packet size negotiation. A Negotiate Size Request packet can be
+	  sent at any time in the communications process if packets are not getting
+	  through to the destination.
+	
+	Additional query words: Novell NWLnkSPX SQL Exchange
+	======================================================================
+	Keywords          : kbnetwork kbhowto 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+	Version           : WinNT:4.0
+	Hardware          : ALPHA x86
+	
+	=============================================================================
+	

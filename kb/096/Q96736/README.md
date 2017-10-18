@@ -1,0 +1,100 @@
+---
+layout: page
+title: "Q96736: Using FTSETUP to Install Fault Tolerance"
+permalink: kb/096/Q96736/
+---
+
+## Q96736: Using FTSETUP to Install Fault Tolerance
+
+	Article: Q96736
+	Product(s): Microsoft LAN Manager
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 30-JUL-2001
+	
+	SUMMARY
+	=======
+	
+	This article discusses FTSETUP--its features, how to use it, and how it works.
+	
+	MORE INFORMATION
+	================
+	
+	General Installation Issues
+	---------------------------
+	
+	Before running FTSETUP, make sure that the drive becoming the mirror is "raw,"
+	meaning that it is not formatted or partitioned. Also make sure that the
+	partition(s) on the drive being mirrored do not take up all of the drive's
+	capacity. For more information on requirements for fault tolerance, query on the
+	following words in the Microsoft Knowledge Base:
+	
+	  EISA and HPFS and LADDR and FTBOOT.EXE
+	
+	Running FTSETUP installs fault tolerance on a machine even if mirroring is not
+	selected. If a machine cannot be made fault tolerant (if it has FAT drives or
+	only one disk) FTSETUP presents an explicit warning; on machines that can
+	possibly be made fault tolerant, the warning is still present, but is less
+	explicit.
+	
+	After fault tolerance has been installed and the machine has been rebooted, LAN
+	Manager cannot be removed from the machine until fault tolerance is removed,
+	even if mirroring is not active.
+	
+	Current fault tolerance is not compatible with OS/2 version 2.0. Although it
+	seems to install without problems, reboot reports CONFIG.SYS errors. As a
+	result, LAN Manager can be removed from the machine without removing fault
+	tolerance (as theoretically installed in FTSETUP) first.
+	
+	Once you have scheduled fault tolerance for installation and exited FTSETUP, you
+	cannot re-enter the program without rebooting. Attempting to do so results in
+	the message "DISKFT.SYS is in CONFIG.SYS but is not running. FTSETUP cannot
+	continue."
+	
+	Mirroring Issues
+	----------------
+	
+	To determine the capacity available for mirroring/duplexing, choose
+	<Config> then <View Drive Status> in FTSETUP.
+	
+	FTSETUP allows you to select invalid actions (such as scheduling a drive for
+	mirroring when no mirror is available or scheduling more capacity for mirroring
+	than is available), but generates error messages when you choose the <OK>
+	button.
+	
+	To schedule drives to be mirrored, use the Mirror Drives menu. When you finish
+	scheduling and exit this menu no changes are noticeable. They do not become
+	visible until you choose the Exit option in the FTSETUP Exit menu.
+	
+	Once FTSETUP has made changes and you have been instructed to close all other
+	processes and reboot, you cannot exit FTSETUP. Attempts to end it at the OS/2
+	task list or close it from the Desktop have no effect. You must reboot.
+	
+	Other Issues
+	------------
+	
+	FTSETUP has an option for deleting drives as well. If you select Delete Drive and
+	then select Remove Fault Tolerance, a warning states that you have "...drives
+	that are mirrored, drives pending mirroring or orphaned drives" and displays the
+	consequences of continuing. No mention is made of deleted drives. Choosing OK
+	presents a message that says fault tolerance will change the partition
+	configuration tables and that you must reboot. When you exit FTSETUP, the
+	deleted drive is not available. Attempting to access it results in a SYS0108
+	message that the drive is being used by another process.
+	
+	FTSETUP installs itself by inserting lines in CONFIG.SYS and a line in
+	STARTUP.CMD that calls a command file that runs FTSETUP. When this file runs,
+	FTSETUP presents messages about the progress of mirroring. When it is done, you
+	must exit the program manually. Any commands in the STARTUP.CMD file following
+	the call to run FTSETUP (such as NET START SERVER) are not executed until you
+	exit FTSETUP. At some point in this process, the CALL FTAUTO in STARTUP.CMD is
+	REMed out.
+	
+	Additional query words: 2.10 2.1 2.10a 2.1a 2.20 2.2
+	
+	======================================================================
+	Keywords          :  
+	
+	=============================================================================
+	

@@ -1,0 +1,115 @@
+---
+layout: page
+title: "Q143022: Setting the Default Fill Color for All New Drawn Objects"
+permalink: kb/143/Q143022/
+---
+
+## Q143022: Setting the Default Fill Color for All New Drawn Objects
+
+	Article: Q143022
+	Product(s): Microsoft PowerPoint for Windows
+	Version(s): WINDOWS:4.0,4.0a,4.0c,7.0
+	Operating System(s): 
+	Keyword(s): kbusage
+	Last Modified: 16-APR-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft PowerPoint for Windows 95, version 7.0 
+	- Microsoft PowerPoint for Windows, versions 4.0, 4.0a, 4.0c 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article demonstrates how to create a new default object fill for all new
+	drawing objects (based on the default template). Once you create the new default
+	object fill, it will be applied to all new drawing objects on all new blank
+	presentations that you create.
+	
+	MORE INFORMATION
+	================
+	
+	To create a new default object fill for all new drawing objects, follow these
+	steps:
+	
+	Microsoft PowerPoint for Windows 95, version 7.0
+	------------------------------------------------
+	
+	1. Open a new blank presentation.
+	
+	2. Use a drawing tool, such as the Rectangle tool, Ellipse tool, or an AutoShape
+	  to create a drawing object.
+	
+	3. On the Format menu, click Colors And Lines. In the Colors And Lines dialog
+	  box, select the colors, properties, and line styles you want for the new
+	  default fill.
+	
+	4. Select the "Default For New Objects" check box in the lower-left corner and
+	  click OK.
+	
+	5. On the View menu, click Slide Sorter.
+	
+	6. Select the slide and press the delete key.
+	
+	7. Save this presentation as your default presentation template. On the File
+	  menu, click Save As. In the File Name box, type "Blank Presentation.pot"
+	  (without the quotation marks).
+	
+	8. In the Save As Type box, choose Presentation Templates (*.pot). Make sure
+	  that you are in the Msoffice\Templates folder. When prompted if you want to
+	  replace the existing presentation, click OK.
+	
+	Microsoft PowerPoint for Windows, versions 4.0, 4.0a, 4.0c
+	----------------------------------------------------------
+	
+	This method will also work for PowerPoint for Windows 95.
+	
+	1. Open a new blank presentation.
+	
+	2. Use a drawing tool, such as the Rectangle tool, Ellipse tool, or an AutoShape
+	  to create a drawing object.
+	
+	3. On the Format menu, click Colors And Lines. In the Colors And Lines dialog
+	  box, select the colors, properties, and line styles you want for the new
+	  default fill, and then click OK.
+	
+	4. With the drawing object still selected, on the Format menu, click Pick Up
+	  Object Style.
+	
+	5. Click outside any object on the presentation to deselect the drawing object.
+	  (Make sure that nothing else is selected.)
+	
+	6. On the Format menu, click Apply To Object Defaults.
+	
+	7. On the View menu, click Slide Sorter.
+	
+	8. Select the slide and press the delete key.
+	
+	9. Save this presentation as your default presentation template. On the File
+	  menu, click Save As. In the File Name box, type default.ppt. Make sure that
+	  you are in the \Powerpnt folder. When asked if you want to replace the
+	  existing presentation, click OK.
+	
+	The new default object fill will now be applied to all new blank presentations
+	that you create.
+	
+	If you want to change the default object fill for one presentation only, just
+	follow steps 2-6 above.
+	
+	You can use this method for changing many default object attribute settings, such
+	as line style, line color, text style (when using the text tool), whether or not
+	shadows are applied, and so on.
+	
+	Additional query words: 4.00 7.00
+	
+	======================================================================
+	Keywords          : kbusage 
+	Technology        : kbPowerPtSearch kbPowerPt700 kbZNotKeyword2 kbPowerPt700Search kbPowerPt400 kbPowerPt400c kbPowerPt400a
+	Version           : WINDOWS:4.0,4.0a,4.0c,7.0
+	Hardware          : x86
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

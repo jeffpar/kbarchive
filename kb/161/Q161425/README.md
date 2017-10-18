@@ -1,0 +1,166 @@
+---
+layout: page
+title: "Q161425: WinNT 4.0 SP2 Multihomed Computer Connection Enhancement"
+permalink: kb/161/Q161425/
+---
+
+## Q161425: WinNT 4.0 SP2 Multihomed Computer Connection Enhancement
+
+	Article: Q161425
+	Product(s): Microsoft Windows NT
+	Version(s): 4.0
+	Operating System(s): 
+	Keyword(s): kbnetwork
+	Last Modified: 21-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 4.0 
+	- Microsoft Windows NT Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When one of the network interfaces on a multihomed computer is out of service,
+	it is impossible to establish a NetBIOS-over-TCP/IP connection to the multihomed
+	computer.
+	
+	CAUSE
+	=====
+	
+	NetBIOS over TCP (NetBT) only binds to one IP address for each physical network
+	interface. From the NetBT viewpoint, a computer is multihomed only when it has
+	more than one network interface card (NIC) installed. When a name registration
+	packet is sent from a multihomed computer, it is flagged as a multihomed name
+	registration so that it will not conflict with the same name being registered by
+	another interface in the same computer.
+	
+	If a broadcast name query is received by a multihomed computer, all
+	NetBT/interface bindings receiving the query will respond with their addresses,
+	and, by default, the client will choose the first response and connect to the
+	address supplied by it. This behavior can be controlled by the RandomAdapter
+	registry parameter.
+	
+	When a directed name query is sent to a Windows Internet Name Service (WINS)
+	server, the WINS server responds with a list of all IP addresses that were
+	registered with WINS by the multihomed computer.
+	
+	Choosing the best IP address to connect to on a multihomed computer is a client
+	function. The following algorithm is employed, in the order listed:
+	
+	- If one of the IP addresses in the name query response list is on the same
+	  logical subnet as the calling binding of NetBT on the local computer, that
+	  address is selected. If more than one of the addresses meets this criteria,
+	  one is picked at random from those that match.
+	
+	- If one of the IP addresses in the list is on the same logical subnet as any
+	  binding of NetBT on the local computer, that address is selected. If more
+	  than one of the addresses meets this criteria, one of these is picked at
+	  random.
+	
+	- If none of the IP addresses in the list is on the same subnet as any binding
+	  of NetBT on the local computer, an address is selected at random from the
+	  list.
+	
+	This algorithm provides a reasonably good way of balancing connections to a
+	server across multiple NICs, while still favoring direct connections when they
+	are available.
+	
+	However, with computers running versions of Windows NT 4.0 prior to Windows NT
+	4.0 Service Pack 2 (SP2), if the IP address chosen from the list does not
+	respond, the connection attempt will fail. In some cases (specifically, the ones
+	listed above where an address was selected at random), a second or third attempt
+	to connect the resource may succeed; however, the user or application may
+	receive an error and the retries may need to be instigated manually.
+	
+	RESOLUTION
+	==========
+	
+	Windows NT 4.0 SP2 includes an enhancement to NetBT. NetBT still uses the
+	algorithm listed above to choose a best IP address to connect to on a multihomed
+	computer; however, now it retains the list of addresses and orders them by
+	preference. It then attempts to ping each of the addresses in the list in order,
+	until one of them responds. Two ping attempts are made for each address, with a
+	two-second wait for a response after each attempt. If there is a successful
+	response to one of the pings, then a TCP connection and NetBIOS session are
+	established to that address. If none of the addresses respond to the ping
+	attempts, NetBT will revert to the old behavior, and attempt to establish a TCP
+	connection to the best address in the list.
+	
+	In addition, if a session is already in existence and the network interface
+	responsible for the session on the multihomed computer fails, the failure will
+	be detected and a new session will be established over one of the working
+	interfaces, provided that one exists. The status of open files may not be
+	preserved, as file handles will be invalidated when the old session is deleted.
+	
+	NOTE: This feature is specific to NetBT sessions, and does not apply to TCP
+	connections used by other higher-level protocols or interfaces, such as Windows
+	Sockets.
+	
+	An additional enhancement was added in a hotfix after Windows NT 4.0 SP3 was
+	released that provides better load balancing between NICs on a multihomed server
+	and fixes some cases where a failed NIC on the server could prevent the client
+	from connecting, even though other NICs might still be available.
+	
+	As a result, NetBT now uses the following algorithm for selecting an address from
+	the list returned by WINS:
+	
+	1. Check for addresses on local subnets or networks:
+	
+	  a. If one or more of the addresses in the name query response list are on the
+	     same logical subnet as the calling binding of NetBT on the local computer,
+	     these addresses are put into a sublist of addresses.
+	
+	  b. If no addresses were found in step 1a, and then if one or more of the
+	     addresses in the list are on the same logical subnet as any binding of
+	     NetBT on the local computer, those addresses are put into a sublist.
+	
+	  c. If no addresses were found in steps 1a or 1b, and then if one or more
+	     addresses in the list are on the same logical network as any binding of
+	     NetBT on the local computer, those addresses are put into a sublist.
+	
+	2. Randomize the lists:
+	
+	  a. If a sublist was generated in step 1, that list is put in a random order
+	     and the remaining addresses in the name query response list are added to
+	     the end of that list, also in a random order.
+	
+	  b. If no sublist was generated in step 1, the main list is sorted in a random
+	     order.
+	
+	3. Picking the address:
+	
+	  a. The client will take the new, randomized list and ping the first address
+	     on that list; if the server responds to the ping, that address will be
+	     used.
+	
+	  b. If pinging the first address fails, the next address in the list will be
+	     pinged, until a good address is found.
+	
+	For additional information on this fix, please see the following article in the
+	Microsoft Knowledge Base:
+	
+	  ARTICLE-ID: Q182781
+	  TITLE : Client Connections to Multihomed Server Not Load Balanced
+	
+	STATUS
+	======
+	
+	Windows NT 4.0 Service Pack 2 includes an enhancement to NetBT that improves the
+	ability to connect to multihomed computers even when one or more of the network
+	interfaces are disabled. There are currently no plans to port this enhancement
+	back to prior versions of Windows NT.
+	
+	
+	Additional query words: multi-homed multi homed
+	
+	======================================================================
+	Keywords          : kbnetwork 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+	Version           : :4.0
+	Issue type        : kbbug
+	
+	=============================================================================
+	

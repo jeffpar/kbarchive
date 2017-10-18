@@ -1,0 +1,158 @@
+---
+layout: page
+title: "Q181527: WD97: Macro to Find Automatic (Soft) Page Breaks"
+permalink: kb/181/Q181527/
+---
+
+## Q181527: WD97: Macro to Find Automatic (Soft) Page Breaks
+
+	Article: Q181527
+	Product(s): Word 97 for Windows
+	Version(s): WINDOWS:97
+	Operating System(s): 
+	Keyword(s): kbdta kbdtacode word97
+	Last Modified: 13-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	
+	SUMMARY
+	=======
+	
+	To search for "hard" (manually inserted) page breaks and section breaks in a
+	Word document, click Find on the Edit menu, and type "^m" (without the quotation
+	marks) in the Find What box.
+	
+	There is no search character to locate "soft" (automatic) page breaks within a
+	document. The macro examples in the "More Information" section of this article
+	can be used to locate automatic page breaks.
+	
+	MORE INFORMATION
+	================
+	
+	Microsoft provides programming examples for illustration only, without warranty
+	either expressed or implied, including, but not limited to, the implied
+	warranties of merchantability and/or fitness for a particular purpose. This
+	article assumes that you are familiar with the programming language being
+	demonstrated and the tools used to create and debug procedures. Microsoft
+	support professionals can help explain the functionality of a particular
+	procedure, but they will not modify these examples to provide added
+	functionality or construct procedures to meet your specific needs. If you have
+	limited programming experience, you may want to contact a Microsoft Certified
+	Partner or the Microsoft fee-based consulting line at (800) 936-5200. For more
+	information about Microsoft Certified Partners, please visit the following
+	Microsoft Web site:
+	
+	  http://www.microsoft.com/partner/referral/
+	
+	For more information about the support options that are available and about how
+	to contact Microsoft, visit the following Microsoft Web site:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	Soft page breaks are automatically inserted by Word when the end of the document
+	page is reached. Any new text is automatically pushed to the next page. A soft
+	page break also occurs before a paragraph formatted with the Page Break Before
+	option selected in the Paragraph dialog box.
+	
+	You can insert hard page breaks by pressing CTRL+ENTER or selecting the Page
+	Break option button in the Insert Break dialog box.
+	
+	The following macro examples examine the page breaks in a document and determine
+	whether or not they are soft page breaks. The macro examples retrieve the total
+	number of pages in the document and then move to each page break successively.
+	By moving the selection to the left one character, the macro examples determine
+	if the new selection is text or a hard page break. Document text has a character
+	code greater than 31, and a hard page break is character number 12 or 14.
+	
+	       Sub FindSoftPageBreaks()
+	
+	        Dim iPgNum As Integer
+	        Dim sPgNum As String
+	        Dim ascChar As Integer
+	
+	        ' Set bookmark for return.
+	        ActiveDocument.Bookmarks.Add Name:="WhereYouWere", _
+	           Range:=Selection.Range
+	
+	        ' Go to start of document.
+	        Selection.HomeKey Unit:=wdStory, Extend:=wdMove
+	
+	        ' Repaginate the document.
+	        ActiveDocument.Repaginate
+	
+	        ' Loop through the number of pages in the document.
+	        For iPgNum = 2 To Selection.Information(wdNumberOfPagesInDocument)
+	           sPgNum = CStr(iPgNum)
+	
+	           ' Go to next page in iteration.
+	           Selection.GoTo What:=wdGoToPage, Which:=wdGoToAbsolute, _
+	              Count:=sPgNum
+	
+	           ' Move insertion point left one character.
+	           Selection.MoveLeft Unit:=wdCharacter, Count:=1, Extend:=wdMove
+	
+	           ' Retrieve the character code at insertion point.
+	           ascChar = Asc(Selection.Text)
+	
+	           ' Check the character code for hard page break or text.
+	           If ascChar <> 12 And ascChar <> 14 Or ascChar > 31 Then
+	
+	              MsgBox "An automatic page break precedes page " + sPgNum + "."
+	           End If
+	        Next
+	
+	        ' Return to starting location.
+	        Selection.GoTo What:=wdGoToBookmark, Name:="WhereYouWere"
+	
+	        ' Delete the return marker.
+	        ActiveDocument.Bookmarks("WhereYouWere").Delete
+	
+	     End Sub
+	
+	To replace soft page breaks with hard page breaks throughout your document,
+	replace this line of code
+	
+	    MsgBox "An automatic page break precedes page " + sPgNum + "."
+	
+	with the following lines:
+	
+	     ' Check to see if the insertion point is in a table.
+	     x = Selection.Information Type:=wdWithInTable
+	     If x then
+	
+	        ' Move insertion point out of table.
+	        Selection.MoveRight Unit:=wdCharacter, Count:=1, Extend:=wdMove
+	
+	     End If
+	
+	     Selection.InsertBreak Type:=wdPageBreak
+	
+	REFERENCES
+	==========
+	
+	For additional information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q173707 OFF97: How to Run Sample Code from Knowledge Base Articles
+	
+	
+	For more information about getting help with Visual Basic for Applications,
+	please see the following article in the Microsoft Knowledge Base:
+	
+	  Q163435 VBA: Programming Resources for Visual Basic for Applications
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbdta kbdtacode word97 
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : WINDOWS:97
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

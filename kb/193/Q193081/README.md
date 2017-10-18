@@ -1,0 +1,83 @@
+---
+layout: page
+title: "Q193081: XADM: NDR When Message Is Routed Between Multiple Connectors"
+permalink: kb/193/Q193081/
+---
+
+## Q193081: XADM: NDR When Message Is Routed Between Multiple Connectors
+
+	Article: Q193081
+	Product(s): Microsoft Exchange
+	Version(s): WINDOWS:5.5
+	Operating System(s): 
+	Keyword(s): exc55sp2fix
+	Last Modified: 22-APR-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.5 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	If you send a message through a connector on a Microsoft Exchange Server
+	computer, and the message is routed through another connector to reach one or
+	more recipients, you may receive a non-delivery report (NDR). For example, if
+	you send a message through the Internet Mail Service, and the message is routed
+	through the Exchange Connector for Lotus cc:Mail to reach one or more cc:Mail
+	recipients, you may receive an NDR. This problem can also occur with the
+	Exchange PROFS Connector, Exchange Notes Connector, and Exchange SNADS
+	Connector.
+	
+	However, if the message is also sent to a user on the Microsoft Exchange Server
+	computer, and that user replies to all the original recipients, the reply is
+	successfully sent to the recipient on the foreign system.
+	
+	CAUSE
+	=====
+	
+	This problem occurs when the information store does not set the Internet message
+	ID (PR_INTERNET_MESSAGE_ID property) correctly.
+	
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, obtain the latest service pack for Exchange Server
+	version 5.5. For more information, please see the following article in the
+	Microsoft Knowledge Base:
+	
+	  Q191014 XGEN: How to Obtain the Latest Exchange Server 5.5 Service Pack
+	
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	  Component: Information Store
+	
+	  File Name    Version
+	  -----------------------
+	  Mdbmsg.dll   5.5.2395.0
+	  Store.exe    5.5.2395.0
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+	version 5.5. This problem was first corrected in Exchange Server 5.5 Service
+	Pack 2.
+	
+	
+	======================================================================
+	Keywords          : exc55sp2fix 
+	Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+	Version           : WINDOWS:5.5
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

@@ -1,0 +1,78 @@
+---
+layout: page
+title: "Q251000: WFP Warning Appears While Installing BackOffice Server 4.5"
+permalink: kb/251/Q251000/
+---
+
+## Q251000: WFP Warning Appears While Installing BackOffice Server 4.5
+
+	Article: Q251000
+	Product(s): Microsoft Windows NT
+	Version(s): 2000,4.5
+	Operating System(s): 
+	Keyword(s): kberrmsg kbsetup
+	Last Modified: 05-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft BackOffice Server 4.5 
+	- Microsoft Windows 2000 Server 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Installing BackOffice 4.5 in Windows 2000 requires that you follow specific
+	steps to complete the installation properly. One of these steps is to install
+	Microsoft Site Server 3.0 and Site Server 3.0 Service Pack 2 (SP2) before you
+	install the BackOffice 4.5 Server programs.
+	
+	When the installation of Site Server 3.0 SP2 is complete, the following dialog
+	boxes appear:
+	
+	  Site Server 3.0 Service Pack 2
+	
+	  Site Server 3.0 has been updated.
+	  Remove any disks from the floppy disk drives
+	  and choose OK to reboot your computer.
+	
+	  If you add any additional Site Server Components,
+	  you will need to reapply the Service Pack.
+	
+	  -and-
+	
+	  Windows File Protection
+	
+	  Files that are required for Windows to run properly have been
+	  replaced by unrecognized versions. To maintain system stability,
+	  Windows must restore the original versions of these files.
+	
+	  Insert your Windows 2000 Server CD-ROM now.
+	
+	MORE INFORMATION
+	================
+	
+	To protect the integrity of the operating system, Windows 2000 displays the
+	Windows File Protection dialog box. BackOffice 4.5 installs properly on Windows
+	2000 Server, even if Windows File Protection replaces changed files. When the
+	Windows File Protection dialog box appears, insert the Windows 2000 Server
+	CD-ROM, and then click Retry. When you click Retry, the changed system files are
+	restored to their original state, and the system can then be rebooted.
+	
+	After the computer restarts, continue the installation as described in the
+	"Installing Microsoft BackOffice 4.5 on Windows 2000 Server" white paper. You
+	can find this document at the following location:
+	
+	  http://www.microsoft.com/backofficeserver/techinfo/deployment/upgrade.asp
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kberrmsg kbsetup 
+	Technology        : kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbAudDeveloper kbBackOfficeSearch kbBackOfficeServ450
+	Version           : :2000,4.5
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

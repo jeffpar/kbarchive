@@ -1,0 +1,1535 @@
+---
+layout: page
+title: "Q194507: Windows NT 4.0 Service Pack 4 Readme.txt File (40-bit)"
+permalink: kb/194/Q194507/
+---
+
+## Q194507: Windows NT 4.0 Service Pack 4 Readme.txt File (40-bit)
+
+	Article: Q194507
+	Product(s): Microsoft Windows NT
+	Version(s): winnt:4.0 SP4
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 10-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 4.0 SP4 
+	- Microsoft Windows NT Server version 4.0 SP4 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	======================================================================
+	                 Microsoft Windows NT 4.0 Workstation
+	                      and Windows NT 4.0 Server
+	                           Service Pack 4
+	======================================================================
+	
+	       (c) Copyright Microsoft Corporation, 1998
+	
+	This document provides information about Microsoft Windows NT 4.0
+	Workstation and Windows NT 4.0 Server Service Pack 4 (SP4), as well as
+	answers to questions that you might have.
+	
+	MORE INFORMATION
+	================
+	
+	------------------------
+	HOW TO USE THIS DOCUMENT
+	------------------------
+	
+	To view Readme.txt on the screen in Notepad, maximize the Notepad
+	window. For best viewing, click Edit, and then click Word Wrap.
+	
+	To print Readme.txt, open it in Notepad or another word processor,
+	click the File menu, and then click Print. For best printing results,
+	click Edit, click Set Font, type 9 in the Size box, and then click OK.
+	
+	For a current list of computer and hardware peripherals supported by
+	Windows NT 4.0, see the Windows NT Hardware Compatibility List
+	at http://www.microsoft.com/hwtest/hcl.
+	
+	--------
+	CONTENTS
+	--------
+	
+	1.0  INTRODUCTION
+	
+	    1.1  What's New in Service Pack 4
+	    1.2  Downloading and Extracting the Service Pack
+	
+	2.0  INSTALLATION INSTRUCTIONS FOR WINDOWS NT 4.0 SERVICE PACK 4
+	
+	    2.1  Before You Install the Service Pack
+	    2.2  Installing the Service Pack
+	    2.3  Service Pack Uninstall
+	    2.4  Year 2000 Service Pack Installation
+	
+	3.0  USER NOTES
+	
+	    3.1  Emergency Repair Disk
+	    3.2  Adding New Components to the System
+	    3.3  Installing Symbol Files from the CD
+	    3.4  Hardware Compatibility with Windows NT 4.0
+	    3.5  DIGITAL Alpha Notes
+	    3.6  Running Windows NT Administrative Tools from Remote Server
+	    3.7  CryptoAPI and Authenticode
+	    3.8  Uninstalling Internet Explorer
+	    3.9  Certificate Server Notes
+	    3.10 Internet Information Server 4.0, Secure Sockets Layer and
+	         Root CA Certificates
+	    3.11 Message Queue Notes
+	    3.12 Installing COM Internet Services
+	    3.13 Event Log Service
+	    3.14 Upgrading a Cluster to SP4
+	
+	4.0  ADDITIONAL FIXES AND WORKAROUNDS
+	
+	    4.1  Installing Windows NT 4.0 on a Windows NT 5.0 Computer
+	    4.2  Dual Booting Between Versions of Windows NT 4.0 and
+	         Windows NT 5.0
+	    4.3  NTFS Version 4 and NTFS Version 5 Support
+	    4.4  Installing SP4 on a Windows NT Server Enterprise Edition
+	         System
+	    4.5  Internet Information Server 4.0
+	    4.6  Security Configuration Manager
+	    4.7  Updating Audio Drivers
+	    4.8  Microsoft Proxy Server
+	
+	5.0  APPLICATION NOTES
+	
+	    5.1  CheckIt Diagnostic Kit 4.0 by Touchstone
+	    5.2  Norton CrashGuard 2.0 for Windows NT
+	    5.3  Inoculan 4.0
+	    5.4  Exceed
+	    5.5  Terminal Server
+	    5.6  Microsoft NetMeeting Y2K and Security Issues
+	    5.7  Numega SoftIce
+	    5.8  Microsoft BackOffice Small Business Server
+	    5.9  Rational Visual Quantify Version 4
+	    5.10 Microsoft IntelliPoint
+	
+	6.0  LIST OF BUGS FIXED IN WINDOWS NT 4.0 SERVICE PACKS 1-4
+	
+	1.0  INTRODUCTION
+	=================
+	
+	This release of Microsoft Windows NT 4.0 Service Pack 4 (SP4) is easy to
+	apply while Windows NT is running and updates all files that are older than
+	those included in this Windows NT Service Pack. Service Pack releases are
+	cumulative and contain all previous Service Pack fixes and any new fixes
+	created after Service Pack 3.
+	
+	IMPORTANT: SP4 contains only 40-bit encryption. This release isn't
+	supported for installation on an existing North American 128-bit
+	installation of Windows NT 4.0. If you install SP4 on a computer with 128-
+	bit encryption, system services might fail to start.
+	
+	IMPORTANT: It's recommended that you stop running any critical services
+	before you apply Windows NT 4.0 SP4. For more preinstallation
+	recommendations, see section 2.1, "Before You Install the Service Pack."
+	
+	1.1  What's New in Service Pack 4
+	---------------------------------
+	
+	1.1.1 Active Accessibility Support
+	
+	Microsoft Active Accessibility (MSAA) is a COM-based standard method
+	by which a utility program interacts with an application's user
+	interface (UI). Using MSAA applications can expose all UI elements
+	and objects with standard properties and methods. SP4 includes five
+	new application programming interfaces (APIs). These new APIs include:
+	
+	- GetGUIThreadInfo
+	- GetAncestor
+	- RealChildWindowsFromPoint
+	- RealGetWindowClassA
+	- RealGetWindowClassW
+	
+	1.1.2 DCOM/HTTP Tunneling
+	
+	This update allows DCOM client/server communication to cross firewalls over
+	the HTTP protocol port. The new protocol "Tunneling TCP" is used like other
+	DCOM protocols. The new moniker type OBJREF is passed in HTML to the
+	client. The benefits of Tunneling TCP include high performance, use of
+	existing open ports in the firewall, and control of client access for proxy
+	administrators. For more information, see http://www.microsoft.com/com.
+	
+	For instructions on installing Tunneling TCP, see section 3.11, "Installing
+	COM Internet Services" under User Notes.
+	
+	1.1.3 Euro Key Patch
+	
+	The Euro Key Patch is an update to include the new European "euro" currency
+	symbol. The update supplies the core fonts (Arial, Courier New, and Times
+	New Roman) and the keyboard drivers.
+	
+	1.1.4 InternetGroup Management Protocol (IGMP) v2
+	
+	IGMPv2 allows a computer to inform the router that it's leaving a group.
+	This update enables the router to determine if there are no more members in
+	a group and then executes a command to stop forwarding mcast packets on to
+	the link. This update is useful when users are frequently joining and
+	leaving groups.
+	
+	1.1.5 Microsoft File and Print Service for NetWare (FPNW) Support
+	for Client32
+	
+	Microsoft File and Print Services for NetWare permits the Windows NT 4.0
+	Server to act as a NetWare 3.X Server and is able to process file and print
+	requests from NetWare clients without changing or updating the NetWare
+	client software. This Service Pack provides an update that allows Windows
+	NT 4.0 to support NetWare's Client32. This update installs only on those
+	computers that have the FPNW service already installed.
+	
+	1.1.6 Proquota.exe
+	
+	The Proquota.exe is a utility that can be set up to monitor the size of
+	users' profiles. If an individual user's profile exceeds the predetermined
+	file limit, the user won't be able to log off of the computer until the
+	user reduces the size of the file.
+	
+	1.1.7 Remote Winsock (DNS/Port 53)
+	
+	Proxies or firewalls will often disable the Domain Name System (DNS) port
+	number 53 in order to deter external sites from querying the internal DNS
+	structure. As a result, inbound response packets sent on port 53 can't be
+	received. SP4 provides a solution to change the Windows NT DNS server port
+	number and configure it to use a different port number when connecting
+	outbound.
+	
+	To enable this feature, a registry value "DWORD" is created. Locate
+	\services\dns\parameters\SendOnNonDnsPort and set to a non-zero value to go
+	off port 53. If the value is < 1024 the server can use any port number. If
+	the value is > 1024 the server will use the port number specified.
+	
+	1.1.8 Remote Procedure Calls (RPC) Enhancements for Visual Basic (VB)
+	
+	RPC enhancements for VB have been provided in this release. In VB, a "User
+	Data Type (UDT)" is added allowing the TypeLib arrangement of structures.
+	These new user interfaces, IRecordInfo, provide UDT information and a UDT
+	field for the Access Database.
+	
+	1.1.9 Routing Information Protocol (RIP) Listener
+	
+	If you utilize RIP Listener on a computer running Windows NT 4.0, you can
+	use SP4 to update this component. If you want to install RIP Listener after
+	you apply SP4, use the following procedure.
+	
+	To install the RIP Listener:
+	
+	1. Insert the SP4 CD into the disc drive, and change the folder to \I386
+	  (or \Alpha).
+	
+	2. Copy Oemnsvir.wks to D:\<winntsystemroot>\system32\oemnsvir.inf.
+	
+	3. Click Start, point to Settings, and click Control Panel. Double- click
+	  Network, and on the Services tab, click Add.
+	
+	4. In Network Service, select RIP for Internet Protocol, and then click OK.
+	
+	5. In the Windows NT Setup dialog box, type the path for the location of
+	  the SP4 files and click OK.
+	
+	1.1.10 Visual Studio-MICS
+	
+	This Service Pack includes an update to Visual Studio called Visual Studio
+	Analyzer Events. Visual Studio Analyzer Events provides a graphical
+	representation of high-level behaviors and their solutions. Use Visual
+	Studio Analyzer Events to view graphically simple tables of event logs, the
+	system's performance, and Windows NT Performance Monitor (NT PerfMon), as
+	well as other system data.
+	
+	1.1.11 Year 2000 (Y2K) Fixes
+	
+	This Service Pack contains fixes for known Year 2000 issues for Windows NT
+	4.0, including:
+	
+	- The User Manager and User Manager for Domains recognize the year 2000 as
+	  a leap year.
+	- The Date/Time Control Panel applet can update the system clock.
+	- Find Files supports only numeric character recognition in the decades
+	  field.
+	- Word document properties recognize both 1900 and 2000 as valid centuries
+	  and support four-digit years.
+	- The Dynamic Host Configuration Protocol (DHCP) administrators program
+	  supports displaying the years between 2000-2009 with a minimum of two
+	  digits.
+	
+	For more information, see section 2.4, "Year 2000 Service Pack
+	Installation."
+	
+	1.1.12 Compaq Fiber Storage Driver
+	
+	This driver and .Inf are located in the \Drvlib folder. When installed,
+	the Compaq fiber storage driver along with the .Inf provides support
+	for Compaq fiber storage devices. The certified devices are:
+	
+	- Compaq Fiber Channel Host Controller/P for PCI.
+	- Compaq Fiber Channel Host Controller/E for EISA.
+	
+	1.1.13 Internet Explorer 4.01 Service Pack 1
+	
+	Internet Explorer 4.01 Service Pack 1 is located in SP4 in the
+	\Msie401 folder. Run Ie4setup.exe to install this version of Internet
+	Explorer on your computer.
+	
+	1.1.14 Message Queue (MSMQ) for Windows 95 Client
+	
+	This Service Pack also includes MSMQ Windows 95 Client fixes, located
+	in the \Support\Msmq.95 folder. Most problems that are mentioned in
+	section 3.10, "Message Queue (MSMQ) Notes," also apply to Windows 95.
+	In addition, the Windows 95 MSMQ update fixes a problem causing long
+	delays with MQOpenQueue() and MQIS operations on offline computers.
+	This MSMQ Windows 95 update doesn't have an uninstall option.
+	
+	1.1.15 Option Pack Fixes
+	
+	This Service Pack release includes Option Pack fixes and enhancements. If
+	you have the Internet Information Server version 4.0 Option Pack installed,
+	the Service Pack 4 update program will automatically update the Option Pack
+	components installed on your computer.
+	
+	When beginning the installation of the Windows NT Option Pack 4.0 on a
+	server with Windows NT SP 4.0 and Internet Information Server 3.0, the
+	following message may appear:
+	
+	"Setup detected that Windows NT 4.0 SP4 or greater is installed on your
+	machine. We haven't tested this product on SP4. Do you wish to proceed?"
+	
+	The Windows NT Option Pack 4.0 is fully tested and supported to run on
+	servers with the Windows NT Service Pack 4.0. Click Yes to continue Setup.
+	
+	NOTE: It?s recommended that you reinstall SP4 after you install Windows NT
+	Option Pack 4.0. Otherwise, an MSMQ MQIS Controller installation won?t work
+	until the Windows NT Service Pack 4.0 is reinstalled.
+	
+	  1.1.15.1 Certificate Server
+	
+	  The Microsoft Certificate Server is a standards-based, highly
+	  customizable server application for managing the creation, issuance, and
+	  renewal of digital certificates. Certificate Server generates
+	  certificates in standard X.509 format. These certificates are used for a
+	  number of public-key security and authentication applications including,
+	  but not limited to, server and client authentication under the Secure
+	  Sockets Layer (SSL) protocol and secure e-mail using Secure/Multipurpose
+	  Internet Mail.
+	
+	  The update to Certificate Server includes:
+	
+	   - Teletex Encoding--Data encoded as teletex in a certificate request
+	     will be encoded as teletex data in the certificate issued. Formerly,
+	     this data would have been encoded as Unicode in the certificate
+	     issued.
+	
+	   - Serial Number--Serial numbers are generated according to X.509
+	     standards. These serial numbers are automatically generated, unique,
+	     and always positive. This is to accommodate restrictive mail clients.
+	
+	   - Backup/Restore--Specific backup requests are supported, including
+	     backing up keys and certificates.
+	
+	   - An update to the default policy module so that mail certificates
+	     issued are usable by Outlook 98.
+	
+	   - An update to Certificate Server to fix a problem with certificates
+	     issued on February 29th of a leap year. Previously, the validity
+	     period would have the NotBefore and NotAfter dates set to the same
+	     date. With this update, NotBefore and NotAfter are now set correctly
+	     in the context of the CA validity for certificates issued on February
+	     29th of a leap year.
+	
+	  For information on how to use the keys and certificate backup/ restore
+	  utility, go to the Knowledge Base at http://support.
+	  microsoft.com/support/ and search for KB article Q185195.
+	
+	  This release of Certificate Server doesn?t support certificate
+	  hierarchies. However, a limited subset of the functions of Certificate
+	  hierarchies work specifically with Exchange.
+	
+	  You can get additional information on this from a white paper titled
+	  "Creating Certificate Hierarchies with Microsoft Certificate Server
+	  Version 1.0." This is available as a self- extracting .exe file
+	  (Hier3.exe) on the Microsoft Web site at
+	  http://support.microsoft.com/support/downloads/LNP279.asp.
+	
+	  1.1.15.2 Index Server
+	
+	  Index Server is a content indexing engine that provides full text
+	  retrieval for Web sites. Index Server requires that Internet Information
+	  Server be installed.
+	
+	  1.1.15.3 Internet Information Server (IIS)
+	
+	  The following Internet Information Server version 4.0 Option Pack
+	  components are installed on your computer:
+	
+	  1. Security Enhancements--Support for long file names for access
+	     restrictions on a file or a folder.
+	
+	  2. Performance--Improvements on the logging and caching of information.
+	     These improvements include, but aren't limited to:
+	
+	      - IIS 4.0 performance on extension mapping.
+	      - IIS 4.0 memory performance for mapping log files.
+	      - IIS 4.0 performance in mapping unmapped data files if
+	        memory configuration is low or stressed.
+	
+	  1.1.15.4 Message Queue (MSMQ) for Windows NT
+	
+	  This update to MSMQ includes:
+	
+	   - Performs cleanup of unused message file space every six hours to
+	     reduce disk-space usage.
+	
+	     NOTE: This schedule may be configured via the
+	     <MessageCleanupInterval> MSMQ registry key (in milliseconds).
+	
+	   - Clears all obsolete express message files when the MSMQ service
+	     starts.
+	
+	   - Enforces case insensitivity with foreign language characters in
+	     private queue names.
+	
+	   - Reduces occurrences of duplicate messages in persistent delivery
+	     mode.
+	
+	   - Exhibits performance counters for remote queues after a system
+	     recovery.
+	
+	   - Correctly shows per-session outgoing messages performance counters.
+	
+	   - MSMQ MQIS servers refresh cached information every 12 hours.
+	
+	   - Fixes a problem causing transactional messages to be rejected in some
+	     cases.
+	
+	   - Allows specifying external certificates via the MSMQ ActiveX
+	     components interface.
+	
+	   - Transactional messages can be read from connector queues after
+	     restarting the MSMQ connector application.
+	
+	   - MQSetQueueSecurity for private queue is supported.
+	
+	   - MQCreateQueue for private queues now works on Windows NT Server 4.0
+	     Option Pack installations on Microsoft Cluster Server computers.
+	
+	   - Supports sending Microsoft PowerPoint and Microsoft Word documents
+	     using ActiveX components.
+	
+	   - Fails when user attempts the renewal of internal certificates when
+	     Primary Enterprise Controller (PEC) is unreachable.
+	
+	   - Machine quota limitation correctly recomputed after restarting the
+	     MSMQ service.
+	
+	   - MSMQ COM objects correctly process asynchronous message arrival
+	     events in multithreaded applications.
+	
+	   - Improved detection and reporting of corrupted message packets in
+	     message files that could have resulted in a hung MSMQ service
+	     previously.
+	
+	   - Transactional messages sent offline are no longer rejected with a bad
+	     message class: MQMSG_CLASS_NACK_BAD_DST_Q. The symptom was that such
+	     messages were immediately routed to the sender's exact dead letter
+	     queue.
+	
+	   - Supports sending messages to different computers that have the same
+	     IP address. This can happen when a server attempts to send messages
+	     to two different RAS clients that happen to be assigned the same
+	     address one after the other.
+	
+	   - Recovers correctly when sending messages from a server to a client
+	     whose address is no longer valid (e.g., a RAS client that has timed-
+	     out). Previously, extra message traffic might have been generated.
+	
+	   - Asynchronous messaging now functions correctly on Japanese Windows 95
+	     when using the MSMQ COM objects.
+	
+	   - Fixes a problem in the MSMQ COM objects when referencing the response
+	     and admin queue properties of a message for queues not explicitly
+	     refreshed from the MQIS.
+	
+	   - In Windows 95, calling MQOpenQueue with a DIRECT format no longer
+	     blocks for a long time.
+	
+	   - If the Windows NT 4.0 licensing service isn't running, then MSMQ per-
+	     seat licensing is no longer enforced.
+	
+	   - A specific call to MQLocateBegin no longer causes an exception on the
+	     MQIS server. This could have occurred previously when the Label
+	     restriction specified with an incorrect vt argument (anything other
+	     than VT_LPWSTR).
+	
+	   - MSMQ applications can be run by users logged on to local machine
+	     accounts. Note that this used to work anyway for shadowed local
+	     accounts -- i.e., for accounts that had "identical" local accounts
+	     (user name/password) on the server machine. The default security for
+	     queues created by such users is that everyone is granted full control
+	     (in particular, read and delete permissions).
+	
+	   - A new MQIS update/restore utility is supplied that enables
+	     administrators to seamlessly recover crashed MQIS servers. See
+	     support\msmq.nt\MQISwizard.doc for more information.
+	
+	  1.1.15.5 Microsoft Transaction Server (MTS)
+	
+	  MTS is updated with a new Java Context class. If you're building
+	  applications using Visual J++, you can use the new Context class instead
+	  of IObjectContext. The Context class allows you to do the following
+	  using Visual J++:
+	
+	   - Declare that the object's work is complete.
+	
+	   - Prevent a transaction from being processed, either temporarily or
+	     permanently.
+	
+	   - Instantiate other MTS objects and include their work within the scope
+	     of the current object's transaction.
+	
+	   - Determine whether a caller is in a particular role.
+	
+	   - Determine whether security is enabled.
+	
+	   - Determine whether the object is executing within a transaction. See
+	     the Visual J++ section of the Programmer's Reference for complete
+	     documentation of the new class.
+	
+	  1.1.15.6 SMTP, NNTP
+	
+	  Simple Mail Transport Protocol (SMTP), Network News Transport Protocol
+	  (NNTP) enhancements are available in this Service Pack. SMTP now
+	  supports the following services:
+	
+	   - Multiple virtual servers, or sites.
+	   - ETRN command for dequeuing mail over dial-up connections.
+	
+	  To enable this functionality:
+	
+	  1. Create a text file with the following text:
+	
+	        set obj = GetObject ( "IIS://localhost/smtpsvc" )
+	        obj.Put "SmtpServiceVersion", 2
+	        obj.SetInfo
+	
+	     NOTE: This is an Active Directory Service Interface (ADSI)
+	     script that will update a value in the metabase.
+	
+	  2. Save this file as Enable.vbs.
+	
+	  3. From a command prompt, type the following and press ENTER:
+	
+	        cscript enable.vbs
+	
+	     For more information, go to the Knowledge Base at http://support.
+	     microsoft.com/support/ and search for KB article Q183476.
+	
+	     You can also point to specific KB articles using the following
+	     example:
+	
+	        http://support.microsoft.com/support/kb/articles/Q151/8/60.asp
+	
+	1.1.16 Security Configuration Manager (SCM)
+	
+	Security Configuration Manager (SCM) is an integrated security system that
+	gives administrators the ability to define and apply security
+	configurations for Windows NT Workstation and Windows NT Server
+	installations. SCM also has the capability to perform inspections of the
+	installed systems to locate any degradation in the system's security. For
+	further information on SCM, including installation and usage instructions,
+	refer to Readme.txt in the \Mssce folder.
+	
+	1.1.17 Web-based Enterprise Management (WBEM)
+	
+	WBEM/WMI is Microsoft's implementation of Web-Based Enterprise Management
+	(WBEM), the new standard for representation of management information as
+	supported by the Desktop Management Task Force. It surfaces important
+	management data from Windows NT and makes it freely available to any
+	management tool through a number of well-defined interfaces so that
+	management of Windows NT becomes much easier (included on CD-ROM only). For
+	more information on WMI, see http://www.microsoft.com/management/wbem.
+	
+	WBEM consolidates and unifies the data provided by existing management
+	technologies. WBEM focuses on solving real enterprise issues by tracking
+	problem areas from the user/application level through the systems and
+	network layers to remote service/server instances. For more information,
+	see http://wbem.freerange.com/.
+	
+	You can download the Web-Based Enterprise Management Software Developer's
+	Kit (SDK) at http://msdn.microsoft.com/developer/sdk/wmisdk/default.asp.
+	
+	1.1.18 Microsoft Windows NT Server NetShow Services
+	
+	SP4 contains an updated version of NetShow Services located on this CD in
+	the \NetShow folder. NetShow Services enables Internet service providers
+	(ISPs) and organizations to deliver the highest-quality audio and video at
+	every bandwidth across the Internet or enterprise networks. This release of
+	NetShow Services features greatly enhanced audio and video that delivers
+	the best user experience. Simplified setup, configuration, and
+	administration of the NetShow server components and tools give ISPs a
+	reliable and cost-effective platform for hosting large amounts of content.
+	
+	Consult the NetShow Services information page (\NetShow\ntsp4-ns.htm) for
+	details on installing and configuring this product. Before installing this
+	product, you should also carefully review the NetShow Services release
+	notes at \NetShow\ns-readme.htm.
+	
+	1.1.19 Microsoft Windows Media Player
+	
+	Microsoft Windows Media Player replaces Microsoft ActiveMovie as well as
+	the Microsoft NetShow Player. Windows Media Player has all the features
+	found in both of the other multimedia players, plus many more. It also
+	upgrades existing Windows Media Player and ActiveMovie support to provide
+	convenient access to new Windows Media content. Windows Media Player
+	supports most local and streaming multimedia file types including WAV, AVI,
+	QuickTime, RealAudio 4.0 and RealVideo 4.0. The new player takes over the
+	class IDs of the previous players. After you install the new player,
+	programs that used the old class IDs will function as usual. Windows Media
+	Player is located in the \Mplayer2 folder on the compact disc.
+	
+	1.1.20 Security Privilege Must Be Enabled to View Security Event Log
+	
+	SP4 includes a bug fix in the Event Log service that requires that the
+	SE_SECURITY_NAME privilege, also known as the Security privilege, be
+	enabled in order to view and manage the security event log. By default,
+	Windows NT grants the privilege to administrators and local System. In
+	order to take effect however, the privilege must also be enabled in the
+	program accessing the security event log.
+	
+	Prior to this change, members of the Administrators group and services
+	running as local System could open the security log for read or change
+	access without enabling the Security privilege. If the privilege was
+	removed from the Administrators group, members of the Administrators group
+	could still manage the security log. This change enforces the security
+	model that administrators need to be granted the privilege to manage the
+	security log; they won't be able to manage the log simply because they are
+	members of the Administrators group. Administrators can always grant
+	themselves the Security privilege to manage the security log, however,
+	although this event can be audited.
+	
+	For more information, consult the Knowledge Base at http://support.
+	microsoft.com/support/ and search for KB article Q188855.
+	
+	1.1.21 Dynamic Host Configuration Protocol (DHCP)
+	
+	This Service Pack includes several quality improvement fixes to correct
+	known Dynamic Host Configuration Protocol (DHCP) issues reported for
+	Microsoft DHCP Server, the DHCP Manager administration tool, and for
+	Microsoft DHCP-enabled clients running under earlier released versions of
+	Windows NT 4.0.
+	
+	These fixes address specific problems fully described in the Q184693
+	"DHCP/WINS Release Notes for Windows NT 4.0 SP4 Update" article in the
+	Knowledge Base:
+	
+	You can obtain the specific article from Microsoft Support Online at
+	http://support.microsoft.com/support.
+	
+	1.1.22 Windows Internet Naming Service (WINS)
+	
+	Windows NT Server includes the following new Windows Internet Naming
+	Service (WINS) and WINS Manager features:
+	
+	- Manual removal of dynamic WINS database records.
+	- Multi-select operations for WINS database records.
+	- Burst mode handling for WINS servers.
+	
+	1.1.23 Microsoft Routing and Remote Access Service (RRAS)
+	
+	SP4 can now be installed on a Windows NT 4.0 system running Routing and
+	Remote Access Service (RRAS). SP4 will update your RRAS system to RRAS
+	Hotfix 3.0 components automatically. If you install RRAS after installing
+	SP4, you must reinstall SP4 to get the updated RRAS files to ensure RRAS
+	will work properly. For more information on RRAS Hotfix 3.0, see
+	http://support.microsoft.com/support/kb/articles/Q189/5/94.asp.
+	
+	1.1.24 PPTP Performance and Security Update
+	
+	SP4 now includes new performance and security updates to PPTP that greatly
+	increase data transfer speeds and enhance security. The PPTP client and
+	server system must both be running the updated files to get the new
+	benefits. For more information, see http://support.microsoft.com/ 
+	support/kb/articles/q189/5/95.asp
+	
+	1.1.25 NTLMv2 Security
+	
+	SP4 contains an enhancement to NTLM security protocols called NTLMv2, which
+	significantly improves both the authentication and session security
+	mechanisms of NTLM. For more information, see
+	http://support.microsoft.com/support/kb/articles/q147/7/06.asp.
+	
+	1.1.26 Secure Channel Enhancements
+	
+	SP4 contains an enhancement to the secure channel protocols used by member
+	workstations and servers to communicate with their domain controllers and
+	by domain controllers to communicate with other domain controllers. In
+	addition to authentication, you can now encrypt and check the integrity of
+	these communications. For more information, see
+	http://support.microsoft.com/support/kb/articles/ q183/8/59.asp
+	
+	1.1.27 IP Helper API (IPHLPAPI)
+	
+	The IP Helper API provides Windows network configuration and statistics
+	information to Win32 applications. The public API is available on Windows
+	NT 4.0 and above, and Windows 95 and above. SP4 updates the API with a new
+	.dll so that applications can communicate to a TCP/IP stack.
+	
+	1.1.28 Event Log Service
+	
+	This Service Pack contains new features in the Event Log Service to assist
+	how administrators measure the reliability and availability of Windows NT.
+	
+	The SP4 Event Log Service records three new events in the system event
+	log that are useful in measuring operating system availability:
+	
+	- Clean Shutdown Event (Event ID: 6006)
+	- Dirty Shutdown Event (Event ID: 6008)
+	- System Version Event (Event ID: 6009)
+	
+	See section 3.12, "Event Log Service," for more information.
+	
+	1.1.29 Domain Name Server (DNS) Service
+	
+	This Service Pack includes several quality improvement fixes to correct
+	known Domain Name Server (DNS) issues reported for Microsoft DNS Server and
+	the DNS Manager administration tool. These fixes address specific problems
+	described in the Q184693 "DNS/DHCP/WINS Release Notes for Windows NT 4.0
+	SP4 Update" article in the Knowledge Base. You can obtain the specific
+	article from Microsoft Support Online at http://support.
+	microsoft.com/support.
+	
+	1.2  Downloading and Extracting the Service Pack
+	------------------------------------------------
+	
+	If you have downloaded this Service Pack from an FTP site or a Web site,
+	you should read the release notes completely before you extract and install
+	the Service Pack. For this release, these self-extracting executables are
+	also located at the root of the CD. They are Sp4alpha.exe for Alpha
+	processor type systems and sp4i386 for Intel-based systems.
+	
+	After downloading the Service Pack, you'll have a compressed executable
+	file on your hard drive. To extract this file and begin the installation
+	process, for example, type Sp4i386.exe at the command prompt or double-
+	click the file from Windows NT Explorer. You can also extract the file into
+	the current folder without launching the installation program by using the
+	command prompt switch /x (for example, at the command prompt, type sp4i386
+	/x).
+	
+	2.0  INSTALLATION INSTRUCTIONS FOR WINDOWS NT 4.0 SERVICE PACK 4
+	================================================================
+	
+	Carefully read the installation instructions before you install Service
+	Pack 4, as they may have changed from previous Service Packs.
+	
+	2.1  Before You Install the Service Pack
+	----------------------------------------
+	
+	Close all active debugging sessions before installing this Service Pack,
+	otherwise the Update program will be unable to replace system files that
+	are in use. If a file is in use when you install the Service Pack, a dialog
+	box will appear in which you can choose to cancel the installation or skip
+	the file copy. It's recommended you choose to cancel the installation, and
+	then uninstall SP4. To do this, run Spuninst.exe or click Start, point to
+	Settings, click Control Panel, double-click Add/Remove Programs, and then
+	click Uninstall Service Pack 4. Close all active sessions on the system,
+	and then run Update.exe again to install the Service Pack.
+	
+	Also, to maximize the ability to recover the system in the event of
+	installation failure, it's recommended that you do the following before
+	installing the Service Pack:
+	
+	1. Update the system Emergency Repair Disk using the Rdisk.exe command with
+	  the /s switch.
+	
+	2. Perform a full backup of the system, including the system registry
+	  files.
+	
+	3. Disable any nonessential third-party drivers and services (that is,
+	  drivers and services that aren't required to boot the system).
+	
+	4. Contact the original equipment manufacturer (OEM) that provided the
+	  driver or service for the updated versions of the file(s).
+	
+	5. Restart the computer and check Event Viewer to ensure there are no
+	  system problems that could interfere with the installation of SP4.
+	
+	Users of NEC Versa 6050 or 6200 Series notebook computers, with Windows NT
+	version 4.0 preinstalled, should select "Yes" when SP4 Update.exe prompts
+	you to replace the hal.dll file.
+	
+	If your computer contains SystemSoft Card Wizard version 2.x or earlier,
+	you must obtain SystemSoft Card Wizard version 3.00.01 or greater before
+	installing Windows NT 4.0 Service Pack 4. Otherwise, your operating system
+	will no longer function. Contact SystemSoft at http://www.systemsoft.com
+	for further details.
+	
+	Advanced Power Management isn't supported by Windows NT 4.0. As a result,
+	it's recommended that you remove Advanced Power Management features before
+	installing this Service Pack.
+	
+	Power Management Utilities may not work on Windows NT 4.0 Service Pack 4.
+	Contact the vendor of your Power Management Utilities for an updated
+	version to work with Windows NT 4.0 SP4.
+	
+	Do not install SP4 without the Silicon Graphics companion software. SP4
+	requires additional files to update your Silicon Graphics system. For these
+	necessary files, visit the Silicon Graphics Web site at
+	http://support.sgi.com/nt.
+	
+	2.2  Installing the Service Pack
+	--------------------------------
+	
+	To install the Service Pack from the CD
+	
+	1. Insert the Service Pack CD into your CD-ROM drive.
+	
+	2. If a Web page opens in your browser after you insert the CD, click
+	  Windows NT Service Pack, and then click Install Service Pack.
+	
+	3. When you're asked whether you want to open the file Spsetup.bat or save
+	  it to disk, click Open and then follow the instructions that appear on
+	  the screen.
+	
+	  NOTE: To use the uninstall feature of this Service Pack, you must create
+	  an Uninstall folder during the initial installation.
+	
+	4. If a Web page doesn't automatically open when you insert the CD, open
+	  the Command Prompt window and change the folder to the drive letter
+	  associated with the CD-ROM drive.
+	
+	5. Change the folder to \I386\Update or \Alpha\Update (depending upon
+	  whether you have an x86 or Alpha CPU), and type UPDATE.
+	
+	6. Follow the instructions that appear on the screen.
+	
+	If SP4 doesn't install after you click Install Service Pack 4 from the CD,
+	or your browser doesn't automatically display installation instructions
+	when you insert the CD into your CD-ROM drive, start the Service Pack
+	install process manually from the CD. For more information, see "To install
+	the Service Pack from the CD" mentioned earlier in this section.
+	
+	NOTE: To use the uninstall feature of this Service Pack, you must create an
+	Uninstall folder during the initial installation.
+	
+	To install the Service Pack from a network drive
+	
+	1. Run the command to connect to the network drive that has the Service
+	  Pack files.
+	
+	2. Change the drive letter to that network drive.
+	
+	3. Change the folder to \I386\Update or \Alpha\Update (depending upon
+	  whether you have an x86 or Alpha CPU), and then type UPDATE.
+	
+	4. Follow the instructions that appear on the screen.
+	
+	NOTE: It's recommended that you choose to create an Uninstall folder
+	the first time you install the Service Pack.
+	
+	To install the Service Pack from the Internet
+	
+	Using a Web browser (such as Internet Explorer 3.0 or later), visit
+	http://support.microsoft.com/support/ntserver/ content/servicepacks/ or
+	http://support.microsoft.com/support/downloads/. Click the Install Service
+	Pack 4 option to install SP4 on your computer. This Web page automatically
+	detects which files need to be updated and then copies the appropriate
+	files to a temporary folder on your computer. It then installs only those
+	files that are needed to update your computer.
+	
+	NOTE: If you use Web browsers other than Internet Explorer 3.0 or later,
+	you may be unable to install the Service Pack through this update method.
+	If you are unable to install the Service Pack using this option, download
+	the entire Service Pack from the Internet onto your computer and run
+	update.exe locally.
+	
+	There are installation switches that can be used with Update.exe. The
+	following syntax help is available by typing update /?:
+	
+	UPDATE [-u] [-f] [-n] [-o] [-z] [-q]
+	
+	     -u Unattended mode
+	     -f Forces other apps to close at shutdown
+	     -n Do not back up files for uninstall
+	     -o Overwrite OEM files without prompting
+	     -z Do not reboot when installation is complete
+	     -q Quiet mode - no user interaction
+	
+	2.3  Service Pack Uninstall
+	---------------------------
+	
+	This Service Pack contains an uninstall feature that you can use to restore
+	your system to its previous state.
+	
+	To enable the uninstall option, run Update.exe. A subfolder in your Windows
+	NT folder named Uninstall will be created. This requires at least 80
+	megabytes (MB) of free space on the drive on which Windows NT is installed.
+	This is 40 MB for the uninstall folder and 40 MB for the Service Pack
+	updated system files.
+	
+	To uninstall SP4, double-click the Add/Remove Programs control panel.
+	Select Windows NT 4.0 Service Pack 4, and click Add/Remove. If this option
+	isn't available, run Spuninst.exe from the \%systemroot%\ 
+	$NtServicePackUninstall$\spuninst\ folder.
+	
+	NOTE: If you install any applications or services that require SP4 or have
+	bug fixes contained in SP4, uninstalling SP4 could adversely affect those
+	applications.
+	
+	If you want to uninstall SP4, the drive letter for the boot drive must be
+	the same as when you installed SP4. If you change the drive letter for the
+	boot drive, you can't uninstall SP4.
+	
+	To uninstall Service Pack 2 and Service Pack 3, you had to run Update.exe
+	and then select "Uninstall a previously installed Service Pack." This
+	returned your system to its previous state. After your system restarted,
+	the Update.exe program replaced the files updated by the Service Pack with
+	most of the files from the previous installation and returned most of your
+	registry settings to what they were before that Service Pack was installed.
+	
+	NOTE: If you uninstall SP4 on a system that previously had Service Pack 3
+	(without Internet Explorer 4.0) installed on it, cryptography won't work
+	correctly after the uninstall completes. To work around this issue,
+	reinstall Service Pack 3 after you have uninstalled SP4.
+	
+	Uninstalling SP4 won't uninstall new versions of CryptoAPI and SChannel.
+	
+	NOTE: If you plan to install a previous Service Pack after uninstalling
+	SP4, take note of the following important precaution. SP4 modifies the
+	Security Account Manager (SAM) database and the Security database such that
+	older versions of the Samsrv.dll, Samlib.dll, Lsasrv.dll, Services.exe,
+	Msv1_0.dll and Winlogon.exe files no longer recognize the database
+	structure. Therefore, the uninstall process doesn't restore these files
+	when uninstalling SP4. If you install a prior Service Pack (for example,
+	Service Pack 3) after uninstalling SP4, click "No" on the "Confirm File
+	Replace" dialog boxes that ask if you want to overwrite Samsrv.dll and
+	Winlogon.exe. If you overwrite the newer files with these older versions,
+	you'll be unable to log on to the system.
+	
+	NOTE: If you're reinstalling SP4 after installing new software or hardware,
+	you must choose to create a new Uninstall folder. To retain your ability to
+	back out to a bootable configuration, copy the current Uninstall folder to
+	a safe location before running the SP4 installation program.
+	
+	2.4  Year 2000 Service Pack Installation
+	----------------------------------------
+	
+	Windows NT Service Pack 4 contains fixes for known Year 2000 issues in the
+	Windows NT 4.0 operating system.
+	
+	To install the Year 2000 Service Pack from compact disc:
+	
+	Installing the Service Pack using Update.exe will update all necessary
+	files on your Windows NT 4.0 installation. It will also detect and inform
+	you if any additional Microsoft components that require updating to resolve
+	known Year 2000 issues in the Windows NT 4.0 operating system. Follow the
+	procedure below to update your computer to resolve known Year 2000 issues.
+	
+	Run the Y2ksetup.exe program located in the \I386\Update (for x86-based
+	computers) or \Alpha\Update (for Alpha-based computers) folders on the
+	Service Pack 4 compact disc. This program automatically updates operating
+	system components as detected to resolve known Year 2000 issues.
+	
+	Note that this installation will require the system to be restarted one or
+	more times. There is no uninstall option available for Y2ksetup.exe.
+	
+	To install the Year 2000 Service Pack via the Web or FTP:
+	
+	Install the base Service Pack from one of the locations below to your
+	computer:
+	
+	  http://support.microsoft.com/support/ntserver/content/servicepacks/ 
+	
+	  http://support.microsoft.com/support/downloads/ 
+	
+	The download program will automatically detect which files need to be
+	updated. Once prompted with the File Download dialog, select "Run this
+	program from its current location" to perform a patched installation. This
+	will also detect and inform you if any additional Microsoft components
+	require updating to resolve known Year 2000 issues on your Windows NT 4.0
+	operating system. Follow the procedure below to resolve known Year 2000
+	issues.
+	
+	Download the Year 2000 Service Pack (y2ksp4i.exe or y2ksp4a.exe) from one
+	of the locations below to your computer:
+	
+	  ftp://ftp.microsoft.com/bussys/winnt/winnt-public/fixes/ 
+	
+	  http://support.microsoft.com/support/ntserver/content/servicepacks/ 
+	
+	  http://support.microsoft.com/support/downloads/ 
+	
+	Run the self-extracting executable to expand the package. Run Y2ksetup.exe
+	from \I386\Update (for x86-based computers) or \Alpha\Update (for Alpha-
+	based computers) folder at the target location. This program automatically
+	updates operating system components as detected to resolve known Year 2000
+	issues.
+	
+	Note that this installation will require the system to be restarted one or
+	more times. There is no uninstall option available for Y2ksetup.exe.
+	
+	If you need to reinstall this Service Pack, run Update.exe from the
+	\I386\Update or \Alpha\Update folders. It isn't necessary to uninstall the
+	Service Pack previous to running Update.exe more than once on the same
+	system. Use \I386\Update\Y2ksetup.exe or \Alpha\Update\Y2ksetup.exe to
+	resolve known Year 2000 issues in the Windows NT 4.0 operating system.
+	
+	There are installation switches that can be used with Y2ksetup.exe.
+	The following switches are available:
+	
+	Y2KSETUP [-q] [-d]
+	     -q silent mode installation
+	     -d display only (does not install, only displays those operating
+	        system components on the computer that contain known Year 2000
+	        issues)
+	
+	2.4.2 Site Server Express 3.0
+	
+	There are known Year 2000 issues in the following components of Site Server
+	Express 2.0:
+	
+	- Content Analyzer
+	- Usage Analyst
+	
+	Installing Site Server Express 3.0 directly from the Web or from the CD
+	doesn?t remove these components from your computer. You must install
+	Y2ksetup.exe to remove these components from your computer and install Site
+	Server Express 3.0, which contains an update for:
+	
+	- Usage Analyst
+	- Posting Acceptor
+	
+	An updated version of the Content Analyzer will be available for download
+	from the Windows NT Service Pack 4.0 Web site.
+	
+	Known Site Server Express 3.0 setup issues:
+	
+	- When Y2KSetup installs Internet Explorer 4.01 SP1 and Site Server
+	  Express 3.0, two IIS virtual roots that are required by Posting Acceptor
+	  aren't created. It's recommended that you reinstall Site Server Express
+	  3.0 by running Ssx.exe from the \Ssx folder on the CD.
+	
+	2.4.3 FrontPage Server Extension Year 2000 Issues
+	
+	Releases of FrontPage 1.0, FrontPage 1.1 and FrontPage 97 are not Year
+	2000 compliant. Releases of FrontPage 98 resolve known Year 2000 issues.
+	If you have NTOP installed, you will have FrontPage 98 Server Extensions.
+	It's possible to have two or more versions of the FrontPage Server
+	Extenders on your computer at one time. The installation of a version
+	that isn't Year 2000 ready doesn't mean that you are actively running
+	that version.
+	
+	To determine which version of the FrontPage Server Extenders are actively
+	in use on computers with FrontPage 98 or earlier
+	
+	- Run the FrontPage Server Administrator (Fpsrvwin.exe).
+	
+	- Click on each of the Web servers or virtual servers listed in the
+	  box in the upper left area, which have been configured with the
+	  FrontPage Server Extenders.
+	
+	- The version number of the FrontPage Server Extenders is displayed
+	  to the right of the list. Version numbers where the first digit is
+	  3 or greater resolve known Year 2000 issues (e.g. 3.0.2.1706).
+	
+	If the first digit of the version number is a 1 or 2, then you should
+	download and install the latest version of the FrontPage Server Extenders.
+	Refer to http://www.microsoft.com/frontpage/ for details on the latest
+	available version is and how to download.
+	
+	2.4.4 IBM PS/1 ValuePoint
+	
+	There are known Year 2000 issues for Windows NT version 4.0 on 2.4.4 IBM
+	PS/1 ValuePoint computers. To fix these known issues, you must upgrade
+	Ntdetect.com in order to resolve known Year 2000 issues in older versions.
+	
+	From the \Ps1 folder on the CD, copy Ntdetect.com to the root of your
+	primary boot partition on your computer. You do not need to reboot.
+	
+	For more information, go to the Knowledge Base at http://support.
+	microsoft.com/support/ and search for KB article Q194301.
+	
+	For Year 2000 issues regarding Microsoft products or definitions regarding
+	Year 2000 compliance, as used herein, see our Web site at
+	http://www.microsoft.com/year2000.
+	
+	3.0  USER NOTES
+	===============
+	
+	This section covers information that is specific to this Service
+	Pack release.
+	
+	3.1  Emergency Repair Disk
+	--------------------------
+	
+	If you use the Windows NT Emergency Repair Disk to repair your Windows NT
+	system, which requires you to supply the original Windows NT media at some
+	time after you install Service Pack 4, you'll need to reinstall SP4 after
+	the repair is completed. This is because the Emergency Repair Disk repairs
+	your system by restoring your original Windows NT 4.0 system files. After
+	the repair is completed, follow the Installation Instructions (Section 2.0)
+	to reinstall SP4. For more information on using the Windows NT Emergency
+	Repair Disk utility, go to the Knowledge Base at
+	http://support.microsoft.com/support/ and search for KB article Q146887.
+	
+	NOTE: To use the Emergency Repair Disk utility, you must have the updated
+	version of Setupdd.sys. The updated version is contained in SP4. To update
+	your version of Setupdd.sys, copy Setupdd.sys from the Service Pack to your
+	Windows NT 4.0 Setup Disk 2 from the original product media. This will
+	replace the older version of Setupdd.sys with the updated version. For more
+	information, consult the Knowledge Base at
+	http://support.microsoft.com/support/ and search for KB article Q158423.
+	
+	3.2  Adding New Components to the System
+	----------------------------------------
+	
+	If you change or add new software or hardware components to your system
+	after you install SP4, you'll need to install the SP4 again. This is
+	because the files included on the original Windows NT 4.0 media may not be
+	the same as the files on the Service Pack CD. You can't install new
+	components, such as a new keyboard or printer driver, directly from the
+	Service Pack media. You must install new components from the original
+	product media and then reinstall the Service Pack.
+	
+	For example, if you install the Simple Network Management Protocol (SNMP)
+	service after installing SP4, you'll need to reinstall the Service Pack. If
+	you fail to do so, you'll receive the error message "Entrypoint
+	SnmpSvcGetEnterpriseOID could not be located in Snmpapi.dll." This is
+	because some of the files in the SNMP service have been updated in the SP4
+	and you have a version mismatch. Reinstalling the Service Pack fixes the
+	problem by copying the newer versions of the files to your system.
+	
+	NOTE: SNMP security provides the ability to set a permission level on the
+	SNMP agent computer. The permission level determines how the SNMP agent
+	computer will process requests from an SNMP community.
+	
+	3.3  Installing Symbol Files from the CD
+	----------------------------------------
+	
+	Each program file in Windows NT has a corresponding symbol file that is
+	used to find the cause of kernel STOP errors. The symbols for SP4 files are
+	compressed in self-extracting executables named Sp4symi.exe and
+	Sp4syma.exe, for Intel and Alpha respectively. To install the symbol files
+	corresponding to the new binaries in SP4, run the executable and when
+	prompted, specify the path to the location of the previous version's
+	symbols (for example, c:\winnt\symbols\). This copies the SP4 .dbg files
+	over the existing versions of these files.
+	
+	For more information about debugging in Windows NT, see Chapter 39,
+	"Windows NT Debugger," in the Microsoft Windows NT 4.0 Workstation Resource
+	Kit.
+	
+	3.4  Hardware Compatibility with Windows NT 4.0
+	-----------------------------------------------
+	
+	3.4.1 Video Drivers
+	
+	Due to incompatibilities between the ATIRage drivers and Service Pack
+	setup, the files Ati.sys and Ati.dll haven't been included with SP4. Any
+	ATI drivers currently installed on your system will still function
+	normally.
+	
+	If you install SP4 over SP3 on a computer that has a Number Nine Visual
+	Technologies Imagine 2 video card and drivers installed, you may experience
+	some loss of functionality in the video driver, such as loss of any
+	resolutions requiring 256 or more colors. If you uninstall SP4 and revert
+	to SP3, the Imagine 2 card may be unable to display 256 colors or higher.
+	There is no known resolution for either of these two issues because
+	reinstalling the Imagine 2 video drivers doesn?t restore the lost
+	functionality. Number Nine is aware of this issue and is working on a fix.
+	
+	3.4.2 Dell Latitude Systems
+	
+	If you're running Windows NT 4.0 on a Dell Latitude portable computer, your
+	Dell-supplied Softex Advanced Power Management and PC Card Controller
+	services (versions 2.0 and above) will continue to function after you
+	install SP4. Softex version 1.0 will stop functioning after SP4
+	installation. To update your system for SP4, install version 2.19 or later
+	of the Softex utilities, available from http://support.dell.com/ filelib/.
+	Your computer will become unusable if you reinstall any version of Softex
+	prior to 2.19 after installing SP4.
+	
+	3.4.3 Softex/Phoenix Utilities
+	
+	If you're using any of the following Softex Incorporated or Phoenix
+	Technologies utilities, you may encounter problems running SP4:
+	
+	- Softex PC Card Controller, or Phoenix CardExecutive for Windows NT
+	- Softex Power Management Controller, or Phoenix APM for Windows NT
+	- Softex Docking Controller, or Phoenix NoteDock for Windows NT
+	- Softex DeskPower Controller, or Phoenix DeskAPM for Windows NT
+	
+	Follow these guidelines:
+	
+	1. Obtain the version number of the utilities you're using.
+	
+	2. You must be running version 2.19 or later of the Softex or Phoenix
+	  utilities to avoid problems with SP4. Don?t install or reinstall
+	  any version of Softex or Phoenix utilities earlier than 2.19 on
+	  your system, or your system might not boot. For more information,
+	  visit the Softex Incorporated Web site at http://www.softexinc.com
+	  or Phoenix Technologies at http://www.phoenix.com.
+	
+	3.4.4 255 SCSI Logical Unit Support
+	
+	Windows NT 4.0 detects only the first 8 logical units on a SCSI device. To
+	work around this limitation, install SP4 and add the following key in the
+	registry:
+	
+	  \HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services
+	  \[Driver Service Key]\Parameters\Device[N]
+	
+	     LargeLuns: REG_DWORD: 0x1
+	
+	where [Driver Service Key] is your SCSI driver name and [N] is the SCSI
+	bus number.
+	
+	3.4.5 IBM PS/1 ValuePoint
+	
+	There are known Year 2000 issues for Windows NT version 4.0 on this
+	computer. It's necessary to upgrade Ntdetect.com in order to resolve known
+	Year 2000 issues in older versions.
+	
+	From the \Ps1 folder on the CD, copy Ntdetect.com to the root of your
+	primary boot partition on your computer. You do not need to reboot.
+	
+	For more information, go to the Knowledge Base at http://support.
+	microsoft.com/support/ and search for KB article Q194301.
+	
+	3.4.6 SystemSoft Card Wizard
+	
+	If your computer contains SystemSoft Card Wizard version 3.x and you have
+	installed SP4, you may have lost socket services functionality. To
+	workaround this issue reinstall SystemSoft Card Wizard version 3.x or
+	higher after installing Service Pack 4. Or you can copy Pcmcia.sys from the
+	Service Pack 4 Uninstall folder, $ntservicepacekuninstall$, to the
+	\%systemroot%\System32\Drivers folder on your computer. Reboot the
+	computer.
+	
+	3.5  DIGITAL Alpha Notes
+	------------------------
+	
+	3.5.1 Using Remotely Possible 32 with Matrox Millennium Display Adapter
+	
+	If you use Remotely Possible 32 on an Alpha with a Matrox Millennium
+	display adapter, don't use the Matrox drivers. Otherwise, your computer
+	bluescreens after rebooting. You must use VGA-compatible display adapter
+	drivers to use Remotely Possible 32.
+	
+	3.5.2 Lotus Notes 4.5
+	
+	If you want to use Lotus Notes and Internet Explorer 4.01 on an Alpha
+	computer that runs Windows NT 4.0, you must follow this sequence when
+	installing SP4:
+	
+	1. If you have Internet Explorer 4.01 on your computer, uninstall it.
+	
+	2. Install SP4.
+	
+	3. Install (or reinstall) Lotus Notes.
+	
+	4. Install Internet Explorer 4.01 from the SP4 CD. This problem will be
+	  fixed in a future release.
+	
+	3.5.3 Alpha Fixes in SP4
+	
+	These notes describe problems on Alpha systems that have been resolved
+	since the Windows NT 4.0 Service Pack 3 release.
+	
+	NOTE: Windows NT 4.0 SP4 ships with HAL Revision D. This revision is also
+	currently available from Compaq.
+	
+	  3.5.3.1 System Hangs on Alpha Systems with Only One Processor Physically
+	  Present
+	
+	  The following Alpha systems, with only one processor physically present,
+	  no longer hang when booted:
+	
+	     AlphaServer 4x00
+	     AlphaServer 1200
+	     AlphaStation 1200
+	     DIGITAL Server 5000
+	     DIGITAL Server 7000
+	
+	  3.5.3.2 Clock Interrupt Period Changed from 7.5 ms to 10 ms
+	
+	  In Windows NT 4.0 SP4, the effective clock interrupt period on the
+	  following systems was changed from 7.5 ms to 10 ms:
+	
+	     AlphaServer 4x00
+	     AlphaServer 1200
+	     AlphaStation 1200
+	     DIGITAL Server 5000
+	     DIGITAL Server 7000
+	
+	  This change will provide parity with Intel systems and alleviate
+	  performance anomalies caused by assumptions of 10 ms for the
+	  resolution for timers (which is equal to the clock interrupt period).
+	
+	  3.5.3.3 Pyxis Error Registers
+	
+	  HAL Revision D, which ships with Windows NT 4.0 SP4, supports updated
+	  Pyxis error registers, which provide more meaningful information during
+	  hardware crashes.
+	
+	  3.5.3.4 Peer-to-Peer DMA Transfers
+	
+	  This Service Pack, together with the current AlphaBIOS firmware, now
+	  allows peer-to-peer DMA transfers.
+	
+	  3.5.3.5 PCI Devices with 256 MB of Memory or Greater
+	
+	  The following Alpha platforms now support PCI devices with 256 MB of
+	  memory or greater for memory-mapped I/O:
+	
+	     AlphaServer 1000 5/xxx
+	     AlphaServer 1000A 5/xxx
+	     AlphaServer 800 or Digital Server 3000
+	     AlphaStation 600
+	     AlphaStation 500
+	     Alpha XL 3xx
+	
+	  3.5.3.6 Alpha Machines Sometimes Hang When Rebooting
+	
+	  The following systems no longer hang during an attempted reboot:
+	
+	     AlphaServer 4x00
+	     AlphaServer 1200
+	     AlphaStation 1200
+	     DIGITAL Server 5000
+	     DIGITAL Server 7000
+	
+	  3.5.3.7 I/O Performance Degradation or a Hung Machine Under Heavy I/O
+	
+	  Loads On Alpha machines with heavy I/O loads, certain device drivers
+	  consumed too many DMA map registers. This sometimes caused poor I/O
+	  performance or a hung machine. SP4 allows a greater number of DMA map
+	  registers.
+	
+	  3.5.3.8 Crashes on Alpha systems with STOP Code 0x0A
+	
+	  Minor "correctable" hardware errors no longer generate crashes with STOP
+	  code 0x0A on following machines:
+	
+	     AlphaServer 1000 5/xxx
+	     AlphaServer 1000A 5/xxx
+	     AlphaServer 800 or Digital Server 3000
+	     AlphaStation 600
+	     AlphaStation 500
+	     AlphaStation 600A
+	     Alpha XL 3xx
+	
+	  3.5.4 DIGITAL Ultimate Workstation 533
+	
+	  SP4 won't update the Hal.dll file on the system because Hal.dll is
+	  marked as an OEM file. To work around this, you must manually copy
+	  Halrawmp.dll from SP4 to your system. To do this, first locate the
+	  Hal.dll file on the system (in the OSLOADER subfolder), and then copy
+	  Halrawmp.dll from SP4 to this folder, renaming it Hal.dll.
+	
+	  3.5.5 Installation Fails on Alpha Machines with Windows NT Option Pack
+	  1.0 Installed
+	
+	  Security Configuration Manager (SCM) doesn't install on Alpha machines
+	  that have the Windows NT Option Pack 1.0 for Alpha installed. This is
+	  because the Mfc42u.dll file installed by the Windows NT Option Pack
+	  isn't compatible with SCM.
+	
+	  To work around this, replace Mfc42u.dll installed by Windows NT Option
+	  Pack 1.0 for Alpha with Mfc42u.dll from the Windows NT4.0 CD or from
+	  Visual C 6.0. This may cause problems with the applications in the
+	  Windows NT Option Pack 1.0 for Alpha. This will be fixed in the next
+	  release of Windows NT.
+	
+	3.5.4 Microsoft Transaction Server and Distributed Transaction Coordinator
+	
+	The file TestOracleXAConfig.exe isn't automatically installed on DEC Alpha-
+	based computers. If you are installing Windows NT 4.0 SP4 on an Alpha-based
+	computer and will be using Microsoft Transaction Server (MTS) or the
+	Distributed Transaction Coordinator (DTC) with an Oracle or XA- compliant
+	database, you must manually copy this file from the CD-ROM to the
+	%sysroot%\system32 folder on your hard drive. The symbol %sysroot%
+	represents the installation folder for Windows NT. For example, if your
+	installation folder is C:\Winnt, you would copy it to C:\Winnt\Wystem32.
+	
+	TestOracleXAConfig.exe is located in the \Alpha folder on the Windows NT
+	4.0 SP4 CD-ROM.
+	
+	If you are installing Windows NT 4.0 SP4 on an Intel-based computer,
+	TestOracleXAConfig.exe is automatically installed during Setup.
+	
+	3.6  Running Windows NT Administrative Tools from Remote Server
+	---------------------------------------------------------------
+	
+	In order to run administrative tools from a remote server, you must
+	upgrade the remote server to Service Pack 4. If you attempt to run
+	administrative tools from a remote machine that hasn't also been
+	upgraded to Service Pack 4, they will fail to load or won't function
+	properly.
+	
+	3.7  CryptoAPI and Authenticode
+	-------------------------------
+	
+	The Authenticode environment won't be set up correctly for existing user
+	accounts on upgrades from Windows NT 4.0 systems running Internet Explorer
+	3.02. This doesn't affect new user accounts created on the system. Also,
+	upgrades from Windows NT 4.0 systems with Internet Explorer 4.0 or later
+	aren't affected.
+	
+	Each user needs to enter the following command line in a command prompt
+	window before they use Authenticode:
+	
+	  setreg 1 false 2 true 3 false 4 false 5 true 6 false 7 true 8 false 9
+	  false 10 false
+	
+	Setreg.exe isn't part of SP4; you can download it as part of the CryptoAPI
+	tools. You can install the latest CryptoAPI tools (Internet Explorer 4.0 or
+	later) from the Platform SDK on MSDN.
+	
+	The CryptoAPI tools (also known as Authenticode Signing tools) that were
+	released for Internet Explorer 3.02 are no longer supported. Tools released
+	for Internet Explorer 4.0 will continue to work on Service Pack 4.
+	
+	If you install SP4 on a system with Internet Explorer 4.0 or later and then
+	uninstall Internet Explorer, newer CryptoAPI components will be partially
+	uninstalled. This problem doesn't affect the system if Internet Explorer
+	4.0 was installed after SP4. Reinstall SP4 after uninstalling Internet
+	Explorer for full functionality.
+	
+	To ensure proper CryptoAPI functionality, it?s recommended that you install
+	Internet Explorer 3.02 or later before you install SP4. The following is a
+	list of known problems when Internet Explorer 3.02 or later is installed
+	after SP4:
+	
+	- Certain CryptoAP2 networking functions have a dependency on Wininet.dll
+	  and may fail if Wininet.dll isn't on the system. To work around this,
+	  install Internet Explorer 3.02 or later before installing SP4.
+	
+	- Certificate revocation checking fails if you install Internet Explorer
+	  4.0 after you install SP4. To fix this, reinstall SP4 after installing
+	  Internet Explorer 4.0. This will be fixed in a future release of
+	  Internet Explorer.
+	
+	- Certain CryptoAPI-related file extensions (.Cer, .Crt, and .Der) aren't
+	  registered correctly when Internet Explorer 4.0 is installed after SP4.
+	  To restore the file extension registration, run the following command
+	  line:
+	
+	     Regsvr32.exe cryptext.dll
+	
+	This will be fixed in a future release of Internet Explorer.
+	
+	3.8  Uninstalling Internet Explorer
+	-----------------------------------
+	
+	On a system that had Internet Explorer 4.0 or later installed and then had
+	SP4 applied, uninstalling Internet Explorer will partially uninstall newer
+	CryptoAPI components. Reinstall SP4 after uninstalling Internet Explorer.
+	This problem doesn't affect the system if Internet Explorer was installed
+	after SP4.
+	
+	3.9  Certificate Server Notes
+	-----------------------------
+	
+	3.9.1 Known Problems and Limitations:
+	
+	1. Be sure to consult the release notes for the Certificate Server
+	  version 1.0 as shipped with the Windows NT Option Pack. Also
+	  consult the QFE update release at ftp://ftp.microsoft.com/bussys/ 
+	  iis/iis-public/fixes/usa/certserv.
+	
+	2. Do not perform an initial installation of Certificate Server on
+	  February 29th of a leap year. The validity period for the server
+	  will be set incorrectly. To work around this, set the machine
+	  time to the day before (February 28th), perform the installation,
+	  and then reset the machine time back to February 29th. There
+	  is no problem issuing certificates on February 29th, once the
+	  certificate server is successfully installed (as noted above).
+	
+	3. If you install Certificate Server on top of SP4, you may receive
+	  a "Some system services could not start" error message upon
+	  system startup. Click OK to continue, and check the Event Viewer
+	  log for the specific error.
+	
+	  Event ID: 7000
+	  Source: Service Control Manager
+	  Description: The Certificate Authority service failed to start due
+	  to the following error: The service did not respond to the start or
+	  control request in a timely fashion.
+	
+	  Event ID: 7009
+	  Source: Service Control Manager
+	  Description: Timeout (120000 milliseconds) waiting for service to
+	  connect.
+	
+	  There are no workarounds for this problem.
+	
+	3.9.2 Virtual Directory Attributes for Certificate Server
+	
+	IIS enforces the application attribute of virtual directories in such
+	a way that the Certificate Server's administration Web pages fail.
+	This failure appears in the form of database access errors that are
+	identified by an E78 access failure code. You will be unable to access
+	the Certificate Server log and queue from the administration Web pages.
+	To work around this problem, make sure that the application attribute
+	for the Certificate Administration (CertAdm) folder is applied.
+	
+	To apply the application attribute for CertAdm folder:
+	
+	1. Click Start, point to Programs, point to Windows NT 4.0
+	  Option Pack, point to Microsoft Internet Information Server, and
+	  then click Internet Service Manager.
+	
+	2. In MMC, open the left pane entries until the Default Web Site is
+	  visible.
+	
+	3. Double-click the Default Web Site. The right pane now contains the
+	  first level of virtual directories for the Web server.
+	
+	4. Right-click the CertAdm virtual directory.
+	
+	5. Click Properties.
+	
+	6. In the Application Settings section of the Virtual Directory tab,
+	  click Create.
+	
+	7. Click Apply, and then click OK.
+	
+	3.9.3 Invalid Hash Algorithm Accepted on Installation
+	
+	During Certificate Server installation, don't select HMAC as the hash
+	algorithm the Certificate Server should use when issuing certificates.
+	Although HMAC is among the selections on the optional Advanced Settings
+	page, this isn't a valid use of this algorithm. If HMAC is selected,
+	installation of the Certificate Server will fail.
+	For more information about Certificate Server, consult the Microsoft
+	Knowledge Base.
+	
+	3.10  Internet Information Server 4.0, Secure Sockets Layer and Root
+	Certifying Authority Certificates, and the IISCA.EXE Tool
+	--------------------------------------------------------------------
+	
+	If you use Internet Information Server 4.0 (IIS) with secure sockets layer
+	(SSL) and you have installed a root certifying authority certificate (other
+	than those issued by well-known third parties, such as Verisign, Thawte
+	Consulting, or Microsoft), you may need to reinstall the affected root
+	certifying authority certificates after you install SP4. You need to do
+	this if you're using Microsoft Certificate Server 1.0, which shipped with
+	the Windows NT Option Pack.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400search kbWinNT400search kbWinNTW400sp4 kbWinNTSsearch kbWinNTS400sp4 kbWinNTS400search
+	Version           : winnt:4.0 SP4
+	Hardware          : ALPHA x86
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

@@ -1,0 +1,115 @@
+---
+layout: page
+title: "Q257273: Err Msg: Unable to Locate the BackOffice 4.5 Product Directory"
+permalink: kb/257/Q257273/
+---
+
+## Q257273: Err Msg: Unable to Locate the BackOffice 4.5 Product Directory
+
+	Article: Q257273
+	Product(s): Microsoft Windows NT
+	Version(s): ; winnt:4.5
+	Operating System(s): 
+	Keyword(s): kberrmsg kbsetup
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft BackOffice Server 4.5 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about modifying the registry. Before you 
+	modify the registry, make sure to back it up and make sure that you understand how to restore 
+	the registry if a problem occurs. For information about how to back up, restore, and edit the 
+	registry, click the following article number to view the article in the Microsoft Knowledge Base:
+	
+	  Q256986 Description of the Microsoft Windows Registry
+	
+	SYMPTOMS
+	========
+	
+	When you install the Team Productivity Update (TPU) for BackOffice Server 4.5,
+	you may receive the following error message:
+	
+	  TPUSetup
+	
+	  Unable to locate the BackOffice 4.5 product directory.
+	
+	  Please review any documentation accompanying your setup for more information
+	  on why setup may not be working properly. You might also try closing any open
+	  applications and run setup again.
+	
+	CAUSE
+	=====
+	
+	This issue can occur if the BackOffice Server Setup files are removed, or if the
+	BackOffice Program Directory value is missing from the registry. In either case,
+	the BackOfficeProgramDir value is missing.
+	
+	RESOLUTION
+	==========
+	
+	WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+	that may require you to reinstall your operating system. Microsoft cannot
+	guarantee that you can solve problems that result from using Registry Editor
+	incorrectly. Use Registry Editor at your own risk.
+	
+	To resolve this issue, use the appropriate method:
+	
+	The BackOffice Server Setup Files Were Removed
+	----------------------------------------------
+	
+	1. Insert the BackOffice Server 4.5 CD-ROM number 1, and then start BackOffice
+	  Setup.
+	
+	2. When you are prompted to choose an installation type, choose Custom
+	  installation.
+	
+	3. When the Component Selection screen appears, select only the BackOffice Suite
+	  Components.
+	
+	4. After the BackOffice Suite Components are reinstalled, TPU Setup will proceed
+	  past the error message listed earlier in this article.
+	
+	The BackOffice Server Setup Files Were Not Removed
+	--------------------------------------------------
+	
+	1. Use Regedt32.exe to view the following registry key:
+	
+	  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\BackOffice
+	
+	2. Click Add Value on the Edit menu.
+	
+	3. For the String Name, enter "BackOfficeProgramDir" (without the quotation
+	  marks).
+	
+	4. Set the Data Type to Reg_SZ, and then click OK.
+	
+	5. For the String Value, enter the path of the BackOffice Program folder, and
+	  then click OK. Note that by default, this is the <drive>:\Program
+	  Files\Microsoft BackOffice folder, where <drive> is the drive where the
+	  BackOffice Suite Components are installed.
+	
+	6. With this value in place, TPU Setup will proceed past the error message
+	  listed earlier in this article.
+	
+	MORE INFORMATION
+	================
+	
+	For additional information about removing and reinstalling the BackOffice Server
+	Suite Components, click the article number below to view the article in the
+	Microsoft Knowledge Base:
+	
+	  Q245594 How to Reinstall BackOffice 4.5 Suite Components
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kberrmsg kbsetup 
+	Technology        : kbAudDeveloper kbBackOfficeSearch kbBackOfficeServ450
+	Version           : :; winnt:4.5
+	Issue type        : kbprb
+	
+	=============================================================================
+	

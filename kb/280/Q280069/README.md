@@ -1,0 +1,647 @@
+---
+layout: page
+title: "Q280069: Games: How to Troubleshoot Invalid Page Faults (Part 2)"
+permalink: kb/280/Q280069/
+---
+
+## Q280069: Games: How to Troubleshoot Invalid Page Faults (Part 2)
+
+	Article: Q280069
+	Product(s): Microsoft Home Games
+	Version(s): 1.0,2.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 16-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Age of Empires Expansion: The Rise of Rome, version 1.0 
+	- Microsoft Age of Empires II Expansion: The Conquerors 
+	- Microsoft Age of Empires II: The Age of Kings, version 2.0 
+	- Microsoft Age of Empires, Gold Edition 
+	- Microsoft Age of Empires, version 1.0 
+	- Microsoft Allegiance, version 1.0 
+	- Microsoft Asheron's Call, version 1.0 
+	- Microsoft Baseball 2000 
+	- Microsoft Baseball 2001 
+	- Microsoft Best of Windows Entertainment Pack, version 1.0 
+	- Microsoft Casino 
+	- Microsoft Classic Board Games 
+	- Microsoft Close Combat for Windows 1.0 
+	- Microsoft Close Combat III: The Russian Front, version 1.0 
+	- Microsoft Close Combat: A Bridge Too Far, version 2.0 
+	- Microsoft Combat Flight Simulator 2: WWII Pacific Theater, version 1.0 
+	- Microsoft Combat Flight Simulator: WWII Europe Series, version 1.0 
+	- Microsoft Crimson Skies 
+	- Microsoft Flight Simulator 2000 
+	- Microsoft Flight Simulator 2000 Professional Edition 
+	- Microsoft Flight Simulator 98 
+	- Microsoft Golf 1999 Edition 
+	- Microsoft Golf 2001 Edition 
+	- Microsoft International Soccer 2000, version 1.0 
+	- Microsoft Links 2001 
+	- Microsoft Links LS 2000 
+	- Microsoft MechWarrior 4: Vengeance 
+	- Microsoft Metal Gear Solid 
+	- Microsoft Midtown Madness 2, version 2.0 
+	- Microsoft Midtown Madness, version 1.0 
+	- Microsoft Monster Truck Madness 2, version 2.0 
+	- Microsoft Monster Truck Madness, version 1.0 
+	- Microsoft Motocross Madness 2, version 2.0 
+	- Microsoft Motocross Madness, version 1.0 
+	- Microsoft NBA Full Court Press for Windows, version 1.0 
+	- Microsoft NBA Inside Drive 2000, version 1.0 
+	- Microsoft NFL Fever 2000, version 1.0 
+	- Microsoft Outwars, version 1.0 
+	- Microsoft Pandora's Box, version 1.0 
+	- Microsoft Pinball Arcade, version 1.0 
+	- Microsoft Plus! Game Pack: Cards and Puzzles 
+	- Microsoft Return of Arcade for Windows, version 1.0 
+	- Microsoft Return of Arcade, Anniversary Edition 
+	- Microsoft Revenge of Arcade, version 1.0 
+	- Microsoft Soccer, version 1.0 
+	- Microsoft StarLancer, version 1.0 
+	- Microsoft Train Simulator, version 1.0 
+	- Microsoft Urban Assault, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article is the second of two articles that describe how to troubleshoot
+	"invalid page fault" and "fatal exception" error messages in the Microsoft games
+	listed at the beginning of this article. This article contains troubleshooting
+	questions and possible resolutions.
+	
+	For additional information about how to troubleshoot "invalid page fault" and
+	"fatal exception" error messages, click the article number below to view the
+	article in the Microsoft Knowledge Base:
+	
+	  Q280068 Games: How to Troubleshoot Invalid Page Faults and Exception Errors
+	  (Part 1)
+	
+	For additional information about other troubleshooting strategies, click the
+	article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q275481 How to Troubleshoot Program Faults with Dr. Watson
+	
+	MORE INFORMATION
+	================
+	
+	Does your computer meet the system requirements for the game?
+	-------------------------------------------------------------
+	
+	Query the Microsoft Knowledge Base for information about the system requirements
+	for the game at the following Microsoft Web site:
+	
+	  http://support.microsoft.com/?pr=kbinfo
+	
+	Use the following parameters to query for the system requirements:
+	
+	1. In the Search (KB) box, select the name of your game.
+	
+	2. In the "For solutions containing" box, type "System Requirements" (without
+	  the quotation marks).
+	
+	3. In the Using box, select "All the words entered".
+	
+	NOTE: If you do not see the Using box, click Show Options.
+	
+	Are you running Microsoft Windows NT 4.0 or Microsoft Windows 2000?
+	-------------------------------------------------------------------
+	
+	Download and install the latest Service Pack from the following Microsoft Web
+	site:
+	
+	  http://www.microsoft.com/windows/default.asp
+	
+	Are any programs running in the background conflicting with the game?
+	---------------------------------------------------------------------
+	
+	If programs are running in the background, clean boot your computer.
+	
+	To clean boot your computer, use the appropriate method for your version of
+	Microsoft Windows.
+	
+	Clean Boot Microsoft Windows Millennium Edition:
+	
+	1. Click Start, and then click Run.
+	
+	2. In the Open box, type "msconfig" (without the quotation marks), and then
+	  click OK.
+	
+	3. On the General tab, click Selective Startup, and then click to clear the
+	  following check boxes:
+	
+	   - Load Static VXDs
+	   - Load Startup Group Items
+	   - Load Environment Variables
+	
+	4. On the Win.ini tab, click to clear the following check boxes:
+	
+	   - Load=
+	   - Run=
+	
+	5. Click OK. When you are prompted to restart the computer, do so.
+	
+	Microsoft Windows 98:
+	
+	1. Click Start, and then click Run.
+	
+	2. In the Open box, type "msconfig" (without the quotation marks), and then
+	  click OK.
+	
+	3. On the General tab, click Selective Startup, and then click to clear the
+	  following check boxes:
+	
+	   - Process Config.sys File
+	   - Process Autoexec.bat File
+	   - Process Winstart.bat File (if available)
+	   - Load Startup Group Items
+	
+	4. On the Win.ini tab, click to clear the following check boxes:
+	   - Load=
+	   - Run=
+	
+	5. Click OK. When you are prompted to restart the computer, do so.
+	
+	For additional information about how to clean boot Windows 98, click the article
+	number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q192926 How to Perform Clean-Boot Troubleshooting for Windows 98
+	
+	
+	NOTE: To restore your original Startup options, click Normal Startup on the
+	General tab in the System Configuration Utility.
+	
+	Microsoft Windows 95:
+	
+	1. Restart the computer. When you see the "Starting Windows 95" message, press
+	  the F8 key, and then select Command Prompt Only from the Startup menu.
+	
+	2. At the command prompt, type "win" (without the quotation marks), and then
+	  press ENTER. Press and hold down the SHIFT key until the Windows startup
+	  sequence is complete.
+	
+	3. Turn off any anti-virus or disk tool programs installed on the computer.
+	
+	  For information about how to turn off these programs, see the printed or
+	  online documentation for the program.
+	
+	4. Quit all running programs except Explorer and Systray. To do this, press
+	  CTRL+ALT+DELETE, click the program that you want to quit, and then click End
+	  Task. If you receive a message that the program is busy or not responding,
+	  click End Task again. Repeat this step to quit all programs except Explorer
+	  and Systray.
+	
+	For additional information about how to clean boot Windows 95, click the article
+	number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q177604 Multimedia: Troubleshooting Using Clean Boot of Windows 95
+	
+	NOTE: To restore your original Startup options, restart the computer normally,
+	and then turn on any anti-virus or disk tool programs installed on the
+	computer.
+	
+	For information about how to turn on these programs, see the printed or online
+	documentation for the program.
+	
+	Is it DirectX?
+	--------------
+	
+	DirectX is a Windows component that improves access to hardware. Games use
+	DirectX to communicate with your hardware. For more information about DirectX,
+	visit the following Microsoft Web site:
+	
+	  http://www.microsoft.com/directx/homeuser/aboutdx.asp
+	
+	To download and install the latest version of DirectX, visit the following
+	Microsoft Web site:
+	
+	  http://www.microsoft.com/directx/homeuser/downloads/default.asp
+	
+	To install DirectX in Safe Mode, follow these steps:
+	
+	- Restart Windows in Safe mode. To do this, use the appropriate method for your
+	  version of Microsoft Windows:
+	
+	  Restart Windows 95:
+	
+	  Restart your computer. When you see the "Starting Windows 95" message, press
+	  the F8 key, and then choose Safe Mode from the Startup menu.
+	
+	  Restart Windows 98 or Windows Me:
+	
+	  Restart your computer, press and hold down the CTRL key after the computer
+	  completes the Power On Self Test (POST), and then select Safe Mode from the
+	  Startup menu.
+	
+	  When Windows starts in Safe mode, click OK.
+	
+	  Restart Windows 2000:
+	
+	  Restart your computer, and when the Boot menu appears, press F8. When the
+	  "Windows 2000 Advanced Options" menu appears, select an option, and then
+	  press ENTER. When the Boot menu appears again, with the words "Safe Mode"
+	  displayed in red at the bottom, select the installation you want to start,
+	  and then press ENTER.
+	
+	  WARNING: Do not select a Microsoft Windows NT 4.0 installation.
+	
+	For additional information about how to obtain and install the latest version of
+	DirectX, click the article number below to view the article in the Microsoft
+	Knowledge Base:
+	
+	  Q179113 How to Download and Install DirectX
+	
+	Is There an Issue with the Video Driver?
+	----------------------------------------
+	
+	Games require plenty of information from your video adapter when you run or start
+	a game. A damaged or outdated video driver can cause an invalid page fault or
+	exception error to occur.
+	
+	Contact your computer or video adapter manufacturer to inquire about how to
+	obtain and install the latest version of the video driver for your video
+	adapter.
+	
+	Drivers are small programs that allow your operating system to communicate with
+	the hardware in your computer. A driver acts as a translator between your
+	hardware and operating system. The driver helps Microsoft Windows understand
+	requests from your hardware. Beyond acting as a translator, a driver can also
+	enhance the operation of a particular piece of hardware, such as a video adapter
+	or a sound card.
+	
+	A new video driver for your video adapter might allow your video adapter to use
+	video features more efficiently or improve performance.
+	
+	For information about how to contact your hardware manufacturer, click the
+	appropriate article number below to view the article in the Microsoft Knowledge
+	Base:
+	
+	  Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+	
+	  Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+	
+	  Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+	
+	To determine the manufacturer and model of your video adapter:
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click System.
+	
+	3. Click Device Manager.
+	
+	4. Double-click "Display adapters".
+	
+	  NOTE: In the branch under "Display adapters", the manufacturer and model of
+	  your video adapter should be displayed.
+	
+	5. Close System Properties, and then close Control Panel.
+	
+	If the issue continue to occur, proceed to the next method.
+	
+	Change the Windows Color Palette Setting to "High Color (16 Bit)"
+	-----------------------------------------------------------------
+	
+	To change the Windows Color Palette setting to "High Color (16 bit)", follow
+	these steps:
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click Display.
+	
+	3. Click the Settings tab.
+	
+	4. In the Color Palette or Colors box, click High Color (16 bit).
+	
+	5. Click OK, and then click OK again. If you are prompted to restart the
+	  computer, do so.
+	
+	6. Close Control Panel.
+	
+	If the issue continues to occur, proceed to the next method.
+	
+	Reduce the Graphics Hardware Acceleration
+	-----------------------------------------
+	
+	To reduce the graphics hardware acceleration:
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click System.
+	
+	  In Windows 2000, double-click Display.
+	
+	3. Click the Performance tab, and then click Graphics.
+	
+	  In Windows 2000, click Settings, click Advanced, and then click the
+	  Troubleshooting tab.
+	
+	4. Move the Hardware Acceleration slider until it is one notch to the right of
+	  None (the Basic acceleration setting).
+	
+	5. Click OK, and then click Close.
+	
+	6. When you are prompted to restart the computer, click Yes.
+	
+	  NOTE: Do not reduce hardware acceleration for Motocross Madness 1.
+	
+	  NOTE: If you encounter any problems after you reduce the hardware acceleration
+	  setting, follow these steps to restore the original setting:
+	
+	  a. Restart Windows in Safe mode. To do this, use the appropriate method for
+	     your version of Microsoft Windows:
+	
+	     Restart Windows 95:
+	
+	     Restart your computer. When you see the "Starting Windows 95" message,
+	     press the F8 key, and then choose Safe Mode from the Startup menu.
+	
+	     Restart Windows 98, Windows Me:
+	
+	     Restart your computer, press and hold down the CTRL key after the computer
+	     completes the Power On Self Test (POST), and then select Safe Mode from
+	     the Startup menu.
+	
+	     When Windows starts in Safe mode, click OK.
+	
+	     Windows 2000:
+	
+	     Restart your computer, and when the Boot menu appears, press F8. When the
+	     "Windows 2000 Advanced Options" menu appears, select an option, and then
+	     press ENTER. When the Boot menu appears again, with the words "Safe Mode"
+	     displayed in red at the bottom, select the installation you want to start,
+	     and then press ENTER.
+	
+	     WARNING: Do not select a Microsoft Windows NT 4.0 installation.
+	
+	  b. Repeat steps 1-6, but in step 4 move the Hardware Acceleration slider back
+	     to its original setting.
+	
+	If the issue continue to occur, proceed to the next method.
+	
+	Is There an Issue with the Sound Driver?
+	----------------------------------------
+	
+	To determine if the sound driver is causing the issue, turn off the sound card in
+	Windows:
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click Multimedia or "Sounds and Multimedia".
+	
+	3. Click the Devices or the Hardware tab.
+	
+	4. Click plus symbol next to Audio Devices to expand the branch.
+	
+	5. Double-click your sound card.
+	
+	6. Click to select the following check boxes:
+	   - "Do not use this audio features on this device"
+	   - "Do not map through this device"
+	
+	  In Windows 2000, click to select the "Do not use this device (disable)" check
+	  box.
+	
+	7. Click OK.
+	
+	8. Restart your computer.
+	
+	NOTE: If you are running Motocross Madness 2, Crimson Skies, or StarLancer, do
+	not turn off the sound card in Windows. Instead, update your sound card
+	drivers.
+	
+	To determine the manufacturer and model of your sound card:
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click System.
+	
+	3. Click the Device Manager tab.
+	
+	4. Click the plus sign (+) next to "Sound, video and game controllers" to expand
+	  the branch.
+	
+	5. Note the manufacturer and model of the sound card that is listed in the
+	  "Sound, video and game controllers" branch.
+	
+	6. Click OK, and then close Control Panel.
+	
+	If you do not receive an invalid page fault error message after you turn off your
+	sound card, update your sound card drivers.
+	
+	Please contact your hardware manufacture to obtain and install the latest drivers
+	for your sound card.
+	
+	For information about how to contact your hardware manufacturer, click the
+	appropriate article number below to view the article in the Microsoft Knowledge
+	Base:
+	
+	  Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+	
+	  Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+	
+	  Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+	
+	If you update your sound card drivers and you still receive an invalid page fault
+	error message, reduce Sound Acceleration in Windows. To do this:
+	
+	Reduce Hardware Sound Acceleration in Dxdiag
+	
+	If you run the game on a computer that is running Windows 95, Windows 98, Windows
+	Me, or Windows 2000, reduce the Hardware Sound Acceleration setting:
+	
+	1. Click Start, and then click Run.
+	
+	2. In the Open box, type "dxdiag" (without the quotation marks), and then click
+	  OK.
+	
+	3. Click the Sound tab.
+	
+	4. Under DirectX Features, move the Hardware Sound Acceleration Level slider all
+	  the way to the left (the "No acceleration" setting).
+	
+	5. Click Exit.
+	
+	If the issue continue to occur, proceed to the next method.
+	
+	Change the Preferred Playback Device to the Game Compatible Device
+	------------------------------------------------------------------
+	
+	NOTE: These steps are only for Windows 95, 98, and Me. To change the preferred
+	playback device to the game compatible device:
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click Multimedia.
+	
+	3. On the Audio tab, click Game Compatible Device in the "Preferred device" box
+	  under Playback.
+	
+	4. Click to select the "Use only preferred devices" check box, and then click
+	  OK.
+	
+	5. Close Control Panel.
+	
+	6. Restart the computer.
+	
+	If the Game Compatible Device is not listed, add the device by following the
+	steps in the following Microsoft Knowledge Base article:
+	
+	  Q178637 Using Game Compatible Device to Troubleshoot Sound Problems
+	
+	For additional information about the game compatible device, click the article
+	number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q177614 What Is the Game Compatible Audio Device?
+	
+	Are There Duplicate Devices in Safe Mode?
+	-----------------------------------------
+	
+	If the computer initializes multiple versions of a single CD-ROM drive, display
+	adapter, or sound, video, or game controller when you start Microsoft Windows,
+	the game may generate an error message. For additional information about how to
+	check for and turn off multiple devices, click the article number below to view
+	the article in the Microsoft Knowledge Base:
+	
+	  Q187916 Game Stops Responding or Quits Unexpectedly
+	
+	Was the Game Installed Properly?
+	--------------------------------
+	
+	Uninstall the game, clean boon your computer (see the "Are any programs running
+	in the background conflicting with the game?" section earlier in this article),
+	delete the game folder, and then reinstall the game. To uninstall the game and
+	then delete the game folder, follow these steps:
+	
+	1. Insert the the game CD into the CD-ROM drive. Press and hold down SHIFT when
+	  you insert the CD-ROM to prevent the program from starting automatically.
+	
+	2. Click Start, point to Settings, and then click Control Panel.
+	
+	3. Double-click Add/Remove Programs.
+	
+	4. On the Install/Uninstall tab, click the game, and then click Add/Remove
+	  (Windows 2000 users, click Remove).
+	
+	5. Follow directions on your screen to uninstall the game.
+	
+	6. Delete the game folder. By default, most Microsoft games are installed in the
+	  following default folder:
+	
+	  C:\Program Files\Microsoft Games\
+	
+	7. Reinstall the game.
+	
+	
+	Gather Information in DirectX
+	-----------------------------
+	
+	1. Click Start, and then click Run.
+	
+	2. In the Open box, type "dxdiag" (without the quotation marks), and then click
+	  OK.
+	
+	3. First, note the version number.
+	
+	4. Write down anything in the Notes section, except for the following: No
+	  problems found. Write down uncertified drivers.
+	
+	5. Run tests for the following items:
+	  a. On the Display tab, click the "Test DirectDraw" button to test DirectDraw
+	     functionality.
+	
+	  b. On the Display tab, click the the "Test Direct3D" button to test Direct3D
+	     functionality
+	
+	  c. On the Sound tab, click the "Test DirectSound" button to test DirectSound
+	     functionality.
+	
+	  d. On the Music tab, click the "Test DirectMusic" button to test DirectMusic
+	     functionality.
+	
+	6. Repeat step 4 until all tabs have been examined.
+	
+	For additional information about DirectX tabs, click the article number below to
+	view the article in the Microsoft Knowledge Base:
+	
+	  Q190900 DirectX: Description of the DirectX Diagnostic Tool
+	
+	If the problem is not resolved, contact Microsoft Product Support Services.
+	
+	More support options available at the following Microsoft Web site:
+	
+	http://support.microsoft.com/support/default.asp
+	(http://support.microsoft.com/support/default.asp)
+	Support Online
+	
+	To easily diagnose and answer technical questions yourself, visit
+	http://support.microsoft.com/support (http://support.microsoft.com/support) .
+	Or, you can browse support information about your product conveniently
+	consolidated at http://support.microsoft.com/support/games
+	(http://support.microsoft.com/support/games).
+	
+	Contact Microsoft Online:
+	
+	You can also submit your support question via the Internet. For more details,
+	visit the following Microsoft Web site:
+	
+	  http://support.microsoft.com/support/webresponse.asp
+	  (http://support.microsoft.com/support/webresponse.asp)
+	
+	Note: If your Microsoft product was pre-installed or distributed with your
+	personal computer or provided by an Internet service provider (ISP), the
+	personal computer manufacturer or ISP is responsible for providing your product
+	support. Please contact the manufacturer or source from which you obtained your
+	Microsoft product for support information.
+	
+	When you contact us for support, you should be at your computer and have the
+	appropriate product documentation at hand. Be prepared to give the following
+	information:
+	
+	  - The version of the Microsoft product you use.
+	
+	  - The type of hardware you use.
+	
+	  - The operating system you use.
+	
+	  - The exact wording of any messages that appeared on your screen.
+	
+	  - A description of what happened and what you were doing when the problem
+	  occurred.
+	
+	  - A description of how you tried to solve the problem.
+	
+	Personal No-Charge Support
+	
+	Monday-Friday, excluding holidays, Microsoft offers unlimited no-charge support
+	for Microsoft Games. In the United States, call (877) 632-2080, 5:00 A.M. to
+	9:00 P.M. Pacific Time. In Canada, call (905) 568-3503, 8:00 A.M. to 11:00 P.M.
+	Eastern Time. Support is also available on Saturdays from 9:00 A.M. - 3:00 P.M.
+	Pacific time in the US and from 10:00 A.M. - 6:00 P.M. Eastern time in Canada.
+	Toll charges may apply.
+	
+	Pay-Per-Incident Support
+	
+	In the United States, for $35 US per incident, call (800) 936-5700, 24 hours a
+	day, seven days a week. In Canada, for $45 CDN plus tax per incident, call (800)
+	668-7975, 8:00 A.M. to 11:00 P.M., Monday-Friday, excluding holidays and on
+	Saturdays 10:00 A.M. 6:00 P.M. Eastern Time. Fees are billed to your VISA,
+	MasterCard, or American Express card.
+	
+	Text Telephone Available Monday-Friday, excluding holidays. In the United States
+	and Canada call (425) 635-4948, from 5:00 A.M. - 9:00 P.M. and on Saturday from
+	9:00 A.M. - 3:00 P.M. Pacific Time.
+	
+	Additional query words: kbimu homegame msgame trainsim
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbHomeProdSearch _IKkbbogus kbHomeMMsearch kbLinkGolfSearch kbAOE kbGamesSearch kbFlightSimSearch kbArcadeRet kbArcadeRev kbZNotKeyword kbGolf2001 kbGolf99 kbGolfSearch kbNFLFever2000 kbNFLSearch kbPinballArc kbArcadeSearch kbMSNSearch _IK kbAllegianceSearch kbMetalGearSearch kbPandoraSearch kbPlusSearch kbMotocrossSearch kbStarlancerSearch kbOutwarsSearch kbOutwars kbCrimsonSkiesSearch kbAsheronSearch kbCloseCombatSearch kbBaseballSearch kbMidtownMadSearch kbMonsterTMSearch kbAOESearch kbMidtownMadness kbWinEntPkSearch kbMonsterTM kbZNotKeyword3 kbAllegiance kbAsheron100 kbStarlancer kbWinEntPkBest kbUrbanAssault kbMonsterTM2 kbAOEExpRome kbAOE2ExpConquerors kbAOE2Kings kbBaseBall2001 kbCloseCombat2 kbCloseCombat3 kbCloseCombat kbCombatFlightSim2 kbCombatFlightSim kbCombatFlightSimSearch kbFlightSim2000 kbFlightSim98 kbSoccer kbMotocrossM kbClassicBoardGames kbMetalGearSolid kbMidtownMadness2 kbPandorasBox kbMotocrossM2 kbCasino kbCrimsonSkies kbLinks2001 kbLinksLS2000 kbNBAFullCourtPress kbNBAInsideDrive2000 kbBaseBall2000 kbIntlSoccer2000 kbPlusGamePk kbTrainSim kbSimSearch
+	Version           : :1.0,2.0
+	
+	=============================================================================
+	

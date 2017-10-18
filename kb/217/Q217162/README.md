@@ -1,0 +1,75 @@
+---
+layout: page
+title: "Q217162: SMS: SMS 2.0 Incorrectly References &quot;Windows NT 4.0 SP4a&quot;"
+permalink: kb/217/Q217162/
+---
+
+## Q217162: SMS: SMS 2.0 Incorrectly References &quot;Windows NT 4.0 SP4a&quot;
+
+	Article: Q217162
+	Product(s): Microsoft Systems Management Server
+	Version(s): winnt:2.0,4.0
+	Operating System(s): 
+	Keyword(s): kbsms200 kbsms200bugkbfaq
+	Last Modified: 18-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server version 2.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Systems Management Server 2.0 requires Windows NT Server 4.0 Service Pack 4 or
+	later to be installed on the computer. As a convenience, the Windows NT Server
+	4.0 Service Pack 4 files are included on the Systems Management Server 2.0
+	distribution media. However, the directory containing these service pack files
+	is incorrectly named "Nt4sp4a", which implies that it is a newer, updated
+	version of the Windows NT 4.0 Service Pack 4 files.
+	
+	Additionally, the initial Systems Management Server 2.0 Setup screen incorrectly
+	has an option to "Install NT 4.0 SP4a", and the Systems Management Server 2.0
+	Release Notes incorrectly refers to "Service Pack 4a for Windows NT Server 4.0".
+	
+	CAUSE
+	=====
+	
+	These are all typographical errors in the Systems Management Server 2.0 media.
+	
+	Windows NT 4.0 Service Pack 4 included with Systems Management Server 2.0 comes
+	with Microsoft Internet Explorer 4.01 Service Pack 1a; this is the probable
+	source of the confusion.
+	
+	WORKAROUND
+	==========
+	
+	References to "Windows NT Server 4.0 Service Pack 4a" should be ignored and
+	considered to be "Windows NT Server 4.0 Service Pack 4" instead.
+	
+	MORE INFORMATION
+	================
+	
+	Because Systems Management Server 2.0 is distributed internationally, the
+	Windows NT 4.0 Service Pack 4 files included on the Systems Management Server
+	2.0 distribution media are the 40-bit encrypted versions. Using these files is
+	not required to use Systems Management Server 2.0; that is, you can use the
+	128-bit encrypted Windows NT Server 4.0 Service Pack 4 files if you obtain them
+	from another source (for example, a Web download, an internal share point, and
+	so on).
+	
+	This error will be corrected in a future release of Systems Management Server
+	2.0.
+	
+	
+	Additional query words: prodsms sp sp4 sp4a CD ROM CD-ROM typo typos
+	
+	======================================================================
+	Keywords          : kbsms200 kbsms200bug kbfaq
+	Technology        : kbWinNTsearch kbWinNTSsearch kbSMSSearch kbExchange400 kbFunImagination200
+	Version           : winnt:2.0,4.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

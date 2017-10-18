@@ -1,0 +1,82 @@
+---
+layout: page
+title: "Q150994: Encarta: Invalid Page Fault When Printing to Inkjet Printer"
+permalink: kb/150/Q150994/
+---
+
+## Q150994: Encarta: Invalid Page Fault When Printing to Inkjet Printer
+
+	Article: Q150994
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): WINDOWS:
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 16-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Encarta 96 Encyclopedia for Windows 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you print a graphic image from Microsoft Encarta 96 Encyclopedia to an
+	inkjet printer, you may receive an Invalid Page Fault message.
+	
+	This error message can occur on Pentium-processor-equipped computers running
+	Microsoft Windows 95/98.
+	
+	CAUSE
+	=====
+	
+	This error message occurs if the printer driver software is not fully compatible
+	with the Pentium computer.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, install an alternative, or "emulation" printer driver.
+	Use the following guidelines for information on printer driver selection:
+	
+	- Consult your printer manual for recommended emulation drivers. Or,use the
+	  next closest model available in Windows.
+	
+	- Use a Windows 95/98 32-bit printer driver. For example, do not click the
+	  "Have Disk" button when you are using the Windows Add Printer Wizard.
+	
+	  The printers listed at the very end of the Printers list for any manufacturer
+	  are not usually 32-bit drivers. These 16-bit printer drivers are not listed
+	  in alphabetical order.
+	
+	- Do not use the same printer driver you are currently using.
+	
+	For more information about how to change printer drivers in Windows, see your
+	Windows printed documentation or online Help.
+	
+	MORE INFORMATION
+	================
+	
+	This problem may be related to the way the printer software accesses the Math
+	Co-Processor. To test this issue, disable the Numeric Data Processor:
+	
+	1. With your right mouse button, click My Computer, and then click Properties.
+	
+	2. On the Device Manager tab, click the plus sign next to System Devices.
+	
+	3. Double-click Numeric Data Processor.
+	
+	4. On the Settings tab, click Never Use The Numeric Data Processor.
+	
+	5. Click OK. If you are prompted to restart Windows, click Yes.
+	
+	Additional query words: 1996 multi media multimedia multi-media mmtitles kbmm co-processor coprocessor math-co mathco
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1996
+	Version           : WINDOWS:
+	
+	=============================================================================
+	

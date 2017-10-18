@@ -1,0 +1,135 @@
+---
+layout: page
+title: "Q178677: Err Msg: MMSYSTEMxxx: There is Not Enough Memory Available for T"
+permalink: kb/178/Q178677/
+---
+
+## Q178677: Err Msg: MMSYSTEMxxx: There is Not Enough Memory Available for T
+
+	Article: Q178677
+	Product(s): Microsoft Home Games
+	Version(s): WINDOWS:1.0
+	Operating System(s): 
+	Keyword(s): kberrmsg kbhw kbmm kbsound aoe fs98 fs6 kbimu msgame kbHardware
+	Last Modified: 07-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Age of Empires, version 1.0 
+	- Microsoft Flight Simulator 2000 
+	- Microsoft Flight Simulator 2000 Professional Edition 
+	- Microsoft Flight Simulator 98 
+	- Microsoft Flight Simulator for Windows 95, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you attempt to start one of the programs listed earlier in this article,
+	you may receive one of the following error messages:
+	
+	   - MMSYSTEM007: There is not enough memory available for this task. Quit one or
+	  more programs then try again.
+	
+	   - MMSYSTEM264: There is not enough memory available for this task. Quit one or
+	  more programs then try again.
+	
+	You may also experience problems when you attempt to play an audio CD, or you may
+	be unable to adjust the volume control.
+	
+	CAUSE
+	=====
+	
+	This issue can occur if your Windows multimedia drivers are missing or damaged.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, remove any of the following multimedia players that are
+	installed on your computer:
+	
+	- Microsoft Active Movie
+	- Direct Show
+	- Direct Video
+	- Intel RSX 3D Audio
+	- Real Audio Player
+	- SoftPeg
+	- Windows Media Player
+	
+	To do this:
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click Add/Remove Programs.
+	
+	3. In the list of installed programs, click the multimedia player you want to
+	  remove, and then click Add/Remove.
+	
+	4. Follow the instructions on the screen to finish removing the program.
+	
+	5. Restart your computer.
+	
+	Repeat these steps to remove each of the multimedia players installed on the
+	computer.
+	
+	If the issue continues to occur, remove and reinstall the Windows multimedia
+	components. To do this:
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click Add/Remove Programs.
+	
+	3. On the Windows Setup tab, click to clear the Multimedia check box, and then
+	  click Apply.
+	
+	4. On the Windows Setup tab, click to select the Multimedia check box, and then
+	  click OK.
+	
+	5. Follow the instructions on the screen to finish installing the Windows
+	  multimedia components.
+	
+	6. Restart the computer.
+	
+	If the issue continues to occur, one or more of the following files may be
+	missing or damaged:
+	
+	- Avifile.dll
+	- Dciman.dll
+	- Dciman32.dll
+	- Mciavi.drv
+	- Msvidc32.dll
+	- Msvideo.dll
+	- Msvfw32.dll
+	- Wow32.dll
+	
+	For additional information about how to restore these files, click the article
+	numbers below to view the articles in the Microsoft Knowledge Base:
+	
+	  Q139806 Err Msg: MMSYSTEM266 The Device Could Not Be Loaded...
+	
+	  Q129605 How to Extract Original Compressed Windows Files
+	
+	MORE INFORMATION
+	================
+	
+	If you want to reinstall your multimedia players after you resolve the issue,
+	install only one player at a time. If the issue occurs again after you reinstall
+	a multimedia player, remove that player, restart the computer, and then verify
+	that the issue is resolved.
+	
+	The third-party products discussed in this article are manufactured by vendors
+	independent of Microsoft; we make no warranty, implied or otherwise, regarding
+	these products' performance or reliability.
+	
+	
+	Additional query words: 1.00 sounds CD-ROM level dimmed greyed grayed flt sim fltsim fs98 fs2000 fs2k aoe ror
+	
+	======================================================================
+	Keywords          : kberrmsg kbhw kbmm kbsound aoe fs98 fs6 kbimu msgame kbHardware 
+	Technology        : kbHomeProdSearch _IKkbbogus kbAOE kbGamesSearch kbFlightSimSearch kbZNotKeyword kbAOESearch kbFlightSim2000 kbFlightSim98 kbFlightSim95 kbSimSearch
+	Version           : WINDOWS:1.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

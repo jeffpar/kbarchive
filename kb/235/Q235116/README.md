@@ -1,0 +1,76 @@
+---
+layout: page
+title: "Q235116: XCLN: The Message Interface Has Returned an Unknown Error"
+permalink: kb/235/Q235116/
+---
+
+## Q235116: XCLN: The Message Interface Has Returned an Unknown Error
+
+	Article: Q235116
+	Product(s): Microsoft Exchange
+	Version(s): ; WINDOWS:95,98
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 22-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Outlook 97, on platform(s):
+	   - the operating system: Microsoft Windows 95 
+	   - the operating system: Microsoft Windows 98 
+	- Microsoft Outlook 98, on platform(s):
+	   - the operating system: Microsoft Windows 95 
+	   - the operating system: Microsoft Windows 98 
+	- Microsoft Outlook 2000, on platform(s):
+	   - the operating system: Microsoft Windows 95 
+	   - the operating system: Microsoft Windows 98 
+	- Microsoft Exchange Server, version 5.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If you send a message, the following error message may be displayed:
+	
+	  The message interface has returned an unknown error. If the problem persists,
+	  restart Outlook.
+	
+	CAUSE
+	=====
+	
+	The message that you tried to send is addressed to a user or personal
+	distribution list that does not reside in your personal address book or does not
+	reside in the global address list.
+	
+	This may happen if you log on to a mailbox and try to send a message that was
+	previously addressed by using a personal address book for that mailbox.
+	
+	RESOLUTION
+	==========
+	
+	The user who created the original message must send that message from the
+	computer where the personal address book that contains the personal distribution
+	list is stored.
+	
+	MORE INFORMATION
+	================
+	
+	If you try to save the personal distribution list that is listed in the To field
+	to your personal address book by clicking "Add to personal address book", the
+	following error message is displayed:
+	
+	  Cannot perform the requested operation. The command selected is not valid for
+	  this recipient.
+	
+	
+	Additional query words: 8.0 8.01 8.02 8.03 8.04 8.5 9.0
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbOutlookSearch kbOutlook97Search kbZNotKeyword3
+	Version           : :; WINDOWS:95,98
+	Issue type        : kbprb
+	
+	=============================================================================
+	

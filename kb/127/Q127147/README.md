@@ -1,0 +1,177 @@
+---
+layout: page
+title: "Q127147: Baseball 1995 BBLEGAL.TXT (Subscription Agreement)"
+permalink: kb/127/Q127147/
+---
+
+## Q127147: Baseball 1995 BBLEGAL.TXT (Subscription Agreement)
+
+	Article: Q127147
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): 1995 edition
+	Operating System(s): 
+	Keyword(s): win31
+	Last Modified: 02-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Complete Baseball for Windows, version 1995 edition 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The following is the Baseball 1995 BBLEGAL.TXT file (subscription agreement).
+	
+	MICROSOFT SUBSCRIPTION AGREEMENT FOR BASEBALL DAILY 1995
+	--------------------------------------------------------
+	
+	In order to subscribe to and use Microsoft's Baseball Daily 1995 on-line service
+	(the "Service"), you, the "Subscriber," must agree with Microsoft Corporation
+	("MS") to the following terms and conditions:
+	
+	1. Required Age:
+	
+	  Subscriber must be 18 years or older. Subscriber may allow others to use the
+	  Service through Subscriber's account and password, but Subscriber agrees to
+	  be solely responsible for all fees associated with their use of Subscriber's
+	  account.
+	
+	2. Fees:
+	
+	  The schedule of fees for use of the Service is reproduced for the Subscriber
+	  as part of the registration process, and is available under the "Help"
+	  feature for reference. Subscriber unconditionally promises and agrees to pay
+	  all fees attributable to Subscriber's account. Subscriber agrees that MS
+	  shall bill Subscriber all such fees to the credit card Subscriber has
+	  provided as part of the registration process for the Service. Subscriber
+	  represents that such credit card account belongs to Subscriber and will be
+	  valid at all times during which Subscriber uses the Service. If for any
+	  reason MS is unable to collect fees attributable to Subscriber's account
+	  through Subscriber's credit card, Subscriber agrees to pay all such fees
+	  directly to MS upon request. All late payments shall incur a late charge of
+	  one and one-half percent (1 1/2%) per month, or the legal maximum, whichever
+	  is less.
+	
+	3. Telephone Charges:
+	
+	  Subscriber is responsible for all telephone service charges incurred by
+	  Subscriber in using the Service.
+	
+	4. Use of Information from Service:
+	
+	  The information provided to Subscriber through Service is intended for
+	  Subscriber's personal, non-commercial use, and Subscriber agrees to make no
+	  other uses of such information. To the extent that the information provided
+	  by the Service is protected by copyright or other proprietary rights,
+	  Subscriber agrees that all such rights are retained by MS and/or its
+	  suppliers, and that such information is licensed to Subscriber according to
+	  the terms of this Agreement and the end user license agreement accompanying
+	  the Microsoft[ASCII 174] Complete Baseball product. Subscriber may not use
+	  the Service in connection with any action or activity prohibited by law or
+	  governmental regulation.
+	
+	5. Changes to this Agreement:
+	
+	  MS may, in its sole discretion, make changes to the Service, the fees charged
+	  for the Service and/or this Agreement upon prior notice to Subscriber. If
+	  Subscriber does not wish to consent to any such changes, Subscriber's sole
+	  remedy will be to terminate this Agreement and the use of the Service.
+	
+	6. Limitation of Warranties:
+	
+	  The service and all information, software, and other materials provided
+	  through or in connection with the Service are provided "as is", and MS makes
+	  no warrantee as to the availability, accuracy or content of information
+	  provided through or in connection with the Service, or any warranties of
+	  title, or implied warranties of merchantability or fitness for a particular
+	  purpose. Some states do not allow the exclusion of implied warranties so the
+	  above exclusion may not apply to you. In no event shall MS be liable for any
+	  damages whatsoever (including without limitation, consequential, incidental,
+	  or special damages, whether for loss of profits, interruption, loss of
+	  business information, or any other pecuniary loss) arising out of the use of
+	  or inability to use Service, even if MS has been advised of the possibility
+	  of such damages. In no event shall MS' liability to Subscriber under any
+	  provision of this agreement exceed the amount actually paid by Subscriber for
+	  the Service. Some states do not allow the limitation or exclusion of
+	  liability for incidental or consequential damages, so the above limitation or
+	  exclusion may not apply to you.
+	
+	7. Term and Termination:
+	
+	  This Agreement shall be effective as of the date on which Subscriber consents
+	  to the terms of this Agreement as provided through the registration process,
+	  and shall continue until terminated by either MS or Subscriber as follows:
+	
+	  (a) MS reserves the right to immediately terminate Subscriber's right to
+	  access to Service in the event that MS, in its sole discretion, determines
+	  that Subscriber has refused to pay any fees for use of the Service, or if
+	  Subscriber has otherwise violated any of the terms of this Agreement. Such
+	  termination by MS shall be effective immediately upon notification to
+	  Subscriber. Such termination shall be in addition to any other legal remedies
+	  which may be available to MS. (b) Subscriber may terminate this Agreement at
+	  any time upon written notice to MS, provided that Subscriber shall be
+	  responsible for payment of fees incurred by Subscriber prior to such
+	  termination. (c) This Service is valid only during the 1995 baseball season.
+	  The Service shall end and this Agreement shall terminate on November 15,
+	  1995, or later at Microsoft's discretion.
+	
+	8. No Assignment:
+	
+	  Subscriber may not assign his or her account without the prior written consent
+	  of MS.
+	
+	9. Entire Agreement:
+	
+	  This Agreement constitutes the entire agreement between the parties concerning
+	  the subject matter hereof and supersedes all proposals, oral and written, and
+	  all negotiations, conversations, and other communications between the
+	  parties. No modification of this Agreement or waiver of any of its terms will
+	  be effective against a party specifically acknowledged by such party in
+	  writing.
+	
+	10. Controlling Law:
+	
+	  This Agreement shall be construed and controlled by the laws of the State of
+	  Washington, and You consent to exclusive jurisdiction and venue in the state
+	  and federal courts sitting in the State of Washington.
+	
+	11. Severability:
+	
+	  If any provision of this Agreement shall be held by a court of competent
+	  jurisdiction to be illegal, invalid, or unenforceable, the remaining
+	  provisions shall remain in full force and effect.
+	
+	12. Statistics Files:
+	
+	  By downloading a copy of the Daily, you receive an ASCII file of statistics.
+	  These copyrighted files are licensed to you for your personal,
+	  non-commercial use, and any other use or redistribution of these files is
+	  expressly prohibited.
+	
+	NOTICE TO CALIFORNIA RESIDENTS
+	------------------------------
+	
+	The Service is provided by Microsoft Corporation, One Microsoft Way, Redmond,
+	Washington 98052, telephone number (206) 882-8080. If you have any complaints or
+	other questions with respect to the Service, please contact: 1 (800) 806-6587
+	for billing inquiries, and 1 (800) 638-8730 for connectivity related inquiries.
+	You may also contact:
+	
+	Complaint Assistance Unit
+	Division of Consumer Services
+	California Department of Consumer Affairs
+	400 R Street, Suite 1040
+	Sacramento, CA 95814
+	Telephone: (916) 445-1254
+	
+	Additional query words: kbhowto 1995multi media multimedia multi-media mmtitles kbmm
+	
+	======================================================================
+	Keywords          : win31 
+	Technology        : kbHomeProdSearch kbGamesSearch kbBaseballSearch kbCompleteBaseballSearch kbCompleteBaseball1995
+	Version           : :1995 edition
+	
+	=============================================================================
+	

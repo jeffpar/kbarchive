@@ -1,0 +1,87 @@
+---
+layout: page
+title: "Q71415: Effect of the rmargin Switch in the PWB 1.0/1.1 Editor"
+permalink: kb/071/Q71415/
+---
+
+## Q71415: Effect of the rmargin Switch in the PWB 1.0/1.1 Editor
+
+	Article: Q71415
+	Product(s): Microsoft Programming Utilities
+	Version(s): MS-DOS:1.0,1.1; OS/2:1.0,1.1
+	Operating System(s): 
+	Keyword(s): kb16bitonly
+	Last Modified: 30-OCT-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Programmer's Workbench for MS-DOS, versions 1.0, 1.1 
+	- Microsoft Programmer's Workbench for OS/2, versions 1.0, 1.1 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The Programmer's WorkBench (PWB) has two switches called rmargin and wordwrap
+	that affect behavior within the editor when typing towards the end of a line.
+	These two switches can be used together to force line breaks as you type past a
+	specified margin. However, the PWB documentation for versions 1.0 and 1.1 is
+	somewhat incomplete in describing exactly how rmargin works.
+	
+	The rmargin switch changed in PWB 2.0 to indicate the right margin, rather than
+	the beginning of the word wrapping zone.
+	
+	MORE INFORMATION
+	================
+	
+	To use rmargin, the wordwrap switch must be set to "yes" to enable word wrapping
+	at the right margin. With wordwrap turned on, the number specified by the
+	rmargin switch controls the right column margin. The C version 6.0 and 6.0a
+	"Microsoft C Reference" manual (page 83) describes the rmargin switch as
+	follows:
+	
+	  Controls the right column margin used for wordwrap mode. Any character typed
+	  to the right of this margin causes a line break.
+	
+	The C 6.0 and 6.0a online help for rmargin changes the wording of the second
+	sentence above to the following:
+	
+	  A space typed to the right of this margin causes subsequent characters to be
+	  placed on the following line.
+	
+	In reality, neither of these descriptions is entirely true. There are two ways
+	that an automatic line break will occur:
+	
+	1. If any space is typed after the column specified by rmargin, a forced line
+	  break will occur at that point.
+	
+	2. If any word extends six characters past the rmargin column, a forced line
+	  break will be inserted before the word, causing the word to be moved to the
+	  next line. The documentation neglects any mention of this behavior.
+	
+	These are the only two cases where PWB will force a line break. PWB does not
+	immediately wordwrap when a character is typed past the right margin as one
+	might expect.
+	
+	In some cases, you may want to ensure that you do not have any text after a
+	specified column. This can be done by setting rmargin to six less then the last
+	column in which you want text to appear. A simple formula for this is:
+	
+	     rmargin = last_column_to_allow_text - 6
+	
+	By setting rmargin to a value as indicated by this formula, a line break will
+	occur if a space is inserted into any of the last six columns before the column
+	specified by last_column_to_allow_text, or a word will be moved down to the next
+	line if it extends past last_column_to_allow_text. Thus, no characters will ever
+	be allowed to the right of last_column_to_allow_text.
+	
+	Additional query words: kbinf 1.00 1.10 PWBIss
+	
+	======================================================================
+	Keywords          : kb16bitonly 
+	Technology        : kbAudDeveloper kbPWBSearch kbZNotKeyword3 kbPWB100DOS kbPWB110DOS kbPWB100OS2 kbPWB110OS2
+	Version           : MS-DOS:1.0,1.1; OS/2:1.0,1.1
+	
+	=============================================================================
+	

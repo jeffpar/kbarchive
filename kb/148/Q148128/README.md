@@ -1,0 +1,238 @@
+---
+layout: page
+title: "Q148128: Using MACFILE to Administer Services for Macintosh"
+permalink: kb/148/Q148128/
+---
+
+## Q148128: Using MACFILE to Administer Services for Macintosh
+
+	Article: Q148128
+	Product(s): Microsoft Windows NT
+	Version(s): 2000,3.51,4.0
+	Operating System(s): 
+	Keyword(s): kbnetwork
+	Last Modified: 09-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server versions 3.51, 4.0 
+	- Microsoft Windows 2000 Server 
+	- Microsoft Windows 2000 Advanced Server 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Microsoft Windows NT Server 3.51, Windows 2000 Server and Windows Advanced
+	Server include a command line tool that can manage the Services for Macintosh
+	server configuration called MACFILE. MACFILE allows administrators to automate
+	Services for Macintosh volume, directory, file, and server management in batch
+	programs.
+	
+	This article lists and describes the parameters you can use with the MACFILE
+	command. For additional information on the MACFILE command, type the following
+	at the command prompt: macfile /?
+	
+	For a complete reference to the MACFILE command, select Help from the MacFile
+	menu in File Manager.
+	
+	MORE INFORMATION
+	================
+	
+	MACFILE consists of four commands. They are the following:
+	
+	  - Volume
+	  - Directory
+	  - Server
+	  - Forkize
+	
+	Macfile Volume
+	--------------
+	
+	This adds, changes or removes Macintosh-accessible volumes. The syntax is as
+	follows:
+	
+	  macfile volume {/add | /set}[/server:\\computername] /name:volumename
+	   /path:directory [/readonly:[true | false]] [/guestsallowed:[true |
+	   false]][/password:password][/maxusers:number | unlimited]
+	
+	  macfile volume /remove [/server:\\computername] /name:volumename
+	
+	  Parameters              Description
+	  ----------              -----------
+	  /add                    Adds a volume using the specified settings.
+	
+	  /set                    Changes a volume using the specified settings.
+	
+	  /server:\\computername  Specifies the server on which to add, change or
+	                          remove a volume. If omitted, the operation is
+	                          performed on the local computer.
+	  /name:volumename        Specifies the volume name to be added, changed,
+	                          or removed. This parameter is required.
+	
+	  /path:directory         Specifies the path to the root directory of the
+	                          volume to be created. Valid and required only
+	                          when adding a volume.
+	
+	  /readonly:[true|false]  Specifies users cannot change files in the
+	                          volume. Use true or false to change the current
+	                          setting of the volume. If omitted when adding a
+	                          volume, changes to files are allowed. If omitted
+	                          when changing a volume,the readonly setting for
+	                          the volume remains unchanged.
+	
+	  /guestsallowed:         Specifies whether users logging on as guests can
+	   [true|false]           use the volume. If omitted when adding a volume,
+	                          guests can use the volume. If omitted when
+	                          changing a volume, the guestsallowed setting for
+	                          the volume remains unchanged.
+	
+	  /password:password      Specifies a password required to access the
+	                          volume. If omitted, no password is created.
+	                          If omitted when changing a volume, the password
+	                          remains unchanged.
+	
+	  /maxusers:number|       Specifies the maximum number of users that can
+	   unlimited              simultaneously use files on the volume. If
+	                          omitted when adding a volume, an unlimited
+	                          number of users can use the volume. If omitted
+	                          when changing a volume, the maxusers value
+	                          remains unchanged.
+	
+	  /remove                 Removes the specified volume.
+	
+	Macfile Directory
+	-----------------
+	
+	This modifies directories in Macintosh-accessible volumes. The syntax is as
+	follows:
+	
+	  macfile directory [/server:\\computername] /path:directory
+	   [/owner:ownername] [/group:groupname][/permissions:permissions]
+	
+	  Parameters              Description
+	  ----------              -----------
+	  /server:\\computername  Specifies the server on which to change a
+	                          directory. If omitted, the operation is
+	                          performed on the local computer.
+	
+	  /path:directory         Specifies the path to the directory to be
+	                          changed on the Macintosh-accessible volume.
+	                          The directory must exist; Macfile directory does
+	                          not create directories. This parameter is
+	                          required.
+	
+	  /owner:ownername        Changes the owner of the directory. If omitted,
+	                          the owner remains unchanged.
+	
+	  /group:groupname]       Specifies or changes the Macintosh primary group
+	                          associated with the directory. If omitted, the
+	                          primary group remains unchanged.
+	
+	  /permissions:           Sets permissions on the directory for the owner,
+	   permissions            primary group, and world (everyone). An eleven
+	                          digit number is used to set permissions. The
+	                          number 1 grants permission; 0 revokes
+	                          permission. For example, 11111011000. The
+	                          position of the digit determines which
+	                          permission is set, as described in the following
+	                          table. If omitted, permissions remain unchanged.
+	
+	  Position Sets Permisson for:
+	
+	  First     OwnerSeeFiles
+	  Second    OwnerSeeFolders
+	  Third     OwnerMakeChanges
+	  Fourth    GroupSeeFiles
+	  Fifth     GroupSeeFolders
+	  Sixth     GroupMakeChanges
+	  Seventh   WorldSeeFiles
+	  Eighth    WorldSeeFolders
+	  Ninth     WorldMakeChanges
+	  Tenth     The directory cannot be renamed, moved, or deleted.
+	  Eleventh  The changes apply to the current directory and all
+	            subdirectories.
+	
+	Macfile Server
+	--------------
+	
+	This changes the Services for Macintosh server configuration. The sytax is as
+	follows:
+	
+	  macfile server [/server:\\computername] [/maxsessions:number |
+	   unlimited][/loginmessage:message][/guestsallowed:[true | false]]
+	
+	  Parameters              Description
+	  ----------              -----------
+	  /server:\\computername  Specifies the server on which to change
+	                          parameters. If omitted, the operation is
+	                          performed on the local computer.
+	
+	  /maxsessions:[number|   Specifies the maximum number of users that can
+	   unlimited]             simultaneously use Services for Macintosh
+	                          services. If omitted, the maxsessions setting
+	                          for the server remains unchanged.
+	
+	  /loginmessage:message   Changes the message Macintosh users will see
+	                          when logging on to the Services for Macintosh
+	                          server. To remove an existing login message,
+	                          include the /loginmessage parameter, but leave
+	                          the message variable blank. If omitted, the
+	                          loginmessage message for the server remains
+	                          unchanged from the previous setting. The maximum
+	                          number of characters for the login message is
+	                          199.
+	
+	  /guestsallowed:[true|   Specifies whether users logging on as guests can
+	                          use Services for Macintosh services. If omitted,
+	                          the guestsallowed setting for the server remains
+	                          unchanged.
+	
+	Macfile Forkize
+	---------------
+	
+	This joins the data fork and resource fork of a Macintosh file into one file.
+	Macfile forkize also changes the type or creator of the file. The syntax is as
+	follows:
+	
+	  macfile forkize [/server:\\computername] [/creator:creatorname]
+	   [/type:typename][/datafork:filepath] [/resourcefork:filepath]
+	   /targetfile:filepath
+	
+	  Parameters              Description
+	  ----------              -----------
+	  /server:\\computername  Specifies the server on which to join files. If
+	                          omitted, the operation is performed on the local
+	                          computer.
+	
+	  /creator:creatorname    Specifies the creator of the file. The creator
+	                          parameter is use by the Macintosh Finder to
+	                          determine the application that created the file.
+	
+	  /type:typename          Specifies the type of file. The file type is
+	                          used by the Macintosh Finder to determine the
+	                          file type within the application that created
+	                          the file.
+	
+	  /datafork:filepath      Specifies the location of the data fork that is
+	                          to be joined. You can specify a remote path.
+	
+	  /resourcefork:filepath  Specifies the location of the resource fork that
+	                          is to be joined. You can specify a remote path.
+	
+	  /targetfile:filepath    Specifies the location of the file created by
+	                          joining a data fork and a resource fork or
+	                          specifies the location of the file whose type or
+	                          creator you are changing. The file must be on
+	                          the specified server.
+	
+	Additional query words: prodnt
+	
+	======================================================================
+	Keywords          : kbnetwork 
+	Technology        : kbWinNTsearch kbWinNT351search kbWinNT400search kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbwin2000ServSearch kbwin2000Search kbWinNTS351search kbWinAdvServSearch
+	Version           : :2000,3.51,4.0
+	
+	=============================================================================
+	

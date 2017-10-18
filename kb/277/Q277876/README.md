@@ -1,0 +1,91 @@
+---
+layout: page
+title: "Q277876: Status Message 10002 on the Client When Distributing Software"
+permalink: kb/277/Q277876/
+---
+
+## Q277876: Status Message 10002 on the Client When Distributing Software
+
+	Article: Q277876
+	Product(s): Microsoft Systems Management Server
+	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
+	Operating System(s): 
+	Keyword(s): kbClient kbConfig kbsms200 kbAdvertisement kbPackage kbStatSum
+	Last Modified: 06-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server versions 2.0, 2.0 SP1, 2.0 SP2, 2.0 SP3 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes the status message 10002, which you can receive when you
+	distribute software.
+	
+	MORE INFORMATION
+	================
+	
+	When you distribute software with Systems Management Server (SMS) version 2.0,
+	you may receive a status message 10002 from a client. This status message
+	indicates that the client is aware of the advertisement and that the
+	advertisement can be run from the Advertised Programs tool in Control Panel.
+	Even though a status message 10002 indicates that the advertisement has been
+	received, the client may not automatically run the program for a variety of
+	reasons, such as:
+	
+	- The program is configured to run when a user is not logged on, the
+	  advertisement is not assigned, and a user is presently logged on.
+	
+	- The program is configured to run whether a user is logged on or not, the
+	  advertisement is not assigned, and a user is presently logged on.
+	
+	The client can report the status message 10002 that signifies that the client has
+	seen and recorded the advertisement, but the client cannot return any further
+	status messages until some other action occurs, for example, an advertisement is
+	run on the computer by a user.
+	
+	In Control Panel, you must double-click Advertised Programs for an unassigned
+	program to run. If the advertisement is made during a time when a user is not
+	logged on, the necessary user interaction cannot be made and the program cannot
+	run.
+	
+	For a program to have the ability to run when a user is not logged on, you must
+	assign the program a mandatory time to run in the advertisement properties. When
+	you create a mandatory assignment, the client runs the command line of the
+	program, regardless of the logged on state of the computer.
+	
+	To create an assignment schedule for an existing advertisement, right-click the
+	advertisement, and then click Properties. On the Schedule tab, click Create,
+	which is located above the Mandatory Assignments dialog box. You can assign the
+	advertisement if you specify a mandatory date or time for the program to run or
+	if you want the advertisement to run immediately after one of the following
+	events:
+	
+	- As soon as possible
+	
+	- Logon
+	
+	- Logoff
+	
+	One or more additional status messages may be generated on the client as a result
+	of running an advertisement.
+	
+	REFERENCES
+	==========
+	
+	For more information about status messages, refer to the Microsoft Systems
+	Management Server 2.0 Resource Guide, Chapter 26, "Status Messages."
+	
+	Additional query words: prodsms status message 10002 statmsg
+	
+	======================================================================
+	Keywords          : kbClient kbConfig kbsms200 kbAdvertisement kbPackage kbStatSum 
+	Technology        : kbSMSSearch kbSMS200 kbSMS200SP1 kbSMS200SP2 kbSMS200SP3
+	Version           : :2.0,2.0 SP1,2.0 SP2,2.0 SP3
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

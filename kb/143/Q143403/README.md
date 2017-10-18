@@ -1,0 +1,120 @@
+---
+layout: page
+title: "Q143403: PRB: Problems Editing Long Declares in the Conditional Compile"
+permalink: kb/143/Q143403/
+---
+
+## Q143403: PRB: Problems Editing Long Declares in the Conditional Compile
+
+	Article: Q143403
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): WINDOWS:4.0,5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbnokeyword kbVBp400 kbVBp500 kbVBp600 kbGrpDSVB
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Control Creation Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you have long declare statements in conditional code, if you copy the
+	declare from one condition to the other, then modify the identifier in the Alias
+	clause, additional changes occur in your declaration which you did not specify.
+	
+	CAUSE
+	=====
+	
+	This behavior is by design. The Alias clause disappears and the type elements
+	wrap differently; however, the code runs as desired.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce the Problem
+	------------------------------
+	
+	1. Create a new Standard EXE project in Visual Basic. Form1 is created by
+	  default.
+	
+	2. Place the following code in the declaration section of Form1.
+	
+	         #If Win32 Then
+	            Private Declare Function ShellExecute Lib _
+	               "shell32.dll" Alias "ShellExecuteA" _
+	                 (ByVal hwnd As Long, _
+	                  ByVal lpOperation As String, _
+	                  ByVal lpFile As String, _
+	                  ByVal lpParameters As String, _
+	                  ByVal lpDirectory As String, _
+	                  ByVal nShowCmd As Long) As Long
+	         #Else
+	         #End If
+	
+	3. Copy the Declare statement in the "If Win32" clause and paste it in the #Else
+	  clause.
+	
+	4. Insert the cursor following the "A" in "ShellExecuteA" and backspace over the
+	  "A".
+	
+	5. Commit the line by stepping off the declare statement.
+	
+	6. The line continuation for the #ELSE clause gets scrambled as is shown below.
+	  The Alias clause is gone and the type elements are not wrapped as you would
+	  expect; however, the code runs as desired.
+	
+	         #If Win32 Then
+	           Private Declare Function ShellExecute Lib _
+	               "shell32.dll" Alias "ShellExecuteA" _
+	                 (ByVal hwnd As Long, _
+	                  ByVal lpOperation As String, _
+	                  ByVal lpFile As String, _
+	                  ByVal lpParameters As String, _
+	                  ByVal lpDirectory As String, _
+	                  ByVal nShowCmd As Long) As Long
+	         #Else
+	           Private Declare Function ShellExecute Lib _
+	               "shell32.dll" (ByVal _
+	                 hwnd As Long, ByVal lpOperation _
+	                  As String, ByVal lpFile _
+	                  As String, ByVal lpParameters _
+	                  As String, ByVal lpDirectory _
+	                  As String, ByVal nShowCmd _
+	                  As Long) As Long
+	         #End If
+	
+	If you press CTRL+Z to undo the erasing of the "A", the following will appear.
+	The actual edit is undone, but your incorrect line continuations are still
+	there. This code will not run because part of the declaration is missing.
+	
+	        Private Declare Function ShellExecute Lib _
+	            "shell32.dll" Alias "ShellExecuteA" _
+	              hwnd As Long, ByVal lpOperation _
+	               As String, ByVal lpFile _
+	               As String, ByVal lpParameters _
+	               As String, ByVal lpDirectory _
+	               As String, ByVal nShowCmd _
+	               As Long) As Long
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbnokeyword kbVBp400 kbVBp500 kbVBp600 kbGrpDSVB 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400 kbZNotKeyword3 kbVB16bitSearch
+	Version           : WINDOWS:4.0,5.0,6.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

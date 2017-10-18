@@ -1,0 +1,82 @@
+---
+layout: page
+title: "Q193422: Last Day of the Month Reverts Back to First Day of Same Month"
+permalink: kb/193/Q193422/
+---
+
+## Q193422: Last Day of the Month Reverts Back to First Day of Same Month
+
+	Article: Q193422
+	Product(s): Microsoft Windows NT
+	Version(s): WinNT:3.51
+	Operating System(s): 
+	Keyword(s): kbYear2000
+	Last Modified: 20-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 3.51 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	As the Date/Time utility attempts to change the date from the last day of the
+	month to the first day of the following month, it displays the first day of the
+	current month instead. For example, instead of displaying February 1, 2000, one
+	day after the date was January 31, 2000, the Date/Time utility reports the date
+	as January 1, 2000.
+	
+	CAUSE
+	=====
+	
+	This problem occurs if the Date/Time utility in Control Panel is open after
+	midnight on the last day of the month and the Month field is selected.
+	
+	
+	RESOLUTION
+	==========
+	
+	A supported fix that corrects this problem is now available from Microsoft, but
+	has not been fully regression tested and should be applied only to systems
+	experiencing this specific problem.
+	
+	To resolve this problem immediately, download the fix as described below. For a
+	complete list of Microsoft Product Support Services phone numbers and
+	information on support costs, please go to the following address on the World
+	Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	  Date      Time                 Size    File Name     Platform
+	  -------------------------------------------------------------
+	  09/25/98  05:25p               234,432 Main.cpl      (x86)
+	  09/25/98  05:39p               360,208 Main.cpl      (Alpha)
+	
+	NOTE: Y2k351-i.exe and Y2k351-a.exe were updated on November 5, 1998.
+	
+	This hotfix has been posted to the following Internet location as Y2k351-i.exe
+	(x86) and Y2k351-a.exe (Alpha):
+	
+	  ftp://ftp.microsoft.com/bussys/winnt/winnt-public/fixes/usa/NT351/hotfixes-postSP5/y2k-fix/
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Windows NT version 3.51.
+	
+	======================================================================
+	Keywords          : kbYear2000 
+	Technology        : kbWinNTsearch kbWinNT351search kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+	Version           : WinNT:3.51
+	Hardware          : ALPHA x86
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

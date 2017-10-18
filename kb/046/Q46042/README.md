@@ -1,0 +1,46 @@
+---
+layout: page
+title: "Q46042: Mac Wkst: Pasting a Graphic into the Body of a Message"
+permalink: kb/046/Q46042/
+---
+
+## Q46042: Mac Wkst: Pasting a Graphic into the Body of a Message
+
+	Article: Q46042
+	Product(s): Microsoft Mail For Appletalk Networks
+	Version(s): WINDOWS:3.0,3.0a,3.0b,3.1,3.1a,3.1c
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 09-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Mail for AppleTalk Networks, versions 3.0, 3.0a, 3.0b, 3.1, 3.1a, 3.1c 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The Microsoft Mail Note message form only accepts text. When you try to paste a
+	graphic into the body of a Note message, the Macintosh beeps and nothing is
+	pasted. To send a graphic message, use the Image message form. Both the Note
+	form and the Image form are included with Mail.
+	
+	To send a message that contains both a graphic image and text, you can create a
+	custom form that has a Send screen with both a text field and a graphic field.
+	With this sort of form, you can enter text in the text field and paste a graphic
+	image into the graphic field of the form.
+	
+	Another option is to make the text part of the graphic image before the graphic
+	is pasted into the Image message form.
+	
+	Additional query words: 3.00 3.00a 3.00b 3.10 3.10a 3.10c
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMailSearch kbZNotKeyword3 kbMailATN300 kbMailATN300a kbMailATN300b kbMailATN310 kbMailATN310a kbMailATN310c
+	Version           : WINDOWS:3.0,3.0a,3.0b,3.1,3.1a,3.1c
+	
+	=============================================================================
+	

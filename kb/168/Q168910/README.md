@@ -1,0 +1,93 @@
+---
+layout: page
+title: "Q168910: WD97: Word Hangs Saving Document with WordArt to RTF"
+permalink: kb/168/Q168910/
+---
+
+## Q168910: WD97: Word Hangs Saving Document with WordArt to RTF
+
+	Article: Q168910
+	Product(s): Word 97 for Windows
+	Version(s): WINDOWS:97
+	Operating System(s): 
+	Keyword(s): kbusage winword word97
+	Last Modified: 14-NOV-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you save a document that contains a WordArt object, you may receive the
+	following error message:
+	
+	  This program has performed an illegal operation and will be shut down.
+	
+	  If the problem persists, contact the program vendor.
+	
+	When you click Details, the following error message is shown:
+	
+	  WINWORD caused an invalid page fault in module WINWORD.EXE at 0137:30093d71.
+	
+	CAUSE
+	=====
+	
+	A symbol font that is represented by a square is either a character that does
+	not exist in the font or is not correctly converted from one font to a character
+	in the current font.
+	
+	In Microsoft Word 97, when you try to use an unrecognized character in WordArt,
+	WordArt will display the unrecognized character as a question mark. WordArt does
+	not understand what the character should be. When you try to save the file as
+	Rich Text Format (RTF), Word is not able to correctly convert the WordArt object
+	containing an unrecognized character. This situation will result in an invalid
+	page fault.
+	
+	RESOLUTION
+	==========
+	
+	To correct this problem, install Microsoft Word 97 Service Release 1 (SR- 1).
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft Word 97 for Windows.
+	This problem was corrected in Microsoft Word 97 SR-1.
+	
+	For additional information about SR-1, please see the following article in the
+	Microsoft Knowledge Base:
+	
+	  Q172475 OFF97: How to Obtain and Install MS Office 97 SR-1
+	
+	REFERENCES
+	==========
+	
+	For more information about WordArt in Microsoft Word 97, please see the
+	following article in the Microsoft Knowledge Base:
+	
+	  Q157299 WD97: Where to Find Word 6.x or 7.x Commands and Features
+	
+	For more information about WordArt in Word 97, click the Office Assistant, type
+	"WordArt," click Search, and then click one of the topics.
+	
+	NOTE: If the Assistant is hidden, click the Office Assistant button on the
+	Standard toolbar. If Word Help is not installed on your computer, please see the
+	following article in the Microsoft Knowledge Base:
+	
+	  Q120802 Office: How to Add/Remove a Single Office Program or Component
+	
+	Additional query words: SR1 release1 8.0 8.00 ipf gpf crash lock up freeze stop responding no response
+	
+	======================================================================
+	Keywords          : kbusage winword word97 
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : WINDOWS:97
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

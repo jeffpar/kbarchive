@@ -1,0 +1,105 @@
+---
+layout: page
+title: "Q176362: Bookshelf: Cannot Play Sound Clips or National Anthems"
+permalink: kb/176/Q176362/
+---
+
+## Q176362: Bookshelf: Cannot Play Sound Clips or National Anthems
+
+	Article: Q176362
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): WINDOWS:
+	Operating System(s): 
+	Keyword(s): kbenv kberrmsg kbsound kbimukbfaq
+	Last Modified: 15-JUL-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Bookshelf 2000 
+	- Microsoft Bookshelf 99 
+	- Microsoft Bookshelf 98 for Windows 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	While you attempt to play a sound clip or national anthem in Microsoft
+	Bookshelf, you may receive one of the following error messages:
+	
+	  Filename extension of the specified multimedia file is not associated with
+	  any installed MCI device.
+	
+	  Mmsystem346: No MIDI device available.
+	
+	You can play pronunciations from the Dictionary, and you can play both wave audio
+	and MIDI files directly from the Bookshelf CD-ROM using Windows Media Player.
+	
+	CAUSE
+	=====
+	
+	This behavior can occur if the following entries in the [mci extensions] section
+	of the Win.ini file are missing or spelled incorrectly:
+	
+	  mid=sequencer
+	  rmi=sequencer
+	  wav=waveaudio
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue:
+	
+	1. Click Start, and then click Run.
+	
+	2. In the Open box, type "win.ini" (without the quotation marks), and then click
+	  OK.
+	
+	3. On the Search menu, click Find.
+	
+	4. Type "[mci extensions]" (without the quotation marks), and then click Find
+	  Next.
+	
+	5. When you locate the [mci extensions] section, scroll down to view the
+	  contents of the section and verify that the following lines exist and are
+	  correctly spelled:
+	
+	     mid=sequencer
+	     rmi=sequencer
+	     wav=waveaudio
+	   
+	
+	  If these entries are missing from the [mci extensions] section, add them
+	  exactly as they appear above.
+	
+	  NOTE: If a line is present but has a semicolon (;) at the beginning, remove
+	  the semicolon.
+	
+	6. On the File menu, click Exit. If you are prompted to save the changes, click
+	  Yes.
+	
+	7. Restart the computer.
+	
+	MORE INFORMATION
+	================
+	
+	If these steps do not resolve the issue, please see the following article in the
+	Microsoft Knowledge Base:
+	
+	  Q136983 No Sound, MMSystem or MCI Errors In Windows 95
+	
+	NOTE: You may also receive the "No MIDI device available" error message when you
+	attempt to play a MIDI file in Microsoft Bookshelf 2000 if you copied the
+	contents of the Bookshelf 2000 CD-ROM to a folder on your hard disk and
+	installed Bookshelf 2000 from that location.
+	
+	Additional query words: multi multi-media media mm bs98 bs99 bs2k
+	
+	======================================================================
+	Keywords          : kbenv kberrmsg kbsound kbimu kbfaq
+	Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf1998 kbBookShelf2000 kbBookShelf1999
+	Version           : WINDOWS:
+	Issue type        : kbprb
+	
+	=============================================================================
+	

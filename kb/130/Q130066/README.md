@@ -1,0 +1,114 @@
+---
+layout: page
+title: "Q130066: CONN: Mail Connection Gateway Errors (531), (550)"
+permalink: kb/130/Q130066/
+---
+
+## Q130066: CONN: Mail Connection Gateway Errors (531), (550)
+
+	Article: Q130066
+	Product(s): Microsoft Mail For Appletalk Networks
+	Version(s): 3.2
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 10-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Mail Connection Gateway, version 3.2 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If the Macintosh component of the Mail Connection Gateway is installed
+	incorrectly, the following problems or errors may occur:
+	
+	- Microsoft Mail for AppleTalk Networks mail recipients frequently receive more
+	  than one copy of the same mail message.
+	
+	- The Network manager receives sporadic reports of the MMACGATE.LOG being
+	  locked and inaccessible.
+	
+	- The errors (531) and (550) frequently occur, as shown in the following
+	  MMACGATE.LOG excerpt:
+	
+	  1995-03-30 05:09 Error: (531) File not found occurred while deleting file
+	  mmff1.wrt.
+	
+	  1995-03-30 07:14 Error: (550) File is busy occurred while deleting file
+	  mmff2.msg.
+	
+	- The MMACGATE.LOG shows irregular time stamp entries:
+	
+	  1995-04-05 10:55 Exiting the Microsoft Mail Connection at 1995-04-05 10:55
+	
+	  1995-04-05 10:57 Exiting the Microsoft Mail Connection at 1995-04-05 10:57
+	
+	  1995-04-05 10:56 Starting the Microsoft Mail Connection at 1995-04-05 10:56
+	
+	CAUSE
+	=====
+	
+	There is more than one MS Mail Gateway extension running in a Microsoft Mail for
+	AppleTalk Networks network pointing to the same Microsoft Mail for PC Networks
+	gateway postoffice. This results in two or more processes that read, write, and
+	open the same files continuously.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, complete the following steps:
+	
+	1. Extract the Access gateway from the AppleTalk Mail server. For more
+	  information on how to do this, see page 36 of the Microsoft Mail Connection
+	  "Administrator's Guide."
+	
+	2. Run the Connection Installer on the duplicate AppleTalk Mail gateway server
+	  and select the gateway name.
+	
+	3. From the Gateway menu, choose Remove Gateway. Click OK to the message box
+	  asking "Are you sure...".
+	
+	4. Click the Access menu and select Install Access Gateway.
+	
+	5. Locate the Access gateway extracted from the original AppleTalk Mail gateway
+	  server. Click Install.
+	
+	6. Go to the System-Extensions folder and remove the extension MS Mail GW.
+	
+	7. Restart the AppleTalk Mail Access server.
+	
+	MORE INFORMATION
+	================
+	
+	Page 129 of the Microsoft Mail Connection "Administrator's Guide" specifies
+	error messages 526 through 551 as usually caused by software, hardware, or
+	network problems. The most common troubleshooting starting point is to check the
+	network access rights, file locking, lazy write problems, and so forth. It may
+	save valuable time if you can determine whether multiple AppleTalk Mail gateways
+	are the cause of the errors.
+	
+	To determine if there are multiple AppleTalk Mail gateways:
+	
+	- Check the MMACGATE.LOG for irregular time-stamp entries.
+	
+	- Run the Connection Installer on each AppleTalk Mail server to view installed
+	  gateways and access gateways. Only one AppleTalk Mail server should have the
+	  Gateway component installed. All AppleTalk Access Mail servers will have the
+	  Access Gateway component only (Access gateways are designated with an "A" in
+	  a black box in front of the gateway name).
+	
+	- Check for any stranded *.DEL files in the PCTOMAC directory.
+	
+	
+	Additional query words: gate way macgate con
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbZNotKeyword2 kbMailSearch kbZNotKeyword3 kbMailConn320
+	Version           : :3.2
+	
+	=============================================================================
+	

@@ -1,0 +1,119 @@
+---
+layout: page
+title: "Q141626: ADT/ODE: Invalid Page Fault in Module ACMSETUP.EXE"
+permalink: kb/141/Q141626/
+---
+
+## Q141626: ADT/ODE: Invalid Page Fault in Module ACMSETUP.EXE
+
+	Article: Q141626
+	Product(s): Microsoft Access Distribution Kit
+	Version(s): 7.0 97
+	Operating System(s): 
+	Keyword(s): kberrmsg
+	Last Modified: 05-JUL-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Access Developer's Toolkit, version 7.0 
+	- Microsoft Office 97 Developer Edition 
+	-------------------------------------------------------------------------------
+	
+	Moderate: Requires basic macro, coding, and interoperability skills.
+	
+	SYMPTOMS
+	========
+	
+	When you create disk images for your application using the Setup Wizard, and you
+	include a shortcut for a Compact or a Repair And Compact of your database and a
+	shortcut for a Readme or Help file, you may receive an Invalid Page Fault in
+	module Acmsetup.exe because of a Compact command- line switch that is appended
+	to your Readme/Help file command line.
+	
+	CAUSE
+	=====
+	
+	The command line that causes the page fault will be in the following format:
+	
+	  $(FilePath)\readme.txt /compact
+	
+	-or-
+	
+	  $(FilePath) \Help.hlp /compact
+	
+	RESOLUTION
+	==========
+	
+	To work around this behavior, do one of the following:
+	
+	In Microsoft Office 97 Developer Edition Tools:
+	
+	On the Add Shortcuts Page, click the General Shortcut Properties tab, click "I
+	would like to specify my own custom command line," and then type
+	"$(FilePath)\Readme.txt" (without the quotation marks) or "$(FilePath)\Help.hlp"
+	(without the quotation marks), depending on the file type, in the Command Line
+	box for both your Readme and your Help file.
+	
+	In Microsoft Access Developer's Toolkit version 7.0:
+	
+	Select "$"Specify My Own Custom Command Line" from the Command-Line Style section
+	for both your Readme and your Help file. In the command line, type
+	"$(FilePath)\Readme.txt" (without the quotation marks) or "$(FilePath)\Help.hlp"
+	(without the quotation marks), depending on the file type.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. On the ShortCuts screen of the Setup Wizard, click the Add button.
+	
+	2. On the Database Shortcut Properties tab ( or in the Properties dialog box in
+	  the ADT version 7.0), select your database in the File To Open box.
+	
+	3. Type "My Application Compact" (without the quotation marks) in the
+	  Description box.
+	
+	4. Click Compact or Repair And Compact on the Database Shortcut Properties tab
+	  (or in the Database Shortcut Action in the ADT version 7.0).
+	
+	5. Click Add.
+	
+	6. Add either a Help file or a Readme file.
+	
+	7. Type a description for the file.
+	
+	8. Leave the default of Use Wizard-Provided Command-Line.
+	
+	  NOTE: In the ODE Setup Wizard, you must click the General Shortcut Properties
+	  tab to see the default for the Command line.
+	
+	9. From the list of Shortcuts, select your application's shortcut.
+	
+	10. Click the Help or Readme shortcut. Note that the command line of the Help or
+	  Readme file has changed to $(FilePath)\readme.txt /compact or $(FilePath)
+	  \Help.hlp /compact.
+	
+	11. Complete the Setup Wizard, and run setup for your custom application. Note
+	  that you receive an invalid page fault error.
+	
+	REFERENCES
+	==========
+	
+	For more information about creating shortcuts, search the ODE or ADT Help Index
+	for "shortcuts," and then "compacting and repairing data in run-time
+	applications."
+	
+	Additional query words: acmsetup exe
+	
+	======================================================================
+	Keywords          : kberrmsg 
+	Technology        : kbOfficeSearch kbAudDeveloper kbAccessSearch kbOffice97Search kbOffice97 kbZNotKeyword3 kbAccessDevTK700 kbOffice97DevSearch
+	Version           : 7.0 97
+	Hardware          : x86
+	Issue type        : kbprb
+	
+	=============================================================================
+	

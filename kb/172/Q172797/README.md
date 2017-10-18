@@ -1,0 +1,69 @@
+---
+layout: page
+title: "Q172797: Windows NT Printing is Slower than OS/2"
+permalink: kb/172/Q172797/
+---
+
+## Q172797: Windows NT Printing is Slower than OS/2
+
+	Article: Q172797
+	Product(s): Microsoft Windows NT
+	Version(s): WinNT:4.0
+	Operating System(s): 
+	Keyword(s): kbprint
+	Last Modified: 07-SEP-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 4.0 
+	- Microsoft Windows NT Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you compare Windows NT printing performance to OS/2 printing performance,
+	using printer command language (PCL) on Windows NT and Hewlett- Packard graphics
+	language on OS/2, slower printing performance has been observed on the
+	Hewlett-Packard (HP) LaserJet 5Si, 4Si, and IIISi printers. When you run tests
+	using a multidocument spreadsheet, the following was observed:
+	
+	When you print using OS2, the first document passes from the printer and all
+	subsequent pages follow without delay. When you use Windows NT, the first page
+	passes from the printer, but subsequent pages do not follow immediately. This
+	can be overcome on the HP 5si by turning off Enhanced MetaFile spooling, and
+	using the option to "Print text as graphics". Also, adding additional memory
+	improved the printing times. Upgrading to the latest HP driver for the 5si
+	printer also improved printer throughput. Only increasing the amount of memory
+	made a difference for the HP 4si and HP IIISi printers, (although not as much as
+	the HP 5si printer); it still had significant pauses between printed pages.
+	
+	Observed Printing Time Examples
+	-------------------------------
+	
+	HP 4Si printer with 22 MB of memory:
+	44 seconds until 1st page is completely out of printer, each page thereafter
+	takes 11 seconds until it is in the bin.
+	
+	5Si with 12 MB of memory:
+	8 seconds for 1st page is completely out of printer, rest of the pages
+	immediately follow.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Windows NT 4.0. We are
+	researching this problem and will post new information here in the Microsoft
+	Knowledge Base as it becomes available.
+	
+	
+	Additional query words: prodnt os2 slower
+	======================================================================
+	Keywords          : kbprint 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+	Version           : WinNT:4.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

@@ -1,0 +1,67 @@
+---
+layout: page
+title: "Q297097: XCCC: Playback for Multimedia Control on Swedish Windows NT 4.0"
+permalink: kb/297/Q297097/
+---
+
+## Q297097: XCCC: Playback for Multimedia Control on Swedish Windows NT 4.0
+
+	Article: Q297097
+	Product(s): Microsoft Exchange
+	Version(s): 4.01,5.5
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 08-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Outlook Web Access, version 5.5 Service Packs 1, 2, 3 
+	- Microsoft Outlook 97 
+	- Microsoft Outlook 98 
+	- Microsoft Outlook 2000 
+	- Microsoft Internet Explorer version 4.01 for Windows NT 4.0 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	If you are using a computer that is running the Swedish-language version of
+	Microsoft Windows NT Server version 4.0 or Microsoft Windows NT Workstation
+	version 4.0 for the first time and you download the multimedia control in either
+	Outlook Web Access (OWA) or Outlook 2000 and then restart the computer, you may
+	not be able to play your recordings correctly.
+	
+	WORKAROUND
+	==========
+	
+	To work around this behavior, play a video clip in the media player on the
+	computer (often Microsoft Windows Media Player); after you do so, the multimedia
+	control can play your recordings correctly. You only have to play a video clip
+	to play a recording. You can record and send a video clip without playing a
+	video clip first.
+	
+	STATUS
+	======
+	
+	This behavior is by design.
+	
+	MORE INFORMATION
+	================
+	
+	The media player codec needs to be installed on the computer that is running the
+	Swedish-language version of Windows NT Server or Windows NT Workstation for the
+	multimedia control to be able to play the video clip.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbOutlookSearch kbIEsearch kbZNotKeyword2 kbOutlook2000Search kbOutlook97Search kbOutlook98Search kbOWASearch kbIENT400Search kbZNotKeyword3 kbOWA550SP1 kbOWA550SP2 kbOWA550SP3 kbIE401WinNT400
+	Version           : :4.01,5.5
+	Issue type        : kbprb
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

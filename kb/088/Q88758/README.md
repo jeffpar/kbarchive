@@ -1,0 +1,69 @@
+---
+layout: page
+title: "Q88758: AMI BIOS May Need to Be Upgraded for IDE Hard Drive"
+permalink: kb/088/Q88758/
+---
+
+## Q88758: AMI BIOS May Need to Be Upgraded for IDE Hard Drive
+
+	Article: Q88758
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): MS-DOS:3.x,4.x,5.0,5.x,6.0,6.2,6.21; WINDOWS:3.0,3.0a,3.1,3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 18-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+	- Microsoft MS-DOS operating system versions 3.1, 3.2, 3.21, 3.3, 3.3a, 4.0, 4.01, 5.0, 5.0a, 6.0, 6.2, 6.21 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	American Megatrends Inc. (AMI) has confirmed that its BIOS dated earlier than
+	4/9/90 may have problems with IDE hard drives.
+	
+	These problems may be seen when booting the computer and receiving a
+	
+	  NON SYSTEM DISK
+	
+	error, or when running Microsoft Windows in 386 enhanced mode and experiencing
+	momentary hangs (lasting 5 to 10 seconds) that may adversely affect currently
+	running programs. The problems are caused by IDE hard drives not following the
+	AT bus standard.
+	
+	RESOLUTION
+	==========
+	
+	Contact AMI and obtain a BIOS dated 4/9/90 or later.
+	
+	MORE INFORMATION
+	================
+	
+	AMI technical support also recommends a BIOS dated later than 9/1/87 to function
+	correctly with Windows 3.0.
+	
+	To determine the AMI BIOS date, examine the 16-digit identification displayed
+	near the bottom of the screen when the machine is started. For example, in the
+	following ID
+	
+	  DAMI 3601 092588 K8
+	
+	the digits "092588" specify the BIOS date.
+	
+	The AMI products included here are manufactured by a vendor independent of
+	Microsoft; we make no warranty, implied or otherwise, regarding these products'
+	performance or reliability.
+	
+	Additional query words: 3.00 3.00a 3.10 3.11 3.20 3.21 3.30 3.30a 4.00 4.01 4.01a 5.00 5.00a 6.00 6.20 6.21 3rdparty
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311 kbMSDOSSearch kbMSDOS321 kbMSDOS400 kbMSDOS320 kbMSDOS330a kbMSDOS621 kbMSDOS620 kbMSDOS600 kbMSDOS310 kbMSDOS500 kbMSDOS330 kbMSDOS401 kbMSDOS500a
+	Version           : MS-DOS:3.x,4.x,5.0,5.x,6.0,6.2,6.21; WINDOWS:3.0,3.0a,3.1,3.11
+	
+	=============================================================================
+	

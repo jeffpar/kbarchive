@@ -1,0 +1,90 @@
+---
+layout: page
+title: "Q181925: XCLN: How to Move or Copy Messages From a PST File to an MMF"
+permalink: kb/181/Q181925/
+---
+
+## Q181925: XCLN: How to Move or Copy Messages From a PST File to an MMF
+
+	Article: Q181925
+	Product(s): Microsoft Exchange
+	Version(s): WINDOWS:3.0,3.2,3.5,4.0,5.0,8.0; :8.0,8.01,8.02,8.03
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 06-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Windows 95/98 client, versions 4.0, 5.0 
+	- Microsoft Exchange Windows NT client, versions 4.0, 5.0 
+	- Microsoft Exchange Windows 3.x client, versions 4.0, 5.0 
+	- Microsoft Outlook 97, versions 8.0, 8.01, 8.02, 8.03 
+	- Microsoft Outlook, Exchange Server Edition, version 8.0, used with:
+	   - the operating system: Microsoft Windows versions 3.1, 3.11 
+	- Microsoft Mail for Windows, versions 3.0, 3.2, 3.5 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article explains how to copy or move messages from a Microsoft Exchange or
+	Microsoft Outlook personal folder (PST) file to a Microsoft Mail Message file
+	(MMF).
+	
+	MORE INFORMATION
+	================
+	
+	NOTE: For this procedure to work with the Microsoft Exchange (also known as
+	Windows Messaging) client included with Windows 95, you must have an updated
+	version of the Microsoft Mail service installed. For more information on
+	obtaining the updated version of this service, please see the following
+	article:
+	
+	  Q139352 PC Gen: FAQ - Implementing Electronic Mail under Windows 95
+	
+	To copy or move messages from a PST file to an MMF, perform the following steps
+	in the Microsoft Exchange or Microsoft Outlook client:
+	
+	1. Create a profile using the Microsoft Mail and Personal Folders services.
+	
+	2. Configure the Microsoft Mail service to connect to the appropriate mailbox on
+	  the Microsoft Mail postoffice.
+	
+	3. Configure the Personal Folders service to use the PST file containing the
+	  messages you wish to move or copy.
+	
+	4. Start the Exchange or Outlook client and log on to the mailbox.
+	
+	5. If you do not see the Folder List, select Folder List from the View menu.
+	  From the Folder List, select the Microsoft Mail Shared Folders folder and
+	  create a new folder called PST Messages. Click OK.
+	
+	6. From the personal folders, move or copy your messages to the new shared
+	  folder created in the previous step.
+	
+	7. Exit Exchange or Outlook.
+	
+	8. From a Microsoft Mail Windows 3.x client, log on to any mailbox on the
+	  Microsoft Mail postoffice.
+	
+	9. Select Shared Folders from the View menu and select the shared folder that
+	  you created earlier.
+	
+	10. Highlight all the messages in the shared folder. Select Copy from the File
+	  menu and choose Private Folders for the Type field. Select a folder (such as
+	  the Inbox) and click OK.
+	
+	The selected messages from the user's PST file should now appear in their Mail
+	Message file.
+	
+	Additional query words: migrate downgrade rollback convert export import pcmail msmail OL97
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbOutlookSearch kbExchangeSearch kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbOutlook97Search kbZNotKeyword3
+	Version           : WINDOWS:3.0,3.2,3.5,4.0,5.0,8.0; :8.0,8.01,8.02,8.03
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

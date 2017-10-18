@@ -1,0 +1,84 @@
+---
+layout: page
+title: "Q152722: XCLN: ErrMsg: Need Additional Space to Complete This Operation"
+permalink: kb/152/Q152722/
+---
+
+## Q152722: XCLN: ErrMsg: Need Additional Space to Complete This Operation
+
+	Article: Q152722
+	Product(s): Microsoft Exchange
+	Version(s): WINDOWS:4.0,5.0
+	Operating System(s): 
+	Keyword(s): kbusage
+	Last Modified: 30-MAR-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Windows 95/98 client, versions 4.0, 5.0 
+	- Microsoft Exchange Windows 3.x client, versions 4.0, 5.0 
+	- Microsoft Exchange Windows NT client, versions 4.0, 5.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you compose a message with a large attachment and use an Offline folder,
+	you may receive the following error message:
+	
+	  You need additional space to complete this operation.
+	
+	CAUSE
+	=====
+	
+	This is by design.
+	
+	WORKAROUND
+	==========
+	
+	Free up disk space on the drive that contains the Offline folder then click
+	Services on the Tools menu. Select the Advanced tab; select Offline Folder File
+	Settings, and click Compact Now. This process will free up the unused space
+	created by inserting a file as an attachment.
+	
+	MORE INFORMATION
+	================
+	
+	If you choose to click OK to the error message dialog box described above, and
+	you click OK to the Insert File dialog box, you will get the following error
+	message:
+	
+	  The file <path>:\exchange.ost could not be accessed. There is not
+	  enough space on the disk.
+	
+	This means you have 9.5K of disk space left on your partition that contains the
+	Offline folder file.
+	
+	If you select the Cancel button while you are in the Insert File dialog box, in
+	order to save the current message, you should free up enough disk space on the
+	same drive as the existing Offline folder file to accommodate the large
+	attachment.
+	
+	You can cancel the new message by clicking Close on the File menu. When you get
+	the dialog box, "Do you want to save changes to this item?", click No.
+	
+	The Offline folder file will still contain the maximum amount of the attachment
+	it can hold.
+	
+	If you click any folder or try to make any changes in configuration to Microsoft
+	Exchange, you will get the following error message:
+	
+	  The folder could not be opened. The file <path>:\exchange.ost could not
+	  be accessed. There is not enough space on the disk.
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbusage 
+	Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange400NT kbExchange500NT kbExchange400Win95 kbExchange500Win95
+	Version           : WINDOWS:4.0,5.0
+	
+	=============================================================================
+	

@@ -1,0 +1,146 @@
+---
+layout: page
+title: "Q228821: Generating a Certificate Request File Using Certificate Wizard"
+permalink: kb/228/Q228821/
+---
+
+## Q228821: Generating a Certificate Request File Using Certificate Wizard
+
+	Article: Q228821
+	Product(s): Internet Information Server
+	Version(s): 5.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 16-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Services version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The Certificate Wizard that comes with Internet Information Services (IIS) 5.0
+	makes managing server certificates easier than ever before. This article
+	describes how to create a certificate request file using the wizard.
+	
+	MORE INFORMATION
+	================
+	
+	The first step you will need to perform to get a server certificate is creating
+	the request file. To generate a new certificate request (to be sent to a
+	certificate authority or CA for processing), perform the following steps:
+	
+	NOTE: The certificate request fails if it contains non-alphanumeric characters.
+	NOTE: Between creating the request file (that is, completing the steps in this
+	article) and installing the certificate, do NOT perform any of the following
+	actions:
+	
+	- Change the computer name or Web site bindings.
+	
+	- Apply service packs or security patches.
+	
+	- Change encryption levels (that is, apply the high encryption pack).
+	
+	- Delete the pending certificate request.
+	
+	- Change any of the Web site's Secure Communications properties.
+	
+	1. Open the Internet Services Manager (or your custom MMC containing the IIS
+	  snap-in).
+	
+	2. Browse to the site where you want to enable secure communications.
+	
+	3. Right-click the friendly name of the site and go to properties.
+	
+	4. Click the Directory Security tab.
+	
+	5. Under the Secure Communications section, click Server Certificate.
+	
+	6. This starts the new Web Site Certificate Wizard.
+	
+	7. Click Next.
+	
+	8. Choose the Create a New Certificate option and click Next (there should be a
+	  slight pause before the next screen appears).
+	
+	9. Choose the Prepare a New Request but Send it Later option and click Next.
+	
+	  NOTE: The Send the request immediately to an online certification authority
+	  option is unavailable unless IIS has access to an Enterprise CA, which
+	  requires Certificate Server 2.0 to be installed in Microsoft Windows 2000
+	  with Active Directory.
+	
+	10. Choose a Friendly Name for the site (this can be anything you want it to be,
+	  for example, the friendly name of the site in the MMC, or the name of the
+	  customer the Web site belongs to).
+	
+	11. Choose the bit length of the key you want to use and whether you want to use
+	  SGC (Server Gated Cryptography), and then click Next.
+	
+	  NOTE: For more information on bit length and SGC, see the IIS Help that is
+	  located on the server at the following address:
+	
+	  http://<servername>/iishelp/iis/htm/core/iistesc.htm
+	
+	  Note that in order for this URL to work, you must replace server name with
+	  the name of your IIS server.
+	
+	12. Input your Organization (O) and your Organizational Unit (OU). For example,
+	  if your company is called Widgets and you are setting up a Web server for
+	  the Sales department, you would enter Widgets for the Organization and Sales
+	  for your Organizational Unit. Click Next when complete.
+	
+	13. Input the common name (CN) for your site. This should be the same name that
+	  the user will input when requesting your Web site. For example, if a user
+	  inputs http://www.widgets.microsoft.com to access your Web site, then your
+	  Common Name would be www.widgets.microsoft.com. When you are complete, click
+	  Next.
+	
+	14. Input you Country/Region, City, and State. It is very important that you do
+	  not abbreviate the names of the state or city. When complete, click Next.
+	
+	15. Enter the contact information for the person responsible for this
+	  certificate or Web site. This is usually how the Certificate Authority
+	  contacts you, and then click Next.
+	
+	16. Choose a name for the certificate request file you are about to create. This
+	  file will contain all the information you created here, as well as your
+	  public key for your site. You can browse the file name if you want. This
+	  creates a .txt file when you are complete. The default name for the file is
+	  Certreq.txt. When you have finished this step, click Next.
+	
+	17. You will now be presented with a summary screen of all the information you
+	  entered. Make sure all this information is correct, and then click Next.
+	
+	18. You have now created your certificate request file.
+	
+	In order for this certificate to be used, submit this file to a Certificate
+	Authority (online authority). They will generate a certificate response file,
+	which contains your public key and is digitally signed by the Certificate
+	Authority. To install this certificate, use the steps in the following Microsoft
+	Knowledge Base article:
+	
+	  Q228836 Installing a New Certificate with Certificate Wizard for Use in
+	  SSL/TLS
+	
+	REFERENCES
+	==========
+	
+	For additional information, click the article number below to view the article
+	in the Microsoft Knowledge Base:
+	
+	  Q293485 Error Message: Failed to Generate the Certificate Request
+	
+	Additional query words: certwiz certificate iis
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbiisSearch kbiis500
+	Version           : :5.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

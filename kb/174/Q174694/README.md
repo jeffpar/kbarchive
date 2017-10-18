@@ -1,0 +1,98 @@
+---
+layout: page
+title: "Q174694: XFOR: OV/VM Connector &quot;Waiting for NJE Signon&quot; After BIND"
+permalink: kb/174/Q174694/
+---
+
+## Q174694: XFOR: OV/VM Connector &quot;Waiting for NJE Signon&quot; After BIND
+
+	Article: Q174694
+	Product(s): Microsoft Exchange
+	Version(s): winnt:4.0
+	Operating System(s): 
+	Keyword(s): exc4
+	Last Modified: 26-JUN-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	During initial set up of the LinkAge Exchange-OV/VM Connector (also referred to
+	as the Exchange PROFS Connector), the connector appears to BIND properly to the
+	Remote Spooling Communications Subsystem (RSCS) application, but no mail is
+	exchanged. The last line in the LinkAge Exchange-OV/VM Connector logs for the
+	LME-PROFS-NJE process is:
+	
+	  1997/10/01 12:02:07- LME-PROFS-NJE(01b7) 2 23353:SNA connection to the
+	     host has been established
+	  << NJESNA(3402)
+	  1997/10/01 12:02:07- LME-PROFS-NJE(01b7) 4 23224:NJE Connection opened
+	  << njeconn(459)
+	  1997/10/01 12:02:07- LME-PROFS-NJE(01b7) 4 23230:Waiting for initial
+	     contact (FMH-4) from NJE partner application
+	  << njeconn(883)
+	  1997/10/01 12:02:08- LME-PROFS-NJE(01b7) 4 23204:FMH4: optimized fanout
+	     supported
+	  << njeconn(831)
+	  1997/10/01 12:02:08- LME-PROFS-NJE(01b7) 4 23205:FMH4: signon supported
+	  << njeconn(837)
+	  1997/10/01 12:02:08- LME-PROFS-NJE(01b7) 3 23229:Waiting for NJE Signon
+	     from host
+	  << njeconn(1119)
+	
+	After five minutes the following errors are logged:
+	
+	  1997/10/01 12:07:08- LME-PROFS-NJE(01b7) 1 23356:Timeout occurred when
+	     waiting for an LUA verb to complete
+	  << NJESNA(631)
+	  1997/10/01 12:07:08- LME-PROFS-NJE(01b7) 1 23349:Error {Session timeout
+	     occurred} occurred when reading SNA data from the host
+	  << NJESNA(3599)
+	  1997/10/01 12:07:08- LME-PROFS-NJE(01b7) 1 23217:Error occurred when
+	     waiting for the signon record from the host
+	  << njeconn(1126)
+	  1997/10/01 12:07:08- LME-PROFS-NJE(01b7) 1 00510:Error {Session timeout
+	     occurred}: The application failed to initialize.
+	  << stdmain(858)
+	
+	CAUSE
+	=====
+	
+	The connector and RSCS are supposed to exchange a node signon, and the
+	initiating partner is the one with the alphabetically higher node name. The logs
+	above indicate that neither side is initiating the node signon because the
+	LinkAge Exchange-OV/VM Connector is not configured properly. The LOCALNODE=
+	parameter in the Linkage.ini file located in C:\Linkage has to match the LINKID
+	parameter in the RSCS LINK or the LINKDEF statement in the RSCS configuration
+	file, and the PARTNERNODE= parameter has to match the RSCS node ID.
+	
+	If the RSCS node ID is alphabetically lower than the LINKID name for the
+	connector, then RSCS does not initiate the node signon. And if the LinkAge
+	Exchange-OV/VM Connector is configured so that its LOCALNODE= parameter is
+	alphabetically lower than the PARTNERNODE= parameter, the connector will not
+	initiate either, and you will see the above logged errors as a result.
+	
+	RESOLUTION
+	==========
+	
+	Correct the LOCALNODE= and PARTNERNODE= parameters to match the values specified
+	in the RSCS configuration file. The LOCALNODE= parameter should match the LINKID
+	parameter in the RSCS LINK or LINKDEF statement, and the PARTNERNODE= parameter
+	should match the LOCALID parameter (both definitions are located in the RSCS
+	configuration file).
+	
+	Additional query words: SEND RECEIVE
+	
+	======================================================================
+	Keywords          : exc4 
+	Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+	Version           : winnt:4.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

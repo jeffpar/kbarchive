@@ -1,0 +1,173 @@
+---
+layout: page
+title: "Q196027: PRB: Multi-Column Listbox Fails When &gt;15 Chars in Last Column"
+permalink: kb/196/Q196027/
+---
+
+## Q196027: PRB: Multi-Column Listbox Fails When &gt;15 Chars in Last Column
+
+	Article: Q196027
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:5.0,5.0a,6.0
+	Operating System(s): 
+	Keyword(s): kbContainer kbCtrl kbOOP kbvfp500 kbvfp500a kbvfp600
+	Last Modified: 08-JAN-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	A multi-column list box with a RowSourceType of 0-None that has text of over 15
+	characters in the last column and nothing in all prior columns also displays the
+	text from the last column in the first column. For an example of this behavior,
+	use the sample code in the Steps to Reproduce Behavior section.
+	
+	RESOLUTION
+	==========
+	
+	If there are over 15 characters in the last column, make sure there is data in
+	one of the previous columns. Alternately, you can use a different RowSourceType.
+	A RowSourceType of 5-Array can have empty elements in all but the last column
+	and display over 15 characters in the last column of a list box properly.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. This sample code illustrates the problem. Copy and paste it into a new
+	  program file; then save the file and run it.
+	
+	        PUBLIC oform1
+	        oform1=NEWOBJECT("form1")
+	        oform1.Show
+	        RETURN
+	
+	        **************************************************
+	        *-- Form:         form1 (d:\vfpdata\listitems.scx)
+	        *-- ParentClass:  form
+	        *-- BaseClass:    form
+	        *
+	        DEFINE CLASS form1 AS form
+	
+	           Top = 0
+	           Left = 0
+	           Height = 396
+	           Width = 624
+	           DoCreate = .T.
+	           Caption = "Form1"
+	           Name = "Form1"
+	
+	           ADD OBJECT list1 AS listbox WITH ;
+	              BoundColumn = 1, ;
+	              ColumnCount = 3, ;
+	              ColumnWidths = "200,200,200", ;
+	              Height = 217, ;
+	              ColumnLines = .T., ;
+	              Left = 11, ;
+	              Top = 21, ;
+	              Width = 604, ;
+	              Name = "List1"
+	
+	           ADD OBJECT command1 AS commandbutton WITH ;
+	              Top = 245, ;
+	              Left = 97, ;
+	              Height = 27, ;
+	              Width = 448, ;
+	              Caption = "Add > 15 chars to column3 AFTER adding items to " +;
+	              "column 1 first", ;
+	              Name = "Command1"
+	
+	           ADD OBJECT command2 AS commandbutton WITH ;
+	              Top = 281, ;
+	              Left = 97, ;
+	              Height = 27, ;
+	              Width = 448, ;
+	              Caption = "Add > 15 chars to column3 BEFORE adding items " + ;
+	              "to column 1 first", ;
+	              Name = "Command2"
+	
+	           ADD OBJECT command3 AS commandbutton WITH ;
+	              Top = 315, ;
+	              Left = 97, ;
+	              Height = 27, ;
+	              Width = 448, ;
+	             Caption = "Add exactly 15 chars to column3 without " + ;
+	              "adding items to column 1 first", ;
+	              Name = "Command3"
+	
+	           ADD OBJECT command4 AS commandbutton WITH ;
+	              Top = 361, ;
+	              Left = 270, ;
+	              Height = 27, ;
+	              Width = 106, ;
+	              Caption = "LIST1.CLEAR()", ;
+	              Name = "Command4"
+	
+	           PROCEDURE command1.Click
+	              THISFORM.LIST1.CLEAR()
+	
+	              THISFORM.List1.ADDLISTITEM("One",1,1)
+	              THISFORM.List1.ADDLISTITEM("Two",1,2)
+	              THISFORM.List1.ADDLISTITEM("123456789012345RRRR",1,3)
+	
+	              THISFORM.List1.ADDLISTITEM("Four",2,1)
+	              THISFORM.List1.ADDLISTITEM("Five",2,2)
+	              THISFORM.List1.ADDLISTITEM("xxxxxxxxxxxxxxxRRRR",2,3)
+	           ENDPROC
+	
+	           PROCEDURE command2.Click
+	              THISFORM.LIST1.CLEAR()
+	
+	              * THISFORM.List1.ADDLISTITEM(".NULL.",1,1)
+	              * THISFORM.List1.ADDLISTITEM(SPACE(10),1,2)
+	              THISFORM.List1.ADDLISTITEM("123456789012345RRRR",1,3)
+	
+	              * THISFORM.List1.ADDLISTITEM("Four",2,1)
+	              * THISFORM.List1.ADDLISTITEM("Five",2,2)
+	              THISFORM.List1.ADDLISTITEM("xxxxxxxxxxxxxxxRRRR",2,3)
+	           ENDPROC
+	
+	           PROCEDURE command3.Click
+	              THISFORM.LIST1.CLEAR()
+	
+	              * THISFORM.List1.ADDLISTITEM("One",1,1)
+	              * THISFORM.List1.ADDLISTITEM("Two",1,2)
+	              THISFORM.List1.ADDLISTITEM("123456789012345",1,3)
+	
+	              * THISFORM.List1.ADDLISTITEM("Four",2,1)
+	              * THISFORM.List1.ADDLISTITEM("Five",2,2)
+	              THISFORM.List1.ADDLISTITEM("xxxxxxxxxxxxxxx",2,3)
+	           ENDPROC
+	
+	           PROCEDURE command4.Click
+	              THISFORM.LIST1.CLEAR()
+	           ENDPROC
+	
+	        ENDDEFINE
+	        *
+	        *-- EndDefine: form1
+	        **************************************************
+	
+	2. To see the problem, click the second button. This is the button with the
+	  following caption:
+	
+	  Add > 15 chars to column3 BEFORE adding items to column 1 first.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbContainer kbCtrl kbOOP kbvfp500 kbvfp500a kbvfp600 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+	Version           : WINDOWS:5.0,5.0a,6.0
+	Issue type        : kbprb
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

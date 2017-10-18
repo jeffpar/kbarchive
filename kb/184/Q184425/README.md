@@ -1,0 +1,297 @@
+---
+layout: page
+title: "Q184425: MS Windows Architecture for Developers Training Corrections"
+permalink: kb/184/Q184425/
+---
+
+## Q184425: MS Windows Architecture for Developers Training Corrections
+
+	Article: Q184425
+	Product(s): Microsoft Press
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbdocerr
+	Last Modified: 07-JAN-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- MSPRESS Microsoft Windows Architecture for Developers Training Kit ISBN 1-57231-708-6 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article contains information on known errors, corrections, and comments
+	relating to the Microsoft Press book "Microsoft Windows Architecture for
+	Developers Training Kit," ISBN 1-57231-708-6.
+	
+	Contents
+	--------
+	
+	- Page xviii: Text Errors
+	
+	- Chapter 1: System Monitor Not Included With Windows NT 4.0
+	
+	- Page 19: File Name Refers Only To Windows NT
+	
+	- Page 26: Text Error
+	
+	- Page 29: Regedit.exe is Windows 95 Tool Only
+	
+	- Page 30: Text Error
+	
+	- Page 35: Correction for Question 2
+	
+	- Personal Web Server Exercises Cannot Be Run in NT 4.0
+	
+	- Chapter 4 Requirements: NWind.mdb Cannot Be Read-Only
+	
+	- Chapter 6 Requirements: Need Customized MS Access Installed
+	
+	- Chapter 7: ODBC Direct & RDO Exercises Require DSN To Be Set
+	
+	- Page 261: FrontPage/VBScript Example Does Not Work in NT 4.0 Server
+	
+	- Page 351: Text Error
+	
+	- Page 426: Text Error in Question & Answers
+	
+	- Readme.txt Gives Incorrect Version Requirements
+	
+	- CD-ROM: AVI Files Do Not Launch From E-Book
+	
+	MORE INFORMATION
+	================
+	
+	Page xviii: Text Errors
+	-----------------------
+	
+	Page xviii has two text errors (misspelled/garbled words): 4th bullet: "Each
+	lesson ends with a short summary of the material presenteda set of review
+	questions..."
+	
+	"presenteda set of " should be: "presented and a set of"
+	
+	Last paragraph: "Because there are two exams associated with Windows Architure
+	for..."
+	
+	"Architure" should be: "Architecture"
+	
+	
+	Chapter 1: System Monitor Not Included with Windows NT 4.0
+	----------------------------------------------------------
+	
+	The back cover of Microsoft Windows Architecture for Developers states that you
+	can complete this kit's lessons using Microsoft Windows NT Server 4.0 or
+	Microsoft Windows 95. However, many of the labs in chapter one make extensive
+	use of a Windows 95 utility called System Monitor. Windows NT 4.0 does not
+	include System Monitor.
+	
+	Microsoft Press is investigating this problem and will post further information
+	when available.
+	
+	
+	Page 19: File Name Refers Only To Windows NT
+	--------------------------------------------
+	
+	On page 19, under "Paging", the following statement is made: "To maximize its
+	flexibility in managing memory, the kernel can move pages of physical memory to
+	and from a paging file (Pagefile.sys) on a disk. When a page is moved in
+	physical memory, the kernel updates the page maps of the affected processes."
+	
+	The filename: "Pagefile.sys" only refers to Windows NT. No mention is made of the
+	Windows 95 paging file, (Win386.swp).
+	
+	
+	Page 26: Text Error
+	-------------------
+	
+	Page 26 illustrates the three dynamic link libraries: User32, GDI32, and
+	Kernel32. However, Kernel32 is misspelled in the text and in the illustration.
+	Specifically:
+	
+	Text: "The core code of Win32 API is primarily made up of three dynamic link
+	libraries (DLLs): USER32, GDI32, and KERNAL32."
+	
+	"Kernal32" should be "Kernel32".
+	
+	Figure 1.10: Box in lower right-hand corner, "KERNAL32".
+	
+	This should read "KERNEL32".
+	
+	
+	Page 29: Regedit.exe is Windows 95 Tool Only
+	--------------------------------------------
+	
+	Page 29, section "Registry Editor": Change sentence to read as follows:
+	
+	In Windows 95, the registry can be viewed or modified with the Registry Editor
+	(REGEDIT.EXE), located in the \Windows folder. In Windows NT, the registry
+	editor is called REGEDT32.EXE.
+	
+	
+	Page 30: Text Error
+	-------------------
+	
+	Page 30, paragraph 2, sentence 2:
+	Change: "...(typically USER.DAT)."
+	
+	To: "...(typically USER.DAT), and a file containing settings used universally by
+	the system (typically SYSTEM.DAT)."
+	
+	
+	Page 35: Correction for Question 2
+	----------------------------------
+	
+	On page 35, change question 2 from:
+	"What technique does Windows 95 and Windows NT use to run 16-bit applications?"
+	
+	To:
+	"What technique does Windows 95 and Windows NT use to call a 16-bit function from
+	a 32-bit application?"
+	
+	
+	Personal Web Server Exercises Cannot Be Run in NT 4.0
+	-----------------------------------------------------
+	
+	Page 42 starts a section of exercises using applications which involve the use of
+	Personal Web Server for Windows 95. The exercises are: "Using FTP", "Configuring
+	TCP/IP", "WINIPCFG", and "TRACERT".
+	
+	These exercises cannot be performed as stated on systems with NT 4.0. On NT 4.0
+	Server, Internet Information Server is the replacement for Personal Web Server.
+	The steps will need to be adapted for use with Microsoft Internet Information
+	Server.
+	
+	Microsoft Press is aware of this issue and will post further information when
+	available.
+	
+	
+	Chapter 4 Requirements: NWind.mdb Cannot Be Read-Only
+	-----------------------------------------------------
+	
+	The exercises in Chapter 4 ask you to interface to a database on the CD-ROM using
+	Excel and Visual Basic:
+	
+	 \WA\Practice\NWind.mdb
+	
+	This database is Read-Only, and accessing it gives an error. The workaround is to
+	copy the database to a temporary file and clear the 'Read-Only' property. Then
+	at each point in the lesson where the \WA\Practice\Nwind.mdb file is mentioned,
+	substitute instead the temporary file (for example, c:\temp\Nwind.mdb). The
+	exercise will then run properly.
+	
+	
+	Chapter 6 Requirements: Need Customized MS Access Installed
+	-----------------------------------------------------------
+	
+	In order to successfully complete the exercises in Chapter 6, you must have
+	installed Microsoft Access using the Custom installation option.
+	
+	In the Custom installation, you must have installed "Replicate Using My
+	Briefcase" for the exercises to work correctly.
+	
+	
+	Chapter 7: ODBC Direct & RDO Exercises Require DSN To Be Set
+	------------------------------------------------------------
+	
+	Pages 209 and 216 of Chapter 7 show 2 exercises which use ODBC Direct and RDO
+	(respectively) to retrieve data into an application from the Northwind
+	database.
+	
+	Both exercises contain a connection statement where "DSN=nwind"; however, this
+	DSN setting does not work and the applications halt without performing data
+	retrieval.
+	
+	The DSN must be set manually, and instructions need to be added to the chapter
+	which describe this procedure.
+	
+	Microsoft Press is aware of this problem and will post further information when
+	available.
+	
+	
+	Page 261: FrontPage/VBScript Example Does Not Work in NT 4.0 Server
+	-------------------------------------------------------------------
+	
+	Lesson 2 of Chapter 9 discusses Using Microsoft VBScript for Client Side
+	Scripting, and contains an exercise on pages 260-61 which the student should
+	work through. However, using Windows NT 4.0 (Server), this exercise cannot be
+	completed.
+	
+	Microsoft Press is aware of this issue and will post further information when
+	available.
+	
+	
+	Page 351: Text Error
+	--------------------
+	
+	Page 351, question 5, sentence 2:
+	Change: "TAPI"
+	To: "LSAPI"
+	
+	
+	Page 426: Text Error in Question & Answers
+	------------------------------------------
+	
+	On page 426 of "Questions and Answers", Question 19 from Chapter 1 reads:
+	
+	1. "How many threads are active? (increases by 1)"
+	
+	For systems running Windows 95, this is incorrect; the answer should be
+	"(increases by 2)". This question refers to the exercise on examining threads
+	which starts on page 13 of Chapter 1. In the exercise, on a system running
+	Windows 95, using System Monitor to observe the number of Kernel Threads after
+	opening an MS-DOS Window shows that 2 more threads are added.
+	
+	
+	Readme.txt Gives Incorrect Version Requirements
+	-----------------------------------------------
+	
+	The Readme.txt file in the root directory of the companion disc states, in part:
+	
+	  If you want to use the online portion of this book, you will need to have
+	  Microsoft Internet Explorer 3.x or later installed on your computer.
+	
+	However, the online portion of the book requires Microsoft Internet Explorer 4.0
+	or later.
+	
+	Correction:
+	Change: "Microsoft Internet Explorer 3.x"
+	To: "Microsoft Internet Explorer 4.0"
+	
+	
+	CD-ROM: AVI Files Do Not Launch From E-Book
+	-------------------------------------------
+	
+	The lessons included as multimedia files in the \AVI subdirectory of the CD-ROM
+	do not launch from the E-Book.
+	
+	In the E-Book in the section: "About the Online Book", it is stated: "The CD-ROM
+	also includes an on-line version of the book that you can use to launch
+	demonstrations, link to all of the referenced articles, and view on-screen as
+	you work through the exercises."
+	
+	To launch the multimedia file, use Windows Explorer to navigate to the \AVI
+	subdirectory, then select the file to launch.
+	
+	This error will be corrected in a future edition of the Windows Architecture for
+	Developers Training kit.
+	
+	
+	Microsoft Press is committed to providing informative and accurate books. All
+	comments and corrections listed above are ready for inclusion in future
+	printings of this book. If you have a later printing of the book, it may already
+	contain the above corrections.
+	
+	Additional query words: ms_press wosa 70-160 70-161
+	
+	======================================================================
+	Keywords          : kbdocerr 
+	Technology        : kbMSPressSearch
+	Version           : :
+	Issue type        : kbbug
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

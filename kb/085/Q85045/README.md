@@ -1,0 +1,45 @@
+---
+layout: page
+title: "Q85045: FFAPI: The Role of Remote Application FFAPI"
+permalink: kb/085/Q85045/
+---
+
+## Q85045: FFAPI: The Role of Remote Application FFAPI
+
+	Article: Q85045
+	Product(s): Microsoft Mail For PC Networks
+	Version(s): MS-DOS:3.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 16-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Mail Software Development Kit: FFAPI for Gateways and Applications, version 3.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Microsoft Mail Software Development Kit (FFAPI) includes programs that allow
+	MS-DOS remote workstations to participate in Microsoft Mail. The FFAPI remote
+	Get (RMTGET.EXE) program gets messages contained in the Mail Remote program data
+	files and places them into an MMFF output MS-DOS file. The FFAPI remote Put
+	(RMTPUT.EXE) program puts messages contained in an MMF file into the MS-DOS Mail
+	Remote program data files.
+	
+	Detailed information on the command line options of the Remote Application File
+	Format Application Programming Interface (FFAPI) is in the "Microsoft Mail for
+	PC Networks, Software Development Kit Application File Format API" manual.
+	
+	
+	Additional query words: 3.00 2.1a pcmail
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbMailSearch kbSDKSearch
+	Version           : MS-DOS:3.0
+	
+	=============================================================================
+	

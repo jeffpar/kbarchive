@@ -1,0 +1,198 @@
+---
+layout: page
+title: "Q150414: MSB Oceans and Earth: How to Remove Divers' Licenses"
+permalink: kb/150/Q150414/
+---
+
+## Q150414: MSB Oceans and Earth: How to Remove Divers' Licenses
+
+	Article: Q150414
+	Product(s): Microsoft Home Kids Products
+	Version(s): 1.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 13-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Scholastic's Magic School Bus series: Explores the Ocean for Windows, version 1.0 
+	- Scholastic's Magic School Bus series: Explores Inside the Earth for Windows, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes how to remove divers' licenses from Magic School Bus.
+	
+	RESOLUTION
+	==========
+	
+	To remove one or more divers' licenses, use the appropriate steps below for your
+	version of Windows:
+	
+	Windows 95/98
+	-------------
+	
+	1. Click Start, point to Programs, and then click Windows Explorer.
+	
+	2. Select the drive on which Magic School Bus has been installed. This is
+	  usually drive C.
+	
+	3. For Magic School Bus Oceans, do the following:
+	
+	  a. Click the plus sign next to the MSKids folder.
+	
+	  b. Select the MSBOcean folder.
+	
+	  For Magic School Bus Earth, do the following:
+	
+	  a. Double-click the Program Files folder.
+	
+	  b. Double-click the Microsoft Kids folder.
+	
+	  c. Click the MSB Earth folder.
+	
+	4. On the File menu, click New, and then click Folder.
+	
+	5. Type "test" (without the quotation marks), then press ENTER.
+	
+	6. On the View menu, click Arrange Icons, and then click by Name.
+	
+	7. On the View menu, click Details.
+	
+	8. Double-click the Windows\System folder.
+	
+	9. Look for the first set of three files whose names begin with bd#####.gvd and
+	  end with bd#####.pag or bd#####.str (where ##### is a series of matching
+	  numbers). For example:
+	
+	  bd32101.gvd
+	  bd32101.pag
+	  bd32101.str
+	
+	  NOTE: If you see a file that begins with bd#####.gvd and is followed by
+	  another file with a three letter file extension of .gvd, continue to search
+	  until you find a group of two or three of them together.
+	
+	10. Select the first of the files.
+	
+	11. Press and hold down SHIFT, then click the file bd#####.str (where #####
+	  matches the numbers in the file highlighted in step 11). This selects all
+	  three files.
+	
+	12. With the right mouse button, click any of the highlighted files, and then
+	  click Cut.
+	
+	13. With the right mouse button, click the Test folder, and then click Paste.
+	
+	14. Leave Windows Explorer open.
+	
+	15. Return to Magic School Bus by selecting it on the Windows taskbar. When you
+	  get to the divers license and click Load, is the correct divers license
+	  gone? If not, close Magic School Bus.
+	
+	16. Select Windows Explorer on the Windows taskbar, and then click the Test
+	  folder.
+	
+	17. Click the first file in the Test folder. Hold down SHIFT, and then click the
+	  last file in the Test folder.
+	
+	18. With the right mouse button, click any of the highlighted files, and then
+	  click Cut.
+	
+	19. With the right mouse button, click the System folder, and then click Paste.
+	
+	20. Go to the next set of two to three bd#####.* files. Follow steps 10-16.
+	
+	21. Once you have determined that the correct divers license is gone, return to
+	  Windows Explorer.
+	
+	22. With the right mouse button, click the Test folder, and then click Delete.
+	
+	23. If you are prompted to confirm the folder deletion, click Yes.
+	
+	Windows 3.x
+	-----------
+	
+	1. In Program Manager, go to the Main group, then run File Manager.
+	
+	2. Make sure you are viewing the files on the hard drive on which the program is
+	  installed (typically C:\).
+	
+	3. Double-click the MSKids folder.
+	
+	4. Double-click the MSBOcean folder for Oceans or MSBEarth for Earth.
+	
+	5. On the File menu, click Create Directory.
+	
+	6. Type "Test" (without the quotation marks) in the box next to Name, then click
+	  OK.
+	
+	7. On the View menu, click Sort by Name.
+	
+	8. Double-click the System directory.
+	
+	9. Look for the first set of three files whose names begin with bd#####.gvd and
+	  end with bd#####.pag or bd#####.str (where ##### is a series of matching
+	  numbers). For example:
+	
+	  bd32101.gvd
+	  bd32101.pag
+	  bd32101.str
+	
+	  NOTE: If you see a file that begins with bd#####.gvd and is followed by
+	  another file with a three letter file extension of .gvd, continue to search
+	  until you find a group of two or three of them together.
+	
+	10. Select the first of the files.
+	
+	11. Press and hold down SHIFT, then click the file bd#####.str (where #####
+	  matches the numbers in the file highlighted in step 11.) This selects all
+	  three files.
+	
+	12. With the files selected, drag them to the new Test directory.
+	
+	13. Run Magic School bus. When you get to the divers license and choose Load, is
+	  the correct divers license gone?
+	
+	14. If not, exit Magic School Bus and return to File Manager.
+	
+	15. Double-click the Test directory.
+	
+	16. Select the first file in the Test directory. Hold down the SHIFT key while
+	  you select the last file in the Test directory.
+	
+	17. Drag those files back into the System directory below Magic School Bus.
+	
+	18. Go to the next set of two to three bd#####.* files. Follow steps 11-14,
+	  above.
+	
+	19. Once you have determined that the correct diver's license is gone, return to
+	  File Manager.
+	
+	20. Select the Test directory.
+	
+	21. On the File menu, click Delete. Click OK in the Delete dialog box.
+	
+	22. Click Yes To All in the Confirm File Delete dialog box.
+	
+	MORE INFORMATION
+	================
+	
+	If you simply delete the *.gvd file, the associated saved game is deleted, but
+	the picture and name of the divers license continue to be displayed.
+	
+	The *.pag file deletes the divers license picture.
+	
+	The *.str file corresponds to the combined saved game and saved divers license.
+	
+	Additional query words: kids mskids msb msbhb msbss frizz kbmm multimedia multi-media multi media kbhowto msbocean msbsea drivers saving games deleting saved game removing remove
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbHomeProdSearch kbZNotKeyword kbKidsSearch kbScholasticOcean kbScholasticEarth kbMSBSearch
+	Version           : :1.0
+	
+	=============================================================================
+	

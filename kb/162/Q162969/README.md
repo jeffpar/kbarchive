@@ -1,0 +1,121 @@
+---
+layout: page
+title: "Q162969: WD97: No Connectors Command on AutoShapes Menu"
+permalink: kb/162/Q162969/
+---
+
+## Q162969: WD97: No Connectors Command on AutoShapes Menu
+
+	Article: Q162969
+	Product(s): Word 97 for Windows
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbusage kbofficeupdate
+	Last Modified: 13-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Word 97 does not have a Connectors command on the AutoShapes menu. A connector
+	is a line that connects two objects.
+	
+	CAUSE
+	=====
+	
+	Word 97 does not support the use of connectors in a Word document.
+	
+	WORKAROUND
+	==========
+	
+	Use any of the following methods to simulate connectors in Word.
+	
+	Method 1: Install and Use Microsoft Draw 98
+	-------------------------------------------
+	
+	If you are a registered Microsoft Office user, you can download and install
+	Microsoft Draw 98. Microsoft Draw 98 makes the OfficeArt drawing tools,
+	including connectors, available in any OLE-compliant application. You can obtain
+	Microsoft Draw 98 from the following Web site:
+	
+	  http://office.microsoft.com/downloads/9798/draw98.aspx
+	
+	To use Microsoft Draw 98 from Word:
+	
+	On the Insert menu, point to Picture, and then click New Drawing.
+	
+	Method 2: Use the Line AutoShape in Word
+	----------------------------------------
+	
+	Draw a connector line using one of the following AutoShapes:
+	
+	- Line
+	
+	- Arrow
+	
+	- Double Arrow
+	
+	- Curve
+	
+	- Freeform
+	
+	- Scribble
+	
+	NOTE: The connector lines that you create using this method function differently
+	from the connector lines available in Microsoft Excel or Microsoft PowerPoint.
+	When you move one of the objects, the connector line does not follow the
+	object.
+	
+	Method 3: Use Microsoft Excel or PowerPoint
+	-------------------------------------------
+	
+	1. Start Microsoft Excel or PowerPoint.
+	
+	2. If it is not already visible, display the Drawing toolbar. (On the View menu,
+	  point to Toolbars, and then click Drawing.)
+	
+	  The Drawing toolbar appears at the bottom of the window.
+	
+	3. Click AutoShapes on the Drawing toolbar, point to an AutoShape type, such as
+	  Basic Shapes, and then click the shape you want.
+	
+	4. On the Drawing toolbar, click AutoShapes, point to Connectors, and then click
+	  the connector you want. Drag the mouse pointer between the objects you want
+	  to connect.
+	
+	5. On the Drawing toolbar, click Select Objects, and then select the objects you
+	  created in steps 3 and 4.
+	
+	6. On the Edit menu, click Copy.
+	
+	7. Switch to Word.
+	
+	8. On the Edit menu, click Paste.
+	
+	NOTE: When you paste this object into Word, the connector line is converted into
+	a simple line. It is not attached to the two objects at either end. If you move
+	one object, the connector line does not follow the object. In Microsoft Excel or
+	PowerPoint, when you move an object at either end of the connector line, the
+	connector follows the object.
+	
+	REFERENCES
+	==========
+	
+	"Getting Results with Microsoft Office 97," Part 1, page 162, "Get Your Point
+	Across with Graphics"
+	
+	Additional query words: 8.0 connect connecting connection flow chart flowchart flowcharting
+	
+	======================================================================
+	Keywords          : kbusage kbofficeupdate 
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : :
+	Issue type        : kbprb
+	
+	=============================================================================
+	

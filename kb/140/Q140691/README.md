@@ -1,0 +1,196 @@
+---
+layout: page
+title: "Q140691: How to Manipulate &amp; Sort Character Arrays in the API"
+permalink: kb/140/Q140691/
+---
+
+## Q140691: How to Manipulate &amp; Sort Character Arrays in the API
+
+	Article: Q140691
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:3.0
+	Operating System(s): 
+	Keyword(s): kbcode
+	Last Modified: 10-FEB-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 3.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article gives an example showing how to manipulate FoxPro character arrays
+	in the API. The function mysort in this example takes a one- dimensional array
+	of character information and sorts it using the Machine collation sequence. The
+	sorting mechanism that is used is a simple select sort. This function requires a
+	one-dimensional array of character values.
+	
+	MORE INFORMATION
+	================
+	
+	The Xbase component is very simple. It creates a one-dimensional array and then
+	populates it with a non-ordered list of names. Then it displays the array, it
+	calls the sort function from the Library, and displays the array again in sorted
+	order.
+	
+	Xbase Code Sample
+	-----------------
+	
+	  *
+	  *Begin Program code
+	  *
+	  CLEAR
+	  SET LIBRARY TO MYSORT.FLL
+	  DIMENSION marray(5)
+	  STORE "ZACH" TO marray(1)
+	  STORE "CHRIS" TO marray(2)
+	  STORE "ANDY" TO marray(3)
+	  STORE "TERRY" TO marray(4)
+	  STORE "BOB" TO marray(5)
+	  DISPLAY MEMORY LIKE ma*
+	  =mysort(@marray)
+	  DISPLAY MEMORY LIKE ma*
+	  *
+	  *End Program code
+	
+	The C code used in the library routines is also fairly simple. The main function
+	in the library (the one registered in Visual FoxPro) is mysort. Mysort simply
+	receives an array reference and fills a Locator structure to point to that
+	array. Then it determines if the array is one or two dimensional by using the
+	_ALen() function. Then the _ALen() function is used to determine the number of
+	elements in the array and to set the max value for the last element.
+	
+	SelectSort is a recursive function that receives a pointer to the array and a
+	short that determines the imposed end of the array. SelectSort calls itself
+	until the imposed end of the array is the first element.
+	
+	FindMax receives a pointer to the array and the number of the imposed last
+	element. It assumes that the first element has the maximum value in the array
+	and compares it to the remaining elements to find a higher value. FindMax
+	returns the position of the element with the highest value. The values are
+	compared using the StrCmp() function on the dereferenced pointers to the array
+	elements.
+	
+	Exchange receives a pointer to the array and two short values representing two
+	array elements to swap positions. This function uses _Load() to fill value
+	structures for both elements then uses _Store() to place those values into the
+	other position in the array.
+	
+	C Code Sample
+	-------------
+	
+	  #include <pro_ext.h>
+	
+	  void Exchange(Locator FAR Exloc, short x_sub, short y_sub)
+	  {
+	     Value FAR      tmpValx, tmpValy;
+	     int            Exerrcode;
+	
+	     Exloc.l_sub1=x_sub;
+	     if (Exerrcode = _Load(&Exloc, &tmpValx))
+	        _Error(Exerrcode);
+	     else
+	     {
+	        Exloc.l_sub1=y_sub;
+	        if (Exerrcode = _Load(&Exloc, &tmpValy))
+	           _Error(Exerrcode);
+	        else
+	        {
+	           Exloc.l_sub1=x_sub;
+	           if (Exerrcode=_Store(&Exloc, &tmpValy))
+	               _Error(Exerrcode);
+	           Exloc.l_sub1=y_sub;
+	           if (Exerrcode=_Store(&Exloc, &tmpValx))
+	               _Error(Exerrcode);
+	        }
+	     }
+	     _FreeHand(tmpValy.ev_handle);
+	     _FreeHand(tmpValx.ev_handle);
+	      }
+	
+	  short FindMax(Locator FAR Findloc, short MaxPos)
+	  {
+	     int         loop, max, result, errcode;
+	     Value FAR   MaxVal, Candidate;
+	
+	     max=1;
+	     Findloc.l_sub2=1;
+	     for (loop=2; loop<=MaxPos; loop++)
+	     {
+	        Findloc.l_sub1=max;
+	        if (errcode= _Load(&Findloc, &MaxVal))
+	           _Error(errcode);
+	         else
+	        {
+	           Findloc.l_sub1=loop;
+	           if (errcode= _Load(&Findloc, &Candidate))
+	              _Error(errcode);
+	            else
+	            {
+	              _HLock(MaxVal.ev_handle);
+	              _HLock(Candidate.ev_handle);
+	              result =
+	   _StrCmp(_HandToPtr(MaxVal.ev_handle),_HandToPtr(Candidate.ev_handle));
+	              if (result < 0)
+	              {
+	                 max=loop;
+	              }
+	              _HUnLock(MaxVal.ev_handle);
+	              _HUnLock(Candidate.ev_handle);
+	              _FreeHand(MaxVal.ev_handle);
+	              _FreeHand(Candidate.ev_handle);
+	           }
+	        }
+	     }
+	     return max;
+	  }
+	
+	  void SelectSort(Locator FAR SSloc, short LastPos)
+	  {
+	     int      max;
+	
+	     if (LastPos > 1)
+	     {
+	        max=FindMax(SSloc,LastPos);
+	        Exchange(SSloc,(short)max,LastPos);
+	        SelectSort(SSloc,(short)(LastPos-1));
+	     }
+	  }
+	
+	  void MySort(ParamBlk FAR *pblk)
+	  {
+	     Locator FAR      loc;
+	     int              max;
+	
+	     loc = pblk->p[0].loc;
+	
+	     if (_ALen(pblk->p[0].loc.l_NTI,AL_SUBSCRIPT2) == 0)
+	        loc.l_subs = 1;
+	     else
+	        loc.l_subs = 2;
+	
+	     max=_ALen(pblk->p[0].loc.l_NTI,AL_ELEMENTS);
+	
+	     SelectSort(loc,(short)max);
+	
+	  }
+	
+	  FoxInfo myFoxInfo[] = {
+	     {"MYSORT", (FPFI) MySort, 1, "R"},
+	  };
+	  FoxTable _FoxTable = {
+	     (FoxTable FAR *) 0, sizeof(myFoxInfo)/sizeof(FoxInfo), myFoxInfo
+	  };
+	
+	Additional query words: VFoxWin
+	
+	======================================================================
+	Keywords          : kbcode 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+	Version           : WINDOWS:3.0
+	
+	=============================================================================
+	

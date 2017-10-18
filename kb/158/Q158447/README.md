@@ -1,0 +1,193 @@
+---
+layout: page
+title: "Q158447: How to Run a Program Only Once After Unattended Setup of WinNT"
+permalink: kb/158/Q158447/
+---
+
+## Q158447: How to Run a Program Only Once After Unattended Setup of WinNT
+
+	Article: Q158447
+	Product(s): Microsoft Windows NT
+	Version(s): winnt:4.0
+	Operating System(s): 
+	Keyword(s): kbsetup kbOPK kbSBKkbfaq
+	Last Modified: 10-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 4.0 
+	- Microsoft Windows NT Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	
+	SUMMARY
+	=======
+	
+	The unattended setup mode of Windows NT 4.0 does not offer a way to run a
+	program once the setup is complete. Nevertheless, this functionality may be very
+	useful if you want to set up other components on your system after the
+	completion of the unattended setup (for example, running a batch file, launching
+	a hands-free service pack update, or starting the setup routine of other
+	products).
+	
+	This article describes how to run a program once (after an unattended setup has
+	completed).
+	
+	MORE INFORMATION
+	================
+	
+	Automatically running any kind of program after an unattended setup has
+	completed is not normally possible. The following steps explain how to run a
+	program only once after an unattended setup has completed.
+	
+	Windows NT must be installed with the AutoLogon option enabled so that the system
+	automatically logs itself onto the network immediately after setup is complete,
+	thus allowing a session to be automatically opened and a specific program to be
+	launched.
+	
+	For additional information about enabling AutoLogon for initial logon after
+	running Windows NT 4.0 Setup, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q157361 How to Automatically Log On After an Unattended Setup
+	
+	To set up Windows NT 4.0 and to run a program automatically after the setup has
+	completed, use one of the following methods:
+	
+	Method 1
+	--------
+	
+	1. Create a new share on a network server and then copy the i386 folder (or
+	  appropriate platform folder) from the Windows NT 4.0 compact disc to the new
+	  share.
+	
+	2. Obtain the Regini.exe program from the Windows NT 4.0 Resource Kit and place
+	  it in the shared network installation point.
+	
+	3. Using a text editor (such as Notepad), create a text file and name it
+	  Runonce.ini. Save the file to the shared network installation point. In this
+	  file, create the following entries (making sure to place a carriage return at
+	  the end of each line):
+	
+	  \Registry\Machine
+	          Software
+	            Microsoft
+	              Windows
+	                CurrentVersion
+	                  Run
+	                    RUNBATCH = REG_SZ "BATCH.CMD"
+	
+	4. Add the following entry to the [Unattended] section of the Unattend.txt
+	  file:
+	
+	  OEMPreinstall = Yes
+	
+	5. Add the following entries to the [GUIUnattended] section of the Unattend.txt
+	  file:
+	
+	  DetachedProgram = "%SystemRoot%\System32\REGINI.EXE"
+	  Arguments = "%SystemRoot%\System32\RUNONCE.INI"
+	
+	  For additional information about parameters for the Unattend.txt file, please
+	  see the following article in the Microsoft Knowledge Base:
+	
+	  Q155197 Unattended Setup Parameters for Unattend.txt File
+	
+	6. Save and close the Unattend.txt file.
+	
+	7. Using a text editor, create a text file and save it to the shared network
+	  installation point as Cleanup.inf. The contents of the Cleanup.inf file must
+	  be:
+	
+	  [Version]
+	  signature="$CHICAGO$"
+	
+	  [DefaultInstall]
+	  DelReg = Delete.Reg
+	
+	  [Delete.Reg]
+	  HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\Run","RUNBATCH"
+	
+	8. Using a text editor, create a batch file and save it to the shared network
+	  installation point as Batch.cmd. This batch file can include any command, and
+	  will be run only once after the unattended setup has completed. The Batch.cmd
+	  file must also contain the following lines:
+	
+	  %SystemRoot%\System32\rundll32.exe setupapi,InstallHinfSection
+	  DefaultInstall 132 %SystemRoot%\System32\cleanup.inf
+	
+	  NOTE: The above command should be all on one line; the line is wrapped for
+	  readability.
+	
+	  Triggering the Cleanup.inf file in this manner prevents the running of the
+	  Batch.cmd file in future logons.
+	
+	9. During the first phase of the unattended setup, all system files are
+	  temporarily copied to C:\$Win_nt$.~ls and C:\$Win_nt$.~bt. The Dosnet.inf
+	  lists the files that have to be copied to the system.
+	
+	  Therefore, the next step is to edit the Dosnet.inf and add the following lines
+	  to the end of the [Files] section:
+	
+	  d1,REGINI.EXE
+	  d1,RUNONCE.INI
+	  d1,BATCH.CMD
+	  d1,CLEANUP.INF
+	
+	10. The Txtsetup.sif file is used during the text-mode phase of the unattended
+	  setup. This file tells the setup process which files have to be copied to
+	  the hard disk.
+	
+	  The next step is to modify the Txtsetup.sif file in the shared network
+	  installation point. Add the following lines to the end of the
+	  [SourceDisksFiles] section of the Txtsetup.sif file:
+	
+	  BATCH.CMD   = 1,,,,,,,2,0,0
+	  REGINI.EXE  = 1,,,,,,,2,0,0
+	  RUNONCE.INI = 1,,,,,,,2,0,0
+	  CLEANUP.INF = 1,,,,,,,2,0,0
+	
+	  Adding these lines causes the files above to be copied to the System32
+	  directory.
+	
+	11. Run Setup using the appropriate switches, specifying the Unattend.txt file
+	  containing the modifications discussed above.
+	
+	Method 2
+	--------
+	
+	1. Create a $oem$ directory under the I386 directory.
+	
+	2. Create a registry file by exporting the Runonce.ini file out of the registry.
+	  The file should look similar to the following:
+	
+	  REGEDIT4
+	  [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce]
+	  @="c:\\WinNT\\System32\\Calc.exe"
+	
+	  NOTE: Replace "C:\\WinNT\\Sytem32\\Calc.exe" with whatever command you want to
+	  run. Give the file a descriptive name, such as Runonce.reg.
+	
+	3. Copy Regedit.exe to the $oem$ directory.
+	
+	4. Use a text editor to create a file named Cmdlines.txt. In this file, add the
+	  following lines:
+	
+	  [commands]
+	  ".\regedit /s runonce.reg"
+	
+	5. In the Unattend.txt file, make sure you have OEMPREINSTALL set to "Yes".
+	
+	6. Run unattended setup for Windows NT 4.0.
+	
+	Additional query words: 4.00 prodnt deployment sysdiff unattended Setup Install
+	
+	======================================================================
+	Keywords          : kbsetup kbOPK kbSBK kbfaq
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+	Version           : winnt:4.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

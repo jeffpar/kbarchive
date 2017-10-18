@@ -1,0 +1,133 @@
+---
+layout: page
+title: "Q286404: HOWTO: Add HTML Help to a Visual Basic 6.0 Application Wizard Ap"
+permalink: kb/286/Q286404/
+---
+
+## Q286404: HOWTO: Add HTML Help to a Visual Basic 6.0 Application Wizard Ap
+
+	Article: Q286404
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 1.2,1.21,1.22,1.3,1.31,1.32,6.0
+	Operating System(s): 
+	Keyword(s): kbAPI kbCompiler kbHTMLHelp
+	Last Modified: 16-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+	- Microsoft HTML Help, versions 1.2, 1.21, 1.22, 1.3, 1.31, 1.32 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes how to add HTML Help to an application that was created
+	using the Visual Basic 6.0 Application Wizard. When you choose to add Help to
+	your menu or to your toolbar, the application wizard adds the necessary code for
+	Winhelp. You need to change the code so that HTML Help is used instead of
+	Winhelp.
+	
+	MORE INFORMATION
+	================
+	
+	After you build your application by using the application wizard, make the
+	following changes:
+	
+	1. Set the Project Properties Help filename. Select Project Properties on the
+	  Project menu to open the Project Properties dialog box. In the Help File Name
+	  field of the General tab, enter the path and file name for your application's
+	  HtmlHelp file. (You can also programmatically set the Help file. For more
+	  information see the MSDN topic "Adding Help To Your Application" in the
+	  "References" section.)
+	
+	2. Replace the Winhelp declaration with an HTML Help declaration. To do this,
+	  replace the line that the wizard put at the top of frmMain.
+	
+	Replace this code
+	
+	  Private Declare Function OSWinHelp% Lib "user32" Alias "WinHelpA" (ByVal hwnd&, ByVal HelpFile$, ByVal wCommand%, _
+	                                                                     dwData As Any)
+	
+	with this code:
+	
+	  Private Declare Function HtmlHelp Lib "hhctrl.ocx" Alias "HtmlHelpA" (ByVal hwndCaller As Long, ByVal pszFile As String, _
+	                                                                        ByVal uCommand As Long, ByVal dwData As Long) As Long
+	
+	3. On the next line, add the HTML Help commands you are using. For example:
+	
+	  Private Const HH_DISPLAY_TOPIC = &H0
+	  Private Const HH_HELP_CONTEXT = &HF
+	
+	NOTE: For a complete list of all the commands, see the htmlhelp.h file in the
+	"include" folder where the HTML Help Workshop is installed. For information
+	about the command syntax, see the HTML Help online Help, API Reference.
+	
+	4. If you chose to add Help to your menu during the application wizard, the
+	  wizard adds two methods, mnuHelpSearchForHelpOn_Click and
+	  mnuHelpContents_Click.
+	
+	  You need to replace the calls to Winhelp with calls to the HTML Help API in
+	  these methods. (The exact syntax of the commands varies depending on which
+	  commands you are using. See the HTML Help online Help for additional
+	  information regarding the API commands.)
+	
+	For example, you could replace this code
+	
+	  nRet = OSWinHelp(Me.hwnd, App.HelpFile, 261, 0)
+	
+	with this code:
+	
+	  dim nRet As Long
+	
+	  nRet = HtmlHelp(Me.hwnd, App.HelpFile, HH_DISPLAY_TOPIC, 0)
+	
+	5. If you chose to add Help as a toolbar button during the Application Wizard,
+	  the Wizard adds this to the tbToolBar_ButtonClick method:
+	
+	  Case "Help"
+	  'ToDo: Add 'Help' button code.
+	  MsgBox "Add 'Help' button code."
+	
+	Remove the MsgBox call and add a call to the HTML Help API, such as:
+	
+	  dim nRet As Long
+	  nRet = HtmlHelp(Me.hwnd, App.HelpFile, HH_DISPLAY_TOPIC, 0)
+	
+	6. If you choose to add "Help What's This" as a toolbar button, then the wizard
+	  adds this to your code:
+	
+	  Case "Help What's This"
+	  'ToDo: Add 'Help What's This' button code.
+	  MsgBox "Add 'Help What's This' button code."  
+	
+	Remove the MsgBox call and add a call to the HTML Help API using the
+	'HH_HELP_CONTEXT' command, such as:
+	
+	   
+	  hwndHelp = HtmlHelp(Me.hWnd, App.HelpFile, HH_HELP_CONTEXT, myContextID)
+	
+	NOTE: Adding "What's This" help requires additional steps that are not covered in
+	this article. For more information see the MSDN topic: "Adding Support for
+	What's This Help".
+	
+	REFERENCES
+	==========
+	
+	MSDN topic: "Adding Help To Your Application"
+	
+	  http://msdn.microsoft.com/library/devprods/vs6/vbasic/vbcon98/vbconAddingHelpToYourApplication.htm
+	
+	HTML Help Workshop Online Help
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbAPI kbCompiler kbHTMLHelp 
+	Technology        : kbVBSearch kbHTMLHelpSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600 kbHTMLHelp120 kbHTMLHelp121 kbHTMLHelp122 kbHTMLHelp130 kbHTMLHelp131 kbHTMLHelp132
+	Version           : :1.2,1.21,1.22,1.3,1.31,1.32,6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

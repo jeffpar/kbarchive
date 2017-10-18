@@ -1,0 +1,141 @@
+---
+layout: page
+title: "Q231327: How to Determine If Windows 95 Year 2000 Upgrade Is Installed"
+permalink: kb/231/Q231327/
+---
+
+## Q231327: How to Determine If Windows 95 Year 2000 Upgrade Is Installed
+
+	Article: Q231327
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:95
+	Operating System(s): 
+	Keyword(s): kbtool kbYear2000 win95
+	Last Modified: 13-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 95 
+	- Microsoft Windows 95 OEM Service Release, versions 1.0, 2.0, 2.1, 2.5 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The Windows 95 Year 2000 Upgrade is not displayed in the Add/Remove Programs
+	tool after it is installed. It is not displayed because it should not be
+	removed.
+	
+	To determine whether the upgrade is installed, check for the presence of the
+	Y2kw95.txt file in the Windows folder. You can also check the following files to
+	verify that the files are the correct ones:
+	
+	File           Date      Time     Size      Version
+	----------------------------------------------------------
+	Asycfilt.dll   3/08/99   12:02p   147,728   2.40.4275.1
+	Cfgmgr32.dll   2/19/99   10:55a    22,528   4.10.1422
+	Comctl32.dll   2/19/99   10:55a   450,832   4.72.3612.1702
+	Command.osr    2/19/99   10:55a    93,974   NA
+	Command.w95    2/19/99   10:55a    93,034   NA
+	Dialer.exe     2/19/99   10:55a    68,992   4.10.2000
+	Mfc40.dll      2/19/99   10:55a   933,888   4.1.6140 
+	Msvcrt40.dll   2/19/99   10:55a   326,656   4.22.0000
+	Oleaut32.dll   3/08/99   12:02p   598,288   2.40.4275
+	Olepro32.dll   3/08/99   12:02p   164,112   5.0.4275
+	Regtlib.exe    3/08/99   12:02p    40,960   6.00.8191
+	Stdole2.tlb    3/08/99   12:02p    17,920   2.40.4275
+	Setupapi.dll   2/19/99   10:55a   342,288   4.00
+	Shell32.dll    2/19/99   10:55a   817,664   4.00.955
+	Timedate.cpl   2/19/99   10:55a    48,640   4.00.951
+	Vdhcp.386      2/19/99   10:55a    28,053   4.00.956
+	Winfile.exe    2/19/99   10:55a   155,456   4.00.951
+	Xcopy.osr      2/19/99   10:55a     3,878   NA
+	Xcopy.w95      2/19/99   10:55a     3,878   NA
+	Xcopy32.osr    2/19/99   10:55a    41,472   4.00.1112
+	Xcopy32.w95    2/19/99   10:55a    40,960   4.00.951
+	Y2kw95.txt     2/19/99   10:55a    23,611   NA
+	
+	NOTE: Files with an .osr or .w95 extension are specific to the Windows version
+	and are renamed with the appropriate extension as shown below:
+	
+	  Command.com
+	  Xcopy.exe
+	  Xcopy32.exe
+	
+	IMPORTANT: If other products or updates have been applied, certain files may not
+	be replaced by this update. For example, if you have Microsoft Internet Explorer
+	4 with the Windows Desktop Update component installed (or you install it when
+	you are prompted by the Year 2000 Update), the Shell32.dll file listed above is
+	not installed with the Windows 95 Year 2000 Update installation. Manually
+	replacing the Internet Explorer 4 version of the Shell32.dll file with the
+	version included in this update can result in "fatal" problems at Windows
+	startup or a blank desktop. Under no circumstances should a file that is not
+	overwritten by the Year 2000 Update be manually updated. Because of this,
+	Microsoft recommends that if you are unsure of the status of the update that you
+	simply reinstall it to verify its integrity. Later versions of any of the above
+	files will not be updated by the Year 2000 Update. This behavior is by design.
+	
+	MORE INFORMATION
+	================
+	
+	A previous version of the Windows 95 Year 2000 Update (named Win95y2k.exe), only
+	updates the Winfile.exe and Command.com files and adds "Windows 95 Year 2000
+	Update" to the Add/Remove Programs tool in Control Panel. The latest version of
+	this software update (W95y2k.exe) removes this item from the Add/Remove Programs
+	tool.
+	
+	A more comprehensive Year 2000 Update (named W95y2k.exe) has since been released
+	(for additional details and download information, see Q225050 as noted in the
+	"References" section below). In addition to this, a follow-up named Windows 95
+	Year 2000 Corporate Update (Corpupd.exe) has also been made available (for
+	additional details and download information, see Q229862 as noted in the
+	"References" section below).
+	
+	Activation of the "Windows 95 Year 2000 Update" option in the Add/Remove Programs
+	tool results in the computer becoming non-year 2000 compliant. For this reason,
+	Microsoft recommends that you obtain and install the Windows 95 Year 2000
+	Corporate Update.
+	
+	To determine which version of the update is installed, check the Add/Remove
+	Programs tool. If the update is listed, the older patch is installed and should
+	be updated. Check for the Y2kw95.txt file in the Windows folder to verify that
+	the newer update is installed.
+	
+	Note that the Microsoft Year 2000 Product Analyzer tool available on the
+	Microsoft Year 2000 Readiness Disclosure & Resource Center Web site was
+	released before the Windows 95 Year 2000 Upgrade and does not detect the update
+	after it is installed. Checking file versions is the only reliable way to detect
+	that the update is installed.
+	
+	Microsoft Knowledge Base article Q225050 and Q229862, as noted in the
+	"References" section below, contain additional information about these Windows
+	95 year 2000 updates and the registry.
+	
+	The W95y2k.exe file is for all versions of Windows 95, and automatically installs
+	the appropriate files for the version of Windows 95 you are using.
+	
+	REFERENCES
+	==========
+	
+	For additional information about how to download the Windows 95 Year 2000
+	Update, please see the following article in the Microsoft Knowledge Base:
+	
+	  Q225050 Availability of the Windows 95 Year 2000 Update
+	
+	For additional information about how to download the Windows 95 Year 2000
+	Corporate Update, please see the following article in the Microsoft Knowledge
+	Base:
+	
+	  Q229862 Microsoft Windows 95 Year 2000 Corporate Update
+	
+	Additional query words: y2k
+	
+	======================================================================
+	Keywords          : kbtool kbYear2000 win95 
+	Technology        : kbWin95search kbOPKSearch kbZNotKeyword3 kbWin95OPKOSR25 kbWin95OPKOSR210
+	Version           : WINDOWS:95
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

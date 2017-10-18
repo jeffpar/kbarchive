@@ -1,0 +1,90 @@
+---
+layout: page
+title: "Q96826: Delete Sentry Automatically Purges Files When Necessary"
+permalink: kb/096/Q96826/
+---
+
+## Q96826: Delete Sentry Automatically Purges Files When Necessary
+
+	Article: Q96826
+	Product(s): Microsoft Disk Operating System
+	Version(s): MS-DOS:6.0,6.2,6.21,6.22
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 23-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft MS-DOS operating system versions 6.0, 6.2, 6.21, 6.22 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	When Microsoft Undelete is using the Delete Sentry level of protection, files
+	that are deleted are stored in a hidden SENTRY directory in the root of the
+	drive. These files are automatically purged from the drive under the following
+	conditions:
+	
+	- MS-DOS requires the disk space. For example, if the drive is full and you are
+	  saving updates to a data file, enough files are removed from the hidden
+	  SENTRY directory so that you can save your data.
+	
+	- Files in the hidden SENTRY directory are taking up too much space on the
+	  drive. By default, Delete Sentry allows files to take a maximum of 20% of
+	  total the drive space.
+	
+	- Files in the hidden SENTRY directory are too old. By default, files are saved
+	  for seven days. Purging of old files occurs when Microsoft Undelete is loaded
+	  (typically from the AUTOEXEC.BAT file).
+	
+	In each case, files are purged in chronological order (oldest first).
+	
+	MORE INFORMATION
+	================
+	
+	You can adjust the maximum amount of disk space allowed for deleted files or the
+	number of days to save deleted files.
+	
+	To change options using Microsoft Undelete for Windows:
+	
+	1. From the Options menu, choose Configure Delete Protection.
+	
+	2. Select Delete Sentry and choose the OK button.
+	
+	3. In the Configure Delete Sentry dialog box, set the Maximum Number Of Days To
+	  Save Deleted Files and Maximum % Of Disk Space For Deleted Files.
+	
+	4. Choose the OK button.
+	
+	  -or-
+	
+	  Use a text editor to change the [Configuration] section of the UNDELETE.INI
+	  file:
+	
+	  1. Set percentage= to the maximum percentage of disk space for deleted files.
+	
+	  2. Set days= to the maximum number of days to save deleted files. For
+	     example:
+	
+	  [configuration]
+	  days=5
+	  percentage=50
+	
+	The next time you load Undelete, the new settings are active.
+	
+	For more information, see "Purging Files Protected by Delete Sentry" in the
+	"Managing Your System" chapter of the "Microsoft MS-DOS 6 User's Guide," the
+	"Configuring Delete Sentry" topic in Undelete for Windows Help, or type "help
+	undelete" (without the quotation marks) and refer to the Notes section.
+	
+	Additional query words: 6.22 6.00 6.20
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600
+	Version           : MS-DOS:6.0,6.2,6.21,6.22
+	
+	=============================================================================
+	

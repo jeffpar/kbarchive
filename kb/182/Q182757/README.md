@@ -1,0 +1,84 @@
+---
+layout: page
+title: "Q182757: WD97: Tables Appear Incomplete in File Open Preview"
+permalink: kb/182/Q182757/
+---
+
+## Q182757: WD97: Tables Appear Incomplete in File Open Preview
+
+	Article: Q182757
+	Product(s): Word 97 for Windows
+	Version(s): WINDOWS:97
+	Operating System(s): 
+	Keyword(s): kbdta word97 kbtable
+	Last Modified: 14-NOV-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Templates and documents that contain tables may appear incomplete in the preview
+	area of the Open dialog box (on the File menu, click Open, and then click the
+	Preview button on the toolbar).
+	
+	One of the following symptoms may occur:
+	
+	- The table is truncated on the left edge, right edge or the bottom.
+	
+	- The preview area appears blank.
+	
+	- A series of random table borders are displayed.
+	
+	CAUSE
+	=====
+	
+	This problem occurs when the document or template has been saved with the Save
+	Preview Picture check box selected (on the File menu, click Properties).
+	
+	WORKAROUND
+	==========
+	
+	To work around this problem, turn off the Save Preview Picture property for the
+	document, by following these steps:
+	
+	1. On the File menu, click Properties.
+	
+	2. Click to clear the Save Preview Picture check box, and then click OK.
+	
+	3. Save the document.
+	
+	MORE INFORMATION
+	================
+	
+	You must set the Save Preview Picture property individually for each document.
+	The Save Preview Picture property is a document property, and not a global or
+	"sticky" property of Microsoft Word. This property is off by default.
+	
+	If you set the Save Preview Picture property, Word saves a graphic image of the
+	first full-page in the file header. Word then shows this image in the preview
+	area of the Open dialog box.
+	
+	If you do not set the Save Preview Picture property, Word reads the document, and
+	displays the upper-left corner of the document in the preview area. It takes
+	Word longer to do this than to display a saved preview picture.
+	
+	For more information about the Save Preview Picture property, see the following
+	article in the Microsoft Knowledge Base:
+	
+	  Q182726 WD97: Save Preview Picture Setting Is Document Specific
+	
+	Additional query words: entire missing cut off blanked out blank cannot preview
+	
+	======================================================================
+	Keywords          : kbdta word97 kbtable 
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : WINDOWS:97
+	Issue type        : kbprb
+	
+	=============================================================================
+	

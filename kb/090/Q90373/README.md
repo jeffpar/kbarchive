@@ -1,0 +1,70 @@
+---
+layout: page
+title: "Q90373: ClipBook Viewer: Start Application on Connect"
+permalink: kb/090/Q90373/
+---
+
+## Q90373: ClipBook Viewer: Start Application on Connect
+
+	Article: Q90373
+	Product(s): Microsoft Windows 3.x Retail Product
+	Version(s): WINDOWS:3.1,3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 14-OCT-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows for Workgroups versions 3.1, 3.11 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The Windows for Workgroups ClipBook Viewer offers the option to "start
+	application on connect" when a page is shared. This article describes what that
+	means and when it should be used.
+	
+	MORE INFORMATION
+	================
+	
+	In addition to static information such as a picture or text, some ClipBook pages
+	contain a reference to the application that the information originated in. If
+	you use the Paste Link option to paste the contents of this kind of ClipBook
+	page into an application that supports Dynamic Data Exchange (DDE) or OLE, you
+	establish a DDE or OLE link to the application that created the original
+	information. The application that the page is paste linked into is the "client"
+	application, while the application that contains the original information is the
+	"server" application. While this link is active, the client application receives
+	any updates to the information if it changes in the server application.
+	
+	For a link to be established, the server application must be running. The "start
+	application on connect" check box simply tells the system that it is OK to try
+	to start this application on your machine when someone on another machine
+	attempts to establish such a link. If you only want to share information that
+	you are currently working on, but don't want your work interrupted while the
+	system restarts the application at some later time, you should not check this
+	box. If you are sharing information of a more lasting interest or information
+	that is an important part of other documents in the workgroup, you should check
+	this box so that you don't have to remember to have this application running at
+	all times.
+	
+	NOTE: For the system to start your application, your application must be either:
+	
+	- On the PATH if the link that is being established is a DDE link
+	
+	  -or-
+	
+	- Registered as an OLE server in the registration database if the link that is
+	  being established is an OLE link.
+	
+	Additional query words: 3.10 3.11
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbWFWSearch kbWFW310 kbWFW311
+	Version           : WINDOWS:3.1,3.11
+	
+	=============================================================================
+	

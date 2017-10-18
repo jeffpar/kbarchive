@@ -1,0 +1,149 @@
+---
+layout: page
+title: "Q270589: BUG: Run-Time ErrMsg When Passing Array of Dictionary Objects"
+permalink: kb/270/Q270589/
+---
+
+## Q270589: BUG: Run-Time ErrMsg When Passing Array of Dictionary Objects
+
+	Article: Q270589
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 6.0
+	Operating System(s): 
+	Keyword(s): kbActiveX kbVBp600 kbGrpDSVB kbDSupport
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	You have a Visual Basic ActiveX DLL that has a method that takes an array of
+	Scripting Dictionary Objects as an argument. It may work fine when your Visual
+	Basic client is run in the Visual Basic integrated development environment (IDE)
+	by using this method, but when you run it as a compiled application, you get the
+	following run-time error message:
+	
+	  Run-time error '-2147417848 (80010108)':
+	  Method '~' of object '~' failed
+	
+	This only occurs when you use late binding to call the method.
+	
+	
+	RESOLUTION
+	==========
+	
+	Use early binding to work around the problem.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	Steps to Create Server:
+	
+	1. Create an ActiveX DLL project with Visual Basic. Class1 is created by
+	  default.
+	
+	2. Change the project name to MyServer.
+	
+	3. On the Project menu, select References, select Microsoft Scripting Runtime,
+	  and then click OK.
+	
+	4. Copy the following code into Class1:
+	
+	  Option Explicit
+	
+	  Public Function Test(ByVal strName As String, objContentsDic() As Dictionary) As String
+	      Test = strName
+	  End Function
+	
+	5. Save and compile the project. MyServer.dll is generated and automatically
+	  registered.
+	
+	Steps to Create Visual Basic Client:
+	
+	1. Create a Standard EXE project with Visual Basic. Form1 is created by default.
+	
+	2. On the Project menu, select References, select Microsoft Scripting Runtime,
+	  and then click OK.
+	
+	3. Add a Command Button to Form1.
+	
+	4. Add the following code to Form1:
+	
+	  Option Explicit
+	
+	  Private Sub Command1_Click()
+	      Dim arrDict(1 To 3) As Dictionary
+	      Dim strReturn As String
+	      Dim obj As Object
+	      
+	      Dim x As Integer
+	      For x = 1 To 3
+	          Set arrDict(x) = New Dictionary
+	          arrDict(x).Add "DicElement" & x, x
+	      Next
+	      
+	      Set obj = CreateObject("MyServer.Class1")
+	      strReturn = obj.Test("test it", arrDict)
+	      MsgBox strReturn
+	  End Sub
+	
+	5. Press the F5 key to run the project, and then click the Command Button. You
+	  may see a message box displaying the words:
+	
+	  test it
+	
+	  or else you see the following error message:
+	
+	  Run-time error '-2147417848 (80010108)':
+	  Method 'Test' of object '_Class1' failed
+	
+	6. Compile the project into project1.exe. Double-click project1.exe in the
+	  Windows explorer to run it. Click the Command Button and note the following
+	  error message:
+	
+	  Run-time error '-2147417848 (80010108)':
+	  Method '~' of object '~' failed
+	
+	7. Return to the Visual Basic IDE for the client application.
+	
+	8. On the Project menu, select References, select MyServer.dll, and then click
+	  OK.
+	
+	9. Change the following code line
+	
+	      Dim obj As Object
+	
+	  to be this code line:
+	
+	      Dim obj As MyServer.Class1
+	
+	  This change ensures that early binding is used.
+	
+	10. Compile the project, run it again, and note that it works as expected.
+	
+	Additional query words: -2147417848 80010108 project1 myserver
+	
+	======================================================================
+	Keywords          : kbActiveX kbVBp600 kbGrpDSVB kbDSupport 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+	Version           : :6.0
+	Issue type        : kbbug
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

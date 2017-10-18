@@ -1,0 +1,91 @@
+---
+layout: page
+title: "Q128224: How to Build 16- or 32-bit DRVSETUP.EXE by Using Visual C++"
+permalink: kb/128/Q128224/
+---
+
+## Q128224: How to Build 16- or 32-bit DRVSETUP.EXE by Using Visual C++
+
+	Article: Q128224
+	Product(s): Microsoft C Compiler
+	Version(s): 1.51,1.52,1.52b,1.52c; winnt:2.0,2.1,2.2
+	Operating System(s): 
+	Keyword(s): kbDatabase kbMFC kbODBC kbVC
+	Last Modified: 29-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual C++, versions 1.51, 1.52, 1.52b, 1.52c 
+	- Microsoft Visual C++, versions 2.0, 2.1, 2.2 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article gives you step-by-step instructions for building a 16- or 32-bit
+	DRVSETUP.EXE by using Visual C++.
+	
+	NOTE: When DRVSETUP.EXE is built by BUILD.BAT and makefile under
+	\ODBCSDK\DRVSETUP.KIT, 3d controls inside dialog boxes don't work. Buttons are
+	not displayed in the right positions. You can overcome this problem by using
+	Visual C++ Workbench and App Studio.
+	
+	MORE INFORMATION
+	================
+	
+	To build a 16-bit DRVSETUP.EXE using Visual C++ version 1.5x:
+	
+	1. Copy ODBCVER.H and CTL3D.H from \ODBCSDK\INCLUDE into \ODBCSDK\DRVSETUP.KIT;
+	
+	2. Launch App Studio. Open DRVSETUP.RC, and choose Save as from the File menu,
+	  save the file as type "Resource Files(*.res)"; and then open DRVSETUP.RES,
+	  choose Save as from the File menu, save the file as type "Resource
+	  Scripts(*.rc)". A dialog box will pop up and ask you whether or not to
+	  overwrite the old version of resource file; click OK.
+	
+	3. Launch Visual Workbench.
+	
+	4. From the Project menu, choose New to create a project named drvsetup. Add
+	  DRVSETUP.C, DRVSETUP.DEF, and DRVSETUP.RC to the project.
+	
+	5. From the Options menu, choose Project, and select Linker. Add odbcinst and
+	  ctl3ds to Input Libraries.
+	
+	6. From the Options menu, choose Directories, and add C:\ODBCSDK\INCLUDE to the
+	  beginning of the Include File Path and C:\ODBCSDK\LIB to the beginning of
+	  Library Files Path.
+	
+	7. From the Project menu, choose Build DRVSETUP.EXE.
+	
+	To build a 32-bit DRVSETUP.EXE using Visual C++ version 2.x:
+	
+	1. Copy ODBCVER.H and CTL3D.H from \ODBCSDK\INCLUDE into \ODBCSDK\DRVSETUP.KIT.
+	
+	2. Open DRVSETUP.RC and choose Save as from the File menu, save the file as type
+	  "Resource Files(*.res)"; and then open DRVSETUP.RES, choose Save as from the
+	  File menu, save the file as type "Resource Scripts(*.rc)". A dialog box will
+	  pop up and ask you whether or not to overwrite the old version of resource
+	  files. Click OK.
+	
+	3. From the File menu, choose to create a new project and name it drvsetup,
+	  setting the Project Type to Application.
+	
+	4. From the Project menu, choose Settings and then Link. Add ODBCCP32.LIB and
+	  CTL3D32S.LIB to the Object/Library Modules;
+	
+	5. From the Tools menu, choose Options and then Directories. Add
+	  C:\ODBCSDK\INCLUDE to the beginning of the Include Files path and
+	  C:\ODBCSDK\LIB32 to the beginning of the Library Files path.
+	
+	6. From the Project menu, choose Build, and build DRVSETUP.EXE.
+	
+	Additional query words: kbinf 2.00 2.10 2.20 ODBC App Studio Workbench
+	
+	======================================================================
+	Keywords          : kbDatabase kbMFC kbODBC kbVC 
+	Technology        : kbVCsearch kbAudDeveloper kbVC220 kbVC151 kbVC200 kbVC210 kbVC152 kbVC152a
+	Version           : :1.51,1.52,1.52b,1.52c; winnt:2.0,2.1,2.2
+	
+	=============================================================================
+	

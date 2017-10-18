@@ -1,0 +1,79 @@
+---
+layout: page
+title: "Q105068: Defrag May Not Be Able to Defragment a Drive 100%"
+permalink: kb/105/Q105068/
+---
+
+## Q105068: Defrag May Not Be Able to Defragment a Drive 100%
+
+	Article: Q105068
+	Product(s): Microsoft Disk Operating System
+	Version(s): MS-DOS:6.0,6.2,6.21,6.22
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 16-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft MS-DOS operating system versions 6.0, 6.2, 6.21, 6.22 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	In certain circumstances, Microsoft Defragmenter (Defrag) may be unable to
+	defragment a drive 100 percent. Even after fully defragmenting a drive, you may
+	receive a message similar to the following:
+	
+	  99% of drive C: is not fragmented.
+	  Recommended optimization method:
+	  Unfragment Files Only
+	
+	Even if you perform a full optimization, the drive may not become 100%
+	defragmented.
+	
+	CAUSE
+	=====
+	
+	This problem occurs when there are unmovable blocks (clusters) on the drive and
+	a movable file is made noncontiguous by one of these blocks. Defrag tries to fit
+	files around the unmovable blocks so that the files remain contiguous, but it is
+	not always possible to achieve a perfect fit.
+	
+	In the following simplified example, the drive has only ten clusters and three
+	files; file A has five movable clusters, file B has two unmovable clusters, and
+	file C has two unmovable clusters:
+	
+	  CLUSTER:  1   2   3   4   5   6   7   8   9   10
+	           ----------------------------------------
+	  FILE:     A   B   B   A   A   A   C   C   A
+	           ----------------------------------------
+	  STATUS:   O   X   X   O   O   O   X   X   O   O
+	
+	  CLUSTER = The cluster number on the drive.
+	  FILE    = The file that occupies the cluster.
+	  STATUS  = O : MOVABLE    X : UNMOVABLE
+	
+	In this example, files B and C cannot be moved. Because there are not five
+	contiguous, movable clusters on the drive, file A cannot be fully optimized and
+	the drive cannot be 100% defragmented.
+	
+	Although it appears you could work around this problem by making unmovable files
+	movable, doing so is not a good idea. Many programs mark a file as unmovable
+	because the program keeps track of the exact location of the file. Moving the
+	file can cause the program it is associated with to fail. For example, some
+	programs use unmovable files as part of a copy-protection scheme.
+	
+	It is better to have a slight level of fragmentation than risk moving an
+	unmovable file that should not be moved.
+	
+	Additional query words: 6.22 6.20 6.00
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600
+	Version           : MS-DOS:6.0,6.2,6.21,6.22
+	
+	=============================================================================
+	

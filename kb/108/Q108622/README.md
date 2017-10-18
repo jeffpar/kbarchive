@@ -1,0 +1,100 @@
+---
+layout: page
+title: "Q108622: How to Use AppleScript Scripts to Return Values to FoxPro"
+permalink: kb/108/Q108622/
+---
+
+## Q108622: How to Use AppleScript Scripts to Return Values to FoxPro
+
+	Article: Q108622
+	Product(s): Microsoft FoxPro
+	Version(s): MACINTOSH:2.5b,3.0b
+	Operating System(s): 
+	Keyword(s): kb3rdparty
+	Last Modified: 05-FEB-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+	- Microsoft FoxPro for Macintosh, version 2.5b 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The AppleScript language supports a RETURN statement that allows the author of a
+	script to send a result back to the calling procedure. The calling procedure can
+	be a FoxPro program, command, or procedure. Examples are provided below.
+	
+	NOTE: AppleScript is manufactured by a vendor independent of Microsoft; we make
+	no warranty, implied or otherwise, regarding this product's performance or
+	reliability.
+	
+	MORE INFORMATION
+	================
+	
+	A script, which is a series of one or more commands supported by the AppleScript
+	language, is analogous to a procedure written in Microsoft FoxPro or some other
+	high-level language. Like procedures, a script can communicate with a calling
+	program by returning a value to it. To run a script from within Microsoft FoxPro
+	for Macintosh, use the following command syntax:
+	
+	  RUNSCRIPT <AppleScript> [TO <variable> | <field>]
+	
+	If the script terminates with a RETURN statement, that value is returned to
+	FoxPro and stored in the optional parameter to the RUNSCRIPT command.
+	
+	The following example is an elementary AppleScript script that simply returns a
+	Boolean, or logical, value:
+	
+	  return TRUE
+	
+	The following example illustrates how FoxPro for Macintosh can store a value to a
+	variable named retVal from an AppleScript script named MyScript:
+	
+	  RUNSCRIPT HD:Scripts:MyScript TO retVal
+	
+	Although AppleScript supports a variety of extended types, or classes, such as
+	lists, records, and aliases, FoxPro transforms them into simple character
+	expressions when storing them.
+	
+	Since only a single value can be returned from an AppleScript script and FoxPro
+	for Macintosh does not support the passing of parameters to an AppleScript
+	script, a character expression delimited with commas or some other value is
+	recommended. Since AppleScript supports the list as a standard class, it makes
+	sense to take advantage of it to build a list of return values. For example, the
+	following AppleScript returns multiple values to the calling program by building
+	a list object:
+	
+	     set theList to {"First"}<BR/>
+	     set theList to theList & "Second"<BR/>
+	     return theList
+	
+	If you save the script, name it MyScript2, and invoke it issuing the following
+	command in the FoxPro Command window:
+	
+	  RUNSCRIPT MyScript2 TO retVal
+	
+	The list is returned to FoxPro as a character string delimited with commas. In
+	this case, the character expression "First, Last" is returned, and the
+	individual values can be returned using FoxPro's arsenal of string- manipulation
+	functions such as SUBSTR() and AT(). The following FoxPro code snippet extracts
+	the elements from retVal and stores the individual values to new variables:
+	
+	     var1 = SUBSTR(retVal,1,AT(',',retVal)-1)
+	     var2 = SUBSTR(retVAL,AT(',',retVal)+3)
+	
+	For more information about AppleScript, including a detailed explanation of the
+	language and its supported types, see the "AppleScript Developer's Kit" from
+	Apple Computer.
+	
+	Additional query words: vFoxMac FoxMac
+	
+	======================================================================
+	Keywords          : kb3rdparty 
+	Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro250bMac kbVFP300bMac
+	Version           : MACINTOSH:2.5b,3.0b
+	
+	=============================================================================
+	

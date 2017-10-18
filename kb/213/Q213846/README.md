@@ -1,0 +1,245 @@
+---
+layout: page
+title: "Q213846: INFO: Deploy Database Applications with the PDW"
+permalink: kb/213/Q213846/
+---
+
+## Q213846: INFO: Deploy Database Applications with the PDW
+
+	Article: Q213846
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 6.0
+	Operating System(s): 
+	Keyword(s): kbDAOsearch kbDeployment kbRDO kbVBp500 kbVBp600 kbGrpDSVB kbFAQ kbDSupport kbVBp600FAQ
+	Last Modified: 18-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The Microsoft Data Object Libraries may be referenced in your Visual Basic
+	project. When the Package and Deployment Wizard (PDW) is used to build the
+	installation, the PDW scans the project files and determines which dependency
+	files need to be distributed.
+	
+	This article provides the general information you need to distribute any of the
+	following Data Object Libraries with your Visual Basic project:
+	
+	- Microsoft Data Access Objects (DAO) 3.51 Object Library
+	- Microsoft Data Access Objects (DAO) 3.6 Object Library
+	- Microsoft Remote Data Object (RDO) 2.0
+	- Microsoft ActiveX Data Objects (ADO) 2.0, 2.1, 2.5, or 2.6 Library
+	
+	MORE INFORMATION
+	================
+	
+	The files are listed in the Setup's file that is created by the PDW for
+	distribution.
+	
+	For additional information on how each section in the Setup.lst file is used,
+	click the article number below to view the article in the Microsoft Knowledge
+	Base:
+	
+	  Q189743 INFO: Description of Setup.lst Sections
+	
+	The following sections describe points to be aware of when you distribute any of
+	the Data Object Libraries.
+	
+	Microsoft Data Access Objects (DAO) 3.51 Object Library
+	-------------------------------------------------------
+	
+	Intrinsic Data Control Incompatibility with Microsoft Access 2000 (Jet 4.0)
+	
+	If you use the intrinsic data control in your project and you attempt to connect
+	to a Microsoft Access 2000 database, you may receive the following error
+	message:
+	
+	  Unrecognized Database Format
+	
+	This error message occurs because the DAO generic data control is based on Jet
+	3.51 and does not recognize Jet 4.0 database formats. Access 2000 is a Jet 4.0
+	format database. Prior to Microsoft Visual Studio 6.0 Service Pack 4 (SP4), the
+	workaround for this problem was to open a recordset with DAO code, and then
+	assign it to the recordset property of a data control.
+	
+	For additional information, click the article number below to view the article in
+	the Microsoft Knowledge Base:
+	
+	  Q238401 PRB: Unrecognized Database Format Error Message When Upgrading to
+	  Access 2000
+	
+	This problem does not exist with the data control that ships with Microsoft
+	Visual Studio 6.0 Service Pack 4.
+	
+	Visual Studio 6.0 Service Pack 4 can be obtained at the Visual Studio 6.0 Service
+	Pack Web site:
+	
+	  http://msdn.microsoft.com/vstudio/sp/vs6sp4/default.asp
+	
+	Jet 3.51 OLE DB Provider Is Not Included in MDAC 2.1 or Later
+	
+	The Jet OLE DB Provider requires the version number of the provider in order to
+	connect to an Access database. If your application specifies Version 3.51 of the
+	Jet OLE DB provider in a connection string or a UDL, and you install ADO by
+	redistributing MDAC 2.1, you are likely to receive the following error message:
+	
+	  3706: ADO could not find the specified provider
+	
+	This error message occurs because MDAC 2.0 installs version 3.51 of the Jet OLE
+	DB provider while MDAC 2.1 installs version 4.0 of the Jet OLE DB Provider, but
+	does not install version 3.51.
+	
+	For additional information, click the article number below to view the article in
+	the Microsoft Knowledge Base:
+	
+	  Q197902 PRB: Jet 3.51 OLE DB Provider Is Not Installed With MDAC 2.1 or Later
+	
+	Microsoft Data Access Objects (DAO) 3.6 Object Library
+	------------------------------------------------------
+	
+	DAO version 3.6 is required for applications that use DAO to read and write to
+	Access 2000 databases. If Access 2000 (or DAO 3.6) is already installed on the
+	destination computer, then no additional steps are required. If it is not, it is
+	necessary to distribute DAO 3.6. However, there is currently no redistributable
+	for DAO 3.6. In order to redistribute DAO 3.6, it is necessary to install DCOM,
+	redistribute MDAC 2.1(GA) or later, and ensure that the DAO DLL is also
+	distributed and registered on the destination computer.
+	
+	For additional information, click the article number below to view the article in
+	the Microsoft Knowledge Base:
+	
+	  Q233002 HOWTO: Redistribute DAO 3.6
+	
+	Microsoft Remote Data Object (RDO) 2.0
+	--------------------------------------
+	
+	In order for RDO to be properly distributed and installed, ODBC must already be
+	installed on the destination computer. ODBC can be installed through the
+	odbcst32.exe file, which is located in the ODBC Folder under the SQL/i386
+	directory on Visual Basic 6.0 Disk 2. ODBC can also be installed by including
+	the MDAC redistributable in the distribution that is outlined in the
+	"References" section covering distributing ADO/MDAC. To determine all of the
+	files needed to distribute for RDO to work successfully on a computer that does
+	not have Visual Basic installed, you can generate a dependency (.dep) file with
+	the Package and Deployment Wizard. To generate a dependency file that shows the
+	files needed for RDO when running the PDW, complete the following steps:
+	
+	1. Create a Standard EXE project in Visual Basic. Form1 is created by default.
+	
+	2. Add a reference to Microsoft Remote Data Object 2.0.
+	
+	3. Save this project and run the Package and Deployment Wizard on it.
+	
+	4. Select the Package option.
+	
+	5. On the Package Type, choose Dependency File, and then proceed through the
+	  wizard to completion.
+	
+	When you are finished, you have a file with a .dep extension that can be opened
+	with Microsoft Notepad. MSRDO20.dll and its dependencies are shown in this
+	file.
+	
+	You want to ensure that these files are included with the distribution. If these
+	files are not listed on the Included Files dialog box when you run the Package
+	and Deployment Wizard, include them by clicking Add in the dialog box.
+	
+	Microsoft ActiveX Data Objects (ADO) 2.0, 2.1 or 2.5 Library
+	------------------------------------------------------------
+	
+	The PDW does not distribute mdac_typ unless there is a specific reference to an
+	ADO Library (any version) in the project.
+	
+	You can also add mdac_typ.exe manually by clicking Add in the Included Files
+	dialog box when you run the Package and Deployment Wizard. The wizard uses the
+	MDAC_Typ.exe file in the ...\Wizards\PDWizard\Redist folder. Obtain the MDAC
+	Components at the following Microsoft Web site:
+	
+	  http://www.microsoft.com/data/download.htm
+	
+	For additional information how the PDW distributes MDAC, click the article number
+	below to view the article in the Microsoft Knowledge Base:
+	
+	  Q217754 HOWTO: Control Which MDAC Version the Package and Deployment Wizard
+	  (PDW) Distributes
+	
+	The installation of Microsoft Data Access Components (MDAC) requires that DCOM be
+	already installed on the destination computer:
+	
+	- For Windows 95 computers, install DCOM95.
+	- For Windows 98 computers, install DCOM98.
+	- Download the latest version of DCOM from the following Microsoft Web page:
+	
+	  http://www.microsoft.com/com/resources/downloads.asp
+	
+	If DCOM is not already installed on the destination computer, you may receive one
+	of the following error messages:
+	
+	  Unable to load file 'msdadc.dll' to register it
+	
+	  -or-
+	
+	  DLL registration failed
+	
+	For additional information, click the article number below to view the article in
+	the Microsoft Knowledge Base:
+	
+	  Q191704 PRB: Unable to Load File to Register it During Setup
+	
+	REFERENCES
+	==========
+	
+	For additional information on distributing and installing MDAC/ADO, click the
+	article numbers below to view the articles in the Microsoft Knowledge Base:
+	
+	  Q255986 PRB: Improper Installation of MDAC May Return Error at Run Time
+	
+	  Q184265 HOWTO: Distribute ADO with the VB5 Application Setup Wizard
+	
+	For additional information on Data Report in distributed applications, click the
+	article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q248055 BUG: Run-Time Error 713 Opening Data Report in Distributed App
+	
+	For additional information on distributing the DAO JET Engine, click the article
+	numbers below to view the articles in the Microsoft Knowledge Base:
+	
+	  Q192934 PRB: Error "The Jet VBA File...Failed to Initialize When Called"
+	
+	  Q240377 HOWTO: Insure Jet 3.5 Is Installed Correctly (Part I)
+	
+	  Q245524 HOWTO: Insure Jet 3.5 Is Installed Correctly (Part II)
+	
+	  Q214854 INFO: Improved ODBC DataType Mappings with Jet 4.0
+	
+	  Q197110 ACC2000: References That You Must Set When You Work with Microsoft
+	  Access
+	
+	For additional information on DAO to ADO migration, click the article number
+	below to view the article in the Microsoft Knowledge Base:
+	
+	  Q225048 INFO: Issues Migrating from DAO/Jet to ADO/Jet
+	
+	For additional information on PDW, click the article numbers below to view the
+	articles in the Microsoft Knowledge Base:
+	
+	  Q190173 INFO: How Setup Wizard and PDW Compare File Versions and Dates
+	
+	  Q178354 INFO: How Setup Wizard and PDW Use Dependency Files
+	
+	Additional query words: 3706 odbcst32 MSRDO20 MDAC_Typ msdadc set up .lst list file
+	
+	======================================================================
+	Keywords          : kbDAOsearch kbDeployment kbRDO kbVBp500 kbVBp600 kbGrpDSVB kbFAQ kbDSupport kbVBp600FAQ kbVBP500FAQ kbATM 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600
+	Version           : :6.0
+	Issue type        : kbhowto kbprb kbinfo
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

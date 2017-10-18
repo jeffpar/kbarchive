@@ -1,0 +1,139 @@
+---
+layout: page
+title: "Q191942: PC Ext: External.exe Displays Dates Incorrectly after 1999"
+permalink: kb/191/Q191942/
+---
+
+## Q191942: PC Ext: External.exe Displays Dates Incorrectly after 1999
+
+	Article: Q191942
+	Product(s): Microsoft Mail For PC Networks
+	Version(s): WINDOWS:3.2,3.2a,3.5
+	Operating System(s): 
+	Keyword(s): kbYear2000
+	Last Modified: 08-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Mail for PC Networks, versions 3.2, 3.2a, 3.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	External.exe for DOS and External.exe for OS/2 may display the incorrect date
+	for the years following 1999. In various locations (in logs and on screen), the
+	year may be displayed incorrectly. For example: the years 2000 through 2009
+	display as 10, the years 2010 through 2019 display as 11, the years 2020 through
+	2029 display as 12, and so on. Or in some locations, the date 01/01/2000 is
+	displayed as 01/01/100.
+	
+	RESOLUTION
+	==========
+	
+	A supported fix is now available from Microsoft, but it is only intended to
+	correct the problem described in this article and should be applied only to
+	systems experiencing this specific problem.
+	
+	To resolve this problem, contact Microsoft Product Support Services to obtain the
+	fix. For a complete list of Microsoft Product Support Services phone numbers and
+	information on support costs, please go to the following address on the World
+	Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	NOTE: In special cases, charges that are normally incurred for support calls may
+	be canceled, if a Microsoft Support Professional determines that a specific
+	update will resolve your problem. Normal support costs will apply to additional
+	support questions and issues that do not qualify for the specific update in
+	question.
+	
+	MS-DOS
+	------
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	+----------------------------------------+
+	| File name    | Date    | Size          | 
+	+----------------------------------------+
+	| Async.ovl    | 7/31/98 | 372,634 bytes | 
+	+----------------------------------------+
+	| External.exe | 7/29/98 | 57,583 bytes  | 
+	+----------------------------------------+
+	| X25eicon.ovl | 7/29/98 | 396,618 bytes | 
+	+----------------------------------------+
+	
+	This hotfix has been posted to the following Internet location as Exty2k.exe:
+	
+	  ftp://ftp.microsoft.com/bussys/mail/pcmail-public/All-Y2K/
+	
+	Windows NT
+	----------
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	+----------------------------------------+
+	| File name    | Date    | Size          | 
+	+----------------------------------------+
+	| Async.ovl    | 4/15/99 | 277,040 bytes | 
+	+----------------------------------------+
+	| External.exe | 4/15/99 | 54,608 bytes  | 
+	+----------------------------------------+
+	| X25eicon.ovl | 4/15/99 | 274,880 bytes | 
+	+----------------------------------------+
+	
+	This hotfix has been posted to the following Internet location as Exty2k.exe:
+	
+	  ftp://ftp.microsoft.com/bussys/mail/pcmail-public/All-Y2K/
+	
+	OS/2
+	----
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	+----------------------------------------+
+	| File name    | Date    | Size          | 
+	+----------------------------------------+
+	| Async.ovl    | 7/29/98 | 266,642 bytes | 
+	+----------------------------------------+
+	| External.exe | 7/29/98 | 53,200 bytes  | 
+	+----------------------------------------+
+	| X25eicon.ovl | 7/29/98 | 263,986 bytes | 
+	+----------------------------------------+
+	
+	This hotfix has been posted to the following Internet location as Exty2k.exe:
+	
+	  ftp://ftp.microsoft.com/bussys/mail/pcmail-public/All-Y2K/
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the External.exe program that is
+	included with Microsoft Mail for PC Networks version 3.2, 3.2a, and 3.5 for
+	MS-DOS, Windows NT, and OS/2.
+	
+	
+	MORE INFORMATION
+	================
+	
+	For additional information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q191943 Y2K: Seconds in Time Field Incorrect after 1999
+	
+	Additional query words: Y2K compliant date mail flow MTA delivery
+	
+	======================================================================
+	Keywords          : kbYear2000 
+	Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN320a kbMailPCN350
+	Version           : WINDOWS:3.2,3.2a,3.5
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

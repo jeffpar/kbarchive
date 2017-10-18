@@ -1,0 +1,223 @@
+---
+layout: page
+title: "Q177699: HOWTO: Use NT Simple TCP/IP Services for Winsock Testing"
+permalink: kb/177/Q177699/
+---
+
+## Q177699: HOWTO: Use NT Simple TCP/IP Services for Winsock Testing
+
+	Article: Q177699
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): WINDOWS:5.0,6.0; winnt:3.51,4.0
+	Operating System(s): 
+	Keyword(s): kbnetwork kbAPI kbOSWinNT351 kbOSWinNT400 kbSDKPlatform kbVBp500 kbVBp600 kbWinsock kbG
+	Last Modified: 09-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Windows NT Server versions 3.51, 4.0 
+	- Microsoft Windows NT Workstation versions 3.51, 4.0 
+	- Microsoft Win32 Software Development Kit (SDK) 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Windows NT has a Simple TCP/IP Services service that can be used to test
+	applications that use the Winsock API and/or the Winsock Control. Rather than
+	having to create both a client and server in Visual Basic, you can test the
+	client against this service.
+	
+	A list of well-known ports available through this service can be found on an NT
+	machine in the text document C:\WINNT\SYSTEM32\DRIVERS\ETC\SERVICES.
+	
+	MORE INFORMATION
+	================
+	
+	The following sample describes how to use the Microsoft Winsock Control that
+	shipped with Visual Basic to call the Echo service and the Quote Service.
+	
+	Verify that Simple TCP/IP Services is Running
+	---------------------------------------------
+	
+	Check to see if you can contact the server you are trying to attach to by running
+	Ping <servername> at the command prompt. If the server responds, go to the
+	control panel on the server and start the Services icon. Check the list that
+	comes up for Simple TCP/IP Services.
+	
+	The Simple TCP/IP Services service must be running for these samples to work
+	correctly. If Simple TCP/IP Services is not listed, double-click Network in the
+	Control Panel.
+	
+	In Windows NT 3.51, click Add Software, choose TCP/IP Protocol and related
+	components, and click OK. In the dialog box that appears, click Simple TCP/IP
+	Services and click OK.
+	
+	In Windows NT 4.0, click Add, choose Simple TCP/IP Services, and click OK.
+	
+	The install program may ask you to provide the path to the Windows NT
+	installation CD-ROM and will require that you restart the computer when it is
+	finished.
+	
+	Using the Echo Service
+	----------------------
+	
+	1. Create a new Standard EXE project in Visual Basic.
+	
+	2. From the Projects menu, choose Components. Make sure that Microsoft Winsock
+	  Control is checked and click OK.
+	
+	3. Add a Winsock Control to the form and leave it named Winsock1.
+	
+	4. Add three CommandButtons named cmdConnect, cmdEcho, and cmdDisconnect, and
+	  then change the captions to Connect, Echo and Disconnect, respectively.
+	
+	5. Add two text boxes and leave them named Text1 and Text2, but change the
+	  MultiLine property on each to True.
+	
+	6. Add the following code to the form:
+	
+	        Option Explicit
+	        Const EchoPort = 7
+	
+	        Private Sub cmdConnect_Click()
+	           Dim temp As String
+	           temp = InputBox$("Enter a server name...", _
+	                  "Connect to the Echo Service", Winsock1.RemoteHost)
+	           If temp <> "" Then
+	           If Winsock1.State <> sckClosed Then Winsock1.Close
+	              Winsock1.RemoteHost = temp
+	              Winsock1.RemotePort = EchoPort
+	              Winsock1.LocalPort = 0
+	              Winsock1.Connect
+	           End If
+	        End Sub
+	
+	        Private Sub cmdDisconnect_Click()
+	           If Winsock1.State <> sckClosed Then Winsock1.Close
+	           cmdConnect.Enabled = True
+	           cmdDisconnect.Enabled = False
+	           cmdConnect.SetFocus
+	        End Sub
+	
+	        Private Sub cmdEcho_Click()
+	           Winsock1.SendData Text1.Text
+	           cmdEcho.Enabled = False
+	        End Sub
+	
+	        Private Sub Winsock1_Close()
+	           If Winsock1.State <> 0 Then Winsock1.Close
+	        End Sub
+	
+	        Private Sub Winsock1_Connect()
+	           cmdConnect.Enabled = False
+	           cmdEcho.Enabled = True
+	           cmdDisconnect.Enabled = True
+	        End Sub
+	
+	        Private Sub Winsock1_DataArrival(ByVal bytesTotal As Long)
+	
+	           Dim temp As String
+	           temp = String(bytesTotal, "*")
+	           Winsock1.GetData temp, vbString, bytesTotal
+	           Text2.Text = temp
+	           cmdEcho.Enabled = True
+	        End Sub
+	
+	        Private Sub Winsock1_Error(ByVal Number As Integer, _
+	                                   Description As String, _
+	                                   ByVal Scode As Long, _
+	                                   ByVal Source As String, _
+	                                   ByVal HelpFile As String, _
+	                                   ByVal HelpContext As Long, _
+	                                   CancelDisplay As Boolean)
+	           MsgBox "Error: " & Number & vbTab & Description, vbOKOnly, _
+	                  "Winsock Control 1 Error"
+	           CancelDisplay = True
+	        End Sub
+	
+	Using the Quote and Time Services
+	---------------------------------
+	
+	1. Create a new STANDARD EXE project in Visual Basic.
+	
+	2. From the Projects menu, choose Components. Make sure that Microsoft Winsock
+	  Control is checked and then click OK.
+	
+	3. Add a Winsock Control to the form and leave it named Winsock1.
+	
+	4. Add two CommandButtons named cmdQuote and cmdTime, then change the captions
+	  to Quote and Time, respectively.
+	
+	5. Add a text box and leave it named Text1, but change the MultiLine property on
+	  it to True.
+	
+	6. Add the following code to the form:
+	
+	        Const TimePort = 13, QuotePort = 17
+	        Private Sub cmdQuote_Click()
+	           Dim temp As String
+	           temp = InputBox$("Enter a server name...", _
+	                            "Get a Quote", Winsock1.RemoteHost)
+	           If temp <> "" Then
+	              If Winsock1.State <> sckClosed Then Winsock1.Close
+	              Winsock1.RemoteHost = temp
+	              Winsock1.RemotePort = QuotePort
+	              Winsock1.LocalPort = 0
+	              Winsock1.Connect
+	           End If
+	        End Sub
+	
+	        Private Sub cmdTime_Click()
+	           Dim temp As String
+	           temp = InputBox$("Enter a server name...", _
+	                            "Get the time", Winsock1.RemoteHost)
+	           If temp <> "" Then
+	              If Winsock1.State <> sckClosed Then Winsock1.Close
+	              Winsock1.RemoteHost = temp
+	              Winsock1.RemotePort = TimePort
+	              Winsock1.LocalPort = 0
+	              Winsock1.Connect
+	           End If
+	        End Sub
+	
+	        Private Sub Winsock1_Close()
+	           If Winsock1.State <> 0 Then Winsock1.Close
+	        End Sub
+	
+	        Private Sub Winsock1_Connect()
+	           Beep
+	        End Sub
+	
+	        Private Sub Winsock1_DataArrival(ByVal bytesTotal As Long)
+	           Dim temp As String
+	           temp = String(bytesTotal, " ")
+	           Winsock1.GetData temp, vbString, bytesTotal
+	           Text1.Text = temp
+	        End Sub
+	
+	        Private Sub Winsock1_Error(ByVal Number As Integer, _
+	                          Description As String, _
+	                          ByVal Scode As Long, _
+	                          ByVal Source As String, _
+	                          ByVal HelpFile As String, _
+	                          ByVal HelpContext As Long, _
+	                          CancelDisplay As Boolean)
+	           MsgBox "Error: " & Number & vbTab & Description, _
+	                  vbOKOnly, "Winsock Control 2 Error"
+	           CancelDisplay = True
+	        End Sub
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbnetwork kbAPI kbOSWinNT351 kbOSWinNT400 kbSDKPlatform kbVBp500 kbVBp600 kbWinsock kbGrpDSVB kbGrpDSNet 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search kbVBSearch kbWin32SDKSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600 kbSDKSearch kbWin32sSearch
+	Version           : WINDOWS:5.0,6.0; winnt:3.51,4.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

@@ -1,0 +1,142 @@
+---
+layout: page
+title: "Q308605: Stop 0x00000048/Stop 0x0000000A Caused By Named Pipe File System"
+permalink: kb/308/Q308605/
+---
+
+## Q308605: Stop 0x00000048/Stop 0x0000000A Caused By Named Pipe File System
+
+	Article: Q308605
+	Product(s): Microsoft Windows NT
+	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
+	Operating System(s): 
+	Keyword(s): kbenv kbtool
+	Last Modified: 08-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4, 4.0 SP5, 4.0 SP6, 4.0 SP6a 
+	- Microsoft Windows NT Workstation versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4, 4.0 SP5, 4.0 SP6, 4.0 SP6a 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	A stop 0x0000000A or stop 0x00000048 error may occur in the named pipe file
+	system (Npfs.sys).
+	
+	CAUSE
+	=====
+	
+	This problem can occur when a synchronization problem causes an on thread to
+	complete another thread's IRP. This can cause an IRP to be completed twice. This
+	problem can occur on an input/output abort or cancel.
+	
+	RESOLUTION
+	==========
+	
+	A supported fix is now available from Microsoft, but it is only intended to
+	correct the problem described in this article and should be applied only to
+	systems experiencing this specific problem.
+	
+	To resolve this problem, contact Microsoft Product Support Services to obtain the
+	fix. For a complete list of Microsoft Product Support Services phone numbers and
+	information on support costs, please go to the following address on the World
+	Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	NOTE: In special cases, charges that are normally incurred for support calls may
+	be canceled, if a Microsoft Support Professional determines that a specific
+	update will resolve your problem. Normal support costs will apply to additional
+	support questions and issues that do not qualify for the specific update in
+	question.
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	  Date        Time                Size     File name   Platform
+	  -------------------------------------------------------------
+	  5-Oct-2001  16:31p              38,512   Npfs.sys    Intel
+	
+	NOTE: Because of file dependencies, this hotfix requires Microsoft Windows NT 4.0
+	Service Pack 6a.
+	
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Windows NT 4.0.
+	
+	MORE INFORMATION
+	================
+	
+	The stack of the stop A appears to be similar to the following stack:
+	
+	ChildEBP RetAddr  Args to Child
+	f5cc6cf8 ebc51a19 00000000 826fe2c8 f5cc6d44 
+	ntkrnlmp!KiTrap0E+0x284 (FPO: [0,0] TrapFrame @ f5cc6cf8)
+	f5cc6dac 80112947 80ee2bf0 826fe2c8 00000103 
+	Npfs!NpCancelWaitQueueIrp+0x71 (FPO: [Non-Fpo])
+	f5cc6dd0 80171e47 826fe2c8 826fe2c8 8016df01 
+	ntkrnlmp!IoCancelIrp+0x6b (FPO: [Non-Fpo])
+	f5cc6df0 8017342b 8223fae4 826fe2c8 00000000 
+	ntkrnlmp!IopCancelAlertedRequest+0x2b (FPO: [Non-Fpo])
+	f5cc6e14 80173b39 80ee2bf0 826fe2c8 8223fa88 
+	ntkrnlmp!IopSynchronousServiceTail+0xed (FPO: [Non-Fpo])
+	f5cc6ea0 8016df4c 000000e8 00000000 00000000 
+	ntkrnlmp!IopXxxControlFile+0x6c1 (FPO: [Non-Fpo])
+	f5cc6ed4 801413a9 000000e8 00000000 00000000 
+	ntkrnlmp!NtFsControlFile+0x28 (FPO: [Non-Fpo])
+	f5cc6ed4 77f67a5b 000000e8 00000000 00000000 
+	ntkrnlmp!KiSystemService+0xc9 (FPO: [0,0] TrapFrame @ f5cc6f04)
+	00c0fa1c 77f162ed 000000e8 00000000 00000000 
+	ntdll!NtFsControlFile+0xb (FPO: [10,0,0])
+	00c0faac 77bf156b 001400b0 000003e8 77bf1419 
+	KERNEL32!IsThisARootDirectory+0x42 (FPO: [Non-Fpo])
+	00c0fab8 77bf1419 001400b0 001413cc 00c0fbb8 
+	rpcltc1!WaitForPipe+0xf (FPO: [1,0,0])
+	00c0fb24 77e1a23b 001413c8 00133c60 00133bf0 
+	rpcltc1!ClientOpen_91+0x3c (FPO: [Non-Fpo])
+	00c0fb74 77e1bc08 77bf4030 00133c60 00133bf0 
+	RPCRT4!TRANS_CCONNECTION__TRANS_CCONNECTION+0x8c (FPO: [Non-Fpo])
+	00c0fbbc 77e1afd3 00134874 00134888 00000001 
+	RPCRT4!OSF_CASSOCIATION__ActuallyDoBinding+0xbd (FPO: [Non-Fpo])
+	00c0fbfc 77e1be76 77dedf40 00c0fc48 00000005 
+	RPCRT4!OSF_CASSOCIATION__AllocateConnection+0x95 (FPO: [Non-Fpo])
+	00c0fc24 77e1ab52 00c0fc48 77dedf40 00c0fca2 
+	RPCRT4!OSF_BINDING_HANDLE__AllocateConnection+0x9a 
+	(FPO: [EBP 0x00c0fc4c] [2,1,4]
+	00c0fc4c 77e11101 00c0fe38 00c0fd84 77e1228f 
+	RPCRT4!OSF_BINDING_HANDLE__GetBuffer+0x28 (FPO: [Non-Fpo])
+	00c0fc58 77e1228f 00c0fe38 77dee53e 77e548ca 
+	RPCRT4!I_RpcGetBuffer+0x3a (FPO: [1,0,1])
+	00c0fc64 77e548ca 00c0fd84 0000002c 00133c80 
+	RPCRT4!NdrGetBuffer+0x26 (FPO: [3,0,1])
+	00c0ff00 77dd8d0c 77dedf88 77dee0ac 00c0ff1c 
+	RPCRT4!NdrClientCall+0x28b (FPO: [Non-Fpo])
+	3: kd> .trap f5cc6cf8
+	eax=c0000120 ebx=00000000 ecx=c0000128 edx=00000003 esi=ffffffa8 
+	edi=8011b9ad
+	eip=ebc51a19 esp=f5cc6d6c ebp=f5cc6dac iopl=0         
+	nv up ei pl nz na pe cy
+	vip=0    vif=0
+	cs=0008  ss=0010  ds=0023  es=0023  fs=0030  gs=0000             
+	efl=00010203
+	ErrCode = 00000000
+	ebc51a19 8b461c           mov     eax,[esi+0x1c]
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbenv kbtool 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTW400sp5 kbWinNTW400sp4 kbWinNTW400sp3 kbWinNTW400sp2 kbWinNTW400sp1 kbWinNTSsearch kbWinNTS400sp6 kbWinNTS400sp5 kbWinNTS400sp4 kbWinNTS400sp3 kbWinNTS400sp2 kbWinNTS400sp1 kbWinNTS400search kbWinNTS400 kbWinNTW400sp6 kbWinNTW400SP6a
+	Version           : :4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
+	Hardware          : ALPHA x86
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

@@ -1,0 +1,332 @@
+---
+layout: page
+title: "Q317636: Windows NT Server 4.0, Terminal Server Edition, SRP"
+permalink: kb/317/Q317636/
+---
+
+## Q317636: Windows NT Server 4.0, Terminal Server Edition, SRP
+
+	Article: Q317636
+	Product(s): Microsoft Windows NT
+	Version(s): 4.0 SP6
+	Operating System(s): 
+	Keyword(s): kbSecurity kbWinNT400PreSP7Fix
+	Last Modified: 30-APR-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 4.0 SP6, Terminal Server Edition 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Microsoft has released a Security Rollup Package (SRP) for Windows NT Server
+	4.0, Terminal Server Edition, that includes the functionality from the
+	Post-Windows NT 4.0 SP6a Security Rollup Package
+	(http://support.microsoft.com/support/misc/kblookup.asp?ID=299444) and the
+	security patches that are described in the "More Information" section in this
+	article. This small, comprehensive, rollup of post-Service Pack 6 (SP6) fixes
+	provides an easier mechanism for managing the rollout of security fixes.
+	
+	The SRP includes only security updates for Windows NT 4.0. It does not include
+	patches for any other products or operating systems. Microsoft Internet
+	Information Server (IIS) is not intended for use on Windows NT Server 4.0,
+	Terminal Server Edition, and is not supported. Microsoft recommends that
+	customers who run IIS 4.0 on Windows NT Server 4.0, Terminal Server Edition,
+	protect their systems by removing IIS 4.0.
+	
+	MORE INFORMATION
+	================
+	
+	For more information about the SRP, visit the following Microsoft Web site:
+	
+	  http://www.microsoft.com/technet/security/news/nt4tsesr.asp
+	
+	For additional information about actions to take before you apply the SRP, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q318587 Windows NT Server 4.0, Terminal Server Edition, Security Rollup
+	  Package Release Notes
+	
+	Packages are available from the following Microsoft Web site (if your language is
+	not listed, please check back):
+	
+	  http://www.microsoft.com/ntserver/terminalserver/downloads/critical/q317636/default.asp
+	
+	NOTE: This package requires Windows NT Server 4.0, Terminal Server Edition, SP6
+	(http://www.microsoft.com/ntserver/terminalserver/downloads/recommended/tsesp6/default.asp).
+	
+	Release Date: April 24, 2002
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. After it is posted, the file is housed on
+	secure servers that prevent any unauthorized changes to the file.
+	
+	Fixes That Are Included in the SRP
+	----------------------------------
+	
+	The SRP includes the following post-SP6 fixes that have been delivered by
+	Microsoft Security Bulletins
+	(http://www.microsoft.com/technet/treeview/default.asp?url=/technet/itsolutions/security/default.asp).
+	The SRP also includes some fixes that have not been previously described.
+	Because security bulletins are disruptive to customer's maintenance procedures,
+	Microsoft often issues them only when a security issue poses an immediate danger
+	to customer's computers. Issues that do not meet this standard are typically
+	addressed through other delivery vehicles such as service packs or, in this
+	case, the SRP.
+	
+	
+	  Q238349 Specially-Malformed Header in GET Request Creates Denial of Service
+	
+	  Q241041 Enabling NetBT to Open IP Ports Exclusively
+	
+	  Q242294 MS99-041: Security Descriptor Allows Privilege Elevation on Remote
+	  Computers
+	
+	  Q243835 MS99-046: How to Prevent Predictable TCP/IP Initial Sequence Numbers
+	
+	  Q246045 MS99-055: Malformed Resource Enumeration Arguments May Cause Named
+	  Pipes and Other System Services to Fail
+	
+	  Q247869 MS00-003: Local Procedure Call May Permit Unauthorized Account Usage
+	
+	  Q248183 Syskey Tool Reuses Keystream
+	
+	  Q248185 Security Identifier Enumeration Function in LSA May Not Handle
+	  Argument Properly
+	
+	  Q248399 MS00-007: Shared Workstation Setup May Permit Access to Recycle Bin
+	  Files
+	
+	  Q249108 Registry Data Is Viewable By All Users During Rdisk Repair Update
+	
+	  Q249197 Internet Explorer Does Not Allow Use of Single SGC Certificate with
+	  128-Bit Encryption for Virtual Sites
+	
+	  Q249863 SGC Connections May Fail from Domestic Clients
+	
+	  Q249973 MS00-005: Default RTF File Viewer Interrupts Normal Program
+	  Processing
+	
+	  Q250625 MS00-024: Default Registry Key Permissions May Allow Privilege
+	  Elevation
+	
+	  Q257870 Malformed Print Request May Stop Windows 2000 TCP/IP Printing Service
+	
+	  Q259042 Handle Leak in WinLogon After Applying Windows NT 4.0 Service Pack 6
+	
+	  Q259496 MS00-008: Incorrect Registry Setting May Allow Cryptography Key
+	  Compromise
+	
+	  Q259622 MS00-027: Command Processor May Not Parse Excessive Arguments
+	  Properly
+	
+	  Q259728 MS00-029: Windows Hangs with Fragmented IP Datagrams
+	
+	  Q259773 MS00-003: Incorrect Response to Local Procedure Call Causes "Stop"
+	  Error Message
+	
+	  Q262388 Denial-of-Service Attack Possible from Linux RPC Client
+	
+	  Q262694 MS00-036: Malicious User Can Shut Down Computer Browser Service
+	
+	  Q263307 MS00-036: Excessive Browser Announcements May Force Computer Shutdown
+	
+	  Q264684 MS00-040: Patch for "Remote Registry Access Authentication"
+	  Vulnerability
+	
+	  Q266433 MS00-070: Patch for Numerous Vulnerabilities in the LPC Port System
+	  Calls
+	
+	  Q267858 "Memory Could Not Be Read" Error Message While Doing File Operation
+	
+	  Q268082 DNS SOA Record May Reveal Administrator Account Name
+	
+	  Q269049 MS00-052: Registry-Invoked Programs Use Standard Search Path
+	
+	  Q269239 MS00-047: NetBIOS Vulnerability May Cause Duplicate Name on the
+	  Network Conflicts
+	
+	  Q271216 Fix for E-mail Issues Between 128-Bit and 56-Bit Encryption Using
+	  French Regional Settings
+	
+	  Q274835 MS00-083: Buffer Overflow in Network Monitor May Cause Vulnerability
+	
+	  Q275567 MS00-091: Multiple NetBT Sessions May Hang Local Host
+	
+	  Q276575 MS00-094: Patch Available for "Phone Book Service Buffer Overflow"
+	  Vulnerability
+	
+	  Q277910 MS00-087: Patch Available for "Terminal Server Login Buffer Overflow"
+	  Vulnerability
+	
+	  Q279336 MS01-003: Patch Available for Winsock Mutex Vulnerability
+	
+	  Q279843 Some System Named Pipes Are Not Created with Appropriate Permissions
+	
+	  Q280119 MS01-008: A Patch Is Available for the NTLMSSP Privilege Elevation
+	  Vulnerability
+	
+	  Q283001 MS01-009: Patch Available for Malformed PPTP Packet Stream
+	  Vulnerability
+	
+	  Q289246 MS02-001: Forged SID Could Result in Elevated Privileges in Windows
+	  NT 4.0
+	
+	  Q292435 MS01-040: Invalid RDP Data Can Cause Memory Leak in Terminal Services
+	
+	  Q293818 MS01-017: Erroneous VeriSign-Issued Digital Certificates Pose
+	  Spoofing Hazard
+	
+	  Q298012 MS01-041: Malformed RPC Request Can Cause Service Problems
+	
+	  Q303628 Relative Path Issue Can Allow Program to Be Run Under the System
+	  Context
+	
+	FrontPage Server Extensions:
+	
+	  Q280322 FP2000: MS00-100: Patch for Malformed Web Form Submission Security
+	  Vulnerability
+	
+	NOTE: FrontPage Server Extensions are included as part of the Windows NT 4.0
+	Option Pack, which is not supported on Windows NT Server 4.0, Terminal Server
+	Edition. Patches for FrontPage Server Extensions have been provided as part of
+	the SRP only for customers who have installed the Option Pack to protect their
+	computers during the migration to a supported operating system.
+	
+	Index Server 2.0:
+	
+	  Q252463 MS00-006: Index Server Error Message Reveals Physical Location of Web
+	  Folders
+	
+	  Q294472 MS99-057: Index Server Search Function Contains Unchecked Buffer
+	
+	  Q296185 MS01-025: Patch Available for New Variant of the "Malformed
+	  Hit-Highlighting" Vulnerability
+	
+	  Q300972 MS01-033: Unchecked Buffer in Index Server ISAPI Extension Can Enable
+	  Web Server Compromise
+	
+	NOTE: Index Server 2.0 is part of the Windows NT 4.0 Option Pack which is not
+	supported on Windows NT Server 4.0, Terminal Server Edition. Patches for Index
+	Server 2.0 have been provided as part of the SRP only for customers who have
+	installed the Option Pack to protect their computers during the migration to a
+	supported operating system.
+	
+	Internet Information Server 4.0:
+	
+	  Q241805 Combined FTP and Domain Restriction Security Patch for IIS 4.0
+	
+	  Q244613 IIS 4.0 SSL ISAPI Filter Can Leak Single Buffer of Plaintext
+	
+	  Q246401 MS99-061: IIS May Improperly Parse Specific Escape Characters
+	
+	  Q249599 Virtual Directory Mapped to UNC Returns Server-Side Script Code When
+	  URL Contains Additional Characters at the End of the Request
+	
+	  Q252693 Chunked Encoding Request with No Data Causes IIS Memory Leak
+	
+	  Q254142 MS00-023: 100% CPU Usage Occurs When You Send a Large Escape Sequence
+	
+	  Q260205 MS00-030: HTTP Request with a Large Number of Dots or Dot-Slashes
+	  Causes High CPU Utilization
+	
+	  Q260347 MS00-060: IIS 4: Fix for Cross-Site Scripting Issues
+	
+	  Q260838 MS00-031: IIS Stops Servicing HTR Requests
+	
+	  Q267559 MS00-044: GET on HTR File Can Cause a "Denial of Service" or Enable
+	  Directory Browsing
+	
+	  Q269862 MS00-057: Patch Released for Canonicalization Error Issue
+	
+	  Q271652 MS00-063: Patch Released for Malformed URL Vulnerability That
+	  Disables Web Server Response
+	
+	  Q274149 Cookies Are Not Marked as Secure in IIS
+	
+	  Q277873 MS00-086: Patch Available for "Web Server File Request Parsing"
+	  Vulnerability
+	
+	  Q285985 MS01-004: Patch Available for New Variant of File Fragment Reading
+	  via .HTR Vulnerability
+	
+	  Q295534 MS01-026: Superfluous Decoding Operation Can Allow Command Execution
+	  Through IIS
+	
+	  Q297860 MS01-044: IIS 5.0 Security and Post-Windows NT 4.0 SP5 IIS 4.0 Patch
+	  Rollup
+	
+	  Q319733 MS02-018: April 2002 Cumulative Patch for Internet Information
+	  Services
+	
+	NOTE: Internet Information Server 4.0 is part of the Windows NT 4.0 Option Pack
+	which is not supported on Windows NT Server 4.0, Terminal Server Edition.
+	Patches for IIS 4.0 have been provided as part of the SRP only for customers who
+	have installed the Option Pack to protect their computers during the migration
+	to a supported operating system.
+	
+	
+	Fixes Not Included in Windows NT Server 4.0, Terminal Server Edition SRP
+	------------------------------------------------------------------------
+	
+	The Windows NT Server 4.0, Terminal Server Edition SRP does not supersede the
+	patches that are included in the following post-SP6 security bulletins:
+	
+	  Q300845 MS02-013: Java Applet Can Redirect Browser Traffic
+	
+	  Q311967 MS02-017: Unchecked Buffer in the Multiple UNC Provider
+	
+	  Q313829 Unchecked Buffer in Windows Shell Could Lead to Code Running
+	
+	  Q314147 MS02-006: An Unchecked Buffer in the SNMP Service May Allow Code to
+	  Run
+	
+	  Q318202 MS02-008: XMLHTTP Control in MSXML 2.0 Can Allow Access to Local
+	  Files
+	
+	The Windows NT Server 4.0, Terminal Server Edition SRP does not include the patch
+	delivered in the following post-SP6 security bulletin, because it should only be
+	applied if WebDAV has been installed on the server.
+	
+	  Q296441 MS01-022: WebDAV Service Provider Can Allow Scripts to Levy Requests
+	  as a User
+	
+	The Windows NT Server 4.0, Terminal Server Edition SRP does not include the tools
+	that are provided as part of the following bulletins. These tools should be
+	downloaded and run separately.
+	
+	  Q265714 MS00-095: Windows NT 4.0 SNMP Registry Entries Are Readable
+	
+	  Q267861 MS00-095: RAS Registry Modification Allowed Without Administrative
+	  Rights
+	
+	  Q267864 MS00-095: MTS Package Administration Key Includes Information About
+	  Users
+	
+	The Windows NT Server 4.0, Terminal Server Edition SRP does not supersede the
+	following bulletin, because the fix in this case requires an administrative
+	procedure rather than a software change.
+	
+	  Q241219 MS99-036: Unattended Installation File Is Not Deleted After Setup
+	  Finishes
+	
+	Additional query words: security_patch kbdotcom kbTSE400SRP
+	
+	======================================================================
+	Keywords          : kbSecurity kbWinNT400PreSP7Fix 
+	Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400sp6 kbNTTermServSearch
+	Version           : :4.0 SP6
+	Hardware          : ALPHA x86
+	Issue type        : kbinfo
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

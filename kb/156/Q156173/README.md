@@ -1,0 +1,102 @@
+---
+layout: page
+title: "Q156173: HOWTO: Use the New Class Browser in Visual FoxPro"
+permalink: kb/156/Q156173/
+---
+
+## Q156173: HOWTO: Use the New Class Browser in Visual FoxPro
+
+	Article: Q156173
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbvfp500 kbvfp600
+	Last Modified: 14-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The Class Browser has been updated for Visual FoxPro 5.0. It includes new
+	functionality. This article describes tips for using some of these new features.
+	
+	MORE INFORMATION
+	================
+	
+	Following are some tips for using the new Class Browser:
+	
+	- You can right-click the Open and Add toolbar buttons to display a list of the
+	  last eight files that were opened in the Class Browser and that are not
+	  currently displayed in the active Class Browser window. Click the desired
+	  class from the list to reopen it.
+	
+	- You can use Shift+F10 to bring up the right-click Shortcut menu.
+	
+	- You can right-click in the Class Browser and click Export on the Shortcut
+	  menu to export a class definition to a .prg file.
+	
+	- You can default to a specific class and member name when you are starting up
+	  the Class Browser programmatically. See the following example:
+	
+	        DO (_browser) WITH "mylib","myclass.cMessage"
+	
+	- You can drag and drop the class icon from within the Class Browser onto the
+	  Command window to execute the following commands (the icon to drag is located
+	  next to the Type drop-down list box in the Class Browser):
+	
+	        SET CLASSLIB TO <classlib> ADDITIVE
+	        objectvar=CREATEOBJECT(<class>)
+	
+	- You can rename methods and properties with the Class Browser by right-
+	  clicking on the method or property and clicking Rename on the Shortcut menu.
+	  If you rename or move a class, all .vcx and .scx files open in all instances
+	  of the Class Browser window are updated automatically if they contain those
+	  subclasses or instances. So, if you rename a class, it is recommended that
+	  all .vcx and .scx files that use that class or subclass are loaded in the
+	  Class Browser window. If a form is not in the Class Browser when a class it
+	  contains is renamed, an instantiation error occurs when you open the form.
+	  The Class Browser asks you to locate the class.
+	
+	- You can drag and drop a class between two instances of the Class Browser. To
+	  copy, hold down the control key during the drag.
+	
+	- You can drag and drop an instance of the selected class onto a running form
+	  or container, adding it to that container (or desktop, which adds to
+	  _screen). You can also do this manually. First, select the class that you
+	  want to create in the Class Browser, then click in the Command window to
+	  place the blinking cursor in the Command window. Second, move the mouse
+	  pointer to a form or the Visual FoxPro desktop, making sure the blinking
+	  cursor is still in the Command window. Then, in the Command window, execute
+	  the following command:
+	
+	        _oBrowser.FormAddObject(SYS(1270))
+	
+	  An instance of the class is created where the mouse is located.
+	
+	- Type library information can be viewed by doing the following:
+	
+	  1. In the Class Browser, click the Open button or the View Additional File
+	     button.
+	
+	  2. In the Files of type drop-down list in the Open dialog box, choose
+	     Application, *.olb, or *.tlb.
+	
+	  The type library information for the selected file is displayed in the Members
+	  list. (You can view this information in Help by searching for "type library"
+	  (without the quotation marks).)
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbvfp500 kbvfp600 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600
+	Version           : WINDOWS:5.0,6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

@@ -1,0 +1,72 @@
+---
+layout: page
+title: "Q265682: Appleshare Clients Have Maximum Viewable Volume Limit of 256"
+permalink: kb/265/Q265682/
+---
+
+## Q265682: Appleshare Clients Have Maximum Viewable Volume Limit of 256
+
+	Article: Q265682
+	Product(s): Microsoft Windows NT
+	Version(s): WINDOWS:2000; winnt:4.0
+	Operating System(s): 
+	Keyword(s): kbenv kbnetwork
+	Last Modified: 10-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 4.0 
+	- Microsoft Windows 2000 Server 
+	- Microsoft Windows 2000 Advanced Server 
+	- Microsoft Windows 2000 Datacenter Server 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	When sharing Apple Macintosh volumes from a server running Microsoft Windows
+	2000 Server or Microsoft NT Server, Appleshare clients may not see more than 256
+	volumes.
+	
+	MORE INFORMATION
+	================
+	
+	Appleshare clients viewing volumes from Windows 2000 Server or Windows NT Server
+	have a maximum viewable volume limit of 256. This limitation exists within the
+	Appleshare client, not the Windows-based server.
+	
+	Windows 2000 Server and Windows NT Server allow the user to create more than 256
+	Apple Macintosh volumes. When more than 256 volumes are created, the Apple
+	Chooser may not populate the list of volumes properly. For example, not all
+	volumes are shown.
+	
+	To verify this behavior, create more than 256 volumes on the server. Perform a
+	network trace on the traffic between the server and client while the Appleshare
+	client is retrieving the list of volumes. In one of the traced data fields sent
+	from the server to the client, the volumes are displayed.
+	
+	For more information, please go to Apple's Web site at the following Web site
+	address:
+	
+	  http://til.info.apple.com/techinfo.nsf/artnum/n20692
+	
+	The third-party contact information included in this article is provided to help
+	you find the technical support you need. This contact information is subject to
+	change without notice. Microsoft in no way guarantees the accuracy of this
+	third-party contact information.
+	
+	The third-party products discussed in this article are manufactured by vendors
+	independent of Microsoft; we make no warranty, implied or otherwise, regarding
+	these products' performance or reliability.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbenv kbnetwork 
+	Technology        : kbWinNTsearch kbWinNT400search kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000DataServ kbwin2000DataServSearch kbwin2000Serv kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbwin2000ServSearch kbwin2000Search kbWinAdvServSearch kbWinDataServSearch
+	Version           : WINDOWS:2000; winnt:4.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

@@ -1,0 +1,109 @@
+---
+layout: page
+title: "Q241278: XADM: Insufficient Memory when CDO/MAPI App. Accesses Message"
+permalink: kb/241/Q241278/
+---
+
+## Q241278: XADM: Insufficient Memory when CDO/MAPI App. Accesses Message
+
+	Article: Q241278
+	Product(s): Microsoft Exchange
+	Version(s): winnt:5.5
+	Operating System(s): 
+	Keyword(s): exc55 kbExchange550preSP4fix kbExchange550sp4Fix kbgraphxlinkcritical
+	Last Modified: 01-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.5 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	A Messaging Application Programming Interface (MAPI) or Collaboration Data
+	Objects (CDO) application may return an error of MAPI_E_NOT_ENOUGH_MEMORY (which
+	is defined as E_OUTOFMEMORY = 0x8007000E) when attempting to perform MAPI or CDO
+	operations against a particular message.
+	
+	The user may see an error message similar to the following:
+	
+	  There is not enough memory available to perform the operation. [Microsoft
+	  Exchange Server Information Store - [E_OUTOFMEMORY(8007000E)]]
+	
+	CAUSE
+	=====
+	
+	The Exchange Server information store can return a remote procedure call (RPC)
+	response to the client's RPC request indicating that the buffer size required
+	for the RPC data is greater than the maximum allowable buffer size (32 KB). The
+	client handles this request to set up an "illegal" buffer size as a memory
+	error.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, obtain the latest service pack for Exchange Server 5.5.
+	For additional information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q191014 XGEN: How to Obtain the latest Exchange Server 5.5 Service Pack
+	
+	
+	The following files are available for download from the Microsoft Download
+	Center:
+	
+	  x86: DownloadDownload Q248838engi.exe now
+	  (http://www.microsoft.com/downloads/release.asp?ReleaseID=25443)
+	  Alpha: DownloadDownload Q248838enga.exe now
+	  (http://www.microsoft.com/downloads/release.asp?ReleaseID=25444)
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. Once posted, the file is housed on secure
+	servers that prevent any unauthorized changes to the file.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+	version 5.5. This problem was first corrected in Exchange Server 5.5 Service
+	Pack 4.
+	
+	MORE INFORMATION
+	================
+	
+	Under certain boundary conditions, the Exchange Server information store can
+	return an RPC response to the client's RPC request, which informs the client
+	that the buffer the client had originally set up for the request is of
+	insufficient size. The server's RPC response indicates this with the
+	"ropBufferTooSmall" string; it also indicates how large the buffer needs to be.
+	This, in itself, is not a issue for the client, as the client typically sets up
+	an appropriately sized buffer for the response and makes the request again. This
+	typically succeeds.
+	
+	The issue occurs when the information store fails to properly account for all
+	buffers overhead when it calculates the actual buffer size that is required.
+	Thus, the information store indicates in the response that the buffer required
+	is larger that the maximum RPC buffer size allowed. When this is the case, MAPI
+	or CDO applications can report "insufficient memory" type of errors.
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : exc55 kbExchange550preSP4fix kbExchange550sp4Fix kbgraphxlinkcritical 
+	Component         : MDB
+	Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+	Version           : winnt:5.5
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

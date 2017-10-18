@@ -1,0 +1,153 @@
+---
+layout: page
+title: "Q316917: Microsoft Windows XP Professional Resource Kit Documentation Com"
+permalink: kb/316/Q316917/
+---
+
+## Q316917: Microsoft Windows XP Professional Resource Kit Documentation Com
+
+	Article: Q316917
+	Product(s): Microsoft Press
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbfix
+	Last Modified: 24-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- MSPRESS Microsoft Windows XP Professional Resource Kit Documentation ISBN 0-7356-1485-7 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article contains comments, corrections, and information about known errors
+	relating to the Microsoft Press book Microsoft Windows XP Professional Resource
+	Kit Documentation, ISBN 0-7356-1485-7.
+	
+	The following topics are covered:
+	
+	- Page 227: Correction To Table 5.5
+	
+	- Page 759: Incorrect Information About Encryption Status In Table 17.2
+	
+	- Page 817: Windows 2000 Administration Tools Pack Not Supported On Windows XP
+	
+	MORE INFORMATION
+	================
+	
+	Page 227: Correction To Table 5.5
+	---------------------------------
+	
+	On page 227, Table 5.5 contains incorrect information. Please replace the table
+	with the following table:
+	
+	+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	| Parameters:               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | 
+	+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	| Value                     | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | 
+	+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	| /Target:{Computer | User} | Specifies that only User or only Computer
+	                           policy settings are refreshed. By default,
+	                           both User and Computer policy settings are
+	                           refreshed.                                                                                                                                                                                                                                                                                                                                                                                                          | 
+	+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	| /Force                    | Reapplies all policy settings. By default,
+	                           only policy settings that have changed are
+	                           applied.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | 
+	+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	| /Wait:{value}             | Sets the number of seconds to wait for policy
+	                           processing to finish. The default is 600
+	                           seconds. The value '0' means not to wait.
+	                           The value '-1' means to wait indefinitely.
+	                           When the time limit is exceeded, the command
+	                           prompt returns, but policy processing
+	                           continues.                                                                                                                                                                                       | 
+	+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	| /Logoff                   | Causes a logoff after the Group Policy settings
+	                           have been refreshed. This is required for
+	                           those Group Policy client-side extensions
+	                           that do not process policy on a background
+	                           refresh cycle but do process policy when a
+	                           user logs on. Examples include user-targeted
+	                           Software Installation and Folder Redirection.
+	                           This option has no effect if there are no
+	                           extensions called that require a logoff. | 
+	+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	| /Boot                     | Causes a reboot after the Group Policy settings
+	                           are refreshed. This is required for those
+	                           Group Policy client-side extensions that do
+	                           not process policy on a background refresh cycle
+	                           but do process policy at computer startup.
+	                           Examples include computer-targeted Software
+	                           Installation. This option has no effect if
+	                           there are no extensions called that require
+	                           a reboot.                          | 
+	+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	| /Sync                     | Causes the next foreground policy application to
+	                           be done synchronously. Foreground policy
+	                           applications occur at computer boot and user
+	                           logon. You can specify this for the user,
+	                           computer or both using the /Target parameter.
+	                           The /Force and /Wait parameters will be ignored
+	                           if specified.                                                                                                                                                                    | 
+	+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+	
+	
+	Page 759: Incorrect Information About Encryption Status In Table 17.2
+	---------------------------------------------------------------------
+	
+	On page 759, in Table 17.2, in the Encryption Status cell for "Later moved to the
+	folder or subfolders", change:
+	"Unchanged."
+	
+	To:
+	"Moving unencrypted files into an encrypted folder will automatically encrypt
+	those files in the new folder."
+	
+	
+	Page 817: Windows 2000 Administration Tools Pack Not Supported On Windows XP
+	----------------------------------------------------------------------------
+	
+	On page 817, under "Administrative Tools", it states that the Windows 2000
+	Administration Tools Pack (adminpak.msi) can be used on Windows XP. This is
+	incorrect. The Windows 2000 version of the Administration Tools Pack is not
+	supported on Windows XP. A Windows XP compatible version of the Administration
+	Tools Pack will not be available in Windows XP until the next version of Windows
+	2000 server ships.
+	
+	Change:
+	"Domain administrators use administrative tools to create Active Directory
+	objects and containers on a domain controller. Users can create Active Directory
+	objects from a Windows XP Professional-based client if they have sufficient
+	permissions and the Windows 2000 Administration Tools has been installed
+	locally. The tools are available on the Windows 2000 Server operating system CD.
+	For more information about installing Windows 2000 Administration Tools, see
+	Windows 2000 Server Help. For more information about Active Directory objects,
+	see "Active Directory Logical Structure" in the Distributed Systems Guide of the
+	Windows 2000 Server Resource Kit."
+	
+	To:
+	"This will not be available in Windows XP until the next version of Windows 2000
+	server ships. Until then, you can use the Remote Desktop feature to connect to a
+	Windows 2000 server running Terminal Services and the Windows 2000
+	Administration Tools Pack to remotely manage these servers. The Windows 2000
+	version of the Administration Tools Pack is not supported on Windows XP."
+	
+	
+	Microsoft Press is committed to providing informative and accurate books. All
+	comments and corrections listed above are ready for inclusion in future
+	printings of this book. If you have a later printing of this book, it may
+	already contain most or all of the above corrections.
+	
+	Additional query words: 0-7356-1485-7 RKBOOK
+	
+	======================================================================
+	Keywords          : kbfix 
+	Technology        : kbMSPressSearch
+	Version           : :
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

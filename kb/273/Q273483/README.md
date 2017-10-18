@@ -1,0 +1,88 @@
+---
+layout: page
+title: "Q273483: PRB: Form.Show() Within WITH Block Prevents Releasing Modal Form"
+permalink: kb/273/Q273483/
+---
+
+## Q273483: PRB: Form.Show() Within WITH Block Prevents Releasing Modal Form
+
+	Article: Q273483
+	Product(s): Microsoft FoxPro
+	Version(s): 3.0,3.0b,5.0,5.0a,6.0
+	Operating System(s): 
+	Keyword(s): kbCtrl kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600 kbGrpDSFox kbDSupport kbCodeSnipp
+	Last Modified: 22-OCT-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If you attempt to use the Show method within a WITH...ENDWITH block in a modal
+	form, issuing a ThisForm.Release() method call does not release the form. In
+	Visual FoxPro version 6.0, clicking the Close Box in the upper-right corner of
+	the form closes the form, but does not close the form in Visual FoxPro version 3
+	or 5.
+	
+	CAUSE
+	=====
+	
+	The form does not release because the WITH command is holding an outstanding
+	object reference.
+	
+	RESOLUTION
+	==========
+	
+	Issue the Show method of the form outside of the WITH block:
+	
+	  WITH oForm
+	     .Caption = "Erin"
+	     .WindowState = 2
+	  ENDWITH
+	  oForm.Show(1)
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Create a form class:
+	
+	  CREATE CLASS frmWith AS form OF withShow.vcx
+	
+	2. Add a command button to the form with the following code in its Click event,
+	  and then close the form:
+	
+	  ThisForm.Release()
+	
+	3. To show the form, run the following code:
+	
+	  SET CLASSLIB TO withShow ADDITIVE
+	  oForm = CREATEOBJECT("frmWith")
+	
+	  WITH oForm
+	     .Caption = "Ael"
+	     .WindowState = 2
+	     .Show(1)
+	  ENDWITH
+	
+	4. Click the command button, and note that the form does not release. In Visual
+	  FoxPro 6.0, click the Close Box to close the form; in earlier versions, click
+	  Cancel from the Program menu.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbCtrl kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600 kbGrpDSFox kbDSupport kbCodeSnippet 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+	Version           : :3.0,3.0b,5.0,5.0a,6.0
+	Issue type        : kbprb
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

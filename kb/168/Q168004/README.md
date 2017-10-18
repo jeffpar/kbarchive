@@ -1,0 +1,95 @@
+---
+layout: page
+title: "Q168004: FIX: &quot;Unable to initialize DAO/Jet db engine&quot; Error"
+permalink: kb/168/Q168004/
+---
+
+## Q168004: FIX: &quot;Unable to initialize DAO/Jet db engine&quot; Error
+
+	Article: Q168004
+	Product(s): Microsoft C Compiler
+	Version(s): 4.2 4.2b 5.0
+	Operating System(s): 
+	Keyword(s): kberrmsg kbDAOsearch kbDatabase kbMFC kbVC kbVS97sp1fix kbVS97sp2fix
+	Last Modified: 17-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 4.2b, 5.0 
+	- Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 4.2b, 5.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you run a Visual C++ version 4.2 or 4.2b application on a machine that has
+	the 4.21.7022 version of the MFC DLL (MFC42.DLL), the following message appears
+	when you try to use MFC DAO classes:
+	
+	  Unable to initialize DAO/Jet db engine
+	
+	CAUSE
+	=====
+	
+	Version 4.21.7022 of the MFC DLL (MFC42.DLL), which comes with Visual C++ 5.0,
+	always incorrectly tries to use DAO 3.5. Visual C++ 4.2 applications use DAO 3.0
+	and, therefore, DAO 3.0 is installed rather than DAO 3.5. When MFC tries to load
+	DAO 3.5 and it is not there, the error message shown above appears.
+	
+	RESOLUTION
+	==========
+	
+	Visual C++ applications that are statically linked with MFC do not use the
+	MFC42.DLL and do not see the problem. Also, the MFC DLL (MFC42.DLL) that comes
+	with Visual C++ 4.2 can be placed in the directory of the application so that it
+	is used, rather than the newer MFC DLL.
+	
+	It is possible to fix the problem by installing DAO 3.5 on the machine as well.
+	However, keep in mind that this means you will be using a new Jet database
+	engine, which may introduce new problems with the application that was tested
+	using DAO 3.0.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article. This bug has been corrected in Visual Studio 97
+	Service Pack 1.
+	
+	For additional information about the Visual Studio 97 Service Pack 1, please see
+	the following article in the Microsoft Knowledge Base:
+	
+	  Q170365 INFO: Visual Studio 97 Service Packs - What, Where, and Why
+	
+	MORE INFORMATION
+	================
+	
+	You can see the bug with the MFC42.DLL by looking in the DAOCORE.CPP file
+	included with Visual C++ 5.0. In several places in the file you can see the
+	following code:
+	
+	        // Determine whether to use DAO 3.5 or 3.0
+	        // Use DAO 3.0 if DLL build and not
+	        // built with MFC 4.21 or later
+	        BOOL bUseDao30 = FALSE;
+	
+	     #ifdef _AFXDLL
+	        AFX_MODULE_STATE* pModuleState = AfxGetModuleState();
+	        if (pModuleState->m_dwVersion < 421)
+	           bUseDao30 = TRUE;
+	     #endif // _AFXDLL
+	
+	Notice that the version checking is incorrect. The version is checked against
+	'421' instead of '0x0421'. This means that bUseDao30 will always be FALSE and
+	this causes DAO 3.5 to be used.
+	
+	======================================================================
+	Keywords          : kberrmsg kbDAOsearch kbDatabase kbMFC kbVC kbVS97sp1fix kbVS97sp2fix 
+	Technology        : kbVCsearch kbAudDeveloper kbVC420 kbVC500 kbVC32bitSearch kbVC420b kbVC500Search
+	Version           : 4.2 4.2b 5.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

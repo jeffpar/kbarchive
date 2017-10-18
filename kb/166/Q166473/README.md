@@ -1,0 +1,98 @@
+---
+layout: page
+title: "Q166473: PRB: CScrollView Scroll Range Limited to 32K"
+permalink: kb/166/Q166473/
+---
+
+## Q166473: PRB: CScrollView Scroll Range Limited to 32K
+
+	Article: Q166473
+	Product(s): Microsoft C Compiler
+	Version(s): 4.0,4.1,4.2,5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbProgramming kbusage kbDocView kbMFC kbScrollBar KbUIDesign kbVC kbVC400 kbVC410 kbVC4
+	Last Modified: 04-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The Microsoft Foundation Classes (MFC), used with:
+	   - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1, 4.2, 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If the scroll range exceeds 32K when you are using the Scroll Thumb to scroll,
+	CScrollView does not handle scrolling correctly. Unusual behavior occurs when
+	you try to scroll beyond 32K.
+	
+	CAUSE
+	=====
+	
+	This behavior is by design. The code to handle ranges greater than 32K was not
+	added to CScrollView because it could fail if a WM_xSCROLL message is sent to
+	the view to programatically scroll the contents. In Visual C++ version 6.0 on
+	Windows NT, the limit has been extended to 2 gigabytes.
+	
+	RESOLUTION
+	==========
+	
+	You can work around the problem easily by adding support to handle scroll ranges
+	greater than 32K to a CScrollView derived class. Override the function as
+	follows:
+	
+	     BOOL CMyScrollView::OnScroll(UINT nScrollCode, UINT nPos, BOOL
+	                                  bDoScroll)
+	     {
+	        SCROLLINFO info;
+	        info.cbSize = sizeof(SCROLLINFO);
+	        info.fMask = SIF_TRACKPOS;
+	
+	        if (LOBYTE(nScrollCode) == SB_THUMBTRACK)
+	        {
+	           GetScrollInfo(SB_HORZ, &info);
+	           nPos = info.nTrackPos;
+	        }
+	
+	        if (HIBYTE(nScrollCode) == SB_THUMBTRACK)
+	        {
+	           GetScrollInfo(SB_VERT, &info);
+	           nPos = info.nTrackPos;
+	        }
+	
+	        return CScrollView::OnScroll(nScrollCode, nPos, bDoScroll);
+	     }
+	
+	In the code sample above, note that you can not depend on the value of nPos that
+	is sent to the handler. It will be invalid for positions greater than 32K.
+	Instead, use GetScrollInfo() to assign the correct position to nPos.
+	
+	For additional information on this problem, click the article number below to
+	view the article in the Microsoft Knowledge Base:
+	
+	  Q152252 HOWTO: How To Get 32-bit Scroll Position During Scroll Messages
+	
+	NOTE: If you are trying to programatically scroll the contents in CscrollView,
+	use the SetScrollInfo to correctly set the scroll bar information and then send
+	or post the WM_xSCROLL message.
+	
+	NOTE: Windows 95, Windows 98, Windows Millennium Edition (Me) and Win32s only
+	support logical and device coordinates up to 32K. Because CScrollView uses
+	logical units in SetScrollSizes(), you should specify a scroll range < 32K on
+	when using CSrollView derived classes on these operating systems.
+	
+	(c) Microsoft Corporation 1997, All Rights Reserved. Contributions by Sridhar S.
+	Madhugiri, Microsoft Corporation
+	
+	
+	Additional query words: CScrollView scrolling
+	
+	======================================================================
+	Keywords          : kbProgramming kbusage kbDocView kbMFC kbScrollBar KbUIDesign kbVC kbVC400 kbVC410 kbVC420 kbVC500 kbVC600 kbVS600 kbprb kbGrpDSMFCATL 
+	Technology        : kbAudDeveloper kbMFC
+	Version           : :4.0,4.1,4.2,5.0,6.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

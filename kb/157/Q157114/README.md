@@ -1,0 +1,129 @@
+---
+layout: page
+title: "Q157114: &quot;Access Denied&quot; Attempting to Run File on LM/X Server"
+permalink: kb/157/Q157114/
+---
+
+## Q157114: &quot;Access Denied&quot; Attempting to Run File on LM/X Server
+
+	Article: Q157114
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): win95
+	Last Modified: 15-MAR-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 95 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you are using a Windows 95-based computer to connect to a LAN Manager for
+	Unix (LM/X) server, you may receive an "Access denied" error message when you
+	try to run a file that has only Read and Execute permissions.
+	
+	CAUSE
+	=====
+	
+	When a Windows 95-based computer connects to a server using the SMB (Server
+	Message Block) protocol for file and print sharing, it negotiates a dialect
+	level for the connection. Some LM/X servers support only older dialect levels.
+	
+	When an older dialect is negotiated (the Microsoft Networks 3.0 dialect in this
+	case, also known as Core SMB), the Windows 95 client must use only those SMB
+	commands supported by the down-level server. In this case, the Windows 95 client
+	issues an "open" SMB command, requesting open mode 23 or execute mode. However,
+	the "open" command supports only read, write, and read/write mode, making it an
+	illegal SMB command.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, download the following file from the Microsoft Download
+	Center. Click the file name below to download the file:
+	
+	  Vredrupd.exe
+	  (http://download.microsoft.com/download/win95upg/vredir/1/W95/EN-US/vredrupd.exe)
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. Once posted, the file is housed on secure
+	servers that prevent any unauthorized changes to the file.
+	
+	This fix for Windows 95 should have the following file attributes (or later):
+	
+	  File name     Version    Date      Time      Size
+	  ----------------------------------------------------------
+	  VREDIR.VXD    4.00.960   9/20/96   10:00am   140,403 bytes
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft Windows 95 and
+	Microsoft Windows 98.
+	
+	This issue is not resolved in Microsoft Windows 98.
+	
+	MORE INFORMATION
+	================
+	
+	For additional information about issues resolved by updates to this component,
+	please see the following articles in the Microsoft Knowledge Base:
+	
+	  Q183493 Batch File Calling CD Command May Not Run on HPFS
+	
+	  Q174371 Possible Database File Damage When Data Is Appended
+	
+	  Q172594 Cannot Connect to Server with 15 Characters and Period in Name
+	
+	  Q167712 Fatal Exception Error in VREDIR with DCOM Program
+	
+	  Q165403 Windows 95 Update Prevents Sending Clear-Text Password Over Net
+	
+	  Q165402 Windows 95 Update to Encrypt Passwords in Memory
+	
+	  Q161100 File May Be Truncated When Copied to a Full Network Drive
+	
+	  Q160807 Cannot Connect to Windows NT Server with Many Shares
+	
+	  Q152186 Possible Network Data Corruption If Locking Not Used
+	
+	  Q150215 Disabling Automatic Network Shortcut Resolution
+	
+	  Q148367 Possible Network File Corruption with Redirector Caching
+	
+	  Q142803 Locking Error or Computer Hangs Accessing Network Database Files
+	
+	  Q140558 Deleting Files on Samba Servers May Delete Local Files Instead
+	
+	  Q138249 Updated Vredir.vxd Corrects Errors Running Files on LMX
+	
+	  Q138014 File May Be Truncated to Zero Bytes When Copied Onto Itself
+	
+	  Q136834 Error Copying Read-Only Files to Core SMB Server
+	
+	
+	For additional information about Windows 95 updates, please see the following
+	article in the Microsoft Knowledge Base:
+	
+	  Q161020 Implementing Windows 95 Updates
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : win95 
+	Technology        : kbWin95search kbZNotKeyword3
+	Version           : :
+	
+	=============================================================================
+	

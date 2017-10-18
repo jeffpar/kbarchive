@@ -1,0 +1,155 @@
+---
+layout: page
+title: "Q197986: How to Configure Windows 95 Policies with Load Balancing"
+permalink: kb/197/Q197986/
+---
+
+## Q197986: How to Configure Windows 95 Policies with Load Balancing
+
+	Article: Q197986
+	Product(s): Windows for Workgroups and Windows NT Networking Issues
+	Version(s): 4.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 14-MAR-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 95 
+	- Microsoft Windows NT Server version 4.0 
+	- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about editing the registry.
+	Before you edit the registry, make sure you understand how to restore it if
+	a problem occurs. For information on how to do this, view the "Restoring
+	the Registry" online Help topic in Regedit.exe or the "Restoring a Registry
+	Key" online Help topic in Regedt32.exe.
+	
+	SUMMARY
+	=======
+	
+	This article walks through the steps required to configure a Windows 95 client
+	to receive a system policy in a Windows NT domain environment. Furthermore, it
+	discusses the additional steps to configure the client computer for load
+	balancing. Load balancing in this context means that a Windows 95 client can
+	receive its policy from any validating domain controller. By default, Windows 95
+	computers will only query the Netlogon share of the primary domain controller
+	(PDC) for the Config.pol file.
+	
+	1. Create the policy file from a Windows 95 computer. The System Policy Editor
+	  application should be installed through Add/Remove Programs. Click the
+	  Windows Setup tab and click Have Disk. In the Install from Disk dialog box,
+	  specify the Admin\Apptools\Poledit directory on the Windows 95 compact disc.
+	  Click OK, and then click OK again. Make sure that System Policy Editor is
+	  selected. If you want to install group policies on this computer as well,
+	  click to select the Group Policies check box. Click Install.
+	
+	2. Ensure that the Windows 95 client's workgroup name is the same as the domain
+	  name. To verify this, click Start, click Settings, click Control Panel, and
+	  double-click Network, and then look at the Identification tab.
+	
+	3. The client must log on to a Windows NT domain. To verify this, click Start,
+	  click Settings, click Control Panel, and then double-click Network. Select
+	  Client for Microsoft Networks and click properties. Verify that it is
+	  configured to log on to the correct Windows NT Domain.
+	
+	4. Enable User Level Access Control. Specify the domain name in the Obtain List
+	  Of Users And Groups From box. To verify this, click Start, click Settings,
+	  click Control Panel, and then double-click Network. Click the Access Control
+	  tab.
+	
+	5. Make sure User Profiles are enabled on the Window 95 computer. Click Start,
+	  click Setting, click Control Panel, and double-click Passwords. Click the
+	  User Profiles tab, click "Users can customize their preferences and desktop
+	  settings. Windows switches to your personal settings whenever you log in."
+	  Click to select the appropriate check boxes under User Profile Settings.
+	
+	6. Restart the computer.
+	
+	7. On every Windows 95 computer that will needs group policy support, click
+	  Control Panel, click Add/Remove Programs, click the Windows Setup tab, click
+	  Have Disk. Use the Poledit folder from Window 95 compact disc. You do NOT
+	  have to actually install the Policy Editor on each PC, only the Groups
+	  support.
+	
+	8. By default, Windows 95 needs to contact the Netlogon share on the PDC to
+	  check for a Config.pol file. This behavior can be modified by enabling load
+	  balancing. There are several ways to achieve this behavior:
+	
+	  a. Enable load balancing in the default computer portion of the policy, which
+	     will modify the system portion of the registry on the Windows 95 client.
+	     The client must contact the PDC the first time to apply this policy.
+	     Subsequent logon requests will download the policy from the validating
+	     domain controller.
+	
+	  b. To avoid forcing a Windows 95 client to contact the PDC even one time for
+	     the policy, you can apply the policy to one computer and then make a
+	     registry file. Import the exported registry file to each client.
+	
+	  c. Use Regedit to manually modify the following subkey:
+	
+	        HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Update
+	
+	     WARNING: Using Registry Editor incorrectly can cause serious problems that
+	     may require you to reinstall your operating system. Microsoft cannot
+	     guarantee that problems resulting from the incorrect use of Registry
+	     Editor can be solved. Use Registry Editor at your own risk.
+	
+	     For information about how to edit the registry, view the "Changing Keys And
+	     Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+	     Information in the Registry" and "Edit Registry Data" Help topics in
+	     Regedt32.exe. Note that you should back up the registry before you edit
+	     it. If you are running Windows NT, you should also update your Emergency
+	     Repair Disk (ERD).
+	
+	     1. Select the Update key.
+	
+	     2. On the Edit menu, click New DWORD Value.
+	
+	     3. Type: LoadBalance.
+	
+	     4. Double-click the load balance value.
+	
+	     5. In the Edit DWORD Value dialog box, change the Value Data to 1.
+	
+	MORE INFORMATION
+	================
+	
+	To create the Load Balancing Policy file, follow these steps:
+	
+	1. On a Windows 95 computer, click Start, click Run, and then type "poledit"
+	  (without the quotation marks).
+	
+	2. On the File menu, click New Policy.
+	
+	3. Double-click default computer.
+	
+	4. Click the plus sign (+) of Network.
+	
+	5. Click the plus sign (+) of Update.
+	
+	6. Click to select the Remote Update check box.
+	
+	7. Set the Remote Update text box to Automatic (use default path) or leave
+	  blank.
+	
+	8. Click to select the Load-balance check box.
+	
+	If individual policies work, but group policies fail, please see the following
+	article in the Microsoft Knowledge Base:
+	
+	  Q165064 Group Policies Are Ignored, All Other Policies Work as Expected
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400 kbWin95search kbZNotKeyword3
+	Version           : :4.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

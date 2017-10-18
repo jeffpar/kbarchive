@@ -1,0 +1,108 @@
+---
+layout: page
+title: "Q290391: PRB: &quot;Page Cannot Be Displayed&quot; When You Connect Through HTTPS"
+permalink: kb/290/Q290391/
+---
+
+## Q290391: PRB: &quot;Page Cannot Be Displayed&quot; When You Connect Through HTTPS
+
+	Article: Q290391
+	Product(s): Internet Information Server
+	Version(s): 5.0
+	Operating System(s): 
+	Keyword(s): kbDSupport kbiis500
+	Last Modified: 16-MAR-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Services version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you try to connect to a site that is hosted on the Internet Information
+	Server (IIS) 5.0 through the HTTPS protocol, you may receive the following error
+	message:
+	
+	  The page cannot be displayed.
+	  ...
+	  ...
+	  Cannot find server or DNS Error.
+	
+	CAUSE
+	=====
+	
+	This problem occurs because, on a standard installation, the default Web site is
+	always bound to the Internet Protocol (IP) address and the port combination of
+	"All Unassigned:443" for Secure Sockets Layer (SSL), even though you do not have
+	a certificate bound to the site.
+	
+	This problem can occur when another Web site on the server has a certificate
+	bound to it and is listening on the IP address and port combination of "All
+	Unassigned:443" for SSL requests. As a result, when a request comes in for a
+	page over HTTPS, the request goes to the default Web site instead of the
+	intended site because the default Web site is also listening on port 443 on "All
+	Unassigned". In addition, because the default Web site does not have an SSL
+	certificate, it displays the "Page cannot be displayed" error message.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, remove the binding of port 443 from the default Web
+	site to allow the intended site to respond to requests that come over HTTPS. To
+	do this, follow these steps:
+	
+	1. On the server, at a command prompt, type the following command to change to
+	  the Adminscripts directory:
+	
+	  "cd c:\inetpub\adminscripts" (without the quotation marks)
+	
+	2. At a command prompt, type the following command to look at the SSL binding
+	  for the default Web site:
+	
+	  "adsutil get w3svc/1/SecureBindings" (without the quotation marks)
+	
+	  This should return the following output (or similar):
+	
+	  
+	
+	  SecureBindings                  : (LIST) ":443"
+	
+	3. At a command prompt, type the following command to set the SSL binding to
+	  null:
+	
+	  "adsutil set w3svc/1/SecureBindings """ (without the quotation marks)
+	
+	4. In the Microsoft Management Console (MMC), right-click the computer name, and
+	  then click Restart IIS. The page should be displayed properly, and the site
+	  should be accessible without any problems.
+	
+	MORE INFORMATION
+	================
+	
+	For additional information about using SSL with IIS, click the article numbers
+	below to view the articles in the Microsoft Knowledge Base:
+	
+	  Q260096 Page Cannot Be Displayed When You Connect Through SSL
+	
+	  Q187504 IIS: HTTP 1.1 Host Headers Not Supported When Using SSL
+	
+	  Q265847 Error Message: The Page Cannot Be Displayed . . . Cannot Find Server
+	  or DNS Error
+	
+	  Q228836 Installing a New Certificate with Certificate Wizard for Use in
+	  SSL/TLS
+	
+	Additional query words: iis 5
+	
+	======================================================================
+	Keywords          : kbDSupport kbiis500 
+	Technology        : kbiisSearch kbiis500
+	Version           : :5.0
+	Issue type        : kbprb
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

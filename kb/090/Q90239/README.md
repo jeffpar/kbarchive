@@ -1,0 +1,177 @@
+---
+layout: page
+title: "Q90239: Windows for Workgroups: How VSHARE.386 Manages File Sharing"
+permalink: kb/090/Q90239/
+---
+
+## Q90239: Windows for Workgroups: How VSHARE.386 Manages File Sharing
+
+	Article: Q90239
+	Product(s): Microsoft Windows 3.x Retail Product
+	Version(s): WINDOWS:3.1
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 22-SEP-1999
+	
+	3.10
+	
+	WINDOWS
+	
+	kbusage kbtshoot
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows for Workgroups version 3.1 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The Windows for Workgroups file sharer, VSHARE.386, contains several
+	improvements over the MS-DOS file sharing utility, SHARE.EXE. These improvements
+	allow Windows for Workgroups to share files in a manner similar to other network
+	operating systems.
+	
+	This article defines the file sharer (NOT the file server) and its function in
+	the operating system.
+	
+	MORE INFORMATION
+	================
+	
+	To be able to allow multiple users or programs concurrent access to files and
+	resources, an operating system must provide two basic services:
+	
+	- Arbitration of access requests
+	
+	- Updating of in-memory information that describes resources
+	
+	Under MS-DOS, these two functions are handled by a component known as the file
+	"sharer." This component is separate from the MS-DOS kernel. For MS-DOS versions
+	3.00 and later, this functionality is provided by the
+	terminate-and-stay-resident (TSR) program, SHARE.EXE. Microsoft Windows for
+	Workgroups version 3.1 when running in Enhanced Mode, replaces this with a new
+	program, VSHARE.386.
+	
+	VSHARE.386 is intended as a drop-in replacement for SHARE.EXE. Because VSHARE is
+	an Enhanced Mode virtual device driver (VxD), it has features which improve file
+	sharing under Enhanced Mode. Because it was designed to work with Windows for
+	Workgroups, VSHARE has features to make it "friendlier" than SHARE.EXE,
+	especially in the area of access control. If SHARE.EXE is loaded and you start
+	Windows for Workgroups in Enhanced Mode, VSHARE takes over as file sharer until
+	you exit Windows. If you usually run Windows for Workgroups in Enhanced Mode,
+	you may not need to run SHARE.EXE at all (this can save 5K or more of
+	conventional memory).
+	
+	For each file open on the local computer, MS-DOS maintains a copy of information
+	about the file in memory. This includes both global information that pertains to
+	the file on disk, such as the file's location on disk and its size, and local
+	information that pertains to each open instance of the file, such as the
+	application's file pointer. If a file is opened by multiple programs, and one
+	application changes a global attribute of the file, the sharer updates the
+	information for all file handles open on that file.
+	
+	NOTE: The file handles that applications use to keep track of files point to the
+	copies of information about files maintained by MS-DOS in memory.
+	
+	If the real mode sharer SHARE.EXE is present without VSHARE, then all information
+	needed to open a file must be in memory at all times, even when Enhanced Mode
+	virtual memory is being used. (Virtual memory cannot be swapped into or out of
+	memory while MS-DOS is busy with a file system request.) When you use VSHARE
+	instead of (or in addition to) SHARE, file open information for multiple Virtual
+	Machines (VMs) does not need to be in memory at the same time, only when each VM
+	is active. (MS-DOS applications run in separate VMs, and the Windows for
+	Workgroups file server runs its own separate VM.)
+	
+	NOTE: This means you can use the Enhanced Mode PerVMFiles setting with VSHARE,
+	which means you can open more files using VSHARE than using SHARE when running
+	Windows for Workgroups in Enhanced Mode. See the "Microsoft Windows Resource
+	Kit," version 3.1, for a discussion of the PerVMFiles setting.
+	
+	Unlike SHARE (which uses global conventional memory), VSHARE uses extended memory
+	to store its copy of open file information. This greatly increases the number of
+	open files that Windows for Workgroups, especially the server, can work with at
+	once. Applications which use file locking, such as Microsoft Mail, are less
+	likely to run out of file locks with VSHARE than with SHARE.
+	
+	Because Windows for Workgroups is designed to function as a peer server, the
+	access control rules used by SHARE have been relaxed somewhat in VSHARE. SHARE
+	forbids the opening of "compatibility mode" files while a "sharing" file is
+	open, and vice versa. SHARE forbids the opening of "compatibility mode" files
+	from different machines or VMs. Since a large percentage of MS-DOS applications
+	and Windows applications still use compatibility mode, SHARE prevents the
+	Windows for Workgroups server from operating effectively with several clients
+	connected to one server (the only way SHARE could operate in this environment is
+	if all the files on the server had read-only attributes). This makes it
+	inconvenient for network administrators to set up directories of shared files on
+	a network file server.
+	
+	Using VSHARE, a compatibility mode read request can be active from different
+	machines and at the same time as most sharing requests. This makes it easy to
+	set up a directory of shared files under Windows for Workgroups. The access
+	rules are only relaxed for "safe" access requests. If a process tries to open a
+	file to write to it, for example, the more restrictive set of rules is used.
+	
+	This new file access behavior is known as "softcompat mode." There may be a
+	reason to disable this, if there is a conflict with an older application that
+	has problems with the new access rules. This can be done by placing
+	"SOFTCOMPATMODE=FALSE" in the [386ENH] section of the Windows SYSTEM.INI file.
+	There are no applications known to require this setting.
+	
+	It is necessary to use a file sharer on any machine being used as a file server
+	or peer server. If an access violation happens on a server and "Sharing
+	Violation" error message appears, it interferes with server performance. This is
+	because MS-DOS is in a critical section while the error message pop-up is
+	visible. For this reason, VSHARE disables sharing violation pop-up messages on
+	MS-DOS versions 4.01 and greater. If this causes problems, you can add the
+	"ENABLESHARINGPOPUPS=TRUE" setting to the [386ENH] section of the Windows
+	SYSTEM.INI file. There are no applications known to require this setting.
+	
+	The file sharer can also be used to control access to MS-DOS device drivers, if
+	these are opened using MS-DOS file system calls. With SHARE present, it is
+	possible to get sharing violations on the NUL and CON devices. VSHARE does not
+	generate sharing violation error messages when you access these devices. You can
+	restore SHARE device sharing functionality by adding
+	"TRADITIONALDEVICESHARING=TRUE" to the [386ENH] section of the Windows
+	SYSTEM.INI file. There are no applications known to require this setting.
+	
+	Some applications are incompatible with file access checking. In general, it is
+	not recommended that you run such applications under Windows for Workgroups,
+	especially while the file server is running. You can use the SYSTEM.INI switch
+	"IGNORESHARINGVIOLATIONS=TRUE" to diagnose such problems that occur when VSHARE
+	is installed. This switch turns off file access checking for all files and
+	devices in the system. Use this switch to diagnose problems only; you should not
+	use it to correct problems. It usually causes more problems than it solves. If
+	any application refuses to run with SHARE or VSHARE installed, contact the
+	application vendor for assistance.
+	
+	Sometimes problems occur where a "network aware" version of an application does
+	not keep application documents open. These applications attempt to arbitrate
+	document access by using a semaphore or marker in the document file or on disk.
+	This technique usually fails in a multi-user network environment due to
+	synchronization problems. In order to write an application properly to handle
+	multi- user or multi-application access to data files, the first instance of the
+	application accessing any data file should KEEP THE FILE OPEN to allow the file
+	sharer and MS-DOS to communicate to subsequent applications that the file is in
+	use. This suggestion applies equally to SHARE and VSHARE. There is no way that
+	the file sharer can know that a file is "busy" unless it is actually kept open
+	by the application.
+	
+	Troubleshooting Tip
+	-------------------
+	
+	If problems with file sharing are suspected, remember that the file sharer
+	responsible for a specific file is the sharer running on the machine where the
+	file is physically located. If file sharing problems occur while you access a
+	file on a network drive, modifying the VSHARE settings on the local machine will
+	not help.
+	
+	Additional query words: 3.10 tshoot
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbWFWSearch kbWFW310
+	Version           : WINDOWS:3.1
+	
+	=============================================================================
+	

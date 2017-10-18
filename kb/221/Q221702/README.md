@@ -1,0 +1,160 @@
+---
+layout: page
+title: "Q221702: FIX: C0000005 Fatal Error w/ ISBLANK( ) and Array Prop in Init"
+permalink: kb/221/Q221702/
+---
+
+## Q221702: FIX: C0000005 Fatal Error w/ ISBLANK( ) and Array Prop in Init
+
+	Article: Q221702
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:5.0a,6.0
+	Operating System(s): 
+	Keyword(s): kbservicepack kbContainer kbCtrl kbOOP kbvfp500aBUG kbvfp600 kbvfp600bug kbXBase kbVS60
+	Last Modified: 20-MAY-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 5.0a, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Placing an ISBLANK() function in the Init of a form created programmatically
+	causes the following error in Visual FoxPro 6.0:
+	
+	  Fatal Error C0000005
+	
+	In Visual FoxPro 5.0x, the following error appears:
+	
+	  An application has occurred
+	  and an application error log is being generated.
+	  VFP.exe
+	  Exception: access violation(0xc0000005); address: <memory location>
+	
+	If the ISBLANK() function is in the Init event of a form create with the Form
+	Designer, no error occurs but the Show event of the form never fires. Therefore,
+	the form flashes and disappears.
+	
+	RESOLUTION
+	==========
+	
+	To work around this behavior, put parentheses around the array variable. In the
+	example below, this works:
+	
+	  IIF(isblank((THISFORM.WorkerData[2]))
+	
+	while this does not:
+	
+	  IIF((isblank(THISFORM.WorkerData[2]))
+	
+	In Steps to Reproduce Behavior below, comment and uncomment the specified lines
+	of code as indicated in the example and it operates as expected.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article.
+	
+	This bug was corrected in Visual Studio 6.0 Service Pack 3. For more information
+	about Visual Studio service packs, please see the following articles in the
+	Microsoft Knowledge Base:
+	
+	Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+	
+	Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Create a program that contains the following code:
+	
+	  ***Code begins here
+	  PUBLIC oisblkerr
+	  oisblkerr=CREATEOBJECT("arrform")
+	  oisblkerr.SHOW
+	  READ EVENTS
+	  RELEASE oisblkerr
+	  RETURN
+	
+	  DEFINE CLASS arrform AS FORM
+	     DIMENSION myar[3],larray[4,3]
+	     ADD OBJECT text1 AS TEXTBOX
+	     ADD OBJECT cmdexit AS COMMANDBUTTON
+	     cmdexit.TOP  = THISFORM.text1.TOP+THISFORM.text1.HEIGHT+10
+	     text1.width=150
+	
+	     PROCEDURE init
+	  	  THISFORM.myar[1]="John"
+	  	  THISFORM.myar[2]="X."
+	  	  THISFORM.myar[3]="Smith"<BR/>
+	  * Comment this line below to prevent problem.
+	        THISFORM.text1.VALUE = ALLTRIM(THISFORM.myar[1])+" "+IIF(isblank(THISFORM.myar[2]),;
+	           "",THISFORM.myar[2])+ " "+RTRIM(THISFORM.myar[3])<BR/>
+	  * Uncomment these lines below for it to work properly
+	  *!*	      THISFORM.text1.VALUE = ALLTRIM(THISFORM.myar[1])+" "+IIF(isblank((THISFORM.myar[2])),;
+	  *!*	         "",THISFORM.myar[2])+ " "+RTRIM(THISFORM.myar[3])
+	     ENDPROC
+	
+	     PROCEDURE cmdexit.CLICK
+	        THISFORM.RELEASE
+	        CLEAR EVENTS
+	        RETURN
+	     ENDPROC
+	  ENDDEFINE
+	
+	2. Run the program.
+	
+	  Depending on what code is commented, the form either appears or Visual FoxPro
+	  crashes with one of the errors mentioned in the Symptoms section.
+	
+	To see the behavior in a form created with the Form Designer, follow these
+	steps:
+	
+	1. Create a form.
+	
+	2. Add the property "WorkerName" to the form. This will store the concatenated
+	  name.
+	
+	3. Add the property "WorkerData[3]" to the form. This is an array to store the
+	  parts of the name.
+	
+	4. In the Init event of the form, add the following code:
+	
+	  THISFORM.WorkerData[1] = "JOHN"
+	  THISFORM.WorkerData[2] = "X"
+	  THISFORM.WorkerData[3] = "SMITH"
+	
+	  * This code causes the error
+	  THISFORM.WorkerName = THISFORM.WorkerData[1] + ;
+	  	IIF((isblank(THISFORM.WorkerData[2])), " ", " " + THISFORM.WorkerData[2] + " ");
+	  	+ THISFORM.WorkerData[3]
+	  * This code does not cause the error
+	  *!*	THISFORM.WorkerName = THISFORM.WorkerData[1] + ;
+	  *!*		IIF(isblank((THISFORM.WorkerData[2])), " ", " " + THISFORM.WorkerData[2] + " ");
+	  *!*		+ THISFORM.WorkerData[3]
+	
+	5. Save the form and run it. Notice that the form flashes and disappears.
+	
+	6. Modify the form and edit the Init event. Comment the code that causes the
+	  error and uncomment the code that functions properly.
+	
+	7. Run the form and notice that it appears on the screen.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbservicepack kbContainer kbCtrl kbOOP kbvfp500aBUG kbvfp600 kbvfp600bug kbXBase kbVS600sp2 kbVS600SP1 kbVS600sp3fix kbGrpDSFox 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP600 kbVFP500a
+	Version           : WINDOWS:5.0a,6.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

@@ -1,0 +1,197 @@
+---
+layout: page
+title: "Q162738: Err Msg: Network Connection Could Not Be Established."
+permalink: kb/162/Q162738/
+---
+
+## Q162738: Err Msg: Network Connection Could Not Be Established.
+
+	Article: Q162738
+	Product(s): The Microsoft Network
+	Version(s): 2.52,2.6,5.0,5.1,5.2
+	Operating System(s): 
+	Keyword(s): kbenv kberrmsg kbtlc kbmsnkbfaq
+	Last Modified: 31-OCT-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The Microsoft Network versions 2.52, 2.6, 5.0, 5.1, 5.2 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you connect to MSN, The Microsoft Network, you may receive one of the
+	following error messages:
+	
+	  
+	
+	- Network connection could not be established.
+	
+	- Remote server disconnected.
+	
+	- Cannot establish network connection.
+	
+	CAUSE
+	=====
+	
+	This behavior can occur for any of the following reasons:
+	
+	- The Transmission Control Protocol/Internet Protocol (TCP/IP) settings may be
+	  incorrect.
+	
+	- TCP/IP may be improperly bound to the Dial-Up Adapter.
+	
+	- The modem signal may be too low for the remote server to detect.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, remove and restore Dial-up Neworking, Dial-up Adapters,
+	and TCP/IP components.
+	
+	1. To remove and restore Dial-up Neworking
+	------------------------------------------
+	
+	1. Double-click My Computer and click Dial-Up Networking.
+	
+	2. Right-click an MSN connection, and then click Delete. Repeat this step until
+	  all MSN connections are deleted.
+	
+	3. Close the Dial-Up Networking window.
+	
+	4. Click Start, point to Find, and then click "Files or Folders".
+	
+	5. In the Named box, type pppmac.vxd, and then click Find Now.
+	
+	6. In the list of found files, right-click the Pppmac.vxd file, click Rename,
+	  and then rename pppmac.vxd to pppmac.old in its place.
+	
+	7. Repeat steps 5-6 to rename the following files:
+	
+	- Splitter.vxd
+	- Vdhcp.386
+	- Vip.386
+	- Vnbt.386
+	- Vtcp.386
+	- Wsock.vxd
+	- Winsock.dll
+	
+	8. Close the Find: Files Named window.
+	
+	9. Click Start, point to Settings, click Control Panel and then double-click
+	  Add/Remove Programs.
+	
+	10. On the Windows Setup tab, click Communications, and then click Details.
+	
+	11. Clear Dial-Up Networking and click OK until you return to Control Panel.
+	
+	12. If LANtastic or Banyan VINES networking components are installed on your
+	  computer, refer to your network administrator for instructions about how to
+	  remove these components.
+	
+	13. Close Control Panel, and then restart the computer.
+	
+	If the above steps do not correct the situation, proceed to the steps below.
+	
+	2. To remove and restore Dial-up Adapters and TCP/IP components
+	---------------------------------------------------------------
+	
+	1. Click Start, point to Settings, click Control Panel, and then double-click
+	  Network.
+	
+	2. If TCP/IP is installed (If TCP/IP is not installed, proceed to step 4.), for
+	  each installed TCP/IP component, click TCP/IP, click Properties and write
+	  down the properties of each TCP/IP setting, and then click OK.
+	
+	3. Click TCP/IP again, and then click Remove, repeating this step until all
+	  TCP/IP components are removed.
+	
+	4. Click each Dial-Up Adapter component, click Remove, and then click OK.
+	  If you are prompted to restart the computer, click No.
+	
+	5. Click Start, point to Settings, click Control Panel, and then double-click
+	  Network.
+	
+	6. Click the Configuration tab and click Add.
+	
+	7. In the Select Network Component Type dialog box, click Adapter, and then
+	  click Add.
+	
+	8. In the Manufacturers box, click Microsoft.
+	
+	9. In the Network Adapters box, click Dial-Up Adapter, and then click OK.
+	
+	10. In the Select Network Component Type dialog box, click Protocol, and then
+	  click Add.
+	
+	11. In the Manufacturers box, click Microsoft.
+	
+	12. In the Network Adapters box, click TCP/IP, and then click OK.
+	
+	13. When you are prompted to restart your computer, click Yes.
+	
+	NOTE: If you are using Banyan VINES, make sure you are using the most recent
+	drivers. Older drivers for Banyan VINES are not compatible with other network
+	protocols. If necessary, refer to your network administrator for instructions
+	about how to add the LANtastic or Banyan VINES networking components to your
+	computer.
+	
+	The third-party products discussed in this article are manufactured by vendors
+	independent of Microsoft; we make no warranty, implied or otherwise, regarding
+	these products' performance or reliability.
+	
+	MORE INFORMATION
+	================
+	
+	If these steps do not resolve the issue, extract a new copy of the Wsock32.dll
+	file from your original Windows 95/98 disks or CD-ROM to the Windows\System
+	folder.
+	
+	You can find the Wsock32.dll file in the following locations:
+	
+	  Cabinet File   Media
+	  ------------------------------------------------------
+	  Win95_11.cab   Windows 95 CD-ROM
+	  Win95_18.cab   Windows 95 OEM Service Release 2 CD-ROM
+	  Win95_12.cab   Windows 95 DMF format disk 12
+	  Win95_19.cab   Windows 95 non-DMF format disk 19
+	
+	  Folder                      Media
+	  ----------------------------------------------------
+	  C:\Drivers\Modem\Wdlsuprv   Windows 98 CD-ROM
+	
+	  Note that C is the drive letter of your CD-ROM drive.
+	
+	NOTE: If you are prompted to overwrite an existing file, press Y, and then press
+	ENTER.
+	
+	For information about using the Extract tool, type extract at a command prompt,
+	or see the following article in the Microsoft Knowledge Base:
+	
+	  Q129605 <A0>How to Extract Original Compressed Windows Files
+	
+	If the issue continues to occur, the modem signal may be too low for the remote
+	server to detect. To resolve this issue, follow these steps:
+	
+	1. In the Control Panel, double-click Modems, click your modem, and then click
+	  Properties.
+	
+	2. Move the Speaker Volume slider to High, click OK, and then click Close.
+	
+	If the issue still remains unresolved, check your modem settings to make sure
+	your modem is properly configured to connect to MSN.
+	
+	Additional query words: msnet msnetwork microsoft-net m.s.n. 2.50 2.60 5.0 5.1 5.2 kbimu
+	
+	======================================================================
+	Keywords          : kbenv kberrmsg kbtlc kbmsn kbfaq
+	Component         : MSN
+	Technology        : kbMSNSearch kbMSN520 kbMSN510 kbMSN500 kbMSN252 kbMSN260
+	Version           : :2.52,2.6,5.0,5.1,5.2
+	Issue type        : kbprb
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

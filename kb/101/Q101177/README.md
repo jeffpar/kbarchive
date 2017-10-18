@@ -1,0 +1,140 @@
+---
+layout: page
+title: "Q101177: Running PC-NFS 5.0 with Windows for Workgroups"
+permalink: kb/101/Q101177/
+---
+
+## Q101177: Running PC-NFS 5.0 with Windows for Workgroups
+
+	Article: Q101177
+	Product(s): Microsoft Windows 3.x Retail Product
+	Version(s): WINDOWS:3.1
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 03-OCT-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows for Workgroups version 3.1 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Sun Microsystems has announced that version 5.0 of its PC-NFS network operating
+	system software supports connectivity with Microsoft Windows for Workgroups
+	(WFWG) version 3.1. This article describes how to set up PC-NFS with Windows for
+	Workgroups. This procedure is designed for use with PC-NFS version 5.0 only;
+	previous versions of PC-NFS are not compatible with Windows for Workgroups.
+	
+	
+	Microsoft will assist in the installation of PC-NFS with Windows for Workgroups.
+	Sun Microsystems is responsible for supporting the installation, configuration,
+	and use of PC-NFS. Customers who have issues that cannot be resolved with
+	standard network troubleshooting should contact Sun Microsystems for assistance.
+	
+	MORE INFORMATION
+	================
+	
+	Installing WFWG and PC-NFS Version 5.0
+	--------------------------------------
+	
+	To use PC-NFS version 5.0 with Windows for Workgroups version 3.1, you must use
+	the updated WFWNET.DRV driver included with PC-NFS. To update the driver, simply
+	delete the current version located in your WINDOWS\SYSTEM subdirectory, and
+	replace it with the current version.
+	
+	To install and provide connectivity to PC-NFS and Windows for Workgroups, do the
+	following:
+	
+	1. Install Windows for Workgroups version 3.1.
+	
+	2. Run the PC-NFS Install program, and select NDIS as the network adapter.
+	
+	3. Run the QuickNDIS utility, and configure it for Windows for Workgroups.
+	
+	4. Run the Winstall program.
+	
+	NOTE: For further information about installing and configuring PC-NFS, refer to
+	your PC-NFS documentation.
+	
+	The installation program for Sun PC-NFS makes changes to the AUTOEXEC.BAT,
+	CONFIG.SYS, PROTOCOL.INI, and SYSTEM.INI files. These changes are documented in
+	your PC-NFS installation guide.
+	
+	AUTOEXEC.BAT
+	
+	The following lines are added to the AUTOEXEC.BAT file, but the SET statements
+	vary with each installation:
+	
+	     Set TZ=EST5EDT
+	     Set NFSDRIVE=C
+	     Set NFSPATH=C:\NFS
+	     Set TN_DIR=C:\NFS\TELNET
+	     C:\NFS\PRT *
+	     C:\NFS\NET INIT
+	     C:\NFS\RTM
+	
+	CONFIG.SYS The following lines are added to the CONFIG.SYS file after the device
+	drivers installed by Windows for Workgroups. The lines should appear in this
+	order:
+	
+	     Device=C:\NFS-NDIS.SYS
+	     Device=C:\NFS\PCNFS.SYS
+	     Device=C:\NFS\SOCKDRV.SYS
+	
+	PROTOCOL.INI
+	
+	The following section is added to the PROTOCOL.INI file:
+	
+	     [NFS-NDIS]
+	     DriverName=NFSLINK$
+	     Bindings=MS$ELNKII
+	
+	SYSTEM.INI
+	
+	The following lines are added to the identified sections of the SYSTEM.INI file:
+	
+	     [Boot]
+	     secondnet.drv=pcnfs.drv
+	
+	     [386Enh]
+	     secondnet=pcnfs.386
+	
+	WFWG and Previous Versions of PC-NFS
+	------------------------------------
+	
+	If you install Windows for Workgroups version 3.1 on a network running a version
+	of PC-NFS earlier than version 5.0, Windows for Workgroups does not display a
+	warning that this version of PC-NFS is not supported. (Normally, Windows for
+	Workgroups issues a warning during setup if the currently installed networking
+	software is not compatible with Windows for Workgroups.)
+	
+	Windows for Workgroups version 3.1 Setup does not have the ability to detect the
+	presence of a PC-NFS network.
+	
+	
+	To run Windows for Workgroups properly on a Sun PC-NFS workstation, you must
+	either update your PC-NFS software to version 5.0 or remove all references to
+	PC-NFS connectivity from the CONFIG.SYS and AUTOEXEC.BAT files. If you don't
+	remove the references to the Sun client software before rebooting, the system
+	may stop responding (hang) as the conflicting network device drivers attempt to
+	load.
+	
+	The products included here are manufactured by Sun Microsystems, a vendor
+	independent of Microsoft; we make no warranty, implied or otherwise, regarding
+	these products' performance or reliability.
+	
+	KBCategory: kbnetwork kbdisplay kb3rdparty kbsetup
+	KBSubcategory: wfw wfwg
+	
+	Additional query words: 3.10 3.1
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbWFWSearch kbWFW310
+	Version           : WINDOWS:3.1
+	
+	=============================================================================
+	

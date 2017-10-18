@@ -1,0 +1,65 @@
+---
+layout: page
+title: "Q159173: XCLN: Scanpst.exe Fails w/ Divide By Zero During Step 7 (of 8)"
+permalink: kb/159/Q159173/
+---
+
+## Q159173: XCLN: Scanpst.exe Fails w/ Divide By Zero During Step 7 (of 8)
+
+	Article: Q159173
+	Product(s): Microsoft Exchange
+	Version(s): WINDOWS:4.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 11-APR-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Windows 3.x client, version 4.0 
+	- Microsoft Exchange Windows NT client, version 4.0 
+	- Microsoft Exchange Windows 95/98 client, version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you run Scanpst.exe, the application terminates with a Divide by Zero
+	failure.
+	
+	CAUSE
+	=====
+	
+	Scanpst.exe was dividing a number by the result of a function call. In a rare
+	case, the function call returned zero (which is normal) and the division
+	operation failed.
+	
+	WORKAROUND
+	==========
+	
+	If Scanpst.exe was started as a result of normal administration, the failure of
+	Scanpst.exe may not be indicative of any problem in the PST file. Until a
+	corrected Scanpst.exe is available, continue to use the PST file if possible.
+	
+	If Scanpst.exe was started due to suspected file corruption, this failure may
+	prevent Scanpst.exe from correcting the PST file and placing it in a coherent
+	state. It may be necessary to create a new PST file (saving the current PST file
+	until a corrected Scanpst.exe is available).
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft Exchange client
+	version 4.0. We are researching this problem and will post new information here
+	in the Microsoft Knowledge Base as it becomes available.
+	
+	
+	Additional query words: Corruption Division Divide By Zero Stack Fault
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbExchangeSearch kbExchange400 kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange400NT kbExchange400Win95
+	Version           : WINDOWS:4.0
+	
+	=============================================================================
+	

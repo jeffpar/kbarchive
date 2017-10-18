@@ -1,0 +1,188 @@
+---
+layout: page
+title: "Q158619: INFO: STL Sample for the Vector Class Using the operat"
+permalink: kb/158/Q158619/
+---
+
+## Q158619: INFO: STL Sample for the Vector Class Using the operat
+
+	Article: Q158619
+	Product(s): Microsoft C Compiler
+	Version(s): 4.2
+	Operating System(s): 
+	Keyword(s): kbcode kbtemplate kbSTL kbVC420 kbVC500 kbVC600
+	Last Modified: 04-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The Standard C++ Library, used with:
+	   - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+	   - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+	   - Microsoft Visual C++.NET (2002) 
+	-------------------------------------------------------------------------------
+	
+	NOTE: Microsoft Visual C++ NET (2002) supported both the managed code model that is provided by the .NET Framework and the unmanaged native Windows code model. The information in this article applies to unmanaged Visual C++ code only.
+	
+	SUMMARY
+	=======
+	
+	The following sample code illustrates how to define operator < to sort a
+	vector of user-defined types.
+	
+	MORE INFORMATION
+	================
+	
+	Required Headers
+	----------------
+	
+	     <vector>
+	     <algorithm>
+	
+	Prototypes
+	----------
+	
+	     template<class _TYPE, class _A> inline
+	     bool operator<(const vector<_TYPE, _A>& _X,
+	                    const vector<_TYPE, _A>& _Y);
+	
+	NOTE: The class/parameter names in the prototype may not match the version in the
+	header file. Some have been modified to improve readability.
+	
+	Description
+	-----------
+	
+	The sample declares an empty vector of IDs, a user-defined type. It initializes
+	and adds four IDs to the vector in random order. It sorts them using the
+	operator< defined for ID and generates the newly sorted vector.
+	
+	NOTE: The sample sorts in order of Score, not Name.
+	
+	Sample Code
+	-----------
+	
+	  ////////////////////////////////////////////////////////////////////// 
+	  // 
+	  // Compile options needed: /GX
+	  // 
+	  //    Opless.cpp -- Illustrates the defining the < operator to sort vectors
+	  // 
+	  // Functions:
+	  // 
+	  //    operator< - Vector comparison operator.
+	  // 
+	  //    vector::begin - Returns an iterator to start traversal of the vector.
+	  // 
+	  //    vector::end - Returns an iterator for the last element of the vector.
+	  // 
+	  //    vector::iterator - Traverses the vector.
+	  // 
+	  //    vector::push_back - Appends (inserts) an element to the end of a
+	  //                        vector, allocating memory for it if necessary.
+	  // 
+	  //    sort algorithm - Sorts the vector.
+	  // 
+	  // Written by Tom Campbell
+	  // of Microsoft Corporation
+	  // Copyright (c) 1996 Microsoft Corporation. All rights reserved.
+	  ////////////////////////////////////////////////////////////////////// 
+	
+	  // The debugger can't handle symbols more than 255 characters long.
+	  // STL often creates symbols longer than that.
+	  // When symbols are longer than 255 characters, the warning is disabled.
+	  #pragma warning(disable:4786)
+	
+	  #include <iostream>
+	  #include <vector>
+	  #include <string>
+	  #include <algorithm>
+	  using namespace std;
+	
+	  #if _MSC_VER > 1020   // if VC++ version is > 4.2
+	     using namespace std;  // std c++ libs implemented in std
+	     #endif
+	
+	  // The ID class is used for team scoring. It holds each player's name
+	  // and score.
+	  class ID
+	  {
+	  public:
+	      string Name;
+	      int Score;
+	      ID() : Name(""), Score(0) {}
+	      ID(string NewName, int NewScore) : Name(NewName), Score(NewScore) {}
+	  };
+	
+	  // IDs will be sorted by Score, not by Name.
+	  bool operator<(const ID& x, const ID& y)
+	  {
+	      return x.Score < y.Score;
+	  }
+	
+	  // Define a template class for a vector of IDs.
+	  typedef vector<ID, allocator<ID> > NAMEVECTOR;
+	
+	  void main()
+	  {
+	      // Declare a dynamically allocated vector of IDs.
+	      NAMEVECTOR theVector;
+	
+	      // Iterator is used to loop through the vector.
+	      NAMEVECTOR::iterator theIterator;
+	
+	      // Create a pseudo-random vector of players and scores.
+	      theVector.push_back(ID("Karen Palmer", 2));
+	      theVector.push_back(ID("Ada Campbell", 1));
+	      theVector.push_back(ID("John Woloschuk", 3));
+	      theVector.push_back(ID("Grady Leno", 2));
+	
+	      // Output the contents of the vector.
+	      cout << endl << "Players and scores:" << endl;
+	      for (theIterator = theVector.begin(); theIterator != theVector.end();
+	           theIterator++)
+	          cout << theIterator->Score  << "\t"
+	               << theIterator->Name << endl;
+	      cout << endl;
+	
+	      // Sort the vector of players by score.
+	      sort(theVector.begin(), theVector.end());
+	
+	      // Output the contents of the vector in its new, sorted order.
+	      cout << "Players ranked by score:" << endl;
+	      for (theIterator = theVector.begin(); theIterator != theVector.end();
+	           theIterator++)
+	          cout << theIterator->Score  << "\t"
+	               << theIterator->Name << endl;
+	      cout << endl << endl;
+	  }
+	
+	Program Output
+	--------------
+	
+	Players and scores:
+	2       Karen Palmer
+	1       Ada Campbell
+	3       John Woloschuk
+	2       Grady Leno
+	
+	Players ranked by score:
+	1       Ada Campbell
+	2       Karen Palmer
+	2       Grady Leno
+	3       John Woloschuk
+	
+	REFERENCES
+	==========
+	
+	Visual C++ Books Online: Visual C++ Books; C/C++; Standard C++ Library Reference
+	
+	Additional query words: STL STLSample
+	
+	======================================================================
+	Keywords          : kbcode kbtemplate kbSTL kbVC420 kbVC500 kbVC600 
+	Technology        : kbVCsearch kbAudDeveloper kbVCLibrary
+	Version           : :4.2
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

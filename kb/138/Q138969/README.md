@@ -1,0 +1,108 @@
+---
+layout: page
+title: "Q138969: HOWTO: Include Report Toolbars in a Distributed Application"
+permalink: kb/138/Q138969/
+---
+
+## Q138969: HOWTO: Include Report Toolbars in a Distributed Application
+
+	Article: Q138969
+	Product(s): Microsoft FoxPro
+	Version(s): 3.0,5.0,6.0,7.0
+	Operating System(s): 
+	Keyword(s): kbvfp kbvfp300 kbvfp600
+	Last Modified: 22-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 6.0, 7.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	In a distributed application, you may need to allow users to modify report
+	layouts to fit their specific needs. While you can add this functionality,
+	unless specific steps are taken, it is possible that there will be no report
+	toolbars available. This article explains how to make the report toolbars
+	available from within a distributed application.
+	
+	MORE INFORMATION
+	================
+	
+	There are two methods available to ensure that toolbars are available in your
+	application. The first requires the Foxuser resource file, and the second uses
+	menus and system menus.
+	
+	Method One
+	----------
+	
+	Toolbar state information is stored in the Foxuser resource file. Whenever a
+	report is modified or created in the design environment and the report toolbars
+	are open when that report is saved, the state of the toolbars is written to the
+	Foxuser file.
+	
+	NOTE: The Toolbars submenu is not available until a report in actually open. If
+	you go to the View menu and try to select Toolbars, it is dimmed out if nothing
+	is open in modify mode.
+	
+	When you use this method to ensure that report toolbars are available from within
+	the application, you must meet these conditions:
+	
+	- You must have modified or created a report in the design environment with one
+	  or both report toolbars open. You must then save the report. This will save
+	  the state of the report toolbars.
+	
+	- The Foxuser resource file must be distributed with your application.
+	
+	- The resource file must be either built into your application or marked as
+	  read-only. If it isn't, when the report is modified, the toolbars closed, and
+	  the report saved, the state of the toolbars will also be saved. As a result,
+	  because the toolbars are now closed, there is no direct way to re-open them
+	  from within your application. By marking the resource file read-only, if the
+	  user should close the toolbars, the resource file will not be updated with
+	  the new state of "closed."
+	
+	Method Two
+	----------
+	
+	A second and perhaps easier way to achieve the same result involves using the
+	Visual FoxPro System Menus. The following steps show how to do it:
+	
+	1. In the Command window, type the following:
+	
+	  CREATE MENU TESTMENU
+	
+	2. Create the top-level menu option by entering the word "View" (without quotes)
+	  in the Prompt box. Change the Result drop-down to Submenu.
+	
+	3. Click the Options button to the right of the menu you just created. A Prompt
+	  Options dialog box appears. In the box next to Pad Name, enter "_msm_view"
+	  (without quotes). Click OK to close the dialog box.
+	
+	4. Click the Create button located to the right of the Submenu drop-down. Enter
+	  "Toolbars" (without quotes) for Prompt and change the Result drop-down to a
+	  value of Bar #.
+	
+	5. Enter "_mvi_toolb" (without quotes) in the text box to the right of the
+	  Result drop-down.
+	
+	6. On the main VFP menu bar, click View, and then click Menu Options. In the
+	  Menu Options dialog box, enter "_mview" (without quotes) for the menu name,
+	  and then click OK to close the dialog box.
+	
+	
+	When you compile the menu, you should have Toolbar functionality in your
+	application.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbvfp kbvfp300 kbvfp600 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP600
+	Version           : :3.0,5.0,6.0,7.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

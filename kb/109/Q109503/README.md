@@ -1,0 +1,382 @@
+---
+layout: page
+title: "Q109503: NETWORKS.WRI from Windows for Workgroups 3.11 (Part 1 of 4)"
+permalink: kb/109/Q109503/
+---
+
+## Q109503: NETWORKS.WRI from Windows for Workgroups 3.11 (Part 1 of 4)
+
+	Article: Q109503
+	Product(s): Microsoft Windows 3.x Retail Product
+	Version(s): WINDOWS:3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 22-SEP-1999
+	
+	3.11
+	
+	WINDOWS
+	
+	kbnetwork kb3rdparty kbref
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows for Workgroups version 3.11 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The following information was taken from the Microsoft Windows for Workgroups
+	version 3.11 NETWORKS.WRI file.
+	
+	MORE INFORMATION
+	================
+	
+	Additional Notes About Networks
+	_______________________________________________
+	
+	This document contains information about specific networks. For
+	additional information about Windows for Workgroups that does not
+	pertain to networks, see "Other Online Documents" at the end of this
+	document.
+	
+	Contents
+	
+	This document contains information about the following topics:
+	
+	1.0  General Notes
+	2.0  Using Novell NetWare
+	2.1  Setting Up Novell NetWare to Work with Windows for Workgroups 3.11
+	2.2  More Information about Using Novell NetWare with Windows for
+	    Workgroups 3.11
+	2.3  Changes to System Files
+	     2.3.1 IPXODI.COM and LSL.COM support over Ethernet
+	           or Token Ring Networks
+	     2.3.4 IPX/SPX Support
+	     2.3.3 IPXODI.COM and LSL.COM support over an ArcNet
+	           Network
+	     2.3.4 IPX/SPX Support with an ArcNet Network
+	
+	3.0 Using Banyan VINES
+	3.1 Changes to System Files when You Install Support for Banyan VINES
+	3.2 Special Information about Specific Versions of VINES
+	3.3 Banyan VINES Troubleshooting Tips
+	
+	4.0 Using Windows for Workgroups 3.11 with DEC PATHWORKS
+	4.1 Changes to System Files when You Install Support for DEC
+	   PATHWORKS Instead of the Microsoft Windows Network
+	4.2 Changes to System Files when You Install Support for DEC
+	   PATHWORKS along with the Microsoft Windows Network
+	
+	5.0 Using Windows for Workgroups 3.11 with Artisoft LANtastic
+	5.1 Changes to System Files When You Install Artisoft LANtastic Drivers
+	5.2 Changes to System Files When You Install Support for Artisoft LANtastic
+	5.3 More Information about Using Artisoft LANtastic with Windows for
+	   Workgroups 3.11
+	
+	6.0 Using Windows for Workgroups 3.11 with SunSelect PC-NFS
+	6.1 Changes to System Files When You Install Support for PC-NFS
+	
+	7.0 Using Windows for Workgroups 3.11 with Beame & Whiteside BW-NFS
+	
+	8.0 Using Windows for Workgroups 3.11 with ArcNet
+	
+	9.0 Using Windows for Workgroups 3.11 with TCP/IP
+	9.1 Changes to System Files When You Install TCP/IP
+	9.2 Sample PROTOCOL.INI file
+	9.3 More Information about using Windows for Workgroups 3.11 with TCP/IP
+	
+	10.0 Using Windows for Workgroups 3.11 with Data Link Control (DLC)
+	    Protocol
+	10.1 Changes to System Files When You Install MS-DLC
+	10.2 Sample PROTOCOL.INI file
+	
+	11.0 Using Windows for Workgroups 3.11 with MS-Net  Compatible Networks
+	
+	12.0 Using an Unlisted Network Adapter with No OEMSETUP.INF File
+	
+	13.0 Other Online Documents
+	
+	MS-DOS is a registered trademark and Windows is a trademark of
+	Microsoft Corporation.
+	
+	3+Share is a registered trademark of 3Com Corporation.
+	Artisoft and LANtastic are registered trademarks of Artisoft, Inc.
+	Banyan and VINES are registered trademarks of Banyan Systems, Inc.
+	BW-NFS is a registered trademark of Beame & Whiteside Software, Inc.
+	ArcNet is a registered trademark of Datapoint Corporation.
+	DEC is a registered trademark and PATHWORKS is a trademark of Digital
+	Equipment Corporation.
+	TCS is a registered trademark of Eurotherm International P.L.C.
+	NetWare and Novell are registered trademarks of Novell, Inc.
+	386MAX is a registered trademark of Qualitas, Inc.
+	Qemm is a trademark of Quarterdeck Office Systems.
+	PC-NFS is a registered trademark and SunSelect is a trademark of Sun
+	Microsystems, Incorporated.
+	Net/One and Ungermann-Bass are registered trademarks of Ungermann-Bass,
+	Inc.
+	
+	1.0  General Notes
+	
+	- Many settings in the SYSTEM.INI file affect the way Windows for
+	  Workgroups works. You can change these settings to correct most
+	  problems you might have while you are using Windows for Workgroups
+	  and other networks. See the SYSINI.WRI online document for
+	  information about changing the following SYSTEM.INI settings:
+	
+	[Boot]
+	Network.drv=
+	SecondNet.drv=
+	
+	[386Enh]
+	32BitAccess=
+	AllVMsExclusive=
+	EMMExclude=
+	FileSysChange=
+	InDOSPolling=
+	Int28Critical=
+	NetAsyncFallback=
+	NetAsyncTimeout=
+	NetCard=
+	NetDMASize=
+	NetHeapSize=
+	NetMisc=
+	Network=
+	ReflectDOSInt2A=
+	SecondNet=
+	TimerCriticalSection=
+	Transport=
+	TokenRingSearch=
+	V86ModeLANAs=
+	UniqueDOSPSP=
+	
+	[network]
+	EnableSharing=
+	Exclude=
+	FileSharing=
+	LANAs=
+	LogonValidated=
+	Multinet=
+	PrintSharing=
+	Reshare=
+	
+	- The Windows for Workgroups Setup program places the following lines
+	  in your SYSTEM.INI file that are required for Windows for Workgroups
+	  to run correctly. Do not remove any of the following entries:
+	
+	[boot]
+	network.drv=wfwnet.drv
+	
+	[386Enh]
+	network=*vnetbios,vnetsup.386,vredir.386,vserver.386,*vwc
+	
+	If you have upgraded over a previous version of Windows 3.1 or Windows for
+	Workgroups 3.1 with an installed network, Setup may leave unnecessary
+	files, causing performance problems or incorrect network behavior. If you
+	experience network problems and have any of these lines in your SYSTEM.INI
+	file (or WIN.INI file), try removing the lines to see if the problem can be
+	corrected.
+	
+	In the SYSTEM.INI file:
+	
+	[386Enh]
+	INDOSPolling=TRUE
+	EMMExclude=D800-DFFF (or other memory range)
+	TimerCriticalSection=5000 (or other value)
+	UniqueDOSPSP=TRUE
+	PSPIncrement=5
+	NetHeapSize=76 (or other value)
+	NetAsynchTimeout=50
+	NetAsynchFallback=true
+	PerVMFiles=0
+	OverlappedIO=off
+	
+	In the WIN.INI file:
+	
+	load=winpopup.exe
+	load=nwpopup.exe
+	
+	[ports]
+	LPT1.DOS=
+	LPT2.DOS=
+	LPT3.DOS=
+	
+	- Many protocols and other networks require the TimerCriticalSection
+	  line in the [386Enh] section of the SYSTEM.INI file to be set to a
+	  value of 10000 or greater. For more information, see the SYSINI.WRI
+	  online document.
+	
+	- The default value for the NetHeapSize line in the [386Enh] section
+	  of the SYSTEM.INI file is 16K. Although some applications require
+	  this value, in most cases you can decrease the value to 4K in order
+	  to increase the amount of memory available to your applications. A
+	  few applications require the value to be 4K.
+	
+	- If you want to change your network configuration, use Windows Setup
+	  to make the changes.
+	
+	- Some network adapters require the EMMExclude line in the [386Enh]
+	  section of the SYSTEM.INI file to be set to the memory range used by
+	  the adapter. For more information, see your network-adapter
+	  documentation and the SYSINI.WRI online document.
+	
+	  These cards may also require an x= option on the EMM386 command line
+	  in your CONFIG.SYS file. For more information, see Appendix C,
+	  "Troubleshooting," in the Microsoft Workgroup Add-On "User's Guide." If
+	  you are using 386Max, QEMM, or another memory manager, see your
+	  memory-manager documentation to find out whether you need to exclude
+	  this area.
+	
+	- The Windows for Workgroups 3.11 Resource Kit contains additional
+	  information about setting up and configuring Windows for Workgroups
+	  for use with other networks and information for system
+	  administrators. This kit provides complete technical information
+	  about Windows for Workgroups for the support professional. It
+	  includes a technical reference manual and a disk containing helpful
+	  utilities, drivers, and accessories.
+	
+	  If you currently own the Windows for Workgroups 3.1 Resource Kit, an
+	  addendum is available. It provides information about the new features
+	  and enhancements available in Windows for Workgroups 3.11.
+	
+	  To order the Windows for Workgroups 3.11 Resource Kit or the Windows
+	  for Workgroups Resource Kit Addendum for Version 3.11 within the
+	  United States, dial:
+	
+	  1-800-642-7676
+	
+	  To order outside of the United States, dial the phone number for your
+	  area. You can find this number on the International Subsidiary card.
+	
+	- If you are running a shared copy of Windows for Workgroups from a
+	  network drive, make sure both your personal Windows directory and the
+	  shared network directory are included on the path command line in
+	  your AUTOEXEC.BAT file. To run a shared copy of Windows for
+	  Workgroups, you must start the network before starting Windows for
+	  Workgroups. (When you start the network before you start Windows for
+	  Workgroups, about 100K less conventional memory is available.)
+	
+	- If you used setup /n to set up a shared copy of Windows for
+	  Workgroups and you specified a network directory for your personal
+	  Windows directory, you cannot start the network (real-mode
+	  redirector) before you start Windows for Workgroups unless you first
+	  copy your SYSTEM.INI file to the directory on your hard disk where
+	  NET.EXE is located. NET.EXE should be located in the root directory
+	  of your startup drive.
+	
+	  Also, if you used setup /n to set up your shared copy of Windows for
+	  Workgroups over a Windows NT or LAN Manager network, you will not be
+	  able to share your files or printers.  This is because you need to
+	  Microsoft Windows Network by using the real-mode redirector, and you
+	  cannot share files or printers with the real-mode redirector.  For
+	  more information, see the Windows for Workgroups 3.11 Resource Kit.
+	
+	- If you receive sharing violations while running a shared copy of
+	  Windows for Workgroups, make sure that all of the files in the shared
+	  network directory are marked as read-only.
+	
+	- The NetBEUI protocol is the only protocol included with Windows
+	  for Workgroups that can be used with the Microsoft Windows Network
+	  from the DOS prompt. All others can be used only while Windows for
+	  Workgroups is running. If you will be using the Microsoft Windows
+	  Network from the DOS prompt, make sure the NetBEUI protocol is one of
+	  the protocols you are using.
+	
+	- Windows Print Manager spools print jobs to the location specified
+	  by the MS-DOS environment variable TEMP. If the TEMP variable is not
+	  set, Print Manager will use the root of drive C.  The TEMP variable
+	  may be set by placing a set temp= statement in your AUTOEXEC.BAT file
+	  or network login script. For example, to spool to the network
+	  directory C:\WINDOWS\TEMP, you would use the statement set
+	  temp=c:\windows\temp. Each user must have a personal TEMP directory.
+	
+	2.0  Using Novell NetWare
+	
+	For information about setting up Novell NetWare support in Windows
+	for Workgroups, see Chapter 9, "Using Other Networks," in the
+	Microsoft Workgroup Add-On "User's Guide."
+	
+	Windows for Workgroups 3.11 supports NDIS, IPX, and ODI
+	network-adapter drivers.
+	
+	If you are upgrading from Windows for Workgroups 3.1 and you were
+	using the MSIPX drivers that were included with Windows for
+	Workgroups 3.1, you should use either the IPX.COM driver or the
+	IPXODI.COM driver supplied by Novell. We recommend that you use
+	IPXODI.COM. To do this, see the following section, "Setting up Novell
+	NetWare to Work With Windows for Workgroups 3.11."
+	
+	Once you have set up Novell NetWare to work with either the IPX.COM
+	driver or the IPXODI.COM driver, remove NetWare support from Windows
+	for Workgroups. Then reinstall NetWare support. This will give you
+	the option to choose either IPX.COM or IPXODI.COM.
+	
+	2.1 Setting Up Novell NetWare to Work with Windows for Workgroups 3.11
+	
+	We recommend that you set up Novell NetWare to work with the
+	IPXODI.COM driver. However, the IPX.COM monolithic driver is also
+	supported.
+	
+	Note:
+	If you are using IPXODI.COM, you must make sure that your copies of
+	IPXODI.COM and LSL.COM are versions 1.20 or higher. Otherwise,
+	Windows for Workgroups will not be able to run.
+	
+	To set up Novell NetWare on your computer:
+	
+	1. If you are setting up Novell NetWare version 4.0 or higher, add
+	  the following line to your CONFIG.SYS file:
+	
+	     lastdrive=z
+	
+	  Otherwise, add the line lastdrive=p. This will make your login drive Q:
+	
+	2. If you are installing Novell NetWare to work with IPXODI.COM, add
+	  the following lines to your AUTOEXEC.BAT file:
+	
+	     cd c:\<NetWare directory>
+	     lsl
+	     <appropriate ODI driver for your network card>
+	     ipxodi
+	     netx /ps=<preferred server name>
+	     q:login <username>
+	
+	   If you are installing Novell NetWare to work with IPX.COM, add the
+	   following lines to your AUTOEXEC.BAT file.
+	
+	      ipx
+	      netx /ps=<preferred server name>
+	      q:login <username>
+	
+	3. Add the name of your NetWare directory to the PATH line in your
+	  AUTOEXEC.BAT file.
+	
+	4. Create a NET.CFG file in your NetWare directory. See your NetWare
+	  documentation for information on how to do this.
+	
+	  This is a sample NET.CFG file:
+	
+	  Link Driver EXP16ODI
+	       Frame Ethernet_802.3
+	       Frame Ethernet_II
+	       Frame Ethernet_802.2
+	       Frame Ethernet_SNAP
+	       port 300
+	       int 5
+	
+	5. Restart your computer. Once you are able to log on to your
+	  preferred server successfully, you can set up Windows for Workgroups
+	  to work with NetWare. See the Microsoft Workgroup Add-On "User's Guide"
+	  for more information.
+	
+	Additional query words: wfw wfwg 3.11
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+	Version           : WINDOWS:3.11
+	
+	=============================================================================
+	

@@ -1,0 +1,125 @@
+---
+layout: page
+title: "Q241985: TCP/IP Clients May Intermittently Lose 3270 Sessions"
+permalink: kb/241/Q241985/
+---
+
+## Q241985: TCP/IP Clients May Intermittently Lose 3270 Sessions
+
+	Article: Q241985
+	Product(s): Microsoft SNA Server
+	Version(s): 3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3
+	Operating System(s): 
+	Keyword(s): kbsna300sp1 kbsna300sp2 kbsna300sp3 kbsna300sp4 sna4 kbsna400sp1 kbsna400sp2 kbsna400sp
+	Last Modified: 11-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 3.0 SP4, 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+	
+	  Q256986 Description of the Microsoft Windows Registry
+	
+	SYMPTOMS
+	========
+	
+	SNA Clients connecting to the SNA Server computer through TCP/IP may have
+	intermittent problems with 3270 sessions dropping. The user's emulator may go to
+	a blank screen, or it may be returned to the mainframe sign-on screen. In either
+	case, the session must be restarted.
+	
+	The following event may be logged in the Application event log on the SNA Server
+	computer:
+	
+	  Event 21
+	  (1124) Negative Response Sent on Connection value (SENSE = 831)
+	  SUBCODE INFORMATION:
+	
+	  X'1124' A negative response was sent and logged. This error normally follows a
+	  more specific error message, depending on the type of negative response sent
+	  and its cause. The SNA sense data provides details about the type of error.
+	
+	  ACTION: See IBM Systems Network Architecture: Formats for an explanation of
+	  the sense data.
+	
+	CAUSE
+	=====
+	
+	When the SNA Client is configured to use the TCP/IP sockets interface to
+	communicate with the SNA Server computer, the TCP/IP messages flowing between
+	the computers have the "Don't Fragment" bit set. A TCP/IP router may not return
+	a "destination unreachable" message to the host when it needs to fragment a TCP
+	segment with the "Don't Fragment" bit set. Instead, it drops the segment, and
+	the host gets a "destination not receiving data" message. Consequently, the host
+	retransmits the segment until the retransmission limit is reached (the default
+	is 5). After reaching this limit, the session is reset.
+	
+	Note: This is just one cause of the Event 21 error. There may be other issues
+	that cause this error to be logged.
+	
+	RESOLUTION
+	==========
+	
+	On the SNA Server computer, set the following registry value to 1. The server
+	must be restarted for the change to take affect.
+	
+	WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+	that may require you to reinstall your operating system. Microsoft cannot
+	guarantee that you can solve problems that result from using Registry Editor
+	incorrectly. Use Registry Editor at your own risk.
+	
+	1. Start Registry Editor (Regedt32.exe).
+	
+	2. Locate the following key in the registry:
+	
+	  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\tcpip\parameters
+	
+	3. On the Edit menu, click Add Value, and then add the following registry
+	  value:
+	
+	  Value Name: EnablePMTUBHDetect
+	  Data Type: REG_DWORD
+	  Value: 1
+	
+	4. Quit Registry Editor.
+	
+	MORE INFORMATION
+	================
+	
+	When a TCP/IP segment is sent from the host to the router with the "Don't
+	Fragment" bit set, and the segment is too large for the router to handle, the
+	router should notify the host with a "Destination Unreachable" message. However,
+	sometimes the router does not send the notification to the host, and instead, it
+	drops the segment. A router that simply drops packets in this manner is called a
+	"Black Hole" router.
+	
+	Setting the registry parameter to 1 (True) enables TCP to try to detect "Black
+	Hole" routers. With this feature enabled, TCP attempts to send segments without
+	the "Don't Fragment" bit set if several retransmissions of a segment are
+	unacknowledged. If the segment is acknowledged as a result, the TCP Maximum
+	Segment Size (MSS) is decreased and the "Don't Fragment" bit is set in future
+	packets on the connection.
+	
+	For additional information on this topic, click the article numbers below to view
+	the articles in the Microsoft Knowledge Base:
+	
+	  Q120642 TCP/IP and NBT Configuration Parameters for Windows 2000 or Windows
+	  NT
+	
+	  Q136970 PMTU Black Hole Detection Algorithm Change for Windows NT 3.51
+	
+	  Q159211 Diagnoses and Treatment of Black Hole Routers
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbsna300sp1 kbsna300sp2 kbsna300sp3 kbsna300sp4 sna4 kbsna400sp1 kbsna400sp2 kbsna400sp3 
+	Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ400 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3 kbSNAServ300SP2 kbSNAServ300SP4
+	Version           : :3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3
+	Issue type        : kbprb
+	
+	=============================================================================
+	

@@ -1,0 +1,218 @@
+---
+layout: page
+title: "Q160606: Performance Enhancements for SQL Server Under Windows NT"
+permalink: kb/160/Q160606/
+---
+
+## Q160606: Performance Enhancements for SQL Server Under Windows NT
+
+	Article: Q160606
+	Product(s): Microsoft Windows NT
+	Version(s): winnt:4.0
+	Operating System(s): 
+	Keyword(s): kbnetwork
+	Last Modified: 10-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 4.0 
+	- Microsoft Windows NT Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	A new interface was added as a performance enhancement for SQL Server when
+	running under Windows NT. This enhancement involves scatter/gather I/O
+	functionality.
+	
+	
+	MORE INFORMATION
+	================
+	
+	What is Scatter/Gather?
+	-----------------------
+	
+	Scatter/gather is a standard technique used in some high-performance I/O
+	situations. It typically refers to Direct Memory Access (DMA) transfers. A given
+	block of data might exist in memory as several discrete buffers. Without
+	scatter/gather, when setting up a memory-to-disk transfer, the operating system
+	will often do a transfer for each buffer, or block move them to a single larger
+	buffer before initiating the transfer. Both of these are inefficient. It is
+	better if the operating system/driver/hardware gathers up the data from the
+	discrete locations in memory and transfers them "in place" as a single
+	operation. Likewise, on input from disk, if the data block is scattered directly
+	to the necessary locations in memory without intermediate block moves, and so
+	on, it is faster.
+	
+	Interface Specification
+	-----------------------
+	
+	ReadFileScatter
+	
+	The ReadFileScatter function reads data from a file, starting at the position
+	indicated by the file offset in the OVERLAPPED structure, and distributes the
+	data into multiple user buffers.
+	
+	  BOOL ReadFileScatter(
+	  <BLOCKQUOTE>
+	      HANDLE hFile,                         // handle of file to read
+	      FILE_SEGMENT_ELEMENT aSegmentArray[], // array of buffer segments that
+	  receives data
+	      DWORD nNumberOfBytesToRead,           // number of bytes to read
+	      LPDWORD lpReserved,                   // reserved must be NULL
+	      LPOVERLAPPED lpOverlapped             // address of structure for data
+	     );
+	
+	Parameters
+	
+	hFile
+	
+	Identifies the file to be read. The file handle must have been created with
+	GENERIC_READ access to the file.
+	
+	The file must be opened using FILE_FLAG_OVERLAPPED to specify asynchronous I/O,
+	and FILE_FLAG_NO_BUFFERING to specify non-cached I/O.
+	
+	aSegmentArray
+	
+	Points an array of pointers to segments. A segment is a memory buffer where part
+	of the transferred data should be placed. Segments are system page sized and
+	must be aligned on a page size boundary.
+	
+	The memory segment can be allocated using VirtualAllocVlm, or can be normal
+	32-Bit address memory but not both.
+	
+	NNumberOfBytesToRead
+	
+	Specifies the number of bytes to be read from the file.
+	
+	lpReserved
+	
+	Reserved must be NULL.
+	
+	lpOverlapped
+	
+	Points to an OVERLAPPED structure. This structure is required and must point to a
+	valid OVERLAPPED structure.
+	
+	The read operation starts at the offset specified in the OVERLAPPED structure and
+	ReadFileScatter may return before the read operation has been completed. In this
+	case, ReadFileScatter returns FALSE and the GetLastError function returns
+	ERROR_IO_PENDING. This allows the calling process to continue while the read
+	operation finishes. The application can use either
+	GetOverlappedResult/HasOverlappedIoCompleted to pick up I/O completion
+	notification, or GetQueuedCompletionStatus to pick up I/O completion.
+	
+	Return Values
+	
+	If the function succeeds, the return value is nonzero. If the function fails, the
+	return value is zero. To get extended error information, call GetLastError. If
+	ReadFileScatter attempts to read past the end of the file, the function returns
+	zero, and GetLastError returns ERROR_HANDLE_EOF
+	
+	Remarks
+	
+	Each FILE_SEGMENT_ELEMENT is 64 bits long. All 64 bits are used to calculate the
+	buffer pointer; therefore, applications must explicitly zero the upper 32 bits
+	of the element on systems which do not support 64-bit pointers.
+	
+	WriteFileGather
+	
+	The WriteFileGather function gathers data from multiple buffers and writes the
+	data to a file. The function is designed for asynchronous operation. The
+	function starts writing data to the file at the position specified by the
+	OVERLAPPED structure.
+	
+	  BOOL WriteFileGather(
+	      HANDLE hFile,                // handle to file to write to
+	      FILE_SEGMENT_ELEMENT aSegmentArray [], // array of buffer segments
+	  containing the data
+	      DWORD nNumberOfBytesToWrite,    // number of bytes to write
+	      LPDWORD lpReserved,             // Reserved must be NULL
+	      LPOVERLAPPED lpOverlapped       // pointer to structure needed for
+	  overlapped I/O
+	     );
+	
+	Parameters
+	
+	hFile
+	
+	Identifies the file to be written to. The file handle must have been created with
+	GENERIC_WRITE access to the file. The file must be opened using
+	FILE_FLAG_OVERLAPPED to specify asynchronous I/O, and FILE_FLAG_NO_BUFFERING to
+	specify non-cached I/O.
+	
+	aSegmentArray
+	
+	Points an array of pointers to segments. A segment is a memory buffer where part
+	of the transferred data should be placed. Segments are system page sized and
+	must be aligned on a page size boundary. The memory segment can be allocated
+	using VirtualAllocVlm, or can be normal 32-bit address memory, but not both.
+	
+	NNumberOfBytesToWrite
+	
+	Specifies the number of bytes to write to the file.
+	
+	Unlike the MS-DOS operating system, Windows NT interprets a value of zero as
+	specifying a null write operation. A null write operation does not write any
+	bytes but does cause the time stamp to change.
+	
+	lpReserved
+	
+	Reserved must be NULL.
+	
+	LpOverlapped
+	
+	Points to an OVERLAPPED structure. This structure is required and must point to a
+	valid OVERLAPPED structure. The write operation starts at the offset specified
+	in the OVERLAPPED structure and WriteFileGather may return before the write
+	operation has been completed. In this case, WriteFileGather returns FALSE and
+	the GetLastError function returns ERROR_IO_PENDING. This allows the calling
+	process to continue processing while the write operation is being completed. The
+	application can use either GetOverlappedResult/HasOverlappedIoCompleted to pick
+	up I/O completion notification, or GetQueuedCompletionStatus to pick up I/O
+	completion.
+	
+	Return Values
+	
+	If the function succeeds, the return value is nonzero. If the function fails, the
+	return value is zero. To get extended error information, call GetLastError.
+	
+	Remarks
+	
+	Each FILE_SEGMENT_ELEMENT is 64 bits long. All 64 bits are used to calculate the
+	buffer pointer; therefore, applications must explicitly zero the upper 32 bits
+	of the element on systems which do not support 64-bit pointers.
+	
+	If part of the file is locked by another process and the write operation overlaps
+	the locked portion, this function fails.
+	
+	Unlike the MS-DOS operating system, Windows NT interprets zero bytes to write as
+	specifying a null write operation and WriteFileGather does not truncate or
+	extend the file. To truncate or extend a file, use the SetEndOfFile function.
+	
+	STATUS
+	======
+	
+	Windows NT 4.0 Service Pack 2 introduced a new interface that acts as a
+	performance enhancer for SQL Server when running under Windows NT. This
+	enhancement involves scatter/gather and input/output functionality.
+	
+	For additional information on obtaining the latest service pack for Windows NT
+	4.0, click the article number below to view the article in the Microsoft
+	Knowledge Base:
+	
+	  Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+	
+	
+	Additional query words: prodnt SQL
+	
+	======================================================================
+	Keywords          : kbnetwork 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+	Version           : winnt:4.0
+	
+	=============================================================================
+	

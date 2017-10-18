@@ -1,0 +1,104 @@
+---
+layout: page
+title: "Q224831: Tips on Upgrading from IIS 3.0 to IIS 4.0"
+permalink: kb/224/Q224831/
+---
+
+## Q224831: Tips on Upgrading from IIS 3.0 to IIS 4.0
+
+	Article: Q224831
+	Product(s): Internet Information Server
+	Version(s): winnt:4.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 31-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Server 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article provides tips on upgrading a Web site from Internet Information
+	Server (IIS) 3.0 to IIS 4.0
+	
+	MORE INFORMATION
+	================
+	
+	CAUTION: When you run the Windows NT 4.0 Option Pack (NTOP) Setup program, Do
+	Not click the Cancel button once it has begun copying files. If you cancel it at
+	this time, you will have to completely rebuild the Web server.
+	
+	If you are using PERL in any of your Web pages, refer to the following Microsoft
+	Knowledge Base articles:
+	
+	  Q190011 Perl Script Mappings Converted to Uppercase During Upgrade
+	
+	  Q186801 PERL Scripts Do Not Run
+	
+	Note: A version of PERL that some IIS users use is provided by ActiveState. For
+	more information, visit:
+	
+	  http://www.activestate.com/
+	
+	
+	If you use the logging features of IIS, read:
+	
+	  Q183733 Active Log Format Drop-down List Is Not Populated
+	
+	Although it's not a requirement, it is recommended that you Do Not modify the
+	Default Web site. If possible, leave it as-is, and instead, create a new Web
+	site or sites for your pages. Changing the default permissions and other
+	properties of the Default Web site can cause upgrade complications.
+	
+	If the system administrator has restricted access or permissions to the Web
+	server directories, you may have problems when upgrading. To verify that the
+	NTFS permissions are set up properly, refer to the following Knowledge Base
+	article:
+	
+	  Q187506 List of NTFS Permissions Required for IIS Site to Work
+	
+	IIS 4.0 installation creates two user accounts: IUSR_<machinename> and
+	IWAM_<machinename>. These two accounts are required during the latter part
+	of the NTOP installation, specifically by Index Server and the Sample Sites. If
+	the domain controllers are not synchronized in time for that part of the
+	installation, the accounts will not be available, and the installation will
+	fail.
+	
+	To avoid this situation when you install on a BDC, choose a custom installation,
+	and deselect Index Server and the Sample Sites. After the installation has
+	completed and the domain controllers have been synchronized, run the NTOP Setup
+	again, and selectively install Index Server and the Sample Sites.
+	
+	When you run the Windows NT 4.0 Option Pack Setup program, click the Upgrade Plus
+	button to perform a custom installation. Leave everything checked that is
+	already selected by default, and then select additional components that you
+	want, such as additional samples and documentation.
+	
+	NOTE: This problem does not occur with the Windows 2000 Indexing Service.
+	
+	Related Topics
+	--------------
+	
+	For information on the benefits of upgrading from IIS 3.0 to IIS 4.0, see:
+	
+	  http://www.microsoft.com/ntserver/web/exec/overview/option_pack4.asp
+	
+	For tuning tips on IIS 4.0, download the self-extracting document "Tuning
+	Parameters for High-Volume Sites" from:
+	
+	  http://www.microsoft.com/ntserver/zipdocs/tuning.exe
+	
+	Additional query words: tricks caveats gotchas problems advice advise guidance suggestions recommendations hints set up nt4op ntop install installation
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbiisSearch kbiis400
+	Version           : winnt:4.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

@@ -1,0 +1,90 @@
+---
+layout: page
+title: "Q196222: Cannot Log On to Windows NT and NetWare Simultaneously"
+permalink: kb/196/Q196222/
+---
+
+## Q196222: Cannot Log On to Windows NT and NetWare Simultaneously
+
+	Article: Q196222
+	Product(s): Microsoft Windows NT
+	Version(s): WinNT:4.0
+	Operating System(s): 
+	Keyword(s): kbenv kbnetwork 3rdpartynet kb3rdPartyNetClient
+	Last Modified: 27-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 4.0 
+	- Microsoft Windows NT Server version 4.0 
+	- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	You may be unable to log on to both a Windows NT and Novell NetWare server
+	simultaneously from a computer that has the Novell Intranetware Client 4.11a
+	installed. Even though you may be able to log on to a Windows NT server,
+	attempting to log on to both a Novell NetWare server and a Windows NT server at
+	the same time may only be successful for the NetWare account. A local account is
+	then created on the Windows NT client, and the Windows NT domain login script
+	does not run.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, follow these steps:
+	
+	1. In the Novell Intranetware Client Services dialog box, click to select the
+	  Windows NT Login Only on the Windows NT tab, and then log on to the Windows
+	  NT domain.
+	
+	2. Click Start, point to Settings, click Control Panel, and then double- click
+	  the Network icon. Click the Services tab, click "Novell Intranetware Client
+	  for Windows NT," click Properties, click the Novell Workstation Manager tab,
+	  click to clear the "Enable workstation manager on these trusted trees" check
+	  box, and then click OK.
+	
+	3. Click OK to return to Control Panel, and then restart the computer to
+	  successfully process dual logon requests.
+	
+	NOTE: On a computer configured to use a Windows NT local account, this resolution
+	will disable the Novell Automatic Client Update feature of the Intranetware
+	client.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the products listed above.
+	
+	MORE INFORMATION
+	================
+	
+	You may want to contact Novell Technical Support for further information
+	regarding the Intranetware Client software. You can contact Novell Technical
+	Support at (888) 321-4272, or visit the following Novell Web site:
+	
+	  http://www.novell.com
+	
+	The third-party contact information included in this article is provided to help
+	you find the technical support you need. This contact information is subject to
+	change without notice. Microsoft in no way guarantees the accuracy of this
+	third-party contact information.
+	
+	NOTE: The third-party products discussed here are manufactured by vendors
+	independent of Microsoft; we make no warranty, implied or otherwise, regarding
+	these products' performance or reliability.
+	
+	Additional query words: login
+	
+	======================================================================
+	Keywords          : kbenv kbnetwork 3rdpartynet kb3rdPartyNetClient 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400xsearch kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400xsearch kbWinNTS400
+	Version           : WinNT:4.0
+	Hardware          : ALPHA x86
+	Issue type        : kbprb
+	
+	=============================================================================
+	

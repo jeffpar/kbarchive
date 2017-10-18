@@ -1,0 +1,82 @@
+---
+layout: page
+title: "Q76819: Installing MS-DOS 5 Upgrade on NetWare Diskless Workstation"
+permalink: kb/076/Q76819/
+---
+
+## Q76819: Installing MS-DOS 5 Upgrade on NetWare Diskless Workstation
+
+	Article: Q76819
+	Product(s): Microsoft Disk Operating System
+	Version(s): MS-DOS:5.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 26-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft MS-DOS operating system version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Because Microsoft MS-DOS 5 Upgrade requires that a previous version of DOS is
+	bootable from a disk before it can be upgraded, it is not readily apparent how
+	to upgrade a diskless workstation running Novell NetWare. The following
+	information explains how to upgrade the version of DOS running on this type of
+	LAN workstation.
+	
+	MORE INFORMATION
+	================
+	
+	Following the standards set by BIOS routines written for IBM and compatible PCs,
+	the ROM loader will typically first check drive A for a bootable copy of DOS,
+	and if one is not available, it will search drive C. With NetWare, it is
+	possible to boot a workstation using the combination of a Programmable Read Only
+	Memory (PROM) chip and a specialized file stored on the server called
+	NET$DOS.SYS. PROMs are often located on the network adapter, and in such cases
+	are specific to both the adapter and the LAN operating system. The NET$DOS.SYS
+	file is often referred to as the "boot image."
+	
+	NET$DOS.SYS contains a complete image of a bootable disk that can be used to
+	start MS-DOS on the workstation. The image includes all three necessary boot
+	files (IO.SYS, MSDOS.SYS, and COMMAND.COM) as well as any additional utilities
+	and drivers needed to optimize the workstation such as CONFIG.SYS, AUTOEXEC.BAT,
+	*.SYS files, and so on. To log in to NetWare sequentially, the appropriate shell
+	utilities are also included, such as IPX.COM and NET5.COM.
+	
+	To create NET$DOS.SYS on the server, first create a bootable MS-DOS 5.0 floppy
+	disk that would be appropriate if the workstation used a floppy drive. Next, run
+	the NetWare utility DOSGEN, which uses the entire physical floppy disk just
+	created to build NET$DOS.SYS. The file should be placed in a globally accessible
+	server directory, such as \LOGIN, and flagged as read-only.
+	
+	In the case where unique boot image files are required for specific workstation
+	configurations, DOSGEN is still used, but in a slightly different way. In this
+	case, DOSGEN creates two files: a customized boot image file (which has no
+	specific name requirement) and a text file called BOOTCONF.SYS, which contains
+	information that links specific adapter addresses to the customized boot image
+	file.
+	
+	For a workstation where it would not be appropriate to use NET$DOS.SYS because of
+	configuration differences such as video adapter or adapter IRQ settings, it will
+	use a boot image file specifically made to match the specific address of the
+	workstation's network adapter. Should a specific workstation adapter address be
+	unknown, NetWare provides the utility TRACKON, which is run from the server
+	console, to identify workstation adapter addresses.
+	
+	Additional information on Novell NetWare programs and utilities mentioned herein
+	can be found in the NetWare reference and user guides.
+	
+	
+	Additional query words: 5.00 noupd
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMSDOSSearch kbMSDOS500
+	Version           : MS-DOS:5.0
+	
+	=============================================================================
+	

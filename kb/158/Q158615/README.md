@@ -1,0 +1,300 @@
+---
+layout: page
+title: "Q158615: INF: How to Use SQLInstallDriver API with a 32-Bit Installer"
+permalink: kb/158/Q158615/
+---
+
+## Q158615: INF: How to Use SQLInstallDriver API with a 32-Bit Installer
+
+	Article: Q158615
+	Product(s): Open Database Connectivity (ODBC)
+	Version(s): 2.5
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 05-JAN-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft ODBC SDK version 2.5 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	If you want an application to obtain Windows 95 logo compliance, you should not
+	use SQLInstallODBC to install ODBC components. Instead, use the
+	SQLInstallDriverManager, SQLInstallDriver, SQLConfigDriver (if necessary) and
+	SQLInstallTranslator (if necessary), as described in the Readme25.txt file that
+	comes with the installation of the "ODBC Desktop Driver Pack 3.0." This file can
+	be found in the Windows\System directory. The APIs listed below make appropriate
+	configurations in the registry; they do not copy the files to the destination
+	directory. It is the task of the installation program to copy the installation
+	files to the target directory.
+	
+	The following is a list of the Installer APIs that can be used by an installation
+	program:
+	
+	- Use SQLInstallDriverManager to install the driver manager components.
+	
+	- Use SQLInstallDriver to install the driver.
+	
+	- Use SQLConfigDriver to optionally configure the driver after it has been
+	  installed by SQLInstallDriver.
+	
+	- Use SQLInstallTranslator to configure translators, if they are used by the
+	  drivers.
+	
+	The advantage of using the above APIs in the 32-bit installation programs for
+	ODBC drivers is that they will make the transition to install under ODBC 3.0
+	easier.
+	
+	This article illustrates the usage of the SQLInstallDriver API with the help of a
+	C program. The documentation of the SQLInstallDriver can be found in the "ODBC
+	2.0 Programmer's reference and SDK guide".
+	
+	MORE INFORMATION
+	================
+	
+	The following is the C program that illustrates the usage of the
+	SQLInstallDriver API:
+	
+	INSTDRV.C:
+	This program demonstrates usage of SQLInstallDriver for configuring 32-bit
+	drivers. To configure the driver, this program uses the Odbc.inf file in one
+	case, and uses just the driver attributes in another case. Note that usage of
+	driver attributes will be more portable than using Odbc.inf files in the long
+	run.
+	
+	  */ 
+	  #include "windows.h"
+	  #include "sql.h"              //for typedefs in ODBC and API declarations
+	  #include "sqlext.h"
+	  #include "odbcinst.h"         //installer declares
+	  #include "iostream.h"
+	
+	  //check error message for installer functions
+	  void check_error(BOOL rc, char *func, char *mesg)
+	  {
+	       if (rc == TRUE )
+	      {
+	         MessageBox(GetActiveWindow(), mesg, func, MB_OK);
+	      }
+	      else
+	
+	         MessageBox(GetActiveWindow(), "Failed", func, MB_OK);
+	  }
+	  //configures driver and returns the output path to copy the driver files.
+	  //if it fails returns NULL.
+	  //parameter inf is used to determine whether we are using INF file are not.
+	
+	  BOOL configure_driver_inf (BOOL inf, char *szPathInf, char *szDriver, char
+	  *szPathOut, int size_path)
+	  {
+	
+	     char szInf[256];
+	     char szDrv[256];
+	     unsigned short cbPathOut; //total num. of bytes returned in szTargetDir
+	     BOOL rc;
+	  //make sure that the size of output path buffer is at least _MAX_PATH bytes
+	     if ( size_path  < _MAX_PATH )
+	     {
+	        cout << "error: size of the output buffer  is less than _MAX_PATH ";
+	        return -1;
+	     }
+	
+	      if (inf )
+	     {
+	
+	           rc = SQLInstallDriver(szPathInf, szDriver,szPathOut, size_path,
+	  &cbPathOut);
+	           return rc;
+	
+	     }
+	
+	     else
+	     {
+	
+	           rc = SQLInstallDriver(NULL, szDriver,szPathOut,size_path,
+	  &cbPathOut);
+	           return rc;
+	
+	     }
+	
+	  }
+	
+	  int main (int argc ,char * argv[] )
+	  {
+	
+	   //driver attributes for SQL Server Driver
+	    char szDriver2[256] = "SQL
+	  Server\0Driver=SQLSRV32.DLL\0SETUP=SQLSRV32.DLL\0\0";
+	   //configure Microsoft Access driver using Odbc.inf
+	    char szDriver[256] = "Microsoft Access Driver (*.mdb)";
+	    char szInf[256] = "d:\\dev\\vc\\instdrv\\odbc.inf";
+	    char  szPath[_MAX_PATH] = "\0";  //target directory will be returned here
+	    unsigned short  cbPathOut; //total num. of bytes returned in szTargetDir
+	    BOOL rc;
+	
+	  //configure using the Odbc.inf file. Make sure to specify the driver name
+	  //correctly as specified in the Odbc.inf
+	               rc = configure_driver_inf  ( TRUE, szInf,szDriver, szPath,
+	  sizeof(szPath));
+	     if (rc == TRUE )
+	     {
+	        MessageBox(GetActiveWindow(),szPath, "Install Driver", MB_OK);
+	
+	     }
+	
+	     else
+	     {
+	  MessageBox(GetActiveWindow(), "Install Driver Error\n Check the input
+	  parameters and try again", "Install Driver", MB_ICONSTOP|MB_OK);
+	        return 1;
+	     }
+	   /*
+	
+	Configure without using the Odbc.inf file. Specify the attributes of the driver.
+	The example just uses the DRIVER and SETUP attributes for SQL Server Driver.
+	Other attributes can also be included with a driver. Normally the attributes of
+	a driver can be found by looking up the registry key under
+	
+	  HKEY_LOCAL_MACHINE\Software\Odbc\Odbcinst.ini\<driver-name>.
+	
+	  */ 
+	       //This option  going to be portable in the long run.
+	     rc = configure_driver_inf  ( FALSE, NULL,szDriver2, szPath,
+	  sizeof(szPath));
+	
+	     if (rc == TRUE )
+	     {
+	        MessageBox(GetActiveWindow(),szPath, "Install Driver", MB_OK);
+	
+	     }
+	     else
+	     {
+	  MessageBox(GetActiveWindow(), "Install Driver Error\n Check the input
+	  parameters and try again", "Install Driver", MB_ICONSTOP|MB_OK);
+	        return 1;
+	     }
+	
+	   return 0;
+	  }
+	
+	  //sample Odbc.inf used for SQLInstallDriver
+	  [Source Media Descriptions]
+	  "1", "ODBC Drivers Setup", "odbc32.dll", "."
+	
+	  [ODBC Drivers]
+	  "Microsoft Text Driver (*.txt; *.csv)"=
+	  "Microsoft Paradox Driver (*.db )"=
+	  "Microsoft Excel Driver (*.xls)"=
+	  "Microsoft dBase Driver (*.dbf)"=
+	  "Microsoft FoxPro Driver (*.dbf)"=
+	  "Microsoft Access Driver (*.mdb)"=
+	  "SQL Server"=
+	  "Oracle"=
+	
+	  [ODBC]
+	  "Main"=1,odbccp32.dll,,,,1995-5-10,,,,,,,,,,88064,,,,2.50.30.6 ,
+	  "CtlPnl"=1,odbccp32.cpl,,,,1995-5-10,,,,,,,,,,6656,,,,2.50.30.6 ,
+	  "Help"=1,odbcinst.hlp,,,,1994-03-10,,,,,,,,,,17412,,,,02.00.15.10,
+	  "WinSysNT01"=1,ctl3dnt.dll,,,,1995-4-
+	  4,,,,,,ctl3d32.dll,,,SHARED,27136,,,,02.29.00.00,
+	  "WinSys9501"=1,ctl3d95.dll,,,,1995-4-
+	  4,,,,,,ctl3d32.dll,,,SHARED,26112,,,,02.29.00.00,
+	  ;"Msvcrt20"=1,msvcrt20.dll,,,,1994-12-
+	  07,,,,,,,,,SHARED,243200,,,,.02.10.00.00,
+	
+	  [Generic Thunk ODBC Driver Manager]
+	  "Thunk1"=1,odbc32gt.dll,,,,1995-3-3,,,,,,,,,,7168,,,,,
+	  "Thunk2"=1,odbc16gt.dll,,,,1995-3-3,,,,,,,,,,23440,,,,,
+	
+	  [Generic Thunk ODBC]
+	  "Thunk1"=1,ds32gt.dll,,,,1995-3-3,,,,,,,,,,4608,,,,,
+	  "Thunk2"=1,ds16gt.dll,,,,1995-3-3,,,,,,,,,,5024,,,,2.10.23.23,
+	
+	  [Microsoft Access Driver (*.mdb)]
+	  "Msvcrt10" = 1, msvcrt10.dll,,,, 1994-11-18,,,,,,,,, SHARED, 210944,,,,,
+	  ;"Msvcrt20" = 1, msvcrt20.dll,,,, 1994-11-18,,,,,,,,, SHARED, 243200,,,,
+	  2.10.0.0,
+	  "msjter32.dll" = 1, msjter32.dll,,,, 1995-5-12,,,,,,,,,, 23824,,,,
+	  3.00.00.1923,
+	  "msjint32.dll" = 1, msjint32.dll,,,, 1995-5-11,,,,,,,,,, 35600,,,,
+	  3.00.00.2001,
+	  "vbajet32.dll" = 1, vbajet32.dll,,,, 1995-5-8,,,,,,,,, SHARED, 55328,,,,
+	  2.0.0.5321,
+	  "vbar2232.dll" = 1, vbar2232.dll,,,, 1995-5-8,,,,,,,,, SHARED, 1403796,,,,
+	  2.0.0.5321,
+	  "ven2232.olb" = 1, ven2232.olb,,,, 1995-5-8,,,,,,,,, SHARED, 37376,,,,
+	  2.0.0.5321,
+	  "Tools" = 1, odbctl32.dll,,,, 1994-11-18,,,,,,,,,, 76288,,,, 3.00.32.0001,
+	  "Changes" = 1, odbcjtnw.hlp,,,, 1994-11-18,,,,,,,,,, 83833,,,,,
+	  "Help" = 1, odbcjet.hlp,,,, 1994-11-18,,,,,,,,,, 113064,,,,,
+	  "Driver" = 1, odbcjt32.dll,,,, 1995-5-12,,,,,,,,,, 225792,,,, 3.20.01.0000,
+	  "Setup" = 1, odbcjt32.dll,,,, 1995-5-12,,,,,,,,,, 225792,,,, 3.20.01.0000,
+	  "Engine" = 1, msjt3032.dll,,,, 1995-5-12,,,,,,,,,, 1015568,,,,
+	  3.00.00.2001,
+	  "IIsam"=1,msrd2x32.dll,,,,1995-05-12,,,,,,,,,,250640,,,,3.00.00.2001,
+	  "Strings"=1,odbcji32.dll,,,,1995-05-12,,,,,,,,,,37888,,,,3.20.01.0000,
+	   [SQL Server]
+	  "Setup"=1,sqlsrv32.dll,,,,1995-08-07,,,,,,,,,,210944,,,,2.50.1.21,
+	  "Driver"=1,sqlsrv32.dll,,,,1995-08-07,,,,,,,,,,210944,,,,2.50.1.21,
+	  "WinSysNT01"=1,ctl3dnt.dll,,,,1995-4-
+	  4,,,,,,ctl3d32.dll,,,SHARED,27136,,,,02.31.00.00,
+	  "WinSys9501"=1,ctl3d95.dll,,,,1995-4-
+	  4,,,,,,ctl3d32.dll,,,SHARED,26112,,,,02.31.00.00,
+	  "Msvcrt10"=1,msvcrt10.dll,,,,1993-07-23,,,,,,,,,SHARED,210944,,,,,
+	  "Help"=1,drvssrvr.hlp,,,,1994-07-12,,,,,,,,,,105964,,,,02.00.19.06,
+	  "Network"=1,dbnmpntw.dll,,,,1995-5-11,,,,,,,,,SHARED,16896,,,,1995.6.7.0,
+	
+	  [ODBC Translators]
+	  "MS Code Page Translator"=
+	
+	  [MS Code Page Translator]
+	  "Setup"=1,mscpxl32.dll,,,,1995-08-07,,,,,,,,,,15360,,,,2.50.01.21,
+	  "Translator"=1,mscpxl32.dll,,,,1995-08-07,,,,,,,,,,15360,,,,02.50.01.21,
+	  "Code Page 850"=1,12520850.cpx,,,,1994-07-12,,,,,,,,,,2233,,,,,
+	  "Code Page 437"=1,12520437.cpx,,,,1994-07-12,,,,,,,,,,2151,,,,,
+	  "WinSysNT01"=1,ctl3dnt.dll,,,,1995-4-
+	  4,,,,,,ctl3d32.dll,,,SHARED,27136,,,,02.31.00.00,
+	  "WinSys9501"=1,ctl3d95.dll,,,,1994-11-
+	  30,,,,,,ctl3d32.dll,,,SHARED,26112,,,,02.31.00.00,
+	  "Msvcrt10"=1,msvcrt10.dll,,,,1993-07-23,,,,,,,,,SHARED,210944,,,,,
+	
+	  [ODBC Driver Manager]
+	  "Driver"=1,odbc32.dll,,,,1995-08-07,,,,,,,,,,64512,,,,2.50.30.6 ,
+	  "Cursor"=1,odbccr32.dll,,,,1995-08-07,,,,,,,,,,167936,,,,2.50.30.6 ,
+	  "WinSysNT01"=1,ctl3dnt.dll,,,,1995-4-
+	  4,,,,,,ctl3d32.dll,,,SHARED,27136,,,,02.31.00.00,
+	  "WinSys9501"=1,ctl3d95.dll,,,,1995-4-
+	  4,,,,,,ctl3d32.dll,,,SHARED,26112,,,,02.31.00.00,
+	  "Msvcrt10"=1,msvcrt10.dll,,,,1993-07-23,,,,,,,,,SHARED,210944,,,,,
+	  ;"resource"=1,odbcint.dll,,,,1995-08-07,,,,,,,,,,32768,,,,2.0050.30.06,
+	  "resource"=1,odbcint.dll,,,,1995-08-07,,,,,,,,,,31768,,,,2.0050.40.06,
+	
+	  [Microsoft Access Driver (*.mdb)-Keys]
+	  SQLLevel=0
+	  FileExtns=*.mdb
+	  FileUsage=2
+	  DriverODBCVer=02.01
+	  ConnectFunctions=YYN
+	  APILevel=1
+	
+	  [SQL Server-Keys]
+	  APILevel=1
+	  ConnectFunctions=YYY
+	  DriverODBCVer=02.01
+	  FileUsage=0
+	  SQLLevel=1
+	
+	Additional query words: 2.50 Installer 32-bit VC 4.0
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbODBCSearch kbSDKSearch kbSDKODBCSearch kbSDKODBC250
+	Version           : :2.5
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

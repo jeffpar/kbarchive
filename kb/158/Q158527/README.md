@@ -1,0 +1,99 @@
+---
+layout: page
+title: "Q158527: WD97: Multi-Column Revision Bars Do Not Print As Expected"
+permalink: kb/158/Q158527/
+---
+
+## Q158527: WD97: Multi-Column Revision Bars Do Not Print As Expected
+
+	Article: Q158527
+	Product(s): Word 97 for Windows
+	Version(s): WINDOWS:97
+	Operating System(s): 
+	Keyword(s): kbdta kbproof word97
+	Last Modified: 11-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	When a document is formatted with multiple columns, revision marks may not
+	appear where you expect them to appear.
+	
+	If You Specify Left Border Revision Marks
+	-----------------------------------------
+	
+	When you compare one document to another and use revision bars to mark changes,
+	the revision bars are displayed on the left of each column but are printed along
+	the left edge of the page instead of along the left side of the edited column.
+	
+	If You Specify Right Border Revision Marks
+	------------------------------------------
+	
+	When you compare one document to another and use revision bars to mark changes,
+	the revision bars are displayed to the right of each column but are printed
+	along the right edge of the page instead of along the right side of the edited
+	column.
+	
+	CAUSE
+	=====
+	
+	Word prints all revision bars in the left, right, or outside page border,
+	depending on the option you have selected for Changed Lines. (On the Tools menu,
+	point to Track Changes, click Highlight Changes, and then click Options.) This
+	applies to both single and multi-column documents.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products that are
+	listed at the beginning of this article.
+	This problem was corrected in Word 2000.
+	
+	
+	
+	
+	
+	MORE INFORMATION
+	================
+	
+	For additional information about this problem, please see the following articles
+	in the Microsoft Knowledge Base:
+	
+	  Q176124 WD97: Revision Bars Display and Print in Wrong Location
+	
+	In page layout view and print preview, the revision bars are shown beside the
+	lines that have changes, but within the columns of multi-column documents. If
+	you compare the printed version of a multi-column document with how it appears
+	in page layout or print preview, the location of the revision bars may be
+	different.
+	
+	The revision bars will always be printed in the left border if you have selected
+	to print the revision bars in the outside border and have not selected
+	"Different odd and even" headers and footers (on the File menu, click Page
+	Setup, and click the Layout tab.) Try turning on this setting to see if the
+	problem is corrected.
+	
+	Revision bars are used in conjunction with other revision marks (strikethrough
+	text, underlined text, colored text) to identify changed lines. Revision bars
+	are intended to draw the reader's eye to the general vertical position of the
+	changed lines.
+	
+	Additional query words: wd97 revision print
+	
+	======================================================================
+	Keywords          : kbdta kbproof word97 
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : WINDOWS:97
+	Hardware          : x86
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

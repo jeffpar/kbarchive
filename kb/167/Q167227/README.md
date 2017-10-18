@@ -1,0 +1,207 @@
+---
+layout: page
+title: "Q167227: HOWTO: Create and Update a Replicated Access Database"
+permalink: kb/167/Q167227/
+---
+
+## Q167227: HOWTO: Create and Update a Replicated Access Database
+
+	Article: Q167227
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 4.00 5.00
+	Operating System(s): 
+	Keyword(s): kbinterop kbVBp500 kbGrpDSVB
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Professional Edition for Windows, versions 4.0, 5.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 4.0, 5.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This sample demonstrates how to create an Access MDB and then replicate it. It
+	then shows how to update the replica and master MDBs. The article does not cover
+	handling update conflicts between two replicated MDBs.
+	
+	MORE INFORMATION
+	================
+	
+	The following Code will work in Visual Basic 4.0 or 5.0. The steps needed to
+	create the example are for the Visual Basic 5.0 interface.
+	
+	Step-by-Step Example
+	--------------------
+	
+	1. Create a new Standard EXE project. Form1 is created by default.
+	
+	2. From the Project Menu, select Components.
+	
+	3. From the Components form on the Controls tab, check the Microsoft Data Bound
+	  Grid Control and then click the OK button.
+	
+	4. Place two Data Controls on the form and set the following properties:
+	
+	     Data1.Name = datMaster
+	     Data2.Name = datRep1
+	
+	5. Place two Data Bound Grids on the form and set the following properties:
+	
+	     Grid1.Name = grdMaster
+	     Grid1.Caption = Master
+	     Grid1.DataSource = datMaster
+	     Grid2.Name = grdRep1
+	     Grid1.Caption = Rep1
+	     Grid1.DataSource = datRep1
+	
+	6. Place four CommandButtons on the form and set the following properties:
+	
+	     Command1.Name = cmdSyncAll
+	     Command1.Caption = Synchronize Bidirectional
+	     Command2.Name = cmdMsToRep1
+	     Command2.Caption = One Way Master to Rep1
+	     Command3.Name = cmdRep1ToMs
+	     Command3.Caption = One Way Rep1 to Master
+	     Command4.Name = cmdClose
+	     Command4.Caption = Close
+	
+	7. From the View Menu, select Code, and then place the following code in the
+	  code area for the form:
+	
+	        'START CODE
+	        Dim mdbMaster As Database
+	        Dim mdbRep1 As Database
+	        Dim mrsMaster As Recordset
+	        Dim mrsRep1 As Recordset
+	
+	        Private Sub cmdClose_Click()
+	            Unload Me
+	        End Sub
+	
+	        Private Sub cmdMsToRep1_Click()
+	            'Only send data from Master to Rep1
+	            mdbMaster.Synchronize "rep1.mdb", dbRepExportChanges
+	            'Update the data controls
+	            datMaster.Refresh
+	            datRep1.Refresh
+	        End Sub
+	
+	        Private Sub cmdRep1ToMs_Click()
+	            'Only send data from Rep1 to Master
+	            mdbMaster.Synchronize "rep1.mdb", dbRepImportChanges
+	            'Update the data controls
+	            datMaster.Refresh
+	            datRep1.Refresh
+	        End Sub
+	
+	        Private Sub cmdSyncAll_Click()
+	            'Synchronize bidirectional
+	            mdbMaster.Synchronize "rep1.mdb", dbRepImpExpChanges
+	            'Update the data controls
+	            datMaster.Refresh
+	            datRep1.Refresh
+	        End Sub
+	
+	        Private Sub Form_Load()
+	            Dim iFlag As Integer 'used to check for files
+	            'Allow the grids to have records added, deleted and updated
+	            grdrep1.Allowaddnew = true : grdrep1.AllowDelete = True
+	            grdrep1.AllowUpdate = True
+	            grdMaster.Allowaddnew = true : grdMaster.AllowDelete = True
+	            grdMaster.AllowUpdate = True
+	            iFlag = 0
+	            ' Set the path to where the sample is running from
+	            ChDir App.Path
+	        'check to see the MDBs are in the current directory
+	            'if the MDBs are not in the current directory create them
+	            If Len(Dir("master.mdb")) < 1 Then iFlag = 0 Else iFlag = 1
+	            If Len(Dir("rep1.mdb")) > 1 Then iFlag = iFlag + 1
+	            If iFlag = 0 Then 'There are no MDB file
+	                CreateMaster 'call the sub that creates the master mdb
+	                MakeReplicas 'call the sub that creates the replicas
+	            End If
+	            If iFlag = 1 Then 'A file is missing
+	                MsgBox ("You are missing some MDB files" & vbCr & _
+	                "Please see the readme.txt")
+	                Unload Me
+	                Exit Sub
+	            End If
+	            'Open the MDB files
+	            Set mdbMaster = DBEngine(0).OpenDatabase("master.mdb")
+	            Set mdbRep1 = DBEngine(0).OpenDatabase("rep1.mdb")
+	            'Open the tables
+	            Set mrsMaster = mdbMaster.OpenRecordset("table1")
+	            Set mrsRep1 = mdbRep1.OpenRecordset("table1")
+	        'assign the recordsets to the data controls
+	            Set datMaster.Recordset = mrsMaster
+	            Set datRep1.Recordset = mrsRep1
+	        End Sub
+	
+	        Private Sub CreateMaster()
+	            Dim td As TableDef
+	            Dim fd As Field
+	            Dim ix As Index
+	            Dim prpReplicable As Property
+	
+	            Set mdbMaster = Workspaces(0).CreateDatabase _
+	                 ("master.mdb", dbLangGeneral)
+	            Set td = mdbMaster.CreateTableDef("table1")
+	            Set fd = td.CreateField("id", dbLong)
+	            fd.Required = True ' No Null values allowed.
+	            fd.Attributes = dbAutoIncrField 'Auto increment field
+	            td.Fields.Append fd 'add the field to the tabledef
+	            Set fd = td.CreateField("name", dbText, 30)
+	            td.Fields.Append fd 'add the field to the tabledef
+	            'create an index
+	            Set ix = td.CreateIndex("id")
+	            ix.Name = "id" ' Set properties in new Index.
+	            ix.Unique = True
+	            ix.Primary = True
+	            ix.Fields = "id"
+	            td.Indexes.Append ix   ' Add Index to TableDefs collection.
+	            mdbMaster.TableDefs.Append td  ' Add TableDefs to Database.
+	            ' make the database replicable
+	            Set prpReplicable = mdbMaster.CreateProperty("Replicable", _
+	              dbText, "T")
+	            mdbMaster.Properties.Append prpReplicable
+	            'Create a single record
+	            Set mrsMaster = mdbMaster.OpenRecordset("table1")
+	            mrsMaster.AddNew
+	            mrsMaster("name") = "Brian"
+	            mrsMaster.Update
+	            mrsMaster.Close
+	        End Sub
+	
+	        Private Sub MakeReplicas()
+	            Dim s As String
+	            s = App.Path & "\rep1.mdb"
+	            'create the replica
+	            mdbMaster.MakeReplica "rep1.mdb", dbRepMakeReadOnly
+	            mdbMaster.Close
+	        End Sub
+	        'END CODE
+	
+	8. Run the form by pressing the F5 key.
+	
+	9. Try adding and editing records by entering information in the name field on
+	  the DBGrid (be sure to move off the record to ensure it is written to the
+	  table), and then select different update methods to see how the data is
+	  updated.
+	
+	(c) Microsoft Corporation 1997, All Rights Reserved.
+	Contributions by Brian Combs, Microsoft Corporation
+	
+	
+	Additional query words: kbDSupport DSDKB
+	
+	======================================================================
+	Keywords          : kbinterop kbVBp500 kbGrpDSVB 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500 kbVB500 kbVB400Search kbVB400
+	Version           : 4.00 5.00
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

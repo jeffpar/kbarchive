@@ -1,0 +1,115 @@
+---
+layout: page
+title: "Q140557: Microsoft Windows 95 Password List Security Issue"
+permalink: kb/140/Q140557/
+---
+
+## Q140557: Microsoft Windows 95 Password List Security Issue
+
+	Article: Q140557
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): 95
+	Operating System(s): 
+	Keyword(s): kbnetwork win95
+	Last Modified: 17-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 95 
+	-------------------------------------------------------------------------------
+	
+	
+	IMPORTANT: This article contains information about editing the registry.
+	Before you edit the registry, you should first make a backup copy of the
+	registry files (System.dat and User.dat). Both are hidden files in the
+	Windows folder.
+	
+	SUMMARY
+	=======
+	
+	This article contains a copy of the information in a press release concerning
+	the Windows 95 password list security issue.
+	
+	MORE INFORMATION
+	================
+	
+	Background
+	----------
+	
+	The Windows 95 password list is a password cache. When a user first types and
+	saves a password while connecting to a password protected resource, Windows 95
+	caches the password in the password list file. Logging on with a Windows 95
+	password unlocks the list and associates those passwords with the Windows 95
+	password. To the user, it seems as if the passwords for Windows 95 and the
+	password protected resources are the same. If password caching is disabled,
+	users must type the passwords each time they connect to a password protected
+	resource.
+	
+	Recently, an algorithm was posted on the Internet which can be used to compromise
+	the security used in the password list file. If someone can access the .pwl file
+	on the hard disk of a Windows 95 machine, they may be able to perform operations
+	on the file that can generate the unencrypted password(s).
+	
+	The Windows 95 password file is only vulnerable when access is available to the
+	.pwl file on the Windows 95 machine's disk.
+	
+	Microsoft recommends that customers who are concerned about this issue disable
+	password caching until an updated component is installed.
+	
+	Password caching can be disabled by using the system policy editor (as described
+	in the Microsoft Windows 95 Resource Kit, page 471) or with the registry editor
+	by adding the following key:
+	
+	  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\
+	  Network\DisablePwdCaching = 1
+	
+	NOTE: The DisablePwdCaching value should be added as a DWord value.
+	
+	Replacement Component
+	---------------------
+	
+	Microsoft has released a replacement component (Mspwlupd.exe) that will ensure
+	that the password list is secure. For additional information about obtaining the
+	replacement component, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q132807 Enhanced Encryption for Windows 95 Password Cache
+	
+	Warnings
+	--------
+	
+	You can edit the registry using System Policy Editor (Poledit.exe) or Registry
+	Editor (Regedit.exe). Check with your network administrator before you make any
+	changes to the registry.
+	
+	For information about how to edit the registry, view the Changing Keys And Values
+	online Help topic in Registry Editor (Regedit.exe). Note that you should make a
+	backup copy of the registry files (System.dat and User.dat) before you edit the
+	registry.
+	
+	Using Registry Editor incorrectly can cause serious problems that may require you
+	to reinstall Windows 95. Microsoft cannot guarantee that problems resulting from
+	the incorrect use of Registry Editor can be solved. Use Registry Editor at your
+	own risk.
+	
+	System Policy Editor (Poledit.exe) is available in the Admin\Apptools\ Poledit
+	folder on the Windows 95 CD-ROM. Use the Add/Remove Programs tool in Control
+	Panel to install System Policy Editor.
+	
+	NOTE: System Policy Editor is not included in the floppy disk version of Windows
+	95. You can download Policy.exe, a self-extracting executable file containing
+	Poledit.exe, from online services. Please see the following article in the
+	Microsoft Knowledge Base for information about downloading Policy.exe:
+	
+	  Q135315 CD-ROM Extras for Microsoft Windows 95 Upgrade
+	
+	Additional query words: account locked out lockout
+	
+	======================================================================
+	Keywords          : kbnetwork win95 
+	Technology        : kbWin95search kbZNotKeyword3
+	Version           : 95
+	
+	=============================================================================
+	

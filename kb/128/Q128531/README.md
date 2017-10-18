@@ -1,0 +1,601 @@
+---
+layout: page
+title: "Q128531: README.TXT: Windows NT Version 3.51 U.S. Service Pack"
+permalink: kb/128/Q128531/
+---
+
+## Q128531: README.TXT: Windows NT Version 3.51 U.S. Service Pack
+
+	Article: Q128531
+	Product(s): Microsoft Windows NT
+	Version(s): 3.51 SP5
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 20-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 3.51 SP5 
+	- Microsoft Windows NT Server version 3.51 SP5 
+	-------------------------------------------------------------------------------
+	
+	Following is the README.TXT file that accompanies the Microsoft Windows
+	NT 3.51 Workstation and Server U.S. Service Pack 5:
+	
+	--------------------------------------------------------------------------
+	
+	             Microsoft Windows NT 3.51 Workstation and Server
+	                           U.S. Service Pack 5
+	--------------------------------------------------------------------------
+	
+	Contents
+	--------
+	1.0  Introduction
+	2.0  Installation Instructions for the Windows NT 3.51 U.S. Service Pack 5
+	2.1  User Notes
+	2.2  List of Bugs Fixed in Windows NT 3.51 U.S. Service Pack 5
+	
+	1.0  Introduction
+	-----------------
+	This release of Microsoft(R) Windows NT(TM) 3.51 U.S. Service Pack 5 is
+	easy to apply from within Windows NT and changes only those files that
+	were originally set up on the Windows NT Workstation or Windows NT Server
+	system.  Service Pack releases are cumulative: they contain all previous
+	fixes, as well as any new fixes made to the system.
+	
+	2.0  Installation Instructions for the Windows NT U.S. Service Pack
+	-------------------------------------------------------------------
+	Installing the Service Pack from a floppy disk:
+	1.  Insert Service Pack Disk 1 into the floppy drive.
+	2.  At the Windows NT Command Prompt, change to that floppy drive (that
+	is,
+	   A: or B:) and type UPDATE.
+	3.  Follow the instructions given on the screen.
+	
+	Installing the Service Pack from a CD-ROM:
+	1.  Insert the Service Pack CD-ROM disk into the CD-ROM drive.
+	2.  At the Windows NT Command Prompt, change to that CD-ROM drive, then
+	   change to the i386, MIPS, ALPHA, or PPC directory (depending upon
+	   whether you have an Intel(TM), MIPS(R), ALPHA AXP(TM) or PowerPC(R)
+	   CPU), and type UPDATE.
+	3.  Follow the instructions given on the screen.
+	
+	Installing the Service Pack from a network drive:
+	1.  At the Windows NT Command Prompt, type the command to connect to the
+	   network drive on which the Service Pack files reside.
+	2.  Change to that network drive and type UPDATE.
+	3.  Follow the instructions given on the screen.
+	
+	2.1  User Notes
+	---------------
+	*** New ROUTE.EXE Command Line Argument
+	
+	A new command line argument for ROUTE.EXE has been added in Service Pack
+	5.
+	The new parameter is METRIC, and is described below:
+	
+	ROUTE [-f] [command [destination] [MASK netmask] [gateway] [METRIC
+	metric]]
+	
+	METRIC
+	  The metric option is used to associate a cost/hop count for the
+	  destination specified by the route entry. Generally this specifies the
+	  distance in number of hops from the destination. If not specified, the
+	  metric is set to 1 by default.
+	
+	*** Emergency Repair Disk
+	
+	If it is necessary to use the Windows NT Emergency Repair Disk to repair
+	your Windows NT system at some time after you apply the Service Pack, you
+	will need to re-apply the Service Pack after the repair is completed.
+	This is because the Emergency Repair Disk repairs your system by restoring your
+	original Windows NT setup.  After the repair has completed, simply follow
+	the above Installation Instructions to reapply the Service Pack.
+	
+	IMPORTANT NOTICE:
+	When using the Windows NT Emergency Repair Disk to repair your Windows NT
+	system after applying the Service Pack, do not repair the file SAMSRV.DLL.
+	If it is necessary to repair this file because it has become corrupt, you
+	must replace it with the Service Pack version of the file.
+	
+	This is necessary because the Service Pack update process changes the user
+	database, and the Service Pack version of SAMSRV.DLL is needed to allow
+	the system to function properly.
+	
+	*** Adding New Components to the System
+	
+	If new software or hardware components are changed or added to your system
+	after you have applied the Service Pack, it will be necessary to reapply
+	the Service Pack.  This is because the files taken from the original
+	Windows NT disk set may not be equivalent to the files on the Service Pack
+	disk set.  It is not possible to install new components directly from the
+	Service Pack media (such as a new keyboard or printer driver).  New
+	components must be installed from the original product media.
+	
+	*** Installing Symbol Files from the CD-ROM
+	
+	To install the symbol files corresponding to the new binaries in Service
+	Pack 5, do the following (assuming your CD-ROM drive is D:, your symbol
+	files are located in the C:\WINNT\SYMBOLS directory, and you are
+	installing the files for an x86 machine):
+	
+	   XCOPY /S /U /D D:\SUPPORT\DEBUG\I386\SYMBOLS C:\WINNT\SYMBOLS
+	
+	This will copy the Service Pack 5 .DBG files over the existing versions of
+	these files.  The XCOPY command shown will copy only those .DBG files that
+	are already installed (/U switch), and only those with a more recent time-
+	date stamp (/D switch).
+	
+	*** Verifying the Proper Firmware for Powerized Systems
+	
+	To install Service Pack 5 on your Powerized system, you should first verify
+	your Firmware is up-to-date.  Your Firmware should have a date of Oct. 5,
+	1995, or later.  This information is displayed during the system's boot.
+	Optionally, you may use the fw-title command to verify this.  If you have
+	an earlier Firmware date, contact your hardware manufacturer to get the
+	latest release of the Firmware.
+	
+	*** New APIs Available with Service Pack 5
+	
+	Service Pack 5 contains 3 additions to the Win32 API:
+	
+	Fibers
+	------
+	A fiber is a lightweight thread that is manually scheduled.  Fibers do not
+	provide advantages over a well-designed multithreaded application.
+	However, fibers can make it easier to port applications that were designed
+	to schedule their own threads.
+	
+	Specific fiber APIs include:
+	
+	ConvertThreadToFiber()
+	CreateFiber()
+	DeleteFiber()
+	GetCurrentFiber()
+	GetFiberData()
+	SwitchToFiber()
+	
+	Winsock Enhancement
+	-------------------
+	Two new APIs, AcceptEx() and GetAcceptExSockaddrs(), have been added to
+	the Windows Sockets family.  AcceptEx() provides a way to asynchronously
+	accept a connection, obtain the local and remote addresses for the connection,
+	and receive the first block of data, all within a single call.
+	
+	Directory Monitoring
+	--------------------
+	One new API, ReadDirectoryChangesW(), has been added to enhance an
+	application's ability to monitor directories.  It allows an application to
+	receive notification whenever a change occurs in a directory.  These
+	changes include file modifications, renames, and deletions.  Unlike
+	FindFirstChangeNotification(), this API will return the full name of the
+	affected file.
+	
+	For complete details on these APIs, including headers, libraries and sample
+	code, see the Win32 SDK Addendum for Service Pack 5, available in the "For
+	Developers Only" section of the Microsoft Web site at
+	http://www.microsoft.com/devonly.
+	
+	2.2  List of Bugs Fixed in Windows NT 3.51 U.S. Service Pack 5
+	--------------------------------------------------------------
+	NOTE: Use the Qxxxxxx number that precedes the title of the bug fix to
+	query the Microsoft Knowledge Base to find an article about that bug.
+	
+	Service Pack 1
+	--------------
+	Q128453: Windows NT 3.51 Hangs (Memory Access Violation) Running Exchange
+	Q128454: Windows NT 3.51 Hangs with Office 95 (Word) Help File Wizard
+	Q130093: Err Msg: Incorrect Response from the Network
+	Q130292: Windows NT Win16 Subsystem Crashes Printing from Quicken 4.0
+	Q130677: TCP/IP Generates Frames with Loopback Address as Source Address
+	Q131343:  "Invalid Page Fault" Running Office 95 Help Wizard
+	Q131427: Windows NT 3.51 TCP/IP System Network Interface Hang
+	Q131683: Help File Opens Very Slowly with Office 95 Applications
+	Q131779: Help Fails for VB Modules in Excel
+	Q131865: SMC Elite Ultra NIC Causes UNIX Computers to Disconnect TCP/IP
+	Q132198: Middle Mouse Button Does Not Work Under Windows NT 3.51
+	Q132466: Problems Printing From DCA IRMA Workstation for NT 1.1
+	Q132470: STOP Msg: 0x0000000A or 0x0000001E When Using PING
+	Q132858: PowerStack with Cirrus Video Adapter Hangs During Startup
+	
+	Service Pack 2
+	--------------
+	Q112665: UPDATE.EXE Starts Setup Help If Space Exists in Directory Path
+	Q128567: Landscape Orientation Reversed With Postscript Driver
+	Q129670: GSNW Not Releasing Session to NetWare Server
+	Q129724: Macintosh Client Has Slow Access to Windows NT 3.5x SFM Volume
+	Q130226: Banner Always Printed When Using GSNW Print Gateway
+	Q130783: STOP Msg: 0x0000003F NO_MORE_SYSTEMS_PTES Repetitive I/O on MIPS
+	Q130932: Desktop Remains Active At Logoff
+	Q130979: User Environment Variables Set Before Default Home Directory
+	Q131073: Datagram Sends Fail if Route is Not in IPX Cache
+	Q131241: FTPSVC Orphans Connections, Uses Up Virtual Memory
+	Q131428: DHCPADMN Reports Error 14 After You Select Local Machine
+	Q131689: Postscript Jobs Do Not Print Correctly Over SFM and AppleTalk
+	Q132085: Applications Hang When Opening Files when CSNW is Installed
+	Q132394: Streaming Mode NPMCA.SYS NIC Sleeps on Transmit.
+	Q132511: Windows NT 3.51 Hangs on Shutdown With Some S3 Based Video Cards
+	Q132722: Server Instability After Reboot Caused by NDIS Driver Problem
+	Q132896: FTP Client Scripts Terminate Without Completing
+	Q132903: Err Msg Using NetBIOS over TCP/IP (NETBT.SYS): STOP 0x0000000A
+	Q133112: NetWkstaSetUid2 API Returns Access Denied
+	Q133128: Printing From Windows NT 3.51 to an HP4 at 600 DPI is Slow
+	Q133252: Windows NT 3.51 GSNW Help Reports The File Is Corrupted
+	Q133280: FTPSVC: Delay Receiving FTP Directory Annotation and Prompt
+	Q133303: WINFILE.EXE Application Error When Associating a Searched File
+	Q133306: Maximum Disk Space of 1.99 GB Displayed for NetWare Volume
+	Q133384: Event ID 2019: Nonpaged Memory Pool Empty
+	Q133410: The Breakpoint "{,<filename>,} .<line>" Cannot Be Set
+	Q133488: LPR Printing Fails After Setting Up Security
+	Q133701: Forward Slash May Be Ignored As A Path Delimiter In 3.51
+	Q133757: Performance Monitor SQLServer-Log Object Corrupted
+	Q134250: No Compaq Netflex Drivers in Windows NT 3.51 for RISC Platforms
+	Q134285: STOP Msg: 0x0000007B or "0x4,0,0,0 Error" in WinNT 3.51 Setup
+	Q134286: Windows NT 3.51 LsarLookupSids errors from Big Endian Servers
+	Q134386: Computers Using QVision Display Driver Lock Up
+	Q134427: Dr. Watson Access Violation Occurs Sending Mail Attachments
+	Q134701: Uninitialized Pointers in DHCPSSVC.DLL Cause Access Violation
+	Q134765: Unknown Software Exception When Application Calls OpenGL
+	Q134959: Cannot copy Icons From a Common Group to a Personal Group
+	Q134968: NetWare Connections Remain Connected After You Log
+	Q134969: Faxing from 16-bit Program Using Separate Memory Space Fails
+	Q134985: Browsing & Other Traffic Incur High Costs over ISDN Routers
+	Q134988: Access Violation in glsbCreateAndDuplicateSection API on PowerPC
+	Q135065: Windows NT 3.51 Hangs on Shutdown
+	Q135275: Windows NT Backup : Incorrect Date in "Tape Name" Text
+	Q135277: WINS Records of Multi-homed Computers Do Not Replicate
+	Q135291: Print Manager: Owner Appears as System Printing from Macintosh
+	Q135308: Disk Administrator Corrupts Partitions
+	Q135471: Cannot Reconnect to OS/2 Name Space Resources on NetWare Server
+	Q135548: PIF Editor Reserve Shortcut Keys Settings May Be Ineffective
+	Q135553: IOCTL_NDIS_QUERY_ALL_STATS Causes STOP Msg in Windows NT 3.51
+	Q135621: NetWare Transaction Tracking System (TTS) Not Detected
+	Q135667: STOP 1E When Using File Manager and Services for Macintosh (SFM)
+	Q135692: "List Name From" List Box Shows Only 20 Trusted Domains
+	Q135724: Deleted Disk Space Not Released on Converted NTFS Volume
+	Q135774: Performance Monitor Counters Produce Unlikely Results
+	Q135777: Unable to Connect Using Cabletron EISA F70XX FDDI NIC
+	Q135856: RIP Table Does Not Update When New RIPX Response Is Received
+	Q136023: Batch Files Stop Executing with Windows NT version 3.51
+	Q136024: Tape Hardware Data Compression Disabled After Running NTBackup
+	Q136334: Access Violation in LSASS.EXE During User Password Change
+	Q136336: Windows NT Fails Because of an Access Violation in WINLOGON
+	Q136375: NTFS directory corruption with more than 100,000 files
+	Q136402: IniFileMapping for 16-Bit Windows Apps Fail in Windows NT 3.51
+	Q136472: NE3200 NIC Driver Can Lose Locally Administered Address
+	Q136627: Layered Drivers Never See WINSOCK IRPs for the TCP/IP Device
+	Q136780: WinFax Pro Software Causes 16-bit Applications To Hang
+	Q136782: Unable To Connect To AT&T Advanced Server For UNIX Printer Share
+	
+	Service Pack 3
+	--------------
+	Q126688: Stack Overflow with Windows NT 3.51 RAS
+	Q126689: STOP Msg: c000021a Logging on a Second Time to WinNT 3.51 w/ SP2
+	Q126967: New TCP/IP Registry Parameter Ignores Push Bit on Receives
+	Q139281: STOP Msg: 0x0000004E or 0x0000000A Under Heavy Computer Usage
+	Q139535: Some TrueType Fonts Do Not Produce Glyphs on Windows NT 3.51
+	Q139635: RAS Authentication of Third Party PPP SPAP Clients Fail
+	Q139714: RAS STOP Msg: 0x00000000a (6194ea98,00000002,00000001,80115534)
+	
+	Service Pack 4
+	--------------
+	Q134959: Cannot copy Icons From a Common Group to a Personal Group
+	Q137857: Errorlevel Paradigm Behaves Differently in Windows NT 3.51
+	Q137968: Perfmon and Network Monitor Counters Show Incorrect Values
+	Q138415: Windows NT Fails to Check for Low Disk Space (No Admin Alerts)
+	Q138700: ARP -s Fails After Applying SP2 to Windows NT 3.51
+	Q138737: Directory Synchronization May Fail with Windows NT 3.51 Mail
+	Q138794: Out of Memory Error Installing Windows NT 3.51 Service Pack 2
+	Q138854: Connecting Using NBT.SYS Causes Windows NT Session to Hang
+	Q138987: Novell Clients are Denied Access Logging on to FPNW Servers
+	Q138995: Updating to WinNT 3.51 SP2 Causes Loss of Persistent IP Routes
+	Q139015: Trap 0xA in ExFreePool of NTOSKRNL.EXE
+	Q139057: NET STOP WINS Fails to Stop WINS Service
+	Q139058: Battery Shutdown Signal Delayed Using Windows NT UPS Service
+	Q139065: Services For Macintosh on Windows NT 3.51 Service Pack 2 Hangs
+	Q139171: Compaq System Hangs with Incomplete IRP in Cpqarray
+	Q139207: S3 Driver Doesn't Correctly Support 72Hz on Some IBM PS/2 Models
+	Q139208: Instability in RAS using TAPI X25 Ndiswan Driver
+	Q139274: Updated System Environment Variables Result in STOP 0x0000021a
+	Q139338: WINS Counters Disappear from Performance Monitor
+	Q139350: WinNT General Protection Fault Exiting 16-bit Access Version 2.0
+	Q139351: STOP Msg: c000021a - Using Mandatory Profile w/o Access Rights
+	Q139380: Multi-homed WINS Server Replication Partner Failures
+	Q139415: New TCP/IP ArpCacheLife Parameter in Windows NT
+	Q139494: Multiple CRC Errors and Hardware Overruns Using RAS
+	Q139619: Printing From a Service To A Network Printer Fails
+	Q139649: Windows NT Service Can't Connect to Network Printer on 3.51
+	Q139691: International Characters in User Names Not Handled Properly
+	Q139842: WinNT 3.51 SP2 SFM Share Can Only be Created on NTFS
+	Q139929: SNMP Queries Of Very Long OID's May Cause SNMP Service To Hang
+	Q139956: RPC from a Big Endian Computer Causes GP Fault
+	Q139985: WINS Client Fails to Reach a Multi-homed Server
+	Q140008: Seed Routing Network Range Options Grayed Out with DEC FDDI
+	Q140258: Incomplete Server List in File Manager's Connection Dialog Box
+	Q140329: Trust Relationships Fail with Large Number of Trusted Domains
+	Q140364: Registry Size Limit Change Results in Pagedpoolsize Change
+	Q140400: GSNW/CSNW Creates 8.3-Format Directory Names in Uppercase Only
+	Q140408: Access Denied Attempting to Rename File Across the Network
+	Q140463: SNMP Agent Hangs on Very Long Queries
+	Q140506: Print Jobs Sent to SFM Printer Hang in Spooler After Printing
+	Q140603: SNMP Trap Frames Appear to be Dropped
+	Q140639: Daylight Savings Time Not Advancing
+	Q140675: Windows NT Doesn't Show All Files on OS/2 Server
+	Q140685: MAC Clients Get Access Denied on Newly Created Folders
+	Q140783: Access Violation on RAS Client Dialing Into Windows 95
+	Q140784: Call to NetUserGetLocalGroups results in NERR_UserNotFound
+	Q140818: STOP Message: After "DIR ..\" is Issued from a Samba Client
+	Q140973: Inaccessible Floppy Disk Drive on Toshiba Portege 610CT
+	Q140978: WINS Does Not Replicate <1c> Names Properly
+	Q141019: SNMP Debug Messages Are Written to Eventlog
+	Q141156: STOP Msg: 0x0000000A in SFMATALK.SYS After Receiving ATP Packet
+	Q141344: Network Connections Refused Over NetBT
+	Q141371: STOP Msg: STOP 0x0000000A from DLC.SYS
+	Q141467: Macintosh RPC Client Fails Across AppleTalk Zone
+	Q141520: Generic Text Driver Prints Control Characters and Blank Lines
+	Q141732: Adaptec AHA154x Driver Fails to Install Second Adapter
+	Q141753: Memory Violation Running Attachmate Extra! for Windows in WOW
+	Q142060: BackupExec 6.0 Not Backing Up WFW in Windows NT 3.51 SP3
+	Q142204: CSNW Drive Mappings Incorrect
+	Q142371: Perfmon Counter DISK QUEUE LENGTH Gives Incorrect Report
+	Q142695: SP3 Localized SERVER.HLP (On-line Books) Causes Dr. Watson Error
+	Q142696: WinNT 3.51 SP3 GARAM4.TTF Font Not Displayed Properly
+	Q142697: Unlocked Workstation Not Returned to Full Screen Application
+	Q142698: Service Pack Overwrites Localized Version of Windows NT
+	Q142699: WinNT 3.51 w/ CPU Maxed Prints Very Slowly to Banding Printers
+	Q142701: SAM Does Not Replicate Members of the Administrators Alias
+	Q142704: Windows NT Mail Client Does Not Handle Long Filenames Correctly
+	Q142708: WinNT 3.51 SP2 w/ UK Keyboard Gives Wrong Accented Characters
+	Q142709: Big Files Copy Slowly from Mac to SFM Over AppleTalk Router
+	Q142710: Lock Violation Opening NetWare Server File w/ Shareable Bit Set
+	Q142711: Windows NT Hangs on Alpha with > 1 GB System Memory
+	Q142714: RAS Does Not Hang Up Immediately If Usernames Are Different
+	Q142866: Alpha Computer w/ Proteon P139x-Plus Revision J NIC Doesn't Work
+	
+	Service Pack 5
+	--------------
+	Q126967: New TCP/IP Registry Parameter Ignores Push Bit on Receives
+	Q129129: Windows NT SNMP Agent Allows Only Read Access
+	Q130876: Printing Through HPMON(DLC) May Cause Print Subsystem to Hang
+	Q135609: WINS Fails on RAS Server with Multiport Adapter Installed
+	Q135692: "List Name From" List Box Shows Only 20 Trusted Domains
+	Q135700: Modifications to NETBT.SYS to Support Layered Drivers
+	Q137155: Users Without System32 Permissions Cannot Logon
+	Q137522: FPNW Keeps Directory Handles Open, Preventing Deletion
+	Q138222: DHCP Server Delays Release of Client-Rejected IP Addresses
+	Q138244: Printing Fails with "RPC Procedure Call Failed"
+	Q138257: Inconsistent Print Results Using HP LaserJet 5L
+	Q138713: Err Msg: Driver Entry Point Not Found After Service Pack Upgrade
+	Q138792: TCARC.SYS Causes Trap 0xA or Hangs Windows NT
+	Q140641: Updated Samsrv.dll Supports AppleTalk and Banyan Vines Clients
+	Q140891: Remote Shutdown May Fail
+	Q141118: No FPNW "NetWare Compatible Password Expired" Check Box
+	Q142608: Windows for Workgroups fails to print to Apple IIG through NTS.
+	Q142610: Err Msg: OS Loader V3.51 TRAP 0000000E PAGE FAULT
+	Q142611: WOW: GP Fault in DDEML.DLL Using Visual Basic Application
+	Q142612: TrueImage errors 4041 when printing from a Macintosh
+	Q142613: System Control Application Shows Insufficient Memory Dialog Box
+	Q142615: Event Log Service Fails to Check Access to Security Log File
+	Q142617: Server Rejects TreeConnectAndX and DirectorySearch SMB
+	Q142620: Access Violation in Nwsvc.exe
+	Q142621: OS/2 Application Does Not Return DOSREADQUEUE Properly
+	Q142622: Repeated Automatic Logons in Windows NT May Fail
+	Q142623: Encryption Keys of 768 & 1024 Bits Unavailable in Int?l WinNT
+	Q142624: Err Msg: "Unable to connect to target machine"
+	Q142625: NETBIOS Defaults To 16 Sessions on Windows NT
+	Q142626: LogonUser API Now Has Support for Network Logons
+	Q142627: NTDETECT.COM Incorrectly Detects Some S3 Video Controllers
+	Q142628: Stop 0x23 Errors in FASTFAT.SYS
+	Q142630: NTFS with Full Logfile Condition May Cause Trap
+	Q142631: Internet Information Server Directory Access Issue Resolved
+	Q142645: FPNW Stops w/ Win3.x Client Directory Search: "********.***"
+	Q142646: Upgrading To SP4 Can Overwrite Newer Versions of OLEAUT32.DLL
+	Q142647: Callback Field for RAS May Not Be Viewable From Rasadmin.exe
+	Q142648: STOP 0x00000024 in NTFS.SYS
+	Q142649: STOP 0x0000000A on ALR Revolution
+	Q142650: Netlogon Stops when Mailslot Message Is Larger than Specified
+	Q142651: Third-Party Cursor Hangs Cirrus Driver
+	Q142680: Modification to Support Direct Host IPX Acceleration Drivers
+	Q142874: Services for Macintosh Reports Incorrect Free Volume Space
+	Q142880: NetBT Fails to Bind to a Large Number of IP Addresses
+	Q143143: Error Printing From Macintosh to LPT Port of Windows NT Server
+	Q143329: Serial Mouse Does Not Work on a DEC Alpha Computer
+	Q145623: Access Violation in LSASS.EXE On Primary Domain Controller
+	Q145796: Print Manager Displays Macintosh EPS Document As File Name
+	Q146114: Heavy Load of FTP Service Results in Access Violation
+	Q146880: Logon/Logoff Events Logged Out of Order in Security Log
+	Q146905: Remote Pipe DosWaitNmPipe to OS/2 Subsystem Gives Error 123
+	Q147204: Stop 0x0000000A in NDIS.SYS on a Multi-Processor Computer
+	Q147246: Using Direct Hosting over IPX Causes STOP 0x0000000A
+	Q147349: No Sound On Some PCMCIA Modems in Windows NT 3.51
+	Q147372: Problem Using Full Tape Backup Requiring More than One Tape
+	Q147458: End of Media Crossing During Windows NT Tape Backup
+	Q147601: Problem Switching From Office 95 to 16-bit Application Window
+	Q147642: NetWare Files Overwritten When Updating To Windows NT 3.51 SP4
+	Q147661: MSMail32 Message With Hyphens Results In Access Violation
+	Q147695: MEMBER OF in FPNW Login Script Returns Incorrect Results
+	Q147697: Turning Off Auditing of Security Policy Changes Not Audited
+	Q148174: NWCONV.EXE Does Not Give Correct Permissions
+	Q148188: Internet Information Server Security .CMD /.BAT Patch
+	Q148353: Access Denied Using CHGPASS with DSMN
+	Q148485: Service Pack 4 Causes Some Installation Programs To Fail
+	Q148487: MS-DOS "For" Command Fails when Run Against an FPNW Server
+	Q148501: Preventing PCI Resource Conflicts on Intel-based Computers
+	Q148646: Stop 0x0000000A When Referencing Empty Sent Queue
+	Q148845: Access Violation in RASMAN.EXE Under Windows NT 3.51
+	Q148846: RAS Port Instance Names in Performance Monitor Are Corrupted
+	Q148929: Security Event ID 642 Logged Incorrectly for Audits
+	Q148939: DHCP Server Creates Unnecessary Lease
+	Q148957: NTBACKUP Fails With Application Error During Verify Process
+	Q149112: Some Image Maps Do Not Work with IIS
+	Q149167: Unable to Allocate Resources from the NDIS Wrapper
+	Q149214: Windows NT Server Stops Responding To Macintosh Clients
+	Q149293: File Manager Cannot View Permissions After NWCONV.EXE Is
+	Q149344: NWCONV.EXE Does Not Correctly Apply Permissions
+	Q149393: CrashOnAuditFail Activates on Shutdown with ProcessTracking
+	Q149394: CTRL+BREAK Does Not Work for 16-Bit Applications
+	Q149395: Stop Msg: 0x0000001E in RDR.SYS Caused by Corrupted SMBs
+	Q149468: CSNW Clients May Cause Clipper Index Corruption
+	Q149525: Poor Performance May Occur During FTP File Transfers
+	Q149528: FTP Client Uses Only One IP Address on Multihomed Workstations
+	Q149532: Windows NT Clients Run Out of Ports
+	Q149534: Windows NT Socket Apps Run Out of Ports
+	Q149559: FPNW LOGIN.EXE Doesn't Handle Password Expiration
+	Q149643: Printing to NetWare Deallocates Directory Handle
+	Q149722: Windows NT Registry Has a Limit of 300 Interfaces
+	Q149819: RPC Causes Exchange Server to Hang All Connected Clients
+	Q149857: MoveFileEx API Does Not Work After Applying SP4
+	Q149891: Programmatic System Shutdown Fails
+	Q149949: Some Browsers May Fail to Connect When IIS Uses SSL
+	Q149955: Random Users Do Not Appear in SYSCON Viewed w/ FPNW Server
+	Q150008: DOS Applications Receive Wrong Error Code in FPNW
+	Q150009: WinNT System Shutdown/Power Off Causes Boot-Sector Corruption
+	Q150047: NetWare Drives Inaccessible to CIM and MMTA
+	Q150048: Syscon Changes Maximum Password Age on FPNW Server
+	Q150059: Cannot Perform a NET VIEW Across RAS to Windows 95 Client
+	Q150060: Cannot Delete Directory Structure on FPNW Volume
+	Q150097: cc:Mail Clients Lock Up Through FPNW
+	Q150124: Cannot Access CD-ROM After Installing SP4
+	Q150140: STOP Msg: 0xC000021a as Application Terminates
+	Q150152: Printing from Mac to HP 3x with 52.2 HP Postscript Cartridge
+	Q150158: NTFS: Directory Changes Reported to LMREPL Erroneously
+	Q150172: FPNW Will Not Create File Larger Than 2.14GB
+	Q150275: Redirector Doesn't Close the Session After User Logs Off
+	Q150302: Overlapped I/O to Tape Results In Data Corruption
+	Q150305: DEC FDDI Adapters Fail to Respond to Broadcasts
+	Q150337: Simultaneous Dr. Watsons Stop Windows NT
+	Q150350: NetLogon Maximum Value of Pulse Should Exceed 3600
+	Q150355: Windows NT Nonresponsive During NTFS Directory Traversal
+	Q150410: Having 300+ Print Queues Causes Access Violation in Localmon
+	Q150508: Netscape Clients Hang While Posting Data to SSL Forms on IIS
+	Q150559: New Windows NT TCP/IP Registry Parameter: ArpTRSingleRoute
+	Q150729: Err Msg: "Access Denied" When Using Account Operator
+	Q150736: Stopping SNA Server Service Leads to Perpetual Stopping State
+	Q150823: Trap 0xA When Token Ring Source Routing Data Exceeds 18 Bytes
+	Q150831: Stop 0x0000000A in NBF.SYS When Running Under Stress
+	Q150833: Memory Deallocation Failure in SRV.SYS Directory Notification
+	Q150838: NWLNKSPX May Reset Connection With Out-Of-Sequence Packet
+	Q150847: File Manager Truncates Long File Names Containing Spaces
+	Q150904: DDE Link Stops Updating After Closing Another Link
+	Q150918: FPNW Event ID 2630 Unable to Access PDC for Write
+	Q150938: Printer Resident Fonts not Available w/ "Print Text as Graphics"
+	Q150996: Session Canceled Error Using IBM 16/4 Adapter II
+	Q151007: IBM ThinkPad Drives Have Problem w/ Read/Write and Media Change
+	Q151008: Sony 7000 and DEC TZ09 4mm DAT Not Supported Under 3.51
+	Q151010: IIS IDC: Err Msg: Error Performing Query
+	Q151183: WWW Clients Using Basic Authentication May Fail with IIS 1.0
+	Q151216: NTVDM May Leak Memory When Opening/Closing COMM Ports
+	Q151222: Stop A in FLNK.SYS While Copying From FPNW Server
+	Q151226: FPNW Grace Logins Are Not Reset When Password Is Changed
+	Q151235: FPNW Does Not Search Trusted Domains for Object Names
+	Q151259: New Netlogon Registry Entry for Dialup Routers
+	Q151306: WINS Partner Registry Settings May be Deleted
+	Q151432: Invalid File Handle with SP4 Nwrdr.sys
+	Q151448: Trap 0x50 and Trap 0xA Under Heavy Stress
+	Q151453: Netscape 2.01 Clients Hang While Getting SSL Pages w/ Graphics
+	Q151471: Processes Do Not Respond When NTFS Encounters an Error
+	Q151714: WinNT RPC Client May Fail Against DCE Server
+	Q151824: FoxPro Query May Return Inaccurate Results with FPNW
+	Q151962: System Appears to Stop When Adding Users to Large Global Groups
+	Q151977: FPNW Not Responding Correctly to Record Locking and Logging
+	Q151989: Novell 32-bit Client for Win95/WinNT Doesn't See FPNW Volume
+	Q151991: FPNW Writes Incorrect Last Modified Date on Files from OS/2
+	Q151997: DECMON Can Cause Spoolss to Generate an Access Violation
+	Q152051: IBM Gothic Box Font Appears Garbled
+	Q152121: Windows NT Logon to NetWare Is Slow & Causes Event 8007 Errors
+	Q152156: Access Violation in Client Process During Authenticated RPC
+	Q152270: CreateProcessAsUser() Fails After Applying Service Pack 3
+	Q152271: EnumServicesStatus() Results in Services.exe Memory Leak
+	Q152272: GetSecurityDescriptorGroup() Returns Incorrect Primary Group
+	Q152273: DHCP Server May Give Out Duplicate IP Addresses
+	Q152304: Random Blue Screens Caused by Bad Packet and DLC.SYS
+	Q152348: Block Writes Across Net May Cause Performance Hit
+	Q152398: Login.exe Now Sets Primary Server After Successful Login
+	Q152428: Initialization Failure in Rasman.dll When Shutting Down
+	Q152448: Mouse Cursor Freezes Intermittently in Windows NT
+	Q152450: Change Password Dialog Text Changed for NetWare
+	Q152474: Window Socket Application Failure with Connection Reset Event
+	Q152547: GP Fault in Windows NT VDM When Using SCROLL_LOCK/UNLOCK Key
+	Q152589: Netscape 2.01 Clients Hang While Getting SSL Pages w/ Graphics
+	Q152625: Ibmtok.sys Generates Event Message ID:5002 Error
+	Q152705: Multihomed WINS Servers Send Name Query Responses
+	Q152719: WAN and Trust: Traffic On the Wire
+	Q152837: ControlService() Results in Services.exe Memory Leak
+	Q152986: CSNW Does Not Report Directory Restrictions
+	Q152992: Netlogon Service Does Not Start After Applying SP4
+	Q153157: WNetGetUser Returns ERROR_NOT_CONNECTED
+	Q153202: Duplex Printing Causes Problems After Applying SP4
+	Q153237: File Manager Unable to Copy Long File Names to Write-Only Volume
+	Q153332: ECHO Command in a Batch File Does Not Echo /Q
+	Q153462: Err Msg: Event 4010: Unable to Get the Local Computer Name
+	Q153504: PCL5EMS Does Not Support All Memory Available on HP LJ 5Si MX
+	Q153596: TCP/IP Performance Degrades When Resuming Large Data Transfer
+	Q153665: SPX Data Stream Type Header May Reset Unexpectedly
+	Q153666: Updated TCP/IP Printing Components for Windows NT 3.51
+	Q153706: WINS Service Terminates During Replication
+	Q153949: CSNW Does Not Support MS-DOS NAME SPACE Correctly
+	Q153953: Log on Locally Permission Not Required for Client Access
+	Q153956: System Performance Degrades w/ 16-Bit OLE Application
+	Q153993: Windows NT May Cache Data Even if Write-through Flag is Set
+	Q154067: System Error: The WIN 16 SubSystem Was Unable to Allocate Memory
+	Q154090: Installing Too Many OLE Applications May Cause System to Lock
+	Q154117: No Drive Letter When Using PC-Card Type III Slot
+	Q154145: SSL: ISAPI Secure Transmissions Limited to 32K of Data
+	Q154175: Users May Lose Designated Default Printer After Multiple Logins
+	Q154183: CreateFile API with Delete-on-Close Option May Fail
+	Q154355: How to Tune Trusts for Dialup Routers in a WAN
+	Q154444: EPS Files Larger Than Page Fail to Print
+	Q154485: Disabling Keep Alive Connections in IIS 1.0
+	Q154563: FPNW Search Drive Vector Not Set
+	Q154564: Access Denied Using CHNGPASS When Logged On to FPNW
+	Q154688: DPT PCI-SCSI Fails on PPC if IRQ Greater Than 15
+	Q154700: HALMCA Does Not Check for PCI
+	Q154783: Msg Sent from MSMail Windows NT Client Undeliverable
+	Q154784: Windows NT Operating System SNMP OID Incorrect
+	Q154785: WinNT 3.51 Service Packs (SPs) Incorrectly Update Newer SPs
+	Q154790: Weitek PCI Video Fails to Load on PowerPC Secondary PCI Bus
+	Q154797: SP5 Adds Code Pages for Central European Language Support
+	Q154799: Update.exe in 3.51 Service Packs May Use Wrong Patchdll.dll
+	Q154832: Disabling Thread Creation for CGI I/O in IIS 1.0
+	Q154833: Automatic Logoff After Screen Saver Fails
+	Q154841: Problem Connecting to Xylogics Annex-3 Terminal Server
+	Q154845: Bugcheck in Fastfat.sys
+	Q154846: AP Error Running Gdsset.exe in Japanese IIS
+	Q154847: WINMSD May Not Report Correct Service Pack Version
+	Q154854: Trap 0xA in AtalkBPFreeBlock
+	Q154862: Web Browsers May Fail When Accessing SSL Secure Pages
+	Q154865: Datatype Misalignment in inetsloc
+	Q154933: Err Msg: The LsaCreateSecret Call Failed
+	Q154938: Bugcheck 0xA - Saving 64K File to NetWare in Notepad
+	Q154939: CreateQueueJobAndFile Fails w/ Queues Other Than Print Queue
+	Q154942: IIS Virtual Root Cannot Be Browsed on a SAMBA or WIN95 Share
+	Q154944: Power PC (PPC) Only: OldIrql Is Stored Before Spinlock
+	Q154945: FlushFileBuffers Not Committing Filesize Properly in NT3.51 SP4
+	Q154946: Bugcheck 93 in the RDR
+	Q154948: S3.sys Driver Does Not Work with Dell Optiplex
+	Q154950: SPX Header Not Available for a Terminate Packet
+	Q154951: Blue Screen w/ S3 Video Driver Upgrading from 3.51 to SP3 or SP
+	Q154952: Remote Admin Can Access a File for Which Everyone Has No Access
+	Q154953: Setup Unable to Create IUSR_computername Account
+	Q154963: DosSetSigHandler API Not Behaving as Expected in OS/2 Subsystem
+	Q154982: ATDISK Reports Huge Disk Size on IDE Greater Than 2 GB
+	Q154983: Dual Screens at High Resolutions Don't Display Correctly
+	Q154990: SETPASS May Change Password of Wrong User
+	Q155026: Stop 0xC000021a in Windows Subsystem with Status c00000005
+	Q155052: IIS Server Handling of URLs Using "\", "<", and ">"
+	Q155056: IIS Security Concern Using Batch Files for CGI
+	Q155057: ScanLogicalLocksByName Supported in FPNW with Service Pack 5
+	Q155058: IIS Server May Hang After Processing Several Client Queries
+	Q155138: Stop 0x00000077 in FPNWSRV.SYS During Burst Mode Read
+	Q155330: FPNW Utility to Setup Subauthentication on Domain Controller
+	
+	Additional query words: prodnt servpack SP5 bug fix qfe compact disc
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTSsearch kbWinNTS351search kbWinNTS351sp5 kbWinNTW351sp5
+	Version           : :3.51 SP5
+	
+	=============================================================================
+	

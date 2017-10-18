@@ -1,0 +1,230 @@
+---
+layout: page
+title: "Q325978: Train Simulator: Error Message About Graphics Hardware"
+permalink: kb/325/Q325978/
+---
+
+## Q325978: Train Simulator: Error Message About Graphics Hardware
+
+	Article: Q325978
+	Product(s): Microsoft Home Games
+	Version(s): 1.0
+	Operating System(s): 
+	Keyword(s): kberrmsg kbimu
+	Last Modified: 05-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Train Simulator, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you start Train Simulator, you receive an error message similar to the
+	following:
+	
+	  Microsoft Train Simulator has detected that your graphics hardware may be
+	  lacking essential features that it needs to run. Please ensure that you have
+	  the latest drivers from your graphics card manufacturer's web site.
+	
+	-or-
+	
+	When you start the Train Simulator Troubleshooter, you see this message:
+	
+	  Train Simulator requires hardware acceleration.
+	
+	CAUSE
+	=====
+	
+	This behavior may occur when one or more of the following conditions are true:
+	
+	- Your video card is not installed properly.
+	
+	- Your computer does not meet the minimum three-dimensional (3-D) hardware
+	  requirements to run Train Simulator.
+	
+	- Microsoft DirectDraw acceleration is turned off (disabled).
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, use the following methods in the order in which they
+	are presented.
+	
+	NOTE: Because there are several versions of Microsoft Windows, the following
+	steps may be different on your computer. If they are, see your product
+	documentation to complete these steps.
+	
+	Method 1: Verify That Your Video Adapter Meets the Minimum Requirements:
+	
+	For additional information about the system requirements to run Train Simulator,
+	click the article number below to view the article in the Microsoft Knowledge
+	Base:
+	
+	  Q299762 Train Simulator: Minimum System Requirements
+	
+	Use the Microsoft DirectX Diagnostic Tool to determine how much video memory is
+	installed on your video adapter. To do this, follow these steps.
+	
+	NOTE: If your video acceleration is not set to Full, the diagnostic tool may
+	report less memory than is actually present on your video adapter. See the "More
+	Information" section of this article for steps to make sure that your video
+	acceleration is set correctly before you run this test.
+	
+	1. Click Start, and then click Run.
+	
+	2. In the Open box, type "dxdiag" (without the quotation marks), and then click
+	  OK.
+	
+	3. Click the Display tab or Display 1 tab.
+	
+	4. Under Device, note how much video memory is listed next to Approx. Total
+	  Memory.
+	
+	5. Click Exit.
+	
+	If less than 4 megabytes (MB) of video memory is installed on your video adapter,
+	install additional video memory, or install a video adapter with more video
+	memory.
+	
+	If this does not resolve the problem, go to method 2.
+	
+	Method 2: Install the Latest Video Driver for Your Video Adapter:
+	
+	Contact your video adapter manufacturer for information about how to obtain and
+	install the latest video driver for your video adapter. For additional
+	information about how to determine which driver version you have installed,
+	click the article number below to view the article in the Microsoft Knowledge
+	Base:
+	
+	  Q159487 Games: How to Determine the Version of Installed Video Driver
+	
+	For information about how to contact your video adapter manufacturer, click the
+	appropriate article number in the following list to view the article in the
+	Microsoft Knowledge Base:
+	
+	  Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+	
+	  Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+	
+	  Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+	
+	Microsoft provides third-party contact information to help you find technical
+	support. This contact information may change without notice. Microsoft does not
+	guarantee the accuracy of this third-party contact information.
+	
+	The third-party products that are discussed in this article are manufactured by
+	companies that are independent of Microsoft. Microsoft makes no warranty,
+	implied or otherwise, regarding the performance or reliability of these
+	products.
+	
+	If this does not resolve the issue, go to method 3.
+	
+	Method 3: Reprofile Your Hardware and Drivers:
+	
+	After you update your video adapter, run the Train Simulator Troubleshooter to
+	reprofile your hardware and drivers. To do this, follow these steps:
+	
+	1. Click Start, point to Programs, point to Microsoft Games, point to Train
+	  Simulator, and then click Train Simulator Troubleshooter.
+	
+	2. Click Change Video Driver, and then click OK.
+	
+	3. Click Play Train Simulator.
+	
+	If this does not resolve the problem, go to method 4.
+	
+	Method 4: Install the Latest Version of Microsoft DirectX:
+	
+	To download and install the latest version of DirectX, visit the following
+	Microsoft Web site:
+	
+	  Microsoft DirectX
+	  http://www.microsoft.com/directx/default.asp
+	
+	For additional information about how to download and install the latest version
+	of DirectX, click the article number below to view the article in the Microsoft
+	Knowledge Base:
+	
+	  Q179113 How to Download and Install DirectX
+	
+	If this does not resolve the issue, go to method 5.
+	
+	Method 5: Turn On (Enable) Hardware Acceleration for Microsoft DirectDraw:
+	
+	1. Click Start, and then click Run.
+	
+	2. In the Open box, type "dxdiag" (without the quotation marks), and then click
+	  OK.
+	
+	3. Click the Display tab or Display 1 tab.
+	
+	4. Under DirectX Features, verify that acceleration is turned on (enabled) next
+	  to DirectDraw Acceleration.
+	
+	5. If DirectDraw Acceleration is turned off (disabled), click Enable.
+	
+	6. Click Exit.
+	
+	MORE INFORMATION
+	================
+	
+	How to Set Graphics Acceleration to Full Acceleration
+	-----------------------------------------------------
+	
+	NOTE: You must use the Full acceleration setting (or one "notch" lower) when you
+	test video adapter memory.
+	
+	In Microsoft Windows 98:
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click System.
+	
+	3. Click the Performance tab, and then click Graphics.
+	
+	4. Drag the Hardware Acceleration slider to the far right (Full acceleration).
+	
+	  NOTE: If full acceleration causes problems on your computer, reduce
+	  acceleration by dragging the slider one notch to the left of Full.
+	
+	5. Click OK, and then click Close.
+	
+	6. Restart your computer if you are prompted to do so.
+	
+	In Microsoft Windows XP:
+	
+	1. Click Start, and then click Control Panel.
+	
+	2. Double-click Display, click Settings, and then click the Advanced tab.
+	
+	3. Click the Troubleshoot tab, and then drag the Hardware Acceleration slider to
+	  the far right (Full acceleration).
+	
+	  NOTE: If full acceleration causes problems on your computer, reduce
+	  acceleration by dragging the slider one notch to the left of Full.
+	
+	4. Click OK, and then click Close.
+	
+	5. Restart your computer if you are prompted to do so.
+	
+	REFERENCES
+	==========
+	
+	For additional information about 3-D hardware issues, click the article number
+	below to view the article in the Microsoft Knowledge Base:
+	
+	  Q191660 Err Msg: Could Not Find Any 3D Acceleration Hardware...
+	
+	Additional query words: msgame
+	
+	======================================================================
+	Keywords          : kberrmsg kbimu 
+	Technology        : kbHomeProdSearch kbGamesSearch _IK kbTrainSim kbSimSearch
+	Version           : :1.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

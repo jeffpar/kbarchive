@@ -1,0 +1,74 @@
+---
+layout: page
+title: "Q190149: PRB: Access Violation in GetAmbientDisplayName"
+permalink: kb/190/Q190149/
+---
+
+## Q190149: PRB: Access Violation in GetAmbientDisplayName
+
+	Article: Q190149
+	Product(s): Microsoft C Compiler
+	Version(s): 3.0,6.0
+	Operating System(s): 
+	Keyword(s): kbnokeyword kbCOMt kbVC600 kbATL300 kbGrpDSMFCATL
+	Last Modified: 13-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The Microsoft Active Template Library (ATL) 3.0, used with:
+	   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+	   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+	   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+	   - Microsoft Visual C++.NET (2002) 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	An Access Violation may occur in GetAmbientDisplayName if the BSTR parameter
+	passed to it is uninitialized. This is most likely to occur if the BSTR was
+	declared as a local variable.
+	
+	CAUSE
+	=====
+	
+	In Visual C++ 6. and Visual C++ .Net, the ATL implementation of
+	GetAmbientDisplayName assumes that all non-NULL BSTRs are initialized, and
+	passes them to ::SysFreeString. This assumption can cause problems because any
+	uninitialized BSTR declared inside a function could be non-NULL.
+	
+	RESOLUTION
+	==========
+	
+	Set any uninitialized BSTRs to NULL before calling GetAmbientDisplayName.
+	
+	STATUS
+	======
+	
+	This behavior is by design.
+	
+	MORE INFORMATION
+	================
+	
+	The ATL implementation of GetAmbientDisplayName in Visual C++ 5.0 assumes all
+	BSTRs are uninitialized and does not free memory before using them, which can
+	cause leaks. Also, no memory is allocated for the BSTR and the value of the BSTR
+	is set to memory that is then freed, which can cause access violations.
+	
+	These problems have been corrected in Visual C++ 6.0.
+	
+	(c) Microsoft Corporation 1998, All Rights Reserved. Contributions by Kelly Marie
+	Ward, Microsoft Corporation.
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbnokeyword kbCOMt kbVC600 kbATL300 kbGrpDSMFCATL 
+	Technology        : kbVCsearch kbAudDeveloper kbATLsearch
+	Version           : :3.0,6.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

@@ -1,0 +1,132 @@
+---
+layout: page
+title: "Q241734: SMS: MMC Stack Overflow in User Security Wizard"
+permalink: kb/241/Q241734/
+---
+
+## Q241734: SMS: MMC Stack Overflow in User Security Wizard
+
+	Article: Q241734
+	Product(s): Microsoft Systems Management Server
+	Version(s): winnt:2.0
+	Operating System(s): 
+	Keyword(s): kbMMC kbSecurity kbsms200 kbsms200bug kbsms200sp2fix
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server version 2.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When using the Systems Management Server User Security Wizard to browse a very
+	large domain, you may receive Microsoft Management Console (MMC) error messages
+	similar to the following examples:
+	
+	Example 1:
+	
+	  Win32 Exception in MMC Admin UI!
+	
+	  WIN32 Exception : STACK_OVERFLOW
+	  Description : The thread used up its stack.
+	
+	  Entry Point : CComponentDataImp::Command
+	  Operation : Command Line: C:\WINNT\System32\mmc.exe "E:\SMS\bin\i386\sms.msc"
+	  "" "" "" "" "" "" "" ""
+	  Trace :
+	  MMF Build Info : SMS 2.0 Beta (1239)
+	
+	Example 2:
+	
+	  Win32 Exception in MMC Admin UI!
+	
+	  WIN32 Exception : STACK_OVERFLOW
+	  Description : The thread used up its stack.
+	
+	  Entry Point : CWnd::WindowProc
+	  Operation : WM_COMMAND
+	  Command Line: C:\WINNT\System32\mmc.exe "E:\SMS\bin\i386\sms.msc" "" "" "" ""
+	  "" "" "" ""
+	  Trace :
+	
+	  MMF Build Info : SMS 2.0 Beta (1239)
+	
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, obtain the latest service pack for Systems Management
+	Server version 2.0. For additional information, click the following article
+	number to view the article in the Microsoft Knowledge Base:
+	
+	  Q236325 How to Obtain the Latest Systems Management Server 2.0 Service Pack
+	
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Systems Management Server
+	version 2.0. This problem was first corrected in Systems Management Server
+	version 2.0 Service Pack 2.
+	
+	MORE INFORMATION
+	================
+	
+	This hotfix needs to be applied to all workstations and servers that have the
+	SMS Administration console installed. Secondary site servers, by default, do not
+	have the SMS Administration console installed and do not need this hotfix
+	applied unless the Administration console was also installed on that site.
+	
+	To install the hotfix, use the appropriate method on the Systems Management
+	Server site server.
+	
+	Method 1: Using the Hotfix Installer
+	------------------------------------
+	
+	NOTE: You can only use this method on I386-based computers.
+	
+	1. Copy the hotfix folder structure to a share on your network. Q241734.exe is a
+	  Microsoft Windows Installer file that updates specific files on your site
+	  server.
+	
+	2. Log on to your site server using an account with administrative privileges.
+	
+	3. On the site server, close the Systems Management Server Administrator
+	  console.
+	
+	4. Run Q241734.exe and follow the directions in the wizard. You can run the file
+	  in Quiet mode using the /s switch.
+	
+	Method 2: Manual Installation
+	-----------------------------
+	
+	1. Quit the Systems Management Server Administrator console and stop the Windows
+	  Management service.
+	
+	2. Replace the Sms_musr.dll file in the
+	  <sms_root_directory>\bin\<platform> folder with the version
+	  obtained from the hotfix.
+	
+	3. At a command prompt, type the following command:
+	
+	  cd <sms root dir>\bin\<platform> regsvr32 sms_musr.dll
+	
+	4. Restart the Windows Management service and the Systems Management Server
+	  Administrator console.
+	
+	
+	Additional query words: prodsms stack overflow
+	
+	======================================================================
+	Keywords          : kbMMC kbSecurity kbsms200 kbsms200bug kbsms200sp2fix 
+	Technology        : kbSMSSearch kbSMS200
+	Version           : winnt:2.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

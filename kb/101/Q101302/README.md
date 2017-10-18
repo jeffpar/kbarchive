@@ -1,0 +1,84 @@
+---
+layout: page
+title: "Q101302: How to Prevent &quot;Source Is out of Date&quot; Error Message"
+permalink: kb/101/Q101302/
+---
+
+## Q101302: How to Prevent &quot;Source Is out of Date&quot; Error Message
+
+	Article: Q101302
+	Product(s): Microsoft FoxPro
+	Version(s): 2.50 2.50a 3.00| 2.00 2.50 2.50a
+	Operating System(s): 
+	Keyword(s): kberrmsg
+	Last Modified: 21-AUG-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 3.0 
+	- Microsoft FoxPro for Windows, versions 2.5, 2.5a 
+	- Microsoft FoxPro for MS-DOS, versions 2.0, 2.5, 2.5a 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The error message "Source is out of date" indicates that the source program has
+	been changed, but not recompiled or generated. This error can also occur if an
+	"old" version of a program is found in a different subdirectory than the current
+	version.
+	
+	FoxPro first creates and then runs a compiled version of a program file. This
+	compiled version is called an object file and runs faster than a noncompiled
+	version. This feature cannot be disabled.
+	
+	To eliminate this error, regenerate the program by opening the source file and
+	choosing Generate from the Program menu.
+	
+	If the program is part of a project, open the project and select the Build
+	option. Then select the Rebuild Project and the Rebuild All options. Rebuild the
+	project and re-create the application.
+	
+	If this doesn't work, scan all the subdirectories for occurrences of the source
+	and object code. Delete the extra files and regenerate the program.
+	
+	MORE INFORMATION
+	================
+	
+	To prevent further occurrences of this error, issue the SET DEVELOPMENT ON
+	command. If you have issued this command and the source code is more current
+	than its compiled object program, FoxPro will recompile the source code before
+	it executes the program, thus ensuring that the most current version of a
+	program is executed.
+	
+	If the "Source is out of date" error message still occurs, scan all
+	subdirectories for occurrences of the source and object code. Compiled files in
+	FoxPro will have the following extensions:
+	
+	  .FXP - Compiled version of source code program with .PRG extension.
+	  .APP - Compiled application program.
+	  .QPX - Compiled version of source code program with .QPR extension.
+	  .MPX - Compiled version of source code program with .MPR extension.
+	  .SPX - Compiled version of source code program with .SPR extension.
+	  .PRX - Compiled version of source code program with .FMT extension.
+	
+	You can scan for these extensions by using the Find option in the Filer, or, if
+	you have MS-DOS version 5.0 or later, by typing the following DIR command at the
+	MS-DOS prompt:
+	
+	     dir <filename> /s
+	
+	If duplicate filenames are found, remove the incorrect versions of the files, or
+	change the FoxPro SET PATH command to ignore the directories where the duplicate
+	files are found.
+	
+	Additional query words: VFoxWin FoxDos FoxWin errmsg err msg
+	
+	======================================================================
+	Keywords          : kberrmsg 
+	Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro200DOS kbFoxPro250DOS kbFoxPro250aDOS kbFoxPro250 kbFoxPro250a kbVFP300
+	Version           : 2.50 2.50a 3.00| 2.00 2.50 2.50a
+	
+	=============================================================================
+	

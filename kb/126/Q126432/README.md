@@ -1,0 +1,121 @@
+---
+layout: page
+title: "Q126432: SNA Server Windows Client Memory Tuning"
+permalink: kb/126/Q126432/
+---
+
+## Q126432: SNA Server Windows Client Memory Tuning
+
+	Article: Q126432
+	Product(s): Microsoft SNA Server
+	Version(s): WINDOWS:2.0,2.1,2.11,3.0,4.0
+	Operating System(s): 
+	Keyword(s): kbnetwork sna4
+	Last Modified: 12-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 2.0, 2.1, 2.11, 3.0, 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The following tuning suggestions can reduce conventional memory usage on Windows
+	3.x and Windows for Workgroups 3.x clients running the SNA Server Windows 3.x
+	client software. If the machine is running low on available conventional memory
+	(memory between zero and one megabyte), you may see the following problems, no
+	matter how much RAM you have installed:
+	
+	- One of the following error message appears:
+	
+	  Out of Memory
+	
+	  SNA Server Error 546: Cannot establish connection with SNA Server
+	
+	  NAP not started
+	
+	- The SNA Server Windows client icon (WNAP.EXE) does not maintain its sponsor
+	  connection
+	
+	- A 5250 emulator displays the following APPC error:
+	
+	  
+	
+	     Primary return code = F011        (AP_UNEXPECTED_DOS_ERROR)
+	     Secondary return code = 00000008  (out of memory)
+	
+	- Applications the do not properly handle low memory situations cause general
+	  protection (GP) faults or stop responding (hang).
+	
+	MORE INFORMATION
+	================
+	
+	Windows client memory tuning suggestions:
+	
+	SNA Server Windows Client Memory Allocation
+	-------------------------------------------
+	
+	By default, WNAP reserves enough internal buffers to handle connections through
+	several servers. If you only connect through one or two SNA Servers, you can add
+	the following entry to the [wnap] section of WIN.INI:
+	
+	  "maxpipes=6" (without the quotation marks)
+	
+	This entry determines the number of communication buffers that the SNA client
+	software allocates, regardless of the client network interface selected (named
+	pipes, IPX/SPX, TCP/IP or Banyan IP).
+	
+	
+	Stop and restart WNAP so this change can take effect.
+	
+	
+	Disabling Network DDE on Windows for Workgroups Version 3.11 Machines
+	---------------------------------------------------------------------
+	
+	A significant amount of conventional memory can be gained by disabling Network
+	DDE, if it is not being used. To do this, run the Windows for Workgroups 3.11
+	Control Panel, choose Network, choose Startup, and clear the Network DDE check
+	box. Quit and restart Windows for Workgroups so this change can take effect.
+	
+	
+	You can make more conventional memory available by removing any unnecessary
+	drivers or terminate-and-stay-resident (TSR) programs from the configuration,
+	and maximizing the use of available upper memory block (UMB) areas if MS-DOS 5.0
+	or later is being used.
+	
+	Identify Low Memory Situations
+	------------------------------
+	
+	You can use the Heap Walker utility (HEAPWALK.EXE), included with the Windows 3.1
+	SDK, to help identify low conventional memory situation in Windows:
+	
+	
+	- Select the Sort/Address option to view memory allocation from low to high
+	  memory addresses. Conventional memory addresses start with 000xxxxx while
+	  virtual addresses start with 80xxxxxx.
+	
+	- All segments which appear as Fixed memory (where the FLG field is set to F)
+	  cannot be moved or discarded by Windows. Low conventional memory problems
+	  occur when excessive Fixed memory regions occupy conventional memory space,
+	  and very few free conventional memory areas are available, even though the
+	  may be large amounts of virtual memory available.
+	
+	- You can save Heap Walker information to a file called HWG0x.TXT (where x
+	  increments from 0 - 9) by choosing Save from the file menu.
+	
+	If HEAPWALK is not available, you can run MEM /C (before running Windows or
+	Windows for Workgroups) to determine how much free conventional memory is
+	available before Windows is loaded. You cannot view Windows memory allocation.
+	
+	
+	Additional query words: prodsna tcp/ip gpf
+	
+	======================================================================
+	Keywords          : kbnetwork sna4 
+	Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ200 kbSNAServ211 kbSNAServ400 kbSNAServ210
+	Version           : WINDOWS:2.0,2.1,2.11,3.0,4.0
+	
+	=============================================================================
+	

@@ -1,0 +1,99 @@
+---
+layout: page
+title: "Q247826: BUG: Using a QoS Socket with AcceptEx"
+permalink: kb/247/Q247826/
+---
+
+## Q247826: BUG: Using a QoS Socket with AcceptEx
+
+	Article: Q247826
+	Product(s): Microsoft Windows NT
+	Version(s): WINDOWS:
+	Operating System(s): 
+	Keyword(s): kbnetwork kbAPI kbGQos kbOSWin2000 kbSDKPlatform kbSDKWin32 kbDSupport kbGrpDSNet
+	Last Modified: 24-OCT-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 2000 Advanced Server 
+	- Microsoft Windows 2000 Server 
+	- Microsoft Windows 2000 Professional 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The AcceptEx function exhibits several problems when used with a Quality of
+	Service (QoS) socket:
+	
+	- The AcceptEx function drops incoming data if it is used with a QoS socket and
+	  if AcceptEx is called with its dwReceiveDataLength parameter set to a value
+	  great than 0 (zero). If AcceptEx is called with dwReceiveDataLength set to a
+	  value of N (N greater than 0), then the application calling AcceptEx never
+	  receives the N bytes of data. Furthermore, the lost data cannot be
+	  subsequently retrieved by calling recv or WSARecv after calling AcceptEx.
+	
+	- The AcceptEx function may access violate if the lpOutputBuffer parameter
+	  passed in is NULL.
+	
+	- The lpOverlapped parameter to AcceptEx must not be NULL.
+	
+	- The sAcceptSocket parameter used in AcceptEx will not inherit the properties
+	  of the sListenSocket parameter after setsockopt(SO_UPDATE_ACCEPT_CONTEXT) is
+	  called, as documented for this function.
+	
+	RESOLUTION
+	==========
+	
+	To use the AcceptEx function with a QoS socket, please use the following
+	guidelines:
+	
+	- Set the dwReceiveDataLength parameter in AcceptEx to 0, which tells AcceptEx
+	  to return as soon as a connection has been established. To obtain the data
+	  sent, call either recv or WSARecv.
+	
+	- Do not pass in NULL for the lpOutputBuffer parameter when calling AcceptEx
+	  (even though you do not intend to receive initial data as described in the
+	  previous item). Instead, provide a buffer size greater than or equal to (2 *
+	  (sizeof(sockaddr_in) + 16) = 64.
+	
+	- Call AcceptEx in an overlapped fashion and pass a pointer to a properly
+	  initialized overlapped structure in the lpOverlapped parameter in AcceptEx.
+	
+	- Set the dwLocalAddressLength and dwRemoteAddressLength parameters to
+	  (sizeof(sockaddr_in) + 16) = 32 when calling AcceptEx (and
+	  GetAcceptExSockaddrEx--see next item).
+	
+	- Call the GetAcceptExSockaddrEx function prior to calling
+	  setsockopt(SO_UPDATE_ACCEPT_CONTEXT) in order to have the sAcceptSocket
+	  parameter inherit the QoS properties of the sListenSocket parameter. If you
+	  do not call the GetAcceptExSockaddrEx function, then you will have to
+	  explicitly get the QoS settings for sListenSocket by using
+	  WSAIoctl(SIO_GET_QOS), and then set QoS on sAcceptSocket by using
+	  WSAIoctl(SIO_SET_QOS).
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article.
+	
+	REFERENCES
+	==========
+	
+	For additional information about creating a QoS socket, click the article number
+	below to view the article in the Microsoft Knowledge Base:
+	
+	  Q192120 HOWTO: Use the WSAPROTOCOL_INFO Structure to Create a Socket
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbnetwork kbAPI kbGQos kbOSWin2000 kbSDKPlatform kbSDKWin32 kbDSupport kbGrpDSNet 
+	Technology        : kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWinAdvServSearch
+	Version           : WINDOWS:
+	Issue type        : kbbug
+	
+	=============================================================================
+	

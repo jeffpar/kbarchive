@@ -1,0 +1,310 @@
+---
+layout: page
+title: "Q198688: XCON: General Data Gathering Procedures for MTA Troubleshooting"
+permalink: kb/198/Q198688/
+---
+
+## Q198688: XCON: General Data Gathering Procedures for MTA Troubleshooting
+
+	Article: Q198688
+	Product(s): Microsoft Exchange
+	Version(s): 4.0,5.0,5.5
+	Operating System(s): 
+	Keyword(s): exc4 exc5 exc55
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about modifying the registry. Before you 
+	modify the registry, make sure to back it up and make sure that you understand how to restore 
+	the registry if a problem occurs. For information about how to back up, restore, and edit the 
+	registry, click the following article number to view the article in the Microsoft Knowledge Base:
+	
+	  Q256986 Description of the Microsoft Windows Registry
+	
+	SUMMARY
+	=======
+	
+	This article is designed to help Microsoft Exchange Server administrators
+	troubleshoot message transfer agent (MTA) problems on one or more Microsoft
+	Exchange Server computers. Although this article discusses MTA issues, other
+	Microsoft Exchange Server Support Professionals often request similar data.
+	Furthermore, you may require different sets of data to diagnose different MTA
+	problems. For example, to troubleshoot MTA content conversion problems you may
+	require specific data that you may not require to troubleshoot a routing
+	problem.
+	
+	The data gathering techniques in this article help you diagnose Exchange Server
+	problems, and also help when you call Microsoft Product Support Services (PSS).
+	Before you call Microsoft PSS, be sure you gather the system and application
+	event logs from the problem server or servers, and have them packaged and ready
+	to send to Microsoft Support Professionals, either in an e-mail or using File
+	Transfer Protocol (FTP). This is the minimum amount of information you need to
+	expedite case resolution. The scope of Exchange Server MTA problems includes
+	connector problems (Dynamic RAS, Site, or X.400), high CPU use by the MTA, MTA
+	not starting or running incorrectly, and so on.
+	
+	MORE INFORMATION
+	================
+	
+	Many Exchange Server administrators are not aware of the type or scope of
+	information that Microsoft Support Professionals need from them. When you open a
+	support issue regarding an MTA problem, Microsoft recommends that you have the
+	following elements on hand at the time that you contact Microsoft PSS. You may
+	need to collect additional data, but the following guidelines provide a good
+	baseline data set for identifying and resolving MTA problems. This type of data
+	collection is sometimes difficult to coordinate and is not always possible, but
+	it is very helpful in isolating a problem.
+	
+	System and Application Event Logs
+	---------------------------------
+	
+	The system event log is necessary for standard troubleshooting procedure. It can
+	contain information about problems (with NTLM authentication, name resolution
+	problems, and so on) that may actually be causing the Exchange Server problem.
+	
+	Application event logs are extremely helpful in diagnosing single server MTA
+	problems, or connection related failures between servers. As a general rule,
+	when MTA problems arise there are at least three categories of application event
+	logging detail that you want on the MTA - X.400 service, interface, and internal
+	processing. Increase these three categories to maximum logging levels, increase
+	the application event log size to 20 to 30 megabytes (MB), and in the Event
+	Viewer, on the Options menu, click Overwrite as Needed. You must clear the
+	application event log for a log size increase to take effect.
+	
+	For additional information about clearing the application event log, please see
+	the following article in the Microsoft Knowledge Base:
+	
+	  Q142032 PRB: Event Log Does Not Resize Without Clearing
+	
+	Be sure to save the file with the .evt extension.
+	
+	At the time of this writing, Microsoft has an incoming size limit of 5 MB on
+	e-mail messages, so before you send logs close to or over this size limit in
+	e-mail to a Microsoft Support Professional, zip them. If the zipped files are
+	still too large, you can send them using FTP. Ask your Microsoft Support
+	Professional for FTP instructions.
+	
+	Obtain system and application event logs at each affected MTA; this is important
+	because the MTA communication is an end-to-end process, and analyzing logs from
+	just one of the affected MTAs may not be adequate to determine the problem.
+	Errors may appear in one MTA log that indicate a connectivity problem, but the
+	opposing MTA may itself be the real problem. For this reason, you need logs from
+	each server affected by the problem.
+	
+	For additional information about logging options for the MTA, please see the
+	following articles in the Microsoft Knowledge Base:
+	
+	  Q153188 Description of MTA Diagnostics Logging Options
+	
+	  Q168906 Setting up Advanced Logging on Exchange 5.0 and 5.5 MTAs
+	
+	  Q163033 Description of Diagnostics Categories for MTA
+	
+	Performance Monitor Logging
+	---------------------------
+	
+	Performance Monitor logging for all objects on the server is useful in
+	determining not only the state of the Exchange Server MTA, but for all
+	underlying system processes, including, but not limited to, other Exchange
+	Server services. Logging MTA objects (MSExchangeMTA and MSExchangeMTA
+	Connections) is important for MTA problems, but if all objects are logged you
+	can see if another process is contributing to MTA problems.
+	
+	To gather Performance Monitor log files:
+	
+	1. Start Performance Monitor (not on the server you want the Performance Monitor
+	  log for), and on the View menu, click Log.
+	
+	2. On the Edit menu, click Add to Log, select the Exchange Server computer you
+	  want a Performance Monitor log for, and then select all objects. Click Add,
+	  and then click Done.
+	
+	3. On the Options menu, click Log, and set the interval to 30 seconds. Name the
+	  log <Servername>.log.
+	
+	4. Click Start Log, and let logging run for 20 to 30 minutes. Then, on the
+	  Options menu, click Log, and then click Stop Log.
+	
+	5. Send Microsoft PSS the Performance Monitor log file.
+	
+	For additional information about how to create a Performance Monitor log, please
+	see the following article in the Microsoft Knowledge Base:
+	
+	  Q150934 How to Create a Performance Monitor Log for NT Troubleshooting
+	
+	If possible, generate a Performance Monitor log for each server, sampling ALL
+	objects every 30 seconds, for at least 20 to 30 minutes, to give Microsoft PSS a
+	"snapshot" of the overall server conditions at the time. Be aware that if you do
+	not monitor the log, it increases in size and eventually fills your hard disk
+	drive. If you monitor a server for an extended period of time, increase the
+	update interval. You can also take baseline Performance Monitor statistics
+	during a non-problem time period, to compare those statistics with statistics
+	from the time of the issue.
+	
+	Winmsd Reports from All Affected Servers
+	----------------------------------------
+	
+	This report gives useful details about the server's services, drivers,
+	environment, and so on. It is a relatively small file that is easy to create,
+	and it can help you troubleshoot problems such as an unresponsive server. To
+	gather a Winmsd report:
+	
+	1. At the server you want a Winmsd report for, click the Start button, point to
+	  Run, type "winmsd" (without the quotation marks), and then press ENTER. Do
+	  this at the problem server, because when you do it remotely, some
+	  information, such as the Drives report, may be omitted.
+	
+	2. On the File menu, click Save Report.
+	
+	3. Under Scope, select all tabs.
+	
+	4. Under Detail Level, select Complete.
+	
+	5. Under Destination, select File.
+	
+	6. Save the file as <Winmsdservername>.txt
+	
+	A Network Trace
+	---------------
+	
+	A trace captured by Microsoft Network Monitor, or an equivalent program, is also
+	helpful in analyzing packet level data and determining if a connection-related
+	problem is a result of some network-level problem. Microsoft Support
+	Professionals prefer data captured with Network Monitor, but data captured with
+	the Network General Sniffer (.enc or .trc files) can be converted to Netmon
+	(.cap) format.
+	
+	You must capture this trace at the same time as the event logs noted above to
+	correlate the connection failures to the data in the trace. To minimize the size
+	of the trace file, capture all traffic to and from the media access control
+	(MAC) or IP addresses of the problem server or servers.
+	
+	1. Set the buffer size of the capture file to at least 10 MB. For best results,
+	  set a trigger to stop the capture when 100 percent of the buffer is filled.
+	  This protects critical capture data from overwriting.
+	
+	2. You must capture the trace on the same physical network segment as that of
+	  the problem server, either from the server itself or from a workstation. To
+	  capture remotely you need the full Microsoft Systems Management Server
+	  version of Network Monitor, not the standard version that comes with Windows
+	  NT.
+	
+	NOTE: If you need the full Systems Management Server version of Netmon.exe,
+	contact Microsoft PSS to request a trial version.
+	For additional information about capturing and interpreting network traffic with
+	Network Monitor, please see the following articles in the Microsoft Knowledge
+	Base:
+	
+	  Q148942 How to Capture Network Traffic with Network Monitor
+	
+	  Q159298 XADM: Analyzing Exchange RPC Traffic Over TCP/IP
+	
+	  Q169292 The Basics of Reading TCP/IP Traces
+	
+	A Calls.out File
+	----------------
+	
+	The Calls.out file is a text file that details the state of the MTA internal
+	processes. A Calls.out file is useful when the MTA does not respond to a Stop
+	command, or when the MTA runs but does not process mail. A Calls.out file takes
+	little time to create.
+	
+	WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+	that may require you to reinstall your operating system. Microsoft cannot
+	guarantee that you can solve problems that result from using Registry Editor
+	incorrectly. Use Registry Editor at your own risk.
+	
+	1. Access the registry a the following location:
+	
+	  HKLM/System/CCS/Services/MSExchangeMTA/Diagnostics
+	
+	  Select any one of the diagnostic logging categories.
+	
+	2. Set the value for that category to 7, wait for approximately 5 seconds, and
+	  then set the value back to its previous setting.
+	
+	3. This generates a file named Calls.out in the Mtadata directory on the server.
+	
+	4. Rename and back up this file immediately, as it is automatically deleted by
+	  the MTA when you restart services. Create a Calls.out file at each server
+	  that is experiencing the problem.
+	
+	The Calls.out file is most useful if the server is running a debug version of the
+	MTA, but the file can also contain valuable information if it is created with a
+	non-debug version.
+	
+	General IP and Network Information
+	----------------------------------
+	
+	At a command prompt, type "ipconfig -all>c:\ipconfig.txt" (without the
+	quotation marks). This creates a text file that you can use to verify IP
+	addresses, host names, node type, and so on. This information is useful in
+	diagnosing connector and routing problems.
+	
+	Routing Table Information
+	-------------------------
+	
+	For routing and delivery problems, you may need to view the Gwart0.mta file,
+	found by default in the Exchsrvr\Mtadata directory. This file contains a
+	representation of all the routes known by the MTA that are necessary for mail
+	delivery.
+	
+	For additional information about the Gateway Address Routing Table, please see
+	the following article in the Microsoft Knowledge Base:
+	
+	  Q149121 Gateway Address Routing Table Information
+	
+	Creating an Admindmp.txt File on an Exchange Server Object
+	----------------------------------------------------------
+	
+	Instead of checking each property page of an object in the Exchange Server
+	directory and dictating the information over the phone, it is easier, faster,
+	and more accurate to create a file that includes those details and send it to
+	Microsoft PSS. For example, if an X.400 Connector is not working between two
+	Exchange Server computers, a Microsoft Support Professional can look at these
+	files (one created at each end of the connector) to find the problem.
+	
+	WARNING: If you use the raw mode of the Exchange Server Administrator program
+	(admin /r) incorrectly, serious problems may occur that may require you to
+	reinstall Microsoft Windows NT Server, Microsoft Exchange Server, or both.
+	Microsoft cannot guarantee that problems that result from using raw mode
+	incorrectly can be solved. Use raw mode at your own risk.
+	
+	Before you perform this procedure, be sure there is not a file named Admindmp.txt
+	in the Exchsrvr\Bin directory. If the file exists, move, rename, or delete it.
+	Each time you create this file, it appends to the most recent existing file of
+	the same name. To simplify your analysis, you need to create a new Admindmp.txt
+	file.
+	
+	1. Start the Exchange Server Administrator program in raw mode, change to the
+	  Exchsrvr\Bin directory, and at the command prompt, type "admin -r" (without
+	  the quotation marks).
+	
+	2. Select the object you want to create an Admindmp.txt file for, and press and
+	  hold down the CTRL key on your keyboard. Using your mouse, on the File menu,
+	  click Raw Properties.
+	
+	3. Hold down the CTRL key until the Properties window appears. After the
+	  Properties window appears, you can close it.
+	
+	4. A file named Admindmp.txt is created in the Exchsrvr\Bin directory. Rename
+	  the file <Servername>.txt.
+	
+	5. If the object in question is a connector, repeat this procedure at the other
+	  end of the connector.
+	
+	Additional query words: Perfmon
+	
+	======================================================================
+	Keywords          : exc4 exc5 exc55 
+	Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+	Version           : :4.0,5.0,5.5
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

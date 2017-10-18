@@ -1,0 +1,96 @@
+---
+layout: page
+title: "Q162624: How to Create Multiple Stripe Sets On the Same Disk Array."
+permalink: kb/162/Q162624/
+---
+
+## Q162624: How to Create Multiple Stripe Sets On the Same Disk Array.
+
+	Article: Q162624
+	Product(s): Microsoft Windows NT
+	Version(s): 3.51,4.0
+	Operating System(s): 
+	Keyword(s): kbsetup
+	Last Modified: 10-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation versions 3.51, 4.0 
+	- Microsoft Windows NT Server versions 3.51, 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you try to create multiple stripe sets, stripe sets with parity, mirror
+	sets, or try to extend or create a Volume Set you may encounter the following
+	error.
+	
+	  The disk containing one of the free spaces you have chosen is not able to
+	  accept any more partitions.
+	
+	CAUSE
+	=====
+	
+	The partition table only has support for up to four partitions per individual
+	hard disk drive. When you create a Stripe Set, or a Stripe Set with parity, by
+	default, Windows NT regards it as a primary partition. Thus, after the fourth
+	primary partition is created, you have reached the maximum number of primary
+	partitions on that hard disk.
+	
+	Please note that Windows NT Workstation does not support Stripe Sets with Parity.
+	
+	RESOLUTION
+	==========
+	
+	To work around this limit, you must configure each disk to have an extended
+	partition. There is no partition or logical drive limitation in an extended
+	partition so you will be able to create as many partitions or stripe sets as
+	desired. This can be done with Disk Administrator.
+	
+	1. Start Disk Administrator and highlight the disk you are going to use and
+	  check the status in the bottom left hand corner of Disk Administrator. If the
+	  status box shows free space, go to the Partition menu and click Create
+	  Extended.
+	
+	2. A dialog box asking what size to make the extended partition appears, the
+	  size you choose should be large enough to hold all the stripe sets (or Fault
+	  Tolerant sets) that you plan to create on this hard disk. Which will usually
+	  be the entire disk.
+	
+	3. After you have entered the size of the extended partition click OK.
+	
+	  NOTE: See how the slanted bars now slant from top right to bottom left.
+	
+	4. Select the partition again, and look in the status box in the bottom
+	  left-hand corner to confirm you now have a empty extended partition.
+	
+	5. Confirm this and go back to the Partition menu and click Commit Changes Now.
+	
+	6. Two dialog boxes now appear, one asking you to confirm these changes and
+	  another suggesting that you run the Emergency Repair Disk utility (Rdisk).
+	  Click OK to confirm the changes now and be sure to run the Rdisk utility (and
+	  chose update repair info) when you have completely set up your stripe set.
+	
+	7. Complete this procedure for all the drives you plan to create multiple stripe
+	  sets on.
+	
+	NOTE: If you already have existing stripe sets installed on the hard disk drive
+	but still have free unused space on the hard disk drive, this procedure will
+	still work. But if you have a hard disk drive with 3 primary partitions and one
+	extended partition, and the disk still has free space, you will not be able to
+	create any more partitions on the hard disk drive. You will need to back up your
+	data from partitions contained on the extended partition, delete the drives and
+	extended partition, and re-create the extended partition to include the
+	additional contiguous free space.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbsetup 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+	Version           : :3.51,4.0
+	
+	=============================================================================
+	

@@ -1,0 +1,273 @@
+---
+layout: page
+title: "Q193952: HOWTO: Troubleshoot to Resolve Suspected Corruption"
+permalink: kb/193/Q193952/
+---
+
+## Q193952: HOWTO: Troubleshoot to Resolve Suspected Corruption
+
+	Article: Q193952
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+	Operating System(s): 
+	Keyword(s): kbsetup
+	Last Modified: 01-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Using Visual FoxPro sometimes results in completely unexpected or unexplainable
+	results, problems, or errors. In such situations, you need a general method or
+	process of trial and error troubleshooting techniques. The steps in the MORE
+	INFORMATION section provide beginning steps for the troubleshooting process. The
+	steps also apply to the distributed application .exe's written in Visual FoxPro
+	that you install on client computers.
+	
+	The first step is to make sure that you have an error free installation of the
+	Visual FoxPro product. To upgrade your installation of Visual FoxPro, you must
+	first remove any prior version of Visual FoxPro that you have on your computer.
+	Then, you can use the upgrade package to install the newer version of the Visual
+	FoxPro product.
+	
+	In our experience, if you install the most recent version over the previous
+	version, the installation does not complete properly or reliably. This is
+	because all of the files may not update or install correctly.
+	
+	MORE INFORMATION
+	================
+	
+	1. If Visual FoxPro is installed on local computers use the following steps:
+	
+	  a. Backup your files. Save any files on the computer that you want to keep;
+	     especially database (.dbc/.dct/.dcx) files and table (.dbf/.fpt/.cdx)
+	     files, as well as other source files such as .pjx, .pjt, .vcx,.vct,
+	     .scx,.sct, .mnx .mnt, .frx .frt, and the Config.fpw file.
+	
+	  b. Remove Visual FoxPro completely, and then delete the directory in which it
+	     was installed.
+	
+	     NOTE: This step is not necessary if you are in Step 3. You need to install
+	     into a completely new subdirectory.
+	
+	  c. Close all open or running applications.
+	
+	     1. Using CTRL+ALT+DELETE opens the system Task Manager allowing you to see
+	        what applications are currently running.
+	
+	        NOTE: Do not close Explorer since it is the desktop user interface.
+	
+	  d. Perform operating system disk error checking, which error checks and
+	     attempts to fix any lost cluster problems on the hard drive that may
+	     exist.
+	
+	     1. Double-click the My Computer icon.
+	
+	     2. Single click and select each hard drive. For example, C:, D:, and so
+	        forth.
+	
+	     3. Using the right mouse button (right-click) and then select Properties.
+	
+	     4. In the Properties dialog box, click the Tools tab.
+	
+	     5. Click the Check Now Command button.
+	
+	     6. In the Check Disk dialog box, select the "Automatically fix errors"
+	        check box.
+	
+	     7. Select Thorough - Type of test option button.
+	
+	     8. Click the Start button.
+	
+	        NOTE: You may have to restart to run test.
+	
+	     9. After running ScanDisk or the disk verification and fix for each local
+	        hard drive, shut down the computer and restart the system.
+	
+	     10. You may want to run a hard drive disk optimization utility.
+	
+	2. Once again, close all open or running applications, (See step 1c).
+	
+	3. Install Visual FoxPro into a new or different directory location.
+	
+	  a. A successful product installation means that you do not receive any errors
+	     during the installation. Errors during installation indicate an unreliable
+	     installation of Visual FoxPro. If errors occur:
+	
+	     1. Note any errors during installation process.
+	
+	     2. Remove any environment or system drivers that do not ship with the
+	        original operating system installation, including drivers for video,
+	        printers, mouse, CD-ROM, SCSI, and so forth.
+	
+	     3. Rename the startup system files to ensure that other possible drivers
+	        or configuration parameters are not interfering. Rename the
+	        C:\Autoexec.bat file to C:\Autoexec.old and rename The C:\Config.sys
+	        file to C:\Config.old, and then restart the system.
+	
+	     4. Start at Step 1 again.
+	
+	NOTE: If this is your second time through this process, try using the Custom,
+	Minimal or Laptop installation, instead of Complete.
+	
+	4. If Visual FoxPro is installed on network server:
+	
+	  a. You must have an error free installation of Visual FoxPro.
+	
+	  b. Generally, you cannot perform ScanDisk or other disk integrity checking
+	     while a Local Area Network (LAN) or Server is running.
+	
+	  c. Remove and reinstall Visual FoxPro until no installation errors are
+	     received.
+	
+	5. Eliminate all DUPLICATE source code and project files.
+	
+	  This includes both network and local drives.
+	
+	  a. Duplicate files cause multiple problems. Make sure that you retain the
+	     correct version of the source or project file, and ONLY the correct one.
+	
+	6. If your project contains a DATABASE/DBC, VALIDATE the database.
+	
+	  NOTE: Please refer to the OPEN DATABASE command in the Visual FoxPro Help file
+	  for details.
+	  a. Use the OPEN DATABASE <dbcname> EXCLUSIVE VALIDATE command.
+	
+	     Errors indicate table (.dbf) or index (.cdx) corruption.
+	
+	7. Clean up the project.
+	
+	  Open your project and then from the Project menu, choose "Clean Up Project".
+	
+	  Errors indicate project (.pjx) file corruption.
+	
+	8. As a way to test with a different file, USE the file as you would a table
+	  (.dbf), copy the .dbf structure to a new file, and append the records from
+	  the original table, and rename the files. This method necessitates the
+	  creation of a new index (.cdx) file, if needed.
+	
+	  NOTE: The following steps use a sample table (.dbf) file named Customer.dbf.
+	
+	  Database, Project, Screen, Menu, Report, and Label files are actually Table
+	  (.dbf) files that have a different extension other than .dbf.
+	
+	  If your file is open in the Visual FoxPro interactive or design environment,
+	  close it.
+	
+	  Issue the following commands in the Visual FoxPro Command window:
+	
+	  
+	
+	        USE customer.dbf  && Must specify extension if other than .dbf.
+	        ? RECCOUNT()      && Note the number of records in the table.
+	        COPY STRUCTURE to newfile.dbf
+	        USE newfile.dbf   && Empty file structure without records.
+	        APPEND FROM customer.dbf  && Bring in records from original table.
+	        ? RECCOUNT()      && Compare number of records with original file.
+	        RENAME customer.dbf to oldcust.dbf
+	        RENAME newfile.dbf to customer.dbf
+	
+	  Note a difference in the number of records in the new file as compared to the
+	  original file. This is an indicator that file corruption exists in the
+	  original file.
+	
+	9. Test on a different computer or in a different computer environment such as a
+	  single user environment if problems occur in a multiuser environment or use a
+	  different Operating System.
+	
+	10. If corrupt, the FoxPro resource file may cause problems.
+	
+	  One way to test whether the resource file is a factor is to replace the file.
+	  Here are two ways to determine the name and location of the FoxPro resource
+	  file:
+	
+	  a. You can determine the location of the currently active resource file by
+	     using the following FoxPro command:
+	
+	  
+	
+	              ?SYS(2005)
+	
+	  b. You can specify the FoxPro resource file in the FoxPro configuration file,
+	     named Config.fpw by default. If the resource file specified by the
+	     configuration file does not exist, FoxPro creates one.
+	
+	     1. Use the following FoxPro command to determine the location of the
+	        configuration file:
+	
+	  
+	
+	                   ?SYS(2019)
+	
+	     2. The configuration file is an ASCII text file, which can be edited with
+	        any editor that saves it in ASCII text format. The easiest way to edit
+	        the currently active FoxPro configuration file is with the following
+	        command:
+	
+	  
+	
+	                    MODIFY FILE SYS(2019)
+	
+	     3. The configuration file may contain a line of text that specifies the
+	        location and name of the resource file, such as follows:
+	
+	  
+	
+	                   RESOURCE=<path>\foxuser.dbf
+	
+	        If so, comment that line out by placing an asterisk (*) at the beginning
+	        of the line.
+	
+	     4. Add a new line such as the following:
+	
+	  
+	
+	                   RESOURCE=<path>\newjunk.dbf  && Any name of your choice.
+	
+	     5. Restart FoxPro for the new setting to take effect.
+	
+	11. Create a log file that contains the results of the preceding steps for
+	  future reference.
+	
+	
+	REFERENCES
+	==========
+	
+	For more information about the setup requirements for Visual FoxPro, please
+	refer to the Readme.hlp Windows Help file located in the directory of the Visual
+	FoxPro installation or on the original installation CD-ROM.
+	
+	Visual FoxPro Help; search on: "Installing Visual FoxPro", "Testing and Debugging
+	Applications".
+	
+	For more information about other general setup issues, please see the following
+	articles in the Microsoft Knowledge Base:
+	
+	  Q95314 How to Perform a "Clean Boot" for FoxPro
+	
+	  Q157522 How To Install Visual FoxPro 5.0 on a Network
+	
+	  Q119262 OFF4: General Troubleshooting When Setup Program Fails
+	
+	  Q105212 Office: Setup Problems May Indicate that System Has Virus
+	
+	
+	(c) Microsoft Corporation 1998. All Rights Reserved. Contributions by Perry
+	Newton, Microsoft Corporation.
+	
+	
+	Additional query words: tshoot kbVFp kbDatabase kbAppSetup kbProjManager kbServer kbSetup kbConfig kbSysSettings C0000005
+	
+	======================================================================
+	Keywords          : kbsetup 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+	Version           : WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

@@ -1,0 +1,80 @@
+---
+layout: page
+title: "Q89879: Differences Between PCM/ADPCM Wave Files Explained"
+permalink: kb/089/Q89879/
+---
+
+## Q89879: Differences Between PCM/ADPCM Wave Files Explained
+
+	Article: Q89879
+	Product(s): Miscellaneous Windows Products
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 11-SEP-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows Sound System, versions 1.0, 1.0a 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Pulse Code Modulation (PCM) and Adaptive Delta Pulse Code Modulation (ADPCM) are
+	subclasses of the Microsoft waveform (.WAV) file format. In PCM, data for .WAV
+	files is stored using linear samples, while ADPCM uses deltas between samples.
+	
+	MORE INFORMATION
+	================
+	
+	PCM and ADPCM are techniques for storing analog audio data in a digital format,
+	the Microsoft .WAV file. Other storage methods (for example, Mu- Law, A-Law,
+	Transform coding, CELP, and so on), are not supported by Windows Sound System
+	1.0.
+	
+	How PCM Works
+	-------------
+	
+	PCM works by taking discrete samples at even intervals (called the sampling
+	rate). Common intervals are 11 kHz, 22 kHz, and 44 kHz. The higher the sampling
+	rate, the better the representation of the original analog wave and the better
+	the sound quality. Each sample is a real number with infinite resolution from
+	+1.0 of full-scale value to -1.0 of full scale value. Because these must be
+	stored as finite-precision digital numbers, the data is truncated to either
+	16-bit PCM or 8-bit PCM, commonly called 8- and 16-bit samples. 16-bit data has
+	more resolution, so the digital waveform sounds better. 8-bit PCM has less
+	resolution, causing audible hiss in the waveform. It also requires less disk
+	space.
+	
+	How ADPCM Works
+	---------------
+	
+	ADPCM, commonly termed as a form of compression, is a more efficient way of
+	storing waveforms than 16-bit or 8-bit PCM. It only uses 4 bits per sample,
+	taking up a quarter of the disk space of 16-bit PCM. However, the sound quality
+	is inferior. Because the Windows Sound System hardware only understands 8/16-bit
+	PCM, the computer must compress and decompress the ADPCM into/from PCM, which
+	requires CPU time. 22 kHz mono ADPCM can be decompressed real-time (that is,
+	while playing) on a 386SX/16 megahertz CPU. Higher sampling rates (44 kHz) or
+	stereo files will take too long for a 386SX/16 to decompress, which causes
+	skipping in the audio. 11 kHz mono ADPCM can be compressed real-time on a
+	386SX/16 computer. To do ADPCM, the computer must have the Audio Compression
+	Manager (ACM) installed.
+	
+	ADPCM stores the value differences between two adjacent PCM samples and makes
+	some assumptions that allow data reduction. Because of these assumptions, low
+	frequencies are properly reproduced, but any high frequencies tend to get
+	distorted. The distortion is easily audible in 11 kHz ADPCM files, but becomes
+	more difficult to discern with higher sampling rates, and is virtually
+	impossible to recognize with 44 kHz ADPCM files.
+	
+	Additional query words: 1.00
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinSoundSysSearch kbWinSoundSys100 kbWinSoundSys100a
+	
+	=============================================================================
+	

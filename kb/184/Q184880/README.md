@@ -1,0 +1,142 @@
+---
+layout: page
+title: "Q184880: XADM: Setup Does Not Detect Cluster Resources Properly"
+permalink: kb/184/Q184880/
+---
+
+## Q184880: XADM: Setup Does Not Detect Cluster Resources Properly
+
+	Article: Q184880
+	Product(s): Microsoft Exchange
+	Version(s): winnt:5.5
+	Operating System(s): 
+	Keyword(s): kbusage exc55
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.5 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	When you install Microsoft Exchange Server 5.5 into a cluster environment, you
+	may receive the following error message:
+	
+	  This cluster group does not contain the appropriate system resources. Select
+	  a group that contains an IP address, a network name, and a shared hard disk.
+	
+	CAUSE
+	=====
+	
+	The Microsoft Exchange Server 5.5 Setup routine is hard-coded to look for
+	cluster resources of the following types: "IP Address," "Network Name," and
+	"Physical Disk."
+	
+	Setup.exe does not recognize new storage types that are not of type "Physical
+	Disk." The dynamic-link libraries (DLLs) that are included with most third-party
+	clustering products do not identify the storage device as having a resource type
+	of "physical disk."
+	
+	
+	RESOLUTION
+	==========
+	
+	A supported fix is now available from Microsoft, but it is only intended to
+	correct the problem that is described in this article. Apply it only to systems
+	that are experiencing this specific problem.
+	
+	To resolve this problem, contact Microsoft Product Support Services to obtain the
+	fix. For a complete list of Microsoft Product Support Services phone numbers and
+	information about support costs, visit the following Microsoft Web site:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	NOTE: In special cases, charges that are ordinarily incurred for support calls
+	may be canceled if a Microsoft Support Professional determines that a specific
+	update will resolve your problem. The usual support costs will apply to
+	additional support questions and issues that do not qualify for the specific
+	update in question.
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	Component: Setup Program
+	
+	+---------------------------+
+	| File name   | Version     | 
+	+---------------------------+
+	| Srvrmax.exe | 5.5.1960.10 | 
+	+---------------------------+
+	
+	
+	
+	After you obtain the fix, follow these steps to apply it:
+	
+	1. Create a new folder on your hard disk, and then copy the contents of the
+	  Server\Setup\I386 folder from the Exchange Server 5.5 CD-ROM to this new
+	  folder.
+	
+	2. Rename the Setup.exe file in the folder on the hard disk to Setup.old, and
+	  then rename the Srvrmax.exe file to Setup.exe.
+	
+	3. Run Setup.exe from the folder on the hard disk.
+	
+	4. When the installation process is finished, apply the latest service pack for
+	  Exchange Server 5.5, even if it was already applied previously. For
+	  additional information about how to obtain the latest service pack for
+	  Exchange Server 5.5, click the article number below to view the article in
+	  the Microsoft Knowledge Base:
+	
+	  Q191014 XGEN: How to Obtain the Latest Exchange Server 5.5 Service Pack
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed that this is a problem in the Microsoft products that
+	are listed at the beginning of this article.
+	
+	MORE INFORMATION
+	================
+	
+	If a resource type is not of type "Physical Disk," the fix will get the resource
+	class information to find out whether it is a shared storage type.
+	
+	Microsoft Cluster Server resource information can be found in the following
+	location:
+	
+	1. Start the Cluster Administrator (Cluadmin.exe).
+	
+	2. Select the Groups object from the hierarchy.
+	
+	3. Select the appropriate cluster group created for Exchange Server.
+	
+	4. View the list of resources.
+	
+	In addition, cluster resource information can be found at the following registry
+	keys:
+	
+	  HKEY_LOCAL_MACHINE\Cluster\Resources\<relevant key for resource>
+	
+	-AND-
+	
+	  HKEY_LOCAL_MACHINE\Cluster\Resource Types
+	
+	For more information about configuring the cluster server for Setup with Exchange
+	Server, read the document "Clustering with Microsoft Exchange Server," which is
+	located on the Exchange Server 5.5 CD.
+	
+	Additional query words: MSCS CLEO IBM Compaq DEC ServeRaid Logical IPSHA.DLL HKLM SRVMAIN.EXE SRVMIN.EXE CLUSRES.DLL
+	
+	======================================================================
+	Keywords          : kbusage exc55 
+	Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+	Version           : winnt:5.5
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

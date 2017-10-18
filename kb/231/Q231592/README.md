@@ -1,0 +1,93 @@
+---
+layout: page
+title: "Q231592: BUG: ATL ClassWizard Uses AfxGetStaticModuleState() in MFC EXE"
+permalink: kb/231/Q231592/
+---
+
+## Q231592: BUG: ATL ClassWizard Uses AfxGetStaticModuleState() in MFC EXE
+
+	Article: Q231592
+	Product(s): Microsoft C Compiler
+	Version(s): 6.0
+	Operating System(s): 
+	Keyword(s): kbATL kbMFC kbVC600bug kbClassWizard kbGrpDSMFCATL kbArchitecture
+	Last Modified: 07-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The ClassWizard, included with:
+	   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+	   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+	   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+	   - Microsoft Visual C++.NET (2002) 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When using ClassWizard to add Methods and Properties to an ATL interface in a
+	MFC Application, ClassWizard will add the following line to the top of each
+	function:
+	
+	  	AFX_MANAGE_STATE(AfxGetStaticModuleState())
+	
+	AfxGetStaticModuleState() is used to maintain MFC global state information inside
+	a MFC regular DLL. Using AfxGetStaticModuleState() in an MFC EXE will not change
+	to the correct module state. In addition, it will cause the MFC DLL startup
+	source to be linked into the EXE increasing it's size.
+	
+	AfxGetAppModuleState() should be used in MFC EXEs.
+	
+	RESOLUTION
+	==========
+	
+	Change the AFX_MANAGE_STATE line to read:
+	
+	  	AFX_MANAGE_STATE(AfxGetAppModuleState())
+	
+	If the same code is used in an EXE and MFC regular DLL, use a #define:
+	
+	  #ifdef _USRDLL
+	  #  define AFXMANAGESTATE AfxGetStaticModuleState()
+	  #else
+	  #  define AFXMANAGESTATE AfxGetAppModuleState()
+	  #endif
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article.
+	
+	MORE INFORMATION
+	================
+	
+	MFC classes which use global and thread based MFC data need to use a specific
+	MFC module state. As a result, entry points need to switch module states using
+	the AFX_MANAGE_STATE macro to the module state associated with the EXE or DLL.
+	
+	Entry points that would be affected include callback functions, custom windows
+	procedures, and COM interfaces that are called from inproc servers.
+	
+	REFERENCES
+	==========
+	
+	For more information on MFC Module States, see the MFC technote TN058: MFC
+	Module State Implementation.
+	
+	(c) Microsoft Corporation 1999, All Rights Reserved.
+	Contributions by Kelly Marie Ward, Microsoft Corporation
+	
+	
+	Additional query words: AFX_MANAGE_STATE, AfxGetStaticModuleState, AfxGetAppModuleState
+	
+	======================================================================
+	Keywords          : kbATL kbMFC kbVC600bug kbClassWizard kbGrpDSMFCATL kbArchitecture 
+	Technology        : kbVCsearch kbAudDeveloper kbClassWizard
+	Version           : :6.0
+	Issue type        : kbbug
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

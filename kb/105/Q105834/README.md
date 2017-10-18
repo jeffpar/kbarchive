@@ -1,0 +1,109 @@
+---
+layout: page
+title: "Q105834: BUG: FoxPro Does Not Import .DIF Format File"
+permalink: kb/105/Q105834/
+---
+
+## Q105834: BUG: FoxPro Does Not Import .DIF Format File
+
+	Article: Q105834
+	Product(s): Microsoft FoxPro
+	Version(s): MACINTOSH:2.5x,2.6a; MS-DOS:2.0,2.5x,2.6,2.6a; WINDOWS:2.5x,2.6,2.6a,3.0,5.0,5.0a,6.0
+	Operating System(s): 
+	Keyword(s): kbinterop kbvfp500aBUG kbvfp250bug kbvfp250aBUGkbbuglist
+	Last Modified: 05-FEB-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 5.0a, 6.0 
+	- Microsoft FoxPro for MS-DOS, versions 2.0, 2.5x, 2.6, 2.6a 
+	- Microsoft FoxPro for Windows, versions 2.5x, 2.6, 2.6a 
+	- Microsoft FoxPro for Macintosh, versions 2.5x, 2.6a 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When attempting to append a Data Interchange Format (DIF) file, the following
+	error message is returned:
+	
+	  Invalid DIF vector - DBF field mismatch.
+	
+	RESOLUTION
+	==========
+	
+	Perform one of the following:
+	
+	- If the software that generated the .DIF file supports any of the file types
+	  supported in FoxPro, use one of them instead. For a list of supported file
+	  types see the APPEND FROM command in the "Microsoft FoxPro Language
+	  Reference" L3-193. FoxPro can also open dBASE files directly. If this is not
+	  possible, you will need to use Low-Level file I/O; see Chapter 10 of the
+	  "Developers Guide."
+	
+	-or-
+	
+	- Reverse the Vector and Tuple values.
+	
+	  DIF files are essentially text files that contain various statements defining
+	  the data items. Among the data in a .DIF file are items labeled 'VECTORS' and
+	  'TUPLES'. Reverse the values for the Vectors and Tuples.
+	
+	  For example, here is a sample Microsoft Excel .DIF file that FoxPro can't
+	  import:
+	
+	  VECTORS
+	  0,3
+	  TUPLES
+	  0,4
+	
+	  Modify the file so that it looks like the following:
+	
+	  VECTORS
+	  0,4
+	  TUPLES
+	  0,3
+	
+	STATUS
+	======
+	
+	Microsoft is researching this problem and will post new information here in the
+	Microsoft Knowledge Base as it becomes available.
+	
+	MORE INFORMATION
+	================
+	
+	NOTE: This has been reported to occur with .DIF files created by applications
+	other than Microsoft Excel.
+	
+	Steps to Reproduce Problem
+	--------------------------
+	
+	1. In a Microsoft Excel spreadsheet, fill cells A1 to A10 with the string 'abcd'
+	  or the numeric 1234. Save the file in DIF format as SHEET1.DIF.
+	
+	2. Create a single-field table structure in FoxPro, and define that field as
+	  either character or numeric with the default width (per the data type entered
+	  in step 1).
+	
+	3. Issue the following command at the command window:
+	
+	  APPEND FROM sheet1.dif TYPE DIF
+	
+	For more information about the way Microsoft Excel saves .DIF files, please see
+	the following articles in the Microsoft Knowledge Base:
+	
+	  Q60997 Excel and Lotus DIF File Differences
+	
+	
+	Additional query words: DIF APPEND FROM FAR errmsg err msg xl kbvfp300 kbvfp500 kbvfp600
+	
+	======================================================================
+	Keywords          : kbinterop kbvfp500aBUG kbvfp250bug kbvfp250aBUG kbbuglist
+	Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro260aMac kbFoxPro200DOS kbFoxPro260DOS kbFoxPro260aDOS kbFoxPro260 kbFoxPro260a kbVFP300 kbVFP500 kbVFP600 kbVFP500a
+	Version           : MACINTOSH:2.5x,2.6a; MS-DOS:2.0,2.5x,2.6,2.6a; WINDOWS:2.5x,2.6,2.6a,3.0,5.0,5.0a,6.0
+	Issue type        : kbbug
+	
+	=============================================================================
+	

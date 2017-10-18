@@ -1,0 +1,138 @@
+---
+layout: page
+title: "Q155083: INFO: Benefits and Uses of Automation in Visual FoxPro Servers"
+permalink: kb/155/Q155083/
+---
+
+## Q155083: INFO: Benefits and Uses of Automation in Visual FoxPro Servers
+
+	Article: Q155083
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:5.0
+	Operating System(s): 
+	Keyword(s): kb3rdparty kbinterop kbAutomation kbvfp500
+	Last Modified: 27-JUL-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Visual FoxPro for Windows version 5.0 introduces the capability of making a
+	Visual FoxPro application an Automation Server. It also contains a program named
+	"Automation Manager" and another named "RemAuto Connection Manager."
+	
+	This article discusses the purpose of these facilities, but does not contain "how
+	to" information.
+	
+	MORE INFORMATION
+	================
+	
+	The capability of Visual FoxPro for Windows version 5.0 to make a Visual FoxPro
+	application an Automation Server leads to such questions as "What are the
+	benefits in creating an Automation Server?" and "What can users do with the
+	application that they couldn't do before?"
+	
+	Another question prompted by this new capability is "What are those two menu
+	options in the Visual FoxPro 5.0 program group named "Automation Manager" and
+	"RemAuto Connection Manager?"
+	
+	Benefits and Uses of Automation Server
+	--------------------------------------
+	
+	The primary advantage of having Automation Servers is that any application that
+	is an ActiveX (previously called OLE) Controller (client) can create an instance
+	of a Visual FoxPro server application and access its properties and methods.
+	Therefore, applications such as Microsoft Excel, Microsoft Access, or an
+	application written in Visual Basic or Visual C++ can issue a CreateObject()
+	that specifies a Visual FoxPro Automation Server.
+	
+	That server may be Visual FoxPro, with its generous, powerful set of properties
+	and methods, or it may be a Visual FoxPro application that has additional
+	methods and properties originated by the application developer.
+	
+	The server may be instructed to extract and process data that is then retrieved
+	by the client, Microsoft Excel for instance, under client control.
+	
+	Alternatively, the client may be another Visual FoxPro application that assigns a
+	task to an Automation Server with the instruction "call me back when you've
+	finished." Then the client goes on to do other work while the server works
+	asynchronously and independently.
+	
+	Visual FoxPro applications can be either .EXE or .DLL servers. Developers can
+	choose to create a DLL (in-process) server to run in the same process space as
+	the client itself. Or they can choose to create an EXE that runs as a separate
+	process, either on the client's machine or remotely.
+	
+	NOTE: Only EXEs can be used for remote automation.
+	
+	An advantage to both the developer and the user is that these servers can be
+	stored and executed on remote machines without the client being aware of the
+	fact that the application is remote.
+	
+	If the client issues CreateObject(), automation proxies provide the application
+	interfaces between machines and the Registry provides the data that allows
+	Microsoft ActiveX to link the client and the server automatically.
+	
+	The Automation Manager
+	----------------------
+	
+	The new Automation Manager is required for doing remote automation. It serves as
+	the stub used on the server-side of a remote machine to marshal and handle the
+	remote procedure calls (RPCs). In addition, it also provides proxy services on
+	Automation Callbacks made to the client. In this case, the Automation Manager
+	must also be installed on the client system.
+	
+	A callback occurs when the client passes an object to the server and the server
+	invokes a method or sets a property on it. Specifically, the client application
+	defines a class and instantiates an object from that class. It then passes that
+	object's reference to the server.
+	
+	For instance, the object has a method called "jobdone." Jobdone tests a property
+	named "done" to see if it is true and, if it is, turns the background of a
+	textbox to magenta and plays a .WAV file to alert the operator. This all happens
+	on the client machine.
+	
+	The server receives the object reference from the client and then proceeds to
+	execute the SQL Select, monitor the COM port, or whatever. When the server has
+	completed its job, it sets the "done" property of the client's callback object
+	to .T. and calls the callback object's "jobdone" method.
+	
+	The client application is free to run its own application without waiting for the
+	server, until the server provides the callback.
+	
+	RemAuto Connection Manager
+	--------------------------
+	
+	The RemAuto (Remote Automation) Connection Manager allows you to setup a
+	connection to the remote automation server. It works by displaying all local
+	servers and allows you to redirect a server to a remote one that you specify
+	with a network address, protocol, and permissions.
+	
+	Visual FoxPro 5.0 also has a tool called CLIREG32.EXE that allows you to register
+	a remote automation server without the server being physically located on the
+	current (client) machine. The CLIREG32.EXE learns about the remote server and
+	registers the access to it from information passed to the client system in a
+	.VBR file and a .TLB file that are created when the server application is
+	generated through Visual FoxPro 5.0's Project Manager.
+	
+	In the Visual FoxPro for Windows 5.0 directory folder there is a
+	"Samples\Servers" folder containing a local server application (Gopher) and a
+	remote automation example named PoolMgr. The project for each should be rebuilt.
+	The Gopher application should be built as a DLL, while the PoolMgr application
+	should be built as an EXE.
+	
+	Additional query words: OLE Automation
+	
+	======================================================================
+	Keywords          : kb3rdparty kbinterop kbAutomation kbvfp500 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP500
+	Version           : WINDOWS:5.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

@@ -1,0 +1,105 @@
+---
+layout: page
+title: "Q189458: INFO: Third Party Utility Repairs FoxPro Record and Memo Data"
+permalink: kb/189/Q189458/
+---
+
+## Q189458: INFO: Third Party Utility Repairs FoxPro Record and Memo Data
+
+	Article: Q189458
+	Product(s): Microsoft FoxPro
+	Version(s): MACINTOSH:2.6a; MS-DOS:2.6a; WINDOWS:2.6a,3.0,3.0b,5.0,5.0a
+	Operating System(s): 
+	Keyword(s): kb3rdparty
+	Last Modified: 29-FEB-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft FoxPro for Macintosh, version 2.6a 
+	- Microsoft FoxPro for Windows, version 2.6a 
+	- Microsoft FoxPro for MS-DOS, version 2.6a 
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article points to the address of a Web site for FoxPro table and memo file
+	repair utilities.
+	
+	Recover 2.0 is manufactured by Abri Technologies - Software Products &
+	Services, a vendor independent of Microsoft; we make no warranty, implied or
+	otherwise, regarding this product's performance or reliability.
+	
+	NOTE: Please backup any files before using these products.
+	
+	MORE INFORMATION
+	================
+	
+	There are four FoxPro table repair tools offered for a fee and the following Web
+	site offers demo information:
+	
+	  http://abri.com/recover.html
+	
+	  -and-
+	
+	  http://www.abri.com/
+	
+	One of the options allows developers to distribute the table repair product in a
+	distributed .exe file. A list of these files follows:
+	
+	- Runrec5.zip
+	- RecovWin.zip
+	- RecovDos.zip
+	
+	To download the Recover.exe demo, select the appropriate link for your FoxPro
+	platform.
+	
+	Here is a list of the files that may be downloaded:
+	
+	  FoxPro Version        File Name
+	  -------------------------------
+	
+	  Visual FoxPro 5       vfp5demo.zip
+	  Visual FoxPro 3       vfp3demo.zip
+	  FoxPro/Win            fpwdemo.zip
+	  FoxPro/DOS            fpddemo.zip
+	  FoxPro/Mac            fpmdemo.hqx
+	
+	REFERENCES
+	==========
+	
+	For additional information, please see the following articles in the Microsoft
+	Knowledge Base:
+	
+	  Q107520 FIX: Memo Field Corruption Occurs with Code Page Differences
+	
+	  Q120545 dSALVAGE Professional Version 4.2: Overview and Features
+	
+	  Q145670 How to Recover a Corrupted FoxPro for Macintosh .DBF File
+	
+	  Q156581 PRB: INSERT Can Freeze VFP if Table's Index File Corrupted
+	
+	  Q168762 HOWTO: Fixing Index Corruption at Run Time with Visual FoxPro
+	
+	  Q172086 PRB: Data Corruption with Row Buffering in Visual FoxPro 3.0
+	
+	  Q164385 BUG: Large Result Sets May Become Corrupted in VFP
+	
+	  Q99557 PRB: FoxPro Corruption Problems Fixed by Novell 3.11 Patches
+	
+	(c) Microsoft Corporation 1998. All Rights Reserved. Contributions by Mike
+	Fernald, Microsoft Corporation
+	
+	
+	Additional query words: kbVFp300 kbVFp500 kbVFp500a kb3rdparty
+	
+	======================================================================
+	Keywords          : kb3rdparty 
+	Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro260aMac kbFoxPro260aDOS kbFoxPro260a kbVFP300 kbVFP300b kbVFP500 kbVFP500a
+	Version           : MACINTOSH:2.6a; MS-DOS:2.6a; WINDOWS:2.6a,3.0,3.0b,5.0,5.0a
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

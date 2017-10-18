@@ -1,0 +1,138 @@
+---
+layout: page
+title: "Q166937: HOWTO: Programmatically Add Images to ImageList Control"
+permalink: kb/166/Q166937/
+---
+
+## Q166937: HOWTO: Programmatically Add Images to ImageList Control
+
+	Article: Q166937
+	Product(s): Microsoft FoxPro
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbinterop kbole kbvfp500 kbvfp600
+	Last Modified: 30-JUL-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes how you can programmatically add images to the ImageList
+	ActiveX control.
+	
+	MORE INFORMATION
+	================
+	
+	An ImageList control contains a collection of ListImage objects, each of which
+	can be referred to by its index or key. The ImageList ActiveX control acts as a
+	central image repository to conveniently supply other controls with images.
+	
+	In order to add an image at run time, you need to use the Add Method of the
+	ListImages collection.
+	
+	Syntax
+	------
+	
+	The Add method syntax has these parts:
+	
+	  Object.Add([Index,| Key,] Picture)
+	
+	- Index - Optional. An integer specifying the position where you want to insert
+	  the ListImage. If no index is specified, the ListImage is added to the end of
+	  the ListImages collection.
+	- Key - Optional. A unique string that identifies the ListImage object. Use
+	  this value to retrieve a specific ListImage object. An error occurs if the
+	  key is not unique.
+	- Picture - Required. Specifies the picture to be added to the ImageList
+	  ActiveX Control.
+	
+	Example
+	-------
+	
+	The steps below demonstrate how to create an example of one of these controls:
+	
+	1. Create a form.
+	
+	2. Add an ImageList ActiveX control to the form and change the ImageList ActiveX
+	  control name to ImageList1.
+	
+	3. Add a SSTab ActiveX control and change the SSTab control name to SSTab1. By
+	  default, SSTab always has three pages. If using Visual FoxPro 5.0a, the SSTab
+	  control has been renamed to Microsoft Tabbed Dialog Control, version 5.0.
+	  Other development tools, such as Visual Basic, may have replaced the SSTab
+	  control with the Microsoft Tabbed Dialog Control even if the Visual FoxPro
+	  version is 5.0 (not 5.0a).
+	
+	4. Add a Command button and change the Caption of the command button to "Click
+	  Me."
+	
+	5. In the INIT method of the form, put in the following code:
+	
+	  
+	
+	        Thisform.ImageList1.Object.ListImages.Add(1,,LoadPicture;
+	              (HOME()+"samples\graphics\bmps\outline\leaf.bmp"))
+	        Thisform.ImageList1.Object.ListImages.Add(2,,LoadPicture;
+	              (HOME()+"samples\graphics\bmps\outline\open.bmp"))
+	        Thisform.ImageList1.Object.ListImages.Add(3,,LoadPicture;
+	              (HOME()+"samples\graphics\bmps\outline\closed.bmp"))
+	
+	6. In the CLICK method of the Command button, put in the following code:
+	
+	  
+	
+	         FOR i = 0 TO 2
+	             Thisform.SSTab1.Object.Tab = i
+	             Thisform.SSTab1.Object.Picture = ;
+	               Thisform.ImageList1.ListImages(i+1).Picture
+	         ENDFOR
+	         Thisform.SSTab1.Object.Tab = 0
+	
+	7. Save and run the form. Click the "Click Me" button, and the images will
+	  display in the SSTab ActiveX control.
+	
+	NOTE: Due to the Add method requiring an object reference for the image file, you
+	need to use the LoadPicture function to return the object reference instead of
+	directly using the image file.
+	
+	You are not limited to any particular image size; however, the total number of
+	images that can be loaded into ImageList ActiveX control is limited by the
+	amount of available memory.
+	
+	At design time, you can add images using the Image tab of the ImageList Control
+	Properties dialog box. To access this, right-click (secondary) on the ImageList
+	control and select ImageListCtrl Properties from the shortcut menu. Omit step 5
+	above to have images added in this manner show on the tabs when the Command
+	button is clicked.
+	
+	The code in step 6 above could be placed in the Init method of the form to have
+	the SSTab control show the images when the form is loaded.
+	
+	REFERENCES
+	==========
+	
+	Custom Control Reference (Ctrlref.hlp in the Windows\System or WinNT\System32
+	folder if using Visual FoxPro version 5.0)
+	
+	Windows Common Controls help file (Comctl1.hlp in the Windows\System or
+	WinNT\System32 folder if using version 5.0a).
+	
+	To access the Help file, right-click on the ImageList control on the form and
+	select Help from the shortcut menu. In the ImageList Control topic, click See
+	Also to jump to the ListImage Object, ListImages Collection topic. Select the
+	Add Method (ListImages Collection) from the Methods jump.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbinterop kbole kbvfp500 kbvfp600 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

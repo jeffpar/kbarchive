@@ -1,0 +1,78 @@
+---
+layout: page
+title: "Q141592: Event ID: 56 with Distributed Link Services to AS/400"
+permalink: kb/141/Q141592/
+---
+
+## Q141592: Event ID: 56 with Distributed Link Services to AS/400
+
+	Article: Q141592
+	Product(s): Microsoft SNA Server
+	Version(s): 2.0,2.1,2.11,2.11 SP1,3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3,
+	Operating System(s): 
+	Keyword(s): kb3rdparty
+	Last Modified: 12-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 2.0, 2.1, 2.11, 2.11 SP1, 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 3.0 SP4, 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4 
+	- Microsoft Host Integration Server 2000 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Event ID: 56 appears in the SNA Server Application log when you have Distributed
+	Link Services (DLS) connected to an AS/400. Detail information from of the event
+	is:
+	
+	  Event 56: Connection <connection> failed: XID rejected by remote
+	  computer
+	
+	The connection becomes Pending, but never becomes active. The AS/400 shows an
+	error such as (use DSPMSG QSYSOPR to view AS/400 system operator messages):
+	
+	  CPA575D: Controller CNIRV02 on line ETHLINE not contacted. Probable
+	  configuration problem.
+	
+	Refer to Release Notes for Microsoft SNA Server V.2.11 Service Pack 1 for more
+	information on DLS.
+	
+	For more information on Event 56 and other AS/400 connection problems, please see
+	the following article in the Microsoft Knowledge Base:
+	
+	  Q126393 SNA Server Configurations that Produce XID Rejections
+	
+	CAUSE
+	=====
+	
+	The AS/400 does not create a second controller for the same MAC address and the
+	same RSAP (Remote Source Access Point). This is defined in SNA Server as the
+	link service SAP in SNA Server Setup, not the connection's Remote SAP Address.
+	If there is a controller already created for a particular line that shares a MAC
+	address and RSAP with a pending connection, the AS/400 attempts to use the
+	existing controller. This does not present a problem if the SNA Server Control
+	Point Name and MAC address on the SNA Server match the Control Point Name and
+	LAN Remote Adapter Address respectively on the AS/400 controller description.
+	Otherwise, the AS/400 generates an error message that states that there was a
+	problem activating the offending controller.
+	
+	RESOLUTION
+	==========
+	
+	Either (1) reconfigure the controller on the AS/400 to match the desired
+	parameters, or (2) delete the controller on the AS/400 and allow it to auto-
+	create, or (3) match the Control Point Name of the SNA Server using the SNA
+	Admin tool only if the Control Point Name is not in use by any other device.
+	
+	Additional query words: prodsna
+	
+	======================================================================
+	Keywords          : kb3rdparty 
+	Technology        : kbAudDeveloper kbSNAServSearch kbHostIntegServ2000 kbSNAServ300 kbSNAServ200 kbSNAServ211 kbSNAServ400 kbSNAServ210 kbSNAServ211SP1 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3 kbSNAServ400SP4 kbSNAServ300SP2 kbSNAServ300SP4
+	Version           : :2.0,2.1,2.11,2.11 SP1,3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+	Issue type        : kbprb
+	
+	=============================================================================
+	

@@ -1,0 +1,95 @@
+---
+layout: page
+title: "Q151411: FIX: New Version of Ssscc.dll Available"
+permalink: kb/151/Q151411/
+---
+
+## Q151411: FIX: New Version of Ssscc.dll Available
+
+	Article: Q151411
+	Product(s): Microsoft SourceSafe
+	Version(s): WINDOWS:4.0; winnt:4.0a,4.1,4.2
+	Operating System(s): 
+	Keyword(s): kbfile kbSample kbSSafe400 kbVBp400
+	Last Modified: 07-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual SourceSafe, 16-bit, for Windows, version 4.0 
+	- Microsoft Visual SourceSafe, 32-bit, for Windows 4.0 
+	- Microsoft Visual C++, versions 4.0a, 4.1 
+	- Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+	- Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The new Ssscc.dll file fixes two problems with Visual SourceSafe 4.0 integration
+	into Visual C++.
+	
+	This file is available for the 32-bit version of Visual SourceSafe 4.0 on Windows
+	95 or Windows NT, MIPS and Alpha platforms.
+	
+	The following files are included in the Ssscc.exe file:
+	
+	- \WIN32\Ssscc.dll, version 04.00.1310 (for Windows 95 and Windows NT)
+	  - \NTMIPS\Ssscc.dll, version 04.00.1310 (for MIPS)
+	  - \NTAXP\Ssscc.dll, version 04.00.1310 (for Alpha)
+	  - Readme.txt
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products that are
+	listed at the beginning of this article.
+	
+	MORE INFORMATION
+	================
+	
+	The following files are available for download from the Microsoft Download
+	Center:
+	
+	Ssscc.exe
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. Once posted, the file is housed on secure
+	servers that prevent any unauthorized changes to the file.
+	
+	Following is the text of the Readme.txt.
+	
+	Ssscc.dll 1309b
+	---------------
+	
+	This file fixes two problems in Visual C++/Visual SourceSafe integration.
+	
+	- Sometimes, when performing a source code control operation on a very large
+	  number of files, Visual C++ crashes.
+	
+	- Sometimes, you add a new project to Visual SourceSafe from inside Visual C++,
+	  and you are not prompted for what SourceSafe project to use. Instead, the C++
+	  files go directly into the SourceSafe root project ($/).
+	
+	Neither of these problems happens reliably or predictably in any version of
+	Visual SourceSafe. But if you copy this file over the existing Ssscc.dll in your
+	SourceSafe WIN32 directory (Windows NT Intel or Windows 95), NTAXP directory
+	(Windows NT Alpha), or NTMIPS directory (Windows NT MIPS), then the problems
+	should never occur.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbfile kbSample kbSSafe400 kbVBp400 
+	Technology        : kbVCsearch kbSSafeSearch kbAudDeveloper kbVC410 kbVC420 kbVC32bitSearch kbVC400a kbSSafe400 kbSSafe16bitSearch kbSSafe32bitSearch
+	Version           : WINDOWS:4.0; winnt:4.0a,4.1,4.2
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

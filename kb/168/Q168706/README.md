@@ -1,0 +1,73 @@
+---
+layout: page
+title: "Q168706: FIX: PivotTable Wizard - Cannot Find Excel 97"
+permalink: kb/168/Q168706/
+---
+
+## Q168706: FIX: PivotTable Wizard - Cannot Find Excel 97
+
+	Article: Q168706
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:5.0
+	Operating System(s): 
+	Keyword(s): kberrmsg kbvfp kbvfp500aFIX kbvfp500bugkbbuglist kbfixlist
+	Last Modified: 11-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When running the PivotTable Wizard from Microsoft Visual FoxPro version 5.0, if
+	Excel 97 is installed, you will receive the following error:
+	
+	  Could Not Locate Microsoft Excel
+	
+	CAUSE
+	=====
+	
+	The PivotTable Wizard was failing with Excel 97 because it could not find the
+	application path. This was a general problem with the Wizard if Excel was
+	located in a long-file named path such as \Program Files\Office\Excel.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article. This bug has been corrected in Microsoft Visual
+	FoxPro version 5.0a for Windows.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	With Microsoft Excel 97 installed to a long file-named path:
+	
+	1. Run Microsoft Visual FoxPro 5.0.
+	
+	2. Open a database.
+	
+	3. From the Tools menu, select Wizards and click PivotTable.
+	
+	This returns the error "Could Not Locate Microsoft Excel."
+	
+	NOTE: In order for the PivotTable Wizard to work, Microsoft Excel and Microsoft
+	Query should already be installed.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kberrmsg kbvfp kbvfp500aFIX kbvfp500bug kbbuglist kbfixlist
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP500
+	Version           : WINDOWS:5.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

@@ -1,0 +1,140 @@
+---
+layout: page
+title: "Q124520: FILE: Increased File Libraries for Visual C++ 2.0-2.2 Available"
+permalink: kb/124/Q124520/
+---
+
+## Q124520: FILE: Increased File Libraries for Visual C++ 2.0-2.2 Available
+
+	Article: Q124520
+	Product(s): Microsoft C Compiler
+	Version(s): 2.0,2.1,2.2
+	Operating System(s): 
+	Keyword(s): kbfile kbProgramming kbCRT kbVC
+	Last Modified: 06-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The C Run-Time (CRT), used with:
+	   - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1, 2.2 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The run-time libraries have a preset limit on the number of files you can have
+	open at one time as described in the More Information section of this article.
+	
+	You can, however, increase these limits by downloading the Increased File Handle
+	Libraries for Microsoft Visual C++, 32-bit Edition, versions 2.0, 2.1 and 2.2.
+	Download Vc20xf.exe for Visual C++ 2.0, or Vc22xf.exe for Visual C++ 2.1 and
+	2.2.
+	
+	The following files are available for download from the Microsoft Download
+	Center:
+	
+	Vc20xf.exe
+	
+	Vc22xf.exe
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. Once posted, the file is housed on secure
+	servers that prevent any unauthorized changes to the file.
+	
+	For more information about downloading files from the Microsoft Software Library,
+	please see the following article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	
+	MORE INFORMATION
+	================
+	
+	Preset Limits
+	-------------
+	
+	Attempting to open more than 64 file handles (or 20 file streams) concurrently in
+	a process will fail if you are creating a single- threaded application that uses
+	the static run-time library (LIBC.LIB) by using the /ML compiler option (the
+	default).
+	
+	Attempting to open more than 256 files handles (or 40 file streams) concurrently
+	in a process will fail if you are using the static multi-threaded run-time
+	library by using the /MT compiler option and LIBCMT.LIB. The same limit applies
+	if you use the DLL version of the run-time library by using the /MD compiler
+	option and MSVCRT.LIB or MSVCRT20.DLL.
+	
+	Increased Limits Using the Files in VC20XF.EXE & VC22XF.EXE
+	-----------------------------------------------------------
+	
+	VC20XF.EXE ans VC22XF.EXE include the following five files:
+	
+	+-------------------------------------------------------------------+
+	| README.TXT   | File containing instructions on use of these .LIBs | 
+	+-------------------------------------------------------------------+
+	| LIBC.LIB     | Single threaded run-time library                   | 
+	+-------------------------------------------------------------------+
+	| LIBCMT.LIB   | Multi-threaded run-time library                    | 
+	+-------------------------------------------------------------------+
+	| MSVCRT2X.LIB | Import library for MSVCRT2X.DLL                    | 
+	+-------------------------------------------------------------------+
+	| MSVCRT2X.DLL | Multi-threaded run-time library in a DLL.          | 
+	+-------------------------------------------------------------------+
+	
+	These run-time libraries have been rebuilt to allow the use of up to 509 file
+	handles and up to 125 file streams in an application. The total is actually 512
+	handles and 128 streams, but three handles and streams are used by the run-time
+	library for the standard C input/output/error files, stdin, stdout, and stderr.
+	Note that each stream (FILE*) uses a handle, so the two limits are not
+	independent of each other.
+	
+	When building your application, the libraries must be in your current directory,
+	or in a directory specified by the LIB environment variable. If you place them
+	in the \MSVC20\LIB directory, make a backup copy of the existing libraries of
+	the same name.
+	
+	For MSVCRT2X.LIB to be used as a default library, you must rename it to
+	MSVCRT.LIB. If you use this library, MSVCRT2X.DLL must be in the path or in the
+	Windows system directory. You may distribute MSVCRT2X.DLL with applications
+	built with MSVCRT2X.LIB.
+	
+	These files are provided for the convenience of Visual C++ users; they are
+	provided as is without any support.
+	
+	File handles are obtained when you use the low-level I/O functions (_open and
+	_sopen, and _creat) to open a file. When one of these functions fails because
+	the application has reached the file limit, they will return -1, and set the
+	global variable errno to the constant EMFILE. EMFILE is defined in ERRNO.H as
+	24.
+	
+	File handles are also associated with the iostream classes. When a member
+	function or constructor of an iostream class fails because the application has
+	reached the file limit, the bad member function will return a nonzero value.
+	Note that many other types of errors can also cause the bad member function to
+	return a nonzero value.
+	
+	File streams are associated with the stream I/O functions (fopen, _fdopen, and
+	_fsopen). When one of these functions fails because the application has reached
+	the file limit, they will return NULL. Note that many other types of file stream
+	errors can also cause the functions to return NULL.
+	
+	NOTE: You must call SetHandleCount() to increase the number of file handles
+	available on WIN32s. This function changes the number of file handles available
+	to a process. Under Win32s, this default is 20. It has no effect when called
+	under Windows NT.
+	
+	Additional query words: runtime vc++
+	
+	======================================================================
+	Keywords          : kbfile kbProgramming kbCRT kbVC 
+	Technology        : kbVCsearch kbAudDeveloper kbCRT
+	Version           : :2.0,2.1,2.2
+	
+	=============================================================================
+	

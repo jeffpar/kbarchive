@@ -1,0 +1,273 @@
+---
+layout: page
+title: "Q157021: How Can I Access the Internet Through German T-Online"
+permalink: kb/157/Q157021/
+---
+
+## Q157021: How Can I Access the Internet Through German T-Online
+
+	Article: Q157021
+	Product(s): Microsoft Windows NT
+	Version(s): WinNT:4.0
+	Operating System(s): winnt
+	Keyword(s): NTRAS NTSrvWkst kbnetwork
+	Last Modified: 11-NOV-1997
+	
+	---------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 4.0
+	- Microsoft Windows NT Workstation version 4.0
+	---------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes how to access the German T-Online Internet and
+	Online service using a modem and Windows NT 4.0 Remote Access Service
+	(RAS). The article also provides you with a RAS script and the steps
+	necessary to implement the script. In addition, it provides T-Online News
+	and Mail server information.
+	
+	The More Information section contains the following subsections:
+	
+	- Overview
+	- Limitations
+	- Prerequisites
+	- Creating a RAS Phonebook Entry
+	- News Server and Mail Server information
+	
+	MORE INFORMATION
+	=================
+	
+	Overview
+	--------
+	
+	To access T-Online using Windows NT RAS, create a RAS Phonebook entry that
+	uses the script provided below:
+	
+	1. Read the Limitations of the T-Online Script Method section.
+	
+	2. Be sure you have met the requirements listed in the Prerequisites
+	  section.
+	
+	3. Follow the instructions in the Creating a RAS Phonebook Entry section.
+	
+	4. Follow the instructions in the T-Online Script section and modify the
+	  script if necessary.
+	
+	5. Save the script with the name T-Online.scp in the directory
+	  %SystemRoot%\System32\Ras.
+	
+	6. To set up your e-mail and newsreader program, read the News Server and
+	  Mail Server Information section.
+	
+	Limitations of the T-Online Script Method
+	-----------------------------------------
+	
+	The limitation of this access method are:
+	
+	- this script does not work with ISDN.
+	
+	- the connection is slow because T-Online only allows 14,4000 bps without
+	  compression.
+	
+	- If you unsuccessfully submit your credentials during the log on process
+	  more than three times, the German Telekom disables your account. German
+	  Telekom does not reenable your account free of charge.
+	
+	Prerequisites
+	-------------
+	
+	The prerequisites to make this script work with a RAS phonebook entry are:
+	
+	- RAS and a modem are already installed. If not, please read the Network
+	  Guide, chapter 6, "Installing and Configuring Remote Access Service".
+	
+	- Your modem should be configured with the parameter settings for T-Online
+	  access with the standard T-Online decoder. These parameters are
+	  described in the T-Online documentation.
+	
+	- RAS should be configured to "Dial out only" or "Dial out and Receive
+	  calls".
+	
+	- The TCP/IP protocol should be enabled for RAS.
+	
+	Creating a RAS Phonebook Entry
+	------------------------------
+	
+	To set up this connection, perform the following steps:
+	
+	1. Click the Start button, point to Programs, point to Accessories, and
+	  click Dial-Up Networking.
+	
+	2. Click New.
+	
+	3. Type the connection name, for example, T-Online Internet, and enable "I
+	  know all about phonebook entries and would rather edit the properties
+	  directly". Click Finish.
+	
+	4. Open a Window "New Phonebook Entry" with the register "Basic".
+	  Please type the correct "Phone number" (should be 01910), and select
+	  your modem.
+	
+	5. Click Server register.
+	
+	6. Select SLIP: Internet as the Dial-up server type.
+	
+	7. Enable TCP/IP as the Network protocol.
+	
+	8. Click TCP/IP Settings.
+	
+	9. Type 194.25.2.129 for the Primary DNS address, and type the same address
+	  for the Secondary DNS address or the address of another known DNS
+	  Server.
+	
+	10. All other IP addresses should stay 0.
+	
+	11. Disable Force IP header compression and enable "Use default gateway
+	   on remote network".
+	
+	12. The Frame size should stay 1006.
+	
+	13. Click OK for SLIP TCP/IP settings.
+	
+	14. Click register Script.
+	
+	15. Select Run this script, and then click Refresh list.
+	
+	16. Choose the script %Systemroot%\System32\Ras\T-Online.scp
+	
+	17. Go to register Security.
+	
+	18. Select "Accept any authentication including clear text"
+	
+	19. Click OK for Edit Phonebook Entry.
+	
+	Now you are ready to dial in to T-Online.
+	
+	T-Online Script
+	---------------
+	
+	If you are not the first user of your account, change the number of the
+	user of this account (Mitbenutzernummer) from 0001 to your number. This
+	script allows you to input your access number (Anschlusskennung) as a user
+	ID and your password in the dialog box.
+	
+	If the service provider computer does not respond, you can increase the
+	values after "delay" in the script to allow the remote computer more time
+	to respond.
+	
+	;======================================
+	;          T-Online Zugang
+	;            <FC>ber SLIP
+	;======================================
+	; Main
+	;
+	proc main
+	
+	;
+	; send access number
+	
+	waitfor "ennung"
+	
+	; input access number as user ID
+	
+	transmit $USERID
+	
+	delay 2
+	
+	;
+	; number of the user of this account
+	;
+	
+	transmit "0001"
+	
+	;
+	; send password
+	;
+	
+	transmit $PASSWORD
+	
+	transmit "^M"
+	
+	;
+	; change to VT-100 mod
+	;
+	
+	transmit "*707#"
+	
+	delay 1
+	
+	transmit "j"
+	
+	waitfor "eingeben"
+	
+	delay 2
+	
+	transmit ".^M"
+	
+	delay 1
+	
+	transmit "n"
+	
+	;
+	; swich off of data confirmation
+	;
+	
+	transmit "*53#"
+	
+	waitfor "ausgeschaltet"
+	
+	;
+	; call Internet gateway
+	;
+	
+	transmit "*190144100#"
+	
+	;
+	; confirm tick per minute
+	;
+	
+	waitfor "DM/Min"
+	
+	delay 1
+	
+	transmit "19"
+	
+	;
+	; ask for dynamic IP-address
+	;
+	
+	waitfor "STATUS OK"
+	
+	transmit "WIN"
+	
+	transmit "^M"
+	
+	transmit "OK"
+	
+	transmit "^M"
+	
+	waitfor "YOURIP"
+	
+	set ipaddr getip
+	
+	endproc
+	
+	;============= End of Script ============
+	
+	To set up your e-mail and newsreader program, access the following German
+	Telekom servers by using the URL following the arrow next to it:
+	
+	- News server -> news.btx.dtag.de
+	- Mail server -> pop.btx.dtag.de
+	
+	For more information, please see these programs' documentation.
+	======================================================================
+	Keywords          : NTRAS NTSrvWkst kbnetwork
+	Version           : WinNT:4.0
+	Platform          : winnt
+	
+	=============================================================================
+	

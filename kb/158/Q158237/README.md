@@ -1,0 +1,73 @@
+---
+layout: page
+title: "Q158237: SAMPLE: Vfpie3.exe Shows How to Automate Internet Explorer 3.0"
+permalink: kb/158/Q158237/
+---
+
+## Q158237: SAMPLE: Vfpie3.exe Shows How to Automate Internet Explorer 3.0
+
+	Article: Q158237
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:3.0,3.0b,5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbfile kbinterop kbsample kbAutomation kbIE300 kbIE400 kbvfp300 kbvfp500 kbvfp600
+	Last Modified: 24-OCT-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Vfpie3.exe is a sample that contains a form that uses ActiveX automation to
+	control Internet Explorer version 3.0 or 4.0.
+	
+	MORE INFORMATION
+	================
+	
+	The following files are available for download from the Microsoft Download
+	Center:
+	
+	  Vfpie3.exe
+	  (http://download.microsoft.com/download/mastervfoxpro/Utility/1/W9X2K/EN-US/Vfpie3.exe)
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. Once posted, the file is housed on secure
+	servers that prevent any unauthorized changes to the file.
+	
+	Following is the Readme.txt file included in Vfpie3.exe:
+	
+	Vfpie3.exe contains a form called Vfpie.scx. This form uses ActiveX Automation to
+	control Internet Explorer version 3.0 or 4.0. The sample shows the use of many
+	of the properties and methods exposed by the Internet Explorer object model.
+	
+	Internet Explorer version 3.0 or 4.0 must be installed in order for this sample
+	to work correctly. If you do not have Internet Explorer version 3.0 or 4.0
+	installed, you can download a copy from:
+	
+	  http://www.microsoft.com/ie/
+	
+	This form was compiled under Visual FoxPro version 5.0. To use the form under
+	Visual FoxPro version 3.0 or 3.0b, you need to recompile the form. To do this,
+	issue the following command in the Command window:
+	
+	     COMPILE FORM <full path to Vfpie.scx>
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbfile kbinterop kbsample kbAutomation kbIE300 kbIE400 kbvfp300 kbvfp500 kbvfp600 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600
+	Version           : WINDOWS:3.0,3.0b,5.0,6.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

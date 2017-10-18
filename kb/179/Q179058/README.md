@@ -1,0 +1,113 @@
+---
+layout: page
+title: "Q179058: XADM: Store on Alpha Fails When POP3 User Retrieves Attachment"
+permalink: kb/179/Q179058/
+---
+
+## Q179058: XADM: Store on Alpha Fails When POP3 User Retrieves Attachment
+
+	Article: Q179058
+	Product(s): Microsoft Exchange
+	Version(s): WinNT:5.0,5.5
+	Operating System(s): 
+	Keyword(s): kbusage
+	Last Modified: 22-MAR-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 5.0, 5.5 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	This problem occurs when you run Microsoft Exchange Server on an Alpha platform.
+	When a POP3 user tries to retrieve message with a postscript attachment, the
+	Information Store may cause a Dr. Watson.
+	
+	This problem was not observed on the Intel platform.
+	
+	CAUSE
+	=====
+	
+	The problem is that the a boundary condition is not handled within the store.
+	The input text to be encoded contains the H"09 7B 0D 09.." sequence, which fills
+	up the current output buffer, leaving no room for the terminating CRLF. This
+	causes the 5.0 SP1 Store.exe to Dr. Watson.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, obtain the following fix or wait for the next Microsoft
+	Exchange Server service pack.
+	
+	The fix makes sure that when writing to the output buffer, there is enough space
+	for the soft wrap character (the equal sign) and the terminating CRLF.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+	version 5.0. This problem has been corrected in the latest U.S. Service Pack for
+	Microsoft Exchange Server version 5.0. For information on obtaining the Service
+	Pack, query on the following word in the Microsoft Knowledge Base (without the
+	spaces):
+	
+	  S E R V P A C K
+	
+	
+	Microsoft has confirmed this to be a problem in Microsoft Exchange Server version
+	5.5. This problem has been corrected in the latest U.S. Service Pack for
+	Microsoft Exchange Server version 5.5. For information on obtaining the Service
+	Pack, query on the following word in the Microsoft Knowledge Base (without the
+	spaces):
+	
+	  S E R V P A C K
+	
+	
+	MORE INFORMATION
+	================
+	
+	When the Information Store fails with this problem, the following call stack can
+	be found in the USER.DMP:
+	
+	  FramePtr  RetAddr   Param1   Param2   Param3   Function Name
+	  0ac8f990  67162668  00000001 013000f8 00000000
+	  NTDLL!RtlAllocateHeap+0x78c
+	  0ac8fa30  00413ad8  00000001 013000f8 01300798
+	  EXCHMEM!ExchMHeapAlloc+0x5c
+	  0ac8fa50  005780f4  00000001 013000f8 01300798 STORE!operator new+0xc
+	  0ac8fa60  004f48d4  00000001 013000f8 01300798 STORE!PTA::EcDupPta+0x28
+	  0ac8fa90  00503ce0  00000001 013000f8 01300798
+	  STORE!OMSG::EcConfig+0x1878
+	  0ac8fbb0  005104cc  00000001 013000f8 01300798 STORE!EcCreateOMSG+0x234
+	  0ac8fc20  006293f4  00000001 013000f8 01300798
+	  STORE!EcOpenMessageOp+0x1b0
+	  0ac8fc90  006291e4  00000001 013000f8 01300798
+	  STORE!POP3CON::EcRenderMessage+0x188({...})
+	  0ac8fdd0  00625be8  00000001 013000f8 01300798
+	  STORE!POP3CON::EcSendMessage+0x68
+	  0ac8fe00  00627af8  00000001 013000f8 01300798
+	  STORE!POP3CON::EcRetr+0xac
+	  0ac8fe30  0062804c  00000001 013000f8 01300798
+	  STORE!POP3CON::OnTransactionCmd+0x3cc
+	  0ac8fe70  67087d78  00000001 013000f8 01300798
+	  STORE!POP3CON::CbCommand+0x200
+	  0ac8feb0  67088098  00000001 013000f8 01300798
+	  NETIF!IFCONN::ProcessReceiveBuffer+0x2bc
+	  0ac8ff00  6708898c  00000001 013000f8 01300798
+	  NETIF!IFCONN::OnReceiveComplete+0x29c
+	  0ac8ff50  684041d4  00000001 00040000 013000f8
+	  NETIF!NetIfCompletionRoutine+0x150
+	  0ac8ff70  684041d8  00000001 00040000 013000f8 0x684041d8
+	======================================================================
+	Keywords          : kbusage 
+	Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+	Version           : WinNT:5.0,5.5
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

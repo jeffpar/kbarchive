@@ -1,0 +1,169 @@
+---
+layout: page
+title: "Q194115: HOWTO: Use ADSI in VB to Enumerate the Computers in an NT Domain"
+permalink: kb/194/Q194115/
+---
+
+## Q194115: HOWTO: Use ADSI in VB to Enumerate the Computers in an NT Domain
+
+	Article: Q194115
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 2.0,2.5,5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbADSI kbVBp500 kbVBp600
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Active Directory Service Interfaces, versions 2.0, 2.5 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	You can use the Microsoft Active Directory Service Interfaces (ADSI) to easily
+	enumerate the computers in an NT Domain. Simply create an IADsDomain object (the
+	domain) and an IADsComputer object (a computer),and then perform a loop for each
+	computer object in the domain object. The domain object is a container of the
+	computer objects.
+	
+	MORE INFORMATION
+	================
+	
+	An ADSI container object contains other objects. A container object controls the
+	objects within it, providing methods to create, filter, retrieve, copy, move and
+	delete the objects. A container object is different from a Collection, which is
+	a more limited set of items and methods. Container objects are used to represent
+	the hierarchical structures in the Active Directory Services.
+	
+	One example of the differences between a Container and a Collection is in
+	enumeration of member objects. The syntax for enumerating the objects in a
+	container, for example, is:
+	
+	     For Each Object In ContainerObject
+	
+	An example of this is found in the code example:
+	
+	     For Each Computer In TheDomain
+	
+	The syntax for enumerating the objects in a Collection is:
+	
+	     For Each Object In Collection.Objects
+	
+	An example of this is enumerating the Controls collection of a form:
+	
+	     For Each ctl In Form1.Controls
+	
+	The IADsDomain object is a ADS container object that represents a domain on a
+	network.
+	
+	The IADsComputer object represents the information about a computer on a network.
+	In some directory services, such as Windows NT, the computer object can also be
+	a container object, containing the services that the computer provides.
+	
+	Step-by-Step Example
+	--------------------
+	
+	To use the ADSI 2.0 object model, your system must have the ADSI run-time
+	installed. The run-time and Help file are available at"
+	
+	  http://www.microsoft.com/backoffice/downloads.htm
+	
+	Once you have installed the ADSI run-time, you will have the Active DS Type
+	Library (ActiveDS.tlb) available. The Active DS Type Library provides the ADSI
+	object model.
+	
+	1. Create a Standard EXE project in Visual Basic. Form1 is created by default.
+	
+	2. Set a reference to the Active DS Type Library by selecting Project,
+	  References, and then selecting Active DS Type Library.
+	
+	  NOTE: You may not see the Active DS Type Library in the list of available
+	  References. To add the Library to the list:
+	
+	  a. Click Browse.
+	
+	  b. Go to the Windows\System folder or WinNT\System32 folder.
+	
+	  c. Select the file ActiveDS.tlb.
+	
+	  d. From now on, the Active DS Type Library is among the list of available
+	     References.
+	
+	3. Add a ListBox and CommandButton to Form1.
+	
+	4. Add the following code to Form1's Code Window.
+	
+	  Private Sub Command1_Click()
+	
+	       Dim TheDomain As IADsDomain
+	       Dim Computer As IADsComputer
+	       Dim strDomain As String
+	       Dim iMousePointer As Integer
+	
+	       'Accept the Domain name
+	       strDomain = InputBox("Domain Name: ")
+	
+	       'Use the WinNT Directory Services
+	       strDomain = "WinNT://" & strDomain
+	
+	       'Initialize the User Interface
+	       List1.Clear
+	       iMousePointer = Me.MousePointer
+	       Me.MousePointer = vbHourglass
+	
+	       'Create the Domain object
+	       Set TheDomain = GetObject(strDomain)
+	
+	      'Search for Computers in the Domain
+	       TheDomain.Filter = Array("Computer")
+	
+	       For Each Computer In TheDomain
+	         List1.AddItem Computer.Name
+	       Next Computer
+	
+	      'Clean up
+	       Me.MousePointer = iMousePointer
+	       Set Computer = Nothing
+	       Set TheDomain = Nothing
+	
+	  End Sub 'Command1_Click
+	
+	5. Run the test project by doing the following:
+	
+	  a. Click CommandButton.
+	
+	  b. When prompted, enter the Domain name. Depending on the number of computers
+	     in the domain, the enumeration may take a while.
+	
+	REFERENCES
+	==========
+	
+	In the Visual Basic Online Help Index, search for "collection."
+	
+	In the ADSI Help file (ADSI.HLP) Index, search for "IADSDomain" and
+	"IADSComputer."
+	
+	In the ADSI Help file Contents, choose Guide - Introduction to Active Directory
+	Service Interfaces - Code Examples - Automation examples and ADsPaths examples
+	for more Visual Basic code examples.
+	
+	For an example of enumerating File Shares in a container, please see the
+	following article in the Microsoft Knowledge Base:
+	
+	  Q169398 HOWTO: Manipulate File Shares with ADSI (VB Sample)
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbADSI kbVBp500 kbVBp600 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbADSISearch kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbADSI200 kbADSI250
+	Version           : :2.0,2.5,5.0,6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

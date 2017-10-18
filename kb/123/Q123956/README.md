@@ -1,0 +1,194 @@
+---
+layout: page
+title: "Q123956: Recovering from Attempted PC Anywhere for Windows Installation"
+permalink: kb/123/Q123956/
+---
+
+## Q123956: Recovering from Attempted PC Anywhere for Windows Installation
+
+	Article: Q123956
+	Product(s): Microsoft Windows NT
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 3.1 
+	- Microsoft Windows NT Workstation version 3.1 
+	- Microsoft Windows NT Advanced Server, version 3.1 
+	- Microsoft Windows NT Workstation version 3.5 
+	- Microsoft Windows NT Server version 3.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you install Symantec's PC Anywhere for Windows under Windows NT, PC
+	Anywhere Setup restarts your computer. After you log on to Windows NT, the
+	system stops responding (hangs) with a blank screen. To continue, you need to
+	press CTRL+ALT+DEL for the Windows NT security dialog box to either Cancel,
+	Logoff or Shutdown the system.
+	
+	The following error message appears when you log on to Windows NT:
+	
+	  <temp>\INSTBIN.EXE could not be found in the source directory.
+	
+	where <temp> is the path of the TEMP directory.
+	
+	You must choose OK which returns you to a screen with a wallpaper background. To
+	continue, press CTRL+ALT+DEL to display the Windows NT Security dialog box.
+	
+	If you copy INSTBIN.EXE file to the TEMP directory, you may receive the following
+	error message when you log on to Windows NT:
+	
+	  Information File Not Found
+	
+	This message is accompanied with an OK button. If you select OK, the Welcome
+	dialog box appears for you to press CTRL+ALT+DEL to log on.
+	
+	CAUSE
+	=====
+	
+	Your computer hangs because PC Anywhere Setup replaces the Shell statement in
+	the Windows NT Registry from PROGMAN.EXE to INSTALL.EXE (PC Anywhere Setup).
+	Once PC Anywhere Setup starts, INSTALL.EXE is placed in the %systemroot%\SYSTEM
+	subdirectory.
+	
+	RESOLUTION
+	==========
+	
+	Listed below are possible workarounds to this problem:
+	
+	  - Recovering Windows NT on a FAT File System
+	  - Recovering by Network Access
+	  - Recovering Using Emergency Repair Disk
+	  - Recovering from Another Windows NT Installation
+	
+	Recovering Windows NT on a FAT File System
+	------------------------------------------
+	
+	1. Boot MS-DOS. If MS-DOS is installed, the Windows NT Boot Loader provides
+	  MS-DOS as a selection. If not, use an MS-DOS boot disk.
+	
+	2. Go to the %systemroot%\SYSTEM subdirectory.
+	
+	3. Rename the INSTALL.EXE file to INSTALL.OLD.
+	
+	4. Copy the %systemroot%\SYSTEM32\PROGMAN.EXE file to the %systemroot%\SYSTEM
+	  subdirectory as INSTALL.EXE.
+	
+	5. Restart your computer and select Windows NT.
+	
+	  WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+	  problems that may require you to reinstall Windows NT to correct them.
+	  Microsoft cannot guarantee that any problems resulting from the use of
+	  Registry Editor can be solved. Use this tool at your own risk.
+	
+	6. Start Registry Editor and locate the following Registry subkey:
+	
+	  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT \CurrentVersion\Winlogon
+	
+	  Change the Shell value from %systemroot%\SYSTEM\INSTALL.EXE to PROGMAN.EXE.
+	
+	7. Exit Registry Editor and restart your computer.
+	
+	8. Update the Emergency Repair Disk.
+	
+	Recovering by Network Access
+	----------------------------
+	
+	1. Start the computer experiencing the problem, but do not log on.
+	
+	2. Go to another Windows NT computer on the network.
+	
+	  WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+	  problems that may require you to reinstall Windows NT to correct them.
+	  Microsoft cannot guarantee that any problems resulting from the use of
+	  Registry Editor can be solved. Use this tool at your own risk.
+	
+	3. Start Registry Editor and choose Select Computer from the Registry menu.
+	
+	4. Select the HKEY_LOCAL_MACHINE subtree of the computer that is experiencing
+	  the problem.
+	
+	5. Start Registry Editor and locate the following Registry subkey:
+	
+	  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT \CurrentVersion\Winlogon
+	
+	  Change the Shell value from %systemroot%\SYSTEM\INSTALL.EXE to PROGMAN.EXE.
+	
+	6. Exit Registry Editor and log on to the computer that experienced the problem.
+	  Immediately after logging on, restart the computer in order for the changes
+	  in the Registry to take effect.
+	
+	7. Update the Emergency Repair Disk.
+	
+	Recovering Using Emergency Repair Disk
+	--------------------------------------
+	
+	NOTE: Any changes after the last update or since the creation of the Emergency
+	Repair Disk will be lost and must be re-created. If this is undesirable, you may
+	attempt one of the other three workaround procedures.
+	
+	Perform the Repair process using the Emergency Repair Disk.
+	
+	1. Restart your computer with the Windows NT version 3.5 setup boot disk.
+	
+	2. At the Welcome To Setup screen press R to repair a damaged Windows NT version
+	  3.5 installation.
+	
+	3. In the next screen, select the Inspect Registry Files option. Clear the other
+	  options and choose Continue.
+	
+	4. Insert the Emergency Repair Disk when prompted.
+	
+	5. A screen appears for the restoration of Registry files. Select the "SOFTWARE
+	  (Software Information)" option and choose Continue.
+	
+	Recovering from Another Windows NT Installation
+	-----------------------------------------------
+	
+	1. Install Windows NT to another location on your computer.
+	
+	2. Run Command Prompt and go to the %systemroot%\SYSTEM subdirectory of the
+	  original Windows NT installation experiencing the problem.
+	
+	3. Rename INSTALL.EXE to INSTALL.OLD.
+	
+	4. Copy the %systemroot%\SYSTEM32\PROGMAN.EXE file to the %systemroot%\SYSTEM
+	  subdirectory as INSTALL.EXE.
+	
+	5. Restart the installation of Windows NT where PC Anywhere was installed.
+	
+	  WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+	  problems that may require you to reinstall Windows NT to correct them.
+	  Microsoft cannot guarantee that any problems resulting from the use of
+	  Registry Editor can be solved. Use this tool at your own risk.
+	
+	6. Start Registry Editor and locate the following Registry subkey:
+	
+	  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT \CurrentVersion\Winlogon
+	
+	  Change the Shell value from %systemroot%\SYSTEM\INSTALL.EXE to PROGMAN.EXE.
+	
+	7. Exit Registry Editor and restart your computer.
+	
+	8. Remove the second installation of Windows NT and modify the BOOT.INI file to
+	  reflect the change.
+	
+	9. Update the Emergency Repair Disk.
+	
+	The PC Anywhere product discussed here is manufactured by Symantec Corporation, a
+	vendor independent of Microsoft; we make no warranty, implied or otherwise,
+	regarding this product's performance or reliability.
+	
+	Additional query words: prodnt 3.10 lock progman howto
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW310 kbWinNTSsearch kbWinNTS350 kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS350search kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+	
+	=============================================================================
+	

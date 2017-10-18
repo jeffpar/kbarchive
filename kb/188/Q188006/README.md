@@ -1,0 +1,137 @@
+---
+layout: page
+title: "Q188006: BUG: EditCopy Incorrectly Copies Series Edge/Line Color of Chart"
+permalink: kb/188/Q188006/
+---
+
+## Q188006: BUG: EditCopy Incorrectly Copies Series Edge/Line Color of Chart
+
+	Article: Q188006
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbGrpDSVB
+	Last Modified: 16-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you use the Editcopy method of the MSChart control to copy a chart to the
+	clipboard, the Edge/Line color and style of the series is not correct.
+	
+	RESOLUTION
+	==========
+	
+	To work around this problem, contain the MSChart control within a PictureBox and
+	then use Win32 API functions to capture the PictureBox image. For more
+	information about capturing an image using the Win32 API functions, see the
+	following article in the Microsoft Knowledge Base:
+	
+	  Q161299 HOWTO: Capture and Print the Screen, a Form, or any Window
+	
+	(You will be adding code from the above article if you use the procedures
+	below.)
+	
+	The workaround is described in more detail in the MORE INFORMATION section of
+	this article.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Start a new project. Form1 is created by default.
+	
+	2. Click Components on the Project menu and check "Microsoft Chart Control."
+	
+	3. Add an MSChart control to Form1.
+	
+	4. Right-click the MSChart control and choose Properties from the drop-down
+	  menu.
+	
+	5. Select the Series Color tab. Change the Interior color of Series "C1" from
+	  Red to Purple. Note that this also changes the Edge/Line Color to Purple as
+	  well. Click OK.
+	
+	6. Add the following code to the Click event of Form1:
+	
+	        MSChart1.EditCopy
+	
+	7. Press the F5 key to run the project. Click Form1.
+	
+	8. Run another application, such as Paint or Word, and paste the clipboard
+	  contents. (Use Paste Special if you see the chart's data instead of the
+	  actual chart.) Note that in the picture of the chart, Series "C1" has a
+	  purple interior but the edge/line color is red.
+	
+	Workaround
+	----------
+	
+	1. Start a new project. Form1 is created by default.
+	
+	2. Add a PictureBox control to Form1.
+	
+	3. Add an MSChart control so that it is inside the PictureBox control.
+	
+	4. Right-click the MSChart control and choose Properties from the drop-down
+	  menu.
+	
+	5. Select the Series Color tab. Change the Interior color of Series "C1" from
+	  Red to Purple. Notice that this also changes the Edge/Line Color to Purple as
+	  well. Click OK.
+	
+	6. Add the following code to the Click event of Form1:
+	
+	        Dim pic As Picture
+	
+	        With Picture1
+	          'Size/position the picture box so that it matches
+	          'the MSChart control
+	          .Width = MSChart1.Width
+	          .Height = MSChart1.Height
+	          MSChart1.Top = 0
+	          MSChart1.Left = 0
+	          'Get a picture of the contents of the picturebox
+	          Set pic = CaptureWindow(.hWnd, False, 0, 0, _
+	              .ScaleX(.Width, vbTwips, vbPixels), _
+	              .ScaleY(.Height, vbTwips, vbPixels))
+	        End With
+	
+	        'Copy the picture to the clipboard
+	        Clipboard.Clear
+	        Clipboard.SetData pic
+	
+	7. Add a Module to the project.
+	
+	8. Add the code in step 6 in the MORE INFORMATION section of the following
+	  article to the Module:
+	
+	  Q161299 HOWTO: Capture and Print the Screen, a Form, or any Window
+	
+	9. Run the project and click the Form to copy the chart to the clipboard.
+	
+	Additional query words: kbDSupport kbDSD kbVBp kbCtrl kbVBp500bug kbPrint kbVBp600bug
+	
+	======================================================================
+	Keywords          : kbGrpDSVB 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+	Version           : :5.0,6.0
+	Issue type        : kbbug
+	
+	=============================================================================
+	

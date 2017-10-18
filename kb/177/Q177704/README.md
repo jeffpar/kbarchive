@@ -1,0 +1,277 @@
+---
+layout: page
+title: "Q177704: Networking Essentials, 2nd. Ed. Corrections Part 1"
+permalink: kb/177/Q177704/
+---
+
+## Q177704: Networking Essentials, 2nd. Ed. Corrections Part 1
+
+	Article: Q177704
+	Product(s): Microsoft Press
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbdocerr
+	Last Modified: 22-OCT-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- MSPRESS Networking Essentials, Second Edition ISBN 1-57231-527-X 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article is the first of two articles containing corrections, comments, and
+	information on known errors relating to the Microsoft Press book "Networking
+	Essentials, Second Edition," ISBN 1-57231-527-X.
+	
+	This article concerns itself only with known errors in the companion CD-ROM or
+	its contents. For information about known errors relating to the text of the
+	book, please see the following article in the Microsoft Knowledge Base:
+	
+	  Q187879 Networking Essentials 2nd. Ed. Corrections Part 2
+	
+	For information about known errors and corrections in the first edition of
+	"Networking Essentials," please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q153970 NETWORKING FUNDAMENTALS TRAINING Corrections and Comments
+	
+	Contents:
+	
+	- Setup Will Not Install on Windows 3.1
+	
+	- Cannot Run Labs & Demos Directly from CD-ROM
+	
+	- Error: Missing Oleaut32.dll in Setup Program
+	
+	- Setup Does Not Install Shortcuts to Start Bar
+	
+	- Demonstration Files and Labs Do Not Match Text
+	
+	- Videos Do Not Work on 1280 x 1024 Displays
+	
+	- Readme.txt Missing from CD-ROM
+	
+	- Videos Do Not Have Sound
+	
+	- Demo03.exe: Small Typo on Screen 6
+	
+	- Demo21.exe: Slide 3 Screen Shot From NT 3.51
+	
+	- Figure 3.22 and Demo21.exe Show NT 3.5 and describe NT 4.0
+	
+	- Content For Lab Help Files Is Based On NT 3.51
+	
+	MORE INFORMATION
+	================
+	
+	Setup Will Not Install on Windows 3.1
+	-------------------------------------
+	
+	When you attempt to install the files from the companion disc to a Microsoft
+	Windows 3.1 or Windows 3.11 system, you may receive an error similar to the
+	following:
+	
+	  Win32s error: F:\setup.exe: Invalid Format
+	  Unexpected error: 21
+	
+	The program will then abort. The program may also abort without first displaying
+	the error message given above.
+	
+	The Setup program is not compatible with Microsoft Windows 3.1.
+	
+	The files will install correctly on a Windows 95 or Windows NT 4.0 system.
+	
+	If you purchased this book in the belief that it would work on a Windows 3.1
+	computer and you cannot make use of this book otherwise, you may return the book
+	for a full refund. In the United States, if you have not opened any of the
+	CD-ROM sleeves, please return the book to the point of purchase. If you have
+	opened one of the CD-ROM sleeves, please call 1-800-MSPRESS to arrange for a
+	refund check to be sent to you.
+	
+	Outside the United States, please return your book to the point of purchase.
+	
+	  Back cover correction:
+	  System requirements, sentence two:
+	  Delete "... or Microsoft Windows 3.1."
+	
+	
+	Cannot Run Labs & Demos Directly from CD-ROM
+	--------------------------------------------
+	
+	Exercises which are companion to the material covered in the book are included on
+	the CD-ROM. However, these exercises cannot be run from the CD. they must be
+	loaded onto the hard drive by running a setup program. This takes about 173 MB
+	of HD space (about 165 MB for demos and 8 MB for labs).
+	
+	
+	Error: Missing Oleaut32.dll in Setup Program
+	--------------------------------------------
+	
+	When you run the Setup program from the companion disc, you may receive an error
+	message similar to the following:
+	
+	  The SETUP.EXE file is linked to missing export OLEAUT32.DLL:420
+	
+	Oleaut32.dll is a shared file installed by the operating system and used by the
+	Setup program. The Setup program is looking for a newer version of the file than
+	the one that you have installed on your computer. The current Oleaut32.dll file
+	size is 473,872 bytes, and version 2.20.4049 or later.
+	
+	To correct this problem, download and install MSVBVM50.EXE from the Microsoft
+	Software Library. Run the executable file after download. This file installs
+	Oleaut32.dll and other files needed to run the Setup program successfully. This
+	should eliminate the error message.
+	
+	See the following Microsoft Knowledge Base article for further information on
+	MSVBVM50.EXE:
+	
+	  Q180071 FILE: MSVBVM50.EXE Visual Basic 5.0 Run-Time Files
+	
+	This error does not affect Windows 95 OEM Service Release 2 (OSR2).
+	
+	The newer version of Oleaut32.dll is installed and used by programs, including
+	Microsoft Office 97 and later, Microsoft Internet Explorer 3.0 and later, and
+	Microsoft Visual Studio.
+	
+	
+	Setup Does Not Install Shortcuts to Start Menu
+	----------------------------------------------
+	
+	After running Setup.exe from the companion disc, the Networking Essentials,
+	Second Edition folder on the Start menu does not contain any shortcuts.
+	
+	Use Windows Explorer to access the files you want from the Networking Essentials
+	folder. By default, this folder is C:\Netess.
+	
+	
+	Demonstration Files and Labs Do Not Match Text
+	----------------------------------------------
+	
+	Several of the lab executable files included on the CD-ROM do not match the
+	Networking Essentials, Second Edition text.
+	
+	Microsoft Press has prepared a set of corrected lab directions that will match
+	the executable files included on the CD-ROM. These lab directions are in
+	Microsoft Word 95 format and can be viewed using Microsoft Word 95, Word 97, or
+	Microsoft Wordpad.
+	
+	The following file is available for download from the Microsoft Download Center:
+	
+	  Ne2labs.exe
+	  (http://download.microsoft.com/download/MSPressPub/mspress/2.0/W9XNT4/EN-US/Ne2labs.exe)
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. Once posted, the file is housed on secure
+	servers that prevent any unauthorized changes to the file.
+	
+	
+	
+	Videos Do Not Work on 1280 x 1024 Displays
+	------------------------------------------
+	
+	The lab files contain AVI video files that do not play properly on high display
+	resolutions (1280 x 1024 and higher).
+	
+	
+	Readme.txt Missing from CD-ROM
+	------------------------------
+	
+	The Readme.txt mentioned on page xxix of the book is missing.
+	
+	No Readme.txt file was created for the first printing of this title. The
+	Readme.txt file created for the second printing is available below. Please note
+	that some errors mentioned in this Knowledge Base article were fixed in the
+	second printing. These errors are not listed in the Readme.txt file.
+	
+	The following file is available for download from the Microsoft Download Center:
+	
+	  Nereadme.exe
+	  (http://download.microsoft.com/download/MSPressPub/mspress/2.1/W9XNT4/EN-US/Nereadme.exe)
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. Once posted, the file is housed on secure
+	servers that prevent any unauthorized changes to the file.
+	
+	
+	
+	Videos Do Not Have Sound
+	------------------------
+	
+	When you play one of the demonstration files included on the companion disc, you
+	will not hear any sound. The demonstration files were designed to be compatible
+	with computers that do not include sound cards. Therefore, the demonstration
+	files do not include sound.
+	
+	
+	Demo03.exe: Small Typo on Screen 6
+	----------------------------------
+	
+	In Demo 03 ("Topologies"), Screen 6 ("Bus Topology") has the following text:
+	"Computer 6 has another signal for Computer 1...".
+	
+	However, on the video, what is shown is a signal emanating from Computer 6 and
+	going to Computer 2. All the other computers, including Computer 1, in the bus
+	indicate "Not Me!", and Computer 2 indicates "Mine!"
+	
+	The text on this screen should be corrected. "for Computer 1" should be changed
+	to "for Computer 2", so that text and video match. This will also match previous
+	screens in the Demo where Computer 6 sends to Computer 2.
+	
+	
+	Demo21.exe: Slide 3 Screen Shot From NT 3.51
+	--------------------------------------------
+	
+	The third screen shot seen in Demo21.exe is from Microsoft Windows NT 3.51, not
+	Microsoft Windows NT 4.0. This screen shot will be updated with the equivalent
+	Microsoft Windows NT 4.0 screen shot in future reprints and editions.
+	
+	
+	Figure 3.22 and Demo21.exe Show NT 3.5 and describe NT 4.0
+	----------------------------------------------------------
+	
+	Note: this figure and the demo are not related in the book. However, they
+	demonstrate the same problem.
+	
+	Page 219 shows a screen capture of the Windows NT Server Setup program. The text
+	describes installation of Windows NT Server 4.0, but the screen capture does not
+	describe NT 4.0 (titles in title bars are centered, for example).
+	
+	Demo 21 shows a number of screen captures which illustrate the Performance
+	Monitor. Twelve of the screen captures do not illustrate NT Server 4.0, although
+	throughout the book, references to NT Server 4.0 are made.
+	
+	
+	Content For Lab Help Files Is Based On NT 3.51
+	----------------------------------------------
+	
+	The content for the Lab Help files is based on Microsoft Windows NT 3.51.
+	Therefore, some of the information is outdated with respects to NT 4.0.
+	
+	
+	Microsoft Press is committed to providing informative and accurate books. All
+	comments and corrections listed above are ready for inclusion in future
+	printings of this book. If you have a later printing of this book, it may
+	already contain most or all of the above corrections.
+	
+	Additional query words: press ms_press 1-57231-527-X 578 578B 70-058 self- paced exam kit
+	
+	======================================================================
+	Keywords          : kbdocerr 
+	Technology        : kbMSPressSearch
+	Version           : :
+	
+	=============================================================================
+	

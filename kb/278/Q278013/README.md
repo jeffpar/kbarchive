@@ -1,0 +1,91 @@
+---
+layout: page
+title: "Q278013: BUG: ASP Error 80070005 When You Create a Visual Basic Component"
+permalink: kb/278/Q278013/
+---
+
+## Q278013: BUG: ASP Error 80070005 When You Create a Visual Basic Component
+
+	Article: Q278013
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 6.0
+	Operating System(s): 
+	Keyword(s): kberrmsg kbASP kbCOMt kbVBp600bug kbGrpDSASP kbDSupport kbBug kbISS
+	Last Modified: 27-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+	- Microsoft Internet Information Server 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you instantiate a Visual Basic component from an Active Server Pages (ASP)
+	page, you may receive the following error:
+	
+	  Server object error 'ASP 0178 : 80070005'
+	  Server.CreateObject Access Error
+	
+	  The call to Server.CreateObject failed while checking permissions. Access is
+	  denied to this object.
+	
+	With Visual Studio 6.0 Service Pack 5 (SP5), you may receive the following error
+	message:
+	
+	  Error number: -2147024891
+	
+	  ASP 0178 Server.CreateObject Access Error
+	  The call to Server.CreateObject failed while checking permissions.
+	
+	This error may occur after you install a new Visual Basic component on your Web
+	server using a Standard Setup Package that was created on a computer with
+	Microsoft Visual Studio 6.0 SP4 or SP5.
+	
+	CAUSE
+	=====
+	
+	The authenticated user for the Visual Basic (VB) run-time file (Msvbvm60.dll)
+	does not have sufficient permissions. The authenticated user is the
+	IUSR_computername account when you use anonymous access or the user that is
+	authenticated with the Web page.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, assign Windows NT File System (NTFS) Read and Execute
+	file permissions to the Everyone group (or to the appropriate users) for VB run
+	time (Msvbvm60.dll). VB run time is usually located in the Winnt\System32
+	folder.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article.
+	
+	MORE INFORMATION
+	================
+	
+	When you use the Standard Setup Package to update VB run time on the Web server,
+	the setup application replaces the existing VB run time with the updated version
+	when you restart your computer. In addition, the setup application replaces the
+	NTFS file permissions for the Everyone group with the user who installs the new
+	application. Because a Visual Basic component depends on VB run time, when you
+	try to create your component, the CreateObject method fails due to insufficient
+	permissions to VB run time.
+	
+	Additional query words: ASP 0178 80070005 -2147024891 runtime
+	
+	======================================================================
+	Keywords          : kberrmsg kbASP kbCOMt kbVBp600bug kbGrpDSASP kbDSupport kbBug kbISS 
+	Technology        : kbVBSearch kbiisSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600
+	Version           : :6.0
+	Issue type        : kbbug
+	Solution Type     : kbnofix
+	
+	=============================================================================
+	

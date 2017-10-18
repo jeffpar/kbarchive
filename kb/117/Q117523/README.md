@@ -1,0 +1,336 @@
+---
+layout: page
+title: "Q117523: List of Major CD-ROM Manufacturers (A-C)"
+permalink: kb/117/Q117523/
+---
+
+## Q117523: List of Major CD-ROM Manufacturers (A-C)
+
+	Article: Q117523
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 04-FEB-2002
+	
+	SUMMARY
+	=======
+	
+	The following is a list of some of the major CD-ROM manufacturers. Phone numbers
+	and specifications are included.
+	
+	
+	CD-ROM DRIVE MANUFACTURERS
+	--------------------------
+	
+	Acculogic:
+	
+	Model: CD Porta-Drive Model 4101
+	Phone: (714) 454-2441
+	Mounting: Int/Ext
+	Adapter Card: 8-bit/16-bit
+	Access Time (ms): 320
+	Data Transfer Rate (k/sec): 300
+	Transfer Buffer Size (k): 64
+	Speed: Single
+	MPC Compatible: Y
+	Works with Audio CDs: Y
+	Photo CD Compatible: Y
+	Single/Multi Session: Both
+	Drive Capacity:
+	
+	Acculogic:
+	
+	Model: CD Porta-Drive Model T3401
+	Phone: (714) 454-2441
+	Mounting: Int/Ext
+	Adapter Card: 8-bit/16-bit
+	Access Time (ms): 200
+	Data Transfer Rate (k/sec): 330
+	Transfer Buffer Size (k): 256
+	Speed: Double
+	MPC Compatible: Y
+	Works with Audio CDs: Y
+	Photo CD Compatible: Y
+	Single/Multi Session: Both
+	Drive Capacity:
+	
+	Acculogic:
+	
+	Model: HomePort/CD
+	Phone: (714) 454-2441
+	Mounting: Ext
+	Adapter Card: N/A
+	Access Time (ms): 290
+	Data Transfer Rate (k/sec): 150
+	Transfer Buffer Size (k): 128
+	Speed: Single
+	MPC Compatible:
+	Works with Audio CDs: Y
+	Photo CD Compatible: Y
+	Single/Multi Session: Both
+	Drive Capacity:
+	
+	CD Technology:
+	
+	Model: CD Porta-Drive
+	Phone:
+	Mounting: Int/Ext
+	Adapter Card: SCSI-II
+	Access Time (ms): 325
+	Data Transfer Rate (k/sec): 150
+	Transfer Buffer Size (k): 64
+	Speed:
+	MPC Compatible:
+	Works with Audio CDs:
+	Photo CD Compatible:
+	Single/Multi Session:
+	Drive Capacity: 600-683
+	
+	CD-ROM Inc.:
+	
+	Model: CRI-1000
+	Phone:
+	Mounting: INt/Ext
+	Adapter Card: SCSI, AT, IDE, Prop
+	Access Time (ms): 350
+	Data Transfer Rate (k/sec): 150
+	Transfer Buffer Size (k): 64
+	Speed:
+	MPC Compatible:
+	Works with Audio CDs:
+	Photo CD Compatible:
+	Single/Multi Session:
+	Drive Capacity: 660
+	
+	Chinon America:
+	
+	Model: CDA-431
+	Phone: (310) 533-0274
+	Mounting: Ext
+	Adapter Card: SCSI
+	Access Time (ms): 350
+	Data Transfer Rate (k/sec): 150
+	Transfer Buffer Size (k): 32
+	Speed:
+	MPC Compatible:
+	Works with Audio CDs:
+	Photo CD Compatible:
+	Single/Multi Session:
+	Drive Capacity: 600
+	
+	Chinon America:
+	
+	Model: CDA-435
+	Phone: (310) 533-0274
+	Mounting: Ext
+	Adapter Card: SCSI
+	Access Time (ms): 350
+	Data Transfer Rate (k/sec): 150
+	Transfer Buffer Size (k): 64
+	Speed:
+	MPC Compatible:
+	Works with Audio CDs:
+	Photo CD Compatible:
+	Single/Multi Session:
+	Drive Capacity:
+	
+	Chinon America:
+	
+	Model: CDA-435 For Mac
+	Phone: (310) 533-0274
+	Mounting: Ext
+	Adapter Card: SCSI
+	Access Time (ms): 350
+	Data Transfer Rate (k/sec): 150
+	Transfer Buffer Size (k): 64
+	Speed: Single
+	MPC Compatible: Y
+	Works with Audio CDs: Y
+	Photo CD Compatible: Y
+	Single/Multi Session:
+	Drive Capacity:
+	
+	Chinon America:
+	
+	Model: CDC-435 For Mac
+	Phone: (310) 533-0274
+	Mounting: Ext
+	Adapter Card: SCSI
+	Access Time (ms): 350
+	Data Transfer Rate (k/sec): 150
+	Transfer Buffer Size (k): 64
+	Speed: Single
+	MPC Compatible: Y
+	Works with Audio CDs: Y
+	Photo CD Compatible: Y
+	Single/Multi Session:
+	Drive Capacity:
+	
+	Chinon America:
+	
+	Model: CDC-435 For PC
+	Phone: (310) 533-0274
+	Mounting: Ext
+	Adapter Card: SCSI
+	Access Time (ms): 350
+	Data Transfer Rate (k/sec): 150
+	Transfer Buffer Size (k): 64
+	Speed: Single
+	MPC Compatible: Y
+	Works with Audio CDs: Y
+	Photo CD Compatible: Y
+	Single/Multi Session:
+	Drive Capacity:
+	
+	Chinon America:
+	
+	Model: CDS-435 For PC
+	Phone: (310) 533-0274
+	Mounting: Int
+	Adapter Card: SCSI
+	Access Time (ms): 350
+	Data Transfer Rate (k/sec): 150
+	Transfer Buffer Size (k): 64
+	Speed: Single
+	MPC Compatible: Y
+	Works with Audio CDs: Y
+	Photo CD Compatible: Y
+	Single/Multi Session:
+	Drive Capacity: 680
+	
+	Chinon America:
+	
+	Model: CDS-535 For PC
+	Phone: (310) 533-0274
+	Mounting: Int
+	Adapter Card: SCSI-II
+	Access Time (ms): 220
+	Data Transfer Rate (k/sec): 300
+	Transfer Buffer Size (k): 256
+	Speed: Double
+	MPC Compatible: Y
+	Works with Audio CDs: Y
+	Photo CD Compatible: Y
+	Single/Multi Session: Multi
+	Drive Capacity:
+	
+	Chinon America:
+	
+	Model: CDX-535 For PC
+	Phone: (310) 533-0274
+	Mounting: Ext
+	Adapter Card: SCS-II
+	Access Time (ms): 220
+	Data Transfer Rate (k/sec): 300
+	Transfer Buffer Size (k): 256
+	Speed: Double
+	MPC Compatible: Y
+	Works with Audio CDs: Y
+	Photo CD Compatible: Y
+	Single/Multi Session: Multi
+	Drive Capacity:
+	
+	Chinon America:
+	
+	Model: DC-431
+	Phone: (310) 533-0274
+	Mounting: Ext
+	Adapter Card: SCSI
+	Access Time (ms): 350
+	Data Transfer Rate (k/sec): 150
+	Transfer Buffer Size (k): 32
+	Speed:
+	MPC Compatible:
+	Works with Audio CDs:
+	Photo CD Compatible:
+	Single/Multi Session:
+	Drive Capacity: 680
+	
+	Chinon America:
+	
+	Model: DC-435
+	Phone: (310) 533-0274
+	Mounting: Int/Ext
+	Adapter Card: SCSI
+	Access Time (ms): 350
+	Data Transfer Rate (k/sec): 150
+	Transfer Buffer Size (k): 64
+	Speed:
+	MPC Compatible:
+	Works with Audio CDs:
+	Photo CD Compatible:
+	Single/Multi Session:
+	Drive Capacity: 600
+	
+	Chinon America:
+	
+	Model: DS-431
+	Phone: (310) 533-0274
+	Mounting: Ext
+	Adapter Card: SCSI
+	Access Time (ms): 350
+	Data Transfer Rate (k/sec): 150
+	Transfer Buffer Size (k): 32
+	Speed:
+	MPC Compatible:
+	Works with Audio CDs:
+	Photo CD Compatible:
+	Single/Multi Session:
+	Drive Capacity: 680
+	
+	Chinon America:
+	
+	Model: DS-435
+	Phone: (310) 533-0274
+	Mounting: Ext
+	Adapter Card: SCSI
+	Access Time (ms): 350
+	Data Transfer Rate (k/sec): 150
+	Transfer Buffer Size (k): 64
+	Speed:
+	MPC Compatible:
+	Works with Audio CDs:
+	Photo CD Compatible:
+	Single/Multi Session:
+	Drive Capacity: 600
+	
+	Chinon America:
+	
+	Model: DX-431
+	Phone: (310) 533-0274
+	Mounting: Ext
+	Adapter Card: SCSI
+	Access Time (ms): 350
+	Data Transfer Rate (k/sec): 150
+	Transfer Buffer Size (k): 32
+	Speed:
+	MPC Compatible:
+	Works with Audio CDs:
+	Photo CD Compatible:
+	Single/Multi Session:
+	Drive Capacity: 680
+	
+	Chinon America:
+	
+	Model: DX-435
+	Phone: (310) 533-0274
+	Mounting: Ext
+	Adapter Card: SCSI
+	Access Time (ms): 350
+	Data Transfer Rate (k/sec): 150
+	Transfer Buffer Size (k): 64
+	Speed:
+	MPC Compatible:
+	Works with Audio CDs:
+	Photo CD Compatible:
+	Single/Multi Session:
+	Drive Capacity: 600
+	
+	Additional query words: kbhowto multi media multimedia multi-media cd rom cdrom disc disk compact kbmm
+	
+	======================================================================
+	Keywords          :  
+	
+	=============================================================================
+	

@@ -1,0 +1,124 @@
+---
+layout: page
+title: "Q324115: Building XML Web Services for the Microsoft .NET Platform Commen"
+permalink: kb/324/Q324115/
+---
+
+## Q324115: Building XML Web Services for the Microsoft .NET Platform Commen
+
+	Article: Q324115
+	Product(s): Microsoft Press
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbdocfix kbdocerr
+	Last Modified: 28-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- MSPRESS Building XML Web Services for the Microsoft.NET Platform, ISBN 0-7356-1406-7 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article contains comments, corrections, and information about known errors
+	relating to the Microsoft Press book Building XML Web Services for the Microsoft
+	.NET Platform, ISBN 0-7356-1406-7.
+	
+	The following topics are covered:
+	
+	- Page 13: Missing Three Steps In Exercise
+	
+	- Page 23: Error In WebFileUtil Code Sample
+	
+	- Page 337: Warning Event Should Be Error Event
+	
+	- Page 355: Error Regarding Failover Cluster
+	
+	MORE INFORMATION
+	================
+	
+	Page 13: Missing Three Steps In Exercise
+	----------------------------------------
+	
+	There are three steps missing from the top of page 13. The following three steps
+	should be inserted at the top of the page:
+	
+	"3.<A0><A0>Open Order.aspx in HTML mode by double-clicking on the filename in Solution
+	Explorer and then using the buttons in the lower left corner of the file?s
+	working window to toggle between Design mode and HTML mode.
+	
+	4.<A0><A0>Modify the Inherits attribute in the .aspx file?s header to read
+	Commerce.Order. After the Web project has been set up, switch Order.aspx back to
+	Design mode so you can add some controls to the Web Form.
+	
+	5.<A0><A0>Open the Toolbox, and add the following Web Form controls onto the Web Form?s
+	design surface by double-clicking each control: label, text box, calendar
+	control, and button."
+	
+	The existing step 3 at the top of page 13 should be renumbered to step 6.
+	
+	
+	Page 23: Error In WebFileUtil Code Sample
+	-----------------------------------------
+	
+	There is an error in the code sample on page 23.
+	
+	Change:
+	
+	  string source = args[1];
+	  string destination = source;
+	
+	To:
+	
+	  string source = "";
+	  string destination = "";
+	  if (args.Length == 2)
+	  {
+	        source = args[1];
+	        destination = source;
+	  }
+	
+	
+	Page 337: Warning Event Should Be Error Event
+	---------------------------------------------
+	
+	There is an error in paragraph 3 on page 337.
+	
+	Change:
+	"This code writes a warning event to the Application Log."
+	
+	To:
+	"This code writes an error event to the Application Log."
+	
+	
+	Page 355: Error Regarding Failover Cluster
+	------------------------------------------
+	
+	There is an error in the Highly Available Scale-Up Resources section on page
+	355.
+	
+	Change:
+	"To achieve high scalability for a resource hosted on a single server, you can
+	use a failover cluster."
+	
+	To:
+	"To achieve high availability for a resource hosted on a single server, you can
+	use a failover cluster."
+	
+	
+	Microsoft Press is committed to providing informative and accurate books. All
+	comments and corrections listed above are ready for inclusion in future
+	printings of this book. If you have a later printing of this book, it may
+	already contain most or all of the above corrections.
+	
+	Additional query words: 0-7356-1406-7 SHORT .NET XML
+	
+	======================================================================
+	Keywords          : kbdocfix kbdocerr 
+	Version           : :
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

@@ -1,0 +1,112 @@
+---
+layout: page
+title: "Q191774: How to Obtain Dmacheck.exe for Windows NT"
+permalink: kb/191/Q191774/
+---
+
+## Q191774: How to Obtain Dmacheck.exe for Windows NT
+
+	Article: Q191774
+	Product(s): Microsoft Windows NT
+	Version(s): 4.0
+	Operating System(s): 
+	Keyword(s): kbfile kbgraphxlinkcritical
+	Last Modified: 02-JAN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 4.0 
+	- Microsoft Windows NT Workstation version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Windows NT 4.0 Service Pack 3 includes a utility called DMACheck (Dmacheck.exe)
+	that lets you view the (Direct Memory Access) DMA usage on your computer.
+	
+	MORE INFORMATION
+	================
+	
+	The following information is listed for each IDE/ATAPI Channel detected:
+	
+	Current DMA Usage
+	-----------------
+	
+	This value indicates whether DMA is currently being used for each channel. There
+	are 3 possible values:
+	
+	- DMA In Use indicates that DMA transfers are being used on this channel.
+	
+	- DMA Not In Use indicates that DMA transfers are not being used on this
+	  channel and that the IDE/ATAPI driver is defaulting to Programmed I/O (PIO)
+	  transfer methods.
+	
+	- No IDE/ATAPI Devices Detected indicates that the utility could not read the
+	  status of that channel from the registry, either because there was no
+	  IDE/ATAPI device present or because the current user has insufficient
+	  privileges to access the registry. These settings cannot be changed and are
+	  dependent on the DMA support provided by your hardware and the value of the
+	  DMA detection settings.
+	
+	DMA Detection Status
+	--------------------
+	
+	This setting indicates whether the ATAPI driver will attempt to detect and use
+	DMA support on a given channel.
+	
+	If DMA detection is disabled on a channel, the ATAPI driver defaults to PIO
+	transfers on that channel. If DMA detection is enabled on a channel, the ATAPI
+	driver queries the hardware for DMA support and if it is detected uses DMA for
+	data transfers.
+	
+	If the hardware does not correctly support DMA transfers, PIO is used even if DMA
+	detection is enabled.
+	
+	When the utility initially starts, radio buttons indicate the current settings
+	for each channel. To change the detection status, click the preferred setting
+	and it is saved when you exit DMACheck.
+	
+	How to Obtain DMACheck
+	----------------------
+	
+	You can obtain DMACheck from the following folders on the Windows NT 4.0 Service
+	Pack 3 compact disc:
+	
+	- Support\Utils\i386
+	
+	- Support\Utils\Alpha
+	
+	For additional information about how to obtain the latest Service Pack, click the
+	article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q152734 How To Obtain the Latest Windows NT 4.0 Service Pack
+	
+	The following files are available for download from the Microsoft Download
+	Center:
+	
+	  Alpha: DownloadDownload Dmachcka.exe now
+	
+	  Intel: DownloadDownload Dmachcki.exe now
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. Once posted, the file is housed on secure
+	servers that prevent any unauthorized changes to the file.
+	
+	Additional query words: sp3
+	
+	======================================================================
+	Keywords          : kbfile kbgraphxlinkcritical 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+	Version           : :4.0
+	Hardware          : ALPHA x86
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

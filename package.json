@@ -1,0 +1,22 @@
+{
+  "name": "kbarchive",
+  "version": "1.0.0",
+  "description": "Microsoft KnowledgeBase Archive",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffpar/kbarchive.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeffpar/kbarchive/issues"
+  },
+  "homepage": "https://github.com/jeffpar/kbarchive#readme",
+  "devDependencies": {
+    "mkdirp": "^0.5.1"
+  }
+}

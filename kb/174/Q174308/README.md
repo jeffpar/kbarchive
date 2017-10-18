@@ -1,0 +1,239 @@
+---
+layout: page
+title: "Q174308: Frequently Asked Questions About Microsoft Press Support"
+permalink: kb/174/Q174308/
+---
+
+## Q174308: Frequently Asked Questions About Microsoft Press Support
+
+	Article: Q174308
+	Product(s): Microsoft Press
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbpolicykbfaq
+	Last Modified: 15-FEB-2002
+	
+	SUMMARY
+	=======
+	
+	This article answers our most frequently asked questions about the policies and
+	services of Microsoft Press Technical Support.
+	
+	- Where can I find information on book errors and corrections?
+	
+	- Who do I contact at Microsoft Press about questions or comments on book
+	  content?
+	
+	- How can I get a replacement for a damaged book?
+	
+	- How can I get a replacement for a damaged or missing CD-ROM?
+	
+	- Who do I contact at Microsoft Press about problems running a book's companion
+	  CD-ROM?
+	
+	- Who do I contact about Microsoft software product support?
+	
+	- Who do I contact at Microsoft Press about pre-sales or ordering information?
+	
+	- Where can I find pre-sales information on Microsoft software products?
+	
+	- Where can I find information on Microsoft certification programs?
+	
+	- Who do I contact with a book idea?
+	
+	
+	MORE INFORMATION
+	================
+	
+	Where can I find information on book errors and corrections?
+	------------------------------------------------------------
+	
+	Microsoft Press provides correction information to the public through the online
+	Microsoft Knowledge Base. To see if your question has already been answered,
+	please check the Knowledge Base via the Microsoft Press Web site:
+	
+	  http://www.microsoft.com/mspress/support/
+	
+	Who do I contact at Microsoft Press about questions or comments on book content?
+	--------------------------------------------------------------------------------
+	
+	Please search the Microsoft Knowledge Base prior to submitting your questions or
+	comments. Microsoft Press provides support information, including a search
+	facility for known errors or corrections, at the following Web site:
+	
+	  http://www.microsoft.com/mspress/support/
+	
+	For content issues not covered by this Web site, readers can send comments and
+	questions to the Microsoft Press Technical Support Team. Three email aliases are
+	provided, each focused on specific product segments:
+	
+	  TKINPUT@microsoft.com (Training Kits and Readiness Reviews)
+	  RKINPUT@microsoft.com (Resource Kits)
+	  MSPINPUT@microsoft.com (all other MS Press books)
+	
+	The email addresses for your book can typically be found on the Copyright page or
+	in the Introduction.
+	
+	For Academic Learning Series (ALS) titles, you should contact:
+	
+	  TKINPUT@microsoft.com
+	
+	For Microsoft Press Interactive titles, contact 425-635-7033 for support. These
+	titles include:
+	
+	- Online Training Kits
+	
+	- Step-by-Step Interactive products
+	
+	- Starts Here products
+	
+	- Learn Now products
+	
+	- Microsoft Enterprise Learning Library (MELL) eBooks
+	
+	NOTE: Microsoft Press does not have any connection with Microsoft Product
+	documentation. For Microsoft product-specific assistance, please contact
+	Microsoft Product Support Services Microsoft Product Support Services. If you
+	need help picking the best Microsoft Press book for your needs, please call
+	Microsoft Press Sales at 1-800-MS-PRESS.
+	
+	How can I get a replacement for my damaged book?
+	------------------------------------------------
+	
+	If your Microsoft Press book has missing, illegible, or improperly sequenced
+	pages, you can exchange it by following this procedure:
+	
+	1. If you have NOT opened any CD-ROM or disk pack that came with the book,
+	  please exchange the book for a new copy at the point of purchase.
+	
+	2. If you HAVE opened the CD-ROM or disk pack, please call 1-800-MS-PRESS in the
+	  United States. Outside the United States, please contact your local Microsoft
+	  Press distributor. A listing of these distributors can be found at
+	
+	  http://www.microsoft.com/mspress/worldwide/
+	
+	How can I get a replacement for my damaged disk or missing CD-ROM?
+	------------------------------------------------------------------
+	
+	If your CD-ROM is clearly defective (cracked, badly warped, contains a deep
+	scratch, etc.), or is missing, you can exchange it for a replacement CD-ROM in
+	the United States by calling Microsoft Press at 1-800-MS-PRESS.
+	
+	If you are outside of the United States, please contact your local Microsoft
+	Press distributor. For a list of distributors, please connect to the Microsoft
+	Press Web site at
+	
+	  http://www.microsoft.com/mspress/worldwide/
+	
+	and look for the English Language Distributors list.
+	
+	IMPORTANT: Replacing the CD-ROM or floppy disk will not solve any software
+	related issues. Therefore, replacement should be considered only if the Setup
+	program fails and if there are no other known problems posted on the Microsoft
+	Press Support Web site at:
+	
+	  http://www.microsoft.com/mspress/support/
+	
+	Unfortunately we currently cannot provide replacement disk contents via the Web
+	due to legal considerations. However, individual file patches are posted on the
+	Internet when appropriate. Please refer to the Microsoft Press Support Web site
+	for further information.
+	
+	Who do I contact at Microsoft Press about problems running a book's companion CD-ROM?
+	-------------------------------------------------------------------------------------
+	
+	Please search the Microsoft Knowledge Base prior to submitting your questions or
+	comments. Microsoft Press provides support information, including a search
+	facility for known errors or corrections, at the following Web site:
+	
+	  http://www.microsoft.com/mspress/support/
+	
+	For companion CD issues not covered by this Web site, readers can send comments
+	and questions to the Microsoft Press Technical Support Team. Three email aliases
+	are provided, each focused on specific product segments.
+	
+	  TKINPUT@microsoft.com (Training Kits, Readiness Reviews and Academic Learning
+	  Series (ALS) books)
+	  RKINPUT@microsoft.com (Resource Kits)
+	  MSPINPUT@microsoft.com (all other MS Press books)
+	
+	The email addresses for your book can typically be found on the Copyright page or
+	in the Introduction.
+	
+	Who do I contact for a Microsoft software support?
+	--------------------------------------------------
+	
+	If your question is about a Microsoft software product, rather than about the
+	content of a Microsoft Press book, please search the Microsoft Knowledge Base
+	at:
+	
+	  http://support.microsoft.com/directory/
+	
+	In the United States, for Microsoft product support issues not covered by this
+	Web site, please contact Microsoft Support Network Sales at 800-936-3500 for a
+	list of Microsoft Product Support Services phone numbers and other support
+	resources.
+	
+	Outside the United States, for support information specific to your location,
+	please refer to the worldwide Web site pull-down menu on the Microsoft Product
+	Support Services Web site for the Web site specific to your country:
+	
+	  http://support.microsoft.com/directory/
+	
+	Who do I contact at Microsoft Press about pre-sales or ordering information?
+	----------------------------------------------------------------------------
+	
+	If you have pre-sales questions about Microsoft Press books, or if you want to
+	order Microsoft Press books, contact Microsoft Press sales at 1-800-MS-PRESS.
+	Microsoft Press Sales can provide information on the following topics:
+	
+	- What Microsoft Press book covers a particular Microsoft product or computer
+	  topic?
+	
+	- Does a Microsoft Press book have information about a particular topic?
+	
+	Additional information can be found at the Microsoft Press Web site:
+	
+	  http://www.microsoft.com/mspress/
+	
+	NOTE: Microsoft Press does not have any connection with Microsoft Product
+	documentation. If you need help picking the best Microsoft Press book for your
+	needs, please call Microsoft Press Sales at 1-800-MS-PRESS.
+	
+	Where can I find pre-sales information for Microsoft software products?
+	
+	-----------------------------------------------------------------------
+	
+	Questions regarding Microsoft software features and ordering information can be
+	found on the Microsoft Web site at:
+	
+	  http://www.microsoft.com/
+	
+	In the United States of America, you can also contact the Microsoft Sales
+	Information Center at 800-426-9400. Outside the United States, please contact
+	your local Microsoft distributor or subsidiary (refer to the Microsoft Web site
+	for more information).
+	
+	Where can I find information on Microsoft certification programs?
+	-----------------------------------------------------------------
+	
+	Microsoft offers a range of certifications focused on specific areas of expertise
+	and job skills. Information on these certifications can be found at:
+	
+	  http://www.microsoft.com/traincert/default.asp
+	
+	Who do I contact with a book idea?
+	----------------------------------
+	
+	If you're an aspiring author, check out our book guidelines book guidelines and
+	learn how you can present your ideas. After you contact bookidea@microsoft.com,
+	we'll make sure you are matched up with the appropriate editor.
+	
+	Additional query words: press ms_press
+	
+	======================================================================
+	Keywords          : kbpolicy kbfaq
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

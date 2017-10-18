@@ -1,0 +1,98 @@
+---
+layout: page
+title: "Q184550: XCLN: Outlook Deployment Kit (ODK) Availability"
+permalink: kb/184/Q184550/
+---
+
+## Q184550: XCLN: Outlook Deployment Kit (ODK) Availability
+
+	Article: Q184550
+	Product(s): Microsoft Exchange
+	Version(s): 5.5,98
+	Operating System(s): 
+	Keyword(s): kbdta
+	Last Modified: 13-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Outlook 98 Deployment Kit 
+	- Microsoft Exchange Server, version 5.5 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The Microsoft Outlook 98 Deployment Kit (ODK) is available through Microsoft's
+	Select, Open, MSDN (Microsoft Developer Network), and Microsoft Certified
+	Partners channels. The ODK is not available for Web download or retail purchase;
+	however, all of the documentation for the ODK is posted on the Web.
+	
+	
+	MORE INFORMATION
+	================
+	
+	The ODK provides the tools and information administrators need to effectively
+	deploy and support Microsoft Outlook 98. The ODK supports installing and
+	customizing Outlook, optimizing features and functions, and understanding how
+	Outlook interacts with other mail systems and Microsoft products.
+	
+	The ODK includes:
+	
+	- Comprehensive documentation for administrators who are deploying and
+	  administering Outlook.
+	
+	- The Outlook 98 Deployment Wizard, a powerful graphical tool that allows
+	  administrators to easily customize, deploy, and maintain Outlook from a
+	  central location.
+	
+	- Companion tools, utilities, and sample files that save time.
+	
+	The ODK is available through the following:
+	
+	- Microsoft Certified Partner Full subscription (Microsoft Certified Partner CD
+	  packages by mail)
+	
+	- MCSD Full subscription (same as above MCSD package)
+	
+	- Open License. If the ODK is obtained using an Open license, customers can
+	  contact the place they purchased their Exchange Server software from to
+	  obtain it or they can call Microsoft Worldwide Fulfillment at 800-248-0655.
+	
+	- The ODK was released with Exchange Server 5.5 Service Pack 1.
+	
+	
+	  Outlook 98 packages built with ODK from Exchange Server 5.5 Service Pack 1 CD
+	  install Outlook 98 with 128-bit encryption.
+	
+	  The CD labeled 0998 Part No. X03-91035 contains the following disclaimer:
+	
+	  Unlawful to export from the United States or Canada without an approved
+	  Department of Commerce export license.
+	
+	The ODK was designed around Exchange Server and can not be obtained unless the
+	customer has Exchange Server or a subscription to the above services.
+	
+	REFERENCES
+	==========
+	
+	For additional information on the ODK, please visit the following Microsoft Web
+	site:
+	
+	  http://www.microsoft.com/office/outlook/facts.htm
+	
+	For full Outlook Deployment Kit documentation, please visit the following
+	Microsoft Web site:
+	
+	  http://www.microsoft.com/office/outlook/O98DKdoc.htm
+	
+	Additional query words: ol98
+	
+	======================================================================
+	Keywords          : kbdta 
+	Technology        : kbOutlookSearch kbExchangeSearch kbExchange550 kbZNotKeyword2 kbOutlookDeployKitSearch kbOutlook98DeployKit
+	Version           : :5.5,98
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

@@ -1,0 +1,52 @@
+---
+layout: page
+title: "Q199992: SMS: Comment Entered in Secondary Site Creation Does Not Appear"
+permalink: kb/199/Q199992/
+---
+
+## Q199992: SMS: Comment Entered in Secondary Site Creation Does Not Appear
+
+	Article: Q199992
+	Product(s): Microsoft Systems Management Server
+	Version(s): winnt:2.0
+	Operating System(s): 
+	Keyword(s): kbsetup kbsms200 kbsms200bug smssetup
+	Last Modified: 27-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server version 2.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	During the creation of a Systems Management Server 2.0 secondary site server, a
+	comment can be entered for the site on the Site Identity dialog box. However,
+	after the site is installed, no comment is shown when you view the Site
+	Properties through the Systems Management Server Administrator console.
+	
+	CAUSE
+	=====
+	
+	This behavior occurs if the site is installed using the Secondary Site Creation
+	Wizard from the Primary site server or from the Systems Management Serve 2.0 CD.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Systems Management Server
+	version 2.0.
+	
+	Additional query words: prodsms secondary site sms200
+	
+	======================================================================
+	Keywords          : kbsetup kbsms200 kbsms200bug smssetup 
+	Technology        : kbSMSSearch kbSMS200
+	Version           : winnt:2.0
+	Issue type        : kbbug
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

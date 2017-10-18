@@ -1,0 +1,100 @@
+---
+layout: page
+title: "Q161696: XCLN: Unable to Open DCX (FAX) Attachments"
+permalink: kb/161/Q161696/
+---
+
+## Q161696: XCLN: Unable to Open DCX (FAX) Attachments
+
+	Article: Q161696
+	Product(s): Microsoft Exchange
+	Version(s): WINDOWS:4.0
+	Operating System(s): 
+	Keyword(s): kbProgramming
+	Last Modified: 14-APR-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Windows NT client, version 4.0 
+	- Microsoft Exchange Windows 95/98 client, version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When double-clicking on an attachment with a file extension of DCX (Fax
+	document), the following error message may occur:
+	
+	  Program Not Found
+	  Windows cannot find Faxview.exe.
+	  This program is needed for opening files of type 'DCX Image Document'."
+	
+	CAUSE
+	=====
+	
+	This occurs because the Microsoft Exchange client is not installing Faxview.exe
+	on computers running Windows NT 4.0, but is associating DCX file types to
+	Faxview.exe. The Microsoft Exchange client Setup does not install Faxview
+	because Windows 95 OSR2 and Windows NT 4.0 use the Imaging Accessory
+	(Wangimg.exe) in place of the Faxviewer Accessory.
+	
+	WORKAROUND
+	==========
+	
+	To work around this problem:
+	
+	- Associate files with a DCX extension with the appropriate fax viewing
+	  utility.
+	
+	Faxview.exe will be in the <Win95root> directory if you have elected to
+	install the Microsoft Fax Viewer component of Microsoft Fax during Windows 95
+	setup. If Faxview.exe is available, faxes can be viewed by re- associating DCX
+	files with the Faxview.exe program in the <win95root> directory. If
+	Faxview.exe is not available then the Faxviewer Accessory will need to be
+	installed from Windows 95 Setup before DCX files can be associated with
+	Faxview.exe.
+	
+	Windows 95 OSR2 and Windows NT 4.0 do not have the Faxviewer Accessory available
+	as an installable accessory. Windows 95 OSR2 and Windows NT 4.0 use the Imaging
+	Accessory (Wangimg.exe) in place of the Faxviewer Accessory. If Wangimg.exe is
+	available, faxes can be viewed by associating DCX files with the Wangimg.exe
+	program while using Windows 95 OSR2 and Windows NT 4.0. Wangimg.exe is located
+	in the Program Files\Windows NT\Accessories\ImageVue\ directory on Windows NT
+	4.0, and in the <Win95root> directory on Windows 95 OSR2. If Wangimg.exe
+	is not available, the Imaging Accessory will need to be installed from Windows
+	95 OSR2 or Windows NT 4.0 Setup before DCX files can be associated with
+	Wangimg.exe.
+	
+	MORE INFORMATION
+	================
+	
+	When the error is displayed, you will have the opportunity select the correct
+	location of Faxview.exe by clicking Locate in the error message dialog box.
+	
+	If you are using Windows 95 and have the Windows 95 Accessory Faxviewer installed
+	you can locate the program Faxview.exe in the <Win95root> directory. If
+	you are using Windows 95 and do not have the Windows 95 Accessory Faxviewer
+	installed you will not be able to locate the file Faxview.exe unless it has been
+	installed as part of another application. Windows NT 4.0 does not use the
+	Accessory Faxviewer and you will not be able to locate the file Faxview.exe
+	under Windows NT 4.0 unless it has been installed as part of another
+	application.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft Exchange version 4.0.
+	We are researching this problem and will post new information here in the
+	Microsoft Knowledge Base as it becomes available.
+	
+	
+	Additional query words: Exchange DCX FAX faxview.exe OSR2
+	
+	======================================================================
+	Keywords          : kbProgramming 
+	Technology        : kbExchangeSearch kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange400NT kbExchange400Win95
+	Version           : WINDOWS:4.0
+	
+	=============================================================================
+	

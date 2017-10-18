@@ -1,0 +1,107 @@
+---
+layout: page
+title: "Q150541: Restoring the UPS Tool and Icon in Control Panel"
+permalink: kb/150/Q150541/
+---
+
+## Q150541: Restoring the UPS Tool and Icon in Control Panel
+
+	Article: Q150541
+	Product(s): Microsoft Windows NT
+	Version(s): 3.50 3.51
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 09-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation versions 3.5, 3.51 
+	- Microsoft Windows NT Server versions 3.5, 3.51 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	When you install Powershute software from American Power Conversion (APC) on a
+	Windows NT computer, the uninterruptable power supply (UPS) icon in Control
+	Panel is replaced with an icon from APC.
+	
+	MORE INFORMATION
+	================
+	
+	APC supplies Remove.exe to remove the APC program and icon. The Windows NT UPS
+	tool and icon are not restored. To restore the UPS tool and icon, perform the
+	following steps;
+	
+	1. Run the Remove.exe program to remove the Powershute software.
+	
+	2. Expand the UPS.CP_ file from the Windows NT CD and copy it to the
+	  %SystemRoot%\System32 directory. This step is necessary even if the file is
+	  currently on the hard disk drive, because the Powershute software file needs
+	  to be replaced.
+	
+	WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+	problems that may require you to reinstall Windows NT to correct them. Microsoft
+	cannot guarantee that any problems resulting from the use of Registry Editor can
+	be solved. Use this tool at your own risk.
+	3. Save the following registry key to disk:
+	
+	HKEY_USER\DEFAULT\Control Panel\Cache\UPS.CPL
+	
+	File Size: REG_DWORD: 0x5f10
+	
+	   High File Time:  REG_DWORD: 0x1ba2b78
+	   Low File Time: REG_DWORD: 0x570f300
+	   Module Path: REG_SZ: %systemroot%\System32\UPS.CPL
+	   Number Applets: REG_DWORD: 0x1
+	
+	   Subkey: 0
+	       Applet Data: REG_DWORD: 0x64
+	       Applet Full Name: REG_SZ: &UPS
+	       Applet Name: REG_SZ: UPS
+	       Color Info: REG_BINARY:  00000000...
+	       Description:  REG_SZ: Configures the Uninterruptible Power Supply
+	       Help Context: REG_DWORD: 0x1450
+	       Help File: REG_SZ: control.hlp
+	       Icon Color: REG_BINARY: 00 00 00 00 00 00 00 00...
+	       Icon Mask:  REG_BINARY : ff ff ff ff ff ff ff ff...
+	       IconX:  REG_DWORD: 0x10
+	       IconY:  REG_DWORD: 0x10
+	       Mask Info: REG_BINARY: 00 00 00 00 20 00 00 00...
+	
+	4. Add a UPS.CPL key to the following locations and restore the saved key to
+	  these new locations. The following parameters are the defaults.
+	
+	HKEY_CURRENT_USER\Control Panel\Cache
+	HKEY_USER\"sid number"\Control Panel\Cache
+	
+	   File Size: REG_DWORD: 0x5f10
+	   High File Time:  REG_DWORD: 0x1ba2b78
+	   Low File Time: REG_DWORD: 0x570f300
+	   Module Path: REG_SZ: %systemroot%\System32\UPS.CPL
+	   Number Applets: REG_DWORD: 0x1
+	
+	HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\UPS
+	
+	ErrorControl: REG_DWORD: 0x1
+	
+	   ImagePath: REG_EXPAND: %systemroot%\System32\ups.exe
+	   ObjectName: REG_SZ: LocalSystem
+	   Start: REG_DWORD: 0x3
+	   Type: REG_DEWORD: 0x10
+	
+	Replace:American Power Conversion can be contacted at (800) 800-4272.
+	
+	The Powershute software discussed here is manufactured by Amerian Power
+	Conversion, a vendor independent of Microsoft; we make no warranty, implied or
+	otherwise, regarding these products' performance or reliability.
+	
+	Additional query words: prodnt APC
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+	Version           : 3.50 3.51
+	
+	=============================================================================
+	

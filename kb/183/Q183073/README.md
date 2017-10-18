@@ -1,0 +1,88 @@
+---
+layout: page
+title: "Q183073: XADM: Microsoft IS Generates AV in LOGON::IncrObjCount"
+permalink: kb/183/Q183073/
+---
+
+## Q183073: XADM: Microsoft IS Generates AV in LOGON::IncrObjCount
+
+	Article: Q183073
+	Product(s): Microsoft Exchange
+	Version(s): 5.5
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 05-APR-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.5 
+	-------------------------------------------------------------------------------
+	
+	
+	
+	SYMPTOMS
+	========
+	
+	Under heavy load, the Microsoft Information Store can generate an access
+	violation in LOGON::IncrObjCount if the server runs out of available memory.
+	
+	CAUSE
+	=====
+	
+	Two things coincide to cause this:
+	
+	1. The server must run out of memory so that an attempt to allocate new memory
+	  fails.
+	
+	2. The information store attempts an insert into an array (m_rgHsotVmsg) and
+	  realizes the available bytes in the array are allocated and attempts to
+	  allocate more memory for the array using PvRealloc.
+	
+	The problem:
+	A check is made to see whether the pHsotT is null. If not, the information store
+	assumes it should allocate more memory and store it in a member variable. If the
+	PvRealloc fails, the original pointer is not destroyed unless the size passed in
+	is 0. This causes a problem because the store checks to see whether the
+	_original_ pointer is NULL, and, if not, goes ahead and attempts to insert a
+	member at the out-of-bounds index.
+	
+	The call stack appears similar to the following:
+	
+	> kb
+	FramePtr  RetAddr   Param1   Param2   Param3   Function Name
+	20b8f980  0041c70e  00013d78 2d660006 00000000
+	STORE!LOGON::IncrObjCount+0x74
+	20b8f99c  0041c674  2d66a4e0 2d660006 270627a0
+	STORE!MDB::HsotInsertPunk+0x7a
+	20b8f9b4  00454514  20b8fa14 00000493 20b8faa4 STORE!UNK::EcAddToSOT+0x18
+	20b8f9dc  0046d47a  33e3ee48 20b8fa14 00000000 STORE!EcGetTableOp+0xc7
+	20b8fa1c  0040c50d  33981010 00013d79 1809f824 STORE!EcGetTable+0x116
+	00013d79  00000000  00000000 00000000 00000000 STORE!EcRpc+0x426
+	
+	m_cHsotVmsg 0x00006800
+	m_cHsotVmsgAlloc 0x00006680
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Exchange Server 5.5.
+	
+	
+	A supported fix is now available, but has not been fully regression-tested and
+	should be applied only to systems experiencing this specific problem. Unless you
+	are severely impacted by this specific problem, Microsoft recommends that you
+	wait for the next Service Pack that contains this fix. Contact Microsoft
+	Technical Support for more information.
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+	Version           : 5.5
+	Hardware          : ALPHA x86
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

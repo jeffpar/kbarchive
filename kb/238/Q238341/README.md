@@ -1,0 +1,127 @@
+---
+layout: page
+title: "Q238341: FIX: Opening a DSP or DSW File in Explorer Crashes Visual C++"
+permalink: kb/238/Q238341/
+---
+
+## Q238341: FIX: Opening a DSP or DSW File in Explorer Crashes Visual C++
+
+	Article: Q238341
+	Product(s): Microsoft C Compiler
+	Version(s): 6.0
+	Operating System(s): 
+	Keyword(s): kbservicepack kbAutomation kbVBScript kbVC kbVC600bug kbDSupport kbGrpDSTools kbNoUpdat
+	Last Modified: 11-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Double-clicking or pressing the return key with a project file (.dsp) or a
+	workspace file (.dsw) selected in Windows Explorer causes Visual C++ to crash
+	with the following error:
+	
+	  The instruction at "0x50c2b90d" referenced memory at "0x00000000". The memory
+	  could not be "read".
+	
+	NOTE: The addresses in the error message may vary depending on the operating
+	system and the service pack installed.
+	
+	CAUSE
+	=====
+	
+	This problem occurs when you have a macro file (.dsm) loaded in the Visual C++
+	integrated development environment.
+	
+	RESOLUTION
+	==========
+	
+	When opening projects or workspaces from Windows Explorer, Dynamic Data Exchange
+	(DDE) is used to open these files in a currently running instance of Visual C++.
+	If Visual C++ is not running, the program will start if you double-click a .dsp
+	or .dsw file. The presence of a macro file interferes with DDE, thereby causing
+	this crash. Follow these steps to turn off this feature for the .dsp and .dsw
+	file extensions:
+	
+	1. Start Windows Explorer.
+	
+	2. From the View menu, select Folder Options. (If you are using Windows 2000,
+	  then View is found under the Tools menu.)
+	
+	3. Click the File Types tab.
+	
+	4. Under Registered File Types, select Project File, and then click Edit. (In
+	  Windows 2000, click Advanced.)
+	
+	5. Select Open with MSDEV from the Actions list, and then click Edit.
+	
+	6. Clear the Use DDE checkbox and click OK.
+	
+	For the .dsw file extension, repeat the above steps except in Step 4 select
+	Project Workspace.
+	
+	If you want to reverse the changes you made using the above steps, then do the
+	following:
+	
+	1. Follow the first six steps described above.
+	
+	2. Select the Use DDE checkbox.
+	
+	3. Type Open("%1") in the DDE Message edit box.
+	
+	4. Type msdev in the Application edit box.
+	
+	5. Type System in the Topic edit box.
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article.
+	
+	This problem was corrected in Microsoft Visual C++ .NET.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. From the Tools menu, select Customize, then click the Add-ins and Macro Files
+	  tab and browse for an existing macro file (DSM).
+	
+	  If a macro file does not exist, then create a new one and add a Visual Basic
+	  Script macro to the file. It is essential to have some text in the macro
+	  file.
+	
+	2. Quit Visual C++.
+	
+	3. Start Windows Explorer, and then double-click an existing DSP or DSW file.
+	
+	An error will occur.
+	
+	REFERENCES
+	==========
+	
+	For more information on Visual Basic Script macros, see the following topic in
+	the MSDN Online Libraries:
+	
+	  http://msdn.microsoft.com/library/devprods/vs6/visualc/vcug/_asug_home_page.3a_.vbscript_macros.htm
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbservicepack kbAutomation kbVBScript kbVC kbVC600bug kbDSupport kbGrpDSTools kbNoUpdate 
+	Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch
+	Version           : :6.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

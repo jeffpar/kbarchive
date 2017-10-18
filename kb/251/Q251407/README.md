@@ -1,0 +1,85 @@
+---
+layout: page
+title: "Q251407: XADM: Exchange Server 5.5 Setup Program Fixes Available"
+permalink: kb/251/Q251407/
+---
+
+## Q251407: XADM: Exchange Server 5.5 Setup Program Fixes Available
+
+	Article: Q251407
+	Product(s): Microsoft Exchange
+	Version(s): winnt:5.5
+	Operating System(s): 
+	Keyword(s): exc55kbfixlist
+	Last Modified: 30-JUL-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.5 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article lists the article numbers for Exchange Server 5.5 Setup program
+	bugs that have been fixed since Exchange Server 5.5 was released. For
+	information about how to obtain the fixes listed in this article, click the
+	article number next to the title of the article about that issue to view the
+	article in the Microsoft Knowledge Base.
+	
+	NOTE: Exchange Server fixes for a particular component are cumulative and contain
+	all of the previous fixes for that component. Fixes with a particular version
+	number contain all of the fixes that have an earlier version number.
+	
+	MORE INFORMATION
+	================
+	
+	Setup program fixes include the following files:
+	
+	+-------------------------------+
+	| File name   | Current version | 
+	+-------------------------------+
+	| Srvrmax.exe | 5.5.1960.11     | 
+	+-------------------------------+
+	| Srvrmin.exe | 5.5.1960.11     | 
+	+-------------------------------+
+	
+	Fixes Released on July 27, 2000
+	-------------------------------
+	
+	The following files are modified:
+	
+	- All files incremented to version 5.5.1960.11
+	
+	The following fixes are included:
+	
+	  Q267583 XADM: Exchange Server 5.5 Fix Setup.exe Does Not Work on Windows 2000
+	  Cluster Server
+	
+	Fixes Released on February 15, 2000
+	-----------------------------------
+	
+	The following files are modified:
+	
+	- All files incremented to version 5.5.1960.10
+	
+	The following fixes are included:
+	
+	  Q184880 XADM: Setup Does Not Detect Cluster Resources Properly
+	  Q218802 XADM: Can't Enroll Using X.509 V3 Certificates
+	  Q237541 XADM: Exchange Performance Monitor Counters Are Not Visible on a
+	  Cluster
+	  Q248052 XGEN: Installation and Use of Encryption on Exchange Server with
+	  French Settings
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : exc55 kbfixlist
+	Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+	Version           : winnt:5.5
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

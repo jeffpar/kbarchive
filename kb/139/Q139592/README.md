@@ -1,0 +1,124 @@
+---
+layout: page
+title: "Q139592: Prompted for Password When Connecting to Windows NT"
+permalink: kb/139/Q139592/
+---
+
+## Q139592: Prompted for Password When Connecting to Windows NT
+
+	Article: Q139592
+	Product(s): Microsoft Windows NT
+	Version(s): WINDOWS:2000; Win2000:95; winnt:4.0; :
+	Operating System(s): 
+	Keyword(s): kbenv kberrmsg kbnetwork
+	Last Modified: 14-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 4.0 
+	- Microsoft Windows NT Server version 4.0 
+	- Microsoft Windows NT Server, Enterprise Edition 
+	- Microsoft Windows 95 
+	- Microsoft Windows for Workgroups 
+	- Microsoft Windows 2000 Server 
+	- Microsoft Windows 2000 Professional 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you attempt to connect to a Windows NT-based or Windows 2000-based
+	computer, you may receive one of the following messages:
+	
+	- Incorrect password or unknown username for:
+	
+	- You must supply a password to make this connection.
+	
+	- \\<ComputerName>\<ShareName> is not accessible. Access Denied.
+	
+	CAUSE
+	=====
+	
+	This behavior can occur when all of the following conditions exist:
+	
+	- The Guest account is disabled on the Windows NT-based computer you are
+	  attempting to connect to.
+	
+	- The user name and password you are using are not contained in the local user
+	  accounts database of the Windows NT-based computer you are attempting to
+	  connect to.
+	
+	- If the computer you are attempting to connect to is a member of a domain, the
+	  user name and password you are using are not contained in that domain's user
+	  accounts database.
+	
+	For example, if the user has logged into an account on the local machine, that
+	account is not in the domain user accounts database. Even if the username and
+	password match, the user will not be granted access.
+	Windows NT uses your logon information (your user name and password) for
+	authentication when you attempt to connect to a network resource.
+	
+	RESOLUTION
+	==========
+	
+	To work around this behavior, use the appropriate method:
+	
+	Enable the Guest Account
+	------------------------
+	
+	To enable the guest account, use the appropriate method:
+	
+	Enable Guest Account for Windows 2000:
+	
+	1. Right-click My Computer, click Manage, and then expand the tree under System
+	  Tools.
+	
+	2. Double-click "Local Users and Groups", and then click the Users folder.
+	
+	3. Double-click the Guest account in the right-side pane, click to clear the
+	  "Account is disabled" check box, and then click OK.
+	
+	Enable Guest Account for Windows NT:
+	
+	Use the User Manager tool to enable the Guest account on the Windows NT- based
+	computer that you are attempting to connect to. To do so, follow these steps:
+	
+	1. Click Start, point to Programs, click Administrative Tools (Common), and then
+	  click User Manager or User Manager For Domains.
+	
+	2. In the Username box, double-click Guest.
+	
+	3. Click the Account Disabled check box to clear it, and then click OK.
+	
+	Set Up User Accounts in the Local Accounts Database
+	---------------------------------------------------
+	
+	Use the User Manager tool to set up user accounts in the local accounts database
+	of the Windows NT-based computer that you are attempting to connect to. These
+	user accounts need to contain the same logon information (user name and
+	password) that is used when a user logs on to his or her computer.
+	
+	Set Up User Accounts in the Domain Accounts Database
+	----------------------------------------------------
+	
+	Use the User Manager For Domains and Server Manager tools to configure accounts
+	for your domain. In a domain environment, you typically add users to the
+	centralized domain accounts database and not to the local accounts database.
+	
+	MORE INFORMATION
+	================
+	
+	By default, the Guest account is disabled in Windows NT Workstation 4.0 and all
+	versions of Windows NT Server. In earlier versions of Windows NT Workstation,
+	the Guest account is enabled by default.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbenv kberrmsg kbnetwork 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbwin2000Serv kbWinNTSsearch kbWinNTSEntSearch kbWinNTS400search kbWinNTS400 kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbAudDeveloper kbWin95search kbWFWSearch kbZNotKeyword3
+	Version           : WINDOWS:2000; Win2000:95; winnt:4.0; :
+	
+	=============================================================================
+	

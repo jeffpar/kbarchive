@@ -1,0 +1,82 @@
+---
+layout: page
+title: "Q297200: Microsoft Enterprise Learning Library: Step by Step Interactive"
+permalink: kb/297/Q297200/
+---
+
+## Q297200: Microsoft Enterprise Learning Library: Step by Step Interactive
+
+	Article: Q297200
+	Product(s): Microsoft Press
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 16-OCT-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- MSPRESS Microsoft Enterprise Learning Library: Step by Step Interactive Version 4 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Error message occurs when trying to access Microsoft Press Step by Step
+	Interactive software including Office 2000 and Office XP
+	Error message:
+	"A server-side database error has occurred.
+	Data may not have been saved or retrieved.
+	
+	See your system administrator for assistance."
+	
+	"getseti.asp"
+	
+	CAUSE
+	=====
+	
+	Note that SQL7 SP3 comes in two parts, one for database components, one for
+	OLAP.
+	Install the OLAP part - but if OLAP wasn't already installed, you can not apply
+	that part of the SQL7 SP3.
+	It's an optional component - one that doesn't get installed by default.
+	NOTE: During the SP3 upgrade procedure, it strongly warns the user to change
+	default authentication from mixed (with sa and no password) to NT
+	Authentication. The default is changing authentication to NT authentication.
+	
+	RESOLUTION
+	==========
+	
+	Go into SQL Enterprise Manager, and right-click the MSPress database, changes
+	the logon scheme from NT authentication to SQL authentication (with the original
+	parameters used - likely sa and no password)
+	
+	WORKAROUND
+	==========
+	
+	You not only need to reselect the unadvised mixed-mode during setup, but you
+	must check the 'no password' checkbox - despite it warning you against that for
+	security reasons.
+	
+	STATUS
+	======
+	
+	
+	
+	MORE INFORMATION
+	================
+	
+	NT authentication was starting to be used as opposed to mixed mode (sa and no
+	password) which would mean that the setup, which likely was used with the
+	defaults (mixed mode) no longer worked as the database logon scheme was changed.
+	
+	Additional query words: MSPress SQL7 MELL Interactive Training Version4 Database
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMSPressSearch
+	Version           : :
+	Issue type        : kbprb
+	
+	=============================================================================
+	

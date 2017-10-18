@@ -1,0 +1,96 @@
+---
+layout: page
+title: "Q94295: PRB: &quot;!&quot; Modifier Fails in a Macro Substitution"
+permalink: kb/094/Q94295/
+---
+
+## Q94295: PRB: &quot;!&quot; Modifier Fails in a Macro Substitution
+
+	Article: Q94295
+	Product(s): Microsoft Programming Utilities
+	Version(s): MS-DOS:1.11,1.12,1.13,1.2,1.3,1.4; NT:1.4,1.5; OS/2:1.21
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 29-OCT-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft NMAKE Utility for MS-DOS, versions 1.11, 1.12, 1.13, 1.2, 1.3, 1.4 
+	- Microsoft NMAKE Utility for OS/2, version 1.21 
+	- Microsoft NMAKE Utility for Windows NT, versions 1.4, 1.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The "!" command modifier in a macro substitution does not work as expected. A
+	"too many parameters" warning may also occur.
+	
+	CAUSE
+	=====
+	
+	Either the $** or $? macro is modified using a macro substitution or it is
+	placed in another macro.
+	
+	STATUS
+	======
+	
+	This behavior is expected. The "!" modifier is designed to work with the $** and
+	$? macros without any modifications.
+	
+	MORE INFORMATION
+	================
+	
+	The "!" modifier executes the specified command once for each specified
+	dependent file. It uses the $** and $? predefined macros to determine the
+	dependents. The error occurs when the $** or $? macro is modified or when the
+	macro is placed in another macro.
+	
+	The following makefile illustrates this error because the targets "clean1" and
+	"clean2" do not execute commands separately for each dependent. However, the
+	target "clean3" executes correctly. The targets execute commands as follows:
+	
+	clean1
+	  DEL test1.map test2.map
+	
+	clean2
+	  DEL test1.exe test2.exe
+	
+	clean3
+	  DEL test1.exe
+	  DEL test2.exe
+	
+	Sample Makefile
+	---------------
+	
+	# Command line options needed: none
+	
+	FILES = test1.exe test2.exe
+	CMD   = !DEL $**
+	
+	all : clean1 clean2 clean3
+	
+	$(FILES):
+	
+	# This should repeat once for each file
+	clean1 : $(FILES)
+	   !DEL $(?:.exe=.map)
+	
+	# This should repeat once for each file
+	clean2 : $(FILES)
+	   !$(CMD)
+	
+	# This works
+	clean3 : $(FILES)
+	   !DEL $?
+	
+	Additional query words: 1.20 1.30 1.40 1.50
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbVCsearch kbAudDeveloper kbNMAKESearch kbNMAKE111DOS kbNMAKE112DOS kbNMAKE113DOS kbNMAKE120DOS kbNMAKE130DOS kbNMAKE140DOS kbNMAKE121OS2 kbNMAKE140NT kbNMAKE150NT
+	Version           : MS-DOS:1.11,1.12,1.13,1.2,1.3,1.4; NT:1.4,1.5; OS/2:1.21
+	
+	=============================================================================
+	

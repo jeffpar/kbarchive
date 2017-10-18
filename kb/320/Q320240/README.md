@@ -1,0 +1,344 @@
+---
+layout: page
+title: "Q320240: XCCC: Troubleshooting &quot;HTTP 404&quot; Error Messages in OWA 5.5"
+permalink: kb/320/Q320240/
+---
+
+## Q320240: XCCC: Troubleshooting &quot;HTTP 404&quot; Error Messages in OWA 5.5
+
+	Article: Q320240
+	Product(s): Microsoft Exchange
+	Version(s): 5.5
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 08-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Outlook Web Access, version 5.5 
+	- Microsoft Outlook Web Access, version 5.5 Service Packs 1, 2, 3 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	If you use Microsoft Outlook Web Access (OWA), you may receive any of the
+	following "HTTP 404" error messages:
+	
+	  HTTP/1.0 404 File Not Found
+	
+	  -or-
+	
+	  HTTP/1.0 404 Not Found
+	
+	  -or-
+	
+	  HTTP/1.0 404 Object Not Found
+	
+	  -or-
+	
+	  HTTP/1.0 404 Page Cannot Be Found
+	
+	  -or-
+	
+	  The page cannot be found. The page you are looking for might have been
+	  removed, had its name changed, or is temporarily unavailable
+	
+	This article describes issues that may cause these error messages and how to
+	resolve these issues.
+	
+	MORE INFORMATION
+	================
+	
+	These error messages may be caused by issues with any of the following
+	features:
+	
+	- DNS name resolution
+	
+	- Proxy Server configuration
+	
+	- Exchange virtual directory configuration
+	
+	- Uniform Resource Locator (URL) creation
+	
+	- The URLScan component of the Internet Information Server (IIS) Lockdown tool
+	
+	The following sections describe how to resolve these issues.
+	
+	DNS Name Resolution
+	-------------------
+	
+	The error messages that are described in the "Symptoms" section may occur if the
+	computer on which you are running the Web browser is unable to resolve either of
+	the following server names that you type in the Address box:
+	
+	- "http://<servername>/exchange" (without the quotation marks)
+	
+	- "http://<fully_qualified_domain_name>/exchange" (without the quotation
+	  marks)
+	
+	If you cannot resolve the name of your server over the Internet, you may have to
+	ask your Internet service provider (ISP) to create a DNS record for your server,
+	which matches the fully qualified domain name (FQDN) that you want to use to
+	access OWA.
+	
+	If you cannot resolve the address on the internal network if you type the NetBIOS
+	server name in the Address box, you must create a valid HOST record for this
+	server on the DNS server that the client workstations are using for name
+	resolution.
+	
+	Alternately, you can add an entry for the OWA server to the HOSTS file on the
+	workstation that is running the Web browser. For Microsoft Windows NT, Microsoft
+	Windows 2000, and Microsoft Windows XP, this file is located in the
+	<X>:\Winnt\System32\Drivers\Etc folder (where <X> is the drive on
+	which the Windows folder is located). In Microsoft Windows 95, Microsoft Windows
+	98, Microsoft Windows 98 Second Edition, and Microsoft Windows Millennium
+	Edition (Me), this file is located in the <X>:\Windows folder. This file
+	is called "HOSTS" and it does not have a file extension (a sample file
+	"HOSTS.SAM" may exist in the folder).
+	
+	To add an entry for the OWA server to the HOSTS file on the workstation that is
+	running the Web browser:
+	
+	1. Start Microsoft Notepad, and then open the HOSTS file.
+	
+	2. Use the following format to add an entry for the OWA server:
+	
+	  <ip_address><servername>
+	
+	3. Close and save file.
+	
+	  Do not give the file a file name extension.
+	
+	4. If you are using Windows 2000 or Windows XP, type the following command from
+	  a command prompt, and then press ENTER:
+	
+	  "ipconfig /flushdns" (without the quotation marks)
+	
+	Proxy Server Configuration
+	--------------------------
+	
+	You may receive an "HTTP 404" error message if OWA and Proxy Server are running
+	on separate computers and you did not configure the Web Publishing feature of
+	Proxy Server to forward requests to the OWA server.
+	
+	To resolve this issue, enable Web Publishing to send requests to another Web
+	server:
+	
+	1. Start Internet Service Manager.
+	
+	2. On the Action menu, click Web Proxy, and then click Properties.
+	
+	3. Click the Publishing tab, and then click to select the "Enable Web
+	  Publishing" check box.
+	
+	4. Click "Sent to another web server".
+	
+	5. Type either the internal IP address or the NetBIOS name of the OWA server.
+	
+	  You can also use the FQDN as long as the name can be resolved by Proxy Server
+	  to the internal IP address.
+	
+	For additional information about this issue or if more than one Web server
+	exists, click the article number below to view the article in the Microsoft
+	Knowledge Base:
+	
+	  Q207655 Setting Up Web Publishing and OWA Access Through a Proxy
+	
+	Exchange Virtual Directory Configuration
+	----------------------------------------
+	
+	You may receive an "HTTP 404" error message if the Exchange virtual directory
+	folder is missing or if you renamed it under the Web site to which the users are
+	connecting.
+	
+	To resolve this issue:
+	
+	1. Run the Exchange Setup program from the installation CD.
+	
+	2. Use the Add/Remove option to see if the OWA entry has a check mark next to
+	  it.
+	
+	  If the OWA entry has a check mark next to it, cancel Setup. If it does not,
+	  place a check mark in the box (leave the other options as they are), and then
+	  continue Setup. OWA is added to this server.
+	
+	3. Start Internet Service Manager.
+	
+	4. Expand the Web site in which you installed OWA.
+	
+	  In a typical configuration, OWA is located under "Default Web Site".
+	
+	5. Verify that the Exchange virtual directory is listed under the Web site.
+	
+	  If the Exchange virtual directory is listed under the Web site, go to step 3.
+	  If it is not listed, you must create an Exchange virtual directory.
+	
+	6. Right-click Exchange Virtual Directory, and then click Properties.
+	
+	7. Confirm that the local path is set to <X>:\Exchsrvr\Webdata (where
+	  <X> is the drive in which you installed Exchange 2000).
+	
+	8. Make sure that the access permissions are set to Read-enabled.
+	
+	9. Under the Application Settings section, confirm that the Permissions setting
+	  is set to Execute (including script).
+	
+	10. Confirm the first of the three buttons that is listed in this section is
+	  labeled Remove instead of Create.
+	
+	  If the first button is labeled Create, click this button to change the label
+	  to Remove.
+	
+	11. Click the Documents tab, and then confirm that the Enable Default Document
+	  check box has been selected.
+	
+	12. Confirm that "default.htm" and "default.asp" are listed in the documents
+	  list.
+	
+	13. Click the Directory Security tab, click Edit in the "Anonymous Access and
+	  Authentication Control" section.
+	
+	14. Confirm that the check box next to Allow Anonymous Access has been selected.
+	
+	15. Configure either Basic Authentication or Windows NT Challenge/Response.
+	
+	  To determine the authentication method that you want to use, find out whether
+	  the users will be accessing OWA from the Internet or through a proxy server
+	  or a firewall. If users access OWA through a proxy server or a firewall, use
+	  the Basic Authentication method.
+	
+	16. Save and close the virtual directory properties.
+	
+	17. Right-click Default Web Site, and then click Properties.
+	
+	18. Click the ISAPI Filters tab.
+	
+	19. Confirm that "exchfilt" is displayed in the ISAPI Filters list.
+	
+	  If this filter is not listed, click Add, and then browse to the
+	  <X>:\Winnt\System32\Exchfilt.dll file (where <X> is the drive in
+	  which you installed Windows).
+	
+	20. Click Save, and then click Close.
+	
+	URL Creation
+	------------
+	
+	You may receive an "HTTP 404" error message if the URL address that OWA builds to
+	open the message is incorrect. OWA calculates and checks the files in the
+	Webdata folder to determine if the object is a file or folder. If you set flags
+	such as "Archive" or "Compressed" on the folder, OWA may not calculate the
+	folder correctly. In this situation, OWA produces the wrong URL.
+	
+	To determine if you are experiencing this issue:
+	
+	1. Reproduce the error message.
+	
+	2. In the error message dialog box, point to Toolbars on the View menu, and then
+	  click Address Bar.
+	
+	  If OWA creates an incorrect URL, the following URL is displayed in the address
+	  bar:
+	
+	  
+	
+	  javascript:parent.openNewWindow("/exchange/forms/IPM.NotefrmRoot.asp?...
+	
+	  The following URL is the correct URL:
+	
+	  
+	
+	  javascript:parent.openNewWindow("/exchange/forms/IPM/NotefrmRoot.asp?...
+	
+	This problem only occurs on servers that are running Exchange Server 5.5 Service
+	Pack 1 (SP1). To resolve this problem, obtain the latest service pack for
+	Exchange Server 5.5. For additional information, click the following article
+	number to view the article in the Microsoft Knowledge Base:
+	
+	  Q191014 How to Obtain the Latest Exchange Server 5.5 Service Pack
+	
+	If you are experiencing this behavior on a later version of Exchange Server 5.5,
+	the file that controls this process (Cdohtml.dll) may not be registered or it
+	may be out of date. To resolve this issue:
+	
+	1. Locate the Cdohtml.dll file on the hard disk.
+	
+	  Typically, this file is in the <X>:\Exchsrvr\Bin folder.
+	
+	2. Right-click the Cdohtml.dll file, and then click Properties.
+	
+	3. Click the Version tab, and then view the Comments box.
+	
+	  Confirm that the information in the Comments box describes the service pack
+	  level that you are currently running. If it does, go to step 4. If it does
+	  not, start the Services tool in Control Panel, stop the WWW Publishing
+	  Service, rename the existing Cdohtml.dll file to "cdohtml.old," and then copy
+	  the file from your latest service pack install point to the same folder.
+	
+	4. From a command prompt, type the following command (where <x> is the
+	  drive in which you installed Exchange Server):
+	
+	  "regsvr32 <x>:\exchsrvr\bin\cdohtml.dll" (without the quotation marks)
+	
+	  You receive the following message:
+	
+	  DllRegisterServer in x:\exchsrvr\bin\cdohtml.dll Succeeded.
+	
+	5. Start the WWW Publishing Service.
+	
+	The URLScan Component of the IIS Lockdown Tool
+	----------------------------------------------
+	
+	If you are using OWA, you may not be able open messages that include certain
+	characters in the subject line.
+	
+	This issue can occur on a server that is running URLScan (which is a component of
+	the IIS Lockdown tool). By default, URLScan blocks certain potentially harmful
+	characters in the URL. The following list describes the blocked characters and
+	the reason why they are blocked:
+	
+	- Two periods (..): You cannot use folder traversals.
+	
+	- A period and a backslash (./): You cannot use a trailing period on a folder.
+	
+	- backslash (\): You cannot use backslashes in the URL.
+	
+	- Colon (:): You cannot use alternate stream access.
+	
+	- Percent sign (%): You cannot allow escaping after normalization.
+	
+	- Ampersand (&): You cannot use multiple Common Gateway Interface (CGI)
+	  processes to run on a single request.
+	
+	To resolve this issue, use one of the following methods:
+	
+	- Describe this issue to users and explain that this issue limits OWA
+	  functionality even though it offers better security.
+	
+	  -or-
+	
+	- Edit the URLScan.ini file that is located in the
+	  <X>:\Winnt\System32\Inetsrv\Urlscan folder (where <X> is the
+	  drive in which you installed Windows) to allow these characters. If you do
+	  so, you allow potentially harmful commands to be used on the server that is
+	  running OWA, which may cause a security risk
+	
+	For additional information about URLScan and Exchange Server, click the article
+	number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q309508 XCCC: IIS Lockdown and URLScan Configurations in an Exchange
+	  Environment
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbOutlookSearch kbOWASearch kbOWA550 kbOWA550SP1 kbOWA550SP2 kbOWA550SP3
+	Version           : :5.5
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

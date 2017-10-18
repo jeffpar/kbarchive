@@ -1,0 +1,349 @@
+---
+layout: page
+title: "Q253902: XCLN: Windows and Macintosh Exchange Clients Interoperability"
+permalink: kb/253/Q253902/
+---
+
+## Q253902: XCLN: Windows and Macintosh Exchange Clients Interoperability
+
+	Article: Q253902
+	Product(s): Microsoft Exchange
+	Version(s): MACINTOSH:8.0,8.1,8.2,8.2.1; WINDOWS:2000,4.0,5.0,5.5,7.0a,7.5,8.0; :
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 06-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Macintosh client, versions 4.0, 5.0 
+	- Microsoft Exchange Windows 3.x client, versions 4.0, 5.0 
+	- Microsoft Exchange Windows 95/98 client, versions 4.0, 5.0 
+	- Microsoft Exchange Windows NT client, versions 4.0, 5.0 
+	- Microsoft Schedule+, versions 7.0a, 7.5 
+	- Microsoft Outlook for Macintosh, Exchange Server Edition, versions 8.0, 8.1, 8.2, 8.2.1 
+	- Microsoft Outlook, Exchange Server Edition, version 8.0, used with:
+	   - the operating system: Microsoft Windows versions 3.1, 3.11 
+	- Microsoft Outlook Web Access, version 5.5 
+	- Microsoft Outlook HTML Form Converter 
+	- Microsoft Outlook 2000 
+	- Microsoft Outlook 98 
+	- Microsoft Outlook 97 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article defines the level of interoperability available between the
+	Exchange Clients for Windows and Macintosh platforms. Because several versions
+	of Exchange Server and its clients are available, the level of interoperability
+	between clients can be difficult to determine.
+	
+	MORE INFORMATION
+	================
+	
+	Term Definitions
+	----------------
+	
+	To fully understand interoperability in Exchange Server, you must first
+	understand the following terms:
+	
+	- MAPI. MAPI refers to the Windows Messaging Application Programming Interface,
+	  or the common calls that a Microsoft Windows application makes to perform
+	  mail-related actions. MAPI clients can run information services in a profile.
+	  Only one of these services, the Exchange Server service, is discussed in this
+	  article. Also, all of the following explanations assume that the MAPI client
+	  has been granted the appropriate rights.
+	
+	  NOTE: Although the Macintosh clients are not really MAPI clients, they still
+	  belong in this category, as opposed to another category of client, such as
+	  the Post Office Protocol version 3 (POP3) version client. The Macintosh
+	  clients have some MAPI features that put them in the same category with the
+	  Windows MAPI clients. There is no MAPI support on the Macintosh platform, so
+	  an application cannot be written on the Macintosh to make MAPI calls. This
+	  also means that there is no support for forms, or any other Visual Basic
+	  support on this platform (other than the HTML forms mentioned below).
+	
+	- Interoperability. Interoperability refers to the level at which clients can
+	  interact, and interoperability also determines what data results from this
+	  interaction. Exchange Server provides two levels of interoperability for its
+	  clients. The following two levels of interoperability, simple and full, are
+	  available:
+	
+	   - Simple. This level of interoperability offers the most basic means of
+	     working with other users and information in the Exchange Server
+	     organization, and is available to all of the MAPI clients of an Exchange
+	     Server computer. Although this level of interoperability does not offer
+	     all of the features that are available to Exchange Server and its clients,
+	     it does provide the ability to interact with these other clients. The
+	     following are some of the features that are available with this level of
+	     interoperability:
+	
+	      - You can send and view free and busy information.
+	
+	      - You can send and receive meeting requests.
+	
+	      - You can send messages on behalf of another user.
+	
+	   - Full. This level of interoperability offers the most robust means of
+	     working with Exchange Server users and information. This level offers all
+	     of the features that are available to the installed Exchange Server
+	     computer and its clients. Not all clients can obtain this level of
+	     interoperability. The following are some of the features that are
+	     available with this level of interoperability:
+	
+	      - You can open another user's server-based calendar for direct access.
+	
+	      - You can assign delegates to your mailbox.
+	
+	      - You can assign delegates to receive meeting requests instead of you.
+	
+	Calendar Interfaces
+	-------------------
+	
+	Two types of calendar interfaces are available to Exchange Clients: "old" and
+	"new," or more specifically, the earlier Schedule+ and later Outlook calendar
+	interfaces. Because the level of calendar interoperability is based on the
+	calendar interface that the client uses, you must understand the differences
+	between the two following interfaces:
+	
+	- Schedule+ 7.0a was the first calendar product, and is included with Exchange
+	  Server 4.0. Exchange Server 5.0 includes the improved Schedule+ 7.5. Both of
+	  these programs are only available as part of the Exchange Server version that
+	  they were released with, and were never available for retail sale (Schedule+
+	  7.0 is included with Microsoft Office 95, but is not compatible with Exchange
+	  Server). Both of these versions are available for the Windows 16-bit, Windows
+	  32-bit, and Macintosh platforms. Schedule+ can use either a local file or the
+	  Exchange Server-based store to hold the calendar data. Only the Schedule+
+	  application can use this data; it cannot be opened in any other application.
+	  As long as Schedule+ clients open only other Schedule+ calendars, full
+	  interoperability exists. However, because Outlook was released later than
+	  Schedule+, Schedule+ cannot open an Outlook calendar. The one exception to
+	  this is the Windows versions of Schedule+ that was included in the Exchange
+	  Server Inbox client version 4.0 and 5.0). For additional information about a
+	  method that allows read-only access to an Outlook calendar with this version
+	  of Schedule+, click the article numbers below to view the articles in the
+	  Microsoft Knowledge Base:
+	
+	  Q170061 XCLN: Readme.txt for Msoutl32.dll
+	
+	  Q140404 OL97: 16-Bit Client Unable to Read Schedule+ Data
+	
+	  This capability was also later incorporated in Outlook for the Macintosh.
+	
+	For additional information, click the article number below to view the article in
+	the Microsoft Knowledge Base:
+	
+	  Q197450 XCLN: Macintosh Outlook Client Version 8.1 New Features
+	
+	- Outlook 97 is included with Exchange Server 5.0, as well as being available
+	  through retail sale. Later, Exchange Server 5.5 included Outlook 98 and
+	  eventually Outlook 2000 (included with the Exchange Server 5.5 Service Pack 3
+	  CD-ROM). These new clients offered the Outlook calendar interface, in
+	  addition to the existing Schedule+ interface. The biggest difference between
+	  the two interfaces is that the Outlook calendar is a folder under the user's
+	  top-level mailbox. In addition, the items in the folder are standard IPM
+	  message classes, so that custom forms and folder views apply. Lastly, because
+	  the calendar is a folder, you can add it to a user's offline folder file
+	  (.ost) and synchronize it. Outlook can open both earlier Schedule+ calendars,
+	  as well as later Outlook calendars. In addition, you can also configure
+	  Outlook to use Schedule+ as the primary calendar, so that Outlook uses the
+	  original Schedule+ application for any calendar operations and offers full
+	  interoperability with older Schedule+ users.
+	
+	For additional information, click the article number below to view the article in
+	the Microsoft Knowledge Base:
+	
+	  Q195813 OL2000: Using Schedule+ as the Primary Calendar
+	
+	Exchange Client Interoperability
+	--------------------------------
+	
+	The most basic explanation of interoperability is that any Schedule+ client
+	always has full interoperability with other Schedule+ clients and simple
+	interoperability with Outlook clients. However, interoperability is not always
+	that simple.
+	
+	A more accurate way to explain interoperability between the different versions of
+	Exchange Clients is to list all of the clients and their level of
+	interoperability. The following table lists levels of interoperability between
+	all of the Exchange Clients.
+	
+	+-------------------------------------------------------------------------------------------------------------+
+	| Clients            | Outlook 2000  | Outlook 8.2.1 | Outlook Web Access | Inbox 5.0 S+ 7.5 | Outlook 16-bit | 
+	+-------------------------------------------------------------------------------------------------------------+
+	| Outlook 2000       | Full          | Simple
+	(1, 3) | Simple             | Simple
+	(1, 2)    | Simple
+	(1, 2)  | 
+	+-------------------------------------------------------------------------------------------------------------+
+	| Outlook 8.2.1      | Simple
+	(1, 3) | Full          | Simple             | Full             | Full           | 
+	+-------------------------------------------------------------------------------------------------------------+
+	| Outlook Web Access | Simple        | Simple        | Simple             | Simple           | Simple         | 
+	+-------------------------------------------------------------------------------------------------------------+
+	| Inbox 5.0 S+ 7.5   | Simple
+	(1, 2) | Full          | Simple             | Full             | Full           | 
+	+-------------------------------------------------------------------------------------------------------------+
+	| Outlook 16-bit     | Simple
+	(1, 2) | Full          | Simple             | Full             | Full           | 
+	+-------------------------------------------------------------------------------------------------------------+
+	
+	Legend:
+	
+	- Simple. Only simple interoperability is available.
+	
+	- Full. Full interoperability is available.
+	
+	- (x). Where x represents one of the following numbers:
+	
+	   - (1) If you use Schedule+ as your primary calendar with 32-bit Outlook,
+	     full interoperability is available.
+	
+	For additional information, click the article number below to view the article in
+	the Microsoft Knowledge Base:
+	
+	  Q195813 OL2000: Using Schedule+ as the Primary Calendar
+	
+	   - (2) If you use the Msoutl.dll or Msoutl32.dll files with Schedule+,
+	     read-only access to the Outlook 32-bit calendar is available.
+	
+	For additional information, click the article numbers below to view the articles
+	in the Microsoft Knowledge Base:
+	
+	  Q170061 XCLN: Readme.txt for Msoutl32.dll
+	
+	  Q140404 OL97: 16-Bit Client Unable to Read Schedule+ Data
+	
+	   - (3) If you use Outlook for Macintosh version 8.1, read-only access to
+	     Outlook 32-bit calendars is available.
+	
+	For additional information, click the article number below to view the article in
+	the Microsoft Knowledge Base:
+	
+	  Q197450 XCLN: Macintosh Outlook Client Version 8.1 New Features
+	
+	Exchange Client Available Features
+	----------------------------------
+	
+	It may be helpful to review all of the clients with their features to see which
+	features are available. The following table outlines the available client
+	features.
+	
+	+----------------------------------------------------------------------------------------------------------------------------------+
+	| Features            | Outlook 32-bit | Outlook 16-bit | Outlook Macintosh | Outlook Web Access | Schedule+ 7.x  | Exchange Inbox | 
+	+----------------------------------------------------------------------------------------------------------------------------------+
+	| Free and Busy       | Yes            | Yes            | Yes               | Yes                | Yes            | N/A            | 
+	+----------------------------------------------------------------------------------------------------------------------------------+
+	| 16-bit Forms        | Yes            | Yes            | No (4)            | No (4)             | N/A            | Yes            | 
+	+----------------------------------------------------------------------------------------------------------------------------------+
+	| 32-bit Forms        | Yes            | No (4)         | No (4)            | No (4)             | N/A            | No             | 
+	+----------------------------------------------------------------------------------------------------------------------------------+
+	| HTML Forms          | Yes            | Yes            | Yes               | No                 | Yes            | No             | 
+	+----------------------------------------------------------------------------------------------------------------------------------+
+	| Private Items       | Yes            | Yes            | Yes               | Yes                | No             | No             | 
+	+----------------------------------------------------------------------------------------------------------------------------------+
+	| Send As             | Yes            | Yes            | Yes               | N/A                | No             | Yes            | 
+	+----------------------------------------------------------------------------------------------------------------------------------+
+	| Send on Behalf      | Yes            | Yes            | Yes               | N/A                | No             | Yes            | 
+	+----------------------------------------------------------------------------------------------------------------------------------+
+	| Public Folders      | Yes            | Yes            | Yes               | Yes                | N/A            | Yes            | 
+	+----------------------------------------------------------------------------------------------------------------------------------+
+	| Calendar Delegation | Yes            | Yes (1, 2, 3)  | Yes (1, 2, 3)     | No                 | Yes  (1, 2, 3) | N/A            | 
+	+----------------------------------------------------------------------------------------------------------------------------------+
+	| Contacts            | Yes            | No             | No                | Yes                | Yes (5)        | N/A            | 
+	+----------------------------------------------------------------------------------------------------------------------------------+
+	| Rich Text           | Yes            | Yes            | Yes               | Yes                | Yes            | Yes            | 
+	+----------------------------------------------------------------------------------------------------------------------------------+
+	| HTML Text           | Yes            | No             | No                | No                 | No             | No             | 
+	+----------------------------------------------------------------------------------------------------------------------------------+
+	| Message Flags       | Yes            | Yes            | Yes               | No                 | No             | No             | 
+	+----------------------------------------------------------------------------------------------------------------------------------+
+	| Recall Message      | Yes            | Yes            | Yes               | No                 | No             | No             | 
+	+----------------------------------------------------------------------------------------------------------------------------------+
+	| Voting              | Yes            | Yes (6)        | Yes (6)           | No                 | No             | No             | 
+	+----------------------------------------------------------------------------------------------------------------------------------+
+	
+	Legend:
+	
+	- Yes. This feature available in this client
+	
+	- No. This feature is not available in this client
+	
+	- N/A. This feature is not applicable to this client
+	
+	- (x). Where x represents one of the following numbers:
+	
+	   - (1) If you use Schedule+ as your primary calendar with 32-bit Outlook,
+	     full interoperability is available.
+	
+	For additional information, click the article number below to view the article in
+	the Microsoft Knowledge Base:
+	
+	  Q195813 OL2000: Using Schedule+ as the Primary Calendar
+	
+	   - (2) If you use the Msoutl.dll or Msoutl32.dll files with Schedule+,
+	     read-only access to the Outlook 32-bit calendar is available.
+	
+	For additional information, click the article numbers below to view the articles
+	in the Microsoft Knowledge Base:
+	
+	  Q170061 XCLN: Readme.txt for Msoutl32.dll
+	
+	  Q140404 OL97: 16-Bit Client Unable to Read Schedule+ Data
+	
+	   - (3) If you use Outlook for Macintosh version 8.1, read-only access to
+	     Outlook 32-bit calendars is available.
+	
+	For additional information, click the article number below to view the article in
+	the Microsoft Knowledge Base:
+	
+	  Q197450 XCLN: Macintosh Outlook Client Version 8.1 New Features
+	
+	   - (4) Outlook 32-bit forms are not supported on the Windows 16-bit and
+	     Macintosh platform clients. However, it is possible to supplement this
+	     with HTML forms that are based on Outlook 32-bit forms. When Windows
+	     16-bit or Macintosh platform clients receive an item that uses a custom
+	     Outlook 32-bit form, it contains a URL. HTML forms allow these clients to
+	     connect to OWA and for an HTML version of the form.
+	
+	For additional information, click the article number below to view the article in
+	the Microsoft Knowledge Base:
+	
+	  Q187836 XWEB: How to Use Outlook Web Access Web Services and HTML Forms
+	
+	   - (5) Schedule+ does have a Contacts module, however, Schedule+ Contacts are
+	     not compatible with Outlook Contacts. Only another Schedule+ client can
+	     use Schedule+ contacts. Schedule+ contacts are limited; they do not offer
+	     fields for e-mail address, Internet Web sites, or many of the other fields
+	     that Outlook Contacts offer.
+	
+	   - (6) Messages that contain voting buttons are not supported on the Windows
+	     16-bit and Macintosh platform clients. However, these clients can open and
+	     reply to a voting message that is sent from an Outlook 32-bit client.
+	
+	Additional Resources
+	--------------------
+	
+	For additional information, click the article numbers below to view the articles
+	in the Microsoft Knowledge Base:
+	
+	  Q140404 OL97: 16-Bit Client Unable to Read Schedule+ Data
+	
+	  Q253885 XCLN: Availability of Outlook for Macintosh Exchange Server Edition
+	  8.2.1
+	
+	  Q168753 XADM: Microsoft Exchange Roles, Rights, and Permissions
+	
+	  Q234696 XCLN: How to Set Up Send on Behalf Of Permissions
+	
+	Additional query words: OL2000 OL98 OL97
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbHWMAC kbOSMAC kbOutlookSearch kbExchangeSearch kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbScheduleSearch kbZNotKeyword3 kbOutlookMacSearch
+	Version           : MACINTOSH:8.0,8.1,8.2,8.2.1; WINDOWS:2000,4.0,5.0,5.5,7.0a,7.5,8.0; :
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

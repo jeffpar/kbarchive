@@ -1,0 +1,80 @@
+---
+layout: page
+title: "Q139658: Writer/Artist: ErrMsg: Could Not Create The File Named..."
+permalink: kb/139/Q139658/
+---
+
+## Q139658: Writer/Artist: ErrMsg: Could Not Create The File Named...
+
+	Article: Q139658
+	Product(s): Microsoft Home Kids Products
+	Version(s): MACINTOSH:1.0,1.1,1.1a
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 29-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Creative Writer for the Macintosh, versions 1.0, 1.1, 1.1a 
+	- Microsoft Fine Artist for the Macintosh, versions 1.0, 1.1, 1.1a 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you run Setup for Creative Writer or Fine Artist, you may receive one of
+	the following error messages:
+	
+	  Setup Message
+	  Could not create the file named '[your hard drive name]: MSKIDS:
+	  CLEANUP'
+	
+	-or-
+	
+	  Setup Message
+	  Could not create the file named '[your hard drive name]: MSKIDS:
+	  Creative Writer 1.1(a)'
+	
+	-or-
+	
+	  Setup Message
+	  Could not create the file named '[your hard drive name]: MSKIDS:
+	  Fine Artist 1.1'
+	
+	where [your hard drive name] is the name of your hard drive.
+	
+	These errors are generated when a previous installation of Creative Writer or
+	Fine Artist has been moved to the System Folder.
+	
+	RESOLUTION
+	==========
+	
+	The MSKids folder, located in the System Folder, must be removed. To remove the
+	folder, do the following:
+	
+	1. Open the System Folder.
+	
+	2. On the View menu, click By Name.
+	
+	3. Locate the MSKids folder(s).
+	
+	4. Drag the MSKids folder(s) to the Trash.
+	
+	5. Run Setup for Creative Writer or Fine Artist again.
+	
+	The program should install successfully.
+	
+	MORE INFORMATION
+	================
+	
+	
+	Additional query words: kids mskids artist maggie max writer 1.10 1.10a 1.00 writer\artist try again quit set up errors cannot won't run wont will can't install installation sets errmsg
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbPTProdChange kbCreativeWriter110Mac kbCreativeWriter110aMac kbCreativeWriter100Mac kbFineArtist110Mac kbFineArtist110aMac kbFineArtist100Mac
+	Version           : MACINTOSH:1.0,1.1,1.1a
+	
+	=============================================================================
+	

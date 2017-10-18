@@ -1,0 +1,177 @@
+---
+layout: page
+title: "Q183522: FIX: Divide by Zero Creates Err with Third-Party Print Drivers"
+permalink: kb/183/Q183522/
+---
+
+## Q183522: FIX: Divide by Zero Creates Err with Third-Party Print Drivers
+
+	Article: Q183522
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:5.0,5.0a,6.0
+	Operating System(s): 
+	Keyword(s): kbservicepack kbvfp600 kbvfp600fix kbVS600sp2 kbVS600SP1 kbVS600sp3fix
+	Last Modified: 16-JUN-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If certain third-party printer or fax drivers are loaded when one of several
+	commands, which invoke printer driver routines are used, and followed by
+	division by zero, Visual FoxPro 5.0 or 5.0a terminates with the following
+	error:
+	
+	  This program has performed and illegal operation and will be shut down.
+	  If the problem persists, contact the program vendor.
+	
+	When you click the Details button, the following information displays:
+	
+	  VFP caused an exception 10H in module VFP.EXE at <address>.
+	
+	Under similar circumstances, Visual FoxPro 6.0 may hang or cause Windows 95 or
+	Windows 98 to display a blue screen error similar to the following:
+	
+	  A fatal exception 0D has occurred at 0028:c0038f07 in VXD VMCPD(01) +
+	  00002DB. The current application will be terminated.
+	
+	  * Press any key to terminate the current application.
+	  * Press CTRL+ALT+DEL again to restart your computer. You will lose
+	  any unsaved information in all applications.
+	
+	These errors can occur during report printing, report preview, or issuing one of
+	several other commands followed by a BROWSE with the KEY clause. This error may
+	also occur randomly. Please see the RESOLUTION section for more scenarios that
+	can cause the errors.
+	
+	CAUSE
+	=====
+	
+	Visual FoxPro sets the numeric coprocessor to handle exceptions in hardware. The
+	printer driver routines change this numeric coprocessor setting so that
+	coprocessor exception handling takes place in software, but fails to restore the
+	original setting when the printer driver routines have completed. When a
+	subsequent numeric coprocessor exception occurs in Visual FoxPro (division by
+	zero, for instance), the numeric coprocessor expects the exception to be handled
+	in software. Visual FoxPro is not able to do this, and an exception error, crash
+	or hang occurs.
+	
+	RESOLUTION
+	==========
+	
+	Here are three ways you can work around this error:
+	
+	- Use a printer driver supplied with Windows 95.
+	
+	-or-
+	
+	- Disable the numeric coprocessor through Control Panel. Open Control Panel and
+	  double-click the System icon. In the System Properties dialog box, select the
+	  Device Manager tab. Scroll down the list and expand the System Devices
+	  listing. Double-click Numeric Data Processor and select the Settings tab.
+	  Make sure the option button "Never use the numeric data processor" is
+	  selected.
+	
+	  NOTE: This change may result in the following error messages on reboot:
+	
+	  A fatal exception 0D has occurred at 0028:c0038f07 in VXD VMCPD(01) +
+	  00002DB. The current application will be terminated. * Press any key to
+	  terminate the current application. * Press CTRL+ALT+DEL again to restart your
+	  computer. You will lose any unsaved information in all applications.
+	
+	  If this happens, restart in safe mode.
+	
+	  Enable the numeric coprocessor through the Control Panel. Open Control Panel
+	  and double-click the System icon. In the System Properties dialog box, select
+	  the Device Manager tab. Scroll down the list and expand the System Devices
+	  listing. Double-click Numeric Data Processor and select the Settings tab.
+	  Make sure the option button "Always use the numeric data processor" is
+	  selected. After restarting the computer, the preceding error is gone;
+	  however, either item 1 or item 3 is required to resolve the 10h error.
+	
+	-or-
+	
+	- Use the _fpreset function in the Microsoft Visual C++ run-time DLL to reset
+	  the numeric coprocessor. This is demonstrated in the following code:
+	
+	       *-- Code begins here
+	        DECLARE _fpreset IN msvcrt20.dll
+	        =_fpreset()
+	        *-- Code ends here
+	
+	This can be implemented within an application by adding this to the beginning of
+	your main program:
+	
+	     DECLARE _fpreset IN msvcrt20.dll
+	
+	The DECLARE statement only needs to be made once. You should use the call to
+	_fpreset() immediately after using any of the following functions or commands:
+	
+	     GETPRINTER()
+	     REPORT FORM ... TO PRINTER
+	     REPORT FORM ... PREVIEW
+	     SET( "Printer", 2)
+	     SET( "Printer", 3)
+	     SET PRINTER TO NAME <printer name>
+	     SYS(1037)
+	
+	You should also call _fpreset() after calling File/Page Setup from the Visual
+	FoxPro menu, or after clicking the "Print One Copy" button on the FoxPro
+	Standard toolbar.
+	
+	It may also be necessary to add a call to _fpreset() to Dataenvironment
+	BeforeOpenTables and Destroy methods of each report. Under some circumstances,
+	you may also need to add _fpreset() calls to the end of the Load and Destroy
+	methods of forms, especially in, but not limited to, custom forms from which
+	your application does printing.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article.
+	
+	This bug was corrected in Visual Studio 6.0 Service Pack 3. For more information
+	about Visual Studio service packs, please see the following articles in the
+	Microsoft Knowledge Base:
+	
+	Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+	
+	Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+	
+	MORE INFORMATION
+	================
+	
+	1. On a Windows 95 computer, install the Hewlett-Packard 6.0 printer driver.
+	
+	
+	  The Hewlett-Packard 6.0 printer does not have to be physically installed on
+	  the computer; just the print driver is needed.
+	
+	2. Run the following code:
+	
+	     *-- Code begins here.
+	     =GETPRINTER()  && Select the HP6 printer.
+	     m1 = 9/0 && Any division by zero will work.
+	     *-- Code ends here.
+	
+	3. Alternatively, create a report, add a text field and set the expression to
+	  "m1/m2" without the quotes, or set the expression to 9/0 and then, click OK.
+	  Next, preview the report.
+	
+	Additional query words: kbvfp600fix kbdse LaserJet LJ Lexmark
+	
+	======================================================================
+	Keywords          : kbservicepack kbvfp600 kbvfp600fix kbVS600sp2 kbVS600SP1 kbVS600sp3fix 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+	Version           : WINDOWS:5.0,5.0a,6.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

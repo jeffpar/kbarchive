@@ -1,0 +1,172 @@
+---
+layout: page
+title: "Q102942: Key Differences Between NetBEUI and NBF"
+permalink: kb/102/Q102942/
+---
+
+## Q102942: Key Differences Between NetBEUI and NBF
+
+	Article: Q102942
+	Product(s): Microsoft Windows NT
+	Version(s): 3.1 4.0
+	Operating System(s): 
+	Keyword(s): kbnetwork
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 3.1 
+	- Microsoft Windows NT Workstation version 3.1 
+	- Microsoft Windows NT Advanced Server, version 3.1 
+	- Microsoft Windows NT Server version 4.0 
+	- Microsoft Windows NT Workstation version 4.0 
+	-------------------------------------------------------------------------------
+	
+	
+	The NBF (NetBIOS Frame) protocol is no different from the NetBEUI
+	protocol. To someone monitoring a network line, there is no difference
+	in network packets; and, this holds true for any combination of
+	Windows NT and non-Windows NT computers. The differences lie in the
+	Windows NT implementation of the NetBIOS protocol.
+	
+	Use of TDI
+	----------
+	
+	NBF uses the upper edge of the TDI interface. NetBEUI uses the upper
+	edge of the NetBIOS interface.
+	
+	With OS/2 and Windows for Workgroups, the server and redirector (and
+	any other transport clients) submit network control blocks (NCBs) to
+	NetBEUI. NCBs submitted by a NetBIOS application are also passed
+	directly to NetBEUI. The format of all of these NCBs is the same, as
+	defined by the IBM specification.
+	
+	With Windows NT, the server and redirector submit TDI requests to
+	NetBEUI. The set of TDI calls implement the same general semantics as
+	the NetBIOS NCBs, but are optimized for a 32-bit kernel interface. An
+	NCB passed in by a NetBIOS application is passed to the NetBIOS driver
+	(NETBIOS.SYS), which examines the NCB and then submits the
+	corresponding TDI call or calls to NetBEUI.
+	
+	TDI is also used by all other transports, such as the streams
+	environment or native TDI transports such as AppleTalk. There is no
+	user mode TDI interface currently; applications should use NetBIOS or
+	Windows Sockets.
+	
+	Use of NDIS 3.0
+	---------------
+	
+	NBF uses the lower edge of the NDIS 3.0 interface. NDIS 3.0 is
+	functionally similar to NDIS 2.0 but has some improvements that
+	benefit transports. The interface is a fully 32-bit asynchronous
+	interface.
+	
+	Removal of NetBIOS Session Number Limits
+	----------------------------------------
+	
+	One of the benefits of TDI is that it does not use a one byte session
+	number to identify a session, but rather a 32-bit handle. Therefore, a
+	single TDI client may establish a virtually infinite number of
+	sessions over a given TDI provider. For example, the server has been
+	run over NBF with more than 1000 clients connected simultaneously on a
+	single network adapter.
+	
+	NBF is still constrained by the fact that the on-the-wire protocol
+	used by NetBEUI and NBF also uses a one byte session number. For any
+	connection between two adapters, there will be a local session number
+	(assigned by this machine) and a remote session number (assigned by
+	the other machine).
+	
+	With NetBEUI the local session numbers were assigned globally,
+	limiting NetBEUI to a total of 254 sessions (the session numbers and
+	255 cannot be used). NBF gets around this by assigning its local
+	session numbers on a per-remote-adapter basis. That is, it may use
+	local session number 1 when talking to adapter A and also have a
+	session locally numbered 1 when talking to adapter B. The two remote
+	computers will not get confused because adapter A does not see frames
+	destined for B, and vice versa. However, if NBF establishes another
+	session to A at the same time, it must use a session number other than
+	1 to keep things in order.
+	
+	NBF can only do this when it is able to determine beforehand which
+	adapter the connection is going to be made to. There are three cases
+	that need to be considered:
+	
+	- A client connecting to NBF. When a client connects to a computer running NBF,
+	  NBF can inspect the incoming frame to determine the remote adapter's address
+	  and assign a session number for that adapter.
+	
+	- NBF connecting to a remote client with a unique NetBIOS name. When NBF is
+	  connecting to a remote client, it first sends a FIND.NAME frame. If the
+	  remote client responds, indicating the name is a unique name, NBF can look at
+	  the remote adapter address in the response and assign a session number for
+	  that adapter because it knows only that remote owns this name.
+	
+	- NVB connecting to a remote client with a group NetBIOS name. If the FIND.NAME
+	  response indicates that the connection is being made to a group name, NBF has
+	  no way of knowing which adapter belonging to the group will respond when it
+	  tries to connect, so it has to assign a session number on a global basis,
+	  just as NetBEUI did for all connections.
+	
+	So, NBF has no limit on sessions, unless it is establishing
+	connections to group names in which case the old NetBEUI limit still
+	applies. To be accurate, if you have n group name connections, then
+	you can have 254-n connections to any given remote client. If n is 0,
+	then you can have a full 254 connections to a remote. If n is 253, you
+	can still have 1 connection to each remote, but if n is 254, then no
+	connections can be made until one of the existing ones is
+	disconnected.
+	
+	T1 Tuning
+	---------
+	
+	NBF tunes its T1 parameter dynamically on a per-link basis, based on
+	link conditions and throughput. The T1 parameter specified in the
+	Registry is used as a starting point, so if it is known that NBF is
+	going to be talking over a slow link, this can be increased. If this
+	is not done, however, NBF will detect the slow link quickly and adapt
+	to it.
+	
+	T2 and Ti are not adapted dynamically.
+	
+	No ASyncBEUI Needed for RAS
+	---------------------------
+	
+	There is no separate ASyncBEUI product for RAS. NBF handles
+	communications over the RAS link as well as over the LAN. In general
+	NBF's auto-tuning makes specific RAS parameters unnecessary. The
+	exception is the WanNameQueryRetries parameter which corresponds to
+	NameQueryRetries but is used for connections going over the RAS line.
+	
+	Memory Usage Tuning
+	-------------------
+	
+	NBF automatically allocates memory when it needs to satisfy the
+	requests made by its clients. Therefore, NBF does not need to be
+	configured with the number of sessions, packets, buffers, etc. to
+	allocate. However, there are hidden Registry parameters in NBF that
+	can be used to control these if desired. (Query in the Microsoft
+	Knowledge Base for more information using the following key words: NBF
+	and REGISTRY.) This also means that NBF uses memory only when needed.
+	On an inactive machine it will consume very little memory.
+	
+	No Session Alives
+	-----------------
+	
+	NBF does not use NetBIOS session alive frames to determine if the
+	remote client is up. Instead, it sends LLC poll frames which serve the
+	same purpose. This may confuse people who are sniffing the network and
+	are used to seeing session alive frames from NetBEUI. NBF will respond
+	correctly to session alive frames, so this should cause no
+	interoperability problems with other implementations of NetBEUI.
+	
+	Additional query words: wfw wfwg prodnt
+	
+	======================================================================
+	Keywords          : kbnetwork 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTW310 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+	Version           : 3.1 4.0
+	
+	=============================================================================
+	

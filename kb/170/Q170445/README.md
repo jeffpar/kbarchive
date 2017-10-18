@@ -1,0 +1,77 @@
+---
+layout: page
+title: "Q170445: XADM: Exchange Server Reboots Frequently"
+permalink: kb/170/Q170445/
+---
+
+## Q170445: XADM: Exchange Server Reboots Frequently
+
+	Article: Q170445
+	Product(s): Microsoft Exchange
+	Version(s): WinNT:5.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 22-APR-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The computer that is running Microsoft Exchange Server reboots frequently (every
+	few minutes).
+	
+	CAUSE
+	=====
+	
+	McAfee anti-virus software running on the Exchange Server computer conflicts
+	with the Microsoft Exchange Server software and causes the server to reboot.
+	
+	WORKAROUND
+	==========
+	
+	You can work around the problem using either of the following methods.
+	
+	Prevent Services from Starting
+	------------------------------
+	
+	One way to avoid the conflict is to prevent the Microsoft Exchange Server
+	services from starting up. To do this, rename the Exchsrvr\Dsadata directory, or
+	disconnect the drives which contain the Exchange Server databases.
+	
+	Set Services to Manual
+	----------------------
+	
+	As an alternate method to work around the problem, you can change the Microsoft
+	Exchange Services Startup Type option from Automatic to Manual. After the system
+	boots with the Exchange Server services stopped, set the McAfee anti-virus
+	service to manual startup and restart the server or remove the McAfee software
+	from the server.
+	
+	The anti-virus software incorrectly identifies one or more files as a virus and
+	may attempt to repair the files that appear to be damaged. This might corrupt
+	some Exchange files that were modified through the conflict process. Because the
+	server has been rebooting, you should verify the integrity of the Exchange
+	files. To do this, run Mtacheck.exe now. You should also verify possible damage
+	to the information store databases by running the following command:
+	
+	  edbutil /MH C:\exchsrvr\Priv.edb > c:\dumpedb.txt
+	
+	
+	The third-party product discussed here is manufactured by a vendor independent of
+	Microsoft; we make no warranty, implied or otherwise, regarding this product's
+	performance or reliability.
+	
+	Additional query words: McAfee AntiVirus Network Associates, Inc. NAI virus
+	======================================================================
+	Keywords          :  
+	Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+	Version           : WinNT:5.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

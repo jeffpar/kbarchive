@@ -1,0 +1,52 @@
+---
+layout: page
+title: "Q130227: Importing Scripts From More Than One Domain"
+permalink: kb/130/Q130227/
+---
+
+## Q130227: Importing Scripts From More Than One Domain
+
+	Article: Q130227
+	Product(s): Microsoft Windows NT
+	Version(s): 3.1 3.5 3.51 4.0
+	Operating System(s): 
+	Keyword(s): kbnetwork
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 3.1 
+	- Microsoft Windows NT Workstation version 3.1 
+	- Microsoft Windows NT Advanced Server, version 3.1 
+	- Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+	- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+	-------------------------------------------------------------------------------
+	
+	When you configure the import list for directory replication, you have the
+	option to add more than one domain to the From List. If each of these
+	domains are replicating to the same directory, such as the default
+	%SYSTEMROOT%\SYSTEM32\REPL\IMPORT\SCRIPTS directory, only one of those
+	domain's files are stored in the directory.
+	
+	The server imports files from the first domain and then imports files from
+	the second domain. When it sees that there are files in the import
+	directory that don't match what is coming from the second domain, it
+	removes those files. Those files were from the first domain, so now the
+	first domain's files are no longer in this server's import directory.
+	
+	Windows NT behaves this way by design. An import computer can import from
+	many domains and computers, but a given subdirectory can only be imported
+	from one exporter. In particular, no two of the exporters may contain a
+	REPL\EXPORT\SCRIPTS directory.
+	
+	
+	Additional query words: prodnt
+	
+	======================================================================
+	Keywords          : kbnetwork 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTW310 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS351search kbWinNTS350search kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+	Version           : 3.1 3.5 3.51 4.0
+	
+	=============================================================================
+	

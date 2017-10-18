@@ -1,0 +1,490 @@
+---
+layout: page
+title: "Q174074: Security Event Descriptions"
+permalink: kb/174/Q174074/
+---
+
+## Q174074: Security Event Descriptions
+
+	Article: Q174074
+	Product(s): Microsoft Windows NT
+	Version(s): winnt:3.5,3.51,4.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 09-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+	- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article contains descriptions of various security-related and auditing-
+	related events, and tips for interpreting them.
+	
+	These events will all appear in the Security event log and will be logged with a
+	source of "Security."
+	
+	MORE INFORMATION
+	================
+	
+	  Event ID: 512
+	      Type: Success Audit
+	Description: Windows NT is starting up.
+	
+	  Event ID: 513
+	      Type: Success Audit
+	Description: Windows NT is shutting down. All logon sessions will be
+	            terminated by this shutdown.
+	
+	  Event ID: 514
+	      Type: Success Audit
+	Description: An authentication package has been loaded by the Local
+	            Security Authority. This authentication package will be
+	            used to authenticate logon attempts.
+	            Authentication Package Name: %1
+	
+	  Event ID: 515
+	      Type: Success Audit
+	Description: A trusted logon process has registered with the Local
+	            Security Authority. This logon process will be trusted to
+	            submit logon requests.
+	            Logon Process Name: %1
+	
+	  Event ID: 516
+	      Type: Success Audit
+	Description: Internal resources allocated for the queuing of audit
+	            messages have been exhausted, leading to the loss of some
+	            audits.
+	            Number of audit messages discarded: %1
+	
+	  Event ID: 517
+	      Type: Success Audit
+	Description: The audit log was cleared
+	            Primary User Name: %1      Primary Domain: %2
+	            Primary Logon ID: %3       Client User Name: %4
+	            Client Domain: %5          Client Logon ID: %6
+	
+	  Event ID: 518
+	      Type: Success Audit
+	Description: A notification package has been loaded by the Security
+	            Account Manager. This package will be notified of any
+	            account or password changes.
+	            Notification Package Name: %1
+	
+	  Event ID: 528
+	      Type: Success Audit
+	Description: Successful Logon:
+	            User Name: %1             Domain: %2
+	            Logon ID: %3              Logon Type: %4
+	            Logon Process: %5         Authentication Package: %6
+	            Workstation Name: %7
+	
+	  Event ID: 529
+	      Type: Failure Audit
+	Description: Logon Failure:
+	            Reason: Unknown user name or bad password
+	            User Name: %1              Domain: %2
+	            Logon Type: %3             Logon Process: %4
+	            Authentication Package: %5 Workstation Name: %6
+	
+	  Event ID: 530
+	      Type: Failure Audit
+	Description: Logon Failure:
+	            Reason: Account logon time restriction violation
+	            User Name: %1              Domain: %2
+	            Logon Type: %3             Logon Process: %4
+	            Authentication Package: %5 Workstation Name: %6
+	
+	  Event ID: 531
+	      Type: Failure Audit
+	Description: Logon Failure:
+	            Reason: Account currently disabled
+	            User Name: %1              Domain: %2
+	            Logon Type: %3             Logon Process: %4
+	            Authentication Package: %5 Workstation Name: %6
+	
+	  Event ID: 532
+	      Type: Failure Audit
+	Description: Logon Failure:
+	            Reason: The specified user account has expired
+	            User Name: %1              Domain: %2
+	            Logon Type: %3             Logon Process: %4
+	            Authentication Package: %5 Workstation Name: %6
+	
+	  Event ID: 533
+	      Type: Failure Audit
+	Description: Logon Failure:
+	            Reason: User not allowed to logon at this computer
+	            User Name: %1              Domain: %2
+	            Logon Type: %3             Logon Process: %4
+	            Authentication Package: %5 Workstation Name: %6
+	
+	  Event ID: 534
+	      Type: Failure Audit
+	Description: Logon Failure:
+	            Reason: The user has not been granted the requested logon
+	            type at this machine
+	            User Name: %1              Domain: %2
+	            Logon Type: %3             Logon Process: %4
+	            Authentication Package: %5 Workstation Name: %6
+	
+	  Event ID: 535
+	      Type: Failure Audit
+	Description: Logon Failure:
+	            Reason: The specified account's password has expired
+	            User Name: %1              Domain: %2
+	            Logon Type: %3             Logon Process: %4
+	            Authentication Package: %5 Workstation Name: %6
+	
+	  Event ID: 536
+	      Type: Failure Audit
+	Description: Logon Failure:
+	            Reason: The NetLogon component is not active
+	            User Name: %1              Domain: %2
+	            Logon Type: %3             Logon Process: %4
+	            Authentication Package: %5 Workstation Name: %6
+	
+	  Event ID: 537
+	      Type: Failure Audit
+	Description: Logon Failure:
+	            Reason: An unexpected error occurred during logon
+	            User Name: %1              Domain: %2
+	            Logon Type: %3             Logon Process: %4
+	            Authentication Package: %5 Workstation Name: %6
+	
+	  Event ID: 538
+	      Type: Success Audit
+	Description: User Logoff:
+	            User Name: %1             Domain: %2
+	            Logon ID: %3              Logon Type: %4
+	
+	  Event ID: 539
+	      Type: Failure Audit
+	Description: Logon Failure:
+	            Reason: Account locked out
+	            User Name: %1              Domain: %2
+	            Logon Type: %3             Logon Process: %4
+	            Authentication Package: %5 Workstation Name: %6
+	
+	  Event ID: 560
+	      Type: Success Audit
+	Description: Object Open:
+	            Object Server: %1          Object Type: %2
+	            Object Name: %3            New Handle ID: %4
+	            Operation ID: {%5,%6}
+	            Process ID: %7             Primary User Name: %8
+	            Primary Domain: %9         Primary Logon ID: %10
+	            Client User Name: %11      Client Domain: %12
+	            Client Logon ID: %13       Accesses %14
+	            Privileges %15
+	
+	  Event ID: 561
+	      Type: Success Audit
+	Description: Handle Allocated:
+	            Handle ID: %1              Operation ID: {%2,%3}
+	            Process ID: %4
+	
+	  Event ID: 562
+	      Type: Success Audit
+	Description: Handle Closed:
+	            Object Server: %1          Handle ID: %2
+	            Process ID: %3
+	
+	  Event ID: 563
+	      Type: Success Audit
+	Description: Object Open for Delete:
+	            Object Server: %1          Object   Type: %2
+	            Object Name: %3            New Handle ID: %4
+	            Operation ID: {%5,%6}
+	            Process ID: %7             Primary User Name: %8
+	            Primary Domain: %9         Primary Logon ID: %10
+	            Client User Name: %11      Client Domain: %12
+	            Client Logon ID: %13       Accesses %14
+	            Privileges %15
+	
+	  Event ID: 564
+	      Type: Success Audit
+	Description: Object Deleted:
+	            Object Server: %1          Handle ID: %2
+	            Process ID: %3
+	
+	  Event ID: 576
+	      Type: Success Audit
+	Description: Special privileges assigned to new logon:
+	            User Name: %1             Domain: %2
+	            Logon ID: %3              Assigned: %4
+	
+	  Event ID: 577
+	      Type: Success Audit
+	Description: Privileged Service Called:
+	            Server: %1              Service: %2
+	            Primary User Name: %3      Primary Domain: %4
+	            Primary Logon ID: %5       Client User Name: %6
+	            Client Domain: %7          Client Logon ID: %8
+	            Privileges: %9
+	
+	  Event ID: 578
+	      Type: Failure Audit
+	Description: Privileged object operation:
+	            Object Server: %1          Object Handle: %2
+	            Process ID: %3             Primary User Name: %4
+	            Primary Domain: %5         Primary Logon ID: %6
+	            Client User Name: %7       Client Domain: %8
+	            Client Logon ID: %9        Privileges: %10
+	
+	  Event ID: 592
+	      Type: Success Audit
+	Description: A new process has been created:
+	            New Process ID: %1         Image File Name: %2
+	            Creator Process ID: %3     User Name: %4
+	            Domain: %5                 Logon ID: %6
+	
+	  Event ID: 593
+	      Type: Success Audit
+	Description: A process has exited:
+	            Process ID: %1             User Name: %2
+	            Domain: %3              Logon ID: %4
+	
+	  Event ID: 594
+	      Type: Success Audit
+	Description: A handle to an object has been duplicated:
+	            Source Handle ID: %1       Source Process ID: %2
+	            Target Handle ID: %3       Target Process ID: %4
+	
+	  Event ID: 595
+	      Type: Success Audit
+	Description: Indirect access to an object has been obtained:
+	            Object   Type: %1          Object Name: %2
+	            Process ID: %3             Primary User Name: %4
+	            Primary Domain: %5         Primary Logon ID: %6
+	            Client User Name: %7       Client Domain: %8
+	            Client Logon ID: %9        Accesses: %10
+	
+	  Event ID: 608
+	      Type: Success Audit
+	Description: User Right Assigned:
+	            User Right: %1             Assigned To: %2
+	            Assigned By:
+	            User Name: %3              Domain: %4
+	            Logon ID: %5
+	
+	  Event ID: 609
+	      Type: Success Audit
+	Description: User Right Removed:
+	            User Right: %1             Removed From: %2
+	            Removed By:
+	            User Name: %3              Domain: %4
+	            Logon ID: %5
+	
+	  Event ID: 610
+	      Type: Success Audit
+	Description: New Trusted Domain:
+	            Domain Name: %1            Domain ID: %2
+	            Established By:
+	            User Name: %3              Domain: %4
+	            Logon ID: %5
+	
+	  Event ID: 611
+	      Type: Success Audit
+	Description: Removing Trusted Domain:
+	            Domain Name: %1            Domain ID: %2
+	            Removed By:
+	            User Name: %3              Domain: %4
+	            Logon ID: %5
+	
+	  Event ID: 612
+	      Type: Success Audit
+	Description: Audit Policy Change:
+	            New Policy:
+	            Success   Failure
+	              %1         %2    System
+	              %3         %4    Logon/Logoff
+	              %5         %6    Object Access
+	              %7         %8    Privilege Use
+	              %9        %10    Detailed Tracking
+	             %11        %12    Policy Change
+	             %13        %14    Account Management
+	            Changed By:
+	            User Name: %15             Domain Name: %16
+	            Logon ID: %17
+	
+	  Event ID: 624
+	      Type: Success Audit
+	Description: User Account Created:
+	            New Account Name: %1       New Domain: %2
+	            New Account ID: %3         Caller User Name: %4
+	            Caller Domain: %5          Caller Logon ID: %6
+	            Privileges %7
+	
+	  Event ID: 625
+	      Type: Success Audit
+	Description: User Account Type Change:
+	            Target Account Name: %1    Target Domain: %2
+	            Target Account ID: %3      New Type: %4
+	            Caller User Name: %5       Caller Domain: %6
+	            Caller Logon ID: %7
+	
+	  Event ID: 626
+	      Type: Success Audit
+	Description: User Account Enabled:
+	            Target Account Name: %1    Target Domain: %2
+	            Target Account ID: %3      Caller User Name: %4
+	            Caller Domain: %5          Caller Logon ID: %6
+	
+	  Event ID: 627
+	      Type: Success Audit
+	Description: Change Password Attempt:
+	            Target Account Name: %1    Target Domain: %2
+	            Target Account ID: %3      Caller User Name: %4
+	            Caller Domain: %5          Caller Logon ID: %6
+	            Privileges: %7
+	
+	  Event ID: 628
+	      Type: Success Audit
+	Description: User Account password set:
+	            Target Account Name: %1    Target Domain: %2
+	            Target Account ID: %3      Caller User Name: %4
+	            Caller Domain: %5          Caller Logon ID: %6
+	
+	  Event ID: 629
+	      Type: Success Audit
+	Description: User Account Disabled:
+	            Target Account Name: %1    Target Domain: %2
+	            Target Account ID: %3      Caller User Name: %4
+	            Caller Domain: %5          Caller Logon ID: %6
+	
+	  Event ID: 630
+	      Type: Success Audit
+	Description: User Account Deleted:
+	            Target Account Name: %1    Target Domain: %2
+	            Target Account ID: %3      Caller User Name: %4
+	            Caller Domain: %5          Caller Logon ID: %6
+	            Privileges: %7
+	
+	  Event ID: 631
+	      Type: Success Audit
+	Description: Global Group Created:
+	            New Account Name: %1       New Domain: %2
+	            New Account ID: %3         Caller User Name: %4
+	            Caller Domain: %5          Caller Logon ID: %6
+	            Privileges: %7
+	
+	  Event ID: 632
+	      Type: Success Audit
+	Description: Global Group Member Added:
+	            Member: %1                 Target Account Name: %2
+	            Target Domain: %3          Target Account ID: %4
+	            Caller User Name: %5       Caller Domain: %6
+	            Caller Logon ID: %7        Privileges: %8
+	
+	  Event ID: 633
+	      Type: Success Audit
+	Description: Global Group Member Removed:
+	            Member: %1                 Target Account Name: %2
+	            Target Domain: %3          Target Account ID: %4
+	            Caller User Name: %5       Caller Domain: %6
+	            Caller Logon ID: %7        Privileges: %8
+	
+	  Event ID: 634
+	      Type: Success Audit
+	Description: Global Group Deleted:
+	            Target Account Name: %1    Target Domain: %2
+	            Target Account ID: %3      Caller User Name: %4
+	            Caller Domain: %5          Caller Logon ID: %6
+	            Privileges: %7
+	
+	  Event ID: 635
+	      Type: Success Audit
+	Description: Local Group Created:
+	            New Account Name: %1       New Domain: %2
+	            New Account ID: %3         Caller User Name: %4
+	            Caller Domain: %5          Caller Logon ID: %6
+	            Privileges: %7
+	
+	  Event ID: 636
+	      Type: Success Audit
+	Description: Local Group Member Added:
+	            Member: %1                 Target Account Name: %2
+	            Target Domain: %3          Target Account ID: %4
+	            Caller User Name: %5       Caller Domain: %6
+	            Caller Logon ID: %7        Privileges: %8
+	
+	  Event ID: 637
+	      Type: Success Audit
+	Description: Local Group Member Removed:
+	            Member: %1                 Target Account Name: %2
+	            Target Domain: %3          Target Account ID: %4
+	            Caller User Name: %5       Caller Domain: %6
+	            Caller Logon ID: %7        Privileges: %8
+	
+	  Event ID: 638
+	      Type: Success Audit
+	Description: Local Group Deleted:
+	            Target Account Name: %1    Target Domain: %2
+	            Target Account ID: %3      Caller User Name: %4
+	            Caller Domain: %5          Caller Logon ID: %6
+	            Privileges: %7
+	
+	  Event ID: 639
+	      Type: Success Audit
+	Description: Local Group Changed:
+	            Target Account Name: %1    Target Domain: %2
+	            Target Account ID: %3      Caller User Name: %4
+	            Caller Domain: %5          Caller Logon ID: %6
+	            Privileges: %7
+	
+	  Event ID: 640
+	      Type: Success Audit
+	Description: General Account Database Change:
+	            Type of change: %1         Object Type: %2
+	            Object Name: %3            Object ID: %4
+	            Caller User Name: %5       Caller Domain: %6
+	            Caller Logon ID: %7
+	
+	  Event ID: 641
+	      Type: Success Audit
+	Description: Global Group Changed:
+	            Target Account Name: %1    Target Domain: %2
+	            Target Account ID: %3      Caller User Name: %4
+	            Caller Domain: %5          Caller Logon ID: %6
+	            Privileges: %7
+	
+	  Event ID: 642
+	      Type: Success Audit
+	Description: User Account Changed:
+	            Target Account Name: %1    Target Domain: %2
+	            Target Account ID: %3      Caller User Name: %4
+	            Caller Domain: %5          Caller Logon ID: %6
+	            Privileges: %7
+	
+	  Event ID: 643
+	      Type: Success Audit
+	Description: Domain Policy Changed:
+	            Domain: %1                 Domain ID: %2
+	            Caller User Name: %3       Caller Domain: %4
+	            Caller Logon ID: %5        Privileges: %6
+	
+	  Event ID: 644
+	Event Type: Success Audit
+	Description: User Account Locked Out
+	Target Account Name:  %1   Target Account ID: %2
+	Caller Machine Name:  %3    Caller User Name:  %4
+	Caller Domain:      %5        Caller Logon ID:  %6
+	
+	
+	Additional query words: hack sec evt
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+	Version           : winnt:3.5,3.51,4.0
+	Hardware          : x86
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

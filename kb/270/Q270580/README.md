@@ -1,0 +1,94 @@
+---
+layout: page
+title: "Q270580: &quot;Unable to Create Mapping&quot; Error Message Re-creating DFS Share"
+permalink: kb/270/Q270580/
+---
+
+## Q270580: &quot;Unable to Create Mapping&quot; Error Message Re-creating DFS Share
+
+	Article: Q270580
+	Product(s): Microsoft Windows NT
+	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
+	Operating System(s): 
+	Keyword(s): kberrmsg kbnetwork kbtool
+	Last Modified: 11-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4, 4.0 SP5, 4.0 SP6, 4.0 SP6a 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+	
+	  Q256986 Description of the Microsoft Windows Registry
+	
+	SYMPTOMS
+	========
+	
+	When you try to re-create a DFS share, you may receive the following error
+	message:
+	
+	  Unable to create a mapping
+	
+	However, you are still able to create new DFS shares after you receive the error
+	message.
+	
+	CAUSE
+	=====
+	
+	This issue can occur if the DFS share is damaged. Note that when this occurs,
+	you may not be able to delete the damaged share.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue:
+	
+	1. Log on to the Windows NT Server-based computer that hosts the DFS root as an
+	  administrator.
+	
+	2. Click Start, point to Settings, and then click Control Panel.
+	
+	3. Double-click Services.
+	
+	4. Click DFS Service, and then click Startup.
+	
+	5. Click Disabled, and then click OK.
+	
+	6. Quit all programs, and then restart the server.
+	
+	7. Log on to the server as an administrator.
+	
+	8. Delete the damaged DFS share.
+	
+	9. Repeat steps 2-5, but enable the DFS service in step 5.
+	
+	10. Restart the server, and then log on as an administrator.
+	
+	11. Re-create the DFS share.
+	
+	MORE INFORMATION
+	================
+	
+	WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+	that may require you to reinstall your operating system. Microsoft cannot
+	guarantee that you can solve problems that result from using Registry Editor
+	incorrectly. Use Registry Editor at your own risk.
+	
+	DFS share information is recorded in the following registry key:
+	
+	  HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DFSDriver\LocalVolumes
+	
+	If needed, you can delete orphaned entries.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kberrmsg kbnetwork kbtool 
+	Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400sp6 kbWinNTS400sp5 kbWinNTS400sp4 kbWinNTS400sp3 kbWinNTS400sp2 kbWinNTS400sp1 kbWinNTS400search kbWinNTS400
+	Version           : winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
+	Issue type        : kbprb
+	
+	=============================================================================
+	

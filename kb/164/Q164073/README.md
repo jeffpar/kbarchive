@@ -1,0 +1,80 @@
+---
+layout: page
+title: "Q164073: ASP Queries When SSL Enabled Gives Incomplete Results or Errors"
+permalink: kb/164/Q164073/
+---
+
+## Q164073: ASP Queries When SSL Enabled Gives Incomplete Results or Errors
+
+	Article: Q164073
+	Product(s): Internet Information Server
+	Version(s): 1.0,3.0,3.01
+	Operating System(s): 
+	Keyword(s): kbtshoot
+	Last Modified: 16-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Server 3.0 
+	- Microsoft Internet Explorer version 3.01 for Windows NT 4.0 
+	- Microsoft Active Server Pages, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you do an ODBC query to a database using Active Server Pages (ASP), or you
+	run a large ASP file while security is enabled using Secure Sockets Layer (SSL),
+	you may receive incomplete results or random errors may be generated in Internet
+	Explorer.
+	
+	This behavior is random. You may be able to run the query with all records
+	reported, but when you click refresh in the browser window the symptoms
+	mentioned in the preceding paragraph may occur.
+	
+	WORKAROUND
+	==========
+	
+	WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+	problems that may require you to reinstall Windows NT to correct them. Microsoft
+	cannot guarantee that any problems resulting from the use of Registry Editor can
+	be solved. Use this tool at your own risk.
+	
+	1. Run Registry Editor (Regedt32.exe) on the Internet Information Server
+	  computer.
+	
+	2. Go to the following key in the registry:
+	
+	  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ W3SVC\ASP\Parameters
+	
+	3. On the Edit menu, click Modify to change the following entry:
+	
+	     Value Name: BufferingOn
+	     Value:      1
+	
+	
+	4. Exit Registry Editor. You do not need to restart the computer for the change
+	  to take effect.
+	
+	MORE INFORMATION
+	================
+	
+	The BufferingOn flag controls whether Active Server Pages buffers output to a
+	browser. If the flag is on (set to 1, rather than the default value of 0) then
+	all output is collected before any is sent to the browser. This allows HTTP
+	headers to be set from anywhere within a script. The Response.Buffer method can
+	be used to override this default setting. Changing the BufferingOn setting does
+	not require you to stop and restart the Web server for the change to take
+	effect.
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbtshoot 
+	Technology        : kbiisSearch kbIEsearch kbAudDeveloper kbASPsearch kbiis300 kbZNotKeyword2 kbIENT400Search kbZNotKeyword3 kbIE301WinNT400 kbASP100
+	Version           : :1.0,3.0,3.01
+	
+	=============================================================================
+	

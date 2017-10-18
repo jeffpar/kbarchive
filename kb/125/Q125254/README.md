@@ -1,0 +1,81 @@
+---
+layout: page
+title: "Q125254: PC WSPlus: Err Msg: The Schedule File Could Not Be Opened..."
+permalink: kb/125/Q125254/
+---
+
+## Q125254: PC WSPlus: Err Msg: The Schedule File Could Not Be Opened...
+
+	Article: Q125254
+	Product(s): Microsoft Schedule+ for Windows
+	Version(s): WINDOWS:1.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 12-SEP-1999
+	
+	1.00
+	WINDOWS
+	kbusage kberrmsg
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Schedule+ for Windows, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	When attempting to Open Other's Appt. Book... in Schedule+ for Windows with the
+	proper access privileges already set, the user gets the following message:
+	
+	  The schedule file could not be opened. You may not have the necessary access
+	  privileges or the file is unavailable.
+	
+	RESOLUTION
+	==========
+	
+	1. From the Options menu, choose Set Access Privileges.
+	
+	2. From the Set Access Privileges dialog box and in the Users: box, set the
+	  Default user to None and remove any additional users from the Users list.
+	
+	3. Click the OK button.
+	
+	4. From the File menu, choose Exit and Sign Out.
+	
+	  NOTE: This step is important as it writes the changes to the user's .CAL file.
+	
+	5. Sign back in to Schedule+ as the same user.
+	
+	6. Repeat Step 1.
+	
+	7. From the Users: box, select the Set Access Privileges dialog box and set the
+	  default or any additional users to the READ privilege or higher. The READ
+	  privilege is the minimum privilege required when you open another user's
+	  appointment books.
+	
+	  NOTE: If any users have the same access privileges as the default user, they
+	  will not show up in the Users: box.
+	
+	8. Repeat Steps 3 and 4.
+	
+	  The user is now ready to Open Other's Appt. Book....
+	
+	MORE INFORMATION
+	================
+	
+	This problem occurs when minor corruption affects the user's .CAL file. By
+	resetting all the access privileges to None and Exiting and Signing Out this
+	saves the changes to the user's .CAL file.
+	
+	
+	Additional query words: schedule plus 1.00
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbScheduleSearch kbSchedule100
+	Version           : WINDOWS:1.0
+	
+	=============================================================================
+	

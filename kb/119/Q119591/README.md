@@ -1,0 +1,223 @@
+---
+layout: page
+title: "Q119591: How to Obtain Microsoft Support Files from Online Services"
+permalink: kb/119/Q119591/
+---
+
+## Q119591: How to Obtain Microsoft Support Files from Online Services
+
+	Article: Q119591
+	Product(s): Microsoft Product Support Information
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 02-AUG-2002
+	
+	SUMMARY
+	=======
+	
+	This article contains information about obtaining Microsoft drivers, patches,
+	and other support files by downloading them from the Microsoft Download Center,
+	which is located at the following Microsoft Web site:
+	
+	  http://www.microsoft.com/downloads/search.asp
+	
+	The Microsoft Download Center provides:
+	
+	- A single starting point for all downloadable files.
+	
+	- The ability to search the entire Microsoft.com site for downloadable files.
+	
+	- Reduced time in finding these files.
+	
+	This article contains information about the following topics.
+	
+	General Instructions for Downloading:
+	
+	- Windows files (.exe)
+	
+	- Archive files (.zip)
+	
+	- MS-DOS files (.exe)
+	
+	- Macintosh-based files (.hqx, .bin, or .sea)
+	
+	MORE INFORMATION
+	================
+	
+	General Instructions for Downloading
+	------------------------------------
+	
+	The files that Microsoft posts on online services are usually compressed,
+	self-extracting files.
+	
+	NOTE: Small files may not be compressed. These files appear with their original
+	extensions and are not self-extracting.
+	
+	Windows Files (.exe):
+	
+	Files designed for Windows have an .exe extension. These files are compressed,
+	self-extracting files. To correctly download and extract these .exe files,
+	follow these steps:
+	
+	1. Locate the file that you want to download.
+	
+	2. If you are downloading to a floppy disk, you need a formatted, blank disk. If
+	  you are downloading to your hard disk, create a new folder in which you can
+	  temporarily place the file and extract it.
+	
+	  CAUTION: Do not download files directly to your Windows folder. Doing so could
+	  overwrite files essential to the proper operation of your computer.
+	
+	3. Follow the downloading procedure that is used by your Internet service
+	  provider to retrieve the file you identified in step 1. Download it to a
+	  floppy disk or to a new folder.
+	
+	4. Locate the file in the folder where it was downloaded, and then double-click
+	  it to begin the installation process.
+	
+	Note that some .exe files are compressed using the PKWare file-compression
+	utility. To correctly download and extract these .exe files, follow these
+	steps:
+	
+	1. Locate the file that you want to download.
+	
+	2. If you are downloading to a floppy disk, you need a formatted, blank disk. If
+	  you are downloading to your hard disk, create a new folder in which you can
+	  temporarily place the file and extract it.
+	
+	  CAUTION: Do not download files directly into your Windows folder. Doing so
+	  could overwrite files essential to the proper operation of your computer.
+	
+	3. Follow the downloading procedure used by your Internet service provider to
+	  retrieve the file you identified in step 1. Download it to a floppy disk or
+	  to a new folder.
+	
+	4. To extract the contents of the self-extracting .exe file after you download
+	  it, click Start, click Run, and then type the following command in the Run
+	  box:
+	
+	  "<path\filename> -d" (without the quotation marks)
+	
+	  where <path\filename> is the folder location and the name of the
+	  downloaded file.
+	
+	  For example, if you downloaded Sample.exe into the C:\Download folder, type
+	  the following command in the Run box:
+	
+	  "C:\Download\Sample.exe -d" (without the quotation marks)
+	
+	  NOTE: Although you can double-click a self-extracting .exe file to extract its
+	  contents, this step ensures that a recursively compressed file will maintain
+	  its file structure.
+	
+	If you have problems extracting downloaded files, try downloading them again.
+	
+	Archive Files (.zip):
+	
+	Files that are designed to archive multiple files have a .zip extension. These
+	files are compressed. To extract these files, you need to obtain a zip utility.
+	Nico Mak Computing, Inc., has developed a zip utility for Windows called
+	WinZip.
+	
+	For more information about WinZip, please visit the following Nico Mak Computing,
+	Inc., Web site:
+	
+	  http://www.winzip.com (http://www.winzip.com)
+	
+	To correctly download and extract these .zip files, follow these steps:
+	
+	1. Locate the file that you want to download.
+	
+	2. If you are downloading to a floppy disk, you need a formatted, blank disk. If
+	  you are downloading to your hard disk, create a new folder in which you can
+	  temporarily place the file and extract it.
+	
+	  CAUTION: Do not download files directly to your Windows folder. Doing so could
+	  overwrite files essential to the proper operation of your computer.
+	
+	3. Follow the downloading procedure that is used by your Internet service
+	  provider to retrieve the file you identified in step 1. Download it to a
+	  floppy disk or to a new folder.
+	
+	4. Locate the file in the folder where it was downloaded, and then double-click
+	  it to open the file in WinZip. Extract the files from WinZip to a folder on
+	  your hard disk.
+	
+	The third-party products that are discussed in this article are manufactured by
+	companies that are independent of Microsoft. Microsoft makes no warranty,
+	implied or otherwise, regarding the performance or reliability of these
+	products.
+	
+	MS-DOS Files (.exe):
+	
+	These .exe files are compressed using the PKWare file-compression utility. To
+	correctly download and extract these .exe files, follow these steps:
+	
+	1. Locate the file that you want to download.
+	
+	2. If you are downloading to a floppy disk, you need a formatted, blank disk. If
+	  you are downloading to your hard disk, create a new folder in which you can
+	  temporarily place the file and extract it.
+	
+	  CAUTION: Do not download files directly into your Windows folder. Doing so
+	  could overwrite files essential to the proper operation of your computer.
+	
+	3. Follow the downloading procedure used by your Internet service provider to
+	  retrieve the file you identified in step 1. Download it to a floppy disk or
+	  to a new folder.
+	
+	4. To extract the contents of the self-extracting .exe file after you download
+	  it, click Start, click Run, and then type the following command in the Run
+	  box
+	
+	  "<path\filename> -d" (without the quotation marks)
+	
+	  where <path\filename> is the folder location and the name of the
+	  downloaded file.
+	
+	  For example, if you downloaded Sample.exe into the C:\Download folder, type
+	  the following command in the Run box:
+	
+	  "C:\Download\Sample.exe -d" (without the quotation marks)
+	
+	  NOTE: Although you can double-click a self-extracting .exe file to extract its
+	  contents, this step ensures that a recursively compressed file will maintain
+	  its file structure.
+	
+	If you have problems extracting downloaded files, try downloading them again.
+	
+	Macintosh-Based Files (.hqx, .bin, or .sea):
+	
+	If a file is Macintosh based, it has an .hqx or .bin extension. An .hqx file is a
+	BinHex 4.0 text-formatted file, and a .bin file is a MacBinary formatted file.
+	
+	When you download the .hqx or .bin file, you must decode it with Stuffit Expander
+	(or another utility that understands BinHex or MacBinary format, such as BinHex
+	4.0 or CompactPro). Decoding converts the .hqx or .bin file into an Installer
+	file. Double-click the Installer file to install its contents.
+	
+	The .hqx or .bin file may also be decoded into a binary-formatted, compressed
+	.sea file. To extract the contents of this file, double-click the
+	<filename>.sea icon.
+	
+	If you use Microsoft Internet Explorer 4.0 or later for the Macintosh, .hqx and
+	.bin files are automatically decoded as they are downloaded. To ensure that this
+	option is enabled, follow these steps in Internet Explorer 4.0 or later:
+	
+	1. On the Edit menu, click Preferences.
+	
+	2. Under Receiving Files, click Download Options.
+	
+	3. Under Download Manager Options, click to select the "Automatically decode
+	  MacBinary files" and "Automatically decode BinHex files" check boxes, and
+	  click OK.
+	
+	Additional query words: wdl windows driver library softlib data how to get policy download
+	
+	======================================================================
+	Keywords          :  
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

@@ -1,0 +1,80 @@
+---
+layout: page
+title: "Q94178: PC WFW: Differences Between Win for Workgroups Mail &amp; PC Mail"
+permalink: kb/094/Q94178/
+---
+
+## Q94178: PC WFW: Differences Between Win for Workgroups Mail &amp; PC Mail
+
+	Article: Q94178
+	Product(s): Microsoft Mail For PC Networks
+	Version(s): WINDOWS:3.0,3.1,3.11,3.2
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 20-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Mail for PC Networks, versions 3.0, 3.2 
+	- the operating system: Microsoft Windows versions 3.1, 3.11 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes the differences between Windows for Workgroups Mail and
+	Microsoft Mail for PC Networks.
+	
+	The Workgroup postoffice architecture is similar to the architecture for
+	Microsoft Mail for PC Networks. This is so users with connectivity needs beyond
+	their workgroup can easily upgrade.
+	
+	The postoffice structure and Windows client are identical except for the
+	following:
+	
+	- No Demo files are in the workgroup postoffice. Microsoft Mail for PC Networks
+	  does include these files.
+	
+	- There is no spell checker with Windows for Workgroups Mail. The spell checker
+	  is supplied with Microsoft Mail for PC Networks.
+	
+	- The postoffice in Windows for Workgroups does not support connections to
+	  external postoffices or gateways. For example, a Windows for Workgroups
+	  postoffice cannot connect to another postoffice or gateway.
+	
+	- Microsoft Mail for PC Networks includes support for global aliases or network
+	  group names while Windows for Workgroups Mail does not.
+	
+	- The default ADMIN.TPL and ADMIN.INF files in Windows for Workgroups Mail are
+	  created with predefined user information in the workgroup postoffice. For
+	  example, the user templates included in Windows for Workgroups Mail contain
+	  template information regarding Phone number #1, Phone number #2, Office,
+	  Department, and Notes. These must be created separately in Microsoft Mail for
+	  PC Networks.
+	
+	- Microsoft Mail for PC Networks includes an administration program not created
+	  in Windows for Workgroups Mail. In Windows for Workgroups, the administration
+	  program is accessed via the Mail menu in the Windows Mail client.
+	
+	- Microsoft Mail for PC Networks includes an administration utility that is
+	  used to administer and configure the postoffice. The ADMIN.EXE program can be
+	  used to configure and administer the postoffice from any workstation on the
+	  network running MS-DOS. In Windows for Workgroups, the administration program
+	  is accessed via the Mail menu in the Windows Mail client. Only the
+	  administrator can log on under his or her account and administer the
+	  postoffice on the workstation only.
+	
+	- The Mail client included with Microsoft Windows for Workgroups version 3.11
+	  is designed to work with Microsoft At Work PC Fax. However, At Work Fax is
+	  not supported with version 3.2 of Microsoft Mail for Windows.
+	
+	Additional query words: 3.00
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbOSWinSearch kbZNotKeyword6 kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN300 kbOSWin310 kbOSWin311
+	Version           : WINDOWS:3.0,3.1,3.11,3.2
+	
+	=============================================================================
+	

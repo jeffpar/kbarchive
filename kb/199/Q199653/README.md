@@ -1,0 +1,95 @@
+---
+layout: page
+title: "Q199653: SMS: What Is CHECK20?"
+permalink: kb/199/Q199653/
+---
+
+## Q199653: SMS: What Is CHECK20?
+
+	Article: Q199653
+	Product(s): Microsoft Systems Management Server
+	Version(s): winnt:1.2,2.0
+	Operating System(s): 
+	Keyword(s): kbsms200kbfaq
+	Last Modified: 12-MAY-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server versions 1.2, 2.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Check20.exe is an executable file that is included in Systems Management Server
+	1.2 Service Pack 4 to allow interoperability between version 1.2 and 2.0 clients
+	in a multi-site environment. Check20.exe is referenced in the Runsms.bat and
+	Smsls.bat files.
+	
+	One reason for this change to the Systems Management Server logon scripts was to
+	prevent the 1.2 client code from overwriting client files installed by a 2.0
+	site.
+	
+	MORE INFORMATION
+	================
+	
+	The purpose of Check20.exe is to determine what type of discovery and/or
+	installation has taken place on the client. When run, Check20.exe will return an
+	ErrorLevel that determines what action to take on the client.
+	
+	Check20.exe reads the "Number of Opal Installations" value from the SMS MultiBoot
+	Configuration section of the %Windir%\Smscfg.ini file to determine what
+	ErrorLevel to return, according to the following rules:
+	
+	- If "Number of Opal Installations" is greater than 0, Check20.exe returns
+	  MS-DOS ErrorLevel 0.
+	
+	- If "Number of Opal Installations" is 0, Check20.exe returns MS-DOS ErrorLevel
+	  2.
+	
+	- If "Number of Opal Installations" value does not exist, or if Smscfg.ini does
+	  not exist, Check20.exe returns MS-DOS ErrorLevel 1.
+	
+	The following table describes the ErrorLevels:
+	
+	ErrorLevel     Description
+	--------------------------------------------------------------------------
+	
+	ErrorLevel 0   Systems Management Server 2.0 has determined this 
+	              computer is assigned to one or more Systems Management
+	              Server 2.0 sites.
+	
+	ErrorLevel 1   Systems Management Server 2.0 has not yet reached this
+	              resource with an installation method to determine if this
+	              computer should be assigned to one or more Systems
+	              Management Server 2.0 sites.
+	
+	ErrorLevel 2   Systems Management Server 2.0 has evaluated this computer
+	              one or more times and determined that it is NOT assigned to 
+	              any Systems Management Server 2.0 site participating in that 
+	              particular installation method (at the time of 
+	              determination).
+	
+	ErrorLevel 3   Unknown Error
+	
+	The Systems Management Server 1.2 "Opal Interop" script (which assumes that the
+	2.0 script is also running during this logon) will skip processing the 1.2
+	script if Check20.exe returns an ErrorLevel of 0 or 1, giving the 2.0 script a
+	chance to set the value to 0 or 2.
+	
+	The 1.2 "Opal Aware" script (which assumes that the 2.0 script is not running
+	during the logon attempt, although 2.0 clients may be encountered in the
+	enterprise) will skip processing the 1.2 script only if Check20.exe returns a 0
+	or a 1.
+	
+	Additional query words: prodsms error level levels
+	
+	======================================================================
+	Keywords          : kbsms200 kbfaq
+	Technology        : kbSMSSearch kbSMS120 kbSMS200
+	Version           : winnt:1.2,2.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

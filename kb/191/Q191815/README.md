@@ -1,0 +1,122 @@
+---
+layout: page
+title: "Q191815: Err Msg: Msnviewr Caused an Invalid Page Fault in Module Urlmon."
+permalink: kb/191/Q191815/
+---
+
+## Q191815: Err Msg: Msnviewr Caused an Invalid Page Fault in Module Urlmon.
+
+	Article: Q191815
+	Product(s): The Microsoft Network
+	Version(s): 2.5,2.51,2.52,2.6
+	Operating System(s): 
+	Keyword(s): kberrmsg kbinterop kbmsn
+	Last Modified: 05-MAR-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The Microsoft Network versions 2.5, 2.51, 2.52, 2.6 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you attempt to connect to MSN, The Microsoft Network, you may receive one
+	of the following error messages:
+	
+	  Msnviewr caused an invalid page fault in module Mshtml.dll.
+	
+	  -or-
+	
+	  Msnviewr caused an invalid page fault in module Urlmon.dll.
+	
+	CAUSE
+	=====
+	
+	This behavior can occur if Microsoft Internet Explorer is not properly
+	installed.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, remove and reinstall Internet Explorer. To do this, use
+	the appropriate method for your version of Internet Explorer.
+	
+	Internet Explorer 3.x
+	---------------------
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click Add/Remove Programs.
+	
+	3. Click Internet Explorer 3.x, and then click Add/Remove.
+	
+	4. When you are prompted to confirm the removal of Internet Explorer or one of
+	  its components, click Yes.
+	
+	5. Restart the computer.
+	
+	6. Click Start, point to Find, and then click "Files Or Folders".
+	
+	7. In the Named box, type mshtml.dll, and then click Find Now.
+	
+	8. In the list of found files, right-click the Mshtml.dll file, and then click
+	  Delete.
+	
+	9. In the Named box, type urlmon.dll, and then click Find Now.
+	
+	10. In the list of found files, right-click the Urlmon.dll file, and then click
+	  Delete.
+	
+	11. Close the Find: Files Named Urlmon.dll window.
+	
+	12. Restart the computer, and then reinstall Internet Explorer 3.x.
+	
+	For information about how to install Internet Explorer 3.x, please see the
+	following article in the Microsoft Knowledge Base:
+	
+	  Q154012 How to Remove and Reinstall IE 3.0 for Windows 95
+	
+	Explorer 4.0
+	------------
+	
+	1. Click Start, point to Find, and then click "Files Or Folders".
+	
+	2. In the Named box, type mshtml.dll, and then click Find Now.
+	
+	3. In the list of found files, right-click the Mshtml.dll file, and then click
+	  Delete.
+	
+	4. In the Named box, type urlmon.dll, and then click Find Now.
+	
+	5. In the list of found files, right-click the Urlmon.dll file, and then click
+	  Delete.
+	
+	6. Close the Find: Files Named Urlmon.dll window.
+	
+	7. Restart the computer, and then reinstall Internet Explorer 4.0.
+	
+	For information about how to remove Internet Explorer 4.0, please see the
+	following article in the Microsoft Knowledge Base:
+	
+	  Q174265 How to Uninstall Internet Explorer 4.0
+	
+	For information about how to install Internet Explorer 4.0, please see the
+	following articles in the Microsoft Knowledge Base:
+	
+	  Q170993 How to Install Internet Explorer 4.0
+	
+	  Q175750 How to Install the Full Installation of Internet Explorer 4.0
+	
+	
+	Additional query words: msnet msnetwork microsoft-net m.s.n. 2.50 2.60
+	
+	======================================================================
+	Keywords          : kberrmsg kbinterop kbmsn 
+	Technology        : kbMSNSearch kbMSN252 kbMSN251 kbMSN260 kbMSN250
+	Version           : :2.5,2.51,2.52,2.6
+	Issue type        : kbprb
+	
+	=============================================================================
+	

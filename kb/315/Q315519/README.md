@@ -1,0 +1,273 @@
+---
+layout: page
+title: "Q315519: HOW TO: Write a Simple Active Accessibility Client by Using VB"
+permalink: kb/315/Q315519/
+---
+
+## Q315519: HOW TO: Write a Simple Active Accessibility Client by Using VB
+
+	Article: Q315519
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 6.0
+	Operating System(s): 
+	Keyword(s): kbAudDeveloper kbHOWTOmaster
+	Last Modified: 07-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+	- Microsoft Internet Explorer 4.x (40-bit and 128-bit) 
+	-------------------------------------------------------------------------------
+	
+	
+	IN THIS TASK
+	
+	- SUMMARY
+	
+	   - Requirements
+	- Create a Test HTML Document
+	- Create a Test Application in Visual Basic 6.0
+	- Verify That It Works
+	
+	- REFERENCES
+	
+	SUMMARY
+	=======
+	
+	This article describes how to get started with Microsoft Active Accessibility
+	Software Development Kit (SDK) and how to write a simple demonstration client
+	application for Active Accessibility by using Visual Basic 6.0.
+	
+	Requirements
+	------------
+	
+	The following list outlines the recommended hardware, software, network
+	infrastructure, and service packs that are required:
+	
+	- Microsoft Visual Basic 6.0
+	- Microsoft Internet Explorer 4.01 or later
+	- Microsoft Active Accessibility SDK 1.3
+	
+	This article assumes that you are familiar with Visual Basic 6.0 programming.
+	
+	Create a Test HTML Document
+	---------------------------
+	
+	In this section, you create a simple Hypertext Markup Language (HTML) document
+	that can be displayed in Microsoft Internet Explorer. Internet Explorer is an
+	Active Accessibility server, which means that Internet Explorer exposes
+	information to Active Accessibility clients.
+	
+	1. Open a text editor such as Notepad, and then add the following HTML code:
+	
+	  <HTML>
+	  <HEAD>
+	      <TITLE>Sample Page</TITLE>
+	  </HEAD>
+	  <BODY>
+	  <TABLE>
+	      <THEAD>
+	          <TH>Month</TH><TH>Amount</TH>
+	      </THEAD>
+	      <TR>
+	          <TD>Jan</TD><TD>$10.00</TD>
+	      </TR>
+	      <TR>
+	          <TD>Feb</TD><TD>$30.00</TD>
+	      </TR>
+	      <TR>
+	          <TD>Mar</TD><TD>$5.00</TD>
+	      </TR>
+	  </TABLE>
+	  <HR>
+	  Amount owed: <SPAN STYLE="color:red">$45.00</SPAN>.
+	  </BODY>
+	  </HTML>
+	
+	2. Save this file as AADemo.htm.
+	
+	Create a Test Application in Visual Basic 6.0
+	---------------------------------------------
+	
+	In this section, you create a Visual Basic application to display data. This
+	application uses the following Win32 application programming interface (API)
+	functions to display the data:
+	
+	- GetCursorPos. This function retrieves the position of the pointer in screen
+	  coordinates.
+	
+	- SetCursorPos. This function moves the pointer to a position that you specify.
+	
+	- SetWindowPos. This function manipulates the size and the position of a
+	  window.
+	
+	- AccessibleObjectFromPoint. This function retrieves the IAccessible interface
+	  pointer of the object at the position that you specify. You use the
+	  IAccessible interface to obtain information about the user interface of the
+	  object and the data that the object contains.
+	
+	To create this Visual Basic application, follow these steps:
+	
+	1. Start Visual Basic 6.0, and then create a new Standard EXE project. By
+	  default, Form1 is added to the project.
+	
+	2. Add a Timer control to Form1. By default, the control is named Timer1. Set
+	  the Interval property of Timer1 to 1000.
+	
+	3. On the Project menu, click Add Form. In the Add Form dialog box, click Form,
+	  and then click Open. This adds a new form named Form2 to the project.
+	
+	4. Set the following properties for Form2:
+	
+	   - Set the BorderStyle property to 1 - Fixed Single.
+	
+	   - Set the Caption property to an empty string.
+	
+	   - Set the ControlBox property to False.
+	
+	   - Set the Height property to 600.
+	
+	   - Set the Font property to use a size of 14 points.
+	
+	5. In Project Explorer, right-click Form1, and then click View Code. Add the
+	  following statement to the beginning of the code:
+	
+	  Option Explicit
+	
+	6. Add the following code to declare useful constants for your application:
+	
+	  Private Const HWND_TOP As Integer = 0
+	  Private Const HWND_BOTTOM  As Integer = 1
+	  Private Const HWND_TOPMOST As Integer = -1
+	  Private Const HWND_NOTOPMOST As Integer = -2
+	  Private Const SWP_NOSIZE As Integer = 1
+	  Private Const SWP_NOMOVE As Integer = 2
+	
+	7. Add the following type definition to represent an (x, y) point on the screen:
+	
+	  Private Type POINTAPI
+	      x As Long
+	      y As Long
+	  End Type
+	
+	8. Add the following code to declare entry points in the Windows API:
+	
+	  Private Declare Function GetCursorPos Lib "user32" _
+	      (lpPoint As POINTAPI) As Long
+	  Private Declare Function SetCursorPos Lib "user32" _
+	      (ByVal x As Long, ByVal y As Long) As Long
+	  Private Declare Function SetWindowPos Lib "user32" _
+	      (ByVal hWnd As Long, _
+	       ByVal hWndAfter As Long, _
+	       ByVal x As Long, _
+	       ByVal y As Long, _
+	       ByVal cx As Long, _
+	       ByVal xy As Long, _
+	       ByVal uflags As Long) As Integer
+	  Private Declare Function AccessibleObjectFromPoint Lib "oleacc" _
+	      (ByVal x As Long, _
+	       ByVal y As Long, _
+	       ppoleAcc As Object, _
+	       pvarElement As Variant) As Long
+	
+	9. Add following code to handle the Form_Load event for Form1. This code
+	  displays the second form and makes the second form the uppermost window.
+	
+	  Private Sub Form_Load()
+	      ' Display Form2, and make this form the uppermost window.
+	      Form2.Show vbModeless
+	      SetWindowPos Form2.hWnd, _
+	                   HWND_TOPMOST, _
+	                   0, 0, 0, 0, _
+	                  (SWP_NOSIZE Or SWP_NOMOVE)
+	  End Sub
+	
+	10. Add the following code to handle the Form_Unload event for Form1:
+	
+	  Private Sub Form_Unload(Cancel As Integer)
+	      ' Remove floating form.
+	      Unload Form2
+	  End Sub
+	
+	11. Add the following code to handle the Timer1_Timer event:
+	
+	  Private Sub Timer1_Timer()
+	      Dim p As POINTAPI
+	      Dim objAccessible As Object
+	      Dim v As Variant
+	      Dim sName As String
+	      
+	      ' Get pointer position.
+	      GetCursorPos p
+	      
+	      ' Get IAccessible interface from object under pointer.
+	      AccessibleObjectFromPoint p.x, p.y, objAccessible, v
+	      
+	      ' Get name property of object under pointer.
+	      sName = ""
+	      On Error Resume Next
+	      sName = objAccessible.accName(v)
+	      On Error GoTo 0
+	      
+	      ' Follow pointer.
+	      Form2.ZOrder
+	      Form2.Left = (p.x * Screen.TwipsPerPixelX) + 100
+	      Form2.Top = (p.y * Screen.TwipsPerPixelY) + 100
+	
+	      ' Display information.
+	      Form2.Cls
+	      Form2.Print sName
+	          
+	  End Sub
+	
+	Verify That It Works
+	--------------------
+	
+	1. Start Microsoft Internet Explorer, and then open the AADemo.htm file.
+	
+	2. Build and run your Visual Basic application.
+	
+	3. Move the pointer around the screen, particularly over elements in the HTML
+	  document. Because Internet Explorer can act as an accessibility server, the
+	  Visual Basic application can detect the text that underlies the elements of
+	  the document. The Visual Basic application displays the data as a simple tool
+	  tip. A more complex application may display this information in other ways,
+	  such as through a Braille reader or through a speech synthesizer.
+	
+	4. Close your Visual Basic application.
+	
+	REFERENCES
+	==========
+	
+	For additional information, click the article number below to view the article
+	in the Microsoft Knowledge Base:
+	
+	  Q244822 HOWTO: Determine Which Version of Microsoft Active Accessibility Is
+	  Installed
+	
+	For more information about accessibility information for developers, visit the
+	following Microsoft Web site:
+	
+	  Accessibility
+	  http://msdn.microsoft.com/library/default.asp?url=/nhp/Default.asp?contentid=28000544
+	
+	
+	You can download Microsoft Active Accessibility 2.0 SDK Tools from the preceding
+	Microsoft Web site. Microsoft Active Accessibility 2.0 SDK Tools includes the
+	Accessible Event Watcher, Accessible Explorer, and Inspect Objects. You can also
+	download the accessible copy of the Microsoft Active Accessibility SDK
+	documentation from the preceding Microsoft Web site. The Microsoft Active
+	Accessibility SDK documentation is a Microsoft Word document in a format that is
+	accessible for screen readers and other assistive technologies.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbAudDeveloper kbHOWTOmaster 
+	Technology        : kbVBSearch kbIEsearch kbAudDeveloper kbAudEndUser kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600 kbIE4xSearch
+	Version           : :6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

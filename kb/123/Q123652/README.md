@@ -1,0 +1,141 @@
+---
+layout: page
+title: "Q123652: FIX: Update() Fails to Write Changed Text Field"
+permalink: kb/123/Q123652/
+---
+
+## Q123652: FIX: Update() Fails to Write Changed Text Field
+
+	Article: Q123652
+	Product(s): Microsoft C Compiler
+	Version(s): 2.00
+	Operating System(s): 
+	Keyword(s): kbDatabase kbMFC kbODBC kbVCkbbuglist kbfixlist
+	Last Modified: 29-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The Microsoft Foundation Classes (MFC), included with:
+	   - Microsoft Visual C++, 32-bit Editions, version 2.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The CRecordset::Update() function fails to correctly update a text field if that
+	field is changed from a null value to a non-null value. The Update() function
+	may return FALSE or, if the dirty flag is set for the field, the Update()
+	function may return TRUE but a null value will be written to the record instead
+	of the expected non-null value.
+	
+	For example, the following code worked with Visual C++ version 1.50 or 1.51, but
+	it may fail in Visual C++ version 2.0 given the conditions described above:
+	
+	     recordset.Edit();
+	     recordset.Field1String="SomeText";
+	     recordset.Update();
+	
+	CAUSE
+	=====
+	
+	The RFX_Text() function, which maps a CString to a text field, has changed in
+	Visual C++ version 2.0. In Visual C++ version 1.51, you'll see the following
+	code in the MarkForUpdate operation of the RFX_Text() function:
+	
+	    case CFieldExchange::MarkForUpdate:
+	          {
+	              if (value.IsEmpty())
+	                  pFX->m_prs->SetFieldFlags(nField,
+	                      AFX_SQL_FIELD_FLAG_NULL, pFX->m_nFieldType);
+	              else
+	                  pFX->m_prs->ClearFieldFlags(nField,
+	                      AFX_SQL_FIELD_FLAG_NULL, pFX->m_nFieldType);
+	              ...
+	
+	This code was removed in Visual C++ version 2.0. The code checks to see if a
+	CString is empty and sets or resets the null flag accordingly. Without this
+	code, the null flag for a field will remain set even though you may change the
+	contents of a CString field variable. Because this code is no longer present in
+	the Visual C++ version 2.0 database classes code, you will have to set or reset
+	the null flag for a text field in your code.
+	
+	RESOLUTION
+	==========
+	
+	If you use a CRecordView for retrieving data, you won't notice the bug because a
+	CRecordView sets or resets a field's null flag depending on whether a user has
+	entered text into the edit control representing that field. The DDX_FieldText()
+	function does the work of setting the field's null flag.
+	
+	For example, in the AfxFieldText() function, which gets called from the
+	DDX_FieldText() functions, you'll see this code:
+	
+	  *****
+	  BOOL AFXAPI AfxFieldText(CDataExchange* pDX, int nIDC, void* pv,
+	      CRecordset* pRecordset)
+	  {
+	      ASSERT_VALID(pRecordset);
+	
+	      HWND hWndCtrl = pDX->PrepareEditCtrl(nIDC);
+	      char szT[2];
+	      if (pDX->m_bSaveAndValidate)
+	      {
+	          ::GetWindowText(hWndCtrl, szT, sizeof(szT));
+	          if (szT[0] == '\0')
+	          {
+	              if (pRecordset->IsFieldNullable(pv))
+	              {
+	                  pRecordset->SetFieldNull(pv);
+	                  return TRUE;
+	              }
+	          }
+	          else
+	              pRecordset->SetFieldNull(pv, FALSE);
+	      }
+	      else
+	      {
+	          if (!pRecordset->IsOpen() || pRecordset->IsFieldNull(pv))
+	          {
+	              szT[0] = '\0';
+	              AfxSetWindowText(hWndCtrl, szT);
+	              return TRUE;
+	          }
+	      }
+	      return FALSE;
+	  }
+	  *****
+	
+	You can see how the null flag for the field is set or reset. You can write
+	similar code to handle setting or resetting the null flag in your code.
+	
+	As an alternative, you can create a new RFX function, and insert the code shown
+	above for the MarkForUpdate operation. Replace the call to RFX_Text() in your
+	CRecordset's DoFieldExchange() function with your new RFX function.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article. This bug was corrected in Visual C++ 2.1.
+	
+	REFERENCES
+	==========
+	
+	For more information about Record Field Exchange (RFX) functions see the
+	following references:
+	
+	  MFC Technote #43 - "RFX Routines"
+	  MFC Encyclopedia articles on RFX in the online books
+	
+	Additional query words: 2.00 3.00
+	
+	======================================================================
+	Keywords          : kbDatabase kbMFC kbODBC kbVC kbbuglist kbfixlist
+	Technology        : kbAudDeveloper kbMFC
+	Version           : 2.00
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

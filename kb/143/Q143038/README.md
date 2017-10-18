@@ -1,0 +1,270 @@
+---
+layout: page
+title: "Q143038: SAMPLE: VBAPPT7.EXE Integrating a PowerPoint 7.0 Slide Show w/VB"
+permalink: kb/143/Q143038/
+---
+
+## Q143038: SAMPLE: VBAPPT7.EXE Integrating a PowerPoint 7.0 Slide Show w/VB
+
+	Article: Q143038
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): WINDOWS:4.0,7.0
+	Operating System(s): 
+	Keyword(s): kbfile kbinterop kbsample kbVBp kbVBp400 kbPowerPt
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Standard Edition for Windows, version 4.0 
+	- Microsoft Visual Basic Professional Edition for Windows, version 4.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 4.0 
+	- Microsoft PowerPoint for Windows 95, version 7.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes how to perform some common integration tasks with
+	Microsoft PowerPoint version 7.0 for Windows using Microsoft Visual Basic
+	version 4.0 for Windows. It also discusses how to use OLE Automation with
+	PowerPoint and how to use the PowerPoint Viewer.
+	
+	Creating and Running a Simple Presentation
+	------------------------------------------
+	
+	1. Create a new project in Visual Basic.
+	
+	2. On the Tools menu, click References, and check "PowerPoint 7.0 Object
+	  Library" in the list box.
+	
+	3. Put a command button on Form1, and click View Code from the Project window.
+	
+	4. Paste the following code in the General Declarations section:
+	
+	     '---------------------------------------------------------------------
+	     ' PPTester.frm - PowerPoint 7.0 OLE Automation tester.
+	     '---------------------------------------------------------------------
+	     Private PowerPoint As PowerPoint.Application
+	     Private mblnPowerPointStarted As Boolean
+	
+	     '---------------------------------------------------------------------
+	     ' Creates and runs the presentation.
+	     '---------------------------------------------------------------------
+	     Private Sub Command1_Click()
+	         Dim pptPres As Presentation ' Presentation Object (your PPT file).
+	         Dim pptSlide As Slide       ' Slide Object (the current slide).
+	
+	      '-----------------------------------------------------------------
+	      ' Establish a connection with PowerPoint.
+	      '-----------------------------------------------------------------
+	      mblnPowerPointStarted = _
+	      OLEConnect(PowerPoint, "PowerPoint.Application")
+	
+	      '-----------------------------------------------------------------
+	      ' Make PowerPoint visible.
+	      '-----------------------------------------------------------------
+	      If MsgBox _
+	        ("Would you like to watch the building of the presentation?", _
+	         vbYesNo) = vbYes Then PowerPoint.AppWindow.Visible = True
+	
+	      '-----------------------------------------------------------------
+	      ' Add a new (blank) presentation to PowerPoint.
+	      '-----------------------------------------------------------------
+	      Set pptPres = PowerPoint.Presentations.Add
+	
+	      '-----------------------------------------------------------------
+	      ' Add the first slide to the empty presentation.
+	      '-----------------------------------------------------------------
+	      Set pptSlide = pptPres.Slides.Add(1, ppLayoutTitle)
+	
+	      '-----------------------------------------------------------------
+	      ' Set the slide background to the Parchment shade that is built
+	      ' into PowerPoint.
+	      '-----------------------------------------------------------------
+	      pptSlide.Background.Fill.PresetShaded ppShadeFromTitle, 2, _
+	          ppPresetShadeParchment
+	
+	      '-----------------------------------------------------------------
+	      ' Change the text, background, and text color of the first object.
+	      '-----------------------------------------------------------------
+	      With pptSlide.Objects(1)
+	          .Text = "Welcome to OLE Automation"
+	          .GraphicFormat.Fill.PresetTextured ppPresetTextureGreenMarble
+	          .Text.Font.Color.RGB = vbWhite
+	      End With
+	
+	      '-----------------------------------------------------------------
+	      ' Configure this slide to display for 25 seconds, and disappear as
+	      ' it is displayed.
+	      '-----------------------------------------------------------------
+	      With pptSlide.SlideShowEffects
+	          .AdvanceTime = 5
+	          .EntryEffect = ppEffectDissolve
+	      End With
+	
+	      '-----------------------------------------------------------------
+	      ' Add a second slide at the end.
+	      '-----------------------------------------------------------------
+	      Set pptSlide = pptPres.Slides.Add(2, ppLayoutTitleOnly)
+	
+	      '-----------------------------------------------------------------
+	      ' Display the new slide.
+	      '-----------------------------------------------------------------
+	      PowerPoint.ActiveWindow.View.GotoSlide 2
+	
+	      '-----------------------------------------------------------------
+	      ' Begin modifications to the new slide.
+	      '-----------------------------------------------------------------
+	      With pptSlide
+	          '-------------------------------------------------------------
+	          ' Set up the slide show effects for this slide.
+	          '-------------------------------------------------------------
+	          With .SlideShowEffects
+	              .AdvanceTime = 5
+	              .EntryEffect = ppEffectDissolve
+	          End With
+	
+	          '-------------------------------------------------------------
+	          ' Change the background to a gradient fill.
+	          '-------------------------------------------------------------
+	          With .Background.Fill
+	              .ForeColor.RGB = RGB(128, 0, 0)
+	              .OneColorShaded ppShadeFromTitle, 4, -0.05
+	          End With
+	
+	          '-------------------------------------------------------------
+	          ' Change the title (using the title object).
+	          '-------------------------------------------------------------
+	          .Objects.Title.Text = "Examples"
+	
+	          '-------------------------------------------------------------
+	          ' Modify the title using Objects(1).
+	          '-------------------------------------------------------------
+	          With .Objects(1)
+	              '---------------------------------------------------------
+	              ' Change the text to embossed.
+	              '---------------------------------------------------------
+	              .Text.Font.Embossed = ppTrue
+	
+	              '---------------------------------------------------------
+	              ' Add a shaded background for the slide.
+	              '---------------------------------------------------------
+	              .GraphicFormat.Fill.OneColorShaded ppShadeHorizontal, _
+	                 4, -0.05
+	
+	              '---------------------------------------------------------
+	              ' Change the object border to embossed.
+	              '---------------------------------------------------------
+	              .GraphicFormat.Shadow.Type = ppShadowEmbossed
+	          End With
+	      End With
+	      '-----------------------------------------------------------------
+	      ' Run the slide show.
+	      '-----------------------------------------------------------------
+	      With pptPres.SlideShow
+	          .AdvanceMode = ppSlideShowUseSlideTimings
+	          .Run ppSlideShowFullScreen
+	      End With
+	
+	  End Sub
+	
+	     '---------------------------------------------------------------------
+	     ' Terminates PowerPoint if this application started it.
+	     '---------------------------------------------------------------------
+	     Private Sub Form_Unload(Cancel As Integer)
+	         If mblnPowerPointStarted Then PowerPoint.Quit
+	     End Sub
+	
+	     '---------------------------------------------------------------------
+	     ' OLEConnect takes a pointer to an object variable and class name. If
+	     ' this function is successful, then the function returns true and the
+	     ' obj argument points to a valid OLE Automation object.
+	     '----------------------------------------------------------------------
+	     Private Function OLEConnect(obj As Object, sClass As String) As Boolean
+	      '------------------------------------------------------------------
+	      ' Temporarily turn off error handling.
+	      '-----------------------------------------------------------------
+	      On Error Resume Next
+	      Set obj = GetObject(, sClass)
+	
+	      '-----------------------------------------------------------------
+	      ' If GetObject failed, then try Create.
+	      '-----------------------------------------------------------------
+	      If Err = 429 Then
+	          '-------------------------------------------------------------
+	          ' Resume Error Handling.
+	          '-------------------------------------------------------------
+	          On Error GoTo OLEConnect_Err
+	          Set obj = CreateObject(sClass)
+	
+	          '-------------------------------------------------------------
+	          ' If this line was executed, then the app was started.
+	          '-------------------------------------------------------------
+	          OLEConnect = True
+	
+	      '-----------------------------------------------------------------
+	      ' If any other error occurs, then display it and exit.
+	      '-----------------------------------------------------------------
+	      ElseIf Err <> 0 Then
+	          GoSub OLEConnect_Err
+	      End If
+	
+	      Exit Function
+	
+	     '---------------------------------------------------------------------
+	     ' Display error message and abort.
+	     '---------------------------------------------------------------------
+	     OLEConnect_Err:
+	         MsgBox Err.Description, vbCritical
+	         Unload Me
+	         Exit Function
+	     End Function
+	
+	5. Run the program, and click Command1.
+	
+	Running a Presentation on Systems without PowerPoint
+	----------------------------------------------------
+	
+	If you plan to distribute your application to systems that do not have PowerPoint
+	installed, then you cannot use OLE Automation. You can work around this
+	limitation by using the PowerPoint Viewer (PPTVIEW.EXE) with the name of the
+	slide. The following code demonstrates how to use the PowerPoint Viewer to run a
+	slide show from Visual Basic:
+	
+	         '----------------------------------------------------------
+	         ' The following code assumes that PPTVIEW.EXE and your
+	         ' slides file are in the same directory as your EXE.
+	         '----------------------------------------------------------
+	         Shell App.Path & "pptview.exe " & App.Path & "myslides.ppt"
+	     End Sub
+	
+	MORE INFORMATION
+	================
+	
+	A complete (and enhanced) PowerPoint OLE Automation sample is now available. The
+	following file is available for download from the Microsoft Download Center:
+	
+	  Vbappt7.exe
+	  (http://download.microsoft.com/download/powerpoint95/samp1/1/WIN98/EN-US/Vbappt7.exe)
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. Once posted, the file is housed on secure
+	servers that prevent any unauthorized changes to the file.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbfile kbinterop kbsample kbVBp kbVBp400 kbPowerPt 
+	Technology        : kbVBSearch kbAudDeveloper kbPowerPtSearch kbZNotKeyword6 kbPowerPt700 kbZNotKeyword2 kbVB400Search kbVB400 kbPowerPt700Search
+	Version           : WINDOWS:4.0,7.0
+	Hardware          : x86
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

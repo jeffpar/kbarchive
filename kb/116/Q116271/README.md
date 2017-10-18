@@ -1,0 +1,117 @@
+---
+layout: page
+title: "Q116271: HOWTO: Using SET SKIP OF PAD with Custom Menu Pad"
+permalink: kb/116/Q116271/
+---
+
+## Q116271: HOWTO: Using SET SKIP OF PAD with Custom Menu Pad
+
+	Article: Q116271
+	Product(s): Microsoft FoxPro
+	Version(s): MACINTOSH:2.5x,2.6a; MS-DOS:2.0,2.5x,2.6x; WINDOWS:2.5x,2.6x,3.0
+	Operating System(s): 
+	Keyword(s): kbvfp
+	Last Modified: 10-FEB-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 3.0 
+	- Microsoft FoxPro for Windows, versions 2.5x, 2.6x 
+	- Microsoft FoxPro for MS-DOS, versions 2.0, 2.5x, 2.6x 
+	- Microsoft FoxPro for Macintosh, versions 2.5x, 2.6a 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	In order for the SET SKIP OF PAD <pad name> OF <menu name> .T.
+	command to work on a menu created with the FoxPro Menu Builder, the menu pad
+	name must be given a user-assigned name. The Menu Prompt Options dialog box
+	contains a Pad Name check box that can be used to assign a name to a menu pad.
+	That name can then later be used to refer to that pad name in the SET SKIP OF
+	PAD command.
+	
+	MORE INFORMATION
+	================
+	
+	In a menu created with the Quick Menu command, each standard menu pad is
+	automatically assigned a name according to the "MENU - System Menu Names"
+	section of the FoxPro 2.6 "Language Reference" manual, or in Visual FoxPro
+	online Help, under the topic "Menu Names, Visual FoxPro System (internal)".
+	
+	However, in a custom menu prompt, if the Pad Name check box is not selected, the
+	pad is automatically assigned a unique name, such as _qp70zgq9j, by the GENMENU
+	menu generator. This unique pad name cannot be referred to since it is assigned
+	dynamically each time the menu is generated. If this unique name is referred to,
+	unexpected behavior will occur during a SET SKIP OF PAD command.
+	
+	To illustrate how to work around this behavior, the following steps will create a
+	new menu system with three pads, assign a pad name to the second pad, and allow
+	the second pad to be enabled or disabled by selecting the third pad:
+	
+	1. From the File menu, choose New. Under File Type, select Menu, and then choose
+	  New. Or, type "CREATE MENU" (without the quotation marks) in the Command
+	  window.
+	
+	2. In the Prompt box, type "Exit" (without the quotation marks). In the Result
+	  box, select Command. In the text box, type "SET SYSMENU TO DEFAULT" (without
+	  the quotation marks). Press the TAB key twice, or click the next Prompt box.
+	
+	3. In the second Prompt box, type "Admin" (without the quotation marks). In the
+	  Result box, select Procedure. Choose the Create button. In the window, type
+	  the following:
+	
+	        WAIT WINDOW "You chose the Admin pad from the menu"
+	
+	  Press CTRL+W to close the edit window.
+	
+	4. Press the TAB key once, or click the Options button. In the Prompt Options
+	  dialog box, select the Pad Name check box. In the Pad Name box, type "Admin"
+	  (without the quotation marks). Choose OK twice. Press the TAB key once, or
+	  click the next Prompt box.
+	
+	5. In the third Prompt box, type "Toggle Admin" (without the quotation marks).
+	  In the Result box, select Procedure. Choose the Create button. In the window,
+	  type the following code:
+	
+	        tadmin = NOT tadmin
+	        SET SKIP OF PAD admin OF _msysmenu tadmin
+	
+	  Then press CTRL+W to close the window.
+	
+	6. From the Menu menu in FoxPro 2.x (the View menu in Visual FoxPro), choose
+	  General Options, select the Setup check box under Menu Code, choose OK, and
+	  then enter the following code in the window:
+	
+	        PUBLIC tadmin
+	        tadmin = .F.
+	
+	  Then press CTRL+W to close the window.
+	
+	7. From the File menu, choose Save As. In the Save Menu As text box, type
+	  "testskip" (without the quotation marks). Choose the Save button.
+	
+	8. From the Program menu, choose Generate, and then choose the Generate button.
+	  When FoxPro has finished generating the menu, press ESC or choose Close from
+	  the File menu to close the Menu Builder window.
+	
+	To test the menu, either type "DO testskip.mpr" (without the quotation marks) in
+	the Command window, or choose Do from the Program menu, select the TESTSKIP.MPR
+	file, and then choose the Do button.
+	
+	Note that the Admin menu is enabled at first and is dimmed after the Toggle Admin
+	menu is chosen.
+	(c) Microsoft Corporation 1997, All Rights Reserved.
+	Contributions by V, Microsoft Corporation
+	
+	
+	Additional query words: MBuilder not working ignored cannot dim disabled enabled greyed grayed unavailable
+	
+	======================================================================
+	Keywords          : kbvfp 
+	Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro260aMac kbFoxPro200DOS kbVFP300
+	Version           : MACINTOSH:2.5x,2.6a; MS-DOS:2.0,2.5x,2.6x; WINDOWS:2.5x,2.6x,3.0
+	
+	=============================================================================
+	

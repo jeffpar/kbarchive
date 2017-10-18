@@ -1,0 +1,265 @@
+---
+layout: page
+title: "Q96694: PC Win: Mail for Windows MSSFS.DLL 3.2.0.4084 Update"
+permalink: kb/096/Q96694/
+---
+
+## Q96694: PC Win: Mail for Windows MSSFS.DLL 3.2.0.4084 Update
+
+	Article: Q96694
+	Product(s): Microsoft Mail For PC Networks
+	Version(s): WINDOWS:3.0b,3.2,3.2a
+	Operating System(s): 
+	Keyword(s): kbgraphxlinkcritical
+	Last Modified: 20-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Mail for Windows, versions 3.0b, 3.2, 3.2a 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Microsoft provides a replacement for the MSSFS.DLL file that is included with
+	versions 3.0b and 3.2 of Microsoft Mail for Windows. The replacement file
+	provides additional enhancements to the original MSSFS.DLL file.
+	
+	For complete information about obtaining and installing the MSSFS.DLL file, see
+	the following sections:
+	
+	- To download the updated file
+	
+	- To replace your MSSFS.DLL file
+	
+	MORE INFORMATION
+	================
+	
+	This replacement file resolves the following problems that can occur when you
+	use version 3.0b of Microsoft Mail for Windows:
+	
+	- When you send mail to an external postoffice group or gateway group that
+	  contains extended characters in the address, Mail for Windows does not
+	  convert from code page 850 to the ANSI code page when it reads the records
+	  from the NETPO.GLB file or any other gateway address file.
+	
+	- External postoffices, SNADS DGNs, and nodes for PROFS and OfficeVision are
+	  not displayed in alphabetic order because Mail for Windows reads them in one
+	  at a time and adds them to the hierarchy. With the updated version of
+	  MSSFS.DLL, Mail for Windows reads them in all at once, sorts them, and adds
+	  them to the hierarchy.
+	
+	- An "Unknown user" error may occur when you send a message. Mail for Windows
+	  caches only the first 8170 bytes of the NETWORK.GLB file and loses the rest.
+	  Postoffices and gateways that are defined past 8170 bytes are ignored;
+	  therefore, you cannot send messages to the users on those postoffices or
+	  gateways.
+	
+	- The simple MAPI command MAPILogon() does a case-sensitive match on the user
+	  name and password; however, Microsoft Mail is not case sensitive. This
+	  problem occurs only if a MAPI session was already established when
+	  MAPILogon() is called.
+	
+	- Incorrect message dates are displayed. When parsing old A.M./P.M. style dates
+	  (generated from some gateways), Mail for Windows adds 12 to the time if it is
+	  P.M. However, if the message was sent during the noon hour, the time is
+	  incorrectly read as 24:xx. Because this is an invalid time, the date is set
+	  to the programmer's birthday (12/16/68).
+	
+	- Mail for Windows may cause a general protection (GP) fault when it encounters
+	  a corrupt .XTN file in the database. It does not properly handle .XTN files
+	  that are an incorrect size.
+	
+	This replacement file also resolves the following problems that can occur when
+	you use version 3.0b or 3.2 of Microsoft Mail for Windows:
+	
+	- Mail for Windows cannot view templates of SNADS or PROFS users when GALONLY=1
+	  is set in the MSMAIL.INI file.
+	
+	- When you read a custom message from a shared folder, the wrong date is
+	  displayed.
+	
+	- In version 3.0b of Mail for Windows, the time stamp associated with resolved
+	  addresses is not saved correctly: if the Global Address List (GAL) was built
+	  twice in the same day, any mail addressed but not sent before the second
+	  rebuild could be misdirected. This problem was partially corrected in version
+	  3.2 of Mail for Windows: the time stamp is saved correctly, thus reducing the
+	  time frame in which this problem could occur from one day to one clock hour.
+	  However, mail may still be misdirected at sites where GAL rebuilds are made
+	  within the same clock hour.
+	
+	- All users running Windows from a shared installation point must use the same
+	  postoffice when they use Advanced Security. This problem occurs because the
+	  MAIL.DAT file is saved to the Windows SYSTEM subdirectory, which is shared
+	  among all users running Windows from the same location. The client now checks
+	  both the WINDOWS (user's local directory) and WINDOWS\SYSTEM directories, in
+	  that order, for the MAIL.DAT file.
+	
+	  NOTE: To resolve this problem when you are installing Mail for Windows, two
+	  files must be updated: the MSSFS.DLL file (included with this update) and the
+	  SETUP.EXE file (update included in SETUPD.EXE on the MSL).
+	
+	- Duplicate addresses are added to the Personal Address Book (PAB).
+	
+	  NOTE: To resolve this problem, two .DLL files must be updated: the MSSFS.DLL
+	  file (included with this update) and the PABNSP.DLL file (update included in
+	  PABNSP.EXE on the MSL).
+	
+	- If users are running Mail for Windows from a shared installation point and
+	  the NETBIOS=1 flag is set in the MSMAIL.INI file, Mail checks the size, date,
+	  and time of the MSMAIL.INI file every 5 seconds. Because the .INI file is on
+	  the network, frames are sent to the server to check the size of the file
+	  every 5 seconds, thus increasing traffic on the network. These checks no
+	  longer occur with this update.
+	
+	- When an urgent message is sent to an external user with NetBIOS notification
+	  in use, Mail for Windows does not send a NetBIOS datagram to the External
+	  Mail program. This process does work correctly when an urgent message is sent
+	  to a local user. When sending urgent messages, Mail for Windows now sends
+	  notifications to the External Mail program when NetBIOS notification is in
+	  use.
+	
+	- MACBinary II attachments are not recognized when originating from external
+	  Mail Systems.
+	
+	- When sending mail such that the number of recipients is greater than 200
+	  (exact number depends on the specific address list), the body of the message
+	  will be missing.
+	
+	- When Add Recipients to Personal Address Book is selected, the GAL.NME file is
+	  locked open each time a global address list (GAL) name is added to a compose
+	  note.
+	
+	- In certain situations, viewing details of an external name from a group
+	  results in the error message:
+	
+	  A GLB file on your server is corrupt.
+	
+	- If a message has more than 22 recipients selected from the GAL and that
+	  message is stored in a shared folder, the message appears to be corrupted.
+	  Attempting to open the message from the shared folder results in the error:
+	
+	  Mail system error, Mail could not read the entire message from the Post
+	  Office. Some parts of the message may be missing. Ask the sender to resend
+	  the message.
+	
+	- Under certain conditions, a general protection (GP) fault can occur in
+	  MSSFS.DLL when the MAPILogon() function is used to begin a session with the
+	  messaging system.
+	
+	- The Check Names function fails to properly resolve partial friendly names and
+	  returns several selections when a unique resolution is possible. This
+	  behavior is most obvious when the GAL is selected as the default address list
+	  and the first and last name of the intended recipient begin with the same
+	  letter.
+	
+	  NOTE: To resolve this problem, two .DLL files must be updated: the MSSFS.DLL
+	  file (this update) and the MAILMGR.DLL file (update included in MAILMGR.EXE
+	  on the MSL).
+	
+	This replacement file also resolves the following problems that can occur when
+	you use version 3.0b, 3.2, or 3.2a of Microsoft Mail for Windows:
+	
+	- The Windows client stops responding when it receives a message with an
+	  invalid time; that is, a time greater than 23 hours.
+	
+	
+	- Templates that were created with extended characters will lose their extended
+	  characters when they are exported to other postoffices.
+	
+	
+	- The Windows client cannot display a template field of zero length. These are
+	  display fields only and cannot be modified.
+	
+	
+	- Custom forms that did not include their own textize maps could not use the
+	  provided default print/save functionality.
+	
+	  NOTE: To fix this problem, MAPI.DLL version 3.2.4081 (available as MAPIUPD.EXE
+	  on the MSL) MUST be used with this MSSFS.DLL.
+	
+	- When you have more than one friendly name for the same PROFS userid, and you
+	  attempt to get details from the GAL in the Windows client, incorrect
+	  information is displayed.
+	
+	
+	- When you add multiple users from the GAL with the same friendly name to the
+	  PAB or to Personal Groups, only the first entry gets added. No errors are
+	  reported.
+	
+	
+	To download the updated file
+	----------------------------
+	
+	The following file is available for download from the Microsoft Download Center:
+	
+	  DownloadDownload Mssfs.exe now
+	  (http://download.microsoft.com/download/pcmail/Update/13/WIN/EN-US/Mssfs.exe)
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. Once posted, the file is housed on secure
+	servers that prevent any unauthorized changes to the file.
+	
+	After you download MSSFS.EXE to a clean directory, double-click it to extract the
+	contents of the file. You should receive the following files:
+	
+	  MSSFS.DLL (266,848 bytes, dated 04-04-95, 9:54 P.M.)
+	  README.TXT
+	
+	To replace your MSSFS.DLL file
+	------------------------------
+	
+	1. At the MS-DOS command prompt, type the following and press ENTER:
+	
+	  " copy mssfs.dll <destination>" (without the quotation marks)
+	
+	  where <destination> is the drive and directory where your MSSFS.DLL file
+	  currently resides. For example, if MSSFS.DLL is located in the MAILEXE
+	  directory on drive C and you ran the self-extracting file from the TEST
+	  directory on drive D, type the following command:
+	
+	  " copy d:\test\mssfs.dll c:\mailexe" (without the quotation marks)
+	
+	2. At the MS-DOS command prompt, type the following and press ENTER
+	
+	  " copy <mailexe>\setup.inf <mailexe>\setupinf.old" (without the
+	  quotation marks)
+	
+	  where <mailexe> is the complete path to the directory containing the
+	  Microsoft Mail for Windows SETUP.EXE program. For example, if SETUP.EXE is
+	  located in the MAILEXE directory on drive C, type the following command:
+	
+	  " copy c:\mailexe\setup.inf c:\mailexe\setupinf.old" (without the quotation
+	  marks)
+	
+	3. Using any text editor, edit the SETUP.INF file. In the [MSMAIL] section,
+	  replace the following line
+	
+	  1, mssfs.dll,,,, 1994-11-18, !DECOMPRESS,, OLDER, !READONLY,,,,, SHARED,
+	  266752,,,, 3.2.0.4079,
+	
+	  with:
+	
+	  " 1, mssfs.dll,,,, 1995-04-04, !DECOMPRESS,, OLDER, !READONLY,,,,, SHARED,
+	  266848,,,, 3.2.0.4084," (without the quotation marks)
+	
+	  Save the file and close the text editor.
+	
+	NOTE: For these changes to affect the entire network, each existing user must run
+	Setup again.
+	
+	Additional query words: 3.00b 3.20 wga
+	
+	======================================================================
+	Keywords          : kbgraphxlinkcritical 
+	Technology        : kbMailSearch kbZNotKeyword3 kbMail320 kbMail300b kbMail320a
+	Version           : WINDOWS:3.0b,3.2,3.2a
+	
+	=============================================================================
+	

@@ -1,0 +1,77 @@
+---
+layout: page
+title: "Q73033: Workarounds for the MS-DOS 1024-Cylinder Limit"
+permalink: kb/073/Q73033/
+---
+
+## Q73033: Workarounds for the MS-DOS 1024-Cylinder Limit
+
+	Article: Q73033
+	Product(s): Microsoft Disk Operating System
+	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22; WINDOWS:95
+	Operating System(s): 
+	Keyword(s): msdos
+	Last Modified: 17-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft MS-DOS operating system versions 3.1, 3.2, 3.21, 3.3, 3.3a, 4.0, 4.01, 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+	- Microsoft Windows 95 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Because MS-DOS uses the ROM BIOS to access the hard drive, MS-DOS is limited to
+	the standard AT ROM BIOS interface's maximum of 1024 cylinders. It is possible
+	to have a CMOS Setup allow viewing the full number of cylinders but still have
+	the BIOS limited to using only 1024 cylinders.
+	
+	MORE INFORMATION
+	================
+	
+	There are four methods to work around this problem:
+	
+	- Purchase a hard disk controller card that translates the drive's parameters
+	  into values acceptable to the ROM BIOS and to MS-DOS. This allows you to
+	  partition and format the entire drive with MS-DOS. For information about
+	  purchasing such a controller, contact your hard drive or hard drive
+	  controller manufacturer.
+	
+	- Use a software package to translate the drive's parameters into values
+	  acceptable to MS-DOS. Examples of this type translation software include
+	  SpeedStor from Storage Dimensions and Disk Manager from OnTrack Software.
+	
+	  Warning: A side effect of this solution can cause data corruption with most
+	  disk caches, including Microsoft's SMARTDRV.SYS. This is why later versions
+	  of SMARTDRV.SYS, which were shipped with Windows version 3.00a and MS-DOS
+	  version 5.0, refuse to load if the partitions created by these utilities
+	  exist. MS-DOS 5.0 allows an override of this safety feature; however, it
+	  should not be used if the disk has more than 1024 cylinders and translation
+	  software is installed.
+	
+	  See section 7.5 of the MS-DOS 5 Upgrade README.TXT for more information.
+	
+	- Use only the first 1024 cylinders of the disk.
+	
+	- Purchase a hard drive with 1024 cylinders or less.
+	
+	The products included above, Disk Manager and SpeedStor, including their software
+	drivers in the Microsoft MS-DOS 5 Upgrade, are manufactured by vendors
+	independent of Microsoft; we make no warranty, implied or otherwise, regarding
+	these products' performance or reliability. This information is included only
+	for the user's convenience.
+	
+	MS-DOS 5.x compatible versions of the drivers used by these products are included
+	in the Microsoft MS-DOS 5 Upgrade.
+	
+	Additional query words: 6.22 3.20 3.21 3.30 3.30a 4.00 4.01 4.01a 5.00 6.00 6.20 6.21
+	
+	======================================================================
+	Keywords          : msdos 
+	Technology        : kbWin95search kbZNotKeyword3 kbMSDOSSearch kbMSDOS321 kbMSDOS400 kbMSDOS320 kbMSDOS330a kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS310 kbMSDOS500 kbMSDOS330 kbMSDOS401 kbMSDOS500a
+	Version           : MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22; WINDOWS:95
+	
+	=============================================================================
+	

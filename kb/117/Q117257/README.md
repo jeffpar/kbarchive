@@ -1,0 +1,58 @@
+---
+layout: page
+title: "Q117257: Mac Cinemania: Sounds Play in Some Applications But Not Others"
+permalink: kb/117/Q117257/
+---
+
+## Q117257: Mac Cinemania: Sounds Play in Some Applications But Not Others
+
+	Article: Q117257
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): MACINTOSH:
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 09-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Cinemania for Macintosh, 1994, 1995, 1996, 1997 editions 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	You may find that you cannot hear sound in Cinemania even though sound plays
+	correctly in other applications. Or, you may find that sound plays only in
+	Cinemania, and not in any other application.
+	
+	This problem can occur if the Sound control panel is corrupt.
+	
+	RESOLUTION
+	==========
+	
+	To correct this problem, use Finder to copy the Sound control panel from the
+	Installer Files: System Files folder on the Cinemania CD to the system folder on
+	the hard drive.
+	
+	MORE INFORMATION
+	================
+	
+	If the Sound control panel already installed in the system folder is corrupt, it
+	may return an incorrect version number to the Cinemania installer when you are
+	installing Cinemania. This can cause the installer not to install the latest
+	version.
+	
+	For this reason, it is important that you use Finder to copy the file instead of
+	using the installer to reinstall the Sound control panel if you are having
+	trouble with sounds not playing.
+	
+	Additional query words: mac 1994 1995 1996 1997 multi media multimedia multi-media audio soundtrack music narrations pronunciations run play hear sound
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbHomeMMsearch kbCineManiaSearch
+	Version           : MACINTOSH:
+	
+	=============================================================================
+	

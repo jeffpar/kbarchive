@@ -1,0 +1,134 @@
+---
+layout: page
+title: "Q222191: XADM: New Intersite Replication Counters Added"
+permalink: kb/222/Q222191/
+---
+
+## Q222191: XADM: New Intersite Replication Counters Added
+
+	Article: Q222191
+	Product(s): Microsoft Exchange
+	Version(s): winnt:5.5
+	Operating System(s): 
+	Keyword(s): exc55
+	Last Modified: 16-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.5 
+	-------------------------------------------------------------------------------
+	
+	
+	SUMMARY
+	=======
+	
+	Two new performance monitor counters for Exchange Server have been added. The
+	new counters are found in Performance Monitor on the Edit menu by clicking Add
+	to Chart, and selecting MSExchangeDS in the Object drop-down list. They are
+	listed as:
+	
+	- Incoming Inter-Site Replication Updates/sec
+	
+	- Outgoing Inter-Site Replication Messages/sec
+	
+	These counters show replication activity between sites. This activity would
+	normally be monitored on bridgehead Exchange Server computers.
+	
+	The Incoming Inter-Site Replication Updates/sec counter monitors updates as they
+	are being applied to the directory. The Outgoing Inter-Site Replication
+	Messages/sec counter reflects replication messages sent from one site to other
+	sites. A single message can contain more than one directory object to be
+	updated.
+	
+	MORE INFORMATION
+	================
+	
+	To install the new counters, the old counters must be unloaded, new files copied
+	onto the system, and the new counters loaded.
+	
+	The following batch file can be used to install the counters. Modify the file to
+	reflect the paths to the Exchsrvr\Bin folder and the location of the new files.
+	The steps can also be run manually from the command prompt.
+	
+	NOTE: The Exchange Server computer must be version 5.5 with Service Pack 2
+	installed.
+	
+	Possible Batch File
+	-------------------
+	
+	  REM use a Windows NT account that is allowed to "act as part of the operating system"
+	  REM put the new files in a directory called c:\dsactr
+	  REM stop Exchange services
+	
+	  cd c:\exchsrvr\bin
+	
+	  unlodctr MSExchangeDS
+	
+	  ren c:\exchsrvr\bin\dsactrs.ini dsactrs.SP2.ini
+	  ren c:\exchsrvr\bin\dsamain.exe dsamain.sp2.exe
+	  ren c:\exchsrvr\bin\perfdsa.dll perfdsa.sp2.dll
+	  ren c:\exchsrvr\bin\dsactrnm.h dsactrnm.sp2.h
+	
+	  copy c:\dsactr\dsactrs.ini c:\exchsrvr\bin
+	  copy c:\dsactr\dsamain.exe c:\exchsrvr\bin
+	  copy c:\dsactr\perfdsa.dll c:\exchsrvr\bin
+	  copy c:\dsactr\dsactrnm.h c:\exchsrvr\bin
+	
+	  cd c:\exchsrvr\bin
+	  lodctr dsactrs.ini
+	
+	
+	A supported feature that modifies the product's default behavior is now available
+	from Microsoft, but it is only intended to modify the behavior described in this
+	article and should be applied only to systems having a specific need for it.
+	This feature may receive additional testing at a later time, to further ensure
+	product quality. Therefore, if you are not severely affected by the lack of this
+	feature, Microsoft recommends that you wait for the next Exchange Server 5.5
+	service pack that contains this feature.
+	
+	To obtain this feature immediately, contact Microsoft Product Support Services.
+	For a complete list of Microsoft Product Support Services phone numbers and
+	information on support costs, please go to the following address on the World
+	Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	The English version of this feature should have the following file attributes or
+	later:
+	
+	Component: Directory
+	
+	+-----------------------------------------+
+	| File name   | Version    | Size         | 
+	+-----------------------------------------+
+	| Dsactrnm.h  | N/A        | 2,282 bytes  | 
+	+-----------------------------------------+
+	| Dsactrs.ini | N/A        | 17,070 bytes | 
+	+-----------------------------------------+
+	| Dsamain.exe | 5.5.2514.0 | N/A          | 
+	+-----------------------------------------+
+	| Perfdsa.dll | 5.5.2527.0 | N/A          | 
+	+-----------------------------------------+
+	
+	
+	This hotfix has been posted to the following Internet location as Psp2diri.exe
+	(x86) and Psp2dira.exe (Alpha):
+	
+	  ftp://ftp.microsoft.com/bussys/exchange/exchange-public/fixes/eng/Exchg5.5/PostSP2/DIR-fix/
+	
+	
+	Exchange Server 5.5 Service Pack 3 does not include all of the files needed to
+	view these counters.
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : exc55 
+	Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+	Version           : winnt:5.5
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

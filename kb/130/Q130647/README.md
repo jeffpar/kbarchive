@@ -1,0 +1,77 @@
+---
+layout: page
+title: "Q130647: Writer/Artist: How to Remove Your Recorded Sounds"
+permalink: kb/130/Q130647/
+---
+
+## Q130647: Writer/Artist: How to Remove Your Recorded Sounds
+
+	Article: Q130647
+	Product(s): Microsoft Home Kids Products
+	Version(s): MACINTOSH:1.0,1.1,1.1a; WINDOWS:1.0,1.1,1.1a
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 29-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Creative Writer for Windows, versions 1.0, 1.1, 1.1a 
+	- Microsoft Creative Writer for the Macintosh, versions 1.0, 1.1, 1.1a 
+	- Microsoft Fine Artist for Windows, versions 1.0, 1.1, 1.1a 
+	- Microsoft Fine Artist for the Macintosh, versions 1.0, 1.1, 1.1a 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	All sounds you record in Creative Writer or Fine Artist are stored in a single
+	file: the ~MAX.SND file in Creative Writer and the ~MAG.SND file in Fine Artist.
+	The only way to delete sounds you have recorded is to delete the ~MAX.SND or
+	~MAG.SND file.
+	
+	NOTE: This deletes all the sounds you have recorded; there is no way to
+	selectively remove a sound.
+	
+	MORE INFORMATION
+	================
+	
+	If you are using Windows, use the following steps to remove your recorded
+	sounds:
+	
+	1. Locate the ~MAX.SND file (for Creative Writer) or ~MAG.SND file (for Fine
+	  Artist). The file locations are as shown below
+	
+	     <drive>:\MSKIDS\USERS\YOURNAME\~MAX.SND
+	     <drive>:\MSKIDS\USERS\YOURNAME\~MAG.SND
+	
+	  where <drive> is the letter of your hard drive.
+	
+	  For information about how to perform this task in Windows, see your Windows
+	  printed documentation or online Help.
+	
+	2. From the File menu, choose Delete to remove the .SND file.
+	
+	If you are using a Macintosh, use the following steps to remove your recorded
+	sounds:
+	
+	1. Double-click your hard drive, open the Mskids folder, and open the Users
+	  folder.
+	
+	2. Inside the Users folder, open the folder with your nickname, and select the
+	  ~MAX.SND file (for Creative Writer) or ~MAG.SND file (for Fine Artist).
+	
+	3. Drag the .SND file to the Trash. From the Special menu, choose Empty Trash.
+	
+	By following these steps, you have removed any sounds that you recorded in
+	Creative Writer and/or Fine Artist.
+	
+	Additional query words: kbhowto mac kids mskids artist maggie max writer mag noises sounds delete trash get rid of toss sound audio 1.10a
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbPTProdChange kbZNotKeyword2 kbCreativeWriter100 kbCreativeWriter110 kbCreativeWriter110a kbCreativeWriter110Mac kbCreativeWriter110aMac kbCreativeWriter100Mac kbFineArtist100 kbFineArtist110 kbFineArtist110a kbFineArtist110Mac kbFineArtist110aMac kbFineArtist100Mac
+	Version           : MACINTOSH:1.0,1.1,1.1a; WINDOWS:1.0,1.1,1.1a
+	
+	=============================================================================
+	

@@ -1,0 +1,100 @@
+---
+layout: page
+title: "Q182470: HOWTO: Use Setup Wizard Command Line Arguments for Silent Mode"
+permalink: kb/182/Q182470/
+---
+
+## Q182470: HOWTO: Use Setup Wizard Command Line Arguments for Silent Mode
+
+	Article: Q182470
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): WINDOWS:5.0
+	Operating System(s): 
+	Keyword(s): kbGrpDSVB
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Standard Edition for Windows, version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	When using the Visual Basic Setup Wizard to create an application distribution
+	set, you can perform a silent install and uninstall of the application through
+	the use of command-line arguments. This article documents those command-line
+	arguments.
+	
+	MORE INFORMATION
+	================
+	
+	WARNING: ANY USE BY YOU OF THE INFORMATION PROVIDED IN THIS ARTICLE IS AT YOUR
+	OWN RISK. Microsoft provides this information "as is" without warranty of any
+	kind, either express or implied, including but not limited to the implied
+	warranties of merchantability and/or fitness for a particular purpose.
+	
+	Microsoft does not provide technical support for this feature for the following
+	reasons:
+	
+	- This is an untested feature and therefore may not work as expected in some
+	  circumstances.
+	
+	- This feature may not exist in future releases.
+	
+	- This is an undocumented feature. We are documenting it in the Knowledge Base
+	  for use at your own risk.
+	
+	Silent Install Usage
+	--------------------
+	
+	The following command-line syntax allows for a silent install:
+	
+	  c:\mydir\setup.exe -s myapp.log
+	
+	The command line above assumes "c:\mydir" is the folder that contains Setup.exe.
+	The "-s" switch allows for the silent install, and "myapp.log" is the .log file
+	created to track all modifications the installation makes.
+	
+	Silent Uninstall Usage
+	----------------------
+	
+	The following command-line syntax allows for a silent uninstall:
+	
+	  St5unst -n "C:\Program Files\MyApp\St5unst.log" -f -q
+	
+	NOTE: The quotation marks are required when there is a space in the path or file
+	name.
+	
+	The command line above uses the version-specific uninstall executable with the
+	"-n" switch, which allows the uninstall executable to run from a command line.
+	The St5unst.log file contains all pertinent information on the installation of
+	the application. The "-f" and "-q" switches must be used in conjunction to force
+	an SMS uninstall, which is silent by default.
+	
+	NOTE: Installing an application using the NT Schedule service with the silent or
+	SMS parameter will not work and is not supported. The Schedule service does not
+	create a complete copy of the environment when it launches the Setup. When Setup
+	attempts to check for free disk space, the test fails because the TMP and TEMP
+	environment variables are not present. Attempting to work around the problem by
+	setting the variables in a batch file, such as the following example, also
+	fails:
+	
+	     Set TMP=C:\TEMP
+	     Set TEMP=C:\TMP
+	     Setup -q MyLog.txt
+	
+	When running the Setup as an NT Service, the only alternative is to run it in
+	interactive mode.
+	
+	Additional query words: kbDSSTools kbVBp500 kbDSupport kbdss
+	
+	======================================================================
+	Keywords          : kbGrpDSVB 
+	Technology        : kbVBSearch kbAudDeveloper
+	Version           : WINDOWS:5.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

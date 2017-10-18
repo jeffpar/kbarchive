@@ -1,0 +1,83 @@
+---
+layout: page
+title: "Q108794: Video for Windows 1.1 Setup Disk (3.5 Inch, 1.44 MB)"
+permalink: kb/108/Q108794/
+---
+
+## Q108794: Video for Windows 1.1 Setup Disk (3.5 Inch, 1.44 MB)
+
+	Article: Q108794
+	Product(s): Microsoft PowerPoint for Windows
+	Version(s): WINDOWS:1.1
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 22-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Video for Windows, version 1.1 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The following is the directory of the Microsoft Video for Windows version 1.1
+	3.5-inch, 1.44 MB Setup disk:
+	
+	Volume in drive A is SETUP
+	Volume Serial Number is 0C4B-18E1
+	
+	ACMCMPRS DL_         6,864 11-19-93  12:00a
+	AVICAP   DL_        39,543 11-19-93  12:00a
+	AVIFILE  DL_        52,741 11-19-93  12:00a
+	CLEANUP  RE_            92 11-19-93  12:00a
+	COMPOBJ  DL_        54,514 11-19-93  12:00a
+	CTL3D    DL_         8,269 11-19-93  12:00a
+	DISPDIB  DL_         3,722 11-19-93  12:00a
+	DVA      38_         1,049 11-19-93  12:00a
+	INIUPD   DL_        28,074 11-19-93  12:00a
+	MBROWSER EX_        38,978 11-19-93  12:00a
+	MBRWSER  HL_        12,241 11-19-93  12:00a
+	MCIAVI   DR_        41,283 11-19-93  12:00a
+	MSCOMSTF DL_        37,722 11-19-93  12:00a
+	MSCPYDIS DL_         6,911 11-19-93  12:00a
+	MSCPYDIS IN_         1,728 11-19-93  12:00a
+	MSCUISTF DL_        14,241 11-19-93  12:00a
+	MSDETECT IN_         3,742 11-19-93  12:00a
+	MSDETSTF DL_        13,519 11-19-93  12:00a
+	MSINSSTF DL_        36,858 11-19-93  12:00a
+	MSSHLSTF DL_         8,234 11-19-93  12:00a
+	MSUILSTF DL_         3,611 11-19-93  12:00a
+	MSVIDEO  DL_        63,337 11-19-93  12:00a
+	OLE2     DL_       169,656 11-19-93  12:00a
+	OLE2     RE_         3,705 11-19-93  12:00a
+	OLE2CONV DL_        32,201 11-19-93  12:00a
+	OLE2DISP DL_        46,657 11-19-93  12:00a
+	OLE2NLS  DL_        33,055 11-19-93  12:00a
+	OLE2PROX DL_        22,306 11-19-93  12:00a
+	PROFDISP EX_         2,490 11-19-93  12:00a
+	SETUP    EXE        24,624 11-19-93  12:00a
+	SETUP    INI           149 11-19-93  12:00a
+	SETUP    IN_         1,721 11-19-93  12:00a
+	SETUP    LST           678 11-19-93  12:00a
+	SETUP    MST        16,563 11-19-93  12:00a
+	SETUPAPI IN_        11,015 11-19-93  12:00a
+	STORAGE  DL_        81,334 11-19-93  12:00a
+	TYPELIB  DL_        80,602 11-19-93  12:00a
+	VFW      WR_         5,889 11-19-93  12:00a
+	VIDCAP   EX_        72,958 11-19-93  12:00a
+	VIDCAP   HL_        59,563 11-19-93  12:00a
+	_MSSETUP EX_         6,622 11-19-93  12:00a
+	_MSTEST  EX_        49,647 11-19-93  12:00a
+	      42 file(s)      1,198,708 bytes
+	
+	Additional query words: 1.1
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbVideoSearch kbVideo110
+	Version           : WINDOWS:1.1
+	
+	=============================================================================
+	

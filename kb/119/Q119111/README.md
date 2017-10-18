@@ -1,0 +1,124 @@
+---
+layout: page
+title: "Q119111: PC DirSync: Dir-Sync Processes Launched at Wrong Time"
+permalink: kb/119/Q119111/
+---
+
+## Q119111: PC DirSync: Dir-Sync Processes Launched at Wrong Time
+
+	Article: Q119111
+	Product(s): Microsoft Mail For PC Networks
+	Version(s): 3.2,3.5
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 28-JAN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Mail for PC Networks, versions 3.2, 3.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The directory synchronization (Dir-Sync) processes are not run at the times they
+	are scheduled.
+	
+	CAUSE
+	=====
+	
+	Possible causes are:
+	
+	1. The PROCESS.GLB file on the postoffice is corrupt.
+	
+	2. The TZ variable is used inconsistently.
+	
+	3. The time has changed to Daylight Saving Time.
+	
+	4. The clock is set incorrectly on the computer running Dispatch.
+	
+	RESOLUTION
+	==========
+	
+	The following workarounds correspond with the causes listed above and correct
+	this problem:
+	
+	1. If the PROCESS.GLB file on the postoffice is corrupt, use the DEBUG program
+	  to reset the PROCESS.GLB file to 512 bytes:
+	
+	  debug process.glb
+	  -rcx
+	  xxxx
+	  :200
+	  -w
+	  -q
+	
+	2. Use the Microsoft Mail Administrator program (ADMIN.EXE) or the DSSCHED
+	  utility included in the "Directory Synchronization (Dir-Sync)" document.
+	
+	  You can obtain this document from the following sources:
+	
+	   - Microsoft's World Wide Web Site on the Internet
+	
+	   - The Internet (Microsoft anonymous ftp server)
+	
+	   - The Microsoft Network (MSN)
+	
+	   - Microsoft Product Support Services
+	
+	  The following self-extracting file is available for download from the
+	  Microsoft Download Center: Wa0725.exe
+	
+	  The following file is available for download from the Microsoft Download
+	  Center:
+	
+	  DownloadDownload Wa0725.exe now
+	  (http://download.microsoft.com/download/pcmail/Utility/23/WIN/EN-US/Wa0725.exe)
+	
+	  For additional information about how to download Microsoft Support files,
+	  click the article number below to view the article in the Microsoft Knowledge
+	  Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	  Microsoft used the most current virus detection software available on the date
+	  of posting to scan this file for viruses. Once posted, the file is housed on
+	  secure servers that prevent any unauthorized changes to the file.
+	
+	  This document has also been posted to the following Internet location:
+	  ftp://ftp.microsoft.com/bussys/mail/pcmail-public/WA0725/
+	
+	  For more information about how to obtain this document please see the
+	  following article in the Microsoft Knowledge Base:
+	
+	  Q96060 PC DirSync: Directory Synchronization (Dir-Sync)
+	
+	3. If the TZ variable is being used, please refer to the following article in
+	  the Microsoft Knowledge Base for proper and consistent usage:
+	
+	  Q101753 PC DirSync: When to Use the Time Zone Option with Dir-Sync
+	
+	  As an alternative to using DEBUG you can rename the corrupt PROCESS.GLB file
+	  and copy a non-corrupt PROCESS.GLB from a working REQUESTOR. This action can
+	  be performed without difficulty as long as the Timezone variable setting by
+	  the machine running the ADMIN program was the same for both the REQUESTOR
+	  that had the corrupt PROCESS.GLB and the REQUESTOR that has the non-corrupt
+	  PROCESS.GLB.
+	
+	4. If the discrepancy is during Daylight Saving Time change, the Microsoft Mail
+	  Administrator should wait until the week after the Daylight Saving Time
+	  change and reschedule the times.
+	
+	5. If the computer running Dispatch has its clock set incorrectly, reset the
+	  clock.
+	
+	Additional query words: 3.20 3.50 dirsync
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN350
+	Version           : :3.2,3.5
+	
+	=============================================================================
+	

@@ -1,0 +1,177 @@
+---
+layout: page
+title: "Q159963: WD97: Word 97 Supports ODMA"
+permalink: kb/159/Q159963/
+---
+
+## Q159963: WD97: Word 97 Supports ODMA
+
+	Article: Q159963
+	Product(s): Word 97 for Windows
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kb3rdparty kbinterop word97
+	Last Modified: 20-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	
+	SUMMARY
+	=======
+	
+	ODMA is the Open Document Management API. ODMA provides applications with a
+	consistent method to integrate seamlessly with clients from document management
+	systems (DMS).
+	
+	ODMA is a standardized, high-level interface that enables you to transparently
+	access a DMS from your desktop program, such as Microsoft Word 97 for Windows.
+	With ODMA, these services appear to be an extension of the program.
+	
+	Common DMS software packages will replace the standard Open and Save dialog boxes
+	in Word with customized dialog boxes that provide security and version control
+	functions such as:
+	
+	- a way to enter or remove a document
+	
+	- Controlled access to documents
+	
+	- Locks on any document when checked out
+	
+	- Some degree of security when distributing documents
+	
+	- A means for quick searches on the names of documents in the system
+	
+	- A means of tracking access to the document system
+	
+	In order to enable ODMA functionality in Word or Office, you must install a DMS
+	system along with the Word or Office software.
+	
+	NOTE: Microsoft Word 97 for Windows and Microsoft Office Binder 97 are
+	ODMA-compliant applications. When you add a Word 97 document from file or add a
+	new Word 97 section to a binder, Word 97 remains ODMA-compliant.
+	
+	MORE INFORMATION
+	================
+	
+	Described below are the specific calls and steps an ODMA-compliant application
+	goes through during integration with a DMS.
+	
+	When an application first wants to interact with the document management
+	environment, it does an ODMRegisterApp call to the ODMA Connection Manager
+	(ODMA). It will typically do this as part of its startup, but it can delay it
+	until the user actually initiates interaction with the document management
+	system (DMS). ODMA returns a handle for the application to use for
+	identification in all subsequent calls. When the application exits, it calls
+	ODMUnRegisterApp to return the handle.
+	
+	As part of this registration process, ODMA will search the Windows Registry for a
+	registered DMS in the following key:
+	
+	  HKEY_Local_Machine\Software\Classes\ODMA
+	
+	It tries to connect to the first DMS whose key has a sub-key of DEFAULT. The
+	value for the DMS key itself is for an executable provided by the DMS vendor.
+	This is typically a .DLL whose function is to translate the ODMA calls into
+	calls to the DMS client's own integration API. If the user has not already
+	logged in to this DMS either directly or from another application, then the DMS
+	client puts up a log-in screen. Once an application has registered with ODMA, it
+	either continues with API calls, or can switch to a COM interface. ODMA then
+	becomes essentially a transparent traffic manager, passing ODMA calls through to
+	the appropriate DMS client. The DMS client implements the COM interface, as an
+	aggregation of that in ODMA.
+	
+	NOTE: Applications do not register with ODMA. They provide an additional API call
+	that the Connection Manager uses to "wake up" the DMS integration, which returns
+	an interface Id.
+	
+	Requests for new documents and searches go to the default DMS. If the application
+	provides a document id that is for a different DMS, the Connection Manager
+	starts the DMS client if it is not already connected, and passes the call to
+	it.
+	
+	All dialogs for searching, selecting and setting properties of documents, as well
+	as log-in, come from the DMS client. In ODMA 1.0, neither ODMA nor the
+	application provide any dialogs.
+	
+	To open a document, the application calls ODMSelectDoc and the DMS displays a
+	dialog for the user to select the document and version required. The application
+	calls ODMOpenDoc to ask the DMS to retrieve a work copy for the application to
+	open.
+	
+	To save a new document, the application calls ODMNewDoc to get a temporary
+	document Id, ODMSaveAs for the user to complete a profile, ODMOpenDoc to get a
+	filename to save to and ODMSaveDoc to let the DMS know it can take the file.
+	ODMCloseDoc completes the process and tells the DMS to delete the local work
+	copy of the file.
+	
+	
+	For more information about ODMA, please see the following Web site:
+	
+	  http://www.aiim.org/odma/odma.htm
+	
+	DOCUMENT MANAGEMENT SYSTEM SOFTWARE VENDORS
+	-------------------------------------------
+	
+	The following is a list of Document Management System (DMS) vendors:
+	
+	DOCS Open:
+	
+	Hummingbird
+	1 Sparks Avenue
+	North York, Ontario
+	Canada M2H 2W1
+	Telephone: (416) 496-2200 or (877) 359-4866
+	Web Address: http://www.hummingbird.com (http://www.hummingbird.com)
+	
+	Technical Support:
+	Telephone: (850) 942-5000
+	Fax: (850) 942-8085
+	E-mail: support@pcdocs.com
+	
+	Documentum:
+	
+	DOCUMENTUM, INC.
+	6801 Koll Center Parkway
+	Pleasanton, CA 94566
+	Telephone: (925) 600-6800
+	Fax: (925) 600-6850
+	Web Address: http://www.documentum.com/ (http://www.documentum.com/)
+	
+	Technical Support:
+	Support Hotline: (925) 600-6860
+	E-mail: support@documentum.com
+	
+	GroupWise :
+	
+	Novell, Inc.
+	1555 North Technology Way
+	Orem, UT 84097
+	Telephone: (888) 321-4272
+	Web Address: http://www.novell.com (http://www.novell.com)
+	
+	Technical Support:
+	Telephone: (800) 858-4000
+	Web Address: http://support.novell.com/ (http://support.novell.com/)
+	
+	The third-party products discussed in this article are manufactured by vendors
+	independent of Microsoft; we make no warranty, implied or otherwise, regarding
+	these products' performance or reliability.
+	
+	The third-party contact information included in this article is provided to help
+	you find the technical support you need. This contact information is subject to
+	change without notice. Microsoft in no way guarantees the accuracy of this
+	third-party contact information.
+	
+	Additional query words: 8.0 odma api
+	
+	======================================================================
+	Keywords          : kb3rdparty kbinterop word97 
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : :
+	
+	=============================================================================
+	

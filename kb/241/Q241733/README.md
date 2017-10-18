@@ -1,0 +1,189 @@
+---
+layout: page
+title: "Q241733: HOWTO: Obtain Location of Special Folders for Migration DLL"
+permalink: kb/241/Q241733/
+---
+
+## Q241733: HOWTO: Obtain Location of Special Folders for Migration DLL
+
+	Article: Q241733
+	Product(s): Microsoft Windows NT
+	Version(s): 2000
+	Operating System(s): 
+	Keyword(s): kbsetup kbmigrate kbOSWin2000 kbOSWin95 kbOSWin98 kbMigWin9xtoWin2k kbMigrationDLL kbFA
+	Last Modified: 30-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 2000 Advanced Server 
+	- Microsoft Windows 2000 Server 
+	- Microsoft Windows 2000 Professional 
+	- Microsoft Windows 98 
+	- Microsoft Windows 95 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	During an upgrade from Windows 95 or Windows 98 to Windows 2000 Professional, a
+	migration DLL may want to access special folders, such as the Start menu folder
+	or the Desktop folder. A migration DLL cannot assume that these folders exist in
+	default locations. Instead, it should use SHGetSpecialFolderPath or
+	SHGetFolderPath.
+	
+	MORE INFORMATION
+	================
+	
+	SHGetSpecialFolderPath will only work on Windows 95 if Internet Explorer 4.0 is
+	installed with the desktop update. On Windows 2000, SHGetSpecialFolderPath will
+	always work. However, in both cases, it is best to use the new SHGetFolderPath
+	API, which is a superset of SHGetSpecialFolderPath. To use SHGetFolderPath on
+	Windows 95 or Windows 98, you must redistribute the SHFolder.dll file along with
+	the migration DLL.
+	
+	You can get SHFolder.dll from the latest Platform SDK. To download the Platform
+	SDK, see the following Web site:
+	
+	  http://www.microsoft.com/msdownload/platformsdk/setuplauncher.htm
+	
+	When installing the Platform SDK, make sure to install the redistributable
+	components and the build environment. Also, choose to integrate the Platform SDK
+	with Microsoft Visual C++ when prompted. This is necessary because of the
+	SHFolder.h file that is needed. Once the Platform SDK is installed, search the
+	installation folder for the redistributable executable SHFolder.exe. This file
+	installs SHFolder.dll and all other updates that are needed for it to run on
+	Windows 95 or Windows 98. This executable file should be run on the user's
+	computer when the user places the migration DLL on the computer. It can also be
+	installed during your application setup.
+	
+	The following code demonstrates how to obtain a pointer to SHGetFolderPath API:
+	
+	  #include <windows.h>
+	  #include <shfolder.h>
+	
+	  PFNSHGETFOLDERPATHA GetFuncPtr_SHGetFolderPathA()
+	  {
+	     static HMODULE hMod = NULL;
+	     PFNSHGETFOLDERPATHA pSHGetFolderPath = NULL;
+	
+	     // Load SHFolder.dll only once
+	     if (!hMod)
+	        hMod = LoadLibrary("SHFolder.dll");
+	
+	     if (hMod)
+	        // Obtain a pointer to the SHGetFolderPathA function
+	        pSHGetFolderPath = (PFNSHGETFOLDERPATHA)GetProcAddress(hMod, 
+	           "SHGetFolderPathA");
+	
+	     return pSHGetFolderPath;
+	  }
+	
+	The following sample code demonstrates one possible use of this function. During
+	an upgrade to Windows 2000, an application may contain a Windows 2000-specific
+	program or utility that requires a shortcut in the application's Start menu
+	Programs folder. After copying the new program to the computer, the migration
+	DLL can add a shortcut to the user's Start menu. For a per-user setting, the
+	MigrateUserNT function is the best place to perform this task.
+	
+	The following function takes three parameters. The first parameter is the path to
+	the target executable. The second parameter is a description. The final
+	parameter is a subfolder that will be created in the Start menu programs folder.
+	This is where the shortcut will be created.
+	
+	  #include <windows.h>
+	  #include <objbase.h>
+	  #include <shlobj.h>
+	  #include <shfolder.h>
+	
+	  HRESULT CreateUserStartMenuShortcut(LPSTR pszShortcutFile,
+	              LPSTR pszDescription, LPTSTR pszRelativeFolder)
+	  {
+	     HRESULT hr;
+	     PFNSHGETFOLDERPATHA pSHGetFolderPath = NULL;
+	     TCHAR pszLink[MAX_PATH];
+	     BOOL bFound = FALSE;
+	
+	     pSHGetFolderPath = GetFuncPtr_SHGetFolderPathA();
+	
+	     // Find the current user's Start Menu Programs folder
+	     if (pSHGetFolderPath)
+	        bFound = SUCCEEDED(pSHGetFolderPath(NULL, CSIDL_PROGRAMS, 
+	                             NULL, SHGFP_TYPE_CURRENT, pszLink));
+	
+	     if (bFound)
+	     {
+	        // Proceed to create the shortcut
+	        IShellLink *pIShellLink = NULL;
+	        IPersistFile *ppf = NULL;
+	        WCHAR pLinkUnicode[MAX_PATH];
+	
+	        CoInitialize(NULL);
+	
+	        // Get a pointer to the IShellLink interface.
+	        hr = CoCreateInstance(CLSID_ShellLink, NULL, CLSCTX_INPROC_SERVER,
+	                              IID_IShellLink, (void **)&pIShellLink);
+	
+	        if (SUCCEEDED(hr))
+	        {
+	           // Get a pointer to IPersistFile interface for saving shortcut
+	           hr = pIShellLink->QueryInterface(IID_IPersistFile, (void **)&ppf);
+	
+	           if (SUCCEEDED(hr))
+	           {   
+	              hr = pIShellLink->SetPath(pszShortcutFile);
+	              hr = pIShellLink->SetDescription(pszDescription);
+	
+	              if (SUCCEEDED(hr))
+	              {
+	                 // Add the target folder to the Start Menu Programs path
+	                 lstrcat(pszLink, "\\");
+	                 lstrcat(pszLink, pszRelativeFolder);
+	                 lstrcat(pszLink, "\\");
+	
+	                 // Create the directory if it does not exist
+	                 CreateDirectory(pszLink,NULL);
+	
+	                 // Add the file name for the shortcut
+	                 lstrcat(pszLink, pszDescription);
+	                 lstrcat(pszLink, ".lnk");
+	
+	                 // Convert string to Unicode, and call IPersistFile::Save()
+	                 MultiByteToWideChar(CP_ACP, 0, pszLink, -1, pLinkUnicode, MAX_PATH);
+	                 hr = ppf->Save(pLinkUnicode, TRUE);
+	              }
+	              ppf->Release();
+	           }
+	           pIShellLink->Release();
+	        }
+	        CoUninitialize();
+	     }
+	
+	     return hr;
+	  }
+	
+	Refer to the documentation for SHGetSpecialFolderPath and SHGetFolderPath to
+	determine the other types of special folders that these functions can obtain.
+	Note in the example that CoInitialize and CoUnitialize are called within this
+	function. If COM is used in other functions, these calls should be moved to the
+	migration DLL's DllMain function. Call CoInitialize for the DLL_PROCESS_ATTACH
+	notification and CoUninitialize for the DLL_PROCESS_DETACH notification.
+	
+	REFERENCES
+	==========
+	
+	For more information on Migration DLLs, see the topic following in the MSDN
+	Library:
+	
+	  Platform SDK; Management Services; Setup; Migration-Extension Interface
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbsetup kbmigrate kbOSWin2000 kbOSWin95 kbOSWin98 kbMigWin9xtoWin2k kbMigrationDLL kbFAQ kbDSupport kbGrpDSTools kbMigrationDLLFAQ 
+	Technology        : kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWin95search kbWin98search kbWinAdvServSearch kbZNotKeyword3 kbWin98
+	Version           : :2000
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

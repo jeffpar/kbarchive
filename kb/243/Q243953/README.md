@@ -1,0 +1,190 @@
+---
+layout: page
+title: "Q243953: HOWTO: Limit 32-bit Applications to One Instance Using C++"
+permalink: kb/243/Q243953/
+---
+
+## Q243953: HOWTO: Limit 32-bit Applications to One Instance Using C++
+
+	Article: Q243953
+	Product(s): Microsoft C Compiler
+	Version(s): 4.0,4.1,4.2,5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbMFC KbUIDesign kbVC400 kbVC500 kbVC600 kbDSupport kbGrpDSMFCATL
+	Last Modified: 26-MAR-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual C++, versions 4.0, 4.1 
+	- Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+	- Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+	- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+	- Microsoft Visual C++.NET (2002) 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article shows how to limit an application to one instance. It does not rely
+	on any creation of windows, so the method used in this article could be used for
+	about any 32-bit application that is developed in C++. This includes console
+	applications, WinCE applications, dialog box based applications, applications
+	without a graphical user interface and many others.
+	
+	MORE INFORMATION
+	================
+	
+	The method used in this article is the one described in MSDN under the WinMain
+	topic. It uses the CreateMutex() function to create a named mutex that can be
+	checked across processes. Instead of duplicating the same code for every
+	application that intends to be used as a single instance, the needed code is in
+	a C++ wrapper class that can be reused across each application.
+	
+	In order to use this functionality, you can use the following steps:
+	
+	1. Create a new header file with the name LimitSingleInstance.h and add it to
+	  your project.
+	
+	2. Copy the following code into the LimitSingleInstance.h file and save the
+	  file.
+	
+	  #ifndef LimitSingleInstance_H
+	  #define LimitSingleInstance_H
+	
+	  #include <windows.h> 
+	
+	  //this code is from Q243953 in case you lose the article and wonder
+	  //where this code came from...
+	  class CLimitSingleInstance
+	  {
+	  protected:
+	    DWORD  m_dwLastError;
+	    HANDLE m_hMutex;
+	
+	  public:
+	    CLimitSingleInstance(TCHAR *strMutexName)
+	    {
+	      //be sure to use a name that is unique for this application otherwise
+	      //two apps may think they are the same if they are using same name for
+	      //3rd parm to CreateMutex
+	      m_hMutex = CreateMutex(NULL, FALSE, strMutexName); //do early
+	      m_dwLastError = GetLastError(); //save for use later...
+	    }
+	     
+	    ~CLimitSingleInstance() 
+	    {
+	      if (m_hMutex)  //don't forget to close handles...
+	      {
+	         CloseHandle(m_hMutex); //do as late as possible
+	         m_hMutex = NULL; //good habit to be in
+	      }
+	    }
+	
+	    BOOL IsAnotherInstanceRunning() 
+	    {
+	      return (ERROR_ALREADY_EXISTS == m_dwLastError);
+	    }
+	  };
+	  #endif
+	
+	3. #include the LimitSingleInstance.h file where the entry point of the program
+	  is located. If this is to be used in an MFC Application, it is the file where
+	  the InitInstance() function for the application is located. In a Win32 SDK
+	  application, it is where the WinMain() function is located. In a console
+	  application, it is where the main() function is located.
+	
+	  #include "LimitSingleInstance.H"
+	
+	4. Create a global instance of the CLimitSingleInstance class before the entry
+	  point function. If this is being used in a MFC application, create the
+	  instance before the InitInstance() function.
+	
+	5. Pass a unique name to the constructor of the global CLimitSingleInstance
+	  instance. It is recommended to use a unique name so another application that
+	  may be using this article will not conflict when doing the duplicate
+	  checking. An easy way to get a unique name that no one else will have is to
+	  use the GUIDGEN tool. You can access the tool by typing "GUIDGEN" (without
+	  the quotation marks) from the Start button and then select Run in Windows. If
+	  for some reason you do not have the tool, the tool is provided as a sample in
+	  MSDN. Type in GUIDGEN in the MSDN index to find it. Be sure to use the
+	  Registry Format option in the GUIDGEN tool.
+	
+	  #include "LimitSingleInstance.H"
+	
+	  // The one and only CLimitSingleInstance object
+	  // Change what is passed to constructor. GUIDGEN Tool may be of help.
+	  CLimitSingleInstance g_SingleInstanceObj(TEXT("{719967F0-DCC6-49b5-9C61-DE91175C3187}"));
+	
+	6. In your entry point function, call the IsAnotherInstanceRunning() method on
+	  the global instance of the CLimitSingleInstance class and check the return
+	  value. If the function returns TRUE, return from the entry point function.
+	  Otherwise, continue execution as normal.
+	
+	  In an MFC Application, you could do something like the following:
+	
+	  #include "LimitSingleInstance.H"
+	
+	  // The one and only CLimitSingleInstance object
+	  CLimitSingleInstance g_SingleInstanceObj(TEXT("{05CA3573-B449-4e0b-83F5-7FD612E378E9}"));
+	
+	  BOOL CSingleInstDlg5App::InitInstance()
+	  {
+	      if (g_SingleInstanceObj.IsAnotherInstanceRunning())
+	         return FALSE; 
+	
+	  //rest of code
+	  }
+	
+	  In a Console Application, you could do something like the following:
+	
+	  #include "LimitSingleInstance.H"
+	
+	  // The one and only CLimitSingleInstance object
+	  CLimitSingleInstance g_SingleInstanceObj(TEXT("{9DA0BEED-7248-450a-B27C-C0409BDC377D}"));
+	
+	  int main(int argc, char* argv[])
+	  {
+	      if (g_SingleInstanceObj.IsAnotherInstanceRunning())
+	         return 0;
+	  //rest of code
+	  }
+	
+	  In a Win32 SDK Application, you could do something like the following:
+	
+	  #include "LimitSingleInstance.H"
+	
+	  // The one and only CLimitSingleInstance object
+	  CLimitSingleInstance g_SingleInstanceObj(TEXT("{2194ABA1-BFFA-4e6b-8C26-D191BB16F9E6}"));
+	
+	  int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int cmdShow)
+	  {
+	      if (g_SingleInstanceObj.IsAnotherInstanceRunning())
+	         return FALSE; 
+	  //rest of code
+	  }
+	
+	After following the above steps, the application will not allow more than one
+	instance to remain active at one time.
+	
+	REFERENCES
+	==========
+	
+	For additional information, please see the following article(s) in the Microsoft
+	Knowledge Base:
+	
+	  Q141752 Limiting 32-Bit MFC SDI/MDI Applications to a Single Instance
+	
+	  Q238100 Limiting 32-bit MFC SDI Applications to a Single Instance in WinCE
+	
+	
+	Additional query words: one time Chapter 12 Advanced Windows HINSTANCE hPrevInstance single
+	
+	======================================================================
+	Keywords          : kbMFC KbUIDesign kbVC400 kbVC500 kbVC600 kbDSupport kbGrpDSMFCATL 
+	Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC410 kbVC420 kbVC500 kbVC600 kbVC32bitSearch kbVCNET kbVC500Search
+	Version           : :4.0,4.1,4.2,5.0,6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

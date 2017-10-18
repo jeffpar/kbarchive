@@ -1,0 +1,253 @@
+---
+layout: page
+title: "Q109228: SQL Server and Windows NT Thread Scheduling"
+permalink: kb/109/Q109228/
+---
+
+## Q109228: SQL Server and Windows NT Thread Scheduling
+
+	Article: Q109228
+	Product(s): Microsoft Windows NT
+	Version(s): 3.1 4.0
+	Operating System(s): 
+	Keyword(s): kbenv kbtool
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 3.1 
+	- Microsoft Windows NT Workstation version 3.1 
+	- Microsoft Windows NT Advanced Server, version 3.1 
+	- Microsoft Windows NT Server version 4.0 
+	- Microsoft Windows NT Workstation version 4.0 
+	-------------------------------------------------------------------------------
+	
+	
+	SUMMARY
+	=======
+	
+	SQL Server for Windows NT is a Win32 application that runs on the Windows NT or
+	Windows NT Advanced Server operating systems. In some uncommon situations, when
+	SQL Server is running a compute-bound operation, the interactive console
+	responsiveness of Windows NT may be diminished. This article discusses
+	characteristics of the Windows NT process scheduler (often called thread
+	scheduler or thread dispatcher) that relate to this behavior.
+	
+	MORE INFORMATION
+	================
+	
+	Windows NT and Windows NT Advanced Server use the same system of scheduling
+	Win32 processes and threads. In other operating systems, this is usually called
+	process scheduling. With Windows NT, the unit of scheduling is the thread;
+	hence, the term thread scheduling or dispatching. However, the term process will
+	be used in this discussion, where appropriate. The unit of scheduling time is
+	called the time slice or quantum.
+	
+	Windows NT uses 32 numerical thread priorities, ranging from 1 (the lowest) to 31
+	(the highest) with 0 being reserved for system use.
+	
+	
+	Threads 1 through 15 are variable priority in that the scheduler adjusts the
+	priority based on thread behavior. The base priority of a thread is the base
+	level from which these upward adjustments are made. The current priority of a
+	thread is called its dynamic priority. Interactive threads that yield before
+	their time slice is up will tend to be adjusted upward in priority from their
+	base priority. Compute-bound threads that do not yield, consuming their entire
+	time slice, will tend to have their priority decreased, but not below the base
+	level. This arrangement is often called heuristic scheduling. It provides better
+	interactive performance and tends to lessen the system impact of "CPU hog"
+	threads.
+	
+	Windows NT also uses additional priority adjustments based on other events, such
+	as momentarily boosting thread priority when it returns from an I/O call, when
+	returning from a user-mode sub-system call, and when receiving keyboard input.
+	
+	Priority threads 16 through 31 are termed real-time, and do not vary in priority
+	based on behavior. This provides more deterministic scheduling, which is useful
+	for near-real-time systems.
+	
+	Although there is a numerical priority for each thread, these are usually
+	referred to within a Win32 program by their process priority flag or thread
+	priority flag. There is a mapping of these flags to numerical thread priorities,
+	which is detailed in the Win32 SDK, Windows NT Resource Kit Vol. 3, and
+	Knowledge Base article Q106253. In this article we primarily refer to these by
+	their numerical equivalent to reduce confusion.
+	
+	The key to understanding Windows NT thread scheduling and resultant application
+	behavior is knowing the central algorithm used. This algorithm is very simple,
+	and is the same one a number of other operating systems use. It is "highest
+	priority ready thread gets run." A list of ready threads or processes exist
+	which is often called the "dispatch queue" or "eligible queue." The queue
+	entries are in order based on their individual priority. A hardware-driven
+	real-time clock or interval timer will periodically interrupt, passing control
+	to a device driver that calls the process or thread scheduler. The thread
+	scheduler will take the highest priority entry from the queue and dispatch it to
+	run.
+	
+	
+	Thus, a hardware event drives the regular examination of thread states, and the
+	evaluation of which is to run next. The frequency of this operation is quite
+	rapid, often from 10 to 32 milliseconds on most systems.
+	
+	
+	Neither Windows NT nor many other operating systems use CPU quotas. The
+	scheduling algorithm merely selects the highest priority ready-to-run thread and
+	allows it to run uninterrupted until the next clock tick, at which time the
+	scheduler gets control and reevaluates which thread is the highest priority and
+	ready to run. However, if the previously running thread is still highest
+	priority, and still ready to run (has not blocked on I/O or otherwise changed
+	states), it will be run again.
+	
+	
+	Also there is essentially no gradual or proportional control over the amount of
+	CPU time a compute-bound thread receives. Often the misconception exists that by
+	lowering the priority of a compute bound thread a certain amount, this will
+	result in a proportional decrease in the CPU time it receives. In actuality, it
+	will receive just as much time as before, as long as it is higher in priority
+	than other threads. For example, a compute bound thread could be diminished from
+	priority 31 to 16, and as long as all other threads are at 15 or below, it will
+	receive just as much time at 16 as at 31, and its system impact will be just as
+	great.
+	
+	The scheduler attempts to minimize this situation for threads in the variable
+	class, which ranges from 1 to 15. However, highly compute-bound threads can
+	still degrade overall system responsiveness in some circumstances. You can
+	usually investigate these situations by using Performance Monitor to identify
+	which threads are consuming CPU time. Then inspect the dynamic thread priority
+	of the compute-bound thread with respect to that of other slowly-responding
+	threads. You will usually see the compute-bound thread is equal or higher in
+	priority than the others.
+	
+	Schedulers of this type work remarkably well over a wide variety of situations,
+	are well understood, and have low overhead. However, especially with
+	compute-bound processes, they have limitations that are difficult to overcome.
+	In these situations, the compute-bound process tends to either get all the
+	available CPU time, or little to none. It is very hard to throttle a
+	compute-bound process so that it runs at a decent rate yet does not dominate the
+	system.
+	
+	
+	An item that controls thread priority is the "tasking" option of the Control
+	Panel System applet. This allows you to control the degree of foreground
+	priority boost that normal priority class applications receive. A foreground
+	application is one that is made active by selecting it on the NT desktop, thus,
+	bringing it to the foreground. All other applications running are then termed
+	background applications with respect to the foreground.
+	
+	The Windows NT default is "Best Foreground Application Response Time," which
+	results in a foreground application's priority being increased two levels.
+	
+	Neither foreground boost nor the heuristic priority adjustment will cause an
+	application to change classes from normal to realtime, or vice versa. The
+	priority adjustment from these sources is bounded by the process class.
+	
+	The intermediate Control Panel tasking option is "foreground application more
+	responsive than background," which equates to a foreground boost of one level.
+	
+	The last Control Panel tasking option is "foreground and background applications
+	equally responsive," which deactivates any foreground boost. The SQL NT setup
+	program selects this setting during installation. This is mainly to prevent the
+	database server from being CPU-starved by foreground applications and is the
+	best setting for a dedicated SQL Server.
+	
+	
+	The SQL Server setup program allows two options that affect the priority at which
+	SQL runs, hence, system behavior. These two options are listed under the "Set
+	server options" option of setup and are called "Dedicated Multiprocessor
+	Performance" and "Boost SQL Server Priority."
+	
+	Selecting Dedicated Multiprocessor Performance on a symmetric multiprocessor
+	(SMP) machine increases the scalability improvement that multiple CPUs have on
+	SQL Server's performance. Selecting this option is not necessary for SQL Server
+	to benefit from multiple CPUs, but it does increase the amount of improvement. A
+	side effect of selecting the option is that it causes SQL Server to run at a
+	priority of 13. This helps minimize scheduling overhead and obtain maximum
+	benefit from SMP.
+	
+	
+	Selecting "Boost SQL Server Priority" is possible on either a uniprocessor or SMP
+	machine. When selected on a uniprocessor, SQL Server runs at priority 13, which
+	is high but within the variable class of priorities that range from 1 through
+	15. When selected on a SMP machine, SQL Server runs at priority 24, which is
+	midway into the realtime class of priorities that range from 16 through 31.
+	
+	This chart displays the priority at which SQL Server for Windows NT runs
+	depending on configuration:
+	
+	Priority     Multiprocessor (MP) Support     Boost     SMP Machine
+	
+	------------------------------------------------------------------
+	
+	 7                        n/a                OFF          No
+	13                        n/a                ON           No
+	 7                        OFF                OFF          Yes
+	24                        OFF                ON           Yes
+	13                        ON                 OFF          Yes
+	24                        ON                 ON           Yes
+	
+	
+	With the previous in mind, a number of behaviors concerning SQL Server and the
+	Windows NT thread scheduler are more understandable. One of these concerns when
+	SQL Server for Windows NT is performing a CPU-intensive operation, such as some
+	types of joins. Depending on the exact operation and the amount of memory
+	available, the operation could be done entirely in cache--effectively becoming
+	CPU-bound. During this period SQL Server, even when running at the default
+	priority of 7, could degrade interactive performance. The conditions necessary
+	for this behavior to occur are relatively narrow and do not happen frequently.
+	
+	Another situation where this might occur is if a large single transaction or a
+	large number of smaller transactions needed processing during start up recovery,
+	as would be the case if the server was abruptly shut down while these
+	transactions were in progress. Depending on the amount of SQL cache buffer
+	memory and the exact disk subsystem used, a lengthy recovery can take place
+	mostly or entirely in cache. Because of this it would be CPU bound and could
+	degrade interactive performance during this interval.
+	
+	On a machine dedicated mainly as a database server, interactive console
+	performance is usually not a priority. However, if necessary, as a workaround
+	SQL Server can be started from the command line in the IDLE priority class with
+	a command like:
+	
+	  start /low sqlservr -c -dc:\sql\data\master.dat
+	
+	
+	Another example is when SQL Server does a large disk init. In this case the
+	operation is extremely I/O bound, and the lack of any scheduler I/O quotas
+	causes similar behavior to a CPU bound operation.
+	
+	
+	Using the Dedicated MultiProcessor Support option when on an SMP machine
+	dedicated to SQL Server can improve performance. This will also result in SQL
+	Server running at priority 13. In some CPU-intensive operations, this can cause
+	logins to be slower (or the Windows NT console responsiveness to be sluggish) as
+	SQL Server may allow less CPU time for other system processes.
+	
+	
+	Using the Boost SQL Server Priority on a SMP machine dedicated to SQL Server can
+	also improve performance, although often not as much as the MP support option.
+	Boost Priority results in SQL Server running at priority 24, which is in the
+	realtime class. The impact on Windows NT console responsiveness can be similar
+	to that of the MP support option.
+	
+	
+	Additional Suggested Reading
+	----------------------------
+	
+	"Inside Windows NT" by Helen Custer, ISBN 1-55615-481-X "Advanced Windows NT" by
+	Jeffrey Richter, ISBN 1-55615-567-0 "Optimizing Windows NT" by Russ Blake, ISBN
+	1-55615-619-7 (Vol. 3 of the Windows NT Resource Kit) "Windows NT SDK,"
+	Microsoft Developer Network CD-ROM "Operating Systems, Design and
+	Implementation" by Andrew S. Tannenbaum, ISBN 0136374069 "Modern Operating
+	Systems" by Andrew S. Tannenbaum, ISBN 0135881870 Microsoft Knowledge Base
+	article Q96418
+	
+	Additional query words: prodnt 4.20 Windows NT
+	
+	======================================================================
+	Keywords          : kbenv kbtool 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTW310 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+	Version           : 3.1 4.0
+	
+	=============================================================================
+	

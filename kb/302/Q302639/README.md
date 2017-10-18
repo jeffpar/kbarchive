@@ -1,0 +1,91 @@
+---
+layout: page
+title: "Q302639: Zone Transfers from BIND Version 9.x DNS Servers Do Not Work"
+permalink: kb/302/Q302639/
+---
+
+## Q302639: Zone Transfers from BIND Version 9.x DNS Servers Do Not Work
+
+	Article: Q302639
+	Product(s): Microsoft Windows NT
+	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
+	Operating System(s): 
+	Keyword(s): kbenv kbnetwork kbtool
+	Last Modified: 08-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4, 4.0 SP5, 4.0 SP6, 4.0 SP6a 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The Microsoft DNS service may have problems when it acts as a secondary server
+	for a zone whose master is on a BIND version 9.x DNS server. Specifically, zone
+	transfers may not work.
+	
+	CAUSE
+	=====
+	
+	This problem can occur because Microsoft DNS servers have a limitation of
+	receiving 16 kilobytes (KB) AXFR (full zone transfer) messages.
+	
+	RESOLUTION
+	==========
+	
+	A supported fix is now available from Microsoft, but it is only intended to
+	correct the problem described in this article and should be applied only to
+	systems experiencing this specific problem.
+	
+	To resolve this problem, contact Microsoft Product Support Services to obtain the
+	fix. For a complete list of Microsoft Product Support Services phone numbers and
+	information on support costs, please go to the following address on the World
+	Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	NOTE: In special cases, charges that are normally incurred for support calls may
+	be canceled, if a Microsoft Support Professional determines that a specific
+	update will resolve your problem. Normal support costs will apply to additional
+	support questions and issues that do not qualify for the specific update in
+	question.
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	  Date         Time    Size     File name    Platform
+	  ---------------------------------------------------
+	  22-Jun-2001  18:23   178,960  Dns.exe      Intel
+	  22-Jun-2001  18:18   301,328  Dns.exe      ALPHA
+	
+	NOTE: Due to file dependencies, this hotfix requires Microsoft Windows NT 4.0
+	Service Pack 6a.
+	
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Windows NT 4.0.
+	
+	MORE INFORMATION
+	================
+	
+	The update that is described in this article allows the DNS service to accept up
+	to 64 KB AXFR messages.
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbenv kbnetwork kbtool 
+	Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400sp6 kbWinNTS400sp5 kbWinNTS400sp4 kbWinNTS400sp3 kbWinNTS400sp2 kbWinNTS400sp1 kbWinNTS400search kbWinNTS400
+	Version           : :4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
+	Hardware          : ALPHA x86
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

@@ -1,0 +1,66 @@
+---
+layout: page
+title: "Q240277: XFOR: Lotus Notes Configuration Utility Does Not Finish and Save"
+permalink: kb/240/Q240277/
+---
+
+## Q240277: XFOR: Lotus Notes Configuration Utility Does Not Finish and Save
+
+	Article: Q240277
+	Product(s): Microsoft Exchange
+	Version(s): winnt:5.0,5.5
+	Operating System(s): 
+	Keyword(s): exc5 exc55
+	Last Modified: 18-SEP-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 5.0, 5.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	You can make configuration changes to the Exchange Notes Connector in the Lotus
+	Notes Configuration utility, but when you reopen the utility, your changes have
+	not been saved. You may also get a message when you change the source or target
+	Address Book that says "Database Object is invalid" if the Exchange Server
+	service account is not a member of the Local Administrators group.
+	
+	RESOLUTION
+	==========
+	
+	Add the Exchange Server service account to the Local Administrators group; this
+	allows the Lotus Notes Connector Configuration to finish and save any changes.
+	
+	MORE INFORMATION
+	================
+	
+	Log files may have entries similar to the following.
+	
+	1999/08/20 13:46:24-         CONTROL-SERVICE(01de) 1 02002:Error {WIN32:5(Access is denied.)}: Could not create connection 1 for \\.\pipe\lsi\control
+	>> rcspipe(1111)
+	1999/08/20 13:46:24-         CONTROL-SERVICE(01de) 1 02013:Error {I/O error has occurred}: System resources used by the Remote Connection Server \\.\pipe\lsi\control could not be created
+	>> rcspipe(362)
+	1999/08/20 13:46:24-         CONTROL-SERVICE(01de) 1 10200:Error {I/O error has occurred}: Unable to create RCServer object
+	>> uimgr(475)
+	1999/08/20 13:46:24-         CONTROL-SERVICE(01de) 1 10001:Error {I/O error has occurred}: Could not initialize Controller
+	>> lsmain(680)
+	1999/08/20 13:46:24-         CONTROL-SERVICE(01de) 1 00511:Error {I/O error has occurred}: The application failed while processing.
+	>> stdserv(1198) 
+	1999/08/20 13:46:24-         CONTROL-SERVICE(01de) 3 00505:CONTROL-SERVICE is ending, last return code was {I/O error has occurred}
+	>> stdserv(1257) 
+	1999/08/20 13:46:24-         CONTROL-SERVICE(01de) 1 08230:The Microsoft Exchange Connectivity Controller service has stopped
+	>> stdserv(1261)
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : exc5 exc55 
+	Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+	Version           : winnt:5.0,5.5
+	Issue type        : kbprb
+	
+	=============================================================================
+	

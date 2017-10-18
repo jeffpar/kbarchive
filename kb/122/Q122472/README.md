@@ -1,0 +1,121 @@
+---
+layout: page
+title: "Q122472: Encarta 95-96: Summary of Video Issues and Resolutions"
+permalink: kb/122/Q122472/
+---
+
+## Q122472: Encarta 95-96: Summary of Video Issues and Resolutions
+
+	Article: Q122472
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 09-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Encarta 95 The Complete Interactive Multimedia Encyclopedia for Macintosh 
+	- Microsoft Encarta 96 Encyclopedia for Windows 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The Encarta programs listed at the top of this article are subject to the
+	following video limitations. This article includes problems and solutions, plus
+	additional references when available.
+	
+	Many of these problems can be solved by obtaining updated video drivers from your
+	hardware vendor.
+	
+	This article refers to Windows 3.1x video drivers. If you are using Windows 95,
+	we recommend using the new Windows 95 video drivers. These problems generally do
+	not occur with updated drivers.
+	
+	MORE INFORMATION
+	================
+	
+	Video driver       Problem                      Resolution
+	--------------------------------------------------------------------------
+	
+	Trident Cxi        General Protection Fault     Contact Trident for
+	Linear Addressing  in Cxitl.drv                 driver update. Or use
+	                                               SVGA driver.
+	
+	S3 64K             Poor display with videos.    Use 256-color mode.
+	
+	Orchid Fahrenheit  "Not Present Fault"          Contact Orchid for
+	4.3 driver         when playing animations.     driver update. (Version
+	                                               4.81 is released but
+	                                               not tested.)
+	
+	Cirrus Logic 64K   Videos hang in               Use 256 colors or
+	                  Zoom by 2 mode.              disable the Zoom by 2
+	                                               mode in the Drivers area
+	                                               of Control Panel.
+	
+	Older Diamond      Palette and redraw           Contact Diamond for
+	Stealth            problems, or GPF in          driver update.
+	                  Media Gallery.
+	
+	TIGA               GP fault in TIGATC.DRV       Use the TIGA 256-color
+	16-million-        when playing animations.     driver.
+	color driver
+	
+	ET4000 > 256       Causes animations to         Upgrade the drivers to
+	Older (1992)       crash when loading           VGA4AHX.DRV (9/14/93)
+	                                               or later, or use the
+	                                               256-color drivers.
+	
+	ATI Ultra          Causes Encarta to hang       Obtain a driver update
+	and UltraBig       when accessing flyout 3/94,  from ATI; or, for a
+	Older (1992)       menus over a watermark.      short-term fix, add
+	                                               the following line in
+	                                               the [95Options]
+	                                               section of the
+	                                               ENCARTA.INI:
+	                                               nowatermark=1
+	
+	
+	Paradise VGA       Corrupted text display       Use SVGA.DRV provided
+	256 drivers        when scrolling.              with Windows for Workgroups
+	                                               3.11. (There are no
+	                                               more recent versions
+	                                               available from Paradise or
+	                                               Western Digital.)
+	
+	
+	ATI Mach           GP fault in Fractal          See readme file for more
+	drivers            InterActivity. Corrupt       information, or contact
+	                  display in Tours.            ATI for updated driver.
+	
+	All 16-color       Slow user interface          256-color drivers are
+	drivers            activities.                  REQUIRED, as stated on
+	                                               the box.
+	
+	
+	For additional information about company names and phone numbers, please see the
+	following articles in the Microsoft Knowledge Base:
+	
+	  Q65416 Hardware and Software Third-Party Vendor List, A-K
+	
+	  Q60781 Hardware and Software Third-Party Vendor List, L-P
+	
+	  Q60782 Hardware and Software Third-Party Vendor List, Q-Z
+	
+	
+	The third-party products discussed here are manufactured by vendors independent
+	of Microsoft; we make no warranty, implied or otherwise, regarding these
+	products' performance or reliability.
+	
+	Additional query words: kbhowto msn_encarta 1995 multi media multimedia multi- picture graphic graphics videos err msg errors error message messages graph movie animation protection fault
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1996 kbEncartaEnCyc1995Mac
+	Version           : :
+	
+	=============================================================================
+	

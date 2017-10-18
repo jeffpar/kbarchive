@@ -1,0 +1,150 @@
+---
+layout: page
+title: "Q186118: HOWTO: Use FileSystemObject with Visual Basic"
+permalink: kb/186/Q186118/
+---
+
+## Q186118: HOWTO: Use FileSystemObject with Visual Basic
+
+	Article: Q186118
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbFileIO KbVBA kbVBp kbVBp500 kbVBp600 kbGrpDSVB kbDSupport
+	Last Modified: 10-JUL-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	FileSystemObject provides a non-hierarchical structure to manipulate, read, and
+	create ASCII and Unicode text files. This structure is very different from the
+	hierarchical structure of the original implementation of File I/O in Visual
+	Basic. FileSystemObject does not support binary file access, so you must still
+	use the original File I/O model in Visual Basic for binary file access.
+	
+	MORE INFORMATION
+	================
+	
+	FileSystemObject can be found in Scrrun.dll. In addition to FileSystemOject,
+	Scrrun.dll includes four other objects available for File I/O and other tasks.
+	These objects include the File object, the TextStreamObject object, the Folder
+	object, and the Drive object. All of these objects have properties and methods
+	that are detailed in the Help files.
+	
+	You can obtain Scrrun.dll by installing one of the following packages:
+	
+	  Windows Script Host
+	  Windows NT Option Pack
+	  Microsoft Internet Information Server 3.0
+	  Scripting 3.1 upgrade
+	  Visual Studio 6.0
+	  Visual Basic 6.0
+	
+	FileSystemObject was originally created for the Visual Basic Scripting Edition.
+	FileSystemObject is not included in the object library for Visual Basic or
+	Visual Basic for Applications. To use FileSystemObject, you must select the
+	Microsoft Scripting Run-time in the Project References dialog box for your
+	project.
+	
+	The following sample illustrates how to implement some of the FileSystemObject
+	functionality. For more information, please see the Visual Basic Help files and
+	the Visual Basic Books Online.
+	
+	Steps to Create Sample Project
+	------------------------------
+	
+	1. Start a new Standard EXE project in Visual Basic. Form1 is created by
+	  default.
+	
+	2. Click References on the Project menu and select the Microsoft Scripting
+	  Runtime. If the Microsoft Scripting Runtime does not appear in the list,
+	  browse for Scrrun.dll on your system. Install one of the tools listed
+	  previously if necessary.
+	
+	3. Add four CommandButton controls to Form1. The CommandButton controls
+	  demonstrate the following functionality:
+	
+	  Command1: How to read an existing text file using FileSystemObject
+	            and TextStreamObject.
+	
+	  Command2: How to view file information using FileSystemObject and
+	            the File object.
+	
+	  Command3: How to iterate through folders using FileSystemObject and
+	            the Folder object.
+	
+	  Command4: How to view drive information using FileSystemObject and
+	            the Drive object.
+	
+	4. Paste the following code into the General Declarations section of Form1:
+	
+	        Option Explicit
+	
+	        Private Sub Command1_Click()
+	          'Declare variables.
+	          Dim fso As New FileSystemObject
+	          Dim ts As TextStream
+	          'Open file.
+	          Set ts = fso.OpenTextFile(Environ("windir") & "\system.ini")
+	          'Loop while not at the end of the file.
+	          Do While Not ts.AtEndOfStream
+	            Debug.Print ts.ReadLine
+	          Loop
+	          'Close the file.
+	          ts.Close
+	        End Sub
+	
+	        Private Sub Command2_Click()
+	           Dim fso As New FileSystemObject
+	           Dim f As File
+	           'Get a reference to the File object.
+	           Set f = fso.GetFile(Environ("windir") & "\system.ini")
+	           MsgBox f.Size 'displays size of file
+	        End Sub
+	
+	        Private Sub Command3_Click()
+	           Dim fso As New FileSystemObject
+	           Dim f As Folder, sf As Folder, path As String
+	           'Initialize path.
+	           path = Environ("windir")
+	           'Get a reference to the Folder object.
+	           Set f = fso.GetFolder(path)
+	           'Iterate through subfolders.
+	           For Each sf In f.SubFolders
+	             Debug.Print sf.Name
+	           Next
+	        End Sub
+	
+	        Private Sub Command4_Click()
+	           Dim fso As New FileSystemObject
+	           Dim mydrive As Drive
+	           Dim path As String
+	           'Initialize path.
+	           path = "C:\"
+	           'Get object.
+	           Set mydrive = fso.GetDrive(path)
+	           'Check for success.
+	           MsgBox mydrive.DriveLetter 'displays "C"
+	        End Sub
+	
+	5. Run your project. Click each CommandButton control and observe the results.
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbFileIO KbVBA kbVBp kbVBp500 kbVBp600 kbGrpDSVB kbDSupport 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600
+	Version           : :5.0,6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

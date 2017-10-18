@@ -1,0 +1,241 @@
+---
+layout: page
+title: "Q85440: MOUSEQA.WRI from Windows Resource Kit"
+permalink: kb/085/Q85440/
+---
+
+## Q85440: MOUSEQA.WRI from Windows Resource Kit
+
+	Article: Q85440
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:3.1,3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 03-OCT-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows versions 3.1, 3.11 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The following information was taken from the Microsoft Windows Resource Kit for
+	operating system version 3.1 MOUSEQA.WRI file.
+	
+	MORE INFORMATION
+	================
+	
+	Q: What Windows 3.1 mouse type should I select in Custom Setup?
+	
+	A: Setup offers the following mouse types to choose from:
+	
+	  Microsoft, or IBM PS/2
+	  ----------------------
+	
+	  Select this if you have a genuine Microsoft mouse or BallPoint, or
+	  an IBM PS/2 mouse.  If your mouse is Microsoft compatible, you
+	  should select this mouse type if none of the other options apply.
+	
+	  Logitech
+	  --------
+	
+	  Select this if you have any Logitech mouse, serial, bus, or PS/2-
+	  style. In some cases, Setup may detect Logitech mice as "Microsoft,
+	  or IBM PS/2." If this happens with your Logitech mouse, you should
+	  change the mouse type to "Logitech."
+	
+	  Mouse Systems Serial or Bus Mouse
+	  ---------------------------------
+	
+	  Select this if you have a Mouse Systems 2 button serial mouse on
+	  COM1 or COM2, or a Mouse Systems 3 button serial mouse on COM1.
+	  Also, select this if you have a Mouse Systems bus mouse.
+	
+	  If you use a Mouse Systems mouse on a PS/2 style mouse port, you
+	  should select "Microsoft, or IBM PS/2." These mice are Microsoft
+	  compatible.
+	
+	  Mouse Systems Serial Mouse on COM2
+	  ----------------------------------
+	
+	  Select this if you have a Mouse Systems 3 button serial mouse on
+	  COM2.
+	
+	  Genius serial mouse on COM1
+	  Genius serial mouse on COM2
+	  HP Mouse (HP-HIL)
+	  Olivetti/AT&T Keyboard Mouse
+	
+	  No Mouse or Other Pointing Device
+	  ---------------------------------
+	
+	  Select this option if you have no mouse connected to your PC.
+	
+	Q: Setup installed my mouse type as "Microsoft, or IBM PS/2," but my
+	  mouse is neither of these. Why is this?
+	
+	A: Many third party mice are Microsoft compatible. If Setup detects a
+	  Microsoft compatible mouse, and none of its other options apply,
+	  then it selects this mouse type for your Windows 3.1 setup.
+	
+	  Note: some Logitech mice may be detected as "Microsoft, or IBM
+	  PS/2." This should be changed to "Logitech."
+	
+	  Also, Mouse Systems mice connected to PS/2 style ports will be
+	  detected as "Microsoft, or IBM PS/2." This should not be changed,
+	  as Windows 3.1's Mouse Systems drivers are for serial and bus mice
+	  only.
+	
+	Q: Which MS-DOS mouse driver should I use?
+	
+	A: If you have a genuine Microsoft mouse or BallPoint, or an IBM PS/2
+	  mouse, then Setup may have copied a new MOUSE.COM or MOUSE.SYS
+	  MS-DOS mouse driver to your Windows directory and modified your
+	  AUTOEXEC.BAT or CONFIG.SYS file to use this new driver. You should
+	  use this driver instead of any previous versions supplied by
+	  Microsoft. This is version 8.20, the latest available from
+	  Microsoft as of Windows 3.1 release.
+	
+	Q: If you have a Logitech mouse, and Setup installed your mouse type
+	  as "Logitech," then the file LMOUSE.COM was copied to your Windows
+	  directory. This is an updated MS-DOS mouse driver for all Logitech
+	  mice. You should use this driver instead of any previous versions
+	  of MOUSE.COM supplied by Logitech.
+	
+	  If you have a Mouse Systems, Genius, or other third party mouse,
+	  then you can continue to use your current MS-DOS mouse drivers from
+	  your manufacturer. However, these drivers may be out of date, and
+	  might not support the "mouse in a window" feature of Windows 3.1
+	  for MS-DOS applications. You should contact your mouse manufacturer
+	  for an MS-DOS mouse driver update.
+	
+	Q: Should I load my MS-DOS mouse driver before I run Windows 3.1?
+	
+	A: Yes! The new Windows "mouse in a window" feature for MS-DOS
+	  applications requires that your MS-DOS mouse driver be loaded
+	  before Windows is started. Microsoft recommends that you run your
+	  MS-DOS mouse driver in your AUTOEXEC.BAT file, so that it is loaded
+	  each time you restart your computer
+	
+	Q: My mouse does not work for MS-DOS applications running in a window.
+	  Why not?
+	
+	A: In order to use the mouse with MS-DOS applications running in a
+	  window, the following are required:
+	
+	       1. Your MS-DOS application must support the mouse. Does it use
+	          the mouse when running full-screen or outside of Windows 3.1?
+	
+	       2. Your MS-DOS mouse driver must support this new Windows 3.1
+	          feature.
+	
+	       3. Your MS-DOS mouse driver must be loaded before Windows 3.1 is
+	          run.
+	
+	       4. Your Windows display driver (specifically, the enhanced mode
+	          grabber, or .3GR file) must support this feature.
+	
+	Q: Should I use my serial mouse on COM1 or COM2?
+	
+	A: Microsoft recommends that you connect your serial mouse to COM1,
+	  and other serial peripherals to COM2 and higher. Do not connect
+	  serial mice to COM3 or COM4.
+	
+	Q: I have a Microsoft mouse. Should I use MOUSE.COM or MOUSE.SYS?
+	
+	A: Microsoft recommends that you use MOUSE.COM instead of MOUSE.SYS.
+	  MOUSE.SYS is still included for compatibility reasons, but does not
+	  support some of the newer features as well as the MOUSE.COM TSR
+	  program does.
+	
+	Q: I have a Microsoft mouse, but Windows 3.1 Setup did not copy a
+	  MOUSE.COM or MOUSE.SYS file to my Windows directory. What should I
+	  do?
+	
+	A: Windows 3.1 Setup only upgrades your MS-DOS mouse driver if your
+	  have a genuine Microsoft mouse, and it detects a previous version
+	  of MOUSE.COM or MOUSE.SYS loaded when it installs Windows 3.1.
+	  Unfortunately, some TSRs can prevent Setup from correctly detecting
+	  the mouse driver even when it is loaded.
+	
+	  If you have a Microsoft mouse but Setup did not copy the MOUSE.COM
+	  or MOUSE.SYS file from Windows 3.1 into your Windows 3.1 directory,
+	  then you should do this manually as follows:
+	
+	       1. Use the EXPAND.EXE utility to expand MOUSE.COM from the
+	          Windows Setup disks to your Windows 3.1 directory on your hard
+	          disk.
+	
+	       2. Modify your AUTOEXEC.BAT file to automatically load "MOUSE.COM
+	          /Y" when you reboot your PC.
+	
+	       3. If you were previously loading MOUSE.SYS, remove this line
+	          from your CONFIG.SYS file.
+	
+	Q: What is the MOUSE.COM "/Y" option?
+	
+	A: Some video adapters support a hardware, or "sprite", cursor. Older
+	  versions of MOUSE.COM and MOUSE.SYS automatically enable the sprite
+	  cursor in order to provide a smooth arrow pointer instead of a
+	  block for text mode MS-DOS programs. However, sprite cursors can
+	  cause serious conflicts with video drivers in Windows, which also
+	  attempt to use this feature of the video adapter. The "/Y" option
+	  disables usage of the sprite cursor. Windows Setup automatically
+	  installs the "/Y" option on your MOUSE.COM line in AUTOEXEC.BAT (or
+	  MOUSE.SYS line in CONFIG.SYS) in order to prevent conflicts between
+	  the MS-DOS mouse driver and your Windows video driver.
+	
+	Q: What happened to the MOUSE.COM "/U" option?
+	
+	A: Previous versions of the MS-DOS mouse drivers allowed the /U option
+	  to load the driver in high-memory in order to free conventional
+	  memory for MS-DOS applications. The "loadhigh" feature of MS-DOS
+	  5.0 has eliminated the need for this mouse driver option, which has
+	  also caused some compatibility problems in some configurations.
+	  For these reasons, the /U option is no longer supported in
+	  MOUSE.COM/SYS version 8.20.
+	
+	Q: I have Microsoft mouse software version 8.00 or 8.10.  Should I use
+	  this software or the Windows 3.1 Control Panel to change my mouse
+	  settings?
+	
+	A: Microsoft mouse software 8.00 and 8.10 includes a program
+	  (POINT.EXE) to change your mouse acceleration and other
+	  preferences. You should use this program instead of the Windows
+	  Control Panel to control your mouse. (POINT.EXE is not included
+	  with Windows 3.1, but is available from MS for Microsoft mouse
+	  owners.)
+	
+	Q: Every Time I restart Windows 3.1, my mouse speed is set to the
+	  slowest setting. What's wrong?
+	
+	A: This problem may occur if you use the POINT.EXE program included in
+	  Microsoft mouse software version 8.0 and 8.1 to change your mouse
+	  settings. The problem is that POINT.EXE is saving your preferences
+	  in different MOUSE.INI file than the Windows mouse driver
+	  (MOUSE.DRV) is reading. Make sure that you set your MOUSE
+	  environment variable to point to your mouse directory. This will
+	  cause POINT.EXE and MOUSE.DRV to use the same MOUSE.INI file (in
+	  your \MOUSE directory).
+	
+	Q: I have a BallPoint mouse. When I suspend and resume my notebook PC,
+	  the Windows mouse pointer jumps around the screen. What's wrong?
+	
+	A: Some notebook PCs do not correctly reset the mouse port for
+	  BallPoint mice after they resume from a power-saving mode.  Your
+	  PC manufacturer may have a BIOS update available to correct this
+	  problem. In some cases, running an MS-DOS prompt and running
+	  MOUSE.COM may alleviate the problem.
+	
+	Additional query words: 3.10 wrk
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+	Version           : WINDOWS:3.1,3.11
+	
+	=============================================================================
+	

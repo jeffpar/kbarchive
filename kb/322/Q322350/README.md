@@ -1,0 +1,461 @@
+---
+layout: page
+title: "Q322350: HOW TO: Recycle IIS 5.0 with the IIS 5.0 Process Recycling Tool"
+permalink: kb/322/Q322350/
+---
+
+## Q322350: HOW TO: Recycle IIS 5.0 with the IIS 5.0 Process Recycling Tool
+
+	Article: Q322350
+	Product(s): Internet Information Server
+	Version(s): 5.0
+	Operating System(s): 
+	Keyword(s): kbHOWTOmaster
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Services version 5.0 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about modifying the registry. Before you 
+	modify the registry, make sure to back it up and make sure that you understand how to restore 
+	the registry if a problem occurs. For information about how to back up, restore, and edit the 
+	registry, click the following article number to view the article in the Microsoft Knowledge Base:
+	
+	  Q256986 Description of the Microsoft Windows Registry
+	
+	IN THIS TASK
+	------------
+	
+	- SUMMARY
+	
+	   - Introduction
+	- Installation Instructions
+	- Functionality and Configuration
+	
+	   - Configure IIS5Recycle
+	- Stop IIS with IIS5Recycle
+	
+	- NoRealRecycle Feature
+	- Advanced Control/Scripting Feature
+	- NLB Support
+	- Recovery
+	- Appendix: Registry Settings
+	
+	- REFERENCES
+	
+	SUMMARY
+	=======
+	
+	This step-by-step article describes how to download and use the Internet
+	Information Services (IIS) 5.0 Process Recycling Tool (IIS5Recycle) version 1.0,
+	which was released in June 2001.
+	
+	Introduction
+	------------
+	
+	IIS5Recycle version 1.0 runs as a service on a computer that is running Microsoft
+	Windows 2000 and IIS 5.0. The purpose of IIS5Recycle is to recycle processes,
+	minimizing the effects of resource-consumption problems before performance and
+	reliability are affected. This tool automatically recycles IIS processes based
+	on configurations that are stored in the Windows registry. With IIS5Recycle,
+	administrators can also gather information for use in troubleshooting processes
+	and applications.
+	
+	The following example illustrates how IIS5Recycle can be used to recycle
+	processes and to gather information:
+	
+	Minimizing consumption caused by memory leaks:
+	
+	A Web administrator suspects that Web applications that are running on the
+	servers are leaking memory. The administrator schedules periodic recycling of
+	IIS processes to release resources that are consumed by the leaking Web
+	applications. The administrator can troubleshoot a Web application by using the
+	Advanced Scripting feature. The administrator gathers and logs information about
+	a problematic Web application before IIS is recycled. While the Web site
+	continues to serve the customer, a developer can analyze the logs.
+	
+	Installation Instructions
+	-------------------------
+	
+	To install IIS5Recycle:
+	
+	1. Create a directory on drive C named IIS5Recycle:
+	
+	  a. On the Windows 2000 desktop, right-click My Computer, and then click
+	     Explore.
+	
+	  b. Click to select drive C.
+	
+	  c. On the File menu, click New, and then click Folder. In the right pane, a
+	     folder named New Folder appears and is selected.
+	
+	  d. Type "IIS5Recycle" (without the quotation marks), and then press ENTER.
+	     This renames the New Folder folder to IIS5Recycle.
+	
+	2. Download IIS5Recycle.exe to your computer and extract the files to the
+	  C:\IIS5Recycle directory:
+	
+	  a. Visit the following Microsoft Web site to download the IIS 5.0 Process
+	     Recycling Tool:
+	
+	  http://www.microsoft.com/downloads/release.asp?ReleaseID=31106
+	
+	  b. Under Download Now, click Iis5Recycle.exe - 98 Kb, and then follow the
+	     download instructions.
+	
+	  c. Run or double-click IIS5Recycle.exe to extract the tool and the Readme
+	     document.
+	
+	3. Open a command prompt and change to the IIS5Recycle directory.
+	
+	4. Type "IIS5Recycle /install" (without the quotation marks).
+	
+	5. Type "IIS5Recycle /config" (without the quotation marks) to configure the
+	  recycling conditions. To select the IIS recycle configuration options, click
+	  to select the check box for the particular option that you want to use. When
+	  you select one or more options, you must supply a number (that is, a value)
+	  for each option.
+	
+	For more information about the configuration options, see the "Functionality and
+	Configuration" section.
+	
+	6. Set your recycle options, and then type "net start IIS5recycle" (without the
+	  quotation marks) to start the IIS5Recycle service.
+	
+	NOTE: You must restart your computer for the registry keys to appear.
+	
+	NOTE: You can stop the IIS5Recycle service by typing "net stop IIS5recycle"
+	(without the quotation marks).
+	
+	Functionality and Configuration
+	-------------------------------
+	
+	With IIS5Recycle, administrators can set criteria for the automatic recycling of
+	IIS processes and stop IIS when recycling fails. The default interval between
+	the time that the IIS5Recycle tools checks these values is either 15 minutes or
+	what the QueryIISMinutes key is set to in the registry.
+	
+	Configure IIS5Recycle:
+	
+	IIS5Recycle automatically recycles IIS processes based on the following
+	criteria:
+	
+	- IIS up time: Recycles IIS after it has been running for a configured number
+	  of hours.
+	
+	- Total HTTP requests served: Recycles IIS based on the total number of
+	  requests served, as recorded by the Get Request performance counter.
+	
+	- Time of day or week: Recycles IIS based on a specific day or time.
+	
+	To configure this option, click Add, click either Daily or Weekly, and then type
+	a time based on a 24:00 clock. If you click Weekly, you must also select a day
+	of the week (Monday through Sunday) and a number of weeks before IIS is recycled
+	on the selected day. For example, you can configure the IIS5Recycle tool to run
+	every two weeks on Sunday at 22:59.
+	
+	To remove a date or time setting, click Remove.
+	
+	To modify a date or time setting, click Edit.
+	
+	- Virtual memory usage: Recycles IIS based on the total virtual memory usage
+	  that is recorded by Inetinfo.exe and by Dllhost.exe for out-of-process
+	  applications.
+	
+	- ASP requests queued: Recycles IIS if the total number of Active Server Pages
+	  (ASP) requests that are queued is greater than the configured value after a
+	  determined number of retries.
+	
+	  You can configure retries by adding a registry key named ASPThresholdRetries.
+	  For more information about how to add and set this key, see the "Registry
+	  Settings" section.
+	
+	- Recycle IIS at the next quiet time: Recycles the IIS service at the next
+	  quiet time threshold. To configure this setting, add and set a registry key
+	  named QuietTimeRequestsNumber. The default value is 10, which means that a
+	  quiet time occurs whenever the GET requests per second fall to 10 or lower.
+	
+	For more information about how to add and set registry keys, see the "Registry
+	Settings" section. Note that you must restart your computer after you install
+	the tool for the registry keys to appear.
+	
+	Stop IIS with IIS5Recycle:
+	
+	IIS5Recycle forcefully stops IIS if a recycle request is unsuccessful after a
+	configurable amount of time. This functionality makes sure that IIS is recycled
+	when a recycle threshold is met. The registry key for this feature is
+	IISStopTimeoutSecs.
+	
+	NoRealRecycle Feature
+	---------------------
+	
+	With the NoRealRecycle feature, you can run the IIS5Recycle tool in an audit-only
+	mode without interrupting the IIS service. When you use the audit-only mode, IIS
+	recycling events are stored in the Windows event log and can be used to assess
+	IIS recycling conditions that can be configured for your Web server. An
+	administrator can use this feature to fine-tune the recycle settings based on
+	application and environment specifics that are gathered during the audit-only
+	mode run. To turn on this feature, add the following registry value:
+	
+	  Value name: NoRealRecycle
+	  Data type: REG_DWORD
+	  Value data: 1
+	
+	To turn off this feature, set the NoRealRecycle key to 0 in the registry.
+	
+	Advanced Control/Scripting Feature
+	----------------------------------
+	
+	With the Advanced Control/Scripting feature, administrators can specify commands
+	(or scripts) to run before and after each IIS5Recycle execution.
+	
+	On the IIS5Recycle screen, click Advanced to open the Advanced Control window. In
+	the resulting window, you can add commands to run before or after IIS is
+	recycled, and you can also add a timeout value for these commands.
+	
+	The return value of the Before Command section is verified if the Verify Return
+	Value check box is selected. The output of the script is redirected to a log
+	file under %windir%\System32\Logfiles\Iis5recycle. If the script does not return
+	the expected value, the current recycle is skipped.
+	
+	NOTE: On a system that uses Windows Load Balancing Service (WLBS), the script is
+	executed after WLBS stops and before WLBS starts.
+	
+	If you do not see the expected output in the log file, verify that the script
+	name is correct and that it is copied to the %windir%\system32 directory. If the
+	script must access any other executable files, make sure that all of those files
+	are also located in the %windir%\system32 directory.
+	
+	NLB Support
+	-----------
+	
+	IIS5Recycle removes the Web server from the cluster (Web farm) on a system that
+	is using Windows Network Load Balancing (NLB) before it recycles the IIS
+	process. Each time a server is taken out of a cluster, connections to the Web
+	server are drained. After the connection number drops below the configured
+	threshold or the specified time passes, the IIS service is recycled. You can
+	configure the default behavior of this feature by adding and setting the
+	following registry keys:
+	
+	- %WLBSDrainWaitSecs%
+	
+	- %WLBSDrainStopConnectionNum%
+	
+	- %WLBSWaterMark%
+	
+	See the "Appendix: Registry Settings" section for more information about these
+	values.
+	
+	The WaterMark feature guarantees that the number of servers in the cluster will
+	always be more than the value that is set for WLBSWaterMark in the registry.
+	There are two requirements to use the WaterMark feature:
+	
+	- The remote control on each WLBS host must be turned on. If a password is
+	  required for remote control, each node must use the same password.
+	
+	- NLB Web farms that do not use WLBS must be able to use the Advance
+	  Control/Scripting feature.
+	
+	Recovery
+	--------
+	
+	The Service Control Manager (SCM), which is available through the Computer
+	Management MMC snap-in, can be configured to take an action when a service fails
+	unexpectedly. The IIS5Recycle service uses this feature as a fatal error
+	notification and recovery method. When you configure the recovery actions for
+	the IIS5Recycle service, the administrator is notified if an unrecoverable event
+	occurs on the Web server. If any of the following failures occur, the
+	IIS5Recycle service terminates itself to do the SCM recovery actions:
+	
+	- An IIS process stops and IIS5Recycle cannot start it after several retries.
+	
+	- On a system that uses clustering, the server is removed from the cluster, and
+	  IIS5Recycle cannot restart WLBS.
+	
+	In both cases, an event is logged in the Windows event log.
+	
+	Appendix: Registry Settings
+	---------------------------
+	
+	WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+	that may require you to reinstall your operating system. Microsoft cannot
+	guarantee that you can solve problems that result from using Registry Editor
+	incorrectly. Use Registry Editor at your own risk.
+	All IIS5Recycle configuration settings are stored in the registry under the
+	following key:
+	
+	  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\IIs5Recycle
+	
+	IIS5Recycle picks up all registry changes automatically.
+	
+	You can configure the following entries by using the user interface in the
+	IIS5Recycle Tool:
+	
+	   Name: RunningHours
+	   Type: REG_DWORD
+	   Description: Recycles an IIS process every specified number of hours.
+	   Default: 24 * 7 (No Recycle)
+	
+	   Name: RequestNumber
+	   Type: REG_DWORD
+	   Description: Recycles an IIS process every specified number of
+	                received HTTP request.
+	   Default: 200,000 Requests
+	
+	   Name: TimeSchedule
+	   Type: REG_SZ
+	   Description: Recycles an IIS process at certain times of a day.
+	   Default: Blank (No Recycle schedule)
+	
+	   Name: MemoryUsage
+	   Type: REG_DWORD
+	   Description: Recycles an IIS process if it uses more than a 
+	                specified amount of memory (in KB).
+	   Default: 1000000 KB
+	
+	   Name: ASPRequestsQueued
+	   Type: REG_DWORD
+	   Description: Recycles an IIS process if the value of 
+	                ASP requests queued is over this specified value in 
+	                ASPThresholdRetries.
+	   Default: 2,000
+	
+	   Name: CustomScriptAfter
+	   Type: REG_SZ
+	   Description: Runs this script after the IIS process is recycled.
+	   Default: Blank
+	
+	   Name: CustomScriptBefore
+	   Type: REG_SZ
+	   Description: Runs this script before the IIS process is recycled.
+	   Default: Blank
+	
+	   Name: CustomScriptTimeout
+	   Type: REG_DWORD
+	   Description: The time that is permitted for the custom scripts to 
+	                run before or after the IIS process is recycled.
+	   Default: 300 seconds
+	
+	The following are the names, types, and default values of the registry entries
+	that IIS5Recycle uses. Note that you can only configure these settings by using
+	the registry. You cannot configure these settings by using the user interface
+	for the IIS5Recycle Tool:
+	
+	NOTE: Your computer must be running Microsoft Windows 2000 Server with IIS 5.0 to
+	add these registry entries.
+	
+	   Name: QueryIISMinutes
+	   Type: REG_DWORD
+	   Description: Indicates how frequently processes query IIS status.
+	   Default: 15 minutes
+	  
+	   Name: RecycleIISDelay
+	   Type: REG_DWORD
+	   Description: Indicates how long to wait to see if IIS can reach a
+	                quiet time defined by QuietTimeRequestNumber if a
+	                recycle condition is reached.
+	   Default: 0 minutes (recycle immediately)
+	  
+	   Name: QuietTimeRequestNumber
+	   Type: REG_DWORD
+	   Description: Used to determine if IIS reached the quiet time. IIS
+	                tries to recycle processes at the next quiet time (if 
+	                RecycleIISDelay equals zero) if a recycle condition is 
+	                reached. 
+	   Default: 10 GET requests/second
+	  
+	   Name: IISStopTimeOutSecs
+	   Type: REG_DWORD
+	   Description: Indicates the time specified for IIS to stop before
+	                a timeout occurs.
+	   Default: 60 seconds
+	  
+	   Name: IISStartTimeOutSecs
+	   Type: REG_DWORD
+	   Description: Indicates the time specified for IIS to start before
+	                a timeout occurs.
+	   Default: 60 seconds
+	  
+	   Name: NoRealRecycle
+	   Type: REG_DWORD
+	   Description: Reports a recycle event only.
+	   Default: 0 (do a recycle)
+	  
+	   Name: WLBSDrainWaitSecs
+	   Type: REG_DWORD
+	   Description: Indicates the time specified for a WLBS drain to stop.
+	   Default: 60 seconds
+	  
+	   Name: WLBSWaterMark
+	   Type: REG_DWORD
+	   Description: Indicates the number of current active hosts the NLB 
+	                cluster must have to prevent IIS from skipping the 
+	                current recycle period. IIS skips the recycle period if 
+	                the number of current active hosts in the NLB cluster is 
+	                equal to or below this threshold.
+	   Default: 0 (disabled)
+	  
+	   Name: WLBSDrainStopConnectionNum
+	   Type: REG_DWORD
+	   Description: Indicates the minimum number of current connections for
+	                IIS5Recycle to stop draining. IIS5Recycle stops draining 
+	                if the number of current connections is below this value.
+	   Default: 0 (drain until there are no connections)
+	  
+	   Name: ForceDrainStop
+	   Type: REG_DWORD
+	   Description: Prevents NLB from being started by other monitoring 
+	                programs during the WLBSDrainWaitSecs period.
+	   Default: 0 (disabled)
+	     
+	   Name: ASPThresholdRetries
+	   Type: REG_DWORD
+	   Description: Indicates how many times IIS5Recycle retries when
+	                the number of ASP requests queued is above the set value 
+	                of ASPRequestsQueued.
+	   Default: 0 (no retries)
+	
+	To add these entries, follow these steps:
+	
+	1. Start Registry Editor (Regedt32.exe).
+	
+	2. Locate and then click the following key in the registry:
+	
+	  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\IIs5Recycle
+	
+	3. On the Edit menu, click Add Value, and then add the registry key names and
+	  values as needed:
+	
+	  Value name: <Name>
+	  Data type: REG_DWORD
+	  Value data: <Value>
+	
+	NOTE: <Value> specifies the value that you want to set for each registry
+	setting. Make sure that you click Decimal before you type the value.
+	
+	4. Quit Registry Editor.
+	
+	REFERENCES
+	==========
+	
+	For more information, visit the following Microsoft TechNet Web sites:
+	
+	  Windows 2000 Web Server Best Practices for High Availability
+	  http://www.microsoft.com/technet/prodtechnol/iis/deploy/rollout/websrvbp.asp
+	
+	  IIS 5.0 Process Recycling Tool
+	  http://www.microsoft.com/technet/treeview/default.asp?url=/technet/prodtechnol/iis/downloads/iis5rweb.asp
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbHOWTOmaster 
+	Technology        : kbiisSearch kbiis500
+	Version           : :5.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

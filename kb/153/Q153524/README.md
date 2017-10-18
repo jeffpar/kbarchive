@@ -1,0 +1,95 @@
+---
+layout: page
+title: "Q153524: Immediate CMRCV Response Also Trace the Buffer"
+permalink: kb/153/Q153524/
+---
+
+## Q153524: Immediate CMRCV Response Also Trace the Buffer
+
+	Article: Q153524
+	Product(s): Microsoft SNA Server
+	Version(s): WINDOWS:2.11 SP1
+	Operating System(s): 
+	Keyword(s): kbprogramming
+	Last Modified: 13-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, version 2.11 SP1, on platform(s):
+	   - the operating system: Microsoft Windows NT 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	When a CMRCV call is being posted asynchronously the immediate CMRCV response
+	(which returns with CM_OPERATION_INCOMPLETE) is also tracing the buffer.
+	
+	CAUSE
+	=====
+	
+	If you are writing a CPI-C application, you can define whether you like to use a
+	blocking or nonblocking conversation. In case of a blocking operation, a call
+	will be returned when the requested operation is complete (synchronous call). In
+	the case of a nonblocking call, the call will be returned immediately after the
+	operation is initiated (asynchronous call).
+	
+	In a CPI-C application this can be done using the CPI-C API call
+	Set_Processing_Mode (cmspm) where you can specify the receive Types as
+	CM_BLOCKING or CM_NON_BLOCKING. This indicates that all subsequent calls will be
+	returned either synchronous or asynchronous, accordingly.
+	
+	If you are using asynchronous calls the receive request call, CMRCV will return
+	immediately with a CMRECV response with CM_INCOMPLETE_DATA_RECEIVED. Although
+	the data returned is not complete, the SNA Trace utility is tracing that buffer.
+	This might be confusing when you analyze the CPI-C API traces.
+	
+	With the SNA Applications: CPI-C trace enabled, you may see the following:
+	
+	CPIC   CMRCV request
+	CPIC    Conversation ID = 01000000
+	CPIC    Requested length = 4096
+	CPIC   Conversation characteristics
+	CPIC    Conversation type = CM_MAPPED_CONVERSATION
+	CPIC    Fill type = CM_FILL_LL
+	CPIC    Receive type = CM_RECEIVE_AND_WAIT
+	CPIC   ---------------------------------------------- 13:34:40.23
+	CPIC   CMRCV response, result = CM_OPERATION_INCOMPLETE
+	CPIC   ---- Buffer at address 002F27A0 ----
+	CPIC   B8002F00 B8002F00 00000000 00000000     <../.../.........>
+	CPIC   00000000 00000000 00000000 00000000     <................>
+	CPIC   00000000 00000000 00000000 00000000     <................>
+	CPIC   00000000 00000000 00000000 00000000     <................>
+	CPIC   00000000 00000000 00000000 00000000     <................>
+	CPIC    Data received type = CM_NO_DATA_RECEIVED
+	CPIC    Received length = 6625328
+	CPIC    Status received = ***UNKNOWN STATUS_RECEIVED***
+	CPIC    Request to send received = ***UNKNOWN REQ_TO_SEND TYPE***
+	
+	The CNMRCV response shows no data. This is also reported in the Data received
+	type field which returns CM_NO_DATA_RECEIVED.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft SNA Server version
+	2.11 and 2.11.sp1. This problem was corrected in the latest Microsoft SNA Server
+	2.11 U.S. Service Pack. For information on obtaining the service pack, query on
+	the following word in the Microsoft Knowledge Base (without the spaces):
+	
+	  S E R V P A C K
+	
+	
+	Additional query words: prodsna SP1 CPI-C CMRCV
+	
+	======================================================================
+	Keywords          : kbprogramming 
+	Technology        : kbAudDeveloper kbSNAServSearch
+	Version           : WINDOWS:2.11 SP1
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

@@ -1,0 +1,174 @@
+---
+layout: page
+title: "Q234728: Microsoft FrontPage 2000 Step by Step Comments and Corrections"
+permalink: kb/234/Q234728/
+---
+
+## Q234728: Microsoft FrontPage 2000 Step by Step Comments and Corrections
+
+	Article: Q234728
+	Product(s): Microsoft Press
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbdocfix kbdocerr
+	Last Modified: 16-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- MSPRESS Microsoft FrontPage 2000 Step by Step ISBN 1-57231-980-1 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article contains comments, corrections, and information about known errors
+	relating to the Microsoft Press book Microsoft FrontPage 2000 Step by Step, ISBN
+	1-57231-980-1.
+	
+	The following topics are covered:
+	
+	- CD-ROM: Trial Software Overwrites Existing Versions
+	
+	- Page 43: The Inserted File Is An .rtf File, Not A .doc File
+	
+	- Page 55: Screen Shot Positioned Incorrectly Within Steps
+	
+	- Page 80: Missing Step In Procedure
+	
+	- Page 83: Dialog Box Button Name Has Changed
+	
+	- Page 86: Step 5 Is Incorrect
+	
+	- Page 87: Text In Image Is Incorrect
+	
+	- Pages 172-173: Steps 1 and 2 Lacking Directions
+	
+	- Page 176: Filename Incorrect
+	
+	- Page 184: Result Of Step 6 Incorrect
+	
+	- Last Page: Microsoft FrontPage 2000 Not Included With The Book
+	
+	MORE INFORMATION
+	================
+	
+	CD-ROM: Trial Software Overwrites Existing Versions
+	---------------------------------------------------
+	
+	If your computer already has Microsoft FrontPage installed, it will be
+	overwritten when you install the trial version of FrontPage 2000 that is
+	included with this book. The previously installed version of FrontPage is
+	overwritten by the trial version even if you specify during the setup to keep
+	it.
+	
+	If you install the trial version of FrontPage that accompanies this book, you
+	will need to re-install your full version after the trial period has ended.
+	
+	
+	Page 43: The Inserted File Is An .rtf File, Not A .doc File
+	-----------------------------------------------------------
+	
+	Numerous text corrections on this page have been made by packager so that users
+	insert an rtf document, not a Word document, into a Web page. The
+	MSPRESS-supplied file that the users insert is Location.rtf, not Location .doc.
+	
+	
+	Page 55: Screen Shot Positioned Incorrectly Within Steps
+	--------------------------------------------------------
+	
+	The screen shot should be placed after step 6, not after step 5.
+	
+	
+	Page 80: Missing Step In Procedure
+	----------------------------------
+	
+	Need to add ", and then click Yes" to the first sentence of step 8 to reflect a
+	dialog box that now appears when applying themes to Web.
+	
+	
+	Page 83: Dialog Box Button Name Has Changed
+	-------------------------------------------
+	
+	Since the first printing of this book, the Cancel button has changed to the No
+	button in a dialog box that appears when users modify a theme.
+	
+	To fix:
+	In step 7, change "Cancel" to "No"
+	
+	
+	Page 86: Step 5 Is Incorrect
+	----------------------------
+	
+	Step 5 on this page is now incorrect, due to a change in the software.
+	
+	Please change:
+	In the Page Banner Text box, type Lakewood Mountains Resort, and then click OK.
+	
+	To:
+	Click OK.
+	
+	
+	Page 87: Text In Image Is Incorrect
+	-----------------------------------
+	
+	The image on page 87 shows the text:
+	
+	"[Add this page to the Navigation view to display a page banner here]"
+	
+	When you view this image in FrontPage 2000 this text does not exist.
+	
+	
+	Pages 172-173: Steps 1 And 2 Lacking Directions
+	-----------------------------------------------
+	
+	Steps 1 and 2 in the Assign Web pages to frames procedure on these pages are
+	incorrect. Please change the first sentence of step 1 to say the following:
+	"Click Set Initial Page in the left frame."
+	
+	Change the first sentence of step 2 to the following:
+	"Click Set Initial Page in the right frame."
+	
+	
+	Page 176: Filename Incorrect
+	----------------------------
+	
+	The filename in step 4 is incorrect. Please change it from Menu01.htm to
+	Menu02.htm.
+	
+	Page 184: Result of step 6 incorrect
+	------------------------------------
+	
+	The second step in the result after step 6 is no longer correct. Please delete:
+	"A navigation bar with default hyperlinks appears at the top of the shared
+	border."
+	
+	Last Page: Microsoft FrontPage 2000 not included with the book
+	--------------------------------------------------------------
+	
+	Microsoft FrontPage 2000 is not included with the title "Microsoft FrontPage 2000
+	Step by Step."
+	
+	Please change the first paragraph on the last page to read:
+	
+	"The enclosed CD-ROM contains ready-to-use practice files that complement the
+	lessons in this book. To use the CD, you'll need either the Windows 95, Windows
+	98, or the Windows NT version 4 operating system. You will also need to be
+	running Microsoft FrontPage 2000."
+	
+	
+	Microsoft Press is committed to providing informative and accurate books. All
+	comments and corrections listed above are ready for inclusion in future
+	printings of this book. If you have a later printing of this book, it may
+	already contain most or all of the above corrections.
+	
+	Additional query words: ms_press 1-57231-980-1 eubook sbs fp ActiveEducation
+	
+	======================================================================
+	Keywords          : kbdocfix kbdocerr 
+	Technology        : kbMSPressSearch
+	Version           : :
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

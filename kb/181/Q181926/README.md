@@ -1,0 +1,289 @@
+---
+layout: page
+title: "Q181926: HOWTO: Automate Mail Merge to Word97 SR-1 Using OLE and ODBC"
+permalink: kb/181/Q181926/
+---
+
+## Q181926: HOWTO: Automate Mail Merge to Word97 SR-1 Using OLE and ODBC
+
+	Article: Q181926
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:2.5,2000,3.0,3.0b,5.0,5.0a,6.0
+	Operating System(s): 
+	Keyword(s): kbinterop kbAutomation kbODBC kbvfp300 kbvfp500 kbvfp600 kbGrpDSFox kbDSupport
+	Last Modified: 12-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+	- Microsoft Data Access Components version 2.5 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article demonstrates how to use OLE automation to create a mail merge in
+	Word for Windows 97 SR-1 using data from a Visual FoxPro (VFP) for Windows
+	table.
+	
+	MORE INFORMATION
+	================
+	
+	Below is the Visual FoxPro for Windows code using the Word.Application object
+	model that performs the mail merge using an ODBC data source to an existing
+	Visual FoxPro table. This code can use an existing data source name (DSN),
+	created in the ODBC Driver Manager, or it can create one on the fly utilizing an
+	API call to add and use the DSN. In the example below, "Visual FoxPro Tables" is
+	the DSN created in the ODBC Driver Manager and is pointing the
+	VFP5a\Samples\Data folder. These paths will most likely have to be changed to
+	reflect the users' paths.
+	
+	NOTE: This code only works with the Service release-1 (SR-1) for Word 97. Using
+	prior versions of Word 97 causes a Type Mismatch and other OLE errors.
+	
+	Create a program and enter the following code:
+	
+	  
+	
+	     ***/ Begin program code /***
+	     * Code to create a new data source to a VFP table.
+	     *
+	     * Use the Declare DLL function to prototype the
+	     * SQLConfigDataSource function.
+	     * Using SQLConfigDataSource prevents having to go into
+	     * the ODBC Driver Manager and create the DSN.
+	     ***
+	
+	     DECLARE Integer SQLConfigDataSource in odbccp32.dll Integer, ;
+	        Integer, String, String
+	
+	     ***
+	     * Create a string containing the settings appropriate to the driver.
+	     * The following is an example for the Microsoft VFP ODBC driver
+	     * accessing the Customer.dbf file.
+	     ***
+	
+	     *** Change the path below to point to the Customer table ***
+	     *** in the \Samples\Data folder.                      ***
+	     settings="DSN=visual foxpro tables"+chr(0)+;
+	               "Description=VFP ODBC Driver"+chr(0)+;
+	               "SourceDB=d:\vfp5a\samples\data"+chr(0)+;
+	               "SourceType=DBF"
+	     =SQLConfigDataSource(0,1,"Microsoft Visual FoxPro Driver",settings)
+	
+	     * NOTE: Ensure there are no spaces on either side of the equal sign (=).
+	
+	     ON ERROR DO errhand WITH ERROR(), MESSAGE(),  MESSAGE(1), PROGRAM( ),
+	     LINENO( ) && Trap OLE & other errors.
+	
+	     * Initialize variables passed to Word to create form letter.
+	     intro1="Congratulations! You are one of our best customers since you
+	     purchase $"
+	     intro2=" each month from us. "
+	     intro3="As a result, your maximum order amount has been increased by
+	     $2500.00. If you have any questions, please feel free to contact us."
+	
+	     oWord = CREATEOBJECT("Word.Application")
+	        WITH oWord
+	           * Assign values to variables
+	           dsname="D:\VFP\SAMPLES\DATA\customer.DBF"
+	           wformat=0
+	           wconfirmconv=0
+	           wreadonly=0
+	           wlinktosource=0
+	           waddtofilelist=0
+	           wpassworddoc=""
+	           wpasswordtemp=""
+	           wrevert=0
+	           wprotectdoc=""
+	           wprotecttemp=""
+	           wconn="DSN=visual foxpro tables;uid=;pwd=;"+;
+	              "sourcedb=d:\vfp\samples\data;sourcetype=dbf"+;
+	              "exclusive=no;backgroundfetch=yes;collate=machine;"
+	           wsqlstatement="SELECT contact,company,title,address,city,;
+	              postalcode,STR(maxordamt,12,2) as maxordamt FROM customer ;
+	              WHERE (customer.maxordamt>$100000)"
+	
+	           .Visible=.T.      && Make Word visible.
+	           .WindowState = 2   && Minimize Word.
+	
+	           .Documents.Add      && Add new document.
+	           .Selection.InsertParagraphAfter
+	
+	           .ActiveDocument.MailMerge.OpenDataSource;
+	              (dsname,wformat,wconfirmconv,wreadonly,wlinktosource,;
+	               waddtofilelist,wpassworddoc,wpasswordtemp,wrevert,;
+	               wprotectdoc,wprotecttemp,wconn,wsqlstatement)
+	           .ActiveDocument.MailMerge.EditMainDocument
+	           .Selection.InsertDateTime("dddd, MMMM dd, yyyy", 1)
+	           .Selection.MoveRight
+	           .Selection.InsertParagraphAfter
+	           .Selection.MoveDown
+	           .ActiveDocument.MailMerge.Fields.Add;
+	              (oWord.Selection.Range,"contact")
+	           .Selection.InsertParagraphAfter
+	           .Selection.MoveDown
+	           .ActiveDocument.MailMerge.Fields.Add;
+	              (oWord.Selection.Range,"company")
+	           .Selection.InsertParagraphAfter
+	           .Selection.MoveDown
+	           .ActiveDocument.MailMerge.Fields.Add;
+	               (oWord.Selection.Range,"title")
+	           .Selection.InsertParagraphAfter
+	           .Selection.MoveDown
+	           .ActiveDocument.MailMerge.Fields.Add;
+	              (oWord.Selection.Range,"address")
+	           .Selection.InsertAfter(", ")
+	           .Selection.MoveRight
+	           .ActiveDocument.MailMerge.Fields.Add(oWord.Selection.Range,"city")
+	           .Selection.InsertAfter("  ")
+	           .Selection.MoveRight
+	           .ActiveDocument.MailMerge.Fields.Add;
+	              (oWord.Selection.Range,"postalcode")
+	           .Selection.MoveRight
+	           .Selection.InsertParagraphAfter
+	           .Selection.InsertParagraphAfter
+	           .Selection.InsertAfter("Dear ")
+	           .Selection.MoveRight
+	           .ActiveDocument.MailMerge.Fields.Add;
+	              (oWord.Selection.Range,"contact")
+	           .Selection.MoveRight
+	           .Selection.InsertAfter(":")
+	           .Selection.MoveRight
+	           .Selection.InsertParagraphAfter
+	           .Selection.InsertParagraphAfter
+	           .Selection.MoveDown
+	           .Selection.InsertAfter(intro1)
+	           .Selection.MoveRight
+	           .ActiveDocument.MailMerge.Fields.Add;
+	              (oWord.Selection.Range,"maxordamt")
+	           .Selection.MoveRight
+	           .Selection.InsertAfter(intro2)
+	           .Selection.MoveRight
+	           .Selection.InsertAfter(intro3)
+	           .Selection.MoveRight
+	           .Selection.InsertParagraphAfter
+	           .Selection.InsertParagraphAfter
+	           .Selection.MoveDown
+	           .Selection.InsertAfter("Thank you,")
+	           .Selection.MoveRight
+	           .Selection.InsertParagraphAfter
+	           .Selection.InsertParagraphAfter
+	           .Selection.MoveDown
+	           .Selection.Fields.Add(oWord.Selection.Range,-1,"author")
+	           .ActiveDocument.MailMerge.Destination = 0 && new document.
+	           .ActiveDocument.MailMerge.Execute         && Run the merge.
+	           nanswer = MESSAGEBOX("Would you like to view the finished
+	           document?",36,"Switch to Word")
+	           DO CASE
+	              CASE nanswer = 6
+	                 .ActiveWindow.View.Type = 3    && Page layout view.
+	                 .Visible = .T.
+	                 .Application.Activate   && Bring Word forward.
+	                 .WindowState = 0         && Word in normal state.
+	                 =INKEY(5)         && Wait 5 seconds then bring VFP back.
+	                 .WindowState = 2    && Then minimize Word.
+	                ENDCASE
+	           nanswer = MESSAGEBOX("Print the document?",36,;
+	           "Print the merged document.")
+	           DO CASE
+	              CASE nanswer = 6         && Yes
+	                 .ActiveDocument.PrintOut   && Print the merged form letter.
+	           ENDCASE
+	
+	           nanswer = MESSAGEBOX("Save the document?",36,;
+	           "Enter the name to save the merged document.")
+	           DO CASE
+	              CASE nanswer = 6         && Yes
+	                 cbaddoc=SPACE(25)
+	                 DO WHILE .T.
+	                    DEFINE WINDOW getname FROM 1,1 TO 15,60 ;
+	                       FONT 'COURIER NEW',10 FLOAT GROW ZOOM
+	                       ACTIVATE WINDOW getname
+	                       cdoc=SPACE(25)
+	                       mquit = SPACE(1)
+	                    IF !EMPTY(cbaddoc)
+	                       @2,1 SAY "Existing file name: "+cbaddoc COLOR R+/w
+	                    ENDIF
+	                    @4,1 SAY "Enter a name for the Word document."
+	                    @5,1 GET cdoc color b/w VALID emptyChk(cdoc)
+	                    @7,25 GET mquit FUNCTION '*T Quit' SIZE 2,10
+	                    READ CYCLE
+	                    CLEAR WINDOW getname
+	                    cdoc=ALLTRIM(cdoc)
+	                    cpath= .Options.DefaultFilePath(0)   && Get Word's
+	                                                   && default document path.
+	                    IF FILE(cpath+"\"+cdoc+".doc")
+	                       WAIT WINDOW "Document already exists! Enter another
+	                       file name." TIME 1
+	                       cbaddoc=cdoc
+	                       LOOP
+	                    ELSE
+	                       .ActiveDocument.SaveAs(cdoc)
+	                    ENDIF
+	                    .Documents.Close(0)
+	                    .Application.Quit
+	                    EXIT
+	                 ENDDO
+	              CASE nanswer = 7         && No
+	                 .Documents.Close(0)
+	                 .Application.Quit
+	              ENDCASE
+	        ENDWITH
+	
+	     ON ERROR                             && Restore system error handler.
+	
+	     PROCEDURE emptychk
+	     PARAMETER pcdoc
+	     IF !EMPTY(pcdoc)
+	        RETURN .T.
+	     ELSE
+	        WAIT WINDOW "Enter a name for the Word Document"
+	        RETURN 0
+	     ENDIF
+	
+	     PROCEDURE errhand
+	     PARAMETER merror, mess, mess1, mprog, mlineno
+	     CLEAR
+	     IF merror=1426
+	        mlineno=LTRIM(STR(mlineno))
+	        merror=LTRIM(STR(merror))
+	        =MESSAGEBOX("You have an OLE error. Usually this is caused by
+	        quitting Word or canceling out of a dialog box in Word. "+CHR(13)+;
+	        "The error message is "+mess)
+	     ELSE
+	        mlineno=LTRIM(STR(mlineno))
+	        merror=LTRIM(STR(merror))
+	        =MESSAGEBOX("An error occured on line "+mlineno+;
+	        ". The error message is "+mess+" The error number is "+merror)
+	     ENDIF
+	     ON ERROR
+	     RETURN
+	     ***/ End program code /***
+	
+	REFERENCES
+	==========
+	
+	For more information about obtaining Word for Windows 97 Service release 1
+	(SR-1), please see the following article in the Microsoft Knowledge Base:
+	
+	  Q172475 How to Obtain and Install MS Office 97 SR-1
+	
+	
+	Microsoft Visual Basic for Applications Help (Word '97); search on "OLE"
+	
+	(c) Microsoft Corporation 1998, All Rights Reserved. Contributions by Dean
+	Christopher, Microsoft Corporation
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbinterop kbAutomation kbODBC kbvfp300 kbvfp500 kbvfp600 kbGrpDSFox kbDSupport 
+	Technology        : kbVFPsearch kbAudDeveloper kbMDACSearch kbMDAC250 kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+	Version           : WINDOWS:2.5,2000,3.0,3.0b,5.0,5.0a,6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

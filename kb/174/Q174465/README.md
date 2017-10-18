@@ -1,0 +1,89 @@
+---
+layout: page
+title: "Q174465: Bad SAP Packet Causes Stop 0x0000000A in Afd.sys"
+permalink: kb/174/Q174465/
+---
+
+## Q174465: Bad SAP Packet Causes Stop 0x0000000A in Afd.sys
+
+	Article: Q174465
+	Product(s): Microsoft Windows NT
+	Version(s): winnt:3.51,4.0
+	Operating System(s): 
+	Keyword(s): kbnetwork kbWinNT400sp4fix
+	Last Modified: 09-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation versions 3.51, 4.0 
+	- Microsoft Windows NT Server versions 3.51, 4.0 
+	- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Computers running Windows NT will blue screen with a Stop 0x0000000A shortly
+	after the Logon Screen appears or if the computer was removed from the network
+	during startup, it will blue screen approximately 10 seconds after being put
+	back on the network.
+	
+	Stop screen:
+	
+	  Stop 0x0000000A (0xFFB94000, 0x00000002, 0x00000001, 0xFF5A98C5)
+	
+	The blue screen will show Afd.sys, Nwlnkipx.sys, and Ntoskrnl.exe on the stack.
+	
+	The first and last BugCheck parameters will vary.
+	
+	This will be most evident if there are many computers running the SAP Agent.
+	
+	CAUSE
+	=====
+	
+	A faulty network interface card (NIC) is broadcasting bad SAP packets on the
+	network with a large value for Bytes Remaining. The computer has to have SAP
+	Agent loaded for this to occur. It does not matter if the computer is using the
+	Gateway Services for NetWare (GSNW) or intraNetWare client redirector but must
+	have either redirector loaded. The SAP Agent is allowing the packet to be passed
+	up the stack.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, obtain the latest service pack for Windows NT 4.0 or
+	Windows NT Server 4.0, Terminal Server Edition. For additional information,
+	please see the following article in the Microsoft Knowledge Base:
+	
+	  Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+	
+	
+	WORKAROUND
+	==========
+	
+	To work around this problem, remove the computer running Windows NT from the
+	network to start it up and then disable SAP Agent. After this service is
+	disabled, the computer can then be put back on the network. The resource
+	broadcasting the bad SAP packet must then be found and removed from the network.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Windows NT 4.0 and Windows NT
+	Server 4.0, Terminal Server Edition. This problem was first corrected in Windows
+	NT 4.0 Service Pack 4.0 and Windows NT Server 4.0, Terminal Server Edition
+	Service Pack 6.
+	
+	
+	Additional query words: IPX SAP 0x0A gsnw
+	
+	======================================================================
+	Keywords          : kbnetwork kbWinNT400sp4fix 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbNTTermServ400 kbNTTermServSearch kbWinNTS351search
+	Version           : winnt:3.51,4.0
+	Issue type        : kbprb
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

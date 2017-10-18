@@ -1,0 +1,423 @@
+---
+layout: page
+title: "Q275006: Combat Flight Simulator 2: Known Video Issues"
+permalink: kb/275/Q275006/
+---
+
+## Q275006: Combat Flight Simulator 2: Known Video Issues
+
+	Article: Q275006
+	Product(s): Microsoft Home Games
+	Version(s): 1.0
+	Operating System(s): 
+	Keyword(s): kb3rdparty kbdisplay kbgraphic kbhw kbimu kbHardware
+	Last Modified: 14-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Combat Flight Simulator 2: WWII Pacific Theater, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes some known video-related issues that you may experience
+	when you play in Microsoft Combat Flight Simulator 2.
+	
+	MORE INFORMATION
+	================
+	
+	The following video adapters and chip sets have known video-related issues in
+	Combat Flight Simulator 2.
+	
+	3Dfx - Voodoo and Voodoo II Chip Sets
+	-------------------------------------
+	
+	- When a video adapter that is based on a Voodoo or Voodoo II chip set (Diamond
+	  Monster I and II, Canopus Pure 3D I and II, and Creative Labs Voodoo Blaster)
+	  is installed in your computer, you may not be able to select the video
+	  adapter in Combat Flight Simulator 2.
+	
+	  To resolve this issue, restart your computer.
+	
+	- If a Diamond Monster II video adapter is installed in your computer with the
+	  retail video driver, Combat Flight Simulator 2 may not recognize the video
+	  adapter.
+	
+	  To resolve this issue, download and install the latest video driver for your
+	  video adapter from the following S3 Web site:
+	
+	  http://www.s3.com
+	
+	- Voodoo I users may see a band of rectangles that briefly appear horizontally
+	  across the screen. This condition occurs when new textures are downloading
+	  and audio is playing.
+	
+	  This is an issue with the video adapter and there is no known fix.
+	
+	- The color palette may be distorted or text may be unreadable.
+	
+	  To resolve this issue, download and install the latest video driver for your
+	  video adapter.
+	
+	Voodoo 5
+	--------
+	
+	- If you use the Tool tips feature, the frame rate may slow down by 90%.
+	
+	nVidia GeForce DDR
+	------------------
+	
+	- Ground textures or aircraft textures may appear black or disappear.
+	
+	  To attempt to resolve this issue, download and install the latest Detonator 3
+	  video driver for your video adapter from the following nVidia Web site:
+	
+	  http://www.nvidia.com
+	
+	Rush Chip Set (Hercules Stingray 128 /3D)
+	-----------------------------------------
+	
+	- When you quit Combat Flight Simulator 2, your computer may stop responding
+	  (hang).
+	
+	  This behavior can occur if you are using version 4.10.1.2059 of the 3Dfx
+	  Voodoo Rush video driver.
+	
+	  To resolve this issue, download and install the 3Dfx Voodoo Rush Reference
+	  Drivers for Windows 95/98 (Single Board) from the following 3Dfx Web site:
+	
+	  http://www.3dfx.com
+	
+	ATI Radeon 7200, ATI Radeon 64 MB DDR VIVO
+	------------------------------------------
+	
+	Hardware Transform and Lighting (T&L) may exhibit one of the following
+	symptoms:
+	
+	  
+	
+	- T&L may not remain functioning between CFS2 sessions.
+	- T&L may only work if the feature is disabled in CFS2.
+	- A change in the video resolution setting in CFS2 may cause the symptoms to
+	  alternate.
+	
+	To resolve this behavior:
+	
+	1. From the main screen, click Settings. From within the game, press and hold
+	  down ALT, and then from the Options menu, click Settings.
+	
+	2. Click Advanced Settings.
+	
+	3. Click to select the T&L option.
+	
+	4. Click OK twice.
+	
+	If T&L is not enabled, repeat steps 1-4 and click to clear the option.
+	
+	NOTE: To ensure T&L is working, switch to the Spot Plane view (from the Views
+	menu, higlight New View, and then click Spot Plane). With NUM LOCK on, press the
+	keys on the number pad to switch views. Make sure you are viewing the side of
+	the aircraft that has sun shining on it. The shady side of the air raft may
+	appear dark as though T&L is not enabled.
+	
+	ATI Rage
+	--------
+	
+	- When an ATI Rage video adapter is installed in your computer, textures may be
+	  missing or distorted.
+	
+	  You may be able to improve the textures by turning off MIP Mapping in Combat
+	  Flight Simulator 2.
+	
+	ATI Rage II, ATI Rage II+ or ATI Rage Pro Chip Sets
+	---------------------------------------------------
+	
+	- When a video adapter that uses an ATI Rage II or an ATI Rage II+ chip set is
+	  installed in your computer, you may receive graphic errors
+	
+	  To resolve this behavior, download and install the latest video driver from
+	  ATI.
+	
+	NOTE: The ATI Xpert@work and the ATI Xpert@play video adapters are based on the
+	ATI Rage Pro chip set.
+	
+	Cirrus Logic
+	------------
+	
+	- When a video adapter that is based on the Cirrus Logic CL-546X chip set
+	  (including the Creative Labs Graphics Blaster 3D video adapter) is installed
+	  in your computer, text may be corrupt.
+	
+	- When you use the Microsoft Windows 98 default video driver (Cirruslg.drv
+	  version 4.10.1637) or the Cirrus Logic video driver (546x.drv version
+	  4.10.01.1701), textures may be corrupt in different screen resolutions and
+	  color palette settings.
+	
+	  To resolve this issue, download and install the latest video driver available
+	  for your video adapter from the manufacturer of your video adapter.
+	
+	Diamond Fire GL 1000 Pro
+	------------------------
+	
+	- When a Diamond Fire GL 1000 Pro video adapter is installed in your Microsoft
+	  Windows 2000-based computer, Combat Flight Simulator 2 may randomly stop
+	  responding (hang).
+	
+	  There is no known workaround for this issue.
+	
+	Matrox G-100 Chip Set (Productiva G-100)
+	----------------------------------------
+	
+	- When a video adapter that is based on the Matrox G-100 chip set is installed
+	  in your computer, aircraft and ground textures may appear blurry or
+	  distorted.
+	
+	  To resolve this issue, download and install the latest video driver from
+	  Matrox.
+	
+	- When a video adapter that is based on the Matrox G-100 chip set is installed
+	  in your computer, the propeller, aircraft canopy, and explosions may appear
+	  in a checkered pattern.
+	
+	  This issue is a limitation of the video adapter.
+	
+	Matrox G-200 Chip Set (Millennium and Mystique G-200)
+	-----------------------------------------------------
+	
+	- When a video adapter that is based on the Matrox G-200 chip set is installed
+	  in your computer, ground textures may appear distorted.
+	
+	  To resolve this issue, download and install the latest video driver from
+	  Matrox.
+	
+	Matrox Mystique and Mystique 220
+	--------------------------------
+	
+	- When a Matrox Mystique or a Matrox Mystique 220 video adapter is installed in
+	  your computer, Combat Flight Simulator 2 runs in Software mode only.
+	
+	  These video adapters do not support the features required to run Combat Flight
+	  Simulator 2.
+	
+	Mpact II 3DVD (STB Nitro DVD)
+	-----------------------------
+	
+	- When Microsoft released Combat Flight Simulator 2, no Mpact II 3DVD video
+	  driver was compatible with Combat Flight Simulator 2.
+	
+	  Contact your video adapter manufacturer to inquire if an updated video driver
+	  is available for your video adapter.
+	
+	  If an updated video driver is not available for your video adapter, run Combat
+	  Flight Simulator 2 in 3-D software mode.
+	
+	nVidia Riva TNT (STB Velocity V4400)
+	------------------------------------
+	
+	- When a video adapter that is based on the nVidia Riva TNT chip set is
+	  installed in your computer, the cockpit may flicker.
+	
+	  To resolve this issue, download and install the latest video driver for your
+	  video adapter from the following nVidia Web site:
+	
+	  http://www.nvidia.com
+	
+	Riva 128 (STB Velocity 128, Diamond Viper V330)
+	-----------------------------------------------
+	
+	- When a Dell OEM version of the STB Velocity 128 video adapter is installed in
+	  your computer, you may see white horizontal flashes on the screen.
+	
+	  To resolve this issue, download and install the latest video driver from the
+	  following Dell Web site:
+	
+	  http://www.dell.com
+	
+	- When a Diamond Viper V330 video adapter is installed in your computer, your
+	  computer may stop responding (hang) when your aircraft crashes.
+	
+	  To resolve this issue, download and install the latest Diamond Viper V330
+	  video driver from the following Diamond Web site:
+	
+	  http://www.diamondmm.com
+	
+	Permedia 2 Chip Set
+	-------------------
+	
+	NOTE: The following video adapters are based on the Permedia 2 chip set:
+	
+	- AccelSTAR II (found in Gateway E3000, and Gateway E5000 computers)
+	- AGP 3D Mars-2
+	- AGP Mars-2
+	- Creative Labs Graphics Blaster Exxtreme
+	- Diamond FireGL 1000 Pro
+	- Gloria Synergy
+	
+	- When a video adapter that is based on the Permedia 2 chip set is installed in
+	  your computer, you may experience graphic errors such as a green color
+	  palette distortion, missing or corrupt textures, and blurry text.
+	
+	  To resolve this issue, download and install the latest video driver for your
+	  video adapter.
+	
+	- When you press W while an auxiliary window is the active window, two
+	  overlapping view panes may be displayed on the screen.
+	
+	  This behavior can occur if Combat Flight Simulator 2 is not running in Full
+	  Screen mode.
+	
+	  There is no resolution for this issue.
+	
+	- If you use a 1600 by 1200 screen resolution, sliding polygons may be
+	  displayed at the bottom of the screen.
+	
+	PowerVR PCX2 (Grafixstar - Apocalypse 5D)
+	-----------------------------------------
+	
+	- When a video adapter that is based on the PowerVR PCX2 chip set is installed
+	  in your computer, polygons may be displayed in the fog.
+	
+	  To resolve this issue, click to clear the Enable Hardware check box in the
+	  Settings dialog box in Combat Flight Simulator 2.
+	
+	Rendition V2x00 (Hercules Thriller 3D, Diamond Stealth II S220)
+	---------------------------------------------------------------
+	
+	- When a video adapter that is based on the Rendition V2x00 chip set is
+	  installed in your computer, some graphic errors may occur.
+	
+	  There is no known resolution for this issue. You may be able to resolve some
+	  of the issues by downloading and installing the latest video driver for your
+	  video adapter from the manufacturer of your video adapter.
+	
+	Rendition V1000 (Creative Labs 3D Blaster, Canopus Total 3D, Sierra Screaming 3D)
+	---------------------------------------------------------------------------------
+	
+	- When a video adapter that uses the Rendition V1000 chip set is installed in
+	  your computer, some graphic errors may occur.
+	
+	  To resolve this issue, download and install the latest video driver for your
+	  video adapter from the following Rendition Web site:
+	
+	  http://www.rendition.com
+	
+	S3 Trident Cyber 9397
+	---------------------
+	
+	- When a video adapter that is based on the S3 Trident Cyber 9397 chip set is
+	  installed in your computer, the gun sight may appear distorted.
+	
+	  There is no known resolution for this issue.
+	
+	S3 SuperSavage and S3 SavageMX
+	------------------------------
+	
+	When you play Combat Flight Simulator 2 on Windows XP, you may experience any of
+	the following symptoms:
+	
+	- Game textures may be missing.
+	
+	- The game screen does not fill up the whole screen.
+	
+	- The aircraft textures are missing or black.
+	
+	
+	Contact your computer or video card manufacturer to get the latest drivers
+	installed. If the issue continues to occur, there are three possible ways to
+	work around it.
+	
+	Workaround 1:
+	
+	1. Start the game, click Settings and then click Advanced Settings.
+	
+	2. Under Device, select the S3 Graphics card. Do not select "Primary Display
+	  Adapter".
+	
+	3. Click OK, and then restart the game.
+	
+	Workaround 2:
+	
+	Run the game in Windowed Mode. To do this, start the game and then press
+	ALT+ENTER on your keyboard. You can see the game menu in Windowed Mode.
+	
+	Workaround 3:
+	
+	Reduce your hardware acceleration setting. To do this:
+	
+	1. Start the game, and then click Settings.
+	
+	2. Click Advanced Settings.
+	
+	3. Click to clear the "Enable Hardware Acceleration" check box.
+	
+	4. Click OK.
+	
+	Contact Your Video Adapter Manufacturer
+	---------------------------------------
+	
+	For information about how to contact your video adapter manufacturer to inquire
+	about how to obtain and install the latest video driver for your video adapter,
+	click the appropriate article number in the following list to view the article
+	in the Microsoft Knowledge Base:
+	
+	  Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+	
+	  Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+	
+	  Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+	
+	To identify the manufacturer and model of your video adapter:
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click System.
+	
+	3. If you are using a Microsoft Windows 95-based or a Microsoft Windows 98-based
+	  computer, click the Device Manager tab.
+	
+	  If you are using a Microsoft Windows 2000-based computer, click the Hardware
+	  tab, and then click Device Manager.
+	
+	4. Click the plus sign (+) next to "Display adapters" to expand the branch.
+	
+	5. Under the "Display adapters" branch, note the manufacturer and model of your
+	  video adapter, and then click OK.
+	
+	6. Close all open windows on the desktop.
+	
+	NOTES: Reference drivers are drivers that are released by the manufacturers of
+	specific video chip sets.
+	
+	Retail drivers are drivers that are released by the manufacturer of a video
+	adapter or sound card that use a specific chip set.
+	
+	If you experience issues when you use the most recent retail drivers supplied by
+	the manufacturer of your video adapter, use the latest reference driver from the
+	manufacturer of your video adapter chip set.
+	
+	To view a list of available video drivers, visit the following Microsoft Web
+	site:
+	
+	  http://www.microsoft.com/games/combatfs/drivers.htm
+	
+	Microsoft provides third-party contact information to help you find technical
+	support. This contact information may change without notice. Microsoft does not
+	guarantee the accuracy of this third-party contact information.
+	
+	The third-party products that are discussed in this article are manufactured by
+	companies that are independent of Microsoft. Microsoft makes no warranty,
+	implied or otherwise, regarding the performance or reliability of these
+	products.
+	
+	Additional query words: 1.00 msgame combatfs cfs2 corrupted blurry fuzzy ground
+	
+	======================================================================
+	Keywords          : kb3rdparty kbdisplay kbgraphic kbhw kbimu kbHardware 
+	Technology        : _IKkbbogus kbGamesSearch kbCombatFlightSim2 kbCombatFlightSimSearch kbSimSearch
+	Version           : :1.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

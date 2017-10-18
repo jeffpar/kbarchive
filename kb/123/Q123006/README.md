@@ -1,0 +1,107 @@
+---
+layout: page
+title: "Q123006: PRB: ODBC to Lotus Notes Does Not Bring in Numeric Data"
+permalink: kb/123/Q123006/
+---
+
+## Q123006: PRB: ODBC to Lotus Notes Does Not Bring in Numeric Data
+
+	Article: Q123006
+	Product(s): Microsoft FoxPro
+	Version(s): 2.50 2.50a 2.50b 2.60 3.00
+	Operating System(s): 
+	Keyword(s): kb3rdparty
+	Last Modified: 10-MAR-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 3.0 
+	- Microsoft FoxPro for Windows, versions 2.5, 2.5a, 2.5b, 2.6 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Under certain conditions, you may not be able to use ODBC to retrieve numeric
+	data. Null values are returned when you try to bring numeric data into a FoxPro
+	cursor or table by using the Lotus Notes ODBC driver to connect to a Lotus Notes
+	database from FoxPro for Windows. Text and date data, however, are brought in
+	successfully.
+	
+	NOTE: Lotus Notes is manufactured by a vendor independent of Microsoft; we make
+	no warranty, implied or otherwise, regarding this product's performance or
+	reliability.
+	
+	STATUS
+	======
+	
+	Microsoft is researching this problem and will post new information here in the
+	Microsoft Knowledge Base as it becomes available.
+	
+	MORE INFORMATION
+	================
+	
+	A Lotus Notes numeric data type will be mapped to an ODBC SQL SQL_FLOAT data
+	type. This is the same data type the SQL Server FLOAT data types are mapped to
+	and FoxPro is able to successfully bring down FLOAT data from an SQL Server.
+	This would indicate that FoxPro might be able to bring in numeric data
+	successfully from Lotus Notes.
+	
+	Mapping SQL Tables, Views, and Indexes to and from Notes
+	--------------------------------------------------------
+	
+	When connecting to a Lotus Notes database, it's helpful to know the following
+	information:
+	
+	- Each SQL table is derived from a Notes form.
+	
+	- Each SQL index is derived from a Notes view. Sorted columns in the Notes view
+	  map to fields in a single form. A Notes view selects documents from that
+	  single form.
+	
+	- Each SQL view is derived from a Notes view that selects documents through a
+	  single form.
+	
+	Steps to Reproduce Problem
+	--------------------------
+	
+	1. Set up the Lotus Notes ODBC driver through ODBC Setup. See the Lotus Notes
+	  help file for more information.
+	
+	2. Using DBConnect (SQLCONNECT in Visual FoxPro), connect to a Lotus Notes
+	  database (.NSF File) that has a form with a numeric field on it. The User
+	  identifier and Password may be an empty string (specified by "").
+	
+	3. Issue a DBExec from FoxPro(SQLEXEC in Visual FoxPro), passing a simple SQL
+	  SELECT command to the database file. Notice that the results from this
+	  command indicate that records have been selected even though the command
+	  returns an error number of -1. Using DBError (AError in Visual FoxPro)
+	  returns neither an error number nor an error message.
+	
+	The commands for steps 2 and 3 will be similar to this:
+	
+	     handle = DBCONNECT("<Data Source Name>","","")
+	     && handle = SQLCONNECT("<Data Source Name>","","") in Visual FoxPro
+	     ?DBEXEC(handle,"<Form Name>")
+	     && SQLEXEC((handle,"<Form Name>") in Visual FoxPro
+	
+	<Data Source Name> is specified in the Lotus ODBC Setup and <Form
+	Name> is a Form that was created inside Lotus Notes. The records will be
+	blank for the numeric field in the cursor that was returned.
+	
+	REFERENCES
+	==========
+	
+	Lotus ODBC Driver help file (NOTESSQL.HLP).
+	
+	Additional query words: VFoxWin FoxWin 2.50
+	
+	======================================================================
+	Keywords          : kb3rdparty 
+	Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro260 kbFoxPro250 kbFoxPro250a kbFoxPro250b kbVFP300
+	Version           : 2.50 2.50a 2.50b 2.60 3.00
+	Issue type        : kbprb
+	
+	=============================================================================
+	

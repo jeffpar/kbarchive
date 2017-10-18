@@ -1,0 +1,100 @@
+---
+layout: page
+title: "Q323494: AV When You Type Mnemonic on Property Page with ActiveX Control"
+permalink: kb/323/Q323494/
+---
+
+## Q323494: AV When You Type Mnemonic on Property Page with ActiveX Control
+
+	Article: Q323494
+	Product(s): Microsoft C Compiler
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbVSNetPreSP1fix
+	Last Modified: 09-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The Microsoft Foundation Classes (MFC), included with:
+	   - Microsoft Visual Studio.NET (2002), Professional Edition 
+	   - Microsoft Visual Studio.NET (2002), Enterprise Architect Edition 
+	   - Microsoft Visual Studio.NET (2002), Enterprise Developer Edition 
+	   - Microsoft Visual Studio.NET (2002), Academic Edition 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you type the mnemonic of a control on a property page when an ActiveX
+	control also exists on that property page, a Microsoft Foundation Classes (MFC)
+	application may generate an access violation.
+	
+	In a debug build, you receive a debug assertion with following information:
+	
+	  Debug Assertion Failed!
+	
+	  Program: .MFCApp.exe
+	  File: occdlg.cpp
+	  Line: 138
+	
+	RESOLUTION
+	==========
+	
+	A supported fix is now available from Microsoft, but it is only intended to
+	correct the problem that is described in this article. Apply it only to
+	computers that are experiencing this specific problem. This fix may receive
+	additional testing. Therefore, if you are not severely affected by this problem,
+	Microsoft recommends that you wait for the next Visual Studio .NET service pack
+	that contains this fix.
+	
+	To resolve this problem immediately, contact Microsoft Product Support Services
+	to obtain the fix. For a complete list of Microsoft Product Support Services
+	phone numbers and information about support costs, visit the following Microsoft
+	Web site:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	NOTE: In special cases, charges that are ordinarily incurred for support calls
+	may be canceled if a Microsoft Support Professional determines that a specific
+	update will resolve your problem. The typical support costs will apply to
+	additional support questions and issues that do not qualify for the specific
+	update in question.
+	
+	The English version of this fix has the file attributes (or later) that are
+	listed in the following table. The dates and times for these files are listed in
+	coordinated universal time (UTC). When you view the file information, it is
+	converted to local time. To find the difference between UTC and local time, use
+	the Time Zone tab in the Date and Time tool in Control Panel.
+	
+	  Date         Time   Version        Size        File Name
+	  --------------------------------------------------------------
+	  04-Jun-2002  03:33  7.0.9503.0        974,848  Mfc70.dll
+	  04-Jun-2002  02:49  7.0.9503.0      1,933,312  Mfc70d.dll
+	  04-Jun-2002  03:22  7.0.9503.0        964,608  Mfc70u.dll
+	  04-Jun-2002  02:51  7.0.9503.0      1,927,680  Mfc70ud.dll
+	  04-Jun-2002  02:45                 16,465,604  Nafxcw.lib
+	  04-Jun-2002  02:45                 16,601,072  Nafxcwd.lib
+	  04-Jun-2002  02:48                 16,740,960  Uafxcw.lib
+	  04-Jun-2002  02:48                 17,034,478  Uafxcwd.lib
+	
+	
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed that this is a problem in the Microsoft products that
+	are listed at the beginning of this article.
+	
+	Additional query words: AV
+	
+	======================================================================
+	Keywords          : kbVSNetPreSP1fix 
+	Technology        : kbAudDeveloper kbMFC
+	Version           : :
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

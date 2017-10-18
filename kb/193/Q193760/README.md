@@ -1,0 +1,133 @@
+---
+layout: page
+title: "Q193760: XCON: MTA Stops Processing Messages When One Network Link Fails"
+permalink: kb/193/Q193760/
+---
+
+## Q193760: XCON: MTA Stops Processing Messages When One Network Link Fails
+
+	Article: Q193760
+	Product(s): Microsoft Exchange
+	Version(s): 4.0,5.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 20-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 4.0, 5.0 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	If the network link to a remote site fails on a server with links to multiple
+	remote sites using X.400 Connectors, the message transfer agent (MTA) may stop
+	processing messages to all remote sites.
+	
+	
+	CAUSE
+	=====
+	
+	The problem is due to the synchronous nature of the Microsoft Exchange MTA in
+	versions 4.0 and 5.0.
+	
+	RESOLUTION
+	==========
+	
+	Exchange Server 4.0
+	-------------------
+	
+	A supported fix that corrects this problem is now available from Microsoft, but
+	has not been fully regression-tested and should be applied only to systems
+	experiencing this specific problem.
+	
+	To resolve this problem, contact Microsoft Product Support Services to obtain the
+	fix. For a complete list of Microsoft Product Support Services phone numbers and
+	information on support costs, please go to the following address on the World
+	Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	  Component: Message Transfer Agent (MTA)
+	
+	  File Name      Version
+	  ------------------------
+	  Address.dll    4.0.997.2
+	  Dbserver.sch   4.0.997.2
+	  Dcprods.cat    4.0.997.2
+	  Ems_rid.dll    4.0.997.2
+	  Emsmta.exe     4.0.997.2
+	  Infodlog.cfg   4.0.997.2
+	  Infotlog.cfg   4.0.997.2
+	  Mmiext.dll     4.0.997.2
+	  Mtacheck.exe   4.0.997.2
+	  Mtalog.dll     4.0.997.2
+	  P2.xv2         4.0.997.2
+	  P3.tpl         4.0.997.2
+	  Saalog.dll     4.0.997.2
+	  X400omv.dll    4.0.997.2
+	
+	
+	Exchange Server 5.0
+	-------------------
+	
+	A supported fix that corrects this problem is now available from Microsoft, but
+	has not been fully regression-tested and should be applied only to systems
+	experiencing this specific problem. If you are not severely affected by this
+	specific problem, Microsoft recommends that you wait for the next Microsoft
+	Exchange Server version 5.0 service pack that contains this fix.
+	
+	To resolve this problem immediately, contact Microsoft Product Support Services
+	to obtain the fix. For a complete list of Microsoft Product Support Services
+	phone numbers and information on support costs, please go to the following
+	address on the World Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	  Component: Message Transfer Agent (MTA)
+	
+	  File Name      Version
+	  --------------------------
+	  Address.dll    5.0.1461.50
+	  Dbserver.sch   5.0.1461.50
+	  Dcprods.cat    5.0.1461.50
+	  Ems_rid.dll    5.0.1461.50
+	  Emsmta.exe     5.0.1461.50
+	  Infotlog.cfg   5.0.1461.50
+	  Infoxlog.cfg   5.0.1461.50
+	  Mmiext.dll     5.0.1461.50
+	  Mtacheck.exe   5.0.1461.50
+	  Mtamsg.dll     5.0.1461.50
+	  P2.xv2         5.0.1461.50
+	  P3.tpl         5.0.1461.50
+	  P772.tpl       5.0.1461.50
+	  Saalog.dll     5.0.1461.50
+	  X400om.dll     5.0.1461.50
+	  X400omv.dll    5.0.1461.50
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+	versions 4.0 and 5.0.
+	
+	Additional query words: MTA sync synchronous network
+	======================================================================
+	Keywords          :  
+	Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbZNotKeyword2
+	Version           : 4.0,5.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

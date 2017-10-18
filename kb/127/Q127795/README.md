@@ -1,0 +1,66 @@
+---
+layout: page
+title: "Q127795: INF Back-Link Functionality in Visual FoxPro for Windows"
+permalink: kb/127/Q127795/
+---
+
+## Q127795: INF Back-Link Functionality in Visual FoxPro for Windows
+
+	Article: Q127795
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:3.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 12-FEB-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 3.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes how back-links are implemented in Visual FoxPro tables
+	and how to use your Visual FoxPro tables with previous versions of FoxPro.
+	
+	MORE INFORMATION
+	================
+	
+	A Visual FoxPro table (.DBF) that is stored in a database (DBC) holds a
+	reference to the database that contains it. This information is referred to as
+	back-link. A back-link allows opening or selecting a table in a database without
+	explicitly referring to the DBC. It provides a way to access the rules and
+	triggers associated with a table.
+	
+	Back-link information is recorded in the .DBF header and contains the relative
+	path and file name that link the table to the database.
+	
+	
+	Two hundred and sixty three bytes (263) have been added to the .DBF header to
+	accommodate back-link functionality. Any table created with Visual FoxPro will
+	have to be modified to be used with FoxPro versions 2.x for Windows, FoxPro
+	versions 2.x for MS-DOS, or FoxBASE+.
+	
+	You can convert a Visual FoxPro table to the FoxPro version 2.x structure by
+	using the COPY TO command. For example:
+	
+	     USE SAMPLES\DATA\CUSTOMER
+	     COPY TO CUSTBAK1 TYPE FOX2x && Copies to a FoxPro 2.x compatible format
+	     COPY TO CUSTBAK2 TYPE FOXPLUS && Copies to a FoxBASE+ compatible format
+	
+	A FoxPro version 2.x for Windows or FoxPro version 2.x for MS-DOS table is
+	converted to the Visual FoxPro format when it is added to a database, or when
+	its structure is changed to use NULLs or a data type introduced in Visual
+	FoxPro. When the conversion occurs, a backup (.BAK) file is created.
+	
+	Additional query words: VfoxWin
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+	Version           : WINDOWS:3.0
+	
+	=============================================================================
+	

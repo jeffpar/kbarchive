@@ -1,0 +1,99 @@
+---
+layout: page
+title: "Q288202: &quot;SSCP Connection Already Open&quot; Error Starting 257th 3270 Session"
+permalink: kb/288/Q288202/
+---
+
+## Q288202: &quot;SSCP Connection Already Open&quot; Error Starting 257th 3270 Session
+
+	Article: Q288202
+	Product(s): Microsoft SNA Server
+	Version(s): 3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+	Operating System(s): 
+	Keyword(s): kbDSupport sna4 kbsna400sp1 kbsna400sp2 kbsna400sp3 kbhis2000 kbsna400sp4
+	Last Modified: 12-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 3.0 SP1, 3.0 SP2, 3.0 SP3, 3.0 SP4, 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4 
+	- Microsoft Host Integration Server 2000 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	SNA Server or Host Integration Server 2000 sends an "Open SSCP RSP Error"
+	response to an emulator's request to start the 257th 3270 session that is
+	configured to use any available resource. For example:
+	
+	FMI   ----------------------------------------------- 17:54:55.0328
+	FMI   01020000->16120100 OPEN  SSCP RSP ERROR
+	FMI                      FMI  Err1:0055 Err2:0003
+	FMI
+	FMI   ---- Header  at address 01194EA8, 2 elements ----
+	FMI   03010203 00010055 00030200 01000000     <.......U........>
+	FMI
+	FMI   ---- Element at address 01B85228, start 1, end 20 ----
+	FMI   4D324C55 30303320 00002020 20202020     <M2LU003 ..      >
+	FMI   20202020                                <                >
+	FMI
+	FMI   ---- Element at address 01B8C438, start 1, end 18 ----
+	FMI   45585452 41212066 6F722057 696E646F     <EXTRA! for Windo>
+	FMI   7773                                    <ws              >
+	
+	NOTE: Err1:0055 indicates "SSCP Connection Already Open" and Err2:0003 indicates
+	"Control Block / Resource Shortage".
+	
+	CAUSE
+	=====
+	
+	This occurs because all 3270 logical units (LUs) are assigned to user groups
+	under "configured users" rather than LU pools on the SNA Server or Host
+	Integration Server.
+	
+	Users can specify an LU and receive active sessions beyond the 256 active LUs in
+	the group. This is because the emulator is not asking for a list of LUs for that
+	group, but instead is asking for permission to use that particular LU.
+	
+	MORE INFORMATION
+	================
+	
+	The following illustrates the problem:
+	
+	1. One user group assigns more than 1,000 LUs.
+	
+	2. A client requests all available LUs for the user record (or, in some
+	  emulators, requests only those LUs that are explicitly configured).
+	
+	3. The server sends back all 1,000-plus LUs.
+	
+	4. The client processes all the LUs (even ones in use) and either picks the last
+	  LU not in use and attempts to use it or stops at some predetermined number
+	  because its internal cache cannot handle any more than what was assigned to
+	  it.
+	
+	5. The client stops processing the list of LUs when the limit is reached.
+	
+	The following illustrates what would normally happen when a client requests an LU
+	from a pool:
+	
+	1. The client sends a request to the server to see what LUs are assigned to the
+	  user.
+	
+	2. The server sends back the pool name.
+	
+	3. The client sends back the pool name, requesting an LU.
+	
+	4. Server acknowledges the pool name and sends an LU from the pool that is free.
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbDSupport sna4 kbsna400sp1 kbsna400sp2 kbsna400sp3 kbhis2000 kbsna400sp4 
+	Technology        : kbAudDeveloper kbSNAServSearch kbHostIntegServ2000 kbSNAServ400 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3 kbSNAServ400SP4 kbSNAServ300SP2 kbSNAServ300SP4
+	Version           : :3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+	
+	=============================================================================
+	

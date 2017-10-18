@@ -1,0 +1,103 @@
+---
+layout: page
+title: "Q188069: How to Obtain SNA Server Version 4.0 U.S. Service Pack 1"
+permalink: kb/188/Q188069/
+---
+
+## Q188069: How to Obtain SNA Server Version 4.0 U.S. Service Pack 1
+
+	Article: Q188069
+	Product(s): Microsoft SNA Server
+	Version(s): WINDOWS:4.0 U.S. SP1
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 13-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, version 4.0 SP1 
+	-------------------------------------------------------------------------------
+	
+	** TO BE APPLIED TO SNA SERVER 4.0 SYSTEMS ONLY!! **
+	
+	SUMMARY
+	=======
+	
+	This article explains how to order and download SNA Server 4.0 Service Pack 1.
+	For a list of Microsoft Knowledge Base articles about bugs fixed by this Service
+	Pack, please see the following article in the Microsoft Knowledge Base:
+	
+	  Q188070 List of Bugs Fixed in SNA Server 4.0 Service Pack 1
+	
+	To view the Readme.txt file that accompanies this Service Pack, please see the
+	following article in the Microsoft Knowledge Base:
+	
+	  Q188067 SNA Server 4.0 Service Pack 1 Readme.txt File
+	
+	SNA Server 4.0 Service Pack 1 (SP1) includes all bug fixes implemented since the
+	initial SNA Server 4.0 release.
+	
+	Ordering the SNA Server 4.0 Service Pack 1 CD
+	---------------------------------------------
+	
+	Microsoft SNA Server 4.0 U.S. Service Pack 1 (SP1) is available in CD media
+	format by ordering from Microsoft at (800) 936-3500 (within the U.S., cost is
+	$14.95 plus shipping and handling). Customers outside the U.S. should contact
+	their Microsoft subsidiary or local distributor and request the following part
+	number:
+	
+	  SNA Server 4.0 SP1 CD
+	  Part Number: 211-00257
+	
+	Downloading SNA Server 4.0 Service Pack 1
+	-----------------------------------------
+	
+	You can finds links to download the correct version for your computer platform at
+	the following location:
+	
+	  http://support.microsoft.com/support/sna/sp.asp
+	
+	There is a mirror of the FTP site available from our corporate network. The
+	server is \\FTP\DATA. (IPX protocol) You can use this to guide customers through
+	the servers directories.
+	
+	The following files comprise the updated SNA Server and client files for SNA
+	Server 4.0 SP1:
+	
+	  Item ID  Filename       Description                        File Size
+	  --------------------------------------------------------------------
+	  S21233   40sp195r.exe   Windows 95 Cient Refresh           10,613 KB
+	  S21234   40sp195u.exe   Windows 95 Client Update            5,264 KB
+	  S21236   40sp1acr.exe   Windows NT Client Refresh, Alpha   32,007 KB
+	  S21237   40sp1acu.exe   Windows NT Client Update, Alpha    17,359 KB
+	  S21238   40sp1ahs.exe   Host Security Update, Alpha         2,250 KB
+	  S21239   40sp1as.exe    Server Update, Alpha               22,773 KB
+	  S21240   40sp1clr.exe   Windows 3.x Client Refresh          3,930 KB
+	  S21241   40sp1clu.exe   Windows 3.x Client Update             762 KB
+	  S21242   40sp1icr.exe   Windows NT Client Refresh, Intel   28,568 KB
+	  S21243   40sp1icu.exe   Windows NT Client Update, Intel    14,316 KB
+	  S21244   40sp1ihs.exe   Host Security Update, Intel         1,529 KB
+	  S21245   40sp1is.exe    Server Update, Intel               18,628 KB
+	  S21246   4osp1txt.exe   Release Notes and Help File           190 KB
+	  S21270   Mmc_mdac.exe   MMC and MSDAC Components           32,444 KB
+	
+	For information about changes implemented in 4.0 SP1, see the SNA40SP1.HLP file
+	included in 40SP1TXT.EXE, 40SP1IS.EXE or 40SP1AS.EXE. SNA40SP1.HLP also lists
+	new features added in the service pack and articles describing the symptoms and
+	causes for problems fixed in the service pack.
+	
+	For instructions on decompressing and installing these files, please see the
+	following article in the Microsoft Knowledge Base:
+	
+	  Q188067 TITLE: SNA Server 4.0 Service Pack 1 Readme.txt File
+	
+	Additional query words: servpack
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400SP1
+	Version           : WINDOWS:4.0 U.S. SP1
+	
+	=============================================================================
+	

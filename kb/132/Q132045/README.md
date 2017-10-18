@@ -1,0 +1,259 @@
+---
+layout: page
+title: "Q132045: PC Win: Files Installed with Version 3.2a"
+permalink: kb/132/Q132045/
+---
+
+## Q132045: PC Win: Files Installed with Version 3.2a
+
+	Article: Q132045
+	Product(s): Microsoft Mail For PC Networks
+	Version(s): WINDOWS:3.2
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 12-FEB-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Mail for Windows, version 3.2 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Version 3.2a of Microsoft Mail for Windows is an update to version 3.2. Most of
+	the files are updated versions of the files in version 3.2.
+	
+	Below is a list of the files with the byte size and date. The location of the
+	files is also shown.
+	
+	MORE INFORMATION
+	================
+	
+	The Setup process for version 3.2a of Mail for Windows installs the following
+	files:
+	
+	File Name                Size            Date
+	--------------------------------------------------------------------
+	AB.DLL                    97,600         08-17-94
+	CBTLIB3.DLL               16,608         08-17-94
+	CLKLIB.DEX                 7,840         08-17-94
+	COMMDLG.DLL               89,248         08-17-94
+	CONVERT.EXE               25,968         08-17-94
+	CUISTF.DLL                37,744         08-17-94
+	DEMILAYR.DLL              48,304         08-17-94
+	DEMIWLO.DLL                5,008         08-17-94
+	DISPLAY.EXE              117,872         03-24-93
+	FAXVIEW.EXE              101,376         08-17-94
+	FAXVIEW.HLP               38,432         08-17-94
+	FLAGDOWN.COM                   7         03-24-93
+	FRAMEWRK.DLL             221,168         08-17-94
+	HOTKEY.EXE                 8,435         03-24-93
+	IMPEXP.DLL                66,560         08-17-94
+	MAIL.EXE                 266,817         03-24-93
+	MAILMGR.DLL               51,696         08-17-94
+	MAILSPL.EXE               47,792         08-17-94
+	MAILSPL.ICO                3,192         08-17-94
+	MAPI.DLL                  54,448         08-17-94
+	MICRO.EXE                 12,572         03-24-93
+	MONITOR.EXE               65,692         03-24-93
+	MSCAPT.EXE                31,408         03-24-93
+	MSCOMSTF.DLL              74,640         08-17-94
+	MSCPYDIS.DLL              11,472         08-17-94
+	MSDETSTF.DLL              24,656         08-17-94
+	MSHOTKEY.EXE               9,386         03-24-93
+	MSINSSTF.DLL              65,744         08-17-94
+	MSMAIL.EXE               300,528         08-17-94
+	MSMAIL.HLP               261,240         08-17-94
+	MSMAIL.ICO                 3,192         08-17-94
+	MSMAIL.INI                 1,371         08-17-94
+	MSMAIL.LES               530,030         08-17-94
+	MSMAIL3.FON                7,680         08-17-94
+	MSSFS.DLL                266,112         08-17-94
+	MSSHLSTF.DLL              15,024         08-17-94
+	MSSPELL.DLL               76,800         08-17-94
+	MSUILSTF.DLL               6,160         08-17-94
+	OLECLI.DLL                83,456         08-17-94
+	OLESVR.DLL                24,064         08-17-94
+	OPERATOR.EXE              50,012         03-24-93
+	PABNSP.DLL                44,656         08-17-94
+	PIVIEW.EXE                73,486         03-24-93
+	PLAY.EXE                 116,624         08-17-94
+	PMSETUP.EXE               26,721         08-17-94
+	POPUP.COM                      7         08-17-94
+	PPB.EXE                   52,478         03-24-93
+	REMOVEIT.COM                   7         03-24-93
+	REMOVEOP.COM                   7         03-24-93
+	SCHEDMSG.DLL              75,936         08-17-94
+	SENDFILE.DLL               6,080         08-17-94
+	SETUP.EXE                 62,880         08-17-94
+	SETUP.INF                  6,766         08-17-94
+	SETUP.INI                    149         08-17-94
+	SFSFILES.INI                 107         08-17-94
+	SFSMAIL.INI                  117         08-17-94
+	SFSSCHD.INI                  113         08-17-94
+	SHELL.DLL                 41,600         08-17-94
+	SMI.XLA                    4,147         08-17-94
+	SMIAUTO.DOC                4,541         08-17-94
+	SMIINST.DOT                8,130         08-17-94
+	STORE.DLL                231,392         08-17-94
+	TRNSCHED.DLL              12,960         08-17-94
+	VER.DLL                    9,008         08-17-94
+	VFORMS.DLL               143,520         08-17-94
+	VIEW.EXE                   8,474         03-24-93
+	WINHELP.EXE              255,232         08-17-94
+	WINHELP.HLP               26,960         08-17-94
+	
+	The following files are installed in the local directory, C:\MSMAIL:
+	
+	  C:\MSMAIL\FAXVIEW.EXE
+	  C:\MSMAIL\FAXVIEW.EXE
+	  C:\MSMAIL\IMPEXP.DLL
+	  C:\MSMAIL\SCHEDMSG.DLL
+	  C:\MSMAIL\MSMAIL3.FON
+	  C:\MSMAIL\CONVERT.EXE
+	  C:\MSMAIL\FAXVIEW.HLP
+	  C:\MSMAIL\MSMAIL.HLP
+	  C:\MSMAIL\WINHELP.HLP
+	  C:\MSMAIL\CBTLIB3.DLL
+	  C:\MSMAIL\CLKLIB.DEX
+	  C:\MSMAIL\MSMAIL.LES
+	  C:\MSMAIL\PLAY.EXE
+	  C:\MSMAIL\FAXVIEW.EXE
+	
+	The following files are installed in the C:\WINDOWS directory:
+	
+	  C:\WINDOWS\MSMAIL.INI
+	  C:\WINDOWS\MSMAIL.EXE
+	  C:\WINDOWS\MSMAILPV.INI
+	  C:\WINDOWS\MICROSO6.GRP
+	  C:\WINDOWS\REG.DAT
+	  C:\WINDOWS\MSSFS.DLL
+	  C:\WINDOWS\TRNSCHED.DLL
+	  C:\WINDOWS\MSMAIL.INI
+	  C:\WINDOWS\MSMAIL.BAK
+	
+	The following files are installed in the C:\WINDOWS\SYSTEM directory:
+	
+	  C:\WINDOWS\SYSTEM\SHELL.DLL
+	  C:\WINDOWS\SYSTEM\VER.DLL
+	  C:\WINDOWS\SYSTEM\MSSFS.DLL
+	  C:\WINDOWS\SYSTEM\VFORMS.DLL
+	  C:\WINDOWS\SYSTEM\AB.DLL
+	  C:\WINDOWS\SYSTEM\DEMILAYR.DLL
+	  C:\WINDOWS\SYSTEM\FRAMEWRK.DLL
+	  C:\WINDOWS\SYSTEM\MAILMGR.DLL
+	  C:\WINDOWS\SYSTEM\MAILSPL.EXE
+	  C:\WINDOWS\SYSTEM\MAPI.DLL
+	  C:\WINDOWS\SYSTEM\MSMAIL3.FON
+	  C:\WINDOWS\SYSTEM\PABNSP.DLL
+	  C:\WINDOWS\SYSTEM\STORE.DLL
+	  C:\WINDOWS\SYSTEM\SMI.DLL
+	  C:\WINDOWS\SYSTEM\AAPI.DLL
+	  C:\WINDOWS\SYSTEM\TRNSCHED.DLL
+	  C:\WINDOWS\SYSTEM\NS.DLL
+	  C:\WINDOWS\SYSTEM\SCHEDMSG.DLL
+	  C:\WINDOWS\SYSTEM\SENDFILE.DLL
+	
+	The following files are installed in the C:\WINDOWS\MSAPPS\PROOF directory and
+	are used primarily for spell checking a Mail message.
+	
+	  C:\WINDOWS\MSAPPS\PROOF\MSSPELL.DLL
+	  C:\WINDOWS\MSAPPS\PROOF\MSSP_AM.LEX
+	
+	In the WINDOWS directory, another MSMAIL directory is created, and under that
+	directory is another MSMAIL directory. The following files are installed there:
+	
+	  C:\WINDOWS\MSMAIL\MSMAIL\MSMAIL.INI
+	  C:\WINDOWS\MSMAIL\MSMAIL\MSSFS.DLL
+	  C:\WINDOWS\MSMAIL\MSMAIL\TRNSCHED.DLL
+	  C:\WINDOWS\MSMAIL\MSMAIL\MSSFS.DLL
+	  C:\WINDOWS\MSMAIL\MSMAIL\TRNSCHED.DLL
+	  C:\WINDOWS\MSMAIL\MSMAIL\TRNSCHED.DLL
+	
+	This is done to enable Microsoft Remote Mail for Windows to be able to use files
+	here when the System Selector is used to change transport providers. For
+	additional information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q118949 Files Placed on the Hard Drive During Installation
+	
+	Modifications to WIN.INI
+	------------------------
+	
+	The Setup program adds three lines to the existing [Extensions] section:
+	
+	     [Extensions]
+	     dcx=C:\MSMAIL\FAXVIEW.EXE ^.dcx
+	     scr=C:\MSMAIL\FAXVIEW.EXE ^.scr
+	     mmf=C:\MSMAIL\MSMAIL.EXE /F ^.mmf
+	
+	The Setup program creates a new [Mail] section, and it adds a line:
+	
+	     [Mail]
+	     MAPI=1
+	
+	The Setup program creates a new [MS Proofing Tools] section or modifies the [MS
+	Proofing Tools] section if it already exists, and it adds lines for Spelling and
+	Customer Dict:
+	
+	     [MS Proofing Tools]
+	     Spelling 1033,0=C:\WINDIR\MSAPPS\PROOF\MSSPELL.DLL,
+	       C:\WINDIR\MSAPPS\PROOF\MSSP_AM.LEX
+	     Custom Dict 1=C:\MSMAIL\CUSTOM.DIC
+	
+	The Setup program adds one line to the existing [Sounds] section:
+	
+	     [Sounds]
+	     MailBeep=
+	
+	Files and Directories Changed by the Setup Program
+	--------------------------------------------------
+	
+	C:\WINDIR\ 
+	
+	  PROGMAN.INI       Program Manager initialization file
+	  REG.DAT           Registration database for Microsoft Mail
+	  WIN.INI           Windows initialization file
+	  WINFILE.INI       File Manager initialization file
+	
+	Changes to PROGMAN.INI
+	----------------------
+	
+	The Setup program creates new group file (Microsof.grp) if one does not exist,
+	and it adds the Microsoft Mail icon as a group item with these properties:
+	
+	  Description:        Microsoft Mail
+	  Command Line:       \MSMAIL\msmail.exe
+	  Working Directory:  \MSMAIL
+	
+	Changes to REG.DAT
+	------------------
+	
+	The Setup program places a line in the registration database (REG.DAT) for
+	Microsoft Mail using \MSMAIL\MSMAIL.EXE as the command line.
+	
+	Changes to WINFILE.INI
+	----------------------
+	
+	The Setup program creates new [AddOns] section or modifies existing [AddOns]
+	section:
+	
+	     [AddOns]
+	     Mail File Manager Extension=\WINDIR\SYSTEM\SENDFILE.DLL
+	
+	For additional information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q110467 Description of 3.2 Setup Process
+	
+	Additional query words: 3.20a files list install setup
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMailSearch kbZNotKeyword3 kbMail320
+	Version           : WINDOWS:3.2
+	
+	=============================================================================
+	

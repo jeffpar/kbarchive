@@ -1,0 +1,75 @@
+---
+layout: page
+title: "Q221191: How to Install/Extract Symbols for Windows NT 4.0"
+permalink: kb/221/Q221191/
+---
+
+## Q221191: How to Install/Extract Symbols for Windows NT 4.0
+
+	Article: Q221191
+	Product(s): Microsoft Windows NT
+	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+	Operating System(s): 
+	Keyword(s): kbfaq
+	Last Modified: 10-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4 
+	- Microsoft Windows NT Server versions 4.0, 4.0 SP4, Terminal Server Edition 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The symbols for Windows NT 4.0 are in a compressed format on the compact disc
+	media. The following command and parameters need to be run from the
+	Support\Debug folder on the Windows NT Server 4.0 or Windows NT Server 4.0,
+	Terminal Server Edition compact disc media:
+	
+	  expndsym [Windows NT CD (CD-ROM) Drive Letter] [Destination Path]
+	
+	For example:
+	
+	  expndsym F: C:\Winnt
+	
+	MORE INFORMATION
+	================
+	
+	Depending on what service pack is installed on the computer being debugged, the
+	service pack symbols needs to be installed/extracted on top of the symbols
+	extracted from Windows NT 4.0 base compact disc.
+	
+	Run SpXsymi.exe or SpXsyma.exe from the Support\Debug folder on the service pack
+	compact disc for Intel or Alpha platforms respectively, where X corresponds to
+	service pack level; for example, Sp4symi.exe would be SP4 for Intel-based
+	computers.
+	
+	You will be prompted to specify the directory for the extracted files.
+	
+	You can find the symbols files available for download at the following Web site:
+	
+	  http://support.microsoft.com/highlights/ntw40.asp
+	
+	NOTE: The inclusion of the Copydbg.cmd file in Windows NT 4.0 Service Pack 4 is
+	intended to pull the new build of some of the debugging modules included in
+	Service Pack 3 and copy them and their associated symbols to the destination
+	path included in the following command line.
+	
+	For example, if your CD-ROM is drive E, your debugging tools are in D:\Mytools,
+	and your .dbg files are in C:\Winnt\Symbols, type the following line:
+	
+	  copydbg e: d:\mytools c:\winnt\symbols
+	
+	Additional query words: symbols debug
+	
+	======================================================================
+	Keywords          :  kbfaq
+	Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400sp4 kbWinNTS400sp3 kbWinNTS400sp2 kbWinNTS400sp1 kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServ400sp4 kbNTTermServSearch
+	Version           : winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+	Hardware          : ALPHA MIPS x86
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

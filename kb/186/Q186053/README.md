@@ -1,0 +1,72 @@
+---
+layout: page
+title: "Q186053: Removing DLS Removes Application Event Log Registry Keys"
+permalink: kb/186/Q186053/
+---
+
+## Q186053: Removing DLS Removes Application Event Log Registry Keys
+
+	Article: Q186053
+	Product(s): Microsoft SNA Server
+	Version(s): WINDOWS:2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3
+	Operating System(s): 
+	Keyword(s): kbbuglist
+	Last Modified: 12-APR-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 2.11 SP1, 2.11 SP2, 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you remove a Distributed Link Service from a computer running SNA Server
+	2.11 SP1 or SP2, or you remove a Distributed Link Service from a computer
+	running SNA Server 3.0 (SP1, SP2, or SP3) that had been upgraded from 2.11 SP1
+	or SP2, the following registry key will have all its subkeys removed except for
+	Network Control Panel:
+	
+	  HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\EventLog
+	  \Application
+	
+	CAUSE
+	=====
+	
+	The SNA Server 2.11 Distributed Link Service .inf file, Snaremls.inf,
+	inadvertantly removes the entire Application Event Log Registry Key when a
+	Distributed Link Service is uninstalled.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in SNA Server versions 2.11 SP1,
+	2.11 SP2, 3.0, 3.0 SP1, 3.0 SP2, and 3.0 SP3.
+	
+	
+	A supported fix is now available, but has not been fully regression- tested and
+	should be applied only to systems experiencing this specific problem. Unless you
+	are severely impacted by this specific problem, Microsoft recommends that you
+	wait for the next Service Pack that contains this fix. Contact Microsoft
+	Technical Support for more information.
+	
+	
+	MORE INFORMATION
+	================
+	
+	This problem does not occur if a Distributed Link Service for SNA Server 3.0
+	(all SPs) is installed on a server that has not been upgraded from SNA Server
+	2.11.
+	
+	Additional query words: snadls snasetup
+	
+	======================================================================
+	Keywords          :  kbbuglist
+	Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ211SP1 kbSNAServ211SP2 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ300SP2
+	Version           : WINDOWS:2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

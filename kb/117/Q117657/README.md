@@ -1,0 +1,79 @@
+---
+layout: page
+title: "Q117657: Windows 95 May Not Start After Setup to Clean Directory"
+permalink: kb/117/Q117657/
+---
+
+## Q117657: Windows 95 May Not Start After Setup to Clean Directory
+
+	Article: Q117657
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): 95
+	Operating System(s): 
+	Keyword(s): win95
+	Last Modified: 17-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 95 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	After you install Windows 95 in a directory other than the current Windows
+	directory, Windows 95 does not start; instead, the boot process invokes the
+	previous version of Windows, or the system stops responding (hangs) after the
+	Windows logo screen is displayed.
+	
+	CAUSE
+	=====
+	
+	This problem occurs when the previous version of Windows is automatically loaded
+	at startup using the following commands in the AUTOEXEC.BAT file:
+	
+	  CD\<Windows directory>
+	  WIN
+	
+	When you are installing Windows 95, Setup creates the AUTOEXEC.W40 file based on
+	the existing AUTOEXEC.BAT file. Windows 95 removes the command to load the
+	previous version of Windows (that is, WIN) but fails to remove the change
+	directory command. In this configuration, Windows 95 executes the WIN command
+	from the c:\<Windows directory> and starts the previous version of
+	Windows.
+	
+	RESOLUTION
+	==========
+	
+	To correct this problem:
+	
+	1. Restart your computer. When you see the "Starting Windows 95" message, press
+	  the F8 key, and then choose Step-By-Step Confirmation from the Startup menu.
+	
+	2. Answer Yes to all prompts except the CD\<Windows directory> prompt;
+	  answer No to this prompt. (This allows Windows 95 to start.)
+	
+	3. Click the Start button, then click Run.
+	
+	4. On the command line, type "wordpad c:\autoexec.bat" (without the quotation
+	  marks).
+	
+	5. Remove or remark out the CD\<Windows directory> command. For example:
+	
+	  rem cd \windows
+	
+	6. Save the AUTOEXEC.BAT file and shut down the system.
+	
+	Windows 95 should now restart properly.
+	
+	Additional query words: 3.x
+	
+	======================================================================
+	Keywords          : win95 
+	Technology        : kbWin95search kbZNotKeyword3
+	Version           : 95
+	
+	=============================================================================
+	

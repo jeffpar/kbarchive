@@ -1,0 +1,90 @@
+---
+layout: page
+title: "Q317053: &quot;STOP 0x00000067&quot; Err Msg When You Attempt to Start Windows"
+permalink: kb/317/Q317053/
+---
+
+## Q317053: &quot;STOP 0x00000067&quot; Err Msg When You Attempt to Start Windows
+
+	Article: Q317053
+	Product(s): Microsoft Windows NT
+	Version(s): 2000,4.0
+	Operating System(s): 
+	Keyword(s): kberrmsg ocsso
+	Last Modified: 18-MAR-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 2000 Advanced Server 
+	- Microsoft Windows 2000 Professional 
+	- Microsoft Windows 2000 Server 
+	- Microsoft Windows NT Server version 4.0 
+	- Microsoft Windows NT Workstation version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you attempt to start Windows normally or in Safe mode (VGA mode), the
+	computer may stop responding and you may receive the following STOP
+	(blue-screen) error message:
+	
+	  STOP 0x00000067 (0x00000004, 0x00000008, 0x00000000, 0x00000000)
+	  CONFIG_INITIALIZATION_FAILED.
+	
+	NOTE: This behavior can also occur when you attempt to start Windows Setup from
+	the Windows CD-ROM.
+	
+	CAUSE
+	=====
+	
+	This behavior indicates that the Windows registry is unable to allocate the
+	memory pool needed to contain the registry files. This may be caused by a
+	defective random access memory (RAM) module.
+	
+	RESOLUTION
+	==========
+	
+	To troubleshoot this issue, replace the RAM modules in the computer, and then
+	attempt to start Windows. If the problem persists, disable caching on the
+	motherboard. If doing this resolves the issue, contact the motherboard
+	manufacturer for diagnostic information.
+	
+	For information about how to contact your motherboard manufacturer, click the
+	appropriate article number below to view the article in the Microsoft Knowledge
+	Base:
+	
+	  Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+	
+	  Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+	
+	  Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+	
+	MORE INFORMATION
+	================
+	
+	The third-party contact information included in this article is provided to help
+	you find the technical support you need. This contact information is subject to
+	change without notice. Microsoft in no way guarantees the accuracy of this
+	third-party contact information.
+	
+	REFERENCES
+	==========
+	
+	For additional information about how to troubleshoot a STOP 0x67 error message,
+	click the article number below to view the article in the Microsoft Knowledge
+	Base:
+	
+	  Q195372 STOP 0x00000067 on System Reboot
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kberrmsg ocsso 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWinAdvServSearch
+	Version           : :2000,4.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

@@ -1,0 +1,99 @@
+---
+layout: page
+title: "Q190812: Briefcase Item Needs to Be Synchronized Twice"
+permalink: kb/190/Q190812/
+---
+
+## Q190812: Briefcase Item Needs to Be Synchronized Twice
+
+	Article: Q190812
+	Product(s): Microsoft Windows NT
+	Version(s): winnt:4.0
+	Operating System(s): 
+	Keyword(s): kbWinNT400sp5fix
+	Last Modified: 16-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 4.0 
+	- Microsoft Windows NT Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	You have a Briefcase folder, and a file in it has the synchronized copy on a
+	Windows NT network share.
+	
+	When you modify the file in the local folder, and synchronize it with the server
+	copy, the synchronization status still shows, "Needs updating." When you
+	synchronize it again, Briefcase offers to copy the file from the remote
+	location, although the file time stamp is identical.
+	
+	After Briefcase copies the file from the remote location, the synchronization
+	status is correctly set to "Up-to-date."
+	
+	CAUSE
+	=====
+	
+	After Briefcase copies the file to the server during the first update, it uses
+	FindFirstFile to read back the file information. In some cases, the LAN Manager
+	redirector runs this API before the file is closed. If this happens, the file
+	size of the remote file is not correct and the synchronization status is not set
+	correctly.
+	
+	In a network trace, you can see a frame sequence like this between the client and
+	server:
+	
+	  SMB       C write, FID = 0x9804, Write 0x0 at 0x0000020E
+	  SMB       R write, Wrote 0x0
+	  SMB       C transact2 Set file info, FID = 0x9804
+	  SMB       R transact2 Set file info (response)
+	  SMB       C transact2 Findfirst, File = \Text2.txt
+	  SMB       R transact2 Findfirst (response)
+	  SMB       C close file, FID = 0x9804
+	  SMB       R close file
+	
+	In response to the Findfirst server message block (SMB), you will see an
+	incorrect file size.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, obtain the latest service pack for Windows NT 4.0 or
+	the individual software update. For information on obtaining the latest service
+	pack, please go to:
+	
+	- http://www.microsoft.com/windows/servicepacks/
+	
+	-or-
+	
+	- Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+	
+	For information on obtaining the individual software update, contact Microsoft
+	Product Support Services. For a complete list of Microsoft Product Support
+	Services phone numbers and information on support costs, please go to the
+	following address on the World Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Windows NT 4.0. This problem was
+	first corrected in Windows NT 4.0 Service Pack 5.
+	
+	Additional query words: 4.00
+	
+	======================================================================
+	Keywords          : kbWinNT400sp5fix 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+	Version           : winnt:4.0
+	Hardware          : ALPHA x86
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

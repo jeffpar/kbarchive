@@ -1,0 +1,152 @@
+---
+layout: page
+title: "Q158614: INFO: STL Sample for the Vector Class Using the operator== Funct"
+permalink: kb/158/Q158614/
+---
+
+## Q158614: INFO: STL Sample for the Vector Class Using the operator== Funct
+
+	Article: Q158614
+	Product(s): Microsoft C Compiler
+	Version(s): 4.2,5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbcode kbtemplate kbSTL kbVC420 kbVC500 kbVC600 kbDSupport
+	Last Modified: 04-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The Standard C++ Library, used with:
+	   - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+	   - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+	   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+	   - Microsoft Visual C++.NET (2002) 
+	-------------------------------------------------------------------------------
+	
+	NOTE: Microsoft Visual C++ NET (2002) supported both the managed code model that is provided by the .NET Framework and the unmanaged native Windows code model. The information in this article applies to unmanaged Visual C++ code only.
+	
+	SUMMARY
+	=======
+	
+	The following sample code illustrates how to define operator== to compare one
+	vector of user-defined types to another.
+	
+	MORE INFORMATION
+	================
+	
+	Required Headers
+	----------------
+	
+	     <vector>
+	     <algorithm>
+	
+	Prototypes
+	----------
+	
+	     template<class _TYPE, class _A> inline
+	     bool operator==(const vector<_TYPE, _A>& _X,
+	                     const vector<_TYPE, _A>& _Y);
+	
+	NOTE: The class/parameter names in the prototype may not match the version in the
+	header file. Some have been modified to improve readability.
+	
+	Description
+	-----------
+	
+	The sample declares three empty vectors, of a user-defined class called ID, that
+	each contain a Name string member and a Score integer member. It creates three
+	vectors of IDs, then compares vectors using the operator== as defined for ID.
+	
+	Sample Code
+	-----------
+	
+	  ////////////////////////////////////////////////////////////////////// 
+	  // 
+	  // Compile options needed: /GX
+	  // 
+	  //    Opequal.cpp : Illustrates how to define the operator== to compare
+	  //                  vectors.
+	  // 
+	  // Functions:
+	  // 
+	  //    vector::operator== - Vector equality comparison.
+	  //    vector::push_back - Appends (inserts) an element to the end of a
+	  //                        vector, allocating memory for it if necessary.
+	  // 
+	  // Written by Tom Campbell
+	  // of Microsoft Corporation
+	  // Copyright (c) 1996 Microsoft Corporation. All rights reserved.
+	  ////////////////////////////////////////////////////////////////////// 
+	
+	  // The debugger can't handle symbols more than 255 characters long.
+	  // STL often creates symbols longer than that.
+	  // When symbols are longer than 255 characters, the warning is disabled.
+	  #pragma warning(disable:4786)
+	  #include <iostream>
+	  #include <vector>
+	  #include <string>
+	  #include <algorithm>
+	
+	  #if _MSC_VER > 1020   // if VC++ version is > 4.2
+	     using namespace std;  // std c++ libs implemented in std
+	     #endif
+	
+	  // The ID class is used for team scoring. It holds each player's name
+	  // and score.
+	  class ID
+	  {
+	  public:
+	      string Name;
+	      int Score;
+	      ID() : Name(""), Score(0) {}
+	      ID(string NewName, int NewScore) : Name(NewName), Score(NewScore) {}
+	  };
+	  // In this example, an ID is equivalent only if both name and score match.
+	  bool operator==(const ID& x, const ID& y)
+	  {
+	      return (x.Name == y.Name) && (x.Score == y.Score);
+	  }
+	  // Define a template class for a vector of IDs.
+	  typedef vector<ID, allocator<ID> > NAMEVECTOR;
+	  void main()
+	  {
+	      // Declare 3 dynamically allocated vectors of names.
+	      NAMEVECTOR Vector1, Vector2, Vector3;
+	      // Create 3 short vectors of names.
+	      Vector1.push_back(ID("Karen Palmer", 2));
+	      Vector1.push_back(ID("Ada Campbell", 1));
+	      Vector2.push_back(ID("John Woloschuk", 3));
+	      Vector2.push_back(ID("Grady Leno", 2));
+	      Vector3.push_back(ID("Karen Palmer", 2));
+	      Vector3.push_back(ID("Ada Campbell", 1));
+	      // Compare Vector1 to Vector2 and show whether they're equivalent.
+	      Vector1 == Vector2 ? cout << "Vector1 == Vector2"
+	                         : cout << "Vector1 != Vector2";
+	      cout << endl;
+	      // Compare Vector1 to Vector3 and show whether they're equivalent.
+	      Vector1 == Vector3 ? cout << "Vector1 == Vector3"
+	                         : cout << "Vector1 != Vector3";
+	      cout << endl;
+	  }
+	
+	Program Output
+	--------------
+	
+	  Vector1 != Vector2
+	  Vector1 == Vector3
+	
+	REFERENCES
+	==========
+	
+	Visual C++ Books Online: Visual C++ Books; C/C++; Standard C++ Library Reference
+	
+	Additional query words: STL STLSample
+	
+	======================================================================
+	Keywords          : kbcode kbtemplate kbSTL kbVC420 kbVC500 kbVC600 kbDSupport 
+	Technology        : kbVCsearch kbAudDeveloper kbVCLibrary
+	Version           : :4.2,5.0,6.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

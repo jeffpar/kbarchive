@@ -1,0 +1,79 @@
+---
+layout: page
+title: "Q217892: DirectX Err Msg: Problem Getting Extra Display Info at Step 3..."
+permalink: kb/217/Q217892/
+---
+
+## Q217892: DirectX Err Msg: Problem Getting Extra Display Info at Step 3...
+
+	Article: Q217892
+	Product(s): Microsoft Home Games
+	Version(s): 1.0,2.0
+	Operating System(s): 
+	Keyword(s): kbdisplay kbenv kberrmsg kbimu msgame KbDirectX
+	Last Modified: 10-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Age of Empires, version 1.0 
+	- Microsoft Age of Empires Expansion: The Rise of Rome, version 1.0 
+	- Microsoft Baseball 3D, version 1.0 
+	- Microsoft CART Precision Racing, version 1.0 
+	- Microsoft Close Combat III: The Russian Front 
+	- Microsoft Close Combat: A Bridge Too Far, version 2.0 
+	- Microsoft Combat Flight Simulator: WWII Europe Series, version 1.0 
+	- Microsoft Deadly Tide for Windows 1.0 
+	- Microsoft Flight Simulator 98 
+	- Microsoft Golf 1998 Edition, version 1.0 
+	- Microsoft Golf 1999 Edition, version 1.0 
+	- Microsoft Monster Truck Madness, version 1.0 
+	- Microsoft Monster Truck Madness 2, version 2.0 
+	- Microsoft Motocross Madness, version 1.0 
+	- Microsoft Outwars, version 1.0 
+	- Microsoft Pinball Arcade, version 1.0 
+	- Microsoft Return of Arcade for Windows, version 1.0 
+	- Microsoft Revenge of Arcade, version 1.0 
+	- Microsoft Urban Assault, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you start any of the Microsoft programs listed at the beginning of this
+	article, you may receive the following error message:
+	
+	  Problem getting extra display info at Step 3 for Direct Draw
+	  Code=0x887600de
+	
+	CAUSE
+	=====
+	
+	This behavior can occur if the video driver for your video adapter is outdated.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, contact your video adapter manufacturer to inquire about
+	how to obtain and install the latest version of the video driver for your video
+	adapter.
+	
+	For more information about how to contact your video adapter manufacturer, please
+	see the following articles in the Microsoft Knowledge Base:
+	
+	  Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+	
+	  Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+	
+	  Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+	
+	Additional query words: msgame direct-x ddraw dx6 dx6.1
+	
+	======================================================================
+	Keywords          : kbdisplay kbenv kberrmsg kbimu msgame KbDirectX 
+	Technology        : kbHomeProdSearch _IKkbbogus kbHomeMMsearch kbAOE kbGamesSearch kbFlightSimSearch kbArcadeRet kbArcadeRev kbZNotKeyword kbGolf98 kbGolf99 kbGolfSearch kbPinballArc kbArcadeSearch kbMotocrossSearch kbOutwarsSearch kbOutwars kbCloseCombatSearch kbCARTRacingSearch kbBaseballSearch kbMonsterTMSearch kbAOESearch kbMonsterTM kbZNotKeyword3 kbUrbanAssault kbMonsterTM2 kbAOEExpRome kbCloseCombat2 kbCloseCombat3 kbCombatFlightSim kbCombatFlightSimSearch kbFlightSim98 kbMotocrossM kbBaseBall3D kbCARTRacing kbDeadlyTide kbSimSearch
+	Version           : :1.0,2.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

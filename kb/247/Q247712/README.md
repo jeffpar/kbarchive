@@ -1,0 +1,94 @@
+---
+layout: page
+title: "Q247712: Wlbs.exe Generates Incorrect Information on Cluster Status"
+permalink: kb/247/Q247712/
+---
+
+## Q247712: Wlbs.exe Generates Incorrect Information on Cluster Status
+
+	Article: Q247712
+	Product(s): Microsoft Windows NT
+	Version(s): winnt:4.0,4.0 SP6,4.0 SP6a
+	Operating System(s): 
+	Keyword(s): kbnetwork kbtool kbWinNT400PreSP7Fix
+	Last Modified: 08-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server, Enterprise Edition versions 4.0 SP6, 4.0 SP6a 
+	- Microsoft Windows NT Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If you use the drainstop, query, suspend, or stop parameter with Windows Load
+	Balancing Service (WLBS) at a command prompt, system messages may not accurately
+	report the computer's status under the following conditions:
+	
+	- When you use the drainstop parameter, you receive a message indicating that
+	  connection draining has started. If you then use the "wlbs query" command,
+	  the host reports that draining has stopped. If you repeat the "wlbs
+	  drainstop" command, you receive a message indicating that connection draining
+	  has started. If you then run the "wlbs stop" command, you receive a message
+	  indicating that cluster operations have already stopped.
+	
+	- When you use the suspend parameter, you receive a message indicating that
+	  cluster control is suspended. If you then use the "wlbs stop" command, the
+	  host reports that cluster control has been suspended (although it has already
+	  been stopped). If you then run the "wlbs drainstop" command, you receive a
+	  message indicating that cluster control has been suspended and connection
+	  draining has been started.
+	
+	RESOLUTION
+	==========
+	
+	A supported fix is now available from Microsoft, but it is only intended to
+	correct the problem described in this article and should be applied only to
+	systems experiencing this specific problem.
+	
+	To resolve this problem, contact Microsoft Product Support Services to obtain the
+	fix. For a complete list of Microsoft Product Support Services phone numbers and
+	information on support costs, please go to the following address on the World
+	Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	NOTE: In special cases, charges that are normally incurred for support calls may
+	be canceled, if a Microsoft Support Professional determines that a specific
+	update will resolve your problem. Normal support costs will apply to additional
+	support questions and issues that do not qualify for the specific update in
+	question.
+	
+	The English-language version of this fix should have the following file
+	attributes or later:
+	
+	  Date         Time     Size      File name   Platform
+	  ----------------------------------------------------
+	  10/12/1999   08:44p    36,112   Wlbs.exe    x86
+	  10/29/1999   02:06p    60,208   Wlbs.sys    x86
+	  10/12/1999   08:43p    51,472   Wlbs.exe    Alpha
+	  10/29/1999   02:05p   101,104   Wlbs.sys    Alpha
+	
+	
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products that are
+	listed at the beginning of this article.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbnetwork kbtool kbWinNT400PreSP7Fix 
+	Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400sp6 kbWinNTS400search kbWinNTS400 kbWinNTSEnt400SP6a
+	Version           : winnt:4.0,4.0 SP6,4.0 SP6a
+	Hardware          : ALPHA x86
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

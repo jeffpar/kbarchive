@@ -1,0 +1,707 @@
+---
+layout: page
+title: "Q152807: INFO: Error Messages from Analyze Tool of Visual SourceSafe"
+permalink: kb/152/Q152807/
+---
+
+## Q152807: INFO: Error Messages from Analyze Tool of Visual SourceSafe
+
+	Article: Q152807
+	Product(s): Microsoft SourceSafe
+	Version(s): 4.0,5.0,6.0
+	Operating System(s): 
+	Keyword(s): kberrmsg kbSSafe400 kbSSafe500 kbSSafe600 kbFAQ kbSsafe600FAQ
+	Last Modified: 28-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual SourceSafe for Windows, versions 4.0, 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article reviews common error messages and status messages produced by the
+	Analyze tool for Visual SourceSafe 4.0 and 5.0. The messages documented in this
+	article are returned by the Analyze tool that can be obtained from the Microsoft
+	download sites. For more information on how to obtain and use the Analyze tool,
+	please refer to the following article in the Microsoft Knowledge Base:
+	
+	  Q190881 SAMPLE: Analyze6.exe Utility for Visual SourceSafe
+	
+	The messages reported by the Analyze tool are echoed to the screen. They are also
+	written to the DATA\BACKUP\Analyze.log file by default.
+	
+	MORE INFORMATION
+	================
+	
+	Following is a list of the most common messages you receive when you run the
+	Analyze tool, with or without using the -F option, to repair a database. The
+	messages that appear when you want to get a verbose listing (-V switch) are not
+	documented here. This list is not comprehensive. Please contact Microsoft
+	Technical Support if you receive an error not documented here.
+	
+	How Visual SourceSafe Stores Files and Projects
+	-----------------------------------------------
+	
+	In order to understand some of the messages below, it is crucial to understand
+	how Visual SourceSafe stores files and projects. There are two files created for
+	each file and each project in Visual SourceSafe and they are stored in a
+	subdirectory of the DATA directory. The name of the subdirectory is the same as
+	the first character of the Visual SourceSafe file name, also known as the
+	physical file name. One of the two files is called the "Log" file. It does not
+	have an extension. This is where Visual SourceSafe information and differences
+	between one version of the file and the next are stored. The other file is
+	called the "Data" or "Tip" file. It has an extension of either .A or .B, and it
+	stores the most recent version of the file or the project.
+	
+	Following is a method to identify the name of a file from the Visual SourceSafe
+	physical file:
+	
+	Call the following command to create a file named Physical.txt that indicates all
+	the files that have not been deleted and are not corrupted in the Visual
+	SourceSafe database:
+	
+	  SS physical $/ -r -ophysical.txt
+	
+	Search Physical.txt to find the file name you are looking for. If you are
+	searching a specific file name (MyFile.txt) in the Physical.txt file, be sure to
+	scan the whole file as there may be multiple instances of a file.
+	
+	
+	LIST OF MESSAGES
+	----------------
+	
+	1. 
+	
+	  The CRC for data file "File Name" (Physical Data File Name) does not match
+	  the stored CRC. The file may be corrupt. The file was last checked in on
+	  "Date; Time" by user "User Name" in project "Project name."
+	
+	Example::
+	
+	The CRC for data file "MyFile.txt" (YBGAAAAA.a) does not match the stored CRC.
+	The file may be corrupt. The file was last checked in on "10/15/96; 11:26a" by
+	user "Guest" in project "$/MyProject."
+	
+	Cause::
+	
+	This message does not usually include the last sentence about the last checked-in
+	date and time. When Analyze returns this message, older versions of the file may
+	be lost if the error is not corrected right away. This message occurs because
+	the log file records the Cyclical Redundancy Check (CRC) for the last updated
+	copy of the file and the last recorded CRC does not match the current CRC.
+	
+	Resolution::
+	
+	To fix the error, first verify that the name of the copy in the working directory
+	of the user who last checked in the file matches the name of the Physical Data
+	File. If it does, make sure that the "Check in unchanged files" option in the
+	General Tab of the Options menu is set to "Check In." Then perform a Checkout on
+	the file and Check it back in. This will correct the stored CRC.
+	
+	2. 
+	
+	  Creating a new nameset, or long filename information, for the file <File
+	  Name>.
+	
+	Example::
+	
+	Creating a new nameset, or long filename information, for the file MyFile.txt.
+	
+	Cause::
+	
+	Analyze is reporting that it is attempting to fix the long file information for
+	this file.
+	
+	3. 
+	
+	  The data file for "File Name (Physical Data File Name)" was not found.
+	
+	Example::
+	
+	The data file for "EQUATES.INC" (aiaaaaaa.b) was not found.
+	
+	Cause::
+	
+	Visual SourceSafe keeps the last copy of each file in the database as an
+	individual file (.A or .B), also known as the data file. Analyze noticed that
+	the data file corresponding to the filename is missing from the database. It
+	knows whether to look for a .A or a .B file based on an entry in the log file
+	(AIAAAAAA). This error is usually caused by the data file being marked as
+	"read-only" or by a network or server problem during file creation.
+	
+	Steps to Resolve::
+	
+	   - If the data file mentioned in the error message is marked "read-only,"
+	     reset the "read-only" attribute so the file is writable.
+	
+	   - If <File Name> is a project, you can run Analyze -F <Path to
+	     Data> to fix it.
+	
+	   - If <File Name> is a file, there is no easy way to solve this error.
+	     The best alternative is to access the history of the file and identify the
+	     user who last checked in the file. You can then obtain the latest version
+	     of that file from the user's working directory. Copy the file from the
+	     physical data file name (with the .A or .B extension, as specified in the
+	     error message) to the correct subdirectory in the database. For example, a
+	     file that starts with the letter A should be stored in the A directory. Be
+	     sure to rename the file as part of the copy process.
+	
+	   - If you have multiple instances of this file in different projects in your
+	     database, you need to determine which project stores this file. See
+	     directions above for creating an output file. Search in the physical
+	     output file for the Physical Data File Name without the extension. In the
+	     example above, this would be aiaaaaaa. If you move up in the file from
+	     occurrence of aiaaaaaa you will see the project name that includes the
+	     file.
+	
+	4. 
+	
+	  Database analysis in progress.
+	
+	Cause::
+	
+	This message is informational only and reports that the Analyze process has
+	started.
+	
+	5. 
+	
+	  Encountered a bad CRC in <File Name>; record type <Record Header
+	  Type>.
+	
+	Example::
+	
+	Encountered a bad CRC in Status.dat; record type SH.
+	
+	Cause::
+	
+	
+	Each file has a header. Analyze reads it and computes the CRC for the data that
+	is currently there. If it does not match the CRC in the header, this message is
+	displayed. The key information is the File Name and Record Header Type. If this
+	data is unrecognizable, then the header is also bad.
+	
+	This error usually only occurs once at the beginning of the Log file. It occurs
+	most often for users who are upgrading from SourceSafe 3.x. The Status.dat file
+	that is used to store the file (whether it is checked out or not) is corrupted.
+	
+	Steps to Resolve::
+	
+	   - If this message appears for the Status.dat file, running Analyze -F
+	     <Path to Data> usually fixes the problem. However, for other files,
+	     the impact of this corruption is that this record is lost. Depending on
+	     the type of the record, Analyze may ignore it, fix it, or just remove it.
+	     If the File Name and Record Header Type are recognizable, running Analyze
+	     -F might recover the file.
+	
+	6. 
+	
+	  The file "<Physical Log File Name including path>" appears to be
+	  corrupt. Unable to read the format or header.
+	
+	Example::
+	
+	The file "f:\vss\data\O\ORLAAAAA" appears to be corrupt. Unable to read the
+	format or header.
+	
+	Cause::
+	
+	Files in Visual SourceSafe have format and header records to identify the file.
+	One or both of these is corrupted. This error is very serious because it usually
+	indicates that the rest of the Log file is damaged.
+	
+	In many cases Analyze will report this error on files that are not needed by the
+	database, often they have a size of 0 bytes. First try moving the files that
+	report this error out of the \data\a-z directory, along with any files that have
+	the same name with an extension, usually .a, .b or .old.
+	
+	If rerunning analyze no longer reports this error, no further action is
+	necessary.
+	
+	Steps to Resolve::
+	
+	   - The best solution is to retrieve the file from backup.
+	
+	   - If no backups are available and the file is a project, delete the files
+	     from the DATA\?\ directory. Be sure to delete the file with the extension
+	     of .a or .b and the file with no extension. Then run Analyze -F <Path
+	     to Data:gt; to clean up the links. All files that were in that project are
+	     likely to be lost.
+	
+	   - If it is a file, then make a copy of the data file (the one with the
+	     extension of .a or .b), and then delete the files from the DATA\?\
+	     directory. Delete the file with the extension of .a or .b and the file
+	     with no extension, and then rename the .a or .b file to its real name.
+	     Finally, add the file back into Visual SourceSafe. You will have to
+	     Identify the file. See directions for identifying a file at the beginning
+	     of this article.
+	
+	7. 
+	
+	  File "<Physical Log File Name including path>" is not the correct
+	  SourceSafe version.
+	
+	Example::
+	
+	File "f:\vss\data\H\HACKAAAA" is not the correct Visual SourceSafe version.
+	
+	Cause::
+	
+	Each physical log file maintains its database version. The setup process of
+	Visual SourceSafe runs a utility called Ddconv on the database. Ddconv runs
+	through the database and converts files to the current version. This message
+	occurs when the file was not converted to the correct version because someone
+	was using SourceSafe during the conversion, the file was read-only at that time,
+	or the file was damaged in the earlier version of SourceSafe and Ddconv couldn't
+	recognize it.
+	
+	Steps to Resolve::
+	
+	   - If there was just a lock on the file, you can safely run Ddconv against
+	     the database and it will convert this file. The syntax to run Ddconv is as
+	     follows:
+	
+	  DDCONV <Path to Data>
+	
+	     Any corruption in the file or the project will need to be fixed before
+	     Ddconv can convert the file. Unfortunately, because the rest of the
+	     database has already been upgraded to a Visual SourceSafe 4.0 format, it
+	     is hard to determine what that corruption is. You can recover your
+	     SourceSafe 3.x database and run the 3.x version of the Analyze tool for
+	     SourceSafe 3.x on the 3.x data to determine the corruption. Once fixed,
+	     you can run Ddconv on the data again.
+	
+	   - If you do not need the file or the project, you can move it, along with
+	     its corresponding data file (.A or .B), out of the DATA subdirectory. Then
+	     call Analyze with the -F option to clean up any links to the file. See the
+	     directions at the beginning of this article to download the new version of
+	     the Analyze tool.
+	
+	8. 
+	
+	  The file <File Name> was branched from <Physical Log File Name>
+	  that is missing a branch reference. A reference will be added.
+	
+	Example::
+	
+	The file CBLIST.ASM was branched from NNAAAAAA that is missing a branch
+	reference. A reference will be added.
+	
+	Cause::
+	
+	The branch parent does not have a reference to this file. Analyze is reporting
+	that it is adding a reference of that branch to the original file.
+	
+	9. 
+	
+	  The file <File Name> was branched from <Physical Log File Name>
+	  that is now corrupted and the early versions will be inaccessible.
+	
+	Example::
+	
+	The file MyFile.txt was branched from SOLAAAAA which is now corrupted and the
+	early versions will be inaccessible.
+	
+	Cause::
+	
+	This message informs you that versions of the file before it was branched are
+	damaged because of a corruption in the branch parent file.
+	
+	Steps to Resolve::
+	
+	   - This message is informational only, and there is nothing you can do for
+	     the file in <File Name>. Ideally you would fix the corruption in the
+	     branch parent, the physical log file name in the message. There is
+	     probably another message in the Analyze.log file about the corruption in
+	     the branched from file.
+	
+	10. 
+	
+	  Found a reference to an invalid rights block.
+	
+	Cause::
+	
+	There is corruption in the Rights.dat file. This is the file that stores project
+	security information. This error can usually be fixed by running the new Analyze
+	with the -F switch.
+	
+	11. 
+	
+	  The Header information in the rights system is corrupt.
+	
+	Cause::
+	
+	There is corruption in the Rights.dat file. This is the file that stores project
+	security information.
+	
+	Steps to Resolve::
+	
+	   - You can fix this problem by running the new Analyze with the -F switch.
+	
+	12. 
+	
+	  Incompatible database version.
+	
+	Cause::
+	
+	The Version.dat file contains the wrong information.
+	
+	Steps to Resolve::
+	
+	   - This error usually occurs when a user is upgrading from SourceSafe 3.x to
+	     Visual SourceSafe. It occurs because of a problem in the conversion
+	     process. The problem is usually documented in the Ddcerr.log file that is
+	     located in the DATA directory.
+	
+	For additional information about the messages in this file and how to resolve
+	them, click the article number below to view the article in the Microsoft
+	Knowledge Base:
+	
+	  Q153823 DDConv Messages of Visual SourceSafe
+	
+	When the problem is cleared up, running the Ddconv utility again usually updates
+	the Version.dat file. The syntax for calling the Ddconv utility is:
+	
+	  DDCONV <Path to Data>
+	
+	
+	13. 
+	
+	  The item <File Name> has an extra parent relationship that will be
+	  removed.
+	
+	Example::
+	
+	The item MyFile.txt has an extra parent relationship that will be removed.
+	
+	Cause::
+	
+	This is an informational message indicating that the file listed has a parent
+	that is not needed. The Analyze tool is removing the extra parent record.
+	
+	14. 
+	
+	  The nameset information for <File Name> is corrupt.
+	
+	Example::
+	
+	The nameset information for Myfile.txt is corrupt.
+	
+	Cause::
+	
+	There is corruption in the Names.dat file for the listed file name. The Names.dat
+	file is where long file and project information is stored.
+	
+	Steps to Resolve::
+	
+	   - Up to 33 characters can be recovered by running Analyze with the -F
+	     switch.
+	
+	15. 
+	
+	  No parent(s) or branch(es) were found for file "<Physical Log File
+	  Name>."
+	
+	Example::
+	
+	No parent(s) or branch(es) were found for file "BRGAAAAA."
+	
+	Cause::
+	
+	This means that the file currently has no parent or branch records and the
+	Analyze utility will place the file on the delete list. If this file is branched
+	from another file that has not been deleted, it will not be removed from the
+	database and therefore this message will continue to appear. This is normal
+	SourceSafe behavior. This message is not an error in your source code. This
+	message should have been a verbose logging message, but was improperly
+	classified as a regular message.
+	
+	Steps to Resolve::
+	
+	   - Usually running Analyze with the -F and the -D switches will fix the
+	     references or destroy these files, if appropriate. However, please note
+	     that this will not remove all occurrences of this message.
+	
+	16. 
+	
+	  No parent project for subproject file "<Physical Log File Name>."
+	
+	Example::
+	
+	No parent project for subproject file "ABBAAAAA."
+	
+	Cause::
+	
+	This error means that this project was not automatically removed when the parent
+	project was deleted or that the parent project has somehow been lost.
+	
+	Steps to Resolve::
+	
+	   - This error is usually fixed by running Analyze -F <Path to Data>.
+	     The tool either reconstructs the parent or removes the sub project if it
+	     is no longer needed.
+	
+	17. 
+	
+	  Project log "<Project Physical Name>" has a <Log Type> record for
+	  item "<File Name|Project Name>," but that item was or was not found in
+	  the project.
+	
+	Example::
+	
+	Project log "DGEAAAAA" has a create record for item "MyFile.txt," but that item
+	wasn't found in the project.
+	
+	Cause::
+	
+	Analyze takes the log records from a project and the current list of children
+	records in the project and plays the log records backwards until it gets to the
+	beginning of the list of log records. The list of children should be empty
+	corresponding to the creation of the project. This error indicates that there is
+	a mismatch between the history of the project and its content. This is just an
+	internal check.
+	
+	Steps to Resolve::
+	
+	   - Depending on the nature of the error in the log, this message might be
+	     corrected by running Analyze -F. This is not a dangerous error and you can
+	     ignore it. This message almost always appears with the next message.
+	
+	
+	18. 
+	
+	  The project contents as rebuilt from the log "<Physical Log File Name>"
+	  does not match the projects actual contents.
+	
+	Example::
+	
+	The project contents as rebuilt from the log "DGEAAAAA" does not match the
+	project actual contents.
+	
+	Cause::
+	
+	This message almost always appears after one or more of the message documented
+	above. It occurs because there is a mismatch between the history and the log
+	files. This is an internal check.
+	
+	Steps to Resolve::
+	
+	   - This message may or may not be fixed by Analyze -F, depending on the
+	     problem in the log. This is not a dangerous error and you can ignore it.
+	
+	
+	19. 
+	
+	  A rights setting mismatch was found.
+	
+	Cause::
+	
+	The Rights.dat file, which stores project security information, contains an
+	invalid reference.
+	
+	Steps to Resolve::
+	
+	   - You can usually fix this error by calling the Analyze utility with the -F
+	     switch.
+	
+	20. 
+	
+	  There is a diff chain size mismatch in file "File Name"(Physical Log File
+	  Name)" at version # (versions earlier than that version can no longer be
+	  retrieved from the database).
+	
+	Example::
+	
+	There is a diff chain size mismatch in file "MyFile.txt" (FYIAAAAA) at version 12
+	(versions earlier than that version can no longer be retrieved from the
+	database).
+	
+	Cause::
+	
+	This message is an error and means that versions older than the one specified
+	can't be retrieved. This is usually caused by an error in a log entry record,
+	that causes the difference chain (or delta) to be unusable to properly
+	regenerate older versions of the file.
+	
+	Steps to Resolve::
+	
+	   - The only resolution is to retrieve the file (FYIAAAAA and FYIAAAAA.a (or
+	     .b)) from backup.
+	
+	21. 
+	
+	  There is a version sequence mismatch in the log file for "<File name>"
+	  (<Physical Log File Name>).
+	
+	Example::
+	
+	There is a version sequence mismatch in the log file for "MyFile.txt"
+	(FISHAAAA).
+	
+	Cause::
+	
+	There is a missing log entry in the file. This behavior usually occurs when the
+	Analyze utility has found a damaged log entry and removed it. If this log entry
+	is a label, no older versions of a file are lost. If Analyze removed an Update
+	log entry, then older versions of the file might be lost.
+	
+	Steps to Resolve::
+	
+	   - If you need the missing version of the file, you can retrieve it from
+	     backup if you know when the corruption occurred and recover from before
+	     that time. This may mean that later versions are lost.
+	
+	22. 
+	
+	  Unable to create the filemapping for the database <path to DATA
+	  subdirectory>.
+	
+	Example::
+	
+	Unable to create the filemapping for the database c:\vss\data.
+	
+	Cause::
+	
+	A file name in the DATA directory is greater than the largest allowable file
+	name. This usually occurs when a non-SourceSafe file is written to the DATA
+	directory.
+	
+	Steps to Resolve::
+	
+	   - Scan the DATA subdirectory to remove the entry that is not a SourceSafe
+	     file.
+	
+	
+	23. 
+	
+	  Unable to open project <Path Used as Analyze Parameter>\a\aaaaaaaa
+	  Continue?
+	
+	Example::
+	
+	Unable to open project f:\vss\a\aaaaaaaa Continue?
+	
+	Cause::
+	
+	Analyze cannot find the main project in the database. This error usually occurs
+	because the path to the project is incorrect when you call Analyze.
+	
+	Steps to Resolve::
+	
+	   - Run Analyze and ensure you are pointing to the correct location of the
+	     SourceSafe database.
+	
+	24. 
+	
+	  The file <filename> contained one or more badly formed physical file
+	  names.
+	
+	Example::
+	
+	The file bqeaaaaa contained one or more badly formed physical file names.
+	
+	Cause::
+	
+	A badly formed filename means that an internal record has a physical filename in
+	the improper case. For example, BQEAAAAA => bqeaaaaa is a harmless message.
+	
+	Steps to Resolve::
+	
+	   - Run Analyze with the -f switch.
+	
+	25. 
+	
+	  The error "The count of the children in the header does not match the count
+	  of children on disk. The count will be adjusted." is not a critical error.
+	
+	Cause::
+	
+	Within every project header, a number is kept that is indicative of the number of
+	children associated with that project. One of the many things that Analyze does
+	as it scans through the database is to count the children files associated with
+	that project. If the number that Analyze counts does not match the count in the
+	header then the error is returned.
+	
+	Steps to Resolve::
+	
+	   - Analyze -F should fix this by synchronizing the actual number of children
+	     with the number that is in the header.
+	
+	26. 
+	
+	  Found a 'COMMENT' record in file <file name such as 'jogaaaaa'> at
+	  position 33818
+	
+	errors are usually caused by orphaned comments.
+	
+	Cause::
+	
+	Visual SourceSafe sequentially writes data to its log files. An example of how
+	you might have extraneous information would be if you add a file and supply a
+	comment at the time of the Add. Later, go to Properties for that file and change
+	the comment. Now both comments are stored in the data file. However, you will
+	never be able to access the first comment from SourceSafe again.
+	
+	NOTE: The number 33818 used in the error example above indicates that the comment
+	starts at bit 33818 from the beginning of the file.
+	
+	Steps to Resolve::
+	
+	   - Analyze -c should fix this error. The -c switch allows Analyze to compress
+	     free space that may exist in data files and thereby release disk space.
+	     However, this process is considerably slower and should not be run on a
+	     frequent basis. So, if you run Analyze with -c and it discovers two
+	     comments for a file, it rewrites the data file and leaves out the older
+	     comment. While this switch can reduce the size of the database in some
+	     cases, it usually does not make a significant difference.
+	
+	
+	27. 
+	
+	  Found a 'DIFF' record in file <file name such as 'jogaaaaa'> at
+	  position 33818.
+	
+	Cause::
+	
+	Analyze returns this error because a DIFF chain has been found but cannot be
+	associated with a log record in the file in which it was found.
+	
+	A DIFF chain is made up of DIFF chunks that are ADD, CHANGE, or REMOVE records.
+	For example, if a file that contains only "Hello world" is checked out and
+	modified by adding "Bye world" and then checked back in that ADD creates a DIFF
+	chain.
+	
+	The number 33818 used in the error example above indicates that the DIFF chain
+	starts at position 33818 from the beginning of the file.
+	
+	Steps to Resolve::
+	
+	   - Analyze -c may fix this error. The -c switch allows Analyze to compress
+	     unused comments that may exist in log files and thereby release disk
+	     space. However, this process is considerably slower and should not be run
+	     on a frequent basis. So, if you run Analyze with -c and it discovers two
+	     comments for a file, it rewrites the data file and leaves out the older
+	     comment. While this switch can reduce the size of the database in some
+	     cases, it usually does not make a significant difference.
+	
+	
+	REFERENCES
+	==========
+	
+	For more information about the switches used with Analyze, please see the
+	following article in the Microsoft Knowledge Base:
+	
+	  Q190881 SAMPLE: Analyze6.exe Utility for Visual SourceSafe
+	
+	Additional query words: mapping
+	
+	======================================================================
+	Keywords          : kberrmsg kbSSafe400 kbSSafe500 kbSSafe600 kbFAQ kbSsafe600FAQ 
+	Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe400 kbSSafe500
+	Version           : :4.0,5.0,6.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

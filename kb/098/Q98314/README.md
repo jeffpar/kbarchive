@@ -1,0 +1,113 @@
+---
+layout: page
+title: "Q98314: PRB: #pragma pack Can Generate Compiler Warnings"
+permalink: kb/098/Q98314/
+---
+
+## Q98314: PRB: #pragma pack Can Generate Compiler Warnings
+
+	Article: Q98314
+	Product(s): Microsoft C Compiler
+	Version(s): 1.0,1.5,1.51,2.0,2.1,4.0,4.1,4.2,5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbCompiler kbVC100 kbVC150 kbVC151 kbVC200 kbVC210 kbVC400 kbVC410 kbVC420 kbVC500 kbVC
+	Last Modified: 29-NOV-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft C/C++ for MS-DOS 
+	- Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5, 1.51 
+	- Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1, 4.0, 4.1, 4.2, 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	When an application uses the pack pragma, C/C++ the compiler generates the
+	following message:
+	
+	  warning C4103 used #pragma pack to change alignment
+	
+	Microsoft Visual C++ 5.0 generates a different warning:
+	
+	  warning C4653: compiler option 'structure packing (/Zp)' inconsistent with
+	  precompiled header; current command-line option ignored
+	
+	CAUSE
+	=====
+	
+	The pragma pack argument differs from the structure packing option specified on
+	the compiler command line. This warning was added to the compiler because
+	third-party tools can change the performance of user code by including a pragma
+	pack message in library include files. The warning message is designed to
+	indicate potential bugs in code under development.
+	
+	RESOLUTION
+	==========
+	
+	If the code restores the pack argument to the structure packing option specified
+	on the compiler command line, the warning does not occur. The sample code below
+	demonstrates restoring the compiler default.
+	
+	MORE INFORMATION
+	================
+	
+	The pack pragma and the /Zp compiler option each pack data structures to a
+	specified byte boundary. For example, if a structure requires 9 bytes of storage
+	and the compiler command line includes the /Zp1 option or the code includes the
+	#pragma pack(1) statement, the compiler reads and writes 9 bytes of information
+	when it accesses the structure. If the compiler command line includes the /Zp2
+	option or the code includes the #pragma pack(2) statement, the compiler reads
+	and writes 10 bytes when it accesses the structure.
+	
+	Adding the /Zp option to the command line may generate a different warning if the
+	PCH file is not updated after the change:
+	
+	  warning C4653: compiler option 'structure packing (/Zp)' inconsistent with
+	  precompiled header; current command-line option ignored
+	
+	If the code includes the pack pragma, the compiler determines whether the
+	/Zp<x> option is specified, where <x> is 1 (the default when no
+	number is specified), 2, 4, 8, or 16. If the compiler command line does not
+	specify the /Zp option, the compiler packs structures on 2-, 4-, or 8-byte
+	boundaries depending on the compiler version.
+	
+	The compiler generates a warning if a header file changes the structure packing
+	boundary and does not restore it to the value it before the end of the file.
+	
+	Sample Code
+	-----------
+	
+	  /*
+	  * Compile options needed: /Zp2 or /Zp4
+	  */ 
+	
+	  FILE.H
+	  ------
+	
+	   #pragma pack(1)
+	
+	   // Remove the comment from the following line to eliminate this
+	   // warning:
+	   // #pragma pack()
+	
+	  FILE.C
+	  ------
+	
+	  #include "file.h"
+	
+	  void main(void)
+	  {}
+	
+	Additional query words: 8.00 8.00c 9.00 9.10
+	
+	======================================================================
+	Keywords          : kbCompiler kbVC100 kbVC150 kbVC151 kbVC200 kbVC210 kbVC400 kbVC410 kbVC420 kbVC500 kbVC600 
+	Technology        : kbVCsearch kbVC400 kbAudDeveloper kbZNotKeyword8 kbvc150 kbvc100 kbZNotKeyword3 kbVC410 kbVC420 kbVC500 kbVC600 kbVC151 kbVC200 kbVC210 kbVC32bitSearch kbVC16bitSearch kbVC500Search
+	Version           : :1.0,1.5,1.51,2.0,2.1,4.0,4.1,4.2,5.0,6.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

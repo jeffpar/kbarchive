@@ -1,0 +1,94 @@
+---
+layout: page
+title: "Q107355: PC Win: Custom Message Class Not Maintained Through Gateway"
+permalink: kb/107/Q107355/
+---
+
+## Q107355: PC Win: Custom Message Class Not Maintained Through Gateway
+
+	Article: Q107355
+	Product(s): Microsoft Mail For PC Networks
+	Version(s): WINDOWS:3.0,3.0b,3.2
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 31-OCT-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Mail for Windows, versions 3.0, 3.0b, 3.2 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you read a custom message that was sent via a gateway in version 3.0, 3.0b,
+	or 3.2 of Microsoft Mail for Windows, the custom message class may not be
+	preserved and the message will display in standard note form. This problem can
+	occur when a message of a custom message class is sent through a
+	nonencapsulating gateway.
+	
+	CAUSE
+	=====
+	
+	Custom message classes that are defined without a text map are not preserved
+	when they are sent through nonencapsulating gateways. The message will arrive
+	with the custom message type incorrectly reset to:
+	
+	  IPM.Microsoft Mail.Note
+	
+	This problem can occur when mail is sent in one of the following scenarios:
+	
+	1. A custom message type is sent from a user running on one type of mail system
+	  through a nonencapsulating gateway to a user on a different type of mail
+	  system (for example, Mail for PC Networks to MCI Mail).
+	
+	2. A custom message type is sent from a user on a specific mail system to a user
+	  on the same kind of mail system through a foreign mail system whose gateways
+	  do not support encapsulation (for example, Mail for PC Networks through MCI
+	  Mail to Mail for PC Networks).
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in versions 3.0, 3.0b, and 3.2 of
+	Microsoft Mail for Windows. This problem was corrected in MSSFS.DLL, version
+	3.2.0.4079. If you do not have version 3.2.0.4079 (or later), you can download
+	MSSFS.EXE, a self-extracting file, on the following services:
+	
+	- Microsoft's World Wide Web Site on the Internet
+	
+	  On the www.microsoft.com home page, click the Support icon.
+	  Click Knowledge Base, and select the product.
+	  Enter kbfile MSSFS.EXE, and click GO!
+	  Open the article, and click the button to download the file.
+	
+	- Internet (anonymous FTP)
+	
+	  ftp ftp.microsoft.com
+	  Change to the Softlib/Mslfiles folder.
+	  Get MSSFS.EXE
+	
+	- The Microsoft Network
+	
+	  On the Edit menu, click Go To, and then click Other Location.
+	  Type "mssupport" (without the quotation marks).
+	  Double-click the MS Software Library icon.
+	  Find the appropriate product area.
+	  Locate and Download MSSFS.EXE.
+	
+	
+	For additional information about downloading, please see the following article in
+	the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Additional query words: 3.00 3.00b 3.20
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMailSearch kbZNotKeyword3 kbMail300 kbMail320 kbMail300b
+	Version           : WINDOWS:3.0,3.0b,3.2
+	
+	=============================================================================
+	

@@ -1,0 +1,164 @@
+---
+layout: page
+title: "Q161492: INFO: LU Session Activation Using Dynamically Defined Dependent"
+permalink: kb/161/Q161492/
+---
+
+## Q161492: INFO: LU Session Activation Using Dynamically Defined Dependent
+
+	Article: Q161492
+	Product(s): Microsoft SNA Server
+	Version(s): WINDOWS:2.0,2.1,2.11,3.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 12-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 2.0, 2.1, 2.11, 3.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	SNA Server 2.11 and later versions support the VTAM V4 feature referred to as
+	"Dynamically Defined Dependent LUs" (DDDLU). The host support of DDDLU is
+	indicated in the ACTPU sent to SNA Server. Upon receiving a request for a 3270
+	session, SNA Server will request that the host activate a LU for this session.
+	The Host PU definition defines support for DDDLU by the use of the LUGROUP and
+	LUSEED parameters, there will be no LUs defined in the PU definition. The SNA
+	Server configuration, though, must have the LUs defined, although they will be
+	displayed as inactive until a client requests a session.
+	
+	NOTE: For information about DDDLU support in VTAM, please refer to the following
+	reference:
+	
+	  VTAM Network Implementation Guide, V4R1 for MVS/ESA, IBM document number
+	  SC31-6419-00
+	
+	For information about the format of these messages, please refer to the following
+	document:
+	
+	  IBM SNA Formats Guide, IBM document number GA27-3136-14
+	
+	MORE INFORMATION
+	================
+	
+	The Host indicates support of DDDLU in the PU Capabilities (x'80') ACTPU Control
+	Vector (byte 9 in the ACTPU ru) by setting the first bit of the third byte of to
+	1.
+	
+	  DLC    ---------------------------------------------- 15:57:44.82
+	  DLC    04160000->01020201 DLC DATA
+	  DLC                       DAF:00 OAF:00 ODAI:off Exp.
+	  DLC                       ACTPU  RQD SC  FI BC EC DR1
+	  DLC
+	  DLC    ---- Header  at address 012D4828, 1 elements ----
+	  DLC    00434F4D 4E4F2D00 000000FA 0100F200     <.COMNO-.......2.>
+	  DLC
+	  DLC    ---- Element at address 017CE59C, start 10, end 24 ----
+	  DLC    6B800011 12010500 00000001 800180       <k.............. >
+	                                                               ^^^^^^ PU
+	
+	Capabilities Control Vector
+	
+	  Byte 0   Vector Key = x'80'
+	  Byte 1   Vector length
+	  Byte 2   bit 0 Unsolicited NMVT support:
+	       0 Sending node does not support unsolicited NMVTs for PSID.
+	       1 Sending node does support unsolicited NMVTs for PSID.
+	  Bit  1-7  Reserved
+	
+	When using DDDLU, SNA Server will only receive an ACTPU from the Host. No ACTLUs
+	will flow until a session is requested (unless the PU definition has static LUs
+	defined in addition to the dynamic). When SNA Server receives an OpenSSCP
+	request for a 3270 display session, it will send a NMVT request to the Host.
+	This NMVT request will cause an ACTLU to be sent to the SNA Server, allowing it
+	to satisfy the request for a session.
+	
+	  DLC    01020201->04160000 DLC DATA
+	  DLC                       DAF:00 OAF:00 ODAI:off Normal
+	  DLC                       NMVT   RQD FMD FI BC EC DR1
+	  DLC
+	  DLC    ---- Header  at address 012D4758, 1 elements ----
+	  DLC    0102000C 10112C00 00000000 0100DE00     <......,.........>
+	  DLC
+	  DLC    ---- Element at address 017CE59C, start 10, end 83 ----
+	  DLC    0B800041 038D0000 00001000 3F00900A     <...A........?...>
+	  DLC    04010000 00000000 070D8205 10F0F0F0     <..........b..000>
+	  DLC    03200103 30021910 00161109 130012F0     <. ..0..........0>
+	  DLC    F0F0F0F0 F0F2F0F0 F0F0F0F0 F0F0F00B     <000002000000000.>
+	  DLC    01091060 0C0A1000 1928                  <...`.....(      >
+	
+	NMVT Request
+	
+	  0B8000   RH
+	  41038D   Header
+	  0000  Retired
+	  0000  PRID
+	  10 0    unsolicited NMVT
+	     00   only NMVT for this PRID
+	     1    MS major vector contains SNA address list
+	     0000 resrv
+	  ========MS Major vector=======
+	  003F  length
+	  0090  Reply Product set ID <<<
+	  ______________________________
+	     0A           length
+	     04           SNA Address List <<<
+	     0100000000000007  local address= LU# we want an ACTLU for
+	  ______________________________
+	     0D length
+	     82 Port-Attached Device Config Description <<<
+	        ------------------------------
+	        05 length
+	        10 Port Number <<<
+	        F0F0F0   number of the port
+	        ------------------------------
+	        03 length
+	        20 Power On Status <<<
+	        01 device is currently powered on
+	        ------------------------------
+	        03 length
+	        30 Power-on Since Last Solicitation <<<
+	        02 device was not powered on
+	  ______________________________
+	     19 length
+	     10 Product Set ID <<<
+	     00 retired
+	        ------------------------------
+	        16 length
+	        11 Product ID <<<
+	        09 0000 resv
+	           1001 non-ibm hardware
+	           ------------------------------
+	           13 length
+	           00 Hardware Product ID <<<
+	           12 product instance is identified by serial number
+	           F0F0F0F0 machine type
+	           F0F0F2      machine model number
+	           F0F0     plant of manufacture
+	           F0F0F0F0F0F0F0 sequence number
+	           ------------------------------
+	           0B    length
+	           01    Emulator Product ID <<<
+	           0910600C machine type of product being emulated
+	           0A10001928  Model number product being emulated
+	
+	<<< denotes vector
+	
+	For more details on NMVT requests & Major vectors, please refer to the IBM
+	SNA Formats Guide. The documentation of the PU Capabilities Control Vector was
+	added to the Fifteenth Edition of the SNA Formats Guide (GA27-3136-14).
+	
+	Additional query words: LU2 node ddlu
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ200 kbSNAServ211 kbSNAServ210
+	Version           : WINDOWS:2.0,2.1,2.11,3.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

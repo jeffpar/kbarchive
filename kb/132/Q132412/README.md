@@ -1,0 +1,153 @@
+---
+layout: page
+title: "Q132412: PC Gen: Microsoft Mail 3.5 Upgrade Information"
+permalink: kb/132/Q132412/
+---
+
+## Q132412: PC Gen: Microsoft Mail 3.5 Upgrade Information
+
+	Article: Q132412
+	Product(s): Microsoft Mail For PC Networks
+	Version(s): WINDOWS:3.5
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 28-OCT-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Mail for PC Networks, version 3.5 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Version 3.5 of Microsoft Mail for PC Networks update includes a roll-up of bug
+	fixes from 3.2a server and client software, several new utilities, new
+	supplemental modem scripts, Electronic Forms Designer, an updated AT&T
+	Gateway (U.S. only), and the Mail Multitasking MTA for Windows NT (NTMMTA).
+	
+	Included utilities
+	------------------
+	
+	- Dir-Sync utilities: LISTDS.EXE
+	
+	  LISTQ.EXE
+	  DSSCHED.EXE
+	
+	- PAB tools: PABCKH.DLL
+	
+	  PABLIST.DLL
+	
+	- PODIAG.EXE
+	
+	- MMFCLEAN.EXE
+	
+	- Electronic Forms Designer
+	
+	Below is the list of modems that have been tested and found compatible with
+	Microsoft Mail.
+	
+	U.S. Modem Script Files
+	-----------------------
+	
+	Null Modem                      NULMODM.SCR
+	Hayes Smartmodem 1200           USHAYS12.SCR
+	Hayes Smartmodem 2400           USHAYS24.SCR
+	Hayes V-series Smart 9600       USVSER96.SCR
+	Hayes V-series Ultra 9600       USULTR96.SCR
+	Hayes V42 Smartmodem Series     USVS4296.SCR
+	IBM 5853 2400bps modem          USIBM524.SCR
+	Microcom AX Series modems       USMRCM96.SCR
+	Multitech MultiMdm 224E/V32     USMLTC96.SCR
+	Telebit TrailBlazer 9600bps     USTLBT96.SCR
+	                               V42SERIE.SCR
+	
+	The following new scripts are located on the Supplementary Scripts disk:
+	
+	Hayes-High Speed Modems         USHAYSHS.SCR
+	(9600-28.8)
+	US-Practical Periph. 9.6-28.8    USPPIHS.SCR
+	US-USRobotics 9.6-28.8 Modems   USUSRHS.SCR
+	
+	Modem Script Files for France
+	-----------------------------
+	
+	Andrsn/Jacbsn 9634 @2400b       FRANJA96.SCR
+	Compaq Internal 2400bps         FRCMPQ24.SCR
+	Kortex 1200bps modems           FRKRTX12.SCR
+	Kortex 2400bps modems           FRKRTX24.SCR
+	PNB Amazone 2400bps             FRPNBA24.SCR
+	PNB Niagara 2400bps             FRPNBN24.SCR
+	PNB Amazone Pocket 2400b        FRPNBP24.SCR
+	Quadri Campouce 2400bps         FRCAMP24.SCR
+	Quattro TM2496 2400bps          FRQUAT24.SCR
+	USRobotics Courier HST          USRCRHST.SCR
+	USRobotics XCourier V32          USRCRV32.SCR
+	
+	Modem Script Files for Central Europe
+	-------------------------------------
+	
+	Digitec ALF 2400 II             GEALF24.SCR
+	Digitec ALF 2400 MNP            GEALFM24.SCR
+	Digitec Dialog 2400             GEDILG24.SCR
+	Digitec Dialog 2400 MNP         GEDLGM24.SCR
+	Digitec Dialog 2400 Pro.        GEDLGP24.SCR
+	Digitec Personal Line 2400      GEDIGP24.SCR
+	Digitec Prs. Line 2400 MNP      GEDIGM24.SCR
+	Fury 2402 TI 2400bps            GEFURY24.SCR
+	Longshine Shine 2400            GESHIN24.SCR
+	MicroLink 2410T2 2400bps        GEMCLK24.SCR
+	MicroLink 9624T2V 2400bps       GEML9624.SCR
+	Toshiba Laptop int. 2400        GETOSH24.SCR
+	
+	Modem Script Files for Sweden
+	-----------------------------
+	
+	DiCom 9600 V42 Modem            SWDICM96.SCR
+	Motorola Codex-series 9600      SWMCDX96.SCR
+	Multitech MultiModem V32        SWMTMM96.SCR
+	USRobotics HST Courier V32      SWUSRHST.SCR
+	
+	Modem Script Files for the U.K.
+	-------------------------------
+	
+	BT NS 2232B 9600bps             UKBTNS96.SCR
+	Dowty Mayze & Quattro 96        UKMAZQAT.SCR
+	Hayes 2400bps modems            UKHAYS24.SCR
+	Hayes Ultra & VSeries           UKULTRAV.SCR
+	Miracom V32 & Courier HST       UKMRCMCR.SCR
+	Quattro 2400bps modem           UKQUAT24.SCR
+	
+	The six script files support the sets of 13 modems below:
+	
+	- The British Telecomm NS 2322B modem.
+	
+	- The Dowty set of modems including Quattro24, Mayze 24, Mayze 96 and Quattro
+	  96.
+	
+	- The Hayes and Ultra set of modems including Ultra 96, V series 9600, V series
+	  2400 and the Hayes 24 Smartmodem.
+	
+	- The Miracom (U.S. Robotics) set of modems including V.32, Courier HST and
+	  Dual Standard.
+	
+	NOTE: Microsoft Product Support Services will answer questions only on modems
+	that have been tested at Microsoft and are included in either the above list or
+	the Setup program.
+	
+	MORE INFORMATION
+	================
+	
+	The Mail version 3.5 upgrade is available by calling Inside Sales. Windows
+	client file versions are 3.5.2000.4086 and server executables are version 3.5.
+	
+	Additional query words: 3.50
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN350
+	Version           : WINDOWS:3.5
+	
+	=============================================================================
+	

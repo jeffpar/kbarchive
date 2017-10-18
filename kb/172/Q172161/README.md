@@ -1,0 +1,89 @@
+---
+layout: page
+title: "Q172161: HOWTO: Determining the Number of Colors Available on a Mac"
+permalink: kb/172/Q172161/
+---
+
+## Q172161: HOWTO: Determining the Number of Colors Available on a Mac
+
+	Article: Q172161
+	Product(s): Microsoft FoxPro
+	Version(s): MACINTOSH:2.5b,2.5c,2.6a,3.0
+	Operating System(s): 
+	Keyword(s): kbcode kbHWMAC kbvfp
+	Last Modified: 02-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft FoxPro for Macintosh, versions 2.5b, 2.5c, 2.6a 
+	- Microsoft Visual FoxPro for Macintosh, Professional Edition, version 3.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The FxGDepth() function in FoxTools returns the number of colors currently in
+	use on a monitor from within FoxPro 2.6a for Macintosh or Visual FoxPro 3.0b for
+	the Macintosh.
+	
+	MORE INFORMATION
+	================
+	
+	The code example below returns the version of FoxPro currently executing, load
+	the appropriate version of FoxTools and ascertains the number of colors
+	currently in use on the screen. Since FoxPro 2.6a places the FoxTools.mlb file
+	in the System/Extension folder, the path needs to be customized for each
+	individual machine to correctly identify the proper hard drive name and
+	folders:
+	
+	     ****Begin Code Example****
+	     IF ATC("Visual",Version())>0
+	        SET LIBRARY TO HOME()+"FoxTools.cfm"
+	     Else
+	        SET LIBRARY TO SYS(2033,1)+":FoxTools.mlb"
+	     ENDIF
+	     nvideocolors=FxGDepth()
+	     IF nvideocolors >0
+	        WAIT WINDOW "Your Monitor is running "+ALLTRIM(STR(nvideocolors)) ;
+	        + "colors"
+	     ELSE
+	        WAIT WINDOW "Your monitor is running millions of colors"
+	     ENDIF
+	     ****End Code Example****
+	
+	The FxGDepth() function returns an integer indicating the number of colors
+	currently running on the monitor. However, setting the monitor to millions of
+	colors causes the FxGDepth() function to return 0. To change the number of
+	colors the monitor uses, in the Apple menu, choose Control Panels and then
+	Monitors.
+	
+	This information can be used to warn users of potential memory problems. If the
+	machine uses millions of colors and it also has limited RAM, FoxPro 2.x or
+	Visual FoxPro may have difficulty running successfully. To determine the amount
+	of RAM on a Macintosh machine from within Visual FoxPro, use the FxGestalt()
+	function.
+	
+	Please note that the FxGestalt() function is available only with FoxTools.cfm
+	shipped with Visual FoxPro for the Macintosh 3.0b.
+	
+	REFERENCES
+	==========
+	
+	FoxTools Help file
+	
+	For additional information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q170814 Determining the Amount of Physical RAM on a Mac from VFP
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbcode kbHWMAC kbvfp 
+	Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro250bMac kbFoxPro260aMac kbFoxPro250cMac kbVFP300Mac
+	Version           : MACINTOSH:2.5b,2.5c,2.6a,3.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

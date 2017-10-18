@@ -1,0 +1,81 @@
+---
+layout: page
+title: "Q154320: BUG: AfxOleInit Returns TRUE Without Initializing OLE in a DLL"
+permalink: kb/154/Q154320/
+---
+
+## Q154320: BUG: AfxOleInit Returns TRUE Without Initializing OLE in a DLL
+
+	Article: Q154320
+	Product(s): Microsoft C Compiler
+	Version(s): winnt:4.2,5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbole kbdocfix kbCOMt kbDLL kbMFC kbVC420bug kbDSupport kbGrpDSMFCATL
+	Last Modified: 03-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The Microsoft Foundation Classes (MFC), used with:
+	   - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+	   - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+	   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+	   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+	   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+	   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+	   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you develop a Microsoft Foundation Classes (MFC) regular dynamic link
+	library (DLL), you may want to use object linking and embedding (OLE) without
+	exposing an OLE object, such as displaying a dialog box from within the DLL that
+	contains an OLE control. A failure may occur when you call the DoModal function
+	in the dialog box creation if you used the AfxOleInit or
+	AfxEnableControlContainer function to initialize OLE within the DLL. Typically,
+	this is done by calling the functions in the InitInstance method of the CWinApp
+	derived class.
+	
+	CAUSE
+	=====
+	
+	In a MFC regular DLL, AfxOleInit does not initialize OLE because MFC cannot
+	uninitialize OLE in the DLL_PROCESS_DETACH method of the ExitInstance function.
+	In this case, OLE may already have been unloaded. The decision to not initialize
+	OLE is by design. The bug is that AfxOleInit returns TRUE after setting
+	m_bNeedTerm to -1. According to the Visual C++ documentation, when AfxOleInit
+	returns TRUE this means that OLE was initialized, and that is not the case in a
+	DLL.
+	
+	RESOLUTION
+	==========
+	
+	In order to uninitialize OLE when it is initialized in the DLL, this requires
+	exported methods for initialization and uninitialization that the client has to
+	call because the uninitialization has to occur before the CWinApp::ExitInstance
+	function, which is a part of DLL_PROCESS_DETACH.
+	
+	A better solution is to initialize and uninitialize OLE in the client
+	application. This can be done in MFC by calling AfxOleInit in the application's
+	InitInstance method of the CWinApp derived class. MFC then uninitializes OLE by
+	exiting the application.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the documentation in the Microsoft
+	products listed at the beginning of this article.
+	
+	Additional query words: 0x800401f0 CreateDlgControls Dialog creation
+	
+	======================================================================
+	Keywords          : kbole kbdocfix kbCOMt kbDLL kbMFC kbVC420bug kbDSupport kbGrpDSMFCATL 
+	Technology        : kbAudDeveloper kbMFC
+	Version           : winnt:4.2,5.0,6.0
+	Issue type        : kbbug
+	Solution Type     : kbnofix
+	
+	=============================================================================
+	

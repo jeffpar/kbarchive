@@ -1,0 +1,95 @@
+---
+layout: page
+title: "Q281312: NetUserGetGroups Gives a 1722 Error With Multiple Providers"
+permalink: kb/281/Q281312/
+---
+
+## Q281312: NetUserGetGroups Gives a 1722 Error With Multiple Providers
+
+	Article: Q281312
+	Product(s): Microsoft Windows NT
+	Version(s): 4.0,4.0 SP6,4.0 SP6a
+	Operating System(s): 
+	Keyword(s): kbenv kberrmsg kbtool kbWinNT400PreSP7Fix
+	Last Modified: 08-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server versions 4.0, 4.0 SP6, 4.0 SP6a 
+	- Microsoft Windows NT Workstation versions 4.0, 4.0 SP6a 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you try to list the groups a user belongs to by using
+	NetUserGetLocalGroups, it may not work, and may generate a 1722 error. A service
+	that is running under a local-user context (for example, a local account on a
+	Windows NT Workstation-based computer) may call NetUserGetLocalGroups to list
+	groups a domain user belongs to. If this user has a local group that contains a
+	global group from a trusted domain, the Application Programming Interface (API)
+	does not work when multiple network providers are installed on the computer.
+	
+	CAUSE
+	=====
+	
+	The user-mode API tries to connect to the domain controller (DC) from the
+	trusted domain whose global group is stored in the user's local group. This
+	connection does not work, and generates a STATUS_LOGON_FAILURE. The API then
+	connects by using a null account. The problem happens when multiple providers
+	(redirectors) are installed. The STATUS_LOGON_FAILURE error becomes masked
+	(overwritten) by the error that is received by the next provider,
+	STATUS_BAD_NETWORK_NAME. The error code with the highest precedence is returned
+	to the API. Under these conditions, because both of these error codes were
+	unlisted, the last one is passed on to the API.
+	
+	RESOLUTION
+	==========
+	
+	A supported fix is now available from Microsoft, but it is only intended to
+	correct the problem described in this article and should be applied only to
+	systems experiencing this specific problem.
+	
+	To resolve this problem, contact Microsoft Product Support Services to obtain the
+	fix. For a complete list of Microsoft Product Support Services phone numbers and
+	information on support costs, please go to the following address on the World
+	Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	NOTE: In special cases, charges that are normally incurred for support calls may
+	be canceled, if a Microsoft Support Professional determines that a specific
+	update will resolve your problem. Normal support costs will apply to additional
+	support questions and issues that do not qualify for the specific update in
+	question.
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	  Date        Time              Size     File name     Platform
+	  -------------------------------------------------------------
+	  12/07/2000  03:02p            80,848   Mup.sys       i386
+	  12/07/2000  03:00p            142,800  Mup.sys       Alpha
+	
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products that are
+	listed at the beginning of this article.
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbenv kberrmsg kbtool kbWinNT400PreSP7Fix 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400sp6 kbWinNTS400search kbWinNTS400 kbWinNTW400SP6a
+	Version           : :4.0,4.0 SP6,4.0 SP6a
+	Hardware          : ALPHA x86
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

@@ -1,0 +1,117 @@
+---
+layout: page
+title: "Q291585: HOWTO: Create Debug Symbols for a Visual C++ Application"
+permalink: kb/291/Q291585/
+---
+
+## Q291585: HOWTO: Create Debug Symbols for a Visual C++ Application
+
+	Article: Q291585
+	Product(s): Microsoft C Compiler
+	Version(s): 6.0
+	Operating System(s): 
+	Keyword(s): kbDebug kbWinDNA kbGrpDSSIE kbDSupport kbSymbols
+	Last Modified: 26-JUL-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+	- Microsoft Visual C++.NET (2002) 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	You may have to create debug symbols that can be used when you debug dump files
+	or perform live debugging by using the Microsoft Debugging Tools. To download
+	these tools, visit the following Microsoft Web site:
+	
+	  http://www.microsoft.com/ddk/debugging
+	
+	Debug symbols are data that let the debugger know about source and line
+	information, variables used in your application, and data type information for
+	your program.
+	
+	This article describes how to create symbol files, specifically .pdb files, when
+	you build your Visual C++ applications. When you work with Microsoft Product
+	Support Services, you may be asked to provide these files to help the Support
+	Professional who is assisting you to determine the cause of a problem that you
+	are experiencing. For this reason, it may be a good practice to build symbol
+	files with each specific released version of your application. This article
+	assumes that the reader is familiar with building applications by using
+	Microsoft Visual C++.
+	
+	MORE INFORMATION
+	================
+	
+	To create symbols for your application in the Visual C++ .NET development
+	environment:
+	
+	1. In Solution Explorer, right-click the project that you want to modify, and
+	  then click Properties.
+	
+	2. In the Configuration Properties window, click the C/C++ folder, and then
+	  click General.
+	
+	3. In the Debug Information Format drop-down list, click to select Program
+	  Database (/Zi).
+	
+	4. If you want to be able to have information about local variables when you
+	  debug dump files or perform live debugging, click to select Disabled (/Od) in
+	  the Optimization drop-down list.
+	
+	5. In the Linker folder in the Configuration Properties window, make sure that
+	  the Debug subcategory has the Generate Debug Info property set to Yes
+	  (/DEBUG).
+	
+	NOTE: Although it is not mandatory that you also enable Generate Map File in the
+	same subcategory, this option creates a .map file that may be useful in
+	determining where a failure occurred when you only have the address at which the
+	access violation occurred. For more information, see the "References" section.
+	To create symbols for your application in the Visual C++ 6.0 development
+	environment:
+	
+	1. On the Project menu, select Settings.
+	
+	2. On the C/C++ tab, change Category to General.
+	
+	3. In the Debug Info drop-down list, select Program Database.
+	
+	NOTE: If you want to be able to have information about local variables when you
+	debug dump files or perform live debugging, you should also select Disable
+	(Debug) from the Optimizations drop-down list.
+	
+	4. On the Link tab, change Category to Debug.
+	
+	5. In the Debug Info section, make sure the Debug Info option is selected, and
+	  then select Both Formats.
+	
+	NOTE: Although it is not mandatory that you also enable Generate Mapfile in the
+	General category on the Link tab, this option creates a .map file that may be
+	useful in determining where a failure occurred when you only have the address at
+	which the access violation occurred. (See "References" for more information.)
+	When you compile the symbols for production computers, you should compile in the
+	Release mode. The steps that are provided in this article apply to compiling the
+	application in both Debug mode and Release mode. After you have completed the
+	steps, when you recompile the application you will have .pdb files in either the
+	\Debug or \Release directory of your project, depending on your build
+	configuration.
+	
+	REFERENCES
+	==========
+	
+	Debugging Applications by John Robbins, from Microsoft Press:
+	
+	  http://mspress.microsoft.com/books/4023.htm
+	
+	Additional query words: PDB
+	
+	======================================================================
+	Keywords          : kbDebug kbWinDNA kbGrpDSSIE kbDSupport kbSymbols 
+	Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch
+	Version           : :6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

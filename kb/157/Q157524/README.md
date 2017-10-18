@@ -1,0 +1,83 @@
+---
+layout: page
+title: "Q157524: PRB: Intellidrop Causes Multiple Logins with Remote View"
+permalink: kb/157/Q157524/
+---
+
+## Q157524: PRB: Intellidrop Causes Multiple Logins with Remote View
+
+	Article: Q157524
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbvfp500 kbvfp600
+	Last Modified: 11-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Each time you drag and drop a field from a Remote View to a Form or Report, the
+	server Login dialog box is invoked.
+	
+	CAUSE
+	=====
+	
+	The server login information for the remote view is not cached; it is
+	dynamically retrieved as needed.
+	
+	WORKAROUND
+	==========
+	
+	If the Remote View is based on datasource, issue the USE command to open the
+	Remote View first. Then when you drag and drop fields, Intellidrop can get the
+	information from the opened view.
+	
+	-or-
+	
+	Create the Remote View based on a Connection instead of a datasource. Then when
+	you drag and drop fields, Intellidrop can get the login information from the
+	connection and does not prompt for the server login again.
+	
+	STATUS
+	======
+	
+	This behavior is by design.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Create a database.
+	
+	2. Create a Remote View in the database.
+	
+	3. Create a form.
+	
+	4. Add the previously created Remote View to the DataEnvironment of the new
+	  form.
+	
+	5. Drag a field from the Remote View in the DataEnvironment to the form.
+	
+	6. Drag another field to the form.
+	
+	When the first field is dragged to the form, the server login dialog box appears.
+	When the second field is dragged on to the form, the server login dialog box
+	comes up again.
+	
+	Additional query words: kbdse VFoxWin
+	
+	======================================================================
+	Keywords          : kbvfp500 kbvfp600 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600
+	Version           : WINDOWS:5.0,6.0
+	
+	=============================================================================
+	

@@ -1,0 +1,474 @@
+---
+layout: page
+title: "Q318918: Writing Secure Code Comments And Corrections"
+permalink: kb/318/Q318918/
+---
+
+## Q318918: Writing Secure Code Comments And Corrections
+
+	Article: Q318918
+	Product(s): Microsoft Press
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbdocfix kbdocerr
+	Last Modified: 13-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- MSPRESS Writing Secure Code ISBN 0-7356-1588-8 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article contains comments, corrections, and information about known errors
+	relating to the Microsoft Press book Writing Secure Code, ISBN 0-7356-1588-8.
+	
+	The following topics are covered:
+	
+	- Page 66: Error In Code Sample
+	
+	- Page 91: Error In Code Sample
+	
+	- Page 107: Error In Code Sample
+	
+	- Pages 144 And 146: Error In Code Samples
+	
+	- Page 166: Incorrect Content
+	
+	- Page 166: Error In Code Sample
+	
+	- Page 179: Error In Note
+	
+	- Page 179: Incorrect Content In Note
+	
+	- Page 218: Incorrect Content
+	
+	- Page 243: Error In Code Sample
+	
+	- Page 263: Error In Code Sample
+	
+	- Page 267: NLTM Should Be NTLM
+	
+	- Page 283: Incorrect Overall Chances Statement
+	
+	- Page 315: Incorrect Content In "Important" Box
+	
+	- Page 323: Incorrect Content
+	
+	- Page 327: Error In Code Sample
+	
+	- Page 327: Error In Code Sample
+	
+	- Page 329: Error In Code Sample
+	
+	- Page 345: Missing Statement
+	
+	- Page 365: Missing F In Code Sample
+	
+	- Page 385: Process.exe Should Be Program.exe
+	
+	- Page 394: Error In First Paragraph
+	
+	- Page 405: Error In Code Sample
+	
+	- Page 424: 2 Should Be 3
+	
+	- Page 425: Missing Content Regarding FILE_ATTRIBUTE_NOT_CONTENT_INDEXED
+	
+	- Page 433: Incorrect Statement About *cpy API's
+	
+	MORE INFORMATION
+	================
+	
+	Page 66: Error In Code Sample
+	-----------------------------
+	
+	There is an error in the code at the top of page 66. Change:
+	
+	  "{ 
+	              //Blatant ?..
+	              Printf(? ??.
+	              Printf(? ?..
+	              Foo(argv[1]);
+	              Return 0;
+	  }"
+	
+	To:
+	
+	  "{ 
+	  	if (argc != 2)
+	  	{
+	  	printf("Please supply a string as an argument!\n");
+	  	return -1;
+	  	}
+	
+	  	//Blatant ?..
+	  	Printf(? ??.
+	  	Printf(? ?..
+	  	Foo(argv[1]);
+	  	Return 0;
+	  }"
+	
+	
+	Page 91: Error In Code Sample
+	-----------------------------
+	
+	There is an error in the code sample on page 91. Change:
+	
+	  "BYTE *pbBuff = new BYTE[cbBuff]; 
+	  // Now read cbBuff bytes of data. 
+	  if (pbBuff && RegQueryValueEx(...) == ERROR_SUCCESS) { 
+	      // Cool! 
+	      // We have read the data from the registry. 
+	
+	  delete [] pbBuff; 
+	  }"
+	
+	To:
+	
+	  "BYTE *pbBuff = new BYTE[cbBuff]; 
+	  // Now read cbBuff bytes of data. 
+	  if (pbBuff && RegQueryValueEx(...) == ERROR_SUCCESS) { 
+	      // Cool! 
+	      // We have read the data from the registry. 
+	
+	      //Use Data
+	
+	  }
+	
+	  delete [] pbBuff;"
+	
+	
+	Page 107: Error In Code Sample
+	------------------------------
+	
+	There is an error in the code on page 107. Change:
+	
+	  "CSid sidAdmin("BUILTIN\\Administrators");
+	  CSid sidGuests("Guests");"
+	
+	To:
+	
+	  "CSid sidAdmin = Sids::Admins();
+	  CSid sidGuests = Sids::Guests();"
+	
+	
+	Pages 144 And 146: Error In Code Samples
+	----------------------------------------
+	
+	Each of these code samples request TOKEN_ADJUST_DEFAULT. This is only needed if
+	you are to change the owner, primary group, or default DACL on the token via
+	SetTokenInformation. Please disregard this request.
+	
+	
+	Page 166: Incorrect Content
+	---------------------------
+	
+	There is an error at the top of page 166. Change:
+	
+	"A Mathematical Theory of Computation"
+	
+	To:
+	"A Mathematical Theory of Communication"
+	
+	
+	Page 166: Error In Code Sample
+	------------------------------
+	
+	The code sample on page 166 does not check for negative numbers. Change:
+	
+	  "Function EntropyBits(iNumValidValues, iPwdSize)
+	  	EntropyBits = Log(iNumValidValues ^ iPwdSize) / Log(2)
+	  End Function"
+	
+	To:
+	
+	  "Function EntropyBits(iNumValidValues, iPwdSize)
+	  	If iNumValidValues <= 0 Then
+	  		EntropyBits = 0
+	  	Else
+	  		EntropyBits = iPwdSize * log(iNumValidValues) / Log(2)
+	  	End If
+	  End Function"
+	
+	
+	Page 179: Error In Note
+	-----------------------
+	
+	There is an error on the second line of the note on page 179. Change:
+	"...regardless of encryption algorithm,"
+	
+	To:
+	"...regardless of symmetric encryption algorithm,"
+	
+	
+	Page 179: Incorrect Content In Note
+	-----------------------------------
+	
+	There is an error in the Note box on page 179. Change:
+	
+	"you should never use the same key to encrypt data regardless of encryption
+	algorithm,"
+	
+	To:
+	"you should never use the same key to encrypt data regardless of symmetric
+	encryption algorithm,"
+	
+	
+	Page 218: Incorrect Content
+	---------------------------
+	
+	The first two paragraphs on page 218 need to be changed to:
+	
+	"For example, /tmp/frodo, a symlink in the temporary directory, might point to
+	the Unix password file /etc/passwd or to some other sensitive file.
+	
+	On startup, Sun's StarOffice creates an object named /tmp/soffice.tmp which
+	allows anyone to do anything with it. In Unix parlance, the access mask is 0777,
+	which is just as bad as Everyone (Full Control). An attacker can create a
+	symlink from /tmp/soffice.tmp to a user's file. When that user then runs
+	StarOffice, StarOffice blindly changes the permission settings on that file
+	(because setting permissions on a symlink sets the permissions of the target, if
+	the process has permission to make that change). Once this is done, the attacker
+	can read the file.
+	
+	If the attacker linked /tmp/soffice.tmp to /etc/passwd and someone ran StarOffice
+	as the Unix administrator, then the permissions on /etc/passwd would get
+	changed."
+	
+	
+	Page 243: Error In Code Sample
+	------------------------------
+	
+	There is an error in the code sample on page 243. Change:
+	
+	  "
+	  printf("Cannot set SO_REUSEADDR - err = %d\n",
+	  "
+	
+	To:
+	
+	  "
+	  printf("Cannot set SO_EXCLUSIVEADDRUSE - err = %d\n",
+	  "
+	
+	
+	Page 263: Error In Code Sample
+	------------------------------
+	
+	There is an error in the second code sample on page 263. Change:
+	
+	  "[size_is(lo, hi) char **ppData);"
+	
+	To:
+	
+	  "[size_is(lo, hi)] char **ppData);"
+	
+	
+	Page 267: NLTM Should Be NTLM
+	-----------------------------
+	
+	On page 267, in the 4th line in the Kerberos Support section, change:
+	"...and NLTM authenticates..."
+	
+	To:
+	"...and NTLM authenticates..."
+	
+	
+	Page 283: Incorrect Overall Chances Statement
+	---------------------------------------------
+	
+	On page 283, in line 12, change:
+	"...is given by (0.9999)^3000, which is approximately..."
+	
+	To:
+	"...is given by (1-0.9999)^3000, which is approximately..."
+	
+	
+	Page 315: Incorrect Content In "Important" Box
+	----------------------------------------------
+	
+	There is an error in the Important box on page 315. Change:
+	
+	"otherwise, it checks the first line only."
+	
+	To:
+	"otherwise, it checks the first line only if ?^? and ?$? is not specified in the
+	regular expression."
+	
+	
+	Page 323: Incorrect Content
+	---------------------------
+	
+	There is an error in the last paragraph on page 323. Change:
+	
+	"11000101 10000011, or 0xC5 0x83?
+	
+	To:
+	?11000010 10100011, or 0xC2 0xA3?
+	
+	
+	Page 327: Error In Code Sample
+	------------------------------
+	
+	There is an error in the code sample on page 327. There is a lower case S which
+	should be capitalized.
+	
+	Change:
+	
+	  printf(?MultiByteToWideChar() returned ? 
+	      ?%s (%d) wide characters\n", 
+	      wszResult, 
+	      iRes);
+	
+	To:
+	
+	  printf(?MultiByteToWideChar() returned ? 
+	      ?%S (%d) wide characters\n", 
+	      wszResult, 
+	      iRes);
+	
+	
+	Page 327: Error In Code Sample
+	------------------------------
+	
+	There is an error in the code sample on page 327. Change:
+	
+	  "%s (%d) wide characters\n","
+	
+	To:
+	
+	  "%S (%d) wide characters\n","
+	
+	
+	Page 329: Error In Code Sample
+	------------------------------
+	
+	There is an error in the code sample on page 329. Change:
+	
+	  "	printf("Usage: HardLink <linkname> <target>\n");
+	  }"
+	
+	To:
+	
+	  "	printf("Usage: HardLink <linkname> <target>\n");
+	  	return;
+	  }"
+	
+	
+	Page 345: Missing Statement
+	---------------------------
+	
+	There is a statement missing from the first paragraph on page 345.
+	
+	Add the following section just above the Note box:
+	
+	"If you must create your own -GS handler, do not throw an exception, and that
+	includes calling DebugBreak, which also throws an exception. This is because the
+	exception address is on the stack and may be overwritten by the vulnerable
+	code."
+	
+	
+	Page 365: Missing F In Code Sample
+	----------------------------------
+	
+	There is an error in the first line of the code sample on page 365.
+	
+	Change:
+	
+	  #define MAX_BUF (128)"
+	
+	To:
+	
+	  #define MAX_BUFF (128)"
+	
+	
+	Page 385: Process.exe Should Be Program.exe
+	-------------------------------------------
+	
+	The second paragraph on page 385 contains an error. Change:
+	"The following simple Perl script creates a file named File.txt which is read by
+	Process.exe."
+	
+	To:
+	"The following simple Perl script creates a file named File.txt which is read by
+	Program.exe."
+	
+	
+	Page 394: Error In First Paragraph
+	----------------------------------
+	
+	There is an error in the first paragraph on page 394. Change:
+	
+	"For example, &{alert('document.cookie');}"
+	
+	To:
+	
+	"For example, &{alert(document.cookie)};"
+	
+	
+	Page 405: Error In Code Sample
+	------------------------------
+	
+	There is an error in the code sample on page 405. Change:
+	
+	  "wprintf(L"Usage is %s [input file], argv[0]);"
+	
+	To:
+	
+	  "wprintf(L"Usage is %s [input file]", argv[0]);"
+	
+	
+	Page 424: 2 Should Be 3
+	-----------------------
+	
+	On page 424, in the statement just above the code sample, change:
+	"...that meet requirements 1 and 2:"
+	
+	To:
+	"...that meet requirements 1 and 3:"
+	
+	
+	Page 425: Missing Content Regarding FILE_ATTRIBUTE_NOT_CONTENT_INDEXED
+	----------------------------------------------------------------------
+	
+	The following text should be added just before or after Table 16-1 on page 425 or
+	426:
+	
+	"Note The FILE_ATTRIBUTE_NOT_CONTENT_INDEXED is ignored by CreateFile. This bit
+	is inherited from current directory, so you should set this option on the
+	directory in which you wish to store the temporary data. Alternatively, you can
+	call SetFileAttributes to set this bit on the file once it is created. The
+	former is recommended as it is safer and faster."
+	
+	
+	Page 433: Incorrect Statement About *cpy API's
+	----------------------------------------------
+	
+	There is an incorrect statement in the *cpy section on page 433. Change:
+	
+	?It?s not guaranteed that these functions will null-terminate the destination
+	buffer"
+	
+	To:
+	?It?s not guaranteed that these functions (except lstrcpyn) will null-terminate
+	the destination buffer"
+	
+	
+	Microsoft Press is committed to providing informative and accurate books. All
+	comments and corrections listed above are ready for inclusion in future
+	printings of this book. If you have a later printing of this book, it may
+	already contain most or all of the above corrections.
+	
+	Additional query words: DEVBOOK 0-7356-1588-8 LEBLANC
+	
+	======================================================================
+	Keywords          : kbdocfix kbdocerr 
+	Technology        : kbMSPressSearch
+	Version           : :
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

@@ -1,0 +1,234 @@
+---
+layout: page
+title: "Q96911: LAYOUTS.WRI from Windows Resource Kit Version 3.1 R-T"
+permalink: kb/096/Q96911/
+---
+
+## Q96911: LAYOUTS.WRI from Windows Resource Kit Version 3.1 R-T
+
+	Article: Q96911
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:3.1
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 27-SEP-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 3.1 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The following information is from the Microsoft Windows Resource Kit version 3.1
+	LAYOUTS.WRI file. This article contains filenames R-T.
+	
+	MORE INFORMATION
+	================
+	
+	The following information is from the Microsoft Windows Resource Kit
+	version 3.1 LAYOUTS.WRI file. This article contains filenames R-T.
+	
+	MORE INFORMATION
+	================
+	
+	Filename     1.44MB 1.2MB 720K 360K Expanded File Description
+	                                     Size
+	----------------------------------------------------------------
+	
+	RAMDRIVE.SYS  4     5     7     3     5873     Microsoft MS-DOS
+	                                              RAMDrive utility
+	README.WRI    3     3     5     5     92928    Windows Readme file
+	RECORDER.DLL  3     3     5     5     10414    Windows Recorder
+	                                              library
+	RECORDER.EXE  3     3     6     6     39152    Windows Recorder
+	                                              application file
+	RECORDER.HLP  4     3     5     5     18200    Windows Recorder Help
+	REDBRICK.BMP  4     3     6     6     630      Redbrick wallpaper
+	REGEDIT.EXE   4     3     7     4     32336    Windows Registration
+	                                              Editor application file
+	REGEDIT.HLP   4     6     5     4     22681    Windows Registration
+	                                              Editor Help
+	REGEDITV.HLP  5     5     8     4     15731    Windows Registration
+	                                              Editor Help
+	RIVETS.BMP    4     4     6     6     630      Rivets wallpaper
+	ROMAN.FON     5     6     A     7     13312    Roman font (all
+	                                              resolutions)
+	SCRIPT.FON    5     6     A     7     12288    Script font (all
+	                                              resolutions)
+	SCRNSAVE.SCR  3     4     6     6     5328     Default screen saver
+	SEIKO_04.WPD  6     7     B     8     4612     Windows PostScript de-
+	                                              scription file for
+	                                              Seiko ColorPoint PS
+	                                              Model 04
+	SEIKO_14.WPD  6     7     B     8     4789     Windows PostScript de-
+	                                              scription file for
+	                                              Seiko ColorPoint PS
+	                                              Model 14
+	SERIFB.FON    5     6     A     7     45536    "MS Serif font 8,10,
+	                                              12,14,18,24 (EGA
+	                                              resolution)"
+	SERIFE.FON    5     6     A     7     57936    "MS Serif font 8,10,
+	                                              12,14,18,24 (VGA
+	                                               resolution)"
+	SERIFF.FON    5     5     7     7     81728    "MS Serif font 8,10,
+	                                              12,14,18,24 (8514/a
+	                                              resolution)"
+	SETUP.EXE     1     1     1     1     421616   Windows Setup ap-
+	                                              plication file
+	SETUP.HLP     1     1     1     1     41335    Windows Setup Help
+	SETUP.INF     1     1     1     1     58842    Windows Setup in-
+	                                              formation file
+	SETUP.INI     3     3     5     2     92       Initialization file for
+	                                              Setup
+	SETUP.REG     5     6     6     3     3508     Registration Database
+	                                              template
+	SETUP.SHH     1     1     1     1     6525     Automated Setup
+	                                              template
+	SETUP.TXT     1     1     1     1     41596    Windows Readme file
+	SF4019.EXE    6     7     B     A     58800    Soft Font installer for
+	                                              IBM Laser Printer 4019
+	SFINST.EXE    6     7     B     A     67360    Soft Font installer for
+	                                              PG 306 Printer
+	SHELL.DLL     4     5     8     4     41600    Windows Shell library
+	SL.DLL        2     2     5     3     15600    Advanced Power
+	                                              Management SL DLL
+	SL.HLP        2     2     5     3     15841    Advanced Power
+	                                              Management SL DLL help
+	SMALLB.FON    5     6     A     7     22016    Small fonts (EGA
+	                                              resolution)
+	SMALLE.FON    5     6     A     7     26112    Small fonts (VGA
+	                                              resolution)
+	SMALLF.FON    5     6     A     7     21504    Small fonts (8514/a
+	                                              resolution)
+	SMARTDRV.EXE  4     5     7     3     43609    Microsoft MS-DOS Smart-
+	                                              Drive disk caching
+	                                              utility
+	SND.CPL       4     6     8     6     8192     Sound Control Panel
+	                                              extension
+	SNDBLST.DRV   3     3     5     5     13808    SoundBlaster 1.5 DSP
+	                                              driver
+	SNDBLST2.DRV  3     3     5     5     14464    SoundBlaster 2.0 DSP
+	                                              driver
+	SOL.EXE       3     4     7     6     180688   Windows Solitare game
+	SOL.HLP       3     5     6     6     13753    Windows Solitare game
+	                                              Help
+	SOUNDREC.EXE  3     4     5     5     51241    Sound Recorder appli-
+	                                              cation file
+	SOUNDREC.HLP  3     3     5     5     17730    Sound Recorder Help
+	SQUARES.BMP   4     6     6     6     630      Squares wallpaper
+	SSERIFB.FON   5     6     6     7     50608    "MS Sans Serif font 8,
+	                                              10,12,14,18,24 (EGA
+	                                              resolution)"
+	SSERIFE.FON   5     5     A     7     64544    "MS Sans Serif font 8,
+	                                              10,12,14,18,24 (VGA
+	                                              resolution)"
+	SSERIFF.FON   5     5     A     7     89680    "MS San Serif font 8,
+	                                              10,12,14,18,24 (8514/a
+	                                              resolution)"
+	SSFLYWIN.SCR  3     3     6     6     16160    Flying Windows screen
+	                                              saver
+	SSMARQUE.SCR  3     4     6     6     16896    Marquee screen saver
+	SSMYST.SCR    3     4     6     6     19456    Mystify screen saver
+	SSSTARS.SCR   4     4     6     6     17536    Stars screen saver
+	SUPERVGA.DRV  2     2     3     2     73504    "Super VGA display dri-
+	                                              ver (800x600, 16
+	                                              colors)"
+	SYMBOL.FOT    6     6     9     8     1308     Windows TrueType font
+	                                              resource for SYMBOL.TTF
+	SYMBOL.TTF    6     6     9     7     64516    Symbol TrueType font
+	SYMBOLB.FON   5     6     A     7     48352    "Symbol font 8,10,12,
+	                                              14,18,24 (EGA reso-
+	                                              lution)"
+	SYMBOLE.FON   5     6     A     7     56336    "Symbol font 8,10,12,
+	                                              14,18,24 (VGA reso-
+	                                              lution)"
+	SYMBOLF.FON   5     3     A     7     80912    "Symbol font 8,10,12,
+	                                              14,18,24 (8514/a reso-
+	                                              lution)"
+	SYSEDIT.EXE   5     5     8     3     18896    Windows System Editor
+	                                              application file
+	SYSINI.WRI    3     3     6     6     52864    Windows Readme file for
+	                                              SYSTEM.INI
+	SYSTEM.DRV    1     2     2     2     2304     System driver
+	SYSTEM.SRC    1     2     1     1     1009     SYSTEM.INI template
+	TADA.WAV      3     4     5     5     27804    Windows Start Sound
+	TARTAN.BMP    4     4     6     6     32886    Tartan wallpaper
+	TASKMAN.EXE   5     6     5     4     3744     Windows Task Manager
+	                                              application file
+	TBMI2.COM     2     3     5     3     17999    Novell Netware work-
+	                                              station task switching
+	                                              support for IPX/SPX
+	TERMINAL.EXE  4     4     7     5     148160   Windows Terminal ap-
+	                                              plication file
+	TERMINAL.HLP  3     4     7     5     36279    Windows Terminal Help
+	TESTPS.TXT    6     7     C     8     2640     Postscript Test Text
+	                                              File
+	THATCH.BMP    3     4     6     6     598      Thatch wallpaper
+	THINKJET.DRV  6     7     C     9     4720     HP ThinkJet (2225 C-D)
+	                                              printer driver
+	TI850.DRV     6     7     C     9     4352     TI 850/855 printer
+	                                              driver
+	TIGA.DRV      1     2     2     2     74352    TIGA display driver
+	TIGAWIN.RLM   2     2     3     2     42658    TIGA firmware code for
+	                                              Windows
+	TIM17521.WPD  6     7     B     8     2686     Windows PostScript de-
+	                                              scription file for TI
+	                                              microLaser PS17
+	TIM35521.WPD  6     7     B     8     4688     Windows PostScript de-
+	                                              scription file for TI
+	                                              microLaser PS35
+	TIMER.DRV     3     3     5     6     4192     MultiMedia timer driver
+	TIMES.FOT     5     6     9     8     1326     Windows TrueType font
+	                                              resource for TIMES.TTF
+	TIMES.TTF     5     6     9     8     83260    Times New Roman
+	                                              TrueType font
+	TIMESB.FON    5     6     A     7     21088    "Times New Roman font
+	                                              8,10 (EGA resolution)"
+	TIMESBD.FOT   5     6     9     8     1328     Windows TrueType font
+	                                              resource for
+	                                              TIMESBD.TTF
+	TIMESBD.TTF   5     6     9     8     79804    Times New Roman Bold
+	                                              TrueType font
+	TIMESBI.FOT   5     6     A     8     1342     Windows TrueType font
+	                                              resource for
+	                                              TIMESBI.TTF
+	TIMESBI.TTF   5     6     9     8     76452    Times New Roman Bold
+	                                              Italic TrueType font
+	TIMESI.FOT    5     6     9     8     1332     Windows TrueType font
+	                                              resource for TIMESI.TTF
+	TIMESI.TTF    5     6     9     8     78172    Times New Roman Italic
+	                                              TrueType font
+	TKPHZR21.WPD  6     7     B     8     5175     Windows PostScript de-
+	                                              scription file for
+	                                              Phaser II PX I
+	TKPHZR31.WPD  6     7     B     8     5422     Windows PostScript de-
+	                                              scription file for
+	                                              Phaser III PX I
+	TOOLHELP.DLL  5     5     8     6     14128    Windows Tool Helper
+	                                              library
+	TOSHIBA.DRV   6     7     C     8     8000     Toshiba p351/1351
+	TRIUMPH1.WPD  6     7     B     8     1937     Windows PostScript de-
+	                                              scription file for
+	                                              Triumph Adler SDR 7706
+	                                              PS (13 Fonts)
+	TRIUMPH2.WPD  6     7     B     8     4411     Windows PostScript de-
+	                                              scription file for
+	                                              Triumph Adler SDR 7706
+	                                              PS (35 Fonts)
+	TTY.DRV       6     7     C     8     30496    Generic / Text only
+	                                              printer driver
+	TTY.HLP       6     7     B     8     14666    Generic / Text only
+	                                              printer driver Help
+	
+	Additional query words: 3.10 files list disks diskettes dir
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310
+	Version           : WINDOWS:3.1
+	
+	=============================================================================
+	

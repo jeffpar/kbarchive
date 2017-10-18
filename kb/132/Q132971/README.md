@@ -1,0 +1,107 @@
+---
+layout: page
+title: "Q132971: INFO: Merging SourceSafe Files"
+permalink: kb/132/Q132971/
+---
+
+## Q132971: INFO: Merging SourceSafe Files
+
+	Article: Q132971
+	Product(s): Microsoft SourceSafe
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbSSafe400 kbSSafe500 kbSSafe310 kbSSafe304
+	Last Modified: 01-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual SourceSafe for Windows, versions 4.0, 5.0 
+	- Microsoft SourceSafe for Windows, versions 3.04, 3.1 
+	- Microsoft SourceSafe for Windows NT, versions 3.04, 3.1 
+	- Microsoft SourceSafe for MS-DOS, versions 3.04, 3.1 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	If you have shared and separated your working files in SourceSafe and have made
+	changes to each of the versions, you may wish to have these changes reflected in
+	a final project. If multiple checkouts are enabled and more than one user has
+	the file out for editing, you may want to have all the changes reflected in the
+	final project. The MERGE command (Merge Branches in Visual SourceSafe 4.0)
+	allows this capability.
+	
+	MORE INFORMATION
+	================
+	
+	The MERGE command (Merge Branches in Visual SourceSafe 4.0)takes the two ASCII
+	text files and combines them. SourceSafe merges the original file (the last
+	version of the file in SourceSafe prior to the separate or the multiple checkout
+	action) and the file copies which have been modified.
+	
+	When two users have a file checked out, the first user to update can do so with
+	no problem. If there is a conflict (see next paragraph), the next user is told
+	that a conflict exists and asked if the files were merged. The file will be
+	copied to the Working directory with the conflicts marked. You should manually
+	edit the file to resolve the conflicts and update the file.
+	
+	As an example of a conflict, suppose that the original file contains the
+	following line of code: X = 4. This original file is checked out by two users
+	through either the multiple checkout or the share and separate (Branch in Visual
+	SourceSafe 4.0). If one user changes the line of code to read: X = 5 and the
+	other user changes the same line of code to read: X = 3, there is now a
+	conflict. The first person to check in changes and merge has no problem. When
+	the second person tries to check in the file and merge, the following message is
+	given:
+	
+	  An automatic merge has occurred and there are conflicts. Edit
+	  <path>\<filename> to resolve them.
+	
+	The file has the following:
+	
+	        <<<<<<< $/<project1>/<filename>
+	        X = 3
+	        =======
+	        X = 5
+	        >>>>>>> $/<project2>/<filename>
+	
+	When manually editing, you have to strip out the >>>>>>>
+	comments and decide which of the two changes should really be there. Then when
+	you try to check in the conflict modified file and merge, you get the following
+	message:
+	
+	  <filename> has been merged with no conflicts. Update Now?
+	
+	This message just makes sure that the conflicts have been fixed. Answer Yes and
+	continue with your work. The changes are now merged.
+	
+	NOTE: Merging only works correctly on ASCII files. For instance, FoxPro's SCX and
+	SCT files or Visual Basic's FRX files are binary files and will not be merged
+	correctly by SourceSafe.
+	
+	To summarize:
+	
+	1. Checkout, modify, and Update (Check in Visual SourceSafe 4.0)
+	  $/PROJECT/STARS.BAS. Highlight the file in the SourceSafe interface.
+	
+	2. Select Merge (Merge Branches in Visual SourceSafe 4.0) from the SourceSafe
+	  menu.
+	
+	3. The dialog lists a shared version of the file, as well as separated versions.
+	  Highlight the specific version you wish to merge with.
+	
+	4. Select the Merge push button.
+	
+	5. If there are any conflicts, you will be asked to resolve the conflicts and
+	  update the resulting file.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbSSafe400 kbSSafe500 kbSSafe310 kbSSafe304 
+	Technology        : kbSSafeSearch kbAudDeveloper kbZNotKeyword2 kbZNotKeyword3 kbSSafe304 kbSSafe304DOS kbSSafe310 kbSSafe310DOS kbSSafe400 kbSSafe500 kbSSafe304NT kbSSafe310NT
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

@@ -1,0 +1,186 @@
+---
+layout: page
+title: "Q134671: PC Gen: 3.5 Mail for PC Networks Technical Reference Disk [3.5]"
+permalink: kb/134/Q134671/
+---
+
+## Q134671: PC Gen: 3.5 Mail for PC Networks Technical Reference Disk [3.5]
+
+	Article: Q134671
+	Product(s): Microsoft Mail For PC Networks
+	Version(s): WINDOWS:3.5
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 05-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Mail for PC Networks, version 3.5 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The following is the directory listing of the version 3.5 Microsoft Mail for PC
+	Networks Technical Reference Server Program 3.5-inch [1.44MB] Disk.
+	
+	Technical Reference Server Programs
+	-----------------------------------
+	Volume in drive A is TECHREF
+	Volume Serial Number is 5929-340F
+	Directory of A:\ 
+	
+	MAILEXTS       <DIR>        03-19-93  5:46p MAILEXTS
+	MAPI     C     <DIR>        03-19-93  5:46p MAPI.C
+	MAPI     VB    <DIR>        03-19-93  5:46p MAPI.VB
+	README   TXT         7,700  03-19-93 12:00a README.TXT
+	        1 file(s)          7,700 bytes
+	        3 dir(s)       1,008,640 bytes free
+	
+	Directory of \MAILEXTS
+	----------------------
+	Volume in drive A is TECHREF
+	Volume Serial Number is 5929-340F
+	Directory of A:\MAILEXTS
+	
+	.              <DIR>        03-19-93  5:46p .
+	..             <DIR>        03-19-93  5:46p ..
+	APPEXEC        <DIR>        03-19-93  5:46p APPEXEC
+	HELPREQ        <DIR>        03-19-93  5:46p HELPREQ
+	APPEXEC  DLL         8,192  03-19-93 12:00a APPEXEC.DLL
+	EMPTYWB  DLL         4,240  03-19-93 12:00a EMPTYWB.DLL
+	HELPREQ  EXE        25,504  03-19-93 12:00a HELPREQ.EXE
+	HELPREQ  INI           161  03-19-93 12:00a HELPREQ.INI
+	MAILEXTS H           1,261  03-19-93 12:00a MAILEXTS.H
+	MAILEXTS TXT           996  03-19-93 12:00a MAILEXTS.TXT
+	SHARED   INI           336  03-19-93 12:00a SHARED.INI
+	        7 file(s)         40,690 bytes
+	        4 dir(s)       1,008,640 bytes free
+	
+	Directory of \MAILEXTS\APPEXEC
+	------------------------------
+	Volume in drive A is TECHREF
+	Volume Serial Number is 5929-340F
+	Directory of A:\MAILEXTS\APPEXEC
+	
+	.              <DIR>        03-19-93  5:46p .
+	..             <DIR>        03-19-93  5:46p ..
+	APPEXEC                749  03-19-93 12:00a APPEXEC
+	APPEXEC  C          18,069  03-19-93 12:00a APPEXEC.C
+	APPEXEC  DEF           690  03-19-93 12:00a APPEXEC.DEF
+	APPEXEC  H           5,521  03-19-93 12:00a APPEXEC.H
+	APPEXEC  RC            812  03-19-93 12:00a APPEXEC.RC
+	APPEXEC  TXT         5,317  03-19-93 12:00a APPEXEC.TXT
+	APPEXECI H           1,206  03-19-93 12:00a APPEXECI.H
+	LIBENTRY OBJ           361  03-19-93 12:00a LIBENTRY.OBJ
+	MK       BAT            99  03-19-93 12:00a MK.BAT
+	README   TXT           741  03-19-93 12:00a README.TXT
+	       10 file(s)         33,565 bytes
+	        2 dir(s)       1,008,640 bytes free
+	
+	Directory of \MAILEXTS\HELPREQ
+	------------------------------
+	Volume in drive A is TECHREF
+	Volume Serial Number is 5929-340F
+	Directory of A:\MAILEXTS\HELPREQ
+	
+	.              <DIR>        03-19-93  5:46p .
+	..             <DIR>        03-19-93  5:46p ..
+	APPEXEC  H             529  03-19-93 12:00a APPEXEC.H
+	HELPREQ              1,017  03-19-93 12:00a HELPREQ
+	HELPREQ  C          43,480  03-19-93 12:00a HELPREQ.C
+	HELPREQ  DEF           269  03-19-93 12:00a HELPREQ.DEF
+	HELPREQ  DLG         5,455  03-19-93 12:00a HELPREQ.DLG
+	HELPREQ  H           4,895  03-19-93 12:00a HELPREQ.H
+	HELPREQ  ICO           766  03-19-93 12:00a HELPREQ.ICO
+	HELPREQ  MAK         1,617  03-19-93 12:00a HELPREQ.MAK
+	HELPREQ  RC          3,568  03-19-93 12:00a HELPREQ.RC
+	MK       BAT            91  03-19-93 12:00a MK.BAT
+	README   TXT         1,197  03-19-93 12:00a README.TXT
+	       11 file(s)         62,884 bytes
+	        2 dir(s)       1,008,640 bytes free
+	
+	Directory of \MAPI.C
+	--------------------
+	Volume in drive A is TECHREF
+	Volume Serial Number is 5929-340F
+	Directory of A:\MAPI.C
+	
+	.              <DIR>        03-19-93  5:46p .
+	..             <DIR>        03-19-93  5:46p ..
+	SAMPLE         <DIR>        03-19-93  5:46p SAMPLE
+	MAPI     H           7,268  03-19-93 12:00a MAPI.H
+	MAPIC    HLP        68,768  03-19-93 12:00a MAPIC.HLP
+	        2 file(s)         76,036 bytes
+	        3 dir(s)       1,008,640 bytes free
+	
+	Directory of \MAPI.C\SAMPLE
+	---------------------------
+	Volume in drive A is TECHREF
+	Volume Serial Number is 5929-340F
+	Directory of A:\MAPI.C\SAMPLE
+	
+	.              <DIR>        03-19-93  5:46p .
+	..             <DIR>        03-19-93  5:46p ..
+	MAPIAPP  C          23,753  03-19-93 12:00a MAPIAPP.C
+	MAPIAPP  DEF           244  03-19-93 12:00a MAPIAPP.DEF
+	MAPIAPP  EXE        32,284  03-19-93 12:00a MAPIAPP.EXE
+	MAPIAPP  H             917  03-19-93 12:00a MAPIAPP.H
+	MAPIAPP  ICO           766  03-19-93 12:00a MAPIAPP.ICO
+	MAPIAPP  MAK         1,594  03-19-93 12:00a MAPIAPP.MAK
+	MAPIAPP  MDT         5,946  03-19-93 12:00a MAPIAPP.MDT
+	MAPIAPP  RC            710  03-19-93 12:00a MAPIAPP.RC
+	MAPIAPP  WIN        10,832  03-19-93 12:00a MAPIAPP.WIN
+	MAPIAPP  WIR        10,832  03-19-93 12:00a MAPIAPP.WIR
+	MAPINIT  C           1,914  03-19-93 12:00a MAPINIT.C
+	MAPINIT  H           3,749  03-19-93 12:00a MAPINIT.H
+	MAPINIT  MDT           960  03-19-93 12:00a MAPINIT.MDT
+	       13 file(s)         94,501 bytes
+	        2 dir(s)       1,008,640 bytes free
+	
+	Directory of \MAPI.VB
+	---------------------
+	Volume in drive A is TECHREF
+	Volume Serial Number is 5929-340F
+	Directory of A:\MAPI.VB
+	
+	.              <DIR>        03-19-93  5:46p .
+	..             <DIR>        03-19-93  5:46p ..
+	SAMPLE         <DIR>        03-19-93  5:46p SAMPLE
+	MAPI     TXT         5,706  03-19-93 12:00a MAPI.TXT
+	MAPIVB   BAS         3,634  03-19-93 12:00a MAPIVB.BAS
+	MAPIVB   HLP        64,056  03-19-93 12:00a MAPIVB.HLP
+	        3 file(s)         73,396 bytes
+	        3 dir(s)       1,008,640 bytes free
+	
+	Directory of \MAPI.VB\SAMPLE
+	----------------------------
+	Volume in drive A is TECHREF
+	Volume Serial Number is 5929-340F
+	Directory of A:\MAPI.VB\SAMPLE
+	
+	.              <DIR>        03-19-93  5:46p .
+	..             <DIR>        03-19-93  5:46p ..
+	COMPOSE  FRM         9,139  03-19-93 12:00a COMPOSE.FRM
+	GLOBAL   BAS         5,823  03-19-93 12:00a GLOBAL.BAS
+	MAIL01A  ICO           766  03-19-93 12:00a MAIL01A.ICO
+	MAIN     FRM        10,820  03-19-93 12:00a MAIN.FRM
+	MAPIDEMO BAS         3,030  03-19-93 12:00a MAPIDEMO.BAS
+	MAPIDEMO ICO           766  03-19-93 12:00a MAPIDEMO.ICO
+	MAPIDEMO MAK           172  03-19-93 12:00a MAPIDEMO.MAK
+	MAPISTAT FRM           654  03-19-93 12:00a MAPISTAT.FRM
+	MAPIVB   BAS         3,634  03-19-93 12:00a MAPIVB.BAS
+	VIEW     FRM         5,841  03-19-93 12:00a VIEW.FRM
+	       10 file(s)         40,645 bytes
+	        2 dir(s)       1,008,640 bytes free
+	
+	Additional query words: 3.50 dirmail
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN350
+	Version           : WINDOWS:3.5
+	
+	=============================================================================
+	

@@ -1,0 +1,106 @@
+---
+layout: page
+title: "Q262124: XCON: Message Loop to SMTP Custom Recipient Over X.400 Connector"
+permalink: kb/262/Q262124/
+---
+
+## Q262124: XCON: Message Loop to SMTP Custom Recipient Over X.400 Connector
+
+	Article: Q262124
+	Product(s): Microsoft Exchange
+	Version(s): winnt:5.5
+	Operating System(s): 
+	Keyword(s): exc55
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	In a system that has the following setup
+	
+	- Site A:
+	
+	   - Site address on Internet Mail Service *
+	
+	   - Site addressing on X.400 Connector
+	
+	   - X.400 (Site B address space)
+	
+	- Site B (No directory replication):
+	
+	   - Site addressing on X.400 Connector
+	
+	   - X.400 (Site A address space) and Simple Mail Transfer Protocol (SMTP) *
+	
+	if any user in Site B sends SMTP one-off e-mail, the e-mail is delivered with no
+	problems by using the following format:
+	
+	  <user>@<domain>.com
+	
+	NOTE: * is a variable for the SMTP address that the SMTP messages use to route
+	the message.
+	
+	However, if a user in Site B sends e-mail to an SMTP custom recipient, the e-mail
+	may loop between the bridgehead servers and finally return with the following
+	non-delivery report (NDR):
+	
+	  The following recipient(s) could not be reached: c=US;a=
+	  ;p=Carlson;o=naTGIF01-Corporate;s=Test2;g=Jim; on 4/7/00 1:11 PM Either the
+	  message size exceeds the maximum allowed for the recipient or transport, or
+	  you have exceeded the storage limit on your mailbox. The MTS-ID of the
+	  original message is: c=US;a= ;p=Carlson;l=CRWCEXG1-000407175815Z-852143
+	  MSEXCH:MSExchangeMTA:naCORP-Connector:OTCMSG05
+	
+	CAUSE
+	=====
+	
+	This issue can occur because the message transfer agent (MTA) routes custom
+	recipients differently than one-off addresses.
+	
+	
+	The custom recipient uses the X.400 proxy of the custom recipient, so it has a
+	full X.400 address and not just the Site-Proxy-Space of Site B. The MTA performs
+	a directory lookup for the SMTP address. The MTA finds the mailbox but the
+	mailbox has a different X.400 address. The MTA then routes the message by using
+	the X.400 proxy.
+	
+	The MTA routes the message back to the originating site (Site B) because of the
+	X.400 address space on that mailbox. That message is then resolved to the custom
+	recipient, which reroutes the message back to the site by using the custom
+	recipient default SMTP address. The message continues to loop until the message
+	header runs out of space (approximately 512 times).
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, use X.400 as the default e-mail address.
+	
+	WORKAROUND
+	==========
+	
+	To work around this issue:
+	
+	- Create a directory replication connector between the two sites.
+	
+	-or-
+	
+	- Create another custom recipient on the remote site.
+	
+	  NOTE: This method only works for non-mailbox resolvable addresses.
+	
+	Additional query words: CR
+	
+	======================================================================
+	Keywords          : exc55 
+	Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+	Version           : winnt:5.5
+	Issue type        : kbprb
+	
+	=============================================================================
+	

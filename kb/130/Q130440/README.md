@@ -1,0 +1,505 @@
+---
+layout: page
+title: "Q130440: INFO: Reserved Words in Visual FoxPro"
+permalink: kb/130/Q130440/
+---
+
+## Q130440: INFO: Reserved Words in Visual FoxPro
+
+	Article: Q130440
+	Product(s): Microsoft FoxPro
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbvfp300 kbvfp500 kbvfp600
+	Last Modified: 29-JUL-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 6.0 
+	- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	If you use a reserved word as a name in Visual FoxPro, it may generate a syntax
+	error. Reserved words in Visual FoxPro include functions, system memory
+	variables, properties, events, methods, commands, and clauses. When programming,
+	avoid using reserved words as names (for example, window, table, and field
+	names). This article lists all Visual FoxPro reserved words.
+	
+	MORE INFORMATION
+	================
+	
+	Visual FoxPro Reserved Words
+	----------------------------
+	
+	    #DEFINE                 #ENDIF                  #IF
+	    #IFDEF                  #IFNDEF                 #INCLUDE
+	    #ITSEXPRESSION          #READCLAUSES            #REGION
+	    #SECTION                #UNDEF                  #WNAME
+	    .AND.                   .F.                     .NOT.
+	    .OR.                    .T.                     @PROCEDURE
+	
+	    ABS                     ACCEPT                  ACLASS
+	    ACOPY                   ACOS                    ACTIVATE
+	    ActivateCell            ActiveColumn            ActiveControl
+	    ActiveForm              ActivePage              ActiveRow
+	    ADATABASES              ADBOBJECTS              ADD
+	    AddColumn               AddItem                 ADDITIVE
+	    AddListItem             AddObject               ADEL
+	    ADIR                    AELEMENT                AERROR
+	    AFIELDS                 AFONT                   AFTER
+	    AfterCloseTables        AfterDock               AfterRowColChange
+	    AGAIN                   AINDENT                 AINSTANCE
+	    ALEN                    ALIAS                   Alignment
+	    _ALIGNMENT              ALL                     AllowTabs
+	    ALLTRIM                 ALT                     ALTER
+	    ALTERNATE               AlwaysOnTop             AMEMBERS
+	    AND                     ANSI                    ANSITOOEM
+	    ANY                     APLABOUT                APP
+	    APPEND                  APRINTERS               ARRAY
+	    AS                      ASC                     ASCAN
+	    ASCENDING               ASCII                   _ASCIICOLS
+	    _ASCIIROWS              ASELOBJ                 ASIN
+	    ASORT                   ASSIST                  _ASSIST
+	    ASUBSCRIPT              AT                      ATAN
+	    ATC                     ATCLINE                 ATLINE
+	    ATN2                    ATTRIBUTES              AUSED
+	    AutoActivate            AutoCenter              AutoCloseTables
+	    AUTOMATIC               AutoOpenTables          AUTOSAVE
+	    AutoSize                AVERAGE                 AVG
+	
+	    BackColor               BackStyle               BAR
+	    BARCOUNT                BARPROMPT               BaseClass
+	    _BEAUTIFY               BEFORE                  BeforeDock
+	    BeforeOpenTables        BeforeRowColChange      BEGIN
+	    BELL                    BETWEEN                 BITAND
+	    BITCLEAR                BITLSHIFT               BITMAP
+	    BITNOT                  BITOR                   BITRSHIFT
+	    BITSET                  BITXOR                  BLANK
+	    BLINK                   BLOCKSIZE               BOF
+	    BORDER                  BorderColor             BorderStyle
+	    BorderWidth             BOTTOM                  Bound
+	    BoundColumn             BOX                     _BOX
+	    BROWSE                  _BROWSER                BRSTATUS
+	    BUCKET                  BufferMode              BufferModeOverride
+	    BUFFERS                 BUILD                   _BUILDER
+	    ButtonCount             Buttons                 BY
+	
+	   _CALCMEM                 CALCULATE              _CALCVALUE
+	    CALL                    CANCEL                  CANDIDATE
+	    CAPSLOCK                Caption                 CARRY
+	    CASCADE                 CASE                    CATALOG
+	    CD                      CDOW                    CDX
+	    CEILING                 CENTER                  CENTURY
+	    CGA                     CHANGE                  CHARACTER
+	    CHDIR                   CHECK                   check box
+	    ChildAlias              ChildOrder              CHR
+	    CHRSAW                  CHRTRAN                 Circle
+	    CLASS                   CLASSLIB                ClassLibrary
+	    CLEAR                   CLICK                   ClipControls
+	    _CLIPTEXT               CLOCK                   CloneObject
+	    ClosableProperty        CLOSE                   CloseTables
+	    Cls                     CMONTH                  CNT
+	    CNTBAR                  CNTPAD                  CODEPAGE
+	    COL                     COLLATE                 COLOR
+	    ColorScheme             ColorSource             COLUMN
+	    ColumnCount             ColumnLines             ColumnOrder
+	    Columns                 ColumnWidths            COM1
+	    COM2                    ComboBox                COMMAND
+	    CommandButton           CommandGroup            Comment
+	    COMPACT                 COMPATIBLE              COMPILE
+	    COMPOBJ                 COMPRESS                CONFIRM
+	    CONNECTION              CONNECTIONS             CONNSTRING
+	    CONSOLE                 CONTAINER               CONTINUE
+	    CONTROL                 ControlBox              ControlCount
+	    Controls                ControlSource           _CONVERTER
+	    COPIES                  COPY                    COS
+	    COUNT                   CPCOMPILE               CPCONVERT
+	    CPCURRENT               CPDBF                   CPDIALOG
+	    CREATE                  CREATEOBJECT            CTOD
+	    CTOT                    CURDIR                  _CUROBJ
+	    CURRENCY                CurrentControl          CurrentX
+	    CurrentY                CURSOR                  CURSORGETPROP
+	    CURSORSETPROP           CursorSource            CURVAL
+	    Curvature               Custom                  CYCLE
+	
+	    DATABASE                DATABASES               DataEnvironment
+	    DATASESSION             DataSessionID           DATASOURCE
+	    DATE                    DATETIME                DAY
+	    DB4                     DBC                     DBF
+	    DBGETPROP               DBLCLICK                _DBLCLICK
+	    DBMEMO3                 DBSETPROP               DBTRAP
+	    DBUSED                  DDE                     DDEAbortTrans
+	    DDEAdvise               DDEEnabled              DDEExecute
+	    DDEInitiate             DDELastError            DDEPoke
+	    DDERequest              DDESetOption            DDESetService
+	    DDESetTopic             DDETerminate            DEACTIVATE
+	    DEBUG                   DECIMALS                DECLARE
+	    DEFAULT                 DEFAULTSOURCE           DEFINE
+	    DELETE                  DeleteColumn            DELETED
+	    DeleteMark              DELETETABLES            DELIMITED
+	    DELIMITERS              DESCENDING              DESIGN
+	    Desktop                 Destroy                 DEVELOPMENT
+	    DEVICE                  _DIARYDATE              DIF
+	    DIFFERENCE              DIMENSION               DIR
+	    DIRECTORY               DISABLED                DisabledBackColor
+	    DisabledForeColor       DisabledPicture         DISKSPACE
+	    DISPLAY                 DisplayValue            DISTINCT
+	    DLL                     DLLS                    DMY
+	    DO                      Dock                    Docked
+	    DockPosition            DocumentFile            DOHISTORY
+	    DOS                     _DOS                    DoScroll
+	    DOSMEM                  DOUBLE                  DoVerb
+	    DOW                     DOWN                    DownClick
+	    DownPicture             DRAG                    DragDrop
+	    DragIcon                DragMode                DragOver
+	    DRAW                    DrawMode                DrawStyle
+	    DrawWidth               DRIVER                  DropDown
+	    DTOC                    DTOR                    DTOS
+	    DTOT                    DUPLEX                  DynamicAlignment
+	    DynamicBackColor        DynamicCurrentControl   DynamicFontBold
+	    DynamicFontItalic       DynamicFontName         DynamicFontSize
+	    DynamicFontStrikethru   DynamicFontUnderline    DynamicForeColor
+	
+	    ECHO                    EDIT                    EditBox
+	    EDITWORK                EGA25                   EGA43
+	    EJECT                   EMPTY                   EMS
+	    EMS64                   ENABLED                 ENCRYPT
+	    ENCRYPTION              END                     ENDCASE
+	    ENDDO                   ENDFOR                  ENDIF
+	    ENDPRINTJOB             ENDSCAN                 ENDTEXT
+	    ENDWITH                 ENVIRONMENT             EOF
+	    ERASE                   ERROR                   ErrorMessage
+	    ESCAPE                  EVALUATE                EVENTS
+	    EXACT                   EXCEPT                  EXCLUSIVE
+	    EXE                     EXISTS                  EXIT
+	    EXP                     EXPORT                  EXPRESSION
+	    EXTENDED                EXTERNAL
+	
+	    F11F12                  FCHSIZE                 FCLOSE
+	    FCOUNT                  FCREATE                 FDATE
+	    FDOW                    FEOF                    FERROR
+	    FETCH                   FFLUSH                  FGETS
+	    FIELD                   FIELDS                  FILE
+	    FILER                   FILES                   FILL
+	    FillColor               FillStyle               FILTER
+	    FIND                    FirstElement            FIXED
+	    FKLABEL                 FKMAX                   FLDLIST
+	    FLOAT                   FLOCK                   FLOOR
+	    FLUSH                   FOLDCONST               FONT
+	    FontBold                FontItalic              FONTMETRIC
+	    FontName                FontOutline             FontShadow
+	    FontSize                FontStrikethru          FontUnderline
+	    FOOTER                  FOPEN                   FOR
+	    FORCE                   ForeColor               FOREIGN
+	    FORM                    FORMAT                  FormCount
+	    Forms                   FORMSET                 FOUND
+	    FOX2X                   _FOXDOC                 _FOXGRAPH
+	    FOXPLUS                 FPUTS                   FREAD
+	    FREE                    FREEZE                  FROM
+	    FSEEK                   FSIZE                   FTIME
+	    FULLPATH                FUNCTION                @FUNCTION
+	    FV                      FW2                     FWEEK
+	    FWRITE
+	
+	    GATHER                  GENERAL                 _GENGRAPH
+	    _GENMENU                _GENPD                  _GENSCRN
+	    _GENXTAB                GET                     GETBAR
+	    GETCOLOR                GETCP                   GETDIR
+	    GETENV                  GETEXPR                 GETFILE
+	    GETFLDSTATE             GETFONT                 GETNEXTMODIFIED
+	    GETOBJECT               GETPAD                  GETPICT
+	    GETPRINTER              GETS                    GLOBAL
+	    GO                      GOMONTH                 GotFocus
+	    GOTO                    Grid                    GridLineColor
+	    GridLines               GridLineWidth           GROUP
+	    GROW
+	
+	    HALFHEIGHT              HalfHeightCaption       HAVING
+	    HEADER                  HeaderHeight            HEADING
+	    HEADINGS                HEIGHT                  HELP
+	    HelpContextID           HELPFILTER              HIDE
+	    HideSelection           HIGHLIGHT               HISTORY
+	    HMEMORY                 HOME                    HOUR
+	    HOURS
+	
+	    IBLOCK                  ICON                    ID
+	    IDXCOLLATE              IF                      IIF
+	    Image                   IMPORT                  IN
+	    Increment               IncrementalSearch       INDBC
+	    _INDENT                 INDEX                   INDEXES
+	    IndexToItemID           INFORMATION             Init
+	    InitialSelectedAlias    INKEY                   INLIST
+	    INPUT                   InputMask               INSERT
+	    INSMODE                 INSTRUCT                INT
+	    INTEGER                 INTENSITY               InteractiveChange
+	    INTERSECT               Interval                INTO
+	    IS                      ISALPHA                 ISBLANK
+	    ISCOLOR                 ISDIGIT                 ISEXCLUSIVE
+	    ISLOWER                 ISMOUSE                 ISNULL
+	    ISOMETRIC               ISREADONLY              ISUPPER
+	    ItemBackColor           ItemData                ItemForeColor
+	    ItemIDData              ItemIDToIndex
+	
+	    JOIN
+	
+	    KEY                     KEYBOARD                KeyboardHighValue
+	    KeyboardLowValue        KEYCOLUMNS              KEYCOMP
+	    KEYMATCH                KeyPress                KeyPreview
+	    KEYSET
+	
+	    LABEL                   LAST                    LASTKEY
+	    LDCHECK                 LEDIT                   LEFT
+	    LeftColumn              LEN                     LEVEL
+	    LIBRARY                 LIKE                    LINE
+	    LINENO                  LineSlant               LINKED
+	    LinkMaster              LIST                    list box
+	    ListCount               ListIndex               ListItem
+	    ListItemID              _LMARGIN                LOAD
+	    LOCAL                   LOCATE                  LOCFILE
+	    LOCK                    LockScreen              LOG
+	    LOG10                   LOGERRORS               LONG
+	    LOOKUP                  LostFocus               LOWER
+	    LPARAMETERS             LPARTITION              LTRIM
+	    LUPDATE
+	
+	    MAC                     _MAC                    MACDESKTOP
+	    MACHELP                 MACKEY                  MACRO
+	    MACROS                  MARGIN                  MARK
+	    MASTER                  MAX                     MaxButton
+	    MaxHeight               MaxLeft                 MaxLength
+	    MAXMEM                  MaxTop                  MaxWidth
+	    MBLOCK                  MCOL                    MD
+	    MDI                     MDIForm                 MDOWN
+	    MDX                     MDY                     MEMLIMIT
+	    MEMLINES                MEMO                    MEMORY
+	    MEMOS                   MEMOWIDTH               MemoWindow
+	    MEMVAR                  MENU                    MENUS
+	    MESSAGE                 MESSAGEBOX              MESSAGES
+	    MIDDLE                  MIN                     MinButton
+	    MinHeight               MINIMIZE                MINUS
+	    MINUTE                  MinWidth                MKDIR
+	    MLINE                   _MLINE                  MOD
+	    MODAL                   MODIFY                  MODULE
+	    MONO                    MONO43                  MONTH
+	    MOUSE                   MouseDown               MouseMove
+	    MousePointer            MouseUp                 Movable
+	    MOVE                    Moved                   MoverBars
+	    MOVERS                  MRKBAR                  MRKPAD
+	    MROW                    MTON                    MULTILOCKS
+	    MULTISELECT             MVARSIZ                 MVCOUNT
+	    MWINDOW
+	
+	    NAME                    NDX                     NEAR
+	    NEGOTIATE               NewIndex                NewItemID
+	    NEXT                    NOALIAS                 NOAPPEND
+	    NOCLEAR                 NOCLOSE                 NOCONSOLE
+	    NOCPTRANS               NODATA                  NoDataOnLoad
+	    NODEBUG                 NODELETE                NODUP
+	    NOEDIT                  NOEJECT                 NOENVIRONMENT
+	    NOFLOAT                 NOFOLLOW                NOGROW
+	    NOINIT                  NOLGRID                 NOLINK
+	    NOLOCK                  NOLOG                   NOMARGIN
+	    NOMDI                   NOMENU                  NOMINIMIZE
+	    NOMODIFY                NOMOUSE                 NONE
+	    NOOPTIMIZE              NOORGANIZE              NOOVERWRITE
+	    NOPROMPT                NOREAD                  NOREFRESH
+	    NOREQUERY               NORGRID                 NORMAL
+	    NORMALIZE               NOSAVE                  NOSHADOW
+	    NOSHOW                  NOSPACE                 NOT
+	    NOTE                    NOTIFY                  NOUPDATE
+	    NOVALIDATE              NOVERIFY                NOWAIT
+	    NOWINDOW                NOWRAP                  NOZOOM
+	    NPV                     NTOM                    NULL
+	    NUMBER                  NumberOfElements        NUMLOCK
+	    NVL
+	
+	    OBJECTS                 OBJNUM                  OBJTOCLIENT
+	    OBJVAR                  OCCURS                  ODOMETER
+	    OEMTOANSI               OF                      OFF
+	    OLDVAL                  OLE                     OLEClass
+	    OLEOBJECT               OLEOBJECTS              OLETypeAllowed
+	    ON                      OneToMany               ONLY
+	    OPEN                    OpenTables              OpenWindow
+	    OPTIMIZE                OptionButton            OptionGroup
+	    OR                      ORDER                   ORIENTATION
+	    OS                      OUTPUT                  OUTSHOW
+	    OVERLAY                 OVERWRITE
+	
+	    PACK                    PAD                     PADL
+	    PADRPADC                _PADVANCE               PAGE
+	    PageCount               PageFrame               PageHeight
+	    _PAGENO                 PageOrder               Pages
+	    PageWidth               Paint                   PALETTE
+	    PANEL                   PanelLink               PAPERLENGTH
+	    PAPERSIZE               PAPERWIDTH              PARAMETERS
+	    Parent                  ParentAlias             ParentClass
+	    PARTITION               PASSWORD                PasswordChar
+	    PATH                    PATTERN                 PAUSE
+	    PAYMENT                 _PBPAGE                 PCOL
+	    _PCOLNO                 _PCOPIES                PDOX
+	    _PDRIVER                PDSETUP                 _PDSETUP
+	    _PECODE                 _PEJECT                 PEN
+	    _PEPAGE                 PFS                     PI
+	    PICTURE                 PIXELS                  PLAIN
+	    PLAY                    _PLENGTH                _PLINENO
+	    _PLOFFSET               POINT                   POP
+	    POPUP                   POPUPS                  _PPITCH
+	    _PQUALITY               PRECISION               PREFERENCE
+	    _PRETEXT                PREVIEW                 PRIMARY
+	    Print                   PRINTER                 PRINTJOB
+	    PRINTQUALITY            PRINTSTATUS             PRIVATE
+	    PRMBAR                  PRMPAD                  PROCEDURE
+	    @PROCEDURE              PROCEDURES              PRODUCTION
+	    PROGRAM                 ProgrammaticChange      PROGWORK
+	    PROJECT                 PROMPT                  PROPER
+	    PROW                    PRTINFO                 _PSCODE
+	    PSet                    _PSPACING               PUBLIC
+	    PUSH                    PUTFILE                 PV
+	    _PWAIT
+	
+	    QUERY                   QUIT
+	
+	    RAND                    RANDOM                  RANGE
+	    RangeHigh               RangeLow                RAT
+	    RATLINE                 RD                      RDLEVEL
+	    READ                    ReadActivate            READBORDER
+	    ReadCycle               ReadDeactivate          READERROR
+	    ReadExpression          READKEY                 ReadLock
+	    ReadMethod              ReadMouse               ReadObject
+	    ReadOnly                ReadSave                ReadShow
+	    ReadTimeout             ReadValid               ReadWhen
+	    RECALL                  RECCOUNT                RECNO
+	    RECORD                  RecordMark              RecordSource
+	    RecordSourceType        RECOVER                 RECSIZE
+	    REDIT                   REFERENCE               REFERENCES
+	    REFRESH                 REGIONAL                REINDEX
+	    RELATION                RelationalExpr          RELATIVE
+	    RelativeColumn          RelativeRow             RELEASE
+	    ReleaseType             REMOTE                  REMOVE
+	    RemoveItem              RemoveListItem          RemoveObject
+	    RENAME                  REPLACE                 REPLICATE
+	    REPORT                  REPROCESS               REQUERY
+	    REQUIRED                Reset                   Resizable
+	    Resize                  RESOURCE                REST
+	    RESTORE                 RESTRICT                RESUME
+	    RETRY                   RETURN                  RGB
+	    RIGHT                   RightClick              RLOCK
+	    _RMARGIN                RMDIR                   ROLLBACK
+	    ROUND                   ROW                     RowHeight
+	    ROWSET                  RowSource               RowSourceType
+	    RPD                     RTOD                    RTRIM
+	    RUN                     RUNSCRIPT               RUNTIME
+	
+	    SAFETY                  SAME                    SAMPLE
+	    SAVE                    SaveAs                  SaveAsClass
+	    SAY                     SCALE                   ScaleMode
+	    SCAN                    SCATTER                 SCHEME
+	    SCOLS                   SCOREBOARD              SCREEN
+	    _SCREEN                 SCREENS                 SCROLL
+	    ScrollBars              Scrolled                SDF
+	    SEC                     SECONDS                 SEEK
+	    SELECT                  Selected                SelectedBackColor
+	    SelectedForeColor       SelectedID              SelectedItemBackColor
+	    SelectedItemForeColor   SELECTION               SelectOnEntry
+	    SelLength               SelStart                SelText
+	    SEPARATOR               SET                     SetAll
+	    SETFLDSTATE             SetFocus                SHADOWS
+	    Shape                   SHARED                  SHEET
+	    SHELL                   _SHELL                  SHIFT
+	    SHOW                    ShowTips                SHUTDOWN
+	    SIGN                    SIN                     SINGLE
+	    Sizable                 SIZE                    SKIP
+	    SKPBAR                  SKPPAD                  SOME
+	    SORT                    Sorted                  SORTWORK
+	    SOUNDEX                 SPACE                   Sparse
+	    SpecialEffect           _SPELLCHK               SPINNER
+	    SpinnerHighValue        SpinnerLowValue         SQL
+	    SQLCANCEL               SQLCOLUMNS              SQLCOMMIT
+	    SQLCONNECT              SQLDISCONNECT           SQLEXEC
+	    SQLGETPROP              SQLMORERESULTS          SQLROLLBACK
+	    SQLSETPROP              SQLSTRINGCONNECT        SQLTABLES
+	    SQRT                    SROWS                   STANDALONE
+	    _STARTUP                STATUS                  StatusBarText
+	    STD                     STEP                    STICKY
+	    STORE                   STR                     STRETCH
+	    STRING                  STRTRAN                 STRUCTURE
+	    STUFF                   STYLE                   SUBCLASS
+	    SUBSTR                  SUM                     SUMMARY
+	    SUSPEND                 SYLK                    SYS
+	    SYSFORMATS              SYSMENU                 SYSMENUS
+	    SYSMETRIC               SYSTEM
+	
+	    TAB                     TabIndex                TABLE
+	    TABLEREVERT             TABLES                  TABLEUPDATE
+	    TABS                    _TABS                   TabStop
+	    TabStretch              TAG                     TAGCOUNT
+	    TAGNO                   TALK                    _TALLY
+	    TAN                     TARGET                  TEDIT
+	    TerminateRead           TEXT                    _TEXT
+	    text box                 TextHeight              TEXTMERGE
+	    TextWidth               THIS                    THISFORM
+	    THISFORMSET             _THROTTLE               TIME
+	    TIMEOUT                 Timer                   TITLES
+	    TMPFILES                TO                      ToolBar
+	    ToolTipText             TOP                     TOPIC
+	    TopIndex                TopItemID               TOTAL
+	    TRANSACTION             TRANSFORM               _TRANSPORT
+	    TRAP                    TRBETWEEN               TRIGGER
+	    _TRIGGERLEVEL           TRIM                    TTOC
+	    TTOD                    TTOPTION                TXNLEVEL
+	    TXTWIDTH                TYPE                    TYPEAHEAD
+	
+	    UDFPARMS                Undock                  UNION
+	    UNIQUE                  _UNIX                   Unload
+	    UNLOCK                  UP                      UpClick
+	    UPDATE                  UPDATED                 UPPER
+	    USE                     USED                    USERID
+	    USERS
+	
+	    VAL                     Valid                   VALIDATE
+	    Value                   VALUES                  VAR
+	    VARREAD                 VERB                    VERSION
+	    VGA25                   VGA50                   VIEW
+	    VIEWS                   Visible                 VOLUME
+	
+	    WAIT                    WBORDER                 WCHILD
+	    WCOLS                   WEEK                    WEXIST
+	    WFONT                   WHEN                    WHERE
+	    WHILE                   WIDTH                   WINDOW
+	    WindowList              WINDOWS                 _WINDOWS
+	    WindowState             WindowType              WITH
+	    _WIZARD                 WK1                     WK3
+	    WKS                     WLAST                   WLCOL
+	    WLROW                   WMAXIMUM                WMINIMUM
+	    WONTOP                  WordWrap                WORKAREA
+	    WOUTPUT                 WP                      WPARENT
+	    WR1                     WRAP                    _WRAP
+	    WREAD                   WriteExpression         WriteMethod
+	    WRK                     WROWS                   WTITLE
+	    WVISIBLE
+	
+	    XCMDFILE                XL5                     XLS
+	
+	    YEAR                    YRESOLUTION
+	
+	    ZAP                     ZOOM                    ZOrder
+	
+	REFERENCES
+	==========
+	
+	This information is placed here for quick reference. It is also available in the
+	"Reserved Words" topic of the Visual FoxPro Help file.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbvfp300 kbvfp500 kbvfp600 
+	Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac kbVFP300 kbVFP500 kbVFP600
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

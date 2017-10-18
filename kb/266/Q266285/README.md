@@ -1,0 +1,67 @@
+---
+layout: page
+title: "Q266285: Cannot Use SQL Server with Certificate Server 1.0"
+permalink: kb/266/Q266285/
+---
+
+## Q266285: Cannot Use SQL Server with Certificate Server 1.0
+
+	Article: Q266285
+	Product(s): Internet Information Server
+	Version(s): 1.0
+	Operating System(s): 
+	Keyword(s): kbOSWin2000 kbDSupport
+	Last Modified: 28-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Certificate Server version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	For various reasons, developers might want to use a Microsoft SQL Server
+	database with Certificate Server 1.0 instead of the Microsoft Access database it
+	uses by default. This configuration is not supported by Microsoft. Certificate
+	Server 1.0 was not designed to use SQL Server as its database.
+	
+	MORE INFORMATION
+	================
+	
+	If you need a more reliable or more flexible public key infrastructure (PKI)
+	than Certificate Server 1.0 offers, the best solution is to move to Certificate
+	Services 2.0, which is included with Microsoft Windows 2000. Certificate
+	Services 2.0 uses a different kind of database that is not ODBC-compliant.
+	
+	
+	REFERENCES
+	==========
+	
+	For additional information on PKI with Certificate Services 2.0, see the
+	following Windows 2000 documents:
+	
+	  An Introduction to the Windows 2000 Public Key Infrastructure
+	  http://www.microsoft.com/windows2000/library/howitworks/security/pkiintro.asp
+	
+	  Public Key Interoperability
+	  http://www.microsoft.com/windows2000/library/howitworks/security/w2kpkint.asp
+	
+	  Windows 2000 Server and Key Management Server Interoperability
+	  http://support.microsoft.com/support/exchange/content/whitepapers/win2k_kms.doc
+	
+	  Deployment Planning Guide, Planning Your Public Key Infrastructure
+	  http://www.microsoft.com/windows2000/library/resources/reskit/dpg/default.asp
+	  (Chapter 12)
+	
+	Additional query words: iis 5 iis4 certsrv sql
+	
+	======================================================================
+	Keywords          : kbOSWin2000 kbDSupport 
+	Technology        : kbCertServSearch kbZNotKeyword3 kbCertServ100
+	Version           : :1.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

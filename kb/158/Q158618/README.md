@@ -1,0 +1,61 @@
+---
+layout: page
+title: "Q158618: INF: SQLState 22002 Error When Fetching Results"
+permalink: kb/158/Q158618/
+---
+
+## Q158618: INF: SQLState 22002 Error When Fetching Results
+
+	Article: Q158618
+	Product(s): Open Database Connectivity (ODBC)
+	Version(s): 2.5; WINDOWS:2.5,2.65
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 07-JAN-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft ODBC SDK version 2.5 
+	- Microsoft ODBC Driver for SQL Server, versions 2.5, 2.65 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	While fetching results using ODBC SQL Server driver, you may occasionally see
+	the following error message:
+	
+	  SQLState 22002: Indicator variable required but not supplied
+	
+	This error message is not documented in either the SQL Server driver Help file or
+	the ODBC 2.5 SDK specification document Readme25.txt that ships with the ODBC
+	Desktop Driver Pack 3.0.
+	
+	MORE INFORMATION
+	================
+	
+	The problem is a documentation bug with the ODBC 2.5 SDK for the SQL State 22002
+	on SQLFetch. The SQL Server driver follows the ODBC SDK 2.5 specification and
+	returns the error message correctly, as described in the specification.
+	
+	According to the ODBC 2.5 specification, the driver should return error 22002 on
+	SQLFetch when the data fetched in the particular column is NULL and the
+	SQLBindCol function did not specify a valid pointer for the pcbValue parameter
+	(indicator variable). This is because the driver returns SQL_NULL_DATA in the
+	pcbValue parameter when the data fetched for a particular column is NULL. When
+	the pcbValue is specified as a NULL pointer in your application, the driver
+	raises the correct error message according to the specification.
+	
+	NOTE: It is generally a good programming practice to specify valid pointers to
+	the pcbValue parameter.
+	
+	Additional query words: 2.50 2.65 MFC VC++ 4.0
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbSQLServSearch kbAudDeveloper kbODBCSearch kbSDKSearch kbSDKODBCSearch kbODBCSQLServ250 kbODBCSQLServ265 kbSDKODBC250
+	Version           : :2.5; WINDOWS:2.5,2.65
+	
+	=============================================================================
+	

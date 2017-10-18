@@ -1,0 +1,297 @@
+---
+layout: page
+title: "Q316318: HOWTO: Use NetQueryDisplayInformation() in Visual Basic"
+permalink: kb/316/Q316318/
+---
+
+## Q316318: HOWTO: Use NetQueryDisplayInformation() in Visual Basic
+
+	Article: Q316318
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 4.0
+	Operating System(s): 
+	Keyword(s): kbAPI kbSDKPlatform kbNetAPI kbDSupport kbGrpDSNet
+	Last Modified: 26-APR-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0, used with:
+	   - the operating system: Microsoft Windows XP 
+	   - the operating system: Microsoft Windows 2000 
+	   - the operating system: Microsoft Windows NT 4.0 
+	- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0, used with:
+	   - the operating system: Microsoft Windows XP 
+	   - the operating system: Microsoft Windows 2000 
+	   - the operating system: Microsoft Windows NT 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The sample code in this article demonstrates how to use the
+	NetQueryDisplayInformation function to enumerate users, machines, and groups
+	that are available in the specified domain in a 32-bit Visual Basic
+	application.
+	
+	NOTE: The 32-bit version of the NetQueryDisplayInformation function is only
+	supported in Microsoft Windows NT or later. This function uses Unicode for its
+	string parameters.
+	
+	MORE INFORMATION
+	================
+	
+	When you call C functions in Visual Basic, you must redefine or declare the
+	relevant constants, structures(types), and functional prototypes. The sample
+	code in this article demonstrates how to use NetQueryDisplayInformation at the
+	following levels:
+	
+	- Level 1 (NET_DISPLAY_USER) to enumerate all of the users in the specified
+	  domain.
+	
+	- Level 2 (NET_DISPLAY_MACHINE) to enumerate all of the servers that are
+	  present in the specified domain.
+	
+	- Level 3 (NET_DISPLAY_GROUP) to enumerate all of the groups that are present
+	  in the specified domain.
+	
+	You must also declare the prototypes for NetQueryDisplayInformation and the
+	memory management functions, such as the NetApiBufferFree, the RtlMoveMemory,
+	and the lstrcpyW functions.
+	
+	Use this Visual Basic code sample to create a Visual Basic form that includes the
+	following components:
+	
+	- One list box named List1. List1 displays the list of users, servers, or
+	  groups.
+	
+	- Two text boxes named txtPageSize and txtTotal. The txtPageSize text box
+	  displays the number of data per page, and the txtTotal text box displays the
+	  total number of items in the list.
+	
+	- Two command buttons named btnRun and btnExit. The btnRun button executes the
+	  NetQueryDisplayInformation function, and the btnExit button closes the
+	  application.
+	
+	- One frame named Frame1. In Frame1, you can select whether you want to display
+	  users, machines, or groups.
+	
+	  '/* definitions and declarations
+	  Private Declare Function NetQueryDisplayInformation Lib "netapi32.dll" _
+	          (ByVal lpwServername As String, _
+	          ByVal dwLevel As Long, _
+	          ByVal dwIndex As Long, _
+	          ByVal dwReqEntries As Long, _
+	          ByVal dwMaxLength As Long, _
+	          pdwNumEntries As Long, _
+	          pBuffer As Any) As Long
+	
+	  Private Declare Function NetApiBufferFree Lib "netapi32.dll" (BufPtr As Any) As Long
+	
+	  Private Declare Sub CopyMem Lib "KERNEL32" Alias "RtlMoveMemory" ( _
+	          hpvDest As Any, ByVal hpvSource As Long, ByVal cbCopy As Long)
+	
+	  Private Declare Function CopyString Lib "KERNEL32" Alias "lstrcpyW" ( _
+	          ByVal NewString As String, ByVal OldString As Long) As Long
+	          
+	
+	  Private Const NET_USER = 1
+	  Private Const NET_MACHINE = 2
+	  Private Const NET_GROUP = 3
+	  Private Const ERROR_MORE_DATA = 234
+	  Private Const REQUESTED_ENTRIES = 5
+	  Private Const MAX_PREFERRED_LENGTH = &HFFFF
+	
+	  Private Type NET_DISPLAY_USER
+	      usri1_name As Long      'lpwstr
+	      usri1_comment As Long   'lpwstr
+	      usri1_flags As Long
+	      usri1_full_name As Long 'lpwstr
+	      usri1_user_id As Long
+	      usri1_next_index As Long
+	  End Type
+	
+	  Private Type NET_DISPLAY_GROUP
+	      grpi3_name As Long      'lpwstr
+	      grpi3_comment As Long   'lpwstr
+	      grpi3_group_id As Long
+	      grpi3_attributes As Long
+	      grpi3_next_index As Long
+	  End Type
+	
+	  Private Type NET_DISPLAY_MACHINE
+	      usri2_name As Long      'lpwstr
+	      usri2_comment As Long   'lpwstr
+	      usri2_flags As Long
+	      usri2_user_id As Long
+	      usri2_next_index As Long
+	  End Type
+	
+	  Private Sub btnExit_Click()
+	      Unload Me
+	  End Sub
+	
+	  Private Sub btnRun_Click()
+	      '/* This code enumerates domain users.
+	      Dim pndu() As NET_DISPLAY_USER
+	      Dim pndm() As NET_DISPLAY_MACHINE
+	      Dim pndg() As NET_DISPLAY_GROUP
+	      Dim pszTemp As String, pszServer As String
+	      Dim pBuffer As Long
+	      Dim lLevel As Long
+	      Dim lResult As Long
+	      Dim lIndex As Long
+	      Dim lNumEntries As Long
+	      Dim lTotalEntries As Long
+	      
+	      List1.Clear
+	      
+	      ' Get the domain controller name. It can be a null string.
+	      pszTemp = Chr(0)
+	      pszTemp = InputBox("Enter domain controller name: (eg. \\domain-01)", "DC Name")
+	      If Len(pszTemp) = 0 Then
+	          pszServer = vbNullString
+	      Else
+	          pszServer = StrConv(pszTemp, vbUnicode)
+	      End If
+	      
+	      lIndex = 0
+	      lTotalEntries = 0
+	      lNumEntries = 0
+	      lResult = ERROR_MORE_DATA
+	      
+	      If (txtPageSize < 1) Then
+	          txtPageSize = REQUESTED_ENTRIES
+	      End If
+	      
+	      If (optUser = True) Then
+	          While lResult = ERROR_MORE_DATA
+	              List1.AddItem "---------------"
+	              lResult = NetQueryDisplayInformation(pszServer, NET_USER, lIndex, _
+	                          txtPageSize, MAX_PREFERRED_LENGTH, lNumEntries, pBuffer)
+	           
+	              If lResult = 0 Or lResult = ERROR_MORE_DATA Then
+	                  If lNumEntries > 0 Then
+	                      ReDim pndu(lNumEntries - 1)
+	                      '/* Copy information to VB friendly structure
+	                      CopyMem pndu(0), ByVal pBuffer, Len(pndu(0)) * lNumEntries
+	                      
+	                      For i = 0 To lNumEntries - 1
+	                          List1.AddItem PointerToString(pndu(i).usri1_name)
+	                      Next
+	                      
+	                      '/* Get index for next iteration
+	                      lIndex = pndu(i - 1).usri1_next_index
+	                  End If
+	              Else
+	                  MsgBox "Error: " & lResult
+	              End If
+	              
+	              If pBuffer Then
+	                  '/* Release NetAPI buffer
+	                  NetApiBufferFree (pBuffer)
+	              End If
+	              
+	              lTotalEntries = lNumEntries + lTotalEntries
+	          Wend
+	      ElseIf (optMachine = True) Then
+	          While lResult = ERROR_MORE_DATA
+	              List1.AddItem "---------------"
+	              lResult = NetQueryDisplayInformation(pszServer, NET_MACHINE, lIndex, _
+	                          txtPageSize, MAX_PREFERRED_LENGTH, lNumEntries, pBuffer)
+	           
+	              If lResult = 0 Or lResult = ERROR_MORE_DATA Then
+	                  If lNumEntries > 0 Then
+	                      ReDim pndm(lNumEntries - 1)
+	                      '/* Copy information to VB friendly structure
+	                      CopyMem pndm(0), ByVal pBuffer, Len(pndm(0)) * lNumEntries
+	                      
+	                      For i = 0 To lNumEntries - 1
+	                          List1.AddItem PointerToString(pndm(i).usri2_name)
+	                      Next
+	                      
+	                      '/* Get index for next iteration
+	                      lIndex = pndm(i - 1).usri2_next_index
+	                  End If
+	              Else
+	                  MsgBox "Error: " & lResult
+	              End If
+	              
+	              If pBuffer Then
+	                  '/* Release NetAPI buffer.
+	                  NetApiBufferFree (pBuffer)
+	              End If
+	              
+	              lTotalEntries = lNumEntries + lTotalEntries
+	          Wend
+	      ElseIf (optGroup = True) Then
+	          While lResult = ERROR_MORE_DATA
+	              List1.AddItem "---------------"
+	              lResult = NetQueryDisplayInformation(pszServer, NET_GROUP, lIndex, _
+	                          txtPageSize, MAX_PREFERRED_LENGTH, lNumEntries, pBuffer)
+	           
+	              If lResult = 0 Or lResult = ERROR_MORE_DATA Then
+	                  If lNumEntries > 0 Then
+	                      ReDim pndg(lNumEntries - 1)
+	                      '/* Copy information to VB friendly structure
+	                      CopyMem pndg(0), ByVal pBuffer, Len(pndg(0)) * lNumEntries
+	                      
+	                      For i = 0 To lNumEntries - 1
+	                          List1.AddItem PointerToString(pndg(i).grpi3_name)
+	                      Next
+	                      
+	                      '/* Get index for next iteration
+	                      lIndex = pndg(i - 1).grpi3_next_index
+	                  End If
+	              Else
+	                  MsgBox "Error: " & lResult
+	              End If
+	              
+	              If pBuffer Then
+	                  '/* Release NetAPI buffer.
+	                  NetApiBufferFree (pBuffer)
+	              End If
+	              
+	              lTotalEntries = lNumEntries + lTotalEntries
+	          Wend
+	      Else
+	          MsgBox "Invalid level!"
+	      End If
+	
+	      txtTotal.Text = lTotalEntries
+	  End Sub
+	
+	  Private Function PointerToString(lpszString As Long) As String
+	      Dim Temp1 As String, res As Long, Temp2 As String
+	      Temp1 = String(1000, "*")
+	      res = CopyString(Temp1, lpszString)
+	      Temp2 = (StrConv(Temp1, vbFromUnicode))
+	      PointerToString = Left(Temp2, InStr(Temp2, Chr$(0)) - 1)
+	  End Function
+	
+	REFERENCES
+	==========
+	
+	For additional information, click the article numbers below to view the articles
+	in the Microsoft Knowledge Base:
+	
+	  Q159498 HOWTO: Call LanMan Services from 32-bit Visual Basic Apps
+	
+	  Q159423 HOWTO: Call LAN Manager Functions from 16-bit Visual Basic 4.0
+	
+	  Q151774 HOWTO: Call NetUserGetInfo from Visual Basic
+	
+	  Q106553 HOWTO: Write C DLLs and Call Them from Visual Basic
+	
+	  Q118643 How to Pass a String or String Arrays Between VB and a C DLL
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbAPI kbSDKPlatform kbNetAPI kbDSupport kbGrpDSNet 
+	Technology        : kbVBSearch kbAudDeveloper kbVB400Search
+	Version           : :4.0
+	Issue type        : kbhowto kbinfo
+	
+	=============================================================================
+	

@@ -1,0 +1,241 @@
+---
+layout: page
+title: "Q312463: FS: &quot;Scenery Read Error&quot; Err Msg When Starting Flight"
+permalink: kb/312/Q312463/
+---
+
+## Q312463: FS: &quot;Scenery Read Error&quot; Err Msg When Starting Flight
+
+	Article: Q312463
+	Product(s): Microsoft Home Games
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kberrmsg kbimu
+	Last Modified: 10-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Flight Simulator 2000 
+	- Microsoft Flight Simulator 2000 Professional Edition 
+	- Microsoft Flight Simulator 2002 
+	- Microsoft Flight Simulator 2002 Professional Edition 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you attempt to start a flight in Microsoft Flight Simulator 2000, you may
+	receive an error message similar to one of the following:
+	
+	  The file scenery.cfg is missing or damaged. Please reinstall Flight Simulator
+	  2000 to restore or repair the file. Flight Simulator will now exit.
+	
+	When you attempt to start a flight in Microsoft Flight Simulator 2002, you may
+	receive an error message similar to one of the following:
+	
+	  scenedb\cities\anchor\capitolscenery in scenery area 071 not found
+	
+	  -or-
+	
+	  Scenery Read Error:
+	  Attempting to open a non-existent directory
+	
+	  -or-
+	
+	  scenery.cfg file error. <scenery path and file> scenery area
+	  <area> not found
+	
+	where <scenery path and file> is the path and file, and the <area> is
+	the area in question.
+	
+	CAUSE
+	=====
+	
+	This behavior can occur if the Flight Simulator installation process is
+	corrupted.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, use the following methods in the order presented.
+	
+	Method 1: Uninstall Program, Delete Program Folder, Clean-boot, Reinstall Program
+	---------------------------------------------------------------------------------
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	NOTE: On a Microsoft Windows XP-based computer, click Start, and then click
+	Control Panel.
+	
+	2. Double-click Add/Remove Programs.
+	
+	3. On the Install/Uninstall tab, double-click "Microsoft Flight Simulator 2000"
+	  or "Microsoft Flight Simulator 2002", and then follow the steps to uninstall
+	  the program.
+	
+	Delete the FS2000 or FS2002 Folder
+	----------------------------------
+	
+	1. Click Start, and then click Run.
+	
+	2. In the Open box, type the following:
+	
+	  "c:\Program Files\Microsoft Games" (with quotation marks)
+	
+	3. Click OK.
+	
+	4. In the Microsoft Games dialog box, right-click the FS2000 or FS2002 folder,
+	  and then click Delete.
+	
+	5. Close the Microsoft Games dialog box.
+	
+	Clean-Boot Your Computer
+	------------------------
+	
+	To clean-boot your computer, use the method appropriate to your version of
+	Windows.
+	
+	Microsoft Windows Millennium Edition (Me):
+	
+	For additional information about how to perform a clean boot, click the article
+	number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q267288 How to Perform a Clean Boot in Windows Millennium Edition
+	
+	Microsoft Windows 98:
+	
+	Run the System Configuration utility (Msconfig.exe) to perform a clean boot. To
+	do this, follow these steps:
+	
+	1. Click Start, and then click Run.
+	
+	2. In the Open box, type "msconfig" (without the quotation marks), and then
+	  click OK.
+	
+	3. Click the General tab, click Selective Startup, and then click to clear the
+	  following check boxes:
+	
+	   - Process Config.sys File
+	   - Process Autoexec.bat File
+	   - Process Winstart.bat File (if available)
+	   - Process Win.ini File
+	   - Load Startup Group Items
+	
+	4. Click OK. Restart your computer when you are prompted to do so.
+	
+	For additional information about how to clean-boot Windows 98, click the article
+	number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q192926 How to Perform Clean-Boot Troubleshooting for Windows 98
+	
+	Reinstall the Program
+	---------------------
+	
+	Insert CD1 of the Flight Simulator compact disc package into your computer's
+	CD-ROM or DVD-ROM drive, and then follow the steps to install the program.
+	
+	Method 2: Limit Memory
+	----------------------
+	
+	To do this, use the appropriate steps for your situation:
+	
+	Microsoft Windows XP
+	--------------------
+	
+	1. Click Start, and then click Run.
+	
+	2. In the Open box, type "msconfig" (without the quotation marks), and then
+	  click OK.
+	
+	3. In the System Configuration Utility dialog box, click the Boot.ini tab.
+	
+	4. Click Advanced Options.
+	
+	5. Click to select the /MAXMEM= check box, type "850" (without the quotation
+	  marks) (or type a lower number), and then click OK.
+	
+	6. Click Apply, and then click OK.
+	
+	7. When you are prompted, restart your computer.
+	
+	Microsoft Windows NT 4.0 or Microsoft Windows 2000
+	--------------------------------------------------
+	
+	1. Log on to Microsoft Windows NT 4.0 or Microsoft Windows 2000 as
+	  Administrator.
+	
+	2. Click Start, and then click Run.
+	
+	3. In the Open box, type "cmd" (without the quotation marks), and then click OK.
+	
+	4. Change to the root directory of the system partition, which is (the partition
+	  where Boot.ini, Ntdetect.com, and NTLDR reside. (This is usually the C:\
+	  partition.) For example, type "c:" (without the quotation marks), press
+	  ENTER, type "cd\" (without the quotation marks) and then press ENTER.
+	
+	5. Type "attrib -a -h -s boot.ini" (without the quotation marks), and then press
+	  ENTER.
+	
+	6. Type "copy boot.ini boot.old" (without the quotation marks).
+	
+	  NOTE: This creates a backup copy of the Boot.ini file and names it Boot.old.
+	
+	7. Type "edit boot.ini" (without the quotation marks), and then press ENTER.
+	
+	8. Use the ARROW keys to move to the end of the ARC path that you want under
+	  [operating systems].
+	
+	9. Type /MAXMEM=256.
+	
+	  For example, the ARC path might appear as follows:
+	
+	  multi(0)disk(0)rdisk(0)partition(2)\WINNT="Microsoft Windows 2000
+	  Professional" /fastdetect /MAXMEM=256 and so on.
+	
+	10. Press ALT+F, and then press S.
+	
+	11. Press ALT+F, and then press X.
+	
+	12. Type "attrib +a +s +h boot.ini" (without the quotation marks), and then
+	  press ENTER.
+	
+	13. Type "exit" (without the quotation marks), and then press ENTER.
+	
+	14. Restart the computer.
+	
+	For additional information about the MAXMEM Option in Windows, click the article
+	number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q108393 MAXMEM Option in Windows NT BOOT.INI File
+	
+	Microsoft Windows Millennium Edition (Me) or Microsoft Windows 98
+	-----------------------------------------------------------------
+	
+	1. Click Start, and then click Run.
+	
+	2. In the Open box, type "msconfig" (without the quotation marks), and then
+	  click OK.
+	
+	3. In the System Configuration Utility dialog box, click the Advanced tab.
+	
+	4. In the Advanced Troubleshooting Settings dialog box, click to select the
+	  "Limit memory to" check box, and then select the appropriate option.
+	
+	5. Click OK twice.
+	
+	6. Click Yes when you are prompted to restart your computer.
+	
+	NOTE: After you have limited the available memory on your system, repeat "Method
+	1".
+	
+	Additional query words: msgame scenery.cfg
+	
+	======================================================================
+	Keywords          : kberrmsg kbimu 
+	Technology        : kbGamesSearch kbFlightSimSearch kbFlightSim2000 kbFlightSim2002 kbFlightSim2002Pro kbSimSearch
+	Version           : :
+	Issue type        : kbprb
+	
+	=============================================================================
+	

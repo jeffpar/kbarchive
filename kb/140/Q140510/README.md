@@ -1,0 +1,136 @@
+---
+layout: page
+title: "Q140510: Not All CD-ROM Changer Drives Visible in Windows 95"
+permalink: kb/140/Q140510/
+---
+
+## Q140510: Not All CD-ROM Changer Drives Visible in Windows 95
+
+	Article: Q140510
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:95
+	Operating System(s): 
+	Keyword(s): kbfile kbhw win95 kbHardware kbgraphxlinkcritical
+	Last Modified: 21-DEC-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 95 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Microsoft has released new protected-mode drivers for CD-ROM changers to correct
+	the following two problems in Windows 95:
+	
+	- TORiSAN CDR-C3G (Sanyo) CD-ROM Drives
+	
+	  The second and third drives on a TORiSAN CDR-C3G (Sanyo) CD-ROM drive are not
+	  available in Windows 95. If you use the real-mode drivers (Torisan.sys and
+	  Mscdex.exe), you have full access to all three CD-ROM drives in MS-DOS. If
+	  you use the real-mode drivers and run Windows 95, My Computer displays drive
+	  letter icons for the second and third CD-ROM drives, but double-clicking the
+	  drive letter icons shows empty windows. If you use the protected-mode Windows
+	  95 drivers, the drive letter icons do not appear.
+	
+	
+	- CD-ROM Changers Do Not Work in Windows 95
+	
+	  Other generic CD-ROM changers (such as the NEC 4-disc changer) may not work
+	  properly in Windows 95.
+	
+	
+	CAUSE
+	=====
+	
+	CD-ROM changers may not work in Windows 95 due to the use of non-standard IDE
+	specifications by the CD-ROM drive manufacturer.
+	
+	RESOLUTION
+	==========
+	
+	To correct this problem, install the updated CD-ROM changer drivers. To do so,
+	follow these steps:
+	
+	1. Download the Cdchnger.exe file to an empty folder.
+	
+	2. In My Computer or Windows Explorer, double-click the Cdchnger.exe file you
+	  downloaded in step 1.
+	
+	3. Follow the instructions on the screen.
+	
+	4. Shut down and restart your computer.
+	
+	The following file is available for download from the Microsoft Download Center:
+	
+	  Download Cdchnger.exe now
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. Once posted, the file is housed on secure
+	servers that prevent any unauthorized changes to the file.
+	
+	STATUS
+	======
+	
+	This issue is resolved in Microsoft Windows 98.
+	
+	MORE INFORMATION
+	================
+	
+	The updated drivers resolve the problems described in this article by allowing
+	ATAPI-compliant CD-ROM changers to be seen and used in Windows 95.
+	
+	The Cdchnger.exe file contains the following updated files for Windows 95:
+	
+	File name     Version   Date/Time        Size    Folder installed in
+	------------------------------------------------------------------------
+	Atapchng.vxd  4.00.951  01/08/96 5:41PM  11,314  Windows\System\Iosubsys
+	CdChg_Un.inf  -         04/22/96 2:07PM     525  Windows
+	Cdchnger.inf  -         04/22/96 3:14PM     835  Not copied to hard disk
+	Cdvsd.vxd     4.00.952  11/14/95 3:15PM  19,120  Windows\System\Iosubsys
+	Scsi1hlp.vxd  4.00.953  12/21/95 3:58PM  19,213  Windows\System\Iosubsys
+	Torisan3.vxd  4.00.952  11/14/95 3:15PM  11,094  Windows\System\Iosubsys
+	Voltrack.vxd  4.00.952  11/14/95 3:15PM  18,518  Windows\System\Iosubsys
+	
+	All of these files are updates to Windows 95 files, except for the Atapchng.vxd
+	file. This is a new file that is installed in the Windows\ System\Iosubsys
+	folder.
+	
+	NOTE: If the beta CD-ROM driver Sanyo3.vxd is located in the Windows\
+	System\Iosubsys folder, remove it. If this file is not removed, the Torisan3.vxd
+	driver does not work correctly and you may experience a problem with five
+	(instead of three) CD-ROM drives appearing in My Computer. The last two of these
+	drives are duplicates of the first two actual CD-ROM drives.
+	
+	How to Uninstall
+	----------------
+	
+	1. Using Windows Explorer, locate the Cdchg_un.inf file in the Windows folder.
+	  Use the right mouse button to click the Cdchg_un.inf file, and then click
+	  Install on the menu that appears.
+	
+	2. You are prompted for the Windows 95 installation CD-ROM or disks. Specify the
+	  appropriate path.
+	
+	3. You may be prompted to replace newer files with older versions of the same
+	  file. To uninstall this update, choose to replace the newer files.
+	
+	4. Restart the computer for the changes to take effect.
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbfile kbhw win95 kbHardware kbgraphxlinkcritical 
+	Technology        : kbWin95search kbZNotKeyword3
+	Version           : WINDOWS:95
+	
+	=============================================================================
+	

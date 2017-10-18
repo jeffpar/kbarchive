@@ -1,0 +1,104 @@
+---
+layout: page
+title: "Q168448: WD97: Batch Conversion Wizard Enters Endless Loop"
+permalink: kb/168/Q168448/
+---
+
+## Q168448: WD97: Batch Conversion Wizard Enters Endless Loop
+
+	Article: Q168448
+	Product(s): Word 97 for Windows
+	Version(s): WINDOWS:97
+	Operating System(s): 
+	Keyword(s): kbtool kbusage winword word97
+	Last Modified: 14-NOV-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you use the Batch Conversion Wizard to convert a Word mail merge main
+	document, you will be unable to cancel the Open Data Source dialog box if Word
+	cannot locate the data source.
+	
+	CAUSE
+	=====
+	
+	This problem occurs because Visual Basic for Applications takes control from the
+	wizard and does not give the control back; in this situation, the Open Data
+	Source dialog box will not respond to the Cancel button.
+	
+	WORKAROUND
+	==========
+	
+	To get out of the loop, use one of the following methods.
+	
+	Method 1: Connect to Any Data Source
+	------------------------------------
+	
+	Connect to any data source; although, this may cause some data field problems.
+	For information about how to address these problems, see the "More Information"
+	section of this article.
+	
+	Method 2: Create a New Data Source
+	----------------------------------
+	
+	Create a new data source file within Microsoft Word that contains the same mail
+	merge data fields. This file does not need to contain any data. Once the file
+	has been created, open it as the data source when running the Wizard.
+	
+	Method 3: Force Word to Close
+	-----------------------------
+	
+	Press CTRL+ALT+DEL to bring up the Close Program dialog box and then press End
+	Task for Microsoft Word. You may have to press End Task a second time.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products listed at
+	the beginning of this article.
+	
+	MORE INFORMATION
+	================
+	
+	The StartConversionWizard is a macro within the Convert8.wiz file that is
+	shipped with Microsoft Word 97. The default location for the Convert8.wiz is
+	Program Files\Microsoft Office\Office\Macros. This wizard is not installed
+	during a Typical Installation.
+	
+	For additional information concerning the Batch Conversion Wizard, please see the
+	following articles in the Microsoft Knowledge Base:
+	
+	  Q157094 WD97: Using StartConversionWizard To Convert Multiple Documents
+	
+	  Q162490 WD97: How to Access Sample Macros for Word 97
+	
+	For additional information on how to add or remove a component of Office, please
+	see the following article in the Microsoft Knowledge Base:
+	
+	  Q120802 Office: How to Add/Remove a Single Office Program or Component
+	
+	
+	For additional information concerning mail merge data sources, please see the
+	following articles in the Microsoft Knowledge Base:
+	
+	  Q142756 WD: How to Design and Set Up Mail Merge Data Sources
+	
+	  Q115247 WD: Cannot Cancel "Invalid Merge Field" Error Loop
+	
+	Additional query words: 8.0
+	
+	======================================================================
+	Keywords          : kbtool kbusage winword word97 
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : WINDOWS:97
+	Issue type        : kbprb
+	
+	=============================================================================
+	

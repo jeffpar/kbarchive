@@ -1,0 +1,551 @@
+---
+layout: page
+title: "Q107373: WFWG 3.11: Hardware Compatibility List - Computers"
+permalink: kb/107/Q107373/
+---
+
+## Q107373: WFWG 3.11: Hardware Compatibility List - Computers
+
+	Article: Q107373
+	Product(s): Microsoft Windows 3.x Retail Product
+	Version(s): WINDOWS:3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 23-SEP-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows for Workgroups version 3.11 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article contains a list of computer systems that have been tested and found
+	to be compatible with Windows for Workgroups 3.11. Microsoft will add additional
+	information to this article as it becomes available.
+	
+	
+	MORE INFORMATION
+	================
+	
+	System Name
+	-----------
+	
+	Acer Altos 7000/FT66TY
+	Acer Power 425s
+	Acer Power 433
+	Acer Power 433s
+	Acer Power 433V
+	Acer Power 450d
+	Acer Power 466d
+	Acer/Altos 7000
+	ACTech ACTion EISA 486DX-50
+	ACTech ACTion EISA 486DX/2-66
+	ACTech ACTion ISA 486DX-33
+	ACTech ACTion ISA 486DX-50
+	ACTech ACTion ISA 486DX/2-50
+	ACTech ACTion ISA 486DX/2-66
+	ACTech ACTion ISA 486SX-25
+	ACTech ACTion VLB 486DX-33
+	ACTech ACTion VLB 486DX/2-50
+	ACTech ACTion VLB 486DX2-66
+	ACTech ACTion VLB 486DX50
+	ACTech ACTion VLB 486SX-25
+	ADI MT486 DX
+	ADS 486 VESA Upgradeable
+	Apricot LS Pro 386SX-33
+	Apricot XEN LS II
+	Apricot XEN LS II 486SX/33
+	Apricot XEN PC 486DX/2-66
+	ASEM DS486II
+	ASEM ECOPC
+	AST Bravo LC 4/33s
+	AST Bravo LC2 4/33
+	AST Bravo LC2 4/50d
+	AST Bravo LC2 4/66d
+	AST Bravo LC2 425s
+	AST Bravo LP 4/25s
+	AST Bravo LP 4/33
+	AST Bravo LP 4/66d
+	AST Premmia MTE 4/33
+	AST Premmia MTE 4/66d
+	Chaplet NBDE
+	Compaq ProLinea MT CDS (486DX2/66MHz)
+	Compaq Deskpro 3/25i
+	Compaq Deskpro 386/25M
+	Compaq Deskpro 386/33M
+	Compaq Deskpro 4/25is
+	Compaq Deskpro 4/33i
+	Compaq Deskpro 4/33is
+	Compaq Deskpro 4/66i
+	Compaq Deskpro 486/33M
+	Compaq Deskpro 486s/16M
+	Compaq Deskpro 486s/25M
+	Compaq Deskpro 486s/33M
+	Compaq Deskpro 5/60M
+	Compaq Deskpro 5/66M
+	Compaq Deskpro 50M
+	Compaq Deskpro 66M
+	Compaq Presario 425
+	Compaq Presario 625
+	Compaq Presario 633
+	Compaq Presario 833 CDS
+	Compaq Presario 850
+	Compaq Presario 850 CDS
+	Compaq Presario 866
+	Compaq ProLinea 3/25zs
+	Compaq ProLinea 4/25s
+	Compaq ProLinea 4/33
+	Compaq ProLinea 4/50
+	Compaq ProLinea 4/66
+	Compaq ProLinea CDS
+	Compaq ProLinea MT 4/33s
+	Compaq ProLinea MT 4/50
+	Compaq ProLinea MT 4/66
+	Compaq ProLinea MT CDS (486SX/33MHz)
+	Computer Sales Pro 486DX2\66
+	Computer Sales Pro 486DX33
+	Computer Sales Pro 486DX50
+	Computer Sales Pro 486SX25
+	Daewoo CPC 2600 Desktop
+	Daewoo CPC 2700U Desktop
+	Daewoo CPC 2900 Mini Tower
+	Daewoo Green PC 2500
+	DEC PC 433dx MT
+	DECpc 325SL/SLC
+	DECpc 333sx LP
+	DECpc 425SL/SLC
+	DECpc 425sx LP
+	DECpc 433 ST
+	DECpc 433dx LP
+	DECpc 433dx MTE
+	DECpc 433sx LP
+	DECpc 450 ST
+	DECpc 450d2 LP
+	DECpc 450d2 MT
+	DECpc 452 ST
+	DECpc 466 ST
+	DECpc 466d2 MT
+	DECpc 466d2 MTE
+	DECpc 560 ST
+	DECpc LPv 425sx
+	DECpc LPv 433dx
+	DECpc LPv 433sx
+	DECpc LPv 450d2
+	DECpc LPv 466d2
+	DECpc LPv 466d2 LP
+	DECpc LPx 433dx
+	DECpc LPx 433dx
+	DECpc LPx 433sx
+	DECpc LPx 433sx
+	DECpc LPx 450d2
+	DECpc LPx 466d2
+	Eagle Rohan
+	Eagle Test
+	Expo Tech 321E Notebook
+	Expo Tech 322 Notebook
+	Expo Tech 386SX/3 Desktop
+	Expo Tech 386SX/3 Ultra Slim
+	Expo Tech 486 DX/2 Desktop (w/LBVGA)
+	Expo Tech 486DX/2 Desktop (w/VLBus)
+	Expo Tech 486DX/3 Desktop
+	Expo Tech 486DX/3 Desktop (w/LBVGA)
+	Expo Tech 486DX/3 Desktop (w/VLBus)
+	Expo Tech 486DX/3 Tower
+	Expo Tech 486DX/3 Ultra SLim
+	Expo Tech 486DX2/4 Desktop
+	Expo Tech 486DX2/4 Desktop (w/LBVGA)
+	Expo Tech 486DX2/4 Tower
+	Expo Tech 486DX2/4 Tower (w/VLBus)
+	Expo Tech 486DX2/6 Desktop
+	Expo Tech 486DX2/6 Tower
+	Expo Tech 486DX2/6 Tower (w/VLBus)
+	Expo Tech 486DX2/66 Deskto (w/VLBUS)
+	Expo Tech 486SX/3 Deskto p(w/LBVGA)
+	Expo Tech 486SX/3 Desktop (w/VLBus)
+	Expo Tech 486SX/3 Tower
+	Expo Tech 486SX/3 Tower (w/VLBus)
+	Expo Tech 486SX/3 Ultra Slim (w/LVBGA)
+	Expo Tech 486SX/4 Deskto (w/VLBus)
+	Expo Tech 486SX/4 Desktop
+	Expo Tech 486SX/4 Desktop (w/LBVGA)
+	Expo Tech 486SX/4 Tower
+	Expo Tech 486SX/4 Tower (w/VLBus)
+	Expo Tech 486SX/4 Ultra Slim(w/LBVGA)
+	Expo Tech LT 421 Notebook
+	First International Leo 486-JA
+	First International Leo-486 KVD
+	First International Leo-VAC-V
+	FMC LAN MACHINE
+	Fountain Tech UMC 486 DX2-66
+	Fountain Technology 486DX2/50
+	Fountain Technology 486DX2/66
+	Fountain Technology 486DX33
+	Fountain Technology 486DX50
+	Fountain Technology 486SX25
+	Fujitsu S-4066
+	Fujitsu S-366
+	Fujitsu S-466
+	GoldStar GS 425SXE
+	GoldStar GS 486ID66C/66Mhz
+	GoldStar GS466DXE
+	GoldStar GS466ID 25C 25Mhz
+	ICL C4/33B
+	ICL DL/33
+	Intercomp DIGIT 486SLC/25
+	Intercomp Friends 486DX/33
+	Intercomp Master 486DX2/66
+	Intercomp Planet 486DX/33
+	Intercomp Planet II 486 DX2/66
+	Intercomp Target 486DX/50
+	IPC Dynasty HE 486DX-33C
+	IPC Dynasty HE 486DX2-50C
+	IPC Dynasty HE 486DX2-66c
+	IPC Dynasty HE 486SX-25C
+	IPC Dynasty LE 486DX-33C
+	IPC Dynasty LE 486DX2-50C
+	IPC Dynasty LE 486DX2-66C
+	IPC Dynasty SE 486DX-33C
+	IPC Dynasty SE 486DX2-50C
+	IPC Dynasty SE 486DX2-66C
+	IPC Dynasty SE 486SX-25C
+	IPC Dynsty LE 486SX-25C
+	KT 486/33 VL-BUS
+	KT 486/33 VL-BUS/3S
+	KT 486/50 VL-BUS
+	Micro Byte Lyrebird 455
+	Mind 386DX40 ISA
+	Mind 486 DX-33E
+	Mind 486 SX-25
+	Mind 486DX-266 EISA
+	Mind 486DX250
+	Mind 486DX266
+	Mind 486DX50
+	Mind 486DX50 EISA
+	Mind 486SX25
+	NCR 3333-B22
+	Olivetti M3-30/P
+	Olivetti M300-15 SX 25 Mhz
+	Olivetti M300-30
+	Olivetti M4-40
+	Olivetti M4-46
+	Olivetti M4-60
+	Olivetti M4-64 DX33
+	Olivetti M4-65
+	Olivetti M4-82 (KPC 450)
+	Olivetti M400-60
+	Olivetti M480-10 486SX25
+	Olivetti M480-20AT
+	Olivetti M6-420
+	Olivetti M6-450 DX2-50Mhz
+	Olivetti M6-460
+	Olivetti M6-520
+	Olivetti M6-540
+	Olivetti M6-560
+	Olivetti M6-620 Pentium
+	Packard Bell  486DX/33
+	Packard Bell 1110
+	Packard Bell 1120
+	Packard Bell 1150(+)
+	Packard Bell 2066 Minitower (*)
+	Packard Bell 400DX-33
+	Packard Bell 400DX-33
+	Packard Bell 400DX2/50
+	Packard Bell 400DX2/66
+	Packard Bell 400SX-25
+	Packard Bell 400T
+	Packard Bell 410SX/25
+	Packard Bell 410SX/33
+	Packard Bell 420DX/33
+	Packard Bell 420DX2/66
+	Packard Bell 420SX/25
+	Packard Bell 420SX/33
+	Packard Bell 470
+	Packard Bell 486CDM(+)
+	Packard Bell 486SX/25
+	Packard Bell 486T50
+	Packard Bell 495
+	Packard Bell 515E
+	Packard Bell 525E
+	Packard Bell 545E
+	Packard Bell 550(*)
+	Packard Bell 560
+	Packard Bell 565E
+	Packard Bell Axcel 1033
+	Packard Bell Axcel 105
+	Packard Bell Axcel 1066(*)
+	Packard Bell Axcel 130
+	Packard Bell Axcel 2005(+)
+	Packard Bell Axcel 2015(+)
+	Packard Bell Axcel 2033 Minitower (*)
+	Packard Bell Axcel 205(8)
+	Packard Bell Axcel 230
+	Packard Bell Axcel 405
+	Packard Bell Axcel 405(*)
+	Packard Bell Axcel 405H
+	Packard Bell Axcel 430(*)
+	Packard Bell Axcel 460
+	Packard Bell Axcel 486A66(*)
+	Packard Bell Axcel 550
+	Packard Bell Axcel 550MT/J
+	Packard Bell Axcel 850(*)
+	Packard Bell Axcel Minitower (*)
+	Packard Bell Executive 486/33G
+	Packard Bell Executive 486/33J
+	Packard Bell Executive 486SX-EC
+	Packard Bell Force 1066(*)
+	Packard Bell Force 107
+	Packard Bell Force 110
+	Packard Bell Force 1135
+	Packard Bell Force 1137
+	Packard Bell Force 117
+	Packard Bell Force 200
+	Packard Bell Force 2010(+)
+	Packard Bell Force 2020(+)
+	Packard Bell Force 2040 Minitower (+)
+	Packard Bell Force 2233 Minitower
+	Packard Bell Force 2376
+	Packard Bell Force 2376F(*)
+	Packard Bell Force 2386 Minitower (*)
+	Packard Bell Force 250(*)
+	Packard Bell Force 405
+	Packard Bell Force 425
+	Packard Bell Force 486/33G
+	Packard Bell Force 486/33J
+	Packard Bell Force 486/33JW
+	Packard Bell Force 486CDM-1/TV(+)
+	Packard Bell Force 486MT50J
+	Packard Bell Force 486SX/25
+	Packard Bell Force 486SX/25G
+	Packard Bell Force 486SX/25W
+	Packard Bell Force 48825
+	Packard Bell Force 515S
+	Packard Bell Force 515S Plus
+	Packard Bell Force 525
+	Packard Bell Force 525B
+	Packard Bell Force 525S
+	Packard Bell Force 545
+	Packard Bell Force 545B
+	Packard Bell Force 545S
+	Packard Bell Force 565
+	Packard Bell Force 565
+	Packard Bell Force 565S
+	Packard Bell Force 600
+	Packard Bell Force 600B
+	Packard Bell Force 600S
+	Packard Bell Force 715 Minitower (*)
+	Packard Bell Force T66(*)
+	Packard Bell Legend 102 Elite
+	Packard Bell Legend 102H
+	Packard Bell Legend 1134 Elite (*)
+	Packard Bell Legend 1135
+	Packard Bell Legend 1136(*)
+	Packard Bell Legend 1137
+	Packard Bell Legend 115
+	Packard Bell Legend 1166(*)
+	Packard Bell Legend 1176(*)
+	Packard Bell Legend 120
+	Packard Bell Legend 125
+	Packard Bell Legend 126 Elite ((*)
+	Packard Bell Legend 127(*)
+	Packard Bell Legend 128
+	Packard Bell Legend 135(*)
+	Packard Bell Legend 135H(*)
+	Packard Bell Legend 140(*)
+	Packard Bell Legend 1900(+)
+	Packard Bell Legend 1910(+)
+	Packard Bell Legend 2000(+)
+	Packard Bell Legend 2001 (+)
+	Packard Bell Legend 2002 Elite (+)
+	Packard Bell Legend 2011 Supreme (+)
+	Packard Bell Legend 2025(+)
+	Packard Bell Legend 207(*)
+	Packard Bell Legend 2133 Minitower (*)
+	Packard Bell Legend 2135 Minitower (*)
+	Packard Bell Legend 2176 Elite MT(*)
+	Packard Bell Legend 2276 Minitower (*)
+	Packard Bell Legend 2266 Minintower (*)
+	Packard Bell Legend 2270 Minitower (*)
+	Packard Bell Legend 2300 Minitower (+)
+	Packard Bell Legend 233(*)
+	Packard Bell Legend 234 Elite (*)
+	Packard Bell Legend 245
+	Packard Bell Legend 33T Supreme Minitower (*)
+	Packard Bell Legend 486CDM-1/TV(+)
+	Packard Bell Legend 486T/50(*)
+	Packard Bell Legend 625
+	Packard Bell Legend 660
+	Packard Bell Legend 660 ELITE (*)
+	Packard Bell Legend 660H
+	Packard Bell Legend 66D Supreme(*)
+	Packard Bell Legend 66D Supreme(*)
+	Packard Bell Legend 66T Supreme (*)
+	Packard Bell Legend 670(*)
+	Packard Bell Legend 695 Supreme
+	Packard Bell Legend 700
+	Packard Bell Legend 700 Elite (*)
+	Packard Bell Legend 740(*)
+	Packard Bell Legend 747 Minitower (*)
+	Packard Bell Legend 750 SUPREME
+	Packard Bell Legend 760 Supreme
+	Packard Bell Legend 770
+	Packard Bell Legend 770 ELITE(*)
+	Packard Bell Legend 780 Supreme (*)
+	Packard Bell Legend 780(*)
+	Packard Bell Legend 790
+	Packard Bell Legend 800 SUPREME(*)
+	Packard Bell Legend 800 Supreme/50(*)
+	Packard Bell Legend 800+ SUPREME(*)
+	Packard Bell Legend 840 Minitower (*)
+	Packard Bell Legend 845 Minitower (*)
+	Packard Bell Legend 848 Minitower (*)
+	Packard Bell Legend 925G
+	Packard Bell Legend 925G Elite
+	Packard Bell Legend 925J
+	Packard Bell Legend 933G
+	Packard Bell Legend 933G ELITE
+	Packard Bell Legend 933J
+	Packard Bell Legend 933J ELITE
+	Packard Bell Legend 933J+
+	Packard Bell Legend 950 ELITE(*)
+	Packard Bell Legend 950(*)
+	Packard Bell Legend 950J ELITE
+	Packard Bell Legend M950(*)
+	Packard Bell Legend MT950J
+	Packard Bell Legend T66(*)
+	Packard Bell PackMate 2050(+)
+	Packard Bell PackMate 486/33(*)
+	Packard Bell PackMate 486/33G
+	Packard Bell PackMate 486/33J
+	Packard Bell PackMate 48625
+	Packard Bell PackMate 486SX/25G
+	Packard Bell PackMate 733 C MT (*()
+	Packard Bell PackMate X225
+	Packard Bell PackMate X230
+	Packard Bell PackMate X233
+	Packard Bell PackMate X240(*)
+	Packard Bell PackMate X250(*)
+	Packard Bell PackMate X250Y(*)
+	Packard Bell PackMate XT266(*)
+	Panasonic CF1000
+	Panasonic CF1000A
+	Pionex 486DX2/50
+	Pionex 486DX2/66
+	Pionex 486DX33
+	Pionex 486DX33
+	Pionex 486SX25
+	Quantex 486DX2/50
+	Quantex 486DX2/66
+	Quantex 486DX50
+	Quantex 486SX25
+	Reply Turbo Processor System Upgrades
+	Sanyo MBC 19 NC
+	Seanix ASI 9000 9dx266vm8I
+	Seanix ASI 9000 9dx50vm4I
+	Siemens Nixdorf PCD-4G
+	Siemens Nixdorf PCD-4Hsx
+	Siemens Nixdorf PCE-4C
+	Siemens Nixdorf PCE-4L
+	Siemens Nixdorf PCE-4LSX
+	Siemens Nixdorf PCE-4T
+	Siemens Nixdorf PCE-4T/66
+	Siemens Nixdorf PCE-5s
+	Toshiba 6600C
+	Toshiba T1850C
+	Toshiba T1900C
+	Toshiba T4400C
+	Toshiba T4500C
+	Toshiba T4600C
+	Toshiba T6400SXC
+	TriGem 486 DX2/66ME
+	TriGem 4DX2/66ML
+	Unidata PD466
+	Unisys MPI 4163
+	Unisys MPI 42562
+	Unisys PW 2 Advantage MPI 43331
+	Unisys PW2 Advamtage 46662
+	Unisys PW2 Advantage 42532
+	Unisys PW2 Advantage 45061
+	Unisys PW2 Advantage 46634
+	Unisys PW2 Advantage 46663
+	Unisys PW2 Advantage MIP 43363
+	Unisys PW2 Advantage MPE 56061
+	Unisys Unity PDI 4335
+	Unisys Unity PSI 3333
+	Unisys Unity XDE 4666
+	Video Tech 486SX/3 Desktop (w/LBVGA)
+	Video Tech Laser 386 SX/3 Desktop
+	Video Tech Laser 386 SX/3 Ultra Slim
+	Video Tech Laser 386/3 Desktop
+	Video Tech Laser 386/3 Tower
+	Video Tech Laser 386SX/3 Desktop
+	Video Tech Laser 386SX/3 Ultra Slim
+	Video Tech Laser 486 DX/3 Desktop w/LBVGA
+	Video Tech Laser 486 DX/3 Tower
+	Video Tech Laser 486 DX/6 Tower
+	Video Tech Laser 486 DX2/4 Desktop
+	Video Tech Laser 486 DX2/4 Tower
+	Video Tech Laser 486 DX2/6 Desktop w/ LBVGA
+	Video Tech Laser 486 SX/3 Desktop
+	Video Tech Laser 486 SX/3 Desktop w/ LBVGA
+	Video Tech Laser 486 SX/3 Tower
+	Video Tech Laser 486 SX/3 Ultra Slim
+	Video Tech Laser 486 SX/4 Desktop
+	Video Tech Laser 486 SX/4 Tower
+	Video Tech Laser 486DX/2 Deskto p(w/LBVGA)
+	Video Tech Laser 486DX/3 Desktop (w/VLBus)
+	Video Tech Laser 486DX/3 Tower
+	Video Tech Laser 486DX/3 Tower (W/VLBus)
+	Video Tech Laser 486DX/3 Ultra Slim (w/LBVGA)
+	Video Tech Laser 486DX/4 Tower (w/VLBus)
+	Video Tech Laser 486DX2 Deskto (w/LBVGA)
+	Video Tech Laser 486DX2/4 Desktop
+	Video Tech Laser 486DX2/4 Desktop (w/LBVGA)
+	Video Tech Laser 486DX2/4 Desktop (w/VLBus)
+	Video Tech Laser 486DX2/4 Tower
+	Video Tech Laser 486DX2/6 Desktop
+	Video Tech Laser 486DX2/6 Tower
+	Video Tech Laser 486DX2/6 Tower (w/VLBus)
+	Video Tech Laser 486DX2/66 Desktop (w/VLBus)
+	Video Tech Laser 486SX.3 Desktop (w/LBVGA)
+	Video Tech Laser 486sx.3 Tower (w/VLBus)
+	Video Tech Laser 486SX/3 Desktop
+	Video Tech Laser 486SX/3 Desktop (w/VLBus)
+	Video Tech Laser 486SX/3 Tower
+	Video Tech Laser 486SX/3 Ultra Slim (w/LBVGA)
+	Video Tech Laser 486SX/4 Desktop
+	Video Tech Laser 486SX/4 Desktop (VLBus)
+	Video Tech Laser 486SX/4 Desktop (w/LBVGA)
+	Video Tech Laser 486SX/4 Tower
+	Video Tech Laser 486SX/4 Tower (w/VLBus)
+	Video Tech Laser 486SX/4 Ultr Slim (w/LBVGA)
+	Video Tech Laser a486DX/3 Desktop
+	Video Tech Laser LT 321E Notebook
+	Video Tech Laser LT 421 Notebook
+	Video Tech Laser SX/4 Desktop w/LBVGA
+	Video Tech Laser LT 322 Notebook
+	Viglen Contender 4DX33
+	Viglen EXC ISA
+	Viglen Genie
+	WCWS&S Multi Media VESA 486DX
+	Wyse Decision 486se
+	Wyse Decision 486si
+	Wyse Series 3000i Model 350
+	Wyse Series 6000i Model 650
+	Zymos AXXESS 486DX2-66
+	Zymos AXXESS 486DX33
+	
+	KBCategory: kbref kbdisplay kbhw
+	KBSubcategory: wfw wfwg wincomm
+	
+	Additional query words: 3.11 HCL incompatible won't work will works good bad ok compatability
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+	Version           : WINDOWS:3.11
+	
+	=============================================================================
+	

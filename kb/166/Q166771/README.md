@@ -1,0 +1,142 @@
+---
+layout: page
+title: "Q166771: SMS:  How to Force Site-Wide Client Updates"
+permalink: kb/166/Q166771/
+---
+
+## Q166771: SMS:  How to Force Site-Wide Client Updates
+
+	Article: Q166771
+	Product(s): Microsoft Systems Management Server
+	Version(s): winnt:1.0,1.1,1.2
+	Operating System(s): 
+	Keyword(s): kbnetwork kbConfig kbsms100 kbsms110 kbsms120
+	Last Modified: 20-MAR-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes a fairly automated procedure that you can use to deliver
+	updated Systems Management Server client files to all Systems Management Server
+	clients site-wide.
+	
+	Systems Management Server tracks updates to the client files' version by means of
+	the CopyListVersion value in the following copy list files:
+	
+	- Cl_nt.txt
+	
+	- Cl_dos.txt
+	
+	- Cl_os2.txt
+	
+	- Cl_win95.txt
+	
+	- Cl_win.txt
+	
+	When Client Setup runs, it compares this value to the value in the [SMS] section
+	of the client's Sms.ini file. If the values differ, Client Setup forces the
+	client to go into a "verifying_files" mode that causes the client to compare all
+	of its Systems Management Server client files with those on the logon server. If
+	differences are found, the client obtains the updated files from the logon
+	server.
+	
+	The upgrade that results from the procedure discussed in this article may cause
+	the Systems Management Server client to behave unexpectedly until the client has
+	completed a successful upgrade and been restarted.
+	
+	MORE INFORMATION
+	================
+	
+	The following example details each step of this process as it should occur on
+	the server and the client.
+	
+	On the Systems Management Server Site Server
+	--------------------------------------------
+	
+	1. Make certain that any client files that have been updated are copied to the
+	  appropriate location under the SMS\Site.srv\Maincfg.box directory structure
+	  on the site server.
+	
+	2. Use a text editor such as Notepad to open the System.map file located in the
+	  SMS directory, and save it WITHOUT MAKING ANY CHANGES. Simply opening the
+	  System.map file in Notepad and saving it again gives it a new date/time
+	  stamp.
+	
+	  NOTE: Other than saving it with a new date/time stamp, Microsoft does not
+	  support the modification of the copy list files or the System.map file.
+	
+	3. On its next pass, the Systems Management Server Maintenance Manager service
+	  will detect the changed date/time stamp on the System.map file and regenerate
+	  the copy list files, because it assumes the site has been upgraded. When the
+	  copy list files are regenerated from the "new" System.map file, they will get
+	  a new CopyListVersion value.
+	
+	Additionally, the Maintenance Manager service will copy all of the updated client
+	files to each of the Systems Management Server logon servers that this site
+	manages.
+	
+	On the Systems Management Server Client
+	---------------------------------------
+	
+	1. After running the Systems Management Server logon script (SMSLS), the client
+	  setup program Cli_dos.exe (or Cli_nt.exe for client computers running Windows
+	  NT), compares the CopyListVersion value in the [SMS] section of its Sms.ini
+	  file with the value stored in the corresponding copy list file on the Systems
+	  Management Server logon server. If a difference is found, the client will
+	  display the following message twice during the client logon process:
+	
+	  Verifying Microsoft Systems Management Server client installation...
+	
+	  Systems Management Server will normally display this message during the
+	  execution of the SMSLS logon script. However, after this completes, another
+	  logon script dialog will appear displaying the above message again if a
+	  change in the CopyListVersion was detected in the client's Sms.ini file.
+	
+	2. Client Setup then updates the CopyListVersion value in the [SMS] section of
+	  the Sms.ini file, and changes the SetupPhase= statement in the [Local]
+	  section to "verify_files".
+	
+	3. As the client's system continues to start up, Smsrun16.exe (or Smsrun32.exe
+	  for client computers running Windows NT) is run from the client's LOAD= line
+	  of the Win.ini file (for client computers running Windows NT, there is a Load
+	  value in the registry). When Smsrun16.exe finds that the SetupPhase value is
+	  set to "verify_files," it actually makes another call to the client setup
+	  (either Cli_dos.exe or Cli_nt.exe).
+	
+	
+	4. The second time that Client Setup runs, it again displays the message
+	  "Verifying Microsoft Systems Management Server client installation..." At
+	  this point, the file comparisons are made and updated files are downloaded to
+	  the client.
+	
+	  NOTE: If it is determined that any of the client components normally started
+	  by Smsrun16.exe are running, no updates will be downloaded, and the
+	  SetupPhase will remain as "verifying_files." This will ensure that the files
+	  will be downloaded the next time the system is restarted and Smsrun16.exe is
+	  run.
+	
+	
+	5. After the updated files have been downloaded, the last step made by Client
+	  Setup is to change the SetupPhase value to "installed." Additionally, if any
+	  changes are made to any of the Systems Management Server client services,
+	  client computers running Windows NT may see a dialog box stating that the
+	  Systems Management Server Client has been modified and a restart is required
+	  for the changes to take effect.
+	
+	
+	Additional query words: prodsms clisetup forcing updating
+	
+	======================================================================
+	Keywords          : kbnetwork kbConfig kbsms100 kbsms110 kbsms120 
+	Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+	Version           : winnt:1.0,1.1,1.2
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

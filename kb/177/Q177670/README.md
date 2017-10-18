@@ -1,0 +1,99 @@
+---
+layout: page
+title: "Q177670: RRAS Does Not Enforce Strong Encryption for DUN Clients"
+permalink: kb/177/Q177670/
+---
+
+## Q177670: RRAS Does Not Enforce Strong Encryption for DUN Clients
+
+	Article: Q177670
+	Product(s): Microsoft Windows NT
+	Version(s): WinNT:4.0
+	Operating System(s): 
+	Keyword(s): kbinterop kbWinNT400sp4fix
+	Last Modified: 10-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 4.0 
+	- Microsoft Routing and Remote Access Service Update for Windows NT Server version 4.0 
+	- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When a Dial-Up Networking (DUN) client connects to a 40-bit or 128-bit Routing
+	and Remote Access Server that is configured to "Require Data Encryption" or
+	"Require Strong Data Encryption", the client is not disconnected if the selected
+	data encryption negotiation fails to converge.
+	
+	The following error may be logged in Event Viewer in the System Log on the server
+	after the client has successfully established its connection:
+	
+	  Event ID   : 20073
+	  Source     : Router
+	  Description: The following error occurred in the %protocol_name% module
+	               on port %port_name%. The PPP control protocol for this
+	               network protocol is not available on the server.
+	
+	NOTE: This error may also be logged after the installation of the Routing and
+	Remote Access Service Hotfix Update 1.0 if "Require Strong Data Encryption" is
+	enabled.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, obtain the latest service pack for Windows NT 4.0 or
+	Windows NT Server 4.0, Terminal Server Edition. For additional information,
+	please see the following article in the Microsoft Knowledge Base:
+	
+	  Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Windows NT 4.0 and Windows NT
+	Server 4.0, Terminal Server Edition. This problem was first corrected in Windows
+	NT 4.0 Service Pack 4.0 and Windows NT Server 4.0, Terminal Server Edition
+	Service Pack 4.
+	
+	Microsoft has confirmed this to be a problem in the Routing and Remote Access
+	Service for Windows NT Server version 4.0.
+	
+	This problem has been corrected in the RRAS Upgrade for Windows NT Server 4.0
+	Hotfix Pack 3.0 or later. For your convenience, the English version of this
+	post-SP3 hotfix has been posted to the following Internet location. However,
+	Microsoft recommends that you install Windows NT 4.0 Service Pack 4 to correct
+	this problem.
+	
+	ftp://ftp.microsoft.com/bussys/winnt/winnt-public/fixes/usa/nt40/hotfixes-postSP3/rras30-fix/
+	
+	MORE INFORMATION
+	================
+	
+	For additional information, please see the following articles in the Microsoft
+	Knowledge Base:
+	
+	ARTICLE-ID: Q189594
+	TITLE : RRAS Upgrade for WinNT Server 4.0 Hotfix Pack 3.0 Release Notes
+	
+	ARTICLE-ID: Q169895
+	TITLE : Enabling 128-bit Encryption for Routing and Remote Access
+	
+	ARTICLE-ID: Q174474
+	TITLE : Installing RRAS Disables 128-bit RAS Encryption
+	
+	Additional query words: steelhead steel head rras
+	
+	======================================================================
+	Keywords          : kbinterop kbWinNT400sp4fix 
+	Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch kbAudDeveloper kbRRASNTSearch kbRRASNT400
+	Version           : WinNT:4.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

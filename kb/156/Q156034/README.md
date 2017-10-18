@@ -1,0 +1,86 @@
+---
+layout: page
+title: "Q156034: HOWTO: Retrieve Information from SQL Server on Rows Affected"
+permalink: kb/156/Q156034/
+---
+
+## Q156034: HOWTO: Retrieve Information from SQL Server on Rows Affected
+
+	Article: Q156034
+	Product(s): Microsoft FoxPro
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbinterop kbAutomation kbvfp500 kbvfp600
+	Last Modified: 21-AUG-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Microsoft SQL Server and other Server data sources often have statistical
+	information regarding how many rows were affected by a particular SQL statement
+	when executed. Visual FoxPro does not retrieve this information from the server
+	for you. This article discusses how you can integrate the use of Stored
+	Procedures on the server to retrieve this information.
+	
+	MORE INFORMATION
+	================
+	
+	When you are working with data on a server, you need to know how many rows in
+	the table were affected by a certain SQL command, similar to the information
+	provided by the _TALLY variable in Visual FoxPro.
+	
+	This information is not available to you directly within Visual FoxPro, but there
+	are ways to obtain that information, if necessary.
+	
+	Visual FoxPro 5.0 adds support for output parameters from stored procedures. This
+	means that you can call a procedure located on the SQL Server and that procedure
+	will then return information to the client application.
+	
+	The following example shows two pieces of code. The first is a SQL Server stored
+	procedure that takes two parameters, an order id and order amount. It then
+	returns the number of rows affected. The second program is FoxPro code showing
+	how to call the procedure and retrieve the return value from the server code:
+	
+	     ** SQL Server Code
+	     CREATE PROCEDURE upd_morders @cust_id int, @order_amt int, @retcount int
+	  OUTPUT AS
+	        UPDATE morders SET order_amt = @order_amt
+	           WHERE cust_id = @cust_id
+	     SELECT @retcount = @@ROWCOUNT
+	     GO
+	
+	     ** FoxPro Code
+	     mvar = 0
+	     retVal = SQLExec(1,'{CALL upd_morders (1, 22.50, ?@mvar)}')
+	     ? mvar
+	
+	The SQL Server procedure takes two parameters, the customer id and the order
+	amount. It then updates a table on the server and returns the value @@ROWCOUNT,
+	which is a system-defined variable in Microsoft SQL Server containing the number
+	of records modified by the last SQL Statement.
+	
+	The FoxPro code shows how to pass a FoxPro variable to the stored procedure and
+	have it filled in by the stored procedure.
+	
+	REFERENCES
+	==========
+	
+	More information can be found on SQL Server stored procedures in the Microsoft
+	SQL Server manuals. Information about Output parameters in Visual FoxPro can be
+	found in the Visual FoxPro documentation.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbinterop kbAutomation kbvfp500 kbvfp600 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

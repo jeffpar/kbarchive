@@ -1,0 +1,131 @@
+---
+layout: page
+title: "Q248067: XWEB: Isinteg Cannot Fix Warnings if Public Folders Have No MAPI"
+permalink: kb/248/Q248067/
+---
+
+## Q248067: XWEB: Isinteg Cannot Fix Warnings if Public Folders Have No MAPI
+
+	Article: Q248067
+	Product(s): Microsoft Exchange
+	Version(s): winnt:5.5 SP3
+	Operating System(s): 
+	Keyword(s): exc55sp3 kbExchange550preSP4fix kbExchange550sp4Fix kbgraphxlinkcritical
+	Last Modified: 01-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.5 SP3 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If you use Microsoft Outlook Web Access (OWA), you may not be able to open some
+	public folders, and the following error message may be displayed:
+	
+	  collaboration data objects error " 000043ed" the client operation failed.
+	  [microsoft exchange server information store - [E_FAIL (80004005) ]]
+	
+	Using the Interorg Replication utility created all of the public folders, and you
+	can open all of the public folders by using a MAPI client. If you try to move
+	these folders or copy them to a .pst file, the following error message is
+	displayed:
+	
+	  The operation failed.
+	
+	The Isinteg utility reports a large number of warnings. The Isinteg utility
+	cannot fix these warnings.
+	
+	CAUSE
+	=====
+	
+	The warnings from the Isinteg utility are specific to certain folders. Start the
+	Mdbvu32.exe program and check the MAPI properties of one of them. These public
+	folders retain all of their properties, but the properties list is not
+	retrievable, so the MAPI properties are not available (a blank property page is
+	displayed).
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, obtain the latest service pack for Exchange Server 5.5.
+	For additional information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q191014 XGEN: How to Obtain the latest Exchange Server 5.5 Service Pack
+	
+	
+	The following files are available for download from the Microsoft Download
+	Center:
+	
+	  x86: DownloadDownload Q248838engi.exe now
+	  (http://www.microsoft.com/downloads/release.asp?ReleaseID=25443)
+	  Alpha: DownloadDownload Q248838enga.exe now
+	  (http://www.microsoft.com/downloads/release.asp?ReleaseID=25444)
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. Once posted, the file is housed on secure
+	servers that prevent any unauthorized changes to the file.
+	
+	NOTE: When you start this version of the information store, the information store
+	databases are automatically upgraded to a new format. After the databases have
+	been upgraded, you can restore an earlier version of the Store.exe file on the
+	server, but only if it is version 5.5.2651.32 or later. If you restore a
+	Store.exe file earlier than version 5.5.2651.32 after the database has been
+	upgraded, you are no longer able to start the information store. For additional
+	information, click the article number below to view the article in the Microsoft
+	Knowledge Base:
+	
+	  Q244976 XADM: Event ID 1197 and 1005 When Starting the Information Store
+	
+	WORKAROUND
+	==========
+	
+	Create a tool to automatically move all of the public folders to a .pst file.
+	Delete the folders from the public folders, and then move the folders back to
+	the public folders from the .pst file. You can restore permissions and replicas
+	with the PFInfo and PFAdmin tools.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+	version 5.5. This problem was first corrected in Exchange Server 5.5 Service
+	Pack 4.
+	
+	MORE INFORMATION
+	================
+	
+	After the fix is applied, if you run the isinteg -pub -fix -detailed -verbose -l
+	fix.log -test fldprops command, it fixes all of the necessary folders by
+	deleting the invalid MAPI properties.
+	
+	The fldprops switch is a new test that has been added to the Isinteg.exe tool,
+	and it is only available with the -pub switch.
+	
+	After you run this command, you can see all of the public folder contents when
+	you use OWA. This fix includes a Store.exe file that prevents the setting of
+	these properties and an Isinteg utility that can fix the issue.
+	
+	The NULL properties are removed from customer databases if you use the new
+	Isinteg tool. It works with either the fldprops, allfoldertests, or alltests
+	switch.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : exc55sp3 kbExchange550preSP4fix kbExchange550sp4Fix kbgraphxlinkcritical 
+	Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange550SP3
+	Version           : winnt:5.5 SP3
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

@@ -1,0 +1,342 @@
+---
+layout: page
+title: "Q99227: Windows Sound System 1.0a Disk Dir List (3.5 and 5.25 Inch)"
+permalink: kb/099/Q99227/
+---
+
+## Q99227: Windows Sound System 1.0a Disk Dir List (3.5 and 5.25 Inch)
+
+	Article: Q99227
+	Product(s): Miscellaneous Windows Products
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 19-SEP-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows Sound System, version 1.0a 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article contains the disk directory listings for the Microsoft Windows
+	Sound System version 1.0a 3.5-inch (1.44 MB) and 5.25-inch (1.2 MB) disks.
+	
+	MORE INFORMATION
+	================
+	
+	Volume in drive B is DISK1
+	Volume Serial Number is 0141-08CB
+	Directory of B:\ 
+	
+	SOUNDLIB     <DIR>     02-17-93   3:38p
+	SETUP    EXE     64928 02-17-93   1:00a
+	WSETUP   EX_    109676 02-17-93   1:00a
+	SETUP    INI        70 02-17-93   1:00a
+	SETUP    IN_      3841 02-17-93   1:00a
+	WCOMMON  DL_     17797 02-17-93   1:00a
+	WHELP    TX_      8905 02-17-93   1:00a
+	CONTROL  IN_       468 02-17-93   1:00a
+	SNDSYS   DRV     32368 02-17-93   1:00a
+	SNDSYS   PA_      3379 02-17-93   1:00a
+	SNDREC   EX_     21326 02-17-93   1:00a
+	SNDSYSW  CP_      2293 02-17-93   1:00a
+	SNDVOL   EX_     18718 02-17-93   1:00a
+	SNDCNTRL DL_     44431 02-17-93   1:00a
+	SNDWAVE  DL_     42334 02-17-93   1:00a
+	SNDSCAPE SC_     11715 02-17-93   1:00a
+	SND      CP_     11422 02-17-93   1:00a
+	MCIPLAY  EX_      4078 02-17-93   1:00a
+	MUSICBOX EX_     22330 02-17-93   1:00a
+	GAMECNFG EX_     11796 02-17-93   1:00a
+	QRECORD  EX_     66403 02-17-93   1:00a
+	SNDFINDR EX_     22203 02-17-93   1:00a
+	GAMES    PI_       545 02-17-93   1:00a
+	MIDIMAP  CF_      2470 02-17-93   1:00a
+	VSNDSYS  38_      9160 02-17-93   1:00a
+	MSACM    DR_     18649 02-17-93   1:00a
+	MSADPCM  AC_     10268 02-17-93   1:00a
+	CONFIG   INI        22 02-17-93   1:00a
+	SNDVOL   HL_     34525 02-17-93   1:00a
+	CHK16-44 WA_     94636 02-17-93   1:00a
+	CHK4-11  WA_      5860 02-17-93   1:00a
+	CHK8-11  WA_      9222 02-17-93   1:00a
+	PARTIAL  WA_      3860 02-17-93   1:00a
+	SNDREC   HL_     26827 02-17-93   1:00a
+	QRECORD  HL_    142600 02-17-93   1:00a
+	SNDFINDR HL_     44299 02-17-93   1:00a
+	SNDSCAPE HL_     18273 02-17-93   1:00a
+	MUSICBOX HL_     40208 02-17-93   1:00a
+	GAMECNFG HL_     15717 02-17-93   1:00a
+	SND      HL_     32715 02-17-93   1:00a
+	SNDSYS   HL_     14179 02-17-93   1:00a
+	WSSPSS   HL_     14226 02-17-93   1:00a
+	README   TXT     21613 02-17-93   1:00a
+	DEINSTAL TX_      3255 02-17-93   1:00a
+	      44 file(s)    1083610 bytes
+	
+	Volume in drive B is DISK1
+	Volume Serial Number is 0141-08CB
+	Directory of B:\SOUNDLIB
+	
+	.            <DIR>     02-17-93   3:38p
+	..           <DIR>     02-17-93   3:38p
+	TRON120A WA_      8940 02-17-93   1:00a
+	TRON120B WA_     10460 02-17-93   1:00a
+	TRON133  WA_     57668 02-17-93   1:00a
+	TRON212  WA_     36251 02-17-93   1:00a
+	       6 file(s)     113319 bytes
+	
+	Volume in drive B is DISK2
+	Volume Serial Number is 1A57-08CD
+	Directory of B:\ 
+	
+	NUMBERS  DC_    294478 02-17-93   1:00a
+	OTHER    DC_    314024 02-17-93   1:00a
+	MONEY    DC_    365070 02-17-93   1:00a
+	NON-US   DC_       180 02-17-93   1:00a
+	USER     DC_        12 02-17-93   1:00a
+	RDR      DL_     38992 02-17-93   1:00a
+	PROOF    XL_     52071 02-17-93   1:00a
+	XLATOR   DL_     18725 02-17-93   1:00a
+	TTSM     DL_     28801 02-17-93   1:00a
+	XLRDR    DL_     20343 02-17-93   1:00a
+	123RDR   AD_     19301 02-17-93   1:00a
+	XLRDR    HL_     57177 02-17-93   1:00a
+	      12 file(s)    1209174 bytes
+	
+	Volume in drive B is DISK3
+	Volume Serial Number is 324E-08CF
+	Directory of B:\ 
+	
+	SOUNDLIB     <DIR>     02-17-93   3:48p
+	SOUNDS       <DIR>     02-17-93   3:48p
+	ICONS        <DIR>     02-17-93   3:49p
+	       3 file(s)          0 bytes
+	
+	Volume in drive B is DISK3
+	Volume Serial Number is 324E-08CF
+	Directory of B:\SOUNDLIB
+	
+	.            <DIR>     02-17-93   3:48p
+	..           <DIR>     02-17-93   3:48p
+	009THEME WA_     30950 02-17-93   1:00a
+	010THEME WA_     35456 02-17-93   1:00a
+	070THEME WA_     58810 02-17-93   1:00a
+	254THEME WA_     24668 02-17-93   1:00a
+	AHHH     WA_      6981 02-17-93   1:00a
+	APPLAUSE WA_     30604 02-17-93   1:00a
+	BELL1    WA_     12930 02-17-93   1:00a
+	BELL2    WA_      7492 02-17-93   1:00a
+	CHARGE   WA_      8980 02-17-93   1:00a
+	CLAPPING WA_     19397 02-17-93   1:00a
+	CLASIC30 RM_      5107 02-17-93   1:00a
+	CONST1   WA_     13493 02-17-93   1:00a
+	CONST2   WA_     39062 02-17-93   1:00a
+	CONST3   WA_     26770 02-17-93   1:00a
+	CONST4   WA_     11165 02-17-93   1:00a
+	DRUMROLL WA_     27760 02-17-93   1:00a
+	FACTTOOT WA_      8559 02-17-93   1:00a
+	GONG     WA_     24722 02-17-93   1:00a
+	HARP1    WA_     15074 02-17-93   1:00a
+	HARP2    WA_     21958 02-17-93   1:00a
+	LAUGH    WA_     13029 02-17-93   1:00a
+	OOOH     WA_      6755 02-17-93   1:00a
+	POPJAZ30 RM_      5107 02-17-93   1:00a
+	TRON227  WA_      4605 02-17-93   1:00a
+	TRON314  WA_     12687 02-17-93   1:00a
+	WAGNER   WA_     53437 02-17-93   1:00a
+	      28 file(s)     525558 bytes
+	
+	Volume in drive B is DISK3
+	Volume Serial Number is 324E-08CF
+	Directory of B:\SOUNDS
+	
+	.            <DIR>     02-17-93   3:48p
+	..           <DIR>     02-17-93   3:48p
+	BIRD1    WA_     25486 02-17-93   1:00a
+	BIRD2    WA_     40896 02-17-93   1:00a
+	BIRD3    WA_     12268 02-17-93   1:00a
+	BIRD4    WA_     41870 02-17-93   1:00a
+	CHIMES1  WA_     85388 02-17-93   1:00a
+	CHIMES2  WA_     67052 02-17-93   1:00a
+	CHIMES3  WA_     53892 02-17-93   1:00a
+	CRICKETS WA_     26613 02-17-93   1:00a
+	DOGBARK  WA_      6921 02-17-93   1:00a
+	ELEPHANT WA_      7045 02-17-93   1:00a
+	GIBBON   WA_     29851 02-17-93   1:00a
+	MONKEY   WA_     12169 02-17-93   1:00a
+	NITETRAN WA_     47572 02-17-93   1:00a
+	OWL      WA_      8340 02-17-93   1:00a
+	PARROT   WA_      6871 02-17-93   1:00a
+	RACHET   WA_     20737 02-17-93   1:00a
+	SIREN    WA_     70128 02-17-93   1:00a
+	SNORING  WA_     18144 02-17-93   1:00a
+	THUNDER  WA_     14288 02-17-93   1:00a
+	TICKTOCK WA_      3832 02-17-93   1:00a
+	      22 file(s)     599363 bytes
+	
+	Volume in drive B is DISK3
+	Volume Serial Number is 324E-08CF
+	Directory of B:\ICONS
+	
+	.            <DIR>     02-17-93   3:49p
+	..           <DIR>     02-17-93   3:49p
+	BARCHART IC_       245 02-17-93   1:00a
+	BELL     IC_       307 02-17-93   1:00a
+	BIRD     IC_       297 02-17-93   1:00a
+	BLANK    IC_       180 02-17-93   1:00a
+	BOOK     IC_       291 02-17-93   1:00a
+	BOOKS    IC_       369 02-17-93   1:00a
+	CARDFILE IC_       364 02-17-93   1:00a
+	CD       IC_       541 02-17-93   1:00a
+	CDPLAYER IC_       510 02-17-93   1:00a
+	CHIMES   IC_       337 02-17-93   1:00a
+	CLOCK    IC_       390 02-17-93   1:00a
+	COMPUTER IC_       436 02-17-93   1:00a
+	DISK1    IC_       235 02-17-93   1:00a
+	DISK2    IC_       356 02-17-93   1:00a
+	EAR      IC_       426 02-17-93   1:00a
+	ERASE    IC_       340 02-17-93   1:00a
+	EXCLAM   IC_       266 02-17-93   1:00a
+	FILES    IC_       386 02-17-93   1:00a
+	FM       IC_       258 02-17-93   1:00a
+	FOLDER   IC_       409 02-17-93   1:00a
+	GRNLIGHT IC_       329 02-17-93   1:00a
+	HAPPY    IC_       283 02-17-93   1:00a
+	HEAD     IC_       328 02-17-93   1:00a
+	JUNGLE   IC_       553 02-17-93   1:00a
+	KBD      IC_       208 02-17-93   1:00a
+	KEY      IC_       351 02-17-93   1:00a
+	KEYBOARD IC_       367 02-17-93   1:00a
+	LETTER   IC_       218 02-17-93   1:00a
+	LINE     IC_       306 02-17-93   1:00a
+	LINECHRT IC_       351 02-17-93   1:00a
+	LOCK     IC_       343 02-17-93   1:00a
+	MAGNET   IC_       268 02-17-93   1:00a
+	MEETING  IC_       370 02-17-93   1:00a
+	MEMO     IC_       327 02-17-93   1:00a
+	METER    IC_       330 02-17-93   1:00a
+	MIC      IC_       344 02-17-93   1:00a
+	NIGHT    IC_       248 02-17-93   1:00a
+	NOCOMM   IC_       373 02-17-93   1:00a
+	NOSMOKE  IC_       359 02-17-93   1:00a
+	NOTES    IC_       244 02-17-93   1:00a
+	OLDMIC   IC_       324 02-17-93   1:00a
+	PAPERCLP IC_       258 02-17-93   1:00a
+	PENCIL   IC_       306 02-17-93   1:00a
+	PIECHART IC_       356 02-17-93   1:00a
+	RADIO    IC_       298 02-17-93   1:00a
+	REDLIGHT IC_       311 02-17-93   1:00a
+	REDPEN   IC_       293 02-17-93   1:00a
+	SCOPE    IC_       290 02-17-93   1:00a
+	SPEAKER  IC_       320 02-17-93   1:00a
+	STOPSIGN IC_       293 02-17-93   1:00a
+	TAPE     IC_       314 02-17-93   1:00a
+	TELCALL  IC_       379 02-17-93   1:00a
+	TIMER    IC_       380 02-17-93   1:00a
+	TREBLE   IC_       280 02-17-93   1:00a
+	TUNING   IC_       335 02-17-93   1:00a
+	      57 file(s)      18180 bytes
+	
+	Volume in drive B is DISK4
+	Volume Serial Number is 0F32-08D2
+	Directory of B:\ 
+	
+	DEMO         <DIR>     02-17-93   3:59p
+	       1 file(s)          0 bytes
+	
+	Volume in drive B is DISK4
+	Volume Serial Number is 0F32-08D2
+	Directory of B:\DEMO
+	
+	.            <DIR>     02-17-93   3:59p
+	..           <DIR>     02-17-93   3:59p
+	CBTLIB4  DL_     12484 02-17-93   1:00a
+	E1D1W1   WA_     13080 02-17-93   1:00a
+	E1D1W2   WA_      4038 02-17-93   1:00a
+	E1D1W3   WA_      7706 02-17-93   1:00a
+	E1D2W1   WA_     34430 02-17-93   1:00a
+	E1D2W2   WA_     19920 02-17-93   1:00a
+	E1D3W1   WA_     17796 02-17-93   1:00a
+	E1D4W1   WA_     10770 02-17-93   1:00a
+	E1S1W1   WA_     28404 02-17-93   1:00a
+	E2D1W1   WA_     40544 02-17-93   1:00a
+	E2D1W2   WA_     22704 02-17-93   1:00a
+	E2D2W1   WA_     59294 02-17-93   1:00a
+	E3D1W1   WA_     50226 02-17-93   1:00a
+	E3D1W2   WA_     58028 02-17-93   1:00a
+	E3D2W1   WA_     44292 02-17-93   1:00a
+	E3D2W2   WA_     38092 02-17-93   1:00a
+	E3D3W1   WA_     13266 02-17-93   1:00a
+	E4D1W1   WA_     16228 02-17-93   1:00a
+	E4D1W2   WA_     17992 02-17-93   1:00a
+	E4D1W3   WA_     20940 02-17-93   1:00a
+	E4D2W1   WA_      4342 02-17-93   1:00a
+	E4D2W2   WA_      3350 02-17-93   1:00a
+	E4D3W1   WA_     10808 02-17-93   1:00a
+	E5D1W1   WA_     11508 02-17-93   1:00a
+	E5D1W2   WA_      4344 02-17-93   1:00a
+	E5D1W3   WA_      4678 02-17-93   1:00a
+	E5D1W4   WA_      3106 02-17-93   1:00a
+	E5D2W1   WA_      7456 02-17-93   1:00a
+	E5D2W2   WA_      4454 02-17-93   1:00a
+	E5D2W3   WA_      4328 02-17-93   1:00a
+	E5D3W1   WA_      4224 02-17-93   1:00a
+	E5D3W2   WA_      3416 02-17-93   1:00a
+	E6D1W1   WA_     35280 02-17-93   1:00a
+	E6D1W2   WA_      9540 02-17-93   1:00a
+	E6D1W3   WA_      8578 02-17-93   1:00a
+	E6D2W1   WA_     22710 02-17-93   1:00a
+	E6D2W2   WA_     42472 02-17-93   1:00a
+	E6D3W1   WA_     56910 02-17-93   1:00a
+	PLAY     EX_     67777 02-17-93   1:00a
+	TOUR     EX_     13144 02-17-93   1:00a
+	TOUR     LE_    337383 02-17-93   1:00a
+	WSSTUTOR DE_      2456 02-17-93   1:00a
+	      44 file(s)    1192498 bytes
+	
+	Volume in drive B is DISK5
+	Volume Serial Number is 286A-08D4
+	Directory of B:\ 
+	
+	ALDUS    VC_     19929 02-17-93   1:00a
+	ALL      VC_     46246 02-17-93   1:00a
+	DEFAPP   VC_     13043 02-17-93   1:00a
+	FILEMGR  VC_     19197 02-17-93   1:00a
+	LOTUS123 VC_     24789 02-17-93   1:00a
+	MICRGRFX VC_     21244 02-17-93   1:00a
+	MSEXCEL  VC_     22905 02-17-93   1:00a
+	MSMAIL   VC_     16396 02-17-93   1:00a
+	MSMONEY  VC_     16931 02-17-93   1:00a
+	MSPROJ   VC_     20730 02-17-93   1:00a
+	MSPUB    VC_     17831 02-17-93   1:00a
+	MSWORKS  VC_     25514 02-17-93   1:00a
+	NDW      VC_     19845 02-17-93   1:00a
+	POWERPNT VC_     19916 02-17-93   1:00a
+	PROGMAN  VC_     14189 02-17-93   1:00a
+	WDPRFWIN VC_     51241 02-17-93   1:00a
+	WINWORD  VC_     26848 02-17-93   1:00a
+	WRITE    VC_     16954 02-17-93   1:00a
+	DEFAULT  US_    118624 02-17-93   1:00a
+	VOICEPIL EX_     57063 02-17-93   1:00a
+	VOICEPIL IN_       514 02-17-93   1:00a
+	VOICEPIL HL_     89934 02-17-93   1:00a
+	VLAYER   DL_     24164 02-17-93   1:00a
+	VCOLLECT DL_     21334 02-17-93   1:00a
+	VPHOOK   DL_      3135 02-17-93   1:00a
+	VRECOG   DL_    196792 02-17-93   1:00a
+	DATES    DC_    234504 02-17-93   1:00a
+	      27 file(s)    1159812 bytes
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinSoundSysSearch kbWinSoundSys100a
+	
+	=============================================================================
+	

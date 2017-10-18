@@ -1,0 +1,74 @@
+---
+layout: page
+title: "Q320097: XADM: Installation of Service Pack 4 Stops with Files in Use Err"
+permalink: kb/320/Q320097/
+---
+
+## Q320097: XADM: Installation of Service Pack 4 Stops with Files in Use Err
+
+	Article: Q320097
+	Product(s): Microsoft Exchange
+	Version(s): 5.5
+	Operating System(s): 
+	Keyword(s): kberrmsg
+	Last Modified: 26-JUL-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you try to install Service Pack 4 for Microsoft Exchange Server 5.5, you
+	may receive an error message that states that the following files are in use:
+	
+	- Mdbperf.dll
+	
+	- Msefperf.dll
+	
+	- Mtaperf.dll
+	
+	- Perfdsa.dll
+	
+	Therefore, installation of the service pack cannot continue.
+	
+	Performance Monitor uses these files to track MSExchangeMTA Connections. However,
+	Performance Monitor does not currently run either on this computer or remotely.
+	If you try to run Performance Monitor locally, it does not start.
+	
+	If you turn off services and restart the server, the issue is not resolved.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, you must rename these files, and then reinstall the
+	service pack. To do this, follow these steps:
+	
+	1. Open Windows Explorer.
+	
+	2. Locate the drive:\Exchsrvr\BIN folder.
+	
+	3. Right-click the Mdbperf.dll file, and then click Rename.
+	
+	4. Type "Mdbperf.dll.old" (without the quotation marks), and then press ENTER.
+	
+	5. Repeat steps 3 through 4 for each file in the preceding list. Rename each
+	  file with an .old file name extension.
+	
+	6. Close Windows Explorer.
+	
+	7. Install Exchange Server 5.5 Service Pack 4.
+	
+	Additional query words: front page
+	
+	======================================================================
+	Keywords          : kberrmsg 
+	Technology        : kbZNotKeyword6 kbExchangeSearch kbExchange550 kbExchangeClientSearch kbZNotKeyword2
+	Version           : :5.5
+	Issue type        : kbprb
+	
+	=============================================================================
+	

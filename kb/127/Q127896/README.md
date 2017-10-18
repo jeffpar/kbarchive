@@ -1,0 +1,268 @@
+---
+layout: page
+title: "Q127896: Multimedia: General MIDI Troubleshooting In Windows 3.x"
+permalink: kb/127/Q127896/
+---
+
+## Q127896: Multimedia: General MIDI Troubleshooting In Windows 3.x
+
+	Article: Q127896
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): 1.0 with CD-ROM
+	Operating System(s): 
+	Keyword(s): win31
+	Last Modified: 09-NOV-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Multimedia Pack, version 1.0 with CD-ROM 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article addresses general troubleshooting for MIDI playback problems in
+	Windows and Windows for Workgroups 3.1 or 3.11. If MIDI does not play or error
+	messages occur with the MIDI Mapper configuration, reference the following
+	information as a general troubleshooting guide to help resolve the problem.
+	
+	MORE INFORMATION
+	================
+	
+	Using Media Player as a Diagnostic Tool
+	---------------------------------------
+	
+	1. Double-click the Media Player icon (usually found in the Accessories program
+	  group in Program Manager).
+	
+	2. From the Device menu, choose MIDI Sequencer.
+	
+	3. Double-click the Canyon.mid file listed in the Files box.
+	
+	  NOTE: Canyon.mid is located in the Windows directory.
+	
+	4. Click the Play button.
+	
+	  NOTE: The Play button contains a triangle that points to the right, and a
+	  vertical bar.
+	
+	Making Sure the Sound Card Is Properly Installed
+	------------------------------------------------
+	
+	1. Determine if the sound card can generate sounds from MS-DOS. Most sound card
+	  manufacturers provide programs for playing sounds and testing for problems
+	  with the sound card configuration. If the testing tools do not work, the
+	  Windows sound support fails.
+	
+	  NOTE: Sound cards that fail to work at the MS-DOS environment level cannot be
+	  expected to work from within Microsoft Windows.
+	
+	2. Make sure the sound card does not conflict with other hardware installed on
+	  the system (such as Base I/O Address, IRQ, or DMA Channel settings).
+	
+	  NOTE: If the sound card supports digitized sound and wave (.wav) files, and
+	  .wav files can be played, the card is properly installed.
+	
+	The Sound File Appears to Be Playing, But No Sounds Are Heard
+	-------------------------------------------------------------
+	
+	The type of symptom described is usually caused by one of the following:
+	
+	- The speakers are not turned on or are not connected correctly.
+	
+	- The mixer control is not turned up for MIDI playback.
+	
+	- The MIDI Sequencer is not installed.
+	
+	- The MIDI Mapper is configured incorrectly.
+	
+	Check the Speakers and Mixer Controls
+	-------------------------------------
+	
+	1. Is there any sound when Windows starts? Do .wav files play when using Media
+	  Player?
+	
+	  From the Device menu, choose Sound and play any file with a .wav extension.
+	
+	  NOTE: This test will demonstrate properly installed speakers.
+	
+	2. Check the Mixer settings.
+	
+	Refer to the sound card manufacturer's user's guide for a discussion on MIDI
+	playback while within Windows. Most sound cards use individual controls for the
+	different types of sounds the card can play.
+	
+	Verify the MIDI Sequencer Driver is Installed
+	---------------------------------------------
+	
+	1. Double-click the Control Panel icon. Control Panel is usually located in the
+	  Main program group in Program Manager.
+	
+	2. Double-click the Drivers icon.
+	
+	3. In the Installed Drivers list, verify that the entry exists for:
+	
+	     [MCI] MIDI Sequencer
+	
+	4. If the driver is missing from the Installed Drivers list, choose the Add
+	  button.
+	
+	5. Select [MCI] MIDI Sequencer and choose OK.
+	
+	  If the driver is already installed on the system, the following message
+	  appears:
+	
+	  The required mciseq.drv is already on the system. Do you want to use the
+	  current driver or install a new driver.
+	
+	  Choose New and insert the disk being requested.
+	
+	6. When you are returned to the Drivers dialog box, choose Close.
+	
+	Checking the MIDI Mapper Configuration
+	--------------------------------------
+	
+	1. Double-click the Control Panel icon. Control Panel is usually located in the
+	  Main program group in Program Manager.
+	
+	2. Double-click the MIDI Mapper icon. If the MIDI Mapper icon is not present,
+	  this indicates that no MIDI-compatible driver is installed. Before
+	  proceeding, you must correct this problem by installing a MIDI-compatible
+	  driver using the Drivers application within the Control Panel.
+	
+	  NOTE: Write down the name listed in the Name field so you have it for
+	  reference.
+	
+	3. Choose the New button.
+	
+	4. In the new MIDI Setup dialog box, type a name in the Name field and choose
+	  OK. The Description field can be left blank.
+	
+	  NOTE: For testing purposes, the name can be anything. For example, you could
+	  type "mymidi" or "test" (without the quotation marks).
+	
+	5. A MIDI Setup: '<NEW NAME>' dialog box appears (where <NEW NAME>
+	  is the name you used in step 4). For Basic MIDI, change the Port Name to the
+	  'FM' or 'Synth' driver if one is listed.
+	
+	  To change the driver, choose the word None. When the down arrow appears,
+	  select it to reveal your choices.
+	
+	  Avoid choices that have OUT listed somewhere in the line. For example:
+	
+	   - MIDI OUT
+	   - FM OUT
+	
+	  The choices listed depend on the sound card installed:
+	
+	   - "Voyetra OPL3 FM Synth" is common for Media Vision cards
+	
+	   - "Super Sapi Voyetra FM" is common for the Creative Labs Sound Blaster 16
+	     cards
+	
+	6. If no selections are available in the MIDI Mapper Port Name section, see your
+	  sound card user's guide or contact the sound card manufacturer. The sound
+	  card manufacturer is responsible for installation and playback of MIDI files
+	  from within a Windows environment.
+	
+	Other Problems Preventing MIDI from Playing
+	-------------------------------------------
+	
+	The following are other situations that prevent MIDI playing:
+	
+	- Norton Desktop for Windows 1.0 is installed
+	
+	- You have upgraded from Multimedia Extensions version 1.0 and your previous
+	  MIDI Mapper configuration file has been renamed to Midimap.old. See
+	  C:\Windows\Readme.wri, section 7.0, for more information.
+	
+	Manually Checking for MIDI Driver Files, Placement of Driver Files,
+	
+	and File Modifications
+	----------------------
+	
+	1. The files listed should all reside in the C:\Windows\System subdirectory
+	  (where drive C is your hard drive and Windows is your Windows directory or
+	  folder).
+	
+	  The installed MIDI driver filename can vary depending upon the sound card
+	  installed. Some examples for the Media Vision sound card are:
+	
+	   - Opl3fm.drv
+	   - Mvproaud.drv
+	
+	  Examples of Creative Labs Sound Blaster sound card are:
+	
+	   - Sndblst2.drv
+	   - Sbpfm.drv
+	   - Sb16snd.drv
+	
+	The drivers and settings listed below are based on the Media Vision ProAudio
+	Spectrum sound card. The driver name from Media Vision are followed by an
+	asterisk *. Refer to your sound card user's guide or contact the sound card
+	manufacturer if you are not sure about the names and placement of drivers.
+	
+	- Mciseq.drv
+	
+	- Midimap.drv
+	
+	- Timer.drv
+	
+	- Opl3fm.drv *
+	
+	All of the files listed below are in the WINDOWS directory.
+	
+	Entries in System.ini
+	---------------------
+	
+	[boot]
+	sound.drv=mmsound.drv
+	drivers=mmsystem.dll
+	
+	[drivers]
+	midimapper=midimap.drv
+	Timer=timer.drv
+	MIDI=opl3.drv *
+	
+	[mci]
+	Sequencer=mciseq.drv
+	WaveAudio=mciwave.drv
+	
+	Entries in Win.ini
+	------------------
+	
+	[mci extensions]
+	mid=sequencer
+	
+	Entries in Control.ini
+	----------------------
+	
+	[drivers.desc]
+	mciseq.drv=[MCI] MIDI Sequencer
+	midimap.drv=MIDI Mapper
+	opl3.drv=Voyetra/Media Vision OPL3 Stereo FM Driver *
+	timer.drv=Timer
+	
+	[userinstallable.drivers]
+	MIDI=opl3.drv *
+	Timer=timer.drv
+	
+	[related.desc]
+	MIDI=
+	Timer=
+	
+	The third-party products discussed here are manufactured by vendors independent
+	of Microsoft; we make no warranty, implied or otherwise, regarding these
+	products' performance or reliability.
+	
+	
+	Additional query words: kbhowto multi media multimedia multi-media mtitles midi mapper tshoot midimapper configuration
+	
+	======================================================================
+	Keywords          : win31 
+	Technology        : kbHomeProdSearch kbHomeMMsearch kbMMPkCD
+	Version           : :1.0 with CD-ROM
+	
+	=============================================================================
+	

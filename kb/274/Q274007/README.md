@@ -1,0 +1,86 @@
+---
+layout: page
+title: "Q274007: Asheron's Call Error Message: Corrupt or Missing Data..."
+permalink: kb/274/Q274007/
+---
+
+## Q274007: Asheron's Call Error Message: Corrupt or Missing Data...
+
+	Article: Q274007
+	Product(s): Microsoft Home Games
+	Version(s): 1.0
+	Operating System(s): 
+	Keyword(s): kberrmsg kbimu msgame
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Asheron's Call, version 1.0 
+	- Microsoft Asheron's Call: Dark Majesty, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you are in the Asheron's Call portal, you may receive the following error
+	message:
+	
+	  Corrupt or missing data (region information). Exiting...
+	
+	CAUSE
+	=====
+	
+	This behavior can occur if one or more files in the Asheron's Call folder are
+	damaged.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue:
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click Add/Remove Programs.
+	
+	3. On the Install/Uninstall tab, click Microsoft Asheron's Call, and then click
+	  Add/Remove.
+	
+	4. Follow the instructions on the screen to uninstall Asheron's Call.
+	
+	5. Insert the Asheron's Call CD-ROM into the CD-ROM drive.
+	
+	  If Asheron's Call Setup does not start automatically:
+	
+	  a. Click Start, and then click Run.
+	
+	  b. In the Open box, type the following line, and then click OK
+	
+	     <drive>:\setup.exe
+	
+	     where <drive> is the drive letter of the CD-ROM drive.
+	
+	6. Follow the instructions on the screen to install Asheron's Call.
+	
+	7. When you start Asheron's Call again the program will be automatically updated
+	  to the current version. It is recommended that you update Asheron's Call with
+	  the Game Download Patch prior to starting the program. Installing the patch
+	  will update the program as much as possible, resulting in a much quicker
+	  automatic update. The patch is available for download and install at:
+	
+	  http://zone.msn.com/asheronscall/downloads.asp
+	
+	  For the best results, it is recommended that you download the Game Download
+	  Patch only if you have a high-speed Internet connection (DSL, cable modem, or
+	  T1)
+	
+	Additional query words: 1.00 msgame msngz igz ashcall asherons
+	
+	======================================================================
+	Keywords          : kberrmsg kbimu msgame 
+	Technology        : kbHomeProdSearch _IKkbbogus kbGamesSearch kbMSNSearch kbAsheronSearch kbAsheron100 kbAsheronDarkMaj
+	Version           : :1.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

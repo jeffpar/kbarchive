@@ -1,0 +1,116 @@
+---
+layout: page
+title: "Q243721: Asheron's Call: How to Obtain Assistance with the Game"
+permalink: kb/243/Q243721/
+---
+
+## Q243721: Asheron's Call: How to Obtain Assistance with the Game
+
+	Article: Q243721
+	Product(s): Microsoft Home Games
+	Version(s): 1.0
+	Operating System(s): 
+	Keyword(s): kbtool kbui igz kbimu msgamekbfaq
+	Last Modified: 16-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Asheron's Call, version 1.0 
+	- Microsoft Asheron's Call: Dark Majesty, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes how to obtain assistance with Microsoft Asheron's Call.
+	
+	MORE INFORMATION
+	================
+	
+	Asheron's Call Online Help
+	--------------------------
+	
+	For answers to most of your game-playing questions, please see the online Help
+	file for Asheron's Call. To do this, click the question mark button on the
+	Asheron's Call game screen.
+	
+	Asheron's Call Help on the Microsoft Zone
+	-----------------------------------------
+	
+	The Zone contains two very useful resources for Asheron's Call players: the
+	Handbook and Game Help. The Asheron's Call Handbook contains articles on many
+	aspects of gameplay, including allegiance, fellowship, magic, and combat.
+	Asheron's Call Game Help contains resolutions to many commonly encountered
+	issues. To view the Handbook or Game Help:
+	
+	1. Connect to the following Asheron's Call Web page on the Zone:
+	
+	  http://zone.msn.com/asheronscall/
+	
+	2. In the left column, click Handbook or Game Help.
+	
+	Microsoft Product Support Web Site
+	----------------------------------
+	
+	Visit the FAQs & Highlights for Games Web page for technical information and
+	additional support resources at the following Microsoft Web site:
+	
+	  http://support.microsoft.com/highlights/gms.asp
+	
+	Ask a Microsoft Support Professional for help
+	
+	  http://go.microsoft.com/fwlink/?LinkId=376
+	
+	Urgent Assistance
+	-----------------
+	
+	To request assistance if you are stuck in a situation that prevents you from
+	playing the game, click the Options button, and then click the Urgent Assistance
+	button in Asheron's Call.
+	
+	Abuse
+	-----
+	
+	To report behavior that is harassing, threatening, or offensive click the Options
+	button, and then click the Report Abuse button in Asheron's Call.
+	
+	Billing
+	-------
+	
+	If you have a question related to the billing of Asheron's Call, visit the
+	following Web site:
+	
+	  http://zone.msn.com/billing
+	
+	If you would like to view the answers to commonly reported billing problems or to
+	report a problem to the billing department, please visit the following Web
+	site:
+	
+	  http://zone.msn.com/zqdb/help/zscreen.asp
+	
+	Newsgroup
+	---------
+	
+	You can obtain assistance from other users via the following Asheron's Call
+	newsgroup on the Internet:
+	
+	  news://msnews.microsoft.com/microsoft.public.games.zone.asherons_call
+	
+	To Report a Bug
+	---------------
+	
+	If you have found a bug in the game, please go to the following web site:
+	
+	  http://zone.msn.com/asheronscall/help/ashebugreporting.asp
+	
+	Additional query words: 1.00 igz msngz ashcall ac aid asherons
+	
+	======================================================================
+	Keywords          : kbtool kbui igz kbimu msgame kbfaq
+	Technology        : kbHomeProdSearch _IKkbbogus kbGamesSearch kbMSNSearch kbAsheronSearch kbAsheron100 kbAsheronDarkMaj
+	Version           : :1.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

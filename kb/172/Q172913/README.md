@@ -1,0 +1,144 @@
+---
+layout: page
+title: "Q172913: Server Stops with STOP 0xA in Ibmsync.sys Driver Under Stress"
+permalink: kb/172/Q172913/
+---
+
+## Q172913: Server Stops with STOP 0xA in Ibmsync.sys Driver Under Stress
+
+	Article: Q172913
+	Product(s): Microsoft SNA Server
+	Version(s): WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1
+	Operating System(s): 
+	Keyword(s): kbnetwork
+	Last Modified: 22-OCT-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 2.11, 2.11 SP1, 2.11 SP2, 3.0, 3.0 SP1, on platform(s):
+	   - the operating system: Microsoft Windows NT 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	While transferring large amounts of data over the IBM SDLC or IBM X.25 link
+	service provided with SNA Server, the Windows NT computer may fail with the
+	following STOP message:
+	
+	  STOP 0x000A (driver = IBMSYNC.SYS)
+	
+	This problem was found while testing back-to-back SDLC communications between two
+	SNA Server computers, each with an IBM SDLC adapter. The SDLC connection was
+	supporting seven concurrent AFTP conversations where each conversation was
+	performing continuous "Get" and "Put" file copies across the SDLC link. After
+	30-45 minutes of operation, the STOP screen was observed.
+	
+	The contents of the dump file are in the More Information section of this
+	article.
+	
+	CAUSE
+	=====
+	
+	The problem occurs because the Ibmsync.sys driver runs out of control blocks to
+	queue up events for a deferred procedure call (DPC). The IBMSYNC driver
+	allocates a queue size of 20 when it initializes. If all the entries in this
+	queue are filled up, an access violation occurs in Ibmsync.sys.
+	
+	
+	RESOLUTION
+	==========
+	
+	The Ibmsync.sys DPC queue size has been increased to 100. Since the queue
+	element size is 16 bytes, this change causes IBMSYNC to reserve an extra 1280
+	bytes during initialization.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in SNA Server version 2.11 (SP1 and
+	SP2) and 3.0 (including SP1). This problem was corrected in the latest SNA
+	Server version 3.0 U.S. Service Pack. For information on obtaining this Service
+	Pack, query on the following word in the Microsoft Knowledge Base (without the
+	spaces):
+	
+	  S E R V P A C K
+	
+	
+	MORE INFORMATION
+	================
+	
+	The following is an excerpt from the Windows NT crash dump file when this
+	problem occurred:
+	
+	Bugcheck 0000000a : 0000000c 00000018 00000001 fcae3cf0
+	
+	kd> kv
+	kv
+	ChildEBP RetAddr  Args to Child
+	fee54bb4 fcae3cf0 439cfc80 522aa6e6 fcae1774 NT!_KiTrap0E+0x252 (FPO: [0,0]
+	TrapFrame @ fee54bb4)
+	fee54c28 fcae15bc ffb604b8 fee54c5c ffb4f008
+	IBMSYNC!_SyncPutDPCQueueTail+0x50 (FPO: [1,0,1])
+	fee54c44 8013c76a ffb4f008 ffb60400 fcae1702 IBMSYNC!_EntryPointISR+0x2ac
+	(FPO: [EBP 0xfee54c5c] [2,
+	1,4])
+	fee54c44 8040445b ffb4f008 ffb60400 fcae1702 NT!_KiInterruptDispatch+0x2a
+	(FPO: [0,2] TrapFrame @ fe
+	e54c5c)
+	fee54ccc 80404310 00000286 8013c65c ffb604b8
+	hal!HalpHardwareInterrupt03+0x2 (FPO: [0,0,0])
+	fee54cd4 8013c65c ffb604b8 00000010 ff104902 hal!KfLowerIrql+0x44 (FPO:
+	[1,1,0])
+	fee54ce8 fcae315d ffb4f008 fcae3160 ffb604b8
+	NT!_KeSynchronizeExecution+0x2c
+	fee54cf8 fcae301c ffb604b8 ffb60624 ffb604b8 IBMSYNC!_Write8273Cmd+0x1d
+	(FPO: [2,0,0])
+	fee54d10 fcae313a ffb604b8 ffb604e4 ffb604b8
+	IBMSYNC!_TxFSMActionXmitNext+0xfc (FPO: [1,0,3])
+	fee54d24 fcae2de0 ffb604b8 00000000 ffb604b8 IBMSYNC!_TxFSMEvent+0x7a (FPO:
+	[2,0,3])
+	fee54d38 fcae313a ffb604b8 ffb4f008 ffb604b8 IBMSYNC!_TxFSMActionEndOK+0x90
+	(FPO: [1,0,2])
+	fee54d4c fcae308e ffb604b8 00000001 ffb604b8 IBMSYNC!_TxFSMEvent+0x7a (FPO:
+	[2,0,3])
+	fee54d64 fcae0e3c ffb604b8 00000001 00000001
+	IBMSYNC!_ProtectedTxFSMEvent+0x5e (FPO: [3,1,2])
+	fee54d78 80137ee3 ffb60474 ffb60400 00000000 IBMSYNC!_DPCRoutine+0xcc (FPO:
+	[4,0,1])
+	fee54dac 8010c8ac fee54e00 fc8f218c fc8f0658 NT!KiRetireDpcList+0x31 (FPO:
+	[0,4,0])
+	fee54dc4 fc8f6072 ffb5f2c8 0017be78 ff107b9c
+	NT!_ExpAcquireResourceSharedLite+0xce (FPO: [EBP 0xfee5
+	4e00] [2,1,4])
+	fee54e00 00000000 801168d4 00000008 00000293 Npfs!_NpFsdRead+0x62
+	
+	kd> !trap fee54bb4
+	!trap fee54bb4
+	eax=00000000 ebx=ffb604b8 ecx=ffb5ff68 edx=00000388 esi=ffb604b8
+	edi=00000005
+	eip=fcae3cf0 esp=fee54c28 ebp=ffb5ff58 iopl=0         nv up ei ng nz na pe
+	nc
+	cs=0008  ss=0010  ds=0023  es=0023  fs=0030  gs=0000
+	efl=00010282
+	ErrCode = 00000002
+	fcae3cf0 c7400c00000000   mov     dword ptr [eax+0xc],0x0
+	
+	kd> u IBMSYNC!_SyncPutDPCQueueTail+0x50
+	u IBMSYNC!_SyncPutDPCQueueTail+0x50
+	IBMSYNC!_SyncPutDPCQueueTail+0x50:
+	fcae3cf0 c7400c00000000   mov     dword ptr [eax+0xc],0x0
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbnetwork 
+	Technology        : kbAudDeveloper kbSNAServSearch
+	Version           : WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

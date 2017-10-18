@@ -1,0 +1,203 @@
+---
+layout: page
+title: "Q96711: HIMEM.SYS Reports Error: Unable to Control A20 Line!"
+permalink: kb/096/Q96711/
+---
+
+## Q96711: HIMEM.SYS Reports Error: Unable to Control A20 Line!
+
+	Article: Q96711
+	Product(s): Microsoft Disk Operating System
+	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22; WINDOWS:95
+	Operating System(s): 
+	Keyword(s): msdos win95
+	Last Modified: 20-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+	- Microsoft Windows 95 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If your computer displays the "ERROR: Unable to control A20 line!" message when
+	you start your computer, HIMEM.SYS did not load properly and therefore cannot
+	make extended memory or the high memory area (HMA) available. If HIMEM.SYS is
+	not loaded correctly, programs such as EMM386.EXE and Microsoft Windows 3.0 and
+	3.1 are unable to use extended memory, and Microsoft MS-DOS cannot load into the
+	HMA.
+	
+	CAUSE
+	=====
+	
+	This problem occurs if HIMEM.SYS incorrectly identifies your machine type, or if
+	the /CPUCLOCK and /MACHINE switches need to be added to the DEVICE command for
+	HIMEM.SYS.
+	
+	WORKAROUND
+	==========
+	
+	To correct this problem, add the /CPUCLOCK and /MACHINE switches to the DEVICE
+	command that starts HIMEM.SYS, as follows:
+	
+	1. If you are using MS-DOS 5.0, create a startup disk. To do so, insert a
+	  formatted floppy disk in drive A and type the following:
+	
+	  " sys c: a:" (without the quotation marks)
+	
+	  NOTES:
+	
+	   - Do not use drive B when you create the startup disk. Most computer BIOS
+	     startup procedures do not look for a disk in drive B when starting the
+	     computer, even though the light on drive B may turn on momentarily.
+	
+	   - If you are using MS-DOS 6.0, 6.2 or Windows 95, you can skip to step 3.
+	     You do not need to create a startup floppy disk because you can use the
+	     interactive startup key (F8) to bypass commands in your CONFIG.SYS file if
+	     they cause your system to stop responding (hang). For more information on
+	     using interactive startup, see your MS-DOS documentation.
+	
+	2. Copy your CONFIG.SYS file to the startup disk by typing the following:
+	
+	  " copy c:\config.sys a:\ " (without the quotation marks)
+	
+	3. Edit your CONFIG.SYS file.
+	
+	  a. To edit the file using MS-DOS Editor, type the following at the MS-DOS
+	     command prompt:
+	
+	  " edit c:\config.sys" (without the quotation marks)
+	
+	  b. Make sure your CONFIG.SYS file contains a DEVICE command for HIMEM.SYS.
+	     This command should appear before any other DEVICE commands. Specify the
+	     command as follows:
+	
+	  " device=c:\dos\himem.sys" (without the quotation marks)
+	
+	  c. Add the /CPUCLOCK:ON switch to the DEVICE command for HIMEM.SYS. The
+	     command should now appear as follows:
+	
+	  " device=c:\dos\himem.sys /cpuclock:on" (without the quotation marks)
+	
+	  d. If you are using MS-DOS 6.0 or later, you should also add the /V (verbose)
+	     switch after the /CPUCLOCK:ON switch to force HIMEM.SYS to display
+	     informational messages when it loads.
+	
+	  e. If you are using MS-DOS Editor, choose Exit from the File menu. When
+	     MS-DOS Editor displays a dialog box prompting you to save your file,
+	     choose the Yes button or press ENTER.
+	
+	4. Restart your computer by pressing CTRL+ALT+DEL, or if you are using Windows
+	  95, click Start, click Shut Down, click Restart (or Restart The Computer),
+	  and then click OK.
+	
+	  Watch the messages that your computer displays during startup. If HIMEM.SYS is
+	  working properly, it should display a message similar to the following:
+	
+	  Installed A20 handler number 1. 64K High Memory Area is available.
+	
+	  If the error message no longer appears, HIMEM.SYS starts correctly, and your
+	  system is working properly, the problem has been corrected. If you still see
+	  the "ERROR: Unable to control A20 line!" message, continue with the next
+	  step.
+	
+	5. Edit your CONFIG.SYS file again. Locate the DEVICE command for HIMEM.SYS and
+	  add the /MACHINE switch to it. The /MACHINE switch specifies the type of
+	  computer you have. The switch should be followed by a colon (:) and your
+	  machine number (see the following list). For example, the following DEVICE
+	  command specifies that your computer is a Toshiba(R) 5100 (machine number
+	  7):
+	
+	     device=c:\dos\himem.sys /cpuclock:on /v /machine:7
+	
+	  The following table lists machine types in alphabetical order, and shows the
+	  corresponding number to specify with the /machine switch:
+	
+	     Machine Type                          Number
+	     ------------------------------------------------------
+	
+	     Abacus 386                            1
+	     Acer 1100                             6
+	     AT&T(R) 6300 Plus                     5
+	     Bull Micral 60                        16
+	     Chaplet                               1
+	     Compaq Presario                       1
+	     CompuAdd(R) 386 systems               1 or 8
+	     CSS Labs                              12
+	     Datamedia 386/486                     2
+	     Everex(TM) AT Plus 1800               1
+	     Everex Notebook ELX                   1
+	     Excel Computer Systems                13
+	     Hitachi(R) HL500C                     8
+	     Hewlett-Packard(R) (HP[R]) Vectra(R)  14
+	     HP Vectra (A and A+)                  4
+	     IBM(R) PC/AT(R)                       1, 11, 12, or 13
+	     IBM PS/2(R)                           2
+	     Intel(R) 301z or 302                  8
+	     JDR 386/33                            1
+	     OPT 386-25 motherboard                1
+	     Pak 386SX                             1
+	     PC Limited                            4
+	     PC 380/33C, PC 350/33C, or PC300/33C  2
+	        BIOS revision 1.14
+	     Philips                               13
+	     Phoenix Cascade BIOS                  3, 1 or 8
+	     Toshiba 1600 and 1200XE               7
+	     Toshiba 5100                          7
+	     Tulip(R) SX                           9
+	     Unisys(R) PowerPort                   2
+	     WYSE(R) 12.5 MHz 286                  8
+	     Zenith(R) ZBIOS                       10
+	
+	  If your computer is not on the list, you are not sure which number to use, or
+	  the machine number for your computer doesn't correct the problem, try these
+	  machine numbers in the following order: 1, 11, 12, 13, 8, 2-10, 14-16.
+	
+	
+	6. If you're using MS-DOS Editor, choose Exit from the File menu. When MS-DOS
+	  Editor displays a dialog box prompting you to save your file, choose Yes or
+	  press ENTER.
+	
+	7. Restart your computer by pressing CTRL+ALT+DEL or if you are using Windows
+	  95, click Start, click Shut Down, click Restart (or Restart The Computer),
+	  and then click OK.
+	
+	Watch the messages that your computer displays during startup. If HIMEM.SYS is
+	working properly, it should display a message similar to the following:
+	
+	  Installed A20 handler number 1. 64K High Memory Area is available.
+	
+	If your computer fails when you restart it or you receive the "ERROR: Unable to
+	control A20 line!" message, the machine number you specified is incorrect for
+	your hardware. If the computer hangs and you are using MS-DOS 5.0, insert the
+	startup disk in drive A and restart your system. If you are using MS-DOS 6.0 or
+	later, use the F8 key to start the interactive startup procedure. When you are
+	prompted to load HIMEM.SYS, press the N key.
+	
+	Next, edit your CONFIG.SYS file, specify a different machine number, save your
+	changes, and restart your system. You may need to try several machine numbers
+	before you identify the one that works for your computer.
+	
+	REFERENCES
+	==========
+	
+	If you are using MS-DOS 5.0, refer to the Microsoft MS-DOS "User's Guide and
+	Reference," pages 610-613, for more information.
+	
+	If you are using MS-DOS 6.0, 6.2, or Windows 95, refer to the MS-DOS Help Command
+	Reference by typing the following at the MS-DOS command prompt:
+	
+	  " help himem.sys" (without the quotation marks)
+	
+	Additional query words: 5.00 6.00 6.20 6.22 7.00 dos high memory tshoot errmsg
+	
+	======================================================================
+	Keywords          : msdos win95 
+	Technology        : kbWin95search kbZNotKeyword3 kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+	Version           : MS-DOS:5.x,6.0,6.2,6.21,6.22; WINDOWS:95
+	
+	=============================================================================
+	

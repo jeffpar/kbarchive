@@ -1,0 +1,407 @@
+---
+layout: page
+title: "Q109500: SYSINI.WRI from Windows for Workgroups 3.11 (Part 3 of 3)"
+permalink: kb/109/Q109500/
+---
+
+## Q109500: SYSINI.WRI from Windows for Workgroups 3.11 (Part 3 of 3)
+
+	Article: Q109500
+	Product(s): Microsoft Windows 3.x Retail Product
+	Version(s): WINDOWS:3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 26-SEP-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows for Workgroups version 3.11 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The following information was taken from the Microsoft Windows for Workgroups
+	version 3.11 SYSINI.WRI.
+	
+	MORE INFORMATION
+	================
+	
+	[386Enh] Section Settings
+	
+	The [386Enh] section contains information used for virtual-memory
+	page swapping; virtual-memory network drivers; and 32-bit disk
+	access, file access, and SCSI port drivers.
+	
+	The [386Enh] section can contain the following settings:
+	____________________________________________________________
+	32BitDiskAccess=<on-or-off>
+	
+	Default:     Off
+	Purpose:     If on, this setting attempts to use 32-bit disk
+	access for all disk drives. If your disk drive controllers cannot
+	support 32-bit disk access, this setting may still show as on.
+	____________________________________________________________
+	AllVMsExclusive=<boolean>
+	
+	Default:     False
+	Purpose:     If enabled, this setting forces all applications to
+	run in exclusive full-screen mode, overriding all contrary settings
+	in the applications' program information files (PIFs). Enabling this
+	setting might prolong the length of the Windows session when you are
+	running network and memory-resident software that is incompatible
+	with Windows for Workgroups.
+	____________________________________________________________
+	COMBoostTime=<milliseconds>
+	
+	Default:     2
+	Purpose:     Specifies the amount of time (in milliseconds) to
+	allow a virtual machine to process a COM interrupt. If, while running
+	a communications application, you lose keyboard characters on the
+	screen, you can try increasing this value.
+	____________________________________________________________
+	COMMdrv30=<boolean>
+	
+	Default:     False
+	Purpose:     If enabled, the Virtual COM Driver (VCD) uses its own
+	copy of the interrupt handler for the serial communications driver.
+	This  improves performance of your COM ports. Enable this setting if
+	you are using a Windows version 3.0 serial communications driver.
+	Disable this setting if you are using the standard Windows version
+	3.1 serial communications driver.
+	____________________________________________________________
+	COM1FIFO=<0-or-1>
+	COM2FIFO=<0-or-1>
+	COM3FIFO=<0-or-1>
+	COM4FIFO=<0-or-1>
+	
+	Default:     True
+	Purpose:     Specifies whether the FIFO buffer of a COM port's
+	16550 Universal Asynchronous Receiver Transmitter (UART) should be
+	enabled (True) or disabled (False). If a serial port does not have a
+	16550 UART, this setting is ignored.
+	
+	____________________________________________________________
+	COMIrqSharing=<boolean>
+	
+	Default:     True for Micro Channel Architecture and EISA
+	machines; False for all other machines.
+	Purpose:     Specifies whether COM interrupt lines are sharable
+	between multiple serial ports or with other devices. Enable this
+	setting if your machine uses the same interrupt for COM3 or COM4 as
+	it does for COM1 or COM2.
+	____________________________________________________________
+	DOSPromptExitInstruc=<boolean>
+	
+	Default:     Yes
+	Purpose:     If this setting is enabled, when you start MS-DOS
+	Prompt, a message appears with instructions on how to exit and switch
+	away from MS-DOS Prompt. Disable this setting if you do not want to
+	see the message.
+	____________________________________________________________
+	DualDisplay=<boolean>
+	
+	Default:     See "Purpose" below.
+	Purpose:     Typically, the memory between B000:0000 and B7FF:000F
+	is used by the general system unless a secondary display is detected.
+	Enable this setting if you are using a VGA-based color display and
+	want EMM386.EXE to include this address space as an upper memory
+	block (UMB). In addition to enabling this setting, you must include
+	the i= option in the device=EMM386.EXE command line in your
+	CONFIG.SYS file as follows:
+	
+	         device=EMM386.EXE  i=B000-B7FF
+	
+	If this setting is disabled, the address range is available on EGA
+	systems, but not on VGA systems, because the VGA display device
+	supports monochrome modes, which use this address space.
+	____________________________________________________________
+	EMMExclude=<paragraph-range>
+	
+	Default:     None
+	Purpose:     Specifies a range of memory that Windows for
+	Workgroups will not scan to find unused address space. This has the
+	side effect of turning off the RAM and ROM search code for the range.
+	The range (two paragraph values separated by a hyphen) must be
+	between A000 and EFFF. This scanning can interfere with some adapters
+	that use the same memory area. The starting value is rounded down and
+	the ending value is rounded up to a multiple of 16K. For example, you
+	could set EMMExclude=C800-CFFF to prevent Windows for Workgroups from
+	scanning the addresses C800:0000 through CFFF:000F. You can specify
+	more than one range by including more than one EMMExclude line.
+	____________________________________________________________
+	EMMInclude=<paragraph-range>
+	
+	Default:     None
+	Purpose:     Specifies a range of memory that Windows for
+	Workgroups will treat as unused address space regardless of what may
+	be there. EMMInclude takes precedence over EMMExclude if you specify
+	ranges that overlap. The range (two values separated by a hyphen)
+	must be between A000 and EFFF. The starting value is rounded down and
+	the ending value is rounded up to a multiple of 16K. For example, you
+	could set EMMInclude=C800-CFFF to ensure that Windows for Workgroups
+	can use the addresses C800:0000 through CFFF:000F. You may specify
+	more than one range by including more than one EMMInclude line.
+	____________________________________________________________
+	EMMPageFrame=<paragraph>
+	
+	Default:     None
+	Purpose:     Specifies the starting paragraph where the 64K page
+	frame will begin when Windows for Workgroups cannot find a suitable
+	page frame. Allows an EMM page frame in an area containing some
+	unused RAM or ROM. For example, you could set EMMPageFrame=C400 to
+	start the page frame at C400:0000.
+	____________________________________________________________
+	EMMSize=<kilobytes>
+	
+	Default:     65536
+	Purpose:     Specifies the total amount of memory available for
+	mapping as expanded memory. The default value allocates the maximum
+	possible amount of system memory as expanded memory. Specify a value
+	for this setting if you run an application that allocates all of the
+	available expanded memory. If this is the case, you cannot create new
+	virtual machines. If this value is zero, no expanded memory is
+	allocated, but the EMM driver will load. To disable EMM and prevent
+	the EMM driver from loading, use the NoEMMDriver setting.
+	____________________________________________________________
+	EnableSharingPopUps=<boolean>
+	
+	Default:     False
+	Purpose:     Specifies whether a SHARE.EXE sharing-violation
+	message should appear when a sharing violation occurs while you are
+	using VSHARE. If this setting is enabled, the SHARE.EXE messages will
+	appear. If this setting is disabled, the SHARE.EXE message will not
+	appear and you will not be notified of a sharing violation. Enable
+	this setting if you are using an MS-DOS?based application that relies
+	on the sharing-violation message.
+	____________________________________________________________
+	FileSysChange=<on-or-off>
+	
+	Default:     Off
+	Purpose:     Indicates whether File Manager automatically updates
+	file information any time an MS-DOS?based application creates,
+	renames, or deletes a file. If this setting is disabled, a virtual
+	machine can run exclusively, even if it modifies files. Enabling this
+	setting can slow system performance significantly. If you are sharing
+	directories and someone else changes the contents of your directories
+	by using an MS-DOS?based application, File Manager does not update
+	the directory or file information, even if this setting is enabled.
+	____________________________________________________________
+	InDOSPolling=<boolean>
+	
+	Default:     No
+	Purpose:     If enabled, prevents Windows for Workgroups from
+	running other applications when memory-resident software has the
+	InDOS flag set. Enabling this setting is necessary if the
+	memory-resident software needs to be in a critical section to do
+	operations off an INT21 hook, but will slow system performance
+	slightly.
+	____________________________________________________________
+	INT28Critical=<boolean>
+	
+	Default:     True
+	Purpose:     Specifies whether a critical section is needed to
+	handle INT28h interrupts used by memory-resident software. Some
+	networks do internal task switching on INT28h interrupts. These
+	interrupts might lock up some network software, indicating the need
+	for an INT28h critical section. If you are not using such software,
+	you might improve Windows task switching by disabling this setting.
+	____________________________________________________________
+	LocalReboot=<on-or-off>
+	
+	Default:     On
+	Purpose:     Specifies whether you can press CTRL+ALT+DEL to quit
+	applications that cause an unrecoverable error. If this setting is
+	enabled, you can quit the applications without restarting Windows for
+	Workgroups. If this setting is disabled, pressing CTRL+ALT+DEL will
+	restart your entire system.
+	____________________________________________________________
+	MaxBPs=<number>
+	
+	Default:     200
+	Purpose:     Specifies the maximum number of break points (a
+	method for transferring control to Windows) that can be used by the
+	virtual-memory manager. You may need to increase this value if you
+	are using Microsoft C version 7.0 or a third-party virtual-device
+	driver that requires more break points than the default value.
+	____________________________________________________________
+	MaxCOMPort=<number>
+	
+	Default:     4
+	Purpose:     Specifies the maximum number of COM ports supported.
+	Change this value if you have more than four COM ports installed in
+	your computer.
+	____________________________________________________________
+	NetAsynchFallback=<boolean>
+	
+	Default:     False
+	Purpose:     If this setting is enabled, Windows for Workgroups
+	attempts to save a failing NetBIOS request. When an application
+	issues an asynchronous NetBIOS request, Windows for Workgroups
+	attempts to allocate space in its global network buffer to receive
+	the data. If there is insufficient space in the global buffer,
+	Windows for Workgroups typically fails the NetBIOS request. If this
+	setting is enabled, Windows for Workgroups attempts to save such a
+	request by allocating a buffer in local memory and preventing any
+	other virtual machines from running until the data is received or the
+	time-out period (specified by the NetAsynchTimeout setting) expires.
+	____________________________________________________________
+	NetAsynchTimeout=<seconds>
+	
+	Default:     5.0
+	Purpose:     Specifies the time-out period (in seconds) when
+	Windows for Workgroups will enter a critical section in order to
+	service an asynchronous NetBIOS request. It is used only when the
+	NetAsynchFallback setting is enabled. This value can include a
+	decimal (such as 0.5).
+	____________________________________________________________
+	NetCard=<list-of-filenames>
+	
+	Default:     None (Setup sets this value to match your configuration.)
+	Purpose:     Specifies the virtual-device driver(s) for your
+	network adapter that Windows for Workgroups uses. This driver is
+	loaded when Windows for Workgroups starts, unless the equivalent
+	real-mode driver has already been loaded or Windows for Workgroups is
+	started with the /n switch.
+	____________________________________________________________
+	NetCard3=<list-of-filenames>
+	
+	Default:     None (Setup sets this value to match your configuration.)
+	Purpose:     Specifies the virtual-device driver(s) for your
+	network adapter that Windows for Workgroups uses. Setup uses this
+	parameter only if there is no equivalent real-mode driver for the
+	network adapter card specified. This driver is loaded when Windows
+	for Workgroups starts, unless Windows for Workgroups is started with
+	the /n switch.
+	____________________________________________________________
+	NetDMASize=<kilobytes>
+	
+	Default:     32 on Micro Channel Architecture machines (IBM PS/2
+	or compatible); 0 on non-Micro Channel Architecture machines (IBM
+	PC/AT or compatible)
+	Purpose:     Specifies the DMA buffer size (in kilobytes) for
+	NetBIOS transport software if a network has been installed. In this
+	case, the buffer size is the larger of this value or the value of
+	DMABufferSize.
+	____________________________________________________________
+	NetHeapSize=<kilobytes>
+	
+	Default:     12
+	Purpose:     Specifies the size (in kilobytes) of the
+	data-transfer buffers in conventional memory that Windows for
+	Workgroups allocates for transferring data over a network. This
+	setting is needed only if you are using real-mode protocols. It is
+	not required if you are using the NETBEUI.386 protocol. All values
+	are rounded up to the nearest 4K.
+	____________________________________________________________
+	NetMisc=<list-of-filenames>
+	
+	Default:     None (Setup sets this value to match your configuration.)
+	Purpose:     Specifies virtual-device drivers needed to run your
+	network software. These drivers are loaded when Windows for
+	Workgroups starts, unless Windows for Workgroups is started with the
+	/n switch.
+	____________________________________________________________
+	Network=<list-of-filenames-or-devicenames>
+	
+	Default:     None (Setup sets this value to match your configuration)
+	Purpose:     Specifies the virtual-network drivers that Windows
+	for Workgroups uses.
+	____________________________________________________________
+	ReflectDosInt2A=<boolean>
+	
+	Default:     False
+	Purpose:     Indicates whether Windows for Workgroups should
+	consume or reflect DOS INT 2A signals. The default means Windows for
+	Workgroups will consume these signals and therefore run more
+	efficiently. Enable this setting if you are running memory-resident
+	software that relies on detecting INT2A messages.
+	____________________________________________________________
+	SecondNet=<filename>
+	
+	Default:     None (Setup sets this value to match your configuration.)
+	Purpose:     Specifies the virtual-network drivers for the
+	networks you have added support for additional networks installed
+	during Setup.
+	____________________________________________________________
+	SyncTime=<boolean>
+	
+	Default:     True
+	Purpose:     If this setting is enabled, Windows for Workgroups
+	periodically synchronizes its time with the computer's CMOS clock. If
+	this setting is disabled, Windows for Workgroups usually maintains
+	the correct time, unless TrapTimerPorts is disabled and you are
+	running applications that can cause the system time to run faster or
+	slower than the actual time. This setting is related to the
+	TrapTimerPorts setting.
+	____________________________________________________________
+	TimerCriticalSection=<milliseconds>
+	
+	Default:     0
+	Purpose:     Instructs Windows for Workgroups to go into a
+	critical section around all timer interrupt code and specifies a
+	time-out period (in milliseconds). Specifying a positive value causes
+	only one virtual machine at a time to receive timer interrupts. Some
+	networks, protocols, and other global memory-resident software may
+	fail unless this setting is used. However, using this setting slows
+	performance and can make the system seem to stop for short periods of
+	time.
+	____________________________________________________________
+	Transport=<list-of-filenames>
+	
+	Default:     netbeui.386 (Microsoft NetBEUI)
+	Purpose:     Specifies the network-protocol virtual-device-driver
+	file that Windows for Workgroups uses.
+	____________________________________________________________
+	TrapTimerPorts=<boolean>
+	
+	Default:     True
+	Purpose:     Specifies whether Windows for Workgroups should trap
+	read and write operations to the system timer ports that are
+	performed by applications. If this setting is disabled, Windows for
+	Workgroups will not trap these operations, allowing applications that
+	frequently read or write to the timer to run faster. However, this
+	may interfere with the ability of Windows for Workgroups to keep
+	accurate system time. If this setting is disabled, Windows for
+	Workgroups can usually detect when an application has changed the
+	timer interrupt interval and then make any adjustments to the time.
+	If your system's time appears to be running fast or slow, enable this
+	setting. If you do not want to enable this setting, enable the
+	SyncTime setting. This causes Windows for Workgroups to check the
+	time periodically and then make any necessary adjustments.
+	____________________________________________________________
+	V86ModeLANAs=<lana number, lana number>
+	
+	Default:     None
+	Purpose:     Specifies the LANA numbers for all the real-mode
+	protocols and NetBIOS's that Windows for Workgroups recognizes. This
+	setting is for real-mode protocols and NetBIOS's only. This setting
+	should not include any LANA numbers for protected-mode protocols or
+	NetBIOS's. If you start the network before starting Windows for
+	Workgroups, the values for this setting must include the LANA numbers
+	for the real-mode protocols and NetBIOS's that you want to use. If
+	you do not start the network before starting Windows for Workgroups,
+	make sure that the values for this setting do not include LANA
+	numbers for protected-mode protocols or NetBIOS's.
+	____________________________________________________________
+	VirtualHDIrq=<on-or-off>
+	
+	Default:     On for AT-compatible computers; Off for all other computers
+	Purpose:     If enabled, Windows for Workgroups can terminate
+	interrupts from the hard disk controller, bypassing the ROM routine
+	that handles these interrupts. Some hard-disk drives might require
+	this setting to be disabled in order for interrupts to be processed
+	correctly. If this setting is disabled, the ROM routine handles the
+	interrupts, which slows system performance.
+	____________________________________________________________
+	
+	Additional query words: wfw wfwg 3.11
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+	Version           : WINDOWS:3.11
+	
+	=============================================================================
+	

@@ -1,0 +1,535 @@
+---
+layout: page
+title: "Q269330: HOWTO: Troubleshoot DCOM for VB Client/Server Applications"
+permalink: kb/269/Q269330/
+---
+
+## Q269330: HOWTO: Troubleshoot DCOM for VB Client/Server Applications
+
+	Article: Q269330
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbDCOM kbVBp500 kbVBp600 kbGrpDSVB kbDSupport
+	Last Modified: 27-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes various steps you can take to troubleshoot some of the
+	most common errors you encounter when you try to instantiate a remote server
+	object by using Distributed Component Object Model (DCOM). In Visual Basic, the
+	most common error messages are:
+	
+	  Run-time error 70: Permission Denied.
+	
+	  Run-time error 429: ActiveX component can't create object.
+	
+	  Run-time error 462: The remote server computer does not exist or is
+	  unavailable.
+	
+	MORE INFORMATION
+	================
+	
+	Where to Start Troubleshooting
+	------------------------------
+	
+	Most of the problems that occur when you try to instantiate a COM object on a
+	remote computer by using DCOM are related to incorrect settings in Dcomcnfg or a
+	networking problem. Very seldom is the problem related to the code.
+	
+	The first thing to do is to write down the information related to your
+	environment and the application itself, such as:
+	
+	1. About the server computer:
+	
+	  The server computer is the computer where the server application is going to
+	  run. Collect the following data:
+	
+	   - Operating system and installed service pack.
+	
+	   - Is somebody logged on to the computer?
+	
+	   - If somebody is logged on, what are their rights? Are they part of the
+	     Administrators group? Are they logged on as a Domain User?
+	
+	2. About the client computer:
+	
+	  The client computer is the computer where the client application is going to
+	  run. Collect the following data:
+	
+	   - Operating system and installed service pack.
+	
+	   - Who is logged on to this computer? Did they logged on as a Domain User or
+	     as a Local User? If they logged on as a Domain User what are their rights
+	     on the server computer? Are they part of the Administrators group on the
+	     server computer?
+	
+	3. About the server application:
+	
+	   - With which language, version, and service pack was the server developed?
+	
+	   - Does it call back to the client?
+	
+	   - Does it raise events?
+	
+	   - Does it have a user interface?
+	
+	   - Is it marked as Unattended Execution?
+	
+	   - Is it setting security parameters programmatically through the call of
+	     functions such as CoInitializeSecurity or CoSetProxyBlanket?
+	
+	4. About the client application:
+	
+	   - With which language, version, and service pack was the application
+	     developed?
+	
+	   - Is it setting security parameters programmatically through the call of
+	     functions such as CoInitializeSecurity or CoSetProxyBlanket?
+	
+	5. About the network:
+	
+	   - Are the client and the server computers on the same Local Area Network
+	     (LAN)?
+	
+	   - Are the client and the server computers connected through the Internet,
+	     without firewalls and proxies between them?
+	
+	   - Are the client and the server computers connected through the Internet,
+	     with firewalls and proxies between them?
+	
+	Basic Troubleshooting
+	---------------------
+	
+	1. Check that all of the settings in Dcomcnfg are appropriate, based on the data
+	  you collected earlier.
+	
+	  Q268550 HOWTO: Use Dcomcnfg for a Visual Basic DCOM Client/Server Application
+	
+	2. If you are using Microsoft Windows 95 on the client or server computer,
+	  ensure that you have installed DCOM95 on it. You can download DCOM95 from the
+	  following Microsoft Web site:
+	
+	  http://www.microsoft.com/com/dcom/dcom95/download.asp
+	
+	3. If you are using Windows 95, Microsoft Windows 98, Windows Millennium Edition
+	  (Me) on the server computer, you need to have the server component running
+	  before you try to use the client. As a check, verify that the server is
+	  running and that it is waiting for the client to connect.
+	
+	  Q165101 HOWTO: Use Windows 95, Windows 98, or Windows Me as a DCOM Server
+	
+	4. If your client and server computers are connected through the Internet with
+	  firewalls and proxies between them, DCOM does not work if there is any type
+	  of Address Translation (NAT) in between them. If there is no address
+	  translation, you need to configure these proxies and firewalls to enable DCOM
+	  to communicate. You can find several white papers related to this subject on
+	  the Microsoft Developers Network (MSDN) or at the following Microsoft Web
+	  site:
+	
+	  http://www.microsoft.com/com/tech/dcom.asp
+	
+	  This subject is not covered in this article.
+	
+	Additional Troubleshooting
+	--------------------------
+	
+	If you still have problems after setting Dcomcnfg to the right settings based on
+	your environment and application features, here are several additional steps you
+	can take to solve your problem:
+	
+	1. Use Task Manager to verify that the server is not running while you make
+	  changes in the settings using Dcomcnfg. All settings are assigned to a
+	  process when it starts so, if the server is running while you change the
+	  settings, the new settings only take effect the next time the server is
+	  launched.
+	
+	2. Verify that the server and client run correctly on the same computer. You
+	  should always test that your client and server run correctly locally; that
+	  is, on the same computer, before running remotely.
+	
+	3. Check if the problem you are facing is really a DCOM issue, which is usually
+	  not related to the code itself, or if it's a coding issue specific to your
+	  application. Do this by creating a very simple client/server application with
+	  just one or two very simple methods. Follow the normal procedures of
+	  packaging and installation. If your server raises events, then your small
+	  sample should also raise events. For additional information, click the
+	  article numbers below to view the articles in the Microsoft Knowledge Base:
+	
+	  Q266717 HOWTO: Create a DCOM Client/Server Application by Using Visual Basic
+	
+	  Q267836 HOWTO: Create a DCOM Client/Server with Events by Using Visual Basic
+	
+	  Ideally, you should use the preceding articles as a guideline because they
+	  take you step-by-step from scratch through to the final packaging and
+	  deployment. Use the same settings as you are using for your application and
+	  see if this works. If your problem is related to DCOM, you face the same
+	  problems on the small sample as you do in your application. Keep
+	  troubleshooting the problem with the small sample until you find the problem.
+	  If the small application works fine but your own application doesn't work
+	  with the same settings, then you can be facing two problems:
+	
+	   - Something in your code is creating the problem. For example, if you access
+	     a database in your code and the identity of your server doesn't have
+	     rights to do so. The same problem can happen if you are trying to access
+	     files or instantiate other objects.
+	
+	   - Your code is fine, but you have some problems in the Registry, such as
+	     multiple entries to your server.
+	
+	For additional information, click the article number below to view the article in
+	the Microsoft Knowledge Base:
+	
+	  Q180525 PRB: Dcomcnfg Reports Multiple Copies of DCOM Server
+	
+	   - You are pointing the client computer to the wrong server computer. Check
+	     the location tab in Dcomcnfg on the client computer.
+	
+	For additional information, click the article number below to view the article in
+	the Microsoft Knowledge Base:
+	
+	  Q268550 HOWTO: Use Dcomcnfg for a Visual Basic DCOM Client/Server Application
+	
+	4. Verify that you have packaged and installed the client and the server
+	  correctly. Creating the distribution packages correctly is fundamental to a
+	  successful installation.
+	
+	For additional information about a step-by-step sample on how to create a DCOM
+	client/server application using Visual Basic, click the article numbers below to
+	view the articles in the Microsoft Knowledge Base:
+	
+	  Q266717 HOWTO: Create a DCOM Client/Server Application by Using Visual Basic
+	
+	  Q267836 HOWTO: Create a DCOM Client/Server with Events by Using Visual Basic
+	
+	5. Verify that your network is working correctly by pinging the client from the
+	  server computer and the server from the client computer. On the server
+	  computer, open a command prompt window, and execute the following command
+	  where the preceding ClientcomputerName should be the name of your client
+	  computer:
+	
+	  Ping ClientcomputerName
+	
+	  If everything is working correctly, you should see three or four replies and
+	  the time each one took. If you see timeouts or other errors, you have
+	  problems in your network setup and you need to fix these before you can
+	  continue. Repeat the same steps on the client computer using the server's
+	  computer name.
+	
+	6. In Dcomcnfg on the client computer, change the server's location by replacing
+	  the server's name with the server's IP address. If it works with the IP
+	  address and not with the server's computer name, then more than likely you
+	  have problems with your networking settings.
+	
+	7. Try to restart the server and client. Sometimes some settings are cached in
+	  memory and restarting after making changes in Dcomcnfg solves the problem.
+	
+	8. On Windows 95 or Windows 98, use the TCP/IP protocol. To do this, remove all
+	  other protocols in the default protocols list in Dcomcnfg.
+	
+	9. Usually, if you have a DCOM problem, you get an error when you try to
+	  instantiate the remote object by calling the CreateObject function or when
+	  you set the object variable with the New keyword. It's important to be able
+	  to distinguish if you are getting an error message due to the creation of the
+	  object itself, or due to what you are doing in the Initialize event of the
+	  object. If the Initialize event of the object you are trying to instantiate
+	  doesn't have any code, then there is no doubt that the error you are getting
+	  is related to the instantiating of your object. If, however, you have code in
+	  the Initialize event, such as connecting to a database or instantiating other
+	  objects, you should include error trapping inside the Initialize event and
+	  raise a custom user error. If you don't trap your errors inside the
+	  Initialize event and an error is raised, it bubbles out to the client and may
+	  confuse you. You may think that the problem is the object creation when the
+	  problem is actually the code in the Initialize event.
+	
+	10. If the server is running on Microsoft Windows NT 4 or Microsoft Windows
+	  2000, you can use the Event Viewer to find out additional auditing
+	  information on why the DCOM connection failed. However, logging these type
+	  of events is usually not enabled by default. You need to set the auditing
+	  options to enable it.
+	
+	  In Windows NT 4, enable these options as follows:
+	
+	   - On the Start menu, select Programs, select Administrative Tools, and then
+	     select User Manager.
+	   - If you are running NT 4 server, you must select a domain; in this case, on
+	     the User menu, select the Domain option, and then select your local
+	     computer.
+	   - On the Policies menu, select the Audit option. Enable auditing for both
+	     success and failure for the first three entries: Logon/Logoff, File and
+	     Object Access, Use of User Rights. Click OK and close User Manager.
+	
+	  In Windows 2000, enable these options as follows:
+	
+	   - On the Start menu, select Programs, select Administrative Tools, and then
+	     select Local Security Policy.
+	   - On the left-hand pane, you see a tree view. Click the plus (+) sign at the
+	     left of the Local Policies, and you see the Audit Policy entry. Select the
+	     Audit Policy entry, and note that the right pane contains all audit
+	     options, which one is enabled and which one is not. Right-clicking at any
+	     of these options allows you to enable or disable them.
+	   - Enable auditing for success and failure for the following options: Audit
+	     logon events, Audit object access, Audit privilege use.
+	   - Close the Local Security Policy window.
+	
+	  Once you have activated these logging options, test your client again. After
+	  you get the error message, use Event Viewer to see if there are any DCOM
+	  events. The event may tell you why access was denied. Also, it can tell you
+	  who is logged on to the client computer and if this is a domain user or a
+	  local user. It can tell you that the protocol requested by the client is not
+	  available on the server, and so forth. COM logs are usually added to the
+	  system log.
+	
+	11. If your server has more than one class, and some of these classes work and
+	  others don't, check each class entry in Dcomcnfg on the client computer. By
+	  default, each class has its own AppID and, consequently, its own settings,
+	  so it's possible that some of your classes are set correctly and others are
+	  not.
+	
+	For additional information about Locating your server in the client's application
+	list, click the article number below to view the article in the Microsoft
+	Knowledge Base:
+	
+	  Q268550 HOWTO: Use Dcomcnfg for a Visual Basic DCOM Client/Server Application
+	
+	Run-Time Error 70: Permission Denied
+	------------------------------------
+	
+	This error is usually related to security settings. This error is a good
+	indication that the call reached the target computer, so networking is probably
+	not a problem here. Here are a few things to check:
+	
+	- If you set the authentication level to Connect, verify that the user logged
+	  in to the client computer is logged in as a domain user and not a local user.
+	
+	- If you set the authentication level to Connect, verify that the server
+	  computer actually belongs to the domain. If it's a standalone computer, it
+	  cannot authenticate the users unless you have a matching user name/password
+	  on both the client and server computer.
+	
+	- If you set the authentication level to None, check if you've set this option
+	  to none on both client and server computers.
+	
+	- If you set the authentication level to None and you have verified that both
+	  computers have this setting correct, be sure that neither the client nor the
+	  server application is setting authentication programmatically using functions
+	  such as CoInitializeSecurity or CoSetProxyBlanket. Setting authentication
+	  programmatically overrides the registry entries from Dcomcnfg.
+	
+	- If you set the authentication level to None, and you have non-domain users,
+	  check if you have included "Everyone" (or "The World" for Windows 95 and
+	  Windows 98) in the access and launch permissions.
+	
+	- Check the access and launching permissions in Dcomcnfg and verify that the
+	  user logged on to the client computer is explicitly included in these lists,
+	  or belongs to one of the groups included.
+	
+	- See "Known Issues to Check" later in this article.
+	
+	For additional information, click the article number below to view the article in
+	the Microsoft Knowledge Base:
+	
+	  Q216051 FIX: Dcomcnfg NT 4.0 SP4 Does Not Write .Exe File Name Under
+	  HKCR\APPID
+	
+	Run-Time Error 429: ActiveX Component Can't Create Object
+	---------------------------------------------------------
+	
+	Following are a few things that could cause this error:
+	
+	- The server is not correctly installed on the server computer. Run Dcomcnfg on
+	  the server computer, select the server application on the list of
+	  applications, and then click Properties. In the Location tab, verify that the
+	  only option checked is Run application on this computer.
+	
+	- You recompiled the server without binary compatibility, and didn't recompile
+	  the client. The client may be looking for old class IDs. Even if you
+	  recompiled the client, you may have multiple entries in the registry, old
+	  ones and new ones.
+	
+	For additional information, click the article number below to view the article in
+	the Microsoft Knowledge Base:
+	
+	  Q180525 PRB: Dcomcnfg Reports Multiple Copies of DCOM Server
+	
+	- You may be using the wrong server name in the location tab. For example, you
+	  installed the server on computer ServerA, and for some reason you defined the
+	  location in Dcomcnfg as being ServerB. Run Dcomcnfg on the client computer,
+	  locate the server on the list of applications, and then click Properties.
+	  Select the Location tab, and then verify that the server computer name is
+	  correct. If you are unable to locate your server in the list of applications,
+	  look for "Locating your server in the client's applications list" in the
+	  following Microsoft Knowledge Base article:
+	
+	  Q268550 HOWTO: Use Dcomcnfg for a Visual Basic DCOM Client/Server Application
+	
+	- Also see "Known Issues to Check" later in this article.
+	
+	For additional information, click the article number below to view the article in
+	the Microsoft Knowledge Base:
+	
+	  Q193143 BUG: DCOM Client Hangs and Then Gives Error Message 429
+	
+	Error 462: The Remote Server Computer Does Not Exist or Is Unavailable
+	----------------------------------------------------------------------
+	
+	Following are some causes for this error message:
+	
+	- You may be using the wrong server name in the location tab. For example, you
+	  installed the server on computer ServerA, and for some reason you defined the
+	  location in Dcomcnfg as being ServerB, and ServerB is not a valid computer.
+	  Run Dcomcnfg on the client computer, locate the server on the list of
+	  applications, and then click the Properties button. Select the Location tab,
+	  and then verify that the server computer name is correct. If you are unable
+	  to locate your server in the list of applications, see "Locating your server
+	  in the client's applications list" in the following Microsoft Knowledge Base
+	  article:
+	
+	  Q268550 HOWTO: Use Dcomcnfg for a Visual Basic DCOM Client/Server Application
+	
+	- Ping the server from the client and verify that it is reachable. Also ping
+	  the client from the server to see if it is reachable. Ping by name and IP
+	  address. See item 5 in the "Additional Troubleshooting" section of this
+	  article.
+	
+	- Your server is running on a Windows 95, Windows 98, or Windows Me computer,
+	  and the server is not running waiting for clients to connect, or RPCSS.EXE is
+	  not running.
+	
+	For additional information on this topic, click the article number below to view
+	the article in the Microsoft Knowledge Base:
+	
+	  Q165101 HOWTO: Use Windows 95 or Windows 98 as a DCOM Server
+	
+	- Your computer has more than one network card.
+	
+	For additional information on this topic, click the article number below to view
+	the article in the Microsoft Knowledge Base:
+	
+	  Q183930 FIX: IP Is Mangled When Using UDP on Multihomed Computers
+	
+	- Please see the "Known Issues to Check" section of this article.
+	
+	- The server computer is not running or is still in its reboot state.
+	
+	The Server Hangs
+	----------------
+	
+	If your server does not have a user interface, verify that you checked the
+	Unattended Execution option. If you don't check this option, it's possible that
+	a message box is being displayed by your server due to an untrapped error, for
+	example. If your server is not running with the identity Interactive User,
+	nobody can see this message box and the server is just waiting for somebody to
+	dismiss the box, which never happens. By using the Unattended Execution option,
+	message boxes are redirected to a log file.
+	
+	Client Crashes After Installation
+	---------------------------------
+	
+	For additional information about this topic, click the article numbers below to
+	view the articles in the Microsoft Knowledge Base:
+	
+	  Q185193 PRB: Clireg32 Fails to Register the Type Library of DCOM Server
+	
+	  Q221173 PRB: Installing VB6 Does Not Update Clireg32.exe
+	
+	Known Issues to Check:
+	
+	Following is a list of known problems that could be affecting your installation.
+	They are documented in other Microsoft Knowledge Base articles. Their article
+	IDs are provided here. If you are still having problems with your DCOM
+	application after reviewing the troubleshooting steps in this article and the
+	list of known issues, be sure to search the Knowledge Base for additional
+	articles that may not be included in this article.
+	
+	1. The following error message affects server applications created with Visual
+	  Basic 6.0 Initial Release, before Service Pack 1.
+	
+	  Q193143 DCOM Client Hangs and Then Gives Error Message 429
+	
+	2. The following problem was introduced in the Dcomcnfg that shipped with
+	  Service Pack 4 for NT 4.0 and fixed in Service Pack 6 for NT 4.0. However,
+	  even if you already have the fixed version shipped with SP6 but your server
+	  was installed before you installed SP6, you may still be experiencing this
+	  problem. The problem is that Dcomcnfg did not include one needed registry key
+	  under Hkey_Classes_Root\AppID. The HKCR\AppID is the key that maps the
+	  executable of a server to its AppID. For example, if your server's executable
+	  is MyServer.exe, there must be a key under HKCR\AppID with this name. One of
+	  the values under this key should be AppID that contains the AppID GUID of
+	  your server. See instructions in the following Microsoft Knowledge Base
+	  article on how to add the missing entry manually.
+	
+	  Q216051 Dcomcnfg NT 4.0 SP4 Does Not Write .Exe Name Under HKCR\APPID
+	
+	  The consequence of this error is that the system ignores all custom entries
+	  that you defined in Dcomcnfg for this server. For example, if you defined a
+	  list of users that has rights to access and launch your server, and this list
+	  includes User1, but you still get error 70 "Access Denied" when User1 tries
+	  to connect to your server, chances are you have this problem. Another
+	  problem, for example, is if you defined the Identity of your server to be
+	  Interactive User, but the server continues to behave as if it has Identity
+	  Launching User - which is the default.
+	
+	3. There was a bug in Clireg32.exe that shipped with Visual Basic 5.0. The
+	  consequence was that the client crashed after installation. The version of
+	  Clireg32 shipping with Visual Basic 6.0 has this bug fixed, but if you had
+	  the old version on the computer when you installed Visual Basic 6.0, the
+	  installation procedure does not update the file, so you may have the old
+	  version.
+	
+	  Clireg32.exe is a utility that registers the VBR and TLB files in the client
+	  computer. When you create a distribution package for a client and add a VBR
+	  file, the Package and Deployment Wizard (PDW) automatically adds Clireg32.exe
+	  to your distribution package. If you have the bad version of clireg32.exe on
+	  your development computer, you may be distributing the bad version with your
+	  application. If the target computer doesn't already have a newer version,
+	  this bad version is the one that is being used. The version with problems
+	  that shipped with Visual Basic 5.0 is 5.00.3716, dated 1/16/1997 12:00.
+	
+	  Q185193 Clireg32 Fails to Register the Type Library of DCOM server
+	
+	  Q221173 Installing VB6 Doesn't Update Clireg32.exe
+	
+	4. The following bug can cause problems when you are using DCOM on a computer
+	  with more than one network card. One possible error message is:
+	
+	  462 Remote server computer is unavailable.
+	
+	To avoid this problem, keep only TCP/IP on the list of protocols on this
+	computer. This issue is fixed in NT4 SP4.
+	
+	  Q183930 IP Is Mangled When Using UDP on Multihomed Computers
+	
+	5. When a COM client on a Windows NT computer runs under an identity that cannot
+	  be authenticated on the remote computer, a COM server started by the client
+	  shuts down in approximately six minutes.
+	
+	  Q175020 Remote COM Server Shuts Down After Six Minutes
+	
+	REFERENCES
+	==========
+	
+	For more information, refer to the following book:
+	
+	  Ted Pattison Programming Distributed Applications with COM+ and Microsoft
+	  Visual Basic 6.0, Second Edition
+	  (http://www.microsoft.com/redirect.asp?PageID=159&PARAM=BOKPSS65&TARGET=http://www1.fatbrain.com/asp/bookinfo/bookinfo.asp?theisbn=073561010X%2526p=netskills%2526s=69196)
+	  Microsoft Press, 2001
+	
+	Additional query words: 70 429 462
+	
+	======================================================================
+	Keywords          : kbDCOM kbVBp500 kbVBp600 kbGrpDSVB kbDSupport 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600
+	Version           : :5.0,6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

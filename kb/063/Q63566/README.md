@@ -1,0 +1,68 @@
+---
+layout: page
+title: "Q63566: Using WordPerfect's Repeat Performance with Windows"
+permalink: kb/063/Q63566/
+---
+
+## Q63566: Using WordPerfect's Repeat Performance with Windows
+
+	Article: Q63566
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 12-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If you install the Keyboard Enhancement Option in WordPerfect's Repeat
+	Performance (RP.SYS) in the CONFIG.SYS file, you cannot run MS-DOS applications
+	under Windows version 3.0 or 3.1.
+	
+	If you are using Windows 3.0, the following error message is displayed when you
+	try to run an MS-DOS application:
+	
+	  Insufficient memory
+	
+	If you are using Windows 3.1 and you run a full-screen MS-DOS window or other
+	MS-DOS application, your system may stop responding (hang). No error message is
+	displayed.
+	
+	CAUSE
+	=====
+	
+	Repeat Performance adds the following line to your CONFIG.SYS file:
+	
+	     DEVICE=c:\rp.sys=on repeat=70 delay=20 turbo=70 ctrl
+	            turbo=120 buffer=on size=200
+	
+	WORKAROUND
+	==========
+	
+	Removing this line may allow you to run MS-DOS applications from within Windows
+	without receiving the "Insufficient Memory" error.
+	
+	In addition, you can type "RP OFF" before entering Windows to disable Repeat
+	Performance. On exiting Windows you can then type "RP ON" to activate Repeat
+	Performance.
+	
+	The WordPerfect product included here is manufactured by a vendor independent of
+	Microsoft; we make no warranty, implied or otherwise, regarding this product's
+	performance or reliability.
+	
+	Additional query words: 3.00 3.00a win30 3.10 3.11 win31 3rdparty
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+	Version           : WINDOWS:3.0,3.0a,3.1,3.11
+	
+	=============================================================================
+	

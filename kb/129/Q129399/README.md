@@ -1,0 +1,79 @@
+---
+layout: page
+title: "Q129399: HOWTO: How to Convert FoxPro 3.0 Tables to FoxPro 2.x Format"
+permalink: kb/129/Q129399/
+---
+
+## Q129399: HOWTO: How to Convert FoxPro 3.0 Tables to FoxPro 2.x Format
+
+	Article: Q129399
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:2.5,3.0
+	Operating System(s): 
+	Keyword(s): kbMDAC250
+	Last Modified: 22-FEB-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 3.0 
+	- Microsoft Data Access Components version 2.5 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Tables created in Visual FoxPro are not compatible with previous versions of
+	FoxPro, and the current FoxPro Open Database Connectivity (ODBC) drivers only
+	work with FoxPro 2.x tables.
+	
+	To work around this, use Visual FoxPro's COPY TO command with the TYPE FOX2X
+	clause to convert its tables to the FoxPro 2.x format.
+	
+	MORE INFORMATION
+	================
+	
+	Beginning with Visual FoxPro 3.0, the COPY TO command has a TYPE FOX2X clause.
+	This clause is used in Visual FoxPro to convert Visual FoxPro tables to a format
+	recognizable by previous versions of FoxPro. kbprg kbinterop kbtshoot kbprb
+	
+	Example Workaround
+	------------------
+	
+	1. Open an existing Visual FoxPro table
+	
+	2. Issue the following command in the Command window:
+	
+	        COPY TO <table name> TYPE FOX2X
+	
+	Issues When Converting from 3.0 to 2.x
+	--------------------------------------
+	
+	- Any rules, triggers, captions, comments, or default values created for the
+	  Visual FoxPro table will not be available in FoxPro 2.X
+	
+	- Null values stored within the Visual FoxPro table will be converted to blank
+	  values in FoxPro 2.x. For Numeric, Float, Integer, Double and Currency data
+	  types, null values in the source table will be converted to zero.
+	
+	- A Visual FoxPro field with the data type of Currency or Double will be
+	  converted to Float in FoxPro 2.X. Numeric precision may be lost for large
+	  values stored in Double fields.
+	
+	- A Visual FoxPro field with the data type of DateTime will be converted to
+	  Date in FoxPro 2.x. The time portion of the DateTime field will be lost in
+	  the conversion.
+	
+	- A Visual FoxPro field with the data type of Integer will be converted to
+	  Numeric in FoxPro 2.x.
+	
+	Additional query words: VFoxWin migrate .dbf 3.00
+	
+	======================================================================
+	Keywords          : kbMDAC250 
+	Technology        : kbVFPsearch kbAudDeveloper kbMDACSearch kbMDAC250 kbVFP300
+	Version           : WINDOWS:2.5,3.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

@@ -1,0 +1,194 @@
+---
+layout: page
+title: "Q188831: How to Use the Special Pool Feature to Isolate Pool Damage"
+permalink: kb/188/Q188831/
+---
+
+## Q188831: How to Use the Special Pool Feature to Isolate Pool Damage
+
+	Article: Q188831
+	Product(s): Microsoft Windows NT
+	Version(s): 2000,4.0 SP4
+	Operating System(s): 
+	Keyword(s): kbenv kbtool
+	Last Modified: 22-JUL-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 4.0 SP4 
+	- Microsoft Windows NT Server version 4.0 SP4 
+	- Microsoft Windows 2000 Professional 
+	- Microsoft Windows 2000 Server 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about modifying the registry. Before you 
+	modify the registry, make sure to back it up and make sure that you understand how to restore 
+	the registry if a problem occurs. For information about how to back up, restore, and edit the 
+	registry, click the following article number to view the article in the Microsoft Knowledge Base:
+	
+	  Q256986 Description of the Microsoft Windows Registry
+	
+	SUMMARY
+	=======
+	
+	Pool damage may be the root cause of many of the most evasive issues with
+	Windows NT. Pool damage is caused when a kernel-mode component writes to memory
+	outside of its allocated pool area. By writing to memory beyond the boundary of
+	its allocated area, it is likely that another area of allocated memory, possibly
+	owned by another component, is overwritten. This damage can cause problems such
+	as blue screens in completely unrelated areas of code. A kernel-mode component
+	reading beyond its allocated area can also cause problems.
+	
+	Whether it is caused by Original Equipment Manufacturers (OEM) drivers or
+	problems in Windows NT, pool damage problems are some of the most difficult to
+	identify. Usually, all that can be seen in a crash dump analysis is the symptom
+	of the real problem, such as a data area becoming damaged and causing problems
+	in a completely unrelated piece of code. Up until now it has been almost
+	impossible to identify the piece of code damaging the memory.
+	
+	The source of pool damage can now be identified at the instruction causing the
+	pool damage. A new memory management utility called Special Pool is included
+	with Windows NT 4.0 Service Pack 4 (SP4) and Windows 2000. The Special Pool
+	utility identifies the kernel-mode component that is damaging pool data by
+	writing to memory outside its allocated area.
+	
+	MORE INFORMATION
+	================
+	
+	WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+	that may require you to reinstall your operating system. Microsoft cannot
+	guarantee that you can solve problems that result from using Registry Editor
+	incorrectly. Use Registry Editor at your own risk.
+	
+	The way the Special Pool utility works is by allocating two pages of virtual
+	memory for every pool allocation requested through ExAllocatePoolWithTag that
+	matches the following criteria:
+	
+	- The allocation request must be for a size smaller than the maximum allocation
+	  that will fit in a pool page.
+	
+	- The request must match the PoolTag specification in the registry.
+	
+	For pool overrun detection, the first page is used to contain the allocation at
+	the end of the page. The second page is a guard page. For pool underrun
+	detection, the first page is the guard page. It is followed by a page that
+	contains the allocation at the beginning of the page.
+	
+	Overrun detection is probably the most used. For overrun detection, the requested
+	allocation is placed at the end of the first page by backing up the request size
+	from the end of the page. The allocation size is rounded up to an 8-byte
+	boundary. A pattern key, the size, and the pool tag information are written to
+	the header at the first eight bytes of the first page. The pattern is also
+	propagated throughout the page. Since the allocation is placed on the nearest
+	8-byte boundary, there may be as many as seven slop bytes following the
+	allocation. The pattern is also written to the slop bytes following the
+	allocation.
+	
+	The second page is the guard page. The guard page consists of a special page
+	table entry (PTE) that is marked with no-access protection. By marking this
+	second page with no-access protection, any code attempting to read or write
+	beyond the end of the first page immediately causes an access violation
+	resulting in a Stop 0x0000000A or Stop 0x0000001E error. This enables someone
+	debugging the system to identify the exact instruction causing pool damage.
+	
+	As a backup check to catch violators that write beyond the end of the allocation
+	but not beyond the end of the page, the slop bytes at the end of the allocation
+	are validated during the free pool request (ExFreePoolWithTag). The slop bytes
+	are compared to the pattern in the allocation header to verify if anything is
+	overwritten in the slop byte area. If the verification check does not work, a
+	Stop 0x00000001A error occurs.
+	
+	This check does not necessarily identify the exact piece of code causing the pool
+	damage, but it may assist in identifying the component causing the damage.
+	
+	To activate the Special Pool utility, add the following keys and values to the
+	registry:
+	
+	  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\ 
+	     Memory Management
+	
+	  Value Name: PoolTag
+	  Data Type : REG_DWORD
+	  Data      : Pool tag mask | Allocation size mask | 0
+	
+	The pool tag mask is the pool tag ID containing masking characters of the pool in
+	which you want to put in the special pool. This mask must be specified in
+	hexadecimal in reverse order. This mask may also contain "?" to mask a single
+	character or "*" to mask from here to the end of the tag. For example, to
+	monitor all pools with a pool tag beginning with "Nt", specify "2A744E" (without
+	the quotation marks), which represents "*tN".
+	
+	The following table lists more examples:
+	
+	  Pool to monitor   Character representation   Pool tag mask
+	  ----------------------------------------------------------               
+	  All pools         "*"                        0x2A
+	  N??s              "s??N"                     0x733F3F4E
+	
+	Allocation size mask specification places all pool allocations of a specified
+	size into the special pool. This is also specified in hexadecimal. For example,
+	if all allocations of 32 bytes are placed in the special pool, specify 0x20.
+	
+	When zero (0x0) is specified, the Special Pool utility is not initialized. In
+	addition, the Special Pool utility is not initialized if the PoolTag registry
+	value is not defined in the registry.
+	
+	  Value Name: PoolTagOverruns
+	  Data Type : REG_DWORD
+	  Data:    1 | 0
+	
+	"1" indicates that pool allocation overruns are detected for the tag specified.
+	The allocation is placed at the end of the page and the guard page follows.
+	
+	Common use examples to create these two registry keys would be:
+	
+	HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\ 
+	     Memory Management
+	
+	  Value Name: PoolTag
+	  Data Type : REG_DWORD
+	  Data      : 0x2A
+	
+	  Value Name: PoolTagOverruns
+	  Data Type : REG_DWORD
+	  Data      : 1
+	
+	"0" indicates that pool allocation underruns are detected for the tag specified.
+	The allocation is placed at the beginning of the page and the guard page
+	precedes the page that contains the allocation.
+	
+	NOTE: For Windows NT Terminal Server 4.0, you need to disable KStackPool when
+	using special pool. To do this, add the following registry value:
+	
+	  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory
+	  Management
+	
+	  EnableKStackPool
+	  Data Type: REG_DWORD
+	  0 - KStack pool disabled
+	  1 - KStack pool always enabled
+	  2 - KStack pool enabled for >= 256 MB computers (default)
+	
+	If you do not make this change on Terminal Server computers with >=256 MB, you
+	may receive STOP 0x00000078 (PHASE0_EXCEPTION) error messages.
+	
+	NOTE: After you make any of the registry changes described in this article,
+	reboot the computer to cause the changes to take effect.
+	
+	If after you enable the Special Pool feature, the computer stops responding
+	(hangs) with an error message on a blue screen during startup, reboot the
+	computer and start it by using the Last Known Good Configuration option.
+	Enabling the Special Pool feature is not written to the Last Known Good
+	Configuration entry in the registry until after a successful logon.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbenv kbtool 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400search kbWinNT400search kbwin2000Serv kbWinNTW400sp4 kbWinNTSsearch kbWinNTS400sp4 kbWinNTS400search kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro
+	Version           : :2000,4.0 SP4
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

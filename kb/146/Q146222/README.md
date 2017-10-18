@@ -1,0 +1,172 @@
+---
+layout: page
+title: "Q146222: How to Use Grid MouseDown Code to Prevent Row/Partition Resize"
+permalink: kb/146/Q146222/
+---
+
+## Q146222: How to Use Grid MouseDown Code to Prevent Row/Partition Resize
+
+	Article: Q146222
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:3.0,3.0b
+	Operating System(s): 
+	Keyword(s): kbcode
+	Last Modified: 05-FEB-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	There are no Grid properties that can be used to disable the ability to use the
+	mouse to resize the Grid HeaderHeight and RowHeight or move the Partition
+	Slider. However, code can be placed in the user procedure associated with the
+	Grid MouseDown event to prevent any of the following actions being made with the
+	mouse:
+	
+	- Resizing the Grid HeaderHeight
+	
+	- Resizing the Grid RowHeight
+	
+	- Moving the Partition Slider
+	
+	MORE INFORMATION
+	================
+	
+	To cause the mouse action to be ignored at certain times, a NODEFAULT is
+	conditionally executed in the Grid MouseDown code depending on the mouse
+	coordinates. This effectively prevents access to the three previously listed
+	properties. The following code example is designed for a grid that can be used
+	in a form, on a page of a pageframe or within a container, regardless of nesting
+	level.
+	
+	Place the following code in the procedure associated with the MouseDown event for
+	the grid.
+	
+	  ****** Start of Grid MouseDown
+	
+	  *************************************************************
+	  * If the grid is on a form (not in a container or pageframe),
+	  * this section may be omitted. It iterates through
+	  * object nesting level for all objects above the grid in the
+	  * hierarchy and makes necessary adjustments to nXCoord and
+	  * nYCoord. This allows the NODEFAULT to be called at the appropriate
+	  * time regardless of whether the grid is in a container, page in
+	  * a pageframe, or a combination that contains several layers.
+	
+	  LOCAL cObjlist, nTopTotal, nLeftTotal
+	
+	  cObjlist = ''
+	  nLeftTotal = 0
+	  nTopTotal = 0
+	
+	  cObjlist = SYS(1272,this)        && Get object hierarchy for grid
+	  IF TYPE('ThisFormSet') = 'O'     && In a Formset?
+	    * If so, remove Formset from object list
+	    cObjlist=SUBSTR(cObjlist,AT('.',cObjlist)+1)
+	  ENDIF
+	
+	  * Strip off grid name and replace form name with 'thisform'
+	  cObjlist='thisform' + SUBSTR(cObjlist,AT('.',cObjlist), ;
+	    RAT('.',cObjlist) - AT('.',cObjlist))
+	
+	  IF !'thisform'==(cObjlist)   && Something more than thisform in hierarchy?
+	    FOR i=1 TO OCCURS('.',cObjlist) && Number of '.'s = depth of hierarchy
+	      IF TYPE("EVAL(cObjList+'.left')")='N'   && Does Obj have Left property?
+	        nLeftTotal = nLeftTotal+EVAL(cObjlist+'.left') + ;
+	          IIF('3.10' $ OS(1) OR 'NT' $ OS(1),1,0)  && Add it in
+	      ENDIF
+	      IF TYPE("EVAL(cObjList+'.top')")='N'    && Does Obj have Top property?
+	        nTopTotal=nTopTotal+EVAL(cObjlist+'.top')  && Add it in
+	      ENDIF
+	      IF EVAL(cObjlist+'.baseclass')='PageFrame' && Is object a PageFrame?
+	        IF EVAL(cObjlist+'.tabs')=.T. && Does PageFrame have Tabs?
+	          nTopTotal=nTopTotal+24 + ;
+	            IIF('3.10' $ OS(1) OR 'NT' $ OS(1),2,0)   && Add in Tab height
+	        ELSE
+	          nTopTotal=nTopTotal + ;
+	            EVAL(cObjlist+'.borderwidth') + ;
+	            IIF(EVAL(cObjlist+'.SpecialEffect')<2,1,0)
+	          nLeftTotal=nLeftTotal+EVAL(cObjlist+'.borderwidth')
+	        ENDIF
+	        nLeftTotal=nLeftTotal+1+ IIF('3.10' $OS(1) OR 'NT' $ OS(1),1,0)
+	      ENDIF
+	      * Pare last object from list
+	      cObjlist=SUBSTR(cObjlist,1,RAT('.',cObjlist)-1)
+	    ENDFOR
+	  ENDIF
+	
+	  nXCoord=nXCoord-nLeftTotal   && Compensate nX- and nYCoord for top and left
+	  nYCoord=nYCoord-nTopTotal    && of all containers that hold the Grid
+	
+	  *
+	  * End of section to omit if grid is directly on form
+	  ****************************************************
+	
+	WITH this
+	
+	    * Each of these checks the position of the mouse when the MouseDown
+	    * is called. If the position is where the click should be ignored,
+	    * NODEFAULT is issued.
+	
+	    * This makes rows not resizable
+	
+	    IF nXCoord < .partition + .Left + 20 AND ;
+	        nYCoord > .Top + .HeaderHeight + .RowHeight - 5 AND ;
+	        nYCoord < .Top + .HeaderHeight + .RowHeight + 7
+	      NODEFAULT
+	    ENDIF
+	
+	    * This makes header not resizable
+	
+	    IF nXCoord < .partition + .Left + 20 AND ;
+	        nYCoord > .Top + .HeaderHeight - 5 AND ;
+	        nYCoord < .Top + .HeaderHeight + 7
+	      NODEFAULT
+	    ENDIF
+	
+	    * This makes partition not moveable
+	
+	    IF MOD(.ScrollBars,2) = 1       && Check for horizontal scrollbar
+	      IF nXCoord < .partition + .Left + 6 AND ;
+	      nXCoord >= .partition + .Left AND ;
+	        nYCoord > .Top + .Height - 19
+	        NODEFAULT
+	      ENDIF
+	    ENDIF
+	
+	  ENDWITH
+	
+	Notes
+	-----
+	
+	There are 12 x 20 pixel areas where the pointer changes to a two-headed up/down
+	arrow and the HeaderHeight or RowHeight may be resized. For the HeaderHeight,
+	this is at the lower edge of the Header on the left side of the grid. For the
+	RowHeight, this is at the lower edge of the first row of data on the left side
+	of the grid. Likewise, there is a 19 x 6 pixel area where the pointer changes to
+	a two-headed left/right arrow and the Partition Slider may be moved. This is the
+	small black rectangle to the left of the grid's horizontal scroll bar. Although
+	the pointer will still change when moved over these areas when you use the code
+	example, you will not be able to make adjustments.
+	
+	There are slight differences between the calculation of the location of objects
+	placed within pageframe and container objects in Windows 95, Windows NT, and
+	Windows 3.1x. The following code conditionally makes these adjustments depending
+	on the operating system:
+	
+	     IIF('3.10' $ OS(1) OR 'NT' $ OS(1),1,0)
+	
+	Additional query words: VFoxWin
+	
+	======================================================================
+	Keywords          : kbcode 
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+	Version           : WINDOWS:3.0,3.0b
+	
+	=============================================================================
+	

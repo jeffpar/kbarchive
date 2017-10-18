@@ -1,0 +1,83 @@
+---
+layout: page
+title: "Q246209: Encarta 2000: Hangs or Quits Unexpectedly When You Start Program"
+permalink: kb/246/Q246209/
+---
+
+## Q246209: Encarta 2000: Hangs or Quits Unexpectedly When You Start Program
+
+	Article: Q246209
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): ; WINDOWS:
+	Operating System(s): 
+	Keyword(s): kb3rdparty kbdisplay kbimu
+	Last Modified: 25-JUN-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Encarta Encyclopedia 2000 
+	- Microsoft Encarta Interactive World Atlas 2000 
+	- Microsoft Encarta Reference Suite 2000 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you attempt to start any of the programs listed at the beginning of this
+	article, you may experience one of the following symptoms:
+	
+	- Your computer may stop responding (hang).
+	
+	- The program may quit unexpectedly.
+	
+	CAUSE
+	=====
+	
+	This behavior can occur if the video adapter installed in your computer is based
+	on the ATI Rage Pro chip set.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, install the video drivers for the ATI Rage Pro chip set
+	from the Microsoft Windows 98 CD-ROM. To do this:
+	
+	1. Click Start, point to Settings, and then click Control Panel.
+	
+	2. Double-click Display.
+	
+	3. On the Settings tab, click Advanced.
+	
+	4. On the Adapter tab, note the manufacturer and model of your current video
+	  adapter, and then click Change.
+	
+	5. Click Next.
+	
+	6. Click "Display a list of all the drivers in a specific location, so you can
+	  select the driver you want," and then click Next.
+	
+	7. Click Show All Devices.
+	
+	8. In the Manufacturers box, click ATI Technologies.
+	
+	9. In the Models box, click "ATI 3D Rage Pro (atir3)," and then click OK or
+	  Next.
+	
+	  NOTE: If you are prompted to verify that you want to change the video driver,
+	  click Yes.
+	
+	10. Click Close, and then click Close again.
+	
+	11. When you are prompted to restart the computer, click Yes.
+	
+	Additional query words: multi multi-media media mm ee2k ers2k ewa2k
+	
+	======================================================================
+	Keywords          : kb3rdparty kbdisplay kbimu 
+	Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc2000 kbEncartaReference2000 kbEncartaWorldAtlas2000
+	Version           : :; WINDOWS:
+	Issue type        : kbprb
+	
+	=============================================================================
+	

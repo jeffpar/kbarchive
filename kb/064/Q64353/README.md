@@ -1,0 +1,87 @@
+---
+layout: page
+title: "Q64353: With &quot;deflang&quot; Switch, PWB Prompts for Setting Program List"
+permalink: kb/064/Q64353/
+---
+
+## Q64353: With &quot;deflang&quot; Switch, PWB Prompts for Setting Program List
+
+	Article: Q64353
+	Product(s): Microsoft Programming Utilities
+	Version(s): MS-DOS:1.0; OS/2:1.0
+	Operating System(s): 
+	Keyword(s): kb16bitonly
+	Last Modified: 31-OCT-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Programmer's Workbench for MS-DOS, version 1.0 
+	- Microsoft Programmer's Workbench for OS/2, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	As documented on page 79 of the "Microsoft C Reference" shipped with C version
+	6.0 and in the online help, the "deflang" switch in the Programmer's WorkBench
+	(PWB) sets the default filename extension for list boxes in PWB dialog boxes.
+	Another (undocumented) feature of this switch is to enable you to be prompted to
+	"Set Program List?" when loading a source file with a .MAK file associated with
+	it in the current directory.
+	
+	MORE INFORMATION
+	================
+	
+	By default, "deflang" is not set. You can set the deflang switch in the [PWB]
+	tagged section of the TOOLS.INI file, for example:
+	
+	  deflang:C
+	
+	This changes the default filename extension in PWB's dialog boxes (such as Open
+	in the File menu) from "*.*" to "*.c", so that only files with the .c extension
+	show up by default. Other languages can be specified as well, as shown below:
+	
+	  Switch Setting     Extension
+	  --------------     ---------
+	  no value            .*
+	  C                   .c
+	  Asm                 .asm
+	  BASIC               .bas
+	  FORTRAN             .for
+	  Pascal              .pas
+	  COBOL               .cbl
+	  LISP                .lsp
+	
+	Note that the online documentation specifies "Assembler" as the switch to use for
+	.ASM files, but this is incorrect. "Asm" is the correct switch to use to make
+	Assembler the default language.
+	
+	The deflang switch also enables you to be prompted as to whether or not the
+	program list should be set automatically. If you load a file that has the
+	extension specified by the "deflang" switch and you also have a .MAK file with
+	the same base filename in the same directory, PWB will prompt you about loading
+	the program list.
+	
+	For example, assume that deflang is set to C, and TEST.MAK and TEST.C are in the
+	same directory. If you type PWB TEST.C at the command-prompt, PWB will pause
+	when loading and prompt with "Set Program List? TEST.MAK". At this point you can
+	specify yes or no.
+	
+	When already in PWB, if you choose Open from the File menu, and select TEST.C as
+	the file to open, PWB will also prompt you at this point regarding whether or
+	not you want TEST.MAK loaded as the program list, but only if NO program list is
+	currently set.
+	
+	Note that beginning with PWB version 1.1, command-line switches are provided that
+	allow the automatic loading of a program list.
+	
+	Additional query words: kbinf 1.00 1.10 PWBIss
+	
+	======================================================================
+	Keywords          : kb16bitonly 
+	Technology        : kbAudDeveloper kbPWBSearch kbZNotKeyword3 kbPWB100DOS kbPWB100OS2
+	Version           : MS-DOS:1.0; OS/2:1.0
+	
+	=============================================================================
+	

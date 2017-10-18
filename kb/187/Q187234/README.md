@@ -1,0 +1,144 @@
+---
+layout: page
+title: "Q187234: HOWTO: Use the Dictionary Object with Visual Basic"
+permalink: kb/187/Q187234/
+---
+
+## Q187234: HOWTO: Use the Dictionary Object with Visual Basic
+
+	Article: Q187234
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): WINDOWS:5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbScript KbVBA kbVBp500 kbVBp600 kbVS600 kbGrpDSVB _IK
+	Last Modified: 18-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article discusses the use of a component from the Microsoft Scripting
+	Library; the Dictionary Object.
+	
+	MORE INFORMATION
+	================
+	
+	The Dictionary is quite similar to the Collection object in both functionality
+	and purpose. The Dictionary, however, offers some functionality that is not
+	available with a Collection. Some of these features include:
+	
+	- The option to specify a comparison method for Keys. This allows for a
+	  case-sensitive Key, for example.
+	
+	- A method for determining if an object exists in a Dictionary.
+	
+	- A method for extracting all of the Keys into an Array.
+	
+	- A method for extracting all of the Items into an Array.
+	
+	- A method for changing a Key value.
+	
+	- A method for removing all items from the Dictionary.
+	
+	- Dictionary Keys are not limited to String datatype.
+	
+	NOTE: One important difference between the Collection object and the Dictionary
+	object is the behavior of the Item property. If you use the Item property to
+	reference a nonexistent Key in a Collection, you will receive an error. If you
+	use the Item property to reference a nonexistent Key in a Dictionary, that Key
+	will be added to the Dictionary. Use the Exists method to determine whether or
+	not a Key is present in a Dictionary.
+	
+	The Dictionary object is a component of the Microsoft Scripting library, which
+	does not ship with Visual Basic version 5.0 or later. You can obtain the
+	Microsoft Scripting library (SCRRUN.DLL) by installing one of the following
+	packages:
+	
+	  Windows Script Host
+	  Windows NT Option Pack
+	  IIS 3.0
+	  Scripting 3.1 upgrade.
+	
+	Step-by-Step Example
+	--------------------
+	
+	1. Start a new Standard EXE project in Visual Basic. (Make sure that the
+	  Immediate Window is displayed.) Form1 is created by default.
+	
+	2. Add a reference to Microsoft Scripting Runtime.
+	
+	3. Add a standard module to the project.
+	
+	4. From the Project menu, select Project1.Properties and change the Startup
+	  object to Sub Main.
+	
+	5. Insert the following code into Module1:
+	
+	        Option Explicit
+	        Dim dict As Dictionary
+	
+	        Sub Main()
+	        Dim keyArray, itemArray, element
+	
+	        Set dict = New Dictionary
+	        With dict
+	           'set compare mode
+	           .CompareMode = BinaryCompare
+	           'add item using named arguments
+	           .Add Key:="mike", Item:=22
+	           'add item without named arguments
+	           .Add "joe", 33
+	
+	           'case sensitivity and Exists method
+	           'does MIKE exist?
+	           Debug.Print "MIKE exists = " & .Exists("MIKE")
+	           'change key value
+	           .Key("mike") = "MIKE"
+	           'does MIKE exist?
+	           Debug.Print "MIKE exists = " & .Exists("MIKE")
+	
+	           'extract keys into variant array
+	           Debug.Print "Array of Keys"
+	           keyArray = .Keys
+	           For Each element In keyArray
+	              Debug.Print element
+	           Next
+	
+	           'extract items into variant array
+	           Debug.Print "Array of Items"
+	           itemArray = .Items
+	           For Each element In itemArray
+	              Debug.Print element
+	           Next
+	
+	           'empty the dictionary
+	           .RemoveAll
+	           Debug.Print dict.Count & " Items in Dictionary"
+	
+	        End With
+	        Set dict = Nothing
+	        End Sub
+	
+	6. Run the project. You should see that the initial search for the key fails,
+	  then succeeds after the key value is replaced with an uppercase value. Next,
+	  you should see the contents of the variant arrays that were extracted from
+	  the dictionary using the Keys and Items methods. Last, you see the result of
+	  emptying the Dictionary.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbScript KbVBA kbVBp500 kbVBp600 kbVS600 kbGrpDSVB _IK 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600
+	Version           : WINDOWS:5.0,6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

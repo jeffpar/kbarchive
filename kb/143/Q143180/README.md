@@ -1,0 +1,397 @@
+---
+layout: page
+title: "Q143180: IIS Common Registry Parameters"
+permalink: kb/143/Q143180/
+---
+
+## Q143180: IIS Common Registry Parameters
+
+	Article: Q143180
+	Product(s): Internet Information Server
+	Version(s): 1.0,2.0,3.0,4.0
+	Operating System(s): 
+	Keyword(s): kbusage
+	Last Modified: 13-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Server versions 1.0, 2.0, 3.0, 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The Internet Information Server contains four registry keys. They are FTP,
+	Gopher, WWW (World Wide Web), and the Internet Information Server (IIS).
+	
+	The Internet Information Server registry key provides registry parameters and
+	values that are global for the InetInfo process and the server. The registry
+	keys for FTP, Gopher, and WWW use few similar parameters and values, but are
+	used independent of each other.
+	
+	MORE INFORMATION
+	================
+	
+	The Internet Information servers share a common portion of registry in the
+	following location for InetInfo process. These parameters and their values are
+	used for global control of the Internet Information Server.
+	
+	The parameter location is under the HKEY_LOCAL_MACHINE subtree under the
+	following subkeys:
+	
+	  \System\CurrentControlSet\Services\InetInfo\Parameters
+	
+	BandwidthLevel                                  REG_DWORD
+	Range:  0 - 0xFFFFFFFF                          Default:0xFFFFFFFF
+	Description:                                    ADMIN CONFIGURABLE
+	
+	This specifies the amount of bandwidth on the network the IIS can use. The server
+	comes with an automatic bandwidth throttler which makes intelligent decisions to
+	meet user requirements. This helps reduce overloading the network too much of
+	Gibraltar server activities. For administrators of small corporate servers,
+	where a single server is used for multiple sites, this will help reduce network
+	usage for IIS. It is recommended that this parameter be set from the Internet
+	Server Admin Manager. Otherwise the server should be stopped and restarted for
+	this value to take effect. A special value of 0xFFFFFFFF means no throttling
+	should be done.
+	
+	MemoryCacheSize                                 REG_DWORD
+	Range:  0 - 0xFFFFFFFF                          Default:3072000 (3MB)
+	Description:                                    CONFIGURABLE
+	
+	IIS server caches system handles, directory listings, and several blobs (Binary
+	Large Objects) of frequently used data to improve performance of the system.
+	This parameter specifies the amount of memory in bytes to allocate for such a
+	cache. This cannot be configured using Admin Manager. When changed, the server
+	must be stopped and restarted for this to take effect. A special value of 0
+	means do not do any caching. The performance may be low when caching is shut
+	out. Certain sites experiencing high file traffic can increase this size if
+	there is sufficient RAM on the system.
+	
+	ObjectCacheTTL                                  REG_DWORD
+	Range:  0 - 0x7FFFFFFF, 0xFFFFFFFF              Default:10*60(10Minutes)
+	Description:                                    INTERNAL ANALYSIS
+	
+	Objects in the Memory Cache will be phased out of the cache if there have been no
+	references to an object after this period. If system memory is limited, a lower
+	TTL may be useful to prevent non-paged memory being used for cached file
+	handles. A value of 0xFFFFFFFF disables the object cache scavenger. Units are in
+	seconds.
+	
+	UserTokenTTL                                    REG_DWORD Range:  0 -
+	0x7FFFFFFF                                      Default: 15*60 (10Minutes)
+	Description:                                    INTERNAL ANALYSIS
+	
+	When a request is made to the server, the security credentials for the request
+	(or the configured anonymous user) are used to create a user token on the server
+	which the server impersonates when accessing files or other system resources.
+	The token is cached so the NT logon only takes place the first time the user
+	accesses the system or after the user's token has fallen out of the cache. NTLM
+	authentication tokens are not cached. Units are in seconds.
+	
+	LogFileBatchSize                                REG_DWORD
+	Range:          0 - 0xFFFFFFFF                  Default:64*1024 (64KB)
+	Description:                                    CONFIGURABLE
+	
+	This specifies the batch size for writing log file. The server caches the last
+	LogFileBatchSize bytes of data in memory buffers before it dumps the current
+	buffer and moves onto the next buffer. Such batch processing reduces the amount
+	of disk traffic created by log files. However, if a site is interested in
+	getting the current-up-to-date log records flushed to disk the batch size can be
+	reduced.
+	
+	MaxPoolThreads                                  REG_DWORD
+	Range:  0 - 0xFFFFFFFF                          Default:10
+	Description:                                    INTERNAL ANALYSIS
+	
+	MaxPoolThreads specifies the number of pool threads to create per processor. Each
+	pool thread watches for the network request and processes the same. Generally it
+	is not good to create more than 20 threads per processor.
+	
+	MaxConcurrency                                  REG_DWORD
+	Range:  0 - 0xFFFFFFFF                          Default:0
+	Description:                                    INTERNAL ANALYSIS
+	
+	MaxConcurrency specifies the amount of concurrency that a system should provide.
+	We use completion ports for handling IO. In general it is not good to have more
+	than one thread running and conflicting on shared memory or locks. This
+	parameter specifies how many threads per processor should be allowed to run
+	simultaneously if there is a pending IO operation. The specific value of 0
+	allows system to make intelligent choice of the number of threads to use. Any
+	non-zero value specifies that the system should allow that many threads per
+	processor to run simultaneously.
+	
+	ThreadTimeout                                   REG_DWORD
+	Range:  0 - 0xFFFFFFFF                          Default:24*60*60 (24 hours)
+	Description:                                    INTERNAL ANALYSIS
+	
+	ThreadTimeout specifies the amount of time an IO processing thread should be
+	maintained even if there is no IO on the system. In general when there is no IO
+	activity and no requests outstanding, the server is idle and does not consume
+	memory. But if that situation prolongs and exceeds the ThreadTimeout interval,
+	then the thread is killed. Unit is in seconds.
+	
+	UseAcceptEx                                     REG_DWORD
+	Range:  0, 1                                    Default:1
+	Description:                                    INTERNAL ANALYSIS
+	
+	Starting with NT 3.51 SP2 we have a new facility to listen and establish
+	connections at the server side. AcceptEx() provides a cheap way to accept and
+	receive an initial chunk of data on a new incoming connection. By default the
+	server uses this method to accept new connections. If, for experimental purposes
+	one decides to turn off using this fast IO path, then this value can be set to
+	0. However, setting to 0 may cause potential performance degradation.
+	
+	AcceptExOutstanding                             REG_DWORD
+	Range:  0-1000                                  Default:40
+	Description:                                    INTERNAL ANALYSIS
+	
+	When using AcceptEx(), certain number of sockets should be maintained to receive
+	and process new connections. This parameter specifies the number of such
+	outstanding connections to maintain. Whenever the number of outstanding sockets
+	fall below this range, the server adds additional sockets to bring it back to
+	this level.
+	
+	AcceptExTimeout                                 REG_DWORD
+	Range:  0-0xFFFFFFFF                            Default:120
+	Description:                                    INTERNAL ANALYSIS
+	
+	AcceptExTimeout specifies the time an accept ex socket is allowed to be waiting
+	for a receive to complete, before the server blows away the long- waiting
+	connection. This helps to reduce the number of outstanding sockets and hence
+	conserve the system memory usage. Units is in seconds.
+	
+	MimeMap                                         Key
+	Description:                                    CONFIGURABLE
+	
+	This is a subkey that contains all the virtual roots for a service.
+	
+	DebugFlags                                      REG_DWORD
+	Range:  0 - 0xFFFFFFFF                          Default:0
+	Description:                                    INTERNAL ANALYSIS
+	
+	DebugFlags specifies the bit mask for selectively enabling different checks in a
+	debug binary of the server common dll (INFOCOMM.DLL). This bit mask applies to
+	the common dll only.
+	
+	  #define DEBUG_ERROR                                     0x00000008L
+	  #define DEBUG_ODBC                                      0x00000010L
+	  #define DEBUG_DLL_RPC                                   0x00000020L
+	  #define DEBUG_GATEWAY                                   0x00010000L
+	  #define DEBUG_INETLOG                                   0x00020000L
+	  #define DEBUG_ATQ                                       0x00040000L
+	  #define DEBUG_DLL_EVENT_LOG                             0x00100000L
+	  #define DEBUG_DLL_SERVICE_INFO                          0x00200000L
+	  #define DEBUG_DLL_SECURITY                              0x00400000L
+	  #define DEBUG_DLL_CONNECTION                            0x00800000L
+	  #define DEBUG_DLL_SOCKETS                               0x01000000L
+	  #define DEBUG_HEAP_FILL                                 0x02000000L
+	  #define DEBUG_HEAP_MSG                                  0x04000000L
+	  #define DEBUG_HEAP_CHECK                                0x08000000L
+	  #define DEBUG_MIME_MAP                                  0x10000000L
+	  #define DEBUG_DLL_VIRTUAL_ROOTS                         0x20000000L
+	
+	Per Service Registry Parameters
+	-------------------------------
+	
+	Each of the Internet Information services have per service registry
+	configurations. There are several parameters which have the same name, but
+	different per-service values. The values are used on a per service basis. Below
+	is a description of all such common-named registry parameters applicable to all
+	services followed by service specific registry parameters.
+	
+	Commonly Named Per Service Parameters
+	-------------------------------------
+	
+	The parameters are located under the HKEY_LOCAL_MACHINE subtree under the
+	following subkey:
+	
+	  \System\CurrentControlSet\Services\<ServiceName>\Parameters
+	
+	where <ServiceName> is:
+	
+	  MSFTPSVC                                FTP Service
+	  GOPHERSVC                               Gopher Service
+	  W3SVC                                   HTTP Service
+	
+	AdminName                                       REG_SZ
+	Range:  String                                  Default:Administrator
+	Description:                                    ADMIN CONFIGURABLE
+	
+	AdminName specifies the user friendly administrator name. Gopher service uses
+	this name to send back responses for Gopher queries. It also serves as a way of
+	identifying who owns a service using IIS manager.
+	
+	AdminEmail                                      REG_SZ
+	Range:  String                                  Default:Admin@corp.com
+	Description:                                    ADMIN CONFIGURABLE
+	
+	AdminEmail specifies the email address for administrator of a particular service.
+	Gopher service uses this name to send back responses for Gopher+ queries. It
+	also serves as a way of identifying who owns a service using IIS manager.
+	
+	ServerComment                                   REG_SZ
+	Range:  String                                  Default: ""
+	Description:                                    ADMIN CONFIGURABLE
+	
+	Specifies a user-friendly comment for a service. This information is supplied to
+	the IIS manager and is used to add configurable comment about a server.
+	
+	EnableSvcLoc                                    REG_DWORD
+	Range:  0, 1                                    Default:1
+	Description:                                    CONFIGURABLE
+	
+	IIS Services register themselves with a service locator so the service can be
+	discovered by administrative utility and clients. This parameter controls such
+	registration. If it is set to 0, then the service will forego registration of
+	the service. Otherwise, it registers the service for service location.
+	Administrators planning on having a private server should consider setting the
+	value of this parameter to 0.
+	
+	AllowAnonymous                                  REG_DWORD
+	Range:  0, 1                                    Default: 1
+	Description:                                    ADMIN CONFIGURABLE
+	
+	This flag specifies if an anonymous user should be allowed to connect and make a
+	request to the server. By nature, most Internet protocols allow anonymous
+	connections to access a limited set of files. Hence, it is essential to permit
+	anonymous connections.
+	
+	AnonymousOnly                                   REG_DWORD
+	Range:  0, 1                                    Default: 0
+	Description:                                    ADMIN CONFIGURABLE
+	
+	AnonymousOnly specifies if only anonymous connection should be permitted. If this
+	flag is turned on no non-anonymous connections are permitted (especially true of
+	FTP server).
+	
+	AnonymousUserName                               REG_SZ
+	Range:  String                                  Default: Guest
+	Description:                                    ADMIN CONFIGURABLE
+	
+	AnonymousUserName specifies the name of the local user account to use for
+	anonymous users. Server impersonates as a particular user to access the files so
+	that the file system security model is leveraged. This parameter should not be
+	changed by itself. It should be configured using the IIS Admin Manager so that
+	the appropriate password can also be set. The password is stored in a protected
+	area in the registry.
+	
+	ConnectionTimeOut                               REG_DWORD
+	Range:  0-0xFFFFFFFF                            Default: 600 seconds
+	Description:                                    ADMIN CONFIGURABLE
+	
+	Specifies the time the server should hold on to a connection when there is no
+	activity on the same. Server automatically disconnects long hanging connections.
+	Units: seconds.
+	
+	LogAnonymous                                    REG_DWORD
+	Range:  0, 1                                    Default: 1
+	Description:                                    CONFIGURABLE
+	
+	This flag controls if a log record should be written for anonymous connections.
+	If set to 0, no log records are written for anonymous connections.
+	
+	LogNonAnonymous                                 REG_DWORD
+	Range:  0, 1                                    Default: 1
+	Description:                                    CONFIGURABLE
+	
+	This flag controls if a log record should be written for non-anonymous
+	connections. If set to 0, no log records are written for non-anonymous
+	connections. Only FTP and HTTP services have non-anonymous user support.
+	
+	LogFileDirectory                  REG_EXPAND_SZ
+	Range:  String                    Default: %systemroot%\system32\logfiles
+	Description:                      ADMIN CONFIGURABLE
+	
+	This string specifies the directory in which log files are to be stored. Each
+	service generates a log record for each request processed.
+	
+	LogFilePeriod                                   REG_DWORD
+	Range:  0,1,2,3                                 Default: 1
+	Description:                                    ADMIN CONFIGURABLE
+	
+	This specifies an internal value for request logging module. The value specifies
+	the type of log files to be produced.
+	
+	0   No period. The logfile size is limited to LogFileTruncateSize bytes.
+	1   Open a new log file each day - Daily
+	2   Open a new log file every week - Weekly
+	3   Open a new log file every month - Monthly
+	
+	LogFileTruncateSize                             REG_DWORD
+	Range:  0-0xFFFFFFFF                            Default: 4,000,000,000
+	Description:                                    ADMIN CONFIGURABLE
+	
+	This value specifies the maximum size of each log file generated. Once this size
+	is reached, the logging module automatically opens a new log file. A special
+	value of 0 means do not truncate.
+	
+	LogSqlDataSources                               REG_SZ
+	Range:  String                                  Default:""
+	Description:                                    ADMIN CONFIGURABLE
+	
+	This string specifies the name of the ODBC data source to use for sending the
+	request logs for the service to a SQL compatible database system. This data
+	source should be a system DSN in the ODBC installation on server machine.
+	
+	LogSqlTableName                                 REG_SZ
+	Range:  String                                  Default:""
+	Description:                                    ADMIN CONFIGURABLE
+	
+	This string specifies the name of the ODBC table name use for sending the request
+	logs for the service to a SQL compatible database system. The table should be
+	created by the administrator as per the specification provided with the
+	services. The user should also have proper access permissions to insert into
+	table.
+	
+	LogSqlUserName                                  REG_SZ
+	Range:  String                                  Default:""
+	Description:                                    ADMIN CONFIGURABLE
+	
+	This string specifies the user name to use for talking to the ODBC data source
+	specified for ODBC based logging. This user should be a valid user on the
+	database system to which the LogSqlDataSource is pointing to.
+	
+	LogSqlPassword                                  REG_SZ
+	Range:  String                                  Default:""
+	Description:                                    ADMIN CONFIGURABLE
+	
+	This string specifies the password to establishing an ODBC connection for a
+	particular user account on the ODBC data source. Currently the password is
+	stored as a clear text. This may change in the future.
+	
+	LogType                                         REG_DWORD
+	Range:  0, 1, 2                                 Default:1
+	Description:                                    ADMIN CONFIGURABLE
+	
+	This value specifies the type of logging desired. The type specifies the
+	destination of log files.
+	
+	0       No logging
+	1       Log to files
+	2       Log to ODBC data source
+	
+	MaxConnections                                  REG_DWORD
+	Range:  0 - 0xFFFFFFFF                          Default:1000
+	Description:                                    ADMIN CONFIGURABLE
+	
+	This value specifies maximum number of simultaneous connections that server
+	allows at any given time. When the number of current connections exceeds this
+	value, the service rejects the request. It sends a friendly message if
+	possible.
+	
+	VirtualRoots                                    Key
+	Description:                                    ADMIN CONFIGURABLE
+	
+	This is a subkey that contains all the virtual roots for a service.
+	
+	Additional query words: prodiis
+	
+	======================================================================
+	Keywords          : kbusage 
+	Technology        : kbiisSearch kbiis400 kbiis300 kbiis200 kbiis100
+	Version           : :1.0,2.0,3.0,4.0
+	
+	=============================================================================
+	

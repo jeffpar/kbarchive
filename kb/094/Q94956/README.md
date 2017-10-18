@@ -1,0 +1,185 @@
+---
+layout: page
+title: "Q94956: DOCERR: WinExec() Error Codes in Windows 3.0/3.1"
+permalink: kb/094/Q94956/
+---
+
+## Q94956: DOCERR: WinExec() Error Codes in Windows 3.0/3.1
+
+	Article: Q94956
+	Product(s): Microsoft Windows Software Development Kit
+	Version(s): WINDOWS:3.0,3.1
+	Operating System(s): 
+	Keyword(s): kb16bitonly
+	Last Modified: 06-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The Windows version 3.1 Software Development Kit (SDK) "Programmer's Reference,
+	Volume 2: Functions" lists most of the error codes for a WinExec() or
+	LoadModule() call; however, this list is not complete. This article details the
+	error codes that are either deleted, added, or not documented in the SDK
+	documentation. A complete list of the error codes is presented at the end of
+	this article.
+	
+	MORE INFORMATION
+	================
+	
+	The WinExec() function is used to start an application whether or not the
+	application is based on Windows from within a Windows-based application. The
+	value returned from WinExec() is greater than 32 (or HINSTANCE_ERROR) if the
+	execution is successful; otherwise, the value returned is an error code.
+	
+	The Windows 3.1 SDK "Programmer's Reference, Volume 2: Functions" documents the
+	WinExec() application programming interface (API) on pages 983-984 and lists
+	most of the error codes. This list of WinExec() error codes is updated from the
+	Windows version 3.0 SDK "Reference, Volume 1." Some of the error codes are
+	removed from Windows 3.0 because they no longer apply, and some new error codes
+	are added.
+	
+	Deleted Error Codes
+	-------------------
+	
+	For example, the error codes that are deleted from the Windows 3.1 documentation
+	include the following:
+	
+	  17   Attempt was made in large-frame EMS mode to load a second instance
+	       of an application that links to certain nonshareable DLLs that are
+	       already in use.
+	 
+	 18   Attempt was made in real mode to load an application marked for
+	       use in protected mode only.
+	
+	These error codes are eliminated from the Windows 3.1 documentation because
+	either they cannot occur or real mode does not exist in Windows 3.1. These
+	values must be considered, however, for applications that run in both Windows
+	versions 3.0 and 3.1.
+	
+	Added Error Codes
+	-----------------
+	
+	The error codes that are added to Windows 3.1 documentation include the
+	following:
+	
+	  8    There was insufficient memory to start the application.
+	
+	  19   Attempt was made to load a compressed executable file. The
+	       file must be decompressed before it can be loaded.
+	
+	  20   Dynamic-link library (DLL) file was invalid. One of the DLLs
+	       required to run this application was corrupt.
+	
+	  21   Application requires Microsoft Windows 32-bit extensions.
+	
+	If an application wants to use error codes 19, 20, and 21 and still run under
+	Windows versions 3.0 and 3.1, then version-checking must be done in the
+	application.
+	
+	Missing Error Codes
+	-------------------
+	
+	The error codes that are missing from the Windows versions 3.0 and 3.1
+	documentation include:
+	
+	  1    Call to MS-DOS Int 21 Function 4B00h was invalid (impossible
+	       condition in Windows).
+	
+	  4    Too many files open.
+	
+	  7    There were MS-DOS Memory block problems (impossible condition in
+	       Windows).
+	
+	  9    There were MS-DOS Memory block problems (impossible condition in
+	       Windows).
+	
+	Windows 3.1 does not document error codes 1, 7, and 9 because these values occur
+	only under MS-DOS and not in Windows. Thus they pertain only to MS- DOS.
+	
+	Error codes above 21 under Windows 3.1 and error codes above 18 under Windows 3.0
+	are undocumented because they are reserved for future use, and therefore
+	applications should not use these error codes.
+	
+	Because the documentation for WinExec() in the Windows SDK is not complete, the
+	following table provides the most complete list of the error codes for the
+	WinExec() function. Note that many of these error codes are the same as those of
+	the LoadLibrary() function and the MS-DOS call Interrupt 21 function 4B00h,
+	because WinExec() just performs some preprocessing and then calls Interrupt 21.
+	
+	  Return                   Meaning
+	  Value
+	  ------------------------------------------------------------------
+	   0       System was out of memory, executable file was corrupt, or
+	           relocations were invalid.
+	
+	   1       Call to MS-DOS Int 21 Function 4B00h was invalid
+	           (impossible condition in Windows).
+	
+	   2       File was not found.
+	
+	   3       Path was not found.
+	
+	   4       Too many files were open.
+	
+	   5       Attempt was made to dynamically link to a task, or
+	           there was a sharing or network-protection error.
+	
+	   6       Library requires separate data segments for each task.
+	
+	   7       There were MS-DOS Memory block problems
+	           (impossible condition in Windows).
+	
+	   8       Insufficient memory to load application.
+	
+	   9       There were MS-DOS Memory block problems
+	           (impossible condition in Windows).
+	
+	  10       Windows version was incorrect.
+	
+	  11       The .EXE file was invalid. Either it was a non-Windows
+	           .EXE file or there was an error in the .EXE image.
+	
+	  12       Application was designed for a different operating system.
+	
+	  13       Application was designed for MS-DOS 4.0.
+	
+	  14       The .EXE type was unknown.
+	
+	  15       Attempt was made in protected mode to load a real mode
+	           application.
+	
+	  16       Attempt was made to load a second instance of an .EXE file
+	           containing multiple, writable data segments.
+	
+	  17       Attempt was made in large-frame EMS mode to load a second
+	           instance of an application that links to certain nonshareable
+	           DLLs that are already in use.
+	
+	  18       Attempt was made in real mode to load an application marked
+	           for use in protected mode only.
+	
+	  19       Attempt was made to load a compressed executable file. The
+	           file must be decompressed before it can be loaded.
+	
+	  20       Dynamic-link library (DLL) file was invalid. One of the DLLs
+	           required to run this application was corrupt.
+	
+	  21       Application requires Microsoft Windows 32-bit extensions.
+	
+	  22-31    RESERVED FOR FUTURE USE. NOT RETURNED BY VERSION 3.0.
+	
+	Additional query words: 3.00 3.10 docerr
+	
+	======================================================================
+	Keywords          : kb16bitonly 
+	Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+	Version           : WINDOWS:3.0,3.1
+	
+	=============================================================================
+	

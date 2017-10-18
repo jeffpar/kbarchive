@@ -1,0 +1,81 @@
+---
+layout: page
+title: "Q165712: XFOR: Err Msg: The Microsoft Exchange Server is Down"
+permalink: kb/165/Q165712/
+---
+
+## Q165712: XFOR: Err Msg: The Microsoft Exchange Server is Down
+
+	Article: Q165712
+	Product(s): Microsoft Exchange
+	Version(s): winnt:5.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 10-SEP-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.0 
+	- Microsoft Internet Information Server versions 2.0, 3.0 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	When you attempt to connect to an Exchange Server version 5.0 mailbox from an
+	Internet browser, you may get the error message:
+	
+	  Sorry! The Microsoft Exchange Server is down or the HTTP Service has been
+	  disabled by an administrator. Please try your request again later.
+	
+	This error message may occur even though the Exchange Server has been properly
+	configured to receive browser requests for mail delivery and the HTTP Service
+	has not been disabled.
+	
+	CAUSE
+	=====
+	
+	This problem has been seen to occur when Allow Anonymous Access is enabled on
+	the Service tab of the Properties Dialog Box for the WWW Service in the
+	Microsoft Internet Service Manager for Microsoft Internet Information Server
+	(IIS). This problem has also been reported to occur if the LDAP protocol has
+	been disabled for the Exchange Server that you are attempting to connect to.
+	
+	WORKAROUND
+	==========
+	
+	It is sometimes possible to workaround this problem by following these steps:
+	
+	1. Install an Exchange Client and create a profile on the computer that is
+	  running IIS and the Microsoft Exchange Server Active Server components.
+	
+	2. Deselect the Allow Anonymous Access option for the WWW Service in IIS.
+	
+	3. Stop the IIS services and then the Exchange Services.
+	
+	4. Start the Exchange Services and then the IIS services. You can also restart
+	  the entire computer instead of performing steps 2 and 3.
+	
+	5. Log into the Exchange Server via the web as an authenticated user.
+	
+	6. At this point you can enable Allow Anonymous Access again.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft Exchange Server,
+	version 5.0. We are researching this problem and will post new information here
+	in the Microsoft Knowledge Base as it becomes available.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbiisSearch kbExchangeSearch kbExchange500 kbiis300 kbiis200 kbZNotKeyword2
+	Version           : winnt:5.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

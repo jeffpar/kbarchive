@@ -1,0 +1,327 @@
+---
+layout: page
+title: "Q146193: Internet Information Server 1.0 FAQ"
+permalink: kb/146/Q146193/
+---
+
+## Q146193: Internet Information Server 1.0 FAQ
+
+	Article: Q146193
+	Product(s): Internet Information Server
+	Version(s): winnt:1.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 12-APR-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Server 1.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article contains the Frequently Asked Questions for the Microsoft Windows
+	Internet Information Server (IIS).
+	
+	MORE INFORMATION
+	================
+	
+	QUESTION:
+	
+	Am I required to type the header, "http://", for a Web file open request from the
+	client browsers that are included with the Microsoft Internet Information
+	Server?
+	
+	ANSWER:
+	
+	No. The default file open header, "http://", is used on the Microsoft Internet
+	Explorer client browsers. This means that on you can simply type in the
+	destination address, such as "www.microsoft.com", and the default web request
+	header, "http://", will be added automatically.
+	
+	QUESTION:
+	
+	Can I install the Microsoft Internet Information Server over the Microsoft
+	Windows NT FTP service?
+	
+	ANSWER:
+	
+	Microsoft recommends that you remove the installation of Microsoft Windows NT FTP
+	service before installing the Microsoft Internet Information Server FTP service.
+	For more information see Knowledge Base article Q142555.
+	
+	QUESTION:
+	
+	How can I test my installation of the Microsoft Internet Information Server
+	
+	World Wide Web Service on my local LAN?
+	
+	ANSWER:
+	
+	The default installation of the Microsoft Internet Information Server (IIS)
+	
+	contains sample files that can be used to test the functionality of your IIS WWW
+	publication service.
+	
+	- Ensure your computer has an active connection to your local LAN and that your
+	  name resolution is working properly.
+	
+	- Make sure the WWW service is started by opening Microsoft Internet Service
+	  Manager and verifying State is "Running".
+	
+	- Start the Microsoft Internet Explorer.
+	
+	- Click on File, Open or use the File Open icon on the toolbar.
+	
+	- Type in the Uniform Resource Location (URL) for the home directory of your
+	  new server. The URL will be "http://" followed by the NetBIOS name of your
+	  server. For example if your server is called, "myserver" you would type:
+	
+	  http://myserver
+	
+	- You should see a sample HTML page. If not you may be publishing from a
+	  previous installation directory. In that case use the full path to access the
+	  sample page such as:
+	
+	  http://myserver/samples.
+	
+	For more information see Knowledge Base article Q142556.
+	
+	QUESTION:
+	
+	Can I run the Microsoft Internet Information Server on the Windows NT Shell
+	
+	Technology Preview?
+	
+	ANSWER:
+	
+	The Microsoft Internet Information Server 1.0 has not been thoroughly tested for
+	use on the Microsoft Windows NT Shell Technology Preview. Microsoft does not
+	recommend the use of the Internet Information Server 1.0
+	
+	running on the Microsoft Windows NT Shell Technology Preview in a production
+	environment. For more information see Knowledge Base article Q142713.
+	
+	QUESTION:
+	
+	When I attempt an Anonymous HTTP connection to my Microsoft Internet Information
+	Server World Wide Web service my client browser receives the following error:
+	
+	  HTTP/1.0 500 Server Error (Logon failure: the user has not been granted
+	
+	  the requested logon type at this computer. )
+	
+	ANSWER:
+	
+	Frequently this error means an that your anonymous user does not have local
+	
+	logon rights. To resolve this problem:
+	
+	- In the Microsoft Internet Service Manager open the WWW Service Properties.
+	
+	- Verify the Anonymous Logon Username and Password.
+	
+	- Verify that the username and password in the WWW Service Properties has an
+	  identical username and password used in User Manager.
+	
+	- Run User Manager to verify the local logon rights for your designated
+	  anonymous user. -or-
+	
+	- Run the Microsoft Internet Service Manager to change your anonymous logon
+	  user to an account that does have local logon rights. Verifying the same
+	  username and password as used in User Manager. For more information see
+	  Knowledge Base article Q142715.
+	
+	QUESTION:
+	
+	How can I add mime types to the Microsoft Internet Information Server?
+	
+	ANSWER:
+	
+	Mime types allow files to be opened by "helper" applications on web browser
+	
+	clients, such as Microsoft Internet Explorer. Currently, mime types for Internet
+	Information Server (IIS) must be added manually to the registry. Mime entries
+	can be added to the following registry location:
+	
+	  HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\InetInfo\MimeMap
+	
+	WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+	problems that may require you to reinstall Windows NT to correct them. Microsoft
+	cannot guarantee that any problems resulting from the use of Registry Editor can
+	be solved. Use this tool at your own risk. Note that a helper application may
+	have to be configured on the client as well.
+	
+	For more information see Knowledge Base article Q142558, and the Microsoft
+	Internet Information Server help file, INETMGR.HLP.
+	
+	QUESTION:
+	
+	Is UNICODE supported on the Microsoft Internet Information Server?
+	
+	ANSWER:
+	
+	UNICODE is not currently supported on the Microsoft Internet Information Server.
+	
+	If you save an HTM file from Notepad or any other editor that supports Unicode
+	you may see strange characters on your browser when accessing that specific
+	page.
+	
+	Be sure to select Save as, Save File as Type, Text Files (*.txt), when
+	editing/saving any HTM file for use on the Microsoft Internet Information Server
+	from Notepad. For more information see Knowledge Base article Q142605.
+	
+	QUESTION:
+	
+	When I use the Internet Explorer version 1.5 to access my IIS server I receive
+	the following error:
+	
+	  Error: Authentication is required for this document. The server did
+	  not specify a supported authentication method."
+	
+	How can I resolve this issue?
+	
+	ANSWER:
+	
+	A potential cause is that you have set the Password Authentication on the
+	Microsoft Internet Information Server to a level that is not supported on your
+	Internet Explorer client. The Windows NT Internet Explorer 1.5 Client currently
+	supports Anonymous and Basic Authentication. Install the Windows 95 Internet
+	Explorer 2.0 Client for Windows NT Challenge/Response Authentication. For more
+	information see Knowledge Base article Q142702.
+	
+	QUESTION:
+	
+	When I attempt to configure services in Internet Server Manager, the following
+	error message appears:
+	
+	  The service has not been started.
+	
+	ANSWER:
+	
+	Stopped services cannot be configured in Internet Server Manager because
+	configuration is done through the server's RPC interface, which is only
+	available when the service is running. Start the service in question. If
+	configuration changes are made, choose Apply to make the new settings take
+	effect. For more information see Knowledge Base article Q140049.
+	
+	QUESTION:
+	
+	How can I use the Internet Explorer FTP client to PUT a file to an IIS server?
+	
+	ANSWER:
+	
+	You cannot find a PUT option in Internet Explorer. You can successfully download
+	files using the FTP option from Internet Explorer but you cannot upload files to
+	a remote FTP server. Internet Explorer, like many other Web
+	
+	browsers, does not currently have FTP PUT capability. Use a standard FTP program
+	to write files to a remote FTP server. For more information see Knowledge Base
+	article Q142851.
+	
+	QUESTION:
+	
+	When I use my FTP browser client, I am unable to see virtual directories created
+	in Internet Server Manager for the FTP service even though I have permissions to
+	access the directory. How can I resolve this issue?
+	
+	ANSWER:
+	
+	Internet Information Server does not have this capability at this time. To
+	resolve this issue, discover the names of the directories on the FTP server
+	
+	and use the change directory command (CD) to access these directories.
+	
+	-or-
+	
+	From a Microsoft Internet Explorer Client, use the alias name associated with the
+	virtual directory to gain access. For example:
+	
+	  FTP://myserver/virdir
+	
+	where "virdir" is the name of the alias assigned to an FTP virtual directory. For
+	more information see Knowledge Base article Q142853.
+	
+	QUESTION:
+	
+	Does the Microsoft Internet Information Server provide an Unattended Setup
+	option?
+	
+	ANSWER:
+	
+	Microsoft Internet Information Server does provides an option for unattended
+	setup mode. By using a small script, you can set up multiple information servers
+	quickly and easily. You can customize the unattended setup for several servers
+	or to provide a simple process for over-the- network installations for Internet
+	Explorer users. To customize the unattended setup, the file, UNATTEND.TXT,
+	(located on the Internet Server compact disc) must first be copied to your hard
+	drive and modified to meet your configuration requirements. The file contains
+	more specific instructions on what values are configurable. To start unattended
+	mode Setup, at the command prompt, first change to the directory containing
+	both
+	
+	the SETUP.EXE and UNATTEND.TXT. Then, type:
+	
+	  SETUP -B UNATTEND.TXT
+	
+	For more information see Knowledge Base article Q142860.
+	
+	QUESTION:
+	
+	How can I create HTML documents to use on my Microsoft Internet Information
+	
+	Server for WWW publications?
+	
+	ANSWER:
+	
+	HTML Documents for WWW servers can be written on any text editor as long as
+	
+	you know the proper HTML syntax. However, HTML documents can be easily produced
+	using an HTML editor such as Internet Assistant for Microsoft Word. Internet
+	Assistant for Microsoft Word is available on www.microsoft.com. There are also
+	numerous shareware HTML editors available on the Internet. For more information
+	see Knowledge Base article Q143152.
+	
+	QUESTION:
+	
+	I cleared the Allow Anonymous Connection check box and disabled the use of the
+	guest account for FTP (as recommended in IIS setup). Now, any request to access
+	the FTP server from an Internet Explorer client results in the following error
+	message:
+	
+	  The attempt to load 'ftp//servername' failed.
+	
+	If I use a Command Prompt based client, I am able to login using a Windows NT
+	username and password. How can I resolve this issue?
+	
+	ANSWER:
+	
+	As a workaround the user should enter a URL similar to the following to access a
+	non-guest, non-anonymous IIS FTP server:
+	
+	  FTP://username:password@myserver.com
+	
+	where:
+	
+	  "username" is the Windows NT user account name
+	  "password" is the NT password associated with the user account name
+	  "myserver.com" is the name of the NT server
+	
+	WARNING: FTP usernames and passwords are sent across the network in clear text.
+	When the IIS administrator has cleared the Allow Anonymous Connection
+	
+	check box or the Allow Only Anonymous Connections check box, Windows NT usernames
+	and passwords are sent to the server without encryption. These options are
+	enabled by default for security reasons.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbiisSearch kbiis100
+	Version           : winnt:1.0
+	
+	=============================================================================
+	

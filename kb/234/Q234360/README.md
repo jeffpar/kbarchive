@@ -1,0 +1,102 @@
+---
+layout: page
+title: "Q234360: Software Inventory Is Transferred from a Secondary Site"
+permalink: kb/234/Q234360/
+---
+
+## Q234360: Software Inventory Is Transferred from a Secondary Site
+
+	Article: Q234360
+	Product(s): Microsoft Systems Management Server
+	Version(s): 2.0
+	Operating System(s): 
+	Keyword(s): kbClient kbServer kbsms200 kbInventory
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server version 2.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article discusses the transfer of software inventory from a secondary site
+	server to its primary site.
+	
+	MORE INFORMATION
+	================
+	
+	The software inventory process on a secondary site is performed differently than
+	on a primary site because the secondary site server does not have a Software
+	Inventory Processor.
+	
+	When the Software Inventory Processor is run on a workstation, a Software
+	Inventory file is created with an extension of either .sic or .sid. A complete
+	Software Inventory file has the .sic extension, whereas a Software Inventory
+	file that only includes changes to a previous inventory has the .sid extension.
+	
+	On a secondary site, the Software Inventory file is copied to the
+	\\<Server>\CAP_<Sitecode>\Sinv.box folder on the client access point
+	(CAP). The Inbox Manager Assistant moves the file from the CAP to the
+	\Sms\Inboxes\Sinv.box folder on the site server. Then, the Software Inventory
+	files are collected by the Software Inventory Processor and sent to the
+	Replication Manager for replication to the primary site.
+	
+	The Software Inventory Processor at a secondary site server operates on a one
+	hour cycle. During this cycle, the Software Inventory Processor scans the
+	\Sms\Inboxes\Sinv.box folder. The Software Inventory Processor is also activated
+	when a No History MIF (NHM) file is copied to the \Sms\Inboxes\Inventry.box
+	folder.
+	
+	NOTE: The Software Inventory Processor does not write any log entries when it
+	processes Software Inventory files.
+	
+	When Software Inventory files are replicated from the secondary site to the
+	primary site, the files lose their date or time stamp: files from each
+	replication process all receive the same time stamp.
+	
+	On the primary site server, the Software Inventory Processor processes the .sic
+	files before it processes the .sid files. If the software inventory schedule for
+	client computers at the secondary site is configured so that several .sid files
+	are generated for one computer before the replication process occurs, and the
+	.sid files are received at the primary site, a more recent .sid file can be
+	processed before an earlier file, which can cause the earlier file to be
+	discarded. The Software Inventory Processor can create a Management Information
+	Format (MIF) file from a successfully processed .sic or .sid file.
+	
+	The Inventory Dataloader component at the parent site processes the resulting MIF
+	file that is passed to it from the Software Inventory Processor, which updates
+	the inventory contents and its history. However, a secondary site does not have
+	the Inventory Dataloader component.
+	
+	An example of the logging entries that are logged in the Sinvproc.log file on the
+	parent site server:
+	
+	Processing file: E:\SMS\inboxes\sinv.box\Eflc4iyv.sid
+	$$<SMS_SOFTWARE_INVENTORY_PROCESSOR><Mon May 24 03:56:30.377 1999 Eastern Daylight Time><thread=209 (0xD1)>
+	Processing Inventory for Resource Id: 146
+	$$<SMS_SOFTWARE_INVENTORY_PROCESSOR><Mon May 24 03:56:30.427 1999 Eastern Daylight Time><thread=209 (0xD1)>
+	Successfully Processed file Eflc4iyv.sid !!!
+	$$<SMS_SOFTWARE_INVENTORY_PROCESSOR><Mon May 24 03:56:30.437 1999 Eastern Daylight Time><thread=209 (0xD1)>
+	Processing file: E:\SMS\Inboxes\Sinv.box\Sy9anad7.sid
+	$$<SMS_SOFTWARE_INVENTORY_PROCESSOR><Mon May 24 03:56:30.447 1999 Eastern Daylight Time><thread=209 (0xD1)>
+	Processing Inventory for Resource Id: 146
+	$$<SMS_SOFTWARE_INVENTORY_PROCESSOR><Mon May 24 03:56:30.447 1999 Eastern Daylight Time><thread=209 (0xD1)>
+	WARNING - This file is out-of-date and will be skipped.
+	$$<SMS_SOFTWARE_INVENTORY_PROCESSOR><Mon May 24 03:56:30.457 1999 Eastern Daylight Time><thread=209 (0xD1)>
+	
+	NOTE: The inventory information in the database may not correctly reflect what is
+	on the workstation.
+	
+	Additional query words: prodsms sid sic sinv
+	
+	======================================================================
+	Keywords          : kbClient kbServer kbsms200 kbInventory 
+	Technology        : kbSMSSearch kbSMS200
+	Version           : :2.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

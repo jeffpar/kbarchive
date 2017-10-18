@@ -1,0 +1,102 @@
+---
+layout: page
+title: "Q125610: Bookshelf: How to Change the Placement of QuickShelf"
+permalink: kb/125/Q125610/
+---
+
+## Q125610: Bookshelf: How to Change the Placement of QuickShelf
+
+	Article: Q125610
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): 1994 edition,1995 edition
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 04-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Bookshelf '95 for Windows 95 
+	- Microsoft Bookshelf 1996-97 for Windows 
+	- Microsoft Bookshelf for Windows versions 1994 edition, 1995 edition 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article explains how to adjust the horizontal position of QuickShelf when
+	using Small Buttons. You can do this by editing the QuickShelf .ini file.
+	
+	Bookshelf '95 for Windows 95 and Bookshelf '96-'97 for Windows, installs the
+	32-bit version of QuickShelf on Microsoft Windows 95. This version does not have
+	a small-buttons mode, but has an option called Auto Fit Into Title Bar Area. It
+	is not possible to reposition 32-bit Quickshelf in Auto Fit mode.
+	
+	When Bookshelf '95 for Windows 95 and Bookshelf '96-'97 are installed on a
+	Windows 3.x computer, they install as 16-bit programs. Bookshelf for Windows,
+	1994 and 1995 editions, also install as 16-bit programs.
+	
+	ADJUSTING the HORIZONTAL POSITON of QUICKSHELF
+	----------------------------------------------
+	
+	To adjust the horizontal position of QuickShelf (16-bit) when using Small
+	Buttons, do the following:
+	
+	1. If you are running QuickShelf, close it by clicking the down arrow button,
+	  and then click Exit.
+	
+	2. If you are using Windows 3.1x, click Run from the File menu in Program
+	  Manager.
+	
+	  If you are using Windows 95, click the Start button, and then click Run.
+	
+	3. Type one of the following lines, and then click OK:
+	
+	     qshelf.ini      (for Bookshelf 1994)
+	     qshelf95.ini    (for Bookshelf 1995 or Bookshelf '95 for Windows 95)
+	     qshelf96.ini    (for Bookshelf '96-'97)
+	
+	4. Under the [OPTIONS] section of the .ini file, locate the line RightPos= or X=
+	  and change the number. The smaller the number, the further to the left the
+	  QuickShelf toolbar will appear on the screen. For example:
+	  a. Enter "RightPos=1" (without the quotation marks).
+	
+	  b. Close the file and click Yes when prompted to save changes.
+	
+	5. If you are using Windows 95, do the following. If you are not using Windows
+	  95 continue to step 6.
+	  a. Click the Start button, point to Settings, and then click Control Panel.
+	
+	  b. Click Modems.
+	
+	  c. Click Properties.
+	
+	  d. Click the Connection tab.
+	
+	  e. Click Advanced. Make sure the Use Error Control and Use Flow Control check
+	     boxes are selected.
+	
+	6. Run QuickShelf and notice that QuickShelf appears in the upper-left corner of
+	  the screen.
+	
+	  NOTE: Changing to a larger number than the screen size displays allows
+	  QuickShelf to run; however QuickShelf will not be visible on the screen. For
+	  example, RightPos=1000 will place QuickShelf beyond the visible edge of the
+	  screen.
+	
+	Entries for the qshelf.ini, qshelf95.ini, or qshelf96.ini will not affect
+	placement of QuickShelf, if either the Large Buttons or Regular Buttons are
+	used.
+	
+	When Large Buttons or Regular Buttons are used, placement of QuickShelf is done
+	by simply dragging QuickShelf to the desired location.
+	
+	Additional query words: kbhowto 1.00 1994 1995 1996 multi media multimedia multi-media mmtitles
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf1994 kbBookShelf1995 kbBookShelf1996 kbBookShelf1997
+	Version           : :1994 edition,1995 edition
+	
+	=============================================================================
+	

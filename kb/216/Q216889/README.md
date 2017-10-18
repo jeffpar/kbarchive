@@ -1,0 +1,134 @@
+---
+layout: page
+title: "Q216889: FIX: DCOM95 1.2 or DCOM98 Causes Data Corruption in RPC Calls"
+permalink: kb/216/Q216889/
+---
+
+## Q216889: FIX: DCOM95 1.2 or DCOM98 Causes Data Corruption in RPC Calls
+
+	Article: Q216889
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbRPC kbOSWin95fix kbOSWin95sp1fix
+	Last Modified: 16-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 95 
+	- Microsoft Windows 98 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Under Windows 95 with DCOM95 1.2 update or Windows 98 with DCOM98 update, if you
+	have a pointer to conformant structure as a field of a complex structure, the
+	unmarshaling side receives uninitialized data. If the data structure is an [in]
+	parameter, the server manager routine sees the corruption. If it is an [out]
+	parameter, the client sees the corruption.
+	
+	The same problem appears if your RPC application is running on Windows NT 4.0
+	with Service Pack 4 as documented in the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q216766 FIX: Windows NT 4.0 w/ SP4 Causes Data Corruption in RPC Calls
+	
+	Data Structure:
+	
+	  typedef struct tagConformantStruct 
+	  {
+	     unsigned long        size;
+	     [size_is(size)] char data[];
+	  } ConformantStruct;
+	
+	  typedef enum tagColor
+	  {
+	     Red, Blue, Green
+	  } Color;
+	
+	  typedef union tagMyUnion switch (Color type) u
+	  {
+	     case Red :  long  longArm;
+	     case Blue:  short shortArm;
+	     case Green: char  charArm;
+	  } MyUnion;
+	
+	  typedef struct tagComplexStruct
+	  {
+	     unsigned long numUnions;
+	     ConformantStruct* pConfStruct; // PROBLEM! pointer to conformant struct.
+	     [size_is(numUnions)] MyUnion myUnions[]; // Makes the struct complex.
+	  } ComplexStruct;
+	
+	CAUSE
+	=====
+	
+	A defect in the rpcrt4.dll shipped with Windows NT 4.0 Service Pack 4, (DCOM95
+	1.2) and DCOM98 prevents the conformant part of the conformant structure to be
+	marshaled. The unmarshaling side expects the conformant part and unmarshals from
+	a possibly uninitialized part of the RPC buffer. This causes data corruption.
+	
+	RESOLUTION
+	==========
+	
+	A supported fix is now available from Microsoft, but it is only intended to
+	correct the problem described in this article and should be applied only to
+	systems experiencing this specific problem. This fix may receive additional
+	testing at a later time, to further ensure product quality. Therefore, if you
+	are not severely affected by this problem, Microsoft recommends that you wait
+	for the next update that contains this fix.
+	
+	To resolve this problem immediately, contact Microsoft Product Support Services
+	to obtain the fix. For a complete list of Microsoft Product Support Services
+	phone numbers and information about support costs, please go to the following
+	address on the World Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	NOTE: In special cases, charges that are normally incurred for support calls may
+	be canceled, if a Microsoft Support Professional determines that a specific
+	update will resolve your problem. Normal support costs will apply to additional
+	support questions and issues that do not qualify for the specific update in
+	question.
+	
+	  File name   Version     Date       Time     Size
+	  --------------------------------------------------------
+	  RPCRT4.DLL  4.71.3116   03-04-99   7:16a   321,296
+	
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in DCOM for Microsoft Windows 95,
+	version 1.2, and DCOM98 for Windows 95 and Windows 98 (included with Microsoft
+	Visual Studio 6). The fix described in the resolution section should not be
+	applied to systems which do not have one of these products installed.
+	
+	MORE INFORMATION
+	================
+	
+	For additional information about Windows 98 and Windows 98 Second Edition
+	hotfixes, click the article number below to view the article in the Microsoft
+	Knowledge Base:
+	
+	  Q206071 General Information About Windows 98 and Windows 98 Second Edition
+	  Hotfixes
+	
+	For additional information about Windows 95 hotfixes, click the article number
+	below to view the article in the Microsoft Knowledge Base:
+	
+	  Q161020 Implementing Windows 95 Updates
+	
+	Additional query words: conformant complex
+	
+	======================================================================
+	Keywords          : kbRPC kbOSWin95fix kbOSWin95sp1fix 
+	Technology        : kbWin95search kbWin98search kbZNotKeyword3 kbWin98
+	Version           : :
+	Issue type        : kbprb
+	
+	=============================================================================
+	

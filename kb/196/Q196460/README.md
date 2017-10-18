@@ -1,0 +1,84 @@
+---
+layout: page
+title: "Q196460: Improving Mouse Movements in Terminal Server Applications"
+permalink: kb/196/Q196460/
+---
+
+## Q196460: Improving Mouse Movements in Terminal Server Applications
+
+	Article: Q196460
+	Product(s): Windows for Workgroups and Windows NT Networking Issues
+	Version(s): 4.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 11-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 98 
+	- Microsoft Windows 95 
+	- Microsoft Windows NT Workstation version 4.0 
+	- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about editing the registry.
+	Before you edit the registry, make sure you understand how to restore it if
+	a problem occurs. For information on how to do this, view the "Restoring
+	the Registry" online Help topic in Regedit.exe or the "Restoring a Registry
+	Key" online Help topic in Regedt32.exe.
+	
+	SUMMARY
+	=======
+	
+	When you use some applications in Windows Terminal Server, the mouse may jump or
+	not move in a controlled fashion. This behavior has been observed in
+	computer-aided design (CAD) programs, but may occur anywhere that precision
+	mouse control is necessary.
+	
+	MORE INFORMATION
+	================
+	
+	By default, the Terminal Server client sends mouse strokes to the Terminal
+	Server at an interval of 100 ms. The performance of the mouse can be improved by
+	lowering this setting through the registry. Please note that these are client
+	entries.
+	
+	WARNING: Using Registry Editor incorrectly can cause serious problems that may
+	require you to reinstall your operating system. Microsoft cannot guarantee that
+	problems resulting from the incorrect use of Registry Editor can be solved. Use
+	Registry Editor at your own risk.
+	
+	For information about how to edit the registry, view the "Changing Keys And
+	Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+	Information in the Registry" and "Edit Registry Data" Help topics in
+	Regedt32.exe. Note that you should back up the registry before you edit it. If
+	you are running Windows NT, you should also update your Emergency Repair Disk
+	(ERD).
+	
+	1. On the Terminal Server client computer, open the registry and go to the
+	  following key:
+	
+	     HKEY_CURENT_USER\Software\Microsoft\Terminal Server Client
+	
+	2. Select Terminal Server Client.
+	
+	3. Create a new DWORD value.
+	
+	4. Name the new DWORD value: Min Send Interval
+	
+	5. Set the value to: 10.
+	
+	You may want to adjust the value as needed for your particular network, weighing
+	the additional network traffic against the enhanced mouse performance.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch kbWin95search kbWin98search kbZNotKeyword3 kbWin98
+	Version           : :4.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

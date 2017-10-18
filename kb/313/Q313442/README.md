@@ -1,0 +1,174 @@
+---
+layout: page
+title: "Q313442: Zoo Tycoon: How to Download and Install Update and Bonus Items"
+permalink: kb/313/Q313442/
+---
+
+## Q313442: Zoo Tycoon: How to Download and Install Update and Bonus Items
+
+	Article: Q313442
+	Product(s): Microsoft Home Games
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbimu
+	Last Modified: 22-JUL-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Zoo Tycoon 
+	- Microsoft Zoo Tycoon: Dinosaur Digs Expansion Pack 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Microsoft Zoo Tycoon has an update available to download. The update enhances
+	performance in the area of zoo scalability and maintenance worker artificial
+	intelligence (AI).
+	
+	NOTE: You do not need to install the update if you have installed Microsoft Zoo
+	Tycoon Dinosaur Digs.
+	
+	Zoo Tycoon bonus content includes extra animals, fancy buildings and scenarios.
+	The bonus content requires the latest update to the game only for Zoo Tycoon 1.0
+	users.
+	
+	You can download the game update and bonus items through the game or manually. To
+	download the Zoo Tycoon update and bonus items you must first connect to the
+	Internet.
+	
+	NOTE: If you receive an error message or if the game stops responding during the
+	update, visit the Zoo Tycoon Web site to download it manually.
+	
+	MORE INFORMATION
+	================
+	
+	The Zoo Tycoon 10.9 update enhances performance for the Microsoft Windows 95,
+	Microsoft Windows 98, and Microsoft Windows Millennium Edition (Me) operating
+	systems. It enhances performance slightly for the Microsoft Windows 2000 and
+	Microsoft Windows XP operating systems.
+	
+	Issues that are improved or fixed include:
+	
+	- Guests cannot do what they want.
+	
+	- Cannot get more than approximately 600 guests into a zoo.
+	
+	- Guests loop in place; animals walk in place.
+	
+	- Maintenance worker AI.
+	
+	- Terrain blending problem with snow.
+	
+	- Zoo admission fees (and marketing) not proportional to guest admissions.
+	
+	- Cheat for unlocking Triceratops and Unicorn can cause the computer to stop
+	  responding (crash).
+	
+	- User-created animals do not recognize the same species correctly.
+	
+	Download Zoo Tycoon Update
+	--------------------------
+	
+	Method 1: Download Zoo Tycoon Update Through the Game:
+	
+	To download the update directly through the game, follow these steps:
+	
+	1. On the Main menu, click "Get New Zoo Tycoon Items".
+	
+	2. Under "Check for New Zoo Items", click Check Internet.
+	
+	3. Click to select (place a check mark in front of) "Zoo Tycoon Update to v10-8
+	  11-20-01 1.51MB".
+	
+	  NOTE: If there are other Zoo items available, select only the update at this
+	  time.
+	
+	4. Click Add Zoo Items.
+	
+	5. Click Yes when you receive a prompt to restart Zoo Tycoon.
+	
+	Method 2: Download Zoo Tycoon Manually:
+	
+	If you receive an error message or if the game hangs during the update, visit the
+	Zoo Tycoon Web site to download it manually. To do this:
+	
+	1. Visit the following Microsoft Web site:
+	
+	  http://www.microsoft.com/games/zootycoon/downloads.asp
+	  (http://www.microsoft.com/games/zootycoon/downloads.asp)
+	
+	2. Under Zoo Tycoon Update, click to download the update.
+	
+	3. In the "Save in" dialog box, click Desktop, and then click Save.
+	
+	4. When the download finishes, click Close.
+	
+	5. Start Zoo Tycoon.
+	
+	6. On the Main menu, click "Get New Zoo Tycoon Items".
+	
+	7. Under "Check for New Zoo Items", click Check Locally.
+	
+	8. In the "Import local Zoo Tycoon updates" dialog box, locate the folder that
+	  you saved the file in, click Zoo.exe, and then click Open.
+	
+	9. Click Yes when you receive a prompted.
+	
+	Downloading Bonus Items
+	-----------------------
+	
+	Method 1: Download Bonus Items Through the Game:
+	
+	1. Go to the Main Menu in Zoo Tycoon, and then click "Get New Zoo Tycoon Items".
+	
+	2. Click Check Internet.
+	
+	3. Click the check boxes to add the items you wish to download.
+	
+	4. Click the Add Items button.
+	
+	When the download is finished, Zoo Tycoon restarts and you will be able to select
+	your new scenario or bonus items.
+	
+	Method 2: Download Bonus Items Manually:
+	
+	1. Visit the following Microsoft Web site:
+	
+	  http://www.microsoft.com/games/zootycoon/downloads.asp
+	
+	2. Download and save the file(s) to your hard drive. To do so, right-click on
+	  the bonus item you want to download. and then click "Save Target As".
+	
+	3. In the Save In dialog box, click Desktop, and then click Save.
+	
+	4. When the download is finished, click Close.
+	
+	5. Start Zoo Tycoon.
+	
+	6. On the Zoo Tycoon Main Menu, click "Get New Zoo Tycoon Items".
+	
+	7. On the Update screen, click Check Locally. A windows appears from which you
+	  can locate the Desktop.
+	
+	8. Once you have located the Desktop, select the file(s) you want to download.
+	  You can CTRL+Click each file to select multiple files.
+	
+	9. When you have the file(s) selected, click Open, and then click Yes when you
+	  receive a prompt to restart Zoo Tycoon.
+	
+	10. Zoo Tycoon shuts down, and then tries to restart.
+	
+	NOTE: If Zoo Tycoon fails to restart, start Zoo Tycoon as you typically do.
+	
+	Additional query words: msgame
+	
+	======================================================================
+	Keywords          : kbimu 
+	Technology        : kbGamesSearch kbZooTycoon
+	Version           : :
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

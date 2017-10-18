@@ -1,0 +1,237 @@
+---
+layout: page
+title: "Q138767: FIX: CreateRelation Method Fails with Non-UNICODE Build"
+permalink: kb/138/Q138767/
+---
+
+## Q138767: FIX: CreateRelation Method Fails with Non-UNICODE Build
+
+	Article: Q138767
+	Product(s): Microsoft C Compiler
+	Version(s): winnt:
+	Operating System(s): 
+	Keyword(s): kbcode kbDAOsearch kbDatabase kbMFC kbVC kbVC410fix
+	Last Modified: 30-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The Microsoft Foundation Classes (MFC), included with:
+	   - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The CDaoDatabase::CreateRelation() method may fail if an application is built as
+	a non-UNICODE application. It is possible that a messagebox will appear that
+	states:
+	
+	  Invalid field name '<some text>' in definition of index or relationship
+	
+	CAUSE
+	=====
+	
+	A bug exists in the CDaoDatabase::CreateRelation() function. In
+	\Msdev\Mfc\Src\Daocore.cpp, you can see the following code in the
+	CreateRelation() function:
+	
+	     COleVariant var;
+	     var = relinfo.m_pFieldInfos[nIndex].m_strForeignName;
+	     DAO_CHECK(pDAOField->put_ForeignName(V_BSTR(&var)));
+	
+	This code is incorrect. Here is the correct code:
+	
+	     COleVariant var(relinfo.m_pFieldInfos[nIndex].m_strForeignName,
+	                    VT_BSTRT);
+	     DAO_CHECK(pDAOField->put_ForeignName(V_BSTR(&var)));
+	
+	The fixed code ensures that the BSTR for the variant will be in ANSI format for
+	non-UNICODE versions of an application and will be in UNICODE format for UNICODE
+	versions of an application.
+	
+	RESOLUTION
+	==========
+	
+	Perform the following steps:
+	
+	1. Derive a new class from CDaoDatabase.
+	
+	2. Add the function prototypes for the two CreateRelation() functions to your
+	  new class declaration.
+	
+	3. Copy the two CreateRelation() functions from Daocore.cpp to the
+	  CreateRelation() functions of your new CDaoDatabase-derived class.
+	
+	4. Change the following code in your new CreateRelation(CDaoRelationInfo&
+	  relinfo) method from:
+	
+	        COleVariant var;
+	        var = relinfo.m_pFieldInfos[nIndex].m_strForeignName;
+	        DAO_CHECK(pDAOField->put_ForeignName(V_BSTR(&var)));
+	
+	  to:
+	
+	        COleVariant var(relinfo.m_pFieldInfos[nIndex].m_strForeignName,
+	                        VT_BSTRT);
+	        DAO_CHECK(pDAOField->put_ForeignName(V_BSTR(&var)));
+	
+	5. Declare a local VARIANT and initialize it in the overridden function as
+	  follows:
+	
+	     VARIANT var;
+	     var.vt  = VT_ERROR;
+	     var.scode = DISP_E_PARAMNOTFOUND;
+	
+	  This is necessary because the _afxOptionalVariant used in the original
+	  CreateRelation() function is defined in DAOCORE.CPP,
+	
+	6. Replace instances of the _afxOptionalVariant variable with var.
+	
+	Instead of using the CDaoDatabase class, you will use your new CDaoDatabase-
+	derived class. The sample code in this article demonstrates what the new code
+	might look like.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article. This bug was corrected in Visual C++ 4.1.
+	
+	MORE INFORMATION
+	================
+	
+	Sample Code to Demonstrate Fixed Code
+	-------------------------------------
+	
+	This demonstrates how you will use your new CDaoDatabase-derived class; in this
+	case called CMyDatabase.
+	
+	     CMyDatabase db;
+	     db.Open("f:\\test\\relation\\relate.mdb");
+	     db.CreateRelation(_T("mytest"), _T("Table1"), _T("Table2"),
+	              dbRelationUnique|dbRelationUpdateCascade,_T("field1"),
+	              _T("field1"));
+	     db.Close();
+	
+	Here is the declaration of the new class:
+	
+	     class CMyDatabase:public CDaoDatabase
+	     {
+	     public:
+	       void CreateRelation(LPCTSTR lpszName, LPCTSTR lpszTable,
+	                     LPCTSTR lpszForeignTable, long lAttributes,
+	                     LPCTSTR lpszField,
+	                     LPCTSTR lpszForeignField);
+	       void CreateRelation(CDaoRelationInfo& relinfo);
+	     };
+	
+	Here is the implementation of the new class:
+	
+	     void CMyDatabase::CreateRelation(LPCTSTR lpszName, LPCTSTR lpszTable,
+	          LPCTSTR lpszForeignTable, long lAttributes, LPCTSTR lpszField,
+	          LPCTSTR lpszForeignField)
+	     {
+	       ASSERT_VALID(this);
+	
+	       CDaoRelationInfo relinfo;
+	       CDaoRelationFieldInfo fieldinfo;
+	
+	       relinfo.m_strName = lpszName;
+	       relinfo.m_strTable = lpszTable;
+	       relinfo.m_strForeignTable = lpszForeignTable;
+	       relinfo.m_lAttributes = lAttributes;
+	       relinfo.m_nFields = 1;
+	
+	       relinfo.m_pFieldInfos = &fieldinfo;
+	       relinfo.m_pFieldInfos->m_strName = lpszField;
+	       relinfo.m_pFieldInfos->m_strForeignName = lpszForeignField;
+	
+	       CreateRelation(relinfo);
+	     }
+	
+	     void CMyDatabase::CreateRelation(CDaoRelationInfo& relinfo)
+	     {
+	       ASSERT_VALID(this);
+	       ASSERT(IsOpen());
+	       ASSERT(relinfo.m_nFields > 0);
+	
+	       VARIANT var;
+	       var.vt    = VT_ERROR;
+	       var.scode = DISP_E_PARAMNOTFOUND;
+	
+	       // Initialize relations collection so that relation can be
+	       // appended later
+	       if (m_pDAORelations == NULL)
+	           InitRelationsCollection();
+	
+	       DAORelation* pDAORelation = NULL;
+	       DAOFields* pDAOFields = NULL;
+	       DAOField* pDAOField = NULL;
+	
+	       // Create the relation
+	       DAO_CHECK(m_pDAODatabase->CreateRelation(
+	                 COleVariant(relinfo.m_strName, VT_BSTRT),
+	                 COleVariant(relinfo.m_strTable, VT_BSTRT),
+	                 COleVariant(relinfo.m_strForeignTable, VT_BSTRT),
+	                 COleVariant(relinfo.m_lAttributes), &pDAORelation));
+	
+	       TRY
+	       {
+	          // Get the fields collection for later append of created field
+	          DAO_CHECK(pDAORelation->get_Fields(&pDAOFields));
+	
+	          // Create field(s) and set the name and foreign name
+	          for (int nIndex = 0; nIndex < relinfo.m_nFields; nIndex++)
+	          {
+	              // note that we are using 'var' in the following function
+	              // instead of _afxOptionalVar declared in DAOCORE.CPP
+	              DAO_CHECK(pDAORelation->CreateField(
+	                      COleVariant(relinfo.m_pFieldInfos[nIndex].m_strName,
+	                                  VT_BSTRT), var, var, &pDAOField));
+	
+	             COleVariant var(relinfo.m_pFieldInfos[nIndex].m_strForeignName,
+	                             VT_BSTRT);
+	             DAO_CHECK(pDAOField->put_ForeignName(V_BSTR(&var)));
+	
+	             // Append the field to relation fields collection and
+	             // release
+	             DAO_CHECK(pDAOFields->Append(pDAOField));
+	                       pDAOField->Release();
+	          }
+	
+	          DAO_CHECK(m_pDAORelations->Append(pDAORelation));
+	       }
+	       CATCH_ALL(e)
+	       {
+	            // Clean up before throw
+	       if (pDAOField != NULL)
+	                pDAOField->Release();
+	
+	            if (pDAOFields != NULL)
+	               pDAOFields->Release();
+	
+	            pDAORelation->Release();
+	            THROW_LAST();
+	      }
+	      END_CATCH_ALL
+	
+	      // Clean up
+	      if (pDAOField != NULL)
+	         pDAOField->Release();
+	
+	      pDAOFields->Release();
+	      pDAORelation->Release();
+	     }
+	
+	Additional query words: kbVC400bug
+	
+	======================================================================
+	Keywords          : kbcode kbDAOsearch kbDatabase kbMFC kbVC kbVC410fix 
+	Technology        : kbAudDeveloper kbMFC
+	Version           : winnt:
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

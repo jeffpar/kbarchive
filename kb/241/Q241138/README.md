@@ -1,0 +1,110 @@
+---
+layout: page
+title: "Q241138: SNA Server Windows 3.x Client Causes Access Violation"
+permalink: kb/241/Q241138/
+---
+
+## Q241138: SNA Server Windows 3.x Client Causes Access Violation
+
+	Article: Q241138
+	Product(s): Microsoft SNA Server
+	Version(s): 3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+	Operating System(s): 
+	Keyword(s): sna4 kbsna400sp1 kbsna400sp2 kbsna400sp3 kbsna400sp4
+	Last Modified: 08-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 3.0 SP4, 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4 
+	- Microsoft Host Integration Server 2000 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The SNA Server Windows 3.x client software (Wnap.exe and Win3270.exe) may fail
+	with an Access Violation error in the following configurations:
+	
+	- When you install on a computer running Windows 98 Second Edition
+	
+	- After you install Microsoft Internet Explorer 5 on Windows 98, where the SNA
+	  Win 3.x client had been working with no problems prior to the upgrade to
+	  Internet Explorer 5
+	
+	On computers running Windows 98, the Access Violation error message may be
+	similar to the following:
+	
+	  WNAP caused a general protection fault
+	  in module WNAP.EXE at 0005:00000a10.
+	  Registers:
+	  EAX=ffff2864 CS=2eb7 EIP=00000a10 EFLGS=00000246
+	  EBX=014f2864 SS=2e87 ESP=000025ca EBP=000025de
+	  ECX=00000000 DS=2e87 ESI=00022d50 FS=2e7f
+	  EDX=00002f2f ES=2f2f EDI=00002e6f GS=0000
+	  Bytes at CS:EIP:
+	  ff 1e c4 0c c4 1e 2c 01 26 c7 87 35 27 02 00 b8
+	
+	Stack dump:
+	
+	  28642eef 2d502f2f 62002e6f 28648928 2e872f2f 043425fd 2eef2ec7
+	  2e6f2d50 00000200 00032f2f 2e872622 2eef0b90 270f2e87 17d79e9d
+	  00000000 00100000
+	
+	CAUSE
+	=====
+	
+	When you run the SNA Windows 3.x client on the above Windows 98 configurations,
+	the SNA client components are exhausting their local program stack space, which
+	results in unexpected failures in the SNA client components.
+	
+	RESOLUTION
+	==========
+	
+	A supported fix is now available from Microsoft, but it is only intended to
+	correct the problem described in this article and should be applied only to
+	systems experiencing this specific problem.
+	
+	To resolve this problem, contact Microsoft Product Support Services to obtain the
+	fix. For a complete list of Microsoft Product Support Services phone numbers and
+	information on support costs, please go to the following address on the World
+	Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	NOTE: In special cases, charges that are normally incurred for support calls may
+	be canceled, if a Microsoft Support Professional determines that a specific
+	update will resolve your problem. Normal support costs will apply to additional
+	support questions and issues that do not qualify for the specific update in
+	question.
+	
+	
+	
+	
+	WORKAROUND
+	==========
+	
+	If the problem started to occur after you installed Microsoft Internet Explorer
+	5, to work around the problem, remove Internet Explorer 5 and install a previous
+	version of Internet Explorer.
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in SNA Server 3.0, 3.0 SP1, 3.0
+	SP2, 3.0 SP3, 3.0 SP4, SNA 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, and 4.0 SP4.
+	
+	This problem was correctd in Host Integration Server 2000.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : sna4 kbsna400sp1 kbsna400sp2 kbsna400sp3 kbsna400sp4 
+	Technology        : kbAudDeveloper kbSNAServSearch kbHostIntegServ2000 kbSNAServ300 kbSNAServ400 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3 kbSNAServ400SP4 kbSNAServ300SP2 kbSNAServ300SP4
+	Version           : :3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

@@ -1,0 +1,99 @@
+---
+layout: page
+title: "Q282461: DEACTIVATE_SESSION Returns Parameter_Check If No Sessions Active"
+permalink: kb/282/Q282461/
+---
+
+## Q282461: DEACTIVATE_SESSION Returns Parameter_Check If No Sessions Active
+
+	Article: Q282461
+	Product(s): Microsoft SNA Server
+	Version(s): 4.0 SP2,4.0 SP3,4.0 SP4
+	Operating System(s): 
+	Keyword(s): kbDSupport kbsna400sp2 kbsna400sp3 kbhis2000fix kbsna400sp4
+	Last Modified: 16-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 4.0 SP2, 4.0 SP3, 4.0 SP4 
+	- Microsoft Host Integration Server 2000 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The DEACTIVATE_SESSION verb requests SNA Server or Host Integration Server (HIS)
+	2000 to deactivate a particular Advanced Program-to-Program Communications
+	(APPC) session between the local APPC Logical Unit (LU) and a specified partner
+	APPC LU, or all active sessions on a particular mode. To indicate that all of
+	the active sessions for a specified partner APPC LU and APPC mode should be
+	deactivated, the session_id parameter should be set to 8 binary zeros (00000000)
+	in the DEACTIVATE_SESSION verb.
+	
+	If an APPC application issues a DEACTIVATE_SESSION verb to deactivate all of the
+	active sessions when there are no active sessions, the verb completes with the
+	following error message:
+	
+	  Primary Return Code: AP_PARAMETER_CHECK
+	  Secondary Return Code: AP_INVALID_SESSION_ID
+	
+	This behavior is by design because the session_id is invalid if there are no
+	active sessions to deactivate.
+	
+	Other SNA platforms don't return an error when a DEACTIVATE_SESSION verb is
+	issued under the same scenario; the other SNA platforms return a primary return
+	code of OK in this situation.
+	
+	This behavior of SNA Server has been modified so that the DEACTIVATE_SESSION verb
+	returns with a primary return code of OK when it tries to deactivate all active
+	sessions for a given partner LU/mode even if there are no active sessions at the
+	time.
+	
+	Please refer to the APPC Programmer's Guide in the SNA Server 4.0 Service Pack 2
+	(SP2) (or later) or Host Integration Server 2000 Software Development Kit (SDK)
+	for more information on the DEACTIVATE_SESSION verb.
+	
+	MORE INFORMATION
+	================
+	
+	A supported feature that modifies the product's default behavior is now
+	available from Microsoft, but it is only intended to modify the behavior
+	described in this article and should be applied only to systems having a
+	specific need for it. This feature may receive additional testing at a later
+	time, to further ensure product quality. Therefore, if you are not severely
+	affected by the lack of this feature, Microsoft recommends that you wait for the
+	next Microsoft SNA Server version 4.0 service pack that contains this feature.
+	
+	To obtain this feature immediately, contact Microsoft Product Support Services.
+	For a complete list of Microsoft Product Support Services phone numbers and
+	information on support costs, please go to the following address on the World
+	Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	The English version of this feature should have the following file attributes or
+	later:
+	
+	+-------------------------------------+
+	| File name    | Date       | Time    | 
+	+-------------------------------------+
+	| Snaservr.exe | 12/18/2000 | 09:00AM | 
+	+-------------------------------------+
+	
+	NOTE: Because of file dependencies, the most recent fix that contains the above
+	files may also contain additional files.
+	
+	
+	
+	
+	Additional query words: Snaservr
+	
+	======================================================================
+	Keywords          : kbDSupport kbsna400sp2 kbsna400sp3 kbhis2000fix kbsna400sp4 
+	Technology        : kbAudDeveloper kbSNAServSearch kbHostIntegServ2000 kbSNAServ400SP2 kbSNAServ400SP3 kbSNAServ400SP4
+	Version           : :4.0 SP2,4.0 SP3,4.0 SP4
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

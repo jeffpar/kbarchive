@@ -1,0 +1,123 @@
+---
+layout: page
+title: "Q193813: Multiple NVRunCmd Commands May Cause Unpredictable Results"
+permalink: kb/193/Q193813/
+---
+
+## Q193813: Multiple NVRunCmd Commands May Cause Unpredictable Results
+
+	Article: Q193813
+	Product(s): Microsoft SNA Server
+	Version(s): 2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
+	Operating System(s): 
+	Keyword(s): kbbuglist
+	Last Modified: 24-OCT-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 2.11, 2.11 SP1, 2.11 SP2, 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 4.0, 4.0 SP1 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	An SNA Server may experience unpredictable behavior if it receives multiple
+	NVRunCmd commands from the host over one of its configured host connections.
+	This will only occur if the SNA Server receives NVRunCmd commands while it is
+	currently processing a previous NVRunCmd.
+	
+	The following is a sequence that caused the PU (Physical Unit) defined in VTAM
+	for a SNA Server host connection to hang:
+	
+	  Host                                    SNA Server
+	  ----                                    ----------
+	
+	  (1) NMVT (DIR D:\SNA\SYSTEM\*.*)  ->
+	  (2) NMVT (DIR C:\*.*)             ->
+	                                    <-     (2) NMVT -RSP (Sense 084B0003)
+	                                    <-     (1) Data (1st portion of data)
+	  (3) NMVT (DIR C:\*.*)             ->
+	                                    <-     (1) (Final data for NMVT #1)
+	
+	In this sequence, the host sends three NVRunCmds over the connection defined in
+	SNA Server. The first NVRunCmd command (designated as number 1) is accepted, and
+	eventually completes, returning the contents of the D:\Sna\System directory. The
+	second NVRunCmd command (designated as number 2), is rejected by SNA Server.
+	This request is rejected with an IBM Sense Code of 084B0003, which indicates
+	that the requested resources are not available. SNA Server does not respond to
+	the third NVRunCmd command (designated as number 3) at all. The lack of response
+	is what causes the PU defined for this host connection to hang.
+	
+	It is possible that other symptoms may also occur since SNA Server is not
+	correctly handling multiple concurrent NVRunCmd commands.
+	
+	CAUSE
+	=====
+	
+	The NVRunCmd service is designed to process only one command at a time. If
+	subsequent commands are received while a previous command is being processed,
+	the subsequent NVRunCmd commands will be rejected by SNA Server.
+	
+	The problem is that the SNA Server service doesn't properly handle the case when
+	multiple NVRunCmd commands are received at the same time. When this occurs, the
+	SNA Server may correctly reject one or more of the commands it receives while
+	processing the initial request. However, it may also attempt to process one of
+	the NVRunCmd commands while the initial request is still processing, and this
+	can lead to unpredictable results such as the PU hanging.
+	
+	
+	RESOLUTION
+	==========
+	
+	SNA Server 3.0
+	--------------
+	
+	To resolve this problem, obtain the latest service pack for SNA Server version
+	3.0. For additional information, please see the following article in the
+	Microsoft Knowledge Base:
+	
+	  Q219049 How to Obtain SNA Server Version 3.0 Service Pack 4
+	
+	
+	
+	SNA Server 4.0
+	--------------
+	
+	Microsoft has confirmed this to be a problem in SNA Server version 4.0 and 4.0
+	SP1. This problem was corrected in the latest SNA Server version 4.0 U.S.
+	Service Pack. For information on obtaining this Service Pack, query on the
+	following word in the Microsoft Knowledge Base (without the spaces):
+	
+	  S E R V P A C K
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in SNA Server versions 2.11, 2.11
+	SP1, 2.11 SP2, 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 4.0, and 4.0 SP1. This problem
+	was first corrected in SNA Server 3.0 Service Pack 4.
+	
+	MORE INFORMATION
+	================
+	
+	After applying the hotfix for this problem, SNA Server will reject all
+	subsequent NVRunCmd commands if a NVRunCmd command is being processed.
+	
+	For more information on the NVRunCmd service, please refer to one of the
+	following:
+	
+	- SNA Server Administration Guide - SNA Server Online Help
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  kbbuglist
+	Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ211 kbSNAServ400 kbSNAServ211SP1 kbSNAServ211SP2 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ300SP2
+	Version           : :2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

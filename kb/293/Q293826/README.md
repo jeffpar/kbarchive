@@ -1,0 +1,216 @@
+---
+layout: page
+title: "Q293826: Pattern-Matching Function Causes Access Violation on FTP Server"
+permalink: kb/293/Q293826/
+---
+
+## Q293826: Pattern-Matching Function Causes Access Violation on FTP Server
+
+	Article: Q293826
+	Product(s): Internet Information Server
+	Version(s): 4.0,5.0
+	Operating System(s): 
+	Keyword(s): kbSecurity kbWinNT400PreSP7Fix kbWin2000PreSP3Fix kbgraphxlinkcritical KbSECVulnerabili
+	Last Modified: 15-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Services version 5.0 
+	- Microsoft Internet Information Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	A denial of service (DoS) vulnerability exists in Microsoft Internet Information
+	Services (IIS) 5.0 and Microsoft Internet Information Server (IIS) 4.0 because
+	the function that processes wildcard sequences in FTP commands does not always
+	allocate sufficient memory when it performs pattern matching. Under unusual
+	circumstances, it may be possible for an attacker to levy an FTP command
+	containing a wildcard sequence that, when expanded, can overrun the allocated
+	memory and cause an access violation.
+	
+	This scenario can cause the IIS service (which provides both Web and FTP
+	functionality) to fail. As a result, all Web or FTP sessions that are in
+	progress at the time are severed, and no new sessions can be established until
+	the IIS service is restarted. In IIS 5.0, the service restarts automatically. In
+	IIS 4.0, operator intervention is required to restart the service.
+	
+	The attacker cannot add, change, or delete data on the server through this
+	vulnerability, nor can the attacker usurp any administrative privileges.
+	
+	Mitigating Factor
+	
+	The attacker must be able to start an FTP session in order to exploit the
+	vulnerability.
+	
+	CAUSE
+	=====
+	
+	This problem occurs because of a flaw in a pattern-matching function that is
+	used by at least one FTP command. Depending on the wildcard sequence that is
+	entered and the specific configuration of the server's file system, it is
+	possible for the resulting pattern to exceed the available memory and trigger an
+	access violation. This, in turn, causes the IIS service to fail.
+	
+	RESOLUTION
+	==========
+	
+	For additional information on what is fixed by the following patches, click the
+	article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q297860 IIS 5.0 Security and Post-Windows NT 4.0 SP5 IIS 4.0 Patch Rollup
+	
+	Internet Information Services 5.0
+	---------------------------------
+	
+	To resolve this problem, obtain the latest service pack for Windows 2000. For
+	additional information, click the following article number to view the article
+	in the Microsoft Knowledge Base:
+	
+	  Q260910 How to Obtain the Latest Windows 2000 Service Pack
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	  Date        Time    Version        Size     File name
+	  --------------------------------------------------------
+	  5/31/2001  03:31p  5.0.2195.3649  245,520    Adsiis.dll
+	  5/31/2001  03:31p  5.0.2195.3649  332,560    Asp.dll
+	  5/29/2001  04:37p  4.0.2.4701     593,976    Fp4autl.dll
+	  5/31/2001  03:31p  5.0.2195.3649  246,032    Httpext.dll
+	  5/31/2001  03:31p  5.0.2195.3649   56,592    Httpodbc.dll
+	  5/31/2001  03:31p  5.0.2195.3649  122,640    Iisrtl.dll
+	  5/31/2001  03:31p  5.0.2195.3649   13,584    Infoadmn.dll
+	  5/31/2001  03:31p  5.0.2195.3649  245,520    Infocomm.dll
+	  5/31/2001  03:31p  5.0.2195.3649   62,736    Isatq.dll
+	  5/31/2001  03:31p  5.0.2195.3649   46,352    Ism.dll
+	  5/31/2001  03:31p  5.0.2195.3649   76,560    Msw3prt.dll
+	  5/30/2001  03:40p  5.0.2195.3651     6928    Schmupd.exe
+	  5/30/2001  03:40p  5.0.2195.3651     7952    Spiisupd.exe
+	  5/31/2001  03:32p  5.0.2195.3649   41,232    Ssinc.dll
+	  5/31/2001  03:32p  5.0.2195.3649     7440    W3ctrs.dll
+	  5/31/2001  03:32p  5.0.2195.3649  353,040    W3svc.dll
+	
+	
+	Internet Information Server 4.0
+	-------------------------------
+	
+	A supported fix is now available from Microsoft, but it is only intended to
+	correct the problem that is described in this article. Apply it only to
+	computers that you determine are at risk of attack. Evaluate your computer's
+	physical accessibility, network and Internet connectivity, and other factors to
+	determine the degree of risk to your computer. See the associated Microsoft
+	Security Bulletin
+	(http://www.microsoft.com/technet/security/bulletin/ms01-026.asp) to help
+	determine the degree of risk. This fix may receive additional testing. If your
+	computer is sufficiently at risk, Microsoft recommends that you apply this fix
+	now.
+	
+	To resolve this problem immediately, download the fix by clicking the download
+	link later in this article or contact Microsoft Product Support Services to
+	obtain the fix. For a complete list of Microsoft Product Support Services phone
+	numbers and information about support costs, please visit the following
+	Microsoft Web site:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	NOTE: In special cases, charges that are ordinarily incurred for support calls
+	may be canceled, if a Microsoft Support Professional determines that a specific
+	update will resolve your problem. The usual support costs will apply to
+	additional support questions and issues that do not qualify for the specific
+	update in question.
+	
+	The following file is available for download from the Microsoft Download Center:
+	
+	  DownloadDownload Q295534i.exe now
+	  (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=29787)
+	  NOTE: Q295534is.exe are the Symbols files.
+	
+	For additional information about how to download Microsoft Support files, click
+	the following article number to view the article in the Microsoft Knowledge
+	Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft scanned this file for viruses. Microsoft used the most current
+	virus-detection software that was available on the date that the file was
+	posted. The file is stored on secure servers that prevent any unauthorized
+	changes to the file.
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	  Date        Time    Version        Size     File name
+	  --------------------------------------------------------
+	  04/11/2001  01:32p  4.2.764.1      214,544  Adsiis.dll
+	  04/11/2001  01:33p  4.2.764.1      330,672  Asp.dll
+	  04/02/2001  04:55p  4.0.2.4701     593,976  Fp4autl.dll
+	  04/11/2001  01:32p  4.2.764.1       81,888  Ftpsvc2.dll
+	  04/11/2001  01:32p  4.2.764.1       55,392  Httpodbc.dll
+	  04/11/2001  01:32p  4.2.764.1       98,912  Iischema.dll
+	  04/11/2001  01:31p  4.2.764.1       63,472  Iislog.dll
+	  04/11/2001  01:31p  4.2.764.1      185,792  Infocomm.dll
+	  04/11/2001  01:31p  4.2.764.1       29,520  Iscomlog.dll
+	  04/11/2001  01:35p  4.2.764.1       54,560  Ism.dll
+	  04/02/2001  04:55p  4.0.1381.7086  375,056  Kernel32.dll
+	  04/11/2001  01:36p  4.2.764.1        9,680  Schmupd.exe
+	  04/11/2001  01:32p  4.2.764.1       38,256  Ssinc.dll
+	  04/11/2001  01:32p  4.2.764.1       25,360  Sspifilt.dll
+	  04/11/2001  01:32p  4.2.764.1      229,024  W3svc.dll
+	  04/11/2001  01:31p  4.2.764.1       88,032  Wam.dll
+	
+	NOTE: You can install this patch on systems that are running Microsoft Windows NT
+	4.0 Service Pack 5 or Windows NT 4.0 Service Pack 6a.
+	
+	
+	
+	STATUS
+	======
+	
+	Internet Information Services 5.0
+	---------------------------------
+	
+	Microsoft has confirmed that this problem may cause a degree of security
+	vulnerability in Internet Information Services 5.0. This problem was first
+	corrected in Windows 2000 Service Pack 3.
+	
+	Internet Information Server 4.0
+	-------------------------------
+	
+	Microsoft has confirmed that this problem may cause a degree of security
+	vulnerability in Internet Information Server 4.0.
+	
+	MORE INFORMATION
+	================
+	
+	For additional information about how to obtain a hotfix for Windows 2000
+	Datacenter Server, click the article number below to view the article in the
+	Microsoft Knowledge Base:
+	
+	  Q265173 The Datacenter Program and Windows 2000 Datacenter Server Product
+	
+	For additional information about how to install multiple hotfixes with only one
+	reboot, click the article number below to view the article in the Microsoft
+	Knowledge Base:
+	
+	  Q296861 Use QChain.exe to Install Multiple Hotfixes with One Reboot
+	
+	For more information on this vulnerability, see the following Microsoft Web
+	site:
+	
+	  http://www.microsoft.com/technet/security/ms01-026
+	
+	Additional query words: security_patch kbWin2000srp1
+	
+	======================================================================
+	Keywords          : kbSecurity kbWinNT400PreSP7Fix kbWin2000PreSP3Fix kbgraphxlinkcritical KbSECVulnerability KbSECHack KbSECDOS kbWin2000sp3fix 
+	Technology        : kbiisSearch kbiis500 kbiis400
+	Version           : :4.0,5.0
+	Hardware          : x86
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

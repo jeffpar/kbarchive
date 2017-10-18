@@ -1,0 +1,97 @@
+---
+layout: page
+title: "Q84419: Multiple PIFs for Same MS-DOS Applications in Windows"
+permalink: kb/084/Q84419/
+---
+
+## Q84419: Multiple PIFs for Same MS-DOS Applications in Windows
+
+	Article: Q84419
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 12-OCT-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	In Microsoft Windows operating system version 3.1, if a program information file
+	(PIF) for an MS-DOS application already exists, a dialog box will appear and
+	provide an option to create a new PIF, replace an existing PIF, or cancel the
+	request.
+	
+	In Windows 3.0, running the Set Up Applications command from the Windows Setup
+	icon creates a new PIF for each MS-DOS application that it recognizes from the
+	[PIF] section of the SETUP.INF file.
+	
+	MORE INFORMATION
+	================
+	
+	To set up MS-DOS applications to run in Windows 3.0 or 3.1, do the following:
+	
+	1. From the Program Manager, choose the Windows Setup icon.
+	
+	2. From the Options menu, choose Set Up Applications.
+	
+	Windows searches the [PIF] section of the SETUP.INF for Windows 3.0 or the
+	APPS.INF file for Windows 3.1 for MS-DOS applications and uses the related
+	information to create the PIF.
+	
+	The PIF filename conventions are as follows:
+	
+	For Windows 3.1, the Set Up Applications program displays the following message
+	when it encounters an existing PIF for an MS-DOS application:
+	
+	  A program information file (PIF) for <name of MS-DOS application>
+	  already exists: <PIF name>. The existing PIF may provide Windows with
+	  special instructions about running <name of DOS application>.
+	
+	  To preserve the existing PIF and set up an additional PIF for <name of DOS
+	  application>, choose Create. This also creates a new Program Manager icon
+	  for <name of DOS application> so you can run <name of DOS
+	  application> using the new PIF.
+	
+	  To replace <PIF name> with a new PIF, choose Replace. This creates a new
+	  Program Manager icon for <name of DOS application> and any existing
+	  Program Manager icons that refer to <PIF name> will use this new PIF.
+	
+	  To preserve the existing PIF without creating a new Program Manager icon,
+	  choose Cancel.
+	
+	If you choose Create, Windows creates a new PIF and adds sequential numbers to
+	the new filename. The list of PIFs will then look as follows:
+	
+	  WORD5.PIF
+	  WORD500.PIF
+	  WORD501.PIF
+	
+	In Windows 3.0, a number is substituted for the last letter of the filename (not
+	the extension). For example, several PIFs for WORD for MS-DOS would be created
+	as follows:
+	
+	  WORD5.PIF
+	  WORD0.PIF
+	  WORD1.PIF
+	  WORD2.PIF
+	
+	In this example, Set Up Applications was invoked three times with the original
+	PIF being WORD5.PIF. Windows also creates a new icon using the last PIF created.
+	The original icons are not replaced. However, if the previous icon is deleted,
+	it is also safe to delete the previous PIF.
+	
+	Additional query words: 3.00 3.00a 3.10 3.11 files option options
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+	Version           : WINDOWS:3.0,3.0a,3.1,3.11
+	
+	=============================================================================
+	

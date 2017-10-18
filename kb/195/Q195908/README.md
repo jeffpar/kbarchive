@@ -1,0 +1,127 @@
+---
+layout: page
+title: "Q195908: XADM: Backout of Upgrade Causes Replication to Fail"
+permalink: kb/195/Q195908/
+---
+
+## Q195908: XADM: Backout of Upgrade Causes Replication to Fail
+
+	Article: Q195908
+	Product(s): Microsoft Exchange
+	Version(s): WinNT:4.0,5.0,5.5
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 23-APR-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If it has been necessary to restore a server computer running Exchange Server
+	4.0 after a failed attempt to upgrade to Exchange Server 5.5, you may experience
+	directory replication failures between sites, including the folowing events -
+	
+	  Event ID 1091 Source:MSExchangeDS Category:Replication
+	
+	  The directory replication agent (DRA) couldn't connect to the MTA with
+	  name
+	  /o=Microsoft/ou=BACKOUT/cn=Configuration/cn=Servers/cn=SERVER1/cn=Micros
+	  oft DSA:SERVER1.
+	  Messages could not be sent. Make sure that the MTA on this Microsoft
+	  Exchange Server computer is running.
+	
+	  Event ID 3139 Source:MSExchangeDS Category:Replication
+	
+	  An internal MTA error occurred. An open function mismatch occurred with
+	  the directory. Entity name: . [XAPI MAIN BASE 1 92] (14)
+	
+	NOTE: This problem will only be seen on Directory Replication bridgehead
+	servers.
+	
+	When you view the properties of this server, it will be reported as an Exchange
+	Server 5.5 computer because of directory replication backfill. Intrasite
+	directory replication will be successful, but intersite will fail.
+	
+	CAUSE
+	=====
+	
+	This problem is caused because of the change in the way the directory
+	replication communicates with the message transfer agent (MTA) in Exchange
+	Server 4.0 and with the Information Store in Exchange Server 5.0 and Exchange
+	Server 5.5. Directory replication backfill causes the Exchange Server computer
+	to function as an Exchange Server 5.5 server computer, whereas the Exchange
+	Server 4.0 executable files do not support this behavior.
+	
+	WORKAROUND
+	==========
+	
+	To work around this problem, providing an Exchange Server 5.5 server computer
+	exists in the site, it is possible to have this server participate in directory
+	replication again by using the Authoritative Restore utility (authrest.exe).
+	
+	This utility should be used on a directory that was backed up prior to the
+	upgrade. It is used after restoring the directory to that server before starting
+	the services. For clarification, see the example scenario in the More
+	Information section below.
+	
+	If an Exchange Server 5.5 server computer does not exist in the site, replication
+	will work. However, you will not be able to create users as the updated schema
+	will expect Exchange Server 5.5 proxy DLLs, so it will be necessary to either
+	upgrade again immediately after fixing the original problem, or install a new
+	Exchange Server 5.5 server computer into the site. Alternatively, editing the
+	raw-mode values for proxy generators should correct this problem.
+	
+	For more information, please see the following Microsoft Knowledge Base article:
+	
+	  Q158336 XADM: Modifying Version Values for Proxy Address Generator.
+	
+	MORE INFORMATION
+	================
+	
+	In this example scenario, one site has three servers; A, B, and C. ServerA and
+	ServerC are running Exchange Server 4.0 Service Pack 4. ServerB is running
+	Exchange Server 5.5. ServerA is connected through an X.400 Connector to another
+	server, ServerD, in another site, and all are replicating. Upgrade ServerA to
+	Exchange Server 5.5 and allow this change to replicate around the site and
+	between sites. Then remove Exchange 5.5 from ServerA and reinstall 4.0 Service
+	Pack 4, choose to create a new Site with the same Organization and Site names,
+	and then restore the Exchange Server 4.0 Service Pack 4 Dir.edb file. Check
+	replication. Intrasite replication will work, but intersite replication with
+	ServerD will fail. You will see event 3139 in the Windows NT Event Viewer and
+	you will see replication messages NDR.
+	
+	To get this working, you will need to uninstall ServerA, and reinstall Exchange
+	Server 4.0 Service Pack 4 again. Choose to create a new Site during setup and
+	use the same Organization and Site names. Then restore the Exchange Server 4.0
+	Service Pack 4 Dir.edb file. Copy Authrest.exe off the Exchange Server 4.0 CD,
+	and run the following command from an MS-DOS command prompt on the Exchange
+	Server computer:
+	
+	  authrest 1000 1000
+	
+	Then check intrasite and intersite replication. They should both work correctly.
+	
+	If the server to be backed out is not a directory replication bridgehead server,
+	and an Exchange Server 5.5 server computer exists in the site, you will
+	experience no directory replication problems, although the server will report as
+	being an Exchange Server 5.5 computer through the Exchange Server Administrator
+	program. It is recommended to upgrade as soon as possible.
+	
+	If the site affected is single server, the server will appear as the correct
+	version locally, but as an Exchange Server 5.5 server computer to the rest of
+	the organization until the directory replication connector is broken and
+	recreated.
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+	Version           : WinNT:4.0,5.0,5.5
+	Issue type        : kbprb
+	
+	=============================================================================
+	

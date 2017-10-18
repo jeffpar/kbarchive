@@ -1,0 +1,155 @@
+---
+layout: page
+title: "Q116239: BUG: Function that Inherits Through Dominance Fails"
+permalink: kb/116/Q116239/
+---
+
+## Q116239: BUG: Function that Inherits Through Dominance Fails
+
+	Article: Q116239
+	Product(s): Microsoft C Compiler
+	Version(s): 1.0,1.5,2.0,4.0,4.1,4.2,5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbCompiler kbCPPonly kbVC kbVC100bug kbVC150bug kbVC200bug kbVC400bug kbVC410bug kbVC42
+	Last Modified: 17-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The C/C++ Compiler (CL.EXE), used with:
+	   - Microsoft C/C++ for MS-DOS 
+	   - Microsoft Visual C++, versions 1.0, 1.5 
+	   - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 4.0, 4.1 
+	   - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+	   - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+	   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+	   - Microsoft Visual C++.NET (2002) 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Code that makes use of the C++ implicit invocation of a user-defined conversion
+	causes the C/C++ compiler to generate the following error message:
+	
+	  error C2594: '=' : ambiguous conversions from 'class ::E ' to 'int '
+	
+	C/C++ 9.00 gives the following level 2 warning and errors from the implicit cast
+	and only the warning from the explicit call:
+	
+	  warning C4250: 'E' : inherits 'B::operator`int'' via dominance error C2679:
+	  binary '=' : no operator defined which takes a right- hand operand of type
+	  'class E' (or there is no acceptable conversion)
+	  error C2594: '=' : ambiguous conversions from 'class E' to 'int'
+	
+	NOTE: In Visual Studio .NET, the error message is:
+	
+	  warning C4250: 'E' : inherits 'B::B::operator`int'' via dominance. error
+	  C2679: binary '=' : no operator found which takes a right-hand operand of
+	  type 'E' (or there is no acceptable conversion)
+	
+	RESOLUTION
+	==========
+	
+	Explicitly invoke the user-defined conversion, as demonstrated in the sample
+	code in the "MORE INFORMATION" section below, rather then depending on the
+	implicit invocation.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article.
+	
+	MORE INFORMATION
+	================
+	
+	Suppose a virtual-base class A is defined and classes B and C inherit from class
+	A. Furthermore, a class E inherits from both B and C. The two classes, A and B,
+	each provide a virtual user-defined conversion function to "int". The
+	relationship may be represented by the following directed acyclic graph:
+	
+	                        A int () }
+	                         ^      ^
+	                        /        \ 
+	                       /          \ 
+	                 B { int () }    C {}
+	                      ^           ^
+	                        \        / 
+	                         \      / 
+	                          E { }
+	
+	The dominance rule requires that when you invoke the virtual user-defined
+	conversion function to int from an instance of an object of type E, the version
+	provided by B should be used. This conversion function may be invoked implicitly
+	by assigning an instance of an object of type E to an int. It may also be
+	invoked explicitly through the use of the "operator int" function.
+	
+	As demonstrated by the following sample code, the compiler accurately identifies
+	and invokes the correct user-defined conversion function when using the explicit
+	call syntax. However, when attempting to make use of the implicit conversion,
+	the compiler produces an error, citing an ambiguity in its search for the
+	correct user-defined conversion function.
+	
+	Sample Code
+	-----------
+	
+	  /* Compile options needed: /W3
+	  */ 
+	  #include <iostream.h>
+	
+	  class A
+	  {
+	  public:
+	      virtual operator int () { return 2; }
+	  };
+	
+	  class B : virtual public A
+	  {
+	  public:
+	      virtual operator int () { return 3; }
+	  };
+	
+	  class C : virtual public A {};
+	
+	  class E : public B, public C {};
+	
+	  void main(void)
+	  {
+	     int i;
+	     int error=0;
+	
+	     E eObject;
+	
+	     // Both of the invocations below should call B's
+	     // operator int ().
+	
+	     if ((i = eObject) != 3)                // Fails to compile
+	        error = 1;
+	
+	     if ((i = eObject.operator int()) != 3) // Compiles OK
+	        error = 1;
+	
+	     if (!error)
+	        cout << "PASSED" << endl;
+	     else
+	        cout << "FAILED" << endl;
+	  }
+	
+	REFERENCES
+	==========
+	
+	The Annotated C++ Reference Manual (ARM), Ellis and Stroustrup, section 10.1.1,
+	"Ambiguities," section 10.2, "Virtual Functions," and section 12.3,
+	"Conversions."
+	
+	Additional query words: kbVC400bug 8.00 8.00c 9.00
+	
+	======================================================================
+	Keywords          : kbCompiler kbCPPonly kbVC kbVC100bug kbVC150bug kbVC200bug kbVC400bug kbVC410bug kbVC420bug kbVC500bug kbVC600bug 
+	Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+	Version           : :1.0,1.5,2.0,4.0,4.1,4.2,5.0,6.0
+	Issue type        : kbbug
+	
+	=============================================================================
+	

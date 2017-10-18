@@ -1,0 +1,111 @@
+---
+layout: page
+title: "Q196796: FIX: ClassWizard Unable to Create Files for New Class"
+permalink: kb/196/Q196796/
+---
+
+## Q196796: FIX: ClassWizard Unable to Create Files for New Class
+
+	Article: Q196796
+	Product(s): Microsoft C Compiler
+	Version(s): 6.0
+	Operating System(s): 
+	Keyword(s): kbwizard kbVC600bug kbClassWizard kbGrpDSTools kbNoUpdate
+	Last Modified: 05-MAR-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+	- Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+	- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you click OK on the dialog box to create a new class in ClassWizard, the
+	following error message appears:
+	
+	  Unable to open the files <class>.h, <class>.cpp
+	
+	You are running Cheyenne's InocuLAN for Windows NT on Microsoft Windows NT 4.0.
+	
+	CAUSE
+	=====
+	
+	An interaction with the InocuLAN virus-scanning software causes ClassWizard to
+	report incorrectly that file creation failed.
+	
+	RESOLUTION
+	==========
+	
+	Two workarounds are suggested here:
+	
+	- Start the InocuLAN Realtime Monitor if it is not already started. On the
+	  Explorer taskbar, right-click the InocuLAN Realtime Monitor icon. Click
+	  Monitor Incoming Files.
+	
+	
+	- Close the project workspace and delete the project's .clw file. Reopen the
+	  project, load ClassWizard, and rebuild the .clw database at the prompt.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products that are
+	listed at the beginning of this article.
+	
+	This problem was corrected in Microsoft Visual C++ .NET.
+	
+	MORE INFORMATION
+	================
+	
+	Virus-scanning software interactions may cause other problems with Visual C++.
+	For additional information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q185288 PRB: Cheyenne InocuLAN May Cause ATL Wizard to Crash DevStudio
+	
+	For further information or support on InocuLAN, contact Cheyenne. You can reach
+	Cheyenne at (800) 243-9462 or at the following web site:
+	
+	  http://www.cheyenne.com/Product-Info/windowsnt/inoculan-nt-menu.html
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	In these steps, it is assumed that you are running Microsoft Windows NT 4.0 with
+	Cheyenne InocuLAN for Windows NT. The InocuLAN Realtime Monitor is set to
+	monitor both incoming and outgoing files.
+	
+	1. Start Visual C++ 6.0.
+	
+	2. From the File menu, click New. On the Project tab, select MFC AppWizard
+	  (.exe). Name the project (TestWiz, for example). Click OK. Click Finish.
+	  Click OK at the confirmation dialog box.
+	
+	3. From the Insert menu, click Resource. Select Dialog, then click New.
+	
+	4. Double-click the new dialog box displayed in the resource editor.
+	
+	5. ClassWizard appears with a prompt to create a new class for the dialog box ID
+	  of the new dialog box; click OK.
+	
+	6. In the Name edit box, type in x; click OK.
+	
+	A dialog box appears with the error message:
+	
+	  Unable to open the files x.h, x.cpp
+	
+	Additional query words: kbDSupport
+	
+	======================================================================
+	Keywords          : kbwizard kbVC600bug kbClassWizard kbGrpDSTools kbNoUpdate 
+	Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch
+	Version           : :6.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

@@ -1,0 +1,177 @@
+---
+layout: page
+title: "Q198974: HOWTO: Use the Common Dialog Control with Multiple Long File Nam"
+permalink: kb/198/Q198974/
+---
+
+## Q198974: HOWTO: Use the Common Dialog Control with Multiple Long File Nam
+
+	Article: Q198974
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): WINDOWS:5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbCmnDlg kbCmnDlgFileO kbCtrl kbVBp kbVBp500 kbVBp600 kbGrpDSVB kbDSupport
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The following article provides an example of retrieving more than one file using
+	the Common Dialog control. There are several Flag properties that can be set for
+	the ShowOpen method of the Common Dialog control to enable the selection of
+	multiple files and long file names. For example, cdlOFNAllowMultiselect +
+	cdlOFNExplorer provides for the selection of multiple files and an Explorer-like
+	dialog window. Selecting these two flags also enables long file names (LFN) and
+	causes the Common Dialog control to use different delimiters in the string that
+	it fills with file and directory information. The programming approach
+	demonstrated in this article is required when both long file names and multiple
+	files are enabled as a result of flag selection.
+	
+	Microsoft Visual Basic Books Online indicates that when these two flags are used,
+	it is necessary to code differently when using Microsoft Windows 95 and
+	Microsoft Windows NT. This is incorrect. The same code works in both
+	environments.
+	
+	MORE INFORMATION
+	================
+	
+	When long file names are not enabled, the Common Dialog control uses a space to
+	separate the file names when multiple files have been selected. This delimiter
+	cannot be used with long file names, which may contain spaces. When both long
+	file names and multiple file selections are enabled, the Common Dialog control
+	uses a null character to delimit the file names.
+	
+	Additionally, the Common Dialog control delimits the string differently when only
+	one file is selected. For example, the string is constructed in the following
+	way if only one file is selected:
+	
+	  c:\my files\my file.txt
+	
+	When more than one file is selected, the string looks like this:
+	
+	  c:\my files<null>my file.txt<null>my file.rtf
+	
+	The example below demonstrates how to extract the information from this string
+	when both Long File Names and Multiple File Selection are enabled through flag
+	selections.
+	
+	Step-by-Step Example
+	--------------------
+	
+	1. Start a new Standard EXE project in Visual Basic. Form1 is created by
+	  default.
+	
+	2. From the Project menu, select Components, check Microsoft Common Dialog
+	  Control, and click OK.
+	
+	3. Add a Common Dialog control, two TextBoxes, and a CommandButton to Form1.
+	
+	4. Make Text2 fairly tall, set the MultiLine property to True, and set the
+	  Scrollbars property to "2 - vertical."
+	
+	5. Put the following code in the form's module:
+	
+	       '*** Start Code ****
+	      Option Explicit
+	
+	     Private Sub Command1_Click()
+	     Dim current As Integer
+	     Dim I As Integer
+	     Dim intIndex As Integer
+	     Dim iStart As Integer
+	     Dim FileNames$()
+	     Dim sFname As String
+	     Dim iEndPath As Integer
+	
+	     Text2.Text = ""
+	     With CommonDialog1
+	        .MaxFileSize = 2048   ' Set as appropriate
+	        .filename = ""
+	        .Filter = "All Files|*.*"
+	        .Flags = cdlOFNAllowMultiselect + cdlOFNExplorer
+	        .ShowOpen
+	        sFname = .filename & vbNullChar
+	     End With
+	
+	     iEndPath = 1
+	     ' determine if multiple files were selected
+	     ' null delimiter is not inserted if only 1 file is selected
+	     If countDelimiters(sFname, vbNullChar) = 1 Then
+	        Do Until (iEndPath = 0)
+	           iStart = iEndPath + 1
+	           iEndPath = InStr(iEndPath + 1, sFname, "\")
+	        Loop
+	        ReDim Preserve FileNames(0)
+	        ' determine if root directory was selected - preserve the "\"
+	        If countDelimiters(sFname, "\") = 1 Then
+	           FileNames(0) = Mid(sFname, 1, iStart - 1)
+	        Else
+	           FileNames(0) = Mid(sFname, 1, iStart - 2)
+	        End If
+	     Else
+	        iStart = InStr(1, sFname, vbNullChar) + 1
+	        ReDim Preserve FileNames(0)
+	        FileNames(0) = Left(sFname, iStart - 2)
+	     End If
+	
+	     intIndex = 1
+	     For I = iStart To Len(sFname)
+	        If Mid(sFname, I, 1) = vbNullChar Then
+	          ReDim Preserve FileNames(intIndex)
+	          FileNames(intIndex) = Mid(sFname, iStart, I - iStart)
+	          iStart = I + 1
+	          intIndex = intIndex + 1
+	        End If
+	     Next I
+	
+	     ' display information in proper text box
+	     For I = 0 To UBound(FileNames)
+	        If I Then
+	           Text2.Text = Text2.Text & FileNames(I) & vbCrLf
+	        Else
+	           Text1.Text = FileNames(I)
+	        End If
+	     Next I
+	
+	     End Sub
+	
+	     Function countDelimiters(ByVal sFiles As String, _
+	        ByVal vSearchChar As Variant) As Integer
+	
+	      Dim iCtr As Integer
+	      Dim iResult As Integer
+	
+	      For iCtr = 1 To Len(sFiles)
+	          If Mid(sFiles, iCtr, 1) = vSearchChar Then iResult = iResult + 1
+	      Next iCtr
+	
+	      countDelimiters = iResult
+	
+	     End Function
+	     '*** End Code ***
+	
+	6. Run the sample. The folder is listed in Text1 and the files are listed in
+	  Text2.
+	
+	NOTE: This coding example contains no error handling. Microsoft recommends that
+	you provide a means of dealing with potential errors before using this example
+	in a production system.
+	
+	Additional query words: cdlOFNLongNames
+	
+	======================================================================
+	Keywords          : kbCmnDlg kbCmnDlgFileO kbCtrl kbVBp kbVBp500 kbVBp600 kbGrpDSVB kbDSupport 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+	Version           : WINDOWS:5.0,6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

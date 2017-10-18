@@ -1,0 +1,120 @@
+---
+layout: page
+title: "Q179012: FIX: ClassView Lacks &quot;Go to Declaration&quot; for Static Data Members"
+permalink: kb/179/Q179012/
+---
+
+## Q179012: FIX: ClassView Lacks &quot;Go to Declaration&quot; for Static Data Members
+
+	Article: Q179012
+	Product(s): Microsoft C Compiler
+	Version(s): WINNT:5.0
+	Operating System(s): 
+	Keyword(s): kbcode kbVC500bug kbVC600fix kbGrpDSTools
+	Last Modified: 17-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+	- Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	ClassView's context menu offers both "Go to Declaration" and "Go to Definition"
+	options for class member functions. However, class data members with the
+	"static" attribute have only the "Go to Definition" option, and it jumps
+	incorrectly to the variable's declaration inside the class definition.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article. This problem was corrected in Microsoft Visual C++,
+	version 6.0.
+	
+	MORE INFORMATION
+	================
+	
+	Consider the following class, presented for illustration only:
+	
+	     // Class Definition and member declarations.
+	     class MyClass
+	     {
+	     public:
+	        // Data members
+	        static int  i;
+	        char        c;
+	
+	        // Function members
+	        MyClass();
+	     };
+	
+	     // Class member definitions.
+	     int MyClass::i = 0;
+	     MyClass::MyClass()
+	     {
+	        c = 0;
+	     }
+	
+	Each instance of "MyClass" contains the normal data member "c". Such members are
+	normally initialized in the class's constructor. In Visual C++'s ClassView pane,
+	the menu resulting from right-clicking on MyClass member "c" correctly indicates
+	that it has no implementation (or definition). However, a static data member,
+	such as "i" in the example, requires an explicit definition in addition to its
+	declaration inside the class definition. ClassView's option does not jump
+	directly to such a definition.
+	
+	Due to a bug in Visual C++ 6.0, clicking "Go To Definition" for a template class
+	static member variable displays the following error message:
+	
+	  Cannot find the definition for this variable.
+	
+	For additional information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q154112 ClassView Cannot Find Template Member Function Definition
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Create a class with a static data member as in the example above.
+	
+	2. Save the file.
+	
+	3. Expand the class in VC++'s ClassView pane.
+	
+	4. Right-click on the static member; there is no "Go to Declaration" option.
+	
+	Workaround
+	----------
+	
+	The following is a suggested workaround:
+	
+	1. In the ClassView pane, right-click on the member variable.
+	
+	2. Select "References."
+	
+	3. Rebuild with browse information if prompted to do so.
+	
+	4. From the "Definitions" list, jump to either the declaration (.h file) or
+	  definition (.cpp file).
+	
+	REFERENCES
+	==========
+	
+	"Language Quick Reference [ASCII 150] static," VC++ 5.0 Online Books.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbcode kbVC500bug kbVC600fix kbGrpDSTools 
+	Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC32bitSearch kbVC500Search
+	Version           : WINNT:5.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

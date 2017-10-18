@@ -1,0 +1,95 @@
+---
+layout: page
+title: "Q173362: FIX: RichTextBox SelPrint Method Does Not Print Entire Selection"
+permalink: kb/173/Q173362/
+---
+
+## Q173362: FIX: RichTextBox SelPrint Method Does Not Print Entire Selection
+
+	Article: Q173362
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbGrpDSVB
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+	- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When using the SelPrint method to print a selection or the contents of a
+	RichTextbox control, the entire text may not print.
+	
+	RESOLUTION
+	==========
+	
+	To work around this problem, you can use API function calls to print the
+	contents of the RichTextBox control.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article. This bug has been fixed in Visual Basic 6.0.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Open a new "Standard EXE" project.
+	
+	2. Click Components on the Project menu. Check "Microsoft Rich TextBox Control
+	  5.0," and click OK.
+	
+	3. Add a RichTextBox control and a CommandButton to Form1.
+	
+	4. Add the following code to Form1:
+	
+	        Private Sub Command1_Click()
+	           Printer.Print ""
+	           RichTextBox1.SelPrint Printer.hDC False
+	           Printer.EndDoc
+	        End Sub
+	
+	        Private Sub Form_Load()
+	           'Add 100 lines of text to the RichTextBox control
+	           With RichTextBox1
+	              .Text = ""
+	              For i = 1 to 100
+	                 .Text = .Text & i & Chr(10)
+	              Next
+	           End With
+	        End Sub
+	
+	5. Press the F5 key to run the application.
+	
+	6. Click Command1. Notice that all 100 lines are not printed.
+	
+	REFERENCES
+	==========
+	
+	For more information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q146022 : HOWTO: Set Up the RichTextBox Control for WYSIWYG Printing
+	
+	Additional query words: text box rtf printing kbVBp500bug kbVBp600fix kbVBp kbdsd 
+	kbDSupport kbControl kbPrinting
+	
+	======================================================================
+	Keywords          : kbGrpDSVB 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500 kbVB500
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

@@ -1,0 +1,147 @@
+---
+layout: page
+title: "Q142057: How to Install PPD Files From Postscript Printer Manufacturers"
+permalink: kb/142/Q142057/
+---
+
+## Q142057: How to Install PPD Files From Postscript Printer Manufacturers
+
+	Article: Q142057
+	Product(s): Microsoft Windows NT
+	Version(s): 3.5,3.51
+	Operating System(s): 
+	Keyword(s): kbgraphxlinkcritical
+	Last Modified: 21-DEC-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation versions 3.5, 3.51 
+	- Microsoft Windows NT Server versions 3.5, 3.51 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Windows NT supports PostScript printers that uses industry-standard PostScript
+	Printer Description (PPD) files. Windows NT installs PPD files using
+	PRINTER.INF. This article provides detailed instructions on how to modify
+	PRINTER.INF so that you can install PPD files obtained from print device
+	manufacturers.
+	
+	MORE INFORMATION
+	================
+	
+	To install PPD files from print device manufacturers:
+	
+	1. Obtain the OEMSETUP.INF from the DDK in the
+	  \WINNT.NT\WINNT351.DDK\DDK\SRC\SETUP\INF\PRINTER directory.
+	  Rename the file to PRINTER.INF.
+	
+	
+	  -or-
+	
+	  Obtain PPDInst.exe from the Microsoft Download Center. For more information
+	  about how to obtain this file, see the "To Obtain the PPDInst.exe File"
+	  section at the end of this article.
+	
+	2. Create a file called DISK1. The content does not matter. The Setup procedure
+	  only checks to make sure it exists. If you perform the installation on a
+	  non-Intel (x86) computer, name the file CDROM.W.
+	
+	3. Copy DISK1 (or CDROM.W), the PRINTER.INF file and your PPD file to a floppy
+	  disk or a sub-directory on your hard disk.
+	
+	4. Copy PSCRIPT.DLL, PSCRPTUI.DLL and PSCRIPT.HLP from an existing Windows NT
+	  installation to the floppy disk or the sub-directory on the hard disk. If you
+	  install support for Intel-based (x86) computers, look for these files in the
+	  following directory:
+	
+	  %SYSTEMROOT%\SYSTEM32\SPOOL\DRIVERS\W32X86\1
+	
+	5. The PRINTER.INF file installs support for one particular printer: the HP
+	  LaserJet IIISi. To install support for your printer, do the following:
+	
+	  a. Change each reference of RASDD to PSCRIPT and RASDDUI to PSCRPTUI.
+	
+	  b. Modify the following section using a text editor, such as Notepad:
+	
+	     [Files-PrinterData]
+	     hppcl5ms = 1,hppcl5ms.dll , SIZE=999
+	
+	     Change the file name (for example: HPPCL5MS.DLL) to match the name of the
+	     PPD file of your printer. HPPCL5MS is an identifier and it does not
+	     require any change for your new PPD file name.
+	
+	  c. If you change the identifier, you must also change it in the [Options]
+	     section below:
+	
+	     [Options]
+	     "HP LaserJet IIISi" = rasddui, hppcl5ms, rasdd
+	
+	     Change HP LaserJet IIISi to match the name of your printer. To determine
+	     the name, open the PPD file for your printer using a text editor and
+	     search for the NickName. If you have changed the identifier above, then
+	     you must change it in the following section:
+	
+	     [OptionsTextENG]
+	     "HP LaserJet IIISi" = "OEM HP LaserJet IIISi"
+	
+	6. In the [ProductType] section, make sure that STF_PLATFORM is correctly set
+	  for your computer, as follows:
+	
+	  STF_PLATFORM = x
+	
+	  where x is Mips, I386, Alpha or PPC (PowerPC).
+	
+	7. If you are not installing the PPD file on an Intel-based computer, change the
+	  following line in the [Source Media Descriptions] section from DISK1 to
+	  CDROM.W:
+	
+	  1 = "OEM Disk (PRINTER)" , TAGFILE = disk1
+	
+	8. Start Windows NT Print Manager. From the Printer menu, select Create Printer.
+	
+	9. Enter the printer name and select a port.
+	
+	10. For Driver, select Other. Enter the drive and path of the printer driver
+	  disk (the same directory on step 3 above).
+	
+	11. In the Select Driver dialog box, select the driver and click OK.
+	
+	12. In the Windows NT Setup dialog box, enter the drive and path of the printer
+	  driver disk (the same directory on step 3 above) and click Continue.
+	
+	  NOTE: If you supply the Windows NT CD-ROM path instead of supplying the
+	  driver disk path, the Setup program will successfully copy the PostScript
+	  files, and then prompt for the directory where the PPD file is located. At
+	  this point, the path cannot be changed back to the disk directory and will
+	  only accept the CD-ROM path.
+	
+	To Obtain the PPDInst.exe File
+	------------------------------
+	
+	The following file is available for download from the Microsoft Download Center:
+	
+	  DownloadDownload Ppdinst.exe now
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. Once posted, the file is housed on secure
+	servers that prevent any unauthorized changes to the file.
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbgraphxlinkcritical 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+	Version           : :3.5,3.51
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

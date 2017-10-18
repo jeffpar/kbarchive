@@ -1,0 +1,198 @@
+---
+layout: page
+title: "Q138959: Third-Party, Virus-Protection Products for Windows NT"
+permalink: kb/138/Q138959/
+---
+
+## Q138959: Third-Party, Virus-Protection Products for Windows NT
+
+	Article: Q138959
+	Product(s): Microsoft Windows NT
+	Version(s): 3.10 3.50 3.51
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 3.1 
+	- Microsoft Windows NT Workstation version 3.1 
+	- Microsoft Windows NT Advanced Server, version 3.1 
+	- Microsoft Windows NT Workstation versions 3.5, 3.51 
+	- Microsoft Windows NT Server versions 3.5, 3.51 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Below are several Windows NT anti-virus products as listed in the "Windows
+	32-bit Application Catalog".
+	
+	MORE INFORMATION
+	================
+	
+	Carmel Anti-Virus for Windows NT
+	--------------------------------
+	
+	Carmel Software Engineering
+	P.O. Box 25055
+	Haifa 31250, Israel
+	
+	Fax: (972-4) 416979
+	CIS:
+	
+	  GO CARMEL
+	  71154,3201
+	
+	AOL: carmel@actcom.co.il.
+	Internet: Available for download in an evaluation form from several places on the
+	Web. Try: http://www.bhs.com
+	
+	F-PROT Professional (in beta)
+	-----------------------------
+	
+	Data Fellows Inc.
+	4000 Moonpark Avenue
+	Suite 207
+	San Jose, CA 95117
+	tel (408) 244 9090
+	fax (408) 244 9494
+	http://www.datafellows.com
+	
+	FILE ALERT for Windows NT
+	-------------------------
+	
+	Executive Software, Inc.
+	701 North Brand Boulevard
+	Glendale, CA 91203-1242
+	United States
+	
+	Retail Price: $99.00
+	Contact: Jeni Farrill
+	Phone: 818-547-2050
+	Fax: 818-545-8808
+	RISC Versions: Yes
+	
+	InocuLAN for Windows NT
+	-----------------------
+	
+	Cheyenne
+	USA Three Expressway Plaza
+	Roslyn Heights, NY 11577
+	Voice: (800) 243-9832
+	Fax: (516) 465-5115
+	Cheyenne BBS: (516)465-3900
+	InnocuLAN BBS: (516)465-3930
+	http://www.cheyenne.com
+	
+	LANlord for Windows NT
+	----------------------
+	
+	Microcom, Inc.
+	1 Executive Boulevard, Suite 4
+	Yonkers, NY 10701
+	United States
+	
+	Retail Price: $2,499.00 per 50 users
+	Contact: Muki Murthy
+	Phone: 914-377-2704
+	Fax: 914-968-7100
+	RISC Versions: Call for availability
+	
+	Network Associates (formerly McAfee) (not yet released)
+	-------------------------------------------------------
+	
+	2710 Walsh Avenue
+	Santa Clara, CA 95051
+	Tel (408) 988-3832
+	Fax (408) 970-9727
+	http://www.nia.com
+	
+	Norman Virus Control for Windows NT
+	-----------------------------------
+	
+	Norman Data Defense Systems Inc.
+	3028 Javier Rd., Ste. 201
+	Fairfax, VA 22031
+	703-573-8802
+	703-573-3919 - fax
+	Tech support: Use main no.
+	Tech support BBS: 703-573-8990
+	http://www.norman.com/news.htm
+	
+	PCIDACS System security
+	-----------------------
+	
+	MERGENT International, Inc.
+	70 Inwood Road
+	Rocky Hill, CT 06067
+	United States
+	
+	Retail Price: $149.00
+	Contact: Ross Curtis
+	Phone: 203-257-4223
+	Fax: 203-252-4245
+	RISC Versions: Yes
+	International Sales:
+	Argentina: 541-951-0827
+	Australia and New Zealand: 61-3694-6711
+	Brazil: 5511-583-0886
+	Columbia: 571-215-1510
+	Costa Rica: 506-223-6441
+	Europe: 203-257-4223
+	Hong Kong SAR, PRC: 852-520-2608
+	
+	VirusScan
+	---------
+	
+	Ontrack Computer Systems
+	6321 Bury Drive Suites 15-21
+	Eden Prairie, MN 55346
+	612-937-1107
+	612-937-5815 - fax
+	jseeger@ontrack.com
+	http://www.ontrack.com
+	
+	Dr. Solomon's Anti-Virus Toolkit for Windows NT
+	-----------------------------------------------
+	
+	S&S Software International Inc
+	17 New England Executive Park
+	Burlington. MA 01803 USA
+	1-800-701-9648
+	617 273 7474 - fax
+	CompuServe: 100443,3703
+	Internet e-mail: 100443.3703@compuserve.com.
+	Free technical support: 800-595-9175
+	Technical support: support@us.drsolomon.com
+	http://www.sands.com/prods/toolkit/avnt.htm
+	
+	Sweep for Windows NT
+	--------------------
+	
+	Sophos Plc
+	ACT Inc.
+	2783 Noblestown Road
+	Pittsburgh, PA 15205
+	412-920-8600
+	412-920-8610 fax
+	sales@infobahn.icubed.com
+	http://www.sophos.com OR
+	http://www.icubed.com/virus.html
+	
+	NOTE: To start an executable (such as an anti-virus) as a service, use the tool
+	from the Resource Kit called SRVANY.EXE
+	
+	The products listed here are manufactured by vendors independent of Microsoft; we
+	make no warranty, implied or otherwise, regarding these product's performance or
+	reliability.
+	
+	Additional query words: prodnt 3.10
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTW310 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS351search kbWinNTS350search kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+	Version           : 3.10 3.50 3.51
+	
+	=============================================================================
+	

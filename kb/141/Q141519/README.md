@@ -1,0 +1,259 @@
+---
+layout: page
+title: "Q141519: Unattended and Computer Profile Setup Fails to Install OEM NIC"
+permalink: kb/141/Q141519/
+---
+
+## Q141519: Unattended and Computer Profile Setup Fails to Install OEM NIC
+
+	Article: Q141519
+	Product(s): Microsoft Windows NT
+	Version(s): 3.5 3.51
+	Operating System(s): 
+	Keyword(s): kbsetup
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation versions 3.5, 3.51 
+	- Microsoft Windows NT Server versions 3.5, 3.51 
+	- MSPRESS Microsoft Windows NT Resource Kit, versions 3.5, 3.51 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	Unattended and Computer Profile Setup (CPS) fails to install original equipment
+	manufacturer (OEM) network interface cards (NICs).
+	
+	If you follow the instructions in Cpsread.txt of the Windows NT 3.5 Resource Kit
+	and Cps.hlp of the Windows NT 3.51 Resource Kit explaining how to profile
+	systems with OEM netcards, the following noncritical error message appears:
+	
+	  An error has occurred.
+	  External library procedure Copysinglefile reported the following error:
+	  Unable to do the specified copy operation.
+	
+	If you click the Ignore button, you will receive the following setup message:
+	
+	  A network card of this type is already installed in the system. Do you want
+	  to continue?
+	
+	If you click the OK button you will receive the following network warning
+	message:
+	
+	  The dependency service or group failed to start.
+	  This error prevented the network from starting.
+	
+	At this point your only option is to click the OK button, after which you will
+	receive the following network malfunction message:
+	
+	  The network software failed to start successfully. Choose YES to return to
+	  the Network dialog to reconfigure the software.
+	
+	  If you choose NO to continue with the installation you will unable to join a
+	  domain at the present time.
+	
+	Choosing Yes will cycle you back to the dependency error.
+	
+	Choosing No will continue with the rest of Setup, and although network software
+	will be installed, the network services will not start because of a failure in
+	the binding process, due to the previous errors.
+	
+	CAUSE
+	=====
+	
+	There are three issues here:
+	
+	1. Setup cannot locate the Oemsetup.inf file for the adapter. Ntlanman.inf
+	  incorrectly references the global variable OEMNetDrive.
+	
+	2. Setup is unable to copy over read-only files.
+	
+	3. Many Oemsetup.inf files are not designed to work with Unattended or Computer
+	  Profile Setup. Consequently, you may have no other alternative, but to
+	  respond to configuration dialog boxes, which defeats the purpose of CPS and
+	  Unattended Setup.
+	
+	WORKAROUND
+	==========
+	
+	Computer Profile Setup
+	----------------------
+	
+	1. Before you run Uplodprf.exe, modify Cps.ini as described in the following
+	  note, which is included in both the Cpsread.txt in the Windows NT 3.5
+	  Resource Kit and the Cps.hlp in the Windows NT 3.51 Resource Kit:
+	
+	  If you are profiling a systems with a Netcard installed that does not appear
+	  under the HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft key in the registry, you will
+	  need to modify the Cps.ini file before running UpLodPrf. Find the [Registry]
+	  section, then the "FindInstalledServicesAt" key in that section. Add the name
+	  of the registry key that contains the OEM network adapter after the
+	  "SOFTWARE\Microsoft" entry and separate the entries with a comma.
+	
+	  For example:
+	
+	  [Registry] FindInstalledServicesAt = SOFTWARE\Microsoft,SOFTWARE\<OEM>
+	
+	  This allows the OEM specific entries to be added to the Profile Setup
+	  Defaults.inf file as well as the unattended answer file referenced by the
+	  "/p" switch (if used).
+	
+	  NOTE: The reference to <OEM> depends on your network card. This value
+	  can be found by running Regedt32.exe and verifying the network card
+	  manufacturer name in
+	
+	  HKEY_LOCAL_MACHINE\SOFTWARE
+	
+	2. Run Uplodprf.exe
+	
+	3. After running Uplodprf.exe, on the Distribution System back up
+	  %SYSTEMROOT%\SYSTEM32\Ntlanman.inf to Ntlanman.bak.
+	
+	WARNING: Modification of Setup files can cause serious, system-wide problems
+	before and after Setup and may require you to reinstall Windows NT to correct
+	them. Microsoft cannot guarantee that any problems resulting from the
+	modification of Setup files can be solved. Make Setup file modifications at your
+	own risk.
+	
+	4. On the Distribution System modify %SYSTEMROOT%\SYSTEM32\Ntlanman.inf (partial
+	  resolution to issue 1):
+	
+	  ; Original Line below with exclamation point
+	  ;            set AdapterSrcDir = $(OEMNetDrive)
+	  ; Corrected syntax with exclamation point
+	
+	               set AdapterSrcDir = $(!OEMNetDrive)
+	
+	5. On the Distribution system, modify %SYSTEMROOT%\SYSTEM32\Defaults.inf (final
+	  resolution to issue 1):
+	
+	  [NetworkAdapterData]
+	  !AutoNetOption = "<OEMNIC>"
+	  !OEMNetOption = YES
+	  !OEMNetDrive = C:\OEM\
+	  !OEMNetInfFile = C:\OEM\oemsetup.inf
+	
+	  NOTE: The reference to drive C depends on which partition you are installing
+	  Windows NT to on the Target System. The reference to <OEMNIC> depends
+	  on your network card. Although you should not have to modify this value, it
+	  can be found in the [Options] section of the Oemsetup.inf file.
+	
+	6. On Distribution System, disable the Read-Only attribute on
+	  %SYSTEMROOT%\SYSTEM32\Oemnad0.inf (resolution to issue 2).
+	
+	7. On the Target system, create a directory called OEM on the partition where
+	  Windows NT will be installed.
+	
+	8. Copy the OEM files to the OEM directory created in the previous step. These
+	  OEM files may be located on the Windows NT compact disc in the
+	  \DRVLIB\NETCARD directory or may be available from the network card
+	  manufacturer.
+	
+	9. Modify \OEM\Oemsetup.inf to avoid dialog boxes (resolution to issue 3). For
+	  more information, please see the following articles in the Microsoft
+	  Knowledge Base:
+	
+	  ARTICLE-ID: Q143134
+	  TITLE : OEMSETUP.INF Modifications for Automated Windows NT Setup
+	
+	  ARTICLE-ID: Q139897
+	  TITLE : Automating Intel EtherExpress Pro Setup
+	
+	You can also refer to the Programmer's Guide included in the Windows NT DDK, or
+	contact Microsoft Consulting Services or a Microsoft Solution Provider.
+	Microsoft Product Support Services, Corporate Network Systems, does not support
+	the modification of Oemsetup.inf files. It is recommended that you perform a
+	test run of Winntp.exe to verify whether your Oemsetup.inf file supports
+	Unattended or Computer Profile Setup.
+	
+	10. Run Winntp.exe
+	
+	Unattended Setup
+	----------------
+	
+	1. Copy the \i386 directory from the Windows NT compact disc to your hard drive.
+	
+	2. Expand i386\Ntlanman.in_ to Ntlanman.inf. The Expand.exe file is located in
+	  the %SystemRoot%\SYSTEM32 directory.
+	
+	3. Rename i386\Ntlanman.in_ to Ntlanman.bk_
+	
+	WARNING: Modification of Setup files can cause serious, system-wide problems
+	before and after Setup and may require you to reinstall Windows NT to correct
+	them. Microsoft cannot guarantee that any problems resulting from the
+	modification of Setup files can be solved. Make Setup file modifications at your
+	own risk.
+	
+	4. Modify i386\Ntlanman.inf as follows:
+	
+	    ; Original Line below with exclamation point
+	    ;            set AdapterSrcDir = $(OEMNetDrive)
+	    ; Corrected syntax with exclamation point
+	                 set AdapterSrcDir = $(!OEMNetDrive)
+	 
+	
+	  NOTE: It is not necessary to rename Ntlanman.inf to Ntlanman.in_. Windows NT
+	  Setup does not require the file to be compressed or named with an .in_
+	  extension.
+	
+	5. Modify the [NetworkAdapterData] section in your "Answer File" as follows:
+	
+	  [NetworkAdapterData]
+	  !AutoNetOption = "<OEMNIC>"
+	  !OEMNetOption = YES
+	  !OEMNetDrive = C:\OEM\
+	  !OEMNetInfFile = C:\OEM\oemsetup.inf
+	
+	  NOTE: The reference to drive C depends on the partition to which you are
+	  installing Windows NT on the Target System. The reference to <OEMNIC>
+	  depends on your network card. The correct value can be found in the [Options]
+	  section of the Oemsetup.inf file.
+	
+	6. Create a directory called OEM on the partition to which Windows NT will be
+	  installed.
+	
+	7. Copy the OEM files to the OEM directory created in the previous step. These
+	  OEM files may be located on the Windows NT compact disc in the
+	  \DRVLIB\NETCARD directory or may be available from the network card
+	  manufacturer.
+	
+	8. Modify \OEM\Oemsetup.inf to avoid dialog boxes.
+	
+	  For more information, please see the following articles in the Microsoft
+	  Knowledge Base:
+	
+	  ARTICLE-ID: Q143134
+	  TITLE : OEMSETUP.INF Modifications for Automated Windows NT Setup
+	
+	  ARTICLE-ID: Q139897
+	  TITLE : Automating Intel EtherExpress Pro Setup
+	
+	  You can also refer to the Programmer's Guide included in the Windows NT DDK or
+	  contact Microsoft Consulting Services or a Microsoft Solution Provider.
+	  Microsoft Product Support Services, Corporate Network Systems, does not
+	  support the modification of Oemsetup.inf files. It is recommended to perform
+	  a test run of Winntp.exe to verify whether your Oemsetup.inf file supports
+	  Unattended or Computer Profile Setup.
+	
+	9. Run Unattended Setup
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Windows NT version 3.51. We are
+	researching this problem and will post new information here in the Microsoft
+	Knowledge Base as it becomes available.
+	
+	Additional query words: automate
+	
+	======================================================================
+	Keywords          : kbsetup 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbMSPressSearch kbWinNTS351search kbWinNTS350search kbZNotKeyword6 kbZNotKeyword2 kbZNotKeyword5
+	Version           : 3.5 3.51
+	
+	=============================================================================
+	

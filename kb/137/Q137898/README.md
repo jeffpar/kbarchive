@@ -1,0 +1,84 @@
+---
+layout: page
+title: "Q137898: PRB: Visual Basic 4.0 Can't Interpret SCODE Parameter"
+permalink: kb/137/Q137898/
+---
+
+## Q137898: PRB: Visual Basic 4.0 Can't Interpret SCODE Parameter
+
+	Article: Q137898
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): WINDOWS:4.0
+	Operating System(s): 
+	Keyword(s): kbcode
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Visal Basic 4.0 cannot interpret an SCODE parameter. The following error message
+	is generated:
+	
+	  Function marked as restricted or uses an OLE type not supported in Visual
+	  Basic.
+	
+	WORKAROUND
+	==========
+	
+	Change the SCODE parameter to a LONG parameter. If you created a custom event
+	that passes an SCODE parameter, modify the .Odl file to reflect LONG instead of
+	SCODE.
+	
+	Example
+	-------
+	
+	In the generic .odl file, the Class Wizard created the following custom event and
+	gave Scode an SCODE parameter (that is, Scode SCODE). You need to change the
+	parameter a LONG Scode for it to work in Visual Basic 4.0 as follows:
+	
+	  [id(DISPID_ERROREVENT)] void Error(short Number, BSTR* Description,
+	     LONG Scode, BSTR Source, BSTR HelpFile, long HelpContext, boolean*
+	     CancelDisplay);
+	
+	  // Generic .ocx Code
+	
+	  void CGenericCtrl::OnLButtonDown(UINT nFlags, CPoint point)
+	   {
+	      // TODO: Add your message handler code here and/or call default
+	      FireError(CTL_E_OVERFLOW, "TestError") ;
+	      COleControl::OnLButtonDown(nFlags, point);
+	   }
+	
+	  // Visual Basic 4.0 code Changing Scode parameter to Long instead of SCODE
+	
+	  Private Sub Generic1_Error(Number As Integer, Description As String, _
+	     Scode As Long, Source As String, HelpFile As String, _
+	     HelpContext As Long, CancelDisplay As Boolean)
+	     MsgBox (Description)
+	  End Sub
+	
+	STATUS
+	======
+	
+	This behavior is by design.
+	
+	Additional query words: 4.00 vb4win vb4all
+	
+	======================================================================
+	Keywords          : kbcode 
+	Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+	Version           : WINDOWS:4.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

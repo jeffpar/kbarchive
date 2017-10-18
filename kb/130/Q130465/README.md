@@ -1,0 +1,67 @@
+---
+layout: page
+title: "Q130465: HOWTO: Connect to a Different Database Using ODBC"
+permalink: kb/130/Q130465/
+---
+
+## Q130465: HOWTO: Connect to a Different Database Using ODBC
+
+	Article: Q130465
+	Product(s): Microsoft FoxPro
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbinterop kbvfp300 kbvfp500 kbvfp600
+	Last Modified: 09-AUG-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 6.0 
+	- Microsoft FoxPro for Windows, versions 2.5, 2.5a, 2.5b, 2.6, 2.6a 
+	- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	When a connection is made to a SQL Server data source, the database in use will
+	be:
+	
+	- The one specified in the data source.
+	
+	  -or-
+	
+	- The default database as defined on the server - if there isn't one specified
+	  in the data source,
+	
+	The database in use can be changed by using ODBC and executing a USE command
+	within the SQLEXEC() function. Or if you're using FoxPro version 2.x for
+	Windows, you can use the DBEXEC() function.
+	
+	The initial database in use can be specified in the data source by going into the
+	setup of the data source, clicking the Options button, and typing in the name of
+	the database in the "Database Name" area.
+	
+	MORE INFORMATION
+	================
+	
+	Assuming a connection exists to a SQL Server data source, the database in use
+	can be changed by executing the following function:
+	
+	     success = SQLEXEC(handle,"USE <desired database name>")
+	
+	This cannot be used reliably with Remote Views created from saved Connections
+	because there is no reliable way to determine the connection handle obtained
+	from the DataSource or a saved Connection. To connect to a DataSource and obtain
+	a handle number, use the SQLConnect()function in Visual FoxPro or the
+	DBConnect() function in FoxPro version 2.x for Windows.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbinterop kbvfp300 kbvfp500 kbvfp600 
+	Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro260 kbFoxPro250 kbFoxPro250a kbFoxPro250b kbFoxPro260a kbVFP300bMac kbVFP300 kbVFP500 kbVFP600
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

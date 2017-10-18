@@ -1,0 +1,325 @@
+---
+layout: page
+title: "Q216271: SAMPLE: SamScrpt.exe Demos Active Debug w/C++ ActiveX Script"
+permalink: kb/216/Q216271/
+---
+
+## Q216271: SAMPLE: SamScrpt.exe Demos Active Debug w/C++ ActiveX Script
+
+	Article: Q216271
+	Product(s): Microsoft C Compiler
+	Version(s): winnt:5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbfile kbSample kbAXScript kbGrpDSO kbDSupport kbActiveXScript
+	Last Modified: 01-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+	- Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+	- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	SamScrpt.exe is a sample that demonstrates how to implement Active Debugging in
+	an ActiveX Script Engine built in straight C++. It is designed to demonstrate
+	some of the more advanced features of Active Debugging, such as expression
+	evaluation and variable windows.
+	
+	MORE INFORMATION
+	================
+	
+	The following file is available for download from the Microsoft Download
+	Center:
+	
+	SamScrpt.exe
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. Once posted, the file is housed on secure
+	servers that prevent any unauthorized changes to the file.
+	
+	This sample demonstrates how to build an ActiveX Script Engine, including support
+	for Active Debugging. ActiveX Scripting allows Hosts such as Internet Explorer
+	to execute scripts without having to be concerned with the actual implementation
+	of the language engine. Active Debugging builds on Active Scripting and enables
+	debugger host applications, like the Microsoft Script Debugger, to provide
+	comprehensive, language-independent testing and error correcting capabilities.
+	Functionality such as breakpoints, expression evaluation, and data monitoring
+	are all possible through the Active Debugging interfaces. Active Debugging also
+	makes it possible to debug multiple scripts in different languages concurrently,
+	making cross-language issues easier to locate and correct.
+	
+	While every attempt has been made to make this sample engine accurate, it is not
+	a commercial quality application. Microsoft does not support the use of this
+	engine in any capacity.
+	
+	+--------------------------------------+
+	| SamScrpt.exe                | 301 KB | 
+	+--------------------------------------+
+	| SampleScript.ncb            | 193 KB | 
+	+--------------------------------------+
+	| DLLFunctions.cpp            | 8 KB   | 
+	+--------------------------------------+
+	| DLLFunctions.h              | 1 KB   | 
+	+--------------------------------------+
+	| Readme.txt                  | 3 KB   | 
+	+--------------------------------------+
+	| SampleScript.def            | 1 KB   | 
+	+--------------------------------------+
+	| SampleScriptDocs.doc        | 128 KB | 
+	+--------------------------------------+
+	| TestPage.htm                | 6 KB   | 
+	+--------------------------------------+
+	| SampleScript.dsw            | 1 KB   | 
+	+--------------------------------------+
+	| SampleScript.plg            | 5 KB   | 
+	+--------------------------------------+
+	| SampleScript.dsp            | 10 KB  | 
+	+--------------------------------------+
+	| SampleScript.opt            | 53 KB  | 
+	+--------------------------------------+
+	| rc1.rc                      | 1 KB   | 
+	+--------------------------------------+
+	| resource.h                  | 3 KB   | 
+	+--------------------------------------+
+	| rc1.aps                     | 22 KB  | 
+	+--------------------------------------+
+	| English.cpp                 | 1 KB   | 
+	+--------------------------------------+
+	| English.plg                 | 2 KB   | 
+	+--------------------------------------+
+	| English.dsp                 | 4 KB   | 
+	+--------------------------------------+
+	| DebugExpression.cpp         | 13 KB  | 
+	+--------------------------------------+
+	| DebugExpression.h           | 2 KB   | 
+	+--------------------------------------+
+	| DebugInstruction.cpp        | 6 KB   | 
+	+--------------------------------------+
+	| DebugInstruction.h          | 2 KB   | 
+	+--------------------------------------+
+	| DebugInterpreter.h          | 4 KB   | 
+	+--------------------------------------+
+	| DebugScript.h               | 3 KB   | 
+	+--------------------------------------+
+	| DebugStackedSymbolTable.cpp | 11 KB  | 
+	+--------------------------------------+
+	| DebugStackedSymbolTable.h   | 2 KB   | 
+	+--------------------------------------+
+	| EDebugStackFrames.h         | 2 KB   | 
+	+--------------------------------------+
+	| EnumSymbols.cpp             | 9 KB   | 
+	+--------------------------------------+
+	| debugDepends.h              | 4 KB   | 
+	+--------------------------------------+
+	| EnumSymbols.h               | 9 KB   | 
+	+--------------------------------------+
+	| EDebugStackFrames.cpp       | 9 KB   | 
+	+--------------------------------------+
+	| DebugParser.h               | 1 KB   | 
+	+--------------------------------------+
+	| DebugParser.cpp             | 3 KB   | 
+	+--------------------------------------+
+	| EDebugCodeContexts.h        | 2 KB   | 
+	+--------------------------------------+
+	| DebugClassFactory.h         | 2 KB   | 
+	+--------------------------------------+
+	| DebugClassFactory.cpp       | 5 KB   | 
+	+--------------------------------------+
+	| SimpleHostBackup.h          | 4 KB   | 
+	+--------------------------------------+
+	| SimpleHostBackup.cpp        | 26 KB  | 
+	+--------------------------------------+
+	| DebugProperty.h             | 2 KB   | 
+	+--------------------------------------+
+	| DebugProperty.cpp           | 10 KB  | 
+	+--------------------------------------+
+	| EDebugCodeContexts.cpp      | 9 KB   | 
+	+--------------------------------------+
+	| DebugScript.cpp             | 28 KB  | 
+	+--------------------------------------+
+	| DebugErrorHandler.h         | 2 KB   | 
+	+--------------------------------------+
+	| DebugErrorHandler.cpp       | 10 KB  | 
+	+--------------------------------------+
+	| CScanner.h                  | 2 KB   | 
+	+--------------------------------------+
+	| CScanner.cpp                | 19 KB  | 
+	+--------------------------------------+
+	| ActiveDebugTrace.h          | 2 KB   | 
+	+--------------------------------------+
+	| DebugInterpreter.cpp        | 38 KB  | 
+	+--------------------------------------+
+	| ExtendedDSFDescriptor.cpp   | 13 KB  | 
+	+--------------------------------------+
+	| ExtendedDSFDescriptor.h     | 2 KB   | 
+	+--------------------------------------+
+	| depends.h                   | 3 KB   | 
+	+--------------------------------------+
+	| CInstruction.h              | 2 KB   | 
+	+--------------------------------------+
+	| CParserSet.h                | 7 KB   | 
+	+--------------------------------------+
+	| CProductions.h              | 2 KB   | 
+	+--------------------------------------+
+	| ScriptVariant.cpp           | 20 KB  | 
+	+--------------------------------------+
+	| ScriptVariant.h             | 3 KB   | 
+	+--------------------------------------+
+	| StackedSymbolTable.cpp      | 6 KB   | 
+	+--------------------------------------+
+	| StackedSymbolTable.h        | 1 KB   | 
+	+--------------------------------------+
+	| SymbolTable.h               | 2 KB   | 
+	+--------------------------------------+
+	| TStack.h                    | 2 KB   | 
+	+--------------------------------------+
+	| CInterpreter.h              | 2 KB   | 
+	+--------------------------------------+
+	| ErrorHandler.h              | 3 KB   | 
+	+--------------------------------------+
+	| ErrorHandler.cpp            | 6 KB   | 
+	+--------------------------------------+
+	| InterpreterTrace.h          | 1 KB   | 
+	+--------------------------------------+
+	| CLexer.cpp                  | 23 KB  | 
+	+--------------------------------------+
+	| CLexer.h                    | 7 KB   | 
+	+--------------------------------------+
+	| CInstruction.cpp            | 5 KB   | 
+	+--------------------------------------+
+	| SymbolTable.cpp             | 4 KB   | 
+	+--------------------------------------+
+	| CParser.h                   | 6 KB   | 
+	+--------------------------------------+
+	| CParser.cpp                 | 35 KB  | 
+	+--------------------------------------+
+	| CInterpreter.cpp            | 28 KB  | 
+	+--------------------------------------+
+	| TList.h                     | 7 KB   | 
+	+--------------------------------------+
+	| activeDepends.h             | 3 KB   | 
+	+--------------------------------------+
+	| CASInterpreter.h            | 3 KB   | 
+	+--------------------------------------+
+	| CEventHandler.h             | 3 KB   | 
+	+--------------------------------------+
+	| NamedItem.cpp               | 5 KB   | 
+	+--------------------------------------+
+	| NamedItem.h                 | 2 KB   | 
+	+--------------------------------------+
+	| SampleClassFactory.cpp      | 5 KB   | 
+	+--------------------------------------+
+	| SampleClassFactory.h        | 2 KB   | 
+	+--------------------------------------+
+	| CASErrorHandler.cpp         | 11 KB  | 
+	+--------------------------------------+
+	| CASErrorHandler.h           | 2 KB   | 
+	+--------------------------------------+
+	| ActiveScriptTrace.h         | 1 KB   | 
+	+--------------------------------------+
+	| CEventHandler.cpp           | 20 KB  | 
+	+--------------------------------------+
+	| SampleScript.h              | 5 KB   | 
+	+--------------------------------------+
+	| SampleScript.cpp            | 57 KB  | 
+	+--------------------------------------+
+	| CASInterpreter.cpp          | 32 KB  | 
+	+--------------------------------------+
+	| ad1.lib                     | 19 KB  | 
+	+--------------------------------------+
+	| activdbg.h                  | 323 KB | 
+	+--------------------------------------+
+	| activscp.h                  | 67 KB  | 
+	+--------------------------------------+
+	| ad1ex.h                     | 39 KB  | 
+	+--------------------------------------+
+	| dbgprop.h                   | 50 KB  | 
+	+--------------------------------------+
+	| MULTINFO.H                  | 8 KB   | 
+	+--------------------------------------+
+	| DISPEX.H                    | 31 KB  | 
+	+--------------------------------------+
+	| HostInfo.h                  | 1 KB   | 
+	+--------------------------------------+
+	
+	Installation Instructions
+	-------------------------
+	
+	1. Add the following paths to the Include directories in the \Tools\Options\
+	  directory. Replace <...> with the path where SampleScript was
+	  installed.
+	
+	  <...>\SampleScript\
+	  <...>\SampleScript\Interpreter\
+	  <...>\SampleScript\Active Script Engine\
+	  <...>\SampleScript\Active Debugging\
+	  <...>\SampleScript\scripting\
+	
+	  Drag the <...>\SampleScript\scripting\ path to the top of the list so it
+	  is checked first.
+	
+	2. Add the following paths to the library directories in the \Tools\Options\
+	  directory. Replace <...> with the path where SampleScript was
+	  installed.
+	
+	  <...>\SampleScript\scripting\
+	
+	  Drag the <...>\SampleScript\scripting\ path to the top of the list so it
+	  is checked first.
+	
+	3. From the Project menu, click Settings and click the Link tab. In the
+	  Object/Library modules, make sure that ad1.lib is referenced. This file
+	  contains GUIDs necessary for Active Debugging.
+	
+	4. Build the project. You need to modify the Objsafe.h file in the Visual C++
+	  Include directory if you get the following error messages:
+	
+	  error C2065: 'INTERFACE_USES_DISPEX' : undeclared identifier
+	
+	  error C2065: 'INTERFACE_USES_SECURITY_MANAGER' : undeclared identifier
+	
+	  Find the definitions for the Option bits for IObjectSafety, and add
+	  definitions for INTERFACE_USES_DISPEX and INTERFACE_USES_SECURITY_MANAGER, as
+	  shown below. These bits are required by Internet Explorer.
+	
+	     // Option bit definitions for IObjectSafety:
+	     #define	INTERFACESAFE_FOR_UNTRUSTED_CALLER	0x00000001
+	        // Caller of interface may be untrusted
+	     #define	INTERFACESAFE_FOR_UNTRUSTED_DATA	0x00000002
+	        // Data may be untrusted
+	     #define	INTERFACE_USES_DISPEX	            0x00000004
+	        // Object knows to use IDispatchEx
+	     #define	INTERFACE_USES_SECURITY_MANAGER	    0x00000008
+	        // Object knows to use IInternetHostSecurityManager
+	
+	5. Register the SampleScript.dll by using Regsvr32.
+	
+	6. Copy the English.dll file to the same directory as SampleScript.dll.
+	
+	REFERENCES
+	==========
+	
+	For additional information about Active Debugging, click the article number
+	below to view the article in the Microsoft Knowledge Base:
+	
+	  Q216073 SAMPLE: 4thScrpt.exe Demos Active Debugging in ATL ActiveX Script
+	  Engine
+	
+	Additional query words: SamScrpt
+	
+	======================================================================
+	Keywords          : kbfile kbSample kbAXScript kbGrpDSO kbDSupport kbActiveXScript 
+	Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+	Version           : winnt:5.0,6.0
+	
+	=============================================================================
+	

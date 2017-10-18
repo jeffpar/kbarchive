@@ -1,0 +1,126 @@
+---
+layout: page
+title: "Q192295: IIS Causes Memory Leak When Using Secure Sockets Layer (SSL)"
+permalink: kb/192/Q192295/
+---
+
+## Q192295: IIS Causes Memory Leak When Using Secure Sockets Layer (SSL)
+
+	Article: Q192295
+	Product(s): Internet Information Server
+	Version(s): winnt:4.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 20-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Microsoft Internet Information Server (IIS) causes a memory leak when you use
+	the Secure Sockets Layer (SSL). By tracking the amount of private bytes for
+	Inetinfo.exe, you will see that over time private bytes increase.
+	
+	CAUSE
+	=====
+	
+	The memory leak occurs on each client accessed over the HTTP connection. IIS
+	fails to free the memory allocated by Schannel.dll.
+	
+	
+	RESOLUTION
+	==========
+	
+	A fix is available for this problem and can be obtained one of two ways:
+	
+	1. Upgrade to Windows NT service pack 5 or IIS version 5.0.
+	
+	2. Apply the hotfix to follow.
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	  Date      Time                 Size    File Name     Platform
+	  -------------------------------------------------------------
+	  10/14/98  05:40p                27,696 admwprox.dll  (x86)
+	  10/14/98  05:42p               330,976 asp.dll       (x86)
+	  10/14/98  05:40p                43,456 coadmin.dll   (x86)
+	  10/14/98  05:41p                11,168 ftpctrs2.dll  (x86)
+	  10/14/98  05:41p                81,376 ftpsvc2.dll   (x86)
+	  10/14/98  05:40p                10,224 iisfecnv.dll  (x86)
+	  10/14/98  05:40p                61,920 iislog.dll    (x86)
+	  10/14/98  05:40p                16,848 infoadmn.dll  (x86)
+	  10/14/98  05:40p               184,192 infocomm.dll  (x86)
+	  10/14/98  05:40p                 9,584 infoctrs.dll  (x86)
+	  10/14/98  05:39p                47,936 isatq.dll     (x86)
+	  10/14/98  05:40p                29,520 iscomlog.dll  (x86)
+	  10/14/98  05:40p                13,856 lonsint.dll   (x86)
+	  10/14/98  05:40p                71,232 metadata.dll  (x86)
+	  10/14/98  05:40p                 7,488 rpcref.dll    (x86)
+	  10/14/98  05:40p                12,592 spud.sys      (x86)
+	  10/14/98  05:40p                18,032 svcext.dll    (x86)
+	  10/14/98  05:41p                14,752 w3ctrs.dll    (x86)
+	  10/14/98  05:41p               226,864 w3svc.dll     (x86)
+	  10/14/98  05:40p                60,192 wam.dll       (x86)
+	
+	  10/14/98  05:42p                49,424 admwprox.dll  (Alpha)
+	  10/14/98  05:44p               545,552 asp.dll       (Alpha)
+	  10/14/98  05:42p                77,072 coadmin.dll   (Alpha)
+	  10/14/98  05:43p                17,168 ftpctrs2.dll  (Alpha)
+	  10/14/98  05:43p               126,224 ftpsvc2.dll   (Alpha)
+	  10/14/98  05:42p                17,680 iisfecnv.dll  (Alpha)
+	  10/14/98  05:42p               110,864 iislog.dll    (Alpha)
+	  10/14/98  05:42p                25,872 infoadmn.dll  (Alpha)
+	  10/14/98  05:42p               302,864 infocomm.dll  (Alpha)
+	  10/14/98  05:42p                15,120 infoctrs.dll  (Alpha)
+	  10/14/98  05:41p                82,704 isatq.dll     (Alpha)
+	  10/14/98  05:42p                45,840 iscomlog.dll  (Alpha)
+	  10/14/98  05:42p                23,312 lonsint.dll   (Alpha)
+	  10/14/98  05:42p                13,584 lonsiw95.dll  (Alpha)
+	  10/14/98  05:42p               131,856 metadata.dll  (Alpha)
+	  10/14/98  05:42p                12,048 rpcref.dll    (Alpha)
+	  10/14/98  05:42p                20,912 spud.sys      (Alpha)
+	  10/14/98  05:42p                29,456 svcext.dll    (Alpha)
+	  10/14/98  05:43p                21,264 w3ctrs.dll    (Alpha)
+	  10/14/98  05:43p               380,688 w3svc.dll     (Alpha)
+	  10/14/98  05:43p                98,576 wam.dll       (Alpha)
+	
+	Hotfix Resolution
+	-----------------
+	
+	A supported fix that corrects this problem is now available from Microsoft for
+	those who do not wish to upgrade, but has not been fully regression tested and
+	should be applied only to systems experiencing this specific problem.
+	
+	To resolve this problem immediately, contact Microsoft Product Support Services
+	to obtain the fix. For a complete list of Microsoft Product Support Services
+	phone numbers and information on support costs, please go to the following
+	address on the World Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Internet Information Server
+	version 4.0. This problem was corrected in Internet Information Server version
+	5.0 or Windows NT service pack 5.
+	
+	Additional query words: IIS hotfix hot fix qfe quick engineering patch
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbiisSearch kbiis400
+	Version           : winnt:4.0
+	Hardware          : ALPHA x86
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

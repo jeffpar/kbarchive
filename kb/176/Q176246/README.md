@@ -1,0 +1,64 @@
+---
+layout: page
+title: "Q176246: XWEB: Unexpected Behavior when Accessing Outlook Web Access"
+permalink: kb/176/Q176246/
+---
+
+## Q176246: XWEB: Unexpected Behavior when Accessing Outlook Web Access
+
+	Article: Q176246
+	Product(s): Microsoft Exchange
+	Version(s): 5.5
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 14-MAR-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.5 
+	- Microsoft Outlook Web Access, version 5.5 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	You may experience unexpected behavior when you attempt to access Microsoft
+	Outlook Web Access, version 5.5 (OWA) from an Internet Web Browser over HTTPS.
+	Internet Explorer 3.02 for Windows 95 may access violate and Netscape Navigator
+	may fail with an I/O error. The pages most likely to incur this error include
+	the following:
+	
+	1. Messages with 16KB or more of message text, in any version of OWA.
+	
+	2. The New Meeting and Appointment forms in OWA 5.5.
+	
+	
+	CAUSE
+	=====
+	
+	This problem may occur if the incoming message is larger than the input buffer
+	of the Internet Web Browser.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft Exchange Server,
+	version 5.5.
+	
+	
+	A supported fix is now available, but has not been fully regression-tested and
+	should be applied only to systems experiencing this specific problem. Unless you
+	are severely impacted by this specific problem, Microsoft Recommends that you
+	wait for the next Service Pack that contains this fix. Contact Microsoft
+	Technical Support for more information.
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbOutlookSearch kbExchangeSearch kbExchange550 kbZNotKeyword2 kbOWASearch kbOWA550
+	Version           : 5.5
+	Issue type        : kbbug
+	
+	=============================================================================
+	

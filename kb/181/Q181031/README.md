@@ -1,0 +1,85 @@
+---
+layout: page
+title: "Q181031: Callback Verbs Documented Incorrectly in the LUA SNA SDK"
+permalink: kb/181/Q181031/
+---
+
+## Q181031: Callback Verbs Documented Incorrectly in the LUA SNA SDK
+
+	Article: Q181031
+	Product(s): Microsoft SNA Server
+	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 14-MAR-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 3.0, 3.0 SP1, 3.0 SP2, 4.0 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	Within the SNA Server LUA Programmer's Guide (included in online format in SNA
+	Server 3.0 and 4.0), the LUA Verb Control Block (VCB) lua_post_handle parameter
+	is incorrectly documented as containing the address of a callback function. This
+	is incorrect. The field can be either a Windows NT event handle or a window
+	handle.
+	
+	See SLI_RECEIVE, SLI_OPEN, SLI_PURGE, RUI_READ and others. Querying for "LUA
+	CALLBACK" will find all verbs that can contain the LUA_POST_HANDLE.
+	
+	The documentation reads as follows:
+	
+	  lua_post_handle
+	  Supplied parameter. Used under Windows NT or Windows 95 if asynchronous
+	  notification is to be accomplished by events. This variable contains the
+	  handle of the event to be signaled or a pointer to a callback function. For
+	  all other environments, this parameter is reserved and should be set to zero.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in SNA Server versions 3.0, 3.0
+	SP1, 3.0 SP2 and 4.0.
+	
+	This problem was corrected in the latest SNA Server version 3.0 and 4.0 U.S.
+	Service Packs. For information on obtaining these Service Packs, query on the
+	following word in the Microsoft Knowledge Base (without the spaces):
+	
+	  S E R V P A C K
+	
+	
+	A supported fix for SNA Server version 4.0 is now available, but has not been
+	fully regression-tested and should be applied only to systems experiencing this
+	specific problem. Unless you are severely impacted by this specific problem,
+	Microsoft recommends that you wait for the next Service Pack that contains this
+	fix. Contact Microsoft Product Support Services for more information.
+	
+	
+	MORE INFORMATION
+	================
+	
+	The text for LUA_COMMON in the online version of the SNA Server LUA Programmer's
+	Guide has been changed to correctly reflect this callback verb. It now reads:
+	
+	  lua_post_handle
+	  Supplied parameter. Used under Microsoft Windows NT and Microsoft Windows 95
+	  if asynchronous notification is to be accomplished by events. This variable
+	  contains the handle of the event to be signaled or a window handle. For all
+	  other environments, this parameter is reserved and should be set to zero.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ400 kbSNAServ300SP1 kbSNAServ300SP2
+	Version           : WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

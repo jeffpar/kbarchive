@@ -1,0 +1,171 @@
+---
+layout: page
+title: "Q109050: Err Msg: While Registering OLE Servers, Setup Had a Problem..."
+permalink: kb/109/Q109050/
+---
+
+## Q109050: Err Msg: While Registering OLE Servers, Setup Had a Problem...
+
+	Article: Q109050
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): WINDOWS:3.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 26-MAY-2001
+	
+	WINDOWS
+	kbprint kbmm
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Complete Baseball for Windows, 1994 edition (see below) 
+	- Microsoft Complete NBA Basketball for Windows, 1994-1995, 1995-1996 editions 
+	- Microsoft Encarta 95 The Complete Interactive Multimedia Encyclopedia 
+	- Microsoft Encarta 96 Encyclopedia for Windows 
+	- Microsoft Works, version 3.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When installing one of the applications listed at the top of this article, you
+	may receive the following error message:
+	
+	  While Registering OLE Servers, Setup had a Problem with REG.DAT, SHELL.DLL or
+	  Disk Space
+	
+	After you choose OK, the following message may also appear:
+	
+	  <Program Name> setup was not completed successfully.
+	
+	CAUSE
+	=====
+	
+	The following conditions can cause this error:
+	
+	- An invalid Path command in the AUTOEXEC.BAT or an invalid windir setting
+	  (that is, the Path setting is \WINDOWS instead of C:\WINDOWS, or your windir
+	  setting is windir=\windows instead of windir=c:\windows)
+	
+	  NOTE: To quickly check your Path and windir settings, type "set" (without the
+	  quotation marks) at the MS-DOS prompt.
+	
+	  -or-
+	
+	- A corrupt REG.DAT file
+	
+	
+	RESOLUTION
+	==========
+	
+	1. Correct the invalid Path setting in the AUTOEXEC.BAT file.
+	
+	2. Rename REG.DAT and re-register MSWORKS3.REG (if you are using Works 3.0 for
+	  Windows) and OLE2.REG.
+	
+	MORE INFORMATION
+	================
+	
+	To change your Path setting in the AUTOEXEC.BAT file
+	----------------------------------------------------
+	
+	1. From the File menu in Windows Program Manager, choose Run.
+	
+	2. In the Command Line box, type "sysedit" (without the quotation marks) and
+	  choose OK.
+	
+	3. In the AUTOEXEC.BAT window, locate the Path command.
+	
+	4. Change the Path setting so that a full reference is made to your Windows
+	  directory. For example, if Windows is installed in the default directory of
+	  C:\WINDOWS, the line should read C:\WINDOWS. For example, the following is a
+	  sample Path statement in AUTOEXEC.BAT:
+	
+	  PATH C:\WINDOWS;C:\;C:\DOS;C:\WINWORD;C:\MOUSE;C:\MSPUB
+	
+	  NOTE: You may want to double-check the entire Path command. Make sure that
+	  every directory specified has the appropriate syntax. For more information
+	  about your Path command, see your MS-DOS user's guide.
+	
+	5. From the File menu, choose Exit. Choose Yes to save changes.
+	
+	6. Exit Windows and restart your computer.
+	
+	7. Reinstall Works, Complete Baseball, Complete NBA Basketball, or Encarta.
+	  Because Setup was not complete the first time, you do not need to uninstall
+	  these applications before you reinstall.
+	
+	To correct a corrupt REG.DAT file
+	---------------------------------
+	
+	1. Check to see if there are two REG.DAT files on your hard drive. (If there are
+	  two files, one file is probably in the Windows directory, while the other is
+	  likely in the SYSTEM subdirectory of the Windows directory). Your REG.DAT
+	  file should only be in the Windows directory.
+	
+	2. If there is only one copy of the file on your hard drive, change the filename
+	  to REG.OLD to create a backup.
+	
+	3. Restart Windows. When Windows restarts, it will not find a REG.DAT file so it
+	  will re-create one with default settings.
+	
+	4. Next, re-register the *.REG files on the system, as follows:
+	
+	  a. Run File Manager.
+	
+	  b. From the File menu, choose Search.
+	
+	  c. In the Search For box, type:
+	
+	  *.REG
+	
+	     In the Start From box, type:
+	
+	  <drive>:\
+	
+	     where <drive> is the letter of your hard disk drive. For example, C:\
+	     for drive C. This will allow you to search your entire hard drive for all
+	     *.REG files.
+	
+	  d. Choose the first found *.REG file. From the File menu, choose Associate.
+	     Make sure that the extension *.REG is associated with REGEDIT.EXE.
+	
+	  e. After associating the *.REG files, double-click the first *.REG file the
+	     search results found. Windows will prompt you with a message informing you
+	     that the file was registered successfully in REG.DAT.
+	
+	  f. Repeat step e until all *.REG files have been re-registered.
+	
+	  The REG.DAT file is now re-built.
+	
+	5. Reinstall the program that was giving you the error message above.
+	
+	  NOTE: If you do not install Works for Window in the default directory of
+	  C:\MSWORKS, complete the following steps:
+	
+	  a. Open the MSWORKS3.REG file in Windows Write (usually found in the
+	     Accessories group of the Windows Program Manager).
+	
+	  b. From the Find menu, choose Replace.
+	
+	  c. Replace all instances of C:\MSWORKS\MSWORKS.EXE with
+	     <path>\MSWORKS.EXE, where <path> represents the drive letter
+	     and directory where Works was installed.
+	
+	  d. Save the file, making sure to specify TEXT as the format.
+	
+	  e. Re-register the *.REG files on the system by following step 4 above.
+	
+	This will register the necessary information for Works for Windows, Complete
+	Baseball, Complete NBA Basketball, and Encarta.
+	
+	Additional query words: msn_encarta ole reg winworks mmtitles 94 95 homemm
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbHomeProdSearch kbWorksSearch kbHomeMMsearch kbEncartaSearch kbGamesSearch kbBaseballSearch kbEncartaEncycSearch kbCompleteBasketballSearch kbWorks300 kbCompleteBaseball1994 kbCompleteNBABasketball1994 kbEncarta1995 kbEncartaEnCyc1996
+	Version           : WINDOWS:3.0
+	
+	=============================================================================
+	

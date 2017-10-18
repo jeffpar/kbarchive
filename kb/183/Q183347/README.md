@@ -1,0 +1,240 @@
+---
+layout: page
+title: "Q183347: SMS: Secondary Site Upgrade Stays at Phase 4 Complete"
+permalink: kb/183/Q183347/
+---
+
+## Q183347: SMS: Secondary Site Upgrade Stays at Phase 4 Complete
+
+	Article: Q183347
+	Product(s): Microsoft Systems Management Server
+	Version(s): winnt:1.0,1.1,1.2
+	Operating System(s): 
+	Keyword(s): kbSCMan kbsmsAdmin smsadmin smssiteconfigman
+	Last Modified: 31-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about editing the registry.
+	Before you edit the registry, make sure you understand how to restore it if
+	a problem occurs. For information about how to do this, view the "Restoring
+	the Registry" Help topic in Regedit.exe or the "Restoring a Registry Key"
+	Help topic in Regedt32.exe.
+	
+	SYMPTOMS
+	========
+	
+	When a Systems Management Server secondary site is upgraded or installed, the
+	site may never go active. If you look at the site's properties in the Systems
+	Management Server Administrator program, you will see that its status remains at
+	"Phase 4 Complete."
+	
+	CAUSE
+	=====
+	
+	The final step in a secondary site installation or upgrade process is that the
+	Site Configuration Manager service running on the secondary site creates a
+	system job to copy the .ct2 file (which records upgrade success) to its parent
+	site. If this job fails, the secondary site will remain in a "Phase 4 Complete"
+	status.
+	
+	
+	WORKAROUND
+	==========
+	
+	To work around this problem, you can do any one of the following (each
+	workaround is described in more detail in the MORE INFORMATION section of this
+	article):
+	
+	- Force the creation of a .ct2 file, which should allow the secondary site
+	  installation or upgrade to be completed.
+	
+	  -or-
+	
+	- Activate the secondary site and use Preinst.exe to perform a manual upgrade.
+	
+	  -or-
+	
+	- Rebuild the secondary site.
+	
+	MORE INFORMATION
+	================
+	
+	Creating a .Ct2 File
+	--------------------
+	
+	To force the Site Configuration Manager service to create a .ct2 file, perform
+	the following steps:
+	
+	1. Verify the state of the secondary site by making certain that all Systems
+	  Management Server services are installed and running. If they are not
+	  running, this procedure should not be used.
+	
+	2. Examine the SMS\Site.Srv\Sitecfg.Box directory on the secondary site to see
+	  if a .ct2 file does not already exist. If it does exist, stop and restart the
+	  SMS services, and skip to step 6 in this procedure.
+	
+	3. At the secondary site, copy the SMS\Site.Srv\Sitecfg.Box\SiteCtrl.ct0 file to
+	  a temporary location. This is a backup copy.
+	
+	4. Move any other existing .ctx files in this directory to a temporary location.
+	
+	5. Rename the original SiteCtrl.ct0 file to 00000000.ct1.
+	
+	6. The Site Configuration Manager service will create a corresponding .ct2 file
+	  that is forwarded to the primary site by a system job. The secondary site's
+	  Scheduler, Despooler, and LanSender services are involved with this process.
+	  If the .ct2 file is not moved within 30 minutes, you can use SMSTrace.exe or
+	  a text editor to follow processing in those services' logs and identify the
+	  failure point.
+	
+	When the primary site has received and processed the secondary site's .ct2 file,
+	the Sites window in the Systems Management Server Administrator program should
+	list the secondary site as Active.
+	
+	Activating the Site and Forcing Another Upgrade
+	-----------------------------------------------
+	
+	If you need to recover from a failed secondary site upgrade, you can use the
+	following steps:
+	
+	1. If the SMS_UPGRADE_BOOTSTRAP service is still running after 24 hours (from
+	  the time the upgrade started), use Srvinstw.exe (available with the Windows
+	  NT Server 4.0 Resource Kit) to remove it.
+	
+	  NOTE: With Srvinstw.exe, you can remove or install Windows NT Server services
+	  remotely, as well as locally. You can also use other utilities, such as
+	  Instsrv.exe, but only with locally installed services.
+	
+	2. On the secondary site, examine the SMS\Site.srv\Sitecfg.box directory and
+	  delete any of the bootstrap files. SiteCtrl.ct0 should be the only file in
+	  that directory.
+	
+	3. On the secondary site, examine the SMS\Site.srv\Despoolr.box\Receive
+	  directory and move any files found there to a subdirectory called Temp.
+	
+	4. If the SMS_SITE_CONFIG_MANAGER service is not installed, use Srvinstw.exe to
+	  install it (note that you must define the full local path to Siteins.exe).
+	  For example, use a command like the following:
+	
+	  C:\SMS\SITE.SRV\X86.BIN\SITEINS.EXE
+	
+	5. Start the SMS_SITE_CONFIG_MANAGER service. It will check for the
+	  SMS\System.map and SMS\Site.srv\Sitecfg.ct0 files and start installing the
+	  SMS services again. Be sure to wait until all the services are installed.
+	
+	6. Refresh the Sites window in the Systems Management Server Administrator
+	  program. Make sure that the sites show an Active status and that they are no
+	  longer in construction. This may take up to 30 minutes.
+	
+	7. At the parent primary site server, open a command prompt and move to the
+	  SMS\Site.srv\X86.bin directory. Run the following command:
+	
+	  PREINST /UPGRADE:<secondary site sitecode>
+	
+	Rebuilding the Secondary Site
+	-----------------------------
+	
+	Depending on the state of the Systems Management Server services on the secondary
+	site, sometimes it is easier to rebuild the secondary site rather than force the
+	current upgrade to complete successfully. To rebuild the secondary site, perform
+	the steps given below.
+	
+	NOTE: After performing the steps below, the Systems Management Server client will
+	be "verified" in the same fashion that occurs when a Systems Management Server
+	service pack is applied. This will occur with the execution of the Systems
+	Management Server login script (SMSLS) or Runsms.bat files.
+	
+	Also note that the instructions below will also remove workstation packages from
+	the users' Package Command Manager (PCM) application. This occurs because the
+	PCM instruction files will be deleted. If necessary, resend these packages with
+	new jobs. In addition, Systems Management Server shared network applications
+	that require a "one-time" installation will again prompt the users for the one
+	time installation; if Program Group Control (PGC) is not used, this can be
+	ignored.
+	
+	To rebuild a secondary site, perform the following steps:
+	
+	WARNING: Using Registry Editor incorrectly can cause serious problems that may
+	require you to reinstall your operating system. Microsoft cannot guarantee that
+	problems resulting from the incorrect use of Registry Editor can be solved. Use
+	Registry Editor at your own risk.
+	
+	For information about how to edit the registry, view the "Changing Keys And
+	Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+	Information in the Registry" and "Edit Registry Data" Help topics in
+	Regedt32.exe. Note that you should back up the registry before you edit it. If
+	you are running Windows NT, you should also update your Emergency Repair Disk
+	(ERD).
+	
+	1. Look in the SMS\Logon.srv\SMSID directory on each Systems Management Server
+	  logon server (including the secondary site itself), and record the name of
+	  the .uid file.
+	
+	  Also record the value of the following registry entry:
+	
+	     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SMS\Components
+	     \SMS_Maintenance_Manager\Next SMS Unique ID
+	
+	  NOTE: The preceding registry key has been wrapped for readability.
+	
+	2. Stop all SMS SERVER services on the secondary site server and logon servers,
+	  if necessary.
+	
+	3. Delete all SMS shares (for example, SMS_SHR, SMS_SHRx, and so on) from each
+	  server. It is not necessary to delete the SMS_PKGx share or shares used by
+	  shared network (PGC) applications.
+	
+	4. Delete the SMS directory structure on each server.
+	
+	5. Delete the HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SMS registry key from the
+	  same server(s).
+	
+	6. At the primary site, use the PREINST /DELSITE command to delete the secondary
+	  site from the Systems Management Server hierarchy (in the database). Use the
+	  following syntax for the command:
+	
+	  PREINST /DELSITE:{<childsitecode>,<parentsitecode>}
+	
+	  NOTES:
+	
+	   - The braces are required in this command, but you should replace
+	     <childsitecode> and <parentsitecode> with the actual site
+	     codes for the child and parent sites.
+	
+	   - This action will temporarily strand the client inventory that appears
+	     under the secondary site in the Systems Management Server database. It
+	     also possible that an error message will occur when viewing the Sites
+	     window in the Systems Management Server Administrator program; this is
+	     normal. After the site is successfully re-created, the client inventory
+	     will reappear and the error messages will stop occurring.
+	
+	7. Re-create the secondary site, using the same sitecode as before.
+	
+	  NOTE: It is very important that you use the same sitecode.
+	
+	8. Add the logon server back to the secondary site's Site Properties Domains, if
+	  necessary.
+	
+	9. Rename the .uid files on each server (using the information you recorded in
+	  step 1 of this procedure).
+	
+	10. Examine the "Next SMS Unique ID" value in the registry of the secondary
+	  site. If necessary, change this value to the value recorded in step 1 above.
+	  This value will be the next SMSID range that will be assigned to a logon
+	  server managed by this site server.
+	
+	Additional query words: prodsms code scman sc man config scm
+	
+	======================================================================
+	Keywords          : kbSCMan kbsmsAdmin smsadmin smssiteconfigman 
+	Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+	Version           : winnt:1.0,1.1,1.2
+	Issue type        : kbprb
+	
+	=============================================================================
+	

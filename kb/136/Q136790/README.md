@@ -1,0 +1,96 @@
+---
+layout: page
+title: "Q136790: Logitech Mouse Stops Working When Used with Modem on COM2"
+permalink: kb/136/Q136790/
+---
+
+## Q136790: Logitech Mouse Stops Working When Used with Modem on COM2
+
+	Article: Q136790
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): 95
+	Operating System(s): 
+	Keyword(s): kbhw win95 kbHardware
+	Last Modified: 24-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 95 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you are using a Logitech mouse model M-M30 or cc-93-9f on COM1, and you
+	have a modem connected to COM2, the mouse may stop working.
+	
+	
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, follow these steps:
+	
+	1. Connect the Logitech mouse to COM2.
+	
+	  NOTE: Before you unplug your mouse, turn off your computer.
+	
+	2. Reconfigure the modem to use COM1. To reconfigure your modem, refer to the
+	  instructions included with the modem, or contact the manufacturer.
+	
+	  NOTE: If you have an internal modem, disable COM1 using your computer's CMOS
+	  utility, then set your modem to COM1, IRQ4. For instructions on making
+	  changes to your CMOS settings, please see the documentation that came with
+	  your computer or contact the manufacturer.
+	
+	3. In Control Panel, double-click the Modems icon.
+	
+	4. Click the modem you are using, and then click Properties.
+	
+	5. On the General tab, click Communications Port (COM1) in the Port box, and
+	  then click OK.
+	
+	After you follow these steps, all 32-bit communications programs will find the
+	modem on COM1 correctly. You must manually configure 16-bit communications
+	programs to use the modem on COM1.
+	
+	STATUS
+	======
+	
+	Microsoft is researching this problem and will post new information here in the
+	Microsoft Knowledge Base as it becomes available.
+	
+	MORE INFORMATION
+	================
+	
+	The Logitech mouse model M-M30 has the following additional identifiers:
+	
+	  Part. 811209
+	  FCC ID: DZLZ10569
+	
+	Note that the problem described in this article has also been reported to occur
+	with the following Logitech mouse models:
+	
+	- Logitech mouse model M-M31
+	
+	- Logitech mouse model M-M34
+	
+	- Logitech Stationary Trackball, model number T-CD26F, FCC ID #DZLTCD2
+	
+	- Logitech Mouseman II, model number T-CA1
+	
+	- Model number MMD14DB9F, FCC ID #DZLMMD14
+	
+	- Logitech-compatible Z-Nix Mouse, FCC ID #E605JBMOUSEX11
+	
+	
+	Additional query words: freeze
+	
+	======================================================================
+	Keywords          : kbhw win95 kbHardware 
+	Technology        : kbWin95search kbWin95
+	Version           : 95
+	
+	=============================================================================
+	

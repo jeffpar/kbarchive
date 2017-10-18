@@ -1,0 +1,97 @@
+---
+layout: page
+title: "Q104611: Arcade: Description of Asteroids"
+permalink: kb/104/Q104611/
+---
+
+## Q104611: Arcade: Description of Asteroids
+
+	Article: Q104611
+	Product(s): Microsoft Home Games
+	Version(s): MACINTOSH:1.0; WINDOWS:1.0
+	Operating System(s): 
+	Keyword(s): kbui kbimu msgamekbfaq
+	Last Modified: 08-NOV-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Arcade for Windows, version 1.0 
+	- Microsoft Arcade for the Macintosh, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Asteroids is a space game featured in Arcade. In Asteroids, you are in command
+	of a spaceship and your mission is to shoot and dodge your way through an
+	endless asteroid belt. To stay alive, you must blow up the huge floating
+	asteroids before they hit your spaceship.
+	
+	Beware! When you shoot a large asteroid, it breaks into two medium-sized
+	asteroids. When you shoot a medium-sized asteroid, it breaks into two small
+	asteroids. Fortunately, when you shoot a small asteroid, it disintegrates. Keep
+	an eye open for large flying saucers and small flying saucers. They shoot at you
+	until you destroy them or until they collide with an asteroid!
+	
+	MORE INFORMATION
+	================
+	
+	All you need to know to play Asteroids is how to start a game, move your
+	spaceship, and fire missiles. The playing field is a black background strewn
+	with drifting asteroids, invaded by an occasional alien spaceship.
+	
+	Starting a New Game
+	-------------------
+	
+	On the Game menu, click New, or press F2. When you start a new game, Asteroids
+	resets your score to zero.
+	
+	Flying the Spaceship
+	--------------------
+	
+	Press the LEFT ARROW key or the RIGHT ARROW key to turn the spaceship left or
+	right.
+	
+	To fire the rocket engine on your spaceship, press the UP ARROW key.
+	
+	To escape into hyperspace, press the SHIFT key. Your spaceship escapes into
+	hyperspace and reappears in another part of the asteroid belt, but there are no
+	guarantees that you get there safely.
+	
+	To fire your missiles, press the SPACEBAR. Only four missiles can be on the
+	screen at one time, so pick your shots!
+	
+	Scoring
+	-------
+	
+	The scoring strategy for Asteroids is simple: The smaller the asteroid, the more
+	points you get. You get the most points for shooting flying saucers:
+	
+	- Large asteroid: 20 points
+	- Medium asteroid: 50 points
+	- Small asteroid: 100 points
+	- Large flying saucer: 200 points
+	- Small flying saucer: 1000 points
+	
+	Additional Scoring Information
+	------------------------------
+	
+	You start the game with three lives (or spaceships). For every 10,000 points you
+	score, you get a bonus spaceship. Flying saucers can destroy and be destroyed by
+	asteroids, but you don't score any points when that happens. Asteroids displays
+	the High Scores list at the end of each game. If your score is higher than the
+	lowest score on the current High Scores screen, Asteroids asks for your
+	initials. You can add them using the keyboard or mouse. If you score 100,000
+	points, Asteroids resets your score to zero.
+	
+	Additional query words: 1.00 m_arcade w_arcade msgame rocks kbfaq
+	
+	======================================================================
+	Keywords          : kbui kbimu msgame kbfaq
+	Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbGamesSearch kbZNotKeyword kbArcadeSearch kbArcadeMac kbArcade
+	Version           : MACINTOSH:1.0; WINDOWS:1.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

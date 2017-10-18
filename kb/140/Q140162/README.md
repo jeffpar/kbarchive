@@ -1,0 +1,82 @@
+---
+layout: page
+title: "Q140162: Bookshelf 95: Unable to Activate Quickshelf AutoHide"
+permalink: kb/140/Q140162/
+---
+
+## Q140162: Bookshelf 95: Unable to Activate Quickshelf AutoHide
+
+	Article: Q140162
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): WINDOWS:
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 16-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Bookshelf '95 for Windows 95 
+	- Microsoft Windows 95 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you select the Bookshelf '95 for Windows 95 QuickShelf AutoHide feature,
+	the toolbar does not change and remains visible. This occurs on computers
+	running Windows 95.
+	
+	CAUSE
+	=====
+	
+	The QuickShelf Help instructions for activating (utilizing) and saving the
+	AutoHide option are missing steps.
+	
+	RESOLUTION
+	==========
+	
+	To turn on and save the AutoHide feature, do the following:
+	
+	1. Start the QuickShelf toolbar.
+	
+	2. With the right mouse button, click the QuickShelf title bar. Then, click
+	  AutoHide with the left mouse button.
+	
+	3. Press and hold down the left mouse button on the QuickShelf title bar while
+	  you drag the toolbar to an outer edge of the screen. Release the mouse
+	  button.
+	
+	  NOTE: The toolbar resizes to fit the entire length or width of the screen.
+	
+	4. Open the system menu by clicking the title bar icon.
+	
+	  NOTE: If the QuickShelf toolbar was dragged to the top or bottom of the
+	  screen, the system menu is located at the far left.
+	
+	  If the QuickShelf toolbar was dragged to the left or right edge of the screen,
+	  the system menu is located at the top.
+	
+	5. Click Exit.
+	
+	6. Restart Windows.
+	
+	AutoHide feature is used the next time QuickShelf is started.
+	
+	MORE INFORMATION
+	================
+	
+	For additional information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q137832 Bookshelf 1995: QuickShelf Toolbar Settings Not Saved
+	
+	Additional query words: 1995 95 multi media multimedia multi-media mmtitles kbmm
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWin95search kbHomeMMsearch kbBookshelfSearch kbZNotKeyword3 kbBookShelf1995
+	Version           : WINDOWS:
+	
+	=============================================================================
+	

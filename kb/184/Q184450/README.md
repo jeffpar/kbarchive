@@ -1,0 +1,175 @@
+---
+layout: page
+title: "Q184450: Running Microsoft Access 97 Comments and Corrections"
+permalink: kb/184/Q184450/
+---
+
+## Q184450: Running Microsoft Access 97 Comments and Corrections
+
+	Article: Q184450
+	Product(s): Microsoft Press
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbdocerr
+	Last Modified: 21-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- MSPRESS Running Microsoft Access 97 ISBN 1-57231-323-4 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article contains information on known errors, corrections, and comments
+	relating to the Microsoft Press book "Running Microsoft Access 97," ISBN
+	1-57231-323-4.
+	
+	Contents
+	--------
+	
+	- Page xxiv: Correction To Viewing EBook Instructions
+	
+	- Page 137: Table 5-6, LIKE "#####-####" Should Be In Left Column
+	
+	- Page 149: Missing Information About Deleting Relationships
+	
+	- Page 304: Error in qryXmplContractsInLast6Months Query
+	
+	- Page 447: Scroll bar does not advance to second page of record
+	
+	- Several Chapters of Online Book Do Not Display Correctly
+	
+	- CD: Contains IE 3.0 Not IE 4.0 (4th Printing)
+	
+	MORE INFORMATION
+	================
+	
+	Page xxiv: Correction To Viewing EBook Instructions
+	---------------------------------------------------
+	
+	Page xxiv, third paragraph under Viewing the Online Version of the Book:
+	Change: "...on your desktop or by opening the file d:\book\RunAcc97.chm (where d
+	is the drive letter of your CD-ROM drive)."
+	To: "...on your desktop." (without the quotation marks)
+	
+	
+	Page 137: Table 5-6, LIKE "#####-####" Should Be In Left Column
+	---------------------------------------------------------------
+	
+	Page 137, table 5-6, row 2:
+	Move
+	
+	  LIKE "#####-####"
+	
+	from the right column to the left column.
+	
+	
+	Page 149: Missing Information About Deleting Relationships
+	----------------------------------------------------------
+	
+	Page 149 does not go into the details of how to delete a relationship. One clue
+	is in the very next two sentences:
+	
+	  To see the relationships defined for any particular table or query, include
+	  it in the Relationships window by using the Show Table dialog box, and then
+	  click the Show Direct Relationships button on the toolbar or choose Show
+	  Direct from the Relationships menu. To redisplay all relationships, click the
+	  Show All Relationships button on the toolbar or choose Show All from the
+	  Relationships menu.
+	
+	Once you have removed a table from the relationships display, you can get it back
+	easily. To remove a relationship, make sure you can see the two participating
+	tables, then click the linking line to select it, if you double-click, you'll
+	open the edit dialog box. Click the Delete key to remove the relationship.
+	
+	A short section on changing and deleting relationships will be added to the next
+	edition.
+	
+	
+	Page 304: Error in qryXmplContractsInLast6Months Query
+	------------------------------------------------------
+	
+	The qryXmplContractsInLast6Months query, as well as some other action queries may
+	return the following error:
+	
+	  Couldn't delete from specified tables.
+	
+	This error results from a change to make Access more compliant with the ANSI SQL
+	standard. This query works if you add the Access-specific DISTINCTROW keyword by
+	setting Unique Records to yes. The corrected SQL is:
+	
+	     DELETE DISTINCTROW tblClubs.*
+	     FROM qryXmplContractsInLast6Months RIGHT JOIN tblClubs ON
+	     qryXmplContractsInLast6Months.ClubID = tblClubs.ClubID
+	     WHERE (((tblClubs.ClubID)<[Don't Delete ClubID Greater Than:]) AND
+	     ((qryXmplContractsInLast6Months.ClubID) Is Null));
+	
+	
+	Page 447: Scroll bar does not advance to second page of record
+	--------------------------------------------------------------
+	
+	On page 447, the first paragraph instructs you to use the scroll bar or the page
+	down button to advance to the next page of the record. The scroll bar does not
+	work to advance to the next page of the record.
+	
+	Change: "To see the second page of information for any author, use the scroll bar
+	along the right side of the form or press the PgDn key."
+	
+	To: "To see the second page of information for any author, press the PgDn key."
+	(without the quotation marks)
+	
+	
+	Several Chapters of Online Book Do Not Display Correctly
+	--------------------------------------------------------
+	
+	When you display chapters 22-24 of the online book in your Web browser, the
+	chapter may display correctly only to the first code sample. After the code
+	sample the text may appear as HTML code.
+	
+	This error is caused by the use of the <plaintext> tags to denote code that
+	should not be executed by the browser.
+	
+	This error will be corrected in a future edition of the book.
+	
+	
+	CD: Contains IE 3.0 Not IE 4.0 (4th Printing)
+	---------------------------------------------
+	
+	The 4th and 5th printings of Running Microsoft Access 97 provide instructions for
+	installing Microsoft Internet Explorer 4.0 from the accompanying CD-ROM.
+	However, the CD-ROM does not include IE 4.0. It does include IE 3.0.
+	
+	To install Microsoft Internet Explorer 3.0 from the CD-ROM, please follow these
+	steps:
+	
+	1. Insert the CD-ROM in your CD-ROM drive.
+	
+	2. On the Start menu, click Run.
+	
+	3. In the Open box, type "d:\ie30\setup" (without the quotation marks) (or
+	  replace the letter "d" with the appropriate CD-ROM drive letter).
+	
+	4. Click OK, and then follow the directions on the screen.
+	
+	The latest version of Microsoft Internet Explorer can be downloaded from
+	http://www.microsoft.com/ie/download/windows.htm.
+	
+	
+	Microsoft Press is committed to providing informative and accurate books. All
+	comments and corrections listed above are ready for inclusion in future
+	printings of this book. If you have a later printing of the book, it may already
+	contain the above corrections.
+	
+	Additional query words: press ms_press bookbug 1-57231-323-4
+	
+	======================================================================
+	Keywords          : kbdocerr 
+	Technology        : kbMSPressSearch
+	Version           : :
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

@@ -1,0 +1,97 @@
+---
+layout: page
+title: "Q133308: PRB: WM_HELP Message Not Received When F1 Pressed on Menu"
+permalink: kb/133/Q133308/
+---
+
+## Q133308: PRB: WM_HELP Message Not Received When F1 Pressed on Menu
+
+	Article: Q133308
+	Product(s): Microsoft C Compiler
+	Version(s): winnt:
+	Operating System(s): 
+	Keyword(s): kbcode kbnokeyword kbMenu kbMFC kbVC210 kbVC220 kbprb kbGrpDSMFCATL
+	Last Modified: 29-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The Microsoft Foundation Classes (MFC), used with:
+	   - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, versions 2.1, 2.2 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Windows 95 and Windows NT version 3.51 support a new Windows message, WM_HELP.
+	If a menu is active when F1 is pressed, WM_HELP should be sent to the window
+	associated with the menu by Windows. However, with an MFC application, the
+	WM_HELP message never gets sent.
+	
+	This problem does not occur in Visual C++ 4.0 or later
+	
+	CAUSE
+	=====
+	
+	MFC defines default handling of the F1 key to bring up help for menu items. For
+	more information about F1 help within an MFC application, please see MFC
+	Technote #28 and the Scribble Tutorial.
+	
+	The F1 key is handled by the CWinThread::ProcessMessageFilter() function. It
+	causes the MFC function OnCommandHelp() to be called, which brings up help for
+	the currently selected menu item.
+	
+	RESOLUTION
+	==========
+	
+	To work around this behavior, either use the help system provided by MFC, or
+	override ProcessMessageFilter() for your CWinApp-derived class to by-pass the
+	MFC processing of the F1 key. For example, the code might look like this:
+	
+	  static BOOL AFXAPI IsHelpKey(LPMSG lpMsg)
+	     // return TRUE only for non-repeat F1 keydowns.
+	  {
+	     return lpMsg->message == WM_KEYDOWN &&
+	  #ifndef _MAC
+	           lpMsg->wParam == VK_F1 &&
+	  #else
+	           lpMsg->wParam == VK_HELP &&
+	  #endif
+	           !(HIWORD(lpMsg->lParam) & KF_REPEAT) &&
+	           GetKeyState(VK_SHIFT) >= 0 &&
+	           GetKeyState(VK_CONTROL) >= 0 &&
+	           GetKeyState(VK_MENU) >= 0;
+	  }
+	
+	  BOOL CYourApp::ProcessMessageFilter(int code, LPMSG lpMsg)
+	  {
+	     if (IsHelpKey(lpMsg))
+	        return FALSE;  // pass on to Windows to do WM_HELP
+	                             // processing - don't use default MFC
+	                             // help processing
+	
+	     return CWinApp::ProcessMessageFilter(code, lpMsg);
+	  }
+	
+	REFERENCES
+	==========
+	
+	For more information about adding F1 help to your application, please see the
+	following references:
+	
+	- MFC Technote#28 in the online documentation
+	
+	- Scribble tutorial in the online documentation
+	
+	- The MFC Encyclopedia under the "Help" topic
+	
+	Additional query words: 2.10 2.20 3.1 3.10 3.2 3.20 4.00 Win95
+	
+	======================================================================
+	Keywords          : kbcode kbnokeyword kbMenu kbMFC kbVC210 kbVC220 kbprb kbGrpDSMFCATL 
+	Technology        : kbAudDeveloper kbMFC
+	Version           : winnt:
+	Issue type        : kbprb
+	
+	=============================================================================
+	

@@ -1,0 +1,181 @@
+---
+layout: page
+title: "Q165690: INFO: Visual C++ 5.0 Readme, Microsoft Transaction Server"
+permalink: kb/165/Q165690/
+---
+
+## Q165690: INFO: Visual C++ 5.0 Readme, Microsoft Transaction Server
+
+	Article: Q165690
+	Product(s): Microsoft C Compiler
+	Version(s): 5.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 31-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+	- Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Microsoft Transaction Server Issues
+	-----------------------------------
+	
+	Read Microsoft Transaction Server (MTS) Readme MTS Doesn't Install on Windows 95
+	Disable Transaction Time-out While Debugging Run Transaction Explorer Before
+	Running Components No Proxy/Stubs with Dual Interfaces SQL Debugging with Visual
+	C++ 5.0 and Microsoft Transaction Server ATL Object Wizard Generates Extra
+	Release for Microsoft Transaction Server Code Microsoft Visual Data Tools
+	
+	MORE INFORMATION
+	================
+	
+	Feature Only in Enterprise Edition The Microsoft Transaction Server is supported
+	only in Visual C++ Enterprise Editions.
+	
+	Read Microsoft Transaction Server (MTS) Readme
+	----------------------------------------------
+	
+	After installing Microsoft Transaction Server, please consult the Microsoft
+	Transaction Server readme file, located in the docs subdirectory of the
+	Microsoft Transaction Server installation. The file contains information
+	required to install, configure and run program components. The readme also
+	contains descriptions of several useful samples and includes a list of known
+	problems.
+	
+	MTS Doesn't Install on Windows 95
+	---------------------------------
+	
+	The Beta version of Microsoft Transaction Server does not run on Windows 95. If
+	you attempt to install it, you will get a message box stating that 'the setup
+	did not complete.' No files or registry keys are affected.
+	
+	Disable Transaction Time-Out While Debugging
+	--------------------------------------------
+	
+	Microsoft Transaction Server uses a time-out mechanism to keep components from
+	deadlocking the system. If the transaction time-out is enabled while you are
+	debugging the component, the transaction context may be destroyed, causing a
+	protection fault. To avoid this, you can disable this time-out from the
+	Microsoft Transaction Server Explorer. Select the My Computer icon and select
+	its properties. Under the Options tab on the Properties dialog box, you will see
+	a transaction time out section. To disable the timeout, set the timeout to 0.
+	
+	Run Transaction Explorer Before Running Components
+	--------------------------------------------------
+	
+	Microsoft Transaction Server components are inproc COM servers. Most inproc COM
+	servers require that you run a utility called REGSVR32.exe. The utility places
+	important information about the server into the systems registry. The default
+	build step for MFC and ATL COM servers is to run REGSVR32.exe before completing
+	the build.
+	
+	Microsoft Transaction Server components are different as they need special
+	registry keys in order to execute. This means that you should run the Microsoft
+	Transaction Server Explorer and install or import the component before executing
+	it. Running REGSVR32.exe after installing or importing the component will change
+	some of the registry keys and will prevent your component from running properly.
+	There are two ways to get around this:
+	
+	1. If you created your component with MFC, ATL 1.0, or ATL 1.1 and contains the
+	  REGSVR32.exe custom build step, you should refresh the component within the
+	  Microsoft Transaction Server Explorer after every build. You can tell if
+	  REGSVR32.exe is being run as you will see the message 'Registering OLE
+	  Server...' in the IDE output window. The registration process is defined in a
+	  custom build rule. If you go into the build settings for the component and
+	  look at its custom build rules you will see the registration step. You can
+	  choose to remove the registration custom build rule for the component.
+	
+	2. If you created the component with the Visual C++ 5.0 ATL Object Wizard and
+	  selected the 'Microsoft Transaction Server object', you only have to install
+	  the component with the Microsoft Transaction Server Explorer before
+	  executing. The REGSVR32.exe custom build rule has been removed with this
+	  option. You should still refresh the component in the Microsoft Transaction
+	  Server Explorer whenever you change any COM interfaces you support.
+	
+	No Proxy/Stubs with Dual Interfaces
+	-----------------------------------
+	
+	The Microsoft Transaction Server Beta software is not capable of inheriting
+	interfaces. The usual example of this is dual interfaces. Dual interfaces
+	inherit from the IDispatch interface. If you create a Microsoft Transaction
+	Server component that uses dual interfaces, you must use type libraries to
+	contain the interface information. If you build a proxy/stub marshaling .dll for
+	your dual interface component, you will get errors from Microsoft Transaction
+	Server. See the Microsoft Transaction Server Readme for more information.
+	
+	SQL Debugging with Visual C++ 5.0 and Microsoft Transaction Server
+	------------------------------------------------------------------
+	
+	You can perform SQL debugging through Microsoft Transaction Server Components. In
+	this case, the component usually calls a stored procedure via ODBC or any other
+	data-access methodology. The component needs to be running locally on the
+	debugging machine as an inproc server. If the component is running remotely on a
+	different machine or as a local server, you will be unable to engage the SQL
+	debugging components. You will also not be able to perform SQL debugging if the
+	transaction started on a different machine as part of the DTC functionality from
+	SQL Server/Microsoft Transaction Server.
+	
+	To do SQL debugging, follow these steps:
+	
+	1. Load the client .EXE as the active project workspace in Visual C++ 5.0. This
+	  is the client application that you've created.
+	
+	2. Use the Project/Build Settings dialog box to add your inproc server DLL as an
+	  additional DLL.
+	
+	3. Set a breakpoint in each stored procedure that you wish to debug.
+	
+	4. Start debugging.
+	
+	You should hit the breakpoints in your stored procedures and should be able to
+	debug them normally. If you have problems, ensure that you can debug the stored
+	procedure directly (i.e. select debug stored procedure instead of running it
+	through the component). Also, make sure that Microsoft Transaction Server is
+	functioning properly. See the Microsoft Transaction Server README for further
+	installation steps.
+	
+	ATL Object Wizard Generates Extra Release for Microsoft Transaction Server
+	Code
+	-------------------------------------------------------------------------------
+	
+	If you select the icon of the MS Transaction Server Component from the right pane
+	of the ATL Object Wizard, and choose to support IObjectControl and pooling from
+	the resulting ATL Object Wizard Properties dialog, the wizard will generate code
+	that performs an extra interface release. This extra release is detected and
+	ignored by Microsoft Transaction Server 1.0 and will not cause your object to
+	fault. Microsoft Transaction Server will log the following message in your event
+	log indicating that it has detected the extra Release:
+	
+	An object released more references to its object context than it had acquired.
+	The extra release is ignored.
+	
+	You can change the generated code to avoid this problem all together. In the
+	Deactivate method within the generated object, look for code similar to the
+	following:
+	
+	     void CYourClass::Deactivate()
+	     {
+	         m_spObjectContext->Release();
+	     }
+	
+	     Replace it with the correct code below, which will release the
+	     IObjectContext interface.
+	
+	     void CYourClass::Deactivate()
+	     {
+	         m_spObjectContext.Release();
+	     }
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC32bitSearch kbVC500Search
+	Version           : 5.0
+	
+	=============================================================================
+	

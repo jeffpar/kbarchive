@@ -1,0 +1,86 @@
+---
+layout: page
+title: "Q131617: Tape Device Times Out on a Northwest Micro Pentium Computer"
+permalink: kb/131/Q131617/
+---
+
+## Q131617: Tape Device Times Out on a Northwest Micro Pentium Computer
+
+	Article: Q131617
+	Product(s): Microsoft Windows NT
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 3.1 
+	- Microsoft Windows NT Workstation version 3.1 
+	- Microsoft Windows NT Advanced Server, version 3.1 
+	- Microsoft Windows NT Workstation versions 3.5, 3.51 
+	- Microsoft Windows NT Server versions 3.5, 3.51 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you run the Windows NT Backup program (NTBACKUP.EXE) with a Sony 5200 DAT
+	tape device connected to an Adaptec 1540 SCSI controller on a Northwest Micro
+	Pentium computer, the following event appears in the Event Viewer:
+	
+	  Event ID: 7026
+	  Source: Service Control Manager
+	  Type: Error
+	  Description: The following boot-start or system-start driver(s)
+	  failed to load: AHA154x
+	
+	NOTE: The backup operation may work correctly, but the restore operation may fail
+	with the following error message:
+	
+	  No catalogue found
+	
+	CAUSE
+	=====
+	
+	This problem occurs the tape device times out. The Northwest Micro Pentium
+	computer is not listed in the Windows NT Hardware Compatibility List (HCL).
+	
+	RESOLUTION
+	==========
+	
+	To correct this problem, you must modify the Registry.
+	
+	WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+	problems that may require you to reinstall Windows NT to correct them. Microsoft
+	cannot guarantee that any problems resulting from the use of Registry Editor can
+	be solved. Use this tool at your own risk.
+	
+	1. Start the Registry Editor (REGEDT32.EXE) and locate the following Registry
+	  subkey:
+	
+	     HKEY_CURRENT_USER\Software\Microsoft\NTBackup\Hardware
+	
+	2. From the Edit menu, select Add Value.
+	
+	3. Add the following:
+	
+	     Value Name: Drive Settling Time
+	     Data Type:  REG_SZ
+	     String: 120
+	 
+	     NOTE: The default value is 60.
+	
+	The third-party products discussed here are manufactured by vendors independent
+	of Microsoft; we make no warranty, implied or otherwise, regarding these
+	products' performance or reliability.
+	
+	Additional query words: prodnt 3.10 hrdwr
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTW310 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS351search kbWinNTS350search kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+	
+	=============================================================================
+	

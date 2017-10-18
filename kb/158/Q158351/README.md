@@ -1,0 +1,82 @@
+---
+layout: page
+title: "Q158351: Mac Multimedia: Network Connection May Cause Problems"
+permalink: kb/158/Q158351/
+---
+
+## Q158351: Mac Multimedia: Network Connection May Cause Problems
+
+	Article: Q158351
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): MACINTOSH:1.0,1.0a,2.0; :1.0,1993, 1994, 1995, 1996-1997 editions,1994 edition,1995 edi
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 08-NOV-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Ancient Lands for the Macintosh, version 1.0 
+	- Microsoft Art Gallery for the Macintosh, version 1.0 
+	- Microsoft Bookshelf for the Macintosh 1993, 1994, 1995, 1996-1997 editions 
+	- Microsoft Cinemania for Macintosh, 1994, 1995, 1996, 1997 editions 
+	- Microsoft Dangerous Creatures for the Macintosh, version 1.0 
+	- Microsoft Dinosaurs for the Macintosh 1.0 
+	- Microsoft Encarta 1994 The Complete Multimedia Encyclopedia 
+	- Microsoft Encarta 95 The Complete Interactive Multimedia Encyclopedia for Macintosh 
+	- Microsoft Encarta 96 Encyclopedia for Macintosh 
+	- Microsoft Encarta 97 Encyclopedia for Macintosh 
+	- Microsoft Isaac Asimov's The Ultimate Robot for the Macintosh, version 1.0 
+	- Microsoft Musical Instruments for the Macintosh, version 1.0 
+	- Microsoft Cinemania for the Macintosh versions 1996 edition, 1997 edition 
+	- Microsoft The Ultimate Frank Lloyd Wright for the Macintosh, version 1.0 
+	- Microsoft Wine Guide for the Macintosh, versions 1.0, 1.0a, 2.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you use one of the programs listed at the top of this article over a
+	network, you may experience some of the following behaviors:
+	
+	- Error messages requesting that a CD-ROM to be inserted.
+	
+	- Computer stops responding (Hangs)
+	
+	CAUSE
+	=====
+	
+	When a program requests a media item (such as a sound, picture, or movie) from
+	its source (usually a CD-ROM), you may receive an error message or the computer
+	may stop responding if the program doesn't find the requested item within a
+	reasonable amount of time.
+	
+	RESOLUTION
+	==========
+	
+	To resolve the problem, use some of the following troubleshooting methods
+	
+	- As a test, try running the program from a local CD-ROM drive (if available).
+	
+	- Make sure the network is functioning reliably and that the program always has
+	  access to the source media.
+	
+	- Attempt to connect two computers directly via a serial cable, using the
+	  printer or modem port on the computers.
+	
+	MORE INFORMATION
+	================
+	
+	Programs shipped on compact disc are often designed to have access to a local
+	CD-ROM drive. When the program is forced to depend on a network connection, the
+	information may not be received within an allowable amount of time.
+	
+	Additional query words: 1997 multi media multimedia multi-media mmtitles kbmm AppleTalk apple talk Ethernet ether net crash bomb hangs freeze cd disc cdrom macmm
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbHWMAC kbOSMAC kbHomeProdSearch _IKkbbogus kbHomeMMsearch kbEncartaSearch kbGamesSearch kbZNotKeyword kbBookshelfSearch kbEncartaEncycSearch kbCineManiaSearch kbAncientLandsMac kbAsimovSearch kbCinemania1996Mac kbCinemania1997Mac kbDangerousCreaturesMac kbDinosaurs100Mac kbAsimovUltimateRobotMac kbMusicalInstMac kbUltimateFLWMac kbWine100Mac kbWine100aMac kbWine200Mac kbArtGalleryMac kbEncartaEnCyc1994 kbEncartaEnCyc1995Mac kbEncartaEnCyc1996Mac kbEncartaEnCyc1997Mac
+	Version           : MACINTOSH:1.0,1.0a,2.0; :1.0,1993, 1994, 1995, 1996-1997 editions,1994 edition,1995 edition,1996 edition,1997 edition
+	
+	=============================================================================
+	

@@ -1,0 +1,248 @@
+---
+layout: page
+title: "Q176653: FIX: Incorrect Decimal Data Sent to SQL Server with Remote View"
+permalink: kb/176/Q176653/
+---
+
+## Q176653: FIX: Incorrect Decimal Data Sent to SQL Server with Remote View
+
+	Article: Q176653
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:2.5,3.0,3.0b,5.0,5.0a
+	Operating System(s): 
+	Keyword(s): kbvfp kbvfp600fix kbMDAC250
+	Last Modified: 22-FEB-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a 
+	- Microsoft Data Access Components version 2.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you use Remote Views with the SQL Server ODBC Driver (Sqlsrv32.dll version
+	2.65.0252, 3.50.0303, or 3.50.0311) to send numeric data containing decimal
+	values to SQL Server tables, incorrect decimal values may be inserted into SQL
+	Server tables.
+	
+	RESOLUTION
+	==========
+	
+	Use another version of the SQL Server ODBC Driver or use SQL pass-through
+	functions.
+	
+	STATUS
+	======
+	
+	Microsoft is researching this problem and will post new information here in the
+	Microsoft Knowledge Base as it becomes available. This has been corrected in
+	Visual FoxPro 6.0.
+	
+	MORE INFORMATION
+	================
+	
+	When you access SQL Server tables using a remote view, with Sqlsvr32.dll
+	(versions 2.65.0252, 3.50.0300, 3.50.0303 and 3.50.0311) some decimal values may
+	be rounded down when the TABLEUPDATE() command is issued. This behavior is not
+	observed when accessing SQL Server tables using a remote view with other
+	versions of the SQL Server ODBC driver. This behavior is also not observed when
+	using the SQL pass-through function SQLEXEC().
+	
+	The list below indicates the version number of the SQL Server ODBC driver
+	distributed with each version of Visual FoxPro:
+	
+	  Visual FoxPro for Windows 3.0            2.00.1912
+	  Visual FoxPro for Windows 3.0b           2.50.0126
+	  Visual FoxPro for Windows 5.0a           2.65.0240
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	NOTE: This code uses a data source named PUBS that accesses the pubs database
+	supplied with Microsoft SQL Server. You must first create this data source and
+	point it to the pubs database for the code below to work.
+	
+	Install Sqlsrv32.dll version 2.65.0252 from SQL Server Service Pack 3 or a higher
+	version number. Run the following code:
+	
+	     SET SAFETY OFF
+	     LOCAL lcconnstring, lcdatafile, lcsysdbofile, lcviewmame, lcsysdbo
+	     LOCAL lncounter, lnhandle, lnchecksource
+	     LOCAL lbsourceexists, lbtableexists, lbconnexists, lbviewexists
+	     lnhandle = SQLCONNECT('PUBS','SA','')
+	     lnchecksource=sqltables(lnhandle,'TABLE','sourcetabs')
+	     SELECT sourcetabs
+	     SCAN
+	     IF UPPER(ALLTRIM(table_name))="DBO.TESTAMOUNT"
+	     lbsourceexists=.T.
+	     EXIT
+	     ENDIF
+	     ENDSCAN
+	     IF !lbsourceexists
+	     tmpcommand="CREATE TABLE dbo.TESTAMOUNT (MYKEY CHAR(10),"
+	     tmpcommand=tmpcommand+" MYAMT NUMERIC(18,4))"
+	     lnreturnresult=sqlexec(lnhandle,tmpcommand)
+	     ENDIF
+	     =sqldisconnect(lnhandle)
+	     SET EXCLUSIVE ON
+	     SET MULTILOCKS ON
+	     lcconnstring    =  "DSN=PUBS;DATABASE=pubs;UID=sa;PWD="
+	     lcconnname      =   "SQLTEST"
+	     lcdatafile      =   "TESTAMOUNT"
+	     lcsysdbofile    =   "dbo."+lcdatafile
+	     lcviewname      =   lcdatafile+"VIEW"
+	     lcsysdbo        =   "dbo."+lcdatafile+"."
+	     lncounter       =   0
+	     IF !FILE('SQLTEST.DBC')
+	     CLOSE DATA ALL
+	     CREATE DATABASE sqltest
+	     ELSE
+	     OPEN DATABASE sqltest
+	     ENDIF
+	     lntables=ADBOBJECTS(tablenames,'TABLE')
+	     IF lntables>0
+	     FOR i=1 TO ALEN(tablenames,1)
+	     IF UPPER(tablenames[i])=lcdatafile
+	     lbtableexists=.T.
+	     EXIT
+	     ENDIF
+	     NEXT
+	     ENDIF
+	     IF !lbtableexists
+	     CREATE TABLE testamount ( mykey c(10) , myamt N(18,4) )
+	     ELSE
+	     USE (lcdatafile) EXCL
+	     ZAP
+	     ENDIF
+	     lnconnections=ADBOBJECTS(CONNECTS,'CONNECTION')
+	     IF lnconnections>0
+	     FOR i=1 TO ALEN(CONNECTS,1)
+	     IF UPPER(CONNECTS[i])=lcconnname
+	     lbconnexists=.F.
+	     EXIT
+	     ENDIF
+	     NEXT
+	     ENDIF
+	     IF !lbconnexists
+	     CREATE CONNECTION &lcconnname CONNSTRING (lcconnstring)
+	     * Set connection properties.
+	     DBSETPROP('SQLTEST','Connection','Asynchronous', .F.)
+	     DBSETPROP('SQLTEST','Connection','BatchMode', .T.)
+	     DBSETPROP('SQLTEST','Connection','Comment', '')
+	     DBSETPROP('SQLTEST','Connection','DispLogin', 3)
+	     DBSETPROP('SQLTEST','Connection','ConnectTimeOut', 15)
+	     DBSETPROP('SQLTEST','Connection','DispWarnings', .T.)
+	     DBSETPROP('SQLTEST','Connection','IdleTimeOut', 0)
+	     DBSETPROP('SQLTEST','Connection','QueryTimeOut', 0)
+	     DBSETPROP('SQLTEST','Connection','Transactions', 2)
+	     ENDIF
+	     lnviews=ADBOBJECTS(viewnames,'VIEW')
+	     IF lnviews>0
+	     FOR i=1 TO ALEN(viewnames,1)
+	     IF UPPER(viewnames[i])=UPPER(lcviewname)
+	     lbviewexists=.T.
+	     EXIT
+	     ENDIF
+	     NEXT
+	     ENDIF
+	     IF !lbviewexists
+	     * Create View.
+	     CREATE SQL VIEW &lcviewname REMOTE CONNECT 'SQLTEST' SHARE ;
+	     AS SELECT * ;
+	     FROM &lcsysdbofile &lcdatafile ;
+	     ORDER BY &lcdatafile..mykey
+	     * Set view properties.
+	     DBSETPROP(lcviewname,'View','SendUpdates',.T.)
+	     DBSETPROP(lcviewname,'View','UpdateType',1)
+	     DBSETPROP(lcviewname,'View','WhereType',3)
+	     DBSETPROP(lcviewname,'View','BatchUpdateCount',1)
+	     DBSETPROP(lcviewname,'View','UseMemoSize',255)
+	     DBSETPROP(lcviewname,'View','FetchSize',100)
+	     DBSETPROP(lcviewname,'View','MaxRecords',-1)
+	     DBSETPROP(lcviewname,'View','Tables','dbo.'+lcdatafile)
+	     DBSETPROP(lcviewname,'View','Prepared',.F.)
+	     DBSETPROP(lcviewname,'View','FetchMemo',.F.)
+	     DBSETPROP(lcviewname,'View','CompareMemo',.F.)
+	     DBSETPROP(lcviewname,'View','FetchAsNeeded',.F.)
+	     DBSETPROP(lcviewname,'View','FetchSize',100)
+	     DBSETPROP(lcviewname,'View','Comment',"")
+	     DBSETPROP(lcviewname,'View','ShareConnection',.T.)
+	     * Set Key and Updateable fields.
+	     DBSETPROP(lcviewname+'.mykey','Field','KeyField',.T.)
+	     DBSETPROP(lcviewname+'.mykey','Field','Updatable',.T.)
+	     DBSETPROP(lcviewname+'.mykey','Field','UpdateName',lcsysdbo+'myKEY')
+	     DBSETPROP(lcviewname+'.mykey','Field','DataType',"C(12)")
+	     DBSETPROP(lcviewname+'.myamt','Field','KeyField',.F.)
+	     DBSETPROP(lcviewname+'.myamt','Field','Updatable',.T.)
+	     DBSETPROP(lcviewname+'.myamt','Field','UpdateName',lcsysdbo+'myamt')
+	     DBSETPROP(lcviewname+'.myamt','Field','DataType',"N(15,2)")
+	     * Open view and delete previous test records.
+	     ENDIF
+	     USE (lcviewname) ALIAS (lcviewname) IN 0
+	     SELECT (lcviewname)
+	     DELETE FROM &lcviewname
+	     REQUERY()
+	     * Start buffering and create test records.
+	     IF !USED(lcdatafile)
+	     USE (lcdatafile) IN 0
+	     ENDIF
+	     SELECT (lcdatafile)
+	     IF CURSORGETPROP("Buffering",lcdatafile)<>5
+	     CURSORSETPROP("Buffering",5,lcdatafile)
+	     ENDIF
+	     FOR lncounter = 1 TO 100
+	     m.nnumber = lncounter/100
+	     m.cmykey = PADL(ALLTRIM(STR(lncounter,10,0)),FSIZE("MYKEY") , '0')
+	     INSERT INTO testamount (mykey,myamt ) VALUES (m.cmykey,m.nnumber )
+	     NEXT
+	     TABLEUPDATE(.T.)
+	     * Copy to test records to View and SQL Server.
+	     IF !USED(lcviewname)
+	     USE (lcviewname)
+	     ENDIF
+	     SELECT (lcviewname)
+	     SCATTER MEMVAR MEMO BLANK
+	     SELECT (lcdatafile)
+	     GO TOP
+	     SCAN
+	     SELECT (lcdatafile)
+	     SCATTER MEMVAR MEMO
+	     SELECT (lcviewname)
+	     APPEND BLANK
+	     GATHER MEMVAR MEMO
+	     SELECT (lcdatafile)
+	     ENDSCAN
+	     SELECT (lcviewname)
+	     TABLEUPDATE(.T.)
+	     SELECT (lcdatafile)
+	     GO TOP
+	     SELECT (lcviewname)
+	     REQUERY()
+	     * Show Results in Browse Windows.
+	     DEFINE WINDOW BROWSER FROM 0,0 TO 50,40 IN SCREEN CLOSE ;
+	     FLOAT GROW MINIMIZE ZOOM
+	     SELECT (lcdatafile)
+	     GO TOP
+	     BROWSE WINDOW BROWSER NOWAIT
+	     SELECT (lcviewname)
+	     REQUERY()
+	     GO TOP
+	     MOVE WINDOW BROWSER BY 0,60
+	     BROWSE WINDOW BROWSER NOWAIT
+	     RELEASE WINDOW BROWSER
+	     CURSORSETPROP("Buffering",1,lcdatafile)
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbvfp kbvfp600fix kbMDAC250 
+	Technology        : kbVFPsearch kbAudDeveloper kbMDACSearch kbMDAC250 kbVFP300 kbVFP300b kbVFP500 kbVFP500a
+	Version           : WINDOWS:2.5,3.0,3.0b,5.0,5.0a
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

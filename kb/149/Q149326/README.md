@@ -1,0 +1,106 @@
+---
+layout: page
+title: "Q149326: FIX: Multiselect with ListView Causes Lost Mouse Events"
+permalink: kb/149/Q149326/
+---
+
+## Q149326: FIX: Multiselect with ListView Causes Lost Mouse Events
+
+	Article: Q149326
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 4.0,5.0
+	Operating System(s): 
+	Keyword(s): kbVBp500 kbGrpDSVB
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+	- Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+	- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+	- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When the MultiSelect property of the ListView control is set to True, neither
+	the MouseUp or Click event is generated when the ListView control itself is
+	clicked. The only event generated in this case is the MouseDown event. This
+	problem occurs only if the area clicked on does not contain a ListItem object.
+	If a ListItem is clicked, all three events are fired as expected.
+	
+	RESOLUTION
+	==========
+	
+	The fired MouseDown event can be used instead of the Click event to execute code
+	when a user clicks the white space of a ListView control. If it is vital that
+	some action be taken when the mouse button is released, one can manually trap
+	the WM_LBUTTONUP message sent to the control using a message trapping OCX or
+	tool. The Message Blaster OCX produced by WareWithAll is a good example of a
+	control that provides this functionality.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article. This bug has been fixed in Visual Basic 6.0.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce
+	------------------
+	
+	1. Start Visual Basic 4.0. Form1 is created by default.
+	
+	2. Add a single ListView control to the form.
+	
+	3. Set this property of the ListView control:
+	
+	  MultiSelect: True
+	
+	4. Add this code to Form1:
+	
+	     Private Sub Form_Load()
+	         Dim lv As ListItem
+	         Dim i As Integer
+	
+	         For i = 1 To 10
+	             Set lv = ListView1.ListItems.Add(, , "Item " & i)
+	         Next i
+	     End Sub
+	
+	     Private Sub ListView1_Click()
+	         Debug.Print "ListView1_Click"
+	     End Sub
+	
+	     Private Sub ListView1_MouseDown(Button As Integer, Shift As Integer, _
+	       x As Single, y As Single)
+	         Debug.Print "ListView1_MouseDown"
+	     End Sub
+	
+	     Private Sub ListView1_MouseUp(Button As Integer, Shift As Integer, _
+	     x As Single, y As Single)
+	         Debug.Print "ListView1_MouseUp"
+	     End Sub
+	
+	5. Press F5 or select Start from the Run menu to run the application. Click on a
+	  portion of the ListView control that does not contain a ListItem object. Note
+	  that only the MouseDown event is fired.
+	
+	Additional query words: kbVBp400bug kbVBp500fix kbVBp600fix kbVBp kbdsd kbDSupport kbControl
+	
+	======================================================================
+	Keywords          : kbVBp500 kbGrpDSVB 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500Search kbVBA500 kbVB500 kbVB400Search kbVB400 kbZNotKeyword3
+	Version           : :4.0,5.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

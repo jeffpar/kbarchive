@@ -1,0 +1,186 @@
+---
+layout: page
+title: "Q165404: NTVDM AV on Servers with Exchange cc:Mail Connector"
+permalink: kb/165/Q165404/
+---
+
+## Q165404: NTVDM AV on Servers with Exchange cc:Mail Connector
+
+	Article: Q165404
+	Product(s): Microsoft Windows NT
+	Version(s): WinNT:4.0
+	Operating System(s): 
+	Keyword(s): kbinterop kbWinNT400sp4fix
+	Last Modified: 09-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 4.0 
+	- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	You may receive the following error message on a computer running Windows NT
+	Server version 4.0 and the Microsoft Exchange Connector for Lotus cc:Mail on
+	Microsoft Exchange version 5.0:
+	
+	  NTVDM.EXE APPLICATION....
+	  Error the Instruction at 0x0f046f9a, The memory can not be read;
+	
+	A Drwtsn32.log should be created from this error and you should find the
+	following in the log:
+	
+	Application exception occurred:
+	       App: exe\ntvdm.dbg (pid=66)
+	       When: 10/31/1997 @ 20:2:35.562
+	       Exception number: c0000005 (access violation)
+	
+	*----> System Information <----*
+	       Computer Name: SERVERNAME
+	       User Name: USERNAME
+	       Number of Processors: 1
+	       Processor Type: x86 Family 6 Model 1 Stepping 9
+	       Windows Version: 4.0
+	       Current Build: 1381
+	       Current Type: Uniprocessor Free
+	       Registered Organization: Equitable Real Estate
+	       Registered Owner: Equitable Real Estate
+	
+	*----> Task List <----*
+	  0 Idle.exe
+	  2 System.exe
+	 21 smss.exe
+	 26 csrss.exe
+	 35 winlogon.exe
+	 41 services.exe
+	 44 lsass.exe
+	 68 spoolss.exe
+	 69 INV32CLI.exe
+	100 llssrv.exe
+	107 LOCATOR.exe
+	122 RpcSs.exe
+	126 AtSvc.exe
+	 85 WUSER32.exe
+	148 mad.exe
+	152 dsamain.exe
+	194 store.exe
+	203 emsmta.exe
+	318 ccmc.exe
+	331 logon.scr.exe
+	 66 ntvdm.exe
+	256 drwtsn32.exe
+	  0 _Total.exe
+	
+	State Dump for Thread Id 0x144
+	
+	eax=0000b84a ebx=00000000 ecx=00000000 edx=ffffffff esi=4300b84a
+	edi=00020000
+	eip=0f0471ba esp=0111fe30 ebp=0111fe3c iopl=0         nv up ei pl nz na pe
+	nc
+	cs=001b  ss=0023  ds=0023  es=0023  fs=003b  gs=0000
+	efl=00000202
+	
+	function: DpmiFreeXmem
+	       0f0471a0 55               push    ebp
+	       0f0471a1 8bec             mov     ebp,esp
+	       0f0471a3 83ec08           sub     esp,0x8
+	       0f0471a6 0fb7051c11090f
+	ds:0f09111c=b84a
+	                                 movzx   eax,word ptr [VdmTib+0xb6c
+	(0f09111c)]
+	       0f0471ad 56               push    esi
+	       0f0471ae 0fb7352011090f
+	ds:0f091120=4300
+	                                 movzx   esi,word ptr [VdmTib+0xb70
+	(0f091120)]
+	       0f0471b5 c1e610           shl     esi,0x10
+	       0f0471b8 0bf0             or      esi,eax
+	FAULT ->0f0471ba 8b06             mov     eax,[esi]
+	ds:4300b84a=????????
+	       0f0471bc 8945fc           mov     [ebp-0x4],eax
+	ss:0213e842=339e068e
+	       0f0471bf 8d45fc           lea     eax,[ebp-0x4]
+	ss:0213e842=339e068e
+	       0f0471c2 8b4e04           mov     ecx,[esi+0x4]
+	ds:4402a250=????????
+	       0f0471c5 894df8           mov     [ebp-0x8],ecx
+	ss:0213e842=339e068e
+	       0f0471c8 8d4df8           lea     ecx,[ebp-0x8]
+	ss:0213e842=339e068e
+	       0f0471cb 51               push    ecx
+	       0f0471cc 50               push    eax
+	       0f0471cd e8aa090000       call    DpmiFreeVirtualMemory (0f047b7c)
+	       0f0471d2 85c0             test    eax,eax
+	       0f0471d4 7d0c             jge     DpmiFreeXmem+0x42 (0f0471e2)
+	       0f0471d6 800d4011090f01
+	ds:0f091140=56
+	                                 or      byte ptr [VdmTib+0xb90
+	(0f091140)],0x1
+	
+	*----> Stack Back Trace <----*
+	
+	FramePtr ReturnAd Param#1  Param#2  Param#3  Param#4
+	Function Name
+	0111fe30 0f001227 00c74b9a 0111ff3c 0f001339 0f0025ac
+	ntvdm!DpmiFreeXmem [omap]  (FPO: [0,0,0])
+	0111fe3c 0f001339 0f0025ac 00000208 015003d0 7ffdf000
+	ntvdm!DpmiDispatch [omap]  (FPO: [0,0,0])
+	0111fe40 0f0025ac 00000208 015003d0 7ffdf000 00000000
+	ntvdm!EventVdmBop [omap]  (FPO: [0,0,0])
+	0111fe3c 0f001339 0f0025ac 00000208 015003d0 7ffdf000
+	ntvdm!cpu_simulate [omap] (FPO: Non-FPO [0,59,3])
+	0111fe40 0f0025ac 00000208 015003d0 7ffdf000 00000000
+	ntvdm!EventVdmBop [omap]  (FPO: [0,0,0])
+	0111ff3c 0f007dad ffffffff 0111ff80 0f00c474 00000003
+	ntvdm!cpu_simulate [omap] (FPO: Non-FPO [0,59,3])
+	0111ff48 0f00c474 00000003 015003d0 00000208 0000001f
+	ntvdm!host_main [omap] (FPO: Non-FPO [0,2,1])
+	0111ff80 0f00e92f 00000003 015003d0 01500410 00000208
+	ntvdm!main [omap] (FPO: Non-FPO [2,8,3])
+	0111ffc0 77f1b304 00000208 0000001f 7ffdf000 c0000005
+	ntvdm!mainCRTStartup [omap]
+	0111fff0 00000000 0f00e85d 00000000 00000000 77fa5aa0
+	kernel32!BaseProcessStart (FPO: Non-FPO [1,8,3])
+	00000000 0070018b 036e0016 0070018b 0070018b 020e06b9
+	ntvdm!__wargv
+	
+	CAUSE
+	=====
+	
+	Windows NT Virtual DOS Machine does not check the DPMI function for invalid
+	handles that free extended memory before those handles are passed to DPMI. The
+	DpmiFreeXmem() function will try to free the memory pointed to by the invalid
+	handle, which causes an unhandled access violation.
+	
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, obtain the latest service pack for Windows NT 4.0 or
+	Windows NT Server 4.0, Terminal Server Edition. For additional information,
+	please see the following article in the Microsoft Knowledge Base:
+	
+	  Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Windows NT 4.0 and Windows NT
+	Server 4.0, Terminal Server Edition. This problem was first corrected in Windows
+	NT 4.0 Service Pack 4.0 and Windows NT Server 4.0, Terminal Server Edition
+	Service Pack 4.
+	
+	
+	======================================================================
+	Keywords          : kbinterop kbWinNT400sp4fix 
+	Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch
+	Version           : WinNT:4.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

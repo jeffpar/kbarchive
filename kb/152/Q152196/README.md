@@ -1,0 +1,353 @@
+---
+layout: page
+title: "Q152196: How to Install and Use Microsoft Fax"
+permalink: kb/152/Q152196/
+---
+
+## Q152196: How to Install and Use Microsoft Fax
+
+	Article: Q152196
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): Win2000:95
+	Operating System(s): 
+	Keyword(s): kbtool kbualink97 win95kbfaq
+	Last Modified: 17-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 95 
+	-------------------------------------------------------------------------------
+	
+	
+	SUMMARY
+	=======
+	
+	This article describes how to install and use Microsoft Fax. The following
+	topics are discussed:
+	
+	- Installing Microsoft Fax
+	
+	- Sending and receiving faxes
+	
+	- Sending faxes using a calling card
+	
+	- Troubleshooting Microsoft Fax
+	
+	MORE INFORMATION
+	================
+	
+	For information on how to install Microsoft Fax on a Windows 98 or Windows 98
+	Second Edition operating system, click the article number below to view the
+	article in the Microsoft Knowledge base:
+	
+	  Q187549 Microsoft Fax Does Not Appear in Add/Remove Programs
+	
+	Installing Microsoft Fax
+	------------------------
+	
+	To use Microsoft Fax, you must add the Microsoft Fax information service to a
+	Microsoft Exchange profile. Before you can add the Microsoft Fax information
+	service to a Microsoft Exchange profile, the Microsoft Exchange and Microsoft
+	Fax components and a fax modem must already be installed in Windows 95.
+	
+	If the Microsoft Exchange and Microsoft Fax components are not already installed
+	in Windows 95, follow these steps to install them:
+	
+	1. In Control Panel, double-click Add/Remove Programs.
+	
+	2. Click the Windows Setup tab, click the Microsoft Exchange and Microsoft Fax
+	  check boxes to select them, and then click OK.
+	
+	3. Proceed through the Inbox Setup Wizard, click Finish, and then click Yes to
+	  restart your computer if you are prompted to do so.
+	
+	NOTE: If you have not already installed a modem in Windows 95, the Inbox Setup
+	Wizard automatically starts the Install New Modem Wizard. To install a modem,
+	verify that the "Don't detect my modem; I will select it from a list" check box
+	is not selected, click Next, proceed through the Install New Modem Wizard, and
+	then click Finish.
+	
+	Adding Microsoft Fax to a Microsoft Exchange Profile
+	----------------------------------------------------
+	
+	If the Microsoft Exchange and Microsoft Fax components and a fax modem have
+	already been installed in Windows 95, you can add the Microsoft Fax information
+	service to the Microsoft Exchange profile you want to use to send faxes by
+	following the steps in the appropriate section below:
+	
+	Adding Microsoft Fax to an Existing Microsoft Exchange Profile:
+	
+	1. Quit Microsoft Exchange if it is running.
+	
+	2. In Control Panel, double-click Mail And Fax.
+	
+	3. If the profile you want to use to send faxes is not the default profile,
+	  click Show Profiles, click the profile you want to use to send faxes, and
+	  then click Properties. If the profile you want to use to send faxes is the
+	  default profile, skip to step 4.
+	
+	4. On the Services tab, click Add, click Microsoft Fax in the list of available
+	  information services, click OK, and then click Yes in the dialog box that
+	  appears.
+	
+	5. Click the User tab, type your name in the Your Full Name box, and then type
+	  your area code and fax number in the Fax Number boxes.
+	
+	6. Click the Modem tab, click the modem you want to use to send faxes in the
+	  list of available fax modems, and then click OK.
+	
+	Adding Microsoft Fax to a New Microsoft Exchange Profile:
+	
+	1. Quit Microsoft Exchange if it is running.
+	
+	2. In Control Panel, double-click Mail And Fax.
+	
+	3. Click Show Profiles, and then click Add to start the Inbox Setup Wizard.
+	
+	4. Follow the instructions on the screen to add Microsoft Fax.
+	
+	Sending and Receiving Faxes
+	---------------------------
+	
+	After installing Microsoft Fax, you can send faxes using the Compose New Fax
+	Wizard from Microsoft Exchange, or another program. To send a fax using the
+	Compose New Fax Wizard, follow these steps:
+	
+	1. Click the Start button, point to Programs, point to Accessories, point to
+	  Fax, and then click Compose New Fax.
+	
+	2. Proceed through the Compose New Fax Wizard, and then click Finish.
+	
+	To send a fax from Microsoft Exchange, follow these steps:
+	
+	1. In Microsoft Exchange, click the Compose menu, and then click New Fax.
+	
+	2. Proceed through the Compose New Fax Wizard, and then click Finish.
+	
+	To send a fax from a program whose File menu contains a Send command, follow
+	these steps:
+	
+	1. Create or open the document you want to send in the program that you want to
+	  use to send the fax.
+	
+	2. On the File menu, click Send.
+	
+	3. On the Tools menu, click Fax Addressing Wizard.
+	
+	4. Proceed through the Fax Addressing Wizard, and then click Finish.
+	
+	5. Type a subject for the fax, and then type any message text that you want to
+	  include.
+	
+	6. On the File menu, click Send.
+	
+	To send a fax from a program whose File menu does not contain a Send command,
+	follow these steps:
+	
+	1. Create or open the document you want to send in the program that you want to
+	  use to send the fax.
+	
+	2. On the File menu, click Print.
+	
+	3. Choose Microsoft Fax from the list of printers, and then click OK.
+	
+	To receive a fax, click the fax machine icon on the taskbar, and then click
+	Answer Now in the Microsoft Fax Status dialog box.
+	
+	Sending Faxes Using a Calling Card
+	----------------------------------
+	
+	To configure Microsoft Fax to use a calling card, follow these steps:
+	
+	1. Quit Microsoft Exchange if it is running.
+	
+	2. In Control Panel, double-click Mail And Fax.
+	
+	3. Click Microsoft Fax in the list of information services, and then click
+	  Properties.
+	
+	4. Click the Dialing tab, click Dialing Properties, and then click the Dial
+	  Using Calling Card check box to select it.
+	
+	5. Click the type of calling card you want to use in the Calling Card To Use
+	  box, type your calling card number in the Calling Card Number box, and then
+	  click OK.
+	
+	Troubleshooting Microsoft Fax
+	-----------------------------
+	
+	Troubleshooting Sending Faxes:
+	
+	If you are unable to send faxes using Microsoft Fax, use the following steps to
+	troubleshoot the problem. After performing each step, check to see if the issue
+	has been resolved.
+	
+	1. If you normally use the Compose New Fax wizard to send a fax, try sending the
+	  fax using one-off addressing instead. To do so, create a new message in
+	  Microsoft Exchange and use the following address syntax on the To line:
+	
+	     [fax:username@9999999]
+	
+	  To create a new message in Microsoft Exchange, double-click the Inbox icon on
+	  the desktop to start Microsoft Exchange, and then click New Message on the
+	  Compose menu.
+	
+	2. Verify that the Outbox is empty. If the Outbox is not empty, empty it by
+	  deleting any messages it contains, or by moving the messages to a different
+	  folder.
+	
+	  If you are unable to delete or move messages in the Outbox, delete the
+	  messages manually by deleting all files in the Windows\Spool\Fax folder.
+	
+	3. Create a new Microsoft Exchange profile that contains only the Microsoft Fax
+	  information service. To do so, follow these steps:
+	
+	  NOTE: These steps should be performed even if the Microsoft Exchange profile
+	  that you currently use to send faxes contains only the Microsoft Fax
+	  information service.
+	
+	  a. In Control Panel, double-click Mail And Fax.
+	
+	  b. Click Show Profiles, and then click Add. Verify that the Microsoft Fax
+	     check box is selected, click any other information service check boxes
+	     that are listed to clear them, and then click Next.
+	
+	  c. Proceed through the remainder of the Inbox Setup Wizard, and then click
+	     Finish.
+	
+	  If you have more than one Microsoft Exchange profile, you can configure
+	  Microsoft Exchange to prompt you for the profile to use each time you start
+	  it. To do so, follow these steps:
+	
+	  a. In Microsoft Exchange, click Options on the Tools menu, and then click the
+	     General tab.
+	
+	  b. In the When Starting Microsoft Exchange area, click "Prompt for a profile
+	     to be used," and then click OK.
+	
+	  c. On the File menu, click Exit And Log Off.
+	
+	  d. Restart Microsoft Exchange.
+	
+	4. Remove and reinstall Microsoft Exchange and Microsoft Fax. To do so, follow
+	  these steps:
+	
+	  a. Quit Microsoft Exchange if it is running.
+	
+	  b. In Control Panel, double-click Add/Remove Programs.
+	
+	  c. Click the Windows Setup tab, and then click the Microsoft Exchange check
+	     box to clear it. When you are prompted to remove Microsoft Fax or any
+	     other components that require Microsoft Exchange, do so.
+	
+	  d. Click OK.
+	
+	  e. When you are prompted to restart your computer, click Yes.
+	
+	  f. In Control Panel, double-click Add/Remove Programs.
+	
+	  g. Click the Windows Setup tab, and then click the Microsoft Exchange and
+	     Microsoft Fax check boxes to select them. If you also removed other
+	     components, click the check boxes for those components to select them
+	     also.
+	
+	  h. Click OK and then proceed through the Inbox Setup Wizard to create a
+	     Microsoft Exchange profile that contains only the Microsoft Fax
+	     information service.
+	
+	Troubleshooting Receiving Faxes:
+	
+	If you are unable to receive faxes using Microsoft Fax, use the following steps
+	to troubleshoot the problem. After performing each step, check to see if the
+	issue has been resolved.
+	
+	1. Disable high-speed transmission and error correction mode. To do so, follow
+	  these steps:
+	
+	  a. In Control Panel, double-click Mail And Fax.
+	
+	  b. Click Microsoft Fax in the list of information services, and then click
+	     Properties.
+	
+	  c. Click the Modem tab, click the fax modem that you use to receive faxes,
+	     and then click Properties.
+	
+	  d. Click Advanced, click the Disable High Speed Transmission and Disable
+	     Error Correction Mode check boxes to select them, and then click OK.
+	
+	2. Reduce the size of the transmit and receive buffers. To do so, follow these
+	  steps:
+	
+	  a. In Control Panel, double-click Modems.
+	
+	  b. Click the fax modem that you use to receive faxes, and then click
+	     Properties.
+	
+	  c. Click the Connection tab, and then click Port Settings.
+	
+	  d. Move the Receive Buffer and Transmit Buffer sliders one setting to the
+	     left (toward the Low setting), and then click OK.
+	
+	  If the problem persists, repeat steps A-D and move the Receive Buffer and
+	  Transmit Buffer sliders one more setting to the left. Repeat this process
+	  until the Receive Buffer and Transmit Buffer sliders are all the way to the
+	  left or the problem no longer occurs.
+	
+	3. Disable the Reject Pages Received With Errors option in Microsoft Fax. To do
+	  so, follow these steps:
+	
+	  a. In Control Panel, double-click Mail And Fax.
+	
+	  b. Click Microsoft Fax in the list of information services, and then click
+	     Properties.
+	
+	  c. Click the Modem tab, click the fax modem that you use to receive faxes,
+	     and then click Properties.
+	
+	  d. Click Advanced, click the Reject Pages Received With Errors check box to
+	     clear it, and then click OK.
+	
+	If these steps do not correct the problem, contact the manufacturer of the modem
+	to inquire whether an updated modem setup information (.inf) file is available.
+	
+	For related information about troubleshooting issues with Exchange, see the
+	following article in the Microsoft Knowledge Base:
+	
+	  Q152790 Clicking Tools Menu Hangs Microsoft Exchange
+	
+	NOTE: If the problem persists after performing the above steps, the problem may
+	be caused by line noise. To determine if this is the case, contact your local
+	telephone company and request that they check your telephone line for line
+	noise.
+	
+	REFERENCES
+	==========
+	
+	For information about using the network fax service to configure a network fax
+	server or a network fax client, please see the following article in the
+	Microsoft Knowledge Base:
+	
+	  Q141292 How to Set Up a Fax Server or Fax Client with Microsoft Fax
+	
+	For information about sending a fax using Microsoft Fax configured to use the
+	"Wait for calling card prompt (bong)" or "$" dialing rule, please see the
+	following article in the Microsoft Knowledge Base:
+	
+	  Q138897 MS Fax Does Not Recognize the "$" Calling Card Dialing Rule
+	
+	For information about the FIFO settings for a 16550 UART chip and how to change
+	them, please see the following article in the Microsoft Knowledge Base:
+	
+	  Q131016 Settings for the 16550 UART FIFO Buffer
+	
+	Additional query words: msfax w95usefaq
+	
+	======================================================================
+	Keywords          : kbtool kbualink97 win95 kbfaq
+	Technology        : kbWin95search kbZNotKeyword3
+	Version           : Win2000:95
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

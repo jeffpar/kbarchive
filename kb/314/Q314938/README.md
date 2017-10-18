@@ -1,0 +1,107 @@
+---
+layout: page
+title: "Q314938: Internet Information Services Does Not Log Requests Properly"
+permalink: kb/314/Q314938/
+---
+
+## Q314938: Internet Information Services Does Not Log Requests Properly
+
+	Article: Q314938
+	Product(s): Internet Information Server
+	Version(s): 4.0,5.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Services version 5.1 
+	- Microsoft Internet Information Services version 5.0 
+	- Microsoft Internet Information Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you turn on logging for a Web site through the Internet Services Manager,
+	some or all of the Hypertext Transfer Protocol (HTTP) requests may not be logged
+	for that Web site, or for portions of that Web site. Also, if logging is not
+	turned on for a particular site, logs may be generated for incoming HTTP
+	requests.
+	
+	CAUSE
+	=====
+	
+	Occasionally, when you set or modify logging on multiple levels of Internet
+	Information Services (IIS), the related metabase entry is orphaned, which leaves
+	the metabase out of synchronization with the Internet Services Manager.
+	
+	NOTE: A new Web site is set to log using the World Wide Web Consortium (W3C)
+	Extended Logging Format by default.
+	
+	RESOLUTION
+	==========
+	
+	You must delete the metabase entry that causes this problem in order to
+	synchronize the metabase with the Internet Services Manager.
+	
+	WARNING: If you edit the metabase incorrectly, you can cause serious problems
+	that may require you to reinstall any product that uses the metabase. Microsoft
+	cannot guarantee that problems that result if you incorrectly edit the metabase
+	can be solved. Edit the metabase at your own risk.
+	
+	NOTE: Always back up the metabase before you edit it.
+	
+	To delete the metabase entry, follow these steps:
+	
+	1. At a command prompt, type "net stop iisadmin /y" (without the quotation
+	  marks) to stop the IISADMIN service and all services that run inside
+	  IISADMIN, such as the World Wide Web Publishing Service.
+	
+	2. At a command prompt, switch to the \WINNT\System32\InetSrv\AdminSamples
+	  directory for IIS 4.0, or to the \InetPub\AdminScripts directory for IIS
+	  version 5.0 or 5.1.
+	
+	3. Run the following command to delete the entry that is causing the problem:
+	
+	  cscript adsutil.vbs delete w3svc/<PathToKey>/DontLog
+	
+	For example, run the following command on an entire Web site, where 1 is the
+	number of the Web site in the metabase, and 1 is the Default Web Site:
+	
+	  cscript adsutil.vbs delete w3svc/1/DontLog
+	
+	Run the following command on a directory:
+	
+	  cscript adsutil.vbs delete w3svc/1/MyDir/DontLog
+	
+	Run the following command on a file:
+	
+	  cscript adsutil.vbs delete w3svc/1/MyDir/MyFile.asp/DontLog
+	
+	4. Restart the IISADMIN service and related services to reload the metabase and
+	  apply the change.
+	
+	MORE INFORMATION
+	================
+	
+	For additional information about the IIS Metabase, click the article numbers
+	below to view the articles in the Microsoft Knowledge Base:
+	
+	  Q240941 An Introduction to the IIS Metabase
+	
+	  Q240225 Description of Adsutil and MetaEdit Utilities Used to Modify the
+	  Metabase
+	
+	Additional query words: iis 5 dontlog
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbiisSearch kbiis500 kbiis400 kbiis510
+	Version           : :4.0,5.0
+	Issue type        : kbprb
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

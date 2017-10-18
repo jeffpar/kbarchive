@@ -1,0 +1,60 @@
+---
+layout: page
+title: "Q134375: Changing Password Clears the Remember My Password Check Box"
+permalink: kb/134/Q134375/
+---
+
+## Q134375: Changing Password Clears the Remember My Password Check Box
+
+	Article: Q134375
+	Product(s): The Microsoft Network
+	Version(s): WINDOWS:1.2,1.3,2.0,2.5
+	Operating System(s): 
+	Keyword(s): kbenv kbmsn
+	Last Modified: 08-OCT-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The Microsoft Network versions 1.2, 1.3, 2.0, 2.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If you click the Remember My Password check box to select it in the MSN, The
+	Microsoft Network Sign-In screen, the check box may be cleared the next time you
+	sign in to MSN. Also, the number of asterisks in the Password box may be
+	different from the length of your password.
+	
+	CAUSE
+	=====
+	
+	These symptoms may occur when you use a password to log on to Windows 95/98 and
+	change your MSN password to a password with 16 characters.
+	
+	NOTE: The Remember My Password option works with a long password for MSN if you
+	do not use a password to log on to Windows 95/98; however, if you do not use a
+	Windows 95/98 password, you cannot use the user profiles feature of Windows
+	95/98.
+	
+	RESOLUTION
+	==========
+	
+	If you use a password to log on to Windows 95/98, you have two options:
+	
+	- Always enter your MSN password, and do not use the Remember My Password
+	  option.
+	
+	- Change your MSN password to less than 16 characters.
+	
+	Additional query words: msn pass word
+	
+	======================================================================
+	Keywords          : kbenv kbmsn 
+	Technology        : kbMSNSearch kbMSN200 kbMSN130 kbMSN250 kbMSN120
+	Version           : WINDOWS:1.2,1.3,2.0,2.5
+	Issue type        : kbprb
+	
+	=============================================================================
+	

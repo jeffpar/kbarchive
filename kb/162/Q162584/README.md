@@ -1,0 +1,120 @@
+---
+layout: page
+title: "Q162584: ADT/ODE: Developing a Plan to Deploy Run-Time Applications"
+permalink: kb/162/Q162584/
+---
+
+## Q162584: ADT/ODE: Developing a Plan to Deploy Run-Time Applications
+
+	Article: Q162584
+	Product(s): Microsoft Access Distribution Kit
+	Version(s): WINDOWS:2.0,7.0
+	Operating System(s): 
+	Keyword(s): kbusage
+	Last Modified: 24-JUN-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Office 97 Developer Edition 
+	- Microsoft Access Developer's Toolkit, versions 2.0, 7.0 
+	-------------------------------------------------------------------------------
+	
+	Novice: Requires knowledge of the user interface on single-user computers.
+	
+	SUMMARY
+	=======
+	
+	This article discusses some of the issues to consider when you distribute a
+	run-time application.
+	
+	These issues are discussed in general terms, and may not apply to your particular
+	situation; also, there may be issues you need to consider in your own situation
+	that are not mentioned in this article. The purpose of this article is to
+	present tips for successfully deploying your application and implementing an
+	upgrade strategy.
+	
+	MORE INFORMATION
+	================
+	
+	Developing a well thought-out plan for distributing or upgrading your run- time
+	application is arguably the most important step toward a successful deployment
+	of the application. When you create your distribution plan, consider the
+	following topics.
+	
+	Testing
+	-------
+	
+	In general, the more time you allow for the testing phase of your application,
+	the better your finished product will be. Consider these issues when you create
+	a plan to test your application:
+	
+	- Develop a systematic plan for testing each feature of the upgraded
+	  application.
+	
+	- If possible, emulate the production environment in your test environment so
+	  you can test the application in a user environment.
+	
+	- Enlist assistance from users when testing your application; the way you
+	  perform a task in the application may be different from the way a user will
+	  do it.
+	
+	- Try to stress test the application with multiple users before you distribute
+	  the upgrade so you can resolve any performance or locking issues that arise.
+	
+	- Arrange to conduct pilot tests of your Setup program in a production
+	  environment to be sure the application can be installed smoothly.
+	
+	User Environment
+	----------------
+	
+	Consider the production environment in which you will set up your application:
+	
+	- Make sure all of your users have the minimum required software and hardware
+	  to run your application.
+	
+	- Notify users of the installation in advance, so they are aware of it and are
+	  expecting it.
+	
+	- Time the installation so it does not add unnecessary stress by conflicting
+	  with other user activities, such as end-of-month responsibilities.
+	
+	Upgrading an Existing Application
+	---------------------------------
+	
+	Following are some general considerations when you are ready to upgrade your
+	application.
+	
+	- Always create a current backup of the existing application before you
+	  upgrade.
+	
+	- Microsoft Access converts most databases without difficulty; however, be sure
+	  to allow time to resolve unexpected issues that may arise when you convert
+	  your database.
+	
+	- If all users will not upgrade at the same time, devise a systematic strategy
+	  for distributing the upgrade.
+	
+	- If users need additional training, schedule the training to coincide with the
+	  distribution of the upgrade.
+	
+	- If possible, plan for someone to be on site when you first distribute the
+	  upgrade so you can address any setup issues that arise.
+	
+	For more specific information about upgrading an existing run-time application in
+	Microsoft Access 97, please see the following article in the Microsoft Knowledge
+	Base:
+	
+	  Q162583 ODE97: Upgrading Distributed Run-Time Applications in Access 97
+	
+	Additional query words: ADT ODE implement
+	
+	======================================================================
+	Keywords          : kbusage 
+	Technology        : kbOfficeSearch kbAudDeveloper kbAccessSearch kbOffice97Search kbAccessDevTK200 kbOffice97 kbZNotKeyword3 kbAccessDevTK700 kbOffice97DevSearch
+	Version           : WINDOWS:2.0,7.0
+	Hardware          : x86
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

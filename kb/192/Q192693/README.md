@@ -1,0 +1,269 @@
+---
+layout: page
+title: "Q192693: BUG: License Error with ActiveX Control Added at Run-Time"
+permalink: kb/192/Q192693/
+---
+
+## Q192693: BUG: License Error with ActiveX Control Added at Run-Time
+
+	Article: Q192693
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:6.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 29-JUL-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	If you create an application that uses an ActiveX control that you add at
+	run-time with syntax similar to the following:
+	
+	     THISFORM.AddObject("myctrl","olecontrol","mscomctllib.listviewctrl.2")
+	
+	Then you build this application into an executable file, create a distribution
+	with the Setup Wizard, and install your application on other computers, when you
+	attempt to run code similar to the preceding code you receive an error like the
+	following:
+	
+	     Program Error
+	     OLE error code 0x80040112: Appropriate license for this class not found.
+	
+	CAUSE
+	=====
+	
+	A distribution created with the Visual FoxPro Setup Wizard only allows a
+	run-time license, while the AddObject method requires a design time license.
+	
+	RESOLUTION
+	==========
+	
+	Add the control you want to use into a class that is saved in a Visual Class
+	library or into a class created with the DEFINE CLASS command. Next, add an
+	instance of the class at run-time instead of adding the control. Please see the
+	MORE INFORMATION section for details.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article. We are researching this bug and will post new
+	information here in the Microsoft Knowledge Base as it becomes available.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	The following example demonstrates using the DEFINE CLASS command to create a
+	subclassed OleControl, then adds the subclassed OleControl at run-time.
+	
+	1. Paste the following code into a program (.PRG) file:
+	
+	        PUBLIC oform1
+	        oform1=CREATEOBJECT("form1")
+	        oform1.Show
+	        READ EVENTS
+	        RETURN
+	
+	        DEFINE CLASS form1 AS form
+	           AutoCenter = .T.
+	           cNextKey = "1_"
+	           Name = "Form1"
+	           Caption = "Treeview Demo Form"
+	
+	           ADD OBJECT cmdExit AS commandbutton WITH ;
+	              Top = 204, ;
+	              Left = 276, ;
+	              Height = 27, ;
+	              Width = 84, ;
+	              Caption = "E\<xit"
+	
+	           ADD OBJECT cmdAddLV AS commandbutton WITH ;
+	              Top = 204, ;
+	              Left = 10, ;
+	              Height = 27, ;
+	              Width = 106, ;
+	              Caption = "Add Listview"
+	
+	           ADD OBJECT cmdAddLVClass AS commandbutton WITH ;
+	              Top = 204, ;
+	              Left = 130, ;
+	              Height = 27, ;
+	              Width = 136, ;
+	              Caption = "Add Listview Subclass"
+	
+	           PROCEDURE Destroy
+	              CLEAR EVENTS
+	           ENDPROC
+	
+	           PROCEDURE cmdExit.Click
+	              thisform.release()
+	           ENDPROC
+	
+	           PROCEDURE cmdAddLV.Click
+	
+	             * The following AddObject causes the error.
+	          Thisform.AddObject('Lv1','olecontrol','mscomctllib.listviewctrl.2')
+	          Thisform.SetLVProps()
+	
+	           ENDPROC
+	
+	           PROCEDURE cmdAddLVClass.Click
+	              * The following code shows the workaround. The class OC1 is
+	              * defined in the last 3 lines of this program.
+	              * Alternanely, you could use an object stored in a Visual Class
+	              * library (.vcx) file.
+	
+	           Thisform.NewObject('LV1','OC1')
+	
+	              Thisform.SetLVProps()
+	           ENDPROC
+	
+	           PROCEDURE SetLVProps
+	              thisform.setall('enabled', .F.,'commandbutton')
+	              WITH thisform.LV1
+	                 .visible = .t.
+	                 .height = 190
+	                 .left = 75
+	                 .width = 250
+	                 .view = 2
+	                 .listitems.add(,,"List Item 1",,)
+	                 .listitems.add(,,"List Item 2",,)
+	              ENDWITH
+	              thisform.cmdExit.enabled = .t.
+	              thisform.cmdExit.setfocus()
+	           ENDPROC
+	        ENDDEFINE
+	
+	        DEFINE class OC1 as olecontrol
+	           OleClass = 'mscomctllib.listviewctrl.2'
+	        ENDDEFINE
+	
+	2. Add the program to a project and build the project into an executable (.exe)
+	  file. Name the file lvtest.exe.
+	
+	3. Create a directory called TestDir and place a copy of the executable file
+	  from the preceding Step 2 into the directory.
+	
+	4. Run the Visual FoxPro Setup Wizard.
+	
+	5. In the Setup Wizard dialog box, "Step 1 [ASCII 150] Locate Files" is
+	  displayed in the list box. In the Distribution Files text box select the
+	  TestDir directory you created in Step 3, click Select and then click Next.
+	
+	6. In the Setup Wizard dialog box, "Step 2 [ASCII 150] Specify Components" is
+	  displayed in the text box. In the Application Components option group, select
+	  the "Visual FoxPro runtime" check box.
+	
+	7. Next, select the ActiveX controls check box. The Add ActiveX Controls dialog
+	  box appears.
+	
+	8. Scroll through the "Select ActiveX controls to install" list box, select
+	  "Microsoft ListView Control, version 6.0", click the Close button to exit the
+	  dialog box and then click Next.
+	
+	9. In the "Step 3 [ASCII 150] Create Disk Image Directory" step of the Setup
+	  Wizard, select or type in the directory name you want to use for the creation
+	  of your disk images, and then click Next.
+	
+	10. In "Step 4 [ASCII 150] Specify Setup Options", of the Setup Wizard dialog
+	  box, type "ListView Test App" in the "Setup dialog box caption" text box and
+	  type "None" in the Copyright information text box and then click Next.
+	
+	  NOTE: In each case, type in the text without the quotation marks.
+	
+	11. In the "Step 5 [ASCII 150] Specify Default Destination" step of the Setup
+	  Wizard dialog box, click Next.
+	
+	12. In the "Step 6 [ASCII 150] Change File Settings" text box, in the Setup
+	  Wizard dialog box, select the PM Item check box in the grid next to
+	  Lvtest.exe (the executable file name).
+	
+	13. In the "Program Group Menu Item" dialog box, type "ListView Test App" in the
+	  Description text box, and "%s\lvtest.exe" in the Command Line text box.
+	
+	  NOTE: Omit the quotes.
+	
+	  Click OK to close the Program Group Menu Item Dialog box, click Next and then
+	  click Finish to complete running the Setup Wizard.
+	
+	14. In the "Setup Wizard Disk Statistics" dialog box, click Done.
+	
+	15. The distribution files will be in a subdirectory of the directory you listed
+	  in "Step 3 - Create Disk Image Directory". The subdirectory is named
+	  disk144. You can install the distribution you have created by copying the
+	  contents of the Disk1, Disk2, Disk3 and Disk4 directories to diskettes and
+	  then run the Setup.exe program from the first diskette. You can also connect
+	  to the computer that contains the distribution through a network to run the
+	  setup. The installation should be on a computer that does not already have
+	  Visual FoxPro 6.0 or Visual Studio 6.0 installed.
+	
+	16. On the installation computer, from the Windows Taskbar, select Start, point
+	  to Programs, and then point to Visual FoxPro Applications. Click the
+	  ListView Test App program item.
+	
+	17. When the application starts, click the Add Listview button. An error like
+	  the one listed in the SYMPTOMS section occurs.
+	
+	18. Select Cancel, and repeat Step 16. This time, click the Add Listview
+	  Subclass button, and the error does not occur.
+	
+	The preceding example uses a subclass of the OleControl class called OC1. This
+	subclass is programmatically created with the DEFINE CLASS command contained in
+	the last three lines of code in the program example.
+	
+	Alternately, you could create a subclass of the OleControl class with the Visual
+	Class Designer. Here are the steps to accomplish this task:
+	
+	1. Type the following in the Command window:
+	
+	  
+	
+	        CREATE CLASS
+	
+	2. In the New Class dialog box, type a class name. You could use OC1 to be
+	  consistent with the preceding example.
+	
+	3. Select OleControl in the Based On list box.
+	
+	4. In the Store In text box, type the name of a .vcx file in which to store the
+	  class, or select an existing .vcx file after pressing the ellipse [...]
+	  button. Use OCTest for the purposes of this example.
+	
+	5. Click the OK button to create the class.
+	
+	6. In the Insert Object dialog box, select the Create Control option button.
+	  From the Object Type list, select the ActiveX control you want to use. In
+	  order to be consistent with the preceding example, select the "Microsoft
+	  ListView Control, version 6.0" and then click OK. The new class displays in
+	  the Class Designer. You may now save the class.
+	
+	7. The following code would add an instance of the object at run-time in the
+	  preceding example:
+	
+	  
+	
+	        Thisform.NewObject('LV1','OC1', 'OCTest.vcx')
+	
+	You need to be sure that the .vcx file was added to your project before building
+	your .exe so that the NewObject command works correctly.
+	
+	Additional query words: kbVFp600bug kbActiveX kbvfp600
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+	Version           : WINDOWS:6.0
+	Issue type        : kbbug
+	Solution Type     : kbpending
+	
+	=============================================================================
+	

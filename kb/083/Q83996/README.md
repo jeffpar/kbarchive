@@ -1,0 +1,69 @@
+---
+layout: page
+title: "Q83996: Windows Software Development Kit Installation Procedure"
+permalink: kb/083/Q83996/
+---
+
+## Q83996: Windows Software Development Kit Installation Procedure
+
+	Article: Q83996
+	Product(s): Microsoft Windows Software Development Kit
+	Version(s): WINDOWS:3.1
+	Operating System(s): 
+	Keyword(s): kb16bitonly
+	Last Modified: 06-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows Software Development Kit (SDK) 3.1 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The recommended installation procedure for version 3.1 of the Microsoft Windows
+	Software Development Kit (SDK) consists of the following five steps:
+	
+	1. Install the final retail release of the Windows graphical operating
+	  environment, version 3.1.
+	
+	2. Do not install the Windows SDK over another version of the Windows SDK. The
+	  Windows SDK installation procedure is not designed to update a previous
+	  version. NOTE: The Windows SDK version 3.1 can create applications compatible
+	  with Windows 3.0. For more information, see Chapter 3 of the "Microsoft
+	  Windows Software Development Kit: Getting Started" manual for version 3.1,
+	  starting on page 29.
+	
+	  If multiple (more than one) versions of the SDK are installed on the same
+	  machine, each must be installed in a separate directory tree. A pair of batch
+	  files that change the PATH, INCLUDE, and LIB environment variables
+	  appropriately for the two versions of the SDK are also very helpful.
+	
+	3. Make sure enough hard disk space is available. The amount of space required
+	  depends on the components installed and ranges between 9.6 and 24.3 megabytes
+	  (MB) of space. The program requires an additional 4 MB of free space for
+	  scratch files created in the installation process. The SDK installation
+	  program does not copy any files unless it detects enough free hard-disk space
+	  for a successful installation.
+	
+	4. Run the SDK installation program to install the final retail release of the
+	  Windows 3.1 SDK. For more information on this procedure, see Chapter 1 of the
+	  "Microsoft Windows SDK: Getting Started" manual.
+	
+	5. If the Windows SDK version 3.1 is used with the Microsoft C Optimizing
+	  Compiler, version 6.0, install the C run-time libraries and header files from
+	  the disk labeled "Microsoft C 6.0 Run-time Libraries" provided with the SDK.
+	  To install the libraries, place the disk into a drive and run the INSTALL.BAT
+	  file on the disk. For more information on this procedure, see page 3 of the
+	  "Microsoft Windows SDK: Getting Started" manual.
+	
+	Additional query words: 3.10
+	
+	======================================================================
+	Keywords          : kb16bitonly 
+	Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+	Version           : WINDOWS:3.1
+	
+	=============================================================================
+	

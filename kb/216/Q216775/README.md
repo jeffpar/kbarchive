@@ -1,0 +1,120 @@
+---
+layout: page
+title: "Q216775: SBS: Console User List Empty When Trying to Manage Users"
+permalink: kb/216/Q216775/
+---
+
+## Q216775: SBS: Console User List Empty When Trying to Manage Users
+
+	Article: Q216775
+	Product(s): Microsoft Windows NT
+	Version(s): winnt:4.0,4.0a
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 20-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft BackOffice Small Business Server versions 4.0, 4.0a 
+	- Microsoft Windows NT Workstation version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	You see either of the following symptoms:
+	
+	1. When you attempt to manage network users through the Manage Server Console on
+	  the Small Business Server (SBS) computer, the User List is empty.
+	
+	2. When you attempt to manage network users through the Remote Manage Server
+	  Console utility (REMOTECSL) for Windows NT Workstation, the User List is
+	  empty.
+	
+	NOTE: In either case, however, when you click Add a New User and then click
+	Cancel, the list is then populated with the user accounts.
+	
+	CAUSE
+	=====
+	
+	The symptoms on the Small Business Server result from the installation of the
+	Windows NT Option Pack without applying the BackOffice Update utility.
+	
+	The symptoms on the Windows NT Workstation computer result from a required
+	console file not having been updated. The updated file is included in the
+	BackOffice Update utility.
+	
+	RESOLUTION
+	==========
+	
+	To resolve the problem, do the following:
+	
+	1. Running the BackOffice Update utility (Boupdate.exe) on the server re-creates
+	  the necessary dependancies required in order for the Manage Server Console to
+	  operate properly with Microsoft Internet Information Server 4.0 (included in
+	  the Windows NT Option Pack).
+	
+	  NOTE: To obtain Boupdate.exe, contact Microsoft Product Support Services. For
+	  a complete list of Microsoft Product Support Services phone numbers and
+	  information on support costs, please go to the following address on the World
+	  Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	
+	2. To fix the Remote Console utility on the Windows NT Workstation computer, do
+	  the following:
+	
+	
+	  1. Click Start, click Programs, and then click Command Prompt.
+	
+	  2. At the command prompt, type "mkdir boupdate" (without the quotation
+	     marks).
+	
+	  3. Insert a floppy disk containing boupdate.exe into the floppy disk drive.
+	
+	  4. At the command prompt, type "copy a:\boupdate.exe c:\boupdate" (without
+	     the quotation marks).
+	
+	     NOTE: This assumes that the floppy disk drive is drive A and the local
+	     drive is drive C.
+	
+	  5. At the command prompt, type "cd boupdate" (without the quotation marks).
+	
+	  6. At the command prompt, type "boupdate.exe /c" (without the quotation
+	     marks).
+	
+	  7. A dialog box will appear asking for a location to which to copy the files.
+	     Type "c:\boupdate" (without the quotation marks) in the text box, or you
+	     can browse to the directory by using the Browse button.
+	
+	  8. Click OK. The files are then extracted to c:\boupdate.
+	
+	  9. At the command prompt, type the following: "copy saminfo1.ocx
+	     c:\smallbusiness" (without the quotation marks).
+	
+	     NOTE: This assumes that the installation of SBS was done on drive C.
+	
+	  10. At the command prompt, type "regsvr32 c:\smallbusiness\saminfo1.ocx"
+	     (without the quotation marks).
+	
+	  11. Click OK to close the dialog box stating that the file has been
+	     successfully registered.
+	
+	  12. The c:\boupdate folder and its contents can now be deleted.
+	
+	
+	
+	
+	
+	Additional query words: smallbiz
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbAudDeveloper kbSBServSearch kbSBServ400 kbSBServ400a
+	Version           : winnt:4.0,4.0a
+	Issue type        : kbprb
+	
+	=============================================================================
+	

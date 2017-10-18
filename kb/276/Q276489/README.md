@@ -1,0 +1,113 @@
+---
+layout: page
+title: "Q276489: Patch Available for Web Server Folder Traversal Vulnerability"
+permalink: kb/276/Q276489/
+---
+
+## Q276489: Patch Available for Web Server Folder Traversal Vulnerability
+
+	Article: Q276489
+	Product(s): Internet Information Server
+	Version(s): 4.0,5.0
+	Operating System(s): 
+	Keyword(s): kbWin2000PreSP2Fix
+	Last Modified: 08-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Services version 5.0 
+	- Microsoft Internet Information Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: If you download and install the fix included in this article onto a computer running IIS 3.0, the IIS 3.0 Web, FTP, and Proxy services will fail.  This fix should only be applied to computers running IIS 4.0 or later.  To verify your version of IIS, follow these steps:
+	
+	1. Click Start, click Settings, and then click Control Panel.
+	
+	2. Double-click Administrative Tools, and then click the Services icon.
+	
+	3. In the Services list, locate the IIS Admin Service.
+	
+	If the IIS Admin Service is listed, download and apply the fix included in this article.  
+	
+	If the IIS Admin Service is not listed, your version of IIS is not vulnerable to the problem that is corrected by these fixes.  Therefore, no action is needed. IIS 3.0 is not vulnerable and does not need this fix.
+	
+	SYMPTOMS
+	========
+	
+	A security vulnerability exists in Internet Information Services 5.0 and
+	Internet Information Server 4.0 that may allow a malicious user to gain access
+	to files and folders that are located on the logical drive containing the Web
+	folders. This vulnerability can potentially allow a Web site visitor to take a
+	wide range of destructive actions against it, including running programs on it.
+	
+	RESOLUTION
+	==========
+	
+	This vulnerability is eliminated by the patch that accompanied the Microsoft
+	File Permission Canonicalization Vulnerability
+	(http://www.microsoft.com/technet/security/bulletin/ms00-057.asp) Security
+	Bulletin.
+	
+	Customers who have applied the patch from MS00-057 are already protected against
+	this vulnerability and do not need to take additional action. If you are using
+	IIS 4.0 or IIS 5.0, Microsoft strongly urges you to apply the patch immediately,
+	if you have not already done so. For additional information about how to obtain
+	this patch, click the article number below to view the article in the Microsoft
+	Knowledge Base:
+	
+	  Q269862 Patch Released for Canonicalization Error Issue
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products that are
+	listed at the beginning of this article.
+	
+	MORE INFORMATION
+	================
+	
+	Additional information about this issue is available from the following
+	Microsoft Web site:
+	
+	  http://www.microsoft.com/technet/security/bulletin/MS00-078.asp
+	
+	  http://www.microsoft.com/technet/security/bulletin/MS00-086.asp
+	
+	
+	The English version of the IIS 5.0 fix should have the following file attributes
+	or later:
+	
+	  Date        Time    Version        Size     File name
+	  -----------------------------------------------------
+	  08-09-2000  1:02pm  5.0.2195.2103  357,136  W3svc.dll
+	
+	The English version of the IIS 4.0 fix should have the following file attributes
+	or later:
+	
+	  Date        Time    Size     File name     Platform
+	  ---------------------------------------------------
+	  08/03/2000  05:06p  330,080  Asp.dll       Intel
+	  08/03/2000  05:04p  185,792  Infocomm.dll  Intel
+	  08/03/2000  05:05p   38,256  Ssinc.dll     Intel
+	  08/03/2000  05:05p   25,360  Sspifilt.dll  Intel
+	  08/03/2000  05:05p  228,496  W3svc.dll     Intel
+	
+	  08/03/2000  05:08p  551,696  Asp.dll       Alpha
+	  08/03/2000  05:06p  304,912  Infocomm.dll  Alpha
+	  08/03/2000  05:07p   60,176  Ssinc.dll     Alpha
+	  08/03/2000  05:07p   39,696  Sspifilt.dll  Alpha
+	  08/03/2000  05:07p  384,272  W3svc.dll     Alpha
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbWin2000PreSP2Fix 
+	Technology        : kbiisSearch kbiis500 kbiis400
+	Version           : :4.0,5.0
+	Hardware          : x86
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

@@ -1,0 +1,85 @@
+---
+layout: page
+title: "Q150287: FIX: Custom Build Commands Fail When Built from Command Line"
+permalink: kb/150/Q150287/
+---
+
+## Q150287: FIX: Custom Build Commands Fail When Built from Command Line
+
+	Article: Q150287
+	Product(s): Microsoft C Compiler
+	Version(s): 4.0,4.1,4.2
+	Operating System(s): 
+	Keyword(s): kbusage kbide kbVC kbVC500fix kbGrpDSTools
+	Last Modified: 14-MAR-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual C++, versions 4.0, 4.1 
+	- Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+	- Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you build a Microsoft Visual C++ project from the command line with
+	Nmake.exe, the custom build commands you specify in the build settings fail, and
+	cause the build to fail. However, when you build the project within Developer
+	Studio, the commands work correctly. This behavior occurs when you specify
+	multiple build commands for a file or group of files, and specify more than one
+	output file that is created by the build commands.
+	
+	CAUSE
+	=====
+	
+	The problem is caused by a backslash (\) character added to the end of each
+	build command in the .mak file.
+	
+	RESOLUTION
+	==========
+	
+	There are two possible workarounds:
+	
+	- Modify the .mak file, changing the \ at the end of each build command to an
+	  asterisk (*) character. Note that the IDE overwrites the .mak file whenever
+	  you change any project settings, and the \ is put back.
+	
+	-or-
+	
+	- Instead of specifying the multiple commands in the build settings, specify a
+	  single command that is a batch (.bat) file to invoke the commands. You need
+	  to pass parameters to the batch file in order to specify the input and output
+	  file names for the custom build commands.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+	beginning of this article. This bug was corrected in Visual C++ version 5.0.
+	
+	MORE INFORMATION
+	================
+	
+	This behavior occurs because Developer Studio writes the makefile so the
+	multiple commands are invoked on one command line. This causes the command
+	interpreter (Cmd.exe on Windows NT, and Command.com on Windows 95) to report an
+	error, because the result is not a valid command line. The commands need to be
+	passed on separate command lines, or separated by a command line separator, such
+	as the ampersand (&).
+	
+	Also, because there are multiple output files, the same commands are invoked
+	repeatedly for each output file.
+	
+	Additional query words: kbVC400bug
+	
+	======================================================================
+	Keywords          : kbusage kbide kbVC kbVC500fix kbGrpDSTools 
+	Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC410 kbVC420 kbVC32bitSearch
+	Version           : :4.0,4.1,4.2
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

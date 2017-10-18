@@ -1,0 +1,116 @@
+---
+layout: page
+title: "Q178288: Flight Simulator 98: Contents of the Setup Patch Readme File"
+permalink: kb/178/Q178288/
+---
+
+## Q178288: Flight Simulator 98: Contents of the Setup Patch Readme File
+
+	Article: Q178288
+	Product(s): Microsoft Home Games
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbreadme
+	Last Modified: 07-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Flight Simulator 98 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article contains the contents of the Setup Patch Readme file for Flight
+	Simulator 98 (Setuppch.exe). This patch is available from the following
+	Microsoft Web site:
+	
+	  http://www.microsoft.com/games/fs2000/downloads_archive.asp
+	
+	For additional information about this patch and how to download it, visit the Web
+	site listed above.
+	
+	MORE INFORMATION
+	================
+	
+	Microsoft(r) Flight Simulator(tm) Setup Patch Instructions
+	September 1997
+	
+	(c) Copyright 1997 Microsoft Corporation.
+	
+	What This Patch Is For
+	
+	An error has been identified in the Setup program for Microsoft Flight
+	Simulator 98. This error results in an erroneous message being generated
+	by Setup.exe to the effect that 4096MB of free space is required on your
+	C: drive in order to properly set up the application. In reality, nowhere
+	near this much space is actually required.
+	
+	This error occurs most commonly on hard drives which are partitioned,
+	compressed, or larger than 2GB total.
+	
+	If you have encountered this problem and are unable to successfully install
+	Microsoft Flight Simulator 98, this patch should resolve your problem.
+	
+	This package also contains an update to the DirectPlay system components.
+	If you are experiencing difficulties with the Multiplayer options in Flight
+	Simulator 98, or are having difficulties with the Zone connections, this
+	patch may also help you.
+	
+	Using the Corrected Setup
+	
+	To use the corrected Setup program, follow these steps:
+	
+	Place the extracted files Setup.exe, Setupenu.dll, and Dplay50a.exe
+	  in any convenient location on your hard drive which does not already
+	  contain a file named Setup.exe, such as the Windows desktop. Normally,
+	  the self-extraction tool places these files on your Windows desktop.
+	  If your Windows folder is in another location than C:\Windows, then
+	  you can find the extracted files in the C:\Windows\Desktop folder.
+	
+	Place the Flight Simulator 98 CD-ROM into your CD-ROM drive. If the
+	  Setup program begins automatically, click Exit. (This is the original
+	  flawed Setup program.)
+	
+	Using the Run command on the Windows 95 Start Menu, type the following
+	  command line:
+	
+	     c:\Windows\Desktop\Setup /patch:<your CD-ROM drive letter>
+	
+	  For example, if your Flight Simulator 98 CD-ROM is in drive D:,
+	  you should type:
+	
+	     c:\Windows\Desktop\Setup /patch:d:
+	
+	  NOTE: If you extracted Setup.exe to a location other than
+	  C:\Windows\Desktop, replace C:\Windows\Desktop with the path to
+	  the appropriate location.
+	
+	At this time, the Setup program should run correctly and copy the
+	  necessary files from the Flight Simulator 98 CD-ROM. Once the Setup
+	  program completes successfully, you may remove the patch files from
+	  your hard drive, although we recommend retaining them in a secure
+	  location in the event that you need to reinstall Microsoft Flight
+	  Simulator 98 again at some time in the future.
+	
+	If you still encounter any sort of problem with incorrect disk space
+	  calculations, you can also run the Setup program with a "/force" flag
+	  in addition to the "/patch:" flag listed in step 3, to force Setup to
+	  ignore drive space requirements. Note that if you do not have enough
+	  space for the Setup options you select, this results in an incomplete
+	  and aborted installation.
+	
+	To install the DirectPlay 5.0a components, simply double click the
+	  Dplay50a.exe file.
+	
+	Additional query words: fs98 flightsim fltsim flt sim
+	
+	======================================================================
+	Keywords          : kbreadme 
+	Technology        : kbGamesSearch kbFlightSimSearch kbFlightSim98 kbSimSearch
+	Version           : :
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

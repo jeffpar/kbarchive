@@ -1,0 +1,315 @@
+---
+layout: page
+title: "Q275529: Help Information for Printmig.exe Version 2.0"
+permalink: kb/275/Q275529/
+---
+
+## Q275529: Help Information for Printmig.exe Version 2.0
+
+	Article: Q275529
+	Product(s): Microsoft Windows NT
+	Version(s): 2000,4.0
+	Operating System(s): 
+	Keyword(s): kbnetwork kbprint kbtool
+	Last Modified: 06-AUG-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 2000 Server 
+	- Microsoft Windows NT Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	WARNING: This utility is used for creating or moving individual Microsoft Windows NT 4.0 or Microsoft Windows 2000 print servers. Do not use it to upgrade a Windows NT 4.0 print server to a Windows 2000 print server.
+	
+	SUMMARY
+	=======
+	
+	Microsoft Printer Migrator 2000 (Printmig.exe version 2.0) is included with the
+	Microsoft Windows 2000 Resource Kit Supplement version 1.0. However, the Help
+	file that is included with this supplement is for use with Printmig.exe version
+	1.0. This article provides Help information for Printmig.exe version 2.0.
+	
+	
+	MORE INFORMATION
+	================
+	
+	Overview
+	--------
+	
+	Printer Migrator 2000 (Printmig.exe) performs a complete printer configuration
+	backup of a Windows NT 4.0-based or Windows 2000-based computer. This backup
+	data is stored in a user-specified .cab file. If Printmig.exe is enabled (by
+	default, it is enabled), Printmig.exe also writes status information to the
+	Pm.log file in the %SystemRoot%\System32\Spool\Pm folder. The following data is
+	backed up to the .cab file:
+	
+	- Printers
+	
+	- Defined print queues in Windows NT and Windows 2000
+	
+	- Print monitor ports
+	
+	  NOTE: Printmig.exe recognizes and backs up the following ports:
+	
+	   - Hewlett-Packard network port
+	
+	   - LexMark MarkVision port monitor (IP/DLC)
+	
+	   - Jet Admin
+	
+	   - LPR port
+	
+	   - Local ports
+	
+	   - Digital network port
+	
+	   - Apple Talk port monitor
+	
+	   - Standard port monitor
+	
+	- Printer driver platforms for Windows NT 4.0: x86, Alpha, Mips, PPC. Printer
+	  driver platforms for Windows 2000: x86.
+	
+	- Share point information. Note that all file shares, print shares, and user
+	  permissions are backed up. Also, by default, only print shares are restored.
+	
+	NOTE: Printer Migrator 2000 does not back up the actual monitor, instead, it only
+	backs up the defined ports. Prior to the restoration operation, you must
+	reinstall the original set of port monitors to ensure complete functionality.
+	Printer Migrator 2000 generates a warning message for each monitor that is not
+	present after the restoration. However this information is only written to the
+	log file if you use the -i switch, or if you previously clicked to select the
+	Suppress Warning Popups check box.
+	
+	Features That Are Included in Printmig.exe Version 2.0 But Not Version 1.0
+	--------------------------------------------------------------------------
+	
+	Merge Configurations:
+	
+	In Restore mode, Printer Migrator version 1.0 performed a printer configuration
+	registry overwrite of the target computer. Because of this, any existing printer
+	configuration would be lost after the Printer Migrator restoration process
+	finishes. The majority of development efforts for Printmig.exe version 2.0 have
+	been dedicated to the registry-merging code upon a restoration. By merging
+	registry information, printer configurations can be merged (this is the default
+	behavior) or overwritten. To overwrite printer configurations, use the /o switch
+	(in combination with the /r switch) or click to select the "Replace (overwrite)
+	existing print shares" check box in the Restore dialog box.
+	
+	Full Operation from a Command Prompt:
+	
+	Because you can start Microsoft Printer Migrator version 2000 from a command
+	prompt, you can use it with a script. Several switches have been added to
+	Printer Migrator 2000 version 2.0 that are not included in version 1.0, and you
+	can view these switches by using the /? switch. Note that if you start
+	Printmig.exe from a command prompt, the user interface also starts, but it
+	automatically shuts down when the operation is complete. The following list
+	provides a description of the different switches you can use with Printmig.exe:
+	
+	- -?
+	
+	  This switch was introduced in version 1.0. The /? switch displays the
+	  available switches.
+	
+	- -d
+	
+	  The disable spooler switch was introduced in version 1.0. The /d switch
+	  disables the spooler. When you use the /d switch, Printer Migrator does not
+	  allow any backup or restore activity, but enumerates the target computer and
+	  populates the tree view with related information. Use the /d switch if you
+	  are unable to gain access to the target computer when the spooler is started
+	  and you want to check which printers are installed. This switch is provided
+	  in case you do not have sufficient access permissions to modify spooler
+	  information.
+	
+	- -b
+	
+	  The backup switch causes Printmig.exe to backup the printer configuration
+	  information of a Windows NT 4.0-based or Windows 2000-based computer. Note
+	  that if you do not specify the target computer name (in the form of
+	  \\computer name), the local computer is implied.
+	
+	- -f
+	
+	  The file name switch determines the file name to read from or write to, and
+	  this depends on whether you use the /r or /b switch. In either case, the file
+	  name directly follows the switch. For file names or paths with spaces, the
+	  complete file name and path must be enclosed in quotation marks.
+	
+	- -r
+	
+	  The restore switch causes Printmig.exe to restore the specified printer
+	  configuration of a Windows NT 4.0-based or Windows 2000-based computer to a
+	  Windows NT 4.0-based or Windows 2000-based computer. Note that Printmig.exe
+	  2.0 does not allow restoration from a Windows NT 4.0-based computer to a
+	  Windows 2000-based computer or from a Windows 2000-based computer to a
+	  Windows NT 4.0-based computer. Like Printmig.exe 1.0, Printmig.exe 2.0 only
+	  allows like platform restorations for Windows NT 4.0-based computers (for
+	  example, x86 to x86). Also, the default for the /r switch is to merge the
+	  printer configuration from the .cab file to the existing printer
+	  configuration on the target.
+	
+	- -o
+	
+	  The overwrite switch (in combination with the /r switch) causes the target
+	  server to be overwritten with the printer configuration information that is
+	  contained in the .cab file that is specified by the /f switch.
+	
+	- -s
+	
+	  The restore file shares switch merges the file shares in the .cab file with
+	  the existing file shares that exist on the target.
+	
+	- -p
+	
+	  The restore user permissions switch merges the user permissions in the .cab
+	  file with the existing user permissions on the target.
+	
+	- -i
+	
+	  The suppress warning popups switch disables warning dialog boxes that require
+	  user intervention, such as OK, Cancel, and so on. Note that the warnings are
+	  still written to the log file. You should use this switch when you use a
+	  script to start Printmig.exe.
+	
+	Terminal Services Aware:
+	
+	Printmig.exe 1.0 was not Terminal Services aware for restorations. Instead,
+	version 1.0 would target the %SystemRoot% folder on a per-user basis, even
+	though it needed to use a system-wide basis. This has been corrected with
+	Printmig.exe 2.0, and is transparent when you restore to a computer that is
+	running Terminal Services.
+	
+	Scheduling:
+	
+	Printmig.exe has been fully tested with the Mstask.exe tool, and all known
+	scheduling bugs have been fixed. For example, no one needs to be logged in for
+	the program to operate successfully operate.
+	
+	Multi-Threaded Graphical User Interface:
+	
+	Printmig.exe 2.0 is multithreaded, so the tool should not stop responding (hang)
+	during a long operation. Do not attempt to run simultaneous backups or
+	restorations with a single instance of Printmig.exe 2.0. Instead, you must run
+	separate instances of Printmig.exe 2.0 to perform simultaneous backups or
+	restorations from a single computer.
+	
+	Usage
+	-----
+	
+	Backup:
+	
+	When you use Printmig.exe 2.0 to back up the printer configuration of a Windows
+	NT-based or Windows 2000-based computer, you must specify the .cab file location
+	and name that Printmig.exe will create. Optionally, you can specify the target
+	server.
+	
+	To create a backup from a command prompt, use the -b switch and the -f [file
+	name] switch. Optionally, you can specify the target computer name as the last
+	parameter of the command in the \\server name form. To create a backup from with
+	the program:
+	
+	1. Click Backup on the Actions menu.
+	
+	2. Manually enter the path and file name of the .cab file to be created, or
+	  browse to the desired folder and type the file name.
+	
+	3. Click Save, and then click OK to begin the back up procedure.
+	
+	As the backup command runs, a progress report is displayed in the lower portion
+	of the Printer Migrator window. The contents of this report are saved in the
+	Pm.log file that is located in the %SystemRoot%\System32\Spool\Pm folder. After
+	this process completes, the .cab file contains the related printer registry data
+	and spooler files.
+	
+	Restore:
+	
+	When you use Printmig.exe 2.0 to restore a printer configuration to a Windows NT
+	4.0-based or Windows 2000-based computer, the default behavior is to merge the
+	configuration from the .cab file to the existing configuration on the target
+	computer. Note that this behavior differs from Printmig.exe 1.0 which overwrites
+	the existing configuration on the target with the configuration from the .cab
+	file. To overwrite with Printmig.exe 2.0, use the -o switch or click to select
+	the "Replace (overwrite) existing print shares" check box in the Restore dialog
+	box.
+	
+	To restore from a command prompt, use the -r and the -f [filename] switches.
+	Optionally, you can specify the target computer name as the last parameter of
+	the command in the \\server name form.
+	
+	To restore from within the program:
+	
+	1. Click Restore on the Actions menu.
+	
+	2. Open the folder that contains the existing .cab file.
+	
+	3. Type the name of the .cab file you want to read in the File Name box.
+	  Optionally, you can specify the computer name in the \\server name form.
+	
+	4. Select any options you want to use, such as "Suppress warning popups",
+	  "Replace existing file shares", "Restore user permissions", and "Restore file
+	  shares".
+	
+	5. Click Open to begin the restoration process.
+	
+	IMPORTANT: Printmig.exe temporarily stops the spooler (and MacPrint, if it is
+	started) on the target computer to restore print queue information. Also, before
+	you run the "Restore" (without the quotation marks) command on a print server,
+	verify that the following requirements are satisfied:
+	
+	- The backup computer and the target computer must both be running the same
+	  operating system and use the same platform such as x86, Alpha, and so on.
+	
+	- Print monitor information is consistent with the backup computer. If a
+	  monitor is missing, Printer Migrator generates a warning message, and you
+	  must install the monitor or service to run the restoration again.
+	
+	- The current user must have administrative rights on the target computer.
+	
+	As the "Restore" (without the quotation marks) command runs, a progress report is
+	displayed in the lower portion of the Printer Migrator window. The contents of
+	this report are saved in the Pm.log file that is located in the
+	%SystemRoot%\System32\Spool\Pm folder.
+	
+	Note that Printmig.exe 2.0 is backwards compatible with .cab files that were
+	created by Printmig.exe 1.0, but not the other way around.
+	
+	Log File:
+	
+	The log file records detailed information about backups, restorations, and errors
+	that were encountered. The Pm.log log file is stored in the
+	%SystemRoot%\System32\Spool\Pm folder. Warnings and errors are still logged even
+	if these items are disabled. Log To Text is enabled by default on the Options
+	menu. Click this command to disable logging to a text file. However, note that
+	all of this information is still displayed in the lower portion of the Printer
+	Migrator logging window.
+	
+	View:
+	
+	The Target and Restore Local commands enumerate print queue information in a tree
+	view format. The title bar identifies the computer that corresponds to the
+	currently displayed tree view. Note that this computer is the target of all
+	subsequent operations.
+	
+	To enumerate a remote computer and populate the tree view:
+	
+	1. Click Target on the View menu.
+	
+	2. In the Target Server box, type the name of the target server, for example,
+	  \\server1.
+	
+	To enumerate the local computer and populate the tree view, click Restore Local
+	on the View menu.
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbnetwork kbprint kbtool 
+	Technology        : kbWinNTsearch kbWinNT400search kbwin2000Serv kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbwin2000ServSearch kbwin2000Search
+	Version           : :2000,4.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

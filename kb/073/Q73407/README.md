@@ -1,0 +1,164 @@
+---
+layout: page
+title: "Q73407: Using PROTO and INVOKE to Call a C Function from MASM"
+permalink: kb/073/Q73407/
+---
+
+## Q73407: Using PROTO and INVOKE to Call a C Function from MASM
+
+	Article: Q73407
+	Product(s): Microsoft Macro Assembler
+	Version(s): MS-DOS:6.0,6.0a,6.0b
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 06-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Macro Assembler (MASM), versions 6.0, 6.0a, 6.0b 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	With the Microsoft Macro Assembler (MASM) version 6.0, the coding for a
+	procedure call may be simplified by the use of the PROTO and INVOKE directives.
+	These directives handle many of the details, such as pushing the parameters on
+	the stack in the correct order, generating the correct external references,
+	coercing arguments to the correct size, and cleaning up the stack (if required)
+	after the function terminates.
+	
+	The two sample programs below illustrate how a C function is called from MASM,
+	both with and without the PROTO and INVOKE directives. Sample Code 1 calls the C
+	printf() function using the conventional method of coding. Sample Code 2 shows
+	the simplified call to the same function through the use of PROTO and INVOKE.
+	
+	MORE INFORMATION
+	================
+	
+	PROTO defines a prototype for a procedure much the way a function prototype
+	works in C. This is the syntax for PROTO:
+	
+	     label PROTO [distance] [langtype] [,[parameter]:tag]
+	
+	The PROTO statement is used by the assembler to check parameter types and
+	quantity along with indicating the naming convention for the function. Arguments
+	for the function are indicated by listing the type, and optionally, a parameter
+	name. For example,
+	
+	     myfunc PROTO C arg1:SWORD, arg2:SBYTE
+	
+	This indicates that the function myfunc takes two arguments. The first is a
+	signed word, the second is a signed byte. If you need a variable argument list,
+	you use the type VARARG.
+	
+	INVOKE actually generates the code to call the function. You must have defined
+	the function previously with either a PROC, an EXTERNDEF, a TYPEDEF, or a PROTO
+	statement. This is the syntax for INVOKE:
+	
+	     INVOKE expression [,arguments]
+	
+	Because the assembler knows what the function is expecting in the way of
+	arguments and calling convention, it can take the arguments passed in the INVOKE
+	statement and push them on the stack in the correct order, call the function
+	using the required function name, and clean up the stack afterwards (if required
+	by the calling convention used).
+	
+	If an argument passed by INVOKE is smaller than the type specified in the PROTO
+	statement, MASM does a type conversion. It widens the argument in the PROTO
+	statement to match that in the INVOKE statement (for example, SBYTE to SWORD).
+	These types of conversions use the AX and DX registers on the 8086 and 8088 and
+	the EAX and EDX registers on the 80386/80486. Because these registers are
+	effectively overwritten, you should take care to avoid using these registers to
+	pass arguments.
+	
+	The language type for the function determines the naming and calling conventions.
+	In addition to the language type in the PROTO statement, the language type can
+	be set by the .MODEL directive, the OPTION LANGTYPE:, or by the command line
+	switches /Gc (for Pascal) and /Gd (for C). There is a table of the various
+	language conventions provided in Help.
+	
+	Sample Code 1
+	-------------
+	
+	  ; Assemble options needed: /MX
+	
+	            .MODEL small,c             ; The "c" langtype prepends
+	                                       ; labels with an underscore.
+	       ;-----for OS/2-------
+	       ;INCLUDELIB OS2.LIB
+	       ;INCLUDE    OS2.INC
+	       ;--------------------
+	
+	  EXTRN     _acrtused:NEAR
+	  EXTRN     printf:NEAR
+	
+	            .DATA
+	  fmtlist   db     "%s, %d, %lu", 0Ah,0
+	  string_1  db     "signed byte and unsigned double word", 0
+	  data_1    db     -2
+	  data_2    dd     0FFFFFFFFh
+	
+	            .CODE
+	
+	  main      PROC
+	            push   word ptr data_2+2   ; push the high word of data_2
+	            push   word ptr data_2     ; push the low word of data_2
+	            mov    al,data_1
+	            cbw                        ; converts data_1 to a word
+	            push   ax
+	            mov    ax,offset string_1  ; load the address of string_1
+	            push   ax                  ; push the address on the stack
+	            lea    ax,fmtlist          ; load the address of fmtlist
+	            push   ax                  ; push the address on the stack
+	            call   printf              ; call the C library function
+	            add    sp,0Ah              ; adjust the stackpointer
+	  main      ENDP
+	            ret
+	            end
+	
+	Sample Code 2
+	-------------
+	
+	  ; Assemble options needed: none
+	
+	            .MODEL small,c
+	
+	      ;-----for OS/2--------|
+	      ;.MODEL small,c,os_os2|
+	      ;INCLUDELIB OS2.LIB   <---Not needed if "os_os2" indicated. The
+	      ;INCLUDE    OS2.INC   |   assembler knows to look for os2.lib
+	      ;---------------------|   in the path set by the lib environment
+	      ;                     |   variable.
+	
+	  EXTERNDEF _acrtused:WORD
+	
+	  printf    PROTO arg1:Ptr Byte, printlist: VARARG
+	
+	  ;The first argument is a pointer to a string. The second is a keyword
+	  ; that permits a variable number of arguments.
+	
+	            .STACK 100h
+	            .DATA
+	  fmtlist   BYTE   "%s, %d, %lu", 0Ah,0
+	  string_1  BYTE   "signed byte and unsigned double word", 0
+	  data_1    SBYTE  -2
+	  data_2    DWORD  0FFFFFFFFh
+	
+	            .CODE
+	  main      PROC
+	  INVOKE    printf, ADDR fmtlist, ADDR string_1, data_1, data_2
+	  main      ENDP
+	            ret
+	            end
+	
+	Additional query words: kbinf 6.00 6.00a 6.00b s_c
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMASMsearch kbAudDeveloper kbMASM600 kbMASM600a kbMASM600b
+	Version           : MS-DOS:6.0,6.0a,6.0b
+	
+	=============================================================================
+	

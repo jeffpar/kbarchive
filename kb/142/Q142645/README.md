@@ -1,0 +1,67 @@
+---
+layout: page
+title: "Q142645: FPNW Stops with Win3.x Client Directory Search: &quot;&#42;&#42;&#42;&#42;&#42;&#42;&#42;&#42;.&#42;&#42;&#42;&quot;"
+permalink: kb/142/Q142645/
+---
+
+## Q142645: FPNW Stops with Win3.x Client Directory Search: &quot;&#42;&#42;&#42;&#42;&#42;&#42;&#42;&#42;.&#42;&#42;&#42;&quot;
+
+	Article: Q142645
+	Product(s): Microsoft Windows NT
+	Version(s): 3.51
+	Operating System(s): 
+	Keyword(s): kbnetwork
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 3.51 
+	- Microsoft Windows NT Server version 3.51 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	When you use File Manager from a Windows 3.1 Novell client to search a Windows
+	NT 3.51 File and Print Services for NetWare (FPNW) Server for files named
+	********.***, the server stops with various STOP error messages.
+	
+	CAUSE
+	=====
+	
+	The crash is caused by the use of multiple wildcard symbols (*) to the left of
+	the period in the filename. A single wildcard on either side does not cause the
+	problem, nor does using multiple question marks (?) as a wildcard symbol.
+	
+	This problem has been reproduced from Windows 3.1 systems running Novell client
+	1.20a and Windows for Workgroups servers running Novell Client 1.20a; it does
+	not occur with Windows NT or Windows 95 clients.
+	
+	RESOLUTION
+	==========
+	
+	To avoid this problem, use only a single wildcard (*) on either side of the
+	period (*.*) when doing directory searches.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Windows NT version 3.51. This
+	problem was corrected in the latest Windows NT 3.51 U.S. Service Pack. For
+	information on obtaining the Service Pack, query on the following word in the
+	Microsoft Knowledge Base (without the spaces):
+	
+	  S E R V P A C K
+	
+	
+	Additional query words: prodnt
+	
+	======================================================================
+	Keywords          : kbnetwork 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+	Version           : :3.51
+	
+	=============================================================================
+	

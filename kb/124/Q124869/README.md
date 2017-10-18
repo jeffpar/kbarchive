@@ -1,0 +1,146 @@
+---
+layout: page
+title: "Q124869: Configuring Sound Blaster Drivers Version 3.02 and 3.04"
+permalink: kb/124/Q124869/
+---
+
+## Q124869: Configuring Sound Blaster Drivers Version 3.02 and 3.04
+
+	Article: Q124869
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): 1.0,1.0a,1991 edition,1992 edition,1993 edition,1994 edition,1995 edition,2.0,3.1,3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 09-NOV-2001
+	
+	WINDOWS
+	kb3rdparty kbmm kbhw kbsound kbprb kbfaq
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft 500 Nations, version 1.0 
+	- Microsoft Ancient Lands for Windows, version 1.0 
+	- Microsoft Art Gallery for Windows, version 1.0 
+	- Microsoft Bookshelf '95 for Windows 95 
+	- Microsoft Bookshelf for Windows versions 1991 edition, 1992 edition, 1993 edition, 1994 edition 
+	- Microsoft Bookshelf 1996-97 for Windows 
+	- Microsoft Cinemania for Windows versions 1992 edition, 1994 edition, 1995 edition 
+	- Microsoft Complete Baseball for Windows, 1994 edition (see below) 
+	- Microsoft Complete Baseball Guide for Windows, 1995 edition 
+	- Microsoft Dangerous Creatures for Windows, version 1.0 
+	- Microsoft Dinosaurs for Windows, version 1.0 
+	- Microsoft Dogs for Windows, version 1.0 
+	- Microsoft Encarta 1994 The Complete Multimedia Encyclopedia 
+	- Microsoft Encarta 95 The Complete Interactive Multimedia Encyclopedia 
+	- Microsoft Encarta 96 Encyclopedia for Windows 
+	- Microsoft Encarta 97 Encyclopedia for Windows 
+	- Microsoft Encarta Encyclopedia 97 Deluxe for Windows 
+	- Microsoft Explorapedia series: World of Nature for Windows, version 1.0 
+	- Microsoft Isaac Asimov's The Ultimate Robot for Windows 
+	- Microsoft Julia Child: Home Cooking with Master Chefs for Windows, version 1.0 
+	- Microsoft Multimedia Beethoven for Windows, version 1.0 
+	- Microsoft Multimedia Mozart for Windows, versions 1.0, 1.0a 
+	- Microsoft Multimedia Schubert for Windows, version 1.0 
+	- Microsoft Multimedia Strauss for Windows, version 1.0 
+	- Microsoft Multimedia Stravinsky for Windows, version 1.0 
+	- Microsoft Musical Instruments for Windows, version 1.0 
+	- Microsoft Oceans for Windows, version 1.0 
+	- Microsoft SoundBits, Hanna-Barbera, version 2.0 
+	- Microsoft SoundBits, MGM Movies, version 1.0 
+	- Microsoft SoundBits, Musical Instruments, version 1.0 
+	- Microsoft The Ultimate Frank Lloyd Wright for Windows, version 1.0 
+	- Microsoft Wine Guide for Windows, versions 1.0, 1.0a, 2.0 
+	- Microsoft World of Flight for Windows, version 1.0 
+	- Microsoft Windows versions 3.1, 3.11 
+	- Microsoft Explorapedia series: World of People for Windows, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	If you are using a Sound Blaster 16 sound card and version 3.02 or 3.04 of the
+	Sound Blaster 16 sound driver, there are two methods for changing the hardware
+	configuration HDMA and DMA settings:
+	
+	- Double-click the Configuration icon in the Sound Blaster program group.
+	
+	  The Sound Blaster Configuration program will modify the Sndblst.drv section in
+	  the System.ini file and the Autoexec.bat file. You will not be able to change
+	  the DMA values through Control Panel/Drivers with version 3.02 or 3.04 of the
+	  driver.
+	
+	- Use the DIAGNOSE program located in the SB16 directory (run this program from
+	  the MS-DOS prompt, after exiting Windows.)
+	
+	NOTE: For information about changing the settings when using the Sound Blaster
+	driver version 4.0, please see the following article in the Microsoft Knowledge
+	Base:
+	
+	  Q136675 Changing SoundBlaster 16 HDMA Setting in Windows 95
+	
+	MORE INFORMATION
+	================
+	
+	To change DMA and HDMA settings from Windows
+	--------------------------------------------
+	
+	1. From the Sound Blaster program group, double-click the Configuration icon.
+	
+	2. Click the down arrow next to High DMA Channel, and select DMA.
+	
+	3. Click OK.
+	
+	The Sound Blaster Configuration program will reboot the computer and restart
+	Windows. The new settings should now be in effect. If the Sound Blaster icon is
+	present in Windows 95 the instructions can be used. The MS-DOS instructions do
+	not work in the Windows 95 environment
+	
+	NOTE: If the Sound Blaster Configuration icon is not in the Sound Blaster program
+	group, please see the following article in the Microsoft Knowledge Base:
+	
+	  Q106549 Compressed Audio Doesn't Play on Sound Blaster Card
+	
+	To change DMA and HDMA settings from MS-DOS
+	-------------------------------------------
+	
+	1. At the MS-DOS prompt, switch to the SB16 directory.
+	
+	2. Type "DIAGNOSE" (without the quotation marks), and press ENTER twice.
+	
+	3. Select Base I/O Port, use the arrow keys to select Autoscan, and press ENTER.
+	
+	4. Select MPU-401 MIDI Port, use the arrow keys to select Autoscan, and press
+	  ENTER twice.
+	
+	5. Select IRQ, use the arrow keys to select Current, and press ENTER.
+	
+	6. Select Low DMA Channel, use the arrow keys to select Current, and press
+	  ENTER.
+	
+	7. Select High DMA Channel, use the arrow keys to select Low DMA, and press
+	  ENTER.
+	
+	8. Press F10 to update the system files.
+	
+	The Diagnose program will reboot the computer. Configuration is now complete.
+	
+	Early versions of the SB16 sound card use an MS-DOS program called Sbconfig.exe
+	to change DMA and HDMA. The latest versions use a Windows program called
+	Ctconfig.exe or a new MS-DOS program called Diagnose.exe. To start Ctconfig.exe,
+	use the Sbconfig icon located in the Sound Blaster program group.
+	
+	The third-party products discussed in this article are manufactured by vendors
+	independent of Microsoft; we make no warranty, implied or otherwise, regarding
+	these products' performance or reliability.
+	
+	Additional query words: kbhowto multimedia mmtitles direct memory access soundblaster hang gpf general protection fault parity error
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbHomeProdSearch kbWin3xSearch _IKkbbogus kbHomeMMsearch kbEncartaSearch kbGamesSearch kbZNotKeyword kbZNotKeyword2 kbKidsSearch kbBookshelfSearch kbSoundBitsSearch kbBaseballSearch kbEncartaEncycSearch kbZNotKeyword3 kbCineManiaSearch kbWin310 kbWin311 kbAncientLands kbCompleteBaseballSearch kbMMStrauss kbMMSchubert kbMMStravinsky kbMMMozart100 kbMMMozart100a kbMMBeethoven100 kb500Nations100 kbAsimovSearch kbBookShelf1991 kbBookShelf1992 kbBookShelf1993 kbBookShelf1994 kbBookShelf1995 kbBookShelf1996 kbBookShelf1997 kbCinemania1994 kbCinemania1992 kbCinemania1995 kbCompleteBaseball1994 kbCompleteBaseball1995 kbDangerousCreatures kbDinosaurs100 kbDogs100 kbExplorapediaNature100 kbExplorapediaPeople100 kbAsimovUltimateRobot kbJuliaChild kbMusicalInst kbSoundBits kbUltimateFLW kbWine100 kbWine100a kbWine200 kbWorldofFlight kbArtGallery kbEncarta1995 kbEncartaEnCyc1996 kbEncartaEnCyc1997 kbEncartaEnCyc1997Del kbEncartaEnCyc1994 kbOceans
+	Version           : :1.0,1.0a,1991 edition,1992 edition,1993 edition,1994 edition,1995 edition,2.0,3.1,3.11
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

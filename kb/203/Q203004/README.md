@@ -1,0 +1,79 @@
+---
+layout: page
+title: "Q203004: SMS: How to Create Secondary Site from Files on Local Hard Disk"
+permalink: kb/203/Q203004/
+---
+
+## Q203004: SMS: How to Create Secondary Site from Files on Local Hard Disk
+
+	Article: Q203004
+	Product(s): Microsoft Systems Management Server
+	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
+	Operating System(s): 
+	Keyword(s): kbsms200 kbsms200preSP3fix kbsms200SP3fix
+	Last Modified: 07-FEB-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server versions 2.0, 2.0 SP1, 2.0 SP2, 2.0 SP3 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	In the Microsoft Systems Management Server (SMS) Administrator Console, the
+	Secondary Site Creation Wizard gives you the option of transferring source files
+	to the secondary site server from the primary site server, or of specifying that
+	the installation source files are on a CD-ROM at the secondary site server. If
+	the second option is selected, the Setup program searches for installation
+	source files from a local CD-ROM or a shared network CD-ROM drive.
+	
+	If source files from the installation CD-ROM are copied to a local hard disk on
+	the secondary site server, Setup fails to find them because it looks for the
+	source files on the CD-ROM drive. If the installation CD-ROM is not inserted in
+	the CD-ROM drive, Setup fails.
+	
+	For additional information about the latest service pack for Systems Management
+	Server 2.0, click the article number below to view the article in the Microsoft
+	Knowledge Base:
+	
+	  Q236325 How to Obtain the Latest Systems Management Server 2.0 Service Pack
+	
+	MORE INFORMATION
+	================
+	
+	It is possible to use installation source files on the local hard disk by
+	sharing out the folder where they reside, and then connecting to it as a network
+	drive by using the net use command. This method allows you to copy the source
+	files to the local hard disk of the secondary site server and have Setup find
+	them there. This method can be useful for a customer whose clients are spread
+	across a large geographic area with local area network (LAN) and wide area
+	network (WAN) connections. These clients can load the operating system and all
+	necessary software on the servers, copy the SMS 2.0 CD-ROM files locally to
+	various servers' hard disks, ship the servers to their destinations, and then
+	initiate the Create Secondary Site process, directing Setup to search for the
+	source files locally.
+	
+	Creating a Secondary Site Using Local Source Files on a Secondary Site Server
+	-----------------------------------------------------------------------------
+	
+	1. Copy the source files from the SMS 2.0 CD-ROM to a folder on a local drive of
+	  the secondary site server.
+	
+	2. Share out the folder and connect to it (from the same computer) using the net
+	  use command, in effect, creating a network connection.
+	
+	3. Initiate secondary site creation by clicking the "Installation source files
+	  are on a CD-ROM at secondary site server" option.
+	
+	Additional query words: prodsms
+	
+	======================================================================
+	Keywords          : kbsms200 kbsms200preSP3fix kbsms200SP3fix 
+	Technology        : kbSMSSearch kbSMS200 kbSMS200SP1 kbSMS200SP2 kbSMS200SP3
+	Version           : :2.0,2.0 SP1,2.0 SP2,2.0 SP3
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

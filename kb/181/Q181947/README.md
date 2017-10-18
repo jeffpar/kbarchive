@@ -1,0 +1,83 @@
+---
+layout: page
+title: "Q181947: XCON: PRMD Value in Numeric-OR-Address Won't Downgrade to 84"
+permalink: kb/181/Q181947/
+---
+
+## Q181947: XCON: PRMD Value in Numeric-OR-Address Won't Downgrade to 84
+
+	Article: Q181947
+	Product(s): Microsoft Exchange
+	Version(s): WINDOWS:4.0,5.0,5.5
+	Operating System(s): 
+	Keyword(s): kbusage
+	Last Modified: 02-APR-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you send a message to an X.400 custom recipient over a 1984 mode X.400
+	Connector, the following non-delivery report (NDR) may be generated:
+	
+	  Your message did not reach some or all of the intended recipients.
+	
+	     Subject:   Test
+	     Sent:   1/1/80 1:00 AM
+	
+	  The following recipient(s) could not be reached:
+	
+	     User, Mail on 1/1/80 2:00 AM
+	     The recipient could not be transferred because it could not be
+	     downgraded MSEXCH:MSExchangeMTA:Sitename:SERVERNAME
+	
+	Additionally, the following event will be generated in the Windows NT Application
+	Log:
+	
+	  Event ID 175    MSExchangeMTA    X400 Service
+	  An error occurred while transferring message C=US;A=
+	  ;P=PRMD;L=SERVERNAME-971223150130Z-132, because per-receipt information
+	  could not be downgraded. An X.400 API Association (XAPIA) unable-to-
+	  transfer reason code and unable-to-downgrade diagnostic code were
+	  returned. [MTA DISP:FANOUT 12 147] (14)
+	
+	CAUSE
+	=====
+	
+	The custom recipient was created using a numeric-OR-address and also contains a
+	private management domain (PRMD) value. This prevents the X.400 address from
+	downgrading from the X.400 88 version to the 84 version. Consequently, the
+	message is rejected, an NDR is produced, and the above error is logged.
+	
+	WORKAROUND
+	==========
+	
+	To work around this problem, remove the PRMD value from the custom recipient
+	mail address. This allows the message to be properly downgraded from X.400 1988
+	mode to 1984.
+	
+	MORE INFORMATION
+	================
+	
+	This problem occurs when you send, over a 1984 mode X.400 Connector, a message
+	that is addressed to a recipient that contains both a numeric address, such as
+	X.121 or User Agent numeric ID, and a PRMD value.
+	
+	In accordance with X.419 Annex B section B 2.8, a numeric-OR-address containing a
+	PRMD value cannot be downgraded from 1988 to 1984.
+	
+	Additional query words: p2 p22 red book blue
+	
+	======================================================================
+	Keywords          : kbusage 
+	Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+	Version           : WINDOWS:4.0,5.0,5.5
+	Issue type        : kbprb
+	
+	=============================================================================
+	

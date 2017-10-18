@@ -1,0 +1,150 @@
+---
+layout: page
+title: "Q302573: HOW TO: Back Up and Restore IIS"
+permalink: kb/302/Q302573/
+---
+
+## Q302573: HOW TO: Back Up and Restore IIS
+
+	Article: Q302573
+	Product(s): Internet Information Server
+	Version(s): 5.0
+	Operating System(s): 
+	Keyword(s): kbAudDeveloper kbHOWTOmaster
+	Last Modified: 10-APR-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Services version 5.0 
+	-------------------------------------------------------------------------------
+	
+	
+	IN THIS TASK
+	------------
+	
+	- SUMMARY
+	
+	   - Requirements
+	- Back Up the IIS Configuration
+	- Restore the IIS Configuration
+	
+	   - Restoring the IIS Configuration After an IIS Reinstallation
+	
+	SUMMARY
+	=======
+	
+	This step-by-step article describes how to back up your Internet Information
+	Services (IIS) configuration so that you can easily return to a previous state.
+	
+	Requirements
+	------------
+	
+	The following items describe the recommended hardware, software, network
+	infrastructure, skills and knowledge, and service packs that you will need:
+	
+	- IIS version 5.0
+	
+	- Microsoft Internet Explorer 3.x, 4.x, 5.x
+	
+	Back Up the IIS Configuration
+	-----------------------------
+	
+	To back up your IIS configuration, follow these steps:
+	
+	1. In the IIS snap-in on the local computer, click the Computer icon under
+	  Internet Information Services.
+	
+	2. Click Action and select Backup/Restore Configuration.
+	
+	3. Click Create backup, choose a name for your backup file, and then click OK.
+	
+	NOTE: The default location of the backup is the
+	%SystemRoot%\system32\inetsrv\MetaBack folder. If you want to save your backup
+	file to another location, you can copy the file from this default location to
+	another location. Keep a copy in the default location to allow for an easy
+	restoration. Note that by default, C:\Winnt is the %SystemRoot% folder in
+	Microsoft Windows 2000.
+	
+	4. Click Close.
+	
+	NOTE: This backup method provides a way to restore only your IIS settings, not
+	your content files. This backup method does not work if you reinstall your
+	operating system. Backup files cannot be used to restore an IIS configuration on
+	other computers that are running Windows 2000.
+	
+	Restore the IIS Configuration
+	-----------------------------
+	
+	The steps to restore a configuration differ depending on whether you removed and
+	reinstalled IIS.
+	
+	NOTE: If you want to restore your IIS configuration and only an older copy or no
+	copy of the metabase file exists, see the following Microsoft Knowledge Base
+	article:
+	
+	  Q234429 How to Manually Restore the Metabase When No Backup Exists
+	
+	Restoring the IIS Configuration Without an IIS Reinstallation:
+	
+	To restore your IIS configuration if you have not removed and reinstalled IIS,
+	follow these steps:
+	
+	1. In the IIS snap-in on the local computer, click the Computer icon under
+	  Internet Information Services.
+	
+	2. Click Action and select Backup/Restore Configuration.
+	
+	3. In the Configuration Backup Name dialog box, select a backup file and click
+	  Restore. When you are asked if you want to restore your configuration
+	  settings, click Yes.
+	
+	Restoring the IIS Configuration After an IIS Reinstallation:
+	
+	To restore your IIS configuration after you have removed and reinstalled IIS,
+	follow these steps:
+	
+	1. In the IIS snap-in on the local computer, click the Computer icon under
+	  Internet Information Services.
+	
+	2. Click Action and select Backup/Restore Configuration.
+	
+	3. In the Configuration Backup Name dialog box, select the backup file that you
+	  created and click Restore. Although an error message states that the
+	  restoration has failed, a portion of your backed-up configuration is
+	  restored.
+	
+	4. At a command prompt, type the following:
+	
+	  "cscript.exe X:\InetPub\AdminScripts\Adsutil.vbs enum w3svc" (without the
+	  quotation marks)
+	
+	  where X is the letter of the drive on which IIS is installed. From the listed
+	  settings, locate the WamUserName and the associated WAMUserPass value.
+	
+	  NOTE: To use the Adsutil.vbs utility, you must have Windows Script Host
+	  installed.
+	
+	5. Click Start, point to Settings, click Control Panel, double-click
+	  Administrative Tools, and then double-click Computer Management. Click Local
+	  User Managers and click Users.
+	
+	6. Double-click the IWAM_computername user account. Type the WAMUserPass value
+	  that you retrieved from the previous step and click OK.
+	
+	7. In the Configuration Backup Name dialog box, select the backup file that you
+	  created and click Restore. This fully restores your configuration.
+	
+	  NOTE: If you change the identity of your out-of-process applications, those
+	  applications revert back to the previous IWAM user name.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbAudDeveloper kbHOWTOmaster 
+	Technology        : kbiisSearch kbiis500
+	Version           : :5.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

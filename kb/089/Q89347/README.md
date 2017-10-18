@@ -1,0 +1,81 @@
+---
+layout: page
+title: "Q89347: Selecting Multiple Directories in File Manager"
+permalink: kb/089/Q89347/
+---
+
+## Q89347: Selecting Multiple Directories in File Manager
+
+	Article: Q89347
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 05-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Multiple directories can be copied or deleted quickly using File Manager in
+	Microsoft Windows. The selection of directories to be copied or deleted can only
+	be made from the directory window in Windows versions 3.0 and 3.0a, or from the
+	contents list in the right half of the Windows 3.1 directory window. Multiple
+	directories cannot be selected from the directory tree.
+	
+	MORE INFORMATION
+	================
+	
+	Windows 3.0
+	-----------
+	
+	To copy or delete multiple directories using File Manager in Microsoft Windows
+	version 3.0 or 3.0a:
+	
+	1. Select the drive that contains the desired directories.
+	
+	2. From the directory tree, double-click either the root directory icon or the
+	  icon of the directory containing the subdirectories to be copied or deleted.
+	
+	3. If the subdirectories are in sequential order, select the first directory,
+	  hold down the SHIFT key, and select the last directory.
+	
+	4. To select subdirectories not in sequential order, hold down the CTRL key and
+	  highlight each desired subdirectory.
+	
+	5. The directories may then be copied or deleted using the options in the File
+	  menu.
+	
+	Windows 3.1
+	-----------
+	
+	To copy or delete multiple directories using File Manager in Microsoft Windows
+	version 3.1:
+	
+	1. Select either the root directory icon or the icon of a directory containing
+	  the subdirectories to be copied or deleted.
+	
+	2. A contents list appears in the right half of the directory window. If the
+	  subdirectories are in sequential order, select the first directory, hold down
+	  the SHIFT key, and select the last directory.
+	
+	3. To select subdirectories not in sequential order, hold down the CTRL key, and
+	  highlight each desired subdirectory.
+	
+	4. The directories may then be copied or deleted using the options in the File
+	  menu.
+	
+	Additional query words: 3.00 3.00a 3.10 3.11
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+	Version           : WINDOWS:3.0,3.0a,3.1,3.11
+	
+	=============================================================================
+	

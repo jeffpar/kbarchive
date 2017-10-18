@@ -1,0 +1,879 @@
+---
+layout: page
+title: "Q142642: Windows NT 4.0 Readme.wri File (Part 3 of 5)"
+permalink: kb/142/Q142642/
+---
+
+## Q142642: Windows NT 4.0 Readme.wri File (Part 3 of 5)
+
+	Article: Q142642
+	Product(s): Microsoft Windows NT
+	Version(s): 4.0
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 4.0 
+	- Microsoft Windows NT Workstation version 4.0 
+	-------------------------------------------------------------------------------
+	
+	This article contains a copy of the information in the Readme.wri file
+	included in Windows NT version 4.0. Setup copies this file to the System32
+	folder.
+	
+	Hardware Notes
+	--------------
+	
+	NOTE: Be sure to check that all equipment (including video cards, networking cards, monitors, CPUs, hard drives, and CD-ROM drives) is listed on the Windows NT version 4.0 Hardware Compatibility List, included with this product.
+	
+	If you are using a system or equipment that is not included on the hardware
+	compatibility list, and experience problems, please file a report by using
+	the <platform>\Probrep.txt  file on the Windows NT version 4.0 compact
+	disc.  <Platform> is either X86, MIPS, ALPHA, or PPC, depending on your
+	computer's platform. The Probrep.txt file is also installed in the
+	%systemroot%\system32 folder.
+	
+	ATAPI AND PCI
+	
+	ATAPI.SYS now controls all IDE devices in a PCI machine. If you have a
+	computer that uses IDE hard disks, has a PCI bus, and are upgrading from
+	Windows NT version 3.51 to Windows NT version 4.0,  you may receive a
+	message when the system is booting stating that a driver has failed to
+	start. In Event Viewer, you will see that the ATDISK driver failed to
+	start. To disable the driver and associated box, double-click the Devices
+	icon in Control Panel, and then disable the ATDISK driver.
+	
+	CACHING DISK CONTROLLERS AND DRIVES
+	
+	Windows NT supports caching disk controllers and drives only if one of the
+	following is true:
+	
+	- The controller has a driver that specifically supports caching. (Several of
+	  these exist: DPT and IBM SCSI Caching Adapter.)
+	
+	- Write-through is active (i.e., write caching is disabled) by setting it
+	  either manually or by default when the computer starts.
+	
+	- The entire cache option is off, by setting it either manually or by default
+	  when the computer starts.
+	
+	Using a caching controller or drive in other situations risks loss of data
+	if the computer is rebooted or if a power failure occurs before the cache
+	has flushed itself. You can minimize risk by waiting at least one minute
+	(less if you know the maximum time the cache waits before flushing itself)
+	after all system activity stops before rebooting. The disk activity light
+	is a good indicator of how write caching is being done on your system. This
+	applies to the initial Windows NT installation as well as to shutdown. Note
+	that unexpected power failure at any time can potentially corrupt data on
+	the disk, possibly to the extent that the disk becomes unreadable. Making
+	the delay time that write data is cached before being flushed to disk as
+	small as possible reduces this risk.
+	
+	Certain applications are data-sensitive and require that write-through be
+	active. Examples of this are SQL Server-based applications and NTFS
+	partitions.
+	
+	CD-ROM CHANGERS
+	
+	- Some IDE/ATAPI CD-ROM Changers may take an excessive amount of time to read
+	  all of their compact discs. This may be especially apparent while using
+	  Windows NT Explorer, or using an Open dialog box (accessed from the File
+	  menu) from certain applications. Some ATAPI CD-ROM changers cannot report
+	  their media change status properly so the system software must read the discs
+	  directly to verify media changes.
+	
+	- While attempting to access a compact disc in an IDE/ATAPI CD-ROM Changer, the
+	  system may indicate the device is not ready. If this occurs, press the Retry
+	  button several times. The compact disc should become available after several
+	  retries.
+	
+	- Accessing multiple compact discs simultaneously in a CD-Changer device is not
+	  recommended. The application may hang or you may experience performance loss
+	  accessing data.
+	
+	- Attaching CD-Changers, CD-ROMs, and Removable Media SCSI devices requires
+	  system reboot for these devices to be detected by system.
+	
+	Removable Media
+	---------------
+	
+	IDE removable media cannot be ejected by using some external utilities. Re-
+	inserting or swapping  the media can cause system to crash.
+	
+	Eject all removable media using only the Explorer. Ejecting media by other
+	means, such as eject switch on the drive, can cause data inconsistency when
+	viewing media information.
+	
+	Data on write protected NTFS media cannot be seen.
+	
+	COMPAQ LS-120
+	
+	When formatting a 1.44 MB floppy disk in a Compaq LS-120 drive, the
+	progress indicator in the dialog box lags behind the formatting activity.
+	After a minute or so, the progress indicator advances quickly and the
+	format completes successfully.
+	
+	CREATIVE LABS SOUND BLASTER ON RISC PLATFORMS
+	
+	If you are running Windows NT on a RISC platform with a Creative Labs Sound
+	Blaster adapter card, you may experience problems (such as loss of sound)
+	if you click Settings ,and then click Cancel in the property dialog box of
+	the sound card. To avoid this, click OK instead of Cancel.
+	
+	To restore sound:
+	
+	1. Double-click the Multimedia icon in Control Panel
+	
+	2. Click the Devices tab.
+	
+	3. Click Audio Devices, and select Audio for Creative Labs Sound Blaster.
+	
+	4. Click Remove and then shut down and restart the computer.
+	
+	5. Double-click the Multimedia icon in Control Panel.
+	
+	6. Click the Devices tab and then click Add
+	
+	7. Select the Creative Labs Sound Blaster driver, verify the settings, and then
+	  click OK.
+	
+	8. Restart your system.
+	
+	DEVICE DRIVER LOAD ORDER
+	
+	Third-party modifications to the load order of device drivers are not
+	preserved on a system upgrade. If a device (such as an optical disk) is not
+	operating correctly after a system upgrade, you may be required to
+	reinstall the driver.
+	
+	DPT CONFIGURATION TOOL FOR MIPS AND POWERPC MACHINES
+	
+	On DPT's PCI bus adapters, the DPT Configuration tool is built into the
+	adapter's firmware and on x86 processor-based computers, is accessible by
+	pressing CTRL-D during boot. This toolcontrols the adapter's I/O address,
+	parity, PCI transfer/burst, SCSI ID, termination, termination power, and
+	several other adapter options.
+	
+	To configure DPT's PCI bus adapters when installed in either a MIPS or a
+	PowerPC RISC processor-based computer, DPT has placed these functions in
+	special versions of their Storage Manager tool software. To obtain this
+	software, it may be downloaded through DPT's BBS number or their Internet
+	FTP Site.
+	
+	BBS procedure:
+	
+	1. Dial in at (407) 831-6432 or (407) 830-1070
+	
+	2. Select: (F)ile directories
+	
+	3. Select file to download:
+	
+	  MIPSMGR.ZIP for MIPS
+	  MGRNTPPC.zip for PowerPC
+	
+	FTP server procedure:
+	
+	1. Go to: FTP.DPT.COM
+	
+	2. Then go to:
+	
+	  PUB/TECHSUP/WINDOWS_NT/MIPS for MIPS
+	  PUB/TECHSUP/WINDOWS_NT/PPC for PowerPC
+	
+	3. Downloads the file:
+	
+	  MIPSMGR.zip for MIPS
+	  NTMGRPPC.zip for PowerPC
+	
+	If there are any problems downloading these tools, please contact DPT at
+	(407)830-5522.
+	
+	EL TORITO (NO EMULATION) BOOTABLE CD-ROM FORMAT
+	
+	If your computer's BIOS does not support the El Torito (no emulation)
+	bootable CD-ROM format, you might get an error when you boot up your
+	machine with the Windows NT compact disc inserted in the CD drive. To work
+	around this problem, remove the CD-ROM from the drive and reboot the
+	machine.
+	
+	ESDI DISK DRIVES WITH MORE THAN 1024 CYLINDERS
+	
+	In some cases, on disk drives with more than 1024 cylinders, Windows NT
+	installation proceeds normally until the first startup from the hard drive
+	where Windows NT is installed. The Windows NT Boot Loader will load various
+	files and then produce a Fatal System Error: 0x0000006b with the message
+	that Phase 1 Process Initialization Failed. Following this message will be
+	some type of hexadecimal dump, and the system will be locked up. If you
+	experience this difficulty, the following information can help.
+	
+	Microsoft has tested the ESDI controllers listed in README.WRI by using a
+	hard drive with a capacity exceeding 516 MB (MB=1,048,576 bytes) formatted.
+	The MS-DOS limit of 1024 cylinders creates a situation where special BIOS
+	mapping on the controller is used to change the geometry of the drive. ESDI
+	drives can be prepared with various values of sectors per track (spt) such
+	as 53 or 63 spt geometry during a low-level format, as shown in the
+	following example:
+	
+	- 1024 cylinders x 15 heads x 53 spt x 512 bytes per sector = 398 MB formatted
+	  capacity
+	
+	  -or-
+	
+	- 1024 cylinders x 15 heads x 63 spt x 512 bytes per sector = 472 MB formatted
+	  capacity
+	
+	Using 63 spt yields 74 MB more space. Windows NT is perfectly compatible
+	with either geometry and, depending on the drive or controller, can access
+	the cylinders beyond 1024. This space can be partitioned and formatted (but
+	not accessed) by MS-DOS. However, some controllers can successfully remap
+	the remaining cylinders beyond 1024 so that either MS-DOS or Windows NT can
+	use the entire capacity. For example:
+	
+	  1632 cylinders x 15 heads x 53 spt x 512 bytes per sector = 634 MB
+	  formatted capacity
+	
+	EXTERNAL CACHE OPTION
+	
+	If you have a system without any external cache on the system board but the
+	option is turned on in CMOS, Windows NT may not restart when you click
+	Start, click Shutdown, click Restart the computer, and then click Yes. If
+	this problem occurs, turn off the external cache option in your CMOS
+	configuration program.
+	
+	IDE DEVICES IN CONTROL PANEL SCSI DEVICES
+	
+	On PCI bus computers and computers with ATAPI (IDE) CD-ROM, tape, or
+	removable disk drives, you see either some or all of the IDE devices on
+	your computer in the SCSI Devices option in Control Panel.
+	
+	INTEL ETHEREXPRESS 16 LAN ADAPTER
+	
+	In some cases, selecting Early in the I/O Channel Ready box prevents the
+	network adapter card from functioning correctly. The card must then be
+	reconfigured with the Intel SoftSet tool. If you are unsure whether your
+	system can take advantage of this network setting, consult your hardware
+	vendor.
+	
+	INTERRUPT CONFLICTS
+	
+	A common problem in a computer with several supported devices is
+	conflicting interrupts, I/O ports, or memory usage. Where possible, such
+	cases are identified in this document. However, if one of the supported
+	devices does not seem to work, it might be due to the particular hardware
+	configuration. For more specific information, see your hardware manual or
+	contact your system manufacturer.
+	
+	INSTALLING MWAVE DRIVERS FOR THE IBM THINKPAD
+	
+	The Microsoft Windows NT version 4.0 compact disc contains Mwave audio and
+	FAX modem drivers for Mwave-based IBM Thinkpad systems. However, the
+	Windows NT version 4.0 Setup program does not install the drivers by
+	default. To install the Mwave drivers on your Mwave-based Thinkpad system,
+	see the procedures that follow.
+	
+	This version of the Mwave driver supports audio playback. There are known
+	problems with recording audio data.  Recording controls are not functional
+	using Volume Control (accessed by clicking Start, pointing to Programs,
+	Accessories, and then Multimedia) and recording using either the built-in
+	or external microphone does not operate properly.
+	
+	NOTE: Please consult the release notes (README.TXT) for Mwave audio and FAX
+	modem drivers before installation. This file is located on the Windows NT
+	version 4.0 compact disc in the \DRVLIB\MWAVE\THINKPAD\DISK1 directory. It
+	is important that you print and read this information before you install
+	the Mwave drivers.
+	
+	To install Mwave driver for audio and FAX modem:
+	
+	1. Insert the Windows NT compact disc in the CD-ROM drive.
+	
+	2. Click Start and then click Run.
+	
+	3. Type <compact disc drive letter>:\DRVLIB\MWAVE\THINKPAD\DISK1\SETUP and
+	  then click OK.
+	
+	4. Follow the on-screen instructions.
+	
+	5. When prompted, click Restart Now to reboot your computer.
+	
+	After restarting Windows NT, install the MIDI wave-table data to enable
+	Mwave to play MIDI files:
+	
+	1. Click Start and then click Run.
+	
+	2. Type <compact disc drive letter>:\DRVLIB\MWAVE\MIDISAMP\SETUP and then
+	  click OK.
+	
+	3. Follow the on-screen instructions.
+	
+	4. When prompted, click Restart Now to reboot your computer.
+	
+	5. After restarting Windows NT, follow the instructions in the README.TXT file
+	  to configure your Mwave modem. If you do not configure your modem using these
+	  instructions, it is likely the modem will not function properly under Windows
+	  NT.
+	
+	INSTALLING IBM THINKPAD UTILITIES FOR WINDOWS NT
+	
+	In addition to the Windows NT 4.0 compact disc, you may need the IBM
+	Thinkpad Utilities diskette for Windows NT. If you want to view or change
+	your hardware configuration settings, you can obtain the IBM Thinkpad
+	Utilities diskette from one of the following locations. These changes are
+	referred to in README.TXT in the \DRVLIB\MWAVE\THINKPAD\DISK1 directory.
+	
+	  On the Internet:
+	
+	  http://www.pc.ibm.com/support/tps/winnt.html
+	
+	  ftp://ftp.pc.ibm.com/pub/mobiles
+	
+	  On CompuServe: GO Thinkpad
+	
+	  On PC Co. BBS: 919-517-0001, area 37
+	
+	To install the IBM Thinkpad Utilities for Windows NT, follow the
+	installation instructions described in the README.TXT file included on the
+	IBM Thinkpad Utilities diskette.
+	
+	PCMCIA CARDS
+	
+	PCMCIA cards are supported in Windows NT version 4.0. For a list of
+	supported cards and a list of compatible notebook computers, see the
+	Hardware Compatibility List.
+	
+	When using PCMCIA devices, such as modems and network cards on a computer
+	running Windows NT Workstation, power management features on the computer
+	system should be turned off. Consult the manufacturer's system manual for
+	procedures to disable power management.
+	
+	PCMCIA SCSI Cards
+	-----------------
+	
+	On PCMCIA SCSI cards at least one of the devices on the SCSI bus needs to
+	supply termination power for proper operation.
+	
+	PCMCIA NOTES
+	
+	If the PCMCIA controller was not present when you installed Windows NT, use
+	the Devices icon in Control Panel to change the startup type to Manual.
+	Double-click Devices, and select Pcmcia. Click Startup and then click
+	Manual.
+	
+	PCMCIA Atdisk and drive letters
+	-------------------------------
+	
+	In some instances the driver letter for the PCMCIA harddisk can become C:.
+	If this is causing you problems, change the drive letter assignment using
+	Disk Administrator.
+	
+	Interrupt Conflicts
+	-------------------
+	
+	If you have an IRQ conflict, the information that follows includes a few
+	workarounds.
+	
+	NOTE: PCMCIA net device resources can be changed by using the PC Card or
+	Network icon in Control Panel.
+	
+	For modems, try disabling one of the COM ports in you systems BIOS. This
+	will make PCMCIA enable the PCMCIA modem at a different IRQ.
+	
+	If you have Windows NT installed on a laptop and need to install the Elnk3
+	or Ne2000 driver and your system does not have a CD-ROM drive or is not
+	connected to a network, you can access the drivers by copying the Elnk3.sys
+	or Ne2000.sys driver to the root of C:. When prompted for the path to the
+	driver, type in "C:\".
+	
+	PCI NOTEBOOK COMPUTERS AND PCMCIA HARD DISKS
+	
+	If you have a notebook computer that uses a PCI bus (Compaq Elite 5x00 or
+	HP Omnibook 5000), you will need to disable Atapi.sys to run PCMCIA hard
+	disks in your system. This can be done by changing the boot setting for
+	ATAPI in the Devices icon in Control Panel and restarting the system. To
+	allow IDE CD-ROM drives to work properly, enable Atapi.sys. To allow the
+	PCMCIA hard disks to work properly, disable Atapi.sys.
+	
+	PLUG AND PLAY ISA DEVICE INSTALLATION AND PNPISA.SYS
+	
+	Installation of Plug and Play ISA (PnP ISA) devices under Windows NT
+	version 4.0 requires an enabler driver that recognizes how to locate and
+	configure those devices. The driver, PNPISA.SYS, is in the \Drvlib folder
+	on the Windows NT version 4.0 compact disc. For information about how to
+	install the enabler, see "Installing PNPISA.SYS if not Enabled" later in
+	this document.
+	
+	The enabler does not contain complete Windows 95 Plug and Play support.
+	For example, the enabler does not dynamically allocate resources for PnP
+	ISA devices. It does, however, enable a user interface (UI) that allows you
+	to manually select system resources that do not conflict with other devices
+	in the system.
+	
+	PnP ISA Enabler, Present on Shipped Computers
+	---------------------------------------------
+	
+	Some computer manufacturers who provide PnP ISA devices with their products
+	enable PNPISA.SYS at the factory.  In this case, the devices that came
+	installed in the computer may be configured by the manufacturer.  If new
+	PnP ISA devices are added later, you can configure the new devices when the
+	New Hardware Found dialog box appears.
+	
+	Installing PNPISA.SYS if not Enabled
+	------------------------------------
+	
+	1. Insert the Windows NT version 4.0 compact disc into the CD-ROM drive.
+	
+	2. In the Windows NT Explorer, switch to the CD-ROM drive.
+	
+	3. Go to the \DRVLIB\PNPISA\<platform> directory (where <platform>
+	  is either "X86", "MIPS", "ALPHA", or "PPC", depending on your computer's
+	  platform).
+	
+	4. Right-click PNPISA.INF, and click Install. If Hide file extensions for known
+	  file types (accessed by clicking Options on the View menu) is selected, the
+	  filename is displayed as PNPISA.
+	
+	5. When prompted, restart your computer.
+	
+	Disabling PNPISA.SYS
+	--------------------
+	
+	1. Double-click the Devices icon in Control Panel.
+	
+	2. Select PnP ISA Enabler Driver and click Startup.
+	
+	3. Click Disabled and then click OK.
+	
+	Installing PnP ISA Devices
+	--------------------------
+	
+	When the system boots with the enabler driver (PNPISA.SYS) installed, the
+	enabler locates all PnP ISA devices in the computer and enables those
+	devices for which you have selected resources. Any new devices are
+	recognized, so that drivers for the devices can be installed when you log
+	onto the computer as a user with administrative privilege. At logon,
+	Windows NT displays a New Hardware Found dialog box for each new device it
+	locates.
+	
+	NOTE: Some PnP ISA cards contain multiple functions. In this case, a dialog
+	box will be displayed for each function on the card.
+	
+	If Windows NT does not have a driver that is an exact match for a device, a
+	dialog box containing the following options is displayed:
+	
+	- Windows NT default driver:
+	
+	  If Windows NT has a driver that is compatible with your device, this selection
+	  will be enabled. If you do not have a vendor-supplied driver for the device,
+	  and this option is available, you should select it.
+	
+	- Driver from disk provided by hardware manufacturer:
+	
+	  If you have a disk that contains a driver for your device, select this option.
+	  Insert the disk in the drive and a list of the drivers on the disk is
+	  displayed. Select the model that matches your device to install it. In
+	  general, the driver disk you supply must contain support for Windows NT (a
+	  disk for Windows 95 only will not work). However, in the case of PnP ISA
+	  modems, Windows 95 driver disks can be used. However, certain functions, such
+	  as VoiceView, will not work.
+	
+	- Do not install a driver (Windows NT will not prompt you again):
+	
+	  Select this option only if you do not have a driver for the device. This keeps
+	  Windows NT from displaying the New Hardware Found dialog box for the device
+	  in the future.
+	
+	  ************************************************************************
+	  WARNING: If you select this option, you will not be able to install the
+	  device at a later time, unless you perform the following procedure:
+	
+	  1. Shut down Windows NT.
+	  2. Remove the card from the computer.
+	  3. Restart Windows NT. Windows NT detects that the card has been removed
+	     from the machine, and removes the entry for the card from the
+	     registry.
+	  4. Shut down Windows NT.
+	  5. Reinsert the card.
+	  6. Restart the computer. When you log on, the New Hardware Found dialog
+	     box is displayed for the device.
+	  ************************************************************************
+	
+	- Select from a list of alternate drivers:
+	
+	  If you do not have an INF file for the device, and if the Windows NT default
+	  driver option is not enabled, you can use this option to attempt to locate a
+	  compatible device in the list of devices supported by Windows NT. After you
+	  click Select from a list of alternate drivers, a list of device types is
+	  displayed. Select the type that corresponds to your device, and then click
+	  OK.
+	
+	  If you are not sure about the device type, click Other devices to display a
+	  list of all supported devices.
+	
+	  The Select From A List Of Alternate Drivers option is particularly useful for
+	  PnP ISA modems. Even if you do not have an INF that matches your particular
+	  modem, you can select a generic modem (for example "Standard 28800 bps
+	  Modem"), and you will be able to use the device.
+	
+	Configuring PnP ISA Devices
+	---------------------------
+	
+	After selecting the device that you want to install (or after automatic
+	selection, if Windows NT has an exact match), you may be presented with
+	additional dialog boxes requesting configuration information for the
+	device.  The following examples illustrate the type of user input typically
+	required.
+	
+	- PnP ISA modems and PnP ISA serial port devices:
+	
+	  Both of these devices are configured using the Advanced Port Settings dialog
+	  box. Use this dialog box to select the interrupt request and input/output
+	  range resources for the underlying serial port, and configure the COM port
+	  number and FIFO settings. After the devices are installed, Advanced Port
+	  Settings can be accessed using the Ports icon in Control Panel. Select the
+	  COM port, click Settings, and then click Advanced.
+	
+	- PnP ISA multimedia cards:
+	
+	  For these devices, each different multimedia device can present a different
+	  dialog box. For example, the Creative Labs SoundBlaster16 driver displays a
+	  property page with only a General tab. (Other multimedia device property
+	  pages could have additional tabs on them.) When you click Settings, you can
+	  select an interrupt, input/output ranges, and direct memory access (DMA)
+	  channels. To access the property page for any multimedia device, double-click
+	  the Multimedia icon in Control Panel. Click the Devices tab, and then select
+	  the PnP ISA device in the Multimedia devices box. Click Properties and then
+	  click Settings.
+	
+	  For more information about installing a Creative Labs SoundBlaster16 Plug and
+	  Play driver, see the DRVLIB\AUDIO\SBPNP\README.TXT file.
+	
+	Removing PnP ISA Devices
+	------------------------
+	
+	To remove a PnP ISA device, you must use one of  the Control Panel icons.
+	For example, to remove a PnP ISA modem or serial port, use the Ports icon
+	in Control Panel. To remove a multimedia PnP ISA device, use the Multimedia
+	icon in Control Panel.
+	
+	PNP ISA SCSI
+	
+	A Plug and Play SCSI adapter that has been installed during Windows NT
+	Setup will be redetected after Plug and Play ISA enabler is installed on
+	the system. When the New Hardware Found dialog box is displayed, you are
+	prompted to either keep the existing driver or install a new driver by
+	specifying a driver location. Click Yes to keep the existing driver.
+	
+	All Plug and Play ISA SCSI adapters should be set to run in Legacy mode.
+	For example, Adaptec AHA152x ISA Plug and Play adapters can be set to
+	Legacy mode by performing the following:
+	
+	1. Select a resource setting that is not already in use using DIP switches on
+	  the adapter. Do not select "inactive".
+	
+	2. Press Ctrl-A to start the SCSI Setup Utility after the banner appears.
+	
+	3. Turn off PnP mode.
+	
+	For more information about the Plug and Play ISA enabler, see "Plug and
+	Play ISA Device Installation and PNPISA.SYS" earlier in this document.
+	
+	ROM SHADOWING ON MULTIPROCESSOR SYSTEMS
+	
+	If you encounter persistent installation problems on multiprocessor
+	systems, try installing with ROM shadowing disabled.
+	
+	RUNNING WINDOWS NT VERSION 4.0 ON PCI BUS SYSTEMS
+	
+	To run Windows NT version 4.0 on a PCI bus system, you may need to enable
+	the interrupts via the CMOS screen or by switching jumpers on the
+	motherboard. Refer to system documentation to determine how to enable
+	interrupts for your system.
+	
+	WINDOWS NT SCSI DRIVER CHANGES
+	
+	With the release of Windows NT version 4.0, the drivers for certain SCSI
+	adapters have been moved from the base operating system to the Windows NT
+	Driver Library (\DRVLIB) included on the Windows NT version 4.0 compact
+	disc. Check the following list to determine if any of your adapters are
+	affected by this change. If your computer has an adapter that appears on
+	this list, you must create a driver disk before installing Windows NT
+	version 4.0. Use this disk to install the appropriate driver(s) during
+	Setup, or keep the disk handy and install the driver by using Control Panel
+	once Setup is complete.
+	
+	The following drivers have been moved:
+	
+	  always.sys
+	  dtc329x.sys
+	  t128.syst13b.sys
+	  tmv1.sys
+	  ultra124.sys
+	  wd33c93.sys
+	
+	The following adapters are affected by this change:
+	
+	  SCSI ADAPTERS:    Always IN-2000
+	
+	                    Data Technology Corp. 3290
+	                    Maynard 16-bit SCSI Adapter
+	                    MediaVision Pro Audio Spectrum-16
+	                    Trantor T-128
+	                    Trantor T-130B
+	
+	  DISK CONTROLLERS: UltraStor 124f EISA Disk Array Controller
+	
+	Please see the Windows NT Hardware Compatibility List for additional
+	information on these storage adapters.
+	
+	To create a driver disk for drivers that have been moved to the Driver
+	
+	Library
+	-------
+	
+	1. Create a blank formatted 3.5-inch disk.
+	
+	2. Copy all files from the following directory to the blank disk:
+	
+	  \drvlib\storage\retired\<CPU_TYPE>
+	
+	  where CPU_TYPE is X86 if you are using a machine with an x86-based processor;
+	  MIPS if your computer uses a MIPS RISC processor; or ALPHA if your computer
+	  uses a Digital Alpha processor. For enabler drivers, copy the files from the
+	  \Drvlib\storage\fenb directory.
+	
+	3. Write "Drivers disk" on the disk.
+	
+	To install drivers from the driver disk during Windows NT version 4.0 Setup
+	---------------------------------------------------------------------------
+	
+	1. Start Windows NT Setup. During the course of Setup, a message appears stating
+	  "Setup has recognized the following mass storage devices in your computer."
+	
+	2. When prompted, press S to skip detection, then press S again to display a
+	  list of supported SCSI host adapters.
+	
+	3. Select Other from the bottom of the list.
+	
+	4. Insert the disk labled "Drivers Disk" when you are prompted to do so, and
+	  select your host adapter from this list.
+	
+	Windows NT will now recognize any devices attached to this adapter. Repeat
+	this step for each host adapter not already recognized by Windows NT Setup.
+	
+	To install drivers when Setup recognizes one of the supported SCSI host
+	
+	adapters without making the devices attached to it available for use
+	--------------------------------------------------------------------
+	
+	1. Restart Windows NT Setup.
+	
+	2. When Windows NT Setup displays the message "Setup is inspecting your
+	  computer's hardware configuration...," press F6. This prevents Windows NT
+	  Setup from performing disk controller detection and allows you to install the
+	  driver from the "Drivers Disk" you created. Note that all SCSI adapters will
+	  have to be installed manually.
+	
+	3. When Windows NT Setup displays the message "Setup could not determine the
+	  type of one or more mass storage devices installed in your system, or you
+	  have chosen to manually specify an adapter," press S to display a list of
+	  supported SCSI host adapters.
+	
+	4. Select Other from the bottom of the list.
+	
+	5. Insert the "Drivers Disk" when prompted to do so, and select your host
+	  adapter from this list. Note that in some cases, Windows NT Setup will
+	  repeatedly prompt you to swap disks.
+	
+	Windows NT will now recognize any devices attached to this adapter. Repeat
+	this step for each host adapter not already recognized by Windows NT Setup.
+	
+	To install drivers from your driver disk after running Windows NT version
+	
+	4.0 Setup
+	---------
+	
+	1. After installing the properly configured adapter in your machine, start
+	  Windows NT version 4.0 as you normally would.
+	
+	2. Click Start, point to Settings, click Control Panel, and then double- click
+	  SCSI Adapters.
+	
+	3. Click the Drivers tab, and then click Add.
+	
+	4. Click Have Disk, insert your "Drivers Disk" into Drive A: and then click OK.
+	
+	5. Select the driver from the list and click OK. Click Continue to load the
+	  driver.
+	
+	6. Click Restart the computer to shutdown and restart your computer.
+	
+	SCSI DEVICE INTERROGATION TOOL (SCSITOOL)
+	
+	SCSItool detects SCSI adapters and the devices connected to the adapters.
+	SCSItool helps Microsoft Answer Point and Enterprise Customer Unit (Product
+	Support) personnel identify installed SCSI devices for diagnostic purposes
+	when a system does not start or becomes unstable.  SCSItool must be run
+	using a SCSItool boot floppy disk.
+	
+	The following adapters are supported:
+	
+	  Adaptec PCI, ISA, and EISA
+	  BusLogic PCI, EISA, and ISA
+	
+	System Requirements
+	-------------------
+	
+	12MB RAM
+	
+	486 processor
+	
+	VGA monitor
+	
+	3.5 inch 1.44 MB drive
+	
+	To create a SCSItool disk
+	-------------------------
+	
+	Run Makedisk.bat from the \support\scsitool folder on the Windows NT
+	Workstation or Windows NT Server compact disc.
+	
+	Makedisk.bat creates a bootable floppy disk that you can use to start your
+	computer and automatically run the diagnostic tool.
+	
+	To start SCSItool
+	-----------------
+	
+	Insert the SCSItool disk in drive A and then restart the system.
+	
+	SCSItool will do the following:
+	
+	- Create a 4MB RAM drive
+	
+	- Detect the RAM drive letter
+	
+	- Copy Scsizip.exe to the RAM drive
+	
+	- Self-extract Scsizip.exe.
+	
+	- Start Scsi.exe
+	
+	- Log adapters and devices data into a log file called Scsi.txt Video Notes
+	
+	CIRRUS LOGIC
+	
+	Some computers with the Cirrus 543x video chipset may experience problems
+	when attempting to restart. When restart is selected, the system may freeze
+	when attempting to reset the Cirrus video. This is not detrimental to the
+	system. Simply restart the computer using the reset button or power off the
+	computer.
+	
+	DIRECT DRAW
+	
+	The version of Direct Draw provided with this release of Windows NT is
+	fully compatible with the version released on Windows 95 in the DirectX 2
+	release.  The only difference between these two versions is that the
+	Windows NT version does not support ModeX low resolution modes.
+	
+	Low resolution modes
+	--------------------
+	
+	The Tseng ET6000 supports display modes which are lower resolution than
+	640x480.  No other driver currently supports low resolution modes and this
+	version of Direct Draw does not support ModeX modes.  Applications that
+	require low resolution modes will not run on non-ET6000 systems.
+	
+	DXSetup
+	-------
+	
+	The dxsetup program used by DirectX 1 games to install the DirectX
+	components on Windows 95 does not work properly on Windows NT.
+	Applications that use this setup program will not install correctly on
+	Windows NT. The dxsetup program supplied with the DirectX 2 SDK will work
+	correctly on Windows NT.
+	
+	Video cards with hardware acceleration
+	--------------------------------------
+	
+	The following video cards have drivers which contain DirectDraw support in
+	this release. Systems with video cards other than the ones on this list are
+	still able to run DirectDraw applications but no hardware acceleration is
+	provided.
+	
+	  x86
+	  ATI Mach64, Mach32
+	  S3 Trio64V+, Trio64V2
+	  S3 868, 968
+	  Matrox Millennium
+	  Tseng ET6000
+	  Mips
+	  S3 868, 968, Trio64V+ (some Mips machines either does not support these
+	     cards, or will not DirectDraw accelerated)
+	
+	  PPC
+	  S3 868, 968, Trio64V+
+	  Matrox Millennium (the Millennium doesn't work in some IBM PPC machines)
+	  Alpha
+	  Matrox Millennium
+	
+	S3
+	
+	Some computers using the S3 chipsets will not display 1152x864 resolutions.
+	These machines do not support the S3 1152 BIOS Standard. Set the resolution
+	to another mode.
+	
+	Due to differences in BIOS mode tables, some S3 cards will not correctly
+	set the proper refresh rate. Contact your video card manufacturer for an
+	updated driver.
+	
+	S15
+	
+	The S15 video card does not display colors correctly on the IBM P70, the
+	IBM 21P, and the Iiyama monitors. There are two models of the P70.
+	The P70 which displays colors incorrectly has a switch on the back labeled
+	"normal" and "adjust". The switch is typically in the "normal"
+	position.  Switching it to the "adjust" position will resolve the color
+	problem. The color problem does not appear in the model of the P70 that
+	does not have the normal/adjust switch.
+	
+	There is no known workaround for the IBM 21P and Iiyama monitors.
+	
+	MATROX
+	
+	Video cards with the Matrox Atlas chipset may show text corruption during
+	interlaced modes.
+	
+	Compaq Q-Vision 2000 and Matrox Impression Lite Rev E boards are affected.
+	Set the refresh rate in Control Panel, Display to a non-interlaced setting.
+	Some systems with a Matrox Impression Plus 4MB video card in high
+	resolution modes may show a cursor 'ghost' (a copy of the mouse pointer an
+	inch away from the usual pointer).
+	
+	The Matrox driver conflicts with some Token ring cards in Compaq computers.
+	The conflict causes the network card to fail at startup. Contact Compaq for
+	an updated driver.
+	
+	VDM (VIRTUAL DOS MACHINE)
+	
+	Some CGA (color graphics adapter) and EGA (enhanced graphics adapter) MS-
+	DOS applications may experience palette corruption after several successive
+	screen switches.
+	
+	WEITEK
+	
+	Video cards with the Weitek P9100 video chipset may display offset or
+	changing colors. These color palette changes occur when the video color
+	depth is set to 256 colors (8 bit). To resolve this, set color depth higher
+	than 256 colors (16, 24 or 32 bit).
+	
+	Additional query words: read-me
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+	Version           : 4.0
+	
+	=============================================================================
+	

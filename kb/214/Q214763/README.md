@@ -1,0 +1,109 @@
+---
+layout: page
+title: "Q214763: XFOR: OVVM Connector Sends Incorrect Loc. Info. in Meeting Req."
+permalink: kb/214/Q214763/
+---
+
+## Q214763: XFOR: OVVM Connector Sends Incorrect Loc. Info. in Meeting Req.
+
+	Article: Q214763
+	Product(s): Microsoft Exchange
+	Version(s): winnt:5.5
+	Operating System(s): 
+	Keyword(s): exc55 EXC55SP3Fix
+	Last Modified: 09-AUG-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, version 5.5 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	Exchange Server users may find that upon receiving a meeting request from a host
+	user (OVVM), the location information is incorrect. This behavior occurs when
+	the original host user does not specify a Location field in the meeting request;
+	the OV/VM (PROFS) connector uses a value from a previous meeting request
+	containing location information.
+	
+	CAUSE
+	=====
+	
+	This is the result of a bug during the parsing of the meeting request by the
+	OV/VM (PROFS) connector. Note that this bug only applies to the Web 2 or later
+	version of the OV/VM (PROFS) connector.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, obtain the latest service pack for Exchange Server
+	version 5.5. For additional information, please see the following article in the
+	Microsoft Knowledge Base:
+	
+	  Q191014 XGEN: How to Obtain the latest Exchange Server 5.5 Service Pack
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	Component: PROFS
+	
+	+-------------------------+
+	| File Name  | Version    | 
+	+-------------------------+
+	| Lsvmhc.dll | 5.5.2543.0 | 
+	+-------------------------+
+	
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Exchange Server 5.5 for the
+	Intel and Alpha versions. This problem was first corrected in Exchange Server
+	5.5 Service Pack 3.
+	
+	MORE INFORMATION
+	================
+	
+	The following text version of the meeting request illustrates the Location
+	field:
+	
+	  
+	
+	  Subject:	Meeting to discuss financial report
+	  Location:	Conference Room 1001
+	
+	  Start:	Thu 1/21/99 10:00 AM
+	  End:	Thu 1/21/99 11:00 AM
+	  Show Time As:	Tentative
+	  Recurrence:	(none)
+	  Meeting Status:	Not yet responded
+	  Required Attendees:	Euro 11 (VMX); Jimmy Cricket
+	  To: EURO11  --MICROSFT European Clown 11  JIMMYC  --EFONSC5
+	
+	  Requester:             European Clown 11
+	  Date to be scheduled:  01/21/99
+	  Starting time:         10:00
+	  Ending time:           11:00
+	
+	  Location:   Conference Room 1001
+	  Subject:    Meeting to discuss financial report
+	  Purpose:    See Subject.
+	
+	           * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+	
+	
+	Additional query words: PROFS, meetings, location info.
+	
+	======================================================================
+	Keywords          : exc55 EXC55SP3Fix 
+	Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+	Version           : winnt:5.5
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

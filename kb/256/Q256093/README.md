@@ -1,0 +1,76 @@
+---
+layout: page
+title: "Q256093: IIS May Generate Access Violation for Certain HTTP Requests"
+permalink: kb/256/Q256093/
+---
+
+## Q256093: IIS May Generate Access Violation for Certain HTTP Requests
+
+	Article: Q256093
+	Product(s): Internet Information Server
+	Version(s): WINDOWS:; winnt:5.0
+	Operating System(s): 
+	Keyword(s): kbWin2000PreSP1Fix kbWin2000sp1Fix
+	Last Modified: 18-NOV-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Services version 5.0 
+	- Microsoft Windows 2000 Advanced Server 
+	- Microsoft Windows 2000 Server 
+	- Microsoft Windows 2000 Professional 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Internet Information Services (IIS) may generate an Access Violation error
+	message in the Inetinfo.exe process if certain characters are present in a
+	certain position of the HTTP-request header. The Inetinfo.exe process is
+	automatically restarted if an Access Violation error message occurs in it.
+	
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, obtain the latest service pack for Windows 2000. For
+	additional information, click the following article number to view the article
+	in the Microsoft Knowledge Base:
+	
+	  Q260910 How to Obtain the Latest Windows 2000 Service Pack
+	
+	
+	NOTE: To view the version number, right-click the file in Windows Explorer, click
+	Properties, and then click the Version tab.
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed that this is a problem in the Microsoft products that
+	are listed at the beginning of this article.
+	
+	This problem was first corrected in Windows 2000 Service Pack 1.
+	
+	MORE INFORMATION
+	================
+	
+	For additional information about how to install Windows 2000 and Windows 2000
+	hotfixes at the same time, click the article number below to view the article in
+	the Microsoft Knowledge Base:
+	
+	  Q249149 Installing Microsoft Windows 2000 and Windows 2000 Hotfixes
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbWin2000PreSP1Fix kbWin2000sp1Fix 
+	Technology        : kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbiisSearch kbiis500 kbWinAdvServSearch
+	Version           : WINDOWS:; winnt:5.0
+	Hardware          : ALPHA x86
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

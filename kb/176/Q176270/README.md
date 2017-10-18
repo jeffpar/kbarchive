@@ -1,0 +1,156 @@
+---
+layout: page
+title: "Q176270: Treewrap.exe - Sample TreeView Control in Visual FoxPro"
+permalink: kb/176/Q176270/
+---
+
+## Q176270: Treewrap.exe - Sample TreeView Control in Visual FoxPro
+
+	Article: Q176270
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:5.0,5.0a,6.0
+	Operating System(s): 
+	Keyword(s): kbfile kbsample kbvfp500 kbvfp600 kbDSupport
+	Last Modified: 10-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Visual FoxPro 5.0 or later, ships with the TreeView control that is one of the
+	controls in the Comctl32.ocx. When you use the TreevView control in a Visual
+	FoxPro application, several issues may prevent you from using all the features
+	of the control. However, you can work around the problems by creating an ActiveX
+	control in Visual Basic 5.0 that acts as a wrapper for the TreeView control.
+	
+	Code that will not work if written in FoxPro may be written in Visual Basic. When
+	you create the control, build the functionality needed into the wrapper
+	control.
+	
+	The sample file explains how to create the wrapper control in Visual Basic and
+	expose the different properties, methods, and events to a container that is
+	using the control. For example, the code that gives a user the ability to drag
+	and drop nodes in the TreeView control is built in the wrapper control. There is
+	also an ImageList control inside the wrapper control so that you can assign
+	images for the TreeView to use.
+	
+	MORE INFORMATION
+	================
+	
+	The following files are available for download from the Microsoft Download
+	Center:
+	
+	  Treewrap.exe
+	  (http://download.microsoft.com/download/vfox60/sample9/1/W9X/EN-US/Treewrap.exe)
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. Once posted, the file is housed on secure
+	servers that prevent any unauthorized changes to the file.
+	
+	The TreeView control example illustrates some basics of using and manipulating
+	the TreeView control. Because Visual FoxPro does not handle some of the methods
+	and properties of the TreeView control, this example uses an ActiveX control
+	written in Visual Basic that acts as a wrapper for the TreeView control.
+	
+	The example also shows how to add Nodes to the control using the five different
+	relationship settings of the Nodes Collection Add Method. The sample code also
+	allows you to remove a selected Node or branch.
+	
+	The main focus of the example is to show how to save and restore the Nodes in a
+	FoxPro table. The algorithm used saves the Nodes in viewing order. This allows
+	you to save and restore the TreeView control with the Nodes in the same order
+	that the user was viewing them when the application closed.
+	
+	The sample file also illustrates dragging and dropping of the Nodes. The code
+	allows you to drag a Node and drop it on top of a different Node so that the
+	dragged Node is now the child of the Node on which it was dropped on. The drag
+	and drop code was written into the wrapper control with Visual Basic. The
+	wrapper control then exposes the necessary properties, methods, and events so
+	that you can use the control in Visual FoxPro. An Imagelist control is also
+	included in the wrapper control to give you the ability to assign an image to
+	the nodes.
+	
+	NOTE: To use this sample in FoxPro, you need to issue a SYS(2333,0) before you
+	open or run the TreeView form. You will also need to use Regsvr32.exe and
+	register the Vbtofox.ocx before you use the .ocx file. (It does not matter where
+	the .ocx file is located for this example to work.) The syntax for using
+	Regsvr32.exe is as follows:
+	
+	  Regsvr32 [/u] [/s] <.ocx File Name>
+	
+	where:
+	
+	  /u means Unregister the .ocx File /s means Silent Mode (display no messages)
+	
+	If you build the .ocx file in Visual Basic, it will register the control for you.
+	The default in Visual Basic is to give the control a new class ID every time the
+	control is rebuilt. This can cause errors in Visual FoxPro because it may be
+	looking for a version of the control with a different class ID.
+	
+	To use this sample, you will need to have Visual Basic 5.0 and Visual FoxPro 5.0
+	installed on your system. This sample has not been tested on a machine that did
+	not have both Visual Basic and Visual FoxPro installed.
+	
+	Here are the steps to run the sample:
+	
+	1. Use Regsver32.exe to register the .ocx file.
+	
+	2. Issue a SYS(2333,0) in FoxPro.
+	
+	3. Set the default directory to the location of the Treeview.scx.
+	
+	4. Run the Treeview.scx form.
+	
+	The files included with this sample are listed below:
+	
+	- Readme.txt
+	- Treeview.scx FoxPro file
+	- Treeview.sct FoxPro file
+	- VBtoFox.vbp VB project file
+	- VBtoFox.vbw VB file
+	- WrapTreeView.ctl VB file
+	- VBtoFox.ocx
+	- VBtoFox.exp
+	- VBtoFox.lib
+	- Rocket.ico
+	- Plane.ico
+	
+	REFERENCES
+	==========
+	
+	For more information on the TreeView control see the Online Help.
+	
+	Additional information on creating ActiveX controls in Visual Basic may be found
+	in the Visual Basic's Component Tools Guide and Books Online.
+	
+	Visual FoxPro Help; 5.0, 5.0a; search on: TreeView control1
+	
+	Visual Basic's Component Tools Guide and Books Online; search on: Creating
+	ActiveX controls in Visual Basic
+	
+	(c) Microsoft Corporation 1997, All Rights Reserved. Contributions by Brian
+	Combs, Microsoft Corporation
+	
+	
+	Additional query words: Treewrap
+	
+	======================================================================
+	Keywords          : kbfile kbsample kbvfp500 kbvfp600 kbDSupport 
+	Technology        : kbVFPsearch kbVBSearch kbAudDeveloper kbPTNotAssigned kbZNotKeyword2 kbVB500Search kbVBA500 kbVB500 kbVFP500 kbVFP600 kbVFP500a
+	Version           : WINDOWS:5.0,5.0a,6.0
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

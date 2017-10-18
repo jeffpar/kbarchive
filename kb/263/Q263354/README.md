@@ -1,0 +1,55 @@
+---
+layout: page
+title: "Q263354: NT Logon Server Manager Error Message When Deinstalling Domain"
+permalink: kb/263/Q263354/
+---
+
+## Q263354: NT Logon Server Manager Error Message When Deinstalling Domain
+
+	Article: Q263354
+	Product(s): Microsoft Systems Management Server
+	Version(s): winnt:2.0
+	Operating System(s): 
+	Keyword(s): kbConfig kbMMC kbServer kbsms200 kbsms200bug kbsmsAdmin kbStatSum kbsms200preSP3
+	Last Modified: 22-JUL-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server version 2.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	At the end of a domain update cycle, the NT_LOGON_SERVER_MANAGER thread of the
+	SMS Executive service attempts to write the Mastercfg.mcf file on the primary
+	domain controller. If you removed the domain by using Windows Networking Logon
+	Client Installation or Windows Networking Logon Discovery, error code 67 is
+	returned. This means that the path was not found because the logon point no
+	longer exists. This results in an error message (message ID 1405) being
+	generated.
+	
+	WORKAROUND
+	==========
+	
+	You can safely ignore this error message. This message occurs only once after
+	the first domain update cycle after you remove a domain.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Systems Management Server
+	version 2.0.
+	
+	Additional query words: LSM prodsms
+	
+	======================================================================
+	Keywords          : kbConfig kbMMC kbServer kbsms200 kbsms200bug kbsmsAdmin kbStatSum kbsms200preSP3 
+	Technology        : kbSMSSearch kbSMS200
+	Version           : winnt:2.0
+	Issue type        : kbbug
+	Solution Type     : kbnofix
+	
+	=============================================================================
+	

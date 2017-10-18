@@ -1,0 +1,181 @@
+---
+layout: page
+title: "Q131679: PC NTMMTA: Detecting Memory Bottlenecks"
+permalink: kb/131/Q131679/
+---
+
+## Q131679: PC NTMMTA: Detecting Memory Bottlenecks
+
+	Article: Q131679
+	Product(s): Microsoft Mail For PC Networks
+	Version(s): 3.5
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 03-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Mail Multitasking MTA for Windows NT, version 3.5 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Lack of memory is the most common cause of performance problems in computer
+	systems. When the memory requirements of the active processes exceed the
+	physical memory available on the system, the system starts paging (moving
+	portions of active processes to disk in order to reclaim physical memory). At
+	this point, performance decreases dramatically.
+	
+	This article discusses memory usage and which Performance Monitor counters are
+	effective in detecting memory bottlenecks.
+	
+	MORE INFORMATION
+	================
+	
+	The single resource that consumes the most time during a task's execution is
+	that task's bottleneck. Bottlenecks can occur because resources are not being
+	used efficiently, resources are not being used fairly, or a resource is too slow
+	or too small.
+	
+	A quick way to tell if a system is struggling for memory is to call up WINMSD.EXE
+	(located in %System Root%\system32) and look at the Memory dialog. This utility
+	details the total memory in the system, the current available memory ready for
+	allocation to applications started, available space within the page file, and
+	the Memory Load Index. The Memory Load Index specifies a number between 0 and
+	100 that gives a general idea of current memory utilization, in which 0
+	indicates no memory use and 100 indicates full memory use.
+	
+	Using Performance Monitor
+	-------------------------
+	
+	Performance Monitor is a graphical tool for measuring the performance of a
+	Windows NT based computer or other Windows NT based computers on a network.
+	
+	It is located in the Administrative Tools group of both the Windows NT
+	Workstation and Windows NT Server products. On each computer, the behavior of
+	objects such as processors, memory, cache, threads, and processes can be viewed.
+	Each of these objects has an associated set of counters that provide information
+	on such things as device usage, queue lengths, and delays, as well as
+	information used for throughput and internal congestion measurements. It
+	provides charting, alerting, and reporting capabilities that reflect current
+	activity along with ongoing logging. Log files can be opened later for browsing
+	and charting to reflect current activity.
+	
+	Before spending money to add more hardware or replace existing hardware, it i s
+	best to use Performance Monitor to first tune the system to make the most
+	efficient use of existing resources.
+	
+	Memory - Pages/sec
+	------------------
+	
+	Pages/sec is the number of pages read from the disk or written to the disk to
+	resolve memory references to pages that were not in memory at the time of the
+	reference. As a rule, assume that if the average of this counter is consistently
+	greater than five, then memory is probably becoming a bottleneck in the system.
+	Once this counter starts to average consistently at 10 or above, performance is
+	significantly degraded and disk thrashing is probably occurring.
+	
+	Memory - Available Bytes
+	------------------------
+	
+	Available Bytes displays the amount of free physical memory. If this counter
+	stays consistently below 1 MB on servers and 4 MB on workstations, paging is
+	occurring and performance is less than optimal.
+	
+	Memory - Committed Bytes
+	------------------------
+	
+	Committed Bytes displays the size of virtual memory (in bytes) that have been
+	committed (as opposed to simply reserved). If this counter is greater than the
+	amount of main memory, it indicates that main memory may not be large enough to
+	accommodate all functions of all currently active processes and some paging may
+	be inevitable. However, before making such an assumption, check Memory -
+	Pages/sec and Memory - Page Faults/sec. If the Memory - Pages/sec is greater
+	than 10 (10 is a reasonable guideline, but varies with disk hardware) and Memory
+	- Page Faults/sec is greater than Memory - Cache Faults/sec then there is too
+	much paging.
+	
+	When Memory - Committed bytes approaches the Memory - Commit Limit and the page
+	file has already reached maximum page file size, there are simply no more pages
+	available, in main memory or in the page file. The Memory - Commit Limit is the
+	amount of virtual memory that can be committed without extending the page file.
+	If this occurs on a server running Windows NT Server, three errors in the Event
+	Log may show up. (EVENTVWR.EXE is located in the Administrative Tools group).
+	They are from the source:
+	
+	2020: The server was unable to allocate from the system paged pool because the
+	pool was empty.
+	
+	2001: The server was unable to perform an operation due to a shortage of
+	available resources.
+	
+	2016: The server was unable to allocate virtual memory.
+	
+	NOTE: If this occurs, it is generally related to a memory leak in another
+	process. To determine the process at fault, monitor each process's Page File
+	bytes or Working Set.
+	
+	Another condition to be aware of is the following nonpaged pool error in the
+	server's Event Log:
+	
+	2019: The server was unable to allocate from the system nonpaged pool because the
+	pool was empty.
+	
+	Nonpaged pool pages cannot be paged out to the paging file, but instead remain in
+	main memory as long as they are allocated. By default, NonPagedPoolSize is
+	dynamically calculated as follows:
+	
+	The system's nonpaged pool allocation can be monitored with the Memory Pool Non
+	Paged Bytes counter. If there is a shortage of nonpaged pool, the following
+	error may occur on a remote system or even the local system:
+	
+	  Not enough storage available to process this command.
+	
+	If this error occurs, start looking at each process's nonpaged pool allocation.
+	This is generally caused by an application incorrectly making system calls and
+	using up all allocated nonpaged pool.
+	
+	Adding More Memory
+	------------------
+	
+	To determine about how much memory to add, use the following formula:
+	
+	  Paging File - % Usage - MAX * Page file size = number of bytes used.
+	  Add together the bytes used for all page files.
+	
+	This is the amount of memory that would need to be added to allow all of the
+	applications to perform their operations with minimum paging. For example, if a
+	page file is 100 MB and the % Usage MAX is 20%, then add 20 MB additional
+	
+	RAM to have a system that does minimal paging. The reason this formula only gives
+	an idea about how much memory to add is that a) not all page file "in use" code
+	is accessed all the time; and b) the formula ignores the requirements for code
+	and mapped files not backed by the paging file. Therefore this estimate is
+	neither an upper bound, nor a lower bound, it is only an "indication." The truth
+	is that there is no good way to know how much memory to add at this time. A more
+	accurate way to measure the amount of memory an application would require is to
+	run the application on a very large machine and measure the needs under some
+	slight memory pressure. (There is a tool in the Windows NT Resource Kit volume 3
+	utilities called Response Probe that can aid in this area.)
+	
+	Adding memory without upgrading the secondary cache size sometimes degrades
+	processor performance. This is because the secondary cache now has to map the
+	larger memory space, usually resulting in lowered hit rates in the cache. This
+	slows down processor-bound programs because they are scattered more widely in
+	memory after memory has been added. (Secondary cache refers to the physical
+	cache memory chip(s) usually located on the motherboard, as opposed to within
+	the processor itself. In the future, processors will be built with secondary
+	cache on the same substrate as the processor chip, or even within the processor
+	chip itself.)
+	
+	Additional query words: 3.20
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbZNotKeyword2 kbMailSearch kbZNotKeyword3 kbMailMMTA350NT
+	Version           : :3.5
+	
+	=============================================================================
+	

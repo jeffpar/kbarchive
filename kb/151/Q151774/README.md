@@ -1,0 +1,193 @@
+---
+layout: page
+title: "Q151774: HOWTO: Call NetUserGetInfo from Visual Basic"
+permalink: kb/151/Q151774/
+---
+
+## Q151774: HOWTO: Call NetUserGetInfo from Visual Basic
+
+	Article: Q151774
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 4.0,5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbnetwork kbAPI kbSDKPlatform kbVBp400 kbVBp500 kbVBp600 kbNetAPI kbGrpDSNet
+	Last Modified: 28-MAR-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Learning Edition for Windows, versions 6.0, 5.0 
+	- Microsoft Visual Basic Professional Edition for Windows, versions 6.0, 5.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 6.0, 5.0 
+	- Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+	- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The NetUserGetInfo function is a Unicode-only Windows NT API. The last parameter
+	of this function is a pointer to a pointer to a structure whose members contain
+	DWORD data and pointers to Unicode strings. In order to call this function
+	correctly from a Visual Basic application, you need to de-reference the pointer
+	returned by the function and then you need to convert the Visual Basic string to
+	a Unicode string and vice versa. This article illustrates these techniques in an
+	example that calls NetUserGetInfo to retrieve a USER_INFO_3 structure from a
+	Visual Basic application.
+	
+	MORE INFORMATION
+	================
+	
+	The example below uses the Win32 RtlMoveMemory function to de-reference the
+	pointer returned by the NetUserGetInfo call. For more information on how to
+	declare and use RtlMoveMemory function in Visual Basic, please see the following
+	article in the Microsoft Knowledge Base:
+	
+	  Q129947 INFO: Win32 Replacement for the hmemecpy Function
+	
+	For more information on how to convert Visual Basic string to Unicode string and
+	vice versa, please see the following article in the Microsoft Knowledge Base:
+	
+	  Q145727 HOWTO: Call the Unicode Version of an API Function with VB
+	
+	Step-by-Step Example
+	--------------------
+	
+	1. Start Visual Basic. If Visual Basic is already running, from the File menu,
+	  choose New Project. Form1 is created by default.
+	
+	2. Add a Command button, Command1, to Form1.
+	
+	3. Add the following code to the General Declarations section of Form1:
+	
+	     ' definitions not specifically declared in the article:
+	
+	     ' the servername and username params can also be declared as Longs,
+	     ' and passed Unicode memory addresses with the StrPtr function.
+	     Private Declare Function NetUserGetInfo Lib "netapi32" _
+	                                   (ByVal servername As String, _
+	                                   ByVal username As String, _
+	                                   ByVal level As Long, _
+	                                   bufptr As Long) As Long
+	
+	     Const NERR_Success = 0
+	
+	     Private Declare Sub MoveMemory Lib "kernel32" Alias _
+	            "RtlMoveMemory" (pDest As Any, pSource As Any, ByVal dwLength As Long)
+	
+	     Private Declare Function lstrlenW Lib "kernel32" (lpString As Any) As Long
+	
+	     ' Converts a Unicode string to an ANSI string
+	     ' Specify -1 for cchWideChar and 0 for cchMultiByte to return string length.
+	     Private Declare Function WideCharToMultiByte Lib "kernel32" _
+	                                 (ByVal codepage As Long, _
+	                                 ByVal dwFlags As Long, _
+	                                 lpWideCharStr As Any, _
+	                                 ByVal cchWideChar As Long, _
+	                                 lpMultiByteStr As Any, _
+	                                 ByVal cchMultiByte As Long, _
+	                                 ByVal lpDefaultChar As String, _
+	                                 ByVal lpUsedDefaultChar As Long) As Long
+	      
+	      
+	     Private Declare Function NetApiBufferFree Lib "netapi32" _
+	               (ByVal Buffer As Long) As Long
+	     
+	     ' CodePage
+	      Const CP_ACP = 0        ' ANSI code page
+	      
+	      Private Type USER_INFO_3
+	          usri3_name As Long              'LPWSTR in SDK
+	          usri3_password As Long          'LPWSTR in SDK
+	          usri3_password_age As Long      'DWORD in SDK
+	          usri3_priv As Long              'DWORD in SDK
+	          usri3_home_dir As Long          'LPWSTR in SDK
+	          usri3_comment As Long           'LPWSTR in SDK
+	          usri3_flags As Long             'DWORD in SDK
+	          usri3_script_path As Long       'LPWSTR in SDK
+	          usri3_auth_flags As Long        'DWORD in SDK
+	          usri3_full_name As Long         'LPWSTR in SDK
+	          usri3_usr_comment As Long       'LPWSTR in SDK
+	          usri3_parms As Long             'LPWSTR in SDK
+	          usri3_workstations As Long      'LPWSTR in SDK
+	          usri3_last_logon As Long        'DWORD in SDK
+	          usri3_last_logoff As Long       'DWORD in SDK
+	          usri3_acct_expires As Long      'DWORD in SDK
+	          usri3_max_storage As Long       'DWORD in SDK
+	          usri3_units_per_week As Long    'DWORD in SDK
+	          usri3_logon_hours As Long       'PBYTE in SDK
+	          usri3_bad_pw_count As Long      'DWORD in SDK
+	          usri3_num_logons As Long        'DWORD in SDK
+	          usri3_logon_server As Long      'LPWSTR in SDK
+	          usri3_country_code As Long      'DWORD in SDK
+	          usri3_code_page As Long         'DWORD in SDK
+	          usri3_user_id As Long           'DWORD in SDK
+	          usri3_primary_group_id As Long  'DWORD in SDK
+	          usri3_profile As Long           'LPWSTR in SDK
+	          usri3_home_dir_drive As Long    'LPWSTR in SDK
+	          usri3_password_expired As Long  'DWORD in SDK
+	      End Type
+	
+	     Private Sub Command1_Click()
+	       Dim lpBuf As Long
+	       Dim ui3 As USER_INFO_3
+	
+	       ' Replace "Administrator" with a valid Windows NT user name.
+	       If (NetUserGetInfo("", StrConv("Administrator", vbUnicode), 3, _
+	  lpBuf) = NERR_Success) Then
+	         Call MoveMemory(ui3, ByVal lpBuf, Len(ui3))
+	
+	         MsgBox GetStrFromPtrW(ui3.usri3_name)
+	
+	         Call NetApiBufferFree(ByVal lpBuf)
+	       End If
+	
+	     End Sub
+	
+	     ' Returns an ANSI string from a pointer to a Unicode string.
+	
+	     Public Function GetStrFromPtrW(lpszW As Long) As String
+	       Dim sRtn As String
+	
+	       sRtn = String$(lstrlenW(ByVal lpszW) * 2, 0)   ' 2 bytes/char
+	
+	     ' WideCharToMultiByte also returns Unicode string length
+	     '  sRtn = String$(WideCharToMultiByte(CP_ACP, 0, ByVal lpszW, -1, 0, 0, 0, 0), 0)
+	
+	       Call WideCharToMultiByte(CP_ACP, 0, ByVal lpszW, -1, ByVal sRtn, Len(sRtn), 0, 0)
+	       GetStrFromPtrW = GetStrFromBufferA(sRtn)
+	
+	     End Function
+	
+	     ' Returns the string before first null char encountered (if any) from an ANSI string.
+	
+	     Public Function GetStrFromBufferA(sz As String) As String
+	       If InStr(sz, vbNullChar) Then
+	         GetStrFromBufferA = Left$(sz, InStr(sz, vbNullChar) - 1)
+	       Else
+	         ' If sz had no null char, the Left$ function
+	         ' above would return a zero length string ("").
+	         GetStrFromBufferA = sz
+	       End If
+	     End Function
+	
+	REFERENCES
+	==========
+	
+	For additional information on retrieving data for domain users, click the
+	article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q187535 HOWTO: Change Passwords Programmatically in Windows NT
+	
+	Additional query words: Unicode
+	
+	======================================================================
+	Keywords          : kbnetwork kbAPI kbSDKPlatform kbVBp400 kbVBp500 kbVBp600 kbNetAPI kbGrpDSNet 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400 kbZNotKeyword3
+	Version           : :4.0,5.0,6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

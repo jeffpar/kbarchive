@@ -1,0 +1,52 @@
+---
+layout: page
+title: "Q77262: Incorrect Date on Vendex Headstart XT Computer"
+permalink: kb/077/Q77262/
+---
+
+## Q77262: Incorrect Date on Vendex Headstart XT Computer
+
+	Article: Q77262
+	Product(s): Microsoft Disk Operating System
+	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22
+	Operating System(s): 
+	Keyword(s): msdos
+	Last Modified: 17-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft MS-DOS operating system versions 3.1, 3.2, 3.21, 3.3, 3.3a, 4.0, 4.01, 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	After Microsoft MS-DOS version 5.0 or later as been installed on a Vendex
+	Headstart XT computer, the date will not display correctly. When the correct
+	date is set, this system continues to display the incorrect year.
+	
+	CAUSE
+	=====
+	
+	A file called ST.COM is responsible for maintaining the correct date and time on
+	the Vendex Headstart XT computer. ST.COM was written specifically for this
+	computer for use with MS-DOS version 3.2 ONLY. This file will not maintain the
+	correct year under any other version of MS-DOS. However, the time, month, and
+	day settings will be correctly maintained by ST.COM. According to Philips
+	technical support, the only workaround is to purchase a compatible 8-bit clock
+	card to maintain proper settings.
+	
+	The products included here are manufactured by vendors independent of Microsoft;
+	we make no warranty, implied or otherwise, regarding these products' performance
+	or reliability.
+	
+	Additional query words: 6.22 3.00 3.10 3.30 3.30a 4.00 4.01 5.00 5.00a 6.00 6.20 3rdparty
+	
+	======================================================================
+	Keywords          : msdos 
+	Technology        : kbMSDOSSearch kbMSDOS321 kbMSDOS400 kbMSDOS320 kbMSDOS330a kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS310 kbMSDOS500 kbMSDOS330 kbMSDOS401 kbMSDOS500a
+	Version           : MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22
+	
+	=============================================================================
+	

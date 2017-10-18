@@ -1,0 +1,67 @@
+---
+layout: page
+title: "Q137366: FILE: Fw-win95.exe Running FoxPro 2.6 Apps in Windows 95"
+permalink: kb/137/Q137366/
+---
+
+## Q137366: FILE: Fw-win95.exe Running FoxPro 2.6 Apps in Windows 95
+
+	Article: Q137366
+	Product(s): Microsoft FoxPro
+	Version(s): WINDOWS:2.5x,2.6x
+	Operating System(s): 
+	Keyword(s): kbOSWin95
+	Last Modified: 03-AUG-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft FoxPro for Windows, versions 2.5x, 2.6x 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Fw-win95.exe is a file that contains the document "Running FoxPro 2.6 for
+	Windows Applications Under Windows 95."
+	
+	MORE INFORMATION
+	================
+	
+	The following file is available for download from the Microsoft Software
+	Library:
+	
+	  Fw-win95.exe
+	  (http://support.microsoft.com/download/support/mslfiles/Fw-win95.exe)
+	
+	For more information about downloading files from the Microsoft Software Library,
+	please see the following article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	
+	Applications designed for Windows automatically take advantage of many new
+	Microsoft Windows 95 features. Some of these new features cause side effects
+	that could not have been anticipated by vendors who shipped FoxPro 2.6 for
+	Windows applications a year or even six months before Windows 95 was released.
+	
+	The "Running FoxPro 2.6 for Windows Applications Under Windows 95" document
+	discusses the following changes that developers contacting Microsoft Technical
+	Support have asked about:
+	
+	- The FoxPro Icon is displayed in the Explorer for a distributed application.
+	- The FoxPro 2.6 Icon is displayed in the Title Bar and Task Bar.
+	- The FoxPro 2.6 Icon is displayed periodically in a screen's Title Bar.
+	- The Close menu does not work.
+	- Screens with a bordertype of System, Panel, or Double cannot be restored
+	  after being minimized.
+	
+	Additional query words: FoxWin win95 win 95 softlib kbfile akz
+	
+	======================================================================
+	Keywords          : kbOSWin95 
+	Technology        : kbAudDeveloper kbFoxproSearch
+	Version           : WINDOWS:2.5x,2.6x
+	
+	=============================================================================
+	

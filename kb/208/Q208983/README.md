@@ -1,0 +1,107 @@
+---
+layout: page
+title: "Q208983: HOWTO: Using MFC LOC DLLs"
+permalink: kb/208/Q208983/
+---
+
+## Q208983: HOWTO: Using MFC LOC DLLs
+
+	Article: Q208983
+	Product(s): Microsoft C Compiler
+	Version(s): winnt:
+	Operating System(s): 
+	Keyword(s): kbDLL kbIntl kbMFC kbResource kbVC kbLocalization kbDSupport kbIntlDev kbGrpDSMFCATL
+	Last Modified: 24-JUL-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The Microsoft Foundation Classes (MFC) 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Visual C++ provides resource only DLLs that have localized versions of the
+	resources used by MFC. These are known generically as the MFC LOC DLLs. An MFC
+	application will use the resources contained in the MFCxxLOC DLL as long as it
+	is installed on the system.
+	
+	In this article the term "MFC LOC" refers to MFC version independent localized
+	resource only DLLs, "MFCxxLOC" refers to MFC version specific localized resource
+	only DLLs, "MFC DLL" refers to the general MFC DLL such as MFC42.DLL or
+	MFC40.DLL, and "MFCxx.DLL refers to a specific version of the MFC DLL.
+	
+	MORE INFORMATION
+	================
+	
+	When the MFC DLL loads its resources, MFC first checks to see if an MFCxxLOC DLL
+	exists, and if it does, the resources from that DLL are loaded instead of those
+	from the MFC DLL.
+	
+	Visual C++ ships with MFCxxLOC DLLs localized for English (US), French (France),
+	German, Spanish, Italian, Japanese, Korean, Simple Chinese, and Traditional
+	Chinese languages. The DLLs are suffixed with a three letter language specifing
+	indicating the localization of the DLL. For example, MFC42CHT.dll specifies
+	Traditional Chinese and MFC42ITA.dll specifies the Italian. These DLLs are not
+	installed during the setup of Visual C++ but can be found on the product CDs in
+	the ...\OS\SYSTEM directory in Visual C++ 6.0 and in the ...\DevStudio\VC\Redist
+	directory in Visual C++ 5.0.
+	
+	In order for you to make sure the MFC DLL uses MFC resources from one of these
+	resource only DLLs instead of the resources included in the MFC DLL, rename the
+	DLL to MFCxxLOC.dll and install it in the same directory where the MFCxx.dll is
+	located. For example, rename the MFC42fra DLL to MFC42LOC and install it in the
+	system32 directory.
+	
+	Since MFCxxLOC DLLs are only resource DLLs, versions localized for additional
+	languages can be created by copying the an existing MFCxxLOC DLL, renaming it,
+	for example to MFCxxHEB, and then opening and editing the DLL's resources
+	appropriately.
+	
+	There are important points concerning installation that should be considered
+	before using the MFC LOC DLL. For example only one MFCxxLOC DLL can be installed
+	at a time. This means that every applications that uses MFCxx.dll on a system
+	where MFCxxLOC.dll is installed will also use the localized MFC resources from
+	that MFCxxLOC.dll. This means that using the MFCxxLOC DLL is an unacceptable
+	means of localizing MFC resources in situations where you would use MFC
+	applications localized for multiple languages on the same system. For example,
+	in Canada it is not unusual to have applications localized to French and English
+	on the same system.
+	
+	Before installing a MFCxxLOC DLL, you need to make sure that the locale for which
+	it is intended matches the locale of the Windows system that is installed. Also,
+	the locale is not different from the MFCxxLOC DLL already installed. The
+	MFCxxLOC DLL is a system DLL so replacement of this DLL must be done when no
+	other application on the system is using the MFCxx.dll. TN056 "Installation of
+	MFC Components" provides detailed installation considerations and recommends
+	that use of this DLL be avoided due to installation complexity.
+	
+	REFERENCES
+	==========
+	
+	Tech note 57 (TN057) "Localization of MFC Components"
+	
+	For additional information, please click the article number(s) below to view the
+	article(s) in the Microsoft Knowledge Base:
+	
+	  Q198846 HOWTO: Create Localized Resource DLLs for MFC Application
+	
+	  Q198536 HOWTO: #include the Localized MFC Resources in an EXE or DLL
+	
+	  Q200555 HOWTO: Localize Stock ActiveX Property Pages With MFC Resources
+	
+	(c) Microsoft Corporation 1999, All Rights Reserved. Contributions by Isaac Leon
+	Varon, Microsoft Corporation.
+	
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbDLL kbIntl kbMFC kbResource kbVC kbLocalization kbDSupport kbIntlDev kbGrpDSMFCATL 
+	Technology        : kbAudDeveloper kbMFC
+	Version           : winnt:
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

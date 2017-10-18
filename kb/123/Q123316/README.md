@@ -1,0 +1,108 @@
+---
+layout: page
+title: "Q123316: Unable to Change the Default Print Tray"
+permalink: kb/123/Q123316/
+---
+
+## Q123316: Unable to Change the Default Print Tray
+
+	Article: Q123316
+	Product(s): Microsoft Windows NT
+	Version(s): 3.10 3.50
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 08-AUG-2001
+	
+	3.10 3.50
+	
+	WINDOWS
+	
+	kbprint
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 3.1 
+	- Microsoft Windows NT Workstation version 3.1 
+	- Microsoft Windows NT Advanced Server, version 3.1 
+	- Microsoft Windows NT Workstation version 3.5 
+	- Microsoft Windows NT Server version 3.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Print Manager in Windows NT version 3.5 does not maintain a default printer tray
+	selection as in Windows NT version 3.1.
+	
+	CAUSE
+	=====
+	
+	Windows NT printing is forms-based. Windows NT checks the form being printed on
+	to discover what paper path to use. A form must be associated with a paper tray
+	to be printed on anything other than the default form association. Once these
+	associations are made, Windows NT is very flexible in printing. For example, a
+	form Letter could be associated with the Upper Tray. Then a new form could be
+	created with the same dimensions as Letter but called Letterhead. Letterhead
+	could be associated with the Lower Tray. In use, one application could be a
+	macro for a word processor that prints using Letterhead as the first page and
+	then Letter for the rest.
+	
+	RESOLUTION
+	==========
+	
+	A separate form is required for association with different printer paper paths.
+	To add a new paper path and form, use the following procedure:
+	
+	1. Run Print Manager.
+	
+	2. From the Printer menu, choose Forms.
+	
+	3. Scroll down the list of forms and select Letter.
+	
+	4. Enter or replace Letter with one of the following under Form Description:
+	  Letter Lower Tray or Letterhead Lower Tray. Choose OK.
+	
+	  NOTE: The names above are examples. You can use any name for the form.
+	
+	5. From the Printer menu, choose Properties and then Setup.
+	
+	6. Select the Paper Tray for form reassignment. Then assign the new form (Letter
+	  Lower Tray or Letterhead Lower Tray) to the paper tray. Choose OK.
+	
+	7. To verify the changes, repeat Step 5 and select the Paper Tray.
+	
+	8. Exit Print Manager and try printing again.
+	
+	NOTE: The PostScript driver in Window NT 3.1 does not recognize multiple paper
+	paths and prints only from the default paper path. The Windows NT 3.5 PostScript
+	driver recognizes multiple paper paths and will work as stated above.
+	
+	MORE INFORMATION
+	================
+	
+	One form cannot be associated with multiple paper paths. This is the most common
+	cause of difficulty when associating forms with a paper path. Print Manager
+	allows multiple path associations but only one will work. A common example is
+	the Letter form. The Letter form by default is associated with the first paper
+	path in the list of paper paths. Even though you can define the Letter form for
+	the Lower Tray, Windows NT still prints to the upper tray since the Letter form
+	was first associated with the Upper Tray. In order to change the Letter form to
+	use the Lower Tray, you must rename the form and associate it with the Lower
+	Tray or remove the association with the Upper Tray.
+	
+	For additional information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  ARTICLE-ID: Q129006
+	  TITLE : Windows NT 3.51: HP-PCL Driver Does Not Send Output Tray Command
+	
+	Additional query words: prodnt 3.10 lpt printman
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW310 kbWinNTSsearch kbWinNTS350 kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS350search kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+	Version           : 3.10 3.50
+	
+	=============================================================================
+	

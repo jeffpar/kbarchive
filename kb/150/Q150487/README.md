@@ -1,0 +1,139 @@
+---
+layout: page
+title: "Q150487: 3D Movie Maker: How to Import Sounds"
+permalink: kb/150/Q150487/
+---
+
+## Q150487: 3D Movie Maker: How to Import Sounds
+
+	Article: Q150487
+	Product(s): Microsoft Home Kids Products
+	Version(s): 1.00
+	Operating System(s): 
+	Keyword(s): kbfaq
+	Last Modified: 08-NOV-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft 3D Movie Maker for Windows, version 1.0 
+	- Microsoft Nickelodeon 3D Movie Maker for Windows, version 1.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes how to import sounds into 3D Movie Maker.
+	
+	You can import sounds from certain types of sound files into 3D Movie Maker for
+	use in your current movie. You can import sounds that are in the following
+	formats:
+	
+	- Waveform (.wav)
+	
+	- MIDI (.mid)
+	
+	You can also import sounds contained in other 3D Movie Maker movies (provided
+	that the sound you are trying to import is not one of the sounds included in 3D
+	Movie Maker):
+	
+	- 3D Movie Maker (.3mm)
+	
+	MORE INFORMATION
+	================
+	
+	Sound Effect, Dialog, or Music from File
+	----------------------------------------
+	
+	To import a sound from a Wave (.wav) or MIDI (.mid) file to be used as a sound
+	effect, dialog, or as background music:
+	
+	1. Open the movie into which you want to insert the sound.
+	
+	2. Make sure you are in the Studio.
+	
+	3. Click the Sounds tool (so you can see the Sound Effects, Speech, and Music
+	  buttons).
+	
+	4. To import a Wave file as a sound effect, click the Sound Effects button (the
+	  button that looks like a horn).
+	
+	  -or-
+	
+	  To import a Wave file as dialog, click the Speech button (the button that
+	  looks like a pair of lips).
+	
+	  -or-
+	
+	  To import a .mid file, click the Music button (the button that looks like a
+	  treble clef).
+	
+	5. Click the Find (Sound Effects/Dialog/Music) button in the lower left corner.
+	  (The button that looks like the Portfolio button).
+	
+	6. Use the dialog box to locate the .wav or .mid file you want to use and click
+	  its name.
+	
+	7. Click OK. The Sound Effects/Speech/Music list for your current movie appears,
+	  and the new sound is added to the end of the list.
+	
+	8. Click the sound effect/dialog/music item you want to use and then click OK.
+	
+	9. To apply the sound to an actor, prop, 3D word, or background, click the
+	  appropriate object.
+	
+	Sound Effect, Dialog, or Music from Another 3D Movie Maker Movie
+	----------------------------------------------------------------
+	
+	To import a sound from another movie to use as a sound effect, dialog, or as
+	background music:
+	
+	1. Follow steps 1-5 above, then:
+	
+	2. Use the dialog box to locate the 3D Movie Maker movie in which the sound is
+	  stored, and click its name.
+	
+	3. Click OK. A list of available imported and recorded Sound
+	  Effects/Speech/Music in that movie appears.
+	
+	4. Click the sound effect/dialog/music item you want to use (a short preview
+	  plays) and then press OK.
+	
+	5. To apply the sound to an actor, prop, 3D word, or background, click the
+	  appropriate object.
+	
+	NOTES:
+	
+	- When you import a sound from another movie, you are only given the list of
+	  sounds that match the type of sound you chose to import (that is, if you
+	  choose to import a Sound Effect, you will only be given The Sound Effect
+	  sounds).
+	
+	- 3D Movie Maker is not capable of importing or playing .mid files in RMI
+	  format.
+	
+	- You have the option to record sounds using the utilities supplied with your
+	  sound card or with Windows 95 (that is, Sound Recorder). You can import
+	  sounds saved as .wav files into any movie and save them as part of that
+	  movie. In 3D Movie Maker, .wav files are used for speech and sound effects.
+	  You also can use these sounds in other applications that support .wav files.
+	
+	For additional information, see the following articles in the Microsoft Knowledge
+	Base.
+	
+	  Q143365 3D Movie Maker: How to Move Sounds Between Movies
+	
+	  Q139366 3D Movie Maker: Storing Recorded/Imported Sounds
+	
+	  Q145825 3D Movie Maker: How to Remove Recorded/Imported Sounds
+	
+	
+	Additional query words: kids mczee kbmm director animated movies melanie 3-d three dimensional 3d 3dmm speach speak add combine insert place
+	
+	======================================================================
+	Keywords          :  kbfaq
+	Technology        : kbHomeProdSearch kbZNotKeyword kbKidsSearch kb3dMovieMaker
+	Version           : 1.00
+	
+	=============================================================================
+	

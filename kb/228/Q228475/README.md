@@ -1,0 +1,69 @@
+---
+layout: page
+title: "Q228475: XFOR: Event ID 115 Error Starting SMTP Relay Host Service"
+permalink: kb/228/Q228475/
+---
+
+## Q228475: XFOR: Event ID 115 Error Starting SMTP Relay Host Service
+
+	Article: Q228475
+	Product(s): Internet Information Server
+	Version(s): winnt:
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 28-APR-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT version 4.0 Option Pack 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you attempt to start the SMTP Relay Host service in the Microsoft
+	Management Console (MMC) for Windows NT Option Pack (NTOP), the following error
+	message may appear in the NT application log:
+	
+	  Event ID: 115
+	  Source: SMTPSVC
+	  Description: Service could not bind instance 1. The data is in the error.
+	
+	CAUSE
+	=====
+	
+	This behavior can occur if a service or program is using port 25. For example,
+	some third-party e-mail programs that send and receive mail on behalf of another
+	program may be utilizing this port. In addition, some anti-virus programs listen
+	over port 25 and scan all incoming and outgoing e-mail messages.
+	
+	RESOLUTION
+	==========
+	
+	To determine whether another program and or service is using port 25, type
+	"netstat -an" (without the quotation marks) at a command prompt, and then press
+	ENTER.
+	
+	A list of all available ports and their states (listening or active) is
+	displayed. If there is an entry for port 25 and you are not able to start the
+	SMTPSVC Relay Host service, this likely the program causing the problem. Stop
+	the appropriate service and then try to start the SMTP Relay Host service.
+	
+	MORE INFORMATION
+	================
+	
+	Transport Control Protocol (TCP) ports cannot be multiplexed or used more than
+	one time in a session. You must stop one service from using a port before
+	another service or program can use it.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNT400xsearch kbWinNT400OptionPack
+	Version           : winnt:
+	Issue type        : kbprb
+	
+	=============================================================================
+	

@@ -1,0 +1,134 @@
+---
+layout: page
+title: "Q136828: ICMP Does Not Provide MTU Hint in ICMP Dest Unreachable, DF Set"
+permalink: kb/136/Q136828/
+---
+
+## Q136828: ICMP Does Not Provide MTU Hint in ICMP Dest Unreachable, DF Set
+
+	Article: Q136828
+	Product(s): Microsoft Windows NT
+	Version(s): 3.5 3.51
+	Operating System(s): 
+	Keyword(s): kbnetwork
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation versions 3.5, 3.51 
+	- Microsoft Windows NT Server versions 3.5, 3.51 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you use computers running Windows NT as routers between media of different
+	types, file transfers may start out slowly.
+	
+	CAUSE
+	=====
+	
+	Windows NT 3.5 and 3.51 TCP/IP uses PMTU (Path Maximum Transfer Unit) discovery
+	to determine the optimum TCP segment size that can be used for data transfers on
+	a path between two computers. PMTU discovery is described in RFC1191. Following
+	is an excerpt from that RFC:
+	
+	  Router specification
+	
+	  When a router is unable to forward a datagram because it exceeds the MTU of
+	  the next-hop network and its Don't Fragment bit is set, the router is
+	  required to return an ICMP Destination Unreachable message to the source of
+	  the datagram, with the Code indicating "fragmentation needed and DF set". To
+	  support the Path MTU Discovery technique specified in this memo, the router
+	  MUST include the MTU of that next-hop network in the low-order 16 bits of the
+	  ICMP header field that is labeled "unused" in the ICMP specification [7]. The
+	  high-order 16 bits remain unused, and MUST be set to zero. Thus, the message
+	  has the following format:
+	
+	      0                   1                   2                   3
+	      0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+	     +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+	     |   Type = 3    |   Code = 4    |           Checksum            |
+	     +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+	     |           unused = 0          |         Next-Hop MTU          |
+	     +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+	     |      Internet Header + 64 bits of Original Datagram Data      |
+	     +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+	
+	When a computer running Windows NT 3.5 or 3.51 is used as a router, it does
+	return the ICMP Destination Unreachable message; however it does not include the
+	MTU of the next-hop network. This forces the sending computer to retransmit the
+	data, guessing at the next-hop MTU. Because it can take several guesses to
+	determine the correct value, a small delay can occur.
+	
+	The following trace, captured by Microsoft Network Monitor, illustrates this
+	behavior:
+	
+	#  Source Dest   Prot Description
+	---------------------------------
+	
+	1  server client TCP  ....S., len: 4, seq:1286279, ack:0, win: 8192,
+	2  client server TCP  .A..S., len: 4, seq:659688, ack:1286280, win: 8760
+	3  server client TCP  .A...., len: 0, seq:1286280, ack:659689, win: 8760
+	4  client server FTP  Data Transfer To Server, Port = 1028, size 1460
+	5  router client ICMP Destination Unreachable, Destination: 199.199.40.14
+	6  client server TCP  .A...., len: 0, seq:643477, ack:1270209, win: 8558
+	7  client server FTP  Data Transfer To Server, Port = 1028, size 966
+	8  router client ICMP Destination Unreachable, Destination: 199.199.40.14
+	9  client server FTP  Data Transfer To Server, Port = 1028, size 468
+	10 server client TCP  .A...., len: 0, seq:1286280, ack:660157, win: 8292
+	11 client server FTP  Data Transfer To Server, Port = 1028, size 468
+	12 client server FTP  Data Transfer To Server, Port = 1028, size 468
+	13 server client TCP  .A...., len: 0, seq:1286280, ack:661093, win: 8760
+	14 client server FTP  Data Transfer To Server, Port = 1028, size 468
+	
+	15 client server FTP  Data Transfer To Server, Port = 1028, size 468
+	--------------------------------------------------------------------
+	
+	- The first three frames show the 3-way handshake to set up the connection.
+	
+	- The fourth frame shows an attempt to send a 1460 byte TCP segment over the
+	  path (through a Windows NT 3.51 router).
+	
+	- The fifth frame shows the Windows NT 3.51 router returning an ICMP error,
+	  destination unreachable (fragmentation needed, but DF bit set)
+	
+	- The seventh frame shows the client trying a 966 byte segment. This is the
+	  next "likely" MSS (Maximum Segment Size) down from 1460.
+	
+	- The eighth frame is another ICMP destination unreachable message.
+	
+	- The ninth frame shows the client trying a 468 byte segment. This succeeds,
+	  and the transfer continues using that value.
+	
+	RESOLUTION
+	==========
+	
+	To correct this problem, upgrade to Windows NT 3.51 (if you have not already
+	done so) and install the latest U.S. Service Pack for Windows NT version 3.51 or
+	Windows NT 4.0
+	
+	The ICMP code for Windows NT 3.51 and Windows NT 4.0 has been modified to include
+	the Next-Hop MTU correctly.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Windows NT version 3.5 and 3.51.
+	This problem has been corrected in Windows NT 4.0 and the latest U.S. Service
+	Pack for Windows NT version 3.51. For information on obtaining the Service Pack,
+	query on the following word in the Microsoft Knowledge Base without the
+	spaces):
+	
+	  S E R V P A C K
+	
+	Additional query words: prodnt
+	
+	======================================================================
+	Keywords          : kbnetwork 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+	Version           : 3.5 3.51
+	
+	=============================================================================
+	

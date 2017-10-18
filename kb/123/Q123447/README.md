@@ -1,0 +1,105 @@
+---
+layout: page
+title: "Q123447: Err Msg: STOP Message in DLC.SYS"
+permalink: kb/123/Q123447/
+---
+
+## Q123447: Err Msg: STOP Message in DLC.SYS
+
+	Article: Q123447
+	Product(s): Microsoft Windows NT
+	Version(s): 3.5
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 07-FEB-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 3.5 
+	- Microsoft Windows NT Server version 3.5 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When your computer system running the DLC protocol is operating under stress, a
+	STOP Message may occur.
+	
+	Debug Information
+	-----------------
+	
+	kd> kv
+	KD: Unable to load debug information for 0x18246c8b
+	ChildEBP RetAddr  Args to Child
+	8019d510 80128e15 013adffc 8010c521 00000000 NT!_DbgBreakPoint
+	(FPO: [0,0,0])
+	8019d67c 8013ba6a 0000000a 013adffc 00000002 NT!_KeBugCheckEx+0x17f
+	8019d67c 8010c521 0000000a 013adffc 00000002 NT!_KiTrap0E+0x256 (FPO:
+	[0,0]
+	TrapFrame @ 8019d698)
+	8019d72c 801011e2 00000000 ff042868 000000af NT!_MiFreePoolPages+0xab
+	8019d758 fc8a8d18 00000000 ff042868 ff041228 NT!_ExFreePool+0x68
+	8019d788 fc8a7912 ff042868 81bfb4c4 000000c4 dlc!_RespondTestOrXid+0x288
+	8019d7a4 fc8a7cc3 ff042868 ff041228 81bfb4c4
+	dlc!_ProcessType1_Frames+0xae
+	8019d7c4 fc8a773d ff042868 ff04bf10 81bfb4c4
+	dlc!_ProcessType2_Frames+0x299
+	8019d820 fc8b070b ff042868 ff084132 ff084124
+	dlc!_LlcNdisReceiveIndication+0x29d
+	8019d85c fc92083d ff0cf848 ff084132 ff084124
+	NDIS!_EthFilterDprIndicateReceive+0x78
+	8019d894 fc9204a8 fc920400 ff0c50f8 ffdff401
+	netflx!NetFlexProcessEthRcv+0x64
+	8019d8ac fc8b0799 ff08c008 fc8b0760 00000001
+	netflx!_NetFlexHandleInterrupt+0xa8
+	8019d8c4 80137bd6 ff08c0fc ff08c0e8 00000000 NDIS!_NdisMDpc+0x39
+	(FPO: [EBP 0xfc8b0760] [4,0,4])
+	fc8b0760 18246c8b 8b34758b 4e8d107d ac15ff30 NT!_KiIdleLoop+0x5a
+	
+	kd> !trap 8019d698
+	eax=007ffff8 ebx=c0000000 ecx=c0000040 edx=013adfe8 esi=00000000
+	edi=00000011
+	eip=8010c521 esp=8019d70c ebp=8019d72c iopl=0         nv up ei pl
+	nz na po cy
+	cs=0008  ss=0010  ds=0023  es=0023  fs=0030  gs=0000
+	efl=00010207
+	ErrCode = 00000000
+	8010c521 f6421404         test    byte ptr [edx+0x14],0x4
+	
+	Note: DLC tried to free a null pointer after failing to allocate from paged pool.
+	This resulted in the memory access violation.
+	
+	CAUSE
+	=====
+	
+	On a heavily-used system, an attempt to allocate a packet from non-paged pool
+	fails. During the failure handling process, an incorrect deallocation
+	referencing a null pointer is performed.
+	
+	RESOLUTION
+	==========
+	
+	DLC.SYS has been corrected. The memory allocation failure is handled and
+	deallocation is performed correctly.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Windows NT Workstation and
+	Windows NT Server version 3.5. This problem was corrected in the latest U.S.
+	Service Pack for Windows NT version 3.5. For information on obtaining the
+	Service Pack, query on the following word in the Microsoft Knowledge Base
+	(without the spaces):
+	
+	S E R V P A C K
+	
+	Additional query words: prodnt 3.50
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+	Version           : :3.5
+	
+	=============================================================================
+	

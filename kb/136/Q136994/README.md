@@ -1,0 +1,98 @@
+---
+layout: page
+title: "Q136994: PRB: Read-Only Recordset with Microsoft SQL Server"
+permalink: kb/136/Q136994/
+---
+
+## Q136994: PRB: Read-Only Recordset with Microsoft SQL Server
+
+	Article: Q136994
+	Product(s): Microsoft C Compiler
+	Version(s): winnt:2.0,2.1,2.2,4.0,4.1,4.2,5.0,6.0,7.0
+	Operating System(s): 
+	Keyword(s): kbusage kbDatabase kbMFC kbODBC kbVC
+	Last Modified: 06-MAY-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The Microsoft Foundation Classes (MFC), used with:
+	   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.51, 1.52 
+	   - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1, 2.2, 4.0, 4.1 
+	   - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+	   - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+	   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+	   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+	   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+	   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+	   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+	- Microsoft SQL Server versions 6.0, 7.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Microsoft SQL Server versions 6.0 and 6.5 support dynasets. To use an updatable
+	dynaset, you must have a unique index on one or more fields in the table. If
+	there is no such index, the recordset will be read only. Also,
+	CRecordset::CanAppend() and CRecordset::CanUpdate() will return FALSE.
+	
+	STATUS
+	======
+	
+	This behavior is by design.
+	
+	MORE INFORMATION
+	================
+	
+	If you create a dynaset without specifying a unique index on one or more fields
+	in the table and then try to update or add a record, MFC will throw an exception
+	that says the cursor is read-only. Additionally, you will see the following
+	errors in the MFC Trace output:
+	
+	In Visual C++ version 1.5x:
+	
+	  Cursor is read-only State:S1009[Microsoft][ODBC SQL Server Driver][SQL
+	  Server] Warning: 0 rows affected by update operation (expected 1). No rows
+	  were affected by the update or delete operation.
+	
+	In Visual C++ version 2.x and 4.x:
+	
+	  Error: failure updating record. Cursor is read-only
+	  State:S1009,Native:16929,Origin:[Microsoft][ODBC SQL Server Driver] [SQL
+	  Server]
+	
+	In Visual C++ 5.0, you will see:
+	
+	  Cursor concurrency changed State:01S02, Native:0, Origin: [Microsoft][ODBC
+	  SQL Server Driver] Warning: Concurrency changed by the driver. Marking
+	  CRecordset as not updatable. Recordset is read-only.
+	
+	Note that if you use the PRIMARY KEY specification new to SQL Server version 6.0
+	when creating your tables, you will automatically generate a unique index on the
+	primary key. Here is an example of this syntax:
+	
+	        CREATE TABLE Table1
+	           (cola CHAR(8) PRIMARY KEY NOT NULL,
+	           colb CHAR(8))
+	
+	If you are using the Microsoft SQL Server ODBC driver, version 2.65.0201, that
+	comes with SQL Server version 6.5, MFC will throw an exception that says:
+	
+	  "Invalid argument value"
+	
+	Additionally, you will see the following errors in the MFC Trace output:
+	
+	  Error: failure updating record. Invalid argument value
+	  State:S1009,Native:0,Origin:[Microsoft][ODBC SQL Server Driver]
+	
+	Additional query words: CanUpdate CanAppend kbvc151 kbvc152 kbvc200 kbvc210 kbvc220 kbvc400 kbvc500 kbvc600
+	
+	======================================================================
+	Keywords          : kbusage kbDatabase kbMFC kbODBC kbVC 
+	Technology        : kbAudDeveloper kbMFC
+	Version           : winnt:2.0,2.1,2.2,4.0,4.1,4.2,5.0,6.0,7.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

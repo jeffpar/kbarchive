@@ -1,0 +1,78 @@
+---
+layout: page
+title: "Q278457: Intermittent Hangs in Inetinfo with Microsoft SNA DB2 Provider"
+permalink: kb/278/Q278457/
+---
+
+## Q278457: Intermittent Hangs in Inetinfo with Microsoft SNA DB2 Provider
+
+	Article: Q278457
+	Product(s): Microsoft SNA Server
+	Version(s): 4.0 SP2,4.0 SP3
+	Operating System(s): 
+	Keyword(s): kbDSupport kbsna400sp2 kbsna400sp3 kbSNA400sp4fix kbSNA400PreSP4fixkbbuglist kbfixlist
+	Last Modified: 12-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 4.0 SP2, 4.0 SP3 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you use the Microsoft SNA Server DB2 Provider from an active server page
+	(.asp page), if you are performing a free statement in one thread, and at the
+	same time another thread is trying to perform a fetch, a hang in Inetinfo may
+	result. In a user dump of the Inetinfo process, you may see a stack trace that
+	is similar to the following:
+	
+	  0:077> kv
+	  ChildEBP RetAddr  Args to Child
+	  045af504 7a206de7 00000188 00000001 7a10af08 drdaapi!DRDAFreeStmt+0x197 (FPO: [Non-Fpo])
+	  045af510 7a10af08 02967ae8 00000188 00000001 ddmsql!sqlFreeStmt+0x17 (FPO: [3,0,0])
+	  045af524 7a10e6ac 002ca558 002ca4d0 002ca4d0 db2oledb!CODBSQLCommand__~CODBSQLCommand+0x38 (FPO: [0,0,1])
+	  045af57c 7a10e43c 00000000 7a110584 00000001 db2oledb!CODBCommand__~CODBCommand+0x23c (FPO: [Non-Fpo])
+	  045af584 7a110584 00000001 00000000 002cb060 db2oledb!CODBCommand__`scalar deleting destructor'+0xc (FPO: [1,0,1])
+	  045af598 7a105029 002ca4d0 04ec3c7c 04ee2dc0 db2oledb!CODBCommand__Release+0x64 (FPO: [1,0,3])
+	  045af5a8 1f4516c6 002cb060 04ee2dc0 1f45182b db2oledb!CODBIAccessor__Release+0x59 (FPO: [1,0,2])
+	  045af5b4 1f45182b 0215e53c 1f445243 04ec3c80 msado15!CParamBuffer__Term+0x27 (FPO: [0,0,1])
+	  045af5bc 1f445243 04ec3c80 1f44502a 04ec3d58 msado15!CParamBuffer__Release+0x14 (FPO: [0,0,1])
+	  045af5c4 1f44502a 04ec3d58 04ec3c70 00000000 msado15!CParameters__ReleaseParameterBuffer+0x15 (FPO: [0,0,1])
+	  045af5fc 1f44ad42 00000000 04ec3c70 04ec3c70 msado15!CCommand__Close+0x3d (FPO: [Non-Fpo])
+	  045af6d0 1f44a9c7 045af9b8 002fe030 045afa9c msado15!CConnection___Close+0x2fa (FPO: [Non-Fpo])
+	  045af6fc 1f464696 04ec3c70 002cbe50 04ec3c70 msado15!CConnection__Close+0x70 (FPO: [Non-Fpo])
+	  045af968 6b6036ad 00000000 00000005 6b653340 msado15!CConnection__SetInternalProperties_256+0x27a (FPO: [Non-Fpo])
+	  00000000 00000000 00000000 00000000 00000000 vbscript+0x36ad
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, obtain the latest service pack for SNA Server 4.0. For
+	additional information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q215838 How to Obtain the Latest SNA Server Version 4.0 Service Pack
+	
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in Microsoft SNA Server, versions
+	4.0 SP2, 4.0 SP3.
+	
+	This problem was first corrected in SNA Server 4.0 Service Pack 4.
+	
+	Additional query words: sna DB2/400 AS/400 OS/400 MAINFRAME MVS OS/390 OLE Db2oledb sp2 sp3 service pack sp db
+	
+	======================================================================
+	Keywords          : kbDSupport kbsna400sp2 kbsna400sp3 kbSNA400sp4fix kbSNA400PreSP4fix kbbuglist kbfixlist
+	Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400SP2 kbSNAServ400SP3
+	Version           : :4.0 SP2,4.0 SP3
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

@@ -1,0 +1,71 @@
+---
+layout: page
+title: "Q103496: Diamond Viper Video Card Not Supported"
+permalink: kb/103/Q103496/
+---
+
+## Q103496: Diamond Viper Video Card Not Supported
+
+	Article: Q103496
+	Product(s): Microsoft Windows NT
+	Version(s): 3.1
+	Operating System(s): 
+	Keyword(s): kbhw kbHardware
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 3.1 
+	- Microsoft Windows NT Workstation version 3.1 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	If you are using a VESA 800x600 video driver with the Diamond Viper video card,
+	there may be some unusual behavior with the mouse, the keyboard and Program
+	Manager. You may be unable to select items with the mouse, the keyboard may be
+	disabled outside of the Main group, and you may not be able to move groups.
+	
+	CAUSE
+	=====
+	
+	The Diamond Viper video card is not on the Hardware Compatibility List for
+	Windows NT version 3.1. The Windows NT 3.1 generic drivers for VGA 640x480 and
+	VESA 800x600 are not expected to work correctly with this video card.
+	
+	RESOLUTION
+	==========
+	
+	A Diamond Viper PCI driver for Windows NT can be obtained from the Gateway 2000
+	BBS at (605) 232-2224. This driver is contained in a self-extracting file named
+	VPWN32.EXE (Video Library section). Note that this driver is currently in beta
+	test and unsupported by Gateway.
+	
+	Microsoft has confirmed this to be a problem in Windows NT version 3.1. We are
+	researching this problem and will post new information here in the Microsoft
+	Knowledge Base as it becomes available.
+	
+	NOTE: In Windows NT version 3.5, Viper cards using a 1.x or 2.x BIOS revision do
+	not work, and these cards cannot be upgraded. There are four different physical
+	revisions of the Viper. One uses a series 1.x BIOS, two use a series 2.x BIOS,
+	and one uses a series 3.x BIOS. If you look in the HCL you will note that it
+	states that the Viper must have a BIOS version 3.09, Rev. for "proper
+	performance." Translated, this means if you have anything other than a Rev. E
+	board, this will not work. And if you have a Rev. E board, you need BIOS 3.09.
+	
+	The products included here are manufactured by vendors independent of Microsoft;
+	we make no warranty, implied or otherwise, regarding these products' performance
+	or reliability.
+	
+	Additional query words: prodnt
+	
+	======================================================================
+	Keywords          : kbhw kbHardware 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW310 kbWinNTSsearch kbWinNTS310 kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+	Version           : 3.1
+	
+	=============================================================================
+	

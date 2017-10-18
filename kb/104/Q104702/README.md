@@ -1,0 +1,98 @@
+---
+layout: page
+title: "Q104702: IGNORE in DBLSPACE.INF Does Not Ignore Subdirectories"
+permalink: kb/104/Q104702/
+---
+
+## Q104702: IGNORE in DBLSPACE.INF Does Not Ignore Subdirectories
+
+	Article: Q104702
+	Product(s): Microsoft Disk Operating System
+	Version(s): MS-DOS:6.0,6.2,6.22
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 22-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft MS-DOS operating system versions 6.0, 6.2, 6.22 
+	-------------------------------------------------------------------------------
+	
+	This information applies to both Microsoft DoubleSpace and Microsoft
+	DriveSpace. For MS-DOS 6.22, use DRVSPACE in place of DBLSPACE for
+	commands and file names.
+	
+	SUMMARY
+	=======
+	
+	In the [SpecialFiles] section of the DBLSPACE.INF file, you can exclude files
+	and/or directories from being compressed during the DoubleSpace installation.
+	However, if you use the IGNORE= statement to exclude an entire directory,
+	DoubleSpace does not automatically exclude subdirectories of that named
+	directory from compression. Also, files that do not have an extension and are
+	located in a directory specified by an IGNORE statement are moved to the
+	compressed drive.
+	
+	MORE INFORMATION
+	================
+	
+	The [SpecialFiles] section of the DBLSPACE.INF file was designed to designate
+	individual files that should not be compressed (with wildcard functionality
+	[such as the * character] built-in). Thus, files only (not directories) are
+	recognized in the [SpecialFiles] section.
+	
+	In the DBLSPACE.INF file, if you want to exclude an entire directory and all of
+	its subdirectories from being compressed, you must first specify the top-level
+	directory and then specify each subdirectory separately. For example, if the
+	following directory tree structure exists before compression
+	
+	  C:
+	  +---DOS
+	  +---TEST
+	      +---T1
+	      +---T2
+	          +---T3
+	
+	the following lines must be added to the [SpecialFiles] section of DBLSPACE.INF
+	to exclude the TEST directory and its subdirectories:
+	
+	  IGNORE=C:\TEST\*.*
+	  IGNORE=C:\TEST\T1\*.*
+	  IGNORE=C:\TEST\T2\*.*
+	  IGNORE=C:\TEST\T2\T3\*.*
+	
+	Files Without Extensions Are Still Moved
+	----------------------------------------
+	
+	Files that do not have an extension and are located in a directory specified by
+	an IGNORE statement are still moved to the compressed drive. For example, if you
+	have a directory of all Windows for Workgroups 3.11 files and you specify in the
+	DRVSPACE.INF to IGNORE this directory, the following files are still moved:
+	
+	  DISK1, DISK2, DISK3, DISK4, DISK5, DISK6, WINVER, DISK7, DISK8
+	
+	This problem occurs only with files that do not have an extension. Files that
+	include an extension of one or more characters are not moved.
+	
+	Microsoft has confirmed this to be a problem in MS-DOS versions 6.0, 6.2, and
+	6.22. We are researching this problem and will post new information here in the
+	Microsoft Knowledge Base as it becomes available.
+	
+	DBLSPACE.INF Does Not Recognize More Than 18 Ignore Statements
+	--------------------------------------------------------------
+	
+	DoubleSpace does not recognize more than 18 IGNORE statements in your
+	DBLSPACE.INF file. Subsequent IGNORE statements are not processed.
+	
+	
+	
+	Additional query words: 6.00 6.20 letter ignored 1 two 2 three 3
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMSDOSSearch kbMSDOS622 kbMSDOS620 kbMSDOS600
+	Version           : MS-DOS:6.0,6.2,6.22
+	
+	=============================================================================
+	

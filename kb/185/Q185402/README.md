@@ -1,0 +1,175 @@
+---
+layout: page
+title: "Q185402: WD97: Calculation in Form Field Shows Wrong Result"
+permalink: kb/185/Q185402/
+---
+
+## Q185402: WD97: Calculation in Form Field Shows Wrong Result
+
+	Article: Q185402
+	Product(s): Word 97 for Windows
+	Version(s): WINDOWS:97
+	Operating System(s): 
+	Keyword(s): kbdta kbfield word97
+	Last Modified: 14-NOV-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When a form field calculation involves another calculated form field, the
+	results may be incorrect.
+	
+	The two scenarios below illustrate this symptom.
+	
+	Scenario 1: No Formatting in the Number Format of a Form Field
+	--------------------------------------------------------------
+	
+	  TYPE OF
+	  TEXTFORM                                     ACTUAL  EXPECTED
+	  FIELD          EXPRESSION       BOOKMARK     RESULT   RESULT
+	  -------------------------------------------------------------
+	  NUMBER         NONE             Text1         100       100
+	  CALCULATION    =Text1           Text2         100       100
+	  CALCULATION    =Text1 + Text2   Text3         100200    200
+	
+	This results in doubling the value of form field 2 (Text2).
+	
+	Scenario 2: Dollar Sign on Either or Both Form Fields
+	-----------------------------------------------------
+	
+	  TYPE OF
+	  TEXTFORM                                              ACTUAL  EXPECTED
+	  FIELD          EXPRESSION     FORMATTING      BKMRK   RESULT   RESULT
+	  -----------------------------------------------------------------------
+	  NUMBER       NONE            Dollar Sign     Text1     100       100
+	  CALCULATION  =Text1          Dollar Sign     Text2    $100      $100
+	  CALCULATION  =Text1 + Text2  Doesn't Matter  Text3    $300       200
+	
+	This results in doubling the value of form field 2 (Text2).
+	
+	CAUSE
+	=====
+	
+	Word defines the bookmarks assigned to the calculation form fields incorrectly.
+	As a result, Word does not correctly parse these form fields; it concatenates
+	them instead.
+	
+	WORKAROUND
+	==========
+	
+	To work around these problems, use the method appropriate for your situation.
+	
+	Method 1: Avoid Referring to Any Other Calculation Fields
+	---------------------------------------------------------
+	
+	Change the final calculation to avoid referring to any other calculation fields.
+	Include all math formulas in one calculation field. This method is only
+	appropriate for simple calculations.
+	
+	In the earlier example, because the third form field includes a formula from the
+	second form field, the entry in the third form field expression would need to be
+	changed to: Text1 (Bookmark from the first form field) + Text1 (Expression from
+	the second form field).
+	
+	Method 2: Redefine the Bookmarks So Word Calculates the Formula Correctly
+	-------------------------------------------------------------------------
+	
+	NOTE: You must repeat this procedure each time you change a particular form field
+	in the Text Form Field Options dialog box.
+	
+	To redefine the bookmarks so Word calculates the formula correctly, use these
+	steps with each incorrect Calculation form field:
+	
+	1. Turn on field code view by pressing ALT+F9.
+	
+	2. Select the Calculation form field that produces the incorrect results.
+	
+	  NOTE: Be sure to include the field brackets ({}) in the selection.
+	
+	3. On the Insert menu, click Bookmark.
+	
+	  NOTE: The bookmark for the selected form field should be selected.
+	
+	4. Click Add.
+	
+	  NOTE: This redefines the bookmark to include the field brackets.
+	
+	5. Press F9 to update the field, and then press ALT+F9 to switch back to field
+	  code results view.
+	
+	The result should now be correct.
+	
+	Method 3: Define a New Bookmark That Includes the First Calculation Field
+	-------------------------------------------------------------------------
+	
+	NOTE: You do not need to repeat this procedure if you change the form field in
+	the Text Form Field Options dialog box.
+	
+	To define a new bookmark that includes the first Calculation field in your
+	formula plus one space following it, follow these steps:
+	
+	1. Turn on field code view by pressing ALT+F9.
+	
+	2. Select the first Calculation form field that is referenced in your FORMULA
+	  (=) field. Include the space that follows this field in your selection. The
+	  selection should resemble the following example:
+	
+	        { FORMTEXT {=Text1} }
+	        ^                   ^
+	        |                   |
+	        Start of            End of
+	        selection           selection
+	
+	3. On the Insert menu, click Bookmark.
+	
+	4. Type a new name in the Bookmark Name box and then click Add.
+	
+	5. Turn off field code view by pressing ALT+F9.
+	
+	6. In your second calculation field, use the bookmark you defined in step 4
+	  above instead of the bookmark that Word set for the first Calculation form
+	  field.
+	
+	Method 4: In a Table, Use Table Cell References Rather Than Bookmark Names
+	--------------------------------------------------------------------------
+	
+	Use table cell references rather than bookmark names in the Calculation form
+	field.
+	
+	NOTE: This method works only if there are no other Number form fields in any
+	table cell you reference in your Calculation form field.
+	
+	For example, change this calculation
+	
+	  {FORMTEXT {=Text1 + Text2} }
+	
+	to the following
+	
+	  {FORMTEXT {=A1 + A2} }
+	
+	where the Text1 bookmark is in table cell A1 and the Text2 bookmark is in table
+	cell A2.
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed this to be a problem in the Microsoft products listed at
+	the beginning of this article.
+	
+	Additional query words: append appends
+	
+	======================================================================
+	Keywords          : kbdta kbfield word97 
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : WINDOWS:97
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

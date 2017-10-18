@@ -1,0 +1,85 @@
+---
+layout: page
+title: "Q96519: Situations in Which DEFRAG Cannot Run"
+permalink: kb/096/Q96519/
+---
+
+## Q96519: Situations in Which DEFRAG Cannot Run
+
+	Article: Q96519
+	Product(s): Microsoft Disk Operating System
+	Version(s): MS-DOS:6.0,6.2,6.21,6.22
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 19-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft MS-DOS operating system versions 6.0, 6.2, 6.21, 6.22 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	Microsoft DEFRAG operates on the MS-DOS logical drive level only. Third-party
+	partitioning utilities that modify or translate disk geometry (such as Disk
+	Manager and SpeedStor) operate beneath the MS-DOS file system and are therefore
+	transparent to DEFRAG.
+	
+	DEFRAG cannot share access to a drive with other tasks; therefore, you cannot run
+	DEFRAG if Windows or DESQview is running.
+	
+	MORE INFORMATION
+	================
+	
+	DEFRAG does not work in the following situations:
+	
+	  Situation        Reason
+	  ----------       ------
+	  Network Drive    Network software usually does not allow full
+	                   single-tasking access to the entire drive,
+	                   including the file tables. Often network drives
+	                   (such as Novell NetWare) use another file system.
+	
+	  CHKDSK Errors    Errors in the drive organization can cause
+	                   unpredictable results from DEFRAG. DEFRAG
+	                   identifies most CHKDSK errors while reading
+	                   the drive organization, and then refuses
+	                   to run until you correct them.
+	
+	  Windows          DEFRAG cannot operate properly in a
+	                   multitasking or task-switching situation;
+	                   therefore, it detects Windows in real, standard,
+	                   and 386 enhanced modes and does not run.
+	
+	  Task Swapper     DEFRAG cannot operate properly in a
+	                   task-switching situation; therefore, it detects
+	                   the MS-DOS Shell task swapper and does not run.
+	
+	  Interlnk Drives  Interlnk is not designed to support defragmentation
+	                   and other low-level utilities. Specifically, it does
+	                   not implement interrupts 25 and 26.
+	
+	  Fastopen         The Fastopen program tracks which files are located
+	                   in which clusters on your disk. DEFRAG rearranges
+	                   data on a cluster level, which confuses Fastopen.
+	
+	  JOIN             JOIN does not allow normal access to a drive.
+	
+	  SUBST            SUBST drives do not have their own file tables or
+	                   directories to optimize.
+	
+	The products included here are manufactured by vendors independent of Microsoft;
+	we make no warranty, implied or otherwise, regarding these products' performance
+	or reliability.
+	
+	Additional query words: 6.22 6.00 3rd party defrag 6.20
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600
+	Version           : MS-DOS:6.0,6.2,6.21,6.22
+	
+	=============================================================================
+	

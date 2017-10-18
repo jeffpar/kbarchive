@@ -1,0 +1,296 @@
+---
+layout: page
+title: "Q309387: SMS: &quot;Invalid Collection Name&quot; After Valid Collection Browsing"
+permalink: kb/309/Q309387/
+---
+
+## Q309387: SMS: &quot;Invalid Collection Name&quot; After Valid Collection Browsing
+
+	Article: Q309387
+	Product(s): Microsoft Systems Management Server
+	Version(s): 2.0
+	Operating System(s): 
+	Keyword(s): kbenv kbtool kbsms200 kbsms200bug kbsms120 kbsms120bug
+	Last Modified: 16-JUL-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Systems Management Server version 2.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you create a new direct-member collection, you may receive an "Invalid
+	Collection Name" error message after you browse for valid collections in the
+	Create Direct Membership Rule Wizard. This problem can occur even though you are
+	a member of a group that has proper Systems Management Server-object permissions
+	to the selected collection.
+	
+	RESOLUTION
+	==========
+	
+	A supported fix is now available from Microsoft, but it is only intended to
+	correct the problem that is described in this article. Only apply it to systems
+	that are experiencing this specific problem. This fix may receive additional
+	testing. Therefore, if you are not severely affected by this problem, Microsoft
+	recommends that you wait for the next Systems Management Server (SMS) service
+	pack that contains this fix.
+	
+	To resolve this problem immediately, contact Microsoft Product Support Services
+	to obtain the fix. For a complete list of Microsoft Product Support Services
+	phone numbers and information about support costs, visit the following Microsoft
+	Web site:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	NOTE: In special cases, charges that are ordinarily incurred for support calls
+	may be canceled if a Microsoft Support Professional determines that a specific
+	update will resolve your problem. The usual support costs will apply to
+	additional support questions and issues that do not qualify for the specific
+	update in question.
+	
+	The post-SMS 2.0 Service Pack 3 (SP3) English version of this fix should have the
+	following file attributes or later:
+	
+	  Date         Time   Version         Size       File name    Platform
+	  --------------------------------------------------------------------
+	  01-Mar-2001  13:40  2.0.1493.3184   1,578,400  Basesvr.dll  Intel
+	  01-Mar-2001  13:40  2.0.1493.3184   2,429,200  Basesvr.dll  Alpha
+	  01-Mar-2001  10:30  2.0.1493.3143      81,040  Cmprov.dll   Intel
+	  01-Mar-2001  10:30  2.0.1493.3143     126,224  Cmprov.dll   Alpha
+	  01-Mar-2001  13:30  2.0.1493.3182     121,440  Compmgr.exe  Intel
+	  01-Mar-2001  13:30  2.0.1493.3182     171,792  Compmgr.exe  Alpha
+	  01-Mar-2001  14:40  2.0.1493.3196   4,198,864  Smsprov.dll  Intel
+	  01-Mar-2001  14:40  2.0.1493.3196  11,793,680  Smsprov.dll  Alpha
+	
+	NOTE: Due to file dependencies, the most recent hotfix or feature that contains
+	the above files may also contain additional files.
+	
+	
+	
+	STATUS
+	======
+	
+	Microsoft has confirmed that this is a problem in the Microsoft products that
+	are listed at the beginning of this article. This problem was first corrected in
+	the Systems Management Server 2.0 Service Pack 4 Hotfix Rollup Package (HRP).
+	
+	For additional information about the SMS 2.0 SP4 HRP, click the article number
+	below to view the article in the Microsoft Knowledge Base:
+	
+	  Q323206 SMS: List of Bugs Fixed in the Systems Management Server 2.0 SP4 HRP
+	
+	MORE INFORMATION
+	================
+	
+	To install the hotfix, use the appropriate method.
+	
+	Using the Hotfix Installer
+	--------------------------
+	
+	NOTE: This method is for only Intel-based computers.
+	
+	1. Create a folder in a location that is accessible from your SMS site servers.
+	
+	2. Copy the update file (Q309387.exe) and platform folders to the new folder.
+	  The folder structure must be such that the executable file (.exe) resides one
+	  folder higher than the platform folders.
+	
+	3. From each of your primary SMS site servers in your environment, log on to
+	  your site server by using an account with administrative privileges.
+	
+	4. Quit the SMS administrator console.
+	
+	5. Run Q309387.exe, and then follow the directions in the wizard.
+	
+	Manually Update the SMS Site Server
+	-----------------------------------
+	
+	1. Create a folder in a location that is accessible to your SMS site servers.
+	
+	2. Copy the platform folders that contain the hotfixed files to the new folder.
+	
+	3. From each of your primary SMS site servers in your environment, log on to
+	  your site server by using an account with administrative privileges.
+	
+	4. Quit the SMS administrator console.
+	
+	5. Stop all SMS services.
+	
+	6. Make a backup copy of the following files:
+	
+	   - <SMS_Root>\bin\<processor type>\Cmprov.dll
+	
+	   - <SMS_Root>\bin\<processor type>\Compmgr.exe
+	
+	   - <SMS_Root>\bin\<processor type>\Basesvr.dll
+	
+	   - <SMS_Root>\bin\<processor type>\Smsprov.dll
+	
+	7. Copy the updated files from the disk or network share to the SMS
+	  administrator console folder:
+	
+	   - <SMS_Root>\bin\<processor type>\Cmprov.dll
+	
+	   - <SMS_Root>\bin\<processor type>\Compmgr.exe
+	
+	   - <SMS_Root>\bin\<processor type>\Basesvr.dll
+	
+	   - <SMS_Root>\bin\<processor type>\Smsprov.dll
+	
+	8. Restart the SMS services.
+	
+	Additional Installation Information
+	-----------------------------------
+	
+	To update remote site systems, such as SMS administrator consoles, an SMS SQL
+	monitor or SMS provider that is not located on the site server, follow the
+	appropriate instructions:
+	
+	Manually Updating a Remote SMS Administrator Console:
+	
+	NOTE: Before you implement this update on your SMS administrator console, you
+	must install it on the SMS site servers in your environment.
+	
+	1. From the updated SMS site server, copy the following SMS administrator
+	  console files to a disk or network share:
+	
+	   - <SMS_Root>\bin\<processor type>\Cmprov.dll
+	
+	   - <SMS_Root>\bin\<processor type>\Compmgr.exe
+	
+	   - <SMS_Root>\bin\<processor type>\Basesvr.dll
+	
+	   - <SMS_Root>\bin\<processor type>\Smsprov.dll
+	
+	2. Make a backup copy of the following files:
+	
+	   - <SMS_Admin_Root>\bin\<processor type>\Cmprov.dll
+	
+	   - <SMS_Admin_Root>\bin\<processor type>\Compmgr.exe
+	
+	   - <SMS_Admin_Root>\bin\<processor type>\Basesvr.dll
+	
+	   - <SMS_Admin_Root>\bin\<processor type>\Smsprov.dll
+	
+	3. Copy the updated files from the disk or network share to the SMS
+	  administrator console folder:
+	
+	   - <SMS_Admin_Root>\bin\<processor type>\Cmprov.dll
+	
+	   - <SMS_Admin_Root>\bin\<processor type>\Compmgr.exe
+	
+	   - <SMS_Admin_Root>\bin\<processor type>\Basesvr.dll
+	
+	   - <SMS_Admin_Root>\bin\<processor type>\Smsprov.dll
+	
+	Updating a Remote SMS Provider Server:
+	
+	NOTE: Before you implement this update on your SMS provider server, you must
+	install it on the SMS site servers in your environment.
+	
+	1. From the updated SMS site server, copy the following SMS provider files to a
+	  disk or network share:
+	
+	   - <SMS_Root>\bin\<processor type>\Cmprov.dll
+	
+	   - <SMS_Root>\bin\<processor type>\Compmgr.exe
+	
+	   - <SMS_Root>\bin\<processor type>\Basesvr.dll
+	
+	   - <SMS_Root>\bin\<processor type>\Smsprov.dll
+	
+	2. At the SMS Provider server, stop the following services:
+	
+	   - SMS_SQL_MONITOR_<SERVERNAME>
+	
+	   - Windows Management
+	
+	     NOTE: With WMI build 1085, the service name has been changed to "Windows
+	     Management Instrumentation".
+	
+	3. Make a backup copy of the files you are about to overwrite:
+	
+	   - <SMS_Root>\bin\<processor type>\Cmprov.dll
+	
+	   - <SMS_Root>\bin\<processor type>\Compmgr.exe
+	
+	   - <SMS_Root>\bin\<processor type>\Basesvr.dll
+	
+	   - <SMS_Root>\bin\<processor type>\Smsprov.dll
+	
+	4. Copy the updated files from the disk or network share to the SMS provider
+	  folder:
+	
+	   - <SMS_Root>\bin\<processor type>\Cmprov.dll
+	
+	   - <SMS_Root>\bin\<processor type>\Compmgr.exe
+	
+	   - <SMS_Root>\bin\<processor type>\Basesvr.dll
+	
+	   - <SMS_Root>\bin\<processor type>\Smsprov.dll
+	
+	5. Restart the following SMS Provider services:
+	
+	   - SMS_SQL_MONITOR_<SERVERNAME>
+	
+	   - Windows Management
+	
+	     NOTE: With WMI build 1085, the service name has been changed to "Windows
+	     Management Instrumentation".
+	
+	Manually Updating a Remote SMS SQL Monitor Server:
+	
+	NOTE: Before you implement this update on your SMS site database server, you must
+	install it on the SMS site servers in your environment.
+	
+	1. From the updated SMS site server, copy the following SMS SQL monitor files to
+	  a disk or network share:
+	
+	   - <SMS_Root>\bin\<processor type>\Cmprov.dll
+	
+	   - <SMS_Root>\bin\<processor type>\Compmgr.exe
+	
+	   - <SMS_Root>\bin\<processor type>\Basesvr.dll
+	
+	   - <SMS_Root>\bin\<processor type>\Smsprov.dll
+	
+	2. At the SMS SQL Monitor server, stop the SMS_SQL_MONITOR_<SERVERNAME>
+	  service.
+	
+	3. Make a backup copy of the SMS SQL monitor files you are about to overwrite:
+	
+	   - <SMS_Root>\bin\<processor type>\Cmprov.dll
+	
+	   - <SMS_Root>\bin\<processor type>\Compmgr.exe
+	
+	   - <SMS_Root>\bin\<processor type>\Basesvr.dll
+	
+	   - <SMS_Root>\bin\<processor type>\Smsprov.dll
+	
+	4. Copy the updated files from the disk or network share to the SMS SQL monitor
+	  folder:
+	
+	   - <SMS_Root>\bin\<processor type>\Cmprov.dll
+	
+	   - <SMS_Root>\bin\<processor type>\Compmgr.exe
+	
+	   - <SMS_Root>\bin\<processor type>\Basesvr.dll
+	
+	   - <SMS_Root>\bin\<processor type>\Smsprov.dll
+	
+	5. Restart the SMS_SQL_MONITOR_<SERVERNAME> SMS SQL monitor service.
+	
+	Additional query words: prodsms
+	
+	======================================================================
+	Keywords          : kbenv kbtool kbsms200 kbsms200bug kbsms120 kbsms120bug 
+	Technology        : kbSMSSearch kbSMS200
+	Version           : :2.0
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

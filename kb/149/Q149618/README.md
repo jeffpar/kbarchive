@@ -1,0 +1,170 @@
+---
+layout: page
+title: "Q149618: PRB: PageTimeout Defaults to Five Seconds in Jet 3.0"
+permalink: kb/149/Q149618/
+---
+
+## Q149618: PRB: PageTimeout Defaults to Five Seconds in Jet 3.0
+
+	Article: Q149618
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 4.0,5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbVBp500 kbVBp600 kbGrpDSVBDB
+	Last Modified: 11-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+	- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When two applications are trying to gain access to the same database using Jet
+	3.x, any data entered from the other user will not be updated for five seconds
+	even after the code re-queries the database.
+	
+	RESOLUTION
+	==========
+	
+	NOTE: Before running workaround, see Steps to Reproduce Behavior below.
+	
+	If you are using Jet 3.0, a key needs to be added to the registry under:
+	
+	  \\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Jet\3.0\Engines
+	
+	The key should be called JET. A New DWORD value called PageTimeout also needs to
+	be added. Modify the PageTimeout entry to set a decimal value in milliseconds
+	for this entry from a Visual Basic 32-Bit Application.
+	
+	If you are using Jet 3.50 or Jet 3.51, then the following key will already exist
+	in the registry:
+	
+	  \\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Jet\3.5\Engines\Jet 3.5
+	
+	Furthermore, a key called PageTimeout will already exist under this key. The
+	value of the PageTimeout key will need to be modified from five seconds to .5
+	seconds.
+	
+	In order to do this within a Visual Basic project, open a new Standard.exe Visual
+	Basic project. Place the following code into the General Declarations of a
+	Form:
+	
+	     Option Explicit
+	     Private Const HKEY_LOCAL_MACHINE = &H80000002
+	     Private Const REG_DWORD = 4&
+	     Private Const REG_OPTION_NON_VOLATILE = 0&
+	     Private Const KEY_ALL_ACCESS = &HF003F
+	
+	     Private Declare Function RegQueryValueEx Lib "advapi32.dll" Alias _
+	     "RegQueryValueExA" (ByVal hKey As Long, ByVal lpValueName As String, _
+	     ByVal lpReserved As Long, lpType As Long, lpData As Any, _
+	     lpcbData As Long) As Long
+	
+	     Private Declare Function RegCloseKey Lib "advapi32.dll" _
+	     (ByVal hKey As Long) As Long
+	
+	     Private Declare Function RegOpenKeyEx Lib "advapi32.dll" Alias _
+	     "RegOpenKeyExA" (ByVal hKey As Long, ByVal lpSubKey As String, _
+	     ByVal ulOptions As Long, ByVal samDesired As Long, phkResult As Long) _
+	     As Long
+	
+	     Private Declare Function RegCreateKeyEx Lib "advapi32.dll" Alias _
+	     "RegCreateKeyExA" (ByVal hKey As Long, ByVal lpSubKey As String, _
+	     ByVal Reserved As Long, ByVal lpClass As String, ByVal dwOptions _
+	     As Long, ByVal samDesired As Long, ByVal lpSecurityAttributes As Long, _
+	     phkResult As Long, lpdwDisposition As Long) As Long
+	
+	     Private Declare Function RegSetValueEx Lib "advapi32.dll" Alias _
+	     "RegSetValueExA" (ByVal hKey As Long, ByVal lpValueName As String, _
+	     ByVal Reserved As Long, ByVal dwType As Long, lpValue As Long, _
+	     ByVal cbData As Long) As Long
+	
+	     Dim lpszKey As String
+	     Dim lpszSubKey As String
+	     Dim lpValueName As String
+	     Dim phkResult As Long
+	     Dim ReturnValue As Long
+	     Dim lresult As Long
+	     Dim lretval As Long
+	     Dim ptimeout As Long
+	
+	Place the following code into the Form Load of the Form:
+	
+	     'Desired PageTimeout
+	     ptimeout = 500 'This is .5 seconds
+	     'Set up strings
+	     lpszSubKey = "Software\Microsoft\Jet\3.0\Engines\Jet"
+	     ' for VB5 or VB6, lpszSubKey should equal:
+	     ' lpszSubKey = "Software\Microsoft\Jet\3.5\Engines\Jet 3.5"
+	     lpszKey = HKEY_LOCAL_MACHINE
+	     lpValueName = "PageTimeout"
+	
+	     'If the key exists open it or if not we will create it
+	     lresult = RegCreateKeyEx(lpszKey, lpszSubKey, 0&, vbNullString, _
+	     REG_OPTION_NON_VOLATILE, KEY_ALL_ACCESS, 0&, phkResult, lretval)
+	     'Search for lpValueName entry in lpszsubkey
+	     lresult = RegQueryValueEx(phkResult, lpValueName, 0, REG_DWORD, _
+	     lretval, 4)
+	     'Check return value accordingly
+	     Select Case lresult
+	        Case 0
+	           'Success
+	           'Comment next line if you don't want to change the value if exists
+	           lresult = RegSetValueEx(phkResult, lpValueName, 0, REG_DWORD, _
+	           ptimeout, 4)
+	        Case 2
+	           'If entry doesn't exist create it and set it to ptimeout
+	           lresult = RegSetValueEx(phkResult, lpValueName, 0, REG_DWORD, _
+	           ptimeout, 4)
+	           If lresult Then MsgBox "Could not set PageTimeout. Error:" & _
+	      Str$(lresult)
+	        Case Else
+	           MsgBox "Unexpected Return Value:" & Str$(lresult)
+	     End Select
+	     'Close the updated key
+	     lresult = RegCloseKey(phkResult)
+	
+	STATUS
+	======
+	
+	This behavior is by design. Microsoft Jet version 3.0's PageTimeout property
+	defaults to 5 seconds. This is not the case with Jet version 2.5 that defaults
+	to .5 seconds.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	NOTE: Perform these steps before running the workaround above.
+	
+	With the Microsoft DAO 3.x Object Library selected in Tools REFERENCES
+	
+	1. Start a new standard.exe project in Visual Basic. Form1 is created by
+	  default. Add a Data Control (Data1) to Form1. Bind the Data Control to a
+	  Database and set a text box to display one of the fields in the database. Add
+	  a button to do a Data1. Refresh and make an .exe.
+	
+	2. Run two instances of the .exe, modify the data in one instance, and
+	  immediately click the refresh in the other instance. Notice that it takes
+	  five seconds for the data to be updated.
+	
+	Additional query words: kbVBp400 kbVBp500 kbVBp600 kbdse kbDSupport kbVBp kbDAO kbRegistry
+	
+	======================================================================
+	Keywords          : kbVBp500 kbVBp600 kbGrpDSVBDB 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400
+	Version           : :4.0,5.0,6.0
+	Issue type        : kbprb
+	
+	=============================================================================
+	

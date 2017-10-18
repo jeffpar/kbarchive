@@ -1,0 +1,240 @@
+---
+layout: page
+title: "Q134787: Complete List of Shortcut Keys for PowerPoint 7.0"
+permalink: kb/134/Q134787/
+---
+
+## Q134787: Complete List of Shortcut Keys for PowerPoint 7.0
+
+	Article: Q134787
+	Product(s): Microsoft PowerPoint for Windows
+	Version(s): WINDOWS:7.0
+	Operating System(s): 
+	Keyword(s): kbui kbusage
+	Last Modified: 15-APR-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft PowerPoint for Windows 95, version 7.0 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The following is a list of keyboard shortcuts available in PowerPoint for
+	Windows 95, version 7.0. This list is a compilation of the individual keyboard
+	shortcut lists available in PowerPoint Help.
+	
+	MORE INFORMATION
+	================
+	
+	Commands to Control PowerPoint Windows
+	--------------------------------------
+	
+	  To do this                                  Press these shortcut keys
+	  ---------------------------------------------------------------------
+	
+	  Go to previous presentation window           CTRL+SHIFT+F6
+	  Go to next presentation window               CTRL+F6
+	  Maximize PowerPoint application window       ALT+F10
+	  Maximize presentation window                 CTRL+F10
+	  Restore presentation window to previous size CTRL+F5
+	
+	Commands to Delete and Copy
+	---------------------------
+	
+	  To do this                                  Press these shortcut keys
+	  ---------------------------------------------------------------------
+	
+	  Delete character left                        BACKSPACE
+	  Delete word left                             CTRL+BACKSPACE
+	  Delete character right                       DELETE
+	  Delete word right                            CTRL+DELETE
+	  Cut                                          CTRL+X
+	  Copy                                         CTRL+C
+	  Paste                                        CTRL+V
+	  Undo                                         CTRL+Z
+	
+	Shortcuts for Menu Commands
+	---------------------------
+	
+	File Menu:
+	
+	  To do this                                  Press these shortcut keys
+	  ---------------------------------------------------------------------
+	
+	  Open new presentation                        CTRL+N
+	  Open existing presentation                   CTRL+O
+	  Close                                        CTRL+W or CTRL+F4
+	  Save                                         CTRL+S or SHIFT+F12
+	  Save As                                      F12
+	  Print                                        CTRL+P or CTRL+SHIFT
+	                                               +F12
+	  Exit PowerPoint                              CTRL+Q or ALT+F4
+	
+	Edit Menu:
+	
+	  To do this                                  Press these shortcut keys
+	  ---------------------------------------------------------------------
+	
+	  Undo                                         CTRL+Z
+	  Repeat/Redo                                  CTRL+Y
+	  Clear                                        DELETE
+	  Cut                                          CTRL+X
+	  Copy                                         CTRL+C, CTRL+INSERT
+	  Paste                                        CTRL+V, SHIFT+INSERT
+	  Select all                                   CTRL+A
+	  Find                                         CTRL+F
+	  Replace                                      CTRL+H
+	  Duplicate                                    CTRL+D
+	  Update links                                 CTRL+SHIFT+F7
+	
+	View Menu:
+	
+	  To do this                                  Press these shortcut keys
+	  ---------------------------------------------------------------------
+	
+	  Show guides (toggle)                         CTRL+G
+	  Switch to master view                        SHIFT+Click View button
+	
+	Insert Menu:
+	
+	  To do this                                  Press these shortcut keys
+	  ---------------------------------------------------------------------
+	
+	  Create new slide                             CTRL+M
+	  Create new slide without New Slide dialog    CTRL+SHIFT+M
+	  Add date                                     ALT+SHIFT+D
+	  Add page number                              ALT+SHIFT+P
+	  Add time                                     ALT+SHIFT+T
+	
+	Format Menu:
+	
+	  To do this                                  Press these shortcut keys
+	  ---------------------------------------------------------------------
+	
+	  Format character                             CTRL+T
+	  Center paragraph                             CTRL+E
+	  Justify paragraph                            CTRL+J
+	  Left-align paragraph                         CTRL+L
+	  Right-align paragraph                        CTRL+R
+	
+	Draw Menu:
+	
+	  To do this                                  Press these shortcut keys
+	  ---------------------------------------------------------------------
+	
+	  Restore picture to original size             CTRL+double-click
+	                                               resize handle
+	  Restore picture to proportional size         SHIFT+double-click
+	                                               resize handle
+	  Move from title to text                      CTRL+ENTER
+	  Show title in slide sorter view              ALT+click
+	  Group                                         CTRL+SHIFT+G
+	  Ungroup                                      CTRL+SHIFT+H
+	  Regroup                                      CTRL+SHIFT+J
+	
+	Help Menu:
+	
+	  To do this                                  Press these shortcut keys
+	  ---------------------------------------------------------------------
+	
+	  Display Help Contents screen                 F1
+	  Display context-sensitive Help               SHIFT+F1
+	
+	Commands to Move Around in Text
+	-------------------------------
+	
+	  To move this direction                       Press these shortcut keys
+	  ---------------------------------------------------------------------
+	
+	  One character left                           LEFT ARROW
+	  One character right                          RIGHT ARROW
+	  One line up                                  UP ARROW
+	  One line down                                DOWN ARROW
+	  One word left                                CTRL+LEFT ARROW
+	  One word right                               CTRL+RIGHT ARROW
+	  To end of line                               END
+	  To beginning of line                         HOME
+	  Up one paragraph                             CTRL+UP ARROW
+	  Down one paragraph                           CTRL+DOWN ARROW
+	  To end of page                               CTRL+END
+	  To start of page                             CTRL+HOME
+	  To previous object                           SHIFT+TAB
+	  To next object                               TAB
+	  Repeat Find or Go To                         SHIFT+F4
+	
+	Commands to Use in an Outline
+	-----------------------------
+	
+	  To do this                                  Press these shortcut keys
+	  ---------------------------------------------------------------------
+	
+	  Promote paragraph                            ALT+SHIFT+LEFT ARROW
+	  Demote paragraph                             ALT+SHIFT+RIGHT ARROW
+	  Move selected paragraphs up                  ALT+SHIFT+UP ARROW
+	  Move selected paragraphs down                ALT+SHIFT+DOWN ARROW
+	  Show heading level 1                         ALT+SHIFT+1
+	  Expand text under a heading                  ALT+SHIFT+PLUS
+	  Collapse text under a heading                ALT+SHIFT+MINUS
+	  Show all text and headings                   ALT+SHIFT+A
+	  Turn character formatting on/off             Keypad / 
+	
+	Commands to Select Text and Objects
+	-----------------------------------
+	
+	  To select this                               Press these shortcut keys
+	  ----------------------------------------------------------------------
+	
+	  Character right                              SHIFT+RIGHT ARROW
+	  Character left                               SHIFT+LEFT ARROW
+	  To end of word                               CTRL+SHIFT+RIGHT ARROW
+	  To beginning of word                         CTRL+SHIFT+LEFT ARROW
+	  Line up                                      SHIFT+UP ARROW
+	  Line down                                    SHIFT+DOWN ARROW
+	  All objects (slide view)                     CTRL+A
+	  All slides (slide sorter view)               CTRL+A
+	  All text (outline view)                      CTRL+Z
+	  A word                                       Double-click
+	  A paragraph                                  Triple-click
+	  Drag-and-drop copy                           CTRL+select and drag
+	
+	Slide Show Controls
+	-------------------
+	
+	  To do this                                  Press these shortcut keys
+	  ---------------------------------------------------------------------
+	
+	  Advance to the next slide                    Click the mouse
+	  Return to the previous slide                 BACKSPACE
+	  Go to a slide                                Type the slide number,
+	                                               and then press ENTER
+	  Black or unblack the screen                  B
+	  White or unwhite the screen                  W
+	  Show or hide the arrow pointer               S
+	  End slide show                               ESC
+	  Erase drawing on-screen                      E
+	  Go to next slide, if it's hidden             H
+	  Rehearse with new timings                    T
+	  Rehearse with original timings               O
+	  Rehearse with mouse-click advance            M
+	  Return to the first slide                    Hold both mouse buttons
+	                                               down for 2 seconds
+	  Change pointer to pen                        CTRL+P
+	  Change pen to pointer                        CTRL+A
+	  Hide pointer and button                      CTRL+H
+	  Hide pointer and button always               CTRL+L
+	  Display shortcut menu                         Right mouse click
+	
+	Additional query words: 7.00
+	
+	======================================================================
+	Keywords          : kbui kbusage 
+	Technology        : kbPowerPtSearch kbPowerPt700 kbZNotKeyword2 kbPowerPt700Search
+	Version           : WINDOWS:7.0
+	Hardware          : x86
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

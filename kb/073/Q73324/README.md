@@ -1,0 +1,91 @@
+---
+layout: page
+title: "Q73324: Devices/TSRs Do Not Load High with RAM Switch"
+permalink: kb/073/Q73324/
+---
+
+## Q73324: Devices/TSRs Do Not Load High with RAM Switch
+
+	Article: Q73324
+	Product(s): Microsoft Disk Operating System
+	Version(s): MS-DOS:5.0,5.0a
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 19-NOV-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft MS-DOS operating system versions 5.0, 5.0a 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Even if you install HIMEM.SYS and EMM386.EXE and are using DEVICEHIGH for device
+	drivers and LOADHIGH for terminate-and-stay-resident (TSR) programs, your device
+	drivers and TSR programs do not load high.
+	
+	CAUSE
+	=====
+	
+	This problem can occur if you are loading EMM386.EXE with the RAM switch.
+	
+	MORE INFORMATION
+	================
+	
+	The RAM switch establishes a 64-kilobyte (K) page frame and sets up the upper
+	memory blocks (UMBs) for loading device drivers and TSR programs high. The
+	search algorithm allocates the first contiguous 64K of unused upper memory area
+	(UMA) addresses for the page frame and UMBs are created from any leftover
+	addresses.
+	
+	If EMM386.EXE finds only 64K of the UMA for a page frame and UMBs, it creates a
+	page frame and does not have any addresses remaining from which to create UMBs.
+	Or, if only 74K is available for EMM386.EXE, only 10K would be used for a UMB,
+	which is too small for most drivers.
+	
+	To work around this problem, force EMM386.EXE to use more addresses in the UMA by
+	using the I= switch; or, if expanded memory is not necessary, use EMM386.EXE
+	with the NOEMS parameter to make available all addresses used for UMBs.
+	
+	For example, the range E000-EFFF is frequently unused. If the usable portion of
+	the UMA starts at C800h and you know there is a 64K free block of memory
+	starting at E000h, you can modify the EMM386.EXE line in your CONFIG.SYS file as
+	follows:
+	
+	  DEVICE=EMM386.EXE I=E000-EFFF RAM
+	
+	By using the I= switch, the search algorithm includes the specified range when
+	attempting to create a page frame and UMBs.
+	
+	EMM386.EXE can also be forced to include address ranges for a page frame when a
+	page frame is specified using the FRAME=, /P, or M switch that includes
+	addresses which EMM386.EXE would not have otherwise used. As in the above
+	example, you can modify the CONFIG.SYS file as follows:
+	
+	  DEVICE=EMM386.EXE FRAME=E000 RAM
+	
+	This line forces the page frame to start at E000h and leaves the range from C800h
+	to DFFFh free for loading programs high.
+	
+	To view the location of programs loaded high and in conventional memory, use the
+	MEM command with the /DEBUG switch. For more information on the MEM command and
+	using the UMA, see the version 5.0 "Microsoft MS-DOS User's Guide and
+	Reference."
+	
+	For more information optimizing your upper memory blocks, query on the following
+	words in the Microsoft Knowledge Base:
+	
+	  "optimizing" (without the quotation marks) and "blocks" (without the
+	  quotation marks) and "5.00" (without the quotation marks)
+	
+	Additional query words: 5.00 5.00a
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbMSDOSSearch kbMSDOS500 kbMSDOS500a
+	Version           : MS-DOS:5.0,5.0a
+	
+	=============================================================================
+	

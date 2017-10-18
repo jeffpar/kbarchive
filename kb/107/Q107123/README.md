@@ -1,0 +1,70 @@
+---
+layout: page
+title: "Q107123: Removing SNA Links from Control Panel"
+permalink: kb/107/Q107123/
+---
+
+## Q107123: Removing SNA Links from Control Panel
+
+	Article: Q107123
+	Product(s): Microsoft SNA Server
+	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1,3.0
+	Operating System(s): 
+	Keyword(s): kbnetwork kbsna211sp1
+	Last Modified: 12-JUN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft SNA Server, versions 2.0, 2.1, 2.11, 2.11 SP1, 3.0 
+	-------------------------------------------------------------------------------
+	
+	The README.TXT file of C.8 for SNA Server 2.0 states that SNA Server device
+	drivers (such as the IBM SDLC driver) should not be removed with the
+	Network portion of Control Panel. Doing so may result in unexpected
+	behavior, for which the only known solution is to remove and reinstall SNA
+	Server. Instead, use SNA Server Setup to remove the component.
+	
+	NOTE: The Readme files for SNA Server versions later than version 2.0 do not include this information. However, the removal of SNA Server Link Services using Control Panel is not supported.
+	
+	If you accidentally delete any of the link services, the services
+	themselves do not stop until the SNA Server is stopped. At that time, a
+	warning is displayed that the link service has been deleted. 3270 Clients
+	receive Error 2574. The event log shows that there was no link service
+	available to start a service.
+	
+	You cannot restore SNA Server by restarting SNA Server or by rebooting
+	Windows NT and choosing the last known good configuration.
+	
+	The workaround is either a full removal and reinstallation, or using the
+	following procedure:
+	
+	1. From SNA Server Setup, configure a link service.
+	
+	  NOTE: SNA Server link services are added and removed using SNA Server Manager
+	  for SNA Server versions 3.0 and 4.0.
+	
+	2. Select the service that no longer has a link service defined.
+	
+	3. Double-click this selection to bring up the connection properties.
+	
+	4. Choose the link service arrow and select the required link service needed for
+	  the link.
+	
+	  The link service should report (none).
+	
+	5. Choose the link service, and then choose OK.
+	
+	6. Restart the service.
+	
+	NOTE: If this procedure fails, a reinstallation must be performed.
+	
+	Additional query words: prodsna
+	
+	======================================================================
+	Keywords          : kbnetwork kbsna211sp1 
+	Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ200 kbSNAServ211 kbSNAServ210 kbSNAServ211SP1
+	Version           : WINDOWS:2.0,2.1,2.11,2.11 SP1,3.0
+	
+	=============================================================================
+	

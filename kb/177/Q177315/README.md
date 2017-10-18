@@ -1,0 +1,93 @@
+---
+layout: page
+title: "Q177315: Err Msg: Your Server Has Not Responded..."
+permalink: kb/177/Q177315/
+---
+
+## Q177315: Err Msg: Your Server Has Not Responded...
+
+	Article: Q177315
+	Product(s): The Microsoft Network
+	Version(s): WINDOWS:2.51,4.0
+	Operating System(s): 
+	Keyword(s): kbenv kberrmsg kbtlc
+	Last Modified: 10-OCT-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- The Microsoft Network version 2.51 
+	- Microsoft Outlook Express version 4.0 for Windows 95 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	When you attempt to send e-mail on MSN, The Microsoft Network, using Microsoft
+	Outlook Express as your e-mail client, you may receive the following error
+	message:
+	
+	  Your SMTP server has not responded in 30 seconds. Would you like to
+	  wait another 30 seconds for the server to respond?
+	
+	  Account: MSN Mail
+	  Server: smtp.email.msn.com.
+	
+	Similarly, when you attempt to receive e-mail on MSN using Outlook Express as
+	your e-mail client, you may receive the following error message:
+	
+	  Your POP3 server has not responded in 30 seconds. Would you like to
+	  wait another 30 seconds for the server to respond?
+	
+	  Account: MSN Mail
+	  Server: pop3.email.msn.com.
+	
+	When you click OK, e-mail is sent or received normally.
+	
+	NOTE: The account name information and the amount of time specified in the
+	message may vary depending on your MSN e-mail account settings.
+	
+	CAUSE
+	=====
+	
+	This behavior can occur if the MSN e-mail server is very busy, or if you have
+	established a slow modem connection to MSN.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this issue, increase the server timeout setting to give the MSN
+	e-mail server additional time to respond. To do so, use the following steps:
+	
+	1. Double-click the Microsoft Outlook Express icon on the desktop. If you are
+	  prompted to sign in to MSN, click Cancel.
+	
+	2. On the Tools menu, click Accounts.
+	
+	3. On the Mail tab, click MSN Mail (if MSN Mail is not listed, click the account
+	  you use to connect to the MSN e-mail servers), and then click Properties.
+	
+	4. On the Advanced tab, move the Server Timeouts slider to the right to increase
+	  the server timeout setting. NOTE: The maximum server timeout setting is 5
+	  minutes.
+	
+	5. Click OK, and then click Close.
+	
+	MORE INFORMATION
+	================
+	
+	The server timeout setting determines how long Outlook Express attempts to
+	connect to the MSN e-mail server before stopping or "timing out." The default
+	server timeout setting for Outlook Express is 30 seconds. You may need to
+	increase this setting if your Internet connection is slow.
+	
+	Additional query words: 4.0 msnet msnetwork microsoft-net m.s.n. outexw95
+	
+	======================================================================
+	Keywords          : kbenv kberrmsg kbtlc 
+	Technology        : kbMSNSearch kbOutlookExpressSearch kbZNotKeyword3 kbOutlookExpress95Search kbOutlookExpress400Win95 kbMSN251
+	Version           : WINDOWS:2.51,4.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

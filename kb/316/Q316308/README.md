@@ -1,0 +1,140 @@
+---
+layout: page
+title: "Q316308: HOW TO: Configure a Stripe Set in Windows NT Server 4.0"
+permalink: kb/316/Q316308/
+---
+
+## Q316308: HOW TO: Configure a Stripe Set in Windows NT Server 4.0
+
+	Article: Q316308
+	Product(s): Microsoft Windows NT
+	Version(s): 4.0
+	Operating System(s): 
+	Keyword(s): kbAudITPro kbHOWTOmaster
+	Last Modified: 09-APR-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	
+	IN THIS TASK
+	------------
+	
+	- SUMMARY
+	
+	   - Requirements
+	- How to Configure a Stripe Set
+	
+	- REFERENCES
+	
+	SUMMARY
+	=======
+	
+	This step-by-step article describes how to configure a stripe set on a Windows
+	NT Server 4.0-based computer. A stripe set is made up of equal-sized areas of
+	free space on from 2 to 32 disks that are combined into a single volume. When
+	data is written to the volume, it is striped across all of the disks in the
+	stripe set. A stripe set provides a means to store more data than a single disk
+	can hold, and affords faster read and write speeds than a single disk volume,
+	but does not provide any fault tolerance.
+	
+	Requirements
+	------------
+	
+	You must be using a computer (that meets the requirements that are listed on the
+	Hardware Compatibility List) on which Windows NT Server 4.0 is installed.
+	Additionally, from 2 to 32 blank hard disks that are not partitioned must be
+	installed in the computer.
+	
+	How to Configure a Stripe Set
+	-----------------------------
+	
+	You must be logged on as Administrator (or as a user with Administrator
+	permissions) to configure a stripe set. To configure a stripe set, follow these
+	steps:
+	
+	1. Click Start, point to Programs, point to Administrative Tools (Common), and
+	  then click Disk Administrator.
+	
+	  If a Disk Administrator dialog box appears and states that that this is the
+	  first time that Disk Administrator has been run, click OK.
+	
+	  If a Confirm dialog box appears, click Yes to write a signature to the disk.
+	  If additional Confirm dialog boxes appear, click Yes in each dialog box.
+	
+	2. In the Disk Administrator dialog box, click the area that is marked "Free
+	  Space" on the first hard disk that you want to use in the stripe set. Then
+	  press and hold the CTRL key while you click the area that is marked "Free
+	  Space" on each additional disk that you want to use as a part of the stripe
+	  set. Release the CTRL key.
+	
+	3. On the Partition menu, click Create Stripe Set.
+	
+	4. In the Create Stripe Set dialog box, type a number for the total disk space
+	  (in megabytes) that you want this stripe set to use. The minimum and maximum
+	  sizes for the stripe set are listed in this dialog box. Click OK.
+	
+	5. On the Partition menu, click Commit Changes Now. In the Confirm dialog box,
+	  click Yes.
+	
+	  If another Confirm dialog box appears, click Yes. In the Disk Administrator
+	  dialog box, click OK.
+	
+	  If another Disk Administrator dialog box appears, click OK to shut down and
+	  restart your computer. When the computer restarts, log on as Administrator
+	  and start Disk Administrator again.
+	
+	  You have now created a stripe set. Next, you must format the stripe set before
+	  you can use it to store data.
+	
+	6. In the Disk Administrator dialog box, click the area that is marked as
+	  "Unknown" on any hard disk in the stripe set.
+	
+	7. On the Tools menu, click Format.
+	
+	8. In the Format dialog box, click the file system that you want to use for the
+	  stripe set in the "File system" box.
+	
+	  NOTE: If the size of the stripe set is larger than 4,096 megabytes (MB), you
+	  must use the NTFS file system.
+	
+	9. In the Volume label box, type a volume label for the stripe set. If you want
+	  to perform a quick format, select the Quick Format check box. If you chose
+	  NTFS as the file system, and you want to use compression on the stripe set,
+	  select the Enable Compression check box. Click Start.
+	
+	10. In the Format dialog box, click OK. When the Formatting dialog box appears,
+	  indicating that the format is completed, click OK. Click Close. Quit Disk
+	  Administrator.
+	
+	11. Because your computer's disk configuration has changed, use the Rdisk.exe
+	  utility to create a new Emergency Repair disk.
+	
+	REFERENCES
+	==========
+	
+	For more information about managing volumes on a Windows NT Server 4.0-based
+	computer, see Module 6 of Microsoft Official Curriculum, Course Number 922, at
+	the following Microsoft Web site:
+	
+	  Supporting Microsoft Windows NT 4.0 Core Technologies
+	  (http://www.microsoft.com/trainingandservices/syllabi/syllasearch.asp?coursenumber=922&coursetitle=supporting+microsoft+windows+nt+4.0+core+technologies&hasclass=yes&pageurl=/trainingandservices/content/syllabi/922bfinal.txt)
+	
+	For additional information about using the Rdisk.exe utility, click the article
+	number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q158866 How to Manually Create an Emergency Repair Disk
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbAudITPro kbHOWTOmaster 
+	Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+	Version           : :4.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

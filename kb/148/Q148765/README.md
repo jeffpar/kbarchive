@@ -1,0 +1,94 @@
+---
+layout: page
+title: "Q148765: Availability of DLC Update for MSDLC32 Protocol"
+permalink: kb/148/Q148765/
+---
+
+## Q148765: Availability of DLC Update for MSDLC32 Protocol
+
+	Article: Q148765
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): 95
+	Operating System(s): 
+	Keyword(s): kbfile kbnetwork 3rdpartynet msnets win95 kbDLC kbSDKPlatform kb3rdPartyNetClient
+	Last Modified: 21-DEC-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 95 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes the availability of the Microsoft 32-bit Data Link
+	Control (DLC) update to Microsoft's 32-bit Data Link Control (MSDLC32) protocol.
+	
+	MORE INFORMATION
+	================
+	
+	DLC Update
+	----------
+	
+	Update your existing Microsoft 32-bit Data Link Control (MSDLC32) protocol for
+	Windows 95 with the DLC update if you have encountered the following problem:
+	
+	  Your current 32-bit DLC protocol stack may hang under Windows 95 if a 32-bit
+	  program tries to open the network adapter more than once to connect to two
+	  different IBM host computers, or if multiple 32-bit programs try to open the
+	  network adapter at the same time to connect to different host computers. For
+	  example, the problem can occur if a terminal emulation program opens the
+	  adapter twice to connect to two different AS/400 hosts, and opens a display
+	  session to each host. This problem happens rarely on Ethernet networks, but
+	  may occur often on token ring networks due to the higher number of status
+	  indication messages.
+	
+	NOTE: You must first install the Microsoft 32-bit Data Link Control (MSDLC32)
+	protocol for Windows 95 (Msdlc32.exe) before you install the DLC update
+	(Dlc32upd.exe). For information about the MSDLC32 protocol, please see the
+	following article in the Microsoft Knowledge Base:
+	
+	  Q139561 Availability of MSDLC32 and Support Boundaries
+	
+	Installation
+	------------
+	
+	To install the Dlc32upd.exe file after you have downloaded it, follow these
+	steps:
+	
+	1. Download the Dlc32upd.exe file from one of the online services listed below
+	  to an empty folder.
+	
+	2. In My Computer or Windows Explorer, double-click the Dlc32upd.exe file you
+	  downloaded in step 1.
+	
+	3. Follow the instructions on your screen.
+	
+	4. Restart Windows.
+	
+	Instructions for Downloading
+	----------------------------
+	
+	The following file is available for download from the Microsoft Download Center:
+	
+	  Download Dlc32upd.exe now
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. Once posted, the file is housed on secure
+	servers that prevent any unauthorized changes to the file.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbfile kbnetwork 3rdpartynet msnets win95 kbDLC kbSDKPlatform kb3rdPartyNetClient 
+	Technology        : kbWin95search kbZNotKeyword3
+	Version           : :95
+	
+	=============================================================================
+	

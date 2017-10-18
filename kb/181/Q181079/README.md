@@ -1,0 +1,266 @@
+---
+layout: page
+title: "Q181079: WD97: What to Do If You Have a Macro Virus"
+permalink: kb/181/Q181079/
+---
+
+## Q181079: WD97: What to Do If You Have a Macro Virus
+
+	Article: Q181079
+	Product(s): Word 97 for Windows
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbdta kbviruskbfaq
+	Last Modified: 19-APR-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Word 97 for Windows 
+	-------------------------------------------------------------------------------
+	
+	
+	SYMPTOMS
+	========
+	
+	The first macro virus was discovered in the summer of 1995. Since that time,
+	other macro viruses have appeared. This article describes what to do if you
+	think you might have a Word macro virus, or if you want to ensure that your
+	documents never become infected with one.
+	
+	The following are some symptoms of a Word macro virus that are known to affect
+	Word and Word documents:
+	
+	- When you try to save a document, Word only lets you save the document as a
+	  template.
+	
+	  -or-
+	
+	- The icon for the file looks like a template rather than a document.
+	
+	  -or-
+	
+	- When you open a document, a dialog box showing the number 1 appears.
+	
+	  -or-
+	
+	- The commands of Macro and Customize no longer show on the Tools menu.
+	
+	  -or-
+	
+	- New macros appear in the list of macros. AutoOpen and FileSaveAs macros may
+	  also appear; if you already had macros by these names, their content may have
+	  been changed by the macro virus.
+	
+	  -or-
+	
+	- Unusual or unexpected messages appear when you open a Word document or
+	  template.
+	
+	NOTES:
+	
+	- In Word 97 there is a Macro Virus Protection option (on the Tools menu, click
+	  Options, and click the General tab) designed to alert you if you open a file
+	  that contains macros, regardless of what the macros do. For a permanent
+	  solution, you must use anti-virus software that is specifically designed to
+	  detect and prevent macro viruses.
+	
+	- Word doesn't look for or remove any macro viruses from existing documents and
+	  templates. It will simply warn you if the document you are opening contains
+	  macros. The warning lets you either open the document with the macros active
+	  or open it with the macros disabled. You should not open a document with the
+	  macros active unless you are absolutely sure that the document contains no
+	  harmful macro viruses.
+	
+	For a long-term solution to macro viruses, install anti-virus software that is
+	specifically designed to detect macro viruses. For additional information about
+	anti-virus software available from third-party vendors, click the article number
+	below to view the article in the Microsoft Knowledge Base:
+	
+	  Q49500 List of Antivirus Software Vendors
+	
+	
+	WORKAROUND
+	==========
+	
+	Use the following workarounds as interim solutions only.
+	
+	Method 1: Press SHIFT When You Open a File
+	------------------------------------------
+	
+	If you do not have any of the symptoms described in this article, but you do not
+	want to be affected by a macro virus, hold down the SHIFT key when you open a
+	file that might be affected by a macro virus. Pressing SHIFT will prevent any
+	Auto macros from being run; if a macro virus is present, it will not be loaded.
+	
+	Method 2: Delete the Macro and Recover the Document
+	---------------------------------------------------
+	
+	If you have experienced the symptoms listed in this article, or if you suspect
+	that you have a macro virus that is not described here, use the following steps
+	to remove the offending macros and correct affected documents. (Remember, this
+	is only a temporary solution; because new macros are being created, these steps
+	may not work):
+	
+	1. Close Word and rename the Normal.dot file to Name.dot.
+	
+	2. Make a back-up copy of an affected file.
+	
+	3. Open Word and on the File menu click Open.
+	
+	4. Navigate to the folder containing the affected file.
+	
+	5. Click to select the affected file.
+	
+	6. Press and hold the SHIFT key and click Open.
+	
+	  Continue to hold the SHIFT key until the affected file is open in Word.
+	
+	  NOTE: Holding the SHIFT key while opening a file keeps any of Words automatic
+	  macros from running.
+	
+	7. To remove suspect virus containing macros, do the following:
+	
+	  a. On the Tools menu, point to Macro, and then click Macros.
+	
+	  b. In the Macros In list, click All Active Templates and documents.
+	
+	  c. Select the suspect macro and click Delete. Click Yes when asked if you
+	     want to delete the macro.
+	
+	  d. Repeat step c for all suspect macros.
+	
+	  e. Click Cancel or the x to close the Macros dialog box.
+	
+	8. To recover the text of an infected document:
+	
+	  a. Select the entire document by pressing CTRL+A, or by clicking Select All
+	     on the Edit menu.
+	
+	  b. Delete the document's final paragraph mark from the selection by pressing
+	     SHIFT+LEFT ARROW.
+	
+	  c. On the Edit menu, click Copy.
+	
+	  d. On the File menu, click New. Select the template you want to use, and
+	     click OK.
+	
+	  e. On the Edit menu, click Paste.
+	
+	  f. Repeat step 7 to ensure that the virus containing macros have not again
+	     replicated.
+	
+	  g. Save the document.
+	
+	9. Repeat these steps for any document suspect of containing a macro virus.
+	
+	NOTE: If this method does not work, try Method 3.
+	
+	Method 3: Use the Organizer to temporarily clean up macro viruses
+	-----------------------------------------------------------------
+	
+	Use the Organizer to clean up the macro virus. Keep in mind that if other files
+	were opened after the infected file, they most likely will be infected as well.
+	
+	To remove the virus from the Normal template:
+	
+	1. Close all documents. If an infected document is open, it can easily reinfect
+	  Normal.dot.
+	
+	2. On the Tools menu, click Templates and Add-Ins, and click the Organizer
+	  button.
+	
+	3. Select the Macro Project Items tab and rename or delete all of the following
+	  macros:
+	
+	  NewMacros
+	  AutoClose
+	  AutoExec
+	  AutoOpen
+	  FileExit
+	  FileNew
+	  FileOpen
+	  FileSave
+	  FileSaveAs
+	  Macros
+	  ToolsMacro
+	
+	4. Click Close.
+	
+	5. Press SHIFT and on the File menu, click Save All to save the template.
+	
+	To remove the virus from infected documents:
+	
+	If a file is infected, use the same method as above, but remove the macros from
+	both the Normal template and also from the infected document (template) while in
+	the Organizer. When you are done, press SHIFT and on the File menu and click
+	Save All and move on to the next file. Keep in mind that every time you open an
+	infected file it will infect your Normal template, so you constantly need to
+	remove the macros from the Normal template.
+	
+	Method 4: Insert It into a New Document
+	---------------------------------------
+	
+	With this method, you will need to rename Normal.dot and then on the Insert menu,
+	click File to temporarily remove the macros. This method is particularly useful
+	with The macro virus called "CAP" that removes Macro and Customize from the
+	Tools menu.
+	
+	NOTE:In this situation, the Templates And Add-Ins command on the Tools menu may
+	not work.
+	
+	1. Close Word and rename the Normal.dot file to Name.dot.
+	
+	2. Open Word and verify that Macro and Customize are on the Tools menu.
+	
+	3. Open a new document and on the Insert menu, click File.
+	
+	4. Navigate to the folder containing the affected file.
+	
+	5. Click to select the affected file.
+	
+	6. Press and hold the SHIFT key and click OK.
+	
+	  Continue to hold the SHIFT key until the affected file is open in Word.
+	
+	  NOTE:Holding the SHIFT key while opening a file keeps any of Words automatic
+	  macros from running.
+	
+	7. To see if there are any macros in the new document (there should not be any
+	  listed), point to Macro on the Tools menu, and then click Macros. In the
+	  Macros In list, click "All active templates and documents." Under Macro Name,
+	  there should not be any macros listed. Click Cancel.
+	
+	8. Save the file with a different file name.
+	
+	9. Delete the infected file.
+	
+	MORE INFORMATION
+	================
+	
+	A macro virus is a program written in the macro language of a program, like
+	Word. It propagates itself among data files and can harm your files or your
+	computer's operating system.
+	
+	Word macro viruses do not travel freely over the Internet or any other media;
+	they can only be transferred when a user opens a document or template that
+	contains the virus macro.
+	
+	Microsoft Internet Assistant and documents created or read by it cannot be
+	affected by such macros. Internet Assistant, by design, blocks the mechanism
+	that distributes the macro virus.
+	
+	Macro viruses cannot be transferred by WordMail unless an affected document is
+	embedded in the e-mail message and the receiver opens the document.
+	
+	
+	Additional query words: disinfect protect protected corporate infect saving opening saveas nuclear DMV prank concept word97 word8
+	
+	======================================================================
+	Keywords          : kbdta kbvirus kbfaq
+	Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+	Version           : :
+	Issue type        : kbinfo
+	
+	=============================================================================
+	

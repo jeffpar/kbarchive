@@ -1,0 +1,86 @@
+---
+layout: page
+title: "Q295714: How to Break Down the System Process"
+permalink: kb/295/Q295714/
+---
+
+## Q295714: How to Break Down the System Process
+
+	Article: Q295714
+	Product(s): Microsoft Windows NT
+	Version(s): 2000,4.0
+	Operating System(s): 
+	Keyword(s): kbenv kbPerfMon kbPerformance w2000perf w2000sysmon
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 4.0 
+	- Microsoft Windows 2000 Advanced Server 
+	- Microsoft Windows 2000 Datacenter Server 
+	- Microsoft Windows 2000 Server 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article describes how to break down the System process when you are
+	monitoring the computer's performance.
+	
+	MORE INFORMATION
+	================
+	
+	When you are monitoring the computer's performance to determine the cause of a
+	bottleneck, or to determine why the computer stopped responding (hangs), the
+	monitoring results may reveal that the System process consumes a large amount of
+	processor time. This issue is usually caused by a device driver that is running
+	in the context of the System process. To break down the System process, use the
+	procedure that is described in this section.
+	
+	NOTE: If you restart the computer during this procedure, the results are not
+	valid.
+	
+	1. Start performance monitoring by selecting the Thread object, %Processor Time
+	  counter, and only the instances of the System process.
+	
+	2. Note the threads that are using large amounts of processor time.
+	
+	3. Click the System process in the Process window, and then use the Process
+	  Viewer tool (Pviewer.exe) to examine the parent process for the thread.
+	
+	  NOTE: Process Viewer is located in the Windows NT 4.0 Resource Kit or on the
+	  Windows 2000 Support Tools CD-ROM.
+	
+	4. In the Thread window, click the thread number that corresponds to the thread
+	  that you identified in step two.
+	
+	5. Note the start address in Process Viewer.
+	
+	6. At the command prompt, run the Process and Thread Status tool (Pstat.exe) to
+	  view the running processes and the loaded module list.
+	
+	  NOTE: Process and Thread Status is located in the Windows NT 4.0 Resource Kit
+	  and in the Windows 2000 Resource Kit.
+	
+	7. Compare the thread start address to the loaded module list.
+	
+	8. Identify the location of the thread against the module list.
+	
+	  Usually, this location is a device driver.
+	
+	9. Contact the vendor of the device driver for additional support.
+	
+	For more information refer to the "Mapping a System Thread to a Device Driver"
+	topic (page 79) in Inside Windows 2000, Third Edition.
+	
+	Additional query words: pviewer pstat exe
+	
+	======================================================================
+	Keywords          : kbenv kbPerfMon kbPerformance w2000perf w2000sysmon 
+	Technology        : kbWinNTsearch kbWinNT400search kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000DataServ kbwin2000DataServSearch kbwin2000Serv kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbwin2000ServSearch kbwin2000Search kbWinAdvServSearch kbWinDataServSearch
+	Version           : :2000,4.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

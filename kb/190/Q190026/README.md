@@ -1,0 +1,114 @@
+---
+layout: page
+title: "Q190026: XFOR: SMTP Protocol Log Only Shows Connection Established Else"
+permalink: kb/190/Q190026/
+---
+
+## Q190026: XFOR: SMTP Protocol Log Only Shows Connection Established Else
+
+	Article: Q190026
+	Product(s): Microsoft Exchange
+	Version(s): 4.0,5.0,5.5
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 31-JUL-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about modifying the registry. Before you 
+	modify the registry, make sure to back it up and make sure that you understand how to restore 
+	the registry if a problem occurs. For information about how to back up, restore, and edit the 
+	registry, click the following article number to view the article in the Microsoft Knowledge Base:
+	
+	  Q256986 Description of the Microsoft Windows Registry
+	
+	SUMMARY
+	=======
+	
+	Some SMTP hosts do a reverse Domain Name Service (DNS) lookup for security
+	reasons when an SMTP connection is established. If this reverse lookup fails to
+	resolve properly, they will possibly drop the connection. When this happens, the
+	SMTP protocol log shows that a connection was established to the host, and then
+	nothing else is logged for that connection. In addition, the mail may remain in
+	the Internet Mail Service (Internet Mail Connector in Exchange Server 4.0) queue
+	with no status.
+	
+	MORE INFORMATION
+	================
+	
+	Steps to Test if the Reverse NS-Lookup is Set Up Properly
+	---------------------------------------------------------
+	
+	1. Run an Nslookup on the sending domain name as found on the Site Addressing
+	  tab in the Exchange Server Administrator program. We will use
+	  mycompany.microsoft.com in the following example.
+	
+	  Nslookup returns:
+	
+	     mycompany.microsoft. com preference = 10, mail exchanger =
+	           mail.mycompany.microsoft.com
+	     mycompany.microsoft.com nameserver = DNS.mycompany.microsoft.com
+	     mail.mycompany.microsoft.com internet address = 172.16.0.200
+	     DNS.mycompany.microsoft.com internet address = 172.16.0.200
+	 
+	
+	2. Look at the mail exchange record and find the mail exchanger host
+	  (mail.mycompany.microsoft.com).
+	
+	3. Look for the Internet address for this host (172.16.0.200).
+	
+	4. Do a reverse DNS lookup, which is the IP address typed in reverse order with
+	  in-addr.arpa at the end. (For our example, you type in
+	  200.0.16.172.in-addr.arpa. Our example returns:
+	
+	     200.0.16.172.in-addr.arpa name = mail.mycompany.microsoft.com
+	 
+	
+	5. If it does not return the correct information, then the information returned
+	  will need to be corrected on the DNS server.
+	
+	
+	It is possible to configure the Exchange Server computer to not do a reverse
+	lookup. Although Exchange Server will not stop receiving inbound messages if it
+	cannot properly resolve a reverse lookup, disabling reverse lookup can possibly
+	speed up performance.
+	
+	WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+	that may require you to reinstall your operating system. Microsoft cannot
+	guarantee that you can solve problems that result from using Registry Editor
+	incorrectly. Use Registry Editor at your own risk.
+	
+	You do this by setting the following registry value to 1.
+	
+	1. Start Registry Editor (Regedt32.exe).
+	
+	2. Locate the DisableReverseResolve value under the following registry key:
+	
+	  HKEY_LOCAL_MACHINE\System|CurrentControlSet\Services\MSExchangeIMC
+	  \Parameters\ 
+	
+	  NOTE: If you do not find the DisableReverseResolve value, you must add it.
+	
+	3. On the Edit menu, click DWORD, type 1, and then click OK.
+	
+	4. Quit Registry Editor.
+	
+	When reverse resolution is disabled, the Internet Mail Service will no longer
+	resolve the host name in the "Received From" portion of the SMTP message header.
+	If the address is in Internet Protocol (IP) form, the address will remain as
+	such.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+	Version           : :4.0,5.0,5.5
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

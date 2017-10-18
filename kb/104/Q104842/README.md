@@ -1,0 +1,426 @@
+---
+layout: page
+title: "Q104842: Changes to Windows NT Driver Library: Network Adapters"
+permalink: kb/104/Q104842/
+---
+
+## Q104842: Changes to Windows NT Driver Library: Network Adapters
+
+	Article: Q104842
+	Product(s): Microsoft Windows NT
+	Version(s): 3.5
+	Operating System(s): 
+	Keyword(s): kb3rdparty kbhw kbHardware
+	Last Modified: 08-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Workstation version 3.5 
+	- Microsoft Windows NT Server version 3.5 
+	-------------------------------------------------------------------------------
+	
+	- THESE DRIVERS ARE TESTED AND CERTIFIED WITH WINDOWS NT VERSION 3.5 ONLY -
+	
+	SUMMARY
+	=======
+	
+	Below is a summary of the changes to the network card adapter drivers in the
+	Microsoft Windows NT Driver Library (WNTDL). The WNTDL offers support for
+	several printers, displays, and network adapter cards not provided with Windows
+	NT version 3.5.
+	
+	To see WNTDL.TXT, which contains a complete listing of the WNTDL's contents and
+	instructions for obtaining the WNTDL, query on "Q100209" (without the quotation
+	marks) in the Microsoft Knowledge Base.
+	
+	MORE INFORMATION
+	================
+	
+	Net: 3Com NDIS 3.1 Etherlink/MC 32 (3C527.EXE) S14299
+	-----------------------------------------------------
+	
+	09/27/93 - 3C527.EXE has been added to the WNTDL. This NDIS 3.0 network adapter
+	driver (version 1.00F)is for use with 3Com 3C527 32-bit bus mastering Micro
+	Channel Ethernet adapter. This file also contains a license agreement. See
+	WNTDL.TXT for other specific network cards supported by this driver.
+	
+	Net: 3Com 3C77x FDDI EISA 1.16 (3C770.EXE) S14300
+	-------------------------------------------------
+	
+	09/23/94 - 3C770.EXE has been updated on the WNTDL. This MAC driver supports the
+	NDIS 3.0 3Com FDDILink adapters.
+	
+	09/27/93 - 3C770.EXE has been added to the WNTDL. This NDIS 3.0 network adapter
+	driver (version 1.00A) is for use with the 3Com 3C770 EISA FDDI adapter. This
+	file also contains a license agreement. See WNTDL.TXT for other specific network
+	cards supported by this driver.
+	
+	Net: Allied Telesyn AT1700 Ethernet v3.10 (AT1700NT.EXE) S15156
+	---------------------------------------------------------------
+	
+	01/31/95 - AT1700NT has been added to the WNTDL. This driver supports the NDIS
+	3.0 Allied Telesyn AT1700 Ethernet Adapter.
+	
+	Net: AMD PCnet Ethernet Family 1.99 (PCNET.EXE) S14901
+	------------------------------------------------------
+	
+	09/23/94 - PCNET.EXE has been added to the WNTDL. This MAC driver supports the
+	NDIS 3.0 AMD PCnet Family adapters.
+	
+	Net: Andrew IIA TR ISA 1.02 (ANDTOK.EXE) S14902
+	-----------------------------------------------
+	
+	09/23/94 - ANDTOK.EXE has been added to the WNTDL. This MAC driver supports the
+	NDIS 3.0 Andrew ISA IIA adapter.
+	
+	Net: Cabletron CTE21 Ethernet ISA 1.00.06 (CTE21.EXE) S14903
+	------------------------------------------------------------
+	
+	09/23/94 - CTE21.EXE has been added to the WNTDL. This MINIPORT driver supports
+	the NDIS 3.0 Cabletron E21xx Ethernet adapters.
+	
+	Net: Cabletron F30XX FDDI MCA 1.00.06 (CTF30.EXE) S14622
+	--------------------------------------------------------
+	
+	09/23/94 - CTF30.EXE has been updated on the WNTDL. This MINIPORT driver supports
+	the NDIS 3.0 Cabletron F30xx FDDI adapters.
+	
+	03/11/94 - CTF30.EXE has been added to the WNTDL. This NDIS 3.0 network adapter
+	driver is for use with the Cabletron F30XX MCA FDDI DNI cards.
+	
+	Net: Cabletron F70XX FDDI EISA 1.00.06 (CTF70.EXE) S14624
+	---------------------------------------------------------
+	
+	09/23/94 - CTF70.EXE has been updated on the WNTDL. This MINIPORT driver supports
+	the NDIS 3.0 Cabletron F70xx FDDI adapters.
+	
+	03/11/94 - CFT70.EXE has been added to the WNTDL. This NDIS 3.0 network adapter
+	driver is for use with the Cabletron F70XX EISA FDDI DNI cards.
+	
+	Net: Cabletron T20XX TR ISA 1.00.03 (CTT20.EXE) S14628
+	------------------------------------------------------
+	
+	09/23/94 - CTT20.EXE has been updated on the WNTDL. This MINIPORT driver supports
+	the NDIS 3.0 Cabletron T20xx Token Ring adapters.
+	
+	03/11/94 - CTT20.EXE has been added to the WNTDL. This NDIS 3.0 network adapter
+	driver is for use with the Cabletron T20XX ISA Token Ring DNI cards.
+	
+	Net: Cabletron T30XX Token Ring DNI Card (CTT30.EXE) S14623
+	-----------------------------------------------------------
+	
+	03/11/94 - CTT30.EXE has been added to the WNTDL. This NDIS 3.0 network adapter
+	driver is for use with the Cabletron T30XX MCA Token Ring DNI cards.
+	
+	Net: Cisco C320 FDDI/CDDI EISA 1.4 (C320NT.EXE) S14354
+	------------------------------------------------------
+	
+	03/11/94 - C320NT.EXE has been updated on the WNTDL. This NDIS 3.0 network
+	adapter driver is for use with the Cisco C321M-PC and C321T-PC adapters. These
+	are the FDDI versions of the C320 series. This update adds the C321T-PC Turbo
+	Card driver.
+	
+	10/28/93 - C320NT.EXE has been added to the WNTDL. This NDIS 3.0 network adapter
+	driver is for use with the Cisco C320 FDDI/CDDI adapter.
+	
+	01/31/95 - This NDIS 3.0 network adapter driver is for use with the Cisco C320
+	FDDI/CDDI adapter and the C321T-PC Turbo Card driver. A license agreement is
+	included in the file.
+	
+	Net: Cisco FDDI/CDDI EISA for ALPHA (C320TNTA.EXE) S15187
+	---------------------------------------------------------
+	
+	02/10/95 - C320TNTA has been added to the WNTDL. This driver supports the NDIS
+	3.0 CISCO FDDI/CDDI EISA adapters. Note: This is an ALPHA driver.
+	
+	Net: Compaq NetFlex Adapters (NFLEX.EXE) S14620
+	-----------------------------------------------
+	
+	03/11/94 - NFLEX.EXE has been added to the WNTDL. This NDIS 3.0 network adapter
+	driver is for use with the Compaq 32-bit NetFlex, 32-bit NetFlex-2, DualPort
+	Ethernet Controller, and the 32-bit DualSpeed Token Ring Controller.
+	
+	Net: DCA IRMAtrac TR ISA/MCA 4.0c (IRMANT.EXE) S14489
+	-----------------------------------------------------
+	
+	09/23/94 - IRMANT.EXE has been added to the WNTDL. This MAC driver supports the
+	NDIS 3.0 DCA IRMAtrac 16/4 Convertible Token Ring adapter.
+	
+	Net: DEC FDDI/CDDI EISA 1.54 for ALPHA (DEFEAA.EXE) S15186
+	----------------------------------------------------------
+	
+	02/10/95 - DEFEAA has been added to the WNTDL. This driver supports the NDIS 3.0
+	DEC FDDI/CDDI EISA adapters. Note: This is an ALPHA driver.
+	
+	Net: DEC DE435 Ethernet PCI 6.0 (DE435.EXE) S14904
+	--------------------------------------------------
+	
+	09/23/94 - DE435.EXE has been added to the WNTDL. This driver supports the NDIS
+	3.0 DEC DE435 PCI Ethernet adapter.
+	
+	Net: DEC FDDI controller EISA 1.54 (DE300X.EXE) S14953
+	------------------------------------------------------
+	
+	01/31/95 - DE300X.EXE has been updated on the WNTDL. This MAC driver supports the
+	NDIS 3.0 DEC FDDI controller EISA Adapter and fixes problems with multiprocessor
+	systems.
+	
+	Net: DEC DE300 FDDI EISA for ALPHA v1.50 (DE300A.EXE) S14952
+	------------------------------------------------------------
+	
+	10/18/94 - DE300A.EXE has been added to the WNTDL. This MAC driver supports the
+	NDIS 3.0 Digital Equip. DE300 FDDI Adapter. Note, this is an Alpha driver.
+	
+	Net: HP 100VG Ethernet EISA 3.10 (HPVGE.EXE) S14906
+	---------------------------------------------------
+	
+	09/23/94 - HPVGE.EXE has been added to the WNTDL. This MAC driver supports the
+	NDIS 3.0 HP 10/100VG Ethernet adapter.
+	
+	Net: HP 100VG Ethernet ISA 3.10 (HPVGI.EXE) S14905
+	--------------------------------------------------
+	
+	09/23/94 - HPVGI.EXE has been added to the WNTDL. This driver supports the NDIS
+	3.0 HP 10/100VG Ethernet adapter.
+	
+	Net: HP Ethertwist Ethernet ISA 3.11 (HPISA.EXE) S14358
+	-------------------------------------------------------
+	
+	09/23/94 - HPISA.EXE has been updated on the WNTDL. This MAC driver supports the
+	NDIS 3.0 HP Ethertwist ISA Ethernet adapters.
+	
+	10/28/93 - HPISA.EXE has been added to the WNTDL. This NDIS 3.0 network adapter
+	is for use with the Hewlett-Packard ISA Ethernet adapters. See WNTDL.TXT for
+	specific network cards supported by this driver.
+	
+	Net: HP Ethertwist Ethernet MCA 3.10 (HPMCA.EXE) S14357
+	-------------------------------------------------------
+	
+	09/23/94 - HPMCA.EXE has been updated on the WNTDL. This MAC driver supports the
+	NDIS 3.0 HP Ethertwist MCA Ethernet adapters.
+	
+	10/28/93 - HPMCA.EXE has been added to the WNTDL. This NDIS 3.0 network adapter
+	driver for use with the Hewlett-Packard MC LAN Adapter /16 TP Ethernet adapter.
+	
+	Net: IBM LANStreamer TR MCA 1.30 (IB.EXE) S14907
+	------------------------------------------------
+	
+	09/23/94 - IB.EXE has been added to the WNTDL. This MAC driver supports the NDIS
+	3.0 IBM LANStreamer Family adapters.
+	
+	Net: Intel 16-Bit Token Ring Server Adapter (TKXP16.EXE) S14307
+	---------------------------------------------------------------
+	
+	09/27/93 - TKXP16.EXE has been added to the WNTDL. This NDIS 3.0 network adapter
+	driver is for use with Intel 16-bit ISA, EISA, and MCA 16/4 Token Ring adapters.
+	This file also contains a license agreement. See WNTDL.TXT for other specific
+	network cards supported by this driver.
+	
+	Net: Intel 32-Bit Token Ring Server Adapter (TKXP32.EXE) S14306
+	---------------------------------------------------------------
+	
+	09/27/93 - TKXP32.EXE has been added to the WNTDL. This NDIS 3.0 network adapter
+	driver is for use with the Intel 32-bit 16/4 EISA Token Ring adapter. This file
+	also contains a license agreement. See WNTDL.TXT for other specific network
+	cards supported by this driver.
+	
+	Net: Intel EEPRO Ethernet ISA 1.13 (EPRONT.EXE) S14908
+	------------------------------------------------------
+	
+	09/23/94 - EPRONT.EXE has been added to the WNTDL. This MAC driver supports the
+	NDIS 3.0 Intel EtherExpress PRO Ethernet adapters.
+	
+	Net: Intel EE16 Ethernet ISA 3.50 (EE16NT.EXE) S14471
+	-----------------------------------------------------
+	
+	10/10/94 - EE16NT.EXE has been updated on the WNTDL. This NDIS 3.0 MS-DOS driver
+	supports the Intel EtherExpress 16 Ethernet Adapters. This update corrects
+	problems in the OEMSETUP.INF file.
+	
+	12/28/93 - This file is new to the WNTDL and supports the Intel EtherExpress 16
+	adapters.
+	
+	Net: Intel EtherExpress Flash32 Adapter (FL32NT.EXE) S14621
+	-----------------------------------------------------------
+	
+	03/11/94 - FL32NT.EXE has been added to the WNTDL. This NDIS 3.0 network adapter
+	driver is for use with the Intel EtherExpress Flash32 EISA Ethernet 32-bit LAN
+	adapter.
+	
+	10/18/94 - FL32NT.EXE has been updated on the WNTDL. This MAC driver supports the
+	NDIS 3.0 Intel EtherExpress Flash32 Adapter.
+	
+	Net: Intel PCLA82xx Ethernet Adapter NDIS 3.0 (82595.EXE) S14355
+	----------------------------------------------------------------
+	
+	10/28/93 - 82595.EXE has been added to the WNTDL. This NDIS 3.0 network adapter
+	driver is for use with the Intel PCLA82xx Ethernet adapter.
+	
+	Net: Madge Ringnode TR Family 1.02.02 (MADGNT.EXE) S14297
+	---------------------------------------------------------
+	
+	09/23/94 - MADGNT.EXE has been updated on the WNTDL. This MINIPORT driver
+	supports the NDIS 3.0 Madge SMART Ringnode 16/4 adapters.
+	
+	12/28/93 - This file contains an updated driver that corrects warm-boot beckoning
+	problems, removes extraneous two-second IndicateStatus calls, and adds locally
+	administered addresses.
+	
+	09/27/93 - MADGNT.EXE has been added to the WNTDL. This NDIS 3.0 network adapter
+	is for use with Intel Madge SMART ISA, EISA, and MCA Token Ring 16/4 adapters.
+	This file also includes a license agreement. See WNTDL.TXT for other specific
+	network cards supported by this driver.
+	
+	Net: NCR NDIS 3.0 WaveLAN AT & MCA Adapters (WAVLAN.EXE) S14356
+	---------------------------------------------------------------
+	
+	10/28/93 - WAVLAN.EXE version 1.0a has been added to the WNTDL. This NDIS 3.0
+	network adapter driver is for use with the NCR WaveLAN AT and MCA adapters.
+	
+	Net: NCR StartLAN 16/4 TR 3.1.1 (NCRTOK.EXE) S15155
+	---------------------------------------------------
+	
+	01/31/95 - NCRTOK.EXE has been added to the WNTDL. This driver supports the NDIS
+	3.0 NCR StartLAN 16/4 Token Ring Adapter.
+	
+	Net: Olicom 16/4 TR Family 3.01 (OCTK16.EXE) S14304
+	---------------------------------------------------
+	
+	09/23/94 - OCTK16.EXE has been updated on the WNTDL. This MAC driver supports the
+	NDIS 3.0 Olicom 16/4 Token Ring 16-bit adapters.
+	
+	09/27/93 - OCTK16.EXE has been added to the WNTDL. This NDIS 3.0 network adapter
+	driver is for use with Olicom 16-bit ISA, EISA, and MCA 16/4 Token Ring
+	adapters. This file also contains a license agreement. See WNTDL.TXT for other
+	specific network cards supported by this driver.
+	
+	01/31/95 - OCTK16 has been updated on the WNTDL. This MINIPORT driver supports
+	the NDIS 3.0 Olicom 16/4 16 bit Token Ring Adapters and replaces the earlier MAC
+	version 2.0 of this driver.
+	
+	Net: Olicom Server TR EISA 2.0 (OCTK32.EXE) S14305
+	--------------------------------------------------
+	
+	09/23/94 - OCTK32.EXE has been updated on the WNTDL. This MAC driver supports the
+	NDIS 3.0 Olicom 16/4 Token Ring Server adapter.
+	
+	09/27/93 - OCTK32.EXE has been added to the WNTDL. This NDIS 3.0 network adapter
+	driver is for use with the Olicom 32-bit 16/4 EISA Token Ring adapter. This file
+	also contains a license agreement. See WNTDL.TXT for other specific network
+	cards supported by this driver.
+	
+	Net: Proteon p189x Token Ring Adapter (P189X.EXE) S14301
+	--------------------------------------------------------
+	
+	09/27/93 - P189X.EXE has been added to the WNTDL. This NDIS 3.0 network adapter
+	driver (version 3.03) is for use with Proteon proNET 4/16 16-bit Micro Channel
+	Token Ring adapter. This file also contains a license agreement. See WNTDL.TXT
+	for other specific network cards supported by this driver.
+	
+	Net: Proteon p139xx Token Ring Adapter (P139XX.EXE) S14302
+	----------------------------------------------------------
+	
+	09/27/93 - P139XX.EXE has been added to the WNTDL. This NDIS 3.0 network adapter
+	driver (version 3.03) is for use with the Proteon proNET 4/16 16-bit ISA Token
+	Ring adapter. This file also contains a license agreement. See WNTDL.TXT for
+	other specific network cards supported by this driver.
+	
+	Net: Proteon p199x Token Ring Adapter (P199X.EXE) S14303
+	--------------------------------------------------------
+	
+	09/27/93 - P199X.EXE has been added to the WNTDL. This NDIS 3.0 network adapter
+	driver (version 3.03) is for use with Proteon proNET 4/16 32-bit EISA Token Ring
+	adapters. This file also contains a license agreement. See WNTDL.TXT for other
+	specific network cards supported by this driver.
+	
+	Net: SMC SMCPWR Ethernet PCI 1.1 (SMCPCI.EXE) S14909
+	----------------------------------------------------
+	
+	09/23/94 - SCMPCI.EXE has been added to the WNTDL. This MAC driver supports the
+	NDIS 3.0 SMC 8432 PCI Ethernet adapter.
+	
+	01/31/95 - SMCPCI has been updated on the WNTDL. This MAC driver supports the
+	NDIS 3.0 SMC SMCPWR Ethernet PCI adapters. Note: This driver replaces the
+	SMC8432 v6.0 driver.
+	
+	Net: SMC EtherCard Ethernet Family 1.09 (SMC16.EXE) S14625
+	----------------------------------------------------------
+	
+	09/23/94 - SMC16.EXE has been updated on the WNTDL. This MAC driver supports the
+	NDIS 3.0 SMC EtherCard Ethernet 8013 ISA, MCA, 8216 Ultra, and 8416 PnP
+	adapters.
+	
+	03/11/94 - SMC16.EXE has been added to the WNTDL. This NDIS 3.0 network adapter
+	driver is for use with all SMC 16-bit 8013 and 8216 series adapters.
+	
+	Net: SMC Ultra32 Ethernet EISA 1.05 (SMC32.EXE) S14626
+	------------------------------------------------------
+	
+	09/23/94 - SMC32.EXE has been updated on the WNTDL. This MAC driver supports the
+	NDIS 3.0 SMC EtherCard 8232C EISA Elite32 Ultra.
+	
+	03/11/94 - SMC32.EXE has been added to the WNTDL. This NDIS 3.0 network adapter
+	driver is for use with the SMC 82C EISA Ethernet adapter.
+	
+	01/31/95 - SMC32 has been updated on the WNTDL. This MAC driver supports the NDIS
+	3.0 SMC EtherCard 8232c EISA Elite32 Ultra and fixes previous problems with
+	multiprocessor systems.
+	
+	Net: SysKonnect FDDI EISA 2.10 (SKFENT.EXE) S15154
+	--------------------------------------------------
+	
+	01/31/95 - SKFENT.EXE has been added to the WNTDL. This driver supports the NDIS
+	3.0 SysKonnect FDDI EISA Adapter.
+	
+	Net: SysKonnect FDDI ISA 2.10 (SKFINT.EXE) S15153
+	-------------------------------------------------
+	
+	01/31/95 - SKFINT.EXE has been added to the WNTDL. This driver supports the NDIS
+	3.0 SysKonnect FDDI ISA Adapter.
+	
+	Net: SysKonnect FDDI MCA 2.10 (SKFMNT.EXE) S15152
+	-------------------------------------------------
+	
+	01/31/95 - SKFMNT.EXE has been added to the WNTDL. This driver supports the NDIS
+	3.0 SysKonnect FDDI MCA Adapter.
+	
+	Net: Thomas-Conrad TC404x TR Family 1.0 (TCTOK.EXE) S14627
+	----------------------------------------------------------
+	
+	09/23/94 - TCTOK.EXE has been updated on the WNTDL. This MAC driver supports the
+	NDIS 3.0 Thomas-Conrad TC4045 ISA and TC4046 MCA Token Ring adapters.
+	
+	03/11/94 - TCTOK.EXE has been added to the WNTDL. This NDIS 3.0 network adapter
+	driver is for use with the Thomas Conrad TC4045 ISA Token Ring adapter and the
+	Thomas Conrad TC4046 MCA Token Ring adapter.
+	
+	Net: Xircom CreditCard Ethernet PCMCIA (XCE10.EXE) S14912
+	---------------------------------------------------------
+	
+	09/23/94 - XCE10.EXE has been added to the WNTDL. This MAC driver supports the
+	NDIS 3.0 Xircom Corporate Series CreditCard Ethernet adapters on Intel PCIC and
+	compatible PCMCIA implementations (non-databook). Older CreditCard Ethernet
+	adapter series are not supported.
+	
+	Net: Xircom PE2 ETHERNET PARPORT 3.10 (XPE2.EXE) S14910
+	-------------------------------------------------------
+	
+	09/23/94 - XPE2.EXE has been added to the WNTDL. This MAC driver supports the
+	NDIS 3.0 Xircom Pocket Ethernet II adapter.
+	
+	Net: Xircom PE3 ETHERNET PARPORT 3.10 (XPE3.EXE) S14911
+	-------------------------------------------------------
+	
+	09/23/94 - XPE3.EXE has been added to the WNTDL. This MAC driver supports the
+	NDIS 3.0 Xircom Pocket Ethernet III adapter.
+	
+	Additional query words: prodnt
+	
+	======================================================================
+	Keywords          : kb3rdparty kbhw kbHardware 
+	Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+	Version           : 3.5
+	
+	=============================================================================
+	

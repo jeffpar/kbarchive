@@ -1,0 +1,78 @@
+---
+layout: page
+title: "Q136509: External Modem Cannot Receive Data"
+permalink: kb/136/Q136509/
+---
+
+## Q136509: External Modem Cannot Receive Data
+
+	Article: Q136509
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): 95
+	Operating System(s): 
+	Keyword(s): win95
+	Last Modified: 17-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows 95 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	After you install Windows 95, it may appear that your external modem can no
+	longer receive data. You may be able to connect and send data, but the modem
+	does not receive any data.
+	
+	CAUSE
+	=====
+	
+	This problem can occur if the external modem is connected to your computer with
+	a serial cable, serial switch box, or other hardware device that is defective or
+	not configured correctly for hardware flow control (RTS/CTS).
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, use either of the following methods:
+	
+	- Replace the device used to connect the external modem to the computer if the
+	  device is defective, or configure it for hardware flow control.
+	
+	- You may be able to work around the problem by configuring the modem for
+	  software flow control. To do so, follow these steps:
+	
+	   - In Control Panel, double-click the Modems icon.
+	
+	   - Click the modem you are using, and then click Properties.
+	
+	   - On the Connection tab, click the Advanced button.
+	
+	   - Make sure that the Use Flow Control check box is selected, and then click
+	     the Software (XON/XOFF) option button.
+	
+	   - Click OK until you return to Control Panel.
+	
+	  NOTE: This workaround affects only 32-bit communications programs. If you are
+	  using a 16-bit program, you must configure the modem to use software flow
+	  control in the program itself. For information on how to do so, please
+	  consult the program's documentation.
+	
+	MORE INFORMATION
+	================
+	
+	Windows and Windows for Workgroups version 3.x use software flow control by
+	default. Windows 95 uses hardware flow control by default, which typically
+	results in better modem performance. However, if your external modem is
+	connected to your computer with a defective or incorrectly configured serial
+	device, you may be unable to use hardware flow control.
+	
+	======================================================================
+	Keywords          : win95 
+	Technology        : kbWin95search kbZNotKeyword3
+	Version           : 95
+	
+	=============================================================================
+	

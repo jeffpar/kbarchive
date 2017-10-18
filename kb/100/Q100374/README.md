@@ -1,0 +1,139 @@
+---
+layout: page
+title: "Q100374: Drive Is No Longer Bootable After Restoring Root Directory"
+permalink: kb/100/Q100374/
+---
+
+## Q100374: Drive Is No Longer Bootable After Restoring Root Directory
+
+	Article: Q100374
+	Product(s): Microsoft Disk Operating System
+	Version(s): MS-DOS:6.0,6.2,6.22; WINDOWS:95
+	Operating System(s): 
+	Keyword(s): msdos win95
+	Last Modified: 17-DEC-2000
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft MS-DOS operating system versions 6.0, 6.2, 6.22 
+	- Microsoft Windows 95 
+	-------------------------------------------------------------------------------
+	
+	NOTE: This information applies to both Microsoft DoubleSpace and Microsoft
+	DriveSpace. For MS-DOS 6.22 and Windows 95, use DRVSPACE in place of
+	DBLSPACE in all commands and filenames.
+	
+	SYMPTOMS
+	========
+	
+	When you back up the root folder of drive C (or your DoubleSpace host drive, if
+	drive C is compressed) and then later restore the files, you may no longer be
+	able to boot your computer from drive C. When you use Microsoft Backup or
+	Microsoft Backup for Windows in MS-DOS 6.x, this problem occurs if you clear the
+	following options (which are selected by default) in the Special Selections
+	dialog box when you restore the files:
+	
+	- Exclude Read Only Files
+	
+	- Exclude System Files
+	
+	- Exclude Hidden Files
+	
+	RESOLUTION
+	==========
+	
+	Using MS-DOS 6.x or Windows 95 Without Dual Boot
+	------------------------------------------------
+	
+	To work around this problem, start your computer with the MS-DOS 6.x Upgrade
+	Setup Disk 1 or Windows 95 Startup disk (Emergency Boot Disk) in drive A, and
+	use the SYS command to make drive C bootable. For example, type the following
+	command at the MS-DOS command prompt:
+	
+	  " a:\sys a: c: " (without the quotation marks)
+	
+	NOTE: If drive C is compressed and is currently mounted, you need to use the SYS
+	command to make the host drive for drive C bootable.
+	
+	Using Windows 95 with Dual Boot
+	-------------------------------
+	
+	To work around this problem when you are using Windows 95 and dual-booting to
+	MS-DOS 6.x, follow these steps:
+	
+	1. Start your computer with the MS-DOS 6.x Upgrade Disk 1 in drive A and create
+	  a backup copy of the Windows 95 Msdos.sys file. To do so, type the following
+	  commands:
+	
+	  " a:\attrib c:\msdos.sys -s -h -r
+	  copy c:\msdos.sys c:\msdos.xxx " (without the quotation marks)
+	
+	2. Use the SYS command to make drive C bootable. For example, type the following
+	  command at an MS-DOS command prompt:
+	
+	  " a:\sys a: c: " (without the quotation marks)
+	
+	  NOTE: If drive C is compressed and is currently mounted, you need to use the
+	  SYS command to make the host drive for drive C bootable.
+	
+	3. Remove the system, hidden, and read-only attributes from the Io.sys,
+	  Msdos.sys, Io.dos, and Msdos.dos files by typing the following commands:
+	
+	  " a:\attrib c:\io.sys -s -h -r
+	  a:\attrib c:\msdos.sys -s -h -r
+	  a:\attrib c:\io.dos -s -h -r
+	  a:\attrib c:\msdos.dos -s -h -r " (without the quotation marks)
+	
+	4. Delete the Io.dos and Msdos.dos files by typing the following commands:
+	
+	  " del c:\io.dos
+	  del c:\msdos.dos " (without the quotation marks)
+	
+	5. Create copies of the Io.sys and Msdos.sys files with the extension .dos by
+	  typing the following commands:
+	
+	  " copy c:\io.sys c:\io.dos
+	  copy c:\msdos.sys c:\msdos.dos " (without the quotation marks)
+	
+	6. Start your computer with the Windows 95 Startup disk (Emergency Boot Disk)
+	  and use the SYS command to copy the Windows 95 system files to drive C. For
+	  example, type the following command at an MS-DOS command prompt:
+	
+	  " a:\sys a: c: " (without the quotation marks)
+	
+	  If drive C is compressed and is currently mounted, you need to use the SYS
+	  command to copy the Windows 95 system files to the host drive for drive C.
+	
+	7. Restore the backup copy of the Windows 95 Msdos.sys file created in step 1 by
+	  typing the following commands:
+	
+	  " a:\attrib c:\msdos.sys -s -h -r
+	  copy c:\msdos.xxx c:\msdos.sys " (without the quotation marks)
+	
+	MORE INFORMATION
+	================
+	
+	When you are using MS-DOS 6.x, Microsoft Backup always backs up read-only,
+	hidden, and system files by default, but does not restore them unless you
+	specifically select the options to do so.
+	
+	Although Backup restores the MS-DOS 6.x or Windows 95 system files (Io.sys,
+	Msdos.sys, Dblspace.bin, and Command.com) to the root folder of your hard disk,
+	the disk is not bootable. For an MS-DOS or Windows 95 disk to be bootable,
+	Io.sys must occupy the first entry in the root folder. Backup performs a "safe"
+	restore, which means that it copies a file being restored to a folder with a
+	temporary filename, deletes the old file, and renames it to its correct name.
+	Therefore, when Backup restores Io.sys, it no longer occupies the first two
+	entries in the root folder.
+	
+	Additional query words: 6.00 6.20 6.22 repartition fdisk format msbackup.exe mwbackup.exe
+	
+	======================================================================
+	Keywords          : msdos win95 
+	Technology        : kbWin95search kbZNotKeyword3 kbMSDOSSearch kbMSDOS622 kbMSDOS620 kbMSDOS600
+	Version           : MS-DOS:6.0,6.2,6.22; WINDOWS:95
+	Issue type        : kbprb
+	
+	=============================================================================
+	

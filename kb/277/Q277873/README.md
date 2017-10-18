@@ -1,0 +1,204 @@
+---
+layout: page
+title: "Q277873: Patch for &quot;Web Server File Request Parsing&quot; Vulnerability"
+permalink: kb/277/Q277873/
+---
+
+## Q277873: Patch for &quot;Web Server File Request Parsing&quot; Vulnerability
+
+	Article: Q277873
+	Product(s): Internet Information Server
+	Version(s): 4.0,5.0
+	Operating System(s): 
+	Keyword(s): kbSecurity kbWinNT400PreSP7Fix kbWin2000PreSP2Fix kbWin2000SP2Fix kbgraphxlinkcritical
+	Last Modified: 08-MAY-2002
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Internet Information Services version 5.0 
+	- Microsoft Internet Information Server version 4.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	Microsoft has released a patch that eliminates a serious security vulnerability
+	in Microsoft Internet Information Services (IIS) 5.0 or Internet Information
+	Server 4.0. When IIS receives a valid request for an executable file, it passes
+	the name of the requested file to the underlying operating system for
+	processing. However, because of an implementation flaw, it is possible to create
+	a specially malformed file request that contains both a file name and one or
+	more operating system commands. When it receives such a request, IIS passes the
+	entire string to the operating system, which first processes the file, and then
+	executes the commands. The file must reside in a folder to which the user has
+	execute permissions, but it does not necessarily need to be an executable file.
+	
+	The ability to execute operating system commands on a Web server can enable a
+	malicious user to take virtually any action that an interactively logged on user
+	can take. Although this does not give the malicious user administrative control
+	over the server, it can nevertheless allow him to cause widespread damage. He
+	could, for instance, add, delete or change files on the server, run code that
+	was already on the server, or upload and run the code of his choice.
+	
+	For more information on this vulnerability, see the following Microsoft Web
+	site:
+	
+	  http://www.microsoft.com/technet/security/bulletin/ms00-086.asp
+	
+	RESOLUTION
+	==========
+	
+	Windows 2000
+	------------
+	
+	To resolve this problem, obtain the latest service pack for Windows 2000. For
+	additional information, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q260910 How to Obtain the Latest Windows 2000 Service Pack
+	
+	The following files are available for download from the Microsoft Download
+	Center:
+	
+	  US English:
+	
+	  DownloadDownload Q277873_W2K_SP2_x86_en.exe now
+	  (http://www.microsoft.com/downloads/release.asp?ReleaseID=25547)
+	
+	  Chinese (Simplified):
+	
+	  DownloadDownload Q277873_W2K_SP2_x86_cn.exe now
+	  (http://www.microsoft.com/downloads/release.asp?ReleaseID=25580)
+	
+	  Chinese (Traditional):
+	
+	  DownloadDownload Q277873_W2K_SP2_x86_tw.exe now
+	  (http://www.microsoft.com/downloads/release.asp?ReleaseID=25581)
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. After it is posted, the file is housed on
+	secure servers that prevent any unauthorized changes to the file.
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	  Date        Time    Version        Size     File name
+	  ------------------------------------------------------
+	  11/27/2000  10:12p  5.0.2195.2785  122,640  Iisrtl.dll
+	  11/27/2000  10:12p  5.0.2195.2784  357,136  W3svc.dll
+	
+	
+	Windows NT 4.0
+	--------------
+	
+	A supported fix is now available from Microsoft, but it is only intended to
+	correct the problem described in this article and should be applied only to
+	systems experiencing this specific problem.
+	
+	To resolve this problem, contact Microsoft Product Support Services to obtain the
+	fix. For a complete list of Microsoft Product Support Services phone numbers and
+	information on support costs, please go to the following address on the World
+	Wide Web:
+	
+	  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+	
+	NOTE: In special cases, charges that are normally incurred for support calls may
+	be canceled, if a Microsoft Support Professional determines that a specific
+	update will resolve your problem. Normal support costs will apply to additional
+	support questions and issues that do not qualify for the specific update in
+	question.
+	
+	The following files are available for download from the Microsoft Download
+	Center:
+	
+	NOTE: It is important that you have installed the latest service pack before you
+	apply this patch.
+	
+	  US English:
+	
+	  DownloadDownload Arbexei.exe now
+	  (http://www.microsoft.com/downloads/release.asp?ReleaseID=25964)
+	
+	  Chinese (Simplified):
+	
+	  DownloadDownload Arbexei.exe now
+	  (http://www.microsoft.com/downloads/release.asp?ReleaseID=25966)
+	
+	  Chinese (Traditional):
+	
+	  DownloadDownload Arbexei.exe now
+	  (http://www.microsoft.com/downloads/release.asp?ReleaseID=25965)
+	
+	For additional information about how to download Microsoft Support files, click
+	the article number below to view the article in the Microsoft Knowledge Base:
+	
+	  Q119591 How to Obtain Microsoft Support Files from Online Services
+	
+	Microsoft used the most current virus detection software available on the date of
+	posting to scan this file for viruses. After it is posted, the file is housed on
+	secure servers that prevent any unauthorized changes to the file.
+	
+	The English version of this fix should have the following file attributes or
+	later:
+	
+	  Date        Time    Version    Size     File name
+	  ----------------------------------------------------
+	  11/08/2000  03:29p  4.2.753.1  214,544  adsiis.dll
+	  11/09/2000  05:32p  4.2.753.1  330,672  asp.dll
+	  11/08/2000  02:39p              11,396  httpext.h
+	  11/09/2000  05:38p  4.2.753.1   55,904  httpodbc.dll
+	  11/08/2000  03:29p  4.2.753.1   98,912  iischema.dll
+	  11/08/2000  02:39p              28,851  iiscnfg.h
+	  11/08/2000  03:27p  4.2.753.1  185,792  infocomm.dll
+	  11/09/2000  05:38p  4.2.753.1   38,256  ssinc.dll
+	  11/08/2000  03:28p  4.2.753.1   25,360  sspifilt.dll
+	  11/09/2000  05:37p  4.2.753.1  229,008  w3svc.dll
+	
+	NOTE: Due to file dependencies, this hotfix requires Microsoft Windows NT 4.0
+	Service Pack 5 or Service Pack 6a.
+	
+	
+	
+	Microsoft Windows NT Server version 4.0, Terminal Server Edition
+	----------------------------------------------------------------
+	
+	To resolve this problem, obtain the Windows NT Server 4.0, Terminal Server
+	Edition, Security Rollup Package (SRP). For additional information about the
+	SRP, click the article number below to view the article in the Microsoft
+	Knowledge Base:
+	
+	  Q317636 Windows NT Server 4.0, Terminal Server Edition, Security Rollup
+	  Package
+	
+	STATUS
+	======
+	
+	Windows 2000
+	------------
+	
+	Microsoft has confirmed this to be a problem in Internet Information Services
+	5.0. This problem was first corrected in Windows 2000 Service Pack 2.
+	
+	Windows NT 4.0
+	--------------
+	
+	Microsoft has confirmed this to be a problem in Internet Information Server 4.0.
+	
+	Additional query words: security_patch
+	
+	======================================================================
+	Keywords          : kbSecurity kbWinNT400PreSP7Fix kbWin2000PreSP2Fix kbWin2000SP2Fix kbgraphxlinkcritical 
+	Technology        : kbiisSearch kbiis500 kbiis400
+	Version           : :4.0,5.0
+	Hardware          : x86
+	Issue type        : kbbug
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

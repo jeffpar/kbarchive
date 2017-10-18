@@ -1,0 +1,118 @@
+---
+layout: page
+title: "Q190727: HOWTO: Control Your Updates in ADO Through &quot;Update Criteria&quot;"
+permalink: kb/190/Q190727/
+---
+
+## Q190727: HOWTO: Control Your Updates in ADO Through &quot;Update Criteria&quot;
+
+	Article: Q190727
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 2.0,2.1 SP2,2.5,2.6,5.0,6.0
+	Operating System(s): 
+	Keyword(s): kbADO200 kbDatabase kbVBp500 kbVBp600 kbGrpDSVBDB kbGrpDSMDAC kbDSupport kbADO210sp2 kb
+	Last Modified: 23-AUG-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+	- ActiveX Data Objects (ADO), versions 2.0, 2.1 SP2, 2.5, 2.6, 2.7 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	The ADO Client Cursor Engine allows you to control how it builds the action
+	queries that update the database according to the changes you make to the
+	recordset object. This article is designed to help you understand how to control
+	how ADO performs these updates.
+	
+	MORE INFORMATION
+	================
+	
+	When you open a recordset against the Customers table in the Northwind database
+	(NWind.MDB) and use a client side cursor, ADO retrieves enough information about
+	the structure of the table in order to use an action query to update the table.
+	
+	An action query is a query that modifies a database and does not return data. For
+	example, "UPDATE Customers SET CompanyName = 'Acme' WHERE CustomerID = 17" is an
+	action query.
+	
+	ADO determines which field, or set of fields, is the primary key and uses that
+	information to make sure it can find the correct row in the database to update.
+	If you are going to perform updates with the client cursor engine, make sure you
+	have a primary key defined in your table. If you don't, you may accidentally
+	update more rows than you intended.
+	
+	When you use a client side recordset, ADO exposes a property in the recordset's
+	Properties collection called "Update Criteria." This property allows you to
+	control the information in the WHERE clause in the action query that ADO builds
+	to update the database. The default value for this property is 2 -
+	adCriteriaUpdCols. By default, ADO will use the primary key and all fields being
+	updated in the WHERE clause of the action query. For example:
+	
+	     rsCustomers.CursorLocation = adUseClient
+	     rsCustomers.Open "SELECT * FROM Customers", cnNWind, _
+	                      adOpenStatic, adLockOptimistic, adCmdText
+	     rsCustomers.Fields("CompanyName").Value = "Acme"
+	     rsCustomers.Update
+	
+	will cause ADO to execute the following action query
+	
+	     UPDATE Customers SET CompanyName = 'Acme'
+	        WHERE CustomerID = 'ALFKI' AND CompanyName = 'Alfreds Futterkiste'
+	
+	The WHERE clause contains information about the primary key and the original
+	value for the field to update. This ensures that if another user has modified
+	the value of the CompanyName field to a value other than the value that ADO
+	originally retrieved, ADO will not update that row and will raise an error
+	instead.
+	
+	To change the value of this property, use code similar to the following
+	
+	     rsCustomers.CursorLocation = adUseClient
+	     rsCustomers.Properties("Update Criteria").Value = adCriteriaAllCols
+	     rsCustomers.Open "SELECT * FROM Customers", cnNWind, _
+	                      adOpenStatic, adLockOptimistic, adCmdText
+	     rsCustomers.Fields("CompanyName").Value = "Acme"
+	     rsCustomers.Update
+	
+	This code will cause ADO to include every field in the WHERE clause. You would
+	use this value for the "Update Criteria" property if you want to make sure that
+	the update made by the current user will only succeed if no changes have been
+	made to any fields in that row in the table.
+	
+	The available constants for this property are as follows:
+	
+	  adCriteriaKey = 0
+	
+	     Uses only the primary key
+	
+	  adCriteriaAllCols = 1
+	
+	     Uses all columns in the recordset
+	
+	  adCriteriaUpdCols = 2  (Default)
+	
+	     Uses only the columns in the recordset that have been modified
+	
+	  adCriteriaTimeStamp = 3
+	
+	     Uses the timestamp column (if available) in the recordset
+	
+	NOTE: Specifying adCriteriaTimeStamp may actually use adCriteriaAllCols method to
+	execute the Update if there is not a valid TimeStamp field in the table. Also,
+	the timestamp field does not need to be in the recordset itself.
+	
+	Additional query words:
+	
+	======================================================================
+	Keywords          : kbADO200 kbDatabase kbVBp500 kbVBp600 kbGrpDSVBDB kbGrpDSMDAC kbDSupport kbADO210sp2 kbADO250 kbMDAC260 kbATM kbmdac270 kbado270 
+	Technology        : kbVBSearch kbAudDeveloper kbADOsearch kbADO200 kbADO210sp2 kbADO250 kbADO260 kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600 kbADO270
+	Version           : :2.0,2.1 SP2,2.5,2.6,5.0,6.0
+	Issue type        : kbhowto
+	
+	=============================================================================
+	

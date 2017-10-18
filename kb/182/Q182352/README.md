@@ -1,0 +1,95 @@
+---
+layout: page
+title: "Q182352: PRB: Windows Common Control Keys are Case-Sensitive"
+permalink: kb/182/Q182352/
+---
+
+## Q182352: PRB: Windows Common Control Keys are Case-Sensitive
+
+	Article: Q182352
+	Product(s): Microsoft Visual Basic for Windows
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kbGrpDSVBDB
+	Last Modified: 13-JAN-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Visual Basic Standard Edition for Windows, versions 5.0, 6.0 
+	- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+	-------------------------------------------------------------------------------
+	
+	SYMPTOMS
+	========
+	
+	The Microsoft Windows common control keys are case-sensitive and returns an
+	error if the correct case is not used. The following error will be returned when
+	the incorrect case is used:
+	
+	  Element not found
+	
+	CAUSE
+	=====
+	
+	The cause of the problem is that the case of the Key is not correct.
+	
+	RESOLUTION
+	==========
+	
+	Enter the proper case for the Key and it will work as expected.
+	
+	STATUS
+	======
+	
+	This behavior is by design.
+	
+	MORE INFORMATION
+	================
+	
+	The following steps demonstrate how the keys are case-sensitive in the Microsoft
+	Common Controls.
+	
+	Steps to Reproduce Behavior
+	---------------------------
+	
+	1. Create a new Visual Basic Project. Form1 is created by default.
+	
+	2. From Project Components menu, select Microsoft Common Controls.
+	
+	3. Add the ImageList Control to the form. Right-click the Imagelist Control, and
+	  then select Properties. On the Images tab, choose Insert a BMP file, type
+	  "First" for key value, and then choose Apply.
+	
+	4. Add a Toolbar control. Right-click on Toolbar, and then select Properties.
+	  Select "ImageList1" from the Imagelist dropdown box, and then choose Apply.
+	
+	5. Click on the Buttons tab, click Insert Button, and then type "Button" next to
+	  Key: and type "first" next to Image: Click on Apply Note: "Element not found"
+	  error returned.
+	
+	6. Type in "First" for image key button, and no error is received. Click on
+	  Apply and BMP appears.
+	
+	7. Double-click the toolbar and enter the following code in the ButtonClick
+	  event:
+	
+	        SELECT CASE Button.Key
+	           Case "button"
+	              MSGBOX "case insensitive"
+	           Case "Button"
+	              MSGBOX "case sensitive"
+	        END SELECT
+	
+	8. Press the F5 key to run the application and click the toolbar and note that
+	  the "Element not found" error message is returned.
+	
+	Additional query words: capital upper lower kbVBp500 kbVBp600 kbdse kbCtrl kbDSupport kbVBp
+	
+	======================================================================
+	Keywords          : kbGrpDSVBDB 
+	Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600
+	Issue type        : kbprb
+	
+	=============================================================================
+	

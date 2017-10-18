@@ -1,0 +1,130 @@
+---
+layout: page
+title: "Q85927: Top Margin is Too Tall on Epson LQ Printers"
+permalink: kb/085/Q85927/
+---
+
+## Q85927: Top Margin is Too Tall on Epson LQ Printers
+
+	Article: Q85927
+	Product(s): Microsoft Windows 95.x Retail Product
+	Version(s): WINDOWS:3.1,3.11
+	Operating System(s): 
+	Keyword(s): 
+	Last Modified: 06-DEC-1999
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows versions 3.1, 3.11 
+	-------------------------------------------------------------------------------
+	
+	If you confirm that this issue affects other versions and/or
+	products, please comment this article to add your findings.
+	
+	SUMMARY
+	=======
+	
+	If you are running Microsoft Windows version 3.1 and you print to an Epson LQ
+	printer with incorrect printer settings, the top margin will be half an inch too
+	low.
+	
+	MORE INFORMATION
+	================
+	
+	If you previously printed from Microsoft Windows 3.0 to your Epson LQ printer,
+	you may need to reset the settings on your printer to print correctly from
+	Windows 3.1.
+	
+	For more information on top margin problems with Epson LQ printers and Windows
+	3.0, query on the following words in the Microsoft Knowledge Base:
+	
+	  "Top" (without the quotation marks) and "Margin" (without the quotation
+	  marks) and "Too" (without the quotation marks) and "Small" (without the
+	  quotation marks) and "Epson" (without the quotation marks) and "LQ" (without
+	  the quotation marks)
+	
+	To ensure proper top margins when you print Word for Windows documents to an
+	Epson LQ printer from Windows 3.1, check the following:
+	
+	- Make sure the paper is correctly aligned in the printer. The top- of-form
+	  marker should be aligned with the first line of the paper.
+	
+	  To correctly align the paper, roll the paper back so that the print head is
+	  positioned on the first line of the page, then turn the printer off and back
+	  on to set the top-of-form marker.
+	
+	- A new Epson driver is available that allows customization of the unprintable
+	  regions. To obtain this driver, contact Epson.
+	
+	  If it is not desirable to set the paper alignment as described above, set
+	  Options Margins in this new driver so that the top measurement equals the
+	  distance of the print head from the top of the form. For example, if the
+	  print head is positioned .5" from the top of the form and the print is
+	  shifted down .5" inch, set the top in Options Margins to .5".
+	
+	Manual-Feed Printing to an Epson LQ Printer
+	-------------------------------------------
+	
+	The Windows 3.1 printer driver for Epson LQ printers works correctly when the
+	printer settings are correct. If the Paper Source is set to Manual Feed and the
+	top margin prints incorrectly, use the following steps to correct the margin:
+	
+	1. Make sure the Paper Load position is set to the minimum position.
+	
+	  Note: If your top margins print correctly in Windows 3.0, this setting is
+	  incorrect for use with Windows version 3.1. Use the instructions on pages
+	  3-14 to 3-15 of the Epson LQ-850 manual to set the Paper Load position.
+	
+	2. Check the DIP switch settings and make sure they are set as follows:
+	
+	  1-7 - OFF   Cut-Sheet Feeder Mode
+	  1-8 - OFF   Skip Perforation
+	  2-1 - OFF   Page Length 1
+	  2-2 - OFF   Page Length 2
+	
+	The following two sections contain notes about the manual-feed setting on
+	specific Epson LQ models:
+	
+	Epson LQ-2550, LQ-850, LQ-950, LQ-1050, LQ-570, LQ-870, LQ-970, LQ-1170, Action Printer 5000
+	--------------------------------------------------------------------------------------------
+	
+	Use the directions in the printer manual to adjust the Paper Load position for
+	the correct top margin. To ensure that the printer driver handles manual-feed
+	printing correctly, make sure that Manual Feed is selected in the Paper Source
+	setting in Word for Windows.
+	
+	Epson LQ-2500, LQ-1500, LQ-800, LQ-1000, and Other Models That Do Not
+	Have a User-Definable Paper Load Position
+	----------------------------------------------------------------------------------------------------------------
+	
+	1. Take the printer offline.
+	
+	2. Open the paper bail.
+	
+	3. Insert the paper until the Paper Out light is no longer on.
+	
+	4. Press the Line Feed button exactly nine times to position the paper
+	  correctly.
+	
+	5. Take the printer online again.
+	
+	6. Start printing.
+	
+	Repeat steps 1-5 for each page.
+	
+	REFERENCES
+	==========
+	
+	Epson LQ-850 Printer Manual
+	
+	
+	Additional query words: wrong win31 3.10 3.11
+	
+	======================================================================
+	Keywords          :  
+	Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+	Version           : WINDOWS:3.1,3.11
+	
+	=============================================================================
+	

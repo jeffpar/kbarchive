@@ -1,0 +1,134 @@
+---
+layout: page
+title: "Q139920: Multimedia: Error Message: Uninstaller Error"
+permalink: kb/139/Q139920/
+---
+
+## Q139920: Multimedia: Error Message: Uninstaller Error
+
+	Article: Q139920
+	Product(s): Microsoft Home Multimedia Titles
+	Version(s): 
+	Operating System(s): 
+	Keyword(s): kberrmsg kbmm kbsetup
+	Last Modified: 02-NOV-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Music Central for Windows, 1996, 1997 edition 
+	- Microsoft Cinemania for Windows, 1992, 1993, 1994, 1995, 1996, 1997 editions 
+	- Microsoft Encarta 97 World Atlas for Windows 
+	-------------------------------------------------------------------------------
+	
+	IMPORTANT: This article contains information about editing the registry.
+	Before you edit the registry, you should first make a backup copy of the
+	registry files (System.dat and User.dat). Both are hidden files in the
+	Windows folder.
+	
+	SYMPTOMS
+	========
+	
+	When you try to remove the program listed at the top of this article using the
+	Add/Remove Programs tool in the Windows Control Panel, you may receive the
+	following error message:
+	
+	  Uninstaller Error! An error occurred while trying to remove Microsoft Music
+	  Central 96. Uninstallation has been canceled.
+	
+	CAUSE
+	=====
+	
+	This error message can occur if the CD-ROM drive letter has changed since the
+	original installation of Music Central. For example, this can happen after you
+	install a second hard disk. In some cases, this can cause your CD-ROM drive
+	letter to change.
+	
+	RESOLUTION
+	==========
+	
+	To resolve this problem, use one of the following methods:
+	
+	Method 1
+	--------
+	
+	Change the CD-ROM drive letter to the original drive letter designation, remove
+	the program listed at the top of this article, and then switch the drive
+	designation back to the new drive letter.
+	
+	For information about how to perform this task, contact your hardware
+	manufacturer.
+	
+	Method 2
+	--------
+	
+	Delete the program's registry items.
+	
+	For information about how to edit the registry, view the Changing Keys And Values
+	online Help topic in Registry Editor (Regedit.exe). Note that you should make a
+	backup copy of the registry files (System.dat and User.dat) before you edit the
+	registry.
+	
+	WARNING: Using Registry Editor incorrectly can cause serious problems that may
+	require you to reinstall Windows . Microsoft cannot guarantee that problems
+	resulting from the incorrect use of Registry Editor can be solved. Use Registry
+	Editor at your own risk. The registry is a system-wide database used for storing
+	Windows software and hardware configuration settings.
+	
+	1. Click Start, and then click Run.
+	
+	2. Type the following line, and then click OK:
+	
+	     regedit
+	
+	3. When Registry Editor appears, double-click the HKEY_LOCAL_MACHINE folder.
+	
+	4. Double-click the SOFTWARE folder, and then the Microsoft folder.
+	
+	5. Double-click the Windows folder, and then the Current Version folder.
+	
+	6. Double-click the Uninstall folder.
+	
+	7. Click the folder entry for the program you are using. For example,
+	  MicrosoftMusicCentral96 or MicrosoftMusicCentral97
+	
+	8. Click Delete. Confirm the deletion.
+	
+	  CAUTION: Make sure you delete only the folder for the program listed at the
+	  top of this article.
+	
+	9. Close Registry Editor. Run the program listed at the top of this article from
+	  your CD-ROM drive, and then exit the program.
+	
+	You can now remove Music Central using the Add/Remove Programs tool in Control
+	Panel.
+	
+	MORE INFORMATION
+	================
+	
+	NOTE: The programs listed at the the top of this article makes only minor
+	additions to your hard disk. The Uninstall feature only removes the shortcut
+	located on the Start menu, and removes the program's registry information.
+	
+	If you decide to ignore the error and remove the Music Central icon from your
+	Start menu, do the following:
+	
+	1. Click Start, point to Settings, and then click Taskbar or Taskbar & Start
+	  Menu.
+	
+	2. Click the Start Menu Programs tab, and then click Remove.
+	
+	3. Double-click the Microsoft Reference folder.
+	
+	4. Click the program shortcut, and then click Remove.
+	
+	Additional query words: 1.0 1997 1996 multi media multimedia multi- mmtitles kbmm Cinemania Encarta World Atlas ewa
+	
+	======================================================================
+	Keywords          : kberrmsg kbmm kbsetup 
+	Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbZNotKeyword3 kbCineManiaSearch kbMusicCentral kbMusicCentral1996 kbMusicCentral1997
+	Version           : :
+	Solution Type     : kbfix
+	
+	=============================================================================
+	

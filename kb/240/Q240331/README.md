@@ -1,0 +1,155 @@
+---
+layout: page
+title: "Q240331: List of Bugs Fixed in Terminal Server Edition Service Pack 5"
+permalink: kb/240/Q240331/
+---
+
+## Q240331: List of Bugs Fixed in Terminal Server Edition Service Pack 5
+
+	Article: Q240331
+	Product(s): Microsoft Windows NT
+	Version(s): 4.0 SP5
+	Operating System(s): 
+	Keyword(s): kbfixlist
+	Last Modified: 11-DEC-2001
+	
+	-------------------------------------------------------------------------------
+	The information in this article applies to:
+	
+	- Microsoft Windows NT Server version 4.0 SP5, Terminal Server Edition 
+	-------------------------------------------------------------------------------
+	
+	SUMMARY
+	=======
+	
+	This article contains a list of article numbers for bugs that are fixed in
+	Windows NT Server version 4.0, Terminal Server Edition, Service Pack 5. Service
+	packs are cumulative. This means that the bugs fixed in a service pack are also
+	fixed in subsequent service packs. Click the Qxxxxxx number that precedes the
+	title of the bug fix to view the article about that bug.
+	
+	  Q225037 List of Bugs Fixed in Windows NT 4.0 Service Pack 5
+	
+	  Q150734 List of Bugs Fixed in Windows NT 4.0 and Terminal Server Edition
+	  Service Pack 4 (Part 1)
+	
+	  Q194834 List of Bugs Fixed in Windows NT 4.0 and Terminal Server Edition
+	  Service Pack 4 (Part 2)
+	
+	  Q224793 List of Bugs Fixed in Windows NT 4.0 and Terminal Server Edition
+	  Service Pack 4 (Part 3)
+	
+	In addition to the bugs listed below, the latest service pack for Windows NT
+	Server 4.0, Terminal Server Edition, fixes the following problems:
+	
+	  Q222970 List of Bugs Fixed in Windows NT Server 4.0, Terminal Server Edition
+	
+	For more information about bugs fixed in Windows NT 4.0 Service Packs 1, 2, and
+	3, please see the following article in the Microsoft Knowledge Base:
+	
+	  Q224792 List of Bugs Fixed in Windows NT 4.0 Service Pack 1, 2, and 3
+	
+	For information about obtaining the latest service pack for Windows NT 4.0 and
+	Terminal Server Edition, please see the following article in the Microsoft
+	Knowledge Base:
+	
+	  Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+	
+	
+	MORE INFORMATION
+	================
+	
+	  Q193361 MSGINA.DLL does not Reset WINLOGON Structure
+	  Q194812 All Users See All Other Users' Auto-Created Printers
+	  Q194829 NET USE for Dfs Shares Fail for Terminal Server Clients > 9
+	  Q195612 RpcServerUseProtSeqEp() Call Causes Local Named Object to Be Created
+	  in Global Name Space
+	  Q195932 DHCP Server of Service Pack 4 Ignores Reservations
+	  Q196270 SNMP Agent Leaks Memory When Queried
+	  Q196662 Window Settings for Folders on the Desktop Are Not Retained
+	  Q197253 LPD Job May Cause TCPSVCS to Hang
+	  Q214429 Stop 0xA in Netbt.sys When Querying the DNS for a NetBIOS Name
+	  Q214441 Access Violation in Spoolss.exe on Windows NT Terminal Server
+	  Q214500 Application Compatibility Flag Registry Setting for DOS Application
+	  Not Read Correctly
+	  Q216383 Memory Allocations May Fail When There Are Large Free Blocks
+	  Q216477 Environment Path Too Long Can Cause Access Violation in Winlogon
+	  Q216913 BIOS Date Value Does Not Immediately Update on January 1, 2000
+	  Q222714 Pause/Break Key Functions As NUMLOCK Key on Terminal Server Client
+	  Q222842 STOP 0x000000050 in Win32k.sys on Terminal Server
+	  Q227000 Dr. Watson Error in Termsrv.exe After Logon
+	
+	
+	  Q228807 Dr Watson Error After Installing Application on Windows NT Terminal
+	  Server
+	  Q228994 Smss.exe Does Not Resolve Forward References in Environment
+	  Q229012 Disconnected WinStation Sessions that Generate a "Hard Error" Dialog
+	  Boxes Cannot be Reset
+	  Q229789 Windows Terminal Server Always Contacts PDC
+	  Q230168 Terminal Server Does Not Support User Mode Printer Drivers
+	  Q230279 Corrupted User Profiles Can Cause New Local Default to Be Lost
+	  Q230335 Dates May Be Displayed Improperly Using Configuration Back-Up Option
+	  in IIS 4.0 HTML Administrator
+	  Q230449 Service Control Handler May Not Receive SERVICE_CONTROL_SHUTDOWN
+	  Notification
+	  Q230558 Terminal Server Hangs and Continuously Loops in Win32k.sys
+	  Q231313 Screensaver Does Not Work After 14 or 15 Times on a Terminal Server
+	  Client
+	  Q231374 SYSKEY on Terminal Server Causes Intermittent Logon Problems
+	  Q232338 User Prompted for Wrong Version of Windows NT CD When Installing
+	  Additional Components
+	  Q232649 Stop 0x00000050 When Using Windows NT 4.0 Terminal Server
+	
+	
+	  Q233220 STOP 0x1E in Win32k.sys with Large Number of Programs Running
+	  Q234029 Err Msg: "Temp Directory Not Accessible" After Applying TSE SP4
+	  Q234531 OLE Directory May Have Uninitialized Data in the Document File
+	  Q234606 Terminal Server User Profiles Do Not Unload
+	  Q235551 Exiting Full-Screen DOS Session Freezes ICA Session After Applying
+	  SP4
+	  Q235567 QUERY USER Command Does Not Query Information from Remote Server
+	  Q236059 Memory Leak in Rdpdd.dll
+	  Q236359 Denial of Service Attack Using Unprotected IOCTL Function Call
+	  Q236390 Spooler Rollup Fix to Address Memory Leaks in Terminal Server
+	  Q236405 Terminal Server License Service May Not Start on 2/29/2000
+	  Q236794 STOP 0x0000000A in Ntoskrnl.exe Caused by Race Condition in Tcpip.sys
+	  Q236988 Err Msg: "Failed Getting User Configuration, Error = 2 (0x2)" When
+	  Using the TSPROF Command
+	
+	
+	  Q237185 Access Violation Error Message When You Quit Phone Dialer
+	  Q237566 %HOMEPATH%, %HOMESHARE%, and %HOMEDRIVE% Variables Resolved
+	  Incorrectly
+	  Q237974 Unable to Activate a DCOM Server from a Terminal Server Client
+	  Session
+	  Q238070 Computer May Hang if Multiple Terminal Server Users Connect to a
+	  Remote Printer and Print Simultaneously
+	  Q238186 Simultaneous Terminal Server Client Logons May Not Connect
+	  Q238262 Err Msg: "STOP 0x00000050" in Terminal Server Edition
+	  Q238495 STOP 0xC000021A in Winlogon.exe on a Terminal Server
+	  Q239873 Application Security May Not Work After Improper Shutdown
+	  Q233482 STOP 0x0000001E in Win32k.sys on Terminal Server
+	  Q240992 Error Message: An Application Error Has Occurred and an Application
+	  Error Log Is Being Generated
+	  Q241359 Error Message: STOP 0x0000001E in RDR.SYS on Windows NT Terminal
+	  Server
+	  Q241392 STOP 0x50 Error Message in Mup.sys
+	  Q241411 Session Name Is Already in Use with Multiple Simultaneous Logons
+	
+	
+	  Q241961 Terminal Server RDP Client Window Hangs While You Are Logging On
+	
+	
+	  Q242983 Error Message: Stop 0x0000001E in Win32k!GreRealizePalette()
+	
+	
+	Additional query words: tse
+	
+	======================================================================
+	Keywords          :  kbfixlist
+	Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400sp5 kbNTTermServSearch
+	Version           : :4.0 SP5
+	Issue type        : kbinfo
+	
+	=============================================================================
+	
